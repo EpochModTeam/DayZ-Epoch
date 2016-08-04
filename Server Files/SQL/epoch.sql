@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS `Character_DATA` (
   `KillsB` int(11) unsigned NOT NULL DEFAULT '0',
   `Humanity` int(11) NOT NULL DEFAULT '2500',
   `Infected` tinyint(3) DEFAULT '0',
+  `Coins` bigint(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`CharacterID`),
   KEY `PlayerUID` (`PlayerUID`) USING BTREE,
   KEY `Alive` (`Alive`) USING BTREE
@@ -57,6 +58,7 @@ CREATE TABLE IF NOT EXISTS `Object_DATA` (
   `Hitpoints` varchar(1024) NOT NULL DEFAULT '[]',
   `Fuel` double(13,5) NOT NULL DEFAULT '1.00000',
   `Damage` double(13,5) NOT NULL DEFAULT '0.00000',
+  `StorageCoins` bigint(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`ObjectID`),
   KEY `ObjectUID` (`ObjectUID`) USING BTREE,
   KEY `Instance` (`Instance`) USING BTREE
@@ -76,6 +78,8 @@ CREATE TABLE IF NOT EXISTS `Player_DATA` (
   `PlayerMorality` int(11) NOT NULL DEFAULT '0',
   `PlayerSex` tinyint(3) unsigned NOT NULL DEFAULT '0',
   `playerGroup` varchar(2048) NOT NULL DEFAULT '[]',
+  `PlayerCoins` bigint(20) NOT NULL DEFAULT '0',
+  `BankCoins` bigint(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`PlayerUID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

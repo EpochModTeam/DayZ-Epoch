@@ -10,9 +10,38 @@ ALTER TABLE Object_DATA MODIFY COLUMN CharacterID bigint(20);
 ALTER TABLE Object_DATA MODIFY COLUMN Hitpoints varchar(1024);
 
 -- ----------------------------
--- Update player_data to support group system with ~100 players per group
+-- Update Object_DATA to support single currency
 -- ----------------------------
-ALTER TABLE player_data ADD playerGroup varchar(2048) NOT NULL DEFAULT '[]';
+ALTER TABLE `Object_DATA` ADD `StorageCoins` bigint(20) NOT NULL DEFAULT '0';
+
+-- ----------------------------
+-- Update character_data to support single currency
+-- ----------------------------
+SET @s = (SELECT IF(
+    (SELECT COUNT(*)
+        FROM INFORMATION_SCHEMA.COLUMNS
+        WHERE TABLE_NAME = 'character_data'
+        AND table_schema = DATABASE()
+        AND COLUMN_NAME = 'CashMoney'
+    ) > 0,
+    'SELECT 1',
+    "ALTER TABLE `character_data` ADD `CashMoney` bigint(20) NOT NULL DEFAULT '0'"
+));
+
+PREPARE stmt FROM @s;
+EXECUTE stmt;
+DEALLOCATE PREPARE stmt;
+
+ALTER TABLE `character_data` CHANGE `CashMoney` `Coins` bigint(20) NOT NULL DEFAULT '0';
+
+
+-- ----------------------------
+-- Update player_data to support group system with ~100 players per group
+-- Also add single currency support
+-- ----------------------------
+ALTER TABLE Player_DATA ADD playerGroup varchar(2048) NOT NULL DEFAULT '[]';
+ALTER TABLE Player_DATA ADD PlayerCoins bigint(20) NOT NULL DEFAULT '0';
+ALTER TABLE Player_DATA ADD BankCoins bigint(20) NOT NULL DEFAULT '0';
 
 -- ----------------------------
 -- Fix typo from 1.0.5.1 updates causing Merlin and CH53 to show as magazines instead of vehicles
@@ -470,6 +499,14 @@ UPDATE character_data SET Backpack = REPLACE(Backpack, 'Winchester1866', 'Winche
 UPDATE character_data SET Inventory = REPLACE(Inventory, 'Winchester1866', 'Winchester1866_DZ') WHERE INSTR(Inventory, 'Winchester1866') > 0;
 UPDATE object_data SET Inventory = REPLACE(Inventory, 'Winchester1866', 'Winchester1866_DZ') WHERE INSTR(Inventory, 'Winchester1866') > 0;
 
+
+-- ----------------------------
+-- Uncomment the below queries to update new columns if you previously used a custom single currency hive with a banking_Data table
+-- ----------------------------
+-- UPDATE player_data t1, banking_data t2
+-- SET t1.`PlayerCoins` = t2.bankMoney,
+-- t1.`BankCoins` = t2.BankSaldo
+-- WHERE t1.PlayerUID = t2.PlayerUID --
 
 -- ----------------------------
 -- Run to replace legacy bloodbag with universal type if using dayz_classicBloodBagSystem = false;
