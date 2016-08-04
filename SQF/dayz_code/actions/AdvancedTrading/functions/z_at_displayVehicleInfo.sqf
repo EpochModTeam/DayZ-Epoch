@@ -50,7 +50,7 @@ if (isNumber (_config >> 'transportMaxBackpacks')) then {
 };
 
 if (isNumber (_config >> 'fuelCapacity')) then {
-	_fuelCapacity = getNumber (_config >> 'fuelCapacity');
+	_fuelCapacity = if (_class isKindOf "Bicycle") then {0} else {getNumber (_config >> 'fuelCapacity')};
 };
 
 if (isNumber (_config >> 'maxSpeed')) then {
