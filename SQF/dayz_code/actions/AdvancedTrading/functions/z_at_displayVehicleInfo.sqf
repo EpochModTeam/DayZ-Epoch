@@ -117,16 +117,16 @@ _wepText = "";
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 	"<img image='%1' size='3' /><br />" +
-	"<t color='#33BFFF' size='0.8'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%13: </t><t color='#ffffff' size='0.8'>%6 %7</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%12: </t><t color='#ffffff' size='0.8'>%5 %7</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%14/%15/%16: </t><t color='#ffffff' size='0.8'>%9/%8/%4</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%17: </t><t color='#ffffff' size='0.8'>%18  </t><t color='#33BFFF' size='0.8'>%24: </t><t color='#ffffff' size='0.8'>%25</t><br />" + // Armor / Seats
-	"<t color='#33BFFF' size='0.8'>%21%22: </t><t color='#ffffff' size='0.8'>%23  </t><t color='#33BFFF' size='0.8'>%19: </t><t color='#ffffff' size='0.8'>%20</t><br />" + // MaxSpeed / Fuel
-	"<t color='#33BFFF' size='0.8'>%26: </t><t color='#ffffff' size='0.7'>%27</t>" // Weapons
-	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_BAGS",
-	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
+	"<t color='#33BFFF' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 %7</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'><img image='%15'/> %9 <img image='%16'/> %8 <img image='%28'/> %4</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%17: </t><t color='#ffffff' size='0.7'>%18  </t><t color='#33BFFF' size='0.7'>%24: </t><t color='#ffffff' size='0.7'>%25</t><br />" + // Armor / Seats
+	"<t color='#33BFFF' size='0.7'>%21 %22: </t><t color='#ffffff' size='0.7'>%23  </t><t color='#33BFFF' size='0.7'>%19: </t><t color='#ffffff' size='0.7'>%20</t><br />" + // MaxSpeed / Fuel
+	"<t color='#33BFFF' size='0.7'>%26: </t><t color='#ffffff' size='0.7'>%27</t>" // Weapons
+	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_CARGO_SPACE", "\z\addons\dayz_code\gui\gear\gear_ui_slots_weapons_white.paa", "\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
+	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText,"\z\addons\dayz_code\gui\gear\gear_ui_slots_backpacks_white.paa"
 	];
 } else {
 	_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
@@ -136,16 +136,16 @@ if (Z_SingleCurrency) then {
 
 	_formattedText = format [
 	"<img image='%1' size='3' /><br />" +
-	"<t color='#33BFFF' size='0.8'>%13: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%14: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%16: </t><t color='#ffffff' size='0.8'>%6 <img image='%12' /> %7</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%15: </t><t color='#ffffff' size='0.8'>%5 <img image='%11' /> %10</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%17/%18/%19: </t><t color='#ffffff' size='0.8'>%8/%9/%4</t><br />" +
-	"<t color='#33BFFF' size='0.8'>%20: </t><t color='#ffffff' size='0.8'>%21  </t><t color='#33BFFF' size='0.8'>%27: </t><t color='#ffffff' size='0.8'>%28</t><br />" + // Armor / Seats
-	"<t color='#33BFFF' size='0.8'>%24%25: </t><t color='#ffffff' size='0.8'>%26  </t><t color='#33BFFF' size='0.8'>%22: </t><t color='#ffffff' size='0.8'>%23</t><br />" + // MaxSpeed  /  Fuel
-	"<t color='#33BFFF' size='0.8'>%29: </t><t color='#ffffff' size='0.7'>%30</t>" // Weapons
-	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, _buyCurrency, _transportMaxWeapons,_transportMaxMagazines, _sellCurrency, _picSell,_picBuy, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_MAGS", localize "STR_EPOCH_BAGS",
-	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText
+	"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%16: </t><t color='#ffffff' size='0.7'>%6 <img image='%12' /> %7</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%5 <img image='%11' /> %10</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%17: </t><t color='#ffffff' size='0.7'><img image='%18'/> %8 <img image='%19'/> %9 <img image='%31'/> %4</t><br />" +
+	"<t color='#33BFFF' size='0.7'>%20: </t><t color='#ffffff' size='0.7'>%21  </t><t color='#33BFFF' size='0.7'>%27: </t><t color='#ffffff' size='0.7'>%28</t><br />" + // Armor / Seats
+	"<t color='#33BFFF' size='0.7'>%24 %25: </t><t color='#ffffff' size='0.7'>%26  </t><t color='#33BFFF' size='0.7'>%22: </t><t color='#ffffff' size='0.7'>%23</t><br />" + // MaxSpeed  /  Fuel
+	"<t color='#33BFFF' size='0.7'>%29: </t><t color='#ffffff' size='0.7'>%30</t>" // Weapons
+	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, _buyCurrency, _transportMaxWeapons,_transportMaxMagazines, _sellCurrency, _picSell,_picBuy, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_CARGO_SPACE", "\z\addons\dayz_code\gui\gear\gear_ui_slots_weapons_white.paa", "\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
+	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText,"\z\addons\dayz_code\gui\gear\gear_ui_slots_backpacks_white.paa"
 	];
 };
 

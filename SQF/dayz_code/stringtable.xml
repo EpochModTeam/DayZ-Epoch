@@ -16366,6 +16366,9 @@
 			<French>Classe</French>
 			<Czech>Třída</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_CARGO_SPACE">
+			<English>Cargo Space</English>
+		</Key>
 		<Key ID="STR_EPOCH_MAGS">
 			<English>Mags</English>
 			<Russian>Предметов</Russian>
