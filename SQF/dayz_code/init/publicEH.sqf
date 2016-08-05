@@ -12,7 +12,7 @@
 //"dayzInfectedCamps"		addPublicVariableEventHandler {(_this select 1) call infectedcamps};
 
 // EPOCH ADDITIONS
-"PVDZE_veh_Lock"			addPublicVariableEventHandler {(_this select 1) spawn local_lockUnlock};
+"PVDZE_veh_Lock"			addPublicVariableEventHandler {(_this select 1) call local_lockUnlock};
 "PVDZE_plr_GutBodyZ"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObjectZ};
 "PVDZE_veh_Init"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_ResetEH};
 

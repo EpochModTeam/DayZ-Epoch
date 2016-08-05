@@ -150,12 +150,9 @@ if (_inVehicle) then {
 		s_player_lockUnlockInside_ctrl = -1;
 	};
 } else {
-	if (!isNil "DZE_myVehicle") then {
-		{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
-		s_player_lockUnlockInside_ctrl = -1;
-	};
+	{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
+	s_player_lockUnlockInside_ctrl = -1;
 };
-
 
 if (DZE_HeliLift) then {
 	_hasAttached = _vehicle getVariable["hasAttached",false];

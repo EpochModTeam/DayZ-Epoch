@@ -687,4 +687,5 @@ if (!isDedicated) then {
 	DZE_Surrender = false;
 	DZE_Quarantine = false;
 	DZE_InRadiationZone = false;
+	DZE_myVehicle = objNull;
 };
