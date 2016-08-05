@@ -124,17 +124,29 @@ if (_selection == 1) then { //vehicle
 	if (_allowedWeapons >= (_toBuyWeaps + _toolsToBuy)) then {
 		_check1 = true;
 	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_WEPS", _allowedWeapons];
+		if (_allowedWeapons > 0) then {
+			systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_WEPS", _allowedWeapons];
+		} else {
+			systemChat localize "STR_EPOCH_TRADE_VEHICLE_FULL_GUNS";
+		};
 	};
 	if (_allowedMags >= _toBuyTotalMags) then {
 		_check2 = true;
 	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_MAGS", _allowedMags];
+		if (_allowedMags > 0) then {
+			systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_MAGS", _allowedMags];
+		} else {
+			systemChat localize "STR_EPOCH_TRADE_VEHICLE_FULL_MAGS";
+		};
 	};
 	if (_allowedBackpacks >= _toBuyBags) then {
 		_check3 = true;
 	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_BAGS", _allowedBackpacks];
+		if (_allowedBackpacks > 0) then {
+			systemChat format[localize "STR_EPOCH_TRADE_VEHICLE_BAGS", _allowedBackpacks];
+		} else {
+			systemChat localize "STR_EPOCH_TRADE_VEHICLE_FULL_BAGS";
+		};
 	};
 
 	if (_check1 && _check2 && _check3) then { _return = true; };
@@ -165,7 +177,11 @@ if (_selection == 0) then { //backpack
 	if (_allowedWeapons >= _toBuyWeaps) then { //_toBuyWeaps does not include tools (which can exceed transportMaxWeapons in backpacks but not vehicles)
 		_check1 = true;
 	} else {
-		systemChat format[localize "STR_EPOCH_TRADE_BAG_WEPS", _allowedWeapons];
+		if (_allowedWeapons > 0) then {
+			systemChat format[localize "STR_EPOCH_TRADE_BAG_WEPS", _allowedWeapons];
+		} else {
+			systemChat localize "STR_EPOCH_TRADE_BACKPACK_FULL";
+		};
 	};
 	
 	if (_allowedMags >= _toBuyTotalMags) then {

@@ -16024,7 +16024,7 @@
 			<Russian>Транспорт</Russian>
 			<Spanish>Vehículo</Spanish>
 			<French>Véhicule</French>
-			<Czech>Vozidlo</Czech>			
+			<Czech>Vozidlo</Czech>
 			<Italian>Veicolo</Italian>
 			<Polish>Pojazd</Polish>
 			<Hungarian>Jármű</Hungarian>
@@ -16119,7 +16119,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NOTHING">
 			<English>Nothing</English>
-			<Russian>Ничего</Russian>			
+			<Russian>Ничего</Russian>
 			<French>Rien</French>
 			<Spanish>Nada</Spanish>
 			<Italian>Niente</Italian>
@@ -16208,6 +16208,15 @@
 			<English>You can only buy %1 backpacks into your vehicle.</English>
 			<Russian>Вы можете купить рюкзаков в ваш транспорт: %1.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_VEHICLE_FULL_GUNS">
+			<English>You can't fit anymore weapons into your vehicle.</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_VEHICLE_FULL_MAGS">
+			<English>You can't fit anymore magazines into your vehicle.</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_VEHICLE_FULL_BAGS">
+			<English>You can't fit anymore backpacks into your vehicle.</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_BACKPACK_FULL">
 			<English>Total backpack space exceeded.</English>
 		</Key>
@@ -16275,7 +16284,7 @@
 			<English>You need %1 %2 to buy all these items.</English>
 			<Russian>Вам нужно %1 %2 для покупки.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_NEED_MONEY">		
+		<Key ID="STR_EPOCH_TRADE_NEED_MONEY">
 			<English>Cannot buy: Not enough money!</English>
 			<German>Kauf nicht möglich: Nicht genug Geld!</German>
 			<Italian>Impossibile comprare: servono più soldi!</Italian>
