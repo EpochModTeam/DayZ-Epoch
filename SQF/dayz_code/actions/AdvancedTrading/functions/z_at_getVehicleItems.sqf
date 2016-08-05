@@ -1,7 +1,7 @@
 /**
 *	call Z_getVehicleItems
 *
-*	Gets all your items stored in your vehicle and innitiates the selling list.
+*	Gets all your items stored in your vehicle and initiates the selling list.
 **/
 private ["_vehicle","_pos","_list","_formattedText","_pic","_normalMags","_normalWeaps","_freeSpace"];
 #include "defines.hpp"
@@ -14,14 +14,12 @@ _vehicle = objNull;
 
 _pos = [player] call FNC_GetPos;
 _list = nearestObjects [_pos, ["Air","LandVehicle","Ship"], Z_VehicleDistance];
-{
-	if (!isNull _x && local _x && alive _x) then {
-		_vehicle = _x;
-	};
-} count _list;
+
+if (!isNull DZE_myVehicle && local DZE_myVehicle && alive DZE_myVehicle && DZE_myVehicle in _list) then {
+	_vehicle = DZE_myVehicle;
+};
 
 if (!isNull _vehicle) then {
-	systemChat format[localize "STR_EPOCH_TRADE_SELECTED",typeOf _vehicle];
 	_pic = getText (configFile >> 'CfgVehicles' >> (typeOf _vehicle) >> 'picture');
 
 	_formattedText = format [
