@@ -13,8 +13,8 @@ Military[] =
 	//Tools
 	{Loot_TOOL,		3,		Binocular},
 	{Loot_TOOL,		4,		ItemFlashlightRed},
-	{Loot_TOOL,		3.5,		ItemKnife},
-	{Loot_TOOL,		0.5,		ItemGPS},
+	{Loot_TOOL,		3.5,	ItemKnife},
+	{Loot_TOOL,		0.5,	ItemGPS},
 	{Loot_TOOL,		3,		ItemMap},
 	{Loot_TOOL,		3,		ItemEtool},
 	
@@ -32,31 +32,31 @@ Military[] =
 	{Loot_CONTAINER,	0.7,		DZ_AmmoBoxRU, AmmoBoxRU2, 10, 20},		//762x39	AK47
 	{Loot_CONTAINER,	0.5,		DZ_AmmoBoxRU, AmmoBoxRU3, 5, 10},		//762x54r	SVD, PKM
 	{Loot_CONTAINER,	1.5,		DZ_AmmoBoxUS, AmmoBoxEU1, 10, 20},		//556x45	G36, M249
-	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxEU2, 5, 10},		//762x51	FAL, M240
+	{Loot_CONTAINER,	1,			DZ_AmmoBoxUS, AmmoBoxEU2, 5, 10},		//762x51	FAL, M240
 	{Loot_CONTAINER,	1.5,		DZ_AmmoBoxUS, AmmoBoxUS1, 10, 20},		//556x45	STANAG, M249
-	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxUS2, 5, 10},		//762x51	DMR, M240
-//	{Loot_CONTAINER,	2,		DZ_MedBox, MedicalBox, 10, 20},
+	{Loot_CONTAINER,	1,			DZ_AmmoBoxUS, AmmoBoxUS2, 5, 10},		//762x51	DMR, M240
+//	{Loot_CONTAINER,	2,			DZ_MedBox, MedicalBox, 10, 20},
 	
 	//Other
 	{Loot_MAGAZINE,		5,		FoodMRE},
 	{Loot_MAGAZINE,		4,		ItemSandbag},
-	{Loot_PILE,		15,		AmmoMilitaryLow, 1, 3},
+	{Loot_PILE,			15,		AmmoMilitaryLow, 1, 3},
 	{Loot_GROUP,		4,		AmmoMilitaryHigh},
 	{Loot_GROUP,		4,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		AttachmentsEast},
-	{Loot_PILE,		10,		MedicalLow, 1, 2},
-	{Loot_PILE,		15,		Trash, 1, 2},
-	{Loot_PILE,		10,		Consumable, 1, 2},
+	{Loot_PILE,			10,		MedicalLow, 1, 2},
+	{Loot_PILE,			15,		Trash, 1, 2},
+	{Loot_PILE,			10,		Consumable, 1, 2},
 	{Loot_GROUP,		10,		Generic}
 };
 
 MilitarySmall[] =
 {
 	{Loot_GROUP,		10,		pistols},
-	{Loot_TOOL,		2,		Binocular},
-	{Loot_TOOL,		0.5,		ItemGPS},
-	{Loot_TOOL,		3,		ItemMap},
-	{Loot_TOOL,		3,		 ItemKnife},
+	{Loot_TOOL,			2,		Binocular},
+	{Loot_TOOL,			0.5,	ItemGPS},
+	{Loot_TOOL,			3,		ItemMap},
+	{Loot_TOOL,			3,		ItemKnife},
 	{Loot_GROUP,		2,		militaryclothes},
 	{Loot_GROUP,		1,		specialclothes},
 	{Loot_GROUP,		15,		AmmoMilitaryLow},
@@ -84,7 +84,7 @@ MilitarySpecial[] =
 	{Loot_TOOL,		2,		Binocular_Vector},
 	{Loot_TOOL,		3,		ItemFlashlightRed},
 	{Loot_TOOL,		4,		ItemKnife},
-	{Loot_TOOL,		1.3,		ItemGPS},
+	{Loot_TOOL,		1.3,	ItemGPS},
 	{Loot_TOOL,		4,		ItemMap},
 	{Loot_TOOL,		2,		ItemEtool},
 	
@@ -98,9 +98,9 @@ MilitarySpecial[] =
 	
 	//Containers
 	{Loot_CONTAINER,	2.5,		DZ_AmmoBoxRU, AmmoBoxRU1, 10, 20},	//5.45x39
-	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxUS1, 7, 14},	//5.56x45
-	{Loot_CONTAINER,	2,		DZ_AmmoBoxRU, AmmoBoxCZ1, 7, 14},	//7.62x39
-	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxCZ2, 2, 5},	//7.62x54R
+	{Loot_CONTAINER,	2,			DZ_AmmoBoxUS, AmmoBoxUS1, 7, 14},	//5.56x45
+	{Loot_CONTAINER,	2,			DZ_AmmoBoxRU, AmmoBoxCZ1, 7, 14},	//7.62x39
+	{Loot_CONTAINER,	1,			DZ_AmmoBoxRU, AmmoBoxCZ2, 2, 5},	//7.62x54R
 //	{Loot_CONTAINER,	0.5,		DZ_AmmoBoxRU, AmmoBoxRU3, 3, 7},	//7.62x54R
 	{Loot_CONTAINER,	0.5,		DZ_ExplosivesBoxRU, AmmoBoxRU4, 5, 15},	//GP-25
 	{Loot_CONTAINER,	0.5,		DZ_ExplosivesBoxRU, AmmoBoxRU5, 3, 7},	//Grenades
@@ -108,17 +108,17 @@ MilitarySpecial[] =
 	//Other
 	{Loot_MAGAZINE,		3,		FoodMRE},
 	{Loot_MAGAZINE,		2,		ItemSandbag},
-	{Loot_MAGAZINE,		0.5,		PipeBomb},
-	{Loot_MAGAZINE,		0.5,		MAAWS_HEAT},
+	{Loot_MAGAZINE,		0.5,	PipeBomb},
+	{Loot_MAGAZINE,		0.5,	MAAWS_HEAT},
 	{Loot_MAGAZINE,		2,		100Rnd_762x54_PK},
-	{Loot_PILE,		15,		AmmoMilitaryLow, 1, 4},
-	{Loot_PILE,		10,		AmmoMilitaryHigh, 1, 3},
+	{Loot_PILE,			15,		AmmoMilitaryLow, 1, 4},
+	{Loot_PILE,			10,		AmmoMilitaryHigh, 1, 3},
 	{Loot_GROUP,		2,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		AttachmentsEast},
 	{Loot_GROUP,		6,		AttachmentsWest},
-	{Loot_PILE,		10,		MedicalLow, 1, 2},
-	{Loot_PILE,		10,		Trash, 1, 2},
-	{Loot_PILE,		10,		Consumable, 1, 2},
+	{Loot_PILE,			10,		MedicalLow, 1, 2},
+	{Loot_PILE,			10,		Trash, 1, 2},
+	{Loot_PILE,			10,		Consumable, 1, 2},
 	{Loot_GROUP,		8,		Generic}
 };
 
@@ -126,15 +126,15 @@ MilitarySpecialSmall[] =
 {
 	{Loot_WEAPON,		2,		NVGoggles},
 	{Loot_GROUP,		10,		pistols},
-	{Loot_TOOL,		3,		Binocular},
-	{Loot_TOOL,		2,		Binocular_Vector},
-	{Loot_TOOL,		3,		ItemKnife},
-	{Loot_TOOL,		1.3,		ItemGPS},
-	{Loot_TOOL,		3,		ItemMap},
+	{Loot_TOOL,			3,		Binocular},
+	{Loot_TOOL,			2,		Binocular_Vector},
+	{Loot_TOOL,			3,		ItemKnife},
+	{Loot_TOOL,			1.3,	ItemGPS},
+	{Loot_TOOL,			3,		ItemMap},
 	{Loot_GROUP,		3,		militaryclothes},
 	{Loot_GROUP,		2,		specialclothes},
-	{Loot_MAGAZINE,		0.5,		PipeBomb},
-	{Loot_MAGAZINE,		0.5,		MAAWS_HEAT},
+	{Loot_MAGAZINE,		0.5,	PipeBomb},
+	{Loot_MAGAZINE,		0.5,	MAAWS_HEAT},
 	{Loot_MAGAZINE,		2,		100Rnd_762x54_PK},
 	{Loot_GROUP,		15,		AmmoMilitaryLow},
 	{Loot_GROUP,		10,		AmmoMilitaryHigh},
@@ -153,9 +153,9 @@ MilitaryIndustrial[] = {//DZE ADDED
 	{Loot_MAGAZINE,		3,		ItemFuelBarrelEmpty},
 	{Loot_MAGAZINE,		2,		ItemGenerator},
 	{Loot_MAGAZINE,		2,		fuel_pump_kit},
-	{Loot_GROUP, 		15, 		Military}
+	{Loot_GROUP, 		15, 	Military}
 };
 
 MilitaryIndustrialSmall[] = {
-	{Loot_GROUP, 		15, 		MilitarySmall}
+	{Loot_GROUP, 		15, 	MilitarySmall}
 };
