@@ -1,8 +1,8 @@
 private ["_selection","_return","_toBuyWeaps","_toBuyTotalMags","_toBuyBags","_toolsToBuy","_sidearmToBuy"
 ,"_primaryToBuy","_p","_b","_check0","_check1","_check2","_check3","_check4","_allowedMags"
-,"_allowedPrimary","_allowedTools","_allowedSidearm","_allowedBackpacks","_parentClasses","_toolClasses"
+,"_allowedPrimary","_allowedTools","_allowedSidearm","_allowedBackpacks","_toolClasses"
 ,"_duplicate","_quantity","_tool","_totalBagSlots","_pistolMags","_regularMags","_toBuyPistolMags"
-,"_toBuyRegularMags","_type","_freeSpace","_backpack","_totalSpace","_toolAmounts","_allowedBinocular"
+,"_toBuyRegularMags","_type","_freeSpace","_backpack","_totalSpace","_toolAmounts","_allowedBinocular","_message"
 ];
 _selection = Z_SellingFrom;
 _return = false;
@@ -31,8 +31,8 @@ if (_selection == 2) then { //gear
 	_regularMags = 0;	
 	{
 		_type = getNumber (configFile >> "CfgMagazines" >> _x >> "type");
-		if (_type == 16) then {_pistolMags = _pistolMags + 1;}; // 16 = WeaponSlotHandGunItem (pistol ammo slot)
-		if (_type == 256) then {_regularMags = _regularMags + 1;}; // 256 = WeaponSlotItem (normal magazine)
+		if (_type == 16) then {_pistolMags = _pistolMags + 1;}; // WeaponSlotHandGunItem (pistol ammo slot)
+		if (_type == 256) then {_regularMags = _regularMags + 1;}; // WeaponSlotItem (normal magazine)
 	} count (magazines player);
 	
 	_allowedPistolMags = 8 - _pistolMags;
@@ -45,47 +45,46 @@ if (_selection == 2) then { //gear
 	_b = unitBackpack player;
 	_allowedBackpacks = if (isNull _b) then {1} else {0};
 
-	_allowedTools = 14; // 12 toolbelt + 1 Binocular + 1 NVG
+	_allowedTools = 12;
 	_allowedSidearm = 1;
 	_allowedBinocular = 2;
 	_duplicate = false;
 	{
-		_parentClasses =  [(configFile >> "CfgWeapons" >> _x),true] call BIS_fnc_returnParents;
-		if ("ItemCore" in _parentClasses || "Binocular" in _parentClasses) then {
-			_allowedTools = _allowedTools - 1;
-			if (_x in _toolClasses) then {_duplicate = true;}; // Forbid purchasing duplicate tools into gear
-		};
 		_type = getNumber (configFile >> "CfgWeapons" >> _x >> "type");
-		if (_type == 2) then { _allowedSidearm = 0; }; // 2 = WeaponSlotHandGun (occupies pistol slot) // (secondaryWeapon player) returns launcher, doesn't work for pistol
-		if (_type == 4096) then { _allowedBinocular = _allowedBinocular - 1; }; // 4096 = WeaponSlotBinocular
+		if (_type == 2) then { _allowedSidearm = 0; }; // WeaponSlotHandGun (occupies pistol slot)
+		if (_type == 4096) then { _allowedBinocular = _allowedBinocular - 1; }; // WeaponSlotBinocular
+		if (_type == 131072) then { _allowedTools = _allowedTools - 1; }; // WeaponSlotInventory (toolbelt slot)
+		if (_x in _toolClasses) exitWith {_duplicate = true;}; // Forbid purchasing duplicate tools into gear
 	} count (weapons player);
 	
 	{
 		_tool = _x;
-		_quantity = {(_tool == _x)} count _toolClasses;
+		_quantity = {(_tool == _x)} count _toolClasses; // Buying same tool multiple times with 1x quantity
 		if (_quantity > 1) exitWith {_duplicate = true;}; // Forbid buying multiples of same tool into gear. Ok to exit since duplicate will cancel buy
 		if (getNumber (configFile >> "CfgWeapons" >> _x >> "type") == 4096) then {
-			_allowedBinocular = _allowedBinocular - (_toolAmounts select _forEachIndex);
+			_allowedBinocular = _allowedBinocular - 1;
+			_toolsToBuy = _toolsToBuy - 1; //Not counting binoculars in tool total (12) when buying in gear
 		};
 	} forEach _toolClasses;
 	
 	{
-		if (_x > 1) exitWith {_duplicate = true;};
+		if (_x > 1) exitWith {_duplicate = true;}; // Buying >1x quantity of a tool
 	} count _toolAmounts;
 
 	_check1 = false;
 	_check2 = false;
 	_check3 = false;
-	_check4 = false;
 
-	if (_allowedPrimary >= _primaryToBuy && _allowedSidearm >= _sidearmToBuy && _allowedTools >= _toolsToBuy && !_duplicate) then {
+	if (_allowedPrimary >= _primaryToBuy && _allowedSidearm >= _sidearmToBuy && _allowedTools >= _toolsToBuy && !_duplicate && _allowedBinocular > -1) then {
 		_check1 = true;
 	} else {
-		if (_duplicate) then {
-			systemChat localize "STR_EPOCH_TRADE_DUPLICATE_TOOL";
-		} else {
-			systemChat format[localize "STR_EPOCH_TRADE_GEAR_FULL", _allowedPrimary, _allowedSidearm , _allowedTools];
+		_message = switch (true) do {
+			case (_duplicate): {localize "STR_EPOCH_TRADE_DUPLICATE_TOOL"};
+			case (_allowedBinocular < 0): {localize "STR_EPOCH_TRADE_BINOCULARS_FULL"};
+			case (_allowedTools < _toolsToBuy): {localize "STR_EPOCH_PLAYER_107"};
+			default {format[localize "STR_EPOCH_TRADE_GEAR_FULL",_allowedPrimary,_allowedSidearm,_allowedTools]};
 		};
+		systemChat _message;
 	};
 	if (_allowedPistolMags >= _toBuyPistolMags && _allowedRegularMags >= _toBuyRegularMags) then {
 		_check2 = true;
@@ -101,12 +100,8 @@ if (_selection == 2) then { //gear
 			systemChat localize "STR_EPOCH_TRADE_ONE_BACKPACK";
 		};
 	};
-	if (_allowedBinocular > -1) then {
-		_check4 = true;
-	} else {
-		systemChat localize "STR_EPOCH_TRADE_BINOCULARS_FULL";
-	};
-	if (_check1 && _check2 && _check3 && _check4) then { _return = true; };
+	
+	if (_check1 && _check2 && _check3) then { _return = true; };
 };
 
 if (_selection == 1) then { //vehicle
