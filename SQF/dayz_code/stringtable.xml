@@ -16447,12 +16447,12 @@
 			<Czech>Full height cinder block wall.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
-			<English>Block Doorway</English>
-			<German>Block Doorway</German>
-			<Russian>Block Doorway</Russian>
-			<Spanish>Block Doorway</Spanish>
-			<French>Block Doorway</French>
-			<Czech>Block Doorway</Czech>
+			<English>Cinder Doorway</English>
+			<German>Cinder Doorway</German>
+			<Russian>Cinder Doorway</Russian>
+			<Spanish>Cinder Doorway</Spanish>
+			<French>Cinder Doorway</French>
+			<Czech>Cinder Doorway</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_DESC">
 			<English>Cinder block doorway.</English>
@@ -16463,12 +16463,12 @@
 			<Czech>Cinder block doorway.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
-			<English>Block Garage Doorway</English>
-			<German>Block Garage Doorway</German>
-			<Russian>Block Garage Doorway</Russian>
-			<Spanish>Block Garage Doorway</Spanish>
-			<French>Block Garage Doorway</French>
-			<Czech>Block Garage Doorway</Czech>
+			<English>Cinder Garage Doorway</English>
+			<German>Cinder Garage Doorway</German>
+			<Russian>Cinder Garage Doorway</Russian>
+			<Spanish>Cinder Garage Doorway</Spanish>
+			<French>Cinder Garage Doorway</French>
+			<Czech>Cinder Garage Doorway</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_DESC">
 			<English>Cinder block garage doorway.</English>

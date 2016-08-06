@@ -124,7 +124,7 @@ class CinderWallDoorway_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 3400;
-	displayName = "Block Garage Doorway";
+	displayName = "Cinder Garage Doorway";
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"MortarBucket",1}};
 	upgradeBuilding[] = {"CinderWallDoor_DZ",{{"ItemPole",3},{"ItemTankTrap",3}}};
@@ -150,7 +150,7 @@ class CinderWallSmallDoorway_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 3400;
-	displayName = "Block Doorway";
+	displayName = "Cinder Doorway";
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"MortarBucket",1}};
 	upgradeBuilding[] = {"CinderWallDoorSmall_DZ",{{"ItemPole",1},{"ItemTankTrap",1}}};
@@ -494,7 +494,7 @@ class CinderWallSmallDoorway_Preview_DZ: NonStrategic {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 1000;
-	displayName = "Block Doorway Preview";
+	displayName = "Cinder Doorway Preview";
 	vehicleClass = "Fortifications";
 };
 class CinderWallDoorway_Preview_DZ: NonStrategic {
@@ -506,7 +506,7 @@ class CinderWallDoorway_Preview_DZ: NonStrategic {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 1000;
-	displayName = "Block Garage Doorway Preview";
+	displayName = "Cinder Garage Doorway Preview";
 	vehicleClass = "Fortifications";
 };
 class MetalFloor_Preview_DZ: NonStrategic {
