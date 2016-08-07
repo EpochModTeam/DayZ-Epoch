@@ -33,7 +33,7 @@ class ItemSandbag : CA_Magazine
 		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_273;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {};
 			requiretools[] = {"ItemEtool","ItemToolbox"};
 			output[] = {{"ItemSandbagLarge",1}};
@@ -42,7 +42,7 @@ class ItemSandbag : CA_Magazine
 		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_274;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemEtool","ItemToolbox"};
 			output[] = {{"sandbag_nest_kit",1}};
@@ -51,7 +51,7 @@ class ItemSandbag : CA_Magazine
 		class Crafting2
 		{
 			text = $STR_EPOCH_PLAYER_298;
-			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemEtool","ItemToolbox"};
 			output[] = {{"BagFenceRound_DZ_kit",1}};
@@ -61,7 +61,7 @@ class ItemSandbag : CA_Magazine
 		class Crafting3
 		{
 			text = "Craft M240 Nest";
-			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
 			output[] = {{"m240_nest_kit",1}};
@@ -96,7 +96,7 @@ class BagFenceRound_DZ_kit : CA_Magazine {
 		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_195;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {};
 			requiretools[] = {"ItemEtool","ItemToolbox"};
 			output[] = {{"ItemSandbag",1}};
@@ -146,7 +146,7 @@ class ItemSandbagLarge : CA_Magazine {
 		class Crafting
 		{
 			text = "Craft Triple H-barrier";
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {};
 			requiretools[] = {"ItemEtool","ItemToolbox"};
 			output[] = {{"ItemSandbagExLarge",1}};
@@ -174,7 +174,7 @@ class ItemSandbagExLarge : CA_Magazine {
 		class Crafting
 		{
 			text = "Craft 5x H-barrier";
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {};
 			requiretools[] = {"ItemEtool","ItemToolbox"};
 			output[] = {{"ItemSandbagExLarge5x",1}};

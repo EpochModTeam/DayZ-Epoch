@@ -24,7 +24,7 @@ class MeleeMachete: MeleeWeapon
 		class Drop
 		{
 			text = $STR_ACTIONS_DROP;
-			script = "spawn player_dropWeapon; r_action_count = r_action_count + 1;";
+			script = "spawn player_dropWeapon;"; // r_action_count = r_action_count + 1;
 			use[] = {"Machete_Swing"};
 		};
 	};

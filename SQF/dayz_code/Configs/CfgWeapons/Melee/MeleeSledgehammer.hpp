@@ -24,7 +24,7 @@ class MeleeSledge: MeleeWeapon
 		class Drop
 		{
 			text = $STR_ACTIONS_DROP;
-			script = "spawn player_dropWeapon; r_action_count = r_action_count + 1;";
+			script = "spawn player_dropWeapon;"; // r_action_count = r_action_count + 1;
 			use[] = {"Sledge_Swing"};
 		};
 	};

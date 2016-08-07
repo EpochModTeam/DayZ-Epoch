@@ -24,7 +24,7 @@ class ItemShovel : ItemCore
 		class Use
 		{
 			text = $STR_CREATE_STASH;
-			script = "spawn player_createstash; r_action_count = r_action_count + 1;";
+			script = "spawn player_createstash;"; // r_action_count = r_action_count + 1;
 		};
 	};
 };

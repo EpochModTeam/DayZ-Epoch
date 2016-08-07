@@ -22,7 +22,7 @@ class ItemTent : CA_Magazine
 		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_270;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"desert_net_kit",1}};
@@ -31,7 +31,7 @@ class ItemTent : CA_Magazine
 		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_271;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"forest_net_kit",1}};
@@ -64,7 +64,7 @@ class ItemDomeTent : CA_Magazine
 		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_271;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"forest_net_kit",1}};
@@ -100,7 +100,7 @@ class ItemDesertTent : CA_Magazine
 		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_270;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem; r_action_count = r_action_count + 1;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"desert_net_kit",1}};
