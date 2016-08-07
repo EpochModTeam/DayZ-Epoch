@@ -150,7 +150,6 @@ if (_status == "ObjectStreamStart") then {
 		_worldspace set [count _worldspace, "0"];
 	};
 
-	if (_damage < 1) then {
 		//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
 		
 		if (_type in DayZ_WoodenFence or _type in DayZ_WoodenGates) then {
@@ -293,7 +292,6 @@ if (_status == "ObjectStreamStart") then {
 			};
 		};
 		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object]; //Monitor the object
-	};
 } forEach _myArray;
 
 // # END OF STREAMING #
