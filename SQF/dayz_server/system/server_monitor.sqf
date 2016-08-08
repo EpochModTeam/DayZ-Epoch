@@ -2,8 +2,7 @@ private ["_date","_year","_month","_day","_hour","_minute","_date1","_hiveRespon
 []execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-waitUntil {!isNil "BIS_MPF_InitDone"};
-waitUntil {initialized}; //means all the functions are now defined
+waitUntil {!isNil "BIS_MPF_InitDone" && initialized};
 if (!isNil "sm_done") exitWith {}; // prevent server_monitor be called twice (bug during login of the first player)
 sm_done = false;
 
@@ -56,106 +55,111 @@ if (_status == "ObjectStreamStart") then {
 	diag_log ("HIVE: Streamed " + str(_val) + " objects");
 };
 
+_tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
+_respawnPos = getMarkerpos "respawn_west";
 {
 	//Parse Array
 	_action = 		_x select 0; 
 	_idKey = 		_x select 1;
-	_type =			if ((typeName (_x select 2)) == "STRING") then { _x select 2 };
+	_type =			_x select 2;
 	_ownerID = 		_x select 3;
-	_worldspace = 	if ((typeName (_x select 4)) == "ARRAY") then { _x select 4 } else { [] };
-	_inventory =	if ((typeName (_x select 5)) == "ARRAY") then { _x select 5 } else { [] };
-	_hitPoints =	if ((typeName (_x select 6)) == "ARRAY") then { _x select 6 } else { [] };
-	_fuel =			if ((typeName (_x select 7)) == "SCALAR") then { _x select 7 } else { 0 };
-	_damage = 		if ((typeName (_x select 8)) == "SCALAR") then { _x select 8 } else { 0.9 };
-	_storageMoney = if ((typeName (_x select 9)) == "SCALAR") then { _x select 9 } else { 0 };
+	_worldspace = 	_x select 4;
+	_inventory =	_x select 5;
+	_hitPoints =	_x select 6;
+	_fuel =			_x select 7;
+	_damage = 		_x select 8;
+	_storageMoney = _x select 9;
 
 	//set object to be in maintenance mode
 	_maintenanceMode = false;
 	_maintenanceModeVars = [];
 	
-	_dir = floor(random(360));
-	_pos = getMarkerpos "respawn_west";
+	_dir = 90;
+	_pos = _respawnPos;
 	_wsDone = false;
-
-	if (count _worldspace >= 1 && {(typeName (_worldspace select 0)) == "SCALAR"}) then {
-		_dir = _worldspace select 0;
-	};
-	if (count _worldspace >= 2 && {(typeName (_worldspace select 1)) == "ARRAY"}) then { 
-		_i = _worldspace select 1;
-		if (count _i == 3 &&
-			{(typeName (_i select 0)) == "SCALAR"} && 
-			{(typeName (_i select 1)) == "SCALAR"} &&
-			{(typeName (_i select 2)) == "SCALAR"}) then {
-			_pos = _i;
-			_wsDone = true;					
-		};
-	};
-	if (!_wsDone) then {
-		//_pos = [,0,30,10,0,2000,0] call BIS_fnc_findSafePos;
-		if (count _pos < 3) then { _pos = [_worldspace select 0,_worldspace select 1,0]; };
-		diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
-	};
+	_wsCount = count _worldspace;
 
 	//Vector building
 	_vector = [[0,0,0],[0,0,0]];
 	_vecExists = false;
 	_ownerPUID = "0";
-	_worldSpaceSize = count _worldspace;
-	if (_worldSpaceSize >= 3) then{
-		_ws2TN = typename (_worldspace select 2);
-		_ws3TN = typename (_worldspace select 3);
-		if (_worldSpaceSize == 3) then{
-				if (_ws2TN == "STRING") then{
-					_ownerPUID = _worldspace select 2;
-				} else {
-					 if (_ws2TN == "ARRAY") then{
-						_vector = _worldspace select 2;
-						if (count _vector == 2) then{
-							if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
-								_vecExists = true;
-							};
-						};
-					};                  
-				};
-		} else {
-			//Was not 3 elements, so check if 4 or more
-			if (_worldSpaceSize == 4) then{
-				if (_ws3TN == "STRING") then{
-					_ownerPUID = _worldspace select 3;
-				} else {
-					if (_ws2TN == "STRING") then{
-						_ownerPUID = _worldspace select 2;
-					};
-				};
-				if (_ws2TN == "ARRAY") then{
-					_vector = _worldspace select 2;
-					if (count _vector == 2) then{
-						if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
-							_vecExists = true;
-						};
-					};
-				} else {
-					if (_ws3TN == "ARRAY") then{
-						_vector = _worldspace select 3;
-						if (count _vector == 2) then{
-							if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
-								_vecExists = true;
-							};
-						};
-					};
+
+	
+	if (_wsCount >= 1) then {
+		if ((typeName (_worldspace select 0)) == "SCALAR") then {
+			_dir = _worldspace select 0;
+		};
+		if (_wsCount >= 2) then {
+			if ((typeName (_worldspace select 1)) == "ARRAY") then {
+				_i = _worldspace select 1;
+				if (count _i == 3) then {
+					_pos = _i;
+					_wsDone = true;					
 				};
 			};
+			if (_wsCount >= 3) then{
+				_ws2TN = typename (_worldspace select 2);
+				_ws3TN = typename (_worldspace select 3);
+				if (_wsCount == 3) then{
+						if (_ws2TN == "STRING") then{
+							_ownerPUID = _worldspace select 2;
+						} else {
+							 if (_ws2TN == "ARRAY") then{
+								_vector = _worldspace select 2;
+								if (count _vector == 2) then{
+									if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
+										_vecExists = true;
+									};
+								};
+							};                  
+						};
+				} else {
+					//Was not 3 elements, so check if 4 or more
+					if (_wsCount == 4) then{
+						if (_ws3TN == "STRING") then{
+							_ownerPUID = _worldspace select 3;
+						} else {
+							if (_ws2TN == "STRING") then{
+								_ownerPUID = _worldspace select 2;
+							};
+						};
+						if (_ws2TN == "ARRAY") then{
+							_vector = _worldspace select 2;
+							if (count _vector == 2) then{
+								if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
+									_vecExists = true;
+								};
+							};
+						} else {
+							if (_ws3TN == "ARRAY") then{
+								_vector = _worldspace select 3;
+								if (count _vector == 2) then{
+									if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
+										_vecExists = true;
+									};
+								};
+							};
+						};
+					};
+				};
+			} else {
+				_worldspace set [count _worldspace, "0"];
+			};
 		};
-	} else {
-		_worldspace set [count _worldspace, "0"];
+	};
+
+	if (!_wsDone) then {
+		//_pos = [,0,30,10,0,2000,0] call BIS_fnc_findSafePos;
+		//if (count _pos < 3) then { _pos = [_worldspace select 0,_worldspace select 1,0]; }; //using 0,0,0 instead of getMarkerPos _pos will never be < 3
+		diag_log format["MOVED OBJ: %1 of class %2 to pos: [0,0,0]",_idKey,_type];
 	};
 
 		//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
 		
-		if (_type in DayZ_WoodenFence or _type in DayZ_WoodenGates) then {
+		if (_type in _tempMaint) then {
 			//Use hitpoints for Maintenance system and other systems later.
 			{
-				if (_x == "Maintenance") then {_maintenanceMode = true;};
+				if (_x == "Maintenance") exitWith {_maintenanceMode = true;};
 			} forEach _hitPoints;
 			
 			//Enable model swap for a damaged model.
@@ -166,56 +170,73 @@ if (_status == "ObjectStreamStart") then {
 			//TODO add remove object and readd old fence (hideobject would be nice to use here :-( )
 			//Pending change to new fence models\Layout
 		};
+		_nonColide = _type in DayZ_nonCollide;
 		
 		//Create it
-		_object = createVehicle [_type, [0,0,0], [], 0, if (_type in DayZ_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
+		_object = createVehicle [_type, [0,0,0], [], 0, if (_nonColide) then {"NONE"} else {"CAN_COLLIDE"}];
 		_object setPosATL _pos;
-
+		_object setDir _dir;
+		_object setDamage _damage;
+		if(_vecExists)then{
+			_object setVectorDirAndUp _vector;
+		}; 
+		
+		_doorLocked = _type in DZE_DoorsLocked;
+		_isPlot = _type == "Plastic_Pole_EP1_DZ";
+		
 		// prevent immediate hive write when vehicle parts are set up
 		_object setVariable ["lastUpdate",diag_ticktime];
 		_object setVariable ["ObjectID", _idKey, true];
 		_object setVariable ["OwnerPUID", _ownerPUID, true];
-		if (Z_SingleCurrency && {(typeOf (_object)) in DZE_MoneyStorageClasses}) then {
+		if (Z_SingleCurrency && {_type in DZE_MoneyStorageClasses}) then {
 			_object setVariable [Z_MoneyVariable, _storageMoney, true];
 		};
-		if (DZE_permanentPlot && (typeOf _object == "Plastic_Pole_EP1_DZ")) then {
+		if (DZE_permanentPlot && _isPlot) then {
 			_object setVariable ["plotfriends", _inventory, true];
 		};
 
-		if( DZE_doorManagement && (typeOf (_object) in DZE_DoorsLocked) ) then {
+		if( DZE_doorManagement && _doorLocked) then {
 			_object setVariable ["doorfriends", _inventory, true];
 		};
 
 		dayz_serverIDMonitor set [count dayz_serverIDMonitor,_idKey];
+
 		// Fix for leading zero issues on safe codes after restart
-		_lockable = if (isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {getNumber (configFile >> "CfgVehicles" >> _type >> "lockable")} else {0};
-		if (_lockable == 4) then {
+		if (isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {
+			_lockable = getNumber (configFile >> "CfgVehicles" >> _type >> "lockable");
 			_codeCount = count (toArray _ownerID);
-			if (_codeCount == 3) then {_ownerID = format["0%1",_ownerID];};
-			if (_codeCount == 2) then {_ownerID = format["00%1",_ownerID];};
-			if (_codeCount == 1) then {_ownerID = format["000%1",_ownerID];};
+			switch (_lockable) do {
+				case 4: {
+					switch (_codeCount) do {
+						case 3: {_ownerID = format["0%1",_ownerID];};
+						case 2: {_ownerID = format["00%1",_ownerID];};
+						case 1: {_ownerID = format["000%1",_ownerID];};
+					};
+				};
+				case 3: {
+					switch (_codeCount) do {
+						case 2: {_ownerID = format["0%1",_ownerID];};
+						case 1: {_ownerID = format["00%1",_ownerID];};
+					};
+				};
+			};
 		};
-		if (_lockable == 3) then {
-			_codeCount = count (toArray _ownerID);
-			if (_codeCount == 2) then {_ownerID = format["0%1",_ownerID];};
-			if (_codeCount == 1) then {_ownerID = format["00%1",_ownerID];};
-		};
+
 		_object setVariable ["CharacterID", _ownerID, true];
-		_object setDir _dir;
-		if(_vecExists)then{
-			_object setVectorDirAndUp _vector;
-		}; 
-		_object setDamage _damage;
 		
 		if (!_wsDone) then {[_object,"position",true] call server_updateObject;};
 		if (_type == "Base_Fire_DZ") then {_object spawn base_fireMonitor;};
 		
+		_isDZ_Buildable = _object isKindOf "DZ_buildables";
+		_isTrapItem = _object isKindOf "TrapItems";
+		_isSafeObject = _type in DayZ_SafeObjects;
+		
 		//Dont add inventory for traps.
-		if (!(_object isKindOf "TrapItems") && !(_object isKindOf "DZ_buildables")) then {
+		if (!_isDZ_Buildable && !_isTrapItem) then {
 			clearWeaponCargoGlobal _object;
 			clearMagazineCargoGlobal _object;
 			clearBackpackCargoGlobal _object;
-			if( (count _inventory > 0) && !(typeOf( _object) == "Plastic_Pole_EP1_DZ") && !(typeOf( _object) in DZE_DoorsLocked) ) then {
+			if( (count _inventory > 0) && !_isPlot && !_doorLocked ) then {
 				if (_type in DZE_LockedStorage) then {
 					_object setVariable ["WeaponCargo",(_inventory select 0),true];
 					_object setVariable ["MagazineCargo",(_inventory select 1),true];
@@ -248,43 +269,49 @@ if (_status == "ObjectStreamStart") then {
 			{
 				_selection = _x select 0;
 				_dam = _x select 1;
-				if ((_selection in dayZ_explosiveParts && _dam > 0.8) && !(_object isKindOf "Air")) then {_dam = 0.8};
+				if (!(_object isKindOf "Air") && {(_selection in dayZ_explosiveParts && (_dam > 0.8))}) then {_dam = 0.8};
 				[_object,_selection,_dam] call fnc_veh_setFixServer;
 			} forEach _hitpoints;
 
 			_object setFuel _fuel;
-			if !(_type in DayZ_SafeObjects) then {
+			if (!_isSafeObject) then {
 				_object setVelocity [0,0,1];
 				_object call fnc_veh_ResetEH;			
-				if (_ownerID != "0" && !(_object isKindOf "Bicycle")) then {_object setVehicleLock "locked";};
+				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
 				_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle
 			};
 		} else {
-			if (_type in DayZ_nonCollide) then {
+			if (_nonColide) then {
 				_pos set [2,0];
 			};
 			_object setPosATL _pos;
-			if ((_object isKindOf "DZ_buildables") or ((_type in DayZ_SafeObjects) && !(_object isKindOf "TrapItems"))) then {
+			if (_isDZ_Buildable || {(_isSafeObject && !_isTrapItem)}) then {
 				_object setVariable["memDir",_dir,true];
-				if (DZE_GodModeBase && {!((typeOf(_object)) in DZE_GodModeBaseExclude)}) then {_object addEventHandler ["HandleDamage",{false}];} else {_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];};
+				if (DZE_GodModeBase && {!(_type in DZE_GodModeBaseExclude)}) then {
+					_object addEventHandler ["HandleDamage",{false}];
+				} else {
+					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
+				};
 				_object enableSimulation false; // Test disabling simulation server side on buildables only.
 				_object setVariable ["OEMPos",_pos,true]; // used for inplace upgrades and lock/unlock of safe
 			};
-			if (_object isKindOf "TrapItems" or _object isKindOf "DZ_buildables") then {
+			if (_isTrapItem || _isDZ_Buildable) then {
 				//Use inventory for owner/clan info and traps armed state
 				{
-					if (typeName _x != "ARRAY") then {
-						// old method
-						if (typeName _x == "STRING") then { _object setVariable ["ownerArray", [_x], true]; };
-						if (typeName _x == "BOOLEAN") then { _object setVariable ["armed", _x, true]; };
-					} else { // new method: array of variables to set
-						switch (_x select 0) do {
-							case "ownerArray" : { _object setVariable ["ownerArray", _x select 1, true]; };
-							case "clanArray" : { _object setVariable ["clanArray", _x select 1, true]; };
-							case "armed" : { _object setVariable ["armed", _x select 1, true]; };
-							case "padlockCombination" : { _object setVariable ["dayz_padlockCombination",_x select 1,false]; };
-							case "BuildLock" : { _object setVariable ["BuildLock",_x select 1,true]; };
+					_xTypeName = typeName _x ;
+					switch (_xTypeName) do {
+						case "ARRAY": {
+							_x1 = _x select 1;
+							switch (_x select 0) do {
+								case "ownerArray" : { _object setVariable ["ownerArray", _x1, true]; };
+								case "clanArray" : { _object setVariable ["clanArray", _x1, true]; };
+								case "armed" : { _object setVariable ["armed", _x1, true]; };
+								case "padlockCombination" : { _object setVariable ["dayz_padlockCombination", _x1, false]; };
+								case "BuildLock" : { _object setVariable ["BuildLock", _x1, true]; };
+							};
 						};
+						case "STRING": {_object setVariable ["ownerArray", [_x], true]; };
+						case "BOOLEAN": {_object setVariable ["armed", _x, true]};
 					};
 				} forEach _inventory;
 				
