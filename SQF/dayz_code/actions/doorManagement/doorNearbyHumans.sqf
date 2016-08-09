@@ -8,7 +8,7 @@ Humans = [];
 	if (isPlayer _x) then {
 		_friendUID = [_x] call FNC_GetPlayerUID;
 		_friendName = name  _x;
-		Humans set [count Humans, [_friendUID,_friendName]];
+		Humans set [count Humans, [_friendUID,toArray _friendName]];
 		lbAdd [7101, _friendName];
 	};
 } forEach _closePeople;

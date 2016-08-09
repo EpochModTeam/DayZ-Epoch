@@ -131,7 +131,7 @@ if ((count _upgrade) > 0) then {
 				if (_ownerID == "0") then { _ownerID = _playerUID; }; //APFL is on but UID is 0 so we will claim it to record the ownership.
 				_object setVariable ["ownerPUID",_ownerID,true];
 				if (_lockable == 3) then {
-					_friendsArr = [[_playerUID,(name player)]];
+					_friendsArr = [[_playerUID,toArray (name player)]];
 					_object setVariable ["doorfriends", _friendsArr, true];
 					PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,_ownerID,_vector],_classname,_obj,player,_friendsArr];
 				} else {

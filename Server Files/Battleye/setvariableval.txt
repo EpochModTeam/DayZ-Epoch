@@ -8,7 +8,7 @@
 1 "switch" !="\"switchmove\""
 1 "hide" !"hideObject"
 1 "icon"
-1 "marker"
+1 "marker" !"PPMarker"
 1 "server"
 5 "compile"
 5 "loadFile"
