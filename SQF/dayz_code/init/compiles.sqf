@@ -166,6 +166,7 @@ if (!isDedicated) then {
 	epoch_returnChange = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\epoch_returnChange.sqf";
 	fn_gearMenuChecks = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_gearMenuChecks.sqf";
 	fn_pauseMenuChecks = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_pauseMenuChecks.sqf";
+	fn_waitForObject = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_waitForObject.sqf";
 	player_onPause = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_onPause.sqf";
 	player_addDuplicateTool = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_addDuplicateTool.sqf";
 	player_antiWall = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_antiWall.sqf";

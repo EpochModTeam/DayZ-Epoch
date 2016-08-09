@@ -1,11 +1,10 @@
-private ["_activatingPlayer","_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey"];
-//PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
-_object = 		_this select 0;
-_worldspace = 	_this select 1;
-_class = 		_this select 2;
-_donotusekey =	_this select 3;
-_keySelected =  _this select 4;
-_activatingPlayer =  _this select 5;
+private ["_activatingPlayer","_isOK","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey"];
+//PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+_worldspace = 	_this select 0;
+_class = 		_this select 1;
+_donotusekey =	_this select 2;
+_keySelected =  _this select 3;
+_activatingPlayer =  _this select 4;
 
 if(_donotusekey) then {
 	_isOK = true;
@@ -21,7 +20,6 @@ if(_donotusekey) then {
 	_characterID = str(getNumber(configFile >> "CfgWeapons" >> _keySelected >> "keyid"));
 };
 
-diag_log ("PUBLISH: Attempt " + str(_object));
 _dir = 		_worldspace select 0;
 _location = _worldspace select 1;
 _uid = _worldspace call dayz_objectUID2;
@@ -32,17 +30,16 @@ diag_log ("HIVE: WRITE: "+ str(_key));
 _key call server_hiveWrite;
 
 // Switched to spawn so we can wait a bit for the ID
-[_object,_uid,_characterID,_class,_dir,_location,_donotusekey,_activatingPlayer] spawn {
+[_uid,_characterID,_class,_dir,_location,_donotusekey,_activatingPlayer] spawn {
    private ["_object","_uid","_characterID","_done","_retry","_key","_result","_outcome","_oid","_class","_location","_object_para","_donotusekey","_activatingPlayer"];
 
-   _object = _this select 0;
-   _uid = _this select 1;
-   _characterID = _this select 2;
-   _class = _this select 3;
-   //_dir = _this select 4;
-   _location = _this select 5;
-   _donotusekey = _this select 6;
-   _activatingPlayer = _this select 7;
+   _uid = _this select 0;
+   _characterID = _this select 1;
+   _class = _this select 2;
+   //_dir = _this select 3;
+   _location = _this select 4;
+   _donotusekey = _this select 5;
+   _activatingPlayer = _this select 6;
 
    _done = false;
 	_retry = 0;
@@ -55,7 +52,6 @@ _key call server_hiveWrite;
 		_outcome = _result select 0;
 		if (_outcome == "PASS") then {
 			_oid = _result select 1;
-			//_object setVariable ["ObjectID", _oid, true];
 			diag_log("CUSTOM: Selected " + str(_oid));
 			_done = true;
 			_retry = 100;
@@ -67,9 +63,6 @@ _key call server_hiveWrite;
 			uiSleep 1;
 		};
 	};
-
-	// Remove marker
-	deleteVehicle _object;
 
 	if(!_done) exitWith { diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
 

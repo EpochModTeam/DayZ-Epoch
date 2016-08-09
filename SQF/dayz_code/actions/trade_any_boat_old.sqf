@@ -1,4 +1,4 @@
-private ["_veh","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_okToSell","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_playerNear"];
+private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_okToSell","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_playerNear"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -110,14 +110,12 @@ if (_qty >= _qty_in) then {
 							};
 	
 							//place vehicle spawn marker (local)
-							_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
-
-							_location = (getPosATL _veh);
+							_sign = "Sign_arrow_down_large_EP1" createVehicleLocal _location;
+							_location = [_sign] call FNC_GetPos;
 					
-							PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_result select 1,_activatingPlayer];
+							PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_result select 1,_activatingPlayer];
 							publicVariableServer  "PVDZE_veh_Publish2";
-
-							player reveal _veh;
+							[_part_out,_sign] spawn fn_waitForObject;
 
 							format["Bought %3 for %1 %2, key added to toolbelt.",_qty_in,_textPartIn,_textPartOut] call dayz_rollingMessages;
 						} else {

@@ -146,15 +146,16 @@ if (_enoughMoney) then {
 			_location = [([player] call FNC_GetPos),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
 		};
 
-		_veh = createVehicle ["Sign_arrow_down_large_EP1", _location, [], 0, "CAN_COLLIDE"];
-		_location = ([_veh] call FNC_GetPos);
+		_sign = "Sign_arrow_down_large_EP1" createVehicleLocal _location;
+		_location = [_sign] call FNC_GetPos;
 		
 		if (_buyingType in ["trade_any_vehicle_free", "trade_any_bicycle", "trade_any_bicycle_old"]) then {
-			PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,true,"0",_activatingPlayer];
+			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,"0",_activatingPlayer];
 		} else {
-			PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
 		};
 		publicVariableServer  "PVDZE_veh_Publish2";
+		[_part_out,_sign] spawn fn_waitForObject;
 		_keySelected;
 	};
 	//systemChat localize "STR_EPOCH_PLAYER_105"; // "Stand still to complete trade". Medic animation loop no longer used.
