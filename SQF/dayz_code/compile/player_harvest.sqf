@@ -29,15 +29,11 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 			// damage must be going down
 			_damage = damage _tree;
 			if (DZE_TEMP_treedmg < _damage) then {
-
-				if (_damage < 0.99) then {
+				if (_damage < 0.99 && {(random 1) > 0.7}) then {
 					PVDZ_objgather_Knockdown = [_tree,player]; // Ask server to setDamage on tree
 					publicVariableServer "PVDZ_objgather_Knockdown";
 				};
-
-				//diag_log ("DAMAGE: " + str(damage _tree)); 
-
-				_itemOut = if (_ammo isKindOf "Chainsaw_Swing_Ammo") then {"PartWoodLumber"} else {"ItemLog"}; // Log can be crafted to > 2x plank > 4x woodpile			
+				_itemOut = if (_ammo isKindOf "Chainsaw_Swing_Ammo") then {"PartWoodLumber"} else {"PartWoodPile"}; // Log can be crafted to > 2x plank > 4x woodpile			
 				_itemOut call fn_dropItem;
 
 				_distance = 60;
