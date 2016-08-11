@@ -58,7 +58,7 @@ switch (_status) do {
 	case 1: { //Locking
 		_lockedClass = getText (configFile >> "CfgVehicles" >> _type >> "lockedClass");
 	
-		// Save old unlocked safe's gear to database
+		// Save to database (also happens if a player is within 10m in server_playerSync and server_onPlayerDisconnect)
 		[_obj,"gear"] call server_updateObject;
 		_weapons = getWeaponCargo _obj;
 		_magazines = getMagazineCargo _obj;
