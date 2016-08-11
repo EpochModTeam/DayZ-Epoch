@@ -37,7 +37,7 @@ if (!_fueling) then {
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
 
 	// Added Nutrition-Factor for work
-	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
+	["Working",0,[0,1,3,0]] call dayz_NutritionSystem;
 
 	r_doLoop = true;
 	_started = false;
