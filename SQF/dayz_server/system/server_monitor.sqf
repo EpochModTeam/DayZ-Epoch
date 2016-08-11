@@ -7,6 +7,7 @@ if (!isNil "sm_done") exitWith {}; // prevent server_monitor be called twice (bu
 sm_done = false;
 
 dayz_serverIDMonitor = [];
+DZE_VehObjects = [];
 dayz_versionNo = getText (configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _hiveLoaded = false;
@@ -150,7 +151,7 @@ _respawnPos = getMarkerpos "respawn_west";
 
 	if (!_wsDone) then {
 		//_pos = [,0,30,10,0,2000,0] call BIS_fnc_findSafePos;
-		//if (count _pos < 3) then { _pos = [_worldspace select 0,_worldspace select 1,0]; }; //using 0,0,0 instead of getMarkerPos _pos will never be < 3
+		if (count _pos < 3) then { _pos = [_worldspace select 0,_worldspace select 1,0]; };
 		diag_log format["MOVED OBJ: %1 of class %2 to pos: [0,0,0]",_idKey,_type];
 	};
 
@@ -170,13 +171,14 @@ _respawnPos = getMarkerpos "respawn_west";
 			//TODO add remove object and readd old fence (hideobject would be nice to use here :-( )
 			//Pending change to new fence models\Layout
 		};
-		_nonColide = _type in DayZ_nonCollide;
+		_nonCollide = _type in DayZ_nonCollide;
 		
 		//Create it
-		_object = createVehicle [_type, [0,0,0], [], 0, if (_nonColide) then {"NONE"} else {"CAN_COLLIDE"}];
+		_object = createVehicle [_type, [0,0,0], [], 0, if (_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
 		_object setPosATL _pos;
 		_object setDir _dir;
 		_object setDamage _damage;
+		_object enableSimulation false;
 		if(_vecExists)then{
 			_object setVectorDirAndUp _vector;
 		}; 
@@ -276,16 +278,18 @@ _respawnPos = getMarkerpos "respawn_west";
 
 			_object setFuel _fuel;
 			if (!_isSafeObject) then {
-				_object setVelocity [0,0,1];
-				_object call fnc_veh_ResetEH;			
+				DZE_VehObjects set [count DZE_VehObjects,_object]; 
+				_object call fnc_veh_ResetEH;
 				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
 				_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle
+			} else {
+				_object enableSimulation true;
 			};
 		} else {
-			if (_nonColide) then {
+			if (_nonCollide) then {
 				_pos set [2,0];
+				_object setPosATL _pos;
 			};
-			_object setPosATL _pos;
 			if (_isDZ_Buildable || {(_isSafeObject && !_isTrapItem)}) then {
 				_object setVariable["memDir",_dir,true];
 				if (DZE_GodModeBase && {!(_type in DZE_GodModeBaseExclude)}) then {
@@ -293,7 +297,6 @@ _respawnPos = getMarkerpos "respawn_west";
 				} else {
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};
-				_object enableSimulation false; // Test disabling simulation server side on buildables only.
 				_object setVariable ["OEMPos",_pos,true]; // used for inplace upgrades and lock/unlock of safe
 			};
 			if (_isTrapItem || _isDZ_Buildable) then {
@@ -317,10 +320,19 @@ _respawnPos = getMarkerpos "respawn_west";
 				} forEach _inventory;
 				
 				if (_maintenanceMode) then { _object setVariable ["Maintenance", true, true]; _object setVariable ["MaintenanceVars", _maintenanceModeVars]; };
+			} else {
+				_object enableSimulation true;
 			};
 		};
 		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object]; //Monitor the object
 } forEach _myArray;
+
+[] spawn { //enable simulation on vehicles after all buildables are spawned
+	{
+		_object enableSimulation true;
+		_x setVelocity [0,0,1];
+	} count DZE_VehObjects;
+};
 
 // # END OF STREAMING #
 
