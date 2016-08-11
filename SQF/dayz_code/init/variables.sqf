@@ -418,6 +418,9 @@ if(isNil "dayz_POIs") then {
 if(isNil "dayz_ForcefullmoonNights") then {
 	dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
 };
+if(isNil "dayz_randomMaxFuelAmount") then {
+	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
+};
 
 //Replace server individual settings with ranked settings
 if(isNil "dayz_presets") then { dayz_presets = "Vanilla"; };

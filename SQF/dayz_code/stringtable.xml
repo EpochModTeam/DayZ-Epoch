@@ -1302,6 +1302,12 @@
 			<German>Es ist nicht mehr genügend Treibstoff im %1, um etwas abzuzapfen.</German>
 			<Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		</Key>
+		<Key ID="str_fill_notenough">
+			<English>%1 does not have enough fuel to fill jerry can(s). (Estimated %2 Liters left)</English>
+		</Key>
+		<Key ID="str_fill_success">
+			<English>You have filled %1 jerry can(s) with fuel. %2 has an estimated %3 Liters of fuel left.</English>
+		</Key>
 		<Key ID="str_siphon_canceled">
 			<English>Canceled siphon</English>
 			<Russian>Слив отменен.</Russian>

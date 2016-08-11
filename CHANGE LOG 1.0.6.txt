@@ -40,6 +40,9 @@
 [NEW] Weather effects are now configurable with DZE_WeatherVariables See DynamicWeatherEffects.sqf for info on these values @icomrade
 [NEW] Full height cinderblock wall kits are now in game, classname "full_cinder_wall_kit" #1172 @icomrade
 [NEW] You can exclude built items from the god mode base function using DZE_GodModeBaseExclude = []; which is an array of item classnames
+[NEW] Fuel stations now have limited amount of fuel each restart. Configurable with dayz_randomMaxFuelAmount in init.sqf
+[NEW] More possible causes of death added to study body: fell, ran over, shot, melee hit, zombie hit @ebaydayz
+[NEW] Player-list no longer shows who's in lobby or ingame.
 
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
 [CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)
@@ -98,6 +101,7 @@
 [NOTE]	Servers that use trader safezones must configure the variable DZE_SafeZonePosArray with their safezone posisitons and radii, otherwise passangers of vehicles in safezones will be killed upon destruction of their vehicle
 [FIXED] Players are no longer able to brute force doors or safes by the method described in #1187 @icomrade
 [FIXED] Fix some items not displaying removal option #1135 @icomrade
+[FIXED] Study body message saying his/he on female players. @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_code\Configs\CfgLoot\CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x

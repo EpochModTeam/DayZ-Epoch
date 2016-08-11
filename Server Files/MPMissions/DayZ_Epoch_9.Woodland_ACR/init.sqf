@@ -16,6 +16,7 @@ dayz_quickSwitch = false; //Turns on forced animation for weapon switch. (hotkey
 dayz_POIs = true;
 dayz_infectiousWaterholes = true;
 dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
+dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
 
 //DayZMod presets
 dayz_presets = "Custom"; //"Custom","Classic","Vanilla","Elite"
