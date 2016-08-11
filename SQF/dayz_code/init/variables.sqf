@@ -26,10 +26,6 @@ Message_3_time = 0;
 //OpenTarget timer
 OpenTarget_Time = 0;
 
-//Brute force fix
-keypadCancel = false;
-keyPadReset = {uiSleep 2; keypadCancel = false;};
-
 ///Player classes
 AllPlayers = ["Survivor_DZ","Survivor1_DZ","SurvivorW2_DZ","Survivor2_DZ","Sniper1_DZ","Soldier1_DZ","Camo1_DZ","BanditW1_DZ","Bandit1_DZ","Survivor3_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWsequishaD_DZ","SurvivorWsequisha_DZ","SurvivorWpink_DZ","SurvivorW3_DZ","Bandit2_DZ","BanditW2_DZ","Soldier_Crew_PMC","Rocket_DZ","Rocker1_DZ","Rocker2_DZ","Rocker3_DZ","Rocker4_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","Soldier_TL_PMC_DZ","Soldier_Sniper_PMC_DZ","Soldier_Bodyguard_AA12_PMC_DZ","Drake_Light_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","TK_INS_Soldier_EP1_DZ","TK_INS_Warlord_EP1_DZ","FR_OHara_DZ","FR_Rodriguez_DZ","CZ_Soldier_Sniper_EP1_DZ","Graves_Light_DZ","GUE_Soldier_MG_DZ","GUE_Soldier_Sniper_DZ","GUE_Soldier_Crew_DZ","GUE_Soldier_CO_DZ","GUE_Soldier_2_DZ","TK_Special_Forces_MG_EP1_DZ","TK_Soldier_Sniper_EP1_DZ","TK_Commander_EP1_DZ","RU_Soldier_Crew_DZ","INS_Lopotev_DZ","INS_Soldier_AR_DZ","INS_Soldier_CO_DZ","INS_Bardak_DZ","INS_Worker2_DZ"];
 DayZ_Male = ["Survivor_DZ","Survivor1_DZ","Survivor2_DZ","Survivor3_DZ","Sniper1_DZ","Soldier1_DZ","Camo1_DZ","Bandit1_DZ","Bandit2_DZ","Soldier_Crew_PMC","Rocket_DZ","Rocker1_DZ","Rocker2_DZ","Rocker3_DZ","Rocker4_DZ","Priest_DZ","Functionary1_EP1_DZ","GUE_Commander_DZ","Ins_Soldier_GL_DZ","Haris_Press_EP1_DZ","Pilot_EP1_DZ","RU_Policeman_DZ","pz_policeman","pz_suit1","pz_suit2","pz_worker1","pz_worker2","pz_worker3","pz_doctor","pz_teacher","pz_hunter","pz_villager1","pz_villager2","pz_villager3","pz_priest","Soldier_TL_PMC_DZ","Soldier_Sniper_PMC_DZ","Soldier_Bodyguard_AA12_PMC_DZ","Drake_Light_DZ","CZ_Special_Forces_GL_DES_EP1_DZ","TK_INS_Soldier_EP1_DZ","TK_INS_Warlord_EP1_DZ","FR_OHara_DZ","FR_Rodriguez_DZ","CZ_Soldier_Sniper_EP1_DZ","Graves_Light_DZ","GUE_Soldier_MG_DZ","GUE_Soldier_Sniper_DZ","GUE_Soldier_Crew_DZ","GUE_Soldier_CO_DZ","GUE_Soldier_2_DZ","TK_Special_Forces_MG_EP1_DZ","TK_Soldier_Sniper_EP1_DZ","TK_Commander_EP1_DZ","RU_Soldier_Crew_DZ","INS_Lopotev_DZ","INS_Soldier_AR_DZ","INS_Soldier_CO_DZ","INS_Bardak_DZ","INS_Worker2_DZ"];
@@ -38,6 +34,7 @@ DayZ_Female = ["SurvivorW2_DZ","BanditW1_DZ","BanditW2_DZ","SurvivorWcombat_DZ",
 //Classnames for specific items
 MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseball","MeleeBaseBallBat","MeleeBaseBallBatBarbed","MeleeBaseBallBatNails","MeleeFishingPole","MeleeSledge"];
 MeleeMagazines = ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing"];
+MeleeAmmo = ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo","Bat_Swing_Ammo","BatBarbed_Swing_Ammo","BatNailed_Swing_Ammo","Fishing_Swing_Ammo","Sledge_Swing_Ammo","Chainsaw_Swing_Ammo"];
 Dayz_fishingItems = ["MeleeFishingPole"];
 Dayz_plants = ["Dayz_Plant1","Dayz_Plant2","Dayz_Plant3"];
 Dayz_attachment_array = ["Attachment_ACG","Attachment_AIM"];
@@ -387,7 +384,7 @@ PVDZ_obj_Publish = []; // Used for eventhandler to spawn a mirror of players ten
 PVCDZ_obj_HideBody = objNull;
 
 //DayZ settings
-DayZ_LastHumanityChange = diag_tickTime;
+dayz_lastHumanityChange = diag_tickTime;
 dayz_maxAnimals = 5;
 dayz_maxPlants = 3;
 dayz_animalDistance = 600;
@@ -484,6 +481,8 @@ switch (dayz_presets) do {
 //call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\achievements_init.sqf";
 
 // EPOCH ADDITIONS
+keypadCancel = false; //Brute force fix
+keyPadReset = {uiSleep 2; keypadCancel = false;};
 canbuild = true;
 dayz_combination = "";
 dayz_disallowedVault = ["TentStorage","BuiltItems","ModularItems","DZE_Base_Object","Generator_DZ"];
@@ -594,6 +593,10 @@ if (!isDedicated) then {
 	dayz_temperaturmin = 27; //TeeChange
 
 	//player special variables
+	dayz_lastDamageSource = "none";
+	dayz_lastDamageTime = 0;
+	dayz_lastMedicalSource = "none";
+	dayz_lastMedicalTime = 0;
 	dayz_lastClothesChange = 0;
 	dayZ_lastPlayerUpdate = 0;
 	dayz_hunger = 0;
@@ -661,6 +664,9 @@ if (!isDedicated) then {
 	dayz_dodge = false;
 	Dayz_constructionContext = [];
 	Dayz_freefall = [ time, 0, 0.1 ];
+	dayz_getout = objNull;
+	dayz_getoutTime = 0;
+	dayz_HitBy = objNull; 
 	
 	// EPOCH ADDITIONS
 	if (isNil "DZE_BackpackAntiTheft") then {DZE_BackpackAntiTheft = false;};

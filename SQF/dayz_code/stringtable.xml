@@ -6841,14 +6841,6 @@
 			<French>Le feu de camp a été retiré.</French>
 			<Czech>Ohniště bylo odstraněno.</Czech>
 		</Key>
-		<Key ID="str_fireplace_noMatches">
-			<English>You need a matchbox to build a fireplace</English>
-			<German>You need a matchbox to build a fireplace</German>
-			<Russian>You need a matchbox to build a fireplace</Russian>
-			<Spanish>You need a matchbox to build a fireplace</Spanish>
-			<French>You need a matchbox to build a fireplace</French>
-			<Czech>You need a matchbox to build a fireplace</Czech>
-		</Key>
 		<Key ID="str_success_gutted_animal">
 			<English>%1 has been gutted, %2 meat steaks now on the carcass</English>
 			<German>Du hast das Tier (%1) ausgenommen. Vom verbleibenden Fleisch kannst du %2 Stücke abschneiden.</German>
@@ -7400,6 +7392,9 @@
 			<French>Il s&apos;appelait %1, il semble qu&apos;il soit mort d&apos; %2</French>
 			<Czech>Jmenoval se %1 a pravděpododobně zemřel %2</Czech>
 		</Key>
+		<Key ID="str_player_studybody_female">
+			<English>Her name was %1, it appears she died from %2</English>
+		</Key>
 <!--		
 		<Key ID="str_player_fail_drink">
 			<English>You may not drink while in a vehicle</English>
@@ -7563,6 +7558,9 @@
 			<French>Remplissage déjà en cours!</French>
 			<Czech>Doplňování paliva už probíhá!</Czech>
 		</Key>
+		<Key ID="str_death_shot">
+			<English>a gunshot.</English>
+		</Key>
 		<Key ID="str_death_shothead">
 			<English>a gunshot to the head.</English>
 			<German>durch einen Schuss in den Kopf.</German>
@@ -7634,6 +7632,21 @@
 			<Spanish>por causas desconocidas.</Spanish>
 			<French>une cause inconnue.</French>
 			<Czech>během neznámé činnosti.</Czech>
+		</Key>
+		<Key ID="str_death_zombie">
+			<English>the infected.</English>
+		</Key>
+		<Key ID="str_death_fall">
+			<English>falling.</English>
+		</Key>
+		<Key ID="str_death_runover">
+			<English>being run over.</English>
+		</Key>
+		<Key ID="str_death_eject">
+			<English>falling out of a moving vehicle.</English>
+		</Key>
+		<Key ID="str_death_melee">
+			<English>blunt force trauma.</English>
 		</Key>
 		<Key ID="str_abort_playerclose">
 			<English>Cannot Abort near another player!\nYou are still in Combat.</English>
@@ -18065,6 +18078,9 @@
 			<Russian>Отмена</Russian>
 			<German>Abbrechen</German>
 			<Czech>Zrušit</Czech>
+		</Key>
+		<Key ID="str_fireplace_noMatches">
+			<English>You need matches to build a fireplace</English>
 		</Key>
 	</Package>
 </Project>

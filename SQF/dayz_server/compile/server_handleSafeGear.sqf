@@ -50,7 +50,7 @@ switch (_status) do {
 		_holder setVariable ["ObjectID",_objectID,true];
 		_holder setVariable ["ObjectUID",_objectUID,true];
 		_holder setVariable ["OEMPos",_pos,true];
-		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID ,true];};
+		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};
 		deleteVehicle _obj;
 		
 		[_weapons,_magazines,_backpacks,_holder] call server_addCargo;

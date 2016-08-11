@@ -157,12 +157,6 @@ while {1 == 1} do {
 	};
 	dayz_hunger = dayz_hunger + (_hunger / 70); //60 Updated to 80
 	dayz_hunger = (dayz_hunger min SleepFood) max 0;
-
-	if (dayz_hunger >= SleepFood) then {
-		if (r_player_blood < 10) then {
-			_id = [player,"starve"] spawn player_death;
-		};
-	};
 	
 //Thirst
 	_thirst = 2;
@@ -171,12 +165,6 @@ while {1 == 1} do {
 	};
 	dayz_thirst = dayz_thirst + (_thirst / 60) * (dayz_temperatur / dayz_temperaturnormal);	//TeeChange Temperatur effects added Max Effects: -25% and + 16.6% waterloss
 	dayz_thirst = (dayz_thirst min SleepWater) max 0;
-
-	if (dayz_thirst >= SleepWater) then {
-		if (r_player_blood < 10) then {
-			_id = [player,"dehyd"] spawn player_death;
-		};
-	};
 	
 	//diag_log format ["playerSpawn2 %1/%2",dayz_hunger,dayz_thirst];
 	
@@ -238,15 +226,10 @@ while {1 == 1} do {
 		if !(player getVariable["USEC_infected",false]) then {
 			player setVariable["USEC_infected",true,true];
 		};
-
-		if (r_player_blood < 3) then {
-			_id = [player,"sick"] spawn player_death;
-		};
 	};
 
 	// Radiation zones rapid blood loss
 	if (DZE_InRadiationZone) then {
-
 		_radsound = "radzone1";
 		_bloodloss = 10;
 		if (_radTimer > 5 && _radTimer < 10) then {
@@ -359,7 +342,7 @@ while {1 == 1} do {
 	};
 
 	_startcombattimer = player getVariable["startcombattimer", 0];
-	if (_startcombattimer == 1) then { //if (_startcombattimer == 1 || _PlayerNearby) then { // do not use _PlayerNearby it makes building impossible, tthis is handled in player_onPause.sqf just fine
+	if (_startcombattimer == 1) then { //Do not use _PlayerNearby it makes building impossible, this is handled in player_onPause.sqf just fine
 		player setVariable["combattimeout", diag_tickTime + 30, false];
 		player setVariable["inCombat", 1, true];
 		player setVariable["startcombattimer", 0, false];
@@ -419,7 +402,7 @@ while {1 == 1} do {
 			_magazines = getMagazineCargo _x;
 			_backpacks = getBackpackCargo _x;
 			
-			if ((count (_weapons select 0) < 1) and (count (_magazines select 0) < 1) and (count (_backpacks select 0) < 1)) then {		
+			if ((count (_weapons select 0) < 1) and (count (_magazines select 0) < 1) and (count (_backpacks select 0) < 1)) then {
 				//remove vehicle, Need to ask server to remove.
 				diag_log format["Deleting empty nearby box: %1",_x];
 				PVDZ_obj_Delete = [_x,player];
