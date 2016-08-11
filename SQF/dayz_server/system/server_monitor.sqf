@@ -238,9 +238,10 @@ _respawnPos = getMarkerpos "respawn_west";
 			clearBackpackCargoGlobal _object;
 			if( (count _inventory > 0) && !_isPlot && !_doorLocked ) then {
 				if (_type in DZE_LockedStorage) then {
-					_object setVariable ["WeaponCargo",(_inventory select 0),true];
-					_object setVariable ["MagazineCargo",(_inventory select 1),true];
-					_object setVariable ["BackpackCargo",(_inventory select 2),true];
+					// Do not send big arrays over network! Only server needs these
+					_object setVariable ["WeaponCargo",(_inventory select 0),false];
+					_object setVariable ["MagazineCargo",(_inventory select 1),false];
+					_object setVariable ["BackpackCargo",(_inventory select 2),false];
 				} else {
 					_cargo = _inventory;
 					_config = ["CfgWeapons","CfgMagazines","CfgVehicles"];

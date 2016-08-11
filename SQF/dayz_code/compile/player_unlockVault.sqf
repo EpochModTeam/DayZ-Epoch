@@ -3,7 +3,7 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_countr","_alreadyPacking","_playerNear","_playerID","_claimedBy","_unlockedClass","_text","_objType","_combination","_ComboMatch","_vector","_characterID"];
+private ["_obj","_ownerID","_alreadyPacking","_playerNear","_playerID","_claimedBy","_text","_objType","_ComboMatch"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -32,19 +32,12 @@ _text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
 _alreadyPacking = _obj getVariable["packing",0];
 _claimedBy = _obj getVariable["claimed","0"];
 _ownerID = _obj getVariable["CharacterID","0"];
-_characterID = _ownerID;
 _ComboMatch = (_ownerID == dayz_combination);
-if (DZE_permanentPlot) then {
-	_combination = _obj getVariable["characterID","0"];
-	_ownerID = _obj getVariable["ownerPUID","0"];
-	_ComboMatch = (_combination == dayz_combination);
-};
+if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
 
 if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_124",_text] call dayz_rollingMessages;};
 
-// Promt user for password if _ownerID != dayz_playerUID
 if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
-
 	// Check if any players are nearby if not allow player to claim item.
 	_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
 	_playerID = [player] call FNC_GetPlayerUID;
@@ -54,88 +47,28 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 		// Since item was not claimed proceed with claiming it.
 		_obj setVariable["claimed",_playerID,true];
 	};
-	
-	_dir = direction _obj;
-	_vector = [(vectorDir _obj),(vectorUp _obj)];
-	_pos = _obj getVariable["OEMPos",getPosATL _obj];
-	_objectID = _obj getVariable["ObjectID","0"];
-	_objectUID = _obj getVariable["ObjectUID","0"];
 
 	_claimedBy = _obj getVariable["claimed","0"];
 	
 	if (_claimedBy == _playerID) then {
-
-		if(!isNull _obj && alive _obj) then {
-			
-			dze_waiting = nil;
-			PVDZE_log_lockUnlock = [player, _obj, false];
-			publicVariableServer "PVDZE_log_lockUnlock";
-			//wait for response from server to verify safe was logged before proceeding
-			waitUntil {!isNil "dze_waiting"};
-
+		if (!isNull _obj && alive _obj) then {
 			_obj setVariable["packing",1];
 			["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
-			_weapons = _obj getVariable["WeaponCargo",[]];
-			_magazines = _obj getVariable["MagazineCargo",[]];
-			_backpacks = _obj getVariable["BackpackCargo",[]];
+			
+			disableUserInput true; // Make sure player can not modify gear while it is filling
+			(findDisplay 106) closeDisplay 0; // Close gear
+			dze_waiting = nil;
+			PVDZE_handleSafeGear = [player,_obj,0];
+			publicVariableServer "PVDZE_handleSafeGear";
+			//wait for response from server to verify safe was logged before proceeding
+			waitUntil {!isNil "dze_waiting"};
+			disableUserInput false; // Safe is done filling now
+			[_unlockedClass,objNull] spawn fn_waitForObject;
+			
 			player playActionNow "Medic";
 			uiSleep 1;
 			[player,"tentpack",0,false] call dayz_zombieSpeak;
 			uiSleep 5;
-
-			_holder = createVehicle [_unlockedClass,_pos,[], 0, "CAN_COLLIDE"];
-			// Remove locked vault
-			deleteVehicle _obj;
-			_holder setdir _dir;
-			_holder setVariable["memDir",_dir,true];
-			_holder setVectorDirAndUp _vector;
-			_holder setPosATL _pos;
-			player reveal _holder;
-	
-			_holder setVariable["CharacterID",_characterID,true];
-			_holder setVariable["ObjectID",_objectID,true];
-			_holder setVariable["ObjectUID",_objectUID,true];
-			_holder setVariable ["OEMPos", _pos, true];
-		if (DZE_permanentPlot) then {
-			_holder setVariable ["ownerPUID", _ownerID , true];
-		};
-
-			if (count _weapons > 0) then {
-				//Add weapons
-				_objWpnTypes = _weapons select 0;
-				_objWpnQty = _weapons select 1;
-				_countr = 0;
-				{
-					_holder addweaponcargoGlobal [_x,(_objWpnQty select _countr)];
-					_countr = _countr + 1;
-				} count _objWpnTypes;
-			};
-	
-			if (count _magazines > 0) then {
-				//Add Magazines
-				_objWpnTypes = _magazines select 0;
-				_objWpnQty = _magazines select 1;
-				_countr = 0;
-				{
-					if (_x != "CSGAS") then
-					{
-						_holder addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
-						_countr = _countr + 1;
-					};
-				} count _objWpnTypes;
-			};
-
-			if (count _backpacks > 0) then {
-				//Add Backpacks
-				_objWpnTypes = _backpacks select 0;
-				_objWpnQty = _backpacks select 1;
-				_countr = 0;
-				{
-					_holder addbackpackcargoGlobal [_x,(_objWpnQty select _countr)];
-					_countr = _countr + 1;
-				} count _objWpnTypes;
-			};
-	
 			format[localize "STR_BLD_UNLOCKED",_text] call dayz_rollingMessages;
 		};
 	} else {

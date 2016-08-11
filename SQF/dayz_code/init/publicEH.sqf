@@ -94,7 +94,7 @@ if (isServer) then {
 	"PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
 	"PVDZE_plr_TradeMenu"	addPublicVariableEventHandler {(_this select 1) spawn server_traders};
 	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
-	"PVDZE_log_lockUnlock" 	addPublicVariableEventHandler {(_this select 1) spawn server_logUnlockLockEvent};
+	"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) spawn server_handleSafeGear};
 	"PVDZE_fullobj_Publish"	addPublicVariableEventHandler {(_this select 1) call server_publishFullObject}; // PlotForLife take base ownership
 
 	//Added as part of the maintenance system to allow the server to replace the damaged model with a normal model.

@@ -87,6 +87,8 @@
 [FIXED] Keyboard input is now disabled properly while unconscious @skynetdev @ebaydayz #1613
 [FIXED] Toilet paper dupe exploit when building outhouse @Markokil321 @ebaydayz #1599
 [FIXED] Safes and lockboxes wiped when opening after restart and locking not being logged to RPT @ebaydayz #1413 #1503
+[FIXED] Greatly optimized safe gear handling. Safe inventories are no longer sent to all machines over the network on server startup and each lock/unlock. @ebaydayz
+[FIXED] User input is disabled and then gear dialog is closed during safe lock/unlock/pack to block various duping methods. #1341 @RimBlock @ebaydayz
 [FIXED] Duplicate objectUIDs occasionally causing vehicles to swap classes or be deleted across restarts @ebaydayz @icomrade #1504
 [FIXED] DZE_BuildingLimit now counts buildables only instead of all object types. Thanks jOoPs @ebaydayz
 [FIXED] Reworked death messages. Fixed messages not always showing, undefined errors and wrong distance bug. Added bled out, killed by zombie, etc. MPHit event handler (fnc_plyrHit) is no longer needed. @ebaydayz
