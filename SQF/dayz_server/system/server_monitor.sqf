@@ -72,7 +72,6 @@ _respawnPos = getMarkerpos "respawn_west";
 	_storageMoney = _x select 9;
 
 	//set object to be in maintenance mode
-	_maintenanceMode = false;
 	_maintenanceModeVars = [];
 	
 	_dir = 90;
@@ -87,16 +86,12 @@ _respawnPos = getMarkerpos "respawn_west";
 
 	
 	if (_wsCount >= 1) then {
-		if ((typeName (_worldspace select 0)) == "SCALAR") then {
-			_dir = _worldspace select 0;
-		};
+		_dir = _worldspace select 0;
 		if (_wsCount >= 2) then {
-			if ((typeName (_worldspace select 1)) == "ARRAY") then {
-				_i = _worldspace select 1;
-				if (count _i == 3) then {
-					_pos = _i;
-					_wsDone = true;					
-				};
+			_i = _worldspace select 1;
+			if (count _i == 3) then {
+				_pos = _i;
+				_wsDone = true;					
 			};
 			if (_wsCount >= 3) then{
 				_ws2TN = typename (_worldspace select 2);
@@ -107,15 +102,10 @@ _respawnPos = getMarkerpos "respawn_west";
 						} else {
 							 if (_ws2TN == "ARRAY") then{
 								_vector = _worldspace select 2;
-								if (count _vector == 2) then{
-									if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
-										_vecExists = true;
-									};
-								};
+								_vecExists = true;
 							};                  
 						};
 				} else {
-					//Was not 3 elements, so check if 4 or more
 					if (_wsCount == 4) then{
 						if (_ws3TN == "STRING") then{
 							_ownerPUID = _worldspace select 3;
@@ -126,19 +116,11 @@ _respawnPos = getMarkerpos "respawn_west";
 						};
 						if (_ws2TN == "ARRAY") then{
 							_vector = _worldspace select 2;
-							if (count _vector == 2) then{
-								if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
-									_vecExists = true;
-								};
-							};
+							_vecExists = true;
 						} else {
 							if (_ws3TN == "ARRAY") then{
 								_vector = _worldspace select 3;
-								if (count _vector == 2) then{
-									if (((count (_vector select 0)) == 3) && {(count (_vector select 1)) == 3}) then{
-										_vecExists = true;
-									};
-								};
+								_vecExists = true;
 							};
 						};
 					};
@@ -159,12 +141,8 @@ _respawnPos = getMarkerpos "respawn_west";
 		
 		if (_type in _tempMaint) then {
 			//Use hitpoints for Maintenance system and other systems later.
-			{
-				if (_x == "Maintenance") exitWith {_maintenanceMode = true;};
-			} forEach _hitPoints;
-			
 			//Enable model swap for a damaged model.
-			if (_maintenanceMode) then {
+			if ("Maintenance" in _hitPoints) then {
 				_maintenanceModeVars = [_type,_pos];
 				_type = _type + "_Damaged";
 			};	
@@ -193,38 +171,8 @@ _respawnPos = getMarkerpos "respawn_west";
 		if (Z_SingleCurrency && {_type in DZE_MoneyStorageClasses}) then {
 			_object setVariable [Z_MoneyVariable, _storageMoney, true];
 		};
-		if (DZE_permanentPlot && _isPlot) then {
-			_object setVariable ["plotfriends", _inventory, true];
-		};
-
-		if( DZE_doorManagement && _doorLocked) then {
-			_object setVariable ["doorfriends", _inventory, true];
-		};
 
 		dayz_serverIDMonitor set [count dayz_serverIDMonitor,_idKey];
-
-		// Fix for leading zero issues on safe codes after restart
-		if (isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {
-			_lockable = getNumber (configFile >> "CfgVehicles" >> _type >> "lockable");
-			_codeCount = count (toArray _ownerID);
-			switch (_lockable) do {
-				case 4: {
-					switch (_codeCount) do {
-						case 3: {_ownerID = format["0%1",_ownerID];};
-						case 2: {_ownerID = format["00%1",_ownerID];};
-						case 1: {_ownerID = format["000%1",_ownerID];};
-					};
-				};
-				case 3: {
-					switch (_codeCount) do {
-						case 2: {_ownerID = format["0%1",_ownerID];};
-						case 1: {_ownerID = format["00%1",_ownerID];};
-					};
-				};
-			};
-		};
-
-		_object setVariable ["CharacterID", _ownerID, true];
 		
 		if (!_wsDone) then {[_object,"position",true] call server_updateObject;};
 		if (_type == "Base_Fire_DZ") then {_object spawn base_fireMonitor;};
@@ -265,6 +213,13 @@ _respawnPos = getMarkerpos "respawn_west";
 						} forEach _magItemTypes;
 					} forEach _cargo;
 				};
+			} else {
+				if (DZE_permanentPlot && _isPlot) then {
+					_object setVariable ["plotfriends", _inventory, true];
+				};
+				if( DZE_doorManagement && _doorLocked) then {
+					_object setVariable ["doorfriends", _inventory, true];
+				};
 			};
 		};
 		
@@ -286,6 +241,26 @@ _respawnPos = getMarkerpos "respawn_west";
 				_object enableSimulation true;
 			};
 		} else {
+			// Fix for leading zero issues on safe codes after restart
+			_lockable = getNumber (configFile >> "CfgVehicles" >> _type >> "lockable");
+			_codeCount = count (toArray _ownerID);
+			switch (_lockable) do {
+				case 4: {
+					switch (_codeCount) do {
+						case 3: {_ownerID = format["0%1",_ownerID];};
+						case 2: {_ownerID = format["00%1",_ownerID];};
+						case 1: {_ownerID = format["000%1",_ownerID];};
+					};
+				};
+				case 3: {
+					switch (_codeCount) do {
+						case 2: {_ownerID = format["0%1",_ownerID];};
+						case 1: {_ownerID = format["00%1",_ownerID];};
+					};
+				};
+			};
+			_object setVariable ["CharacterID", _ownerID, true];
+
 			if (_nonCollide) then {
 				_pos set [2,0];
 				_object setPosATL _pos;
