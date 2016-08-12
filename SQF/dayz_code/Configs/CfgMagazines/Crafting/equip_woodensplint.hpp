@@ -5,7 +5,7 @@ class equip_woodensplint : CA_Magazine {
 	descriptionShort = $STR_ITEM_DESC_WOODENSPLINT;
 	model = "\z\addons\dayz_communityassets\models\woodensplint.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_woodensplint_ca.paa";
-	type = 256;
+	type = 256; //WeaponSlotItem * 2 in vanilla
 	class ItemActions {
 		class Use {
 			text = $STR_ACTIONS_BRACE_LEG;

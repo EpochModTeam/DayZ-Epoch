@@ -307,13 +307,11 @@ while {r_action_count != 0 and Dayz_constructionContext select 4} do {
             _object setVectorUp [0,0,1];
         };
         _position = +(_tmp);
-        _object setPosATL _position;
-        
-        // check now that ghost is not colliding
-        call _checkBuildingCollision;
-		
-		diag_log format ["_objColliding: %1", _objColliding];
+        _object setPosATL _position;		
     };
+	
+	// check now that ghost is not colliding
+	call _checkBuildingCollision;
 
     // try to dock a beam from current ghost to another beams nearby
     call _checkBeam2Magnet;
@@ -373,7 +371,7 @@ while {r_action_count != 0 and Dayz_constructionContext select 4} do {
 			};
 		};
 	};
-    uiSleep 0.01;
+    uiSleep 0.03;
 };
 
 if (!_actionBuildHidden) then { // player can't build until all is fine
