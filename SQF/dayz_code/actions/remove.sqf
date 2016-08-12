@@ -206,6 +206,7 @@ if (_proceed) then {
 		_radius = 1;
 
 		if (_isMine) then {
+			deleteVehicle _obj;
 			if((random 10) <= 4) then {
 				_gems = [];
 				_weights = [];
