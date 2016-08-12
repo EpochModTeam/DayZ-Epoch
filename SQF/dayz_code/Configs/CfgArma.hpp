@@ -26,6 +26,7 @@ class CfgActions {
 	class DropMagazine : None { show = 0; };
 	class PutMagazine : None { show = 0; };
 	class DeactivateMine : None { show = 0; };
+	class RepairVehicle: None { show = 0; };
 /*
 "None"
 "GetInCommander"
@@ -749,6 +750,10 @@ class CfgSurvival {
 		class Skin_BAF_Soldier_N_MTP_DZ: Default {
 			sex = "male";
 			playerModel = "BAF_Soldier_N_MTP_DZ";
+		};
+		class Skin_FR_Sapper_DZ: Default {
+			sex = "male";
+			playerModel = "FR_Sapper_DZ";
 		};
 	};
 };
