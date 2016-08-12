@@ -329,7 +329,7 @@ _respawnPos = getMarkerpos "respawn_west";
 
 [] spawn { //enable simulation on vehicles after all buildables are spawned
 	{
-		_object enableSimulation true;
+		_x enableSimulation true;
 		_x setVelocity [0,0,1];
 	} count DZE_VehObjects;
 };
