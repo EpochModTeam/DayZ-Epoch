@@ -7,7 +7,7 @@ class Wooden_Arrow : Recipe {
 	};
 	output[] = 
 	{
-		{"WoodenArrow","CfgMagazines",4}
+		{"1Rnd_Arrow_Wood","CfgMagazines",4}
 	};
 	required[] = 
 	{

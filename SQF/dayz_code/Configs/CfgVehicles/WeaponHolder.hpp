@@ -6,7 +6,7 @@ class WoodenArrowF : WeaponHolderBase {
 
 	class eventHandlers
 	{
-		init = "[(_this select 0),'cfgMagazines','WoodenArrow'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','1Rnd_Arrow_Wood'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 	};
 };
 class WeaponHolder_ItemCrowbar: WeaponHolderBase

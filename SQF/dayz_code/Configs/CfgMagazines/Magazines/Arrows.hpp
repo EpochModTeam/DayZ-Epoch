@@ -72,8 +72,10 @@ class 1Rnd_Bolt_Explosive : CA_Magazine
 	ammo = "explosive_bolt";
 };
 
-//TODO: Remove legacy
-class WoodenArrow : 1Rnd_Arrow_Wood {};
-class Quiver : 12Rnd_Quiver_Wood {};
-class Tranquiliser_Bolt : 1Rnd_Bolt_Tranquilizer {};
-class Crossbow_EX_Bolt : 1Rnd_Bolt_Explosive {};
+/*
+	//TODO: Remove legacy
+	class WoodenArrow : 1Rnd_Arrow_Wood {};
+	class Quiver : 12Rnd_Quiver_Wood {};
+	class Tranquiliser_Bolt : 1Rnd_Bolt_Tranquilizer {};
+	class Crossbow_EX_Bolt : 1Rnd_Bolt_Explosive {};
+*/

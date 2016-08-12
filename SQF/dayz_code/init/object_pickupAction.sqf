@@ -62,7 +62,7 @@ actionMonitor = {
 	};
 };
 
-if (_classname == "WoodenArrow") then {
+if (_classname == "1Rnd_Arrow_Wood") then {
 	[_holder,_type,_classname,_name] spawn actionMonitor;
 } else {
 	s_player_holderPickup = _holder addAction [format[(localize "str_init_take"),_name], "\z\addons\dayz_code\actions\object_pickup.sqf",[_type,_classname,_holder], 20, true, true];

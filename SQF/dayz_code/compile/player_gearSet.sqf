@@ -19,7 +19,7 @@ if (count _inventory > 0) then {
 			_val = -1;
 		};
 
-		if (_item == "BoltSteel") then { _item = "WoodenArrow" }; // Convert BoltSteel to WoodenArrow
+		if (_item == "BoltSteel") then { _item = "1Rnd_Arrow_Wood" }; // Convert BoltSteel to WoodenArrow
 		if (dayz_classicBloodBagSystem) then {
 			if (_item in dayz_typedBags) then { _item = "ItemBloodbag" };
 		} else {

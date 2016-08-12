@@ -34,10 +34,8 @@ if (_classname isKindOf "TrapBear") exitWith { deleteVehicle _holder; };
 player playActionNow "PutDown";
 
 //Adding random chance of arrow is re-usable on pickup
-_broken = if ((_classname == "WoodenArrow") && {[0.15] call fn_chance}) then {true} else {false};
+_broken = if ((_classname == "1Rnd_Arrow_Wood") && {[0.15] call fn_chance}) then {true} else {false};
 if (_broken) exitWith { deleteVehicle _holder; localize "str_broken_arrow" call dayz_rollingMessages; };
-
-uiSleep 0.25; //Why are we waiting? Animation
 
 _claimedBy = _holder getVariable["claimed","0"];
 

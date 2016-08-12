@@ -680,7 +680,7 @@ class FSM
                          "			//Magazines" \n
                          "			_countr = 0;" \n
                          "			{" \n
-                         "				if (_x == ""BoltSteel"") then { _x = ""WoodenArrow"" }; // Convert BoltSteel to WoodenArrow" \n
+                         "				if (_x == ""BoltSteel"") then { _x = ""1Rnd_Arrow_Wood"" }; // Convert BoltSteel to WoodenArrow" \n
                          "				if (dayz_classicBloodBagSystem) then {" \n
                          "					if (_x in dayz_typedBags) then {_x = ""ItemBloodbag""};" \n
                          "				} else {" \n
