@@ -5,7 +5,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- [] call fnc_usec_selfActions;
 ************************************************************/
 if (DZE_ActionInProgress) exitWith {};
-private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names","_hasKey","_oldOwner","_hasAttached","_isAnimal","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild","_player_lockUnlock_crtl","_displayName","_hasIgnators","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached","_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget","_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan","_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isCampSite","_isDisallowRefuel","_isDog","_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock","_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo","_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade"];
+private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names","_hasKey","_oldOwner","_hasAttached","_isAnimal","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild","_player_lockUnlock_crtl","_displayName","_hasIgnators","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached","_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget","_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan","_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isCampSite","_isDisallowRefuel","_isDog","_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock","_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo","_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -242,6 +242,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_hasFuel5 = "ItemFuelcan" in _magazinesPlayer;
 	_hasEmptyFuelCan = (("ItemJerrycanEmpty" in _magazinesPlayer) || ("ItemFuelcanEmpty" in _magazinesPlayer) || ("ItemFuelBarrelEmpty" in _magazinesPlayer));
 	_itemsPlayer = items player;
+	_weaponsPlayer = weapons player;
+	_hasCrowbar = "ItemCrowbar" in _itemsPlayer or "MeleeCrowbar" in _weaponsPlayer or dayz_onBack == "MeleeCrowbar";
 	_hasToolbox = "ItemToolbox" in _itemsPlayer;
 	_hasbottleitem = (("ItemWaterBottle" in _magazinesPlayer) || ("ItemWaterBottleInfected" in _magazinesPlayer) || ("ItemWaterBottleSafe" in _magazinesPlayer));
 	_isAlive = alive _cursorTarget;
@@ -417,13 +419,13 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	if (_isAlive) then {
 		//Allow player to delete objects
 		if (_isDestructable || {((_typeOfCursorTarget in DZE_isWreck) or (_typeOfCursorTarget in DZE_isWreckBuilding))} || {(_typeOfCursorTarget in DZE_isRemovable)}) then {
-			if (_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
+			if (_hasToolbox && _hasCrowbar) then {
 				_player_deleteBuild = true;
 			};
 		};	
 
-		if(_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
-			if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
+		if (_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
+			if (_hasToolbox && _hasCrowbar) then {
 				_isOwner = [player, _cursorTarget] call FNC_check_access;
 				if ((_isOwner select 0) or (_isOwner select 2) or (_isOwner select 3)) then {
 					_player_deleteBuild = true;

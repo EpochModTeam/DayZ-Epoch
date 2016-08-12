@@ -4,7 +4,7 @@ DZE_ActionInProgress = true;
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_activatingPlayer","_obj","_playerUID","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular"];
+private ["_activatingPlayer","_obj","_playerUID","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular","_success"];
 
 player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
@@ -147,21 +147,33 @@ while {_isOk} do {
 
 };
 
+_success = true;
 
-
-if(_brokenTool) then {
-	if(_isWreck) then {
-		_removeTool = "ItemToolbox";
+if (_brokenTool) then {
+	_success = false;
+	_removeTool = if (_isWreck) then {"ItemToolbox"} else {["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom};
+	if (_removeTool == "ItemCrowbar" && !("ItemCrowbar" in items player)) then {
+		if ("MeleeCrowbar" in weapons player) then {
+			player removeWeapon "MeleeCrowbar";
+			_success = true;
+		} else {
+			if (dayz_onBack == "MeleeCrowbar") then {
+				dayz_onBack = ""; // Remove
+				_success = true;
+				if (!isNull (findDisplay 106)) then {((findDisplay 106) displayCtrl 1209) ctrlSetText "";};
+			};
+		};
 	} else {
-		_removeTool = ["ItemCrowbar","ItemToolbox"] call BIS_fnc_selectRandom;
+		if (([player,_removeTool,1] call BIS_fnc_invRemove) > 0) then {_success = true;};
 	};
-	if(([player,_removeTool,1] call BIS_fnc_invRemove) > 0) then {
+	
+	if (_success) then {
 		format[localize "str_epoch_player_164",getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle] call dayz_rollingMessages;
 	};
 };
 
-// Remove only if player waited
-if (_proceed) then {
+// Remove only if player waited AND tool was successfully removed if broken
+if (_proceed && _success) then {
 
 	// Double check that object is not null
 	if(!isNull(_obj)) then {
