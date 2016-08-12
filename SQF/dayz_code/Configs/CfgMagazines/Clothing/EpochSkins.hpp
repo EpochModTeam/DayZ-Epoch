@@ -246,3 +246,174 @@ class Skin_INS_Worker2_DZ: SkinBase {
 	displayName = $STR_EPOCH_SKINS_STEVE;
 	descriptionShort = $STR_EPOCH_SKINS_STEVE;
 };
+//new Epoch 1.06
+class Skin_USMC_Soldier_Officer_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_USMCOFFICER;
+	descriptionShort = $STR_EPOCH_SKINS_USMCOFFICER;
+};
+class Skin_USMC_Soldier_MG_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_USMCSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_USMCSOLDIER;
+};
+class Skin_USMC_Soldier_Pilot_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_USMCPILOT;
+	descriptionShort = $STR_EPOCH_SKINS_USMCPILOT;
+};
+class Skin_FR_TL_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CAMOTEAMLEADER;
+	descriptionShort = $STR_EPOCH_SKINS_CAMOTEAMLEADER;
+};
+class Skin_FR_R_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CAMORECON;
+	descriptionShort = $STR_EPOCH_SKINS_CAMORECON;
+};
+class Skin_FR_Marksman_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CAMOMARKSMAN;
+	descriptionShort = $STR_EPOCH_SKINS_CAMOMARKSMAN;
+};
+class Skin_FR_Assault_R_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CAMOASSAULT;
+	descriptionShort = $STR_EPOCH_SKINS_CAMOASSAULT;
+};
+class Skin_RU_Soldier_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_RUSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_RUSOLDIER;
+};
+class Skin_RU_Soldier_Officer_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_RUOFFICER;
+	descriptionShort = $STR_EPOCH_SKINS_RUOFFICER;
+};
+class Skin_RUS_Soldier1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_RUCAMO;
+	descriptionShort = $STR_EPOCH_SKINS_RUCAMO;
+};
+class Skin_RUS_Commander_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_RUCOMMANDER;
+	descriptionShort = $STR_EPOCH_SKINS_RUCOMMANDER;
+};
+class Skin_MVD_Soldier_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_MVDSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_MVDSOLDIER;
+};
+class Skin_Ins_Soldier_2_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TERRORISTCAMO;
+	descriptionShort = $STR_EPOCH_SKINS_TERRORISTCAMO;
+};
+class Skin_Ins_Commander_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_INSCOMMANDER;
+	descriptionShort = $STR_EPOCH_SKINS_INSCOMMANDER;
+};
+class Skin_Ins_Soldier_Crew_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_INSCREWMAN;
+	descriptionShort = $STR_EPOCH_SKINS_INSCREWMAN;
+};
+class Skin_CDF_Soldier_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CDFSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_CDFSOLDIER;
+};
+class Skin_Assistant_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_ASSISTANT;
+	descriptionShort = $STR_EPOCH_SKINS_ASSISTANT;
+};
+class Skin_Doctor_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_DOCTOR;
+	descriptionShort = $STR_EPOCH_SKINS_DOCTOR;
+};
+class Skin_Worker1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_WORKER1;
+	descriptionShort = $STR_EPOCH_SKINS_WORKER1;
+};
+class Skin_Worker3_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_WORKER2;
+	descriptionShort = $STR_EPOCH_SKINS_WORKER2;
+};
+class Skin_Worker4_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_WORKER3;
+	descriptionShort = $STR_EPOCH_SKINS_WORKER3;
+};
+class Skin_TK_CIV_Takistani01_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TKCITIZEN1;
+	descriptionShort = $STR_EPOCH_SKINS_TKCITIZEN1;
+};
+class Skin_TK_CIV_Takistani03_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TKCITIZEN2;
+	descriptionShort = $STR_EPOCH_SKINS_TKCITIZEN2;
+};
+class Skin_TK_CIV_Takistani04_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TKCITIZEN3;
+	descriptionShort = $STR_EPOCH_SKINS_TKCITIZEN3;
+};
+class Skin_TK_CIV_Takistani06_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TKCITIZEN4;
+	descriptionShort = $STR_EPOCH_SKINS_TKCITIZEN4;
+};
+class Skin_TK_INS_Soldier_AR_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TKSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_TKSOLDIER;
+};
+class Skin_TK_GUE_Soldier_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TKGUESOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_TKGUESOLDIER;
+};
+class Skin_CZ_Soldier_SL_DES_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CZSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_CZSOLDIER;
+};
+class Skin_US_Soldier_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_USSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_USSOLDIER;
+};
+class Skin_UN_CDF_Soldier_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_UNSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_UNSOLDIER;
+};
+class Skin_UN_CDF_Soldier_Guard_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_UNCOMMANDER;
+	descriptionShort = $STR_EPOCH_SKINS_UNCOMMANDER;
+};
+class Skin_GER_Soldier_TL_EP1_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_GERRECON;
+	descriptionShort = $STR_EPOCH_SKINS_GERRECON;
+};
+class Skin_BAF_Soldier_Officer_MTP_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_BAFOFFICER;
+	descriptionShort = $STR_EPOCH_SKINS_BAFOFFICER;
+};
+class Skin_BAF_Soldier_N_MTP_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_BAFSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_BAFSOLDIER;
+};
