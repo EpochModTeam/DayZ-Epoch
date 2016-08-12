@@ -613,5 +613,142 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "INS_Worker2_DZ";
 		};
+		//new Epoch 1.06
+		class Skin_USMC_Soldier_Officer_DZ: Default {
+			sex = "male";
+			playerModel = "USMC_Soldier_Officer_DZ";
+		};
+		class Skin_USMC_Soldier_MG_DZ: Default {
+			sex = "male";
+			playerModel = "USMC_Soldier_MG_DZ";
+		};
+		class Skin_USMC_Soldier_Pilot_DZ: Default {
+			sex = "male";
+			playerModel = "USMC_Soldier_Pilot_DZ";
+		};
+		class Skin_FR_TL_DZ: Default {
+			sex = "male";
+			playerModel = "FR_TL_DZ";
+		};
+		class Skin_FR_R_DZ: Default {
+			sex = "male";
+			playerModel = "FR_R_DZ";
+		};
+		class Skin_FR_Marksman_DZ: Default {
+			sex = "male";
+			playerModel = "FR_Marksman_DZ";
+		};
+		class Skin_FR_Assault_R_DZ: Default {
+			sex = "male";
+			playerModel = "FR_Assault_R_DZ";
+		};
+		class Skin_RU_Soldier_DZ: Default {
+			sex = "male";
+			playerModel = "RU_Soldier_DZ";
+		};
+		class Skin_RU_Soldier_Officer_DZ: Default {
+			sex = "male";
+			playerModel = "RU_Soldier_Officer_DZ";
+		};
+		class Skin_RUS_Soldier1_DZ: Default {
+			sex = "male";
+			playerModel = "RUS_Soldier1_DZ";
+		};
+		class Skin_RUS_Commander_DZ: Default {
+			sex = "male";
+			playerModel = "RUS_Commander_DZ";
+		};
+		class Skin_MVD_Soldier_DZ: Default {
+			sex = "male";
+			playerModel = "MVD_Soldier_DZ";
+		};
+		class Skin_Ins_Soldier_2_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Soldier_2_DZ";
+		};
+		class Skin_Ins_Commander_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Commander_DZ";
+		};
+		class Skin_Ins_Soldier_Crew_DZ: Default {
+			sex = "male";
+			playerModel = "Ins_Soldier_Crew_DZ";
+		};
+		class Skin_CDF_Soldier_DZ: Default {
+			sex = "male";
+			playerModel = "CDF_Soldier_DZ";
+		};
+		class Skin_Doctor_DZ: Default {
+			sex = "male";
+			playerModel = "Doctor_DZ";
+		};
+		class Skin_Assistant_DZ: Default {
+			sex = "male";
+			playerModel = "Assistant_DZ";
+		};
+		class Skin_Worker1_DZ: Default {
+			sex = "male";
+			playerModel = "Worker1_DZ";
+		};
+		class Skin_Worker3_DZ: Default {
+			sex = "male";
+			playerModel = "Worker3_DZ";
+		};
+		class Skin_Worker4_DZ: Default {
+			sex = "male";
+			playerModel = "Worker4_DZ";
+		};
+		class Skin_TK_CIV_Takistani01_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_CIV_Takistani01_EP1_DZ";
+		};
+		class Skin_TK_CIV_Takistani03_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_CIV_Takistani03_EP1_DZ";
+		};
+		class Skin_TK_CIV_Takistani04_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_CIV_Takistani04_EP1_DZ";
+		};
+		class Skin_TK_CIV_Takistani06_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_CIV_Takistani06_EP1_DZ";
+		};
+		class Skin_TK_INS_Soldier_AR_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_INS_Soldier_AR_EP1_DZ";
+		};
+		class Skin_TK_GUE_Soldier_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "TK_GUE_Soldier_EP1_DZ";
+		};
+		class Skin_CZ_Soldier_SL_DES_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "CZ_Soldier_SL_DES_EP1_DZ";
+		};
+		class Skin_US_Soldier_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "US_Soldier_EP1_DZ";
+		};
+		class Skin_UN_CDF_Soldier_Guard_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "UN_CDF_Soldier_Guard_EP1_DZ";
+		};
+		class Skin_UN_CDF_Soldier_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "UN_CDF_Soldier_EP1_DZ";
+		};
+		class Skin_GER_Soldier_TL_EP1_DZ: Default {
+			sex = "male";
+			playerModel = "GER_Soldier_TL_EP1_DZ";
+		};
+		class Skin_BAF_Soldier_Officer_MTP_DZ: Default {
+			sex = "male";
+			playerModel = "BAF_Soldier_Officer_MTP_DZ";
+		};
+		class Skin_BAF_Soldier_N_MTP_DZ: Default {
+			sex = "male";
+			playerModel = "BAF_Soldier_N_MTP_DZ";
+		};
 	};
 };
