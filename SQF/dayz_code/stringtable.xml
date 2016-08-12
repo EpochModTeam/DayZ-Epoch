@@ -17787,6 +17787,278 @@
 			<French>Steve</French>
 			<Czech>Steve</Czech>
 		</Key>
+				<Key ID="STR_EPOCH_SKINS_USMCOFFICER">
+			<English>USMC Officer</English>
+			<German>USMC Officer</German>
+			<Russian>USMC Officer</Russian>
+			<Spanish>USMC Officer</Spanish>
+			<French>USMC Officer</French>
+			<Czech>USMC Officer</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_USMCSOLDIER">
+			<English>USMC Soldier</English>
+			<German>USMC Soldier</German>
+			<Russian>USMC Soldier</Russian>
+			<Spanish>USMC Soldier</Spanish>
+			<French>USMC Soldier</French>
+			<Czech>USMC Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_USMCPILOT">
+			<English>USMC Pilot</English>
+			<German>USMC Pilot</German>
+			<Russian>USMC Pilot</Russian>
+			<Spanish>USMC Pilot</Spanish>
+			<French>USMC Pilot</French>
+			<Czech>USMC Pilot</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CAMOTEAMLEADER">
+			<English>Camo Teamleader</English>
+			<German>Camo Teamleader</German>
+			<Russian>Camo Teamleader</Russian>
+			<Spanish>Camo Teamleader</Spanish>
+			<French>Camo Teamleader</French>
+			<Czech>Camo Teamleader</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CAMORECON">
+			<English>Camo Recon</English>
+			<German>Camo Recon</German>
+			<Russian>Camo Recon</Russian>
+			<Spanish>Camo Recon</Spanish>
+			<French>Camo Recon</French>
+			<Czech>Camo Recon</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CAMOMARKSMAN">
+			<English>Camo Marksman</English>
+			<German>Camo Marksman</German>
+			<Russian>Camo Marksman</Russian>
+			<Spanish>Camo Marksman</Spanish>
+			<French>Camo Marksman</French>
+			<Czech>Camo Marksman</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CAMOASSAULT">
+			<English>Camo Assault</English>
+			<German>Camo Assault</German>
+			<Russian>Camo Assault</Russian>
+			<Spanish>Camo Assault</Spanish>
+			<French>Camo Assault</French>
+			<Czech>Camo Assault</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_RUSOLDIER">
+			<English>RU Soldier</English>
+			<German>RU Soldier</German>
+			<Russian>RU Soldier</Russian>
+			<Spanish>RU Soldier</Spanish>
+			<French>RU Soldier</French>
+			<Czech>RU Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_RUOFFICER">
+			<English>RU Officer</English>
+			<German>RU Officer</German>
+			<Russian>RU Officer</Russian>
+			<Spanish>RU Officer</Spanish>
+			<French>RU Officer</French>
+			<Czech>RU Officer</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_RUCAMO">
+			<English>RU Camo</English>
+			<German>RU Camo</German>
+			<Russian>RU Camo</Russian>
+			<Spanish>RU Camo</Spanish>
+			<French>RU Camo</French>
+			<Czech>RU Camo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_RUCOMMANDER">
+			<English>RU Commander</English>
+			<German>RU Commander</German>
+			<Russian>RU Commander</Russian>
+			<Spanish>RU Commander</Spanish>
+			<French>RU Commander</French>
+			<Czech>RU Commander</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_MVDSOLDIER">
+			<English>MVD Soldier</English>
+			<German>MVD Soldier</German>
+			<Russian>MVD Soldier</Russian>
+			<Spanish>MVD Soldier</Spanish>
+			<French>MVD Soldier</French>
+			<Czech>MVD Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TERRORISTCAMO">
+			<English>Terrorist Camo</English>
+			<German>Terrorist Camo</German>
+			<Russian>Terrorist Camo</Russian>
+			<Spanish>Terrorist Camo</Spanish>
+			<French>Terrorist Camo</French>
+			<Czech>Terrorist Camo</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_INSCOMMANDER">
+			<English>Ins Commander</English>
+			<German>Ins Commander</German>
+			<Russian>Ins Commander</Russian>
+			<Spanish>Ins Commander</Spanish>
+			<French>Ins Commander</French>
+			<Czech>Ins Commander</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_INSCREWMAN">
+			<English>Ins Crewman</English>
+			<German>Ins Crewman</German>
+			<Russian>Ins Crewman</Russian>
+			<Spanish>Ins Crewman</Spanish>
+			<French>Ins Crewman</French>
+			<Czech>Ins Crewman</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CDFSOLDIER">
+			<English>CDF Soldier</English>
+			<German>CDF Soldier</German>
+			<Russian>CDF Soldier</Russian>
+			<Spanish>CDF Soldier</Spanish>
+			<French>CDF Soldier</French>
+			<Czech>CDF Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ASSISTANT">
+			<English>Assistant</English>
+			<German>Assistant</German>
+			<Russian>Assistant</Russian>
+			<Spanish>Assistant</Spanish>
+			<French>Assistant</French>
+			<Czech>Assistant</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DOCTOR">
+			<English>Doctor</English>
+			<German>Doctor</German>
+			<Russian>Doctor</Russian>
+			<Spanish>Doctor</Spanish>
+			<French>Doctor</French>
+			<Czech>Doctor</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_WORKER1">
+			<English>Worker 1</English>
+			<German>Worker 1</German>
+			<Russian>Worker 1</Russian>
+			<Spanish>Worker 1</Spanish>
+			<French>Worker 1</French>
+			<Czech>Worker 1</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_WORKER2">
+			<English>Worker 2</English>
+			<German>Worker 2</German>
+			<Russian>Worker 2</Russian>
+			<Spanish>Worker 2</Spanish>
+			<French>Worker 2</French>
+			<Czech>Worker 2</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_WORKER3">
+			<English>Worker 3</English>
+			<German>Worker 3</German>
+			<Russian>Worker 3</Russian>
+			<Spanish>Worker 3</Spanish>
+			<French>Worker 3</French>
+			<Czech>Worker 3</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TKCITIZEN1">
+			<English>TK Citizen 1</English>
+			<German>TK Citizen 1</German>
+			<Russian>TK Citizen 1</Russian>
+			<Spanish>TK Citizen 1</Spanish>
+			<French>TK Citizen 1</French>
+			<Czech>TK Citizen 1</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TKCITIZEN2">
+			<English>TK Citizen 2</English>
+			<German>TK Citizen 2</German>
+			<Russian>TK Citizen 2</Russian>
+			<Spanish>TK Citizen 2</Spanish>
+			<French>TK Citizen 2</French>
+			<Czech>TK Citizen 2</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TKCITIZEN3">
+			<English>TK Citizen 3</English>
+			<German>TK Citizen 3</German>
+			<Russian>TK Citizen 3</Russian>
+			<Spanish>TK Citizen 3</Spanish>
+			<French>TK Citizen 3</French>
+			<Czech>TK Citizen 3</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TKCITIZEN4">
+			<English>TK Citizen 4</English>
+			<German>TK Citizen 4</German>
+			<Russian>TK Citizen 4</Russian>
+			<Spanish>TK Citizen 4</Spanish>
+			<French>TK Citizen 4</French>
+			<Czech>TK Citizen 4</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TKSOLDIER">
+			<English>TK Soldier</English>
+			<German>TK Soldier</German>
+			<Russian>TK Soldier</Russian>
+			<Spanish>TK Soldier</Spanish>
+			<French>TK Soldier</French>
+			<Czech>TK Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_TKGUESOLDIER">
+			<English>TK GUE Soldier</English>
+			<German>TK GUE Soldier</German>
+			<Russian>TK GUE Soldier</Russian>
+			<Spanish>TK GUE Soldier</Spanish>
+			<French>TK GUE Soldier</French>
+			<Czech>TK GUE Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CZSOLDIER">
+			<English>CZ Soldier</English>
+			<German>CZ Soldier</German>
+			<Russian>CZ Soldier</Russian>
+			<Spanish>CZ Soldier</Spanish>
+			<French>CZ Soldier</French>
+			<Czech>CZ Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_USSOLDIER">
+			<English>US Soldier</English>
+			<German>US Soldier</German>
+			<Russian>US Soldier</Russian>
+			<Spanish>US Soldier</Spanish>
+			<French>US Soldier</French>
+			<Czech>US Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_UNSOLDIER">
+			<English>UN Soldier</English>
+			<German>UN Soldier</German>
+			<Russian>UN Soldier</Russian>
+			<Spanish>UN Soldier</Spanish>
+			<French>UN Soldier</French>
+			<Czech>UN Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_UNCOMMANDER">
+			<English>UN Commander</English>
+			<German>UN Commander</German>
+			<Russian>UN Commander</Russian>
+			<Spanish>UN Commander</Spanish>
+			<French>UN Commander</French>
+			<Czech>UN Commander</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_GERRECON">
+			<English>GER Recon</English>
+			<German>GER Recon</German>
+			<Russian>GER Recon</Russian>
+			<Spanish>GER Recon</Spanish>
+			<French>GER Recon</French>
+			<Czech>GER Recon</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BAFOFFICER">
+			<English>BAF Officer</English>
+			<German>BAF Officer</German>
+			<Russian>BAF Officer</Russian>
+			<Spanish>BAF Officer</Spanish>
+			<French>BAF Officer</French>
+			<Czech>BAF Officer</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_BAFSOLDIER">
+			<English>BAF Soldier</English>
+			<German>BAF Soldier</German>
+			<Russian>BAF Soldier</Russian>
+			<Spanish>BAF Soldier</Spanish>
+			<French>BAF Soldier</French>
+			<Czech>BAF Soldier</Czech>
+		</Key>
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzer</German>
