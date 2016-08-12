@@ -163,7 +163,7 @@ if (_unit == player) then {
                 default { "with suspicious weapon" };
             };
             if (!_isZombieHit) then { // don't log any zombie wounds, even from remote zombies
-                PVDZ_sec_atp = [_unit, _source, _sourceWeap, _sourceDist];
+                PVDZ_sec_atp = [_unit, _source, toArray _sourceWeap, _sourceDist]; //Send arbitrary string as array to allow stricter publicVariableVal.txt filter
                 publicVariableServer "PVDZ_sec_atp";
             };
         };

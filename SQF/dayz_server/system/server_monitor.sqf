@@ -367,8 +367,8 @@ if (dayz_townGenerator && {toLower worldName == "chernarus"}) then {execVM "\z\a
 "PVDZ_sec_atp" addPublicVariableEventHandler {
 	_x = _this select 1;
 	switch (1==1) do {
-		case (typeName _x == "STRING") : { // just some logs from the client 
-			diag_log _x;
+		case (typeName (_x select 0) == "SCALAR") : { // just some logs from the client
+			diag_log (toString _x);
 		};
 		case (count _x == 2) : { // wrong side
 			diag_log format["P1ayer %1 reports possible 'side' hack. Server may be compromised!",(_x select 1) call fa_plr2Str];
@@ -378,7 +378,7 @@ if (dayz_townGenerator && {toLower worldName == "chernarus"}) then {execVM "\z\a
 			_source = _x select 1;
 			if (((!(isNil {_source})) && {!(isNull _source)}) && {((_source isKindOf "CAManBase") && {owner _unit != owner _source})}) then {
 				diag_log format ["P1ayer %1 hit by %2 %3 from %4 meters",
-					_unit call fa_plr2Str, _source call fa_plr2Str, _x select 2, _x select 3];
+					_unit call fa_plr2Str, _source call fa_plr2Str, toString (_x select 2), _x select 3];
 				if (_unit getVariable ["processedDeath",0] == 0) then {
 					_unit setVariable ["attacker", name _source];
 					_unit setVariable ["noatlf4", diag_ticktime]; // server-side "not in combat" test, if player is not already dead

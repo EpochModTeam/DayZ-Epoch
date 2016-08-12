@@ -48,7 +48,7 @@ sched_antiTP = {
 			if (_lastVehicle == vehicle player) then {
 				if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {
 					(vehicle player) setposATL  _lastpos;
-					PVDZ_sec_atp = format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", getPlayerUID player, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player];
+					PVDZ_sec_atp = toArray (format["TELEPORT REVERT for player UID#%1 from %2 to %3, %4 meters, now at %5", getPlayerUID player, _lastpos, _curPos, round(_lastpos distance _curpos), getPosATL player]);
 					publicVariableServer "PVDZ_sec_atp";
 				} else {
 					_lastpos = _curpos;

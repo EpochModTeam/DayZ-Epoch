@@ -12,7 +12,7 @@ inGameUISetEventHandler ["Action","false"];
 	_plant = _x createVehicleLocal dayz_centerMarker;
 	uiSleep 0.1;
 	if (sizeOf _x == 0) exitWith { 
-		PVDZ_sec_atp = "Plants texture hack for type " + _x;
+		PVDZ_sec_atp = toArray ("Plants texture hack for type " + _x);
 		publicVariableServer "PVDZ_sec_atp";
 		endMission "LOSER";
 	};

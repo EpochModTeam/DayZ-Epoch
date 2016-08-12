@@ -36,15 +36,15 @@
                     if (_ammo != "" && _ammo isKindOf "HelicopterExploSmall") then {
                         _who = player;
                         _dist = round (_who distance _building);
-                        PVDZ_sec_atp = format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
-                            getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist];
+                        PVDZ_sec_atp = toArray (format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
+                            getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist]);
                         publicVariableServer "PVDZ_sec_atp";
                     };
                 } else {
                     if (_who == player) then {
                         _dist = round (_who distance _building);
-                        PVDZ_sec_atp = format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
-                            getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist];
+                        PVDZ_sec_atp = toArray (format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
+                            getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist]);
                         publicVariableServer "PVDZ_sec_atp";
                     };
                 };

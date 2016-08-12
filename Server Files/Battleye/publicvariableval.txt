@@ -1,5 +1,6 @@
 //new
-5 "[+;{&%]" !"e\+0" !PVDZ_sec_atp
+5 "[;{&%]"
+5 "\+" !"e\+0"
 1 "wrong side" // group hack, ban the first in a row
 1 "(init|set|add|action|all|attach|ATL|ASL|eye|exec|group|unit|clear|create|menu|ctrl|display|text|hint|drop)" !"\"(SetFuel|dayzSetDate|titleText|(|with )MeleeBaseball(|Bat(|Barbed|Nails))|StashSmall|smallboat_[12])\"" !"_Ball " !Attachement !Attachment_ !aslo
 1 "(entit|exit|able|find|fuel|join|frame|move|team|throw)" !"\"(switchmove|ItemFuelcan(|Empty)|PartFueltank|SetFuel|z_refuel_0|ItemSodaRocketFuel|cable_tie)\""
