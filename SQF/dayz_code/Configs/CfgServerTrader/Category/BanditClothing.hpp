@@ -59,4 +59,65 @@ class Category_575 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
+	class Skin_RU_Soldier_Crew_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	//new Epoch 1.06
+	class Skin_TK_INS_Soldier_AR_EP1_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_TK_GUE_Soldier_EP1_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_RU_Soldier_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_RU_Soldier_Officer_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_RUS_Soldier1_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_RUS_Commander_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_MVD_Soldier_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_Ins_Soldier_2_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_Ins_Commander_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_Ins_Soldier_Crew_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class Skin_CDF_Soldier_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
 };
