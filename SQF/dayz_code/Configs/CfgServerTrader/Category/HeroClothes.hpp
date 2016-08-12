@@ -90,6 +90,11 @@ class Category_476 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
+	class Skin_FR_Sapper_DZ {
+		type = "trade_items";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};	
 	class Skin_FR_Marksman_DZ {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
@@ -131,11 +136,6 @@ class Category_476 {
 		sell[] = {1,"ItemGoldBar"};
 	};
 	class Skin_BAF_Soldier_N_MTP_DZ {
-		type = "trade_items";
-		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
-	};
-	class Skin_FR_Sapper_DZ {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
