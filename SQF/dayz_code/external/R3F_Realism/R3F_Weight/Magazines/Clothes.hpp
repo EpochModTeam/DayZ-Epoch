@@ -1,4 +1,4 @@
-﻿/****************************************************************************
+/****************************************************************************
 Copyright (C) 2010 Team ~R3F~
 This program is free software under the terms of the GNU General Public License version 3.
 You should have received a copy of the GNU General Public License
@@ -209,6 +209,143 @@ class Skin_INS_Bardak_DZ
 	weight = 1;
 };
 class Skin_INS_Worker2_DZ   
+{
+	weight = 1;
+};
+//new Epoch 1.06
+class Skin_USMC_Soldier_Officer_DZ   
+{
+	weight = 1;
+};
+class Skin_USMC_Soldier_MG_DZ   
+{
+	weight = 1;
+};
+class Skin_USMC_Soldier_Pilot_DZ   
+{
+	weight = 1;
+};
+class Skin_FR_TL_DZ   
+{
+	weight = 1;
+};
+class Skin_FR_R_DZ   
+{
+	weight = 1;
+};
+class Skin_FR_Marksman_DZ   
+{
+	weight = 1;
+};
+class Skin_FR_Assault_R_DZ   
+{
+	weight = 1;
+};
+class Skin_RU_Soldier_DZ   
+{
+	weight = 1;
+};
+class Skin_RU_Soldier_Officer_DZ   
+{
+	weight = 1;
+};
+class Skin_RUS_Soldier1_DZ   
+{
+	weight = 1;
+};
+class Skin_RUS_Commander_DZ   
+{
+	weight = 1;
+};
+class Skin_MVD_Soldier_DZ   
+{
+	weight = 1;
+};
+class Skin_Ins_Soldier_2_DZ   
+{
+	weight = 1;
+};
+class Skin_Ins_Commander_DZ   
+{
+	weight = 1;
+};
+class Skin_Ins_Soldier_Crew_DZ   
+{
+	weight = 1;
+};
+class Skin_CDF_Soldier_DZ   
+{
+	weight = 1;
+};
+class Skin_Assistant_DZ   
+{
+	weight = 1;
+};
+class Skin_Doctor_DZ   
+{
+	weight = 1;
+};
+class Skin_Worker1_DZ   
+{
+	weight = 1;
+};
+class Skin_Worker3_DZ   
+{
+	weight = 1;
+};
+class Skin_Worker4_DZ   
+{
+	weight = 1;
+};
+class Skin_TK_CIV_Takistani01_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_TK_CIV_Takistani03_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_TK_CIV_Takistani04_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_TK_CIV_Takistani06_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_TK_INS_Soldier_AR_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_TK_GUE_Soldier_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_CZ_Soldier_SL_DES_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_US_Soldier_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_UN_CDF_Soldier_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_UN_CDF_Soldier_Guard_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_GER_Soldier_TL_EP1_DZ   
+{
+	weight = 1;
+};
+class Skin_BAF_Soldier_Officer_MTP_DZ   
+{
+	weight = 1;
+};
+class Skin_BAF_Soldier_N_MTP_DZ   
 {
 	weight = 1;
 };
