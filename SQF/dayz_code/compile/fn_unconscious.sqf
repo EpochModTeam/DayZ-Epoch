@@ -1,7 +1,7 @@
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
 
 private ["_count","_anim","_weapon","_sprint","_stance","_transmove","_start","_timeout","_short","_sandLevel","_disableHdlr","_speed"];
-
+_inVeh = player != vehicle player;
 if (r_player_unconsciousInProgress) exitWith {};
 r_player_unconsciousInProgress = true;
 
@@ -24,7 +24,9 @@ _sandLevel = ctrlPosition ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayC
 _disableHdlr = [] spawn { uiSleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; };
 autoRunActive = false;
 
-player playAction "CanNotMove";
+if (!_inVeh) then {
+	player playAction "CanNotMove";
+};
 "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
 "colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectEnable true;"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 0.1],  [1, 1, 1, 0.0]];"colorCorrections" ppEffectCommit 0;
 if (dayz_soundMuted) then {call player_toggleSoundMute;}; // hide icon before fadeSound
@@ -38,7 +40,6 @@ while { (diag_tickTime - _start) < _timeout and r_player_unconscious and alive p
         ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400) ctrlSetPosition _sandLevel;
         ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400) ctrlCommit 0.05;
     };
-	
     /*_veh = vehicle player;
      if ((player != _veh) and {(_veh iskindOf "LandVehicle")}) then {
         _speed = [0,0,0] distance velocity _veh;
@@ -76,12 +77,14 @@ disableUserInput false;
 r_player_unconsciousInputDisabled = false;
 4 cutRsc ["default", "PLAIN",1];
 
-[nil, player, rSWITCHMOVE, "AinjPpneMstpSnonWnonDnon"] call RE;
-player SWITCHMOVE "AinjPpneMstpSnonWnonDnon";
-PVDZ_plr_SwitchMove = [player,"AinjPpneMstpSnonWnonDnon"];
-publicVariableServer "PVDZ_plr_SwitchMove"; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
 
-player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
+if (!_inVeh) then {
+	[nil, player, rSWITCHMOVE, "AinjPpneMstpSnonWnonDnon"] call RE;
+	player SWITCHMOVE "AinjPpneMstpSnonWnonDnon";
+	PVDZ_plr_SwitchMove = [player,"AinjPpneMstpSnonWnonDnon"];
+	publicVariableServer "PVDZ_plr_SwitchMove"; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
+	player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
+};
 
 10 fadeSound 1;
 "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
