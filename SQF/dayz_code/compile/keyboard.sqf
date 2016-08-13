@@ -331,7 +331,7 @@ if (isNil "keyboard_keys") then {
     [actionKeys "NetworkStats", _journal] call _addArray;
     //[actionKeys "Turbo", _turbo] call _addArray;
 	[[DIK_F1], _muteSound] call _addArray;
-    [[DIK_F4, DIK_TAB, DIK_DELETE], _forcesave] call _addArray;
+    //[[DIK_F4, DIK_TAB, DIK_DELETE], _forcesave] call _addArray;
     //[[DIK_F4, DIK_RMENU, DIK_LMENU,DIK_LSHIFT,DIK_RSHIFT,DIK_ESCAPE], _forcesave2] call _addArray;
     [actionKeys "LeanLeft", _build_left ] call _addArray;
     [actionKeys "LeanRight", _build_right ] call _addArray;
