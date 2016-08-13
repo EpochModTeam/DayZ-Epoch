@@ -1,6 +1,6 @@
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
 
-private ["_count","_anim","_weapon","_sprint","_stance","_transmove","_start","_timeout","_short","_sandLevel","_veh","_disableHdlr","_speed"];
+private ["_count","_anim","_weapon","_sprint","_stance","_transmove","_start","_timeout","_short","_sandLevel","_disableHdlr","_speed"];
 
 if (r_player_unconsciousInProgress) exitWith {};
 r_player_unconsciousInProgress = true;
@@ -39,8 +39,8 @@ while { (diag_tickTime - _start) < _timeout and r_player_unconscious and alive p
         ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400) ctrlCommit 0.05;
     };
 	
-    _veh = vehicle player;
-    if ((player != _veh) and {(_veh iskindOf "LandVehicle")}) then {
+    /*_veh = vehicle player;
+     if ((player != _veh) and {(_veh iskindOf "LandVehicle")}) then {
         _speed = [0,0,0] distance velocity _veh;
         if (_speed > 10) then { 
 			_veh engineOn false; 
@@ -51,7 +51,7 @@ while { (diag_tickTime - _start) < _timeout and r_player_unconscious and alive p
         };
     };
 	
-    if (player == _veh) then { player setVelocity [0,0,0]; };
+    if (player == _veh) then { player setVelocity [0,0,0]; }; */
     uiSleep 0.1;
     _count = _count + 1;
 	
