@@ -417,3 +417,8 @@ class Skin_BAF_Soldier_N_MTP_DZ: SkinBase {
 	displayName = $STR_EPOCH_SKINS_BAFSOLDIER;
 	descriptionShort = $STR_EPOCH_SKINS_BAFSOLDIER;
 };
+class Skin_FR_Sapper_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_FRSAPPER;
+	descriptionShort = $STR_EPOCH_SKINS_FRSAPPER;
+};

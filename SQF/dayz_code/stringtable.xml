@@ -17787,7 +17787,7 @@
 			<French>Steve</French>
 			<Czech>Steve</Czech>
 		</Key>
-				<Key ID="STR_EPOCH_SKINS_USMCOFFICER">
+		<Key ID="STR_EPOCH_SKINS_USMCOFFICER">
 			<English>USMC Officer</English>
 			<German>USMC Officer</German>
 			<Russian>USMC Officer</Russian>
@@ -18058,6 +18058,14 @@
 			<Spanish>BAF Soldier</Spanish>
 			<French>BAF Soldier</French>
 			<Czech>BAF Soldier</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_FRSAPPER">
+			<English>Camo Sapper</English>
+			<German>Camo Sapper</German>
+			<Russian>Camo Sapper</Russian>
+			<Spanish>Camo Sapper</Spanish>
+			<French>Camo Sapper</French>
+			<Czech>Camo Sapper</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>

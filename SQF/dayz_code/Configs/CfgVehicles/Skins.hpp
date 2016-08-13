@@ -1155,3 +1155,16 @@ class BAF_Soldier_N_MTP_DZ: BAF_Soldier_N_MTP {
 	canHideBodies = 1;
 	canCarryBackPack = 1;
 };
+class FR_Sapper;
+class FR_Sapper_DZ: FR_Sapper {
+	displayName = "Camo Sapper";
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	backpack = "";
+	magazines[] = {};
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+	canCarryBackPack = 1;
+};

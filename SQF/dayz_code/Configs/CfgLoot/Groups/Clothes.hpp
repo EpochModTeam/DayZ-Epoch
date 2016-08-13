@@ -44,6 +44,7 @@ militaryclothes[] = {
 	{Loot_MAGAZINE,	2,	Skin_USMC_Soldier_Pilot_DZ},
 	{Loot_MAGAZINE,	2,	Skin_FR_TL_DZ},
 	{Loot_MAGAZINE,	2,	Skin_FR_R_DZ},
+	{Loot_MAGAZINE,	2,	Skin_FR_Sapper_DZ},
 	{Loot_MAGAZINE,	2,	Skin_FR_Marksman_DZ},
 	{Loot_MAGAZINE,	2,	Skin_FR_Assault_R_DZ},
 	{Loot_MAGAZINE,	2,	Skin_US_Soldier_EP1_DZ},

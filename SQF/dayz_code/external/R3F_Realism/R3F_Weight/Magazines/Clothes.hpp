@@ -349,3 +349,7 @@ class Skin_BAF_Soldier_N_MTP_DZ
 {
 	weight = 1;
 };
+class Skin_FR_Sapper_DZ
+{
+	weight = 1;
+};
