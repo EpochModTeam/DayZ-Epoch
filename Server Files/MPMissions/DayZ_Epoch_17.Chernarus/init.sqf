@@ -116,8 +116,8 @@ execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
 
 if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\dynamic_vehicle.sqf";
-	execVM "\z\addons\dayz_server\traders\chernarus17.sqf"; //Add trader agents
-	execVM "\z\addons\dayz_server\system\server_monitor.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\traders\chernarus17.sqf"; //Add trader agents
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\server_monitor.sqf";
 	if (dayz_infectiousWaterholes && (toLower worldName == "chernarus")) then {execVM "\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\init.sqf";};
 };
 
