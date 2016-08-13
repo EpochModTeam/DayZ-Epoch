@@ -1,10 +1,14 @@
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
 
 private ["_count","_anim","_weapon","_sprint","_stance","_transmove","_start","_timeout","_short","_sandLevel","_disableHdlr","_speed"];
-_inVeh = player != vehicle player;
+
 if (r_player_unconsciousInProgress) exitWith {};
 r_player_unconsciousInProgress = true;
+r_player_unconsciousInputDisabled = true;
+disableUserInput true; //only works if disableUserInput command is issued twice for some reason...
+disableUserInput true;
 
+_inVeh = player != vehicle player;
 _start = diag_tickTime;
 _timeout = abs r_player_timeout;
 _short = _timeout < 4;
@@ -20,8 +24,6 @@ player setVariable ["NORRN_unconscious", r_player_unconscious, true];
 _sandLevel = ctrlPosition ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400);
 //diag_log [(diag_tickTime - _start) < _timeout , !r_player_unconscious , alive player  ];
 
-// delay so that the character does not stop before falling:
-_disableHdlr = [] spawn { uiSleep 2; disableUserInput true; r_player_unconsciousInputDisabled = true; };
 autoRunActive = false;
 
 if (!_inVeh) then {
@@ -71,12 +73,8 @@ player setVariable ["USEC_isCardiac",r_player_cardiac, true];
 player setVariable["medForceUpdate",true, true];
 
 r_player_unconsciousInProgress = false;
-terminate _disableHdlr;
-waituntil {scriptDone _disableHdlr};
-disableUserInput false;
-r_player_unconsciousInputDisabled = false;
-4 cutRsc ["default", "PLAIN",1];
 
+4 cutRsc ["default", "PLAIN",1];
 
 if (!_inVeh) then {
 	[nil, player, rSWITCHMOVE, "AmovPpneMstpSnonWnonDnon_healed"] call RE;
@@ -89,5 +87,9 @@ if (!_inVeh) then {
 10 fadeSound 1;
 "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 "colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
+
+disableUserInput false;
+disableUserInput false;
+r_player_unconsciousInputDisabled = false;
 
 //diag_log [ __FILE__, diag_tickTime, "done" ];
