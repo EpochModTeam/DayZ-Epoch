@@ -151,7 +151,6 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 		};
 	} count _backpackMag;
 	(findDisplay 106) closeDisplay 0;
-	if (gear_done) then {sleep 0.001; disableUserInput false;};
 	_countr = 0;
 	{
 		dayz_myBackpack addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];
@@ -160,6 +159,8 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 } else {
 	call _switchUnit;
 };
+
+if (gear_done) then {disableUserInput false;};
 
 //Debug Message
 diag_log "Swichtable Unit Created. Equipment:";
