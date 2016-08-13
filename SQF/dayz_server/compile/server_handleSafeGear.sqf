@@ -101,6 +101,6 @@ switch (_status) do {
 	};
 };
 
-diag_log format["%6 %5: ID:%1 CID:%7 UID:%2 BY %3(%4)",_objectID,_objectUID,_name,_puid,_statusText,_type,_charID];
+diag_log format["%6 %5: ObjID:%1 ObjUID:%2 CharID:%7 OwnerID:%8 BY %3(%4)",_objectID,_objectUID,_name,_puid,_statusText,_type,_charID,_ownerID];
 dze_waiting = "success";
 _clientID publicVariableClient "dze_waiting";

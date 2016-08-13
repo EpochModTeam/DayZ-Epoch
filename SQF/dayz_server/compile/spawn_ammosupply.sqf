@@ -1,3 +1,9 @@
+/*
+	Spawns several random "Supply_Crate_DZE" across map.
+	Lootable by destroying and then opening with crowbar.
+	Currently outputs vehicle ammo defined in Land_ammo_supply_wreck CfgVehicles class
+*/
+
 private ["_position","_veh","_istoomany"];
 // do not make _roadList or _buildingList private in this function
 
