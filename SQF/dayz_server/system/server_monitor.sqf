@@ -224,7 +224,6 @@ _respawnPos = getMarkerpos "respawn_west";
 		};
 		
 		if (_object isKindOf "AllVehicles") then {
-			_object setVariable ["CharacterID", _ownerID, true];
 			{
 				_selection = _x select 0;
 				_dam = _x select 1;
