@@ -79,11 +79,11 @@ r_player_unconsciousInputDisabled = false;
 
 
 if (!_inVeh) then {
-	[nil, player, rSWITCHMOVE, "AinjPpneMstpSnonWnonDnon"] call RE;
-	player SWITCHMOVE "AinjPpneMstpSnonWnonDnon";
-	PVDZ_plr_SwitchMove = [player,"AinjPpneMstpSnonWnonDnon"];
+	[nil, player, rSWITCHMOVE, "AmovPpneMstpSnonWnonDnon_healed"] call RE;
+	player SWITCHMOVE "AmovPpneMstpSnonWnonDnon_healed";
+	PVDZ_plr_SwitchMove = [player,"AmovPpneMstpSnonWnonDnon_healed"];
 	publicVariableServer "PVDZ_plr_SwitchMove"; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
-	player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
+	//player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
 };
 
 10 fadeSound 1;
