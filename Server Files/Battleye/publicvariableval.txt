@@ -111,7 +111,7 @@
 5 "setDe"
 5 "setDi"
 5 "setDr"
-5 "setF"
+5 "setF" !"SetFuel"
 5 "setG"
 5 "setH"
 5 "setM"
