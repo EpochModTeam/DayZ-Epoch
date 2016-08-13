@@ -17203,419 +17203,182 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_OFFICERSUIT">
 			<English>Officer Suit</English>
-			<German>Officer Suit</German>
 			<Russian>Униформа офицера</Russian>
-			<Spanish>Officer Suit</Spanish>
-			<French>Officer Suit</French>
-			<Czech>Officer Suit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SERGEI">
 			<English>Sergei</English>
-			<German>Sergei</German>
 			<Russian>Сегрей</Russian>
-			<Spanish>Sergei</Spanish>
-			<French>Sergei</French>
-			<Czech>Sergei</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SERGEI_DESC">
 			<English>Police Officer Uniform</English>
-			<German>Police Officer Uniform</German>
 			<Russian>Униформа сотрудника полиции</Russian>
-			<Spanish>Police Officer Uniform</Spanish>
-			<French>Police Officer Uniform</French>
-			<Czech>Police Officer Uniform</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ETHAN">
 			<English>Ethan</English>
-			<German>Ethan</German>
 			<Russian>Итан</Russian>
-			<Spanish>Ethan</Spanish>
-			<French>Ethan</French>
-			<Czech>Ethan</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ETHAN_DESC">
 			<English>Pilot Uniform</English>
-			<German>Pilot Uniform</German>
 			<Russian>Униформа пилота</Russian>
-			<Spanish>Pilot Uniform</Spanish>
-			<French>Pilot Uniform</French>
-			<Czech>Pilot Uniform</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_HARRY">
 			<English>Harry</English>
-			<German>Harry</German>
 			<Russian>Гарри</Russian>
-			<Spanish>Harry</Spanish>
-			<French>Harry</French>
-			<Czech>Harry</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_HARRY_DESC">
 			<English>Press Uniform</English>
-			<German>Press Uniform</German>
 			<Russian>Униформа сотрудника прессы</Russian>
-			<Spanish>Press Uniform</Spanish>
-			<French>Press Uniform</French>
-			<Czech>Press Uniform</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TERRORISTUNIFORM">
 			<English>Terrorist Uniform</English>
-			<German>Terrorist Uniform</German>
 			<Russian>Униформа террориста</Russian>
-			<Spanish>Terrorist Uniform</Spanish>
-			<French>Terrorist Uniform</French>
-			<Czech>Terrorist Uniform</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_REBELUNIFORM">
 			<English>Rebel Uniform</English>
-			<German>Rebel Uniform</German>
 			<Russian>Униформа повстанцев</Russian>
-			<Spanish>Rebel Uniform</Spanish>
-			<French>Rebel Uniform</French>
-			<Czech>Rebel Uniform</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DONALD">
 			<English>Donald</English>
-			<German>Donald</German>
 			<Russian>Дональд</Russian>
-			<Spanish>Donald</Spanish>
-			<French>Donald</French>
-			<Czech>Donald</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DONALD_DESC">
 			<English>Business Suit</English>
-			<German>Business Suit</German>
 			<Russian>Деловой костюм</Russian>
-			<Spanish>Business Suit</Spanish>
-			<French>Business Suit</French>
-			<Czech>Business Suit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JAMES">
 			<English>James</English>
-			<German>James</German>
 			<Russian>Джеймс</Russian>
-			<Spanish>James</Spanish>
-			<French>James</French>
-			<Czech>James</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JAMES_DESC">
 			<English>Priest Outfit</English>
-			<German>Priest Outfit</German>
 			<Russian>Ряса священника</Russian>
-			<Spanish>Priest Outfit</Spanish>
-			<French>Priest Outfit</French>
-			<Czech>Priest Outfit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DUANE">
 			<English>Duane</English>
-			<German>Duane</German>
 			<Russian>Дуэйн</Russian>
-			<Spanish>Duane</Spanish>
-			<French>Duane</French>
-			<Czech>Duane</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DUANE_DESC">
 			<English>Rocker (black)</English>
-			<German>Rocker (black)</German>
 			<Russian>Рокер (Чёрный цвет)</Russian>
-			<Spanish>Rocker (black)</Spanish>
-			<French>Rocker (black)</French>
-			<Czech>Rocker (black)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ROD">
 			<English>Rod</English>
-			<German>Rod</German>
 			<Russian>Род</Russian>
-			<Spanish>Rod</Spanish>
-			<French>Rod</French>
-			<Czech>Rod</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ROD_DESC">
 			<English>Rocker (brown)</English>
-			<German>Rocker (brown)</German>
 			<Russian>Рокер (Коричневый цвет)</Russian>
-			<Spanish>Rocker (brown)</Spanish>
-			<French>Rocker (brown)</French>
-			<Czech>Rocker (brown)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_VAN">
 			<English>Van</English>
-			<German>Van</German>
 			<Russian>Ван</Russian>
-			<Spanish>Van</Spanish>
-			<French>Van</French>
-			<Czech>Van</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_VAN_DESC">
 			<English>Rocker (blue)</English>
-			<German>Rocker (blue)</German>
 			<Russian>Рокер (Синий цвет)</Russian>
-			<Spanish>Rocker (blue)</Spanish>
-			<French>Rocker (blue)</French>
-			<Czech>Rocker (blue)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BRUCE">
 			<English>Bruce</English>
-			<German>Bruce</German>
 			<Russian>Брюс</Russian>
-			<Spanish>Bruce</Spanish>
-			<French>Bruce</French>
-			<Czech>Bruce</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BRUCE_DESC">
 			<English>Rocker (green)</English>
-			<German>Rocker (green)</German>
 			<Russian>Рокер (Зелёный цвет)</Russian>
-			<Spanish>Rocker (green)</Spanish>
-			<French>Rocker (green)</French>
-			<Czech>Rocker (green)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITOUTFIT">
 			<English>Bandit Outfit</English>
-			<German>Bandit Outfit</German>
-			<Russian>Bandit Outfit</Russian>
-			<Spanish>Bandit Outfit</Spanish>
-			<French>Bandit Outfit</French>
-			<Czech>Bandit Outfit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITCAMO">
 			<English>Bandit Camo</English>
-			<German>Bandit Camo</German>
-			<Russian>Bandit Camo</Russian>
-			<Spanish>Bandit Camo</Spanish>
-			<French>Bandit Camo</French>
-			<Czech>Bandit Camo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITCAMO_DESC">
 			<English>Bandit Camo Outfit</English>
-			<German>Bandit Camo Outfit</German>
-			<Russian>Bandit Camo Outfit</Russian>
-			<Spanish>Bandit Camo Outfit</Spanish>
-			<French>Bandit Camo Outfit</French>
-			<Czech>Bandit Camo Outfit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITGUNNER">
 			<English>Bandit Gunner</English>
-			<German>Bandit Gunner</German>
-			<Russian>Bandit Gunner</Russian>
-			<Spanish>Bandit Gunner</Spanish>
-			<French>Bandit Gunner</French>
-			<Czech>Bandit Gunner</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITGUNNER_DESC">
 			<English>Bandit Gunner Outfit</English>
-			<German>Bandit Gunner Outfit</German>
-			<Russian>Bandit Gunner Outfit</Russian>
-			<Spanish>Bandit Gunner Outfit</Spanish>
-			<French>Bandit Gunner Outfit</French>
-			<Czech>Bandit Gunner Outfit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER">
 			<English>Bandit Sniper</English>
-			<German>Bandit Sniper</German>
-			<Russian>Bandit Sniper</Russian>
-			<Spanish>Bandit Sniper</Spanish>
-			<French>Bandit Sniper</French>
-			<Czech>Bandit Sniper</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER_DESC">
 			<English>Bandit Sniper Outfit</English>
-			<German>Bandit Sniper Outfit</German>
-			<Russian>Bandit Sniper Outfit</Russian>
-			<Spanish>Bandit Sniper Outfit</Spanish>
-			<French>Bandit Sniper Outfit</French>
-			<Czech>Bandit Sniper Outfit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA">
 			<English>Bandit Baklava</English>
-			<German>Bandit Baklava</German>
-			<Russian>Bandit Baklava</Russian>
-			<Spanish>Bandit Baklava</Spanish>
-			<French>Bandit Baklava</French>
-			<Czech>Bandit Baklava</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA_DESC">
 			<English>Bandit Baklava Outfit</English>
-			<German>Bandit Baklava Outfit</German>
-			<Russian>Bandit Baklava Outfit</Russian>
-			<Spanish>Bandit Baklava Outfit</Spanish>
-			<French>Bandit Baklava Outfit</French>
-			<Czech>Bandit Baklava Outfit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITMASK">
 			<English>Bandit Mask</English>
-			<German>Bandit Mask</German>
-			<Russian>Bandit Mask</Russian>
-			<Spanish>Bandit Mask</Spanish>
-			<French>Bandit Mask</French>
-			<Czech>Bandit Mask</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITMASK_DESC">
 			<English>Bandit Mask Outfit</English>
-			<German>Bandit Mask Outfit</German>
-			<Russian>Bandit Mask Outfit</Russian>
-			<Spanish>Bandit Mask Outfit</Spanish>
-			<French>Bandit Mask Outfit</French>
-			<Czech>Bandit Mask Outfit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITHAT">
 			<English>Bandit Hat</English>
-			<German>Bandit Hat</German>
-			<Russian>Bandit Hat</Russian>
-			<Spanish>Bandit Hat</Spanish>
-			<French>Bandit Hat</French>
-			<Czech>Bandit Hat</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITHAT_DESC">
 			<English>Bandit Hat with Baklava</English>
-			<German>Bandit Hat with Baklava</German>
-			<Russian>Bandit Hat with Baklava</Russian>
-			<Spanish>Bandit Hat with Baklava</Spanish>
-			<French>Bandit Hat with Baklava</French>
-			<Czech>Bandit Hat with Baklava</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITANNIE">
 			<English>Bandit Annie</English>
-			<German>Bandit Annie</German>
-			<Russian>Bandit Annie</Russian>
-			<Spanish>Bandit Annie</Spanish>
-			<French>Bandit Annie</French>
-			<Czech>Bandit Annie</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITANNIE_DESC">
 			<English>Bandit wrap blue top with brown pants.</English>
-			<German>Bandit wrap blue top with brown pants.</German>
-			<Russian>Bandit wrap blue top with brown pants.</Russian>
-			<Spanish>Bandit wrap blue top with brown pants.</Spanish>
-			<French>Bandit wrap blue top with brown pants.</French>
-			<Czech>Bandit wrap blue top with brown pants.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITJANE">
 			<English>Bandit Jane</English>
-			<German>Bandit Jane</German>
-			<Russian>Bandit Jane</Russian>
-			<Spanish>Bandit Jane</Spanish>
-			<French>Bandit Jane</French>
-			<Czech>Bandit Jane</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITJANE_DESC">
 			<English>Bandit wrap grey top with brown camo pants.</English>
-			<German>Bandit wrap grey top with brown camo pants.</German>
-			<Russian>Bandit wrap grey top with brown camo pants.</Russian>
-			<Spanish>Bandit wrap grey top with brown camo pants.</Spanish>
-			<French>Bandit wrap grey top with brown camo pants.</French>
-			<Czech>Bandit wrap grey top with brown camo pants.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JANE">
 			<English>Jane</English>
-			<German>Jane</German>
-			<Russian>Jane</Russian>
-			<Spanish>Jane</Spanish>
-			<French>Jane</French>
-			<Czech>Jane</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JANE_DESC">
 			<English>Grey top with brown camo pants.</English>
-			<German>Grey top with brown camo pants.</German>
-			<Russian>Grey top with brown camo pants.</Russian>
-			<Spanish>Grey top with brown camo pants.</Spanish>
-			<French>Grey top with brown camo pants.</French>
-			<Czech>Grey top with brown camo pants.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ANNIE">
 			<English>Annie</English>
-			<German>Annie</German>
-			<Russian>Annie</Russian>
-			<Spanish>Annie</Spanish>
-			<French>Annie</French>
-			<Czech>Annie</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ANNIE_DESC">
 			<English>Civilian (female)</English>
-			<German>Civilian (female)</German>
-			<Russian>Civilian (female)</Russian>
-			<Spanish>Civilian (female)</Spanish>
-			<French>Civilian (female)</French>
-			<Czech>Civilian (female)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MELLY">
 			<English>Melly</English>
-			<German>Melly</German>
-			<Russian>Melly</Russian>
-			<Spanish>Melly</Spanish>
-			<French>Melly</French>
-			<Czech>Melly</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MELLY_DESC">
 			<English>Purple top with blue pants.</English>
-			<German>Purple top with blue pants.</German>
-			<Russian>Purple top with blue pants.</Russian>
-			<Spanish>Purple top with blue pants.</Spanish>
-			<French>Purple top with blue pants.</French>
-			<Czech>Purple top with blue pants.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ALEJANDRIA">
 			<English>Alejandria</English>
-			<German>Alejandria</German>
 			<Russian>Алехандро</Russian>
-			<Spanish>Alejandria</Spanish>
-			<French>Alejandria</French>
-			<Czech>Alejandria</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ALEJANDRIA_DESC">
 			<English>Blue camo top with brown camo pants.</English>
-			<German>Blue camo top with brown camo pants.</German>
-			<Russian>Blue camo top with brown camo pants.</Russian>
-			<Spanish>Blue camo top with brown camo pants.</Spanish>
-			<French>Blue camo top with brown camo pants.</French>
-			<Czech>Blue camo top with brown camo pants.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SAVANNAH">
 			<English>Savannah</English>
-			<German>Savannah</German>
-			<Russian>Savannah</Russian>
-			<Spanish>Savannah</Spanish>
-			<French>Savannah</French>
-			<Czech>Savannah</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SAVANNAH_DESC">
 			<English>White top with brown pants.</English>
-			<German>White top with brown pants.</German>
-			<Russian>White top with brown pants.</Russian>
-			<Spanish>White top with brown pants.</Spanish>
-			<French>White top with brown pants.</French>
-			<Czech>White top with brown pants.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SOPHIA">
 			<English>Sophia</English>
-			<German>Sophia</German>
 			<Russian>София</Russian>
-			<Spanish>Sophia</Spanish>
-			<French>Sophia</French>
-			<Czech>Sophia</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SOPHIA_DESC">
 			<English>Maroon top with grey pants.</English>
-			<German>Maroon top with grey pants.</German>
-			<Russian>Maroon top with grey pants.</Russian>
-			<Spanish>Maroon top with grey pants.</Spanish>
-			<French>Maroon top with grey pants.</French>
-			<Czech>Maroon top with grey pants.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TAKISTANIWARLORD">
 			<English>Takistani Warlord</English>
-			<German>Takistani Warlord</German>
-			<Russian>Takistani Warlord</Russian>
-			<Spanish>Takistani Warlord</Spanish>
-			<French>Takistani Warlord</French>
-			<Czech>Takistani Warlord</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TAKISTANISOLDIER">
 			<English>Takistani Soldier</English>
-			<German>Takistani Soldier</German>
-			<Russian>Takistani Soldier</Russian>
-			<Spanish>Takistani Soldier</Spanish>
-			<French>Takistani Soldier</French>
-			<Czech>Takistani Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SPECIALFORCES">
 			<English>Special Forces</English>
@@ -17630,51 +17393,26 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DESERTCAMO">
 			<English>Desert Camo</English>
-			<German>Desert Camo</German>
 			<Russian>Пустынный камуфляж</Russian>
-			<Spanish>Desert Camo</Spanish>
-			<French>Desert Camo</French>
-			<Czech>Desert Camo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BODYGUARD">
 			<English>Bodyguard</English>
-			<German>Bodyguard</German>
 			<Russian>Охранник</Russian>
-			<Spanish>Bodyguard</Spanish>
-			<French>Bodyguard</French>
-			<Czech>Bodyguard</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JUNGLECAMO">
 			<English>Jungle Camo</English>
-			<German>Jungle Camo</German>
 			<Russian>Лесной камуфляж</Russian>
-			<Spanish>Jungle Camo</Spanish>
-			<French>Jungle Camo</French>
-			<Czech>Jungle Camo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GUNNEROUTFIT">
 			<English>Gunner Outfit</English>
-			<German>Gunner Outfit</German>
-			<Russian>Gunner Outfit</Russian>
-			<Spanish>Gunner Outfit</Spanish>
-			<French>Gunner Outfit</French>
-			<Czech>Gunner Outfit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DESERTGHILLIE">
 			<English>Desert Ghillie</English>
-			<German>Desert Ghillie</German>
 			<Russian>Пустынный гилли</Russian>
-			<Spanish>Desert Ghillie</Spanish>
-			<French>Desert Ghillie</French>
-			<Czech>Desert Ghillie</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_URBANCAMO">
 			<English>Urban Camo</English>
-			<German>Urban Camo</German>
 			<Russian>Городской камуфляж</Russian>
-			<Spanish>Urban Camo</Spanish>
-			<French>Urban Camo</French>
-			<Czech>Urban Camo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MARKSMAN">
 			<English>Marksman</English>
@@ -17700,19 +17438,9 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SMUGGLER">
 			<English>Smuggler</English>
-			<German>Smuggler</German>
-			<Russian>Smuggler</Russian>
-			<Spanish>Smuggler</Spanish>
-			<French>Smuggler</French>
-			<Czech>Smuggler</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DESERTSNIPER">
 			<English>Desert Sniper</English>
-			<German>Desert Sniper</German>
-			<Russian>Desert Sniper</Russian>
-			<Spanish>Desert Sniper</Spanish>
-			<French>Desert Sniper</French>
-			<Czech>Desert Sniper</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GENERAL">
 			<English>General</English>
@@ -17738,334 +17466,132 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BOSS">
 			<English>Boss</English>
-			<German>Boss</German>
 			<Russian>Босс</Russian>
-			<Spanish>Boss</Spanish>
-			<French>Boss</French>
-			<Czech>Boss</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BOSS_DESC">
 			<English>Team Leader</English>
-			<German>Team Leader</German>
 			<Russian>Лидер группы</Russian>
-			<Spanish>Team Leader</Spanish>
-			<French>Team Leader</French>
-			<Czech>Team Leader</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_COOPER">
 			<English>Cooper</English>
-			<German>Cooper</German>
 			<Russian>Купер</Russian>
-			<Italian>Cooper</Italian>
-			<Spanish>Cooper</Spanish>
-			<French>Cooper</French>
-			<Czech>Cooper</Czech>
-			<Polish>Cooper</Polish>
-			<Hungarian>Cooper</Hungarian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TRAVIS">
 			<English>Travis</English>
-			<German>Travis</German>
 			<Russian>Трэвис</Russian>
-			<Spanish>Travis</Spanish>
-			<French>Travis</French>
-			<Czech>Travis</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_PAULO">
 			<English>Paulo</English>
-			<German>Paulo</German>
 			<Russian>Пауло</Russian>
-			<Spanish>Paulo</Spanish>
-			<French>Paulo</French>
-			<Czech>Paulo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_STEVE">
 			<English>Steve</English>
-			<German>Steve</German>
 			<Russian>Стив</Russian>
-			<Spanish>Steve</Spanish>
-			<French>Steve</French>
-			<Czech>Steve</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCOFFICER">
 			<English>USMC Officer</English>
-			<German>USMC Officer</German>
-			<Russian>USMC Officer</Russian>
-			<Spanish>USMC Officer</Spanish>
-			<French>USMC Officer</French>
-			<Czech>USMC Officer</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCSOLDIER">
 			<English>USMC Soldier</English>
-			<German>USMC Soldier</German>
-			<Russian>USMC Soldier</Russian>
-			<Spanish>USMC Soldier</Spanish>
-			<French>USMC Soldier</French>
-			<Czech>USMC Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCPILOT">
 			<English>USMC Pilot</English>
-			<German>USMC Pilot</German>
-			<Russian>USMC Pilot</Russian>
-			<Spanish>USMC Pilot</Spanish>
-			<French>USMC Pilot</French>
-			<Czech>USMC Pilot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOTEAMLEADER">
 			<English>Camo Teamleader</English>
-			<German>Camo Teamleader</German>
-			<Russian>Camo Teamleader</Russian>
-			<Spanish>Camo Teamleader</Spanish>
-			<French>Camo Teamleader</French>
-			<Czech>Camo Teamleader</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMORECON">
 			<English>Camo Recon</English>
-			<German>Camo Recon</German>
-			<Russian>Camo Recon</Russian>
-			<Spanish>Camo Recon</Spanish>
-			<French>Camo Recon</French>
-			<Czech>Camo Recon</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOMARKSMAN">
 			<English>Camo Marksman</English>
-			<German>Camo Marksman</German>
-			<Russian>Camo Marksman</Russian>
-			<Spanish>Camo Marksman</Spanish>
-			<French>Camo Marksman</French>
-			<Czech>Camo Marksman</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOASSAULT">
 			<English>Camo Assault</English>
-			<German>Camo Assault</German>
-			<Russian>Camo Assault</Russian>
-			<Spanish>Camo Assault</Spanish>
-			<French>Camo Assault</French>
-			<Czech>Camo Assault</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUSOLDIER">
 			<English>RU Soldier</English>
-			<German>RU Soldier</German>
-			<Russian>RU Soldier</Russian>
-			<Spanish>RU Soldier</Spanish>
-			<French>RU Soldier</French>
-			<Czech>RU Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUOFFICER">
 			<English>RU Officer</English>
-			<German>RU Officer</German>
-			<Russian>RU Officer</Russian>
-			<Spanish>RU Officer</Spanish>
-			<French>RU Officer</French>
-			<Czech>RU Officer</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCAMO">
 			<English>RU Camo</English>
-			<German>RU Camo</German>
-			<Russian>RU Camo</Russian>
-			<Spanish>RU Camo</Spanish>
-			<French>RU Camo</French>
-			<Czech>RU Camo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCOMMANDER">
 			<English>RU Commander</English>
-			<German>RU Commander</German>
-			<Russian>RU Commander</Russian>
-			<Spanish>RU Commander</Spanish>
-			<French>RU Commander</French>
-			<Czech>RU Commander</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MVDSOLDIER">
 			<English>MVD Soldier</English>
-			<German>MVD Soldier</German>
-			<Russian>MVD Soldier</Russian>
-			<Spanish>MVD Soldier</Spanish>
-			<French>MVD Soldier</French>
-			<Czech>MVD Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TERRORISTCAMO">
 			<English>Terrorist Camo</English>
-			<German>Terrorist Camo</German>
-			<Russian>Terrorist Camo</Russian>
-			<Spanish>Terrorist Camo</Spanish>
-			<French>Terrorist Camo</French>
-			<Czech>Terrorist Camo</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_INSCOMMANDER">
 			<English>Ins Commander</English>
-			<German>Ins Commander</German>
-			<Russian>Ins Commander</Russian>
-			<Spanish>Ins Commander</Spanish>
-			<French>Ins Commander</French>
-			<Czech>Ins Commander</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_INSCREWMAN">
 			<English>Ins Crewman</English>
-			<German>Ins Crewman</German>
-			<Russian>Ins Crewman</Russian>
-			<Spanish>Ins Crewman</Spanish>
-			<French>Ins Crewman</French>
-			<Czech>Ins Crewman</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CDFSOLDIER">
 			<English>CDF Soldier</English>
-			<German>CDF Soldier</German>
-			<Russian>CDF Soldier</Russian>
-			<Spanish>CDF Soldier</Spanish>
-			<French>CDF Soldier</French>
-			<Czech>CDF Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ASSISTANT">
 			<English>Assistant</English>
-			<German>Assistant</German>
-			<Russian>Assistant</Russian>
-			<Spanish>Assistant</Spanish>
-			<French>Assistant</French>
-			<Czech>Assistant</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DOCTOR">
 			<English>Doctor</English>
-			<German>Doctor</German>
-			<Russian>Doctor</Russian>
-			<Spanish>Doctor</Spanish>
-			<French>Doctor</French>
-			<Czech>Doctor</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER1">
 			<English>Worker 1</English>
-			<German>Worker 1</German>
-			<Russian>Worker 1</Russian>
-			<Spanish>Worker 1</Spanish>
-			<French>Worker 1</French>
-			<Czech>Worker 1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER2">
 			<English>Worker 2</English>
-			<German>Worker 2</German>
-			<Russian>Worker 2</Russian>
-			<Spanish>Worker 2</Spanish>
-			<French>Worker 2</French>
-			<Czech>Worker 2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER3">
 			<English>Worker 3</English>
-			<German>Worker 3</German>
-			<Russian>Worker 3</Russian>
-			<Spanish>Worker 3</Spanish>
-			<French>Worker 3</French>
-			<Czech>Worker 3</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN1">
 			<English>TK Citizen 1</English>
-			<German>TK Citizen 1</German>
-			<Russian>TK Citizen 1</Russian>
-			<Spanish>TK Citizen 1</Spanish>
-			<French>TK Citizen 1</French>
-			<Czech>TK Citizen 1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN2">
 			<English>TK Citizen 2</English>
-			<German>TK Citizen 2</German>
-			<Russian>TK Citizen 2</Russian>
-			<Spanish>TK Citizen 2</Spanish>
-			<French>TK Citizen 2</French>
-			<Czech>TK Citizen 2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN3">
 			<English>TK Citizen 3</English>
-			<German>TK Citizen 3</German>
-			<Russian>TK Citizen 3</Russian>
-			<Spanish>TK Citizen 3</Spanish>
-			<French>TK Citizen 3</French>
-			<Czech>TK Citizen 3</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN4">
 			<English>TK Citizen 4</English>
-			<German>TK Citizen 4</German>
-			<Russian>TK Citizen 4</Russian>
-			<Spanish>TK Citizen 4</Spanish>
-			<French>TK Citizen 4</French>
-			<Czech>TK Citizen 4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKSOLDIER">
 			<English>TK Soldier</English>
-			<German>TK Soldier</German>
-			<Russian>TK Soldier</Russian>
-			<Spanish>TK Soldier</Spanish>
-			<French>TK Soldier</French>
-			<Czech>TK Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKGUESOLDIER">
 			<English>TK GUE Soldier</English>
-			<German>TK GUE Soldier</German>
-			<Russian>TK GUE Soldier</Russian>
-			<Spanish>TK GUE Soldier</Spanish>
-			<French>TK GUE Soldier</French>
-			<Czech>TK GUE Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CZSOLDIER">
 			<English>CZ Soldier</English>
-			<German>CZ Soldier</German>
-			<Russian>CZ Soldier</Russian>
-			<Spanish>CZ Soldier</Spanish>
-			<French>CZ Soldier</French>
-			<Czech>CZ Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USSOLDIER">
 			<English>US Soldier</English>
-			<German>US Soldier</German>
-			<Russian>US Soldier</Russian>
-			<Spanish>US Soldier</Spanish>
-			<French>US Soldier</French>
-			<Czech>US Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_UNSOLDIER">
 			<English>UN Soldier</English>
-			<German>UN Soldier</German>
-			<Russian>UN Soldier</Russian>
-			<Spanish>UN Soldier</Spanish>
-			<French>UN Soldier</French>
-			<Czech>UN Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_UNCOMMANDER">
 			<English>UN Commander</English>
-			<German>UN Commander</German>
-			<Russian>UN Commander</Russian>
-			<Spanish>UN Commander</Spanish>
-			<French>UN Commander</French>
-			<Czech>UN Commander</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GERRECON">
 			<English>GER Recon</English>
-			<German>GER Recon</German>
-			<Russian>GER Recon</Russian>
-			<Spanish>GER Recon</Spanish>
-			<French>GER Recon</French>
-			<Czech>GER Recon</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFOFFICER">
 			<English>BAF Officer</English>
-			<German>BAF Officer</German>
-			<Russian>BAF Officer</Russian>
-			<Spanish>BAF Officer</Spanish>
-			<French>BAF Officer</French>
-			<Czech>BAF Officer</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFSOLDIER">
 			<English>BAF Soldier</English>
-			<German>BAF Soldier</German>
-			<Russian>BAF Soldier</Russian>
-			<Spanish>BAF Soldier</Spanish>
-			<French>BAF Soldier</French>
-			<Czech>BAF Soldier</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_FRSAPPER">
 			<English>Camo Sapper</English>
-			<German>Camo Sapper</German>
-			<Russian>Camo Sapper</Russian>
-			<Spanish>Camo Sapper</Spanish>
-			<French>Camo Sapper</French>
-			<Czech>Camo Sapper</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
@@ -18298,8 +17824,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_MANAGEDOOR">
 			<English>Manage Door</English>
 			<German>Tür verwalten</German>
-		</Key>
-		
+		</Key>		
 		<Key ID="STR_EPOCH_DOORACCESS_TITLE">
 			<English>Door Access Terminal</English>
 			<German>Zutrittssystem</German>
@@ -18337,7 +17862,6 @@
 			<English>You do not have the rights to manage.</English>
 			<German>Du darfst diese Tür nicht verwalten.</German>
 		</Key>
-		
 		<Key ID="STR_EPOCH_DOORS_OPEN">
 			<English>Open Door</English>
 			<German>Tür öffnen</German>

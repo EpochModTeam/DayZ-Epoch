@@ -43,7 +43,7 @@
 [NEW] Fuel stations now have limited amount of fuel each restart. Configurable with dayz_randomMaxFuelAmount in init.sqf
 [NEW] More possible causes of death added to study body: fell, ran over, shot, melee hit, zombie hit @ebaydayz
 [NEW] Player-list no longer shows who's in lobby or ingame.
-[NEW] 34 new male clothing classes added. #1732 @AirWavesMan
+[NEW] 35 new male clothing classes added. #1732 #1734 @AirWavesMan
 
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
 [CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)
