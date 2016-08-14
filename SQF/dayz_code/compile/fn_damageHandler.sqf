@@ -20,9 +20,6 @@ _isHeadHit = (_hit == "head_hit");
 _isPlayer = (isPlayer _source);
 _isZombieHit = _ammo == "zombie";
 
-//Ignore none part dmg.
-if (_hit == "") exitwith { 0 };
-
 _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Dayz_freefall select 1 > 3)})});
 
 //Simple hack to help with a few issues from direct damage to physic based damage. ***until 2.0***
@@ -48,7 +45,7 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 		if (_ammo == "") exitwith { _end = true; };
 		
 		//If _source contains no object exit. But lets not exit if the unit returns player. Maybe its his own fault.
-		if (isNull _source) exitwith { _end = true; };
+		if (isNull _source) then { _end = true; };
 	};
 
 
@@ -61,7 +58,7 @@ if (_unit == player) then {
 	_unit setVariable["startcombattimer", 1];
 	_unit setVariable["inCombat", 1, true];
 
-    if (_hit == "") then
+    if (_hit == "") exitWith //Ignore none part dmg. Exit after processing humanity hit
 	{
         if ((_source != player) and _isPlayer && alive player) then
 		{
@@ -180,6 +177,9 @@ if (_unit == player) then {
 	};
 	if (dayz_lastDamageSource != "none") then {dayz_lastDamageTime = diag_tickTime;};
 };
+
+//Ignore none part dmg. Exit after processing humanity hit
+if (_hit == "") exitWith { 0 };
 
 //Pure base blood damage
 _scale = 200;
