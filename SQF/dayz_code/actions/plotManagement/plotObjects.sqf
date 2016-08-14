@@ -3,7 +3,7 @@ disableSerialization;
 
 _range = DZE_PlotPole select 0;
 _target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
-_buildables = DZE_maintainClasses + DZE_LockableStorage;
+_buildables = DZE_maintainClasses;
 _count = count (nearestObjects [_target,_buildables,_range]);
 
 _colour = "#ffffff";
