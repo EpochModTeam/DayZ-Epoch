@@ -11,7 +11,7 @@ s_player_maintain_area_preview = 1;
 
 _target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
 
-_objectClasses = DZE_maintainClasses + DZE_LockableStorage;
+_objectClasses = DZE_maintainClasses;
 _range = DZE_PlotPole select 0;
 _objects = nearestObjects [_target, _objectClasses, _range];
 
