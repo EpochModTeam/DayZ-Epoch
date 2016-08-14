@@ -16334,6 +16334,9 @@
 		<Key ID="STR_EPOCH_APLOTFORLIFE_TAKE_OWNERSHIP">
 			<English>Take Ownership: %1 objects ownership changed.</English>
 		</Key>
+		
+		<!-- PLOT MANAGEMENT BELOW -->
+		
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS">
 			<English>Objects to maintain: %1</English>
 		</Key>
@@ -16341,21 +16344,21 @@
 			<English>Price to maintain: %1 %2</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_NO_MONEY_NEEDED">
-			<English>No money needed.</English>
+			<English>No maintenance needed.</English>
 			<Russian>Деньги не требуются.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS">
 			<English>SUCCESS: Objects maintained: %1</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS">
-			<English>SUCCESS: Price maintained: %1 %2 !</English>
+			<English>SUCCESS: Maintenance cost: %1 %2!</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED">
 			<English>FAILED: Objects maintained: 0</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED">
-			<English>FAILED: Money needed: %1 %2 !</English>
-			<Russian>ОШИБКА: Требуется денег: %1 %2 !</Russian>
+			<English>FAILED: Money needed: %1 %2!</English>
+			<Russian>ОШИБКА: Требуется денег: %1 %2!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
 			<English>That user is already on the list</English>
@@ -16367,6 +16370,7 @@
 			<Russian>Можно добавить друзей: %1</Russian>
 			<German>Nur %1 Freunde erlaubt</German>
 		</Key>
+		
 		<Key ID="STR_EPOCH_TRADER">
 			<English>Trader</English>
 			<German>Händler</German>
@@ -17821,6 +17825,9 @@
 		<Key ID="STR_EPOCH_BUILD_FAIL_TOO_FAR">
 			<English>Object is placed too far away from where you started building (within %1 meters)</English>
 		</Key>
+
+						<!-- DOOR MANAGEMENT BELOW -->
+
 		<Key ID="STR_EPOCH_ACTIONS_MANAGEDOOR">
 			<English>Manage Door</English>
 			<German>Tür verwalten</German>
@@ -17849,7 +17856,6 @@
 			<English>We do not allow manual codes.</English>
 			<German>Die manuelle Eingabe ist nicht erlaubt.</German>
 		</Key>
-		
 		<Key ID="STR_EPOCH_DOORMANAGEMENT_TITLE">
 			<English>Door Management</English>
 			<German>Tür-Management</German>
@@ -17862,6 +17868,7 @@
 			<English>You do not have the rights to manage.</English>
 			<German>Du darfst diese Tür nicht verwalten.</German>
 		</Key>
+		
 		<Key ID="STR_EPOCH_DOORS_OPEN">
 			<English>Open Door</English>
 			<German>Tür öffnen</German>
