@@ -10,4 +10,4 @@ Humans = [];
 		Humans  =  Humans + [[_friendUID,toArray _friendName]];
 		lbAdd [7001, _friendName];
 	};
-} forEach _closePeople; // count causes Error Type Number, expected Bool here
+} forEach _closePeople;

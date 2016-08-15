@@ -8,7 +8,7 @@ _friends = _thePlot getVariable ["plotfriends", []];
 _toRemove = (_friends select _pos);
 _newList = [];
 {
-	if(_x select 0  != _toRemove select 0) then {
+	if (_x select 0  != _toRemove select 0) then {
 	_newList set [(count _newList), _x];
 	};
 } count _friends;

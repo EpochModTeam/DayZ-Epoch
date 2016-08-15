@@ -1,4 +1,4 @@
-private ["_missing","_missingQty","_proceed","_itemIn","_countIn","_qty","_num_removed","_uniqueID","_removed","_removed_total","_tobe_removed_total","_obj","_objectID","_objectUID","_classname","_location","_dir","_objectCharacterID","_object","_temp_removed_array","_textMissing","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_itemText","_option"];
+private ["_objectID","_objectUID","_target","_objectClasses","_range","_objects","_requirements","_count","_option","_objects_filtered","_ctrl","_itemText"];
 disableSerialization;
 
 if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
@@ -12,7 +12,7 @@ s_player_maintain_area_preview = 1;
 _target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
 
 _objectClasses = DZE_maintainClasses;
-_range = DZE_PlotPole select 0;
+_range = DZE_maintainRange; // set the max range for the maintain area
 _objects = nearestObjects [_target, _objectClasses, _range];
 
 _objects_filtered = [];
@@ -20,7 +20,7 @@ _count = 0;
 {
     if (damage _x >= DZE_DamageBeforeMaint) then {
 		_objectUID = _x getVariable ["ObjectUID","0"];
-		_objectID = _x getVariable ["ObjectID","0"];		
+		_objectID = _x getVariable ["ObjectID","0"];
 		_objects_filtered set [count _objects_filtered, [_x, _objectID, _objectUID]];
 		_count = _count + 1;
    };
@@ -30,17 +30,17 @@ _objects = _objects_filtered;
 // TODO dynamic requirements based on used building parts?
 if (_count == 0) exitWith {
 	_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
-	_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
-	_ctrl ctrlSetText   _result;		
+	_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
 	_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-	_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_NO_MONEY_NEEDED", " "];	
-	_ctrl ctrlSetText   _result;	
+	_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_NO_MONEY_NEEDED", " "];
 	DZE_ActionInProgress = false;
 	s_player_maintain_area = -1;
 	s_player_maintain_area_preview = -1;
 };
 
 _requirements = [];
+_option = _this select 0;
+
 switch true do {
 	case (_count <= 10):  {_requirements = [["ItemGoldBar10oz",1]]};
 	case (_count <= 20):  {_requirements = [["ItemGoldBar10oz",2]]};
@@ -58,91 +58,37 @@ switch true do {
 	case (_count > 625):  {_requirements = [["ItemBriefcase100oz",9]]};
 };
 
+_itemText = getText(configFile >> "CfgMagazines" >> (_requirements select 0) select 0 >> "displayName");
+if ("ItemBriefcase100oz" == (_requirements select 0) select 0 && (_requirements select 0) select 1 > 1) then {
+	_itemText = _itemText + "s";
+};
 
-
-_option = _this select 0;
 switch _option do {
-	case "maintain": {		
-		_missing = "";
-		_missingQty = 0;
-		_proceed = true;
-		{
-			_itemIn = _x select 0;
-			_countIn = _x select 1;
-			_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
-			if (_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-		} forEach _requirements;
-
-		if (_proceed) then {
+	case "maintain": {
+		if ([[[(_requirements select 0) select 0, (_requirements select 0) select 1]],0] call epoch_returnChange) then {
 			player playActionNow "Medic";
 			[player,_range,true,(getPosATL player)] spawn player_alertZombies;
 
-			_temp_removed_array = [];
-			_removed_total = 0;
-			_tobe_removed_total = 0;
+			PVDZE_maintainArea = [player,1,_objects];
+			publicVariableServer "PVDZE_maintainArea";
 			
-			{
-				_removed = 0;
-				_itemIn = _x select 0;
-				_countIn = _x select 1;
-				_tobe_removed_total = _tobe_removed_total + _countIn;
-				
-				{					
-					if ((_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
-						_num_removed = ([player,_x] call BIS_fnc_invRemove);
-						_removed = _removed + _num_removed;
-						_removed_total = _removed_total + _num_removed;
-						if (_num_removed >= 1) then {
-							_temp_removed_array set [count _temp_removed_array,_x];
-						};
-					};
-				} forEach magazines player;
-			} forEach _requirements;
-
-			// all required items removed from player gear
-			if (_tobe_removed_total == _removed_total) then {
-				format[localize "STR_EPOCH_ACTIONS_4", _count] call dayz_rollingMessages;
-				PVDZE_maintainArea = [player,1,_objects];
-				publicVariableServer "PVDZE_maintainArea";										
-				_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
-				_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS", _count];
-				_ctrl ctrlSetText   _result;		
-				_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-				_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS", (_requirements select 0) select 1, (_requirements select 0) select 0];
-				_ctrl ctrlSetText   _result;
-			} else {
-				{player addMagazine _x;} count _temp_removed_array;
-				format[localize "STR_EPOCH_ACTIONS_5",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
-			};
-		} else {
-			_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
+			systemChat format[localize "STR_EPOCH_ACTIONS_4", _count];
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
-			_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED", _count];
-			_ctrl ctrlSetText   _result;			
+			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS", _count];
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-			_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED", (_requirements select 0) select 1, (_requirements select 0) select 0];
-			_ctrl ctrlSetText   _result;			
-			format[localize "STR_EPOCH_ACTIONS_6", _missingQty, _textMissing] call dayz_rollingMessages;
+			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS", (_requirements select 0) select 1, _itemText];
+		} else {
+			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
+			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED", _count];
+			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
+			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED", (_requirements select 0) select 1, _itemText];
 		};
 	};
 	case "preview": {
-		_cost = "";
-		{
-			_itemIn = _x select 0;
-			_countIn = _x select 1;
-			_itemText = getText(configFile >> "CfgMagazines" >> _itemIn >> "displayName");
-			if (_cost != "") then {
-				_cost = _cost + " and "; //TODO: localize?
-			};
-			_cost = _cost + (str(_countIn) + " of " + _itemText); //TODO: localize?
-		} count _requirements;					
-		format[localize "STR_EPOCH_ACTIONS_7", _count, _cost] call dayz_rollingMessages;
 		_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
-		_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
-		_ctrl ctrlSetText   _result;		
+		_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
 		_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-		_result =  format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE",  (_requirements select 0) select 1, (_requirements select 0) select 0];
-		_ctrl ctrlSetText   _result;					
+		_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", (_requirements select 0) select 1, _itemText];
 	};
 };
 
