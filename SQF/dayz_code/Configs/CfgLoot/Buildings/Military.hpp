@@ -29,7 +29,8 @@ class MilitarySpecial : Military
 	lootChance = 0.4;
 	lootGroup = MilitarySpecial;
 };
-class MilitaryIndustrial: Military {
+class MilitaryIndustrial: Military 
+{
 	zombieChance = 0.3;
 	maxRoaming = 6;
 	zombieClass[] = 
@@ -41,13 +42,13 @@ class MilitaryIndustrial: Military {
 		"z_worker2",
 		"z_worker3"
 	};
-	lootChance = 0.4;
+	lootChance = 0.5;
 	lootGroup = MilitaryIndustrial;
 };
 class Land_a_stationhouse : Military
 {
 	zedPos[] = {{-0.892578,-5.7168,-9.47058},{1.5127,1.96484,-9.47058},{18.9063,-4.06738,-9.47058},{-2.69922,-7.57422,-9.46057},{-1.35645,-8.3623,-4.6489},{-3.24219,-6.61914,-4.6489},{-1.70801,-7.85449,-0.0437927},{-3.39453,-7.88281,-0.0437927},{-1.37891,-5.79102,4.41141},{-1.39648,-7.79883,4.41141}};
-	lootChance = 0.3;
+	lootChance = 0.5;
 	lootPos[] = {
 		//{-2.7,-7.57,-9.46},{-0.89,-5.72,-9.47},{-3.24,-6.62,-4.65},{-1.36,-8.36,-4.65},{-1.71,-7.85,-0.04},{-3.39,-7.88,-0.04},{-1.4,-7.8,4.41},{-1.38,-5.79,4.41},{1.51,1.96,-9.47},{18.91,-4.07,-9.47},{-14.4,3.29,-0.51},{1.33,0.89,-0.51},{-2.37,-8.4,8.49},{12.44,2.54,-9.47},{-14.83,-7.58,-0.51},{-1.8,8.87,-0.51},{6.83,0.89,-0.51},{3.65,-6.54,-4.51},{16.29,-6.57,-4.51},{18.39,2.37,-4.51},{9.28,-1.25,-4.51},{-2.08,-4.74,8.49},
 		{15.436,2.85498,-9.47058},{17.9861,-6.52832,-9.47058},{1.22583,2.24463,-9.47058},{-3.9126,-7.29834,-9.47058},{-2.28271,-6.21094,-4.6489},{-1.604,-8.68018,-0.043786},{-1.104,-5.60938,4.41139},{-3.55811,-8.56787,4.41139},{-2.99219,-8.27148,8.49209}
@@ -489,7 +490,7 @@ class HMMWVWreck: Military
 	lootPos[] = {};
 };
 
-class Land_Mil_Guardhouse : Military //MOVED FROM RESIDENTIAL
+class Land_Mil_Guardhouse: Military //MOVED FROM RESIDENTIAL
 {
 	zombieClass[] =
 	{
@@ -497,6 +498,7 @@ class Land_Mil_Guardhouse : Military //MOVED FROM RESIDENTIAL
 		"z_soldier",
 		"z_policeman"
 	};
+	lootChance = 0.5;
 	maxRoaming = 3;
 	zedPos[] = {{-2.44727,0.250977,-1.70563},{-2.44873,3.00293,-1.70285}};
 	lootPos[] = {
