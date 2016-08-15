@@ -43,24 +43,24 @@ if (_count == 0) exitWith {
 
 _requirements = [];
 _requirements = switch true do {
-	case (_count <= 10):  {[["ItemGoldBar10oz",1]]};
-	case (_count <= 20):  {[["ItemGoldBar10oz",2]]};
-	case (_count <= 35):  {[["ItemGoldBar10oz",3]]};
-	case (_count <= 50):  {[["ItemGoldBar10oz",4]]};
-	case (_count <= 75):  {[["ItemGoldBar10oz",6]]};
-	case (_count <= 100): {[["ItemBriefcase100oz",1]]};
-	case (_count <= 175): {[["ItemBriefcase100oz",2]]};
-	case (_count <= 250): {[["ItemBriefcase100oz",3]]};
-	case (_count <= 325): {[["ItemBriefcase100oz",4]]};
-	case (_count <= 400): {[["ItemBriefcase100oz",5]]};
-	case (_count <= 475): {[["ItemBriefcase100oz",6]]};
-	case (_count <= 550): {[["ItemBriefcase100oz",7]]};
-	case (_count <= 625): {[["ItemBriefcase100oz",8]]};
-	case (_count > 625):  {[["ItemBriefcase100oz",9]]};
+	case (_count <= 10):  {["ItemGoldBar10oz",1]};
+	case (_count <= 20):  {["ItemGoldBar10oz",2]};
+	case (_count <= 35):  {["ItemGoldBar10oz",3]};
+	case (_count <= 50):  {["ItemGoldBar10oz",4]};
+	case (_count <= 75):  {["ItemGoldBar10oz",6]};
+	case (_count <= 100): {["ItemBriefcase100oz",1]};
+	case (_count <= 175): {["ItemBriefcase100oz",2]};
+	case (_count <= 250): {["ItemBriefcase100oz",3]};
+	case (_count <= 325): {["ItemBriefcase100oz",4]};
+	case (_count <= 400): {["ItemBriefcase100oz",5]};
+	case (_count <= 475): {["ItemBriefcase100oz",6]};
+	case (_count <= 550): {["ItemBriefcase100oz",7]};
+	case (_count <= 625): {["ItemBriefcase100oz",8]};
+	case (_count > 625):  {["ItemBriefcase100oz",9]};
 };
 
-_type = (_requirements select 0) select 0;
-_amount = (_requirements select 0) select 1;
+_type = _requirements select 0;
+_amount = _requirements select 1;
 
 if (Z_SingleCurrency) then {
 	_amount = _count * 100;
