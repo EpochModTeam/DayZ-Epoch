@@ -1,4 +1,4 @@
-private ["_objectID","_objectUID","_target","_objectClasses","_range","_objects","_requirements","_count","_objects_filtered","_ctrl","_itemText","_type","_amount","_success","_theCost","_wealth","_message1","_message2"];
+private ["_objectID","_objectUID","_target","_objectClasses","_range","_objects","_requirements","_count","_objects_filtered","_ctrl","_itemText","_type","_amount","_success","_theCost","_wealth","_message1","_message2","_option"];
 disableSerialization;
 
 if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
@@ -10,7 +10,6 @@ player removeAction s_player_maintain_area_preview;
 s_player_maintain_area_preview = 1;
 
 _target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
-
 _objectClasses = DZE_maintainClasses;
 _range = DZE_maintainRange; // set the max range for the maintain area
 _objects = nearestObjects [_target, _objectClasses, _range];
@@ -76,7 +75,9 @@ if (Z_SingleCurrency) then {
 	};
 };
 
-switch _this do {
+_option = if (typeName _this == "ARRAY") then {_this select 3} else {_this};
+
+switch _option do {
 	case "maintain": {
 		_success = if (Z_SingleCurrency) then {_theCost <= _wealth} else {[[[_type, _amount]],0] call epoch_returnChange};
 
