@@ -53,13 +53,13 @@ class M16A4_DZ : M16A2
 	model = "z\addons\dayz_communityweapons\m16a4\m16a4.p3d";
 	picture = "\z\addons\dayz_communityweapons\m16a4\data\w_m16a4_ca.paa";
 	displayName = $STR_DZ_WPN_M16A4;
-	
+	/*
 	magazines[] = 
 	{
 		30Rnd_556x45_Stanag,
 		30Rnd_556x45_StanagSD
 	};
-	
+	*/
 	class Attachments
 	{
 		Attachment_CCO = "M16A4_CCO_DZ";
