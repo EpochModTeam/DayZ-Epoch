@@ -59,13 +59,13 @@ class M4A1_DZ : M4A1
 	displayName = $STR_DZ_WPN_M4A1_NAME;
 	
 	handAnim[]={"OFP2_ManSkeleton","\Ca\weapons_E\SCAR\Data\Anim\SCAR.rtm"};
-	
+	/*
 	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
 		30Rnd_556x45_StanagSD
 	};
-	
+	*/
 	class Attachments
 	{
 		Attachment_CCO = "M4A1_CCO_DZ";
@@ -117,13 +117,13 @@ class M4A1_SD_DZ : M4A1_AIM_SD_camo
 	displayName = $STR_DZ_WPN_M4A1_SD_NAME;
 	
 	handAnim[]={"OFP2_ManSkeleton","\Ca\weapons_E\SCAR\Data\Anim\SCAR.rtm"};
-	
+	/*
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
 		30Rnd_556x45_Stanag
 	};
-	
+	*/
 	class Attachments
 	{
 		Attachment_CCO = "M4A1_CCO_SD_DZ";
