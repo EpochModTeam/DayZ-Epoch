@@ -1,4 +1,4 @@
-private ["_newWealth","_missing","_missingQty","_proceed","_itemIn","_countIn","_target","_objectClasses","_range","_objects","_requirements","_count","_cost","_option"];
+private ["_newWealth","_target","_objectClasses","_range","_objects","_count","_option","_objects_filtered","_ctrl","_theCost","_wealth"];
 disableSerialization;
 
 if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
@@ -12,7 +12,7 @@ s_player_maintain_area_preview = 1;
 _target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
 
 _objectClasses = DZE_maintainClasses;
-_range = DZE_PlotPole select 0;
+_range = DZE_maintainRange; // set the max range for the maintain area
 _objects = nearestObjects [_target, _objectClasses, _range];
 
 _objects_filtered = [];
@@ -38,25 +38,15 @@ if (_count == 0) exitWith {
 	s_player_maintain_area_preview = -1;
 };
 
-_theCost = _count * 1;
-_requirements = [[CurrencyName,_theCost]];
-
+_theCost = _count * 100;
 _option = _this select 0;
+
 switch _option do {
 	case "maintain": {
-		
 		_wealth = player getVariable[Z_MoneyVariable,0];
-		_missing = "";
-		_missingQty = 0;
-		_proceed = true;
-		{
-			_itemIn = _x select 0;
-			_countIn = _x select 1;
-			if (_wealth < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _wealth); _proceed = false; };
-		} count _requirements;
-
-		if (_proceed) then {
-			_newWealth = (_wealth - _countIn);
+		systemChat format ["_wealth: %1 _theCost: %2",_wealth,_theCost];
+		if (_theCost <= _wealth) then {
+			_newWealth = (_wealth - _theCost);
 			player playActionNow "Medic";
 			[player,_range,true,(getPosATL player)] spawn player_alertZombies;
 
@@ -76,22 +66,9 @@ switch _option do {
 			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED", _count];
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
 			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED", _theCost, CurrencyName];
-			systemChat format[localize "STR_EPOCH_ACTIONS_6", _missingQty, CurrencyName];
 		};
 	};
 	case "preview": {
-		_cost = "";
-		{
-			_itemIn = _x select 0;
-			_countIn = _x select 1;
-			if (_cost != "") then {
-				_cost = _cost + " and ";
-			};
-			_cost = _cost + (str(_countIn) + " " + CurrencyName);
-		} count _requirements;
-			
-		systemChat format[localize "STR_EPOCH_ACTIONS_7", _count, _cost];
-			
 		_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
 		_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
 		_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);

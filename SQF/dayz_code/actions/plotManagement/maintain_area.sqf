@@ -1,4 +1,4 @@
-private ["_objectID","_objectUID","_target","_objectClasses","_range","_objects","_requirements","_count","_option","_objects_filtered","_ctrl"];
+private ["_objectID","_objectUID","_target","_objectClasses","_range","_objects","_requirements","_count","_option","_objects_filtered","_ctrl","_itemText"];
 disableSerialization;
 
 if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
@@ -12,7 +12,7 @@ s_player_maintain_area_preview = 1;
 _target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
 
 _objectClasses = DZE_maintainClasses;
-_range = DZE_PlotPole select 0;
+_range = DZE_maintainRange; // set the max range for the maintain area
 _objects = nearestObjects [_target, _objectClasses, _range];
 
 _objects_filtered = [];
@@ -58,6 +58,11 @@ switch true do {
 	case (_count > 625):  {_requirements = [["ItemBriefcase100oz",9]]};
 };
 
+_itemText = getText(configFile >> "CfgMagazines" >> (_requirements select 0) select 0 >> "displayName");
+if ("ItemBriefcase100oz" == (_requirements select 0) select 0 && (_requirements select 0) select 1 > 1) then {
+	_itemText = _itemText + "s";
+};
+
 switch _option do {
 	case "maintain": {
 		if ([[[(_requirements select 0) select 0, (_requirements select 0) select 1]],0] call epoch_returnChange) then {
@@ -71,19 +76,19 @@ switch _option do {
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
 			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS", _count];
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS", (_requirements select 0) select 1, (_requirements select 0) select 0];
+			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS", (_requirements select 0) select 1, _itemText];
 		} else {
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
 			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED", _count];
 			_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED", (_requirements select 0) select 1, (_requirements select 0) select 0];
+			_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED", (_requirements select 0) select 1, _itemText];
 		};
 	};
 	case "preview": {
 		_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7012);
 		_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
 		_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7013);
-		_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", (_requirements select 0) select 1, (_requirements select 0) select 0];
+		_ctrl ctrlSetText format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", (_requirements select 0) select 1, _itemText];
 	};
 };
 
