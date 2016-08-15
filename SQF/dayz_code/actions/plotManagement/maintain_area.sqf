@@ -1,4 +1,4 @@
-private ["_objectID","_objectUID","_target","_objectClasses","_range","_objects","_requirements","_count","_objects_filtered","_ctrl","_itemText","_type","_amount","_success","_theCost","_wealth","_message1","_message2","_option"];
+private ["_objectID","_objectUID","_target","_objectClasses","_range","_objects","_requirements","_count","_objects_filtered","_ctrl","_itemText","_type","_amount","_success","_wealth","_message1","_message2","_option"];
 disableSerialization;
 
 if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
@@ -42,8 +42,6 @@ if (_count == 0) exitWith {
 };
 
 _requirements = [];
-_theCost = _count * 100;
-
 _requirements = switch true do {
 	case (_count <= 10):  {[["ItemGoldBar10oz",1]]};
 	case (_count <= 20):  {[["ItemGoldBar10oz",2]]};
@@ -65,7 +63,7 @@ _type = (_requirements select 0) select 0;
 _amount = (_requirements select 0) select 1;
 
 if (Z_SingleCurrency) then {
-	_amount = _theCost;
+	_amount = _count * 100;
 	_itemText = CurrencyName;
 	_wealth = player getVariable[Z_MoneyVariable,0];
 } else {
@@ -79,14 +77,14 @@ _option = if (typeName _this == "ARRAY") then {_this select 3} else {_this};
 
 switch _option do {
 	case "maintain": {
-		_success = if (Z_SingleCurrency) then {_theCost <= _wealth} else {[[[_type, _amount]],0] call epoch_returnChange};
+		_success = if (Z_SingleCurrency) then {_amount <= _wealth} else {[[[_type, _amount]],0] call epoch_returnChange};
 
 		if (_success) then {
 			player playActionNow "Medic";
 			[player,_range,true,(getPosATL player)] spawn player_alertZombies;
 			
 			if (Z_SingleCurrency) then {
-				player setVariable[Z_MoneyVariable,(_wealth - _theCost),true];
+				player setVariable[Z_MoneyVariable,(_wealth - _amount),true];
 				call player_forceSave;
 			};
 
