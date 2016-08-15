@@ -1,5 +1,5 @@
 createdialog "PlotManagement";
 call PlotNearbyHumans;
 call PlotGetFriends;
-["preview"] call MaintainPlot;
+"preview" call MaintainPlot;
 call PlotObjects;
