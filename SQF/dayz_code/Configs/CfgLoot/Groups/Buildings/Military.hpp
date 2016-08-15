@@ -39,15 +39,15 @@ Military[] =
 	
 	//Other
 	{Loot_MAGAZINE,		5,		FoodMRE},
-	{Loot_MAGAZINE,		4,		ItemSandbag},
+//	{Loot_MAGAZINE,		4,		ItemSandbag},
 	{Loot_PILE,			15,		AmmoMilitaryLow, 1, 3},
 	{Loot_GROUP,		4,		AmmoMilitaryHigh},
 	{Loot_GROUP,		4,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		AttachmentsEast},
 	{Loot_PILE,			10,		MedicalLow, 1, 2},
 	{Loot_PILE,			15,		Trash, 1, 2},
-	{Loot_PILE,			10,		Consumable, 1, 2},
-	{Loot_GROUP,		10,		Generic}
+	{Loot_PILE,			10,		Consumable, 1, 2}
+//	{Loot_GROUP,		10,		Generic}
 };
 
 MilitarySmall[] =
@@ -58,15 +58,15 @@ MilitarySmall[] =
 	{Loot_TOOL,			3,		ItemMap},
 	{Loot_TOOL,			3,		ItemKnife},
 	{Loot_GROUP,		2,		militaryclothes},
-	{Loot_GROUP,		1,		specialclothes},
+	{Loot_GROUP,		2,		specialclothes},
 	{Loot_GROUP,		15,		AmmoMilitaryLow},
 	{Loot_GROUP,		4,		AmmoMilitaryHigh},
 	{Loot_GROUP,		4,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		AttachmentsEast},
 	{Loot_GROUP,		10,		MedicalLow},
 	{Loot_GROUP,		15,		Trash},
-	{Loot_GROUP,		10,		Consumable},
-	{Loot_GROUP,		10,		GenericSmall}
+	{Loot_GROUP,		10,		Consumable}
+//	{Loot_GROUP,		10,		GenericSmall}
 };
 
 MilitarySpecial[] =
@@ -107,7 +107,7 @@ MilitarySpecial[] =
 
 	//Other
 	{Loot_MAGAZINE,		3,		FoodMRE},
-	{Loot_MAGAZINE,		2,		ItemSandbag},
+//	{Loot_MAGAZINE,		2,		ItemSandbag},
 	{Loot_MAGAZINE,		0.5,	PipeBomb},
 	{Loot_MAGAZINE,		0.5,	MAAWS_HEAT},
 	{Loot_MAGAZINE,		2,		100Rnd_762x54_PK},
@@ -118,8 +118,8 @@ MilitarySpecial[] =
 	{Loot_GROUP,		6,		AttachmentsWest},
 	{Loot_PILE,			10,		MedicalLow, 1, 2},
 	{Loot_PILE,			10,		Trash, 1, 2},
-	{Loot_PILE,			10,		Consumable, 1, 2},
-	{Loot_GROUP,		8,		Generic}
+	{Loot_PILE,			10,		Consumable, 1, 2}
+//	{Loot_GROUP,		8,		Generic}
 };
 
 MilitarySpecialSmall[] =
@@ -143,8 +143,8 @@ MilitarySpecialSmall[] =
 	{Loot_GROUP,		6,		AttachmentsWest},
 	{Loot_GROUP,		10,		MedicalLow},
 	{Loot_GROUP,		10,		Trash},
-	{Loot_GROUP,		10,		Consumable},
-	{Loot_GROUP,		8,		GenericSmall}
+	{Loot_GROUP,		10,		Consumable}
+//	{Loot_GROUP,		8,		GenericSmall}
 };
 
 MilitaryIndustrial[] = {//DZE ADDED
@@ -153,9 +153,15 @@ MilitaryIndustrial[] = {//DZE ADDED
 	{Loot_MAGAZINE,		3,		ItemFuelBarrelEmpty},
 	{Loot_MAGAZINE,		2,		ItemGenerator},
 	{Loot_MAGAZINE,		2,		fuel_pump_kit},
-	{Loot_GROUP, 		15, 	Military}
+	{Loot_MAGAZINE,		3,		ItemWire},
+	{Loot_MAGAZINE,		3,		ItemTankTrap},
+	{Loot_MAGAZINE,		6,		ItemSandbag},
+	{Loot_MAGAZINE,		1,		PartEngine},
+	{Loot_GROUP, 		15, 	Military},
+	{Loot_GROUP,		4,		Generic}
 };
 
 MilitaryIndustrialSmall[] = {
-	{Loot_GROUP, 		15, 	MilitarySmall}
+	{Loot_GROUP, 		15, 	MilitarySmall},
+	{Loot_GROUP,		8,		GenericSmall}
 };
