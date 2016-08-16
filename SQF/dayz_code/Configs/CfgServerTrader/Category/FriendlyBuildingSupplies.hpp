@@ -109,6 +109,11 @@ class Category_678 {
 		buy[] = {1,"ItemBriefcase100oz"};
 		sell[] = {1,"ItemBriefcase100oz"};
 	};
+	class ItemMixOil {
+		type = "trade_items";
+		buy[] = {8,"ItemSilverBar"};
+		sell[] = {4,"ItemSilverBar"};
+	};
 };
 
 class Category_680 {
