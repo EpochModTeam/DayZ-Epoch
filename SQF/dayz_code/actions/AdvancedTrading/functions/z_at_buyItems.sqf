@@ -251,7 +251,7 @@ if (_enoughMoney) then {
 	} else {
 		_success = [player,_priceToBuy] call SC_fnc_removeCoins;
 		if (_success) then {
-			systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_COINS", _priceToBuy, CurrencyName];
+			systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_COINS",[_priceToBuy] call BIS_fnc_numberText,CurrencyName];
 		} else {
 			systemChat localize "STR_EPOCH_TRADE_DEBUG";
 		};
@@ -259,7 +259,7 @@ if (_enoughMoney) then {
 	_itemsToLog call Z_logTrade;
 } else {
 	if (Z_SingleCurrency) then {
-		systemChat format[localize "STR_EPOCH_TRADE_NEED_COINS",_priceToBuy,CurrencyName];
+		systemChat format[localize "STR_EPOCH_TRADE_NEED_COINS",[_priceToBuy] call BIS_fnc_numberText,CurrencyName];
 	} else {
 		systemChat localize "STR_EPOCH_TRADE_NEED_MONEY";
 	};

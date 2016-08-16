@@ -627,6 +627,8 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\traps\init.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\psrnd.sqf"; // pseudo random for plantSpanwer
 
 // EPOCH ADDITIONS
+BIS_fnc_numberDigits = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_numberDigits.sqf";
+BIS_fnc_numberText = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_numberText.sqf";
 local_lockUnlock = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lockUnlock.sqf"; //When vehicle is local to unit perform locking vehicle
 local_gutObjectZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_gutObjectZ.sqf"; //Generated on the server (or local to unit) when gutting an object
 local_spawnObjects = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_spawnObjects.sqf";

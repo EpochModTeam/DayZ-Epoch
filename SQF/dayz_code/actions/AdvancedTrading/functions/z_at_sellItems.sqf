@@ -223,7 +223,7 @@ if (Z_SingleCurrency) then {
 if (typeName _money  == "SCALAR") then {
 	if (Z_SingleCurrency) then {
 		_success = [player,_money] call SC_fnc_addCoins;
-		systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_CHANGE", _money , CurrencyName];
+		systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_CHANGE",[_money] call BIS_fnc_numberText,CurrencyName];
 	} else {
 		_success = [_money,0,false,0,[],[]] call Z_returnChange;
 		_tCost = "";

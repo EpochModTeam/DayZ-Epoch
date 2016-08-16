@@ -115,7 +115,7 @@ if (Z_SellingFrom != 2) then { _extraText = getText (configFile >> 'CfgVehicles'
 if (isNil '_extraText') then { _extraText = _backUpText; };
 
 if (Z_SingleCurrency) then {
-	ctrlSetText [Z_AT_TRADERLINE2, format[localize "STR_EPOCH_TRADE_OFFER", _totalPrice,CurrencyName]];
+	ctrlSetText [Z_AT_TRADERLINE2, format[localize "STR_EPOCH_TRADE_OFFER",[_totalPrice] call BIS_fnc_numberText,CurrencyName]];
 } else {
 	ctrlSetText [Z_AT_TRADERLINE2, ''];
 };

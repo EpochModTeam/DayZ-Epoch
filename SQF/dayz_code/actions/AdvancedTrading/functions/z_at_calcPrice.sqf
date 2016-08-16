@@ -15,14 +15,14 @@ if (Z_SingleCurrency) then {
 		{
 			_sellPrice = _sellPrice +  (_x select 2);
 		} count Z_SellArray;
-		_ctrlText = format["%1 %2", _sellPrice , CurrencyName];
+		_ctrlText = format["%1 %2",[_sellPrice] call BIS_fnc_numberText,CurrencyName];
 		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_RIGHTLISTTITLE) ctrlSetText format ["%1 (%2 items)", localize "STR_EPOCH_TRADE_SELLING", count Z_SellArray];
 	} else {
 		{
 			_sellPrice = _sellPrice +  ((_x select 2) * (_x select 9));
 			_bTotal = _bTotal + (_x select 9);
 		} count Z_BuyingArray;
-		_ctrlText = format["%1 %2", _sellPrice , CurrencyName];
+		_ctrlText = format["%1 %2",[_sellPrice] call BIS_fnc_numberText,CurrencyName];
 		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_RIGHTLISTTITLE) ctrlSetText format ["%1 (%2 items)", localize "STR_EPOCH_TRADE_BUYING", _bTotal];
 	};
 	ctrlSetText [Z_AT_PRICEDISPLAY, _ctrlText];
