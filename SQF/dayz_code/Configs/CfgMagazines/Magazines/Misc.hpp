@@ -46,3 +46,61 @@ class 15Rnd_W1866_Slug : CA_Magazine
 		COMBINE_MAG
 	};
 };
+
+class 10Rnd_127x99_m107 : CA_Magazine
+{
+	displayName = $STR_DZ_MAG_10Rnd_127x99_m107_NAME;
+	
+	cartridgeName = "127x99";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+
+class 5Rnd_127x108_KSVK : CA_Magazine
+{
+	displayName = $STR_DZ_MAG_5Rnd_127x108_KSVK_NAME;
+	
+	cartridgeName = "127x108";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+
+class 5Rnd_86x70_L115A1: CA_Magazine
+{
+	displayName = $STR_DZ_MAG_5Rnd_86x70_L115A1_NAME;
+	
+	cartridgeName = "86x70";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+class 10Rnd_9x39_SP5_VSS: CA_Magazine
+{
+	displayName = $STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME;
+	
+	cartridgeName = "9x39";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+class 20Rnd_9x39_SP5_VSS: CA_Magazine
+{
+	displayName = $STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME;
+	
+	cartridgeName = "9x39";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
