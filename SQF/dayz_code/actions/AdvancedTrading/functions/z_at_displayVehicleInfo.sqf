@@ -125,7 +125,7 @@ if (Z_SingleCurrency) then {
 	"<t color='#33BFFF' size='0.7'>%17: </t><t color='#ffffff' size='0.7'>%18  </t><t color='#33BFFF' size='0.7'>%24: </t><t color='#ffffff' size='0.7'>%25</t><br />" + // Armor / Seats
 	"<t color='#33BFFF' size='0.7'>%21 %22: </t><t color='#ffffff' size='0.7'>%23  </t><t color='#33BFFF' size='0.7'>%19: </t><t color='#ffffff' size='0.7'>%20</t><br />" + // MaxSpeed / Fuel
 	"<t color='#33BFFF' size='0.7'>%26: </t><t color='#ffffff' size='0.7'>%27</t>" // Weapons
-	, _picture, _display, _class, _transportmaxBackpacks, _sellPrice, _buyPrice, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_CARGO_SPACE", "\z\addons\dayz_code\gui\gear\gear_ui_slots_weapons_white.paa", "\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
+	, _picture, _display, _class, _transportmaxBackpacks, [_sellPrice] call BIS_fnc_numberText, [_buyPrice] call BIS_fnc_numberText, CurrencyName, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_CARGO_SPACE", "\z\addons\dayz_code\gui\gear\gear_ui_slots_weapons_white.paa", "\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
 	localize "STR_EPOCH_ARMOR",_armor,localize "STR_EPOCH_FUEL",_fuelCapacity,localize "STR_EPOCH_MAX",localize "STR_EPOCH_SPEED",_maxSpeed,localize "STR_EPOCH_SEATS",_seats,localize "STR_EPOCH_WEAPONS",_wepText,"\z\addons\dayz_code\gui\gear\gear_ui_slots_backpacks_white.paa"
 	];
 } else {

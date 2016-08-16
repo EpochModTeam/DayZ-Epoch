@@ -93,7 +93,7 @@ switch _option do {
 			
 			systemChat format[localize "STR_EPOCH_ACTIONS_4", _count];
 			_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS", _count];
-			_message2 = format[localize "STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS", _amount, _itemText];
+			_message2 = format[localize "STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS", [_amount] call BIS_fnc_numberText, _itemText];
 			if (DZE_permanentPlot) then {
 				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
 				_ctrl ctrlSetText _message1;
@@ -105,7 +105,7 @@ switch _option do {
 			};
 		} else {
 			_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED", _count];
-			_message2 = format[localize "STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED", _amount, _itemText];
+			_message2 = format[localize "STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED", [_amount] call BIS_fnc_numberText, _itemText];
 			if (DZE_permanentPlot) then {
 				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
 				_ctrl ctrlSetText _message1;
@@ -119,7 +119,7 @@ switch _option do {
 	};
 	case "preview": {
 		_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS", _count];
-		_message2 = format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _amount, _itemText];
+		_message2 = format[localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", [_amount] call BIS_fnc_numberText, _itemText];
 		if (DZE_permanentPlot) then {
 			_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
 			_ctrl ctrlSetText _message1;
