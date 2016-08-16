@@ -9712,12 +9712,10 @@
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_LOCKBUILD">
 			<English>Lock Build</English>
-			<German>Lock Build</German>
 			<Russian>Заблокировать строительство</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCKBUILD">
 			<English>Unlock Build</English>
-			<German>Unlock Build</German>
 			<Russian>Разблокировать строительство</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCKGATE">
