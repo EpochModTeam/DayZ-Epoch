@@ -56,8 +56,18 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.7'>%8: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%9: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%6 %7</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />"
-		, _picture, _display, _class, 'lazy', [_sellPrice] call BIS_fnc_numberText, [_buyPrice] call BIS_fnc_numberText, CurrencyName, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291"
+		"<t color='#33BFFF' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />",
+		_picture,
+		_display,
+		_class,
+		'lazy',
+		[_sellPrice] call BIS_fnc_numberText,
+		[_buyPrice] call BIS_fnc_numberText,
+		CurrencyName,
+		localize "STR_EPOCH_NAME",
+		localize "STR_EPOCH_CLASS",
+		localize "STR_EPOCH_PLAYER_292",
+		localize "STR_EPOCH_PLAYER_291"
 	];
 } else {
 	_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
@@ -69,8 +79,21 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%6 <img image='%10' /> %9</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%5 <img image='%8' /> %7</t><br />" 
-		, _picture, _display, _class, 'lazy', _sellPrice, _buyPrice, _sellCurrency , _picSell , _buyCurrency, _picBuy, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291"
+		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%5 <img image='%8' /> %7</t><br />",
+		_picture,
+		_display,
+		_class,
+		'lazy',
+		_sellPrice,
+		_buyPrice,
+		_sellCurrency,
+		_picSell,
+		_buyCurrency,
+		_picBuy,
+		localize "STR_EPOCH_NAME",
+		localize "STR_EPOCH_CLASS",
+		localize "STR_EPOCH_PLAYER_292",
+		localize "STR_EPOCH_PLAYER_291"
 	];
 };
 

@@ -33,8 +33,6 @@ if (isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines'))
 };
 
 if (Z_SingleCurrency) then {
-	_buyCurrency = CurrencyName;
-	_sellCurrency = CurrencyName;
 	_formattedText = format [
 		"<img image='%1'  size='3'  align='center'/><br />" +
 		"<t color='#33BFFF' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
@@ -42,8 +40,22 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 %4</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%8</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%9</t><br />"
-		, _picture, _display, _class, _buyCurrency, [_sellPrice] call BIS_fnc_numberText, [_buyPrice] call BIS_fnc_numberText, _sellCurrency, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_MAGS"
+		"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%9</t><br />",
+		_picture,
+		_display,
+		_class,
+		CurrencyName,
+		[_sellPrice] call BIS_fnc_numberText,
+		[_buyPrice] call BIS_fnc_numberText,
+		CurrencyName,
+		_transportMaxWeapons,
+		_transportMaxMagazines,
+		localize "STR_EPOCH_NAME",
+		localize "STR_EPOCH_CLASS",
+		localize "STR_EPOCH_PLAYER_292",
+		localize "STR_EPOCH_PLAYER_291",
+		localize "STR_EPOCH_WEPS",
+		localize "STR_EPOCH_MAGS"
 	];
 } else {
 	_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
@@ -58,8 +70,24 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 <img image='%17' /> %4</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 <img image='%16' /> %7</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%8</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%9</t><br />"
-		, _picture, _display, _class, _buyCurrency , _sellPrice, _buyPrice, _sellCurrency, _transportMaxWeapons,_transportMaxMagazines, localize "STR_EPOCH_NAME", localize "STR_EPOCH_CLASS", localize "STR_EPOCH_PLAYER_292", localize "STR_EPOCH_PLAYER_291", localize "STR_EPOCH_WEPS", localize "STR_EPOCH_MAGS", _picSell, _picBuy
+		"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%9</t><br />",
+		_picture,
+		_display,
+		_class,
+		_buyCurrency,
+		_sellPrice,
+		_buyPrice,
+		_sellCurrency,
+		_transportMaxWeapons,
+		_transportMaxMagazines,
+		localize "STR_EPOCH_NAME",
+		localize "STR_EPOCH_CLASS",
+		localize "STR_EPOCH_PLAYER_292",
+		localize "STR_EPOCH_PLAYER_291",
+		localize "STR_EPOCH_WEPS",
+		localize "STR_EPOCH_MAGS",
+		_picSell,
+		_picBuy
 	];
 };
 
