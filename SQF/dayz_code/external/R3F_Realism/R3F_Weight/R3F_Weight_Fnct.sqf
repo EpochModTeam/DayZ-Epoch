@@ -31,6 +31,9 @@ R3F_WEIGHT_FNCT_MakeSingleArray = {
 R3F_WEIGHT_FNCT_GetItemWeight = {
 	private ["_arr_class", "_total_weight", "_weight"];
 	_arr_class = (_this select 0) + (_this select 1);
+	if (dayz_onBack != "" && count _this > 2) then {
+		_arr_class set [count _arr_class, dayz_onBack];
+	};
 	_total_weight = 0;
 	_weight = 0;
 	CfgWeight = configFile >> "CfgWeight";
@@ -70,7 +73,7 @@ R3F_WEIGHT_FNCT_GetWeight = {
 		_bagpack_ammo = [getMagazineCargo _bagpack]  call R3F_WEIGHT_FNCT_MakeSingleArray;
 		_return = [_bagpack_weapons, _bagpack_ammo] call R3F_WEIGHT_FNCT_GetItemWeight;
 	};
-	_return = _return + ([(weapons player), (magazines player)] call R3F_WEIGHT_FNCT_GetItemWeight);
+	_return = _return + ([(weapons player), (magazines player), 1] call R3F_WEIGHT_FNCT_GetItemWeight);
 	_english = localize "STR_R3F_WEIGHT_English" == "lb";
 	if(_english) then {
 		_return = _return /  0.45359 ;
