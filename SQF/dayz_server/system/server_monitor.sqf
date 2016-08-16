@@ -7,11 +7,13 @@ if (!isNil "sm_done") exitWith {}; // prevent server_monitor be called twice (bu
 sm_done = false;
 
 dayz_serverIDMonitor = [];
-DZE_VehObjects = [];
+_DZE_VehObjects = [];
 dayz_versionNo = getText (configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _hiveLoaded = false;
 _serverVehicleCounter = [];
+_tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
+_respawnPos = getMarkerpos "respawn_west";
 diag_log "HIVE: Starting";
 
 //Set the Time
@@ -36,19 +38,20 @@ if (_outcome == "PASS") then {
 //Stream in objects
 /* STREAM OBJECTS */
 //Send the key
+_timeStart = diag_tickTime;
 _key = format["CHILD:302:%1:",dayZ_instance];
 _result = _key call server_hiveReadWrite;
 
 diag_log "HIVE: Request sent";
 _myArray = [];
+_val = 0;
 _status = _result select 0; //Process result
-
 if (_status == "ObjectStreamStart") then {
 	_hiveLoaded = true;
 	_val = _result select 1;
 	//Stream Objects
 	diag_log ("HIVE: Commence Object Streaming...");
-	for "_i" from 1 to _val do {
+	for "_i" from 1 to _val do  {
 		_result = _key call server_hiveReadWriteLarge;
 		_status = _result select 0;
 		_myArray set [count _myArray,_result];
@@ -56,9 +59,8 @@ if (_status == "ObjectStreamStart") then {
 	diag_log ("HIVE: Streamed " + str(_val) + " objects");
 };
 
-_tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
-_respawnPos = getMarkerpos "respawn_west";
 {
+	private ["_object"];
 	//Parse Array
 	_action = 		_x select 0; 
 	_idKey = 		_x select 1;
@@ -84,7 +86,6 @@ _respawnPos = getMarkerpos "respawn_west";
 	_vecExists = false;
 	_ownerPUID = "0";
 
-	
 	if (_wsCount >= 1) then {
 		_dir = _worldspace select 0;
 		if (_wsCount >= 2) then {
@@ -137,8 +138,8 @@ _respawnPos = getMarkerpos "respawn_west";
 		diag_log format["MOVED OBJ: %1 of class %2 to pos: [0,0,0]",_idKey,_type];
 	};
 
-		//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
-		
+	//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
+	
 		if (_type in _tempMaint) then {
 			//Use hitpoints for Maintenance system and other systems later.
 			//Enable model swap for a damaged model.
@@ -149,18 +150,21 @@ _respawnPos = getMarkerpos "respawn_west";
 			//TODO add remove object and readd old fence (hideobject would be nice to use here :-( )
 			//Pending change to new fence models\Layout
 		};
-		_nonCollide = _type in DayZ_nonCollide;
-		
+		_nonCollide = _type in DayZ_nonCollide;	
 		//Create it
-		_object = createVehicle [_type, [0,0,0], [], 0, if (_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
+		if (_nonCollide) then {
+			_object = createVehicle [_type, [0,0,0], [], 0, "NONE"];
+		} else {
+			_object = _type createVehicle [0,0,0]; //slightly more than 2x faster than createvehicle array
+		};
 		_object setPosATL _pos;
 		_object setDir _dir;
 		_object setDamage _damage;
-		_object enableSimulation false;
 		if(_vecExists)then{
 			_object setVectorDirAndUp _vector;
 		}; 
-		
+		_object enableSimulation false;
+
 		_doorLocked = _type in DZE_DoorsLocked;
 		_isPlot = _type == "Plastic_Pole_EP1_DZ";
 		
@@ -193,25 +197,17 @@ _respawnPos = getMarkerpos "respawn_west";
 					_object setVariable ["MagazineCargo",(_inventory select 1),false];
 					_object setVariable ["BackpackCargo",(_inventory select 2),false];
 				} else {
-					_cargo = _inventory;
-					_config = ["CfgWeapons","CfgMagazines","CfgVehicles"];
-					{
-						_magItemTypes = _x select 0;
-						_magItemQtys = _x select 1;
-						_i = _forEachIndex;
-						{
-							if ((isClass (configFile >> (_config select _i) >> _x)) &&
-								{(getNumber (configFile >> (_config select _i) >> _x >> "stopThis") != 1)}) then {
-								if (_forEachIndex < count _magItemQtys) then {
-									switch (_i) do {
-										case 0: {_object addWeaponCargoGlobal [_x,(_magItemQtys select _forEachIndex)];};
-										case 1: {_object addMagazineCargoGlobal [_x,(_magItemQtys select _forEachIndex)];};
-										case 2: {_object addBackpackCargoGlobal [_x,(_magItemQtys select _forEachIndex)];};
-									};
-								};
-							};
-						} forEach _magItemTypes;
-					} forEach _cargo;
+					_weaponcargo = _inventory select 0 select 0;
+					_magcargo = _inventory select 1 select 0;
+					_backpackcargo = _inventory select 2 select 0;
+				   _weaponqty = _inventory select 0 select 1;
+					{_object addWeaponCargoGlobal [_x, _weaponqty select _foreachindex];} foreach _weaponcargo;
+
+					_magqty = _inventory select 1 select 1;
+					{_object addMagazineCargoGlobal [_x, _magqty select _foreachindex];} foreach _magcargo;
+
+					_backpackqty = _inventory select 2 select 1;
+					{_object addBackpackCargoGlobal [_x, _backpackqty select _foreachindex];} foreach _backpackcargo;
 				};
 			} else {
 				if (DZE_permanentPlot && _isPlot) then {
@@ -225,16 +221,19 @@ _respawnPos = getMarkerpos "respawn_west";
 		
 		if (_object isKindOf "AllVehicles") then {
 			_object setVariable ["CharacterID", _ownerID, true];
+			_isAir = _object isKindOf "Air";
 			{
 				_selection = _x select 0;
-				_dam = _x select 1;
-				if (!(_object isKindOf "Air") && {(_selection in dayZ_explosiveParts && (_dam > 0.8))}) then {_dam = 0.8};
-				[_object,_selection,_dam] call fnc_veh_setFixServer;
-			} forEach _hitpoints;
+				_dam = if ((_selection in dayZ_explosiveParts) && {!_isAir}) then {(_x select 1) min 0.8;} else {_x select 1;};
+				_strH = "hit_" + (_selection);
+				_object setHit[_selection,_dam];
+				_object setVariable [_strH,_dam,true];
+			} foreach _hitpoints;
+			[_object,"damage"] call server_updateObject;
 
 			_object setFuel _fuel;
 			if (!_isSafeObject) then {
-				DZE_VehObjects set [count DZE_VehObjects,_object]; 
+				_DZE_VehObjects set [count _DZE_VehObjects,_object]; 
 				_object call fnc_veh_ResetEH;
 				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
 				_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle
@@ -261,11 +260,6 @@ _respawnPos = getMarkerpos "respawn_west";
 				};
 			};
 			_object setVariable ["CharacterID", _ownerID, true];
-
-			if (_nonCollide) then {
-				_pos set [2,0];
-				_object setPosATL _pos;
-			};
 			if (_isDZ_Buildable || {(_isSafeObject && !_isTrapItem)}) then {
 				_object setVariable["memDir",_dir,true];
 				if (DZE_GodModeBase && {!(_type in DZE_GodModeBaseExclude)}) then {
@@ -275,7 +269,7 @@ _respawnPos = getMarkerpos "respawn_west";
 				};
 				_object setVariable ["OEMPos",_pos,true]; // used for inplace upgrades and lock/unlock of safe
 			};
-			if (_isTrapItem || _isDZ_Buildable) then {
+			if (_isDZ_Buildable || {_isTrapItem}) then {
 				//Use inventory for owner/clan info and traps armed state
 				{
 					_xTypeName = typeName _x ;
@@ -293,7 +287,7 @@ _respawnPos = getMarkerpos "respawn_west";
 						case "STRING": {_object setVariable ["ownerArray", [_x], true]; };
 						case "BOOLEAN": {_object setVariable ["armed", _x, true]};
 					};
-				} forEach _inventory;
+				} foreach _inventory;
 				
 				if (_maintenanceMode) then { _object setVariable ["Maintenance", true, true]; _object setVariable ["MaintenanceVars", _maintenanceModeVars]; };
 			} else {
@@ -303,12 +297,13 @@ _respawnPos = getMarkerpos "respawn_west";
 		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object]; //Monitor the object
 } forEach _myArray;
 
-[] spawn { //enable simulation on vehicles after all buildables are spawned
-	{
-		_x enableSimulation true;
-		_x setVelocity [0,0,1];
-	} count DZE_VehObjects;
-};
+//enable simulation on vehicles after all buildables are spawned
+{
+	_x enableSimulation true;
+	_x setVelocity [0,0,1];
+} forEach _DZE_VehObjects;
+
+diag_log ["HIVE: Streamed ", _val, "objects in ",(diag_tickTime - _timeStart)," seconds"];
 
 // # END OF STREAMING #
 
