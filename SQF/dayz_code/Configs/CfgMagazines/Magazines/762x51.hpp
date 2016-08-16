@@ -70,3 +70,27 @@ class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 {
 	count = 200;
 	descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 200 <br/>Used in: M240, Mk 48 Mod 0";
 };
+
+class 20Rnd_762x51_B_SCAR : CA_Magazine
+{
+	displayName = $STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME;
+	
+	cartridgeName = "762x51";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+
+class 20Rnd_762x51_SB_SCAR : CA_Magazine
+{
+	displayName = $STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME;
+	
+	cartridgeName = "762x51";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
