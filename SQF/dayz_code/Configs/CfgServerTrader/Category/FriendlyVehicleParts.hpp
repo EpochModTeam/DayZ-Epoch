@@ -49,11 +49,6 @@ class Category_677 {
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class ItemMixOil {
-		type = "trade_items";
-		buy[] = {8,"ItemSilverBar"};
-		sell[] = {4,"ItemSilverBar"};
-	};
 };
 
 class Category_682 {
