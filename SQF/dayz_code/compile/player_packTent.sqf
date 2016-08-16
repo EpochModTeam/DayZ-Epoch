@@ -10,20 +10,19 @@ _objectUID = _obj getVariable["ObjectUID","0"];
 if (DZE_permanentPlot) then {
 	_ownerID = _obj getVariable["ownerPUID","0"];
 };
-_pickup = false;
+
 _packobj = getText (configFile >> "CfgVehicles" >> typeOf _obj >> "pack");
 _activatingPlayer = player;
 
-player playActionNow "Medic";
 player removeAction s_player_packtent;
 s_player_packtent = -1;
 player removeAction s_player_packtentinfected;
 s_player_packtentinfected = -1;
 
 _campItems = ["IC_DomeTent","IC_Tent"];
-if (_ownerID == dayz_characterID or (typeOf _obj in _campItems)) then { _pickup = true; };
 
-if (_pickup) then {
+if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) then {
+	player playActionNow "Medic";
 	_alreadyPacking = _obj getVariable["packing",0];
 	if (_alreadyPacking == 1) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages; DZE_ActionInProgress = false;};
 
