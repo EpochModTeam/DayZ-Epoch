@@ -42,7 +42,7 @@ class PlotManagement
 			x = 0.41 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "[""preview""] call MaintainPlot;";
+			onButtonClick = "'preview' call MaintainPlot;";
 		};
 		
 				class RscShortcutButton_7011: ZSC_RscButtonMenuBlue
@@ -52,7 +52,7 @@ class PlotManagement
 			x = 0.51 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "[""maintain""] call MaintainPlot;";
+			onButtonClick = "'maintain' call MaintainPlot;";
 		};
 		class RscText_7012: ZSC_RscTextT
 		{

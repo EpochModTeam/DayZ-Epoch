@@ -1,4 +1,4 @@
-﻿/****************************************************************************
+/****************************************************************************
 Copyright (C) 2010 Team ~R3F~
 This program is free software under the terms of the GNU General Public License version 3.
 You should have received a copy of the GNU General Public License
@@ -76,6 +76,30 @@ class ItemKnife
 {
 	weight = 0.1;
 };
+class ItemKnife5 
+{
+	weight = 0.1;
+};
+class ItemKnife4 
+{
+	weight = 0.1;
+};
+class ItemKnife3 
+{
+	weight = 0.1;
+};
+class ItemKnife2
+{
+	weight = 0.1;
+};
+class ItemKnife1
+{
+	weight = 0.1;
+};
+class ItemKnifeBlunt
+{
+	weight = 0.1;
+};
 class MeleeCrowbar  
 {
 	weight = 1;
@@ -126,7 +150,31 @@ class ItemSledge
 };
 class ItemMatchbox  
 {
+	weight = 0.007;
+};
+class Item5Matchbox  
+{
+	weight = 0.006;
+};
+class Item4Matchbox  
+{
 	weight = 0.005;
+};
+class Item3Matchbox  
+{
+	weight = 0.004;
+};
+class Item2Matchbox  
+{
+	weight = 0.003;
+};
+class Item1Matchbox  
+{
+	weight = 0.002;
+};
+class ItemMatchboxEmpty  
+{
+	weight = 0.001;
 };
 class ItemToolbox   
 {
@@ -153,6 +201,10 @@ class ItemShovel
 	weight = 1;
 };
 class ItemShovelBroken  
+{
+	weight = 1;
+};
+class ItemFishingPole  
 {
 	weight = 1;
 };

@@ -41,13 +41,13 @@ class G36C_DZ : G36C
 	model = "z\addons\dayz_communityweapons\g36c\g36c.p3d";
 	picture = "\z\addons\dayz_communityweapons\g36c\data\w_g36c_ca.paa";
 	displayName = $STR_DZ_WPN_G36C_NAME;
-	
+	/*
 	magazines[] =
 	{
 		30Rnd_556x45_G36,
 		30Rnd_556x45_G36SD
 	};
-	
+	*/
 	class Attachments
 	{
 		Attachment_CCO = "G36C_CCO_DZ";
@@ -61,13 +61,13 @@ class G36C_SD_DZ : G36_C_SD_eotech
 	model = "z\addons\dayz_communityweapons\g36c\g36c_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\g36c\data\w_g36c_sd_ca.paa";
 	displayName = $STR_DZ_WPN_G36C_SD_NAME;
-	
+	/*
 	magazines[] =
 	{
 		30Rnd_556x45_G36SD,
 		30Rnd_556x45_G36
 	};
-	
+	*/
 	class Attachments
 	{
 		Attachment_CCO = "G36C_CCO_SD_DZ";

@@ -29,7 +29,7 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 			// damage must be going down
 			_damage = damage _tree;
 			if (DZE_TEMP_treedmg < _damage) then {
-				if (_damage < 0.99 && {(random 1) > 0.7}) then {
+				if (_damage < 0.99 && {(random 1) > 0.9}) then {
 					PVDZ_objgather_Knockdown = [_tree,player]; // Ask server to setDamage on tree
 					publicVariableServer "PVDZ_objgather_Knockdown";
 				};

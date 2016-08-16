@@ -55,7 +55,7 @@ if(_IsNearPlot == 0) then {
 };
 
 if(!_canBuild) exitWith {  DZE_ActionInProgress = false; format[localize "STR_EPOCH_PLAYER_135",_needText,_distance] call dayz_rollingMessages; [_canBuild, _isPole];};
-
+// Also count safes, lockboxes, vanilla buildables, tents and stashes against DZE_BuildingLimit
 _buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables","DZ_storage_base"];
 _center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
 if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_41",_distance] call dayz_rollingMessages; [false, _isPole];};
