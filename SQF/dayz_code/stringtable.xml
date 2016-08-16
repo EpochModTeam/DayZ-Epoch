@@ -10603,6 +10603,14 @@
 			<English>20Rnd. DMR mag.</English>
 			<Russian>20п. DMR маг.</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME">
+			<English>20Rnd. SCAR mag.</English>
+			<Russian>20п. SCAR маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME">
+			<English>20Rnd. SCAR SD mag.</English>
+			<Russian>20п. SCAR SD маг.</Russian>
+		</Key>
 		<Key ID="STR_DZ_MAG_5RND_762X51_M24_NAME">
 			<English>5Rnd. M24/M40 mag.</English>
 			<Russian>5п. M24/M40 маг.</Russian>
@@ -10618,6 +10626,26 @@
 		<Key ID="STR_DZ_MAG_10RND_762x54_SVD_NAME">
 			<English>10Rnd. SVD mag.</English>
 			<Russian>10п. СВД маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10Rnd_127x99_m107_NAME">
+			<English>10Rnd. M107 mag.</English>
+			<Russian>10п. M107 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_5Rnd_127x108_KSVK_NAME">
+			<English>5Rnd. KSVK mag.</English>
+			<Russian>5п. KSVK маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_5Rnd_86x70_L115A1_NAME">
+			<English>5Rnd. L115 mag.</English>
+			<Russian>5п. L115 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME">
+			<English>20Rnd. VSS mag.</English>
+			<Russian>20п. VSS маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME">
+			<English>10Rnd. VSS mag.</English>
+			<Russian>10п. VSS маг.</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_NAME">
