@@ -55,7 +55,7 @@ sniperrifles[] = {
 	{Loot_WEAPON,		0.5,	VSS_vintorez},
 	{Loot_WEAPON,		0.6,	SCAR_H_LNG_Sniper_SD},
 	{Loot_WEAPON,		1,		M14_DZ}, //M14_EP1
-	{Loot_WEAPON,		1,		DMR_DZ}, //DMR
+	{Loot_WEAPON,		0.7,		DMR_DZ}, //DMR
 	//Epoch 1.0.6
 	{Loot_WEAPON,		0.8,	SCAR_H_LNG_Sniper}, //Mk17 Sniper
 	{Loot_WEAPON,		0.6,	M110_NVG_EP1} //M110 NVG
