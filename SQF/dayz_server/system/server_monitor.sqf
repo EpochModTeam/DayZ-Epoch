@@ -1,5 +1,5 @@
 private ["_date","_year","_month","_day","_hour","_minute","_date1","_hiveResponse","_key","_objectCount","_dir","_point","_i","_action","_dam","_selection","_wantExplosiveParts","_entity","_worldspace","_damage","_booleans","_rawData","_ObjectID","_class","_CharacterID","_inventory","_hitpoints","_fuel","_id","_objectArray","_script","_result","_outcome"];
-[]execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
+[] execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 waitUntil {!isNil "BIS_MPF_InitDone" && initialized};
@@ -155,14 +155,14 @@ if (_status == "ObjectStreamStart") then {
 		if (_nonCollide) then {
 			_object = createVehicle [_type, [0,0,0], [], 0, "NONE"];
 		} else {
-			_object = _type createVehicle [0,0,0]; //slightly more than 2x faster than createvehicle array
+			_object = _type createVehicle [0,0,0]; //more than 2x faster than createvehicle array
 		};
-		_object setPosATL _pos;
 		_object setDir _dir;
+		_object setPosATL _pos;
 		_object setDamage _damage;
-		if(_vecExists)then{
+		if (_vecExists) then {
 			_object setVectorDirAndUp _vector;
-		}; 
+		};
 		_object enableSimulation false;
 
 		_doorLocked = _type in DZE_DoorsLocked;
@@ -190,7 +190,7 @@ if (_status == "ObjectStreamStart") then {
 			clearWeaponCargoGlobal _object;
 			clearMagazineCargoGlobal _object;
 			clearBackpackCargoGlobal _object;
-			if( (count _inventory > 0) && !_isPlot && !_doorLocked ) then {
+			if( (count _inventory > 0) && !_isPlot && !_doorLocked) then {
 				if (_type in DZE_LockedStorage) then {
 					// Do not send big arrays over network! Only server needs these
 					_object setVariable ["WeaponCargo",(_inventory select 0),false];
@@ -224,7 +224,7 @@ if (_status == "ObjectStreamStart") then {
 			_isAir = _object isKindOf "Air";
 			{
 				_selection = _x select 0;
-				_dam = if ((_selection in dayZ_explosiveParts) && {!_isAir}) then {(_x select 1) min 0.8;} else {_x select 1;};
+				_dam = if (!_isAir && {_selection in dayZ_explosiveParts}) then {(_x select 1) min 0.8;} else {_x select 1;};
 				_strH = "hit_" + (_selection);
 				_object setHit[_selection,_dam];
 				_object setVariable [_strH,_dam,true];
@@ -237,8 +237,6 @@ if (_status == "ObjectStreamStart") then {
 				_object call fnc_veh_ResetEH;
 				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
 				_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle
-			} else {
-				_object enableSimulation true;
 			};
 		} else {
 			// Fix for leading zero issues on safe codes after restart
@@ -268,11 +266,13 @@ if (_status == "ObjectStreamStart") then {
 					_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 				};
 				_object setVariable ["OEMPos",_pos,true]; // used for inplace upgrades and lock/unlock of safe
+			} else {
+				_object enableSimulation true;
 			};
 			if (_isDZ_Buildable || {_isTrapItem}) then {
 				//Use inventory for owner/clan info and traps armed state
 				{
-					_xTypeName = typeName _x ;
+					_xTypeName = typeName _x;
 					switch (_xTypeName) do {
 						case "ARRAY": {
 							_x1 = _x select 1;
@@ -290,8 +290,6 @@ if (_status == "ObjectStreamStart") then {
 				} foreach _inventory;
 				
 				if (_maintenanceMode) then { _object setVariable ["Maintenance", true, true]; _object setVariable ["MaintenanceVars", _maintenanceModeVars]; };
-			} else {
-				_object enableSimulation true;
 			};
 		};
 		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object]; //Monitor the object
