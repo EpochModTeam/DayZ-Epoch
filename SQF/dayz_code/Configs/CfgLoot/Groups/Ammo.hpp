@@ -94,7 +94,7 @@ AmmoMilitaryLow[] =
 	{Loot_MAGAZINE,		3,		20Rnd_762x51_B_SCAR},
 	{Loot_MAGAZINE,		4,		20Rnd_B_AA12_Pellets},
 	{Loot_MAGAZINE,		4,		20Rnd_B_AA12_74Slug},
-	{Loot_MAGAZINE,		3,		20Rnd_B_AA12_HE},
+//	{Loot_MAGAZINE,		3,		20Rnd_B_AA12_HE},
 	
 	//Handgrenades
 	{Loot_MAGAZINE,		5,		SmokeShell},
@@ -114,7 +114,7 @@ AmmoMilitaryHigh[] =
 	{Loot_MAGAZINE,		5,		20Rnd_762x51_B_SCAR},
 	{Loot_MAGAZINE,		5,		20Rnd_B_AA12_Pellets},
 	{Loot_MAGAZINE,		5,		20Rnd_B_AA12_74Slug},
-	{Loot_MAGAZINE,		5,		20Rnd_B_AA12_HE},
+//	{Loot_MAGAZINE,		5,		20Rnd_B_AA12_HE},
 	
 	//Battle rifles
 	{Loot_MAGAZINE,		5,		20Rnd_762x51_DMR},
