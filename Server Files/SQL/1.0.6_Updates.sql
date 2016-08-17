@@ -60,6 +60,12 @@ DELETE FROM `Traders_DATA` WHERE item = '["CH53_DZE",1]';
 DELETE FROM `Traders_DATA` WHERE item = '["BAF_Merlin_DZE",1]';
 
 -- ----------------------------
+-- Swap ArmoredSUV to upgraded version since transportMaxMagazines was decreased on default version (400 --> 150). Upgraded has 400.
+-- ----------------------------
+UPDATE `object_data` SET `Classname` = 'ArmoredSUV_PMC_DZE3' WHERE `Classname` = 'ArmoredSUV_PMC_DZ';
+UPDATE `object_data` SET `Classname` = 'ArmoredSUV_PMC_DZE3' WHERE `Classname` = 'ArmoredSUV_PMC_DZE';
+
+-- ----------------------------
 -- Swap datsun and hilux to upgradeable _DZE versions
 -- ----------------------------
 UPDATE `object_data` SET `Classname` = 'hilux1_civil_1_open_DZE' WHERE `Classname` = 'hilux1_civil_1_open';

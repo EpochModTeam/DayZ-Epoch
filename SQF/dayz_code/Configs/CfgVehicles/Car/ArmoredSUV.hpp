@@ -265,7 +265,7 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 	typicalCargo[] = {};
 	enableGPS = 1;  
 	transportMaxWeapons = 20; 
-	transportMaxMagazines = 400; 
+	transportMaxMagazines = 150; 
 	transportmaxbackpacks = 10;
 	class Turrets: Turrets
 	{
@@ -333,7 +333,7 @@ class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
 	typicalCargo[] = {};
 	enableGPS = 1;  
 	transportMaxWeapons = 20; 
-	transportMaxMagazines = 400; 
+	transportMaxMagazines = 150; 
 	transportmaxbackpacks = 10;
 	class Turrets: Turrets
 	{
@@ -469,7 +469,7 @@ class ArmoredSUV_PMC_DZE2: ArmoredSUV_PMC_DZE1
 class ArmoredSUV_PMC_DZE3: ArmoredSUV_PMC_DZE2
 {
 	transportMaxWeapons = 40; 
-	transportMaxMagazines = 800; 
+	transportMaxMagazines = 400; 
 	transportmaxbackpacks = 15;
 	class Upgrades
 	{
