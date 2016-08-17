@@ -1,4 +1,9 @@
 class Category_486 {
+	class BAF_L86A2_ACOG {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
+	};
 	class L110A1_DZ {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
