@@ -23,7 +23,7 @@ Residential[] =
 	{Loot_GROUP,		4,		backpacks},
 	
 	//Other
-	{Loot_MAGAZINE,		0.5,	ItemPadlock},
+	{Loot_MAGAZINE,		0.5,	ItemComboLock},
 	{Loot_MAGAZINE,		1,		PartPlywoodPack},
 	
 	{Loot_PILE,			6,		AmmoCivilian, 1, 2},
@@ -45,7 +45,7 @@ ResidentialSmall[] =
 	{Loot_WEAPON,		5,		ItemCompass},
 	{Loot_WEAPON,		5,		ItemKnife},
 	{Loot_WEAPON,		1,		Binocular},
-	{Loot_MAGAZINE,		0.5,	ItemPadlock},
+	{Loot_MAGAZINE,		0.5,	ItemComboLock},
 	{Loot_GROUP,		6,		AmmoCivilian},
 	{Loot_GROUP,		10,		Trash},
 	{Loot_GROUP,		10,		Consumable},

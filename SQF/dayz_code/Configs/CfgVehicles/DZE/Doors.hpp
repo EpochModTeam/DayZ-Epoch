@@ -783,3 +783,20 @@ class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
+
+/*
+	Vanilla DayZ buildables are defined in \dayz_buildings\configs\
+	Only included here to overwrite vanilla ItemPadlock with Epoch ItemComboLock
+*/
+class WoodenGate_Base;
+class WoodenGate_1: WoodenGate_Base
+{
+	class Upgrade { //to next stage
+		requiredTools[] = {"ItemEtool","ItemToolbox"}; 
+		requiredParts[] = {"ItemLog","ItemComboLock"};
+		create = "WoodenGate_2";
+	};
+	class Disassembly {
+		requiredTools[] = {"ItemToolbox"};
+	};
+};
