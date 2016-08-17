@@ -1,4 +1,4 @@
-class ItemPadlock: CA_Magazine
+class ItemPadlock: CA_Magazine //Vanilla lock, left in config for potential admin use, but all scripts changed to use Epoch ItemComboLock
 {
 	scope = public;
 	count = 1;

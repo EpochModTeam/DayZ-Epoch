@@ -17,7 +17,7 @@ class CfgPatches
 			
 			//dayz addons
 			"dayz",
-			"dayz_buildings",
+			"dayz_buildings", // Overwrite classes that use vanilla ItemPadlock with Epoch ItemComboLock
 			"dayz_communityassets",
 			"dayz_communityweapons",
 			"dayz_equip",

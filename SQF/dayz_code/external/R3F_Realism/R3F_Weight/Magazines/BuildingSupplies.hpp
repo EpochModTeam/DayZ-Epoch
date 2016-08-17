@@ -63,6 +63,10 @@ class ItemScrews
 {
 	weight = 0.005;
 };
+class ItemComboLock 
+{
+	weight = 0.03;
+};
 class ItemPadlock 
 {
 	weight = 0.03;
