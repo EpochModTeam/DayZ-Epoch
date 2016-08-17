@@ -19,11 +19,6 @@ class Category_527 {
 		buy[] = {8,"ItemSilverBar"};
 		sell[] = {5,"ItemSilverBar"};
 	};
-	class 20Rnd_B_AA12_HE {
-		type = "trade_items";
-		buy[] = {2,"ItemGoldBar"};
-		sell[] = {1,"ItemGoldBar"};
-	};
 	class 30Rnd_556x45_Stanag {
 		type = "trade_items";
 		buy[] = {5,"ItemSilverBar"};
