@@ -87,7 +87,7 @@ class 20Rnd_762x51_SB_SCAR : CA_Magazine
 {
 	displayName = $STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME;
 	
-	cartridgeName = "762x51";
+	cartridgeName = "762x51_SD";
 	
 	class ItemActions
 	{
