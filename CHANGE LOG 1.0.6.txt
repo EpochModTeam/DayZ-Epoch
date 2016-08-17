@@ -72,7 +72,6 @@
 [FIXED] Fire cleanup diag_log error in server_functions.sqf #1421 @ebaydayz
 [FIXED] NearestObjects position error in server_playerSync.sqf #1425 @ebaydayz
 [FIXED] Corrected ClassName type for CH53_DZE and BAF_Merlin_DZE. @Cinjun
-[FIXED] Some counts reverted to forEach. Count loops can not be nested inside other count loops #1491-#1495 @ebaydayz
 [FIXED] Dynamic_vehicle spawning non-upgradable classes of hilux1 & datsun1.  @Uro1
 [FIXED] Eating while inside a vehicle did not drop empty can  @deadeye2
 [FIXED] Zombie loot error when using loot tables in mission file  @deadeye2

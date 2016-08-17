@@ -14,6 +14,8 @@
 #define FIND_MELEE() (1 call dz_fn_switchWeapon_find)
 
 dz_switchWeapon_mutex = Mutex_New();
+dz_switchWeapon_time = 0;
+dz_switchWeapon_pistolTime = 0;
 
 //0: switch rifle/melee instantly and update gear
 //1: switch rifle/melee with animation
