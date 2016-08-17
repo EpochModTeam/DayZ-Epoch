@@ -49,6 +49,41 @@ class Category_485 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};
 	};
+	class SCAR_L_CQC {
+		type = "trade_weapons";
+		buy[] = {7,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
+	class SCAR_L_CQC_CCO_SD {
+		type = "trade_weapons";
+		buy[] = {2,"ItemGoldBar10oz"};
+		sell[] = {8,"ItemGoldBar"};
+	};
+	class SCAR_L_CQC_Holo {
+		type = "trade_weapons";
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
+	};
+	class SCAR_L_CQC_EGLM_Holo {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
+	};
+	class SCAR_L_STD_EGLM_RCO {
+		type = "trade_weapons";
+		buy[] = {2,"ItemGoldBar10oz"};
+		sell[] = {7,"ItemGoldBar"};
+	};
+	class SCAR_L_STD_HOLO {
+		type = "trade_weapons";
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
+	};
+	class SCAR_L_STD_Mk4CQT {
+		type = "trade_weapons";
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
+	};
 	class L85_Holo_DZ {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};
@@ -58,6 +93,11 @@ class Category_485 {
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};
 		sell[] = {3,"ItemGoldBar"};
+	};
+	class BAF_L85A2_RIS_ACOG {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
 	};
 	class SA58_DZ {
 		type = "trade_weapons";
