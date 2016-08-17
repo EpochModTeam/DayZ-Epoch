@@ -1,4 +1,4 @@
-﻿/****************************************************************************
+/****************************************************************************
 Copyright (C) 2010 Team ~R3F~
 This program is free software under the terms of the GNU General Public License version 3.
 You should have received a copy of the GNU General Public License
@@ -156,6 +156,30 @@ class BAF_L85A2_RIS_Holo
 	weight = 5.2;
 };
 class L85_Holo_DZ
+{
+	weight = 5.2;
+};
+class BAF_L85A2_UGL_Holo
+{
+	weight = 6.2;
+};
+class BAF_L85A2_RIS_SUSAT
+{
+	weight = 5.5;
+};
+class BAF_L85A2_UGL_SUSAT
+{
+	weight = 6.2;
+};
+class BAF_L85A2_RIS_ACOG
+{
+	weight = 5.5;
+};
+class BAF_L85A2_UGL_ACOG
+{
+	weight = 7.1;
+};
+class BAF_L85A2_RIS_CWS
 {
 	weight = 5.2;
 };
