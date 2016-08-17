@@ -237,6 +237,8 @@ if (_status == "ObjectStreamStart") then {
 				_object call fnc_veh_ResetEH;
 				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
 				_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle
+			} else {
+				_object enableSimulation true;
 			};
 		} else {
 			// Fix for leading zero issues on safe codes after restart
