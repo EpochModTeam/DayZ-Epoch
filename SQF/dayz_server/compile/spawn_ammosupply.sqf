@@ -15,7 +15,8 @@ if ((count _position) == 2) then {
 	_istoomany = _position nearObjects ["All",5];
 	if ((count _istoomany) > 0) exitWith {};
 	
-	_veh = createVehicle ["Supply_Crate_DZE",_position, [], 0, "CAN_COLLIDE"];
+	//_veh = createVehicle ["Supply_Crate_DZE",_position, [], 0, "CAN_COLLIDE"];
+	_veh = "Supply_Crate_DZE" createVehicle [0,0,0];
 	_veh enableSimulation false;
 	_veh setDir round(random 360);
 	_veh setPos _position;

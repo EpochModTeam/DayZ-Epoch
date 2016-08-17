@@ -70,13 +70,15 @@ _spawnCrashSite =
 	
 	diag_log format ["CRASHSPAWNER: Spawning crash site (%1) at %2 with %3 items.", _class, _position, _lootNum];
 	
-	_vehicle = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"];
-	_vehicle = createVehicle [_class, _position, [], 0, "CAN_COLLIDE"];
+	//_vehicle = createVehicle ["ClutterCutter_small_2_EP1", _position, [], 0, "CAN_COLLIDE"];
+	//_vehicle = createVehicle [_class, _position, [], 0, "CAN_COLLIDE"];
+	_vehicle = "ClutterCutter_small_2_EP1" createVehicle _position;
+	_vehicle = _class createVehicle [0,0,0];
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor, _vehicle];
 	_vehicle setVariable ["ObjectID", 1, true];
 	_vehicle setDir random 360;
 	_vehicle setPos _position;
-	
+
 	_lootParams = getArray (configFile >> "CfgVehicles" >> _class >> "lootParams");
 	
 	{
@@ -101,12 +103,14 @@ _spawnCrashSite =
 			
 			case 2: //Clutter cutter
 			{
-				createVehicle ["ClutterCutter_small_2_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
+				//createVehicle ["ClutterCutter_small_2_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
+				"ClutterCutter_small_2_EP1" createVehicle _lootPos;
 			};
 			
 			case 3: //Debug sphere
 			{
-				createVehicle ["Sign_sphere100cm_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
+				//createVehicle ["Sign_sphere100cm_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
+				"Sign_sphere100cm_EP1" createVehicle _lootPos;
 			};
 		};
 	}

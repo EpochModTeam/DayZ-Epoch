@@ -75,7 +75,8 @@ _key call server_hiveWrite;
 	// Remove marker
 	deleteVehicle _object;
 
-	_newobject = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
+	//_newobject = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
+	_newobject = _class createVehicle [0,0,0];
 
 	// remove old vehicle from DB
 	[_objectID,_objectUID,_activatingPlayer] call server_deleteObj;

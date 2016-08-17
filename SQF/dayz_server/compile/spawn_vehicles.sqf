@@ -61,7 +61,9 @@ if (count AllowedVehiclesList == 0) then {
 		_istoomany = _position nearObjects ["AllVehicles",50];
 		if ((count _istoomany) > 0) exitWith {};
 	
-		_veh = createVehicle [_vehicle, _position, [], 0, "CAN_COLLIDE"];
+		//_veh = createVehicle [_vehicle, _position, [], 0, "CAN_COLLIDE"];
+		//_veh setPos _position;
+		_veh = _vehicle createVehicle [0,0,0];
 		_veh setDir _dir;
 		_veh setPos _position;
 		_objPosition = getPosATL _veh;

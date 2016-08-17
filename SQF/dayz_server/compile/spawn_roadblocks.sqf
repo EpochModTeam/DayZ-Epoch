@@ -10,7 +10,8 @@ if ((count _position) == 2) then {
 	if ((count _istoomany) > 0) exitWith {};
 	
 	_spawnveh = DZE_isWreck call BIS_fnc_selectRandom;
-	_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+	//_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+	_veh = _spawnveh createVehicle [0,0,0];
 	_veh enableSimulation false;
 	_veh setDir round(random 360);
 	_veh setPos _position;

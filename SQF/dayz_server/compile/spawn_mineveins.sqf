@@ -10,7 +10,8 @@ if ((count _position) == 2) then {
 	
 	_spawnveh = ["Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Silver_Vein_DZE","Silver_Vein_DZE","Silver_Vein_DZE","Gold_Vein_DZE","Gold_Vein_DZE"] call BIS_fnc_selectRandom;	
 	//diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
-	_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+	//_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+	_veh = _spawnveh createVehicle [0,0,0];
 	_veh enableSimulation false;
 	_veh setDir round(random 360);
 	_veh setPos _position;

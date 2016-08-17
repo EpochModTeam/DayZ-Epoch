@@ -5,7 +5,8 @@ private ["_blocked","_flame","_position"];
 	_position = _x;
 	{if (_position distance _x < 150) exitWith {_blocked = true;};} forEach dayz_townGeneratorBlackList;
 	if (!_blocked && (random 1 < 0.33)) then {
-		_flame = createVehicle [ "flamable_DZ", _x, [], 0, "CAN_COLLIDE"]; 
+		//_flame = createVehicle [ "flamable_DZ", _x, [], 0, "CAN_COLLIDE"]; 
+		_flame = "flamable_DZ" createVehicle _x;
 		_flame inflame true;  
 		_flame setVariable ["permaLoot",true]; // = won't be removed by the cleaner, cf. sched_lootpiles.sqf
 	};

@@ -41,7 +41,8 @@ switch (_status) do {
 		_backpacks = _obj getVariable ["BackpackCargo",[]];
 		
 		// Create new unlocked safe, then delete old locked safe
-		_holder = createVehicle [_unlockedClass,_pos,[],0,"CAN_COLLIDE"];
+		//_holder = createVehicle [_unlockedClass,_pos,[],0,"CAN_COLLIDE"];
+		_holder = _unlockedClass createVehicle [0,0,0];
 		_holder setDir _dir;
 		_holder setVariable ["memDir",_dir,true];
 		_holder setVectorDirAndUp _vector;
@@ -65,7 +66,8 @@ switch (_status) do {
 		_backpacks = getBackpackCargo _obj;
 		
 		// Create new locked safe, then delete old unlocked safe
-		_holder = createVehicle [_lockedClass,_pos,[],0,"CAN_COLLIDE"];
+		//_holder = createVehicle [_lockedClass,_pos,[],0,"CAN_COLLIDE"];
+		_holder = _lockedClass createVehicle [0,0,0];
 		_holder setDir _dir;
 		_holder setVariable ["memDir",_dir,true];
 		_holder setVectorDirAndUp _vector;
@@ -89,7 +91,8 @@ switch (_status) do {
 		_magazines = getMagazineCargo _obj;
 		_backpacks = getBackpackCargo _obj;
 		
-		_holder = createVehicle [_packedClass,_pos,[],0,"CAN_COLLIDE"];
+		//_holder = createVehicle [_packedClass,_pos,[],0,"CAN_COLLIDE"];
+		_holder = _packedClass createVehicle [0,0,0];
 		deleteVehicle _obj;
 		_holder setDir _dir;
 		_holder setPosATL _pos;

@@ -79,7 +79,7 @@ _nbpatchs = 0;
 			_pos = +(_x);
 			_pos resize 3;
 			_pos = _house modelToWorld _pos;
-			_o = createVehicle [(_x select 3), _pos, [], 0, "CAN_COLLIDE"];
+			_o = (_x select 3) createVehicle [0,0,0];
 			_o setDir ((getDir _house)+(_x select 4));
 			_o setPosATL _pos;
 			diag_log [ typeOf _o, getPosATL _o, getDir _o, 0, nil];
