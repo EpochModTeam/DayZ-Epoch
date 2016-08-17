@@ -79,3 +79,15 @@ class 15Rnd_W1866_Slug
 {
 	weight = 0.5;
 };
+class 20Rnd_B_AA12_Pellets
+{
+	weight = 1.2;
+};
+class 20Rnd_B_AA12_74Slug
+{
+	weight = 1.2;
+};
+class 20Rnd_B_AA12_HE
+{
+	weight = 1.5;
+};
