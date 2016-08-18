@@ -13011,7 +13011,6 @@
 			<English>Kill Board</English>
 			<German>Gedenktafel</German>
 			<Russian>Таблица убийств</Russian>
-			
 			<Dutch>Herdenkingsbord</Dutch>
 			<French>Rubrique Nécrologique</French>
 			<Czech>Nástěnka zabitých</Czech>
@@ -13020,7 +13019,6 @@
 			<English>Murder</English>
 			<German>Mord</German>
 			<Russian>Убийства</Russian>
-			
 			<Dutch>Moord</Dutch>
 			<French>Meurtres</French>
 			<Czech>Vražda</Czech>
@@ -13069,7 +13067,6 @@
 			<English>%1 is already in your inventory. Adding to backpack!</English>
 			<German>%1 ist bereits in Ihrem Inventar. Hinzufügen zu Rucksack!</German>
 			<Russian>%1 уже в вашем инвентаре. Перемещено в рюкзак!</Russian>
-			
 			<Dutch>%1 is al in je inventaris. Toevoegen aan rugzak!</Dutch>
 			<French>%1 est déjà dans votre inventaire. Ajout d'un sac à dos!</French>
 			<Czech>%1 je již ve vašem inventáři. Přidání do batoh!</Czech>
@@ -13078,7 +13075,6 @@
 			<English>%1 is already in your inventory. Dropping on the ground!</English>
 			<German>%1 ist bereits in Ihrem Inventar. Fallenlassen auf den Boden!</German>
 			<Russian>%1 уже в вашем инвентаре. Сброшено на землю!</Russian>
-			
 			<Dutch>%1 is al in je inventaris. Het laten vallen op de grond!</Dutch>
 			<French>%1 est déjà dans votre inventaire. Déposer sur le terrain!</French>
 			<Czech>%1 je již ve vašem inventáři. Pád na zem!</Czech>
@@ -13087,7 +13083,6 @@
 			<English>%1 is restricted.</English>
 			<German>%1 ist gesperrt.</German>
 			<Russian>%1 ограничено.</Russian>
-			
 			<Dutch>%1 beperkt.</Dutch>
 			<French>%1 est restreint.</French>
 			<Czech>%1 je omezeno.</Czech>
@@ -13128,7 +13123,6 @@
 			<English>Upgrade Vehicle</English>
 			<German>Fahrzeug upgraden</German>
 			<Russian>Улучшить транспорт</Russian>
-			
 			<Dutch>Voertuig Verbeteren</Dutch>
 			<French>Améliorer Véhicule</French>
 			<Czech>Upgrade vozidla</Czech>
@@ -13136,7 +13130,6 @@
 		<Key ID="STR_EPOCH_VEHUP_ORP">
 			<English>Offroad Performance</English>
 			<Russian>Внедорожная эффективность</Russian>
-			
 			<Dutch>Offroad Prestaties</Dutch>
 			<French>Performances tout-terrain</French>
 			<Czech>Terénní výkonnost</Czech>
@@ -13145,7 +13138,6 @@
 			<English>Offroad performace manual.</English>
 			<German>Offroad Performance Handbuch</German>
 			<Russian>Руководство по улучшению внедорожной эффективности.</Russian>
-			
 			<Dutch>Handleiding over offroad prestaties.</Dutch>
 			<French>Manuel sur les performances tout-terrain.</French>
 			<Czech>Manuál terénní výkonnosti.</Czech>
@@ -13154,7 +13146,6 @@
 			<English>Vehicle Maintenance</English>
 			<German>Fahrzeug-Wartung</German>
 			<Russian>Обслуживание транспорта</Russian>
-			
 			<Dutch>Voertuigonderhoud</Dutch>
 			<French>Maintenance du véhicule</French>
 			<Czech>Údržba vozidla</Czech>
@@ -13163,7 +13154,6 @@
 			<English>Vehicle maintenance and engineering manual.</English>
 			<German>Fahrzeug-Wartungshandbuch</German>
 			<Russian>Руководство по тех. обслуживанию транспортных средств и техники.</Russian>
-			
 			<Dutch>Werkplaatshandboek voor voertuigonderhoud en verbetering.</Dutch>
 			<French>Manuel de mécanique et d'entretien du véhicule.</French>
 			<Czech>Manuál údržby vozidel</Czech>
@@ -13172,7 +13162,6 @@
 			<English>Luggage Rack</English>
 			<German>Gepäckablage</German>
 			<Russian>Багажник на крыше</Russian>
-			
 			<Dutch>Bagagerek</Dutch>
 			<French>Galerie</French>
 			<Czech>Přihrádka na zavazadla</Czech>
@@ -13181,7 +13170,6 @@
 			<English>Luggage Rack install guide.</English>
 			<German>Installationsanleitung der Gepäckablage</German>
 			<Russian>Руководство по установке багажника на крышу.</Russian>
-			
 			<Dutch>Installatiehandleiding voor het bagagerek.</Dutch>
 			<French>Guide d'installation d'une galerie pour augmenter le stockage du véhicule.</French>
 			<Czech>Návod na instalaci Přihrádky na zavazadla.</Czech>
@@ -13190,7 +13178,6 @@
 			<English>Fuel Tank</English>
 			<German>Benzintank</German>
 			<Russian>Топливный бак</Russian>
-			
 			<Dutch>Benzinetank</Dutch>
 			<French>Réservoir</French>
 			<Czech>Palivová nádrž</Czech>
@@ -13199,7 +13186,6 @@
 			<English>Fuel Tank install guide.</English>
 			<German>Installationsanleitung für den Benzintank</German>
 			<Russian>Руководство по установке топливного бака.</Russian>
-			
 			<Dutch>Installatiehandleiding voor de benzinetank.</Dutch>
 			<French>Guide d'installation du réservoir.</French>
 			<Czech>Návod na instalaci Palivové nádrže.</Czech>
@@ -13220,7 +13206,6 @@
 			<English>Vehicle Upgrade Successful.</English>
 			<German>Fahrzeug-Upgrade abgeschlossen.</German>
 			<Russian>Транспорт успешно улучшен.</Russian>
-			
 			<French></French>
 			<Czech>Upgrade vozidla byl úspěšný.</Czech>
 		</Key>
@@ -13256,7 +13241,6 @@
 			<English>HALO Jump</English>
 			<German>Fallschirm springen</German>
 			<Russian>HALO прыжок</Russian>
-			
 			<Dutch>Parachutesprong</Dutch>
 			<French>Chute Opérationnelle</French>
 			<Czech>Katapultovat se</Czech>
@@ -13265,7 +13249,6 @@
 			<English>Display Name (Yes)</English>
 			<German>Namen anzeigen (Ja)</German>
 			<Russian>Отображать имя (Да)</Russian>
-			
 			<Dutch>Naam weergeven (AAN)</Dutch>
 			<French>Afficher le nom</French>
 			<Czech>Zobrazovat jména</Czech>
@@ -13274,7 +13257,6 @@
 			<English>Display Name (No)</English>
 			<German>Namen anzeigen (Nein)</German>
 			<Russian>Отображать имя (Нет)</Russian>
-			
 			<Dutch>Naam weergeven (UIT)</Dutch>
 			<French>Ne pas afficher le nom</French>
 			<Czech>Nezobrazovat jména</Czech>
@@ -13292,7 +13274,6 @@
 			<English>Raise Horde</English>
 			<German>Horde bilden</German>
 			<Russian>Призвать орду</Russian>
-			
 			<Dutch>Roep een Horde aan</Dutch>
 			<French>Ameuter</French>
 			<Czech>Přivolat Zombií</Czech>
@@ -13301,7 +13282,6 @@
 			<English>Night Vision</English>
 			<German>Nachtsicht</German>
 			<Russian>Ночное зрение</Russian>
-			
 			<Dutch>Nachtvisie</Dutch>
 			<French>Vision nocturne</French>
 			<Czech>Noktovizor</Czech>
@@ -13310,7 +13290,6 @@
 			<English>Feed</English>
 			<German>Füttern</German>
 			<Russian>Кормиться</Russian>
-			
 			<Dutch>Eet</Dutch>
 			<French>Nourrir</French>
 			<Czech>Nakrmit</Czech>
@@ -13319,7 +13298,6 @@
 			<English>Maintain Area</English>
 			<German>Gebiet instand halten</German>
 			<Russian>Занять территорию</Russian>
-			
 			<Dutch>Onderhoud het gebied</Dutch>
 			<French>Maintenir la zone</French>
 			<Czech>Údržba oblasti</Czech>
@@ -13328,7 +13306,6 @@
 			<English>Maintain Area Preview</English>
 			<German>Kostenvoranschlag für Instandhaltung</German>
 			<Russian>Занять территорию (пред. просмотр)</Russian>
-			
 			<Dutch>Gebiedsonderhoud (voorbeeld)</Dutch>
 			<French>Aperçu de la zone maintenue</French>
 			<Czech>Náhled údržby oblasti</Czech>
@@ -13340,7 +13317,6 @@
 			<English>Unlock %1</English>
 			<German>%1 aufschließen</German>
 			<Russian>Открыть %1</Russian>
-			
 			<Dutch>Haal van Slot %1</Dutch>
 			<French>Déverrouiller</French>
 			<Czech>Odemknout %1</Czech>
@@ -13349,7 +13325,6 @@
 			<English>Hotwire %1</English>
 			<German>%1 kurzschliessen</German>
 			<Russian>Угнать %1</Russian>
-			
 			<Dutch>Hotwire %1</Dutch>
 			<French>Démarrer avec les fils %1</French>
 			<Czech>Pokusit se Dostat do Vozidla %1</Czech>
@@ -13358,7 +13333,6 @@
 			<English>Vehicle Locked</English>
 			<German>Fahrzeug abgeschlossen</German> -->
 			<Russian>Транспорт закрыт</Russian>
-			
 			<Dutch>Voertuig Staat op Slot</Dutch>
 			<French>Véhicule Verrouillé</French>
 			<Czech>Vozidlo Uzamčeno</Czech>
@@ -13367,7 +13341,6 @@
 			<English>Lock %1</English>
 			<German>%1 abschließen</German>
 			<Russian>Закрыть %1</Russian>
-			
 			<Dutch>Zet op Slot %1</Dutch>
 			<French>Verrouiller %1</French>
 			<Czech>Zamknout %1</Czech>
@@ -13376,7 +13349,6 @@
 			<English>Gut Zombie</English>
 			<German>Zombie ausnehmen</German>
 			<Russian>Разделать зомби</Russian>
-			
 			<Dutch>Slacht Zombie</Dutch>
 			<French>Dépecer le zombie</French>
 			<Czech>Vykuchat Zombie</Czech>
@@ -13385,7 +13357,6 @@
 			<English>Open %1</English>
 			<German>%1 öffnen</German>
 			<Russian>Открыть %1</Russian>
-			
 			<Dutch>Maak Open %1</Dutch>
 			<French>Ouvrir %1</French>
 			<Czech>Otevřít %1</Czech>
@@ -13394,7 +13365,6 @@
 			<English>Re-Enter Combination</English>
 			<German>Kombination erneut eingeben</German>
 			<Russian>Ввести комбинацию заново</Russian>
-			
 			<Dutch>Combinatie Opnieuw Invoeren</Dutch>
 			<French>Ressaisir la combinaison</French>
 			<Czech>Znovu Zadat Kombinaci</Czech>
@@ -13403,7 +13373,6 @@
 			<English>Pack %1</English>
 			<German>%1 verpacken</German>
 			<Russian>Запаковать %1</Russian>
-			
 			<Dutch>Inpakken %1</Dutch>
 			<French>Empaqueter %1</French>
 			<Czech>Zabalit %1</Czech>
@@ -13412,7 +13381,6 @@
 			<English>Recent Murders</English>
 			<German>Kürzliche Morde</German>
 			<Russian>Последние убийства</Russian>
-			
 			<Dutch>Recente Moorden</Dutch>
 			<French>Meurtres récents</French>
 			<Czech>Nedávné Vraždy</Czech>
@@ -13421,7 +13389,6 @@
 			<English>Fill Vehicle</English>
 			<German>Tanken</German>
 			<Russian>Заправить транспорт</Russian>
-			
 			<Dutch>Vul Voertuig</Dutch>
 			<French>Faire le Plein</French>
 			<Czech>Naplnit Vozidlo</Czech>
@@ -13430,7 +13397,6 @@
 			<English>Needs Power</English>
 			<German>Benötigt Energie</German>
 			<Russian>Нужна энергия</Russian>
-			
 			<Dutch>Heeft Stroom Nodig</Dutch>
 			<French>Énergie Nécessaire</French>
 			<Czech>Potřebuje Energii</Czech>
@@ -13470,7 +13436,6 @@
 			<English>Fill and Start Generator</English>
 			<German>Generator betanken und starten</German>
 			<Russian>Заправить и запустить генератор</Russian>
-			
 			<Dutch>Vul en Start Generator</Dutch>
 			<French>Remplir et démarrer le générateur</French>
 			<Czech>Naplnit a nastartovat Generátor</Czech>
@@ -13479,7 +13444,6 @@
 			<English>Attach Straps</English>
 			<German>Gurte befestigen</German>
 			<Russian>Прицепить стропы</Russian>
-			
 			<Dutch>Monteer Spanbanden</Dutch>
 			<French>Attacher les sangles</French>
 			<Czech>Připevnit Popruhy</Czech>
@@ -13488,7 +13452,6 @@
 			<English>Detach Straps</English>
 			<German>Gurte lösen</German>
 			<Russian>Отцепить стропы</Russian>
-			
 			<Dutch>Demonteer Spanbanden</Dutch>
 			<French>Détacher les sangles</French>
 			<Czech>Odstranit Popruhy</Czech>
@@ -13507,7 +13470,6 @@
 			<English>Your humanity is too %1, this trader refuses to talk to you</English>
 			<German>Dein Menschlichkeitswert ist zu %1, dieser Händler will nicht mit dir reden</German>
 			<Russian>Ваша человечность слишком %1, этот торговец отказывается говорить с вами</Russian>
-			
 			<Dutch>Je menselijkheid is te %1. Deze trader doet geen zaken met je.</Dutch>
 			<French>Votre humanité est trop %1 ce commerçant refuse de vous parler.</French>
 			<Czech>Tvá lidskost je příliš %1, tento obchodník s tebou odmítá mluvit.</Czech>
@@ -13526,7 +13488,6 @@
 			<English>Calling Zombies...</English>
 			<German>Rufe Zombies...</German>
 			<Russian>Призываем зомби...</Russian>
-			
 			<French>Appeler les zombies...</French>
 			<Czech>Volám zombíky...</Czech>
 		</Key>
@@ -13534,7 +13495,6 @@
 			<English>Maintenance already in progress.</English>
 			<German>Instandhaltung bereits in Bearbeitung.</German>
 			<Russian>Уже обслуживается.</Russian>
-			
 			<French>La maintenance est déjà en cours.</French>
 			<Czech>Údržba již probíhá.</Czech>
 		</Key>
@@ -13542,7 +13502,6 @@
 			<English>At least one building part is not setup yet.</English>
 			<German>Mindestens ein Teil des Gebäudes ist noch nicht fertig.</German>
 			<Russian>Как минимум одна часть постройки ещё не установлена.</Russian>
-			
 			<French>Il reste encore des parties de la construction à maintenir.</French>
 			<Czech>Alespoň jedna část na stavbu není připravena.</Czech>
 		</Key>
@@ -13550,7 +13509,6 @@
 			<English>You have maintained %1 building parts.</English>
 			<German>%1 Bauteile instand gesetzt.</German>
 			<Russian>Вы обслужили %1 построек.</Russian>
-			
 			<French>Vous avez maintenu %1 construction(s).</French>
 			<Czech>Opravil jsi %1 částí budov.</Czech>
 		</Key>
@@ -13558,7 +13516,6 @@
 			<English>Missing %1 more of %2</English>
 			<German>Ihnen fehlt/fehlen %1 %2</German>
 			<Russian>Не хватает %2 (В количестве: %1)</Russian>
-			
 			<Dutch>Je hebt nog %1 extra %2 nodig.</Dutch>
 			<French>Il manque %1 %2</French>
 			<Czech>Chybí %1x %2</Czech>
@@ -13567,7 +13524,6 @@
 			<English>%1 building parts in range, maintenance would cost %2.</English>
 			<German>%1 Bauteile in Reichweite - Instandhaltungskosten: %2.</German>
 			<Russian>Построек найдено: %1, обслуживание будет стоить %2.</Russian>
-			
 			<French>%1 constructions à portée, la maintenance coûtera %2.</French>
 			<Czech>%1 částí staveb v okruhu, údržba by stála %2.</Czech>
 		</Key>
@@ -13575,7 +13531,6 @@
 			<English>You have tagged a player as friendly. Waiting for other player to accept.</English>
 			<German>Du hast einen Spieler als Freund markiert. Warte auf Bestätigung vom anderen Spieler.</German>
 			<Russian>Вы отметили игрока как друга. Ожидание подтверждения.</Russian>
-			
 			<French>Vous avez marqué un joueur comme amical. En attente de la confirmation de ce joueur.</French>
 			<Czech>Označil si cíl za přítele. Čeká se na přijetí.</Czech>
 		</Key>
@@ -13583,7 +13538,6 @@
 			<English>Unable to change clothes while wearing backpack.</English>
 			<German>Kleider können nicht gewechselt werden, solange ein Rucksack getragen wird.</German>
 			<Russian>Нельзя переодеться с рюкзаком на спине.</Russian>
-			
 			<French>Impossible de changer ses vêtements lorsque vous portez un sac à dos.</French>
 			<Czech>Nemůžete si změnit oblečení, pokud nosíte batoh.</Czech>
 		</Key>
@@ -13591,7 +13545,6 @@
 			<English>Unable to change clothes while carrying a filled chainsaw.</English>
 			<German>Kleider können nicht gewechselt werden, solange eine gefüllte Motorsäge in den Händen gehalten wird.</German>
 			<Russian>Нельзя переодеваться, держа заправленную бензопилу.</Russian>
-			
 			<French>Impossible de changer ses vêtements lorsque vous avez une tronçonneuse en main.</French>
 			<Czech>Nemůžete si změnit oblečení, pokud nesete naplněnou motorovou pilu.</Czech>
 		</Key>
@@ -13599,7 +13552,6 @@
 			<English>Bought %3 for %1 %2, key added to toolbelt.</English>
 			<German>%3 gekauft für %1 %2, Schlüssel zum Werkzeuggürtel hinzugefügt</German>
 			<Russian>Куплено: %3 за %1 %2, ключ добавлен на пояс.</Russian>
-			
 			<French>Vous avez acheté %3 pour %1 %2, la clé a été ajoutée à votre ceinture.</French>
 			<Czech>Koupeno %3 za %1 %2, klíč byl přidán do opasku na nářadí.</Czech>
 		</Key>
@@ -13607,7 +13559,6 @@
 			<English>No Tank Traps found nearby.</English>
 			<German>Keine Panzersperren in der Nähe gefunden.</German>
 			<Russian>Противотанковые ежи не найдены.</Russian>
-			
 			<French>Aucun piège à tank trouvé aux alentours.</French>
 			<Czech>Nebyly poblíž nalezeny žádné tankové zátarasy.</Czech>
 		</Key>
