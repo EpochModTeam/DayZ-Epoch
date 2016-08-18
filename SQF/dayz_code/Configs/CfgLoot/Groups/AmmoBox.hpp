@@ -49,6 +49,7 @@ AmmoBoxEU1[] =
 AmmoBoxEU2[] =
 {
 	{Loot_MAGAZINE,		9,		20Rnd_762x51_FNFAL},
+	{Loot_MAGAZINE, 	5, 		20Rnd_762x51_B_SCAR},
 	{Loot_MAGAZINE,		1,		100Rnd_762x51_M240}
 };
 

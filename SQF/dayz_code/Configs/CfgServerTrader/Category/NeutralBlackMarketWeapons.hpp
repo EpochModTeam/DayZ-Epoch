@@ -9,6 +9,11 @@ class Category_526 {
 		buy[] = {5,"ItemGoldBar"};
 		sell[] = {3,"ItemGoldBar"};
 	};
+	class AA12_PMC {
+		type = "trade_weapons";
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {5,"ItemGoldBar"};
+	};
 	class m8_compact {
 		type = "trade_weapons";
 		buy[] = {4,"ItemGoldBar"};
@@ -30,6 +35,21 @@ class Category_526 {
 		sell[] = {2,"ItemGoldBar"};
 	};
 	class M8_SAW {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class SCAR_H_CQC_CCO {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class SCAR_H_CQC_CCO_SD {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class SCAR_H_STD_EGLM_Spect {
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};

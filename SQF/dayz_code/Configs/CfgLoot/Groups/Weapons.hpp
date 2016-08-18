@@ -55,7 +55,10 @@ sniperrifles[] = {
 	{Loot_WEAPON,		0.5,	VSS_vintorez},
 	{Loot_WEAPON,		0.6,	SCAR_H_LNG_Sniper_SD},
 	{Loot_WEAPON,		1,		M14_DZ}, //M14_EP1
-	{Loot_WEAPON,		1,		DMR_DZ} //DMR
+	{Loot_WEAPON,		0.7,		DMR_DZ}, //DMR
+	//Epoch 1.0.6
+	{Loot_WEAPON,		0.8,	SCAR_H_LNG_Sniper}, //Mk17 Sniper
+	{Loot_WEAPON,		0.6,	M110_NVG_EP1} //M110 NVG
 };
 submachinegun[] = {
 	{Loot_WEAPON,		2,		PDW_DZ}, //UZI_EP1
@@ -99,7 +102,21 @@ assaultrifles[] = {
 	{Loot_WEAPON,		0.5,		m8_carbine},
 	{Loot_WEAPON,		0.2,		BAF_L85A2_RIS_SUSAT},
 	{Loot_WEAPON,		0.1,		L85_Holo_DZ}, //BAF_L85A2_RIS_Holo
-	{Loot_WEAPON,		0.1,		M4A1_HWS_GL_SD_Camo}
+	{Loot_WEAPON,		0.1,		M4A1_HWS_GL_SD_Camo},
+	//Epoch 1.0.6
+	{Loot_WEAPON,		0.2,		BAF_L85A2_RIS_ACOG}, //L85A2 ACOG
+	//Mk16
+	{Loot_WEAPON,		0.2,		SCAR_L_CQC_CCO_SD}, //Mk16 Aimpoint SD 
+	{Loot_WEAPON,		0.3,		SCAR_L_CQC}, //Mk16 CQC 
+	{Loot_WEAPON,		0.3,		SCAR_L_CQC_Holo}, //Mk16 CQC EOTech 
+	{Loot_WEAPON,		0.3,		SCAR_L_CQC_EGLM_Holo}, //Mk16 EGLM EOTech,(40mm)
+	{Loot_WEAPON,		0.3,		SCAR_L_STD_EGLM_RCO}, //Mk16 EGLM RCO,(40mm)
+	{Loot_WEAPON,		0.3,		SCAR_L_STD_HOLO}, //Mk16 EOTech 
+	{Loot_WEAPON,		0.3,		SCAR_L_STD_Mk4CQT}, //Mk16 Mk4CQ/T 
+	//Mk17
+	{Loot_WEAPON,		0.1,		SCAR_H_CQC_CCO}, //Mk17 Aimpoint
+	{Loot_WEAPON,		0.1,		SCAR_H_CQC_CCO_SD}, //Mk17 Aimpoint SD 
+	{Loot_WEAPON,		0.1,		SCAR_H_STD_EGLM_Spect} //Mk17 EGLM ACOG,(40mm)	
 };
 machineguns[] = {
 	{Loot_WEAPON,		1.1,	RPK74_DZ}, //RPK_74
@@ -114,10 +131,14 @@ machineguns[] = {
 	{Loot_WEAPON,		1,		m240_scoped_EP1_DZE},
 	{Loot_WEAPON,		0.8,	M240_DZ},
 	{Loot_WEAPON,		0.9,	M249_DZ},
-	{Loot_WEAPON,		0.5,	Mk48_DZ} //Mk_48_DZ (removed, was a duplicate of Mk48_CCO_DZ)
+	{Loot_WEAPON,		0.5,	Mk48_DZ}, //Mk_48_DZ (removed, was a duplicate of Mk48_CCO_DZ)
+	//Epoch 1.0.6
+	{Loot_WEAPON,		0.9,	BAF_L86A2_ACOG} //L86A2 ACOG
 };
 militaryshotguns[] = {
 	{Loot_WEAPON,		2,		Saiga12K},
 	{Loot_WEAPON,		2,		Remington870_FL_DZ}, //Remington870_lamp
-	{Loot_WEAPON,		2,		M1014_DZ} //M1014
+	{Loot_WEAPON,		2,		M1014_DZ}, //M1014
+	//Epoch 1.0.6
+	{Loot_WEAPON,		1,		AA12_PMC} //AA12 Shotgun
 };

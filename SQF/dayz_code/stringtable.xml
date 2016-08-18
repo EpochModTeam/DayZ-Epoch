@@ -16211,5 +16211,14 @@
 			<English>10Rnd. VSS mag.</English>
 			<Russian>10п. VSS маг.</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME">
+			<English>20Rnd. 12 Cal. Slug.</English>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME">
+			<English>20Rnd. 12 Cal. Pellets.</English>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_HE_NAME">
+			<English>20Rnd. 19mm HE.</English>
+		</Key>
 	</Package>
 </Project>

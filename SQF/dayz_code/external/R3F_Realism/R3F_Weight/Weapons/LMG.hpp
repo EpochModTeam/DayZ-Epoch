@@ -171,3 +171,7 @@ class UK59_DZ
 {
 	weight = 4.7;
 };
+class BAF_L86A2_ACOG
+{
+	weight = 6.7;
+};

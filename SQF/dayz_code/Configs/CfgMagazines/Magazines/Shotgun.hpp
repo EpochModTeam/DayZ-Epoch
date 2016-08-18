@@ -125,3 +125,37 @@ class 2Rnd_12Gauge_Buck : 8Rnd_12Gauge_Buck
 		};
 	};
 };
+//AA12 Ammo
+class 20Rnd_B_AA12_74Slug : CA_Magazine
+{
+	displayName = $STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME;
+	
+	cartridgeName = "12Gauge_Slug";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+class 20Rnd_B_AA12_Pellets : CA_Magazine
+{
+	displayName = $STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME;
+	
+	cartridgeName = "12Gauge_Pellets";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+class 20Rnd_B_AA12_HE : CA_Magazine
+{
+	displayName = $STR_DZ_MAG_20Rnd_B_AA12_HE_NAME;
+	
+	cartridgeName = "19mm_HE";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};

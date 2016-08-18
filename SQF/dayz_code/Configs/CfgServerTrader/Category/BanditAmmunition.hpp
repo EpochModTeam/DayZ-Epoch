@@ -9,7 +9,12 @@ class Category_577 {
 		buy[] = {4,"ItemSilverBar10oz"};
 		sell[] = {2,"ItemSilverBar10oz"};
 	};
-		class 20Rnd_762x51_SB_SCAR {
+	class 20Rnd_762x51_B_SCAR {
+		type = "trade_items";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
+	class 20Rnd_762x51_SB_SCAR {
 		type = "trade_items";
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
