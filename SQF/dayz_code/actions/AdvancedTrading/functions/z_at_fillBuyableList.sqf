@@ -19,7 +19,7 @@ _count = 0;
 	if (_type == "trade_items") then {
 		{
 			if (isText(configFile >> "CfgWeapons" >> _x >> "Attachments" >> _name) or _name in getArray (configFile >> "CfgWeapons" >> _x >> "magazines")) then {
-				lbSetColor [Z_AT_BUYABLELIST, _index, [.0,.6,.9,1]];
+				lbSetColor [Z_AT_BUYABLELIST, _index, [0.2,0.75,1]];
 			};
 		} count _weapons;
 		_count = {_x == _name} count magazines player;
