@@ -24,7 +24,7 @@ class Category_519 {
 		buy[] = {8,"ItemGoldBar10oz"};
 		sell[] = {4,"ItemGoldBar10oz"};
 	};
-	class UH60M_MEV_EP1 {
+	class UH60M_MEV_EP1_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {1,"ItemBriefcase100oz"};
 		sell[] = {6,"ItemGoldBar10oz"};

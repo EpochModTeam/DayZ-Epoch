@@ -550,3 +550,29 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1 {
 		};
 	};
 };
+
+// Unarmed medevac
+class UH60M_MEV_EP1;
+class UH60M_MEV_EP1_DZ : UH60M_MEV_EP1 {
+	scope = public; 
+	crew = ""; 
+	typicalCargo[] = {}; 
+	commanderCanSee = 2+16+32;
+	gunnerCanSee = 2+16+32;
+	driverCanSee = 2+16+32;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 100;
+	transportMaxBackpacks = 5;
+	
+	side = 1;
+	faction = "USMC";
+	accuracy = 0.5;
+	irScanRangeMin = 500;
+	irScanRangeMax = 2000;
+	irScanToEyeFactor = 2;
+	lockDetectionSystem = "8 + 4";
+	incommingMisslieDetectionSystem = 0;
+	fuelCapacity = 2000;
+	class TransportMagazines{};
+	class TransportWeapons{};
+};
