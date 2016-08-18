@@ -64,7 +64,6 @@ if (_canLoot ) then {
 				};
 			} forEach _positions;
 		};
-		//dayz_buildingMonitor set [count dayz_buildingMonitor,_obj];
 	};
 };
 

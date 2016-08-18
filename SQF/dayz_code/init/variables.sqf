@@ -582,10 +582,6 @@ if (isServer) then {
 };
 
 if (!isDedicated) then {
-	dayz_buildingMonitor = []; //Buildings to check
-	dayz_bodyMonitor = [];
-	dayz_flyMonitor = [];
-	dayz_zedMonitor = [];
 	dayz_buildingBubbleMonitor = [];
 	dayz_baseTypes = if (DZE_MissionLootTable) then {getArray (missionConfigFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass")} else {getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass")};
 

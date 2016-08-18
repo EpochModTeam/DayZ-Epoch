@@ -112,8 +112,6 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"if (!_isTamed) then {" \n
        "	if (!_isSomeone) then {" \n
        "		deleteVehicle _agent;" \n
-       "	}  else {" \n
-       "		dayz_bodyMonitor set [count dayz_bodyMonitor,_agent];" \n
        "	};" \n
        "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;

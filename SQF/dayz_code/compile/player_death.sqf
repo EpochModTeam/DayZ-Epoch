@@ -137,7 +137,6 @@ deleteGroup _myGroup;
 
 _body setVariable["combattimeout", 0, true];
 //due to a cleanup issue with effects this has been disabled remember to look at the cleanup before adding it back.
-//[_body] call spawn_flies;
 //dayzFlies = player;
 //publicVariable "dayzFlies";
 uiSleep 2;
