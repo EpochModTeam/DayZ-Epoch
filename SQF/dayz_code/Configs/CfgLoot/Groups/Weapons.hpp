@@ -79,9 +79,9 @@ assaultrifles[] = {
 	{Loot_WEAPON,		0.1,		FN_FAL_ANPVS4_DZE}, //FNFAL_ANPVS4_DZ is NV only _DZE is toggleable
 	{Loot_WEAPON,		0.5,		G36A_Camo_DZ}, //G36A_camo
 	{Loot_WEAPON,		0.5,		G36C_DZ}, //G36C
-	{Loot_WEAPON,		0.5,		G36C_camo},
+	{Loot_WEAPON,		0.4,		G36C_camo},
 	{Loot_WEAPON,		0.5,		G36K_Camo_DZ}, //G36K_camo
-	{Loot_WEAPON,		0.3,		G36_C_SD_camo},
+	{Loot_WEAPON,		0.2,		G36_C_SD_camo},
 	{Loot_WEAPON,		0.5,		M16A2_DZ}, //M16A2
 	//{Loot_WEAPON,		0.2,		M16A2_GL_DZ}, //M16A2GL //added to attachments system
 	{Loot_WEAPON,		0.1,		M16A4_ACOG_DZ}, //M16A4_ACG (has slightly different scope)
@@ -89,19 +89,19 @@ assaultrifles[] = {
 	{Loot_WEAPON,		0.4,		M4A1_CCO_DZ}, //M4A1_Aim
 	{Loot_WEAPON,		0.1,		M4A1_AIM_SD_camo},
 	{Loot_WEAPON,		0.1,		M4A1_HWS_GL_camo},
-	{Loot_WEAPON,		0.4,		M4A3_CCO_EP1},
+	{Loot_WEAPON,		0.3,		M4A3_CCO_EP1},
 	{Loot_WEAPON,		0.4,		SA58_DZ}, //Sa58P_EP1 (identical), Sa58V_EP1 (different stock)
 	{Loot_WEAPON,		0.3,		SA58_CCO_DZ}, //No camo, no grip handle
-	{Loot_WEAPON,		0.3,		Sa58V_CCO_EP1}, //Camo with grip handle
+	{Loot_WEAPON,		0.2,		Sa58V_CCO_EP1}, //Camo with grip handle
 	{Loot_WEAPON,		0.3,		SA58_ACOG_DZ}, //No camo, no grip handle
-	{Loot_WEAPON,		0.3,		Sa58V_RCO_EP1}, // Camo with grip handle
+	{Loot_WEAPON,		0.2,		Sa58V_RCO_EP1}, // Camo with grip handle
 	{Loot_WEAPON,		0.3,		SA58_RIS_DZ}, //SA58_DZ with different rail
 	{Loot_WEAPON,		0.4,		m8_compact},
 	{Loot_WEAPON,		0.3,		m8_sharpshooter},
-	{Loot_WEAPON,		0.5,		m8_holo_sd},
+	{Loot_WEAPON,		0.3,		m8_holo_sd},
 	{Loot_WEAPON,		0.5,		m8_carbine},
 	{Loot_WEAPON,		0.2,		BAF_L85A2_RIS_SUSAT},
-	{Loot_WEAPON,		0.1,		L85_Holo_DZ}, //BAF_L85A2_RIS_Holo
+	{Loot_WEAPON,		0.3,		L85_Holo_DZ}, //BAF_L85A2_RIS_Holo
 	{Loot_WEAPON,		0.1,		M4A1_HWS_GL_SD_Camo},
 	//Epoch 1.0.6
 	{Loot_WEAPON,		0.2,		BAF_L85A2_RIS_ACOG}, //L85A2 ACOG
@@ -109,8 +109,8 @@ assaultrifles[] = {
 	{Loot_WEAPON,		0.2,		SCAR_L_CQC_CCO_SD}, //Mk16 Aimpoint SD 
 	{Loot_WEAPON,		0.3,		SCAR_L_CQC}, //Mk16 CQC 
 	{Loot_WEAPON,		0.3,		SCAR_L_CQC_Holo}, //Mk16 CQC EOTech 
-	{Loot_WEAPON,		0.3,		SCAR_L_CQC_EGLM_Holo}, //Mk16 EGLM EOTech,(40mm)
-	{Loot_WEAPON,		0.3,		SCAR_L_STD_EGLM_RCO}, //Mk16 EGLM RCO,(40mm)
+	{Loot_WEAPON,		0.2,		SCAR_L_CQC_EGLM_Holo}, //Mk16 EGLM EOTech,(40mm)
+	{Loot_WEAPON,		0.2,		SCAR_L_STD_EGLM_RCO}, //Mk16 EGLM RCO,(40mm)
 	{Loot_WEAPON,		0.3,		SCAR_L_STD_HOLO}, //Mk16 EOTech 
 	{Loot_WEAPON,		0.3,		SCAR_L_STD_Mk4CQT}, //Mk16 Mk4CQ/T 
 	//Mk17
