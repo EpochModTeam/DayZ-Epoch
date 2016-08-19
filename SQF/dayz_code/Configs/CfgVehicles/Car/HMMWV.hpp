@@ -310,7 +310,6 @@ class HMMWV_DZ: HMMWV_Base {
 	accuracy = 0.32;
 	displayname = $STR_VEH_NAME_HMMWV;
 	displaynameshort = "HMMWV (Wood Camo)";
-	maxspeed = 100;
 	hasgunner = 0;
 	hiddenselections[] = {"Camo1"};
 	hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
@@ -1085,23 +1084,27 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_DES_Base_EP1_DZE
 class HMMWV_Armored;
 class HMMWV_Armored_DZ: HMMWV_Armored {
 	scope = public;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
 	displayname = "HMMWV (M240) Woodland";
-	maxspeed = 100;
-	transportMaxWeapons = 4;
-	transportMaxMagazines = 100;
-	transportmaxbackpacks = 4;
-	armor = 80;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 2;
+	armor = 120;
 	damageResistance = 0.00581;
 };
 
 class HMMWV_M2;
 class HMMWV_M2_DZ: HMMWV_M2 {
 	scope = public;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
 	displayname = "HMMWV (M2) Woodland";
-	maxspeed = 100;
-	transportMaxWeapons = 4;
-	transportMaxMagazines = 100;
-	transportmaxbackpacks = 4;
-	armor = 80;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 2;
+	armor = 40;
 	damageResistance = 0.00581;
 };
