@@ -28,6 +28,7 @@
 [NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Set DZE_BackpackAntiTheft = true; in init.sqf @ebaydayz
 [NEW] Zupa's Advanced Trading v2.1+ is now included as part of the Epoch Code, enabled with DZE_advancedTrading = true; NOT COMPATIBLE WITH DATABASE TRADERS @icomrade @Windmolders 
 [NEW] With config based traders categories can be reused by setting the duplicate=#; value. # is the category number to copy. @ebaydayz
+[NEW] With config based traders upgraded vehicles can now be sold for the same price as their original. #1745 @oiad
 [NEW] Gems are now treated as variable value currency (Advanced Trading only). Configure gem values using DZE_GemWorthArray =[]; see configVariables.sqf for more info @icomrade
 [NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; See configVariables.sqf for more info @icomrade
 [NEW] A Plot For Life v2.5 by RimBlock is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @RimBlock @icomrade
