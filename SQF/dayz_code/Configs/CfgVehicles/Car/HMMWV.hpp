@@ -306,9 +306,11 @@ class HMMWV_Base: Car
 };
 
 class HMMWV_DZ: HMMWV_Base {
+	
 	accuracy = 0.32;
 	displayname = $STR_VEH_NAME_HMMWV;
-	maxspeed = 230;
+	displaynameshort = "HMMWV (Wood Camo)";
+	maxspeed = 100;
 	hasgunner = 0;
 	hiddenselections[] = {"Camo1"};
 	hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
@@ -322,7 +324,7 @@ class HMMWV_DZ: HMMWV_Base {
 	typicalCargo[] = {};
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
-	transportmaxbackpacks = 2;
+	transportmaxbackpacks = 4;
 	class Turrets {};
 	class Damage {
 		mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
@@ -1078,4 +1080,28 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_DES_Base_EP1_DZE
 		tex[] = {};
 		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
 	};
+};
+
+class HMMWV_Armored;
+class HMMWV_Armored_DZ: HMMWV_Armored {
+	scope = public;
+	displayname = "HMMWV (M240) Woodland";
+	maxspeed = 100;
+	transportMaxWeapons = 4;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 4;
+	armor = 80;
+	damageResistance = 0.00581;
+};
+
+class HMMWV_M2;
+class HMMWV_M2_DZ: HMMWV_M2 {
+	scope = public;
+	displayname = "HMMWV (M2) Woodland";
+	maxspeed = 100;
+	transportMaxWeapons = 4;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 4;
+	armor = 80;
+	damageResistance = 0.00581;
 };
