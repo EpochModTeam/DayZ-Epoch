@@ -103,7 +103,7 @@ if (_canDo && !_inVehicle && !dayz_isSwimming) then {
 		} count _waterHoles;
 		if (_canDoThis) exitWith {
 			if (s_player_Drinkfromhands < 0) then {
-				s_player_Drinkfromhands = player addAction [localize "str_player_31_drink", "\z\addons\dayz_code\actions\player_drinkWater.sqf",player, 0.5, false, true];
+				s_player_Drinkfromhands = player addAction [localize "STR_ACTIONS_DRINK2", "\z\addons\dayz_code\actions\player_drinkWater.sqf",player, 0.5, false, true];
 			};
 		};
 	} foreach nearestObjects [player, ["waterHoleProxy", "Land_pumpa"], 50];

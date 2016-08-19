@@ -989,18 +989,13 @@
 			<French>Prendre Antibiotiques</French>
 			<Czech>Vzít si antibiotika</Czech>
 		</Key>
-		<Key ID="STR_ACTIONS_DRINK">
-			<English>Drink %1</English>
-			<German>%1 trinken</German>
-			<Russian>Выпить</Russian>
-			<Spanish>Tomar %1</Spanish>
-			<French>Boire %1</French>
-			<Czech>Vypít %1</Czech>
-		</Key>
 		<Key ID="STR_ACTIONS_DRINK2">
 			<English>Drink</English>
 			<Russian>Выпить</Russian>
 			<German>Trinken</German>
+			<Spanish>Tomar</Spanish>
+			<Czech>Vypít</Czech>
+			<French>Boire</French>
 		</Key>
 		<Key ID="STR_ACTIONS_FILL_W">
 			<English>Fill Water</English>
@@ -7312,14 +7307,6 @@
 			<Czech>upéct</Czech>
 			<German>braten</German>
 			<French>cuire</French>
-		</Key>
-		<Key ID="str_player_31_drink">
-			<English>Drink</English>
-			<Russian>выпить</Russian>
-			<Spanish>beberlo</Spanish>
-			<Czech>vypít</Czech>
-			<German>trinken</German>
-			<French>boire</French>
 		</Key>
 		<Key ID="str_player_31_fill">
 			<English>fill</English>
