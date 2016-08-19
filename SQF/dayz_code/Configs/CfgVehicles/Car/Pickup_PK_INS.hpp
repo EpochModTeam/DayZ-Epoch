@@ -120,6 +120,7 @@ class Pickup_PK_INS_DZE: Pickup_PK_INS_DZ {
 
 // Performance 1
 class Pickup_PK_GUE_DZE1: Pickup_PK_GUE_DZE {
+	original = "Pickup_PK_GUE_DZE";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 1.8;
 
@@ -128,6 +129,7 @@ class Pickup_PK_GUE_DZE1: Pickup_PK_GUE_DZE {
 	};
 };
 class Pickup_PK_TK_GUE_EP1_DZE1: Pickup_PK_TK_GUE_EP1_DZE {
+	original = "Pickup_PK_TK_GUE_EP1_DZE";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 1.8;
 
@@ -136,6 +138,7 @@ class Pickup_PK_TK_GUE_EP1_DZE1: Pickup_PK_TK_GUE_EP1_DZE {
 	};
 };
 class Pickup_PK_INS_DZE1: Pickup_PK_INS_DZE {
+	original = "Pickup_PK_INS_DZE";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 1.8;
 

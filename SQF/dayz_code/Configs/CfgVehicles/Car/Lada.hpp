@@ -460,6 +460,7 @@ class Lada2_TK_CIV_EP1: Lada_base {
 
 // Performance 1
 class Lada1_DZE1: Lada1 {
+	original = "Lada1";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
 
@@ -468,6 +469,7 @@ class Lada1_DZE1: Lada1 {
 	};
 };
 class Lada2_DZE1: Lada2 {
+	original = "Lada2";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -476,6 +478,7 @@ class Lada2_DZE1: Lada2 {
 	};
 };
 class LadaLM_DZE1: LadaLM {
+	original = "LadaLM";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -484,6 +487,7 @@ class LadaLM_DZE1: LadaLM {
 	};
 };
 class Lada1_TK_CIV_EP1_DZE1: Lada1_TK_CIV_EP1 {
+	original = "Lada1_TK_CIV_EP1";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -492,6 +496,7 @@ class Lada1_TK_CIV_EP1_DZE1: Lada1_TK_CIV_EP1 {
 	};
 };
 class Lada2_TK_CIV_EP1_DZE1: Lada2_TK_CIV_EP1 {
+	original = "Lada2_TK_CIV_EP1";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 

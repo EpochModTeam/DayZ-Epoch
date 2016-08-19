@@ -177,6 +177,7 @@ class SUV_Silver: SUV_TK_CIV_EP1 {
 
 // Performance 1
 class SUV_TK_CIV_EP1_DZE1: SUV_TK_CIV_EP1 {
+	original = "SUV_TK_CIV_EP1";
 	maxSpeed = 250; // max engine limit 125-130
 	brakeDistance = 14; // 19
 	terrainCoef = 1.5;
@@ -186,6 +187,7 @@ class SUV_TK_CIV_EP1_DZE1: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_Camo_DZE1: SUV_Camo {
+	original = "SUV_Camo";
 	maxSpeed = 250; // max engine limit 125-130
 	brakeDistance = 14; // 19
 	terrainCoef = 1.5;
@@ -195,6 +197,7 @@ class SUV_Camo_DZE1: SUV_Camo {
 	};
 };
 class SUV_Blue_DZE1: SUV_Blue {
+	original = "SUV_Blue";
 	maxSpeed = 250; // suv base 130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19
@@ -204,6 +207,7 @@ class SUV_Blue_DZE1: SUV_Blue {
 	};
 };
 class SUV_Green_DZE1: SUV_Green {
+	original = "SUV_Green";
 	maxSpeed = 250; // suv base 130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19
@@ -213,6 +217,7 @@ class SUV_Green_DZE1: SUV_Green {
 	};
 };
 class SUV_Yellow_DZE1: SUV_Yellow {
+	original = "SUV_Yellow";
 	maxSpeed = 250; // max engine limit 125-130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19
@@ -222,6 +227,7 @@ class SUV_Yellow_DZE1: SUV_Yellow {
 	};
 };
 class SUV_Red_DZE1: SUV_Red {
+	original = "SUV_Red";
 	maxSpeed = 250; // suv base 130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19
@@ -231,6 +237,7 @@ class SUV_Red_DZE1: SUV_Red {
 	};
 };
 class SUV_White_DZE1: SUV_White {
+	original = "SUV_White";
 	maxSpeed = 250; // suv base 130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19
@@ -240,6 +247,7 @@ class SUV_White_DZE1: SUV_White {
 	};
 };
 class SUV_Pink_DZE1: SUV_Pink {
+	original = "SUV_Pink";
 	maxSpeed = 250; // suv base 130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19
@@ -249,6 +257,7 @@ class SUV_Pink_DZE1: SUV_Pink {
 	};
 };
 class SUV_Charcoal_DZE1: SUV_Charcoal {
+	original = "SUV_Charcoal";
 	maxSpeed = 250; // max engine limit 125-130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19
@@ -258,6 +267,7 @@ class SUV_Charcoal_DZE1: SUV_Charcoal {
 	};
 };
 class SUV_Orange_DZE1: SUV_Orange {
+	original = "SUV_Orange";
 	maxSpeed = 250; // suv base 130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19
@@ -267,6 +277,7 @@ class SUV_Orange_DZE1: SUV_Orange {
 	};
 };
 class SUV_Silver_DZE1: SUV_Silver {
+	original = "SUV_Silver";
 	maxSpeed = 250; // suv base 130
 	terrainCoef = 1.5;
 	brakeDistance = 14; // 19

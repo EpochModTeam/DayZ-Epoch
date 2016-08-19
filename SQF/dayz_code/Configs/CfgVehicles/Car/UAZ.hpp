@@ -175,6 +175,7 @@ class UAZ_Unarmed_TK_CIV_EP1: UAZ_Unarmed_Base {
 
 // Performance 1
 class UAZ_CDF_DZE1: UAZ_CDF {
+	original = "UAZ_CDF";
 	maxspeed = 240; // max engine limit 125-130
 	terrainCoef = 2.5;
 
@@ -183,6 +184,7 @@ class UAZ_CDF_DZE1: UAZ_CDF {
 	};
 };
 class UAZ_INS_DZE1: UAZ_INS {
+	original = "UAZ_INS";
 	maxspeed = 240; // car 100
 	terrainCoef = 2.5;
 
@@ -191,6 +193,7 @@ class UAZ_INS_DZE1: UAZ_INS {
 	};
 };
 class UAZ_RU_DZE1: UAZ_RU {
+	original = "UAZ_RU";
 	maxspeed = 240; // car 100
 	terrainCoef = 2.5;
 
@@ -199,6 +202,7 @@ class UAZ_RU_DZE1: UAZ_RU {
 	};
 };
 class UAZ_Unarmed_TK_EP1_DZE1: UAZ_Unarmed_TK_EP1 {
+	original = "UAZ_Unarmed_TK_EP1";
 	maxspeed = 240; // max engine limit 125-130
 	terrainCoef = 2.5;
 
@@ -207,6 +211,7 @@ class UAZ_Unarmed_TK_EP1_DZE1: UAZ_Unarmed_TK_EP1 {
 	};
 };
 class UAZ_Unarmed_UN_EP1_DZE1: UAZ_Unarmed_UN_EP1 {
+	original = "UAZ_Unarmed_UN_EP1";
 	maxspeed = 240; // car 100
 	terrainCoef = 2.5;
 
@@ -215,6 +220,7 @@ class UAZ_Unarmed_UN_EP1_DZE1: UAZ_Unarmed_UN_EP1 {
 	};
 };
 class UAZ_Unarmed_TK_CIV_EP1_DZE1: UAZ_Unarmed_TK_CIV_EP1 {
+	original = "UAZ_Unarmed_TK_CIV_EP1";
 	maxspeed = 240; // car 100
 	terrainCoef = 2.5;
 

@@ -397,6 +397,7 @@ class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
 
 class ArmoredSUV_PMC_DZE1: ArmoredSUV_PMC_DZE
 {
+	original = "ArmoredSUV_PMC_DZE";
 	maxSpeed = 270; //increased speed slightly since original is 230
 	brakeDistance = 14;
 	terrainCoef = 1.5;

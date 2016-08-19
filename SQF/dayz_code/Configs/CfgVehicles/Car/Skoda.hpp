@@ -101,6 +101,7 @@ class SkodaGreen: SkodaBase {
 
 // Performance 1
 class Skoda_DZE1: Skoda {
+	original = "Skoda";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
 
@@ -109,6 +110,7 @@ class Skoda_DZE1: Skoda {
 	};
 };
 class SkodaBlue_DZE1: SkodaBlue {
+	original = "SkodaBlue";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -117,6 +119,7 @@ class SkodaBlue_DZE1: SkodaBlue {
 	};
 };
 class SkodaRed_DZE1: SkodaRed {
+	original = "SkodaRed";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -125,6 +128,7 @@ class SkodaRed_DZE1: SkodaRed {
 	};
 };
 class SkodaGreen_DZE1: SkodaGreen {
+	original = "SkodaGreen";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 

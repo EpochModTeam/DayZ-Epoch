@@ -254,6 +254,7 @@ class VolhaLimo_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
 
 // Performance 1
 class VolhaLimo_TK_CIV_EP1_DZE1: VolhaLimo_TK_CIV_EP1 {
+	original = "VolhaLimo_TK_CIV_EP1";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
 
@@ -262,6 +263,7 @@ class VolhaLimo_TK_CIV_EP1_DZE1: VolhaLimo_TK_CIV_EP1 {
 	};
 };
 class Volha_1_TK_CIV_EP1_DZE1: Volha_1_TK_CIV_EP1 {
+	original = "Volha_1_TK_CIV_EP1";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -270,6 +272,7 @@ class Volha_1_TK_CIV_EP1_DZE1: Volha_1_TK_CIV_EP1 {
 	};
 };
 class Volha_2_TK_CIV_EP1_DZE1: Volha_2_TK_CIV_EP1 {
+	original = "Volha_2_TK_CIV_EP1";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 

@@ -494,6 +494,7 @@ class VWGolf : Car {
 
 // Performance 1
 class VWGolf_DZE1: VWGolf {
+	original = "VWGolf";
 	maxSpeed = 260; // VW maxspeed from above =241
 	terrainCoef = 2.5;
 

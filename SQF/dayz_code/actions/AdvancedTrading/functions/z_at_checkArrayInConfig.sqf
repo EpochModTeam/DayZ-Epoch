@@ -8,7 +8,7 @@
 *
 *	Fills up the sell or buy list if the item has a valid config.
 **/
-private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags"];
+private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_vehUpgraded"];
 #include "defines.hpp"
 
 _weaps = _this select 0;
@@ -18,6 +18,7 @@ _bags = _this select 3;
 _vehTrade = false;
 
 if (false call Z_checkCloseVehicle) then {
+	_vehUpgraded = getText (configFile >> 'CfgVehicles' >> typeOf (Z_vehicle) >> 'original');
 	_all = _weaps + _mags + _bags + [(typeOf Z_vehicle)];
 	_vehTrade = true;
 } else {
@@ -54,6 +55,7 @@ _totalPrice = 0;
 		if (isNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")) then {
 			_cat = format["Category_%1",getNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")];
 		};
+		if (_vehUpgraded != "" && _vehTrade && _y == (typeOf Z_vehicle)) then { _y = _vehUpgraded; };
 		_exists = isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y);
 		if (_exists) exitWith {
 			_pic = "";

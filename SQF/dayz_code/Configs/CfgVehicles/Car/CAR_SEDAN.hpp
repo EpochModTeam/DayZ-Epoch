@@ -13,6 +13,7 @@ class car_sedan : SkodaBase {
 
 // Performance 1
 class car_sedan_DZE1: car_sedan {
+	original = "car_sedan";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
 
