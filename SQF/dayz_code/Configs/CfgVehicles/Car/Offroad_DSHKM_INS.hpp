@@ -346,6 +346,7 @@ class Offroad_DSHKM_Gue_DZE: Offroad_DSHKM_base
 // Performance 1
 class Offroad_DSHKM_Gue_DZE1: Offroad_DSHKM_Gue_DZE
 {
+	original = "Offroad_DSHKM_Gue_DZE";
 	maxspeed = 170; // Offroad_DSHKM_base 150 | car 100
 	class Upgrades
 	{

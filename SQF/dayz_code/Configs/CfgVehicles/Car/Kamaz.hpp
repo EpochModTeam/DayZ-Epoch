@@ -25,6 +25,7 @@ class Kamaz_DZE: Kamaz_Base {
 	};
 };
 class KamazOpen_DZE1: KamazOpen_DZE {
+	original = "KamazOpen_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
 	turnCoef = 2.0;  // base 3.7
@@ -33,6 +34,7 @@ class KamazOpen_DZE1: KamazOpen_DZE {
 	};
 };
 class Kamaz_DZE1: Kamaz_DZE {
+	original = "Kamaz_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
 	turnCoef = 2.0;  // base 3.7
@@ -89,6 +91,7 @@ class KamazRefuel_DZ: KamazRefuel {
 	//For future Developement = transportFuel = 10400;			// refueltruck
 };
 class KamazRefuel_DZE1: KamazRefuel_DZ {
+	original = "KamazRefuel_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
 	turnCoef = 2.0;  // base 3.7

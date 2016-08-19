@@ -13,6 +13,7 @@
 
 // Performance 1
 class car_hatchback_DZE1: car_hatchback {
+	original = "car_hatchback";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
 

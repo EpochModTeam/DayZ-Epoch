@@ -31,6 +31,7 @@ class hilux1_civil_3_open_DZE: hilux1_civil_3_open {
 
 // Performance 1
 class hilux1_civil_1_open_DZE1: hilux1_civil_1_open_DZE {
+	original = "hilux1_civil_1_open_DZE";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 1.8;
 	class HitPoints: HitPoints {
@@ -52,6 +53,7 @@ class hilux1_civil_1_open_DZE1: hilux1_civil_1_open_DZE {
 	};
 };
 class hilux1_civil_2_covered_DZE1: hilux1_civil_2_covered_DZE {
+	original = "hilux1_civil_2_covered_DZE";
 	maxspeed = 150; // car 100
 	terrainCoef = 1.8;
 	class HitPoints: HitPoints {
@@ -73,6 +75,7 @@ class hilux1_civil_2_covered_DZE1: hilux1_civil_2_covered_DZE {
 	};
 };
 class hilux1_civil_3_open_DZE1: hilux1_civil_3_open_DZE {
+	original = "hilux1_civil_3_open_DZE";
 	maxspeed = 150; // car 100
 	terrainCoef = 1.8;
 	class HitPoints: HitPoints {
