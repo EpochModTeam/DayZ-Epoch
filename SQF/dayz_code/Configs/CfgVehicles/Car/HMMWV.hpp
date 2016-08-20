@@ -1088,8 +1088,8 @@ class HMMWV_Armored_DZ: HMMWV_Armored {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	displayname = "HMMWV (M240) Woodland";
-	transportMaxWeapons = 10;
-	transportMaxMagazines = 50;
+	transportMaxWeapons = 4;
+	transportMaxMagazines = 100;
 	transportmaxbackpacks = 4;
 	armor = 120;
 	damageResistance = 0.00581;
@@ -1102,8 +1102,8 @@ class HMMWV_M2_DZ: HMMWV_M2 {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	displayname = "HMMWV (M2) Woodland";
-	transportMaxWeapons = 10;
-	transportMaxMagazines = 50;
+	transportMaxWeapons = 4;
+	transportMaxMagazines = 100;
 	transportmaxbackpacks = 4;
 	armor = 40;
 	damageResistance = 0.00581;
