@@ -1,20 +1,20 @@
 class Category_517 {
-	class GNT_C185U {
+	class GNT_C185U_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz"};
 		sell[] = {2,"ItemGoldBar10oz"};
 	};
-	class GNT_C185 {
+	class GNT_C185_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz"};
 		sell[] = {2,"ItemGoldBar10oz"};
 	};
-	class GNT_C185R {
+	class GNT_C185R_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz"};
 		sell[] = {2,"ItemGoldBar10oz"};
 	};
-	class GNT_C185C {
+	class GNT_C185C_DZ {
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz"};
 		sell[] = {2,"ItemGoldBar10oz"};
