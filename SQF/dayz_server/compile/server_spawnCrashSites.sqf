@@ -10,8 +10,8 @@ Author:
 #include "\z\addons\dayz_code\loot\Loot.hpp"
 
 //Spawn frequency ± variance in minutes
-#define SPAWN_FREQUENCY 40
-#define SPAWN_VARIANCE 15
+#define SPAWN_FREQUENCY 25
+#define SPAWN_VARIANCE 20
 
 //The higher the number, the more accurate the timer is.
 //Must be positive and non-zero.
@@ -28,7 +28,7 @@ Author:
 #define SEARCH_BLACKLIST [[[2092,14167],[10558,12505]]]
 
 //Number of crash sites to spawn at the beginning of the mission
-#define INITIAL_NUM 3
+#define INITIAL_NUM 1
 
 //Number of loot items to spawn per site
 #define LOOT_MIN 5
