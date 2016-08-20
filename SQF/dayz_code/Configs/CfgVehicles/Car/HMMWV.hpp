@@ -1091,7 +1091,7 @@ class HMMWV_Armored_DZ: HMMWV_Armored {
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 100;
 	transportmaxbackpacks = 4;
-	armor = 120;
+	armor = 80;
 	damageResistance = 0.00581;
 };
 
