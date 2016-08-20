@@ -6,12 +6,14 @@ waitUntil {!isNil "BIS_MPF_InitDone" && initialized};
 if (!isNil "sm_done") exitWith {}; // prevent server_monitor be called twice (bug during login of the first player)
 sm_done = false;
 
+_legacyStreamingMethod = false; //use old object streaming method, more secure but will be slower and subject to the callExtension return size limitation.
+
 dayz_serverIDMonitor = [];
 _DZE_VehObjects = [];
 dayz_versionNo = getText (configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _hiveLoaded = false;
-_serverVehicleCounter = [];
+_serverVehicleCounter = 0;
 _tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
 _respawnPos = getMarkerpos "respawn_west";
 diag_log "HIVE: Starting";
@@ -39,25 +41,38 @@ if (_outcome == "PASS") then {
 /* STREAM OBJECTS */
 //Send the key
 _timeStart = diag_tickTime;
-_key = format["CHILD:302:%1:",dayZ_instance];
+_key = format["CHILD:302:%1:%2:",dayZ_instance, _legacyStreamingMethod];
 _result = _key call server_hiveReadWrite;
 
 diag_log "HIVE: Request sent";
 _myArray = [];
 _val = 0;
 _status = _result select 0; //Process result
-if (_status == "ObjectStreamStart") then {
-	_hiveLoaded = true;
-	_val = _result select 1;
-	//Stream Objects
-	diag_log ("HIVE: Commence Object Streaming...");
-	for "_i" from 1 to _val do  {
-		_result = _key call server_hiveReadWriteLarge;
-		_status = _result select 0;
-		_myArray set [count _myArray,_result];
+if (_legacyStreamingMethod) then {
+	if (_status == "ObjectStreamStart") then {
+		_hiveLoaded = true;
+		_val = _result select 1;
+		//Stream Objects
+		diag_log ("HIVE: Commence Object Streaming...");
+		for "_i" from 1 to _val do  {
+			_result = _key call server_hiveReadWriteLarge;
+			_status = _result select 0;
+			_myArray set [count _myArray,_result];
+		};
 	};
-	diag_log ("HIVE: Streamed " + str(_val) + " objects");
+} else {
+	_fileName = _key call server_hiveReadWrite;
+	_lastFN = profileNamespace getVariable["lastFN",""];
+	profileNamespace setVariable["lastFN",_fileName];
+	saveProfileNamespace;
+	if (_status == "ObjectStreamStart") then {
+		_myArray = Call Compile PreProcessFile _fileName;
+		_key = format["CHILD:302:%1:%2:",_lastFN, _legacyStreamingMethod];
+		_result = _key call server_hiveReadWrite; //deletes previous object data dump
+	};
 };
+
+diag_log ("HIVE: Streamed " + str(_val) + " objects");
 
 {
 	private ["_object"];
@@ -236,7 +251,7 @@ if (_status == "ObjectStreamStart") then {
 				_DZE_VehObjects set [count _DZE_VehObjects,_object]; 
 				_object call fnc_veh_ResetEH;
 				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
-				_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle
+				_serverVehicleCounter = _serverVehicleCounter + 1; // total each vehicle
 			} else {
 				_object enableSimulation true;
 			};
@@ -429,7 +444,7 @@ if (_hiveLoaded) then {
 		} count (dayz_centerMarker nearObjects ["building",DynamicVehicleArea]);
 		_roadList = dayz_centerMarker nearRoads DynamicVehicleArea;
 		
-		_vehLimit = MaxVehicleLimit - (count _serverVehicleCounter);
+		_vehLimit = MaxVehicleLimit - _serverVehicleCounter;
 		if (_vehLimit > 0) then {
 			diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
 			for "_x" from 1 to _vehLimit do {call spawn_vehicles;};
