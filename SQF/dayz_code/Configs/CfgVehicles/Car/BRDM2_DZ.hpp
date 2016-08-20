@@ -6,6 +6,7 @@ class BRDM2_HQ_TK_GUE_EP1_DZ: BRDM2_HQ_TK_GUE_EP1 {
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
+	class TransportWeapons {};
 	armor = 85;
 	damageResistance = 0.032;
 	commanderCanSee = 2+16+32;
