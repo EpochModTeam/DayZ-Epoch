@@ -18,6 +18,7 @@ class ItemSandbag : CA_Magazine
 			require[] = {"ItemEtool"};
 			consume[] = {"ItemSandbag"};
 			create = "Sandbag1_DZ";
+			//bypass RoadCheck
 			byPass = "byPassRoadCheck";
 		};
 		/*
@@ -28,6 +29,8 @@ class ItemSandbag : CA_Magazine
 			require[] = {"ItemEtool"};
 			consume[] = {"ItemSandbag"};
 			create = "StashSmall";
+			//Bypass collision test
+			bypassCollision = "true";
 		}; 
 		*/
 		class Crafting

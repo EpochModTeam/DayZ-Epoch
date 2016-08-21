@@ -5,7 +5,7 @@ private ["_classType","_item","_action","_missingTools","_missingItem","_emergin
 "_unit","_bbb","_ubb","_check","_min","_max","_myX","_myY","_checkBuildingCollision","_objColliding","_inside","_checkOnRoad",
 "_roadCollide","_checkBeam2Magnet","_a","_beams","_best","_b","_d","_checkNotBuried","_elevation","_position","_delta","_overElevation",
 "_maxplanting","_safeDistance","_dir","_angleRef","_tmp","_actionCancel","_sfx","_actionBuild","_byPassChecks","_keepOnSlope",
-"_ok","_missing","_upgradeParts","_ownerID","_posReference"];
+"_isCollisionBypass","_ok","_missing","_upgradeParts","_ownerID","_posReference"];
 /*
 Needs a full rewrite to keep up with the demand of everything we plan to add.
 */
@@ -16,6 +16,8 @@ closeDialog 1;
 _item = _this select 0;
 _action = _this select 1;
 _classType = "ItemActions";
+
+diag_log (_item);
 
 if (count _this > 2) then {
 	_classType = _this select 2;
@@ -39,6 +41,9 @@ _byPassChecks = getText (configFile >> _isClass >> _item >> _classType >> _actio
 
 if (_byPassChecks == "") then { _byPassChecks = "BaseItems" };
 if (_ghost == "") then { _ghost = _classname; };
+
+//Remove tents and stashes from new collision system until we find a better way then build tent for hiding items.
+_isCollisionBypass = if (isText (configFile >> _isClass >> _item >> _classType >> _action >> "bypassCollision")) then { true } else { false };
 
 _text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _keepOnSlope = 0 == (getNumber (configFile >> "CfgVehicles" >> _classname >> "canbevertical"));
@@ -97,6 +102,7 @@ _upgradeParts = [];
         player removeMagazine _x;
     };
 } count _requiredParts;
+
 if (!_ok) exitWith {
     { player addMagazine _x; } foreach _upgradeParts;
     r_action_count = 0;
@@ -157,42 +163,6 @@ _maxElevation = {
     _r
 };
 
-//Collision system replaced.
-/*
-	//Is the placed object inside another object
-	_insideCheck = {
-		private ["_bbb","_building","_ubb","_unit","_check","_min","_max","_myX","_p","_myY"];
-
-		_building = _this select 0;
-		_unit = _this select 1;
-		
-		if ((typeOf _building != "") and {((sizeOf (typeOf _building) < 8) or {(_unit distance _building > (sizeOf (typeOf _building) + sizeOf (typeOf _unit))/2)})}) exitwith {false};
-		
-		_bbb = boundingBox _building;
-		_ubb = boundingBox _unit;
-		
-		_check = {
-			_min = _bbb select 0;
-			_max = _bbb select 1;
-			_myX = _p select 0;
-			_myY = _p select 1;
-			
-			(((_myX > (_min select 0)) and {(_myX < (_max select 0))}) and {((_myY > (_min select 1)) and {(_myY < (_max select 1))})})
-		};
-
-		_p = _building worldToModel (_unit modelToWorld [ (_ubb select 0) select 0, (_ubb select 0) select 1, 0]);
-		if (call _check) exitWith {true};
-		_p = _building worldToModel (_unit modelToWorld [ (_ubb select 0) select 0, (_ubb select 1) select 1, 0]);
-		if (call _check) exitWith {true};
-		_p = _building worldToModel (_unit modelToWorld [ (_ubb select 1) select 0, (_ubb select 1) select 1, 0]);
-		if (call _check) exitWith {true};
-		_p = _building worldToModel (_unit modelToWorld [ (_ubb select 1) select 0, (_ubb select 0) select 1, 0]);
-		if (call _check) exitWith {true};
-
-		false
-	};
-*/
-
 //check if building being placed and objects around placement is free to be built on.
 //Fence owners must build all the foundations by one player anyone can still upgrade (pending lock build level)
 _checkBuildingCollision =
@@ -214,7 +184,7 @@ _checkOnRoad = {
     _roadCollide = false;
     {
         _x set [2,0];
-        if (isOnRoad _x) exitWith { _roadCollide = true;};
+        if (isOnRoad _x) exitWith { _roadCollide = true; };
     } forEach ([_object, 0,0] call _getBeams);
     _roadCollide
 };
@@ -310,11 +280,17 @@ while {r_action_count != 0 and Dayz_constructionContext select 4} do {
         _object setPosATL _position;		
     };
 	
-	// check now that ghost is not colliding
-	call _checkBuildingCollision;
+	//Need to add config based bypass checks array.
+	if (!_isCollisionBypass) then {
+		// check now that ghost is not colliding
+		call _checkBuildingCollision;
+		
+		diag_log ("Collision Test");
+	};
 
     // try to dock a beam from current ghost to another beams nearby
     call _checkBeam2Magnet;
+	
     if (_best select 0 < 0.50) then {
         _position = [
             (_position select 0) + ((_best select 2) select 0) - ((_best select 1) select 0),
