@@ -45,13 +45,23 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 		if (_ammo == "") exitwith { _end = true; };
 		
 		//If _source contains no object exit. But lets not exit if the unit returns player. Maybe its his own fault.
-		if (isNull _source) then { _end = true; };
+		if (isNull _source) then {
+			_end = true;
+			if !(_ammo in ["Dragged","RunOver"]) then {
+				// Explosion with no vehicle nearby. Possible cheat. Record to block any incoming fall damage.
+				dayz_lastDamageSourceNull = true;
+				diag_log "dayz_lastDamageSourceNull triggered";
+			};
+		};
+	} else {
+		if (dayz_lastDamageSourceNull) then { _end = true; }; // Block incoming fall damage. 
 	};
 
 
 	if (_end) exitwith { 0 };
 //End Simple hack for damage ***until 2.0***
 
+dayz_lastDamageSourceNull = false;
 
 if (_unit == player) then {
 //Set player in combat
