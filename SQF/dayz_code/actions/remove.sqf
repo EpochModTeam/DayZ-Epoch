@@ -27,6 +27,9 @@ if (DZE_permanentPlot) then {
 if (_obj in DZE_DoorsLocked) exitWith {DZE_ActionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
 if (_obj getVariable ["GeneratorRunning", false]) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_89" call dayz_rollingMessages;};
 
+_PlayerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;};
+	
 _objectID 	= _obj getVariable ["ObjectID","0"];
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
@@ -90,6 +93,9 @@ while {_isOk} do {
 		_isOk = false;
 		_proceed = false;
 	};
+	
+	format[localize "str_epoch_player_163",_nameVehicle,(_counter + 1),_limit] call dayz_rollingMessages;
+
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	_dis=20;
@@ -138,8 +144,6 @@ while {_isOk} do {
 		_proceed = false;
 	};
 
-	format[localize "str_epoch_player_163",_nameVehicle,_counter,_limit] call dayz_rollingMessages;
-
 	if(_counter == _limit) exitWith {
 		_isOk = false;
 		_proceed = true;
@@ -179,13 +183,17 @@ if (_proceed && _success) then {
 	if(!isNull(_obj)) then {
 
 		_ipos = getPosATL _obj;
-
 		deleteVehicle _obj;
-
-		if(!_isWreck) then {
+		
+		if(!_isWreck && !_isWreckBuilding) then {
 			_activatingPlayer = player;
 			PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
 			publicVariableServer "PVDZ_obj_Destroy";
+		};
+
+		if (_isWreckBuilding) then {
+			PVDZ_send = [player,"RemoveObject",_ipos];
+			publicVariableServer "PVDZ_send";
 		};
 
 		format[localize "str_epoch_player_165",_nameVehicle] call dayz_rollingMessages;

@@ -124,4 +124,13 @@ switch (_variable) do {
 		PVDZE_plr_FriendRQ = _arraytosend;
 		_owner publicVariableClient "PVDZE_plr_FriendRQ";
 	};
+
+	case "RemoveObject": {
+		PVDZE_obj_Remove = _arraytosend;
+		{
+			if (isPlayer _x) then {
+				(owner _x) publicVariableClient "PVDZE_obj_Remove";
+			};
+		} forEach playableUnits;
+	};
 };

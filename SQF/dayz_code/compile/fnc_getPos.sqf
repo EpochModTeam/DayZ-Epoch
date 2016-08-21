@@ -1,6 +1,6 @@
 private "_pos";
 
-if (isNil {_this select 0}) exitWith {[0,0,0]};
+//if (isNil {_this select 0}) exitWith {[0,0,0]};
 _thingy = _this select 0;
 _pos = getPosASL _thingy;
 
