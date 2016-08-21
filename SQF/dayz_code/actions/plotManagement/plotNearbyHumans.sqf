@@ -1,13 +1,19 @@
-private ["_closePeople","_friendUID","_friendName"];
+private ["_closePeople","_friendUID","_friendName","_userList"];
+disableSerialization;
 
-lbClear 7001;
-if (!DZE_plotManagementMustBeClose) then {_closePeople = playableUnits;} else {_closePeople = player nearEntities ["CAManBase", 10];};
-Humans = [];
+_userList = (findDisplay 711194) displayCtrl 7001;
+
+lbClear _userList;
+
+_closePeople = if (DZE_plotManagementMustBeClose) then { player nearEntities ["CAManBase", 10] } else { playableUnits };
+
 {
 	if (isPlayer _x) then {
 		_friendUID = [_x] call FNC_GetPlayerUID;
 		_friendName = name _x;
-		Humans  =  Humans + [[_friendUID,toArray _friendName]];
-		lbAdd [7001, _friendName];
+		_userList lbAdd _friendName;
+		_userList lbSetData [(lbSize _userList) -1,_friendUID];
 	};
 } forEach _closePeople;
+
+lbSort _userList;

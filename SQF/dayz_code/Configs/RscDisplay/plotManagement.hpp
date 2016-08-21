@@ -12,19 +12,19 @@ class PlotManagement
 			h = 0.65 * safezoneH;
 			colorBackground[] = {0,0,0,0.8};
 		};	
-		
-	class RscText_7007: ZSC_RscTextT
+
+		class RscText_7007: ZSC_RscTextT
 		{
 			idc = 7007;
 			text = $STR_EPOCH_ACTIONS_MANAGEPLOT;
 			x = 0.30 * safezoneW + safezoneX;
 			y = 0.15 * safezoneH + safezoneY;
 			w = 0.30 * safezoneW;
-			h = 0.05 * safezoneH;		
-			colorBackground[] = {0,0,0,0.8};	
-			colorText[] = {1,1,1,1};			
+			h = 0.05 * safezoneH;
+			colorBackground[] = {0,0,0,0.8};
+			colorText[] = {1,1,1,1};
 		};
-		
+
 		class RscShortcutButton_7009: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
@@ -34,8 +34,8 @@ class PlotManagement
 			w = 0.08 * safezoneW;
 			onButtonClick = "call PlotPreview;";
 		};
-		
-				class RscShortcutButton_7010: ZSC_RscButtonMenuBlue
+
+		class RscShortcutButton_7010: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_REFRESH;
@@ -44,8 +44,8 @@ class PlotManagement
 			w = 0.08 * safezoneW;
 			onButtonClick = "'preview' call MaintainPlot;";
 		};
-		
-				class RscShortcutButton_7011: ZSC_RscButtonMenuBlue
+
+		class RscShortcutButton_7011: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
 			text = $STR_EPOCH_ACTIONS_MAINTAIN;
@@ -54,6 +54,7 @@ class PlotManagement
 			w = 0.08 * safezoneW;
 			onButtonClick = "'maintain' call MaintainPlot;";
 		};
+
 		class RscText_7012: ZSC_RscTextT
 		{
 			idc = 7012;
@@ -61,11 +62,11 @@ class PlotManagement
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.30 * safezoneH + safezoneY;
 			w = 0.30 * safezoneW;
-			h = 0.05 * safezoneH;			
+			h = 0.05 * safezoneH;
 			colorText[] = {1,1,1,1};
 			
 		};
-		
+
 		class RscText_7014:  RscStructuredText
 		{
 			idc = 7014;
@@ -74,11 +75,11 @@ class PlotManagement
 			y = 0.15 * safezoneH + safezoneY;
 			w = 0.30 * safezoneW;
 			h = 0.03 * safezoneH;
-			class Attributes {
+			class Attributes { 
 				align = "right";
 			};
 		};
-		
+
 		class RscText_7013: ZSC_RscTextT
 		{
 			idc = 7013;
@@ -89,8 +90,7 @@ class PlotManagement
 			h = 0.03 * safezoneH;
 			colorText[] = {1,1,1,1};
 		};
-		
-		
+
 		class RscText_7008: ZSC_RscTextT
 		{
 			idc = -1;
@@ -100,7 +100,8 @@ class PlotManagement
 			w = 0.13 * safezoneW;
 			h = 0.03 * safezoneH;
 			colorText[] = {1,1,1,1};
-		};		
+		};
+
 		class RscText_7003: ZSC_RscTextT
 		{
 			idc = -1;
@@ -111,8 +112,7 @@ class PlotManagement
 			h = 0.03 * safezoneH;
 			colorText[] = {1,1,1,1};
 		};
-		
-		
+
 		class RscListbox_7001: RscListbox
 		{
 			idc = 7001;
@@ -123,6 +123,7 @@ class PlotManagement
 			soundSelect[] = {"",0.1,1};
 			colorBackground[] = {0.1,0.1,0.1,0.8};
 		};
+
 		class RscListbox_7002: RscListbox
 		{
 			idc = 7002;
@@ -133,6 +134,7 @@ class PlotManagement
 			soundSelect[] = {"",0.1,1};
 			colorBackground[] = {0.1,0.1,0.1,0.8};
 		};
+
 		class RscShortcutButton_7004: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
@@ -140,8 +142,9 @@ class PlotManagement
 			x = 0.33 * safezoneW + safezoneX;
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "[(lbCurSel 7001)] call PlotAddFriend;";
+			onButtonClick = "[lbData [7001,lbCurSel 7001]] call PlotAddFriend;";
 		};
+
 		class RscShortcutButton_7005: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
@@ -150,7 +153,8 @@ class PlotManagement
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
 			onButtonClick = "[(lbCurSel 7002)] call PlotRemoveFriend;";
-		};	
+		};
+
 		class RscShortcutButton_7006: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
@@ -158,9 +162,7 @@ class PlotManagement
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.74 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-
 			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 9000);";
-		};		
-
+		};
 	};
 };
