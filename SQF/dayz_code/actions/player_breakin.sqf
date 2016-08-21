@@ -99,7 +99,7 @@ while {_isOk} do {
 		};
 		
 		if (_isWoodenGate) then {
-			if ([0.06] call fn_chance) then {
+			if ([0.04] call fn_chance) then {
 				_isOk = false;
 				_proceed = true;
 				_brokein = true;

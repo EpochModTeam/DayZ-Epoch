@@ -17,7 +17,7 @@ _item = _this select 0;
 _action = _this select 1;
 _classType = "ItemActions";
 
-diag_log (_item);
+//diag_log (_item);
 
 if (count _this > 2) then {
 	_classType = _this select 2;
@@ -285,7 +285,7 @@ while {r_action_count != 0 and Dayz_constructionContext select 4} do {
 		// check now that ghost is not colliding
 		call _checkBuildingCollision;
 		
-		diag_log ("Collision Test");
+		//diag_log ("Collision Test");
 	};
 
     // try to dock a beam from current ghost to another beams nearby

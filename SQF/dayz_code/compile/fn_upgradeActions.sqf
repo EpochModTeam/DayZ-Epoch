@@ -46,7 +46,7 @@ if (!isNull _cursorTarget and !_inVehicle and (player distance _cursorTarget < 4
         s_player_building = -1;
     };
 	
-	if (_maintenanceMode and (_cursorTarget iskindof "DZ_buildables") and isClass(configFile >> "CfgVehicles" >> (typeof _cursorTarget) >> "Maintenance")) then {
+	if ((_maintenanceMode or (damage _cursorTarget > 0)) and (_cursorTarget iskindof "DZ_buildables") and isClass(configFile >> "CfgVehicles" >> (typeof _cursorTarget) >> "Maintenance")) then {
 	    if (s_player_maintenance < 0) then {
             s_player_maintenance = player addAction [format[localize "str_maintenance",_text], "\z\addons\dayz_code\actions\object_maintenance.sqf",_cursorTarget, 0, false, true, "", ""];
         };
