@@ -8,7 +8,9 @@ if (MaxVehicleLimit > 300) then {
 };
 AllowedVehiclesList = [
 	["AH6X_DZ",_Ratio3],
-	["AN2_DZ",_Ratio2],
+	["AN2_DZ",_Ratio1], //Green
+	["AN2_2_DZ",_Ratio1], //Red and white
+	["An2_2_TK_CIV_EP1_DZ",_Ratio1], //Green and white
 	["ArmoredSUV_PMC_DZE",_Ratio1],
 	["ATV_CZ_EP1",_Ratio3],
 	["ATV_US_EP1",_Ratio3],
@@ -27,10 +29,10 @@ AllowedVehiclesList = [
 	["GAZ_Vodnik_MedEvac",_Ratio1],
 	["GLT_M300_LT",_Ratio3],
 	["GLT_M300_ST",_Ratio3],
-	["GNT_C185",_Ratio1],
-	["GNT_C185C",_Ratio1],
-	["GNT_C185R",_Ratio1],
-	["GNT_C185U",_Ratio1],
+	["GNT_C185_DZ",_Ratio1],
+	["GNT_C185C_DZ",_Ratio1],
+	["GNT_C185R_DZ",_Ratio1],
+	["GNT_C185U_DZ",_Ratio1],
 	["hilux1_civil_1_open_DZE",_Ratio3],
 	["hilux1_civil_2_covered_DZE",_Ratio3],
 	["hilux1_civil_3_open_DZE",_Ratio3],
