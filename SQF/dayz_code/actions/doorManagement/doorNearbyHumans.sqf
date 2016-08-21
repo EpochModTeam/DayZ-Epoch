@@ -5,7 +5,7 @@ _userList = (findDisplay 711195) displayCtrl 7101;
 
 lbClear _userList;
 
-if (!DZE_doorManagementMustBeClose) then { _closePeople = playableUnits; } else { _closePeople = player nearEntities ["CAManBase", 10]; };
+_closePeople = if (DZE_doorManagementMustBeClose) then { player nearEntities ["CAManBase", 10] } else { playableUnits };
 
 {
 	if (isPlayer _x) then {

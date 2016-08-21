@@ -5,7 +5,7 @@ _userList = (findDisplay 711194) displayCtrl 7001;
 
 lbClear _userList;
 
-if (!DZE_plotManagementMustBeClose) then { _closePeople = playableUnits; } else { _closePeople = player nearEntities ["CAManBase", 10]; };
+_closePeople = if (DZE_plotManagementMustBeClose) then { player nearEntities ["CAManBase", 10] } else { playableUnits };
 
 {
 	if (isPlayer _x) then {

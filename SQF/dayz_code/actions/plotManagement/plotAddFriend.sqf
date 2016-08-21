@@ -15,7 +15,7 @@ _friends = _thePlot getVariable ["plotfriends",[]];
 _toAdd = [_friendUID,toArray _friendName];
 _inList = false;
 
-{ if ((_x  select 0) == (_toAdd select 0)) exitWith { _inList = true; }; } count _friends;
+{ if ((_x  select 0) == (_toAdd select 0)) exitWith { _inList = true; }; false } count _friends;
 if (_inList) exitWith { systemChat localize "STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST"; };
 if ((count _friends) == DZE_MaxPlotFriends) exitWith { systemChat format[localize "STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT", DZE_MaxPlotFriends]; };
 
