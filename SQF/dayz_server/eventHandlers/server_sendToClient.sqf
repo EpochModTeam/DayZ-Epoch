@@ -128,8 +128,9 @@ switch (_variable) do {
 	case "RemoveObject": {
 		PVDZE_obj_Remove = _arraytosend;
 		{
-			if (isPlayer _x) then {
-				(owner _x) publicVariableClient "PVDZE_obj_Remove";
+			_pOwner = owner _x;
+			if (isPlayer _x && {_pOwner != _owner}) then {
+				_pOwner publicVariableClient "PVDZE_obj_Remove";
 			};
 		} forEach playableUnits;
 	};
