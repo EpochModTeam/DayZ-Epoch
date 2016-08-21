@@ -210,10 +210,10 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, '"cinder_wall_kit"', '"hal
 -- ----------------------------
 -- Updated shotgun ammo names from 1.8.7
 -- ----------------------------
-UPDATE `Traders_DATA` SET `item` = '["2Rnd_12Gauge_Slug",1]' WHERE `item` = '["2Rnd_shotgun_74slug",1]';
-UPDATE character_data SET Backpack = REPLACE(Backpack, '"2Rnd_shotgun_74slug"', '"2Rnd_12Gauge_Slug"') WHERE INSTR(Backpack, '"2Rnd_shotgun_74slug"') > 0;
-UPDATE character_data SET Inventory = REPLACE(Inventory, '"2Rnd_shotgun_74slug"', '"2Rnd_12Gauge_Slug"') WHERE INSTR(Inventory, '"2Rnd_shotgun_74slug"') > 0;
-UPDATE object_data SET Inventory = REPLACE(Inventory, '"2Rnd_shotgun_74slug"', '"2Rnd_12Gauge_Slug"') WHERE INSTR(Inventory, '"2Rnd_shotgun_74slug"') > 0;
+UPDATE `Traders_DATA` SET `item` = '["2Rnd_12Gauge_Slug",1]' WHERE `item` = '["2Rnd_shotgun_74Slug",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, '"2Rnd_shotgun_74Slug"', '"2Rnd_12Gauge_Slug"') WHERE INSTR(Backpack, '"2Rnd_shotgun_74Slug"') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '"2Rnd_shotgun_74Slug"', '"2Rnd_12Gauge_Slug"') WHERE INSTR(Inventory, '"2Rnd_shotgun_74Slug"') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '"2Rnd_shotgun_74Slug"', '"2Rnd_12Gauge_Slug"') WHERE INSTR(Inventory, '"2Rnd_shotgun_74Slug"') > 0;
 
 UPDATE `Traders_DATA` SET `item` = '["2Rnd_12Gauge_Buck",1]' WHERE `item` = '["2Rnd_shotgun_74Pellets",1]';
 UPDATE character_data SET Backpack = REPLACE(Backpack, '"2Rnd_shotgun_74Pellets"', '"2Rnd_12Gauge_Buck"') WHERE INSTR(Backpack, '"2Rnd_shotgun_74Pellets"') > 0;
