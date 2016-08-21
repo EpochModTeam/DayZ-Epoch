@@ -473,6 +473,7 @@ class CfgVehicles {
 	#include "Car\Pickup_PK_INS.hpp"
 	#include "Car\Offroad_DSHKM_INS.hpp"
 	#include "Car\UralCivil_DZ.hpp"
+	#include "Car\BRDM2_DZ.hpp"
 	//Helicopter's
 	#include "Helicopter\MI17.hpp"
 	#include "Helicopter\UH1H.hpp"
@@ -493,6 +494,7 @@ class CfgVehicles {
 	#include "Plane\AN2_DZ.hpp"
 	#include "Plane\MV22.hpp"
 	#include "Plane\C130.hpp"
+	#include "Plane\Cessna_DZ.hpp"
 	//Bikes
 	#include "Bikes\ATV_US_EP1.hpp"
 	#include "Bikes\ATV_CZ_EP1.hpp"
