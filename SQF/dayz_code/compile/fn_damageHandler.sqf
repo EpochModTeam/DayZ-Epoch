@@ -143,10 +143,10 @@ if (_unit == player) then {
 
     //Log to server :-( OverProcessing really not needed.
     if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {((_source isKindOf "CAManBase") AND {(!local _source )})}) then {
+		_wpst = weaponState _source;
         if (diag_ticktime-(_source getVariable ["lastloghit",0])>2) then {
             private ["_sourceWeap"];
             _source setVariable ["lastloghit",diag_ticktime];
-            _wpst = weaponState _source;
 
             _sourceDist = round(_unit distance _source);
             _sourceWeap = switch (true) do {
