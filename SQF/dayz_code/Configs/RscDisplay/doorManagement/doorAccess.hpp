@@ -26,7 +26,7 @@ class DoorAccess
 			h = 0.50 * safezoneH;
 			colorBackground[] = {0,0,0,0.8};
 		};
-		
+
 		class ZupaHeader_2: ZSC_RscTextT
 		{
 			idc = -1;
@@ -38,8 +38,7 @@ class DoorAccess
 			colorBackground[] = {0,0,0,0.8};
 			colorText[] = {1,1,1,1};
 		};
-		
-		
+
 		class ZupaButton_1 : ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
@@ -50,7 +49,7 @@ class DoorAccess
 			w = 0.20;
 			onButtonClick = "keypadCancel = false; call player_unlockDoor";
 		};
-		
+
 		class ZupaButton_4 : ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
@@ -61,7 +60,7 @@ class DoorAccess
 			w = 0.20;
 			onButtonClick = "call player_enterCode";
 		};
-		
+
 		class ZupaButton_2: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
