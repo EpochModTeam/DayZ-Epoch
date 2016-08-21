@@ -554,8 +554,8 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1 {
 // Unarmed medevac
 class UH60M_MEV_EP1;
 class UH60M_MEV_EP1_DZ : UH60M_MEV_EP1 {
-	displayname = "HH-60M MedEvac";
-	displaynameshort = "HH-60M MedEvac";
+	displayname = "UH-60M MedEvac";
+	displaynameshort = "UH-60M MedEvac";
 	scope = public; 
 	crew = ""; 
 	typicalCargo[] = {}; 

@@ -32,7 +32,7 @@ class AN2_2_DZ : AN2_DZ
 	};
 };
 
-class An2_2_TK_CIV_EP1: An2_Base_EP1 {};
+class An2_2_TK_CIV_EP1;
 class An2_2_TK_CIV_EP1_DZ : An2_2_TK_CIV_EP1
 {
 	displayname = $STR_VEH_NAME_AN2;
