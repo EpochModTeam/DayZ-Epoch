@@ -19,7 +19,17 @@ class Category_517 {
 		buy[] = {4,"ItemGoldBar10oz"};
 		sell[] = {2,"ItemGoldBar10oz"};
 	};
-	class AN2_DZ {
+	class AN2_DZ { //Green
+		type = "trade_any_vehicle";
+		buy[] = {4,"ItemGoldBar10oz"};
+		sell[] = {2,"ItemGoldBar10oz"};
+	};
+	class AN2_2_DZ { //Red and white
+		type = "trade_any_vehicle";
+		buy[] = {4,"ItemGoldBar10oz"};
+		sell[] = {2,"ItemGoldBar10oz"};
+	};
+	class An2_2_TK_CIV_EP1_DZ { //Green and white
 		type = "trade_any_vehicle";
 		buy[] = {4,"ItemGoldBar10oz"};
 		sell[] = {2,"ItemGoldBar10oz"};
