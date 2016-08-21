@@ -47,6 +47,7 @@
 [NEW] 35 new male clothing classes added. #1732 #1734 @AirWavesMan
 [NEW] Added new BRDM2, AN2, HMMWV, Mi17 and Cessna _DZ classes with radar disabled. #1746 @AirWavesMan
 [NEW] Added SCAR Mk16 and Mk17 variants, L86 and AA12 to loot tables and traders. #1743 @AirWavesMan
+[NEW] Players can now manually push stuck planes backwards to free them. @ebaydayz
 
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
 [CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)

@@ -671,6 +671,9 @@
 			<German>Fahrzeug ausschlachten</German>
 			<Dutch>Demonteer voertuig</Dutch>
 		</Key>
+		<Key ID="str_actions_pilot_seat">
+			<English>You must get into the pilot&apos;s seat first.</English>
+		</Key>
 		<Key ID="str_actions_helipilotseat">
 			<English>To pilot&apos;s seat</English>
 			<Spanish>Al asiento de piloto</Spanish>
@@ -859,6 +862,9 @@
 			<Spanish>Voltear %1</Spanish>
 			<French>Retourner %1</French>
 			<Czech>Otočit %1</Czech>
+		</Key>
+		<Key ID="str_actions_push_plane">
+			<English>Push %1</English>
 		</Key>
 		<Key ID="str_actions_stats">
 			<English>Enable Stats</English>
@@ -16117,6 +16123,9 @@
 			<Russian>Отмена</Russian>
 			<German>Abbrechen</German>
 			<Czech>Zrušit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_NEED_HELP">
+			<English>You need more people to help you push.</English>
 		</Key>
 		<Key ID="str_fireplace_noMatches">
 			<English>You need matches to build a fireplace</English>

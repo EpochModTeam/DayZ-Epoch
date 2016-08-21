@@ -5,7 +5,16 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- [] call fnc_usec_selfActions;
 ************************************************************/
 if (DZE_ActionInProgress) exitWith {};
-private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names","_hasKey","_oldOwner","_hasAttached","_isAnimal","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild","_player_lockUnlock_crtl","_displayName","_hasIgnators","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached","_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget","_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan","_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isCampSite","_isDisallowRefuel","_isDog","_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock","_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo","_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar"];
+private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names",
+"_hasKey","_oldOwner","_hasAttached","_isAnimal","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild",
+"_player_lockUnlock_crtl","_displayName","_hasIgnators","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached",
+"_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget",
+"_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan",
+"_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isCampSite","_isDisallowRefuel","_isDog",
+"_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
+"_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
+"_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
+"_isPlane"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -229,13 +238,14 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_typeOfCursorTarget = typeOf _cursorTarget;
 	_isVehicle = _cursorTarget isKindOf "AllVehicles";
 	_isBicycle = _cursorTarget isKindOf "Bicycle";
+	_isPlane = _cursorTarget isKindOf "Plane";
 	_isMan = _cursorTarget isKindOf "Man";
 	_isAnimal = _cursorTarget isKindOf "Animal";
 	_isZombie = _cursorTarget isKindOf "zZombie_base";
 	_isDestructable = _cursorTarget isKindOf "BuiltItems";
 	_isHarvested = _cursorTarget getVariable["meatHarvested",false];
 	_isGenerator = _cursorTarget isKindOf "Generator_DZ";
-	_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"];
+	//_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"]; //Checked in player_flipvehicle
 	_isFuel = false;
 	_hasBarrel = "ItemFuelBarrel" in _magazinesPlayer;
 	_hasFuel20 = "ItemJerrycan" in _magazinesPlayer;
@@ -282,13 +292,22 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	//flip vehicle
-	if (_isVehicletype && {!(canMove _cursorTarget)} && {_isAlive} && {player distance _cursorTarget >= 2} && {(count (crew _cursorTarget))== 0} && {((vectorUp _cursorTarget) select 2) < 0.5}) then {
+	if (_isVehicle && {!_isAnimal} && {!_isMan} && {!(canMove _cursorTarget)} && {_isAlive} && {player distance _cursorTarget >= 2} && {(count (crew _cursorTarget))== 0} && {((vectorUp _cursorTarget) select 2) < 0.5}) then {
 		if (s_player_flipveh < 0) then {
 			s_player_flipveh = player addAction [format[localize "str_actions_flipveh",_text], "\z\addons\dayz_code\actions\player_flipvehicle.sqf",_cursorTarget, 1, true, true];
 		};
 	} else {
 		player removeAction s_player_flipveh;
 		s_player_flipveh = -1;
+	};
+	
+	if (_isPlane && _isAlive && count (crew _cursorTarget) == 0) then {
+		if (s_player_pushPlane < 0) then {
+			s_player_pushPlane = player addAction [format[localize "str_actions_push_plane",_text], "\z\addons\dayz_code\actions\player_pushPlane.sqf",_cursorTarget,1,true,true];
+		};
+	} else {
+		player removeAction s_player_pushPlane;
+		s_player_pushPlane = -1;
 	};
 	
 	//Allow player to fill Fuel can
@@ -1094,6 +1113,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//s_player_forceSave = -1;
 	player removeAction s_player_flipveh;
 	s_player_flipveh = -1;
+	player removeAction s_player_pushPlane;
+	s_player_pushPlane = -1;
 	player removeAction s_player_sleep;
 	s_player_sleep = -1;
 	player removeAction s_player_deleteBuild;
