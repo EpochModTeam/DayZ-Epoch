@@ -26,7 +26,7 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 	if (isNull dayz_getout) then {
 		_vehicleArray = nearestObjects [(getposATL (vehicle _unit)),["Car","Helicopter","Motorcycle","Ship"],3];
 		{
-			if ((speed _x > 10) or (speed _x < 8)) exitwith { dayz_HitBy = _x; };
+			if ((speed _x > 10) or (speed _x < -8)) exitwith { dayz_HitBy = _x; };
 		} count _vehicleArray;
 	};
 
