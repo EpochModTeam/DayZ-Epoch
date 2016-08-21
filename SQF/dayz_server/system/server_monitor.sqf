@@ -66,6 +66,7 @@ if (_legacyStreamingMethod) then {
 	profileNamespace setVariable["lastFN",_fileName];
 	saveProfileNamespace;
 	if (_status == "ObjectStreamStart") then {
+		_hiveLoaded = true;
 		_myArray = Call Compile PreProcessFile _fileName;
 		_key = format["CHILD:302:%1:%2:",_lastFN, _legacyStreamingMethod];
 		_result = _key call server_hiveReadWrite; //deletes previous object data dump
