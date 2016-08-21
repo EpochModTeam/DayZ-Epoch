@@ -863,7 +863,7 @@
 			<French>Retourner %1</French>
 			<Czech>Otočit %1</Czech>
 		</Key>
-		<Key ID="str_actions_push_plane">
+		<Key ID="str_actions_push">
 			<English>Push %1</English>
 		</Key>
 		<Key ID="str_actions_stats">

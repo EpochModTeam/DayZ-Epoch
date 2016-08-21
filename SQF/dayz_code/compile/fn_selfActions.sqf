@@ -301,9 +301,9 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_flipveh = -1;
 	};
 	
-	if (_isPlane && _isAlive && count (crew _cursorTarget) == 0) then {
+	if (_isPlane && {_isAlive} && {count (crew _cursorTarget) == 0}) then {
 		if (s_player_pushPlane < 0) then {
-			s_player_pushPlane = player addAction [format[localize "str_actions_push_plane",_text], "\z\addons\dayz_code\actions\player_pushPlane.sqf",_cursorTarget,1,true,true];
+			s_player_pushPlane = player addAction [format[localize "str_actions_push",_text], "\z\addons\dayz_code\actions\player_pushPlane.sqf",_cursorTarget,1,true,true];
 		};
 	} else {
 		player removeAction s_player_pushPlane;
