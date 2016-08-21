@@ -13,7 +13,7 @@ _DZE_VehObjects = [];
 dayz_versionNo = getText (configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
 _hiveLoaded = false;
-_serverVehicleCounter = 0;
+_serverVehicleCounter = [];
 _tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
 _respawnPos = getMarkerpos "respawn_west";
 diag_log "HIVE: Starting";
@@ -48,10 +48,10 @@ diag_log "HIVE: Request sent";
 _myArray = [];
 _val = 0;
 _status = _result select 0; //Process result
+_val = _result select 1;
 if (_legacyStreamingMethod) then {
 	if (_status == "ObjectStreamStart") then {
 		_hiveLoaded = true;
-		_val = _result select 1;
 		//Stream Objects
 		diag_log ("HIVE: Commence Object Streaming...");
 		for "_i" from 1 to _val do  {
@@ -61,15 +61,17 @@ if (_legacyStreamingMethod) then {
 		};
 	};
 } else {
-	_fileName = _key call server_hiveReadWrite;
-	_lastFN = profileNamespace getVariable["lastFN",""];
-	profileNamespace setVariable["lastFN",_fileName];
-	saveProfileNamespace;
-	if (_status == "ObjectStreamStart") then {
-		_hiveLoaded = true;
-		_myArray = Call Compile PreProcessFile _fileName;
-		_key = format["CHILD:302:%1:%2:",_lastFN, _legacyStreamingMethod];
-		_result = _key call server_hiveReadWrite; //deletes previous object data dump
+	if (_val > 0) then {
+		_fileName = _key call server_hiveReadWrite;
+		_lastFN = profileNamespace getVariable["lastFN",""];
+		profileNamespace setVariable["lastFN",_fileName];
+		saveProfileNamespace;
+		if (_status == "ObjectStreamStart") then {
+			_hiveLoaded = true;
+			_myArray = Call Compile PreProcessFile _fileName;
+			_key = format["CHILD:302:%1:%2:",_lastFN, _legacyStreamingMethod];
+			_result = _key call server_hiveReadWrite; //deletes previous object data dump
+		};
 	};
 };
 
@@ -252,7 +254,7 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 				_DZE_VehObjects set [count _DZE_VehObjects,_object]; 
 				_object call fnc_veh_ResetEH;
 				if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
-				_serverVehicleCounter = _serverVehicleCounter + 1; // total each vehicle
+				_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle
 			} else {
 				_object enableSimulation true;
 			};
@@ -445,7 +447,7 @@ if (_hiveLoaded) then {
 		} count (dayz_centerMarker nearObjects ["building",DynamicVehicleArea]);
 		_roadList = dayz_centerMarker nearRoads DynamicVehicleArea;
 		
-		_vehLimit = MaxVehicleLimit - _serverVehicleCounter;
+		_vehLimit = MaxVehicleLimit - (count _serverVehicleCounter);
 		if (_vehLimit > 0) then {
 			diag_log ("HIVE: Spawning # of Vehicles: " + str(_vehLimit));
 			for "_x" from 1 to _vehLimit do {call spawn_vehicles;};
