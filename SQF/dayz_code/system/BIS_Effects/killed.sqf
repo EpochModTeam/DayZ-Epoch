@@ -8,7 +8,7 @@ _KillEject = { //leave as local compile for a tiny bit more security
 		_radius =  _x select 1;
 		if ((isInTraderCity || !canbuild) && {(player distance _SZPos) < _radius}) then {_cancel = true;};
 	} count DZE_SafeZonePosArray;
-	player action ["Eject",vehicle player]; //eject player so their gear is accessible if dead and they aren't stuck in wreck if alive
+	player action ["getOut",vehicle player]; //eject player so their gear is accessible if dead and they aren't stuck in wreck if alive
 	if (!_cancel) then {
 		sleep 0.01; //don't use uisleep here
 		[player, "explosion"] spawn player_death;
