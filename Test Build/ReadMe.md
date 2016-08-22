@@ -23,6 +23,8 @@ Install instructions:
 
 10. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
 
+Note: Make sure both your server and client are updated to current A2OA stable 1.63.131129 or newer.
+
 Current Version: **EpochTest-106-RC1**
 
 Build Date: **August 12th 2016**
