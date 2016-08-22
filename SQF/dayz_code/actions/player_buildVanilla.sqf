@@ -87,7 +87,7 @@ if (!_ok) exitWith {
 
 _posReference = [player] call FNC_GetPos;
 _canBuild = [_posReference, _item, false] call DZE_BuildChecks;
-if !(_canBuild select 0) exitWith {};
+if !(_canBuild select 0) exitWith {r_action_count = 0;};
 
 // lets check player has requiredParts for upgrade
 _ok = true;
