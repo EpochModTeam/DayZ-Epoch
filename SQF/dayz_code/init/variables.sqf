@@ -516,6 +516,9 @@ DZE_isNewStorage = ["VaultStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ"
 DZE_isDestroyableStorage = ["OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ"];
 helperDetach = false;
 DZE_snapExtraRange = 0;
+DZE_tradeVehicle = ["trade_any_vehicle","trade_any_vehicle_free","trade_any_vehicle_old","trade_any_bicycle","trade_any_bicycle_old","trade_any_boat","trade_any_boat_old"];
+DZE_tradeVehicleKeyless = ["trade_any_bicycle","trade_any_bicycle_old","trade_any_vehicle_free"];
+DZE_tradeObject = DZE_tradeVehicle + ["trade_backpacks"];
 if (isNil "DZE_plotOwnershipExclusions") then {
 	DZE_plotTakeOwnershipItems = DayZ_SafeObjects - (DZE_LockableStorage + ["Plastic_Pole_EP1_DZ","DZ_storage_base"]);
 };

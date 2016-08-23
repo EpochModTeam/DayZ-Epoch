@@ -12,7 +12,7 @@ _count = 0;
 	_name = _x select 0;
 	_type = _x select 1;
 	
-	if (_type in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
+	if (_type in DZE_tradeVehicle) then {
 		_count = { local _x } count (nearestObjects [(getPosATL player), [_name], Z_VehicleDistance]);
 	};
 

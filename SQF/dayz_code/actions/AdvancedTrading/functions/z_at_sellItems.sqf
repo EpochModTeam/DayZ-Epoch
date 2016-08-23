@@ -88,7 +88,7 @@ _sellVehicle = {
 			_bpArray set [count(_bpArray),_name];
 			_bpCheckArray set [count(_bpCheckArray),[_x select 2, _x select 11]];
 		};
-	case (_type in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) :
+	case (_type in DZE_tradeVehicle) :
 		{
 			if (local Z_vehicle) then {
 				_VehKey = [Z_vehicle, _type] call _sellVehicle;
@@ -125,7 +125,7 @@ if (Z_SellingFrom == 2) then {
 	_bagTraded = false;
 
 	{
-		if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
+		if ((_x select 1) in DZE_tradeVehicle) then {
 			_localResult = [_vehArray, (_x select 1)] call DZE_deleteTradedVehicle;
 			if (_localResult == 1) then {_vehTraded = true;};
 		} else {

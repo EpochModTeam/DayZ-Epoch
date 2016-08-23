@@ -48,7 +48,7 @@ if (Z_SingleCurrency) then {
 			_backpacksToBuy = _backpacksToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2)); // _price * _amount
 		};
-		if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
+		if ((_x select 1) in DZE_tradeVehicle) then {
 			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2)); // _price * _amount
 		};
@@ -86,7 +86,7 @@ if (Z_SingleCurrency) then {
 			_backpacksToBuy = _backpacksToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
 		};
-		if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
+		if ((_x select 1) in DZE_tradeVehicle) then {
 			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
 		};
@@ -128,7 +128,7 @@ if (_enoughMoney) then {
 		_buyingType = _this select 1;
 		_keySelected = "0";
 		_isKeyOK= false;
-		if (_buyingType in ["trade_any_vehicle_free", "trade_any_bicycle", "trade_any_bicycle_old"]) then {
+		if (_buyingType in DZE_tradeVehicleKeyless) then {
 			_isKeyOK = true;
 		} else {
 			_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
@@ -152,7 +152,7 @@ if (_enoughMoney) then {
 		_near = nearestObjects [player,[_part_out],50];
 		[_part_out,_sign,_near] spawn fn_waitForObject;
 		
-		if (_buyingType in ["trade_any_vehicle_free", "trade_any_bicycle", "trade_any_bicycle_old"]) then {
+		if (_buyingType in DZE_tradeVehicleKeyless) then {
 			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,"0",_activatingPlayer];
 		} else {
 			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
@@ -173,7 +173,7 @@ if (_enoughMoney) then {
 			if (_x select 1 == "trade_items") then {
 				_backpack addMagazineCargoGlobal  [_x select 0, _x select 9];
 			};				
-			if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
+			if ((_x select 1) in DZE_tradeVehicle) then {
 				_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
 				if (_item2Add != "0") then {
 					_backpack addWeaponCargoGlobal  [_item2Add, 1];
@@ -195,7 +195,7 @@ if (_enoughMoney) then {
 			if (_x select 1 == "trade_backpacks") then {
 				Z_vehicle addBackpackCargoGlobal [_x select 0, _x select 9];
 			};
-			if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
+			if ((_x select 1) in DZE_tradeVehicle) then {
 				_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
 				if (_item2Add != "0") then {
 					Z_vehicle addWeaponCargoGlobal [_item2Add, 1];
@@ -231,7 +231,7 @@ if (_enoughMoney) then {
 			if (_x select 1 == "trade_backpacks") then {
 				player addBackpack (_x select 0);
 			};
-			if ((_x select 1) in ["trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) then {
+			if ((_x select 1) in DZE_tradeVehicle) then {
 				_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
 				if (_item2Add != "0") then {
 					player addWeapon _item2Add;

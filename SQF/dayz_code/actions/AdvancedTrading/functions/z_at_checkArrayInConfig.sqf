@@ -75,7 +75,7 @@ _totalPrice = 0;
 					_pic = getText (configFile >> 'CfgWeapons' >> _y >> 'picture');
 					_text = getText (configFile >> 'CfgWeapons' >> _y >> 'displayName');
 				};
-				case (_type in ["trade_backpacks", "trade_any_vehicle", "trade_any_vehicle_free", "trade_any_vehicle_old", "trade_any_bicycle", "trade_any_bicycle_old", "trade_any_boat", "trade_any_boat_old"]) :
+				case (_type in DZE_tradeObject) :
 				{
 					_pic = getText (configFile >> 'CfgVehicles' >> _y >> 'picture');
 					_text = getText (configFile >> 'CfgVehicles' >> _y >> 'displayName');
@@ -85,7 +85,7 @@ _totalPrice = 0;
 			if (isNil '_text') then { _text = _y; };
 			_HasKey = true;
 			if (_vehTrade && {(typeOf Z_vehicle) == _y}) then {
-				if (!(_type in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"]) && DZE_SaleRequiresKey) then {
+				if (!(_type in DZE_tradeVehicleKeyless) && DZE_SaleRequiresKey) then {
 					_HasKey = [Z_vehicle, _all] call _HasKeyCheck;
 				};
 			};

@@ -17,7 +17,7 @@ _containerFindKey = {
 };
 
 if ((count _VehKey2) > 0) then {
-	if ((_VehKey2 select 0) == "0" || _delType in ["trade_any_bicycle", "trade_any_bicycle_old", "trade_any_vehicle_free"]) then {
+	if ((_VehKey2 select 0) == "0" || _delType in DZE_tradeVehicleKeyless) then {
 		_localResult2 = 1;
 	} else {
 		{
