@@ -5,22 +5,24 @@
 	Parameters: 
 	_this select 0: string - object class name to reveal
 	_this select 1: object - sign object or ObjNull if none
+	_this select 2: array - result of (nearestObjects [player,[_class],50]) before call to spawn object
 
-	["objectClassName", objNull] spawn fn_waitForObject;
+	["objectClassName", objNull, []] spawn fn_waitForObject;
 */
 
-private ["_object","_sign"];
+private ["_class","_sign","_near"];
 
-_object = _this select 0;
+_class = _this select 0;
 _sign = _this select 1;
+_near = _this select 2;
 
 waitUntil {
 	uiSleep 1;
-	!isNull (nearestObject [player,_object])
+	(count (nearestObjects [player,[_class],50]) != count _near)
 };
 
 if (!isNull _sign) then {
 	deleteVehicle _sign;
 };
 
-player reveal (nearestObject [player,_object]);
+{player reveal _x;} count (nearestObjects [player,[_class],50]);

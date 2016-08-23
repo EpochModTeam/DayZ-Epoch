@@ -1,4 +1,4 @@
-private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
+private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done","_near"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -134,10 +134,11 @@ if (_finished) then {
 						//place vehicle spawn marker (local)
 						_sign = "Sign_arrow_down_large_EP1" createVehicleLocal _location;
 						_location = [_sign] call FNC_GetPos;
+						_near = nearestObjects [player,[_part_out],50];
+						[_part_out,_sign,_near] spawn fn_waitForObject;
 
 						PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_result select 1,_activatingPlayer];
 						publicVariableServer  "PVDZE_veh_Publish2";
-						[_part_out,_sign] spawn fn_waitForObject;
 						
 						format[localize "STR_EPOCH_ACTIONS_11",_qty_in,_textPartIn,_textPartOut] call dayz_rollingMessages;
 					};

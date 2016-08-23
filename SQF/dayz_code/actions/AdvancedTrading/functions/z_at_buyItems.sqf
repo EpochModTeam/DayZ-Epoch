@@ -1,6 +1,7 @@
 private ["_weaponsToBuy","_backpacksToBuy","_toolsToBuy","_sidearmToBuy","_primaryToBuy","_priceToBuy"
 ,"_enoughMoney","_myMoney","_canBuy","_moneyInfo","_count","_success","_toolClasses","_itemsToLog"
-,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy","_hasPrimary","_p","_toolAmounts"];
+,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy","_hasPrimary","_p","_toolAmounts"
+,"_near"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
@@ -148,6 +149,8 @@ if (_enoughMoney) then {
 
 		_sign = "Sign_arrow_down_large_EP1" createVehicleLocal _location;
 		_location = [_sign] call FNC_GetPos;
+		_near = nearestObjects [player,[_part_out],50];
+		[_part_out,_sign,_near] spawn fn_waitForObject;
 		
 		if (_buyingType in ["trade_any_vehicle_free", "trade_any_bicycle", "trade_any_bicycle_old"]) then {
 			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,"0",_activatingPlayer];
@@ -155,7 +158,6 @@ if (_enoughMoney) then {
 			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
 		};
 		publicVariableServer  "PVDZE_veh_Publish2";
-		[_part_out,_sign] spawn fn_waitForObject;
 		_keySelected;
 	};
 	//systemChat localize "STR_EPOCH_PLAYER_105"; // "Stand still to complete trade". Medic animation loop no longer used.

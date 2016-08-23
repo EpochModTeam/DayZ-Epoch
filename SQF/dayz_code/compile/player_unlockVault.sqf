@@ -3,7 +3,7 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_obj","_ownerID","_alreadyPacking","_playerNear","_playerID","_claimedBy","_text","_objType","_ComboMatch"];
+private ["_obj","_ownerID","_alreadyPacking","_playerNear","_playerID","_claimedBy","_text","_objType","_ComboMatch","_near"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -58,12 +58,15 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 			disableUserInput true; // Make sure player can not modify gear while it is filling
 			(findDisplay 106) closeDisplay 0; // Close gear
 			dze_waiting = nil;
+			
+			_near = nearestObjects [player,[_unlockedClass],50];
+			[_unlockedClass,objNull,_near] spawn fn_waitForObject;
+			
 			PVDZE_handleSafeGear = [player,_obj,0];
 			publicVariableServer "PVDZE_handleSafeGear";
 			//wait for response from server to verify safe was logged before proceeding
 			waitUntil {!isNil "dze_waiting"};
 			disableUserInput false; // Safe is done filling now
-			[_unlockedClass,objNull] spawn fn_waitForObject;
 			
 			player playActionNow "Medic";
 			uiSleep 1;

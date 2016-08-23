@@ -1,7 +1,7 @@
 /*
 [_obj] spawn player_packVault;
 */
-private ["_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_packedClass","_text","_playerNear"];
+private ["_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_packedClass","_text","_playerNear","_near"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_15" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -55,13 +55,15 @@ if (!isNull _obj && alive _obj) then {
 	disableUserInput true; // Make sure player can not modify gear while it is being added
 	(findDisplay 106) closeDisplay 0; // Close gear
 	dze_waiting = nil;
+	
+	_near = nearestObjects [player,[_packedClass],50];
+	[_packedClass,objNull,_near] spawn fn_waitForObject;
+	
 	PVDZE_handleSafeGear = [player,_obj,2];
 	publicVariableServer "PVDZE_handleSafeGear";	
 	//wait for response from server to verify pack was logged and gear added before proceeding
 	waitUntil {!isNil "dze_waiting"};
 	disableUserInput false; // Gear is done being added now
-		
-	[_packedClass,objNull] spawn fn_waitForObject;
 	
 	format[localize "str_epoch_player_123",_text] call dayz_rollingMessages;
 };
