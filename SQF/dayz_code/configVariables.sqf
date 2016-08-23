@@ -7,9 +7,6 @@ dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened 
 dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
 dayz_toolBreaking = false; //Sledgehammer, crowbar and pickaxe have a chance to break when used.
 dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
-dayz_sellDistance_vehicle = 10; // Max distance players can sell land vehicles from at traders
-dayz_sellDistance_boat = 30; // Max distance players can sell boats from at traders
-dayz_sellDistance_air = 40; // Max distance players can sell air vehicles from at traders
 dayz_tameDogs = false; // Allow taming dogs with raw meat
 dayz_townGenerator = false; // Spawn vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus.
 dayz_townGeneratorBlackList = [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]; // Town generator will not spawn junk within 150m of these positions.
@@ -25,7 +22,6 @@ DZE_TempVars = [7, 15, 4, 4, 2, 6, 3, 2, 0.25, 0.75, 0.5]; //[vehicle, fire, bui
 DZE_WeatherVariables = [10, 20, 5, 10, 0, 0.2, 0, 1, 0, 0.8, 0, 8, 25, 50, 0, false]; //See DynamicWeatherEffects.sqf for info on these values
 DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 allow player to hold two primary weapons, one on back and one in their hands.
 DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
-DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic
 DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before they can be maintained
 DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
 DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
@@ -38,7 +34,6 @@ DZE_HumanityTargetDistance = 25; // Distance to show name tags (red for bandit, 
 DZE_HeartBeat = false; // Enable heartbeat sound when looking at bandit (<= -3000 humanity) up close
 DZE_HeliLift = true; // Enable Epoch heli lift system
 DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["Skin_GUE_Soldier_CO_DZ","Skin_GUE_Soldier_2_DZ"] etc.
-DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
 DZE_UI = "vanilla"; //"vanilla","epoch","dark"  UI status icons style. Dark accommodates color blind people.
 DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
 MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE to spawn around the map
@@ -49,11 +44,15 @@ DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_groupManagement = false; //Enable or disable group management. Enabled by default
 
-// Advanced Trading
-DZE_advancedTrading = true; //Use advanced trading system. WARNING: set to false if you use database traders, you should use config-traders anyway!
+// Trader Menu
+dayz_sellDistance_vehicle = 10; // Max distance players can sell land vehicles from at traders
+dayz_sellDistance_boat = 30; // Max distance players can sell boats from at traders
+dayz_sellDistance_air = 40; // Max distance players can sell air vehicles from at traders
+DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic. False enables database traders with legacy trader menu.
 DZE_serverLogTrades = true; // Log trades to server RPT (sent with publicVariableServer on every trade)
 DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; //array of gem prices, works only in advanced trading
 DZE_SaleRequiresKey = false; //Require the player has the key for a vehicle in order to sell it. The key can be in the player's toolbelt or backpack, or the vehicle's inventory. False by default
+DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
 Z_AT_FolderLocation = '\z\addons\dayz_code\actions\AdvancedTrading';
 Z_VehicleDistance = 40; // Distance that a vehicle needs to be to see it's content or to sell it.
 Z_AllowTakingMoneyFromBackpack = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your backpack.
