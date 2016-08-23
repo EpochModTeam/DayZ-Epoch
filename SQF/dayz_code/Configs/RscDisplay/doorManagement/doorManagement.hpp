@@ -40,7 +40,7 @@ class DoorManagement
 			idc = 7104;
 			text = $STR_EPOCH_ADD;
 			x = 0.33 * safezoneW + safezoneX;
-			y = 0.70 * safezoneH + safezoneY;
+			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
 			onButtonClick = "[lbData [7101,lbCurSel 7101]] call DoorAddFriend;";
 		};
@@ -50,7 +50,7 @@ class DoorManagement
 			idc = 7105;
 			text = $STR_EPOCH_DELETE;
 			x = 0.47 * safezoneW + safezoneX;
-			y = 0.70 * safezoneH + safezoneY;
+			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
 			onButtonClick = "[(lbCurSel 7102)] call DoorRemoveFriend;";
 		};
@@ -60,7 +60,7 @@ class DoorManagement
 			idc = 7106;
 			text = $STR_UI_CLOSE;
 			x = 0.40 * safezoneW + safezoneX;
-			y = 0.74 * safezoneH + safezoneY;
+			y = 0.75 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
 			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 9000);";
 		};
