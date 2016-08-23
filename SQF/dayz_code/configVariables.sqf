@@ -25,6 +25,7 @@ DZE_TempVars = [7, 15, 4, 4, 2, 6, 3, 2, 0.25, 0.75, 0.5]; //[vehicle, fire, bui
 DZE_WeatherVariables = [10, 20, 5, 10, 0, 0.2, 0, 1, 0, 0.8, 0, 8, 25, 50, 0, false]; //See DynamicWeatherEffects.sqf for info on these values
 DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 allow player to hold two primary weapons, one on back and one in their hands.
 DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
+DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic
 DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before they can be maintained
 DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
 DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
