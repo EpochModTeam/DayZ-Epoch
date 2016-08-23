@@ -117,7 +117,7 @@ AllowedVehiclesList = [
 if (toLower worldName in ["caribou","chernarus","cmr_ovaron","dingor","fallujah","fapovo","fdf_isle1_a","isladuala","lingor","mbg_celle2","namalsk","napf","oring","panthera2","sara","sauerland","smd_sahrani_a2","tavi","trinity","utes"]) then {
 	// water map, add boats
 	
-	{AllowedVehiclesList set [count AllowedVehiclesList,_x];} count [
+	AllowedVehiclesList = AllowedVehiclesList + [
 		["Fishing_Boat",_Ratio3],
 		["JetSkiYanahui_Case_Blue",_Ratio1],
 		["JetSkiYanahui_Case_Green",_Ratio1],
