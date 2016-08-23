@@ -1,4 +1,4 @@
-private ["_playerObj","_myGroup","_playerUID","_playerPos","_playerName","_puid","_timeout","_message"];
+private ["_playerObj","_myGroup","_playerUID","_playerPos","_playerName","_message"];
 
 _playerUID = _this select 0;
 _playerName = _this select 1;
@@ -7,8 +7,7 @@ _playerPos = [];
 
 //Lets search all playerable units looking for the objects that matches our playerUID
 {
-	_puid = [_x] call FNC_GetPlayerUID;
-	if (_puid == _playerUID) exitWith { _playerObj = _x; _playerPos = getPosATL _playerObj;};
+	if ((getPlayerUID _x) == _playerUID) exitWith { _playerObj = _x; _playerPos = getPosATL _playerObj;};
 } forEach 	playableUnits;
 
 //If for some reason the playerOBj does not exist lets exit the disconnect system.
@@ -16,8 +15,7 @@ if (isNil "_playerObj") exitWith {
 	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
 };
 
-_puid = [_playerObj] call FNC_GetPlayerUID;
-//diag_log format["get: %1 (%2), sent: %3 (%4)",typeName _puid, _puid, typeName _playerUID, _playerUID];
+//diag_log format["get: %1 (%2), sent: %3 (%4)",typeName (getPlayerUID _playerObj), getPlayerUID _playerObj, typeName _playerUID, _playerUID];
 
 //If the the playerObj exists lets run all sync systems
 
@@ -32,7 +30,7 @@ diag_log format["INFO - Player: %3(UID:%1/CID:%2) as (%4), logged off at %5%6",
 	getPlayerUID _playerObj,
 	_characterID,
 	_playerObj call fa_plr2str,
-	typeOf _playerObj,
+	typeOf _playerObj, 
 	(getPosATL _playerObj) call fa_coor2str,
 	if ((_lastDamage > 5 AND (_lastDamage < 30)) AND ((alive _playerObj) AND (_playerObj distance (getMarkerpos "respawn_west") >= 2000))) then {" while in combat ("+str(_lastDamage)+" seconds left)"} else {""}
 ]; 

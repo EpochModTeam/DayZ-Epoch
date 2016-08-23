@@ -265,7 +265,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_characterID = _cursorTarget getVariable ["CharacterID","0"];
 	
 	if (DZE_permanentPlot) then {
-		_id = [player] call FNC_GetPlayerUID;
+		_id = dayz_playerUID;
 		_ownerID = _cursorTarget getVariable ["ownerPUID","0"];
 	} else {
 		_id = dayz_characterID;

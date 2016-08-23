@@ -4,8 +4,6 @@ private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
-//_activatingPlayer = [player] call FNC_GetPlayerUID;
-
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;
 _qty_out = (_this select 3) select 2;

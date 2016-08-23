@@ -362,7 +362,7 @@ class FSM
                          "" \n
                          "dayz_loadScreenMsg = localize 'str_player_waiting_creation'; " \n
                          "" \n
-                         "_playerUID = [player] call FNC_GetPlayerUID;" \n
+						 "_playerUID = getPlayerUID player;" \n
                          "progressLoadingScreen 0.6;" \n
                          "if (_debug == 1) then {diag_log [diag_tickTime,'Collect'];};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;

@@ -4,7 +4,7 @@ if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_tmpbuilt","_onLadder","_require","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_playerUID","_canBuild"];
+private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_tmpbuilt","_onLadder","_require","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_canBuild"];
 
 if (DZE_ActionInProgress || {r_action_count > 0}) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -15,7 +15,6 @@ _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animatio
 
 _cancel = false;
 _canBuildOnPlot = false;
-_playerUID = [player] call FNC_GetPlayerUID;
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -439,12 +438,12 @@ if (_canBuild select 0) then {
 
 					_tmpbuilt setVariable ["CharacterID",_combination,true];
 					if (DZE_permanentPlot) then {
-						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
-						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID],_classname];
+						_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
+						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,dayz_playerUID],_classname];
 						if (_lockable == 3) then {
-							_friendsArr = [[_playerUID,toArray (name player)]];
+							_friendsArr = [[dayz_playerUID,toArray (name player)]];
 							_tmpbuilt setVariable ["doorfriends", _friendsArr, true];
-							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], _friendsArr];
+							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,dayz_playerUID,_vector],_friendsArr];
 						};
 					} else {
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[]];
@@ -461,13 +460,13 @@ if (_canBuild select 0) then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
 						if (DZE_permanentPlot) then {
-							_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
+							_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
 							if (_canBuild select 1) then {
-								_friendsArr = [[_playerUID,toArray (name player)]];
+								_friendsArr = [[dayz_playerUID,toArray (name player)]];
 								_tmpbuilt setVariable ["plotfriends", _friendsArr, true];
-								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID],_friendsArr];
+								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],_friendsArr];
 							} else {
-								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID],_classname];
+								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],_classname];
 							};
 						} else {
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[]];

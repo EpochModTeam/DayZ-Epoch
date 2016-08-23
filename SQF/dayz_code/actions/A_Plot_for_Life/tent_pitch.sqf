@@ -1,15 +1,13 @@
-private ["_location","_isOk","_pondPos","_isPond","_dir","_dis","_sfx","_classname","_object","_playerPos","_item","_hastentitem","_building","_config","_text","_objectsPond","_playerUID"];
+private ["_location","_isOk","_pondPos","_isPond","_dir","_dis","_sfx","_classname","_object","_playerPos","_item","_hastentitem","_building","_config","_text","_objectsPond"];
 //check if can pitch here
 call gear_ui_init;
-_playerPos = 	getPosATL player;
+_playerPos = getPosATL player;
 _item = _this;
 _hastentitem = _this in magazines player;
 _location = player modeltoworld [0,2.5,0];
 _location set [2,0];
 _building = nearestObject [(vehicle player), "HouseBase"];
 _isOk = [(vehicle player),_building] call fnc_isInsideBuilding;
-_playerUID = [player] call FNC_GetPlayerUID;
-
 //_isOk = true;
 
 //diag_log ("Pitch Tent: " + str(_isok) );
@@ -22,7 +20,7 @@ if (!_hastentitem) exitWith format[localize "str_player_31",_text,"pitch"] call 
 //blocked
 if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
 //Block Tents in pounds
-_objectsPond = 		nearestObjects [_playerPos, [], 10];
+_objectsPond = nearestObjects [_playerPos, [], 10];
 	{
 		_isPond = ["pond",str(_x),false] call fnc_inString;
 		if (_isPond) then {
@@ -50,7 +48,7 @@ if (!_isOk) then {
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;  
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 	
-	_classname = 	getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Pitch" >> "create");
+	_classname = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Pitch" >> "create");
 
 	sleep 5;
 	//place tent (local)
@@ -61,14 +59,13 @@ if (!_isOk) then {
 	_location = getPosATL _object;
 
 	_object setVariable ["CharacterID",dayz_characterID,true];
-	_object setVariable ["ownerPUID",_playerUID,true];
+	_object setVariable ["ownerPUID",dayz_playerUID,true];
 
 	//["PVDZE_obj_Publish",[dayz_characterID,_tent,[_dir,_location],_classname]] call callRpcProcedure;
-	PVDZE_obj_Publish = [dayz_characterID,_object,[_dir,_location, _playerUID],_classname];
+	PVDZE_obj_Publish = [dayz_characterID,_object,[_dir,_location,dayz_playerUID],_classname];
 	publicVariableServer "PVDZE_obj_Publish";
 	
 	localize "str_success_tent_pitch" call dayz_rollingMessages;
 } else {
 	localize "str_fail_tent_pitch" call dayz_rollingMessages;
 };
-

@@ -4,7 +4,7 @@ DZE_ActionInProgress = true;
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_activatingPlayer","_obj","_playerUID","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular","_success"];
+private ["_activatingPlayer","_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular","_success"];
 
 player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
@@ -12,13 +12,11 @@ s_player_deleteBuild = 1;
 _obj = _this select 3;
 _activatingPlayer = player;
 _objOwnerID = "0";
-_playerUID = "1";
 _isOwnerOfObj = false;
 
 if (DZE_permanentPlot) then {
 	_objOwnerID = _obj getVariable["ownerPUID","0"];
-	_playerUID = [player] call FNC_GetPlayerUID;
-	_isOwnerOfObj = (_objOwnerID == _playerUID);
+	_isOwnerOfObj = (_objOwnerID == dayz_playerUID);
 } else {
 	_objOwnerID = _obj getVariable["CharacterID","0"];
 	_isOwnerOfObj = (_objOwnerID == dayz_characterID);

@@ -1,6 +1,6 @@
 // If an array was passed redirect to vanilla player_build (Epoch items pass a string)
 if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith {_this spawn player_buildVanilla;};
-private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objectHelperDir","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_started","_finished","_animState","_isMedic","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_playerUID","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_objectHelper","_location1","_object","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild"];
+private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objectHelperDir","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_started","_finished","_animState","_isMedic","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_objectHelper","_location1","_object","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild"];
 
 //Check if building already in progress, exit if so.
 if (DZE_ActionInProgress || {r_action_count > 0}) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
@@ -12,7 +12,6 @@ _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animatio
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
-_playerUID = [player] call FNC_GetPlayerUID;
 
 DZE_Q = false;
 DZE_Z = false;
@@ -531,12 +530,12 @@ if (_canBuild select 0) then {
 
 					//call publish precompiled function with given args and send public variable to server to save item to database
 					if (DZE_permanentPlot) then {
-						_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
-						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
+						_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
+						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,dayz_playerUID,_vector],[]];
 						if (_lockable == 3) then {
-							_friendsArr = [[_playerUID,toArray (name player)]];
+							_friendsArr = [[dayz_playerUID,toArray (name player)]];
 							_tmpbuilt setVariable ["doorfriends", _friendsArr, true];
-							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,_playerUID, _vector], _friendsArr];
+							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,dayz_playerUID,_vector],_friendsArr];
 						};
 					} else {
 						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location, _vector],[]];
@@ -553,13 +552,13 @@ if (_canBuild select 0) then {
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
 						if (DZE_permanentPlot) then {
-							_tmpbuilt setVariable ["ownerPUID",_playerUID,true];
+							_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
 							if (_canBuild select 1) then {
-								_friendsArr = [[_playerUID,toArray (name player)]];
+								_friendsArr = [[dayz_playerUID,toArray (name player)]];
 								_tmpbuilt setVariable ["plotfriends", _friendsArr, true];
-								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID, _vector], _friendsArr];
+								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID,_vector],_friendsArr];
 							} else {
-								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,_playerUID, _vector], []];
+								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID,_vector],[]];
 							};
 						} else {
 							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location, _vector],[]];

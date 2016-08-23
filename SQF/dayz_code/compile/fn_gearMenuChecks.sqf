@@ -14,7 +14,7 @@ if ((vehicle player) == player) then {
 
 	if (DZE_BackpackAntiTheft) then {
 		_friendlies	= player getVariable ["friendlies",[]];
-		_rID = if (DZE_permanentPlot) then { [_cTarget] call FNC_GetPlayerUID } else { _cTarget getVariable ["CharacterID","0"] };
+		_rID = if (DZE_permanentPlot) then { getPlayerUID _cTarget } else { _cTarget getVariable ["CharacterID","0"] };
 		if ((!canbuild or isInTraderCity) && {_cTarget isKindOf "Man"} && {alive _cTarget} && {isPlayer _cTarget} && {!(_rID in _friendlies)} && {(player distance _cTarget) < 12}) then {
 			localize "STR_EPOCH_PLAYER_316" call dayz_rollingMessages;
 			_display closeDisplay 1;

@@ -23,7 +23,7 @@ _playerCoins = 0;
 _BankCoins = 0;
 
 if (_playerID == "") then {
-	_playerID = [_playerObj] call FNC_GetPlayerUID;
+	_playerID = getPlayerUID _playerObj;
 };
 
 if ((_playerID == "") or (isNil "_playerID")) exitWith {

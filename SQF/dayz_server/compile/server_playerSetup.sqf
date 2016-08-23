@@ -3,7 +3,7 @@ private ["_characterID","_playerObj","_playerID","_dummy","_worldspace","_state"
 _characterID = _this select 0;
 _playerObj = _this select 1;
 _spawnSelection = _this select 3;
-_playerID = [_playerObj] call FNC_GetPlayerUID;
+_playerID = getPlayerUID _playerObj;
 
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
@@ -12,7 +12,7 @@ if (isNull _playerObj) exitWith {
 };
 
 if (_playerID == "") then {
-	_playerID = [_playerObj] call FNC_GetPlayerUID;
+	_playerID = getPlayerUID _playerObj;
 };
 
 if (_playerID == "") exitWith {
@@ -20,7 +20,7 @@ if (_playerID == "") exitWith {
 };
 
 private "_dummy";
-_dummy = [_playerObj] call FNC_GetPlayerUID;
+_dummy = getPlayerUID _playerObj;
 if (_playerID != _dummy) then { 
 	diag_log format["DEBUG: _playerID miscompare with UID! _playerID:%1",_playerID]; 
 	_playerID = _dummy;

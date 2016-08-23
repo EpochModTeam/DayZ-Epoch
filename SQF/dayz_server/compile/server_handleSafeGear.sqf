@@ -19,7 +19,7 @@ _ownerID = _obj getVariable ["ownerPUID","0"];
 if (isNull _player) then {diag_log "ERROR: server_handleSafeGear called with Null player object";};
 
 _clientID = owner _player;
-_puid = [_player] call FNC_GetPlayerUID;
+_puid = getPlayerUID _player;
 
 _statusText = switch (_status) do {
 	case 0: {"UNLOCKED"};

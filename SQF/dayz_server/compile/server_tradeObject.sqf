@@ -22,7 +22,7 @@ _clientID = 	owner _player;
 
 if (typeName _price  == "SCALAR") then { _price = format ["%1x%2",_price,_currency]; } else { _price = format ["%1",_price]; };
 _name = if (alive _player) then { name _player; } else { "Dead Player"; };
-_PUID = [_player] call FNC_GetPlayerUID;
+_PUID = getPlayerUID _player;
 
 if (_buyorsell == 0) then { //Buy
 	diag_log format["%8: %9: %1 (%2) bought %6 x %3 into %7 at %4 for %5", _name, _PUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289",localize "STR_EPOCH_PLAYER"];

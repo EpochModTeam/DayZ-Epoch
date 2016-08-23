@@ -1,16 +1,12 @@
-private ["_activatingplayerUID","_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer"];
+private ["_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer"];
 //[dayz_characterID,_tent,[_dir,_location],"TentStorage"]
 _charID =		_this select 0;
 _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _class = 		_this select 3;
 _obj = 			_this select 4;
-_activatingplayer = 		_this select 5;
-_activatingplayerUID = [_activatingplayer] call FNC_GetPlayerUID;
-_inv = [];
-if ((count _this) > 6) then {
-	_inv = 			_this select 6;
-};
+_activatingplayer = _this select 5;
+_inv = if (count _this > 6) then {_this select 6} else {[]};
 _proceed = false;
 
 _objectID = "0";
@@ -45,7 +41,7 @@ if (!_allowed || !_proceed) exitWith {
 	if(!isNull(_object)) then {
 		deleteVehicle _object; 
 	};
-	diag_log ("Invalid object swap by playerUID:"+ str(_activatingplayerUID));
+	diag_log ("Invalid object swap by playerUID:" + (getPlayerUID _activatingplayer));
 };
 
 // Publish variables

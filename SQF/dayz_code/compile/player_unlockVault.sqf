@@ -3,7 +3,7 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_obj","_ownerID","_alreadyPacking","_playerNear","_playerID","_claimedBy","_text","_objType","_ComboMatch","_near"];
+private ["_obj","_ownerID","_alreadyPacking","_playerNear","_claimedBy","_text","_objType","_ComboMatch","_near"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -40,17 +40,16 @@ if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; format[localiz
 if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	// Check if any players are nearby if not allow player to claim item.
 	_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 6]) > 1;
-	_playerID = [player] call FNC_GetPlayerUID;
 	
 	// Only allow if not already claimed.
 	if (_claimedBy == "0" || !_playerNear) then {
 		// Since item was not claimed proceed with claiming it.
-		_obj setVariable["claimed",_playerID,true];
+		_obj setVariable["claimed",dayz_playerUID,true];
 	};
 
 	_claimedBy = _obj getVariable["claimed","0"];
 	
-	if (_claimedBy == _playerID) then {
+	if (_claimedBy == dayz_playerUID) then {
 		if (!isNull _obj && alive _obj) then {
 			_obj setVariable["packing",1];
 			["Working",0,[3,2,8,0]] call dayz_NutritionSystem;

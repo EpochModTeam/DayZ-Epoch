@@ -68,7 +68,7 @@ _targetType = if(typeOf _target in DZE_DoorsLocked) then { "DOOR"; } else { "GEN
 
 // determine owner and player id
 // and check if player is owner of target object
-_playerUID = [_player] call FNC_GetPlayerUID;
+_playerUID = getPlayerUID _player;
 _characterID = dayz_characterID;
 if(DZE_permanentPlot) then {
 	_targetOwnerUID = _target getVariable ["ownerPUID","0"];

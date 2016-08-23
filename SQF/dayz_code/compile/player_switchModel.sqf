@@ -10,7 +10,7 @@ _position = player modeltoWorld [0,0,0];
 _dir = getDir player;
 _currentAnim = animationState player;
 //_currentCamera = cameraView;
-_playerUID = [player] call FNC_GetPlayerUID;
+_playerUID = getPlayerUID player;
 
 //BackUp Weapons and Mags
 _weapons = weapons player;

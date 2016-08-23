@@ -631,7 +631,6 @@ BIS_fnc_numberText = compile preprocessFileLineNumbers "\z\addons\dayz_code\comp
 local_lockUnlock = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lockUnlock.sqf"; //When vehicle is local to unit perform locking vehicle
 local_gutObjectZ = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_gutObjectZ.sqf"; //Generated on the server (or local to unit) when gutting an object
 local_spawnObjects = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_spawnObjects.sqf";
-FNC_GetPlayerUID = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getPlayerUID.sqf";
 FNC_GetSetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getSetPos.sqf";
 FNC_GetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getPos.sqf";
 dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_ejectPlayer.sqf";

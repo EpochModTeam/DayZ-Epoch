@@ -9,7 +9,7 @@ _closePeople = if (DZE_plotManagementMustBeClose) then { player nearEntities ["C
 
 {
 	if (isPlayer _x) then {
-		_friendUID = [_x] call FNC_GetPlayerUID;
+		_friendUID = getPlayerUID _x;
 		_friendName = name _x;
 		_userList lbAdd _friendName;
 		_userList lbSetData [(lbSize _userList) -1,_friendUID];

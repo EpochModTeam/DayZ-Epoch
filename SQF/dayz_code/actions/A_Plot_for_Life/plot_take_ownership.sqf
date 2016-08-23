@@ -5,12 +5,11 @@
 // Note:
 // This code calls server_publishFullObject which also saves damage, inventory and fuel.  Hitpoints are assumed to be empty as this is for buildables only.
 
-private ["_distance","_plotpole","_playerUID","_isowner", "_findNearestObjects","_classname","_objectID", "_objectUID", "_position", "_worldspace", "_object", "_key","_invW","_invM","_invB","_itemsExist","_charID","_inventory","_changecount"];
+private ["_distance","_plotpole","_isowner","_findNearestObjects","_classname","_objectID","_objectUID","_position",
+"_worldspace","_object","_key","_invW","_invM","_invB","_itemsExist","_charID","_inventory","_changecount"];
 
 _distance = (DZE_PlotPole select 0) + 1;
 _plotpole = nearestobject [(vehicle player),"Plastic_Pole_EP1_DZ"];
-
-_playerUID = [player] call FNC_GetPlayerUID;
 _changecount = 0;
 
 // Check is owner of the plot pole.
@@ -49,9 +48,9 @@ if (_isowner select 0) then {
 					_charID = dayz_characterID;
 				};
 				
-				_position = 	getPosATL _object;
+				_position = getPosATL _object;
 				_vector = [(vectorDir _object),(vectorUp _object)];
-				_worldspace = 	[round(direction _object),_position,_playerUID,_vector];
+				_worldspace = [round(direction _object),_position,dayz_playerUID,_vector];
 
 				_invW = getWeaponCargo _object;
 				{
@@ -82,10 +81,10 @@ if (_isowner select 0) then {
 				_damage =		damage _object;
 				_fuel =			fuel _object;
 				
-				PVDZE_fullobj_Publish = [_charID,_object,_worldspace,_classname, _inventory, _hitpoints, _damage, _fuel];
+				PVDZE_fullobj_Publish = [_charID,_object,_worldspace,_classname,_inventory,_hitpoints,_damage,_fuel];
 				publicVariableServer "PVDZE_fullobj_Publish";
 				
-				_object setvariable["ownerPUID", _playerUID];	
+				_object setVariable ["ownerPUID",dayz_playerUID];	
 				
 				_changecount = _changecount + 1;
 			};

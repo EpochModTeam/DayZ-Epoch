@@ -8,21 +8,15 @@ private ["_tent","_location","_isOk","_cancel","_location3","_location4","_locat
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_108" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
 
-//disableSerialization;
-
-_playerPos = 	getPosATL player;
+_playerPos = getPosATL player;
 _item = _this;
 _hastentitem = _this in magazines player;
 _offset_x = 0; 
 _offset_y = 1.5;
 _offset_z = 0;
 _offset_z_attach = 0.5;
-
 _location = player modeltoworld [_offset_x,_offset_y,_offset_z];
-
-_playerUID = [player] call FNC_GetPlayerUID;
 // Allow placement anywhere.
-
 _isOk = true;
  
 //diag_log ("Pitch Tent: " + str(_isok) );
@@ -36,8 +30,6 @@ if (!_hastentitem) exitWith {format[localize "str_player_31",_text,"pitch"] call
 // Allow on concrete since we dont force to ground.
 // if (["concrete",dayz_surfaceType] call fnc_inString) then { _isOk = true; diag_log ("surface concrete"); };
 
-
-
 //diag_log ("Pitch Tent: " + str(_isok) );
 _dir = getDir player;
 
@@ -45,13 +37,10 @@ _dir = getDir player;
 _tmpvault = createVehicle ["VaultStorageLocked", _location, [], 0, "CAN_COLLIDE"];
 _tmpvault setdir _dir;
 _tmpvault attachTo [player,[_offset_x,_offset_y,_offset_z_attach]];
-
 _cancel = false;
 _counter = 0;
 
-
 while {_isOk} do {
-	
 	if(_counter == 0) then {
 		localize "str_epoch_player_109" call dayz_rollingMessages;
 		uiSleep 5; 
@@ -82,10 +71,7 @@ while {_isOk} do {
 };
 
 detach _tmpvault;
-
 _vault_location = (getPosATL _tmpvault);
-
-
 
 // Make sure vault is not placed on road. 
 if (isOnRoad _vault_location) then { _isOk = true; };
@@ -160,7 +146,7 @@ if(!_cancel) then {
 			_tent setVariable ["CharacterID",_combination,true];
 			_tent setVariable ["OEMPos",_location,true];
 
-			PVDZ_obj_Publish = [_combination,_tent,[_dir,_location, _playerUID],"VaultStorageLocked"];
+			PVDZ_obj_Publish = [_combination,_tent,[_dir,_location,dayz_playerUID],"VaultStorageLocked"];
 			publicVariableServer  "PVDZ_obj_Publish";
 	
 			format[localize "str_epoch_player_179",_combination] call dayz_rollingMessages;
