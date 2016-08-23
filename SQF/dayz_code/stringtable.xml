@@ -4104,70 +4104,6 @@
 			<French>Poche produisant de la chaleur via un processus de cristallisation. Permet de réchauffer rapidement votre corps.</French>
 			<Czech>Zahřívací sáček, který se na principu krystalizace ohřeje. Používá se pro rychlé ohřátí těla.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_43">
-			<English>Ghillie Suit</English>
-			<Spanish>Traje Ghillie</Spanish>
-			<German>Ghillie-Anzug</German>
-			<Russian>Маскхалат</Russian>
-			<French>Tenue Ghillie</French>
-			<Czech>Hejkal</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_43">
-			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
-			<Spanish>Un tipo de camuflaje diseñado para confundierse con el espeso follage. Puede ser desempacada y usada.</Spanish>
-			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
-			<French>Une tenue de camouflage qui imite le feuillage. Peut être porté.</French>
-			<Czech>Maskovací oblečení vytvořené speciálně pro použítí v lesních oblastech. Lze rozbalit a obléknout.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_44">
-			<English>Camo Clothing</English>
-			<Spanish>Ropa Camuflada</Spanish>
-			<German>Tarnkleidung</German>
-			<Russian>Камуфляж</Russian>
-			<French>Tenu de camouflage</French>
-			<Czech>Kamuflážní oblečení</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_44">
-			<English>A mixture of camouflage trousers with a brown t-shirt and no hat. Can be unpacked and worn.</English>
-			<Spanish>Un conjunto de ropa camuflada compuesto de pantalones con remera marrón sin gorra. Puede ser desempacada y usada.</Spanish>
-			<German>Eine Hose mit Flecktarnmuster und ein braunes T-Shirt. Kann ausgepackt und getragen werden.</German>
-			<Russian>Камуфлированные штаны и футболка. Можно распаковать и надеть.</Russian>
-			<French>Un ensemble composé d&apos;un pantalon de camouflage et d&apos;un t-shirt marron. Peut être porté.</French>
-			<Czech>Kalhoty s kamufláží, hnědé tričko a bez čepice. Lze rozbalit a obléknout.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_45">
-			<English>Civilian Clothing</English>
-			<Spanish>Ropa Civil</Spanish>
-			<German>Zivile Kleidung</German>
-			<Russian>Гражданская одежда</Russian>
-			<French>Tenue civile</French>
-			<Czech>Civilní oblečení</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_45">
-			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
-			<Spanish>Un conjunto normal de ropa civil liviana y gorra. Puede ser desempaquetada y usada.</Spanish>
-			<German>Normale zivile Kleidung mit einer leichten Mehrzweckweste und einer Mütze. Kann ausgepackt und getragen werden.</German>
-			<Russian>Повседневная гражданская одежда. Можно распаковать и надеть.</Russian>
-			<French>Une tenue de ville, avec veste légère et casquette. Peut être porté.</French>
-			<Czech>Normální civilní oblečení s lehkou vestou a čepicí. Lze rozbalit a obléknout.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_46">
-			<English>Soldier Clothing</English>
-			<Spanish>Uniforme Militar</Spanish>
-			<German>Feldanzug</German>
-			<Russian>Солдатская форма</Russian>
-			<French>Tenue de soldat</French>
-			<Czech>Vojenská uniforma</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_46">
-			<English>A British Army Soldier&apos;s uniform. Can be unpacked and worn.</English>
-			<Spanish>Un uniforme de soldado de la Armada Británica. Puede ser desempaquetada y usada.</Spanish>
-			<German>Ein Feldanzug der British Armed Forces mit Splitterschutzhelm und Koppelgeschirr.</German>
-			<Russian>Форма солдата британской армии. Можно распаковать и надеть.</Russian>
-			<French>Un uniforme de la BAF. Peut être porté.</French>
-			<Czech>Britská uniforma. Lze rozbalit a obléknout.</Czech>
-		</Key>
 		<Key ID="STR_WPN_HOLDR_2">
 			<English>Hunting Rifle</English>
 			<German>Jagdgewehr</German>
@@ -4898,7 +4834,7 @@
 			<Spanish>Ropa de Civil</Spanish>
 			<Czech>Civilní oblečení</Czech>
 			<French>Vêtements civils</French>
-			<German>Zivile kleidung</German>
+			<German>Zivile Kleidung</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_CIV">
 			<English>A normal mixture of civilian clothing with a light-weight vest and hat. Can be unpacked and worn.</English>
