@@ -334,7 +334,7 @@ createCenter civilian;
 actualSpawnMarkerCount = 0;
 // count valid spawn markers, since different maps have different amounts
 for "_i" from 0 to 10 do {
-	if !([(getMarkerPos format["spawn%1",_i]), [0,0,0]] call fnc_isEqual) then {
+	if !([(getMarkerPos format["spawn%1",_i]), [0,0,0]] call BIS_fnc_areEqual) then {
 		actualSpawnMarkerCount = actualSpawnMarkerCount + 1;
 	} else {
 		_i = 11; // exit since we did not find any further markers 
