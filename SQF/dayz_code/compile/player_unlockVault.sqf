@@ -3,7 +3,7 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_obj","_ownerID","_alreadyPacking","_playerNear","_claimedBy","_text","_objType","_ComboMatch","_near"];
+private ["_obj","_ownerID","_alreadyPacking","_playerNear","_claimedBy","_text","_objType","_ComboMatch"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -58,8 +58,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 			(findDisplay 106) closeDisplay 0; // Close gear
 			dze_waiting = nil;
 			
-			_near = nearestObjects [player,[_unlockedClass],50];
-			[_unlockedClass,objNull,_near] spawn fn_waitForObject;
+			[_unlockedClass,objNull] call fn_waitForObject;
 			
 			PVDZE_handleSafeGear = [player,_obj,0];
 			publicVariableServer "PVDZE_handleSafeGear";

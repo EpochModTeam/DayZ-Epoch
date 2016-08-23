@@ -1,7 +1,6 @@
 private ["_weaponsToBuy","_backpacksToBuy","_toolsToBuy","_sidearmToBuy","_primaryToBuy","_priceToBuy"
 ,"_enoughMoney","_myMoney","_canBuy","_moneyInfo","_count","_success","_toolClasses","_itemsToLog"
-,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy","_hasPrimary","_p","_toolAmounts"
-,"_near"];
+,"_tCost","_bTotal","_backpack","_pistolMagsToBuy","_regularMagsToBuy","_hasPrimary","_p","_toolAmounts"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
@@ -149,8 +148,7 @@ if (_enoughMoney) then {
 
 		_sign = "Sign_arrow_down_large_EP1" createVehicleLocal _location;
 		_location = [_sign] call FNC_GetPos;
-		_near = nearestObjects [player,[_part_out],50];
-		[_part_out,_sign,_near] spawn fn_waitForObject;
+		[_part_out,_sign] call fn_waitForObject;
 		
 		if (_buyingType in DZE_tradeVehicleKeyless) then {
 			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,"0",_activatingPlayer];

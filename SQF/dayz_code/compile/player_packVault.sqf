@@ -1,7 +1,7 @@
 /*
 [_obj] spawn player_packVault;
 */
-private ["_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_packedClass","_text","_playerNear","_near"];
+private ["_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_packedClass","_text","_playerNear"];
 
 if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_15" call dayz_rollingMessages;};
 DZE_ActionInProgress = true;
@@ -56,8 +56,7 @@ if (!isNull _obj && alive _obj) then {
 	(findDisplay 106) closeDisplay 0; // Close gear
 	dze_waiting = nil;
 	
-	_near = nearestObjects [player,[_packedClass],50];
-	[_packedClass,objNull,_near] spawn fn_waitForObject;
+	[_packedClass,objNull] call fn_waitForObject;
 	
 	PVDZE_handleSafeGear = [player,_obj,2];
 	publicVariableServer "PVDZE_handleSafeGear";	
