@@ -56,7 +56,6 @@ dayz_paraSpawn = false; // Halo spawn
 DZE_BackpackAntiTheft = false; // Prevent stealing from backpacks in trader zones
 DZE_BuildOnRoads = false; // Allow building on roads
 DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic
-DZE_MissionLootTable = false; // Use custom CfgLoot defined in mission file
 DZE_PlayerZed = true; // Enable spawning as a player zombie when players die with infected status
 DZE_R3F_WEIGHT = true; // Enable R3F weight. Players carrying too much will be overburdened and forced to move slowly.
 DZE_slowZombies = false; // Force zombies to always walk

@@ -539,7 +539,6 @@ if (isNil "dayz_paraSpawn") then {dayz_paraSpawn = false;};
 if (isNil "DZE_BuildingLimit") then {DZE_BuildingLimit = 150;};
 if (isNil "DZE_BuildOnRoads") then {DZE_BuildOnRoads = false;};
 if (isNil "DZE_ConfigTrader") then {DZE_ConfigTrader = true;};
-if (isNil "DZE_MissionLootTable") then {DZE_MissionLootTable = false;};
 if (isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
 if (isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15,120];};
 if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
@@ -587,7 +586,7 @@ if (isServer) then {
 
 if (!isDedicated) then {
 	dayz_buildingBubbleMonitor = [];
-	dayz_baseTypes = if (DZE_MissionLootTable) then {getArray (missionConfigFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass")} else {getArray (configFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass")};
+	dayz_baseTypes = getArray (missionConfigFile >> "CfgBuildingLoot" >> "Default" >> "zombieClass");
 
 	//temperature variables
 	dayz_temperatur = 36; //TeeChange

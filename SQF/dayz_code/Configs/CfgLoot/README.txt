@@ -1,6 +1,8 @@
-To use DZE_MissionLootTable = true; copy this CfgLoot folder to your mission.
+To customize the loot tables copy this CfgLoot folder to your mission.
 
-Then in description.ext add at the top:
+Then in description.ext replace this line:
+#include "\z\addons\dayz_code\Configs\CfgLoot\CfgLoot.hpp"
+with this:
 #include "CfgLoot\CfgLoot.hpp"
 
 

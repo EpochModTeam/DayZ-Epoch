@@ -451,7 +451,7 @@ if (_hiveLoaded) then {
 		_serverVehicleCounter = _this;
 		_startTime = diag_tickTime;
 		_buildingList = [];
-		_cfgLootFile = if (DZE_MissionLootTable) then {missionConfigFile >> "CfgLoot" >> "Buildings"} else {configFile >> "CfgLoot" >> "Buildings"};
+		_cfgLootFile = missionConfigFile >> "CfgLoot" >> "Buildings";
 		{
 			if (isClass (_cfgLootFile >> typeOf _x)) then {
 				_buildingList set [count _buildingList,_x];
