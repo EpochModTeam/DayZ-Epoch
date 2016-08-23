@@ -64,7 +64,6 @@ class PlotManagement
 			w = 0.30 * safezoneW;
 			h = 0.05 * safezoneH;
 			colorText[] = {1,1,1,1};
-			
 		};
 
 		class RscText_7014:  RscStructuredText
@@ -140,7 +139,7 @@ class PlotManagement
 			idc = -1;
 			text = $STR_EPOCH_ADD;
 			x = 0.33 * safezoneW + safezoneX;
-			y = 0.70 * safezoneH + safezoneY;
+			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
 			onButtonClick = "[lbData [7001,lbCurSel 7001]] call PlotAddFriend;";
 		};
@@ -150,7 +149,7 @@ class PlotManagement
 			idc = -1;
 			text = $STR_EPOCH_DELETE;
 			x = 0.47 * safezoneW + safezoneX;
-			y = 0.70 * safezoneH + safezoneY;
+			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
 			onButtonClick = "[(lbCurSel 7002)] call PlotRemoveFriend;";
 		};
@@ -160,7 +159,7 @@ class PlotManagement
 			idc = -1;
 			text = $STR_UI_CLOSE;
 			x = 0.40 * safezoneW + safezoneX;
-			y = 0.74 * safezoneH + safezoneY;
+			y = 0.75 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
 			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 9000);";
 		};
