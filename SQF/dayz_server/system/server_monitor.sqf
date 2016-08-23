@@ -330,6 +330,18 @@ call server_plantSpawner; // Draw the pseudo random seeds
 [] execVM "\z\addons\dayz_server\system\scheduler\sched_init.sqf"; // launch the new task scheduler
 
 createCenter civilian;
+
+actualSpawnMarkerCount = 0;
+// count valid spawn markers, since different maps have different amounts
+for "_i" from 0 to 10 do {
+	if !([(getMarkerPos format["spawn%1",_i]), [0,0,0]] call BIS_fnc_areEqual) then {
+		actualSpawnMarkerCount = actualSpawnMarkerCount + 1;
+	} else {
+		_i = 11; // exit since we did not find any further markers 
+	};
+};
+diag_log format["Total Number of spawn locations %1", actualSpawnMarkerCount];
+
 if (isDedicated) then {endLoadingScreen;};
 allowConnection = true;
 sm_done = true;
@@ -477,14 +489,3 @@ _vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COL
 _vehicle_0 setPos _debugMarkerPosition;
 _vehicle_0 setVariable ["ObjectID","1",true];
 */
-
-actualSpawnMarkerCount = 0;
-// count valid spawn markers, since different maps have different amounts
-for "_i" from 0 to 10 do {
-	if !([(getMarkerPos format["spawn%1",_i]), [0,0,0]] call BIS_fnc_areEqual) then {
-		actualSpawnMarkerCount = actualSpawnMarkerCount + 1;
-	} else {
-		_i = 11; // exit since we did not find any further markers 
-	};
-};
-diag_log format["Total Number of spawn locations %1", actualSpawnMarkerCount];
