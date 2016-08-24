@@ -117,7 +117,8 @@ if (_qty >= _qty_in) then {
 							};
 	
 							//place vehicle spawn marker (local)
-							_sign = "Sign_arrow_down_large_EP1" createVehicleLocal _location;
+							_sign = "Sign_arrow_down_large_EP1" createVehicleLocal [0,0,0];
+							_sign setPos _location;
 							_location = [_sign] call FNC_GetPos;
 							[_part_out,_sign] call fn_waitForObject;
 

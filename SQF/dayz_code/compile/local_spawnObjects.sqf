@@ -31,7 +31,7 @@ _fires = [
 
 {
 	_type = _x select 0;
-	_object = _type createVehicleLocal (_x select 1);
+	_object = _type createVehicleLocal [0,0,0];
 	_object setDir (_x select 2);
 	_object setPos (_x select 1);
 	_object allowDamage false;
