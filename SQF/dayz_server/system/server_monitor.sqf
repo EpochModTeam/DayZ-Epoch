@@ -321,7 +321,7 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 	_x setVelocity [0,0,1];
 } forEach _DZE_VehObjects;
 
-diag_log ["HIVE: Streamed ", _val, "objects in ",(diag_tickTime - _timeStart)," seconds"];
+diag_log format["HIVE: BENCHMARK - Server_monitor.sqf finished streaming %1 objects in %2 seconds",_val,diag_tickTime - _timeStart];
 
 // # END OF STREAMING #
 
@@ -476,8 +476,7 @@ if (_hiveLoaded) then {
 		diag_log ("HIVE: Spawning # of Veins: " + str(MaxMineVeins));
 		for "_x" from 1 to MaxMineVeins do {call spawn_mineveins;};
 		
-		_totalTime = diag_tickTime - _startTime;
-		diag_log format["HIVE: Server finished spawning all random vehicles in %1 seconds",_totalTime];
+		diag_log format["HIVE: BENCHMARK - Server finished spawning %1 DynamicVehicles, %2 Debris, %3 SupplyCrates and %4 MineVeins in %5 seconds",_vehLimit,MaxDynamicDebris,MaxAmmoBoxes,MaxMineVeins,diag_tickTime - _startTime];
 	};
 };
 
