@@ -322,6 +322,8 @@ if (isNil "keyboard_keys") then {
     [actionKeys "MoveRight", _interrupt] call _addArray;
     [actionKeys "MoveForward", _interrupt] call _addArray;
     [actionKeys "MoveBack", _interrupt] call _addArray;
+    [actionKeys "TurnLeft", _interrupt] call _addArray;
+    [actionKeys "TurnRight", _interrupt] call _addArray;
     [actionKeys "PushToTalk", _noise] call _addArray;
     [actionKeys "VoiceOverNet", _noise] call _addArray;
     [actionKeys "PushToTalkDirect", _noise] call _addArray;

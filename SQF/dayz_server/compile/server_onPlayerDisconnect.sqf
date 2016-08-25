@@ -24,6 +24,7 @@ _lastDamage = _playerObj getVariable["noatlf4",0];
 _Sepsis = _playerObj getVariable["USEC_Sepsis",false];
 _lastDamage = round(diag_ticktime - _lastDamage);
 _inCombat = _playerObj getVariable ["inCombat", 0];
+_name = if (alive _playerObj) then {name _playerObj} else {"Dead Player"};
 
 //Readded Logout debug info.
 diag_log format["INFO - Player: %3(UID:%1/CID:%2) as (%4), logged off at %5%6", 
