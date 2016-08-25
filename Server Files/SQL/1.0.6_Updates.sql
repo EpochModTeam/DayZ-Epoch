@@ -1,3 +1,11 @@
+/*
+	DayZ Epoch 1.0.6 Updates
+	
+	ONLY RUN THIS FILE IF UPDATING AN EXISTING 1051 DATABASE TO 106.
+	NEW DATABASES SHOULD USE EPOCH.SQL INSTEAD.
+*/
+
+
 -- ----------------------------
 -- Prevent hitpoints from overflooding and causing errors
 -- ----------------------------
@@ -33,7 +41,6 @@ EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 
 ALTER TABLE `character_data` CHANGE `CashMoney` `Coins` bigint(20) NOT NULL DEFAULT '0';
-
 
 -- ----------------------------
 -- Update player_data to support group system with ~100 players per group
@@ -108,7 +115,7 @@ INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]'
 -- ----------------------------
 -- Add new attachments category to DB traders
 -- ----------------------------
-INSERT INTO `trader_tids` VALUES(693, 'Attachments', 176);
+INSERT INTO `trader_tids` VALUES(693, 'Attachments', 165);
 INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_ACOG",1]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 693, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_BELT",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_CCO",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');

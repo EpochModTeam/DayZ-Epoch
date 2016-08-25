@@ -112,8 +112,8 @@
 [UPDATED] Epoch.sql, 1.0.6_Updates.sql & CfgServerTraders with correct classnames for upgradable hilux1 & datsun1 versions. @Uro1
 
 [INFO] Server owners must update to the new Hive DLL included in the 1.0.6 release, changes in the soruce code can be found here: https://github.com/vbawol/DayZhiveEpoch/pull/13
-[INFO] Many weapon, item and tool classnames changed. Admins must run SQL\1.0.6_Updates and update their config traders (see dayz_code\Configs\CfgServerTrader) @ebaydayz
-[INFO] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt @ebaydayz
+[INFO] Many weapon and item classnames changed. Admins must update their traders. See SQL\1.0.6_Updates and dayz_code\Configs\CfgServerTrader
+[INFO] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt
 [INFO] New loot table format is incompatible with old loot tables. Admins see CfgLoot\README.txt
 [INFO] If you use any community mods included in this release (Advanced Trading, Build Vectors, Door or Plot Management, Snap Build Pro, A Plot For Life) you MUST uninstall them from your mission. The mods have been improved and many bugs have been fixed, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
