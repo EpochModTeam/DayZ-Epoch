@@ -1,19 +1,19 @@
 private ["_dir","_classname","_b0x1337","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_75" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_75" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _hasTool = 	"ItemCrowbar" in items player;
 if(!_hasTool) exitWith { 
 	localize "str_epoch_player_76" call dayz_rollingMessages;
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 };
 
 _item =     _this;
 _hasCrate = 	_item in magazines player;
 if (!_hasCrate) exitWith {
 	localize "str_epoch_player_77" call dayz_rollingMessages;
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 };
 
 _config =   configFile >> "CfgMagazines" >> _item;
@@ -65,4 +65,4 @@ player action ["Gear", _b0x1337];
 		
 localize "str_epoch_player_78" call dayz_rollingMessages;
 	
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

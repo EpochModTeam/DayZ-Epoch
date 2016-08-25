@@ -1,8 +1,8 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_tradeCounter","_next_highest_bar","_third_highest_bar","_next_highest_conv","_third_highest_conv","_third_parts_out_raw","_third_parts_out","_remainder","_next_parts_out_raw","_next_parts_out","_activatingPlayer","_traderID","_total_trades"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _total_parts_out = 0;
 
@@ -36,7 +36,7 @@ _abort = false;
 if(_total_trades < 1) exitWith { 
 	_needed =  _qty_in - _qty;
 	format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 };
 
 // perform number of total trades
@@ -269,4 +269,4 @@ if(_total_parts_out >= 1) then {
 	};
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

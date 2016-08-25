@@ -3,18 +3,18 @@
 */
 private ["_obj","_ownerID","_objectID","_objectUID","_alreadyPacking","_location1","_location2","_packedClass","_text","_playerNear"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_15" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_15" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _obj = _this;
 _packedClass = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "packedClass");
 _text = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");
 
 // Silently exit if object no longer exists
-if (isNull _obj || !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
+if (isNull _obj || !(alive _obj)) exitWith { dayz_actionInProgress = false; };
 
 _playerNear = _obj call dze_isnearest_player;
-if (_playerNear) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_16" call dayz_rollingMessages;};
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_16" call dayz_rollingMessages;};
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID = _obj getVariable["ObjectID","0"];
@@ -25,12 +25,12 @@ if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
 player removeAction s_player_packvault;
 s_player_packvault = 1;
 
-if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_118",_text] call dayz_rollingMessages;};
+if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_118",_text] call dayz_rollingMessages;};
 
-if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith { DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
+if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith { dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
 
 _alreadyPacking = _obj getVariable["packing",0];
-if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_120",_text] call dayz_rollingMessages;};
+if (_alreadyPacking == 1) exitWith {dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_120",_text] call dayz_rollingMessages;};
 _obj setVariable["packing",1];
 
 format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
@@ -43,7 +43,7 @@ if(_location1 distance _location2 > 0.1) exitWith {
 	format[localize "str_epoch_player_122",_text] call dayz_rollingMessages;
 	_obj setVariable["packing",0];
 	s_player_packvault = -1;
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 };
 
 if (!isNull _obj && alive _obj) then {
@@ -67,4 +67,4 @@ if (!isNull _obj && alive _obj) then {
 	format[localize "str_epoch_player_123",_text] call dayz_rollingMessages;
 };
 s_player_packvault = -1;
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

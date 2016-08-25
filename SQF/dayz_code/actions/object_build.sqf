@@ -80,10 +80,7 @@ if (_build) then {
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 
     format[localize "str_build_01",_text] call dayz_rollingMessages;
-    r_action_count = 0;
-} else {
-    r_action_count = 0;
-	
+} else {	
     if ((!isNil "_ghost") and {(!isNull _ghost)}) then { deleteVehicle _ghost; };
     
 	{
@@ -94,4 +91,4 @@ if (_build) then {
     format[localize "str_build_failed_02",_text] call dayz_rollingMessages;
 };
 
-
+dayz_actionInProgress = false;

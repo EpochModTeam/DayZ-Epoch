@@ -1,6 +1,6 @@
 private ["_rawmeat","_cookedmeat","_meat","_meatcooked","_text","_qty","_dis","_sfx"];
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_23" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_23" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 //diag_log ("Cook Enabled");
 player removeAction s_player_cook;
 s_player_cook = -1;
@@ -33,4 +33,4 @@ a_player_cooking = true;
 } forEach _rawmeat;
 
 a_player_cooking = false;
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

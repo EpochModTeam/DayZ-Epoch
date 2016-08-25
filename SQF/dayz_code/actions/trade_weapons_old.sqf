@@ -1,8 +1,8 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_traderID","_bos","_needed","_activatingPlayer","_textPartIn","_textPartOut","_started","_finished","_animState","_isMedic","_removed"];
 // [part_out,part_in, qty_out, qty_in,"buy"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _activatingPlayer = player;
 
@@ -120,4 +120,4 @@ if (_qty >= _qty_in) then {
 	format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

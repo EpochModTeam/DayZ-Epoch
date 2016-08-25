@@ -4,7 +4,8 @@ private ["_playerPos","_item","_location","_config","_text","_dir","_dis","_sfx"
 call gear_ui_init;
 closeDialog 1;
 
-if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
 
 //Player Pos
 _playerPos = getPosATL player;
@@ -26,7 +27,7 @@ _stashname = getText (configFile >> "CfgVehicles" >> _stashtype >> "displayName"
 
 // Items are missing
 if ((!(_consume IN magazines player))) exitWith {
-	r_action_count = 0;
+	dayz_actionInProgress = false;
 	format[localize "str_player_31_stash",_consumetext] call dayz_rollingMessages;
 };
 
@@ -35,7 +36,7 @@ _location set [2,0];
 
 //blocked
 if (["concrete",dayz_surfaceType] call fnc_inString) exitwith {
-	r_action_count = 0;
+	dayz_actionInProgress = false;
 };
 
 _worldspace = [_stashtype, player] call fn_niceSpot;
@@ -66,9 +67,9 @@ if ((count _worldspace) == 2) then {
 	publicVariableServer "PVDZ_obj_Publish";
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 
-	r_action_count = 0;
 	format[localize "str_success_stash_pitch",_stashname] call dayz_rollingMessages;
 } else {
-	r_action_count = 0;
 	format[localize "str_fail_stash_pitch",_stashname] call dayz_rollingMessages;
 };
+
+dayz_actionInProgress = false;

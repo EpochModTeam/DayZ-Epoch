@@ -5,8 +5,8 @@
 private ["_tent","_location","_isOk","_cancel","_location3","_location4","_location1","_location2","_counter","_pondPos","_isPond","_ppos","_hastentitem","_dir","_building","_isBuilding","_playerPos","_item","_offset_x","_offset_y","_offset_z","_offset_z_attach","_config","_text","_tmpvault","_vault_location","_objectsPond","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_removed"];
 //check if can pitch here
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_108" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_108" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _playerPos = getPosATL player;
 _item = _this;
@@ -160,4 +160,4 @@ if(!_cancel) then {
 	localize "str_epoch_player_111" call dayz_rollingMessages;
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

@@ -1,8 +1,8 @@
 private ["_vehicle","_removed"];
 _vehicle = _this select 3;
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_32" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_32" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 s_player_lockUnlock_crtl = 1;
@@ -31,4 +31,4 @@ if (_removed == 1) then {
 
 s_player_lockUnlock_crtl = -1;
 s_player_lockUnlockInside_ctrl = -1;
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

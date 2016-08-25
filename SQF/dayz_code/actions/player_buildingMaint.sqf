@@ -4,8 +4,8 @@
 */
 private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_requirements","_obj","_upgrade","_objectCharacterID"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 player removeAction s_player_maint_build;
 s_player_maint_build = 1;
@@ -19,7 +19,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_maint_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
+if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = false; s_player_maint_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
 
 // Get classname
 _classname = typeOf _obj;
@@ -90,5 +90,5 @@ if (_proceed) then {
 };
 
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;
 s_player_maint_build = -1;

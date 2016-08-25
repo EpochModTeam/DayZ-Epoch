@@ -4,13 +4,13 @@
 */
 private ["_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_temp_removed_array","_countr","_objectID","_objectUID","_location","_dir","_objectCharacterID","_weapons","_magazines","_backpacks","_classname","_object","_holder","_objWpnTypes","_objWpnQty","_newclassname","_requirements","_upgrade","_vehicle","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
 
-if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_PLAYER_52" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_52" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 // This is used to find correct upgrade based what upgrades was called allows multiple upgrades per vehicle.
 _upgrade = _this;
 
-if (vehicle player != player) exitWith {DZE_ActionInProgress = false; localize "STR_EPOCH_ACTIONS_18" call dayz_rollingMessages;};
+if (vehicle player != player) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_18" call dayz_rollingMessages;};
 
 // look for nearest empty vehicle
 _findNearestVehicles = player nearEntities [["LandVehicle"],10];
@@ -155,4 +155,4 @@ else {
 	localize "STR_EPOCH_PLAYER_27" call dayz_rollingMessages;
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

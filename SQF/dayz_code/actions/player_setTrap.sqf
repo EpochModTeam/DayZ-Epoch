@@ -3,10 +3,11 @@ private ["_item","_config","_onLadder","_classname","_text","_consume","_hastrap
 _item = _this;
 _config = configFile >> "CfgWeapons" >> _item;
 
-if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith { r_action_count = 0; localize "str_player_21" call dayz_rollingMessages;};
+if (_onLadder) exitWith { dayz_actionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
 
 call gear_ui_init;
 
@@ -16,7 +17,7 @@ _consume = ([] + getArray (_config >> "magazines")) select 0;
 
 _hastrapitem = _item in magazines player;
 
-if (!_hastrapitem) exitWith { r_action_count = 0; format[localize "str_player_31",_text,localize "str_player_31_place"] call dayz_rollingMessages;};
+if (!_hastrapitem) exitWith { dayz_actionInProgress = false; format[localize "str_player_31",_text,localize "str_player_31_place"] call dayz_rollingMessages;};
 
 player removeMagazine _item;
 _location = getPosATL player;
@@ -35,5 +36,5 @@ diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hiv
 
 player reveal _object;
 
-r_action_count = 0;
+dayz_actionInProgress = false;
 format[localize "str_build_01",_text] call dayz_rollingMessages;

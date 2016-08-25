@@ -1,7 +1,7 @@
 private ["_ok"];
 
-if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_PLAYER_21" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_21" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 dayz_selectedVault = _this select 3;
 dayz_combination = "";
@@ -15,4 +15,4 @@ if(!isNull dayz_selectedVault) then {
 	};
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

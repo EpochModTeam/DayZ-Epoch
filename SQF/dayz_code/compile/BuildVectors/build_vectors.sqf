@@ -66,7 +66,7 @@ if(_todo == 1 || _todo == 0) then{
 			[1,0] call fnc_vectorActionCleanup;
 			[] spawn {
 			while {true} do {
-				if(!DZE_ActionInProgress || DZE_cancelBuilding) exitWith {[0,0] call fnc_vectorActionCleanup; vectorActionState = "CLOSE";};
+				if(!dayz_actionInProgress || DZE_cancelBuilding) exitWith {[0,0] call fnc_vectorActionCleanup; vectorActionState = "CLOSE";};
 				sleep 2;
 				};
 			};
@@ -122,7 +122,7 @@ if(_todo == 2 || _todo == 0) then{
 			[1,0] call fnc_degreeActionCleanup;
 			[] spawn {
 			while {true} do {
-				if(!DZE_ActionInProgress || DZE_cancelBuilding) exitWith {[0,0] call fnc_degreeActionCleanup; degreeActionState = "CLOSE";};
+				if(!dayz_actionInProgress || DZE_cancelBuilding) exitWith {[0,0] call fnc_degreeActionCleanup; degreeActionState = "CLOSE";};
 				sleep 2;
 				};
 			};

@@ -15,7 +15,7 @@ class HandRoadFlare : HandGrenade
 		class CombineMag
 		{
 			text = $STR_MAG_COMBINE;
-			script = "spawn player_combineMag; r_action_count = r_action_count + 1;";
+			script = "spawn player_combineMag;";
 		};
 	};
 };
@@ -37,7 +37,7 @@ class HandChemBlue : HandGrenade
 		class CombineMag
 		{
 			text = $STR_MAG_COMBINE;
-			script = "spawn player_combineMag; r_action_count = r_action_count + 1;";
+			script = "spawn player_combineMag;";
 		};
 	};
 };
@@ -59,7 +59,7 @@ class HandChemGreen : HandGrenade
 		class CombineMag
 		{
 			text = $STR_MAG_COMBINE;
-			script = "spawn player_combineMag; r_action_count = r_action_count + 1;";
+			script = "spawn player_combineMag;";
 		};
 	};
 };
@@ -81,7 +81,7 @@ class HandChemRed : HandGrenade
 		class CombineMag
 		{
 			text = $STR_MAG_COMBINE;
-			script = "spawn player_combineMag; r_action_count = r_action_count + 1;";
+			script = "spawn player_combineMag;";
 		};
 	};
 };

@@ -1,5 +1,5 @@
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_88" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_88" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 /*
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
@@ -22,8 +22,8 @@ if (DZE_permanentPlot) then {
 	_isOwnerOfObj = (_objOwnerID == dayz_characterID);
 };
 
-if (_obj in DZE_DoorsLocked) exitWith {DZE_ActionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
-if (_obj getVariable ["GeneratorRunning", false]) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_89" call dayz_rollingMessages;};
+if (_obj in DZE_DoorsLocked) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
+if (_obj getVariable ["GeneratorRunning", false]) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_89" call dayz_rollingMessages;};
 
 _PlayerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
 if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;};
@@ -267,7 +267,7 @@ if (_proceed && _success) then {
 		player playActionNow "stop";
 	};
 };
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;
 s_player_deleteBuild = -1;
 
 _obj

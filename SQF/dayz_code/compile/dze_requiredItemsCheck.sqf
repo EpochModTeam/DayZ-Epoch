@@ -30,8 +30,8 @@ _missingText = "";
 } forEach _missing;
 
 _hasbuilditem = _item in magazines player;
-if (!_hasbuilditem) exitWith {DZE_ActionInProgress = false; format[localize "str_player_31",_text,"build"] call dayz_rollingMessages; false;};
-if (!_hasrequireditem) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_137",_missingText] call dayz_rollingMessages; false;};
+if (!_hasbuilditem) exitWith {dayz_actionInProgress = false; format[localize "str_player_31",_text,"build"] call dayz_rollingMessages; false;};
+if (!_hasrequireditem) exitWith {dayz_actionInProgress = false; format[localize "str_epoch_player_137",_missingText] call dayz_rollingMessages; false;};
 
 //When calling this function in another script use a silent exitWith, unless you have something special to say. i.e. if (!_hasrequireditem) exitWith{};
 _hasrequireditem;

@@ -24,7 +24,7 @@ if (count _this > 2) then {
 };
 
 _emergingLevel = 1.1;
-r_action_count = 1;
+dayz_actionInProgress = true;
 
 _isClass = switch (1==1) do {
     case (isClass (configFile >> "CfgMagazines" >> _item)): {"CfgMagazines"};
@@ -52,7 +52,7 @@ _onLadder = {getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animatio
 _isWater = {(surfaceIsWater (getPosATL _object)) or dayz_isSwimming};
 
 if (0 != count Dayz_constructionContext) then {
-    r_action_count = 0;
+    dayz_actionInProgress = false;
     localize "str_already_building" call dayz_rollingMessages;
     diag_log [ diag_ticktime, __FILE__, 'already building, exiting', Dayz_constructionContext, typeName Dayz_constructionContext];
 };
@@ -81,13 +81,13 @@ _missing = "";
 } count _requiredTools;
 
 if (!_ok) exitWith {
-    r_action_count = 0;
+    dayz_actionInProgress = false;
     format[localize "str_player_31_missingtools",_text,_missing] call dayz_rollingMessages; 
 };
 
 _posReference = [player] call FNC_GetPos;
 _canBuild = [_posReference, _item, false] call DZE_BuildChecks;
-if !(_canBuild select 0) exitWith {r_action_count = 0;};
+if !(_canBuild select 0) exitWith {dayz_actionInProgress = false;};
 
 // lets check player has requiredParts for upgrade
 _ok = true;
@@ -105,7 +105,7 @@ _upgradeParts = [];
 
 if (!_ok) exitWith {
     { player addMagazine _x; } foreach _upgradeParts;
-    r_action_count = 0;
+    dayz_actionInProgress = false;
     format[localize "str_player_31", _missing, localize "str_player_31_build"] call dayz_rollingMessages;
 };
 
@@ -246,7 +246,7 @@ _position = getPosATL _object;
 _actionBuildHidden = true;
 _actionCancel = player addAction [localize "str_player_build_cancel", "\z\addons\dayz_code\actions\object_build.sqf", [_object, _requiredParts, _classname, _text, false, 0, "none"], 1, true, true, "", "0 != count Dayz_constructionContext"];
 
-while {r_action_count != 0 and Dayz_constructionContext select 4} do {
+while {dayz_actionInProgress && Dayz_constructionContext select 4} do {
 
     // force the angle so that the ghost is showing always the same side
     _angleRef=Dayz_constructionContext select 1;
@@ -361,5 +361,5 @@ if (Dayz_constructionContext select 3) then { // "build" camera was on, switch i
 };
 
 Dayz_constructionContext = [];
-r_action_count = 0;
+dayz_actionInProgress = false;
 //systemChat "Dayz_constructionContext reset";

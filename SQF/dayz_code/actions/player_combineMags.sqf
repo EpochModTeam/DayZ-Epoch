@@ -3,11 +3,11 @@ disableSerialization;
 call gear_ui_init;
 closeDialog 0;
 
-if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
-
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
 _create = _this;
 
-if (!(_create in magazines player)) exitWith {r_action_count = 0;};
+if (!(_create in magazines player)) exitWith {dayz_actionInProgress = false;};
 
 _config = configFile >> "CfgMagazines" >> _create;
 
@@ -20,7 +20,7 @@ _magCount = {_x == _create} count magazines player;
 
 if (_magCount == 1) exitWith {
 	[format[localize "str_cannotCombine", _name],1] call dayz_rollingMessages;
-	r_action_count = 0;
+	dayz_actionInProgress = false;
 };
 
 //primary/secondary mags?
@@ -82,4 +82,4 @@ switch true do {
 };
 
 uiSleep 1;
-r_action_count = 0;
+dayz_actionInProgress = false;

@@ -17,10 +17,12 @@
 	- dayz_combat --> no longer exists use (player getVariable["combattimeout",0] >= diag_tickTime)
 	- dayz_fullMoonNights --> dayz_ForcefullmoonNights
 	- dayz_updateObjects --> DayZ_GearedObjects
+	- DZE_ActionInProgress --> dayz_actionInProgress
 	- DZE_CanPickup --> canPickup
 	- DZE_trees --> dayz_trees
 	- freeTarget --> OpenTarget
 	- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor
+	- r_action_count --> dayz_actionInProgress (now true/false instead of 1/0)
 	
 - Duplicate public variables have been renamed:
 	- dayzPlayerLogin --> PVCDZ_plr_Login

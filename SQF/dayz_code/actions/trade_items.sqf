@@ -1,8 +1,8 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_textPartIn","_textPartOut","_bos","_needed","_started","_finished","_animState","_isMedic","_total_parts_out","_abort","_removed","_activatingPlayer","_traderID","_done","_actualMags"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _activatingPlayer = player;
 
@@ -146,4 +146,4 @@ while {r_autoTrade} do {
 	uiSleep 1;
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

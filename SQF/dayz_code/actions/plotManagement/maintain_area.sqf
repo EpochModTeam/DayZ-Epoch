@@ -1,8 +1,8 @@
 private ["_objectID","_objectUID","_target","_objectClasses","_range","_objects","_requirements","_count","_objects_filtered","_ctrl","_itemText","_type","_amount","_success","_wealth","_message1","_message2","_option"];
 disableSerialization;
 
-if (DZE_ActionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 player removeAction s_player_maintain_area;
 s_player_maintain_area = 1;
@@ -36,7 +36,7 @@ if (_count == 0) exitWith {
 	} else {
 		format[localize "STR_EPOCH_ACTIONS_22",_count] call dayz_rollingMessages;
 	};
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 	s_player_maintain_area = -1;
 	s_player_maintain_area_preview = -1;
 };
@@ -132,6 +132,6 @@ switch _option do {
 	};
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;
 s_player_maintain_area = -1;
 s_player_maintain_area_preview = -1;

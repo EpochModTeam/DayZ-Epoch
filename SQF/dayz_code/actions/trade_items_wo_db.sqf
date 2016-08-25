@@ -1,8 +1,8 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_textPartIn","_textPartOut","_qty","_needed","_started","_finished","_animState","_isMedic","_abort","_removed","_tradeCounter","_total_trades","_humanityGain","_humanity"];
 // [part_out,part_in, qty_out, qty_in,];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _part_out = (_this select 3) select 0;
 _part_in = (_this select 3) select 1;
@@ -21,7 +21,7 @@ _total_trades = floor (_qty / _qty_in);
 if(_total_trades < 1) exitWith { 
 	_needed =  _qty_in - _qty;
 	format[localize "str_epoch_player_184",_needed,_textPartIn] call dayz_rollingMessages;
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 };
 
 _abort = false;
@@ -117,4 +117,4 @@ for "_x" from 1 to _total_trades do {
 };
 	
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

@@ -6,9 +6,8 @@ if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith
 */
 private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_tmpbuilt","_onLadder","_require","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_canBuild"];
 
-if (DZE_ActionInProgress || {r_action_count > 0}) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
-r_action_count = r_action_count + 1;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 _pos = [player] call FNC_GetPos;
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -37,10 +36,10 @@ DZE_cancelBuilding = false;
 call gear_ui_init;
 closeDialog 1;
 
-if (dayz_isSwimming) exitWith {r_action_count = 0; DZE_ActionInProgress = false; localize "str_player_26" call dayz_rollingMessages;};
-if (_inVehicle) exitWith {r_action_count = 0; DZE_ActionInProgress = false; localize "str_epoch_player_42" call dayz_rollingMessages;};
-if (_onLadder) exitWith {r_action_count = 0; DZE_ActionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
-if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {r_action_count = 0; DZE_ActionInProgress = false; localize "str_epoch_player_43" call dayz_rollingMessages;};
+if (dayz_isSwimming) exitWith {dayz_actionInProgress = false; localize "str_player_26" call dayz_rollingMessages;};
+if (_inVehicle) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_42" call dayz_rollingMessages;};
+if (_onLadder) exitWith {dayz_actionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
+if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_43" call dayz_rollingMessages;};
 
 _item =	_this;
 
@@ -85,8 +84,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> 
 
 if(_abort) exitWith {
 	format[localize "str_epoch_player_135",_reason,_distance] call dayz_rollingMessages;
-	DZE_ActionInProgress = false;
-	r_action_count = 0;
+	dayz_actionInProgress = false;
 };
 
 _canBuild = [_pos, _item, true] call dze_buildChecks;
@@ -494,5 +492,4 @@ if (_canBuild select 0) then {
 	};
 };
 
-DZE_ActionInProgress = false;
-r_action_count = 0;
+dayz_actionInProgress = false;

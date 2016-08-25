@@ -1,6 +1,6 @@
 private ["_item","_type","_hasHarvested","_config","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_sharpnessRemaining","_qty","_chance","_string"];
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_29" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_29" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _item = _this select 3;
 _type = typeOf _item;
@@ -13,7 +13,7 @@ player removeAction s_player_butcher;
 s_player_butcher = -1;
 
 _PlayerNear = {isPlayer _x} count ((getPosATL _item) nearEntities ["CAManBase", 10]) > 1;
-if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages; DZE_ActionInProgress = false;};
+if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages; dayz_actionInProgress = false;};
 
 //Count how many active tools the player has
 {
@@ -22,7 +22,7 @@ if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessag
 	};
 } count Dayz_Gutting;
 
-if ((count _knifeArray) < 1) exitWith { localize "str_cannotgut" call dayz_rollingMessages; DZE_ActionInProgress = false; };
+if ((count _knifeArray) < 1) exitWith { localize "str_cannotgut" call dayz_rollingMessages; dayz_actionInProgress = false; };
 
 
 if ((count _knifeArray > 0) and !_hasHarvested) then {
@@ -91,4 +91,4 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 	uiSleep 0.02;
 	_string call dayz_rollingMessages;
 };
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

@@ -5,8 +5,8 @@
 */
 private ["_obj","_ownerID","_alreadyPacking","_playerNear","_claimedBy","_text","_objType","_ComboMatch"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 {player removeAction _x} count s_player_combi;
 s_player_combi = [];
@@ -17,14 +17,14 @@ _objType = typeOf _obj;
 
 if !(_objType in DZE_LockedStorage) exitWith {
 	s_player_unlockvault = -1;
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 };
 
 _playerNear = _obj call dze_isnearest_player;
-if (_playerNear) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_20" call dayz_rollingMessages;};
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_20" call dayz_rollingMessages;};
 
 // Silently exit if object no longer exists || alive
-if (isNull _obj || !(alive _obj)) exitWith { DZE_ActionInProgress = false; };
+if (isNull _obj || !(alive _obj)) exitWith { dayz_actionInProgress = false; };
 
 _unlockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "unlockedClass");
 _text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
@@ -35,7 +35,7 @@ _ownerID = _obj getVariable["CharacterID","0"];
 _ComboMatch = (_ownerID == dayz_combination);
 if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
 
-if (_alreadyPacking == 1) exitWith {DZE_ActionInProgress = false; format[localize "str_epoch_player_124",_text] call dayz_rollingMessages;};
+if (_alreadyPacking == 1) exitWith {dayz_actionInProgress = false; format[localize "str_epoch_player_124",_text] call dayz_rollingMessages;};
 
 if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	// Check if any players are nearby if not allow player to claim item.
@@ -73,7 +73,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 			format[localize "STR_BLD_UNLOCKED",_text] call dayz_rollingMessages;
 		};
 	} else {
-		DZE_ActionInProgress = false; 
+		dayz_actionInProgress = false; 
 		format[localize "str_player_beinglooted",_text] call dayz_rollingMessages;
 	};
 } else {
@@ -86,4 +86,4 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	format[localize "STR_BLD_WRONG_COMBO",_text] call dayz_rollingMessages;
 };
 s_player_unlockvault = -1;
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

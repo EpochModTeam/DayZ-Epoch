@@ -1,7 +1,7 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_configVeh","_nameText","_towTruck","_inTow"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_96" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_96" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 player removeAction s_player_towing;
 s_player_towing = 1;
@@ -79,5 +79,5 @@ if(_inTow) then {
 } else {
 	localize "str_epoch_player_102" call dayz_rollingMessages;
 };
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;
 s_player_towing = -1;

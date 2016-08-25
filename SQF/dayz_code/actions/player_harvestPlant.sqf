@@ -5,8 +5,8 @@
 */
 private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 // allowed trees list move this later
 _trees = ["pumpkin.p3d","p_helianthus.p3d","p_fiberplant_ep1.p3d"];
@@ -131,4 +131,4 @@ if (count(_findNearestTree) >= 1) then {
 } else {
 	localize "str_epoch_player_74" call dayz_rollingMessages;
 };
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

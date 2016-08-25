@@ -1,7 +1,7 @@
 private ["_bottletext","_tin1text","_tin2text","_tintext","_hasbottleitem","_hastinitem","_qty","_dis","_sfx","_bottleInfected"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_22" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_22" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterBottle" >> "displayName");
 _tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayName");
@@ -61,4 +61,4 @@ if (_hasbottleitem and _hastinitem) then {
 };
 
 a_player_boil = false;
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

@@ -15,7 +15,7 @@ class ItemEtool : ItemCore
 		class Build
 		{
 			text = "Build Sandbag Fence";
-			script = "spawn player_build;"; //r_action_count = r_action_count + 1; set in sqf
+			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
 			consume[] = {"ItemSandbag"};
 			create = "Sandbag1_DZ";
@@ -24,7 +24,7 @@ class ItemEtool : ItemCore
 		/*class Use
 		{
 			text=$STR_CREATE_STASH;
-			script="spawn player_createstash;"; // r_action_count = r_action_count + 1;
+			script="spawn player_createstash;";
 		};*/
 	};
 };

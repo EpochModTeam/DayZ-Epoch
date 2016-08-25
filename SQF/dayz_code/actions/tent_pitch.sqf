@@ -13,11 +13,12 @@ _classname = getText (_config >> "tentmodel");
 //diag_log ("Classname: "+str(_classname));
 //diag_log ("Item: "+str(_item));
 
-if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
 
 // item is missing or tools are missing
 if ((!(_item IN magazines player))) exitWith {
-	r_action_count = 0;
+	dayz_actionInProgress = false;
 	format[localize "str_player_31",_text,localize "str_player_31_pitch"] call dayz_rollingMessages;
 };
 
@@ -95,10 +96,9 @@ _booleans = []; //testonLadder, testSea, testPond, testBuilding, testSlope, test
 
 	localize "str_success_tent_pitch" call dayz_rollingMessages;
 	sleep 1;
-	r_action_count = 0;
-
 } else {
-	r_action_count = 0;
 	localize "str_fail_tent_pitch" call dayz_rollingMessages;
 };
+
+dayz_actionInProgress = false;
 */

@@ -7,12 +7,12 @@ disableSerialization;
 call gear_ui_init;
 
 //note - one slot ammo can be used!
-r_action_count = r_action_count + 1;
-if (r_action_count != 1) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
 
 _item = _this;
 
-if (!(_item in magazines player)) exitWith {r_action_count = 0;};
+if (!(_item in magazines player)) exitWith {dayz_actionInProgress = false;};
 
 _config = configFile >> "CfgMagazines" >> _item;
 
@@ -96,7 +96,7 @@ if (_consume_magsize > _create_magsize) then {
 };
 
 if ((_qtynew_create_mags + _qtynew_consume_mags) > (_qty_create_mags + _qty_consume_mags + _qty_free_slots)) exitWith {
-	r_action_count = 0;
+	dayz_actionInProgress = false;
     localize "str_player_24" call dayz_rollingMessages;
 };
 _qtynew_consume_mags_full = floor(_qtynew_consume_ammo/_consume_magsize);
@@ -121,4 +121,4 @@ if (_qtynew_create_ammo_rest != 0) then {
     player addMagazine [_create,_qtynew_create_ammo_rest];
 };
 uiSleep 1;
-r_action_count = 0;
+dayz_actionInProgress = false;

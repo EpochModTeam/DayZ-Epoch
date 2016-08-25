@@ -1,8 +1,8 @@
 /*
 [_obj] call player_packTent;
 */
-if (DZE_ActionInProgress) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID = _obj getVariable["ObjectID","0"];
@@ -24,7 +24,7 @@ _campItems = ["IC_DomeTent","IC_Tent"];
 if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) then {
 	player playActionNow "Medic";
 	_alreadyPacking = _obj getVariable["packing",0];
-	if (_alreadyPacking == 1) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages; DZE_ActionInProgress = false;};
+	if (_alreadyPacking == 1) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages; dayz_actionInProgress = false;};
 
 	_obj setVariable["packing",1];
 	_dir = direction _obj;
@@ -82,4 +82,4 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 } else {
 	localize "str_fail_tent_pack" call dayz_rollingMessages;
 };
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

@@ -1,11 +1,11 @@
 private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 // Test cannot lock while another player is nearby
 //_playerNear = {isPlayer _x} count (player nearEntities ["CAManBase", 12]) > 1;
-//if(_playerNear) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_104" call dayz_rollingMessages;};
+//if(_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_104" call dayz_rollingMessages;};
 
 // [part_out,part_in, qty_out, qty_in, loc];
 
@@ -61,7 +61,7 @@ if (!_finished) exitWith {
 		player playActionNow "stop";
 	};
 	localize "str_epoch_player_106" call dayz_rollingMessages;
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 };
 
 if (_finished) then {
@@ -204,4 +204,4 @@ if (_finished) then {
 		};	
 	};
 };
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

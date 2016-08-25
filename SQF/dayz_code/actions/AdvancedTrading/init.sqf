@@ -6,7 +6,7 @@ if (isNil "Z_traderData" || count (Z_traderData) == 0) exitWith {
 	localize "STR_EPOCH_TRADE_ERROR" call dayz_rollingMessages;
 };
 
-if (DZE_ActionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 
 if (isNil "Z_AdvancedTradingInit") then {
 

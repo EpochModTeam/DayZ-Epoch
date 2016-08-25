@@ -65,7 +65,7 @@ class PartWoodPile : CA_Magazine
 		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_242;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"sawmill"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"PartWoodLumber",1}};
@@ -74,7 +74,7 @@ class PartWoodPile : CA_Magazine
 		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_243;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemKnife"};
 			output[] = {{"WoodenArrow",3}};
@@ -84,7 +84,7 @@ class PartWoodPile : CA_Magazine
 		class Crafting2
 		{
 			text = $STR_EPOCH_PLAYER_244;
-			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;"; // r_action_count = r_action_count + 1;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"stick_fence_kit",1}};

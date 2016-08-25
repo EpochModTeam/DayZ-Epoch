@@ -1,8 +1,8 @@
 private ["_part_out","_part_in","_qty_out","_qty_in","_qty","_bos","_bag","_class","_started","_finished","_animState","_isMedic","_num_removed","_needed","_activatingPlayer","_buy_o_sell","_textPartIn","_textPartOut","_traderID"];
 //		   [part_out,part_in, qty_out, qty_in,];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _activatingPlayer = player;
 
@@ -57,7 +57,7 @@ if (!_finished) exitWith {
 		[objNull, player, rSwitchMove,""] call RE;
 		player playActionNow "stop";
 	};
-	DZE_ActionInProgress = false;
+	dayz_actionInProgress = false;
 	localize "str_epoch_player_106" call dayz_rollingMessages;
 };
 
@@ -132,4 +132,4 @@ if (_finished) then {
 	};
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;

@@ -4,8 +4,8 @@
 */
 private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_ownerID","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems"];
 
-if (DZE_ActionInProgress) exitWith {localize "str_epoch_player_48" call dayz_rollingMessages;};
-DZE_ActionInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_48" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 player removeAction s_player_downgrade_build;
 s_player_downgrade_build = 1;
@@ -17,7 +17,7 @@ _obj = _this select 3;
 _objectCharacterID 	= _obj getVariable ["CharacterID","0"];
 
 
-if (DZE_Lock_Door != _objectCharacterID) exitWith {DZE_ActionInProgress = false; localize "str_epoch_player_49" call dayz_rollingMessages;};
+if (DZE_Lock_Door != _objectCharacterID) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_49" call dayz_rollingMessages;};
 
 // Find objectID
 _objectID 	= _obj getVariable ["ObjectID","0"];
@@ -25,7 +25,7 @@ _objectID 	= _obj getVariable ["ObjectID","0"];
 // Find objectUID
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if (_objectID == "0" && _objectUID == "0") exitWith {DZE_ActionInProgress = false; s_player_upgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
+if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = false; s_player_upgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
 
 // Get classname
 _classname = typeOf _obj;
@@ -123,5 +123,5 @@ if ((count _upgrade) > 0) then {
 	localize "str_epoch_player_51" call dayz_rollingMessages;
 };
 
-DZE_ActionInProgress = false;
+dayz_actionInProgress = false;
 s_player_downgrade_build = -1;
