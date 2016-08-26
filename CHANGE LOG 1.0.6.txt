@@ -105,6 +105,7 @@
 [FIXED] Fix some items not displaying removal option #1135 @icomrade
 [FIXED] Study body message saying his/he on female players. @ebaydayz
 [FIXED] Destroyed objects (i.e. ore veins, ammo crates and wrecked buildables) are now deleted globally after being removed. #1730 @icomrade
+[FIXED] UH1Y and AH6X unkown animation source RPT errors, and added back observer seats to AH6X and UH1Y without thermal imaging. @icomrade
 
 [UPDATED] .hpp files updated in dayz_code\Configs\CfgLoot\CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
