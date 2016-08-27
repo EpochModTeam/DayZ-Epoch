@@ -34,7 +34,7 @@ class CfgWorlds {
 		access = 3;
 		worldId = 4;
 		cutscenes[] = {"DayZModIntro1"};
-		description = "DayZ Epoch 1.0.6";
+		description = DayZVersion;
 		icon = "";
 		worldName = "\ca\chernarus\chernarus.wrp";
 		pictureMap = "";

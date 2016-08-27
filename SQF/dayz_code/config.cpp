@@ -1,4 +1,5 @@
 #include "Configs\basicDefines.hpp"
+#include "\z\addons\dayz_code\version.hpp"
 #include "Configs\CfgNonAIVehicles.hpp" //Axeman lights
 
 class CfgPatches
@@ -49,7 +50,7 @@ class CfgMods
 		hidePicture = 0;
 		hideName = 0;
 		action = "http://www.dayzepoch.com";
-		version = "DayZ Epoch 1.0.6";
+		version = DayZVersion;
 		hiveVersion = 0.96;
 		//requiredAddons[] = {"Chernarus"}; // No need to load for other maps
 	};
