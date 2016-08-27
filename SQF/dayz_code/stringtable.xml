@@ -13560,6 +13560,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_EMPTY">
 			<English>Supply Crate (Empty)</English>
+			<German>Versorgungskiste (Leer)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
 			<English>6x Soda (Coke)</English>
@@ -13569,6 +13570,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODACOKE_HALF">
 			<English>Supply Crate (6x Coke)</English>
+			<German>Versorgungskiste (6x Coke)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
 			<English>12x Soda (Coke)</English>
@@ -13578,6 +13580,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODACOKE_FULL">
 			<English>Supply Crate (12x Coke)</English>
+			<German>Versorgungskiste (12x Coke)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
 			<English>6x Soda (Pepsi)</English>
@@ -13587,6 +13590,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODAPEPSI_HALF">
 			<English>Supply Crate (6x Pepsi)</English>
+			<German>Versorgungskiste (6x Pepsi)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
 			<English>12x Soda (Pepsi)</English>
@@ -13596,6 +13600,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODAPEPSI_FULL">
 			<English>Supply Crate (12x Pepsi)</English>
+			<German>Versorgungskiste (12x Pepsi)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
 			<English>6x Bacon</English>
@@ -13605,6 +13610,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_BACON_HALF">
 			<English>Supply Crate (6x Bacon)</English>
+			<German>Versorgungskiste (6x Bacon)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
 			<English>12x Bacon</English>
@@ -13614,30 +13620,35 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_BACON_FULL">
 			<English>Supply Crate (12x Bacon)</English>
+			<German>Versorgungskiste (12x Bacon)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_G17">
 			<English>12x 17Rnd_9x19_glock17</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_G17">
 			<English>Supply Crate (12x G17)</English>
+			<German>Versorgungskiste (12x G17)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_M9SD">
 			<English>12x 15Rnd_9x19_M9SD</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_M9SD">
 			<English>Supply Crate (12x M9SD)</English>
+			<German>Versorgungskiste (12x M9SD)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
 			<English>12x 30Rnd_9x19_MP5SD</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_MP5SD">
 			<English>Supply Crate (12x MP5SD)</English>
+			<German>Versorgungskiste (12x MP5SD)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_STANAGSD">
 			<English>12x 30Rnd_556x45_StanagSD</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_STANAGSD">
 			<English>Supply Crate (12x StanagSD)</English>
+			<German>Versorgungskiste (12x StanagSD)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
 			<English>12x SandBag</English>
@@ -13647,6 +13658,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SANDBAG">
 			<English>Supply Crate (12x Sandbag)</English>
+			<German>Versorgungskiste (12x Sandsack)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
 			<English>12x Tank Trap</English>
@@ -13656,6 +13668,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_TANKTRAP_FULL">
 			<English>Supply Crate (12x Tank Trap)</English>
+			<German>Versorgungskiste (12x Panzersperre)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
 			<English>6x Tank Trap</English>
@@ -13665,6 +13678,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_TANKTRAP_HALF">
 			<English>Supply Crate (6x Tank Trap)</English>
+			<German>Versorgungskiste (6x Panzersperre)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
 			<English>12x Wire Kit</English>
@@ -13674,6 +13688,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_FULL">
 			<English>Supply Crate (12x Wire Kit)</English>
+			<German>Versorgungskiste (12x Stacheldraht)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
 			<English>6x Wire Kit</English>
@@ -13683,6 +13698,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_HALF">
 			<English>Supply Crate (6x Wire Kit)</English>
+			<German>Versorgungskiste (6x Stacheldraht)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
 			<English>12x Scrap Metal</English>
@@ -13692,6 +13708,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_GENERIC_FULL">
 			<English>Supply Crate (12x Scrap Metal)</English>
+			<German>Versorgungskiste (12x Metallteile)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
 			<English>6x Scrap Metal</English>
@@ -13701,6 +13718,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_GENERIC_HALF">
 			<English>Supply Crate (6x Scrap Metal)</English>
+			<German>Versorgungskiste (6x Metallteile)</German>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE">
 			<English>Safe</English>
