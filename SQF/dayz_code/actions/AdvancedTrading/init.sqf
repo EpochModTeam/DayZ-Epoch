@@ -44,13 +44,6 @@ if (isNil "Z_AdvancedTradingInit") then {
 	Z_BuyableArray = [];
 	Z_BuyingArray = [];
 
-	if (isNil 'CurrencyName' && Z_SingleCurrency) then {
-		CurrencyName = 'Coins'; // fallback
-	};
-	if (!Z_SingleCurrency) then {
-		CurrencyName = '';
-	};
-
 	/* end script config */
 
 	ZUPA_fnc_removeWeaponsAndMagazinesCargo = 	compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\zupa_fnc_removeWeaponsAndMagazinesCargo.sqf");

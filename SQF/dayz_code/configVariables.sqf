@@ -57,8 +57,9 @@ Z_VehicleDistance = 40; // Distance that a vehicle needs to be to see it's conte
 Z_AllowTakingMoneyFromBackpack = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your backpack.
 Z_AllowTakingMoneyFromVehicle = true; // When buying items with DEFAULT CURRENCY to any inventory. Do you allow the trader to take money from your vehicle.
 Z_SingleCurrency = false; // Does your server use a single currency system?
-Z_MoneyVariable = "cashMoney"; // If using a Single currency system (Z_SingleCurrency = true;), change this to whatever currency you are using.
-DZE_MoneyStorageClasses = []; // If using a Single currency system (Z_SingleCurrency = true;), this is an array of object classes players can store coins in
+CurrencyName = "Coins"; // If using single currency this is the currency display name.
+Z_MoneyVariable = "cashMoney"; // If using single currency this is the variable name used to store player wealth.
+DZE_MoneyStorageClasses = []; // If using single currency this is an array of object classes players can store coins in.
 
 // Plot Management and Plot for Life
 DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
