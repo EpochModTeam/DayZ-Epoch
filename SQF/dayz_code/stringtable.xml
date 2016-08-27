@@ -13547,8 +13547,8 @@
 			<Czech>Bedna zásob</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC">
-			<English>12 x Random Item</English>
-			<German>12 x Zufällige Gegenstände</German>
+			<English>12x Random Item</English>
+			<German>12x Zufällige Gegenstände</German>
 			<Russian>Какой-то предмет (12x)</Russian>
 			<Czech>12x Náhodných předmětů</Czech>
 		</Key>
@@ -13558,95 +13558,149 @@
 			<Russian>Пустой ящик</Russian>
 			<Czech>Prázdná bedna</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_EMPTY">
+			<English>Supply Crate (Empty)</English>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
-			<English>6 x Soda (Coke)</English>
-			<German>6 x Dose (Coke)</German>
-			<Russian>6 x Газировка (Кола)</Russian>
+			<English>6x Soda (Coke)</English>
+			<German>6x Dose (Coke)</German>
+			<Russian>6x Газировка (Кола)</Russian>
 			<Czech>6x Soda s kolovou příchutí</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_SODACOKE_HALF">
+			<English>Supply Crate (6x Coke)</English>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
-			<English>12 x Soda (Coke)</English>
-			<German>12 x Dose (Coke)</German>
-			<Russian>12 x Газировка (Кола)</Russian>
+			<English>12x Soda (Coke)</English>
+			<German>12x Dose (Coke)</German>
+			<Russian>12x Газировка (Кола)</Russian>
 			<Czech>12x Soda s kolovou příchutí</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_SODACOKE_FULL">
+			<English>Supply Crate (12x Coke)</English>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
-			<English>6 x Soda (Pepsi)</English>
-			<German>6 x Dose (Pepsi)</German>
-			<Russian>6 x Газировка (Пепси)</Russian>
+			<English>6x Soda (Pepsi)</English>
+			<German>6x Dose (Pepsi)</German>
+			<Russian>6x Газировка (Пепси)</Russian>
 			<Czech>6x Pepsi</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_SODAPEPSI_HALF">
+			<English>Supply Crate (6x Pepsi)</English>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
-			<English>12 x Soda (Pepsi)</English>
-			<German>12 x Dose (Pepsi)</German>
-			<Russian>12 x Газировка (Пепси)</Russian>
+			<English>12x Soda (Pepsi)</English>
+			<German>12x Dose (Pepsi)</German>
+			<Russian>12x Газировка (Пепси)</Russian>
 			<Czech>12x Pepsi</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_SODAPEPSI_FULL">
+			<English>Supply Crate (12x Pepsi)</English>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
-			<English>6 x Bacon</English>
-			<German>6 x Gebratener Speck</German>
-			<Russian>6 x Готовый бекон</Russian>
+			<English>6x Bacon</English>
+			<German>6x Gebratener Speck</German>
+			<Russian>6x Готовый бекон</Russian>
 			<Czech>6x Vepřové</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_BACON_HALF">
+			<English>Supply Crate (6x Bacon)</English>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
-			<English>12 x Bacon</English>
-			<German>12 x Gebratener Speck</German>
-			<Russian>12 x Готовый бекон</Russian>
+			<English>12x Bacon</English>
+			<German>12x Gebratener Speck</German>
+			<Russian>12x Готовый бекон</Russian>
 			<Czech>12x Vepřové</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_BACON_FULL">
+			<English>Supply Crate (12x Bacon)</English>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_G17">
-			<English>12 x 17Rnd_9x19_glock17</English>
-			<Czech>12x 17Rnd_9x19_glock17</Czech>
+			<English>12x 17Rnd_9x19_glock17</English>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_G17">
+			<English>Supply Crate (12x G17)</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_M9SD">
-			<English>12 x 15Rnd_9x19_M9SD</English>
-			<Czech>12x 15Rnd_9x19_M9SD</Czech>
+			<English>12x 15Rnd_9x19_M9SD</English>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_M9SD">
+			<English>Supply Crate (12x M9SD)</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
-			<English>12 x 30Rnd_9x19_MP5SD</English>
-			<Czech>12x 30Rnd_9x19_MP5SD</Czech>
+			<English>12x 30Rnd_9x19_MP5SD</English>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_MP5SD">
+			<English>Supply Crate (12x MP5SD)</English>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_STANAGSD">
+			<English>12x 30Rnd_556x45_StanagSD</English>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_STANAGSD">
+			<English>Supply Crate (12x StanagSD)</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
-			<English>12 x SandBag</English>
-			<German>12 x Sandsack</German>
-			<Russian>12 x Мешок с песком</Russian>
+			<English>12x SandBag</English>
+			<German>12x Sandsack</German>
+			<Russian>12x Мешок с песком</Russian>
 			<Czech>12 Pytlů s pískem</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
-			<English>6 x Tank Trap</English>
-			<German>6 x Panzersperre</German>
-			<Russian>6 x Противотанковый ёж</Russian>
-			<Czech>6 Zátaras</Czech>
+		<Key ID="STR_EPOCH_BULK_DISP_SANDBAG">
+			<English>Supply Crate (12x Sandbag)</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
-			<English>12 x Tank Trap</English>
-			<German>12 x Panzersperre</German>
-			<Russian>12 x Противотанковый ёж</Russian>
+			<English>12x Tank Trap</English>
+			<German>12x Panzersperre</German>
+			<Russian>12x Противотанковый ёж</Russian>
 			<Czech>12 Zátaras</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
-			<English>6 x Wire Kit</English>
-			<German>6 x Stacheldraht</German>
-			<Russian>6 x Колючая проволока</Russian>
-			<Czech>6 Drátů</Czech>
+		<Key ID="STR_EPOCH_BULK_DISP_TANKTRAP_FULL">
+			<English>Supply Crate (12x Tank Trap)</English>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
+			<English>6x Tank Trap</English>
+			<German>6x Panzersperre</German>
+			<Russian>6x Противотанковый ёж</Russian>
+			<Czech>6 Zátaras</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_TANKTRAP_HALF">
+			<English>Supply Crate (6x Tank Trap)</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
-			<English>12 x Wire Kit</English>
-			<German>12 x Stacheldraht</German>
-			<Russian>12 x Колючая проволока</Russian>
+			<English>12x Wire Kit</English>
+			<German>12x Stacheldraht</German>
+			<Russian>12x Колючая проволока</Russian>
 			<Czech>12 Drátů</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
-			<English>6 x Scrap Metal</English>
-			<German>6 x Metallteile</German>
-			<Russian>6 x Металлолом</Russian>
-			<Czech>6x Železný šrot</Czech>
+		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_FULL">
+			<English>Supply Crate (12x Wire Kit)</English>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
+			<English>6x Wire Kit</English>
+			<German>6x Stacheldraht</German>
+			<Russian>6x Колючая проволока</Russian>
+			<Czech>6 Drátů</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_HALF">
+			<English>Supply Crate (6x Wire Kit)</English>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
-			<English>12 x Scrap Metal</English>
-			<German>12 x Metallteile</German>
-			<Russian>12 x Металлолом</Russian>
+			<English>12x Scrap Metal</English>
+			<German>12x Metallteile</German>
+			<Russian>12x Металлолом</Russian>
 			<Czech>12x Železný šrot</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_GENERIC_FULL">
+			<English>Supply Crate (12x Scrap Metal)</English>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
+			<English>6x Scrap Metal</English>
+			<German>6x Metallteile</German>
+			<Russian>6x Металлолом</Russian>
+			<Czech>6x Železný šrot</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_GENERIC_HALF">
+			<English>Supply Crate (6x Scrap Metal)</English>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE">
 			<English>Safe</English>
@@ -13833,9 +13887,6 @@
 			<English>Bio Meat</English>
 			<German>Bio-Fleisch</German>
 			<Russian>Органическое мясо</Russian>
-			<Spanish>Bio Meat</Spanish>
-			<French>Bio Meat</French>
-			<Czech>Bio Meat</Czech>
 		</Key>
 		<Key ID="STR_FOOD_NAME_BIOMEAT_DESC">
 			<English>Bio Meat: A very good source of nutrition, and a very high chance of infection. Eat at own risk.</English>
