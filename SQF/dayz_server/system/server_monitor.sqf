@@ -72,6 +72,10 @@ if (_legacyStreamingMethod) then {
 			_key = format["CHILD:302:%1:%2:",_lastFN, _legacyStreamingMethod];
 			_result = _key call server_hiveReadWrite; //deletes previous object data dump
 		};
+	} else {
+		if (_status == "ObjectStreamStart") then {
+			_hiveLoaded = true;
+		};
 	};
 };
 
