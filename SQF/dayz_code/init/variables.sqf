@@ -234,6 +234,7 @@ dayz_resetSelfActions = {
 	s_halo_action = -1;
 	s_player_SurrenderedGear = -1;
 	s_player_maintain_area = -1;
+	s_player_maintain_area_force = -1;
 	s_player_maintain_area_preview = -1;
 	s_player_heli_lift = -1;
 	s_player_heli_detach = -1;

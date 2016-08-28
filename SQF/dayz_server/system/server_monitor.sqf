@@ -92,6 +92,7 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 	_storageMoney = _x select 9;
 
 	//set object to be in maintenance mode
+	_maintenanceMode = false;
 	_maintenanceModeVars = [];
 	
 	_dir = 90;

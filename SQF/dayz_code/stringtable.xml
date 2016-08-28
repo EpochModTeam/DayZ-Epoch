@@ -13231,6 +13231,9 @@
 			<French>Maintenir la zone</French>
 			<Czech>Údržba oblasti</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_FORCE_MAINTAREA">
+			<English>Force Maintain Area</English>
+		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTPREV">
 			<English>Maintain Area Preview</English>
 			<German>Kostenvoranschlag für Instandhaltung</German>
@@ -13254,7 +13257,6 @@
 			<English>Hotwire %1</English>
 			<German>%1 kurzschliessen</German>
 			<Russian>Угнать %1</Russian>
-			<Dutch>Hotwire %1</Dutch>
 			<French>Démarrer avec les fils %1</French>
 			<Czech>Pokusit se Dostat do Vozidla %1</Czech>
 		</Key>
@@ -13346,6 +13348,9 @@
 			<Dutch>Onderhoud</Dutch>
 			<French>Maintenir</French>
 			<Czech>Opravit</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN_FORCE">
+			<English>Force Maintain</English>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
 			<English>Stop Generator</English>
@@ -15011,36 +15016,28 @@
 		
 		<!-- PLOT MANAGEMENT BELOW -->
 		
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_OBJECTS">
-			<English>Objects to maintain: %1</English>
+		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE"> 
+			<English>Objects to maintain: 0, No maintenance required.</English>
 		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE">
-			<English>Price to maintain: %1 %2</English>
+		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE"> 
+			<English>Price to maintain %1 objects: %2 %3</English>
 		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_NO_MONEY_NEEDED">
-			<English>No maintenance needed.</English>
-			<Russian>Деньги не требуются.</Russian>
+		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS"> 
+			<English>Success! %1 objects maintained for %2 %3.</English>
 		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS">
-			<English>SUCCESS: Objects maintained: %1</English>
+		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE"> 
+			<English>Price to force maintain %1 objects: %2 %3.</English>
 		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_PRICE_MAINTAINED_SUCCESS">
-			<English>SUCCESS: Maintenance cost: %1 %2!</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED">
-			<English>FAILED: Objects maintained: 0</English>
-		</Key>
-		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MONEY_NEEDED_FAILED">
-			<English>FAILED: Money needed: %1 %2!</English>
-			<Russian>ОШИБКА: Требуется денег: %1 %2!</Russian>
+		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED"> 
+			<English>Failed to maintain %1 objects. You need %2 %3.</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
-			<English>That user is already on the list</English>
+			<English>That user is already on the list.</English>
 			<Russian>Уже в списке друзей</Russian>
 			<German>Schon auf der Liste</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_FRIENDLIMIT">
-			<English>Only %1 friends are allowed</English>
+			<English>Only %1 friends are allowed.</English>
 			<Russian>Можно добавить друзей: %1</Russian>
 			<German>Nur %1 Freunde erlaubt</German>
 		</Key>
@@ -15055,7 +15052,6 @@
 		</Key>
 		<Key ID="STR_EPOCH_NAME">
 			<English>Name</English>
-			<German>Name</German>
 			<Russian>Имя</Russian>
 			<Italian>Nome</Italian>
 			<Spanish>Nombrar</Spanish>
