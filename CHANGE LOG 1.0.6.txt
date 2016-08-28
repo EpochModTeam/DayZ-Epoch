@@ -106,6 +106,7 @@
 [FIXED] Study body message saying his/he on female players. @ebaydayz
 [FIXED] Destroyed objects (i.e. ore veins, ammo crates and wrecked buildables) are now deleted globally after being removed. #1730 @icomrade
 [FIXED] UH1Y and AH6X unkown animation source RPT errors, and added back observer seats to AH6X and UH1Y without thermal imaging. @icomrade
+[FIXED] Players can no longer relog over bases in a helicopter, parachute or plane to get inside. @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_code\Configs\CfgLoot\CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x

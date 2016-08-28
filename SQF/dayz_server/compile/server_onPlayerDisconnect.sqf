@@ -1,4 +1,4 @@
-private ["_playerObj","_myGroup","_playerUID","_playerPos","_playerName","_message"];
+private ["_playerObj","_myGroup","_playerUID","_playerPos","_playerName","_message","_newPos","_failSpot","_count","_maxDist","_relocate"];
 
 _playerUID = _this select 0;
 _playerName = _this select 1;
@@ -59,7 +59,24 @@ if (_characterID != "?") exitwith {
 
 	//if the player object is inside a vehicle lets eject the player
 	if (vehicle _playerObj != _playerObj) then {
+		_relocate = if (vehicle _playerObj isKindOf "Air") then {true} else {false};
 		_playerObj action ["eject", vehicle _playerObj];
+		
+		// Prevent relog in parachute, heli or plane above base exploit to get inside
+		if (_relocate) then {
+			_count = 0;
+			_maxDist = 120;
+			_newPos = [_playerPos, 80, _maxDist, 10, 1, 0, 0] call BIS_fnc_findSafePos;
+			_failSpot = getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition");
+			
+			while {_newPos distance _failSpot == 0} do {
+				_count = _count + 1;
+				if (_count > 40) exitWith {_newPos = _playerPos;}; // Max 4km away fail safe
+				_newPos = [_playerPos, 80, (_maxDist + 100), 10, 1, 0, 0] call BIS_fnc_findSafePos;
+			};			
+			_playerObj setPos _newPos;
+			diag_log format["Relocated %1(%2) %3m from logout postion for logout in air vehicle",_playerName,_playerUID,_playerPos distance _newPos];
+		};
 	};
 	
 	//Punish combat log
@@ -100,4 +117,3 @@ if (!isNull _playerObj) then {
 	_myGroup = group _playerObj;
 	deleteGroup _myGroup;
 };
-
