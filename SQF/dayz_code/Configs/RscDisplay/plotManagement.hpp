@@ -38,21 +38,21 @@ class PlotManagement
 		class RscShortcutButton_7010: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
-			text = $STR_EPOCH_REFRESH;
+			text = $STR_EPOCH_ACTIONS_MAINTAIN;
 			x = 0.41 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "'preview' call MaintainPlot;";
+			onButtonClick = "'maintain' call MaintainPlot;";
 		};
 
 		class RscShortcutButton_7011: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
-			text = $STR_EPOCH_ACTIONS_MAINTAIN;
+			text = $STR_EPOCH_ACTIONS_MAINTAIN_FORCE;
 			x = 0.51 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "'maintain' call MaintainPlot;";
+			onButtonClick = "'force' call MaintainPlot;";
 		};
 
 		class RscText_7012: ZSC_RscTextT

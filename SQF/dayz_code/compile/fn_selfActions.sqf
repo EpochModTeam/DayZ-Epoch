@@ -666,17 +666,18 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		} else {
 			if (s_player_maintain_area < 0) then {
 				s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "\z\addons\dayz_code\actions\plotManagement\maintain_area.sqf", "maintain", 5, false];
+				s_player_maintain_area_force = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_FORCE_MAINTAREA"], "\z\addons\dayz_code\actions\plotManagement\maintain_area.sqf", "force", 5, false];
 				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\plotManagement\maintain_area.sqf", "preview", 5, false];
 			};
 		};
 		_PlotsmarkersNear = count (_cursorTarget nearEntities ["Land_coneLight", DZE_PlotPole select 0]);
 		if (s_player_plot_boundary_on < 0) then {
-			If (_PlotsmarkersNear == 0 ) then{
+			if (_PlotsmarkersNear == 0) then{
 				s_player_plot_boundary_on = player addAction ["Show plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_showPlotRadius.sqf", "", 1, false];
 			};
 		 };	
 		 if (s_player_plot_boundary_off < 0) then {
-			If (_PlotsmarkersNear > 0 ) then{
+			if (_PlotsmarkersNear > 0) then{
 				s_player_plot_boundary_off = player addAction ["Remove plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_removePlotRadius.sqf", "", 1, false];
 			};
 		};
@@ -695,6 +696,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_plotManagement = -1;
 		player removeAction s_player_maintain_area;
 		s_player_maintain_area = -1;
+		player removeAction s_player_maintain_area_force;
+		s_player_maintain_area_force = -1;
 		player removeAction s_player_maintain_area_preview;
 		s_player_maintain_area_preview = -1;
 		player removeAction s_player_plot_boundary_on;
@@ -1185,6 +1188,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_SurrenderedGear = -1;
 	player removeAction s_player_maintain_area;
 	s_player_maintain_area = -1;
+	player removeAction s_player_maintain_area_force;
+	s_player_maintain_area_force = -1;
 	player removeAction s_player_maintain_area_preview;
 	s_player_maintain_area_preview = -1;	
 	player removeAction s_player_tamedog;
