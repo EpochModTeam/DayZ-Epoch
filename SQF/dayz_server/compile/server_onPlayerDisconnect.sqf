@@ -1,4 +1,4 @@
-private ["_playerObj","_myGroup","_playerUID","_playerPos","_playerName","_message","_newPos","_failSpot","_count","_maxDist","_relocate"];
+private ["_playerObj","_myGroup","_playerUID","_playerPos","_playerName","_message","_newPos","_count","_maxDist","_relocate"];
 
 _playerUID = _this select 0;
 _playerName = _this select 1;
@@ -65,17 +65,16 @@ if (_characterID != "?") exitwith {
 		// Prevent relog in parachute, heli or plane above base exploit to get inside
 		if (_relocate) then {
 			_count = 0;
-			_maxDist = 120;
-			_newPos = [_playerPos, 80, _maxDist, 10, 1, 0, 0] call BIS_fnc_findSafePos;
-			_failSpot = getArray (configFile >> "CfgWorlds" >> worldName >> "centerPosition");
+			_maxDist = 800;
+			_newPos = [_playerPos, 80, _maxDist, 10, 1, 0, 0, [], [_playerPos,_playerPos]] call BIS_fnc_findSafePos;
 			
-			while {_newPos distance _failSpot == 0} do {
+			while {_newPos distance _playerPos == 0} do {
 				_count = _count + 1;
-				if (_count > 40) exitWith {_newPos = _playerPos;}; // Max 4km away fail safe
-				_newPos = [_playerPos, 80, (_maxDist + 100), 10, 1, 0, 0] call BIS_fnc_findSafePos;
+				if (_count > 4) exitWith {_newPos = _playerPos;}; // Max 4km away fail safe (needs to finish fast so server_playerSync runs below)
+				_newPos = [_playerPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_playerPos,_playerPos]] call BIS_fnc_findSafePos;
 			};			
 			_playerObj setPos _newPos;
-			diag_log format["Relocated %1(%2) %3m from logout postion for logout in air vehicle",_playerName,_playerUID,_playerPos distance _newPos];
+			diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3m from logout position.",_playerName,_playerUID,_playerPos distance _newPos];
 		};
 	};
 	
