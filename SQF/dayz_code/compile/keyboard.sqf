@@ -360,6 +360,17 @@ if (isNil "keyboard_keys") then {
 	//diag_log [diag_ticktime, __FILE__, "eh reset" ];
 };
 
+if (_dikCode == DIK_NUMPADMINUS && _shiftState) then {
+	call player_forceSave;
+	disableUserInput true;disableUserInput true;
+	[] spawn { //disable input, this is unfortunately the only way to stop cheat input
+		titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "plain", 1];
+		uisleep 5;
+		if (!r_player_unconsciousInputDisabled) then {
+			disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false; //weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
+		};
+	};
+};
 if (r_player_unconsciousInputDisabled) exitWith {true};
 _code = keyboard_keys select _dikCode;
 if (!isNil "_code") then {
