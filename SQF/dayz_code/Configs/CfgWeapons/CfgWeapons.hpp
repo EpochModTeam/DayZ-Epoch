@@ -22,6 +22,7 @@ class CfgWeapons
 	#include "Loot.hpp"
 	
 	//Sniper Rifles
+	#include "Weapon\Sniper\Anzio_20.hpp"
 	#include "Weapon\Sniper\AS50.hpp"
 	#include "Weapon\Sniper\M107.hpp"
 	#include "Weapon\Sniper\KSVK.hpp"
