@@ -155,6 +155,20 @@ if (isNil "keyboard_keys") then {
 		};
 		_handled = true;
     };
+	_blockCheats = {
+		if (_shiftState) then {
+			call player_forceSave;
+			disableUserInput true;disableUserInput true;
+			[] spawn { //disable input, this is unfortunately the only way to stop cheat input
+				titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
+				uiSleep 5;
+				if (!r_player_unconsciousInputDisabled) then {
+					//weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
+					disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false;
+				};
+			};
+		};
+	};
     _gear = {
         if ((vehicle player != player) and !_shiftState and !_ctrlState and !_altState && !dialog) then {
             createGearDialog [player, "RscDisplayGear"];
@@ -289,6 +303,7 @@ if (isNil "keyboard_keys") then {
 
     keyboard_keys = [];
     keyboard_keys resize 256;
+	[[DIK_NUMPADMINUS], _blockCheats] call _addArray;
     [[DIK_ESCAPE], _cancelBuild] call _addArray;
 	[[DIK_INSERT], {DZE_Q_alt = true;}] call _addArray;
 	[[DIK_A,DIK_D,DIK_LEFT,DIK_RIGHT], _interrupt] call _addArray;
@@ -309,12 +324,12 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "User17", {DZE_4 = true;}] call _addArray;
 	[actionKeys "User18", {DZE_6 = true;}] call _addArray;
 	[actionKeys "User19", {DZE_5 = true;}] call _addArray;
+	[actionKeys "Surrender", _surrender] call _addArray;
     //[[DIK_ESCAPE], _deadcheck] call _addArray;
     [[DIK_1], _rifle] call _addArray;
     [[DIK_2], _pistol] call _addArray;
     [[DIK_3], _melee] call _addArray;
     //[[DIK_4], _throwable] call _addArray;
-	[actionKeys "Surrender", _surrender] call _addArray;
     [actionKeys "Gear", _gear] call _addArray;
     [actionKeys "Prone", _drop] call _addArray;
     [actionKeys "Crouch", _drop] call _addArray;
@@ -342,16 +357,10 @@ if (isNil "keyboard_keys") then {
 //  [[DIK_NUMPAD7], _rotate_left] call _addArray;
 //  [[DIK_NUMPAD9], _rotate_right] call _addArray;
     [actionKeys "ForceCommandingMode", {DZE_5 = true;_handled = true;}] call _addArray;
-    [[  DIK_F9, DIK_F10, DIK_F11, 
+    [[  DIK_F9,DIK_F10,DIK_F11,DIK_F12,
         DIK_F8,DIK_F7,DIK_F6,DIK_F5,DIK_F4,
         DIK_F3,DIK_F2,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
-    if (serverCommandAvailable "#kick") then {
-        [[DIK_F12], gcam_onoff] call _addArray; // GCAM: F12 to start (for admins only)
-    }
-    else {
-        [[DIK_F12], _block] call _addArray;
-    };
 
     (findDisplay 46) displayRemoveAllEventHandlers "KeyUp";
     (findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
@@ -360,25 +369,10 @@ if (isNil "keyboard_keys") then {
 	//diag_log [diag_ticktime, __FILE__, "eh reset" ];
 };
 
-if (_dikCode == DIK_NUMPADMINUS && _shiftState) then {
-	call player_forceSave;
-	disableUserInput true;disableUserInput true;
-	[] spawn { //disable input, this is unfortunately the only way to stop cheat input
-		titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "plain", 1];
-		uisleep 5;
-		if (!r_player_unconsciousInputDisabled) then {
-			disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false; //weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
-		};
-	};
-};
 if (r_player_unconsciousInputDisabled) exitWith {true};
 _code = keyboard_keys select _dikCode;
 if (!isNil "_code") then {
     call _code;
-};
-
-if (serverCommandAvailable "#kick") then {
-    GCam_KD = _this; // GCAM: GCam_KD is the current pressed key
 };
 
 _handled
