@@ -155,20 +155,6 @@ if (isNil "keyboard_keys") then {
 		};
 		_handled = true;
     };
-	_blockCheats = {
-		if (_shiftState) then {
-			call player_forceSave;
-			disableUserInput true;disableUserInput true;
-			[] spawn { //disable input, this is unfortunately the only way to stop cheat input
-				titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
-				uiSleep 5;
-				if (!r_player_unconsciousInputDisabled) then {
-					//weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
-					disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false;
-				};
-			};
-		};
-	};
     _gear = {
         if ((vehicle player != player) and !_shiftState and !_ctrlState and !_altState && !dialog) then {
             createGearDialog [player, "RscDisplayGear"];
@@ -303,7 +289,6 @@ if (isNil "keyboard_keys") then {
 
     keyboard_keys = [];
     keyboard_keys resize 256;
-	[[DIK_NUMPADMINUS], _blockCheats] call _addArray;
     [[DIK_ESCAPE], _cancelBuild] call _addArray;
 	[[DIK_INSERT], {DZE_Q_alt = true;}] call _addArray;
 	[[DIK_A,DIK_D,DIK_LEFT,DIK_RIGHT], _interrupt] call _addArray;
@@ -369,6 +354,18 @@ if (isNil "keyboard_keys") then {
 	//diag_log [diag_ticktime, __FILE__, "eh reset" ];
 };
 
+if (_dikCode == DIK_NUMPADMINUS && _shiftState) then {
+	call player_forceSave;
+	disableUserInput true;disableUserInput true;
+	[] spawn { //disable input, this is unfortunately the only way to stop cheat input
+		titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
+		uiSleep 5;
+		if (!r_player_unconsciousInputDisabled) then {
+			//weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
+			disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false;
+		};
+	};
+};
 if (r_player_unconsciousInputDisabled) exitWith {true};
 _code = keyboard_keys select _dikCode;
 if (!isNil "_code") then {
