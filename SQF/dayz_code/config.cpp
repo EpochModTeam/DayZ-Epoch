@@ -11,6 +11,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
+			"csj_gyroac",
 			"map_eu",
 			
 			//dayz_anim references all CA addons
@@ -66,6 +67,7 @@ class CfgAddons
 		{
 			list[] =
 			{
+				"csj_gyroac", // do not move down!
 				"dayz_code",
 				"dayz",
 				"dayz_equip",

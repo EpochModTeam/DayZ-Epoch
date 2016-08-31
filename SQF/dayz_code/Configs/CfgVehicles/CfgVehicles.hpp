@@ -12,6 +12,10 @@ class CfgVehicles {
 		class ViewOptics;
 		class Sounds { class Engine; class Movement;};
 		class DefaultEventhandlers;
+		class EventHandlers: DefaultEventhandlers
+		{
+			killed = "_this call BIS_Effects_EH_Killed;";
+		};
 	};
 	class Air : AllVehicles
 	{
@@ -132,6 +136,17 @@ class CfgVehicles {
 				class ViewOptics;
 			};
 		};
+	};
+	class Plane: Air
+	{
+		class ViewPilot;
+		class ViewOptics;
+		class AirplaneHUD;
+		class HitPoints
+		{
+			class HitHull;
+		};
+		class AnimationSources;
 	};
 	class Land;	// External class reference
 	class LandVehicle : Land
@@ -449,7 +464,7 @@ class CfgVehicles {
 	#include "Animal.hpp"
 
 	//Includes all DayZ Vehilces
-	//Car's
+	//Cars
 	#include "Car\HMMWV.hpp"
 	#include "Car\ArmoredSUV.hpp"
 	#include "Car\BTR90.hpp"
@@ -475,7 +490,7 @@ class CfgVehicles {
 	#include "Car\Offroad_DSHKM_INS.hpp"
 	#include "Car\UralCivil_DZ.hpp"
 	#include "Car\BRDM2_DZ.hpp"
-	//Helicopter's
+	//Helicopters
 	#include "Helicopter\MI17.hpp"
 	#include "Helicopter\UH1H.hpp"
 	#include "Helicopter\UH1H2.hpp"
@@ -486,12 +501,12 @@ class CfgVehicles {
 	#include "Helicopter\UH60.hpp"
 	#include "Helicopter\CH47.hpp"
 	#include "Helicopter\BAF_Merlin.hpp"
-	//Wreck's
+	//Wrecks
 	//#include "Helicopter\MI8Wreck.hpp"
 	//#include "Helicopter\UH1Wreck.hpp"
 	//#include "Helicopter\UH60Wreck.hpp"
 	#include "CrashSite.hpp"
-	//Plane's
+	//Planes
 	#include "Plane\AN2_DZ.hpp"
 	#include "Plane\MV22.hpp"
 	#include "Plane\C130.hpp"
@@ -562,6 +577,7 @@ class CfgVehicles {
 	#include "DZE\Prop_Defs.hpp"
 	#include "DZE\Veins.hpp"
 	#include "DZE\ModularBuilding.hpp"
+	#include "DZE\CSJ_GyroAC.hpp"
 	class Land_A_tent;	// External class reference
 	#include "DZE\Grave.hpp"
 	class WeaponHolder;	// External class reference
