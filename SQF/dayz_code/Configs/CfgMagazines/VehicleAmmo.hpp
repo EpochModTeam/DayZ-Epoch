@@ -67,3 +67,61 @@ class 50Rnd_127x107_DSHKM : CA_Magazine {
 	nameSound = "mgun"; 
 	weight = 4;
 };
+//Pook stuff
+class pook_1300Rnd_762x51_M60: CA_Magazine
+{
+	scope = 2;
+	displayName = "Pook 1300Rnd. 7.62";
+	descriptionShort = "Caliber: 7.62x51mm <br/>Rounds: 1300 <br/>Used in: Pook H13 Gunship";
+	ammo = "pook_762x51_M60";
+	count = 1300;
+	tracersEvery = 5;
+	maxLeadSpeed = 200;
+	nameSound = "mgun";
+	picture = "\z\addons\dayz_epoch\pictures\equip_m134_mag_ca.paa";
+	model = "\z\addons\dayz_epoch\models\m134_mag.p3d";
+	type = "256";
+	weight = 20;
+	
+};
+class pook_250Rnd_762x51: CA_Magazine
+{
+	scope = 2;
+	displayName = "Pook 250Rnd. M240";
+	picture = "\CA\weapons\data\equip\m_m240_ca.paa";
+	count = 250;
+	type = "256";
+	ammo = "B_762x51_Ball";
+	initSpeed = 900;
+	tracersEvery = 4;
+	lastRoundsTracer = 4;
+	nameSound = "mgun";
+	descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 250 <br/>Used in: Pook H13 Transport";
+	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x51_M240.p3d";
+	weight = 8;
+};
+class pook_12Rnd_Grenade_Camel: CA_Magazine
+{
+	scope = 2;
+	ammo = "pook_camel_HE";
+	count = 12;
+	displayName = "12Rnd. Pook Grenade";
+	initSpeed = 3;
+	maxLeadSpeed = 200;
+	nameSound = "grenade";
+	type = "256";
+	picture = "\CA\weapons_E\Data\icons\m_6x40mmHP_CA.paa";
+};
+//mozzie
+class 3Rnd_GyroGrenade: CA_Magazine
+{
+	scope = 2;
+	displayName = "3Rnd. Autogyro Grenade";
+	ammo = "GyroGrenade";
+	count = 3;
+	initSpeed = 3;
+	maxLeadSpeed = 200;
+	nameSound = "grenade";
+	type = "256";
+	picture = "\CA\weapons_E\Data\icons\m_6x40mmHP_CA.paa";
+};

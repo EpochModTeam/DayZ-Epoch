@@ -12,6 +12,7 @@ class CfgPatches
 		requiredAddons[] =
 		{
 			"csj_gyroac",
+			"pook_h13",
 			"map_eu",
 			
 			//dayz_anim references all CA addons
@@ -68,6 +69,7 @@ class CfgAddons
 			list[] =
 			{
 				"csj_gyroac", // do not move down!
+				"pook_h13", // do not move down!
 				"dayz_code",
 				"dayz",
 				"dayz_equip",
