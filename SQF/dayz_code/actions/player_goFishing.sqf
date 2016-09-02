@@ -7,8 +7,6 @@
 private ["_linecastmax","_linecastmin","_num","_position","_ispond","_objectsPond","_isPondNearBy","_isOk","_counter","_vehicle","_inVehicle",
 "_rnd","_itemOut","_text","_item","_itemtodrop","_result","_elevation","_inBoat","_i","_ret","_bb","_w2m","_dir"];
 
-//if (!isNil "faco_goFishing") exitWith { _this call faco_goFishing };
-
 _vehicle = _this select 3;
 _vehicle removeAction (_this select 2);
 s_player_fishing = -1;

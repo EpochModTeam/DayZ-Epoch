@@ -223,11 +223,6 @@ _playerObj setVariable ["humanity",_humanity,true];
 _playerObj setVariable ["humanity_CHK",_humanity];
 _playerObj setVariable ["lastPos",getPosATL _playerObj];
 
-if (!isNil "faco_hook_playerSetup") then {
-	[_worldspace,_state,_playerObj,_characterID] call faco_hook_playerSetup;
-	_playerObj call faco_sendSecret;
-};
-
 PVCDZ_plr_Login2 = [_worldspace,_state];
 _clientID = owner _playerObj;
 _clientID publicVariableClient "PVCDZ_plr_Login2";

@@ -16,7 +16,6 @@ private ["_cursorTarget","_type","_class","_requiredTools","_requiredParts","_up
 	"_ownerArray","_ownerPasscode","_dir","_vector","_object","_puid","_clanArray","_wh","_variables"];
 
 //systemchat str _this;
-if (!isnil "faco_object_upgradeBuilding") exitWith { _this call faco_object_upgradeBuilding };
 
 _cursorTarget = _this select 3;
 // ArmaA2 bug workaround: sometimes the object is null

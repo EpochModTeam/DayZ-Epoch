@@ -1,8 +1,6 @@
 
 private ["_item","_result","_dis","_sfx","_num","_breaking","_countOut","_findNearestTree","_objName","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_tree","_distance2d"];
 
-//if (!isnil "faco_player_chopWood") exitWith { _this call faco_player_chopWood };
-
 _item = _this;
 call gear_ui_init;
 closeDialog 1;
