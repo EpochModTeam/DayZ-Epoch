@@ -1321,7 +1321,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Load_In";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"((!isNil 'dayz_plantSpawner_done') and {(dayz_plantSpawner_done == 2)})"/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(!isNil 'dayz_plantSpawner_done' && {dayz_plantSpawner_done == 2} && {!isNil 'BIS_fnc_init'})"/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
