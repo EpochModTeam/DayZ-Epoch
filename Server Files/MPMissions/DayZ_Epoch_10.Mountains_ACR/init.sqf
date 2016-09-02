@@ -79,7 +79,7 @@ MISSION_ROOT=toArray __FILE__;MISSION_ROOT resize(count MISSION_ROOT-8);MISSION_
 diag_log 'dayz_preloadFinished reset';
 dayz_preloadFinished=nil;
 onPreloadStarted "diag_log [diag_tickTime,'onPreloadStarted']; dayz_preloadFinished = false;";
-onPreloadFinished "diag_log [diag_tickTime,'onPreloadFinished']; if (!isNil 'init_keyboard') then {[] spawn init_keyboard;}; dayz_preloadFinished = true;";
+onPreloadFinished "diag_log [diag_tickTime,'onPreloadFinished']; dayz_preloadFinished = true;";
 with uiNameSpace do {RscDMSLoad=nil;}; // autologon at next logon
 
 if (!isDedicated) then {

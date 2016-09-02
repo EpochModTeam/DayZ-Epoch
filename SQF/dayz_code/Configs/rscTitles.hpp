@@ -20,6 +20,7 @@ class IGUIBack;
 class RscListBox;
 class RscIGUIListBox;
 class RscHTML;
+class RscDisplayEmpty;
 
 #include "CfgPlayerStats\defines.hpp"
 #include "CfgPlayerStats\p__cover.hpp"
@@ -30,6 +31,19 @@ class RscHTML;
 #include "CfgPlayerStats\p_headshots.hpp"
 #include "CfgPlayerStats\p_murders.hpp"
 #include "CfgPlayerStats\sound.hpp"
+
+class RscDisplayMission: RscDisplayEmpty
+{
+	access = 0;
+	idd = 46;
+	onKeyDown = "if (!isNil 'DZ_KeyDown_EH') then {_this call DZ_KeyDown_EH;};"; //assigned much quicker than executing keyDown.sqf
+};
+class RscDisplayChat
+{
+	idd = 24;
+	onKeyDown = "if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats;}; false";
+	class controls;
+};
 
 class RscPictureGUI
 {
@@ -280,6 +294,7 @@ class RscDisplayMain : RscStandardDisplay
 class RscDisplayDiary {
 	idd = 129;
 	movingEnable = 0;
+	onKeyDown = "if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats;}; false";
 
 	class Controls {
 		delete Diary;

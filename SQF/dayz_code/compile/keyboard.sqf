@@ -347,25 +347,15 @@ if (isNil "keyboard_keys") then {
         DIK_F3,DIK_F2,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
 
-    (findDisplay 46) displayRemoveAllEventHandlers "KeyUp";
-    (findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
-    (findDisplay 46) displayAddEventHandler ["KeyDown", preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf')];
+    //(findDisplay 46) displayRemoveAllEventHandlers "KeyUp";
+    //(findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
+   //(findDisplay 46) displayAddEventHandler ["KeyDown", preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf')];
 	if (!isNil "bis_fnc_halo_keydown_eh") then {bis_fnc_halo_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_keydown;"];}; // halo in progress
 	//diag_log [diag_ticktime, __FILE__, "eh reset" ];
 };
 
-if (_dikCode == DIK_NUMPADMINUS && _shiftState) then {
-	call player_forceSave;
-	disableUserInput true;disableUserInput true;
-	[] spawn { //disable input, this is unfortunately the only way to stop cheat input
-		titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
-		uiSleep 5;
-		if (!r_player_unconsciousInputDisabled) then {
-			//weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
-			disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false;
-		};
-	};
-};
+_this call DZE_FilterCheats;
+
 if (r_player_unconsciousInputDisabled) exitWith {true};
 _code = keyboard_keys select _dikCode;
 if (!isNil "_code") then {

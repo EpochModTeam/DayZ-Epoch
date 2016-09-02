@@ -633,6 +633,28 @@ local_spawnObjects = compile preprocessFileLineNumbers "\z\addons\dayz_code\comp
 FNC_GetSetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getSetPos.sqf";
 FNC_GetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getPos.sqf";
 dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_ejectPlayer.sqf";
+DZ_KeyDown_EH = compile preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf');
+
+DZE_FilterCheats = {
+	#define DIK_SUBTRACT 0x4A
+	#define DIK_NUMPADMINUS DIK_SUBTRACT
+	_dik = _this select 1;
+	_shift = _this select 2;
+	if (_dik == DIK_NUMPADMINUS && _shift) then {
+		call player_forceSave;
+		disableUserInput true;disableUserInput true;
+		[] spawn { //disable input, this is unfortunately the only way to stop cheat input
+			_testTime = diag_tickTime;
+			CheatsDisabled = _testTime;
+			titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
+			uiSleep 5;
+			if (!r_player_unconsciousInputDisabled && CheatsDisabled == _testTime) then {
+				//weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
+				disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false;
+			};
+		};
+	};
+};
 
 player_sumMedical = {
 	private["_character","_wounds","_legs","_arms","_medical","_status"];
@@ -668,11 +690,11 @@ player_sumMedical = {
 	_medical
 };
 
-init_keyboard = {
+/* init_keyboard = { //in Epoch we handle keypresses via config onKeyDown entries.
 	waituntil {!(isNull (findDisplay 46))};
 	keyboard_keys = nil;
 	[controlNull, 1, false,false,false] call compile preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf');
-};
+}; */
 
 dayz_reduceItems = {
     private ["_item","_class","_amount","_qtyRemaining"];
