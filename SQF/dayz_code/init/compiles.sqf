@@ -690,12 +690,6 @@ player_sumMedical = {
 	_medical
 };
 
-/* init_keyboard = { //in Epoch we handle keypresses via config onKeyDown entries.
-	waituntil {!(isNull (findDisplay 46))};
-	keyboard_keys = nil;
-	[controlNull, 1, false,false,false] call compile preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf');
-}; */
-
 dayz_reduceItems = {
     private ["_item","_class","_amount","_qtyRemaining"];
 	

@@ -75,7 +75,6 @@ EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","
 
 
 // DO NOT EDIT BELOW HERE //
-MISSION_ROOT=toArray __FILE__;MISSION_ROOT resize(count MISSION_ROOT-8);MISSION_ROOT=toString MISSION_ROOT;
 diag_log 'dayz_preloadFinished reset';
 dayz_preloadFinished=nil;
 onPreloadStarted "diag_log [diag_tickTime,'onPreloadStarted']; dayz_preloadFinished = false;";

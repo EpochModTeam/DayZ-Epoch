@@ -75,7 +75,6 @@ EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","
 
 
 // DO NOT EDIT BELOW HERE //
-MISSION_ROOT=toArray __FILE__;MISSION_ROOT resize(count MISSION_ROOT-8);MISSION_ROOT=toString MISSION_ROOT;
 diag_log 'dayz_preloadFinished reset';
 dayz_preloadFinished=nil;
 onPreloadStarted "diag_log [diag_tickTime,'onPreloadStarted']; dayz_preloadFinished = false;";
@@ -141,10 +140,6 @@ if (!isDedicated) then {
 	if (dayz_enableRules) then { execVM "rules.sqf"; };
 	if (!isNil "dayZ_serverName") then { execVM "\z\addons\dayz_code\system\watermark.sqf"; };
 	execVM "\z\addons\dayz_code\compile\client_plantSpawner.sqf";
-	"PVDZ_pass" addPublicVariableEventHandler {call ((_this select 1) select 1)};
-	"PVDZ_fail" addPublicVariableEventHandler {call (_this select 1)};
-	PVDZ_getTickTime = [player];
-	publicVariableServer "PVDZ_getTickTime";
 	execFSM "\z\addons\dayz_code\system\player_monitor.fsm";
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 	if (DZE_R3F_WEIGHT) then {execVM "\z\addons\dayz_code\external\R3F_Realism\R3F_Realism_Init.sqf";};

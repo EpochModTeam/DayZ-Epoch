@@ -259,7 +259,7 @@ if (isNil "keyboard_keys") then {
     _build_str8OnOff = {
         if (0 != count Dayz_constructionContext) then {
             Dayz_constructionContext set [ 5, !(Dayz_constructionContext select 5) ];
-            _handled = true; // used by keyboard.sqf
+            _handled = true;
             r_interrupt = true;
         };
 		if (player isKindOf  "PZombie_VB") then {
@@ -347,9 +347,6 @@ if (isNil "keyboard_keys") then {
         DIK_F3,DIK_F2,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
 
-    //(findDisplay 46) displayRemoveAllEventHandlers "KeyUp";
-    //(findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
-   //(findDisplay 46) displayAddEventHandler ["KeyDown", preprocessFileLineNumbers (MISSION_ROOT+'keyboard.sqf')];
 	if (!isNil "bis_fnc_halo_keydown_eh") then {bis_fnc_halo_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_keydown;"];}; // halo in progress
 	//diag_log [diag_ticktime, __FILE__, "eh reset" ];
 };
