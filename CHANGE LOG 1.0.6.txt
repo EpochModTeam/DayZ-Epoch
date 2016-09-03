@@ -46,6 +46,7 @@
 [NEW] Added new BRDM2, AN2, HMMWV, Mi17 and Cessna _DZ classes with radar disabled. #1746 @AirWavesMan
 [NEW] Added SCAR Mk16 and Mk17 variants, L86 and AA12 to loot tables and traders. #1743 @AirWavesMan
 [NEW] Players can now manually push stuck planes backwards to free them. @ebaydayz
+[NEW] You may set the buying or selling price of any item to -1 to disallow the respective trading action, only with config traders and advanced trading @icomrade
 
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
 [CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)

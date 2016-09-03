@@ -33,5 +33,9 @@ _count = 0;
 	
 	if (_count > 0) then {
 		lbSetColor [Z_AT_BUYABLELIST, _index, [0, 1, 0, 1]];
+	} else {
+		if ((_x select 6) < 0) then { //color items only allowed to either be sold or purchased
+			lbSetColor [Z_AT_BUYABLELIST, _index, [0, 0.57, 1, 1]];
+		};
 	};
 } count Z_BuyableArray;

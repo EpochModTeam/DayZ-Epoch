@@ -29,6 +29,8 @@ _counter = 0;
 				_sellCurrency = "";
 				_worth = 0;
 				_ignore = false;
+				_BcurrencyQty = _buy select 0;
+				_ScurrencyQty = _sell select 0;
 				if (dayz_classicBloodBagSystem && _y in dayz_typedBags) then {
 					if (_y == "bloodBagONEG") then {_y = "ItemBloodbag";} else {_ignore = true;};
 				};
@@ -58,9 +60,10 @@ _counter = 0;
 					_buyCurrency = CurrencyName;
 					_sellCurrency = CurrencyName;
 				};
-				
+				if (_BcurrencyQty < 0) then {_buyCurrency = "Unavailable"; _ignore = true;};
+				if (_ScurrencyQty < 0) then {_sellCurrency = "Unavailable";};
 				if (!_ignore) then { // Fill buyable list for one category only
-					Z_BuyableArray set [count Z_BuyableArray, [_y,_type,_buy select 0,_text,_pic,_forEachIndex,_sell select 0, _buyCurrency, _sellCurrency, 0,_cat, _worth]];
+					Z_BuyableArray set [count Z_BuyableArray, [_y,_type,_BcurrencyQty,_text,_pic,_forEachIndex, _ScurrencyQty, _buyCurrency, _sellCurrency, 0,_cat, _worth]];
 				};
 			};
 		};

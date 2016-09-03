@@ -92,7 +92,7 @@ _totalPrice = 0;
 			if (!_HasKey) exitWith {};
 
 			_worth = 0;
-
+			_currencyQty = _buy select 0;
 			if (!Z_SingleCurrency) then {
 				_buyCurrency = 	_buy select 1;
 				_sellCurrency = _sell select 1;
@@ -103,8 +103,10 @@ _totalPrice = 0;
 				_buyCurrency = CurrencyName;
 				_sellCurrency = CurrencyName;
 			};
-
-			Z_SellableArray set [count(Z_SellableArray) , [_y, _type, _sell select 0, _text, _pic, _forEachIndex, _buy select 0, _sellCurrency, _buyCurrency, 0 ,_cat, _worth]];
+			if (_currencyQty < 0) then {_buyCurrency = "Unavailable";};
+			if ((_sell select 0) >= 0) then {
+				Z_SellableArray set [count(Z_SellableArray) , [_y, _type, _sell select 0, _text, _pic, _forEachIndex, _currencyQty, _sellCurrency, _buyCurrency, 0 ,_cat, _worth]];
+			};
 			_totalPrice = _totalPrice + (_sell select 0);
 		};
 	} forEach _arrayOfTraderCat;

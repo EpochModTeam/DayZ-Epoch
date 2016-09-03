@@ -129,8 +129,8 @@ if (Z_SingleCurrency) then {
 		_display,
 		_class,
 		_transportmaxBackpacks,
-		[_sellPrice] call BIS_fnc_numberText,
-		[_buyPrice] call BIS_fnc_numberText,
+		if (_sellPrice >= 0) then {[_sellPrice] call BIS_fnc_numberText;} else {"";},
+		if (_buyPrice >= 0) then {[_buyPrice] call BIS_fnc_numberText;} else {"";},
 		CurrencyName,
 		_transportMaxWeapons,
 		_transportMaxMagazines,
@@ -155,10 +155,16 @@ if (Z_SingleCurrency) then {
 		"\z\addons\dayz_code\gui\gear\gear_ui_slots_backpacks_white.paa"
 	];
 } else {
-	_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
-	_sellCurrency = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'displayName');
-	_picBuy = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'picture');
-	_buyCurrency = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'displayName');
+	_picSell = "";
+	if (_sellPrice >= 0) then {
+		_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
+		_sellCurrency = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'displayName');
+	};
+	_picBuy = "";
+	if (_buyPrice >= 0) then {
+		_picBuy = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'picture');
+		_buyCurrency = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'displayName');
+	};
 
 	_formattedText = format [
 		"<img image='%1' size='3' /><br />" +
@@ -174,8 +180,8 @@ if (Z_SingleCurrency) then {
 		_display,
 		_class,
 		_transportmaxBackpacks,
-		_sellPrice,
-		_buyPrice,
+		if (_sellPrice >= 0) then {_sellPrice} else {"";},
+		if (_buyPrice >= 0) then {_buyPrice} else {"";},
 		_buyCurrency,
 		_transportMaxWeapons,
 		_transportMaxMagazines,
