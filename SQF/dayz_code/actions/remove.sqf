@@ -24,9 +24,6 @@ if (DZE_permanentPlot) then {
 
 if (_obj in DZE_DoorsLocked) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
 if (_obj getVariable ["GeneratorRunning", false]) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_89" call dayz_rollingMessages;};
-
-_PlayerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
-if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;};
 	
 _objectID 	= _obj getVariable ["ObjectID","0"];
 _objectUID	= _obj getVariable ["ObjectUID","0"];
@@ -43,6 +40,9 @@ _isWreckBuilding = _objType in DZE_isWreckBuilding;
 _isMine = _objType in ["Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gold_vein_wreck"];
 _isModular = _obj isKindOf "ModularItems";
 _distance = DZE_PlotPole select 0;
+
+_PlayerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+if (_PlayerNear && (_isMine or _objType == "Land_ammo_supply_wreck")) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _limit = 3;
 if (DZE_StaticConstructionCount > 0) then {
