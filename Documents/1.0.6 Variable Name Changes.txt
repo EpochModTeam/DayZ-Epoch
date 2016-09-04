@@ -6,7 +6,8 @@
 	- DZE_getModelName --> fn_getModelName
 	- fnc_usec_playerBleed --> fnc_usec_playerHandleBlood
 	- object_handleServerKilled --> vehicle_handleServerKilled
-	- object_setFixServer --> fnc_veh_setFixServer 
+	- object_setFixServer --> fnc_veh_setFixServer
+	- server_timeSync --> sched_sync (moved to scheduler)
 	- vehicle_handleDamage --> fnc_veh_handleDam
 	- vehicle_handleKilled -->  fnc_veh_handleKilled
 	
