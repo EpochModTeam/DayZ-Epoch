@@ -35,8 +35,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 
 } forEach _hitpoints;
 
-if (count _hitpoints > 0 ) then {
-	//ArmA OA String
+if (count _hitpoints > 0) then {
 	_cancel = dayz_myCursorTarget addAction [localize "str_action_cancel_action", "\z\addons\dayz_code\actions\repair_cancel.sqf","repair", 0, true, false];
 	s_player_repairActions set [count s_player_repairActions,_cancel];
 	s_player_repair_crtl = 1;
