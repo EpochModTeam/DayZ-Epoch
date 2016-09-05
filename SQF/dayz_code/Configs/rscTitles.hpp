@@ -36,7 +36,7 @@ class RscDisplayMission: RscDisplayEmpty
 {
 	access = 0;
 	idd = 46;
-	onKeyDown = "if (!isNil 'DZ_KeyDown_EH') then {_this call DZ_KeyDown_EH;};"; //assigned much quicker than executing keyDown.sqf
+	onKeyDown = "if (!isNil 'DZ_KeyDown_EH') then {_this call DZ_KeyDown_EH;};"; //assigned much quicker than spawning init_keyboard
 };
 class RscDisplayChat
 {

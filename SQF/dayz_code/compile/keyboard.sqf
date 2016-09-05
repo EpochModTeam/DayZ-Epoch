@@ -9,18 +9,6 @@ _altState = _this select 4;
 _handled = false;
 
 if (isNil "keyboard_keys") then {
-    _deadcheck = { // ESCAPE
-//        call player_forceSave;
-//        _idd = uiNamespace getVariable "RscDisplayMPInterrupt";
-//        if (isNil '_idd') then  {
-//            createDialog 'RscDisplayMPInterrupt';
-//        }
-//        else { 
-//            closeDialog 0;
-//       };
-        //keyboard_keys = nil;*/
-        _handled = false;
-    };
     _cancelBuild = {
 		DZE_cancelBuilding = true;
 		call dayz_EjectPlayer;
@@ -310,7 +298,6 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "User18", {DZE_6 = true;}] call _addArray;
 	[actionKeys "User19", {DZE_5 = true;}] call _addArray;
 	[actionKeys "Surrender", _surrender] call _addArray;
-    //[[DIK_ESCAPE], _deadcheck] call _addArray;
     [[DIK_1], _rifle] call _addArray;
     [[DIK_2], _pistol] call _addArray;
     [[DIK_3], _melee] call _addArray;
@@ -346,9 +333,7 @@ if (isNil "keyboard_keys") then {
         DIK_F8,DIK_F7,DIK_F6,DIK_F5,DIK_F4,
         DIK_F3,DIK_F2,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
-
 	if (!isNil "bis_fnc_halo_keydown_eh") then {bis_fnc_halo_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_keydown;"];}; // halo in progress
-	//diag_log [diag_ticktime, __FILE__, "eh reset" ];
 };
 
 _this call DZE_FilterCheats;
