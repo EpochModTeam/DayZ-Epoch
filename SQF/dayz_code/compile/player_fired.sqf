@@ -98,5 +98,8 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 			publicVariable "PVDZ_obj_RoadFlare";
 			[_this] spawn player_throwObject;
 		};
+		
+		//Auto select main weapon after throwing
+		call player_selectWeapon;
 	};
 };
