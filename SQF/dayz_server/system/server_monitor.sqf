@@ -470,6 +470,7 @@ if (_hiveLoaded) then {
 			for "_x" from 1 to _vehLimit do {call spawn_vehicles;};
 		} else {
 			diag_log "HIVE: Vehicle Spawn limit reached!";
+			_vehLimit = 0;
 		};
 		
 		diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
