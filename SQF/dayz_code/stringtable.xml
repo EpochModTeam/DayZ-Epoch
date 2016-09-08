@@ -653,7 +653,7 @@
 			<French>Réparer%1 (%2)</French>
 			<Czech>Opravit%1 (%2)</Czech>
 		</Key>
-		<Key ID="str_actions_rapairveh">
+		<Key ID="str_actions_repairveh">
 			<English>Repair Vehicle</English>
 			<Spanish>Reparar Vehículo</Spanish>
 			<Russian>Отремонтировать транспорт</Russian>
