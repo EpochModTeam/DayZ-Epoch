@@ -554,7 +554,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			dayz_myCursorTarget = _cursorTarget;
 			_menu = dayz_myCursorTarget addAction [localize "str_actions_repairveh", "\z\addons\dayz_code\actions\repair_vehicle.sqf",_cursorTarget, 0, true, false];
 			if (!_isBicycle) then {
-				if (!DZE_salvagedLocked) then {
+				if (!DZE_salvageLocked) then {
 					if (!locked _cursorTarget) then {
 						_menu1 = dayz_myCursorTarget addAction [localize "str_actions_salvageveh", "\z\addons\dayz_code\actions\salvage_vehicle.sqf",_cursorTarget, 0, true, false];
 						s_player_repairActions set [count s_player_repairActions,_menu1];
