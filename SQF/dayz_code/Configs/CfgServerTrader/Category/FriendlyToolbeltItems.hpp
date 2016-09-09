@@ -14,10 +14,25 @@ class Category_679 {
 		buy[] = {6,"ItemSilverBar"};
 		sell[] = {3,"ItemSilverBar"};
 	};
+	class ItemGPS {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {1,"ItemGoldBar"};
+	};
 	class Binocular {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
+	};
+	class Binocular_Vector {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class NVGoggles {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {1,"ItemGoldBar"};
 	};
 	class ItemFlashlight {
 		type = "trade_weapons";
