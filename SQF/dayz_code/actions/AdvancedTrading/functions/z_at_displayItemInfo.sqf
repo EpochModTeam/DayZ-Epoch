@@ -50,7 +50,6 @@ _compatibleText = "";
 	};
 } forEach _compatible;
 
-_displayText = "";
 _displayText = getText(configFile >> "CfgMagazines" >> _class >> "descriptionShort");
 
 if (Z_SingleCurrency) then {

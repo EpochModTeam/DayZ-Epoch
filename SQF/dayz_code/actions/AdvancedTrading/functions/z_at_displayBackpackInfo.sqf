@@ -1,4 +1,4 @@
-private ["_item","_picture","_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks","_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_picBuy","_picSell","_displayText"];
+private ["_item","_picture","_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks","_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_picBuy","_picSell"];
 #include "defines.hpp"
 
 _item = _this select 0;
@@ -31,9 +31,6 @@ if (isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxWeapons')) t
 if (isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines')) then {
 	_transportMaxMagazines  = getNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines');
 };
-
-_displayText = "";
-_displayText = getText(configFile >> "CfgVehicles" >> _class >> "descriptionShort");
 
 if (Z_SingleCurrency) then {
 	_formattedText = format [
@@ -97,13 +94,6 @@ if (Z_SingleCurrency) then {
 		_picSell,
 		_picBuy,
 		localize "STR_EPOCH_CARGO_SPACE"
-	];
-};
-
-if (_displayText != "") then {
-	_formattedText = _formattedText + format [
-		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
-		,localize "STR_EPOCH_DESCRIPTION",_displayText
 	];
 };
 

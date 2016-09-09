@@ -1,6 +1,6 @@
 private ['_item', '_type','_picture',"_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks"
 ,"_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_fuelCapacity","_maxSpeed","_armor","_seats","_weapons",
-"_weapons2","_config","_wepText","_turret","_text","_displayText"];
+"_weapons2","_config","_wepText","_turret","_text"];
 
 #include "defines.hpp"
 
@@ -112,9 +112,6 @@ _wepText = "";
 	};
 } forEach _weapons2;
 
-_displayText = "";
-_displayText = getText (configFile >> "CfgVehicles" >> _class >> "Library" >> "libTextDesc");
-
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 		"<img image='%1' size='3' /><br />" +
@@ -212,11 +209,4 @@ if (count _weapons2 > 0) then {
 	];
 };
 		
-if (_displayText != "") then {
-	_formattedText = _formattedText + format [
-		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
-		,localize "STR_EPOCH_DESCRIPTION",_displayText
-	];
-};
-
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_ITEMINFO) ctrlSetStructuredText parseText _formattedText;

@@ -1,4 +1,4 @@
-private ["_item","_picture","_class","_display","_buyPrice","_sellPrice","_magazines","_magText","_formattedText","_buyCurrency","_sellCurrency","_attachments","_attachText","_config","_text","_attach","_type","_displayText"];
+private ["_item","_picture","_class","_display","_buyPrice","_sellPrice","_magazines","_magText","_formattedText","_buyCurrency","_sellCurrency","_attachments","_attachText","_config","_text","_attach","_type"];
 #include "defines.hpp"
 
 _item = _this select 0;
@@ -61,9 +61,6 @@ _magText = "";
 
 } foreach _magazines;
 
-_displayText = "";
-_displayText = getText(configFile >> "CfgWeapons" >> _class >> "descriptionShort");
-
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 		"<img image='%1' size='3'  align='center' /><br />" +
@@ -124,13 +121,6 @@ if !("ItemCore" in _parentClasses or "Binocular" in _parentClasses) then {
 		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%3: </t><t color='#ffffff' size='0.7'>%4</t><br />"
 		,localize "STR_EPOCH_ATTACHMENTS",_attachText,localize "STR_EPOCH_MAGS",_magText
-	];
-};
-
-if (_displayText != "") then {
-	_formattedText = _formattedText + format [
-		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
-		,localize "STR_EPOCH_DESCRIPTION",_displayText
 	];
 };
 
