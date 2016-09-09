@@ -23,6 +23,8 @@ Install instructions:
 
 10. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
 
+11. Make a new dayz_epoch database using Server Files\epoch.sql OR update a 1051 database using Server Files\1.0.6_Updates.sql. Be sure to backup your old database first.
+
 Note: Both server and client need to be updated to current A2OA stable 1.63.131129 or newer.
 
 Current Version: **EpochTest-106-RC1**
