@@ -15903,6 +15903,13 @@
 		</Key>
 		<Key ID="STR_EPOCH_DESCRIPTION">
 			<English>Description</English>
+			<Spanish>Descripción</Spanish>
+			<Italian>Descrizione</Italian>
+			<Hungarian>Leírás</Hungarian>
+			<Polish>Opis</Polish>
+			<Russian>Описание</Russian>
+			<German>Beschreibung</German>
+			<Czech>Popis</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER">
 			<English>Player</English>
