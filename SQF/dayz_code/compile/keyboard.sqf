@@ -250,6 +250,10 @@ if (isNil "keyboard_keys") then {
             _handled = true;
             r_interrupt = true;
         };
+		if (animationState player in ["bunnyhopunarmed","bunnyhoprifle"]) then {
+			//Fixes invisible weapon switch glitch if double tapping vault with no weapon in hands
+			_handled = true;
+		};
 		if (player isKindOf  "PZombie_VB") then {
 			_handled = true; // do not allow player zombies to vault or jump
 		} else {
