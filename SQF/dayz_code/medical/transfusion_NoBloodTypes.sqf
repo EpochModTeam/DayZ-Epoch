@@ -45,7 +45,7 @@ if (_finished) then {
 	if(_num_removed == 1) then {
 	
 		/* PVS/PVC - Skaronator */
-		PVDZ_send = [_unit,"Transfuse",[_unit,player]];
+		PVDZ_send = [_unit,"Transfuse",[_unit,player,12000]];
 		publicVariableServer "PVDZ_send";
 
 		[player,100] call player_humanityChange;
