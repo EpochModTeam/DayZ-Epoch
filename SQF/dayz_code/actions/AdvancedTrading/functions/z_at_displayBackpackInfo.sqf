@@ -1,4 +1,4 @@
-private ["_item","_picture","_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks","_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_picBuy","_picSell"];
+private ["_item","_picture","_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks","_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_picBuy","_picSell","_displayText"];
 #include "defines.hpp"
 
 _item = _this select 0;
@@ -32,6 +32,9 @@ if (isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines'))
 	_transportMaxMagazines  = getNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines');
 };
 
+_displayText = "";
+_displayText = getText(configFile >> "CfgVehicles" >> _class >> "descriptionShort");
+
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 		"<img image='%1'  size='3'  align='center'/><br />" +
@@ -39,8 +42,7 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 %4</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%8</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%9</t><br />",
+		"<t color='#33BFFF' size='0.7'>%16: </t><t color='#ffffff' size='0.7'><img image='%14'/> %8 <img image='%15'/> %9</t><br />",
 		_picture,
 		_display,
 		_class,
@@ -54,8 +56,9 @@ if (Z_SingleCurrency) then {
 		localize "STR_EPOCH_CLASS",
 		localize "STR_EPOCH_PLAYER_292",
 		localize "STR_EPOCH_PLAYER_291",
-		localize "STR_EPOCH_WEPS",
-		localize "STR_EPOCH_MAGS"
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_weapons_white.paa",
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
+		localize "STR_EPOCH_CARGO_SPACE"
 	];
 } else {
 	_picSell = "";
@@ -75,8 +78,7 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 <img image='%17' /> %4</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 <img image='%16' /> %7</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%8</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%9</t><br />",
+		"<t color='#33BFFF' size='0.7'>%18: </t><t color='#ffffff' size='0.7'><img image='%14'/> %8 <img image='%15'/> %9</t><br />",
 		_picture,
 		_display,
 		_class,
@@ -90,10 +92,18 @@ if (Z_SingleCurrency) then {
 		localize "STR_EPOCH_CLASS",
 		localize "STR_EPOCH_PLAYER_292",
 		localize "STR_EPOCH_PLAYER_291",
-		localize "STR_EPOCH_WEPS",
-		localize "STR_EPOCH_MAGS",
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_weapons_white.paa",
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
 		_picSell,
-		_picBuy
+		_picBuy,
+		localize "STR_EPOCH_CARGO_SPACE"
+	];
+};
+
+if (_displayText != "") then {
+	_formattedText = _formattedText + format [
+		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
+		,localize "STR_EPOCH_DESCRIPTION",_displayText
 	];
 };
 

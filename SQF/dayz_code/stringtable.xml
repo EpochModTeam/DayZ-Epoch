@@ -15901,6 +15901,9 @@
 			<Russian>совместимый</Russian>
 			<Czech>Kompatibilní</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_DESCRIPTION">
+			<English>Description</English>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER">
 			<English>Player</English>
 			<French>Joueur</French>

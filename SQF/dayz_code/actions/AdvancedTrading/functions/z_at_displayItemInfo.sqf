@@ -1,4 +1,4 @@
-private ['_item','_picture','_class','_display','_buyPrice','_sellPrice','_formattedText','_buyCurrency','_sellCurrency','_compatible','_weapon','_attach','_config','_compatibleText','_type','_text'];
+private ["_item","_picture","_class","_display","_buyPrice","_sellPrice","_formattedText","_buyCurrency","_sellCurrency","_compatible","_weapon","_attach","_config","_compatibleText","_type","_text","_displayText"];
 #include "defines.hpp"
 
 _item = _this select 0;
@@ -50,6 +50,9 @@ _compatibleText = "";
 	};
 } forEach _compatible;
 
+_displayText = "";
+_displayText = getText(configFile >> "CfgMagazines" >> _class >> "descriptionShort");
+
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 		"<img image='%1'  size='3' align='center'/><br />" +
@@ -72,13 +75,13 @@ if (Z_SingleCurrency) then {
 } else {
 	_picSell = "";
 	if (_sellPrice >= 0) then {
-		_picSell = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'picture');
-		_sellCurrency = getText (configFile >> 'CfgMagazines' >> _sellCurrency >> 'displayName');
+		_picSell = getText (configFile >> "CfgMagazines" >> _sellCurrency >> "picture");
+		_sellCurrency = getText (configFile >> "CfgMagazines" >> _sellCurrency >> "displayName");
 	};
 	_picBuy = "";
 	if (_buyPrice >= 0) then {
-		_picBuy = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'picture');
-		_buyCurrency = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'displayName');
+		_picBuy = getText (configFile >> "CfgMagazines" >> _buyCurrency >> "picture");
+		_buyCurrency = getText (configFile >> "CfgMagazines" >> _buyCurrency >> "displayName");
 	};
 	_formattedText = format [
 		"<img image='%1'  size='3' align='center'/><br />" +
@@ -105,8 +108,15 @@ if (Z_SingleCurrency) then {
 
 if (count _compatible > 0) then {
 	_formattedText = _formattedText + format [
-		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
+		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t><br />"
 		,localize "STR_EPOCH_COMPATIBLE",_compatibleText
+	];
+};
+
+if (_displayText != "") then {
+	_formattedText = _formattedText + format [
+		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
+		,localize "STR_EPOCH_DESCRIPTION",_displayText
 	];
 };
 
