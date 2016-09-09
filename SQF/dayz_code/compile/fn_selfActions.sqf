@@ -553,7 +553,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		if (s_player_repair_crtl < 0) then {
 			dayz_myCursorTarget = _cursorTarget;
 			_menu = dayz_myCursorTarget addAction [localize "str_actions_repairveh", "\z\addons\dayz_code\actions\repair_vehicle.sqf",_cursorTarget, 0, true, false];
-			if (!_isBicycle) then {
+			if (!_isBicycle) then { //Bike wheels should not give full size tires. Also model does not update to show removed wheels.
 				if (!DZE_salvageLocked) then {
 					if (!locked _cursorTarget) then {
 						_menu1 = dayz_myCursorTarget addAction [localize "str_actions_salvageveh", "\z\addons\dayz_code\actions\salvage_vehicle.sqf",_cursorTarget, 0, true, false];
