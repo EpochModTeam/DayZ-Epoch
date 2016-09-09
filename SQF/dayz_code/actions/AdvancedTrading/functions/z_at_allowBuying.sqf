@@ -39,7 +39,7 @@ if (_selection == 2) then { //gear
 	_allowedRegularMags = 12 - _regularMags;
 
 	_p = primaryWeapon player;
-	_allowedPrimary = if (!isNil "_p" && _p != "") then {0} else {1};
+	_allowedPrimary = if (_p != "") then {0} else {1};
 	if (DZE_TwoPrimaries == 2 && dayz_onBack == "") then { _allowedPrimary = _allowedPrimary + 1; };
 	
 	_b = unitBackpack player;

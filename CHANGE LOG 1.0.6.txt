@@ -1,10 +1,10 @@
-[NEW] Fully updated to DayZ 1.8.7 base @icomrade @ebaydayz
-[NEW] 1.8.7 attachments system, community weapons, base objects, traps, tripwires and car bomb
-[NEW] 1.8.7 journal and crafting menu are now functional (default 'J' key)
-[NEW] 1.8.7 spawn selection, set dayz_spawnselection = 1; in init.sqf (Chernarus only)
-[NEW] 1.8.7 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
-[NEW] 1.8.7 configurable blood trails, set dayz_bleedingeffect in init.sqf
-[NEW] 1.8.7 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee (or rifle onBack if DZE_TwoPrimaries=2;))
+[NEW] Fully updated to DayZ 1.8.8 base @icomrade @ebaydayz
+[NEW] 1.8.8 attachments system, community weapons, base objects, traps, tripwires and car bomb
+[NEW] 1.8.8 journal and crafting menu are now functional (default 'J' key)
+[NEW] 1.8.8 spawn selection, set dayz_spawnselection = 1; in init.sqf (Chernarus only)
+[NEW] 1.8.8 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
+[NEW] 1.8.8 configurable blood trails, set dayz_bleedingeffect in init.sqf
+[NEW] 1.8.8 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee (or rifle onBack if DZE_TwoPrimaries=2;))
 [NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. See configVariables.sqf for details @icomrade
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 [NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
@@ -64,7 +64,7 @@
 [CHANGED] Abort and respawn are now disabled immediately in the pause menu onLoad to compensate for low fps delay. @ebaydayz
 [CHANGED] Player_onPause is now customizable by admins along with the new unscheduled fn_pauseMenuChecks. #1340 @Rimblock @ebaydayz
 
-[FIXED] Zombies now target and attack players correctly with 1.8.7 code
+[FIXED] Zombies now target and attack players correctly with 1.8.8 code
 [FIXED] Server position sync bug after falling unconscious #1522 @ebaydayz
 [FIXED] Character sometimes failing to sync after changing clothes #1545
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade

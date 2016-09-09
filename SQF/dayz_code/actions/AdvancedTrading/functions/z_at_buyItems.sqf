@@ -211,7 +211,7 @@ if (_enoughMoney) then {
 				_count = 0;
 				while {_count < (_x select 9)} do {
 					_p = primaryWeapon player;
-					_hasPrimary = if (!isNil "_p" && _p != "") then {true} else {false};				
+					_hasPrimary = if (_p != "") then {true} else {false};				
 					if (_hasPrimary && getNumber (configFile >> "CfgWeapons" >> (_x select 0) >> "type") == 1) then {
 						dayz_onBack = _x select 0; //Add to back
 					} else {

@@ -8,7 +8,7 @@
 *
 *	Fills up the sell or buy list if the item has a valid config.
 **/
-private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_vehUpgraded"];
+private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_vehUpgraded","_currencyQty"];
 #include "defines.hpp"
 
 _weaps = _this select 0;
@@ -103,7 +103,7 @@ _totalPrice = 0;
 				_buyCurrency = CurrencyName;
 				_sellCurrency = CurrencyName;
 			};
-			if (_currencyQty < 0) then {_buyCurrency = "Unavailable";};
+			if (_currencyQty < 0) then {_buyCurrency = localize "STR_EPOCH_UNAVAILABLE";};
 			if ((_sell select 0) >= 0) then {
 				Z_SellableArray set [count(Z_SellableArray) , [_y, _type, _sell select 0, _text, _pic, _forEachIndex, _currencyQty, _sellCurrency, _buyCurrency, 0 ,_cat, _worth]];
 			};

@@ -1,4 +1,4 @@
-private ["_arrayOfTraderCat","_counter","_cat","_cfgtraders","_y","_type","_buy","_sell","_pic","_text","_worth","_buyCurrency","_sellCurrency","_ignore","_categoryNumber"];
+private ["_arrayOfTraderCat","_counter","_cat","_cfgtraders","_y","_type","_buy","_sell","_pic","_text","_worth","_buyCurrency","_sellCurrency","_ignore","_categoryNumber","_BcurrencyQty","_ScurrencyQty"];
 
 call Z_clearBuyList;
 Z_BuyableArray = [];
@@ -60,8 +60,8 @@ _counter = 0;
 					_buyCurrency = CurrencyName;
 					_sellCurrency = CurrencyName;
 				};
-				if (_BcurrencyQty < 0) then {_buyCurrency = "Unavailable"; _ignore = true;};
-				if (_ScurrencyQty < 0) then {_sellCurrency = "Unavailable";};
+				if (_BcurrencyQty < 0) then {_buyCurrency = localize "STR_EPOCH_UNAVAILABLE"; _ignore = true;};
+				if (_ScurrencyQty < 0) then {_sellCurrency = localize "STR_EPOCH_UNAVAILABLE";};
 				if (!_ignore) then { // Fill buyable list for one category only
 					Z_BuyableArray set [count Z_BuyableArray, [_y,_type,_BcurrencyQty,_text,_pic,_forEachIndex, _ScurrencyQty, _buyCurrency, _sellCurrency, 0,_cat, _worth]];
 				};
