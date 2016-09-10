@@ -39,8 +39,7 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 %4</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%8</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%9</t><br />",
+		"<t color='#33BFFF' size='0.7'>%16: </t><t color='#ffffff' size='0.7'><img image='%14'/> %8 <img image='%15'/> %9</t><br />",
 		_picture,
 		_display,
 		_class,
@@ -54,8 +53,9 @@ if (Z_SingleCurrency) then {
 		localize "STR_EPOCH_CLASS",
 		localize "STR_EPOCH_PLAYER_292",
 		localize "STR_EPOCH_PLAYER_291",
-		localize "STR_EPOCH_WEPS",
-		localize "STR_EPOCH_MAGS"
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_weapons_white.paa",
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
+		localize "STR_EPOCH_CARGO_SPACE"
 	];
 } else {
 	_picSell = "";
@@ -75,8 +75,7 @@ if (Z_SingleCurrency) then {
 		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 <img image='%17' /> %4</t><br />" +
 		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 <img image='%16' /> %7</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%8</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%15: </t><t color='#ffffff' size='0.7'>%9</t><br />",
+		"<t color='#33BFFF' size='0.7'>%18: </t><t color='#ffffff' size='0.7'><img image='%14'/> %8 <img image='%15'/> %9</t><br />",
 		_picture,
 		_display,
 		_class,
@@ -90,10 +89,11 @@ if (Z_SingleCurrency) then {
 		localize "STR_EPOCH_CLASS",
 		localize "STR_EPOCH_PLAYER_292",
 		localize "STR_EPOCH_PLAYER_291",
-		localize "STR_EPOCH_WEPS",
-		localize "STR_EPOCH_MAGS",
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_weapons_white.paa",
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
 		_picSell,
-		_picBuy
+		_picBuy,
+		localize "STR_EPOCH_CARGO_SPACE"
 	];
 };
 

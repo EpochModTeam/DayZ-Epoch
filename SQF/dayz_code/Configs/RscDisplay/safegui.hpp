@@ -128,7 +128,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(1);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_1.ogg",0.5,1};
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b4: RscButton
 		{
@@ -144,7 +144,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(4);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_4.ogg",0.5,1}; 
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b7: RscButton
 		{
@@ -160,7 +160,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(7);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_7.ogg",0.5,1}; 
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b2: RscButton
 		{
@@ -176,7 +176,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(2);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_2.ogg",0.5,1}; 
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b8: RscButton
 		{
@@ -192,7 +192,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(8);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_8.ogg",0.5,1}; 
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b5: RscButton
 		{
@@ -208,7 +208,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(5);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_5.ogg",0.5,1}; 
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b3: RscButton
 		{
@@ -224,7 +224,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(3);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_3.ogg",0.5,1}; 
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b6: RscButton
 		{
@@ -240,7 +240,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(6);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_6.ogg",0.5,1};
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b9: RscButton
 		{
@@ -256,7 +256,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(9);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_9.ogg",0.5,1}; 
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		class b0: RscButton
 		{
@@ -272,7 +272,7 @@ class SafeKeyPad
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
 			action = "dayz_combination = dayz_combination + str(0);";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_9.ogg",0.5,1}; 
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak";
 		};
 		
 		class bcancel: RscButton
@@ -288,8 +288,7 @@ class SafeKeyPad
 			colorText[] = {1,0.1,0.1,1};
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_star.ogg",0.6,1};
-			onButtonClick = "keypadCancel = true; ((ctrlParent (_this select 0)) closeDisplay 3000);";
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak; keypadCancel = true; ((ctrlParent (_this select 0)) closeDisplay 3000);";
 		};
 		class benter: RscButton
 		{
@@ -304,8 +303,7 @@ class SafeKeyPad
 			colorText[] = {0,1,0,1};
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
-			onButtonClick = "keypadCancel = false; ((ctrlParent (_this select 0)) closeDisplay 3000); if(!isNull dayz_selectedVault and (typeOf dayz_selectedVault) in DZE_LockedStorage) then {dayz_selectedVault spawn player_unlockVault;};";
-			soundClick[] = {"\dayz_sfx\action\cell\dtmf_hash.ogg",0.6,1};
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak; keypadCancel = false; ((ctrlParent (_this select 0)) closeDisplay 3000); if(!isNull dayz_selectedVault and (typeOf dayz_selectedVault) in DZE_LockedStorage) then {dayz_selectedVault spawn player_unlockVault;};";
 		};
 	};
 };

@@ -119,7 +119,7 @@ _parentClasses = [(configFile >> "CfgWeapons" >> _class),true] call BIS_fnc_retu
 if !("ItemCore" in _parentClasses or "Binocular" in _parentClasses) then {
 	_formattedText = _formattedText + format [
 		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%3: </t><t color='#ffffff' size='0.7'>%4</t>"
+		"<t color='#33BFFF' size='0.7'>%3: </t><t color='#ffffff' size='0.7'>%4</t><br />"
 		,localize "STR_EPOCH_ATTACHMENTS",_attachText,localize "STR_EPOCH_MAGS",_magText
 	];
 };
