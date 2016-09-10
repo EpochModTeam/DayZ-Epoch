@@ -12,7 +12,7 @@ _humanity = 0;
 _name = if (alive _character) then {name _character} else {"Dead Player"};
 _Achievements = [];
 _debug = getMarkerpos "respawn_west";
-_distance = _debug distance _charPos;
+_distance = (_debug distance _charPos) < 1500;
 
 if (_character isKindOf "Animal") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + _name + " is an Animal class");
@@ -22,8 +22,8 @@ if (isNil "_characterID") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + _name + " has nil characterID");
 };
 
-if (_characterID == "0" or _distance < 1500) exitWith {
-	if (_distance < 1500) then {
+if (_characterID == "0" or _distance) exitWith {
+	if (_distance) then {
 		diag_log format["INFO: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3 (May be changing clothes)",_name,_characterID,_charPos];
 	} else {
 		diag_log ("ERROR: Cannot Sync Character " + _name + " as no characterID");
@@ -43,9 +43,64 @@ if (_characterID != "0") then {
 	_playerBackp =	[];
 	_medical =		[];
 	_distanceFoot =	0;
+
+	//all getVariable immediately
+	_globalCoins = _character getVariable ["GlobalMoney", -1];
+	_bankCoins = _character getVariable ["MoneySpecial", -1];
+	_group = _character getVariable ["savedGroup", []];
+	_coins = _character getVariable [Z_MoneyVariable, -1]; //should getting coins fail set the variable to an invalid value to prevent overwritting the in the DB
+	_lastPos = _character getVariable ["lastPos",_charPos];
+	_usec_Dead = _character getVariable ["USEC_isDead",false];
+	_lastTime = 	_character getVariable ["lastTime",diag_ticktime];
+	_modelChk = 	_character getVariable ["model_CHK",""];
+	_temp = round (_character getVariable ["temperature",100]);
+	_lastMagazines = _character getVariable ["ServerMagArray",[[],""]];
+	/*
+		Check previous stats against what client had when they logged in
+		this helps prevent JIP issues, where a new player wouldn't have received
+		the old players updates. Only valid for stats where clients could have
+		be recording results from their local objects (such as agent zombies)
+	*/
+	_kills = 		["zombieKills",_character] call server_getDiff;
+	_killsB = 		["banditKills",_character] call server_getDiff;
+	_killsH = 		["humanKills",_character] call server_getDiff;
+	_headShots = 	["headShots",_character] call server_getDiff;
+	_humanity = 	["humanity",_character] call server_getDiff2;
 	
-	//diag_log ("Found Character...");
+	_charPosLen = count _charPos;
 	
+	if (_isNewGear) then {
+		if (typeName _magazines == "ARRAY") then {
+			_playerGear = [weapons _character,_magazines select 0,_magazines select 1];
+			_character setVariable["ServerMagArray",_magazines, false];
+		};
+	} else {
+		//check Magazines everytime they aren't sent by player_forceSave
+		_magTemp = (_lastMagazines select 0);
+		if (count _magTemp > 0) then {
+			_magazines = [(magazines _character),20] call array_reduceSize;
+			{
+				_class = _x;
+				if (typeName _x == "ARRAY") then {
+					_class = _x select 0;
+				};
+				if (_class in _magazines) then {
+					_MatchedCount = {_compare = if (typeName _x == "ARRAY") then {_x select 0;} else {_x}; _compare == _class} count _magTemp;
+					_CountedActual = {_x == _class} count _magazines;
+					if (_MatchedCount > _CountedActual) then {
+						_magTemp set [_forEachIndex, "0"];
+					};
+				} else {
+					_magTemp set [_forEachIndex, "0"];
+				};
+			} forEach (_lastMagazines select 0);
+			_magazines = _magTemp - ["0"];
+			_magazines = [_magazines, (_lastMagazines select 1)];
+			_character setVariable["ServerMagArray",_magazines, false];
+			_playerGear = [weapons _character,_magazines select 0,_magazines select 1];
+		};
+	};
+
 	//Check if update is requested
 	if (_isNewPos or _force) then {
 		//diag_log ("position..." + str(_isNewPos) + " / " + str(_force)); sleep 0.05;
@@ -54,21 +109,14 @@ if (_characterID != "0") then {
 		} else {
 			//diag_log ("getting position..."); sleep 0.05;
 			_playerPos = [round (direction _character),_charPos];
-			_lastPos = _character getVariable ["lastPos",_charPos];
-			if (count _lastPos > 2 && count _charPos > 2) then {
+			if (count _lastPos > 2 && {_charPosLen > 2}) then {
 				if (!_isInVehicle) then {_distanceFoot = round (_charPos distance _lastPos);};
 				_character setVariable["lastPos",_charPos];
 			};
-			if (count _charPos < 3) then {_playerPos = [];};
+			if (_charPosLen < 3) then {_playerPos = [];};
 			//diag_log ("position = " + str(_playerPos)); sleep 0.05;
 		};
 		_character setVariable ["posForceUpdate",false,true];
-	};
-	
-	if (_isNewGear) then {
-		if (typeName _magazines == "ARRAY") then {
-			_playerGear = [weapons _character,_magazines select 0,_magazines select 1];
-		};
 	};
 	
 	//Check player backpack each time sync runs
@@ -77,34 +125,15 @@ if (_characterID != "0") then {
 	
 	if (_isNewMed or _force) then {
 		//diag_log ("medical..."); sleep 0.05;
-		if !(_character getVariable ["USEC_isDead",false]) then {
+		if (!_usec_Dead) then {
 			//diag_log ("medical check..."); sleep 0.05;
 			_medical = _character call player_sumMedical;
 			//diag_log ("medical result..." + str(_medical)); sleep 0.05;
 		};
 		_character setVariable ["medForceUpdate",false,true];
 	};
-	
-	//Process update
-	//if (_characterID != "0") then {		
-		//Record stats while we're here		
-		/*
-			Check previous stats against what client had when they logged in
-			this helps prevent JIP issues, where a new player wouldn't have received
-			the old players updates. Only valid for stats where clients could have
-			be recording results from their local objects (such as agent zombies)
-		*/
-		_kills = 		["zombieKills",_character] call server_getDiff;
-		_killsB = 		["banditKills",_character] call server_getDiff;
-		_killsH = 		["humanKills",_character] call server_getDiff;
-		_headShots = 	["headShots",_character] call server_getDiff;
-		_humanity = 	["humanity",_character] call server_getDiff2;
-		//_humanity = 	_character getVariable ["humanity",0];
+
 		_character addScore _kills;		
-		/*
-			Assess how much time has passed, for recording total time on server
-		*/
-		_lastTime = 	_character getVariable ["lastTime",diag_ticktime];
 		_timeGross = 	(diag_ticktime - _lastTime);
 		_timeSince = 	floor (_timeGross / 60);
 		_timeLeft =		(_timeGross - (_timeSince * 60));
@@ -118,14 +147,31 @@ if (_characterID != "0") then {
 		_isTerminal = 	(getNumber (_config >> "terminal")) == 1;
 		//_wpnDisabled =	(getNumber (_config >> "disableWeapons")) == 1;
 		_currentModel = typeOf _character;
-		_modelChk = 	_character getVariable ["model_CHK",""];
 		if (_currentModel == _modelChk) then {
 			_currentModel = "";
 		} else {
 			_currentModel = str _currentModel;
 			_character setVariable ["model_CHK",typeOf _character];
 		};
-		
+		if ((count _this) > 3 && {_isInVehicle}) then { //calling from player_onDisconnect
+			//if the player object is inside a vehicle lets eject the player
+			_relocate = if (vehicle _playerObj isKindOf "Air") then {true} else {false};
+			_playerObj action ["eject", vehicle _playerObj];
+			
+			// Prevent relog in parachute, heli or plane above base exploit to get inside
+			if (_relocate) then {
+				_count = 0;
+				_maxDist = 800;
+				_newPos = [_charPos, 80, _maxDist, 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
+				
+				while {_newPos distance _charPos == 0} do {
+					_count = _count + 1;
+					if (_count > 4) exitWith {_newPos = _charPos;}; // Max 4km away fail safe (needs to finish fast so server_playerSync runs below)
+					_charPos = [_charPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
+				};			
+				diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3m from logout position.",(name _character),(getPlayerUID _character),_charPos distance _newPos];
+			};
+		};
 		if (_onLadder or _isInVehicle or _isTerminal) then {
 			_currentAnim = "";
 			//If position to be updated, make sure it is at ground level!
@@ -145,7 +191,6 @@ if (_characterID != "0") then {
 				_currentWpn = "";
 			};
 		};
-		_temp = round (_character getVariable ["temperature",100]);
 		_currentState = [[_currentWpn,_currentAnim,_temp],_Achievements];
 
 		/*
@@ -159,30 +204,22 @@ if (_characterID != "0") then {
 			_playerPos set [1,_array];
 		};
 		
-		if (!isNull _character) then {
-			if (alive _character) then {
-				//Wait for HIVE to be free and send request
-				if (Z_SingleCurrency) then {
-					_coins = _character getVariable [Z_MoneyVariable, -1]; //should getting coins fail set the variable to an invalid value to prevent overwritting the in the DB
-					_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins];
-				} else {
-					_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
-				};
-				//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
-				//diag_log format["HIVE: SYNC: [%1,%2,%3,%4]",_characterID,_playerPos,_playerGear,_playerBackp];
-				_key call server_hiveWrite;
-			};
+		//Wait for HIVE to be free and send request
+		if (Z_SingleCurrency) then {
+			_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins];
+		} else {
+			_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
 		};
+		//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
+		//diag_log format["HIVE: SYNC: [%1,%2,%3,%4]",_characterID,_playerPos,_playerGear,_playerBackp];
+		_key call server_hiveWrite;
 
 		if (Z_SingleCurrency) then { //update global coins
-			_globalCoins = _character getVariable ["GlobalMoney", -1];
-			_bankCoins = _character getVariable ["MoneySpecial", -1];
 			_key = format["CHILD:205:%1:%2:%3:%4:",(getPlayerUID _character),dayZ_instance,_globalCoins,_bankCoins];
 			_key call server_hiveWrite;
 		};
 
 		if (DZE_groupManagement) then { //update player group
-			_group = _character getVariable ["savedGroup", []];
 			_key = format["CHILD:204:%1:%2:%3:",(getPlayerUID _character),dayZ_instance, _group];
 			_key call server_hiveWrite;
 		};

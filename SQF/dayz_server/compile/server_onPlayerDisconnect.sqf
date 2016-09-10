@@ -48,7 +48,6 @@ if (_playerUID in dayz_ghostPlayers) exitwith {
 
 //Make sure we know the ID of the object before we try and sync any info to the DB
 if (_characterID != "?") exitwith {
-
 	//If the player has sepsis before logging off lets give them infected status.
 	if (_Sepsis) then {
 		_playerObj setVariable["USEC_infected",true,true];
@@ -56,27 +55,6 @@ if (_characterID != "?") exitwith {
 	
 	//Record Player Login/LogOut
 	[_playerUID,_characterID,2,_playerName] call dayz_recordLogin;
-
-	//if the player object is inside a vehicle lets eject the player
-	if (vehicle _playerObj != _playerObj) then {
-		_relocate = if (vehicle _playerObj isKindOf "Air") then {true} else {false};
-		_playerObj action ["eject", vehicle _playerObj];
-		
-		// Prevent relog in parachute, heli or plane above base exploit to get inside
-		if (_relocate) then {
-			_count = 0;
-			_maxDist = 800;
-			_newPos = [_playerPos, 80, _maxDist, 10, 1, 0, 0, [], [_playerPos,_playerPos]] call BIS_fnc_findSafePos;
-			
-			while {_newPos distance _playerPos == 0} do {
-				_count = _count + 1;
-				if (_count > 4) exitWith {_newPos = _playerPos;}; // Max 4km away fail safe (needs to finish fast so server_playerSync runs below)
-				_newPos = [_playerPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_playerPos,_playerPos]] call BIS_fnc_findSafePos;
-			};			
-			_playerObj setPos _newPos;
-			diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3m from logout position.",_playerName,_playerUID,_playerPos distance _newPos];
-		};
-	};
 	
 	//Punish combat log
 	if ((_inCombat > 0) && {alive _playerObj && (_playerObj distance (getMarkerpos "respawn_west") >= 2000)}) then {
@@ -91,8 +69,7 @@ if (_characterID != "?") exitwith {
 
 	//if player object is alive lets sync the player and remove the body and if ghosting is active add the player id to the array
 	if (alive _playerObj) then {
-		[_playerObj,nil,true] call server_playerSync;
-		
+		[_playerObj,nil,true,true] call server_playerSync;
 		if (dayz_enableGhosting) then {
 			//diag_log format["GhostPlayers: %1, ActivePlayers: %2",dayz_ghostPlayers,dayz_activePlayers];
 			if (!(_playerUID in dayz_ghostPlayers)) then { 
