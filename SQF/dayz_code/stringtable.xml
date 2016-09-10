@@ -7838,6 +7838,10 @@
 			<French>FEMME</French>
 			<Czech>ŽENA</Czech>
 		</Key>
+		<Key ID="STR_UI_LOBBY">
+			<English>Lobby</English>
+			<Russian>Лобби</Russian>
+		</Key>
 	</Package>
 	<Package name="playerstats">
 		<Key ID="str_playerstats_bandit">

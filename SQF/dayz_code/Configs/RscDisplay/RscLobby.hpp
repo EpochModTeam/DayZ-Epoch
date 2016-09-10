@@ -88,7 +88,17 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 		};
 	};
 	class controls
-	{ 
+	{
+		class CA_MP_roles_Title : CA_Title {
+			idc = 1001;
+			style = 2;
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(02/100)	* SafeZoneH + SafeZoneY";
+			w = "(96/100)	* SafeZoneW";
+			h = "(06/100)	* SafeZoneH";
+			colorBackground[] = {49/255, 36/255, 25/255, 173/255};
+			text = $STR_UI_LOBBY;
+		};
 		class TextIsland: RscText
 		{
 			idc = 1003;
