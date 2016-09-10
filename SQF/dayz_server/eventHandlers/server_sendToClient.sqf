@@ -8,6 +8,16 @@ _owner = owner _unit;
 //diag_log format ["%1, %2, %3, %4", _unit, _variable, _arraytosend, _owner];
 
 switch (_variable) do {
+	case "objWallDamage": {
+		_object = _arraytosend select 0;
+		if (local _object) then {
+			_arraytosend call fnc_Obj_FenceHandleDam;
+		} else {
+			PVCDZ_obj_Damage = _arraytosend;
+			_owner publicVariableClient "PVCDZ_obj_Damage";
+		};
+	};
+	
 	case "VehHandleDam": {
 		_vehicle = _arraytosend select 0;
 		if (local _vehicle) then {

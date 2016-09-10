@@ -131,7 +131,7 @@ if (!_realObjectStillThere) then {
         deleteVehicle _cursorTarget;
 		if (getNumber(_parent >> "scope")==2) then {
 			_object = createVehicle [_upgrade, getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
-			if (_object isKindOf "DZ_buildables") then { _object allowDamage false; };
+			//if (_object isKindOf "DZ_buildables") then { _object allowDamage false; };
 			_object setVectorDirAndUp _vector;
 			_object setPosATL _pos;
 			_puid = getPlayerUID player;

@@ -3,6 +3,7 @@
 "PVDZ_drg_RLact"		addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf"};
 "PVDZ_hlt_Bleed"		addPublicVariableEventHandler {(_this select 1) spawn fnc_usec_damageBleed};
 "PVCDZ_veh_SH" 			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam}; // set damage to vehicle part
+"PVCDZ_obj_Damage" 		addPublicVariableEventHandler {(_this select 1) call fnc_Obj_FenceHandleDam}; // set damage to object.
 "PVDZ_veh_SF"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleRepair}; // repair a part from a vehicle
 "PVCDZ_obj_HideBody"	addPublicVariableEventHandler {hideBody (_this select 1)};
 "PVCDZ_obj_GutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};

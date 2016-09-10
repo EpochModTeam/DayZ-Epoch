@@ -21,7 +21,8 @@ if (_build) then {
     _location = getPosATL _ghost;
     _direction = getDir _ghost;
     _object = createVehicle [_classname, getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
-    if (_object isKindOf "DZ_buildables") then { _object allowDamage false; };
+	
+   // if (_object isKindOf "DZ_buildables") then { _object allowDamage false; };
     _object setDir _direction;
     if ((Dayz_constructionContext select 5) or _keepOnSlope) then {
         _object setVectorUp surfaceNormal _location;
@@ -30,6 +31,7 @@ if (_build) then {
         _object setVectorUp [0,0,1];
         if (_location select 2  == 0) then { _location set [2, -0.01]; };
     };
+	
     deleteVehicle _ghost;
 
     [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
@@ -42,7 +44,7 @@ if (_build) then {
     player reveal _object;
 
     _variables = [];
-
+	
     if (_object iskindof "DZ_buildables") then {
 		_passcode = [floor(random 10),floor(random 10),floor(random 10),floor(random 10)];
         _object setVariable ["ownerArray",[getPlayerUID player],true];
@@ -77,6 +79,7 @@ if (_build) then {
     _object setVariable ["characterID",dayz_characterID,true];
     PVDZ_obj_Publish = [dayz_characterID,_object,[round _direction, _location], _variables];
     publicVariableServer "PVDZ_obj_Publish";
+	
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 
     format[localize "str_build_01",_text] call dayz_rollingMessages;
