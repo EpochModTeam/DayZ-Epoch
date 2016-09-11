@@ -287,5 +287,17 @@ fa_plr2str = {
 	_res
 };
 
+array_reduceSize = {
+	private ["_array1","_array","_count","_num"];
+	_array1 = _this select 0;
+	_array = _array1 - ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing","CSGAS"];
+	_count = _this select 1;
+	_num = count _array;
+	if (_num > _count) then {
+		_array resize _count;
+	};
+	_array
+};
+
 // Precise base building 1.0.5
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\kk_functions.sqf";
