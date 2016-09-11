@@ -16,7 +16,7 @@ class m107: Rifle
 	distanceZoomMin = 500;
 	opticsZoomMax = 0.0553;
 	distanceZoomMax = 200;
-	displayname = "M107";
+	displayname = $STR_DZ_WPN_M107_NAME;
 	autoFire = 0;
 	begin1[] = {"ca\sounds\weapons\rifles\m107",2.51189,1,1300};
 	soundBegin[] = {"begin1",1};
@@ -35,7 +35,7 @@ class m107: Rifle
 	{
 		libTextDesc = "The M107 is a long-range, shoulder fired, semi-automatic sniper rifle, manufactured by Beneli Armi S.P.A. It is highly prized for its manageable recoil.<br/>The M107uses 12.7x99 mm cartridges and its effective range is around 1.800 m.";
 	};
-	descriptionShort = "Anti-materiel sniper rifle <br/>Caliber: 12.7x99 mm";
+	descriptionShort = $STR_DZ_WPN_M107_DESC;
 	model = "\ca\weapons_E\m107\m107";
 	htMin = 1;
 	htMax = 420;

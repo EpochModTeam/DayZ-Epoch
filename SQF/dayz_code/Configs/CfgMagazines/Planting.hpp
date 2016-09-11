@@ -1,8 +1,8 @@
 class ItemFertilizer: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "Fertilizer";
-	descriptionShort = "Fertilizer";
+	displayName = $STR_CRAFT_NAME_FERTILIZER;
+	descriptionShort = $STR_CRAFT_DESC_FERTILIZER;
 	weight = 0.1;
 	model = "z\addons\dayz_communityassets\models\mre.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_communityassets\pictures\equip_mre_CA.paa";
@@ -12,8 +12,8 @@ class ItemFertilizer: CA_Magazine {
 class ItemPumpkinSeed: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Pumpkin Seed";
-	descriptionShort = "A Pumpkin Seed";
+	displayName = $STR_CRAFT_NAME_PUMPKIN_SEED;
+	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_SEED;
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
@@ -34,8 +34,8 @@ class ItemPumpkinSeed: CA_Magazine {
 class ItemPumpkinPlant: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Pumpkin Plant";
-	descriptionShort = "A Pumpkin Plant";
+	displayName = $STR_CRAFT_NAME_PUMPKIN_PLANT;
+	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_PLANT;
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
@@ -54,8 +54,8 @@ class ItemPumpkinPlant: CA_Magazine {
 class ItemHempSeed: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Hemp Seed";
-	descriptionShort = "A Hemp Seed";
+	displayName = $STR_CRAFT_NAME_HEMP_SEED;
+	descriptionShort = $STR_CRAFT_DESC_HEMP_SEED;
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";
@@ -76,8 +76,8 @@ class ItemHempSeed: CA_Magazine {
 class ItemHempPlant: CA_Magazine {
 	scope = public;
 	count = 1;
-	displayName = "A Hemp Plant";
-	descriptionShort = "A Hemp Plant";
+	displayName = $STR_CRAFT_NAME_HEMP_PLANT;
+	descriptionShort = $STR_CRAFT_DESC_HEMP_PLANT;
 	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";

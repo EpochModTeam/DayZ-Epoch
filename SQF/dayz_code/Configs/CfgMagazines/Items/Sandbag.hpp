@@ -84,11 +84,10 @@ class BagFenceRound_DZ_kit : CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Round Sandbag Fence";
+	displayName = $STR_EQUIP_NAME_21_ROUND;
+	descriptionShort = $STR_EQUIP_DESC_21;
 	model = "\dayz_equip\models\sandbags.p3d";
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-	descriptionShort = $STR_EQUIP_DESC_21;
-
 	class ItemActions {
 		class Build {
 			text = $STR_EPOCH_PLAYER_299;
@@ -113,8 +112,8 @@ class sandbag_nest_kit: CA_Magazine
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "Sandbag Nest";
-	descriptionShort = "Sandbag Nest: A buildable fortification object, can be removed.";
+	displayName = $STR_EQUIP_NAME_21_NEST;
+	descriptionShort = $STR_EQUIP_DESC_21_NEST;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	weight = 50;
@@ -134,10 +133,10 @@ class ItemSandbagLarge : CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "H-barrier cube";
+	displayName = $STR_EQUIP_NAME_21_HBARRIER;
+	descriptionShort = $STR_EQUIP_DESC_21_HBARRIER;
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-	descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
 	weight = 50;
 	class ItemActions {
 		class Build {
@@ -162,10 +161,10 @@ class ItemSandbagExLarge : CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "3 x H-barrier cube";
+	displayName = $STR_EQUIP_NAME_21_3XHBARRIER;
+	descriptionShort = $STR_EQUIP_DESC_21_HBARRIER;
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-	descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
 	weight = 150;
 	class ItemActions {
 		class Build {
@@ -190,10 +189,10 @@ class ItemSandbagExLarge5x : CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
-	displayName = "5 x H-barrier cube";
+	displayName = $STR_EQUIP_NAME_21_5XHBARRIER;
+	descriptionShort = $STR_EQUIP_DESC_21_HBARRIER;
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-	descriptionShort = "Hesco berrier: A buildable object that is used for fortification purposes.";
 	weight = 200;
 	class ItemActions {
 		class Build {
