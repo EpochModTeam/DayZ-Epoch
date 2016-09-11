@@ -131,7 +131,6 @@ pickupInit = false;
 mouseOverCarry = false; //for carry slot since determining mouse pos doesn't work right
 dayZ_partClasses = ["PartFueltank","PartWheel","PartEngine"]; //No need to add PartGeneric, it is default for everything
 dayZ_explosiveParts = ["palivo","motor"];
-dayz_centerMarker = getMarkerPos "center";
 
 //Survival Variables
 SleepFood = 2160; //minutes (48 hours)
@@ -421,6 +420,12 @@ if(isNil "dayz_ForcefullmoonNights") then {
 if(isNil "dayz_randomMaxFuelAmount") then {
 	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
 };
+if(isNil "dayz_townGenerator") then {
+	dayz_townGenerator = true; // Spawn map junk. Currently only compatible with Chernarus. Need to add coordinates for other maps.
+};
+if(isNil "dayz_townGeneratorBlackList") then {
+	dayz_townGeneratorBlackList = []; // Town generator will not spawn junk within 150m of these positions.
+};
 
 //Replace server individual settings with ranked settings
 if(isNil "dayz_presets") then { dayz_presets = "Vanilla"; };
@@ -478,6 +483,14 @@ switch (dayz_presets) do {
 		dayz_nutritionValuesSystem = true; //Enables nutrition system
 		dayz_classicBloodBagSystem = false; //Enables one type of bloodbag
 	};
+};
+
+switch (toLower worldName) do {
+	case "napf";
+	case "sauerland" : {dayz_minpos = -1000; dayz_maxpos = 26000;};
+	case "tavi" : {dayz_minpos = -26000; dayz_maxpos = 26000;};
+	case "chernarus" : {dayz_minpos = -1; dayz_maxpos = 16000;};
+	case default {dayz_minpos = -20000; dayz_maxpos = 20000;};
 };
 
 //start achievements_init
@@ -543,14 +556,6 @@ if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
 DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
 
-switch (toLower worldName) do {
-	case "napf";
-	case "sauerland" : {dayz_minpos = -1000; dayz_maxpos = 26000;};
-	case "tavi" : {dayz_minpos = -26000; dayz_maxpos = 26000;};
-	case "chernarus" : {dayz_minpos = -1; dayz_maxpos = 16000;};
-	case default {dayz_minpos = -20000; dayz_maxpos = 20000;};
-};
-
 if (isServer) then {
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
@@ -573,9 +578,6 @@ if (isServer) then {
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
 	if (isNil "EpochUseEvents") then {EpochUseEvents = false;};
 	if (isNil "EpochEvents") then {EpochEvents = [];};
-	if (isNil "dayz_MapArea") then {dayz_MapArea = 10000;};
-	if (isNil "DynamicVehicleArea") then {DynamicVehicleArea = dayz_MapArea / 2;};
-	if (isNil "HeliCrashArea") then {HeliCrashArea = dayz_MapArea / 2;};
 	if (isNil "MaxDynamicDebris") then {MaxDynamicDebris = 100;};
 	if (isNil "MaxVehicleLimit") then {MaxVehicleLimit = 50;};
 	if (isNil "spawnArea") then {spawnArea = 1400;};

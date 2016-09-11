@@ -186,12 +186,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=15;
+		items=17;
 		class Item0
 		{
 			position[]={1096,56,1052};
 			name="center";
 			type="Empty";
+			a=1000;b=1000;
 		};
 		class Item1
 		{
@@ -267,6 +268,20 @@ class Mission
 		};
 		class Item13
 		{
+			position[]={1096,56,1052};
+			name="crashsites";
+			type="Empty";
+			a=1000;b=1000;
+		};
+		class Item14
+		{
+			position[]={1096,56,1052};
+			name="carepackages";
+			type="Empty";
+			a=1000;b=0;
+		};
+		class Item15
+		{
 			position[]={506,32,1105};
 			name="test";
 			text="Safe Zone";
@@ -277,7 +292,7 @@ class Mission
 			a=150;
 			b=150;
 		};
-		class Item14
+		class Item16
 		{
 			position[]={410,32,1196};
 			name="Safe Zone";

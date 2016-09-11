@@ -51,7 +51,6 @@ enableSentences false;
 //DefaultWeapons = ["Makarov_DZ","ItemFlashlight"];
 //DefaultBackpack = "DZ_Patrol_Pack_EP1";
 //DefaultBackpackItems = []; // Can include both weapons and magazines i.e. ["PDW_DZ","30Rnd_9x19_UZI"];
-dayz_MapArea = 4000; // Distance from center of map to out of bounds line
 dayz_paraSpawn = false; // Halo spawn
 DZE_BackpackAntiTheft = false; // Prevent stealing from backpacks in trader zones
 DZE_BuildOnRoads = false; // Allow building on roads

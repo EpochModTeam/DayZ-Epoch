@@ -34,11 +34,11 @@ if (count AllowedVehiclesList == 0) then {
 	if (_isShip or _isAir) then {
 		if (_isShip) then {
 			// Spawn anywhere on coast on water
-			_position = [dayz_centerMarker,0,DynamicVehicleArea,10,1,2000,1] call BIS_fnc_findSafePos;
+			_position = [getMarkerPos "center",0,((getMarkerSize "center") select 1),10,1,2000,1] call BIS_fnc_findSafePos;
 			//diag_log("DEBUG: spawning boat near coast " + str(_position));
 		} else {
 			// Spawn air anywhere that is flat
-			_position = [dayz_centerMarker,0,DynamicVehicleArea,10,0,2000,0] call BIS_fnc_findSafePos;
+			_position = [getMarkerPos "center",0,((getMarkerSize "center") select 1),10,0,2000,0] call BIS_fnc_findSafePos;
 			//diag_log("DEBUG: spawning air anywhere flat " + str(_position));
 		};
 	} else {

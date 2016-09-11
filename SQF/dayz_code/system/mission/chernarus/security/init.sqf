@@ -14,7 +14,6 @@ poi_processObject = {
 	_o setVariable ["", true]; // prevent network SV by loot/zeds spawner
 };
 
-if (toLower worldName == "chernarus") then {
+if (toLower worldName == "chernarus") then { //need to add building coordinates for other maps
 	call compile preprocessFileLineNumbers ("\z\addons\dayz_code\system\mission\chernarus\security\antiwallhack.sqf");
 };
-

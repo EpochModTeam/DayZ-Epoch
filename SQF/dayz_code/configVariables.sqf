@@ -8,8 +8,8 @@ dayz_matchboxCount = false; // Enable match stick count. After five uses matches
 dayz_toolBreaking = false; //Sledgehammer, crowbar and pickaxe have a chance to break when used.
 dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
 dayz_tameDogs = false; // Allow taming dogs with raw meat
-dayz_townGenerator = false; // Spawn vanilla map junk in addition to Epoch DynamicDebris. Only works on Chernarus.
-dayz_townGeneratorBlackList = [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]; // Town generator will not spawn junk within 150m of these positions.
+dayz_townGenerator = false; // Spawn vanilla map junk in addition to Epoch DynamicDebris. Currently only compatible with Chernarus. Need to add coordinates for other maps.
+dayz_townGeneratorBlackList = []; // Town generator will not spawn junk within 150m of these positions. Example for Chernarus trader cities: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
 
 DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
 DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with

@@ -187,12 +187,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=24;
+		items=26;
 		class Item0
 		{
 			position[]={5123,19,5223};
 			name="center";
 			type="Empty";
+			a=4500;b=4500;
 		};
 		class Item1
 		{
@@ -268,13 +269,27 @@ class Mission
 		};
 		class Item13
 		{
+			position[]={5123,19,5223};
+			name="crashsites";
+			type="Empty";
+			a=4500;b=4500;
+		};
+		class Item14
+		{
+			position[]={5123,19,5223};
+			name="carepackages";
+			type="Empty";
+			a=4500;b=0;
+		};
+		class Item15
+		{
 			position[]={1992,8,1169};
 			name="st_2";
 			text="Trader City Camara";
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={1283,48,9073};
 			name="st_3";
@@ -282,7 +297,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={4968,13,5130};
 			name="st_4";
@@ -290,7 +305,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={5976,19,6162};
 			name="st_3_1";
@@ -298,7 +313,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={8784,0,5185};
 			name="st_3_1_1";
@@ -306,7 +321,7 @@ class Mission
 			type="hd_dot";
 			colorName="ColorOrange";
 		};
-		class Item18
+		class Item20
 		{
 			position[]={2641,4,7123};
 			name="st_3_1_1_1";
@@ -314,7 +329,7 @@ class Mission
 			type="hd_dot";
 			colorName="ColorOrange";
 		};
-		class Item19
+		class Item21
 		{
 			position[]={6285,12,1296};
 			name="st_3_2";
@@ -322,7 +337,7 @@ class Mission
 			type="hd_dot";
 			colorName="ColorRed";
 		};
-		class Item20
+		class Item22
 		{
 			position[]={8409,14,3379};
 			name="st_3_2_1";
@@ -330,7 +345,7 @@ class Mission
 			type="hd_dot";
 			colorName="ColorRed";
 		};
-		class Item21
+		class Item23
 		{
 			position[]={6271,19,1273};
 			name="st_3_2_2";
@@ -338,7 +353,7 @@ class Mission
 			type="hd_dot";
 			colorName="ColorGreen";
 		};
-		class Item22
+		class Item24
 		{
 			position[]={8419,18,3369};
 			name="st_3_2_3";
@@ -346,7 +361,7 @@ class Mission
 			type="hd_dot";
 			colorName="ColorBlack";
 		};
-		class Item23
+		class Item25
 		{
 			position[]={7230,18,2134};
 			name="st_3_2_3_1";

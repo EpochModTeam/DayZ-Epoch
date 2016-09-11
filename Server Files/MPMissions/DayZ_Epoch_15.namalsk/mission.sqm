@@ -187,12 +187,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=25;
+		items=27;
 		class Item0
 		{
 			position[]={5893,50,8665};
 			name="center";
 			type="Empty";
+			a=4000;b=4000;
 		};
 		class Item1
 		{
@@ -268,13 +269,27 @@ class Mission
 		};
 		class Item13
 		{
+			position[]={5893,50,8665};
+			name="crashsites";
+			type="Empty";
+			a=4000;b=4000;
+		};
+		class Item14
+		{
+			position[]={5893,50,8665};
+			name="carepackages";
+			type="Empty";
+			a=4000;b=0;
+		};
+		class Item15
+		{
 			position[]={5769,21,10774};
 			name="GerneralPartsSupplies";
 			text="Bastion and Alda's Supplies";
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={8885,14,10757};
 			name="WholesalerNorth";
@@ -282,7 +297,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={5563,39,10343};
 			name="Doctor";
@@ -290,7 +305,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={4702,28,8925};
 			name="HighEndWeaponsAmmo";
@@ -298,7 +313,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={3604,185,8026};
 			name="HeroVendor";
@@ -306,7 +321,7 @@ class Mission
 			type="hd_dot";
 			colorName="ColorBlue";
 		};
-		class Item18
+		class Item20
 		{
 			position[]={7317,87,8023};
 			name="VehicleFriendly";
@@ -314,7 +329,7 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorGreen";
 		};
-		class Item19
+		class Item21
 		{
 			position[]={4305,3,4779};
 			name="NeutralVendors";
@@ -322,7 +337,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item20
+		class Item22
 		{
 			position[]={2186,4,5766};
 			name="WholesalerSouth";
@@ -330,7 +345,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item21
+		class Item23
 		{
 			position[]={5032,49,8234};
 			name="LowEndWeaponsAmmo";
@@ -338,7 +353,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item22
+		class Item24
 		{
 			position[]={7720,4,5847};
 			name="BoatVendor";
@@ -346,7 +361,7 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorBlack";
 		};
-		class Item23
+		class Item25
 		{
 			position[]={7239,240,7046};
 			name="Bandit Trader";
@@ -354,7 +369,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item24
+		class Item26
 		{
 			position[]={6283,41,9380};
 			name="PlaneVendor";

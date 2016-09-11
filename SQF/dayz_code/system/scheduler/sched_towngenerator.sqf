@@ -159,10 +159,10 @@ sched_townGenerator = {
 							_x = _cell select _i;
 							//sched_tg_newSpawned = sched_tg_newSpawned + 1;
 							if ("" != (_x select 1)) then {
-								_blocked = if (!dayz_townGenerator or {toLower worldName != "chernarus"}) then {true} else {false};
 								_position = _x select 2;
+								_blocked = false;
 								{if (_position distance _x < 150) exitWith {_blocked = true;};} forEach dayz_townGeneratorBlackList;
-								if (!_blocked) then {
+								if (!_blocked && dayz_townGenerator) then {
 									_object = (_x select 1) createVehicleLocal [0,0,0];
 									_object setDir (_x select 3);
 									_object setPos [_position select 0,_position select 1,0];

@@ -393,7 +393,7 @@ publicVariable "sm_done";
 [] execVM "\z\addons\dayz_server\compile\server_spawnCarePackages.sqf";
 [] execVM "\z\addons\dayz_server\compile\server_spawnCrashSites.sqf";
 
-if (dayz_townGenerator && {toLower worldName == "chernarus"}) then {execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";};
+if (dayz_townGenerator) then {execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";};
 
 "PVDZ_sec_atp" addPublicVariableEventHandler {
 	_x = _this select 1;
@@ -461,8 +461,8 @@ if (_hiveLoaded) then {
 			if (isClass (_cfgLootFile >> typeOf _x)) then {
 				_buildingList set [count _buildingList,_x];
 			};
-		} count (dayz_centerMarker nearObjects ["building",DynamicVehicleArea]);
-		_roadList = dayz_centerMarker nearRoads DynamicVehicleArea;
+		} count (getMarkerPos "center" nearObjects ["building",((getMarkerSize "center") select 1)]);
+		_roadList = getMarkerPos "center" nearRoads ((getMarkerSize "center") select 1);
 		
 		_vehLimit = MaxVehicleLimit - (count _serverVehicleCounter);
 		if (_vehLimit > 0) then {

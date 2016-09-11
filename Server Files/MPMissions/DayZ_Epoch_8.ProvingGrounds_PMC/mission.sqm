@@ -184,12 +184,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=13;
+		items=15;
 		class Item0
 		{
 			position[]={1056,51,1016};
 			name="center";
 			type="Empty";
+			a=2000;b=2000;
 		};
 		class Item1
 		{
@@ -262,6 +263,20 @@ class Mission
 			position[]={1717,55,681};
 			name="spawn10";
 			type="Empty";
+		};
+		class Item13
+		{
+			position[]={1056,51,1016};
+			name="crashsites";
+			type="Empty";
+			a=2000;b=2000;
+		};
+		class Item14
+		{
+			position[]={1056,51,1016};
+			name="carepackages";
+			type="Empty";
+			a=2000;b=0;
 		};
 	};
 };

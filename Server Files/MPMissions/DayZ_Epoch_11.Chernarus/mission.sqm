@@ -184,12 +184,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=18;
+		items=20;
 		class Item0
 		{
 			position[]={7839,0,8414};
 			name="center";
 			type="Empty";
+			a=7500;b=7000;
 		};
 		class Item1
 		{
@@ -235,13 +236,27 @@ class Mission
 		};
 		class Item8
 		{
+			position[]={7049,0,9241};
+			name="crashsites";
+			type="Empty";
+			a=4880;b=7000;
+		};
+		class Item9
+		{
+			position[]={7542,0,7134};
+			name="carepackages";
+			type="Empty";
+			a=6150;b=0;
+		};
+		class Item10
+		{
 			position[]={6326,304,7809};
 			name="Tradercitystary";
 			text="Trader City Stary";
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item9
+		class Item11
 		{
 			position[]={4361,3,2259};
 			name="wholesaleSouth";
@@ -249,7 +264,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item10
+		class Item12
 		{
 			position[]={13532,3,6355};
 			name="boatTraderEast";
@@ -257,7 +272,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item11
+		class Item13
 		{
 			position[]={7989,0,2900};
 			name="BoatDealerSouth";
@@ -265,7 +280,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item12
+		class Item14
 		{
 			position[]={12060,158,12638};
 			name="AirVehicles";
@@ -273,7 +288,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item13
+		class Item15
 		{
 			position[]={1606,289,7803};
 			name="BanditDen";
@@ -281,7 +296,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={11447,317,11364};
 			name="Klen";
@@ -289,7 +304,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={13441,1,5429};
 			name="BoatDealerEast";
@@ -297,7 +312,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={4064,365,11665};
 			name="TradercityBash";
@@ -305,7 +320,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={12944,210,12766};
 			name="HeroTrader";
