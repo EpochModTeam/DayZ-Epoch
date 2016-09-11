@@ -55,8 +55,11 @@ if (_inVehicle) then {
 				r_action2 = true;
 			};
 		};
-		if (count _assignedRole > 1) then {
-			_turret = _assignedRole select 1;
+		if ((count _assignedRole) > 1 || ((_assignedRole select 0) == "driver")) then {
+			_turret = [-1];
+			if ((count _assignedRole) > 1) then {
+				_turret = _assignedRole select 1;
+			};
 			_weapons = _vehicle weaponsTurret _turret;
 			{
 				_weaponName = getText (configFile >> "cfgWeapons" >> _x >> "displayName");

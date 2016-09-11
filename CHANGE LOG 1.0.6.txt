@@ -48,6 +48,7 @@
 [NEW] Players can now manually push stuck planes backwards to free them. @ebaydayz
 [NEW] You may set the buying or selling price of any item to -1 to disallow the respective trading action, only with config traders and advanced trading @icomrade
 [NEW] Salvage can now be disabled on locked vehicles via DZE_salvageLocked variable. #1757 @oiad
+[NEW] You may now rearm pooks and other helicoper/vehicle pilot/driver weapons @icomrade
 
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
 [CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)
