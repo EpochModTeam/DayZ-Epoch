@@ -2890,36 +2890,6 @@
 			<Czech>Blueprint vytvořit Herbal drink. Povinné - 1 láhev vody vařené a jedna bylina box.</Czech>
 			<German>Rezept für einen Kräutertrunk. Gebraucht werden: 1x Flasche gekochtes Wasser, 1x Kräuter-Box.</German>
 		</Key>
-		<Key ID="STR_CRAFT_NAME_FERTILIZER">
-			<English>Fertilizer</English>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_FERTILIZER">
-			<English>A bag that is applied to soils or to plant tissues (usually leaves) to supply one or more plant nutrients essential to the growth of plants.</English>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_PUMPKIN_SEED">
-			<English>Pumpkin Seed</English>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_PUMPKIN_SEED">
-			<English>A single pumpkin seed.</English>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_PUMPKIN_PLANT">
-			<English>Pumpkin Plant</English>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_PUMPKIN_PLANT">
-			<English>A fully grown pumpkin plant.</English>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_HEMP_SEED">
-			<English>Hemp Seed</English>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_HEMP_SEED">
-			<English>A single hemp seed.</English>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
-			<English>Hemp Plant</English>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_HEMP_PLANT">
-			<English>A fully grown hemp plant. Hemp is used to make a variety of commercial and industrial products including rope, clothes, food, paper, textiles, plastics, insulation and biofuel.</English>
-		</Key>
 		<Key ID="STR_CRAFT_NAME_BaseBallBatBarbed">
 			<English>Baseball Bat Barbed</English>
 			<German>Stacheldrahtkeule</German>
@@ -4340,27 +4310,6 @@
 			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
 			<Czech>Jutové pytle, lze naplnit pískem nebo zeminou a použít je pro postavení opevnění.</Czech>
 			<French>Des sacs de jute qui peuvent être remplis de sable et utilisés pour des fortifications militaires.</French>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_21_ROUND">
-			<English>Sandbag Fence (Round)</English>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_21_NEST">
-			<English>Sandbag Nest</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_21_NEST">
-			<English>A buildable fortification object, can be removed.</English>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_21_HBARRIER">
-			<English>Sandbag Cube (H-barrier)</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_21_HBARRIER">
-			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_21_3XHBARRIER">
-			<English>Sandbag Cube (3x H-barrier)</English>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_21_5XHBARRIER">
-			<English>Sandbag Cube (5x H-barrier)</English>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_22">
 			<English>Tank Trap Kit</English>
@@ -9819,12 +9768,6 @@
 			<English>DMR Camo</English>
 			<Russian>DMR (камуфляж)</Russian>
 		</Key>
-		<Key ID="STR_DZ_WPN_M107_NAME">
-			<English>M107</English>
-		</Key>
-		<Key ID="STR_DZ_WPN_M107_DESC">
-			<English>Anti-materiel sniper rifle, 12.7x99 mm caliber round.</English>
-		</Key>
 		
 		<!-- M4A1 -->
 		<Key ID="STR_DZ_WPN_M4A1_NAME">
@@ -13975,6 +13918,36 @@
 			<German>Bio-Fleisch: Eine sehr gute Nahrungsquelle und ein sehr grosses Risiko, eine Infection aufzulesen. Essen auf eigene Gefahr.</German>
 			<Russian>Органическое мясо: Очень хороший источник пит. веществ, обладающий высокой вероятностью заражения. Ешьте на свой страх и риск.</Russian>
 		</Key>
+		<Key ID="STR_CRAFT_NAME_FERTILIZER">
+			<English>Fertilizer</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_FERTILIZER">
+			<English>A bag that is applied to soils or to plant tissues (usually leaves) to supply one or more plant nutrients essential to the growth of plants.</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_PUMPKIN_SEED">
+			<English>Pumpkin Seed</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_PUMPKIN_SEED">
+			<English>A single pumpkin seed.</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_PUMPKIN_PLANT">
+			<English>Pumpkin Plant</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_PUMPKIN_PLANT">
+			<English>A fully grown pumpkin plant.</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_HEMP_SEED">
+			<English>Hemp Seed</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_HEMP_SEED">
+			<English>A single hemp seed.</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
+			<English>Hemp Plant</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_HEMP_PLANT">
+			<English>A fully grown hemp plant. Hemp is used to make a variety of commercial and industrial products including rope, clothes, food, paper, textiles, plastics, insulation and biofuel.</English>
+		</Key>
 		<Key ID="STR_FOOD_NAME_PUMPKIN">
 			<English>Pumpkin</English>
 			<German>Kürbis</German>
@@ -15300,6 +15273,27 @@
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED_DESC">
 			<English>Wall with combination lock door constructed out of plywood and lumber.</English>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_21_ROUND">
+			<English>Sandbag Fence (Round)</English>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_NEST">
+			<English>Sandbag Nest</English>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_21_NEST">
+			<English>A buildable fortification object, can be removed.</English>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_HBARRIER">
+			<English>Sandbag Cube (H-barrier)</English>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_21_HBARRIER">
+			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_3XHBARRIER">
+			<English>Sandbag Cube (3x H-barrier)</English>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_5XHBARRIER">
+			<English>Sandbag Cube (5x H-barrier)</English>
+		</Key>
 		<Key ID="STR_EPOCH_ALUMINUM">
 			<English>Aluminum</English>
 			<Russian>Алюминий</Russian>
@@ -16215,6 +16209,12 @@
 		</Key>
 		<Key ID="str_fireplace_noMatches">
 			<English>You need matches to build a fireplace</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_M107_NAME">
+			<English>M107</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_M107_DESC">
+			<English>Anti-materiel sniper rifle, 12.7x99 mm caliber round.</English>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME">
 			<English>20Rnd. SCAR mag.</English>
