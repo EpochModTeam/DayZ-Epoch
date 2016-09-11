@@ -1,3 +1,3 @@
 //new
-5 "" !"WeaponHolder" !"FunctionsManager" !"Shot" !"z_doctor" !"z_hunter" !"z_new_villager[1234]" !"z_new_worker[1234]" !"z_policeman" !"z_priest" !"z_soldier_heavy" !"z_soldier_pilot" !"z_soldier" !"z_suit[12]" !"z_teacher" !"z_villager[1234]" !"z_worker[1234]" !"zZombie_Base" !"CSJ_GyroCover" !"CSJ_GyroP"
+5 "" !"WeaponHolder" !"FunctionsManager" !"Shot" !"z_doctor" !"z_hunter" !"z_new_villager[1234]" !"z_new_worker[1234]" !"z_policeman" !"z_priest" !"z_soldier_heavy" !"z_soldier_pilot" !"z_soldier" !"z_suit[12]" !"z_teacher" !"z_villager[1234]" !"z_worker[1234]" !"zZombie_Base" !="WoodenArrowF" !"CSJ_GyroCover" !"CSJ_GyroP"
 1 ""
