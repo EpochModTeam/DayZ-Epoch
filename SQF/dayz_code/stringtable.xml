@@ -2750,7 +2750,6 @@
 		<Key ID="STR_CRAFT_NAME_M9SD">
 			<English>M9SD</English>
 			<Russian>M9 с глушителем</Russian>
-			<Spanish>M9SD</Spanish>
 			<French>M9 Silencieux</French>
 			<Czech>M9 s tlumičem</Czech>
 			<German>M9 SD</German>
@@ -2782,7 +2781,6 @@
 		<Key ID="STR_CRAFT_NAME_bizonSD">
 			<English>BizonSD</English>
 			<Russian>Бизон с глушителем</Russian>
-			<Spanish>BizonSD</Spanish>
 			<French>Bizon Silencieux</French>
 			<Czech>Bizon s tlumičem</Czech>
 			<German>Bizon SD</German>
@@ -2891,6 +2889,36 @@
 			<French>Blueprint pour créer une boisson à base de plantes. Required - 1 bouteille d'eau bouillie et une boîte d'herbe.</French>
 			<Czech>Blueprint vytvořit Herbal drink. Povinné - 1 láhev vody vařené a jedna bylina box.</Czech>
 			<German>Rezept für einen Kräutertrunk. Gebraucht werden: 1x Flasche gekochtes Wasser, 1x Kräuter-Box.</German>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_FERTILIZER">
+			<English>Fertilizer</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_FERTILIZER">
+			<English>A bag that is applied to soils or to plant tissues (usually leaves) to supply one or more plant nutrients essential to the growth of plants.</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_PUMPKIN_SEED">
+			<English>Pumpkin Seed</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_PUMPKIN_SEED">
+			<English>A single pumpkin seed.</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_PUMPKIN_PLANT">
+			<English>Pumpkin Plant</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_PUMPKIN_PLANT">
+			<English>A fully grown pumpkin plant.</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_HEMP_SEED">
+			<English>Hemp Seed</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_HEMP_SEED">
+			<English>A single hemp seed.</English>
+		</Key>
+		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
+			<English>Hemp Plant</English>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_HEMP_PLANT">
+			<English>A fully grown hemp plant. Hemp is used to make a variety of commercial and industrial products including rope, clothes, food, paper, textiles, plastics, insulation and biofuel.</English>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_BaseBallBatBarbed">
 			<English>Baseball Bat Barbed</English>
@@ -4312,6 +4340,27 @@
 			<Spanish>Bolsas hechas de arpillera que pueden llenarse con arena o tierra y ser usadas para fortificación militar.</Spanish>
 			<Czech>Jutové pytle, lze naplnit pískem nebo zeminou a použít je pro postavení opevnění.</Czech>
 			<French>Des sacs de jute qui peuvent être remplis de sable et utilisés pour des fortifications militaires.</French>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_ROUND">
+			<English>Sandbag Fence (Round)</English>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_NEST">
+			<English>Sandbag Nest</English>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_21_NEST">
+			<English>A buildable fortification object, can be removed.</English>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_HBARRIER">
+			<English>Sandbag Cube (H-barrier)</English>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_21_HBARRIER">
+			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_3XHBARRIER">
+			<English>Sandbag Cube (3x H-barrier)</English>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_21_5XHBARRIER">
+			<English>Sandbag Cube (5x H-barrier)</English>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_22">
 			<English>Tank Trap Kit</English>
@@ -9770,6 +9819,12 @@
 			<English>DMR Camo</English>
 			<Russian>DMR (камуфляж)</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M107_NAME">
+			<English>M107</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_M107_DESC">
+			<English>Anti-materiel sniper rifle, 12.7x99 mm caliber round.</English>
+		</Key>
 		
 		<!-- M4A1 -->
 		<Key ID="STR_DZ_WPN_M4A1_NAME">
@@ -13992,6 +14047,24 @@
 			<German>Kann mit einem Vorschlaghammer von Steinen gewonnen werden.</German>
 			<Russian>Добывается из камней с помощью кувалды.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW">
+			<English>Chainsaw</English>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW">
+			<English>Hermlite 2 Stroke Chainsaw</English>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_BLUE">
+			<English>Hermlite 2 Stroke Chainsaw (Blue)</English>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_GREEN">
+			<English>Hermlite 2 Stroke Chainsaw (Green)</English>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_PINK">
+			<English>Hermlite 2 Stroke Chainsaw (Pink)</English>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_RED">
+			<English>Hermlite 2 Stroke Chainsaw (Red)</English>
+		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_OIL">
 			<English>2-Stroke Engine Oil</English>
 			<German>2-Takt-Motorenöl</German>
@@ -15081,14 +15154,6 @@
 		<Key ID="STR_EPOCH_MAGS">
 			<English>Mags</English>
 			<Russian>Предметов</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_WEPS">
-			<English>Weps</English>
-			<Russian>Оружия</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_BAGS">
-			<English>Bags</English>
-			<Russian>Рюкзаков</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ATTACHMENTS">
 			<English>Attachments</English>

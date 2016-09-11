@@ -28,7 +28,7 @@
 
 		picture = "\z\addons\dayz_epoch\pictures\equip_chainsaw_CA.paa";
 
-		displayName = "Chainsaw";
+		displayName = $STR_EPOCH_CHAINSAW;
 
 		cursor = "";
 		cursoraim = "\ca\Weapons\Data\clear_empty";
@@ -89,27 +89,27 @@
 		magazines[] = {"CSGAS"};
 		class Library
 		{
-			libTextDesc = "Hermlite Chainsaw";
+			libTextDesc = $STR_EPOCH_DESC_CHAINSAW;
 		};
-		descriptionShort = "Hermlite Chainsaw";
+		descriptionShort = $STR_EPOCH_DESC_CHAINSAW;
 	};
 	class ChainSawB : ChainSaw {
 		model = "\z\addons\dayz_epoch\models\chainsaw_B.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_chainsawB_CA.paa";
-		descriptionShort = "Hermlite Chainsaw (Blue)";
+		descriptionShort = $STR_EPOCH_DESC_CHAINSAW_BLUE;
 	};
 	class ChainSawG : ChainSaw {
 		model = "\z\addons\dayz_epoch\models\chainsaw_G.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_chainsawG_CA.paa";
-		descriptionShort = "Hermlite Chainsaw (Green)";
+		descriptionShort = $STR_EPOCH_DESC_CHAINSAW_GREEN;
 	};
 	class ChainSawP : ChainSaw {
 		model = "\z\addons\dayz_epoch\models\chainsaw_P.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_chainsawP_CA.paa";
-		descriptionShort = "Hermlite Chainsaw (Pink)";
+		descriptionShort = $STR_EPOCH_DESC_CHAINSAW_PINK;
 	};
 	class ChainSawR : ChainSaw {
 		model = "\z\addons\dayz_epoch\models\chainsaw_R.p3d";
 		picture = "\z\addons\dayz_epoch\pictures\equip_chainsawR_CA.paa";
-		descriptionShort = "Hermlite Chainsaw (Red)";
+		descriptionShort = $STR_EPOCH_DESC_CHAINSAW_RED;
 	};
