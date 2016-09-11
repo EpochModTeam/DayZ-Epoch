@@ -183,12 +183,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=18;
+		items=20;
 		class Item0
 		{
 			position[]={10442,86,10438};
 			name="center";
 			type="Empty";
+			a=6000;b=6000;
 		};
 		class Item1
 		{
@@ -228,13 +229,27 @@ class Mission
 		};
 		class Item7
 		{
+			position[]={10442,86,10438};
+			name="crashsites";
+			type="Empty";
+			a=6000;b=6000;
+		};
+		class Item8
+		{
+			position[]={10442,86,10438};
+			name="carepackages";
+			type="Empty";
+			a=6000;b=0;
+		};
+		class Item9
+		{
 			position[]={12556,42,8359};
 			name="Tradercitycorazol";
 			text="Trader City Corazol";
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item8
+		class Item10
 		{
 			position[]={13574,3,8677};
 			name="wholesaleSouth";
@@ -242,7 +257,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item9
+		class Item11
 		{
 			position[]={11453,4,5418};
 			name="boatTraderEast";
@@ -250,7 +265,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item10
+		class Item12
 		{
 			position[]={19237,4,13592};
 			name="BoatDealerSouth";
@@ -258,7 +273,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item11
+		class Item13
 		{
 			position[]={9911,139,10010};
 			name="AirVehicles";
@@ -266,7 +281,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item12
+		class Item14
 		{
 			position[]={6414,57,7461};
 			name="BanditDen";
@@ -274,7 +289,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item13
+		class Item15
 		{
 			position[]={17186,40,13596};
 			name="Ixel";
@@ -282,7 +297,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={13434,2,6888};
 			name="BoatDealerEast";
@@ -290,7 +305,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={14273,41,12408};
 			name="TradercityBag";
@@ -298,7 +313,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={17270,14,9570};
 			name="HeroTrader";
@@ -306,7 +321,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={13243,25,11188};
 			name="BlackMarket";

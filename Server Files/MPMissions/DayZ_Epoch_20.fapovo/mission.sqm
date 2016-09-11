@@ -200,12 +200,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=16;
+		items=18;
 		class Item0
 		{
 			position[]={2594,0,2435};
 			name="center";
 			type="Empty";
+			a=3000;b=3000;
 		};
 		class Item1
 		{
@@ -251,13 +252,27 @@ class Mission
 		};
 		class Item8
 		{
+			position[]={2594,0,2435};
+			name="crashsites";
+			type="Empty";
+			a=3000;b=3000;
+		};
+		class Item9
+		{
+			position[]={2594,0,2435};
+			name="carepackages";
+			type="Empty";
+			a=3000;b=0;
+		};
+		class Item10
+		{
 			position[]={4099,16,9242};
 			name="BanditTrader";
 			text="Bandit Trader";
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item9
+		class Item11
 		{
 			position[]={4491,11,495};
 			name="AirVehicleUnarmed";
@@ -265,7 +280,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item10
+		class Item12
 		{
 			position[]={3695,30,2409};
 			name="TraderCity1";
@@ -273,7 +288,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item11
+		class Item13
 		{
 			position[]={3390,67,4102};
 			name="TraderCity2";
@@ -281,7 +296,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBlack";
 		};
-		class Item12
+		class Item14
 		{
 			position[]={4688,4,1887};
 			name="Wholesaler";
@@ -289,7 +304,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item13
+		class Item15
 		{
 			position[]={1609,24,1071};
 			name="BanditVendor";
@@ -297,7 +312,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={4342,14,3663};
 			name="HeroVendor";
@@ -305,7 +320,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={3540,-2,3142};
 			name="BoatVendor";

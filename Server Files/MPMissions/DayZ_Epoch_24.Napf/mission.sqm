@@ -185,12 +185,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=23;
+		items=25;
 		class Item0
 		{
 			position[]={10010,110,10448};
 			name="center";
 			type="Empty";
+			a=9000;b=9000;
 		};
 		class Item1
 		{
@@ -266,12 +267,26 @@ class Mission
 		};
 		class Item13
 		{
+			position[]={10010,110,10448};
+			name="crashsites";
+			type="Empty";
+			a=9000;b=9000;
+		};
+		class Item14
+		{
+			position[]={10010,110,10448};
+			name="carepackages";
+			type="Empty";
+			a=9000;b=0;
+		};
+		class Item15
+		{
 			position[]={8246,15,15490};
 			name="NeutralTraderCity";
 			text="Trader City Lenzburg";
 			type="mil_circle";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={12397,216,5068};
 			name="FriendlyTraderCity";
@@ -279,7 +294,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={5150,71,4862};
 			name="HeroVendor";
@@ -287,7 +302,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={15128,19,16421};
 			name="UnarmedAirVehicles";
@@ -295,7 +310,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={2125,13,7807};
 			name="West Wholesaler";
@@ -303,7 +318,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item18
+		class Item20
 		{
 			position[]={5372,5,16091};
 			name="NorthWholesaler";
@@ -311,7 +326,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item19
+		class Item21
 		{
 			position[]={6776,0,16955};
 			name="NorthBoatVendor";
@@ -319,7 +334,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item20
+		class Item22
 		{
 			position[]={10404,106,8282};
 			name="BanditVendor";
@@ -327,7 +342,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item21
+		class Item23
 		{
 			position[]={16835,-2,5268};
 			name="SouthBoatVendor";
@@ -335,7 +350,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item22
+		class Item24
 		{
 			position[]={15520,5,13225};
 			name="NeutralTraderCIty2";

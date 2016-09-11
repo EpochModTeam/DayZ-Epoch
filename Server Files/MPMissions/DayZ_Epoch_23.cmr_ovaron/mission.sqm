@@ -187,12 +187,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=23;
+		items=25;
 		class Item0
 		{
 			position[]={5010,0,5250};
 			name="center";
 			type="Empty";
+			a=7000;b=7000;
 		};
 		class Item1
 		{
@@ -268,13 +269,27 @@ class Mission
 		};
 		class Item13
 		{
+			position[]={5010,0,5250};
+			name="crashsites";
+			type="Empty";
+			a=7000;b=7000;
+		};
+		class Item14
+		{
+			position[]={5010,0,5250};
+			name="carepackages";
+			type="Empty";
+			a=7000;b=0;
+		};
+		class Item15
+		{
 			position[]={9638,10,6896};
 			name="AirVehiclesF";
 			text="AWOL's Airfield";
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={5152,0,9055};
 			name="WholesalerWest";
@@ -282,7 +297,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={9544,0,4156};
 			name="HeroVehicles";
@@ -290,7 +305,7 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorBlue";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={280,0,3289};
 			name="NeutralAirVehicles";
@@ -298,7 +313,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={5448,0,354};
 			name="Boats";
@@ -306,7 +321,7 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorBlack";
 		};
-		class Item18
+		class Item20
 		{
 			position[]={5191,71,4103};
 			name="NeutralTraders";
@@ -314,7 +329,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBrown";
 		};
-		class Item19
+		class Item21
 		{
 			position[]={5149,177,3396};
 			name="NeutralTraderCity2";
@@ -322,7 +337,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBrown";
 		};
-		class Item20
+		class Item22
 		{
 			position[]={7273,0,256};
 			name="WholesaleSouth";
@@ -330,7 +345,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item21
+		class Item23
 		{
 			position[]={5233,159,7078};
 			name="PlanicaTraders";
@@ -338,7 +353,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBrown";
 		};
-		class Item22
+		class Item24
 		{
 			position[]={1298,0,9366};
 			name="IslandVehiclePartsVendors";

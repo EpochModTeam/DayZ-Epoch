@@ -1,6 +1,6 @@
 private ["_position","_veh","_istoomany","_spawnveh","_positions"];
 	
-_position = [dayz_centerMarker,0,(HeliCrashArea*0.75),10,0,2000,0] call BIS_fnc_findSafePos;
+_position = [getMarkerPos "center",0,(((getMarkerSize "center") select 1)*0.75),10,0,2000,0] call BIS_fnc_findSafePos;
 
 if ((count _position) == 2) then {
 	_positions = selectBestPlaces [_position, 500, "(1 + forest) * (1 + hills) * (1 - houses) * (1 - sea)", 10, 5];

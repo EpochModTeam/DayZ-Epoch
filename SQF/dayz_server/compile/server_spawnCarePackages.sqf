@@ -15,8 +15,8 @@ Author:
 //Number of care packages to spawn
 #define SPAWN_NUM 6
 
-#define SEARCH_CENTER dayz_centerMarker
-#define SEARCH_RADIUS HeliCrashArea
+#define SEARCH_CENTER getMarkerPos "carepackages"
+#define SEARCH_RADIUS (getMarkerSize "carepackages") select 0
 #define SEARCH_DIST_MIN 30
 #define SEARCH_SLOPE_MAX 1000
 #define SEARCH_BLACKLIST [[[12923,3643],[14275,2601]]]

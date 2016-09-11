@@ -199,12 +199,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=37;
+		items=39;
 		class Item0
 		{
 			position[]={4078,30,4757};
 			name="center";
 			type="Empty";
+			a=6000;b=6000;
 		};
 		class Item1
 		{
@@ -280,6 +281,20 @@ class Mission
 		};
 		class Item13
 		{
+			position[]={4078,30,4757};
+			name="crashsites";
+			type="Empty";
+			a=6000;b=6000;
+		};
+		class Item14
+		{
+			position[]={4078,30,4757};
+			name="carepackages";
+			type="Empty";
+			a=6000;b=0;
+		};
+		class Item15
+		{
 			position[]={6011,13,6626};
 			name="RaceTrack";
 			text="Rommelo's Raceway";
@@ -288,7 +303,7 @@ class Mission
 			fillName="Border";
 			drawBorder=1;
 		};
-		class Item14
+		class Item16
 		{
 			position[]={6539,20,6868};
 			name="RepairGuy";
@@ -296,7 +311,7 @@ class Mission
 			type="mil_box";
 			colorName="ColorGreen";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={7026,11,7105};
 			name="PlaneVendor";
@@ -304,7 +319,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={3054,14,8032};
 			name="Wholesale";
@@ -312,7 +327,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={3608,235,3685};
 			name="HighWeapons/ammo";
@@ -320,7 +335,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item18
+		class Item20
 		{
 			position[]={4245,46,4486};
 			name="Parts";
@@ -328,7 +343,7 @@ class Mission
 			type="mil_box";
 			colorName="ColorBlack";
 		};
-		class Item19
+		class Item21
 		{
 			position[]={4138,23,1492};
 			name="Choppers";
@@ -336,7 +351,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item20
+		class Item22
 		{
 			position[]={7553,11,3028};
 			name="lowEndCars";
@@ -344,7 +359,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item21
+		class Item23
 		{
 			position[]={7514,10,2953};
 			name="LowEndWeapons";
@@ -352,7 +367,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item22
+		class Item24
 		{
 			position[]={3024,45,5956};
 			name="HighEndCars";
@@ -360,7 +375,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item23
+		class Item25
 		{
 			position[]={895,29,5271};
 			name="MedicalandBags";
@@ -368,7 +383,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item24
+		class Item26
 		{
 			position[]={8357,23,8740};
 			name="Wholesaler";
@@ -376,7 +391,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item25
+		class Item27
 		{
 			position[]={4178,12,2342};
 			name="BagsNFood";
@@ -384,7 +399,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item26
+		class Item28
 		{
 			position[]={728,41,1571};
 			name="Wholesalers";
@@ -392,7 +407,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item27
+		class Item29
 		{
 			position[]={1724,42,4137};
 			name="DirtTrackVendor";
@@ -400,7 +415,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item28
+		class Item30
 		{
 			position[]={2376,56,4120};
 			name="OffRoad4x4";
@@ -408,7 +423,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item29
+		class Item31
 		{
 			position[]={4015,4,5216};
 			name="BoatVendor";
@@ -416,7 +431,7 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorBlack";
 		};
-		class Item30
+		class Item32
 		{
 			position[]={5523,2,4412};
 			name="BoatVendor1";
@@ -424,7 +439,7 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorBlack";
 		};
-		class Item31
+		class Item33
 		{
 			position[]={3939,2,2199};
 			name="BoatVendor2";
@@ -432,7 +447,7 @@ class Mission
 			type="mil_triangle";
 			colorName="ColorGreen";
 		};
-		class Item32
+		class Item34
 		{
 			position[]={6673,52,6355};
 			name="BagVendor1";
@@ -440,7 +455,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item33
+		class Item35
 		{
 			position[]={4238,48,4842};
 			name="BagVendor2";
@@ -448,7 +463,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item34
+		class Item36
 		{
 			position[]={6679,26,4296};
 			name="Doctor2";
@@ -456,7 +471,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item35
+		class Item37
 		{
 			position[]={4099,16,9242};
 			name="BanditTrader";
@@ -464,7 +479,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item36
+		class Item38
 		{
 			position[]={4139,23,1465};
 			name="HeroTrader";

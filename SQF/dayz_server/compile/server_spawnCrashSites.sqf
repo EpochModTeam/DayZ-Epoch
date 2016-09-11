@@ -21,8 +21,8 @@ Author:
 #define SPAWN_CHANCE 0.75
 
 //Parameters for finding a suitable position to spawn the crash site
-#define SEARCH_CENTER dayz_centerMarker
-#define SEARCH_RADIUS HeliCrashArea
+#define SEARCH_CENTER getMarkerPos "crashsites"
+#define SEARCH_RADIUS (getMarkerSize "crashsites") select 0
 #define SEARCH_DIST_MIN 20
 #define SEARCH_SLOPE_MAX 2
 #define SEARCH_BLACKLIST [[[2092,14167],[10558,12505]]]

@@ -17,11 +17,14 @@
 	- dayz_CLChances --> dz_loot_weighted (similar not identical)
 	- dayz_combat --> no longer exists use (player getVariable["combattimeout",0] >= diag_tickTime)
 	- dayz_fullMoonNights --> dayz_ForcefullmoonNights
+	- dayz_MapArea --> no longer exists (was only used for DynamicVehicleArea and HeliCrashArea)
 	- dayz_updateObjects --> DayZ_GearedObjects
+	- DynamicVehicleArea --> (getMarkerSize "center") select 1
 	- DZE_ActionInProgress --> dayz_actionInProgress
 	- DZE_CanPickup --> canPickup
 	- DZE_trees --> dayz_trees
 	- freeTarget --> OpenTarget
+	- HeliCrashArea --> (getMarkerSize "crashsites") select 1
 	- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor
 	- r_action_count --> dayz_actionInProgress (now true/false instead of 1/0)
 	

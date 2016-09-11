@@ -186,12 +186,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=28;
+		items=30;
 		class Item0
 		{
 			position[]={10732,193,12687};
 			name="center";
 			type="Empty";
+			a=10000;b=10000;
 		};
 		class Item1
 		{
@@ -261,13 +262,27 @@ class Mission
 		};
 		class Item12
 		{
+			position[]={10732,193,12687};
+			name="crashsites";
+			type="Empty";
+			a=10000;b=10000;
+		};
+		class Item13
+		{
+			position[]={10732,193,12687};
+			name="carepackages";
+			type="Empty";
+			a=10000;b=0;
+		};
+		class Item14
+		{
 			position[]={11698,-114,15210};
 			name="TraderCityLyepestok";
 			text="Trader City Lyepestok";
 			type="mil_circle";
 			colorName="ColorOrange";
 		};
-		class Item13
+		class Item15
 		{
 			position[]={15309,-14,9278};
 			name="TraderCitySabina";
@@ -275,7 +290,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorOrange";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={5538,-35,8762};
 			name="TraderCityBilgrad";
@@ -283,7 +298,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorOrange";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={7376,-34,4296};
 			name="TraderCityBranibor";
@@ -291,7 +306,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorOrange";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={10948,-10,654};
 			name="BanditVendor";
@@ -299,7 +314,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={15587,-35,16394};
 			name="HeroVendor";
@@ -307,7 +322,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item18
+		class Item20
 		{
 			position[]={16555,-44,10159};
 			name="AircraftDealer";
@@ -315,7 +330,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item19
+		class Item21
 		{
 			position[]={6815,7,8534};
 			name="AircraftDealer2";
@@ -323,7 +338,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item20
+		class Item22
 		{
 			position[]={4066,-36,7265};
 			name="Misc.Vendor";
@@ -331,7 +346,7 @@ class Mission
 			type="mil_box";
 			colorName="ColorGreen";
 		};
-		class Item21
+		class Item23
 		{
 			position[]={17497,-235,7159};
 			name="Misc.Vendor2";
@@ -339,7 +354,7 @@ class Mission
 			type="mil_box";
 			colorName="ColorGreen";
 		};
-		class Item22
+		class Item24
 		{
 			position[]={17332,5,12930};
 			name="BoatDealer";
@@ -347,7 +362,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item23
+		class Item25
 		{
 			position[]={10570,-0,16772};
 			name="BoatDealer2";
@@ -355,7 +370,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item24
+		class Item26
 		{
 			position[]={10698,0,5983};
 			name="BoatDealer3";
@@ -363,7 +378,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item25
+		class Item27
 		{
 			position[]={5419,-2,9503};
 			name="BoatDealer4";
@@ -371,7 +386,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item26
+		class Item28
 		{
 			position[]={13342,-172,8611};
 			name="Wholesaler";
@@ -379,7 +394,7 @@ class Mission
 			type="mil_box";
 			colorName="ColorBlack";
 		};
-		class Item27
+		class Item29
 		{
 			position[]={9859,-173,7471};
 			name="Wholesaler2";

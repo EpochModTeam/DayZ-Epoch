@@ -186,12 +186,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=15;
+		items=17;
 		class Item0
 		{
 			position[]={4008,16,3980};
 			name="center";
 			type="Empty";
+			a=4000;b=4000;
 		};
 		class Item1
 		{
@@ -267,13 +268,27 @@ class Mission
 		};
 		class Item13
 		{
+			position[]={4008,16,3980};
+			name="crashsites";
+			type="Empty";
+			a=4000;b=4000;
+		};
+		class Item14
+		{
+			position[]={4008,16,3980};
+			name="carepackages";
+			type="Empty";
+			a=4000;b=0;
+		};
+		class Item15
+		{
 			position[]={3568,27,6816};
 			name="HeroCamp";
 			text="FOB Haroo";
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={4753,64,831};
 			name="BanditCamp";

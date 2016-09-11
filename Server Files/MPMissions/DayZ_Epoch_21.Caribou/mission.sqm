@@ -184,12 +184,13 @@ class Mission
 	};
 	class Markers
 	{
-		items=22;
+		items=24;
 		class Item0
 		{
 			position[]={3785,66,4003};
 			name="center";
 			type="Empty";
+			a=3000;b=3000;
 		};
 		class Item1
 		{
@@ -229,13 +230,27 @@ class Mission
 		};
 		class Item7
 		{
+			position[]={3785,66,4003};
+			name="crashsites";
+			type="Empty";
+			a=3000;b=3000;
+		};
+		class Item8
+		{
+			position[]={3785,66,4003};
+			name="carepackages";
+			type="Empty";
+			a=3000;b=0;
+		};
+		class Item9
+		{
 			position[]={4799,13,7339};
 			name="boatTraderEast";
 			text="Wholesaler";
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item8
+		class Item10
 		{
 			position[]={2390,0,7534};
 			name="BoatDealerSouth";
@@ -243,7 +258,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item9
+		class Item11
 		{
 			position[]={1790,20,3658};
 			name="AirVehicles";
@@ -251,7 +266,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorGreen";
 		};
-		class Item10
+		class Item12
 		{
 			position[]={3563,9,6036};
 			name="BanditDen";
@@ -259,7 +274,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item11
+		class Item13
 		{
 			position[]={1399,91,6955};
 			name="NorthNeutralVendors";
@@ -267,7 +282,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBrown";
 		};
-		class Item12
+		class Item14
 		{
 			position[]={3935,1,873};
 			name="SouthNeutralVendors";
@@ -275,7 +290,7 @@ class Mission
 			type="mil_circle";
 			colorName="ColorBrown";
 		};
-		class Item13
+		class Item15
 		{
 			position[]={4801,91,3078};
 			name="HeroTrader";
@@ -283,7 +298,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
-		class Item14
+		class Item16
 		{
 			position[]={5346,64,2305};
 			name="BlackMarket";
@@ -291,7 +306,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item15
+		class Item17
 		{
 			position[]={1198,39,1898};
 			name="SouthWestWholesale";
@@ -299,37 +314,37 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlack";
 		};
-		class Item16
+		class Item18
 		{
 			position[]={6157,14,4954};
 			name="spawn5";
 			type="Empty";
 		};
-		class Item17
+		class Item19
 		{
 			position[]={1816,3,4507};
 			name="spawn6";
 			type="Empty";
 		};
-		class Item18
+		class Item20
 		{
 			position[]={4558,6,6546};
 			name="spawn7";
 			type="Empty";
 		};
-		class Item19
+		class Item21
 		{
 			position[]={5781,6,6704};
 			name="spawn8";
 			type="Empty";
 		};
-		class Item20
+		class Item22
 		{
 			position[]={5985,6,4278};
 			name="spawn9";
 			type="Empty";
 		};
-		class Item21
+		class Item23
 		{
 			position[]={4448,6,5874};
 			name="spawn10";
