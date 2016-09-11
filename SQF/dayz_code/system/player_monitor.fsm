@@ -244,7 +244,7 @@ link128[] = {108,109};
 link129[] = {109,110};
 link130[] = {110,64};
 globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-273.728088,309.860291,1963.873291,1148.161011,890,1244,1};
-window[] = {2,-1,-1,-1,-1,812,286,1306,286,3,908};
+window[] = {2,-1,-1,-1,-1,760,234,1254,234,3,908};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -708,7 +708,7 @@ class FSM
                          "	dayz_myBackpackWpns =	[];" \n
                          "};" \n
                          "PVCDZ_plr_Login2 = [];" \n
-                         "PVDZ_plr_Login2 = [_charID,player,_playerUID,_spawnSelection];" \n
+                         "PVDZ_plr_Login2 = [_charID,player,_playerUID,_spawnSelection,_inventory];" \n
                          "publicVariableServer ""PVDZ_plr_Login2"";" \n
                          "diag_log ['Sent to server: PVDZ_plr_Login2', PVDZ_plr_Login2]; " \n
                          "dayz_loadScreenMsg = localize 'str_player_requesting_character';" \n
@@ -1215,8 +1215,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"diag_log 'player_forceSave called from fsm';" \n
                          "//call player_forceSave;" \n
                          "" \n
-                         "publicVariableServer ""PVDZ_plr_LoginRecord"";" \n
-                         "call player_forceSave;"/*%FSM</STATEINIT""">*/;
+                         "publicVariableServer ""PVDZ_plr_LoginRecord"";"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
