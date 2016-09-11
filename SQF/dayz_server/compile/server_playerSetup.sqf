@@ -233,7 +233,9 @@ _clientID publicVariableClient "PVCDZ_plr_plantSpawner";
 _playerObj setVariable ["lastTime",time];
 
 //set server-side inventory variable to monitor player gear
-_playerObj setVariable["ServerMagArray",[_inventory select 1, _inventory select 2], false];
+if ((count _inventory) > 1) then {
+	_playerObj setVariable["ServerMagArray",[_inventory select 1, _inventory select 2], false];
+};
 
 
 //diag_log format["LOGIN PUBLISHING: UID#%1 CID#%2 %3 as %4 should spawn at %5",getPlayerUID _playerObj,_characterID,_playerObj call fa_plr2str,typeOf _playerObj,(_worldspace select 1) call fa_coor2str];
