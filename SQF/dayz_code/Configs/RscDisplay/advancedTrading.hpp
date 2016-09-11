@@ -11,7 +11,7 @@ class AdvancedTrading
 {
 	idd = 711197;
 	onLoad = "uiNamespace setVariable ['AdvancedTrading', _this select 0]";
-	onUnload = "player_forceSave; if (!isNull Z_vehicle) then {PVDZ_veh_Save = [Z_vehicle,'all']; publicVariable 'PVDZ_veh_Save';};";
+	onUnload = "call player_forceSave; if (!isNull Z_vehicle) then {PVDZ_veh_Save = [Z_vehicle,'all']; publicVariable 'PVDZ_veh_Save';};";
 	class Controls {
 		class RscText_ATBackground1: ZSC_RscText
 		{
