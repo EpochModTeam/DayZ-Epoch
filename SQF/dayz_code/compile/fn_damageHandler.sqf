@@ -45,14 +45,14 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 		if (_ammo == "") exitwith { _end = true; };
 		
 		//If _source contains no object exit. But lets not exit if the unit returns player. Maybe its his own fault.
-		if (isNull _source) then {
+		/*if (isNull _source) then { // in Epoch we can't use this block as is becasue too many servers use a variety of explosives
 			_end = true;
 			if !(_ammo in ["Dragged","RunOver"]) then {
 				// Explosion with no vehicle nearby. Possible cheat. Record to block any incoming fall damage.
 				dayz_lastDamageSourceNull = true;
 				diag_log "dayz_lastDamageSourceNull triggered";
 			};
-		};
+		};*/
 	} else {
 		if (dayz_lastDamageSourceNull) then { _end = true; }; // Block incoming fall damage. 
 	};
