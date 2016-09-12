@@ -7,8 +7,8 @@ Supermarket[] =
 	{Loot_WEAPON,		5,		ItemFlashlight},
 	{Loot_WEAPON,		2,		ItemKnife},
 	{Loot_WEAPON,		3,		Binocular},
-	{Loot_WEAPON,		2,		ItemDIY_wood},
-	{Loot_WEAPON,		1,		ItemDIY_Gate},
+//	{Loot_WEAPON,		2,		ItemDIY_wood},
+//	{Loot_WEAPON,		1,		ItemDIY_Gate},
 	
 	//Pistols
 	{Loot_GROUP,		10,		pistols},

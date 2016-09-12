@@ -90,4 +90,29 @@ class Category_541 {
 		buy[] = {1,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
+	class equip_string {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class equip_gauze {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class equip_gauzepackaged {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class equip_rag {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
+	class equip_herb_box {
+		type = "trade_items";
+		buy[] = {1,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};
 };

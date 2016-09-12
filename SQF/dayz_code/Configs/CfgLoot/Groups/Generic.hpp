@@ -23,7 +23,7 @@ Generic[] =
 	{Loot_MAGAZINE,		1,		equip_duct_tape},
 	{Loot_MAGAZINE,		1,		equip_rope},
 	{Loot_MAGAZINE,		1,		equip_herb_box},
-	{Loot_MAGAZINE,		1,		equip_pvc_box},
+//	{Loot_MAGAZINE,		1,		equip_pvc_box},
 	{Loot_MAGAZINE,		1,		equip_lever},
 	{Loot_MAGAZINE,		1,		equip_rag},
 	{Loot_MAGAZINE,		1,		equip_nails},

@@ -44,16 +44,21 @@ class Category_678 {
 		buy[] = {6,"ItemSilverBar"};
 		sell[] = {3,"ItemSilverBar"};
 	};
+	class equip_lever {
+		type = "trade_items";
+		buy[] = {6,"ItemSilverBar"};
+		sell[] = {3,"ItemSilverBar"};
+	};
 	class equip_nails {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
-	class equip_scrapelectronics {
+	/* class equip_scrapelectronics {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
-	};
+	}; */
 	class equip_metal_sheet {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar10oz"};
