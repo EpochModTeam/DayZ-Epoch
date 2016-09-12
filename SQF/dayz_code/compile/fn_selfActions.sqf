@@ -572,7 +572,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			s_player_repair_crtl = -1;
 		};
 	};
-	
+	/* //Vanilla base building currently not used in Epoch
 	// House locking and unlocking
 	_isHouse = (typeOf cursorTarget) in ["SurvivorWorkshopAStage5", "SurvivorWorkshopBStage5", "SurvivorWorkshopCStage5"];
 	_isGate = (typeOf cursorTarget) in ["WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4","MetalGate_1","MetalGate_2","MetalGate_3","MetalGate_4"];
@@ -662,8 +662,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	} else {
 		player removeAction s_player_breakinhouse;
 		s_player_breakinhouse = -1;
-	};
-	
+	};*/
 	if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {_canDo && speed player <= 1}) then {
 		if (DZE_permanentPlot) then {
 			if (s_player_plotManagement < 0) then {
@@ -1155,7 +1154,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//s_player_debugCheck = -1;
 	player removeAction s_player_upgradestorage;
 	s_player_upgradestorage = -1;
-	//Unlock,Lock
+	/* //Unlock,Lock // Vanilla base building currently not used in Epoch
 	player removeAction s_player_setCode;
 	s_player_setCode = -1;
 	player removeAction s_player_lockhouse;
@@ -1171,8 +1170,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	player removeAction s_player_BuildUnLock;
 	s_player_BuildUnLock = -1;
 	player removeAction s_player_BuildLock;
-	s_player_BuildLock = -1;
-	
+	s_player_BuildLock = -1;*/
 	{player removeAction _x} count s_player_combi;s_player_combi = [];	
 	s_player_lastTarget = [objNull,objNull,objNull,objNull,objNull];
 	{player removeAction _x} count s_player_parts;s_player_parts = [];
