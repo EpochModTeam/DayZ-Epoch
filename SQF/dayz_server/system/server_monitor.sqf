@@ -454,6 +454,7 @@ if (_hiveLoaded) then {
 		//  spawn_vehicles
 		// Get all buildings and roads only once. Very taxing, but only on first startup
 		_serverVehicleCounter = _this;
+		_vehiclesToUpdate = [];
 		_startTime = diag_tickTime;
 		_buildingList = [];
 		_cfgLootFile = missionConfigFile >> "CfgLoot" >> "Buildings";
@@ -483,6 +484,9 @@ if (_hiveLoaded) then {
 		for "_x" from 1 to MaxMineVeins do {call spawn_mineveins;};
 		
 		diag_log format["HIVE: BENCHMARK - Server finished spawning %1 DynamicVehicles, %2 Debris, %3 SupplyCrates and %4 MineVeins in %5 seconds",_vehLimit,MaxDynamicDebris,MaxAmmoBoxes,MaxMineVeins,diag_tickTime - _startTime];
+		
+		//Update gear last after all dynamic vehicles are created to save random loot to database (low priority)
+		{[_x,"gear"] call server_updateObject} count _vehiclesToUpdate;
 	};
 };
 

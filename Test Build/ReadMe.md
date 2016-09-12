@@ -3,11 +3,11 @@
 
 Install instructions:
 
-1. Download these two files: [[1.8.8 addons](http://se1.dayz.nu/latest/1.8.8/175/%40Client-1.8.8-d9b2d6a-FullDevelopment.rar)] [[Epoch addons](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/EpochTest-106-RC1.zip)]
+1. Download these two files: [[1.8.8 addons](http://se1.dayz.nu/latest/1.8.8/177/%40Client-1.8.8-a101734-FullDevelopment.rar)] [[Epoch addons](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/EpochTest-106-RC1.zip)]
 
 2. Make a copy of your @DayZ_Epoch1051 folder on both the client and server and rename it to @DayZ_Epoch106.
 
-3. Copy the `@Client-1.8.8-d9b2d6a-FullDevelopment\@Dayz\Addons\` folder into your `@DayZ_Epoch106\` folder and overwrite files when prompted. Make sure to do this on both the client and server.
+3. Copy the `@Client-1.8.8-x-FullDevelopment\@Dayz\Addons\` folder into your `@DayZ_Epoch106\` folder and overwrite files when prompted. Make sure to do this on both the client and server.
 
 4. Copy the `EpochTest-106-RC1\addons\` folder into your `@DayZ_Epoch106\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
 
@@ -23,9 +23,9 @@ Install instructions:
 
 10. Modify your server and client launch parameters to use 106; instead of 1051;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch106;`  in Settings > Additional Parameters.
 
-11. Make a new dayz_epoch database using Server Files\epoch.sql OR update a 1051 database using Server Files\1.0.6_Updates.sql. Be sure to backup your old database first.
+11. Make a new `dayz_epoch` database using Server Files\epoch.sql OR update a 1051 database using Server Files\1.0.6_Updates.sql. Be sure to backup your old database first.
 
-Note: Both server and client need to be updated to current A2OA stable 1.63.131129 or newer.
+Note: Both server and client should be updated to current A2OA stable 1.63.131129 or newer.
 
 Current Version: **EpochTest-106-RC1**
 
