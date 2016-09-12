@@ -24,12 +24,7 @@ _bos = 0;
 if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;
 } else {
-
-	if (_part_in isKindOf "Air") then {
-		_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_air];
-	} else {
-		_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_vehicle];
-	};
+	_obj = nearestObjects [(getPosATL player), [_part_in], Z_VehicleDistance];
 	_qty = count _obj;
 	_bos = 1;
 };
@@ -80,11 +75,7 @@ if (_qty >= _qty_in) then {
 		if(_buy_o_sell == "buy") then {
 			_qty = {_x == _part_in} count magazines player;
 		} else {
-			if (_part_in isKindOf "AIR") then {
-				_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_air];
-			} else {
-				_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_vehicle];
-			};
+			_obj = nearestObjects [(getPosATL player), [_part_in], Z_VehicleDistance];
 			_qty = count _obj;	
 		};
 

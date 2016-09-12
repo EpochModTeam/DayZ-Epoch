@@ -24,7 +24,7 @@ _bos = 0;
 if(_buy_o_sell == "buy") then {
 	_qty = {_x == _part_in} count magazines player;
 } else {
-	_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_boat];
+	_obj = nearestObjects [(getPosATL player), [_part_in], Z_VehicleDistance];
 	_qty = count _obj;
 	_bos = 1;
 };
@@ -76,7 +76,7 @@ if (_qty >= _qty_in) then {
 		if(_buy_o_sell == "buy") then {
 			_qty = {_x == _part_in} count magazines player;
 		} else {
-			_obj = nearestObjects [(getPosATL player), [_part_in], dayz_sellDistance_boat];
+			_obj = nearestObjects [(getPosATL player), [_part_in], Z_VehicleDistance];
 			_qty = count _obj;
 		};
 

@@ -45,9 +45,6 @@ DZE_groupManagement = false; //Enable or disable group management. Enabled by de
 DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
 
 // Trader Menu
-dayz_sellDistance_vehicle = 10; // Max distance players can sell land vehicles from at traders
-dayz_sellDistance_boat = 30; // Max distance players can sell boats from at traders
-dayz_sellDistance_air = 40; // Max distance players can sell air vehicles from at traders
 DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic. False enables database traders with legacy trader menu.
 DZE_serverLogTrades = true; // Log trades to server RPT (sent with publicVariableServer on every trade)
 DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; //array of gem prices, works only in advanced trading

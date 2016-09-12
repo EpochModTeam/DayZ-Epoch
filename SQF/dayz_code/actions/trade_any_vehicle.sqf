@@ -68,15 +68,7 @@ if (_finished) then {
 
 	_canAfford = false;
 	if(_bos == 1) then {
-
-		_distance = dayz_sellDistance_vehicle;
-		if (_part_in isKindOf "Air") then {
-			_distance = dayz_sellDistance_air;
-		};
-		if (_part_in isKindOf "Ship") then {
-			_distance = dayz_sellDistance_boat;
-		};
-		_count = {(typeOf _x) == _part_in} count (nearestObjects [(getPosATL player), [_part_in], _distance]);
+		_count = {(typeOf _x) == _part_in} count (nearestObjects [(getPosATL player), [_part_in], Z_VehicleDistance]);
 		if (_count >= _qty_in) then {
 			_canAfford = true;
 		};
@@ -149,17 +141,8 @@ if (_finished) then {
 				format[localize "str_epoch_player_183",_textPartOut] call dayz_rollingMessages;
 			};
 		} else {
-
 			//sell
-			_distance = dayz_sellDistance_vehicle;
-			if (_part_in isKindOf "Air") then {
-				_distance = dayz_sellDistance_air;
-			};
-			if (_part_in isKindOf "Ship") then {
-				_distance = dayz_sellDistance_boat;
-			};
-
-			_objects = nearestObjects [(getPosATL player), [_part_in], _distance];
+			_objects = nearestObjects [(getPosATL player), [_part_in], Z_VehicleDistance];
 
 			//diag_log format["DEBUG vehicle sell objects: %1", _objects];
 
