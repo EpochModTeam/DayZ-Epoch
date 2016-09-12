@@ -15063,6 +15063,9 @@
 		<Key ID="STR_EPOCH_TRADE_CHANGE_OVERFLOW">
 			<English>Some change is hidden in the overflow slots of your gear.</English>
 		</Key>
+		<Key ID="STR_EPOCH_APLOTFORLIFE_TAKE_PLOT_OWNERSHIP">
+			<English>Take plot items ownership</English>
+		</Key>
 		<Key ID="STR_EPOCH_APLOTFORLIFE_TAKE_OWNERSHIP">
 			<English>Take Ownership: %1 objects ownership changed.</English>
 		</Key>
@@ -15093,6 +15096,9 @@
 			<English>Only %1 friends are allowed.</English>
 			<Russian>Можно добавить друзей: %1</Russian>
 			<German>Nur %1 Freunde erlaubt</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY">
+			<English>Show plot boundary</English>
 		</Key>
 		
 		<Key ID="STR_EPOCH_TRADER">

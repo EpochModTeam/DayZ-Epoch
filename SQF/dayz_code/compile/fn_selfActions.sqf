@@ -679,24 +679,14 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\plotManagement\maintain_area.sqf", "preview", 5, false];
 			};
 		};
-		_PlotsmarkersNear = count (_cursorTarget nearEntities ["Land_coneLight", DZE_PlotPole select 0]);
-		if (s_player_plot_boundary_on < 0) then {
-			if (_PlotsmarkersNear == 0) then{
-				s_player_plot_boundary_on = player addAction ["Show plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_showPlotRadius.sqf", "", 1, false];
-			};
-		 };	
-		 if (s_player_plot_boundary_off < 0) then {
-			if (_PlotsmarkersNear > 0) then{
-				s_player_plot_boundary_off = player addAction ["Remove plot boundary", "\z\addons\dayz_code\actions\A_Plot_for_Life\object_removePlotRadius.sqf", "", 1, false];
-			};
+		if (s_player_plot_boundary < 0) then {
+			s_player_plot_boundary = player addAction [localize "STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY", "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf", "", 1, false];
 		};
-		if (DZE_permanentPlot) then {
+		if (DZE_permanentPlot && DZE_PlotOwnership) then {
 			if (s_player_plot_take_ownership < 0) then {
-				if (DZE_PlotOwnership) then {
-					_isOwner = [player, _cursorTarget] call FNC_check_access;
-					if (_isOwner select 0) then {
-						s_player_plot_take_ownership = player addAction ["Take plot items ownership", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
-					};
+				_isOwner = [player, _cursorTarget] call FNC_check_access;
+				if (_isOwner select 0) then {
+					s_player_plot_take_ownership = player addAction [localize "STR_EPOCH_APLOTFORLIFE_TAKE_PLOT_OWNERSHIP", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
 				};
 			};
 		};
@@ -709,10 +699,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_maintain_area_force = -1;
 		player removeAction s_player_maintain_area_preview;
 		s_player_maintain_area_preview = -1;
-		player removeAction s_player_plot_boundary_on;
-		s_player_plot_boundary_on = -1;
-		player removeAction s_player_plot_boundary_off;
-		s_player_plot_boundary_off = -1;
+		player removeAction s_player_plot_boundary;
+		s_player_plot_boundary = -1;
 		player removeAction s_player_plot_take_ownership;
 		s_player_plot_take_ownership = -1;
 	};
@@ -1109,10 +1097,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 } else {
 	//Engineering
-	player removeAction s_player_plot_boundary_on;
-	s_player_plot_boundary_on = -1;
-	player removeAction s_player_plot_boundary_off;
-	s_player_plot_boundary_off = -1;
+	player removeAction s_player_plot_boundary;
+	s_player_plot_boundary = -1;
 	player removeAction s_player_plot_take_ownership;
 	s_player_plot_take_ownership = -1;
 	player removeAction s_player_plotManagement;
