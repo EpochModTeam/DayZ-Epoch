@@ -12,7 +12,7 @@
 1 ^Trap Trap(_Cans|Tripwire(Flare|Grenade|Smoke)|BearTrap(Smoke|Flare))
 1=(SmallSecondary|HelicopterExplo(Small|Big)) // log explosions (optional)
 1=(PipeBomb|Grenade(_|HandTimed)(West|East)) // log grenades (optional)
-5 (_ied|_CRV7|_MEEWS|_SMAW|_GRAD|_SABOT|KORD|DSHKM|MK19|AGS|R_PG|R_OG|B_|_YakB|BBarracks|_LHD_|_acr|MASH_)
+5 (_ied|_CRV7|_MEEWS|B_|_YakB|_acr|MASH_)
 5 "Land_" !="Land_coneLight" !=Land_(HBarrier1|HBarrier3|HBarrier5|Fire)_DZ !=Land_(fortified_nest_small|HBarrier1|HBarrier3e|HBarrier5)Preview !=Land_DZE_(WoodDoor|LargeWoodDoor|GarageWoodDoor|WoodDoorLocked|LargeWoodDoorLocked|GarageWoodDoorLocked)
 5 "Nest_" !="M240Nest_DZ" !="SandNest_DZ" !="Land_fortified_nest_smallPreview" !="WarfareBMGNest_Preview"
 5 "Fort_" !="Fort_RazorWire" !="Fort_RazorWirePreview"
