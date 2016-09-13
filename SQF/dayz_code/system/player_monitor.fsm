@@ -1966,10 +1966,16 @@ class FSM
                          "Dayz_logonTown = ""Wilderness"";" \n
                          "if (count _nearestCity > 0) then {Dayz_logonTown = text (_nearestCity select 0)};" \n
                          "" \n
-                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
+                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn {" \n
+						 "	uiSleep 1;" \n
+						 "  if (dayz_isSwimming && !surfaceIsWater (getPosASL player)) then {player setPosATL [getPosATL player select 0,getPosATL player select 1,(getPosATL player select 2)+.1];}; //Fix swimming in ground glitch on some maps" \n
+						 "	uiSleep 4;" \n
+						 "	_this spawn BIS_fnc_infoText;" \n
+						 "};" \n
                          "" \n
                          "dayz_myPosition = getPosATL player;" \n
                          "Dayz_loginCompleted = true;" \n
+						 "if (primaryWeapon player == '' && dayz_myPosition select 2 < 50) then {player switchMove ''; player playActionNow 'stop';}; //Fix invisible primary stance glitch when player has pistol but no primary" \n
                          "" \n
                          "//Other Counters" \n
                          "	dayz_currentGlobalAnimals = count entities ""CAAnimalBase"";" \n

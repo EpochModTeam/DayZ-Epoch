@@ -8,7 +8,7 @@ _blood = _unit getVariable ["USEC_BloodQty", 0];
 _lowBlood = _unit getVariable ["USEC_lowBlood", false];
 _injured = _unit getVariable ["USEC_injured", false];
 _inPain = _unit getVariable ["USEC_inPain", false];
-_lastused = _unit getVariable ["LastTransfusion", 0];
+_lastused = _unit getVariable ["LastTransfusion",-(DZE_selfTransfuse_Values select 2)];
 if (time - _lastused <= DZE_selfTransfuse_Values select 2) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
 
 call gear_ui_init;
@@ -46,7 +46,7 @@ if (_haswholebag) then {
 	_badBag = true;
 };
 
-if (dayz_classicBloodBagSystem) then {_wholeBag = false; _badBag = false;};
+if (dayz_classicBloodBagSystem) then {_wholeBag = true; _badBag = false;};
 
 call fnc_usec_medic_removeActions;
 r_action = false;
