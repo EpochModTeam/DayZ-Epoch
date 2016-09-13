@@ -28,6 +28,7 @@
 	- HeliCrashArea --> (getMarkerSize "crashsites") select 1
 	- PVDZE_serverObjectMonitor --> dayz_serverObjectMonitor
 	- r_action_count --> dayz_actionInProgress (now true/false instead of 1/0)
+	- selfTransfusionTime --> player getVariable ["LastTransfusion",0]
 	
 - Duplicate public variables have been renamed:
 	- dayzPlayerLogin --> PVCDZ_plr_Login

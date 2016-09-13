@@ -1,5 +1,4 @@
-if (!DZE_SelfTransfuse) exitWith {};
-private ["_unit","_blood","_lowBlood","_injured","_inPain","_lastused","_animState","_started","_finished","_timer","_i","_isMedic","_isClose","_duration","_rhVal","_bloodBagArrayNeeded","_BBneeded","_bbselect","_bloodBagNeeded","_badBag","_wholeBag","_bagFound","_bagToRemove","_forceClose","_bloodType","_rh","_bloodBagArray","_bbarray_length","_bloodBagWholeNeeded","_haswholebag","_r"];
+private ["_unit","_blood","_lowBlood","_injured","_inPain","_lastused","_animState","_started","_finished","_timer","_i","_isMedic","_isClose","_duration","_rhVal","_bloodBagArrayNeeded","_BBneeded","_bbselect","_bloodBagNeeded","_badBag","_wholeBag","_bagFound","_bagToRemove","_forceClose","_bloodType","_rh","_bloodBagArray","_bbarray_length","_bloodBagWholeNeeded","_haswholebag","_r","_transfusionInfection"];
 
 // bleed.sqf
 _unit = _this select 0;
@@ -9,9 +8,8 @@ _blood = _unit getVariable ["USEC_BloodQty", 0];
 _lowBlood = _unit getVariable ["USEC_lowBlood", false];
 _injured = _unit getVariable ["USEC_injured", false];
 _inPain = _unit getVariable ["USEC_inPain", false];
-_lastused = _unit getVariable ["LastTransfusion", -(DZE_selfTransfuse_Values select 2)];
-
-if (round(time - _lastused) <= DZE_selfTransfuse_Values select 2) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
+_lastused = _unit getVariable ["LastTransfusion", 0];
+if (time - _lastused <= DZE_selfTransfuse_Values select 2) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
 
 call gear_ui_init;
 closeDialog 0;
@@ -24,7 +22,7 @@ _wholeBag = false;
 _bagFound = false;
 _BBneeded = false;
 _forceClose = false;
-_TransfusionInfection = false;
+_transfusionInfection = if (DZE_selfTransfuse_Values select 1 <= 0) then {false} else {((random 100) < (DZE_selfTransfuse_Values select 1))};
 
 
 if (_blood <= 4000) then {
@@ -48,7 +46,7 @@ if (_haswholebag) then {
 	_badBag = true;
 };
 
-if (dayz_classicBloodBagSystem && ("ItemBloodbag" in (magazines player))) then {_wholeBag = true; _badBag = false;};
+if (dayz_classicBloodBagSystem) then {_wholeBag = false; _badBag = false;};
 
 call fnc_usec_medic_removeActions;
 r_action = false;
@@ -85,7 +83,8 @@ while {r_doLoop and (_i < 12)} do {
 				};
 			};
 		} else {
-			if (_wholeBag) then { _bagToRemove = if (dayz_classicBloodBagSystem) then {"ItemBloodbag"} else {_bloodBagWholeNeeded}; };
+			if (_wholeBag) then {_bagToRemove = _bloodBagWholeNeeded; };
+			if (dayz_classicBloodBagSystem) then { _bagToRemove = _bagUsed; };
 			if (_bagToRemove in magazines player) then { _bagFound = true; };
 		};
 		if (!_bagFound) then {_forceClose = true;} else { player removeMagazine _bagToRemove;};
@@ -104,12 +103,7 @@ while {r_doLoop and (_i < 12)} do {
 						r_player_blood = r_player_blood + 100 + _randomamount;
 					} else {
 						_randomamount = round(random 200);
-						if (DZE_SelfTransfuse) then {
-							r_player_blood = (r_player_blood + (DZE_selfTransfuse_Values select 0)) min r_player_bloodTotal;
-							_TransfusionInfection = if ((DZE_selfTransfuse_Values select 1) < 0) then {false} else {((random 100) < (DZE_selfTransfuse_Values select 1))};
-						} else {
-							r_player_blood = r_player_blood + 800 + _randomamount;
-						};
+						r_player_blood = (r_player_blood + ((DZE_selfTransfuse_Values select 0)/4)) min r_player_bloodTotal;
 					};
 					
 					//PVDZ_send = [_unit,"Transfuse",[_unit,player,1000]];
@@ -131,8 +125,8 @@ while {r_doLoop and (_i < 12)} do {
 
 	if (((_blood >= r_player_bloodTotal) and !_badBag and _bagFound) or (_i == 12)) then {
 		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
-		_unit setVariable ["LastTransfusion",time];
-		if (_TransfusionInfection) then {r_player_infected = true; player setVariable["USEC_infected",true,true];};
+		_unit setVariable ["LastTransfusion",time,false];
+		if (_transfusionInfection) then {r_player_infected = true; player setVariable["USEC_infected",true,true];};
 		localize "str_actions_medical_transfusion_successful" call dayz_rollingMessages;
 		r_doLoop = false;
 	};
