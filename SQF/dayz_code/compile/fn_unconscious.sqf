@@ -8,7 +8,6 @@ r_player_unconsciousInputDisabled = true;
 disableUserInput true; //only works if disableUserInput command is issued twice for some reason...
 disableUserInput true;
 
-_inVeh = player != vehicle player;
 _start = diag_tickTime;
 _timeout = abs r_player_timeout;
 _short = _timeout < 4;
@@ -26,7 +25,7 @@ _sandLevel = ctrlPosition ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayC
 
 autoRunActive = false;
 
-if (!_inVeh) then {
+if (!(player != vehicle player)) then {
 	player playAction "CanNotMove";
 };
 "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
@@ -76,7 +75,7 @@ r_player_unconsciousInProgress = false;
 
 4 cutRsc ["default", "PLAIN",1];
 
-if (!_inVeh) then {
+if (!(player != vehicle player)) then {
 	[nil, player, rSWITCHMOVE, "AmovPpneMstpSnonWnonDnon_healed"] call RE;
 	player SWITCHMOVE "AmovPpneMstpSnonWnonDnon_healed";
 	PVDZ_plr_SwitchMove = [player,"AmovPpneMstpSnonWnonDnon_healed"];
