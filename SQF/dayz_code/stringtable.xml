@@ -16287,7 +16287,7 @@
 			<German>Das Objekt befindet sich zu weit entfernt vom Ort wo es begonnen wurde zu bauen (innerhalb %1 Meter).</German>	
 		</Key>
 
-						<!-- DOOR MANAGEMENT BELOW -->
+		<!-- DOOR MANAGEMENT BELOW -->
 
 		<Key ID="STR_EPOCH_ACTIONS_MANAGEDOOR">
 			<English>Manage Door</English>
@@ -16333,10 +16333,26 @@
 		<Key ID="STR_EPOCH_DOORS_OPEN">
 			<English>Open Door</English>
 			<German>Tür öffnen</German>
+			<French>Ouvrir portes</French>
+			<Spanish>Abrir puertas</Spanish>
+			<Italian>Apri le porte</Italian>
+			<Hungarian>Ajtó kinyitása</Hungarian>
+			<Polish>Otwórz drzwi</Polish>
+			<Russian>Открыть двери</Russian>
+			<Czech>Otevřít dveře</Czech>
+			<Japanese>ドアを開ける</Japanese>
 		</Key>
 		<Key ID="STR_EPOCH_DOORS_CLOSE">
 			<English>Close Door</English>
 			<German>Tür schließen</German>
+			<French>Fermer portes</French>
+			<Spanish>Cerrar puertas</Spanish>
+			<Italian>Chiudi le porte</Italian>
+			<Hungarian>Ajtó bezárása</Hungarian>
+			<Polish>Zamknij drzwi</Polish>
+			<Russian>Закрыть двери</Russian>
+			<Czech>Zavřít dveře</Czech>
+			<Japanese>ドアを閉める</Japanese>
 		</Key>
 		<Key ID="STR_EPOCH_DOORS_UNLOCK">
 			<English>Unlock Door</English>
