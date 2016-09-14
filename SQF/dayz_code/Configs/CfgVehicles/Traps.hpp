@@ -11,7 +11,8 @@ class BearTrap_DZ : TrapItems {
 	initState = 0; // initial armed state
 	singleUse = 0;
 	nounderground = 0;
-
+	requireplot = 0;
+	
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn beartrap;";
 	};
@@ -122,6 +123,7 @@ class TrapBearTrapFlare : TrapItems {
 	displayName = $STR_ITEM_NAME_BEAR_TRAP_FLARE;
 	vehicleClass = "Fortifications";
 	nounderground = 0;
+	requireplot = 0;
 
 	script = "beartrapflare"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -172,6 +174,7 @@ class TrapBearTrapSmoke : TrapItems {
 	displayName = $STR_ITEM_NAME_BEAR_TRAP_SMOKE;
 	vehicleClass = "Fortifications";
 	nounderground = 0;
+	requireplot = 0;
 
 	script = "beartrapsmoke"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -226,6 +229,7 @@ class Trap_Cans : TrapItems {
 	script = "tripcans"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
 	singleUse = 0;
+	requireplot = 0;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripcans;";
@@ -276,6 +280,7 @@ class TrapTripwireFlare : TrapItems {
 	script = "tripflare"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
 	singleUse = 0;
+	requireplot = 0;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripflare;";
@@ -326,6 +331,7 @@ class TrapTripwireGrenade : TrapItems {
 	script = "tripgrenade"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
 	singleUse = 0;
+	requireplot = 0;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripgrenade;";
@@ -376,6 +382,7 @@ class TrapTripwireSmoke : TrapItems {
 	script = "tripsmoke"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
 	singleUse = 0;
+	requireplot = 0;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripsmoke;";
