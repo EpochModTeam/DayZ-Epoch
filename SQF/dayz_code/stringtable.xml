@@ -13357,7 +13357,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN_FORCE">
 			<English>Force Maintain</English>
-			<English>Instandsetzen erzwingen</English>
+			<German>Instandsetzen erzwingen</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
 			<English>Stop Generator</English>
