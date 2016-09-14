@@ -529,7 +529,7 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, '"Winchester1866"', '"Winc
 -- UPDATE player_data t1, banking_data t2
 -- SET t1.`PlayerCoins` = t2.bankMoney,
 -- t1.`BankCoins` = t2.BankSaldo
--- WHERE t1.PlayerUID = t2.PlayerUID --
+-- WHERE t1.PlayerUID = t2.PlayerUID
 
 -- ----------------------------
 -- Run to replace legacy bloodbag with universal type if using dayz_classicBloodBagSystem = false;
@@ -562,8 +562,8 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, '"Winchester1866"', '"Winc
 --        SET ws = REPLACE(ws, CONCAT('"', pos, '"'), pos);
 --       
 --        RETURN ws;
---END;;
---DELIMITER ;
+-- END;;
+-- DELIMITER ;
 -- 
---UPDATE object_data SET Worldspace = RemoveQuotes(Worldspace);
---DROP FUNCTION `RemoveQuotes`;
+-- UPDATE object_data SET Worldspace = RemoveQuotes(Worldspace);
+-- DROP FUNCTION `RemoveQuotes`;
