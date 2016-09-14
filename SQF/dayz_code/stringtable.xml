@@ -12438,7 +12438,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_213">
 			<English>Craft Pole</English>
-			<German>Eisenstange herstellen</German>
+			<German>Metallstange herstellen</German>
 			<Russian>Создать: Столб</Russian>
 			<Dutch>Creëer paal</Dutch>
 			<Czech>Vytvořit tyč</Czech>
@@ -12515,14 +12515,14 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_224">
 			<English>Pack Tank Traps</English>
-			<German>Panzerfallen einpacken</German>
+			<German>Panzersperren einpacken</German>
 			<Russian>Запаковать: Противотанковый ёж</Russian>
 			<Dutch>Verpak tank traps</Dutch>
 			<Czech>Zabalit Tankové zátarasy</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_225">
 			<English>Pack Wire Kits</English>
-			<German>Stacheldraht-Rollen einpacken</German>
+			<German>Stacheldraht einpacken</German>
 			<Russian>Запаковать: Колючая проволока</Russian>
 			<Dutch>Verpak prikkeldraad rollen</Dutch>
 			<Czech>Zabalit Kotouče drátu</Czech>
@@ -13507,7 +13507,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_15">
 			<English>Another object is blocking the vehicle exit.</English>
-			<German>Ein anderes Objekt blockiert den Fahrzeug Spawn.</German>
+			<German>Ein anderes Objekt blockiert den Ausstieg.</German>
 			<Russian>Что-то блокирует выход из транспорта.</Russian>
 			<French>Un objet empêche de sortir du véhicule.</French>
 			<Czech>Jiný objekt překáží ve výstupu z vozidla.</Czech>
