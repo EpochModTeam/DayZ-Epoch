@@ -61,6 +61,7 @@ if (_inVehicle) then {
 				_turret = _assignedRole select 1;
 			};
 			_weapons = _vehicle weaponsTurret _turret;
+			_weapons = _weapons - ["CarHorn","MiniCarHorn","SportCarHorn","BikeHorn","TruckHorn","TruckHorn2"];
 			{
 				_weaponName = getText (configFile >> "cfgWeapons" >> _x >> "displayName");
 				_action = _vehicle addAction [format[localize "str_actions_addammo",_weaponName], "\z\addons\dayz_code\actions\ammo.sqf",[_vehicle,_x,_turret], 0, false, true];
