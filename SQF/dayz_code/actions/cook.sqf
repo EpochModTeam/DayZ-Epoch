@@ -26,7 +26,8 @@ a_player_cooking = true;
 		for "_x" from 1 to _qty do {
 			player removeMagazine _meat;
 			player addMagazine _meatcooked;
-			if !(_meat in magazines player) exitWith {format[localize "str_player_31",_text,localize "str_player_31_cook"] call dayz_rollingMessages;};
+			// "xMeat must be in your main inventory to cook it" - Doesn't make sense here since meat was already cooked successfully.
+			if !(_meat in magazines player) exitWith {};
 		};
 		format[localize "str_success_cooked",_qty,_text] call dayz_rollingMessages;
 	};

@@ -378,7 +378,6 @@ class CfgSurvival {
 		};
 		class Cock: Hen {};
 		class DZ_Fin: Default {
-			yield = 0;
 			rawfoodtype = "FoodDogRaw";
 		};
 		class DZ_Pastor: DZ_Fin {};
