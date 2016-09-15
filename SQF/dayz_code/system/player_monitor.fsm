@@ -1975,7 +1975,6 @@ class FSM
                          "" \n
                          "dayz_myPosition = getPosATL player;" \n
                          "Dayz_loginCompleted = true;" \n
-						 "if (primaryWeapon player == '' && dayz_myPosition select 2 < 50) then {player switchMove ''; player playActionNow 'stop';}; //Fix invisible primary stance glitch when player has pistol but no primary" \n
                          "" \n
                          "//Other Counters" \n
                          "	dayz_currentGlobalAnimals = count entities ""CAAnimalBase"";" \n
