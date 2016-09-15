@@ -25,7 +25,7 @@ _sandLevel = ctrlPosition ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayC
 
 autoRunActive = false;
 
-if (!(player != vehicle player)) then {
+if (player == vehicle player) then {
 	player playAction "CanNotMove";
 };
 "dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [2]; "dynamicBlur" ppEffectCommit 0;
@@ -75,7 +75,7 @@ r_player_unconsciousInProgress = false;
 
 4 cutRsc ["default", "PLAIN",1];
 
-if (!(player != vehicle player)) then {
+if (player == vehicle player) then {
 	[nil, player, rSWITCHMOVE, "AmovPpneMstpSnonWnonDnon_healed"] call RE;
 	player SWITCHMOVE "AmovPpneMstpSnonWnonDnon_healed";
 	PVDZ_plr_SwitchMove = [player,"AmovPpneMstpSnonWnonDnon_healed"];
