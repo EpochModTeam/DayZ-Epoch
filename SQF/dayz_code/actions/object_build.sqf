@@ -22,9 +22,9 @@ if (_build) then {
     _direction = getDir _ghost;
     _object = createVehicle [_classname, getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
 	
-   // if (_object isKindOf "DZ_buildables") then { _object allowDamage false; };
     _object setDir _direction;
-    if ((Dayz_constructionContext select 5) or _keepOnSlope) then {
+	
+    if ((Dayz_constructionContext select 5) or (_keepOnSlope)) then {
         _object setVectorUp surfaceNormal _location;
         _location set [2,0];
     } else {
