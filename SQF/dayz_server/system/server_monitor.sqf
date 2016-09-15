@@ -474,8 +474,14 @@ if (_hiveLoaded) then {
 			_vehLimit = 0;
 		};
 		
-		diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
-		for "_x" from 1 to MaxDynamicDebris do {call spawn_roadblocks;};
+		if (dayz_townGenerator) then {
+			// Vanilla town generator spawns debris locally on each client
+			MaxDynamicDebris = 0;
+		} else {
+			// Epoch global dynamic debris
+			diag_log ("HIVE: Spawning # of Debris: " + str(MaxDynamicDebris));
+			for "_x" from 1 to MaxDynamicDebris do {call spawn_roadblocks;};
+		};
 
 		diag_log ("HIVE: Spawning # of Ammo Boxes: " + str(MaxAmmoBoxes));
 		for "_x" from 1 to MaxAmmoBoxes do {call spawn_ammosupply;};
