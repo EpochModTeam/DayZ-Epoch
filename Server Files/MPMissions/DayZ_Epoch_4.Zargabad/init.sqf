@@ -73,7 +73,6 @@ EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","
 // EPOCH CONFIG VARIABLES END //
 
 
-// DO NOT EDIT BELOW HERE //
 diag_log 'dayz_preloadFinished reset';
 dayz_preloadFinished=nil;
 onPreloadStarted "diag_log [diag_tickTime,'onPreloadStarted']; dayz_preloadFinished = false;";
@@ -106,7 +105,7 @@ call compile preprocessFileLineNumbers "server_traders.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\zargabad.sqf"; //Add trader city objects locally on each machine early
 initialized = true;
 
-setTerrainGrid 25;
+setTerrainGrid 25; //grass height (50=very low, 25=normal, 12.5=very high)
 if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\REsec.sqf";};
 execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
 
