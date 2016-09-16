@@ -36,5 +36,5 @@ _fires = [
 	_object setPos (_x select 1);
 	_object allowDamage false;
 	if !(_type in _fires) then {_object enableSimulation false;};
-	_object setVariable ["", true]; // stops global setVariable by sched_townGenerator, checked in player_spawnCheck for loot spawn
+	_object setVariable ["",true,false]; // stops global setVariable by sched_townGenerator, checked in player_spawnCheck for loot spawn
 } count _this;
