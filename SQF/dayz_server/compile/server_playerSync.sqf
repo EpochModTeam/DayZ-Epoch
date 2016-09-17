@@ -148,8 +148,8 @@ if (_currentModel == _modelChk) then {
 	_currentModel = str _currentModel;
 	_character setVariable ["model_CHK",typeOf _character];
 };
-if (count _this > 3) then { //calling from player_onDisconnect
-	if (_this select 3 > 0) then { //combat logged
+if (count _this > 4) then { //calling from player_onDisconnect
+	if (_this select 4 > 0) then { //combat logged
 		_character setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
 		_character setVariable ["unconsciousTime",150,true]; // Set knock out timer to 2 minutes 30 seconds
 		//_character setVariable ["USEC_injured",true]; // Set status to bleeding

@@ -50,7 +50,7 @@ if (_characterID != "?") exitwith {
 	//if player object is alive lets sync the player and remove the body and if ghosting is active add the player id to the array
 	if (alive _playerObj) then {
 		// High priority. Sync must finish fast before player object isNull
-		[_playerObj,nil,true,_inCombat] call server_playerSync;
+		[_playerObj,nil,true,[],_inCombat] call server_playerSync;
 		
 		/*
 			Low priority code below this point where
