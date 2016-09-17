@@ -172,7 +172,7 @@ if (count _this > 4) then { //calling from player_onDisconnect
 				_newPos = [_charPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
 			};
 			_charPos = _newPos;
-			diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3m from logout position.",_name,_playerUID,_charPos distance _newPos];
+			diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos.",_name,_playerUID];
 		};
 	};
 };
