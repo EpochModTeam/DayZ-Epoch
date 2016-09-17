@@ -108,7 +108,12 @@ _switchUnit = {
 	_rndx = floor(random 100);
 	_rndy = floor(random 100);
 	_oldUnit setPosATL [(_createSafePos select 0) + _rndx, (_createSafePos select 1) + _rndy, 0];
-	_newUnit setPosATL _position;
+	if (surfaceIsWater _createSafePos) then {
+		//Prevent swimming in ground glitch if respawn is in water
+		_newUnit setPosATL [_position select 0,_position select 1,(_position select 2)+.1];
+	} else {
+		_newUnit setPosATL _position;
+	};
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} count magazines _oldUnit;
 	if !(isNull _oldUnit) then {deleteVehicle _oldUnit;};

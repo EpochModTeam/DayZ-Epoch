@@ -102,7 +102,6 @@ progressLoadingScreen 0.2;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\BIS_Effects\init.sqf";
 progressLoadingScreen 0.25;
 call compile preprocessFileLineNumbers "server_traders.sqf";
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\debug_floor.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\takistan.sqf"; //Add trader city objects locally on each machine early
 initialized = true;
 
