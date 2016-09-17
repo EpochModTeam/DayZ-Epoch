@@ -1,4 +1,9 @@
-private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_currentModel","_currentAnim","_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_group","_playerBackp","_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince","_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character","_magazines","_characterID","_force","_charPos","_isInVehicle","_name","_Achievements","_isNewMed","_isNewPos","_isNewGear","_debug","_distance"];
+private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_currentModel","_currentAnim",
+"_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_group","_playerBackp",
+"_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
+"_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
+"_magazines","_characterID","_force","_charPos","_isInVehicle","_name","_Achievements","_isNewMed",
+"_isNewPos","_isNewGear","_debug","_distance","_newPos","_count","_maxDist","_relocate"];
 //[player,array]
 
 _character = _this select 0;
