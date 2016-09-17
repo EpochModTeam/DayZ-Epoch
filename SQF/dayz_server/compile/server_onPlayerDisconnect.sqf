@@ -51,15 +51,7 @@ if (_characterID != "?") exitwith {
 	if (alive _playerObj) then {
 		// High priority. Sync must finish fast before player object isNull
 		[_playerObj,nil,true,true] call server_playerSync;
-		if (dayz_enableGhosting) then {
-			//diag_log format["GhostPlayers: %1, ActivePlayers: %2",dayz_ghostPlayers,dayz_activePlayers];
-			if (!(_playerUID in dayz_ghostPlayers)) then { 
-				dayz_ghostPlayers set [count dayz_ghostPlayers, _playerUID];
-				dayz_activePlayers set [count dayz_activePlayers, [_playerUID,diag_ticktime]];
-				
-				//diag_log format["playerID %1 added to ghost list",_playerUID];
-			};
-		};	
+		
 		//Punish combat log
 		if (_inCombat > 0) then {
 			_playerObj setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
@@ -70,6 +62,16 @@ if (_characterID != "?") exitwith {
 			// Low priority. Player object not needed
 			diag_log format["PLAYER COMBAT LOGGED: %1(%3) at location %2",_playerName,_playerPos,_playerUID];
 			[nil, nil, rTitleText, format["PLAYER COMBAT LOGGED: %1",_playerName], "PLAIN"] call RE; // Message whole server
+		};
+		// Low priority. Player object not needed
+		if (dayz_enableGhosting) then {
+			//diag_log format["GhostPlayers: %1, ActivePlayers: %2",dayz_ghostPlayers,dayz_activePlayers];
+			if (!(_playerUID in dayz_ghostPlayers)) then { 
+				dayz_ghostPlayers set [count dayz_ghostPlayers, _playerUID];
+				dayz_activePlayers set [count dayz_activePlayers, [_playerUID,diag_ticktime]];
+				
+				//diag_log format["playerID %1 added to ghost list",_playerUID];
+			};
 		};
 	};
 	

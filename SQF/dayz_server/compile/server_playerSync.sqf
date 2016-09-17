@@ -2,23 +2,20 @@ private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_curr
 "_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_group","_playerBackp",
 "_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
 "_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
-"_magazines","_characterID","_force","_charPos","_isInVehicle","_name","_Achievements","_isNewMed",
-"_isNewPos","_isNewGear","_debug","_distance","_newPos","_count","_maxDist","_relocate","_playerUID"];
+"_magazines","_characterID","_charPos","_isInVehicle","_name","_isNewMed",
+"_isNewPos","_distance","_newPos","_count","_maxDist","_relocate","_playerUID"];
 //[player,array]
 
 _character = _this select 0;
 _magazines = _this select 1;
 _characterID = _character getVariable ["characterID","0"];
 _playerUID = getPlayerUID _character;
-_force = true;
 _charPos = getPosATL _character;
 _isInVehicle = vehicle _character != _character;
 _timeSince = 0;
 _humanity = 0;
 _name = if (alive _character) then {name _character} else {"Dead Player"};
-_Achievements = [];
-_debug = getMarkerpos "respawn_west";
-_distance = (_debug distance _charPos) < 1500;
+_distance = (getMarkerpos "respawn_west" distance _charPos) < 1500;
 
 if (_character isKindOf "Animal") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + _name + " is an Animal class");
@@ -30,7 +27,7 @@ if (isNil "_characterID") exitWith {
 
 if (_characterID == "0" or _distance) exitWith {
 	if (_distance) then {
-		diag_log format["INFO: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3 (May be changing clothes)",_name,_characterID,_charPos];
+		diag_log format["INFO: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3 (May be logging in or changing clothes)",_name,_characterID,_charPos];
 	} else {
 		diag_log ("ERROR: Cannot Sync Character " + _name + " as no characterID");
 	};
@@ -39,7 +36,6 @@ if (_characterID == "0" or _distance) exitWith {
 //Check for server initiated updates
 _isNewMed = _character getVariable ["medForceUpdate",false]; //Med update is forced when a player receives some kind of med incident
 _isNewPos = _character getVariable ["posForceUpdate",false]; //Med update is forced when a player receives some kind of med incident
-_isNewGear = if (!isNil "_magazines") then { true } else { false };
 //diag_log ("Starting Save... MED: " + str(_isNewMed) + " / POS: " + str(_isNewPos)); sleep 0.05;
 
 //Check for player initiated updates
@@ -74,7 +70,7 @@ _humanity = 	["humanity",_character] call server_getDiff2;
 
 _charPosLen = count _charPos;
 
-if (_isNewGear) then {
+if (!isNil "_magazines") then {
 	if (typeName _magazines == "ARRAY") then {
 		_playerGear = [weapons _character,_magazines select 0,_magazines select 1];
 		_character setVariable["ServerMagArray",_magazines, false];
@@ -107,36 +103,30 @@ if (_isNewGear) then {
 };
 
 //Check if update is requested
-if (_isNewPos or _force) then {
-	//diag_log ("position..." + str(_isNewPos) + " / " + str(_force)); sleep 0.05;
-	if (((_charPos select 0) == 0) && ((_charPos select 1) == 0)) then {
-		//Zero Position
-	} else {
-		//diag_log ("getting position..."); sleep 0.05;
-		_playerPos = [round (direction _character),_charPos];
-		if (count _lastPos > 2 && {_charPosLen > 2}) then {
-			if (!_isInVehicle) then {_distanceFoot = round (_charPos distance _lastPos);};
-			_character setVariable["lastPos",_charPos];
-		};
-		if (_charPosLen < 3) then {_playerPos = [];};
-		//diag_log ("position = " + str(_playerPos)); sleep 0.05;
+if !((_charPos select 0 == 0) && (_charPos select 1 == 0)) then {
+	//Position is not zero
+	//diag_log ("getting position..."); sleep 0.05;
+	_playerPos = [round (direction _character),_charPos];
+	if (count _lastPos > 2 && {_charPosLen > 2}) then {
+		if (!_isInVehicle) then {_distanceFoot = round (_charPos distance _lastPos);};
+		_character setVariable["lastPos",_charPos];
 	};
-	_character setVariable ["posForceUpdate",false,true];
+	if (_charPosLen < 3) then {_playerPos = [];};
+	//diag_log ("position = " + str(_playerPos)); sleep 0.05;
 };
+_character setVariable ["posForceUpdate",false,true];
 
 //Check player backpack each time sync runs
 _backpack = unitBackpack _character;
 _playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack];
 
-if (_isNewMed or _force) then {
-	//diag_log ("medical..."); sleep 0.05;
-	if (!_usec_Dead) then {
-		//diag_log ("medical check..."); sleep 0.05;
-		_medical = _character call player_sumMedical;
-		//diag_log ("medical result..." + str(_medical)); sleep 0.05;
-	};
-	_character setVariable ["medForceUpdate",false,true];
+//diag_log ("medical..."); sleep 0.05;
+if (!_usec_Dead) then {
+	//diag_log ("medical check..."); sleep 0.05;
+	_medical = _character call player_sumMedical;
+	//diag_log ("medical result..." + str(_medical)); sleep 0.05;
 };
+_character setVariable ["medForceUpdate",false,true];
 
 _character addScore _kills;		
 _timeGross = 	(diag_ticktime - _lastTime);
@@ -197,7 +187,7 @@ if (_isInVehicle) then {
 		_currentWpn = "";
 	};
 };
-_currentState = [[_currentWpn,_currentAnim,_temp],_Achievements];
+_currentState = [[_currentWpn,_currentAnim,_temp],[]];
 
 /*
 	Everything is ready, now publish to HIVE
@@ -211,10 +201,10 @@ if (count _playerPos > 0) then {
 };
 
 //Wait for HIVE to be free and send request
-if (Z_SingleCurrency) then {
-	_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins];
+_key = if (Z_SingleCurrency) then {
+	format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins]
 } else {
-	_key = format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity];
+	format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity]
 };
 //diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
 //diag_log format["HIVE: SYNC: [%1,%2,%3,%4]",_characterID,_playerPos,_playerGear,_playerBackp];
