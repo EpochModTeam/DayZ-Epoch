@@ -3,12 +3,13 @@ private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_curr
 "_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
 "_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
 "_magazines","_characterID","_force","_charPos","_isInVehicle","_name","_Achievements","_isNewMed",
-"_isNewPos","_isNewGear","_debug","_distance","_newPos","_count","_maxDist","_relocate"];
+"_isNewPos","_isNewGear","_debug","_distance","_newPos","_count","_maxDist","_relocate","_playerUID"];
 //[player,array]
 
 _character = _this select 0;
 _magazines = _this select 1;
 _characterID = _character getVariable ["characterID","0"];
+_playerUID = getPlayerUID _character;
 _force = true;
 _charPos = getPosATL _character;
 _isInVehicle = vehicle _character != _character;
@@ -159,8 +160,8 @@ if (_currentModel == _modelChk) then {
 };
 if ((count _this) > 3 && {_isInVehicle}) then { //calling from player_onDisconnect
 	//if the player object is inside a vehicle lets eject the player
-	_relocate = if (vehicle _playerObj isKindOf "Air") then {true} else {false};
-	_playerObj action ["eject", vehicle _playerObj];
+	_relocate = if (vehicle _character isKindOf "Air") then {true} else {false};
+	_character action ["eject", vehicle _character];
 	
 	// Prevent relog in parachute, heli or plane above base exploit to get inside
 	if (_relocate) then {
@@ -171,9 +172,10 @@ if ((count _this) > 3 && {_isInVehicle}) then { //calling from player_onDisconne
 		while {_newPos distance _charPos == 0} do {
 			_count = _count + 1;
 			if (_count > 4) exitWith {_newPos = _charPos;}; // Max 4km away fail safe (needs to finish fast so server_playerSync runs below)
-			_charPos = [_charPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
-		};			
-		diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3m from logout position.",(name _character),(getPlayerUID _character),_charPos distance _newPos];
+			_newPos = [_charPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
+		};
+		_charPos = _newPos;
+		diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3m from logout position.",_name,_playerUID,_charPos distance _newPos];
 	};
 };
 if (_onLadder or _isInVehicle or _isTerminal) then {
@@ -219,12 +221,12 @@ if (Z_SingleCurrency) then {
 _key call server_hiveWrite;
 
 if (Z_SingleCurrency) then { //update global coins
-	_key = format["CHILD:205:%1:%2:%3:%4:",(getPlayerUID _character),dayZ_instance,_globalCoins,_bankCoins];
+	_key = format["CHILD:205:%1:%2:%3:%4:",_playerUID,dayZ_instance,_globalCoins,_bankCoins];
 	_key call server_hiveWrite;
 };
 
 if (DZE_groupManagement) then { //update player group
-	_key = format["CHILD:204:%1:%2:%3:",(getPlayerUID _character),dayZ_instance, _group];
+	_key = format["CHILD:204:%1:%2:%3:",_playerUID,dayZ_instance, _group];
 	_key call server_hiveWrite;
 };
 
