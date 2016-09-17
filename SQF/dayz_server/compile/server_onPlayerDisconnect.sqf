@@ -50,20 +50,21 @@ if (_characterID != "?") exitwith {
 	//if player object is alive lets sync the player and remove the body and if ghosting is active add the player id to the array
 	if (alive _playerObj) then {
 		// High priority. Sync must finish fast before player object isNull
-		[_playerObj,nil,true,true] call server_playerSync;
+		[_playerObj,nil,true,_inCombat] call server_playerSync;
+		
+		/*
+			Low priority code below this point where
+			_playerObj is no longer needed and may be Null.
+		*/
 		
 		//Punish combat log
 		if (_inCombat > 0) then {
-			_playerObj setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
-			_playerObj setVariable ["unconsciousTime",150,true]; // Set knock out timer to 2 minutes 30 seconds
-			//_playerObj setVariable ["USEC_injured",true]; // Set status to bleeding
-			//_playerObj setVariable ["USEC_BloodQty",3000]; // Set blood to 3000
-			
-			// Low priority. Player object not needed
+			// Moved setVariables to server_playerSync since they are high priority			
+			// Messages are low priority. Player object not needed
 			diag_log format["PLAYER COMBAT LOGGED: %1(%3) at location %2",_playerName,_playerPos,_playerUID];
 			[nil, nil, rTitleText, format["PLAYER COMBAT LOGGED: %1",_playerName], "PLAIN"] call RE; // Message whole server
 		};
-		// Low priority. Player object not needed
+		
 		if (dayz_enableGhosting) then {
 			//diag_log format["GhostPlayers: %1, ActivePlayers: %2",dayz_ghostPlayers,dayz_activePlayers];
 			if (!(_playerUID in dayz_ghostPlayers)) then { 
@@ -75,14 +76,7 @@ if (_characterID != "?") exitwith {
 		};
 	};
 	
-	/*
-		Low priority code below this point where
-		_playerObj is no longer needed and may be Null.
-	*/
 	[_playerUID,_characterID,2,_playerName] call dayz_recordLogin;
-	
-	//Lets scan the area near the player logout position and save all objects.
-	{ [_x,"gear"] call server_updateObject } foreach (nearestObjects [_playerPos, DayZ_GearedObjects, 10]);
 };
 
 if (isNull _playerObj) then { diag_log("Player Object does not esist"); };

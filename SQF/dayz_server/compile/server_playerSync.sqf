@@ -148,24 +148,32 @@ if (_currentModel == _modelChk) then {
 	_currentModel = str _currentModel;
 	_character setVariable ["model_CHK",typeOf _character];
 };
-if ((count _this) > 3 && {_isInVehicle}) then { //calling from player_onDisconnect
-	//if the player object is inside a vehicle lets eject the player
-	_relocate = if (vehicle _character isKindOf "Air") then {true} else {false};
-	_character action ["eject", vehicle _character];
-	
-	// Prevent relog in parachute, heli or plane above base exploit to get inside
-	if (_relocate) then {
-		_count = 0;
-		_maxDist = 800;
-		_newPos = [_charPos, 80, _maxDist, 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
+if (count _this > 3) then { //calling from player_onDisconnect
+	if (_this select 3 > 0) then { //combat logged
+		_character setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious
+		_character setVariable ["unconsciousTime",150,true]; // Set knock out timer to 2 minutes 30 seconds
+		//_character setVariable ["USEC_injured",true]; // Set status to bleeding
+		//_character setVariable ["USEC_BloodQty",3000]; // Set blood to 3000
+	};	
+	if (_isInVehicle) then {
+		//if the player object is inside a vehicle lets eject the player
+		_relocate = if (vehicle _character isKindOf "Air") then {true} else {false};
+		_character action ["eject", vehicle _character];
 		
-		while {_newPos distance _charPos == 0} do {
-			_count = _count + 1;
-			if (_count > 4) exitWith {_newPos = _charPos;}; // Max 4km away fail safe (needs to finish fast so server_playerSync runs below)
-			_newPos = [_charPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
+		// Prevent relog in parachute, heli or plane above base exploit to get inside
+		if (_relocate) then {
+			_count = 0;
+			_maxDist = 800;
+			_newPos = [_charPos, 80, _maxDist, 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
+			
+			while {_newPos distance _charPos == 0} do {
+				_count = _count + 1;
+				if (_count > 4) exitWith {_newPos = _charPos;}; // Max 4km away fail safe (needs to finish fast so server_playerSync runs below)
+				_newPos = [_charPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
+			};
+			_charPos = _newPos;
+			diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3m from logout position.",_name,_playerUID,_charPos distance _newPos];
 		};
-		_charPos = _newPos;
-		diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3m from logout position.",_name,_playerUID,_charPos distance _newPos];
 	};
 };
 if (_onLadder or _isInVehicle or _isTerminal) then {
@@ -189,8 +197,19 @@ if (_isInVehicle) then {
 };
 _currentState = [[_currentWpn,_currentAnim,_temp],[]];
 
+// If player is in a vehicle, keep its position updated
+if (vehicle _character != _character) then {
+	[vehicle _character, "position"] call server_updateObject;
+};
+
+//Reset timer
+if (_timeSince > 0) then {
+	_character setVariable ["lastTime",(diag_ticktime - _timeLeft)];
+};
+
 /*
 	Everything is ready, now publish to HIVE
+	Low priority code below this point where _character object is no longer needed and may be Null.
 */
 if (count _playerPos > 0) then {
 	_array = [];
@@ -220,15 +239,5 @@ if (DZE_groupManagement) then { //update player group
 	_key call server_hiveWrite;
 };
 
-// If player is in a vehicle, keep its position updated
-if (vehicle _character != _character) then {
-	[vehicle _character, "position"] call server_updateObject;
-};
-
 // Force gear updates for nearby vehicles/tents
-{[_x,"gear"] call server_updateObject;} count nearestObjects [_character,DayZ_GearedObjects,10];
-
-//Reset timer
-if (_timeSince > 0) then {
-	_character setVariable ["lastTime",(diag_ticktime - _timeLeft)];
-};
+{[_x,"gear"] call server_updateObject;} count nearestObjects [_charPos,DayZ_GearedObjects,10];
