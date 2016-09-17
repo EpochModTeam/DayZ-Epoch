@@ -82,6 +82,9 @@ if (count AllowedVehiclesList == 0) then {
 		};
 
 		[_veh,[_dir,_objPosition],_vehicle,true,"0"] call server_publishVeh;
-		_vehiclesToUpdate set [count _vehiclesToUpdate,_veh];
+		
+		if (_num > 0) then {
+			_vehiclesToUpdate set [count _vehiclesToUpdate,_veh];
+		};
 	};
 };
