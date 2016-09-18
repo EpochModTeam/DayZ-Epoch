@@ -8,6 +8,7 @@
 [NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. See configVariables.sqf for details @icomrade
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 [NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
+[NEW] Optional dark UI by @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/ code fixes by @SplenectomY @icomrade #1622
 [NEW] If using the vanilla UI you may enable or disable the combat icon with DZE_VanillaUICombatIcon = true/false; @icomrade
 [NEW] Anzio 20mm sniper and RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
@@ -18,32 +19,31 @@
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
 [NEW] Many new configuration options are available for admins. See dayz_code\configVariables.sqf and mission\init.sqf for descriptions. @ebaydayz
 [NEW] Blood types system is disabled by default. Set dayz_classicBloodBagSystem = false; in init.sqf to enable
-[NEW] Dayz_townGenerator = true; in init.sqf can enable vanilla map junk in addition to Epoch DynamicDebris. Currently only compatible with Chernarus. @ebaydayz
+[NEW] Dayz_townGenerator = true; in init.sqf enables vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. @ebaydayz
 [NEW] DB Backup script. @RimBlock
-[NEW] UI Update - Graphical and code changes, enable using DZE_UI = "dark"; in init.sqf. @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
-[NEW] Added waves effect during stormy weather #974 @FramedYannick @ebaydayz
+[NEW] Added increased waves during stormy weather #974 @FramedYannick @ebaydayz
 [NEW] Optional variable to prevent stealing from backpacks by non-friendlies at traders. Set DZE_BackpackAntiTheft = true; in init.sqf @ebaydayz
-[NEW] Zupa's Advanced Trading v2.1+ is now included as part of the Epoch Code, enabled with DZE_advancedTrading = true; NOT COMPATIBLE WITH DATABASE TRADERS @icomrade @Windmolders 
+[NEW] A much improved version of Zupa's Advanced Trading 2.1+ is now the default config trader menu, NOT COMPATIBLE WITH DATABASE TRADERS @icomrade @Windmolders 
 [NEW] With config based traders categories can be reused by setting the duplicate=#; value. # is the category number to copy. @ebaydayz
 [NEW] With config based traders upgraded vehicles can now be sold for the same price as their original. #1745 @oiad
 [NEW] Gems are now treated as variable value currency (Advanced Trading only). Configure gem values using DZE_GemWorthArray =[]; see configVariables.sqf for more info @icomrade
 [NEW] Gem rarity is now configurable for mining using DZE_GemOccurance =[]; See configVariables.sqf for more info @icomrade
-[NEW] A Plot For Life v2.5 by RimBlock is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @RimBlock @icomrade
-[NEW] Build Vectors v4 by Striker is now included, only enabled with Snap building. Note there is no option to turn off Vector Building with Snap Building enabled @strikerforce @icomrade
-[NEW] Door Management v3.0 by Zupa is now included and enabled by default with variable DZE_doorManagement, see configVariables.sqf @DevZupa @Bruce-LXXVI @ebaydayz 
-[NEW] Plot Management v2.1 by Zupa is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @DevZupa @Bruce-LXXVI @icomrade
-[NEW] Precise Base Building v1.0.5 by Mikeeeyy is now included. @Mikeeeyy @icomrade @ebaydayz
+[NEW] A Plot For Life v2.5+ by RimBlock is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @RimBlock @icomrade
+[NEW] Build Vectors v4+ by Striker is now included, only enabled with Snap building. Note there is no option to turn off Vector Building with Snap Building enabled @strikerforce @icomrade
+[NEW] Door Management v3.0+ by Zupa is now included and enabled by default with variable DZE_doorManagement, see configVariables.sqf @DevZupa @Bruce-LXXVI @ebaydayz 
+[NEW] Plot Management v2.1+ by Zupa is now included and enabled by default with variable DZE_permanentPlot, see configVariables.sqf @DevZupa @Bruce-LXXVI @icomrade
+[NEW] Precise Base Building v1.0.5+ by Mikeeeyy is now included. @Mikeeeyy @icomrade @ebaydayz
 [NEW] You may toggle vehicle destruction effects to prevent damage from vehicle explosions (useful to prevent griefing from ramming) use DZE_NoVehicleExplosions = true; to enable #1198 @icomrade
 [NEW] Temperature factors are now configurable with DZE_TempVars see configVariables.sqf for more info @icomrade 
 [NEW] Weather effects are now configurable with DZE_WeatherVariables See DynamicWeatherEffects.sqf for info on these values @icomrade
 [NEW] Full height cinderblock wall kits are now in game, classname "full_cinder_wall_kit" #1172 @icomrade
 [NEW] You can exclude built items from the god mode base function using DZE_GodModeBaseExclude = []; which is an array of item classnames
 [NEW] Fuel stations now have limited amount of fuel each restart. Configurable with dayz_randomMaxFuelAmount in init.sqf
-[NEW] More possible causes of death added to study body: fell, ran over, shot, melee hit, zombie hit @ebaydayz
+[NEW] More possible causes of death added to study body: fell, ran over, shot, melee, zombie @ebaydayz
 [NEW] Player-list no longer shows who's in lobby or ingame.
 [NEW] 35 new male clothing classes added. #1732 #1734 @AirWavesMan
-[NEW] Added new BRDM2, AN2, HMMWV, Mi17 and Cessna _DZ classes with radar disabled. #1746 @AirWavesMan
+[NEW] Added new _DZ variants of BRDM2, AN2, HMMWV, Mi17 and Cessna classes with radar disabled. #1746 @AirWavesMan
 [NEW] Added SCAR Mk16 and Mk17 variants, L86 and AA12 to loot tables and traders. #1743 @AirWavesMan
 [NEW] Players can now manually push stuck planes backwards to free them. @ebaydayz
 [NEW] You may set the buying or selling price of any item to -1 to disallow the respective trading action, only with config traders and advanced trading @icomrade
@@ -67,7 +67,7 @@
 [CHANGED] Player_onPause is now customizable by admins along with the new unscheduled fn_pauseMenuChecks. #1340 @Rimblock @ebaydayz
 
 [FIXED] Zombies now target and attack players correctly with 1.8.8 code
-[FIXED] Server position sync bug after falling unconscious #1522 @ebaydayz
+[FIXED] Server position sync bug after falling unconscious. Fixes AI on server not seeing the player after knock out and position revert after relog. #1522 @ebaydayz
 [FIXED] Character sometimes failing to sync after changing clothes #1545
 [FIXED] Backpack wipes when changing clothes. #1361 @icomrade
 [FIXED] CH53 gear when locked #1364 @icomrade
@@ -75,8 +75,7 @@
 [FIXED] Only first kill showing on death boards #1362 #1124 @vbawol @icomrade
 [FIXED] Crossbow quivers not working #1355 @icomrade
 [FIXED] Crash_spawner & Supply_drop modules spawning inaccessible loot piles #1408 #1390 @Uro1
-[FIXED] Fire cleanup diag_log error in server_functions.sqf #1421 @ebaydayz
-[FIXED] NearestObjects position error in server_playerSync.sqf #1425 @ebaydayz
+[FIXED] Several script errors in dayz_server #1421 #1425 @ebaydayz
 [FIXED] Corrected ClassName type for CH53_DZE and BAF_Merlin_DZE. @Cinjun
 [FIXED] Dynamic_vehicle spawning non-upgradable classes of hilux1 & datsun1.  @Uro1
 [FIXED] Eating while inside a vehicle did not drop empty can  @deadeye2
@@ -85,7 +84,6 @@
 [FIXED] Loading screen issue where you can walk around and see a black screen #1610 @deanreid
 [FIXED] Crafting a sledgehammer with one already in your toolbelt no longer eats your parts. #1567 #1667 @Namindu
 [FIXED] Copy key failing when player doesn't have a backpack @ebaydayz
-[FIXED] DarkUI hunger and thirst inconsistency with vanilla UI and health system @SplenectomY @icomrade #1622
 [FIXED] Fire barrels not being detected over water @pj999 @icomrade #1559 #1564
 [FIXED] Opening supply crates over water no longer drops the items on the sea floor @pj999 @icomrade #1558
 [FIXED] Plot pole required message not updating to reflect DZE_PlotPole radius @mathewjknott @icomrade #1274
@@ -104,16 +102,16 @@
 [FIXED] Player no longer hears radiation sound when changing clothes. @ebaydayz
 [FIXED] Ponds and lakes are now detected correctly in player_goFishing. #1678 @ebaydayz
 [FIXED] Players are now ejected and killed when their vehicle is destroyed (Fix applies to all types of vehicles). @icomrade
-[NOTE]	Servers that use trader safezones must configure the variable DZE_SafeZonePosArray with their safezone posisitons and radii, otherwise passangers of vehicles in safezones will be killed upon destruction of their vehicle
+[NOTE]	Servers that use trader safezones must configure the variable DZE_SafeZonePosArray with their safezone positions and radii, otherwise passengers of vehicles in safezones will be killed upon destruction of their vehicle
 [FIXED] Players are no longer able to brute force doors or safes by the method described in #1187 @icomrade
 [FIXED] Fix some items not displaying removal option #1135 @icomrade
 [FIXED] Study body message saying his/he on female players. @ebaydayz
-[FIXED] Destroyed objects (i.e. ore veins, ammo crates and wrecked buildables) are now deleted globally after being removed. #1730 @icomrade
-[FIXED] UH1Y and AH6X unkown animation source RPT errors, and added back observer seats to AH6X and UH1Y without thermal imaging. @icomrade
+[FIXED] Destroyed ore veins and ammo crates are now deleted globally after being removed. #1730 @icomrade
+[FIXED] UH1Y and AH6X unknown animation source RPT errors, and added back observer seats to AH6X and UH1Y without thermal imaging. @icomrade
 [FIXED] Players can no longer relog over bases in a helicopter, parachute or plane to get inside. @ebaydayz
 [FIXED] Mozzie helicopter noises, and crashed mozzies bouncing into orbit. @icomrade
 [FIXED] Firing from vehicles puts you in combat now. @icomrade
-[FIXED] Players will no longer spawn swimming in the ground on some maps. @ebaydayz
+[FIXED] Players will no longer end up swimming in the ground after spawn, relog or clothes change on maps with respawn_west in the water. @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_code\Configs\CfgLoot\CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
@@ -124,8 +122,8 @@
 [INFO] Many weapon and item classnames changed. Admins must update their traders. See SQL\1.0.6_Updates and dayz_code\Configs\CfgServerTrader
 [INFO] Many duplicate functions and variables were renamed. See Documents\1.0.6 Variable Name Changes.txt
 [INFO] New loot table format is incompatible with old loot tables. Admins see CfgLoot\README.txt
-[INFO] If you use any community mods included in this release (Advanced Trading, Build Vectors, Door or Plot Management, Snap Build Pro, A Plot For Life) you MUST uninstall them from your mission. The mods have been improved and many bugs have been fixed, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
-[INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
+[INFO] If you use any community mods included in this release (Advanced Trading, Build Vectors, Door or Plot Management, Snap Build Pro, A Plot For Life, Precise Base Building) you MUST uninstall them from your mission. The mods have been improved and many bugs have been fixed, get up-to-date copies from https://github.com/EpochModTeam/DayZ-Epoch
+[INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) are confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
 [INFO] Server owners and players should use the stable branch of ArmA 2 OA
 [INFO] Models/textures by Paul Tomany. @Sequisha.
