@@ -63,10 +63,10 @@ class M249_Holo_DZ : M249_CCO_DZ
 
 class M249_EP1;
 class M249_EP1_DZ:M249_EP1 { //Iron sight with shorter stock (slightly different look from M249_DZ) can also fire MG36 mags
-	type = "1";
+	type = WeaponSlotPrimary;
 };
 
 class M249_m145_EP1;
 class M249_m145_EP1_DZE:M249_m145_EP1 {
-	type = "1";
+	type = WeaponSlotPrimary;
 };

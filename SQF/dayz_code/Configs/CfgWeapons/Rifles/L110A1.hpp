@@ -62,5 +62,5 @@ class L110A1_DZ : L110A1_CCO_DZ
 };
 
 class BAF_L110A1_Aim_DZE:BAF_L110A1_Aim { //Slightly different scope from L110A1_CCO_DZ, otherwise identical
-	type = "1";
+	type = WeaponSlotPrimary;
 };

@@ -1,7 +1,7 @@
 class m107: Rifle
 {
 	scope = public;
-	type = 1;
+	type = WeaponSlotPrimary;
 	canlock = 0;
 	picture = "\CA\weapons\data\Equip\W_m107_CA.paa";
 	UiPicture = "\CA\weapons\data\Ico\i_sniper_CA.paa";

@@ -20,5 +20,5 @@ class PKM_DZ : PK //Iron sight PKM
 };
 
 class Pecheneg_DZ: Pecheneg { //PKP with long range scope
-	type = "1";
+	type = WeaponSlotPrimary;
 };
