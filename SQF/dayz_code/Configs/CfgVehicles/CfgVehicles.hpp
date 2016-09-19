@@ -612,7 +612,7 @@ class CfgVehicles {
 		supplyRadius = 1;
 	};
 	#include "gathered_plants.hpp"
-	class Generator_Base: BuiltItems //Vanilla generator uses SkodaBase but is currently not functional
+	class Generator_Base: Land_A_tent //Vanilla generator uses SkodaBase but is currently not functional
 	{
 		model = "\dayz_equip\models\generator_gear.p3d";
 		picture = "\dayz_equip\textures\equip_generator_ca.paa";
