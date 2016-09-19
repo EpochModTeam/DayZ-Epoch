@@ -17,7 +17,6 @@ _serverVehicleCounter = [];
 _tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
 _respawnPos = getMarkerpos "respawn_west";
 diag_log "HIVE: Starting";
-_ManagementNamesUpdate = [];
 
 //Set the Time
 _key = "CHILD:307:";
@@ -235,29 +234,9 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 				};
 			} else {
 				if (DZE_permanentPlot && _isPlot) then {
-					if ((count _inventory > 0) && {TypeName ((_inventory select 0) select 1) == "STRING"}) then {
-						_inventorytemp = [];
-						{
-							_uid = _x select 0;
-							_name = _x select 1;
-							_inventorytemp set [_forEachIndex, [_uid, (toArray _name)]];
-						} forEach _inventory;
-						_inventory = _inventorytemp;
-						_ManagementNamesUpdate set [count _ManagementNamesUpdate, _object];
-					};
 					_object setVariable ["plotfriends", _inventory, true];
 				};
-				if(DZE_doorManagement && _doorLocked) then {
-					if ((count _inventory > 0) && {TypeName ((_inventory select 0) select 1) == "STRING"}) then {
-						_inventorytemp = [];
-						{
-							_uid = _x select 0;
-							_name = _x select 1;
-							_inventorytemp set [_forEachIndex, [_uid, (toArray _name)]];
-						} forEach _inventory;
-						_inventory = _inventorytemp;
-						_ManagementNamesUpdate set [count _ManagementNamesUpdate, _object];
-					};
+				if (DZE_doorManagement && _doorLocked) then {
 					_object setVariable ["doorfriends", _inventory, true];
 				};
 			};
@@ -347,15 +326,6 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 	_x setVelocity [0,0,1];
 } forEach _DZE_VehObjects;
 
-//Update object management names
-if (count _ManagementNamesUpdate > 0) then {
-	{
-		//_object = _x select 0;
-		//_inventory = _x select 1;
-		[_x, "gear"] call server_updateObject;
-	} forEach _ManagementNamesUpdate;
-	diag_log format["Updated %1 plot/door management names to array format in the DB", count _ManagementNamesUpdate];
-};
 diag_log format["HIVE: BENCHMARK - Server_monitor.sqf finished streaming %1 objects in %2 seconds (unscheduled)",_val,diag_tickTime - _timeStart];
 
 // # END OF STREAMING #
