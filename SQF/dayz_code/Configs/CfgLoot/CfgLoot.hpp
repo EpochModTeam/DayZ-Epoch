@@ -56,6 +56,9 @@ class CfgLoot
 		#include "Groups\Zombies\Police.hpp"
 		#include "Groups\Zombies\Military.hpp"
 		#include "Groups\Zombies\Worker.hpp" //DZE
+		#include "Groups\Zombies\Suit.hpp" //DZE
+		#include "Groups\Zombies\Doctor.hpp" //DZE
+		#include "Groups\Zombies\Pilot.hpp" //DZE
 		
 		#undef DZ_BP_VestPouch
 		#undef DZ_BP_Patrol
