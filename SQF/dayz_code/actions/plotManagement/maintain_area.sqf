@@ -76,8 +76,8 @@ _maintain = {
 
 		if (Z_SingleCurrency) then {
 			player setVariable[Z_MoneyVariable,(_wealth - _amount),true];
-			call player_forceSave;
 		};
+		call player_forceSave;
 
 		PVDZE_maintainArea = [player,1,_this select 0];
 		publicVariableServer "PVDZE_maintainArea";

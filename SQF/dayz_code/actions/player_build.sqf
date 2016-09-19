@@ -381,7 +381,8 @@ if (_canBuild select 0) then {
 
 			_num_removed = ([player,_item] call BIS_fnc_invRemove);
 			if(_num_removed == 1) then {
-
+				call player_forceSave;
+				
 				format[localize "str_build_01",_text] call dayz_rollingMessages;
 
 				_tmpbuilt setVariable ["OEMPos",_location,true];

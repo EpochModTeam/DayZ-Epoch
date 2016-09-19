@@ -472,7 +472,8 @@ if (_canBuild select 0) then {
 
 			_num_removed = ([player,DZE_buildItem] call BIS_fnc_invRemove); //remove item's magazine from inventory
 			if(_num_removed == 1) then {
-
+				call player_forceSave;
+				
 				format[localize "str_build_01",_text] call dayz_rollingMessages;
 
 				_tmpbuilt setVariable ["OEMPos",_location,true]; //store original location as a variable

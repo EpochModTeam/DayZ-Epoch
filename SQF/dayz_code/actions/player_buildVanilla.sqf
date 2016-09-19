@@ -102,6 +102,7 @@ _upgradeParts = [];
         player removeMagazine _x;
     };
 } count _requiredParts;
+call player_forceSave;
 
 if (!_ok) exitWith {
     { player addMagazine _x; } foreach _upgradeParts;
