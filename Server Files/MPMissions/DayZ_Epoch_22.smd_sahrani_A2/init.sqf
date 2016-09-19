@@ -105,7 +105,7 @@ call compile preprocessFileLineNumbers "server_traders.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\smd_sahrani_a2.sqf"; //Add trader city objects locally on each machine early
 initialized = true;
 
-setTerrainGrid 25; //grass height (50=very low, 25=normal, 12.5=very high)
+setTerrainGrid 25; //grass draw distance (50=no grass, 25=normal, 12.5=far)
 if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\REsec.sqf";};
 execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
 
