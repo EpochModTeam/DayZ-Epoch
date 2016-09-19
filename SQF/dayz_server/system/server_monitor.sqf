@@ -236,7 +236,7 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 				if (DZE_permanentPlot && _isPlot) then {
 					_object setVariable ["plotfriends", _inventory, true];
 				};
-				if( DZE_doorManagement && _doorLocked) then {
+				if (DZE_doorManagement && _doorLocked) then {
 					_object setVariable ["doorfriends", _inventory, true];
 				};
 			};
@@ -326,7 +326,7 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 	_x setVelocity [0,0,1];
 } forEach _DZE_VehObjects;
 
-diag_log format["HIVE: BENCHMARK - Server_monitor.sqf finished streaming %1 objects in %2 seconds",_val,diag_tickTime - _timeStart];
+diag_log format["HIVE: BENCHMARK - Server_monitor.sqf finished streaming %1 objects in %2 seconds (unscheduled)",_val,diag_tickTime - _timeStart];
 
 // # END OF STREAMING #
 
@@ -489,7 +489,7 @@ if (_hiveLoaded) then {
 		diag_log ("HIVE: Spawning # of Veins: " + str(MaxMineVeins));
 		for "_x" from 1 to MaxMineVeins do {call spawn_mineveins;};
 		
-		diag_log format["HIVE: BENCHMARK - Server finished spawning %1 DynamicVehicles, %2 Debris, %3 SupplyCrates and %4 MineVeins in %5 seconds",_vehLimit,MaxDynamicDebris,MaxAmmoBoxes,MaxMineVeins,diag_tickTime - _startTime];
+		diag_log format["HIVE: BENCHMARK - Server finished spawning %1 DynamicVehicles, %2 Debris, %3 SupplyCrates and %4 MineVeins in %5 seconds (scheduled)",_vehLimit,MaxDynamicDebris,MaxAmmoBoxes,MaxMineVeins,diag_tickTime - _startTime];
 		
 		//Update gear last after all dynamic vehicles are created to save random loot to database (low priority)
 		{[_x,"gear"] call server_updateObject} count _vehiclesToUpdate;
