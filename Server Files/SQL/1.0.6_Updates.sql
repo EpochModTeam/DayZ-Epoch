@@ -539,7 +539,6 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, '"Winchester1866"', '"Winc
 -- UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
 -- UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
 
-
 -- ----------------------------
 -- Run to update to v1.0.5 of Precise Base Building by @Mikeeeyy only if you had v1.0.4 installed
 -- ----------------------------
@@ -567,3 +566,51 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, '"Winchester1866"', '"Winc
 -- 
 -- UPDATE object_data SET Worldspace = RemoveQuotes(Worldspace);
 -- DROP FUNCTION `RemoveQuotes`;
+
+-- ----------------------------
+-- Run to update existing inventory coins in object_data to the new coins system in 1.0.6 - by @ndavalos
+-- ----------------------------
+-- update object_data t1,
+-- (
+-- SELECT objectid,
+-- Cast(CASE WHEN Substring_index(inventory, ']', -2) = ']' THEN 0 WHEN
+-- Locate('e',
+-- REPLACE(REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']', ''),
+-- '[', ''),
+-- ',', '')) > 0 THEN Cast(LEFT(REPLACE(REPLACE(REPLACE(Substring_index(
+-- inventory,
+-- ']', -2), ']', ''), '[', ''), ',', ''), Length(REPLACE(REPLACE(REPLACE(
+-- Substring_index(inventory, ']', -2), ']', ''), '[', ''), ',', ''))
+-- - Locate('e',
+-- Reverse(REPLACE(REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']',
+-- ''),
+-- '[', ''), ',', '')))) AS DECIMAL(11, 2)) * Pow(10, Cast(Substring_index(
+-- REPLACE
+-- ( REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']', ''), '[', '')
+-- , ',',
+-- '' ), 'e', -1) AS UNSIGNED)) ELSE Cast(REPLACE(REPLACE(REPLACE(
+-- Substring_index(
+-- inventory, ']', -2), ']', ''), '[', ''), ',', '') AS UNSIGNED INTEGER)
+-- end AS
+-- UNSIGNED) AS thedata
+-- FROM object_data
+-- where inventory <> '[]' 
+-- and inventory <> '[[[],[]],[[],[]],[[],[]]]'
+-- and classname not like '%plastic%' and classname not like '%door%' 
+-- ) t2
+-- set t1.StorageCoins = t2.thedata
+-- WHERE t1.objectid = t1.objectid;
+
+-- update object_data set inventory = concat(LEFT(inventory, LENGTH(inventory) - LOCATE(',', REVERSE(inventory))),']') 
+-- where inventory <> '[]' 
+-- and inventory <> '[[[],[]],[[],[]],[[],[]]]'
+-- and classname not like '%plastic%' and classname not like '%door%'; 
+
+-- SELECT * FROM epoch.object_data WHERE Inventory REGEXP '\]\]\,\[0-9]+\]';
+
+-- ----------------------------
+-- The above select query returns objects not properly updated, you will need to update them manually by removing the last number in the inventory array and the preceding comma (see below for example)
+-- [[[],[]],[["ItemHotwireKit","ItemLockbox"],[28,14]],[["DZ_TerminalPack_EP1","DZ_TK_Assault_Pack_EP1","DZ_CompactPack_EP1","DZ_LargeGunBag_EP1"],[1,1,1,1]],0]
+-- BECOMES
+-- [[[],[]],[["ItemHotwireKit","ItemLockbox"],[28,14]],[["DZ_TerminalPack_EP1","DZ_TK_Assault_Pack_EP1","DZ_CompactPack_EP1","DZ_LargeGunBag_EP1"],[1,1,1,1]]]
+-- ----------------------------
