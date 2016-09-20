@@ -71,17 +71,17 @@ _object_inventory = {
 	} else {
 		_isNormal = true;
 		
-		if( DZE_permanentPlot && (typeOf (_object) == "Plastic_Pole_EP1_DZ") ) then {
+		if (DZE_permanentPlot && (typeOf (_object) == "Plastic_Pole_EP1_DZ")) then {
 			_isNormal = false;
 			_inventory = _object getVariable ["plotfriends", []]; //We're replacing the inventory with UIDs for this item
 		};
 		
-		if( DZE_doorManagement && (typeOf (_object) in DZE_DoorsLocked) ) then {
+		if (DZE_doorManagement && (typeOf (_object) in DZE_DoorsLocked)) then {
 			_isNormal = false;
 			_inventory = _object getVariable ["doorfriends", []]; //We're replacing the inventory with UIDs for this item
 		};
 		
-		if(_isNormal) then {
+		if (_isNormal) then {
 			_inventory = [getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object];
 		};
 	};
