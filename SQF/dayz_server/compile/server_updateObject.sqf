@@ -86,23 +86,17 @@ _object_inventory = {
 		};
 	};
 	
-	//_previous = str(_object getVariable["lastInventory",[]]); //causes issues with door/plot management
-	//if (str _inventory != _previous) then {
+	_previous = str(_object getVariable["lastInventory",[]]);
+	if (str _inventory != _previous) then {
 		_object setVariable["lastInventory",_inventory];
 		if (_objectID == "0") then {
-			if (Z_SingleCurrency) then {
-				_coins = _object getVariable [Z_MoneyVariable, -1]; //set to invalid value if getVariable fails to prevent overwriting of coins in DB
-				_key = format["CHILD:309:%1:%2:%3:",_objectUID,_inventory,_coins];
-			} else {
-				_key = format["CHILD:309:%1:%2:",_objectUID,_inventory];
-			};
+			_key = format["CHILD:309:%1:",_objectUID] + str _inventory + ":";
 		} else {
-			if (Z_SingleCurrency) then {
-				_coins = _object getVariable [Z_MoneyVariable, -1];
-				_key = format["CHILD:303:%1:%2:%3:",_objectID,_inventory,_coins];
-			} else {
-				_key = format["CHILD:303:%1:%2:",_objectID,_inventory];
-			};
+			_key = format["CHILD:303:%1:",_objectID] + str _inventory + ":";
+		};
+		if (Z_SingleCurrency) then {
+			_coins = _object getVariable [Z_MoneyVariable, -1]; //set to invalid value if getVariable fails to prevent overwriting of coins in DB
+			_key = _key + str _coins + ":";
 		};
 		
 		#ifdef OBJECT_DEBUG
@@ -110,7 +104,7 @@ _object_inventory = {
 		#endif
 		
 		_key call server_hiveWrite;
-	//};
+	};
 };
 
 _object_damage = {
@@ -199,20 +193,10 @@ _object_maintenance = {
 	_variables set [count _variables, ["padlockCombination", _accessArray]];
 
 	if (_objectID == "0") then {
-		if (Z_SingleCurrency) then {
-			_coins = _object getVariable [Z_MoneyVariable, -1];
-			_key = format["CHILD:309:%1:%2:%3:",_objectUID,_ownerArray,_coins];
-		} else {
-			_key = format["CHILD:309:%1:%2:",_objectUID,_ownerArray];
-		};
+		//_key = format["CHILD:309:%1:%2:",_objectUID,_ownerArray];
 		_key = format["CHILD:306:%1:%2:%3:",_objectUID,[],0]; //Wont work just now.
 	} else {
-		if (Z_SingleCurrency) then {
-			_coins = _object getVariable [Z_MoneyVariable, -1];
-			_key = format["CHILD:303:%1:%2:%3:",_objectID,_ownerArray,_coins];
-		} else {
-			_key = format["CHILD:303:%1:%2:",_objectID,_ownerArray];
-		};
+		//_key = format["CHILD:303:%1:%2:",_objectID,_ownerArray];
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,[],0];
 	};
 
@@ -223,7 +207,7 @@ _object_maintenance = {
 };
 
 _object_variables = {
-	private ["_ownerArray","_key","_accessArray","_variables"];
+	private ["_ownerArray","_key","_accessArray","_variables","_coins"];
 
 	_ownerArray = _object getVariable ["ownerArray",[]];
 	_accessArray = _object getVariable ["dayz_padlockCombination",[]];
@@ -236,19 +220,13 @@ _object_variables = {
 	_variables set [count _variables, ["BuildLock", _lockedArray]];
 
 	if (_objectID == "0") then {
-		if (Z_SingleCurrency) then {
-			_coins = _object getVariable [Z_MoneyVariable, -1];
-			_key = format["CHILD:309:%1:%2:%3:",_objectUID,_variables,_coins];
-		} else {
-			_key = format["CHILD:309:%1:%2:",_objectUID,_variables];
-		};
+		_key = format["CHILD:309:%1:%2:",_objectUID,_variables];
 	} else {
-		if (Z_SingleCurrency) then {
-			_coins = _object getVariable [Z_MoneyVariable, -1];
-			_key = format["CHILD:303:%1:%2:%3:",_objectID,_variables,_coins];
-		} else {
-			_key = format["CHILD:303:%1:%2:",_objectID,_variables];
-		};
+		_key = format["CHILD:303:%1:%2:",_objectID,_variables];
+	};
+	if (Z_SingleCurrency) then {
+		_coins = _object getVariable [Z_MoneyVariable, -1];
+		_key = _key + str _coins + ":";
 	};
 	_key call server_hiveWrite;
 };
