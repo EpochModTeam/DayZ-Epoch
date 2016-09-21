@@ -54,447 +54,68 @@
 */
 
 if (isServer) then {
-
-_vehicle_1238 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_deerstand" createVehicle [4862.22, 2287.81, 0];
-  _vehicle_1238 = _this;
-  _this setDir 125;
-  _this setPos [4862.22, 2287.81, 0];
-};
-
-_vehicle_1239 = objNull;
-if (true) then
-{
-  _this = "Land_tent_east" createVehicle [4863.82, 2274.84, 0];
-  _vehicle_1239 = _this;
-  _this setDir 217;
-  _this setPos [4863.82, 2274.84, 0];
-};
-
-_vehicle_1240 = objNull;
-if (true) then
-{
-  _this = "Land_tent_east" createVehicle [4874.83, 2267.48, 0];
-  _vehicle_1240 = _this;
-  _this setDir 217;
-  _this setPos [4874.83, 2267.48, 0];
-};
-
-_vehicle_1241 = objNull;
-if (true) then
-{
-  _this = "RU_WarfareBFieldhHospital" createVehicle [4885.42, 2260.38, 0];
-  _vehicle_1241 = _this;
-  _this setDir 307;
-  _this setPos [4885.42, 2260.38, 0];
-};
-
-_vehicle_1242 = objNull;
-if (true) then
-{
-  _this = "Land_tent_east" createVehicle [4855.34, 2262.99, 0];
-  _vehicle_1242 = _this;
-  _this setDir 217;
-  _this setPos [4855.34, 2262.99, 0];
-};
-
-_vehicle_1243 = objNull;
-if (true) then
-{
-  _this = "RU_WarfareBFieldhHospital" createVehicle [4893.43, 2252.95, 0];
-  _vehicle_1243 = _this;
-  _this setDir 306;
-  _this setPos [4893.43, 2252.95, 0];
-};
-
-_vehicle_1244 = objNull;
-if (true) then
-{
-  _this = "Land_Toilet" createVehicle [4902.83, 2248.38, 0];
-  _vehicle_1244 = _this;
-  _this setDir 299;
-  _this setPos [4902.83, 2248.38, 0];
-};
-
-_vehicle_1245 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_deerstand" createVehicle [4841.69, 2258.74, 0];
-  _vehicle_1245 = _this;
-  _this setDir 125;
-  _this setPos [4841.69, 2258.74, 0];
-};
-
-_vehicle_1246 = objNull;
-if (true) then
-{
-  _this = "RU_WarfareBFieldhHospital" createVehicle [4876.42, 2248.05, 0];
-  _vehicle_1246 = _this;
-  _this setDir 306;
-  _this setPos [4876.42, 2248.05, 0];
-};
-
-_vehicle_1247 = objNull;
-if (true) then
-{
-  _this = "RU_WarfareBFieldhHospital" createVehicle [4885.11, 2241.78, 0];
-  _vehicle_1247 = _this;
-  _this setDir 306;
-  _this setPos [4885.11, 2241.78, 0];
-};
-
-_vehicle_1248 = objNull;
-if (true) then
-{
-  _this = "RU_WarfareBBarracks" createVehicle [4913.5, 2241.41, 0];
-  _vehicle_1248 = _this;
-  _this setDir 127;
-  _this setPos [4913.5, 2241.41, 0];
-};
-
-_vehicle_1249 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_deerstand" createVehicle [4933.25, 2236.43, 0];
-  _vehicle_1249 = _this;
-  _this setDir 310;
-  _this setPos [4933.25, 2236.43, 0];
-};
-
-_vehicle_1250 = objNull;
-if (true) then
-{
-  _this = "Land_GuardShed" createVehicle [4924.02, 2222.51, 0];
-  _vehicle_1250 = _this;
-  _this setDir 306;
-  _this setPos [4924.02, 2222.51, 0];
-};
-
-_vehicle_1251 = objNull;
-if (true) then
-{
-  _this = "Land_GuardShed" createVehicle [4928.72, 2219.37, 0];
-  _vehicle_1251 = _this;
-  _this setDir 306;
-  _this setPos [4928.72, 2219.37, 0];
-};
-
-_vehicle_1252 = objNull;
-if (true) then
-{
-  _this = "Land_GuardShed" createVehicle [4933.11, 2215.88, 0];
-  _vehicle_1252 = _this;
-  _this setDir 306;
-  _this setPos [4933.11, 2215.88, 0];
-};
-
-_vehicle_1253 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_deerstand" createVehicle [4912.54, 2209.47, 0];
-  _vehicle_1253 = _this;
-  _this setDir 300;
-  _this setPos [4912.54, 2209.47, 0];
-};
-
-_vehicle_1254 = objNull;
-if (true) then
-{
-  _this = "CampEast_EP1" createVehicle [6746.89, 2784.08, 0];
-  _vehicle_1254 = _this;
-  _this setDir 42;
-  _this setPos [6746.89, 2784.08, 0];
-};
-
-_vehicle_1255 = objNull;
-if (true) then
-{
-  _this = "CampEast_EP1" createVehicle [6757.55, 2776.1, 0];
-  _vehicle_1255 = _this;
-  _this setDir 42;
-  _this setPos [6757.55, 2776.1, 0];
-};
-
-_vehicle_1256 = objNull;
-if (true) then
-{
-  _this = "USMC_WarfareBFieldhHospital" createVehicle [6767.52, 2762.48, 0];
-  _vehicle_1256 = _this;
-  _this setDir 313;
-  _this setPos [6767.52, 2762.48, 0];
-};
-
-_vehicle_1257 = objNull;
-if (true) then
-{
-  _this = "USMC_WarfareBFieldhHospital" createVehicle [6770.4, 2739.77, 0];
-  _vehicle_1257 = _this;
-  _this setDir 42;
-  _this setPos [6770.4, 2739.77, 0];
-};
-
-_vehicle_1258 = objNull;
-if (true) then
-{
-  _this = "CampEast" createVehicle [6295.02, 7800.98, 0];
-  _vehicle_1258 = _this;
-  _this setDir 127;
-  _this setPos [6295.02, 7800.98, 0];
-};
-
-_vehicle_1259 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6302.78, 7796.63, 0];
-  _vehicle_1259 = _this;
-  _this setDir 36;
-  _this setPos [6302.78, 7796.63, 0];
-};
-
-_vehicle_1260 = objNull;
-if (true) then
-{
-  _this = "CampEast" createVehicle [6305.61, 7810.76, 0];
-  _vehicle_1260 = _this;
-  _this setDir 128;
-  _this setPos [6305.61, 7810.76, 0];
-};
-
-_vehicle_1261 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6308.41, 7792.74, 0];
-  _vehicle_1261 = _this;
-  _this setDir 37;
-  _this setPos [6308.41, 7792.74, 0];
-};
-
-_vehicle_1262 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6314, 7788.65, 0];
-  _vehicle_1262 = _this;
-  _this setDir 36;
-  _this setPos [6314, 7788.65, 0];
-};
-
-_vehicle_1263 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6312.84, 7805.57, 0];
-  _vehicle_1263 = _this;
-  _this setDir 213;
-  _this setPos [6312.84, 7805.57, 0];
-};
-
-_vehicle_1264 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6319.54, 7784.91, 0];
-  _vehicle_1264 = _this;
-  _this setDir 33;
-  _this setPos [6319.54, 7784.91, 0];
-};
-
-_vehicle_1265 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6318.92, 7801.74, 0];
-  _vehicle_1265 = _this;
-  _this setDir 212;
-  _this setPos [6318.92, 7801.74, 0];
-};
-
-_vehicle_1266 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_GContainer_Big" createVehicle [6313.24, 7844.13, 0];
-  _vehicle_1266 = _this;
-  _this setDir 304;
-  _this setPos [6313.24, 7844.13, 0];
-};
-
-_vehicle_1267 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6325.31, 7781.19, 0];
-  _vehicle_1267 = _this;
-  _this setDir 33;
-  _this setPos [6325.31, 7781.19, 0];
-};
-
-_vehicle_1268 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6325.1, 7798.06, 0];
-  _vehicle_1268 = _this;
-  _this setDir 212;
-  _this setPos [6325.1, 7798.06, 0];
-};
-
-_vehicle_1269 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_GContainer_Big" createVehicle [6316.67, 7841.9, 0];
-  _vehicle_1269 = _this;
-  _this setDir 304;
-  _this setPos [6316.67, 7841.9, 0];
-};
-
-_vehicle_1270 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_GContainer_Big" createVehicle [6320.43, 7839.67, 0];
-  _vehicle_1270 = _this;
-  _this setDir 304;
-  _this setPos [6320.43, 7839.67, 0];
-};
-
-_vehicle_1271 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6331.19, 7777.51, 0];
-  _vehicle_1271 = _this;
-  _this setDir 30;
-  _this setPos [6331.19, 7777.51, 0];
-};
-
-_vehicle_1272 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6331.25, 7794.36, 0];
-  _vehicle_1272 = _this;
-  _this setDir 211;
-  _this setPos [6331.25, 7794.36, 0];
-};
-
-_vehicle_1273 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6337.11, 7790.99, 0];
-  _vehicle_1273 = _this;
-  _this setDir 213;
-  _this setPos [6337.11, 7790.99, 0];
-};
-
-_vehicle_1274 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6343.22, 7787.23, 0];
-  _vehicle_1274 = _this;
-  _this setDir 211;
-  _this setPos [6343.22, 7787.23, 0];
-};
-
-_vehicle_1275 = objNull;
-if (true) then
-{
-  _this = "Camp" createVehicle [6349.45, 7783.62, 0];
-  _vehicle_1275 = _this;
-  _this setDir 212;
-  _this setPos [6349.45, 7783.62, 0];
-};
-
-_vehicle_1276 = objNull;
-if (true) then
-{
-  _this = "Land_Toilet" createVehicle [6353.54, 7781.55, 0];
-  _vehicle_1276 = _this;
-  _this setDir 32;
-  _this setPos [6353.54, 7781.55, 0];
-};
-
-_vehicle_1277 = objNull;
-if (true) then
-{
-  _this = "Land_Toilet" createVehicle [6354.75, 7780.9, 0];
-  _vehicle_1277 = _this;
-  _this setDir 32;
-  _this setPos [6354.75, 7780.9, 0];
-};
-
-_vehicle_1278 = objNull;
-if (true) then
-{
-  _this = "Land_Toilet" createVehicle [6355.89, 7780.34, 0];
-  _vehicle_1278 = _this;
-  _this setDir 32;
-  _this setPos [6355.89, 7780.34, 0];
-};
-
-_vehicle_1279 = objNull;
-if (true) then
-{
-  _this = "Land_Toilet" createVehicle [6357.09, 7779.68, 0];
-  _vehicle_1279 = _this;
-  _this setDir 32;
-  _this setPos [6357.09, 7779.68, 0];
-};
-
-_vehicle_1280 = objNull;
-if (true) then
-{
-  _this = "Land_tent_east" createVehicle [11940.6, 9095, 0];
-  _vehicle_1280 = _this;
-  _this setDir 219;
-  _this setPos [11940.6, 9095, 0];
-};
-
-_vehicle_1281 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_deerstand" createVehicle [11837.1, 9405.64, 0];
-  _vehicle_1281 = _this;
-  _this setDir 99;
-  _this setPos [11837.1, 9405.64, 0];
-};
-
-_vehicle_1282 = objNull;
-if (true) then
-{
-  _this = "Land_Misc_deerstand" createVehicle [12432.6, 9287.22, 0];
-  _vehicle_1282 = _this;
-  _this setDir 295;
-  _this setPos [12432.6, 9287.22, 0];
-};
-
-_vehicle_1283 = objNull;
-if (true) then
-{
-  _this = "CampEast" createVehicle [12213, 9734.75, 0];
-  _vehicle_1283 = _this;
-  _this setDir 13;
-  _this setPos [12213, 9734.75, 0];
-};
-
-_vehicle_1284 = objNull;
-if (true) then
-{
-  _this = "CampEast" createVehicle [12273.1, 9724.66, 0];
-  _vehicle_1284 = _this;
-  _this setDir 13;
-  _this setPos [12273.1, 9724.66, 0];
-};
-
-_vehicle_1285 = objNull;
-if (true) then
-{
-  _this = "CampEast" createVehicle [12220.8, 9758.06, 0];
-  _vehicle_1285 = _this;
-  _this setDir 13;
-  _this setPos [12220.8, 9758.06, 0];
-};
-
-_vehicle_1286 = objNull;
-if (true) then
-{
-  _this = "CampEast" createVehicle [12249.2, 9752.89, 0];
-  _vehicle_1286 = _this;
-  _this setDir 13;
-  _this setPos [12249.2, 9752.89, 0];
-};
-
-
+	[
+		["Land_Misc_deerstand",[4862.22,2287.81,0],125],
+		["Land_tent_east",[4863.82,2274.84,0],217],
+		["Land_tent_east",[4874.83,2267.48,0],217],
+		["RU_WarfareBFieldhHospital",[4885.42,2260.38,0],307],
+		["Land_tent_east",[4855.34,2262.99,0],217],
+		["RU_WarfareBFieldhHospital",[4893.43,2252.95,0],306],
+		["Land_Toilet",[4902.83,2248.38,0],299],
+		["Land_Misc_deerstand",[4841.69,2258.74,0],125],
+		["RU_WarfareBFieldhHospital",[4876.42,2248.05,0],306],
+		["RU_WarfareBFieldhHospital",[4885.11,2241.78,0],306],
+		["RU_WarfareBBarracks",[4913.5,2241.41,0],127],
+		["Land_Misc_deerstand",[4933.25,2236.43,0],310],
+		["Land_GuardShed",[4924.02,2222.51,0],306],
+		["Land_GuardShed",[4928.72,2219.37,0],306],
+		["Land_GuardShed",[4933.11,2215.88,0],306],
+		["Land_Misc_deerstand",[4912.54,2209.47,0],300],
+		["CampEast_EP1",[6746.89,2784.08,0],42],
+		["CampEast_EP1",[6757.55,2776.1,0],42],
+		["USMC_WarfareBFieldhHospital",[6767.52,2762.48,0],313],
+		["USMC_WarfareBFieldhHospital",[6770.4,2739.77,0],42],
+		["CampEast",[6295.02,7800.98,0],127],
+		["Camp",[6302.78,7796.63,0],36],
+		["CampEast",[6305.61,7810.76,0],128],
+		["Camp",[6308.41,7792.74,0],37],
+		["Camp",[6314,7788.65,0],36],
+		["Camp",[6312.84,7805.57,0],213],
+		["Camp",[6319.54,7784.91,0],33],
+		["Camp",[6318.92,7801.74,0],212],
+		["Land_Misc_GContainer_Big",[6313.24,7844.13,0],304],
+		["Camp",[6325.31,7781.19,0],33],
+		["Camp",[6325.1,7798.06,0],212],
+		["Land_Misc_GContainer_Big",[6316.67,7841.9,0],304],
+		["Land_Misc_GContainer_Big",[6320.43,7839.67,0],304],
+		["Camp",[6331.19,7777.51,0],30],
+		["Camp",[6331.25,7794.36,0],211],
+		["Camp",[6337.11,7790.99,0],213],
+		["Camp",[6343.22,7787.23,0],211],
+		["Camp",[6349.45,7783.62,0],212],
+		["Land_Toilet",[6353.54,7781.55,0],32],
+		["Land_Toilet",[6354.75,7780.9,0],32],
+		["Land_Toilet",[6355.89,7780.34,0],32],
+		["Land_Toilet",[6357.09,7779.68,0],32],
+		["Land_tent_east",[11940.6,9095,0],219],
+		["Land_Misc_deerstand",[11837.1,9405.64,0],99],
+		["Land_Misc_deerstand",[12432.6,9287.22,0],295],
+		["CampEast",[12213,9734.75,0],13],
+		["CampEast",[12273.1,9724.66,0],13],
+		["CampEast",[12220.8,9758.06,0],13],
+		["CampEast",[12249.2,9752.89,0],13]
+	] call {
+		private ["_blocked","_object","_position","_type"];
+		{
+			_blocked = false;
+			_position = _x select 1;
+			{if (_position distance _x < 150) exitWith {_blocked = true;};} forEach dayz_townGeneratorBlackList;
+			if (!_blocked) then {
+				_type = _x select 0;
+				_object = _type createVehicle [0,0,0];
+				_object setDir (_x select 2);
+				_object setPos _position;
+			};
+		} count _this;
+	};
 };
