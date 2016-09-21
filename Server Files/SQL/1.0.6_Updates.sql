@@ -526,87 +526,87 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, '"Winchester1866"', '"Winc
 -- ----------------------------
 -- Uncomment the below queries to update new columns if you previously used a custom single currency hive with a banking_Data table
 -- ----------------------------
--- UPDATE player_data t1, banking_data t2
--- SET t1.`PlayerCoins` = t2.bankMoney,
--- t1.`BankCoins` = t2.BankSaldo
--- WHERE t1.PlayerUID = t2.PlayerUID
+/*
+UPDATE player_data t1, banking_data t2
+SET t1.`PlayerCoins` = t2.bankMoney,
+t1.`BankCoins` = t2.BankSaldo
+WHERE t1.PlayerUID = t2.PlayerUID
+*/
 
 -- ----------------------------
 -- Run to replace legacy bloodbag with universal type if using dayz_classicBloodBagSystem = false;
 -- ----------------------------
--- UPDATE `Traders_DATA` SET `item` = '["bloodBagONEG",1]' WHERE `item` = '["ItemBloodbag",1]';
--- UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Backpack, 'ItemBloodbag') > 0;
--- UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
--- UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
+/*
+UPDATE `Traders_DATA` SET `item` = '["bloodBagONEG",1]' WHERE `item` = '["ItemBloodbag",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Backpack, 'ItemBloodbag') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'ItemBloodbag', 'bloodBagONEG') WHERE INSTR(Inventory, 'ItemBloodbag') > 0;
+*/
 
 -- ----------------------------
 -- Run to update to v1.0.5 of Precise Base Building by @Mikeeeyy only if you had v1.0.4 installed
 -- ----------------------------
--- DELIMITER ;;
--- CREATE FUNCTION `RemoveQuotes`(`ws` VARCHAR(128))
---        RETURNS VARCHAR(128)
---        DETERMINISTIC
--- BEGIN
---        DECLARE dir VARCHAR(128);
---        DECLARE pos VARCHAR(128);
---       
---        IF SUBSTRING_INDEX(ws, '"', 4) = ws THEN
---                RETURN ws;
---        END IF;
---       
---        SET dir = TRIM(LEADING '["' FROM SUBSTRING_INDEX(ws, '"', 2));
---        SET pos = TRIM(LEADING CONCAT('["', dir, '","') FROM SUBSTRING_INDEX(ws, '"', 4));
---       
---        SET ws = REPLACE(ws, CONCAT('"', dir, '"'), dir);
---        SET ws = REPLACE(ws, CONCAT('"', pos, '"'), pos);
---       
---        RETURN ws;
--- END;;
--- DELIMITER ;
--- 
--- UPDATE object_data SET Worldspace = RemoveQuotes(Worldspace);
--- DROP FUNCTION `RemoveQuotes`;
+/*
+DELIMITER ;;
+CREATE FUNCTION `RemoveQuotes`(`ws` VARCHAR(128))
+       RETURNS VARCHAR(128)
+       DETERMINISTIC
+BEGIN
+       DECLARE dir VARCHAR(128);
+       DECLARE pos VARCHAR(128);
+      
+       IF SUBSTRING_INDEX(ws, '"', 4) = ws THEN
+               RETURN ws;
+       END IF;
+      
+       SET dir = TRIM(LEADING '["' FROM SUBSTRING_INDEX(ws, '"', 2));
+       SET pos = TRIM(LEADING CONCAT('["', dir, '","') FROM SUBSTRING_INDEX(ws, '"', 4));
+      
+       SET ws = REPLACE(ws, CONCAT('"', dir, '"'), dir);
+       SET ws = REPLACE(ws, CONCAT('"', pos, '"'), pos);
+      
+       RETURN ws;
+END;;
+DELIMITER ;
+
+UPDATE object_data SET Worldspace = RemoveQuotes(Worldspace);
+DROP FUNCTION `RemoveQuotes`;
+*/
 
 -- ----------------------------
--- Run to update existing inventory coins in object_data to the new coins system in 1.0.6 - by @ndavalos
+-- Run to update existing inventory coins in object_data to the new coin DB format in the 1.0.6 HiveExt - by @ndavalos
 -- ----------------------------
--- update object_data t1,
--- (
--- SELECT objectid,
--- Cast(CASE WHEN Substring_index(inventory, ']', -2) = ']' THEN 0 WHEN
--- Locate('e',
--- REPLACE(REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']', ''),
--- '[', ''),
--- ',', '')) > 0 THEN Cast(LEFT(REPLACE(REPLACE(REPLACE(Substring_index(
--- inventory,
--- ']', -2), ']', ''), '[', ''), ',', ''), Length(REPLACE(REPLACE(REPLACE(
--- Substring_index(inventory, ']', -2), ']', ''), '[', ''), ',', ''))
--- - Locate('e',
--- Reverse(REPLACE(REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']',
--- ''),
--- '[', ''), ',', '')))) AS DECIMAL(11, 2)) * Pow(10, Cast(Substring_index(
--- REPLACE
--- ( REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']', ''), '[', '')
--- , ',',
--- '' ), 'e', -1) AS UNSIGNED)) ELSE Cast(REPLACE(REPLACE(REPLACE(
--- Substring_index(
--- inventory, ']', -2), ']', ''), '[', ''), ',', '') AS UNSIGNED INTEGER)
--- end AS
--- UNSIGNED) AS thedata
--- FROM object_data
--- where inventory <> '[]' 
--- and inventory <> '[[[],[]],[[],[]],[[],[]]]'
--- and classname not like '%plastic%' and classname not like '%door%' 
--- ) t2
--- set t1.StorageCoins = t2.thedata
--- WHERE t1.objectid = t1.objectid;
+/*
+update object_data t1,
+(
+SELECT objectid,
+Cast(CASE WHEN Substring_index(inventory, ']', -2) = ']' THEN 0 WHEN
+Locate('e',REPLACE(REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']', ''),'[', ''),',', '')) > 0 THEN 
+    Cast(LEFT(REPLACE(REPLACE(REPLACE(Substring_index(inventory,']', -2), ']', ''), '[', ''), ',', ''), 
+    Length(REPLACE(REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']', ''), '[', ''), ',', '')) - 
+    Locate('e',Reverse(REPLACE(REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']',''),'[', ''), ',', '')))) AS DECIMAL(11, 2)) * 
+    Pow(10, Cast(Substring_index(REPLACE( REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']', ''), '[', ''), ',','' ), 'e', -1) AS UNSIGNED)) 
+ELSE Cast(REPLACE(REPLACE(REPLACE(Substring_index(inventory, ']', -2), ']', ''), '[', ''), ',', '') AS UNSIGNED INTEGER)
+end AS UNSIGNED) AS thedata
+FROM object_data
+where inventory <> '[]' 
+and inventory <> '[[[],[]],[[],[]],[[],[]]]'
+and classname not like '%plastic%' and classname not like '%door%' 
+) t2
+set t1.StorageCoins = t2.thedata
+WHERE t1.objectid = t2.objectid;
 
--- update object_data set inventory = concat(LEFT(inventory, LENGTH(inventory) - LOCATE(',', REVERSE(inventory))),']') 
--- where inventory <> '[]' 
--- and inventory <> '[[[],[]],[[],[]],[[],[]]]'
--- and classname not like '%plastic%' and classname not like '%door%'; 
+update object_data set inventory = concat(LEFT(inventory, LENGTH(inventory) - LOCATE(',', REVERSE(inventory))),']') 
+where inventory <> '[]' 
+and inventory <> '[[[],[]],[[],[]],[[],[]]]'
+and inventory not like '%]]]'
+and classname not like '%plastic%' and classname not like '%door%';
 
--- SELECT * FROM epoch.object_data WHERE Inventory REGEXP '\]\]\,\[0-9]+\]';
+update object_Data set inventory = '[[[],[]],[[],[]],[[],[]]]'
+where inventory = '[[[],[]],[[],[]],[[],[]],0]';
+
+SELECT * FROM epoch.object_data WHERE Inventory REGEXP '\]\]\,\[0-9]+\]';
+*/
 
 -- ----------------------------
 -- The above select query returns objects not properly updated, you will need to update them manually by removing the last number in the inventory array and the preceding comma (see below for example)
