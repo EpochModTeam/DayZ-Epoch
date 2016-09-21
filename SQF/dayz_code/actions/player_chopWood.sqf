@@ -108,13 +108,14 @@ if (count _findNearestTree > 0) then {
         format[localize "str_player_24_progress", _counter,_countOut] call dayz_rollingMessages;
     };
 
-    if (_proceed) then {            
+   if (_proceed ||(_counter > 0) ) then {            
 		//remove vehicle, Need to ask server to remove.
 		PVDZ_objgather_Knockdown = [_tree,player];
 		publicVariableServer "PVDZ_objgather_Knockdown";         
         //"Chopping down tree." call dayz_rollingMessages;
         //localize "str_player_25" call dayz_rollingMessages;
-    } else {
+    };
+    if !(_proceed) then {            
         localize "str_player_24_Stoped" call dayz_rollingMessages;
 
         r_interrupt = false;
