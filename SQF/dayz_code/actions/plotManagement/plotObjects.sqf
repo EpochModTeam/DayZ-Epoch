@@ -3,7 +3,8 @@ disableSerialization;
 
 _range = DZE_PlotPole select 0;
 _target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
-_buildables = DZE_maintainClasses;
+// Also count safes, lockboxes, vanilla buildables, tents and stashes against DZE_BuildingLimit
+_buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables","DZ_storage_base"];
 _count = count (nearestObjects [_target,_buildables,_range]);
 
 _colour = "#ffffff";
