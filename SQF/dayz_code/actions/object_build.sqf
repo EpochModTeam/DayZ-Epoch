@@ -17,12 +17,16 @@ _keepOnSlope = 0 == (getNumber (configFile >> "CfgVehicles" >> _classname >> "ca
 
 Dayz_constructionContext set [ 4, false ]; // Stop the construction mode, cf. player_build.sqf
 
+//if (count Dayz_constructionContext < 5) then { Dayz_constructionContext set [ 5, false ]; // };
+
 if (_build) then {
     _location = getPosATL _ghost;
     _direction = getDir _ghost;
     _object = createVehicle [_classname, getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
 	
     _object setDir _direction;
+	
+	diag_log (Dayz_constructionContext);
 	
     if ((Dayz_constructionContext select 5) or (_keepOnSlope)) then {
         _object setVectorUp surfaceNormal _location;
