@@ -140,10 +140,11 @@ if (_enoughMoney) then {
 		_dir = round(random 360);
 		_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
 		
+		// Note server now uses createVehicle "NONE" so next closest safePos is found automatically if location is blocked
 		if (count _helipad > 0) then {
-			_location = (getPosATL (_helipad select 0));
+			_location = getPosATL (_helipad select 0);
 		} else {
-			_location = [([player] call FNC_GetPos),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
+			_location = [player] call FNC_GetPos;
 		};
 
 		_sign = "Sign_arrow_down_large_EP1" createVehicleLocal [0,0,0];

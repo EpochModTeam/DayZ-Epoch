@@ -111,11 +111,12 @@ if (_finished) then {
 					// spawn vehicle
 					_dir = round(random 360);
 
+					// Note server now uses createVehicle "NONE" so next closest safePos is found automatically if location is blocked
 					_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
 					if(count _helipad > 0) then {
-						_location = (getPosATL (_helipad select 0));
+						_location = getPosATL (_helipad select 0);
 					} else {
-						_location = [([player] call FNC_GetPos),0,20,1,0,2000,0] call BIS_fnc_findSafePos;
+						_location = [player] call FNC_GetPos;
 					};
 
 					//place vehicle spawn marker (local)

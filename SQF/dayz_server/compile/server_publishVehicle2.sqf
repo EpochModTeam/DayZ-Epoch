@@ -74,6 +74,7 @@ _key call server_hiveWrite;
 		_object = _class createVehicle [0,0,0];
 	} else {
 		//_object = createVehicle [_class, _location, [], 0, "CAN_COLLIDE"];
+		// Don't use setPos or CAN_COLLIDE here. It will spawn inside other vehicles
 		_object = _class createVehicle _location;
 	};
 
