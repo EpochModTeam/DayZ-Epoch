@@ -175,13 +175,9 @@ dayz_objectUID2 = {
 	_dir = _this select 0;
 	_key = "";
 	_position = _this select 1;
-    if((count _this) == 2) then{
-		{
-			_x = _x * 10;
-			if (_x < 0) then { _x = _x * -10 };
-			_key = _key + str(round(_x));
-		} count _position;
-		_key = _key + str(round(_dir));
+    if((count _this) == 2) then {
+		//_key = str(round(diag_tickTime max 1)) + (str(round(abs(_position select 0))) + str(round(abs(_position select 1))) + str(round _dir));
+		_key = format["%1%2%3%4",(round(diag_tickTime max 1)), (round(abs(_position select 0))), (round(abs(_position select 1))), (round _dir)];
 	} else {
 			_vector = [];
 			_usedVec = false;
