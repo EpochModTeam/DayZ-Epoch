@@ -170,7 +170,7 @@ if (isNil "keyboard_keys") then {
         };
     };
     _drop = {
-		_doors = nearestObjects [player, DZE_DoorsLocked, 3]; //Prevent exploit of glitching through doors
+		_doors = nearestObjects [player,  DayZ_DropDrageeObjects, 3]; //Prevent exploit of glitching through doors
 		if (count _doors > 0) then {_handled = true;};
         force_dropBody = true;
     };

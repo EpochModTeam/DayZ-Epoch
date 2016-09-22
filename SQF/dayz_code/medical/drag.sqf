@@ -18,6 +18,9 @@ _addAction = false;
 if (isNull _dragee) exitWith {};
 if (!_unconscious) exitWith {};
 
+_dropObjects = nearestObjects [player, DayZ_DropDrageeObjects, 3];
+if (count _dropObjects > 0) exitWith {};
+
 //player assumes dragging posture
 r_drag_sqf = true;
 
@@ -50,8 +53,8 @@ while {r_drag_sqf} do {
 		uiSleep 1;
 		_addAction = true;
 	};
-
-	if (force_dropBody) then {
+	_dropObjects = nearestObjects [player, DayZ_DropDrageeObjects, 3]; //Prevent exploit of glitching through doors
+	if (force_dropBody || (count _dropObjects > 0)) then {
 		[cursorTarget, _unit, _unconscious, _dragee] execVM "\z\addons\dayz_code\medical\drop_body.sqf";
 	};
 
@@ -61,4 +64,5 @@ while {r_drag_sqf} do {
 		[cursorTarget, _unit, _unconscious, _dragee] execVM "\z\addons\dayz_code\medical\drop_body.sqf";
 	};
 	if (!r_drag_sqf) exitWith {};
+	uiSleep 0.001;
 };
