@@ -1614,32 +1614,32 @@
 			<German>Dieses Objekt kann nicht erweitert werden.</German>
 		</Key>
 		<Key ID="str_bombAttached">
-			<English>\n\nAttached Carbomb! Next Survivor who starts the engine will blow up!</English>
-			<Russian>Бомба установлена! \nВыжившего, который решится завести двигатель разорвет на кусочки!</Russian>
-			<French>\nLa bombe est posée! La prochaine personne qui démarre\nle véhicule sera éparpillée façon puzzle.</French>
-			<Czech>\n\nBomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
+			<English>Attached carbomb! The next survivor who starts the engine will blow up!</English>
+			<Russian>Бомба установлена! Выжившего, который решится завести двигатель разорвет на кусочки!</Russian>
+			<French>La bombe est posée! La prochaine personne qui démarrele véhicule sera éparpillée façon puzzle.</French>
+			<Czech>Bomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
 			<German>Sprengsatz angebracht! Die nächste Person, die den Motor startet, wird in die Luft fliegen!</German>
 		</Key>
 		<Key ID="str_bombAlready">
-			<English>\n\nThis vehicle already has a bomb attached!</English>
+			<English>This vehicle already has a bomb attached!</English>
 			<Russian>На этот транспорт уже установлена бомба!</Russian>
-			<French>\n\nCe véhicule a déjà une bombe de posée</French>
-			<Czech>\n\nNa tomto vozidle je již bomba umístěna!</Czech>
-			<German>\n\nAn diesem Fahrzeug ist schon ein Sprengsatz angebracht!</German>
+			<French>Ce véhicule a déjà une bombe de posée</French>
+			<Czech>Na tomto vozidle je již bomba umístěna!</Czech>
+			<German>An diesem Fahrzeug ist schon ein Sprengsatz angebracht!</German>
 		</Key>
 		<Key ID="str_bombMissing">
-			<English>\n\nYou don&apos;t have a bomb in your inventory</English>
+			<English>You don&apos;t have a bomb in your inventory</English>
 			<Russian>Нужна бомба в инвентаре</Russian>
-			<French>\n\nVous n&apos;avez pas de bombe</French>
-			<Czech>\n\nNemáte u sebe bombu.</Czech>
-			<German>\n\nDu hast keinen Sprengsatz in deinem Inventar!</German>
+			<French>Vous n&apos;avez pas de bombe</French>
+			<Czech>Nemáte u sebe bombu.</Czech>
+			<German>Du hast keinen Sprengsatz in deinem Inventar!</German>
 		</Key>
 		<Key ID="str_bombToolMissing">
-			<English>\n\nYou need a toolbox and a crowbar to attach the bomb to this vehicle</English>
+			<English>You need a toolbox and a crowbar to attach the bomb to this vehicle</English>
 			<Russian>Нужен ломик и ящик с инструментами, чтобы установить бомбу</Russian>
-			<French>\n\nUne boîte à outil et un pied-de-biche sont nécessaires pour poser la bombe</French>
-			<Czech>\n\nK umístění bomby na tomto vozidle bude třeba sada nářadí a páčidlo.</Czech>
-			<German>\n\nDu benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen!</German>
+			<French>Une boîte à outil et un pied-de-biche sont nécessaires pour poser la bombe</French>
+			<Czech>K umístění bomby na tomto vozidle bude třeba sada nářadí a páčidlo.</Czech>
+			<German>Du benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen!</German>
 		</Key>
 		<Key ID="str_choppingTree">
 			<English>\n\nChopping down tree.</English>
@@ -1649,11 +1649,11 @@
 			<German>\n\nBaum wird gefällt</German>
 		</Key>
 		<Key ID="str_cannotCombine">
-			<English>You have only one %1\nThere&apos;s nothing to combine.</English>
-			<Russian>У вас только один (%1)\nНечего переснаряжать.</Russian>
-			<French>Vous avez seulement 1 %1\nIl n&apos;y a rien à arranger.</French>
+			<English>You have only one %1, there&apos;s nothing to combine.</English>
+			<Russian>У вас только один (%1), Нечего переснаряжать.</Russian>
+			<French>Vous avez seulement 1 %1, Il n&apos;y a rien à arranger.</French>
 			<Czech>Ve vašem inventáři je %1 pouze jednou. Není co zkombinovat.</Czech>
-			<German>Du hast nicht genügend %1. \nEs gibt nichts zu kombinieren.</German>
+			<German>Du hast nicht genügend %1, Es gibt nichts zu kombinieren.</German>
 		</Key>
 		<Key ID="str_combineDoneFull">
 			<English>You&apos;ve combined %1 non-full %2(s) into %3 full %4.</English>
@@ -1663,17 +1663,17 @@
 			<German>Du hast %1 teilweise gefüllte %2 zu %3 %4 kombiniert.</German>
 		</Key>
 		<Key ID="str_combineDonePartial">
-			<English>You&apos;ve combined %1 non-full %2(s) into %3 full %7.\nLast %6 still has %4 %5 inside.</English>
-			<Russian>Переснаряжено %3 полных (%7) из %1 неполных (%2).\nОставшийся (%6) содержит %4 %5.</Russian>
-			<French>Vous avez arrangé %1 %2s partiellement remplis en %3 %7 remplis.\nLe dernier %6 contient encore %4 %5.</French>
-			<Czech>Zkombinovali jste %1x neúplný %2 a nyní máte %3x plný %7.\n Zbývající %6 obsahuje %4x %5.</Czech>
+			<English>You&apos;ve combined %1 non-full %2(s) into %3 full %7.&lt;br/&gt;Last %6 still has %4 %5 inside.</English>
+			<Russian>Переснаряжено %3 полных (%7) из %1 неполных (%2).&lt;br/&gt;Оставшийся (%6) содержит %4 %5.</Russian>
+			<French>Vous avez arrangé %1 %2s partiellement remplis en %3 %7 remplis.&lt;br/&gt;Le dernier %6 contient encore %4 %5.</French>
+			<Czech>Zkombinovali jste %1x neúplný %2 a nyní máte %3x plný %7.&lt;br/&gt; Zbývající %6 obsahuje %4x %5.</Czech>
 			<German>Du hast %1 teilweise gefüllte %2 zu %3 %4 kombiniert. Das letzte %6 hat noch %4 %5.</German>
 		</Key>
 		<Key ID="str_combineDonePartialOne">
-			<English>You&apos;ve combined %1 non-full %2(s) into one.\nYou have %3 %4 left</English>
+			<English>You&apos;ve combined %1 non-full %2(s) into one.&lt;br/&gt;You have %3 %4 left</English>
 			<Russian>Переснаряжено %1 неполных (%2) в один. Осталось %3 %4</Russian>
-			<French>Vous avez arrangé 1 %2 à partir de %1 %2s partiellement remplis.\nIl vous reste %3 %4.</French>
-			<Czech>Zkombinovali jste %1x neúplný %2 dohromady.\nZbývá vám ještě %3x %4.</Czech>
+			<French>Vous avez arrangé 1 %2 à partir de %1 %2s partiellement remplis.&lt;br/&gt;Il vous reste %3 %4.</French>
+			<Czech>Zkombinovali jste %1x neúplný %2 dohromady.&lt;br/&gt;Zbývá vám ještě %3x %4.</Czech>
 			<German>Du hast %1 teilweise gefüllte %2 zu einem kombiniert und hast %3 %4 übrig.</German>
 		</Key>
 		<Key ID="str_sleepStats">
@@ -6670,7 +6670,7 @@
 			<German>Du hast das Zelt erfolgreich aufgeschlagen.</German>
 			<Russian>Вы установили палатку.</Russian>
 			<Spanish>Asentaste tu carpa.</Spanish>
-			<French>\n\nVous avez installé votre tente.</French>
+			<French>Vous avez installé votre tente.</French>
 			<Czech>Postavili jste stan.</Czech>
 		</Key>
 		<Key ID="str_fail_tent_pitch">
@@ -6678,7 +6678,7 @@
 			<German>Du kannst hier kein Zelt aufbauen, da der Untergrund nicht flach und frei von Hindernissen ist.</German>
 			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
 			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>\n\nVous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
+			<French>Vous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Stan zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
 		</Key>
 		<Key ID="str_success_stash_pitch">
@@ -6694,7 +6694,7 @@
 			<German>%1 kann hier nicht angelegt werden. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Нельзя установить %1 тут. Поверхность должна быть ровной, без объектов поблизости.</Russian>
 			<Spanish>No puedes ubicar una %1 aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>\n\nVous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
+			<French>Vous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
 			<Czech>Tady nelze postavit %1. Země musí být plochá a bez jiných objektů, které by mohly bránit stavbě.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food">
@@ -6702,7 +6702,7 @@
 			<German>Du hast %1 gegessen.</German>
 			<Russian>Вы съели %1.</Russian>
 			<Spanish>Comiste %1.</Spanish>
-			<French>\n\nVous avez mangé un(e) %1.</French>
+			<French>Vous avez mangé un(e) %1.</French>
 			<Czech>Snědli jste %1.</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_1">
@@ -6710,7 +6710,7 @@
 			<German>Du hast %1 aufgegessen und wirst langsam satt.</German>
 			<Russian>Вы съели %1 и чувствуете себя сытым...</Russian>
 			<Spanish>Comiste %1 y te empiezas a sentir lleno...</Spanish>
-			<French>\n\nVous avez mangé %1 et votre ventre est plein...</French>
+			<French>Vous avez mangé %1 et votre ventre est plein...</French>
 			<Czech>Snědli jste %1 a máte plné břicho...</Czech>
 		</Key>
 		<Key ID="str_player_consumed_food_2">
@@ -6726,7 +6726,7 @@
 			<German>%1 wurde verbraucht.</German>
 			<Russian>Вы употребили: %1</Russian>
 			<Spanish>Consumiste: %1</Spanish>
-			<French>\n\nVous avez consommé un(e) %1</French>
+			<French>Vous avez consommé un(e) %1</French>
 			<Czech>Zkonzumovali jste %1</Czech>
 		</Key>
 		<Key ID="str_fireplace_01">
@@ -6734,7 +6734,7 @@
 			<German>Du hast erfolgreich eine Feuerstelle angelegt.</German>
 			<Russian>Вы разожгли костер.</Russian>
 			<Spanish>Creaste una fogata</Spanish>
-			<French>\n\nVous avez créé un feu de camp.</French>
+			<French>Vous avez créé un feu de camp.</French>
 			<Czech>Vytvořili jste ohniště.</Czech>
 		</Key>
 		<Key ID="str_build_01">
@@ -6766,7 +6766,7 @@
 			<German>Du kannst hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>\n\nVous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
+			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Ohniště zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
 		</Key>
 		<Key ID="str_fireplace_removed">
@@ -6806,7 +6806,7 @@
 			<German>Du hast %1 Flasche(n) mit Wasser aufgefüllt.</German>
 			<Russian>Наполнено водой бутылок: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
-			<French>\n\nVous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
+			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste vodou %1 láhve.</Czech>
 		</Key>
 		<Key ID="str_player_boiledwater">
@@ -6814,7 +6814,7 @@
 			<German>Du hast %1 Flasche(n) mit Wasser abgekocht.</German>
 			<Russian>Наполнено чистой кипяченой водой  бутылок: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
-			<French>\n\nVous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
+			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste převařenou vodou %1 láhve.</Czech>
 		</Key>
 		<Key ID="str_player_02">
@@ -6822,7 +6822,7 @@
 			<German>Du hast keine leeren Wasserflaschen.</German>
 			<Russian>У вас нет пустых бутылок.</Russian>
 			<Spanish>No tienes cantimploras vacías</Spanish>
-			<French>\n\nVous n&apos;avez aucune Bouteille vide.</French>
+			<French>Vous n&apos;avez aucune Bouteille vide.</French>
 			<Czech>Nemáte žádné prázdné láhve na vodu.</Czech>
 		</Key>
 		<Key ID="str_player_03">
@@ -7577,19 +7577,19 @@
 			<English>blunt force trauma.</English>
 		</Key>
 		<Key ID="str_abort_playerclose">
-			<English>Cannot Abort near another player!\nYou are still in Combat.</English>
-			<Russian>Нельзя выходить находясь рядом с другим игроком!\nВы все еще в бою!</Russian>
-			<Spanish>¡No puedes abortar cerca de otros jugadores!\nTodavía estás en combate.</Spanish>
-			<Czech>Nemůžete ukončit hru, když jste poblíž jiného hráče.\nStále jste v boji.</Czech>
-			<French>Abandon impossible près d&apos;un autre joueur!\nVous êtes toujours en combat.</French>
+			<English>Cannot Abort near another player!&lt;br/&gt;You are still in Combat.</English>
+			<Russian>Нельзя выходить находясь рядом с другим игроком!&lt;br/&gt;Вы все еще в бою!</Russian>
+			<Spanish>¡No puedes abortar cerca de otros jugadores!&lt;br/&gt;Todavía estás en combate.</Spanish>
+			<Czech>Nemůžete ukončit hru, když jste poblíž jiného hráče.&lt;br/&gt;Stále jste v boji.</Czech>
+			<French>Abandon impossible près d&apos;un autre joueur!&lt;br/&gt;Vous êtes toujours en combat.</French>
 			<German>Du kannst dich nicht in der Nähe eines anderen Spielers ausloggen, du befindest dich noch immer in Gefahr!</German>
 		</Key>
 		<Key ID="str_abort_zedsclose">
-			<English>Cannot Abort Zombies are near!\nYou are still in Combat. </English>
-			<Russian>Нельзя выходить находясь рядом с зомби!\nВы все еще в бою!</Russian>
-			<Spanish>¡No puedes abortar cerca de zombies!\nTodavía estás en combate.</Spanish>
-			<Czech>Nemůžete ukončit hru, když jsou zombie poblíž.\nStále jste v boji.</Czech>
-			<French>Abandon impossible, des zombies sont à proximité!\nVous êtes toujours en combat.</French>
+			<English>Cannot Abort Zombies are near!&lt;br/&gt;You are still in Combat. </English>
+			<Russian>Нельзя выходить находясь рядом с зомби!&lt;br/&gt;Вы все еще в бою!</Russian>
+			<Spanish>¡No puedes abortar cerca de zombies!&lt;br/&gt;Todavía estás en combate.</Spanish>
+			<Czech>Nemůžete ukončit hru, když jsou zombie poblíž.&lt;br/&gt;Stále jste v boji.</Czech>
+			<French>Abandon impossible, des zombies sont à proximité!&lt;br/&gt;Vous êtes toujours en combat.</French>
 			<German>Du kannst dich nicht in der Nähe von Zombies ausloggen, du befindest dich noch immer in Gefahr!</German>
 		</Key>
 		<Key ID="str_abort_playerincombat">
