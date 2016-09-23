@@ -34,7 +34,7 @@ _fires = [
 	_object = _type createVehicleLocal [0,0,0];
 	_object setDir (_x select 2);
 	_object setPos (_x select 1);
-	_object allowDamage false;
+	_object addEventHandler ["HandleDamage",{0}];
 	if !(_type in _fires) then {_object enableSimulation false;};
 	_object setVariable ["",true,false]; // stops global setVariable by sched_townGenerator, checked in player_spawnCheck for loot spawn
 } count _this;
