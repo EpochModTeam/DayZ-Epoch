@@ -586,4 +586,35 @@ class RscTitles
 			};
 		};
 	};
+	class RSC_DZ_Messages {
+		idd = 4099999;
+		movingEnable = 0;
+		fadein       =  1;
+		fadeout      =  5;
+		duration     =  6;
+		onLoad = "uinamespace setvariable ['DZ_Messages',_this select 0]";
+		onUnLoad = "uinamespace setvariable ['DZ_Messages',nil]";
+		class Controls {
+			class Message_Text: RscStructuredText
+			{
+				idc = 4099998;
+				text = "";
+				x = 0.3 * safezoneW + safezoneX;
+				y = 0.859137 * safezoneH + safezoneY;
+				w = 0.400445 * safezoneW;
+				h = 0.139148 * safezoneH;
+				colorText[] = {0,0,0,1};
+				colorBackground[] = {0,0,0,0};
+				sizeEx = 14 * GUI_GRID_H;
+				shadow = 0;
+				class Attributes
+				{
+					color = "#FFFFFF";
+					shadow = 0;
+					valign = "top";
+					align = "center";
+				};
+			};
+		};
+	};
 };

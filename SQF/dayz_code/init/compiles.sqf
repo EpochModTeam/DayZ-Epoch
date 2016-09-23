@@ -543,8 +543,15 @@ if (!isDedicated) then {
     };
 	
 	dayz_rollingMessages = {
-		//title and cutText are in the same layer, so both simultaneously on the same line overlaps and is unreadable
-		if (typeName _this == "ARRAY") exitWith {cutText [_this select 0,"PLAIN DOWN"];}; //Special or multi-line message
+		disableSerialization;
+		_displayText = {
+			4099999 cutrsc ["RSC_DZ_Messages","plain"];
+			_display = uinamespace getvariable "DZ_Messages";
+			_textLine = _display displayctrl 4099998;
+			_textLine ctrlsetstructuredtext (parsetext _this);
+			_textLine ctrlcommit 0;
+		};
+		if (typeName _this == "ARRAY") exitWith {(_this select 0) call _displayText}; //Special or multi-line message
 		if ((diag_ticktime - Message_1_time) < 5) then {
 			if ((time - Message_2_time) < 5) then {
 				Message_3 = Message_2;
@@ -563,7 +570,9 @@ if (!isDedicated) then {
 		Message_1 = _this;
 		Message_1_time = diag_ticktime;
 		//"PLAIN DOWN" fits a maximum of 3 lines on screen at once
-		cutText [format ["%1\n%2\n%3", Message_1, Message_2, Message_3], "PLAIN DOWN"];
+		//cutText [format ["%1\n%2\n%3", Message_1, Message_2, Message_3], "PLAIN DOWN"];
+		_message = format ["%1<br></br>%2<br></br>%3", Message_1, Message_2, Message_3];
+		_message call _displayText;
 	};
 	
 	dayz_originalPlayer = player;
