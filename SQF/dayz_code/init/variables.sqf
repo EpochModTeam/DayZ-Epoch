@@ -555,6 +555,7 @@ if (isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15
 if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
 DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
+TimeOutDisplayed = false;
 
 if (isServer) then {
 	dead_bodyCleanup = [];
