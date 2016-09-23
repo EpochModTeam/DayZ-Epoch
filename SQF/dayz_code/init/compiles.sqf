@@ -543,8 +543,10 @@ if (!isDedicated) then {
     };
 	
 	dayz_rollingMessages = {
+		private ["_displayText","_message"];
 		disableSerialization;
 		_displayText = {
+			private ["_display","_textLine"];
 			4099999 cutrsc ["RSC_DZ_Messages","plain"];
 			_display = uinamespace getvariable "DZ_Messages";
 			_textLine = _display displayctrl 4099998;

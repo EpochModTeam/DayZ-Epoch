@@ -10,6 +10,7 @@ _btnRespawn ctrlEnable false;
 _btnAbort ctrlEnable false;
 _btnAbortText = ctrlText _btnAbort;
 _isPZombie = player isKindOf "PZombie_VB";
+_testTime = diag_tickTime;
 
 if (r_fracture_legs or _isPZombie) then {_btnRespawn ctrlEnable true;};
 
@@ -46,6 +47,7 @@ while {(!isNull _display) && !r_player_dead} do {
 			[localize "str_epoch_player_12",1] call dayz_rollingMessages;
 		};
 		default {
+			waitUntil {_btnAbort ctrlSetText format["%1%2%3%4",_btnAbortText," (", str(10 - ((diag_tickTime - _testTime))), ")"]; uiSleep 0.1; ((diag_tickTime - _testTime) >= 10);};
 			_btnAbort ctrlEnable true;
 			_btnAbort ctrlSetText _btnAbortText;
 		};
