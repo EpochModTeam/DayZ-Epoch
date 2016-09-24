@@ -4,13 +4,13 @@ private ["_index","_count","_type","_name","_weapons","_typeOf"];
 _weapons = weapons player;
 _weapons set [count _weapons,dayz_onBack];
 _typeOf = typeOf (unitBackPack player);
-_count = 0;
 
 {
 	_index = lbAdd [Z_AT_BUYABLELIST,  _x select 3];
 	lbSetPicture [Z_AT_BUYABLELIST, _index, _x select 4 ];
 	_name = _x select 0;
 	_type = _x select 1;
+	_count = 0;
 	
 	if (_type in DZE_tradeVehicle) then {
 		_count = { local _x } count (nearestObjects [(getPosATL player), [_name], Z_VehicleDistance]);

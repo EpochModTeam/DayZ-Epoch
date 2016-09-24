@@ -242,8 +242,8 @@ class SnapBuilding {
 	class Cinder_DZE: FloorsWallsStairs { //All cinder walls and doors
 		points[] = {
 		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.685,"Left"},
-		{2.64, 0, 1.685,"Right"},
+		{-2.64, 0, 0,"Left"},
+		{2.64, 0, 0,"Right"},
 		{0, 0, 3.37042,"Top"}
 		};
 		radius = 10;
@@ -251,8 +251,8 @@ class SnapBuilding {
 	class CinderWall_Preview_DZ: Cinder_DZE {
 		points[] = {
 		{0,0,0,"Pivot"},
-		{-2.64, 0, 0,"Left"},
-		{2.64, 0, 0,"Right"},
+		{-2.64, 0, -0.009,"Left"},
+		{2.64, 0, -0.009,"Right"},
 		{0, 0, 1.685,"Top"},
 		{0,0,-1.685,"Bottom"}
 		};
