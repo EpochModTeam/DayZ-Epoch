@@ -3,13 +3,13 @@
 
 Install instructions:
 
-1. Download these two files: [[1.8.8 addons](http://se1.dayz.nu/latest/1.8.8/178/%40Client-1.8.8-90251ab-FullDevelopment.rar)] [[Epoch addons](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/EpochTest-106-RC1.zip)]
+1. Download these two files: [[1.8.8 addons](http://se1.dayz.nu/latest/1.8.8/180/%40Client-1.8.8-ce98e0b-FullDevelopment.rar)] [[Epoch addons](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/EpochTest-106-RC2.zip)]
 
 2. Make a copy of your @DayZ_Epoch1051 folder on both the client and server and rename it to @DayZ_Epoch106.
 
 3. Copy the `@Client-1.8.8-x-FullDevelopment\@Dayz\Addons\` folder into your `@DayZ_Epoch106\` folder and overwrite files when prompted. Make sure to do this on both the client and server.
 
-4. Copy the `EpochTest-106-RC1\addons\` folder into your `@DayZ_Epoch106\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
+4. Copy the `EpochTest-106-RC2\addons\` folder into your `@DayZ_Epoch106\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
 
 5. Use the new dayz_server.pbo from [[here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/dayz_server.pbo)]
 
@@ -27,9 +27,9 @@ Install instructions:
 
 Note: Both server and client should be updated to current A2OA stable 1.63.131129 or newer.
 
-Current Version: **EpochTest-106-RC1**
+Current Version: **EpochTest-106-RC2**
 
-Build Date: **August 24th 2016**
+Build Date: **September 26th 2016**
 
 --------------------------
 Test Server Information
