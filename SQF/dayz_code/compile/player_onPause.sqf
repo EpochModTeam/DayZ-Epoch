@@ -26,11 +26,14 @@ while {(!isNull _display) && !r_player_dead} do {
 	_inCombat = if (_timeout >= diag_tickTime) then {true} else {false};
 	_playerCheck = if ({isPlayer _x} count (player nearEntities ["AllVehicles",5]) > 1) then {true} else {false};
 	_zedCheck = if ((count (player nearEntities ["zZombie_Base",10]) > 0) && !_isPZombie) then {true} else {false};
-
+	_gearDisplay = findDisplay 106;
+	if (!isNull _gearDisplay) then {
+		_gearDisplay closeDisplay 0;
+	};
 	switch true do {
 		case (_playerCheck) : {
 			_btnAbort ctrlEnable false;
-			_btnAbort ctrlSetText format["%1 (in 30)", _btnAbortText];
+			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
 			[localize "str_abort_playerclose",1] call dayz_rollingMessages;
 		};
 		case (_zedCheck) : {
@@ -46,25 +49,22 @@ while {(!isNull _display) && !r_player_dead} do {
 			_btnAbort ctrlEnable false;
 			[localize "str_epoch_player_12",1] call dayz_rollingMessages;
 		};
+		case (((diag_tickTime - _testTime) < 10) && !TimeOutDisplayed) : {
+			_btnAbort ctrlEnable false;
+			_btnAbort ctrlSetText format["%1 (in %2)",_btnAbortText, str(ceil (((_testTime + 10) - diag_tickTime)*10)/10)];
+		};
 		default {
-			_gearDisplay = findDisplay 106;
-			if (!isNull _gearDisplay) then {
-				_gearDisplay closeDisplay 0;
-			};
-			if (!TimeOutDisplayed) then {
-				waitUntil {_btnAbort ctrlSetText format["%1%2%3%4",_btnAbortText," (", str(ceil (((_testTime + 10) - diag_tickTime)*10)/10), ")"]; uiSleep 0.1; ((diag_tickTime - _testTime) >= 10);};
-				if (!isNull _display) then {
-					TimeOutDisplayed = true;
-				};
+			if (!TimeOutDisplayed && (!isNull _display)) then {
+				TimeOutDisplayed = true;
 			};
 			_btnAbort ctrlEnable true;
 			_btnAbort ctrlSetText _btnAbortText;
 		};
 	};
-	if (!isNull _display) then { //this prevents the timeout from being skipped if the menu is quickly re-opened
+	if (isNull _display) then { //this prevents the timeout from being skipped if the menu is quickly re-opened
 		TimeOutDisplayed = false;
 	};
-	uiSleep 1;
+	uiSleep 0.1;
 };
 
 TimeOutDisplayed = false;

@@ -589,7 +589,7 @@ class RscTitles
 	class RSC_DZ_Messages {
 		idd = 4099999;
 		movingEnable = 0;
-		fadein       =  1;
+		fadein       =  0;
 		fadeout      =  5;
 		duration     =  6;
 		onLoad = "uinamespace setvariable ['DZ_Messages',_this select 0]";
