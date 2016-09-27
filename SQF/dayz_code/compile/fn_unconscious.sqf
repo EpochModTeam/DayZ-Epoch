@@ -76,11 +76,12 @@ r_player_unconsciousInProgress = false;
 4 cutRsc ["default", "PLAIN",1];
 
 if (player == vehicle player) then {
+	// "AinjPpneMstpSnonWnonDnon" rolls from back first (jarring transition if player was knocked out prone or fell to stomach)
 	[nil, player, rSWITCHMOVE, "AmovPpneMstpSnonWnonDnon_healed"] call RE;
 	player SWITCHMOVE "AmovPpneMstpSnonWnonDnon_healed";
 	PVDZ_plr_SwitchMove = [player,"AmovPpneMstpSnonWnonDnon_healed"];
 	publicVariableServer "PVDZ_plr_SwitchMove"; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
-	//player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
+	player playMoveNow "AmovPpneMstpSnonWnonDnon_healed";
 };
 
 10 fadeSound 1;
