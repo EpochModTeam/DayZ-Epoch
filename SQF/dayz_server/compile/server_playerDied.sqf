@@ -1,6 +1,6 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_characterID","_minutes","_newObject","_playerID","_key","_pos","_infected","_killerName","_killerWeapon","_distance","_message","_killerMethod"];
+private ["_characterID","_minutes","_newObject","_playerID","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 
 _characterID = _this select 0;
@@ -9,10 +9,10 @@ _newObject = _this select 2;
 _playerID = _this select 3;
 _playerName = toString (_this select 4); //Sent as array to avoid publicVariable value restrictions
 _infected = _this select 5;
-_killerName = toString (_this select 6);
-_killerWeapon = toString (_this select 7);
+_sourceName = toString (_this select 6);
+_sourceWeapon = toString (_this select 7);
 _distance = _this select 8;
-_killerMethod = toString (_this select 9);
+_method = toString (_this select 9);
 
 //Mark player as dead so we bypass the ghost system
 dayz_died set [count dayz_died, _playerID];
@@ -43,30 +43,38 @@ diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2",
 
 
 // EPOCH DEATH MESSAGES
-if (_killerWeapon == "Throw") then {_killerWeapon = "Grenade";};
-if (_killerMethod in ["starve","dehyd","sick","bled","crushed","rad","zombie"]) then {
-	if (_killerMethod == "zombie") then {
-		_message = format[localize "str_player_death_zombie",_playerName];
+if (_method in ["explosion","melee","runover","shot","shothead","shotheavy"]) then {
+	if (_sourceName == _playerName) then {
+		_message = ["suicide",_playerName];
 	} else {
-		_methodStr = localize format["str_death_%1",_killerMethod];
-		_message = format[localize "str_player_death_message",_playerName,_methodStr];
+		if (_sourceWeapon == "") then {_sourceWeapon = "unknown weapon";};
+		_message = ["killed",_playerName,_sourceName,_sourceWeapon,_distance];
+		// Store death messages to allow viewing at message board in trader citys.
+		PlayerDeaths set [count PlayerDeaths,[_playerName,_sourceName,_sourceWeapon,_distance,ServerCurrentTime]];
 	};
 } else {
-	if (_killerName == _playerName) then {
-		_message = format[localize "str_player_death_suicide",_playerName];
-	} else {
-		_message = format[localize "str_player_death_killed",_playerName,_killerName,_killerWeapon,_distance];
-	};
+	// No source name, distance or weapon needed: "%1 died from %2" str_death_%1 (see stringtable)
+	// Possible methods: ["bled","combatlog","crushed","dehyd","eject","fall","starve","sick","rad","unknown","zombie"]
+	_message = ["died",_playerName,_method];
 };
 
-if ((_killerWeapon != "unknown weapon") or {_killerMethod != "unknown"} or {_killerName != "unknown"}) then {
-	diag_log _message;	
+if (_playerName != "unknown" or _sourceName != "unknown") then {
 	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgCutText or DZE_DeathMsgDynamicText) then {
 		PVDZE_deathMessage = _message;
-		publicVariable "PVDZE_deathMessage";
+		//Don't use regular PV here since JIP clients don't need it
+		{
+			if (isPlayer _x) then {
+				owner _x publicVariableClient "PVDZE_deathMessage";
+			};
+		} count playableUnits;
 	};
-	// Store death messages to allow viewing at message board in trader citys.
-	PlayerDeaths set [count PlayerDeaths,[_playerName,_killerName,_killerWeapon,_distance,ServerCurrentTime]];
+	
+	_message = switch (_message select 0) do {
+		case "died": {format [localize "str_player_death_died", _message select 1, localize format["str_death_%1",_message select 2]]};
+		case "killed": {format [localize "str_player_death_killed", _message select 1, _message select 2, _message select 3, _message select 4]};
+		case "suicide": {format [localize "str_player_death_suicide", _message select 1]};
+	};
+	diag_log format["DeathMessage: %1",_message];
 };
 
 

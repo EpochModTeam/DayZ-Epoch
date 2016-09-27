@@ -98,7 +98,7 @@
 [FIXED] User input is disabled and then gear dialog is closed during safe lock/unlock/pack to block various duping methods. #1341 @RimBlock @ebaydayz
 [FIXED] Duplicate objectUIDs occasionally causing vehicles to swap classes or be deleted across restarts @ebaydayz @icomrade #1504
 [FIXED] DZE_BuildingLimit now counts buildables only instead of all object types. Thanks jOoPs @ebaydayz
-[FIXED] Reworked death messages. Fixed messages not always showing, undefined errors and wrong distance bug. Added bled out, killed by zombie, etc. MPHit event handler (fnc_plyrHit) is no longer needed. @ebaydayz
+[FIXED] Rewrote death messages to a PVEH instead of the unreliable MPHit. Added localization, more causes of death and optional dynamicText killfeed. @ebaydayz
 [FIXED] Player no longer hears radiation sound when changing clothes. @ebaydayz
 [FIXED] Ponds and lakes are now detected correctly in player_goFishing. #1678 @ebaydayz
 [FIXED] Players are now ejected and killed when their vehicle is destroyed (Fix applies to all types of vehicles). @icomrade

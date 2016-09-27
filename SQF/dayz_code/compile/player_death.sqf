@@ -1,4 +1,4 @@
-private ["_pos","_display","_body","_playerID","_array","_source","_method","_isBandit","_punishment","_humanityHit","_myKills","_humanity","_kills","_killsV","_myGroup","_model"];
+private ["_pos","_display","_body","_playerID","_array","_source","_method","_isBandit","_punishment","_humanityHit","_myKills","_humanity","_kills","_killsV","_myGroup","_model","_infected","_distance","_sourceVehicle","_sourceWeapon","_sourceName"];
 disableSerialization;
 if (deathHandled) exitWith {};
 deathHandled = true;
@@ -28,29 +28,28 @@ if (dayz_onBack != "") then {
 	*/
 };
 _infected = if (r_player_infected && DZE_PlayerZed) then {1} else {0};
-_killerMethod = "unknown";
-_killerName = "unknown";
-_killerWeapon = "unknown weapon";
-_killerDist = 0;
+_method = "unknown";
+_sourceName = "unknown";
+_sourceWeapon = "";
+_distance = 0;
 if (count _this > 0) then {
-	_killerObj = _this select 0;
-	_killerMethod = _this select 1;
-	if (typeName _killerMethod == "OBJECT") exitWith {_killerMethod = "Respawned"};
+	_source = _this select 0;
+	_method = _this select 1;
 	
-	if (!isNull _killerObj) then {
-		if (!isNull _body) then {_killerDist = _body distance _killerObj;};
-		_killerVehicle = vehicle _killerObj;
-		_killerWeapon = if (_killerVehicle != _killerObj) then {typeOf _killerVehicle} else {currentWeapon _killerObj};
-		if (alive _killerObj) then {
-			_killerName = if (isPlayer _killerObj) then {name _killerObj} else {localize "STR_EPOCH_AI"};
+	if (!isNull _source) then {
+		if (!isNull _body) then {_distance = round (_body distance _source);};
+		_sourceVehicle = vehicle _source;
+		_sourceWeapon = if (_sourceVehicle != _source) then {typeOf _sourceVehicle} else {currentWeapon _source};
+		if (_sourceWeapon == "Throw") then {_sourceWeapon = (weaponState _source) select 3;};
+		if (alive _source) then {
+			_sourceName = if (isPlayer _source) then {name _source} else {localize "STR_EPOCH_AI"};
 		};
 	};
-	if (count _this > 2) then {_killerMethod = "zombie";};
 };
 
 //Send Death Notice
-diag_log format["Debug death message vars: CharacterID:%1  BodyObject:%3  UID:%4  PlayerName:%5  Infected:%6  KillerName:%7  KillerWeapon:%8  KillerDistance:%9  KillerMethod:%10",dayz_characterID,0,_body,_playerID,_bodyName,_infected,_killerName,_killerWeapon,_killerDist,_killerMethod];
-PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray _bodyName,_infected,toArray _killerName,toArray _killerWeapon,_killerDist,toArray _killerMethod]; //Send name as array to avoid publicVariable value restrictions
+diag_log format["Player_Death: Body:%1 BodyName:%2 Infected:%3 SourceName:%4 SourceWeapon:%5 Distance:%6 Method:%7",_body,_bodyName,_infected,_sourceName,_sourceWeapon,_distance,_method];
+PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray _bodyName,_infected,toArray _sourceName,toArray _sourceWeapon,_distance,toArray _method]; //Send name as array to avoid publicVariable value restrictions
 publicVariableServer "PVDZ_plr_Death";
 
 _id = [player,20,true,getPosATL player] call player_alertZombies;

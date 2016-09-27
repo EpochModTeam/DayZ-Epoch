@@ -324,16 +324,35 @@ if (!isDedicated) then {
 	
 	// EPOCH ADDITION
 	"PVDZE_deathMessage" addPublicVariableEventHandler {
-		// do not allow PVDZE_deathMessage in publicvariable.txt, it is only sent from the server machine
+		private "_weapon";
 		_message = _this select 1;
+		_message = switch (_message select 0) do {
+			case "died": {format [localize "str_player_death_died",_message select 1,localize format["str_death_%1",_message select 2]]};
+			case "killed": {
+				_weapon = _message select 3;
+				switch true do {
+					case (isClass (configFile >> "CfgWeapons" >> _weapon)): {
+						_message set [3, getText (configFile >> "CfgWeapons" >> _weapon >> "displayName")];
+						_message set [5, getText (configFile >> "CfgWeapons" >> _weapon >> "picture")];
+					};
+					case (isClass (configFile >> "CfgVehicles" >> _weapon)): {
+						_message set [3, getText (configFile >> "CfgVehicles" >> _weapon >> "displayName")];
+						_message set [5, getText (configFile >> "CfgVehicles" >> _weapon >> "picture")];
+					};
+					default {_message set [5,""]};
+				};
+				if (DZE_DeathMsgDynamicText) then {_message call dayz_killFeed};
+				format [localize "str_player_death_killed",_message select 1,_message select 2,_message select 3,_message select 4]
+			};
+			case "suicide": {format [localize "str_player_death_suicide",_message select 1]};
+		};
 		switch (toLower DZE_DeathMsgChat) do {
-			// Use FunctionsManager logic unit (BIS_functions_mainscope) to send chat messages so no side or quotation marks are shown
-			case "global": {BIS_functions_mainscope globalChat _message;};
-			case "side": {BIS_functions_mainscope sideChat _message;};
+			case "global": {objNull globalChat _message;};
+			case "side": {objNull sideChat _message;};
 			case "system": {systemChat _message;};
 		};
 		if (DZE_DeathMsgCutText) then {_message call dayz_rollingMessages;};
-		if (DZE_DeathMsgDynamicText) then {/* add later */};
+		diag_log format["DeathMessage: %1",_message];
 	};
 
 	// flies and swarm sound sync

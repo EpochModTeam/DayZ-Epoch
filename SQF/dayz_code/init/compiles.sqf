@@ -577,6 +577,42 @@ if (!isDedicated) then {
 		_message call _displayText;
 	};
 	
+	dayz_killFeed = {
+		private ["_distance","_icon","_message","_playerName","_sourceName"];
+		_playerName = _this select 1;
+		_sourceName = _this select 2;
+		_distance = _this select 4;
+		_icon = _this select 5;
+		if (_icon == "") exitWith {};
+		
+		if (diag_ticktime - death_1_time < 10) then {
+			if (time - death_2_time < 10) then {
+				if (time - death_3_time < 10) then {
+					death_4 = death_3;
+					death_4_time = death_3_time;
+				} else {
+					death_4 = "";
+				};
+				death_3 = death_2;
+				death_3_time = death_2_time;
+			} else {
+				death_3 = "";
+				death_4 = "";
+			};
+			death_2 = death_1;
+			death_2_time = death_1_time;
+		} else {
+			death_2 = "";
+			death_3 = "";
+			death_4 = "";
+		};
+
+		death_1 = format["<t size='0.5'>%1</t><img image='%2'/><t size='0.5'> %3 (%4m)</t>",_sourceName,_icon,_playerName,_distance];;
+		death_1_time = diag_ticktime;
+		_message = format ["%1<br />%2<br />%3<br />%4",death_1,death_2,death_3,death_4];
+		[_message,safeZoneX,safeZoneY,10,0,0,8000] call BIS_fnc_dynamicText;
+	};
+	
 	dayz_originalPlayer = player;
 
 	// database trader menu

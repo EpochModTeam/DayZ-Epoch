@@ -22,6 +22,15 @@ Message_3 = "";
 Message_1_time = 0;
 Message_2_time = 0;
 Message_3_time = 0;
+//Kill Feed
+death_1 = "";
+death_2 = "";
+death_3 = "";
+death_4 = "";
+death_1_time = 0;
+death_2_time = 0;
+death_3_time = 0;
+death_4_time = 0;
 
 //OpenTarget timer
 OpenTarget_Time = 0;

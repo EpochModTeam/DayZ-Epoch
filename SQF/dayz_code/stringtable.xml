@@ -13800,48 +13800,26 @@
 			<English>radiation</English>
 			<German>Strahlung</German>
 			<Russian>излучение</Russian>
-			<Spanish>radiación</Spanish>
-			<Czech>záření</Czech>
 		</Key>
 		<Key ID="str_death_crushed">
 			<English>being crushed</English>
 			<German>zerquetscht</German>
 			<Russian>раздавлен</Russian>
-			<Spanish>ser aplastado</Spanish>
-			<French>être écrasé</French>
-			<Czech>rozdrcení</Czech>
-		</Key>
-		<Key ID="str_player_death_zombie">
-			<English>%1 was killed by a zombie</English>
-			<German>%1 wurde von einem Zombie getötet.</German>
-			<Russian>%1 был убит зомби</Russian>
-			<Spanish>%1 murió a manos de un zombi</Spanish>
-			<French>%1 a été tué par un zombie</French>
-			<Czech>%1 byl zabit zombie</Czech>
 		</Key>
 		<Key ID="str_player_death_suicide">
 			<English>%1 committed suicide</English>
 			<German>%1 Selbstmord</German>
 			<Russian>%1 покончил с собой</Russian>
-			<Spanish>%1 se suicidó</Spanish>
-			<French>%1 suicidé</French>
-			<Czech>%1 spáchal sebevraždu</Czech>
 		</Key>
-		<Key ID="str_player_death_message">
+		<Key ID="str_player_death_died">
 			<English>%1 died from %2</English>
 			<German>%1 starb durch %2</German>
 			<Russian>%1 умер от %2</Russian>
-			<Spanish>%1 murió de %2</Spanish>
-			<French>%1 %2 de mort</French>
-			<Czech>%1 zemřelo %2</Czech>
 		</Key>
 		<Key ID="str_player_death_killed">
 			<English>%1 was killed by %2 with a %3 from %4m</English>
 			<German>%1 wurde von %2 mit einer %3 von %4m getötet</German>
 			<Russian>%1 был убит игроком %2 с %3 с расстояния %4м</Russian>
-			<Spanish>%1 murió a manos de %2 con un %3 de %4m</Spanish>
-			<French>%1 a été tué par %2 avec un %3 de %4m</French>
-			<Czech>%1 byl zabit %2 na %3 z %4m</Czech>
 		</Key>
 		<Key ID="STR_PITCH_DESERT_TENT">
 			<English>Pitch Desert Dome Tent</English>
