@@ -31,7 +31,7 @@ _addRegularMag = {
 	_justChecking = _this select 1;
 	_item = _this select 2;
 	if (_justChecking) then {
-		_regularMagsToBuy = _this select 3;
+		_regularMagsToBuy = if (Z_SellingFrom == 1) then {0} else {_this select 3}; // Don't count MagsToBuy against free space in player inventory if buying into vehicle
 		_moneyInGear = count (_this select 4); // Will be removed
 		_moneyInBackpack = count (_this select 5); // Will be removed
 	} else {
