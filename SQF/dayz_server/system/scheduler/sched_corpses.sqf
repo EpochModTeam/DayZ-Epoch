@@ -20,6 +20,7 @@ sched_co_deleteVehicle = {
 	if (count units _group == 0) then {
 		deleteGroup _group;
 	};
+		
 	_this = nil;
 };
 
@@ -41,13 +42,12 @@ sched_corpses = {
 				if (_x isKindOf "CAManBase") then {
 					_deathTime = _x getVariable ["sched_co_deathTime", -1];
 					if (_deathTime == -1) then {
-						
 						_deathPos = _x getVariable [ "deathPos", getMarkerPos "respawn_west" ];
 						_cpos = getPosATL _x;
 						// forbid a move further than 50 meters, or burried body (antihack)
 						if (_deathPos distance _cpos > 50 or _deathPos select 2 < -0.2) then {
-							diag_log [ __FILE__, "Corpse has been moved! CID#",(_x getVariable["characterID", "?"]),"from:", _cpos, "to:", _deathPos ];
-							_x setPosATL _deathPos;
+							diag_log [ __FILE__, "Corpse should have been moved! CID#",(_x getVariable["characterID", "?"]),"from:", _cpos, "to:", _deathPos ];
+							//_x setPosATL _deathPos;
 						};
 						_deathTime = diag_tickTime;
 						_x setVariable ["sched_co_deathTime", _deathTime];
