@@ -175,7 +175,9 @@ if (isNil "keyboard_keys") then {
         force_dropBody = true;
     };
     _interrupt = {
-        r_interrupt = true;
+		if (vehicle player == player) then { //allow med actions in moving vehicles
+			r_interrupt = true;
+		};
 		if (DZE_Surrender) then {call dze_surrender_off};
 		if (autoRunActive) then {call autoRunOff;};
     };

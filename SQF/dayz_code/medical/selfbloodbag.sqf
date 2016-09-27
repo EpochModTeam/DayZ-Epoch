@@ -1,4 +1,4 @@
-private ["_unit","_blood","_lowBlood","_injured","_inPain","_lastused","_animState","_started","_finished","_timer","_i","_isMedic","_isClose","_duration","_rhVal","_bloodBagArrayNeeded","_BBneeded","_bbselect","_bloodBagNeeded","_badBag","_wholeBag","_bagFound","_bagToRemove","_forceClose","_bloodType","_rh","_bloodBagArray","_bbarray_length","_bloodBagWholeNeeded","_haswholebag","_r","_transfusionInfection"];
+private ["_unit","_blood","_lowBlood","_injured","_inPain","_lastused","_animState","_started","_finished","_timer","_i","_isMedic","_duration","_rhVal","_bloodBagArrayNeeded","_BBneeded","_bbselect","_bloodBagNeeded","_badBag","_wholeBag","_bagFound","_bagToRemove","_forceClose","_bloodType","_rh","_bloodBagArray","_bbarray_length","_bloodBagWholeNeeded","_haswholebag","_r","_transfusionInfection"];
 
 // bleed.sqf
 _unit = _this select 0;
@@ -69,7 +69,7 @@ while {r_doLoop and (_i < 12)} do {
 	_animState = animationState player;
 	_isMedic = ["medic",_animState] call fnc_inString;
 
-	if (_isMedic and !_started) then {
+	if (((vehicle player != player) || _isMedic) and !_started) then {
 		closeDialog 0;
 		diag_log format ["TRANSFUSION: starting blood transfusion (%1 > %2)", name player, name _unit];
 		if (_badBag) then {
@@ -115,9 +115,12 @@ while {r_doLoop and (_i < 12)} do {
 				};
 			};
 		};
-
-		if (!_isMedic) then {
-			player playActionNow "Medic";
+		if (vehicle player == player) then {
+			if (!_isMedic) then {
+				player playActionNow "Medic";
+			};
+		} else {
+			uisleep 4;
 		};
 	};
 
@@ -131,10 +134,8 @@ while {r_doLoop and (_i < 12)} do {
 		r_doLoop = false;
 	};
 
-	_isClose = ((player distance _unit) < ((sizeOf typeOf _unit) / 2));
-
-	if (r_interrupt or !_isClose or _forceClose) then {
-		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 (%3) | _i = %4)", r_interrupt, player distance _unit, _isClose, _i];
+	if (r_interrupt or _forceClose) then {
+		diag_log format ["TRANSFUSION: transfusion was interrupted (r_interrupt: %1 | distance: %2 | _i = %3)", r_interrupt, player distance _unit, _i];
 		localize "str_actions_medical_transfusion_interrupted" call dayz_rollingMessages;
 		r_doLoop = false;
 	};
@@ -146,6 +147,8 @@ r_doLoop = false;
 
 if (r_interrupt) then {
 	r_interrupt = false;
-	player switchMove "";
-	player playActionNow "stop";
+	if (vehicle player == player) then {
+		player switchMove "";
+		player playActionNow "stop";
+	};
 };
