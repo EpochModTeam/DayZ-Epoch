@@ -6,6 +6,7 @@ private ["_classType","_item","_action","_missingTools","_missingItem","_emergin
 "_roadCollide","_checkBeam2Magnet","_a","_beams","_best","_b","_d","_checkNotBuried","_elevation","_position","_delta","_overElevation",
 "_maxplanting","_safeDistance","_dir","_angleRef","_tmp","_actionCancel","_sfx","_actionBuild","_byPassChecks","_keepOnSlope","_msg",
 "_isCollisionBypass","_ok","_missing","_upgradeParts","_ownerID","_posReference"];
+
 /*
 Needs a full rewrite to keep up with the demand of everything we plan to add.
 */
@@ -188,6 +189,16 @@ _checkBuildingCollision =
 	
 	local _wall = _object isKindOf "DZ_buildables";
 	
+	//Make sure no one can build within 6 meters of someone elses walls. Also block placement from anyone from the model origin.	
+	if (_wall && {
+    local _result = false;
+    {
+        if (_x != _object && { _x distance _object < 1.5 || { _x getVariable ["ownerArray", [""]] select 0 != getPlayerUID player } } ) exitWith
+            { _objColliding = _x; _result = true; };
+    } foreach (nearestObjects [_object, ["DZ_buildables"], 6]);
+    _result
+	}) exitWith {};
+		
 	//Load object collision points
 	local _points = [];
 	_points resize _count;
@@ -214,8 +225,7 @@ _checkBuildingCollision =
                         breakTo "root";
                     };
                 };
-            }
-            foreach lineIntersectsWith [_points select _p1, _points select _p2, _object, player];
+            } foreach lineIntersectsWith [_points select _p1, _points select _p2, _object, player];
         };
     } foreach getArray (configFile >> "CfgVehicles" >> _ghost >> "buildCollisionPaths");
 };
@@ -310,7 +320,7 @@ while {dayz_actionInProgress and Dayz_constructionContext select 4} do {
 		_object setDir _angleRef;
 		_tmp = player modelToWorld [0, _safeDistance,0];
 		
-		if (Dayz_constructionContext select 5 or _keepOnSlope) then {
+		if ((Dayz_constructionContext select 5) or (_keepOnSlope)) then {
 			_tmp set [2, 0];
 			_object setVectorUp surfaceNormal _tmp;
 		}

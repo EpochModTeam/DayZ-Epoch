@@ -41,8 +41,12 @@ if (_build) then {
     [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
     [player,_dis,true,(getPosATL player)] call player_alertZombies;
     ["Working",0,[20,40,15,0]] call dayz_NutritionSystem; // Added Nutrition-Factor for work
+	
     player playActionNow "Medic";
-    uiSleep 5;
+    
+	//wait animation end
+	waitUntil {getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 1};
+	waitUntil {getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 0};
 
     _object setPosATL _location;
     player reveal _object;
@@ -56,6 +60,9 @@ if (_build) then {
 		
         _variables set [ count _variables, ["ownerArray", [getPlayerUID player]]];
 		_variables set [ count _variables, ["padlockCombination", _passcode]];
+		
+		_object removeAllEventHandlers "HandleDamage";
+		_object addeventhandler ["HandleDamage",{ diag_log (_this); if ((_this select 4) == 'PipeBomb') then { _this call fnc_Obj_FenceHandleDam; } else { false }; } ];
     };
     _object setVariable ["characterID",dayz_characterID, true];
 
