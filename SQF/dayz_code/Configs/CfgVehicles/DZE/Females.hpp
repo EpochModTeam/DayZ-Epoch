@@ -196,7 +196,7 @@ class SurvivorW2_DZ: Soldier_Bodyguard_M4_PMC
 	
 	class Eventhandlers
 	{
-		local = "_z = _this select 0; if (!isServer && {!isNull _z} && {!(side _z in [west,east,civilian])}) exitWith { PVDZ_sec_atp = ['wrong side', player]; publicVariableServer 'PVDZ_sec_atp'; deleteVehicle _z; };";
+		//local = "_z = _this select 0; if (!isServer && {!isNull _z} && {!(side _z in [west,east,civilian])}) exitWith { PVDZ_sec_atp = ['wrong side', player]; publicVariableServer 'PVDZ_sec_atp'; deleteVehicle _z; };";
 	};
 };
 class BanditW1_DZ: SurvivorW2_DZ
