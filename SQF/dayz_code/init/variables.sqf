@@ -337,6 +337,7 @@ r_antiD_done = false;
 carryClick = false;
 dayz_actionInProgress = false;
 dayz_workingInprogress = false;
+gear_done = false;
 
 //player warming up vars
 //heatpack

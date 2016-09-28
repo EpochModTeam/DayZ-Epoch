@@ -6,6 +6,8 @@ return all player magazines with ammo count
 private ["_dialog","_created","_magazineArray"];
 disableSerialization;
 disableUserInput true;
+disableUserInput true;
+disableUserInput true;
 
 _dialog = findDisplay 106;
 _created = false;
@@ -54,5 +56,7 @@ if ( _created ) then {
 	//endLoadingScreen;
 };
 
+disableUserInput false;
+disableUserInput false;
 disableUserInput false;
 _magazineArray

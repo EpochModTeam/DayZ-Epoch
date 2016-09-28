@@ -1,7 +1,7 @@
 //private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_newBackpackType","_backpackWpn","_backpackMag","_backpackWpnTypes","_backpackWpnQtys","_countr","_backpackmagTypes","_backpackmagQtys","_display","_createSafePos","_wpnType","_ismelee","_rndx","_rndy"];
 private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit"];
 _class = _this;
-
+if (gear_done) then {disableUserInput true;disableUserInput true;};
 disableSerialization;
 //Old location system causes issues with players getting damaged during movement.
 //_position = getPosATL player;
@@ -165,7 +165,7 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 	call _switchUnit;
 };
 
-if (gear_done) then {disableUserInput false;};
+if (gear_done) then {disableUserInput false;disableUserInput false;disableUserInput false;disableUserInput false;};
 
 //Debug Message
 diag_log "Swichtable Unit Created. Equipment:";

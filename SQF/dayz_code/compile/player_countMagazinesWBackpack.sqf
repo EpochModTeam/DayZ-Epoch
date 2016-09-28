@@ -5,12 +5,13 @@ return all player magazines with ammo count
 Modified to save backpack magazine count by icomrade - Base for fix by Ziellos2k
 */
 private ["_control","_item","_val","_max","_count","_magazineArray","_dialog"];
-disableSerialization;
 disableUserInput true;
+disableUserInput true;
+disableSerialization;
 
 _magazineArray = [[],[]];
 _dialog = ["0"] call gearDialog_create;
-if ((isNil "_dialog") || {isNull _dialog}) exitWith {disableUserInput false; (findDisplay 106) closeDisplay 0; closeDialog 0; _magazineArray};
+if ((isNil "_dialog") || {isNull _dialog}) exitWith {(findDisplay 106) closeDisplay 0; closeDialog 0; disableUserInput false; disableUserInput false; _magazineArray};
 
 //Main inventory
 for "_i" from 109 to 120 do {
