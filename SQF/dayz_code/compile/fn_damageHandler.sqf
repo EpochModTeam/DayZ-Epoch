@@ -182,7 +182,7 @@ if (_unit == player) then {
 		case (_ammo == "RunOver"): {"runover"};
 		case (_ammo == "Dragged"): {"eject"};
 		case (_ammo in MeleeAmmo): {"melee"};
-		case (!isNil "_wpst" && {!(_wpst select 0 in ["","Throw"])}): {"shot"};
+		case (!isNil "_wpst" && {!(_wpst select 0 in ["","Throw"]) or (vehicle _source != _source)}): {"shot"};
 		default {"none"};
 	};
 	if (dayz_lastDamageSource != "none") then {dayz_lastDamageTime = diag_tickTime;};

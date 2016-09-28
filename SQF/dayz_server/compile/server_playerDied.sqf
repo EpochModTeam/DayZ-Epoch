@@ -44,7 +44,7 @@ diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2",
 
 
 // EPOCH DEATH MESSAGES
-if (_method in ["explosion","melee","runover","shot","shothead","shotheavy"]) then {
+if (_method in ["explosion","melee","shot","shothead","shotheavy"]) then {
 	if (_sourceName == _playerName) then {
 		_message = ["suicide",_playerName];
 	} else {
@@ -55,7 +55,7 @@ if (_method in ["explosion","melee","runover","shot","shothead","shotheavy"]) th
 	};
 } else {
 	// No source name, distance or weapon needed: "%1 died from %2" str_death_%1 (see stringtable)
-	// Possible methods: ["bled","combatlog","crushed","dehyd","eject","fall","starve","sick","rad","unknown","zombie"]
+	// Possible methods: ["bled","combatlog","crushed","dehyd","eject","fall","starve","sick","rad","runover","unknown","zombie"]
 	_message = ["died",_playerName,_method];
 };
 

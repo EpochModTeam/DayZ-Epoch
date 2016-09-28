@@ -324,22 +324,23 @@ if (!isDedicated) then {
 	
 	// EPOCH ADDITION
 	"PVDZE_deathMessage" addPublicVariableEventHandler {
-		private "_weapon";
+		private ["_root","_weapon"];
 		_message = _this select 1;
 		_message = switch (_message select 0) do {
 			case "died": {format [localize "str_player_death_died",_message select 1,localize format["str_death_%1",_message select 2]]};
 			case "killed": {
 				_weapon = _message select 3;
-				switch true do {
-					case (isClass (configFile >> "CfgWeapons" >> _weapon)): {
-						_message set [3, getText (configFile >> "CfgWeapons" >> _weapon >> "displayName")];
-						_message set [5, getText (configFile >> "CfgWeapons" >> _weapon >> "picture")];
-					};
-					case (isClass (configFile >> "CfgVehicles" >> _weapon)): {
-						_message set [3, getText (configFile >> "CfgVehicles" >> _weapon >> "displayName")];
-						_message set [5, getText (configFile >> "CfgVehicles" >> _weapon >> "picture")];
-					};
-					default {_message set [5,""]};
+				_root = switch true do {
+					case (isClass (configFile >> "CfgWeapons" >> _weapon)): {"CfgWeapons"};
+					case (isClass (configFile >> "CfgVehicles" >> _weapon)): {"CfgVehicles"};
+					case (isClass (configFile >> "CfgMagazines" >> _weapon)): {"CfgMagazines"};
+					default {""};
+				};
+				if (_root == "") then {
+					_message set [5,""];
+				} else {
+					_message set [3,getText (configFile >> _root >> _weapon >> "displayName")];
+					_message set [5,getText (configFile >> _root >> _weapon >> "picture")];
 				};
 				if (DZE_DeathMsgDynamicText) then {_message call dayz_killFeed};
 				format [localize "str_player_death_killed",_message select 1,_message select 2,_message select 3,_message select 4]
