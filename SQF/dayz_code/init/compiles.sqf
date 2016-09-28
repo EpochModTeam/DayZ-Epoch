@@ -605,10 +605,10 @@ if (!isDedicated) then {
 			death_4 = "";
 		};
 
-		death_1 = format["<t size='0.5'>%1</t><img image='%2'/><t size='0.5'> %3 (%4m)</t>",_sourceName,_icon,_playerName,_distance];;
+		death_1 = format["<t size='.528' align='left'>%1</t><img size='.8' align='left' image='%2'/><t size='.528' align='left'> %3 (%4m)</t>",_sourceName,_icon,_playerName,_distance];
 		death_1_time = diag_ticktime;
 		_message = format ["%1<br />%2<br />%3<br />%4",death_1,death_2,death_3,death_4];
-		[_message,safeZoneX,safeZoneY,10,0,0,8000] call BIS_fnc_dynamicText;
+		[_message,safeZoneX,safeZoneY,10,0,0,8000] spawn BIS_fnc_dynamicText;
 	};
 	
 	dayz_originalPlayer = player;
