@@ -17,6 +17,7 @@ _method = toString (_this select 9);
 //Mark player as dead so we bypass the ghost system
 dayz_died set [count dayz_died, _playerID];
 
+_newObject setVariable ["inCombat",0,false];
 _newObject setVariable ["processedDeath",diag_tickTime];
 _newObject setVariable ["bodyName",_playerName,true];
 _pos = getPosATL _newObject;
