@@ -1,11 +1,10 @@
-private ["_exit","_nearestObj","_nearestObjects","_friendlies","_rID","_display","_cTarget","_dis"];
+private ["_exit","_nearestObjects","_friendlies","_rID","_display","_cTarget","_dis"];
 
 // players inside vehicle can always access its gear
 if ((vehicle player) == player) then {
 	disableSerialization;
 	_display = _this select 0;
 	_cTarget = cursorTarget;
-	_nearestObj = objNull;
 	_dis = if (_cTarget isKindOf "USEC_ch53_E" || _cTarget isKindOf "MV22") then {25} else {12};
 	_exit = false;
 	
