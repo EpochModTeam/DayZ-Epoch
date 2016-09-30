@@ -46,7 +46,7 @@ diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2",
 _isMine = _sourceWeapon == "RunOver";
 
 if (_method in ["explosion","melee","shot","shothead","shotheavy"] && !_isMine) then {
-	if (_sourceName == _playerName && !_isMine) then {
+	if (_sourceName == _playerName) then {
 		_message = ["suicide",_playerName];
 	} else {
 		if (_sourceWeapon == "") then {_sourceWeapon = "unknown weapon";};
