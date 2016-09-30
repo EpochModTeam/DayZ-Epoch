@@ -14,7 +14,9 @@ _source = _this select 3;
 _isPZombie = player isKindOf "PZombie_VB";
 _ammo = _this select 4;
 _model = typeOf player;
-_Viralzed = typeOf _source in DayZ_ViralZeds;
+_sourceType = typeOf _source;
+_sourceVehicleType = typeOf (vehicle _source);
+_Viralzed = _sourceType in DayZ_ViralZeds;
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
 _isPlayer = (isPlayer _source);
@@ -155,12 +157,12 @@ if (_unit == player) then {
     if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {((_source isKindOf "CAManBase") AND {(!local _source )})}) then {
 		_wpst = weaponState _source;
         if (diag_ticktime-(_source getVariable ["lastloghit",0])>2) then {
-            private ["_sourceWeap"];
+            //private ["_sourceWeap"];
             _source setVariable ["lastloghit",diag_ticktime];
-
+			/* // Excessively intensive logging (Network send on every hit)
             _sourceDist = round(_unit distance _source);
             _sourceWeap = switch (true) do {
-                case ((vehicle _source) != _source) : { format ["in %1",getText(configFile >> "CfgVehicles" >> (typeOf (vehicle _source)) >> "displayName")] };
+                case ((vehicle _source) != _source) : { format ["in %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
                 case (_isZombieHit) : { _ammo };
                 case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
                 case (["Horn", currentWeapon _source] call fnc_inString) : {"with suspicious vehicle "+str((getposATL _source) nearEntities [["Air", "LandVehicle", "Ship"],5])};
@@ -173,6 +175,7 @@ if (_unit == player) then {
                 PVDZ_sec_atp = [_unit, _source, toArray _sourceWeap, _sourceDist]; //Send arbitrary string as array to allow stricter publicVariableVal.txt filter
                 publicVariableServer "PVDZ_sec_atp";
             };
+			*/
         };
     };
 	
@@ -182,7 +185,7 @@ if (_unit == player) then {
 		case (_ammo == "RunOver"): {"runover"};
 		case (_ammo == "Dragged"): {"eject"};
 		case (_ammo in MeleeAmmo): {"melee"};
-		case (!isNil "_wpst" && {!(_wpst select 0 in ["","Throw"]) or (vehicle _source != _source)}): {"shot"};
+		case (!isNil "_wpst" && {!(_wpst select 0 in ["","Throw"]) or {_sourceVehicleType isKindOf "LandVehicle" or {_sourceVehicleType isKindOf "Air"} or {_sourceVehicleType isKindOf "Ship"}}}): {"shot"};
 		default {"none"};
 	};
 	if (dayz_lastDamageSource != "none") then {dayz_lastDamageTime = diag_tickTime;};
@@ -237,7 +240,7 @@ if (_damage > 0.4) then {
 	//Bullet types
         case 2: {_scale = _scale + 150};
 	//Zombies
-		case 3: {_scale = getNumber (configFile >> "CfgVehicles" >> (typeOf _source) >> "damageScale"); if (dayz_DamageMultiplier > 1) then {_scale = _scale * dayz_DamageMultiplier;};};
+		case 3: {_scale = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "damageScale"); if (dayz_DamageMultiplier > 1) then {_scale = _scale * dayz_DamageMultiplier;};};
 	//Dragged
 		case 4: {_scale = _scale - 150};
 	//RunOver
@@ -246,7 +249,7 @@ if (_damage > 0.4) then {
 	
 	//Display some info in the players log file.
     if (_unit == player) then {
-		diag_log format["DAMAGE: player hit by %1 in %2 with %3 for %4 scaled to %5, Conscious %6",(typeOf _source),_hit,if (_ammo == "") then { "" } else { _ammo },(str(_damage)),(str(_damage * _scale)),(str (!_unconscious))];
+		diag_log format["DAMAGE: player hit by %1 in %2 with %3 for %4 scaled to %5, Conscious %6",_sourceVehicleType,_hit,if (_ammo == "") then { "" } else { _ammo },(str(_damage)),(str(_damage * _scale)),(str (!_unconscious))];
         r_player_blood = r_player_blood - (_damage * _scale);
  	
 	//Pain and Infection
@@ -271,7 +274,7 @@ if (_damage > 0.4) then {
     _isScratched = false;
     
 	_rndBleed = floor(random 100);
-    _rndBleedChance = getNumber (configFile >> "CfgVehicles" >> (typeOf _source) >> "BleedChance");
+    _rndBleedChance = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "BleedChance");
     _hitBleed = (_rndBleed < _rndBleedChance);
 
     if (_hitBleed) then {
@@ -311,7 +314,7 @@ if (_damage > 0.4) then {
             if ((!r_player_infected) and !(r_player_Sepsis select 0)) then {
                 if (_type == 3) then {
                     _rndSepsis = floor(random 100);
-                    _sepsisChance = getNumber (configFile >> "CfgVehicles" >> (typeOf _source) >> "sepsisChance");
+                    _sepsisChance = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "sepsisChance");
 
                     if (_rndSepsis < _sepsisChance) then {
                         r_player_Sepsis = [true, diag_tickTime];
@@ -391,7 +394,7 @@ if (_type == 1) then {
     if (_damage > 4) then {
         //serious ballistic damage
         if (_unit == player) then {
-            _id = [_source,"explosion"] spawn player_death;
+            _id = [_source,"explosion",_ammo] spawn player_death;
         };
     } else {
         if (_damage > 2) then {

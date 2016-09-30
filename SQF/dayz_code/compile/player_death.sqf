@@ -1,4 +1,4 @@
-private ["_pos","_display","_body","_playerID","_array","_source","_method","_isBandit","_punishment","_humanityHit","_myKills","_humanity","_kills","_killsV","_myGroup","_model","_infected","_distance","_sourceVehicle","_sourceWeapon","_sourceName"];
+private ["_pos","_display","_body","_playerID","_array","_source","_method","_isBandit","_punishment","_humanityHit","_myKills","_humanity","_kills","_killsV","_myGroup","_model","_infected","_distance","_sourceVehicle","_sourceWeapon","_sourceName","_ammo"];
 disableSerialization;
 if (deathHandled) exitWith {};
 deathHandled = true;
@@ -35,12 +35,14 @@ _distance = 0;
 if (count _this > 0) then {
 	_source = _this select 0;
 	_method = _this select 1;
+	_ammo = if (count _this > 2) then {_this select 2} else {""};
 	
 	if (!isNull _source) then {
 		if (!isNull _body) then {_distance = round (_body distance _source);};
 		_sourceVehicle = vehicle _source;
 		_sourceWeapon = if (_sourceVehicle != _source) then {typeOf _sourceVehicle} else {currentWeapon _source};
 		if (_sourceWeapon == "Throw") then {_sourceWeapon = (weaponState _source) select 3;};
+		if (_ammo in ["PipeBomb","RunOver"]) then {_sourceWeapon = _ammo;}; // Mine or Satchel
 		if (alive _source) then {
 			_sourceName = if (isPlayer _source) then {name _source} else {localize "STR_EPOCH_AI"};
 		};
