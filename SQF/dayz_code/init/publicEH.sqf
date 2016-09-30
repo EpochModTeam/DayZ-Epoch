@@ -348,8 +348,9 @@ if (!isDedicated) then {
 			case "suicide": {format [localize "str_player_death_suicide",_message select 1]};
 		};
 		switch (toLower DZE_DeathMsgChat) do {
-			case "global": {objNull globalChat _message;};
-			case "side": {objNull sideChat _message;};
+			// Sending from logic (FunctionsManager) or agent (zombie, animal, trader) object shows message without side i.e. "BLUFOR" or quotes
+			case "global": {BIS_functions_mainscope globalChat _message;};
+			case "side": {BIS_functions_mainscope sideChat _message;};
 			case "system": {systemChat _message;};
 		};
 		if (DZE_DeathMsgCutText) then {_message call dayz_rollingMessages;};
