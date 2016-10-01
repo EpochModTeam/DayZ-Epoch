@@ -104,11 +104,11 @@ switch (_status) do {
 	};
 };
 
-switch(_type) do {
-	case "VaultStorage": { _type = "Safe"; };
-	case "VaultStorageLocked": { _type = "Safe"; };
-	case "LockboxStorage": { _type = "LockBox"; };
-	case "LockboxStorageLocked": { _type = "LockBox"; };
+_type = switch _type do {
+    case "VaultStorage";
+    case "VaultStorageLocked": {"Safe"};
+    case "LockboxStorage";
+    case "LockboxStorageLocked": {"LockBox"};
 };
 
 diag_log format["%6 %5: ObjID:%1 ObjUID:%2 CharID:%7 OwnerID:%8 BY %3(%4)",_objectID,_objectUID,_name,_puid,_statusText,_type,_charID,_ownerID];
