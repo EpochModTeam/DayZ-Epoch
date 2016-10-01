@@ -331,6 +331,7 @@ if (!isDedicated) then {
 			case "killed": {
 				_weapon = _message select 3;
 				_root = switch true do {
+					case (_weapon in ["PipeBomb","Mine","MineE"]): {"CfgMagazines"}; // isClass in both
 					case (isClass (configFile >> "CfgWeapons" >> _weapon)): {"CfgWeapons"};
 					case (isClass (configFile >> "CfgVehicles" >> _weapon)): {"CfgVehicles"};
 					case (isClass (configFile >> "CfgMagazines" >> _weapon)): {"CfgMagazines"};
