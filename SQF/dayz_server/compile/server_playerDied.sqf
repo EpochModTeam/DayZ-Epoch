@@ -1,6 +1,6 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_characterID","_minutes","_newObject","_playerID","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method"];
+private ["_characterID","_minutes","_newObject","_playerID","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 
 _characterID = _this select 0;
@@ -43,8 +43,10 @@ diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2",
 
 
 // EPOCH DEATH MESSAGES
-if (_method in ["explosion","melee","shot","shothead","shotheavy"]) then {
-	if (_sourceName == _playerName) then {
+_suicide = _sourceName == _playerName;
+
+if (_method in ["explosion","melee","shot","shothead","shotheavy"] && !(_method == "explosion" && _suicide)) then {
+	if (_suicide) then {
 		_message = ["suicide",_playerName];
 	} else {
 		if (_sourceWeapon == "") then {_sourceWeapon = "unknown weapon";};

@@ -185,7 +185,8 @@ if (_unit == player) then {
 		case (_ammo == "RunOver"): {"runover"};
 		case (_ammo == "Dragged"): {"eject"};
 		case (_ammo in MeleeAmmo): {"melee"};
-		case (!isNil "_wpst" && {!(_wpst select 0 in ["","Throw"]) or {_sourceVehicleType isKindOf "LandVehicle" or {_sourceVehicleType isKindOf "Air"} or {_sourceVehicleType isKindOf "Ship"}}}): {"shot"};
+		case (!isNil "_wpst" && {!(_wpst select 0 in ["","Throw"])}): {"shot"};
+		case (_sourceVehicleType isKindOf "LandVehicle" or {_sourceVehicleType isKindOf "Air"} or {_sourceVehicleType isKindOf "Ship"}): {"shot"};
 		default {"none"};
 	};
 	if (dayz_lastDamageSource != "none") then {dayz_lastDamageTime = diag_tickTime;};
