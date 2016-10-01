@@ -8,11 +8,13 @@ dz_fn_array_pushBack =
 //Returns true if the given predicate evaluates to true for any element in the array
 dz_fn_array_any =
 {
+	private "_return";
+	_return = false;
 	{
-		if (_x call (_this select 1)) exitWith { true };
-		false
+		if (_x call (_this select 1)) exitWith { _return = true };
 	}
 	foreach (_this select 0);
+	_return
 };
 
 //Returns true if the given predicate evaluates to true for all elements in the array
