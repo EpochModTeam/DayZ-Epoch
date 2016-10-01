@@ -85,12 +85,11 @@ _key call server_hiveWrite;
 
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
-
+	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	_object setVariable ["ObjectID", _oid, true];
-	
 	_object setVariable ["lastUpdate",time];
-	
 	_object setVariable ["CharacterID", _characterID, true];
+	_object setVelocity [0,0,1];
 
 	if(DZE_TRADER_SPAWNMODE) then {
 		_object attachTo [_object_para, [0,0,-1.6]];
@@ -99,9 +98,7 @@ _key call server_hiveWrite;
 		detach _object;
 		deleteVehicle _object_para;
 	};
-
-	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
-
+	
 	_object call fnc_veh_ResetEH;
 	
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.
