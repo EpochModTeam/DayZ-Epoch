@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `Character_DATA` (
 -- ----------------------------
 CREATE TABLE IF NOT EXISTS `Object_DATA` (
   `ObjectID` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `ObjectUID` bigint(24) NOT NULL DEFAULT '0',
+  `ObjectUID` varchar(64) NOT NULL DEFAULT '0',
   `Instance` int(11) unsigned NOT NULL,
   `Classname` varchar(50) DEFAULT NULL,
   `Datestamp` datetime NOT NULL,
