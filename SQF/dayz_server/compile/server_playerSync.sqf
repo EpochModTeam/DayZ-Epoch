@@ -149,7 +149,7 @@ if (_currentModel == _modelChk) then {
 	_character setVariable ["model_CHK",typeOf _character];
 };
 if (count _this > 4) then { //calling from player_onDisconnect
-	if (_this select 4 > 0) then { //combat logged
+	if (_this select 4) then { //combat logged
 		_medical set [1, true]; //set unconcious to true
 		_medical set [10, 150]; //combat timeout
 		//_character setVariable ["NORRN_unconscious",true,true]; // Set status to unconscious

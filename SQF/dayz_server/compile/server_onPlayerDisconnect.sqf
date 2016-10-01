@@ -27,7 +27,7 @@ if (isNil "_playerObj") exitWith {
 //If the the playerObj exists lets run all sync systems
 
 _characterID = _playerObj getVariable["characterID", "?"];
-_inCombat = _playerObj getVariable ["inCombat",0];
+_inCombat = _playerObj getVariable ["inCombat",false];
 _Sepsis = _playerObj getVariable["USEC_Sepsis",false];
 
 //Login processing do not sync
@@ -58,7 +58,7 @@ if (_characterID != "?") exitwith {
 		*/
 		
 		//Punish combat log
-		if (_inCombat > 0 && _playerPos distance (getMarkerPos "respawn_west") > 1500) then {
+		if (_inCombat && _playerPos distance (getMarkerPos "respawn_west") > 1500) then {
 			// Moved setVariables to server_playerSync since they are high priority			
 			// Messages are low priority. Player object not needed
 			diag_log format["PLAYER COMBAT LOGGED: %1(%3) at location %2",_playerName,_playerPos,_playerUID];

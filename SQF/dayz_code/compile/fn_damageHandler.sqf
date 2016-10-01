@@ -68,7 +68,9 @@ dayz_lastDamageSourceNull = false;
 if (_unit == player) then {
 //Set player in combat
 	_unit setVariable["startcombattimer", 1];
-	_unit setVariable["inCombat", 1, true];
+	if (_unit getVariable["inCombat",false]) then {
+		_unit setVariable["inCombat",true,true];
+	};
 
     if (_hit == "") exitWith //Ignore none part dmg. Exit after processing humanity hit
 	{
@@ -152,14 +154,13 @@ if (_unit == player) then {
 		};
 	};
   
-
+	//Overkill logging. PVS network send every two seconds = lag. Not worth it just for extra anticheat logs.
     //Log to server :-( OverProcessing really not needed.
-    if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {((_source isKindOf "CAManBase") AND {(!local _source )})}) then {
+    /*if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {((_source isKindOf "CAManBase") AND {(!local _source )})}) then {
 		_wpst = weaponState _source;
         if (diag_ticktime-(_source getVariable ["lastloghit",0])>2) then {
-            //private ["_sourceWeap"];
+            private ["_sourceWeap"];
             _source setVariable ["lastloghit",diag_ticktime];
-			/* // Excessively intensive logging (Network send on every hit)
             _sourceDist = round(_unit distance _source);
             _sourceWeap = switch (true) do {
                 case ((vehicle _source) != _source) : { format ["in %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
@@ -175,9 +176,8 @@ if (_unit == player) then {
                 PVDZ_sec_atp = [_unit, _source, toArray _sourceWeap, _sourceDist]; //Send arbitrary string as array to allow stricter publicVariableVal.txt filter
                 publicVariableServer "PVDZ_sec_atp";
             };
-			*/
         };
-    };
+    };*/
 	
 	dayz_lastDamageSource = switch (true) do {
 		case (_falling): {"fall"};
@@ -185,8 +185,9 @@ if (_unit == player) then {
 		case (_ammo == "RunOver"): {"runover"};
 		case (_ammo == "Dragged"): {"eject"};
 		case (_ammo in MeleeAmmo): {"melee"};
-		case (!isNil "_wpst" && {!(_wpst select 0 in ["","Throw"])}): {"shot"};
-		case (_sourceVehicleType isKindOf "LandVehicle" or {_sourceVehicleType isKindOf "Air"} or {_sourceVehicleType isKindOf "Ship"}): {"shot"};
+		case (_source isKindOf "CAManBase" && !local _source && !(currentWeapon _source in ["","Throw"])): {"shot"};
+		//(vehicle _source != _source) does not work to detect if source unit is in a vehicle in HandleDamage EH
+		case (_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship"): {"shot"};
 		default {"none"};
 	};
 	if (dayz_lastDamageSource != "none") then {dayz_lastDamageTime = diag_tickTime;};

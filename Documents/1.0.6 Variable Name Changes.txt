@@ -15,7 +15,7 @@
 	- dayz_allowedObjects --> DayZ_SafeObjects
 	- dayz_CLBase --> dz_loot_groups (similar not identical)
 	- dayz_CLChances --> dz_loot_weighted (similar not identical)
-	- dayz_combat --> no longer exists use (player getVariable["combattimeout",0] >= diag_tickTime)
+	- dayz_combat --> no longer exists use (player getVariable["inCombat",false])
 	- dayz_fullMoonNights --> dayz_ForcefullmoonNights
 	- dayz_MapArea --> no longer exists (was only used for DynamicVehicleArea and HeliCrashArea)
 	- dayz_sellDistance_vehicle, dayz_sellDistance_boat, dayz_sellDistance_air --> Z_VehicleDistance

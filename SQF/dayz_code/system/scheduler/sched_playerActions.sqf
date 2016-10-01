@@ -7,8 +7,8 @@ sched_playerActions = {
 	call fnc_usec_upgradeActions;
 	
 	//combat check
-	if ((player getVariable ["combattimeout",0] < diag_tickTime) && {player getVariable ["inCombat", 0] > 0}) then {
-		player setVariable ["inCombat", 0, true];
+	if ((player getVariable ["combattimeout",0] < diag_tickTime) && {player getVariable ["inCombat",false]}) then {
+		player setVariable ["inCombat", false, true];
 	};
 	
 	objNull
