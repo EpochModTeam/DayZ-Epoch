@@ -178,7 +178,6 @@ while {r_doLoop} do {
 				};
 			};
 			
-			localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
 			//see Note 1
 			//[player,_unit,"loc",rTITLETEXT,format["Transfusion of %1 in progress, remain still...",_bagToRemove],"PLAIN DOWN"] call RE;
 			
