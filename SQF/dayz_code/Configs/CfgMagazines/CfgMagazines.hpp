@@ -3,6 +3,7 @@ class CfgMagazines
 	//External references
 	class CA_Magazine;
 	class HandGrenade;
+	class TimeBomb;
 	
 	
 	

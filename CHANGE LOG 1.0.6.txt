@@ -65,6 +65,7 @@
 [CHANGED] With R3Fweight on overburdened players are now forced to move slowly instead of being knocked out. The scream was also removed. #1145 @icomrade @ebaydayz
 [CHANGED] Abort and respawn are now disabled immediately in the pause menu onLoad to compensate for low fps delay. @ebaydayz
 [CHANGED] Player_onPause is now customizable by admins along with the new unscheduled fn_pauseMenuChecks. #1340 @Rimblock @ebaydayz
+[CHANGED] Satchel charges and mines now take one inventory slot instead of two. @ebaydayz
 
 [FIXED] Zombies now target and attack players correctly with 1.8.8 code
 [FIXED] Server position sync bug after falling unconscious. Fixes AI on server not seeing the player after knock out and position revert after relog. #1522 @ebaydayz

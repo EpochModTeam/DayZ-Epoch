@@ -16402,5 +16402,17 @@
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_HE_NAME">
 			<English>20Rnd. 19mm HE.</English>
 		</Key>
+		<Key ID="STR_DZ_MAG_SATCHEL_NAME">
+			<English>Satchel Charge</English>
+			<French>Charges en sacoche</French>
+			<Spanish>Cargas concentradas</Spanish>
+			<Italian>Cariche esplosive</Italian>
+			<Hungarian>Rádiós Bomba</Hungarian>
+			<Polish>Ładunki wybuchowe</Polish>
+			<Russian>Взрывчатка</Russian>
+			<German>Sprengladungen</German>
+			<Czech>Nálože plastické trhaviny</Czech>
+			<Japanese>梱包爆薬</Japanese>
+		</Key>
 	</Package>
 </Project>

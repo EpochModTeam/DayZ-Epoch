@@ -24,3 +24,4 @@
 #include "equip_lever.hpp"
 #include "WaterBottle.hpp"
 //#include "Canteen.hpp"
+#include "Explosives.hpp"
