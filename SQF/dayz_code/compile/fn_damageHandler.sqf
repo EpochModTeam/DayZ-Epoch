@@ -5,7 +5,7 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
     - Function
     - [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private ["_HitBy","_end","_unit","_hit","_damage","_unconscious","_source","_ammo","_Viralzed","_isMinor","_isHeadHit","_isPlayer","_isBandit","_punishment","_humanityHit","_myKills","_wpst","_sourceDist","_sourceWeap","_scale","_type","_nrj","_rndPain","_hitPain","_wound","_isHit","_isbleeding","_rndBleed","_hitBleed","_isInjured","_lowBlood","_rndInfection","_hitInfection","_isCardiac","_chance","_falling","_model","_isZombieHit","_sourceType","_sourceVehicleType"];
+private ["_HitBy","_end","_unit","_hit","_damage","_unconscious","_source","_ammo","_Viralzed","_isMinor","_isHeadHit","_isPlayer","_isBandit","_punishment","_humanityHit","_myKills","_wpst","_sourceDist","_sourceWeap","_scale","_type","_nrj","_rndPain","_hitPain","_wound","_isHit","_isbleeding","_rndBleed","_hitBleed","_isInjured","_lowBlood","_rndInfection","_hitInfection","_isCardiac","_chance","_falling","_model","_isZombieHit","_sourceType","_sourceVehicleType","_isMan"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -19,6 +19,7 @@ _sourceVehicleType = typeOf (vehicle _source);
 _Viralzed = _sourceType in DayZ_ViralZeds;
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
+_isMan = _sourceType isKindOf "CAManBase";
 _isPlayer = (isPlayer _source);
 _isZombieHit = _ammo == "zombie";
 
@@ -185,7 +186,7 @@ if (_unit == player) then {
 		case (_ammo == "RunOver"): {"runover"};
 		case (_ammo == "Dragged"): {"eject"};
 		case (_ammo in MeleeAmmo): {"melee"};
-		case (_source isKindOf "CAManBase" && !local _source && !(currentWeapon _source in ["","Throw"])): {"shot"};
+		case (_isMan && !local _source && !(currentWeapon _source in ["","Throw"])): {"shot"};
 		//(vehicle _source != _source) does not work to detect if source unit is in a vehicle in HandleDamage EH
 		case (_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship"): {"shot"};
 		default {"none"};
@@ -228,7 +229,7 @@ if (_damage > 0.4) then {
     
     //End body part scale
 	//???????????
-    if ((isPlayer _source) and !(player == _source)) then {
+    if (!(player == _source) && (isPlayer _source or (_isMan && !_isZombieHit))) then {
         _scale = _scale + 800;
         if (_isHeadHit) then {
             _scale = _scale + 500;
