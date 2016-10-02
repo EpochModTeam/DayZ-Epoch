@@ -15,7 +15,6 @@ dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersio
 _hiveLoaded = false;
 _serverVehicleCounter = [];
 _tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
-_respawnPos = getMarkerpos "respawn_west";
 diag_log "HIVE: Starting";
 
 //Set the Time
@@ -82,7 +81,7 @@ if (_legacyStreamingMethod) then {
 diag_log ("HIVE: Streamed " + str(_val) + " objects");
 
 {
-	private ["_object"];
+	private ["_object","_posATL"];
 	//Parse Array
 	_action = 		_x select 0; 
 	_idKey = 		_x select 1;
@@ -100,7 +99,7 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 	_maintenanceModeVars = [];
 	
 	_dir = 90;
-	_pos = _respawnPos;
+	_pos = [0,0,0];
 	_wsDone = false;
 	_wsCount = count _worldspace;
 
@@ -109,56 +108,57 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 	_vecExists = false;
 	_ownerPUID = "0";
 
-	if (_wsCount >= 1) then {
+	if (_wsCount >= 2) then {
 		_dir = _worldspace select 0;
-		if (_wsCount >= 2) then {
-			_i = _worldspace select 1;
-			if (count _i == 3) then {
-				_pos = _i;
-				_wsDone = true;					
-			};
-			if (_wsCount >= 3) then{
-				_ws2TN = typename (_worldspace select 2);
-				_ws3TN = typename (_worldspace select 3);
-				if (_wsCount == 3) then{
-						if (_ws2TN == "STRING") then{
-							_ownerPUID = _worldspace select 2;
-						} else {
-							 if (_ws2TN == "ARRAY") then{
-								_vector = _worldspace select 2;
-								_vecExists = true;
-							};                  
-						};
-				} else {
-					if (_wsCount == 4) then{
-						if (_ws3TN == "STRING") then{
-							_ownerPUID = _worldspace select 3;
-						} else {
-							if (_ws2TN == "STRING") then{
-								_ownerPUID = _worldspace select 2;
-							};
-						};
-						if (_ws2TN == "ARRAY") then{
+		_posATL = _worldspace select 1;
+		if (count _posATL == 3) then {
+			_pos = _posATL;
+			_wsDone = true;					
+		};
+		if (_wsCount >= 3) then{
+			_ws2TN = typename (_worldspace select 2);
+			_ws3TN = typename (_worldspace select 3);
+			if (_wsCount == 3) then{
+					if (_ws2TN == "STRING") then{
+						_ownerPUID = _worldspace select 2;
+					} else {
+						 if (_ws2TN == "ARRAY") then{
 							_vector = _worldspace select 2;
 							_vecExists = true;
-						} else {
-							if (_ws3TN == "ARRAY") then{
-								_vector = _worldspace select 3;
-								_vecExists = true;
-							};
+						};                  
+					};
+			} else {
+				if (_wsCount == 4) then{
+					if (_ws3TN == "STRING") then{
+						_ownerPUID = _worldspace select 3;
+					} else {
+						if (_ws2TN == "STRING") then{
+							_ownerPUID = _worldspace select 2;
+						};
+					};
+					if (_ws2TN == "ARRAY") then{
+						_vector = _worldspace select 2;
+						_vecExists = true;
+					} else {
+						if (_ws3TN == "ARRAY") then{
+							_vector = _worldspace select 3;
+							_vecExists = true;
 						};
 					};
 				};
-			} else {
-				_worldspace set [count _worldspace, "0"];
 			};
+		} else {
+			_worldspace set [count _worldspace, "0"];
 		};
 	};
 
 	if (!_wsDone) then {
-		//_pos = [,0,30,10,0,2000,0] call BIS_fnc_findSafePos;
-		if (count _pos < 3) then { _pos = [_worldspace select 0,_worldspace select 1,0]; };
-		diag_log format["MOVED OBJ: %1 of class %2 to pos: [0,0,0]",_idKey,_type];
+		if ((count _posATL) >= 2) then {
+			_pos = [_posATL select 0,_posATL select 1,0];
+			diag_log format["MOVED OBJ: %1 of class %2 with worldspace array = %3 to pos: %4",_idKey,_type,_worldspace,_pos];
+		} else {
+			diag_log format["MOVED OBJ: %1 of class %2 with worldspace array = %3 to pos: [0,0,0]",_idKey,_type,_worldspace];
+		};
 	};
 
 	//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
