@@ -1,5 +1,5 @@
 // animHealed.sqf
-private["_array","_unit","_medic","_amount","_display","_control","_lowBlood"];
+private["_array","_unit","_medic","_amount","_display","_control","_lowBlood","_started"];
 disableserialization;
 //[_unit,player,_bloodAmount]
 _array = _this; //_this select 0;
@@ -8,6 +8,7 @@ _medic = _array select 1; //Player sending the blood
 _amount = _array select 2; //total amount of blood given
 
 _timer = diag_tickTime;
+_started = false;
 r_doLoop = true;
 r_interrupt = false;
 
@@ -27,7 +28,11 @@ while {r_doLoop} do {
 		if (_amount > 0) then {
 			_amount = _amount - 500;
 		};
-		localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
+		
+		if (!_started) then {
+			localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
+			_started = true;
+		};
 		
 		//Make sure the unit is a player and update stats based on whats being sent (should mimic 500 units of blood being sent)
 		if (_unit == player) then {
