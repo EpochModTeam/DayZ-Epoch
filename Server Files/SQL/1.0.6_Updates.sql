@@ -15,7 +15,6 @@ ALTER TABLE `Object_DATA` CHANGE `Hitpoints` `Hitpoints` VARCHAR(1024) CHARACTER
 -- Update Object_DATA to support longer CharacterID and hitpoints
 -- ----------------------------
 ALTER TABLE Object_DATA MODIFY COLUMN CharacterID bigint(20);
-ALTER TABLE Object_DATA MODIFY COLUMN ObjectUID varchar(64);
 ALTER TABLE Object_DATA MODIFY COLUMN Hitpoints varchar(1024);
 
 -- ----------------------------

@@ -169,19 +169,16 @@ server_getDiff2 = {
 	_result
 };
 
-// 1.8.7 dayz_objectUID2 seems to generate keys that are too long for Epoch hive. Keep old method for now.
+//seems max is 19 digits
 dayz_objectUID2 = {
-    private["_position","_dir","_key","_element","_vector","_set","_vecCnt","_usedVec"];
+    private["_position","_dir","_time" ,"_key"];
 	_dir = _this select 0;
+	_time = round diag_tickTime;
+	if (_time > 99999) then {_time = round(random 99999);}; //prevent overflow if server isn't restarted
 	_key = "";
 	_position = _this select 1;
-    if((count _this) == 2) then {
-		//_key = str(round(diag_tickTime max 1)) + (str(round(abs(_position select 0))) + str(round(abs(_position select 1))) + str(round _dir));
-		_key = format["%1%2%3%4%5",(round(diag_tickTime max 1)), (round(abs(_position select 0))), (round(abs(_position select 1))), (round _dir), (round (random(diag_tickTime max 1)))];
-	} else {
-		_key = format["%1%2%3%4%5%6",(round(diag_tickTime max 1)), (round(abs(_position select 0))), (round(abs(_position select 1))), (round(abs(_position select 2))), (round _dir), (round (random(diag_tickTime max 1)))];
-	};
-	_key
+	_key = format["%1%2%3%4", round(_time + abs(_position select 0)), round(_dir), round(abs(_position select 1)), _time];
+	_key;
 };
 
 dayz_recordLogin = {
