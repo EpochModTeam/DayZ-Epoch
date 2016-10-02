@@ -455,7 +455,7 @@ class AdvancedTrading
 			x = 0.63 * safezoneW + safezoneX;
 			y = 0.77 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
-			onButtonClick = "[[],0] call epoch_returnChange; ((ctrlParent (_this select 0)) closeDisplay 9000); localize ""STR_EPOCH_PLAYER_307"" call dayz_rollingMessages;";
+			onButtonClick = "[[],0,false,0,[],[],true] call Z_returnChange; ((ctrlParent (_this select 0)) closeDisplay 9000); localize ""STR_EPOCH_PLAYER_307"" call dayz_rollingMessages;";
 			colorBackground[] =  {1,1,1,1};
 			color[] = {0,0,0,1};
 			text = $STR_EPOCH_PLAYER_306;

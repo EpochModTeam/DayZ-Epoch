@@ -4,20 +4,46 @@ private ["_return_change","_ItemTopaz","_GemTotal","_GemTotal2","_ItemObsidian",
 "_gold_10oz_a","_gold_10oz_b","_briefcase_100oz","_gold_10oz","_gold_1oz_a","_gold_1oz_b","_gold_1oz",
 "_silver_10oz_a","_silver_10oz_b","_silver_10oz","_silver_1oz_a","_silver_1oz_b","_silver_1oz",
 "_successful","_trade_total","_total_currency","_addRegularMag","_justChecking","_moneyAdded",
-"_regularMagsToBuy","_moneyInGear","_moneyInBackpack"];
+"_regularMagsToBuy","_moneyInGear","_moneyInBackpack","_part","_worth","_findGem","_combine","_combineOk"];
 
-_successful = false;
+
 _trade_total = _this select 0;
 _total_currency = _this select 1;
 _justChecking = _this select 2;
 _regularMagsToBuy = _this select 3;
 _moneyInGear = _this select 4;
 _moneyInBackpack = _this select 5;
+_combine = _this select 6;
+
 _moneyAdded = 0;
+_return_change = 0;
+_successful = false;
 Z_ChangeInBackpack = false;
 Z_ChangeOverflow = false;
 
-_return_change = 0;
+if (_combine) then {
+	_trade_total = 0;
+	_total_currency = 0;
+	_inventoryMoney = [];
+	_combineOk = 1;
+	{
+		_part =  (configFile >> "CfgMagazines" >> _x);
+		_worth =  (_part >> "worth");
+		if isNumber (_worth) then {
+			_combineOk = [player,_part,1] call BIS_fnc_invRemove;
+			_total_currency = _total_currency + getNumber(_worth);
+		} else {
+			_findGem = DZE_GemList find _x;
+			if (_findGem >= 0) then {
+				_worth = DZE_GemWorthList select _findGem;
+				_total_currency = _total_currency + _worth;
+				_combineOk = [player,_part,1] call BIS_fnc_invRemove;
+			};
+		};
+		if (_combineOk == 0) exitWith { localize "STR_EPOCH_PLAYER_307_FAIL" call dayz_rollingMessages; };
+	} forEach (magazines player); // Needs to be forEach otherwise count throws a hissy fit with BIS_fnc_invRemove returning a 0
+};
+
 if (!Z_Selling) then {
 	_return_change = _total_currency - _trade_total;
 } else {

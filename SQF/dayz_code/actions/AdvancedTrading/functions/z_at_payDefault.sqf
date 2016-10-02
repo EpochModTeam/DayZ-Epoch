@@ -28,7 +28,7 @@ if (!_justChecking) then {
 if (_totalWorth - _toPay == 0) then { // Money in inventory was exact amount
 	_success = true;
 } else {
-	_success = [_toPay,_totalWorth,_justChecking,_regularMagsToBuy,_moneyInGear,_moneyInBackpack] call Z_returnChange;
+	_success = [_toPay,_totalWorth,_justChecking,_regularMagsToBuy,_moneyInGear,_moneyInBackpack,false] call Z_returnChange;
 };
 
 _success
