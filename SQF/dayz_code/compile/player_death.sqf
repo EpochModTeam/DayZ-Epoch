@@ -76,14 +76,12 @@ _array = _this;
 if (count _array > 0) then {
 	_source = _array select 0;
 	_method = _array select 1;
-	if ((!isNull _source) && (_source != player)) then {
+	if (!isNull _source && _source != player && isPlayer _source) then { //Don't send humanity hit to AI units
 		_isBandit = (player getVariable["humanity",0]) <= -2000;
 		//_isBandit = (_model in ["Bandit1_DZ","BanditW1_DZ"]);
 		
 		//if you are a bandit or start first - player will not recieve humanity drop
-		_punishment = 
-			_isBandit ||
-			{player getVariable ["OpenTarget",false]};
+		_punishment = ((_isBandit or {player getVariable ["OpenTarget",false]}) && !_isPZombie);
 		_humanityHit = 0;
 
 		if (!_punishment) then {
@@ -102,13 +100,10 @@ if (count _array > 0) then {
 			_killsV = _source getVariable ["banditKills",0];
 			_source setVariable ["banditKills",(_killsV + 1),true];
 		};
-	};
-	_body setVariable ["deathType",_method,true];
-	
-	//Setup for study bodys.
-	if ((!isNull _source) && (_source != player)) then {
+		//Setup for study bodys.
 		_body setVariable ["KillingBlow",_source,true];
 	};
+	_body setVariable ["deathType",_method,true];
 };
 
 terminate dayz_musicH;

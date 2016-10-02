@@ -15,7 +15,6 @@ if ((_unit == player) or (vehicle player != player)) then {
 	//Self Healing
 	_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medPainkiller.sqf";
 } else {
-	//PVCDZ_plr_Humanity = [player,20];
 	[20,0] call player_humanityChange;
 };
 
