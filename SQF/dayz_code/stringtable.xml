@@ -771,8 +771,6 @@
 			<English>Transfusion failed. Missing Transfusion Kit!</English>
 			<German>Transfusion fehlgeschlagen! Transfusionsbesteck fehlt!</German>
 			<Russian>Переливание отменено. Отсутствует набор для переливания!</Russian>
-			<Spanish>Transfusion failed. Missing Transfusion Kit!</Spanish>
-			<French>Transfusion failed. Missing Transfusion Kit!</French>
 			<Czech>Transfúze selhala, chybí transfúzní souprava!</Czech>
 		</Key>
 		<Key ID="str_actions_medical_transfusion_start">
@@ -843,7 +841,6 @@
 			<English>Destroy %1</English>
 			<German>%1 zerstören</German>
 			<Russian>Уничтожить %1</Russian>
-			<Spanish>Destroy %1</Spanish>
 			<French>Détruire %1</French>
 			<Czech>Zničit %1</Czech>
 		</Key>
@@ -941,10 +938,8 @@
 		</Key>
 		<Key ID="STR_CHAR_2">
 			<English>Bandit</English>
-			<German>Bandit</German>
 			<Russian>Бандит</Russian>
 			<Spanish>Bandido</Spanish>
-			<French>Bandit</French>
 			<Czech>Bandita</Czech>
 		</Key>
 		<Key ID="STR_MAG_ACTION_4">
@@ -1111,12 +1106,12 @@
 			<Czech>Nepodařilo se vytvořit %1</Czech>
 		</Key>
 		<Key ID="str_crafting_space">
-			<English>Not enough inventory space to make items...</English>
+			<English>Not enough inventory space to make items.</English>
 			<German>Du hast nicht genug Platz im Inventar, um den Gegenstand herzustellen.</German>
-			<Russian>В инвентаре уже нет места...</Russian>
-			<Spanish>No hay espacio suficiente en tu inventario para crear objetos...</Spanish>
-			<French>Espace insuffisant pour créer les éléments...</French>
-			<Czech>Nemáte dostatek místa v inventáři pro vyrobení předmětu...</Czech>
+			<Russian>В инвентаре уже нет места.</Russian>
+			<Spanish>No hay espacio suficiente en tu inventario para crear objetos.</Spanish>
+			<French>Espace insuffisant pour créer les éléments.</French>
+			<Czech>Nemáte dostatek místa v inventáři pro vyrobení předmětu.</Czech>
 		</Key>
 		<Key ID="str_crafting_success">
 			<English>Successfully created %1</English>
@@ -1516,12 +1511,10 @@
 		<Key ID="str_missing_to_do_this">
 			<English>Missing %1 to do this.</English>
 			<Russian>Не хватает %1.</Russian>
-			<Spanish>Missing %1 to do this.</Spanish>
 			<Czech>K tomuto vám chybí %1.</Czech>
 			<French>Il manque %1 pour ce faire.</French>
 			<German>Dir fehlt %1, um dies auszuführen.</German>
 		</Key>
-		
 		<Key ID="str_cannotgut">
 			<English>Missing Knife to gut animal.</English>
 			<Russian>Не хватает ножа для разделки животного.</Russian>
@@ -1642,11 +1635,11 @@
 			<German>Du benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen!</German>
 		</Key>
 		<Key ID="str_choppingTree">
-			<English>\n\nChopping down tree.</English>
+			<English>Chopping down tree.</English>
 			<Russian>Рубим дерево</Russian>
-			<French>\n\nAbattage de l&apos;arbre</French>
-			<Czech>\n\nPorážíte strom.</Czech>
-			<German>\n\nBaum wird gefällt</German>
+			<French>Abattage de l&apos;arbre</French>
+			<Czech>Porážíte strom.</Czech>
+			<German>Baum wird gefällt</German>
 		</Key>
 		<Key ID="str_cannotCombine">
 			<English>You have only one %1, there&apos;s nothing to combine.</English>
@@ -2001,7 +1994,6 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_con_i">
 			<English>Connector i</English>
-			<Spanish>Connector i</Spanish>
 			<Russian>I коннектор</Russian>
 			<Czech>I-spojka</Czech>
 			<French>Connecteur i</French>
@@ -2017,7 +2009,6 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_con_l">
 			<English>Connector L</English>
-			<Spanish>Connector L</Spanish>
 			<Russian>L коннектор</Russian>
 			<Czech>L-spojka</Czech>
 			<French>Connecteur L</French>
@@ -2033,7 +2024,6 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_con_t">
 			<English>Connector T</English>
-			<Spanish>Connector T</Spanish>
 			<Russian>T коннектор</Russian>
 			<Czech>T-spojka</Czech>
 			<French>Connecteur T</French>
@@ -2388,8 +2378,6 @@
 			<German>Laserpointer</German>
 			<Russian>Лазер</Russian>
 			<Spanish>Láser</Spanish>
-			<French>Laser</French>
-			<Czech>Laser</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_laser">
 			<English>A red laser</English>
@@ -2717,11 +2705,8 @@
 		</Key>
 		<Key ID="STR_CRAFT_NAME_M4A1_AIM">
 			<English>M4A1 AIM</English>
-			<Russian>M4A1 AIM</Russian>
-			<Spanish>M4A1 AIM</Spanish>
 			<French>M4A1 à viseur laser</French>
 			<Czech>M4A1 s CCO</Czech>
-			<German>M4A1 AIM</German>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_M4A1_AIM">
 			<English>Blueprint to create a M4A1_AIM. Required - 1 M4A1, 1 Attachment_AIM. - ToolBox</English>
@@ -2734,7 +2719,6 @@
 		<Key ID="STR_CRAFT_NAME_M4A1_HWS_GL_CAMO">
 			<English>M4A1 HWS GL Camo</English>
 			<Russian>Камуфлированный M4A1 HWS GL</Russian>
-			<Spanish>M4A1 HWS GL Camo</Spanish>
 			<Czech>M4A1 HWS GL Kamufláž</Czech>
 			<French>M4A1 HWS GL Camouflage</French>
 			<German>M4A1 HWS GL Tarn</German>
@@ -2748,8 +2732,9 @@
 			<German>Blaupause für eine M4A1 HWS GL Tarn. Gebraucht werden: 1x M4A1 HWS GL, 1x Tarnmaterial, Werkzeugkasten.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_M9SD">
-			<English>M9SD</English>
+			<English>M9 SD</English>
 			<Russian>M9 с глушителем</Russian>
+			<Spanish>M9 Silenciada</Spanish>
 			<French>M9 Silencieux</French>
 			<Czech>M9 s tlumičem</Czech>
 			<German>M9 SD</German>
@@ -2763,9 +2748,8 @@
 			<German>Blaupause für eine M9 SD. Gebraucht werden: 1x M9, 1x Schalldämpfer, Werkzeugkasten.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_MAKAROVSD">
-			<English>MAKAROVSD</English>
+			<English>Makarov SD</English>
 			<Russian>ПМ с глушителем</Russian>
-			<Spanish>MakarovSD</Spanish>
 			<French>Makarov Silencieux</French>
 			<Czech>Makarov s tlumičem</Czech>
 			<German>Makarow SD</German>
@@ -3851,7 +3835,6 @@
 			<German>Schachtel mit Kräutern</German>
 			<Russian>Коробка трав</Russian>
 			<Spanish>hierbas Caja</Spanish>
-			<French>Herb Box</French>
 			<Czech>Krabice bylinek</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HERBBOX">
@@ -3859,7 +3842,6 @@
 			<Russian>Коробка лекарственных трав</Russian>
 			<Spanish>Box of medicinal herbs</Spanish>
 			<Czech>Krabice plná nejrůznějších léčivých rostlin. Sen každé babky kořenářky.</Czech>
-			<French>Box of medicinal herbs</French>
 			<German>Eine Schachtel mit medizinischen Kräutern.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_19">
@@ -4243,7 +4225,6 @@
 			<English>Chemlight</English>
 			<German>Knicklicht</German>
 			<Russian>Химсвет</Russian>
-			<Spanish>Chemlight</Spanish>
 			<French>Bâton lumineux</French>
 			<Czech>Chemické světlo</Czech>
 		</Key>
@@ -4485,10 +4466,8 @@
 		<Key ID="STR_EQUIP_NAME_MACHETE">
 			<English>Machete</English>
 			<Russian>Мачете</Russian>
-			<Spanish>Machete</Spanish>
 			<Czech>Mačeta</Czech>
 			<French>Machette</French>
-			<German>Machete</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_MACHETE">
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
@@ -4548,11 +4527,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M16A2">
 			<English>M16A2</English>
-			<Russian>M16A2</Russian>
-			<Spanish>M16A2</Spanish>
-			<French>M16A2</French>
-			<Czech>M16A2</Czech>
-			<German>M16A2</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A2">
 			<English>Assault rifle &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
@@ -4564,11 +4538,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M16A2GL">
 			<English>M16A2 M203</English>
-			<Russian>M16A2 M203</Russian>
-			<Spanish>M16A2 M203</Spanish>
-			<French>M16A2 M203</French>
-			<Czech>M16A2 M203</Czech>
-			<German>M16A2 M203</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A2GL">
 			<English>Assault rifle with grenade launcher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
@@ -4580,11 +4549,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M16A4">
 			<English>M16A4</English>
-			<Russian>M16A4</Russian>
-			<Spanish>M16A4</Spanish>
-			<French>M16A4</French>
-			<Czech>M16A4</Czech>
-			<German>M16A4</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A4">
 			<English>Assault rifle &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
@@ -4596,11 +4560,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M16A4_ACOG">
 			<English>M16A4 ACOG</English>
-			<Russian>M16A4 ACOG</Russian>
-			<Spanish>M16A4 ACOG</Spanish>
-			<French>M16A4 ACOG</French>
-			<Czech>M16A4 ACOG</Czech>
-			<German>M16A4 ACOG</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A4_ACOG">
 			<English>Assault rifle &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
@@ -4612,11 +4571,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M16A4_M203_ACOG">
 			<English>M16A4 M203 ACOG</English>
-			<Russian>M16A4 M203 ACOG</Russian>
-			<Spanish>M16A4 M203 ACOG</Spanish>
-			<French>M16A4 M203 ACOG</French>
-			<Czech>M16A4 M203 ACOG</Czech>
-			<German>M16A4 M203 ACOG</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A4_M203_ACOG">
 			<English>Assault rifle with grenade luncher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
@@ -4628,11 +4582,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M16A4GL">
 			<English>M16A4 M203</English>
-			<Russian>M16A4 M203</Russian>
-			<Spanish>M16A4 M203</Spanish>
-			<French>M16A4 M203</French>
-			<Czech>M16A4 M203</Czech>
-			<German>M16A4 M203</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A4GL">
 			<English>Assault rifle with grenade luncher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
@@ -4644,11 +4593,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M9">
 			<English>M9</English>
-			<Russian>M9</Russian>
-			<Spanish>M9</Spanish>
-			<French>M9</French>
-			<Czech>M9</Czech>
-			<German>M9</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M9">
 			<English>Semi-automatic pistol &lt;br/&gt;Caliber: 9x19mm</English>
@@ -4664,7 +4608,6 @@
 			<Spanish>M9 Silenciada</Spanish>
 			<French>M9 Silenciada</French>
 			<Czech>M9 s tlumičem</Czech>
-			<German>M9 SD</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M9SD">
 			<English>Suppressed semi-automatic pistol &lt;br/&gt;Caliber: 9x19mm</English>
@@ -4676,11 +4619,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M1911">
 			<English>M1911</English>
-			<Russian>M1911</Russian>
-			<Spanish>M1911</Spanish>
-			<French>M1911</French>
-			<Czech>M1911</Czech>
-			<German>M1911</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M1911">
 			<English>Semi-automatic pistol &lt;br/&gt;Caliber: .45 ACP</English>
@@ -4693,9 +4631,6 @@
 		<Key ID="STR_EQUIP_NAME_Makarov_PM">
 			<English>Makarov</English>
 			<Russian>ПМ</Russian>
-			<Spanish>Makarov</Spanish>
-			<French>Makarov</French>
-			<Czech>Makarov</Czech>
 			<German>Makarow</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_Makarov_PM">
@@ -4724,11 +4659,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_PDW">
 			<English>PDW</English>
-			<Russian>PDW</Russian>
-			<Spanish>PDW</Spanish>
-			<French>PDW</French>
-			<Czech>PDW</Czech>
-			<German>PDW</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_PDW">
 			<English>Submachine gun &lt;br/&gt;Caliber: 9x19mm</English>
@@ -4742,9 +4672,6 @@
 			<English>Revolver</English>
 			<Russian>Револьвер</Russian>
 			<Spanish>Revólver</Spanish>
-			<French>Revolver</French>
-			<Czech>Revolver</Czech>
-			<German>Revolver</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_Revolver">
 			<English>Revolver &lt;br/&gt;Caliber: .45 ACP</English>
@@ -4756,11 +4683,6 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_G17">
 			<English>G17</English>
-			<Russian>G17</Russian>
-			<Spanish>G17</Spanish>
-			<French>G17</French>
-			<Czech>G17</Czech>
-			<German>G17</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_G17">
 			<English>Semi-automatic pistol&lt;br/&gt;Caliber: 9x19mm</English>
@@ -5087,7 +5009,6 @@
 			<German>Gebratener Speck</German>
 			<Russian>Готовый бекон</Russian>
 			<Spanish>Panceta</Spanish>
-			<French>Bacon</French>
 			<Czech>Opečená slanina</Czech>
 		</Key>
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_4">
@@ -5333,11 +5254,10 @@
 			<Czech>Toulec, do kterého se vejde až dvanáct šipek do kuše.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">
-			<English>Soda</English>
+			<English>Soda (Mountain Green)</English>
 			<German>Limonade</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<French>Soda</French>
 			<Czech>Sodovka</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_0">
@@ -5349,11 +5269,10 @@
 			<Czech>Čistá a ještě neotevřená plechovka Mountain Green. Dobrá volba na dlouhou cestu.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_1">
-			<English>Soda</English>
+			<English>Soda (R4ZOR)</English>
 			<German>Limonade</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<French>Soda</French>
 			<Czech>Sodovka</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_1">
@@ -5369,7 +5288,6 @@
 			<German>Eistee</German>
 			<Russian>Холодный чай</Russian>
 			<Spanish>Gaseosa (Té Helado)</Spanish>
-			<French>Soda (Iced Tea)</French>
 			<Czech>Nápoj (Ledový čaj)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_2">
@@ -5401,7 +5319,6 @@
 			<German>Cola</German>
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
-			<French>Soda (Cola)</French>
 			<Czech>Nápoj (Kola)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_4">
@@ -5417,7 +5334,6 @@
 			<German>Limonade (Orange)</German>
 			<Russian>Газировка (Апельсин)</Russian>
 			<Spanish>Gaseosa (Naranja)</Spanish>
-			<French>Soda (Orange)</French>
 			<Czech>Nápoj (Pomeranč)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_5">
@@ -5449,7 +5365,6 @@
 			<German>Cola</German>
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Fernet con Coca</Spanish>
-			<French>Soda (Cola)</French>
 			<Czech>Nápoj (Kola)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_7">
@@ -5477,11 +5392,10 @@
 			<Czech>Čistá a ještě neotevřená plechovka piva LVG.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9">
-			<English>Soda</English>
+			<English>Soda (mZLY yZLY)</English>
 			<German>Limonade</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<French>Soda</French>
 			<Czech>Sodovka</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_9">
@@ -5497,7 +5411,6 @@
 			<German>Cola</German>
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
-			<French>Soda (Cola)</French>
 			<Czech>Nápoj (Kola)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10">
@@ -5525,11 +5438,10 @@
 			<Czech>Čistá a ještě neotevřená plechovka piva Rabbitman.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12">
-			<English>Soda</English>
+			<English>Soda (Sacrite)</English>
 			<German>Limonade</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<French>Soda</French>
 			<Czech>Sodovka</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_12">
@@ -5541,11 +5453,10 @@
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Sacrite.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_13">
-			<English>Soda</English>
+			<English>Soda (Rocket Fuel)</English>
 			<German>Limonade</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<French>Soda</French>
 			<Czech>Sodovka</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_13">
@@ -5557,11 +5468,10 @@
 			<Czech>Čistá a ještě neotevřená plechovka sodovky Gagarin Rocket Fuel od Papa. Vyrobeno v Černarusi.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_14">
-			<English>Soda</English>
+			<English>Soda (Sparkling Grape)</English>
 			<German>Limonade</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
-			<French>Soda</French>
 			<Czech>Sodovka</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_14">
@@ -5584,7 +5494,6 @@
 			<English>MRE</English>
 			<German>EPa</German>
 			<Russian>Паёк MRE</Russian>
-			<Spanish>MRE</Spanish>
 			<French>Repas instantané</French>
 			<Czech>Vojenská dávka</Czech>
 		</Key>
@@ -6718,7 +6627,7 @@
 			<German>Du versuchst %1 zu essen, musst aber das meiste wieder ausspucken. Du bist einfach zu satt, um noch mehr zu essen.</German>
 			<Russian>Вы съели %1, но выплюнули большую часть.\nВы слишком сыты, чтобы проглотить что-нибуть еще.</Russian>
 			<Spanish>Comiste %1 pero escupiste la mayor parte. Estás demasiado lleno para seguir comiendo.</Spanish>
-			<French>\n\nVous n&apos;avez pas pu terminer votre %1. Vous avez trop mangé.</French>
+			<French>Vous n&apos;avez pas pu terminer votre %1. Vous avez trop mangé.</French>
 			<Czech>Snědli jste %1, ale většinu jste vyplivnul. Jste plný a víc toho už nesníte.</Czech>
 		</Key>
 		<Key ID="str_player_consumed">
@@ -12971,11 +12880,14 @@
 			<Russian>Объединить слитки</Russian>
 			<Czech>Skombinovat cihly</Czech>
 		</Key>
-    <Key ID="STR_EPOCH_PLAYER_307">
-			<English>Combined all bars in your inventory to highest denomination.</English>
+		<Key ID="STR_EPOCH_PLAYER_307">
+			<English>Combined all currency in your inventory to the highest denomination.</English>
 			<German>Alle Barren in deinem Inventar wurden zum höchsten Wert kombiniert.</German>
 			<Russian>Все слитки в вашем инвентаре объединены.</Russian>
 			<Czech>Skombinovány cihly ve vašem inventáři na maximum.</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_307_FAIL">
+			<English>Failed to combine one or more items into currency in your inventory.</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_308">
 			<English>To driver's seat</English>
