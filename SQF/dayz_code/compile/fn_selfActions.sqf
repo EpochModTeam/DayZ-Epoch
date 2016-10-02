@@ -1106,8 +1106,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	player removeAction s_player_repair_crtl;
 	s_player_repair_crtl = -1;
 	dayz_myCursorTarget = objNull;
-	//player removeAction s_player_forceSave;
-	//s_player_forceSave = -1;
 	player removeAction s_player_flipveh;
 	s_player_flipveh = -1;
 	player removeAction s_player_pushPlane;

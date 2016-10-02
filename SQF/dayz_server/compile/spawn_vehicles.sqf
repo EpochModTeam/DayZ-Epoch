@@ -57,6 +57,7 @@ if (count AllowedVehiclesList == 0) then {
 	};
 	// only proceed if two params otherwise BIS_fnc_findSafePos failed and may spawn in air
 	if ((count _position) == 2) then {
+		_position set [2,0];
 		_dir = round(random 180);
 		_istoomany = _position nearObjects ["AllVehicles",50];
 		if ((count _istoomany) > 0) exitWith {};

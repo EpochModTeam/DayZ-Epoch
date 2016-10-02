@@ -173,6 +173,7 @@ if (count _this > 4) then { //calling from player_onDisconnect
 				if (_count > 4) exitWith {_newPos = _charPos;}; // Max 4km away fail safe (needs to finish fast so server_playerSync runs below)
 				_newPos = [_charPos, 80, (_maxDist + 800), 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
 			};
+			_newPos set [2,0]; //findSafePos only returns two elements
 			_charPos = _newPos;
 			diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos.",_name,_playerUID];
 		};

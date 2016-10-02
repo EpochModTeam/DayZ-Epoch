@@ -103,9 +103,6 @@ if(!_cancel) then {
 		_removed = ([player,_item] call BIS_fnc_invRemove);
 
 		if(_removed == 1) then {
-
-			//call dayz_forceSave;
-
 			_dir = round(direction player);	
 			["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 			//wait a bit

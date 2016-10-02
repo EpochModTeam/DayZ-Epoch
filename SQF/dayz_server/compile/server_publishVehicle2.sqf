@@ -89,7 +89,7 @@ _key call server_hiveWrite;
 	_object setVariable ["ObjectID", _oid, true];
 	_object setVariable ["lastUpdate",time];
 	_object setVariable ["CharacterID", _characterID, true];
-	_object setVelocity [0,0,1];
+	//_object setVelocity [0,0,1];
 
 	if(DZE_TRADER_SPAWNMODE) then {
 		_object attachTo [_object_para, [0,0,-1.6]];
