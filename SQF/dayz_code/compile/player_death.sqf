@@ -81,7 +81,7 @@ if (count _array > 0) then {
 		//_isBandit = (_model in ["Bandit1_DZ","BanditW1_DZ"]);
 		
 		//if you are a bandit or start first - player will not recieve humanity drop
-		_punishment = ((_isBandit or {player getVariable ["OpenTarget",false]}) && !_isPZombie);
+		_punishment = ((_isBandit or {player getVariable ["OpenTarget",false]}) && !(player isKindOf "PZombie_VB"));
 		_humanityHit = 0;
 
 		if (!_punishment) then {
