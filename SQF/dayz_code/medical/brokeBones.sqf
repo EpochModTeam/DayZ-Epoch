@@ -51,7 +51,7 @@ if (_finished) then {
 		
 		//Give humanity reward to player giving the morphine to another player.
 		if (_item in ["ItemMorphine"]) then {
-			[player,50] call player_humanityChange;
+			[50,0] call player_humanityChange;
 		};
 	};
 

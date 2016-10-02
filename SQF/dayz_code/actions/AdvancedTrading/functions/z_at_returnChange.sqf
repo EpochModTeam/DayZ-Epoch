@@ -24,12 +24,11 @@ Z_ChangeOverflow = false;
 if (_combine) then {
 	_trade_total = 0;
 	_total_currency = 0;
-	_inventoryMoney = [];
 	_combineOk = 1;
 	{
-		_part =  (configFile >> "CfgMagazines" >> _x);
-		_worth =  (_part >> "worth");
-		if isNumber (_worth) then {
+		_part = configFile >> "CfgMagazines" >> _x;
+		_worth = (_part >> "worth");
+		if (isNumber _worth) then {
 			_combineOk = [player,_part,1] call BIS_fnc_invRemove;
 			_total_currency = _total_currency + getNumber(_worth);
 		} else {

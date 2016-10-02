@@ -94,10 +94,7 @@ if (_unit == player) then {
 			// - Accidental Murder - \\  When wearing the garb of a non-civilian you are taking your life in your own hands
 			// Attackers humanity should not be punished for killing a survivor who has shrouded his identity in military garb.
 
-            _punishment = 
-				((_isBandit || 
-				{player getVariable ["OpenTarget",false]}) &&
-				{!_isPZombie});
+            _punishment = ((_isBandit or {player getVariable ["OpenTarget",false]}) && !_isPZombie);
             _humanityHit = 0;
 
             if (!_punishment && {(dayz_lastHumanityChange + 3) < diag_tickTime}) then {
@@ -116,7 +113,7 @@ if (_unit == player) then {
                     private ["_source","_humanityHit"];
                     _source = _this select 0;
                     _humanityHit = _this select 1;
-                    PVDZ_send = [_source,"Humanity",[_source,_humanityHit,30]];
+                    PVDZ_send = [_source,"Humanity",[_humanityHit,30]];
                     publicVariableServer "PVDZ_send";
                 };
             };

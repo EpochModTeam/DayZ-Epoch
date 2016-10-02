@@ -36,14 +36,13 @@ if (_canAfford) then {
 	// total currency
 	_total_currency = 0;
 	{
-		_part =  (configFile >> "CfgMagazines" >> _x);
-		_worth =  (_part >> "worth");
-		if isNumber (_worth) then {
+		_part = configFile >> "CfgMagazines" >> _x;
+		_worth = (_part >> "worth");
+		if (isNumber _worth) then {
 			if (([player,_part,1] call BIS_fnc_invRemove) == 1) then {
 				_total_currency = _total_currency + getNumber(_worth);
 			};
 		};
-
 	} count (magazines player);
 
 	//diag_log format["DEBUG TRADER INPUT CURRENCY TOTAL: %1", _total_currency];

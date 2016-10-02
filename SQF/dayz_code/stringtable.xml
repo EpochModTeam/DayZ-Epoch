@@ -2737,7 +2737,6 @@
 			<Spanish>M9 Silenciada</Spanish>
 			<French>M9 Silencieux</French>
 			<Czech>M9 s tlumičem</Czech>
-			<German>M9 SD</German>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_M9SD">
 			<English>Blueprint to create a M9SD. Required - 1 M9, 1 Attachment_Silencer. - ToolBox</English>

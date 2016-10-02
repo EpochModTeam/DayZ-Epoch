@@ -1,7 +1,6 @@
-private ["_object","_change","_wait","_humanity","_model","_isMen","_isMenH","_isMenB","_isWomen","_isWomenH","_isWomenB"];
-_object = _this select 0;
-_change = _this select 1;
-_wait = if (count _this > 2) then { _this select 2 } else { 0 };
+private ["_change","_wait","_humanity","_model","_isMen","_isMenH","_isMenB","_isWomen","_isWomenH","_isWomenB"];
+_change = _this select 0;
+_wait = _this select 1;
 
 _humanity = (player getVariable["humanity",0]) + _change;
 player setVariable["humanity",_humanity,true];
