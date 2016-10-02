@@ -9,18 +9,8 @@ if (_selection != "" and local _unit) then {
 	//player sidechat str _damage;
 	_unit setVariable [_strH,_damage,true];
 	if (_damage == 0) then {
-		if (isServer) then { 
-			[_unit,"repair"] call server_updateObject 
-		} else { 
-			PVDZ_veh_Save = [_unit,"repair"]; 
-			publicVariable "PVDZ_veh_Save"; 
-		};
+		[_unit,"repair"] call server_updateObject;
 	} else {
-		if (isServer) then { 
-			[_unit,"damage"] call server_updateObject 
-		} else { 
-			PVDZ_veh_Save = [_unit,"damage"]; 
-			publicVariable "PVDZ_veh_Save"; 
-		};
+		[_unit,"damage"] call server_updateObject;	
 	};
 };

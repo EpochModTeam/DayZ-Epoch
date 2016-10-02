@@ -259,6 +259,11 @@ if (_enoughMoney) then {
 		};
 	};
 	_itemsToLog call Z_logTrade;
+	call player_forceSave;
+	if (Z_SellingFrom == 1) then {
+		PVDZ_veh_Save = [Z_vehicle,"gear"];
+		publicVariableServer "PVDZ_veh_Save";
+	};
 } else {
 	if (Z_SingleCurrency) then {
 		systemChat format[localize "STR_EPOCH_TRADE_NEED_COINS",[_priceToBuy] call BIS_fnc_numberText,CurrencyName];

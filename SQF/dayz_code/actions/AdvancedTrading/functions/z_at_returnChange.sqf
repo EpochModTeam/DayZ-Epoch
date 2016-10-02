@@ -260,6 +260,8 @@ if (_return_change > 0) then {
 	} else {
 		_successful = true;
 	};
+	
+	if (_combine) then {call player_forceSave;};
 };
 
 if (Z_ChangeInBackpack) then { systemChat localize "STR_EPOCH_TRADE_CHANGE_IN_BACKPACK"; };

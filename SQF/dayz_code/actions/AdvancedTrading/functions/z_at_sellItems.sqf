@@ -161,7 +161,6 @@ if (Z_SellingFrom == 2) then {
 				};
 			};
 		};
-
 	} forEach Z_SellArray;
 
 	_outcome set [0,_mA];
@@ -231,6 +230,11 @@ if (typeName _money  == "SCALAR") then {
 		if (_tCost != "") then { systemChat format[localize "STR_EPOCH_TRADE_SELL_SUCCESS",_tCost]; };
 	};
 	_itemsToLog call Z_logTrade;
+	call player_forceSave;
+	if (Z_SellingFrom == 1) then {
+		PVDZ_veh_Save = [Z_vehicle,"gear"];
+		publicVariableServer "PVDZ_veh_Save";
+	};
 } else {
 	systemChat localize "STR_EPOCH_TRADE_DEBUG";
 	diag_log "Money is not a number. Something went wrong.";
