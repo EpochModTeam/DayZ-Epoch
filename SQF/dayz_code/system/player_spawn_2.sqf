@@ -23,7 +23,7 @@ _timerMonitor = diag_ticktime;
 player setVariable ["temperature",dayz_temperatur,true];
 player setVariable["friendlies",DZE_Friends,true];
 
-[player,0] call player_humanityChange;
+[0,0] call player_humanityChange;
 
 //player addMagazine "Hatchet_swing";
 //player addWeapon "MeleeHatchet";
@@ -79,7 +79,7 @@ while {1 == 1} do {
 		_humanity = player getVariable ["humanity",0];
 		if (_humanity < 1 or _forceHumanity) then {
 			if (vehicle player != player) then {
-				[player, round(_timeOut / 10)] call player_humanityChange;
+				[round(_timeOut / 10),0] call player_humanityChange;
 				_forceHumanity = false;
 			} else {
 				_humanity = _humanity + round(_timeOut / 10);
@@ -93,7 +93,7 @@ while {1 == 1} do {
 /*	
 	if ((Dayz_loginCompleted) && (diag_tickTime < 25)) then {
 
-		[player,0] call player_humanityChange;
+		[0,0] call player_humanityChange;
 		
 		diag_log ("Running");
 		_timer10 = diag_Ticktime;

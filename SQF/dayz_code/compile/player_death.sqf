@@ -95,7 +95,7 @@ if (count _array > 0) then {
 			_humanityHit = -(2000 - _myKills);
 			_kills = _source getVariable ["humanKills",0];
 			_source setVariable ["humanKills",(_kills + 1),true];
-			PVDZ_send = [_source,"Humanity",[_source,_humanityHit,300]];
+			PVDZ_send = [_source,"Humanity",[_humanityHit,300]];
 			publicVariableServer "PVDZ_send";
 		} else {
 			//i'm "guilty" - kill me as bandit

@@ -45,7 +45,7 @@ if (_hasAntibiotics) then {
 		publicVariableServer "PVDZ_send";
 
 		//Give humnaity for good deeds
-		[player,20] call player_humanityChange;
+		[20,0] call player_humanityChange;
 
 		_msg = "str_actions_medical_gave_antibiotics";
 	};

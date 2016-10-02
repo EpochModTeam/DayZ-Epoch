@@ -55,7 +55,7 @@ if (_finished) then {
 	} else {
 		PVDZ_send = [_unit,"Bandage",[_unit,player]];
 		publicVariableServer "PVDZ_send";
-		[player,20] call player_humanityChange;
+		[20,0] call player_humanityChange;
 	};
 } else {
 	r_interrupt = false;

@@ -194,7 +194,7 @@ while {r_doLoop} do {
 		localize "str_actions_medical_transfusion_successful" call dayz_rollingMessages;
 		//see Note 1
 		//[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_successful","PLAIN DOWN"] call RE;
-		if (!_badBag and _bagFound) then { [player,_humanityAwarded] call player_humanityChange; };
+		if (!_badBag and _bagFound) then { [_humanityAwarded,0] call player_humanityChange; };
 		r_doLoop = false;
 	};
 

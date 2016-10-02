@@ -116,7 +116,7 @@ if (_unit == player) then {
                     private ["_source","_humanityHit"];
                     _source = _this select 0;
                     _humanityHit = _this select 1;
-                    PVDZ_send = [_source,"Humanity",[_source,_humanityHit,30]];
+                    PVDZ_send = [_source,"Humanity",[_humanityHit,30]];
                     publicVariableServer "PVDZ_send";
                 };
             };
