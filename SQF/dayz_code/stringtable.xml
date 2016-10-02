@@ -1511,7 +1511,6 @@
 		<Key ID="str_missing_to_do_this">
 			<English>Missing %1 to do this.</English>
 			<Russian>Не хватает %1.</Russian>
-			<Spanish>Missing %1 to do this.</Spanish>
 			<Czech>K tomuto vám chybí %1.</Czech>
 			<French>Il manque %1 pour ce faire.</French>
 			<German>Dir fehlt %1, um dies auszuführen.</German>
@@ -1995,7 +1994,6 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_con_i">
 			<English>Connector i</English>
-			<Spanish>Connector i</Spanish>
 			<Russian>I коннектор</Russian>
 			<Czech>I-spojka</Czech>
 			<French>Connecteur i</French>
