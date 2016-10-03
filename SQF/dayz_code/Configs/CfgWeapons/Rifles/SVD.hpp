@@ -1,6 +1,5 @@
 class SVD_DZ : SVD
 {
-	model = "ca\weapons\svd_dragunov_proxy.p3d";
 	picture = "\ca\weapons\data\equip\w_svd_ca.paa";
 	displayName = $STR_DZ_WPN_SVD_NAME;
 	
