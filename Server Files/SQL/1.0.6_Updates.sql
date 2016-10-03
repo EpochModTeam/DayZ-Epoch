@@ -170,8 +170,8 @@ UPDATE character_data SET Backpack = REPLACE(Backpack, '"ItemTentDomed"', '"Item
 UPDATE character_data SET Inventory = REPLACE(Inventory, '"ItemTentDomed"', '"ItemDesertTent"') WHERE INSTR(Inventory, '"ItemTentDomed"') > 0;
 UPDATE object_data SET Inventory = REPLACE(Inventory, '"ItemTentDomed"', '"ItemDesertTent"') WHERE INSTR(Inventory, '"ItemTentDomed"') > 0;
 
-update object_Data set classname = 'DomeTentStorage' where classname = 'TentStorageDomed';
-update object_Data set classname = 'DomeTentStorage' where classname = 'TentStorageDomed2';
+update object_Data set classname = 'DesertTentStorage1' where classname = 'TentStorageDomed';
+update object_Data set classname = 'DomeTentStorage1' where classname = 'TentStorageDomed2';
 
 -- ----------------------------
 -- Updated fish names from 1.8.7
