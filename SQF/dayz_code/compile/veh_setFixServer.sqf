@@ -11,6 +11,6 @@ if (_selection != "" and local _unit) then {
 	if (_damage == 0) then {
 		[_unit,"repair"] call server_updateObject;
 	} else {
-		[_unit,"damage"] call server_updateObject;	
+		[_unit,"damage"] call server_updateObject;
 	};
 };

@@ -115,6 +115,7 @@
 [FIXED] Players will no longer end up swimming in the ground after spawn, relog or clothes change on maps with respawn_west in the water. @ebaydayz
 [FIXED] It is no longer possible to drag players through base walls when they are unconscious. @icomrade
 [FIXED] Purchased vehicles should no longer spawn inside each other on trader helipads. @icomrade
+[FIXED] Humanity hit is now applied correctly to players shooting from vehicles. @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_code\Configs\CfgLoot\CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x

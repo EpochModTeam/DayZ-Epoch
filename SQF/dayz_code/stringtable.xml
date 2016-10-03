@@ -3839,7 +3839,6 @@
 		<Key ID="STR_EQUIP_DESC_HERBBOX">
 			<English>Box of medicinal herbs</English>
 			<Russian>Коробка лекарственных трав</Russian>
-			<Spanish>Box of medicinal herbs</Spanish>
 			<Czech>Krabice plná nejrůznějších léčivých rostlin. Sen každé babky kořenářky.</Czech>
 			<German>Eine Schachtel mit medizinischen Kräutern.</German>
 		</Key>
@@ -6624,7 +6623,7 @@
 		<Key ID="str_player_consumed_food_2">
 			<English>You ate %1 but spit out most of it. You&apos;re too full to eat anything.</English>
 			<German>Du versuchst %1 zu essen, musst aber das meiste wieder ausspucken. Du bist einfach zu satt, um noch mehr zu essen.</German>
-			<Russian>Вы съели %1, но выплюнули большую часть.\nВы слишком сыты, чтобы проглотить что-нибуть еще.</Russian>
+			<Russian>Вы съели %1, но выплюнули большую часть. Вы слишком сыты, чтобы проглотить что-нибуть еще.</Russian>
 			<Spanish>Comiste %1 pero escupiste la mayor parte. Estás demasiado lleno para seguir comiendo.</Spanish>
 			<French>Vous n&apos;avez pas pu terminer votre %1. Vous avez trop mangé.</French>
 			<Czech>Snědli jste %1, ale většinu jste vyplivnul. Jste plný a víc toho už nesníte.</Czech>
