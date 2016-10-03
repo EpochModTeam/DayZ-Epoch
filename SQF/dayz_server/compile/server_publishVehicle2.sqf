@@ -105,5 +105,5 @@ _key call server_hiveWrite;
 	PVDZE_veh_Init = _object;
 	publicVariable "PVDZE_veh_Init";
 	
-	diag_log ("PUBLISH: " + str(_activatingPlayer) + " Bought " + (_class) + " with ID " + str(_uid));
+	diag_log format["PUBLISH: %1(%2) bought %3 with ObjectUID %4",if (alive _activatingPlayer) then {name _activatingPlayer} else {"DeadPlayer"},getPlayerUID _activatingPlayer,_class,_uid];
 };
