@@ -162,7 +162,7 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 	};
 
 	//diag_log format["OBJ: %1 - %2,%3,%4,%5,%6,%7,%8", _idKey,_type,_ownerID,_worldspace,_inventory,_hitPoints,_fuel,_damage];
-	
+	/*
 		if (_type in _tempMaint) then {
 			//Use hitpoints for Maintenance system and other systems later.
 			//Enable model swap for a damaged model.
@@ -173,6 +173,7 @@ diag_log ("HIVE: Streamed " + str(_val) + " objects");
 			//TODO add remove object and readd old fence (hideobject would be nice to use here :-( )
 			//Pending change to new fence models\Layout
 		};
+	*/
 		_nonCollide = _type in DayZ_nonCollide;	
 		//Create it
 		if (_nonCollide) then {
