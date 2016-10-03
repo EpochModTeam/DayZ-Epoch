@@ -32,8 +32,8 @@ Hunting[] =
 	{Loot_MAGAZINE,		2,		ItemBandage},
 	{Loot_MAGAZINE,		1,		ItemDomeTent},
 	{Loot_MAGAZINE,		3,		TrapBear},
-	{Loot_MAGAZINE,		1,		12Rnd_Quiver_Wood},
-	{Loot_MAGAZINE,		1,		1Rnd_Bolt_Tranquilizer},
+	{Loot_MAGAZINE,		3,		12Rnd_Quiver_Wood},
+	{Loot_MAGAZINE,		2,		1Rnd_Bolt_Tranquilizer},
 	{Loot_MAGAZINE,		1,		1Rnd_Bolt_Explosive},
 	
 	{Loot_PILE,			10,		AmmoCivilian, 1, 3},

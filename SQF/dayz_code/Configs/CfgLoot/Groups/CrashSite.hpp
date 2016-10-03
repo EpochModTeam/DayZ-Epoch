@@ -34,7 +34,7 @@ CrashSiteRU[] =
 	{Loot_GROUP,		2,		specialclothes},
 	
 	//Containers
-	{Loot_CONTAINER,	3,		DZ_MedBox, MedicalBox, 10, 20},
+	{Loot_CONTAINER,	1,		DZ_MedBox, MedicalBox, 10, 20},
 	//{Loot_CONTAINER,	2.3,	DZ_AmmoBoxRU, AmmoBoxRU1, 10, 20},		//545x39	AK74, RPK74
 	//{Loot_CONTAINER,	1.7,	DZ_AmmoBoxRU, AmmoBoxRU2, 10, 20},		//762x39	AK47
 	//{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxRU3, 5, 10},		//762x54r	SVD, PKM

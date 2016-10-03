@@ -29,7 +29,7 @@ Supermarket[] =
 	{Loot_MAGAZINE,		1,		PartPlywoodPack},
 	//{Loot_MAGAZINE,	0.5,	ItemDomeTent}, //IN TENTS GROUP
 	{Loot_MAGAZINE,		1,		ItemCamoNet},
-	{Loot_MAGAZINE,		0.5,	ItemComboLock},
+	{Loot_MAGAZINE,		0.1,	ItemComboLock},
 	{Loot_MAGAZINE,		3,		ItemBandage},
 	{Loot_MAGAZINE,		2,		ItemPainkiller},
 	{Loot_MAGAZINE,		2,		ItemAntibacterialWipe},
@@ -55,7 +55,7 @@ SupermarketSmall[] =
 	{Loot_WEAPON,		3,		Binocular},
 	{Loot_GROUP,		10,		pistols},
 	{Loot_MAGAZINE,		1,		ItemMixOil},
-	{Loot_MAGAZINE,		0.5,	ItemComboLock},
+	{Loot_MAGAZINE,		0.1,	ItemComboLock},
 	{Loot_MAGAZINE,		3,		ItemBandage},
 	{Loot_MAGAZINE,		2,		ItemPainkiller},
 	{Loot_MAGAZINE,		2,		ItemAntibacterialWipe},

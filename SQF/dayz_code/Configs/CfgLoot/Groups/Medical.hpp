@@ -52,6 +52,6 @@ Bloodbags[] =
 	{Loot_MAGAZINE,		2,		ItemBloodbagABPos},
 	{Loot_MAGAZINE,		2,		ItemBloodbagABNeg},
 	
-	{Loot_MAGAZINE,		3,		ItemBloodbagOPos},
-	{Loot_MAGAZINE,		2,		ItemBloodbagONeg}
+	{Loot_MAGAZINE,		2,		ItemBloodbagOPos},
+	{Loot_MAGAZINE,		1,		ItemBloodbagONeg}
 };

@@ -6,7 +6,7 @@ class Blueprint_nails : Recipe {
 	};
 	output[] = 
 	{
-		{"equip_nails","CfgMagazines",10}
+		{"equip_nails","CfgMagazines",4}
 	};
 	required[] = 
 	{
