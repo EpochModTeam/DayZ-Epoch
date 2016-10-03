@@ -22,12 +22,12 @@ private ["_handled"];
 	// Both the firer and those nearby (<=8m) go into "combat" to prevent ALT-F4
 	//diag_log ("DEBUG: AMMO TYPE: " +str(_ammo));
 	_firer setVariable["startcombattimer", 1];
-	if (_firer getVariable["inCombat",false]) then {
+	if !(_firer getVariable["inCombat",false]) then {
 		_firer setVariable["inCombat",true,true];
 	};
 	if (_distance <= 8) then {
 		_unit setVariable["startcombattimer", 1];
-		if (_unit getVariable["inCombat",false]) then {
+		if !(_unit getVariable["inCombat",false]) then {
 			_unit setVariable["inCombat",true,true];
 		};
 	};

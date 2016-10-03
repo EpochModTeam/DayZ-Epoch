@@ -69,7 +69,7 @@ dayz_lastDamageSourceNull = false;
 if (_unit == player) then {
 //Set player in combat
 	_unit setVariable["startcombattimer", 1];
-	if (_unit getVariable["inCombat",false]) then {
+	if !(_unit getVariable["inCombat",false]) then {
 		_unit setVariable["inCombat",true,true];
 	};
 
