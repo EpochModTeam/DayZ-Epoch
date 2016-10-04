@@ -13,7 +13,7 @@ class Mi17_base: Helicopter  {
 //Armed
 class Mi17_DZ: Mi17_base	 {
 	displayname = $STR_VEH_NAME_MI17;
-	displaynameshort = "Mi17_DZ";
+	displaynameshort = "Mi-17";
 	scope = public;
 	side = 2;
 	crew = "";
@@ -38,7 +38,6 @@ class Mi17_DZ: Mi17_base	 {
 	};
 };
 class Mi17_DZE: Mi17_DZ	 {
-	displaynameshort = "Mi17_DZE";
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
 			magazines[] = {};
@@ -50,8 +49,8 @@ class Mi17_DZE: Mi17_DZ	 {
 };
 
 class Mi17_TK_EP1_DZ: Mi17_base  {
-	displayname = "Mi17_TK_DZ";
-	displaynameshort = "Mi17_TK_DZ";
+	displayname = "Mi-17 (TK)";
+	displaynameshort = "Mi-17 (TK)";
 	scope = public;
 	side = 2;
 	crew = "";
@@ -77,7 +76,6 @@ class Mi17_TK_EP1_DZ: Mi17_base  {
 	};
 };
 class Mi17_TK_EP1_DZE: Mi17_TK_EP1_DZ	 {
-	displaynameshort = "Mi17_TK_DZE";
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
 			magazines[] = {};
@@ -89,8 +87,8 @@ class Mi17_TK_EP1_DZE: Mi17_TK_EP1_DZ	 {
 };
 
 class Mi17_UN_CDF_EP1_DZ: Mi17_base  {
-	displayname = "Mi17_UN_CDF_EP1_DZ";
-	displaynameshort = "Mi17_UN_CDF_EP1_DZ";
+	displayname = "Mi-17 (UN)";
+	displaynameshort = "Mi-17 (UN)";
 	scope = public;
 	side = 2;
 	crew = "";
@@ -116,7 +114,6 @@ class Mi17_UN_CDF_EP1_DZ: Mi17_base  {
 	};
 };
 class Mi17_UN_CDF_EP1_DZE: Mi17_UN_CDF_EP1_DZ	 {
-	displaynameshort = "Mi17_UN_CDF_EP1_DZE";
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
 			magazines[] = {};
@@ -128,8 +125,8 @@ class Mi17_UN_CDF_EP1_DZE: Mi17_UN_CDF_EP1_DZ	 {
 };
 
 class Mi17_CDF_DZ: Mi17_base {
-	displayname = "Mi17_CDF_DZ";
-	displaynameshort = "Mi17_CDF_DZ";
+	displayname = "Mi-17 (CDF)";
+	displaynameshort = "Mi-17 (CDF)";
 	scope = public;
 	side = 2;
 	crew = "";
@@ -155,7 +152,6 @@ class Mi17_CDF_DZ: Mi17_base {
 	};
 };
 class Mi17_CDF_DZE: Mi17_CDF_DZ	 {
-	displaynameshort = "Mi17_CDF_DZE";
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
 			magazines[] = {};
@@ -167,8 +163,8 @@ class Mi17_CDF_DZE: Mi17_CDF_DZ	 {
 };
 
 class Mi171Sh_CZ_EP1_DZ: Mi17_base {
-	displayname = "Mi171Sh_CZ_EP1_DZ";
-	displaynameshort = "Mi171Sh_CZ_EP1_DZ";
+	displayname = "Mi-171 (Sh)";
+	displaynameshort = "Mi-171 (Sh)";
 	scope = public;
 	side = 2;
 	crew = "";
