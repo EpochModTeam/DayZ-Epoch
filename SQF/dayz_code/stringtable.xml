@@ -4211,7 +4211,7 @@
 		<Key ID="STR_MAG_SPLIT_8TO2X4">
 			<English>Split into 4x2 rnd</English>
 			<Russian>Разд. на 4x2 п.</Russian>
-			<German>Auf 4x2 Schuss aufteilen</German>			
+			<German>In 4x2 Schuss aufteilen</German>			
 		</Key>
 		<Key ID="STR_MAG_NAME_4">
 			<English>Road Flare</English>
@@ -5506,7 +5506,7 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_15">
 			<English>Sharbet, a traditional Middle Eastern cold drink prepared with rose hips, cornelian cherries, rose or licorice and a variety of spices.</English>
 			<Russian>Традиционный напиток в странах Востока, приготавливаемый из шиповника, кизила, розы или лакрицы и различных специй.</Russian>
-			<German>Sherbet, ein kaltes traditionelles Getränk aus dem Mittlerer Osten mit Hagebutten, Kornelkirschen oder Lakritze und einer Vielzahl aus Gewürzen.</German>	
+			<German>Sherbet, ein kaltes traditionelles Getränk aus dem Mittlerer Osten mit Hagebutten, Kornelkirschen oder Lakritze und einer Vielzahl an Gewürzen.</German>	
 		</Key>
 		<Key ID="STR_FOOD_NAME_MRE">
 			<English>MRE</English>
@@ -9603,17 +9603,17 @@
 		<Key ID="STR_BLD_BREAKIN_NEED_SLEDGE">
 			<English>You need a Sledgehammer to break into this compound.</English>
 			<Russian>Вам нужна кувалда, чтобы проломить эту преграду.</Russian>
-			<German>Du brauchst einen Vorschlaghammer um hier einzubrechen.</German>
+			<German>Du brauchst einen Vorschlaghammer, um hier einzubrechen.</German>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_NEED_CROWBAR">
 			<English>You need a Crowbar to break into this compound.</English>
 			<Russian>Вам нужен ломик, чтобы проломить эту преграду.</Russian>
-			<German>Du brauchst eine Brechstange um hier einzubrechen.</German>			
+			<German>Du brauchst eine Brechstange, um hier einzubrechen.</German>			
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_BROKEN_SLEDGE">
 			<English>Your Sledgehammer handle has snapped.</English>
 			<Russian>Ваша кувалда сломалась.</Russian>
-			<German>Dein Vorschlaghammer-Griff ist gebrochen.</German>		
+			<German>Dein Vorschlaghammergriff ist gebrochen.</German>		
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_BENT_CROWBAR">
 			<English>Your crowbar has bent.</English>
@@ -9633,7 +9633,7 @@
 		<Key ID="STR_BLD_BREAKIN_COMPLETE_FAIL">
 			<English>Break in attempt completed with limited success.</English>
 			<Russian>Попытка взлома завершилась с сомнительным успехом.</Russian>
-			<German>Einbruchsversuch komplett mit begrentem Erfolg.</German>				
+			<German>Einbruchsversuch komplett mit begrenztem Erfolg.</German>				
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_COMPLETE">
 			<English>Break in attempt successful.</English>
@@ -10267,7 +10267,7 @@
 		<Key ID="STR_DZ_WPN_W1866_DESC">
 			<English>Winchester Model 1866 – was originally chambered for the rimfire .44 Henry. Nicknamed the "Yellow Boy" because of its receiver of a bronze/brass alloy.</English>
 			<Russian>Винчестер модели 1866 был приспособлен под патрон .44 Henry. Его называли "Yellow Boy" из-за цвета бронзово-медного сплава приемника.</Russian>
-			<German>Das Winchester Modell 1866 wurde ursprünglich für Rimfire .44 Henry gebaut. Die Winchester wird auch "Yellow Boy" genannt, da die Legierug des Verschlusskastens aus Bronze und Messing bestanden.</German>		
+			<German>Das Winchester Modell 1866 wurde ursprünglich für Rimfire .44 Henry gebaut. Die Winchester wird auch "Yellow Boy" genannt, da die Legierung des Verschlusskastens aus Bronze und Messing bestehen.</German>		
 		</Key>
 
 		<!-- Mk48 -->
@@ -10784,7 +10784,7 @@
 		<Key ID="STR_DZ_ATT_ACOG_DESC">
 			<English>Advanced Combat Optical Gunsight&lt;br/&gt;Manufactured by American Trijicon Inc.</English>
 			<Russian>Армейский оптический прицел для ведения огня из стрелкового оружия на среднюю дальность&lt;br/&gt;Произведен американской компанией Trijicon Inc.</Russian>
-			<German>Advanced Combat Optical Gunsight&lt;br/&gt;Hergestellt American Trijicon Inc.</German>		
+			<German>Advanced Combat Optical Gunsight&lt;br/&gt;Hergestellt von American Trijicon Inc.</German>		
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_RMVE">
 			<English>Remove ACOG</English>
