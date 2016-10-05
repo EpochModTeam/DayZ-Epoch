@@ -16,6 +16,8 @@ class UH1H_base: Helicopter
 
 class UH1H_DZ: UH1H_base 
 {
+	displayname = "UH-1H (Green Camo)";
+	displaynameshort = "UH-1H (Green Camo)";
 	scope = public;
 	side = 2;
 	crew = "";
@@ -45,6 +47,8 @@ class UH1H_DZ: UH1H_base
 
 class UH1H_2_DZ : UH1H_DZ
 {
+	displayname = "UH-1H (Desert Camo)";
+	displaynameshort = "UH-1H (Desert Camo)";	
 	hiddenSelections[] = {"Camo1","Camo2","Camo_mlod"};
 	hiddenSelectionsTextures[] =
 	{
@@ -55,6 +59,17 @@ class UH1H_2_DZ : UH1H_DZ
 };
 
 class UH1H_DZE: UH1H_DZ {
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
+			magazines[] = {};
+		};
+		class LeftDoorGun : LeftDoorGun {
+			magazines[] = {};
+		};
+	};
+};
+
+class UH1H_2_DZE: UH1H_2_DZ {
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
