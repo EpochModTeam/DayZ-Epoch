@@ -493,7 +493,6 @@ class CfgVehicles {
 	//Helicopters
 	#include "Helicopter\MI17.hpp"
 	#include "Helicopter\UH1H.hpp"
-	#include "Helicopter\UH1H2.hpp"
 	#include "Helicopter\UH1Y.hpp"
 	#include "Helicopter\AH6.hpp"
 	#include "Helicopter\MH6J_DZ.hpp"
