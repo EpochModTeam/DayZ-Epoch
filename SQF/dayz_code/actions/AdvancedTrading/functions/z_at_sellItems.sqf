@@ -1,6 +1,7 @@
 private ["_tempArray","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_success","_bag","_itemsToLog","_tCost","_tSold"];
 
 if (count Z_SellArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_SELL_NO_ITEMS"; };
+if (Z_SellingFrom == 1 && (isNull Z_vehicle or !local Z_vehicle)) exitWith { systemChat localize "STR_EPOCH_PLAYER_245"; };
 
 _tempArray = Z_SellArray;
 closeDialog 2;
