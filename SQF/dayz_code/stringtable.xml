@@ -290,7 +290,7 @@
 		<Key ID="str_actions_medical_misplaced_antibiotics">
 			<English>You seem to have misplaced your antibiotics.</English>
 			<Russian>Похоже, вы потеряли антибиотики.</Russian>
-			<German>Du das Antibiotikum nicht richtig verabreicht.</German>
+			<German>Du hast das Antibiotikum nicht richtig eingesetzt.</German>
 		</Key>
 		<Key ID="str_actions_medical_taken_antibiotics">
 			<English>You have taken antibiotics.</English>
