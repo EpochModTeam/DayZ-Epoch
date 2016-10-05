@@ -116,6 +116,7 @@
 [FIXED] It is no longer possible to drag players through base walls when they are unconscious. @icomrade
 [FIXED] Purchased vehicles should no longer spawn inside each other on trader helipads. @icomrade
 [FIXED] Humanity hit is now applied correctly to players shooting from vehicles. @ebaydayz
+[FIXED] Chopped down trees are now synced for JIP players, so they no longer respawn on relog. @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_code\Configs\CfgLoot\CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x

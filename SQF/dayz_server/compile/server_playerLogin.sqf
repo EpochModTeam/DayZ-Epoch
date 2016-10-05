@@ -145,6 +145,9 @@ if (_endMission) exitwith {
 	(owner _playerObj) publicVariableClient "PVCDZ_plr_Ghost";
 };
 
+//Sync chopped trees for JIP player
+{_x setDamage 1} count dayz_choppedTrees;
+
 //Record Player Login/LogOut
 [_playerID,_charID,1,_playerName] call dayz_recordLogin;
 
