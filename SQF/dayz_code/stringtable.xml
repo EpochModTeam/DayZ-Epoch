@@ -3217,7 +3217,7 @@
 			<English>[A] Ammo belt</English>
 			<Russian>[М] патронташ (Мосинка)</Russian>
 			<Czech>Příslušenství - nábojový pás</Czech>
-			<German>[E]Munitionsgürtel</German>
+			<German>[E] Munitionsgürtel</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_DESC_BELT">
 			<English>Ammo belt Attachment.</English>
@@ -3265,7 +3265,7 @@
 			<English>[A] Scoped Sight</English>
 			<Russian>[М] прицел</Russian>
 			<Czech>Příslušenství - puškohled</Czech>
-			<German>[E]Zielfernrohr-Erweiterung</German>
+			<German>[E] Zielfernrohr-Erweiterung</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_DESC_SCOPE">
 			<English>Scoped Sight Attachment.</English>
@@ -10721,7 +10721,7 @@
 		<Key ID="STR_DZ_ATT_SUP556_NAME">
 			<English>[A] 5.56mm Suppressor</English>
 			<Russian>[М] 5.56мм глушитель</Russian>
-			<German>[E]5.56mm Schalldämpfer</German>				
+			<German>[E] 5.56mm Schalldämpfer</German>				
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP556_DESC">
 			<English>5.56mm Sound suppressor</English>
@@ -10733,7 +10733,7 @@
 		<Key ID="STR_DZ_ATT_SUP545_NAME">
 			<English>[A] 5.45mm Suppressor</English>
 			<Russian>[М] 5.45мм глушитель</Russian>
-			<German>[E]5.45mm Schalldämpfer</German>	
+			<German>[E] 5.45mm Schalldämpfer</German>	
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP545_DESC">
 			<English>5.45mm Sound suppressor</English>
@@ -10801,7 +10801,7 @@
 		<Key ID="STR_DZ_ATT_KOBRA_DESC">
 			<English>Red dot collimator sight&lt;br/&gt;Manufactured in Izhevsk Russia.</English>
 			<Russian>Электронный коллиматорный прицел&lt;br/&gt;Произведен росийской компанией ОАО «Ижевский мотозавод „Аксион-холдинг“».</Russian>
-			<German>[E] Rotpunkt Kollimator Sicht&lt;br/&gt;Hergestellt in Izhevsk Russland.</German>
+			<German>Rotpunkt Kollimator Sicht&lt;br/&gt;Hergestellt in Izhevsk Russland.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_RMVE">
 			<English>Remove Kobra</English>
