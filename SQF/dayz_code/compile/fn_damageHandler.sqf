@@ -151,7 +151,7 @@ if (_unit == player) then {
 			};
 		};
 	};
-  
+
 	//Overkill logging. PVS network send every two seconds = lag. Not worth it just for extra anticheat logs.
     //Log to server :-( OverProcessing really not needed.
     /*if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {(_isMan AND {(!local _source)})}) then {
@@ -183,9 +183,8 @@ if (_unit == player) then {
 		case (_ammo == "RunOver"): {"runover"};
 		case (_ammo == "Dragged"): {"eject"};
 		case (_ammo in MeleeAmmo): {"melee"};
-		case (_isMan && !local _source && !(currentWeapon _source in ["","Throw"])): {"shot"};
 		//(vehicle _source != _source) does not work to detect if source unit is in a vehicle in HandleDamage EH
-		case (_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship"): {"shot"};
+		case (!local _source && {(_isMan && !(currentWeapon _source in ["","Throw"])) or {_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship"}}): {"shot"};
 		default {"none"};
 	};
 	if (dayz_lastDamageSource != "none") then {dayz_lastDamageTime = diag_tickTime;};
