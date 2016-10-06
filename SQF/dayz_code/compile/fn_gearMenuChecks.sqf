@@ -21,7 +21,7 @@ if ((vehicle player) == player) then {
 				_gearSelection = getText (configFile >> "CfgVehicles" >> _vehType >> "memoryPointSupply");
 				_supplyPositionWorld = _x modelToWorld (_x selectionPosition _gearSelection);
 				if (_x isKindOf "USEC_ch53_E" || _x isKindOf "MV22") then {_dis = 25;};
-				if (locked _x && {(_supplyPositionWorld distance player) <= _dis} && {_cTarget == _x}) then {
+				if (locked _x && {(_supplyPositionWorld distance player) <= _dis}) then {
 					_exit = true;
 				};
 			} forEach _nearestObjects;
