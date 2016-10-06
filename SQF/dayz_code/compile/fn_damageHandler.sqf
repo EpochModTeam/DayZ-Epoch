@@ -9,18 +9,15 @@ private ["_HitBy","_end","_unit","_hit","_damage","_unconscious","_source","_amm
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
-_unconscious = _unit getVariable ["NORRN_unconscious", false];
 _source = _this select 3;
-_isPZombie = player isKindOf "PZombie_VB";
 _ammo = _this select 4;
+_unconscious = _unit getVariable ["NORRN_unconscious", false];
 _model = typeOf player;
 _sourceType = typeOf _source;
 _sourceVehicleType = typeOf (vehicle _source);
 _Viralzed = _sourceType in DayZ_ViralZeds;
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
-_isMan = _sourceType isKindOf "CAManBase";
-_isPlayer = (isPlayer _source);
 _isZombieHit = _ammo == "zombie";
 
 _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Dayz_freefall select 1 > 3)})});
@@ -65,6 +62,9 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 //End Simple hack for damage ***until 2.0***
 
 dayz_lastDamageSourceNull = false;
+_isPZombie = _model isKindOf "PZombie_VB";
+_isMan = _sourceType isKindOf "CAManBase";
+_isPlayer = (isPlayer _source);
 
 if (_unit == player) then {
 //Set player in combat
@@ -154,7 +154,7 @@ if (_unit == player) then {
   
 	//Overkill logging. PVS network send every two seconds = lag. Not worth it just for extra anticheat logs.
     //Log to server :-( OverProcessing really not needed.
-    /*if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {((_source isKindOf "CAManBase") AND {(!local _source )})}) then {
+    /*if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {(_isMan AND {(!local _source)})}) then {
 		_wpst = weaponState _source;
         if (diag_ticktime-(_source getVariable ["lastloghit",0])>2) then {
             private ["_sourceWeap"];
@@ -226,7 +226,7 @@ if (_damage > 0.4) then {
     
     //End body part scale
 	//???????????
-    if (!(player == _source) && (isPlayer _source or (_isMan && !_isZombieHit))) then {
+    if (!(player == _source) && (_isPlayer or (_isMan && !_isZombieHit))) then { //Scale shots from AI units the same as shots from players
         _scale = _scale + 800;
         if (_isHeadHit) then {
             _scale = _scale + 500;
