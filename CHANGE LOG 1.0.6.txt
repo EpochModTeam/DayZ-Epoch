@@ -131,5 +131,6 @@
 [INFO] Amphibious pook and cessna (pook_h13_amphib,GNT_C185E,GNT_C185F) are confirmed to have FPS issues. Using them is not recommended. #1612 @bleeding- @Markokil321
 [INFO] Auto login does not force a player who aborted from the game, back to the lobby, to login
 [INFO] Server owners and players should use the stable branch of ArmA 2 OA
+[INFO] The A2OA Linux server version is 1.63.130836 at the time of release. Until it is updated with the core patch fixes Linux server admins will need to patch their mission:  https://github.com/DayZMod/DayZ/issues/732
 [INFO] Models/textures by Paul Tomany. @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
