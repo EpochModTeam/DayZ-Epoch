@@ -544,6 +544,7 @@ DZE_tradeObject = DZE_tradeVehicle + ["trade_backpacks"];
 if (isNil "DZE_plotOwnershipExclusions") then {
 	DZE_plotTakeOwnershipItems = DayZ_SafeObjects - (DZE_LockableStorage + ["Plastic_Pole_EP1_DZ","DZ_storage_base"]);
 };
+DZE_GearCheckBypass = false;
 isInTraderCity = false;
 inTraderCity = "Unknown Trader";
 PlayerDeaths = [];
