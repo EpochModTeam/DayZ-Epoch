@@ -249,9 +249,9 @@ if (_damage > 0.4) then {
         case 2: {_scale = _scale + 150};
 	//Zombies
 		case 3: {_scale = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "damageScale"); if (dayz_DamageMultiplier > 1) then {_scale = _scale * dayz_DamageMultiplier;};};
-	//Dragged
-		case 4: {_scale = _scale - 150};
 	//RunOver
+		case 4: {_scale = _scale - 150};
+	//Dragged
 		case 5: {_scale = 25};
     };
 	
