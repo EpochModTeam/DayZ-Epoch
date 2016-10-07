@@ -11,6 +11,7 @@ _hit = _this select 1;
 _damage = _this select 2;
 _source = _this select 3;
 _ammo = _this select 4;
+//diag_log format["HandleDamage: Unit:%1 Hit:%2 Damage:%3 Source:%4 Ammo:%5",_unit,_hit,_damage,_source,_ammo];
 _unconscious = _unit getVariable ["NORRN_unconscious", false];
 _model = typeOf player;
 _sourceType = typeOf _source;
@@ -24,7 +25,8 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 
 //Simple hack to help with a few issues from direct damage to physic based damage. ***until 2.0***
 	if (isNull dayz_getout) then {
-		_vehicleArray = nearestObjects [(getposATL (vehicle _unit)),["Car","Helicopter","Motorcycle","Ship"],3];
+		_vehicleArray = nearestObjects [(getPosATL (vehicle _unit)),["Car","Air","Motorcycle","Ship","Tank"],3];
+		{if (typeOf _x == "ParachuteWest") then {_vehicleArray = _vehicleArray - [_x];};} count _vehicleArray;
 		{
 			if ((speed _x > 10) or (speed _x < -8)) exitwith { dayz_HitBy = _x; };
 		} count _vehicleArray;
@@ -45,16 +47,23 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 		if (_ammo == "") exitwith { _end = true; };
 		
 		//If _source contains no object exit. But lets not exit if the unit returns player. Maybe its his own fault.
-		/*if (isNull _source) then { // in Epoch we can't use this block as is becasue too many servers use a variety of explosives
-			_end = true;
-			if !(_ammo in ["Dragged","RunOver"]) then {
-				// Explosion with no vehicle nearby. Possible cheat. Record to block any incoming fall damage.
+		if (isNull _source && !(_ammo in ["Dragged","RunOver"])) then {
+			_vehicleArray = nearestObjects [(getPosATL (vehicle _unit)),["Car","Air","Motorcycle","Ship","Tank"],25];
+			{if (typeOf _x == "ParachuteWest") then {_vehicleArray = _vehicleArray - [_x];};} count _vehicleArray;
+			//Don't exit if a drivable vehicle (or drivable vehicle wreck) is nearby, because vehicle explosions register as a null source
+			if (count _vehicleArray == 0) then {
+				_end = true;
+				/*
+					Possible cheat. Record to block any incoming fall damage.
+					NOTE: Only vehicle explosions register a null source. Satchel charges, mines, grenades, vehicle missiles
+					and other explosives DO NOT register a null source. Their source is the player who placed, threw or fired them.
+				*/
 				dayz_lastDamageSourceNull = true;
-				diag_log "dayz_lastDamageSourceNull triggered";
+				diag_log "Warning: Fn_DamageHandler source isNull with no drivable vehicle (or drivable vehicle wreck) in 25m radius. Exiting with no damage.";
 			};
-		};*/
+		};
 	} else {
-		if (dayz_lastDamageSourceNull) then { _end = true; }; // Block incoming fall damage. 
+		if (dayz_lastDamageSourceNull) then { _end = true; }; // Block incoming fall damage.
 	};
 
 
