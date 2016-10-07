@@ -32,8 +32,8 @@ private [
 	,"_isPlotOwner"					// return value
 	,"_isPlotFriend"				// return value
 	,"_isPlotAdmin"					// return value
-	,"_isTargetFriend"				// return value
-	,"_isTargetAdmin"				// return value
+	,"_isDoorFriend"				// Only applicable if target is a door
+	,"_isDoorAdmin"				    // Only applicable if target is a door
 	,"_targetType"					// return value
 	,"_targetOwnerUID"				// UID or characterID of the owner of _target
 	,"_playerUID"					// UID of the _player
@@ -43,7 +43,7 @@ private [
 	,"_nearestPlot"					// plot object
 	,"_plotOwnerUID"				// plot owner's UID
 	,"_plotFriends"					// list of plot friends [["UID", "Name"], ..]
-	,"_targetFriends"				// list of target friends [["UID", "Name"], ..]
+	,"_doorFriends"					// list of door friends [["UID", "Name"], ..]
 ];
 
 
@@ -57,8 +57,8 @@ _isFriendly = false;
 _isPlotOwner = false;
 _isPlotFriend = false;
 _isPlotAdmin = false;
-_isTargetFriend = false;
-_isTargetAdmin = false;
+_isDoorFriend = false;
+_isDoorAdmin = false;
 _targetType = "";
 
 
@@ -120,16 +120,16 @@ if(_isNearPlot) then {
 if(_targetType == "DOOR") then {
 	// determine door friends
 	// and check if player is one of them
-	_isTargetFriend = _isOwner;  // Door owner is always a door friend
-	_targetFriends = _target getVariable ["doorfriends",[]];
+	_isDoorFriend = _isOwner;  // Door owner is always a door friend
+	_doorFriends = _target getVariable ["doorfriends",[]];
 	{
-		if( (_x select 0) == _playerUID ) then { _isTargetFriend = true; };
-	} count _targetFriends;
+		if( (_x select 0) == _playerUID ) then { _isDoorFriend = true; };
+	} count _doorFriends;
 	
 	
 	// determine door management admins
 	// and check if player is one of them
-	if(_playerUID in DZE_DoorManagementAdmins) then { _isTargetAdmin = true; };
+	if(_playerUID in DZE_DoorManagementAdmins) then { _isDoorAdmin = true; };
 };
 
 
@@ -139,7 +139,7 @@ if(_targetType == "DOOR") then {
 , _isPlotOwner
 , _isPlotFriend
 , _isPlotAdmin
-, _isTargetFriend
-, _isTargetAdmin
+, _isDoorFriend
+, _isDoorAdmin
 , _targetType
 ]
