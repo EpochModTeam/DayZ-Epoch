@@ -45,7 +45,7 @@ diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2",
 // EPOCH DEATH MESSAGES
 _suicide = _sourceName == _playerName;
 
-if (_method in ["explosion","melee","shot","shothead","shotheavy"] && !(_method == "explosion" && _suicide)) then {
+if (_method in ["explosion","melee","shot","shothead","shotheavy"] && !(_method == "explosion" && (_suicide or _sourceName == "unknown"))) then {
 	if (_suicide) then {
 		_message = ["suicide",_playerName];
 	} else {
