@@ -167,7 +167,7 @@ class PartWoodLumber
 {
 	weight = 2;
 };
-class 30m_plot_kit 
+class plot_pole_kit 
 {
 	weight = 0.02;
 };

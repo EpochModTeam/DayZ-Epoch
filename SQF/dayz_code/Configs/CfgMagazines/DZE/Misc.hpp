@@ -375,7 +375,7 @@ class wood_ramp_kit: CA_Magazine
 		};
 	};
 };
-class 30m_plot_kit: CA_Magazine
+class plot_pole_kit: CA_Magazine
 {
 	scope = public;
 	count = 1;

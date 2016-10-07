@@ -288,7 +288,7 @@ class ItemPlotDeed: CA_Magazine {
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
-			output[] = {{"30m_plot_kit",1}};
+			output[] = {{"plot_pole_kit",1}};
 			input[] = {{"ItemPlotDeed",1},{"ItemGoldBar10oz",2}};
 		};
 	};

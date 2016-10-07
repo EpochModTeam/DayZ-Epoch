@@ -215,6 +215,15 @@ UPDATE character_data SET Inventory = REPLACE(Inventory, '"cinder_wall_kit"', '"
 UPDATE object_data SET Inventory = REPLACE(Inventory, '"cinder_wall_kit"', '"half_cinder_wall_kit"') WHERE INSTR(Inventory, '"cinder_wall_kit"') > 0;
 
 -- ----------------------------
+-- 30m_plot_kit was renamed to plot_pole_kit for sanity
+-- ----------------------------
+
+UPDATE `Traders_DATA` SET `item` = '["plot_pole_kit",1]' WHERE `item` = '["30m_plot_kit",1]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, '"30m_plot_kit"', '"plot_pole_kit"') WHERE INSTR(Backpack, '"30m_plot_kit"') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '"30m_plot_kit"', '"plot_pole_kit"') WHERE INSTR(Inventory, '"30m_plot_kit"') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '"30m_plot_kit"', '"plot_pole_kit"') WHERE INSTR(Inventory, '"30m_plot_kit"') > 0;
+
+-- ----------------------------
 -- Updated shotgun ammo names from 1.8.7
 -- ----------------------------
 UPDATE `Traders_DATA` SET `item` = '["2Rnd_12Gauge_Slug",1]' WHERE `item` = '["2Rnd_shotgun_74Slug",1]';

@@ -99,7 +99,7 @@ class Category_678 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class 30m_plot_kit {
+	class plot_pole_kit {
 		type = "trade_items";
 		buy[] = {6,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar10oz"};

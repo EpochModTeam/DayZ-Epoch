@@ -458,9 +458,9 @@ class Plastic_Pole_EP1_DZ: Sign_1L_Noentry_EP1
 
 	scope = public;
 	offset[] = {0,2.5,0.3};
-	displayName = "30m Plot Pole";
+	displayName = $STR_EPOCH_PLAYER_246;
 	vehicleClass = "Fortifications";
-	removeoutput[] = {{"30m_plot_kit",1}};
+	removeoutput[] = {{"plot_pole_kit",1}};
 	requireplot = 0;
 	nounderground = 0;
 };
