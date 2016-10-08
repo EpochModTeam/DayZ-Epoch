@@ -11357,7 +11357,7 @@
 			<Czech>Stavba již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_41">
-			<English>You cannot build, too many objects within %1m.</English>
+			<English>You cannot build. There are too many objects within %1m.</English>
 			<German>Bau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
 			<Russian>Нельзя построить, слишком много объектов в пределах %1м.</Russian>
 			<Dutch>Kan niet bouwen, teveel objecten binnen %1.</Dutch>
@@ -11381,7 +11381,7 @@
 			<Czech>Nelze stavět v boji.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_44">
-			<English>You cannot build plot pole within %1m of an existing plot.</English>
+			<English>You cannot build a plot pole within %1m of an existing plot.</English>
 			<German>Grundstück-Markierung kann nicht innerhalb %1m von einem bestehenden Grundstück erbaut werden.</German>
 			<Russian>Нельзя построить столб в пределах %1м. от существующего столба.</Russian>
 			<Dutch>Kan bouw-paal niet bouwen op minder als %1m afstand van een bestaand bouwterrein.</Dutch>
