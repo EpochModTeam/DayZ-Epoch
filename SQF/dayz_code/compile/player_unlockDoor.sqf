@@ -4,7 +4,7 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 	Modified for Zupa's DoorManagement.
 */
-private ["_display","_obj","_objectCharacterID"];
+private ["_display","_obj","_objectCharacterID","_hasAccess"];
 
 if (!isNil "DZE_DYN_UnlockDoorInprogress") exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 
@@ -38,14 +38,14 @@ if (!isNull dayz_selectedDoor) then {
 		
 		if(DZE_doorManagement) then {
 			// Check player access
-			_isowner = [player, _obj] call FNC_check_access;
+			_hasAccess = [player, _obj] call FNC_check_access;
 			if (
-				(_isOwner select 0) or // door owner
-				(_isOwner select 2) or // plot owner
-				(_isOwner select 3) or // plot friend
-				(_isOwner select 4) or // plot admin
-				(_isOwner select 5) or // door friend
-				(_isOwner select 6)    // door admin
+				(_hasAccess select 0) or // door owner
+				(_hasAccess select 2) or // plot owner
+				(_hasAccess select 3) or // plot friend
+				(_hasAccess select 4) or // plot admin
+				(_hasAccess select 5) or // door friend
+				(_hasAccess select 6)    // door admin
 			) then {
 				DZE_Lock_Door = dayz_selectedDoor getVariable['CharacterID','0'];
 			};

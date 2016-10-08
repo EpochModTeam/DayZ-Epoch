@@ -5,7 +5,7 @@
 // Note:
 // This code calls server_publishFullObject which also saves damage, inventory and fuel.  Hitpoints are assumed to be empty as this is for buildables only.
 
-private ["_distance","_plotpole","_isowner","_findNearestObjects","_classname","_objectID","_objectUID","_position",
+private ["_distance","_plotpole","_hasAccess","_findNearestObjects","_classname","_objectID","_objectUID","_position",
 "_worldspace","_object","_key","_invW","_invM","_invB","_itemsExist","_charID","_inventory","_changecount"];
 
 _distance = (DZE_PlotPole select 0) + 1;
@@ -14,20 +14,20 @@ _changecount = 0;
 
 // Check is owner of the plot pole.
 
-_isowner = [player, _plotpole] call FNC_check_access;
+_hasAccess = [player, _plotpole] call FNC_check_access;
 _itemsExist = false;
 
-if (_isowner select 0) then {
+if (_hasAccess select 0) then {
 	_findNearestObjects = (position _plotpole) nearEntities _distance;
 	{
 		_object = _x;
 		_classname = typeOf _object;
 		if (_classname in DZE_plotTakeOwnershipItems) then {
 		
-			_isowner = [player, _object] call FNC_check_access;
+			_hasAccess = [player, _object] call FNC_check_access;
 			diag_log text "Plot Take Ownership: Object in DZE_plotTakeOwnershipItems";
 		
-			if !( _isowner select 0 ) then{
+			if !(_hasAccess select 0) then{
 				diag_log text "Plot Take Ownership: Is not already the owner";
 				
 				_objectID 	= _object getVariable ["ObjectID","0"];

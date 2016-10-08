@@ -1,4 +1,4 @@
-private ["_display","_isOwner"];
+private ["_display","_hasAccess"];
 disableSerialization;
 
 if (count(_this) > 0) then
@@ -13,14 +13,14 @@ _display = findDisplay 61144;
 _display closeDisplay 3000;
 
 // Check player access
-_isOwner = [player, TheDoor] call FNC_check_access;
+_hasAccess = [player, TheDoor] call FNC_check_access;
 if (
-	(_isOwner select 0) or // door owner
-	(_isOwner select 2) or // plot owner
-	(_isOwner select 3) or // plot friend
-	(_isOwner select 4) or // plot admin
-	(_isOwner select 5) or // door friend
-	(_isOwner select 6)    // door admin
+	(_hasAccess select 0) or // door owner
+	(_hasAccess select 2) or // plot owner
+	(_hasAccess select 3) or // plot friend
+	(_hasAccess select 4) or // plot admin
+	(_hasAccess select 5) or // door friend
+	(_hasAccess select 6)    // door admin
 ) then {
 	createDialog "DoorManagement";
 	call DoorNearbyHumans;

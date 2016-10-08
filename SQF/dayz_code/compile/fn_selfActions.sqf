@@ -14,7 +14,7 @@ private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles",
 "_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
-"_isPlane","_allowed"];
+"_isPlane","_allowed","_hasAccess"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -445,8 +445,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 
 		if (_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
 			if (_hasToolbox && _hasCrowbar) then {
-				_isOwner = [player, _cursorTarget] call FNC_check_access;
-				if ((_isOwner select 0) or (_isOwner select 2) or (_isOwner select 3)) then {
+				_hasAccess = [player, _cursorTarget] call FNC_check_access;
+				if ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) then {
 					_player_deleteBuild = true;
 				};
 			};
@@ -664,8 +664,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_breakinhouse = -1;
 	};*/
 	if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then {
-		_isOwner = [player, _cursorTarget] call FNC_check_access;
-		_allowed = ((_isOwner select 0) or (_isOwner select 2) or (_isOwner select 3) or (_isOwner select 4));
+		_hasAccess = [player, _cursorTarget] call FNC_check_access;
+		_allowed = ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3) or (_hasAccess select 4));
 		if (DZE_permanentPlot) then {
 			if (s_player_plotManagement < 0 && _allowed) then {
 				s_player_plotManagement = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
@@ -677,11 +677,11 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\plotManagement\maintain_area.sqf", "preview", 5, false];
 			};
 		};
-		if (s_player_plot_boundary < 0 && (_allowed or (_isOwner select 1))) then {
+		if (s_player_plot_boundary < 0 && (_allowed or (_hasAccess select 1))) then {
 			s_player_plot_boundary = player addAction [localize "STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY", "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf", "", 1, false];
 		};
 		if (DZE_permanentPlot && DZE_PlotOwnership) then {
-			if (s_player_plot_take_ownership < 0 && (_isOwner select 0)) then {
+			if (s_player_plot_take_ownership < 0 && (_hasAccess select 0)) then {
 				s_player_plot_take_ownership = player addAction [localize "STR_EPOCH_APLOTFORLIFE_TAKE_PLOT_OWNERSHIP", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
 			};
 		};
@@ -788,8 +788,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// Allow manage door
 	if (DZE_doorManagement && (_typeOfCursorTarget in DZE_DoorsLocked)) then {
 		// Check player access
-		_isOwner = [player, _cursorTarget] call FNC_check_access;
-		if (s_player_manageDoor < 0 && ((_isOwner select 0) or (_isOwner select 2) or (_isOwner select 3) or (_isOwner select 4) or (_isOwner select 5) or (_isOwner select 6))) then {
+		_hasAccess = [player, _cursorTarget] call FNC_check_access;
+		if (s_player_manageDoor < 0 && ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3) or (_hasAccess select 4) or (_hasAccess select 5) or (_hasAccess select 6))) then {
 			s_player_manageDoor = player addAction [format["<t color='#0059FF'>%1</t>", localize "STR_EPOCH_ACTIONS_MANAGEDOOR"], "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf", _cursorTarget, 5, false];
 		};
 	} else {
@@ -896,9 +896,9 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};
 		if (s_player_upgrade_build < 0) then {
-			_isOwner = [player, _cursorTarget] call FNC_check_access;
+			_hasAccess = [player, _cursorTarget] call FNC_check_access;
 			_upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
-			if (((_isOwner select 0) or (_isOwner select 2) or (_isOwner select 3)) && (count _upgrade) > 0) then {
+			if (((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) && (count _upgrade) > 0) then {
 				s_player_lastTarget set [0,_cursorTarget];
 				s_player_upgrade_build = player addAction [format[localize "str_upgrade",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true];
 			};
@@ -917,8 +917,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};
 		if (s_player_downgrade_build < 0) then {
-			_isOwner = [player, _cursorTarget] call FNC_check_access;
-			if ((_isOwner select 0) or (_isOwner select 2) or (_isOwner select 3)) then {
+			_hasAccess = [player, _cursorTarget] call FNC_check_access;
+			if ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) then {
 				s_player_lastTarget set [1,_cursorTarget];
 				s_player_downgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_REMLOCK",_text], "\z\addons\dayz_code\actions\player_buildingDowngrade.sqf",_cursorTarget, -2, false, true];
 			};
@@ -937,8 +937,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};
 		if (s_player_maint_build < 0) then {
-			_isOwner = [player, _cursorTarget] call FNC_check_access;
-			if ((_isOwner select 0) or (_isOwner select 2) or (_isOwner select 3)) then {
+			_hasAccess = [player, _cursorTarget] call FNC_check_access;
+			if ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) then {
 				_text2 = _text + " (" + str(round ((damage _cursorTarget) * 100)) + "% damaged)";
 				s_player_lastTarget set [2,_cursorTarget];
 				s_player_maint_build = player addAction [format["%1 %2",localize "STR_EPOCH_ACTIONS_MAINTAIN",_text2], "\z\addons\dayz_code\actions\player_buildingMaint.sqf",_cursorTarget, -2, false, true];
