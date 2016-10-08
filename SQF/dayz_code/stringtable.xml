@@ -11357,7 +11357,7 @@
 			<Czech>Stavba již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_41">
-			<English>Cannot build, too many objects within %1m.</English>
+			<English>You cannot build, too many objects within %1m.</English>
 			<German>Bau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
 			<Russian>Нельзя построить, слишком много объектов в пределах %1м.</Russian>
 			<Dutch>Kan niet bouwen, teveel objecten binnen %1.</Dutch>
@@ -11365,7 +11365,7 @@
 			<Czech>Nelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_42">
-			<English>Cannot build while in a vehicle.</English>
+			<English>You cannot build while in a vehicle.</English>
 			<German>Bau innerhalb eine Fahrzeuges nicht möglich.</German>
 			<Russian>Нельзя строить, находясь в транспорте.</Russian>
 			<Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
@@ -11373,16 +11373,15 @@
 			<Czech>Nelze stavět, pokud jste ve vozidle.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_43">
-			<English>Cannot build while in combat.</English>
+			<English>You cannot build while in combat.</English>
 			<German>Bau während eines Kampfes nicht möglich.</German>
 			<Russian>Нельзя строить во время боя.</Russian>
-			<Spanish>Cannot build while in combat.</Spanish>
 			<Dutch>Bouwen is niet mogelijk tijdens een conflictsituatie.</Dutch>
 			<French>Impossible de construire en combat.</French>
 			<Czech>Nelze stavět v boji.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_44">
-			<English>Cannot build plot pole within %1m of an existing plot.</English>
+			<English>You cannot build plot pole within %1m of an existing plot.</English>
 			<German>Grundstück-Markierung kann nicht innerhalb %1m von einem bestehenden Grundstück erbaut werden.</German>
 			<Russian>Нельзя построить столб в пределах %1м. от существующего столба.</Russian>
 			<Dutch>Kan bouw-paal niet bouwen op minder als %1m afstand van een bestaand bouwterrein.</Dutch>
@@ -11867,8 +11866,11 @@
 			<French>%1 est rempli(e) à %2 pourcents de sa capacité.</French>
 			<Czech>%1 je naplněno do %2 procent kapacity.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_134">
+			<English>You do not have access to build on this plot.</English>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_135">
-			<English>This building needs a %1 within %2 meters</English>
+			<English>This item needs a %1 within %2 meters</English>
 			<German>Dieses Gebäude benötitgt ein(e) %1 innerhalb von %2 Metern.</German>
 			<Russian>Этому строению требуется %1 в пределах %2 метров</Russian>
 			<Dutch>Dit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
@@ -16265,7 +16267,7 @@
 			<German>Plot Freunde</German>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_ROAD">
-			<English>Cannot build on a road.</English>
+			<English>You cannot build on a road.</English>
 			<German>Du kannst nicht auf einer Straße bauen.</German>			
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_MOVED">
@@ -16273,7 +16275,7 @@
 			<German>Du hast dich zu weit, vom ursprünglichen Ort, an dem du bauen wolltest, bewegt (innerhalb %1 Meter).</German>		
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_HEIGHT">
-			<English>Cannot move up or down more than %1 meters</English>
+			<English>You cannot move up or down more than %1 meters</English>
 			<German>Kann nicht mehr als %1 Meter nach oben oder unten bewegen.</German>	
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_TOO_FAR">
