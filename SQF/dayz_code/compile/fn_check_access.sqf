@@ -32,8 +32,8 @@ private [
 	,"_isPlotOwner"					// return value
 	,"_isPlotFriend"				// return value
 	,"_isPlotAdmin"					// return value
-	,"_isDoorFriend"				// Only applicable if target is a door
-	,"_isDoorAdmin"				    // Only applicable if target is a door
+	,"_isDoorFriend"				// return value - Only applicable if target is a door
+	,"_isDoorAdmin"				    // return value - Only applicable if target is a door
 	,"_targetType"					// return value
 	,"_targetOwnerUID"				// UID or characterID of the owner of _target
 	,"_playerUID"					// UID of the _player

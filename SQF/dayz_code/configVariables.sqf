@@ -82,20 +82,6 @@ DZE_doorManagementMustBeClose = true; //Players must be within 10m of door to be
 DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every door's management menu and open it
 DZE_doorManagementAllowManualCode = true; //Allows opening doors still using PIN
 DZE_doorManagementMaxFriends = 10; //Maximum number of friends allowed on a door.
-DZE_doorManagementAllowAccess_owner = true; // Allow unlock.
-DZE_doorManagementAllowAccess_ownerFriendlies = false;
-DZE_doorManagementAllowAccess_plotOwner = false;
-DZE_doorManagementAllowAccess_plotFriends = false;
-DZE_doorManagementAllowAccess_plotAdmins = false;
-DZE_doorManagementAllowAccess_doorFriends = true;
-DZE_doorManagementAllowAccess_doorAdmins = true;
-DZE_doorManagementAllowManage_owner = true; // Beware managers can add themselves and others as door friends.
-DZE_doorManagementAllowManage_ownerFriendlies = false;
-DZE_doorManagementAllowManage_plotOwner = false;
-DZE_doorManagementAllowManage_plotFriends = false;
-DZE_doorManagementAllowManage_plotAdmins = false;
-DZE_doorManagementAllowManage_doorFriends = false;
-DZE_doorManagementAllowManage_doorAdmins = true;
 
 
 /* 

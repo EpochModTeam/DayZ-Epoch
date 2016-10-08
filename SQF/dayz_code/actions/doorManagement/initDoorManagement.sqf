@@ -14,13 +14,13 @@ _display closeDisplay 3000;
 
 // Check player access
 _isOwner = [player, TheDoor] call FNC_check_access;
-if( 		((_isOwner select 0) && DZE_doorManagementAllowManage_owner) // door owner
-		||	((_isOwner select 1) && DZE_doorManagementAllowManage_ownerFriendlies) // door owner's friendly tagged
-		||	((_isOwner select 2) && DZE_doorManagementAllowManage_plotOwner) // plot owner
-		||	((_isOwner select 3) && DZE_doorManagementAllowManage_plotFriends) // plot friends
-		||	((_isOwner select 4) && DZE_doorManagementAllowManage_plotAdmins) // plot management admins
-		||	((_isOwner select 5) && DZE_doorManagementAllowManage_doorFriends) // door friends
-		||	((_isOwner select 6) && DZE_doorManagementAllowManage_doorAdmins) // door management admins
+if (
+	(_isOwner select 0) or // door owner
+	(_isOwner select 2) or // plot owner
+	(_isOwner select 3) or // plot friend
+	(_isOwner select 4) or // plot admin
+	(_isOwner select 5) or // door friend
+	(_isOwner select 6)    // door admin
 ) then {
 	createDialog "DoorManagement";
 	call DoorNearbyHumans;
