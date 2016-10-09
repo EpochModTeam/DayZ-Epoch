@@ -7,7 +7,7 @@ http://dayzepoch.com
 
 Based on DayZ Mod Community edition
 
-https://github.com/DayZMod/DayZ/blob/Release_1.8/Documentation/Credits.md
+https://github.com/DayZMod/DayZ/blob/1.8.8/Documentation/Credits.md
 http://dayzmod.com 
 
 
