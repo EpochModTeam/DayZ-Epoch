@@ -39,7 +39,9 @@ if (count _findNearestTree > 0) then {
         [player,_dis,true,(getPosATL player)] call player_alertZombies;
         
         // Working-Factor for chopping wood.
-        ["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
+		if (!((primaryWeapon player) in ["ChainSaw","ChainSawB","ChainSawG","ChainSawP","ChainSawR"])) then {
+			["Working",0,[50,10,5,0]] call dayz_NutritionSystem;
+		};
 
         r_interrupt = false;
         _animState = animationState player;
