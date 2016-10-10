@@ -5,16 +5,16 @@ class DMR_DZ : DMR
 	
 	//memoryPointCamera = "opticView";
 	
-	magazines[] = {20Rnd_762x51_DMR};
+	//magazines[] = {20Rnd_762x51_DMR};
 	
 	class Single : Single
 	{
 		//reloadTime = 0.6;
-		recoil = "recoil_single_primary_4outof10";
-		recoilProne = "recoil_single_primary_prone_4outof10";
+		//recoil = "recoil_single_primary_4outof10";
+		//recoilProne = "recoil_single_primary_prone_4outof10";
 	};
 	
-	visionMode[] = {"Normal"};
+	//visionMode[] = {"Normal"};
 	
 	class Attachments
 	{
