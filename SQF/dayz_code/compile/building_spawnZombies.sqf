@@ -26,8 +26,8 @@ _enabled = false;
 if (_canLoot ) then {
 	//Get zombie class
 	_unitTypes = 	getArray (_config >> "zombieClass");
-	_min = 			getNumber (_config >> "maxRoaming");
-	_max = 			getNumber (_config >> "minRoaming");
+	_min = 			getNumber (_config >> "minRoaming");
+	_max = 			getNumber (_config >> "maxRoaming");
 	_zombieChance =	getNumber (_config >> "zombieChance");
 
 	//Walking Zombies
