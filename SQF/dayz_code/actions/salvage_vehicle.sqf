@@ -19,7 +19,7 @@ _HasNoGlassKind = (_vehicle isKindOf "Motorcycle");
 _6WheelTypeArray = ["HitLMWheel","HitRMWheel"];
 _NoGlassArray = ["HitGlass1","HitGlass2","HitGlass3","HitGlass4","HitGlass5","HitGlass6","HitLGlass","HitRGlass"];
 _NoExtraWheelsArray = ["wheel_1_4_steering","wheel_2_4_steering","wheel_1_3_steering","wheel_2_3_steering"];
-_RemovedPartsArray = ["motor","HitLF2Wheel","HitRF2Wheel","HitBody","HitMissiles","HitHull","HitVRotor"];
+_RemovedPartsArray = ["motor","HitLF2Wheel","HitRF2Wheel","HitBody","HitMissiles","HitHull","HitVRotor","HitFuel","HitEngine"];
 
 if (_isATV or _HasNoGlassKind) then {
 	_hitpoints = _hitpoints - _NoGlassArray;
@@ -43,7 +43,7 @@ if (_is6WheelType) then {
 	_damage = [_vehicle,_x] call object_getHit;
 	
 	if !(_x in _RemovedPartsArray) then {
-		if (_x in ["HitFuel","HitEngine"] && _damage >= 0.89) then {_damage = 1;};
+		//if (_x in ["HitFuel","HitEngine"] && _damage >= 0.89) then {_damage = 1;};
 		_cmpt = toArray (_x);
 		_cmpt set [0,20];
 		_cmpt set [1,toArray ("-") select 0];

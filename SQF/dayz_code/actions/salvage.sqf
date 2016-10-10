@@ -64,11 +64,11 @@ if (_hasToolbox) then {
 			
 			if (_isOK) then {
 				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
-				if ((_hitpoint == "HitEngine") or (_hitpoint == "HitFuel")) then {
+				/*if ((_hitpoint == "HitEngine") or (_hitpoint == "HitFuel")) then {
 					[_vehicle, _selection, 0.89] call fnc_veh_handleDam;
-				} else {
+				} else {*/
 					[_vehicle, _selection, 1] call fnc_veh_handleDam;
-				};
+				//};
 				_vehicle call fnc_veh_ResetEH;
 				_vehicle setvelocity [0,0,1];
 				if(_brokenPart) then {
