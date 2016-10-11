@@ -38,6 +38,11 @@ class RscDisplayMission: RscDisplayEmpty
 	idd = 46;
 	onKeyDown = "if (!isNil 'DZ_KeyDown_EH') then {_this call DZ_KeyDown_EH;};"; //assigned much quicker than spawning init_keyboard
 };
+class RscDisplayConfigure {
+	onUnload = "if (!isNil 'keyboard_keys') then {keyboard_keys = nil; [controlNull,1,false,false,false] call DZ_KeyDown_EH;};"; //refresh keyboard_keys after changing binds
+	class controlsBackground;
+	class controls;
+};
 class RscDisplayChat
 {
 	idd = 24;
@@ -236,7 +241,7 @@ class RscDisplayMain : RscStandardDisplay
 			text = "z\addons\dayz_code\gui\loadingscreen.paa";
 		};
 	};
-
+	
 	class controls
 	{
 		class CA_Version;
