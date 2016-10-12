@@ -13,6 +13,9 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 	guerLocked = "ca\ui\data\flag_none_ca.paa";
 	civlUnlocked = "ca\ui\data\flag_none_ca.paa";
 	civlLocked = "ca\ui\data\flag_none_ca.paa";
+	colorNotAssigned[] = {.8,.8,.8,1};
+	colorAssigned[] = {.8,.8,.8,1};
+	colorConfirmed[] = {.8,.8,.8,1};
 	
 	onload = "with uiNameSpace do{RscDisplayMultiplayerSetup=_this select 0}; [_this] execVM 'z\addons\dayz_code\init\lobbyAutoJoin.sqf'"; //#70
 	onMouseHolding = "with uiNameSpace do { switch (1 == 1) do { case(isNil 'RscDMSLoad'): { RscDMSLoad = diag_tickTime; }; case(RscDMSLoad == -1): {}; case(RscDMSLoad == -2): {}; case(diag_tickTime - RscDMSLoad > 7): { RscDMSLoad = diag_tickTime; }; case(diag_tickTime - RscDMSLoad > 5): { }; }; };";
