@@ -8,10 +8,10 @@ class M14_DZ : M14_EP1
 	
 	magazines[] = {20Rnd_762x51_DMR};
 	
-	distanceZoomMin = 300;
-	distanceZoomMax = 300;
+	//distanceZoomMin = 300;
+	//distanceZoomMax = 300;
 	
-	modes[] = {Single};
+	//modes[] = {Single};
 	
 	class Attachments
 	{

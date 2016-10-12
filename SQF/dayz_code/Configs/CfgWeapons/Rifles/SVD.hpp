@@ -3,20 +3,20 @@ class SVD_DZ : SVD
 	picture = "\ca\weapons\data\equip\w_svd_ca.paa";
 	displayName = $STR_DZ_WPN_SVD_NAME;
 	
-	weaponInfoType = "RscWeaponEmpty";
-	discreteDistance[] = {};
-	discreteDistanceInitIndex = 0;
-	distanceZoomMin = 200;
-	distanceZoomMax = 200;
+	//weaponInfoType = "RscWeaponEmpty";
+	//discreteDistance[] = {};
+	//discreteDistanceInitIndex = 0;
+	//distanceZoomMin = 200;
+	//distanceZoomMax = 200;
 	
 	magazines[] = {10Rnd_762x54_SVD};
 	
-	reloadTime = 0.06;
+	//reloadTime = 0.06;
 	
-	recoil = "recoil_single_primary_4outof10";
-	recoilProne = "recoil_single_primary_prone_4outof10";
+	//recoil = "recoil_single_primary_4outof10";
+	//recoilProne = "recoil_single_primary_prone_4outof10";
 	
-	dispersion = 0.00045;
+	//dispersion = 0.00045;
 	
 	class Attachments
 	{
