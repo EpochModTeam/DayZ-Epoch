@@ -17,7 +17,13 @@ _weapons = weapons player;
 _countMags = call player_countMagazinesWBackpack; //magazines player;
 if (typeName _countMags != "ARRAY") exitWith {localize "str_actions_switchmodel_fail" call dayz_rollingMessages;};
 _magazines = _countMags select 0;
-if ((_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0)) exitWith {localize "str_actions_switchmodel_fail" call dayz_rollingMessages;};
+if ((_playerUID == dayz_playerUID) && (count _magazines == 0) && (count (magazines player) > 0)) exitWith {
+	localize "str_actions_switchmodel_fail" call dayz_rollingMessages;
+	if (gear_done) then {
+		(findDisplay 106) closeDisplay 0; closeDialog 0;
+		disableUserInput false;disableUserInput false;disableUserInput false;disableUserInput false;
+	};
+};
 
 _primweapon = primaryWeapon player;
 _secweapon = secondaryWeapon player;
