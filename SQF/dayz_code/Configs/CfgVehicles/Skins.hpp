@@ -294,6 +294,7 @@ class INS_Soldier_AR_DZ: INS_Soldier_AR {
 		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 		canHideBodies = 1;
 		canCarryBackPack = 1;
+		faceType = "Man";
 };
 class INS_Soldier_CO;
 class INS_Soldier_CO_DZ: INS_Soldier_CO {
@@ -614,6 +615,7 @@ class Drake_Light_DZ: Drake_Light {
 	respawnMagazines[] = {};
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
+	faceType = "Man";
 };
 class Soldier_Bodyguard_AA12_PMC;
 class Soldier_Bodyguard_AA12_PMC_DZ: Soldier_Bodyguard_AA12_PMC {
@@ -672,6 +674,7 @@ class FR_OHara_DZ: FR_OHara {
 	canHideBodies = 1;
 	canCarryBackPack = 1;
 	attendant = 0; 
+	faceType = "Man";
 };
 class FR_Rodriguez;
 class FR_Rodriguez_DZ: FR_Rodriguez {
@@ -685,6 +688,7 @@ class FR_Rodriguez_DZ: FR_Rodriguez {
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
 	canCarryBackPack = 1;
+	faceType = "Man";
 };
 class CZ_Soldier_Sniper_EP1;
 class CZ_Soldier_Sniper_EP1_DZ: CZ_Soldier_Sniper_EP1 {
@@ -711,6 +715,7 @@ class Graves_Light_DZ: Graves_Light {
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
 	canCarryBackPack = 1;
+	faceType = "Man";
 };
 //new Epoch 1.06
 class USMC_Soldier_Officer;
