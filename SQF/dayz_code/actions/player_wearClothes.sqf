@@ -47,13 +47,14 @@ if ( (isClass(_config >> _itemNew)) ) then {
 			_model = getText (configFile >> "CfgSurvival" >> "Skins" >> _item >> "playerModel");
 			if (_model != _myModel) then {
 				if(([player,_item] call BIS_fnc_invRemove) == 1) then {
+					/*
 					//play animation when changing clothes (Prevents out of breath resetting)
 					player playActionNow "Medic";
 						
 					//wait animation end
 					waitUntil {getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 1};
 					waitUntil {getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 0};
-
+					*/
 					player addMagazine _itemNew;
 					[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
 				};
