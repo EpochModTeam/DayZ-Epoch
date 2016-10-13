@@ -7500,6 +7500,9 @@
 		<Key ID="str_death_fall">
 			<English>falling.</English>
 		</Key>
+		<Key ID="str_death_crash">
+			<English>a vehicle crash.</English>		
+		</Key>
 		<Key ID="str_death_runover">
 			<English>being run over.</English>
 			<German>wurde überfahren.</German>			

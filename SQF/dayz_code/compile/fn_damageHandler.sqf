@@ -43,6 +43,7 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 	_end = false;
 
 	if (!_falling) then {
+		if (_ammo == "" && _hit == "" && vehicle player != player) then {_ammo = "Crash";};
 		//No _ammo type exit, indirect/physics damage.
 		if (_ammo == "") exitwith { _end = true; };
 		
@@ -82,9 +83,9 @@ if (_unit == player) then {
 		_unit setVariable["inCombat",true,true];
 	};
 
-    if (_hit == "") exitWith //Ignore none part dmg. Exit after processing humanity hit
+    if (_hit == "" && _ammo != "Crash") exitWith //Ignore none part dmg. Exit after processing humanity hit. Don't punish driver for damaging passenger in crash
 	{
-        if (_source != driver (vehicle player) && _isPlayer && alive player) then
+        if (_source != player && _isPlayer && alive player) then
 		{
 			_isBandit = (player getVariable["humanity",0]) <= -5000;
 			//_isBandit = (_model in ["Bandit1_DZ","BanditW1_DZ"]);
@@ -189,6 +190,7 @@ if (_unit == player) then {
 	dayz_lastDamageSource = switch (true) do {
 		case (_falling): {"fall"};
 		case (_isZombieHit): {"zombie"};
+		case (_ammo == "Crash"): {"crash"};
 		case (_ammo == "RunOver"): {"runover"};
 		case (_ammo == "Dragged"): {"eject"};
 		case (_ammo in MeleeAmmo): {"melee"};
@@ -200,7 +202,7 @@ if (_unit == player) then {
 };
 
 //Ignore none part dmg. Exit after processing humanity hit
-if (_hit == "") exitWith { 0 };
+if (_hit == "" && _ammo != "Crash") exitWith { 0 };
 
 //Pure base blood damage
 _scale = 200;
@@ -212,6 +214,7 @@ _type = switch true do {
 	case (_isZombieHit): { 3 };
 	case (_ammo == "RunOver"): { 4 };
 	case (_ammo == "Dragged"): { 5 };
+	case (_ammo == "Crash"): { 6 };
     default { 0 };
 };
 
@@ -253,6 +256,8 @@ if (_damage > 0.4) then {
 		case 4: {_scale = _scale - 150};
 	//Dragged
 		case 5: {_scale = 25};
+	//Crash
+		case 6: {_scale = 100};
     };
 	
 	//Display some info in the players log file.

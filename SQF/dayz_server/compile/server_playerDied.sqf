@@ -56,7 +56,7 @@ if (_method in ["explosion","melee","shot","shothead","shotheavy"] && !(_method 
 	};
 } else {
 	// No source name, distance or weapon needed: "%1 died from %2" str_death_%1 (see stringtable)
-	// Possible methods: ["bled","combatlog","crushed","dehyd","eject","fall","starve","sick","rad","runover","unknown","zombie"]
+	// Possible methods: ["bled","combatlog","crash","crushed","dehyd","eject","fall","starve","sick","rad","runover","unknown","zombie"]
 	_message = ["died",_playerName,_method];
 };
 
