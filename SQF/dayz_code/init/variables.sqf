@@ -614,6 +614,7 @@ if (!isDedicated) then {
 	dayz_lastMedicalTime = 0;
 	dayz_lastClothesChange = 0;
 	dayZ_lastPlayerUpdate = 0;
+	dayz_playerName = "unknown";
 	dayz_hunger = 0;
 	dayz_thirst = 0;
 	dayz_nutrition = 0;

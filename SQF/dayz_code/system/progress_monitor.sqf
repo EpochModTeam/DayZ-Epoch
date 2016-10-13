@@ -11,6 +11,7 @@ while {true} do {
 	};
 	if ((!isNil "Dayz_loginCompleted") and {(Dayz_loginCompleted)}) exitWith { 
 		//diag_log [ __FILE__, __LINE__, "End loop"];
+		dayz_playerName = if (alive player) then {name player} else {"unknown"};
 	};
 	_display = uiNameSpace getVariable "BIS_loadingScreen";
 	if ((!isNil "_display") and {(dayz_loadScreenMsg != "" )}) then {
