@@ -252,6 +252,7 @@ if (isNil "keyboard_keys") then {
             _handled = true;
             r_interrupt = true;
         };
+		
 		if (animationState player in ["bunnyhopunarmed","bunnyhoprifle"]) then {
 			//Fixes invisible weapon switch glitch if double tapping vault with no weapon in hands
 			_handled = true;
@@ -275,6 +276,7 @@ if (isNil "keyboard_keys") then {
     _block = {
         _handled = true;
     };
+	
     _addArray = {
         {
             keyboard_keys set [_x, _this select 1];

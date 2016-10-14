@@ -109,11 +109,12 @@ _object_inventory = {
 
 _object_damage = {
 	//Allow dmg process
-	private ["_hitpoints","_array","_hit","_selection","_key","_damage","_allFixed"];
+	private ["_hitpoints","_array","_hit","_selection","_key","_damage","_allFixed","_forced","_recorddmg"];
 	_hitpoints = _object call vehicle_getHitpoints;
 	_damage = damage _object;
 	_array = [];
 	_allFixed = true;
+	
 	{
 		_hit = [_object,_x] call object_getHit;
 		_selection = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "HitPoints" >> _x >> "name");
@@ -127,6 +128,7 @@ _object_damage = {
 	} forEach _hitpoints;
 	
 	if (_allFixed) then {_object setDamage 0;};
+	
 	if (_forced) then {        
 		if (_object in needUpdate_objects) then {needUpdate_objects = needUpdate_objects - [_object];};
 		_recorddmg = true;	       
@@ -147,6 +149,7 @@ _object_damage = {
 		} else {
 			_key = format["CHILD:306:%1:",_objectID] + str _array + ":" + str _damage + ":";
 		};
+		
 		diag_log ("HIVE: WRITE: "+ str(_key));
 		_key call server_hiveWrite;   
 	};
