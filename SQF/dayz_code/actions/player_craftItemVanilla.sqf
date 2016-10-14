@@ -89,7 +89,7 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 	
 	if (_hasInput) then {
 		//Remove melee magazines (BIS_fnc_invAdd and BIS_fnc_invSlotsEmpty fix)
-		{player removeMagazines _x} count MeleeMagazines;
+		false call dz_fn_meleeMagazines;
 		_freeSlots = [player] call BIS_fnc_invSlotsEmpty;
 		{
 			_item = _x select 0;
@@ -122,6 +122,7 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 			};
 		} forEach _output;
 		//uiSleep 1;
+		true call dz_fn_meleeMagazines;
 
 		if (_availabeSpace) then {
 			//player playActionNow "PutDown";

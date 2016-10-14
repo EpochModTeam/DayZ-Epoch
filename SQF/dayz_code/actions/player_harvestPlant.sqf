@@ -94,7 +94,7 @@ if (count(_findNearestTree) >= 1) then {
 
 	if (_proceed) then {
 		//Remove melee magazines (BIS_fnc_invAdd fix)
-		{player removeMagazines _x} count MeleeMagazines;
+		false call dz_fn_meleeMagazines;
 		_invResult = false;
 		_i = 0;
 		for "_x" from 1 to _countOut do {
@@ -103,6 +103,7 @@ if (count(_findNearestTree) >= 1) then {
 				_i = _i + 1;
 			};
 		};
+		true call dz_fn_meleeMagazines;
 
 		_text = getText (configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 		

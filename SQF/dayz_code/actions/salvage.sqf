@@ -45,7 +45,7 @@ if (_hasToolbox) then {
 
 	if (_finished) then {
 		//Remove melee magazines (BIS_fnc_invAdd fix)
-		{player removeMagazines _x} count MeleeMagazines;
+		false call dz_fn_meleeMagazines;
 		_damage = [_vehicle,_hitpoint] call object_getHit;
 		if (_damage < 1 && {_damage > 0}) then { //Tempfix for issue where certain hitpoints on some vehicles do not get damaged and allow infinite removal
 			_BreakableParts = ["HitGlass1","HitGlass2","HitGlass3","HitGlass4","HitGlass5","HitGlass6","HitLGlass","HitRGlass","HitEngine","HitFuel","HitHRotor"];
@@ -80,6 +80,7 @@ if (_hasToolbox) then {
 				localize "str_player_24" call dayz_rollingMessages;
 			};
 		};
+		true call dz_fn_meleeMagazines;
 	} else {
 		r_interrupt = false;
 		if (vehicle player == player) then {

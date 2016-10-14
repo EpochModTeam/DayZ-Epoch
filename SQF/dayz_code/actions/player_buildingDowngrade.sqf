@@ -50,7 +50,7 @@ if ((count _upgrade) > 0) then {
 	_i = 0;
 	_addedItems = [];
 	//Remove melee magazines (BIS_fnc_invAdd fix)
-	{player removeMagazines _x} count MeleeMagazines;
+	false call dz_fn_meleeMagazines;
 
 	{
 		_itemOut = _x select 0;
@@ -70,6 +70,7 @@ if ((count _upgrade) > 0) then {
 		if (_abortInvAdd) exitWith {};
 
 	} count _refund;
+	true call dz_fn_meleeMagazines;
 
 	// all parts added proceed
 	if(_i != 0) then {

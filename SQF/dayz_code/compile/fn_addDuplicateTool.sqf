@@ -35,10 +35,11 @@ if (_this in items player) then {
 	};
 } else {
 	//Remove melee magazines (BIS_fnc_invAdd fix)
-	{player removeMagazines _x} count MeleeMagazines;
+	false call dz_fn_meleeMagazines;
 	
 	if !([player,_this] call BIS_fnc_invAdd) then {
 		systemChat localize "str_epoch_player_107";
 		_this call _dropOnFloor;
 	};
+	true call dz_fn_meleeMagazines;
 };

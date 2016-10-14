@@ -69,9 +69,9 @@ if (_classname isKindOf "Bag_Base_EP1") exitWith {
 _config = (configFile >> _type >> _classname);
 
 //Remove melee magazines (BIS_fnc_invAdd fix)
-{player removeMagazines _x} count MeleeMagazines;
-
+false call dz_fn_meleeMagazines;
 _isOk = [player,_config] call BIS_fnc_invAdd;
+true call dz_fn_meleeMagazines;
 
 if (_isOk) then {
 	deleteVehicle _holder;

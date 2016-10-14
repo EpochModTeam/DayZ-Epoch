@@ -27,12 +27,14 @@ _newWeapon = _this select 2;
 
 //check that player has enough room in inventory
 //Remove melee magazines (BIS_fnc_invAdd and BIS_fnc_invSlotsEmpty fix)
-{player removeMagazines _x} count MeleeMagazines;
+false call dz_fn_meleeMagazines;
 if ((([player] call BIS_fnc_invSlotsEmpty) select 4) < 1) exitWith
 {
 	closeDialog 0;
 	(localize "str_player_24") call dayz_rollingMessages;
+	true call dz_fn_meleeMagazines;
 };
+true call dz_fn_meleeMagazines;
 
 //check that player has the weapon
 if (!(player hasWeapon _weapon)) exitWith

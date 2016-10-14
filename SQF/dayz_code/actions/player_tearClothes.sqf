@@ -33,7 +33,7 @@ switch (_rounded) do {
 };
 
 //Remove melee magazines (BIS_fnc_invAdd fix)
-{player removeMagazines _x} count MeleeMagazines;
+false call dz_fn_meleeMagazines;
 _i = 0;
 while {_i < _rounded} do {
 	_i = _i + 1; 
@@ -59,3 +59,4 @@ while {_i < _rounded} do {
 		_pile addMagazineCargoGlobal [_itemtocreate,1];
 	};
 };
+true call dz_fn_meleeMagazines;
