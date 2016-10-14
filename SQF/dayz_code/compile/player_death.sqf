@@ -1,5 +1,10 @@
 private ["_pos","_display","_body","_playerID","_array","_source","_method","_isBandit","_punishment","_humanityHit","_myKills","_humanity","_kills","_killsV","_myGroup","_model","_infected","_distance","_sourceVehicleType","_sourceWeapon","_sourceName","_ammo"];
 disableSerialization;
+if (count _this == 0) then {
+	//Spawned from Killed EH (engine death), this should be rare
+	//Wait to see if sched_medical 1s loop spawns with _source and _method (blood<=0 death)
+	uiSleep 1;
+};
 if (deathHandled) exitWith {};
 deathHandled = true;
 
