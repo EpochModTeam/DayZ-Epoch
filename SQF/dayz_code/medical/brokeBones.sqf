@@ -1,4 +1,4 @@
-private ["_started","_finished","_animState","_isMedic","_id","_unit","_item"];
+private ["_started","_finished","_animState","_isMedic","_id","_unit","_item","_humanityGain"];
 
 _unit = (_this select 3) select 0;
 _item = (_this select 3) select 1;
@@ -50,8 +50,14 @@ if (_finished) then {
 		//give to remote player, ie the player fixed another player
 		
 		//Give humanity reward to player giving the morphine to another player.
-		if (_item in ["ItemMorphine"]) then {
-			[50,0] call player_humanityChange;
+		_humanityGain = switch true do {
+			case (_item == "ItemMorphine"): { 50 };
+			case (_item == "equip_woodensplint"): { 25 };
+			default { 0 };
+		};
+		
+		if (_humanityGain > 0) then {
+			[_humanityGain,0] call player_humanityChange;
 		};
 	};
 
