@@ -155,7 +155,7 @@ if (isNil "keyboard_keys") then {
     };
     _turbo = {
         if (vehicle player == player) then {
-            [objNull, player, rSwitchMove,""] call RE;
+            //Prevent easily outrunning zeds and bypassing Arma sprint fatigue (slow to normal running speed after a time) by holding turbo and spamming W
             _handled = true;
         };  
     };
