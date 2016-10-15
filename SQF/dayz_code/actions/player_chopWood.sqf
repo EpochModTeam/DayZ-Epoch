@@ -73,7 +73,7 @@ if (count _findNearestTree > 0) then {
 
         if(_finished) then {                
             _breaking = false;
-            if (dayz_toolBreaking && {[0.04] call fn_chance}) then {
+            if (dayz_toolBreaking && {[0.09] call fn_chance}) then {
                 _breaking = true;
                 if ("MeleeHatchet" in weapons player) then {
                     player removeWeapon "MeleeHatchet";
