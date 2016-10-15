@@ -74,6 +74,12 @@ if (dayz_nutritionValuesSystem) then {
 	
 	if (_hungerCount > 0) then { dayz_hunger = 0; dayz_lastMeal =	time; };
 	if (_thirstCount > 0) then { dayz_thirst = 0; dayz_lastDrink = time; };
+	
+	r_player_blood = r_player_blood + _bloodRegen;
+	
+	if (r_player_blood > r_player_bloodTotal) then {
+		r_player_blood = r_player_bloodTotal;
+	};
 };
 
 //Apply or cure infection base on infectionChance
