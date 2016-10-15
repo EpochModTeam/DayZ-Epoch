@@ -9,9 +9,11 @@ _sleepArray = ["aidlppnemstpsnonwnondnon_sleepc_laydown","aidlppnemstpsnonwnondn
 //_playArray = _sleepArray call BIS_fnc_selectRandom;
 player playmove "AidlPpneMstpSnonWnonDnon_SleepC_sleep";
 
-if (r_action) exitwith {};
+_sleeping = player getVariable ["sleeping",false];
 
-r_action = true;
+if (_sleeping) exitwith {};
+
+player setVariable ["sleeping",true];
 	
 r_interrupt = false;
 _animState = animationState player;
@@ -102,7 +104,7 @@ if (r_interrupt) then {
 	player playActionNow "stop";
 };
 
-r_action = false;
+player setVariable ["sleeping",false];
 
 //Removed due to player sync returning []
 //PVDZ_plr_Save = [player,nil,true,dayz_playerAchievements];
