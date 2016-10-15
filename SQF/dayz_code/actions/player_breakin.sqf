@@ -110,7 +110,7 @@ while {_isOk} do {
 	
 	if (dayz_toolBreaking) then {
 		//Chances to damage tools
-		if ([0.02] call fn_chance) then {
+		if ([0.30] call fn_chance) then {
 			player removeWeapon "ItemSledge";
 			player addMagazine "ItemSledgeHandle";
 			player addMagazine "ItemSledgeHead";
@@ -118,7 +118,7 @@ while {_isOk} do {
 			localize "STR_BLD_BREAKIN_BROKEN_SLEDGE" call dayz_rollingMessages;
 		};
 
-		if ([0.04] call fn_chance) then {
+		if ([0.20] call fn_chance) then {
 			player removeWeapon "ItemCrowbar";
 			player addWeapon "ItemCrowbarBent";
 			
