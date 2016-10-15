@@ -90,7 +90,7 @@ if (count _array > 0) then {
 
 		if (!_punishment) then {
 			//I'm "not guilty" - kill me and be punished
-			_myKills = ((player getVariable ["humanKills",0]) / 3) * 1500;
+			_myKills = (player getVariable ["humanKills",0]) * 33.3;
 			// how many non bandit players have I (the dead player) killed?
 			// punish my killer 2000 for shooting a surivor
 			// but subtract 500 for each survivor I've murdered
@@ -104,8 +104,9 @@ if (count _array > 0) then {
 			_killsV = _source getVariable ["banditKills",0];
 			_source setVariable ["banditKills",(_killsV + 1),true];
 		};
+		
 		//Setup for study bodys.
-		_body setVariable ["KillingBlow",_source,true];
+		_body setVariable ["KillingBlow",[_source,_punishment],true];
 	};
 	_body setVariable ["deathType",_method,true];
 };
