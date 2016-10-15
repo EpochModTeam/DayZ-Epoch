@@ -7778,6 +7778,9 @@
 			<English>Lobby</English>
 			<Russian>Лобби</Russian>
 		</Key>
+		<Key ID="STR_UI_HOLD_BREATH">
+			<English>Please change your controls. HoldBreath holds too many keys and has been blocked.</English>
+		</Key>
 	</Package>
 	<Package name="playerstats">
 		<Key ID="str_playerstats_bandit">
