@@ -11915,7 +11915,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_139">
 			<English>Constructing %1 stage %2 of %3, move to cancel.</English>
-			<German>Konstruieren von %1, Stufe %2 von %3. Bewege dich sich um den Vorgang abzubrechen.</German>
+			<German>Konstruieren von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
 			<Russian>Строительство %1 стадия %2 из %3, двигайтесь для отмены.</Russian>
 			<Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
 			<French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
