@@ -21,6 +21,7 @@ class DesertTentStorage: DomeTentStorage_base {
 	armor = 50;
 	displayname = $STR_VEH_NAME_DESERT_TENT;
 	model = "\dayz_epoch_b\models\astan.p3d";
+	pack = "WeaponHolder_ItemDesertTent";	
 	transportMaxMagazines = 75;
 	transportMaxWeapons = 15;
 	transportMaxBackpacks = 5;
