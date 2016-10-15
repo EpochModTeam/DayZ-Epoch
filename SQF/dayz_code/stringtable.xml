@@ -7,7 +7,7 @@
 			<Spanish>Agregar al Cinturón</Spanish>
 			<Czech>Přidat do nástrojů</Czech>
 			<French>Placer à la ceinture</French>
-			<German>Zum Werkzeuggürtel hinzufügen</German>
+			<German>Zum Gürtel hinzufügen</German>
 			<Dutch>Voeg toe aan gereedschapsgordel</Dutch>
 		</Key>
 		<Key ID="STR_ACTIONS_2BACK">
@@ -50,7 +50,7 @@
 			<Spanish>Sacar del Cinturón</Spanish>
 			<Czech>Odstranit z nástrojů</Czech>
 			<French>Retirer de la ceinture</French>
-			<German>Vom Werkzeuggürtel abnehmen</German>
+			<German>Vom Gürtel abnehmen</German>
 			<Dutch>Verwijder van gereedschapsgordel</Dutch>
 		</Key>
 		<Key ID="STR_ACTION_CAST">
@@ -5271,7 +5271,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_0">
 			<English>Soda (Mountain Green)</English>
-			<German>Limonade</German>
+			<German>Dose (Mountain Green)</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
 			<Czech>Sodovka</Czech>
@@ -5286,7 +5286,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_1">
 			<English>Soda (R4ZOR)</English>
-			<German>Limonade</German>
+			<German>Dose (R4ZOR)</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
 			<Czech>Sodovka</Czech>
@@ -5301,7 +5301,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_2">
 			<English>Soda (Iced Tea)</English>
-			<German>Eistee</German>
+			<German>Dose (Eistee)</German>
 			<Russian>Холодный чай</Russian>
 			<Spanish>Gaseosa (Té Helado)</Spanish>
 			<Czech>Nápoj (Ledový čaj)</Czech>
@@ -5316,7 +5316,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_3">
 			<English>Soda (Grape)</English>
-			<German>Limonade (Traube)</German>
+			<German>Dose (Traubenlimonade)</German>
 			<Russian>Газировка (Грейпфрут)</Russian>
 			<Spanish>Gaseosa (Uva)</Spanish>
 			<French>Soda (Raisin)</French>
@@ -5332,7 +5332,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_4">
 			<English>Soda (Cola)</English>
-			<German>Cola</German>
+			<German>Dose (Dr. Wasteland Cola)</German>
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
 			<Czech>Nápoj (Kola)</Czech>
@@ -5347,7 +5347,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_5">
 			<English>Soda (Orange)</English>
-			<German>Limonade (Orange)</German>
+			<German>Dose (Orangelimonade)</German>
 			<Russian>Газировка (Апельсин)</Russian>
 			<Spanish>Gaseosa (Naranja)</Spanish>
 			<Czech>Nápoj (Pomeranč)</Czech>
@@ -5362,7 +5362,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_6">
 			<English>Soda (Lemonade)</English>
-			<German>Limonade</German>
+			<German>Dose (Mikhail)</German>
 			<Russian>Газировка (Лимонад)</Russian>
 			<Spanish>Gaseosa (Limonada)</Spanish>
 			<French>Soda (Limonade)</French>
@@ -5378,7 +5378,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7">
 			<English>Soda (Cola)</English>
-			<German>Cola</German>
+			<German>Dose (Lirikola)</German>
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Fernet con Coca</Spanish>
 			<Czech>Nápoj (Kola)</Czech>
@@ -5393,7 +5393,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_8">
 			<English>Soda (Root Beer)</English>
-			<German>Limonade (Root Beer)</German>
+			<German>Dose (Root Beer)</German>
 			<Russian>Пиво (Корневое пиво)</Russian>
 			<Spanish>Cerveza de Raíz</Spanish>
 			<French>Bière (Root Beer)</French>
@@ -5409,7 +5409,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_9">
 			<English>Soda (mZLY yZLY)</English>
-			<German>Limonade</German>
+			<German>Dose (mZLY yZLY)</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
 			<Czech>Sodovka</Czech>
@@ -5424,7 +5424,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10">
 			<English>Soda (Cola)</English>
-			<German>Cola</German>
+			<German>Dose (Peppsy Cola)</German>
 			<Russian>Газировка (Кола)</Russian>
 			<Spanish>Gaseosa (Cola)</Spanish>
 			<Czech>Nápoj (Kola)</Czech>
@@ -5439,7 +5439,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11">
 			<English>Beer</English>
-			<German>Bier</German>
+			<German>Dose (Bier)</German>
 			<Russian>Пиво</Russian>
 			<Spanish>Cerveza</Spanish>
 			<French>Bière</French>
@@ -5455,7 +5455,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_12">
 			<English>Soda (Sacrite)</English>
-			<German>Limonade</German>
+			<German>Dose (Sacrite)</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
 			<Czech>Sodovka</Czech>
@@ -5470,7 +5470,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_13">
 			<English>Soda (Rocket Fuel)</English>
-			<German>Limonade</German>
+			<German>Dose (Rocket Fuel)</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
 			<Czech>Sodovka</Czech>
@@ -5485,7 +5485,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_14">
 			<English>Soda (Sparkling Grape)</English>
-			<German>Limonade</German>
+			<German>Dose (Pampelmusenlimonade)</German>
 			<Russian>Газировка</Russian>
 			<Spanish>Gaseosa</Spanish>
 			<Czech>Sodovka</Czech>
@@ -5501,10 +5501,10 @@
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_15">
 			<English>Sherbet (Cold drink)</English>
 			<Russian>Шербет (Напиток)</Russian>
-			<German>Limonade</German>			
+			<German>Dose (Sherbet)</German>			
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_15">
-			<English>Sharbet, a traditional Middle Eastern cold drink prepared with rose hips, cornelian cherries, rose or licorice and a variety of spices.</English>
+			<English>Sherbet, a traditional Middle Eastern cold drink prepared with rose hips, cornelian cherries, rose or licorice and a variety of spices.</English>
 			<Russian>Традиционный напиток в странах Востока, приготавливаемый из шиповника, кизила, розы или лакрицы и различных специй.</Russian>
 			<German>Sherbet, ein kaltes traditionelles Getränk aus dem Mittlerer Osten mit Hagebutten, Kornelkirschen oder Lakritze und einer Vielzahl an Gewürzen.</German>	
 		</Key>
@@ -7419,7 +7419,7 @@
 		</Key>
 		<Key ID="str_death_shot">
 			<English>a gunshot wound.</English>
-			<German>durch eine Schusswunde.</German>			
+			<German>an einer Schusswunde.</German>			
 		</Key>
 		<Key ID="str_death_shothead">
 			<English>a gunshot to the head.</English>
@@ -7463,7 +7463,7 @@
 		</Key>
 		<Key ID="str_death_starve">
 			<English>starvation.</English>
-			<German>durch Verhungern.</German>
+			<German>an Unterernährung.</German>
 			<Russian>голода.</Russian>
 			<Spanish>de hambre.</Spanish>
 			<French>inanition.</French>
@@ -7471,7 +7471,7 @@
 		</Key>
 		<Key ID="str_death_combatlog">
 			<English>combat logging.</English>
-			<German>weil er versucht hat, aus einem Kampf zu fliehen.</German>
+			<German>, weil er versucht hat, aus einem Kampf zu fliehen.</German>
 			<Russian>выхода из игры в режиме боя.</Russian>
 			<Spanish>por huir en combate.</Spanish>
 			<French>une déco en combat.</French>
@@ -7499,21 +7499,23 @@
 		</Key>
 		<Key ID="str_death_fall">
 			<English>falling.</English>
+			<German>durch einen Sturz aus zu großer Höhe.</German>						
 		</Key>
 		<Key ID="str_death_crash">
-			<English>a vehicle crash.</English>		
+			<English>a vehicle crash.</English>	
+			<German>durch einen Fahrzeug Crash.</German>			
 		</Key>
 		<Key ID="str_death_runover">
 			<English>being run over.</English>
-			<German>wurde überfahren.</German>			
+			<German>, weil er überfahren wurde.</German>			
 		</Key>
 		<Key ID="str_death_eject">
 			<English>falling out of a moving vehicle.</English>
-			<German>fiel aus einem fahrenden Fahrzeug.</German>			
+			<German>, weil er aus einem fahrenden Fahrzeug fiel.</German>		
 		</Key>
 		<Key ID="str_death_melee">
 			<English>blunt force trauma.</English>
-			<German>stumpfe Gewalteinwirkung.</German>				
+			<German>durch stumpfe Gewalteinwirkung.</German>				
 		</Key>
 		<Key ID="str_abort_playerclose">
 			<English>Cannot Abort near another player!&lt;br/&gt;You are still in Combat.</English>
@@ -7780,6 +7782,7 @@
 		</Key>
 		<Key ID="STR_UI_HOLD_BREATH">
 			<English>Please change your controls. HoldBreath holds too many keys and has been blocked.</English>
+			<German>Bitte ändere deine Steuerung. "Luft anhalten" liegt auf mehr als einer Taste und wurde blockiert.</German>
 		</Key>
 	</Package>
 	<Package name="playerstats">
@@ -11083,6 +11086,7 @@
 		<Key ID="STR_FOOD_NAME_RBULL">
 			<English>Red Bull</English>
 			<Russian>Ред Булл</Russian>
+			<German>Dose (Red Bull)</German>
 		</Key>
 		<Key ID="STR_FOOD_DESC_RBULL">
 			<English>Red Bull is an energy drink sold by Austrian company Red Bull GmbH.</English>
@@ -11094,7 +11098,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_OSHERBET">
 			<English>Orange Sherbet</English>
-			<German>Orangenlimonade</German>
+			<German>Dose (Orangenlimonade)</German>
 			<Russian>Апельсиновый шербет</Russian>
 			<Czech>Pomerančová šťáva</Czech>
 		</Key>
@@ -11874,6 +11878,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_134">
 			<English>You do not have access to build on this plot.</English>
+			<German>Du darfst auf diesem Grundstück nichts bauen, da du kein eingetragener Eigentümer bist.</German>			
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_135">
 			<English>This item needs a %1 within %2 meters</English>
@@ -11910,7 +11915,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_139">
 			<English>Constructing %1 stage %2 of %3, move to cancel.</English>
-			<German>Konstruieren von %1, Stufe %2 von %3. Bewege dich sich um den Vorgang abzubrechen.</German>
+			<German>Konstruieren von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
 			<Russian>Строительство %1 стадия %2 из %3, двигайтесь для отмены.</Russian>
 			<Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
 			<French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
