@@ -109,7 +109,7 @@ _object_inventory = {
 
 _object_damage = {
 	//Allow dmg process
-	private ["_hitpoints","_array","_hit","_selection","_key","_damage","_allFixed","_forced","_recorddmg"];
+	private ["_hitpoints","_array","_hit","_selection","_key","_damage","_allFixed"];
 	_hitpoints = _object call vehicle_getHitpoints;
 	_damage = damage _object;
 	_array = [];
