@@ -85,7 +85,7 @@ if (_unit == player) then {
 
     if (_hit == "" && _ammo != "Crash") exitWith //Ignore none part dmg. Exit after processing humanity hit. Don't punish driver for damaging passenger in crash
 	{
-        if (_source != player && _isPlayer && alive player) then
+        if (!local _source && _isPlayer && alive player) then
 		{
 			_isBandit = (player getVariable["humanity",0]) <= -5000;
 			//_isBandit = (_model in ["Bandit1_DZ","BanditW1_DZ"]);
