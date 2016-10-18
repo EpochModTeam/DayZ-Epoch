@@ -75,7 +75,7 @@ if (_object isKindOf "Bag_Base_EP1") then {
 	} count _normalWeaps;
 
 	//transportMaxMagazines is the same as total number of 1x slots in backpack
-	_totalBagSlots = getNumber (configFile >> "CfgVehicles" >> (typeOf _backpack) >> "transportMaxMagazines");
+	_totalBagSlots = getNumber (configFile >> "CfgVehicles" >> (typeOf _object) >> "transportMaxMagazines");
 	
 	_alreadyInBackpack = (10 * _currentPrim) + (5 * _currentSec) + _currentTool + count(_normalMags);
 	_totalNewSpace = 10 * _primaryToBuy + 5 * _sidearmToBuy + _toolsToBuy + _toBuyTotalMags;
