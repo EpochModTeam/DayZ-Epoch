@@ -12,8 +12,8 @@ class PZombie_VB: Citizen1
 	respawnWeapons[] = {};
 	respawnMagazines[] = {};
 
-	faceType = "ZFaces";
-	identityTypes[] = {"Zombie1","Zombie2"};
+	faceType = "PZombieFace1";
+	identityTypes[] = {"PZombie1"};
 	extCameraPosition[] = {0,1.5,-9};
 	
 	canHideBodies = 0;
