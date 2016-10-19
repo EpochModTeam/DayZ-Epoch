@@ -33,7 +33,7 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 	};
 
 	//Lets see if the player has been struck by a moving vehicle.
-	if (!isNull dayz_HitBy) then { _ammo = "RunOver"; };
+	if (!isNull dayz_HitBy && vehicle player == player) then { _ammo = "RunOver"; };
 	if ((_hit == "Legs") AND {(_ammo == "RunOver")}) then { dayz_HitBy = objNull; };
 
 	//If a vehicle is moveing faster then 15 lets register some kind of direct damage rather then relying on indirect/physics damage.
