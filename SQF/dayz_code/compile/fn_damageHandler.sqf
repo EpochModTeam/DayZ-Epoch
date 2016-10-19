@@ -257,7 +257,7 @@ if (_damage > 0.4) then {
 	//Dragged
 		case 5: {_scale = 25};
 	//Crash
-		case 6: {_scale = 100};
+		case 6: {_scale = 400};
     };
 	
 	//Display some info in the players log file.
