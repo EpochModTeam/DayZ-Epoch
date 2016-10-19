@@ -7784,6 +7784,36 @@
 			<English>Please change your controls. HoldBreath holds too many keys and has been blocked.</English>
 			<German>Bitte ändere deine Steuerung. "Luft anhalten" liegt auf mehr als einer Taste und wurde blockiert.</German>
 		</Key>
+		<Key ID="STR_UI_STREAMER_MODE">
+			<English>Streamer mode:</English>
+		</Key>
+		<Key ID="STR_UI_STREAMER_MODE_TOOLTIP">
+			<English>Hides server watermark and rules feed</English>
+		</Key>
+		<Key ID="STR_UI_ENABLED">
+			<English>Enabled</English>
+			<French>Activé</French>
+			<Spanish>Activado</Spanish>
+			<Italian>Attivato</Italian>
+			<Hungarian>Engedélyezve</Hungarian>
+			<Polish>włączony</Polish>
+			<Russian>Включен</Russian>
+			<German>Aktiviert</German>
+			<Czech>Povolen</Czech>
+			<Japanese>有効</Japanese>
+		</Key>
+		<Key ID="STR_UI_DISABLED">
+			<English>Disabled</English>
+			<French>Désactivé</French>
+			<Spanish>Desactivado</Spanish>
+			<Italian>Disattivato</Italian>
+			<Hungarian>Kikapcsolva</Hungarian>
+			<Polish>Wyłączone</Polish>
+			<Russian>Откл.</Russian>
+			<German>Deaktiviert</German>
+			<Czech>Zakázáno</Czech>
+			<Japanese>無効</Japanese>
+		</Key>
 	</Package>
 	<Package name="playerstats">
 		<Key ID="str_playerstats_bandit">

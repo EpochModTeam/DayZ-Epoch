@@ -7,6 +7,7 @@
 [NEW] 1.8.8 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee (or rifle onBack if DZE_TwoPrimaries=2;))
 [NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. See configVariables.sqf for details @icomrade
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
+[NEW] Streamer mode is toggleable by player in game options. Setting enabled hides server water mark and rules feed. @ebaydayz
 [NEW] Status UI icons are toggleable between "vanilla","epoch","dark" set DZE_UI in init.sqf @ebaydayz
 [NEW] Optional dark UI by @hogscraper http://epochmod.com/forum/index.php?/topic/13654-proposed-ui-change/ code fixes by @SplenectomY @icomrade #1622
 [NEW] If using the vanilla UI you may enable or disable the combat icon with DZE_VanillaUICombatIcon = true/false; @icomrade

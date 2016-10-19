@@ -4,4 +4,8 @@
 	waituntil {!(isNull (findDisplay 46))};
 	5 cutRsc ["wm_disp","PLAIN"];
 	((uiNamespace getVariable "wm_disp") displayCtrl 1) ctrlSetText dayZ_serverName;
+	
+	if (profileNamespace getVariable ["streamerMode",0] == 1) then {
+		(uiNamespace getVariable "wm_disp") displayCtrl 1 ctrlShow false;
+	};
 };

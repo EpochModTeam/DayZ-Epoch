@@ -9,7 +9,6 @@ class RscIGUIShortcutButton;
 class RscGearShortcutButton;
 class RscIGUIListNBox;
 class RscActiveText;
-
 class RscPictureKeepAspect;
 class RscStandardDisplay;
 class RscProgress;
@@ -19,6 +18,9 @@ class RscObject;
 class IGUIBack;
 class RscListBox;
 class RscIGUIListBox;
+class RscXListBox;
+class RscXSliderH;
+class RscShortcutButton;
 class RscHTML;
 class RscDisplayEmpty;
 
@@ -42,6 +44,119 @@ class RscDisplayConfigure {
 	onUnload = "if (!isNil 'keyboard_keys') then {keyboard_keys = nil; [controlNull,1,false,false,false] call DZ_KeyDown_EH;};"; //refresh keyboard_keys after changing binds
 	class controlsBackground;
 	class controls;
+};
+class RscDisplayGameOptions {
+	movingEnable = 1;
+	enableDisplay = 1;
+	onLoad = "{(_this select 0) displayCtrl 140 lbAdd _x;} forEach [localize 'STR_UI_DISABLED',localize 'STR_UI_ENABLED']; (_this select 0) displayCtrl 140 lbSetCurSel (profileNamespace getVariable ['streamerMode',0]); uiNamespace setVariable ['streamerMode',(profileNamespace getVariable ['streamerMode',0])];";
+	onUnload = "call ui_changeDisplay;";
+	class controlsBackground;	
+	class controls {		
+		class CA_Title : CA_Title {
+			x = 0.18;
+			y = 0.192;
+			text = $STR_DISP_OPTIONS_GAME_OPTIONS;
+		};	
+		class CA_TextLanguage : RscText {
+			x = 0.159803;
+			y = (0.420549 + -2*0.069854);
+			text = $STR_DISP_OPT_LANGUAGE;
+		};
+		class CA_ValueLanguage : RscXListBox {
+			idc = 135;
+			x = 0.400534;
+			y = (0.420549 + -2*0.069854);
+			w = 0.3;
+		};
+		class CA_TextSubtitles : CA_TextLanguage {
+			x = 0.159803;
+			y = (0.420549 + -1*0.069854);
+			text = $STR_OPT_SUBTITLES;
+		};
+		class CA_ValueSubtitles : CA_ValueLanguage {
+			idc = 102;
+			x = 0.400534;
+			y = (0.420549 + -1*0.069854);
+			w = 0.3;
+		};
+		class CA_RadioSubtitles : CA_TextLanguage {
+			x = 0.159803;
+			y = (0.420549 + 0*0.069854);
+			text = $STR_OPT_RADIO_SUBTITLES;
+		};
+		class CA_ValueRadio : CA_ValueLanguage {
+			idc = 103;
+			y = (0.420549 + 0*0.069854);
+		};
+		class CA_TextGore : CA_TextLanguage {
+			idc = 122;
+			x = 0.159803;
+			y = (0.420549 + 1*0.069854);
+			text = $STR_DISP_OPT_BLOOD;
+		};
+		class CA_ValueBlood : CA_ValueLanguage {
+			idc = 119;
+			y = (0.420549 + 1*0.069854);
+		};
+		class CA_TextFloatingZone : CA_TextLanguage {
+			x = 0.159803;
+			y = (0.420549 + 2*0.069854);
+			text = $STR_DISP_CONF_FLOATING_ZONE;
+		};
+		class CA_ValueFloatingZone : RscXSliderH {
+			idc = 109;
+			x = 0.400534;
+			y = (0.420549 + 2*0.069854);
+			w = 0.3;
+		};
+		class CA_TextHeadBob : CA_TextLanguage {
+			x = 0.159803;
+			y = (0.420549 + 3*0.069854);
+			text = $STR_DISP_OPT_HEADBOB;
+		};
+		class CA_ValueHeadBob : RscXSliderH {
+			idc = 138;
+			x = 0.400534;
+			y = (0.420549 + 3*0.069854);
+			w = 0.3;
+		};
+		class CA_TextStreamerMode : CA_TextLanguage {
+			x = 0.159803;
+			y = (0.420549 + 4*0.069854);
+			text = $STR_UI_STREAMER_MODE;
+		};
+		class CA_ValueStreamerMode : CA_ValueLanguage {
+			idc = 140;
+			y = (0.420549 + 4*0.069854);
+			tooltip = $STR_UI_STREAMER_MODE_TOOLTIP;
+			onLBSelChanged = "profileNamespace setVariable ['streamerMode',(lbCurSel (_this select 0))];";
+		};
+		class CA_ButtonCancel : RscShortcutButton {
+			idc = 2;
+			shortcuts[] = {0x00050000 + 1};
+			x = 0.151;
+			y = 0.7625;
+			text = $STR_DISP_CANCEL;
+			//reset to original value
+			onButtonClick = "profileNamespace setVariable ['streamerMode',(uiNamespace getVariable 'streamerMode')]; saveProfileNamespace; if (!isNil 'player_toggleStreamerMode') then {call player_toggleStreamerMode;};";
+		};
+		class CA_ButtonDefault : RscShortcutButton {
+			idc = 304;
+			shortcuts[] = {0x00050000 + 2};
+			x = 0.338;
+			y = 0.7625;
+			text = $STR_DISP_OPTIONS_DIFFICULTY;
+		};
+		class CA_ButtonContinue : RscShortcutButton {
+			idc = 1;
+			shortcuts[] = {0x00050000 + 0, 28, 57, 156};
+			x = 0.525;
+			y = 0.7625;
+			text = $STR_DISP_OK;
+			default = 1;
+			onButtonClick = "saveProfileNamespace; if (!isNil 'player_toggleStreamerMode') then {call player_toggleStreamerMode;};";
+		};
+	};
 };
 class RscDisplayChat
 {
@@ -150,7 +265,6 @@ class RscDisplayDebriefing: RscStandardDisplay
 		delete Mainback;
 	};
 };
-class RscShortcutButton;
 class RscShortcutButtonMain;
 
 // RscDisplayMultiplayerSetup moved here:
@@ -195,33 +309,6 @@ class RscDisplayMissionFail: RscStandardDisplay
 	{
 		delete Mainback;
 	};
-};
-
-
-class CA_TextLanguage;
-class RscXListBox;
-
-class RscDisplayGameOptions
-{
-	//onLoad = "((_this select 0) displayCtrl 140) lbAdd 'Default';((_this select 0) displayCtrl 140) lbAdd 'Debug';((_this select 0) displayCtrl 140) lbAdd 'None';((_this select 0) displayCtrl 140) lbSetCurSel (uiNamespace getVariable ['DZ_displayUI', 0]);";
-	onUnload = "call ui_changeDisplay;"; /*diag_log[diag_tickTime,'RscDisplayGameOptions'];*/
-	/*class controls
-	{
-		class CA_TextUIDisplay: CA_TextLanguage
-		{
-			x = 0.159803;
-			y = "(0.420549 + 4*0.069854)";
-			text = "DayZ UI:";
-		};
-		class CA_ValueUIDisplay: RscXListBox
-		{
-			idc = 140;
-			x = 0.400534;
-			y = "(0.420549 + 4*0.069854)";
-			w = 0.3;
-			onLBSelChanged = "(uiNamespace setVariable ['DZ_displayUI', (_this select 1)]);";
-		};
-	};*/
 };
 
 class RscDisplayMain : RscStandardDisplay
