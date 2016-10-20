@@ -1,5 +1,5 @@
 [NEW] Fully updated to DayZ 1.8.8 base @icomrade @ebaydayz
-[NEW] 1.8.8 attachments system, community weapons, traps, tripwires and car bomb
+[NEW] 1.8.8 attachments system, community weapons, traps and tripwires
 [NEW] 1.8.8 journal and crafting menu are now functional (default 'J' key)
 [NEW] 1.8.8 spawn selection, set dayz_spawnselection = 1; in init.sqf (Chernarus only)
 [NEW] 1.8.8 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
