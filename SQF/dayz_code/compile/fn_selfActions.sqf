@@ -14,7 +14,7 @@ private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles",
 "_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
-"_isPlane","_allowed","_hasAccess"];
+"_isPlane","_allowed","_hasAccess","_uid"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -25,7 +25,7 @@ _magazinesPlayer = magazines player;
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 //_canDrink = count nearestObjects [getPosATL player, ["Land_pumpa","Land_water_tank"], 2] > 0;
-
+_uid = getPlayerUID player;
 _nearLight = nearestObject [player,"LitObject"];
 _canPickLight = false;
 _vehicleOwnerID = _vehicle getVariable ["CharacterID","0"];
@@ -130,7 +130,7 @@ if (_inVehicle) then {
 			_temp_keys = _totalKeys select 0;
 			_temp_keys_names = _totalKeys select 1;	
 			_hasKey = _vehicleOwnerID in _temp_keys;
-			_oldOwner = (_vehicleOwnerID == dayz_playerUID);
+			_oldOwner = (_vehicleOwnerID == _uid);
 			_text = getText (configFile >> "CfgVehicles" >> (typeOf DZE_myVehicle) >> "displayName");
 			if (locked DZE_myVehicle) then {
 				if (_hasKey || _oldOwner) then {
@@ -265,7 +265,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_characterID = _cursorTarget getVariable ["CharacterID","0"];
 	
 	if (DZE_permanentPlot) then {
-		_id = dayz_playerUID;
+		_id = _uid;
 		_ownerID = _cursorTarget getVariable ["ownerPUID","0"];
 	} else {
 		_id = dayz_characterID;
@@ -747,7 +747,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			_temp_keys = _totalKeys select 0;
 			_temp_keys_names = _totalKeys select 1;
 			_hasKey = _characterID in _temp_keys;
-			_oldOwner = (_characterID == dayz_playerUID);
+			_oldOwner = (_characterID == _uid);
 			if (locked _cursorTarget) then {
 				if (_hasKey || _oldOwner) then {
 					_unlock = player addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",[_cursorTarget,(_temp_keys_names select (parseNumber _characterID))], 2, true, true];
@@ -801,7 +801,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3} && {!keypadCancel}) then {
 		if (s_player_unlockvault < 0) then {
 			if (_typeOfCursorTarget in DZE_LockedStorage) then {
-				if (_characterID == dayz_combination || _ownerID == dayz_playerUID) then {
+				if (_characterID == dayz_combination || _ownerID == _uid) then {
 					_combi = player addAction [format[localize "STR_EPOCH_ACTIONS_OPEN",_text], "\z\addons\dayz_code\actions\vault_unlock.sqf",_cursorTarget, 0, false, true];
 					s_player_combi set [count s_player_combi,_combi];
 				} else {
@@ -810,7 +810,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				};
 				s_player_unlockvault = 1;
 			} else {
-				if (_characterID != dayz_combination && _ownerID != dayz_playerUID) then {
+				if (_characterID != dayz_combination && _ownerID != _uid) then {
 					_combi = player addAction [localize "STR_EPOCH_ACTIONS_RECOMBO", "\z\addons\dayz_code\actions\vault_combination_1.sqf",_cursorTarget, 0, false, true];
 					s_player_combi set [count s_player_combi,_combi];
 					s_player_unlockvault = 1;
@@ -825,11 +825,11 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//Allow owner to pack vault
 	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {player distance _cursorTarget < 3}  && {!keypadCancel}) then {
 		if (s_player_lockvault < 0) then {
-			if (_characterID == dayz_combination || _ownerID == dayz_playerUID) then {
+			if (_characterID == dayz_combination || _ownerID == _uid) then {
 				s_player_lockvault = player addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true];
 			};
 		};
-		if (s_player_packvault < 0 && (_characterID == dayz_combination || _ownerID == dayz_playerUID)) then {
+		if (s_player_packvault < 0 && (_characterID == dayz_combination || _ownerID == _uid)) then {
 			s_player_packvault = player addAction [format["<t color='#ff0000'>%1</t>",(format[localize "STR_EPOCH_ACTIONS_PACK",_text])], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true];
 		};
 	} else {
@@ -1218,7 +1218,7 @@ if (_dogHandle > 0) then {
 	_dog = _dogHandle getFSMVariable "_dog";
 	if (isNil "_dog") exitWith {};
 	if (isNil "_ownerID") then {_ownerID = "0"};
-	if (_canDo && !_inVehicle && alive _dog && !(_ownerID in [dayz_characterID,dayz_playerUID])) then {
+	if (_canDo && !_inVehicle && alive _dog && !(_ownerID in [dayz_characterID,_uid])) then {
 		if (s_player_movedog < 0) then {
 			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID",0], 1, false, true];
 		};
