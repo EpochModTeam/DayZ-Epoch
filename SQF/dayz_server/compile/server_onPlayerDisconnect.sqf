@@ -36,7 +36,9 @@ if (_playerUID in dayz_ghostPlayers) exitwith {
 
 	//Lets remove the object.
 	if (!isNull _playerObj) then { 
-		deleteGroup (group _playerObj);
+		_myGroup = group _playerObj;
+		deleteVehicle _playerObj;
+		deleteGroup _myGroup;
 	};
 };
 
@@ -82,10 +84,13 @@ if (_characterID != "?") exitwith {
 	[_playerUID,_characterID,2,_playerName] call dayz_recordLogin;
 };
 
-if (isNull _playerObj) then { diag_log("Player Object does not esist"); };
-
-
+if (isNull _playerObj) then {
+	diag_log "Player Object does not exist"; 
+} else {
 //Lets remove the object.
-if (!isNull _playerObj) then { 
-	deleteGroup (group _playerObj);
+	if (alive _playerObj) then {
+		_myGroup = group _playerObj;
+		deleteVehicle _playerObj;
+		deleteGroup _myGroup;
+	};
 };
