@@ -392,7 +392,8 @@ if (_hit in USEC_MinorWounds) then {
             [_unit,_hit,(_damage / 2)] call object_processHit;
         };
 		
-		[_unit,_hit,(_damage / 2)] call object_processHit;
+		//Stop process hit running twice. its set aboue in the if else statement.
+		//[_unit,_hit,(_damage / 2)] call object_processHit;
 	};
 };
 
