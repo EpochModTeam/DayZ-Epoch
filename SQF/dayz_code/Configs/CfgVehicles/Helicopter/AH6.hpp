@@ -39,6 +39,7 @@ class AH6J_EP1_DZ: AH6_Base_EP1
 	class EventHandlers: DefaultEventhandlers
 	{
 		killed = "_this call BIS_Effects_EH_Killed;";
+		fired = "_this call BIS_Effects_EH_Fired;";
 	};
 };
 class AH6J_EP1_DZE: AH6J_EP1_DZ
