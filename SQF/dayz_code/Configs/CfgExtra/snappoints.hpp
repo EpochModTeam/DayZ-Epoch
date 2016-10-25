@@ -2,7 +2,6 @@
 Created by Raymix
 */
 
-
 class SnapBuilding {
 	//Barriers whitelist
 	class Barrier {
@@ -12,11 +11,14 @@ class SnapBuilding {
 			"Land_HBarrier1_DZ",
 			"Sandbag1_DZ",
 			"BagFenceRound_DZ",
-			"Fort_RazorWire"
+			"Fort_RazorWire",
+			"WoodFloorQuarter_DZ",
+			"WoodFloorHalf_DZ",
+			"WoodFloor_DZ",	
+			"MetalFloor_DZ"
 		};
 		radius = 5;
 	};
-	//snap points
 	class Land_HBarrier5Preview: Barrier{ //fix for broken offsets in ghost
 		points[] = {
 		{0,0,0,"Pivot"},
@@ -242,8 +244,8 @@ class SnapBuilding {
 	class Cinder_DZE: FloorsWallsStairs { //All cinder walls and doors
 		points[] = {
 		{0,0,0,"Pivot"},
-		{-2.64, 0, 0,"Left"},
-		{2.64, 0, 0,"Right"},
+		{-2.64, 0, 1.685,"Left"},
+		{2.64, 0, 1.685,"Right"},
 		{0, 0, 3.37042,"Top"}
 		};
 		radius = 10;
@@ -255,6 +257,22 @@ class SnapBuilding {
 		{2.64, 0, -0.009,"Right"},
 		{0, 0, 1.685,"Top"},
 		{0,0,-1.685,"Bottom"}
+		};
+	};
+	class CinderWallDoorway_Preview_DZ: Cinder_DZE {
+		points[] = {
+		{0,0,0,"Pivot"},
+		{-2.64, 0, 1.685,"Left"},
+		{2.64, 0, 1.685,"Right"},
+		{0, 0, 3.37042,"Top"}
+		};
+	};
+	class CinderWallSmallDoorway_Preview_DZ: Cinder_DZE {
+		points[] = {
+		{0,0,0,"Pivot"},
+		{-2.64, 0, 1.685,"Left"},
+		{2.64, 0, 1.685,"Right"},
+		{0, 0, 3.37042,"Top"}
 		};
 	};
 	class CinderWallDoorway_Preview_DZ: Cinder_DZE {};
