@@ -206,6 +206,7 @@ if (_enoughMoney) then {
 			_bTotal = _bTotal + (_x select 9);
 		} count Z_BuyingArray;
 		if (_item2Add != "0") then {
+			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_VEHICLE",(Z_BuyingArray select 0) select 3,typeOf (Z_vehicle)];
 		} else {
 			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_VEHICLE",_bTotal,typeOf Z_vehicle];
 		};
