@@ -1,4 +1,4 @@
-private ["_backpacks","_charID","_clientID","_dir","_dllcall","_holder","_lockBoxes","_lockCode","_lockColor","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons"];
+private ["_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockColor","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons"];
 
 _player = _this select 0;
 _obj = _this select 1;
@@ -13,6 +13,7 @@ _charID = _obj getVariable ["CharacterID","0"];
 _objectID = _obj getVariable ["ObjectID","0"];
 _objectUID = _obj getVariable ["ObjectUID","0"];
 _ownerID = _obj getVariable ["ownerPUID","0"];
+_lockCode = "0";
 
 // Player may have disconnected or died before message send. Attempt lock/unlock/pack/save procedure anyway
 if (isNull _player) then {diag_log "ERROR: server_handleSafeGear called with Null player object";};
@@ -111,16 +112,14 @@ _type = switch _type do {
 	};
     case "LockboxStorage";
     case "LockboxStorageLocked": {
-		_lockBoxes = ["LockboxStorage","LockboxStorageLocked"];
-		if (_type in _lockBoxes) then {
-			_lockCode =  parseNumber _charID;
-			_lockCode = _lockCode - 10000;
-			if (_lockCode <= 99) then { _lockColor = "Red"; };
-			if (_lockCode >= 100 && _lockCode <= 199) then { _lockColor = "Green"; _lockCode = _lockCode - 100; };
-			if (_lockCode >= 200) then { _lockColor = "Blue"; _lockCode = _lockCode - 200; };
-			if (_lockCode <= 9) then { _lockCode = format["0%1", _lockCode]; };
-			_lockCode = format ["%1%2",_lockColor,_lockCode];
-		};
+		_lockColor = "";
+		_lockCode =  parseNumber _charID;
+		_lockCode = _lockCode - 10000;
+		if (_lockCode <= 99) then { _lockColor = "Red"; };
+		if (_lockCode >= 100 && _lockCode <= 199) then { _lockColor = "Green"; _lockCode = _lockCode - 100; };
+		if (_lockCode >= 200) then { _lockColor = "Blue"; _lockCode = _lockCode - 200; };
+		if (_lockCode <= 9) then { _lockCode = format["0%1", _lockCode]; };
+		_lockCode = format ["%1%2",_lockColor,_lockCode];
 		"LockBox"
 	};
 };

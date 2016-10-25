@@ -12,8 +12,8 @@ _typeOf = typeOf (unitBackPack player);
 	_type = _x select 1;
 	_count = 0;
 	
-	if (_type in DZE_tradeVehicle && {_name == typeOf (DZE_myVehicle)} && {local DZE_myVehicle} && {alive DZE_myVehicle}) then {
-		_count = { (local _x && _x == DZE_myVehicle) } count (nearestObjects [(getPosATL player), [_name], Z_VehicleDistance]);
+	if (_type in DZE_tradeVehicle && {_name == typeOf Z_vehicle}) then {
+		_count = 1;
 	};
 	if (_type == "trade_items") then {
 		{
@@ -26,8 +26,8 @@ _typeOf = typeOf (unitBackPack player);
 	if (_type == "trade_weapons") then {
 		_count = {_x == _name} count _weapons;
 	};
-	if (_type == "trade_backpacks") then { 
-		if (_name == _typeOf) then { _count = 1; }
+	if (_type == "trade_backpacks" && {_name == _typeOf}) then {
+		_count = 1;
 	};
 	
 	if (_count > 0) then {

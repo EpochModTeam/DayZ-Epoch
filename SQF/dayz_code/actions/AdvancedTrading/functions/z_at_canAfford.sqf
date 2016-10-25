@@ -1,4 +1,4 @@
-private ["_amounts","_backpackMoney","_backpackPlayer","_counter","_findGem","_forEachIndex","_inventoryMoney","_kinds","_mags","_part","_return","_totalToPay","_total_currency","_vehicleMoney","_worth"];
+private ["_amounts","_backpackMoney","_backpackPlayer","_counter","_findGem","_inventoryMoney","_kinds","_mags","_part","_return","_totalToPay","_total_currency","_vehicleMoney","_worth"];
 
 _totalToPay = _this;
 _return = [false, [], [], [], 0];
