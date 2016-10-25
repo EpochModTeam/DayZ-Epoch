@@ -1,4 +1,4 @@
-private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keyColor","_keyNumber","_keySelected","_location","_moneyInfo","_myMoney","_p","_parentClasses","_part_out","_pistolMagsToBuy","_price","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy","_worth"];
+private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keyColor","_keyNumber","_keySelected","_location","_moneyInfo","_myMoney","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
@@ -28,7 +28,7 @@ if (Z_SingleCurrency) then {
 				if ('PistolCore' in _parentClasses) then {
 					_sidearmToBuy = _sidearmToBuy + (_x select 9);
 				} else {
-					_primaryToBuy = _primaryToBuy + (_x select 9); // _amount
+					_primaryToBuy = _primaryToBuy + (_x select 9);
 				};
 			};
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
@@ -43,11 +43,11 @@ if (Z_SingleCurrency) then {
 		};
 		if (_x select 1 == "trade_backpacks") then {
 			_backpacksToBuy = _backpacksToBuy + (_x select 9) ;
-			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2)); // _price * _amount
+			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
 		};
 		if ((_x select 1) in DZE_tradeVehicle) then {
 			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
-			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2)); // _price * _amount
+			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
 		};
 		_itemsToLog set [0, (_itemsToLog select 0) + [_x select 0]];
 		_itemsToLog set [1, (_itemsToLog select 1) + [_x select 9]];
@@ -69,7 +69,7 @@ if (Z_SingleCurrency) then {
 					_primaryToBuy = _primaryToBuy + (_x select 9);
 				};
 			};
-			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9)); // _worth * _price * _amount
+			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
 		};
 		if (_x select 1 == "trade_items") then {
 			if (getNumber (configFile >> "CfgMagazines" >> (_x select 0) >> "type") == 16) then { // 16 = WeaponSlotHandGunItem (pistol ammo slot)
@@ -216,8 +216,7 @@ if (_enoughMoney) then {
 			if (_x select 1 == "trade_weapons") then {
 				_count = 0;
 				while {_count < (_x select 9)} do {
-					_p = primaryWeapon player;
-					_hasPrimary = if (_p != "") then {true} else {false};				
+					_hasPrimary = if (primaryWeapon player != "") then {true} else {false};				
 					if (_hasPrimary && getNumber (configFile >> "CfgWeapons" >> (_x select 0) >> "type") == 1) then {
 						dayz_onBack = _x select 0; //Add to back
 					} else {
