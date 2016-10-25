@@ -160,7 +160,8 @@ if (_enoughMoney) then {
 	//systemChat localize "STR_EPOCH_PLAYER_105"; // "Stand still to complete trade". Medic animation loop no longer used.
 
 	closeDialog 2;
-
+	_item2Add = "0";
+	
 	if (Z_SellingFrom == 0) then { //backpack
 		_backpack = unitBackpack player;
 		{
