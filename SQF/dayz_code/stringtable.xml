@@ -15076,6 +15076,15 @@
 			<English>Purchased %1 items into your gear</English>
 			<German>Du hast %1 Gegenstände in deine Ausrüstung gekauft.</German>	
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUY_VEH_IN_BACKPACK">
+			<English>You purchased a %1, the key has been added into your backpack.</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUY_VEH_IN_VEHICLE">
+			<English>You purchased a %1, the key has been added into your %2.</English>
+		</Key>
+		<Key ID="STR_EPOCH_TRADE_BUY_VEH_IN_GEAR">
+			<English>You purchased a %1, the key has been added to your toolbelt.</English>
+		</Key>		
 		<Key ID="STR_EPOCH_TRADE_SELL_IN_BACKPACK">
 			<English>Sold %1 items from your backpack</English>
 			<German>Du hast %1 Gegenstände aus deinem Rucksack verkauft.</German>	

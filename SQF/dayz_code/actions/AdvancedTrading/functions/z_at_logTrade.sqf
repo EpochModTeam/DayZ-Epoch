@@ -18,15 +18,15 @@ _Z_logTrade = {
 	// Log to client RPT
 	if (Z_SingleCurrency) then {
 		if (_buyOrSell == "buy") then {
-			diag_log format["%5: Bought %4 x %1 into %7 at %2 for %3x%6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+			diag_log format["%5: Purchased %4x %1 into %7 at %2 for %3x%6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
 		} else {
-			diag_log format["%5: Sold %4 x %1 from %7 at %2 for %3x%6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+			diag_log format["%5: Sold %4x %1 from %7 at %2 for %3x%6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
 		};
 	} else {
 		if (_buyOrSell == "buy") then {
-			diag_log format["%5: Bought %4 x %1 into %7 at %2 for %3",_className,inTraderCity,_tCost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+			diag_log format["%5: Purchased %4x %1 into %7 at %2 for %3",_className,inTraderCity,_tCost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
 		} else {
-			diag_log format["%5: Sold %4 x %1 from %7 at %2 for %3",_className,inTraderCity,_tCost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
+			diag_log format["%5: Sold %4x %1 from %7 at %2 for %3",_className,inTraderCity,_tCost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
 		};
 	};	
 

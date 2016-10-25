@@ -1,4 +1,4 @@
-private ["_worth","_total_currency","_return","_part","_totalToPay","_inventoryMoney","_backpackMoney","_kinds","_amounts","_vehicleMoney"];
+private ["_amounts","_backpackMoney","_backpackPlayer","_counter","_findGem","_forEachIndex","_inventoryMoney","_kinds","_mags","_part","_return","_totalToPay","_total_currency","_vehicleMoney","_worth"];
 
 _totalToPay = _this;
 _return = [false, [], [], [], 0];
@@ -45,7 +45,7 @@ if (Z_AllowTakingMoneyFromBackpack) then {
 				if (_findGem >= 0) then {
 					_worth = DZE_GemWorthList select _findGem;
 					_total_currency = _total_currency + (_worth * (_amounts select _forEachIndex));
-					_counter = 0 ;
+					_counter = 0;
 					while {_counter < (_amounts select _forEachIndex)} do {
 					  _backpackMoney set [count(_backpackMoney),_x];
 					  _counter = _counter + 1;
@@ -68,7 +68,7 @@ if (Z_AllowTakingMoneyFromVehicle) then {
 			_worth =  (_part >> "worth");
 			if isNumber (_worth) then {
 				_total_currency = _total_currency + (getNumber(_worth) * (_amounts select _forEachIndex));
-				_counter = 0 ;
+				_counter = 0;
 				while {_counter < (_amounts select _forEachIndex)} do {
 					_vehicleMoney set [count(_vehicleMoney),_x];
 					_counter = _counter + 1;
@@ -80,7 +80,7 @@ if (Z_AllowTakingMoneyFromVehicle) then {
 					_total_currency = _total_currency + (_worth * (_amounts select _forEachIndex));
 					_counter = 0 ;
 					while {_counter < (_amounts select _forEachIndex)} do {
-					  _backpackMoney set [count(_backpackMoney),_x];
+					  _vehicleMoney set [count(_vehicleMoney),_x];
 					  _counter = _counter + 1;
 					};
 				};

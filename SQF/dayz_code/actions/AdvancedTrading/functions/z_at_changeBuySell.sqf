@@ -1,6 +1,6 @@
 #include "defines.hpp"
 
-Z_Selling = !Z_Selling;	
+Z_Selling = !Z_Selling;
 if (Z_Selling) then {
 	(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SELLBUYTOGGLE) ctrlSetText localize "STR_EPOCH_PLAYER_291";
 	(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_FILTERBUTTON) ctrlSetText localize "STR_UI_FILTER";
