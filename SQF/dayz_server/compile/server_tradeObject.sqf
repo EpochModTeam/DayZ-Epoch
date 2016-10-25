@@ -1,12 +1,16 @@
-private ["_player","_PUID","_name","_traderid","_buyorsell","_data","_result","_key","_outcome","_clientID","_price","_quantity","_container","_return"];
+private ["_player","_playerUID","_name","_traderid","_buyorsell","_data","_result","_key","_outcome","_clientID","_price","_quantity","_container","_return"];
 
 _player =		_this select 0;
 _traderID = 	_this select 1;
 _buyorsell = 	_this select 2;	//0 > Buy // 1 > Sell
 _classname =	_this select 3;
 _traderCity = 	_this select 4;
-_currency =	_this select 5;
+_currency =		_this select 5;
 _price =		_this select 6;
+
+_clientID = 	owner _player;
+_playerUID = 	getPlayerUID _player;
+_name = 		if (alive _player) then { name _player; } else { "Dead Player"; };
 
 if (count _this > 7) then {
 	_quantity = _this select 7;
@@ -18,16 +22,12 @@ if (count _this > 7) then {
 	_return = true;
 };
 
-_clientID = 	owner _player;
-
 if (typeName _price  == "SCALAR") then { _price = format ["%1x%2",_price,_currency]; } else { _price = format ["%1",_price]; };
-_name = if (alive _player) then { name _player; } else { "Dead Player"; };
-_PUID = getPlayerUID _player;
 
 if (_buyorsell == 0) then { //Buy
-	diag_log format["%8: %9: %1 (%2) bought %6 x %3 into %7 at %4 for %5", _name, _PUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289",localize "STR_EPOCH_PLAYER"];
+	diag_log format["%8: %1 (%2) purchased %6x %3 into %7 at %4 for %5", _name, _playerUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289"];
 } else { //SELL
-	diag_log format["%8: %9: %1 (%2) sold %6 x %3 from %7 at %4 for %5",_name, _PUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289",localize "STR_EPOCH_PLAYER"];
+	diag_log format["%8: %1 (%2) sold %6x %3 from %7 at %4 for %5",_name, _playerUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289"];
 };
 
 if (DZE_ConfigTrader) then {

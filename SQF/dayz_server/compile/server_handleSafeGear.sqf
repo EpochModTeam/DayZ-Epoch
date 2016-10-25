@@ -1,5 +1,4 @@
-private ["_player","_obj","_objectID","_objectUID","_statusText","_puid","_status","_clientID","_type","_lockedClass","_unlockedClass","_packedClass",
-"_name","_pos","_dir","_vector","_charID","_ownerID","_weapons","_magazines","_backpacks","_holder"];
+private ["_backpacks","_charID","_clientID","_dir","_dllcall","_holder","_lockBoxes","_lockCode","_lockColor","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons"];
 
 _player = _this select 0;
 _obj = _this select 1;
@@ -19,7 +18,7 @@ _ownerID = _obj getVariable ["ownerPUID","0"];
 if (isNull _player) then {diag_log "ERROR: server_handleSafeGear called with Null player object";};
 
 _clientID = owner _player;
-_puid = getPlayerUID _player;
+_playerUID = getPlayerUID _player;
 
 _statusText = switch (_status) do {
 	case 0: {"UNLOCKED"};
@@ -28,7 +27,7 @@ _statusText = switch (_status) do {
 };
 
 if (isNull _obj) exitWith {
-	diag_log format["ERROR: server_handleSafeGear called with Null safe object by %1(%2). %3 attempt failed.",_name,_puid,_statusText];
+	diag_log format["ERROR: server_handleSafeGear called with Null safe object by %1(%2). %3 attempt failed.",_name,_playerUID,_statusText];
 	dze_waiting = "fail";
 	_clientID publicVariableClient "dze_waiting";
 };
@@ -106,11 +105,27 @@ switch (_status) do {
 
 _type = switch _type do {
     case "VaultStorage";
-    case "VaultStorageLocked": {"Safe"};
+    case "VaultStorageLocked": {
+		_lockCode = _charID;
+		"Safe"
+	};
     case "LockboxStorage";
-    case "LockboxStorageLocked": {"LockBox"};
+    case "LockboxStorageLocked": {
+		_lockBoxes = ["LockboxStorage","LockboxStorageLocked"];
+		if (_type in _lockBoxes) then {
+			_lockCode =  parseNumber _charID;
+			_lockCode = _lockCode - 10000;
+			if (_lockCode <= 99) then { _lockColor = "Red"; };
+			if (_lockCode >= 100 && _lockCode <= 199) then { _lockColor = "Green"; _lockCode = _lockCode - 100; };
+			if (_lockCode >= 200) then { _lockColor = "Blue"; _lockCode = _lockCode - 200; };
+			if (_lockCode <= 9) then { _lockCode = format["0%1", _lockCode]; };
+			_lockCode = format ["%1%2",_lockColor,_lockCode];
+		};
+		"LockBox"
+	};
 };
 
-diag_log format["%6 %5: ObjID:%1 ObjUID:%2 CharID:%7 OwnerID:%8 BY %3(%4)",_objectID,_objectUID,_name,_puid,_statusText,_type,_charID,_ownerID];
+diag_log format["%1 (%2) %3 %4 with code: %5 @%6 (%7)",_name,_playerUID,_statusText,_type,_lockCode,mapGridPosition _pos,_pos];
+
 dze_waiting = "success";
 _clientID publicVariableClient "dze_waiting";

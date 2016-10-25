@@ -12,10 +12,9 @@ _typeOf = typeOf (unitBackPack player);
 	_type = _x select 1;
 	_count = 0;
 	
-	if (_type in DZE_tradeVehicle) then {
-		_count = { local _x } count (nearestObjects [(getPosATL player), [_name], Z_VehicleDistance]);
+	if (_type in DZE_tradeVehicle && {_name == typeOf (DZE_myVehicle)} && {local DZE_myVehicle} && {alive DZE_myVehicle}) then {
+		_count = { (local _x && _x == DZE_myVehicle) } count (nearestObjects [(getPosATL player), [_name], Z_VehicleDistance]);
 	};
-
 	if (_type == "trade_items") then {
 		{
 			if (isText(configFile >> "CfgWeapons" >> _x >> "Attachments" >> _name) or _name in getArray (configFile >> "CfgWeapons" >> _x >> "magazines")) then {

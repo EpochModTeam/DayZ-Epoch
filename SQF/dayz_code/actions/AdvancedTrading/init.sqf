@@ -111,3 +111,4 @@ createDialog "AdvancedTrading";
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_DETAILSTEXT) ctrlSetText "   " + localize "STR_EPOCH_TRADE_DETAILS";
 
 call Z_ChangeBuySell;
+false call Z_checkCloseVehicle; // set up vehicle for removing currency from it, otherwise you need to click vehicle before currency will be removed.
