@@ -259,22 +259,6 @@ class SnapBuilding {
 		{0,0,-1.685,"Bottom"}
 		};
 	};
-	class CinderWallDoorway_Preview_DZ: Cinder_DZE {
-		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.685,"Left"},
-		{2.64, 0, 1.685,"Right"},
-		{0, 0, 3.37042,"Top"}
-		};
-	};
-	class CinderWallSmallDoorway_Preview_DZ: Cinder_DZE {
-		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.685,"Left"},
-		{2.64, 0, 1.685,"Right"},
-		{0, 0, 3.37042,"Top"}
-		};
-	};
 	class CinderWallDoorway_Preview_DZ: Cinder_DZE {};
 	class CinderWallSmallDoorway_Preview_DZ: Cinder_DZE {}; 
 	class CinderWallHalf_Preview_DZ: Cinder_DZE {
