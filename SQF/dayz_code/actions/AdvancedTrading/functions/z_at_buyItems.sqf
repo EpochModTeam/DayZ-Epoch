@@ -120,7 +120,6 @@ if (!_success && _enoughMoney) exitWith { systemChat localize "STR_EPOCH_TRADE_G
 if (_enoughMoney) then {
 	_bTotal = 0;
 	_buyVehicle = {
-		private "_location";
 		_part_out = _this select 0;
 		_buyingType = _this select 1;
 		_keySelected = "0";
