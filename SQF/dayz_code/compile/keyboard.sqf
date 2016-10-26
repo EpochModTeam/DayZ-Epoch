@@ -176,9 +176,11 @@ if (isNil "keyboard_keys") then {
         };
     };
     _drop = {
-		_doors = nearestObjects [player,  DayZ_DropDrageeObjects, 3]; //Prevent exploit of glitching through doors
-		if (count _doors > 0) then {_handled = true;};
-        force_dropBody = true;
+		if (r_drag_sqf) then {
+			_doors = nearestObjects [player,  DayZ_DropDrageeObjects, 3]; //Prevent exploit of glitching through doors
+			if (count _doors > 0) then {_handled = true;};
+			force_dropBody = true;
+		};
     };
     _interrupt = {
 		if (vehicle player == player) then { //allow med actions in moving vehicles
