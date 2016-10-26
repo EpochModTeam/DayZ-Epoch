@@ -203,6 +203,10 @@ if (!isDedicated) then {
 	player_manageDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf";
 	player_enterCode = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\player_enterCode.sqf";	
 	FNC_check_access = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_check_access.sqf";
+	if (Z_SingleCurrency) then {
+		SC_fnc_addCoins = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\SC_fnc_addCoins.sqf");
+		SC_fnc_removeCoins = 						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\SC_fnc_removeCoins.sqf");
+	};
 
 	dayz_losChance = {
 		private["_agent","_maxDis","_dis","_val","_maxExp","_myExp"];
