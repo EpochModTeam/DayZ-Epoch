@@ -45,13 +45,13 @@ if (_selection == 1) then { //vehicle
 	_allowedWeapons = 0;
 	_allowedBackpacks = 0;
 
-	if (!isNull Z_vehicle) then {
-		_freeSpace = [Z_vehicle,0,0,0,0] call Z_calcFreeSpace;
+	if (!isNull DZE_myVehicle) then {
+		_freeSpace = [DZE_myVehicle,0,0,0,0] call Z_calcFreeSpace;
 		_allowedMags = _freeSpace select 1;
 		_allowedWeapons = _freeSpace select 2;
 		_allowedBackpacks = _freeSpace select 3;
 		
-		_pic = getText (configFile >> "CfgVehicles" >> (typeOf Z_vehicle) >> "picture");
+		_pic = getText (configFile >> "CfgVehicles" >> (typeOf DZE_myVehicle) >> "picture");
 
 		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText format [
 			"<img image='%1' size='3' align='center'/>"

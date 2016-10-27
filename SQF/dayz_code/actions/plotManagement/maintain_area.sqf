@@ -19,82 +19,81 @@ _requirements = [];
 _count = 0;
 
 _req = {
-	private ["_count","_requirements","_type","_amount","_itemText","_wealth"];
+	private ["_count","_amount","_itemText"];
+
 	_count = _this;
-	_wealth = 0;
-	
-	_requirements = switch true do {
-	case (_count <= 10):  {["ItemGoldBar10oz",1]};
-	case (_count <= 20):  {["ItemGoldBar10oz",2]};
-	case (_count <= 35):  {["ItemGoldBar10oz",3]};
-	case (_count <= 50):  {["ItemGoldBar10oz",4]};
-	case (_count <= 75):  {["ItemGoldBar10oz",6]};
-	case (_count <= 100): {["ItemBriefcase100oz",1]};
-	case (_count <= 175): {["ItemBriefcase100oz",2]};
-	case (_count <= 250): {["ItemBriefcase100oz",3]};
-	case (_count <= 325): {["ItemBriefcase100oz",4]};
-	case (_count <= 400): {["ItemBriefcase100oz",5]};
-	case (_count <= 475): {["ItemBriefcase100oz",6]};
-	case (_count <= 550): {["ItemBriefcase100oz",7]};
-	case (_count <= 625): {["ItemBriefcase100oz",8]};
-	case (_count > 625):  {["ItemBriefcase100oz",9]};
-	};
+	_amount = _count * 100;
+	_itemText = if (Z_SingleCurrency) then { CurrencyName } else { _amount call z_calcDefaultCurrencyNoImg };
 
-	_type = _requirements select 0;
-	_amount = _requirements select 1;
-	
-	if (Z_SingleCurrency) then {
-		_amount = _count * 100;
-		_itemText = CurrencyName;
-		_wealth = player getVariable[Z_MoneyVariable,0];
-	} else {
-		_itemText = getText(configFile >> "CfgMagazines" >> _type >> "displayName");
-		if ("ItemBriefcase100oz" == _type && _amount > 1) then {
-			_itemText = _itemText + "s";
-		};
-	};
-
-	[_type,_amount,_itemText,_wealth]
+	[_amount,_itemText]
 };
 
 _maintain = {
-	private ["_requirements","_count","_type","_amount","_itemText","_wealth","_success","_message1","_message2","_ctrl"];
+	private ["_requirements","_count","_amount","_itemText","_wealth","_success","_message1","_message2","_ctrl","_enoughMoney","_moneyInfo"];
 
 	_count = count (_this select 0);
 	_requirements = _count call _req;
 
-	_type = _requirements select 0;
-	_amount = _requirements select 1;
-	_itemText = _requirements select 2;
-	_wealth = _requirements select 3;
-	
-	_success = if (Z_SingleCurrency) then {_amount <= _wealth} else {[[[_type, _amount]],0] call epoch_returnChange};
-	
-	if (_success) then {
-		player playActionNow "Medic";
-		[player,DZE_maintainRange,true,(getPosATL player)] spawn player_alertZombies;
+	_amount = _requirements select 0;
+	_itemText = _requirements select 1;
 
-		if (Z_SingleCurrency) then {
-			player setVariable[Z_MoneyVariable,(_wealth - _amount),true];
-		};
-		call player_forceSave;
+	_enoughMoney = false;
+	_moneyInfo = [false, [], [], [], 0];
+	_wealth = player getVariable[Z_MoneyVariable,0];
 
-		PVDZE_maintainArea = [player,1,_this select 0];
-		publicVariableServer "PVDZE_maintainArea";
+	if (Z_SingleCurrency) then {
+		_enoughMoney = if (_wealth >= _amount) then { true } else { false };
+	} else {
+		Z_Selling = false; // Initialize gem currency before Z_canAfford.
+		if (Z_AllowTakingMoneyFromVehicle) then { false call Z_checkCloseVehicle; };
+		_moneyInfo = _amount call Z_canAfford;
+		_enoughMoney = _moneyInfo select 0;
+	};
 
-		systemChat format[localize "STR_EPOCH_ACTIONS_4", _count];
-		_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS", _count, [_amount] call BIS_fnc_numberText, _itemText];
-		_message2 = " ";
-		if (DZE_permanentPlot) then {
-			_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
-			_ctrl ctrlSetText _message1;
-			_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7013;
-			_ctrl ctrlSetText _message2;
+	_success = if (Z_SingleCurrency) then { true } else { [player,_amount,_moneyInfo,true,0] call Z_payDefault };
+
+	if (!_success && _enoughMoney) exitWith { systemChat localize "STR_EPOCH_TRADE_GEAR_AND_BAG_FULL"; }; // Not enough room in gear or bag to accept change
+
+	if (_enoughMoney) then {
+		_success = if (Z_SingleCurrency) then {_amount <= _wealth} else {[player,_amount,_moneyInfo,false,0] call Z_payDefault};
+		if (_success) then {
+
+			PVDZE_maintainArea = [player,1,_this select 0];
+			publicVariableServer "PVDZE_maintainArea";
+
+			systemChat format[localize "STR_EPOCH_ACTIONS_4",_count];
+			if (Z_SingleCurrency) then {
+				player setVariable[Z_MoneyVariable,(_wealth - _amount),true];
+				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS",_count,[_amount] call BIS_fnc_numberText,_itemText];
+			} else {
+				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS",_count,_itemText];
+			};
+			_message2 = " ";
+			call player_forceSave; // Call player_forceSave BEFORE the medic animation because it can override the animation and make it finish prematurely.
+			
+			player playActionNow "Medic";
+
+			[player,"repair",0,false,20] call dayz_zombieSpeak;
+			[player,DZE_maintainRange,true,(getPosATL player)] spawn player_alertZombies;
+			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
+			
+			if (DZE_permanentPlot) then {
+				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
+				_ctrl ctrlSetText _message1;
+				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7013;
+				_ctrl ctrlSetText _message2;
+			} else {
+				_message1 call dayz_rollingMessages;
+			};
 		} else {
-			_message1 call dayz_rollingMessages;
+			systemChat localize "STR_EPOCH_TRADE_DEBUG";
 		};
 	} else {
-		_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED", _count, [_amount] call BIS_fnc_numberText, _itemText];
+		if (Z_SingleCurrency) then {
+			_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED",_count,[_amount] call BIS_fnc_numberText,_itemText];
+		} else {
+			_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED",_count,_itemText];
+		};
 		_message2 = " ";
 		if (DZE_permanentPlot) then {
 			_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
@@ -108,12 +107,12 @@ _maintain = {
 };
 
 {
-    if (damage _x >= DZE_DamageBeforeMaint) then {
+	if (damage _x >= DZE_DamageBeforeMaint) then {
 		_objectUID = _x getVariable ["ObjectUID","0"];
 		_objectID = _x getVariable ["ObjectID","0"];
 		_objects_filtered set [count _objects_filtered, [_x, _objectID, _objectUID]];
 		_count = _count + 1;
-   };
+	};
 } count _objects;
 
 _option = if (typeName _this == "ARRAY") then {_this select 3} else {_this};
@@ -137,7 +136,12 @@ switch _option do {
 			};
 		} else {
 			_requirements = _count call _req;
-			_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _count,[_requirements select 1] call BIS_fnc_numberText,_requirements select 2];
+
+			if (Z_SingleCurrency) then {
+				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _count,[_requirements select 0] call BIS_fnc_numberText,_requirements select 1];
+			} else {
+				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _count,_requirements select 1];
+			};
 			if (DZE_permanentPlot) then {
 				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
 				_ctrl ctrlSetText _message1;
@@ -146,7 +150,11 @@ switch _option do {
 			};
 		};
 		_requirements = count _objects call _req;
-		_message2 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE",count _objects,[_requirements select 1] call BIS_fnc_numberText,_requirements select 2]; 
+		if (Z_SingleCurrency) then {
+			_message2 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE",count _objects,[_requirements select 0] call BIS_fnc_numberText,_requirements select 1];
+		} else {
+			_message2 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE",count _objects,_requirements select 1];
+		};
 		if (_count != count _objects) then {
 			if (DZE_permanentPlot) then {
 				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7013;

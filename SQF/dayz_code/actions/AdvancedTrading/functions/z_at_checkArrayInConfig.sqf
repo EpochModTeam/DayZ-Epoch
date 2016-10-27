@@ -19,8 +19,8 @@ _vehTrade = false;
 _vehUpgraded = "";
 
 if (false call Z_checkCloseVehicle) then {
-	_vehUpgraded = getText (configFile >> 'CfgVehicles' >> typeOf (Z_vehicle) >> 'original');
-	_all = _weaps + _mags + _bags + [(typeOf Z_vehicle)];
+	_vehUpgraded = getText (configFile >> 'CfgVehicles' >> typeOf (DZE_myVehicle) >> 'original');
+	_all = _weaps + _mags + _bags + [(typeOf DZE_myVehicle)];
 	_vehTrade = true;
 } else {
 	_all = _weaps + _mags + _bags;
@@ -56,7 +56,7 @@ _totalPrice = 0;
 		if (isNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")) then {
 			_cat = format["Category_%1",getNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")];
 		};
-		if (_vehUpgraded != "" && _y == (typeOf Z_vehicle)) then { _y = _vehUpgraded; };
+		if (_vehUpgraded != "" && _y == (typeOf DZE_myVehicle)) then { _y = _vehUpgraded; };
 		_exists = isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y);
 		if (_exists) exitWith {
 			_pic = "";
@@ -84,9 +84,9 @@ _totalPrice = 0;
 
 			if (isNil '_text') then { _text = _y; };
 			_HasKey = true;
-			if (_vehTrade && {(typeOf Z_vehicle) == _y}) then {
+			if (_vehTrade && {(typeOf DZE_myVehicle) == _y}) then {
 				if (!(_type in DZE_tradeVehicleKeyless) && DZE_SaleRequiresKey) then {
-					_HasKey = [Z_vehicle, _all] call _HasKeyCheck;
+					_HasKey = [DZE_myVehicle, _all] call _HasKeyCheck;
 				};
 			};
 			if (!_HasKey) exitWith {};

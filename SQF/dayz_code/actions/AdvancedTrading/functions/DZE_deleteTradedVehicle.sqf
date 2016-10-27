@@ -38,7 +38,7 @@ if ((count _VehKey2) > 0) then {
 				};
 			};
 		};
-		_vehicle = Z_vehicle;
+		_vehicle = DZE_myVehicle;
 		if (count _this > 2 && {isNull _vehicle}) then {
 			_vehicle = _this select 2;
 		};

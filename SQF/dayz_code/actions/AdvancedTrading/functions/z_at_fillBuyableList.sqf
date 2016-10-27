@@ -12,7 +12,7 @@ _typeOf = typeOf (unitBackPack player);
 	_type = _x select 1;
 	_count = 0;
 	
-	if (_type in DZE_tradeVehicle && {_name == typeOf Z_vehicle}) then {
+	if (_type in DZE_tradeVehicle && {_name == typeOf DZE_myVehicle}) then {
 		_count = 1;
 	};
 	if (_type == "trade_items") then {
