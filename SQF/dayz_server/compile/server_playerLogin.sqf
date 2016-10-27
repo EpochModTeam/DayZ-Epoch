@@ -148,6 +148,11 @@ if (_endMission) exitwith {
 //Sync chopped trees for JIP player
 {_x setDamage 1} count dayz_choppedTrees;
 
+//Sync active group invites to JIP player
+if (count dayz_activeInvites > 0) then {
+	(owner _playerObj) publicVariableClient "dayz_activeInvites";
+};
+
 //Record Player Login/LogOut
 [_playerID,_charID,1,_playerName] call dayz_recordLogin;
 

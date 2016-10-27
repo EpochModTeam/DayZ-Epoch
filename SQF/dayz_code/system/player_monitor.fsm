@@ -486,7 +486,7 @@ class FSM
                          "_isHiveOk = false;" \n
                          "_newPlayer = false;" \n
                          "_isInfected = false;" \n
-                         "_mygroup = [];" \n
+                         "dayz_myGroup = [];" \n
                          "_characterCoins = 0;" \n
                          "_globalCoins = 0;" \n
                          "_CoinsSpecial = 0;" \n
@@ -495,7 +495,7 @@ class FSM
                          "	_isHiveOk = _msg select 7;" \n
                          "	_newPlayer = _msg select 8;" \n
                          "	_isInfected = _msg select 9;" \n
-                         "	_mygroup		= _msg select 10;" \n
+                         "	dayz_myGroup		= _msg select 10;" \n
                          "	_characterCoins		= _msg select 11;" \n
                          "	_globalCoins		= _msg select 12;" \n
                          "	_CoinsSpecial		= _msg select 13;" \n
@@ -1171,12 +1171,6 @@ class FSM
                          "	player setVariable [""GlobalMoney"", _globalCoins, true];" \n
                          "	player setVariable [""MoneySpecial"", _CoinsSpecial, true];" \n
                          "};" \n
-                         "" \n
-                         "if (DZE_groupManagement) then {" \n
-                         "	player setVariable [""savedGroup"", _mygroup, true];" \n
-                         "	player setVariable [""purgeGroup"", 0, true];" \n
-                         "};" \n
-                         "" \n
                          "dayz_musicH = [] spawn player_music;" \n
                          "dayz_slowCheck = 	[] spawn player_spawn_2;" \n
                          "Dayz_logonTime = daytime;" \n

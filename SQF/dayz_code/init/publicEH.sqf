@@ -17,6 +17,9 @@
 "PVDZE_plr_GutBodyZ"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObjectZ};
 "PVDZE_veh_Init"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_ResetEH};
 "PVDZE_obj_Remove" 			addPublicVariableEventHandler {_pos = (_this select 1); _obj = nearestObjects [_pos, DZE_isWreckBuilding, 5]; if (count _obj > 0) then {deleteVehicle (_obj select 0);};};
+if (dayz_groupSystem) then {
+	"PVDZ_groupInvite" addPublicVariableEventHandler {(_this select 1) call dayz_groupInvite};
+};
 
 if (toLower worldName == "chernarus") then { //need to add building coordinates for other maps
 	{
@@ -99,6 +102,9 @@ if (isServer) then {
 	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
 	"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) spawn server_handleSafeGear};
 	"PVDZE_fullobj_Publish"	addPublicVariableEventHandler {(_this select 1) call server_publishFullObject}; // PlotForLife take base ownership
+	if (dayz_groupSystem) then {
+		"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) call server_updateGroup};
+	};
 
 	//Added as part of the maintenance system to allow the server to replace the damaged model with a normal model.
 	"PVDZ_object_replace" addPublicVariableEventHandler {

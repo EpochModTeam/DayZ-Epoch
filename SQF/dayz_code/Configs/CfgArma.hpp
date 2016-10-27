@@ -266,6 +266,171 @@ class CfgInGameUI
 			};
 		};
 	};
+	// Hide group hotbar
+	class CommandBar {
+		left = "-0.032 + SafeZoneX";
+		top = "(SafeZoneH + SafeZoneY) - (1 - 0.851)";
+		width = 0;
+		height = 0;
+		imageDefaultWeapons = "ca\ui\data\clear_empty.paa";
+		imageNoWeapons = "ca\ui\data\clear_empty.paa";
+		imageCommander = "ca\ui\data\clear_empty.paa";
+		imageDriver = "ca\ui\data\clear_empty.paa";
+		imageGunner = "ca\ui\data\clear_empty.paa";
+		imageCargo = "ca\ui\data\clear_empty.paa";
+		dimm = 0.3;
+		colorRedTeam[] = {0,0,0,0};
+		colorBlueTeam[] = {0,0,0,0};
+		colorGreenTeam[] = {0,0,0,0};
+		colorYellowTeam[] = {0,0,0,0};
+		colorWhiteTeam[] = {0,0,0,0};	
+		class prevPage {
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			color[] = {0,0,0,0};
+			texture = "ca\ui\data\clear_empty.paa";
+		};	
+		class nextPage {
+			x = 0;
+			y = 0;
+			w = 0;
+			h = 0;
+			color[] = {0,0,0,0};
+			texture = "ca\ui\data\clear_empty.paa";
+		};
+		class UnitInfo {
+			class GroupIcon {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+			};
+			class HcGroupText {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				font = "Zeppelin32";
+				SizeEx = 0;
+			};
+			class UnitBackground {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				textureNormal = "ca\ui\data\clear_empty.paa";
+				textureSelected = "ca\ui\data\clear_empty.paa";
+				texturePlayer = "ca\ui\data\clear_empty.paa";
+				textureFocus = "ca\ui\data\clear_empty.paa";
+			};
+			class UnitFocus {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+				texture = "ca\ui\data\clear_empty.paa";
+			};
+			class UnitIcon {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+				colorPlayer[] = {0,0,0,0};
+				colorNoAmmo[] = {0,0,0,0};
+				colorWounded[] = {0,0,0,0};
+				colorWoundedFade[] = {0,0,0,0};
+				colorNoFuel[] = {0,0,0,0};
+			};
+			class Semaphore {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+				texture = "ca\ui\data\clear_empty.paa";
+			};
+			class CommandBackground {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+				texture = "ca\ui\data\clear_empty.paa";
+			};
+			class CommandText {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+				font = "Zeppelin32";
+				SizeEx = 0;
+			};
+			class UnitSpecialRole {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+			};
+			class VehicleNumberBackground {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+				texture = "ca\ui\data\clear_empty.paa";
+			};
+			class VehicleNumberText {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				colorText[] = {0,0,0,0};
+				font = "Zeppelin32";
+				SizeEx = 0;
+			};
+			class UnitRole {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+			};
+			class UnitNumberBackground {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				color[] = {0,0,0,0};
+				texture = "ca\ui\data\clear_empty.paa";
+			};
+			class UnitNumberText {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				colorText[] = {0,0,0,0};
+				font = "Zeppelin32";
+				SizeEx = 0;
+			};
+			class CombatMode {
+				x = 0;
+				y = 0;
+				w = 0;
+				h = 0;
+				textureMCareless = "ca\ui\data\clear_empty.paa";
+				textureMSafe = "ca\ui\data\clear_empty.paa";
+				textureMAware = "ca\ui\data\clear_empty.paa";
+				textureMCombat = "ca\ui\data\clear_empty.paa";
+				textureMStealth = "ca\ui\data\clear_empty.paa";
+			};
+		};
+	};
 };
 
 class CfgVoice {

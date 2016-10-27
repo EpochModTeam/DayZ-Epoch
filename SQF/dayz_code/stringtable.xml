@@ -16182,6 +16182,106 @@
 			<Czech>Hráč</Czech>
 			<Japanese>プレイヤー</Japanese>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYERS">
+			<English>Players</English>
+			<French>Joueurs</French>
+			<Spanish>Jugadores</Spanish>
+			<Italian>Giocatori</Italian>
+			<Hungarian>Játékosok</Hungarian>
+			<Polish>Gracze</Polish>
+			<Russian>Игроки</Russian>
+			<German>Spieler</German>
+			<Czech>Hráči</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_GROUPS_KEY">
+			<English>Groups (F5)</English>
+			<Russian>групп</Russian>
+			<German>Gruppen (F5)</German>
+		</Key>
+		<Key ID="STR_EPOCH_GROUPS">
+			<English>Groups</English>
+			<Russian>групп</Russian>
+			<German>Gruppen</German>
+		</Key>
+		<Key ID="STR_EPOCH_MY_GROUP">
+			<English>My Group</English>
+		</Key>
+		<Key ID="STR_EPOCH_INVITE">
+			<English>Invite</English>
+			<Russian>приглашение</Russian>
+			<German>Einladen</German>
+		</Key>
+		<Key ID="STR_EPOCH_INVITE_FROM">
+			<English>Invite From</English>
+		</Key>
+		<Key ID="STR_EPOCH_INVITE_TO">
+			<English>You invited %1 to join the group.</English>
+		</Key>
+		<Key ID="STR_EPOCH_INVITE_NEW">
+			<English>New group invite - Press F5 to view</English>
+		</Key>
+		<Key ID="STR_EPOCH_INVITE_PENDING">
+			<English>This player already has a pending invite.</English>
+		</Key>
+		<Key ID="STR_EPOCH_INVITE_EXPIRED">
+			<English>The invite expired.</English>
+		</Key>
+		<Key ID="STR_EPOCH_NEED_RADIO">
+			<English>You need a radio to join a group.</English>
+		</Key>
+		<Key ID="STR_EPOCH_LOST_RADIO_CONTACT">
+			<English>Lost radio contact with group</English>
+		</Key>
+		<Key ID="STR_EPOCH_RIP">
+			<English>RIP</English>
+		</Key>
+		<Key ID="STR_EPOCH_PROMOTE">
+			<English>Promote</English>
+		</Key>
+		<Key ID="STR_EPOCH_DISBAND">
+			<English>Disband</English>
+			<Russian>распускать</Russian>
+			<German>Auflösen</German>
+		</Key>
+		<Key ID="STR_EPOCH_LEAVE">
+			<English>Leave</English>
+			<Russian>Оставлять</Russian>
+			<German>Verlassen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACCEPT">
+			<English>Accept</English>
+			<French>Accepter</French>
+			<Spanish>Aceptar</Spanish>
+			<Italian>Accetta</Italian>
+			<Hungarian>Elfogadás</Hungarian>
+			<Polish>Zaakceptuj</Polish>
+			<Russian>Принять</Russian>
+			<German>Annehmen</German>
+			<Czech>Přijmout</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_REJECT">
+			<English>Reject</English>
+			<French>Refuser</French>
+			<Spanish>Rechazar</Spanish>
+			<Italian>Rifiuta</Italian>
+			<Hungarian>Elutasít</Hungarian>
+			<Polish>Odrzuć</Polish>
+			<Russian>Отказать</Russian>
+			<German>Ablehnen</German>
+			<Czech>Odmítnout</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_KICK">
+			<English>Kick</English>
+			<French>Ejecter</French>
+			<Spanish>Expulsa</Spanish>
+			<Italian>Espelli</Italian>
+			<Hungarian>Kirúgás</Hungarian>
+			<Polish>Wyrzuć</Polish>
+			<Russian>Выгнать</Russian>
+			<German>Kicken</German>
+			<Czech>Vyhostit</Czech>
+			<Japanese>排除</Japanese>
+		</Key>
 		<Key ID="STR_EPOCH_AI">
 			<English>AI</English>
 			<French>IA</French>
