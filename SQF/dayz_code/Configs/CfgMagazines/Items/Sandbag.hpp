@@ -140,14 +140,14 @@ class ItemSandbagLarge : CA_Magazine {
 	weight = 50;
 	class ItemActions {
 		class Build {
-			text = "Build H-barrier cube";
+			text = $STR_EPOCH_PLAYER_273_3;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
 			create = "Land_HBarrier1_DZ";
 		};
 		class Crafting
 		{
-			text = "Craft Triple H-barrier";
+			text = $STR_EPOCH_PLAYER_273_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemEtool","ItemToolbox"};
@@ -168,14 +168,14 @@ class ItemSandbagExLarge : CA_Magazine {
 	weight = 150;
 	class ItemActions {
 		class Build {
-			text = "Build Triple H-barrier";
+			text = $STR_EPOCH_PLAYER_273_4;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
 			create = "Land_HBarrier3_DZ";
 		};
 		class Crafting
 		{
-			text = "Craft 5x H-barrier";
+			text = $STR_EPOCH_PLAYER_273_2;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemEtool","ItemToolbox"};
@@ -196,7 +196,7 @@ class ItemSandbagExLarge5x : CA_Magazine {
 	weight = 200;
 	class ItemActions {
 		class Build {
-			text = "Build 5x H-barrier";
+			text = $STR_EPOCH_PLAYER_273_5;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
 			create = "Land_HBarrier5_DZ";
