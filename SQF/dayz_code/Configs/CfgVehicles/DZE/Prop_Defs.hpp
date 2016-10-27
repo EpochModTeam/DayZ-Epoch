@@ -133,7 +133,7 @@ class Hedgehog_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 400;
-	displayName = "Hedgehog (Steel)";
+	displayName = $STR_BUILT_HEDGEHOG;
 	vehicleClass = "Fortifications";
 	constructioncount = 1;
 	removeoutput[] = {{"ItemTankTrap",1}};
@@ -150,7 +150,7 @@ class WorkBench_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 400;
-	displayName = "Workbench";
+	displayName = $STR_EPOCH_WORKBENCH;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	constructioncount = 1;
@@ -181,7 +181,7 @@ class MetalPanel_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 4000;
-	displayName = "Metal Panel";
+	displayName = $STR_EPOCH_METALPANEL;
 	vehicleClass = "Fortifications";
 	constructioncount = 6;
 	removeoutput[] = {{"metal_panel_kit",1}};
@@ -197,7 +197,7 @@ class FuelPump_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 400;
-	displayName = "Fuel Pump";
+	displayName = $STR_EPOCH_FUELPUMP;
 	vehicleClass = "Fortifications";
 	constructioncount = 2;
 	removeoutput[] = {{"fuel_pump_kit",1}};
@@ -214,7 +214,7 @@ class Fort_RazorWire : BuiltItems {
   offset[] = {0,1.5,0.5};
   accuracy = 0.3;
   mapSize = 5.5;
-  displayName = "Wire";
+  displayName = $STR_EPOCH_WIRE;
   destrType = "DestructTent";
   armor = 100;
   GhostPreview = "Fort_RazorWirePreview";
@@ -231,7 +231,7 @@ class Sandbag1_DZ: BuiltItems
 	offset[] = {0,3,0.5};
 	mapSize = 2;
 	armor = 400;
-	displayName = "Bag Fence";
+	displayName = $STR_BUILT_SANDBAG;
 	vehicleClass = "Fortifications";
 	constructioncount = 3;
 	removeoutput[] = {{"ItemSandbag",1}};
@@ -248,7 +248,7 @@ class BagFenceRound_DZ: BuiltItems
 	offset[] = {0,1.5,0.5};
 	mapSize = 2;
 	armor = 400;
-	displayName = "Bag fence (Round)";
+	displayName = $STR_EQUIP_NAME_21_ROUND;
 	vehicleClass = "Fortifications";
 	constructioncount = 3;
 	removeoutput[] = {{"BagFenceRound_DZ_kit",1}};
@@ -275,7 +275,7 @@ class Land_HBarrier1_DZ : BuiltItems {
 	model = "\ca\misc2\HBarrier1.p3d";
 	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier1_ca.paa";
 	mapSize = 2;
-	displayName = "H-barrier cube";
+	displayName = $STR_EQUIP_NAME_21_HBARRIER;
 	GhostPreview = "Land_HBarrier1Preview";
 	constructioncount = 4;
 	removeoutput[] = {{"ItemSandbagLarge",1}};
@@ -285,7 +285,7 @@ class Land_HBarrier3_DZ : BuiltItems {
 	model = "\ca\misc2\HBarrier3.p3d";
 	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier3_ca.paa";
 	mapSize = 3.5;
-	displayName = "H-barrier (short)";
+	displayName = $STR_EQUIP_NAME_21_3XHBARRIER;
 	GhostPreview = "Land_HBarrier3ePreview";
 	scope = public;
 	animated = 0;
@@ -312,7 +312,7 @@ class Land_HBarrier5_DZ:BuiltItems {
 	model = "\ca\misc2\HBarrier5.p3d";
 	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier5_ca.paa";
 	mapSize = 7;
-	displayName = "H-barrier (long)";
+	displayName = $STR_EQUIP_NAME_21_5XHBARRIER;
 	GhostPreview = "Land_HBarrier5Preview";
 	scope = public;
 	animated = 0;
@@ -338,7 +338,7 @@ class Land_HBarrier5_DZ:BuiltItems {
 class SandNest_DZ : BuiltItems {
 	scope = public;
 	model = "\ca\Misc_E\fortified_nest_small_ep1";
-	displayName = "Sandbag Nest";
+	displayName = $STR_EQUIP_NAME_21_NEST;
 	expansion = 1;
 	icon = "\Ca\misc3\data\Icons\icon_fortNestSmall_ca.paa";
 	mapSize = 5;
@@ -370,7 +370,7 @@ class Supply_Crate_DZE: MiningItems
 
 	mapSize = 2;
 	armor = 40;
-	displayName = "Supply Crate";
+	displayName = $STR_AMMO_SUPPLY_WRECK;
 
 	vehicleClass = "Fortifications";
 
@@ -394,6 +394,7 @@ class FireBarrel_DZ:Land_Fire_barrel
 	cost = 100;
 	offset[] = {0,2,0.5};
 	//model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+	displayName = $STR_EPOCH_FIREBARREL;	
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 400;
@@ -412,7 +413,7 @@ class GunRack_DZ: Gunrack1
 {
 	armor = 200;
 	scope = public;
-	displayName = "Gun Rack";
+	displayName = $STR_EPOCH_GUNRACK;
 	vehicleClass = "Fortifications";
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 10;
@@ -428,7 +429,7 @@ class WoodCrate_DZ: Fort_Crate_wood
 	destrType = "DestructBuilding";
 	offset[] = {0,2.5,0.5};
 	armor = 200;
-	displayName = "Wood Crate";
+	displayName = $STR_EPOCH_WOODCRATE;
 	vehicleClass = "Fortifications";
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 5;
@@ -471,7 +472,7 @@ class M240Nest_DZ: USMC_WarfareBMGNest_M240
 	armor = 450;
 	scope = public;
 	offset[] = {0,3.5,0};
-	displayName = "M240 Nest";
+	displayName = $STR_EPOCH_M240NEST;
 	vehicleClass = "Fortifications";
 	transportMaxMagazines = 25;
 	transportMaxWeapons = 4;
@@ -486,7 +487,7 @@ class CanvasHut_DZ: Land_covering_hut_EP1
 	armor = 200;
 	scope = public;
 	offset[] = {0,2.5,1};
-	displayName = "Canvas Hut";
+	displayName = $STR_EPOCH_CANVASSUNSHADE;
 	vehicleClass = "Fortifications";
 };
 class Park_bench1;
@@ -494,7 +495,7 @@ class ParkBench_DZ: Park_bench1
 {
 	scope = public;
 	offset[] = {0,1.5,0.5};
-	displayName = "Wood Bench";
+	displayName = $STR_EPOCH_WOODBENCH;
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"park_bench_kit",1}};
 };
@@ -505,7 +506,7 @@ class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
 	destrType = "DestructNo";
 	scope = public;
 	offset[] = {0,9,0};
-	displayName = "Desert Camo Net";
+	displayName = $STR_EPOCH_DESERTCAMONET;
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"desert_net_kit",1}};
 };
@@ -516,7 +517,7 @@ class ForestCamoNet_DZ: Land_CamoNet_EAST
 	destrType = "DestructNo";
 	scope = public;
 	offset[] = {0,9,0};
-	displayName = "Forest Camo Net";
+	displayName = $STR_EPOCH_FORESTCAMONET;
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"forest_net_kit",1}};
 };
@@ -527,7 +528,7 @@ class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
 	destrType = "DestructNo";
 	scope = public;
 	offset[] = {0,9,0};
-	displayName = "Large Desert Camo Net";
+	displayName = $STR_EPOCH_LARGEDESERTCAMONET;
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"desert_large_net_kit",1}};
 };
@@ -538,7 +539,7 @@ class DeerStand_DZ: Land_Misc_deerstand
 	// destrType = "DestructNo";
 	scope = public;
 	offset[] = {0,5,0};
-	displayName = "Deer Stand";
+	displayName = $STR_EPOCH_DEERSTAND;
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"deer_stand_kit",1}};
 };
@@ -549,7 +550,7 @@ class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
 	destrType = "DestructNo";
 	scope = public;
 	offset[] = {0,9,0};
-	displayName = "Large Forest Camo Net";
+	displayName = $STR_EPOCH_LARGEFORESTCAMONET;
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"forest_large_net_kit",1}};
 };
@@ -560,7 +561,7 @@ class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 	armor = 400;
 	scope = public;
 	offset[] = {0,6,1};
-	displayName = "Rusty Gate";
+	displayName = $STR_EPOCH_RUSTYGATE;
 	vehicleClass = "Fortifications";
 	removeoutput[] = {{"rusty_gate_kit",1}};
 };
@@ -570,7 +571,7 @@ class OutHouse_DZ: Land_KBud
 	armor = 200;
 	scope = public;
 	offset[] = {0,2.5,1};
-	displayName = "Outhouse";
+	displayName = $STR_EPOCH_OUTHOUSE;
 	vehicleClass = "Fortifications";
 	transportMaxMagazines = 4;
 	transportMaxWeapons = 4;
@@ -584,7 +585,7 @@ class StorageShed_DZ: Land_Shed_M01
 	armor = 1600;
 	scope = public;
 	offset[] = {0,4,1};
-	displayName = "Storage Shed";
+	displayName = $STR_EPOCH_STORAGESHED;
 	vehicleClass = "Fortifications";
 	transportMaxMagazines = 400;
 	transportMaxWeapons = 40;
@@ -598,7 +599,7 @@ class Fence_corrugated_DZ: Fence_corrugated_plate
 	scope = public;
 	offset[] = {0,3,1};
 	removeoutput[] = {{"ItemCorrugated",1}};
-	displayName = "Corrugated Fence";
+	displayName = $STR_EPOCH_CORRUGATEDFENCE;
 	vehicleClass = "Fortifications";
 	nounderground = 0;
 
@@ -610,7 +611,7 @@ class WoodShack_DZ: Land_kulna
 	destrType = "DestructBuilding";
 	offset[] = {0,4,1.3};
 	armor = 800;
-	displayName = "Wooden Shack";
+	displayName = $STR_EPOCH_WOODSHACK;
 	vehicleClass = "Fortifications";
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 10;
@@ -626,7 +627,7 @@ class Wooden_shed_DZ: Land_Shed_wooden
 	//cost = 100;
 	offset[] = {0,5,1};
 	armor = 800;
-	displayName = "Wooden Shed";
+	displayName = $STR_EPOCH_NICEWOODSHED;
 	vehicleClass = "Fortifications";
 	transportMaxMagazines = 200;
 	transportMaxWeapons = 20;
@@ -641,7 +642,7 @@ class StickFence_DZ: Wall_FenW2_6_EP1
 	armor = 200;
 	scope = public;
 	offset[] = {0,4.5,0};
-	displayName = "Stick Fence";
+	displayName = $STR_EPOCH_STICKFENCE;
 	vehicleClass = "Fortifications";
 };
 class ASC_EU_LHVOld;
@@ -650,7 +651,7 @@ class LightPole_DZ: ASC_EU_LHVOld
 	armor = 200;
 	scope = public;
 	offset[] = {0,2.5,0};
-	displayName = "Light Pole";
+	displayName = $STR_EPOCH_LIGHTPOLE;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"ItemLightBulb",1}};
 };
@@ -660,7 +661,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 	armor = 100;
 	destrType = "DestructBuilding";
 	scope = public;
-	displayName = "Scaffolding";
+	displayName = $STR_EPOCH_SCAFFOLDING;
 	vehicleClass = "Fortifications";
 	constructioncount = 6;
 	animated = 0;

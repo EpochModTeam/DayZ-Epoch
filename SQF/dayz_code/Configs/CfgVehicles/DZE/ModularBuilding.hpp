@@ -36,7 +36,7 @@ class MetalFloor_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 3000;
-	displayName = "Metal Floor";
+	displayName = $STR_EPOCH_METALFLOOR;
 	vehicleClass = "Fortifications";
 	GhostPreview = "MetalFloor_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -59,7 +59,7 @@ class WoodRamp_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2000;
-	displayName = "Wood Ramp";
+	displayName = $STR_EPOCH_WOODRAMP;
 	vehicleClass = "Fortifications";
 	GhostPreview = "WoodRamp_Preview_DZ";
 };
@@ -72,7 +72,7 @@ class CinderWallHalf_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2200;
-	displayName = "Half Cinder Block Wall";
+	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF;
 	vehicleClass = "Fortifications";
 	upgradeBuilding[] = {"CinderWall_DZ",{{"CinderBlocks",4},{"MortarBucket",1}}};
 	maintainBuilding[] = {{"MortarBucket",1}};
@@ -98,7 +98,7 @@ class CinderWall_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 3400;
-	displayName = "Cinder Block Wall";
+	displayName = $STR_EPOCH_CINDERBLOCKWALL;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"MortarBucket",1}};
 	GhostPreview = "CinderWall_Preview_DZ";
@@ -124,7 +124,7 @@ class CinderWallDoorway_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 3400;
-	displayName = "Cinder Garage Doorway";
+	displayName = $STR_EPOCH_BLOCKGARAGEDOORWAY;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"MortarBucket",1}};
 	upgradeBuilding[] = {"CinderWallDoor_DZ",{{"ItemPole",3},{"ItemTankTrap",3}}};
@@ -150,7 +150,7 @@ class CinderWallSmallDoorway_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 3400;
-	displayName = "Cinder Doorway";
+	displayName = $STR_EPOCH_BLOCKDOORWAY;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"MortarBucket",1}};
 	upgradeBuilding[] = {"CinderWallDoorSmall_DZ",{{"ItemPole",1},{"ItemTankTrap",1}}};
@@ -177,7 +177,7 @@ class WoodFloor_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2000;
-	displayName = "Wood Floor";
+	displayName = $STR_EPOCH_FLOORCEILING;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",4}};
 	GhostPreview = "WoodFloor_Preview_DZ";
@@ -202,7 +202,7 @@ class WoodFloorHalf_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 1000;
-	displayName = "Wood Floor 1/2";
+	displayName = $STR_EPOCH_FLOORCEILINGHALF;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",2}};
 	constructioncount = 2;
@@ -228,7 +228,7 @@ class WoodFloorQuarter_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 600;
-	displayName = "Wood Floor 1/4";
+	displayName = $STR_EPOCH_FLOORCEILINGQUARTER;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	constructioncount = 1;
@@ -255,7 +255,7 @@ class WoodLargeWall_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2200;
-	displayName = "Large Wall";
+	displayName = $STR_EPOCH_LARGEWOODWALL;
 	vehicleClass = "Fortifications";
 	upgradeBuilding[] = {"WoodLargeWallWin_DZ",{{"PartGlass",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
@@ -281,7 +281,7 @@ class WoodLargeWallDoor_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2200;
-	displayName = "Large Wall Doorway";
+	displayName = $STR_EPOCH_LARGEWALLWITHDOORWAY;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
@@ -306,7 +306,7 @@ class WoodLargeWallWin_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2200;
-	displayName = "Large Wall Window";
+	displayName = $STR_EPOCH_LARGEWALLWITHWINDOW;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodLargeWallWin_Preview_DZ";
@@ -331,7 +331,7 @@ class WoodSmallWall_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2000;
-	displayName = "Small Wall";
+	displayName = $STR_EPOCH_WOODWALL;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodSmallWallWin_DZ",{{"PartGlass",1}}};
@@ -356,7 +356,7 @@ class WoodSmallWallThird_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 600;
-	displayName = "Wood Wall 1/3";
+	displayName = $STR_EPOCH_WOODWALLTHIRDPART;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	constructioncount = 1;
@@ -381,7 +381,7 @@ class WoodSmallWallWin_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2000;
-	displayName = "Small Wall Window";
+	displayName = $STR_EPOCH_WALLWITHWINDOW;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodSmallWallWin_Preview_DZ";
@@ -405,7 +405,7 @@ class WoodSmallWallDoor_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 2000;
-	displayName = "Small Wall Door";
+	displayName = $STR_EPOCH_WALLWITHDOORWAY;
 	vehicleClass = "Fortifications";
 	upgradeBuilding[] = {"Land_DZE_WoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
@@ -431,7 +431,7 @@ class WoodStairs_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 600;
-	displayName = "Wood Stairs";
+	displayName = $STR_EPOCH_WOODSTAIRS;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodStairsRails_DZ",{{"PartWoodLumber",2}}};
@@ -446,7 +446,7 @@ class WoodLadder_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 300;
-	displayName = "Wood Ladder";
+	displayName = $STR_EPOCH_WOODLADDER;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "WoodLadder_Preview_DZ";
@@ -477,7 +477,7 @@ class WoodStairsSans_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 500;
-	displayName = "Wood Stairs Sans";
+	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodStairs_DZ",{{"PartWoodLumber",2}}};
