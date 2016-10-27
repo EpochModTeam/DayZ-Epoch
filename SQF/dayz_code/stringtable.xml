@@ -14619,7 +14619,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_DESC">
 			<English>Semi secure lockbox.</English>
-			<German>Leicht gesicherte Schließkassette. Der Code besteht aus einer Farbe und 4 Ziffern.</German>
+			<German>Leicht gesicherte Schließkassette. Der Code besteht aus einer Farbe und 2 Ziffern.</German>
 			<Russian>Безопасное хранилище.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK">
@@ -15777,7 +15777,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_OFFICERSUIT">
 			<English>Officer Suit</English>
-			<German>Offizier Anzug</German>			
+			<German>Offiziers Anzug</German>			
 			<Russian>Униформа офицера</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SERGEI">
@@ -15873,42 +15873,52 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITOUTFIT">
 			<English>Bandit Outfit</English>
+			<German>Banditen Kleidung</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITCAMO">
 			<English>Bandit Camo</English>
+			<German>Banditen Tarn</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITCAMO_DESC">
 			<English>Bandit Camo Outfit</English>
+			<German>Banditen Tarnkleidung</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITGUNNER">
 			<English>Bandit Gunner</English>
+			<German>Banditen Kanonier</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITGUNNER_DESC">
 			<English>Bandit Gunner Outfit</English>
+			<German>Banditen Kanonier Kleidung</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER">
 			<English>Bandit Sniper</English>
+			<German>Banditen Scharfschütze</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER_DESC">
 			<English>Bandit Sniper Outfit</English>
+			<German>Banditen Scharfschützen Kleidung</German>					
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA">
 			<English>Bandit Baklava</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA_DESC">
 			<English>Bandit Baklava Outfit</English>
+			<German>Banditen Baklava Kleidung</German>					
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITMASK">
 			<English>Bandit Mask</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITMASK_DESC">
 			<English>Bandit Mask Outfit</English>
+			<German>Banditen Kleidung mit Maske</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITHAT">
 			<English>Bandit Hat</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITHAT_DESC">
 			<English>Bandit Hat with Baklava</English>
+			<German>Banditen Kleidung mit Mütze</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITANNIE">
 			<English>Bandit Annie</English>
@@ -16068,8 +16078,8 @@
 			<Russian>Босс</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BOSS_DESC">
-			<English>Team Leader</English>
-			<Russian>Лидер группы</Russian>
+			<English>Boss</English>
+			<Russian>Босс</Russian>		
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_COOPER">
 			<English>Cooper</English>
@@ -16089,108 +16099,141 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCOFFICER">
 			<English>USMC Officer</English>
+			<German>USMC Offizier</German>			
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCSOLDIER">
 			<English>USMC Soldier</English>
+			<German>USMC Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCPILOT">
 			<English>USMC Pilot</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOTEAMLEADER">
 			<English>Camo Teamleader</English>
+			<German>Tarn Anführer</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMORECON">
 			<English>Camo Recon</English>
+			<German>Tarn Aufklärer</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOMARKSMAN">
 			<English>Camo Marksman</English>
+			<German>Tarn Scharfschütze</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOASSAULT">
 			<English>Camo Assault</English>
+			<German>Tarn Angriff</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUSOLDIER">
 			<English>RU Soldier</English>
+			<German>RU Soldat</German>	
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUOFFICER">
 			<English>RU Officer</English>
+			<German>RU Offizier</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCAMO">
 			<English>RU Camo</English>
+			<German>RU Tarn</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCOMMANDER">
 			<English>RU Commander</English>
+			<German>RU Kommandant</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MVDSOLDIER">
 			<English>MVD Soldier</English>
+			<German>MVD Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TERRORISTCAMO">
 			<English>Terrorist Camo</English>
+			<German>Terroristen Tarn</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_INSCOMMANDER">
 			<English>Ins Commander</English>
+			<German>Ins Kommandant</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_INSCREWMAN">
 			<English>Ins Crewman</English>
+			<German>Ins Besatzungsmitglied</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CDFSOLDIER">
 			<English>CDF Soldier</English>
+			<German>CDF Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ASSISTANT">
 			<English>Assistant</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DOCTOR">
 			<English>Doctor</English>
+			<German>Doktor</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER1">
 			<English>Worker 1</English>
+			<German>Arbeiter 1</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER2">
 			<English>Worker 2</English>
+			<German>Arbeiter 2</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER3">
 			<English>Worker 3</English>
+			<German>Arbeiter 3</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN1">
 			<English>TK Citizen 1</English>
+			<German>TK Bürger 1</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN2">
 			<English>TK Citizen 2</English>
+			<German>TK Bürger 2</German>	
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN3">
 			<English>TK Citizen 3</English>
+			<German>TK Bürger 3</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN4">
 			<English>TK Citizen 4</English>
+			<German>TK Bürger 4</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKSOLDIER">
 			<English>TK Soldier</English>
+			<German>TK Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKGUESOLDIER">
 			<English>TK GUE Soldier</English>
+			<German>TK GUE Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CZSOLDIER">
 			<English>CZ Soldier</English>
+			<German>CZ Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USSOLDIER">
 			<English>US Soldier</English>
+			<German>US Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_UNSOLDIER">
 			<English>UN Soldier</English>
+			<German>US Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_UNCOMMANDER">
 			<English>UN Commander</English>
+			<German>UN Kommandant</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GERRECON">
 			<English>GER Recon</English>
+			<German>GER Aufklärer</German>			
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFOFFICER">
 			<English>BAF Officer</English>
+			<German>BAF Offizier</German>			
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFSOLDIER">
 			<English>BAF Soldier</English>
+			<German>BAF Soldat</German>			
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_FRSAPPER">
 			<English>Camo Sapper</English>
+			<German>Tarn Pionier</German>					
 		</Key>
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
