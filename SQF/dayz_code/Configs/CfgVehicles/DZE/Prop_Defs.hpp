@@ -370,7 +370,7 @@ class Supply_Crate_DZE: MiningItems
 
 	mapSize = 2;
 	armor = 40;
-	displayName = $STR_AMMO_SUPPLY_WRECK;
+	displayName = $STR_EPOCH_BULK_NAME;
 
 	vehicleClass = "Fortifications";
 
