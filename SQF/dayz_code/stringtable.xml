@@ -12901,31 +12901,31 @@
 			<Czech>Vytvořit Lesní maskovací síť</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273">
-			<English>Craft Large Sandbag</English>
+			<English>Craft H-Barrier</English>
 			<German>H-Barriere herstellen</German>
 			<Russian>Создать: Большие мешки с песком</Russian>
 			<Czech>Vytvořit Velké pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_1">
-			<English>Craft 3x H-Barriere</English>
+			<English>Craft 3x H-Barrier</English>
 			<German>3x H-Barriere herstellen</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_2">
-			<English>Craft 5x H-Barriere</English>
+			<English>Craft 5x H-Barrier</English>
 			<German>5x H-Barriere herstellen</German>
 		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_273_3">
-			<English>Build H-Barriere</English>
+			<English>Build H-Barrier</English>
 			<German>H-Barriere aufbauen</German>
 		</Key>	
 		<Key ID="STR_EPOCH_PLAYER_273_4">
-			<English>Build 3x H-Barriere</English>
+			<English>Build 3x H-Barrier</English>
 			<German>3x H-Barriere aufbauen</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_5">
-			<English>Build 5x H-Barriere</English>
+			<English>Build 5x H-Barrier</English>
 			<German>5x H-Barriere aufbauen</German>
-		</Key>		
+		</Key>	
 		<Key ID="STR_EPOCH_PLAYER_274">
 			<English>Craft Sandbag Nest</English>
 			<German>Sandsack-Nest herstellen</German>
@@ -16625,10 +16625,6 @@
 			<Czech>Nálože plastické trhaviny</Czech>
 			<Japanese>梱包爆薬</Japanese>
 		</Key>
-		<Key ID="STR_AMMO_SUPPLY_WRECK">
-			<English>Supply Crate</English>
-			<German>Versorgungskiste</German>
-		</Key>
 		<Key ID="STR_WOOD_WALL_WRECK">
 			<English>Wood Wall ruins</English>
 			<German>Holzwandtrümmer</German>
@@ -16659,14 +16655,17 @@
 		</Key>		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
-          <English>Winter Ghillie Suit</English>
-          <German>Winter-Ghillie-Anzug</German>
-          <Russian>Зимний маскировочный костюм</Russian>
-        </Key>
-        <Key ID="STR_EQUIP_DESC_43">
-          <English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
-          <German>Dicke weiße Tarnkleidung mit schwerem Laub. Hervorrangend für Scharfschützen bei Schnee. Kann ausgepackt und getragen werden.</German>
-          <Russian>Тип камуфляжной одежды предназначены для напоминают тяжелую листву. Может быть распакованы и изношенный.</Russian>
-        </Key>
+		 	<English>Winter Ghillie Suit</English>
+		 	<German>Winter-Ghillie-Anzug</German>
+		  	<Russian>Зимний маскировочный костюм</Russian>
+		 </Key>
+       		 <Key ID="STR_EQUIP_DESC_43">
+			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
+			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
+			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
+			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
+			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
+			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
+		</Key>
 	</Package>
 </Project>
