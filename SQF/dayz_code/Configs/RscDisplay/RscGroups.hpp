@@ -53,8 +53,8 @@ class DZ_GroupButton: RscButton {
 	type = 16;
 	action = "";
 	x = .317;
-	w = .14;
-	h = .05 * safezoneH;
+	w = .058 * safeZoneW;
+	h = .05 * safeZoneH;
 	color[] = {0.95, 0.95, 0.95, 1.0};
 	color2[] = {0.95, 0.95, 0.95, 1};
 	colorDisabled[] = {1, 1, 1, 0.25};
@@ -87,7 +87,7 @@ class DZ_GroupButton: RscButton {
 	};	
 	class TextPos {	
 		left = .002;
-		top = .0325;
+		top = .0181 * safeZoneH;
 		right = .002;
 		bottom = .005;
 	};
@@ -197,13 +197,13 @@ class DZ_GroupDialog {
 			idc = 5;
 			text = $STR_EPOCH_DISBAND;
 			onButtonClick = "(_this select 0) call dayz_disbandGroup;";
-			y = .294;
+			y = .349;
 		};
 		class Promote: DZ_GroupButton {
 			idc = 10;
 			text = $STR_EPOCH_PROMOTE;
 			onButtonClick = "(_this select 0) call dayz_promotePlayer;";
-			y = .349;
+			y = .294;
 		};
 		class Leave: DZ_GroupButton {
 			idc = 6;
