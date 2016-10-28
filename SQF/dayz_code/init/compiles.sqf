@@ -205,11 +205,6 @@ if (!isDedicated) then {
 	player_enterCode = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\player_enterCode.sqf";	
 	FNC_check_access = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_check_access.sqf";
 
-	if (Z_SingleCurrency) then {
-		SC_fnc_addCoins = compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\SC_fnc_addCoins.sqf");
-		SC_fnc_removeCoins = compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\SC_fnc_removeCoins.sqf");
-	};
-	
 	// Advanced trading default inits for maintaining, Advanced Trading and custom scripts to utilize gem based currency.
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\AdvancedTrading\defaultInit.sqf";
 	
