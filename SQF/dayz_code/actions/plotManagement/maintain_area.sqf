@@ -45,7 +45,6 @@ _maintain = {
 		_enoughMoney = if (_wealth >= _amount) then { true } else { false };
 	} else {
 		Z_Selling = false; // Initialize gem currency before Z_canAfford.
-		if (Z_AllowTakingMoneyFromVehicle) then { false call Z_checkCloseVehicle; };
 		_moneyInfo = _amount call Z_canAfford;
 		_enoughMoney = _moneyInfo select 0;
 	};
