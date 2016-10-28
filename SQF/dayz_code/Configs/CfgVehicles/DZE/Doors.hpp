@@ -217,28 +217,28 @@ class Land_wood_wreck_third : ruins	{
 class Land_wood_wreck_half : ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_half.p3d";
-	displayName = $WOOD_FLOOR_WRECK;
+	displayName = $STR_ WOOD_FLOOR_WRECK;
 	removeoutput[] = {{"PartWoodPlywood",{0,1}},{"PartWoodLumber",{0,1}}};
 };
 
 class Land_wood_wreck_floor : ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
-	displayName = $WOOD_FLOOR_WRECK;
+	displayName = $STR_ WOOD_FLOOR_WRECK;
 	removeoutput[] = {{"PartWoodPlywood",{0,3}},{"PartWoodLumber",{0,3}}};
 };
 
 class Land_wood_wreck_quarter : ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wood_wreck_quarter.p3d";
-	displayName = $WOOD_FLOOR_WRECK;
+	displayName = $STR_ WOOD_FLOOR_WRECK;
 	removeoutput[] = {{"PartWoodPlywood",{0,1}},{"PartWoodLumber",{0,1}}};
 };
 
 class Land_wreck_cinder: ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
-	displayName = $CINDER_WALL_WRECK;
+	displayName = $STR_ CINDER_WALL_WRECK;
 	removeoutput[] = {{"CinderBlocks",{0,1}}};
 };
 class Land_wreck_metal_floor: ruins	{
@@ -270,7 +270,7 @@ class Land_gold_vein_wreck: ruins	{
 class Land_ammo_supply_wreck: ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
-	displayName = $STR_AMMO_SUPPLY_WRECK;
+	displayName = $STR_EPOCH_BULK_NAME;
 	removeoutput[] = {{"100Rnd_762x54_PK",{0,1}},{"29Rnd_30mm_AGS30",{0,1}},{"50Rnd_127x107_DSHKM",{0,1}},{"100Rnd_127x99_M2",{0,1}},{"2000Rnd_762x51_M134",{0,1}},{"48Rnd_40mm_MK19",{0,1}},{"100Rnd_762x51_M240",{0,1}}};
 };
 
