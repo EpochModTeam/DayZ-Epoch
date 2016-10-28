@@ -65,7 +65,7 @@ _maintain = {
 				player setVariable[Z_MoneyVariable,(_wealth - _amount),true];
 				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS",_count,[_amount] call BIS_fnc_numberText,_itemText];
 			} else {
-				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS",_count,_itemText];
+				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS",_count,_itemText,""];
 			};
 			_message2 = " ";
 			call player_forceSave; // Call player_forceSave BEFORE the medic animation because it can override the animation and make it finish prematurely.
@@ -91,7 +91,7 @@ _maintain = {
 		if (Z_SingleCurrency) then {
 			_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED",_count,[_amount] call BIS_fnc_numberText,_itemText];
 		} else {
-			_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED",_count,_itemText];
+			_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED",_count,_itemText,""];
 		};
 		_message2 = " ";
 		if (DZE_permanentPlot) then {
@@ -139,7 +139,7 @@ switch _option do {
 			if (Z_SingleCurrency) then {
 				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _count,[_requirements select 0] call BIS_fnc_numberText,_requirements select 1];
 			} else {
-				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _count,_requirements select 1];
+				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _count,_requirements select 1,""];
 			};
 			if (DZE_permanentPlot) then {
 				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
@@ -152,7 +152,7 @@ switch _option do {
 		if (Z_SingleCurrency) then {
 			_message2 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE",count _objects,[_requirements select 0] call BIS_fnc_numberText,_requirements select 1];
 		} else {
-			_message2 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE",count _objects,_requirements select 1];
+			_message2 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE",count _objects,_requirements select 1,""];
 		};
 		if (_count != count _objects) then {
 			if (DZE_permanentPlot) then {
