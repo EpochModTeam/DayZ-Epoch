@@ -13,7 +13,10 @@ if (_button == 1) then {
 	_pos = ctrlPosition _group;
 
 	_item = gearSlotData _control;	
-	if (!DZE_SelfTransfuse && _item in ["ItemBloodbag","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"]) exitWith {}; // No right click option on bloodbags if DZE_SelfTransfuse = false;
+	if ( //No right click action
+		(!DZE_SelfTransfuse && _item in ["ItemBloodbag","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"]) or
+		(!dayz_groupSystem && _item == "ItemRadio")
+	) exitWith {};
 	if (mouseOverCarry) then {
 		_item = DayZ_onBack;
 		carryClick = true;

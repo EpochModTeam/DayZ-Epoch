@@ -41,7 +41,6 @@ timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS], RADIUS],[[3D POS], RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
-DZE_groupManagement = false; //Enable or disable group management. Enabled by default
 DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
 
 // Trader Menu
@@ -83,6 +82,12 @@ DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotation
 DZE_doorManagementAllowManualCode = true; //Allows opening doors still using PIN
 DZE_doorManagementMaxFriends = 10; //Maximum number of friends allowed on a door.
 
+// Group System
+dayz_groupSystem = true; // Enable group system
+dayz_markGroup = 1; // Players can see group members positions on the map 0=never, 1=always, 2=With GPS only
+dayz_markSelf = 0; // Players can see their own position on the map 0=never, 1=always, 2=With GPS only
+dayz_markBody = 0; // Players can see their corpse position on the map 0=never, 1=always, 2=With GPS only
+dayz_requireRadio = false; // Require players to have a radio on their toolbelt to create a group, be in a group and receive invites
 
 /* 
 	Developers:

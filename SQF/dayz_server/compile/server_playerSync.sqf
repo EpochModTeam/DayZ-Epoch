@@ -1,5 +1,5 @@
 private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_currentModel","_currentAnim",
-"_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_group","_playerBackp",
+"_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_playerBackp",
 "_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
 "_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
 "_magazines","_characterID","_charPos","_isInVehicle","_name","_isNewMed",
@@ -48,7 +48,6 @@ _distanceFoot =	0;
 //all getVariable immediately
 _globalCoins = _character getVariable ["GlobalMoney", -1];
 _bankCoins = _character getVariable ["MoneySpecial", -1];
-_group = _character getVariable ["savedGroup", []];
 _coins = _character getVariable [Z_MoneyVariable, -1]; //should getting coins fail set the variable to an invalid value to prevent overwritting the in the DB
 _lastPos = _character getVariable ["lastPos",_charPos];
 _usec_Dead = _character getVariable ["USEC_isDead",false];
@@ -234,11 +233,6 @@ _key call server_hiveWrite;
 
 if (Z_SingleCurrency) then { //update global coins
 	_key = format["CHILD:205:%1:%2:%3:%4:",_playerUID,dayZ_instance,_globalCoins,_bankCoins];
-	_key call server_hiveWrite;
-};
-
-if (DZE_groupManagement) then { //update player group
-	_key = format["CHILD:204:%1:%2:%3:",_playerUID,dayZ_instance, _group];
 	_key call server_hiveWrite;
 };
 

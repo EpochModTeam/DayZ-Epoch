@@ -510,6 +510,7 @@ switch (toLower worldName) do {
 keypadCancel = false; //Brute force fix
 keyPadReset = {uiSleep 2; keypadCancel = false;};
 canbuild = true;
+dayz_activeInvites = [];
 dayz_combination = "";
 dayz_disallowedVault = ["TentStorage","BuiltItems","ModularItems","DZE_Base_Object","Generator_DZ"];
 // These work with just a running generator
@@ -709,4 +710,5 @@ if (!isDedicated) then {
 	DZE_Quarantine = false;
 	DZE_InRadiationZone = false;
 	DZE_myVehicle = objNull;
+	dayz_groupNameTags = false;
 };

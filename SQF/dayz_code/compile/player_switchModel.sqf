@@ -123,7 +123,11 @@ _switchUnit = {
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} count magazines _oldUnit;
 	if !(isNull _oldUnit) then {deleteVehicle _oldUnit;};
-	deleteGroup _oldGroup;
+	if (!isNil "dayz_groupInit" && count (units _oldGroup) > 1) then {
+		[_newUnit] join _oldGroup;
+		if (count (units _group) == 0) then {deleteGroup _group;};
+	};
+	if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
 	if (_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 };
 
