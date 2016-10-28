@@ -431,7 +431,7 @@ class WoodStairs_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 600;
-	displayName = $STR_EPOCH_WOODSTAIRS;
+	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodStairsRails_DZ",{{"PartWoodLumber",2}}};
@@ -462,7 +462,7 @@ class WoodStairsRails_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 700;
-	displayName = "Wood Stairs Rail";
+	displayName = $STR_EPOCH_WOODSTAIRSRAILS;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "WoodStairs_Preview_DZ";
@@ -477,7 +477,7 @@ class WoodStairsSans_DZ: ModularItems {
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	armor = 500;
-	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
+	displayName = $STR_EPOCH_WOODSTAIRS;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodStairs_DZ",{{"PartWoodLumber",2}}};
