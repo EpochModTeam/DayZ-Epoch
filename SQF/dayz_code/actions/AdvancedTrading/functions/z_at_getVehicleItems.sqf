@@ -3,7 +3,7 @@
 *
 *	Gets all your items stored in your vehicle and initiates the selling list.
 **/
-private ["_pos","_list","_formattedText","_pic","_normalMags","_normalWeaps","_freeSpace"];
+private ["_formattedText","_pic","_normalMags","_normalWeaps","_freeSpace"];
 #include "defines.hpp"
 
 call Z_clearLists;
