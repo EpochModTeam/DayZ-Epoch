@@ -7786,9 +7786,11 @@
 		</Key>
 		<Key ID="STR_UI_STREAMER_MODE">
 			<English>Streamer mode:</English>
+			<German>Streamer Modus:</German>			
 		</Key>
 		<Key ID="STR_UI_STREAMER_MODE_TOOLTIP">
 			<English>Hides server watermark and rules feed</English>
+			<German>Blendet das Server Wasserzeichen und die Chatliste aus.</German>				
 		</Key>
 		<Key ID="STR_UI_ENABLED">
 			<English>Enabled</English>
@@ -8604,7 +8606,6 @@
 			<English>Bag Fence</English>
 			<Russian>Преграда из мешков с песком</Russian>
 			<French>Sacs de sable</French>
-			<Spanish>Bag Fence</Spanish>
 			<Czech>Val z pytlů</Czech>
 			<German>Sandsackwall</German>
 		</Key>
@@ -10577,7 +10578,7 @@
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: UK-59</English>
 			<Russian>Калибр: 7.62x54мм&lt;br/&gt;Патронов: 50&lt;br/&gt;Используется в: UK-59</Russian>
-			<German>Kaliber: 7.62x54mm&lt;br/&gt;Schuss: 50&lt;br/&gt;Benutzt in: UK-59</German>				
+			<German>Kaliber: 7.62x54mm&lt;br/&gt;Schuss: 50&lt;br/&gt;Verwendet in: UK-59</German>				
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_NAME">
@@ -10587,7 +10588,7 @@
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_DESC">
 			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 75&lt;br/&gt;Used in: RPK</English>
 			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Патронов: 75&lt;br/&gt;Используется в: РПК</Russian>
-			<German>Kaliber: 7.62x39mm&lt;br/&gt;Schuss: 75&lt;br/&gt;Benutzt in: RPK</German>				
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Schuss: 75&lt;br/&gt;Verwendet in: RPK</German>				
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_545X39_RPK_NAME">
@@ -10611,7 +10612,7 @@
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_DESC">
 			<English>Caliber: 7.62x54mmR&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: Mosin Nagant</English>
 			<Russian>Калибр: 7.62x54mmR&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: Мосинка</Russian>
-			<German>Kaliber: 7.62x54mmR&lt;br/&gt;Schuss: 5&lt;br/&gt;Benutzt in: Mosin Nagant</German>			
+			<German>Kaliber: 7.62x54mmR&lt;br/&gt;Schuss: 5&lt;br/&gt;Verwendet in: Mosin Nagant</German>			
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_17HMR_NAME">
 			<English>5Rnd. CZ 550 mag.</English>
@@ -10620,7 +10621,7 @@
 		<Key ID="STR_DZ_MAG_5RND_17HMR_DESC">
 			<English>Caliber: 9,3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
 			<Russian>Калибр: 9,3x62мм&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: CZ 550</Russian>
-			<German>Kaliber: 9,3x62mm&lt;br/&gt;Schuss: 5&lt;br/&gt;Benutzt in: CZ 550</German>				
+			<German>Kaliber: 9,3x62mm&lt;br/&gt;Schuss: 5&lt;br/&gt;Verwendet in: CZ 550</German>				
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_303BRITISH_NAME">
 			<English>10Rnd. Lee Enfield mag.</English>
@@ -10637,7 +10638,7 @@
 		<Key ID="STR_DZ_MAG_15RND_W1866_DESC">
 			<English>Caliber: 11x23mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Winchester 1866</English>
 			<Russian>Калибр: 11x23мм&lt;br/&gt;Патронов: 15&lt;br/&gt;Используется в: Винчестер 1866</Russian>
-			<German>Kaliber: 11x23mm&lt;br/&gt;Schuss: 15&lt;br/&gt;Benutzt in: Winchester 1866</German>			
+			<German>Kaliber: 11x23mm&lt;br/&gt;Schuss: 15&lt;br/&gt;Verwendet in: Winchester 1866</German>			
 		</Key>		
 
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_SLUG_NAME">
@@ -12501,7 +12502,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_214">
 			<English>Build Corrugated Fence</English>
-			<German>Wellblech-Zaun aufbauen</German>
+			<German>Wellblechzaun aufbauen</German>
 			<Russian>Установить: Гофрированный забор</Russian>
 			<Dutch>Bouw Ribbelplaten hek</Dutch>
 			<Czech>Postavit Zvlněný plot</Czech>
@@ -12529,7 +12530,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_218">
 			<English>Craft Corrugated Fence</English>
-			<German>Wellblech-Zaun herstellen</German>
+			<German>Wellblechzaun herstellen</German>
 			<Russian>Создать: Гофрир. забор</Russian>
 			<Dutch>Bouw ribbelplaten hek</Dutch>
 			<Czech>Vytvořit Zvlněný plot</Czech>
@@ -12543,7 +12544,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_220">
 			<English>Craft Metal Panel</English>
-			<German>Metallplatte herstellen</German>
+			<German>Metallwand herstellen</German>
 			<Russian>Создать: Металлич. панель</Russian>
 			<Dutch>Ceëer metalen paneel</Dutch>
 			<Czech>Vyrobit Železný panel</Czech>
@@ -12606,7 +12607,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_229">
 			<English>Craft Lg Camo Net</English>
-			<German>Großes Tarnnetz herstellen</German>
+			<German>Tarnnetz(groß) herstellen</German>
 			<Russian>Создать: Lg Camo Net</Russian>
 			<Dutch>Creëer groot camouflagenet</Dutch>
 			<Czech>Vytvořit Velkou kamuflážní síť</Czech>
@@ -12636,7 +12637,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_232a">
 			<English>Craft Wood Floor 1/2</English>
-			<German>1/2 Holzboden herstellen</German>
+			<German>Holzboden 1/2 herstellen</German>
 			<Russian>Создать: Деревянный пол 1/2</Russian>
 			<Dutch>Creëer houten vloer 1/2</Dutch>
 			<Czech>Vytvořit 1/2 dřevěné podlahy</Czech>
@@ -12664,14 +12665,14 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_236">
 			<English>Craft Large Wall</English>
-			<German>Große Mauer herstellen</German>
+			<German>Große Wand herstellen</German>
 			<Russian>Создать: Большая стена</Russian>
 			<Dutch>Creëer grote muur</Dutch>
 			<Czech>Vytvořit Velkou zeď</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_237">
 			<English>Craft Wood Wall</English>
-			<German>Holzmauer herstellen</German>
+			<German>Holzwand herstellen</German>
 			<Russian>Создать: Деревянная стена</Russian>
 			<Dutch>Creëer houten muur</Dutch>
 			<Czech>Vytvořit Dřevěnou zeď</Czech>
@@ -12780,7 +12781,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<English>Craft Garage Doorway</English>
-			<German>Garagentor-Rahmen herstellen</German>
+			<German>Garagentor herstellen</German>
 			<Russian>Создать: Проём гаража</Russian>
 			<Czech>Vytvořit Garážový vjezd</Czech>
 		</Key>
@@ -12804,7 +12805,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_257">
 			<English>Craft Wood Stairs</English>
-			<German>Holztreppen herstellen</German>
+			<German>Holztreppe herstellen</German>
 			<Russian>Создать: Деревянные ступеньки</Russian>
 			<Czech>Vytvořit Dřevěné schody</Czech>
 		</Key>
@@ -12900,11 +12901,31 @@
 			<Czech>Vytvořit Lesní maskovací síť</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273">
-			<English>Craft Large Sandbag</English>
-			<German>Großen Sandsack herstellen</German>
+			<English>Craft H-Barrier</English>
+			<German>H-Barriere herstellen</German>
 			<Russian>Создать: Большие мешки с песком</Russian>
 			<Czech>Vytvořit Velké pytle s pískem</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_273_1">
+			<English>Craft 3x H-Barrier</English>
+			<German>3x H-Barriere herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_273_2">
+			<English>Craft 5x H-Barrier</English>
+			<German>5x H-Barriere herstellen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_PLAYER_273_3">
+			<English>Build H-Barrier</English>
+			<German>H-Barriere aufbauen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLAYER_273_4">
+			<English>Build 3x H-Barrier</English>
+			<German>3x H-Barriere aufbauen</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_273_5">
+			<English>Build 5x H-Barrier</English>
+			<German>5x H-Barriere aufbauen</German>
+		</Key>	
 		<Key ID="STR_EPOCH_PLAYER_274">
 			<English>Craft Sandbag Nest</English>
 			<German>Sandsack-Nest herstellen</German>
@@ -12977,13 +12998,13 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_298">
 			<English>Craft Round Fence</English>
-			<German>Runden Zaun herstellen</German>
+			<German>Sandsackwall(rund) herstellen</German>
 			<Russian>Создать: Круглая ограда</Russian>
 			<Czech>Vytvořit Kulaté oplocení</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_299">
 			<English>Build Round Fence</English>
-			<German>Runden Zaun aufstellen</German>
+			<German>Sandsackwall(rund) aufstellen</German>
 			<Russian>Установить: Круглая ограда</Russian>
 			<Czech>Postavit Kulaté oplocení</Czech>
 		</Key>
@@ -13799,13 +13820,13 @@
 			<Russian>Сейф</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_DESC">
-			<English>Personal Safe: A placeable object that is used for very secure storage. WARNING!!! Placing your safe will give you a 4 digit number that is used to open the safe, save that number!</English>
-			<German>Persönlicher Tresor: Ein platzierbares Objekt für sehr sichere Aufbewahrung. ACHTUNG!!! Der vierstellige Code zum Öffnen wird nach dem Aufstellen angezeigt, bitte nicht vergessen!</German>
+			<English>A placeable object that is used for very secure storage. Placing your safe will give you a 4 digit number that is used to open the safe, save that number!</English>
+			<German>Ein platzierbares Objekt für sehr sichere Aufbewahrung. Der vierstellige Code zum Öffnen wird nach dem Aufstellen angezeigt, bitte nicht vergessen!</German>
 			<Russian>Личный сейф: Перемещаемый объект, который используется в качестве безопасного хранилища. ВНИМАНИЕ!!! Поставив сейф, вы получите 4-х значный код, который необходимо ввести, чтобы открыть сейф, запишите этот код!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_LOCKED">
 			<English>Locked Safe</English>
-			<German>Abgeschlossener Tresor</German>
+			<German>Tresor</German>
 			<Russian>Закрытый сейф</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_ENTER">
@@ -13968,6 +13989,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_FERTILIZER">
 			<English>A bag that is applied to soils or to plant tissues (usually leaves) to supply one or more plant nutrients essential to the growth of plants.</English>
+			<German>Ein Beutel mit Dünger, der aus unterschiedlichen Bestandteilen, hauptsächlich Erde und Mineralien, besteht, damit Pflanzen gut gedeihen können.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PUMPKIN_SEED">
 			<English>Pumpkin Seed</English>
@@ -14073,13 +14095,25 @@
 			<German>Kann mit einem Vorschlaghammer von Steinen gewonnen werden.</German>
 			<Russian>Добывается из камней с помощью кувалды.</Russian>
 		</Key>
+		<Key ID="STR_ORE_VEIN_WRECK_GOLD">
+			<English>gold vein ruins</English>
+			<German>Golderzader</German>
+		</Key>
+		<Key ID="STR_ORE_VEIN_WRECK_SILVER">
+			<English>silver vein ruins</English>
+			<German>Silbererzader</German>
+		</Key>	
+		<Key ID="STR_ORE_VEIN_WRECK_IRON">
+			<English>iron vein ruins</English>
+			<German>Eisenerzader</German>
+		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW">
 			<English>Chainsaw</English>
 			<German>Kettensäge</German>			
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW">
 			<English>Hermlite 2 Stroke Chainsaw</English>
-			<German>Hermlite 2 Trakt Kettensäge</German>	
+			<German>Hermlite 2 Takt Kettensäge</German>	
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_BLUE">
 			<English>Hermlite 2 Stroke Chainsaw (Blue)</English>
@@ -14188,12 +14222,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED_ACTION">
 			<English>Craft Plot Pole</English>
-			<German>Grundstücks-Markierung herstellen</German>
+			<German>Grundstücksmarkierung herstellen</German>
 			<Russian>Создать: Plot Pole</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED_DESC">
 			<English>Deed to a plot of land, similar to a plot pole.</English>
-			<German>Erlaubt dir, ein Grundstück zu beanspruchen und eine Grundstücks-Markierung zu setzen.</German>
+			<German>Erlaubt dir, ein Grundstück zu beanspruchen und eine Grundstücksmarkierung aufzustellen.</German>
 		</Key>
 		<Key ID="STR_EPOCH_LETTER">
 			<English>Letter</English>
@@ -14202,21 +14236,21 @@
 		</Key>
 		<Key ID="STR_EPOCH_LETTER_DESC">
 			<English>Random letter</English>
-			<German>Irgend ein Brief</German>
+			<German>Irgendein Brief</German>
 			<Russian>Какое-то письмо</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ROMANCENOVEL">
 			<English>Romance Novel</English>
-			<German>Roman</German>
+			<German>Schnulzenroman</German>
 			<Russian>Любовный роман</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ROMANCENOVEL_DESC">
 			<English>Trashy Romance Novel - "The seas are laden with lust and jealousy."</English>
-			<German>Schnulzen-Roman - "Ein Meer von Lust und Eifersucht."</German>
+			<German>Schnulzenroman - "Ein Meer von Lust und Eifersucht."</German>
 		</Key>
 		<Key ID="STR_EPOCH_ROMANCENOVEL_DESC2">
 			<English>Trashy Romance Novel - "He had a chest of iron, and a heart of gold."</English>
-			<German>Schnulzen-Roman - "Er hatte eine starke Brust, und ein Herz aus Gold."</German>
+			<German>Schnulzenroman - "Er hatte eine starke Brust, und ein Herz aus Gold."</German>
 		</Key>
 		<Key ID="STR_EPOCH_BOOK">
 			<English>Book</English>
@@ -14245,17 +14279,17 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAMP">
 			<English>Wooden Ramp</English>
-			<German>Holz-Rampe</German>
+			<German>Holzrampe</German>
 			<Russian>Деревянная рампа</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAMP_DESC">
 			<English>Document used in building a wooden ramp.</English>
-			<German>Dokument wird benötigt, um eine Holz-Rampe zu bauen.</German>
+			<German>Dokument wird benötigt, um eine Holzrampe zu bauen.</German>
 			<Russian>Документ используемый в строительстве деревянной рампы.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HOTWIREKIT">
 			<English>Hotwire Kit</English>
-			<German>Aufbrech-Werkzeug</German>
+			<German>Aufbruchwerkzeug</German>
 			<Russian>Набор для угона</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HOTWIREKIT_DESC">
@@ -14325,12 +14359,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_CORRUGATEDFENCE">
 			<English>Corrugated Fence</English>
-			<German>Wellblech-Zaun</German>
+			<German>Wellblechzaun</German>
 			<Russian>Гофрированный забор</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CORRUGATEDFENCE_DESC">
 			<English>Corrugated Fence: A buildable object used for fortification purposes.</English>
-			<German>Wellblech-Zaun: Ein aufbaubares Objekt zur Erstellung einer Befestigung.</German>
+			<German>Wellblechzaun: Ein aufbaubares Objekt zur Erstellung einer Befestigung.</German>
 			<Russian>Гофрированный забор: Используется для защитных целей.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALPOLE">
@@ -14345,8 +14379,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_GUNRACKKIT">
 			<English>Gun Rack Kit</English>
-			<German>Waffenregal-Bausatz</German>
+			<German>Waffenregalbausatz</German>
 			<Russian>Полка для оружия</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_GUNRACK">
+			<English>Gun Rack</English>
+			<German>Waffenregal</German>
 		</Key>
 		<Key ID="STR_EPOCH_GUNRACKKIT_DESC">
 			<English>A Gun Rack for 20 weapons.</English>
@@ -14365,7 +14403,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_OILBARREL">
 			<English>Oil Barrel</English>
-			<German>Öl-Fass</German>
+			<German>Ölfass</German>
 			<Russian>Бочка нефти</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_OILBARREL_DESC">
@@ -14375,12 +14413,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL">
 			<English>Fuel Barrel</English>
-			<German>Kraftstoff-Fass</German>
+			<German>Kraftstofffass</German>
 			<Russian>Бочка топлива</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL_DESC">
 			<English>210 litres of fuel per barrel.</English>
-			<German>210 Liter Kraftstoff-Fass.</German>
+			<German>210 Liter Kraftstofffass.</German>
 			<Russian>210 литров топлива в бочке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL">
@@ -14390,17 +14428,21 @@
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL_DESC">
 			<English>210 litres of fuel per barrel. (Empty)</English>
-			<German>210 Liter Kraftstoff-Fass. (Empty)</German>
+			<German>Leeres 210 Liter Kraftstofffass.</German>
 			<Russian>Пустая бочка для топлива.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FIREBARRELKIT">
 			<English>Fire Barrel Kit</English>
-			<German>Feuer-Fass-Bausatz</German>
+			<German>Feuertonne Bausatz</German>
 			<Russian>Набор (Источник огня)</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_FIREBARREL">
+			<English>Fire Barrel</English>
+			<German>Feuertonne</German>
+		</Key>		
 		<Key ID="STR_EPOCH_FIREBARRELKIT_DESC">
 			<English>Fire Barrel</English>
-			<German>Feuer-Fass</German>
+			<German>Eine brennende Feuertonne, die wesentlich länger als ein einfaches Lagerfeuer brennt.</German>
 			<Russian>Бочка, которую можно поджечь и использовать в качестве источника огня.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WORKBENCH">
@@ -14415,12 +14457,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODENRAMP_DESC">
 			<English>Wooden ramp can be used to get air.</English>
-			<German>Eine Holz-Rampe kann als Sprungschanze verwendet werden.</German>
+			<German>Eine Holzrampe, die als Sprungschanze verwendet werden kann.</German>
 			<Russian>Деревянная рампа поможет вам взлететь.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOT_DESC">
 			<English>Plot Pole: A placeable pole that will allow you and your friends to build within a certain radius.</English>
-			<German>Grundstück-Markierung: Ein aufbaubares Objekt, dass dir und deinen Freunden erlaubt, in seiner Reichweite zu bauen.</German>
+			<German>Grundstücksmarkierung: Ein aufbaubares Objekt, dass dir und deinen Freunden erlaubt, in seiner Reichweite zu bauen.</German>
 		</Key>
 		<Key ID="STR_EPOCH_METALPANEL">
 			<English>Metal Panel</English>
@@ -14431,6 +14473,10 @@
 			<English>Metal Panel: Strong metal wall used for base defence.</English>
 			<German>Metallwand: Starke Metallwand für den Schutz der Basis.</German>
 			<Russian>Металлическая панель: Прочная металлическая стена, используемая для защиты базы.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WIRE">
+			<English>Wire</English>
+			<German>Stacheldraht</German>
 		</Key>
 		<Key ID="STR_EPOCH_DEERSTAND">
 			<English>Deer Stand</English>
@@ -14444,12 +14490,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_LARGEDESERTCAMONET">
 			<English>Large Desert Camo Net</English>
-			<German>Großes Wüsten-Tarnnetz</German>
+			<German>Wüstentarnnetz (groß)</German>
 			<Russian>Большая пустынная камуфляжная сеть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEFORESTCAMONET">
 			<English>Large Forest Camo Net</English>
-			<German>Großes Wald-Tarnnetz</German>
+			<German>Waldtarnnetz (groß)</German>
 			<Russian>Большая лесная камуфляжная сеть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGECAMONET_DESC">
@@ -14459,12 +14505,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_DESERTCAMONET">
 			<English>Desert Camo Net</English>
-			<German>Wüsten-Tarnnetz</German>
+			<German>Wüstentarnnetz</German>
 			<Russian>Пустынная камуфляжная сеть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FORESTCAMONET">
 			<English>Forest Camo Net</English>
-			<German>Wald-Tarnnetz</German>
+			<German>Waldtarnnetz</German>
 			<Russian>Лесная камуфляжная сеть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CAMONET_DESC">
@@ -14474,7 +14520,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FUELPUMP">
 			<English>Fuel Pump</English>
-			<German>Treibstoff-Pumpe</German>
+			<German>Treibstoffpumpe</German>
 			<Russian>Топливный насос</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LIGHTPOLE">
@@ -14518,7 +14564,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CANVASSUNSHADE">
 			<English>Canvas Sun Shade</English>
-			<German>Stoff-Sonnenschutz</German>
+			<German>Stoffsonnenschutz</German>
 			<Russian>Солнцезащитный козырёк</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CANVASSUNSHADE_DESC">
@@ -14573,12 +14619,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_DESC">
 			<English>Semi secure lockbox.</English>
-			<German>Schließkassette.</German>
+			<German>Leicht gesicherte Schließkassette. Der Code besteht aus einer Farbe und 2 Ziffern.</German>
 			<Russian>Безопасное хранилище.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK">
 			<English>Lumber Pack</English>
-			<German>Bauholz-Stapel</German>
+			<German>Bauholzstapel</German>
 			<Russian>Упаковка пиломатериалов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK_DESC">
@@ -14608,12 +14654,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLYWOODPACK">
 			<English>Plywood Pack</English>
-			<German>Sperrholz-Packet</German>
+			<German>Sperrholzpacket</German>
 			<Russian>Упаковка фанеры</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLYWOODPACK_DESC">
 			<English>Plywood in a stack.</English>
-			<German>Sperrholz-Stapel.</German>
+			<German>Sperrholzstapel.</German>
 			<Russian>Упакованная фанера.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBER">
@@ -14638,7 +14684,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHEAD">
 			<English>Sledgehammer Head</English>
-			<German>Vorschlaghammer-Kopf</German>
+			<German>Vorschlaghammerkopf</German>
 			<Russian>Боёк кувалды</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHEAD_DESC">
@@ -14648,102 +14694,102 @@
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHANDLE">
 			<English>Sledgehammer Handle</English>
-			<German>Vorschlaghammer-Griff</German>
+			<German>Vorschlaghammergriff</German>
 			<Russian>Ручка кувалды</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SLEDGEHAMMERHANDLE_DESC">
 			<English>Combine with a head to make a Sledgehammer.</English>
-			<German>Zusammen mit einem Vorschlaghammer-Kopf ergibt es einen Vorschlaghammer.</German>
+			<German>Zusammen mit einem Vorschlaghammerkopf ergibt es einen Vorschlaghammer.</German>
 			<Russian>Объедините с бойком, чтобы получить кувалду.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ">
 			<English>Water Bottle (1oz)</English>
-			<German>Wasserflasche (1oz)</German>
+			<German>Wasserflasche (100ml)</German>
 			<Russian>Бутылка воды (1 унция)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ_DESC">
 			<English>Water Bottle with 1oz of water.</English>
-			<German>Wasserflasche mit 1oz Wasser.</German>
+			<German>Wasserflasche mit 100ml Wasser.</German>
 			<Russian>Бутылка с 1 унцией воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ">
 			<English>Water Bottle (2oz)</English>
-			<German>Wasserflasche (2oz)</German>
+			<German>Wasserflasche (200ml)</German>
 			<Russian>Бутылка воды (2 унции)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ_DESC">
 			<English>Water Bottle with 2oz of water.</English>
-			<German>Wasserflasche mit 2oz Wasser.</German>
+			<German>Wasserflasche mit 200ml Wasser.</German>
 			<Russian>Бутылка с 2 унциями воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ">
 			<English>Water Bottle (3oz)</English>
-			<German>Wasserflasche (3oz)</German>
+			<German>Wasserflasche (300ml)</German>
 			<Russian>Бутылка воды (3 унции)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ_DESC">
 			<English>Water Bottle with 3oz of water.</English>
-			<German>Wasserflasche mit 3oz Wasser.</German>
+			<German>Wasserflasche mit 300ml Wasser.</German>
 			<Russian>Бутылка с 3 унциями воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ">
 			<English>Water Bottle (4oz)</English>
-			<German>Wasserflasche (4oz)</German>
+			<German>Wasserflasche (400ml)</German>
 			<Russian>Бутылка воды (4 унции)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ_DESC">
 			<English>Water Bottle with 4oz of water.</English>
-			<German>Wasserflasche mit 4oz Wasser.</German>
+			<German>Wasserflasche mit 400ml Wasser.</German>
 			<Russian>Бутылка с 4 унциями воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ">
 			<English>Water Bottle (5oz)</English>
-			<German>Wasserflasche (5oz)</German>
+			<German>Wasserflasche (500ml)</German>
 			<Russian>Бутылка воды (5 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ_DESC">
 			<English>Water Bottle with 5oz of water.</English>
-			<German>Wasserflasche mit 5oz Wasser.</German>
+			<German>Wasserflasche mit 500ml Wasser.</German>
 			<Russian>Бутылка с 5 унциями воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ">
 			<English>Water Bottle (6oz)</English>
-			<German>Wasserflasche (6oz)</German>
+			<German>Wasserflasche (600ml)</German>
 			<Russian>Бутылка воды (6 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ_DESC">
 			<English>Water Bottle with 6oz of water.</English>
-			<German>Wasserflasche mit 6oz Wasser.</German>
+			<German>Wasserflasche mit 600ml Wasser.</German>
 			<Russian>Бутылка с 6 унциями воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ">
 			<English>Water Bottle (7oz)</English>
-			<German>Wasserflasche (7oz)</German>
+			<German>Wasserflasche (700ml)</German>
 			<Russian>Бутылка воды (7 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ_DESC">
 			<English>Water Bottle with 7oz of water.</English>
-			<German>Wasserflasche mit 7oz Wasser.</German>
+			<German>Wasserflasche mit 700ml Wasser.</German>
 			<Russian>Бутылка с 7 унциями воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ">
 			<English>Water Bottle (8oz)</English>
-			<German>Wasserflasche (8oz)</German>
+			<German>Wasserflasche (800ml)</German>
 			<Russian>Бутылка воды (8 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ_DESC">
 			<English>Water Bottle with 8oz of water.</English>
-			<German>Wasserflasche mit 8oz Wasser.</German>
+			<German>Wasserflasche mit 800ml Wasser.</German>
 			<Russian>Бутылка с 8 унциями воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ">
 			<English>Water Bottle (9oz)</English>
-			<German>Wasserflasche (9oz)</German>
+			<German>Wasserflasche (900ml)</German>
 			<Russian>Бутылка воды (9 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ_DESC">
 			<English>Water Bottle with 9oz of water.</English>
-			<German>Wasserflasche mit 9oz Wasser.</German>
+			<German>Wasserflasche mit 900ml Wasser.</German>
 			<Russian>Бутылка с 9 унциями воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE">
@@ -14956,11 +15002,11 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_NO_ITEMS">
 			<English>No items in buying list</English>
-			<German>Keine Gegenstände in der Kaufliste</German>
+			<German>Keine Gegenstände in der Kaufliste.</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_NO_ITEMS">
 			<English>No items in selling list</English>
-			<German>Keine Gegenstände in der Verkaufsliste</German>
+			<German>Keine Gegenstände in der Verkaufsliste.</German>
 			<Russian>Нет ничего на продажу</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
@@ -15078,13 +15124,16 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_VEH_IN_BACKPACK">
 			<English>You purchased a %1, the key has been added into your backpack.</English>
+			<German>Du hast ein %1 gekauft, der Schlüssel wurde deinem Rucksack hinzugefügt.</German>			
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_VEH_IN_VEHICLE">
 			<English>You purchased a %1, the key has been added into your %2.</English>
+			<German>Du hast ein %1 gekauft, der Schlüssel wurde deinem %2 hinzugefügt.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_VEH_IN_GEAR">
 			<English>You purchased a %1, the key has been added to your toolbelt.</English>
-		</Key>		
+			<German>Du hast ein %1 gekauft, der Schlüssel wurde deinem Gürtel hinzugefügt.</German>				
+		</Key>				
 		<Key ID="STR_EPOCH_TRADE_SELL_IN_BACKPACK">
 			<English>Sold %1 items from your backpack</English>
 			<German>Du hast %1 Gegenstände aus deinem Rucksack verkauft.</German>	
@@ -15255,7 +15304,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ATTACHMENTS">
 			<English>Attachments</English>
-			<German>Zubehör</German>
+			<German>Erweiterungen</German>
 			<Russian>Вложения</Russian>
 			<Spanish>Accesorios</Spanish>
 			<French>Accessoires</French>
@@ -15271,153 +15320,207 @@
 		</Key>
 		<Key ID="STR_EPOCH_METALFLOOR">
 			<English>Metal Floor</English>
+			<German>Metallboden</German>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF">
 			<English>Cinder Wall Half</English>
+			<German>Betonwand (Halb)</German>			
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL">
 			<English>Cinder Wall Full</English>
+			<German>Betonwand (Komplett)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_DESC">
 			<English>Half height cinder block wall.</English>
+			<German>Eine Betonwand die nur zur Hälfte aufgebaut wurde.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_FULLCINDERBLOCKWALL_DESC">
 			<English>Full height cinder block wall.</English>
+			<German>Eine komplett aufgebaute Betonwand.</German>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
 			<English>Cinder Doorway</English>
+			<German>Beton-Türrahmen</German>				
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_DESC">
 			<English>Cinder block doorway.</English>
+			<German>Ein Türdurchgang aus Beton.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
+			<German>Beton-Garagentürrahmen</German>				
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_DESC">
 			<English>Cinder block garage doorway.</English>
+			<German>Ein Garagentürrahmen aus Beton.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
+			<German>Holzboden/Decke</German>					
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILINGHALF">
 			<English>Floor/Ceiling 1/2</English>
+			<German>Holzboden/Decke 1/2</German>				
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILINGQUARTER">
 			<English>Floor/Ceiling 1/4</English>
+			<German>Holzboden/Decke 1/4</German>				
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILING_DESC">
 			<English>Wooden floor can also be used as a ceiling.</English>
+			<German>Holzboden der auch als Decke genutzt werden kann.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRS">
 			<English>Wooden Stairs</English>
+			<German>Holztreppe</German>			
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRSWITHSUPPORTS">
 			<English>Wooden Stairs w/ supports</English>
+			<German>Holztreppe (verstärkt)</German>			
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRSWITHSUPPORTS_DESC">
 			<English>Wooden stairs with supports.</English>
+			<German>Holztreppe mit verstärkten Balken.</German>	
+		</Key>
+		<Key ID="STR_EPOCH_WOODSTAIRSRAILS">
+			<English>Wood Stairs Rail</English>
+			<German>Holztreppe mit Geländer</German>			
 		</Key>
 		<Key ID="STR_EPOCH_WOODLADDER">
 			<English>Wooden Ladder</English>
+			<German>Holzleiter</German>			
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALL">
 			<English>Wooden Wall</English>
+			<German>Holzwand</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALL_DESC">
 			<English>Wall constructed out of plywood and lumber.</English>
+			<German>Eine Holzwand aus bestehend Sperr- und Bauholz.</German>			
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALLTHIRDPART">
 			<English>Wooden Wall 1/3</English>
+			<German>Holzwand (1/3)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALLTHIRDPART_DESC">
 			<English>Third wall constructed out of plywood and lumber.</English>
+			<German>Holzwand (1/3) aus bestehend Sperr- und Bauholz.</German>	
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHWINDOW">
 			<English>Wall w/ Window</English>
+			<German>Holzwand (Fenster)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHWINDOW_DESC">
 			<English>Wall with window constructed out of plywood and lumber.</English>
+			<German>Holzwand mit Fenster bestehend aus Sperr- und Bauholz.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORWAY">
 			<English>Wall w/ Doorway</English>
+			<German>Holzwand (Türrahmen)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORWAY_DESC">
 			<English>Wall with doorway constructed out of plywood and lumber.</English>
+			<German>Holzwand mit Türgang bestehend aus Sperr- und Bauholz.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOOR">
 			<English>Wall w/ Door</English>
+			<German>Holzwand (Tür)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED">
 			<English>Wall w/ Door Locked</English>
+			<German>Holzwand (Tür verschlossen)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED_DESC">
 			<English>Wall with locked door constructed out of plywood and lumber.</English>
+			<German>Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOOR_DESC">
 			<English>Wall with door constructed out of plywood and lumber.</English>
+			<German>Holzwand mit Tür bestehend aus Sperr- und Bauholz.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOOR">
 			<English>Wooden Garage Door</English>
+			<German>Holzgaragentür</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOOR_DESC">
 			<English>Garage door constructed out of plywood and lumber.</English>
+			<German>Holzgaragentür bestehend aus Sperr- und Bauholz.</German>					
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED">
 			<English>Wooden Garage Door Locked</English>
+			<German>Holzgaragentür (verschlossen)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED_DESC">
 			<English>Garage door with combination lock.</English>
+			<German>Holzgaragentür (mit Zahlenschloss)</German>					
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWOODWALL">
 			<English>Large Wooden Wall</English>
+			<German>Große Holzwand</German>				
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWOODWALL_DESC">
 			<English>Large wall constructed out of plywood and lumber.</English>
+			<German>Eine große Holzwand aus bestehend Sperr- und Bauholz.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHWINDOW">
 			<English>Large Wall w/ Window</English>
+			<German>Große Holzwand (Fenster)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHWINDOW_DESC">
 			<English>Large wall with window constructed out of plywood and lumber.</English>
+			<German>Eine große Holzwand mit Fenster bestehend aus Sperr- und Bauholz.</German>					
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORWAY">
 			<English>Large Wall w/ Doorway</English>
+			<German>Große Holzwand (Türrahmen)</German>					
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORWAY_DESC">
 			<English>Large wall with doorway constructed out of plywood and lumber.</English>
+			<German>Eine große Holzwand mit Türdurchgang bestehend aus Sperr- und Bauholz.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOOR">
 			<English>Large Wall w/ Door</English>
+			<German>Große Holzwand (Tür)</German>					
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOOR_DESC">
 			<English>Wall with door constructed out of plywood and lumber.</English>
+			<German>Große Holzwand mit Tür bestehend aus Sperr- und Bauholz.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED">
 			<English>Large Wall w/ Door Locked</English>
+			<German>Große Holzwand (Tür verschlossen)</German>					
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED_DESC">
 			<English>Wall with combination lock door constructed out of plywood and lumber.</English>
+			<German>Große Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>					
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_ROUND">
 			<English>Sandbag Fence (Round)</English>
+			<German>Sandsack(rund)</German>					
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_NEST">
 			<English>Sandbag Nest</English>
+			<German>Sandsacknest</German>				
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21_NEST">
 			<English>A buildable fortification object, can be removed.</English>
+			<German>Eine Sandsackbefestigung, die wieder abgebaut werden kann. </German>				
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_HBARRIER">
 			<English>Sandbag Cube (H-barrier)</English>
+			<German>Sandsack (H-Barriere)</German>				
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21_HBARRIER">
 			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
+			<German>Hesco Barriere(Schanzkorb): Ein Objekt, das zum Ausbau und zur Befestigung von Basen dient.</German>				
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_3XHBARRIER">
 			<English>Sandbag Cube (3x H-barrier)</English>
+			<German>Sandsack (3x H-Barriere)</German>				
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_5XHBARRIER">
 			<English>Sandbag Cube (5x H-barrier)</English>
+			<German>Sandsack (5x H-Barriere)</German>				
 		</Key>
 		<Key ID="STR_EPOCH_ALUMINUM">
 			<English>Aluminum</English>
@@ -15678,7 +15781,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_OFFICERSUIT">
 			<English>Officer Suit</English>
-			<German>Offizier Anzug</German>			
+			<German>Offiziers Anzug</German>			
 			<Russian>Униформа офицера</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SERGEI">
@@ -15774,42 +15877,52 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITOUTFIT">
 			<English>Bandit Outfit</English>
+			<German>Banditen Kleidung</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITCAMO">
 			<English>Bandit Camo</English>
+			<German>Banditen Tarn</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITCAMO_DESC">
 			<English>Bandit Camo Outfit</English>
+			<German>Banditen Tarnkleidung</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITGUNNER">
 			<English>Bandit Gunner</English>
+			<German>Banditen Kanonier</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITGUNNER_DESC">
 			<English>Bandit Gunner Outfit</English>
+			<German>Banditen Kanonier Kleidung</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER">
 			<English>Bandit Sniper</English>
+			<German>Banditen Scharfschütze</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER_DESC">
 			<English>Bandit Sniper Outfit</English>
+			<German>Banditen Scharfschützen Kleidung</German>					
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA">
 			<English>Bandit Baklava</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA_DESC">
 			<English>Bandit Baklava Outfit</English>
+			<German>Banditen Baklava Kleidung</German>					
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITMASK">
 			<English>Bandit Mask</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITMASK_DESC">
 			<English>Bandit Mask Outfit</English>
+			<German>Banditen Kleidung mit Maske</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITHAT">
 			<English>Bandit Hat</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITHAT_DESC">
 			<English>Bandit Hat with Baklava</English>
+			<German>Banditen Kleidung mit Mütze</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITANNIE">
 			<English>Bandit Annie</English>
@@ -15969,8 +16082,8 @@
 			<Russian>Босс</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BOSS_DESC">
-			<English>Team Leader</English>
-			<Russian>Лидер группы</Russian>
+			<English>Boss</English>
+			<Russian>Босс</Russian>		
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_COOPER">
 			<English>Cooper</English>
@@ -15990,112 +16103,145 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCOFFICER">
 			<English>USMC Officer</English>
+			<German>USMC Offizier</German>			
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCSOLDIER">
 			<English>USMC Soldier</English>
+			<German>USMC Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USMCPILOT">
 			<English>USMC Pilot</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOTEAMLEADER">
 			<English>Camo Teamleader</English>
+			<German>Tarn Anführer</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMORECON">
 			<English>Camo Recon</English>
+			<German>Tarn Aufklärer</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOMARKSMAN">
 			<English>Camo Marksman</English>
+			<German>Tarn Scharfschütze</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOASSAULT">
 			<English>Camo Assault</English>
+			<German>Tarn Angriff</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUSOLDIER">
 			<English>RU Soldier</English>
+			<German>RU Soldat</German>	
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUOFFICER">
 			<English>RU Officer</English>
+			<German>RU Offizier</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCAMO">
 			<English>RU Camo</English>
+			<German>RU Tarn</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCOMMANDER">
 			<English>RU Commander</English>
+			<German>RU Kommandant</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MVDSOLDIER">
 			<English>MVD Soldier</English>
+			<German>MVD Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TERRORISTCAMO">
 			<English>Terrorist Camo</English>
+			<German>Terroristen Tarn</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_INSCOMMANDER">
 			<English>Ins Commander</English>
+			<German>Ins Kommandant</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_INSCREWMAN">
 			<English>Ins Crewman</English>
+			<German>Ins Besatzungsmitglied</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CDFSOLDIER">
 			<English>CDF Soldier</English>
+			<German>CDF Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ASSISTANT">
 			<English>Assistant</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DOCTOR">
 			<English>Doctor</English>
+			<German>Doktor</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER1">
 			<English>Worker 1</English>
+			<German>Arbeiter 1</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER2">
 			<English>Worker 2</English>
+			<German>Arbeiter 2</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER3">
 			<English>Worker 3</English>
+			<German>Arbeiter 3</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN1">
 			<English>TK Citizen 1</English>
+			<German>TK Bürger 1</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN2">
 			<English>TK Citizen 2</English>
+			<German>TK Bürger 2</German>	
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN3">
 			<English>TK Citizen 3</English>
+			<German>TK Bürger 3</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN4">
 			<English>TK Citizen 4</English>
+			<German>TK Bürger 4</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKSOLDIER">
 			<English>TK Soldier</English>
+			<German>TK Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKGUESOLDIER">
 			<English>TK GUE Soldier</English>
+			<German>TK GUE Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CZSOLDIER">
 			<English>CZ Soldier</English>
+			<German>CZ Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USSOLDIER">
 			<English>US Soldier</English>
+			<German>US Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_UNSOLDIER">
 			<English>UN Soldier</English>
+			<German>US Soldat</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_UNCOMMANDER">
 			<English>UN Commander</English>
+			<German>UN Kommandant</German>				
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GERRECON">
 			<English>GER Recon</English>
+			<German>GER Aufklärer</German>			
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFOFFICER">
 			<English>BAF Officer</English>
+			<German>BAF Offizier</German>			
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFSOLDIER">
 			<English>BAF Soldier</English>
+			<German>BAF Soldat</German>			
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_FRSAPPER">
 			<English>Camo Sapper</English>
+			<German>Tarn Pionier</German>					
 		</Key>
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
-			<German>Panzer</German>
+			<German>Panzerung</German>
 			<Italian>Blindati</Italian>
 			<Spanish>Blindado</Spanish>
 			<French>Blindé</French>
@@ -16414,7 +16560,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOT_FRIENDS">
 			<English>Plot Friends</English>
-			<German>Plot Freunde</German>
+			<German>Plot-Freunde</German>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_ROAD">
 			<English>You cannot build on a road.</English>
@@ -16430,7 +16576,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_FAIL_TOO_FAR">
 			<English>Object is placed too far away from where you started building (within %1 meters)</English>
-			<German>Das Objekt befindet sich zu weit entfernt vom Ort wo es begonnen wurde zu bauen (innerhalb %1 Meter).</German>	
+			<German>Das Objekt befindet sich zu weit entfernt vom Ort, wo es begonnen wurde zu bauen (innerhalb %1 Meter).</German>	
 		</Key>
 
 		<!-- DOOR MANAGEMENT BELOW -->
@@ -16525,13 +16671,14 @@
 		</Key>
 		<Key ID="str_fireplace_noMatches">
 			<English>You need matches to build a fireplace</English>
-			<German>Du brauchst Zündhölzer um ein Lagerfeuer zu bauen.</German>		
+			<German>Du brauchst Streichhölzer um ein Lagerfeuer zu bauen.</German>		
 		</Key>
 		<Key ID="STR_DZ_WPN_M107_NAME">
 			<English>M107</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M107_DESC">
 			<English>Anti-materiel sniper rifle, 12.7x99 mm caliber round.</English>
+			<German>Anti-materiel Scharfschützengewehr vom Kalibier 12.7x99 mm.</German>				
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME">
 			<English>20Rnd. SCAR mag.</English>
@@ -16578,9 +16725,51 @@
 			<Hungarian>Rádiós Bomba</Hungarian>
 			<Polish>Ładunki wybuchowe</Polish>
 			<Russian>Взрывчатка</Russian>
-			<German>Sprengladungen</German>
+			<German>Sprengladung</German>
 			<Czech>Nálože plastické trhaviny</Czech>
 			<Japanese>梱包爆薬</Japanese>
+		</Key>
+		<Key ID="STR_WOOD_WALL_WRECK">
+			<English>Wood Wall ruins</English>
+			<German>Holzwandtrümmer</German>
+		</Key>
+		<Key ID="STR_WOOD_FLOOR_WRECK">
+			<English>Wood Floor ruins</English>
+			<German>Holzbodentrümmer</German>
+		</Key>
+		<Key ID="STR_CINDER_WALL_WRECK">
+			<English>Cinder wall ruins</English>
+			<German>Betontrümmer</German>
+		</Key>
+		<Key ID="STR_METAL_FLOOR_WRECK">
+			<English>Metal Floor ruins</English>
+			<German>Metallbodentrümmer</German>
+		</Key>
+		<Key ID="STR_EQUIP_KNIFE_ACTION">
+			<English>Harvest Plant</English>
+			<German>Pflanze ernten</German>
+		</Key>
+		<Key ID="STR_EQUIP_TOOLBOX_ACTION_1">
+			<English>Remove Camo Net</English>
+			<German>Tarnnetz entfernen</German>
+		</Key>
+		<Key ID="STR_EQUIP_TOOLBOX_ACTION_2">
+			<English>Remove Tank Trap</English>
+			<German>Panzersperre entfernen</German>
+		</Key>		
+		<!--Namalsk compatibility-->
+		 <Key ID="STR_EQUIP_NAME_43">
+		 	<English>Winter Ghillie Suit</English>
+		 	<German>Winter-Ghillie-Anzug</German>
+		  	<Russian>Зимний маскировочный костюм</Russian>
+		 </Key>
+       		 <Key ID="STR_EQUIP_DESC_43">
+			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
+			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
+			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
+			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
+			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
+			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
 		</Key>
 	</Package>
 </Project>

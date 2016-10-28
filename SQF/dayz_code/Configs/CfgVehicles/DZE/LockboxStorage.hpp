@@ -15,7 +15,7 @@ class LockboxStorageLocked: Land_A_tent {
 };
 class LockboxStorage: Land_A_tent {
 	vehicleClass = "Survival";
-	displayName = "Lockbox";
+	displayName = $STR_EPOCH_LOCKBOX;
 	model = "\z\addons\dayz_epoch\models\lockbox.p3d";
 	destrType = "DestructNo";
 	armor = 800;
@@ -28,6 +28,6 @@ class LockboxStorage: Land_A_tent {
 
 class WeaponHolder_ItemLockbox: WeaponHolder {
 	scope = public;
-	displayName = "Lockbox";
+	displayName = $STR_EPOCH_LOCKBOX;
 	seedItem = "ItemLockbox";
 };
