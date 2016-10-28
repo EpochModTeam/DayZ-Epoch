@@ -25,10 +25,8 @@ if (_unit == player) then {
 		publicVariableServer "PVDZ_Server_LogIt";
 
 		localize "str_actions_exitBlocked" call dayz_rollingMessages;
-
 	};
-	
-	
+
 	//Lets make sure we can process some dmg from ejecting from the vehicle even traveling at lower speeds.
 	if (((speed _vehicle) > 15) or ((speed _vehicle) < -10)) then {
 		dayz_getout = _vehicle;
@@ -36,4 +34,4 @@ if (_unit == player) then {
 	};
 };
 
-diag_log format["%1(%4) - %2 - %3",_vehicle,_position,_unit,(speed _vehicle)];
+//diag_log format["%1(%4) - %2 - %3",_vehicle,_position,_unit,(speed _vehicle)];
