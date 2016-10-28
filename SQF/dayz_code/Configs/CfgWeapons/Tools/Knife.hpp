@@ -9,7 +9,7 @@ class ItemKnife_Base : ItemCore
 	{
 		class Use
 		{
-			text="Harvest Plant";
+			text= $STR_EQUIP_KNIFE_ACTION;
 			script="spawn player_harvestPlant;";
 		};
 	};
