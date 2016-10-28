@@ -15382,7 +15382,7 @@
 			<English>Wooden stairs with supports.</English>
 			<German>Holztreppe mit verstärkten Balken.</German>	
 		</Key>
-		<Key ID="$STR_EPOCH_WOODSTAIRSRAILS">
+		<Key ID="STR_EPOCH_WOODSTAIRSRAILS">
 			<English>Wood Stairs Rail</English>
 			<German>Holztreppe mit Geländer</German>			
 		</Key>
