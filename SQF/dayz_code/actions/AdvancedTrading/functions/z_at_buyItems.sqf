@@ -1,4 +1,4 @@
-private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keyColor","_keyNumber","_keySelected","_location","_moneyInfo","_myMoney","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy"];
+private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keyColor","_keyNumber","_keySelected","_location","_moneyInfo","_wealth","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
@@ -42,11 +42,11 @@ if (Z_SingleCurrency) then {
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
 		};
 		if (_x select 1 == "trade_backpacks") then {
-			_backpacksToBuy = _backpacksToBuy + (_x select 9) ;
+			_backpacksToBuy = _backpacksToBuy + (_x select 9);
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
 		};
 		if ((_x select 1) in DZE_tradeVehicle) then {
-			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
+			_vehiclesToBuy = _vehiclesToBuy + (_x select 9);
 			_priceToBuy	= _priceToBuy + ((_x select 9)*(_x select 2));
 		};
 		_itemsToLog set [0, (_itemsToLog select 0) + [_x select 0]];
@@ -80,11 +80,11 @@ if (Z_SingleCurrency) then {
 			_priceToBuy	= _priceToBuy + ((_x select 11) *(_x select 2)*(_x select 9));
 		};
 		if (_x select 1 == "trade_backpacks") then {
-			_backpacksToBuy = _backpacksToBuy + (_x select 9) ;
+			_backpacksToBuy = _backpacksToBuy + (_x select 9);
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
 		};
 		if ((_x select 1) in DZE_tradeVehicle) then {
-			_vehiclesToBuy = _vehiclesToBuy + (_x select 9) ;
+			_vehiclesToBuy = _vehiclesToBuy + (_x select 9);
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
 		};
 		_itemsToLog set [0, (_itemsToLog select 0) + [_x select 0]];
@@ -96,18 +96,14 @@ if (Z_SingleCurrency) then {
 _canBuy = [_weaponsToBuy,[_pistolMagsToBuy,_regularMagsToBuy],_backpacksToBuy,_toolsToBuy,_sidearmToBuy,_primaryToBuy,_vehiclesToBuy,_toolClasses,_toolAmounts] call Z_allowBuying;
 if (!_canBuy) exitWith {}; // Keep systemChat reasons for failure in Z_allowBuying for sanity
 
-_myMoney = player getVariable[Z_MoneyVariable,0];
+_wealth = player getVariable[Z_MoneyVariable,0];
 
 _enoughMoney = false;
 
 _moneyInfo = [false, [], [], [], 0];
 
 if (Z_SingleCurrency) then {
-	if (_myMoney >= _priceToBuy) then {
-		_enoughMoney = true;
-	} else {
-		_enoughMoney = false;
-	};
+	_enoughMoney = if (_wealth >= _priceToBuy) then { true } else { false };
 } else {
 	_moneyInfo = _priceToBuy call Z_canAfford;
 	_enoughMoney = _moneyInfo select 0;
@@ -157,7 +153,6 @@ if (_enoughMoney) then {
 		publicVariableServer  "PVDZE_veh_Publish2";
 		_keySelected;
 	};
-	//systemChat localize "STR_EPOCH_PLAYER_105"; // "Stand still to complete trade". Medic animation loop no longer used.
 
 	closeDialog 2;
 	_item2Add = "0";
@@ -189,26 +184,26 @@ if (_enoughMoney) then {
 	if (Z_SellingFrom == 1) then { //vehicle
 		{
 			if (_x select 1 == "trade_weapons") then {
-				Z_vehicle addWeaponCargoGlobal [_x select 0, _x select 9];
+				DZE_myVehicle addWeaponCargoGlobal [_x select 0, _x select 9];
 			};
 			if (_x select 1 == "trade_items") then {
-				Z_vehicle addMagazineCargoGlobal [_x select 0, _x select 9];
+				DZE_myVehicle addMagazineCargoGlobal [_x select 0, _x select 9];
 			};
 			if (_x select 1 == "trade_backpacks") then {
-				Z_vehicle addBackpackCargoGlobal [_x select 0, _x select 9];
+				DZE_myVehicle addBackpackCargoGlobal [_x select 0, _x select 9];
 			};
 			if ((_x select 1) in DZE_tradeVehicle) then {
 				_item2Add = [(_x select 0), (_x select 1)] call _buyVehicle;
 				if (_item2Add != "0") then {
-					Z_vehicle addWeaponCargoGlobal [_item2Add, 1];
+					DZE_myVehicle addWeaponCargoGlobal [_item2Add, 1];
 				};
 			};
 			_bTotal = _bTotal + (_x select 9);
 		} count Z_BuyingArray;
 		if (_item2Add != "0") then {
-			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_VEHICLE",(Z_BuyingArray select 0) select 3,typeOf (Z_vehicle)];
+			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_VEHICLE",(Z_BuyingArray select 0) select 3,typeOf (DZE_myVehicle)];
 		} else {
-			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_VEHICLE",_bTotal,typeOf Z_vehicle];
+			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_VEHICLE",_bTotal,typeOf DZE_myVehicle];
 		};
 	};
 
@@ -217,7 +212,7 @@ if (_enoughMoney) then {
 			if (_x select 1 == "trade_weapons") then {
 				_count = 0;
 				while {_count < (_x select 9)} do {
-					_hasPrimary = if (primaryWeapon player != "") then {true} else {false};				
+					_hasPrimary = if (primaryWeapon player != "") then {true} else {false};
 					if (_hasPrimary && getNumber (configFile >> "CfgWeapons" >> (_x select 0) >> "type") == 1) then {
 						dayz_onBack = _x select 0; //Add to back
 					} else {
@@ -250,29 +245,29 @@ if (_enoughMoney) then {
 			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_GEAR",_bTotal];
 		};
 	};
-	if (!Z_SingleCurrency) then {
-		_success = [player,_priceToBuy,_moneyInfo,false,0] call Z_payDefault;
-		if (_success) then {
+
+	_success = if (Z_SingleCurrency) then {_priceToBuy <= _wealth} else {[player,_priceToBuy,_moneyInfo,false,0] call Z_payDefault};
+
+	if (_success) then {
+		if (Z_SingleCurrency) then {
+			player setVariable[Z_MoneyVariable,(_wealth - _priceToBuy),true];
+			systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_COINS",[_priceToBuy] call BIS_fnc_numberText,CurrencyName];
+		} else {
 			_tCost = "";
 			_tCost = _priceToBuy call z_calcDefaultCurrencyNoImg;
 			if (_tCost != "") then { systemChat format[localize "STR_EPOCH_TRADE_BUY_SUCCESS",_tCost]; };
-		} else {
-			systemChat localize "STR_EPOCH_TRADE_DEBUG";
 		};
 	} else {
-		_success = [player,_priceToBuy] call SC_fnc_removeCoins;
-		if (_success) then {
-			systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_COINS",[_priceToBuy] call BIS_fnc_numberText,CurrencyName];
-		} else {
-			systemChat localize "STR_EPOCH_TRADE_DEBUG";
-		};
+		systemChat localize "STR_EPOCH_TRADE_DEBUG";
 	};
+
 	_itemsToLog call Z_logTrade;
 	call player_forceSave;
 	if (Z_SellingFrom == 1) then {
-		PVDZ_veh_Save = [Z_vehicle,"gear"];
+		PVDZ_veh_Save = [DZE_myVehicle,"gear"];
 		publicVariableServer "PVDZ_veh_Save";
 	};
+
 } else {
 	if (Z_SingleCurrency) then {
 		systemChat format[localize "STR_EPOCH_TRADE_NEED_COINS",[_priceToBuy] call BIS_fnc_numberText,CurrencyName];

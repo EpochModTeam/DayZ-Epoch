@@ -105,8 +105,8 @@ if (_selection == 2) then { //gear
 };
 
 if (_selection == 1) then { //vehicle
-	if (!isNull Z_vehicle) then {
-		_freeSpace = [Z_vehicle,0,0,0,0] call Z_calcFreeSpace;
+	if (!isNull DZE_myVehicle) then {
+		_freeSpace = [DZE_myVehicle,0,0,0,0] call Z_calcFreeSpace;
 		_allowedMags = _freeSpace select 1;
 		_allowedWeapons = _freeSpace select 2;
 		_allowedBackpacks = _freeSpace select 3;

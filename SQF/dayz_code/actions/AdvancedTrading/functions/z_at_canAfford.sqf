@@ -58,8 +58,8 @@ if (Z_AllowTakingMoneyFromBackpack) then {
 };
 
 if (Z_AllowTakingMoneyFromVehicle) then {
-	if (!isNull Z_vehicle) then {
-		_mags = getMagazineCargo Z_vehicle;
+	if (!isNull DZE_myVehicle) then {
+		_mags = getMagazineCargo DZE_myVehicle;
 		_vehicleMoney = [];
 		_kinds = _mags select 0;
 		_amounts = _mags select 1;

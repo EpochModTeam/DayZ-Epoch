@@ -15241,15 +15241,15 @@
 			<German>Preis zum Instandsetzen von %1 Objekten: %2 %3</German>				
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS"> 
-			<English>Success! %1 objects maintained for %2 %3.</English>
+			<English>Success! %1 objects maintained for %2 %3</English>
 			<German>Du hast %1 Objekte erfolgreich instandgesetzt für %2 %3.</German>					
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE"> 
-			<English>Price to force maintain %1 objects: %2 %3.</English>
+			<English>Price to force maintain %1 objects: %2 %3</English>
 			<German>Instandsetzen erzwingen: Preis für %1 Objekten: %2 %3</German>					
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED"> 
-			<English>Failed to maintain %1 objects. You need %2 %3.</English>
+			<English>Failed to maintain %1 objects. You need %2 %3</English>
 			<German>Instandsetzen von %1 Objekten fehlgeschlagen. Du brauchst %2 %3</German>				
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">

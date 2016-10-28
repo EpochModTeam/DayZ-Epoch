@@ -20,8 +20,8 @@ if (!_justChecking) then {
 	if (count _moneyInBackpack > 0) then {
 		_nil = [unitBackpack _player, _moneyInBackpack, [], []] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 	};
-	if (!isNull Z_vehicle && count _moneyInVehicle > 0) then {
-		_nil = [Z_vehicle, _moneyInVehicle, [], []] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
+	if (!isNull DZE_myVehicle && count _moneyInVehicle > 0) then {
+		_nil = [DZE_myVehicle, _moneyInVehicle, [], []] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
 	};
 };
 
