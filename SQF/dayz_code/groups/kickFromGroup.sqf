@@ -9,7 +9,7 @@ if (isNull _target or _target == player or player != leader group player) exitWi
 
 [_target] join grpNull;
 
-PVDZ_Server_UpdateGroup = [2,player,_targetUID];
+PVDZ_Server_UpdateGroup = [2,player,(group player),_targetUID];
 publicVariableServer "PVDZ_Server_UpdateGroup";
 
 call dayz_selectGroupMember; //update lbCurSel change

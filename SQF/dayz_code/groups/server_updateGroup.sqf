@@ -1,8 +1,9 @@
-private ["_event","_groupUIDs","_key","_newGroup","_player","_playerUID","_targetUID"];
+private ["_event","_group","_groupUIDs","_key","_newGroup","_player","_playerUID","_targetUID"];
 
 _event = _this select 0;
 _player = _this select 1;
-_targetUID = if (count _this > 2) then {_this select 2} else {"0"};
+_group = _this select 2;
+_targetUID = if (count _this > 3) then {_this select 3} else {"0"};
 _playerUID = getPlayerUID _player;
 
 _groupUIDs = [];
@@ -10,7 +11,7 @@ _groupUIDs = [];
 	if (alive _x && isPlayer _x) then {
 		_groupUIDs set [count _groupUIDs,getPlayerUID _x];
 	};
-} count (units group _player);
+} count (units _group);
 
 _newGroup = [];
 _newGroup = switch _event do {

@@ -4,7 +4,7 @@ _group = group player;
 if (count (units _group) == 1 or (!isNil "dayz_groupDisbandThread" && {!scriptDone dayz_groupDisbandThread})) exitWith {};
 
 dayz_groupDisbanded = nil;
-PVDZ_Server_UpdateGroup = [4,player];
+PVDZ_Server_UpdateGroup = [4,player,_group];
 publicVariableServer "PVDZ_Server_UpdateGroup";
 
 dayz_groupDisbandThread = _group spawn {

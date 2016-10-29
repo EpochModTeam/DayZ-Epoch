@@ -103,8 +103,7 @@ if (isServer) then {
 	"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) spawn server_handleSafeGear};
 	"PVDZE_fullobj_Publish"	addPublicVariableEventHandler {(_this select 1) call server_publishFullObject}; // PlotForLife take base ownership
 	if (dayz_groupSystem) then {
-		//Use spawn instead of call because small delay is needed for group changes to propagate to server
-		"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) spawn server_updateGroup};
+		"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) call server_updateGroup};
 	};
 
 	//Added as part of the maintenance system to allow the server to replace the damaged model with a normal model.
