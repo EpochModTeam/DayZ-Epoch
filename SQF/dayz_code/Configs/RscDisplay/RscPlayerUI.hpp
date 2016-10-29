@@ -357,6 +357,40 @@ class RscTitles
 			};
 		};
 	};
+	class DZ_BlackScreen {
+		idd = -1;
+		movingEnable = 0;
+		enableSimulation = 1;
+		enableDisplay = 1;
+		onLoad = "uiNamespace setVariable ['DZ_BlackScreen', _this select 0];";
+		duration = 99999999999999999;
+		fadein = 0;
+		fadeout = 0;
+		
+		class controls {
+			class Background: RscText {
+				idc = -1;
+				x = safezoneX;
+				y = safezoneY;
+				w = safezoneW;
+				h = safezoneH;
+				text = "";
+				colorText[] = {0,0,0,0};
+				colorBackground[] = {0,0,0,1};
+			};
+			class Text: RscText {
+				idc = 1;
+				x = 0.3 * safezoneW + safezoneX;
+				y = 0.859137 * safezoneH + safezoneY;
+				w = 0.400445 * safezoneW;
+				h = 0.139148 * safezoneH;
+				text = "";
+				style = 0x02 + 0x10 + 0x200;
+				lineSpacing = 1;
+				sizeEx = 0.034;
+			};
+		};
+	};
 	
 	class playerStatusGUI_epoch {
 		idd = 690000;

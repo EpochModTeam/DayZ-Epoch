@@ -7784,6 +7784,9 @@
 			<English>Please change your controls. HoldBreath holds too many keys and has been blocked.</English>
 			<German>Bitte ändere deine Steuerung. "Luft anhalten" liegt auf mehr als einer Taste und wurde blockiert.</German>
 		</Key>
+		<Key ID="STR_UI_HOLD_TURBO">
+			<English>Please change your controls. Turbo holds too many keys and has been blocked.</English>
+		</Key>
 		<Key ID="STR_UI_STREAMER_MODE">
 			<English>Streamer mode:</English>
 			<German>Streamer Modus:</German>			

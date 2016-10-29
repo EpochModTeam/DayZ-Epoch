@@ -41,7 +41,7 @@ class RscDisplayMission: RscDisplayEmpty
 	onKeyDown = "if (!isNil 'DZ_KeyDown_EH') then {_this call DZ_KeyDown_EH;};"; //assigned much quicker than spawning init_keyboard
 };
 class RscDisplayConfigure {
-	onUnload = "if (!isNil 'keyboard_keys') then {keyboard_keys = nil; [controlNull,1,false,false,false] call DZ_KeyDown_EH;};"; //refresh keyboard_keys after changing binds
+	onUnload = "if (!isNil 'updateControlsHandle') then {terminate updateControlsHandle;}; if (!isNil 'ui_updateControls') then {updateControlsHandle = true spawn ui_updateControls;};";
 	class controlsBackground;
 	class controls;
 };
