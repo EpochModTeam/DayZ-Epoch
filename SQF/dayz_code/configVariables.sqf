@@ -42,6 +42,7 @@ DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if t
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
+DZE_removeBackpack = false; //Force the player to remove their backpack before changing skin.
 
 // Trader Menu
 DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic. False enables database traders with legacy trader menu.
@@ -64,6 +65,7 @@ DZE_plotManagementMustBeClose = true; //Players must be within 10m of pole to be
 DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs enclosed in quotations, UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby
 DZE_MaxPlotFriends = 6; //Maximum number of friends allowed on a plot pole.
 DZE_PlotOwnership = true; //allows plot owner to take ownership of buildables (excluding lockable items) near a plot pole. Useful for servers that allow base capturing so the new owner can modify/delete/upgrade existing structures
+DZE_maintainCurrencyRate = 100; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see actions/maintain_area.sqf for more examples.
 
 // Snap Build and Build Vectors
 DZE_modularBuild = true; // Enable Snap Building by @raymix and Build Vectors by @strikerforce.

@@ -178,11 +178,11 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 if (gear_done) then {disableUserInput false;disableUserInput false;disableUserInput false;disableUserInput false;};
 
 //Debug Message
-diag_log "Swichtable Unit Created. Equipment:";
-diag_log format["Weapons: %1",weapons _newUnit];
-diag_log format["Magazines: %1",magazines _newUnit];
-diag_log format["Backpack weapons: %1",getWeaponCargo unitBackpack _newUnit];
-diag_log format["Backpack magazines: %1",getMagazineCargo unitBackpack _newUnit];
+//diag_log "Swichtable Unit Created. Equipment:";
+//diag_log format["Weapons: %1",weapons _newUnit];
+//diag_log format["Magazines: %1",magazines _newUnit];
+//diag_log format["Backpack weapons: %1",getWeaponCargo unitBackpack _newUnit];
+//diag_log format["Backpack magazines: %1",getMagazineCargo unitBackpack _newUnit];
 
 //Clear and delete old Unit
 removeAllWeapons _oldUnit;

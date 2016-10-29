@@ -45,7 +45,7 @@ if (_classname isKindOf "Bag_Base_EP1") exitWith {
 	_PlayerNear = {isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 10]) > 1;
 	if (_PlayerNear) exitWith {localize "str_pickup_limit_4" call dayz_rollingMessages;};
 
-	diag_log("Picked up a bag: " + _classname);
+	//diag_log("Picked up a bag: " + _classname);
 	
 	_hasBag = unitBackpack player;
 

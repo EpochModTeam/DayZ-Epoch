@@ -25,7 +25,7 @@ class RscHTML;
 class RscDisplayEmpty;
 
 #include "CfgPlayerStats\defines.hpp"
-#include "CfgPlayerStats\p__cover.hpp"
+#include "CfgPlayerStats\p_cover.hpp"
 #include "CfgPlayerStats\p_journal_humanity.hpp"
 #include "CfgPlayerStats\p_humanity_art.hpp"
 #include "CfgPlayerStats\p_zombies_killed.hpp"
