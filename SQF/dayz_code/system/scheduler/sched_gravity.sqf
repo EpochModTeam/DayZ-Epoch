@@ -10,7 +10,7 @@ sched_gravity = {
 
 	if ((!(_this select 5) and !isNil 'Dayz_loginCompleted') and {(Dayz_loginCompleted)}) then {
 		_this = [ time, VisiblePositionASL player, time, VisiblePositionASL player, false, true];
-		diag_log [ diag_tickTime, __FILE__, "freefall inited" ];
+		//diag_log [ diag_tickTime, __FILE__, "freefall inited" ];
 	};
 
 	_otime = _this select 0; 
@@ -35,7 +35,7 @@ sched_gravity = {
 		}
 		else {
 			if (_inprogress) then {
-				diag_log [ diag_tickTime, __FILE__, "freefall reset, final freefall height is dh:", (_offpos select 2) - (_ppos select 2), "dt:", _time - _offtime, "gravity:",2*((_offpos select 2) - (_ppos select 2))/((_time - _offtime)^2) ,"m.s^-2" ];
+				//diag_log [ diag_tickTime, __FILE__, "freefall reset, final freefall height is dh:", (_offpos select 2) - (_ppos select 2), "dt:", _time - _offtime, "gravity:",2*((_offpos select 2) - (_ppos select 2))/((_time - _offtime)^2) ,"m.s^-2" ];
 				Dayz_freefall = [ _fftime, 0 max ((_offpos select 2) - (_ppos select 2)), _time - _offtime ];
 			}
 			else {
