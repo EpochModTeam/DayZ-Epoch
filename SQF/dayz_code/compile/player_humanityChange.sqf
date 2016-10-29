@@ -4,6 +4,7 @@ _wait = _this select 1;
 
 _humanity = (player getVariable["humanity",0]) + _change;
 player setVariable["humanity",_humanity,true];
+
 if (_change < 0) then { //non-bandit player can be "punished" in next "_wait" seconds w/o loosing humanity
 	if ((_humanity > -2000) and (_wait > 0)) then {
 //			player setVariable ["freeTarget",true,true];
