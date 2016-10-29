@@ -1,4 +1,9 @@
-private ["_inviter","_inviterUID","_oldGroup","_uid"];
+private ["_display","_inviter","_inviteText","_inviterUID","_oldGroup","_rejectButton","_uid"];
+
+_display = findDisplay 80000;
+_rejectButton = _display displayCtrl 8;
+_inviteText = _display displayCtrl 9;
+{_x ctrlShow false} count [_inviteText,_rejectButton];
 
 _inviterUID = "0";
 _uid = getPlayerUID player;
@@ -22,13 +27,10 @@ if (!isNull _inviter) then {
 	_oldGroup = group player;
 	[player] join (group _inviter);
 	if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
-	[] spawn {
-		uiSleep 1; //Required for group change to update on server
-		// Update saved group in DB
-		PVDZ_Server_UpdateGroup = [1,player];
-		publicVariableServer "PVDZ_Server_UpdateGroup";
-	};
+
+	// Update saved group in DB
+	PVDZ_Server_UpdateGroup = [1,player];
+	publicVariableServer "PVDZ_Server_UpdateGroup";
 } else {
-	_this ctrlShow false;
 	systemChat localize "STR_EPOCH_INVITE_EXPIRED";
 };

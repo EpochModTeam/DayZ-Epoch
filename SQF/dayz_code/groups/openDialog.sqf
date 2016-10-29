@@ -32,8 +32,10 @@ while {!isNull findDisplay 80000} do {
 	lbSort _myGroup;
 	
     if (lbSize _myGroup > 1) then {
-		_leaveButton ctrlShow true;
-        if (player == _leader) then {_disbandButton ctrlShow true};
+		if (isNil "dayz_groupLeaveThread" or {scriptDone dayz_groupLeaveThread}) then {_leaveButton ctrlShow true;};
+		if (player == _leader && (isNil "dayz_groupDisbandThread" or {scriptDone dayz_groupDisbandThread})) then {
+			_disbandButton ctrlShow true;
+		};
     } else {
 		{_x ctrlShow false} count [_disbandButton,_leaveButton,_kickButton,_promoteButton];
     };

@@ -1,5 +1,5 @@
 // Two second loop
-private ["_count","_group","_hasGPS","_index","_marker","_markBody","_markGroup","_markSelf","_pos","_self","_vehicle"];
+private ["_count","_found","_group","_hasGPS","_index","_marker","_markBody","_markGroup","_markSelf","_pos","_self","_vehicle"];
 
 _group = player call dayz_filterGroup;
 
@@ -20,9 +20,8 @@ if (visibleMap or !isNull findDisplay 88890) then {
 	{
 		_self = _x == player;
 		_vehicle = vehicle _x;
-		if ((_self or _markGroup) && (!_self or _markSelf) && (driver _vehicle == _x)) then {
-			_pos = getPosATL _x;
-			if (surfaceIsWater _pos) then {_pos = getPosASL _x;};
+		if ((_self or _markGroup) && (!_self or _markSelf) && (effectiveCommander _vehicle == _x)) then {
+			_pos = [_x] call FNC_GetPos;
 			deleteMarkerLocal format["groupMember%1",_index];
 			_marker = createMarkerLocal [format["groupMember%1",_index],_pos];
 			_marker setMarkerTypeLocal "DestroyedVehicle";
@@ -42,15 +41,20 @@ if (visibleMap or !isNull findDisplay 88890) then {
 	dayz_oldMemberCount = _count;
 	
 	if (_markBody) then {
+		_found = false;
 		{
-			if (_x getVariable["bodyName",""] == name player) then {
+			//Only mark closest body to player's current position (allDead is sorted by distance)
+			if (_x getVariable["bodyName",""] == name player) exitWith {
+				_found = true;
+				_pos = [_x] call FNC_GetPos;
 				deleteMarkerLocal "MyBody";
-				_marker = createMarkerLocal ["MyBody",getPosATL _x];
+				_marker = createMarkerLocal ["MyBody",_pos];
 				_marker setMarkerTypeLocal "DestroyedVehicle";
 				_marker setMarkerTextLocal localize "STR_EPOCH_RIP";
 				_marker setMarkerColorLocal "ColorRed";
 			};
 		} count allDead;
+		if (!_found) then {deleteMarkerLocal "MyBody";}; //Body was deleted or hidden
 	} else {
 		deleteMarkerLocal "MyBody";
 	};

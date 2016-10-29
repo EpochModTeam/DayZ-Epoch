@@ -160,7 +160,7 @@ class DZ_GroupDialog {
 	class controls {
 		class Players: DZ_GroupListBox {
 			idc = 1;
-			onLBSelChanged = "(_this select 0) call dayz_selectPlayer;";
+			onLBSelChanged = "call dayz_selectPlayer;";
 			x = .04;
 			y = .21;
 			w = .235;
@@ -168,7 +168,7 @@ class DZ_GroupDialog {
 		};
 		class MyGroup: DZ_GroupListBox {
 			idc = 2;
-			onLBSelChanged = "(_this select 0) call dayz_selectGroupMember;";
+			onLBSelChanged = "call dayz_selectGroupMember;";
 			x = .5;
 			y = .21;
 			w = .235;
@@ -184,43 +184,43 @@ class DZ_GroupDialog {
 		class Invite: DZ_GroupButton {
 			idc = 3;
 			text = $STR_EPOCH_INVITE;
-			onButtonClick = "(_this select 0) call dayz_inviteToGroup;";
+			onButtonClick = "(_this select 0) ctrlShow false; call dayz_inviteToGroup;";
 			y = .184;
 		};
 		class Kick: DZ_GroupButton {
 			idc = 4;
 			text = $STR_EPOCH_KICK;
-			onButtonClick = "(_this select 0) call dayz_kickFromGroup;";
+			onButtonClick = "(_this select 0) ctrlShow false; call dayz_kickFromGroup;";
 			y = .239;
 		};
 		class Disband: DZ_GroupButton {
 			idc = 5;
 			text = $STR_EPOCH_DISBAND;
-			onButtonClick = "(_this select 0) call dayz_disbandGroup;";
+			onButtonClick = "(_this select 0) ctrlShow false; call dayz_disbandGroup;";
 			y = .349;
 		};
 		class Promote: DZ_GroupButton {
 			idc = 10;
 			text = $STR_EPOCH_PROMOTE;
-			onButtonClick = "(_this select 0) call dayz_promotePlayer;";
+			onButtonClick = "(_this select 0) ctrlShow false; call dayz_promotePlayer;";
 			y = .294;
 		};
 		class Leave: DZ_GroupButton {
 			idc = 6;
 			text = $STR_EPOCH_LEAVE;
-			onButtonClick = "(_this select 0) call dayz_leaveGroup;";
+			onButtonClick = "(_this select 0) ctrlShow false; call dayz_leaveGroup;";
 			y = .405;
 		};
 		class Accept: DZ_GroupButton {
 			idc = 7;
 			text = $STR_EPOCH_ACCEPT;
-			onButtonClick = "(_this select 0) call dayz_joinGroup;";
+			onButtonClick = "(_this select 0) ctrlShow false; call dayz_joinGroup;";
 			y = .5265;
 		};
 		class Reject: DZ_GroupButton {
 			idc = 8;
 			text = $STR_EPOCH_REJECT;
-			onButtonClick = "(_this select 0) call dayz_rejectGroup;";
+			onButtonClick = "(_this select 0) ctrlShow false; call dayz_rejectGroup;";
 			y = .5765;
 		};
 	};

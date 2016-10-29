@@ -8,8 +8,7 @@ if (!visibleMap && count _group > 1 && cameraView in ["INTERNAL","EXTERNAL","GUN
 	_display = uiNamespace getVariable "DZ_GroupIcons";
 	_index = 0;
 	{
-		_pos = getPosATL _x;
-		if (surfaceIsWater _pos) then {_pos = getPosASL _x;};
+		_pos = [_x] call FNC_GetPos;
 		_distance = _pos distance player;
 		_icon = _display displayCtrl (100 + _index);
 		if (_distance > 1 && _distance < 2500) then {

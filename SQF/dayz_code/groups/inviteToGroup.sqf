@@ -5,9 +5,7 @@ _playerList = findDisplay 80000 displayCtrl 1;
 _uid = _playerList lbData (lbCurSel _playerList);
 _recipient = _uid call dayz_getPlayer;
 
-if (isNull _recipient or player != leader group player or count (units group _recipient) > 1) exitWith {
-	_this ctrlShow false;
-};
+if (isNull _recipient or player != leader group player or count (units group _recipient) > 1) exitWith {};
 
 _hasInvite = false;
 {

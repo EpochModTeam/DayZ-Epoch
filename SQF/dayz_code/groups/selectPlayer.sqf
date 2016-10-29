@@ -1,8 +1,9 @@
-private ["_inviteButton","_playerList","_target","_uid"];
+private ["_display","_inviteButton","_playerList","_target","_uid"];
 
 disableSerialization;
-_playerList = _this;
-_inviteButton = findDisplay 80000 displayCtrl 3;
+_display = findDisplay 80000;
+_playerList = _display displayCtrl 1;
+_inviteButton = _display displayCtrl 3;
 _uid = _playerList lbData (lbCurSel _playerList);
 _target = _uid call dayz_getPlayer;
 
