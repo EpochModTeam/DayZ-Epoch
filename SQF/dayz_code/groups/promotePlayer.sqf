@@ -11,13 +11,9 @@ _group = group player;
 _target = _uid call dayz_getPlayer;
 
 if (player == leader _group && {!isNull _target} && {_target != player}) then {
-	if (local _group) then {
-		_group selectLeader _target; //group must be local
-		_promoteButton ctrlShow false;
-		_disbandButton ctrlShow false;
-	} else {
-		systemChat "Failed: Group must be local to do this";
-	};
+	_group selectLeader _target;
+	_promoteButton ctrlShow false;
+	_disbandButton ctrlShow false;
 } else {
 	_promoteButton ctrlShow false;
 };

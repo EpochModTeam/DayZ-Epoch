@@ -35,7 +35,7 @@ while {!isNull findDisplay 80000} do {
 		_leaveButton ctrlShow true;
         if (player == _leader) then {_disbandButton ctrlShow true};
     } else {
-		{_x ctrlShow false} count [_disbandButton,_leaveButton];
+		{_x ctrlShow false} count [_disbandButton,_leaveButton,_kickButton,_promoteButton];
     };
     
 	_hasInvite = false;

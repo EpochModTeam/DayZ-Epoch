@@ -710,5 +710,5 @@ if (!isDedicated) then {
 	DZE_Quarantine = false;
 	DZE_InRadiationZone = false;
 	DZE_myVehicle = objNull;
-	dayz_groupNameTags = false;
+	dayz_groupNameTags = true;
 };

@@ -13,3 +13,5 @@ if (isNull _target or _target == player or player != leader group player) exitWi
 
 PVDZ_Server_UpdateGroup = [2,player,_targetUID];
 publicVariableServer "PVDZ_Server_UpdateGroup";
+
+_myGroup call dayz_selectGroupMember; //update lbCurSel change
