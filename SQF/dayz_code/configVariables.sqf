@@ -42,7 +42,6 @@ DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if t
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
-DZE_removeBackpack = false; //Force the player to remove their backpack before changing skin.
 
 // Trader Menu
 DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic. False enables database traders with legacy trader menu.

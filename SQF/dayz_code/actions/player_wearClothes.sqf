@@ -23,9 +23,8 @@ _text = getText (_config >> _item >> "displayName");
 
 if (!_hasclothesitem) exitWith {format[localize "str_player_31",_text,localize "str_player_31_wear"] call dayz_rollingMessages; dayz_actionInProgress = false;};
 
-if (DZE_removeBackpack && {!isNull (unitBackpack player)}) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_9" call dayz_rollingMessages;};
-
 if (vehicle player != player) exitWith {localize "str_player_fail_wear1" call dayz_rollingMessages; dayz_actionInProgress = false;};
+if (!isNull (unitBackpack player)) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_9" call dayz_rollingMessages;};
 if ("CSGAS" in (magazines player)) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_10" call dayz_rollingMessages;};
 
 _myModel = (typeOf player);
