@@ -134,7 +134,7 @@ if (_inVehicle) then {
 			_text = getText (configFile >> "CfgVehicles" >> (typeOf DZE_myVehicle) >> "displayName");
 			if (locked DZE_myVehicle) then {
 				if (_hasKey || _oldOwner) then {
-					_unlock = DZE_myVehicle addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",[DZE_myVehicle,(_temp_keys_names select (parseNumber _vehicleOwnerID))], 2, true, true];
+					_unlock = DZE_myVehicle addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",[DZE_myVehicle,(_temp_keys_names select (parseNumber _vehicleOwnerID))], 2, false, true];
 					s_player_lockUnlockInside set [count s_player_lockUnlockInside,_unlock];
 					s_player_lockUnlockInside_ctrl = 1;
 				} else {
@@ -148,7 +148,7 @@ if (_inVehicle) then {
 				};
 			} else {
 				if (_hasKey || _oldOwner) then {
-					_lock = DZE_myVehicle addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\lock_veh.sqf",DZE_myVehicle, 1, true, true];
+					_lock = DZE_myVehicle addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\lock_veh.sqf",DZE_myVehicle, 1, false, true];
 					s_player_lockUnlockInside set [count s_player_lockUnlockInside,_lock];
 					s_player_lockUnlockInside_ctrl = 1;
 				};
