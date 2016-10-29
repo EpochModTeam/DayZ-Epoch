@@ -107,6 +107,9 @@ if (_startMaintenance) then {
 		PVDZ_object_replace = [_cursorTarget];
 		publicVariableServer "PVDZ_object_replace";
 	};
+	
+	_cursorTarget setVariable["Maintenance",true,true];
+	
 	localize "str_maintenanceDone" call dayz_rollingMessages;
 };
 
