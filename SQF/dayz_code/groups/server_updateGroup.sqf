@@ -5,6 +5,11 @@ _player = _this select 1;
 _targetUID = if (count _this > 2) then {_this select 2} else {"0"};
 _playerUID = getPlayerUID _player;
 
+if (_event < 3) then {
+	//Small delay needed for group changes to propagate to server
+	uiSleep 1;
+};
+
 _groupUIDs = [];
 {
 	if (alive _x && isPlayer _x) then {

@@ -4,7 +4,7 @@ private ["_count","_found","_group","_hasGPS","_index","_marker","_markBody","_m
 _group = player call dayz_filterGroup;
 
 if (dayz_requireRadio && {count _group > 1} && {!("ItemRadio" in items player)}) exitWith {
-	[player] join grpNull;
+	[player] joinSilent grpNull;
 	_group = [];
 	if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
 	localize "STR_EPOCH_RADIO_CONTACT_LOST" call dayz_rollingMessages;
@@ -43,7 +43,6 @@ if (visibleMap or !isNull findDisplay 88890) then {
 	if (_markBody) then {
 		_found = false;
 		{
-			//Only mark closest body to player's current position (allDead is sorted by distance)
 			if (_x getVariable["bodyName",""] == name player) exitWith {
 				_found = true;
 				_pos = [_x] call FNC_GetPos;

@@ -11,6 +11,6 @@ dayz_groupDisbandThread = _group spawn {
 	//Wait for response from server to confirm group finished updating in DB
 	waitUntil {!isNil "dayz_groupDisbanded"};
 	
-	{[_x] join grpNull} count (units _this);
+	{[_x] joinSilent grpNull} count (units _this);
 	deleteGroup _this;
 };

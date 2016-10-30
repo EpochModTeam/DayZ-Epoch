@@ -7,7 +7,7 @@ _target = _targetUID call dayz_getPlayer;
 
 if (isNull _target or _target == player or player != leader group player) exitWith {};
 
-[_target] join grpNull;
+[_target] joinSilent grpNull;
 
 PVDZ_Server_UpdateGroup = [2,player,_targetUID];
 publicVariableServer "PVDZ_Server_UpdateGroup";

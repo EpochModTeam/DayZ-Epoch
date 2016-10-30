@@ -25,7 +25,7 @@ _inviter = _inviterUID call dayz_getPlayer;
 
 if (!isNull _inviter) then {
 	_oldGroup = group player;
-	[player] join (group _inviter);
+	[player] joinSilent (group _inviter);
 	if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
 
 	// Update saved group in DB
