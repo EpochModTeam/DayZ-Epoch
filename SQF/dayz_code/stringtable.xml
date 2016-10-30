@@ -13544,13 +13544,6 @@
 			<French>Il manque %1 %2</French>
 			<Czech>Chybí %1x %2</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_7">
-			<English>%1 building parts in range, maintenance would cost %2.</English>
-			<German>%1 Bauteile in Reichweite - Instandhaltungskosten: %2.</German>
-			<Russian>Построек найдено: %1, обслуживание будет стоить %2.</Russian>
-			<French>%1 constructions à portée, la maintenance coûtera %2.</French>
-			<Czech>%1 částí staveb v okruhu, údržba by stála %2.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_8">
 			<English>You have tagged a player as friendly. Waiting for other player to accept.</English>
 			<German>Du hast einen Spieler als Freund markiert. Warte auf Bestätigung vom anderen Spieler.</German>
@@ -15239,7 +15232,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE"> 
 			<English>Price to maintain %1 objects: %2 %3</English>
-			<German>Preis zum Instandsetzen von %1 Objekten: %2 %3</German>				
+			<German>Preis zum Instandsetzen von %1 Objekten: %2 %3</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS"> 
 			<English>Success! %1 objects maintained for %2 %3</English>
