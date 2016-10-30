@@ -16,8 +16,8 @@ _holdBreath = if (count (actionKeys "HoldBreath") > 1) then { [true,localize "ST
 _turboKey = if (count (actionKeys "Turbo") > 0) then { [true,localize "STR_UI_HOLD_TURBO"] } else { [false,""] };
 
 if ((_holdBreath select 0) or (_turboKey select 0)) then {
-	85000 cutRsc ["DZ_BlackScreen","PLAIN"];
+	4100002 cutRsc ["DZ_BlackScreen","PLAIN"];
 	(uiNamespace getVariable "DZ_BlackScreen") displayCtrl 1 ctrlSetText format ["%1\n%2", (_holdBreath select 1), (_turboKey select 1)];
 } else {
-	85000 cutText ["","PLAIN"];
+	4100002 cutText ["","PLAIN"];
 };
