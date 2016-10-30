@@ -13,7 +13,7 @@ if (count dayz_myGroup > 1 && {!dayz_requireRadio or {dayz_requireRadio && "Item
 			if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
 			
 			// Update saved group in DB
-			PVDZ_Server_UpdateGroup = [0,player,_x];
+			PVDZ_Server_UpdateGroup = [0,player];
 			publicVariableServer "PVDZ_Server_UpdateGroup";
 		};
 	} count allGroups;

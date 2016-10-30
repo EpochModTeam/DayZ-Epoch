@@ -1,4 +1,4 @@
-private ["_display","_inviter","_inviteText","_inviterUID","_newGroup","_oldGroup","_rejectButton","_uid"];
+private ["_display","_inviter","_inviteText","_inviterUID","_oldGroup","_rejectButton","_uid"];
 
 _display = findDisplay 80000;
 _rejectButton = _display displayCtrl 8;
@@ -25,12 +25,11 @@ _inviter = _inviterUID call dayz_getPlayer;
 
 if (!isNull _inviter) then {
 	_oldGroup = group player;
-	_newGroup = group _inviter;
-	[player] join _newGroup;
+	[player] join (group _inviter);
 	if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
 
 	// Update saved group in DB
-	PVDZ_Server_UpdateGroup = [1,player,_newGroup];
+	PVDZ_Server_UpdateGroup = [1,player];
 	publicVariableServer "PVDZ_Server_UpdateGroup";
 } else {
 	systemChat localize "STR_EPOCH_INVITE_EXPIRED";
