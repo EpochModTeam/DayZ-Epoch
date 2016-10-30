@@ -5,6 +5,7 @@
 [NEW] 1.8.8 infected camps, points of interest and infectious waterholes map additions (Chernarus only)
 [NEW] 1.8.8 configurable blood trails, set dayz_bleedingeffect in init.sqf
 [NEW] 1.8.8 weapon switching system and hotkeys (1 = primary, 2 = pistol, 3 = melee (or rifle onBack if DZE_TwoPrimaries=2;))
+[NEW] Many new configuration options are available for admins. See dayz_code\configVariables.sqf and mission\init.sqf for descriptions.
 [NEW] Players can carry more than one primary weapon which allows the abillity to hide one on their back, configure using DZE_TwoPrimaries. See configVariables.sqf for details @icomrade
 [NEW] Optional news/rules feed on player login, set dayz_enableRules in init.sqf
 [NEW] Streamer mode is toggleable by player in game options. Setting enabled hides server water mark and rules feed. @ebaydayz
@@ -18,8 +19,7 @@
 [NEW] Earplugs/Lower sound effects volume hotkey (F1) and status UI icon.
 [NEW] Snap building, use DZE_modularBuild = true; in init.sqf to enable. @raymix
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
-[NEW] Many new configuration options are available for admins. See dayz_code\configVariables.sqf and mission\init.sqf for descriptions. @ebaydayz
-[NEW] Blood types system is disabled by default. Set dayz_classicBloodBagSystem = false; in init.sqf to enable
+[NEW] Blood types system is disabled by default. Set dayz_classicBloodBagSystem = false; in init.sqf to enable.
 [NEW] Dayz_townGenerator = true; in init.sqf enables vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. @ebaydayz
 [NEW] DB Backup script. @RimBlock
 [NEW] Upgraded (_DZE1,2,3,4) ArmoredSUV and Kamaz classes are now available. #1518 #1538 @McKeighan
@@ -51,6 +51,8 @@
 [NEW] Salvage can now be disabled on locked vehicles via DZE_salvageLocked variable. #1757 @oiad
 [NEW] You may now rearm pooks and other helicoper/vehicle pilot/driver weapons @icomrade
 [NEW] Dogs can now be gutted and yield 2xFoodDogRaw @ebaydayz
+[NEW] Rewrote death messages to a PVEH instead of the unreliable MPHit. Added localization, more causes of death, systemChat and dynamicText killfeed options. @ebaydayz
+[NEW] Optional group system with database save. Group command bar is now hidden. @icomrade @ebaydayz
 
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
 [CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)
@@ -100,7 +102,6 @@
 [FIXED] User input is disabled and then gear dialog is closed during safe lock/unlock/pack to block various duping methods. #1341 @RimBlock @ebaydayz
 [FIXED] Duplicate objectUIDs occasionally causing vehicles to swap classes or be deleted across restarts @ebaydayz @icomrade #1504
 [FIXED] DZE_BuildingLimit now counts buildables only instead of all object types. Thanks jOoPs @ebaydayz
-[FIXED] Rewrote death messages to a PVEH instead of the unreliable MPHit. Added localization, more causes of death and optional dynamicText killfeed. @ebaydayz
 [FIXED] Player no longer hears radiation sound when changing clothes. @ebaydayz
 [FIXED] Ponds and lakes are now detected correctly in player_goFishing. #1678 @ebaydayz
 [FIXED] Players are now ejected and killed when their vehicle is destroyed (Fix applies to all types of vehicles). @icomrade
