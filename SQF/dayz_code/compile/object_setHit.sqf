@@ -10,7 +10,7 @@ if (_selection != "") then {
 	_unit setVariable [_strH,(_dam + _damage)];
 	if (_selection in USEC_MinorWounds) then {
 		_unit setHit[_selection,(_dam + _damage)];
-		diag_log(format["%1: %2 setHit %3 %4", __FILE__, _unit, _selection, (_dam + _damage)]);
+		//diag_log(format["%1: %2 setHit %3 %4", __FILE__, _unit, _selection, (_dam + _damage)]);
 	};
 };
 _damage

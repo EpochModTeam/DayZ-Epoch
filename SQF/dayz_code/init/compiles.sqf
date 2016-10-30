@@ -197,7 +197,7 @@ if (!isDedicated) then {
 	PlotRemoveFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotRemoveFriend.sqf";
 	PlotObjects = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotObjects.sqf";
 	PlotPreview = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf";
-	MaintainPlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\maintain_area.sqf";
+	MaintainPlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\maintain_area.sqf";
 	DoorGetFriends = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorGetFriends.sqf";
 	DoorNearbyHumans = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorNearbyHumans.sqf";
 	DoorAddFriend = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\doorAddFriend.sqf";

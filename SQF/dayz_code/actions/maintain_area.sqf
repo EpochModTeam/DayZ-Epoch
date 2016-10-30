@@ -1,3 +1,22 @@
+/*
+
+Examples for config variable DZE_maintainCurrencyRate:
+
+Now that we have gem based currency, maintaining is priced via a "worth".
+
+If you want the price per item to be 1 gold, DZE_maintainCurrencyRate needs to be 100.
+600 items * 100 would be worth 6 briefcases or 60k coins on a single currency server.
+600 items * 150 would be worth 9 briefcases or 90k coins on a single currency server.
+
+1 10oz silver = 10 worth
+1 gold = 100 worth
+1 10oz gold = 1,000 worth
+1 briefcase = 10,000 worth
+
+Please see configVariables.sqf for the value of gems (DZE_GemWorthArray) and their relevant worth.
+
+*/
+
 private ["_objectID","_objectUID","_target","_objects","_requirements","_count","_objects_filtered","_ctrl","_itemText","_type","_amount","_success","_wealth","_message1","_message2","_option"];
 disableSerialization;
 
@@ -22,7 +41,7 @@ _req = {
 	private ["_count","_amount","_itemText"];
 
 	_count = _this;
-	_amount = _count * 100;
+	_amount = _count * DZE_maintainCurrencyRate;
 	_itemText = if (Z_SingleCurrency) then { CurrencyName } else { _amount call z_calcDefaultCurrencyNoImg };
 
 	[_amount,_itemText]
