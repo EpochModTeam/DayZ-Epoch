@@ -45,7 +45,8 @@ sched_animals = {
 
 	//diag_log [ dayz_maxGlobalAnimals / (1 max count playableUnits), ceil(1.2*(dayz_maxGlobalAnimals - _global) / (1 max count playableUnits)) min (dayz_maxAnimals - _count), _global,dayz_maxAnimals, _count, dayz_maxGlobalAnimals, _global ];
 	for "_x" from 0 max (2 min (ceil(1.5*(dayz_maxGlobalAnimals - _global) / (1 max count playableUnits)) min (dayz_maxAnimals - _count))) to 1 step -1 do {
-		_animalssupported = ["hen","hen","hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit","Dog"];
+		_animalssupported = ["hen","hen","hen","Cow","Sheep","WildBoar","WildBoar","WildBoar","Goat","Rabbit","Rabbit"];
+		if (dayz_tameDogs) then {_animalssupported set [count _animalssupported,"Dog"];};
 		_type = _animalssupported select floor random count _animalssupported;
 		if (_type == "Cow") then {
 			_animalssupported = ["Cow01","Cow02","Cow03","Cow04","Cow01_EP1"];
