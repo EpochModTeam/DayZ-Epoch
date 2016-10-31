@@ -262,7 +262,7 @@ if (_damage > 0.4) then {
 	
 	//Display some info in the players log file.
     if (_unit == player) then {
-		diag_log format["DAMAGE: player hit by %1 in %2 with %3 for %4 scaled to %5, Conscious %6",_sourceVehicleType,_hit,if (_ammo == "") then { "" } else { _ammo },(str(_damage)),(str(_damage * _scale)),(str (!_unconscious))];
+		diag_log format["DAMAGE: player hit by %1 in %2 with %3 for %4 scaled to %5, Conscious %6",_sourceVehicleType,_hit,_ammo,(str(_damage)),(str(_damage * _scale)),(str (!_unconscious))];
         r_player_blood = r_player_blood - (_damage * _scale);
  	
 	//Pain and Infection
