@@ -489,6 +489,7 @@ class CanvasHut_DZ: Land_covering_hut_EP1
 	offset[] = {0,2.5,1};
 	displayName = $STR_EPOCH_CANVASSUNSHADE;
 	vehicleClass = "Fortifications";
+	removeoutput[] = {{"sun_shade_kit",1}}
 };
 class Park_bench1;
 class ParkBench_DZ: Park_bench1
