@@ -50,7 +50,6 @@
 [NEW] You may set the buying or selling price of any item to -1 to disallow the respective trading action, only with config traders and advanced trading @icomrade
 [NEW] Salvage can now be disabled on locked vehicles via DZE_salvageLocked variable. #1757 @oiad
 [NEW] You may now rearm pooks and other helicoper/vehicle pilot/driver weapons @icomrade
-[NEW] Dogs can now be gutted and yield 2xFoodDogRaw @ebaydayz
 [NEW] Rewrote death messages to a PVEH instead of the unreliable MPHit. Added localization, more causes of death, systemChat and dynamicText killfeed options. @ebaydayz
 [NEW] Optional group system with database save. Group command bar is now hidden. @icomrade @ebaydayz
 

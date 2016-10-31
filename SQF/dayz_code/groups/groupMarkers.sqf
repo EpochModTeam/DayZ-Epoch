@@ -1,5 +1,5 @@
 // Two second loop
-private ["_count","_found","_group","_hasGPS","_index","_marker","_markBody","_markGroup","_markSelf","_pos","_self","_vehicle"];
+private ["_count","_found","_group","_hasGPS","_index","_marker","_markBody","_markGroup","_markSelf","_pos","_self","_uid","_vehicle"];
 
 _group = player call dayz_filterGroup;
 
@@ -9,6 +9,14 @@ if (dayz_requireRadio && {count _group > 1} && {!("ItemRadio" in items player)})
 	if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
 	localize "STR_EPOCH_RADIO_CONTACT_LOST" call dayz_rollingMessages;
 };
+
+{
+	_uid = getPlayerUID _x;
+	if (!(_uid in dayz_myGroup) && _x != player) then {
+		dayz_myGroup set [count dayz_myGroup,_uid];
+		systemChat format [localize "STR_EPOCH_PLAYER_JOINED",name _x];
+	};
+} count _group;
 
 if (visibleMap or !isNull findDisplay 88890) then {
 	_hasGPS = "ItemGPS" in items player;

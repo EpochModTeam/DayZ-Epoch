@@ -11,4 +11,5 @@ dayz_groupLeaveThread = [] spawn {
 	//Wait for response from server to confirm group finished updating in DB
 	waitUntil {!isNil "dayz_groupLeft"};	
 	[player] joinSilent grpNull;
+	dayz_myGroup = [];
 };

@@ -16357,6 +16357,12 @@
 		<Key ID="STR_EPOCH_INVITE_TO">
 			<English>You invited %1 to join the group.</English>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_JOINED">
+			<English>%1 joined the group.</English>
+		</Key>
+		<Key ID="STR_EPOCH_REJOINED_GROUP">
+			<English>Rejoined %1's group</English>
+		</Key>
 		<Key ID="STR_EPOCH_INVITE_NEW">
 			<English>New group invite - Press F5 to view</English>
 		</Key>

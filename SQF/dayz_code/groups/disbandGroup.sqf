@@ -13,4 +13,5 @@ dayz_groupDisbandThread = _group spawn {
 	
 	{[_x] joinSilent grpNull} count (units _this);
 	deleteGroup _this;
+	dayz_myGroup = [];
 };
