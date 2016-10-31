@@ -1,5 +1,5 @@
 //private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_newBackpackType","_backpackWpn","_backpackMag","_backpackWpnTypes","_backpackWpnQtys","_countr","_backpackmagTypes","_backpackmagQtys","_display","_createSafePos","_wpnType","_ismelee","_rndx","_rndy"];
-private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit"];
+private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader"];
 _class = _this;
 if (gear_done) then {disableUserInput true;disableUserInput true;};
 disableSerialization;
@@ -65,6 +65,7 @@ _display closeDisplay 0;
 //BackUp Player Object
 _oldUnit = player;
 _oldGroup = group player;
+_leader = (player == leader _oldGroup);
 
 /***********************************/
 //DONT USE player AFTER THIS POINT
@@ -126,6 +127,11 @@ _switchUnit = {
 	if (!isNil "dayz_groupInit" && count (units _oldGroup) > 1) then {
 		[_newUnit] joinSilent _oldGroup;
 		if (count (units _group) == 0) then {deleteGroup _group;};
+		if (_leader) then {
+			//Request new leader promote player back to leader (group is local to leader)
+			PVDZ_Server_UpdateGroup = [-1,player];
+			publicVariableServer "PVDZ_Server_UpdateGroup";
+		};
 	};
 	if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
 	if (_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};

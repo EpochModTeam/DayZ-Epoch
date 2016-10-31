@@ -10,6 +10,12 @@ if (_event < 3) then {
 	uiSleep 1;
 };
 
+if (_event == -1) exitWith {
+	//Promote _player
+	PVDZ_groupInvite = [_player,0];
+	(owner (leader group _player)) publicVariableClient "PVDZ_groupInvite";
+};
+
 _groupUIDs = [];
 {
 	if (alive _x && isPlayer _x) then {

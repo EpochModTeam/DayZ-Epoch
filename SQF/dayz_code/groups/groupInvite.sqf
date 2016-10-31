@@ -3,6 +3,10 @@ private ["_add","_inviter","_recipient","_uid","_unit"];
 _add = _this select 0;
 _uid = _this select 1;
 
+if (typeName _add == "OBJECT") exitWith {
+	(group player) selectLeader _add;
+};
+
 // Update active invites on all machines with the change
 if (_add) then {
 	_inviter = _uid select 0;
