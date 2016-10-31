@@ -17,5 +17,6 @@
 #include "Misc.hpp"			//CZ550, Lee-Enfield, Winchester 1866
 #include "Shotgun.hpp"
 #include "Arrows.hpp"
+#include "LauncherAmmo.hpp"
 
 #undef COMBINE_MAG

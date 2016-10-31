@@ -24,6 +24,10 @@ class MAAWS
 {
 	weight = 7.5;
 };
+class BAF_NLAW_Launcher
+{
+	weight = 7.5;
+};
 class M47Launcher_EP1
 {
 	weight = 7;
@@ -49,6 +53,10 @@ class RPG18
 	weight = 1.4;
 };
 class MetisLauncher
+{
+	weight = 16;
+};
+class Javelin
 {
 	weight = 16;
 };

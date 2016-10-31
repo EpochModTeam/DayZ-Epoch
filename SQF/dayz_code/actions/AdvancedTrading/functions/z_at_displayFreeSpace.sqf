@@ -14,11 +14,14 @@ if (_selection == 2) then { //gear
 	_p = primaryWeapon player;
 	_allowedPrimary = if (_p != "") then {0} else {1};
 	if (DZE_TwoPrimaries == 2 && dayz_onBack == "") then { _allowedPrimary = _allowedPrimary + 1; };
-
+	
+	_backpack = unitBackpack player;
+	_allowedBackpacks = if (isNull _backpack) then {1} else {0};
 	_allowedSidearm = 1;
 	{
-		if (getNumber (configFile >> "CfgWeapons" >> _x >> "type") == 2) exitWith { // 2 = WeaponSlotHandGun (occupies pistol slot)
-			_allowedSidearm = 0;
+		switch getNumber (configFile >> "CfgWeapons" >> _x >> "type") do {
+			case 2: {_allowedSidearm = 0;}; //Pistol
+			case 4: {_allowedBackpacks = 0;}; //Launcher
 		};
 	} count (weapons player);
 	
@@ -33,9 +36,6 @@ if (_selection == 2) then { //gear
 		"<img image='%1' size='3' align='center'/>"
 		, _pic
 	];
-
-	_backpack = unitBackpack player;
-	_allowedBackpacks = if (isNull _backpack) then {1} else {0};
 
 	_returnArray = [_allowedMags, _allowedWeapons, _allowedBackpacks];
 };

@@ -20,7 +20,15 @@ class PG7VR
 {
 	weight = 4.5;
 };
+class PG9_AT
+{
+	weight = 4.5;
+};
 class OG7
+{
+	weight = 2;
+};
+class OG9_HE
 {
 	weight = 2;
 };
@@ -35,6 +43,10 @@ class AT13
 class Igla
 {
 	weight = 11;
+};
+class 2Rnd_Igla
+{
+	weight = 22;
 };
 class Strela
 {
@@ -60,11 +72,15 @@ class SMAW_HEDP
 {
 	weight = 6;
 };
-class MAAWS_HEAA
+class MAAWS_HEDP
 {
 	weight = 6;
 };
-class MAAWS_HEDP
+class MAAWS_HEAT
+{
+	weight = 6;
+};
+class NLAW
 {
 	weight = 6;
 };

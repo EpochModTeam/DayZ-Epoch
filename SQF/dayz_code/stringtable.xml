@@ -15017,11 +15017,11 @@
 			<Russian>У вас нет рюкзака.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_HAVE_BACKPACK">
-			<English>You already have a backpack.</English>
+			<English>You already have a backpack or launcher.</English>
 			<German>Du hast bereits einen Rucksack.</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ONE_BACKPACK">
-			<English>You can only buy one backpack into your gear.</English>
+			<English>You can only buy one backpack or launcher into your gear.</English>
 			<German>Du hast nur einen Rucksack in deine Ausrüstung kaufen.</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_OFFER">

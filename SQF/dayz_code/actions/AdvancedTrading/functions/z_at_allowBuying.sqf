@@ -50,10 +50,12 @@ if (_selection == 2) then { //gear
 	_allowedBinocular = 2;
 	_duplicate = false;
 	{
-		_type = getNumber (configFile >> "CfgWeapons" >> _x >> "type");
-		if (_type == 2) then { _allowedSidearm = 0; }; // WeaponSlotHandGun (occupies pistol slot)
-		if (_type == 4096) then { _allowedBinocular = _allowedBinocular - 1; }; // WeaponSlotBinocular
-		if (_type == 131072) then { _allowedTools = _allowedTools - 1; }; // WeaponSlotInventory (toolbelt slot)
+		switch getNumber (configFile >> "CfgWeapons" >> _x >> "type") do {
+			case 2: {_allowedSidearm = 0;}; //Pistol
+			case 4: {_allowedBackpacks = 0;}; //Launcher
+			case 4096: {_allowedBinocular = _allowedBinocular - 1;}; //Binocular slot
+			case 131072: {_allowedTools = _allowedTools - 1;}; //Toolbelt slot
+		};
 		if (_x in _toolClasses) exitWith {_duplicate = true;}; // Forbid purchasing duplicate tools into gear
 	} count (weapons player);
 	

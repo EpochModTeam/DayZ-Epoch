@@ -4,7 +4,7 @@ class CfgMagazines
 	class CA_Magazine;
 	class HandGrenade;
 	class TimeBomb;
-	
+	class CA_LauncherMagazine;
 	
 	
 	//Weapon magazines

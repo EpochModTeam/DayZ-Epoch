@@ -66,7 +66,7 @@ if (Z_SingleCurrency) then {
 				if ('PistolCore' in _parentClasses) then {
 					_sidearmToBuy = _sidearmToBuy + (_x select 9);
 				} else {
-					_primaryToBuy = _primaryToBuy + (_x select 9);
+					_primaryToBuy = _primaryToBuy + (_x select 9); //Include launchers in this count since they also take up 10 slots in backpack
 				};
 			};
 			_priceToBuy	= _priceToBuy + ((_x select 11)*(_x select 2)*(_x select 9));
