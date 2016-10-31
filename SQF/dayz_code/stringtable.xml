@@ -849,7 +849,7 @@
 		</Key>
 		<Key ID="str_actions_delete">
 			<English>Destroy %1</English>
-			<German>%1 zerstören</German>
+			<German>%1 abbauen</German>
 			<Russian>Уничтожить %1</Russian>
 			<French>Détruire %1</French>
 			<Czech>Zničit %1</Czech>
@@ -7784,6 +7784,7 @@
 		</Key>
 		<Key ID="STR_UI_HOLD_TURBO">
 			<English>Please change your controls. Turbo holds too many keys and has been blocked.</English>
+			<German>Bitte ändere deine Steuerung. "Turbo" liegt auf mehr als einer Taste und wurde blockiert.</German>
 		</Key>
 		<Key ID="STR_UI_STREAMER_MODE">
 			<English>Streamer mode:</English>
@@ -15018,11 +15019,11 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_HAVE_BACKPACK">
 			<English>You already have a backpack or launcher.</English>
-			<German>Du hast bereits einen Rucksack.</German>
+			<German>Du hast bereits einen Rucksack oder Raketenwerfer.</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_ONE_BACKPACK">
 			<English>You can only buy one backpack or launcher into your gear.</English>
-			<German>Du hast nur einen Rucksack in deine Ausrüstung kaufen.</German>
+			<German>Du kannst nur einen Rucksack oder Raketenwerfer in deine Ausrüstung kaufen.</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_OFFER">
 			<English>I would offer %1 %2.</English>
@@ -16345,6 +16346,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_MY_GROUP">
 			<English>My Group</English>
+			<German>Meine Gruppe</German>			
 		</Key>
 		<Key ID="STR_EPOCH_INVITE">
 			<English>Invite</English>
@@ -16353,36 +16355,46 @@
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_FROM">
 			<English>Invite From</English>
+			<German>Einladung von</German>			
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_TO">
 			<English>You invited %1 to join the group.</English>
-		</Key>
+			<German>Du hast %1 eingeladen der Gruppe beizutreten.</German>					
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_JOINED">
 			<English>%1 joined the group.</English>
+			<German>%1 ist der Gruppe beigetreten.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_REJOINED_GROUP">
 			<English>Rejoined %1's group</English>
+			<German>Erneutes Beitreten von %1's Gruppe</German>				
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_NEW">
 			<English>New group invite - Press F5 to view</English>
+			<German>Neue Gruppeneinladung - Drücke F5 um sie dir anzusehen</German>				
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_PENDING">
 			<English>This player already has a pending invite.</English>
+			<German>Dieser Spieler hat bereits eine ausstehende Einladung.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_EXPIRED">
 			<English>The invite expired.</English>
+			<German>Die Einladung ist abgelaufen.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_NEED_RADIO">
 			<English>You need a radio to join a group.</English>
+			<German>Du brauchst ein Funkgerät um einer Gruppe beizutreten.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_LOST_RADIO_CONTACT">
 			<English>Lost radio contact with group</English>
+			<German>Funkkontakt zur Gruppe verloren.</German>					
 		</Key>
 		<Key ID="STR_EPOCH_RIP">
 			<English>RIP</English>
 		</Key>
 		<Key ID="STR_EPOCH_PROMOTE">
 			<English>Promote</English>
+			<German>Befördern</German>
 		</Key>
 		<Key ID="STR_EPOCH_DISBAND">
 			<English>Disband</English>
