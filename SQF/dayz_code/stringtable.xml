@@ -16758,10 +16758,6 @@
 			<English>Remove Camo Net</English>
 			<German>Tarnnetz entfernen</German>
 		</Key>
-		<Key ID="STR_EQUIP_TOOLBOX_ACTION_2">
-			<English>Remove Tank Trap</English>
-			<German>Panzersperre entfernen</German>
-		</Key>		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>
