@@ -12,15 +12,6 @@ class ItemEtool : ItemCore
 	
 	class ItemActions
 	{
-		class Build
-		{
-			text = "Build Sandbag Fence";
-			script = "spawn player_build;";
-			require[] = {"ItemEtool"};
-			consume[] = {"ItemSandbag"};
-			create = "Sandbag1_DZ";
-		};
-		
 		/*class Use
 		{
 			text=$STR_CREATE_STASH;
