@@ -1,0 +1,137 @@
+// More info at: https://community.bistudio.com/wiki/server.armaprofile
+
+class Difficulties
+{
+	class Recruit
+	{
+		class Flags
+		{
+			3rdPersonView = 1; // This turns 3rd(third) person view and group leader view on or off.
+			armor = 1; // Gives you improved body armor, tank armor etc
+			autoAim = 0; // Enables auto aim when you're not looking through your weapon's scope. Also works with crosshair off
+			autoGuideAT = 1; // AT missiles will be automatically guided to their target. If 0, player has to lock onto the target.
+			autoSpot = 1; // If you're close enough to an enemy, you'll report it without right-clicking
+			cameraShake = 0;
+			clockIndicator = 1; // Displays the clock indicator on the left of your screen when giving/receiving orders like "At 11 o'clock, enemy man at 200 meters"
+			deathMessages = 1; // Displays "XXX was killed by YYY" messages in multiplayer
+			enemyTag = 0; // Displays information on enemy units
+			friendlyTag = 1; // Displays information on friendly units. ONLY WORKS WITH 'Weaponcursor=0', eg crosshair on.
+			hud = 1; // Shows you leaders location and your position in formation
+			hudGroupInfo = 1;
+			hudPerm = 1; // Shows HUD permanently
+			hudWp = 1; // Shows Waypoints right after they're ordered to you
+			hudWpPerm = 1; // Shows Waypoints permanently
+			map = 1; // Shows symbols for all objects known to your group on the map. This will NOT disable the map itself !
+			netStats = 1; // Enables the scoreboard functionality in MP
+			tracers = 1; // Displays tracers even of small arms that in real life would not have tracers
+			ultraAI = 0; // Enables some kind of super AI that hears and sees more and has better tactics. This is for both friendly and enemy sides.
+			unlimitedSaves = 1; // Enables saving permanently. For single player missions. But you then can only load the last save state.
+			vonID = 1; // When using VoN, display the name of the player speaking.
+			weaponCursor = 1; // Shows the crosshair for your weapon
+		};
+		// These are the skills. Value may range from 0.000000 to 1.000000
+		skillFriendly = 1; // Friendly tactics skill
+		precisionFriendly = 1; // Friendly shooting precision
+		skillEnemy = 0.55; // Enemy tactics skill
+		precisionEnemy = 0.3; // Enemy shooting precision
+	};
+	class Regular
+	{
+		class Flags
+		{
+			3rdPersonView = 1; // This turns 3rd(third) person view and group leader view on or off.
+			armor = 1; // Gives you improved body armor, tank armor etc
+			autoAim = 0; // Enables auto aim when you're not looking through your weapon's scope. Also works with crosshair off
+			autoGuideAT = 1; // AT missiles will be automatically guided to their target. If 0, player has to lock onto the target.
+			autoSpot = 1; // If you're close enough to an enemy, you'll report it without right-clicking
+			cameraShake = 1;
+			clockIndicator = 1; // Displays the clock indicator on the left of your screen when giving/receiving orders like "At 11 o'clock, enemy man at 200 meters"
+			deathMessages = 1; // Displays "XXX was killed by YYY" messages in multiplayer
+			enemyTag = 0; // Displays information on enemy units
+			friendlyTag = 1; // Displays information on friendly units. ONLY WORKS WITH 'Weaponcursor=0', eg crosshair on.
+			hud = 1; // Shows you leaders location and your position in formation
+			hudGroupInfo = 1;
+			hudPerm = 1; // Shows HUD permanently
+			hudWp = 1; // Shows Waypoints right after they're ordered to you
+			hudWpPerm = 1; // Shows Waypoints permanently
+			map = 1; // Shows symbols for all objects known to your group on the map. This will NOT disable the map itself !
+			netStats = 1; // Enables the scoreboard functionality in MP
+			tracers = 1; // Displays tracers even of small arms that in real life would not have tracers
+			ultraAI = 0; // Enables some kind of super AI that hears and sees more and has better tactics. This is for both friendly and enemy sides.
+			unlimitedSaves = 1; // Enables saving permanently. For single player missions. But you then can only load the last save state.
+			vonID = 1; // When using VoN, display the name of the player speaking.
+			weaponCursor = 1; // Shows the crosshair for your weapon
+		};
+		// These are the skills. Value may range from 0.000000 to 1.000000
+		skillFriendly = 1; // Friendly tactics skill
+		precisionFriendly = 1; // Friendly shooting precision
+		skillEnemy = 0.7; // Enemy tactics skill
+		precisionEnemy = 0.5; // Enemy shooting precision
+	};
+	class Veteran
+	{
+		class Flags
+		{
+			3rdPersonView = 1; // This turns 3rd(third) person view and group leader view on or off. Please never talk of this as "3D view" - ArmA is not an arcade game !
+			armor = 0;// Cannot be changed
+			autoAim = 0;// Cannot be changed
+			autoGuideAT = 0;// Cannot be changed
+			autoSpot = 0;// Cannot be changed
+			cameraShake = 1;
+			clockIndicator = 0; // Displays the clock indicator on the left of your screen when giving/receiving orders like "At 11 o'clock, enemy man at 200 meters"
+			deathMessages = 1; // Displays "XXX was killed by YYY" messages in multiplayer
+			enemyTag = 0;// Cannot be changed
+			friendlyTag = 0;// Cannot be changed
+			hud = 1; // Shows you leaders location and your position in formation
+			hudGroupInfo = 0;
+			hudPerm = 0;// Cannot be changed
+			hudWp = 1; // Shows Waypoints right after they're ordered to you
+			hudWpPerm = 0;// Cannot be changed
+			map = 0; // Shows symbols for all objects known to your group on the map. This will NOT disable the map itself !
+			netStats = 1; // Enables the scoreboard functionality in MP
+			tracers = 0;// Cannot be changed
+			ultraAI = 0; // Enables some kind of super AI that hears and sees more and has better tactics. This is for both friendly and enemy sides.
+			unlimitedSaves = 0; // Enables saving permanently. For single player missions. But you then can only load the last save state.
+			vonId = 0; // When using VoN, display the name of the player speaking.
+			weaponCursor = 1; // Shows the crosshair for your weapon
+		};
+		// These are the skills. Value may range from 0.000000 to 1.000000
+		skillFriendly = 1; // Friendly tactics skill
+		precisionFriendly = 1; // Friendly shooting precision
+		skillEnemy = 0.9; // Enemy tactics skill
+		precisionEnemy = 0.75; // Enemy shooting precision
+	};
+	class Mercenary
+	{
+		class Flags
+		{
+			3rdPersonView = 0;// Cannot be changed
+			armor = 0;// Cannot be changed
+			autoAim = 0;// Cannot be changed
+			autoGuideAT = 0;// Cannot be changed
+			autoSpot = 0;// Cannot be changed
+			cameraShake = 1;// Cannot be changed
+			clockIndicator = 0;// Cannot be changed
+			deathMessages = 0; // Displays "XXX was killed by YYY" messages in multiplayer
+			enemyTag = 0;// Cannot be changed
+			friendlyTag = 0;// Cannot be changed
+			hud = 0;// Cannot be changed
+			hudGroupInfo = 0;// Cannot be changed
+			hudPerm = 0;// Cannot be changed
+			hudWp = 0;// Cannot be changed
+			hudWpPerm = 0;// Cannot be changed
+			map = 0;// Cannot be changed
+			netStats = 0; // Enables the scoreboard functionality in MP
+			tracers = 0;// Cannot be changed
+			ultraAI = 0; // Enables some kind of super AI that hears and sees more and has better tactics. This is for both friendly and enemy sides.
+			unlimitedSaves = 0;// Cannot be changed
+			vonID = 0; // When using VoN, display the name of the player speaking.
+			weaponCursor = 0;// Cannot be changed
+		};
+		// These are the skills. Value may range from 0.000000 to 1.000000
+		skillFriendly = 1; // Friendly tactics skill
+		precisionFriendly = 1; // Friendly shooting precision
+		skillEnemy = 1; // Enemy tactics skill
+		precisionEnemy = 1; // Enemy shooting precision
+	};
+};
