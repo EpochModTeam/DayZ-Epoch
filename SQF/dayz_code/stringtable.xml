@@ -12090,6 +12090,13 @@
 			<Dutch>%1 aan het slopen.</Dutch>
 			<Czech>Rozebírání %1.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_166">
+			<English>You can't build a %1 within %2 meters of a safe zone.</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_167">
+			<English>You can't build a %1 within %2 meters of blacklisted buildings.</English>
+		</Key>
+
 		<Key ID="STR_EPOCH_PLAYER_173">
 			<English>Dog consumed %1, and is now tamed.</English>
 			<German>Der Hund hat %1 konsumiert und ist nun gezähmt.</German>

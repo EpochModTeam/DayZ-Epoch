@@ -1,5 +1,5 @@
 //Checks if item is near a plot, if the player is plot owner or friendly, if there are too many items, and if the player has required tools
-private ["_requireplot","_distance","_canBuild","_friendlies","_nearestPole","_ownerID","_pos","_item","_classname","_isPole","_isLandFireDZ","_findNearestPoles","_findNearestPole","_IsNearPlot","_buildables","_center","_toolCheck","_plotcheck","_buildcheck","_isfriendly","_isowner","_require"];
+private ["_requireplot","_distance","_canBuild","_friendlies","_nearestPole","_ownerID","_pos","_item","_classname","_isPole","_isLandFireDZ","_findNearestPoles","_findNearestPole","_IsNearPlot","_buildables","_center","_toolCheck","_plotcheck","_buildcheck","_isfriendly","_isowner","_require","_text"];
 
 _pos = _this select 0;
 _item =	_this select 1;
@@ -71,6 +71,21 @@ if (_toolCheck) then {
 	_require =  getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> "Build" >> "require");
 	_classname = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
 	_canBuild = [_item, _require, _classname] call dze_requiredItemsCheck;
+};
+
+_text = getText (configFile >> 'CfgMagazines' >> _item >> 'displayName');
+
+if (((count DZE_SafeZoneNoBuildItems) > 0) && {_classname in DZE_SafeZoneNoBuildItems}) then {
+	{
+		if ((player distance (_x select 0)) <  DZE_SafeZoneNoBuildDistance) exitWith { _canBuild = false; };
+	} forEach DZE_safeZonePosArray;
+	if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,DZE_SafeZoneNoBuildDistance] call dayz_rollingMessages; [false, _isPole]; };
+};
+
+if (((count DZE_SafeZoneNoBuildNear) > 0) && {count (nearestObjects [_pos, DZE_SafeZoneNoBuildNear, DZE_BlacklistNoBuildDistance]) > 0}) exitWith {
+	dayz_actionInProgress = false;
+	format [localize "STR_EPOCH_PLAYER_167",_text,DZE_BlacklistNoBuildDistance] call dayz_rollingMessages;
+	[false, _isPole];
 };
 
 //When calling this function in another script use a silent exitWith, unless you have something special to say. i.e. if (!(_canBuild select 0)) exitWith{};
