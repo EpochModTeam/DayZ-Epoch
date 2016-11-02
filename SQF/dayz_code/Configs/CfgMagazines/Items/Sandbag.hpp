@@ -75,9 +75,6 @@ class ItemSandbag : CA_Magazine
 	};
 };
 
-
-
-
 // EPOCH ADDITIONS
 
 class BagFenceRound_DZ_kit : CA_Magazine {

@@ -356,7 +356,6 @@ class ItemNewspaper: CA_Magazine {
 		class Obituaries {
 			text = $STR_EPOCH_TORNNEWSPAPER_ACTION;
 			script = "spawn player_deathBoard;";
-
 		};
 	};
 };

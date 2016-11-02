@@ -21,7 +21,7 @@ class SkinBase : CA_Magazine
 		
 		class tearClothes
 		{
-			text = "Tear Clothes";
+			text = $str_tear_clothes;
 			script = "spawn player_tearClothes;";
 		};
 		class Crafting {

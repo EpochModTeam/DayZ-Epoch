@@ -71,8 +71,6 @@ class bloodBagOPOS : bloodBagBase
 	descriptionShort = $STR_BLD_desc_bloodBagOPOS;
 };
 
-
-
 //Whole blood bags -- Can only be obtained by taking blood from another player.
 class wholeBloodBagBase : bloodBagBase
 {

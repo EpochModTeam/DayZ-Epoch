@@ -79,7 +79,7 @@
 			showToPlayer = 1;
 			//reloadTime = 0.0708762;
 			reloadTime = 0.12;
-			displayName = "Gas";
+			displayName = $STR_EPOCH_CHAINSAW_GAS;
 		};
 		aiDispersionCoefY = 21;
 		aiDispersionCoefX = 21;

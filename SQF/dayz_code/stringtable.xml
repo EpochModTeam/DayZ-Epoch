@@ -1357,6 +1357,9 @@
 			<French>Vous pensez que vous avez besoin de ruban adhésif pour réparer la bouteille.</French>
 			<German>Du könntest Klebeband gebrauchen, um die Flasche zu reparieren.</German>
 		</Key>
+		<Key ID="str_tear_clothes">
+			<English>Tear Clothes</English>
+		</Key>
 		<Key ID="str_tear_clothes_0">
 			<English>You didn&apos;t get anything out of tearing the clothes.</English>
 			<Russian>Разорвав одежду вы ничего не получили.</Russian>
@@ -1390,7 +1393,7 @@
 			<German>Du schaffst es, drei kleine Haufen Lumpen zurecht zu reißen.</German>
 		</Key>
 		<Key ID="str_tear_clothes_noroom">
-			<English>You have no room left. Everything dropped on the ground.</English>
+			<English>You have no room left. Everything was dropped on the ground.</English>
 			<Russian>У вас нет больше места. Все выпало на землю.</Russian>
 			<Spanish>No tienes izquierdo habitación. Todo dejó caer en el suelo.</Spanish>
 			<Czech>Nemáte dostatek místa. Vše bylo položeno na zem.</Czech>
@@ -3375,6 +3378,12 @@
 			<French>Oui une pelle c&apos;est fait pour creuser.</French>
 			<Czech>Lopata se používá hlavně pro kopání děr.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_1b_BROKEN">
+			<English>Broken Shovel</English>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_1b_BROKEN">
+			<English>A shovel is a tool for digging, lifting, and moving bulk materials, but this one appears to be broken.</English>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_2">
 			<English>Toolbox</English>
 			<German>Werkzeugkasten</German>
@@ -4660,8 +4669,6 @@
 		<Key ID="STR_EQUIP_NAME_Makarov_SD">
 			<English>Makarov SD</English>
 			<Russian>ПМ с глушителем</Russian>
-			<Spanish>Makarov SD</Spanish>
-			<French>Makarov SD</French>
 			<Czech>Makarov s tlumičem</Czech>
 			<German>Makarow SD</German>
 		</Key>
@@ -14604,6 +14611,9 @@
 			<English>Lockbox</English>
 			<German>Schließkassette</German>
 			<Russian>Запираемый ящик</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_LOCKBOX_LOCKED">
+			<English>Locked Lockbox</English>
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_DESC">
 			<English>Semi secure lockbox.</English>

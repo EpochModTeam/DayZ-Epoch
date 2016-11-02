@@ -1,6 +1,6 @@
 class LockboxStorageLocked: Land_A_tent {
 	vehicleClass = "Survival";
-	displayName = "Locked Lockbox";
+	displayName = "STR_EPOCH_LOCKBOX_LOCKED";
 	model = "\z\addons\dayz_epoch\models\lockbox.p3d";
 	destrType = "DestructNo";
 	armor = 800;

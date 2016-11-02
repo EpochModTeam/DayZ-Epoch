@@ -949,7 +949,6 @@ class PartPlywoodPack: CA_Magazine
 			output[] = {{"PartWoodPlywood",3}};
 			input[] = {{"PartPlywoodPack",1}};
 		};
-
 	};
 };
 class PartWoodLumber: CA_Magazine
@@ -1061,7 +1060,6 @@ class PartWoodPlywood: CA_Magazine
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"workbench_kit",1}};
 			input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
-
 		};
 		class Crafting1
 		{
@@ -1099,7 +1097,6 @@ class PartWoodPlywood: CA_Magazine
 			output[] = {{"PartPlywoodPack",1}};
 			input[] = {{"PartWoodPlywood",3}};
 		};
-
 	};
 };
 class ItemSledgeHead : CA_Magazine

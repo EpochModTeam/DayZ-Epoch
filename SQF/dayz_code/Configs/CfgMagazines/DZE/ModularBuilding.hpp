@@ -131,7 +131,6 @@ class ItemWoodFloorHalf: CA_Magazine {
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"ItemWoodFloor",1}};
 			input[] = {{"ItemWoodFloorHalf",2}};
-
 		};
 	};
 };
@@ -158,7 +157,6 @@ class ItemWoodFloorQuarter: CA_Magazine {
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"ItemWoodFloorHalf",1}};
 			input[] = {{"ItemWoodFloorQuarter",2}};
-
 		};
 	};
 };
@@ -186,7 +184,6 @@ class ItemWoodStairs: CA_Magazine {
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"ItemWoodStairsSupport",1}};
 			input[] = {{"ItemWoodStairs",1},{"PartWoodLumber",2}};
-
 		};
 	};
 };
