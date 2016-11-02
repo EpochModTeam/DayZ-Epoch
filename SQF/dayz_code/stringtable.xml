@@ -12094,7 +12094,7 @@
 			<English>You can't build a %1 within %2 meters of a safe zone.</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_167">
-			<English>You can't build a %1 within %2 meters of blacklisted buildings.</English>
+			<English>You can't build a %1 within %2 meters of a blacklisted building.</English>
 		</Key>
 
 		<Key ID="STR_EPOCH_PLAYER_173">
