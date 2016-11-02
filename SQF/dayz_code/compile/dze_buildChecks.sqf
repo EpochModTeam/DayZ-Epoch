@@ -1,5 +1,5 @@
 //Checks if item is near a plot, if the player is plot owner or friendly, if there are too many items, and if the player has required tools
-private ["_requireplot","_distance","_canBuild","_friendlies","_nearestPole","_ownerID","_pos","_item","_classname","_isPole","_isLandFireDZ","_findNearestPoles","_findNearestPole","_IsNearPlot","_buildables","_center","_toolCheck","_plotcheck","_buildcheck","_isfriendly","_isowner","_require","_text"];
+private ["_requireplot","_distance","_canBuild","_friendlies","_nearestPole","_ownerID","_pos","_item","_classname","_isPole","_isLandFireDZ","_findNearestPoles","_findNearestPole","_IsNearPlot","_buildables","_center","_toolCheck","_plotcheck","_buildcheck","_isfriendly","_isowner","_require","_text","_near"];
 
 _pos = _this select 0;
 _item =	_this select 1;
@@ -79,12 +79,15 @@ if (((count DZE_SafeZoneNoBuildItems) > 0) && {_classname in DZE_SafeZoneNoBuild
 	{
 		if ((player distance (_x select 0)) <  DZE_SafeZoneNoBuildDistance) exitWith { _canBuild = false; };
 	} forEach DZE_safeZonePosArray;
-	if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,DZE_SafeZoneNoBuildDistance] call dayz_rollingMessages; [false, _isPole]; };
 };
 
-if (((count DZE_SafeZoneNoBuildNear) > 0) && {count (nearestObjects [_pos, DZE_SafeZoneNoBuildNear, DZE_BlacklistNoBuildDistance]) > 0}) exitWith {
+if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,DZE_SafeZoneNoBuildDistance] call dayz_rollingMessages; [false, _isPole]; };
+
+_near = (nearestObjects [_pos,DZE_NoBuildNear,DZE_NoBuildNearDistance]);
+
+if (((count DZE_NoBuildNear) > 0) && {(count _near) > 0}) exitWith {
 	dayz_actionInProgress = false;
-	format [localize "STR_EPOCH_PLAYER_167",_text,DZE_BlacklistNoBuildDistance] call dayz_rollingMessages;
+	format [localize "STR_EPOCH_PLAYER_167",_text,DZE_NoBuildNearDistance,typeOf (_near select 0)] call dayz_rollingMessages;
 	[false, _isPole];
 };
 

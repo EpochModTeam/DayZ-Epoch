@@ -3382,7 +3382,7 @@
 			<English>Broken Shovel</English>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_1b_BROKEN">
-			<English>A shovel is a tool for digging, lifting, and moving bulk materials, but this one appears to be broken.</English>
+			<English>Too much force has broken this Shovel. Hopefully you find something to repair it.</English>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_2">
 			<English>Toolbox</English>
@@ -12094,7 +12094,7 @@
 			<English>You can't build a %1 within %2 meters of a safe zone.</English>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_167">
-			<English>You can't build a %1 within %2 meters of a blacklisted building.</English>
+			<English>You can't build a %1 within %2 meters of a %3.</English>
 		</Key>
 
 		<Key ID="STR_EPOCH_PLAYER_173">
