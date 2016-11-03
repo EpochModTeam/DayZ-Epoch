@@ -12096,7 +12096,6 @@
 		<Key ID="STR_EPOCH_PLAYER_167">
 			<English>You can't build a %1 within %2 meters of a %3.</English>
 		</Key>
-
 		<Key ID="STR_EPOCH_PLAYER_173">
 			<English>Dog consumed %1, and is now tamed.</English>
 			<German>Der Hund hat %1 konsumiert und ist nun gezähmt.</German>
