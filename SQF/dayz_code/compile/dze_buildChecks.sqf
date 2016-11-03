@@ -45,7 +45,7 @@ if (_IsNearPlot == 0) then {
 			};
 		} else {
 			_friendlies	= player getVariable ["friendlyTo",[]];
-			if(_ownerID in _friendlies) then {
+			if (_ownerID in _friendlies) then {
 				_canBuild = true;
 			};
 		};
@@ -83,13 +83,12 @@ if (((count DZE_SafeZoneNoBuildItems) > 0) && {_classname in DZE_SafeZoneNoBuild
 
 if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,DZE_SafeZoneNoBuildDistance] call dayz_rollingMessages; [false, _isPole]; };
 
-_near = (nearestObjects [_pos,DZE_NoBuildNear,DZE_NoBuildNearDistance]);
-
-if (((count DZE_NoBuildNear) > 0) && {(count _near) > 0}) exitWith {
-	dayz_actionInProgress = false;
-	format [localize "STR_EPOCH_PLAYER_167",_text,DZE_NoBuildNearDistance,typeOf (_near select 0)] call dayz_rollingMessages;
-	[false, _isPole];
+if ((count DZE_NoBuildNear) > 0) then {
+	_near = (nearestObjects [_pos,DZE_NoBuildNear,DZE_NoBuildNearDistance]);
+	if ((count _near) > 0) then { _canBuild = false; };
 };
+
+if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_167",_text,DZE_NoBuildNearDistance,typeOf (_near select 0)] call dayz_rollingMessages; [false, _isPole]; };
 
 //When calling this function in another script use a silent exitWith, unless you have something special to say. i.e. if (!(_canBuild select 0)) exitWith{};
 [_canBuild, _isPole];
