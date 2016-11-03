@@ -5,4 +5,5 @@ _medic = _array select 1;
 
 if ((_unit == player) or (vehicle player != player)) then {
 	r_player_inpain = false;
+	R3F_TIRED_Accumulator = 0;
 };
