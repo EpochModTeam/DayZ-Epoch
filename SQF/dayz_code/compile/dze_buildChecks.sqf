@@ -67,12 +67,6 @@ _buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables","DZ_s
 _center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
 if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {dayz_actionInProgress = false; format[localize "str_epoch_player_41",_distance] call dayz_rollingMessages; [false, _isPole];};
 
-if (_toolCheck) then {
-	_require =  getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> "Build" >> "require");
-	_classname = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
-	_canBuild = [_item, _require, _classname] call dze_requiredItemsCheck;
-};
-
 _text = getText (configFile >> 'CfgMagazines' >> _item >> 'displayName');
 
 if (((count DZE_SafeZoneNoBuildItems) > 0) && {_classname in DZE_SafeZoneNoBuildItems}) then {
@@ -89,6 +83,12 @@ if ((count DZE_NoBuildNear) > 0) then {
 };
 
 if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_167",_text,DZE_NoBuildNearDistance,typeOf (_near select 0)] call dayz_rollingMessages; [false, _isPole]; };
+
+if (_toolCheck) then {
+	_require =  getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> "Build" >> "require");
+	_classname = getText (configFile >> "CfgMagazines" >> _item >> "ItemActions" >> "Build" >> "create");
+	_canBuild = [_item, _require, _classname] call dze_requiredItemsCheck;
+};
 
 //When calling this function in another script use a silent exitWith, unless you have something special to say. i.e. if (!(_canBuild select 0)) exitWith{};
 [_canBuild, _isPole];
