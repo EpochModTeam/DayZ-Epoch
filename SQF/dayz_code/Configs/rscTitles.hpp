@@ -398,6 +398,61 @@ class RscDisplayDiary {
 		delete DiaryBackground;
 		delete CA_PlayerName;
 		delete CA_CurrentTaskLabel;
+		class CA_MainBackground : IGUIBack {
+			idc = 1020;
+			x = "SafeZoneX + 0.010 * SafeZoneW";
+			y = "SafeZoneY + 0.031";
+			w = "0.98*SafeZoneW";
+			h = 0.082;
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		class CA_TopicsBackground : IGUIBack {
+			idc = 1021;
+			x = "0.010*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "0.146*SafeZoneW";
+			h = 0.53;
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		class CA_SubTopicsBackground : IGUIBack {
+			idc = 1022;
+			x = "0.16*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "0.283*SafeZoneW";
+			h = 0.53;
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		class CA_ContentBackground : IGUIBack {
+			idc = 1023;
+			x = "0.446*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.117";
+			w = "SafeZoneW * 0.544";
+			h = 0.832;
+			colorbackground[] = {0.1, 0.1, 0.1, 0.85};
+		};
+		class DiaryList : RscIGUIListBox {
+			idc = 1001;
+			onLBSelChanged = "[_this select 0, _this select 1, 'List'] call compile preprocessFileLineNumbers 'ca\Warfare2\Scripts\Client\GUI\GUI_logEH.sqf';       private ['_dummy']; _dummy = [_this,'onLBSelChanged'] call compile preprocessfile '\ca\ui\scripts\server_interface.sqf';";
+			default = 1;
+			x = "0.010*SafeZoneW + SafeZoneX";
+			y = "SafeZoneY + 0.137";
+			w = "0.146*SafeZoneW";
+			h = 0.6;
+			colorSelectBackground[] = {0, 0, 0, 1.0};
+			colorSelectBackground2[] = {0, 0, 0, 0.8};
+		};	
+		class CA_DiaryIndex : RscIGUIListBox {
+			idc = 1002;
+			onLBSelChanged = "[_this select 0, _this select 1, 'Index'] call compile preprocessFileLineNumbers 'ca\Warfare2\Scripts\Client\GUI\GUI_logEH.sqf';";
+			default = 0;
+			x = "0.16*SafeZoneW  + SafeZoneX";
+			y = "SafeZoneY + 0.137";
+			w = "0.283*SafeZoneW";
+			h = 0.6;
+			sizeEx = 0.034;
+			colorSelectBackground[] = {0, 0, 0, 1.0};
+			colorSelectBackground2[] = {0, 0, 0, 0.8};
+		};
 	};
 };
 
