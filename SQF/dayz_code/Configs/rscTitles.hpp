@@ -19,7 +19,6 @@ class IGUIBack;
 class RscListBox;
 class RscIGUIListBox;
 class RscXListBox;
-class RscXSliderH;
 class RscShortcutButton;
 class RscHTML;
 class RscDisplayEmpty;
@@ -46,17 +45,9 @@ class RscDisplayConfigure {
 	class controls;
 };
 class RscDisplayGameOptions {
-	movingEnable = 1;
-	enableDisplay = 1;
 	onLoad = "{(_this select 0) displayCtrl 140 lbAdd _x;} forEach [localize 'STR_UI_DISABLED',localize 'STR_UI_ENABLED']; (_this select 0) displayCtrl 140 lbSetCurSel (profileNamespace getVariable ['streamerMode',0]); uiNamespace setVariable ['streamerMode',(profileNamespace getVariable ['streamerMode',0])];";
 	onUnload = "call ui_changeDisplay;";
-	class controlsBackground;	
-	class controls {		
-		class CA_Title : CA_Title {
-			x = 0.18;
-			y = 0.192;
-			text = $STR_DISP_OPTIONS_GAME_OPTIONS;
-		};	
+	class controls {
 		class CA_TextLanguage : RscText {
 			x = 0.159803;
 			y = (0.420549 + -2*0.069854);
@@ -66,58 +57,6 @@ class RscDisplayGameOptions {
 			idc = 135;
 			x = 0.400534;
 			y = (0.420549 + -2*0.069854);
-			w = 0.3;
-		};
-		class CA_TextSubtitles : CA_TextLanguage {
-			x = 0.159803;
-			y = (0.420549 + -1*0.069854);
-			text = $STR_OPT_SUBTITLES;
-		};
-		class CA_ValueSubtitles : CA_ValueLanguage {
-			idc = 102;
-			x = 0.400534;
-			y = (0.420549 + -1*0.069854);
-			w = 0.3;
-		};
-		class CA_RadioSubtitles : CA_TextLanguage {
-			x = 0.159803;
-			y = (0.420549 + 0*0.069854);
-			text = $STR_OPT_RADIO_SUBTITLES;
-		};
-		class CA_ValueRadio : CA_ValueLanguage {
-			idc = 103;
-			y = (0.420549 + 0*0.069854);
-		};
-		class CA_TextGore : CA_TextLanguage {
-			idc = 122;
-			x = 0.159803;
-			y = (0.420549 + 1*0.069854);
-			text = $STR_DISP_OPT_BLOOD;
-		};
-		class CA_ValueBlood : CA_ValueLanguage {
-			idc = 119;
-			y = (0.420549 + 1*0.069854);
-		};
-		class CA_TextFloatingZone : CA_TextLanguage {
-			x = 0.159803;
-			y = (0.420549 + 2*0.069854);
-			text = $STR_DISP_CONF_FLOATING_ZONE;
-		};
-		class CA_ValueFloatingZone : RscXSliderH {
-			idc = 109;
-			x = 0.400534;
-			y = (0.420549 + 2*0.069854);
-			w = 0.3;
-		};
-		class CA_TextHeadBob : CA_TextLanguage {
-			x = 0.159803;
-			y = (0.420549 + 3*0.069854);
-			text = $STR_DISP_OPT_HEADBOB;
-		};
-		class CA_ValueHeadBob : RscXSliderH {
-			idc = 138;
-			x = 0.400534;
-			y = (0.420549 + 3*0.069854);
 			w = 0.3;
 		};
 		class CA_TextStreamerMode : CA_TextLanguage {
@@ -139,13 +78,6 @@ class RscDisplayGameOptions {
 			text = $STR_DISP_CANCEL;
 			//reset to original value
 			onButtonClick = "profileNamespace setVariable ['streamerMode',(uiNamespace getVariable 'streamerMode')]; saveProfileNamespace; if (!isNil 'player_toggleStreamerMode') then {call player_toggleStreamerMode;};";
-		};
-		class CA_ButtonDefault : RscShortcutButton {
-			idc = 304;
-			shortcuts[] = {0x00050000 + 2};
-			x = 0.338;
-			y = 0.7625;
-			text = $STR_DISP_OPTIONS_DIFFICULTY;
 		};
 		class CA_ButtonContinue : RscShortcutButton {
 			idc = 1;
