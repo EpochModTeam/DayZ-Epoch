@@ -1,4 +1,4 @@
-private ["_object","_mags","_weaps","_normalMags","_normalWeaps","_kinds","_kinds2","_kinds3","_amounts","_amounts2","_amounts3",
+private ["_object","_mags","_weaps","_normalMags","_normalWeaps","_normalBags","_kinds","_kinds2","_kinds3","_amounts","_amounts2","_amounts3",
 "_counter","_allowedMags","_allowedWeapons","_allowedBackpacks","_currentPrim","_currentSec","_currentTool",
 "_parentClasses","_alreadyInBackpack","_totalNewSpace","_primaryToBuy","_sidearmToBuy","_toolsToBuy",
 "_toBuyTotalMags","_totalSpace","_bags","_totalBagSlots","_type","_isBackpack","_notTools"];

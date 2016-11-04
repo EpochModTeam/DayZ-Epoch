@@ -22,7 +22,7 @@ if (count _this > 7) then {
 	_return = true;
 };
 
-if (typeName _price  == "SCALAR") then { _price = format ["%1x%2",_price,_currency]; } else { _price = format ["%1",_price]; };
+if (typeName _price  == "SCALAR") then { _price = format ["%1 %2",_price,_currency]; } else { _price = format ["%1",_price]; };
 
 if (_buyorsell == 0) then { //Buy
 	diag_log format["%8: %1 (%2) purchased %6x %3 into %7 at %4 for %5", _name, _playerUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289"];

@@ -76,8 +76,6 @@ class ItemDomeTent : CA_Magazine
 	};
 };
 
-
-
 // EPOCH ADDITION
 
 class ItemDesertTent : CA_Magazine

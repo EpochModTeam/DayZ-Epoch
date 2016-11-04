@@ -1,5 +1,5 @@
 //Checks if item is near a plot, if the player is plot owner or friendly, if there are too many items, and if the player has required tools
-private ["_requireplot","_distance","_canBuild","_friendlies","_nearestPole","_ownerID","_pos","_item","_classname","_isPole","_isLandFireDZ","_findNearestPoles","_findNearestPole","_IsNearPlot","_buildables","_center","_toolCheck","_plotcheck","_buildcheck","_isfriendly","_isowner","_require"];
+private ["_requireplot","_distance","_canBuild","_friendlies","_nearestPole","_ownerID","_pos","_item","_classname","_isPole","_isLandFireDZ","_IsNearPlot","_buildables","_center","_toolCheck","_plotcheck","_buildcheck","_isfriendly","_isowner","_require","_text","_near"];
 
 _pos = _this select 0;
 _item =	_this select 1;
@@ -45,7 +45,7 @@ if (_IsNearPlot == 0) then {
 			};
 		} else {
 			_friendlies	= player getVariable ["friendlyTo",[]];
-			if(_ownerID in _friendlies) then {
+			if (_ownerID in _friendlies) then {
 				_canBuild = true;
 			};
 		};
@@ -66,6 +66,23 @@ if (!_canBuild) exitWith {
 _buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables","DZ_storage_base"];
 _center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
 if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {dayz_actionInProgress = false; format[localize "str_epoch_player_41",_distance] call dayz_rollingMessages; [false, _isPole];};
+
+_text = getText (configFile >> 'CfgMagazines' >> _item >> 'displayName');
+
+if (((count DZE_SafeZoneNoBuildItems) > 0) && {_classname in DZE_SafeZoneNoBuildItems}) then {
+	{
+		if ((player distance (_x select 0)) <  DZE_SafeZoneNoBuildDistance) exitWith { _canBuild = false; };
+	} forEach DZE_safeZonePosArray;
+};
+
+if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,DZE_SafeZoneNoBuildDistance] call dayz_rollingMessages; [false, _isPole]; };
+
+if ((count DZE_NoBuildNear) > 0) then {
+	_near = (nearestObjects [_pos,DZE_NoBuildNear,DZE_NoBuildNearDistance]);
+	if ((count _near) > 0) then { _canBuild = false; };
+};
+
+if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_167",_text,DZE_NoBuildNearDistance,typeOf (_near select 0)] call dayz_rollingMessages; [false, _isPole]; };
 
 if (_toolCheck) then {
 	_require =  getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> "Build" >> "require");
