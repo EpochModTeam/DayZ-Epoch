@@ -1359,6 +1359,7 @@
 		</Key>
 		<Key ID="str_tear_clothes">
 			<English>Tear Clothes</English>
+			<German>Kleidung zerreißen</German>
 		</Key>
 		<Key ID="str_tear_clothes_0">
 			<English>You didn&apos;t get anything out of tearing the clothes.</English>
@@ -3380,9 +3381,11 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_1b_BROKEN">
 			<English>Broken Shovel</English>
+			<German>Kaputte Schaufel</German>			
 		</Key>
 		<Key ID="STR_EQUIP_DESC_1b_BROKEN">
 			<English>Too much force has broken this Shovel. Hopefully you find something to repair it.</English>
+			<German>Rohe Kraft hat diese Schaufel zerstört. Hoffentlich findest du etwas zum Reparieren.</German>			
 		</Key>
 		<Key ID="STR_EQUIP_NAME_2">
 			<English>Toolbox</English>
@@ -12092,9 +12095,11 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_166">
 			<English>You can't build a %1 within %2 meters of a safe zone.</English>
+			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einer Safe Zone.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_167">
 			<English>You can't build a %1 within %2 meters of a %3.</English>
+			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einem Objekt (%3).</German>
 		</Key>
 
 		<Key ID="STR_EPOCH_PLAYER_173">
@@ -13326,7 +13331,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAREA">
 			<English>Maintain Area</English>
-			<German>Gebiet instand halten</German>
+			<German>Gebiet sanieren</German>
 			<Russian>Занять территорию</Russian>
 			<Dutch>Onderhoud het gebied</Dutch>
 			<French>Maintenir la zone</French>
@@ -13334,10 +13339,11 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_FORCE_MAINTAREA">
 			<English>Force Maintain Area</English>
+			<German>Sanierung erzwingen</German>			
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTPREV">
 			<English>Maintain Area Preview</English>
-			<German>Kostenvoranschlag für Instandhaltung</German>
+			<German>Kosten für Sanierung</German>
 			<Russian>Занять территорию (пред. просмотр)</Russian>
 			<Dutch>Gebiedsonderhoud (voorbeeld)</Dutch>
 			<French>Aperçu de la zone maintenue</French>
@@ -13444,7 +13450,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN">
 			<English>Maintain</English>
-			<German>Instandsetzen</German>
+			<German>Sanieren</German>		
 			<Russian>Занять</Russian>
 			<Spanish>Mantener</Spanish>
 			<Dutch>Onderhoud</Dutch>
@@ -13453,7 +13459,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN_FORCE">
 			<English>Force Maintain</English>
-			<German>Instandsetzen erzwingen</German>
+			<German>Sanieren erzwingen</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
 			<English>Stop Generator</English>
@@ -13532,7 +13538,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_2">
 			<English>Maintenance already in progress.</English>
-			<German>Instandhaltung bereits in Bearbeitung.</German>
+			<German>Sanierung bereits in Bearbeitung.</German>
 			<Russian>Уже обслуживается.</Russian>
 			<French>La maintenance est déjà en cours.</French>
 			<Czech>Údržba již probíhá.</Czech>
@@ -13546,7 +13552,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_4">
 			<English>You have maintained %1 building parts.</English>
-			<German>%1 Bauteile instand gesetzt.</German>
+			<German>%1 Bauteile saniert.</German>
 			<Russian>Вы обслужили %1 построек.</Russian>
 			<French>Vous avez maintenu %1 construction(s).</French>
 			<Czech>Opravil jsi %1 částí budov.</Czech>
@@ -14621,6 +14627,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_LOCKED">
 			<English>Locked Lockbox</English>
+			<German>Schließkassette</German>			
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_DESC">
 			<English>Semi secure lockbox.</English>
@@ -15245,23 +15252,23 @@
 		
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE"> 
 			<English>Objects to maintain: 0, No maintenance required.</English>
-			<German>Objekt zum Instandsetzen: 0, Keine Instandsetzung notwendig.</German>
+			<German>Objekt zum Sanieren: 0, Keine Sanierung notwendig.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE"> 
 			<English>Price to maintain %1 objects: %2 %3</English>
-			<German>Preis zum Instandsetzen von %1 Objekten: %2 %3</German>
+			<German>Preis zum Sanieren von %1 Objekten: %2 %3</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS"> 
 			<English>Success! %1 objects maintained for %2 %3</English>
-			<German>Du hast %1 Objekte erfolgreich instandgesetzt für %2 %3.</German>
+			<German>Du hast %1 Objekte erfolgreich saniert für %2 %3.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE"> 
 			<English>Price to force maintain %1 objects: %2 %3</English>
-			<German>Instandsetzen erzwingen: Preis für %1 Objekten: %2 %3</German>
+			<German>Sanieren erzwingen: Preis für %1 Objekten: %2 %3</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED"> 
 			<English>Failed to maintain %1 objects. You need %2 %3</English>
-			<German>Instandsetzen von %1 Objekten fehlgeschlagen. Du brauchst %2 %3</German>
+			<German>Sanieren von %1 Objekten fehlgeschlagen. Du brauchst %2 %3</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
 			<English>That user is already on the list.</English>
@@ -15275,7 +15282,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY">
 			<English>Show plot boundary</English>
-			<German>Zeige Grundstücksgrenze.</German>
+			<German>Zeige Grundstücksgrenze</German>
 		</Key>
 		
 		<Key ID="STR_EPOCH_TRADER">
