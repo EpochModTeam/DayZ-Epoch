@@ -848,7 +848,7 @@
 			<Czech>Prozkoumat tělo</Czech>
 		</Key>
 		<Key ID="str_actions_delete">
-			<English>Destroy %1</English>
+			<English>Remove %1</English>
 			<German>%1 abbauen</German>
 			<Russian>Уничтожить %1</Russian>
 			<French>Détruire %1</French>
