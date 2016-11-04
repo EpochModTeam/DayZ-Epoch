@@ -13351,7 +13351,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MANAGEPLOT">
 			<English>Manage Plot</English>
-			<German>Verwalte Plot</German>
+			<German>Verwalte Grundstücksmarkierung</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_UNLOCK">
 			<English>Unlock %1</English>
@@ -13370,7 +13370,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_VEHLOCKED">
 			<English>Vehicle Locked</English>
-			<German>Fahrzeug abgeschlossen</German> -->
+			<German>Fahrzeug abgeschlossen</German>
 			<Russian>Транспорт закрыт</Russian>
 			<Dutch>Voertuig Staat op Slot</Dutch>
 			<French>Véhicule Verrouillé</French>
@@ -13459,7 +13459,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_MAINTAIN_FORCE">
 			<English>Force Maintain</English>
-			<German>Sanieren erzwingen</German>
+			<German>Alles Sanieren</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GENERATOR1">
 			<English>Stop Generator</English>
@@ -15252,23 +15252,23 @@
 		
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE"> 
 			<English>Objects to maintain: 0, No maintenance required.</English>
-			<German>Objekt zum Sanieren: 0, Keine Sanierung notwendig.</German>
+			<German>Objekte zum Sanieren: 0, Keine Sanierung notwendig.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE"> 
 			<English>Price to maintain %1 objects: %2 %3</English>
-			<German>Preis zum Sanieren von %1 Objekten: %2 %3</German>
+			<German>Preis zum Sanieren von %1 Objekt(en): %2 %3</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS"> 
 			<English>Success! %1 objects maintained for %2 %3</English>
-			<German>Du hast %1 Objekte erfolgreich saniert für %2 %3.</German>
+			<German>Du hast %1 Objekt(e) erfolgreich saniert für %2 %3.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE"> 
 			<English>Price to force maintain %1 objects: %2 %3</English>
-			<German>Sanieren erzwingen: Preis für %1 Objekten: %2 %3</German>
+			<German>Sanieren erzwingen: Preis für %1 Objekt(e): %2 %3</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED"> 
 			<English>Failed to maintain %1 objects. You need %2 %3</English>
-			<German>Sanieren von %1 Objekten fehlgeschlagen. Du brauchst %2 %3</German>
+			<German>Sanieren von %1 Objekt(en) fehlgeschlagen. Du brauchst %2 %3</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_ADDFRIEND_ALREADYONTHELIST">
 			<English>That user is already on the list.</English>
