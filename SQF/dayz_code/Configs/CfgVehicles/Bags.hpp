@@ -52,7 +52,7 @@ class DZ_Assault_Pack_EP1: Bag_Base_EP1
 	};	
 };
 
-class DZ_Czech_Vest_Puch: Bag_Base_EP1
+class DZ_Czech_Vest_Pouch: Bag_Base_EP1
 {
 	displayname = $STR_BACKPACK_NAME_VEST;
 	descriptionShort = $STR_BACKPACK_DESC_VEST;
@@ -65,7 +65,7 @@ class DZ_Czech_Vest_Puch: Bag_Base_EP1
 	transportmaxweapons = 0;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_Czech_Vest_Puch'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
+		init="[(_this select 0),'CfgVehicles','DZ_Czech_Vest_Pouch'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
 	};	
 };
 

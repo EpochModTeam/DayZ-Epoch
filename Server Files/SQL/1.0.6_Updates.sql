@@ -51,11 +51,11 @@ ALTER TABLE Player_DATA ADD PlayerCoins bigint(20) NOT NULL DEFAULT '0';
 ALTER TABLE Player_DATA ADD BankCoins bigint(20) NOT NULL DEFAULT '0';
 
 -- ----------------------------
--- Remove CZ_VestPouch_EP1 from traders and inventories. It is the same model as DZ_Czech_Vest_Puch with half the slots.
+-- Remove CZ_VestPouch_EP1 from traders and inventories. It is the same model as DZ_Czech_Vest_Pouch with half the slots.
 -- ----------------------------
 DELETE FROM `Traders_DATA` WHERE item = '["CZ_VestPouch_EP1",2]';
-UPDATE character_data SET Inventory = REPLACE(Inventory, 'CZ_VestPouch_EP1', 'DZ_Czech_Vest_Puch') WHERE INSTR(Inventory, 'CZ_VestPouch_EP1') > 0;
-UPDATE object_data SET Inventory = REPLACE(Inventory, 'CZ_VestPouch_EP1', 'DZ_Czech_Vest_Puch') WHERE INSTR(Inventory, 'CZ_VestPouch_EP1') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'CZ_VestPouch_EP1', 'DZ_Czech_Vest_Pouch') WHERE INSTR(Inventory, 'CZ_VestPouch_EP1') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'CZ_VestPouch_EP1', 'DZ_Czech_Vest_Pouch') WHERE INSTR(Inventory, 'CZ_VestPouch_EP1') > 0;
 
 -- ----------------------------
 -- Fix typo from 1.0.5.1 updates causing Merlin and CH53 to show as magazines instead of vehicles
