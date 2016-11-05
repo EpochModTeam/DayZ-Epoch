@@ -434,46 +434,12 @@ class CfgInGameUI
 };
 
 class CfgVoice {
-	//Disable automatic RadioProtocol group chat spam
-	voices[] = {NoVoice};
-	femaleVoices[] = {};
-	voicePlayer = NoVoice;
-	default = "NoVoice";
-	
 	class NoVoice {
-		protocol = "";
+		protocol = "RadioProtocolBase";
 		variants[] = {1};
 		directories[] = {"", ""};
-		identityTypes[] = {
-			"Default","Zombie1","Zombie2","Zombie3","PZombie1",
-			"Head_Default","Head_Special",
-			"Head_USMC","Head_USMC_CO","Head_USMC_Camo","Head_USMC_CO_Camo",
-			"Head_RU","Head_RU_CO","Head_RU_Camo","Head_RU_CO_Camo","Head_INS","Head_INS_Camo","Language_RU",
-			"Head_CDF","Head_CDF_CO","Head_CDF_Camo","Head_CDF_CO_Camo","Head_GUE","Head_GUE_Camo","Language_CZ",
-			"Language_w_RU","Language_w_CZ",
-			"Frost","Head_BAF","Language_BAF","Language_GB_EN_PMC",
-			"Language_EN_EP1","Language_TK_EP1","Language_DE_EP1","Language_W_EN_EP1","Language_W_TK_EP1",
-			"Language_OA_EN_EP1","Language_auto_EN",
-			"Base","HQ","PAPA_BEAR","AirBase",
-			"Base_RU","HQ_RU","PAPA_BEAR_RU","AirBase_RU",
-			"Base_CZ","HQ_CZ","PAPA_BEAR_CZ","AirBase_CZ"
-		};
+		identityTypes[] = {"Default", "Zombie1", "Zombie2", "Zombie3"};
 	};
-};
-
-class CfgHQIdentities {
-	class Base {speaker = "NoVoice";};
-	class HQ {speaker = "NoVoice";};
-	class PAPA_BEAR {speaker = "NoVoice";};
-	class AirBase {speaker = "NoVoice";};
-	class Base_RU {speaker = "NoVoice";};
-	class HQ_RU {speaker = "NoVoice";};
-	class PAPA_BEAR_RU {speaker = "NoVoice";};
-	class AirBase_RU {speaker = "NoVoice";};
-	class Base_CZ {speaker = "NoVoice";};
-	class HQ_CZ {speaker = "NoVoice";};
-	class PAPA_BEAR_CZ {speaker = "NoVoice";};
-	class AirBase_CZ {speaker = "NoVoice";};
 };
 
 class CfgIdentities {
@@ -508,41 +474,6 @@ class CfgIdentities {
 		speaker = "NoVoice";
 		pitch = 1;
 	};
-	//Disable automatic RadioProtocol group chat spam
-	class Default {speaker = "NoVoice";};
-	class Head_Default {speaker = "NoVoice";};
-	class Head_Special {speaker = "NoVoice";};
-	class Head_USMC {speaker = "NoVoice";};
-	class Head_USMC_CO {speaker = "NoVoice";};
-	class Head_USMC_Camo {speaker = "NoVoice";};
-	class Head_USMC_CO_Camo {speaker = "NoVoice";};
-	class Head_RU {speaker = "NoVoice";};
-	class Head_RU_CO {speaker = "NoVoice";};
-	class Head_RU_Camo {speaker = "NoVoice";};
-	class Head_RU_CO_Camo {speaker = "NoVoice";};
-	class Head_INS {speaker = "NoVoice";};
-	class Head_INS_Camo {speaker = "NoVoice";};
-	class Language_RU {speaker = "NoVoice";};
-	class Head_CDF {speaker = "NoVoice";};
-	class Head_CDF_CO {speaker = "NoVoice";};
-	class Head_CDF_Camo {speaker = "NoVoice";};
-	class Head_CDF_CO_Camo {speaker = "NoVoice";};
-	class Head_GUE {speaker = "NoVoice";};
-	class Head_GUE_Camo {speaker = "NoVoice";};
-	class Language_CZ {speaker = "NoVoice";};
-	class Language_w_RU {speaker = "NoVoice";};
-	class Language_w_CZ {speaker = "NoVoice";};
-	class Frost {speaker = "NoVoice";};
-	class Head_BAF {speaker = "NoVoice";};
-	class Language_BAF {speaker = "NoVoice";};
-	class Language_GB_EN_PMC {speaker = "NoVoice";};
-	class Language_EN_EP1 {speaker = "NoVoice";};
-	class Language_TK_EP1 {speaker = "NoVoice";};
-	class Language_DE_EP1 {speaker = "NoVoice";};
-	class Language_W_EN_EP1 {speaker = "NoVoice";};
-	class Language_W_TK_EP1 {speaker = "NoVoice";};
-	class Language_OA_EN_EP1 {speaker = "NoVoice";};
-	class Language_auto_EN {speaker = "NoVoice";};
 };
 
 class CfgMissions
