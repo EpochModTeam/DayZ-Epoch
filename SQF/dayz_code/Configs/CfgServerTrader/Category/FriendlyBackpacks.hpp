@@ -1,5 +1,5 @@
 class Category_538 {
-	class DZ_Czech_Vest_Puch {
+	class DZ_Czech_Vest_Pouch {
 		type = "trade_backpacks";
 		buy[] = {4,"ItemSilverBar"};
 		sell[] = {2,"ItemSilverBar"};
