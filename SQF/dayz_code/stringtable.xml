@@ -1357,7 +1357,7 @@
 			<French>Vous pensez que vous avez besoin de ruban adhésif pour réparer la bouteille.</French>
 			<German>Du könntest Klebeband gebrauchen, um die Flasche zu reparieren.</German>
 		</Key>
-		<Key ID="str_tear_clothes">
+		<Key ID="STR_TEAR_CLOTHES">
 			<English>Tear Clothes</English>
 			<German>Kleidung zerreißen</German>
 		</Key>
