@@ -58,6 +58,9 @@ UPDATE character_data SET Inventory = REPLACE(Inventory, 'CZ_VestPouch_EP1', 'DZ
 UPDATE object_data SET Inventory = REPLACE(Inventory, 'CZ_VestPouch_EP1', 'DZ_Czech_Vest_Pouch') WHERE INSTR(Inventory, 'CZ_VestPouch_EP1') > 0;
 
 -- ----------------------------
+-- ----------------------------
+
+-- ----------------------------
 -- Fix typo from 1.0.5.1 updates causing Merlin and CH53 to show as magazines instead of vehicles
 -- ----------------------------
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["CH53_DZE",2]', 2, '[2,"ItemBriefcase100oz",1]', '[1,"ItemBriefcase100oz",1]', 0, 493, 'trade_any_vehicle');
