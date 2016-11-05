@@ -138,6 +138,8 @@ class Hedgehog_DZ: BuiltItems
 	constructioncount = 1;
 	removeoutput[] = {{"ItemTankTrap",1}};
 	nounderground = 0;
+	//Remove vanilla dismantle action
+	class UserActions {delete Dismantle;};
 };
 // WorkBench_DZ
 class WorkBench_DZ: BuiltItems
@@ -236,6 +238,8 @@ class Sandbag1_DZ: BuiltItems
 	constructioncount = 3;
 	removeoutput[] = {{"ItemSandbag",1}};
 	nounderground = 0;
+	//Remove vanilla dismantle action
+	class UserActions {delete Dismantle;};
 };
 //review some of these settings
 class BagFenceRound_DZ: BuiltItems
