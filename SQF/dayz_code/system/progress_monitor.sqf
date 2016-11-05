@@ -12,7 +12,7 @@ while {true} do {
 	if ((!isNil "Dayz_loginCompleted") and {(Dayz_loginCompleted)}) exitWith { 
 		//diag_log [ __FILE__, __LINE__, "End loop"];
 		dayz_playerName = if (alive player) then {name player} else {"unknown"};
-		if (dayz_groupSystem) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\init.sqf";};
+		if (dayz_groupSystem) then {execVM "\z\addons\dayz_code\groups\init.sqf";};
 	};
 	_display = uiNameSpace getVariable "BIS_loadingScreen";
 	if ((!isNil "_display") and {(dayz_loadScreenMsg != "" )}) then {

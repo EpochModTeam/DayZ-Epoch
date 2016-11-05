@@ -5,7 +5,7 @@ class ItemRadio : ItemCore
 		class Groups
 		{
 			text = $STR_EPOCH_GROUPS_KEY;
-			script = "spawn dayz_openGroupDialog;";
+			script = "if (!isNil 'dayz_groupInit') then {[] spawn dayz_openGroupDialog;};";
 		};
 	};
 };

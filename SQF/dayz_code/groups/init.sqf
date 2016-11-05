@@ -1,5 +1,6 @@
 private ["_leader","_oldGroup"];
 
+uiSleep 1;
 if (count (units group player) > 1) then {
 	[player] joinSilent grpNull;
 };
