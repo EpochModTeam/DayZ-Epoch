@@ -373,10 +373,14 @@ publicVariable "sm_done";
 		};
 
 		{
-			if (isNull _x) then {dayz_traps = dayz_traps - [_x];};
-
-			_script = call compile getText (configFile >> "CfgVehicles" >> typeOf _x >> "script");
-			_armed = _x getVariable ["armed", false];
+			if (isNull _x) then {
+				dayz_traps = dayz_traps - [_x];
+				_armed = false;
+				_script = {};
+			} else {
+				_armed = _x getVariable ["armed", false];
+				_script = call compile getText (configFile >> "CfgVehicles" >> typeOf _x >> "script");
+			};
 			
 			if (_armed) then {
 				if !(_x in dayz_traps_active) then {["arm", _x] call _script;};
