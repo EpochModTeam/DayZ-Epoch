@@ -150,6 +150,14 @@ UPDATE character_data SET Inventory = REPLACE(Inventory, '"ItemHatchet_DZE"', '"
 UPDATE object_data SET Inventory = REPLACE(Inventory, '"ItemHatchet_DZE"', '"ItemHatchet"') WHERE INSTR(Inventory, '"ItemHatchet_DZE"') > 0;
 
 -- ----------------------------
+-- MeleeHatchet_DZE was removed because it was identical to MeleeHatchet
+-- ----------------------------
+UPDATE character_data SET Backpack = REPLACE(Backpack, '"MeleeHatchet_DZE"', '"MeleeHatchet"') WHERE INSTR(Backpack, '"MeleeHatchet_DZE"') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '"MeleeHatchet_DZE"', '"MeleeHatchet"') WHERE INSTR(Inventory, '"MeleeHatchet_DZE"') > 0;
+UPDATE character_data SET CurrentState = REPLACE(CurrentState, '"MeleeHatchet_DZE"', '"MeleeHatchet"') WHERE INSTR(CurrentState, '"MeleeHatchet_DZE"') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '"MeleeHatchet_DZE"', '"MeleeHatchet"') WHERE INSTR(Inventory, '"MeleeHatchet_DZE"') > 0;
+
+-- ----------------------------
 -- ItemTentOld and ItemTentDomed2 were removed because they were identical to ItemTent and ItemDomeTent
 -- ----------------------------
 UPDATE `Traders_DATA` SET `item` = '["ItemTent",1]' WHERE `item` = '["ItemTentOld",1]';
