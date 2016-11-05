@@ -58,7 +58,11 @@ UPDATE character_data SET Inventory = REPLACE(Inventory, 'CZ_VestPouch_EP1', 'DZ
 UPDATE object_data SET Inventory = REPLACE(Inventory, 'CZ_VestPouch_EP1', 'DZ_Czech_Vest_Pouch') WHERE INSTR(Inventory, 'CZ_VestPouch_EP1') > 0;
 
 -- ----------------------------
+-- Fix typo from 1.0.5.1 and rename DZ_Czech_Vest_Puch to DZ_Czech_Vest_Pouch.
 -- ----------------------------
+DELETE FROM `Traders_DATA` WHERE item = '["DZ_Czech_Vest_Puch",2]';
+UPDATE character_data SET Inventory = REPLACE(Inventory, 'DZ_Czech_Vest_Puch', 'DZ_Czech_Vest_Pouch') WHERE INSTR(Inventory, 'DZ_Czech_Vest_Puch') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, 'DZ_Czech_Vest_Puch', 'DZ_Czech_Vest_Pouch') WHERE INSTR(Inventory, 'DZ_Czech_Vest_Puch') > 0;
 
 -- ----------------------------
 -- Fix typo from 1.0.5.1 updates causing Merlin and CH53 to show as magazines instead of vehicles
