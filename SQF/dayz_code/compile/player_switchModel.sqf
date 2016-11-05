@@ -124,7 +124,7 @@ _switchUnit = {
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} count magazines _oldUnit;
 	if !(isNull _oldUnit) then {deleteVehicle _oldUnit;};
-	if (!isNil "dayz_groupInit" && count (units _oldGroup) > 1) then {
+	if (!isNil "dayz_groupInit" && count (units _oldGroup) > 0) then {
 		[_newUnit] joinSilent _oldGroup;
 		if (count (units _group) == 0) then {deleteGroup _group;};
 		if (_leader) then {
@@ -189,12 +189,6 @@ if (gear_done) then {disableUserInput false;disableUserInput false;disableUserIn
 //diag_log format["Magazines: %1",magazines _newUnit];
 //diag_log format["Backpack weapons: %1",getWeaponCargo unitBackpack _newUnit];
 //diag_log format["Backpack magazines: %1",getMagazineCargo unitBackpack _newUnit];
-
-//Clear and delete old Unit
-removeAllWeapons _oldUnit;
-{_oldUnit removeMagazine _x;} count magazines _oldUnit;
-if !(isNull _oldUnit) then {deleteVehicle _oldUnit;};
-deleteGroup _oldGroup;
 
 //	player switchCamera = _currentCamera;
 if (_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
