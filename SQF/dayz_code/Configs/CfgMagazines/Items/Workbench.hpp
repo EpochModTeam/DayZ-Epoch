@@ -12,7 +12,7 @@ class ItemWorkBench : CA_Magazine
 	class ItemActions {
 		class Build {
 			text = $STR_BLD_build_ItemWorkBench;//"place WorkBench"
-			script = "spawn player_build;";
+			script = "; ['ItemWorkBench','Build'] spawn player_build;";
 			require[] = {};
 			consume[] = {"ItemWorkBench"};
 			create = "WorkBench";
