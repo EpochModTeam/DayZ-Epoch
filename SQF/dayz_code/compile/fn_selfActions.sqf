@@ -682,7 +682,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		};
 		if (DZE_permanentPlot && DZE_PlotOwnership) then {
 			if (s_player_plot_take_ownership < 0 && (_hasAccess select 0)) then {
-				s_player_plot_take_ownership = player addAction [localize "STR_EPOCH_APLOTFORLIFE_TAKE_PLOT_OWNERSHIP", "\z\addons\dayz_code\actions\A_Plot_for_Life\plot_take_ownership.sqf", "", 1, false];
+				s_player_plot_take_ownership = player addAction [localize "STR_EPOCH_APLOTFORLIFE_TAKE_PLOT_OWNERSHIP", "\z\addons\dayz_code\actions\plot_take_ownership.sqf", "", 1, false];
 			};
 		};
 	} else {
