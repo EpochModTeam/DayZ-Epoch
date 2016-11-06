@@ -28,7 +28,7 @@ Supermarket[] =
 	{Loot_MAGAZINE,		1,		ItemMixOil},
 	{Loot_MAGAZINE,		1,		PartPlywoodPack},
 	//{Loot_MAGAZINE,	0.5,	ItemDomeTent}, //IN TENTS GROUP
-	{Loot_MAGAZINE,		1,		ItemCamoNet},
+	{Loot_MAGAZINE,		1,		forest_net_kit},
 	{Loot_MAGAZINE,		0.1,	ItemComboLock},
 	{Loot_MAGAZINE,		3,		ItemBandage},
 	{Loot_MAGAZINE,		2,		ItemPainkiller},

@@ -103,7 +103,7 @@ class WeaponHolder_ItemCamoNet : WeaponHolderBase {
 	model = "z\addons\dayz_communityassets\models\packed_net_green.p3d"; // was models\tentbag_gear.prd ...
 
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemCamoNet'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','forest_net_kit'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 	};
 };
 

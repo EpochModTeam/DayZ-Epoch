@@ -8,7 +8,7 @@
 
 //Simple buildables
 #include "Tent.hpp"
-#include "CamoNet.hpp"
+//#include "CamoNet.hpp" //Duplicate of Epoch camo nets in DZE\Misc.hpp
 #include "TankTrap.hpp"
 #include "WireFence.hpp"
 #include "BearTrap.hpp"

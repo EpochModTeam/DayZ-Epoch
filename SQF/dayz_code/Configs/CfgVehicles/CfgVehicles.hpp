@@ -549,7 +549,7 @@ class CfgVehicles {
 	#include "Buildings\Land_Vysilac_FM.hpp"
 
 	//camo
-	#include "CamoNetting.hpp"
+	//#include "CamoNetting.hpp" //Duplicate of Epoch camo net in DZE\Prop_Defs.hpp
 
 
 	//WeaponHolder

@@ -41,7 +41,7 @@ CrashSiteRU[] =
 	
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		2,		ItemCamonet},
+	{Loot_MAGAZINE,		2,		forest_large_net_kit},
 	{Loot_GROUP,		7,		AttachmentsEast},
 	{Loot_GROUP,		3,		AttachmentsWest},
 	
@@ -100,7 +100,7 @@ CrashSiteUS[] =
 	
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		2,		ItemCamonet},
+	{Loot_MAGAZINE,		2,		forest_large_net_kit},
 	{Loot_GROUP,		10,		AttachmentsWest},
 	
 	//Piles
@@ -158,7 +158,7 @@ CrashSiteEU[] =
 	
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		2,		ItemCamonet},
+	{Loot_MAGAZINE,		2,		desert_net_kit},
 	{Loot_GROUP,		10,		AttachmentsWest},
 	
 	//Piles
@@ -217,7 +217,7 @@ CrashSiteUN[] =
 	
 	//Other
 	{Loot_MAGAZINE,		1,		PartVRotor},
-	{Loot_MAGAZINE,		2,		ItemCamonet},
+	{Loot_MAGAZINE,		2,		desert_large_net_kit},
 	{Loot_GROUP,		3,		AttachmentsEast},
 	{Loot_GROUP,		3,		AttachmentsWest},
 	

@@ -1,4 +1,4 @@
-class ItemCamoNet : CA_Magazine
+/*class ItemCamoNet : CA_Magazine //Duplicate of Epoch forest_net_kit
 {
 	scope = public;
 	count = 1;
@@ -20,7 +20,7 @@ class ItemCamoNet : CA_Magazine
 			create = "CamoNet_DZ";
 		};
 	};
-};
+};*/
 
 /*class ItemCamoNetGrey : ItemCamoNet
 {

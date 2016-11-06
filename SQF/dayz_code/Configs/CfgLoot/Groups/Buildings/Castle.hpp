@@ -24,7 +24,7 @@ Castle[] =
 	{Loot_MAGAZINE,		4,		PartWoodPile},
 	{Loot_MAGAZINE,		2,		ItemComboLock},
 	{Loot_MAGAZINE,		1,		ItemTent},
-	{Loot_MAGAZINE,		1,		ItemCamoNet},
+	{Loot_MAGAZINE,		1,		forest_net_kit},
 
 	//Groups
 	{Loot_GROUP,		5,		AmmoCivilian},
