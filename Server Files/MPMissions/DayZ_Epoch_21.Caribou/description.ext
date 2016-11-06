@@ -1,5 +1,6 @@
 respawn = "BASE";
-respawndelay = 5;
+respawnDelay = 5;
+respawnDialog = 0;
 onLoadMission = "DayZ Epoch Caribou Frontier";
 OnLoadIntro = "Welcome to Caribou Frontier";
 OnLoadIntroTime = 0;

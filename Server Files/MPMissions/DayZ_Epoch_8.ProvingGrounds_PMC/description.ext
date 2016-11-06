@@ -1,5 +1,6 @@
 respawn = "BASE";
-respawndelay = 5;
+respawnDelay = 5;
+respawnDialog = 0;
 onLoadMission = "DayZ Epoch Proving Grounds PMC";
 OnLoadIntro = "Welcome to Proving Grounds PMC";
 OnLoadIntroTime = 0;
