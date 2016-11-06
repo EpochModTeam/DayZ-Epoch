@@ -49,7 +49,7 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 		
 		//If _source contains no object exit. But lets not exit if the unit returns player. Maybe its his own fault.
 		if (isNull _source && !(_ammo in ["Dragged","RunOver"])) then {
-			_vehicleArray = nearestObjects [(getPosATL (vehicle _unit)),["Car","Air","Motorcycle","Ship","Tank"],25];
+			_vehicleArray = nearestObjects [(getPosATL (vehicle _unit)),["Car","Air","Motorcycle","Ship","Tank","TrapTripwireGrenade"],25];
 			{if (typeOf _x == "ParachuteWest") then {_vehicleArray = _vehicleArray - [_x];};} count _vehicleArray;
 			//Don't exit if a drivable vehicle (or drivable vehicle wreck) is nearby, because vehicle explosions register as a null source
 			if (count _vehicleArray == 0) then {
@@ -57,7 +57,8 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 				/*
 					Possible cheat. Record to block any incoming fall damage.
 					NOTE: Only vehicle explosions register a null source. Satchel charges, mines, grenades, vehicle missiles
-					and other explosives DO NOT register a null source. Their source is the player who placed, threw or fired them.
+					and other explosives DO NOT register a null source. UNLESS they are spawned manually via script (i.e. tripwire grenade),
+					their source is always the player who placed, threw or fired them.
 				*/
 				dayz_lastDamageSourceNull = true;
 				diag_log "Warning: Fn_DamageHandler source isNull with no drivable vehicle (or drivable vehicle wreck) in 25m radius. Exiting with no damage.";
