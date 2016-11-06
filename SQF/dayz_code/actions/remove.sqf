@@ -22,7 +22,6 @@ if (DZE_permanentPlot) then {
 	_isOwnerOfObj = (_objOwnerID == dayz_characterID);
 };
 
-if (_obj in DZE_DoorsLocked) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
 if (_obj getVariable ["GeneratorRunning", false]) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_89" call dayz_rollingMessages;};
 	
 _objectID 	= _obj getVariable ["ObjectID","0"];
@@ -31,6 +30,7 @@ _objectUID	= _obj getVariable ["ObjectUID","0"];
 _isOk = true;
 _proceed = false;
 _objType = typeOf _obj;
+if (_objType in DZE_DoorsLocked) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
 
 // Chance to break tools
 _isDestructable = _obj isKindOf "BuiltItems";
