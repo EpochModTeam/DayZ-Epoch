@@ -12,6 +12,7 @@ class BearTrap_DZ : TrapItems {
 	singleUse = 0;
 	nounderground = 0;
 	requireplot = 0;
+	constructioncount = 1;
 	
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn beartrap;";
@@ -124,6 +125,7 @@ class TrapBearTrapFlare : TrapItems {
 	vehicleClass = "Fortifications";
 	nounderground = 0;
 	requireplot = 0;
+	constructioncount = 1;
 
 	script = "beartrapflare"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -175,6 +177,7 @@ class TrapBearTrapSmoke : TrapItems {
 	vehicleClass = "Fortifications";
 	nounderground = 0;
 	requireplot = 0;
+	constructioncount = 1;
 
 	script = "beartrapsmoke"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
@@ -230,6 +233,7 @@ class Trap_Cans : TrapItems {
 	initState = 1; // initial armed state
 	singleUse = 0;
 	requireplot = 0;
+	constructioncount = 1;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripcans;";
@@ -281,6 +285,7 @@ class TrapTripwireFlare : TrapItems {
 	initState = 1; // initial armed state
 	singleUse = 0;
 	requireplot = 0;
+	constructioncount = 1;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripflare;";
@@ -332,6 +337,7 @@ class TrapTripwireGrenade : TrapItems {
 	initState = 1; // initial armed state
 	singleUse = 0;
 	requireplot = 0;
+	constructioncount = 1;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripgrenade;";
@@ -383,6 +389,7 @@ class TrapTripwireSmoke : TrapItems {
 	initState = 1; // initial armed state
 	singleUse = 0;
 	requireplot = 0;
+	constructioncount = 1;
 
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn tripsmoke;";
