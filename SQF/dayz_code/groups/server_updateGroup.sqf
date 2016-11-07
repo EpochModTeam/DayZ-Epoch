@@ -1,4 +1,4 @@
-private ["_event","_groupUIDs","_newGroup","_player","_playerUID"];
+private ["_event","_groupUIDs","_newGroup","_player","_playerUID","_save"];
 
 _event = _this select 0;
 _player = _this select 1;
