@@ -29,7 +29,7 @@ Note: Both server and client should be updated to current A2OA stable 1.63.13112
 
 Current Version: **EpochTest-106-RC2**
 
-Build Date: **October 20th 2016**
+Build Date: **November 6th 2016**
 
 --------------------------
 Test Server Information
