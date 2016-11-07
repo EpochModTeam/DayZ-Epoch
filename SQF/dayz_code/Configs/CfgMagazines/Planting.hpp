@@ -24,7 +24,7 @@ class ItemPumpkinSeed: CA_Magazine {
 			text = "Craft Pumpkin Plant";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
-			requiretools[] = {"ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
+			requiretools[] = {"ItemKnife"};
 			output[] = {{"ItemPumpkinPlant",1},{"ItemWaterbottleUnfilled",1}};
 			input[] = {{"ItemPumpkinSeed",1},{"ItemFertilizer",1},{"ItemWaterbottle",1}};
 		};
@@ -66,7 +66,7 @@ class ItemHempSeed: CA_Magazine {
 			text = "Craft Hemp Plant";
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
-			requiretools[] = {"ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
+			requiretools[] = {"ItemKnife"};
 			output[] = {{"ItemHempPlant",1},{"ItemWaterbottleUnfilled",1}};
 			input[] = {{"ItemHempSeed",1},{"ItemFertilizer",1},{"ItemWaterbottle",1}};
 		};

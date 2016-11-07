@@ -25,7 +25,7 @@ class ItemTent : CA_Magazine
 			text = $STR_EPOCH_PLAYER_270;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"desert_net_kit",1}};
 			input[] = {{"ItemTent",2},{"ItemPole",2}};
 		};
@@ -34,7 +34,7 @@ class ItemTent : CA_Magazine
 			text = $STR_EPOCH_PLAYER_271;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"forest_net_kit",1}};
 			input[] = {{"ItemTent",2},{"ItemPole",2}};
 		};
@@ -69,7 +69,7 @@ class ItemDomeTent : CA_Magazine
 			text = $STR_EPOCH_PLAYER_271;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"forest_net_kit",1}};
 			input[] = {{"ItemDomeTent",2},{"ItemPole",2}};
 		};
@@ -103,7 +103,7 @@ class ItemDesertTent : CA_Magazine
 			text = $STR_EPOCH_PLAYER_270;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"desert_net_kit",1}};
 			input[] = {{"ItemDesertTent",2},{"ItemPole",2}};
 		};

@@ -23,7 +23,7 @@ class FoodPumpkin : FoodEdible {
 		text = $STR_FOOD_NAME_PUMPKIN_CRAFT;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
-			requiretools[] = {"ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
+			requiretools[] = {"ItemKnife"};
 			output[] = {{"ItemPumpkinSeed",5}};
 			input[] = {{"FoodPumpkin",1}};
 		};
