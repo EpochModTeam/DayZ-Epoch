@@ -16,7 +16,7 @@ if (count dayz_myGroup > 1 && {!dayz_requireRadio or {dayz_requireRadio && "Item
 			systemChat format [localize "STR_EPOCH_REJOINED_GROUP",name _leader];
 			
 			// Update saved group in DB
-			PVDZ_Server_UpdateGroup = [0,player];
+			PVDZ_Server_UpdateGroup = [1,player];
 			publicVariableServer "PVDZ_Server_UpdateGroup";
 		};
 	} count allGroups;
