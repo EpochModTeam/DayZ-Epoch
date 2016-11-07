@@ -14,7 +14,7 @@ class ItemCanvas: CA_Magazine
 			text = $STR_EPOCH_PLAYER_190;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"ItemTent",1}};
 			input[] = {{"ItemCanvas",2},{"ItemPole",2}};
 		};
@@ -23,7 +23,7 @@ class ItemCanvas: CA_Magazine
 			text = $STR_EPOCH_PLAYER_191;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"ItemDesertTent",1}};
 			input[] = {{"ItemCanvas",3},{"ItemPole",3}};
 		};
@@ -32,7 +32,7 @@ class ItemCanvas: CA_Magazine
 			text = $STR_EPOCH_PLAYER_192;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"ItemDomeTent",1}};
 			input[] = {{"ItemCanvas",3},{"ItemPole",3}};
 		};
@@ -41,7 +41,7 @@ class ItemCanvas: CA_Magazine
 			text = $STR_EPOCH_PLAYER_193;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"sun_shade_kit",1}};
 			input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
 		};
@@ -50,7 +50,7 @@ class ItemCanvas: CA_Magazine
 			text = $STR_EPOCH_PLAYER_194;
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"ItemBurlap",1}};
 			input[] = {{"ItemCanvas",2}};
 		};
@@ -513,7 +513,7 @@ class desert_net_kit: CA_Magazine
 			text = $STR_EPOCH_PLAYER_229;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"desert_large_net_kit",1}};
 			input[] = {{"desert_net_kit",3}};
 		};
@@ -543,7 +543,7 @@ class forest_net_kit: CA_Magazine
 			text = $STR_EPOCH_PLAYER_229;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"forest_large_net_kit",1}};
 			input[] = {{"forest_net_kit",3}};
 		};
@@ -861,7 +861,7 @@ class PartPlankPack: CA_Magazine
 			text = $STR_EPOCH_PLAYER_251;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"sawmill"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"PartWoodLumber",3}};
 			input[] = {{"PartPlankPack",1}};
 		};
@@ -945,7 +945,7 @@ class PartPlywoodPack: CA_Magazine
 			text = $STR_EPOCH_PLAYER_251;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"sawmill"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"PartWoodPlywood",3}};
 			input[] = {{"PartPlywoodPack",1}};
 		};
@@ -1164,7 +1164,7 @@ class ItemKiloHemp : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269b;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"ItemCanvas",1}};
 			input[] = {{"ItemKiloHemp",1}};
 		};
@@ -1173,7 +1173,7 @@ class ItemKiloHemp : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269a;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
-			requiretools[] = {"ItemKnife"};
+			requiretools[] = {"ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"ItemHempSeed",5}};
 			input[] = {{"ItemKiloHemp",1}};
 		};

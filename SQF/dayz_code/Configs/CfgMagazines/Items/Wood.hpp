@@ -67,7 +67,7 @@ class PartWoodPile : CA_Magazine
 			text = $STR_EPOCH_PLAYER_242;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"sawmill"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"PartWoodLumber",1}};
 			input[] = {{"PartWoodPile",2}};
 		};
@@ -76,7 +76,7 @@ class PartWoodPile : CA_Magazine
 			text = $STR_EPOCH_PLAYER_243;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemKnife"};
+			requiretools[] = {"ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"WoodenArrow",3}};
 			input[] = {{"PartWoodPile",1},{"ItemTrashRazor",1}};
 
@@ -86,7 +86,7 @@ class PartWoodPile : CA_Magazine
 			text = $STR_EPOCH_PLAYER_244;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"stick_fence_kit",1}};
 			input[] = {{"PartWoodPile",6}};
 

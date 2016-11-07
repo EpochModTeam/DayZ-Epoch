@@ -28,7 +28,7 @@ class SkinBase : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269b;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"ItemCanvas",1}};
 			input[] = {{"SkinBase",2}};
 		};
@@ -36,7 +36,7 @@ class SkinBase : CA_Magazine
 			text = $STR_EPOCH_PLAYER_269;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
+			requiretools[] = {"ItemToolbox","ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1","ItemKnifeBlunt"};
 			output[] = {{"ItemBandage",2}};
 			input[] = {{"SkinBase",1},{"ItemTrashToiletpaper",1}};
 		};
