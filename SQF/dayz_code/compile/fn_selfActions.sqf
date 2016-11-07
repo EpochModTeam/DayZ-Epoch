@@ -443,7 +443,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		};	
 
-		if (_isModular || _isModularDoor || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
+		if (_isModular || _isModularDoor || _isGenerator || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
 			if (_hasToolbox && _hasCrowbar) then {
 				_hasAccess = [player, _cursorTarget] call FNC_check_access;
 				if ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) then {
