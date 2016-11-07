@@ -7804,30 +7804,6 @@
 			<English>Hides server watermark and rules feed</English>
 			<German>Blendet das Server Wasserzeichen und die Chatliste aus.</German>
 		</Key>
-		<Key ID="STR_UI_ENABLED">
-			<English>Enabled</English>
-			<French>Activé</French>
-			<Spanish>Activado</Spanish>
-			<Italian>Attivato</Italian>
-			<Hungarian>Engedélyezve</Hungarian>
-			<Polish>włączony</Polish>
-			<Russian>Включен</Russian>
-			<German>Aktiviert</German>
-			<Czech>Povolen</Czech>
-			<Japanese>有効</Japanese>
-		</Key>
-		<Key ID="STR_UI_DISABLED">
-			<English>Disabled</English>
-			<French>Désactivé</French>
-			<Spanish>Desactivado</Spanish>
-			<Italian>Disattivato</Italian>
-			<Hungarian>Kikapcsolva</Hungarian>
-			<Polish>Wyłączone</Polish>
-			<Russian>Откл.</Russian>
-			<German>Deaktiviert</German>
-			<Czech>Zakázáno</Czech>
-			<Japanese>無効</Japanese>
-		</Key>
 	</Package>
 	<Package name="playerstats">
 		<Key ID="str_playerstats_bandit">
@@ -16345,17 +16321,6 @@
 			<German>Spieler</German>
 			<Czech>Hráč</Czech>
 			<Japanese>プレイヤー</Japanese>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYERS">
-			<English>Players</English>
-			<French>Joueurs</French>
-			<Spanish>Jugadores</Spanish>
-			<Italian>Giocatori</Italian>
-			<Hungarian>Játékosok</Hungarian>
-			<Polish>Gracze</Polish>
-			<Russian>Игроки</Russian>
-			<German>Spieler</German>
-			<Czech>Hráči</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_GROUPS_KEY">
 			<English>Groups (F5)</English>

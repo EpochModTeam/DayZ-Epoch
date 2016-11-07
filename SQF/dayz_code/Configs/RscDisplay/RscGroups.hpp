@@ -134,7 +134,7 @@ class DZ_GroupDialog {
 			h = .05;
 		};
 		class Players: DZ_GroupText {
-			text = $STR_EPOCH_PLAYERS;
+			text = $STR_MP_PLAYERS;
 			x = .1075;
 			y = .165;
 			w = .3;
