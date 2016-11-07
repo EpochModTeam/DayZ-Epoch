@@ -64,7 +64,7 @@ class DoorAccess
 		class ZupaButton_2: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
-			text = $STR_EPOCH_CANCEL;
+			text = $STR_DISP_CANCEL;
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.20;

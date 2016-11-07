@@ -33,7 +33,7 @@ if (isClass _config) then {
 	};
 };
 
-if (count _attachments < 1) then {_attachments = [localize "STR_EPOCH_NONE"];};
+if (count _attachments < 1) then {_attachments = [localize "STR_SPECIAL_NONE"];};
 
 _attachText = "";
 {

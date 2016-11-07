@@ -16051,15 +16051,6 @@
 			<English>Desert Sniper</English>
 			<German>Wüsten Scharfschütze</German>
 		</Key>
-		<Key ID="STR_EPOCH_SKINS_GENERAL">
-			<English>General</English>
-			<Russian>Генерал</Russian>
-			<French>Général</French>
-			<Italian>Generale</Italian>
-			<Hungarian>Tábornok</Hungarian>
-			<Polish>Generał</Polish>
-			<Czech>Generál</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_SKINS_CREWMAN">
 			<English>Crewman</English>
 			<Russian>Член команды</Russian>
@@ -16283,17 +16274,6 @@
 			<Polish>Uzbrojenie</Polish>
 			<Hungarian>Fegyverek</Hungarian>
 		</Key>
-		<Key ID="STR_EPOCH_NONE">
-			<English>None</English>
-			<German>Keine</German>
-			<Italian>Nessuna</Italian>
-			<Spanish>Ninguna</Spanish>
-			<French>Néant</French>
-			<Czech>Není</Czech>
-			<Russian>Нет</Russian>
-			<Polish>Brak</Polish>
-			<Hungarian>Nincs</Hungarian>
-		</Key>
 		<Key ID="STR_EPOCH_COMPATIBLE">
 			<English>Compatible</English>
 			<German>Kompatibel</German>
@@ -16309,18 +16289,6 @@
 			<Russian>Описание</Russian>
 			<German>Beschreibung</German>
 			<Czech>Popis</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER">
-			<English>Player</English>
-			<French>Joueur</French>
-			<Spanish>Jugador</Spanish>
-			<Italian>Giocatore</Italian>
-			<Hungarian>Játékos</Hungarian>
-			<Polish>Gracz</Polish>
-			<Russian>Игрок</Russian>
-			<German>Spieler</German>
-			<Czech>Hráč</Czech>
-			<Japanese>プレイヤー</Japanese>
 		</Key>
 		<Key ID="STR_EPOCH_GROUPS_KEY">
 			<English>Groups (F5)</English>
@@ -16416,28 +16384,6 @@
 			<German>Ablehnen</German>
 			<Czech>Odmítnout</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_KICK">
-			<English>Kick</English>
-			<French>Ejecter</French>
-			<Spanish>Expulsa</Spanish>
-			<Italian>Espelli</Italian>
-			<Hungarian>Kirúgás</Hungarian>
-			<Polish>Wyrzuć</Polish>
-			<Russian>Выгнать</Russian>
-			<German>Kicken</German>
-			<Czech>Vyhostit</Czech>
-			<Japanese>排除</Japanese>
-		</Key>
-		<Key ID="STR_EPOCH_AI">
-			<English>AI</English>
-			<French>IA</French>
-			<Spanish>IA</Spanish>
-			<Italian>IA</Italian>
-			<Hungarian>MI</Hungarian>
-			<Polish>SI</Polish>
-			<Russian>ИИ</Russian>
-			<German>KI</German>
-		</Key>
 		<Key ID="STR_EPOCH_VIEW">
 			<English>View</English>
 			<French>Voir</French>
@@ -16448,41 +16394,6 @@
 			<Russian>Вид</Russian>
 			<German>Ansicht</German>
 			<Czech>Pohled</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_BACK">
-			<English>Back</English>
-			<French>Retour</French>
-			<Spanish>Atrás</Spanish>
-			<Italian>Indietro</Italian>
-			<Hungarian>Vissza</Hungarian>
-			<Polish>Powrót</Polish>
-			<Russian>Назад</Russian>
-			<German>Zurück</German>
-			<Czech>Zpět</Czech>
-			<Japanese>戻る</Japanese>
-		</Key>
-		<Key ID="STR_EPOCH_REFRESH">
-			<English>Refresh</English>
-			<French>Actualiser</French>
-			<Spanish>Actualizar</Spanish>
-			<Italian>Aggiorna</Italian>
-			<Hungarian>Frissítés</Hungarian>
-			<Polish>Odśwież</Polish>
-			<Russian>Обновить</Russian>
-			<German>Aktualis.</German>
-			<Czech>Aktualizovat</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_DELETE">
-			<English>Delete</English>
-			<French>Supprimer</French>
-			<Spanish>Suprimir</Spanish>
-			<Italian>Cancella</Italian>
-			<Hungarian>Törlés</Hungarian>
-			<Polish>Usuń</Polish>
-			<Russian>Удалить</Russian>
-			<German>Löschen</German>
-			<Czech>Smazat</Czech>
-			<Japanese>削除</Japanese>
 		</Key>
 		<Key ID="STR_EPOCH_ADD">
 			<English>Add</English>
@@ -16517,42 +16428,6 @@
 			<Russian>Огонь (подожженный)</Russian>
 			<German>Feuer (angezündet)</German>
 			<Czech>Ohniště (hořící)</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_RED">
-			<English>Red</English>
-			<French>Rouge</French>
-			<Spanish>Rojo</Spanish>
-			<Italian>Rosso</Italian>
-			<Hungarian>Piros</Hungarian>
-			<Polish>Czerwony</Polish>
-			<Russian>Красный</Russian>
-			<German>Rot</German>
-			<Czech>Červená</Czech>
-			<Japanese>赤色</Japanese>
-		</Key>
-		<Key ID="STR_EPOCH_GREEN">
-			<English>Green</English>
-			<French>Vert</French>
-			<Spanish>Verde</Spanish>
-			<Italian>Verde</Italian>
-			<Hungarian>Zöld</Hungarian>
-			<Polish>Zielony</Polish>
-			<Russian>Зеленый</Russian>
-			<German>Grün</German>
-			<Czech>Zelená</Czech>
-			<Japanese>緑色</Japanese>
-		</Key>
-		<Key ID="STR_EPOCH_BLUE">
-			<English>Blue</English>
-			<French>Bleu</French>
-			<Spanish>Azul</Spanish>
-			<Italian>Blu</Italian>
-			<Hungarian>Kék</Hungarian>
-			<Polish>Niebieski</Polish>
-			<Russian>Синий</Russian>
-			<German>Blau</German>
-			<Czech>Modrá</Czech>
-			<Japanese>青色</Japanese>
 		</Key>
 		<Key ID="STR_EPOCH_HUMANS_NEARBY">
 			<English>Humans Nearby</English>
@@ -16653,17 +16528,6 @@
 		<Key ID="STR_EPOCH_DOORS_LOCK">
 			<English>Lock Door</English>
 			<German>Tür abschließen</German>
-		</Key>
-		<Key ID="STR_EPOCH_CANCEL">
-			<English>Cancel</English>
-			<French>Annuler</French>
-			<Spanish>Cancelar</Spanish>
-			<Italian>Annulla</Italian>
-			<Hungarian>Mégse</Hungarian>
-			<Polish>Anuluj</Polish>
-			<Russian>Отмена</Russian>
-			<German>Abbrechen</German>
-			<Czech>Zrušit</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_NEED_HELP">
 			<English>You need more people to help you push.</English>

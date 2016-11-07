@@ -213,8 +213,8 @@ class Skin_TK_Soldier_Sniper_EP1_DZ: SkinBase {
 };
 class Skin_TK_Commander_EP1_DZ: SkinBase {
 	scope = public;
-	displayName = $STR_EPOCH_SKINS_GENERAL;
-	descriptionShort = $STR_EPOCH_SKINS_GENERAL;
+	displayName = $STR_GENERAL;
+	descriptionShort = $STR_GENERAL;
 };
 class Skin_RU_Soldier_Crew_DZ: SkinBase {
 	scope = public;

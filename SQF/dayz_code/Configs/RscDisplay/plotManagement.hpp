@@ -147,7 +147,7 @@ class PlotManagement
 		class RscShortcutButton_7005: ZSC_RscButtonMenuBlue
 		{
 			idc = -1;
-			text = $STR_EPOCH_DELETE;
+			text = $STR_DISP_DELETE;
 			x = 0.47 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;

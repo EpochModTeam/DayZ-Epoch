@@ -48,7 +48,7 @@ if (count _this > 0) then {
 		if (_sourceWeapon == "Throw") then {_sourceWeapon = (weaponState _source) select 3;};
 		if (_ammo in ["PipeBomb","Mine","MineE"]) then {_sourceWeapon = _ammo;};
 		if (alive _source) then {
-			_sourceName = if (isPlayer _source) then {name _source} else {localize "STR_EPOCH_AI"};
+			_sourceName = if (isPlayer _source) then {name _source} else {localize "STR_PLAYER_AI"};
 		};
 	};
 };

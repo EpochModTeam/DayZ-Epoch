@@ -48,7 +48,7 @@ class DoorManagement
 		class RscShortcutButton_7105: ZSC_RscButtonMenuBlue
 		{
 			idc = 7105;
-			text = $STR_EPOCH_DELETE;
+			text = $STR_DISP_DELETE;
 			x = 0.47 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;

@@ -119,7 +119,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_BACK: AT_Zupa_BlueButton
 		{
 			idc = 7449;
-			text = $STR_EPOCH_BACK;
+			text = $STR_DISP_BACK;
 			x = 0.21 * safezoneW + safezoneX;
 			y = 0.33 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;

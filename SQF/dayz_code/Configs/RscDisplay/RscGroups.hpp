@@ -189,7 +189,7 @@ class DZ_GroupDialog {
 		};
 		class Kick: DZ_GroupButton {
 			idc = 4;
-			text = $STR_EPOCH_KICK;
+			text = $STR_DISP_MP_DS_KICK;
 			onButtonClick = "(_this select 0) ctrlShow false; call dayz_kickFromGroup;";
 			y = .239;
 		};

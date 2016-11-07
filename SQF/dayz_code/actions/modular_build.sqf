@@ -491,13 +491,13 @@ if (_canBuild select 0) then {
 							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
 							dayz_combination = _combination;
 							if (_combination_1 == 100) then {
-								_combination_1_Display = localize "STR_EPOCH_RED";
+								_combination_1_Display = localize "STR_TEAM_RED";
 							};
 							if (_combination_1 == 101) then {
-								_combination_1_Display = localize "STR_EPOCH_GREEN";
+								_combination_1_Display = localize "STR_TEAM_GREEN";
 							};
 							if (_combination_1 == 102) then {
-								_combination_1_Display = localize "STR_EPOCH_BLUE";
+								_combination_1_Display = localize "STR_TEAM_BLUE";
 							};
 							_combinationDisplay = format["%1%2%3",_combination_1_Display,_combination_2,_combination_3];
 						};
