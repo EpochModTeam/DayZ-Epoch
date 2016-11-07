@@ -47,7 +47,7 @@ _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 
 // Need Near Requirements
 _needNear = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "neednearby");
-if("fire" in _needNear) then {
+if ("fire" in _needNear) then {
 	_pPos = [player] call FNC_GetPos;
 	_isNear = {inflamed _x} count (_pPos nearObjects _distance);
 	if(_isNear == 0) then {
@@ -55,14 +55,14 @@ if("fire" in _needNear) then {
 		_reason = "fire";
 	};
 };
-if("workshop" in _needNear) then {
+if ("workshop" in _needNear) then {
 	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
 	if(_isNear == 0) then {
 		_abort = true;
 		_reason = "workshop";
 	};
 };
-if(_abort) exitWith {
+if (_abort) exitWith {
 	format[localize "str_epoch_player_149",_reason,_distance] call dayz_rollingMessages;
 	dayz_actionInProgress = false;
 };
@@ -70,7 +70,6 @@ if(_abort) exitWith {
 // diag_log format["Checking for fire: %1", _isFireNear];
 
 if (_canDo) then {
-
 	_selectedRecipeTools = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "requiretools");
 	_selectedRecipeOutput = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "output");
 	_selectedRecipeInput = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "input");
@@ -79,12 +78,12 @@ if (_canDo) then {
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
 
 	_sfx = getText(configFile >> _baseClass >> _item >> "sfx");
-	if(_sfx == "") then {
+	if (_sfx == "") then {
 		_sfx = "repair";
 	};
 
 	_randomOutput = 0;
-	if(isNumber (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "randomOutput")) then {
+	if (isNumber (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "randomOutput")) then {
 		_randomOutput = getNumber(configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "randomOutput");
 	};
 
@@ -92,19 +91,19 @@ if (_canDo) then {
 	_tradeComplete = 0;
 
 	while {_craft_doLoop} do {
-
 		_temp_removed_array = [];
 
 		_missing = "";
 		_missingTools = false;
 		{
 			_hastoolweapon = _x in weapons player;
-			if(!_hastoolweapon) exitWith { _craft_doLoop = false; _missingTools = true; _missing = _x; };
+			if (_x == "ItemKnife") then {
+				{if (_x in Dayz_Gutting) exitWith {_hastoolweapon = true};} forEach (items player);
+			};
+			if (!_hastoolweapon) exitWith { _craft_doLoop = false; _missingTools = true; _missing = _x; };
 		} forEach _selectedRecipeTools;
 
-		if(!_missingTools) then {
-
-
+		if (!_missingTools) then {
 			// Dry run to see if all parts are available.
 			_proceed = true;
 			if (count _selectedRecipeInput > 0) then {
@@ -114,14 +113,13 @@ if (_canDo) then {
 
 					_qty = { (_x == _itemIn) || (!_selectedRecipeInputStrict && configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
 
-					if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
+					if (_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
 
 				} forEach _selectedRecipeInput;
 			};
 
 			// If all parts proceed
 			if (_proceed) then {
-
 				localize "str_epoch_player_62" call dayz_rollingMessages;
 
 				["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
@@ -154,7 +152,6 @@ if (_canDo) then {
 				r_doLoop = false;
 
 				if (_finished) then {
-
 					_removed_total = 0; // count total of removed items
 					_tobe_removed_total = 0; // count total of all to be removed items
 					_waterLevel_lowest = 0; // find the lowest _waterLevel
@@ -182,7 +179,7 @@ if (_canDo) then {
 
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
-							if( (_removed < _countIn) && ((_x == _itemIn) || (!_selectedRecipeInputStrict && _configParent == _itemIn))) then {
+							if ((_removed < _countIn) && ((_x == _itemIn) || (!_selectedRecipeInputStrict && _configParent == _itemIn))) then {
 								if ((_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && (getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest))) then {
 									_num_removed = ([player,_x] call BIS_fnc_invRemove);
 								}
@@ -191,7 +188,7 @@ if (_canDo) then {
 								};
 								_removed = _removed + _num_removed;
 								_removed_total = _removed_total + _num_removed;
-								if(_num_removed >= 1) then {
+								if (_num_removed >= 1) then {
 									//diag_log format["debug remove: %1 of: %2", _configParent, _x];
 									if (_x == "ItemWaterbottle" || _configParent == "ItemWaterbottle") then {
 										_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
@@ -206,13 +203,13 @@ if (_canDo) then {
 					//diag_log format["removed: %1 of: %2", _removed, _tobe_removed_total];
 
 					// Only proceed if all parts were removed successfully
-					if(_removed_total == _tobe_removed_total) then {
+					if (_removed_total == _tobe_removed_total) then {
 						_num_removed_weapons = 0;
 						{
 							_num_removed_weapons = _num_removed_weapons + ([player,_x] call BIS_fnc_invRemove);
 						} forEach _inputWeapons;
 						if (_num_removed_weapons == (count _inputWeapons)) then {
-							if(_randomOutput == 1) then {
+							if (_randomOutput == 1) then {
 								if (!isNil "_outputWeapons" && count _outputWeapons > 0) then {
 									_selectedWeapon = _outputWeapons call BIS_fnc_selectRandom;
 									_outputWeapons = [_selectedWeapon];
