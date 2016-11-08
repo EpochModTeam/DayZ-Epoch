@@ -16317,6 +16317,12 @@
 			<English>You invited %1 to join the group.</English>
 			<German>Du hast %1 eingeladen der Gruppe beizutreten.</German>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_KICKED">
+			<English>%1 was kicked from the group.</English>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_LEFT">
+			<English>%1 left the group.</English>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_JOINED">
 			<English>%1 joined the group.</English>
 			<German>%1 ist der Gruppe beigetreten.</German>
@@ -16356,6 +16362,9 @@
 			<English>Disband</English>
 			<Russian>распускать</Russian>
 			<German>Auflösen</German>
+		</Key>
+		<Key ID="STR_EPOCH_GROUP_DISBANDED">
+			<English>The group disbanded</English>
 		</Key>
 		<Key ID="STR_EPOCH_LEAVE">
 			<English>Leave</English>

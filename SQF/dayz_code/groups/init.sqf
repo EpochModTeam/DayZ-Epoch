@@ -13,7 +13,7 @@ if (count dayz_myGroup > 1 && {!dayz_requireRadio or {dayz_requireRadio && "Item
 			_oldGroup = group player;
 			[player] joinSilent _x;
 			if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
-			systemChat format [localize "STR_EPOCH_REJOINED_GROUP",name _leader];
+			format[localize "STR_EPOCH_REJOINED_GROUP",name _leader] call dayz_rollingMessages;
 			
 			// Update saved group in DB
 			PVDZ_Server_UpdateGroup = [1,player];

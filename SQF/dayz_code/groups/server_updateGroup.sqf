@@ -1,7 +1,8 @@
-private ["_event","_groupUIDs","_newGroup","_player","_playerUID","_save"];
+private ["_event","_groupUIDs","_name","_newGroup","_player","_playerUID","_save","_unit"];
 
 _event = _this select 0;
 _player = _this select 1;
+_name = if (alive _player) then {name _player} else {"unknown"};
 _playerUID = getPlayerUID _player;
 
 if (_event < 3) then {
@@ -11,7 +12,7 @@ if (_event < 3) then {
 
 if (_event == -1) exitWith {
 	//Promote _player
-	PVDZ_groupInvite = [_player,0];
+	PVDZ_groupInvite = [-1,_player];
 	(owner (leader group _player)) publicVariableClient "PVDZ_groupInvite";
 };
 
@@ -28,7 +29,8 @@ _newGroup = switch _event do {
 	case 1: {_groupUIDs};
 	//Kick (target was already kicked from group)
 	case 2: {
-		format["CHILD:204:%1:%2:%3:",(_this select 2),dayZ_instance,[]] call server_hiveWrite;
+		_name = _this select 2; //Kicked player's UID
+		format["CHILD:204:%1:%2:%3:",_name,dayZ_instance,[]] call server_hiveWrite;
 		_groupUIDs
 	};
 	//Leave
@@ -39,14 +41,24 @@ _newGroup = switch _event do {
 	};
 	//Disband
 	case 4: {
+		_name = 0; //Not needed
 		dayz_groupDisbanded = true;
 		(owner _player) publicVariableClient "dayz_groupDisbanded";
 		[]
 	};
 };
 
-// Update all group members' saved group in DB
+//Update all group members' saved group in DB
 {
 	_save = if (_event == 3 && _x == _playerUID) then {[]} else {_newGroup};
 	format["CHILD:204:%1:%2:%3:",_x,dayZ_instance,_save] call server_hiveWrite;
 } count _groupUIDs;
+
+//Notify group members of the change
+PVDZ_groupInvite = [_event,_name];
+{
+	_unit = getPlayerUID _x;
+	if (_unit in _groupUIDs && {_unit != _playerUID}) then {
+		owner _x publicVariableClient "PVDZ_groupInvite";
+	};
+} count allUnits;
