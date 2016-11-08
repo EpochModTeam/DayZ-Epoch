@@ -486,7 +486,6 @@ class FSM
                          "_isHiveOk = false;" \n
                          "_newPlayer = false;" \n
                          "_isInfected = false;" \n
-                         "dayz_myGroup = [];" \n
                          "_characterCoins = 0;" \n
                          "_globalCoins = 0;" \n
                          "_CoinsSpecial = 0;" \n
@@ -495,7 +494,6 @@ class FSM
                          "	_isHiveOk = _msg select 7;" \n
                          "	_newPlayer = _msg select 8;" \n
                          "	_isInfected = _msg select 9;" \n
-                         "	dayz_myGroup		= _msg select 10;" \n
                          "	_characterCoins		= _msg select 11;" \n
                          "	_globalCoins		= _msg select 12;" \n
                          "	_CoinsSpecial		= _msg select 13;" \n
