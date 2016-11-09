@@ -1,7 +1,7 @@
 class DoorManagement
 {
 	idd = 711195;
-	onLoad = "uiNamespace setVariable ['DoorManagement', _this select 0]";
+	onLoad = "if (DZE_doorManagementMustBeClose) then {(_this select 0) displayCtrl 7108 ctrlSetText localize 'STR_EPOCH_HUMANS_NEARBY';};";
 	class Controls {
 		class RscText_7100: ZSC_RscTextT
 		{
@@ -80,7 +80,7 @@ class DoorManagement
 		class RscText_7108: ZSC_RscTextT
 		{
 			idc = 7108;
-			text = $STR_EPOCH_HUMANS_NEARBY;
+			text = $STR_MP_PLAYERS;
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.38 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;

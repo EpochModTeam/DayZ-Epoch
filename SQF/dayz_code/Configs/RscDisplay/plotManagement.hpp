@@ -1,7 +1,7 @@
 class PlotManagement
 {
 	idd = 711194;
-	onLoad = "uiNamespace setVariable ['PlotManagement', _this select 0]";
+	onLoad = "if (DZE_plotManagementMustBeClose) then {(_this select 0) displayCtrl 7015 ctrlSetText localize 'STR_EPOCH_HUMANS_NEARBY';};";
 	class Controls {
 		class RscText_7000: ZSC_RscTextT
 		{
@@ -92,8 +92,8 @@ class PlotManagement
 
 		class RscText_7008: ZSC_RscTextT
 		{
-			idc = -1;
-			text = $STR_EPOCH_HUMANS_NEARBY;
+			idc = 7015;
+			text = $STR_MP_PLAYERS;
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.38 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
