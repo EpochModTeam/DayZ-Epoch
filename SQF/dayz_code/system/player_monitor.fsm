@@ -1135,11 +1135,6 @@ class FSM
                         itemno = 31;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Initialize'];};" \n
                          "" \n
-                         "if (!isNil ""dayzInfectedCamps"") then {" \n
-                         "	//diag_log (""Infected Camps: "" +str(dayzInfectedCamps));" \n
-                         "	dayzInfectedCamps call infectedcamps;" \n
-                         "};" \n
-                         "" \n
                          "//Medical" \n
                          "dayz_medicalH = [] execVM ""\z\addons\dayz_code\medical\init_medical.sqf"";	//Medical Monitor Script (client only)" \n
                          "[player] call fnc_usec_damageHandle;" \n
