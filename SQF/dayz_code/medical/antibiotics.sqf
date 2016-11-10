@@ -2,8 +2,14 @@
 
 private ["_msg","_antibiotics","_hasAntibiotics","_id","_hasMeds","_unit"];
 
-_unit = _this select 0;
-_medsUsed = _this select 1;
+if (count _this > 2) then {
+	_unit = (_this select 3) select 0;
+	_medsUsed = nil;
+} else {
+	_unit = _this select 0;
+	_medsUsed = _this select 1;
+};
+
 _antibiotics =["ItemAntibiotic","ItemAntibiotic1","ItemAntibiotic2","ItemAntibiotic3","ItemAntibiotic4","ItemAntibiotic5","ItemAntibiotic6"];
 _hasAntibiotics = false;
 
