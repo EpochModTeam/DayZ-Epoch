@@ -1,13 +1,14 @@
 // [_object,_type] spawn server_updateObject;
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 if (isNil "sm_done") exitWith {};
-private ["_objectID","_objectUID","_object_position","_isNotOk","_object","_type","_recorddmg","_forced","_lastUpdate","_needUpdate","_object_inventory","_object_damage","_objWallDamage","_object_killed","_object_maintenance","_object_variables"];
+private ["_objectID","_objectUID","_object_position","_isNotOk","_object","_type","_recorddmg","_forced","_lastUpdate","_needUpdate","_object_inventory","_object_damage","_objWallDamage","_object_killed","_object_maintenance","_object_variables","_totalDmg"];
 
 _object = _this select 0;
 _type = _this select 1;
 _recorddmg = false;
 _isNotOk = false;
 _forced = if (count _this > 2) then {_this select 2} else {false};
+_totalDmg = if (count _this > 3) then {_this select 3} else {false};
 _objectID = "0";
 _objectUID = "0";
 
@@ -127,7 +128,7 @@ _object_damage = {
 		};
 	} forEach _hitpoints;
 	
-	if (_allFixed) then {_object setDamage 0;};
+	if (_allFixed && !_totalDmg) then {_object setDamage 0;};
 	
 	if (_forced) then {        
 		if (_object in needUpdate_objects) then {needUpdate_objects = needUpdate_objects - [_object];};
