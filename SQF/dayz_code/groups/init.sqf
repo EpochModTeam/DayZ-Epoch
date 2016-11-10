@@ -1,19 +1,20 @@
-private ["_leader","_oldGroup"];
+private ["_leader","_oldGroup","_savedGroup"];
 
 uiSleep 1;
 if (count (units group player) > 1) then {
 	[player] joinSilent grpNull;
 };
 
-if (count dayz_myGroup > 1 && {!dayz_requireRadio or {dayz_requireRadio && "ItemRadio" in items player}}) then {
+_savedGroup = PVCDZ_plr_Login select 10;
+if (count _savedGroup > 1 && {!dayz_requireRadio or {dayz_requireRadio && "ItemRadio" in items player}}) then {
 	{
 		//Only auto join player into group if leader is in their savedGroup
 		_leader = leader _x;
-		if (getPlayerUID _leader in dayz_myGroup) exitWith {
+		if (getPlayerUID _leader in _savedGroup) exitWith {
 			_oldGroup = group player;
 			[player] joinSilent _x;
 			if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
-			systemChat format [localize "STR_EPOCH_REJOINED_GROUP",name _leader];
+			format[localize "STR_EPOCH_REJOINED_GROUP",name _leader] call dayz_rollingMessages;
 			
 			// Update saved group in DB
 			PVDZ_Server_UpdateGroup = [1,player];

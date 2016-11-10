@@ -16,5 +16,5 @@ if (_count / DZE_BuildingLimit * 100 > 75) then {
 	_colour = "#ff0000";
 };
 
-_ctrl = ((uiNamespace getVariable "PlotManagement") displayCtrl 7014);
+_ctrl = findDisplay 711194 displayCtrl 7014;
 _ctrl ctrlSetStructuredText parseText format["<t color='%3'>%1 / %2</t>" , _count, DZE_BuildingLimit,_colour];

@@ -17,7 +17,7 @@ Please see configVariables.sqf for the value of gems (DZE_GemWorthArray) and the
 
 */
 
-private ["_objectID","_objectUID","_target","_objects","_requirements","_count","_objects_filtered","_ctrl","_itemText","_type","_amount","_success","_wealth","_message1","_message2","_option"];
+private ["_objectID","_objectUID","_target","_objects","_requirements","_count","_objects_filtered","_itemText","_type","_amount","_success","_wealth","_message1","_message2","_option","_line1","_line2","_plotDialog"];
 disableSerialization;
 
 if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
@@ -36,6 +36,9 @@ _objects = nearestObjects [_target, DZE_maintainClasses, DZE_maintainRange];
 _objects_filtered = [];
 _requirements = [];
 _count = 0;
+_plotDialog = findDisplay 711194;
+_line1 = _plotDialog displayCtrl 7012;
+_line2 = _plotDialog displayCtrl 7013;
 
 _req = {
 	private ["_count","_amount","_itemText"];
@@ -48,7 +51,7 @@ _req = {
 };
 
 _maintain = {
-	private ["_requirements","_count","_amount","_itemText","_wealth","_success","_message1","_message2","_ctrl","_enoughMoney","_moneyInfo"];
+	private ["_requirements","_count","_amount","_itemText","_wealth","_success","_message1","_message2","_enoughMoney","_moneyInfo"];
 
 	_count = count (_this select 0);
 	_requirements = _count call _req;
@@ -96,10 +99,8 @@ _maintain = {
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			
 			if (DZE_permanentPlot) then {
-				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
-				_ctrl ctrlSetText _message1;
-				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7013;
-				_ctrl ctrlSetText _message2;
+				_line1 ctrlSetText _message1;
+				_line2 ctrlSetText _message2;
 			} else {
 				_message1 call dayz_rollingMessages;
 			};
@@ -114,10 +115,8 @@ _maintain = {
 		};
 		_message2 = " ";
 		if (DZE_permanentPlot) then {
-			_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
-			_ctrl ctrlSetText _message1;
-			_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7013;
-			_ctrl ctrlSetText _message2;
+			_line1 ctrlSetText _message1;
+			_line2 ctrlSetText _message2;
 		} else {
 			_message1 call dayz_rollingMessages;
 		};
@@ -147,8 +146,7 @@ switch _option do {
 		if (_count == 0) then {
 			_message1 = localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE";
 			if (DZE_permanentPlot) then {
-				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
-				_ctrl ctrlSetText _message1;
+				_line1 ctrlSetText _message1;
 			} else {
 				_message1 call dayz_rollingMessages;
 			};
@@ -161,8 +159,7 @@ switch _option do {
 				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _count,_requirements select 1,""];
 			};
 			if (DZE_permanentPlot) then {
-				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7012;
-				_ctrl ctrlSetText _message1;
+				_line1 ctrlSetText _message1;
 			} else {
 				_message1 call dayz_rollingMessages;
 			};
@@ -175,8 +172,7 @@ switch _option do {
 		};
 		if (_count != count _objects) then {
 			if (DZE_permanentPlot) then {
-				_ctrl = (uiNamespace getVariable "PlotManagement") displayCtrl 7013;
-				_ctrl ctrlSetText _message2;
+				_line2 ctrlSetText _message2;
 			} else {
 				_message2 call dayz_rollingMessages;
 			};

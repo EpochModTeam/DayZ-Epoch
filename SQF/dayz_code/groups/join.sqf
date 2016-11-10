@@ -27,12 +27,6 @@ if (!isNull _inviter) then {
 	_oldGroup = group player;
 	[player] joinSilent (group _inviter);
 	if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
-	{
-		_uid = getPlayerUID _x;
-		if !(_uid in dayz_myGroup) then {
-			dayz_myGroup set [count dayz_myGroup,_uid];
-		};
-	} count (units group player);
 
 	// Update saved group in DB
 	PVDZ_Server_UpdateGroup = [1,player];

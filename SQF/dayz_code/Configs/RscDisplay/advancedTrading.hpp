@@ -10,7 +10,6 @@ class AT_Zupa_BlueButton: ZSC_RscButtonMenu {
 class AdvancedTrading
 {
 	idd = 711197;
-	onLoad = "uiNamespace setVariable ['AdvancedTrading', _this select 0]";
 	class Controls {
 		class RscText_ATBackground1: ZSC_RscText
 		{
