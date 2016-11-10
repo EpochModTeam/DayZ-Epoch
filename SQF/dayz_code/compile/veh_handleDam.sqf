@@ -14,7 +14,7 @@ or by zombie_attack
 - return : updated damage for that part
 broadcast: boolean. if true, then the request will be sent to all players if the vehicle is not local.
 ************************************************************/
-private["_unit","_selection","_strH","_total","_damage","_needUpdate"];
+private["_unit","_selection","_strH","_total","_damage","_needUpdate","_totalDmg"];
 
 _unit = _this select 0;
 _selection = _this select 1;
@@ -22,8 +22,10 @@ _total = _this select 2;
 
 if (_selection != "") then {
 	_strH = "hit_" + _selection;
+	_totalDmg = false;
 } else {
 	_strH = "totalDmg";
+	_totalDmg = true;
 };
 
 if (_total >= 0.98) then {
@@ -32,15 +34,16 @@ if (_total >= 0.98) then {
 
 if (local _unit) then {
 	if (_total > 0) then {
-	
-		_unit setVariable [_strH, _total, true];
+		if (!_totalDmg) then {
+			_unit setVariable [_strH, _total, true];
+		};
 		_unit setHit [_selection, _total];
 
+		PVDZ_veh_Save = [_unit,"damage",false,_totalDmg];
 		if (!isServer) then {
-			PVDZ_veh_Save = [_unit,"damage"];
 			publicVariableServer "PVDZ_veh_Save";
 		} else {
-			[_unit, "damage"] call server_updateObject;
+			PVDZ_veh_Save call server_updateObject;
 		};
 	};
 } else {
