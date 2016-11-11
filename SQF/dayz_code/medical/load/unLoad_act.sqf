@@ -7,6 +7,8 @@ _args = _this select 3;
 _name = _args select 0;
 _vcl = _args select 1;
 _crewVcl = crew _vcl;
+LHA_Deck = [];
+LHA_height = 0;
 
 //_name removeAction NORRN_pullOutAction; // NORRN_pullOutAction is defined anywhere
 
