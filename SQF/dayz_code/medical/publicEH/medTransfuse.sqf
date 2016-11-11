@@ -79,8 +79,3 @@ while {r_doLoop} do {
 	//Rerun the loop
 	sleep 1;
 };
-
-if (((r_player_blood / r_player_bloodTotal) >= 0.35) and (player getVariable["USEC_lowBlood",false])) then {
-	r_player_lowblood = false;
-	player setVariable["USEC_lowBlood",false,true];
-};

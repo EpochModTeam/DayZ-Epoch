@@ -269,8 +269,15 @@ while {1 == 1} do {
 
 	//Record low bloow
 	_lowBlood = player getVariable ["USEC_lowBlood", false];
-	if ((r_player_blood < r_player_bloodTotal) and !_lowBlood) then {
-		player setVariable["USEC_lowBlood",true,true];
+	if (r_player_blood < r_player_bloodTotal) then {
+		if (!_lowBlood) then {
+			player setVariable ["USEC_lowBlood",true,true];
+		};
+	} else {
+		if (_lowBlood && !r_player_injured) then {
+			player setVariable ["USEC_lowBlood",false,true];
+			r_player_lowblood = false;
+		};
 	};
 
 	//Broadcast Hunger/Thirst
