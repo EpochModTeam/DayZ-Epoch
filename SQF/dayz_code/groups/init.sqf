@@ -5,8 +5,9 @@ if (count (units group player) > 1) then {
 	[player] joinSilent grpNull;
 };
 
-_savedGroup = PVCDZ_plr_Login select 10;
-if (count _savedGroup > 1 && {!dayz_requireRadio or {dayz_requireRadio && "ItemRadio" in items player}}) then {
+_savedGroup = (PVCDZ_plr_Login select 10) - [getPlayerUID player];
+
+if (count _savedGroup > 0 && {!dayz_requireRadio or {dayz_requireRadio && "ItemRadio" in items player}}) then {
 	{
 		//Only auto join player into group if leader is in their savedGroup
 		_leader = leader _x;
