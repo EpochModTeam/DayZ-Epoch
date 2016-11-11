@@ -1,7 +1,8 @@
-private ["_event","_groupUIDs","_name","_newGroup","_player","_playerUID","_save","_unit"];
+private ["_event","_groupUIDs","_kickedUID","_name","_newGroup","_player","_playerUID","_save","_unit"];
 
 _event = _this select 0;
 _player = _this select 1;
+_kickedUID = if (count _this > 2) then {_this select 2} else {"0"};
 _name = if (alive _player) then {name _player} else {"unknown"};
 _playerUID = getPlayerUID _player;
 
@@ -29,7 +30,7 @@ _newGroup = switch _event do {
 	case 1: {_groupUIDs};
 	//Kick (target was already kicked from group)
 	case 2: {
-		_name = _this select 2; //Kicked player's UID
+		_name = _kickedUID;
 		format["CHILD:204:%1:%2:%3:",_name,dayZ_instance,[]] call server_hiveWrite;
 		_groupUIDs
 	};
@@ -56,6 +57,7 @@ _newGroup = switch _event do {
 
 //Notify group members of the change
 PVDZ_groupInvite = [_event,_name];
+_groupUIDs set [count _groupUIDs,_kickedUID];
 {
 	_unit = getPlayerUID _x;
 	if (_unit in _groupUIDs && {_unit != _playerUID}) then {

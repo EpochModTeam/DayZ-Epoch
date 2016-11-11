@@ -16320,6 +16320,9 @@
 			<English>You invited %1 to join the group.</English>
 			<German>Du hast %1 eingeladen der Gruppe beizutreten.</German>
 		</Key>
+		<Key ID="STR_EPOCH_GROUP_KICKED">
+			<English>You were kicked from the group</English>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_KICKED">
 			<English>%1 was kicked from the group.</English>
 		</Key>

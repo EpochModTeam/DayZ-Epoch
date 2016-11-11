@@ -7,7 +7,13 @@ if (typeName _add == "SCALAR") exitWith {
 	switch _add do {
 		case -1: { (group player) selectLeader _uid; }; //Promote
 		case 1: { systemChat format[localize "STR_EPOCH_PLAYER_JOINED",_uid]; };
-		case 2: { systemChat format[localize "STR_EPOCH_PLAYER_KICKED",name (_uid call dayz_getPlayer)]; };
+		case 2: {
+			if (_uid == getPlayerUID player) then {
+				localize "STR_EPOCH_GROUP_KICKED" call dayz_rollingMessages;
+			} else {
+				systemChat format[localize "STR_EPOCH_PLAYER_KICKED",name (_uid call dayz_getPlayer)];
+			};
+		};
 		case 3: { systemChat format[localize "STR_EPOCH_PLAYER_LEFT",_uid]; };
 		case 4: { localize "STR_EPOCH_GROUP_DISBANDED" call dayz_rollingMessages; };
 	};
