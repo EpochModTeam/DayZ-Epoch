@@ -154,7 +154,7 @@ if (isPlayer cursorTarget) then {
 				_vehicle = _vehClose select 0;
 				_vehType = getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
 				NORRN_loadWoundedAction = _unit addAction [format[localize "str_actions_medical_03",_vehType], "\z\addons\dayz_code\medical\load\load_act.sqf",[player,_vehicle,_unit], 0, true, true];
-				r_player_actions set [count r_player_actions,_action];
+				r_player_actions set [count r_player_actions,NORRN_loadWoundedAction];
 			};
 			//Allow player to bandage
 			if(_injured && _hasBandage) then {
