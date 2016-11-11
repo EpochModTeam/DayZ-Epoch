@@ -192,7 +192,7 @@ class TraderDialog
 			y = 0.720064 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;
 			h = 0.055016 * safezoneH;
-			onButtonClick = "[(lbCurSel 12001)] call TraderDialogBuy; ((ctrlParent (_this select 0)) closeDisplay 9000);";
+			onButtonClick = "[(lbCurSel 12001)] call TraderDialogBuy; ((ctrlParent (_this select 0)) closeDisplay 2);";
 		};
 		class RscShortcutButtonTraderDialog_1701: RscShortcutButtonTraderDialog
 		{
@@ -202,7 +202,7 @@ class TraderDialog
 			y = 0.720064 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;
 			h = 0.055016 * safezoneH;
-			onButtonClick = "[(lbCurSel 12001)] call TraderDialogSell; ((ctrlParent (_this select 0)) closeDisplay 9000);";
+			onButtonClick = "[(lbCurSel 12001)] call TraderDialogSell; ((ctrlParent (_this select 0)) closeDisplay 2);";
 		};
 		class RscShortcutButtonTraderDialog_1703: RscShortcutButtonTraderDialog
 		{
@@ -212,7 +212,7 @@ class TraderDialog
 			y = 0.720064 * safezoneH + safezoneY;
 			w = 0.1287436 * safezoneW;
 			h = 0.055016 * safezoneH;
-			onButtonClick = "[[],0] call epoch_returnChange; ((ctrlParent (_this select 0)) closeDisplay 9000); localize ""STR_EPOCH_PLAYER_307"" call dayz_rollingMessages;";
+			onButtonClick = "[[],0] call epoch_returnChange; ((ctrlParent (_this select 0)) closeDisplay 2); localize ""STR_EPOCH_PLAYER_307"" call dayz_rollingMessages;";
 		};
 		class RscTextTraderDialog_1003: RscTextTraderDialog
 		{
@@ -260,7 +260,7 @@ class TraderDialog
 			y = 0.720064 * safezoneH + safezoneY;
 			w = 0.0743718 * safezoneW;
 			h = 0.055016 * safezoneH;
-			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 9000);";
+			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 2);";
 		};
 		class RscText_1007: RscTextTraderDialog
 		{

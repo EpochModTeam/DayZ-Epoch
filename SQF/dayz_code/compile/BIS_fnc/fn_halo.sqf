@@ -314,7 +314,7 @@ if (typename _this == typename []) then {
 
 				//--- Crash
 				_velZ = velocity _para select 2;
-				if ((_velZ - bis_fnc_halo_para_velZ) > 7 && (getposatl _para select 2) < 100) then {player setdamage 1;debuglog ["Log::::::::::::::",(_velZ - bis_fnc_halo_para_velZ)];};
+				//if ((_velZ - bis_fnc_halo_para_velZ) > 7 && (getposatl _para select 2) < 100) then {player setdamage 1;debuglog ["Log::::::::::::::",(_velZ - bis_fnc_halo_para_velZ)];};
 				bis_fnc_halo_para_velZ = _velZ;
 
 				//--- Pos

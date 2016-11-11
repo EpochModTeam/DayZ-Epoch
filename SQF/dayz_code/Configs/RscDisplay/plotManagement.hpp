@@ -161,7 +161,7 @@ class PlotManagement
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.75 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 9000);";
+			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 2);";
 		};
 	};
 };

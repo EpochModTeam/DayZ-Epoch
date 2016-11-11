@@ -2,7 +2,6 @@
 //Created by Dr Bane 20/11/2013
 //Copyright Dr Bane And Musty Gaming
 
-if (isServer) then {
 
 _vehicle_27 = objNull;
 if (true) then
@@ -4184,5 +4183,4 @@ _this setVariable ["", true]; // prevent network SV by loot/zeds spawner
   _vehicle_1237 = _this;
   _this setDir -139.52458;
   _this setPos [1760.7675, 11721.288, -0.48907313];
-};
 };

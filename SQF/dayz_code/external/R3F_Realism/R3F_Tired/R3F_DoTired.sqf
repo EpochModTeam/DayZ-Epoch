@@ -78,12 +78,12 @@ while {true} do {
 		_level = 0 max (1 - (_level / 100));
 		
 		#ifdef R3F_TIRED_DEBUG
-			hintsilent format["Fatique : %1/%2\nBlack level : %3\nPoids total : %4\n Poids armement : %5",
+			/*hintsilent format["Fatique : %1/%2\nBlack level : %3\nPoids total : %4\n Poids armement : %5",
 				R3F_TIRED_Accumulator,
 				R3F_TIRED_BLACKOUT_LEVEL,
 				_level,
 				R3F_TIRED_POIDS_TOTAL_PLAYER,
-				R3F_Weight];
+				R3F_Weight];*/
 		#endif
 		
 		[_level] call R3F_TIRED_FNCT_Voile_Noir;

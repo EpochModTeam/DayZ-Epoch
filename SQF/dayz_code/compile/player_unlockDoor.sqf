@@ -30,7 +30,7 @@ if (!isNull dayz_selectedDoor) then {
 	
 	if (_notNearestPlayer) then {
 		// close display since another player is closer
-		_display closeDisplay 3000;
+		_display closeDisplay 2;
 		localize "STR_EPOCH_ACTIONS_16" call dayz_rollingMessages;
 	} else {
 		// get object combination
@@ -58,7 +58,7 @@ if (!isNull dayz_selectedDoor) then {
 			[player,"combo_unlock",0,false] call dayz_zombieSpeak;
 
 			// close display
-			_display closeDisplay 3000;
+			_display closeDisplay 2;
 
 			// unlock if locked
 			if (_obj animationPhase "Open_hinge" == 0) then {
@@ -86,17 +86,17 @@ if (!isNull dayz_selectedDoor) then {
 			if (KeyCodeTry >= ((round(random 4)) + 4)) then {	
 				if (isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};	
 				localize "str_epoch_player_19" call dayz_rollingMessages;
-				_display closeDisplay 3000;
+				_display closeDisplay 2;
 			};
 
 			if(_doorMethod == "Eye") then {
 				localize "STR_EPOCH_DOORACCESS_FAILURE" call dayz_rollingMessages;
-				_display closeDisplay 3000;
+				_display closeDisplay 2;
 			};
 		};
 	};
 } else {
 	// close display since no target
-	_display closeDisplay 3000;
+	_display closeDisplay 2;
 };
 DZE_DYN_UnlockDoorInprogress = nil;

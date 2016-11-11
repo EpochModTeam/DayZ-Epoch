@@ -10,7 +10,7 @@ if (count(_this) > 0) then
 
 // close DoorAccess if open
 _display = findDisplay 61144;
-_display closeDisplay 3000;
+_display closeDisplay 2;
 
 // Check player access
 _hasAccess = [player, TheDoor] call FNC_check_access;

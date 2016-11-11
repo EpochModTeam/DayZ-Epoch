@@ -68,7 +68,7 @@ class DoorAccess
 			x = 0.40 * safezoneW + safezoneX;
 			y = 0.70 * safezoneH + safezoneY;
 			w = 0.20;
-			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 3000);";
+			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 2);";
 		};		
 
 		class ZupaButton_3: ZSC_RscButtonMenuBlue
