@@ -15,6 +15,7 @@ if (_removed == 1) then {
 	player playActionNow "Medic";
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,50,true,(getPosATL player)] spawn player_alertZombies;
+	uiSleep 8;
 	
 	_vehType = getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
 	if ((random 10) <= 7.5) then {
