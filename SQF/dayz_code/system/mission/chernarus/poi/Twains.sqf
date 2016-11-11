@@ -13,7 +13,6 @@
  * Mr.Weegley - http://opendayz.net/members/mr-weegley.14613/
  */
 
-if (isServer) then {
 
 
 {
@@ -3408,4 +3407,3 @@ _this setVariable ["", true]; // prevent network SV by loot/zeds spawner
   _this setPos [7156.41,3177.2,0];
 };
 processInitCommands;
-};
