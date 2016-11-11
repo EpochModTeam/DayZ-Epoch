@@ -15,20 +15,18 @@ if (_removed == 1) then {
 	player playActionNow "Medic";
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,50,true,(getPosATL player)] spawn player_alertZombies;
-	uiSleep 8;
 	
+	_vehType = getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
 	if ((random 10) <= 7.5) then {
 		PVDZE_veh_Lock = [_vehicle,false];
-		if (player distance _vehicle < 10) then {
-			if (local _vehicle) then {
-				PVDZE_veh_Lock call local_lockUnlock
-			} else {
-				publicVariable "PVDZE_veh_Lock";
-			};
-			format [localize "STR_EPOCH_PLAYER_33_OK",typeOf _vehicle] call dayz_rollingMessages;
+		if (local _vehicle) then {
+			PVDZE_veh_Lock call local_lockUnlock
+		} else {
+			publicVariable "PVDZE_veh_Lock";
 		};
+		format [localize "STR_EPOCH_PLAYER_33_OK",_vehType] call dayz_rollingMessages;
 	} else {
-		format [localize "STR_EPOCH_PLAYER_33",typeOf _vehicle] call dayz_rollingMessages;
+		format [localize "STR_EPOCH_PLAYER_33",_vehType] call dayz_rollingMessages;
 	};
 };
 
