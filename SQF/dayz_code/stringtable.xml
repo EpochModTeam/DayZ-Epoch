@@ -11330,7 +11330,7 @@
 			<Czech>Kuchání zombie již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_32">
-			<English>Hotwire vehicle already in progress.</English>
+			<English>Hotwire vehicle is already in progress.</English>
 			<German>Aufbrechen des Fahrzeuges bereits im Gange.</German>
 			<Russian>Вы уже угоняете транспорт.</Russian>
 			<Dutch>Auto wordt al opengebroken.</Dutch>
@@ -11338,15 +11338,18 @@
 			<Czech>Startování vozidla již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_33">
-			<English>Failed to unlock car hotwire kit broken.</English>
+			<English>Failed to unlock %1, Your hotwire kit broke during the process.</English>
 			<German>Aufbrechen des Fahrzeuges fehlgeschlagen, Aufbrech-Werkzeug wurde dabei zerstört.</German>
 			<Russian>Не удалось открыть транспорт, набор для угона сломан.</Russian>
 			<Dutch>Openbreken voertuig mislukt, je hotwire kit is kapot gegaan.</Dutch>
 			<French>Échec du crochetage du véhicule, le kit est détruit.</French>
 			<Czech>Otevření auta pomocí paklíče se nezdařilo.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_33_OK">
+			<English>You managed to unlock %1 with your hotwire kit.</English>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_34">
-			<English>Fill Jerry already in progress.</English>
+			<English>Fill Jerry can is already in progress.</English>
 			<German>Befüllen des Kanisters bereits im Gange.</German>
 			<Russian>Канистра уже наполняется.</Russian>
 			<Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
@@ -11362,7 +11365,7 @@
 			<Czech>Žádné nedávné úmrtí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_37">
-			<English>Lock vehicle already in progress.</English>
+			<English>Lock vehicle is already in progress.</English>
 			<German>Abschließen des Fahrzeuges bereits im Gange.</German>
 			<Russian>Транспорт уже закрывается.</Russian>
 			<Dutch>Voertuig wordt al reeds op slot gezet.</Dutch>
@@ -11370,7 +11373,7 @@
 			<Czech>Zamykání vozidla již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_39">
-			<English>Add to toolbelt already in progress.</English>
+			<English>Add to toolbelt is already in progress.</English>
 			<German>Hinzufügen zum Werkzeuggürtel bereits im Gange.</German>
 			<Russian>Уже добавляется на пояс.</Russian>
 			<Dutch>Reeds bezig met toevoegen aan gereedschapsriem</Dutch>
@@ -16364,7 +16367,7 @@
 			<German>Auflösen</German>
 		</Key>
 		<Key ID="STR_EPOCH_GROUP_DISBANDED">
-			<English>The group disbanded</English>
+			<English>The group was disbanded</English>
 		</Key>
 		<Key ID="STR_EPOCH_LEAVE">
 			<English>Leave</English>
