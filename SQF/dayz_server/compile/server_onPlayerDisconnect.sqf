@@ -6,7 +6,7 @@
 	References to the player object after that point will return objNull, so this function
 	and server_playerSync must be fast or the player will not save.
 */
-private ["_playerObj","_playerUID","_playerPos","_playerName"];
+private ["_playerObj","_playerUID","_playerPos","_playerName","_characterID","_inCombat","_Sepsis","_myGroup"];
 
 _playerUID = _this select 0;
 _playerName = _this select 1;
