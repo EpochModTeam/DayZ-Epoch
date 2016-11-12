@@ -44,6 +44,7 @@ while {(!isNull _display) && !r_player_dead} do {
 		case (_inCombat && !_zedCheck && !_playerCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText, ceil (_timeout - diag_tickTime)];
+			[localize "str_abort_playerincombat",1] call dayz_rollingMessages;
 		};
 		case (isInTraderCity) : {
 			_btnAbort ctrlEnable false;

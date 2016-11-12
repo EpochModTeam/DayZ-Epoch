@@ -7526,7 +7526,7 @@
 			<German>durch stumpfe Gewalteinwirkung.</German>
 		</Key>
 		<Key ID="str_abort_playerclose">
-			<English>Cannot Abort near another player!&lt;br/&gt;You are still in Combat.</English>
+			<English>You cannot abort near another player!</English>
 			<Russian>Нельзя выходить находясь рядом с другим игроком!&lt;br/&gt;Вы все еще в бою!</Russian>
 			<Spanish>¡No puedes abortar cerca de otros jugadores!&lt;br/&gt;Todavía estás en combate.</Spanish>
 			<Czech>Nemůžete ukončit hru, když jste poblíž jiného hráče.&lt;br/&gt;Stále jste v boji.</Czech>
@@ -7534,7 +7534,7 @@
 			<German>Du kannst dich nicht in der Nähe eines anderen Spielers ausloggen, du befindest dich noch immer in Gefahr!</German>
 		</Key>
 		<Key ID="str_abort_zedsclose">
-			<English>Cannot Abort Zombies are near!&lt;br/&gt;You are still in Combat. </English>
+			<English>You cannot abort near Zombies!</English>
 			<Russian>Нельзя выходить находясь рядом с зомби!&lt;br/&gt;Вы все еще в бою!</Russian>
 			<Spanish>¡No puedes abortar cerca de zombies!&lt;br/&gt;Todavía estás en combate.</Spanish>
 			<Czech>Nemůžete ukončit hru, když jsou zombie poblíž.&lt;br/&gt;Stále jste v boji.</Czech>
@@ -7542,7 +7542,7 @@
 			<German>Du kannst dich nicht in der Nähe von Zombies ausloggen, du befindest dich noch immer in Gefahr!</German>
 		</Key>
 		<Key ID="str_abort_playerincombat">
-			<English>Cannot Abort while in combat!</English>
+			<English>You cannot abort while in combat!</English>
 			<German>Du kannst dich nicht im Kampf ausloggen!</German>
 			<Russian>Нельзя выходить в бою!</Russian>
 			<Spanish>¡No puedes abortar en combate!</Spanish>
@@ -16314,7 +16314,7 @@
 			<German>Einladen</German>
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_FROM">
-			<English>Invite From</English>
+			<English>Invite from</English>
 			<German>Einladung von</German>
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_TO">
@@ -16322,8 +16322,8 @@
 			<German>Du hast %1 eingeladen der Gruppe beizutreten.</German>
 		</Key>
 		<Key ID="STR_EPOCH_GROUP_KICKED">
-			<English>You were kicked from the group</English>
-			<German>Du wurdest aus der Gruppe entfernt</German>				
+			<English>You were kicked from the group.</English>
+			<German>Du wurdest aus der Gruppe entfernt.</German>				
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_KICKED">
 			<English>%1 was kicked from the group.</English>
@@ -16358,7 +16358,7 @@
 			<German>Du brauchst ein Funkgerät um einer Gruppe beizutreten.</German>
 		</Key>
 		<Key ID="STR_EPOCH_LOST_RADIO_CONTACT">
-			<English>Lost radio contact with group</English>
+			<English>Lost radio contact with group.</English>
 			<German>Funkkontakt zur Gruppe verloren.</German>
 		</Key>
 		<Key ID="STR_EPOCH_RIP">
