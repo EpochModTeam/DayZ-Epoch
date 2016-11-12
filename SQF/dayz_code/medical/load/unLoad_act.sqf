@@ -30,8 +30,9 @@ for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
 		_unit switchMove "";
 		_unit switchMove "ainjppnemstpsnonwrfldnon";
 		uiSleep 0.2;
-//		PVDZ_drg_Ralie = _unit; // not used
-//		publicVariable "PVDZ_drg_Ralie"; // not used
+		//Needed or else patient user input is not fully disabled after eject
+		PVDZ_drg_RaDrag = [_unit];
+		publicVariable "PVDZ_drg_RaDrag";
 	};
 	uiSleep 0.1;
 };
