@@ -85,11 +85,11 @@ if (_inVehicle) then {
 				r_action_unload = true;
 				_vehType = typeOf _vehicle;
 				_action = _vehicle addAction [format[localize "str_actions_medical_14",_vehType], "\z\addons\dayz_code\medical\load\unLoad_act.sqf",[player,_vehicle], 0, false, true];
-				r_player_actions set [count r_player_actions,_action];
+				r_player_actions2 set [count r_player_actions2,_action];
 			};
 		} else {
 			if (r_action_unload) then {
-				call fnc_usec_medic_removeActions;
+				call r_player_removeActions2;
 				r_action_unload = false;
 			};
 		};
