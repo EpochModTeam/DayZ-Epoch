@@ -257,7 +257,7 @@ class CfgAmmo
 	
 	class tranquiliser_bolt : BulletBase
 	{
-		hit = 0.1;  					
+		hit = 1;  					
 		indirectHit = 0;				
  		indirectHitRange = 0;			 			
 		maxRange = 100;
