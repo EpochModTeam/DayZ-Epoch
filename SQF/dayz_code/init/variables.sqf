@@ -673,6 +673,7 @@ if (!isDedicated) then {
 	dayz_salvageInProgress = false;
 	lastSpawned = diag_tickTime;
 	lastSepsis = 0;
+	NORRN_dropAction = -1;
 	//uiNamespace setVariable ['DAYZ_GUI_display',displayNull];
 	//if (uiNamespace getVariable ['DZ_displayUI', 0] == 2) then {
 	//	dayzDebug = true;

@@ -124,7 +124,7 @@ if (!_canDoThis && s_player_Drinkfromhands >= 0) then {
 
 if (_inVehicle) then {
 	DZE_myVehicle = _vehicle;
-	if (_vehicleOwnerID != "0" && !(_vehicle isKindOf "Bicycle")) then {
+	if (_vehicleOwnerID != "0" && !(_vehicle isKindOf "Bicycle") && _canDo) then {
 		if (s_player_lockUnlockInside_ctrl < 0) then {
 			_totalKeys = call epoch_tempKeys;
 			_temp_keys = _totalKeys select 0;

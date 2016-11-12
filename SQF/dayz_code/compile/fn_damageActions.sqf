@@ -72,7 +72,7 @@ if (_inVehicle) then {
 	};
 	//Check if patients
 	_crew = crew _vehicle;
-	if (count _crew > 0) then {
+	if (count _crew > 0 && !r_player_unconscious) then {
 		_unconscious_crew = [];
 		{
 			if (_x getVariable "NORRN_unconscious") then {
@@ -98,6 +98,13 @@ if (_inVehicle) then {
 	call r_player_removeActions2;
 	r_player_lastVehicle = objNull;
 	r_player_lastSeat = [];
+};
+
+if (r_player_unconscious) then {
+	call r_player_removeActions2;
+	r_player_lastVehicle = objNull;
+	r_player_lastSeat = [];
+	r_action_unload = false;
 };
 
 //Lets make sure the player is looking at the target
