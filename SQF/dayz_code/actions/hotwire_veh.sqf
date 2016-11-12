@@ -1,4 +1,4 @@
-private ["_vehicle","_removed"];
+private ["_vehicle","_removed","_vehType"];
 _vehicle = _this select 3;
 
 if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_32" call dayz_rollingMessages;};
