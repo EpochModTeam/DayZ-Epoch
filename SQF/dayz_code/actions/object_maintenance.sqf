@@ -97,10 +97,10 @@ if (_startMaintenance) then {
 	r_doLoop = false;
 	
 	if (_finished) then {
+		PVDZ_veh_Save = [_cursorTarget,"maintenance"];
 		if (isServer) then {
 			PVDZ_veh_Save call server_updateObject;
 		} else {
-			PVDZ_veh_Save = [_cursorTarget,"maintenance"];
 			publicVariableServer "PVDZ_veh_Save";
 		};
 		
