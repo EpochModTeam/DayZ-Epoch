@@ -149,7 +149,7 @@ if (isPlayer cursorTarget) then {
 				r_player_actions set [count r_player_actions, _action3];
 			};
 			//Load Vehicle
-			if (count _vehClose > 0 && _unconscious) then {
+			if (count _vehClose > 0 && {!locked (_vehClose select 0)} && {_unconscious}) then {
 				r_action = true;
 				_vehicle = _vehClose select 0;
 				_vehType = getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
