@@ -11339,7 +11339,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_33">
 			<English>Failed to unlock %1, Your hotwire kit broke during the process.</English>
-			<German>Aufbrechen des Fahrzeuges fehlgeschlagen, Aufbrech-Werkzeug wurde dabei zerstört.</German>
+			<German>Aufbrechen von %1 fehlgeschlagen, Aufbrech-Werkzeug wurde dabei zerstört.</German>
 			<Russian>Не удалось открыть транспорт, набор для угона сломан.</Russian>
 			<Dutch>Openbreken voertuig mislukt, je hotwire kit is kapot gegaan.</Dutch>
 			<French>Échec du crochetage du véhicule, le kit est détruit.</French>
@@ -11347,6 +11347,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_33_OK">
 			<English>You managed to unlock %1 with your hotwire kit.</English>
+			<German>Du hast es geschafft %1 aufzubrechen.</German>			
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_34">
 			<English>Fill Jerry can is already in progress.</English>
@@ -16322,12 +16323,15 @@
 		</Key>
 		<Key ID="STR_EPOCH_GROUP_KICKED">
 			<English>You were kicked from the group</English>
+			<German>Du wurdest aus der Gruppe entfernt</German>				
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_KICKED">
 			<English>%1 was kicked from the group.</English>
+			<German>%1 wurde aus der Gruppe entfernt.</German>	
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_LEFT">
 			<English>%1 left the group.</English>
+			<German>%1 verließ die Gruppe.</German>			
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_JOINED">
 			<English>%1 joined the group.</English>
@@ -16371,6 +16375,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_GROUP_DISBANDED">
 			<English>The group was disbanded</English>
+			<German>Die Gruppe wurde aufgelöst</German>			
 		</Key>
 		<Key ID="STR_EPOCH_LEAVE">
 			<English>Leave</English>
