@@ -41,7 +41,7 @@ while {(!isNull _display) && !r_player_dead} do {
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
 			[localize "str_abort_zedsclose",1] call dayz_rollingMessages;
 		};
-		case (_inCombat && !_zedCheck && !_playerCheck) : {
+		case (_inCombat) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText, ceil (_timeout - diag_tickTime)];
 			[localize "str_abort_playerincombat",1] call dayz_rollingMessages;

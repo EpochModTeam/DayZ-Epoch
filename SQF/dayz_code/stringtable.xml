@@ -7527,19 +7527,19 @@
 		</Key>
 		<Key ID="str_abort_playerclose">
 			<English>You cannot abort near another player!</English>
-			<Russian>Нельзя выходить находясь рядом с другим игроком!&lt;br/&gt;Вы все еще в бою!</Russian>
-			<Spanish>¡No puedes abortar cerca de otros jugadores!&lt;br/&gt;Todavía estás en combate.</Spanish>
-			<Czech>Nemůžete ukončit hru, když jste poblíž jiného hráče.&lt;br/&gt;Stále jste v boji.</Czech>
-			<French>Abandon impossible près d&apos;un autre joueur!&lt;br/&gt;Vous êtes toujours en combat.</French>
-			<German>Du kannst dich nicht in der Nähe eines anderen Spielers ausloggen, du befindest dich noch immer in Gefahr!</German>
+			<Russian>Нельзя выходить находясь рядом с другим игроком!</Russian>
+			<Spanish>¡No puedes abortar cerca de otros jugadores!</Spanish>
+			<Czech>Nemůžete ukončit hru, když jste poblíž jiného hráče.</Czech>
+			<French>Abandon impossible près d&apos;un autre joueur!</French>
+			<German>Du kannst dich nicht in der Nähe eines anderen Spielers ausloggen!</German>
 		</Key>
 		<Key ID="str_abort_zedsclose">
 			<English>You cannot abort near Zombies!</English>
-			<Russian>Нельзя выходить находясь рядом с зомби!&lt;br/&gt;Вы все еще в бою!</Russian>
-			<Spanish>¡No puedes abortar cerca de zombies!&lt;br/&gt;Todavía estás en combate.</Spanish>
-			<Czech>Nemůžete ukončit hru, když jsou zombie poblíž.&lt;br/&gt;Stále jste v boji.</Czech>
-			<French>Abandon impossible, des zombies sont à proximité!&lt;br/&gt;Vous êtes toujours en combat.</French>
-			<German>Du kannst dich nicht in der Nähe von Zombies ausloggen, du befindest dich noch immer in Gefahr!</German>
+			<Russian>Нельзя выходить находясь рядом с зомби!</Russian>
+			<Spanish>¡No puedes abortar cerca de zombies!</Spanish>
+			<Czech>Nemůžete ukončit hru, když jsou zombie poblíž.</Czech>
+			<French>Abandon impossible, des zombies sont à proximité!</French>
+			<German>Du kannst dich nicht in der Nähe von Zombies ausloggen!</German>
 		</Key>
 		<Key ID="str_abort_playerincombat">
 			<English>You cannot abort while in combat!</English>
