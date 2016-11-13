@@ -132,7 +132,7 @@ if (_unit == player) then {
     };
     
 	if ((vehicle player == player) and (!_unconscious)) then {
-		if (_ammo == "tranquiliser_bolt" && !r_player_unconscious) then {
+		if (_ammo == "tranquiliser_bolt") then {
 			[_unit] spawn {
 				private ["_unit"];
 				_unit = _this select 0;
@@ -148,7 +148,7 @@ if (_unit == player) then {
 		
 		if (_damage > 0.4) then {
 			//Melee knockout system
-			if ((_isHeadHit) && (_ammo in ["Crowbar_Swing_Ammo","Bat_Swing_Ammo","Sledge_Swing_Ammo"]) && (!r_player_unconscious)) then {
+			if ((_isHeadHit) && (_ammo in ["Crowbar_Swing_Ammo","Bat_Swing_Ammo","Sledge_Swing_Ammo"])) then {
 				[_unit] spawn {
 					 _unit = _this select 0;
 					localize "str_actions_medical_knocked_out" call dayz_rollingMessages; 
