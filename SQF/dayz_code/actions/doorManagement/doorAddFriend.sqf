@@ -20,11 +20,7 @@ _friends set [(count _friends), _toAdd];
 TheDoor setVariable ["doorfriends", _friends, true];
 
 PVDZ_veh_Save = [TheDoor,"gear"];
-if (isServer) then {
-	PVDZ_veh_Save call server_updateObject;
-} else {
-	publicVariableServer "PVDZ_veh_Save";
-};
+publicVariableServer "PVDZ_veh_Save";
 
 call DoorGetFriends;
 call DoorNearbyHumans;

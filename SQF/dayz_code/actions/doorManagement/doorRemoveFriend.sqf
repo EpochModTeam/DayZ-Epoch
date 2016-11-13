@@ -11,12 +11,9 @@ _newList = [];
 	};
 } forEach _friends;
 TheDoor setVariable ["doorfriends", _newList, true];
+
 PVDZ_veh_Save = [TheDoor, "gear"];
-if (isServer) then {
-	PVDZ_veh_Save call server_updateObject;
-} else {
-	publicVariableServer "PVDZ_veh_Save";
-};
+publicVariableServer "PVDZ_veh_Save";
 
 call DoorGetFriends;
 call DoorNearbyHumans;

@@ -23,11 +23,7 @@ _friends set [(count _friends), _toAdd];
 _thePlot setVariable ["plotfriends", _friends, true];
 
 PVDZ_veh_Save = [_thePlot,"gear"];
-if (isServer) then {
-	PVDZ_veh_Save call server_updateObject;
-} else {
-	publicVariableServer "PVDZ_veh_Save";
-};
+publicVariableServer "PVDZ_veh_Save";
 
 call PlotGetFriends;
 call PlotNearbyHumans;

@@ -1,6 +1,6 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_characterID","_minutes","_newObject","_playerID","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide"];
+private ["_characterID","_minutes","_newObject","_playerID","_playerName","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 
 _characterID = _this select 0;

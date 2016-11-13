@@ -1,6 +1,6 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_type ","_objectUID ","_characterID ","_object","_worldspace","_key", "_ownerArray", "_inventory"];
+private ["_type","_objectUID","_characterID","_object","_worldspace","_key","_ownerArray","_inventory"];
 
 _characterID =		_this select 0;
 _object = 		_this select 1;
