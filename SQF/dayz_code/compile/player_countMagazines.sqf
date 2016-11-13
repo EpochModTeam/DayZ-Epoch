@@ -14,6 +14,7 @@ _created = false;
 
 if ( isNull _dialog ) then {
 	//startLoadingScreen [""];
+	DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on player's gear
 	createGearDialog [player, "RscDisplayGear"];
 	_dialog = findDisplay 106;
 	_created = true;

@@ -373,6 +373,7 @@ if (!isDedicated) then {
 		openMap false;
 		closeDialog 0;
 		if (gear_done) then {sleep 0.001;};
+		DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on player's gear
 		player action ["Gear", player];
 		if (gear_done) then {sleep 0.001;};
 		_dialog = findDisplay 106;
@@ -383,6 +384,7 @@ if (!isDedicated) then {
 			if (gear_done) then {sleep 0.001;};
 			if (_i in [100,200,299]) then {
 				closeDialog 0;
+				DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on player's gear
 				player action ["Gear", player];
 			};
 			if (_i > 300) exitWith {};

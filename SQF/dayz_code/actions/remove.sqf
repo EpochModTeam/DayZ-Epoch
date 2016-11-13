@@ -253,7 +253,7 @@ if (_proceed && _success) then {
 			_item setposATL _iPos;
 
 			player reveal _item;
-
+			DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on item
 			player action ["Gear", _item];
 		};
 	} else {

@@ -60,7 +60,7 @@ if (surfaceIsWater _location) then {
 };
 
 player reveal _b0x1337;
-
+DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on crate
 player action ["Gear", _b0x1337];
 		
 localize "str_epoch_player_78" call dayz_rollingMessages;

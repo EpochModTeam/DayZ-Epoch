@@ -41,17 +41,19 @@ if ((vehicle player) == player) then {
 	if (_exit) then {
 		_lastSave = dayz_lastSave;
 		_startTime = diag_tickTime;
-		localize "str_epoch_player_7" call dayz_rollingMessages;
 		_display closeDisplay 2;
+		localize "str_epoch_player_7" call dayz_rollingMessages;
 		_ctType = typeOf _cTarget;
 		//direct gear to cursorTarget
 		[_lastSave, _startTime, _ctType, _cTarget] spawn {
 			waitUntil {((_this select 0) != dayz_lastSave) || {diag_tickTime >= ((_this select 1) + 1)}}; //waiting is required otherwise player_forceSave will reset DZE_GearCheckBypass
 			DZE_GearCheckBypass = true;
-			if ((((_this select 2) in DZE_isNewStorage) || {(_this select 2) == "LockboxStorage"} || {(_this select 2) isKindOf "Land_A_tent"} || {(_this select 2) isKindOf "WeaponHolder"}  || {((!alive (_this select 3)) && {(_this select 2) isKindOf "Man"})}) && {!(locked (_this select 3))}) then {
-				Player action ["GEAR", (_this select 3)];
-			} else {
-				createGearDialog [player, "RscDisplayGear"];
+			if (!dialog) then {
+				if ((((_this select 2) in DZE_isNewStorage) || {(_this select 2) == "LockboxStorage"} || {(_this select 2) isKindOf "Land_A_tent"} || {(_this select 2) isKindOf "WeaponHolder"}  || {((!alive (_this select 3)) && {(_this select 2) isKindOf "Man"})}) && {!(locked (_this select 3))}) then {
+					Player action ["GEAR", (_this select 3)];
+				} else {
+					createGearDialog [player, "RscDisplayGear"];
+				};
 			};
 		};
 	} else {
