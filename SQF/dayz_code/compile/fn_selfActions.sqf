@@ -124,7 +124,7 @@ if (!_canDoThis && s_player_Drinkfromhands >= 0) then {
 
 if (_inVehicle) then {
 	DZE_myVehicle = _vehicle;
-	if (_vehicleOwnerID != "0" && !(_vehicle isKindOf "Bicycle") && _canDo) then {
+	if (_vehicleOwnerID != "0" && _canDo) then {
 		if (s_player_lockUnlockInside_ctrl < 0) then {
 			_totalKeys = call epoch_tempKeys;
 			_temp_keys = _totalKeys select 0;
@@ -453,7 +453,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		};
 		
 		if (_isVehicle) then {
-			if ((_characterID != "0") && {!_isMan} && {!_isBicycle}) then {
+			if ((_characterID != "0") && {!_isMan}) then {
 				_player_lockUnlock_crtl = true;
 			};
 		};
