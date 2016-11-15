@@ -8,8 +8,8 @@ _blood = _unit getVariable ["USEC_BloodQty", 0];
 _lowBlood = _unit getVariable ["USEC_lowBlood", false];
 _injured = _unit getVariable ["USEC_injured", false];
 _inPain = _unit getVariable ["USEC_inPain", false];
-_lastused = _unit getVariable ["LastSelfTransfusion",-(DZE_Transfuse_Values select 2)];
-if (time - _lastused <= (DZE_Transfuse_Values select 2)) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
+_lastused = _unit getVariable ["LastSelfTransfusion",-(DZE_selfTransfuse_Values select 2)];
+if (time - _lastused <= (DZE_selfTransfuse_Values select 2)) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
 
 call gear_ui_init;
 closeDialog 0;
