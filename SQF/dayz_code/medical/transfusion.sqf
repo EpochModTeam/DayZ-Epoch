@@ -13,6 +13,9 @@ _bloodType = _unit getVariable ["blood_type", ""];
 _rh = _unit getVariable ["rh_factor", false];
 //Get status of bloodtest of receving unit
 _bloodTestdone = _unit getVariable ["blood_testdone", false];
+_lastused = player getVariable ["LastTransfusion",-DZE_transfuseCoolDown];
+if (time - _lastused <= DZE_transfuseCoolDown) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
+
 r_interrupt = false;
 
 _badBag = false;
@@ -190,6 +193,7 @@ while {r_doLoop} do {
 	_blood = _unit getVariable ["USEC_BloodQty", 0];
 
 	if (_blood >= r_player_bloodTotal or _bloodAmount == 0) then {
+		if (DZE_transfuseCoolDown > 0) then { player setVariable ["LastTransfusion",time,true]; };
 		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
 		localize "str_actions_medical_transfusion_successful" call dayz_rollingMessages;
 		//see Note 1

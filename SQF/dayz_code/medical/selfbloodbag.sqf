@@ -8,8 +8,8 @@ _blood = _unit getVariable ["USEC_BloodQty", 0];
 _lowBlood = _unit getVariable ["USEC_lowBlood", false];
 _injured = _unit getVariable ["USEC_injured", false];
 _inPain = _unit getVariable ["USEC_inPain", false];
-_lastused = _unit getVariable ["LastTransfusion",-(DZE_selfTransfuse_Values select 2)];
-if (time - _lastused <= DZE_selfTransfuse_Values select 2) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
+_lastused = _unit getVariable ["LastSelfTransfusion",-(DZE_selfTransfuse_Values select 2)];
+if (time - _lastused <= (DZE_selfTransfuse_Values select 2)) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
 
 call gear_ui_init;
 closeDialog 0;
@@ -128,7 +128,7 @@ while {r_doLoop and (_i < 12)} do {
 
 	if (((_blood >= r_player_bloodTotal) and !_badBag and _bagFound) or (_i == 12)) then {
 		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
-		_unit setVariable ["LastTransfusion",time,false];
+		_unit setVariable ["LastSelfTransfusion",time,false];
 		if (_transfusionInfection) then {r_player_infected = true; player setVariable["USEC_infected",true,true];};
 		localize "str_actions_medical_transfusion_successful" call dayz_rollingMessages;
 		r_doLoop = false;
