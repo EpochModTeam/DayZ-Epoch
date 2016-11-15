@@ -1,7 +1,8 @@
-private ["_bloodAmount","_unit","_blood","_lowBlood","_injured","_inPain","_lastused","_hasTransfusionKit","_animState","_started","_finished","_timer","_i","_isMedic","_isClose","_duration","_rhVal","_bloodBagArrayNeeded","_BBneeded","_bbselect","_bloodBagNeeded","_badBag","_wholeBag","_bagFound","_bagToRemove","_forceClose","_bloodType","_rh","_bloodBagArray","_bbarray_length","_bloodBagWholeNeeded","_haswholebag","_r","_bloodTestdone","_sentRequest"];// bleed.sqf
+private ["_bloodAmount","_unit","_blood","_lowBlood","_injured","_inPain","_hasTransfusionKit","_animState","_started","_finished","_timer","_i","_isMedic","_isClose","_duration","_rhVal","_bloodBagArrayNeeded","_BBneeded","_bbselect","_bloodBagNeeded","_badBag","_wholeBag","_bagFound","_bagToRemove","_forceClose","_bloodType","_rh","_bloodBagArray","_bbarray_length","_bloodBagWholeNeeded","_haswholebag","_r","_bloodTestdone","_sentRequest"];// bleed.sqf
 //Get receving unit
 _unit = (_this select 3) select 0;
 
+if (time - dayz_lastTransfusion <= dayz_transfuseCoolDown) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
 //Does the player have a transfusionKit
 //_hasTransfusionKit = "transfusionKit" in magazines player;
 
@@ -192,6 +193,7 @@ while {r_doLoop} do {
 	if (_blood >= r_player_bloodTotal or _bloodAmount == 0) then {
 		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
 		localize "str_actions_medical_transfusion_successful" call dayz_rollingMessages;
+		dayz_lastTransfusion = time;
 		//see Note 1
 		//[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_successful","PLAIN DOWN"] call RE;
 		if (!_badBag and _bagFound) then { [_humanityAwarded,0] call player_humanityChange; };

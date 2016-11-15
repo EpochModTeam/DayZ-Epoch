@@ -614,6 +614,8 @@ if (!isDedicated) then {
 	dayz_lastMedicalTime = 0;
 	dayz_lastClothesChange = 0;
 	dayZ_lastPlayerUpdate = 0;
+	dayz_lastSelfTransfusion = -(DZE_selfTransfuse_Values select 2);
+	dayz_lastTransfusion = -(dayz_transfuseCoolDown);
 	dayz_playerName = "unknown";
 	dayz_hunger = 0;
 	dayz_thirst = 0;
