@@ -61,7 +61,7 @@ if (_method in ["explosion","melee","shot","shothead","shotheavy"] && !(_method 
 };
 
 if (_playerName != "unknown" or _sourceName != "unknown") then {
-	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgCutText or DZE_DeathMsgDynamicText) then {
+	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgRolling or DZE_DeathMsgDynamicText) then {
 		PVDZE_deathMessage = _message;
 		//Don't use regular PV here since JIP clients don't need it
 		{

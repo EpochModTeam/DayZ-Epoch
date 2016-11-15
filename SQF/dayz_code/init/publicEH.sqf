@@ -359,7 +359,7 @@ if (!isDedicated) then {
 			case "side": {BIS_functions_mainscope sideChat _message;};
 			case "system": {systemChat _message;};
 		};
-		if (DZE_DeathMsgCutText) then {_message call dayz_rollingMessages;};
+		if (DZE_DeathMsgRolling) then {_message call dayz_rollingMessages;};
 		diag_log format["DeathMessage: %1",_message];
 	};
 

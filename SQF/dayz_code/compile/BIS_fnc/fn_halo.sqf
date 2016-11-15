@@ -110,7 +110,7 @@ if (typename _this == typename objnull) then {
 
 		[] spawn {
 			_time = time - 0.1;
-			while {alive player && vehicle player == player && isnil {player getvariable "bis_fnc_halo_terminate"}} do {
+			while {alive player && vehicle player == player && isnil {player getvariable "bis_fnc_halo_terminate"} && (([player] call FNC_GetPos) select 2) > DZE_HaloOpenChuteHeight} do {
 			
 				//--- FPS counter
 				_fpsCoef = ((time - _time) * 60) / acctime; //Script is optimized for 60 FPS
@@ -165,6 +165,17 @@ if (typename _this == typename objnull) then {
 				bis_fnc_halo_ppRadialBlur ppEffectAdjust [0.02,0.02,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef];
 				bis_fnc_halo_ppRadialBlur ppEffectCommit 0.01;
 				*/
+				if (DZE_HaloAltitudeMeter && !isNil "Dayz_loginCompleted") then {
+					titleText [
+						format [
+							localize "str_halo_altitude_speed",
+							str(round(([player] call FNC_GetPos) select 2)) + " m",
+							str(abs(round(speed(vehicle player)))) + " " + localize "str_lib_info_unit_kilometers_per_hour"
+						],"PLAIN DOWN",0.01
+					];
+				};
+				player allowDamage false; //Prevent glitch death when opening chute 
+				
 				uiSleep 0.01;
 			};
 			//--- End
@@ -188,6 +199,11 @@ if (typename _this == typename objnull) then {
 				[objNull, player, rSwitchMove,"adthppnemstpsraswrfldnon_1"] call RE;
 				player switchmove "adthppnemstpsraswrfldnon_1";
 				player setvelocity [0,0,0];
+			} else {
+				if (DZE_HaloOpenChuteHeight > -1 && isNil "bis_fnc_halo_para_dirAbs") then {
+					//Auto open chute
+					[player] spawn BIS_fnc_Halo;
+				};
 			};
 		};
 	} else {
@@ -222,7 +238,7 @@ if (typename _this == typename []) then {
 	if (!local _unit) exitwith {};
 
 	//--- Free fall
-	if (count _this == 2) exitwith {
+	if (count _this == 2) exitwith { //Fresh spawn calling from player_monitor.fsm
 		_alt = _this select 1;
 		_paraPosition = [_unit] call FNC_GetPos;
 		_unit setpos [(_paraPosition select 0),(_paraPosition select 1),_alt];
@@ -244,6 +260,7 @@ if (typename _this == typename []) then {
 	_para lock false;
 
 	bis_fnc_halo_para_dirAbs = direction _para;
+	player allowDamage true;
 
 	//--- Key controls
 	if (_unit == player) then {
@@ -358,5 +375,6 @@ if (typename _this == typename []) then {
 		bis_fnc_halo_para_keydown_eh = nil;
 		bis_fnc_halo_para_mousemoving_eh = nil;
 		bis_fnc_halo_para_mouseholding_eh = nil;
+		bis_fnc_halo_para_dirAbs = nil;
 	};
 };

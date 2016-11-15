@@ -10,23 +10,12 @@ dayz_waterBottleBreaking = false; // Water bottles have a chance to break when b
 dayz_tameDogs = false; // Allow taming dogs with raw meat
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus.
 dayz_townGeneratorBlackList = []; // Town generator will not spawn junk within 150m of these positions. Example for Chernarus trader cities: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
-
-DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
-DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
-DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
-DynamicVehicleFuelHigh = 100; // Max fuel random vehicles can spawn with
-
 DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming - doesn't work with amphibious pook which you should not use due to other issues
 DZE_TempVars = [7, 15, 4, 4, 2, 6, 3, 2, 0.25, 0.75, 0.5]; //[vehicle, fire, building, moving, sun, heatpack, water, standing, rain, wind, night] water, standing, rain, wind and night factors have a negative impact on temperature, the greater they are the quicker the player gets cold
 DZE_WeatherVariables = [10, 20, 5, 10, 0, 0.2, 0, 0.7, 0, 0.6, 0, 8, 25, 30, 0, false]; //See DynamicWeatherEffects.sqf for info on these values
 DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 allow player to hold two primary weapons, one on back and one in their hands.
 DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
 DZE_DamageBeforeMaint = 0.09; // Minimum damage built items must have before they can be maintained
-DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
-DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
-DZE_DeathMsgCutText = false; // Display death messages as cutText
-DZE_DeathScreen = true; // True=Use Epoch death screen (Trade city obituaries have been amended) False=Use DayZ death screen (You are dead)
-DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
 DZE_NameTags = 0; // Name displays when looking at player up close  0 = Off, 1= On, 2 = Player choice
 DZE_ForceNameTagsInTrader = false; // Force name display when looking at player up close in traders. Overrides player choice.
 DZE_HumanityTargetDistance = 25; // Distance to show name tags (red for bandit, blue for hero, green for friend)
@@ -35,8 +24,6 @@ DZE_HeliLift = true; // Enable Epoch heli lift system
 DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["Skin_GUE_Soldier_CO_DZ","Skin_GUE_Soldier_2_DZ"] etc.
 DZE_UI = "vanilla"; //"vanilla","epoch","dark"  UI status icons style. Dark accommodates color blind people.
 DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
-MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE filled with vehicle ammo to spawn around the map
-MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS], RADIUS],[[3D POS], RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
 DZE_SafeZoneNoBuildItems = []; // Array of object class names not allowed to build near the safe zones listed above. i.e ["VaultStorageLocked","LockboxStorageLocked","Plastic_Pole_EP1_DZ"] etc.
@@ -46,6 +33,25 @@ DZE_NoBuildNear = []; //Array of object class names that are blacklisted to buil
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
+
+// Death Messages
+DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
+DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
+DZE_DeathMsgRolling = false; // Display death messages as rolling messages in bottom center of screen.
+DZE_DeathScreen = true; // True=Use Epoch death screen (Trade city obituaries have been amended) False=Use DayZ death screen (You are dead)
+
+// Dynamic Vehicles
+DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
+DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
+DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
+DynamicVehicleFuelHigh = 100; // Max fuel random vehicles can spawn with
+MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE filled with vehicle ammo to spawn around the map
+MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
+
+// HALO Jump
+DZE_HaloAltitudeMeter = false; // Display altitude and speed on screen while in halo jump.
+DZE_HaloOpenChuteHeight = 180; // Automatically open chute at specified height. Set to -1 to disable this feature. 
+DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
 
 // Trader Menu
 DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic. False enables database traders with legacy trader menu.
