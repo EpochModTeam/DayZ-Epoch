@@ -64,6 +64,7 @@ DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plot
 DZE_BuildingLimit = 150; // Max number of built objects allowed in DZE_PlotPole radius
 DZE_SelfTransfuse = true; // Allow players to bloodbag themselves
 DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount given, infection chance %, cooldown in seconds]
+DZE_transfuseLimit = [false,120]; // [Apply transfuse limits to a remote player receiving bloodbags (true/false), cooldown in seconds]
 MaxDynamicDebris = 500; // Max number of random road blocks to spawn around the map
 MaxVehicleLimit = 300; // Max number of random vehicles to spawn around the map
 spawnArea = 1400; // Distance around markers to find a safe spawn position
