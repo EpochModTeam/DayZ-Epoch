@@ -10,7 +10,6 @@ dayz_waterBottleBreaking = false; // Water bottles have a chance to break when b
 dayz_tameDogs = false; // Allow taming dogs with raw meat
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus.
 dayz_townGeneratorBlackList = []; // Town generator will not spawn junk within 150m of these positions. Example for Chernarus trader cities: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
-dayz_transfuseCoolDown = 120; // Cooldown in seconds before a player can transfuse another player.
 DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming - doesn't work with amphibious pook which you should not use due to other issues
 DZE_TempVars = [7, 15, 4, 4, 2, 6, 3, 2, 0.25, 0.75, 0.5]; //[vehicle, fire, building, moving, sun, heatpack, water, standing, rain, wind, night] water, standing, rain, wind and night factors have a negative impact on temperature, the greater they are the quicker the player gets cold
 DZE_WeatherVariables = [10, 20, 5, 10, 0, 0.2, 0, 0.7, 0, 0.6, 0, 8, 25, 30, 0, false]; //See DynamicWeatherEffects.sqf for info on these values

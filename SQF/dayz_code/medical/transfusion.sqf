@@ -2,9 +2,9 @@ private ["_bloodAmount","_unit","_blood","_lowBlood","_injured","_inPain","_hasT
 //Get receving unit
 _unit = (_this select 3) select 0;
 
-if (time - dayz_lastTransfusion <= dayz_transfuseCoolDown) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
 //Does the player have a transfusionKit
 //_hasTransfusionKit = "transfusionKit" in magazines player;
+if (time - dayz_lastTransfusion > 120) then {dayz_bloodBagHumanity = 300;}; //Reset humanity reward to full value after two minutes 
 
 //Get receving units blood value
 _blood = _unit getVariable ["USEC_BloodQty", 0];
@@ -165,8 +165,8 @@ while {r_doLoop} do {
 					// 25 points to be givin upto a maximum of 300 points if the player stays for the full duration
 					//This should be better this way to keep calculus simple and prevent people getting points for giving blood transfusions to healthy players (and less humanity for only very small amounts of blood)
 					//Pulled from pullrequest from ILoveBeans
-					if ( _humanityAwarded < 300 ) then {
-						_humanityAwarded = _humanityAwarded + 25 ; 
+					if (_humanityAwarded < dayz_bloodBagHumanity) then {
+						_humanityAwarded = _humanityAwarded + 25; 
 					};
 				};
 			} else {
@@ -193,6 +193,7 @@ while {r_doLoop} do {
 	if (_blood >= r_player_bloodTotal or _bloodAmount == 0) then {
 		diag_log format ["TRANSFUSION: completed blood transfusion successfully (_i = %1)", _i];
 		localize "str_actions_medical_transfusion_successful" call dayz_rollingMessages;
+		dayz_bloodBagHumanity = dayz_bloodBagHumanity / 2; //Diminish humanity reward for subsequent bloodbags. Resets to full reward after two minutes. 
 		dayz_lastTransfusion = time;
 		//see Note 1
 		//[player,_unit,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_successful","PLAIN DOWN"] call RE;

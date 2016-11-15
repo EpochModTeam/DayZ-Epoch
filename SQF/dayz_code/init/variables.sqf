@@ -607,6 +607,7 @@ if (!isDedicated) then {
 	dayz_temperaturmin = 27; //TeeChange
 
 	//player special variables
+	dayz_bloodBagHumanity = 300;
 	dayz_lastDamageSourceNull = false;
 	dayz_lastDamageSource = "none";
 	dayz_lastDamageTime = 0;
@@ -615,7 +616,7 @@ if (!isDedicated) then {
 	dayz_lastClothesChange = 0;
 	dayZ_lastPlayerUpdate = 0;
 	dayz_lastSelfTransfusion = -(DZE_selfTransfuse_Values select 2);
-	dayz_lastTransfusion = -(dayz_transfuseCoolDown);
+	dayz_lastTransfusion = 0;
 	dayz_playerName = "unknown";
 	dayz_hunger = 0;
 	dayz_thirst = 0;
