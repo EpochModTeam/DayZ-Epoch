@@ -50,7 +50,7 @@ class Mission
 			class Vehicles
 			{
 				items=100;
-#define PLRDEF position[]={-2151,28,-1203};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
+#define PLRDEF position[]={-2151,28,-1203};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDamage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
 				class Item0{id=0;PLRDEF};
 				class Item1
 				{
@@ -63,7 +63,7 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.6;
-					init="this enableSimulation false;this allowDammage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
+					init="this enableSimulation false;this allowDamage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";
 				};
 				class Item2{id=2;PLRDEF};
 				class Item3{id=3;PLRDEF};
