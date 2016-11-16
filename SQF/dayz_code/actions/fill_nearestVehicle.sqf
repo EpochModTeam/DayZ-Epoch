@@ -1,5 +1,4 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_abort","_canSize","_configVeh","_capacity","_nameText","_isOk","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_isVehicle","_configSrcVeh","_capacitySrc","_nameTextSrc","_isFillok","_curFuelSrc","_newFuelSrc","_vehicleSrc"];
-
+private ["_isVehicle","_configSrcVeh","_capacitySrc","_nameTextSrc","_started","_finished","_animState","_isMedic","_newFuel","_abort","_newFuelSrc","_canSize","_vehicle","_configVeh","_capacity","_nameText","_isOk","_vehicleSrc","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
@@ -23,7 +22,7 @@ _findNearestVehicles = nearestObjects [player, ["AllVehicles"], 30];
 _findNearestVehicle = [];
 {
 	//diag_log ("FILL = " + str(_x) + " = " + str(_vehicleSrc));
-	if (alive _x && !(_x == _vehicleSrc) && !(_x isKindOf "Man")) exitWith {
+	if ((alive _x) && {_x != _vehicleSrc} && {!(_x isKindOf "Man")}) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
 } count _findNearestVehicles;
@@ -82,63 +81,35 @@ if(_IsNearVehicle >= 1) then {
 
 		if(!_finished) then {
 			r_interrupt = false;
-			
-			if (vehicle player == player) then {
+			if ((vehicle player) == player) then {
 				[objNull, player, rSwitchMove,""] call RE;
 				player playActionNow "stop";
 			};
 			_abort = true;
-		};
-
-		if (_finished) then {
-
-			_isFillok = true;
-
-			// add checks for fuel level
+		} else {
 			if(_isVehicle) then {
-				_curFuelSrc = 		((fuel _vehicleSrc) * _capacitySrc);
-				_newFuelSrc = 		(_curFuelSrc - _canSize);
-
-				// calculate new fuel
-				_newFuelSrc = (_newFuelSrc / _capacitySrc);
+				_newFuelSrc = ((((fuel _vehicleSrc) * _capacitySrc) - _canSize) / _capacitySrc);
+				_newFuel = 	(((fuel _vehicle) * _capacity) + _canSize);
 				if (_newFuelSrc > 0) then {
-					/* PVS/PVC - Skaronator */
-					if (local _vehicle) then {
+					if (local _vehicleSrc) then {
 						[_vehicleSrc,_newFuelSrc] call local_setFuel;
+						//_vehicleSrc setFuel _newFuelSrc;
 					} else {
-						/* PVS/PVC - Skaronator */
-						PVDZ_send = [_vehicle,"SetFuel",[_vehicleSrc,_newFuelSrc]];
+						PVDZ_send = [_vehicleSrc,"SetFuel",[_vehicleSrc,_newFuelSrc]];
 						publicVariableServer "PVDZ_send";
 					};
+					if (_newFuel >= _capacity) then {_newFuel = 1; _abort = true;} else {_newFuel = (_newFuel / _capacity);};
+					if (local _vehicle) then {
+						[_vehicle,_newFuel] call local_setFuel;
+					} else {
+						PVDZ_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
+						publicVariableServer "PVDZ_send";
+					};
+					[player,"refuel",0,false] call dayz_zombieSpeak;
+					format[localize "str_epoch_player_132",_nameText,round(_newFuel*100)] call dayz_rollingMessages;
 				} else {
-					_isFillok = false;
 					_abort = true;
 				};
-			};
-			
-			if (_isFillok) then {
-				// Get vehicle fuel levels again
-				_curFuel = 		((fuel _vehicle) * _capacity);
-				_newFuel = 		(_curFuel + _canSize);
-
-				if (_newFuel > _capacity) then {_newFuel = _capacity; _abort = true; };
-
-				// calculate minimum needed fuel
-				_newFuel = (_newFuel / _capacity);
-				
-				/* PVS/PVC - Skaronator */
-				if (local _vehicle) then {
-					[_vehicle,_newFuel] call local_setFuel;
-				} else {
-					/* PVS/PVC - Skaronator */
-					PVDZ_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
-					publicVariableServer "PVDZ_send";
-				};
-
-				// Play sound
-				[player,"refuel",0,false] call dayz_zombieSpeak;
-
-				format[localize "str_epoch_player_132",_nameText,round(_newFuel*100)] call dayz_rollingMessages;
 			};
 		};
 
