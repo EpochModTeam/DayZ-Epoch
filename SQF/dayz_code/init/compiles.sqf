@@ -184,6 +184,7 @@ if (!isDedicated) then {
 	player_removeItems = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_removeItems.sqf";
 	player_removeNearby = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_removeNearby.sqf";
 	player_removeObject = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remove.sqf";
+	player_surrender = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_surrender.sqf";
 	player_traderCity = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_traderCity.sqf";
 	player_unlockDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	player_unlockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";

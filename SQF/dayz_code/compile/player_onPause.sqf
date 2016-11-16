@@ -69,4 +69,4 @@ while {(!isNull _display) && !r_player_dead} do {
 };
 
 TimeOutDisplayed = false;
-if (r_player_dead) exitWith {_btnAbort ctrlEnable true;};
+if (r_player_dead) then {_btnAbort ctrlEnable true;};

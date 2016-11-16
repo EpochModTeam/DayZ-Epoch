@@ -7534,7 +7534,7 @@
 			<German>Du kannst dich nicht in der Nähe eines anderen Spielers ausloggen!</German>
 		</Key>
 		<Key ID="str_abort_zedsclose">
-			<English>You cannot abort near Zombies!</English>
+			<English>You cannot abort near zombies!</English>
 			<Russian>Нельзя выходить находясь рядом с зомби!</Russian>
 			<Spanish>¡No puedes abortar cerca de zombies!</Spanish>
 			<Czech>Nemůžete ukončit hru, když jsou zombie poblíž.</Czech>

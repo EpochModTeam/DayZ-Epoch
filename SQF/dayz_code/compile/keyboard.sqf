@@ -105,54 +105,7 @@ if (isNil "keyboard_keys") then {
         };
     };
 	_surrender = {
-		_vehicle = vehicle player;
-		_inVehicle = (_vehicle != player);
-		_onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-		_canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder && !_inVehicle);
-
-		if (_canDo && !DZE_Surrender && !(player isKindOf  "PZombie_VB")) then {
-			DZE_Surrender = true;
-			_dropPrimary = false;
-			_dropSecondary = false;
-
-			_primaryWeapon = primaryWeapon player;
-			if (_primaryWeapon != "") then {_dropPrimary = true;};
-			_secondaryWeapon = "";
-			{
-				if ((getNumber (configFile >> "CfgWeapons" >> _x >> "Type")) == 2) exitWith {
-						_secondaryWeapon = _x;
-				};
-			} count (weapons player);
-			if (_secondaryWeapon != "") then {_dropSecondary = true;};
-
-			if (_dropPrimary || _dropSecondary) then {
-				player playActionNow "PutDown";
-				_iPos = getPosATL player;
-				_radius = 1;
-				_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
-				_item setposATL _iPos;
-				if (_dropPrimary) then {
-					_iItem = _primaryWeapon;
-					_removed = ([player,_iItem,1] call BIS_fnc_invRemove);
-					if (_removed == 1) then {
-						_item addWeaponCargoGlobal [_iItem,1];
-					};
-				};
-				if (_dropSecondary) then {
-					_iItem = _secondaryWeapon;
-					_removed = ([player,_iItem,1] call BIS_fnc_invRemove);
-					if (_removed == 1) then {
-						_item addWeaponCargoGlobal [_iItem,1];
-					};
-				};
-				player reveal _item;
-			};
-
-			// set publicvariable that allows other player to access gear
-			player setVariable ["DZE_Surrendered", true, true];
-			// surrender animation
-			player playMove "AmovPercMstpSsurWnonDnon";
-		};
+		call player_surrender;
 		_handled = true;
     };
     _gear = {
