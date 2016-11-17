@@ -10,8 +10,10 @@ class Lada_base: Car {
 	side = 3;
 	faction = "CIV";
 	vehicleClass = "Car";
-	crew = "Citizen1";
-	typicalCargo[] = {"Citizen1"};
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	maxSpeed = 120;
 	terrainCoef = 6;
 	turnCoef = 2;
@@ -191,8 +193,8 @@ class Lada_base_alt: Car {
 	side = 3;
 	faction = "CIV";
 	vehicleClass = "Car";
-	crew = "Citizen1";
-	typicalCargo[] = {"Citizen1"};
+	crew = "";
+	typicalCargo[] = {};
 	maxSpeed = 120;
 	terrainCoef = 6;
 	turnCoef = 2;
@@ -810,3 +812,5 @@ class Lada1_TK_CIV_EP1_DZE4: Lada1_TK_CIV_EP1_DZE3 {
 class Lada2_TK_CIV_EP1_DZE4: Lada2_TK_CIV_EP1_DZE3 {
 	fuelCapacity = 150; // car 50
 };
+
+class GLT_M300_LT : Lada_base {};

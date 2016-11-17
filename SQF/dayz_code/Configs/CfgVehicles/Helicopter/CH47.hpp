@@ -127,7 +127,9 @@ class CH_47F_EP1_DZ : CH_47F_EP1 {
 	scope = public; 
 	displayName = "CH-47F DZ"; 
 	crew = ""; 
-	typicalCargo[] = {}; 
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
@@ -147,7 +149,9 @@ class CH_47F_EP1_DZE: CH47_base_EP1
 	icon = "\ca\air_e\data\UI\Icon_ch47f_CA.paa";
 	mapSize = 24;
 	crew = "";
-	typicalCargo[] = {}; 
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	driverAction = "CH47_Pilot_EP1";
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;

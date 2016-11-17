@@ -263,6 +263,8 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 	crew = "";
 	armor = 80;
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	enableGPS = 1;  
 	transportMaxWeapons = 20; 
 	transportMaxMagazines = 150; 
@@ -331,6 +333,8 @@ class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
 	displayName = "SUV (Armored) AL";
 	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	enableGPS = 1;  
 	transportMaxWeapons = 20; 
 	transportMaxMagazines = 150; 

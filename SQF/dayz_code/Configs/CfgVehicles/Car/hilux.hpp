@@ -1,6 +1,10 @@
 class hilux1_civil_1_open;
 class hilux1_civil_1_open_DZE: hilux1_civil_1_open {
 	terrainCoef = 2.5;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints;
 
 	class Upgrades {
@@ -11,6 +15,10 @@ class hilux1_civil_1_open_DZE: hilux1_civil_1_open {
 class hilux1_civil_2_covered;
 class hilux1_civil_2_covered_DZE: hilux1_civil_2_covered {
 	terrainCoef = 2.5;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints;
 
 	class Upgrades {
@@ -21,6 +29,10 @@ class hilux1_civil_2_covered_DZE: hilux1_civil_2_covered {
 class hilux1_civil_3_open;
 class hilux1_civil_3_open_DZE: hilux1_civil_3_open {
 	terrainCoef = 2.5;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints;
 
 	class Upgrades {

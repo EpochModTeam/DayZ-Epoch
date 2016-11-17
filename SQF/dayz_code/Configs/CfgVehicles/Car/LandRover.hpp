@@ -233,6 +233,16 @@ class LandRover_Base: Car
 	threat[] = {0,0,0};
 };
 
+class LandRover_CZ_EP1: LandRover_Base {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+};
+class LandRover_TK_CIV_EP1: LandRover_CZ_EP1 {};
+class BAF_Offroad_D: LandRover_CZ_EP1 {};
+class BAF_Offroad_W: BAF_Offroad_D {};
+
 class LandRover_Special_CZ_EP1_DZ: LandRover_Base
 {
 	scope = public;

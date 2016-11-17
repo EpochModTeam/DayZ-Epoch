@@ -4,13 +4,27 @@ class V3S_Civ: V3S_Base {
 		rarityurban = 0.3;
 		scope = public;
 		side = 3;
-		typicalcargo[] = {};
+		typicalCargo[] = {};
+		class TransportMagazines {};
+		class TransportWeapons {};
 		class Library {
 			libtextdesc = $STR_EP1_LIB_V3S;
 		};
 	};
 
 class V3S_Base_EP1;
+class V3S_Open_TK_CIV_EP1: V3S_Base_EP1 {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+};
+class V3S_Open_TK_EP1: V3S_Base_EP1 {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+};
 class V3S_TK_EP1_DZE: V3S_Base_EP1 {
 	scope = public;
 	side = 0;

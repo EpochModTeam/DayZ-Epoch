@@ -1,6 +1,10 @@
 class datsun1_civil_1_open;
 class datsun1_civil_1_open_DZE: datsun1_civil_1_open {
 	terrainCoef = 2.5;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints;
 
 	class Upgrades {
@@ -11,6 +15,10 @@ class datsun1_civil_1_open_DZE: datsun1_civil_1_open {
 class datsun1_civil_2_covered;
 class datsun1_civil_2_covered_DZE: datsun1_civil_2_covered {
 	terrainCoef = 2.5;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints;
 
 	class Upgrades {
@@ -21,6 +29,10 @@ class datsun1_civil_2_covered_DZE: datsun1_civil_2_covered {
 class datsun1_civil_3_open;
 class datsun1_civil_3_open_DZE: datsun1_civil_3_open {
 	terrainCoef = 2.5;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints;
 
 	class Upgrades {

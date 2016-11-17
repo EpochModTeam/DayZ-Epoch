@@ -11,7 +11,9 @@ class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_base
 	side = 2;
 	faction = "GUE";
 	crew = "";
-	typicalCargo[] = {""};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	displayName = "Off-road (DShKM) DZ";
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hilux_armed\data\coyota_trup4_CO.paa"};
 	class Damage
@@ -55,6 +57,8 @@ class Offroad_DSHKM_Gue_DZE: Offroad_DSHKM_base
 	faction = "GUE";
 	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	displayName = "Off-road (DShKM) AL";
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hilux_armed\data\coyota_trup4_CO.paa"};
 	class Damage

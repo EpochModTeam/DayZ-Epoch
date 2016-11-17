@@ -88,7 +88,9 @@ class UAZ_CDF: UAZ_Unarmed_Base {
 	hiddenselectionstextures[] = {"\ca\wheeled\data\Uaz_main_002_CO.paa"};
 	scope = public;
 	side = 1;
-	typicalcargo[] = {};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 
 	class Upgrades {
 		ItemORP[] = {"UAZ_CDF_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -102,6 +104,8 @@ class UAZ_INS: UAZ_Unarmed_Base {
 	accuracy = 0.3;
 	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	hiddenSelectionsTextures[] = {"\ca\wheeled\data\Uaz_main_001_CO.paa"};
 
 	class Upgrades {
@@ -115,6 +119,8 @@ class UAZ_RU: UAZ_Unarmed_Base {
 	faction = "RU";
 	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	hiddenSelectionsTextures[] = {"\ca\wheeled\data\Uaz_main_CO.paa"};
 
 	class Upgrades {
@@ -128,7 +134,7 @@ class UAZ_Unarmed_TK_EP1: UAZ_Unarmed_Base {
 	side = 0;
 	faction = "BIS_TK";
 	accuracy = 0.3;
-	crew = "TK_Soldier_EP1";
+	crew = "";
 	typicalCargo[] = {};
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\UAZ\Data\Uaz_main_IND_CO.paa"};
 	class TransportMagazines {};

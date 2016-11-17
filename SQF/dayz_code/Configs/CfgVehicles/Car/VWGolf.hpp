@@ -29,6 +29,8 @@ class VWGolf : Car {
 	vehicleClass = "Car";
 	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	maxSpeed = 241;
 	terrainCoef = 6;
 	turnCoef = 2;

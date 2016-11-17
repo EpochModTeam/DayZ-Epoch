@@ -36,7 +36,9 @@ class Fishing_Boat: Ship {
 	textplural = "Ships";
 	textsingular = "Ship";
 	transportsoldier = 7;
-	typicalcargo[] = {};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	vehicleclass = "Ship";
 	class Library {
 		libtextdesc = "Simple boat used to catch fish in the sea. According to the international Food and Agriculture Organization there are about 4 million of commercial fishing boats worldwide. This is one of them.";

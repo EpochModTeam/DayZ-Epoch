@@ -49,7 +49,7 @@ class Category_564 {
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};
 	};
-	class Kamaz {
+	class Kamaz_DZE {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};

@@ -381,7 +381,7 @@ class CfgVehicles {
   		smokeLauncherOnTurret = 1;
   		smokeLauncherAngle = 120;
  	};
-
+	class Truck;
 
 	//External Class
 	//class SkodaBase; //in Car\Skoda.hpp
@@ -427,7 +427,6 @@ class CfgVehicles {
 
 		};
 	};
-	class UralCivil;
 	//class Ship;
 	//class Bag_Base_EP1;
 	//class Bag_Base_BAF;
@@ -447,6 +446,15 @@ class CfgVehicles {
 	class BuiltItems;
 	class Building;
 	class ReammoBox;
+	
+	class M1030_base;
+	class MMT_base;
+	class Old_bike_base_EP1;
+	class Old_moto_base;
+	class Ikarus_base;
+	//class Volha_TK_CIV_Base_EP1;
+	//class LandRover_CZ_EP1;
+	class Ural_Base;
 
 	#include "RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
 	//ZEDS
@@ -471,12 +479,15 @@ class CfgVehicles {
 	#include "Car\datsun.hpp"
 	#include "Car\Gaz_Vodnik.hpp"
 	#include "Car\hilux.hpp"
+	#include "Car\Ikarus.hpp"
 	#include "Car\Kamaz.hpp"
 	#include "Car\Lada.hpp"
 	#include "Car\LandRover.hpp"
 	#include "Car\LAV25.hpp"
 	#include "Car\M113.hpp"
 	#include "Car\Mtvr.hpp"
+	#include "Car\S1203.hpp"
+	#include "Car\Tractor.hpp"
 	#include "Car\UAZ_MG.hpp"
 	#include "Car\Volha.hpp"
 	#include "Car\VWGolf.hpp"
@@ -513,6 +524,9 @@ class CfgVehicles {
 	//Bikes
 	#include "Bikes\ATV_US_EP1.hpp"
 	#include "Bikes\ATV_CZ_EP1.hpp"
+	#include "Bikes\MMT_Civ.hpp"
+	#include "Bikes\Old_bike.hpp"
+	#include "Bikes\Old_moto.hpp"
 	#include "Bikes\TT650_Ins.hpp"
 	#include "Bikes\TT650_Civ.hpp"
 	#include "Bikes\M1030.hpp"
@@ -521,6 +535,7 @@ class CfgVehicles {
 	#include "Boat\PBX.hpp"
 	#include "Boat\Fishing_Boat.hpp"
 	#include "Boat\smallboat.hpp"
+	#include "Boat\JetSkiYanahui.hpp"
 
 	//Includes all Building Stuff
 	// This parent class is made to make referring to these objects easier later with allMissionObjects

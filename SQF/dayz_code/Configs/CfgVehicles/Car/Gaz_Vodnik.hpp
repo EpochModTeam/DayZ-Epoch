@@ -70,7 +70,7 @@ mapSize = 6.5;
 side = 0;
 faction = "RU";
 vehicleClass = "Armored";
-crew = "RU_Soldier";
+crew = "";
 maxSpeed = 100;
 canFloat = 1;
 fuelCapacity = 220;
@@ -711,6 +711,9 @@ hiddenSelectionsTextures[] = {
 
 class GAZ_Vodnik_DZ : GAZ_Vodnik_HMG
 {
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 model = "\ca\wheeled2\GAZ39371\GAZ39371_Vodnik.p3d";
 displayname = "Vodnik (2xPK) DZ";
 picture = "\Ca\wheeled2\data\UI\Picture_GAZ39371_CA.paa";
@@ -856,6 +859,9 @@ class AnimationSources : AnimationSources
 
 class GAZ_Vodnik_DZE : GAZ_Vodnik_HMG
 {
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 model = "\ca\wheeled2\GAZ39371\GAZ39371_Vodnik.p3d";
 displayname = "Vodnik (2xPK) AL";
 picture = "\Ca\wheeled2\data\UI\Picture_GAZ39371_CA.paa";
@@ -994,4 +1000,12 @@ class AnimationSources : AnimationSources
 	weapon = "PKT_2";
   };
 };
+};
+
+class GAZ_Vodnik;
+class GAZ_Vodnik_MedEvac : GAZ_Vodnik {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 };

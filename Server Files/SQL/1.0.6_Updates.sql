@@ -80,7 +80,7 @@ UPDATE `object_data` SET `Classname` = 'ArmoredSUV_PMC_DZE3' WHERE `Classname` =
 UPDATE `object_data` SET `Classname` = 'ArmoredSUV_PMC_DZE3' WHERE `Classname` = 'ArmoredSUV_PMC_DZE';
 
 -- ----------------------------
--- Swap datsun and hilux to upgradeable _DZE versions
+-- Swap datsun, Kamaz and hilux to upgradeable _DZE versions
 -- ----------------------------
 UPDATE `object_data` SET `Classname` = 'hilux1_civil_1_open_DZE' WHERE `Classname` = 'hilux1_civil_1_open';
 UPDATE `object_data` SET `Classname` = 'hilux1_civil_2_covered_DZE' WHERE `Classname` = 'hilux1_civil_2_covered';
@@ -88,6 +88,7 @@ UPDATE `object_data` SET `Classname` = 'hilux1_civil_3_open_DZE' WHERE `Classnam
 UPDATE `object_data` SET `Classname` = 'datsun1_civil_1_open_DZE' WHERE `Classname` = 'datsun1_civil_1_open';
 UPDATE `object_data` SET `Classname` = 'datsun1_civil_2_covered_DZE' WHERE `Classname` = 'datsun1_civil_2_covered';
 UPDATE `object_data` SET `Classname` = 'datsun1_civil_3_open_DZE' WHERE `Classname` = 'datsun1_civil_3_open';
+UPDATE `object_data` SET `Classname` = 'Kamaz_DZE' WHERE `Classname` = 'Kamaz';
 DELETE FROM `Traders_DATA` WHERE item = '["hilux1_civil_1_open"]';
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_1_open_DZE",2]', 2, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 495, 'trade_any_vehicle');
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["hilux1_civil_1_open_DZE",2]', 2, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 535, 'trade_any_vehicle');
@@ -118,6 +119,11 @@ INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]'
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]', 2, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 535, 'trade_any_vehicle');
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]', 2, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 590, 'trade_any_vehicle');
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["datsun1_civil_3_open_DZE",2]', 2, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 659, 'trade_any_vehicle');
+DELETE FROM `Traders_DATA` WHERE item = '["Kamaz"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["Kamaz_DZE",2]', 2, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 564, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["Kamaz_DZE",2]', 2, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 570, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["Kamaz_DZE",2]', 2, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 586, 'trade_any_vehicle');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["Kamaz_DZE",2]', 2, '[2,"ItemGoldBar10oz",1]', '[1,"ItemGoldBar10oz",1]', 0, 653, 'trade_any_vehicle');
 
 -- ----------------------------
 -- Add new attachments category to DB traders

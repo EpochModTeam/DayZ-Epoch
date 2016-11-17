@@ -1,8 +1,10 @@
 class SkodaBase: Car {
 	scope = private;
 	faction = "CIV";
-	crew = "Citizen2";
-	typicalCargo[] = {"Citizen2"};
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	maxSpeed = 110;
 	side = 3;
 	armor = 20;
@@ -13,9 +15,7 @@ class SkodaBase: Car {
 class Skoda: SkodaBase {
 	scope = public;
 	accuracy = 1000;
-	crew = "Citizen1";
 	faction = "CIV";
-	typicalCargo[] = {"Citizen1"};
 	model = "\ca\wheeled\skodovka";
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
@@ -37,9 +37,7 @@ class Skoda: SkodaBase {
 class SkodaBlue: SkodaBase {
 	scope = public;
 	accuracy = 1000;
-	crew = "Villager2";
 	faction = "CIV";
-	typicalCargo[] = {"Villager2"};
 	model = "\ca\wheeled\skodovka_blue";
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
@@ -64,8 +62,6 @@ class SkodaRed: SkodaBase {
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
 	mapSize = 6;
-	crew = "Villager1";
-	typicalCargo[] = {"Villager1"};
 	displayName = "Car (red)";
 	displayNameShort = "Car";
 	class Damage {
@@ -85,8 +81,6 @@ class SkodaGreen: SkodaBase {
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
 	mapSize = 6;
-	crew = "Villager3";
-	typicalCargo[] = {"Villager3"};
 	displayName = "Car (green)";
 	displayNameShort = "Car";
 	class Damage {
@@ -382,3 +376,5 @@ class SkodaRed_DZE4: SkodaRed_DZE3 {
 class SkodaGreen_DZE4: SkodaGreen_DZE3 {
 	fuelCapacity = 210; // car 100
 };
+
+class GLT_M300_ST : SkodaBase {};

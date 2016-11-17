@@ -4,7 +4,9 @@ class MV22_DZ : MV22 {
 	scope = public; 
 	displayName = "MV-22"; 
 	crew = ""; 
-	typicalCargo[] = {}; 
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;

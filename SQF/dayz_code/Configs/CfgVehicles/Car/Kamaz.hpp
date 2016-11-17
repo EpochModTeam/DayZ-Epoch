@@ -19,6 +19,10 @@ class KamazOpen_DZE : Kamaz_Base {
 };
 class Kamaz_DZE: Kamaz_Base {
 	scope = public;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	cargoAction[] = {"Truck_Cargo01","Truck_Cargo01","Truck_Cargo02","Truck_Cargo03","Truck_Cargo02","Truck_Cargo02","Truck_Cargo03","Truck_Cargo02","Truck_Cargo03","Truck_Cargo02","Truck_Cargo02","Truck_Cargo03"};
 	class Upgrades {
 	ItemORP[] = {"Kamaz_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};

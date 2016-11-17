@@ -4,7 +4,9 @@ class SUV_DZ: SUV_Base_EP1 {
 	rarityurban = 0.8;
 	scope = public;
 	side = 3;
-	typicalcargo[] = {};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints : HitPoints {
 		class HitLFWheel:HitLFWheel {
 			armor = 0.15;
@@ -82,6 +84,8 @@ class SUV_TK_CIV_EP1: SUV_Base_EP1 {
 	scope = public;
 	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	rarityUrban = 0.8;
 	faction = "BIS_TK_CIV";
 	side = 3;

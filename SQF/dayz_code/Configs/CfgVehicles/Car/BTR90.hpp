@@ -10,7 +10,8 @@ class BTR90_DZ: BTR90 {
 
 	crew = "";
 	typicalCargo[] = {};
-	class TransportMagazines{};
+	class TransportMagazines {};
+	class TransportWeapons {};
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
@@ -31,7 +32,8 @@ class BTR90_HQ_DZ: BTR90_HQ {
 
 	crew = "";
 	typicalCargo[] = {};
-	class TransportMagazines{};
+	class TransportMagazines {};
+	class TransportWeapons {};
 
 	transportSoldier = 6;
 

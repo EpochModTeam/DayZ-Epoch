@@ -2,8 +2,10 @@
 class Smallboat_1: Ship
 {
 	displayName = "$STR_DN_SMALLBOATA";
-	crew = "Worker1";
-	typicalCargo[] = {"Worker1"};
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class Library
 	{
 		libTextDesc = "$STR_LIB_SMALLBOAT";

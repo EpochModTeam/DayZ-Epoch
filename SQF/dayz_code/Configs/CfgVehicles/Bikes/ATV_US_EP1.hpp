@@ -5,7 +5,9 @@ class ATV_US_EP1: ATV_Base_EP1 {
 	maxspeed = 80;
 	scope = public;
 	side = 1;
-	typicalcargo[] = {""};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints: Hitpoints {
 		class HitBody {
 			armor = 1;

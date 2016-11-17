@@ -4,7 +4,9 @@ class car_sedan : SkodaBase {
 	faction = "CIV";
 	maxspeed = 125;
 	scope = public;
-	typicalcargo[] = {};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 
 	class Upgrades {
 		ItemORP[] = {"car_sedan_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};

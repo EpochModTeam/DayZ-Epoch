@@ -358,14 +358,16 @@ class M113_Base : Tank {
 
 class M113Ambul_Base : M113_Base {
 	accuracy = 1000;	// accuracy needed to recognize type of this target
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	vehicleClass = "Support";
 	picture = "\ca\tracked_e\Data\ui\Picture_m113_amb_CA.paa";
 	Icon = "\Ca\tracked_e\Data\ui\Icon_m113_amb_CA.paa";
 	mapSize = 5;
 	scope = private;
 	displayName = $STR_DN_M113_AMB;
-	
-	class TransportMagazines {};
 	attendant = true;
 	hasGunner = false;
 	

@@ -2,8 +2,11 @@
 class CSJ_GyroP: Plane
 {
 	scope = 2;
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	faction = "CIV";
-	crew = "Pilot";
+	crew = "";
 	cabinOpening = 0;
 	driverAction = "UH60_Pilot";
 	vehicleClass = "CSJ_Air";
@@ -157,7 +160,7 @@ class CSJ_GyroC: Helicopter
 	Icon = "\CSJ_GyroAC\data\Cicon.paa";
 	nameSound = "chopper";
 	faction = "CIV";
-	crew = "Pilot";
+	crew = "";
 	accuracy = 0.3;
 	armor = 30;
 	damageResistance = 0.003;
@@ -184,6 +187,8 @@ class CSJ_GyroC: Helicopter
 	soundEngineOffInt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\DZE\UH1_v1stop",1,1};
 	soundEngineOffExt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\DZE\UH1_v1stop",1,1,800};
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	weapons[] = {"GyroGrenadeLauncher"};
 	magazines[] = {"3Rnd_GyroGrenade"};
 	transportMaxMagazines = 0;

@@ -14,8 +14,10 @@ class Volha_TK_CIV_Base_EP1: Car {
 	Icon = "\CA\wheeled_e\Data\UI\Icon_volha_CA.paa";
 	Picture = "\CA\wheeled_e\Data\UI\Picture_volha_CA.paa";
 	faction = "BIS_TK_CIV";
-	crew = "TK_CIV_Takistani01_EP1";
-	typicalCargo[] = {"TK_CIV_Takistani01_EP1","TK_CIV_Takistani01_EP1"};
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	maxSpeed = 150;
 	terrainCoef = 5;
 	turnCoef = 2;

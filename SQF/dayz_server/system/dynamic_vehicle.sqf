@@ -45,7 +45,7 @@ AllowedVehiclesList = [
 	["HMMWV_M998A2_SOV_DES_EP1_DZE",_Ratio1],
 	["Ikarus",_Ratio3],
 	["Ikarus_TK_CIV_EP1",_Ratio3],
-	["Kamaz",_Ratio3],
+	["Kamaz_DZE",_Ratio3],
 	["KamazRefuel_DZ",_Ratio1],
 	["Lada1",_Ratio3],
 	["Lada1_TK_CIV_EP1",_Ratio3],

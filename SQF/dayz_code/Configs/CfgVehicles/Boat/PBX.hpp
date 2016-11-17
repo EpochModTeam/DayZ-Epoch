@@ -13,8 +13,9 @@ class PBX: RubberBoat {
 	scope = public;
 	side = 0;
 	transportsoldier = 3;
-	typicalcargo[] = {};
+	typicalCargo[] = {};
 	class TransportMagazines {};
+	class TransportWeapons {};
 	class Library {
 		libtextdesc = "The PBX is a Combat Rubber Craft very similar to the CRRC in design. It is intended to be used for maritime raids and infiltration, as well as riverine operations.";
 	};
@@ -26,4 +27,11 @@ class PBX: RubberBoat {
 	transportMaxWeapons = 5;
 	transportMaxBackpacks = 1;
 	fuelCapacity = 23;
+};
+
+class Zodiac : RubberBoat {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 };

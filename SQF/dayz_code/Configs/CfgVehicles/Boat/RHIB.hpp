@@ -263,10 +263,18 @@ class Boat : Ship
 class RHIB: Boat
 {
 	displayName = "RHIB";
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 };
 class RHIB2Turret: RHIB
 {
 	displayName = "RHIB (Mk19)";
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 };
 
 class RHIB_DZ : Boat
@@ -275,7 +283,7 @@ class RHIB_DZ : Boat
 	displayName = "RHIB";
 	vehicleClass = "Ship";
 	accuracy = 0.5;
-	crew = "USMC_Soldier";
+	crew = "";
 	faction = "USMC";
 	side = 1;
 	model = "\ca\water\rhib";
@@ -401,10 +409,9 @@ class RHIB_DZ : Boat
 	maxSpeed = 60;
 	enableGPS = 1;
 	transportSoldier = 10;
-	typicalCargo[] = {
-	  "USMC_Soldier",
-	  "USMC_Soldier_AT"
-	};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	supplyRadius = 3;
 	class Exhausts
 	{
@@ -413,44 +420,6 @@ class RHIB_DZ : Boat
 		position = "vyfuk start";
 		direction = "vyfuk konec";
 		effect = "";
-	  };
-	};
-	class TransportMagazines
-	{
-	  class _xx_30Rnd_556x45_Stanag
-	  {
-		magazine = "30Rnd_556x45_Stanag";
-		count = "30*1";
-	  };
-	  class _xx_200Rnd_556x45_M249
-	  {
-		magazine = "200Rnd_556x45_M249";
-		count = "5*1";
-	  };
-	  class _xx_HandGrenade_west
-	  {
-		magazine = "HandGrenade_west";
-		count = "10*1";
-	  };
-	  class _xx_5Rnd_762x51_M24
-	  {
-		magazine = "5Rnd_762x51_M24";
-		count = "10*1";
-	  };
-	  class _xx_15rnd_9x19_M9
-	  {
-		magazine = "15rnd_9x19_M9";
-		count = "15*1";
-	  };
-	  class _xx_M136
-	  {
-		magazine = "M136";
-		count = "3*1";
-	  };
-	  class _xx_1Rnd_HE_M203
-	  {
-		magazine = "1Rnd_HE_M203";
-		count = "3*1";
 	  };
 	};
 	cost = 10000;

@@ -6,7 +6,9 @@ class TT650_Ins: TT650_Base {
 	maxspeed = 180;
 	scope = public;
 	side = 0;
-	typicalcargo[] = {};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	
 	class HitPoints {
 		class HitEngine {

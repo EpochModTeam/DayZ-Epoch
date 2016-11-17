@@ -250,8 +250,8 @@ class UH60M_base_EP1: UH60_Base {
 	class Library {
 		libTextDesc = "The Blackhawk is the US Army�s front-line utility helicopter used for transport roles, medical evacuation and even air support.<br />It is capable of carrying 11 combat-equipped soldiers. Easy to maintain in the field, the Blackhawk performs well in a variety of roles including air assault and medical evacuation.";
 	};
-	crew = "US_Soldier_Pilot_EP1";
-	typicalCargo[] = {"US_Soldier_Pilot_EP1","US_Soldier_Pilot_EP1"};
+	crew = "";
+	typicalCargo[] = {};
 	gunnerAction = "ManActTestDriver";
 	transportMaxBackpacks = 10;
 	transportSoldier = 13;

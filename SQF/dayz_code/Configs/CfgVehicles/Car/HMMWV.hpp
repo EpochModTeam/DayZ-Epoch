@@ -11,8 +11,8 @@ class HMMWV_Base: Car
 	mapSize = 5;
 	displayName = "HMMWV";
 	vehicleClass = "Car";
-	crew = "USMC_Soldier";
-	typicalCargo[] = {"USMC_Soldier","USMC_Soldier","USMC_Soldier_AT","USMC_Soldier_Officer"};
+	crew = "";
+	typicalCargo[] = {};
 	damperSize = 0.2;
 	damperForce = 1;
 	damperDamping = 1;
@@ -321,6 +321,8 @@ class HMMWV_DZ: HMMWV_Base {
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
 	transportmaxbackpacks = 4;
@@ -884,6 +886,8 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZ: HMMWV_Base
 	faction = "BIS_US";
 	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -930,32 +934,6 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZ: HMMWV_Base
 			source = "revolving";
 			weapon = "M2";
 		};
-	};
-	class TransportMagazines
-	{
-		class _xx_30Rnd_556x45_Stanag
-		{
-			magazine = "30Rnd_556x45_Stanag";
-			count = 15;
-		};
-		class _xx_HandGrenade_West
-		{
-			magazine = "HandGrenade_West";
-			count = 2;
-		};
-		class _xx_SmokeShellGreen
-		{
-			magazine = "SmokeShellGreen";
-			count = 2;
-		};
-		class _xx_SmokeShell
-		{
-			magazine = "SmokeShell";
-			count = 2;
-		};
-	};
-	class TransportWeapons
-	{
 	};
 	class Damage
 	{
@@ -1109,4 +1087,34 @@ class HMMWV_M2_DZ: HMMWV_M2 {
 	transportmaxbackpacks = 4;
 	armor = 40;
 	damageResistance = 0.00581;
+};
+
+class HMMWV_M1035_DES_EP1 : HMMWV_base {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+};
+
+class HMMWV_Ambulance : HMMWV_base {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+};
+
+class HMMWV;
+class HMMWV_DES_EP1 : HMMWV {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+};
+
+class HMMWV_Ambulance_base;
+class HMMWV_Ambulance_CZ_DES_EP1 : HMMWV_Ambulance_base {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 };

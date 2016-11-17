@@ -1,4 +1,8 @@
 class M1030: Motorcycle {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 	class HitPoints {
 		class HitEngine {
 			armor = 1.2;
@@ -52,4 +56,11 @@ class M1030: Motorcycle {
 			visual = "Pravy zadni";
 		};
 	};
+};
+
+class M1030_US_DES_EP1: M1030_base {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 };

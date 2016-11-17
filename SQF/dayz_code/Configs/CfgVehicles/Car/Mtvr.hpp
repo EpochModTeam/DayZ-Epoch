@@ -1,11 +1,28 @@
+class MTVR : Truck {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+};
+
+class MTVR_base;
+class MTVR_DES_EP1 : MTVR_base {
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+};
+
 class MtvrRefuel;
 class MtvrRefuel_base : MtvrRefuel
 {
 	scope = private;
 	side = 4;
 	expansion = 1;
-	crew = "Civilian";
+	crew = "";
 	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
 };
 
 class MtvrRefuel_DES_EP1_DZ : MtvrRefuel_base {
