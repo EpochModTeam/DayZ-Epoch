@@ -227,8 +227,9 @@ _key = if (Z_SingleCurrency) then {
 } else {
 	format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity]
 };
-//diag_log ("HIVE: WRITE: "+ str(_key) + " / " + _characterID);
-//diag_log format["HIVE: SYNC: [%1,%2,%3,%4]",_characterID,_playerPos,_playerGear,_playerBackp];
+
+//diag_log str formatText["INFO - %2(UID:%3) PlayerSync, %1",_key,_name,_playerUID];
+
 _key call server_hiveWrite;
 
 if (Z_SingleCurrency) then { //update global coins

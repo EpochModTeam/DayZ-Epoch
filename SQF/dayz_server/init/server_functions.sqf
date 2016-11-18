@@ -26,7 +26,7 @@ zombie_findOwner = compile preprocessFileLineNumbers "\z\addons\dayz_server\comp
 server_Wildgenerate = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_Wildgenerate.sqf";
 server_plantSpawner = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_plantSpawner.sqf";
 base_fireMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
-server_systemCleanup = compile preprocessFileLineNumbers "\z\addons\dayz_server\system\server_cleanup.sqf";
+//server_systemCleanup = compile preprocessFileLineNumbers "\z\addons\dayz_server\system\server_cleanup.sqf";
 spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf"; //"\z\addons\dayz_code\compile\object_mapper.sqf";
 server_sendToClient = compile preprocessFileLineNumbers "\z\addons\dayz_server\eventHandlers\server_sendToClient.sqf";
 
@@ -188,8 +188,9 @@ dayz_recordLogin = {
 		
 	_status = switch (1==1) do {
 		case ((_this select 2) == 0): { "CLIENT LOADED & PLAYING" };
-		case ((_this select 2) == 1): { "LOGGED IN" };
-		case ((_this select 2) == 2): { "LOGGED OUT" };
+		case ((_this select 2) == 1): { "LOGIN PUBLISHING, Location " +(_this select 4) };
+		case ((_this select 2) == 2): { "LOGGING IN" };
+		case ((_this select 2) == 3): { "LOGGED OUT, Location " +(_this select 4) };
 	};
 	
 	_name = if (typeName (_this select 3) == "ARRAY") then { toString (_this select 3) } else { _this select 3 };

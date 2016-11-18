@@ -154,7 +154,7 @@ if (count dayz_activeInvites > 0) then {
 };
 
 //Record Player Login/LogOut
-[_playerID,_charID,1,_playerName] call dayz_recordLogin;
+[_playerID,_charID,2,(_playerObj call fa_plr2str),((getPosATL _playerObj) call fa_coor2str)] call dayz_recordLogin;
 
 PVCDZ_plr_PlayerAccepted = [_playerName,diag_ticktime];
 (owner _playerObj) publicVariableClient "PVCDZ_plr_PlayerAccepted";

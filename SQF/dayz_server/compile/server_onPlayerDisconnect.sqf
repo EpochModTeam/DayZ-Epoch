@@ -43,7 +43,7 @@ if (_playerUID in dayz_ghostPlayers) exitwith {
 };
 
 //Make sure we know the ID of the object before we try and sync any info to the DB
-if (_characterID != "?") exitwith {
+if (_characterID != "?") then {
 	//If the player has sepsis before logging off lets give them infected status.
 	if (_Sepsis) then {
 		_playerObj setVariable["USEC_infected",true,true];
@@ -81,16 +81,11 @@ if (_characterID != "?") exitwith {
 		{[_x,"gear"] call server_updateObject} count (nearestObjects [_playerPos,DayZ_GearedObjects,10]);
 	};
 	
-	[_playerUID,_characterID,2,_playerName] call dayz_recordLogin;
+	[_playerUID,_characterID,3,_playerName,((getPosATL _playerObj) call fa_coor2str)] call dayz_recordLogin;
 };
 
-if (isNull _playerObj) then {
-	diag_log "Player Object does not exist"; 
-} else {
-//Lets remove the object.
-	if (alive _playerObj) then {
-		_myGroup = group _playerObj;
-		deleteVehicle _playerObj;
-		deleteGroup _myGroup;
-	};
+if (alive _playerObj) then {
+	_myGroup = group _playerObj;
+	deleteVehicle _playerObj;
+	deleteGroup _myGroup;
 };
