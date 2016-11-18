@@ -271,10 +271,6 @@ class RHIB: Boat
 class RHIB2Turret: RHIB
 {
 	displayName = "RHIB (Mk19)";
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
 };
 
 class RHIB_DZ : Boat

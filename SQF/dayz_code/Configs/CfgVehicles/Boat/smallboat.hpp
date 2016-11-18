@@ -24,6 +24,7 @@ class Smallboat_1: Ship
 	transportMaxMagazines = 200;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 4;
+	maxSpeed = 29;
 	transportSoldier = 5;
 	cost = 10000;
 	armor = 10;
