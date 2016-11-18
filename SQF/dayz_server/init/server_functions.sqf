@@ -68,7 +68,7 @@ server_medicalSync = {
 	_player setVariable ["messing",(_array select 13)]; //13
 	_player setVariable ["blood_testdone",(_array select 14)]; //14
 };
-
+/*
 dayz_Achievements = {
 	_achievementID = (_this select 0) select 0;
 	_player = (_this select 0) select 1;
@@ -78,7 +78,7 @@ dayz_Achievements = {
 	_achievements set [_achievementID,1];
 	_player setVariable ["Achievements",_achievements];
 };
-
+*/
 vehicle_handleServerKilled = {
 	private ["_unit","_killer"];
 	_unit = _this select 0;

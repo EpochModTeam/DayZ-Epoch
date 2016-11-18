@@ -15,7 +15,7 @@ call compile preprocessFileLineNumbers (_base+"sched_newDay.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_spawnCheck.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_playerActions.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_medical.sqf");
-call compile preprocessFileLineNumbers (_base+"sched_achievement.sqf");
+//call compile preprocessFileLineNumbers (_base+"sched_achievement.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_gui.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_buildingBubble.sqf");
 
@@ -37,7 +37,7 @@ if (count _list == 0) then {
 	 [ 1, 		0.63,	sched_throwable, sched_throwable_init ],
 	 [ 1, 		0.33,	sched_medical, sched_medical_init ],
 	 [ 10,		0.26,	sched_plantHint ],
-	 [ 3,		2.70,	sched_achievement, sched_achievement_init ],
+	 //[ 3,		2.70,	sched_achievement, sched_achievement_init ],
 	 [ 4,		2.38,	sched_bloodStains, sched_bloodStains_init ],
 	 [ 60, 	   10.44,	sched_animals ],
 	 [ 10, 	    5.44,	sched_medical_slow ],
