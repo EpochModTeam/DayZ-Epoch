@@ -1963,7 +1963,13 @@ class FSM
                          "" \n
                          "//Other Counters" \n
                          "	dayz_currentGlobalAnimals = count entities ""CAAnimalBase"";" \n
-                         "	dayz_currentGlobalZombies = count entities ""zZombie_Base"";"/*%FSM</STATEINIT""">*/;
+                         "	dayz_currentGlobalZombies = count entities ""zZombie_Base"";" \n
+						 "" \n
+						 "{" \n
+						 "	call compile preprocessFileLineNumbers (""\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\""+_x+"".sqf""); " \n
+						 "} count infectedWaterHoles;" \n
+						 "	" \n
+						 "diag_log (infectedWaterHoles);"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
