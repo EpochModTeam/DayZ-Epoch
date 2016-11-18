@@ -21,7 +21,7 @@
 	class Object16 { type = "CampEast_EP1"; position[] = {6746.89, 2784.08, 0}; direction = 42; onFire = 0; };
 	class Object17 { type = "CampEast_EP1"; position[] = {6757.55, 2776.1, 0}; direction = 42; onFire = 0; };
 	class Object18 { type = "USMC_WarfareBFieldhHospital"; position[] = {6767.52, 2762.48, 0}; direction = 313; onFire = 0; };
-	class Object19 { type = "USMC_WarfareBFieldhHospital"; position[] = {6770.4, 2739.77, 0}; direction = 42; onFire = 0; };
+	class Object19 { type = "USMC_WarfareBFieldhHospital"; position[] = {6772.4341, 2739.3132, 0}; direction = 42; onFire = 0; };
 	class Object20 { type = "CampEast"; position[] = {6295.02, 7800.98, 0}; direction = 127; onFire = 0; };
 	class Object21 { type = "Camp"; position[] = {6302.78, 7796.63, 0}; direction = 36; onFire = 0; };
 	class Object22 { type = "CampEast"; position[] = {6305.61, 7810.76, 0}; direction = 128; onFire = 0; };
@@ -74,7 +74,7 @@ if (isServer) then {
 		["CampEast_EP1",[6746.89,2784.08,0],42],
 		["CampEast_EP1",[6757.55,2776.1,0],42],
 		["USMC_WarfareBFieldhHospital",[6767.52,2762.48,0],313],
-		["USMC_WarfareBFieldhHospital",[6770.4,2739.77,0],42],
+		["USMC_WarfareBFieldhHospital",[6772.4341,2739.3132,0],42],
 		["CampEast",[6295.02,7800.98,0],127],
 		["Camp",[6302.78,7796.63,0],36],
 		["CampEast",[6305.61,7810.76,0],128],
