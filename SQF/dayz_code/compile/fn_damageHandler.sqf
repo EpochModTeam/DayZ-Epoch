@@ -165,15 +165,15 @@ if (_unit == player) then {
 
 	//Overkill logging. PVS network send every two seconds = lag. Not worth it just for extra anticheat logs.
     //Log to server :-( OverProcessing really not needed.
-    /*if (((!(isNil {_source})) AND {(!(isNull _source))}) AND {(_isMan AND {(!local _source)})}) then {
+    /*if (!local _source && _isMan) then {
 		_wpst = weaponState _source;
         if (diag_ticktime-(_source getVariable ["lastloghit",0])>2) then {
             private ["_sourceWeap"];
             _source setVariable ["lastloghit",diag_ticktime];
             _sourceDist = round(_unit distance _source);
             _sourceWeap = switch (true) do {
-                case ((vehicle _source) != _source) : { format ["in %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
                 case (_isZombieHit) : { _ammo };
+                case (_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship") : { format ["in %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
                 case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
                 case (["Horn", currentWeapon _source] call fnc_inString) : {"with suspicious vehicle "+str((getposATL _source) nearEntities [["Air", "LandVehicle", "Ship"],5])};
                 case (["Melee", _wpst select 0] call fnc_inString) : { format ["with %2%1",_wpst select 0, if (_sourceDist>6) then {"suspicious weapon "} else {""}] }; 

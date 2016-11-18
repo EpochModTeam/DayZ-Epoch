@@ -7262,6 +7262,21 @@
 		<Key ID="str_player_studybody_female">
 			<English>Her name was %1, it appears she died from %2</English>
 		</Key>
+		<Key ID="str_player_death_suicide">
+			<English>%1 committed suicide</English>
+			<German>%1 Selbstmord</German>
+			<Russian>%1 покончил с собой</Russian>
+		</Key>
+		<Key ID="str_player_death_died">
+			<English>%1 died from %2</English>
+			<German>%1 starb durch %2</German>
+			<Russian>%1 умер от %2</Russian>
+		</Key>
+		<Key ID="str_player_death_killed">
+			<English>%1 was killed by %2 with a %3 from %4m</English>
+			<German>%1 wurde von %2 mit einer %3 von %4m getötet</German>
+			<Russian>%1 был убит игроком %2 с %3 с расстояния %4м</Russian>
+		</Key>
 <!--		
 		<Key ID="str_player_fail_drink">
 			<English>You may not drink while in a vehicle</English>
@@ -7524,6 +7539,16 @@
 		<Key ID="str_death_melee">
 			<English>blunt force trauma.</English>
 			<German>durch stumpfe Gewalteinwirkung.</German>
+		</Key>
+		<Key ID="str_death_rad">
+			<English>radiation</English>
+			<German>Strahlung</German>
+			<Russian>излучение</Russian>
+		</Key>
+		<Key ID="str_death_crushed">
+			<English>being crushed</English>
+			<German>zerquetscht</German>
+			<Russian>раздавлен</Russian>
 		</Key>
 		<Key ID="str_abort_playerclose">
 			<English>You cannot abort near another player!</English>
@@ -13863,31 +13888,6 @@
 			<Spanish>Va a auto-unirse al juego en %1 segundos. Presione ESC para cancelar y dejar el vestíbulo.</Spanish>
 			<French>Vous serez automatiquement rejoindre le jeu en %1 secondes. Appuyez sur ESC pour annuler et quitter le hall.</French>
 			<Czech>Budete auto-zapojit do hry za %1 sekund. Stisknutím klávesy ESC zrušit a nechat lobby.</Czech>
-		</Key>
-		<Key ID="str_death_rad">
-			<English>radiation</English>
-			<German>Strahlung</German>
-			<Russian>излучение</Russian>
-		</Key>
-		<Key ID="str_death_crushed">
-			<English>being crushed</English>
-			<German>zerquetscht</German>
-			<Russian>раздавлен</Russian>
-		</Key>
-		<Key ID="str_player_death_suicide">
-			<English>%1 committed suicide</English>
-			<German>%1 Selbstmord</German>
-			<Russian>%1 покончил с собой</Russian>
-		</Key>
-		<Key ID="str_player_death_died">
-			<English>%1 died from %2</English>
-			<German>%1 starb durch %2</German>
-			<Russian>%1 умер от %2</Russian>
-		</Key>
-		<Key ID="str_player_death_killed">
-			<English>%1 was killed by %2 with a %3 from %4m</English>
-			<German>%1 wurde von %2 mit einer %3 von %4m getötet</German>
-			<Russian>%1 был убит игроком %2 с %3 с расстояния %4м</Russian>
 		</Key>
 		<Key ID="STR_PITCH_DESERT_TENT">
 			<English>Pitch Desert Dome Tent</English>
