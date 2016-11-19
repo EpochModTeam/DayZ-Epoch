@@ -34,7 +34,7 @@
 		<Key ID="STR_ACTIONS_PUTOUTFIRE">
 			<English>Put out fire</English>
 			<Russian>Погасить огонь</Russian>
-			<German>Feuer ausmachen</German>
+			<German>Feuer löschen</German>
 		</Key>
 		<Key ID="STR_ACTIONS_DROP">
 			<English>Drop</English>
@@ -584,14 +584,14 @@
 			<Russian>Набор для переливания</Russian>
 			<French>Kit de transfusion</French>
 			<Czech>Transfúzní souprava</Czech>
-			<German>Transfusionsbesteck</German>
+			<German>Transfusionskit</German>
 		</Key>
 		<Key ID="STR_BLD_desc_transfusionKit">
 			<English>A blood transfusion kit that is required to perform blood transfusions and fill blood bags</English>
 			<Russian>Медицинский набор, необходимый для переливания крови.</Russian>
 			<French>Un kit de transfusion sanguine nécessaire pour transfuser un survivant ou remplir une poche de sang</French>
 			<Czech>Jednorázová transfúzní souprava, jež je nutná při provádění krevních transfúzí a plnění krevních vaků.</Czech>
-			<German>Ein Transfusionsbesteck, um Bluttransfusionen durchzuführen und Blutkonserven zu füllen.</German>
+			<German>Ein Transfusionskit, um Bluttransfusionen durchzuführen und Blutkonserven zu füllen.</German>
 		</Key>
 		<Key ID="STR_BLD_use_transfusionKit">
 			<English>Fill Blood Bag</English>
@@ -612,14 +612,14 @@
 			<Russian>Еще ненаполненный пакет для крови</Russian>
 			<French>Une poche de sang vide à remplir avec un kit de transfusion</French>
 			<Czech>Prázdný krevní vak, jenž je možné naplnit vlastní krví s pomocí transfúzní soupravy.</Czech>
-			<German>Eine sterile leere Blutkonserve, die mit Blut befüllt werden muss.</German>
+			<German>Eine sterile leere Blutkonserve, die mit Blut befüllt werden kann.</German>
 		</Key>
 		<Key ID="str_actions_medical_bagMissingKit">
 			<English>Missing Transfusion kit.</English>
 			<Russian>Отсутствует набор для переливания.</Russian>
 			<French>Kit de transfusion manquant</French>
 			<Czech>Chybí transfúzní souprava.</Czech>
-			<German>Transfusionsbesteck fehlt.</German>
+			<German>Transfusionskit fehlt.</German>
 		</Key>
 		<Key ID="str_actions_medical_bagMissingBlood">
 			<English>The bag cannot be filled, there is not enough blood in the donor.</English>
@@ -779,7 +779,7 @@
 		</Key>
 		<Key ID="str_actions_medical_transfusion_failed_transfusionkit">
 			<English>Transfusion failed. Missing Transfusion Kit!</English>
-			<German>Transfusion fehlgeschlagen! Transfusionsbesteck fehlt!</German>
+			<German>Transfusion fehlgeschlagen! Transfusionskit fehlt!</German>
 			<Russian>Переливание отменено. Отсутствует набор для переливания!</Russian>
 			<Czech>Transfúze selhala, chybí transfúzní souprava!</Czech>
 		</Key>
@@ -872,6 +872,7 @@
 		</Key>
 		<Key ID="str_actions_push">
 			<English>Push %1</English>
+			<German>%1 schieben</German>
 		</Key>
 		<Key ID="str_actions_stats">
 			<English>Enable Stats</English>
@@ -1010,7 +1011,7 @@
 		</Key>
 		<Key ID="STR_ACTIONS_FILL_W">
 			<English>Fill Water</English>
-			<German>Mit Wasser füllen</German>
+			<German>Wasser abfüllen</German>
 			<Russian>Наполнить</Russian>
 			<Spanish>Cargar con Agua</Spanish>
 			<French>Remplir</French>
@@ -1258,7 +1259,7 @@
 			<Spanish>Ya estás pescando.</Spanish>
 			<Czech>Rybaření již probíhá.</Czech>
 			<French>Vous êtes déjà en train de pêcher</French>
-			<German>Du angelst schon.</German>
+			<German>Du angelst bereits.</German>
 			<Dutch>Afmaken van creatie is al bezig.</Dutch>
 		</Key>
 		<Key ID="str_siphon_start">
@@ -1542,7 +1543,7 @@
 		<Key ID="str_sharpen_missing_water">
 			<English>You need a water bottle to sharpen objects.</English>
 			<Russian>Нужна вода, чтобы заточить объект.</Russian>
-			<German>Du brauchst eine Wasserflasche um Objekte zu schärfen.</German>
+			<German>Du brauchst eine Wasserflasche, um Objekte zu schärfen.</German>
 		</Key>
 		<Key ID="str_sharpen_success">
 			<English>%1 has been sharpened.</English>
@@ -1581,7 +1582,7 @@
 			<Russian>Объект уже строться.</Russian>
 			<French>La construction est déjà en cours</French>
 			<Czech>Stavba již probíhá.</Czech>
-			<German>Du baust schon.</German>
+			<German>Du baust bereits.</German>
 		</Key>
 		<Key ID="str_maintenanceDone">
 			<English>Maintenance done.</English>
@@ -2087,7 +2088,7 @@
 			<Russian>Металлический прут, который может пригодиться в мастерской.</Russian>
 			<Czech>Kovová tyč se používá při výrobě.</Czech>
 			<French>Perche métallique (Artisanat)</French>
-			<German>Eine Metallstange. Kann beim Handwerken verwendet werden.</German>
+			<German>Eine Metallstange, die beim Handwerken verwendet wird.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_tent_poles">
 			<English>6 Tent Poles</English>
@@ -2103,7 +2104,7 @@
 			<Russian>6 палаточных распорок, которые могут пригодиться в мастерской для создания палаток и масксетей.</Russian>
 			<Czech>Šest stanových tyčí, jež lze využít při výrobě stanů a kamuflážních sítí.</Czech>
 			<French>Perche métallique (Artisanat)</French>
-			<German>Sechs Zeltstangen aus Metall. Können beim Handwerken verwendet werden.</German>
+			<German>Sechs Zeltstangen aus Metall, die beim Handwerken verwendet werden.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_rubber_tube">
 			<English>Small rubber tube</English>
@@ -2119,7 +2120,7 @@
 			<Russian>Резиновая трубка, которая может пригодиться в мастерской.</Russian>
 			<Czech>Gumová hadice se používá při výrobě.</Czech>
 			<French>Tuyau flexible (Artisanat)</French>
-			<German>Ein kurzer Gummischlauch. Kann beim Handwerken verwendet werden.</German>
+			<German>Ein kurzer Gummischlauch, der beim Handwerken verwendet wird.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_fuse">
 			<English>Rats tail (fuse)</English>
@@ -2135,7 +2136,7 @@
 			<Russian>Фитиль, который может пригодиться в мастерской.</Russian>
 			<Czech>Knot se používá při výrobě.</Czech>
 			<French>Mèche (Artisanat)</French>
-			<German>Eine Lunte. Kann beim Handwerken verwendet werden.</German>
+			<German>Eine Lunte, die beim Handwerken verwendet wird.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_feathers">
 			<English>Feathers</English>
@@ -2151,7 +2152,7 @@
 			<Russian>Перья, которые могут пригодиться в мастерской.</Russian>
 			<Czech>Peří se používá při výrobě. Nebo na lechtání.</Czech>
 			<French>Plumes (Artisanat)</French>
-			<German>Vogelfedern. Können beim Handwerken verwendet werden.</German>
+			<German>Vogelfedern, die beim Handwerken verwendet werden.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_pipecap">
 			<English>Pipe Cap</English>
@@ -2167,7 +2168,7 @@
 			<Russian>Заглушка, которая может пригодиться в мастерской.</Russian>
 			<Czech>Zátka se používá při výrobě.</Czech>
 			<French>Plumes (Artisanat)</French>
-			<German>Eine Rohrkappe. Kann beim Handwerken verwendet werden.</German>
+			<German>Eine Rohrkappe, die beim Handwerken verwendet werden.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_rail_screws">
 			<English>Rail screws</English>
@@ -2211,7 +2212,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_rope">
 			<English>Some rope</English>
-			<German>Ein Stück Seil.</German>
+			<German>Ein kurzes Seil</German>
 			<Russian>Прочная веревка.</Russian>
 			<Spanish>Alguna cuerda</Spanish>
 			<French>Une corde</French>
@@ -2307,7 +2308,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_paint">
 			<English>Some paint</English>
-			<German>Etwas alte Farbe.</German>
+			<German>Etwas Farbe.</German>
 			<Russian>Немного краски.</Russian>
 			<Spanish>Un poco de pintura</Spanish>
 			<French>De la peinture</French>
@@ -2371,7 +2372,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_metal_sheet">
 			<English>A clean piece of sheet metal</English>
-			<German>Eine Metallplatte. Kann beim Handwerken verwendet werden.</German>
+			<German>Eine Metallplatte, die beim Handwerken verwendet wird.</German>
 			<Russian>Чистый лист металла.</Russian>
 			<Spanish>Una lámina de metal</Spanish>
 			<French>Une plaque de métal</French>
@@ -2437,7 +2438,7 @@
 			<Spanish>Un pedazo de manguera en buen estado que podría ser usada para crear objetos.</Spanish>
 			<French>Un bout de tuyau d&apos;arrosage en bon état (Artisanat)</French>
 			<Czech>Kus hadice v dobrém stavu. Předmět lze použít při výrobě.</Czech>
-			<German>Ein Stück gut erhaltener Schlauch. Kann beim Handwerken verwendet werden.</German>
+			<German>Ein Stück gut erhaltener Schlauch, der beim Handwerken verwendet wird.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_floppywire">
 			<English>Floppy Wire</English>
@@ -2566,7 +2567,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_aa_battery">
 			<English>AA Battery</English>
-			<German>Batterie AA</German>
+			<German>AA-Batterie</German>
 			<Russian>Батарейка АА</Russian>
 			<Spanish>Batería AA</Spanish>
 			<French>Pile de type AA</French>
@@ -2582,7 +2583,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_d_battery">
 			<English>D Battery</English>
-			<German>Batterie D</German>
+			<German>D-Batterie</German>
 			<Russian>Батарейка D</Russian>
 			<Spanish>Batería D</Spanish>
 			<French>Pile de type D</French>
@@ -2633,7 +2634,7 @@
 			<Russian>Напиток из смеси трав, который может помочь при инфекции.</Russian>
 			<Czech>Nápoj smíchá s bylinkami, které mohou pomoci léčit infekci.</Czech>
 			<French>Une boisson mélangée avec des herbes qui peuvent aider à guérir l'infection.</French>
-			<German>Ein Getränk aus Kräutern. Hilft bei Infektionen.</German>
+			<German>Ein Getränk aus Kräutern, welches bei Infektionen hilft.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_HerbalDrink">
 			<English>Herbal Drink</English>
@@ -2657,7 +2658,7 @@
 			<Spanish>Hojas de consuelda que pueden ser usadas para crear objetos.</Spanish>
 			<Czech>Kostival lékařský je léčivá bylina, jejíž listy jsou používány při výrobě.</Czech>
 			<French>Feuilles de consoude officinale (Artisanat)</French>
-			<German>Einige Blätter vom Rauen Beinwell. Wirken schmerzlindernd und entzündungshemmend.</German>
+			<German>Einige Blätter vom rauen Beinwell, welche schmerzlindernd und entzündungshemmend wirken.</German>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_Bandage">
 			<English>Bandage</English>
@@ -3357,7 +3358,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_1">
 			<English>Collapsible spade used together with the engineering backpack to create field defences</English>
-			<German>Ein Klappspaten. Wird beim Verschanzen und für viele Bautätigkeiten benötigt.</German>
+			<German>Ein Klappspaten, der beim Verschanzen und für viele Bautätigkeiten benötigt wird.</German>
 			<Russian>Саперная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
 			<Spanish>Una pala plegable usada para crear defensas en el campo.</Spanish>
 			<French>Une pelle démontable permettant de construire des éléments de défense.</French>
@@ -3373,7 +3374,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_1b">
 			<English>A shovel is a tool for digging, lifting, and moving bulk materials.</English>
-			<German>Eine Schaufel. Man kann damit Löcher graben.</German>
+			<German>Eine Schaufel, mit welcher man Löcher graben kann.</German>
 			<Russian>Лопата — ручной инструмент для работы (копание, расчистка, перенос) с грунтом.</Russian>
 			<Spanish>Una pala es una herramienta usada para cavar.</Spanish>
 			<French>Oui une pelle c&apos;est fait pour creuser.</French>
