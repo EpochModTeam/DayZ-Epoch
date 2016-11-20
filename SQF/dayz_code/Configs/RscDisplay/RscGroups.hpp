@@ -160,7 +160,7 @@ class DZ_GroupDialog {
 	class controls {
 		class Players: DZ_GroupListBox {
 			idc = 1;
-			onLBSelChanged = "call dayz_selectPlayer;";
+			onLBSelChanged = "call dayz_pickPlayer;";
 			x = .04;
 			y = .21;
 			w = .235;
@@ -168,7 +168,7 @@ class DZ_GroupDialog {
 		};
 		class MyGroup: DZ_GroupListBox {
 			idc = 2;
-			onLBSelChanged = "call dayz_selectGroupMember;";
+			onLBSelChanged = "call dayz_pickGroupMember;";
 			x = .5;
 			y = .21;
 			w = .235;
