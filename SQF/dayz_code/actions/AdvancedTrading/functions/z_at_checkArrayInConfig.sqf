@@ -8,7 +8,7 @@
 *
 *	Fills up the sell or buy list if the item has a valid config.
 **/
-private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_vehUpgraded","_currencyQty"];
+private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_vehUpgraded","_currencyQty","_swap"];
 #include "defines.hpp"
 
 _weaps = _this select 0;
@@ -50,6 +50,11 @@ _totalPrice = 0;
 
 {
 	_y = _x;
+	_swap = false;
+	if (dayz_classicBloodBagSystem && _y == "ItemBloodbag") then {
+		_y = "bloodBagONEG";
+		_swap = true;
+	};
 	{
 		private ["_cat","_exists","_pic","_text","_type","_sell","_buy","_buyCurrency","_sellCurrency","_worth"];
 		_cat =  format["Category_%1",(_arrayOfTraderCat select _forEachIndex select 1)];
@@ -64,6 +69,7 @@ _totalPrice = 0;
 			_type = getText(missionConfigFile >> "CfgTraderCategory"  >> _cat  >> _y >> "type");
 			_sell = getArray(missionConfigFile >> "CfgTraderCategory"  >> _cat  >> _y >> "sell");
 			_buy = getArray(missionConfigFile >> "CfgTraderCategory"  >> _cat  >> _y >> "buy");
+			if (_swap) then {_y = "ItemBloodbag"};
 			switch (true) do {
 				case (_type == "trade_items") :
 				{
