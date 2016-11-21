@@ -3,4 +3,9 @@ class MMT_Civ: MMT_base {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
+	class UserActions
+	{
+		class Repair {ACTION_REPAIR; radius = 4;};
+		delete Salvage;
+	};
 };
