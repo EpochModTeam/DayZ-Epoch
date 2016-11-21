@@ -141,6 +141,7 @@ pickupInit = false;
 mouseOverCarry = false; //for carry slot since determining mouse pos doesn't work right
 dayZ_partClasses = ["PartFueltank","PartWheel","PartEngine"]; //No need to add PartGeneric, it is default for everything
 dayZ_explosiveParts = ["palivo","motor"];
+if (isNil "infectedWaterHoles") then {infectedWaterHoles = [];};
 
 //Survival Variables
 SleepFood = 2160; //minutes (48 hours)
