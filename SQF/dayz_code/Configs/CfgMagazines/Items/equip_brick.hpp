@@ -8,13 +8,4 @@ class equip_brick : CA_Magazine
 	picture = "\z\addons\dayz_communityassets\pictures\equip_brick.paa";
 	displayName = $STR_ITEM_NAME_equip_brick;
 	descriptionShort = $STR_ITEM_DESC_equip_brick;
-	
-	class ItemActions
-	{
-		class FixKnife
-		{
-			text = $STR_ACTIONS_FIX_KNIFE;
-			script = "; ['ItemKnifeBlunt','ItemKnife'] spawn player_sharpen;";
-		};
-	};
 };

@@ -21,8 +21,8 @@ if (isNil "_waterUsed") exitWith {
 };
 
 // item is missing or tools are missing
-if (!(_item IN items player)) exitWith {
-	_displayName = getText (configFile >> "CfgWeapons" >> _item >> "displayName");
+if !("equip_brick" IN magazines player) exitWith {
+	_displayName = getText (configFile >> "CfgMagazines" >> "equip_brick" >> "displayName");
 	format [localize "str_missing_to_do_this",_displayName] call dayz_rollingMessages;
 };
 
