@@ -26,7 +26,7 @@ sched_co_deleteVehicle = {
 
 
 sched_corpses = {
-	private ["_delQtyZ","_delQtyP","_addFlies","_x","_deathTime","_onoff","_delQtyAnimal", "_sound", "_deathPos", "_cpos"];
+	private ["_delQtyZ","_delQtyP","_addFlies","_x","_deathTime","_onoff","_delQtyAnimal","_sound","_deathPos","_cpos","_animal","_nearPlayer"];
 	// EVERY 2 MINUTE
 	// DELETE UNCONTROLLED ZOMBIES --- PUT FLIES ON FRESH PLAYER CORPSES --- REMOVE OLD FLIES & CORPSES
 	_delQtyZ = 0;
@@ -105,9 +105,13 @@ sched_corpses = {
 	
 	_delQtyAnimal = 0;
 	{
-		if (local _x) then {
-			_x call sched_co_deleteVehicle;
-			_delQtyAnimal = _delQtyAnimal + 1;
+		_animal = _x;
+		if (local _animal) then {
+			_nearPlayer = {isPlayer _x} count (_animal nearEntities ["CAManBase",150]);
+			if (_nearPlayer == 0) then {
+				_animal call sched_co_deleteVehicle;
+				_delQtyAnimal = _delQtyAnimal + 1;
+			};
 		};
 	} forEach entities "CAAnimalBase";
 

@@ -3,8 +3,7 @@ class CAAnimalBase: Animal
 {
 	class Eventhandlers
 	{
-		//local = "_z = _this select 0; if ((!isServer and !isNull _z) and {(side _z != civilian)}) exitWith { PVDZ_sec_atp = [ 'wrong side', player ]; publicVariableServer 'PVDZ_sec_atp'; deleteVehicle _z; }; if ((_this select 1) and isServer) exitWith { _z call sched_co_deleteVehicle; };";
-		local = "_z = _this select 0; if ((_this select 1) and isServer) exitWith { _z call sched_co_deleteVehicle; };";
+		//local = "_z = _this select 0; if ((!isServer and !isNull _z) and {(side _z != civilian)}) exitWith { PVDZ_sec_atp = [ 'wrong side', player ]; publicVariableServer 'PVDZ_sec_atp'; deleteVehicle _z; };";
 	};
 	class UserActions
 	{
