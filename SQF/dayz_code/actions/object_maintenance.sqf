@@ -104,8 +104,8 @@ if (_startMaintenance) then {
 			publicVariableServer "PVDZ_veh_Save";
 		};
 		
-		PVDZ_object_replace = [_cursorTarget];
-		publicVariableServer "PVDZ_object_replace";
+		//PVDZ_object_replace = [_cursorTarget];
+		//publicVariableServer "PVDZ_object_replace";
 	};
 	
 	_cursorTarget setVariable["Maintenance",true,true];

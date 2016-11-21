@@ -577,8 +577,10 @@ class CfgVehicles {
 	#include "Buildings\Land_VASICore.hpp"
 	#include "Buildings\Land_Vysilac_FM.hpp"
 
-	//camo
-	//#include "CamoNetting.hpp" //Duplicate of Epoch camo net in DZE\Prop_Defs.hpp
+	//Duplicates of Epoch items in DZE\Prop_Defs.hpp
+	//#include "CamoNetting.hpp"
+	//#include "Hedgehog.hpp"
+	//#include "Sandbag.hpp"
 
 
 	//WeaponHolder

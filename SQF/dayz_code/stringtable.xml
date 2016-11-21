@@ -8609,6 +8609,9 @@
 			<Russian>Демонтировать противотанковый ёж</Russian>
 			<German>Panzersperre abbauen</German>
 		</Key>
+		<Key ID="STR_BUILT_CAMONET_Dismantle">
+			<English>Dismantle Camonet</English>
+		</Key>
 		<Key ID="STR_BUILT_HEDGEHOG">
 			<English>Hedgehog (Steel)</English>
 			<Russian>Противотанковый ёж</Russian>
