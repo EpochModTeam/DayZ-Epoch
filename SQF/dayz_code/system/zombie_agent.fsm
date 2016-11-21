@@ -178,8 +178,8 @@ class FSM
     class init
     {
       name = "init";
-      init = /*%FSM<STATEINIT""">*/"_position = 	_this select 0;" \n
-       "_agent = 		_this select 1;" \n
+      init = /*%FSM<STATEINIT""">*/"_agent = 	_this select 0;" \n
+       "_position = 		_agent modelToWorld [0,0,0];" \n
        "_secondHand = false;" \n
        "" \n
        "if (count _this > 2) then {" \n

@@ -62,10 +62,6 @@ _cantSee = {
 _skipFOV = false;
 
 if ((_maxlocalspawned < _maxControlledZombies) && (dayz_CurrentNearByZombies < dayz_maxNearByZombies) && (dayz_currentGlobalZombies < dayz_maxGlobalZeds)) then {
-	//if (_wildSpawns) then { 
-	//	_skipFOV = true;
-	//	_position = [_position,150,200] call dayz_RandomLocation;
-	//};
 	if (_bypass) then {  
 		_skipFOV = true;
 		_position = [_position,3,20,1] call fn_selectRandomLocation;
@@ -122,17 +118,6 @@ if ((_maxlocalspawned < _maxControlledZombies) && (dayz_CurrentNearByZombies < d
 			_agent setVariable ["stance", _favStance];
 			_agent setVariable ["BaseLocation", _position];
 			_agent setVariable ["doLoiter", _doLoiter]; // true: Z will be wandering, false: stay still
-			//_agent setVariable ["myDest", _position];
-			//_agent setVariable ["newDest", _position];
-			//[_agent, _position] call zombie_loiter;
 		};
-		
-		//Disable simulation 
-		//PVDZ_Server_Simulation = [_agent, false];
-		//publicVariableServer "PVDZ_Server_Simulation";
-		
-		//Start behavior
-		_id = [_position,_agent] execFSM "\z\AddOns\dayz_code\system\zombie_agent.fsm";
 	};
-
 };
