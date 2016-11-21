@@ -29,9 +29,11 @@ if (_hasAntibiotics) then {
 	//Remove one table from the box.
 	[_medsUsed,"medical"] call dayz_reduceItems;
 
+	
 	//remove infection
-	r_player_infected = false;
-	_unit setVariable["USEC_infected",false,true];
+	//Called in medAntis
+	//r_player_infected = false;
+	//_unit setVariable["USEC_infected",false,true];
 
 	//remove option
 	call fnc_usec_medic_removeActions;
