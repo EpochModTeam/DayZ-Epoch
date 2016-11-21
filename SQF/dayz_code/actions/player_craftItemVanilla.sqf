@@ -16,7 +16,7 @@ private ["_config","_input","_output","_required","_failChance","_hasInput","_av
 //diag_log(str(isnil "r_player_crafting"));
 
 //Process has started
-if( (animationState player) IN [ "ainvpknlmstpslaywrfldnon_medic" ]) exitwith {};
+if( (animationState player) IN [ "ainvpknlmstpslaywrfldnon_medic" ]) exitwith {dayz_actionInProgress = false;};
 
 
 //Config class of right click item
@@ -132,7 +132,7 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 			uiSleep 2;
 			//setup alert and speak
 			_dis=20;
-			_sfx = "chopwood";
+			_sfx = if (_classname == "equip_rope") then {"bandage"} else {"chopwood"};
 			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 			[player,_dis,true,(getPosATL player)] call player_alertZombies;
 			
@@ -187,3 +187,5 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 		};
 	};
 };
+
+dayz_actionInProgress = false;
