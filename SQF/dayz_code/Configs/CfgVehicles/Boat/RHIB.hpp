@@ -5,6 +5,11 @@
 //class DefaultEventhandlers;
 class Ship : AllVehicles
   {
+	  class UserActions
+		{
+			class Repair {ACTION_REPAIR; radius = 8;};
+			class Salvage {ACTION_SALVAGE; radius = 8;};
+		};
 	transportMaxMagazines = 2000;
     transportMaxWeapons = 200;
     transportMaxBackpacks = 40;

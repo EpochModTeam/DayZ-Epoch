@@ -1,3 +1,4 @@
+#include "CommonActions.hpp"
 class WeaponFireGun;    // External class reference
 class WeaponCloudsGun;  // External class reference
 class WeaponFireMGun;   // External class reference
@@ -136,6 +137,11 @@ class CfgVehicles {
 				class ViewOptics;
 			};
 		};
+		class UserActions
+		{
+			class Repair {ACTION_REPAIR; radius = 8;};
+			class Salvage {ACTION_SALVAGE; radius = 8;};
+		};
 	};
 	class Plane: Air
 	{
@@ -147,6 +153,12 @@ class CfgVehicles {
 			class HitHull;
 		};
 		class AnimationSources;
+		class UserActions
+		{
+			class Repair {ACTION_REPAIR; radius = 8;};
+			class Salvage {ACTION_SALVAGE; radius = 8;};
+			class PushPlane {ACTION_PUSH;};
+		};
 	};
 	class Land;	// External class reference
 	class LandVehicle : Land
@@ -178,6 +190,11 @@ class CfgVehicles {
 				size = 0.5;
 				brightness = 0.5;
 			};
+		};
+		class UserActions
+		{
+			class Repair {ACTION_REPAIR; radius = 4;};
+			class Salvage {ACTION_SALVAGE; radius = 4;};
 		};
 	};
 	class Car: LandVehicle {
@@ -440,9 +457,6 @@ class CfgVehicles {
 	class Strategic;
 	class NonStrategic;
 //	class Land_Fire;
-	class Animal;
-	class Pastor;
-	class Fin;
 	class BuiltItems;
 	class Building;
 	class ReammoBox;
@@ -531,7 +545,7 @@ class CfgVehicles {
 	#include "Bikes\TT650_Civ.hpp"
 	#include "Bikes\M1030.hpp"
 	//Boat
-	#include "Boat\RHIB.hpp"
+	#include "Boat\RHIB.hpp" //Must be first boat, includes Ship base class
 	#include "Boat\PBX.hpp"
 	#include "Boat\Fishing_Boat.hpp"
 	#include "Boat\smallboat.hpp"

@@ -1,12 +1,28 @@
 
 class Man;
-class CAManBase: Man
+class CAManBase: Man //Covers all custom Epoch skins
 {
 	class TalkTopics;
 	class HitPoints
 	{
 		class HitHead;
 		class HitBody;
+	};
+	class UserActions
+	{
+		class StudyBody
+		{
+			displayName = $STR_ACTION_STUDYBODY;
+			displayNameDefault = $STR_ACTION_STUDYBODY;
+			priority = 0;
+			radius = 3;
+			position = "";
+			showWindow = 0;
+			onlyForPlayer = 1;
+			shortcut = "";
+			condition = "(['StudyBody',this] call userActionConditions)";
+			statement = "this call player_studyBody;";
+		};
 	};
 };
 class Civilian: CAManBase

@@ -1,6 +1,6 @@
 private ["_part","_cancel","_color","_string","_handle","_damage","_cmpt","_vehicle","_hitpoints","_damagePercent","_configVeh"];
 
-_vehicle = _this select 3;
+_vehicle = _this;
 {dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 dayz_myCursorTarget = _vehicle;
 
@@ -39,5 +39,4 @@ if (count _hitpoints > 0) then {
 	// Localized in A2OA\Expansion\dta\languagecore
 	_cancel = dayz_myCursorTarget addAction [localize "str_action_cancel_action", "\z\addons\dayz_code\actions\repair_cancel.sqf","repair", 0, true, false];
 	s_player_repairActions set [count s_player_repairActions,_cancel];
-	s_player_repair_crtl = 1;
 };

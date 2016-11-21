@@ -1,15 +1,30 @@
-
-class CAAnimalBase;
-class animal_DZ: CAAnimalBase
+class Animal;
+class CAAnimalBase: Animal
 {
 	class Eventhandlers
 	{
 		//local = "_z = _this select 0; if ((!isServer and !isNull _z) and {(side _z != civilian)}) exitWith { PVDZ_sec_atp = [ 'wrong side', player ]; publicVariableServer 'PVDZ_sec_atp'; deleteVehicle _z; }; if ((_this select 1) and isServer) exitWith { _z call sched_co_deleteVehicle; };";
 		local = "_z = _this select 0; if ((_this select 1) and isServer) exitWith { _z call sched_co_deleteVehicle; };";
 	};
+	class UserActions
+	{
+		class Butcher
+		{			
+			displayName = $STR_ACTIONS_SELF_04;
+			displayNameDefault = $STR_ACTIONS_SELF_04;
+			priority = 3;
+			radius = 3;
+			position = "";
+			showWindow = 1;
+			onlyForPlayer = 1;
+			shortcut = "";
+			condition = "(['Butcher',this] call userActionConditions)";
+			statement = "this spawn player_butcher;";
+		};
+	};
 };
 
-class DZ_Pastor : Pastor {
+class Pastor: CAAnimalBase {
 	scope = public;
 	side = 1;
 	model = "\ca\animals2\Dogs\Pastor\Pastor";
@@ -30,7 +45,7 @@ class DZ_Pastor : Pastor {
 	class VariablesString {};
 };
 
-class DZ_Fin : Fin {
+class Fin: CAAnimalBase {
 	scope = public;
 	model = "\ca\animals2\Dogs\Fin\Fin";
 	displayName = "Fin";
@@ -40,7 +55,7 @@ class DZ_Fin : Fin {
 	fsmFormation = "";
 };
 
-class Cow: animal_DZ
+class Cow: CAAnimalBase
 {
 	scope = private;
 	model = "\ca\animals2\cow\cow";
@@ -96,8 +111,10 @@ class Cow04: Cow01
 	displayName = "$STR_DN_COW04";
 	hiddenSelectionsTextures[] = {"ca\animals2\cow\data\cow4_co.PAA"};
 };
+class Cow_Base_EP1 : Cow {};
+class Cow01_EP1 : Cow_Base_EP1 {};
 
-class Goat: animal_DZ
+class Goat: CAAnimalBase
 {
 	scope = public;
 	model = "\ca\animals2\Goat\Goat";
@@ -121,8 +138,11 @@ class Goat: animal_DZ
 		mat[] = {"ca\animals2\Goat\data\goat.rvmat","ca\animals2\Goat\data\W1_goat.rvmat","ca\animals2\Goat\data\W2_goat.rvmat"};
 	};
 };
+class Goat_Base_EP1 : Goat {};
+class Goat01_EP1 : Goat_Base_EP1 {};
+class Goat02_EP1 : Goat01_EP1 {};
 
-class Rabbit: animal_DZ
+class Rabbit: CAAnimalBase
 {
 	scope = public;
 	side = 3;
@@ -156,7 +176,7 @@ class Rabbit: animal_DZ
 	};
 };
 
-class Sheep: animal_DZ
+class Sheep: CAAnimalBase
 {
 	scope = public;
 	model = "\ca\animals2\Sheep\Sheep";
@@ -181,9 +201,11 @@ class Sheep: animal_DZ
 		_sound3 = "sheep_03";
 	};
 };
+class Sheep_Base_EP1 : Sheep {};
+class Sheep01_EP1 : Sheep_Base_EP1 {};
+class Sheep02_EP1 : Sheep01_EP1 {};
 
-
-class WildBoar: animal_DZ
+class WildBoar: CAAnimalBase
 {
 	scope = public;
 	model = "\ca\animals2\WildBoar\WildBoar";
@@ -203,3 +225,5 @@ class WildBoar: animal_DZ
 	};
 };
 
+class Hen : CAAnimalBase {};
+class Cock : Hen {};

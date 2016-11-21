@@ -33,4 +33,82 @@ class CH53_DZE : USEC_ch53_E {
 		init = "MonitorVM = [_this select 0] execvm '\usec_ch53\scripts\ch53_monitor.sqf';MonitorSFXVM = [_this select 0] execvm '\usec_ch53\scripts\ch53_monitorSFX.sqf';";
 		killed = "_this spawn BIS_Effects_EH_Killed;";
 	};
+	class UserActions {
+		class Repair {ACTION_REPAIR; radius = 8;};
+		class Salvage {ACTION_SALVAGE; radius = 8;};
+		class RampOpen {
+			displayName = "Open Ramp";
+			position = "ramp action";
+			showWindow = 0;
+			radius = 5;
+			condition = "this animationPhase ""ramp_bottom"" < 0.50;";
+			statement = "if(((getPos this) select 2) < 2) then {this animate [""ramp_bottom"",1];this animate [""ramp_top"",1];} else {this animate [""ramp_bottom"",0.56];this animate [""ramp_top"",1];};";
+			onlyforplayer = 0;
+		};
+		class RampClose {
+			displayName = "Close Ramp";
+			position = "ramp action";
+			showWindow = 0;
+			radius = 5;
+			condition = "this animationPhase ""ramp_bottom"" > 0.50;";
+			statement = "this animate [""ramp_bottom"",0];this animate [""ramp_top"",0];";
+			onlyforplayer = 0;
+		};
+		class LandingGear_down {
+			displayName = "Gear Down";
+			position = "ramp action";
+			showWindow = 0;
+			onlyforplayer = 0;
+			shortcut = "landGear";
+			radius = 5;
+			condition = "(this animationPhase ""gear_nose_1"" > 0.9)&&(player == driver this)";
+			statement = "[this] execvm ""\usec_ch53\scripts\ch53_geardown.sqf""";
+		};
+		class LandingGear_up {
+			displayName = "Gear Up";
+			position = "ramp action";
+			showWindow = 0;
+			onlyforplayer = 0;
+			shortcut = "landGear";
+			radius = 5;
+			condition = "(this animationPhase ""gear_nose_1"" < 0.1)&&(player == driver this)";
+			statement = "[this] execvm ""\usec_ch53\scripts\ch53_gearup.sqf""";
+		};
+		class StropDown {
+			displayName = "Attach Strop";
+			position = "ramp action";
+			showWindow = 0;
+			onlyforplayer = 0;
+			radius = 5;
+			condition = "(this animationPhase ""Strop1_Empty"" == 1)&&((this animationPhase 'cargo' == 1) AND (this animationPhase 'cargo2' == 1))&&(player == driver this)";
+			statement = "[this,true] execvm ""\usec_ch53\scripts\ch53_strop.sqf""";
+		};
+		class StropUp {
+			displayName = "Detach Strop";
+			position = "ramp action";
+			showWindow = 0;
+			onlyforplayer = 0;
+			radius = 5;
+			condition = "(this animationPhase ""Strop1_Empty"" == 0)&&(player == driver this)";
+			statement = "[this,false] execvm ""\usec_ch53\scripts\ch53_strop.sqf""";
+		};
+		class CollectCargo {
+			displayName = "Collect Cargo";
+			position = "ramp action";
+			showWindow = 1;
+			onlyforplayer = 0;
+			radius = 5;
+			condition = "(count(nearestObjects [(this modeltoworld [0,0,-10]), [""USEC_CargoContainer1"",""USEC_CargoContainer2""], 6])>0) and (this animationPhase 'Strop1_Empty' == 0) and (this animationPhase 'cargo' == 1);";
+			statement = "[this] execvm ""\usec_ch53\scripts\ch53_cargo.sqf"";";
+		};
+		class DetachCargo {
+			displayName = "Detach Cargo";
+			position = "ramp action";
+			showWindow = 1;
+			onlyforplayer = 0;
+			radius = 5;
+			condition = "((this animationPhase 'cargo' == 0) OR (this animationPhase 'cargo2' == 0));";
+			statement = "[this] execvm ""\usec_ch53\scripts\ch53_cargodrop.sqf"";";
+		};
+	};
 };

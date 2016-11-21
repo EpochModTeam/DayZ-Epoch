@@ -1,6 +1,14 @@
+private ["_amount","_animalbody","_rawfoodtype","_qty"];
+
 _animalbody = _this select 0;
 _qty = _this select 1;
-_rawfoodtype = getText (configFile >> "CfgSurvival" >> "Meat" >> typeOf _animalbody >> "rawfoodtype");
+
+if (_animalbody isKindOf "zZombie_base") then {
+	_qty = 1;
+	_rawfoodtype = "ItemZombieParts";
+} else {
+	_rawfoodtype = getText (configFile >> "CfgSurvival" >> "Meat" >> typeOf _animalbody >> "rawfoodtype");
+};
 
 if (local _animalbody) then {
 	for "_i" from 1 to _qty do {

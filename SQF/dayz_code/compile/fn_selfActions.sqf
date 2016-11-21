@@ -14,7 +14,7 @@ private ["_canPickLight","_text","_dir","_canDoThis","_w2m","_bb","_waterHoles",
 "_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
-"_isPlane","_allowed","_hasAccess","_uid"];
+"_allowed","_hasAccess","_uid"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -238,12 +238,10 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_typeOfCursorTarget = typeOf _cursorTarget;
 	_isVehicle = _cursorTarget isKindOf "AllVehicles";
 	_isBicycle = _cursorTarget isKindOf "Bicycle";
-	_isPlane = _cursorTarget isKindOf "Plane";
 	_isMan = _cursorTarget isKindOf "Man";
 	_isAnimal = _cursorTarget isKindOf "Animal";
 	_isZombie = _cursorTarget isKindOf "zZombie_base";
 	_isDestructable = _cursorTarget isKindOf "BuiltItems";
-	_isHarvested = _cursorTarget getVariable["meatHarvested",false];
 	_isGenerator = _cursorTarget isKindOf "Generator_DZ";
 	//_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"]; //Checked in player_flipvehicle
 	_isFuel = false;
@@ -273,7 +271,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	_isDisallowRefuel = _typeOfCursorTarget in ["M240Nest_DZ","MMT_Civ","MMT_USMC","Old_bike_TK_CIV_EP1","Old_bike_TK_INS_EP1"];	
-	_isDog = (_cursorTarget isKindOf "DZ_Pastor" || _cursorTarget isKindOf "DZ_Fin");
+	_isDog = (_cursorTarget isKindOf "Pastor" || _cursorTarget isKindOf "Fin");
 	_isModular = _cursorTarget isKindOf "ModularItems";
 	_isModularDoor = _typeOfCursorTarget in ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","CinderWallDoor_DZ","CinderWallDoorSmall_DZ"];
 	_player_deleteBuild = false;
@@ -299,15 +297,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	} else {
 		player removeAction s_player_flipveh;
 		s_player_flipveh = -1;
-	};
-	
-	if (_isPlane && {_isAlive} && {count (crew _cursorTarget) == 0}) then {
-		if (s_player_pushPlane < 0) then {
-			s_player_pushPlane = player addAction [format[localize "str_actions_push",_text], "\z\addons\dayz_code\actions\player_pushPlane.sqf",_cursorTarget,1,true,true];
-		};
-	} else {
-		player removeAction s_player_pushPlane;
-		s_player_pushPlane = -1;
 	};
 	
 	//Allow player to fill Fuel can
@@ -373,27 +362,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_fillfuel5 = -1;
 		player removeAction s_player_siphonfuel;
 		s_player_siphonfuel = -1;
-	};
-	
-	//Harvested
-	if (!_isAlive && (_isAnimal or _isZombie) && !_isHarvested) then {
-		//_hasknife = {_x in ["ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnifeBlunt"]} count _itemsPlayer > 0;
-		//make sure the player has a knife
-		//if (_hasknife) then {
-		if (s_player_butcher < 0) then {
-			if (_isZombie) then {
-				s_player_butcher = player addAction [localize "STR_EPOCH_ACTIONS_GUTZOM", "\z\addons\dayz_code\actions\gather_zparts.sqf",_cursorTarget, 0, true, true];
-			} else {
-				s_player_butcher = player addAction [localize "str_actions_self_04", "\z\addons\dayz_code\actions\gather_meat.sqf",_cursorTarget, 3, true, true];
-			};
-		};
-		//} else {
-		//	player removeAction s_player_butcher;
-		//	s_player_butcher = -1;
-		//};
-	} else {
-		player removeAction s_player_butcher;
-		s_player_butcher = -1;
 	};
 	
 	//Fireplace Actions check
@@ -526,16 +494,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		player removeAction s_player_sleep;
 		s_player_sleep = -1;
 	};
-
-	//Study Body
-	if (_isMan && {!_isAlive} && {!_isZombie} && {!_isAnimal}) then {
-		if (s_player_studybody < 0) then {
-			s_player_studybody = player addAction [localize "str_action_studybody", "\z\addons\dayz_code\actions\study_body.sqf",_cursorTarget, 0, false, true];
-		};
-	} else {
-		player removeAction s_player_studybody;
-		s_player_studybody = -1;
-	};
 /*	
 	//Carbomb
 	_hasCarBomb = "ItemCarBomb" in _magazinesPlayer;
@@ -548,30 +506,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			s_player_attach_bomb = -1;
 	};
 */
-	//Repairing Vehicles
-	if (_isVehicle && {!_isMan} && {dayz_myCursorTarget != _cursorTarget} && {_hasToolbox} && {damage _cursorTarget < 1} && {_typeOfCursorTarget != "M240Nest_DZ"}) then {
-		if (s_player_repair_crtl < 0) then {
-			dayz_myCursorTarget = _cursorTarget;
-			_menu = dayz_myCursorTarget addAction [localize "str_actions_repairveh", "\z\addons\dayz_code\actions\repair_vehicle.sqf",_cursorTarget, 0, true, false];
-			if (!_isBicycle) then { //Bike wheels should not give full size tires. Also model does not update to show removed wheels.
-				if (!DZE_salvageLocked) then {
-					if (!locked _cursorTarget) then {
-						_menu1 = dayz_myCursorTarget addAction [localize "str_actions_salvageveh", "\z\addons\dayz_code\actions\salvage_vehicle.sqf",_cursorTarget, 0, true, false];
-						s_player_repairActions set [count s_player_repairActions,_menu1];
-					};
-				} else {
-					_menu1 = dayz_myCursorTarget addAction [localize "str_actions_salvageveh", "\z\addons\dayz_code\actions\salvage_vehicle.sqf",_cursorTarget, 0, true, false];
-					s_player_repairActions set [count s_player_repairActions,_menu1];
-				};
-			};
-			s_player_repairActions set [count s_player_repairActions,_menu];
-			s_player_repair_crtl = 1;
-		} else {
-			{dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;
-			s_player_repairActions = [];
-			s_player_repair_crtl = -1;
-		};
-	};
 	/* //Vanilla base building currently not used in Epoch
 	// House locking and unlocking
 	_isHouse = _typeOfCursorTarget in ["SurvivorWorkshopAStage5", "SurvivorWorkshopBStage5", "SurvivorWorkshopCStage5"];
@@ -1090,20 +1024,12 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_plot_take_ownership = -1;
 	player removeAction s_player_plotManagement;
 	s_player_plotManagement = -1;
-	{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
-	player removeAction s_player_repair_crtl;
-	s_player_repair_crtl = -1;
-	dayz_myCursorTarget = objNull;
 	player removeAction s_player_flipveh;
 	s_player_flipveh = -1;
-	player removeAction s_player_pushPlane;
-	s_player_pushPlane = -1;
 	player removeAction s_player_sleep;
 	s_player_sleep = -1;
 	player removeAction s_player_deleteBuild;
 	s_player_deleteBuild = -1;
-	player removeAction s_player_butcher;
-	s_player_butcher = -1;
 	player removeAction s_player_cook;
 	s_player_cook = -1;
 	player removeAction s_player_boil;
@@ -1116,8 +1042,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_packtentinfected = -1;
 	player removeAction s_player_fillfuel;
 	s_player_fillfuel = -1;
-	player removeAction s_player_studybody;
-	s_player_studybody = -1;
 	//fuel
 	player removeAction s_player_fillfuel210;
 	s_player_fillfuel210 = -1;

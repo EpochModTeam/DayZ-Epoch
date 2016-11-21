@@ -88,6 +88,28 @@ class UH1Y_DZ: UH1_Base {
 			magazines[] = {"2000Rnd_762x51_M134"};
 		};
 	};*/
+	class UserActions {
+		class Repair {ACTION_REPAIR; radius = 8;};
+		class Salvage {ACTION_SALVAGE; radius = 8;};
+		class HUDoff {
+			displayName = $STR_AM_HUDON;
+			displayNameDefault = $STR_AM_HUDON;
+			position = "zamerny";
+			radius = 1;
+			onlyForPlayer = 1;
+			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";
+			statement = "this animate [""HUDAction"",1];this animate [""HUDAction_1"",1]";
+		};
+		class HUDon {
+			displayName = $STR_AM_HUDOFF;
+			displayNameDefault = $STR_AM_HUDOFF;
+			position = "zamerny";
+			radius = 1;
+			onlyForPlayer = 1;
+			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
+			statement = "this animate [""HUDAction"",0];this animate [""HUDAction_1"",0]";
+		};
+	};
 };
 class UH1Y_DZE: UH1Y_DZ {
 	class Turrets : Turrets {

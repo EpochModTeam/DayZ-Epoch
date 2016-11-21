@@ -1,6 +1,6 @@
 private["_body","_name","_method","_methodStr","_message","_killingBlow"];
 
-_body = _this select 3;
+_body = _this;
 _name = _body getVariable["bodyName","unknown"];
 _method = _body getVariable["deathType","unknown"];
 _methodStr = localize format ["str_death_%1",_method];

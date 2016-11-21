@@ -1,8 +1,5 @@
 private ["_dir","_nearPlayers","_object","_speed","_vel"];
-_object = _this select 3;
-
-player removeAction s_player_pushPlane;
-s_player_pushPlane = -1;
+_object = _this;
 
 if (!local _object) exitWith {
 	localize "str_actions_pilot_seat" call dayz_rollingMessages;

@@ -483,7 +483,7 @@ class M240Nest_DZ: USMC_WarfareBMGNest_M240
 	transportMaxBackpacks = 1;
 	constructioncount = 10;
 	removeoutput[] = {{"m240_nest_kit",1}};
-
+	class UserActions {delete Repair; delete Salvage;};
 };
 class Land_covering_hut_EP1;
 class CanvasHut_DZ: Land_covering_hut_EP1

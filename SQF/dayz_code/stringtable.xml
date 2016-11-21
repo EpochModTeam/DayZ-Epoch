@@ -871,8 +871,7 @@
 			<Czech>Otočit %1</Czech>
 		</Key>
 		<Key ID="str_actions_push">
-			<English>Push %1</English>
-			<German>%1 schieben</German>
+			<English>Push Plane</English>
 		</Key>
 		<Key ID="str_actions_stats">
 			<English>Enable Stats</English>

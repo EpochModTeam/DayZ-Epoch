@@ -57,6 +57,23 @@ class zZombie_Base : Zed_Base {
 		local = "_z = _this select 0; if (!(_this select 1)) exitWith {}; if (isServer) exitWith { _z call sched_co_deleteVehicle; }; [(position _z), _z, true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm';";
 	};
 	
+	class UserActions
+	{
+		class Butcher
+		{		
+			displayName = $STR_EPOCH_ACTIONS_GUTZOM;
+			displayNameDefault = $STR_EPOCH_ACTIONS_GUTZOM;
+			priority = 0;
+			radius = 3;
+			position = "";
+			showWindow = 1;
+			onlyForPlayer = 1;
+			shortcut = "";
+			condition = "(['Butcher',this] call userActionConditions)";
+			statement = "this spawn player_butcher;";
+		};
+	};
+	
 	class HitPoints {
 		class HitHead {
 			armor = 0.1;

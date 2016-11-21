@@ -65,7 +65,7 @@ sched_animals = {
 			_type = _animalssupported select floor random count _animalssupported;
 		};
 		if (_type == "Dog") then {
-			_animalssupported = ["DZ_Fin","DZ_Pastor"];
+			_animalssupported = ["Fin","Pastor"];
 			_type = _animalssupported select floor random count _animalssupported;
 		};
 		_root = configFile >> "CfgVehicles" >> _type;
@@ -79,7 +79,7 @@ sched_animals = {
 			if (count _PosList > 0) then { 
 				_Pos = (_PosList select 0) select 0;
 				if ((!surfaceIsWater _Pos) AND {(0 == {alive _x} count (_Pos nearEntities [ AllPlayers, 200 ]))}) then {
-					_agent = if (_type == "DZ_Pastor") then {createAgent [_type, _Pos, [], 0, "NONE"]} else {createAgent [_type, _Pos, [], 0, "FORM"]};
+					_agent = if (_type == "Pastor") then {createAgent [_type, _Pos, [], 0, "NONE"]} else {createAgent [_type, _Pos, [], 0, "FORM"]};
 					[_pos,_agent] execFSM "\z\addons\dayz_code\system\animal_agent.fsm";
 					_agent setVariable [ "", true ];
 					_count = _count + 1;

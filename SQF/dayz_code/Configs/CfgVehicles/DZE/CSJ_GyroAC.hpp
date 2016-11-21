@@ -105,13 +105,15 @@ class CSJ_GyroP: Plane
 		};
 		class push
 		{
-			displayName = "push aircraft";
+			displayName = $STR_ACTIONS_PUSH;
 			position = "osa leve smerovky";
 			onlyforplayer = 0;
 			radius = 2;
 			condition = "(Count (Crew this)==0) and ((getpos this select 2) <1) and (!isengineon this)";
 			statement = "this exec ""\CSJ_GyroAC\scripts\CSJ_moveGyro.sqs"" ";
 		};
+		class Repair {ACTION_REPAIR; radius = 4;};
+		class Salvage {ACTION_SALVAGE; radius = 4;};
 	};
 	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
@@ -220,7 +222,10 @@ class CSJ_GyroC: Helicopter
 	dammageFull[] = {};
 	class Reflectors{};
 	class AnimationSources: AnimationSources{};
-	class UserActions{};
+	class UserActions {
+		class Repair {ACTION_REPAIR; radius = 4;};
+		class Salvage {ACTION_SALVAGE; radius = 4;};
+	};
 	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
 	{

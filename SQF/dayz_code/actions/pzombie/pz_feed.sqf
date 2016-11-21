@@ -4,9 +4,6 @@ _item = _this select 3;
 
 disableSerialization;
 
-player removeAction s_player_butcher;
-s_player_butcher = 1;
-
 if !(alive _item) then {
 
     _rnd = (round(random 4)) + 1;
@@ -94,5 +91,3 @@ if !(alive _item) then {
 	format[localize "str_player_consumed",getText(configFile >> "CfgVehicles" >> _animalType >> "displayName")] call dayz_rollingMessages;
 	player switchmove "";
 };
-
-s_player_butcher = -1;

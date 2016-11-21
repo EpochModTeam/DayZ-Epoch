@@ -13,7 +13,6 @@
 
 // EPOCH ADDITIONS
 "PVDZE_veh_Lock"			addPublicVariableEventHandler {(_this select 1) call local_lockUnlock};
-"PVDZE_plr_GutBodyZ"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObjectZ};
 "PVDZE_veh_Init"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_ResetEH};
 "PVDZE_obj_Remove" 			addPublicVariableEventHandler {_pos = (_this select 1); _obj = nearestObjects [_pos, DZE_isWreckBuilding, 5]; if (count _obj > 0) then {deleteVehicle (_obj select 0);};};
 if (dayz_groupSystem) then {
