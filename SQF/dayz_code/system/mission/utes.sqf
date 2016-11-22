@@ -1,4 +1,4 @@
-[
+[[
 	["CDF_WarfareBVehicleServicePoint",[4025.69,2908.12,0.00863075],258.143],
 	["LADAWreck",[4012.5,2916.29,0.0180664],197.347],
 	["Land_Misc_Well_C_EP1",[4021.45,2896.22,0.00671959],218.011],
@@ -58,4 +58,4 @@
 	["Fort_StoneWall_EP1",[4022.83,2882.98,0.0588207],342.867],
 	["T72Wreck",[4022.61,2917.04,0.0561008],339.954],
 	["Info_Board_EP1",[4012.73,2897.31,0.00329018],262.568]
-] call local_spawnObjects;
+],true] call local_spawnObjects;

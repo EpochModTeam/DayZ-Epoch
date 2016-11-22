@@ -3,7 +3,7 @@
                           Date: 12/11/13
         If modified and released give credits where due thank you
 ---------------------------------------------------------------------------*/
-[
+[[
 // Bandit Vendor Seven
 	["Land_GuardShed",[10938.7,651.071,0.00558376],214.567],
 	["HeliHEmpty",[10930.3,639.621,3.91006e-005],214.506],
@@ -723,4 +723,4 @@
 	["MAP_R2_RockWall",[7440.15,5567.71,-20.5011],112.729],
 	["MAP_R2_RockWall",[7494.54,5608.71,-20.677],290.173],
 	["MAP_R2_RockWall",[7512.41,5583.7,-12.2722],171.501]
-] call local_spawnObjects;
+],true] call local_spawnObjects;

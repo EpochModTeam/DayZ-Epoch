@@ -1,4 +1,4 @@
-[
+[[
     ["Land_Misc_Cargo1E_EP1",[24774.1,21743.7,-6.10352e-005],0],
 	["Misc_Cargo1B_military",[24753.7,21727.4,6.10352e-005],89.2352],
 	["Misc_Cargo1Bo_military",[24743,21765.8,9.15527e-005],190.701],
@@ -427,4 +427,4 @@
 	["Misc_cargo_cont_net3",[2445.79,3894.76,0.0341797],264.582],
 	["FoldChair",[2446.56,3898.81,0.000793457],103.739],
 	["FoldTable",[2444.96,3899.14,0.000640869],267.556]
-] call local_spawnObjects;
+],true] call local_spawnObjects;

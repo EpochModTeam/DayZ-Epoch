@@ -1,4 +1,4 @@
-[
+[[
     ["Base_WarfareBBarrier10xTall",[5144.42,4891.09,-0.0578766],348.934],
 	["Base_WarfareBBarrier10xTall",[5131.46,4883.35,-7.62939e-006],308.557],
 	["Base_WarfareBBarrier10xTall",[5124.51,4870.26,1.52588e-005],96.6995],
@@ -260,4 +260,4 @@
 	["Land_HBarrier3",[15473.1,13212.3,-0.00374699],106.213],
 	["Land_HBarrier3",[15455.8,13214.6,0.00995064],297.611],
 	["Land_HBarrier3",[15507,13213.2,0.228428],99.1406]
-] call local_spawnObjects;
+],true] call local_spawnObjects;

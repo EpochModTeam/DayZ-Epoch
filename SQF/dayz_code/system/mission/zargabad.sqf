@@ -1,4 +1,4 @@
-[
+[[
 	["Land_HBarrier_large",[3619.65,6807.09,-0.222103],351.175],
 	["Land_HBarrier_large",[3611.36,6805.53,0.000356674],351.138],
 	["Land_HBarrier_large",[3603.07,6803.98,0.000679016],351.144],
@@ -84,4 +84,4 @@
 	["Land_Fire_barrel",[3577.17,6830.6,0.000236511],359.997],
 	["Info_Board_EP1",[3612.99,6829.27,0.000593185],86.5122],
 	["Land_Fire_barrel",[4723.34,833.238,0.000152588],0.00214848]
-] call local_spawnObjects;
+],true] call local_spawnObjects;

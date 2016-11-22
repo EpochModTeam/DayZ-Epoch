@@ -1,4 +1,4 @@
-[
+[[
 	["UralWreck",[13383.615,12108.852,-7.6293945e-005],-157.98087],
 	["Body1",[13379.557,12107.342,-0.00049591064],0],
 	["Body2",[13377.169,12106.324,-0.00025939941],-17.968742],
@@ -14,10 +14,4 @@
 	["Body1",[13277.561,11929.183,-2.2888184e-005],0],
 	["Body2",[13278.021,11938.413],-145.52971],
 	["Body2",[13281.352,11935.071,1.5258789e-005],-63.390606]
-] call {
-	private ["_object"];
-	_object = (_x select 0) createVehicleLocal [0,0,0];
-	_object setVariable ["", true];
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-} count _this;
+],false] call local_spawnObjects;

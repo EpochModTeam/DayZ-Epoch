@@ -1,4 +1,4 @@
-[
+[[
 	["Body1",[10174.857,3126.1104,-1.9073486e-005],0],
 	["Body2",[10177.264,3126.8271,1.1444092e-005],-241.20241],
 	["BRDMWreck",[10212.747,3181.915,-2.2888184e-005],79.571251],
@@ -6,10 +6,4 @@
 	["Body2",[10214.048,3185.6113,-0.00019645691],-208.83],
 	["Body2",[10217.711,3180.9695,-0.00023651123],-321.35828],
 	["Body1",[10216.19,3186.8555,-0.00011634827],0]
-] call {
-	private ["_object"];
-	_object = (_x select 0) createVehicleLocal [0,0,0];
-	_object setVariable ["", true];
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-} count _this;
+],false] call local_spawnObjects;

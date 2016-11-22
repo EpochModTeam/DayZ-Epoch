@@ -1,4 +1,4 @@
-[
+[[
 	["Hhedgehog_concreteBig",[511.733,1114.73,6.48499e-005],55.9089],
 	["Land_fort_rampart",[483.471,1123.38,0.0291862],119.365],
 	["Land_HBarrier5",[471.117,1086.12,0.0186958],37.8488],
@@ -61,4 +61,4 @@
 	["BMP2Wreck",[472.932,1069.16,0.0105076],54.1738],
 	["Misc_palletsfoiled_heap",[496.077,1082.61,-0.00848007],62.6169],
 	["Info_Board_EP1",[505.839,1120,0.00104141],40.2667]
-] call local_spawnObjects;
+],true] call local_spawnObjects;

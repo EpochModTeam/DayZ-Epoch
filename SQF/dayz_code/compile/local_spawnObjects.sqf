@@ -6,14 +6,17 @@
 	- Not recommended for objects with animations (like gates). Anim status is not synced across machines.
 	
 	Params:
-	[
+	[[
 		["ObjectType1", [position], dir],
 		["ObjectType2", [position], dir],
 		["ObjectType3", [position], dir]
-	] call local_spawnObjects;
+	],true] call local_spawnObjects;
 */
 
-private ["_fires","_object","_type"];
+private ["_blockDamage","_fires","_object","_objects","_type"];
+
+_objects = _this select 0;
+_blockDamage = _this select 1;
 
 _fires = [
 	"Base_Fire_DZ",
@@ -34,7 +37,9 @@ _fires = [
 	_object = _type createVehicleLocal [0,0,0];
 	_object setDir (_x select 2);
 	_object setPos (_x select 1);
-	_object addEventHandler ["HandleDamage",{0}];
-	if !(_type in _fires) then {_object enableSimulation false;};
 	_object setVariable ["",true,false]; // stops global setVariable by sched_townGenerator, checked in player_spawnCheck for loot spawn
-} count _this;
+	if (_blockDamage) then {
+		_object addEventHandler ["HandleDamage",{0}];
+		if !(_type in _fires) then {_object enableSimulation false;};
+	};
+} forEach _objects;

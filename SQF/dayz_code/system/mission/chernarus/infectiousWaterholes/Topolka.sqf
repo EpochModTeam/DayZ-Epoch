@@ -1,4 +1,4 @@
-[
+[[
 	["HMMWVWreck",[10336.892,3654.115,-0.00019836426],133.86368],
 	["Body1",[10336.825,3650.8271,-2.2888184e-005],0],
 	["Body2",[10336.369,3657.344,0.00030899048],-213.99055],
@@ -11,10 +11,4 @@
 	["Body2",[10277.839,3765.0146],-202.31456],
 	["Body2",[10280.47,3766.6904,-1.9073486e-005],-377.7916],
 	["Body2",[10278.315,3767.0195,-5.7220459e-005],-261.20151]
-] call {
-	private ["_object"];
-	_object = (_x select 0) createVehicleLocal [0,0,0];
-	_object setVariable ["", true];
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-} count _this;
+],false] call local_spawnObjects;

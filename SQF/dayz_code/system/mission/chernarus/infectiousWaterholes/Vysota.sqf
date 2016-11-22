@@ -1,14 +1,8 @@
-[
+[[
 	["Mass_grave",[6237.6729,3366.7668,-8.2015991e-005],-51.312054],
 	["Body2",[6242.4287,3364.9336,-0.00012016296],-114.80833],
 	["Body2",[6242.5146,3368.2773,9.5367432e-005],-0.099687576],
 	["Body2",[6236.5488,3362.2656,0.00039291382],-49.255459],
 	["Body1",[6232.0386,3368.0271,-0.00010108948],0],
 	["Body1",[6240.8916,3363.1448,-2.8610229e-005],0]
-] call {
-	private ["_object"];
-	_object = (_x select 0) createVehicleLocal [0,0,0];
-	_object setVariable ["", true];
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-} count _this;
+],false] call local_spawnObjects;

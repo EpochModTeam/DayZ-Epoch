@@ -1,4 +1,4 @@
-[
+[[
 	["Body1",[13279.391,11512.981,0.00014877319],0],
 	["Body2",[13280.151,11516.151,4.9591064e-005],-170.19336],
 	["Body2",[13277.972,11515.6,7.8201294e-005],-272.60867],
@@ -11,10 +11,4 @@
 	["Body1",[13167.143,11555.009,0.00015449524],0],
 	["Body1",[13173.876,11560.699,-0.00048065186],0],
 	["Body2",[13170.959,11553.15,0.00039100647],-170.19336]
-] call {
-	private ["_object"];
-	_object = (_x select 0) createVehicleLocal [0,0,0];
-	_object setVariable ["", true];
-	_object setDir (_x select 2);
-	_object setPos (_x select 1);
-} count _this;
+],false] call local_spawnObjects;
