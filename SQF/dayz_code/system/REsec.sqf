@@ -11,7 +11,9 @@ private["_ofn","_nfn"];
 		call compile format["%1=%2;%2={if((count _this>=3)AND{(!((_this select 2)IN%3))})then{diag_log(""WARNING RE %2 with illegal args:""+str(_this));}else{_this call %1}};",_nfn,_ofn,Stringify(WHITELISTED_EXECVM)];
 	}else{
 		#ifdef RESEC_VERBOSE
-		call compile format ["%1=%2;%2={diag_log(""RE %2 args:""+str(_this));_this call %1};",_nfn,_ofn];
+		if (isServer or _x == "titleText") then { //Don't need excessive log spam on clients (playMove for every zombie hit, etc.)
+			call compile format ["%1=%2;%2={diag_log(""RE %2 args:""+str(_this));_this call %1};",_nfn,_ofn];
+		};
 		#endif
 	};
 }foreach TRACED_LIB;
