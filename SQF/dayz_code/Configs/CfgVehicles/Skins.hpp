@@ -1,6 +1,6 @@
 
-class Man;
-class CAManBase: Man //Covers all custom Epoch skins
+class Man; //includes animals and zombies
+class CAManBase: Man //includes all skins except animals
 {
 	class TalkTopics;
 	class HitPoints

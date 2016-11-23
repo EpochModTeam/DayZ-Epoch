@@ -211,14 +211,11 @@ if (isPlayer cursorTarget) then {
 				_action = _unit addAction [localize "str_actions_medical_give_antibiotics", "\z\addons\dayz_code\medical\antibiotics.sqf",[_unit], 0, true, true];
 				r_player_actions set [count r_player_actions, _action];
 			};
-			if (_unit isKindOf "Man") then {
-				// should only fire if cursor target is man and not vehicle
-				_isFriendly = [player, _unit] call FNC_check_access;
-				if !(_isFriendly select 1) then {
-					r_action = true;
-					_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true];
-					r_player_actions set [count r_player_actions,_action];
-				};		
+			_isFriendly = [player, _unit] call FNC_check_access;
+			if !(_isFriendly select 1) then {
+				r_action = true;
+				_action = _unit addAction ["Tag as friendly", "\z\addons\dayz_code\actions\player_tagFriendly.sqf", [], 0, false, true];
+				r_player_actions set [count r_player_actions,_action];
 			};
 			if (r_action) then {
 				r_action_targets set [(count r_action_targets), _unit];

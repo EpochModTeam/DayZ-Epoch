@@ -198,7 +198,7 @@ if (_randomSpot) then {
 			&& {(_position distance _mkr < spawnArea)}) then { // !ouside the disk
 			_position set [2, 0];
 			if (((ATLtoASL _position) select 2 > 2.5) //! player's feet too wet
-			&& {({alive _x} count (_position nearEntities ["Man",150]) == 0)}) then { // !too close from other players/zombies
+			&& {({alive _x} count (_position nearEntities ["CAManBase",150]) == 0)}) then { // !too close from other players/zombies
 				_pos = +(_position);
 				_isIsland = false; //Can be set to true during the Check
 				// we check over a 809-meter cross line, with an effective interlaced step of 5 meters

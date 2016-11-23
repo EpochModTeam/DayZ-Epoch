@@ -13,7 +13,7 @@ private ["_handled"];
 	_arc = 60;
 	_isBallistic = (getNumber (configfile >> "CfgAmmo" >> _ammo >> "whistleOnFire") > 0);
 	_dmgDistance = getNumber (configfile >> "CfgAmmo" >> _ammo >> "whistleDist");
-	_isRocket = ((_ammo isKindOf "RocketBase") && (_firer isKindOf "Man"));
+	_isRocket = ((_ammo isKindOf "RocketBase") && (_firer isKindOf "CAManBase"));
 	_isPlayer = (_unit == player);
 	_inVehicle = (vehicle _unit != _unit);
 	//_evType = "";
