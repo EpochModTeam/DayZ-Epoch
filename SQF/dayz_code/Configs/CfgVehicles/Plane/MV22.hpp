@@ -16,8 +16,8 @@ class MV22_DZ : MV22 {
 	fuelCapacity = 6513;
 	class UserActions
 	{
-		class Repair {ACTION_REPAIR; radius = 8;};
-		class Salvage {ACTION_SALVAGE; radius = 8;};
+		//class Repair {ACTION_REPAIR; radius = 8;};
+		//class Salvage {ACTION_SALVAGE; radius = 8;};
 		class PushPlane {ACTION_PUSH;};
 	};
 };

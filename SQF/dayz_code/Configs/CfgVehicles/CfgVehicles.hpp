@@ -137,11 +137,12 @@ class CfgVehicles {
 				class ViewOptics;
 			};
 		};
-		class UserActions
+		//Won't support loading external vehicle addons (with custom UserActions) which we can not include in Epoch. Child UserActions overwrite inherited UserActions.
+		/*class UserActions
 		{
 			class Repair {ACTION_REPAIR; radius = 8;};
 			class Salvage {ACTION_SALVAGE; radius = 8;};
-		};
+		};*/
 	};
 	class Plane: Air
 	{
@@ -155,8 +156,8 @@ class CfgVehicles {
 		class AnimationSources;
 		class UserActions
 		{
-			class Repair {ACTION_REPAIR; radius = 8;};
-			class Salvage {ACTION_SALVAGE; radius = 8;};
+			//class Repair {ACTION_REPAIR; radius = 8;};
+			//class Salvage {ACTION_SALVAGE; radius = 8;};
 			class PushPlane {ACTION_PUSH;};
 		};
 	};
@@ -191,11 +192,11 @@ class CfgVehicles {
 				brightness = 0.5;
 			};
 		};
-		class UserActions
+		/*class UserActions
 		{
 			class Repair {ACTION_REPAIR; radius = 4;};
 			class Salvage {ACTION_SALVAGE; radius = 4;};
-		};
+		};*/
 	};
 	class Car: LandVehicle {
 		class HitPoints

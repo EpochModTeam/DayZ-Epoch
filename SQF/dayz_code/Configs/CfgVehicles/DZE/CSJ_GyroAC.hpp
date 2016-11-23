@@ -112,8 +112,8 @@ class CSJ_GyroP: Plane
 			condition = "(Count (Crew this)==0) and ((getpos this select 2) <1) and (!isengineon this)";
 			statement = "this exec ""\CSJ_GyroAC\scripts\CSJ_moveGyro.sqs"" ";
 		};
-		class Repair {ACTION_REPAIR; radius = 4;};
-		class Salvage {ACTION_SALVAGE; radius = 4;};
+		//class Repair {ACTION_REPAIR; radius = 4;};
+		//class Salvage {ACTION_SALVAGE; radius = 4;};
 	};
 	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
@@ -223,8 +223,8 @@ class CSJ_GyroC: Helicopter
 	class Reflectors{};
 	class AnimationSources: AnimationSources{};
 	class UserActions {
-		class Repair {ACTION_REPAIR; radius = 4;};
-		class Salvage {ACTION_SALVAGE; radius = 4;};
+		//class Repair {ACTION_REPAIR; radius = 4;};
+		//class Salvage {ACTION_SALVAGE; radius = 4;};
 	};
 	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers

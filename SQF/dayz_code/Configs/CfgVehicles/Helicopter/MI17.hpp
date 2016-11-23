@@ -295,8 +295,8 @@ class Mi171Sh_CZ_EP1_DZ: Mi17_base {
 	};
 	
 	class UserActions {
-		class Repair {ACTION_REPAIR; radius = 8;};
-		class Salvage {ACTION_SALVAGE; radius = 8;};
+		//class Repair {ACTION_REPAIR; radius = 8;};
+		//class Salvage {ACTION_SALVAGE; radius = 8;};
 		class HUDoff {
 			displayName = $STR_AM_HUDON;
 			displayNameDefault = $STR_AM_HUDON;

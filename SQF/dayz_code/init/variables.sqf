@@ -141,7 +141,7 @@ pickupInit = false;
 mouseOverCarry = false; //for carry slot since determining mouse pos doesn't work right
 dayZ_partClasses = ["PartFueltank","PartWheel","PartEngine"]; //No need to add PartGeneric, it is default for everything
 dayZ_explosiveParts = ["palivo","motor"];
-if (isNil "infectedWaterHoles") then {infectedWaterHoles = [];};
+if (isNil "infectedWaterHoles") then {infectedWaterHoles = [];}; //Needed for non-cherno maps
 
 //Survival Variables
 SleepFood = 2160; //minutes (48 hours)
@@ -190,6 +190,7 @@ dayz_resetSelfActions = {
 	s_player_fillfuel20 = -1;
 	s_player_fillfuel5 = -1;
 	s_player_siphonfuel = -1;
+	s_player_repair_crtl = -1;
 	s_player_fishing = -1;
 	s_player_fishing_veh = -1;
 	s_player_gather = -1;

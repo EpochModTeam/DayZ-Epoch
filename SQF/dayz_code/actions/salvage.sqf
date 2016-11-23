@@ -19,6 +19,7 @@ _namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
 {_vehicle removeAction _x} count s_player_repairActions;
 s_player_repairActions = [];
+s_player_repair_crtl = 1;
 
 if (_hasToolbox) then {
 	player playActionNow "Medic";
@@ -93,6 +94,7 @@ if (_hasToolbox) then {
 };
 
 dayz_myCursorTarget = objNull;
+s_player_repair_crtl = -1;
 dayz_salvageInProgress = false;
 
 //adding melee mags back if needed

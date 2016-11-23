@@ -33,7 +33,7 @@ class CH53_DZE : USEC_ch53_E {
 		init = "MonitorVM = [_this select 0] execvm '\usec_ch53\scripts\ch53_monitor.sqf';MonitorSFXVM = [_this select 0] execvm '\usec_ch53\scripts\ch53_monitorSFX.sqf';";
 		killed = "_this spawn BIS_Effects_EH_Killed;";
 	};
-	class UserActions {
+	/*class UserActions {
 		class Repair {ACTION_REPAIR; radius = 8;};
 		class Salvage {ACTION_SALVAGE; radius = 8;};
 		class RampOpen {
@@ -110,5 +110,5 @@ class CH53_DZE : USEC_ch53_E {
 			condition = "((this animationPhase 'cargo' == 0) OR (this animationPhase 'cargo2' == 0));";
 			statement = "[this] execvm ""\usec_ch53\scripts\ch53_cargodrop.sqf"";";
 		};
-	};
+	};*/
 };

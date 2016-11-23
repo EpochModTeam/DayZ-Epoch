@@ -89,8 +89,8 @@ class UH1Y_DZ: UH1_Base {
 		};
 	};*/
 	class UserActions {
-		class Repair {ACTION_REPAIR; radius = 8;};
-		class Salvage {ACTION_SALVAGE; radius = 8;};
+		//class Repair {ACTION_REPAIR; radius = 8;};
+		//class Salvage {ACTION_SALVAGE; radius = 8;};
 		class HUDoff {
 			displayName = $STR_AM_HUDON;
 			displayNameDefault = $STR_AM_HUDON;
