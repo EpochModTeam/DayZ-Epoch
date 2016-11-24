@@ -15,8 +15,8 @@
 [NEW] Anzio 20mm sniper and RedRyder BB Gun by @arma2WillRobinson
 [NEW] Added "RedRyder" and "350Rnd_BB_Magazine" to loot pile. #1456 #1457 @Namindu
 [NEW] Added action to lock and unlock vehicles from inside #1103 @pj999 @ebaydayz
-[NEW] Autorun hotkey (0 = Toggle auto run) @ebaydayz
-[NEW] Earplugs/Lower sound effects volume hotkey (F1) and status UI icon.
+[NEW] Autorun hotkey ('0' key)
+[NEW] Earplugs hotkey ('F1' key)
 [NEW] Snap building, use DZE_modularBuild = true; in init.sqf to enable. @raymix
 [NEW] Auto login when a player joins the server, default 10 seconds, requires description.ext update in the mission (disable in description.ext by setting defValueParam1 = 31;) @icomrade
 [NEW] Blood types system is disabled by default. Set dayz_classicBloodBagSystem = false; in init.sqf to enable.
@@ -51,7 +51,7 @@
 [NEW] Salvage can now be disabled on locked vehicles via DZE_salvageLocked variable. #1757 @oiad
 [NEW] You may now rearm pooks and other helicoper/vehicle pilot/driver weapons @icomrade
 [NEW] Rewrote death messages to a PVEH instead of the unreliable MPHit. Added localization, more causes of death, systemChat and dynamicText killfeed options. @ebaydayz
-[NEW] Optional group system with database save (F5 key). Settings available in configVariables.sqf. Command bar is now hidden. @icomrade @ebaydayz
+[NEW] Group system ('F5' key) with database save. Settings available in configVariables.sqf. CommandBar and RadioProtocol spam are now disabled via config. @icomrade @ebaydayz
 [NEW] Parachute can now auto open at a set height during HALO jump. Altitude and speed meter can also be enabled. See configVariables.sqf. @ebaydayz
 
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
@@ -120,6 +120,7 @@
 [FIXED] Humanity hit is now applied correctly to players shooting from vehicles. @ebaydayz
 [FIXED] Chopped down trees are now synced for JIP players, so they no longer respawn on relog. @ebaydayz
 [FIXED] Several errors with loading and unloading unconscious players from vehicles. @oiad @ebaydayz
+[FIXED] Occasional glitch death when opening parachute during HALO jump. @ebaydayz
 
 [UPDATED] .hpp files updated in dayz_code\Configs\CfgLoot\CfgBuildingPos. @Uro1
 [UPDATED] .bat files updated in Config-Examples @Raziel23x
