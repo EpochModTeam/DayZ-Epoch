@@ -34,8 +34,8 @@ sched_corpses = {
 	_delQtyG = 0;
 	_addFlies = 0;
 	{
-		if (local _x) then {
-			if (_x isKindOf "zZombie_Base") then { 
+		if (local _x && {_x isKindOf "CAManBase"}) then {
+			if (_x isKindOf "zZombie_Base") then {
 				_x call sched_co_deleteVehicle;
 				_delQtyZ = _delQtyZ + 1;
 			} else {
