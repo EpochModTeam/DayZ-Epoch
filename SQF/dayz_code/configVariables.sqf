@@ -33,6 +33,7 @@ DZE_NoBuildNear = []; //Array of object class names that are blacklisted to buil
 DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
+DZE_DisabledChannels = ["str_channel_side","str_channel_global","str_channel_command"]; //list of stringTable.xml definiitions to disable voice channels. available channels are: ["str_channel_side", "str_channel_group","str_channel_global","str_channel_direct","str_channel_command","str_channel_vehicle"]
 
 // Death Messages
 DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
@@ -109,3 +110,10 @@ dayz_requireRadio = false; // Require players to have a radio on their toolbelt 
 	Variables that are map specific or frequently changed should be included in init.sqf by default
 	with a corresponding if(isNil)then{}; in variables.sqf.
 */
+
+//DO NOT TOUCH BELOW! We need to get local channel names that varry upon every player's selected language
+DZE_LocalizedDisabledChannels = [];
+{
+	_localizedText = localize _x;
+	DZE_LocalizedDisabledChannels set [(count DZE_LocalizedDisabledChannels), _localizedText];
+} forEach DZE_DisabledChannels;

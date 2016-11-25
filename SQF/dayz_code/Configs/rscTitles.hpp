@@ -96,7 +96,12 @@ class RscDisplayChat
 	onKeyDown = "if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats;}; false";
 	class controls;
 };
-
+class RscDisplayChannel
+{
+	idd = 63;
+	onKeyDown = "_handle = if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats;} else {false;}; _handle";
+	class controls;
+};
 class RscPictureGUI
 {
 	access = 0;

@@ -694,24 +694,33 @@ dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compil
 dayz_groupInvite = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\handleInvite.sqf";
 
 DZE_FilterCheats = {
-	#define DIK_SUBTRACT 0x4A
-	#define DIK_NUMPADMINUS DIK_SUBTRACT
+	#define DIK_NUMPADMINUS 0x4A
+	#define DIK_CAPSLOCK 0x3A
+	disableSerialization;
 	_dik = _this select 1;
 	_shift = _this select 2;
-	if (_dik == DIK_NUMPADMINUS && _shift) then {
+	_isVoiceChat = ((_dik == DIK_CAPSLOCK) && {(ctrlText ((findDisplay 63) displayCtrl 101)) in DZE_LocalizedDisabledChannels}); //getting display directly from _this select 0 isn't reliable for chat channels!
+	if ((_dik == DIK_NUMPADMINUS && _shift) || _isVoiceChat) then {
 		call player_forceSave;
 		disableUserInput true;disableUserInput true;
-		[] spawn { //disable input, this is unfortunately the only way to stop cheat input
+		[_isVoiceChat] spawn { //disable input, this is unfortunately the only way to stop cheat input
 			_testTime = diag_tickTime;
 			CheatsDisabled = _testTime;
-			titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
-			uiSleep 5;
+			if (_this select 0) then {
+				titleText [(Format ["No voice chat in: %1", DZE_LocalizedDisabledChannels]), "PLAIN", 1];
+				uiSleep 1;
+			} else {
+				titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
+				uiSleep 5;
+			};
 			if (!r_player_unconsciousInputDisabled && CheatsDisabled == _testTime) then {
 				//weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
 				disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false;
 			};
 		};
 	};
+	_handle = if (_isVoiceChat) then {true;} else {false;};
+	_handle;
 };
 
 player_sumMedical = {
