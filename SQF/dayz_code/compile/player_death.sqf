@@ -132,6 +132,7 @@ selectPlayer dayz_originalPlayer;
 _myGroup = group _body;
 [_body] joinSilent dayz_firstGroup;
 deleteGroup _myGroup;
+80000 cutText ["","PLAIN"]; //Clear group icons
 
 3 cutRsc ["default", "PLAIN",3];
 4 cutRsc ["default", "PLAIN",3];
