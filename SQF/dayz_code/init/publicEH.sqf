@@ -81,12 +81,13 @@ if (isServer) then {
 	"PVDZ_plr_SwitchMove"	addPublicVariableEventHandler {((_this select 1) select 0) switchMove ((_this select 1) select 1);}; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
 	"PVDZ_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj}; //Used by built items (Epoch and Vanilla)
 	"PVDZ_veh_Save" 		addPublicVariableEventHandler {(_this select 1) call server_updateObject};
+	"PVDZ_fence_Update"		addPublicVariableEventHandler {(_this select 1) call server_addtoFenceUpdateArray};
 	"PVDZ_plr_Login1"		addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
 	"PVDZ_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
 	"PVDZ_plr_LoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
 	"PVDZ_obj_Destroy"		addPublicVariableEventHandler {(_this select 1) call server_deleteObj};
 	"PVDZ_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
-	"PVDZ_dayzCarBomb" addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
+	//"PVDZ_dayzCarBomb" addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
 	//[player,[medical Array]];
 	"PVDZ_playerMedicalSync" addPublicVariableEventHandler { (_this select 1) call server_medicalSync; ((_this select 1) select 0) setVariable["Medical",((_this select 1) select 1),false]; }; //diag_log format["%1 - %2",((_this select 1) select 0),((_this select 1) select 1)]; };
 	

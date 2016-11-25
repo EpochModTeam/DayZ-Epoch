@@ -35,7 +35,8 @@ if (!isNull _cursorTarget and !_inVehicle and (player distance _cursorTarget < 4
     //building System
     _text = getText (configFile >> "CfgVehicles" >> typeOf _cursorTarget >> "displayName");
     
-    if ((_cursorTarget iskindof "DZ_buildables") and isText(configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "Upgrade" >> "create") and !_ownerBuildLock) then {
+	/*
+    if ((_cursorTarget iskindof "DZ_buildables") and !_ownerBuildLock) then {
         if (s_player_building < 0) then {
             if (isText (configFile >> "CfgVehicles" >> (typeof _cursorTarget) >> "Upgrade" >> "create")) then {
                 s_player_building = player addAction [format[localize "str_upgrade",_text], "\z\addons\dayz_code\actions\object_upgradebuilding.sqf",_cursorTarget, 0, false, true, "",""];
@@ -54,6 +55,7 @@ if (!isNull _cursorTarget and !_inVehicle and (player distance _cursorTarget < 4
         player removeAction s_player_maintenance;
         s_player_maintenance = -1;
     };
+	*/
 
     
     if ((((getPlayerUID player) in _ownerArray) or (count _ownerArray == 0) or ((typeof _cursorTarget) in ["WoodenFence_1_foundation","WoodenGate_foundation"])) and !_ownerBuildLock) then {

@@ -10,39 +10,43 @@ private["_obj","_total","_damage"];
 
 //Object the EH is assigned too
 _obj = _this select 0;
-//Total damage of the object
-_total = (damage _obj);
 
-//Modify damage done based on level of fence
+if !((_this select 4) in ["PipeBomb","explosive_bolt","Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]) exitwith { false };
+
 _damage = switch (1==1) do {
-    case ((typeof _obj) in ["WoodenFence_3","WoodenFence_4","WoodenFence_5","WoodenFence_6","WoodenFence_7","WoodenGate_2","WoodenGate_3","WoodenGate_4"]): { 0.5 };
-    //case ((typeof _obj) in ["WoodenFence_6","WoodenFence_7","WoodenGate_4"]): { 0.35 };
-    default { 1 };
+    case ((_this select 4) in ["PipeBomb"]): { 0.5 }; //High explosive
+	case ((_this select 4) in ["explosive_bolt"]): { 0.25 }; //Medium explosive, maybe grenades and other such items.
+	case ((_this select 4) in ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]): { 0.00001 }; //Melee damage
+	default { 0 };
 };
 
-//Is the object local
-if (local _obj) then {
-	//is damage being done aboue 0 (should always be) not needed.
-	if (_damage > 0) then {
-		//Server running or client
-		if (!isServer) then {
-			//If its a client send to server get the ownering player and send damage to that player
-			PVDZ_veh_Save = [_obj,"objWallDamage",(_total + _damage)];
-			publicVariableServer "PVDZ_veh_Save";
-		} else {
-			//Server running the EH, update object to db
-			[_obj,"objWallDamage",(_total + _damage)] call server_updateObject;
-		};
+//Server running or client
+if (isServer) then {
+	if !(_obj in needUpdate_FenceObjects) then {
+		needUpdate_FenceObjects set [count needUpdate_FenceObjects, _obj];
 	};
+	
+	//TotalDamage Set by the server
+	_obj setDamage (damage _obj) + _damage;
+	
+	//diag_log format["Server Reporting - %1",needUpdate_FenceObjects];
 } else {
-	//send to server then back to owning client/server
-	PVDZ_send = [_obj,"objWallDamage",_this];
-	publicVariableServer "PVDZ_send";
+	//If its a client send to server for saving and damage setting.
+	PVDZ_fence_Update = [_obj,(damage _obj) + _damage];
+	publicVariableServer "PVDZ_fence_Update";
+	
+	//diag_log ("Client Reporting");
 };
 
-//Logging.
-diag_log format["INFO - %1(%3) - %2(%4)",_obj,_damage,(typeof _obj),_total];
+//} else {
+//	//We really coulde just send to server and have the server setDamage
+//	//send to server then back to owning client/server
+//	PVDZ_send = [_obj,"objWallDamage",_this];
+//	publicVariableServer "PVDZ_send";
+//};
 
+
+diag_log format["Object: %1, Damage:%2(%4), Projectile:%3",typeof (_this select 0),((damage _obj) + _damage),(_this select 4),(damage _obj)];
 
 // all "HandleDamage event" functions should return the effective damage that the engine will record for that part
-0
+false

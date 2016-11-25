@@ -79,6 +79,20 @@ dayz_Achievements = {
 	_player setVariable ["Achievements",_achievements];
 };
 */
+
+//Send fences to this array to be synced to db, should prove to be better performaince wise rather then updaing each time they take damage.
+server_addtoFenceUpdateArray = {
+	//Potential problem no current way to say what is setting the damage.
+	if ((_this select 0) isKindOf "DZ_buildables") then {
+		(_this select 0) setDamage (_this select 1);
+
+		if !((_this select 0) in needUpdate_FenceObjects) then {
+			needUpdate_FenceObjects set [count needUpdate_FenceObjects, (_this select 0)];
+		};
+	};
+};
+
+
 vehicle_handleServerKilled = {
 	private ["_unit","_killer"];
 	_unit = _this select 0;

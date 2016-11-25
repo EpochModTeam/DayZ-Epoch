@@ -158,15 +158,17 @@ _object_damage = {
 
 //Walls
 _objWallDamage = {
-	private "_key";
-	_damage = _this select 2;
-	_object setDamage _damage;
+	private ["_key","_damage"];
+	_damage = (damage _object);
 
 	if (_objectID == "0") then {
 		_key = format["CHILD:306:%1:%2:%3:",_objectUID,[],_damage];
 	} else {
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,[],_damage];
 	};
+	
+	diag_log ("HIVE: WRITE: "+ str(_key));
+	
 	_key call server_hiveWrite;
 };
 

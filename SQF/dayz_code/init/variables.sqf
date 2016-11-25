@@ -569,6 +569,7 @@ TimeOutDisplayed = false;
 if (isServer) then {
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
+	needUpdate_FenceObjects = [];
 	//dayz_spawnCrashSite_clutterCutter=0; // helicrash spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 	//dayz_spawnInfectedSite_clutterCutter=0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 	//Objects to remove when killed.

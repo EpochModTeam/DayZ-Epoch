@@ -1716,11 +1716,11 @@
 			<German>Bauansicht deaktiviert.</German>
 		</Key>
 		<Key ID="str_maintenance">
-			<English>%1 Maintenance</English>
-			<Russian>%1 Обслуживание</Russian>
-			<French>Entretien de la %1</French>
-			<Czech>Údržba %1</Czech>
-			<German>%1 - Wartung</German>
+			<English>Maintenance</English>
+			<Russian>Обслуживание</Russian>
+			<French>Entretien de la</French>
+			<Czech>Údržba</Czech>
+			<German>Wartung</German>
 		</Key>
 		<Key ID="str_disassembly">
 			<English>%1 Disassembly</English>
