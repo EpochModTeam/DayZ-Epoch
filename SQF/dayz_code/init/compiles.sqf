@@ -695,20 +695,19 @@ dayz_groupInvite = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups
 
 DZE_FilterCheats = {
 	#define DIK_NUMPADMINUS 0x4A
-	#define DIK_CAPSLOCK 0x3A
-	disableSerialization;
 	_dik = _this select 1;
 	_shift = _this select 2;
-	_isVoiceChat = ((_dik == DIK_CAPSLOCK) && {(ctrlText ((findDisplay 63) displayCtrl 101)) in DZE_LocalizedDisabledChannels}); //getting display directly from _this select 0 isn't reliable for chat channels!
+	
+	_isVoiceChat = (_dik in dayz_voiceControls && {ctrlText (findDisplay 63 displayCtrl 101) in DZE_DisabledChannels}); //getting display directly from _this select 0 isn't reliable for chat channels!
 	if ((_dik == DIK_NUMPADMINUS && _shift) || _isVoiceChat) then {
-		call player_forceSave;
+		if (!_isVoiceChat) then {call player_forceSave;};
 		disableUserInput true;disableUserInput true;
-		[_isVoiceChat] spawn { //disable input, this is unfortunately the only way to stop cheat input
+		_isVoiceChat spawn { //disable input, this is unfortunately the only way to stop cheat input
 			_testTime = diag_tickTime;
 			CheatsDisabled = _testTime;
-			if (_this select 0) then {
-				titleText [(Format ["No voice chat in: %1", DZE_LocalizedDisabledChannels]), "PLAIN", 1];
-				uiSleep 1;
+			if (_this) then {
+				titleText [(Format ["No voice chat in: %1", DZE_DisabledChannels]), "PLAIN", 1];
+				uiSleep 2;
 			} else {
 				titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
 				uiSleep 5;
@@ -719,8 +718,7 @@ DZE_FilterCheats = {
 			};
 		};
 	};
-	_handle = if (_isVoiceChat) then {true;} else {false;};
-	_handle;
+	_isVoiceChat
 };
 
 player_sumMedical = {

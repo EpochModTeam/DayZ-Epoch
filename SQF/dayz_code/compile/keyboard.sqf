@@ -149,6 +149,13 @@ if (isNil "keyboard_keys") then {
             [player,20,true,(getPosATL player)] call player_alertZombies;
         };
     };
+	_checkVoice = {
+        if (diag_ticktime - dayz_lastCheckBit > 10) then {
+            dayz_lastCheckBit = diag_ticktime;
+            [player,20,true,(getPosATL player)] call player_alertZombies;
+        };
+		_handled = if (!isNil "DZE_FilterCheats") then {[-999,false] call DZE_FilterCheats} else {false};
+    };
     _journal = {
         if (!dayz_isSwimming and !dialog) then {
             [player,4,true,(getPosATL player)] call player_alertZombies;
@@ -280,9 +287,14 @@ if (isNil "keyboard_keys") then {
     [actionKeys "MoveBack", _interrupt] call _addArray;
     [actionKeys "TurnLeft", _interrupt] call _addArray;
     [actionKeys "TurnRight", _interrupt] call _addArray;
-    [actionKeys "PushToTalk", _noise] call _addArray;
-    [actionKeys "VoiceOverNet", _noise] call _addArray;
-    [actionKeys "PushToTalkDirect", _noise] call _addArray;
+    [actionKeys "PushToTalk", _checkVoice] call _addArray;
+	[actionKeys "PushToTalkAll", _checkVoice] call _addArray;
+	[actionKeys "PushToTalkCommand", _checkVoice] call _addArray;
+	[actionKeys "PushToTalkDirect", _checkVoice] call _addArray;
+	[actionKeys "PushToTalkGroup", _checkVoice] call _addArray;
+	[actionKeys "PushToTalkSide", _checkVoice] call _addArray;
+	[actionKeys "PushToTalkVehicle", _checkVoice] call _addArray;
+    [actionKeys "VoiceOverNet", _checkVoice] call _addArray;
     [actionKeys "Chat", _noise] call _addArray;
     [actionKeys "User20", _journal] call _addArray;
     [actionKeys "Diary", _journal] call _addArray;
