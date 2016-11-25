@@ -154,7 +154,7 @@ if (isNil "keyboard_keys") then {
             dayz_lastCheckBit = diag_ticktime;
             [player,20,true,(getPosATL player)] call player_alertZombies;
         };
-		_handled = if (!isNil "DZE_FilterCheats") then {[-999,false] call DZE_FilterCheats} else {false};
+		_handled = if (!isNil "DZE_FilterCheats") then {[0,-999,false] call DZE_FilterCheats} else {false};
     };
     _journal = {
         if (!dayz_isSwimming and !dialog) then {
