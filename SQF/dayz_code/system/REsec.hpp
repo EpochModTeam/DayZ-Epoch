@@ -23,7 +23,7 @@
 
 // Special logic for execVM, only these whitelisted scripts will be spawned
 #ifndef WHITELISTED_EXECVM
-#define WHITELISTED_EXECVM [ ""ca\Modules\Functions\init.sqf"" ]
+#define WHITELISTED_EXECVM [ ""ca\Modules\Functions\init.sqf"", ""ca\modules\Functions\init.sqf"", ""\CorePatch\CorePatch_Modules\Functions\init.sqf"" ]
 // uncomment and put in the array above if you want your server be able to kick players (not used in DayZ for now)
 //""ca\Modules\MP\data\scriptCommands\endMission.sqf"" 
 #endif
