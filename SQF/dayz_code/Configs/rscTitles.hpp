@@ -40,6 +40,7 @@ class RscDisplayMission: RscDisplayEmpty
 	onKeyDown = "if (!isNil 'DZ_KeyDown_EH') then {_this call DZ_KeyDown_EH;};"; //assigned much quicker than spawning init_keyboard
 };
 class RscDisplayConfigure {
+	idd = 4;
 	onUnload = "if (!isNil 'updateControlsHandle') then {terminate updateControlsHandle;}; if (!isNil 'ui_updateControls') then {updateControlsHandle = true spawn ui_updateControls;};";
 	class controlsBackground;
 	class controls;
@@ -99,6 +100,13 @@ class RscDisplayChat
 class RscDisplayChannel
 {
 	idd = 63;
+	onKeyDown = "_handle = if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats} else {false}; _handle";
+	onMouseButtonDown = "_handle = if (!isNil 'DZE_FilterCheats') then {[0,(_this select 1),false] call DZE_FilterCheats} else {false}; _handle";
+	class controls;
+};
+class RscDisplayVoiceChat
+{
+	idd = 55;
 	onKeyDown = "_handle = if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats} else {false}; _handle";
 	onMouseButtonDown = "_handle = if (!isNil 'DZE_FilterCheats') then {[0,(_this select 1),false] call DZE_FilterCheats} else {false}; _handle";
 	class controls;
@@ -434,6 +442,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 	//onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [(_this select 0)] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';"; _respawn = (_this select 0) displayCtrl 1010); _respawn ctrlEnable false; _abort = (_this select 0) displayCtrl 104); _abort ctrlEnable false;
 	onLoad = "uiNamespace setVariable ['RscDisplayMPInterrupt', _this select 0]; _this call fn_pauseMenuChecks; [] spawn player_onPause; _dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf';"; /*diag_log[diag_tickTime,'RscDisplayMPInterrupt'];*/
 	onUnload = "uiNamespace setVariable ['RscDisplayMPInterrupt', nil];['Unload', _this] execVM '\ca\ui\scripts\pauseOnUnload.sqf';";
+	onKeyDown = "_handle = if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats} else {false}; _handle";
 
 	class controlsBackground {
 		class Mainback : RscPicture {

@@ -310,7 +310,7 @@ if (isNil "keyboard_keys") then {
 	if (!isNil "bis_fnc_halo_keydown_eh") then {bis_fnc_halo_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_keydown;"];}; // halo in progress
 };
 
-_this call DZE_FilterCheats;
+_CheatHandled = _this call DZE_FilterCheats;
 
 if (r_player_unconsciousInputDisabled) exitWith {true};
 _code = keyboard_keys select _dikCode;
@@ -318,4 +318,4 @@ if (!isNil "_code") then {
     call _code;
 };
 
-_handled
+(_handled || _CheatHandled);

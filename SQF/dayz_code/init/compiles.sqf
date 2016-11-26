@@ -694,19 +694,29 @@ dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compil
 dayz_groupInvite = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\handleInvite.sqf";
 
 DZE_FilterCheats = {
-	#define DIK_NUMPADMINUS 0x4A
+	#include "\ca\editor\Data\Scripts\dikCodes.h"
 	_dik = _this select 1;
 	_shift = _this select 2;
-	
-	_isVoiceChat = (_dik in dayz_voiceControls && {ctrlText (findDisplay 63 displayCtrl 101) in DZE_DisabledChannels}); //getting display directly from _this select 0 isn't reliable for chat channels!
-	if ((_dik == DIK_NUMPADMINUS && _shift) || _isVoiceChat) then {
+	_voiceLocked = (ctrlShown  ((FindDisplay 55) displayCtrl 101));
+	_textBoxShown = (ctrlShown  ((FindDisplay 24) displayCtrl 101));
+	//we need to check inputAction as well since ArmA is soooooo reliable that dik codes don't work with double tap or combination ActionKey mappings...
+	// Additionally inputAction does not work in dialogs, such as the escape menu, that are not the main display.
+	_channelChange = ((_dik in DayZ_channelChangeKeys) || {(inputAction "PrevChannel") > 0} || {(inputAction "NextChannel") > 0});
+	_inputActionCheck = ({(inputAction _x) > 0} count ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"]) > 0;
+	_isVoiceChat = ((_dik in dayz_voiceControls || _inputActionCheck) && {ctrlText (findDisplay 63 displayCtrl 101) in DZE_DisabledChannels}); //getting display directly from _this select 0 isn't reliable for chat channels!
+	_ChannelChangeWithVoice = ((_voiceLocked && _channelChange) || {_voiceLocked && _textBoxShown && ((_dik == DIK_DOWN) || (_dik == DIK_UP))});
+	if ((_dik == DIK_NUMPADMINUS && _shift) || _isVoiceChat || _ChannelChangeWithVoice) then {
 		if (!_isVoiceChat) then {call player_forceSave;};
 		disableUserInput true;disableUserInput true;
-		_isVoiceChat spawn { //disable input, this is unfortunately the only way to stop cheat input
+		[_isVoiceChat, _ChannelChangeWithVoice] spawn { //disable input, this is unfortunately the only way to stop cheat input
 			_testTime = diag_tickTime;
 			CheatsDisabled = _testTime;
-			if (_this) then {
-				titleText [(Format ["No voice chat in: %1", DZE_DisabledChannels]), "PLAIN", 1];
+			if (_this select 0 || _this select 1) then {
+				if (_this select 0) then {
+					titleText [(Format ["No voice chat in: %1", DZE_DisabledChannels]), "PLAIN", 1];
+				} else {
+					titleText ["You may not change chat channels while VON is active!", "PLAIN", 1];
+				};
 				uiSleep 2;
 			} else {
 				titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
@@ -718,7 +728,7 @@ DZE_FilterCheats = {
 			};
 		};
 	};
-	_isVoiceChat
+	(_isVoiceChat || _ChannelChangeWithVoice);
 };
 
 player_sumMedical = {
