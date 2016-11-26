@@ -99,6 +99,7 @@ class RscDisplayChat
 class RscDisplayChannel
 {
 	idd = 63;
+	onKeyDown = "_handle = if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats} else {false}; _handle";
 	onMouseButtonDown = "_handle = if (!isNil 'DZE_FilterCheats') then {[0,(_this select 1),false] call DZE_FilterCheats} else {false}; _handle";
 	class controls;
 };
