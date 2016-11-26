@@ -109,7 +109,7 @@ _isAir = _vehicle isKindOf "Air";
 			
 			if (_targetedBySight or _targetedBySound) then {
 				[_x, "spotted", 0, false] call dayz_zombieSpeak;
-				diag_log format["Zombie: %1, Distance: %2, Target Reason: Sight-%3,%5/Sound-%4,%6",(typeof _x),_dist,_targetedBySight,_targetedBySound,DAYZ_disVisual,DAYZ_disAudial];
+				//diag_log format["Zombie: %1, Distance: %2, Target Reason: Sight-%3,%5/Sound-%4,%6",(typeof _x),_dist,_targetedBySight,_targetedBySound,DAYZ_disVisual,DAYZ_disAudial];
 				
 				switch (local _x) do {
 					case false: {
