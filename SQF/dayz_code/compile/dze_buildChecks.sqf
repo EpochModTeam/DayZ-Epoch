@@ -15,13 +15,19 @@ if (isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then 
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
 _isLandFireDZ = (_classname == "Land_Fire_DZ");
 
-_distance = if (_isPole) then {DZE_PlotPole select 1} else {DZE_PlotPole select 0};
 _canBuild = false;
 _nearestPole = objNull;
 _ownerID = 0;
 _friendlies = [];
 
-_plotcheck = [player, false] call FNC_find_plots;
+if (_isPole) then {
+	_plotcheck = [player, true] call FNC_find_plots;
+	_distance =  DZE_PlotPole select 1;
+} else {
+	_plotcheck = [player, false] call FNC_find_plots;
+	_distance = DZE_PlotPole select 0;
+};
+
 _IsNearPlot = _plotcheck select 1;
 _nearestPole = _plotcheck select 2;
 
