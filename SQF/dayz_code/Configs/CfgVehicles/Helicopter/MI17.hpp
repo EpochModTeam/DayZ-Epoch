@@ -300,7 +300,9 @@ class Mi171Sh_CZ_EP1_DZ: Mi17_base {
 		class HUDoff {
 			displayName = $STR_AM_HUDON;
 			displayNameDefault = $STR_AM_HUDON;
+			priority = 0;
 			position = "zamerny";
+			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
 			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
@@ -309,7 +311,9 @@ class Mi171Sh_CZ_EP1_DZ: Mi17_base {
 		class HUDon {
 			displayName = $STR_AM_HUDOFF;
 			displayNameDefault = $STR_AM_HUDOFF;
+			priority = 0;
 			position = "zamerny";
+			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
 			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";

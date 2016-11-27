@@ -872,6 +872,7 @@
 		</Key>
 		<Key ID="str_actions_push">
 			<English>Push Plane</English>
+			<German>Flugzeug schieben</German>
 		</Key>
 		<Key ID="str_actions_stats">
 			<English>Enable Stats</English>
@@ -9618,16 +9619,6 @@
 			<Russian>Ворота закрыты.</Russian>
 			<German>Tore geschlossen.</German>
 		</Key>
-		<Key ID="STR_BLD_ACTIONS_OPENGATE">
-			<English>Open Gate</English>
-			<German>Tor öffnen</German>
-			<Russian>Открыть ворота</Russian>
-		</Key>
-		<Key ID="STR_BLD_ACTIONS_CLOSEGATE">
-			<English>Close Gate</English>
-			<German>Tor schließen</German>
-			<Russian>Закрыть ворота</Russian>
-		</Key>
 		<Key ID="STR_BLD_ACTIONS_SETLOCKCODE">
 			<English>Set Lock Code</English>
 			<German>Zugangscode setzen</German>
@@ -16520,29 +16511,13 @@
 			<German>Du darfst diese Tür nicht verwalten.</German>
 		</Key>
 		
-		<Key ID="STR_EPOCH_DOORS_OPEN">
-			<English>Open Door</English>
-			<German>Tür öffnen</German>
-			<French>Ouvrir portes</French>
-			<Spanish>Abrir puertas</Spanish>
-			<Italian>Apri le porte</Italian>
-			<Hungarian>Ajtó kinyitása</Hungarian>
-			<Polish>Otwórz drzwi</Polish>
-			<Russian>Открыть двери</Russian>
-			<Czech>Otevřít dveře</Czech>
-			<Japanese>ドアを開ける</Japanese>
+		<Key ID="STR_EPOCH_OPEN_RAMP">
+			<English>Open Ramp</English>
+			<German>Rampe öffnen</German>
 		</Key>
-		<Key ID="STR_EPOCH_DOORS_CLOSE">
-			<English>Close Door</English>
-			<German>Tür schließen</German>
-			<French>Fermer portes</French>
-			<Spanish>Cerrar puertas</Spanish>
-			<Italian>Chiudi le porte</Italian>
-			<Hungarian>Ajtó bezárása</Hungarian>
-			<Polish>Zamknij drzwi</Polish>
-			<Russian>Закрыть двери</Russian>
-			<Czech>Zavřít dveře</Czech>
-			<Japanese>ドアを閉める</Japanese>
+		<Key ID="STR_EPOCH_CLOSE_RAMP">
+			<English>Close Ramp</English>
+			<German>Rampe schließen</German>
 		</Key>
 		<Key ID="STR_EPOCH_DOORS_UNLOCK">
 			<English>Unlock Door</English>

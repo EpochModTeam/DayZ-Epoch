@@ -299,7 +299,7 @@ class Land_DZE_WoodDoor: Land_DZE_WoodDoor_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -308,7 +308,7 @@ class Land_DZE_WoodDoor: Land_DZE_WoodDoor_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0];";
 		};
@@ -340,7 +340,7 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -350,7 +350,7 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_door"", 0]";
@@ -399,7 +399,7 @@ class Land_DZE_LargeWoodDoor: Land_DZE_WoodDoor_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -408,7 +408,7 @@ class Land_DZE_LargeWoodDoor: Land_DZE_WoodDoor_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0]";
 		};
@@ -440,7 +440,7 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -450,7 +450,7 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_door"", 0]";
@@ -499,7 +499,7 @@ class Land_DZE_GarageWoodDoor: Land_DZE_WoodDoor_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -508,7 +508,7 @@ class Land_DZE_GarageWoodDoor: Land_DZE_WoodDoor_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0]";
 		};
@@ -540,7 +540,7 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -550,7 +550,7 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			statement="this animate [""Open_door"", 0]";
@@ -605,7 +605,7 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -615,7 +615,7 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
 			statement="this animate [""Open_door"", 0]";
@@ -665,7 +665,7 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -674,7 +674,7 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0]";
 		};
@@ -708,7 +708,7 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -718,7 +718,7 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			//condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
 			statement="this animate [""Open_door"", 0]";
@@ -768,7 +768,7 @@ class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 	{
 		class Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_OPEN;
+			displayName=$STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
 			position="Door_knopf";
 			radius=3; /* visibility distance of the entry */
@@ -777,7 +777,7 @@ class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName=$STR_EPOCH_DOORS_CLOSE;
+			displayName=$STR_DN_OUT_C_DOOR;
 			condition="this animationPhase ""Open_door"" >= 0.5";
 			statement="this animate [""Open_door"", 0]";
 		};

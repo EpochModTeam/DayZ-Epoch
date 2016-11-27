@@ -547,7 +547,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// open Gate
 	if (_isGate && _isClosed && _isUnlocked) then {
 		if (s_player_openGate < 0) then {
-			s_player_openGate = player addAction [localize "STR_BLD_ACTIONS_OPENGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Open"], 1, true, true];
+			s_player_openGate = player addAction [localize "STR_DN_OUT_O_GATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Open"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_openGate;
@@ -556,7 +556,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	// Close Gate
 	if (_isGate && _isOpen && _isUnlocked) then {
 		if (s_player_CloseGate < 0) then {
-			s_player_CloseGate = player addAction [localize "STR_BLD_ACTIONS_CLOSEGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Close"], 1, true, true];
+			s_player_CloseGate = player addAction [localize "STR_DN_OUT_C_GATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Close"], 1, true, true];
 		};
 	} else {
 		player removeAction s_player_CloseGate;

@@ -88,13 +88,21 @@ class UH1Y_DZ: UH1_Base {
 			magazines[] = {"2000Rnd_762x51_M134"};
 		};
 	};*/
+	class DefaultEventhandlers;
+	class EventHandlers: DefaultEventhandlers
+	{
+		killed = "_this call BIS_Effects_EH_Killed;";
+		engine = "if (_this select 1) then {(_this select 0) animate ['mainrotor_folded',1]; (_this select 0) animate ['mainrotor_unfolded',0];} else {_this select 0 setVariable ['engineOffTime',diag_tickTime,false];};"; //Unfold
+	};
 	class UserActions {
 		//class Repair {ACTION_REPAIR; radius = 8;};
 		//class Salvage {ACTION_SALVAGE; radius = 8;};
 		class HUDoff {
 			displayName = $STR_AM_HUDON;
 			displayNameDefault = $STR_AM_HUDON;
+			priority = 0;
 			position = "zamerny";
+			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
 			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=1)";
@@ -103,11 +111,35 @@ class UH1Y_DZ: UH1_Base {
 		class HUDon {
 			displayName = $STR_AM_HUDOFF;
 			displayNameDefault = $STR_AM_HUDOFF;
+			priority = 0;
 			position = "zamerny";
+			showWindow = 0;
 			radius = 1;
 			onlyForPlayer = 1;
 			condition = "(player==driver this)and(this animationphase ""HUDAction"" !=0)";
 			statement = "this animate [""HUDAction"",0];this animate [""HUDAction_1"",0]";
+		};
+		class Fold {
+			displayName = $STR_AM_PACK;
+			displayNameDefault = $STR_AM_PACK;
+			priority = 0;
+			position = "zamerny";
+			showWindow = 0;
+			radius = 1;
+			onlyForPlayer = 1;
+			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 0} && {diag_tickTime - (this getVariable ['engineOffTime',0]) > 20}";
+			statement = "this animate ['mainrotor_folded',0]; this animate ['mainrotor_unfolded',1];";
+		};
+		class Unfold {
+			displayName = $STR_AM_UNPACK;
+			displayNameDefault = $STR_AM_UNPACK;
+			priority = 0;
+			position = "zamerny";
+			showWindow = 0;
+			radius = 1;
+			onlyForPlayer = 1;
+			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 1}";
+			statement = "this animate ['mainrotor_folded',1]; this animate ['mainrotor_unfolded',0];";
 		};
 	};
 };
