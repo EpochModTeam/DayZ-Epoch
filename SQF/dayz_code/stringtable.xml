@@ -872,6 +872,7 @@
 		</Key>
 		<Key ID="str_actions_push">
 			<English>Push Plane</English>
+			<German>Flugzeug schieben</German>
 		</Key>
 		<Key ID="str_actions_stats">
 			<English>Enable Stats</English>
@@ -16512,9 +16513,11 @@
 		
 		<Key ID="STR_EPOCH_OPEN_RAMP">
 			<English>Open Ramp</English>
+			<German>Rampe öffnen</German>
 		</Key>
 		<Key ID="STR_EPOCH_CLOSE_RAMP">
 			<English>Close Ramp</English>
+			<German>Rampe schließen</German>
 		</Key>
 		<Key ID="STR_EPOCH_DOORS_UNLOCK">
 			<English>Unlock Door</English>
