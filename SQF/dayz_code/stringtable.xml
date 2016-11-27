@@ -800,11 +800,11 @@
 			<Czech>Transfúze krve úspěšná.</Czech>
 		</Key>
 		<Key ID="str_actions_medical_transfusion_interrupted">
-			<English>The transfusion was interrupted! The blood bag has been lost.</English>
-			<German>Die Bluttransfusion wurde unterbrochen! Die Blutkonserve kann nicht weiter benutzt werden.</German>
-			<Russian>Переливание было прервано! Пакет крови потерян.</Russian>
-			<Spanish>¡La transfusión fue interrumpida! La bolsa de sangre se perdió.</Spanish>
-			<French>La transfusion s&apos;est interrompue! La poche de sang est perdue.</French>
+			<English>The transfusion was interrupted!</English>
+			<German>Die Bluttransfusion wurde unterbrochen!</German>
+			<Russian>Переливание было прервано!</Russian>
+			<Spanish>¡La transfusión fue interrumpida!</Spanish>
+			<French>La transfusion s&apos;est interrompue!</French>
 			<Czech>Transfúze byla přerušena a krevní vak byl ztracen!</Czech>
 		</Key>
 		<Key ID="str_actions_medical_dragbody_veh">
