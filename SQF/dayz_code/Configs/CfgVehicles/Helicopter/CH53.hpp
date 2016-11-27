@@ -37,7 +37,7 @@ class CH53_DZE : USEC_ch53_E {
 		class Repair {ACTION_REPAIR; radius = 8;};
 		class Salvage {ACTION_SALVAGE; radius = 8;};
 		class RampOpen {
-			displayName = "Open Ramp";
+			displayName = $STR_EPOCH_OPEN_RAMP;
 			position = "ramp action";
 			showWindow = 0;
 			radius = 5;
@@ -46,7 +46,7 @@ class CH53_DZE : USEC_ch53_E {
 			onlyforplayer = 0;
 		};
 		class RampClose {
-			displayName = "Close Ramp";
+			displayName = $STR_EPOCH_CLOSE_RAMP;
 			position = "ramp action";
 			showWindow = 0;
 			radius = 5;

@@ -252,6 +252,32 @@ class ArmoredSUV_Base_PMC: Car
 	{
 		libTextDesc = "An SUV (Sport Utility Vehicle) is a generic marketing term for a vehicle similar to a station wagon, but built on a light-truck chassis. These particular SUVs are up-armored to protect the security operators inside from small-arms fire. This model has been outfitted with a M134 7.62mm Minigun, which can be retracted back into the vehicle.<br /><br /> ""Black Betty"" is a nickname often used for this vehicle by ION Inc. contractors.";
 	};
+	class UserActions {
+		//class Repair {ACTION_REPAIR; radius = 4;};
+		//class Salvage {ACTION_SALVAGE; radius = 4;};
+		class OpenHatch {
+			displayName = $STR_AM_OPENGUNNER;
+			displayNameDefault = $STR_AM_OPENGUNNER;
+			priority = 0;
+			position = "zamerny";
+			showWindow = 0;
+			radius = 1;
+			onlyForPlayer = 1;
+			condition = "this animationPhase 'HideGun_01' == 1";
+			statement = "this animate ['HideGun_01',0]; this animate ['CloseCover1',0]; this animate ['CloseCover2',0];";
+		};
+		class CloseHatch {
+			displayName = $STR_AM_CLOSEGUNNER;
+			displayNameDefault = $STR_AM_CLOSEGUNNER;
+			priority = 0;
+			position = "zamerny";
+			showWindow = 0;
+			radius = 1;
+			onlyForPlayer = 1;
+			condition = "isNull (this turretUnit [0]) && (this animationPhase 'HideGun_01' == 0)";
+			statement = "this spawn {_this animate ['HideGun_01',1]; uiSleep 1; _this animate ['CloseCover1',1]; _this animate ['CloseCover2',1];};";
+		};
+	};
 };
 
 class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
