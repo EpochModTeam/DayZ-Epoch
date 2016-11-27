@@ -173,27 +173,3 @@ class FoodCanRusCornEmpty : TrashTinCan
 	displayName = $STR_FOOD_NAME_CAN_EMPTY;
 	descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
 };
-
-class FoodChipsSulahoopsEmpty : TrashTinCan
-{
-	model = "z\addons\dayz_communityassets\models\bag_chips_small_sulahoops_opened.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_sulahoops_opened_ca.paa";
-	displayName = $STR_FOOD_NAME_CHIPS_EMPTY;
-	descriptionShort = $STR_FOOD_DESC_CHIPS_EMPTY;
-};
-
-class FoodChipsMysticalesEmpty : TrashTinCan
-{
-	model = "z\addons\dayz_communityassets\models\bag_chips_small_mysticales_opened.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_mysticales_opened_ca.paa";
-	displayName = $STR_FOOD_NAME_CHIPS_EMPTY;
-	descriptionShort = $STR_FOOD_DESC_CHIPS_EMPTY;
-};
-
-class FoodChipsChocolateEmpty : TrashTinCan
-{
-	model = "z\addons\dayz_communityassets\models\bag_chips_small_chocolate_opened.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_bag_chips_small_chocolate_empty_ca.paa";
-	displayName = $STR_FOOD_NAME_CHIPS_EMPTY;
-	descriptionShort = $STR_FOOD_DESC_CHIPS_EMPTY;
-};
