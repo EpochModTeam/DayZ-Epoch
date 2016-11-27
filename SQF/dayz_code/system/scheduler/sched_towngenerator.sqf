@@ -162,7 +162,8 @@ sched_townGenerator = {
 								_position = _x select 2;
 								_blocked = false;
 								{if (_position distance _x < 150) exitWith {_blocked = true;};} forEach dayz_townGeneratorBlackList;
-								if (!_blocked && dayz_townGenerator) then {
+								//Spawn waterHoleProxies on Chernarus even if townGenerator is disabled (needed for drinking from hands at ponds)
+								if ((!_blocked && dayz_townGenerator) or {_x select 1 == "waterHoleProxy" && toLower worldName == "chernarus"}) then {
 									_object = (_x select 1) createVehicleLocal [0,0,0];
 									_object setDir (_x select 3);
 									_object setPos [_position select 0,_position select 1,0];
