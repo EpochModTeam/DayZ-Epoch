@@ -29,7 +29,7 @@ Note: Both server and client should be updated to current A2OA stable 1.63.13112
 
 Current Version: **EpochTest-106-RC2**
 
-Build Date: **November 21st 2016**
+Build Date: **November 26th 2016**
 
 --------------------------
 Test Server Information
@@ -38,7 +38,6 @@ The test server is currently maintained and hosted by icomrade
 
 * IP: 37.59.229.103
 * Port: 2402
-* Password: epochtest106
 
 --------------------------
 The Zip file contains the following files:
