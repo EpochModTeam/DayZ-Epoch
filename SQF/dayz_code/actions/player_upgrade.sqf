@@ -121,6 +121,7 @@ if ((count _upgrade) > 0) then {
 				_objectCharacterID = _combination;
 				
 				format[localize "str_epoch_player_158",_combination,_text] call dayz_rollingMessages;
+				systemChat format[localize "str_epoch_player_158",_combination,_text];
 			} else {	
 				format[localize "str_epoch_player_159",_text] call dayz_rollingMessages;
 			};
