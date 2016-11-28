@@ -60,7 +60,6 @@ DZE_serverLogTrades = true; // Log trades to server RPT (sent with publicVariabl
 DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; // Array of gem prices, only works with config traders.
 DZE_SaleRequiresKey = false; // Require the player has the key for a vehicle in order to sell it. The key can be in the player's toolbelt, backpack, or the vehicle's inventory.
 DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
-Z_AT_FolderLocation = '\z\addons\dayz_code\actions\AdvancedTrading';
 Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
 Z_AllowTakingMoneyFromBackpack = true; // Allow traders to take money from backpacks when buying with default currency.
 Z_AllowTakingMoneyFromVehicle = true; // Allow traders to take money from vehicles when buying with default currency.

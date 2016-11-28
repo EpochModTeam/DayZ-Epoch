@@ -1,3 +1,7 @@
+#define STRINGIFY(x) #x
+#define PATH(sub_path) STRINGIFY(\z\addons\dayz_code\actions\AdvancedTrading\functions\sub_path)
+#define CPP compile preprocessFileLineNumbers
+
 private ["_tempGemList","_tempWorthList","_largest","_LargestGem"];
 
 Z_SellingFrom = 2;
@@ -26,10 +30,10 @@ for "_i" from 0 to ((count _tempGemList) - 1) do {
 	DZE_GemWorthList set [(count DZE_GemWorthList), _largest];
 };
 
-Z_checkCloseVehicle =  						compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_checkCloseVehicle.sqf");
-Z_canAfford =  								compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_canAfford.sqf");
-Z_calcFreeSpace = 							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calcFreeSpace.sqf");
-Z_returnChange =  							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_returnChange.sqf");
-Z_payDefault =  							compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_payDefault.sqf");
-z_calcDefaultCurrencyNoImg  =				compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\z_at_calcDefaultCurrencyNoImg.sqf");
-ZUPA_fnc_removeWeaponsAndMagazinesCargo = 	compile preprocessFileLineNumbers (Z_AT_FolderLocation + "\functions\zupa_fnc_removeWeaponsAndMagazinesCargo.sqf");
+Z_checkCloseVehicle =  						CPP PATH(z_at_checkCloseVehicle.sqf);
+Z_canAfford =  								CPP PATH(z_at_canAfford.sqf);
+Z_calcFreeSpace = 							CPP PATH(z_at_calcFreeSpace.sqf);
+Z_returnChange =  							CPP PATH(z_at_returnChange.sqf);
+Z_payDefault =  							CPP PATH(z_at_payDefault.sqf);
+z_calcDefaultCurrencyNoImg  =				CPP PATH(z_at_calcDefaultCurrencyNoImg.sqf);
+ZUPA_fnc_removeWeaponsAndMagazinesCargo = 	CPP PATH(zupa_fnc_removeWeaponsAndMagazinesCargo.sqf);
