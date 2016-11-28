@@ -558,8 +558,7 @@ UPDATE object_data SET Inventory = REPLACE(Inventory, '"Winchester1866"', '"Winc
 -- ----------------------------
 /*
 UPDATE player_data t1, banking_data t2
-SET t1.`PlayerCoins` = t2.bankMoney,
-t1.`BankCoins` = t2.BankSaldo
+SET t1.`PlayerCoins` = t2.BankSaldo,
 WHERE t1.PlayerUID = t2.PlayerUID
 */
 
