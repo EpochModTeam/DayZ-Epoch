@@ -106,7 +106,7 @@ class DZ_GroupButton: RscButton {
 
 class DZ_GroupDialog {
 	idd = 80000;
-	movingEnable = 1;
+	movingEnable = 0;
 	enableSimulation = 1;
 	
 	class ControlsBackground {
