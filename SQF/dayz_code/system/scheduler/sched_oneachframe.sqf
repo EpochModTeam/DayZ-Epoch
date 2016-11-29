@@ -25,8 +25,10 @@ sched_onEachFrame = {
 	};
 	if (sched_ef_lowFPSctr >= 100) then {
 		sched_ef_lowFPSctr = 2;
-		hintSilent localize "str_player_lowPFS";
-		diag_log format [ "h1nt: LOW FPS (%1)", diag_fpsmin ];
+		if (!visibleMap) then {
+			hintSilent localize "str_player_lowPFS";
+			diag_log format [ "h1nt: LOW FPS (%1)", diag_fpsmin ];
+		};
 	};
 	
 	if (!isNil "dayz_groupIcons") then {call dayz_groupIcons;};
