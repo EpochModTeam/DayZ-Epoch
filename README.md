@@ -61,7 +61,7 @@ GitHub Collaborators (In order of most commits)
 * dayz10k - https://github.com/dayz10k
 * Skaronator - https://github.com/Skaronator
 * icomrade - https://github.com/icomrade
-* ebaydayz - https://github.com/ebaydayz
+* ebayShopper - https://github.com/ebayShopper
 * Axles - https://github.com/Axles
 * Armifer - https://github.com/Armifer
 * Zupa - https://github.com/Windmolders
@@ -78,7 +78,7 @@ GitHub Contributors (In order of most commits)
 * zabn - https://github.com/zabn
 * eltexonline - https://github.com/eltexonline
 * icomrade - https://github.com/icomrade
-* ebaydayz - https://github.com/ebaydayz
+* ebayShopper - https://github.com/ebayShopper
 * Namindu - https://github.com/Namindu
 * raginruffalo - https://github.com/raginruffalo
 * Markokil321 - https://github.com/Markokil321
