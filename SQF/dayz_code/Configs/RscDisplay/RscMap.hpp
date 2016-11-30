@@ -1,6 +1,5 @@
 class RscDisplayMainMap
 {
-	onKeyDown = "if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats;}; false";
 	class controls
 	{
 		delete CA_MainBackground;

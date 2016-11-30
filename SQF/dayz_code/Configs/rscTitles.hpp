@@ -1,3 +1,4 @@
+#define FILTER_CHEATS "_handled = if (isNil 'dze_filterCheats') then {false} else {_this call dze_filterCheats}; _handled"
 class RscPicture;
 class RscButton;
 class CA_IGUI_Title;
@@ -37,18 +38,19 @@ class RscDisplayMission: RscDisplayEmpty
 {
 	access = 0;
 	idd = 46;
-	onKeyDown = "if (!isNil 'DZ_KeyDown_EH') then {_this call DZ_KeyDown_EH;};"; //assigned much quicker than spawning init_keyboard
+	onKeyDown = "_handled = if (isNil 'DZ_KeyDown_EH') then {false} else {_this call DZ_KeyDown_EH}; _handled"; //assigned much quicker than spawning init_keyboard
 };
 class RscDisplayConfigure {
 	idd = 4;
 	onUnload = "if (!isNil 'updateControlsHandle') then {terminate updateControlsHandle;}; if (!isNil 'ui_updateControls') then {updateControlsHandle = true spawn ui_updateControls;};";
-	class controlsBackground;
-	class controls;
+	onKeyDown = FILTER_CHEATS;
 };
 class RscDisplayGameOptions {
 	onLoad = "{(_this select 0) displayCtrl 140 lbAdd _x;} forEach [localize 'STR_DISABLED',localize 'STR_ENABLED']; (_this select 0) displayCtrl 140 lbSetCurSel (profileNamespace getVariable ['streamerMode',0]); uiNamespace setVariable ['streamerMode',(profileNamespace getVariable ['streamerMode',0])];";
 	onUnload = "call ui_changeDisplay;";
+	onKeyDown = FILTER_CHEATS;
 	class controls {
+		delete CA_ButtonDefault; //Opens non-functional difficulty selection dialog, player can not select difficulty in MP
 		class CA_TextLanguage : RscText {
 			x = 0.159803;
 			y = (0.420549 + -2*0.069854);
@@ -91,26 +93,19 @@ class RscDisplayGameOptions {
 		};
 	};
 };
-class RscDisplayChat
-{
-	idd = 24;
-	onKeyDown = "if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats;}; false";
-	class controls;
-};
+class RscDisplayChat {onKeyDown = FILTER_CHEATS;};
+class RscDisplayOptions {onKeyDown = FILTER_CHEATS;};
+class RscDisplayOptionsAudio {onKeyDown = FILTER_CHEATS;};
+class RscDisplayOptionsVideo {onKeyDown = FILTER_CHEATS;};
+class RscDisplayConfigureControllers {onKeyDown = FILTER_CHEATS;};
 class RscDisplayChannel
 {
 	idd = 63;
-	onKeyDown = "_handle = if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats} else {false}; _handle";
-	onMouseButtonDown = "_handle = if (!isNil 'DZE_FilterCheats') then {[0,(_this select 1),false] call DZE_FilterCheats} else {false}; _handle";
-	class controls;
+	//Channel name text is nil when checking unscheduled in onLoad of display 55 and 63. Spawn gives it time to set.
+	//This will fire when a mouse button is assigned. KeyDown EHs will not.
+	onLoad = "if (!isNil 'dze_filterCheats' && !isNil 'channel_keys') then {[(_this select 0),-1,false] spawn dze_filterCheats;};";
 };
-class RscDisplayVoiceChat
-{
-	idd = 55;
-	onKeyDown = "_handle = if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats} else {false}; _handle";
-	onMouseButtonDown = "_handle = if (!isNil 'DZE_FilterCheats') then {[0,(_this select 1),false] call DZE_FilterCheats} else {false}; _handle";
-	class controls;
-};
+
 class RscPictureGUI
 {
 	access = 0;
@@ -332,7 +327,7 @@ class RscDisplayMain : RscStandardDisplay
 class RscDisplayDiary {
 	idd = 129;
 	movingEnable = 0;
-	onKeyDown = "if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats;}; false";
+	onKeyDown = FILTER_CHEATS;
 
 	class Controls {
 		delete Diary;
@@ -442,8 +437,8 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 	//onLoad = "_dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf'; [(_this select 0)] execVM '\z\addons\dayz_code\compile\player_onPause.sqf';"; _respawn = (_this select 0) displayCtrl 1010); _respawn ctrlEnable false; _abort = (_this select 0) displayCtrl 104); _abort ctrlEnable false;
 	onLoad = "uiNamespace setVariable ['RscDisplayMPInterrupt', _this select 0]; _this call fn_pauseMenuChecks; [] spawn player_onPause; _dummy = ['Init', _this] execVM '\ca\ui\scripts\pauseLoadinit.sqf';"; /*diag_log[diag_tickTime,'RscDisplayMPInterrupt'];*/
 	onUnload = "uiNamespace setVariable ['RscDisplayMPInterrupt', nil];['Unload', _this] execVM '\ca\ui\scripts\pauseOnUnload.sqf';";
-	onKeyDown = "_handle = if (!isNil 'DZE_FilterCheats') then {_this call DZE_FilterCheats} else {false}; _handle";
-
+	onKeyDown = FILTER_CHEATS;
+	
 	class controlsBackground {
 		class Mainback : RscPicture {
 			idc = 1104;

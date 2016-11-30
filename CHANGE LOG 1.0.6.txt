@@ -54,7 +54,8 @@
 [NEW] Death messages now use a PVEH instead of the unreliable MPHit. Added localization, more causes of death, systemChat and dynamicText killfeed options. @ebaydayz
 [NEW] Parachute can now auto open at a set height during HALO jump. Altitude and speed meter can also be enabled. See configVariables.sqf. @ebaydayz
 [NEW] Added hatch, fold and ramp animation UserActions to ArmoredSUV, AH1Z, MV22 and UH1Y configs. @ebaydayz
-[NEW] VON in side and global is now blocked by default. See configVariables.sqf to change blocked VON channels. @icomrade
+[NEW] VON in side and global is now blocked by default. See configVariables.sqf to change blocked VON channels. @icomrade @ebayShopper
+[NEW] Arma cheat input (LeftShift + NumPad-) is now blocked by default to prevent abuse of FPS cap and EndMission commands for duping. @icomrade
 
 [CHANGED] Combattimeout now uses diag_tickTime instead of time.
 [CHANGED] AmmoBoxSmall_556/762 is replaced with DZ_AmmoBoxUS/RU/EU/CZ and MedBox0 is replaced with DZ_MedBox (new model)

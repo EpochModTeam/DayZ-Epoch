@@ -162,6 +162,7 @@ if (!isDedicated) then {
 	// EPOCH ADDITIONS
 	autoRunOff = {autoRunActive = false; terminate autoRunThread; player playActionNow "Stop";};
 	dog_findTargetAgent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
+	dze_filterCheats = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_filterCheats.sqf";
 	dze_isnearest_player = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_isNearestPlayer.sqf";
 	dze_buildChecks = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_buildChecks.sqf";
 	dze_requiredItemsCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_requiredItemsCheck.sqf";
@@ -692,44 +693,6 @@ FNC_GetSetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\f
 FNC_GetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getPos.sqf";
 dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_ejectPlayer.sqf";
 dayz_groupInvite = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\handleInvite.sqf";
-
-DZE_FilterCheats = {
-	#include "\ca\editor\Data\Scripts\dikCodes.h"
-	_dik = _this select 1;
-	_shift = _this select 2;
-	_voiceLocked = (ctrlShown  ((FindDisplay 55) displayCtrl 101));
-	_textBoxShown = (ctrlShown  ((FindDisplay 24) displayCtrl 101));
-	//we need to check inputAction as well since ArmA is soooooo reliable that dik codes don't work with double tap or combination ActionKey mappings...
-	// Additionally inputAction does not work in dialogs, such as the escape menu, that are not the main display.
-	_channelChange = ((_dik in DayZ_channelChangeKeys) || {(inputAction "PrevChannel") > 0} || {(inputAction "NextChannel") > 0});
-	_inputActionCheck = ({(inputAction _x) > 0} count ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"]) > 0;
-	_isVoiceChat = ((_dik in dayz_voiceControls || _inputActionCheck) && {ctrlText (findDisplay 63 displayCtrl 101) in DZE_DisabledChannels}); //getting display directly from _this select 0 isn't reliable for chat channels!
-	_ChannelChangeWithVoice = ((_voiceLocked && _channelChange) || {_voiceLocked && _textBoxShown && ((_dik == DIK_DOWN) || (_dik == DIK_UP))});
-	if ((_dik == DIK_NUMPADMINUS && _shift) || _isVoiceChat || _ChannelChangeWithVoice) then {
-		if (!_isVoiceChat) then {call player_forceSave;};
-		disableUserInput true;disableUserInput true;
-		[_isVoiceChat, _ChannelChangeWithVoice] spawn { //disable input, this is unfortunately the only way to stop cheat input
-			_testTime = diag_tickTime;
-			CheatsDisabled = _testTime;
-			if (_this select 0 || _this select 1) then {
-				if (_this select 0) then {
-					titleText [(Format ["No voice chat in: %1", DZE_DisabledChannels]), "PLAIN", 1];
-				} else {
-					titleText ["You may not change chat channels while VON is active!", "PLAIN", 1];
-				};
-				uiSleep 2;
-			} else {
-				titleText ["DO NOT ENTER CHEATS, WAIT 5 SECONDS TO CONTINUE!", "PLAIN", 1];
-				uiSleep 5;
-			};
-			if (!r_player_unconsciousInputDisabled && CheatsDisabled == _testTime) then {
-				//weird disableuserInput behavior, enable input, disable and reenable to prevent the last key press being input after re-enable
-				disableUserInput false;disableUserInput true;disableUserInput false;disableUserInput false;
-			};
-		};
-	};
-	(_isVoiceChat || _ChannelChangeWithVoice);
-};
 
 player_sumMedical = {
 	private["_character","_wounds","_legs","_arms","_medical","_status"];

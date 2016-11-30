@@ -684,10 +684,7 @@ if (!isDedicated) then {
 	dayz_getout = objNull;
 	dayz_getoutTime = 0;
 	dayz_HitBy = objNull;
-	dayz_voiceControls = [];
-	DayZ_channelChangeKeys = [];
-	{dayz_voiceControls = dayz_voiceControls + (actionKeys _x)} count ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
-	{DayZ_channelChangeKeys = DayZ_channelChangeKeys + (actionKeys _x)} count ["NextChannel","PrevChannel"];
+	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
 
 	// EPOCH ADDITIONS
 	if (isNil "DZE_BackpackAntiTheft") then {DZE_BackpackAntiTheft = false;};

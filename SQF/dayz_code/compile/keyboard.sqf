@@ -43,6 +43,10 @@ if (isNil "keyboard_keys") then {
 		};
 		_handled = true;
 	};
+	_filterCheat = {
+		//Overriding default engine handling does not stop cheat input, need manual disableUserInput too
+		_handled = [displayNull,_dikCode,_shiftState] call dze_filterCheats;
+	};
 	_openGroups = {
 		if (dayz_requireRadio && !("ItemRadio" in items player)) then {
 			localize "STR_EPOCH_NEED_RADIO" call dayz_rollingMessages;
@@ -144,7 +148,10 @@ if (isNil "keyboard_keys") then {
     };
     // TODO: left/right, when gear open: onKeyDown = "[_this,'onKeyDown',0,107,0,107] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
     _noise = {
-        if (diag_ticktime - dayz_lastCheckBit > 10) then {
+		//Overriding default engine handling does not stop combination binds, need manual disableUserInput too
+		_handled = [displayNull,_dikCode,_shiftState] call dze_filterCheats;
+		
+        if (diag_ticktime - dayz_lastCheckBit > 10 && !(_dikCode in channel_keys)) then {
             dayz_lastCheckBit = diag_ticktime;
             [player,20,true,(getPosATL player)] call player_alertZombies;
         };
@@ -245,6 +252,10 @@ if (isNil "keyboard_keys") then {
     };
 
     keyboard_keys = [];
+	channel_keys = [];
+	voice_keys = [];
+	{voice_keys = voice_keys + (actionKeys _x)} count voice_actions;
+	{channel_keys = channel_keys + (actionKeys _x)} count ["NextChannel","PrevChannel"];
     keyboard_keys resize 256;
     [[DIK_ESCAPE], _cancelBuild] call _addArray;
 	[[DIK_INSERT], {DZE_Q_alt = true;}] call _addArray;
@@ -255,6 +266,7 @@ if (isNil "keyboard_keys") then {
 	[[DIK_Q], {DZE_4 = true;}] call _addArray;
 	[[DIK_E], {DZE_6 = true;}] call _addArray;
 	[[DIK_0], _autoRun] call _addArray;
+	[[DIK_NUMPADMINUS], _filterCheat] call _addArray;
 	[[DIK_SPACE], {DZE_5 = true;}] call _addArray;
 	[actionKeys "User6", {DZE_F = true;}] call _addArray;
 	[actionKeys "User7", {DZE_Q_ctrl = true;}] call _addArray;
@@ -280,9 +292,16 @@ if (isNil "keyboard_keys") then {
     [actionKeys "MoveBack", _interrupt] call _addArray;
     [actionKeys "TurnLeft", _interrupt] call _addArray;
     [actionKeys "TurnRight", _interrupt] call _addArray;
-    [actionKeys "PushToTalk", _noise] call _addArray;
+	[actionKeys "PushToTalk", _noise] call _addArray;
+	[actionKeys "PushToTalkAll", _noise] call _addArray;
+	[actionKeys "PushToTalkCommand", _noise] call _addArray;
+	[actionKeys "PushToTalkDirect", _noise] call _addArray;
+	[actionKeys "PushToTalkGroup", _noise] call _addArray;
+	[actionKeys "PushToTalkSide", _noise] call _addArray;
+	[actionKeys "PushToTalkVehicle", _noise] call _addArray;
     [actionKeys "VoiceOverNet", _noise] call _addArray;
-    [actionKeys "PushToTalkDirect", _noise] call _addArray;
+	[actionKeys "NextChannel", _noise] call _addArray;
+	[actionKeys "PrevChannel", _noise] call _addArray;
     [actionKeys "Chat", _noise] call _addArray;
     [actionKeys "User20", _journal] call _addArray;
     [actionKeys "Diary", _journal] call _addArray;
@@ -310,12 +329,10 @@ if (isNil "keyboard_keys") then {
 	if (!isNil "bis_fnc_halo_keydown_eh") then {bis_fnc_halo_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_keydown;"];}; // halo in progress
 };
 
-_CheatHandled = _this call DZE_FilterCheats;
-
 if (r_player_unconsciousInputDisabled) exitWith {true};
 _code = keyboard_keys select _dikCode;
 if (!isNil "_code") then {
     call _code;
 };
 
-(_handled || _CheatHandled);
+_handled

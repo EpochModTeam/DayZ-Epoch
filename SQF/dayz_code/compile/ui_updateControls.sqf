@@ -3,11 +3,6 @@ private ["_holdBreath","_turboKey"];
 //Sleep required for actionKeys to update after controls dialog closes
 uiSleep 1;
 
-dayz_voiceControls = [];
-DayZ_channelChangeKeys = [];
-{dayz_voiceControls = dayz_voiceControls + (actionKeys _x)} count ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
-{DayZ_channelChangeKeys = DayZ_channelChangeKeys + (actionKeys _x)} count ["NextChannel","PrevChannel"];
-
 //Refresh keyboard_keys after controls change
 if (_this) then {
 	keyboard_keys = nil;
