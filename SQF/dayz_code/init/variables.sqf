@@ -690,6 +690,7 @@ if (!isDedicated) then {
 	if (isNil "DZE_BackpackAntiTheft") then {DZE_BackpackAntiTheft = false;};
 	if (isNil "DZE_requireplot") then {DZE_requireplot = 1;};
 	if (isNil "DZE_StaticConstructionCount") then {DZE_StaticConstructionCount = 0;};
+	if (toLower DZE_DeathMsgChat in ["global","side"]) then {enableRadio true;}; //Needed for scripted global chat to show, doesn't seem to have any adverse effects
 	autoRunActive = false;
 	DZE_AntiWallCounter = 0;
 	DZE_myHaloVehicle = objNull;
