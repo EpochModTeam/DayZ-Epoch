@@ -16341,7 +16341,7 @@
 			<German>%1 ist der Gruppe beigetreten.</German>
 		</Key>
 		<Key ID="STR_EPOCH_REJOINED_GROUP">
-			<English>Rejoined %1's group</English>
+			<English>You have rejoined %1's group.</English>
 			<German>Erneutes Beitreten von %1's Gruppe</German>
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_NEW">
