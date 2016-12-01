@@ -112,6 +112,8 @@ GitHub Contributors (In order of most commits)
 * AirwavesMan - https://github.com/AirwavesMan
 * Raziel23x - https://github.com/Raziel23x
 * strikerforce - https://github.com/strikerforce
+* ndavalos - https://github.com/ndavalos
+* SmokeyBR - https://github.com/SmokeyBR
 
 --------------------------
 Special thanks
