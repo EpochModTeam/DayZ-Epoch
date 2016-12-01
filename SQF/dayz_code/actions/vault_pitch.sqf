@@ -143,7 +143,7 @@ if(!_cancel) then {
 			_tent setVariable ["CharacterID",_combination,true];
 			_tent setVariable ["OEMPos",_location,true];
 
-			PVDZ_obj_Publish = [_combination,_tent,[_dir,_location,dayz_playerUID],"VaultStorageLocked"];
+			PVDZ_obj_Publish = [_combination,_tent,[_dir,_location,dayz_playerUID],[]];
 			publicVariableServer  "PVDZ_obj_Publish";
 	
 			format[localize "str_epoch_player_179",_combination] call dayz_rollingMessages;
