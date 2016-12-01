@@ -11803,37 +11803,6 @@
 			<French>Vous n'avez pas assez de place dans votre ceinture.</French>
 			<Czech>Nemáte dostatek místa na Vašem opasku na nářadí.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_108">
-			<English>Vault pitching already in progress.</English>
-			<German>Platzieren des Tresors bereits im Gange.</German>
-			<Russian>Сейф уже устанавливается.</Russian>
-			<Dutch>Kluis installatie is al bezig.</Dutch>
-			<French>L'installation du coffre fort est déjà en cours.</French>
-			<Czech>Pokládání sejfu již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_109">
-			<English>Planning construction stand still 5 seconds to build.</English>
-			<German>Platzieren des Tresors gestartet, warte 5 Sekunden um den Aufbau zu starten.</German>
-			<Russian>Планирование строительства стойте на месте 5 секунд, чтобы построить.</Russian>
-			<Dutch>Het bouwen wordt voorbereid, sta 5 seconden stil om te bouwen.</Dutch>
-			<French>Planification de la construction, restez immobile 5 secondes pour construire.</French>
-			<Czech>Pokládání sejfu začalo, vyčkejte 5 sekund pro postavení.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_110">
-			<English>You cannot place a Safe here. The area must be flat, and free of other objects</English>
-			<German>Du kannst hier kein Tresor aufbauen. Der Untergrund muss flach und frei von Hindernissen sein</German>
-			<Russian>Вы не можете разместить сейф здесь. Область должна быть плоской, и свободной от других объектов</Russian>
-			<French>Vous ne pouvez pas placer le coffre fort ici. L'endroit doit être plat et dégagé.</French>
-			<Czech>Zde nemůžete postavit sejf. Místo musí být rovné a bez objektů</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_111">
-			<English>Canceled construction of Safe.</English>
-			<German>Platzieren des Tresors abgebrochen.</German>
-			<Russian>Строительство сейфа отменено.</Russian>
-			<Dutch>Het bouwen van de kluis is stopgezet.</Dutch>
-			<French>Mise en place du coffre fort annulée.</French>
-			<Czech>Stavění sejfu zrušeno.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_115">
 			<English>You cannot lock this %1, you do not know the combination.</English>
 			<German>Du kannst nicht diese(n) %1 abschließen, da du nicht die Kombination kennst.</German>
@@ -12154,13 +12123,6 @@
 			<Russian>%1 был снят с буксира.</Russian>
 			<Dutch>%1 is losgemaakt van de sleepwagen.</Dutch>
 			<Czech>%1 byl odháknut z odtahového vozidla.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_179">
-			<English>You have setup your Safe. Combination is %1</English>
-			<German>Dein Tresor wurde aufgestellt. Die Kombination lautet: %1</German>
-			<Russian>Вы установили свой сейф. Комбинация %1</Russian>
-			<Dutch>Je hebt je kluis geinstalleerd. De code is %1</Dutch>
-			<Czech>Nastavil jste svůj sejf. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_180">
 			<English>Bought %3 for %1 %2.</English>

@@ -6,7 +6,7 @@ _characterID =		_this select 0;
 _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _inventory = 		_this select 3;
-if (typeName _inventory != "ARRAY") then {_inventory = [];}; //Temp fix for error in vault_pitch, player_build.sqf in 1.0.6 release
+if (typeName _inventory != "ARRAY") then {_inventory = [];}; //Temp fix for error in player_build.sqf in 1.0.6 release
 _type = typeOf _object;
 
 if ([_object, "Server"] call check_publishobject) then {
