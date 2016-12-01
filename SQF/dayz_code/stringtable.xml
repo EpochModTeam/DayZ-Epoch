@@ -11007,12 +11007,15 @@
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_NO_CHEATS">
 			<English>Do not enter cheats. Wait five seconds to continue.</English>
+			<German>Keine Eingabe von Cheats! Warte 5 Sekunden.</German>
 		</Key>
 		<Key ID="STR_EPOCH_NO_VOICE">
 			<English>No voice in %1. Wait five seconds to continue.</English>
+			<German>Sprechen im %1 wurde blockiert, warte 5 Sekunden.</German>			
 		</Key>
 		<Key ID="STR_EPOCH_NO_CHANNEL_SWITCH">
 			<English>No switching channels while VON is active. Wait five seconds to continue.</English>
+			<German>Du kannst nicht zwischen den Kanälen wechseln solange VON aktiviert ist, warte 5 Sekunden.</German>				
 		</Key>
 		<Key ID="str_success_gutted_zombie">
 			<English>%1 has been gutted, zombie parts are now on the carcass</English>
