@@ -1,36 +1,26 @@
-private ["_isVehicle","_configSrcVeh","_capacitySrc","_nameTextSrc","_started","_finished","_animState","_isMedic","_newFuel","_abort","_newFuelSrc","_canSize","_vehicle","_configVeh","_capacity","_nameText","_isOk","_vehicleSrc","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
+private ["_isFuelTruck","_fuelTruckCapacity","_started","_finished","_animState","_isMedic","_newFuel","_abort","_newFuelSrc","_canSize","_vehicle","_configVeh","_capacity","_nameText","_fuelTruck","_findNearestVehicle"];
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-_isVehicle = false;
-
-_vehicleSrc = 	_this select 3;
-
+_fuelTruck = _this select 3;
 _abort = false;
 
-if(!(isNull _vehicleSrc)) then {
-
-	_isVehicle = ((_vehicleSrc isKindOf "AllVehicles") && !(_vehicleSrc isKindOf "Man"));
+if (!isNull _fuelTruck) then {
+	_isFuelTruck = true;
 	// If fuel source is vehicle get actual capacity
-	_configSrcVeh = 	configFile >> "cfgVehicles" >> TypeOf(_vehicleSrc);
-	_capacitySrc = 	getNumber(_configSrcVeh >> "fuelCapacity");
-	_nameTextSrc = 	getText(_configSrcVeh >> "displayName");
+	_fuelTruckCapacity = getNumber (configFile >> "cfgVehicles" >> typeOf _fuelTruck >> "fuelCapacity");
+} else {
+	_isFuelTruck = false;
 };
 
-// Get all nearby vehicles within 30m
-_findNearestVehicles = nearestObjects [player, ["AllVehicles"], 30];
 _findNearestVehicle = [];
 {
-	//diag_log ("FILL = " + str(_x) + " = " + str(_vehicleSrc));
-	if ((alive _x) && {_x != _vehicleSrc} && {!(_x isKindOf "Man")}) exitWith {
+	if ((alive _x) && {_x != _fuelTruck} && {!(_x isKindOf "Man")}) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
-} count _findNearestVehicles;
-		
-_IsNearVehicle = count (_findNearestVehicle);
+} count (nearestObjects [player, ["AllVehicles"], 30]);
 
-if(_IsNearVehicle >= 1) then {
-
+if (count _findNearestVehicle >= 1) then {
 	// select the nearest one
 	_vehicle = _findNearestVehicle select 0;
 
@@ -39,10 +29,8 @@ if(_IsNearVehicle >= 1) then {
 	_capacity = 	getNumber(_configVeh >> "fuelCapacity");
 	_nameText = 	getText(_configVeh >> "displayName");
 
-	_isOk = true;
 	// perform fuel up
-	while {_isOk} do {
-
+	while {true} do {
 		// qty to add per loop
 		_canSize = (_capacity / 10);
 	
@@ -87,15 +75,14 @@ if(_IsNearVehicle >= 1) then {
 			};
 			_abort = true;
 		} else {
-			if(_isVehicle) then {
-				_newFuelSrc = ((((fuel _vehicleSrc) * _capacitySrc) - _canSize) / _capacitySrc);
-				_newFuel = 	(((fuel _vehicle) * _capacity) + _canSize);
+			_newFuel = (((fuel _vehicle) * _capacity) + _canSize);
+			if (_isFuelTruck) then {
+				_newFuelSrc = ((((fuel _fuelTruck) * _fuelTruckCapacity) - _canSize) / _fuelTruckCapacity);
 				if (_newFuelSrc > 0) then {
-					if (local _vehicleSrc) then {
-						[_vehicleSrc,_newFuelSrc] call local_setFuel;
-						//_vehicleSrc setFuel _newFuelSrc;
+					if (local _fuelTruck) then {
+						[_fuelTruck,_newFuelSrc] call local_setFuel;
 					} else {
-						PVDZ_send = [_vehicleSrc,"SetFuel",[_vehicleSrc,_newFuelSrc]];
+						PVDZ_send = [_fuelTruck,"SetFuel",[_fuelTruck,_newFuelSrc]];
 						publicVariableServer "PVDZ_send";
 					};
 					if (_newFuel >= _capacity) then {_newFuel = 1; _abort = true;} else {_newFuel = (_newFuel / _capacity);};
@@ -110,13 +97,24 @@ if(_IsNearVehicle >= 1) then {
 				} else {
 					_abort = true;
 				};
+			} else {
+				//Filling near vehicle at gas station with generator
+				if (_newFuel >= _capacity) then {_newFuel = 1; _abort = true;} else {_newFuel = (_newFuel / _capacity);};
+				
+				if (local _vehicle) then {
+					[_vehicle,_newFuel] call local_setFuel;
+				} else {
+					PVDZ_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
+					publicVariableServer "PVDZ_send";
+				};
+				[player,"refuel",0,false] call dayz_zombieSpeak;
+				format[localize "str_epoch_player_132",_nameText,round(_newFuel*100)] call dayz_rollingMessages;
 			};
 		};
 
 		if(_abort) exitWith {};
 		uiSleep 1;	
 	};
-
 } else {
 	localize "str_epoch_player_27" call dayz_rollingMessages;
 };
