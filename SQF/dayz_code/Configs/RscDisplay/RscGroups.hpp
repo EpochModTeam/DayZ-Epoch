@@ -119,7 +119,7 @@ class DZ_GroupDialog {
 			colorBackground[] = {};
 			colorText[] = {};
 			text = "\z\addons\dayz_code\gui\grey\ui_background_controls_ca.paa";
-			moving = 1;
+			moving = 0;
 			x = .0;
 			y = .1;
 			w = 1.0;
