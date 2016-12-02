@@ -555,17 +555,16 @@ if (!isDedicated) then {
     };
 	
 	dayz_rollingMessages = {
-		private ["_displayText","_message"];
+		private "_showText";
 		disableSerialization;
-		_displayText = {
-			private ["_display","_textLine"];
-			4099999 cutrsc ["RSC_DZ_Messages","plain"];
-			_display = uinamespace getvariable "DZ_Messages";
-			_textLine = _display displayctrl 4099998;
-			_textLine ctrlsetstructuredtext (parsetext _this);
-			_textLine ctrlcommit 0;
+		_showText = {
+			private "_textLine";
+			4099999 cutRsc ["RSC_DZ_Messages","plain"];
+			_textLine = (uiNamespace getVariable "DZ_Messages") displayCtrl 4099998;
+			_textLine ctrlSetStructuredText (parseText _this);
+			_textLine ctrlCommit 0;
 		};
-		if (typeName _this == "ARRAY") exitWith {(_this select 0) call _displayText}; //Special or multi-line message
+		if (typeName _this == "ARRAY") exitWith {(_this select 0) call _showText}; //Special or multi-line message
 		if ((diag_ticktime - Message_1_time) < 5) then {
 			if ((time - Message_2_time) < 5) then {
 				Message_3 = Message_2;
@@ -583,14 +582,13 @@ if (!isDedicated) then {
 
 		Message_1 = _this;
 		Message_1_time = diag_ticktime;
-		//"PLAIN DOWN" fits a maximum of 3 lines on screen at once
+		//Cut and title text "PLAIN DOWN" fit a max of 3 lines on screen at once. They are still covered by gear and other dialogs even with \n\n.
 		//cutText [format ["%1\n%2\n%3", Message_1, Message_2, Message_3], "PLAIN DOWN"];
-		_message = format ["%1<br></br>%2<br></br>%3", Message_1, Message_2, Message_3];
-		_message call _displayText;
+		(format ["%1<br></br>%2<br></br>%3", Message_1, Message_2, Message_3]) call _showText;
 	};
 	
 	dayz_killFeed = {
-		private ["_distance","_icon","_message","_playerName","_sourceName"];
+		private ["_distance","_icon","_playerName","_sourceName"];
 		_playerName = _this select 1;
 		_sourceName = _this select 2;
 		_distance = _this select 4;
@@ -621,8 +619,7 @@ if (!isDedicated) then {
 
 		death_1 = format["<t size='.8' align='left' color='#a81e13'>%1 </t><img align='left' image='%2'/><t size='.8' align='left' color='#3FB07D'> %3 (%4m)</t>",_playerName,_icon,_sourceName,_distance];
 		death_1_time = diag_ticktime;
-		_message = format ["%1<br />%2<br />%3<br />%4",death_1,death_2,death_3,death_4];
-		[_message,safeZoneX,safeZoneY,10,0,0,8000] spawn BIS_fnc_dynamicText;
+		[(format ["%1<br />%2<br />%3<br />%4",death_1,death_2,death_3,death_4]),safeZoneX,safeZoneY,10,0,0,8000] spawn BIS_fnc_dynamicText;
 	};
 	
 	dayz_originalPlayer = player;
