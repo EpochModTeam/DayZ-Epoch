@@ -376,6 +376,7 @@ class z_hunter : zZombie_Base {
 	zombieLoot = ZombieHunter;
 	model = "\ca\characters2\civil\Woodlander\Woodlander";
 	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\woodlander\data\woodlander_v3_co.paa"};
 	
 	class Wounds {
 		tex[] = {};
