@@ -266,7 +266,7 @@ if (isNil "keyboard_keys") then {
 	[[DIK_Q], {DZE_4 = true;}] call _addArray;
 	[[DIK_E], {DZE_6 = true;}] call _addArray;
 	[[DIK_0], _autoRun] call _addArray;
-	[[DIK_NUMPADMINUS], _filterCheat] call _addArray;
+	[[DIK_NUMPADMINUS,DIK_LSHIFT], _filterCheat] call _addArray;
 	[[DIK_SPACE], {DZE_5 = true;}] call _addArray;
 	[actionKeys "User6", {DZE_F = true;}] call _addArray;
 	[actionKeys "User7", {DZE_Q_ctrl = true;}] call _addArray;
