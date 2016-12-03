@@ -140,7 +140,7 @@ sched_medical_effectsSlow = {
 			//[posCoef, vertCoef, horzCoef, bankCoef, interpolation]
             setCamShakeParams [0.02, 0.05, 0.1, 0.3, true];
             addCamShake [_strength, _duration, 0.4];
-            playSound "breath_1";
+            //playSound "breath_1";
 			
 			//Lets make sure the spawn ends 1 sec after the _duration timer this should provide a smooth transtion rather then a snap to focus.
             uiSleep _duration + 1;
