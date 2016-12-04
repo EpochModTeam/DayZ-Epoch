@@ -33,7 +33,7 @@ if ((vehicle player) == player) then {
 			_rID = if (DZE_permanentPlot) then { getPlayerUID _cTarget } else { _cTarget getVariable ["CharacterID","0"] };
 			_groupies = [];
 			{
-				if !(getPlayerUID _x == getPlayerUID player) then { _groupies set [count _groupies,getPlayerUID _x]; };
+				_groupies set [count _groupies,getPlayerUID _x];
 			} count (units (group player));
 			if ((!canbuild or isInTraderCity) && {alive _cTarget} && {isPlayer _cTarget} && {!(_rID in _friendlyTo) && !(_rID in _groupies)} && {(player distance _cTarget) < 12}) then {
 				localize "STR_EPOCH_PLAYER_316" call dayz_rollingMessages;
