@@ -74,7 +74,7 @@ if (DZE_permanentPlot) then {
 	_targetOwnerUID = if (isPlayer _target) then { getPlayerUID _target } else { _target getVariable ["ownerPUID","0"] };
 	_isOwner = (_playerUID == _targetOwnerUID);
 } else {
-	_targetOwnerUID = if (isPlayer _target) then { getPlayerUID _target } else { _target getVariable ["characterID","0"] };
+	_targetOwnerUID = _target getVariable ["characterID","0"];
 	_isOwner = (_characterID == _targetOwnerUID);
 };
 
