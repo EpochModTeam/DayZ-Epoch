@@ -110,7 +110,7 @@ if (count _medical > 0) then {
 	_playerObj setVariable ["unconsciousTime",(_medical select 10),true];
 	_playerObj setVariable ["messing",if (count _medical >= 14) then {(_medical select 13)} else {[0,0,0]},true];
 	_playerObj setVariable ["blood_testdone",if (count _medical >= 15) then {(_medical select 14)} else {false},true];
-	if (count _medical >= 12) then {
+	if (count _medical > 12) then {
 		_playerObj setVariable ["blood_type",(_medical select 11),true];
 		_playerObj setVariable ["rh_factor",(_medical select 12),true];
 //		diag_log [ "Character data: blood_type,rh_factor,testdone=",
