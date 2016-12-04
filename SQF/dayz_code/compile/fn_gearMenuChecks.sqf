@@ -1,4 +1,4 @@
-private ["_exit","_nearestObjects","_friendlies","_rID","_display","_cTarget","_dis","_ctFriendlies","_groupies","_playerUID"];
+private ["_exit","_nearestObjects","_friendlies","_rID","_display","_cTarget","_dis","_groupies","_friendlyTo"];
 
 // players inside vehicle can always access its gear
 if ((vehicle player) == player) then {
@@ -32,9 +32,8 @@ if ((vehicle player) == player) then {
 			_friendlyTo = player getvariable ["friendlyTo",[]];
 			_rID = if (DZE_permanentPlot) then { getPlayerUID _cTarget } else { _cTarget getVariable ["CharacterID","0"] };
 			_groupies = [];
-			_playerUID = getPlayerUID player;
 			{
-				if !(getPlayerUID _x == _playerUID) then { _groupies set [count _groupies,getPlayerUID _x]; };
+				if !(getPlayerUID _x == getPlayerUID player) then { _groupies set [count _groupies,getPlayerUID _x]; };
 			} count (units (group player));
 			if ((!canbuild or isInTraderCity) && {alive _cTarget} && {isPlayer _cTarget} && {!(_rID in _friendlyTo) && !(_rID in _groupies)} && {(player distance _cTarget) < 12}) then {
 				localize "STR_EPOCH_PLAYER_316" call dayz_rollingMessages;
