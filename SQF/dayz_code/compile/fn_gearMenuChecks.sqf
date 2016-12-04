@@ -1,3 +1,4 @@
+private ["_exit","_nearestObjects","_rID","_display","_cTarget","_dis","_friendlyTo","_lastSave","_startTime"];
 
 // players inside vehicle can always access its gear
 if ((vehicle player) == player) then {
