@@ -232,8 +232,8 @@ _clientID publicVariableClient "PVCDZ_plr_plantSpawner";
 _playerObj setVariable ["lastTime",time];
 
 //set server-side inventory variable to monitor player gear
-if ((count _inventory) > 1) then {
-	_playerObj setVariable["ServerMagArray",[_inventory select 1, _inventory select 2], false];
+if (count _inventory > 2) then {
+	_playerObj setVariable["ServerMagArray",[_inventory select 1,_inventory select 2], false];
 };
 
 
