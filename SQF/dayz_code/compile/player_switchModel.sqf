@@ -1,4 +1,4 @@
-//private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_newBackpackType","_backpackWpn","_backpackMag","_backpackWpnTypes","_backpackWpnQtys","_countr","_backpackmagTypes","_backpackmagQtys","_display","_createSafePos","_wpnType","_ismelee","_rndx","_rndy"];
+//private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_newBackpackType","_backpackWpn","_backpackMag","_backpackWpnTypes","_backpackWpnQtys","_countr","_backpackmagTypes","_backpackmagQtys","_display","_wpnType","_ismelee","_rndx","_rndy"];
 private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader"];
 _class = _this;
 if (gear_done) then {disableUserInput true;disableUserInput true;};
@@ -74,7 +74,7 @@ _leader = (player == leader _oldGroup);
 //Create New Character
 //[player] joinSilent grpNull;
 _group = createGroup west;
-_newUnit = _group createUnit [_class,getMarkerPos "respawn_west",[],0,"NONE"];
+_newUnit = _group createUnit [_class,respawn_west_original,[],0,"NONE"];
 _newUnit setDir _dir;
 {_newUnit removeMagazine _x;} count magazines _newUnit;
 removeAllWeapons _newUnit;
@@ -110,12 +110,10 @@ _switchUnit = {
 	setPlayable _newUnit;
 	selectPlayer _newUnit;
 	//Switch the units
-	//_createSafePos = [(getMarkerPos "respawn_west"), 2, 100, 0, 1, 20, 0] call BIS_fnc_findSafePos;
-	_createSafePos = getMarkerPos "respawn_west";
 	_rndx = floor(random 100);
 	_rndy = floor(random 100);
-	_oldUnit setPosATL [(_createSafePos select 0) + _rndx, (_createSafePos select 1) + _rndy, 0];
-	if (surfaceIsWater _createSafePos) then {
+	_oldUnit setPosATL [(respawn_west_original select 0) + _rndx, (respawn_west_original select 1) + _rndy, 0];
+	if (surfaceIsWater respawn_west_original) then {
 		//Prevent swimming in ground glitch if respawn is in water
 		_newUnit setPosATL [_position select 0,_position select 1,(_position select 2)+.1];
 	} else {

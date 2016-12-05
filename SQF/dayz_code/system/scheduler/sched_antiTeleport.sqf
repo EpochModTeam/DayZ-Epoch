@@ -7,7 +7,7 @@
 
 sched_antiTP_init = {
 	if (dayz_antihack == 1) then { diag_log [ diag_ticktime, __FILE__, "Anti Teleport inited"]; };
-	[dayz_antihack == 1, [], 0, 0, objNull]
+	[dayz_antihack == 1, [], 0, 0, objNull, respawn_west_original]
 };
 
 sched_antiTP = {
@@ -19,6 +19,7 @@ sched_antiTP = {
 	_lastheight = _this select 2;
 	_lasttime = _this select 3;
 	_lastVehicle = _this select 4;
+	_debug = _this select 5;
 
 	if (((_antihack) and {(typeName player == "OBJECT")}) AND {((player in playableUnits) AND {(alive player)})}) then {
 		if (count _lastpos != 3) then {
@@ -31,7 +32,6 @@ sched_antiTP = {
 		_distance = _lastpos distance _curpos;
 		_curtime = diag_ticktime;
 		_difftime = _curtime - _lasttime;
-		_debug = getMarkerpos "respawn_west";
 
 		if ((_distance > 10) OR {(_difftime > 1)}) then {
 			_curheight = (ATLtoASL _curpos) select 2;

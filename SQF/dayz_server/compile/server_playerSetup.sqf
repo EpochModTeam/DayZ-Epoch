@@ -1,4 +1,4 @@
-private ["_characterID","_playerObj","_spawnSelection","_inventory","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_debug","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID","_lastInstance"];
+private ["_characterID","_playerObj","_spawnSelection","_inventory","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID","_lastInstance"];
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
@@ -69,10 +69,9 @@ if (count _Achievements == 0) then {_Achievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 if (count _worldspace > 0) then {
 	_position = _worldspace select 1;
-	if (count _position < 3) then {_randomSpot = true;}; //prevent debug world!
+	if (count _position < 3) exitWith {_randomSpot = true;}; //prevent debug world!
 	
-	_debug = getMarkerpos "respawn_west";
-	_distance = _debug distance _position;
+	_distance = respawn_west_original distance _position;
 	if (_distance < 2000) then {_randomSpot = true;};
 	
 	_distance = [0,0,0] distance _position;
