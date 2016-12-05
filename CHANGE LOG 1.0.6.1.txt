@@ -1,5 +1,6 @@
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper
-[FIXED] Issue where Arma cheats could still be entered under certain conditions without pressing LeftShift at the same time as NumPadMinus. @ebayShopper 
+[FIXED] Issue where Arma cheats could still be entered under certain conditions without pressing LeftShift at the same time as NumPadMinus. @ebayShopper
+[FIXED] Undefined variable dayz_clientPreload error on main menu during intro.sqs. #1810 @ndavalos @ebayShopper
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.
