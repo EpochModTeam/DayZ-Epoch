@@ -131,6 +131,14 @@ if (!_isNew) then {
 
 _isHiveOk = if (_hiveVer >= dayz_hiveVersionNo) then {true} else {false}; //EDITED
 
+/*
+	if (count _inventory > 2 && {typeName (_inventory select 2) != "STRING"}) then {
+		//Pre 1.0.6 character with Zupa 3.0 coins where dayz_onBack should be. Wipe coins and log playerID and amount to RPT.
+		diag_log format["%1 - Updating pre 1.0.6 character inventory to add dayz_onBack. Coins have been wiped for PlayerID: %2  PreviousCoins:%3",__FILE__,_playerID,(_inventory select 2)];
+		_inventory set [2,""];
+	};
+*/
+
 PVCDZ_plr_Login = [_charID,_inventory,_backpack,_survival,_isNew,dayz_versionNo,_model,_isHiveOk,_newPlayer,_isInfected,_group,_CharacterCoins,_playerCoins,_BankCoins];
 (owner _playerObj) publicVariableClient "PVCDZ_plr_Login";
 
