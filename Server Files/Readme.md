@@ -2,7 +2,7 @@ Note: Both server and client should be updated to current A2OA stable 1.63.13112
 
 ##Basic Install Guide
 
-1. Install or update your [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]. It is recommended that you install all previous Visual C++ Redistributables (x86 versions) [[found on this page](https://support.microsoft.com/en-us/kb/2977003)].
+1. Install or update your [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]. Yopu MUST install all previous Visual C++ Redistributables (x86 versions) [[found on this page](https://support.microsoft.com/en-us/kb/2977003)].
 
 2. Download both client and server files and extract to the root `Arma 2 Operation Arrowhead` folder. Example: `C:\Program Files (x86)\Steam\steamapps\common\Arma 2 Operation Arrowhead`. On some Windows systems you may need to "UnBlock" the dll files. Right-click the file, Properties and click "Unblock".
 
