@@ -3,7 +3,7 @@ private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_curr
 "_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
 "_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
 "_magazines","_characterID","_charPos","_isInVehicle","_name","_isNewMed",
-"_isNewPos","_distance","_newPos","_count","_maxDist","_relocate","_playerUID"];
+"_isNewPos","_inDebug","_newPos","_count","_maxDist","_relocate","_playerUID"];
 //[player,array]
 
 _character = _this select 0;
@@ -15,7 +15,7 @@ _isInVehicle = vehicle _character != _character;
 _timeSince = 0;
 _humanity = 0;
 _name = if (alive _character) then {name _character} else {"Dead Player"};
-_distance = (respawn_west_original distance _charPos) < 1500;
+_inDebug = (respawn_west_original distance _charPos) < 1500;
 
 if (_character isKindOf "Animal") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + _name + " is an Animal class");
@@ -25,9 +25,9 @@ if (isNil "_characterID") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + _name + " has nil characterID");
 };
 
-if (_characterID == "0" or _distance) exitWith {
-	if (_distance) then {
-		diag_log format["INFO: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3 (May be logging in or changing clothes)",_name,_characterID,_charPos];
+if (_characterID == "0" or _inDebug) exitWith {
+	if (_inDebug) then {
+		diag_log format["INFO: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3 (May be relogging or changing clothes)",_name,_characterID,_charPos];
 	} else {
 		diag_log ("ERROR: Cannot Sync Character " + _name + " as no characterID");
 	};
