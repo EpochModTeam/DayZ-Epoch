@@ -2,8 +2,7 @@ private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_curr
 "_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_playerBackp",
 "_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
 "_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
-"_magazines","_characterID","_charPos","_isInVehicle","_name","_isNewMed",
-"_isNewPos","_inDebug","_newPos","_count","_maxDist","_relocate","_playerUID"];
+"_magazines","_characterID","_charPos","_isInVehicle","_name","_inDebug","_newPos","_count","_maxDist","_relocate","_playerUID"];
 //[player,array]
 
 _character = _this select 0;
@@ -32,11 +31,6 @@ if (_characterID == "0" or _inDebug) exitWith {
 		diag_log ("ERROR: Cannot Sync Character " + _name + " as no characterID");
 	};
 };
-
-//Check for server initiated updates
-_isNewMed = _character getVariable ["medForceUpdate",false]; //Med update is forced when a player receives some kind of med incident
-_isNewPos = _character getVariable ["posForceUpdate",false]; //Med update is forced when a player receives some kind of med incident
-//diag_log ("Starting Save... MED: " + str(_isNewMed) + " / POS: " + str(_isNewPos)); sleep 0.05;
 
 //Check for player initiated updates
 _playerPos =	[];
@@ -119,7 +113,6 @@ _character setVariable ["posForceUpdate",false,true];
 _backpack = unitBackpack _character;
 _playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack];
 
-//diag_log ("medical..."); sleep 0.05;
 if (!_usec_Dead) then {
 	//diag_log ("medical check..."); sleep 0.05;
 	_medical = _character call player_sumMedical;
