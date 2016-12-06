@@ -492,8 +492,6 @@ switch (dayz_presets) do {
 	};
 };
 
-respawn_west_original = getMarkerPos "respawn_west"; //Prevent problems caused by cheaters moving respawn_west marker with setMarkerPos or deleteMarker
-
 switch (toLower worldName) do {
 	case "napf";
 	case "sauerland" : {dayz_minpos = -1000; dayz_maxpos = 26000;};

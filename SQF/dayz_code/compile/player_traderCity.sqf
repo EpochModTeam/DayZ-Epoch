@@ -5,7 +5,7 @@ _showText = _this select 1;
 _enterORleave = _this select 2;
 
 // Do not show cutText when player changes clothes in trader area
-if ((dayz_lastClothesChange + 3 > diag_tickTime) or (player distance respawn_west_original < 100)) then {
+if ((dayz_lastClothesChange + 3 > diag_tickTime) or (player distance getMarkerPos "respawn_west" < 15)) then {
 	_showText = false;
 };
 

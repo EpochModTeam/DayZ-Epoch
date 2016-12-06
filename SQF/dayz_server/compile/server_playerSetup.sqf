@@ -1,4 +1,4 @@
-private ["_characterID","_playerObj","_spawnSelection","_inventory","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID","_lastInstance"];
+private ["_characterID","_playerObj","_spawnSelection","_inventory","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_debug","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID","_lastInstance"];
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
@@ -69,9 +69,10 @@ if (count _Achievements == 0) then {_Achievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0
 
 if (count _worldspace > 0) then {
 	_position = _worldspace select 1;
-	if (count _position < 3) exitWith {_randomSpot = true;}; //prevent debug world!
+	if (count _position < 3) then {_randomSpot = true;}; //prevent debug world!
 	
-	_distance = respawn_west_original distance _position;
+	_debug = getMarkerpos "respawn_west";
+	_distance = _debug distance _position;
 	if (_distance < 2000) then {_randomSpot = true;};
 	
 	_distance = [0,0,0] distance _position;
@@ -109,7 +110,7 @@ if (count _medical > 0) then {
 	_playerObj setVariable ["unconsciousTime",(_medical select 10),true];
 	_playerObj setVariable ["messing",if (count _medical >= 14) then {(_medical select 13)} else {[0,0,0]},true];
 	_playerObj setVariable ["blood_testdone",if (count _medical >= 15) then {(_medical select 14)} else {false},true];
-	if (count _medical > 12 && {typeName (_medical select 11) == "STRING"}) then { //Old character had no "messing" OR "messing" in place of blood_type
+	if (count _medical >= 12) then {
 		_playerObj setVariable ["blood_type",(_medical select 11),true];
 		_playerObj setVariable ["rh_factor",(_medical select 12),true];
 //		diag_log [ "Character data: blood_type,rh_factor,testdone=",
@@ -232,8 +233,8 @@ _clientID publicVariableClient "PVCDZ_plr_plantSpawner";
 _playerObj setVariable ["lastTime",time];
 
 //set server-side inventory variable to monitor player gear
-if (count _inventory > 2) then {
-	_playerObj setVariable["ServerMagArray",[_inventory select 1,_inventory select 2], false];
+if ((count _inventory) > 1) then {
+	_playerObj setVariable["ServerMagArray",[_inventory select 1, _inventory select 2], false];
 };
 
 

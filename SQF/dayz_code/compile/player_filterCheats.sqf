@@ -21,7 +21,7 @@ _channelChange = _micIcon && ((!isNull findDisplay 24 && _dik in [DIK_DOWN,DIK_U
 _blockVoice = _channelChange or ((_dik in voice_keys or (_inputAction1 > 0)) && (_channel in DZE_DisabledChannels));
 
 if (_dik == DIK_NUMPADMINUS) then {dayz_minusDownTime = diag_tickTime;};
-_blockCheat = (_dik == DIK_NUMPADMINUS && _shift) or (_dik == DIK_LSHIFT && (diag_tickTime - dayz_minusDownTime < 1));
+_blockCheat = (_dik == DIK_NUMPADMINUS && _shift) or (_dik == DIK_LSHIFT && (diag_tickTime - dayz_minusDownTime < 2));
 
 if (_blockCheat or _blockVoice) then {
 	if (_blockCheat) then {call player_forceSave;}; //Perform before disableUserInput to prevent reenable

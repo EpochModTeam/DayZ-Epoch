@@ -15,7 +15,7 @@ _isInVehicle = vehicle _character != _character;
 _timeSince = 0;
 _humanity = 0;
 _name = if (alive _character) then {name _character} else {"Dead Player"};
-_distance = (respawn_west_original distance _charPos) < 1500;
+_distance = (getMarkerpos "respawn_west" distance _charPos) < 1500;
 
 if (_character isKindOf "Animal") exitWith {
 	diag_log ("ERROR: Cannot Sync Character " + _name + " is an Animal class");

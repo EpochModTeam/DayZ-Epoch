@@ -3,6 +3,7 @@ disableSerialization;
 _timeOut = 0;
 _messTimer = 0;
 _lastTemp = dayz_temperatur;
+_debug = getMarkerpos "respawn_west";
 _isPZombie = player isKindOf "PZombie_VB";
 _radTimer = 0;
 
@@ -47,7 +48,7 @@ while {1 == 1} do {
 	//reset position
 	_randomSpot = true;
 	_tempPos = getPosATL player;
-	_distance = respawn_west_original distance _tempPos;
+	_distance = _debug distance _tempPos;
 	if (_distance < 2000) then {
 		_randomSpot = false;
 	};
