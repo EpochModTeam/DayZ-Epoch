@@ -848,7 +848,7 @@
 			<Czech>Prozkoumat tělo</Czech>
 		</Key>
 		<Key ID="str_actions_delete">
-			<English>Remove %1</English>
+			<English>Destroy %1</English>
 			<German>%1 abbauen</German>
 			<Russian>Уничтожить %1</Russian>
 			<French>Détruire %1</French>
@@ -1738,11 +1738,11 @@
 			<German>%1 bauen</German>
 		</Key>
 		<Key ID="str_upgrade">
-			<English>Upgrade %1</English>
-			<Russian>Улучшить %1</Russian>
-			<French>Améliorer la %1</French>
-			<Czech>Vylepšit %1</Czech>
-			<German>%1 erweitern</German>
+			<English>Upgrade</English>
+			<Russian>Улучшить</Russian>
+			<French>Améliorer la</French>
+			<Czech>Vylepšit</Czech>
+			<German>erweitern</German>
 		</Key>
 		<Key ID="str_bombAttach">
 			<English>Attach Carbomb</English>
@@ -11005,6 +11005,20 @@
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
+		<Key ID="STR_EPOCH_REMOVE">
+			<English>Remove %1</English>
+			<German>%1 abbauen</German>
+			<Russian>Уничтожить %1</Russian>
+			<French>Détruire %1</French>
+			<Czech>Zničit %1</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_UPGRADE">
+			<English>Upgrade %1</English>
+			<Russian>Улучшить %1</Russian>
+			<French>Améliorer la %1</French>
+			<Czech>Vylepšit %1</Czech>
+			<German>%1 erweitern</German>
+		</Key>
 		<Key ID="STR_EPOCH_NO_CHEATS">
 			<English>Do not enter cheats. Wait five seconds to continue.</English>
 			<German>Keine Eingabe von Cheats! Warte 5 Sekunden.</German>

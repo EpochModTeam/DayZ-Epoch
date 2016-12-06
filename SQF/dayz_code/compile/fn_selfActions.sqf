@@ -424,7 +424,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	
 	if (_player_deleteBuild) then {
 		if (s_player_deleteBuild < 0) then {
-			s_player_deleteBuild = player addAction [format[localize "str_actions_delete",_text], "\z\addons\dayz_code\actions\remove.sqf",_cursorTarget, 1, false, true];
+			s_player_deleteBuild = player addAction [format[localize "STR_EPOCH_REMOVE",_text], "\z\addons\dayz_code\actions\remove.sqf",_cursorTarget, 1, false, true];
 		};
 	} else {
 		player removeAction s_player_deleteBuild;
@@ -438,7 +438,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			if (s_player_upgradestorage < 0) then {
 				if (isText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "Upgrade" >> "create")) then {
 					_displayName = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
-					s_player_upgradestorage = player addAction [format[localize "str_upgrade",_displayName], "\z\addons\dayz_code\actions\object_upgradeStorage.sqf",_cursorTarget, 0, false, true];
+					s_player_upgradestorage = player addAction [format[localize "STR_EPOCH_UPGRADE",_displayName], "\z\addons\dayz_code\actions\object_upgradeStorage.sqf",_cursorTarget, 0, false, true];
 				};
 			};
 		} else {
@@ -853,7 +853,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			_upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
 			if (((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) && (count _upgrade) > 0) then {
 				s_player_lastTarget set [0,_cursorTarget];
-				s_player_upgrade_build = player addAction [format[localize "str_upgrade",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true];
+				s_player_upgrade_build = player addAction [format[localize "STR_EPOCH_UPGRADE",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true];
 			};
 		};
 	} else {
