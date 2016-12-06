@@ -1,3 +1,7 @@
+[FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. (updated ServerFiles with hotfix already released) @icomrade
+[FIXED] Error with object publishing when snap building is disabled. (updated ServerFiles with hotfix already released) @ebayShopper
+[FIXED] Error handling upgraded 1051 databases that resulted in a <null> value for "rh_factor" and array for "bloodtype" in character_data medical field. @ebayShopper
+[FIXED] Error in server_playerSetup that resulted in a <null> value for dayz_onBack in character_data inventory if player had no weapon on back. @ebayShopper 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper
 [FIXED] Issue where Arma cheats could still be entered under certain conditions without pressing LeftShift at the same time as NumPadMinus. @ebayShopper
