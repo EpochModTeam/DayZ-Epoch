@@ -56,11 +56,13 @@ if (_is6WheelType) then {
 
 		//get every damaged part no matter how tiny damage is!
 		_damagePercent = str(round(_damage * 100))+"% Damage";
-		if (_damage < 1 && {_damage > 0}) then { //Tempfix for issue where certain hitpoints on some vehicles do not get damaged and allow infinite removal
-			if ((_damage >= 0) and (_damage <= 0.25)) then {_color = "color='#00ff00'";}; //green
-			if ((_damage >= 0.26) and (_damage <= 0.50)) then {_color = "color='#ffff00'";}; //yellow
-			if ((_damage >= 0.51) and (_damage <= 0.75)) then {_color = "color='#ff8800'";}; //orange
-			if ((_damage >= 0.76) and (_damage <= 1)) then {_color = "color='#ff0000'";}; //red
+		if (_damage < 1 && _damage > 0) then { //Tempfix for issue where certain hitpoints on some vehicles do not get damaged and allow infinite removal
+			_color = switch true do {
+				case (_damage >= 0 && _damage <= 0.25): {"color='#00ff00'"}; //green
+				case (_damage > 0.25 && _damage <= 0.50): {"color='#ffff00'"}; //yellow
+				case (_damage > 0.50 && _damage <= 0.75): {"color='#ff8800'"}; //orange
+				case (_damage > 0.75 && _damage <= 1): {"color='#ff0000'"}; //red
+			};
 			_string = format[localize "str_actions_repair_01",_cmpt,_damagePercent];
 			_string = format["<t %1>%2</t>",_color,_string]; //Remove - Part
 			_handle = dayz_myCursorTarget addAction [_string, "\z\addons\dayz_code\actions\salvage.sqf",[_vehicle,_part,_x], 0, false, true];
