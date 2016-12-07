@@ -3,171 +3,204 @@
 /*
 item0[] = {"init",0,250,50.000000,-400.000000,150.000000,-350.000000,0.000000,"init"};
 item1[] = {"End",1,250,175.000000,-250.000000,275.000000,-200.000000,0.000000,"End"};
-item2[] = {"wait",4,218,-75.000000,0.000000,25.000000,50.000000,0.000000,"wait"};
-item3[] = {"Looking_for_Targ",2,250,-75.000000,75.000000,25.000000,125.000000,0.000000,"Looking for" \n "Target"};
+item2[] = {"wait",4,218,-75.000000,-50.000000,25.000000,0.000000,0.000000,"wait"};
+item3[] = {"Looking_for_Targ",2,250,-75.000000,25.000000,25.000000,75.000000,0.000000,"Looking for" \n "Target"};
 item4[] = {"Not_Alive",4,218,25.000000,375.000000,125.000000,425.000000,5.000000,"Not" \n "Alive"};
 item5[] = {"Nobody_Near",4,218,25.000000,525.000000,125.000000,575.000000,6.000000,"Nobody" \n "Near"};
-item6[] = {"loiter",4,218,-400.000000,0.000000,-300.000000,50.000000,0.000000,"loiter"};
-item7[] = {"Loiter",2,250,-400.000000,75.000000,-300.000000,125.000000,0.000000,"Loiter"};
+item6[] = {"loiter",4,218,-1225.000000,0.000000,-1125.000000,50.000000,0.000000,"loiter"};
+item7[] = {"Loiter",2,250,-1225.000000,75.000000,-1125.000000,125.000000,0.000000,"Loiter"};
 item8[] = {"",7,210,-29.000042,396.000000,-20.999958,404.000000,0.000000,""};
 item9[] = {"",7,210,-29.000040,470.999939,-20.999960,479.000061,0.000000,""};
 item10[] = {"true",8,218,-75.000000,-400.000000,25.000000,-350.000000,0.000000,"true"};
 item11[] = {"Begin",2,250,-75.000000,-150.000000,25.000000,-100.000000,0.000000,"Begin"};
-item12[] = {"",7,210,-29.000006,-29.000004,-20.999996,-20.999996,0.000000,""};
-item13[] = {"",7,210,-354.000092,-29.000004,-345.999908,-20.999996,0.000000,""};
-item14[] = {"",7,210,-329.000031,208.500000,-321.000000,216.500000,0.000000,""};
-item15[] = {"Has_Target",4,218,-150.000000,275.000000,-50.000000,325.000000,5.000000,"Has" \n "Target"};
-item16[] = {"Chase",2,250,-150.000000,375.000000,-50.000000,425.000000,0.000000,"Chase"};
-item17[] = {"Time_Check",4,218,50.000000,75.000000,150.000000,125.000000,1.000000,"Time" \n "Check"};
-item18[] = {"",7,210,-29.000006,208.500000,-20.999994,216.500000,0.000000,""};
-item19[] = {"",7,210,-29.000006,296.000000,-20.999996,304.000031,0.000000,""};
-item20[] = {"Time_Check",4,218,-275.000000,75.000000,-175.000000,125.000000,0.000000,"Time" \n "Check"};
-item21[] = {"Check",8,218,-300.000000,300.000000,-200.000000,350.000000,1.000000,"Check"};
-item22[] = {"No_Target",4,218,-400.000000,450.000000,-300.000000,500.000000,3.000000,"No" \n "Target"};
-item23[] = {"",7,210,-479.000000,471.000000,-471.000000,479.000000,0.000000,""};
-item24[] = {"",7,210,-479.000000,208.500000,-471.000000,216.500000,0.000000,""};
-item25[] = {"",7,210,221.000000,396.000000,229.000000,404.000000,0.000000,""};
-item26[] = {"",7,210,221.000000,471.000000,229.000000,479.000000,0.000000,""};
-item27[] = {"Cleanup_",2,250,175.000000,200.000000,275.000000,250.000000,0.000000,"Cleanup?"};
-item28[] = {"nobody_around",4,218,175.000000,-25.000000,275.000000,25.000000,0.000000,"nobody" \n "around"};
-item29[] = {"",7,210,-104.000023,471.000000,-95.999985,479.000000,0.000000,""};
-item30[] = {"cant_see",4,218,-275.000000,575.000000,-175.000000,625.000000,2.000000,"cant" \n "see"};
-item31[] = {"Finish_Move",2,250,-275.000000,650.000000,-175.000000,700.000000,0.000000,"Finish" \n "Move"};
-item32[] = {"finished",4,218,-425.000000,650.000000,-325.000000,700.000000,1.000000,"finished"};
-item33[] = {"",7,210,-479.000000,671.000000,-471.000000,679.000000,0.000000,""};
-item34[] = {"",7,210,-29.000002,671.000000,-20.999998,679.000000,0.000000,""};
-item35[] = {"",7,210,-404.000000,208.500000,-396.000000,216.500000,0.000000,""};
-item36[] = {"someone_here",4,218,300.000000,200.000000,400.000000,250.000000,0.000000,"someone" \n "here"};
-item37[] = {"wait",2,250,300.000000,125.000000,400.000000,175.000000,0.000000,"wait"};
-item38[] = {"time_up",4,218,300.000000,-25.000000,400.000000,25.000000,0.000000,"time" \n "up"};
-item39[] = {"",7,210,346.000000,95.999992,354.000000,104.000000,0.000000,""};
-item40[] = {"",7,210,221.000000,96.000008,229.000000,103.999977,0.000000,""};
-item41[] = {"Time_Check",4,218,425.000000,125.000000,525.000000,175.000000,0.000000,"Time" \n "Check"};
-item42[] = {"",7,210,346.000000,-79.000000,354.000000,-71.000000,0.000000,""};
-item43[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
-item44[] = {"too_long",4,218,-425.000000,725.000000,-325.000000,775.000000,0.000000,"too long"};
-item45[] = {"",7,210,-229.000000,746.000000,-221.000000,754.000000,0.000000,""};
-item46[] = {"",7,210,-479.000000,746.000000,-471.000000,754.000000,0.000000,""};
-item47[] = {"Reset_Targeting",2,250,-525.000000,325.000000,-425.000000,375.000000,0.000000,"Reset" \n "Targeting"};
-item48[] = {"true",8,218,-525.000000,250.000000,-425.000000,300.000000,0.000000,"true"};
-item49[] = {"deleted",4,218,425.000000,-25.000000,525.000000,25.000000,0.000000,"deleted"};
-item50[] = {"",7,210,471.000000,-79.000000,479.000000,-71.000000,0.000000,""};
-item51[] = {"",7,210,471.000000,95.999977,479.000000,104.000023,0.000000,""};
-item52[] = {"",7,210,-104.000000,596.000000,-95.999992,604.000000,0.000000,""};
-item53[] = {"player_check",4,218,-525.000000,75.000000,-425.000000,125.000000,2.000000,"player" \n "check"};
-item54[] = {"player_check",4,218,50.000000,0.000000,150.000000,50.000000,2.000000,"player" \n "check"};
-item55[] = {"is_Dedicated",4,218,50.000000,-250.000000,150.000000,-200.000000,5.000000,"is" \n "Dedicated"};
-item56[] = {"MoveCompleted_",4,218,-525.000000,-75.000000,-425.000000,-25.000000,3.000000,"MoveCompleted "};
-item57[] = {"Failed_Move",4,218,-675.000000,-100.000000,-575.000000,-50.000000,3.000000,"Failed Move"};
-item58[] = {"Target_Dead",4,218,-275.000000,500.000000,-175.000000,550.000000,3.000000,"Target Dead"};
-item59[] = {"",7,210,-479.000000,521.000000,-471.000000,529.000000,0.000000,""};
-item60[] = {"Start_Attack",4,218,-725.000000,175.000000,-625.000000,225.000000,0.000000,"Start Attack"};
-item61[] = {"End_Attack",4,218,-725.000000,100.000000,-625.000000,150.000000,0.000000,"End Attack"};
-item62[] = {"TargetMoved",4,218,-600.000000,0.000000,-500.000000,50.000000,3.000000,"TargetMoved"};
-item63[] = {"Not_moving",4,218,-700.000000,0.000000,-600.000000,50.000000,1.000000,"Not moving"};
-item64[] = {"TimeOut",8,218,-300.000000,375.000000,-200.000000,425.000000,2.000000,"TimeOut"};
-item65[] = {"No_Agent",4,218,25.000000,450.000000,125.000000,500.000000,5.000000,"No Agent"};
-item66[] = {"",7,210,221.000015,546.000061,229.000000,553.999939,0.000000,""};
-item67[] = {"",7,210,-29.000042,545.999939,-20.999958,554.000061,0.000000,""};
-item68[] = {"No_Agent",4,218,25.000000,225.000000,125.000000,275.000000,5.000000,"No Agent"};
-item69[] = {"____FAKE____",9,2760,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
+item12[] = {"",7,210,-1179.000122,-29.000004,-1170.999878,-20.999996,0.000000,""};
+item13[] = {"",7,210,-354.000031,208.500000,-346.000000,216.500000,0.000000,""};
+item14[] = {"Has_Target",4,4314,-150.000000,275.000000,-50.000000,325.000000,5.000000,"Has" \n "Target"};
+item15[] = {"Chase",2,250,-150.000000,375.000000,-50.000000,425.000000,0.000000,"Chase"};
+item16[] = {"Time_Check",4,218,50.000000,25.000000,150.000000,75.000000,1.000000,"Time" \n "Check"};
+item17[] = {"",7,210,-29.000006,208.500000,-20.999994,216.500000,0.000000,""};
+item18[] = {"",7,210,-29.000006,296.000000,-20.999996,304.000031,0.000000,""};
+item19[] = {"Time_Check",4,218,-1100.000000,75.000000,-1000.000000,125.000000,0.000000,"Time" \n "Check"};
+item20[] = {"No_Target",4,218,-400.000000,450.000000,-300.000000,500.000000,3.000000,"No" \n "Target"};
+item21[] = {"",7,210,-479.000000,471.000000,-471.000000,479.000000,0.000000,""};
+item22[] = {"",7,210,-729.000000,346.000000,-721.000000,354.000000,0.000000,""};
+item23[] = {"",7,210,221.000000,396.000000,229.000000,404.000000,0.000000,""};
+item24[] = {"",7,210,221.000000,471.000000,229.000000,479.000000,0.000000,""};
+item25[] = {"Cleanup_",2,250,175.000000,200.000000,275.000000,250.000000,0.000000,"Cleanup?"};
+item26[] = {"nobody_around",4,218,175.000000,-25.000000,275.000000,25.000000,0.000000,"nobody" \n "around"};
+item27[] = {"",7,210,-104.000023,471.000000,-95.999985,479.000000,0.000000,""};
+item28[] = {"cant_see",4,218,-275.000000,575.000000,-175.000000,625.000000,2.000000,"cant" \n "see"};
+item29[] = {"Finish_Move",2,250,-275.000000,650.000000,-175.000000,700.000000,0.000000,"Finish" \n "Move"};
+item30[] = {"finished",4,218,-425.000000,650.000000,-325.000000,700.000000,1.000000,"finished"};
+item31[] = {"",7,210,-479.000000,671.000000,-471.000000,679.000000,0.000000,""};
+item32[] = {"",7,210,-29.000002,671.000000,-20.999998,679.000000,0.000000,""};
+item33[] = {"Move",2,250,-650.000000,50.000000,-550.000000,100.000000,0.000000,"Move"};
+item34[] = {"someone_here",4,218,300.000000,200.000000,400.000000,250.000000,0.000000,"someone" \n "here"};
+item35[] = {"wait",2,250,300.000000,125.000000,400.000000,175.000000,0.000000,"wait"};
+item36[] = {"time_up",4,218,300.000000,-25.000000,400.000000,25.000000,0.000000,"time" \n "up"};
+item37[] = {"",7,210,346.000000,95.999992,354.000000,104.000000,0.000000,""};
+item38[] = {"",7,210,221.000000,96.000008,229.000000,103.999977,0.000000,""};
+item39[] = {"Time_Check",4,218,425.000000,125.000000,525.000000,175.000000,0.000000,"Time" \n "Check"};
+item40[] = {"",7,210,346.000000,-79.000000,354.000000,-71.000000,0.000000,""};
+item41[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
+item42[] = {"too_long",4,218,-425.000000,725.000000,-325.000000,775.000000,0.000000,"too long"};
+item43[] = {"",7,210,-229.000000,746.000000,-221.000000,754.000000,0.000000,""};
+item44[] = {"",7,210,-479.000000,746.000000,-471.000000,754.000000,0.000000,""};
+item45[] = {"Reset_Targeting",2,250,-525.000000,325.000000,-425.000000,375.000000,0.000000,"Reset" \n "Targeting"};
+item46[] = {"true",8,218,-1050.000000,275.000000,-950.000000,325.000000,0.000000,"true"};
+item47[] = {"deleted",4,218,425.000000,-25.000000,525.000000,25.000000,0.000000,"deleted"};
+item48[] = {"",7,210,471.000000,-79.000000,479.000000,-71.000000,0.000000,""};
+item49[] = {"",7,210,471.000000,95.999977,479.000000,104.000023,0.000000,""};
+item50[] = {"",7,210,-104.000000,596.000000,-95.999992,604.000000,0.000000,""};
+item51[] = {"player_check",4,218,-1350.000000,75.000000,-1250.000000,125.000000,2.000000,"player" \n "check"};
+item52[] = {"player_check",4,218,50.000000,-50.000000,150.000000,0.000000,2.000000,"player" \n "check"};
+item53[] = {"is_Dedicated",4,218,50.000000,-250.000000,150.000000,-200.000000,5.000000,"is" \n "Dedicated"};
+item54[] = {"MoveCompleted_",4,218,-1250.000000,-325.000000,-1150.000000,-275.000000,3.000000,"MoveCompleted "};
+item55[] = {"Failed_Move",4,218,-1425.000000,-375.000000,-1325.000000,-325.000000,3.000000,"Failed Move"};
+item56[] = {"Target_Dead",4,218,-275.000000,500.000000,-175.000000,550.000000,3.000000,"Target Dead"};
+item57[] = {"",7,210,-479.000000,521.000000,-471.000000,529.000000,0.000000,""};
+item58[] = {"Start_Attack",4,218,-1475.000000,-100.000000,-1375.000000,-50.000000,0.000000,"Start Attack"};
+item59[] = {"End_Attack",4,218,-1475.000000,-175.000000,-1375.000000,-125.000000,0.000000,"End Attack"};
+item60[] = {"TargetMoved",4,218,-1350.000000,-275.000000,-1250.000000,-225.000000,3.000000,"TargetMoved"};
+item61[] = {"Not_moving",4,218,-1450.000000,-275.000000,-1350.000000,-225.000000,1.000000,"Not moving"};
+item62[] = {"TimeCheck",4,218,-250.000000,275.000000,-150.000000,325.000000,2.000000,"TimeCheck"};
+item63[] = {"No_Agent_1",4,218,25.000000,450.000000,125.000000,500.000000,5.000000,"No Agent"};
+item64[] = {"",7,210,221.000015,546.000061,229.000000,553.999939,0.000000,""};
+item65[] = {"",7,210,-29.000042,545.999939,-20.999958,554.000061,0.000000,""};
+item66[] = {"No_Agent",4,218,25.000000,225.000000,125.000000,275.000000,5.000000,"No Agent"};
+item67[] = {"loiter",4,218,-400.000000,-50.000000,-300.000000,0.000000,0.000000,"loiter"};
+item68[] = {"Loiter_1",2,250,-400.000000,25.000000,-300.000000,75.000000,0.000000,"Loiter"};
+item69[] = {"Time_Check",4,218,-275.000000,50.000000,-175.000000,100.000000,0.000000,"Time" \n "Check"};
+item70[] = {"MoveCompleted_",4,218,-525.000000,50.000000,-425.000000,100.000000,3.000000,"MoveCompleted "};
+item71[] = {"Failed_Move",4,218,-525.000000,100.000000,-425.000000,150.000000,3.000000,"Failed Move"};
+item72[] = {"Not_moving",4,218,-525.000000,0.000000,-425.000000,50.000000,1.000000,"Not moving"};
+item73[] = {"",7,210,-604.000000,-29.000000,-596.000000,-21.000000,0.000000,""};
+item74[] = {"player_check",4,218,-275.000000,0.000000,-175.000000,50.000000,2.000000,"player" \n "check"};
+item75[] = {"True",8,218,-525.000000,-50.000000,-425.000000,0.000000,0.000000,"True"};
+item76[] = {"",7,210,-729.000000,-129.000000,-721.000000,-121.000000,0.000000,""};
+item77[] = {"",7,210,-354.000000,-129.000000,-346.000000,-121.000000,0.000000,""};
+item78[] = {"InRange",4,218,-275.000000,400.000000,-175.000000,450.000000,1.000000,"InRange"};
+item79[] = {"Attacking_Wait",2,250,-400.000000,375.000000,-300.000000,425.000000,0.000000,"Attacking Wait"};
+item80[] = {"NotInRange",4,218,-275.000000,350.000000,-175.000000,400.000000,1.000000,"NotInRange"};
+item81[] = {"TimeCheck",4,218,-400.000000,275.000000,-300.000000,325.000000,0.000000,"TimeCheck"};
+item82[] = {"____FAKE____",9,3280,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,10};
-link1[] = {0,55};
+link1[] = {0,53};
 link2[] = {2,3};
-link3[] = {3,17};
-link4[] = {3,18};
-link5[] = {3,54};
-link6[] = {4,25};
-link7[] = {5,66};
+link3[] = {3,16};
+link4[] = {3,17};
+link5[] = {3,52};
+link6[] = {4,23};
+link7[] = {5,64};
 link8[] = {6,7};
-link9[] = {7,14};
-link10[] = {7,20};
-link11[] = {7,53};
-link12[] = {8,4};
-link13[] = {8,9};
+link9[] = {7,19};
+link10[] = {7,51};
+link11[] = {8,4};
+link12[] = {8,9};
+link13[] = {9,63};
 link14[] = {9,65};
-link15[] = {9,67};
-link16[] = {10,11};
-link17[] = {11,12};
-link18[] = {12,2};
-link19[] = {12,13};
-link20[] = {13,6};
-link21[] = {14,18};
-link22[] = {15,16};
-link23[] = {16,8};
-link24[] = {16,29};
-link25[] = {16,64};
-link26[] = {17,3};
-link27[] = {18,19};
-link28[] = {18,68};
-link29[] = {19,8};
-link30[] = {19,15};
-link31[] = {20,7};
-link32[] = {22,23};
-link33[] = {23,47};
-link34[] = {24,35};
-link35[] = {25,27};
-link36[] = {26,25};
-link37[] = {27,36};
-link38[] = {27,40};
-link39[] = {28,43};
-link40[] = {29,22};
-link41[] = {29,52};
-link42[] = {29,58};
-link43[] = {30,31};
-link44[] = {31,32};
-link45[] = {31,34};
-link46[] = {31,45};
-link47[] = {32,33};
-link48[] = {33,59};
-link49[] = {34,67};
-link50[] = {35,7};
-link51[] = {36,37};
-link52[] = {37,39};
-link53[] = {37,41};
-link54[] = {38,42};
-link55[] = {39,38};
-link56[] = {39,40};
-link57[] = {39,51};
-link58[] = {40,28};
-link59[] = {41,37};
-link60[] = {42,43};
-link61[] = {43,1};
-link62[] = {44,46};
-link63[] = {45,44};
-link64[] = {46,33};
+link15[] = {10,11};
+link16[] = {11,2};
+link17[] = {11,77};
+link18[] = {12,6};
+link19[] = {13,17};
+link20[] = {14,15};
+link21[] = {15,8};
+link22[] = {15,27};
+link23[] = {15,62};
+link24[] = {15,78};
+link25[] = {16,3};
+link26[] = {17,18};
+link27[] = {17,66};
+link28[] = {18,8};
+link29[] = {18,14};
+link30[] = {19,7};
+link31[] = {20,21};
+link32[] = {21,45};
+link33[] = {22,76};
+link34[] = {23,25};
+link35[] = {24,23};
+link36[] = {25,34};
+link37[] = {25,38};
+link38[] = {26,41};
+link39[] = {27,20};
+link40[] = {27,50};
+link41[] = {27,56};
+link42[] = {28,29};
+link43[] = {29,30};
+link44[] = {29,32};
+link45[] = {29,43};
+link46[] = {30,31};
+link47[] = {31,57};
+link48[] = {32,65};
+link49[] = {33,73};
+link50[] = {34,35};
+link51[] = {35,37};
+link52[] = {35,39};
+link53[] = {36,40};
+link54[] = {37,36};
+link55[] = {37,38};
+link56[] = {37,49};
+link57[] = {38,26};
+link58[] = {39,35};
+link59[] = {40,41};
+link60[] = {41,1};
+link61[] = {42,44};
+link62[] = {43,42};
+link63[] = {44,31};
+link64[] = {45,22};
 link65[] = {47,48};
-link66[] = {48,24};
-link67[] = {49,50};
-link68[] = {50,42};
-link69[] = {51,49};
-link70[] = {52,30};
-link71[] = {53,7};
-link72[] = {54,3};
-link73[] = {55,1};
-link74[] = {58,59};
-link75[] = {59,23};
-link76[] = {64,16};
-link77[] = {65,26};
-link78[] = {66,26};
-link79[] = {67,5};
-link80[] = {68,27};
-link81[] = {21,69};
-link82[] = {69,21};
-link83[] = {56,69};
-link84[] = {69,56};
-link85[] = {57,69};
-link86[] = {69,57};
-link87[] = {60,69};
-link88[] = {69,60};
-link89[] = {61,69};
-link90[] = {69,61};
-link91[] = {62,69};
-link92[] = {69,62};
-link93[] = {63,69};
-link94[] = {69,63};
-globals[] = {25.000000,1,0,0,0,640,480,1,164,6316128,1,-544.672852,535.761841,853.890503,52.277908,806,598,1};
-window[] = {2,-1,-1,-1,-1,727,26,1234,26,3,824};
+link66[] = {48,40};
+link67[] = {49,47};
+link68[] = {50,28};
+link69[] = {51,7};
+link70[] = {52,3};
+link71[] = {53,1};
+link72[] = {56,57};
+link73[] = {57,21};
+link74[] = {62,15};
+link75[] = {63,24};
+link76[] = {64,24};
+link77[] = {65,5};
+link78[] = {66,25};
+link79[] = {67,68};
+link80[] = {68,13};
+link81[] = {68,69};
+link82[] = {68,70};
+link83[] = {68,71};
+link84[] = {68,72};
+link85[] = {68,74};
+link86[] = {69,68};
+link87[] = {70,33};
+link88[] = {71,33};
+link89[] = {72,33};
+link90[] = {73,75};
+link91[] = {74,68};
+link92[] = {75,68};
+link93[] = {76,77};
+link94[] = {77,67};
+link95[] = {78,79};
+link96[] = {79,80};
+link97[] = {79,81};
+link98[] = {80,15};
+link99[] = {81,79};
+link100[] = {82,6};
+link101[] = {46,82};
+link102[] = {82,46};
+link103[] = {54,82};
+link104[] = {82,54};
+link105[] = {55,82};
+link106[] = {82,55};
+link107[] = {58,82};
+link108[] = {82,58};
+link109[] = {59,82};
+link110[] = {82,59};
+link111[] = {60,82};
+link112[] = {82,60};
+link113[] = {61,82};
+link114[] = {82,61};
+globals[] = {25.000000,1,0,0,0,640,480,1,186,6316128,1,-751.957153,322.518677,630.750244,-166.441528,806,598,1};
+window[] = {2,-1,-1,-1,-1,805,104,1312,104,3,824};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -287,6 +320,12 @@ class FSM
            "	_agent setVariable[""doLoiter"",true,true];" \n
            "};" \n
            "" \n
+           "_myDest = [ _agent modelToWorld [0,0,0]];" \n
+           "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];" \n
+           "" \n
+           "_adjustSpeed = if (DZE_slowZombies) then {2} else {_agent getVariable [""speedLimit"", 3]};" \n
+		   "_agent forceSpeed _adjustSpeed;" \n
+           "" \n
            "//Lets see if we can get the AI to stop running away before heading to the player" \n
            "_agent moveTo (getposATL _agent);" \n
            "" \n
@@ -390,75 +429,6 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "Nobody_Near">*/
-        class Nobody_Near
-        {
-          priority = 6.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "No_Agent">*/
-        class No_Agent
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Has_Target">*/
-        class Has_Target
-        {
-          priority = 5.000000;
-          to="Chase";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(isNull _target)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//Leader cries out" \n
-           "if (_isSomeone) then {" \n
-           "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
-           "};" \n
-           "" \n
-           "if (!_hasMoved) then {" \n
-           "	_agent setVariable[""doLoiter"",true,true];" \n
-           "};" \n
-           "" \n
-           "//Lets see if we can get the AI to stop running away before heading to the player" \n
-           "_agent moveTo (getposATL _agent);" \n
-           "" \n
-           "_countr = 0;" \n
-           "_losCheck = 0;" \n
-           "_agroCheck = 0;" \n
-           "_cantSee = false;" \n
-           "_cantSeeAnything = false;" \n
-           "" \n
-           "" \n
-           "//diag_log (""Has Target"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Not_Alive">*/
-        class Not_Alive
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "No_Agent_1">*/
-        class No_Agent_1
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "player_check">*/
         class player_check
         {
@@ -539,10 +509,10 @@ class FSM
         class loiter
         {
           priority = 0.000000;
-          to="Loiter";
+          to="Loiter_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;" \n
+          action=/*%FSM<ACTION""">*/"" \n
            "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -565,20 +535,14 @@ class FSM
       name = "Chase";
       init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
        "" \n
-       "_adjustSpeed = if (DZE_slowZombies) then {2} else {_agent getVariable [""speedLimit"", 3]};" \n
-       "_agent forceSpeed _adjustSpeed;" \n
-       "" \n
        "_target = _agent call zombie_findTargetAgent;" \n
-       "_targetPos = getPosATL _target;" \n
+       "_targetPos = _target modelToWorld [0,-1,0];" \n
        "_isAlive = alive _agent;" \n
        "_isTargetAlive = alive _target;" \n
        "" \n
        "//Move to location" \n
        "if (_movingTo distance _targetPos > .5) then {" \n
-       "	//diag_log format[""Chase - %1 - [%2,%3] - Range %4"",(typeof _agent),_myDest,_movingTo,(_myDest distance _movingTo)];" \n
-       "" \n
        "	_agent moveTo _targetPos;" \n
-       "	_movingTo = _targetPos;" \n
        "};" \n
        "" \n
        "" \n
@@ -586,11 +550,7 @@ class FSM
        "if ((_agroCheck % 8) == 0) then {" \n
        "	_agroCheck = 0;" \n
        "	_cantSee = [_target,_agent] call dayz_losCheck;" \n
-       "};" \n
-       "" \n
-       "" \n
-       "" \n
-       "//diag_log format[""%1"",(typeof _agent)];"/*%FSM</STATEINIT""">*/;
+       "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -604,6 +564,16 @@ class FSM
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
+        /*%FSM<LINK "Not_Alive">*/
+        class Not_Alive
+        {
+          priority = 5.000000;
+          to="Cleanup_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "No_Agent">*/
         class No_Agent
         {
@@ -614,13 +584,13 @@ class FSM
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "Not_Alive">*/
-        class Not_Alive
+        /*%FSM<LINK "No_Target">*/
+        class No_Target
         {
-          priority = 5.000000;
-          to="Cleanup_";
+          priority = 3.000000;
+          to="Reset_Targeting";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isNull _target)"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -634,16 +604,6 @@ class FSM
           action=/*%FSM<ACTION""">*/"_timeN = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "No_Target">*/
-        class No_Target
-        {
-          priority = 3.000000;
-          to="Reset_Targeting";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNull _target)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "cant_see">*/
         class cant_see
         {
@@ -654,8 +614,8 @@ class FSM
           action=/*%FSM<ACTION""">*/"//diag_log (""Cant See"");"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "TimeOut">*/
-        class TimeOut
+        /*%FSM<LINK "TimeCheck">*/
+        class TimeCheck
         {
           priority = 2.000000;
           to="Chase";
@@ -663,6 +623,20 @@ class FSM
           condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 2" \n
            ""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_agroCheck= _agroCheck + 1;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "InRange">*/
+        class InRange
+        {
+          priority = 1.000000;
+          to="Attacking_Wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_agent distance _targetPos < 3.1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent stop true;" \n
+           "" \n
+           "_myDest = [ _agent modelToWorld [0,0,0]];" \n
+           "" \n
+           "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -741,6 +715,27 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 20"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"//diag_log (""Timeout"");"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Move">*/
+    class Move
+    {
+      name = "Move";
+      init = /*%FSM<STATEINIT""">*/"_myDest = [_agent,_position] call zombie_loiter;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "True">*/
+        class True
+        {
+          priority = 0.000000;
+          to="Loiter_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -835,16 +830,205 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "true">*/
-        class true
+        /*%FSM<LINK "loiter">*/
+        class loiter
         {
           priority = 0.000000;
-          to="Loiter";
+          to="Loiter_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//diag_log (""Reset"");" \n
+          condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"" \n
+           "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Loiter_1">*/
+    class Loiter_1
+    {
+      name = "Loiter_1";
+      init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
+       "_timeN = diag_tickTime;" \n
+       "" \n
+       "//Look for target" \n
+       "_target = _agent call zombie_findTargetAgent;" \n
+       "" \n
+       "if (_myDest distance (getposATL _agent) > 3) then {" \n
+       "	_agent moveTo _myDest;" \n
+       "};" \n
+       "" \n
+       "//diag_log (""loitering..."" + str(_agent distance (_agent getVariable [""myDest"",_myDest])));"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Nobody_Near">*/
+        class Nobody_Near
+        {
+          priority = 6.000000;
+          to="Cleanup_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "No_Agent">*/
+        class No_Agent
+        {
+          priority = 5.000000;
+          to="Cleanup_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "No_Agent_1">*/
+        class No_Agent_1
+        {
+          priority = 5.000000;
+          to="Cleanup_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Not_Alive">*/
+        class Not_Alive
+        {
+          priority = 5.000000;
+          to="Cleanup_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Has_Target">*/
+        class Has_Target
+        {
+          priority = 5.000000;
+          to="Chase";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(isNull _target)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"//Leader cries out" \n
+           "if (_isSomeone) then {" \n
+           "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
+           "};" \n
            "" \n
-           ""/*%FSM</ACTION""">*/;
+           "if (!_hasMoved) then {" \n
+           "	_agent setVariable[""doLoiter"",true,true];" \n
+           "};" \n
+           "" \n
+           "_myDest = [ _agent modelToWorld [0,0,0]];" \n
+           "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];" \n
+           "" \n
+           "_adjustSpeed = if (DZE_slowZombies) then {2} else {_agent getVariable [""speedLimit"", 3]};" \n
+		   "_agent forceSpeed _adjustSpeed;" \n
+           "" \n
+           "//Lets see if we can get the AI to stop running away before heading to the player" \n
+           "_agent moveTo (getposATL _agent);" \n
+           "" \n
+           "_countr = 0;" \n
+           "_losCheck = 0;" \n
+           "_agroCheck = 0;" \n
+           "_cantSee = false;" \n
+           "_cantSeeAnything = false;" \n
+           "" \n
+           "" \n
+           "//diag_log (""Has Target"");"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "MoveCompleted_">*/
+        class MoveCompleted_
+        {
+          priority = 3.000000;
+          to="Move";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToCompleted _agent;" \n
+           "//_agent distance (_agent getVariable [""myDest"",getposATL _agent]) < 3"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Failed_Move">*/
+        class Failed_Move
+        {
+          priority = 3.000000;
+          to="Move";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"moveToFailed _agent;"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "player_check">*/
+        class player_check
+        {
+          priority = 2.000000;
+          to="Loiter_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
+           "" \n
+           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+           "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Not_moving">*/
+        class Not_moving
+        {
+          priority = 1.000000;
+          to="Move";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(Speed _agent == 0)" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Time_Check">*/
+        class Time_Check
+        {
+          priority = 0.000000;
+          to="Loiter_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Attacking_Wait">*/
+    class Attacking_Wait
+    {
+      name = "Attacking_Wait";
+      init = /*%FSM<STATEINIT""">*/"_targetPos = _target modelToWorld [0,-1,0];" \n
+       "" \n
+       "_timeN = diag_tickTime;" \n
+       "" \n
+       "//Check if LOS" \n
+       "if ((_agroCheck % 8) == 0) then {" \n
+       "	_agroCheck = 0;" \n
+       "	_cantSee = [_target,_agent] call dayz_losCheck;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "NotInRange">*/
+        class NotInRange
+        {
+          priority = 1.000000;
+          to="Chase";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_agent distance _targetPos > 3.1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agent stop false;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "TimeCheck">*/
+        class TimeCheck
+        {
+          priority = 0.000000;
+          to="Attacking_Wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _timeN) > 2)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_agroCheck= _agroCheck + 1;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -858,6 +1042,17 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+        /*%FSM<LINK "TargetMoved">*/
+        class TargetMoved
+        {
+          priority = 3.000000;
+          to="____FAKE____";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(((_agent distance _target) >= 3) and ((diag_tickTime - _timeN) > 1))" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log (""TargetMoved"");"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "MoveCompleted_">*/
         class MoveCompleted_
         {
@@ -882,17 +1077,6 @@ class FSM
            ""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
-        /*%FSM<LINK "TargetMoved">*/
-        class TargetMoved
-        {
-          priority = 3.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(((_agent distance _target) >= 3) and ((diag_tickTime - _timeN) > 1))" \n
-           ""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"diag_log (""TargetMoved"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
         /*%FSM<LINK "Not_moving">*/
         class Not_moving
         {
@@ -902,30 +1086,6 @@ class FSM
           condition=/*%FSM<CONDITION""">*/"(Speed _agent == 0)" \n
            ""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Check">*/
-        class Check
-        {
-          priority = 1.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((_agent distance _target) >= 2)" \n
-           ""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"// reset stance to favorite one" \n
-           "//if (_agent distance _targetPos > 5) then {" \n
-           "//	_agent setUnitPos (_agent getVariable [""stance"", ""UP""]);" \n
-           "//};" \n
-           "" \n
-           "//diag_log (""Reset Chase"");" \n
-           "" \n
-           "/*" \n
-           "if (_agent distance _targetPos < 5) then {" \n
-           "	//Stand up" \n
-           "	_agent setUnitPos ""UP"";" \n
-           "};" \n
-           "*/" \n
-           ""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "End_Attack">*/
@@ -950,6 +1110,29 @@ class FSM
            "_agent setVariable[""lastAttack"", diag_tickTime];" \n
            "" \n
            "_timeAttack = diag_ticktime;"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="____FAKE____";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"//diag_log (""Reset"");" \n
+           "" \n
+           ""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "loiter">*/
+        class loiter
+        {
+          priority = 0.000000;
+          to="Loiter";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;" \n
+           "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
