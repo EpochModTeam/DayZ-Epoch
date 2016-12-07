@@ -105,7 +105,7 @@ call compile preprocessFileLineNumbers "server_traders.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\namalsk.sqf"; //Add trader city objects locally on each machine early
 initialized = true;
 
-setTerrainGrid 25; //grass draw distance (50=no grass, 25=normal, 12.5=far)
+setTerrainGrid 25;
 if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\REsec.sqf";};
 execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
 
@@ -113,19 +113,21 @@ if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\dynamic_vehicle.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\traders\namalsk.sqf"; //Add trader agents
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\server_monitor.sqf";
+	
 	//Must be global spawned, so players don't fall through buildings (might be best to spilt these to important, not important)
 	if (dayz_POIs && (toLower worldName == "chernarus")) then { execVM "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf"; };
+	
 	//Get the server to setup what waterholes are going to be infected and then broadcast to everyone.
 	if (dayz_infectiousWaterholes && (toLower worldName == "chernarus")) then {execVM "\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\init.sqf";};
+	
+	// Lootable objects from CfgTownGeneratorDefault.hpp
+	if (dayz_townGenerator) then { execVM "\z\addons\dayz_code\system\mission\chernarus\MainLootableObjects.sqf"; };
 };
-
-// Lootable objects from CfgTownGeneratorDefault.hpp
-if (dayz_townGenerator) then { execVM "\z\addons\dayz_code\system\mission\chernarus\LegacyTownGenerator\MainLootableObjects.sqf"; };
 
 if (!isDedicated) then {
 	if (dayz_antiWallHack != 0) then {
 		//Enables Map Plug items
-		execVM "\z\addons\dayz_code\system\mission\chernarus\security\init.sqf";
+		if (toLower worldName == "chernarus") then { execVM "\z\addons\dayz_code\system\mission\chernarus\antiwallhack.sqf"; };
 		//Enables Plant lib fixes
 		call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\antihack.sqf";
 	};

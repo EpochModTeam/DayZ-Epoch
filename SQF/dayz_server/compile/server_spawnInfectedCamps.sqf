@@ -68,7 +68,7 @@ for "_i" from 1 to (CAMP_NUM) do
 		if (count (nearestObjects [_position, [CAMP_CONTAINER_BASE], CAMP_MIN_DIST]) < 1) exitWith {};
 	};
 	
-	diag_log format ["Spawning an infected camp (%1) at %2", _composition, _position];
+	diag_log format ["DEBUG: Spawning an infected camp (%1) at %2", _composition, _position];
 	
 	//Spawn composition
 	_compositionObjects = [_position, random 360,_composition] call spawnComposition;
