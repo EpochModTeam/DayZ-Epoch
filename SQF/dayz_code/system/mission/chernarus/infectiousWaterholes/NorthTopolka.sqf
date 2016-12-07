@@ -10,4 +10,4 @@
 	["Body2",[10005.476,4147.1729,-3.0517578e-005],-154.11565],
 	["Body1",[9975.0391,4217.8608,-3.4332275e-005],0],
 	["Body1",[10005.835,4200.8569,4.9591064e-005],0]
-],false] call local_spawnObjects;
+],false,false,true] call fnc_spawnObjects;

@@ -6,5 +6,9 @@
 [] execVM "\z\addons\dayz_code\system\mission\chernarus\poi\KomyshovoRoadblock.sqf";
 [] execVM "\z\addons\dayz_code\system\mission\chernarus\poi\MilitaryAirpoort.sqf";
 [] execVM "\z\addons\dayz_code\system\mission\chernarus\poi\ZelenogorskBuildings.sqf";
-[] execVM "\z\addons\dayz_code\system\mission\chernarus\poi\Twains.sqf";
+[] execVM "\z\addons\dayz_code\system\mission\chernarus\poi\NWATentCamp.sqf";
+
+
+//Filled with Server sleeps, removed for now
+//[] execVM "\z\addons\dayz_code\system\mission\chernarus\poi\Twains.sqf";
 
