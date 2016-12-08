@@ -12,5 +12,6 @@
 [FIXED] Giving pain killers to another player no longer removes pain from the player giving the pain killers.
 [FIXED] Occasional undefined error for text color attribute when salvaging vehicles. @ebayShopper
 [FIXED] M24 ammo prices are now 1/4 of DMR ammo prices, so no profit can be made by combining M24 rounds. @looter809 @ebayShopper
+[FIXED] Full cinderblock walls now work properly with vectory building #1813. @DeVloek @icomrade
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.

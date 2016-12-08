@@ -385,6 +385,7 @@ if (_canBuild select 0) then {
 		_vUp = _vector select 1;
 		switch (_classname) do {
 			case "MetalFloor_DZ": { _buildOffset = [(_vUp select 0) * .148, (_vUp select 1) * .148,0]; };
+			case "CinderWall_DZ": { _buildOffset = [(_vUp select 0) * 1.686, (_vUp select 1) * 1.686,0]; };
 		};
 		
 		_location = [
