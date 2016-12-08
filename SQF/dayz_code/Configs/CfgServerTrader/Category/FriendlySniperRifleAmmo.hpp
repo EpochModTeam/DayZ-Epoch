@@ -6,13 +6,13 @@ class Category_624 {
 	};
 	class 5Rnd_762x51_M24 {
 		type = "trade_items";
-		buy[] = {1,"ItemSilverBar10oz"};
-		sell[] = {5,"ItemSilverBar"};
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
 	};
 	class 20Rnd_762x51_DMR {
 		type = "trade_items";
-		buy[] = {6,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class 10Rnd_762x54_SVD {
 		type = "trade_items";

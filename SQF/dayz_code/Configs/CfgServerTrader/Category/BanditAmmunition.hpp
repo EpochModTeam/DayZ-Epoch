@@ -26,8 +26,8 @@ class Category_577 {
 	};
 	class 20Rnd_762x51_DMR {
 		type = "trade_items";
-		buy[] = {6,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
+		buy[] = {8,"ItemGoldBar"};
+		sell[] = {4,"ItemGoldBar"};
 	};
 	class 5Rnd_86x70_L115A1 {
 		type = "trade_items";
