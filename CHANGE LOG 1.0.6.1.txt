@@ -1,4 +1,5 @@
 [CHANGED] Added NWAF tent camp to Chernarus points of interests and removed trains POI for now.
+[CHANGED] Turbo and HoldBreath keybindings are now allowed again @icomrade
 
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. (updated ServerFiles with hotfix already released) @icomrade
 [FIXED] Error with object publishing when snap building is disabled. (updated ServerFiles with hotfix already released) @ebayShopper

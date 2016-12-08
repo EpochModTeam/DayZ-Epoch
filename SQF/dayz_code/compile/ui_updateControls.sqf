@@ -8,7 +8,7 @@ if (_this) then {
 	keyboard_keys = nil;
 	[controlNull,1,false,false,false] call DZ_KeyDown_EH;
 };
-
+/*
 //ActionKeys includes mouse button and joystick binds
 _holdBreath = if (count (actionKeys "HoldBreath") > 1) then { [true,localize "STR_UI_HOLD_BREATH"] } else { [false,""] };
 
@@ -21,3 +21,4 @@ if ((_holdBreath select 0) or (_turboKey select 0)) then {
 } else {
 	4100002 cutText ["","PLAIN"];
 };
+*/
