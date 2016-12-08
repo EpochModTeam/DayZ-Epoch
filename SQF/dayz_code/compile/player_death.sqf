@@ -50,6 +50,7 @@ if (count _this > 0) then {
 		if (alive _source) then {
 			_sourceName = if (isPlayer _source) then {name _source} else {localize "STR_PLAYER_AI"};
 		};
+		if (_source == _body) then {_sourceName = dayz_playerName;};
 	};
 };
 
