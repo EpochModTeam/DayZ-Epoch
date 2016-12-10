@@ -996,7 +996,7 @@ class FSM
                          "	[player,2000] spawn BIS_fnc_halo;" \n
                          "} else {" \n
                          "	player setDir _setDir;" \n
-                         "	player setPosATL _setPos;" \n
+                         "	player setPosATL [_setPos select 0,_setPos select 1,(_setPos select 2)+.1]; //Prevents swimming in ground glitch" \n
                          "};" \n
                          "" \n
                          "player setVelocity [0,0,0.5];" \n
