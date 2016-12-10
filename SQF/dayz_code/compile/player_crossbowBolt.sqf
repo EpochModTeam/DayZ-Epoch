@@ -1,4 +1,4 @@
-private ["_endPos","_vUp","_doLoop","_hitArray","_countr","_hitObject","_hitSelection","_config","_hitMemoryPt","_variation","_val","_dir","_bolt","_obj","_unit","_ammo","_projectile","_height"];
+private ["_endPos","_vUp","_doLoop","_hitArray","_countr","_hitObject","_hitSelection","_config","_hitMemoryPt","_variation","_val","_dir","_bolt","_obj","_unit","_ammo","_projectile","_height","_nearArrows"];
 _obj = _this select 0;
 _unit = _obj select 0;
 //_weapon = _obj select 1;
@@ -15,6 +15,17 @@ while {alive _projectile} do {
 	_endPos = getPosATL _projectile;
 	_vUp = vectorUp _projectile;
 	sleep 0.01;
+};
+
+/*
+	Match near arrow position if one is already close by.
+	Prevents arrows floating in air when multiple are shot against wall at same position. Projectile was hitting end of previous arrow.
+	From testing anything less than 2m does not work to prevent this. Radius may need to be increased for some cases if issue still occurs.
+*/
+_nearArrows = nearestObjects [_endPos,["WoodenArrowF"],2];
+if (count _nearArrows > 0) then {
+	_endPos = getPosATL (_nearArrows select 0);
+	_vUp = vectorUp (_nearArrows select 0);
 };
 
 //_distance = _unit distance _endPos;
@@ -34,7 +45,7 @@ if (_height < 100) then {
 		if (count _hitArray > 0) then {_doLoop = false};
 		if (_countr > 50) then {_doLoop = false};
 		_countr = _countr + 1;
-		sleep 0.1;
+		uiSleep 0.1;
 	};
 
 	if (count _hitArray > 0) then {
