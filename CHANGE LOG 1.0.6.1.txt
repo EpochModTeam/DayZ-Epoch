@@ -20,5 +20,6 @@
 [FIXED] Swimming in ground glitch when relogging at certain positions on certain maps like Napf and Tavi. @ebayShopper
 [FIXED] No damage from hitting ground after HALO jump when DZE_HaloOpenChuteHeight was set to -1. @ebayShopper
 [FIXED] Added back missing call to Epoch player_antiWall function for preventing base glitching. #1817 @ndavalos @ebayShopper
+[FIXED] HALO fresh spawns stuck in air or failing to start correctly sometimes due to player simulation disabled. #1809 @oiad @ebayShopper
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.

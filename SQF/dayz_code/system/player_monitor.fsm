@@ -989,16 +989,8 @@ class FSM
                          "  };" \n
                          "} count allMissionObjects ""SpawnableWreck"";" \n
                          "{deleteVehicle _x} count (_setPos nearEntities [""zZombie_Base"",30]);" \n
-                         "" \n
-                         "if(dayz_paraSpawn && (freshSpawn == 2)) then {" \n
-                         "	player setDir _setDir;" \n
-                         "	player setPosATL [_setPos select 0,_setPos select 1,2000];" \n
-                         "	[player,2000] spawn BIS_fnc_halo;" \n
-                         "} else {" \n
-                         "	player setDir _setDir;" \n
-                         "	player setPosATL [_setPos select 0,_setPos select 1,(_setPos select 2)+.1]; //Prevents swimming in ground glitch" \n
-                         "};" \n
-                         "" \n
+                         "player setDir _setDir;" \n
+                         "player setPosATL [_setPos select 0,_setPos select 1,(_setPos select 2)+.1]; //Prevents swimming in ground glitch" \n
                          "player setVelocity [0,0,0.5];" \n
                          "{player reveal _x} count _torev4l;" \n
                          "dayz_myPosition = _setPos;" \n
@@ -1176,7 +1168,8 @@ class FSM
                          "" \n
                          "{ _x call fnc_veh_ResetEH; } forEach vehicles;" \n
                          "player allowDamage true;" \n
-                         "player enableSimulation true;"/*%FSM</STATEINIT""">*/;
+                         "player enableSimulation true;" \n
+                         "if (dayz_paraSpawn && freshSpawn == 2) then {[player,2000] spawn BIS_fnc_halo;};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
