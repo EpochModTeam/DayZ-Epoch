@@ -39,6 +39,11 @@ class Category_487 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
 	};
+	class SVD_Gh_DZ { // camo
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {6,"ItemGoldBar"};
+	};
 };
 
 class Category_619 {
