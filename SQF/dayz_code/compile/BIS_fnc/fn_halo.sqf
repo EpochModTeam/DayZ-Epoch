@@ -174,7 +174,6 @@ if (typename _this == typename objnull) then {
 						],"PLAIN DOWN",0.01
 					];
 				};
-				player allowDamage false; //Prevent glitch death when opening chute 
 				
 				uiSleep 0.01;
 			};
@@ -249,6 +248,7 @@ if (typename _this == typename []) then {
 	
 	_para = objnull;
 	_vel = [];
+	_unit allowDamage false; //Prevent glitch death when opening chute 
 	_paraPosition1 = [_unit] call FNC_GetPos;
 	_para = createVehicle ["ParachuteWest", _paraPosition1, [], 0, "CAN_COLLIDE"];
 	//_para = "BIS_Steerable_Parachute" createVehicle position _unit;
@@ -260,7 +260,7 @@ if (typename _this == typename []) then {
 	_para lock false;
 
 	bis_fnc_halo_para_dirAbs = direction _para;
-	player allowDamage true;
+	_unit allowDamage true;
 
 	//--- Key controls
 	if (_unit == player) then {

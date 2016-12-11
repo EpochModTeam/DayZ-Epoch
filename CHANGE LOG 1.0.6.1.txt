@@ -18,5 +18,6 @@
 [FIXED] WoodenArrow and other WeaponHolderBase inherited objects catching fire when destroyed due to destrType. #1815 @DeVloek @ebayShopper
 [FIXED] Arrows floating in air when shot at same position against a wall multiple times. #1815 @DeVloek @ebayShopper
 [FIXED] Swimming in ground glitch when relogging at certain positions on certain maps like Napf and Tavi. @ebayShopper
+[FIXED] No damage from hitting ground after HALO jump when DZE_HaloOpenChuteHeight was set to -1. @ebayShopper
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.
