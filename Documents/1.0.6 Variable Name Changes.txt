@@ -1,6 +1,7 @@
 1.0.5.1 --> 1.0.6 Variable Name Changes:
 
 - Duplicate functions have been renamed:
+	- dayz_gui --> sched_gui
 	- dayz_HungerThirst --> dayz_NutritionSystem
 	- dayz_objectUID3 --> dayz_objectUID2
 	- DZE_getModelName --> fn_getModelName

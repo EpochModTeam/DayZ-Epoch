@@ -19,5 +19,6 @@
 [FIXED] Arrows floating in air when shot at same position against a wall multiple times. #1815 @DeVloek @ebayShopper
 [FIXED] Swimming in ground glitch when relogging at certain positions on certain maps like Napf and Tavi. @ebayShopper
 [FIXED] No damage from hitting ground after HALO jump when DZE_HaloOpenChuteHeight was set to -1. @ebayShopper
+[FIXED] Added back missing call to Epoch player_antiWall function for preventing base glitching. #1817 @ndavalos @ebayShopper
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.

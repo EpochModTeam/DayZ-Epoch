@@ -26,6 +26,8 @@ if (_unit == player) then {
 
 		localize "str_actions_exitBlocked" call dayz_rollingMessages;
 	};
+	
+	_vehicle call player_antiWall;
 
 	//Lets make sure we can process some dmg from ejecting from the vehicle even traveling at lower speeds.
 	if (((speed _vehicle) > 15) or ((speed _vehicle) < -10)) then {
