@@ -19,6 +19,11 @@ class Category_489 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {5,"ItemSilverBar10oz"};
 	};
+	class G17_SD_DZ {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar"};
+		sell[] = {5,"ItemSilverBar10oz"};
+	};
 	class Makarov_DZ {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar10oz"};
