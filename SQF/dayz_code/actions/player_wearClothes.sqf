@@ -9,11 +9,11 @@ _item call player_wearClothes;
 Added Female skin changes - DayZ Epoch - vbawol
 */
 private ["_item","_onLadder","_hasclothesitem","_config","_text","_isFemale","_myModel","_humanity","_isBandit","_isHero",
-"_itemNew","_model","_skinToArray","_finalArray","_skinToModel"];
+"_itemNew","_model","_skinToArray","_finalArray","_skinToModel","_morphHandle"];
 
 _item = _this;
 call gear_ui_init;
-dayz_actionInProgress = false; //reset for strange glitch
+
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages; dayz_actionInProgress = false;};
 
@@ -32,6 +32,7 @@ _humanity = player getVariable ["humanity",0];
 _isBandit = _humanity < -2000;
 _isHero = _humanity > 5000;
 _itemNew = "Skin_" + _myModel;
+_morphHandle = nil;
 
 if ( (isClass(_config >> _itemNew)) ) then {
 	if ( (isClass(_config >> _item)) ) then {
@@ -56,7 +57,7 @@ if ( (isClass(_config >> _itemNew)) ) then {
 					waitUntil {getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 0};
 					*/
 					player addMagazine _itemNew;
-					[dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
+					_morphHandle = [dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
 				};
 			};
 
@@ -65,4 +66,8 @@ if ( (isClass(_config >> _itemNew)) ) then {
 		};
 	};
 };
-dayz_actionInProgress = false;
+
+if (isNil "_morphHandle") then {
+	// Don't set if humanity morph is still in progress (done at bottom of humanityMorph)
+	dayz_actionInProgress = false;
+};

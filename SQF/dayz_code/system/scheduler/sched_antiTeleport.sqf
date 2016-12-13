@@ -63,6 +63,6 @@ sched_antiTP = {
 		};
 	};
 
-	[_antihack, _lastpos, _lastheight, _lasttime, _lastVehicle]
+	[_antihack, _lastpos, _lastheight, _lasttime, _lastVehicle, _debug]
 };
  
