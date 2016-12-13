@@ -66,7 +66,8 @@ _object_position = {
 };
 
 _object_inventory = {
-	private ["_inventory","_key","_isNormal","_coins"];
+	private ["_inventory","_key","_isNormal","_coins","_forceUpdate"];
+	_forceUpdate = false;
 	if (_object isKindOf "TrapItems") then {
 		_inventory = [["armed",_object getVariable ["armed",false]]];
 	} else {
@@ -82,13 +83,15 @@ _object_inventory = {
 			_inventory = _object getVariable ["doorfriends", []]; //We're replacing the inventory with UIDs for this item
 		};
 		
+		if (Z_SingleCurrency && {typeOf (_object) in DZE_MoneyStorageClasses}) then { _forceUpdate = true; };
+		
 		if (_isNormal) then {
 			_inventory = [getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object];
 		};
 	};
 	
 	_previous = str(_object getVariable["lastInventory",[]]);
-	if (str _inventory != _previous) then {
+	if ((str _inventory != _previous) || {_forceUpdate}) then {
 		_object setVariable["lastInventory",_inventory];
 		if (_objectID == "0") then {
 			_key = format["CHILD:309:%1:",_objectUID] + str _inventory + ":";
