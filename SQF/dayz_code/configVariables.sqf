@@ -51,7 +51,8 @@ MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 
 // HALO Jump
 DZE_HaloAltitudeMeter = false; // Display altitude and speed on screen while in halo jump.
-DZE_HaloOpenChuteHeight = 180; // Automatically open chute at specified height. Set to -1 to disable this feature. 
+DZE_HaloOpenChuteHeight = 180; // Automatically open chute at specified height. Set to -1 to disable this feature.
+DZE_HaloSpawnHeight = 2000; // This is the altitude fresh spawn players start at when HALO spawn is enabled.
 DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
 
 // Trader Menu
