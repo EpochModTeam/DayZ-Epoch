@@ -66,6 +66,7 @@ switch (_lootInfo select 0) do
 		
 		if (count _magazines > 0 && {getNumber (configFile >> "CfgWeapons" >> _lootInfo select 1 >> "melee") != 1}) then
 		{
+		if (_magazines  select 0 == "20Rnd_556x45_Stanag") then { _magazines set [0, "30Rnd_556x45_Stanag"];};
 			#ifdef COMPLEX_WEAPON_MAGAZINES
 			for "_i" from 1 to (floor random (MAX_WEAPON_MAGAZINES + 1)) do
 			{
