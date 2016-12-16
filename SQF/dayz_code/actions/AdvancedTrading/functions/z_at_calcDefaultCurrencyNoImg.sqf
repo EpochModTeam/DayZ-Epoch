@@ -1,7 +1,8 @@
-private ["_ItemTopaz","_GemTotal","_ItemTopaz_ItemTopaz","_GemTotal2","_ItemObsidian","_ItemSapphire","_ItemAmethyst","_ItemEmerald","_ItemCitrine","_ItemRuby","_gem","_value","_string","_total","_briefcase_100oz","_gold_10oz_a","_gold_10oz_b","_gold_10oz","_gold_1oz_a","_gold_1oz_b","_gold_1oz","_silver_10oz_a","_silver_10oz_b","_silver_10oz","_silver_1oz_a","_silver_1oz_b","_silver_1oz","_dname"];
+private ["_ItemTopaz","_GemTotal","_ItemTopaz_ItemTopaz","_GemTotal2","_ItemObsidian","_ItemSapphire","_ItemAmethyst","_ItemEmerald","_ItemCitrine","_ItemRuby","_gem","_value","_array","_total","_briefcase_100oz","_gold_10oz_a","_gold_10oz_b","_gold_10oz","_gold_1oz_a","_gold_1oz_b","_gold_1oz","_silver_10oz_a","_silver_10oz_b","_silver_10oz","_silver_1oz_a","_silver_1oz_b","_silver_1oz","_dname","_arrayText"];
 
 _total = _this;
-_string = "";
+_array = [];
+_arrayText = "";
 
 _ItemTopaz = 0;
 _ItemObsidian = 0;
@@ -91,61 +92,45 @@ _silver_1oz = (_silver_1oz_a - _silver_1oz_b);
 
 { //sort gems so they display on total price in order of descending worth
 	if (!isNil {call compile format["_%1",_x]} && {(call compile format["_%1",_x]) > 0}) then {
-	_dname = getText (configFile >> 'CfgMagazines' >> _x >> 'displayName');
-		if (_string == "") then {
-			_string = format["%1 %2",(call compile format["_%1",_x]),_dname];
-		} else {
-			_string = format["%2 %1 %3",(call compile format["_%1",_x]),_string,_dname];
-		};
+		_dname = getText (configFile >> 'CfgMagazines' >> _x >> 'displayName');
+		_array set [count _array, format["%1 %2",(call compile format["_%1",_x]),_dname]];
 	};
 } count DZE_GemList;
 
 if (_briefcase_100oz >= 2) then {
-	if (_string == "") then {
-		_string = format["%1 %2s",_briefcase_100oz,localize "STR_EPOCH_BRIEFCASE"];
-	} else {
-		_string = format["%2 %1 %3s",_briefcase_100oz,_string,localize "STR_EPOCH_BRIEFCASE"];
-	};
+	_array set [count _array, format["%1 %2s",_briefcase_100oz,localize "STR_EPOCH_BRIEFCASE"]];
 };
 
 if (_briefcase_100oz == 1) then {
-	if (_string == "") then {
-		_string = format["%1 %2",_briefcase_100oz,localize "STR_EPOCH_BRIEFCASE"];
-	} else {
-		_string = format["%2 %1 %3",_briefcase_100oz,_string,localize "STR_EPOCH_BRIEFCASE"];
-	};
+	_array set [count _array, format["%1 %2",_briefcase_100oz,localize "STR_EPOCH_BRIEFCASE"]];
 };
 
 if (_gold_10oz > 0) then {
-	if (_string == "") then {
-		_string = format["%1 %2",_gold_10oz,localize "STR_EPOCH_10OZGOLD"];
-	} else {
-		_string = format["%2 %1 %3",_gold_10oz,_string,localize "STR_EPOCH_10OZGOLD"];
-	};
+	_array set [count _array, format["%1 %2",_gold_10oz,localize "STR_EPOCH_10OZGOLD"]];
 };
 
 if (_gold_1oz > 0) then {
-	if (_string == "") then {
-		_string = format["%1 %2",_gold_1oz,localize "STR_EPOCH_GOLD"];
-	} else {
-		_string = format["%2 %1 %3",_gold_1oz,_string,localize "STR_EPOCH_GOLD"];
-	};
+	_array set [count _array, format["%1 %2",_gold_1oz,localize "STR_EPOCH_GOLD"]];
 };
 
 if (_silver_10oz > 0) then {
-	if (_string == "") then {
-		_string = format["%1 %2",_silver_10oz,localize "STR_EPOCH_10OZSILVER"];
-	} else {
-		_string = format["%2 %1 %3",_silver_10oz,_string,localize "STR_EPOCH_10OZSILVER"];
-	};
+	_array set [count _array, format["%1 %2",_silver_10oz,localize "STR_EPOCH_10OZSILVER"]];
 };
 
 if (_silver_1oz > 0) then {
-	if (_string == "") then {
-		_string = format["%1 %2",_silver_1oz,localize "STR_EPOCH_SILVER"];
-	} else {
-		_string = format["%2 %1 %3",_silver_1oz,_string,localize "STR_EPOCH_SILVER"];
-	};
+	_array set [count _array, format["%1 %2",_silver_1oz,localize "STR_EPOCH_SILVER"]];
 };
 
-_string
+{
+	if (_forEachIndex == 0) then {
+		_arrayText = _x;
+	} else {
+		if (_forEachIndex == ((count _array) - 1)) then {
+			_arrayText = _arrayText + " and " + _x;
+		} else {
+			_arrayText = _arrayText + ", " + _x;
+		};
+	};
+} forEach _array;
+
+_arrayText
