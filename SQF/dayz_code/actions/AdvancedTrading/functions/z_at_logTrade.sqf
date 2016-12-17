@@ -13,7 +13,7 @@ _Z_logTrade = {
 	case 2 : {localize "STR_UI_GEAR"};
 	};
 	_tCost = _price call Z_calcDefaultCurrencyNoImg;
-	_currency = if (Z_SingleCurrency) then {"Coins"} else {""};
+	_currency = if (Z_SingleCurrency) then {CurrencyName} else {""};
 
 	// Log to client RPT
 	if (Z_SingleCurrency) then {
@@ -32,19 +32,7 @@ _Z_logTrade = {
 
 	// Log to server RPT
 	if (DZE_serverLogTrades) then {
-		if (Z_SingleCurrency) then {
-			if (_buyOrSell == "buy") then {
-				PVDZE_obj_Trade = [player,0,0,_className,inTraderCity,_currency,_price,_quantity,_container,false];
-			} else {
-				PVDZE_obj_Trade = [player,0,1,_className,inTraderCity,_currency,_price,_quantity,_container,false];
-			};
-		} else {
-			if (_buyOrSell == "buy") then {
-				PVDZE_obj_Trade = [player,0,0,_className,inTraderCity,_currency,_tCost,_quantity,_container,false];
-			} else {
-				PVDZE_obj_Trade = [player,0,1,_className,inTraderCity,_currency,_tCost,_quantity,_container,false];
-			};
-		};
+		PVDZE_obj_Trade = [player,0,if (_buyOrSell == "buy") then {0} else {1},_className,inTraderCity,_currency,if (Z_singleCurrency) then {_price} else {_tCost},_quantity,_container,false];
 		publicVariableServer "PVDZE_obj_Trade";
 	};
 };
