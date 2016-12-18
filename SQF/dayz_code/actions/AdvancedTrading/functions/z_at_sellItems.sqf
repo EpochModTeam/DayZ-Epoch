@@ -227,7 +227,7 @@ if (typeName _money  == "SCALAR") then {
 	} else {
 		_success = [_money,0,false,0,[],[],false] call Z_returnChange;
 		_tCost = "";
-		_tCost = _money call z_calcDefaultCurrencyNoImg;
+		_tCost = [_money,true] call z_calcCurrency;
 		if (_tCost != "") then { systemChat format[localize "STR_EPOCH_TRADE_SELL_SUCCESS",_tCost]; };
 	};
 	_itemsToLog call Z_logTrade;

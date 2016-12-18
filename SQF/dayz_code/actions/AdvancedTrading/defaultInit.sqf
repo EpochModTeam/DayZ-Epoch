@@ -35,5 +35,5 @@ Z_canAfford =  								CPP PATH(z_at_canAfford.sqf);
 Z_calcFreeSpace = 							CPP PATH(z_at_calcFreeSpace.sqf);
 Z_returnChange =  							CPP PATH(z_at_returnChange.sqf);
 Z_payDefault =  							CPP PATH(z_at_payDefault.sqf);
-z_calcDefaultCurrencyNoImg  =				CPP PATH(z_at_calcDefaultCurrencyNoImg.sqf);
+z_calcCurrency =							CPP PATH(z_at_calcCurrency.sqf);
 ZUPA_fnc_removeWeaponsAndMagazinesCargo = 	CPP PATH(zupa_fnc_removeWeaponsAndMagazinesCargo.sqf);

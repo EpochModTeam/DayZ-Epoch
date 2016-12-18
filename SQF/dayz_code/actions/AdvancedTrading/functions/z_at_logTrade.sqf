@@ -12,7 +12,7 @@ _Z_logTrade = {
 	case 1 : {localize "STR_EPOCH_TRADE_VEHICLE"};
 	case 2 : {localize "STR_UI_GEAR"};
 	};
-	_tCost = _price call Z_calcDefaultCurrencyNoImg;
+	_tCost = [_price,true] call Z_calcCurrency;
 	_currency = if (Z_SingleCurrency) then {CurrencyName} else {""};
 
 	// Log to client RPT

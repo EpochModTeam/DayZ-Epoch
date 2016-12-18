@@ -66,7 +66,6 @@ if (isNil "Z_AdvancedTradingInit") then {
 	Z_fillBuyingList = 				CPP PATH(z_at_fillBuyingList.sqf);
 	Z_displayFreeSpace = 			CPP PATH(z_at_displayFreeSpace.sqf);
 	Z_allowBuying =  				CPP PATH(z_at_allowBuying.sqf);
-	Z_calcDefaultCurrency =			CPP PATH(z_at_calcDefaultCurrency.sqf);
 	DZE_deleteTradedVehicle =		CPP PATH(DZE_deleteTradedVehicle.sqf);
 
 	Z_AdvancedTradingInit = true;
