@@ -26,6 +26,7 @@ class CfgWeapons
 	#include "Weapon\Sniper\AS50.hpp"
 	#include "Weapon\Sniper\M107.hpp"
 	#include "Weapon\Sniper\KSVK.hpp"
+	#include "Weapon\Sniper\M4SPR.hpp"
 	
 	
 	
