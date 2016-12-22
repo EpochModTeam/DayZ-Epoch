@@ -17,7 +17,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 
 	_configVeh = configFile >> "cfgVehicles" >> "RepairParts" >> _x;
 	_part = getText(_configVeh >> "part");
-	if (isNil "_part") then { _part = "PartGeneric"; };
+	if ((isNil "_part") || (_part == "")) then { _part = "PartGeneric"; };
 
 	// get every damaged part no matter how tiny damage is!
 	_damagePercent = str(round(_damage * 100))+"% Damage";
