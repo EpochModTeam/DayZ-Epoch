@@ -254,7 +254,7 @@ if (_enoughMoney) then {
 			systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_COINS",[_priceToBuy] call BIS_fnc_numberText,CurrencyName];
 		} else {
 			_tCost = "";
-			_tCost = _priceToBuy call z_calcDefaultCurrencyNoImg;
+			_tCost = [_priceToBuy,true] call z_calcCurrency;
 			if (_tCost != "") then { systemChat format[localize "STR_EPOCH_TRADE_BUY_SUCCESS",_tCost]; };
 		};
 	} else {

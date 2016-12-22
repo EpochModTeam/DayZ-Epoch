@@ -45,7 +45,7 @@ _req = {
 
 	_count = _this;
 	_amount = _count * DZE_maintainCurrencyRate;
-	_itemText = if (Z_SingleCurrency) then { CurrencyName } else { _amount call z_calcDefaultCurrencyNoImg };
+	_itemText = if (Z_SingleCurrency) then { CurrencyName } else { [_amount,true] call z_calcCurrency };
 
 	[_amount,_itemText]
 };
