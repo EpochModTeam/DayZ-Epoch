@@ -300,10 +300,6 @@ while {1 == 1} do {
 			//publicVariableServer "PVDZ_serverStoreVar";
 			//player setVariable ["Achievements",dayz_playerAchievements,false];
 
-			if (isServer) then {
-				PVDZ_plr_Save call server_playerSync;
-			};
-
 			dayz_unsaved = false;
 			dayz_lastSave = diag_ticktime;
 		};
