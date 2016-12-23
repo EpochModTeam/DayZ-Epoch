@@ -23,7 +23,7 @@ player setVariable ["NORRN_unconscious", r_player_unconscious, true];
 _sandLevel = ctrlPosition ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400);
 //diag_log [(diag_tickTime - _start) < _timeout , !r_player_unconscious , alive player  ];
 
-autoRunActive = false;
+dayz_autoRun = false;
 
 if (player == vehicle player) then {
 	player playAction "CanNotMove";

@@ -29,17 +29,20 @@ if (isNil "keyboard_keys") then {
 		 if (_ctrlState && !_altState) then {DZE_Z_ctrl = true;};
 	};
 	_autoRun = {
-		if (!autoRunActive) then {
-			autoRunActive = true;
-			autoRunThread = [] spawn {
-				while {autoRunActive} do {
-					if ((player != vehicle player) or (surfaceIsWater (getPosASL player)) or r_fracture_legs) exitWith {call autoRunOff;};
+		if (!dayz_autoRun) then {
+			dayz_autoRun = true;
+			dayz_autoRunThread = [] spawn {
+				while {dayz_autoRun} do {
+					// SurfaceIsWater does not work for ponds
+					if (player != vehicle player or (surfaceIsWater getPosASL player) or (call fn_nearWaterHole) or r_fracture_legs) exitWith {
+						call dayz_autoRunOff;
+					};
 					player playAction "FastF";
 					uiSleep 0.5;
 				};
 			};
 		} else {
-			call autoRunOff;
+			call dayz_autoRunOff;
 		};
 		_handled = true;
 	};
@@ -144,7 +147,7 @@ if (isNil "keyboard_keys") then {
 			r_interrupt = true;
 		};
 		if (DZE_Surrender) then {call dze_surrender_off};
-		if (autoRunActive) then {call autoRunOff;};
+		if (dayz_autoRun) then {call dayz_autoRunOff;};
     };
     // TODO: left/right, when gear open: onKeyDown = "[_this,'onKeyDown',0,107,0,107] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
     _noise = {

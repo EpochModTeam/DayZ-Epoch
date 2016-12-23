@@ -75,7 +75,7 @@ player setVariable ["inCombat", false, true];
 r_player_unconscious = false;
 r_player_cardiac = false;
 _model = typeOf player;
-autoRunActive = false;
+dayz_autoRun = false;
 
 _array = _this;
 if (count _array > 0) then {

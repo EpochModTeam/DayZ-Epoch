@@ -578,6 +578,7 @@ class CfgVehicles {
 	#include "Buildings\Land_telek1.hpp"
 	#include "Buildings\Land_VASICore.hpp"
 	#include "Buildings\Land_Vysilac_FM.hpp"
+	#include "Buildings\Land_pumpa.hpp"
 
 	//Duplicates of Epoch items in DZE\Prop_Defs.hpp
 	//#include "CamoNetting.hpp"
