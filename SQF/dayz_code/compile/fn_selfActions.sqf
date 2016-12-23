@@ -104,10 +104,11 @@ if (_canDo && !_inVehicle && !dayz_isSwimming && _nearWaterHole) then {
 	if (s_player_Drinkfromhands < 0) then {
 		s_player_Drinkfromhands = player addAction [localize "STR_ACTIONS_DRINK2", "\z\addons\dayz_code\actions\player_drinkWater.sqf",player, 0.5, false, true];
 	};
-};
-if (!_nearWaterHole && s_player_Drinkfromhands >= 0) then {
-	player removeAction s_player_Drinkfromhands;
-	s_player_Drinkfromhands = -1;
+} else {
+	if (s_player_Drinkfromhands >= 0) then {
+		player removeAction s_player_Drinkfromhands;
+		s_player_Drinkfromhands = -1;
+	};
 };
 */
 
