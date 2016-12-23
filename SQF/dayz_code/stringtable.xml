@@ -14961,17 +14961,6 @@
 			<German>Kauf in meine Ausrüstung.</German>
 			<Russian>Покупка в снаряжение.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADE_NOTHING">
-			<English>Nothing</English>
-			<Russian>Ничего</Russian>
-			<French>Rien</French>
-			<Spanish>Nada</Spanish>
-			<Italian>Niente</Italian>
-			<Hungarian>Semmi</Hungarian>
-			<Polish>Nic</Polish>
-			<German>Nichts</German>
-			<Czech>Nic</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_TRADE_NO_INFO">
 			<English>No info found</English>
 			<German>Keine Informationen gefunden</German>
@@ -16344,7 +16333,7 @@
 			<German>Funkkontakt zur Gruppe verloren.</German>
 		</Key>
 		<Key ID="STR_EPOCH_RIP">
-			<English>RIP</English>
+			<English>R.I.P.</English>
 		</Key>
 		<Key ID="STR_EPOCH_PROMOTE">
 			<English>Promote</English>

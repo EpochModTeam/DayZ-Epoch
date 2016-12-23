@@ -417,7 +417,7 @@ class AdvancedTrading
 		class RscText_AT18: ZSC_RscText
 		{
 			idc = 7410;
-			text = $STR_EPOCH_TRADE_NOTHING;
+			text = $STR_EVAL_TYPENOTHING;
 			x = 0.46 * safezoneW + safezoneX;
 			y = 0.72 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
