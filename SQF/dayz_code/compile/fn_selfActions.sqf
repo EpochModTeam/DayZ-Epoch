@@ -5,7 +5,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- [] call fnc_usec_selfActions;
 ************************************************************/
 if (dayz_actionInProgress) exitWith {};
-private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names","_nearWaterHole",
+private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names",
 "_hasKey","_oldOwner","_hasAttached","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild",
 "_player_lockUnlock_crtl","_displayName","_hasIgnators","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached",
 "_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget",
@@ -99,8 +99,7 @@ if ((_primaryWeapon in Dayz_fishingItems) && {!dayz_fishingInprogress} && {_inVe
 
 /*
 //FPS killer. Moved to CfgVehicles for Land_pumpa
-_nearWaterHole = call fn_nearWaterHole;
-if (_canDo && !_inVehicle && !dayz_isSwimming && _nearWaterHole) then {
+if (_canDo && !_inVehicle && !dayz_isSwimming && (call fn_nearWaterHole)) then {
 	if (s_player_Drinkfromhands < 0) then {
 		s_player_Drinkfromhands = player addAction [localize "STR_ACTIONS_DRINK2", "\z\addons\dayz_code\actions\player_drinkWater.sqf",player, 0.5, false, true];
 	};
