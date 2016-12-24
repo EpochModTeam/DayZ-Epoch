@@ -24,6 +24,7 @@
 [FIXED] Self actions sometimes duplicating when changing clothes and looking at a safe. @jOoPs @ebayShopper
 [FIXED] Wrong bleeding icon on vanilla status UI. @jOoPs @ebayShopper
 [FIXED] It is no longer possible to autoRun under ponds on Chernarus. #1827 @schwanzkopfhegel
+[FIXED] Hive connection error after the first and only online player disconnects during the object stream at server start up. #1822 @AirwavesMan @ebayShopper
 
 [NOTE] Updated server files were released with the four hotfixes below on December 11th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade

@@ -1,4 +1,4 @@
-private ["_date","_year","_month","_day","_hour","_minute","_date1","_hiveResponse","_key","_objectCount","_dir","_point","_i","_action","_dam","_selection","_wantExplosiveParts","_entity","_worldspace","_damage","_booleans","_rawData","_ObjectID","_class","_CharacterID","_inventory","_hitpoints","_fuel","_id","_objectArray","_script","_result","_outcome"];
+private ["_date","_year","_month","_day","_hour","_minute","_date1","_key","_objectCount","_dir","_point","_i","_action","_dam","_selection","_wantExplosiveParts","_entity","_worldspace","_damage","_booleans","_rawData","_ObjectID","_class","_CharacterID","_inventory","_hitpoints","_fuel","_id","_objectArray","_script","_result","_outcome","_shutdown","_res"];
 [] execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
@@ -40,8 +40,24 @@ if (_outcome == "PASS") then {
 /* STREAM OBJECTS */
 //Send the key
 _timeStart = diag_tickTime;
-_key = format["CHILD:302:%1:%2:",dayZ_instance, _legacyStreamingMethod];
-_result = _key call server_hiveReadWrite;
+
+for "_i" from 1 to 5 do {
+	diag_log "HIVE: trying to get objects";
+	_key = format["CHILD:302:%1:%2:",dayZ_instance, _legacyStreamingMethod];
+	_result = _key call server_hiveReadWrite;  
+	if (typeName _result == "STRING") then {
+		_shutdown = format["CHILD:400:%1:",(profileNamespace getVariable "SUPERKEY")];
+		_res = _shutdown call server_hiveReadWrite;
+		diag_log ("HIVE: attempt to kill.. HiveExt response:"+str(_res));
+	} else {
+		diag_log ("HIVE: found "+str(_result select 1)+" objects" );
+		_i = 99; // break
+	};
+};
+
+if (typeName _result == "STRING") exitWith {
+	diag_log "HIVE: Connection error. Server_monitor.sqf is exiting.";
+};	
 
 diag_log "HIVE: Request sent";
 _myArray = [];
@@ -50,6 +66,7 @@ _status = _result select 0; //Process result
 _val = _result select 1;
 if (_legacyStreamingMethod) then {
 	if (_status == "ObjectStreamStart") then {
+		profileNamespace setVariable ["SUPERKEY",(_result select 2)];
 		_hiveLoaded = true;
 		//Stream Objects
 		diag_log ("HIVE: Commence Object Streaming...");
@@ -66,6 +83,7 @@ if (_legacyStreamingMethod) then {
 		profileNamespace setVariable["lastFN",_fileName];
 		saveProfileNamespace;
 		if (_status == "ObjectStreamStart") then {
+			profileNamespace setVariable ["SUPERKEY",(_result select 2)];
 			_hiveLoaded = true;
 			_myArray = Call Compile PreProcessFile _fileName;
 			_key = format["CHILD:302:%1:%2:",_lastFN, _legacyStreamingMethod];
@@ -73,12 +91,18 @@ if (_legacyStreamingMethod) then {
 		};
 	} else {
 		if (_status == "ObjectStreamStart") then {
+			profileNamespace setVariable ["SUPERKEY",(_result select 2)];
 			_hiveLoaded = true;
 		};
 	};
 };
 
 diag_log ("HIVE: Streamed " + str(_val) + " objects");
+
+// Don't spawn objects if no clients are online (createVehicle fails with Ref to nonnetwork object)
+if ((playersNumber west + playersNumber civilian) == 0) exitWith {
+	diag_log "All clients disconnected. Server_monitor.sqf is exiting.";
+};
 
 {
 	private ["_object","_posATL"];

@@ -149,6 +149,7 @@ server_hiveReadWrite = {
 	_data = "HiveExt" callExtension _key;
 	//diag_log ("READ/WRITE: " +str(_data));
 	_resultArray = call compile str formatText["%1", _data];
+	if (isNil "_resultArray") then {_resultArray = "HIVE CONNECTION ERROR";};
 	_resultArray
 };
 

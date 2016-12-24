@@ -111,8 +111,8 @@ execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
 
 if (isServer) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\dynamic_vehicle.sqf";
-	call compile preprocessFileLineNumbers "\z\addons\dayz_server\traders\tavi.sqf"; //Add trader agents
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\server_monitor.sqf";
+	execVM "\z\addons\dayz_server\traders\tavi.sqf"; //Add trader agents
 	
 	//Must be global spawned, so players don't fall through buildings (might be best to spilt these to important, not important)
 	if (dayz_POIs && (toLower worldName == "chernarus")) then { execVM "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf"; };
