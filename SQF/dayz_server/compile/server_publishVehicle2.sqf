@@ -1,5 +1,7 @@
 private ["_activatingPlayer","_isOK","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey"];
 //PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
 _worldspace = 	_this select 0;
 _class = 		_this select 1;
 _donotusekey =	_this select 2;
@@ -26,7 +28,11 @@ _uid = _worldspace call dayz_objectUID2;
 
 //Send request
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, [], [], 1,_uid];
+
+#ifdef OBJECT_DEBUG
 diag_log ("HIVE: WRITE: "+ str(_key)); 
+#endif
+
 _key call server_hiveWrite;
 
 // Switched to spawn so we can wait a bit for the ID
@@ -47,12 +53,18 @@ _key call server_hiveWrite;
 	while {_retry < 10} do {
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
+		#ifdef OBJECT_DEBUG
 		diag_log ("HIVE: WRITE: "+ str(_key));
+		#endif
+		
 		_result = _key call server_hiveReadWrite;
 		_outcome = _result select 0;
 		if (_outcome == "PASS") then {
 			_oid = _result select 1;
+			#ifdef OBJECT_DEBUG
 			diag_log("CUSTOM: Selected " + str(_oid));
+			#endif
+			
 			_done = true;
 			_retry = 100;
 
