@@ -30,7 +30,6 @@ DZE_SafeZoneNoBuildItems = []; // Array of object class names not allowed to bui
 DZE_SafeZoneNoBuildDistance = 150; // Distance from safe zones listed above to disallow building near.
 DZE_NoBuildNear = []; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
 DZE_NoBuildNearDistance = 150; // Distance from blacklisted objects to disallow building near.
-DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
 DZE_DisabledChannels = [(localize "str_channel_side"),(localize "str_channel_global"),(localize "str_channel_command")]; //List of disabled voice channels. Other channels are: "str_channel_group","str_channel_direct","str_channel_vehicle"
@@ -58,7 +57,8 @@ DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
 // Trader Menu
 DZE_ConfigTrader = true; // Use config files for traders instead of database. Loads faster and uses less network traffic. False enables database traders with legacy trader menu.
 DZE_serverLogTrades = true; // Log trades to server RPT (sent with publicVariableServer on every trade)
-DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; // Array of gem prices, only works with config traders.
+DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
+DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; // Array of gem prices, only works with config traders. Set DZE_GemWorthArray=[]; to disable return change in gems.
 DZE_SaleRequiresKey = false; // Require the player has the key for a vehicle in order to sell it. The key can be in the player's toolbelt, backpack, or the vehicle's inventory.
 DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
 Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
