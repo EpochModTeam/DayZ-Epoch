@@ -23,10 +23,10 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 	_damagePercent = str(round(_damage * 100))+"% Damage";
 	if (_damage > 0) then {
 		_color = switch true do {
-			case (_damage >= 0 && _damage <= 0.25): {"color='#00ff00'"}; //green
-			case (_damage > 0.25 && _damage <= 0.50): {"color='#ffff00'"}; //yellow
-			case (_damage > 0.50 && _damage <= 0.75): {"color='#ff8800'"}; //orange
-			case (_damage > 0.75 && _damage <= 1): {"color='#ff0000'"}; //red
+			case (_damage <= 0.25): {"color='#00ff00'"}; //green
+			case (_damage <= 0.50): {"color='#ffff00'"}; //yellow
+			case (_damage <= 0.75): {"color='#ff8800'"}; //orange 
+			default {"color='#ff0000'"}; //red
 		};
 		
 		_cmpt = format[localize "str_actions_medical_09",_cmpt,_damagePercent];
