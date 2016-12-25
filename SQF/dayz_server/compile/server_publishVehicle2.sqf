@@ -26,7 +26,11 @@ _uid = _worldspace call dayz_objectUID2;
 
 //Send request
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, [], [], 1,_uid];
+
+#ifdef OBJECT_DEBUG
 diag_log ("HIVE: WRITE: "+ str(_key)); 
+#endif
+
 _key call server_hiveWrite;
 
 // Switched to spawn so we can wait a bit for the ID
@@ -47,12 +51,18 @@ _key call server_hiveWrite;
 	while {_retry < 10} do {
 		// GET DB ID
 		_key = format["CHILD:388:%1:",_uid];
+		#ifdef OBJECT_DEBUG
 		diag_log ("HIVE: WRITE: "+ str(_key));
+		#endif
+		
 		_result = _key call server_hiveReadWrite;
 		_outcome = _result select 0;
 		if (_outcome == "PASS") then {
 			_oid = _result select 1;
+			#ifdef OBJECT_DEBUG
 			diag_log("CUSTOM: Selected " + str(_oid));
+			#endif
+			
 			_done = true;
 			_retry = 100;
 

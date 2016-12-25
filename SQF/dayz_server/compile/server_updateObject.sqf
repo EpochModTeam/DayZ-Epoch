@@ -153,8 +153,10 @@ _object_damage = {
 		} else {
 			_key = format["CHILD:306:%1:",_objectID] + str _array + ":" + str _damage + ":";
 		};
-		
+		#ifdef OBJECT_DEBUG
 		diag_log ("HIVE: WRITE: "+ str(_key));
+		#endif
+		
 		_key call server_hiveWrite;   
 	};
 };
@@ -169,8 +171,9 @@ _objWallDamage = {
 	} else {
 		_key = format["CHILD:306:%1:%2:%3:",_objectID,[],_damage];
 	};
-	
+	#ifdef OBJECT_DEBUG
 	diag_log ("HIVE: WRITE: "+ str(_key));
+	#endif
 	
 	_key call server_hiveWrite;
 };
@@ -188,7 +191,9 @@ _object_killed = {
 	};
 	_key call server_hiveWrite;
 	
+	#ifdef OBJECT_DEBUG
 	diag_log format["DELETE: Deleted by KEY: %1",_key];
+	#endif
 	
 	if (((typeOf _object) in DayZ_removableObjects) or ((typeOf _object) in DZE_isRemovable)) then {[_objectID,_objectUID] call server_deleteObj;};
 };

@@ -12,7 +12,9 @@ _fuel =			_this select 7;
 _allowed = [_object, "Server"] call check_publishobject;
 if (!_allowed) exitWith { deleteVehicle _object; };
 
+#ifdef OBJECT_DEBUG
 diag_log ("PUBLISH: Attempt " + str(_object));
+#endif
 
 //get UID
 _uid = _worldspace call dayz_objectUID2;
