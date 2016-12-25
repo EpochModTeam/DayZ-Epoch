@@ -1,4 +1,5 @@
 private ["_class","_inventory","_hitpoints","_damage","_fuel","_uid","_charID","_object","_worldspace","_key","_allowed"];
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 _charID =		_this select 0;
 _object = 		_this select 1;

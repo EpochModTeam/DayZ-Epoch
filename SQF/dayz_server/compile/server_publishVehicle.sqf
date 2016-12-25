@@ -1,5 +1,7 @@
 private ["_object","_worldspace","_location","_dir","_class","_uid","_dam","_hitpoints","_selection","_array","_damage","_fuel","_key","_totaldam","_spawnDMG","_characterID"];
 //[_veh,[_dir,_location],"V3S_Civ",true]
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
 _class = 		_this select 2;

@@ -1,5 +1,7 @@
 private ["_activatingPlayer","_isOK","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey"];
 //PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
 _class = 		_this select 2;

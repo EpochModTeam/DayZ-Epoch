@@ -445,7 +445,7 @@ if (_canBuild select 0) then {
 					};
 					publicVariableServer "PVDZ_obj_Publish";
 
-					format[localize "str_epoch_player_140",_combinationDisplay,_text] call dayz_rollingMessages;
+					[format[localize "str_epoch_player_140",_combinationDisplay,_text],1] call dayz_rollingMessages;
                     systemChat format[localize "str_epoch_player_140",_combinationDisplay,_text];
 
 				} else {
