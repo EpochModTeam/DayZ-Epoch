@@ -930,7 +930,7 @@
 			<French>Humanité</French>
 			<German>Menschlichkeit</German>
 		</Key>
-		<Key ID="str_actions_self_destorytent">
+		<Key ID="str_actions_self_destroytent">
 			<English>Destroy Tent</English>
 			<Russian>Уничтожить палатку</Russian>
 			<Spanish>Destruye Tent</Spanish>

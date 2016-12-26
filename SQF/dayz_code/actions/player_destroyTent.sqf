@@ -14,7 +14,7 @@ _matchArray = [];
 	if (_x IN items player) then {
 		_matchArray set [count _matchArray, _x];
 	};
-} count Dayz_Ignators;
+} count DayZ_Ignitors;
 
 //Count how many fuelcans the player has incase they have more then one.
 {
@@ -31,8 +31,8 @@ if ((count _matchArray == 0)) exitwith { systemChat (localize ("str_setFireMatch
 player playActionNow "Medic";
 
 //Actionmenu tools
-player removeAction s_player_destorytent;
-s_player_destorytent = -1;
+player removeAction s_player_destroytent;
+s_player_destroytent = -1;
 
 //Make sure you can only destory once
 _alreadyDestorying = _obj getVariable["alreadyDestorying",0];
