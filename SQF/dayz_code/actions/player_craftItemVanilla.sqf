@@ -10,9 +10,10 @@
 	failChance = 1;
 */
 //diag_log("crafting system");
-dayz_actionInProgress = true;
 private ["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace","_classname","_isClass","_onLadder","_hasTools","_avail","_selection","_item","_amount","_itemName","_freeSlots","_slotType","_i","_j","_dis","_sfx"];
 
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_63" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 //diag_log(str(isnil "r_player_crafting"));
 
 //Process has started
