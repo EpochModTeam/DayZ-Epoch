@@ -100,6 +100,9 @@ if (_canDo) then {
 			if (_x == "ItemKnife") then {
 				{if (_x in Dayz_Gutting) exitWith {_hastoolweapon = true};} forEach (items player);
 			};
+			if (_x == "ItemMatchbox") then {
+				{if (_x in Dayz_Ignators) exitWith {_hastoolweapon = true};} forEach (items player);
+			};
 			if (!_hastoolweapon) exitWith { _craft_doLoop = false; _missingTools = true; _missing = _x; };
 		} forEach _selectedRecipeTools;
 
