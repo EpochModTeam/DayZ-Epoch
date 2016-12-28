@@ -230,7 +230,7 @@ while {1 == 1} do {
 		};
 		_result = r_player_blood - _bloodloss;
 		if (_result < 0) then {
-			_id = [player,"rad"] spawn player_death;
+			[player,"rad"] call player_death;
 		} else {
 			r_player_blood = _result;
 		};

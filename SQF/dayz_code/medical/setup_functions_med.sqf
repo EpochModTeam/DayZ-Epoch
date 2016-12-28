@@ -8,7 +8,7 @@ fnc_usec_damageHandle = {
 	_unit = _this select 0;
 	mydamage_eh1 = _unit addeventhandler ["HandleDamage",{_this call fnc_usec_damageHandler;} ];
 	mydamage_eh2 = _unit addEventHandler ["Fired", {_this call player_fired;}];
-	mydamage_eh3 = _unit addEventHandler ["Killed", {_id = [] spawn player_death;}];
+	mydamage_eh3 = _unit addEventHandler ["Killed", {[_this,"find"] call player_death;}];
 };
 
 fnc_usec_pitchWhine = {

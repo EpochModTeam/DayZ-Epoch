@@ -409,7 +409,7 @@ if (_type == 1) then {
     if (_damage > 4) then {
         //serious ballistic damage
         if (_unit == player) then {
-            _id = [_source,"explosion",_ammo] spawn player_death;
+            [_source,"explosion",_ammo] call player_death;
         };
     } else {
         if (_damage > 2) then {
@@ -429,7 +429,7 @@ if (_type == 2) then {
     if (_damage > 4) then {
         //serious ballistic damage
         if (_unit == player) then {
-            _id = [_source,"shotheavy"] spawn player_death;
+            [_source,"shotheavy"] call player_death;
         };
     } else {
         if (_damage > 2) then {

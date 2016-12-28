@@ -2,7 +2,7 @@
 	DayZ Epoch anti wall
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_vehicle","_vehiclePos","_playerPos","_activated","_id","_intersectsWith"];
+private ["_vehicle","_vehiclePos","_playerPos","_activated","_intersectsWith"];
 
 _activated = false;
 _vehicle = _this;
@@ -40,7 +40,7 @@ if(_activated) then {
 	call {
 		if (DZE_AntiWallCounter == DZE_AntiWallLimit) exitWith {
 			localize "str_epoch_player_9" call dayz_rollingMessages;
-			_id = [player,"crushed"] spawn player_death;
+			[player,"crushed"] call player_death;
 		};
 		if ((_vehicle emptyPositions "driver") > 0) exitWith {
 			localize "STR_EPOCH_ACTIONS_15" call dayz_rollingMessages;
@@ -64,7 +64,7 @@ if(_activated) then {
 		};
 		// kill player if none of the above are matched
 		localize "str_epoch_player_9" call dayz_rollingMessages;
-		_id = [player,"crushed"] spawn player_death;
+		[player,"crushed"] call player_death;
 	};
 	
 } else {

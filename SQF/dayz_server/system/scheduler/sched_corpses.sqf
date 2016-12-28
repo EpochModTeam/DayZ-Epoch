@@ -41,8 +41,8 @@ sched_corpses = {
 			} else {
 				//Only spawn flies on actual dead player, otherwise delete the body (clean up left over ghost from relogging, sometimes it is not deleted automatically by Arma or onPlayerDisconnect)
 				//AI mods will need to setVariable "bodyName" on their dead units to prevent them being cleaned up
+				_deathTime = _x getVariable ["sched_co_deathTime", -1];
 				if (_x getVariable["bodyName",""] != "") then {
-					_deathTime = _x getVariable ["sched_co_deathTime", -1];
 					if (_deathTime == -1) then {
 						_deathPos = _x getVariable ["deathPos",respawn_west_original];
 						/*_cpos = getPosATL _x;
@@ -101,8 +101,16 @@ sched_corpses = {
 						publicVariable "PVCDZ_flies";
 					};
 				} else {
-					_x call sched_co_deleteVehicle;
-					_delQtyG = _delQtyG + 1;
+					if (_deathTime == -1) then {
+						_deathTime = diag_tickTime;
+						_x setVariable ["sched_co_deathTime", _deathTime];
+					} else {
+						// Wait 30s to make sure the server had time to setVariable "bodyName". PVDZ_plr_Death can be delayed by a few seconds.
+						if (diag_tickTime - _deathTime > 30) then {
+							_x call sched_co_deleteVehicle;
+							_delQtyG = _delQtyG + 1;
+						};
+					};
 				};
 			};
 		};

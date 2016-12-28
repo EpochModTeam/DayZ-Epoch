@@ -1,7 +1,6 @@
 /*
-	WARNING: The player object is deleted by Arma shortly after onPlayerDisconnected fires
-	because DayZ uses disabledAI=true:
-	https://community.bistudio.com/wiki/Description.ext#disabledAI
+	WARNING: Alive player objects are deleted by Arma shortly after onPlayerDisconnected fires
+	because DayZ uses disabledAI=1 https://community.bistudio.com/wiki/Description.ext#disabledAI
 	
 	References to the player object after that point will return objNull, so this function
 	and server_playerSync must be fast or the player will not save.
@@ -12,14 +11,14 @@ _playerUID = _this select 0;
 _playerName = _this select 1;
 _playerObj = nil;
 
-//Lets search all playerable units looking for the objects that matches our playerUID
+//Lets search all players looking for the object that matches our UID
 {
 	if ((getPlayerUID _x) == _playerUID) exitWith { _playerObj = _x; _playerPos = getPosATL _playerObj;};
 } count playableUnits;
 
-//If for some reason the playerOBj does not exist lets exit the disconnect system.
+//If playerObj is not in playableUnits then lets exit the disconnect system.
 if (isNil "_playerObj") exitWith {
-	diag_log format["%1: nil player object, _this:%2", __FILE__, _this];
+	diag_log format["%1: Player object is not in playableUnits. This is normal if the player just died. _this:%2", __FILE__, _this];
 };
 
 //diag_log format["get: %1 (%2), sent: %3 (%4)",typeName (getPlayerUID _playerObj), getPlayerUID _playerObj, typeName _playerUID, _playerUID];
@@ -31,7 +30,8 @@ _inCombat = _playerObj getVariable ["inCombat",false];
 _Sepsis = _playerObj getVariable["USEC_Sepsis",false];
 
 //Login processing do not sync
-if (_playerUID in dayz_ghostPlayers) exitwith { 
+if (_playerUID in dayz_ghostPlayers) exitWith {
+	//Note player is alive (see set in dayz_ghostPlayers below)
 	diag_log format["ERROR: Cannot Sync Character [%1,%2] Still processing login",_playerName,_playerUID]; 
 
 	//Lets remove the object.
@@ -81,7 +81,7 @@ if (_characterID != "?") then {
 		{[_x,"gear"] call server_updateObject} count (nearestObjects [_playerPos,DayZ_GearedObjects,10]);
 	};
 	
-	[_playerUID,_characterID,3,_playerName,((getPosATL _playerObj) call fa_coor2str)] call dayz_recordLogin;
+	[_playerUID,_characterID,3,_playerName,(_playerPos call fa_coor2str)] call dayz_recordLogin;
 };
 
 if (alive _playerObj) then {

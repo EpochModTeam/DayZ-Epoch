@@ -63,6 +63,7 @@ if (_playerName != "unknown" or _sourceName != "unknown") then {
 	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgRolling or DZE_DeathMsgDynamicText) then {
 		PVDZE_deathMessage = _message;
 		//Don't use regular PV here since JIP clients don't need it
+		owner _newObject publicVariableClient "PVDZE_deathMessage"; //Send to dead player (not in playableUnits)
 		{
 			if (isPlayer _x) then {
 				owner _x publicVariableClient "PVDZE_deathMessage";

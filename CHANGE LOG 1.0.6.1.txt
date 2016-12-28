@@ -16,6 +16,8 @@
 [FIXED] M24 ammo prices are now 1/4 of DMR ammo prices, so no profit can be made by combining M24 rounds. @looter809 @ebayShopper
 [FIXED] Full cinderblock walls now work properly with vector building #1813. @DeVloek @icomrade
 [FIXED] Death message showing incorrectly when players suicide under certain conditions. @oiad @ebayShopper
+[FIXED] Death message sometimes showing incorrectly due to spawn delay. #1833 @schwanzkopfhegel @ebayShopper
+[FIXED] Corpses occasionally being deleted right away due to delay between PVS and bodyName setVariable. #1825 @ebayShopper
 [FIXED] WoodenArrow and other WeaponHolderBase inherited objects catching fire when destroyed due to destrType. #1815 @DeVloek @ebayShopper
 [FIXED] Arrows floating in air when shot at same position against a wall multiple times. #1815 @DeVloek @ebayShopper
 [FIXED] Swimming in ground glitch when relogging at certain positions on certain maps like Napf and Tavi. @ebayShopper

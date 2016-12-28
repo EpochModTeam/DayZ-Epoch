@@ -33,7 +33,7 @@ BIS_Effects_startEvent = {
 			} count DZE_SafeZonePosArray;
 			player action ["getOut", (_this select 0)];
 			if (!_cancel && {!((_this select 0) iskindof "car")}) then {
-				[player, "explosion"] spawn player_death;
+				[player, "explosion"] call player_death;
 			};
 		};
 	};
