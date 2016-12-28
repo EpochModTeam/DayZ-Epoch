@@ -13,8 +13,8 @@ dayz_antiWallHack = 1; //DayZ AntiWallhack / 1 = enabled // 0 = disabled, Adds i
 dayz_REsec = 1; // DayZ RE Security / 1 = enabled // 0 = disabled
 dayz_enableRules = true; //Enables a nice little news/rules feed on player login (make sure to keep the lists quick).
 dayz_quickSwitch = false; //Turns on forced animation for weapon switch. (hotkeys 1,2,3) False = enable animations, True = disable animations
-dayz_POIs = true;
-dayz_infectiousWaterholes = true;
+dayz_POIs = false;
+dayz_infectiousWaterholes = false;
 dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
 
