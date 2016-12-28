@@ -34,5 +34,7 @@
 [FIXED] Error with object publishing when snap building is disabled. @ebayShopper
 [FIXED] Error handling upgraded 1051 databases that resulted in a <null> value for "rh_factor" and array for "bloodtype" in character_data medical field. @ebayShopper
 [FIXED] Error in server_playerSetup that resulted in a <null> value for dayz_onBack in character_data inventory if player had no weapon on back. @ebayShopper 
+[FIXED] Doors and plots not getting cleaned up properly. see new MaintenanceObjects variable and explenation in HiveExt.ini. Fix present in server package 1.0.6C @icomrade
+[FIXED] Generator inventory not saving #1831 @icomrade @schwanzkopfhegel
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.
