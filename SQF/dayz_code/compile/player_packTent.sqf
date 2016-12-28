@@ -3,6 +3,9 @@
 */
 if (dayz_actionInProgress) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_activatingPlayer","_alreadyPacking","_backpacks","_bag","_campItems","_countr","_dir","_holder","_magazines","_obj","_objWpnQty","_objWpnTypes","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons"];
+
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID = _obj getVariable["ObjectID","0"];
@@ -10,6 +13,9 @@ _objectUID = _obj getVariable["ObjectUID","0"];
 if (DZE_permanentPlot) then {
 	_ownerID = _obj getVariable["ownerPUID","0"];
 };
+
+_playerNear = _obj call dze_isnearest_player;
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_16" call dayz_rollingMessages;};
 
 _packobj = getText (configFile >> "CfgVehicles" >> typeOf _obj >> "pack");
 _activatingPlayer = player;
