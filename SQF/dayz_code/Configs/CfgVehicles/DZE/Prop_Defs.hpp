@@ -404,7 +404,7 @@ class FireBarrel_DZ:Land_Fire_barrel
 	armor = 400;
 	vehicleClass = "Fortifications";
 	constructioncount = 2;
-	removeoutput[] = {{"ItemFuelBarrelEmpty",1}};
+	removeoutput[] = {{"ItemFireBarrel_kit",1}};
 	nounderground = 0;
 	/*class EventHandlers
 		{
