@@ -11999,7 +11999,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_149">
 			<English>Crafting needs a %1 within %2 meters</English>
-			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 benötigt.</German>
+			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 meter(n) benötigt.</German>
 			<Russian>Для создания требуется %1 вблизи %2 метров</Russian>
 			<Dutch>Hiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 			<Czech>Výroba potřebuje %1 v rámci %2 metrů</Czech>
