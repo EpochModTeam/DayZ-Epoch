@@ -185,7 +185,7 @@
 		</Key>
 		<Key ID="str_actions_self_10">
 			<English>Fill all fuel containers</English>
-			<German>Kraftstoffkanister füllen</German>
+			<German>Alle Kraftstoffbehälter füllen</German>
 			<Russian>Наполнить канистры</Russian>
 			<Spanish>Rellene FuelCan</Spanish>
 			<French>remplissez FuelCan</French>
@@ -1311,11 +1311,11 @@
 		</Key>
 		<Key ID="str_fill_notenough">
 			<English>%1 does not have enough fuel. Estimated %2 litres left (You need %3 litres)</English>
-			<German>%1 hat nicht genug Treibstoff, um einen Benzinkanister komplett zu füllen.(Ungefähr %2 Liter übrig)</German>
+			<German>%1 hat nicht genug Kraftstoff, um einen Kraftstoffbehälter komplett zu füllen. Es sind noch ungefähr %2 Liter übrig. (Du brauchst %3 Liter)</German>
 		</Key>
 		<Key ID="str_fill_success">
 			<English>You have filled %1 fuel container(s) with fuel. %2 has an estimated %3 litres of fuel left.</English>
-			<German>%1 Benzinkanister wurde(n) erfolgreich mit Treibstoff befüllt. %2 hat noch ungefähr %3 Liter Treibstoff übrig.</German>
+			<German>%1 Kraftstoffbehälter wurde(n) erfolgreich mit Kraftstoff befüllt. %2 hat noch ungefähr %3 Liter Kraftstoff übrig.</German>
 		</Key>
 		<Key ID="str_siphon_canceled">
 			<English>Canceled siphon</English>
@@ -6809,7 +6809,7 @@
 		</Key>
 		<Key ID="str_player_10">
 			<English>You have no empty fuel containers.</English>
-			<German>Du hast keine leeren Kanister.</German>
+			<German>Du hast keinen leeren Kraftstoffbehälter.</German>
 			<Russian>У вас нет пустых канистр.</Russian>
 			<Spanish>No tienes bidones vacíos</Spanish>
 			<French>Vous n&apos;avez pas de jerrican vide.</French>
@@ -11396,7 +11396,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_34">
 			<English>You are already filling a fuel container.</English>
-			<German>Befüllen des Kanisters bereits im Gange.</German>
+			<German>Befüllen des Kraftstoffbehälters bereits im Gange.</German>
 			<Russian>Канистра уже наполняется.</Russian>
 			<Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
 			<French>Le remplissage du jerrycan est déjà en cours.</French>
@@ -11999,7 +11999,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_149">
 			<English>Crafting needs a %1 within %2 meters</English>
-			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 meter(n) benötigt.</German>
+			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 Meter(n) benötigt.</German>
 			<Russian>Для создания требуется %1 вблизи %2 метров</Russian>
 			<Dutch>Hiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 			<Czech>Výroba potřebuje %1 v rámci %2 metrů</Czech>
