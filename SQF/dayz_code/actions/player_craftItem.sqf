@@ -23,7 +23,7 @@ class ItemActions
 	};
 };
 */
-private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
+private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_63" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -44,6 +44,7 @@ _outputWeapons = [];
 _selectedRecipeOutput = [];
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
+_boiled = false;
 
 // Need Near Requirements
 _needNear = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "neednearby");
@@ -195,6 +196,9 @@ if (_canDo) then {
 									//diag_log format["debug remove: %1 of: %2", _configParent, _x];
 									if (_x == "ItemWaterbottle" || _configParent == "ItemWaterbottle") then {
 										_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
+										if (_x in ["ItemWaterbottle9ozBoiled","ItemWaterbottle8ozBoiled","ItemWaterbottle7ozBoiled","ItemWaterbottle6ozBoiled","ItemWaterbottle5ozBoiled","ItemWaterbottle4ozBoiled","ItemWaterbottle3ozBoiled","ItemWaterbottle2ozBoiled","ItemWaterBottleBoiled"]) then {
+											_boiled = true;
+										};
 									};
 									_temp_removed_array set [count _temp_removed_array,_x];
 								};
@@ -236,7 +240,11 @@ if (_canDo) then {
 								_countOut = _x select 1;
 								if (_itemOut == "ItemWaterbottleUnfilled") then {
 									if (_waterLevel > 0) then {
-										_itemOut = format["ItemWaterbottle%1oz",_waterLevel];
+										if (_boiled) then {
+											_itemOut = format["ItemWaterbottle%1ozBoiled",_waterLevel];
+										} else {
+											_itemOut = format["ItemWaterbottle%1oz",_waterLevel];
+										};
 									};
 								};
 								// diag_log format["Checking for water level: %1", _waterLevel];

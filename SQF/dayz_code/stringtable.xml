@@ -14766,6 +14766,96 @@
 			<German>Wasserflasche mit 900ml Wasser.</German>
 			<Russian>Бутылка с 9 унциями воды.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED">
+			<English>Water Bottle (Boiled 1oz)</English>
+			<German>Wasserflasche (abgekocht 100ml)</German>
+			<Russian>Бутылка (чистая вода 1 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED_DESC">
+			<English>Water Bottle with 1oz of water (Boiled).</English>
+			<German>Wasserflasche mit 100ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 1 унцией воды (чистая вода).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED">
+			<English>Water Bottle (Boiled 2oz)</English>
+			<German>Wasserflasche (abgekocht 200ml)</German>
+			<Russian>Бутылка (чистая вода 2 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED_DESC">
+			<English>Water Bottle with 2oz of water (Boiled).</English>
+			<German>Wasserflasche mit 200ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 2 унциями воды (чистая вода).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED">
+			<English>Water Bottle (Boiled 3oz)</English>
+			<German>Wasserflasche (abgekocht 300ml)</German>
+			<Russian>Бутылка (чистая вода 3 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED_DESC">
+			<English>Water Bottle with 3oz of water (Boiled).</English>
+			<German>Wasserflasche mit 300ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 3 унциями воды (чистая вода).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED">
+			<English>Water Bottle (Boiled 4oz)</English>
+			<German>Wasserflasche (abgekocht 400ml)</German>
+			<Russian>Бутылка (чистая вода 4 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED_DESC">
+			<English>Water Bottle with 4oz of water (Boiled).</English>
+			<German>Wasserflasche mit 400ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 4 унциями воды (чистая вода).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED">
+			<English>Water Bottle (Boiled 5oz)</English>
+			<German>Wasserflasche (abgekocht 500ml)</German>
+			<Russian>Бутылка (чистая вода 5 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED_DESC">
+			<English>Water Bottle with 5oz of water (Boiled).</English>
+			<German>Wasserflasche mit 500ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 5 унциями воды (чистая вода).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED">
+			<English>Water Bottle (Boiled 6oz)</English>
+			<German>Wasserflasche (abgekocht 600ml)</German>
+			<Russian>Бутылка (чистая вода 6 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED_DESC">
+			<English>Water Bottle with 6oz of water (Boiled).</English>
+			<German>Wasserflasche mit 600ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 6 унциями воды (чистая вода).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED">
+			<English>Water Bottle (Boiled 7oz)</English>
+			<German>Wasserflasche (abgekocht 700ml)</German>
+			<Russian>Бутылка (чистая вода 7 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED_DESC">
+			<English>Water Bottle with 7oz of water (Boiled).</English>
+			<German>Wasserflasche mit 700ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 7 унциями воды (чистая вода).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED">
+			<English>Water Bottle (Boiled 8oz)</English>
+			<German>Wasserflasche (abgekocht 800ml)</German>
+			<Russian>Бутылка (чистая вода 8 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED_DESC">
+			<English>Water Bottle with 8oz of water (Boiled).</English>
+			<German>Wasserflasche mit 800ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 8 унциями воды (чистая вода).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED">
+			<English>Water Bottle (Boiled 9oz)</English>
+			<German>Wasserflasche (abgekocht 900ml)</German>
+			<Russian>Бутылка (чистая вода 9 унций)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED_DESC">
+			<English>Water Bottle with 9oz of water (Boiled).</English>
+			<German>Wasserflasche mit 900ml Wasser (abgekocht).</German>
+			<Russian>Бутылка с 9 унциями воды (чистая вода).</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE">
 			<English>Briefcase</English>
 			<German>Koffer</German>

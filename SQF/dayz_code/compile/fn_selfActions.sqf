@@ -238,7 +238,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_weaponsPlayer = weapons player;
 	_hasCrowbar = "ItemCrowbar" in _itemsPlayer or "MeleeCrowbar" in _weaponsPlayer or dayz_onBack == "MeleeCrowbar";
 	_hasToolbox = "ItemToolbox" in _itemsPlayer;
-	_hasbottleitem = (("ItemWaterBottle" in _magazinesPlayer) || ("ItemWaterBottleInfected" in _magazinesPlayer) || ("ItemWaterBottleSafe" in _magazinesPlayer));
+	_hasbottleitem = (("ItemWaterBottle" in _magazinesPlayer) || {"ItemWaterBottleInfected" in _magazinesPlayer} || {"ItemWaterBottleSafe" in _magazinesPlayer} || {"ItemWaterBottleBoiled" in _magazinesPlayer});
 	_isAlive = alive _cursorTarget;
 	_text = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
 	_isPlant = _typeOfCursorTarget in Dayz_plants;
@@ -351,7 +351,9 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//Fireplace Actions check
 	if ((_cursorTarget call isInflamed) or (inflamed _cursorTarget)) then {
 		_hasRawMeat = {_x in Dayz_meatraw} count _magazinesPlayer > 0;
-		_hastinitem = {_x in boil_tin_cans} count _magazinesPlayer > 0;
+		//_hastinitem = {_x in boil_tin_cans} count _magazinesPlayer > 0;
+		_hasunboiledwater = {_x in ["ItemWaterBottleInfected","ItemWaterBottle","ItemWaterBottleSafe","ItemWaterbottle1oz","ItemWaterbottle2oz","ItemWaterbottle3oz","ItemWaterbottle4oz","ItemWaterbottle5oz","ItemWaterbottle6oz","ItemWaterbottle7oz","ItemWaterbottle8oz","ItemWaterbottle9oz"]} count _magazinesPlayer > 0;
+
 		
 	//Cook Meat	
 		if (_hasRawMeat && !a_player_cooking) then {
@@ -360,7 +362,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			};
 		}; 
 	//Boil Water
-		if (_hastinitem && _hasbottleitem && !a_player_boil) then {
+		if (_hasunboiledwater && !a_player_boil) then {
 			if (s_player_boil < 0) then {
 				s_player_boil = player addAction [localize "str_actions_boilwater", "\z\addons\dayz_code\actions\boil.sqf",_cursorTarget, 3, true, true];
 			};
