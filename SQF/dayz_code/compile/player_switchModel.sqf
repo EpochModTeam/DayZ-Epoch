@@ -1,4 +1,4 @@
-private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_coins"];
+private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader"];
 _class = _this;
 if (gear_done) then {disableUserInput true;disableUserInput true;};
 disableSerialization;
@@ -10,7 +10,6 @@ _dir = getDir player;
 _currentAnim = animationState player;
 _currentCamera = cameraView;
 _playerUID = getPlayerUID player;
-if (Z_SingleCurrency) then {_coins = player getVariable [Z_moneyVariable,0];};
 
 //BackUp Weapons and Mags
 _weapons = weapons player;
@@ -189,7 +188,6 @@ if (_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 //dayz_originalPlayer attachTo [_newUnit];
 player disableConversation true;
 player setVariable ["BIS_noCoreConversations",true];
-if (Z_SingleCurrency) then {player setVariable [Z_moneyVariable,_coins,true];};
 
 //	_playerUID=getPlayerUID player;
 //	_playerObjName = format["player%1",_playerUID];

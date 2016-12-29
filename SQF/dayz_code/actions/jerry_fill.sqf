@@ -21,7 +21,7 @@ _qty210 = {_x == "ItemFuelBarrelEmpty"} count _magazines;
 
 _fuelNeeded = (_qty5 * 5) + (_qty20 * 20) + (_qty210 * 210);
 
-if (_fuelAmount < _fuelNeeded) exitWith {dayz_actionInProgress = false; format[localize "str_fill_notenough",typeOf _cursorTarget,_fuelAmount,_fuelNeeded] call dayz_rollingMessages;};
+if (_fuelAmount < _fuelNeeded) then {dayz_actionInProgress = false; format[localize "str_fill_notenough",typeOf _cursorTarget,_fuelAmount,_fuelNeeded] call dayz_rollingMessages;};
 
 _fuelCans = ["ItemFuelcanEmpty","ItemJerrycanEmpty","ItemFuelBarrelEmpty"];
 

@@ -1310,7 +1310,7 @@
 			<Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		</Key>
 		<Key ID="str_fill_notenough">
-			<English>%1 does not have enough fuel. Estimated %2 litres left (You need %3 litres)</English>
+			<English>%1 does not have enough fuel. Estimated %2 litres left (You needed %3 litres)</English>
 			<German>%1 hat nicht genug Kraftstoff, um einen Kraftstoffbehälter komplett zu füllen. Es sind noch ungefähr %2 Liter übrig. (Du brauchst %3 Liter)</German>
 		</Key>
 		<Key ID="str_fill_success">
