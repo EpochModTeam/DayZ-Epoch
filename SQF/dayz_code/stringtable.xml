@@ -184,8 +184,8 @@
 			<Czech>Zabalit stan</Czech>
 		</Key>
 		<Key ID="str_actions_self_10">
-			<English>Fill FuelCan</English>
-			<German>Kraftstoffkanister füllen</German>
+			<English>Fill all fuel containers</English>
+			<German>Alle Kraftstoffbehälter füllen</German>
 			<Russian>Наполнить канистры</Russian>
 			<Spanish>Rellene FuelCan</Spanish>
 			<French>remplissez FuelCan</French>
@@ -1310,12 +1310,12 @@
 			<Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		</Key>
 		<Key ID="str_fill_notenough">
-			<English>%1 does not have enough fuel to fill jerry can(s). (Estimated %2 Liters left)</English>
-			<German>%1 hat nicht genug Treibstoff, um einen Benzinkanister komplett zu füllen.(Ungefähr %2 Liter übrig)</German>
+			<English>%1 does not have enough fuel to fill all containers. Estimated %2 litres left (You needed %3 litres)</English>
+			<German>%1 hat nicht genug Kraftstoff, um alle Kraftstoffbehälter zu füllen. Es sind noch ungefähr %2 Liter übrig. (Du brauchst %3 Liter)</German>
 		</Key>
 		<Key ID="str_fill_success">
-			<English>You have filled %1 jerry can(s) with fuel. %2 has an estimated %3 Liters of fuel left.</English>
-			<German>%1 Benzinkanister wurde(n) erfolgreich mit Treibstoff befüllt. %2 hat noch ungefähr %3 Liter Treibstoff übrig.</German>
+			<English>You have filled %1 fuel container(s) with fuel. %2 has an estimated %3 litres of fuel left.</English>
+			<German>%1 Kraftstoffbehälter wurde(n) erfolgreich mit Kraftstoff befüllt. %2 hat noch ungefähr %3 Liter Kraftstoff übrig.</German>
 		</Key>
 		<Key ID="str_siphon_canceled">
 			<English>Canceled siphon</English>
@@ -6759,7 +6759,7 @@
 			<Czech>Naplnili jste převařenou vodou %1 láhve.</Czech>
 		</Key>
 		<Key ID="str_player_02">
-			<English>You have no empty water bottles</English>
+			<English>You have no empty water bottles.</English>
 			<German>Du hast keine leeren Wasserflaschen.</German>
 			<Russian>У вас нет пустых бутылок.</Russian>
 			<Spanish>No tienes cantimploras vacías</Spanish>
@@ -6808,8 +6808,8 @@
 			<Czech>Naplnili jste palivem %1 kanystry.</Czech>
 		</Key>
 		<Key ID="str_player_10">
-			<English>You have no empty jerry cans</English>
-			<German>Du hast keine leeren Kanister.</German>
+			<English>You have no empty fuel containers.</English>
+			<German>Du hast keinen leeren Kraftstoffbehälter.</German>
 			<Russian>У вас нет пустых канистр.</Russian>
 			<Spanish>No tienes bidones vacíos</Spanish>
 			<French>Vous n&apos;avez pas de jerrican vide.</French>
@@ -6993,7 +6993,7 @@
 			<German>Lese die Missionsdatei...</German>
 		</Key>
 		<Key ID="str_player_20">
-			<English>You must be near a water-source such as a pond, or well, or watering hole, to refill your water bottles</English>
+			<English>You must be near a water source such as a pond, well or watering hole to refill your water bottles.</English>
 			<German>Du musst dich in der Nähe einer Wasserquelle befinden, um Wasserflaschen zu füllen. Halte Ausschau nach einem Teich oder Brunnen!</German>
 			<Russian>Вы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
 			<Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
@@ -11395,8 +11395,8 @@
 			<German>Du hast es geschafft %1 aufzubrechen.</German>			
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_34">
-			<English>Fill Jerry can is already in progress.</English>
-			<German>Befüllen des Kanisters bereits im Gange.</German>
+			<English>You are already filling a fuel container.</English>
+			<German>Befüllen des Kraftstoffbehälters bereits im Gange.</German>
 			<Russian>Канистра уже наполняется.</Russian>
 			<Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
 			<French>Le remplissage du jerrycan est déjà en cours.</French>
@@ -11999,7 +11999,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_149">
 			<English>Crafting needs a %1 within %2 meters</English>
-			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 benötigt.</German>
+			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 Meter(n) benötigt.</German>
 			<Russian>Для создания требуется %1 вблизи %2 метров</Russian>
 			<Dutch>Hiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 			<Czech>Výroba potřebuje %1 v rámci %2 metrů</Czech>

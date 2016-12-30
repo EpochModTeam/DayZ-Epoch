@@ -1,4 +1,4 @@
-private ["_charID","_newmodel","_old","_updates","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_wpnType","_ismelee"];
+private ["_charID","_newmodel","_old","_updates","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_wpnType","_ismelee","_coins"];
 //_playerUID = _this select 0;
 _charID = _this select 1;
 _model = _this select 2;
@@ -29,6 +29,7 @@ _ConfirmedHumanKills = player getVariable ["ConfirmedHumanKills",0];
 _ConfirmedBanditKills = player getVariable ["ConfirmedBanditKills",0];
 _friendlies = player getVariable ["friendlies",[]];
 _tagSetting = player getVariable ["DZE_display_name",false];
+if (Z_SingleCurrency) then {_coins = player getVariable [Z_moneyVariable,0];};
 
 //Switch
 _model call player_switchModel; //Already spawned thread, no need to spawn and waitUntil script is done
@@ -89,6 +90,7 @@ player setVariable ["ConfirmedHumanKills",_ConfirmedHumanKills,true];
 player setVariable ["ConfirmedBanditKills",_ConfirmedBanditKills,true];
 player setVariable ["friendlies",_friendlies,true];
 player setVariable ["DZE_display_name",_tagSetting,true];
+if (Z_SingleCurrency) then {player setVariable [Z_moneyVariable,_coins,true];};
 
 //PVDZ_serverStoreVar = [player,"Achievements",_achievements];
 //publicVariableServer "PVDZ_serverStoreVar";

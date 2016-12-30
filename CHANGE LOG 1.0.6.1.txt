@@ -34,6 +34,7 @@
 [FIXED] Viral zeds stuck and not moving from their spawn location due to wrong init event handler. #1819 @DeVloek
 [FIXED] Handling of boiled water bottles < 10 oz #1838 (Also removed the requirement to have an empty tin can to boil water) @icomrade @schwanzkopfhegel
 [FIXED] Generator inventory not saving #1831 @icomrade @schwanzkopfhegel
+[FIXED] Filling fuel barrels takes the correct amount from fuel tanks now (210 instead of 40 litres). #1834 @schwanzkopfhegel @oiad
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
