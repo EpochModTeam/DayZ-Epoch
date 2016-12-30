@@ -31,6 +31,7 @@
 [FIXED] Hive connection error after the first and only online player disconnects during the object stream at server start up. #1822 @AirwavesMan @ebayShopper
 [FIXED] Vanilla player_craftItem not exiting when action is already in progress. #1826 @schwanzkopfhegel
 [FIXED] Fire barrel kit can be crafted with partially full matchboxes now. #1830 @AirwavesMan
+[FIXED] Viral zeds stuck and not moving from their spawn location due to wrong init event handler. #1819 @DeVloek
 
 [NOTE] Updated server files were released with the four hotfixes below on December 11th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
