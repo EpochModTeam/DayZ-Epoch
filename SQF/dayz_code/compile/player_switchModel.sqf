@@ -1,5 +1,4 @@
-//private ["_class","_position","_dir","_group","_oldUnit","_newUnit","_currentWpn","_muzzles","_currentAnim","_playerUID","_weapons","_magazines","_primweapon","_secweapon","_newBackpackType","_backpackWpn","_backpackMag","_backpackWpnTypes","_backpackWpnQtys","_countr","_backpackmagTypes","_backpackmagQtys","_display","_wpnType","_ismelee","_rndx","_rndy"];
-private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader"];
+private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
 _class = _this;
 if (gear_done) then {disableUserInput true;disableUserInput true;};
 disableSerialization;
@@ -9,7 +8,7 @@ disableSerialization;
 _position = player modeltoWorld [0,0,0];
 _dir = getDir player;
 _currentAnim = animationState player;
-//_currentCamera = cameraView;
+_currentCamera = cameraView;
 _playerUID = getPlayerUID player;
 
 //BackUp Weapons and Mags
@@ -183,7 +182,7 @@ if (gear_done) then {disableUserInput false;disableUserInput false;disableUserIn
 //diag_log format["Backpack weapons: %1",getWeaponCargo unitBackpack _newUnit];
 //diag_log format["Backpack magazines: %1",getMagazineCargo unitBackpack _newUnit];
 
-//	player switchCamera = _currentCamera;
+player switchCamera _currentCamera;
 if (_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 [objNull, player, rSwitchMove, _currentAnim] call RE;
 //dayz_originalPlayer attachTo [_newUnit];
