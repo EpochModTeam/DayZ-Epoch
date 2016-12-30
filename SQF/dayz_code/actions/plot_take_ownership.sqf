@@ -35,8 +35,8 @@ if (_hasAccess select 0) then {
 				
 				sleep 0.01;
 				
-				PVDZE_obj_Delete = [_objectID, _objectUID, player];
-				publicVariableServer "PVDZE_obj_Delete";
+				PVDZ_obj_Destroy = [_objectID, _objectUID, player];
+				publicVariableServer "PVDZ_obj_Destroy";
 				
 				sleep 0.01;
 				
