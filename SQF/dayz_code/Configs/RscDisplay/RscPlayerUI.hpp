@@ -640,11 +640,11 @@ class RscTitles
 				colorText[] = {0,0,0,1};
 				colorBackground[] = {0,0,0,0};
 				sizeEx = 14 * GUI_GRID_H;
-				shadow = 0;
+				shadow = 1;
 				class Attributes
 				{
 					color = "#FFFFFF";
-					shadow = 0;
+					shadow = 1;
 					valign = "top";
 					align = "center";
 				};
