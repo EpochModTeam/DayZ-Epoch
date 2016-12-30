@@ -1,5 +1,6 @@
 [NEW] Added config variable DZE_HaloSpawnHeight. @ebayShopper
 [NEW] Added M4SPR_DZE class which spawns with 30Rnd Stanag by default instead of 20Rnd. #1823 @AirwavesMan
+[NEW] Building upgrades now source parts from the player's backpack and main inventory @icomrade
 
 [CHANGED] Added NWAF tent camp to Chernarus points of interests and removed trains POI for now.
 [CHANGED] Turbo and HoldBreath keybindings are now allowed again. @icomrade
