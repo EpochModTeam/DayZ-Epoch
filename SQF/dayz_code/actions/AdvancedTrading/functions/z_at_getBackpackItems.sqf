@@ -25,5 +25,5 @@ if (!isNull _backpack) then {
 	_normalMags = _freeSpace select 5;
 	_normalWeaps = _freeSpace select 6;
 
-	[_normalMags,_normalWeaps, typeOf _backpack,[]] call Z_checkArrayInConfig;
+	[_normalWeaps, _normalMags, typeOf _backpack,[]] call Z_checkArrayInConfig;
 };
