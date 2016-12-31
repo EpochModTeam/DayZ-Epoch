@@ -163,12 +163,10 @@ if (_unit == player) then {
 		};
 	};
 
-	//Overkill logging. PVS network send every two seconds = lag. Not worth it just for extra anticheat logs.
     //Log to server :-( OverProcessing really not needed.
-    /*if (!local _source && _isMan) then {
+    if (DZE_ServerLogHits && {!local _source} && {_isMan}) then {
 		_wpst = weaponState _source;
         if (diag_ticktime-(_source getVariable ["lastloghit",0])>2) then {
-            private ["_sourceWeap"];
             _source setVariable ["lastloghit",diag_ticktime];
             _sourceDist = round(_unit distance _source);
             _sourceWeap = switch (true) do {
@@ -186,7 +184,7 @@ if (_unit == player) then {
                 publicVariableServer "PVDZ_sec_atp";
             };
         };
-    };*/
+    };
 	
 	dayz_lastDamageSource = switch (true) do {
 		case (_falling): {"fall"};
