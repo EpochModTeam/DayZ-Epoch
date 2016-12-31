@@ -1942,12 +1942,13 @@ class FSM
                         itemno = 106;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Finish'];};" \n
                          "" \n
-                         "PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray (name vehicle player)];" \n
+                         "dayz_playerName = if (alive player) then {name player} else {'unknown'};" \n
+                         "PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray dayz_playerName];" \n
                          "" \n
                          "" \n
                          "progressLoadingScreen 1;" \n
                          "" \n
-                         "diag_log format ['Sent to server PVDZ_plr_LoginRecord: [%1, %2, %3, %4]',_playerUID,_charID,0,(name vehicle player)]; " \n
+                         "diag_log format ['Sent to server PVDZ_plr_LoginRecord: [%1, %2, %3, %4]',_playerUID,_charID,0,dayz_playerName]; " \n
                          "" \n
                          "_world = toUpper(worldName); //toUpper(getText (configFile >> ""CfgWorlds"" >> (worldName) >> ""description""));" \n
                          "_nearestCity = nearestLocations [getPos player, [""NameCityCapital"",""NameCity"",""NameVillage"",""NameLocal""],1000];" \n
