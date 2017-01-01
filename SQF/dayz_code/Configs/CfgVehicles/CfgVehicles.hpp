@@ -457,6 +457,7 @@ class CfgVehicles {
 	class SpawnableWreck : House {};
 	class Strategic;
 	class NonStrategic;
+	class Thing;
 //	class Land_Fire;
 	class BuiltItems;
 	class Building;
@@ -578,7 +579,7 @@ class CfgVehicles {
 	#include "Buildings\Land_telek1.hpp"
 	#include "Buildings\Land_VASICore.hpp"
 	#include "Buildings\Land_Vysilac_FM.hpp"
-	#include "Buildings\Land_pumpa.hpp"
+	#include "Buildings\WaterSources.hpp"
 
 	//Duplicates of Epoch items in DZE\Prop_Defs.hpp
 	//#include "CamoNetting.hpp"

@@ -34,7 +34,7 @@ if (isNil "keyboard_keys") then {
 			dayz_autoRunThread = [] spawn {
 				while {dayz_autoRun} do {
 					// SurfaceIsWater does not work for ponds
-					if (player != vehicle player or (surfaceIsWater getPosASL player) or (call fn_nearWaterHole) or r_fracture_legs) exitWith {
+					if (player != vehicle player or (surfaceIsWater getPosASL player) or ((call fn_nearWaterHole) select 0) or r_fracture_legs) exitWith {
 						call dayz_autoRunOff;
 					};
 					player playAction "FastF";

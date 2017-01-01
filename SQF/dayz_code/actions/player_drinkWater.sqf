@@ -1,61 +1,26 @@
-private ["_playerPos","_canFill","_isPond","_isWell","_pondPos","_objectsWell","_onLadder","_hasbottleitem","_config","_item","_text","_objectsPond","_qty","_dis","_sfx","_isInfected","_bodiesNear","_chance","_itemorignal","_well"];
+private ["_canFill","_onLadder","_chance","_posASL","_posATL"];
 
 call gear_ui_init;
 closeDialog 0;
-_item = _this;
-_playerPos = getPosATL player;
-_canFill = count nearestObjects [_playerPos, ["Land_pumpa","Land_water_tank"], 4] > 0;
-_isPond = false;
-_isWell = false;
-_isInfected = false;
-_pondPos = [];
-_objectsWell = [];
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
 
-_itemorignal = _this;
-//diag_log(str(_itemorignal));
+_posASL = getPosASL player;
+_posATL = ASLtoATL _posASL;
 
-if (!dayz_isSwimming) then {
-	player playActionNow "PutDown";
+_canFill = switch true do {
+	//Return: [nearWaterHole, isPond]
+	case (count nearestObjects [_posATL,["Land_pumpa","Land_Barrel_water"],4] > 0): {[true,false]}; //"Land_water_tank" has no spout or opening, doesn't make sense to include
+	case (toLower worldName == "chernarus"): {(call fn_nearWaterHole)};
+	//Slow searches for maps without waterHoleProxy objects added yet
+	case ({["_well",str _x] call fnc_inString} count nearestObjects [_posATL,[],4] > 0): {[true,false]};
+	case ({["pond",str _x] call fnc_inString && {_posASL select 2 < ((getPosASL _x) select 2)}} count nearestObjects [player,[],50] > 0): {[true,true]};
+	default {[false,false]};
 };
 
-if (!_canFill) then {
-	_objectsWell = nearestObjects [_playerPos, [], 4];
-	{
-		//Check for Well
-		_isWell = ["_well",str(_x),false] call fnc_inString;
-		if (_isWell) then {_canFill = true};
-	} forEach _objectsWell;
-};
-
-if (!_canFill) then {
-	_objectsPond = nearestObjects [_playerPos, [], 100];
-	{
-		//Check for pond
-		_isPond = ["pond",str(_x),false] call fnc_inString;	
-		//Check for Dead Bodies
-		_bodiesNear = ["dead",str(_x),false] call fnc_inString;
-		if (!_bodiesNear) then {
-			_bodiesNear = ["massgrave",str(_x),false] call fnc_inString;
-		};
-		if (_bodiesNear) then {
-			_isInfected = true; 
-		};
-		if (_isPond) then {	
-			_pondPos = (_x worldToModel _playerPos) select 2;
-			if (_pondPos < 0) then {
-				_canFill = true;
-			};
-		};
-	} forEach _objectsPond;
-};
-
-if (_canFill) then {
-	_chance = 0.1;
-	
-	if (_itemorignal in boil_tin_cans) then {
+if (_canFill select 0) then {
+	if (_this in boil_tin_cans) then {
 		_chance = 0.06;
 		["FoodDrink",0,[0,0,300,0]] call dayz_NutritionSystem; //[Energy,food,water,temp]
 	} else {
@@ -63,20 +28,22 @@ if (_canFill) then {
 		["FoodDrink",0,[0,0,150,0]] call dayz_NutritionSystem; //[Energy,food,water,temp]
 	};
 	
-	[player,"drink",0,false,5] call dayz_zombieSpeak;
-	[player,10,true,(getPosATL player)] call player_alertZombies;
+	if (!dayz_isSwimming) then {
+		player playActionNow "PutDown";
+	};
 	
-	if(!_isWell) then {
-		if (_isInfected) then {
+	[player,"drink",0,false,5] call dayz_zombieSpeak;
+	[player,10,true,_posATL] call player_alertZombies;
+	
+	//Check if water source is infected only for ponds
+	if (dayz_infectiousWaterholes && {_canFill select 1} && {count nearestObjects [_posATL,["Body","Body1","Body2","Mass_grave"],50] > 0}) then {
+		r_player_infected = true;
+	} else {
+		if ([_chance] call fn_chance) then {
 			r_player_infected = true;
-			player setVariable["USEC_infected",true,true];
-		} else {
-			if ([_chance] call fn_chance) then {
-				r_player_infected = true;
-				player setVariable["USEC_infected",true,true];
-			};
 		};
 	};
+	
 	localize "str_drinkwithhands" call dayz_rollingMessages;
 } else {
 	localize "str_player_32" call dayz_rollingMessages;
