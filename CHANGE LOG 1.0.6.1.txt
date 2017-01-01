@@ -40,6 +40,7 @@
 [FIXED] Base objects duplicating when using "take ownership" on plot pole. #1811 @BNG-Lance @Clanwarfare
 [FIXED] Unable to sell some launchers like Javelin and Stinger which have the same classname for ammo and weapon. #1844 @ndavalos
 [FIXED] Long search delay when filling water bottles, drinking from hands and drinking from empty cans on Chernarus. #1835 @schwanzkopfhegel
+[FIXED] Players can not purchase a negative number of items anymore.
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
