@@ -6598,7 +6598,7 @@
 			<French>Vous ne pouvez pas replier cette tente, elle ne vous appartient pas.</French>
 			<Czech>Tento stan nemůžete zabalit, jelikož není váš.</Czech>
 		</Key>
-		<Key ID="str_success_tent_destoryed">
+		<Key ID="str_success_tent_destroyed">
 			<English>You have successfully destroyed a tent.</English>
 			<German>Du hast das Zelt erfolgreich zerstört.</German>
 			<Russian>Вы успешно уничтожили палатку.</Russian>
