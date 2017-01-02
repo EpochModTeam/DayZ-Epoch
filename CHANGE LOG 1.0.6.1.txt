@@ -2,6 +2,7 @@
 [NEW] Added config variable DZE_ServerLogHits for logging source damage, weapon, ammo and distance to server RPT.
 [NEW] Added M4SPR_DZE class which spawns with 30Rnd Stanag by default instead of 20Rnd. #1823 @AirwavesMan
 [NEW] Building upgrades now source parts from the player's backpack and main inventory. @icomrade
+[NEW] Server owners can configure nutrition system effects with DZE_NutritionDivisor in configVariables.sqf @icomrade
 
 [CHANGED] Turbo and HoldBreath keybindings are now allowed again. @icomrade
 [CHANGED] Removed drink from hands at ponds due to client FPS impact. Players can still fill drinks at ponds by right clicking a container. @ebayShopper

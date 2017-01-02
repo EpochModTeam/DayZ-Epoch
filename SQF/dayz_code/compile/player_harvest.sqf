@@ -39,7 +39,7 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 				_distance = 60;
 				[player,_distance,false,getPosATL player] spawn player_alertZombies;
 				// Working-Factor for chopping wood.
-				["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
+				["Working",0,[20,15,10,0]] call dayz_NutritionSystem;
 			};
 			DZE_TEMP_treedmg = _damage;
 		};
