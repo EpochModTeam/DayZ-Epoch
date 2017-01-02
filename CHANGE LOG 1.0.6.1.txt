@@ -29,7 +29,7 @@
 [FIXED] Added back missing call to Epoch player_antiWall function for preventing base glitching. #1817 @ndavalos @ebayShopper
 [FIXED] HALO fresh spawns stuck swimming in air on Napf and failing to start correctly sometimes. #1809 @oiad @ebayShopper
 [FIXED] Self actions sometimes duplicating when changing clothes and looking at a safe. @jOoPs @ebayShopper
-[FIXED] Wrong bleeding icon on vanilla status UI. @jOoPs @ebayShopper
+[FIXED] Wrong bleeding icon on vanilla status UI. @jOoPs
 [FIXED] It is no longer possible to autoRun under ponds on Chernarus. #1827 @schwanzkopfhegel
 [FIXED] Hive connection error after the first and only online player disconnects during the object stream at server start up. #1822 @AirwavesMan @ebayShopper
 [FIXED] Vanilla player_craftItem not exiting when action is already in progress. #1826 @schwanzkopfhegel
@@ -42,6 +42,7 @@
 [FIXED] Unable to sell some launchers like Javelin and Stinger which have the same classname for ammo and weapon. #1844 @ndavalos
 [FIXED] Long search delay when filling water bottles, drinking from hands and drinking from empty cans on Chernarus. #1835 @schwanzkopfhegel
 [FIXED] Players can not purchase a negative number of items anymore.
+[FIXED] Removed antiwall glitch blocks for vanilla hospitals since Epoch uses DayZero hospitals. @jOoPs
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
