@@ -32,9 +32,11 @@ if (isNil "keyboard_keys") then {
 		if (!dayz_autoRun) then {
 			dayz_autoRun = true;
 			dayz_autoRunThread = [] spawn {
+				_weapon = currentWeapon player;
 				while {dayz_autoRun} do {
 					// SurfaceIsWater does not work for ponds
-					if (player != vehicle player or (surfaceIsWater getPosASL player) or ((call fn_nearWaterHole) select 0) or r_fracture_legs) exitWith {
+					// Check weapon to detect Arma action (dayz action is handled in dz_fn_switchWeapon)
+					if (player != vehicle player or (surfaceIsWater getPosASL player) or ((call fn_nearWaterHole) select 0) or (currentWeapon player != _weapon) or r_fracture_legs) exitWith {
 						call dayz_autoRunOff;
 					};
 					player playAction "FastF";

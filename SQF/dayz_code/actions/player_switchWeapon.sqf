@@ -26,6 +26,7 @@ dz_fn_switchWeapon =
 {
 	if (vehicle player != player) exitWith {};
 	if Player_IsOnLadder() exitWith {};
+	if (dayz_autoRun) then {call dayz_autoRunOff;};
 	
 	private ["_current","_primary","_secondary","_swapWeapons"];
 	

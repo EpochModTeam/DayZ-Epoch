@@ -43,6 +43,7 @@
 [FIXED] Long search delay when filling water bottles, drinking from hands and drinking from empty cans on Chernarus. #1835 @schwanzkopfhegel
 [FIXED] Players can not purchase a negative number of items anymore.
 [FIXED] Removed antiwall glitch blocks for vanilla hospitals since Epoch uses DayZero hospitals. @jOoPs
+[FIXED] Switching weapons properly interrupts autorun now. #1850 @DeVloek
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
