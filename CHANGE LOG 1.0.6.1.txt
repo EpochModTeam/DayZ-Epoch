@@ -3,6 +3,7 @@
 [NEW] Added M4SPR_DZE class which spawns with 30Rnd Stanag by default instead of 20Rnd. #1823 @AirwavesMan
 [NEW] Building upgrades now source parts from the player's backpack and main inventory. @icomrade
 [NEW] Server owners can configure nutrition system effects with DZE_NutritionDivisor in configVariables.sqf @icomrade
+[NEW] Added back DZE_doorManagementHarderPenalty config variable. Required wait between incorrect entries of manual door codes is multiplied by two each time, starting at five seconds. #1847 @oiad
 
 [CHANGED] Turbo and HoldBreath keybindings are now allowed again. @icomrade
 [CHANGED] Removed drink from hands at ponds due to client FPS impact. Players can still fill drinks at ponds by right clicking a container. @ebayShopper
