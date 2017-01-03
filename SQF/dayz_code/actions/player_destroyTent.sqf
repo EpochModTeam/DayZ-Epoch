@@ -1,3 +1,5 @@
+private ["_emptycan","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_alreadyDestorying","_randomJerryCan","_fireIntensity","_dis","_sfx"];
+
 //Tent Object
 _obj = _this select 3;
 _objectID = _obj getVariable["ObjectID","0"];
