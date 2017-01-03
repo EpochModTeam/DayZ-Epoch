@@ -34,7 +34,7 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 					publicVariableServer "PVDZ_objgather_Knockdown";
 				};
 				_itemOut = if (_ammo isKindOf "Chainsaw_Swing_Ammo") then {"PartWoodLumber"} else {"PartWoodPile"}; // Log can be crafted to > 2x plank > 4x woodpile			
-				_itemOut call fn_dropItem;
+				[_itemOut,1,1] call fn_dropItem;
 
 				_distance = 60;
 				[player,_distance,false,getPosATL player] spawn player_alertZombies;

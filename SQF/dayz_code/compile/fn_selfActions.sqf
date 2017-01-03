@@ -7,7 +7,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 if (dayz_actionInProgress) exitWith {};
 private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names",
 "_hasKey","_oldOwner","_hasAttached","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild",
-"_player_lockUnlock_crtl","_displayName","_hasIgnators","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached",
+"_player_lockUnlock_crtl","_displayName","_hasIgnitors","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached",
 "_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget",
 "_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan",
 "_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isDisallowRefuel","_isDog",
@@ -453,8 +453,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 	//other tents
 	if (_istypeTent) then {
-		_hasIgnators = {_x in DayZ_Ignitors} count _itemsPlayer > 0;
-		if ((_hasFuel20 or _hasFuel5 or _hasBarrel) && _hasIgnators) then {
+		_hasIgnitors = {_x in DayZ_Ignitors} count _itemsPlayer > 0;
+		if ((_hasFuel20 or _hasFuel5 or _hasBarrel) && _hasIgnitors) then {
 			if (s_player_destroytent < 0) then {
 				s_player_destroytent = player addAction [localize "str_actions_self_destroytent", "\z\addons\dayz_code\actions\player_destroyTent.sqf",_cursorTarget, 0, false, true];
 			};

@@ -44,8 +44,8 @@ Return value indicates whether the item was actually removed. */
 
 /* Adds the specifed item on the ground at the player's feet.
 The weaponholder containing the item is returned. Returns null if the function fails.*/
-#define Player_DropWeapon(class) ([0, class] call dz_fn_player_dropItem)
-#define Player_DropMagazine(class) ([1, class] call dz_fn_player_dropItem)
+#define Player_DropWeapon(class) ([class,2,1] call fn_dropItem)
+#define Player_DropMagazine(class) ([class,1,1] call fn_dropItem)
 
 #define Player_GetStance_STAND 1
 #define Player_GetStance_KNEEL 2

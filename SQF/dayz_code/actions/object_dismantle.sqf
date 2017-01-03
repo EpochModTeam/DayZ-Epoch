@@ -1,4 +1,4 @@
-private ["_object","_proceed","_rndattemps","_limit","_dismantleToo","_ownerID","_objectID","_objectUID","_playerID","_claimedBy","_tools","_exit","_end","_onLadder","_isWater","_isOk","_counter","_text","_dis","_sfx","_animState","_started","_finished","_isMedic","_holder"];
+private ["_object","_proceed","_rndattemps","_limit","_dismantleToo","_ownerID","_objectID","_objectUID","_playerID","_claimedBy","_tools","_exit","_end","_onLadder","_isWater","_isOk","_counter","_text","_dis","_sfx","_animState","_started","_finished","_isMedic"];
 
 _object = _this;
 _proceed = false;
@@ -10,9 +10,6 @@ _limit = 1 + round(random _rndattemps);
 
 //Dismantle magazine type
 _dismantleToo = getText (configFile >> "CfgVehicles" >> (typeOf _object) >> "dismantle" >> "dismantleToo");
-
-//Object location
-_pos = getposATL _object;
 
 //Object info
 _ownerID = _object getVariable["CharacterID","0"];
@@ -165,9 +162,5 @@ if (_proceed) then {
 	//Need to update for sanity no client should ever create or delete anything
 	deleteVehicle _object;
 	
-	//PVDZ_obj_Create = ["WeaponHolder",_pos,["ItemTankTrap"]];
-	//publicVariableServer "PVDZ_obj_Create";
-	_holder = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
-	_holder addmagazinecargoGlobal [_dismantleToo,1];
-	
+	[_dismantleToo,1,1] call fn_dropItem;
 };

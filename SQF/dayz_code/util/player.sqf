@@ -107,49 +107,6 @@ dz_fn_player_addItem =
 	};
 };
 
-dz_fn_player_dropItem =
-{
-	#define DROP_ITEM_WEAPON_HOLDER_SEARCH_RADIUS 2
-	#define DROP_ITEM_WEAPON_HOLDER_PLAYER_OFFSET [0,0,0]
-	
-	Debug_Assert(!Player_IsOnLadder());
-	
-	if (Player_IsInVehicle()) exitWith
-	{
-		diag_log "WARNING: dz_fn_player_dropItem called while player was in a vehicle.";
-		objNull
-	};
-	
-	private ["_pos","_near","_wh"];
-	
-	//Lets get the location of the player in the world
-	_pos = player modeltoWorld DROP_ITEM_WEAPON_HOLDER_PLAYER_OFFSET;
-	_pos set [2, 0];
-	
-	//Find WeaponHolders close to the player.
-	_near = _pos nearObjects ["WeaponHolder", DROP_ITEM_WEAPON_HOLDER_SEARCH_RADIUS];
-	
-	_wh = nil;
-	
-	if (count _near > 0) then
-		{ _wh = _near select 0; };
-	else
-		{ _wh = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"]; }
-	
-	if (_this select 0 == 0) then
-		{ _wh addWeaponCargoGlobal [_this select 1, 1]; }
-	else
-		{ _wh addMagazineCargoGlobal [_this select 1, 1]; };
-	
-	//Reveal the item
-	player reveal _wh;
-	
-	_wh
-	
-	#undef DROP_ITEM_WEAPON_HOLDER_SEARCH_RADIUS
-	#undef DROP_ITEM_WEAPON_HOLDER_PLAYER_OFFSET
-};
-
 dz_fn_player_removeWeapon =
 {
 	Player_RemoveWeapon_Fast(_this)

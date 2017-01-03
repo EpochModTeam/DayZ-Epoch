@@ -12,18 +12,7 @@ _this: string - toolbelt item classname to check and add
 How to use:
 "ItemSledge" call player_addDuplicateTool;
 */
-private ["_bag","_dropOnFloor"];
-
-_dropOnFloor = {
-	private ["_location","_object"];
-	systemChat format[localize "str_epoch_player_314",_this];
-	_location = player modeltoworld [0,0.3,0];
-	if ((_location select 2) < 0) then {_location set [2,0];};
-	_object = createVehicle ["WeaponHolder",_location,[],0,"CAN_COLLIDE"];
-	if (surfaceIsWater _location) then {_object setPosASL (getPosASL player);} else {_object setPosATL _location;};
-	_object setVariable ["permaLoot",true];
-	_object addWeaponCargoGlobal [_this,1];
-};
+private "_bag";
 
 if (_this in items player) then {
 	_bag = unitBackpack player;
@@ -31,7 +20,8 @@ if (_this in items player) then {
 		systemChat format[localize "str_epoch_player_313",_this];
 		_bag addWeaponCargoGlobal [_this,1];
 	} else {
-		_this call _dropOnFloor;
+		[_this,2,1] call fn_dropItem;
+		systemChat format[localize "str_epoch_player_314",_this];
 	};
 } else {
 	//Remove melee magazines (BIS_fnc_invAdd fix)
@@ -39,7 +29,8 @@ if (_this in items player) then {
 	
 	if !([player,_this] call BIS_fnc_invAdd) then {
 		systemChat localize "str_epoch_player_107";
-		_this call _dropOnFloor;
+		[_this,2,1] call fn_dropItem;
+		systemChat format[localize "str_epoch_player_314",_this];
 	};
 	true call dz_fn_meleeMagazines;
 };

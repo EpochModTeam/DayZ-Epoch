@@ -1,4 +1,4 @@
-private ["_cantype","_emptycan","_intensity","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_alreadyDestorying","_randomJerryCan","_fireIntensity","_randomBoxMatches","_qtyRemaining","_dis","_sfx"];
+private ["_emptycan","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_alreadyDestorying","_randomJerryCan","_fireIntensity","_dis","_sfx"];
 
 //Tent Object
 _obj = _this select 3;
@@ -52,28 +52,7 @@ _fireIntensity = getNumber (configFile >> "CfgMagazines" >> _randomJerryCan >> "
 player removeMagazine _randomJerryCan;
 player addMagazine _emptycan;
 
-//Match system ** Needs redoing 
-//Select random matchbox
-_randomBoxMatches = _matchArray call BIS_fnc_selectRandom; 
-_qtyRemaining = getText (configFile >> "cfgWeapons" >> _randomBoxMatches >> "Ignators" >> "qtyRemaining");
-
-if (dayz_matchboxCount) then {
-	switch _randomBoxMatches do {
-		case "ItemMatchbox" : { 
-			if ([0.3] call fn_chance) then {
-				player removeWeapon _randomBoxMatches;
-				player addWeapon _qtyRemaining;
-				
-				//info box.
-				systemChat (localize "str_info_limitedbox");	
-			};	
-		};
-		default { 
-			player removeWeapon _randomBoxMatches;
-			player addWeapon _qtyRemaining;
-		};
-	};
-};
+["matches",0.3] call fn_dynamicTool;
 
 //Normal alerts 
 _dis=20;

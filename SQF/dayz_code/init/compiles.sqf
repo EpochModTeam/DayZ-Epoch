@@ -16,7 +16,8 @@ if (!isDedicated) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\compile.sqf";
 	
-	fn_dropItem = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dropItem.sqf"; //fnc to drop items. _item call fn_dropItem;
+	fn_dropItem = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dropItem.sqf";
+	fn_dynamicTool = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dynamicTool.sqf";
 	fn_nearWaterHole = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_nearWaterHole.sqf";
 	BIS_Effects_Burn = compile preprocessFile "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf";
 	player_zombieCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_zombieCheck.sqf";	//Run on a players computer, checks if the player is near a zombie
@@ -286,24 +287,7 @@ if (!isDedicated) then {
 		};
 		_cantSee
 	};
-	/*
-	dayz_dropItem = {
-		private ["_nearByPile","_item"];
-		
-		_type = _this select 0;
-		_dropItem = _this select 1;
-		_dropAmount = _this select 2;
-	
-		_nearByPile = nearestObjects [(getPosATL player), ["WeaponHolder","WeaponHolderBase"],2];
-		if (count _nearByPile == 0) then {
-			_item = createVehicle ["WeaponHolder", (getPosATL player), [], 0.0, "CAN_COLLIDE"];
-		} else {
-			_item = _nearByPile select 0;
-		};
-		_item addMagazineCargoGlobal [_dropItem,_dropAmount];
-		_item setvelocity [0,0,1];
-	};
-	*/
+
 	dayz_NutritionSystem = {
 		private ["_type","_baseRegen","_nutrition","_calorieCount","_hungerCount","_thirstCount","_tempCount","_Thirst","_Hunger","_bloodregen","_golbalNutrition"];
 		//["type",regen,[NutritionTable,thirst(Working Class),hunger(Working Class)]]
@@ -535,7 +519,7 @@ if (!isDedicated) then {
         _matches = 0;
         {
             if (configName inheritsFrom (configfile >> "cfgWeapons" >> _x) == "ItemMatchbox") then { // iskindOf does not work here?!
-                 _matches = _matches + getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "matches");
+                 _matches = _matches + getNumber(configfile >> "cfgWeapons" >> _x >> "matches");
                  player removeWeapon _x;
             };
         } count (items player);
@@ -749,37 +733,12 @@ dayz_reduceItems = {
 	true
 };
 
-
 dayz_inflame = {
-    private ["_object","_hasTool"];
-
+    private "_object";
     _object = _this select 0;
-	// true = light the fire
-    if (_this select 1) then {
-        _hasTool = false;
-        {
-            if (_x in items player) exitWith {
-				if (dayz_matchboxCount) then {
-					_matches = getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "matches");
-					_qtyRemaining = getText(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "qtyRemaining");
-					
-					//diag_log format["%1[%2,%3]",_x,_matches,_qtyRemaining];
-					if (_matches == -1) then { 
-						if ([getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "chance")] call fn_chance) then {
-							player removeWeapon _x;
-							player addWeapon _qtyRemaining;
-						};
-					} else {
-						// remove a match
-						player removeWeapon _x;
-						player addWeapon _qtyRemaining;
-					};
-				};
-                _hasTool = true;
-            };
-        } count DayZ_Ignitors;
-		
-        if (_hasTool) then { _object inflame true; };
+	
+    if (_this select 1) then { // light the fire
+        if (["matches",0.12] call fn_dynamicTool) then { _object inflame true; };
     } else { // put out the fire
 		_object inflame false;
     };
@@ -806,7 +765,7 @@ dayz_inflame_showMenu = {
 };
 
 dayz_inflame_other = {
-    private ["_fireplace","_ret","_flame","_islit","_hasTool","_isLit","_pos"];
+    private ["_fireplace","_ret","_flame","_islit","_isLit","_pos"];
 
     _fireplace = _this select 0;
     if (_this select 1) then { // true = light the fire
@@ -818,32 +777,8 @@ dayz_inflame_other = {
             _pos = _fireplace modelToWorld (_fireplace selectionPosition "ohniste"); // ATL
             _flame setPosATL _pos;
         };
-
-        _hasTool = false;
-        {
-            if (_x in items player) exitWith {
-				if (dayz_matchboxCount) then {
-					_matches = getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "matches");
-					_qtyRemaining = getText(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "qtyRemaining");
-					
-					//diag_log format["%1[%2,%3]",_x,_matches,_qtyRemaining];
-
-					if (_matches == -1) then { 
-						if ([getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "chance")] call fn_chance) then {
-							player removeWeapon _x;
-							player addWeapon _qtyRemaining;
-						};
-					} else {
-						// remove a match
-						player removeWeapon _x;
-						player addWeapon _qtyRemaining;
-					};
-				};
-                _hasTool = true;
-            };
-        } count DayZ_Ignitors;
-        if (_hasTool) then { _flame inflame true; };
-
+		
+        if (["matches",0.12] call fn_dynamicTool) then { _flame inflame true; };
     } else { // put out the fire
         _flame = nearestObjects [_fireplace, ["flamable_DZ"], 1];
         if (count _flame > 0) then { (_flame select 0) inflame false; };
@@ -879,31 +814,6 @@ isInflamed = {
     _flame = if (count _flame > 0) then { _flame select 0 } else { objNull };
     !(isNull _flame) && {(inflamed _flame)}
 };
-
-//Matchbox combine system.
-dayz_combine_Inventory = {
-	private ["_qty","_fullBox","_remain"];	
-	//ItemMatchbox,ItemAntibiotic	
-	_qty = 0;
-	{
-		if (configName inheritsFrom (configfile >> "cfgWeapons" >> _x) == "ItemMatchbox") then {
-			 _qty = _qty + getNumber(configfile >> "cfgWeapons" >> _x >> "Ignators" >> "matches");
-			 player removeWeapon _x;
-		};
-	} count (items player);
-	
-	// limit to 1 fullbox and 1 used matchbox
-	_fullBox = floor (_qty / 5);
-	_remain = _qty % 5;
-	
-	if (_fullBox > 0) then { player addWeapon "Item5Matchbox"; };
-	
-	if (_fullBox > 1) then { 
-		player addWeapon "Item4Matchbox"; 
-	} else {
-		if (_remain > 0) then { player addWeapon ("Item"+str(_remain)+"Matchbox"); };
-	};
-};	
 
 dayz_engineSwitch = {
 	//private["_unit","_humanity","_delay"];

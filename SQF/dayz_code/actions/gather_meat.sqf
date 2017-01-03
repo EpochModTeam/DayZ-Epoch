@@ -1,4 +1,4 @@
-private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_sharpnessRemaining","_qty","_chance","_string","_isZombie","_humanity"];
+private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_qty","_string","_isZombie","_humanity"];
 
 _isZombie = _this isKindOf "zZombie_base";
 if (dayz_actionInProgress) exitWith {
@@ -36,10 +36,8 @@ if ((count _knifeArray) < 1) exitWith {
 };
 
 if ((count _knifeArray > 0) and !_hasHarvested) then {
-	private "_qty";
-	
-	//Select random can from array
-	_activeKnife = _knifeArray call BIS_fnc_selectRandom; 
+	//Use sharpest knife player has
+	_activeKnife = _knifeArray select 0; 
 	
 	//Get Animal Type
 	_isListed = isClass (configFile >> "CfgSurvival" >> "Meat" >> _type);
@@ -68,29 +66,7 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 		//if (!achievement_Gut) then {achievement_Gut = true;};
 	};
 	
-	if (dayz_knifeDulling) then {
-		_sharpnessRemaining = getText (configFile >> "cfgWeapons" >> _activeKnife >> "sharpnessRemaining");
-		
-		switch _activeKnife do {
-			case "ItemKnife" : { 
-				//_chance = getNumber (configFile >> "cfgWeapons" >> _activeKnife >> "chance");
-				if ([0.2] call fn_chance) then {
-					player removeWeapon _activeKnife;
-					player addWeapon _sharpnessRemaining;
-					
-					//systemChat (localize "str_info_bluntknife");
-					localize "str_info_bluntknife" call dayz_rollingMessages;
-				};	
-			};
-			case "ItemKnifeBlunt" : { 
-				//do nothing
-			};
-			default { 
-				player removeWeapon _activeKnife;
-				player addWeapon _sharpnessRemaining;
-			};
-		};
-	};
+	["knives",0.2] call fn_dynamicTool;
 	
 	uiSleep 6;
 	if (_isZombie) then {

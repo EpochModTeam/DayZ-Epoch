@@ -130,7 +130,7 @@ if (_output != "") then
 			//wait a while before dropping the output item
 			uiSleep 3;
 			//Drop Item to ground
-			_output call fn_dropItem;
+			[_output,1,1] call fn_dropItem;
 		};
 	};
 };

@@ -95,7 +95,7 @@ if (!isNull _findNearestRock) then {
             _itemOut = "ItemStone";
 			
 			//Drop Item to ground
-			_itemOut call fn_dropItem;
+			[_itemOut,1,1] call fn_dropItem;
         };
             
         if ((_counter >= _countOut) || _breaking) exitWith {
