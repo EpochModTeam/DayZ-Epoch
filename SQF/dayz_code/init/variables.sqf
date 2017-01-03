@@ -716,4 +716,5 @@ if (!isDedicated) then {
 	DZE_myVehicle = objNull;
 	dayz_groupNameTags = true;
 	dayz_minusDownTime = 0;
+	dayz_lastCodeFail = 0;
 };

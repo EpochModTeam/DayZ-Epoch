@@ -4,40 +4,29 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 	Modified for Zupa's DoorManagement.
 */
-private ["_display","_obj","_objectCharacterID","_hasAccess"];
+private ["_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID"];
 
 if (!isNil "DZE_DYN_UnlockDoorInprogress") exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 
 DZE_DYN_UnlockDoorInprogress = true;
 
-// find display and check the door opening method
-_doorMethod = '';
+_doorMethod = "";
 _displayCombo = findDisplay 41144;
 _displayEye = findDisplay 61144;
 if(!isNull _displayEye) then {_display = _displayEye; _doorMethod = "Eye";};
 if(!isNull _displayCombo) then {_display = _displayCombo; _doorMethod = "Combo";};
 
 if (!isNull dayz_selectedDoor) then {
-	if (!isNil 'KeyCodeTryTimer') then {
-		if (diag_tickTime > KeyCodeTryTimer) then {
-			KeyCodeTry = nil;
-			KeyCodeTryTimer = nil;
-		};
-	};
-	
-	_obj = dayz_selectedDoor; // our target
+	_obj = dayz_selectedDoor;
 	_notNearestPlayer = _obj call dze_isnearest_player;
-	
+
 	if (_notNearestPlayer) then {
-		// close display since another player is closer
 		_display closeDisplay 2;
 		localize "STR_EPOCH_ACTIONS_16" call dayz_rollingMessages;
 	} else {
-		// get object combination
 		_objectCharacterID 	= _obj getVariable ["CharacterID","0"];
-		
-		if(DZE_doorManagement) then {
-			// Check player access
+
+		if (DZE_doorManagement) then {
 			_hasAccess = [player, _obj] call FNC_check_access;
 			if (
 				(_hasAccess select 0) or // door owner
@@ -50,53 +39,50 @@ if (!isNull dayz_selectedDoor) then {
 				DZE_Lock_Door = dayz_selectedDoor getVariable['CharacterID','0'];
 			};
 		};
-		
-		
-		
-		// Check combination
+
+		if (isNil "dayz_UnlockTime") then {dayz_UnlockTime = 5;};
+		if (DZE_doorManagementHarderPenalty && {(diag_tickTime - dayz_lastCodeFail) > 120}) then {dayz_UnlockTime = 5;};
+
 		if (DZE_Lock_Door == _objectCharacterID) then {
 			[player,"combo_unlock",0,false] call dayz_zombieSpeak;
 
-			// close display
 			_display closeDisplay 2;
 
-			// unlock if locked
 			if (_obj animationPhase "Open_hinge" == 0) then {
 				_obj animate ["Open_hinge", 1];
 			};
 			if (_obj animationPhase "Open_latch" == 0) then {
 				_obj animate ["Open_latch", 1];
 			};
-			
-			if(_doorMethod == "Eye") then {
+
+			if (_doorMethod == "Eye") then {
 				localize "STR_EPOCH_DOORACCESS_SUCCESS" call dayz_rollingMessages;
 			};
-			
-			KeyCodeTry = nil;
+			dayz_UnlockTime = 5;
+			dayz_lastCodeFail = 0;
 		} else {
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			DZE_Lock_Door = "";
 			[player,"combo_locked",0,false] call dayz_zombieSpeak;
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;
 
-			if (isNil 'KeyCodeTry') then {KeyCodeTry = 0;};
-			KeyCodeTry = KeyCodeTry + 1;
-
-			if (!isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};
-			if (KeyCodeTry >= ((round(random 4)) + 4)) then {	
-				if (isNil 'KeyCodeTryTimer') then {KeyCodeTryTimer = diag_tickTime+10;};	
-				localize "str_epoch_player_19" call dayz_rollingMessages;
-				_display closeDisplay 2;
-			};
-
-			if(_doorMethod == "Eye") then {
+			if (_doorMethod == "Eye") then {
 				localize "STR_EPOCH_DOORACCESS_FAILURE" call dayz_rollingMessages;
+				_display closeDisplay 2;
+			} else {
+				if (DZE_doorManagementHarderPenalty) then {
+					dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);
+					dayz_UnlockTime = dayz_UnlockTime * 2;
+				} else {
+					dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);
+				};
+
+				format [localize "str_epoch_player_19",round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;
 				_display closeDisplay 2;
 			};
 		};
 	};
 } else {
-	// close display since no target
 	_display closeDisplay 2;
 };
 DZE_DYN_UnlockDoorInprogress = nil;

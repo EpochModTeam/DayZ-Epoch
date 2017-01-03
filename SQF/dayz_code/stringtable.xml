@@ -6598,7 +6598,7 @@
 			<French>Vous ne pouvez pas replier cette tente, elle ne vous appartient pas.</French>
 			<Czech>Tento stan nemůžete zabalit, jelikož není váš.</Czech>
 		</Key>
-		<Key ID="str_success_tent_destoryed">
+		<Key ID="str_success_tent_destroyed">
 			<English>You have successfully destroyed a tent.</English>
 			<German>Du hast das Zelt erfolgreich zerstört.</German>
 			<Russian>Вы успешно уничтожили палатку.</Russian>
@@ -11279,12 +11279,16 @@
 			<Czech>Musíte mít syrové maso</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_19">
-			<English>Wrong code entered too many times, wait 10 seconds</English>
-			<German>Es wurde zu oft der falsche Code eingetippt. Du musst nun 10 Sekunden warten</German>
+			<English>You entered the wrong code, wait %1 seconds.</English>
+			<German>Du hast einen falschen Code eingegeben, warte %1 Sekunden.</German>
 			<Russian>Неправильный код введён слишком много раз, подождите 10 секунд</Russian>
 			<Dutch>Je hebt te vaak een foute code ingevoerd. 10 seconden geduld svp.</Dutch>
 			<French>Trop d'erreurs avec le code, patientez 10 secondes</French>
 			<Czech>Mnohokrát jsi zadal špatný kód, musíš počkat 10 vteřin</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_19_WAIT">
+			<English>You must wait another %1 seconds before you can enter another code.</English>
+			<German>Du musst weitere %1 Sekunden warten, bevor du einen anderen Code eingeben kannst.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_20">
 			<English>Cannot unlock while another player is nearby.</English>

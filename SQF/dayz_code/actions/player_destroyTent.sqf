@@ -34,12 +34,12 @@ player playActionNow "Medic";
 player removeAction s_player_destroytent;
 s_player_destroytent = -1;
 
-//Make sure you can only destory once
-_alreadyDestorying = _obj getVariable["alreadyDestorying",0];
+//Make sure you can only destroy once
+_alreadyDestroying = _obj getVariable["alreadyDestroying",0];
 
-if (_alreadyDestorying == 1) exitWith {localize "str_TentAlreadyLit" call dayz_rollingMessages;};
+if (_alreadyDestroying == 1) exitWith {localize "str_TentAlreadyLit" call dayz_rollingMessages;};
 
-_obj setVariable["alreadyDestorying",1];
+_obj setVariable["alreadyDestroying",1];
 
 //Jerry can system ** Needs redoing
 //Select random can from array
@@ -86,4 +86,4 @@ publicVariable "PVDZ_obj_Fire";
 _obj inflame true;
 //_obj spawn player_fireMonitor;
 
-localize "str_success_tent_destoryed" call dayz_rollingMessages;
+localize "str_success_tent_destroyed" call dayz_rollingMessages;
