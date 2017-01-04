@@ -1,7 +1,7 @@
 private ["_item","_config","_consume","_create","_item_ammo","_consume_magsize","_create_magsize","_consume_type","_slotstart",
 "_slotend","_dialog","_qty_total_ammo","_qty_consume_ammo","_qty_create_ammo","_qty_consume_mags","_qty_create_mags","_qty_free_slots",
 "_control","_mag","_qtynew_create_ammo","_qtynew_consume_ammo","_qtynew_create_mags","_qtynew_consume_mags","_qtynew_consume_mags_full",
-"_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest","_mags","_i"];
+"_qtynew_create_mags_full","_qtynew_consume_ammo_rest","_qtynew_create_ammo_rest","_mags","_use"];
 
 disableSerialization;
 call gear_ui_init;
@@ -16,7 +16,8 @@ if (!(_item in magazines player)) exitWith {dayz_actionInProgress = false;};
 
 _config = configFile >> "CfgMagazines" >> _item;
 
-_consume = getArray (_config >> "ItemActions" >> "ReloadMag" >> "use") select 0;
+_use = getArray (_config >> "ItemActions" >> "ReloadMag" >> "use");
+_consume = _use select 0;
 _create = getArray (_config >> "ItemActions" >> "ReloadMag" >> "output") select 0;
 
 _item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
@@ -118,7 +119,21 @@ for "_i" from 1 to _qtynew_create_mags_full do {
     player addMagazine _create;
 };
 if (_qtynew_create_ammo_rest != 0) then {
-    player addMagazine [_create,_qtynew_create_ammo_rest];
+	if (count _use == 4) then {
+		//Prevent combine to partially full 8RndShotgun or 20RndDMR (i.e. 2x5RndM24 = 10RndDMR)
+		//Stops duping via move partial in backpack, relog, split, combine to partial again, repeat
+		_qtynew_consume_mags_full = floor(_qtynew_create_ammo_rest/_consume_magsize);
+		_qtynew_consume_ammo_rest = _qtynew_create_ammo_rest - (_qtynew_consume_mags_full*_consume_magsize);
+		
+		for "_i" from 1 to _qtynew_consume_mags_full do {
+			player addMagazine _consume;
+		};
+		if (_qtynew_consume_ammo_rest > 0) then {
+			player addMagazine [_consume,_qtynew_consume_ammo_rest];
+		};
+	} else {
+		player addMagazine [_create,_qtynew_create_ammo_rest];
+	};
 };
 uiSleep 1;
 dayz_actionInProgress = false;

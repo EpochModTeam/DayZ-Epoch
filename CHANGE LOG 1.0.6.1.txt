@@ -47,6 +47,7 @@
 [FIXED] Switching weapons properly interrupts autorun now. #1850 @DeVloek
 [FIXED] Duplicate matchbox or knife error when lighting a fire or gutting with multiple matchboxes or knives on toolbelt. #1849 @DeVloek
 [FIXED] RU crates having zero cargo capacity and wrong classname DZ_ExplosivesBoxRU in loot table. #1852 @oiad
+[FIXED] Combining M24 or 2Rnd shotgun ammo can no longer be abused to dupe mags via the method described in #1848. @DeVloek
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
