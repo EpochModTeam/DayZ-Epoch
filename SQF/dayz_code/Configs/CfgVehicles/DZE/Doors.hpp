@@ -360,7 +360,7 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement="PVDZE_handleSafeGear = [player,this,4,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
+			statement="PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
@@ -460,7 +460,7 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement="PVDZE_handleSafeGear = [player,this,4,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
+			statement="PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
@@ -560,7 +560,7 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
-			statement="PVDZE_handleSafeGear = [player,this,4,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
+			statement="PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_hinge"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
@@ -625,7 +625,7 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
-			statement="PVDZE_handleSafeGear = [player,this,4,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
+			statement="PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
@@ -728,7 +728,7 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 			displayName=$STR_EPOCH_DOORS_LOCK;
 			//condition="(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			condition="(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1);";
-			statement="PVDZE_handleSafeGear = [player,this,4,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
+			statement="PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
