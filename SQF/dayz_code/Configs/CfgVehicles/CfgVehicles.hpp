@@ -603,7 +603,7 @@ class CfgVehicles {
 	//Antihack
 	#include "antihack_logic.hpp"
 	#include "antihack_plants.hpp"
-	#include "antihack_weaponholders.hpp"
+	//#include "antihack_weaponholders.hpp"
 	
 	//EPOCH
 	#include "DZE\Wrecks.hpp"
