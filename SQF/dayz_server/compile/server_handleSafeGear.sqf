@@ -3,7 +3,7 @@ private ["_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockC
 _player = _this select 0;
 _obj = _this select 1;
 _status = _this select 2;
-_suppliedCode = if (count _this > 3) then {_this select 3} else {0};
+if (count _this > 3) then {_suppliedCode = _this select 3;};
 _name = if (alive _player) then {name _player} else {"Dead Player"};
 
 _type = typeOf _obj;
@@ -33,7 +33,7 @@ _statusText = switch (_status) do {
 };
 
 if (isNull _obj) exitWith {
-	diag_log format["ERROR: server_handleSafeGear called with Null safe object by %1(%2). %3 attempt failed.",_name,_playerUID,_statusText];
+	diag_log format["ERROR: server_handleSafeGear called with Null object by %1 (%2). %3 attempt failed.",_name,_playerUID,_statusText];
 	if (_status < 3) then {
 		dze_waiting = "fail";
 		_clientID publicVariableClient "dze_waiting";
