@@ -102,8 +102,8 @@ MilitarySpecial[] =
 	{Loot_CONTAINER,	1.8,			DZ_AmmoBoxRU, AmmoBoxCZ1, 7, 14},	//7.62x39
 	{Loot_CONTAINER,	0.8,			DZ_AmmoBoxRU, AmmoBoxCZ2, 2, 5},	//7.62x54R
 //	{Loot_CONTAINER,	0.5,		DZ_AmmoBoxRU, AmmoBoxRU3, 3, 7},	//7.62x54R
-	{Loot_CONTAINER,	0.2,		DZ_ExplosivesBoxRU, AmmoBoxRU4, 5, 15},	//GP-25
-	{Loot_CONTAINER,	0.2,		DZ_ExplosivesBoxRU, AmmoBoxRU5, 3, 7},	//Grenades
+	{Loot_CONTAINER,	0.2,		DZ_ExplosiveBoxRU, AmmoBoxRU4, 5, 15},	//GP-25
+	{Loot_CONTAINER,	0.2,		DZ_ExplosiveBoxRU, AmmoBoxRU5, 3, 7},	//Grenades
 
 	//Other
 	{Loot_MAGAZINE,		3,		FoodMRE},
