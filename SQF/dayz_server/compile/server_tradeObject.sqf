@@ -1,4 +1,4 @@
-private ["_player","_playerUID","_name","_traderid","_buyorsell","_data","_result","_key","_outcome","_clientID","_price","_quantity","_container","_return"];
+private ["_player","_playerUID","_name","_traderid","_buyorsell","_data","_result","_key","_outcome","_clientID","_price","_quantity","_container","_return","_classname","_traderCity","_currency","_message"];
 
 _player =		_this select 0;
 _traderID = 	_this select 1;
@@ -10,7 +10,7 @@ _price =		_this select 6;
 
 _clientID = 	owner _player;
 _playerUID = 	getPlayerUID _player;
-_name = 		if (alive _player) then { name _player; } else { "Dead Player"; };
+_name = 		if (alive _player) then {name _player} else {"Dead Player"};
 
 if (count _this > 7) then {
 	_quantity = _this select 7;
@@ -22,14 +22,15 @@ if (count _this > 7) then {
 	_return = true;
 };
 
-if (typeName _price  == "SCALAR") then { _price = format ["%1 %2",_price,_currency]; } else { _price = format ["%1",_price]; };
+if (typeName _currency  == "STRING") then {_price = format ["%1 %2",_price,_currency];};
 
-if (_buyorsell == 0) then { //Buy
-	diag_log format["%8: %1 (%2) purchased %6x %3 into %7 at %4 for %5", _name, _playerUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289"];
-} else { //SELL
-	diag_log format["%8: %1 (%2) sold %6x %3 from %7 at %4 for %5",_name, _playerUID, _classname, _traderCity, _price, _quantity,_container,localize "STR_EPOCH_PLAYER_289"];
+if (_buyorsell == 0) then { // Buy
+	_message = format["%1: %2 (%3) purchased %4x %5 into %6 at %7 for %8",localize "STR_EPOCH_PLAYER_289",_name,_playerUID,_quantity,_classname,_container,_traderCity,_price];
+} else { // Sell
+	_message = format["%1: %2 (%3) sold %4x %5 from %6 at %7 for %8",localize "STR_EPOCH_PLAYER_289",_name,_playerUID,_quantity,_classname,_container,_traderCity,_price];
 };
 
+diag_log _message;
 if (DZE_ConfigTrader) then {
 	_outcome = "PASS";
 } else {
@@ -44,7 +45,7 @@ if (DZE_ConfigTrader) then {
 
 if (_return) then {
 	dayzTradeResult = _outcome;
-	if(!isNull _player) then {
+	if (!isNull _player) then {
 		_clientID publicVariableClient "dayzTradeResult";
 	};
 };

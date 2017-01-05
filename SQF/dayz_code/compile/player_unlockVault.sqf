@@ -77,6 +77,9 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 		format[localize "str_player_beinglooted",_text] call dayz_rollingMessages;
 	};
 } else {
+	PVDZE_handleSafeGear = [player,_obj,3,dayz_combination];
+	publicVariableServer "PVDZE_handleSafeGear";
+	
 	["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	uiSleep 1;
