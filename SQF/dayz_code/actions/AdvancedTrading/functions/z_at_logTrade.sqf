@@ -1,38 +1,29 @@
 private ["_Z_logTrade","_classNames","_className","_amounts","_amount","_prices","_price","_quantity","_queueAmounts","_queueNames","_queuePrices","_index","_buyOrSell"];
 
 _Z_logTrade = {
-	private ["_buyOrSell","_className","_container","_currency","_price","_quantity","_tCost"];
+	private ["_buyOrSell","_className","_container","_price","_quantity"];
 
 	_className = _this select 0;
 	_quantity = _this select 1;
 	_buyOrSell = _this select 2;
 	_price = _this select 3;
 	_container = switch (Z_SellingFrom) do {
-	case 0 : {localize "STR_EPOCH_TRADE_BACKPACK"};
-	case 1 : {localize "STR_EPOCH_TRADE_VEHICLE"};
-	case 2 : {localize "STR_UI_GEAR"};
+		case 0 : {localize "STR_EPOCH_TRADE_BACKPACK"};
+		case 1 : {localize "STR_EPOCH_TRADE_VEHICLE"};
+		case 2 : {localize "STR_UI_GEAR"};
 	};
-	_tCost = [_price,true] call Z_calcCurrency;
-	_currency = if (Z_SingleCurrency) then {CurrencyName} else {""};
+	_price = if (Z_singleCurrency) then {format ["%1 %2",[_price] call BIS_fnc_numberText,CurrencyName]} else {[_price,true] call Z_calcCurrency;};
 
 	// Log to client RPT
-	if (Z_SingleCurrency) then {
-		if (_buyOrSell == "buy") then {
-			diag_log format["%5: Purchased %4x %1 into %7 at %2 for %3 %6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
-		} else {
-			diag_log format["%5: Sold %4x %1 from %7 at %2 for %3 %6",_className,inTraderCity,_price,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
-		};
+	if (_buyOrSell == "buy") then {
+		diag_log format["%1: Purchased %2x %3 into %4 at %5 for %6",localize "STR_EPOCH_PLAYER_289",_quantity,_className,_container,inTraderCity,_price];
 	} else {
-		if (_buyOrSell == "buy") then {
-			diag_log format["%5: Purchased %4x %1 into %7 at %2 for %3",_className,inTraderCity,_tCost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
-		} else {
-			diag_log format["%5: Sold %4x %1 from %7 at %2 for %3",_className,inTraderCity,_tCost,_quantity,localize "STR_EPOCH_PLAYER_289",_currency,_container];
-		};
-	};	
-
+		diag_log format["%1: Sold %2x %3 from %4 at %5 for %6",localize "STR_EPOCH_PLAYER_289",_quantity,_className,_container,inTraderCity,_price];
+	};
+	
 	// Log to server RPT
 	if (DZE_serverLogTrades) then {
-		PVDZE_obj_Trade = [player,0,if (_buyOrSell == "buy") then {0} else {1},_className,inTraderCity,_currency,if (Z_singleCurrency) then {_price} else {_tCost},_quantity,_container,false];
+		PVDZE_obj_Trade = [player,0,if (_buyOrSell == "buy") then {0} else {1},_className,inTraderCity,false,_price,_quantity,_container,false];
 		publicVariableServer "PVDZE_obj_Trade";
 	};
 };
