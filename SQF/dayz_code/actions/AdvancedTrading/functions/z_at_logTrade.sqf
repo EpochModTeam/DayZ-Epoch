@@ -12,7 +12,7 @@ _Z_logTrade = {
 		case 1 : {localize "STR_EPOCH_TRADE_VEHICLE"};
 		case 2 : {localize "STR_UI_GEAR"};
 	};
-	_price = if (Z_singleCurrency) then {format ["%1 %2",[_price] call BIS_fnc_numberText,CurrencyName]} else {[_price,true] call Z_calcCurrency;};
+	_price = if (Z_singleCurrency) then {format ["%1 %2",[_price] call BIS_fnc_numberText,CurrencyName]} else {[_price,true] call Z_calcCurrency};
 
 	// Log to client RPT
 	if (_buyOrSell == "buy") then {

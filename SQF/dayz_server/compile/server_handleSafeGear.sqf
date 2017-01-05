@@ -14,7 +14,7 @@ _charID = _obj getVariable ["CharacterID","0"];
 _objectID = _obj getVariable ["ObjectID","0"];
 _objectUID = _obj getVariable ["ObjectUID","0"];
 _ownerID = _obj getVariable ["ownerPUID","0"];
-_lockCode = "0";
+_lockCode = _charID;
 
 // Player may have disconnected or died before message send. Attempt lock/unlock/pack/save procedure anyway
 if (isNull _player) then {diag_log "ERROR: server_handleSafeGear called with Null player object";};
@@ -132,7 +132,6 @@ if (_status < 4) then {
 	_type = switch _type do {
 		case "VaultStorage";
 		case "VaultStorageLocked": {
-			_lockCode = _charID;
 			"Safe"
 		};
 		case "LockboxStorage";
@@ -144,9 +143,7 @@ if (_status < 4) then {
 	};
 };
 
-_lockCode = if (_type in DZE_DoorsLocked) then {_charID} else {_lockCode};
-
-if (_status == 3 || {_status == 6}) then {
+if (_statusText == "FAILED unlocking") then {
 	_message = format["%1 (%2) %3 %4 with code: %5 (actual: %8) @%6 %7",_name,_playerUID,_statusText,_type,_suppliedCode,mapGridPosition _pos,_pos,_lockCode];
 } else {
 	_message = format["%1 (%2) %3 %4 with code: %5 @%6 %7",_name,_playerUID,_statusText,_type,_lockCode,mapGridPosition _pos,_pos];
