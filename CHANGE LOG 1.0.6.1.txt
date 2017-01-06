@@ -48,7 +48,7 @@
 [FIXED] Duplicate matchbox or knife error when lighting a fire or gutting with multiple matchboxes or knives on toolbelt. #1849 @DeVloek
 [FIXED] RU crates having zero cargo capacity and wrong classname DZ_ExplosivesBoxRU in loot table. #1852 @oiad
 [FIXED] Combining M24 or 2Rnd shotgun ammo can no longer be abused to dupe mags via the method described in #1848. @DeVloek
-[FIXED] Rapid starvation or dehydration when using chainsaw, chopping wood or pushing plane.
+[FIXED] Rapid starvation or dehydration when using chainsaw, chopping wood or pushing plane. Also lowered or removed nutrition hit for several actions.
 [FIXED] Unable to repair or salvage vehicle parts not listed in the RepairParts config, like Merlin glass and tank tracks. #1828 #1856 @ndavalos @schwanzkopfhegel @oiad
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)

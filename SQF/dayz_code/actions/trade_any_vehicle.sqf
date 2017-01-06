@@ -27,8 +27,6 @@ if(_buy_o_sell == "sell") then {
 
 localize "str_epoch_player_105" call dayz_rollingMessages;
 
-["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
-// force animation
 player playActionNow "Medic";
 
 r_interrupt = false;

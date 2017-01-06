@@ -52,7 +52,6 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	if (_claimedBy == dayz_playerUID) then {
 		if (!isNull _obj && alive _obj) then {
 			_obj setVariable["packing",1];
-			["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 			
 			disableUserInput true; // Make sure player can not modify gear while it is filling
 			(findDisplay 106) closeDisplay 0; // Close gear
@@ -80,7 +79,6 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	PVDZE_handleSafeGear = [player,_obj,3,dayz_combination];
 	publicVariableServer "PVDZE_handleSafeGear";
 	
-	["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	uiSleep 1;
 	[player,"repair",0,false] call dayz_zombieSpeak;

@@ -94,7 +94,6 @@ while {_isOk} do {
 	
 	format[localize "str_epoch_player_163",_nameVehicle,(_counter + 1),_limit] call dayz_rollingMessages;
 
-	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	_dis=20;
 	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
@@ -195,7 +194,7 @@ if (_proceed && _success) then {
 		};
 
 		format[localize "str_epoch_player_165",_nameVehicle] call dayz_rollingMessages;
-
+		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 		_preventRefund = false;
 
 		_selectedRemoveOutput = [];

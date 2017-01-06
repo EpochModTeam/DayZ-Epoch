@@ -418,7 +418,6 @@ if (_canBuild select 0) then {
 
 			format[localize "str_epoch_player_139",_text, (_counter + 1),_limit] call dayz_rollingMessages; //report how many steps are done out of total limit
 
-			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			player playActionNow "Medic"; //animation
 			
 			//alert zombies
@@ -473,8 +472,8 @@ if (_canBuild select 0) then {
 
 			_num_removed = ([player,DZE_buildItem] call BIS_fnc_invRemove); //remove item's magazine from inventory
 			if(_num_removed == 1) then {
+				["Working",0,[20,10,5,0]] call dayz_NutritionSystem;
 				call player_forceSave;
-				
 				format[localize "str_build_01",_text] call dayz_rollingMessages;
 
 				_tmpbuilt setVariable ["OEMPos",_location,true]; //store original location as a variable

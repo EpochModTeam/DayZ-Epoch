@@ -41,7 +41,7 @@ if ((count _upgrade) > 0) then {
 	_newclassname = _upgrade select 0;
 
 	_refund = _upgrade select 1;
-	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
+	["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	[player,20,true,(getPosATL player)] spawn player_alertZombies;
 

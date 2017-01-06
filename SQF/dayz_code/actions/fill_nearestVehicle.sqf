@@ -41,7 +41,6 @@ if (count _findNearestVehicle >= 1) then {
 
 		_finished = false;
 
-		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		// force animation 
 		player playActionNow "Medic";
 
@@ -112,7 +111,9 @@ if (count _findNearestVehicle >= 1) then {
 			};
 		};
 
-		if(_abort) exitWith {};
+		if (_abort) exitWith {
+			["Working",0,[0,1,3,0]] call dayz_NutritionSystem;
+		};
 		uiSleep 1;	
 	};
 } else {

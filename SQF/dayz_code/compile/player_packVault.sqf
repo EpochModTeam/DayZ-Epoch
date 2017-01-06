@@ -47,7 +47,7 @@ if(_location1 distance _location2 > 0.1) exitWith {
 };
 
 if (!isNull _obj && alive _obj) then {
-	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
+	["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	[player,"tentpack",0,false] call dayz_zombieSpeak;
 	uiSleep 3;

@@ -39,7 +39,7 @@ for "_x" from 1 to _total_trades do {
 	} else {
 		format[localize "str_epoch_player_187",_tradeCounter,_total_trades] call dayz_rollingMessages;
 	};
-	["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
+
 	player playActionNow "Medic";
 
 	r_interrupt = false;

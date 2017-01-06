@@ -9,7 +9,6 @@ s_player_fillgen = 1;
 // Use target from addaction
 _vehicle = 	_this select 3;
 
-["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 // force animation 
 player playActionNow "Medic";
 
@@ -78,6 +77,7 @@ if (_finished) then {
 			_vehicle setVariable ["GeneratorSound", _soundSource,true];
 
 			localize "str_epoch_player_28" call dayz_rollingMessages;
+			["Working",0,[0,1,3,0]] call dayz_NutritionSystem;
 		};
 	} else {	
 		// Start generator

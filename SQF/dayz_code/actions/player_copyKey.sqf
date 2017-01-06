@@ -25,7 +25,6 @@ call gear_ui_init;
 // require one tin bar per key
 _hasTinBar = 	"ItemTinBar" in magazines player;
 if (!_hasTinBar) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_59" call dayz_rollingMessages;};
-["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 player playActionNow "Medic";
 
 [player,"repair",0,false] call dayz_zombieSpeak;

@@ -39,7 +39,6 @@ if(_IsNearVehicle >= 1) then {
 
 	_finished = false;
 
-	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 	// force animation 
 	player playActionNow "Medic";
 

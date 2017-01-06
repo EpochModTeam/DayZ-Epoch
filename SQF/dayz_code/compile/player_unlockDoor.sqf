@@ -67,7 +67,6 @@ if (!isNull dayz_selectedDoor) then {
 			PVDZE_handleSafeGear = [player,_obj,6,if (_doorMethod == "EYE") then {"EYESCAN"} else {DZE_Lock_Door}];
 			publicVariableServer "PVDZE_handleSafeGear";
 			
-			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			DZE_Lock_Door = "";
 			[player,"combo_locked",0,false] call dayz_zombieSpeak;
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;

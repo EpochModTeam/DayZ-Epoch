@@ -126,7 +126,6 @@ if (_canDo) then {
 			if (_proceed) then {
 				localize "str_epoch_player_62" call dayz_rollingMessages;
 
-				["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 				player playActionNow "Medic";
 
 				[player,_sfx,0,false] call dayz_zombieSpeak;

@@ -51,8 +51,6 @@ if (count(_findNearestTree) >= 1) then {
 	_isOk = true;
 	_proceed = false;
 	while {_isOk} do {
-
-		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		player playActionNow "Medic";
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
 	
@@ -95,6 +93,7 @@ if (count(_findNearestTree) >= 1) then {
 	if (_proceed) then {
 		//Remove melee magazines (BIS_fnc_invAdd fix)
 		false call dz_fn_meleeMagazines;
+		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 		_invResult = false;
 		_i = 0;
 		for "_x" from 1 to _countOut do {
@@ -126,9 +125,6 @@ if (count(_findNearestTree) >= 1) then {
 		};
 		localize "str_epoch_player_73" call dayz_rollingMessages;
 	};
-
-	
-
 } else {
 	localize "str_epoch_player_74" call dayz_rollingMessages;
 };

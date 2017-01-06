@@ -9,8 +9,6 @@ s_player_fillgen = 1;
 // Use target from addaction
 _vehicle = 	_this select 3;
 
-["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
-// force animation 
 player playActionNow "Medic";
 
 r_interrupt = false;

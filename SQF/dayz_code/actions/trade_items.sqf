@@ -61,7 +61,6 @@ while {r_autoTrade} do {
 	
 	localize "str_epoch_player_105" call dayz_rollingMessages;
 
-	["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 	player playActionNow "Medic";
 	
 	//_dis=20;

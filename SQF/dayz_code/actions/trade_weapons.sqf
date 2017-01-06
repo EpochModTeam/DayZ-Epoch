@@ -75,9 +75,7 @@ if (_abort) exitWith {
 
 localize "str_epoch_player_105" call dayz_rollingMessages;
 
-// force animation
 player playActionNow "Medic";
-["Working",0,[3,2,8,0]] call dayz_NutritionSystem;
 
 r_interrupt = false;
 _animState = animationState player;
