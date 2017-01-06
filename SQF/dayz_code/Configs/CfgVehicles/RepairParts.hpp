@@ -126,4 +126,10 @@ class RepairParts : AllVehicles
 	class HitHull {
 		part = "PartGeneric";
 	};
+	class HitLTrack {
+		part = "PartGeneric";
+	};
+	class HitRTrack {
+		part = "PartGeneric";
+	};
 };

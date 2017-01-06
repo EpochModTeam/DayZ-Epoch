@@ -1,4 +1,4 @@
-private ["_part","_color","_vehicle","_PlayerNear","_hitpoints","_isATV","_is6WheelType","_HasNoGlassKind",
+private ["_part","_color","_vehicle","_PlayerNear","_hitpoints","_isATV","_is6WheelType","_HasNoGlassKind","_hitpoint",
 "_6WheelTypeArray","_NoGlassArray","_NoExtraWheelsArray","_RemovedPartsArray","_damage","_cmpt","_configVeh","_damagePercent","_string","_handle","_cancel","_type"];
 
 _vehicle = _this select 3;
@@ -40,6 +40,7 @@ if (_is6WheelType) then {
 };
 
 {
+	_hitpoint = _x;
 	_damage = [_vehicle,_x] call object_getHit;
 	
 	if !(_x in _RemovedPartsArray) then {
@@ -52,7 +53,16 @@ if (_is6WheelType) then {
 
 		_configVeh = configFile >> "cfgVehicles" >> "RepairParts" >> _x;
 		_part = getText(_configVeh >> "part");
-		if (_part == "") then { _part = "PartGeneric"; };
+		if (_part == "") then {
+			_part = "PartGeneric";
+			// Handle parts not listed in RepairParts config.
+			// Additional vehicle addons may be loaded with non-standard hitpoint names.
+			{
+				if ([(_x select 0),_hitpoint] call fnc_inString) then {
+					_part = format["Part%1",(_x select 1)];
+				};
+			} forEach [["Engine","Engine"],["HRotor","VRotor"],["Fuel","Fueltank"],["Wheel","Wheel"],["Glass","Glass"]];
+		};
 
 		//get every damaged part no matter how tiny damage is!
 		_damagePercent = str(round(_damage * 100))+"% Damage";

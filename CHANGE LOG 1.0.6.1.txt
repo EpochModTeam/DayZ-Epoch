@@ -18,7 +18,6 @@
 [FIXED] Undefined variable dayz_clientPreload error on main menu during intro.sqs. #1810 @ndavalos @ebayShopper
 [FIXED] Giving pain killers to another player no longer removes pain from the player giving the pain killers.
 [FIXED] Occasional undefined error for text color attribute when repairing and salvaging vehicles. @ebayShopper
-[FIXED] Unable to repair or salvage tank tracks with scrap metal. #1828 @ndavalos
 [FIXED] M24 ammo prices are now 1/4 of DMR ammo prices, so no profit can be made by combining M24 rounds. @looter809 @ebayShopper
 [FIXED] Full cinderblock walls now work properly with vector building #1813. @DeVloek @icomrade
 [FIXED] Death message showing incorrectly when players suicide under certain conditions. @oiad @ebayShopper
@@ -50,7 +49,7 @@
 [FIXED] RU crates having zero cargo capacity and wrong classname DZ_ExplosivesBoxRU in loot table. #1852 @oiad
 [FIXED] Combining M24 or 2Rnd shotgun ammo can no longer be abused to dupe mags via the method described in #1848. @DeVloek
 [FIXED] Rapid starvation or dehydration when using chainsaw, chopping wood or pushing plane.
-[FIXED] Both Merlin_HC3's can now be repaired properly by manually fixing the glass. #1856 @schwanzkopfhegel @oiad
+[FIXED] Unable to repair or salvage vehicle parts not listed in the RepairParts config, like Merlin glass and tank tracks. #1828 #1856 @ndavalos @schwanzkopfhegel @oiad
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade

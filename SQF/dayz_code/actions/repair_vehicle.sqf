@@ -1,4 +1,4 @@
-private ["_part","_cancel","_color","_string","_handle","_damage","_cmpt","_vehicle","_hitpoints","_damagePercent","_configVeh"];
+private ["_part","_cancel","_color","_string","_handle","_damage","_cmpt","_vehicle","_hitpoints","_damagePercent","_configVeh","_hitpoint"];
 
 _vehicle = _this select 3;
 {dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
@@ -7,6 +7,7 @@ dayz_myCursorTarget = _vehicle;
 _hitpoints = _vehicle call vehicle_getHitpoints;
 
 {
+	_hitpoint = _x;
 	_damage = [_vehicle,_x] call object_getHit;
 
 	_cmpt = toArray (_x);
@@ -17,7 +18,16 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 
 	_configVeh = configFile >> "cfgVehicles" >> "RepairParts" >> _x;
 	_part = getText(_configVeh >> "part");
-	if (_part == "") then { _part = "PartGeneric"; };
+	if (_part == "") then {
+		_part = "PartGeneric";
+		// Handle parts not listed in RepairParts config.
+		// Additional vehicle addons may be loaded with non-standard hitpoint names.
+		{
+			if ([(_x select 0),_hitpoint] call fnc_inString) then {
+				_part = format["Part%1",(_x select 1)];
+			};
+		} forEach [["Engine","Engine"],["HRotor","VRotor"],["Fuel","Fueltank"],["Wheel","Wheel"],["Glass","Glass"]];
+	};
 
 	// get every damaged part no matter how tiny damage is!
 	_damagePercent = str(round(_damage * 100))+"% Damage";
