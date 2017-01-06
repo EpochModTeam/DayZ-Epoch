@@ -23,5 +23,5 @@ _object setVelocity [
 // Alert Zombies
 [player,20,true,(getPosATL player)] call player_alertZombies;
 
-// Added Nutrition-Factor for work
-["Working",0,[0,1,3,0]] call dayz_NutritionSystem;
+//Player can push in rapid succession resulting in quick dehydration or starvation
+//["Working",0,[0,1,3,0]] call dayz_NutritionSystem;

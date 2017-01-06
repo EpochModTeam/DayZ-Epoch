@@ -4,8 +4,7 @@ _weapon = 		_this select 1;
 _ammo = 		_this select 4;
 _projectile = 	_this select 6;
 
-if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo") then {
-	
+if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {	
 	_findNearestTree = [];
 	{
 		if (("" == typeOf _x) && {alive _x}) then {			
@@ -33,13 +32,11 @@ if (_ammo isKindOf "Hatchet_Swing_Ammo" || _ammo isKindOf "Chainsaw_Swing_Ammo")
 					PVDZ_objgather_Knockdown = [_tree,player]; // Ask server to setDamage on tree
 					publicVariableServer "PVDZ_objgather_Knockdown";
 				};
-				_itemOut = if (_ammo isKindOf "Chainsaw_Swing_Ammo") then {"PartWoodLumber"} else {"PartWoodPile"}; // Log can be crafted to > 2x plank > 4x woodpile			
+				_itemOut = if (_ammo == "Chainsaw_Swing_Ammo") then {"PartWoodLumber"} else {"PartWoodPile"}; // Log can be crafted to > 2x plank > 4x woodpile			
 				[_itemOut,1,1] call fn_dropItem;
 
 				_distance = 60;
 				[player,_distance,false,getPosATL player] spawn player_alertZombies;
-				// Working-Factor for chopping wood.
-				["Working",0,[20,15,10,0]] call dayz_NutritionSystem;
 			};
 			DZE_TEMP_treedmg = _damage;
 		};

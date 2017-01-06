@@ -15,10 +15,12 @@ dayz_disAudial = _distance;
 dayz_firedCooldown = time;
 
 if (_ammo isKindOf "Melee") exitWith {
-	// Added Nutrition-Factor for work
-	//[Type,Blood[Calories,Hunger,Thrist,Temp]
-	["Working",0,[0,3,5,0]] call dayz_NutritionSystem;
-	if !(_ammo isKindOf "Chainsaw_Swing_Ammo") then {_unit playActionNow "GestureSwing";};
+	if (_ammo != "Chainsaw_Swing_Ammo") then {
+		// Added Nutrition-Factor for work
+		//[Type,Blood[Calories,Hunger,Thrist,Temp]
+		["Working",0,[0,3,5,0]] call dayz_NutritionSystem;
+		_unit playActionNow "GestureSwing";
+	};
 	_this call player_harvest; // harvest wood check
 };
 
