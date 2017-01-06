@@ -649,6 +649,7 @@ class StickFence_DZ: Wall_FenW2_6_EP1
 	offset[] = {0,4.5,0};
 	displayName = $STR_EPOCH_STICKFENCE;
 	vehicleClass = "Fortifications";
+	removeoutput[] = {{"stick_fence_kit",1}};
 };
 class ASC_EU_LHVOld;
 class LightPole_DZ: ASC_EU_LHVOld
