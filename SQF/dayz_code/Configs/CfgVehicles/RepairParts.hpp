@@ -69,6 +69,48 @@ class RepairParts : AllVehicles
 	class HitGlass6 {
 		part = "PartGlass";
 	};
+	class HitGlass7 {
+		part = "PartGlass";
+	};
+	class HitGlass8 {
+		part = "PartGlass";
+	};
+	class HitGlass9 {
+		part = "PartGlass";
+	};
+	class HitGlass10 {
+		part = "PartGlass";
+	};
+	class HitGlass11 {
+		part = "PartGlass";
+	};
+	class HitGlass12 {
+		part = "PartGlass";
+	};
+	class HitGlass13 {
+		part = "PartGlass";
+	};
+	class HitGlass14 {
+		part = "PartGlass";
+	};
+	class HitGlass15 {
+		part = "PartGlass";
+	};
+	class HitGlass16 {
+		part = "PartGlass";
+	};
+	class HitGlass17 {
+		part = "PartGlass";
+	};
+	class HitGlass18 {
+		part = "PartGlass";
+	};
+	class HitGlass19 {
+		part = "PartGlass";
+	};
+	class HitGlass20 {
+		part = "PartGlass";
+	};
 	class HitVRotor {
 		part = "PartGeneric";
 	};
