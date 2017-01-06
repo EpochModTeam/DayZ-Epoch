@@ -73,7 +73,6 @@ _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName")
 format[localize "str_epoch_player_162",_nameVehicle] call dayz_rollingMessages;
 
 if (_isModular) then {
-     //allow previous cutText to show, then show this if modular.
      localize "STR_EPOCH_ACTIONS_21" call dayz_rollingMessages;
 };
 
@@ -131,7 +130,7 @@ while {_isOk} do {
 
 	if(_finished) then {
 		_counter = _counter + 1;
-		// 10% chance to break a required tool each pass
+		// 4% chance to break a required tool each pass
 		if((_isDestructable || _isRemovable) && !_isOwnerOfObj) then {
 			if (dayz_toolBreaking && {[0.04] call fn_chance}) then {_brokenTool = true;};
 		};

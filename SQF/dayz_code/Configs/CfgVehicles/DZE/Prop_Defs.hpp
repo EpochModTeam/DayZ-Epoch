@@ -659,6 +659,7 @@ class LightPole_DZ: ASC_EU_LHVOld
 	displayName = $STR_EPOCH_LIGHTPOLE;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"ItemLightBulb",1}};
+	removeoutput[] = {{"light_pole_kit",1}};
 };
 class Land_Misc_Scaffolding;
 class Scaffolding_DZ: Land_Misc_Scaffolding
@@ -678,6 +679,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 	typicalCargo[] = {};
 	offset[] = {0,9,3};
 	cost = 0;
+	removeoutput[] = {{"ItemScaffoldingKit",1}};
 };
 class WoodGate_DZ: BuiltItems
 {
