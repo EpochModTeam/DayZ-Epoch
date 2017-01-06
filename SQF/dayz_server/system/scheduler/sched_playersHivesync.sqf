@@ -27,13 +27,6 @@ sched_playershivewrite = {
 					_n = _n + 1;	
 				};
 			};
-			if ([ -11000+500, 15360-21000+500, 0 ] distance _pos < 2000) then {
-				diag_log format [ "HACK, player %1 at anti-ESP zone, killing him but no HIVE save for him.", _x call fa_plr2str ];
-				_x setVariable ["CharacterID", nil, true ]; 
-				unassignVehicle _x;
-				_pos set [2, 2000]; // will be killed by gravity OR kick by anti TP
-				_x setPosATL _pos;
-			};
 		};
 	} forEach playableUnits;
 	if (_n > 0) then {
