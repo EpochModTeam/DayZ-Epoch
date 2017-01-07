@@ -5,8 +5,10 @@ private ["_count","_anim","_weapon","_sprint","_stance","_transmove","_start","_
 if (r_player_unconsciousInProgress) exitWith {};
 r_player_unconsciousInProgress = true;
 r_player_unconsciousInputDisabled = true;
-disableUserInput true; //only works if disableUserInput command is issued twice for some reason...
-disableUserInput true;
+//this is like this in order to release the current user input
+disableUserInput true; disableUserInput true;
+disableUserInput false; disableUserInput false;
+disableUserInput true; disableUserInput true;
 
 _start = diag_tickTime;
 _timeout = abs r_player_timeout;
@@ -88,8 +90,10 @@ if (player == vehicle player) then {
 "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 "colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
 
-disableUserInput false;
-disableUserInput false;
+//once more to be safe
+disableUserInput false; disableUserInput false;
+disableUserInput true; disableUserInput true;
+disableUserInput false; disableUserInput false;
 r_player_unconsciousInputDisabled = false;
 
 //diag_log [ __FILE__, diag_tickTime, "done" ];
