@@ -122,22 +122,8 @@ sched_medical_effects = {
 };
 
 sched_medical_effectsSlow = {
-	// every 10 seconds: diziness using slow shakecam, to handle pain and lack of water
+	// every 10 seconds
 	HIDE_FSM_VARS
-
-    if ((r_player_inpain or dayz_thirst >= SleepWater) and !r_player_unconscious and (1 > random 9) and (0 == player getVariable["startcombattimer",0])) then {
-        _duration = 10 + (random 10);
-        _blurTask = [1 + (random 2), _duration] spawn {
-            _strength = _this select 0;
-            _duration = _this select 1;
-            enableCamShake true;
-            //[posCoef, vertCoef, horzCoef, bankCoef, interpolation]
-            setCamShakeParams [0.02, 0.2, 1, 2, true];
-            addCamShake [3 * _strength, _duration, 0.4];
-            //playSound "breath_1";
-            uiSleep _duration;
-        };
-    };
 
 	if (r_player_infected and !r_player_unconscious and 1 > random 2 and ((vehicle player == player and speed player < 5) or (vehicle player != player))) then {
 		[player,"cough",1,false] call dayz_zombieSpeak;

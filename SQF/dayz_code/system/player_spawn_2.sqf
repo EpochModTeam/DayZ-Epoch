@@ -347,6 +347,7 @@ while {1 == 1} do {
 	//Pain Effects
 	if (r_player_inpain and !r_player_unconscious) then {
 		playSound "breath_1";
+		addCamShake [2, 1, 25];
 	};
 
 	_myPos = player getVariable["lastPos",[]];
