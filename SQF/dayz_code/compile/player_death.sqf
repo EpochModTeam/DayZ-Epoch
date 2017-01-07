@@ -103,6 +103,12 @@ if (!local _source && isPlayer _source) then {
 	r_player_unconscious = false;
 	r_player_cardiac = false;
 	dayz_autoRun = false;
+	if (player == vehicle player) then { //fix running corpses
+		[nil, player, rSWITCHMOVE, ""] call RE;
+		player SWITCHMOVE "";
+		PVDZ_plr_SwitchMove = [player,""];
+		publicVariableServer "PVDZ_plr_SwitchMove";
+	};
 
 	terminate dayz_musicH;
 	terminate dayz_slowCheck;
