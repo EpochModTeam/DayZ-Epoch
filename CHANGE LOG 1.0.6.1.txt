@@ -10,6 +10,7 @@
 [CHANGED] Removed drink from hands at ponds due to client FPS impact. Players can still fill drinks at ponds by right clicking a container. @ebayShopper
 [CHANGED] Added point of interest and infectious waterhole map objects are disabled by default due to FPS impact. They can be enabled in init.sqf.
 [CHANGED] Added shadow to dayz_rollingMessages white text so it is visible on light colored backgrounds and looks like cutText.
+[CHANGED] Reverted pain to old violent shaking effect instead of subtle gun sway. #1839 @AirwavesMan @schwanzkopfhegel
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper
