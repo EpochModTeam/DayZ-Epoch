@@ -33,7 +33,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Shapur BAF";
-		briefingDescription="Version 1.0.6";
+		briefingDescription="Version 1.0.6.1";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
