@@ -64,7 +64,7 @@ DELIMITER ;
 -- ----------------------------
 DROP EVENT IF EXISTS `removeDamagedVehicles`;
 DELIMITER ;;
-CREATE EVENT `removeDamagedVehicles` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes damaged vehicles' DO DELETE FROM `Object_DATA` WHERE Damage = 1
+CREATE EVENT `removeDamagedVehicles` ON SCHEDULE EVERY 1 DAY COMMENT 'Removes damaged vehicles' DO DELETE FROM `Object_DATA` WHERE Damage >= 1
 ;;
 DELIMITER ;
 
