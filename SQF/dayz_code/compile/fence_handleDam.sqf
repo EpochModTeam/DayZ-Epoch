@@ -1,22 +1,27 @@
 /***********************************************************
-ASSIGN DAMAGE TO A UNIT.
+ASSIGN DAMAGE TO A Object.
 Called by "HandleDamage" vehicle Event Handler
 
 - Function fnc_Obj_FenceHandleDam
-- [unit] call fnc_Obj_FenceHandleDam;
+Wooden Defaults - [Object,[High Explosive(1),Medium Explosive(0.5),Melee damage(0.00001 + random(0.05))]] call fnc_Obj_FenceHandleDam;
+Metal Defaults - [Object,[High Explosive(0.5),Medium Explosive(0.25),Melee damage(0.00001 + random(0.005))]] call fnc_Obj_FenceHandleDam;
 - return : 0 no damage
+
+--Note, Melee damage runs this script 12 times per hit.
 ************************************************************/
 private["_obj","_total","_damage"];
 
 //Object the EH is assigned too
 _obj = _this select 0;
+//array holding dam sent to the eventhandler
+//_damageArray _this select 1;
 
 if !((_this select 4) in ["PipeBomb","explosive_bolt","Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]) exitwith { false };
 
 _damage = switch (1==1) do {
-    case ((_this select 4) in ["PipeBomb"]): { 0.5 }; //High explosive
-	case ((_this select 4) in ["explosive_bolt"]): { 0.25 }; //Medium explosive, maybe grenades and other such items.
-	case ((_this select 4) in ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]): { 0.00001 }; //Melee damage
+    case ((_this select 4) in ["PipeBomb"]): { ((_this select 1) select 0) }; //0.5 High explosive
+	case ((_this select 4) in ["explosive_bolt"]): { ((_this select 1) select 1) }; //0.25 Medium explosive, maybe grenades and other such items.
+	case ((_this select 4) in ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]): { ((_this select 1) select 2) + random(0.05) }; //0.00001 Melee damage, 
 	default { 0 };
 };
 
