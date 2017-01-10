@@ -57,6 +57,7 @@
 [FIXED] Unconscious locked input when running #1860 @icomrade @DeVloek 
 [FIXED] Running corpses when the dead player has no primary weapon @icomrade
 [FIXED] "AI" text localized on wrong client in death messages. #1867 @LunaCB
+[FIXED] Group icons will not show for units inside the player's vehicle anymore (helis, large planes, etc.). #1865 @schwanzkopfhegel
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade

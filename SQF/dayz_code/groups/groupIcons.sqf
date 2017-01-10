@@ -11,7 +11,7 @@ if (!visibleMap && count _group > 1 && cameraView in ["INTERNAL","EXTERNAL","GUN
 		_pos = [_x] call FNC_GetPos;
 		_distance = _pos distance player;
 		_icon = _display displayCtrl (100 + _index);
-		if (_distance > 1 && _distance < 2500) then {
+		if (_distance > 1 && _distance < 2500 && vehicle _x != vehicle player) then {
 			_pos set [2,(_pos select 2) + 1.5];
 			_screen = worldToScreen _pos;
 			_text = composeText [image "\ca\ui\data\igui_side_unknown_ca.paa"," ",if (dayz_groupNameTags) then {name _x} else {""}];
@@ -38,7 +38,5 @@ if (!visibleMap && count _group > 1 && cameraView in ["INTERNAL","EXTERNAL","GUN
 	
 	dayz_oldGroupCount = count _group;
 } else {
-	if (!isNull (uiNamespace getVariable "DZ_GroupIcons")) then {
-		80000 cutText ["","PLAIN"];
-	};
+	80000 cutText ["","PLAIN"];
 };
