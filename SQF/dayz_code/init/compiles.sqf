@@ -159,6 +159,7 @@ if (!isDedicated) then {
 	// EPOCH ADDITIONS
 	dayz_autoRunOff = {dayz_autoRun = false; terminate dayz_autoRunThread; player playActionNow "Stop";};
 	dog_findTargetAgent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
+	dze_deathMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_deathMessage.sqf";
 	dze_filterCheats = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_filterCheats.sqf";
 	dze_isnearest_player = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_isNearestPlayer.sqf";
 	dze_buildChecks = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_buildChecks.sqf";

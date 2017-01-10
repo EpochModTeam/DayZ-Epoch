@@ -1,6 +1,6 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_characterID","_minutes","_newObject","_playerID","_playerName","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide"];
+private ["_characterID","_minutes","_newObject","_playerID","_playerName","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide","_bodyName"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 
 _characterID = _this select 0;
@@ -71,10 +71,13 @@ if (_playerName != "unknown" or _sourceName != "unknown") then {
 		} count playableUnits;
 	};
 	
+	_bodyName = _message select 1;
+	if (_bodyName == "AI") then {_bodyName = localize "STR_PLAYER_AI";};
+	
 	_message = switch (_message select 0) do {
-		case "died": {format [localize "str_player_death_died", _message select 1, localize format["str_death_%1",_message select 2]]};
-		case "killed": {format [localize "str_player_death_killed", _message select 1, _message select 2, _message select 3, _message select 4]};
-		case "suicide": {format [localize "str_player_death_suicide", _message select 1]};
+		case "died": {format [localize "str_player_death_died", _bodyName, localize format["str_death_%1",_message select 2]]};
+		case "killed": {format [localize "str_player_death_killed", _bodyName, _message select 2, _message select 3, _message select 4]};
+		case "suicide": {format [localize "str_player_death_suicide", _bodyName]};
 	};
 	diag_log format["DeathMessage: %1",_message];
 };

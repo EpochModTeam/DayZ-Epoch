@@ -34,7 +34,7 @@ if (!isNull _source) then {
 	if (_sourceWeapon == "Throw") then {_sourceWeapon = (weaponState _source) select 3;};
 	if (_ammo in ["PipeBomb","Mine","MineE"]) then {_sourceWeapon = _ammo;};
 	if (alive _source) then {
-		_sourceName = if (isPlayer _source) then {name _source} else {localize "STR_PLAYER_AI"};
+		_sourceName = if (isPlayer _source) then {name _source} else {"AI"};
 	};
 	if (_source == _body) then {_sourceName = dayz_playerName;};
 };

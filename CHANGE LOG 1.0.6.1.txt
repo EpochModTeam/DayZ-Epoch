@@ -56,6 +56,7 @@
 [FIXED] Unable to remove LightPole_DZ, DeerStand_DZ, MetalGate_DZ and StickFence_DZ. #1859 @TheZog
 [FIXED] Unconscious locked input when running #1860 @icomrade @DeVloek 
 [FIXED] Running corpses when the dead player has no primary weapon @icomrade
+[FIXED] "AI" text localized on wrong client in death messages. #1867 @LunaCB
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
