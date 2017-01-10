@@ -9,6 +9,17 @@
 	brightness = 0.1;\
 };
 
+#define CROSSBOW_MFLASHLIGHT class FlashLight\
+{\
+	color[] = {0.9, 0.0, 0.0, 0.9};\
+	ambient[] = {0.1, 0.0, 0.0, 1.0};\
+	position = "fl_start";\
+	direction = "fl_dir";\
+	angle = 40;\
+	scale[] = {1, 1, 0.5};\
+	brightness = 0.08;\
+};
+
 
 
 class Crossbow_Base : Rifle
@@ -53,6 +64,7 @@ class Crossbow_DZ : Crossbow_Base
 	{
 		Attachment_CCO = "Crossbow_CCO_DZ";
 		Attachment_FL = "Crossbow_FL_DZ";
+		Attachment_MFL = "Crossbow_MFL_DZ";
 		Attachment_SCOPED = "Crossbow_Scope_DZ";
 	};
 };
@@ -81,6 +93,30 @@ class Crossbow_FL_DZ : Crossbow_DZ
 	};
 };
 
+class Crossbow_MFL_DZ : Crossbow_DZ
+{
+	model = "z\addons\community_crossbow\models\crossbow_fl.p3d";
+	picture = "\z\addons\community_crossbow\icons\crossbow_fl.paa";
+	displayName = $STR_DZ_WPN_CROSSBOW_MFL_NAME;
+	
+	CROSSBOW_MFLASHLIGHT
+	
+	class Attachments
+	{
+		Attachment_CCO = "Crossbow_CCO_MFL_DZ";
+		Attachment_SCOPED = "Crossbow_Scope_MFL_DZ";
+	};
+	
+	class ItemActions
+	{
+		class RemoveFlashlight
+		{
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
+			script = "; ['Attachment_MFL',_id,'Crossbow_DZ'] call player_removeAttachment";
+		};
+	};
+};
+
 
 
 /*CCO*/
@@ -94,6 +130,7 @@ class Crossbow_CCO_DZ : Crossbow_DZ
 	class Attachments
 	{
 		Attachment_FL = "Crossbow_CCO_FL_DZ";
+		Attachment_MFL = "Crossbow_CCO_MFL_DZ";
 	};
 	
 	class ItemActions
@@ -132,6 +169,32 @@ class Crossbow_CCO_FL_DZ : Crossbow_CCO_DZ
 	};
 };
 
+class Crossbow_CCO_MFL_DZ : Crossbow_CCO_DZ
+{
+	model = "z\addons\community_crossbow\models\crossbow_cco_fl.p3d";
+	picture = "\z\addons\community_crossbow\icons\crossbow_scoped.paa";
+	displayName = $STR_DZ_WPN_CROSSBOW_CCO_MFL_NAME;
+	
+	CROSSBOW_MFLASHLIGHT
+	
+	class Attachments {};
+	
+	class ItemActions
+	{
+		class RemoveCCO
+		{
+			text = $STR_DZ_ATT_CCO_RMVE;
+			script = "; ['Attachment_CCO',_id,'Crossbow_MFL_DZ'] call player_removeAttachment";
+		};
+		
+		class RemoveFlashlight
+		{
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
+			script = "; ['Attachment_MFL',_id,'Crossbow_CCO_DZ'] call player_removeAttachment";
+		};
+	};
+};
+
 
 
 /*Scope*/
@@ -152,6 +215,7 @@ class Crossbow_Scope_DZ : Crossbow_DZ
 	class Attachments
 	{
 		Attachment_FL = "Crossbow_Scope_FL_DZ";
+		Attachment_MFL = "Crossbow_Scope_MFL_DZ";
 	};
 	
 	class ItemActions
@@ -190,4 +254,32 @@ class Crossbow_Scope_FL_DZ : Crossbow_Scope_DZ
 	};
 };
 
+class Crossbow_Scope_MFL_DZ : Crossbow_Scope_DZ
+{
+	model = "z\addons\community_crossbow\models\crossbow_scoped_fl.p3d";
+	picture = "\z\addons\community_crossbow\icons\crossbow_scoped_fl.paa";
+	displayName = $STR_DZ_WPN_CROSSBOW_SCOPE_MFL_NAME;
+	
+	CROSSBOW_MFLASHLIGHT
+	
+	class Attachments {};
+	
+	class ItemActions
+	{
+		class RemoveScope
+		{
+			text = $STR_DZ_ATT_PU_RMVE;
+			script = "; ['Attachment_SCOPED',_id,'Crossbow_MFL_DZ'] call player_removeAttachment";
+		};
+		
+		class RemoveFlashlight
+		{
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
+			script = "; ['Attachment_MFL',_id,'Crossbow_Scope_DZ'] call player_removeAttachment";
+		};
+	};
+};
+
 #undef CROSSBOW_FLASHLIGHT
+
+#undef CROSSBOW_MFLASHLIGHT

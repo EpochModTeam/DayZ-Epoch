@@ -9772,6 +9772,10 @@
 			<English>M4A1 FL</English>
 			<Russian>M4A1 Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_MFL_NAME">
+			<English>M4A1 MFL</English>
+			<Russian>M4A1 вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_SD_NAME">
 			<English>M4A1 SD</English>
 			<Russian>M4A1 ПБС</Russian>
@@ -9780,12 +9784,20 @@
 			<English>M4A1 SD FL</English>
 			<Russian>M4A1 ПБС Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_SD_MFL_NAME">
+			<English>M4A1 SD MFL</English>
+			<Russian>M4A1 ПБС вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_NAME">
 			<English>M4A1 M203</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_FL_NAME">
 			<English>M4A1 M203 FL</English>
 			<Russian>M4A1 M203 Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_GL_MFL_NAME">
+			<English>M4A1 M203 MFL</English>
+			<Russian>M4A1 M203 вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_SD_NAME">
 			<English>M4A1 M203 SD</English>
@@ -9795,6 +9807,10 @@
 			<English>M4A1 M203 SD FL</English>
 			<Russian>M4A1 M203 ПБС Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_GL_SD_MFL_NAME">
+			<English>M4A1 M203 SD MFL</English>
+			<Russian>M4A1 M203 ПБС вФ</Russian>
+		</Key>
 		<!-- M4A1 CCO-->
 		<Key ID="STR_DZ_WPN_M4A1_CCO_NAME">
 			<English>M4A1 CCO</English>
@@ -9802,6 +9818,10 @@
 		<Key ID="STR_DZ_WPN_M4A1_CCO_FL_NAME">
 			<English>M4A1 CCO FL</English>
 			<Russian>M4A1 CCO Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_CCO_MFL_NAME">
+			<English>M4A1 CCO MFL</English>
+			<Russian>M4A1 CCO вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_NAME">
 			<English>M4A1 CCO SD</English>
@@ -9811,12 +9831,20 @@
 			<English>M4A1 CCO SD FL</English>
 			<Russian>M4A1 CCO ПБС Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_MFL_NAME">
+			<English>M4A1 CCO SD MFL</English>
+			<Russian>M4A1 CCO ПБС вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_NAME">
 			<English>M4A1 M203 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_FL_NAME">
 			<English>M4A1 M203 CCO FL</English>
 			<Russian>M4A1 M203 CCO Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_MFL_NAME">
+			<English>M4A1 M203 CCO MFL</English>
+			<Russian>M4A1 M203 CCO вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_NAME">
 			<English>M4A1 M203 CCO SD</English>
@@ -9826,6 +9854,10 @@
 			<English>M4A1 M203 CCO SD FL</English>
 			<Russian>M4A1 M203 CCO ПБС Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_MFL_NAME">
+			<English>M4A1 M203 CCO SD MFL</English>
+			<Russian>M4A1 M203 CCO ПБС вФ</Russian>
+		</Key>
 		<!-- M4A1 Holo -->
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_NAME">
 			<English>M4A1 Holo</English>
@@ -9833,6 +9865,10 @@
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_FL_NAME">
 			<English>M4A1 Holo FL</English>
 			<Russian>M4A1 Holo Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_HOLO_MFL_NAME">
+			<English>M4A1 Holo MFL</English>
+			<Russian>M4A1 Holo вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_NAME">
 			<English>M4A1 Holo SD</English>
@@ -9842,12 +9878,20 @@
 			<English>M4A1 Holo SD FL</English>
 			<Russian>M4A1 Holo ПБС Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_MFL_NAME">
+			<English>M4A1 Holo SD MFL</English>
+			<Russian>M4A1 Holo ПБС вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_NAME">
 			<English>M4A1 M203 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_FL_NAME">
 			<English>M4A1 M203 Holo FL</English>
 			<Russian>M4A1 M203 Holo Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_MFL_NAME">
+			<English>M4A1 M203 Holo MFL</English>
+			<Russian>M4A1 M203 Holo вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME">
 			<English>M4A1 M203 Holo SD</English>
@@ -9857,6 +9901,10 @@
 			<English>M4A1 M203 Holo SD FL</English>
 			<Russian>M4A1 M203 Holo ПБС Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_MFL_NAME">
+			<English>M4A1 M203 Holo SD MFL</English>
+			<Russian>M4A1 M203 Holo ПБС вФ</Russian>
+		</Key>
 		<!-- M4A1 ACOG -->
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_NAME">
 			<English>M4A1 ACOG</English>
@@ -9864,6 +9912,10 @@
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_FL_NAME">
 			<English>M4A1 ACOG FL</English>
 			<Russian>M4A1 ACOG Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_ACOG_MFL_NAME">
+			<English>M4A1 ACOG MFL</English>
+			<Russian>M4A1 ACOG вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_NAME">
 			<English>M4A1 ACOG SD</English>
@@ -9873,12 +9925,20 @@
 			<English>M4A1 ACOG SD FL</English>
 			<Russian>M4A1 ACOG ПБС Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_MFL_NAME">
+			<English>M4A1 ACOG SD MFL</English>
+			<Russian>M4A1 ACOG ПБС вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_NAME">
 			<English>M4A1 M203 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_FL_NAME">
 			<English>M4A1 M203 ACOG FL</English>
 			<Russian>M4A1 M203 ACOG Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_MFL_NAME">
+			<English>M4A1 M203 ACOG MFL</English>
+			<Russian>M4A1 M203 ACOG вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_NAME">
 			<English>M4A1 M203 ACOG SD</English>
@@ -9887,6 +9947,10 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_FL_NAME">
 			<English>M4A1 M203 ACOG SD FL</English>
 			<Russian>M4A1 M203 ACOG ПБС Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_MFL_NAME">
+			<English>M4A1 M203 ACOG SD MFL</English>
+			<Russian>M4A1 M203 ACOG ПБС вФ</Russian>
 		</Key>
 		
 		<!-- M16A4 -->
@@ -9897,12 +9961,20 @@
 			<English>M16A4 FL</English>
 			<Russian>M16A4 Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M16A4_MFL">
+			<English>M16A4 MFL</English>
+			<Russian>M16A4 вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_CCO">
 			<English>M16A4 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_CCO_FL">
 			<English>M16A4 CCO FL</English>
 			<Russian>M16A4 CCO Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M16A4_CCO_MFL">
+			<English>M16A4 CCO MFL</English>
+			<Russian>M16A4 CCO вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_HOLO">
 			<English>M16A4 Holo</English>
@@ -9911,12 +9983,20 @@
 			<English>M16A4 Holo FL</English>
 			<Russian>M16A4 Holo Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M16A4_HOLO_MFL">
+			<English>M16A4 Holo MFL</English>
+			<Russian>M16A4 Holo вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_NAME">
 			<English>M16A4 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_FL_NAME">
 			<English>M16A4 ACOG FL</English>
 			<Russian>M16A4 ACOG Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M16A4_ACOG_MFL_NAME">
+			<English>M16A4 ACOG MFL</English>
+			<Russian>M16A4 ACOG вФ</Russian>
 		</Key>
 
 		<!-- M203 -->
@@ -9927,12 +10007,20 @@
 			<English>M16A4 M203 FL</English>
 			<Russian>M16A4 M203 Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M16A4_GL_MFL">
+			<English>M16A4 M203 MFL</English>
+			<Russian>M16A4 M203 вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO">
 			<English>M16A4 M203 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO_FL">
 			<English>M16A4 M203 CCO FL</English>
 			<Russian>M16A4 M203 CCO Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M16A4_GL_CCO_MFL">
+			<English>M16A4 M203 CCO MFL</English>
+			<Russian>M16A4 M203 CCO вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO">
 			<English>M16A4 M203 Holo</English>
@@ -9941,12 +10029,20 @@
 			<English>M16A4 M203 Holo FL</English>
 			<Russian>M16A4 M203 Holo Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO_MFL">
+			<English>M16A4 M203 Holo MFL</English>
+			<Russian>M16A4 M203 Holo вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_NAME">
 			<English>M16A4 M203 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_FL_NAME">
 			<English>M16A4 M203 ACOG FL</English>
 			<Russian>M16A4 M203 ACOG Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_MFL_NAME">
+			<English>M16A4 M203 ACOG MFL</English>
+			<Russian>M16A4 M203 ACOG вФ</Russian>
 		</Key>
 
 		<!-- FN FAL -->
@@ -10090,12 +10186,20 @@
 			<English>SA-58 RIS FL</English>
 			<Russian>SA-58 РСИ Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_SA58_RIS_MFL_NAME">
+			<English>SA-58 RIS MFL</English>
+			<Russian>SA-58 РСИ вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_SA58_CCO_NAME">
 			<English>SA-58 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_CCO_FL_NAME">
 			<English>SA-58 CCO FL</English>
 			<Russian>SA-58 CCO Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_SA58_CCO_MFL_NAME">
+			<English>SA-58 CCO MFL</English>
+			<Russian>SA-58 CCO вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_HOLO_NAME">
 			<English>SA-58 Holo</English>
@@ -10104,12 +10208,20 @@
 			<English>SA-58 Holo FL</English>
 			<Russian>SA-58 Holo Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_SA58_HOLO_MFL_NAME">
+			<English>SA-58 Holo MFL</English>
+			<Russian>SA-58 Holo вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_SA58_ACOG_NAME">
 			<English>SA-58 ACOG</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_ACOG_FL_NAME">
 			<English>SA-58 ACOG FL</English>
 			<Russian>SA-58 ACOG Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_SA58_ACOG_MFL_NAME">
+			<English>SA-58 ACOG MFL</English>
+			<Russian>SA-58 ACOG вФ</Russian>
 		</Key>
 		
 		<!-- G36C -->
@@ -10196,6 +10308,10 @@
 			<English>G17 FL</English>
 			<Russian>G17 Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_G17_MFL_NAME">
+			<English>G17 MFL</English>
+			<Russian>G17 вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_G17_SD_NAME">
 			<English>G17 SD</English>
 			<Russian>G17 ПБС</Russian>
@@ -10203,6 +10319,10 @@
 		<Key ID="STR_DZ_WPN_G17_SD_FL_NAME">
 			<English>G17 SD FL</English>
 			<Russian>G17 ПБС Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_G17_SD_MFL_NAME">
+			<English>G17 SD MFL</English>
+			<Russian>G17 ПБС вФ</Russian>
 		</Key>
 		
 		<!-- PM -->
@@ -10275,9 +10395,17 @@
 			<French>Remington 870 (+Torche)</French>
 			<Czech>Remington 870 (baterka)</Czech>
 		</Key>
+		<Key ID="STR_DZ_WPN_R870_MFL_NAME">
+			<English>Remington 870 MFL</English>
+			<Russian>Ремингтон 870 вФ</Russian>
+			<German>Remington 870 mit militärischer Taschenlampe</German>
+			<Spanish>Remington 870 (Linterna)</Spanish>
+			<French>Remington 870 (+Torche)</French>
+			<Czech>Remington 870 (baterka)</Czech>
+		</Key>
 		<Key ID="STR_DZ_WPN_R870_FL_DESC">
 			<English>The Remington Model 870 is a pump-action shotgun. This weapon has a torch attached.</English>
-			<German>Die Remington Model 870 ist eine Vorderschaftrepetierflinte mit einer fest installierten Taschenlampe.</German>
+			<German>Die Remington Model 870 ist eine Vorderschaftrepetierflinte mit einem Taschenlampenaufsatz.</German>
 			<Russian>Ремингтон Модель 870 - помповый дробовик. На данный экземпляр установлен фонарик.</Russian>
 			<Spanish>La Remington Modelo 870 es una escopeta de acción a bombeo con una linterna como accesorio.</Spanish>
 			<French>Le modèle Remington 870 est un fusil à pompe avec une lampe torche.</French>
@@ -10374,6 +10502,10 @@
 			<English>Mosin Nagant FL</English>
 			<Russian>Мосинка Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_MOSIN_MFL_NAME">
+			<English>Mosin Nagant MFL</English>
+			<Russian>Мосинка вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_NAME">
 			<English>Mosin Nagant Belt</English>
 			<Russian>Мосинка П</Russian>
@@ -10381,6 +10513,10 @@
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_FL_NAME">
 			<English>Mosin Nagant Belt FL</English>
 			<Russian>Мосинка П Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MOSIN_BELT_MFL_NAME">
+			<English>Mosin Nagant Belt MFL</English>
+			<Russian>Мосинка П вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_NAME">
 			<English>Mosin Nagant PU</English>
@@ -10390,6 +10526,10 @@
 			<English>Mosin Nagant PU FL</English>
 			<Russian>Мосинка ПР Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_MOSIN_PU_MFL_NAME">
+			<English>Mosin Nagant PU MFL</English>
+			<Russian>Мосинка ПР вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_NAME">
 			<English>Mosin Nagant PU Belt</English>
 			<Russian>Мосинка ПР П</Russian>
@@ -10398,42 +10538,61 @@
 			<English>Mosin Nagant PU Belt FL</English>
 			<Russian>Мосинка ПР П Ф</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_MFL_NAME">
+			<English>Mosin Nagant PU Belt MFL</English>
+			<Russian>Мосинка ПР П вФ</Russian>
+		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_DESC">
 			<English>Bolt-action military rifle developed by the Imperial Russian Army in 1891.&lt;br/&gt;Caliber: 7.62x54mmR</English>
 			<Russian>Магазинная винтовка, принятая на вооружение Русской Императорской армии ВС России в 1891 году.</Russian>
-			<German>Kammerverschluss Militär Gewehr entwickelt von der Imperialen Russischen Armee 1891.&lt;br/&gt;Kaliber: 7.62x54mmR</German>
+			<German>Kammerverschluss Militär Gewehr entwickelt von der Imperialen Russischen Armee 1891.&lt;br/&gt;Kaliber: 7.62x54mmR</German>			
 		</Key>
 		
 		<!-- Crossbow -->
 		<Key ID="STR_DZ_WPN_CROSSBOW_NAME">
 			<English>Crossbow</English>
 			<Russian>Арбалет</Russian>
-			<German>Armbrust</German>
+			<German>Armbrust</German>			
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_FL_NAME">
 			<English>Crossbow FL</English>
 			<Russian>Арбалет Ф</Russian>
-			<German>Armbrust FL</German>
+			<German>Armbrust FL</German>				
+		</Key>
+		<Key ID="STR_DZ_WPN_CROSSBOW_MFL_NAME">
+			<English>Crossbow MFL</English>
+			<Russian>Арбалет вФ</Russian>
+			<German>Armbrust MFL</German>				
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_NAME">
 			<English>Crossbow CCO</English>
 			<Russian>Арбалет CCO</Russian>
-			<German>Armbrust CCO</German>
+			<German>Armbrust CCO</German>				
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_FL_NAME">
 			<English>Crossbow CCO FL</English>
 			<Russian>Арбалет CCO Ф</Russian>
-			<German>Armbrust CCO FL</German>
+			<German>Armbrust CCO FL</German>						
+		</Key>
+		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_MFL_NAME">
+			<English>Crossbow CCO MFL</English>
+			<Russian>Арбалет CCO вФ</Russian>
+			<German>Armbrust CCO MFL</German>						
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_NAME">
 			<English>Crossbow Scoped</English>
 			<Russian>Арбалет ПР</Russian>
-			<German>Armbrust mit Zielfernrohr</German>
+			<German>Armbrust mit Zielfernrohr</German>				
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_FL_NAME">
 			<English>Crossbow Scoped FL</English>
 			<Russian>Арбалет ПР Ф</Russian>
-			<German>Armbrust mit Zielfernrohr FL</German>
+			<German>Armbrust mit Zielfernrohr FL</German>						
+		</Key>
+		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_MFL_NAME">
+			<English>Crossbow Scoped MFL</English>
+			<Russian>Арбалет ПР вФ</Russian>
+			<German>Armbrust mit Zielfernrohr MFL</German>						
 		</Key>
 		
 		<!-- **** MAGAZINES **** -->
@@ -10924,6 +11083,18 @@
 			<German>Entferne Taschenlampe</German>
 		</Key>
 		
+		<!-- Military rifle flashlight -->
+		<Key ID="STR_DZ_ATT_MFL_RFL_NAME">
+			<English>[A] Military rifle flashlight</English>
+			<Russian>[М] военный оружейный фонарь</Russian>
+			<German>[E] Militärische Gewehr Taschenlampe</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_MFL_RFL_DESC">
+			<English>Rail-attachable military rifle flashlight</English>
+			<Russian>военный Фонарь для установки на основное оружие</Russian>
+			<German>Militärischer Taschenlampenaufsatz für Gewehre.</German>
+		</Key>
+		
 		<!-- Pistol flashlight -->
 		<Key ID="STR_DZ_ATT_FL_PST_NAME">
 			<English>[A] Pistol flashlight</English>
@@ -10939,6 +11110,18 @@
 			<English>Remove Flashlight</English>
 			<Russian>Снять фонарь</Russian>
 			<German>Entferne Taschenlampe</German>
+		</Key>
+		
+		<!-- Military pistol flashlight -->
+		<Key ID="STR_DZ_ATT_MFL_PST_NAME">
+			<English>[A] Military pistol flashlight</English>
+			<Russian>[М] военный пистолетный фонарь</Russian>
+			<German>[E] Militärische Pistolen Taschenlampe</German>			
+		</Key>
+		<Key ID="STR_DZ_ATT_MFL_PST_DESC">
+			<English>Rail-attachable military pistol flashlight</English>
+			<Russian>военный Фонарь для установки на пистолеты</Russian>
+			<German>Militärischer Taschenlampenaufsatz für Pistolen.</German>			
 		</Key>
 		
 		<!-- Ghillie -->

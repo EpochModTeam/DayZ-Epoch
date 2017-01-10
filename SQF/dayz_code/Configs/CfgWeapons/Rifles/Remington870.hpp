@@ -9,6 +9,17 @@
 	brightness = 0.1;\
 }
 
+#define R870_MFLASHLIGHT class FlashLight\
+{\
+	color[] = {0.9, 0.0, 0.0, 0.9};\
+	ambient[] = {0.1, 0.0, 0.0, 1.0};\
+	position = "flash dir";\
+	direction = "flash";\
+	angle = 30;\
+	scale[] = {1, 1, 0.5};\
+	brightness = 0.08;\
+}
+
 class Remington870_DZ : Rifle
 {
 	scope = public;
@@ -49,6 +60,7 @@ class Remington870_DZ : Rifle
 	class Attachments
 	{
 		Attachment_FL = "Remington870_FL_DZ";
+		Attachment_MFL = "Remington870_MFL_DZ";
 	};
 };
 
@@ -66,6 +78,24 @@ class Remington870_FL_DZ : Remington870_DZ
 		{
 			text = $STR_DZ_ATT_FL_RFL_RMVE;
 			script = "; ['Attachment_FL',_id,'Remington870_DZ'] call player_removeAttachment";
+		};
+	};
+};
+
+class Remington870_MFL_DZ : Remington870_DZ
+{
+	model = "\dayz_weapons\models\Remington870_lamp.p3d";
+	displayname = $STR_DZ_WPN_R870_MFL_NAME;
+	descriptionShort = $STR_DZ_WPN_R870_FL_DESC;
+	
+	R870_MFLASHLIGHT;
+
+	class ItemActions
+	{
+		class RemoveFlashlight
+		{
+			text = $STR_DZ_ATT_FL_RFL_RMVE;
+			script = "; ['Attachment_MFL',_id,'Remington870_DZ'] call player_removeAttachment";
 		};
 	};
 };

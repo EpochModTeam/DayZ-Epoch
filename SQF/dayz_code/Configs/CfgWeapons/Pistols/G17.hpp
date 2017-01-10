@@ -16,6 +16,7 @@ class G17_DZ : glock17_EP1
 	{
 		Attachment_Sup9 = "G17_SD_DZ";
 		Attachment_FL_Pist = "G17_FL_DZ";
+		Attachment_MFL_Pist = "G17_MFL_DZ";
 	};
 };
 
@@ -51,6 +52,38 @@ class G17_FL_DZ : G17_DZ
 	};
 };
 
+class G17_MFL_DZ : G17_DZ
+{
+	model = "z\addons\dayz_communityweapons\g17\g17_fl.p3d";
+	picture = "\z\addons\dayz_communityweapons\g17\data\w_g17_fl_ca.paa";
+	displayName = $STR_DZ_WPN_G17_MFL_NAME;
+
+	class FlashLight
+	{
+		color[] = {0.9, 0.0, 0.0, 0.9};
+		ambient[] = {0.1, 0.0, 0.0, 1.0};
+		position = "flash dir";
+		direction = "flash";
+		angle = 30;
+		scale[] = {1, 1, 0.5};
+		brightness = 0.08;
+	};
+	
+	class Attachments
+	{
+		Attachment_Sup9 = "G17_SD_MFL_DZ";
+	};
+	
+	class ItemActions
+	{
+		class RemoveFlashlight
+		{
+			text = $STR_DZ_ATT_FL_PST_RMVE;
+			script = "; ['Attachment_MFL_Pist',_id,'G17_DZ'] call player_removeAttachment";
+		};
+	};
+};
+
 class G17_SD_DZ : M9SD
 {
 	model = "z\addons\dayz_communityweapons\g17\g17_sd.p3d";
@@ -74,6 +107,7 @@ class G17_SD_DZ : M9SD
 	class Attachments
 	{
 		Attachment_FL_Pist = "G17_SD_FL_DZ";
+		Attachment_MFL_Pist = "G17_SD_MFL_DZ";
 	};
 	
 	class ItemActions
@@ -117,6 +151,41 @@ class G17_SD_FL_DZ : G17_SD_DZ
 		{
 			text = $STR_DZ_ATT_FL_PST_RMVE;
 			script = "; ['Attachment_FL_Pist',_id,'G17_SD_DZ'] call player_removeAttachment";
+		};
+	};
+};
+
+class G17_SD_MFL_DZ : G17_SD_DZ
+{
+	model = "z\addons\dayz_communityweapons\g17\g17_sd_fl.p3d";
+	picture = "\z\addons\dayz_communityweapons\g17\data\w_g17_sd_fl_ca.paa";
+	displayName = $STR_DZ_WPN_G17_SD_MFL_NAME;
+
+	class FlashLight
+	{
+		color[] = {0.9, 0.0, 0.0, 0.9};
+		ambient[] = {0.1, 0.0, 0.0, 1.0};
+		position = "flash dir";
+		direction = "flash";
+		angle = 30;
+		scale[] = {1, 1, 0.5};
+		brightness = 0.08;
+	};
+	
+	class Attachments {};
+	
+	class ItemActions
+	{
+		class RemoveSuppressor
+		{
+			text = $STR_ATTACHMENT_RMVE_Silencer;
+			script = "; ['Attachment_Sup9',_id,'G17_MFL_DZ'] call player_removeAttachment";
+		};
+		
+		class RemoveFlashlight
+		{
+			text = $STR_DZ_ATT_FL_PST_RMVE;
+			script = "; ['Attachment_MFL_Pist',_id,'G17_SD_DZ'] call player_removeAttachment";
 		};
 	};
 };
