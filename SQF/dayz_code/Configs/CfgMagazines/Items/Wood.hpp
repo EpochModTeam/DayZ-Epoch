@@ -59,7 +59,7 @@ class PartWoodPile : CA_Magazine
 	class ItemActions {
 		class Build {
 			text = $STR_ACTIONS_MAKEFIRE;
-			script = "spawn player_makeFire;";
+			script = "spawn player_makeFire;"; //Do not use player_build because we have no ghost preview model for Land_Fire_DZ yet
 			use[] = {"PartWoodPile"};
 		};
 		class Crafting

@@ -774,9 +774,15 @@ dayz_inflame_other = {
         _flame = if (count _flame > 0) then { _flame select 0 } else { objNull };
         if (isNull _flame) then {
             //_flame = if (local _fireplace) then { "flamable_DZ" createVehicleLocal getMarkerpos "respawn_west" } else {  createVehicle [ "flamable_DZ", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"] };
-            _flame = createVehicle [ "flamable_DZ", getPosATL _fireplace, [], 0, "CAN_COLLIDE"]; // fireplace can be local (towngenerator, poi...) but flames will be networked
-            _pos = _fireplace modelToWorld (_fireplace selectionPosition "ohniste"); // ATL
-            _flame setPosATL _pos;
+			_flame = createVehicle ["flamable_DZ", [0,0,0], [], 0, "CAN_COLLIDE"]; // fireplace can be local (towngenerator, poi...) but flames will be networked
+			_pos = getPosASL _fireplace;
+			if (surfaceIsWater _pos) then {
+				// modelToWorld changes with wave height
+				_flame setPosASL [_pos select 0,_pos select 1,(_pos select 2)+0.2];
+			} else {
+				_pos = _fireplace modelToWorld (_fireplace selectionPosition "ohniste"); // ATL
+				_flame setPosATL _pos;
+			};
         };
 		
         if (["matches",0.12] call fn_dynamicTool) then { _flame inflame true; };

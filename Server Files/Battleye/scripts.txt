@@ -42,7 +42,7 @@
 5 setMarkerSize
 5 setMarkerText !",if (_vehicle == _x) then {name _x} else {_vehicle call dayz_getCrew}];\n_marker setMarkerColorLocal \"ColorGreen\";"
 5 setMarkerType !",if (_vehicle == _x) then {name _x} else {_vehicle call dayz_getCrew}];\n_marker setMarkerColorLocal \"ColorGreen\";"
-5 setPosASL !="_unit setPosAsl [(_position select 0), (_position select 1), (LHA_height+1)];" !="_objectHelper setPosASL _position;" !="_tmpbuilt setPosASL _location;" !="_b0x1337 setPosASL (getPosASL player);" !"_obj setPosASL [_center select 0, " !"_obj setPosASL [_a, " !"_objectSnapGizmo setPosASL " !"_para setposasl [\n" !"_thingy setPosASL (ATLToASL _pos);"
+5 setPosASL !="_unit setPosAsl [(_position select 0), (_position select 1), (LHA_height+1)];" !="_flame setPosASL [_pos select 0,_pos select 1,(_pos select 2)+0.2];" !="_fire setPosASL _location;" !="_objectHelper setPosASL _position;" !="_tmpbuilt setPosASL _location;" !="_b0x1337 setPosASL (getPosASL player);" !"_obj setPosASL [_center select 0, " !"_obj setPosASL [_a, " !"_objectSnapGizmo setPosASL " !"_para setposasl [\n" !"_thingy setPosASL (ATLToASL _pos);"
 5 setTerrainGrid !"if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers \""
 5 setUnitRecoilCoefficient
 5 setVehicle !="_this setVehicleInit \"this setVectorUp [0,0,1];\";" !"if(_status) then {\n_vehicle setVehicleLock \"LOCKED\";\n} else {\n_vehicle setVehicleLock \"UNLOCKED\";\n};"
