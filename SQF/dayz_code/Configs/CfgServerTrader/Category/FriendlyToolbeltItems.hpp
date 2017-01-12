@@ -34,6 +34,13 @@ class Category_679 {
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
 		sell[] = {1,"ItemGoldBar"};
 	};
+	/*
+	class NVGoggles_DZE {
+		type = "trade_weapons";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
+	*/
 	class ItemFlashlight {
 		type = "trade_weapons";
 		buy[] = {2,"ItemSilverBar"};

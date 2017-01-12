@@ -7,6 +7,7 @@
 [NEW] Added server logging of failed unlock attempts on doors, safes and lockboxes. Also added server logging of all door locking and unlocking. #1853 @oiad
 [NEW] Added loot positions for some more Sahrani and Tavi buildings
 [NEW] Added military flashlight attachments
+[NEW] Added full screen night vision goggles, classname: "NVGoggles_DZE" (must be added to traders by server owners) @icomrade
 
 [CHANGED] Turbo and HoldBreath keybindings are now allowed again. @icomrade
 [CHANGED] Removed drink from hands at ponds due to client FPS impact. Players can still fill drinks at ponds by right clicking a container. @ebayShopper

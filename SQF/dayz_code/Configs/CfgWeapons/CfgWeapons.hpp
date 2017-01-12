@@ -235,6 +235,7 @@ class CfgWeapons
 	/* TOOLS */
 	
 	#include "Tools\Binocular.hpp"
+	#include "Tools\NVG.hpp"
 	#include "Tools\Chainsaw.hpp"
 	
 	#include "Tools\Map.hpp"
