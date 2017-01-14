@@ -3,7 +3,7 @@ class L110A1_CCO_DZ : BAF_L110A1_Aim
 	model = "z\addons\dayz_communityweapons\l110a1\l110a1_cco.p3d";
 	picture = "\z\addons\dayz_communityweapons\l110a1\data\w_l110a1_cco_ca.paa";
 	displayName = $STR_DZ_WPN_L110A1_CCO_NAME;
-	
+	irDistance = 0;
 	type = WeaponSlotPrimary;
 	
 	magazines[] =
@@ -29,7 +29,7 @@ class L110A1_Holo_DZ : L110A1_CCO_DZ
 	model = "z\addons\dayz_communityweapons\l110a1\l110a1_holo.p3d";
 	picture = "\z\addons\dayz_communityweapons\l110a1\data\w_l110a1_holo_ca.paa";
 	displayName = $STR_DZ_WPN_L110A1_HOLO_NAME;
-	
+
 	class ItemActions
 	{
 		class RemoveHolo

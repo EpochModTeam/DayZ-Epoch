@@ -1,8 +1,9 @@
 /*
-	DayZ Epoch 1.0.6
+	DayZ Epoch 1.0.6.1
 	
 	ONLY RUN THIS FILE IF CREATING A NEW DATABASE.
-	EXISTING 1051 DATABASES SHOULD USE 1.0.6_UPDATES.SQL INSTEAD.
+	EXISTING 1051 DATABASES SHOULD USE 1.0.6_UPDATES.SQL INSTEAD AND THEN RUN 1.0.6.1_UPDATES.SQL.
+	EXISTING 106 DATABASES SHOULD USE 1.0.6.1_UPDATES.SQL INSTEAD.
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -1733,6 +1734,8 @@ INSERT INTO `Traders_DATA` VALUES(7589, '["Attachment_SCOPED",1]', 10, '[6,"Item
 INSERT INTO `Traders_DATA` VALUES(7590, '["Attachment_Sup9",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(7591, '["Attachment_Sup545",1]', 10, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 693, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(7592, '["Attachment_Sup556",1]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 693, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7593, '["Attachment_MFL",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(7594, '["Attachment_MFL_Pist",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');
 
 -- --------------------------------------------------------
 

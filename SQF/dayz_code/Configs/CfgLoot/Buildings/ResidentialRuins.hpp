@@ -61,4 +61,9 @@ class land_seb_residental: ResidentialRuins { //ruins
 	lootPos[] = {{3.74902,4.38379,-2.37675}};
 	zedPos[] = {{-4.70215,6.14648,-3.70411},{2.15479,8.1123,-3.7844},{-4.03955,6.47949,0.530872},{-4.41943,-7.93652,0.397972},{-1.40479,-7.99414,0.394527}};
 };
+//Land_House_L_9_EP1 in Residential.hpp
+class Land_dum_zboreny_total: ResidentialRuins { //ruins
+	lootPos[] = {{-4.32422,-1.71094,-2.31456}};
+};
+//Land_dulni_bs in Residential.hpp
 // ALT-MAP Support 

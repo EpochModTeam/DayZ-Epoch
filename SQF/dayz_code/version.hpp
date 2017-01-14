@@ -1,1 +1,1 @@
-#define DayZVersion "DayZ Epoch 1.0.6"
+#define DayZVersion "DayZ Epoch 1.0.6.1"

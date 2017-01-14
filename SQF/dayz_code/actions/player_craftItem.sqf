@@ -23,7 +23,7 @@ class ItemActions
 	};
 };
 */
-private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_missingTools","_hastoolweapon","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
+private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_63" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -94,20 +94,7 @@ if (_canDo) then {
 	while {_craft_doLoop} do {
 		_temp_removed_array = [];
 
-		_missing = "";
-		_missingTools = false;
-		{
-			_hastoolweapon = _x in weapons player;
-			if (_x == "ItemKnife") then {
-				{if (_x in Dayz_Gutting) exitWith {_hastoolweapon = true};} forEach (items player);
-			};
-			if (_x == "ItemMatchbox") then {
-				{if (_x in DayZ_Ignitors) exitWith {_hastoolweapon = true};} forEach (items player);
-			};
-			if (!_hastoolweapon) exitWith { _craft_doLoop = false; _missingTools = true; _missing = _x; };
-		} forEach _selectedRecipeTools;
-
-		if (!_missingTools) then {
+		if ([_item,_selectedRecipeTools,"none"] call dze_requiredItemsCheck) then {
 			// Dry run to see if all parts are available.
 			_proceed = true;
 			if (count _selectedRecipeInput > 0) then {
@@ -282,8 +269,7 @@ if (_canDo) then {
 				_craft_doLoop = false;
 			};
 		} else {
-			_textMissing = getText(configFile >> "CfgWeapons" >> _missing >> "displayName");
-			format[localize "STR_EPOCH_PLAYER_137",_textMissing] call dayz_rollingMessages;
+			//Missing text shown in dze_requiredItemsCheck
 			_craft_doLoop = false;
 		};
 	};

@@ -1,8 +1,8 @@
 // If an array was passed redirect to vanilla player_build (Epoch items pass a string)
 if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith {_this spawn player_buildVanilla;};
-private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objectHelperDir","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_started","_finished","_animState","_isMedic","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_objectHelper","_location1","_object","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild"];
+private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objectHelperDir","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_started","_finished","_animState","_isMedic","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_ghost2","_VectorWorkAround","_objectHelper","_location1","_object","_object2","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild"];
 
-//Check if building already in progress, exit if so.
+
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
@@ -43,9 +43,8 @@ if (_inVehicle) exitWith {dayz_actionInProgress = false; localize "str_epoch_pla
 if (_onLadder) exitWith {dayz_actionInProgress = false; localize "str_player_21" call dayz_rollingMessages;};
 if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_43" call dayz_rollingMessages;};
 
-DZE_buildItem = _this; //This is a magazine! It's global to allow access to it from outside functions
+DZE_buildItem = _this;
 
-// Need Near Requirements
 _abort = false;
 _reason = "";
 
@@ -99,29 +98,40 @@ if (_canBuild select 0) then {
 	};
 	_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
 
-	_lockable = 0; //default define if lockable not found in config file below
-	if(isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then { //find out if item is lockable object
-		_lockable = getNumber(configFile >> "CfgVehicles" >> _classname >> "lockable"); // 2=lockbox, 3=combolock, 4=safe
+	_lockable = 0;
+	if(isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then {
+		_lockable = getNumber(configFile >> "CfgVehicles" >> _classname >> "lockable");
 	};
 
-	_isAllowedUnderGround = 1; //check if allowed to build under terrain
+	_isAllowedUnderGround = 1;
 	if(isNumber (configFile >> "CfgVehicles" >> _classname >> "nounderground")) then {
 		_isAllowedUnderGround = getNumber(configFile >> "CfgVehicles" >> _classname >> "nounderground");
 	};
 
-	_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset"); //check default distance offset, define if does not exist
-
+	_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 	_objectHelper = objNull;
 	_isOk = true;
-	_location1 = [player] call FNC_GetPos; // get inital players position
-	_dir = getDir player; //required to pass direction when building
+	_location1 = [player] call FNC_GetPos;
+	_dir = getDir player;
+	_ghost2 = "";
+	_VectorWorkAround = false;
 
-	// if ghost preview available use that instead
+	if (_classname == "CinderWall_DZ") then {
+		_ghost2 = _ghost;
+		_ghost = "CinderWallHalf_Preview_DZ";
+		_VectorWorkAround = true;
+	};
+
 	if (_ghost != "") then {
 		_classname = _ghost;
 	};
 
-	_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"]; //object preview, not an actual object that will be built
+	_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
+	_object2 = ObjNull;
+	if (_VectorWorkAround) then {
+		_object2 = _ghost2 createVehicleLocal [0,0,0];
+		hideObject _object;
+	};
 
 	if((count _offset) <= 0) then {
 		_offset = [0,(abs(((boundingBox _object)select 0) select 1)),0];
@@ -131,7 +141,12 @@ if (_canBuild select 0) then {
 	_helperColor = "#(argb,8,8,3)color(0,0,0,0,ca)";
 	_objectHelper setobjecttexture [0,_helperColor];
 	_objectHelper attachTo [player,_offset];
-	_object attachTo [_objectHelper,[0,0,0]];
+	if (_VectorWorkAround) then {
+		_object attachTo [_objectHelper,[0,0,-1.65]];
+		_object2 attachTo [_object,[0,0,1.65]];
+	} else {
+		_object attachTo [_objectHelper,[0,0,0]];
+	};
 
 	if (isClass (configFile >> "SnapBuilding" >> _classname)) then {	
 		["","","",["Init",_object,_classname,_objectHelper]] spawn snap_build;
@@ -221,7 +236,7 @@ if (_canBuild select 0) then {
 				DZE_memDir = getDir _objectHelper;
 				[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 				_objectHelper setPosATL _objectHelperPos;
-				_objectHelper setVelocity [0,0,0]; //fix sliding glitch
+				_objectHelper setVelocity [0,0,0];
 				helperDetach = true;
 			};
 			DZE_F = false;
@@ -294,6 +309,10 @@ if (_canBuild select 0) then {
 			_dir = getDir _object;
 			_vector = [(vectorDir _object),(vectorUp _object)];	
 			deleteVehicle _object;
+			if (_VectorWorkAround) then {
+				detach _object2;
+				deleteVehicle _object2;
+			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
@@ -304,6 +323,10 @@ if (_canBuild select 0) then {
 			_reason = format[localize "STR_EPOCH_BUILD_FAIL_MOVED",DZE_buildMaxMoveDistance];
 			detach _object;
 			deleteVehicle _object;
+			if (_VectorWorkAround) then {
+				detach _object2;
+				deleteVehicle _object2;
+			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
@@ -314,6 +337,10 @@ if (_canBuild select 0) then {
 			_reason = format[localize "STR_EPOCH_BUILD_FAIL_TOO_FAR",DZE_buildMaxMoveDistance];
 			detach _object;
 			deleteVehicle _object;
+			if (_VectorWorkAround) then {
+				detach _object2;
+				deleteVehicle _object2;
+			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
@@ -324,6 +351,10 @@ if (_canBuild select 0) then {
 			_reason = format[localize "STR_EPOCH_BUILD_FAIL_HEIGHT",DZE_buildMaxHeightDistance];
 			detach _object;
 			deleteVehicle _object;
+			if (_VectorWorkAround) then {
+				detach _object2;
+				deleteVehicle _object2;
+			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
@@ -334,6 +365,10 @@ if (_canBuild select 0) then {
 			_reason = localize "str_epoch_player_43";
 			detach _object;
 			deleteVehicle _object;
+			if (_VectorWorkAround) then {
+				detach _object2;
+				deleteVehicle _object2;
+			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
@@ -344,6 +379,10 @@ if (_canBuild select 0) then {
 			_reason = localize "STR_EPOCH_PLAYER_46";
 			detach _object;
 			deleteVehicle _object;
+			if (_VectorWorkAround) then {
+				detach _object2;
+				deleteVehicle _object2;
+			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
@@ -354,29 +393,20 @@ if (_canBuild select 0) then {
 	_counter = 0;
 	_location = [0,0,0];
 
-	//No building on roads unless toggled
 	if (!DZE_BuildOnRoads) then {
 		if (isOnRoad _position) then { _cancel = true; _reason = localize "STR_EPOCH_BUILD_FAIL_ROAD"; };
 	};
-
-	// No building in trader zones
 	if(!canbuild) then { _cancel = true; _reason = format[localize "STR_EPOCH_PLAYER_136",localize "STR_EPOCH_TRADER"]; };
 
 	if(!_cancel) then {
-
 		_classname = _classnametmp;
-
-		// Start Build
-		_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"]; //create actual object that will be published to database
-
-		_tmpbuilt setdir _dir; //set direction inherited from passed args from control
+		_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+		_tmpbuilt setdir _dir;
 		_tmpbuilt setVariable["memDir",_dir,true];
-
-		// Get position based on object
 		_location = _position;
 
-		if((_isAllowedUnderGround == 0) && ((_location select 2) < 0)) then { //check Z axis if not allowed to build underground
-			_location set [2,0]; //reset Z axis to zero (above terrain)
+		if((_isAllowedUnderGround == 0) && ((_location select 2) < 0)) then {
+			_location set [2,0];
 		};
 		
 		_tmpbuilt setVectorDirAndUp _vector;
@@ -385,7 +415,6 @@ if (_canBuild select 0) then {
 		_vUp = _vector select 1;
 		switch (_classname) do {
 			case "MetalFloor_DZ": { _buildOffset = [(_vUp select 0) * .148, (_vUp select 1) * .148,0]; };
-			case "CinderWall_DZ": { _buildOffset = [(_vUp select 0) * 1.686, (_vUp select 1) * 1.686,0]; };
 		};
 		
 		_location = [
@@ -396,16 +425,16 @@ if (_canBuild select 0) then {
 	
 		if (surfaceIsWater _location) then {
 			_tmpbuilt setPosASL _location;
-			_location = ASLtoATL _location; //Database uses ATL
+			_location = ASLtoATL _location;
 		} else {
 			_tmpbuilt setPosATL _location;
 		};
 
 		format[localize "str_epoch_player_138",_text] call dayz_rollingMessages;
 
-		_limit = 3; //times it takes to build by default
+		_limit = 3;
 
-		if (DZE_StaticConstructionCount > 0) then { //if count is manually overridden inside init.sqf, use that instead, else use limits configured in config files
+		if (DZE_StaticConstructionCount > 0) then {
 			_limit = DZE_StaticConstructionCount;
 		}
 		else {
@@ -414,13 +443,9 @@ if (_canBuild select 0) then {
 			};
 		};
 
-		while {_isOk} do { //publish phase
-
+		while {_isOk} do {
 			format[localize "str_epoch_player_139",_text, (_counter + 1),_limit] call dayz_rollingMessages; //report how many steps are done out of total limit
-
-			player playActionNow "Medic"; //animation
-			
-			//alert zombies
+			player playActionNow "Medic";
 			_dis=20;
 			_sfx = "repair";
 			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
@@ -431,7 +456,7 @@ if (_canBuild select 0) then {
 			_started = false;
 			_finished = false;
 
-			while {r_doLoop} do { //while player is not interrupted, go trough animations
+			while {r_doLoop} do {
 				_animState = animationState player;
 				_isMedic = ["medic",_animState] call fnc_inString;
 				if (_isMedic) then {
@@ -452,16 +477,16 @@ if (_canBuild select 0) then {
 			r_doLoop = false;
 
 
-			if(!_finished) exitWith { //exit if interrupted
+			if(!_finished) exitWith {
 				_isOk = false;
 				_proceed = false;
 			};
 
-			if(_finished) then { //if animation finished, add to build count
+			if(_finished) then {
 				_counter = _counter + 1;
 			};
 
-			if(_counter == _limit) exitWith { //if all steps done proceed with next step, otherwise cancel publish
+			if(_counter == _limit) exitWith {
 				_isOk = false;
 				_proceed = true;
 			};
@@ -544,7 +569,8 @@ if (_canBuild select 0) then {
 				} else { //if not lockable item
 					_tmpbuilt setVariable ["CharacterID",dayz_characterID,true];
 					// fire?
-					if(_tmpbuilt isKindOf "Land_Fire_DZ") then { //if campfire, then spawn, but do not publish to database
+					if (_tmpbuilt isKindOf "Land_Fire_DZ") then { //if campfire, then spawn, but do not publish to database
+						[_tmpbuilt,true] call dayz_inflame;
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
 						if (DZE_permanentPlot) then {

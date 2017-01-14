@@ -1,4 +1,4 @@
-private ["_item","_config","_exit","_text","_booleans","_worldspace","_dir","_location","_dis","_fire","_tool","_itemPile"];
+private ["_item","_config","_exit","_text","_booleans","_worldspace","_dir","_location","_dis","_fire","_tool","_itemPile","_posASL","_testSea"];
 
 _tool = _this;
 call gear_ui_init;
@@ -11,15 +11,8 @@ _text = getText (_config >> "displayName");
 _exit = false;
 
 if (_tool == "PartWoodPile") then {
-	switch true do {
-		case ("Item1Matchbox" in (weapons player)): {_tool = "Item1Matchbox";};
-		case ("Item2Matchbox" in (weapons player)): {_tool = "Item2Matchbox";};
-		case ("Item3Matchbox" in (weapons player)): {_tool = "Item3Matchbox";};
-		case ("Item4Matchbox" in (weapons player)): {_tool = "Item4Matchbox";};
-		case ("Item5Matchbox" in (weapons player)): {_tool = "Item5Matchbox";};
-		case ("ItemMatchbox" in (weapons player)): {_tool = "ItemMatchbox";};
-		default {_exit = true;};
-	};
+	_exit = true;
+	{if (_x in DayZ_Ignitors) exitWith {_exit = false};} forEach (items player);
 };
 if (_exit) exitWith {(localize "str_fireplace_noMatches") call dayz_rollingMessages;};
 
@@ -35,8 +28,16 @@ _worldspace = ["Land_Fire_DZ", player, _booleans] call fn_niceSpot;
 // player on ladder or in a vehicle
 if (_booleans select 0) exitWith { localize "str_player_21" call dayz_rollingMessages; };
 
+_testSea = true;
+_posASL = getPosASL player;
+if ((_booleans select 1) && _posASL select 2 > 2) then {
+	//Allow building on raised platform 2m+ ASL (like docks)
+	_testSea = false;
+	_worldspace = [0,_posASL];
+};
+
 // object would be in the water (pool or sea)
-if ((_booleans select 1) OR (_booleans select 2)) exitWith { localize "str_player_26" call dayz_rollingMessages; };
+if ((_booleans select 1 && _testSea) OR (_booleans select 2)) exitWith { localize "str_player_26" call dayz_rollingMessages; };
 
 if ((count _worldspace) == 2) then {
 	if (_item in magazines player) then {
@@ -61,9 +62,13 @@ if ((count _worldspace) == 2) then {
 	
 	uiSleep 5;
 
-	_fire = createVehicle ["Land_Fire_DZ", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
+	_fire = createVehicle ["Land_Fire_DZ", [0,0,0], [], 0, "CAN_COLLIDE"];
 	_fire setDir _dir;
-	_fire setPos _location; // follow terrain slope
+	if (_testSea) then {
+		_fire setPos _location; // follow terrain slope
+	} else {
+		_fire setPosASL _location;
+	};
 	player reveal _fire;
 	[_fire,true] call dayz_inflame;
 	_fire spawn player_fireMonitor;
@@ -74,9 +79,7 @@ if ((count _worldspace) == 2) then {
 		achievement = [14, player, dayz_characterID];
 		publicVariableServer "achievement";
 	};*/
-	//localize "str_fireplace_01" call dayz_rollingMessages;
-	(localize "str_fireplace_01") call dayz_rollingMessages;
+	localize "str_fireplace_01" call dayz_rollingMessages;
 } else {
-	//localize "str_fireplace_02" call dayz_rollingMessages;
-	(localize "str_fireplace_0") call dayz_rollingMessages;
+	localize "str_fireplace_02" call dayz_rollingMessages;
 };

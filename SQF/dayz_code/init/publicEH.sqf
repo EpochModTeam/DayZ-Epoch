@@ -327,41 +327,7 @@ if (!isDedicated) then {
 		format[localize "STR_BLD_COMBO_SET",_codeGuess] call dayz_rollingMessages;
 	};
 	
-	// EPOCH ADDITION
-	"PVDZE_deathMessage" addPublicVariableEventHandler {
-		private ["_root","_weapon"];
-		_message = _this select 1;
-		_message = switch (_message select 0) do {
-			case "died": {format [localize "str_player_death_died",_message select 1,localize format["str_death_%1",_message select 2]]};
-			case "killed": {
-				_weapon = _message select 3;
-				_root = switch true do {
-					case (_weapon in ["PipeBomb","Mine","MineE"]): {"CfgMagazines"}; // isClass in both
-					case (isClass (configFile >> "CfgWeapons" >> _weapon)): {"CfgWeapons"};
-					case (isClass (configFile >> "CfgVehicles" >> _weapon)): {"CfgVehicles"};
-					case (isClass (configFile >> "CfgMagazines" >> _weapon)): {"CfgMagazines"};
-					default {""};
-				};
-				if (_root == "") then {
-					_message set [5,""];
-				} else {
-					_message set [3,getText (configFile >> _root >> _weapon >> "displayName")];
-					_message set [5,getText (configFile >> _root >> _weapon >> "picture")];
-				};
-				if (DZE_DeathMsgDynamicText) then {_message call dayz_killFeed};
-				format [localize "str_player_death_killed",_message select 1,_message select 2,_message select 3,_message select 4]
-			};
-			case "suicide": {format [localize "str_player_death_suicide",_message select 1]};
-		};
-		switch (toLower DZE_DeathMsgChat) do {
-			// Sending from logic (FunctionsManager) or agent (zombie, animal, trader) object shows message without side i.e. "BLUFOR" or quotes
-			case "global": {BIS_functions_mainscope globalChat _message;};
-			case "side": {BIS_functions_mainscope sideChat _message;};
-			case "system": {systemChat _message;};
-		};
-		if (DZE_DeathMsgRolling) then {_message call dayz_rollingMessages;};
-		diag_log format["DeathMessage: %1",_message];
-	};
+	"PVDZE_deathMessage" addPublicVariableEventHandler {(_this select 1) call dze_deathMessage};
 
 	// flies and swarm sound sync
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_flies.sqf";

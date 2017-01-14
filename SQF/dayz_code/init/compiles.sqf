@@ -159,6 +159,7 @@ if (!isDedicated) then {
 	// EPOCH ADDITIONS
 	dayz_autoRunOff = {dayz_autoRun = false; terminate dayz_autoRunThread; player playActionNow "Stop";};
 	dog_findTargetAgent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dog_findTargetAgent.sqf";
+	dze_deathMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_deathMessage.sqf";
 	dze_filterCheats = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_filterCheats.sqf";
 	dze_isnearest_player = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_isNearestPlayer.sqf";
 	dze_buildChecks = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_buildChecks.sqf";
@@ -773,9 +774,15 @@ dayz_inflame_other = {
         _flame = if (count _flame > 0) then { _flame select 0 } else { objNull };
         if (isNull _flame) then {
             //_flame = if (local _fireplace) then { "flamable_DZ" createVehicleLocal getMarkerpos "respawn_west" } else {  createVehicle [ "flamable_DZ", getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"] };
-            _flame = createVehicle [ "flamable_DZ", getPosATL _fireplace, [], 0, "CAN_COLLIDE"]; // fireplace can be local (towngenerator, poi...) but flames will be networked
-            _pos = _fireplace modelToWorld (_fireplace selectionPosition "ohniste"); // ATL
-            _flame setPosATL _pos;
+			_flame = createVehicle ["flamable_DZ", [0,0,0], [], 0, "CAN_COLLIDE"]; // fireplace can be local (towngenerator, poi...) but flames will be networked
+			_pos = getPosASL _fireplace;
+			if (surfaceIsWater _pos) then {
+				// modelToWorld changes with wave height
+				_flame setPosASL [_pos select 0,_pos select 1,(_pos select 2)+0.2];
+			} else {
+				_pos = _fireplace modelToWorld (_fireplace selectionPosition "ohniste"); // ATL
+				_flame setPosATL _pos;
+			};
         };
 		
         if (["matches",0.12] call fn_dynamicTool) then { _flame inflame true; };

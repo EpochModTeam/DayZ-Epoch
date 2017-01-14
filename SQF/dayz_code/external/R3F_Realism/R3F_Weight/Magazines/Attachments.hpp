@@ -28,6 +28,14 @@ class Attachment_FL_Pist
 {
 	weight = 0.05;
 };
+class Attachment_MFL 
+{
+	weight = 0.1;
+};
+class Attachment_MFL_Pist 
+{
+	weight = 0.05;
+};
 class Attachment_Ghillie 
 {
 	weight = 0.05;

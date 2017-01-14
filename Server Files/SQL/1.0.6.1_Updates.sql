@@ -20,3 +20,9 @@ INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 614, 'trade_items');
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 624, 'trade_items');
 INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 647, 'trade_items');
+
+-- ----------------------------
+-- Add military flashlight attachments to DB traders
+-- ----------------------------
+INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_MFL",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_MFL_Pist",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');

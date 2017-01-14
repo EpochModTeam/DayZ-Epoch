@@ -8,9 +8,9 @@ _Z_logTrade = {
 	_buyOrSell = _this select 2;
 	_price = _this select 3;
 	_container = switch (Z_SellingFrom) do {
-		case 0 : {localize "STR_EPOCH_TRADE_BACKPACK"};
-		case 1 : {localize "STR_EPOCH_TRADE_VEHICLE"};
-		case 2 : {localize "STR_UI_GEAR"};
+		case 0 : {"backpack"};
+		case 1 : {"vehicle"};
+		case 2 : {"gear"};
 	};
 	_price = if (Z_singleCurrency) then {format ["%1 %2",[_price] call BIS_fnc_numberText,CurrencyName]} else {[_price,true] call Z_calcCurrency};
 

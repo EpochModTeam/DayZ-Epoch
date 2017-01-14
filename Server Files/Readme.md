@@ -18,4 +18,4 @@ Note: Both server and client should be updated to current A2OA stable 1.63.13112
 
 2. Connect to your MySQL server. Make a backup first to be safe, then run the 1.0.6_Updates.sql file on your dayz_epoch database. Be sure to read the comments in the SQL field, especially at the bottom of the file if you are using single curreny or Precise Base Building 1.0.4 or older.
 
-3. Inside the "Keys" folder on your server remove any previous day_epoch*.bikey keys. As of 1.0.6 our bikey is called dayz_epoch106.bikey and we will use a new one for each release.
+3. Inside the "Keys" folder on your server remove any previous day_epoch*.bikey keys. As of 1.0.6.1 our bikey is called dayz_epoch1061.bikey and we will use a new one for each release.

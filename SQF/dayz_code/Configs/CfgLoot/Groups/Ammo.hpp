@@ -90,7 +90,6 @@ AmmoMilitaryLow[] =
 	{Loot_MAGAZINE,		3,		20Rnd_B_765x17_Ball},
 	{Loot_MAGAZINE,		4,		20Rnd_762x51_DMR},
 	{Loot_MAGAZINE,		4,		20Rnd_762x51_FNFAL},
-	//Epoch 1.0.6
 	{Loot_MAGAZINE,		3,		20Rnd_762x51_B_SCAR},
 	{Loot_MAGAZINE,		4,		20Rnd_B_AA12_Pellets},
 	{Loot_MAGAZINE,		4,		20Rnd_B_AA12_74Slug},
@@ -110,7 +109,6 @@ AmmoMilitaryHigh[] =
 	{Loot_MAGAZINE,		10,		30Rnd_556x45_Stanag},
 	{Loot_MAGAZINE,		5,		30Rnd_556x45_G36},
 	{Loot_MAGAZINE,		5,		100Rnd_556x45_BetaCMag},
-	//Epoch 1.0.6
 	{Loot_MAGAZINE,		5,		20Rnd_762x51_B_SCAR},
 	{Loot_MAGAZINE,		5,		20Rnd_B_AA12_Pellets},
 	{Loot_MAGAZINE,		5,		20Rnd_B_AA12_74Slug},
@@ -330,7 +328,6 @@ assaultrifleammo[] = {
 	{Loot_MAGAZINE,		10,		30Rnd_545x39_AK},
 	{Loot_MAGAZINE,		5,		30Rnd_556x45_StanagSD},
 	{Loot_MAGAZINE,		8,		20Rnd_762x51_FNFAL},
-	//Epoch 1.0.6
 	{Loot_MAGAZINE,		6,		20Rnd_762x51_B_SCAR}
 };
 machinegunammo[] = {
