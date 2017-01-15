@@ -3,7 +3,7 @@ private ["_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockC
 _player = _this select 0;
 _obj = _this select 1;
 _status = _this select 2;
-if (count _this > 3) then {_suppliedCode = _this select 3;};
+
 _name = if (alive _player) then {name _player} else {"Dead Player"};
 
 _type = typeOf _obj;
@@ -15,6 +15,11 @@ _objectID = _obj getVariable ["ObjectID","0"];
 _objectUID = _obj getVariable ["ObjectUID","0"];
 _ownerID = _obj getVariable ["ownerPUID","0"];
 _lockCode = _charID;
+
+if (count _this > 3) then {
+	_suppliedCode = _this select 3;
+	_lockCode = _suppliedCode;
+};
 
 // Player may have disconnected or died before message send. Attempt lock/unlock/pack/save procedure anyway
 if (isNull _player) then {diag_log "ERROR: server_handleSafeGear called with Null player object";};
