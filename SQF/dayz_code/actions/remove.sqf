@@ -9,8 +9,6 @@ private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_i
 player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
 
-#include "\z\addons\dayz_code\loot\Loot.hpp"
-
 _obj = _this select 3;
 _objOwnerID = "0";
 _isOwnerOfObj = false;
@@ -203,16 +201,14 @@ if (_proceed && _success) then {
 			_selectedRemoveOutput set [count _selectedRemoveOutput,[_refundpart,1]];
 		} else {
 			if(_isWreckBuilding) then {
-				switch _objType do {
-					case "Land_gold_vein_wreck";
-					case "Land_silver_vein_wreck";
-					case "Land_iron_vein_wreck": {
+				switch true do {
+					case (_isMine): {
 						_lootGroupIndex = dz_loot_groups find _objType;
 						_output = [_lootGroupIndex,3] call dz_fn_loot_select;
 
 						{_selectedRemoveOutput set [count _selectedRemoveOutput, [_x select 1,[_x select 2,_x select 3]]]} forEach _output;
 					};
-					case "Land_ammo_supply_wreck": {
+					case (_objType == "Land_ammo_supply_wreck"): {
 						_lootGroupIndex = dz_loot_groups find _objType;
 						_output = [_lootGroupIndex,5] call dz_fn_loot_select;
 
