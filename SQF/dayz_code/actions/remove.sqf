@@ -4,13 +4,12 @@ dayz_actionInProgress = true;
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_activatingPlayer","_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular","_success"];
+private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular","_success","_lootGroupIndex","_output"];
 
 player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
 
 _obj = _this select 3;
-_activatingPlayer = player;
 _objOwnerID = "0";
 _isOwnerOfObj = false;
 
@@ -182,8 +181,7 @@ if (_proceed && _success) then {
 		deleteVehicle _obj;
 		
 		if(!_isWreck && !_isWreckBuilding) then {
-			_activatingPlayer = player;
-			PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
+			PVDZ_obj_Destroy = [_objectID,_objectUID,player];
 			publicVariableServer "PVDZ_obj_Destroy";
 		};
 
@@ -203,7 +201,21 @@ if (_proceed && _success) then {
 			_selectedRemoveOutput set [count _selectedRemoveOutput,[_refundpart,1]];
 		} else {
 			if(_isWreckBuilding) then {
-				_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
+				switch true do {
+					case (_isMine): {
+						_lootGroupIndex = dz_loot_groups find _objType;
+						_output = [_lootGroupIndex,3] call dz_fn_loot_select;
+
+						{_selectedRemoveOutput set [count _selectedRemoveOutput, [_x select 1,[_x select 2,_x select 3]]]} forEach _output;
+					};
+					case (_objType == "Land_ammo_supply_wreck"): {
+						_lootGroupIndex = dz_loot_groups find _objType;
+						_output = [_lootGroupIndex,5] call dz_fn_loot_select;
+
+						{_selectedRemoveOutput set [count _selectedRemoveOutput, [_x select 1,1,_x select 0]]} forEach _output;
+					};
+					default {_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput")};
+				};
 			} else {
 				_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
 				_preventRefund = (_objectID == "0" && _objectUID == "0");
@@ -245,7 +257,15 @@ if (_proceed && _success) then {
 				if (typeName _countOut == "ARRAY") then {
 					_countOut = round((random (_countOut select 1)) + (_countOut select 0));
 				};
-				_item addMagazineCargoGlobal [_itemOut,_countOut];
+				if (count _x > 2) then {
+					switch (_x select 2) do {
+						case 2: {_item addWeaponCargoGlobal [_itemOut,_countOut]};
+						case 3: {_item addMagazineCargoGlobal [_itemOut,_countOut]};
+						case 5: {_item addBackpackCargoGlobal [_itemOut,_countOut]}; // Needs to make sure object can handle Backpacks or will dump on the ground.
+					};
+				} else {
+					_item addMagazineCargoGlobal [_itemOut,_countOut];
+				};
 			} count _selectedRemoveOutput;
 
 			_item setposATL _iPos;

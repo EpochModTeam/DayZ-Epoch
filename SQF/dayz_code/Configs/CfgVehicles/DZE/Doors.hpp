@@ -252,26 +252,26 @@ class Land_iron_vein_wreck: ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_IRON;
-	removeoutput[] = {{"PartOre",{10,10}},{"PartOreSilver",{0,10}},{"PartOreGold",{0,5}}};
+	//removeoutput[] = {{"PartOre",{10,10}},{"PartOreSilver",{0,10}},{"PartOreGold",{0,5}}}; // Moved to CfgLoot group
 };
 class Land_silver_vein_wreck: ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_SILVER;
-	removeoutput[] = {{"PartOreSilver",{10,10}},{"PartOre",{0,1}},{"PartOreGold",{6,4}}};
+	//removeoutput[] = {{"PartOreSilver",{10,10}},{"PartOre",{0,1}},{"PartOreGold",{6,4}}}; // Moved to CfgLoot group
 };
 class Land_gold_vein_wreck: ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_GOLD;
-	removeoutput[] = {{"PartOreGold",{10,10}},{"PartOre",{0,1}},{"PartOreSilver",{6,4}}};
+	//removeoutput[] = {{"PartOreGold",{10,10}},{"PartOre",{0,1}},{"PartOreSilver",{6,4}}}; // Moved to CfgLoot group
 };
 
 class Land_ammo_supply_wreck: ruins	{
 	scope = protected;
 	model = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
 	displayName = $STR_EPOCH_BULK_NAME;
-	removeoutput[] = {{"100Rnd_762x54_PK",{0,1}},{"29Rnd_30mm_AGS30",{0,1}},{"50Rnd_127x107_DSHKM",{0,1}},{"100Rnd_127x99_M2",{0,1}},{"2000Rnd_762x51_M134",{0,1}},{"48Rnd_40mm_MK19",{0,1}},{"100Rnd_762x51_M240",{0,1}}};
+	//removeoutput[] = {{"100Rnd_762x54_PK",{0,1}},{"29Rnd_30mm_AGS30",{0,1}},{"50Rnd_127x107_DSHKM",{0,1}},{"100Rnd_127x99_M2",{0,1}},{"2000Rnd_762x51_M134",{0,1}},{"48Rnd_40mm_MK19",{0,1}},{"100Rnd_762x51_M240",{0,1}}}; // Moved to CfgLoot group
 };
 
 
