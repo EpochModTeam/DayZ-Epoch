@@ -14,7 +14,7 @@ class ItemSodaEmpty : HandGrenade
 		class Drink
 		{
 			text = $STR_ACTIONS_DRINK2;
-			script = "spawn player_drinkWater;";
+			script = ";[_id] spawn player_fillWater;";
 		};
 		class Crafting {
 			text = "Melt into Bars";
@@ -43,7 +43,7 @@ class TrashTinCan : HandGrenade
 		class Drink
 		{
 			text = $STR_ACTIONS_DRINK2;
-			script = "spawn player_drinkWater;";
+			script = ";[_id] spawn player_fillWater;";
 		};
 		class Crafting {
 			text = "Melt into Bars";

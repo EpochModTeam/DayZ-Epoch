@@ -98,10 +98,10 @@ if ((_primaryWeapon in Dayz_fishingItems) && {!dayz_fishingInprogress} && {_inVe
 };
 
 /*
-//FPS killer. Moved to CfgVehicles for Land_pumpa
+//FPS killer. Moved to CfgVehicles for wells
 if (_canDo && !_inVehicle && !dayz_isSwimming && ((call fn_nearWaterHole) select 0)) then {
 	if (s_player_Drinkfromhands < 0) then {
-		s_player_Drinkfromhands = player addAction [localize "STR_ACTIONS_DRINK2", "\z\addons\dayz_code\actions\player_drinkWater.sqf","hands", 0.5, false, true];
+		s_player_Drinkfromhands = player addAction [localize "STR_ACTIONS_DRINK2", "\z\addons\dayz_code\actions\water_fill.sqf","hands", 0.5, false, true];
 	};
 } else {
 	if (s_player_Drinkfromhands >= 0) then {

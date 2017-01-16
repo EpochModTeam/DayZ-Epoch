@@ -454,6 +454,7 @@ class CfgVehicles {
 	{
 		class DestructionEffects;
 	};
+	class House_EP1;
 	class SpawnableWreck : House {};
 	class Strategic;
 	class NonStrategic;
