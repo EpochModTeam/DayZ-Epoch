@@ -215,7 +215,7 @@ class FSM
        "_position = 		_agent modelToWorld [0,0,0];" \n
        "_secondHand = false;" \n
        "" \n
-       "if (count _this > 2) then {" \n
+       "if (count _this > 1) then {" \n
        "	_secondHand = true;" \n
        "	diag_log (""Second Hand Zombie Initialized: "" + str(_this));" \n
        "};"/*%FSM</STATEINIT""">*/;

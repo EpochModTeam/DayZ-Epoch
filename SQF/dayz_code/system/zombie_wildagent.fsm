@@ -114,13 +114,13 @@ class FSM
     class init
     {
       name = "init";
-      init = /*%FSM<STATEINIT""">*/"_position = 	_this select 0;" \n
-       "_agent = 		_this select 1;" \n
+      init = /*%FSM<STATEINIT""">*/"_agent = 	_this select 0;" \n
+       "_position = 		_agent modelToWorld [0,0,0];" \n
        "" \n
        "_secondHand = false;" \n
        "" \n
        "" \n
-       "if (count _this > 2) then {" \n
+       "if (count _this > 1) then {" \n
        "	//_secondHand = true;" \n
        "	diag_log (""Second Hand Zombie Initialized: "" + str(_this));" \n
        "};" \n
@@ -136,7 +136,7 @@ class FSM
           priority = 0.000000;
           to="End_1";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"count _this > 2"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"count _this > 1"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"diag_log (""Second Hand"");"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
