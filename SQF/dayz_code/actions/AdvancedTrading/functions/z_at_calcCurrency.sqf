@@ -1,8 +1,9 @@
-private ["_GemTotal","_GemTotal2","_ItemAmethyst","_ItemCitrine","_ItemEmerald","_ItemObsidian","_ItemRuby","_ItemSapphire","_ItemTopaz","_array","_briefcase_100oz","_fontSize","_gem","_gold_10oz","_gold_10oz_a","_gold_10oz_b","_gold_1oz","_gold_1oz_a","_gold_1oz_b","_noIMG","_pic","_silver_10oz","_silver_10oz_a","_silver_10oz_b","_silver_1oz","_silver_1oz_a","_silver_1oz_b","_string","_total","_value"];
+private ["_GemTotal","_GemTotal2","_ItemAmethyst","_ItemCitrine","_ItemEmerald","_ItemObsidian","_ItemRuby","_ItemSapphire","_ItemTopaz","_array","_briefcase_100oz","_fontSize","_gem","_gold_10oz","_gold_10oz_a","_gold_10oz_b","_gold_1oz","_gold_1oz_a","_gold_1oz_b","_noIMG","_pic","_silver_10oz","_silver_10oz_a","_silver_10oz_b","_silver_1oz","_silver_1oz_a","_silver_1oz_b","_string","_total","_value","_localize"];
 
 _total = _this select 0;
 _noIMG = _this select 1;
 _fontSize = if (count _this > 2) then {_this select 2} else {1};
+_localize = count _this < 4; //Do not localize for server RPT log
 _array = [];
 _string = "";
 
@@ -94,7 +95,7 @@ _silver_1oz = (_silver_1oz_a - _silver_1oz_b);
 { //sort gems so they display on total price in order of descending worth
 	if (!isNil {call compile format["_%1",_x]} && {(call compile format["_%1",_x]) > 0}) then {
 		if (_noIMG) then {
-			_pic = getText (configFile >> 'CfgMagazines' >> _x >> 'displayName');
+			_pic = if (_localize) then {getText (configFile >> 'CfgMagazines' >> _x >> 'displayName')} else {_x};
 			_array set [count _array, format["%1 %2",(call compile format["_%1",_x]),_pic]];
 		} else {
 			_pic = getText (configFile >> 'CfgMagazines' >> _x >> 'picture');
@@ -105,11 +106,11 @@ _silver_1oz = (_silver_1oz_a - _silver_1oz_b);
 
 if (_noIMG) then {
 	if (_briefcase_100oz >= 2) then {
-		_array set [count _array, format["%1 %2s",_briefcase_100oz,localize "STR_EPOCH_BRIEFCASE"]];
+		_array set [count _array, format["%1 %2s",_briefcase_100oz,if (_localize) then {localize "STR_EPOCH_BRIEFCASE"} else {"Briefcase"}]];
 	};
 
 	if (_briefcase_100oz == 1) then {
-		_array set [count _array, format["%1 %2",_briefcase_100oz,localize "STR_EPOCH_BRIEFCASE"]];
+		_array set [count _array, format["%1 %2",_briefcase_100oz,if (_localize) then {localize "STR_EPOCH_BRIEFCASE"} else {"Briefcase"}]];
 	};
 } else {
 	if (_briefcase_100oz > 0) then {
@@ -120,7 +121,7 @@ if (_noIMG) then {
 
 if (_gold_10oz > 0) then {
 	if (_noIMG) then {
-		_array set [count _array, format["%1 %2",_gold_10oz,localize "STR_EPOCH_10OZGOLD"]];
+		_array set [count _array, format["%1 %2",_gold_10oz,if (_localize) then {localize "STR_EPOCH_10OZGOLD"} else {"10oz Gold"}]];
 	} else {
 		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemGoldBar10oz' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_gold_10oz,_pic, _string,_fontSize];
@@ -128,7 +129,7 @@ if (_gold_10oz > 0) then {
 };
 if (_gold_1oz > 0) then {
 	if (_noIMG) then {
-		_array set [count _array, format["%1 %2",_gold_1oz,localize "STR_EPOCH_GOLD"]];
+		_array set [count _array, format["%1 %2",_gold_1oz,if (_localize) then {localize "STR_EPOCH_GOLD"} else {"Gold"}]];
 	} else {
 		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemGoldBar' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_gold_1oz,_pic, _string,_fontSize];
@@ -136,7 +137,7 @@ if (_gold_1oz > 0) then {
 };
 if (_silver_10oz > 0) then {
 	if (_noIMG) then {
-		_array set [count _array, format["%1 %2",_silver_10oz,localize "STR_EPOCH_10OZSILVER"]];
+		_array set [count _array, format["%1 %2",_silver_10oz,if (_localize) then {localize "STR_EPOCH_10OZSILVER"} else {"10oz Silver"}]];
 	} else {
 		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemSilverBar10oz' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_silver_10oz,_pic, _string,_fontSize];
@@ -144,7 +145,7 @@ if (_silver_10oz > 0) then {
 };
 if (_silver_1oz > 0) then {
 	if (_noIMG) then {
-		_array set [count _array, format["%1 %2",_silver_1oz,localize "STR_EPOCH_SILVER"]];
+		_array set [count _array, format["%1 %2",_silver_1oz,if (_localize) then {localize "STR_EPOCH_SILVER"} else {"Silver"}]];
 	} else {
 		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemSilverBar' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_silver_1oz,_pic, _string,_fontSize];
