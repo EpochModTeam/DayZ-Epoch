@@ -18,7 +18,7 @@ _lockCode = _charID;
 
 if (count _this > 3) then {
 	_suppliedCode = _this select 3;
-	_lockCode = _suppliedCode;
+	if (_status != 3 && {_status != 6}) then {_lockCode = _suppliedCode;};
 };
 
 // Player may have disconnected or died before message send. Attempt lock/unlock/pack/save procedure anyway
