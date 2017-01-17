@@ -122,19 +122,7 @@ class Survivor3_DZ : Survivor2_DZ {
 
 //See DZE\Females.hpp for female characters
 
-class Bandit1_DZ : Survivor_DZ { //GER_Soldier_EP1
-	scope = public;
-	displayName = $STR_CHAR_2;
-	model = "\ca\characters_E\GER\GER_rifleman";
-	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
-	identityTypes[] = {"Language_DE_EP1","Head_DE","CDF_Glasses"};
-	class Wounds
-	{
-		tex[] = {};
-		mat[] = {};
-	};
-	hiddenSelections[] = {"Camo"};
-};
+//Bandit1_DZ moved to DZE section below
 
 class Rocket_DZ: Survivor_DZ { //BAF_Soldier_Officer_W
 	scope = public;
@@ -354,7 +342,20 @@ class INS_Worker2_DZ: INS_Worker2 {
 
 // bandits
 class Soldier_Crew_PMC;
-class Bandit2_DZ: Soldier_Crew_PMC {
+class Bandit1_DZ : Soldier_Crew_PMC { //Normal black PMC vest bandit
+	displayName = $STR_CHAR_2;
+	side = 1;
+	weapons[] = {"Throw","Put"};
+	model = "\dayz\characters\man_bandit";
+	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
+	magazines[] = {};
+	backpack = "";
+	respawnWeapons[] = {"Throw","Put"};
+	respawnMagazines[] = {};
+	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
+	canHideBodies = 1;
+};
+class Bandit2_DZ: Soldier_Crew_PMC { //German bright color camo bandit
 	scope = public;
 	side = 1;
 	displayName = $STR_CHAR_2;
