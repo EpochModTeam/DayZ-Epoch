@@ -52,9 +52,9 @@ class DZ_GroupButton: RscButton {
 	text = "";
 	type = 16;
 	action = "";
-	x = .317;
-	w = .058 * safeZoneW;
-	h = .05 * safeZoneH;
+	x = .314;
+	w = .16;
+	h = .1;
 	color[] = {0.95, 0.95, 0.95, 1.0};
 	color2[] = {0.95, 0.95, 0.95, 1};
 	colorDisabled[] = {1, 1, 1, 0.25};
@@ -87,7 +87,7 @@ class DZ_GroupButton: RscButton {
 	};	
 	class TextPos {	
 		left = .002;
-		top = .0181 * safeZoneH;
+		top = .0325;
 		right = .002;
 		bottom = .005;
 	};
@@ -179,7 +179,7 @@ class DZ_GroupDialog {
 			text = $STR_UI_CLOSE;
 			onButtonClick = "findDisplay 80000 closeDisplay 2;";
 			x = .03;
-			y = .6525;
+			y = .65;
 		};
 		class Invite: DZ_GroupButton {
 			idc = 3;
@@ -193,17 +193,17 @@ class DZ_GroupDialog {
 			onButtonClick = "(_this select 0) ctrlShow false; call dayz_kickFromGroup;";
 			y = .239;
 		};
-		class Disband: DZ_GroupButton {
-			idc = 5;
-			text = $STR_EPOCH_DISBAND;
-			onButtonClick = "(_this select 0) ctrlShow false; call dayz_disbandGroup;";
-			y = .349;
-		};
 		class Promote: DZ_GroupButton {
 			idc = 10;
 			text = $STR_EPOCH_PROMOTE;
 			onButtonClick = "(_this select 0) ctrlShow false; call dayz_promotePlayer;";
 			y = .294;
+		};
+		class Disband: DZ_GroupButton {
+			idc = 5;
+			text = $STR_EPOCH_DISBAND;
+			onButtonClick = "(_this select 0) ctrlShow false; call dayz_disbandGroup;";
+			y = .349;
 		};
 		class Leave: DZ_GroupButton {
 			idc = 6;
