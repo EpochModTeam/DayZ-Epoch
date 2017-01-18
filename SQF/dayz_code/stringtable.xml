@@ -1177,6 +1177,15 @@
 			<French>Vous devez avoir une boîte à outils pour retirer %1.</French>
 			<German>Du brauchst einen Werkzeugkasten, um %1 abzubauen.</German>
 		</Key>
+		<Key ID="str_salvage_safezone">
+			<English>You cannot salvage parts in a safe zone</English>
+			<Spanish>No se pueden recuperar piezas en una zona segura</Spanish>
+			<Russian>Вы не можете спасти детали в безопасной зоне</Russian>
+			<French>Vous ne pouvez pas récupérer des pièces dans une zone sécurisée</French>
+			<Czech>Nemůžete zachránit díly v bezpečné zóně</Czech>
+			<German>Sie können Teile in einer sicheren Zone nicht retten</German>
+			<Dutch>Je kunt niet delen redden in een veilige zone</Dutch>
+		</Key>
 		<Key ID="str_fishing_failed">
 			<English>You didn&apos;t catch anything.</English>
 			<Russian>Вы ничего не поймали.</Russian>

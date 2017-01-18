@@ -1,4 +1,4 @@
-private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_started","_finished","_hasToolbox","_nameType","_namePart","_animState","_isMedic","_damage","_BreakableParts","_selection","_wpn","_classname","_ismelee"];
+private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_cancel","_started","_finished","_hasToolbox","_nameType","_namePart","_animState","_isMedic","_damage","_BreakableParts","_selection","_wpn","_classname","_ismelee"];
 
 if (dayz_salvageInProgress) exitWith { localize "str_salvage_inprogress" call dayz_rollingMessages; };
 dayz_salvageInProgress = true;
@@ -13,6 +13,7 @@ _brokenPart = false;
 _started = false;
 _finished = false;
 _hasToolbox = "ItemToolbox" in items player;
+_cancel = false;
 
 _nameType = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");
@@ -22,6 +23,10 @@ s_player_repairActions = [];
 s_player_repair_crtl = 1;
 
 if (_hasToolbox) then {
+	{
+		if ((_vehicle distance (_x select 0)) < (_x select 1)) exitWith {_cancel = true;};
+	} count DZE_SafeZonePosArray;
+	if (_cancel) exitWith {	(localize "str_salvage_safezone") call dayz_rollingMessages;};
 	player playActionNow "Medic";
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,50,true,(getPosATL player)] call player_alertZombies;

@@ -29,7 +29,7 @@ BIS_Effects_startEvent = {
 		if (((vehicle player) == (_this select 0)) && {(vehicle player) != player} && {player in (crew (_This select 0))}) then {
 			_cancel = false;
 			{
-				if ((isInTraderCity || !canbuild) && {(player distance (_x select 0)) < (_x select 1)}) then {_cancel = true;};
+				if ((isInTraderCity || !canbuild) && {(player distance (_x select 0)) < (_x select 1)}) exitWith {_cancel = true;};
 			} count DZE_SafeZonePosArray;
 			player action ["getOut", (_this select 0)];
 			if (!_cancel && {!((_this select 0) iskindof "car")}) then {
