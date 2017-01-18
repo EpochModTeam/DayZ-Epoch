@@ -1183,7 +1183,7 @@
 			<Russian>Вы не можете спасти детали в безопасной зоне</Russian>
 			<French>Vous ne pouvez pas récupérer des pièces dans une zone sécurisée</French>
 			<Czech>Nemůžete zachránit díly v bezpečné zóně</Czech>
-			<German>Sie können Teile in einer sicheren Zone nicht retten</German>
+			<German>Du kannst in einer Safezone keine Teile demontieren</German>
 			<Dutch>Je kunt niet delen redden in een veilige zone</Dutch>
 		</Key>
 		<Key ID="str_fishing_failed">
