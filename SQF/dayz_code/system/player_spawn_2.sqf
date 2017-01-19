@@ -8,15 +8,8 @@ _radTimer = 0;
 
 _timer = diag_tickTime;
 _timer1 = diag_tickTime;
-_spawnCheck = diag_tickTime;
-_timer2 = diag_Ticktime;
-_timer5 = diag_Ticktime;
-_timer10 = diag_Ticktime;
 _timer30 = diag_Ticktime;
 _timer150 = diag_ticktime;
-
-_forceHumanity = false;
-_runonce = false;
 _timerMonitor = diag_ticktime;
 
 player setVariable ["temperature",dayz_temperatur,true];
