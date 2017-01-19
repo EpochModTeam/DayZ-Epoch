@@ -1,14 +1,19 @@
-private ["_bodyName","_root","_type","_weapon"];
+private ["_bodyName","_root","_sourceName","_type","_weapon"];
 
 _message = _this;
 _type = _message select 0;
 _bodyName = _message select 1;
-if (_bodyName == "AI") then {_bodyName = localize "STR_PLAYER_AI";};
 
 _message = switch _type do {
 	case "died": {format [localize "str_player_death_died",_bodyName,localize format["str_death_%1",_message select 2]]};
 	case "killed": {
+		_sourceName = _message select 2;
 		_weapon = _message select 3;
+		
+		if (_sourceName == "AI") then {
+			_sourceName = localize "STR_PLAYER_AI";
+		};
+		
 		_root = switch true do {
 			case (_weapon in ["PipeBomb","Mine","MineE"]): {"CfgMagazines"}; // isClass in both
 			case (isClass (configFile >> "CfgWeapons" >> _weapon)): {"CfgWeapons"};
@@ -16,14 +21,19 @@ _message = switch _type do {
 			case (isClass (configFile >> "CfgMagazines" >> _weapon)): {"CfgMagazines"};
 			default {""};
 		};
+		
 		if (_root == "") then {
 			_message set [5,""];
 		} else {
 			_message set [3,getText (configFile >> _root >> _weapon >> "displayName")];
 			_message set [5,getText (configFile >> _root >> _weapon >> "picture")];
 		};
-		if (DZE_DeathMsgDynamicText) then {_message call dayz_killFeed};
-		format [localize "str_player_death_killed",_bodyName,_message select 2,_message select 3,_message select 4]
+		
+		if (DZE_DeathMsgDynamicText) then {
+			_message call dayz_killFeed;
+		};
+		
+		format [localize "str_player_death_killed",_bodyName,_sourceName,_message select 3,_message select 4]
 	};
 	case "suicide": {format [localize "str_player_death_suicide",_bodyName]};
 };

@@ -41,7 +41,7 @@ if (!isNull _source) then {
 
 //Send Death Notice
 diag_log format["Player_Death: Body:%1 BodyName:%2 Infected:%3 SourceName:%4 SourceWeapon:%5 Distance:%6 Method:%7",_body,dayz_playerName,_infected,_sourceName,_sourceWeapon,_distance,_method];
-PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray dayz_playerName,_infected,toArray _sourceName,toArray _sourceWeapon,_distance,toArray _method]; //Send name as array to avoid publicVariable value restrictions
+PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray dayz_playerName,_infected,toArray _sourceName,toArray _sourceWeapon,_distance,_method]; //Send name as array to avoid publicVariable value restrictions
 publicVariableServer "PVDZ_plr_Death";
 
 _body setVariable ["deathType",_method,true];
