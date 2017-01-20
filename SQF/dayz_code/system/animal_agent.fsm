@@ -60,7 +60,7 @@ class FSM
           priority = 0.000000;
           to="Loiter";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"dayz_clientPreload"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!isNil 'dayz_clientPreload' && {dayz_clientPreload})"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
