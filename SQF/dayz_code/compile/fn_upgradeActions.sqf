@@ -55,8 +55,6 @@ if (!isNull _cursorTarget and !_inVehicle and (player distance _cursorTarget < 4
         player removeAction s_player_maintenance;
         s_player_maintenance = -1;
     };
-	*/
-
     
     if ((((getPlayerUID player) in _ownerArray) or (count _ownerArray == 0) or ((typeof _cursorTarget) in ["WoodenFence_1_foundation","WoodenGate_foundation"])) and !_ownerBuildLock) then {
         if (s_player_disassembly < 0) then {
@@ -68,6 +66,7 @@ if (!isNull _cursorTarget and !_inVehicle and (player distance _cursorTarget < 4
 		player removeAction s_player_disassembly;
 		s_player_disassembly = -1;
 	};
+*/
 } else {
     call dayz_resetUpgradeActions;
 };

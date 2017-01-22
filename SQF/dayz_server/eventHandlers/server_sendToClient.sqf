@@ -7,7 +7,7 @@ _owner = owner _unit;
 
 //diag_log format ["%1, %2, %3, %4", _unit, _variable, _arraytosend, _owner];
 
-switch (_variable) do {	
+switch (_variable) do {
 	case "VehHandleDam": {
 		_vehicle = _arraytosend select 0;
 		if (local _vehicle) then {
@@ -134,4 +134,5 @@ switch (_variable) do {
 			};
 		} forEach playableUnits;
 	};
+	default { diag_log format ["%1, %2, %3, %4", _unit, _variable, _arraytosend, _owner]; };
 };
