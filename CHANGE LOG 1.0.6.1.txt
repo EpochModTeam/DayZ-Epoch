@@ -16,6 +16,7 @@
 [CHANGED] Reverted pain to old violent shaking effect instead of subtle gun sway. #1839 @AirwavesMan @schwanzkopfhegel
 [CHANGED] Reverted lobby and player list background colors to A2OA default instead of dark grey
 [CHANGED] Salvage vehicle actions are no longer allowed in positions defined in DZE_SafeZonePosArray
+[CHANGED] The town generator and comfrey plant spawner loops are now fully disabled when dayz_townGenerator=false; to improve client performance.
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper
@@ -37,7 +38,7 @@
 [FIXED] HALO fresh spawns stuck swimming in air on Napf and failing to start correctly sometimes. #1809 @oiad @ebayShopper
 [FIXED] Self actions sometimes duplicating when changing clothes and looking at a safe. @jOoPs @ebayShopper
 [FIXED] Wrong bleeding icon on vanilla status UI. @jOoPs
-[FIXED] It is no longer possible to autoRun under ponds on Chernarus. #1827 @schwanzkopfhegel
+[FIXED] It is no longer possible to autoRun under ponds on Chernarus, Namalsk and Napf. #1827 @schwanzkopfhegel
 [FIXED] Hive connection error after the first and only online player disconnects during the object stream at server start up. #1822 @AirwavesMan @ebayShopper
 [FIXED] Vanilla player_craftItem not exiting when action is already in progress. #1826 @schwanzkopfhegel
 [FIXED] Fire barrel kit can be crafted with partially full matchboxes now. #1830 @AirwavesMan
@@ -47,7 +48,7 @@
 [FIXED] Filling fuel barrels takes the correct amount from fuel tanks now (210 instead of 40 litres). #1834 @schwanzkopfhegel @oiad
 [FIXED] Base objects duplicating when using "take ownership" on plot pole. #1811 @BNG-Lance @Clanwarfare
 [FIXED] Unable to sell some launchers like Javelin and Stinger which have the same classname for ammo and weapon. #1844 @ndavalos
-[FIXED] Long search delay when filling water bottles, drinking from hands and drinking from empty cans on Chernarus. #1835 @schwanzkopfhegel
+[FIXED] Long search delay when filling water bottles, drinking from hands and drinking from empty cans is fixed on Chernarus, Namalsk and Napf. #1835 @schwanzkopfhegel
 [FIXED] Players can not purchase a negative number of items anymore.
 [FIXED] Removed antiwall glitch blocks for vanilla hospitals since Epoch uses DayZero hospitals. @jOoPs
 [FIXED] Switching weapons properly interrupts autorun now. #1850 @DeVloek

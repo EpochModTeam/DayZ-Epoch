@@ -62,7 +62,6 @@ _insideloop = {
 };
 
 for "_i" from 1 to 2048 do {
-	if (!dayz_townGenerator) exitWith {};
 	_pos = _a call psrnd;
 	_pos call _insideloop;	
 	if (_plantcount >= dayz_maxGlobalPlants) exitWith {};

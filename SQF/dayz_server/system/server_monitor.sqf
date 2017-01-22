@@ -354,8 +354,9 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 diag_log format["HIVE: BENCHMARK - Server_monitor.sqf finished streaming %1 objects in %2 seconds (unscheduled)",_val,diag_tickTime - _timeStart];
 
 // # END OF STREAMING #
-
-call server_plantSpawner; // Draw the pseudo random seeds
+if (dayz_townGenerator) then {
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_plantSpawner.sqf"; // Draw the pseudo random seeds
+};
 [] execFSM "\z\addons\dayz_server\system\server_vehicleSync.fsm"; 
 [] execVM "\z\addons\dayz_server\system\scheduler\sched_init.sqf"; // launch the new task scheduler
 

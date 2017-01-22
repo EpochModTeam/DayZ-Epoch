@@ -226,7 +226,9 @@ _playerObj setVariable ["lastPos",getPosATL _playerObj];
 PVCDZ_plr_Login2 = [_worldspace,_state];
 _clientID = owner _playerObj;
 _clientID publicVariableClient "PVCDZ_plr_Login2";
-_clientID publicVariableClient "PVCDZ_plr_plantSpawner";
+if (dayz_townGenerator) then {
+	_clientID publicVariableClient "PVCDZ_plr_plantSpawner";
+};
 
 //record time started
 _playerObj setVariable ["lastTime",time];
