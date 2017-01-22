@@ -513,9 +513,9 @@ dayz_activeInvites = [];
 dayz_combination = "";
 dayz_disallowedVault = ["TentStorage","BuiltItems","ModularItems","DZE_Base_Object","Generator_DZ"];
 // These work with just a running generator
-dayz_fuelpumparray = ["FuelPump_DZ","Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","FuelStation","Land_ibr_FuelStation_Feed","Land_fuelstation_army","Land_fuelstation","land_fuelstation_w","Land_benzina_schnell"];
+dayz_fuelpumparray = ["FuelPump_DZ","Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","FuelStation","Land_ibr_FuelStation_Feed","Land_fuelstation_army","Land_smd_fuelstation_army","Land_fuelstation","land_fuelstation_w","Land_benzina_schnell"];
 // Standard Fuel sources
-dayz_fuelsources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_stairs","Land_fuel_tank_stairs_ep1","Land_wagon_tanker","Land_fuelstation","Land_fuelstation_army","land_fuelstation_w","Land_benzina_schnell"];
+dayz_fuelsources = ["Land_Ind_TankSmall","Land_fuel_tank_big","Land_fuel_tank_stairs","Land_fuel_tank_stairs_ep1","Land_wagon_tanker","Land_fuelstation","Land_fuelstation_army","Land_smd_fuelstation_army","land_fuelstation_w","Land_benzina_schnell"];
 dayz_humanitytarget = "";
 dayz_selectedVault = objNull;
 dayz_selectedDoor = objNull;

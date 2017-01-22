@@ -23,7 +23,7 @@ _wells = ["Land_pumpa","Land_Barrel_water","Land_Misc_Well_C_EP1","Land_Misc_Wel
 _canFill = switch true do {
 	//Return: [nearWaterHole, isPond]
 	case (count nearestObjects [_posATL,_wells,4] > 0): {[true,false]};
-	case (toLower worldName == "chernarus"): {(call fn_nearWaterHole)};
+	case (toLower worldName in ["chernarus","namalsk","napf"]): {(call fn_nearWaterHole)};
 	//Slow searches for maps without waterHoleProxy objects added yet
 	case ({["_well",str _x] call fnc_inString} count nearestObjects [_posATL,[],4] > 0): {[true,false]};
 	case ({["pond",str _x] call fnc_inString && {_posASL select 2 < ((getPosASL _x) select 2)}} count nearestObjects [player,[],50] > 0): {[true,true]};
