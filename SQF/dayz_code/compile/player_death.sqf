@@ -103,12 +103,6 @@ if (!local _source && isPlayer _source) then {
 	r_player_unconscious = false;
 	r_player_cardiac = false;
 	dayz_autoRun = false;
-	if (player == vehicle player) then { //fix running corpses
-		[nil, player, rSWITCHMOVE, ""] call RE;
-		player SWITCHMOVE "";
-		PVDZ_plr_SwitchMove = [player,""];
-		publicVariableServer "PVDZ_plr_SwitchMove";
-	};
 
 	terminate dayz_musicH;
 	terminate dayz_slowCheck;
@@ -144,6 +138,16 @@ if (!local _source && isPlayer _source) then {
 	1 cutRsc [if (DZE_DeathScreen) then {"DeathScreen_DZE"} else {"DeathScreen_DZ"},"BLACK OUT",3];
 	playMusic "dayz_track_death_1";
 	uiSleep 2;
+
+	_animState = toLower (AnimationState _body);
+	_animStateArray = toArray _animState;
+	_animCheck = toString ([(_animStateArray select 0),(_animStateArray select 1),(_animStateArray select 2),(_animStateArray select 3)]);
+	if ((_body == (vehicle _body)) && {_animState != "deadstate" && {_animCheck != "adth"}}) then { //fix running corpses - death anims begin with Adth
+		[nil, _body, rSWITCHMOVE, ""] call RE;
+		_body SWITCHMOVE "";
+		PVDZ_plr_SwitchMove = [_body,""];
+		publicVariableServer "PVDZ_plr_SwitchMove";
+	};
 
 	for "_x" from 5 to 1 step -1 do {
 		titleText [format[localize "str_return_lobby", _x], "PLAIN DOWN", 1];
