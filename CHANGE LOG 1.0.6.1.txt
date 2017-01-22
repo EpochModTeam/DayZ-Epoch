@@ -17,6 +17,7 @@
 [CHANGED] Reverted lobby and player list background colors to A2OA default instead of dark grey
 [CHANGED] Salvage vehicle actions are no longer allowed in positions defined in DZE_SafeZonePosArray
 [CHANGED] The town generator and comfrey plant spawner loops are now fully disabled when dayz_townGenerator=false; to improve client performance.
+[CHANGED] Changed default value for the variable dayz_bleedingeffect to 2 (blood particle effect only) - set to 3 to enable blood stains again
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper
