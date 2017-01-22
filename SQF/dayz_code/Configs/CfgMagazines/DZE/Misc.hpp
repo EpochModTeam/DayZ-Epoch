@@ -1171,7 +1171,7 @@ class ItemKiloHemp : CA_Magazine
 		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_269a;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
 			requiretools[] = {"ItemKnife"};
 			output[] = {{"ItemHempSeed",5}};
