@@ -296,6 +296,8 @@ fnc_usec_damageBleed = {
 	private["_wound","_modelPos","_point","_source"];
 	_unit = _this select 0;
 	_wound = _this select 1;
+	_point = objNull;
+	_source = objNull;
 	//_injury = _this select 2; // not used. damage% ???
 
 	if (isServer) exitWith{}; // no graphical effects on server!

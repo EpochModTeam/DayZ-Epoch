@@ -162,7 +162,7 @@ sched_townGenerator = {
 								_position = _x select 2;
 								_blocked = false;
 								{
-									if (_position distance _x < 150 && {_x select 1 != "waterHoleProxy"}) exitWith {
+									if (_position distance _x < 150) exitWith {
 										_blocked = true;
 									};
 								} forEach dayz_townGeneratorBlackList;
