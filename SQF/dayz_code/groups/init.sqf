@@ -30,8 +30,6 @@ dayz_disbandGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\group
 dayz_filterGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\filter.sqf";
 dayz_getCrew = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\getCrew.sqf";
 dayz_getPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\getPlayer.sqf";
-dayz_groupIcons = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\groupIcons.sqf";
-dayz_groupMarkers = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\groupMarkers.sqf";
 dayz_inviteToGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\invite.sqf";
 dayz_joinGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\join.sqf";
 dayz_kickFromGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\kick.sqf";
@@ -42,3 +40,9 @@ dayz_pickPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\
 dayz_promotePlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\promote.sqf";
 dayz_rejectGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\reject.sqf";
 dayz_groupInit = true;
+
+execVM "\z\addons\dayz_code\groups\groupTags.sqf";
+
+if (dayz_requireRadio or {dayz_markGroup > 0} or {dayz_markSelf > 0} or {dayz_markBody > 0}) then {
+	execVM "\z\addons\dayz_code\groups\groupMarkers.sqf";
+};

@@ -651,13 +651,13 @@ class RscTitles
 			};
 		};
 	};
-	class DZ_GroupIcons
+	class DZ_GroupTags
 	{
 		idd = -1;
 		movingEnable = 1;
 		enableSimulation = 1;
 		enableDisplay = 1;
-		onLoad = "uiNamespace setVariable ['DZ_GroupIcons',_this select 0];";
+		onLoad = "uiNamespace setVariable ['DZ_GroupTags',_this select 0];";
 		duration = 99999999999999999;
 		fadein = 0;
 		fadeout = 0;

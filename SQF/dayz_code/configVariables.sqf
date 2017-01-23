@@ -98,7 +98,7 @@ DZE_doorManagementMaxFriends = 10; //Max friends allowed on a door. There is no 
 DZE_doorManagementHarderPenalty = true; //Enforce an exponential wait on attempts between unlocking a door from a failed code.
 
 // Group System
-dayz_groupSystem = true; // Enable group system
+dayz_groupSystem = false; // Enable group system
 dayz_markGroup = 1; // Players can see their group members on the map 0=never, 1=always, 2=With GPS only
 dayz_markSelf = 0; // Players can see their own position on the map 0=never, 1=always, 2=With GPS only
 dayz_markBody = 0; // Players can see their corpse position on the map 0=never, 1=always, 2=With GPS only

@@ -202,8 +202,6 @@ while {1 == 1} do {
 			player setVariable["USEC_infected",true,true];
 		};
 	};
-	
-	if (!isNil "dayz_groupInit") then {call dayz_groupMarkers;};
 
 	// Radiation zones rapid blood loss
 	if (DZE_InRadiationZone) then {

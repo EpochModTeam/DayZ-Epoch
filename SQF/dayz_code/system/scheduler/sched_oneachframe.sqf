@@ -30,8 +30,6 @@ sched_onEachFrame = {
 			diag_log format [ "h1nt: LOW FPS (%1)", diag_fpsmin ];
 		};
 	};
-	
-	if (!isNil "dayz_groupIcons") then {call dayz_groupIcons;};
 
 	_ret
 };
