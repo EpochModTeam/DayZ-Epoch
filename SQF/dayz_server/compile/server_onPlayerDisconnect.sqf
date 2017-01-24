@@ -67,7 +67,7 @@ if (_characterID != "?") then {
 		*/
 		
 		//Punish combat log
-		if (_inCombat && _playerPos distance respawn_west_original > 1500) then {
+		if (_inCombat) then {
 			// Moved setVariables to server_playerSync since they are high priority			
 			// Messages are low priority. Player object not needed
 			diag_log format["PLAYER COMBAT LOGGED: %1(%3) at location %2",_playerName,_playerPos,_playerUID];
