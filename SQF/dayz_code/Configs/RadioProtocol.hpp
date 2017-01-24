@@ -1,5 +1,5 @@
-//Disable automatic group chat spam "CEASE FIRE", "READY", "REGROUP", "UNKNOWN 12'OCLOCK", etc. 
-class RadioProtocolEmpty {
+//Disables automatic group chat spam "CEASE FIRE", "READY", "REGROUP", "UNKNOWN 12'OCLOCK", etc. but breaks some AI behavior (like driving land vehicles)
+/*class RadioProtocolEmpty {
 	class Words {};
 	class Arguments {};
 	class Default {priority = -1; timeout = -1;};
@@ -250,3 +250,4 @@ class RadioProtocolEN: RadioProtocolEmpty {};
 class RadioProtocolRU: RadioProtocolEmpty {};
 class RadioProtocolCZ: RadioProtocolEmpty {};
 class RadioProtocol_BAF: RadioProtocolEmpty {};
+*/

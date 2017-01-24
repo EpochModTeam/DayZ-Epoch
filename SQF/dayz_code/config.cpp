@@ -99,7 +99,7 @@ class DefaultEventhandlers {
 #include "Configs\rscTitles.hpp"
 #include "Configs\CfgWorlds.hpp"
 #include "Configs\CfgMoves.hpp"
-#include "Configs\RadioProtocol.hpp"
+//#include "Configs\RadioProtocol.hpp"
 #include "Configs\CfgVehicles\CfgVehicles.hpp"
 #include "Configs\CfgWeapons\CfgWeapons.hpp"
 #include "Configs\CfgCrafting\CfgCrafting.hpp"
