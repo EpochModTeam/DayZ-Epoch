@@ -5,20 +5,29 @@
 	References to the player object after that point will return objNull, so this function
 	and server_playerSync must be fast or the player will not save.
 */
-private ["_playerObj","_playerUID","_playerPos","_playerName","_characterID","_inCombat","_Sepsis","_myGroup"];
+private ["_playerObj","_playerUID","_playerPos","_playerName","_characterID","_inCombat","_Sepsis"];
 
 _playerUID = _this select 0;
 _playerName = _this select 1;
 _playerObj = nil;
 
 //Lets search all players looking for the object that matches our UID
+//If the player just died then the new unit they respawned into will be found (respawnDelay=0 in description.ext)
 {
 	if ((getPlayerUID _x) == _playerUID) exitWith { _playerObj = _x; _playerPos = getPosATL _playerObj;};
 } count playableUnits;
 
 //If playerObj is not in playableUnits then lets exit the disconnect system.
 if (isNil "_playerObj") exitWith {
-	diag_log format["%1: Player object is not in playableUnits. This is normal if the player just died. _this:%2", __FILE__, _this];
+	diag_log format["%1: Exiting. Player is not in playableUnits. _this:%2", __FILE__, _this];
+};
+
+//Player object is alive in debug zone. The player most likely just respawned.
+if (_playerPos distance respawn_west_original < 1500) exitWith {
+	diag_log format["%1: Exiting. Player is near respawn_west. This is normal if the player just died. _this:%2", __FILE__, _this];
+	if (!isNull _playerObj) then {
+		_playerObj call sched_co_deleteVehicle;
+	};
 };
 
 //diag_log format["get: %1 (%2), sent: %3 (%4)",typeName (getPlayerUID _playerObj), getPlayerUID _playerObj, typeName _playerUID, _playerUID];
@@ -36,9 +45,7 @@ if (_playerUID in dayz_ghostPlayers) exitWith {
 
 	//Lets remove the object.
 	if (!isNull _playerObj) then { 
-		_myGroup = group _playerObj;
-		deleteVehicle _playerObj;
-		deleteGroup _myGroup;
+		_playerObj call sched_co_deleteVehicle;
 	};
 };
 
@@ -85,7 +92,5 @@ if (_characterID != "?") then {
 };
 
 if (alive _playerObj) then {
-	_myGroup = group _playerObj;
-	deleteVehicle _playerObj;
-	deleteGroup _myGroup;
+	_playerObj call sched_co_deleteVehicle;
 };

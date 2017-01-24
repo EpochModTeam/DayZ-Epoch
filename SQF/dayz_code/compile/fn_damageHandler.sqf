@@ -86,7 +86,7 @@ if (_unit == player) then {
 
     if (_hit == "" && _ammo != "Crash") exitWith //Ignore none part dmg. Exit after processing humanity hit. Don't punish driver for damaging passenger in crash
 	{
-        if (!local _source && _isPlayer && alive player) then
+        if (!local _source && _isPlayer && alive player && !_isPZombie) then //Do not punish for shooting a player zombie
 		{
 			_isBandit = (player getVariable["humanity",0]) <= -5000;
 			//_isBandit = (_model in ["Bandit1_DZ","BanditW1_DZ"]);
@@ -105,7 +105,7 @@ if (_unit == player) then {
 			// - Accidental Murder - \\  When wearing the garb of a non-civilian you are taking your life in your own hands
 			// Attackers humanity should not be punished for killing a survivor who has shrouded his identity in military garb.
 
-            _punishment = ((_isBandit or {player getVariable ["OpenTarget",false]}) && !_isPZombie);
+            _punishment = (_isBandit or {player getVariable ["OpenTarget",false]});
             _humanityHit = 0;
 
             if (!_punishment && {(dayz_lastHumanityChange + 3) < diag_tickTime}) then {

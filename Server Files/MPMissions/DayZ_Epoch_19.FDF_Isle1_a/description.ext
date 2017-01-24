@@ -1,5 +1,5 @@
 respawn = "BASE";
-respawnDelay = 5;
+respawnDelay = 0;
 respawnDialog = 0;
 onLoadMission = "DayZ Epoch Podagorsk";
 OnLoadIntro = "Welcome to Podagorsk";

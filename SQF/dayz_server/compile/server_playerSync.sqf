@@ -26,7 +26,7 @@ if (isNil "_characterID") exitWith {
 
 if (_characterID == "0" or _inDebug) exitWith {
 	if (_inDebug) then {
-		diag_log format["INFO: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3 (May be relogging or changing clothes)",_name,_characterID,_charPos];
+		diag_log format["INFO: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3. This is normal when respawning, relogging and changing clothes.",_name,_characterID,_charPos];
 	} else {
 		diag_log ("ERROR: Cannot Sync Character " + _name + " as no characterID");
 	};

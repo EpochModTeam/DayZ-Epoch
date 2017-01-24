@@ -36,15 +36,15 @@ if (_characterID != "0") then {
 #ifdef PLAYER_DEBUG
 diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2", 
 	_newObject call fa_plr2str, _pos call fa_coor2str,
-	getPlayerUID _newObject,_characterID,
+	_playerID, _characterID,
 	typeOf _newObject
 ];
 #endif
 
 // DEATH MESSAGES
-_suicide = _sourceName == _playerName;
+_suicide = ((_sourceName == _playerName) or (_method == "suicide"));
 
-if (_method in ["explosion","melee","shot","shothead","shotheavy"] && !(_method == "explosion" && (_suicide or _sourceName == "unknown"))) then {
+if (_method in ["explosion","melee","shot","shothead","shotheavy","suicide"] && !(_method == "explosion" && (_suicide or _sourceName == "unknown"))) then {
 	if (_suicide) then {
 		_message = ["suicide",_playerName];
 	} else {
