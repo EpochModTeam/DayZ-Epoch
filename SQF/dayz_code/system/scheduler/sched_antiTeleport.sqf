@@ -6,8 +6,8 @@
 */
 
 sched_antiTP_init = {
-	if (dayz_antihack == 1) then { diag_log [ diag_ticktime, __FILE__, "Anti Teleport inited"]; };
-	[dayz_antihack == 1, [], 0, 0, objNull, respawn_west_original]
+	diag_log [ diag_ticktime, __FILE__, "Anti Teleport inited"];
+	[true, [], 0, 0, objNull, respawn_west_original]
 };
 
 sched_antiTP = {
@@ -21,7 +21,7 @@ sched_antiTP = {
 	_lastVehicle = _this select 4;
 	_debug = _this select 5;
 
-	if (((_antihack) and {(typeName player == "OBJECT")}) AND {((player in playableUnits) AND {(alive player)})}) then {
+	if (typeName player == "OBJECT" && {(player in playableUnits) && (alive player)}) then {
 		if (count _lastpos != 3) then {
 			_lastpos = getPosATL (vehicle player);
 			_lastheight = (ATLtoASL _lastpos) select 2;

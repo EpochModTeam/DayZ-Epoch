@@ -1,14 +1,12 @@
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
 
 sched_security_init = {
-	if (dayz_antihack == 1) then { diag_log [ diag_ticktime, __FILE__, "Some security routines inited"]; };
-	if (dayz_antihack == 1) then { [ "", time, 0, 0, grpNull ] } else { [] }	
+	diag_log [ diag_ticktime, __FILE__, "Some security routines inited"];
+	[ "", time, 0, 0, grpNull ]	
 };
 
 sched_security = {
 	private ["_netid","_timeTrickCount","_idTrickCount","_time","_otime","_pid", "_quit", "_list"];
-
-	if (count _this != 5) exitWith { [] };
 
 	_netid = _this select 0;
 	_otime = _this select 1;
@@ -50,7 +48,7 @@ sched_security = {
 		};
 	};
 
-	if (isNull _grp) then { _grp = group ((allmissionobjects 'FunctionsManager') select 0); };
+	if (isNull _grp) then { _grp = group ((entities 'FunctionsManager') select 0); };
 	if (!isNull _grp) then {
 		_list = units _grp;
 		if (count _list > 1) then {
