@@ -16,6 +16,7 @@ dayz_POIs = false; //Adds Point of Interest map additions (negatively impacts FP
 dayz_infectiousWaterholes = false; //Randomly adds some bodies, graves and wrecks by ponds (negatively impacts FPS)
 dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
+dayz_enableFlies = false; // Enable flies on dead bodies (negatively impacts FPS).
 
 //DayZMod presets
 dayz_presets = "Custom"; //"Custom","Classic","Vanilla","Elite"

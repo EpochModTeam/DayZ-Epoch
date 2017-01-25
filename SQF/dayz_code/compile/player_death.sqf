@@ -154,9 +154,6 @@ deleteGroup _myGroup;
 4 cutRsc ["default", "PLAIN",3];
 
 _body setVariable["combattimeout", 0, true];
-//due to a cleanup issue with effects this has been disabled remember to look at the cleanup before adding it back.
-//dayzFlies = player;
-//publicVariable "dayzFlies";
 
 _animState = toLower (animationState _body);
 _animStateArray = toArray _animState;

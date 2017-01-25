@@ -53,13 +53,14 @@ sched_corpses = {
 						};*/
 						_deathTime = diag_tickTime;
 						_x setVariable ["sched_co_deathTime", _deathTime];
-						_x setVariable ["sched_co_fliesAdded", true];
-						_addFlies = _addFlies + 1;
-						
+						if (dayz_enableFlies) then {
+							_x setVariable ["sched_co_fliesAdded", true];
+							_addFlies = _addFlies + 1;
+						};
 					};
 					// 40 minutes = how long a player corpse stays on the map
 					if (diag_tickTime - _deathTime > 40*60) then {
-						if (_x getVariable ["sched_co_fliesDeleted", false]) then {
+						if (_x getVariable["sched_co_fliesDeleted",false] or !dayz_enableFlies) then {
 							// flies have been switched off, we can delete body
 							_sound = _x getVariable ["sched_co_fliesSource", nil];
 							
@@ -77,6 +78,8 @@ sched_corpses = {
 							// body will be deleted at next round
 						};
 					} else {
+						// Do not spawn flies immediately after death. Wait 10 minutes.
+						if ((diag_tickTime - _deathTime < 10*60) or !dayz_enableFlies) exitWith {};
 						_onoff = 1;
 						// remove flies on heavy rain.
 						if (rain > 0.25) then { _onoff = 0; };

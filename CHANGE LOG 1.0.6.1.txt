@@ -18,7 +18,8 @@
 [CHANGED] Salvage vehicle actions are no longer allowed in positions defined in DZE_SafeZonePosArray
 [CHANGED] The town generator and comfrey plant spawner loops are now fully disabled when dayz_townGenerator=false; to improve client performance.
 [CHANGED] Changed default value for the variable dayz_bleedingeffect to 2 (blood particle effect only) due to negative FPS impact. Set to 3 to enable blood stains again.
-[CHANGED] Group icons have been moved to a slower loop and the group system is disabled by default. Enable in configVariables.sqf. #1816
+[CHANGED] Group icons have been moved to a slower loop and the group system is disabled by default. See configVariables.sqf to enable. #1816
+[CHANGED] Flies are now disabled by default due to negative FPS impact. See init.sqf to enable. #1816
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper

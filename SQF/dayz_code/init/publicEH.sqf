@@ -328,7 +328,9 @@ if (!isDedicated) then {
 	};
 	
 	"PVDZE_deathMessage" addPublicVariableEventHandler {(_this select 1) call dze_deathMessage};
-
-	// flies and swarm sound sync
-	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_flies.sqf";
+	
+	if (dayz_enableFlies) then {
+		// flies and swarm sound sync
+		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_flies.sqf";
+	};
 };
