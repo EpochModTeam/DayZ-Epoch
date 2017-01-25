@@ -76,7 +76,7 @@ class AdvancedTrading
 		class ZSC_RscButtonMenu_Z3: AT_Zupa_BlueButton
 		{
 			idc = -1;
-			text = $STR_EPOCH_TRADE_VEHICLE;
+			text = $STR_DN_VEHICLE;
 			x = 0.41 * safezoneW + safezoneX;
 			y = 0.26 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;

@@ -15156,17 +15156,6 @@
 		
 		<!-- ADVANCED TRADING BELOW -->		
 		
-		<Key ID="STR_EPOCH_TRADE_VEHICLE">
-			<English>Vehicle</English>
-			<German>Fahrzeug</German>
-			<Russian>Транспорт</Russian>
-			<Spanish>Vehículo</Spanish>
-			<French>Véhicule</French>
-			<Czech>Vozidlo</Czech>
-			<Italian>Veicolo</Italian>
-			<Polish>Pojazd</Polish>
-			<Hungarian>Jármű</Hungarian>
-		</Key>
 		<Key ID="STR_EPOCH_TRADE_BACKPACK">
 			<English>Backpack</English>
 			<German>Rucksack</German>
