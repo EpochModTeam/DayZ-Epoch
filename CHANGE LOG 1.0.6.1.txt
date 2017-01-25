@@ -11,13 +11,13 @@
 
 [CHANGED] Turbo and HoldBreath keybindings are now allowed again. @icomrade
 [CHANGED] Removed drink from hands at ponds due to client FPS impact. Players can still fill drinks at ponds by right clicking a container. @ebayShopper
-[CHANGED] Added point of interest and infectious waterhole map objects are disabled by default due to FPS impact. They can be enabled in init.sqf.
+[CHANGED] Disabled vanilla antiwall, POI, infectious waterhole and infected camp map additions by default due to negative FPS impact. They can be enabled in init.sqf and server_monitor.
 [CHANGED] Added shadow to dayz_rollingMessages white text so it is visible on light colored backgrounds and looks like cutText.
 [CHANGED] Reverted pain to old violent shaking effect instead of subtle gun sway. #1839 @AirwavesMan @schwanzkopfhegel
 [CHANGED] Reverted lobby and player list background colors to A2OA default instead of dark grey
 [CHANGED] Salvage vehicle actions are no longer allowed in positions defined in DZE_SafeZonePosArray
 [CHANGED] The town generator and comfrey plant spawner loops are now fully disabled when dayz_townGenerator=false; to improve client performance.
-[CHANGED] Changed default value for the variable dayz_bleedingeffect to 2 (blood particle effect only) - set to 3 to enable blood stains again
+[CHANGED] Changed default value for the variable dayz_bleedingeffect to 2 (blood particle effect only) due to negative FPS impact. Set to 3 to enable blood stains again.
 [CHANGED] Group icons have been moved to a slower loop and the group system is disabled by default. Enable in configVariables.sqf. #1816
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper

@@ -419,7 +419,7 @@ publicVariable "sm_done";
 };
 
 //Points of interest
-[] execVM "\z\addons\dayz_server\compile\server_spawnInfectedCamps.sqf";
+//[] execVM "\z\addons\dayz_server\compile\server_spawnInfectedCamps.sqf"; //Adds random spawned camps in the woods with corpses and loot tents (negatively impacts FPS)
 [] execVM "\z\addons\dayz_server\compile\server_spawnCarePackages.sqf";
 [] execVM "\z\addons\dayz_server\compile\server_spawnCrashSites.sqf";
 

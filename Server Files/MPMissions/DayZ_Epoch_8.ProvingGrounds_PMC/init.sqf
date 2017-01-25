@@ -9,12 +9,11 @@ dayZ_serverName = ""; //Shown to all players in the bottom left of the screen (c
 
 //Game settings
 dayz_antihack = 1; // DayZ Antihack / 1 = enabled // 0 = disabled
-dayz_antiWallHack = 1; //DayZ AntiWallhack / 1 = enabled // 0 = disabled, Adds items to the map to plug holes.
 dayz_REsec = 1; // DayZ RE Security / 1 = enabled // 0 = disabled
 dayz_enableRules = true; //Enables a nice little news/rules feed on player login (make sure to keep the lists quick).
 dayz_quickSwitch = false; //Turns on forced animation for weapon switch. (hotkeys 1,2,3) False = enable animations, True = disable animations
-dayz_POIs = false;
-dayz_infectiousWaterholes = false;
+dayz_POIs = false; //Adds Point of Interest map additions (negatively impacts FPS)
+dayz_infectiousWaterholes = false; //Randomly adds some bodies, graves and wrecks by ponds (negatively impacts FPS)
 dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
 
@@ -29,7 +28,7 @@ if (dayz_presets == "Custom") then {
 	dayz_spawncarepkgs_clutterCutter = 0; //0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
 	dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
 	dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass 
-	dayz_bleedingeffect = 2; //1 = blood on the ground, 2 = partical effect, 3 = both
+	dayz_bleedingeffect = 2; //1 = blood on the ground (negatively impacts FPS), 2 = partical effect, 3 = both
 	dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked
 	dayz_nutritionValuesSystem = true; //true, Enables nutrition system, false, disables nutrition system.
 	dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic ItemBloodbag
@@ -123,12 +122,8 @@ if (isServer) then {
 };
 
 if (!isDedicated) then {
-	if (dayz_antiWallHack != 0) then {
-		//Enables Map Plug items
-		if (toLower worldName == "chernarus") then { execVM "\z\addons\dayz_code\system\mission\chernarus\antiwallhack.sqf"; };
-		//Enables Plant lib fixes
-		call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\antihack.sqf";
-	};
+	//Enables Plant lib fixes
+	execVM "\z\addons\dayz_code\system\antihack.sqf";
 	
 	if (toLower(worldName) == "chernarus") then {
 		diag_log "WARNING: Clearing annoying benches from Chernarus";
