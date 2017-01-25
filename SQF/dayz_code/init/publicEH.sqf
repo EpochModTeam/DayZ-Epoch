@@ -327,7 +327,9 @@ if (!isDedicated) then {
 		format[localize "STR_BLD_COMBO_SET",_codeGuess] call dayz_rollingMessages;
 	};
 	
-	"PVDZE_deathMessage" addPublicVariableEventHandler {(_this select 1) call dze_deathMessage};
+	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgRolling or DZE_DeathMsgDynamicText) then {
+		"PVDZE_deathMessage" addPublicVariableEventHandler {(_this select 1) call dze_deathMessage};
+	};
 	
 	if (dayz_enableFlies) then {
 		// flies and swarm sound sync
