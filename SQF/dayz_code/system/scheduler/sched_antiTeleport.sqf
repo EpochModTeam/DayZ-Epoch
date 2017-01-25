@@ -14,7 +14,6 @@ sched_antiTP = {
 	private ["_lastpos","_lastheight","_lasttime","_lastVehicle","_debug","_curpos","_distance","_curtime","_difftime",
 		"_curheight","_speed","_topSpeed","_terrainHeight","_safetyVehicle","_curPos"];
 
-	_antihack = _this select 0;
 	_lastpos = _this select 1;
 	_lastheight = _this select 2;
 	_lasttime = _this select 3;
@@ -63,6 +62,6 @@ sched_antiTP = {
 		};
 	};
 
-	[_antihack, _lastpos, _lastheight, _lasttime, _lastVehicle, _debug]
+	["", _lastpos, _lastheight, _lasttime, _lastVehicle, _debug]
 };
  
