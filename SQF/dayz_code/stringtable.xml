@@ -16875,7 +16875,7 @@
 		<Key ID="str_salvage_safezone">
 			<English>You cannot salvage parts in a safe zone</English>
 			<Spanish>No se pueden recuperar piezas en una zona segura</Spanish>
-			<Russian>Вы не можете спасти детали в безопасной зоне</Russian>
+			<Russian>Вы не можете снять детали в безопасной зоне</Russian>
 			<French>Vous ne pouvez pas récupérer des pièces dans une zone sécurisée</French>
 			<Czech>Nemůžete zachránit díly v bezpečné zóně</Czech>
 			<German>Du kannst in einer Safezone keine Teile demontieren</German>
