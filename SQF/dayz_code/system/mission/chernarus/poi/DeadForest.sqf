@@ -361,4 +361,4 @@
 	["Body2",[8295.9268,3044.8689,1.9073486e-006],-132.61189],
 	["BRDMWreck",[8295.1846,3038.5232,2.3365021e-005],-69.078674],
 	["Land_Ind_Workshop01_01",[8398.0586,3012.748,1.2397766e-005],98.278824]
-],false,false,false] call fnc_spawnObjects;
+],false,false,true] call fnc_spawnObjects;

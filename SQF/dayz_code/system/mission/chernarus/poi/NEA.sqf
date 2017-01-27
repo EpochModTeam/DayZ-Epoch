@@ -389,4 +389,4 @@
 	["MAP_t_betula2w",[11906.236,12677.297,-3.0517578e-005],0],
 	["Land_Mil_Barracks_i",[12572.636,12497.678,6.1035156e-005],-3.3692484],
 	["Land_Ind_Workshop01_01",[11836.992,12685.103,7.6293945e-005],-71.381462]
-],false,false,false] call fnc_spawnObjects;
+],false,false,true] call fnc_spawnObjects;
