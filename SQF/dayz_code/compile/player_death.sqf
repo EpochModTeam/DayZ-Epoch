@@ -1,4 +1,4 @@
-private ["_ammo","_body","_distance","_infected","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck"];
+private ["_ammo","_body","_distance","_infected","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method"];
 
 if (deathHandled) exitWith {};
 deathHandled = true;
@@ -113,7 +113,7 @@ if (visibleMap) then {openMap false;};
 
 disableUserInput true;
 
-_id = [_body,20,true,_deathPos] call player_alertZombies;
+[_body,20,true,_deathPos] call player_alertZombies;
 if (dayz_soundMuted) then {call player_toggleSoundMute;}; // hide icon before fadeSound
 0.1 fadeSound 0;
 
