@@ -1,9 +1,9 @@
 private ["_cursorTarget","_onLadder","_isWater","_alreadyRemoving","_characterID","_objectID","_objectUID","_ownerArray","_dir",
 	"_realObjectStillThere","_upgrade","_entry","_parent","_requiredParts","_requiredTools","_model","_toolsOK","_displayname",
-	"_whpos","_i","_wh","_object","_vector","_dis","__FILE__","_puid","_variables"];
+	"_whpos","_wh","_object","_vector","_dis","_puid","_variables"];
 
 
-_cursorTarget = _this select 3;
+_cursorTarget = _this;
 
 // ArmaA2 bug workaround: sometimes the object is null
 if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
@@ -13,9 +13,7 @@ if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
 
 if(isNull _cursorTarget) exitWith { localize "str_disassembleNoOption" call dayz_rollingMessages; };
 
-//Remove action Menu
-player removeAction s_player_disassembly;
-s_player_disassembly = -1;
+if (player getVariable["alreadyBuilding",0] == 1) exitWith { localize "str_upgradeInProgress" call dayz_rollingMessages; };
 
 //Normal blocked stuff
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;

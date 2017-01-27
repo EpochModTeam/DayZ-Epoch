@@ -414,7 +414,7 @@ while {1 == 1} do {
 	_stop = diag_tickTime;
 	/*
 	if ((diag_tickTime - _timerMonitor) > 60) then {
-		diag_log format ["Loop Monitor - Spawn2: %1, DA: %2, UA: %3, SA: %4",(_stop - _start),(diag_tickTime - (player getVariable "damageActions")),(diag_tickTime - (player getVariable "upgradeActions")),(diag_tickTime - (player getVariable "selfActions"))];
+		diag_log format ["Loop Monitor - Spawn2: %1, DA: %2, SA: %3",(_stop - _start),(diag_tickTime - (player getVariable "damageActions")),(diag_tickTime - (player getVariable "selfActions"))];
 		_timerMonitor = diag_ticktime;
 	};
 	*/

@@ -15,18 +15,13 @@ private ["_cursorTarget","_type","_class","_requiredTools","_requiredParts","_up
 	"_upgradeClass","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_objectID","_objectUID",
 	"_ownerArray","_ownerPasscode","_dir","_vector","_object","_puid","_clanArray","_wh","_variables"];
 
-//systemchat str _this;
-
-_cursorTarget = _this select 3;
+_cursorTarget = _this;
 // ArmaA2 bug workaround: sometimes the object is null
 if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
     _cursorTarget = nearestObjects [ player modelToWorld [0,1.5,0] , ["DZ_buildables","BuiltItems"], 1.5];
     _cursorTarget = if (count _cursorTarget == 0) then { objNull } else { _cursorTarget select 0 };
 };
 if (isNull _cursorTarget) exitWith {};
-
-player removeAction s_player_building;  
-s_player_building = -1;
 
 _type = typeof _cursorTarget;
 _class = configFile >> "CfgVehicles" >> _type;
@@ -131,8 +126,7 @@ _object setVariable ["characterID",_characterID,true];
 
 //remove old object
 deleteVehicle _cursorTarget;
-_activatingPlayer = player;
-PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
+PVDZ_obj_Destroy = [_objectID,_objectUID,player];
 publicVariableServer "PVDZ_obj_Destroy";
 
 // create a weaponholder with dismissed parts

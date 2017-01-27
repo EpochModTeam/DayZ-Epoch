@@ -7,7 +7,7 @@
 
 private ["_isMedic","_cursorTarget","_item","_classname","_displayname","_requiredTools","_requiredParts","_onLadder","_isWater","_upgradeParts","_startMaintenance","_dis","_sfx","_started","_finished","_animState","_isRefuel"];
 
-_cursorTarget = _this select 3;
+_cursorTarget = _this;
 
 // ArmaA2 bug workaround: sometimes the object is null
 if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
@@ -19,9 +19,9 @@ if(isNull _cursorTarget) exitWith {
     localize "str_maintenanceNoOption" call dayz_rollingMessages;
 };
 
-//Remove action Menu
-player removeAction s_player_maintenance;
-s_player_maintenance = -1;
+if (player getVariable["alreadyBuilding",0] == 1) exitWith {
+    localize "str_upgradeInProgress" call dayz_rollingMessages;
+};
 
 //Item
 _item = typeof _cursorTarget;

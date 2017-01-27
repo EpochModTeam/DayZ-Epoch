@@ -262,13 +262,6 @@ dayz_resetSelfActions = {
 };
 call dayz_resetSelfActions;
 
-dayz_resetUpgradeActions = {
-	s_player_disassembly = -1;
-	s_player_building = -1;
-	s_player_maintenance = -1;
-};
-call dayz_resetUpgradeActions;
-
 //Engineering variables
 s_player_lastTarget = objNull;
 s_player_repairActions = [];

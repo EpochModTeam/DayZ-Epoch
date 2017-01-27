@@ -9,12 +9,11 @@
 	};
 	
 */
-private ["_objclass","_cursorTarget","_item","_classname","_requiredTools","_requiredParts","_upgrade","_upgradeConfig",
+private ["_cursorTarget","_item","_classname","_requiredTools","_requiredParts","_upgrade","_upgradeConfig",
 "_upgradeDisplayname","_onLadder","_isWater","_upgradeParts","_startUpgrade","_missingPartsConfig","_textMissingParts","_dis",
 "_sfx","_ownerID","_objectID","_objectUID","_alreadyupgrading","_dir","_weapons","_magazines","_backpacks","_object",
 "_objWpnTypes","_objWpnQty","_countr","_itemName","_vector"];
 
-_objclass = _this;
 _cursorTarget = _this select 3;
 
 _item = typeof _cursorTarget;
@@ -129,11 +128,8 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	player playActionNow "Medic";
 	
 	//remove old tent
-	_activatingPlayer = player;
-	PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
+	PVDZ_obj_Destroy = [_objectID,_objectUID,player];
 	publicVariableServer "PVDZ_obj_Destroy";
-	
-	if (isServer) then { PVDZ_obj_Destroy call server_deleteObj; };
 	deleteVehicle _cursorTarget;
 	
 	// remove parts from players inventory before creation of new tent.
@@ -186,8 +182,13 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	
 	uiSleep 3;
 	
-	//publish new tent
-	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[_weapons,_magazines,_backpacks]];
+	//publish new tent	
+	if (DZE_permanentPlot) then {
+		_object setVariable ["ownerPUID",dayz_playerUID,true];
+		PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos, dayz_playerUID],[_weapons,_magazines,_backpacks]];
+	} else {
+		PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[_weapons,_magazines,_backpacks]];
+	};
 	publicVariableServer "PVDZ_obj_Publish";
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 
