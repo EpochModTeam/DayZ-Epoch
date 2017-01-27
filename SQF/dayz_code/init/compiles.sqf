@@ -603,6 +603,7 @@ if (!isDedicated) then {
 		death_1 = format["<t size='.8' align='left' color='#a81e13'>%1 </t><img align='left' image='%2'/><t size='.8' align='left' color='#3FB07D'> %3 (%4m)</t>",_playerName,_icon,_sourceName,_distance];
 		death_1_time = diag_ticktime;
 		
+		//Prevent covering vehicle health bar HUD
 		_offset = if (vehicle player == player) then {0} else {0.1};
 		[(format ["%1<br />%2<br />%3<br />%4",death_1,death_2,death_3,death_4]),(safeZoneX + _offset),safeZoneY,10,0,0,8000] spawn BIS_fnc_dynamicText;
 	};

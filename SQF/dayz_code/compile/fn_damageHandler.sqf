@@ -239,7 +239,7 @@ if (_damage > 0.4) then {
     if (!(player == _source) && (_isPlayer or (_isMan && !_isZombieHit))) then { //Scale shots from AI units the same as shots from players
         _scale = _scale + 800;
         if (_isHeadHit) then {
-            _scale = _scale + 500;
+            _scale = _scale + 1180;
         };
     };
 	
