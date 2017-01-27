@@ -243,7 +243,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_text = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
 	_isPlant = _typeOfCursorTarget in Dayz_plants;
 	_istypeTent = (_cursorTarget isKindOf "TentStorage_base") or (_cursorTarget isKindOf "IC_Tent");
-	_upgradeItems = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4"];
+	_upgradeItems = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DesertTentStorage","DesertTentStorage0","DesertTentStorage1","DesertTentStorage2","DesertTentStorage3"];
 	_characterID = _cursorTarget getVariable ["CharacterID","0"];
 	
 	if (DZE_permanentPlot) then {
@@ -427,10 +427,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		//upgrade items
 		if (_typeOfCursorTarget in _upgradeItems) then {
 			if (s_player_upgradestorage < 0) then {
-				if (isText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "Upgrade" >> "create")) then {
-					_displayName = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
-					s_player_upgradestorage = player addAction [format[localize "STR_EPOCH_UPGRADE",_displayName], "\z\addons\dayz_code\actions\object_upgradeStorage.sqf",_cursorTarget, 0, false, true];
-				};
+				_displayName = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
+				s_player_upgradestorage = player addAction [format[localize "STR_EPOCH_UPGRADE",_displayName], "\z\addons\dayz_code\actions\object_upgradeStorage.sqf",_cursorTarget, 0, false, true];
 			};
 		} else {
 			player removeAction s_player_upgradestorage;
