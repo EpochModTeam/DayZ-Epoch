@@ -438,10 +438,10 @@ if (dayz_townGenerator) then {execVM "\z\addons\dayz_server\system\lit_fireplace
 			_unit = _x select 0;
 			_source = _x select 1;
 			if (((!(isNil {_source})) && {!(isNull _source)}) && {((_source isKindOf "CAManBase") && {owner _unit != owner _source})}) then {
-				diag_log format ["P1ayer %1 hit by %2 %3 from %4 meters",
-					_unit call fa_plr2Str, _source call fa_plr2Str, toString (_x select 2), _x select 3];
+				diag_log format ["P1ayer %1 hit by %2 %3 from %4 meters in %5 for %6 damage",
+					_unit call fa_plr2Str, _source call fa_plr2Str, toString (_x select 2), _x select 3, toString (_x select 4), _x select 5];
 				if (_unit getVariable ["processedDeath",0] == 0) then {
-					_unit setVariable ["attacker", name _source];
+					if (alive _source) then {_unit setVariable ["attacker", name _source];};
 					_unit setVariable ["noatlf4", diag_ticktime]; // server-side "not in combat" test, if player is not already dead
 				};
 			};

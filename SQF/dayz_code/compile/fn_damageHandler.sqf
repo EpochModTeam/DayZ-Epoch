@@ -163,27 +163,24 @@ if (_unit == player) then {
 		};
 	};
 
-    //Log to server :-( OverProcessing really not needed.
-    if (DZE_ServerLogHits && {!local _source} && {_isMan}) then {
+	//Log to server. Useful for detecting damage and ammo cheats.
+	if (DZE_ServerLogHits && {!local _source} && {_isMan} && {!_isZombieHit} && {diag_ticktime-(_source getVariable["lastloghit",0]) > 2}) then {
 		_wpst = weaponState _source;
-        if (diag_ticktime-(_source getVariable ["lastloghit",0])>2) then {
-            _source setVariable ["lastloghit",diag_ticktime];
-            _sourceDist = round(_unit distance _source);
-            _sourceWeap = switch (true) do {
-                case (_isZombieHit) : { _ammo };
-                case (_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship") : { format ["in %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
-                case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
-                case (["Horn", currentWeapon _source] call fnc_inString) : {"with suspicious vehicle "+str((getposATL _source) nearEntities [["Air", "LandVehicle", "Ship"],5])};
-                case (["Melee", _wpst select 0] call fnc_inString) : { format ["with %2%1",_wpst select 0, if (_sourceDist>6) then {"suspicious weapon "} else {""}] }; 
-                case ((_wpst select 0 == "") AND {(_wpst select 4 == 0)}) : { format ["with %1/%2 suspicious", primaryWeapon _source, _ammo] };
-                case (_wpst select 0 != "") : { format ["with %1/%2 <ammo left:%3>", _wpst select 0, _ammo, _wpst select 4] };
-                default { "with suspicious weapon" };
-            };
-            if (!_isZombieHit) then { // don't log any zombie wounds, even from remote zombies
-                PVDZ_sec_atp = [_unit, _source, toArray _sourceWeap, _sourceDist]; //Send arbitrary string as array to allow stricter publicVariableVal.txt filter
-                publicVariableServer "PVDZ_sec_atp";
-            };
-        };
+		_source setVariable ["lastloghit",diag_ticktime];
+		_sourceDist = round(_unit distance _source);
+		_sourceWeap = switch (true) do {
+			case (_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship") : { format ["in %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
+			case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
+			case (["Horn", currentWeapon _source] call fnc_inString) : {"with suspicious vehicle "+str((getposATL _source) nearEntities [["Air", "LandVehicle", "Ship"],5])};
+			case (["Melee", _wpst select 0] call fnc_inString) : { format ["with %2%1",_wpst select 0, if (_sourceDist>6) then {"suspicious weapon "} else {""}] }; 
+			case ((_wpst select 0 == "") AND {(_wpst select 4 == 0)}) : { format ["with %1/%2 suspicious", primaryWeapon _source, _ammo] };
+			case (_wpst select 0 != "") : { format ["with %1/%2 <ammo left:%3>", _wpst select 0, _ammo, _wpst select 4] };
+			default { "with suspicious weapon" };
+		};
+		
+		//Damage values over 999,999 will kick for PV value restriction (e+). These should not be possible for legitimate players.
+		PVDZ_sec_atp = [_unit, _source, toArray _sourceWeap, _sourceDist, toArray _hit, str _damage]; //Send arbitrary string as array to allow stricter publicVariableVal.txt filter
+		publicVariableServer "PVDZ_sec_atp";
     };
 	
 	dayz_lastDamageSource = switch (true) do {
@@ -202,9 +199,6 @@ if (_unit == player) then {
 
 //Ignore none part dmg. Exit after processing humanity hit
 if (_hit == "" && _ammo != "Crash") exitWith { 0 };
-
-//Pure base blood damage
-_scale = 200;
 
 //Ammo Type Setup
 _type = switch true do {
@@ -228,6 +222,9 @@ if (_damage > 0.1) then {
     };
 };
 
+//Pure base blood damage
+_scale = 200;
+
 if (_damage > 0.4) then {    
 	//Scale damage based on headhits.
     if (_isHeadHit) then {
@@ -239,7 +236,7 @@ if (_damage > 0.4) then {
     if (!(player == _source) && (_isPlayer or (_isMan && !_isZombieHit))) then { //Scale shots from AI units the same as shots from players
         _scale = _scale + 800;
         if (_isHeadHit) then {
-            _scale = _scale + 1180;
+            _scale = _scale + 1180; //Based on 12k blood for DMR headshot at 500m
         };
     };
 	
@@ -252,7 +249,7 @@ if (_damage > 0.4) then {
 	//Zombies
 		case 3: {_scale = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "damageScale"); if (dayz_DamageMultiplier > 1) then {_scale = _scale * dayz_DamageMultiplier;};};
 	//RunOver
-		case 4: {_scale = _scale - 150};
+		case 4: {_scale = _scale - 50}; //Based on 12k blood for run over with SUV at 70km/h
 	//Dragged
 		case 5: {_scale = 25};
 	//Crash
