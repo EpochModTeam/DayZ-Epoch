@@ -12,6 +12,8 @@ Note: Both server and client should be updated to current A2OA stable 1.63.13112
 
 5. Launch the server with `-mod=@DayZ_Epoch;@DayZ_Epoch_Server;`. See the *.bat files in Config-Examples.
 
+6. It may be necessary to forward [[these ports](https://community.bistudio.com/wiki/Arma_3_Dedicated_Server#Port_Forwarding)] in the server's software and hardware firewalls.
+
 ##Basic Upgrading Guide
 
 1. Perform steps #1 and #2 in the basic install guide, above. Be sure to update to the new MPMission, dayz_server, BattlEye filters and HiveExt.dll too.
