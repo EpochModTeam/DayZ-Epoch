@@ -706,7 +706,7 @@ if (!isDedicated) then {
 	DZE_Quarantine = false;
 	DZE_InRadiationZone = false;
 	DZE_myVehicle = objNull;
-	dayz_groupNameTags = true;
+	dayz_groupNameTags = (profileNamespace getVariable ["streamerMode",0] == 0); //If streamer mode is on then hide name tags at startup. Toggle with Windows key.
 	dayz_minusDownTime = 0;
 	dayz_lastCodeFail = 0;
 };
