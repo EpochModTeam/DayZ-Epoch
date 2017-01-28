@@ -125,11 +125,15 @@ if (_IsNearVehicle >= 1) then {
 						// Current charID
 						_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
 
+						[_newclassname,objNull] call fn_waitForObject;
+						dze_waiting = nil;
 						PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,true,_objectCharacterID,player];
-						publicVariableServer  "PVDZE_veh_Upgrade";
+						publicVariableServer "PVDZE_veh_Upgrade";
 
 						localize "STR_EPOCH_VEHUP_SUCCESS" call dayz_rollingMessages;
-						{player reveal _x;} count (player nearEntities [["LandVehicle"],10]);
+						
+						//Wait for hive to finish spawning vehicle. Prevents dupe via player queuing multiple upgrades.
+						waitUntil {!isNil "dze_waiting"};
 					};
 				}
 				else {

@@ -11,7 +11,11 @@ _activatingPlayer =  _this select 5;
 _characterID = _keySelected;
 
 _isOK = isClass(configFile >> "CfgVehicles" >> _class);
-if(!_isOK || isNull _object) exitWith { diag_log ("HIVE-pv3: Vehicle does not exist: "+ str(_class)); };
+if (!_isOK || isNull _object) exitWith {
+	diag_log ("HIVE-pv3: Vehicle does not exist: "+ str(_class));
+	dze_waiting = "fail";
+	(owner _activatingPlayer) publicVariableClient "dze_waiting";
+};
 
 #ifdef OBJECT_DEBUG
 diag_log ("PUBLISH: Attempt " + str(_object));
@@ -75,7 +79,11 @@ _key call server_hiveWrite;
 		};
 	};
 
-	if(!_done) exitWith { diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
+	if (!_done) exitWith {
+		diag_log("CUSTOM: failed to get id for : " + str(_uid));
+		dze_waiting = "fail";
+		(owner _activatingPlayer) publicVariableClient "dze_waiting";
+	};
 
 	// add items from previous vehicle here
 	_weapons = 		getWeaponCargo _object;
@@ -141,6 +149,9 @@ _key call server_hiveWrite;
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.
 	PVDZE_veh_Init = _object;
 	publicVariable "PVDZE_veh_Init";
+	
+	dze_waiting = "success";
+	(owner _activatingPlayer) publicVariableClient "dze_waiting";
 	
 	diag_log ("PUBLISH: " + str(_activatingPlayer) + " Upgraded " + (_class) + " with ID " + str(_uid));
 };
