@@ -17,13 +17,12 @@ _method = _this select 9;
 //Mark player as dead so we bypass the ghost system
 dayz_died set [count dayz_died, _playerID];
 
-_newObject setVariable ["processedDeath",diag_tickTime];
 _newObject setVariable ["bodyName",_playerName,true];
 _pos = getPosATL _newObject;
 
 // force to follow the terrain slope in sched_corpses.sqf
-if (_pos select 2 < 0.1) then {_pos set [2,0];};
-_newObject setVariable ["deathPos",_pos];
+//if (_pos select 2 < 0.1) then {_pos set [2,0];};
+//_newObject setVariable ["deathPos",_pos];
 
 if (typeName _minutes == "STRING") then {_minutes = parseNumber _minutes;};
 
