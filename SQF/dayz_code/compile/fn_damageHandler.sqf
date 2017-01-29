@@ -184,7 +184,7 @@ if (_unit == player) then {
 		};
 		
 		//Damage values over 999,999 will kick for PV value restriction (e+). These should not be possible for legitimate players.
-		PVDZ_sec_atp = [_unit, _source, toArray _sourceWeap, _sourceDist, toArray _hit, str _damage]; //Send arbitrary string as array to allow stricter publicVariableVal.txt filter
+		PVDZ_sec_atp = [_unit, _source, toArray _sourceWeap, _sourceDist, _hit, str _damage]; //Send arbitrary string as array to allow stricter publicVariableVal.txt filter
 		publicVariableServer "PVDZ_sec_atp";
     };
 	
