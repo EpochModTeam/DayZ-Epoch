@@ -437,7 +437,7 @@ if (dayz_townGenerator) then {execVM "\z\addons\dayz_server\system\lit_fireplace
 		default { // player hit
 			_unit = _x select 0;
 			_source = _x select 1;
-			if (((!(isNil {_source})) && {!(isNull _source)}) && {((_source isKindOf "CAManBase") && {owner _unit != owner _source})}) then {
+			if (!isNull _source) then {
 				diag_log format ["P1ayer %1 hit by %2 %3 from %4 meters in %5 for %6 damage",
 					_unit call fa_plr2Str, _source call fa_plr2Str, toString (_x select 2), _x select 3, toString (_x select 4), _x select 5];
 				if (_unit getVariable ["processedDeath",0] == 0) then {
