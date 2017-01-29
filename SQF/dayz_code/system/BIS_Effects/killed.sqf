@@ -21,7 +21,7 @@ if (!DZE_NoVehicleExplosions) then {
 		};
 	};
 } else {
-	_isVeh = (_v iskindof "helicopter" || _v iskindof "plane" || _v iskindof "tank" || _v iskindof "car" || _v iskindof "ship");
+	_isVeh = ({_v isKindOf _x} count ["Helicopter","Plane","Tank","Car","Ship"] > 0);
 	if (_isVeh && {player in (crew _v)}) then {
 		["Eject", _v] call BIS_Effects_globalEvent;
 	};

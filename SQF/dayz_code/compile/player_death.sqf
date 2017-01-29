@@ -54,7 +54,7 @@ if (!isNull _source) then {
 	_sourceWeapon = currentWeapon _source;
 	_sourceWeapon = switch true do {
 		case (_ammo in ["PipeBomb","Mine","MineE"]): {_ammo};
-		case (_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship"): {_sourceVehicleType};
+		case ({_sourceVehicleType isKindOf _x} count ["LandVehicle","Air","Ship"] > 0): {_sourceVehicleType};
 		case (_sourceWeapon == "Throw"): {(weaponState _source) select 3};
 		default {_sourceWeapon};
 	};

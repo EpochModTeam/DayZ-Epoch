@@ -165,7 +165,7 @@ if (_unit == player) then {
 	};
 	
 	//(vehicle _source != _source) does not work to detect if source unit is in a vehicle in HandleDamage EH
-	_isVehicle = (_sourceVehicleType isKindOf "LandVehicle" or _sourceVehicleType isKindOf "Air" or _sourceVehicleType isKindOf "Ship");
+	_isVehicle = ({_sourceVehicleType isKindOf _x} count ["LandVehicle","Air","Ship"] > 0);
 
 	//Log to server. Useful for detecting damage and ammo cheats.
 	if (DZE_ServerLogHits && {!_isLocal} && {!_isZombieHit} && {_isMan or _isVehicle} && {diag_ticktime-(_source getVariable["lastloghit",0]) > 2}) then {
@@ -206,8 +206,8 @@ if (_hit == "" && _ammo != "Crash") exitWith { 0 };
 
 //Ammo Type Setup
 _type = switch true do {
-    case ((_ammo isKindof "Grenade") or (_ammo isKindof "ShellBase") or (_ammo isKindof "TimeBombCore") or (_ammo isKindof "BombCore") or (_ammo isKindof "MissileCore") or (_ammo isKindof "RocketCore") or (_ammo isKindof "FuelExplosion") or (_ammo isKindof "GrenadeBase")): { 1 };
-    case ((_ammo isKindof "B_127x107_Ball") or (_ammo isKindof "B_127x99_Ball")):  { 2 };
+    case ({_ammo isKindOf _x} count ["Grenade","ShellBase","TimeBombCore","BombCore","MissileCore","RocketCore","FuelExplosion","GrenadeBase"] > 0): { 1 };
+	case ((_ammo isKindof "B_127x107_Ball") or (_ammo isKindof "B_127x99_Ball")):  { 2 };
 	case (_isZombieHit): { 3 };
 	case (_ammo == "RunOver"): { 4 };
 	case (_ammo == "Dragged"): { 5 };
