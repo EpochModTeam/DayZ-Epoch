@@ -1,10 +1,9 @@
-private ["_isWreck","_maxControlledZombies","_looted","_zombied","_doNothing","_spawnZedRadius","_serverTime","_age","_nearbyBuildings","_position","_spawnableObjects","_speed","_radius","_maxlocalspawned","_maxWeaponHolders","_currentWeaponHolders","_maxtoCreate","_inVehicle","_isAir","_isLand","_isSea","_Controlledzeddivided","_totalcrew","_nearby","_type","_config","_canSpawn","_dis","_checkLoot","_islocal","_bPos","_zombiesNum"];
+private ["_isWreck","_maxControlledZombies","_looted","_zombied","_doNothing","_spawnZedRadius","_serverTime","_age","_nearbyBuildings","_position","_speed","_radius","_maxlocalspawned","_maxWeaponHolders","_currentWeaponHolders","_maxtoCreate","_inVehicle","_isAir","_isLand","_isSea","_Controlledzeddivided","_totalcrew","_nearby","_type","_config","_canSpawn","_dis","_checkLoot","_islocal","_bPos","_zombiesNum"];
 _age = -1;
 //_nearbyBuildings = [];
 _position = [player] call FNC_GetPos;
-_spawnableObjects = ["building", "CrashSite", "IC_Fireplace1", "IC_DomeTent", "IC_Tent"];
 _speed = speed (vehicle player);
-_radius = 300; //150*0.707; Pointless Processing (106.5)
+_radius = 200; //150*0.707; Pointless Processing (106.5)
 _spawnZedRadius = 20;
 
 /*
@@ -99,8 +98,10 @@ if (_doNothing) exitwith {};
 		_maxlocalspawned, _maxControlledZombies, _radius, round diag_fpsmin,dayz_currentGlobalZombies, 
 		dayz_maxGlobalZeds, dayz_CurrentNearByZombies, dayz_maxNearByZombies, _currentWeaponHolders,_maxWeaponHolders]);
 };*/
-	
-_nearby = nearestObjects [_position, _spawnableObjects,_radius];
+
+// nearObjects is faster than nearestObjects when sorting by distance isn't needed
+// "Building" includes House and all of its child classes (Crashsite, IC_Fireplace1, IC_Tent, etc.)
+_nearby = _position nearObjects ["Building",_radius];
 _maxlocalspawned = _maxlocalspawned max floor(_maxControlledZombies*.8);
 if (_maxlocalspawned > 0) then { _spawnZedRadius = _spawnZedRadius * 3; };
 

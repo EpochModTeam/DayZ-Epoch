@@ -17,7 +17,7 @@ _findNearestVehicles = _towTruck nearEntities [["Car","Motorcycle"],10];
 _findNearestVehicle = [];
 {
 	if (alive _x && _towTruck != _x) then {
-		if([_x,_towTruck] call fnc_isInsideBuilding2) then {
+		if([_x,_towTruck] call fnc_isInsideBuilding) then {
 			_findNearestVehicle set [(count _findNearestVehicle),_x];
 		};
 	};
@@ -77,7 +77,7 @@ if(_IsNearVehicle >= 1) then {
 	if (_finished) then {
 		
 		if((sizeOf typeOf _vehicle) <= _allowedSize) then {
-			if([_vehicle,_towTruck] call fnc_isInsideBuilding2 && ((vectorUp _vehicle) select 2) > 0.5) then {
+			if([_vehicle,_towTruck] call fnc_isInsideBuilding && ((vectorUp _vehicle) select 2) > 0.5) then {
 				if(typeOf _towTruck == "TOW_DZE" ) then {
 					_vehicle attachTo [_towTruck,[1.3,-2,2.3]];
 					_towTruck setVariable ["DZEinTow", true, true];

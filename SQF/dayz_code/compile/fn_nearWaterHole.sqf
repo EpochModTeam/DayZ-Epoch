@@ -21,6 +21,6 @@ _nearWaterHole = [false,false];
 	} count (nearestObjects [_x, [], 1]);
 	
 	if (_nearWaterHole select 0) exitWith {};
-} forEach (nearestObjects [player, ["waterHoleProxy"], 50]);
+} forEach (player nearObjects ["waterHoleProxy",50]);
 
 _nearWaterHole
