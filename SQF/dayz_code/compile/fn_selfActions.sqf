@@ -4,7 +4,6 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-if (dayz_actionInProgress) exitWith {};
 private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names",
 "_hasKey","_oldOwner","_hasAttached","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild",
 "_player_lockUnlock_crtl","_displayName","_hasIgnitors","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached",

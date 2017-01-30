@@ -64,7 +64,7 @@ _maintain = {
 	_wealth = player getVariable[Z_MoneyVariable,0];
 
 	if (Z_SingleCurrency) then {
-		_enoughMoney = if (_wealth >= _amount) then { true } else { false };
+		_enoughMoney = (_wealth >= _amount);
 	} else {
 		Z_Selling = false; // Initialize gem currency before Z_canAfford.
 		_moneyInfo = _amount call Z_canAfford;

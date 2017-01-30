@@ -6,7 +6,7 @@ _config = configFile >> "CfgWeapons" >> _item;
 _droppedType = getText (_config >> "droppeditem");
 
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-if (_onLadder) exitWith { localize "str_player_21" call dayz_rollingMessages; dayz_actionInProgress = false; };
+if (_onLadder) exitWith { localize "str_player_21" call dayz_rollingMessages; };
 if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 dayz_actionInProgress = true;
 

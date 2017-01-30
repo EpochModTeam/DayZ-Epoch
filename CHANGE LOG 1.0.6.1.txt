@@ -20,7 +20,9 @@
 [CHANGED] AntiTP and scheduled security are now fully disabled when dayz_antihack=0. #1816
 [CHANGED] Changed default value for the variable dayz_bleedingeffect to 2 (blood particle effect only) due to negative FPS impact. Set to 3 to enable blood stains again. #1816
 [CHANGED] Group icons have been moved to a slower loop and the group system is disabled by default. See configVariables.sqf to enable. #1816
-[CHANGED] Flies are now disabled by default due to negative FPS impact. See init.sqf to enable. #1816
+[CHANGED] Flies now spawn ten minutes after death instead of right away. Flies are also disabled by default due to negative FPS impact. See init.sqf to enable. #1816
+[CHANGED] Increased head shot damage for normal hits (non-zombie and non-melee)
+[CHANGED] Slightly increased damage from vehicle run over
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper
@@ -71,6 +73,7 @@
 [FIXED] Bandit1_DZ and Bandit2_DZ were the same. Bandit1_DZ is back to the normal non-camo skin now. #1874 @DeVloek
 [FIXED] If a player force kills their game immediately after dying their body will no longer disappear. #1825 @looter809
 [FIXED] Some AI behavior was broken due to RadioProtocolEmpty. Unfortunately this reintroduces group chat spam.
+[FIXED] You can no longer pack your tent while sleeping.
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade

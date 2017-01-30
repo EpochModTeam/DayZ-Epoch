@@ -103,7 +103,7 @@ _enoughMoney = false;
 _moneyInfo = [false, [], [], [], 0];
 
 if (Z_SingleCurrency) then {
-	_enoughMoney = if (_wealth >= _priceToBuy) then { true } else { false };
+	_enoughMoney = (_wealth >= _priceToBuy);
 } else {
 	_moneyInfo = _priceToBuy call Z_canAfford;
 	_enoughMoney = _moneyInfo select 0;
@@ -212,7 +212,7 @@ if (_enoughMoney) then {
 			if (_x select 1 == "trade_weapons") then {
 				_count = 0;
 				while {_count < (_x select 9)} do {
-					_hasPrimary = if (primaryWeapon player != "") then {true} else {false};
+					_hasPrimary = (primaryWeapon player != "");
 					if (_hasPrimary && getNumber (configFile >> "CfgWeapons" >> (_x select 0) >> "type") == 1) then {
 						dayz_onBack = _x select 0; //Add to back
 					} else {

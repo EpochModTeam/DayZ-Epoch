@@ -74,7 +74,6 @@ if (_hasInput) then {
 		player playActionNow "PutDown";
 
 		//Hack to get craft menu to use build needs a good tidy up
-		[_orignalClass,"Build","ItemActions"] spawn player_build; 
-		dayz_actionInProgress = true;
+		[_orignalClass,"Build","ItemActions"] spawn player_build;
 	};
 };

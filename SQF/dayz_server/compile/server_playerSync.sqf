@@ -151,7 +151,7 @@ if (count _this > 4) then { //calling from player_onDisconnect
 	};	
 	if (_isInVehicle) then {
 		//if the player object is inside a vehicle lets eject the player
-		_relocate = if ((vehicle _character isKindOf "Air") && (_charPos select 2 > 1.5)) then {true} else {false};
+		_relocate = ((vehicle _character isKindOf "Air") && (_charPos select 2 > 1.5));
 		_character action ["eject", vehicle _character];
 		
 		// Prevent relog in parachute, heli or plane above base exploit to get inside

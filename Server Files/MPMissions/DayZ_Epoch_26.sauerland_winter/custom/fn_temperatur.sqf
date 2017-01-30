@@ -23,7 +23,7 @@ _hasfireffect = false;
 _isinbuilding = false;
 _isinvehicle = false;
 
-_raining = if(rain > 0) then {true} else {false};
+_raining = (rain > 0);
 _sunrise = call world_sunRise;
 
 //POSITIV EFFECTS

@@ -44,7 +44,7 @@ if (_byPassChecks == "") then { _byPassChecks = "BaseItems" };
 if (_ghost == "") then { _ghost = _classname; };
 
 //Remove tents and stashes from new collision system until we find a better way then build tent for hiding items.
-_isCollisionBypass = if (isText (configFile >> _isClass >> _item >> _classType >> _action >> "bypassCollision")) then { true } else { false };
+_isCollisionBypass = (isText (configFile >> _isClass >> _item >> _classType >> _action >> "bypassCollision"));
 
 _text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _keepOnSlope = 0 == (getNumber (configFile >> "CfgVehicles" >> _classname >> "canbevertical"));

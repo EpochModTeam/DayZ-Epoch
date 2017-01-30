@@ -1,3 +1,6 @@
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
+
 private ["_playArray","_lastRest","_blood","_timesincedrink","_bloodinc","_Moves","_sleepArray","_animState","_started","_finished","_timer","_i","_r","_cureAttempt","_isAsleep","_cureChance","_infectedStatus","_randomamount","_isOwner","_tent"];
 //_timesincedrink = time - dayz_lastDrink;
 //_bloodinc =100; Removed for now(untested) due to it not needed yet
@@ -11,7 +14,7 @@ player playmove "AidlPpneMstpSnonWnonDnon_SleepC_sleep";
 
 _sleeping = player getVariable ["sleeping",false];
 
-if (_sleeping) exitwith {};
+if (_sleeping) exitWith {dayz_actionInProgress = false;};
 
 player setVariable ["sleeping",true];
 	
@@ -105,6 +108,7 @@ if (r_interrupt) then {
 };
 
 player setVariable ["sleeping",false];
+dayz_actionInProgress = false;
 
 //Removed due to player sync returning []
 //PVDZ_plr_Save = [player,nil,true,dayz_playerAchievements];

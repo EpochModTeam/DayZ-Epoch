@@ -1,5 +1,5 @@
 scriptName "Functions\misc\fn_damageActions.sqf";
-if (dayz_actionInProgress) exitWith {};
+
 #include "\z\addons\dayz_code\util\array.hpp";
 
 /***********************************************************

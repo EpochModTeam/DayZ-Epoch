@@ -16,7 +16,7 @@ a_player_boil = true;
 player removeAction s_player_boil;
 //s_player_boil = -1;
 
-//_bottleInfected = if ("ItemWaterBottleInfected" in magazines player) then {true} else {false};
+//_bottleInfected = ("ItemWaterBottleInfected" in magazines player);
 
 /* //canteens are metal, we only use canteens in Epoch
 _hastinitem = false;
@@ -25,7 +25,7 @@ _hastinitem = false;
     if (_x in magazines player) exitWith {_hastinitem = true;};
 } count boil_tin_cans;
 
-if (!_hastinitem) exitWith {format[localize "str_player_31",_tintext,localize "str_player_31_fill"] call dayz_rollingMessages; a_player_boil = false;};
+if (!_hastinitem) exitWith {format[localize "str_player_31",_tintext,localize "str_player_31_fill"] call dayz_rollingMessages; a_player_boil = false; dayz_actionInProgress = false;};
 */
 if (_qty > 0) then {
 	player playActionNow "Medic";
