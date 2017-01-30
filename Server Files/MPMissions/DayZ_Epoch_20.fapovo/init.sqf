@@ -16,7 +16,6 @@ dayz_POIs = false; //Adds Point of Interest map additions (negatively impacts FP
 dayz_infectiousWaterholes = false; //Randomly adds some bodies, graves and wrecks by ponds (negatively impacts FPS)
 dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
-dayz_enableFlies = false; // Enable flies on dead bodies (negatively impacts FPS).
 
 //DayZMod presets
 dayz_presets = "Custom"; //"Custom","Classic","Vanilla","Elite"
@@ -33,6 +32,7 @@ if (dayz_presets == "Custom") then {
 	dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked
 	dayz_nutritionValuesSystem = true; //true, Enables nutrition system, false, disables nutrition system.
 	dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic ItemBloodbag
+	dayz_enableFlies = false; // Enable flies on dead bodies (negatively impacts FPS).
 };
 
 //Temp settings
@@ -100,8 +100,8 @@ progressLoadingScreen 0.15;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
 progressLoadingScreen 0.25;
 call compile preprocessFileLineNumbers "server_traders.sqf";
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\fapovo.sqf"; //Add trader city objects locally on each machine early
-if (dayz_POIs && (toLower worldName == "chernarus")) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf";}; //Add POI objects locally on each machine early
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\fapovo.sqf"; //Add trader city objects locally on every machine early
+if (dayz_POIs && (toLower worldName == "chernarus")) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf";}; //Add POI objects locally on every machine early
 initialized = true;
 
 setTerrainGrid 25;

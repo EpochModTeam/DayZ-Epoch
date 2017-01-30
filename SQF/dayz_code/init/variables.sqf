@@ -424,6 +424,9 @@ if(isNil "dayz_townGenerator") then {
 if(isNil "dayz_townGeneratorBlackList") then {
 	dayz_townGeneratorBlackList = []; // Town generator will not spawn junk within 150m of these positions.
 };
+if(isNil "dayz_enableFlies") then {
+	dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
+};
 
 //Replace server individual settings with ranked settings
 if(isNil "dayz_presets") then { dayz_presets = "Vanilla"; };

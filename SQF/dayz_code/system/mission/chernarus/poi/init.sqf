@@ -1,6 +1,6 @@
 /*
-	Add POI objects locally on each machine early.
-	Do not use execVM. This must be unscheduled so it finishes spawning before the player object is moved (possibly on top of them).
+	Add POI objects locally on every machine early.
+	Do not use execVM. This must be unscheduled to finish before player_monitor.fsm and server_monitor.sqf run. (objects or player spawn on top)
 */
 
 {
