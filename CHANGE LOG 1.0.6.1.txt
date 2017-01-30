@@ -19,8 +19,9 @@
 [CHANGED] The town generator and comfrey plant spawner loops are now fully disabled when dayz_townGenerator=false; to improve client FPS. #1816
 [CHANGED] AntiTP and scheduled security are now fully disabled when dayz_antihack=0. #1816
 [CHANGED] Changed default value for the variable dayz_bleedingeffect to 2 (blood particle effect only) due to negative FPS impact. Set to 3 to enable blood stains again. #1816
-[CHANGED] Group icons have been moved to a slower loop and the group system is disabled by default. See configVariables.sqf to enable. #1816
+[CHANGED] Group icons have been moved to a separate slower loop and the group system is disabled by default. See configVariables.sqf to enable. #1816
 [CHANGED] Flies now spawn ten minutes after death instead of right away. Flies are also disabled by default due to negative FPS impact. See init.sqf to enable. #1816
+[CHANGED] SpawnCheck for loot and zombies has been lowered to 200m and switched to nearObjects instead of nearestObjects (same as 1051) for better client FPS. #1816
 [CHANGED] Increased head shot damage for normal hits (non-zombie and non-melee)
 [CHANGED] Slightly increased damage from vehicle run over
 
@@ -52,7 +53,7 @@
 [FIXED] Handling of boiled water bottles < 10 oz #1838 (Also removed the requirement to have an empty tin can to boil water) @icomrade @schwanzkopfhegel
 [FIXED] Generator inventory not saving #1831 @icomrade @schwanzkopfhegel
 [FIXED] Filling fuel barrels takes the correct amount from fuel tanks now (210 instead of 40 litres). #1834 @schwanzkopfhegel @oiad
-[FIXED] Base objects duplicating when using "take ownership" on plot pole. #1811 @BNG-Lance @Clanwarfare
+[FIXED] All base objects on plot duplicating when using "take ownership" on plot pole. #1811 @BNG-Lance @Clanwarfare
 [FIXED] Unable to sell some launchers like Javelin and Stinger which have the same classname for ammo and weapon. #1844 @ndavalos
 [FIXED] Long search delay when filling water bottles, drinking from hands and drinking from empty cans is fixed on Chernarus, Namalsk and Napf. #1835 @schwanzkopfhegel
 [FIXED] Players can not purchase a negative number of items anymore.
