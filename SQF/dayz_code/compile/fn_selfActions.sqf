@@ -619,11 +619,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		if (s_player_plot_boundary < 0 && (_allowed or (_hasAccess select 1))) then {
 			s_player_plot_boundary = player addAction [localize "STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY", "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf", "", 1, false];
 		};
-		if (DZE_permanentPlot && DZE_PlotOwnership) then {
-			if (s_player_plot_take_ownership < 0 && (_hasAccess select 0)) then {
-				s_player_plot_take_ownership = player addAction [localize "STR_EPOCH_APLOTFORLIFE_TAKE_PLOT_OWNERSHIP", "\z\addons\dayz_code\actions\plot_take_ownership.sqf", "", 1, false];
-			};
-		};
 	} else {
 		player removeAction s_player_plotManagement;
 		s_player_plotManagement = -1;
@@ -635,8 +630,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_maintain_area_preview = -1;
 		player removeAction s_player_plot_boundary;
 		s_player_plot_boundary = -1;
-		player removeAction s_player_plot_take_ownership;
-		s_player_plot_take_ownership = -1;
 	};
 	
 	if (DZE_HeliLift) then {
@@ -1025,8 +1018,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//Engineering
 	player removeAction s_player_plot_boundary;
 	s_player_plot_boundary = -1;
-	player removeAction s_player_plot_take_ownership;
-	s_player_plot_take_ownership = -1;
 	player removeAction s_player_plotManagement;
 	s_player_plotManagement = -1;
 	{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];

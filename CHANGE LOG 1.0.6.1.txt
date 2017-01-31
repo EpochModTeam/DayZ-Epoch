@@ -1,6 +1,6 @@
 [NEW] Added config variable DZE_HaloSpawnHeight. @ebayShopper
 [NEW] Added config variable DZE_ServerLogHits for logging source damage, weapon, ammo and distance to server RPT.
-[NEW] Added M4SPR_DZE class which spawns with 30Rnd Stanag by default instead of 20Rnd. #1823 @AirwavesMan
+[NEW] Added M4SPR_DZE and VSS_vintorez_DZE which spawn with larger magazines by default. #1823 #1890 @AirwavesMan
 [NEW] Building upgrades now source parts from the player's backpack and main inventory. @icomrade
 [NEW] Server owners can configure nutrition system effects with DZE_NutritionDivisor in configVariables.sqf @icomrade
 [NEW] Added back DZE_doorManagementHarderPenalty config variable. Required wait between incorrect entries of manual door codes is multiplied by two each time, starting at five seconds. #1847 @oiad
@@ -53,11 +53,9 @@
 [FIXED] Handling of boiled water bottles < 10 oz #1838 (Also removed the requirement to have an empty tin can to boil water) @icomrade @schwanzkopfhegel
 [FIXED] Generator inventory not saving #1831 @icomrade @schwanzkopfhegel
 [FIXED] Filling fuel barrels takes the correct amount from fuel tanks now (210 instead of 40 litres). #1834 @schwanzkopfhegel @oiad
-[FIXED] All base objects on plot duplicating when using "take ownership" on plot pole. #1811 @BNG-Lance @Clanwarfare
 [FIXED] Unable to sell some launchers like Javelin and Stinger which have the same classname for ammo and weapon. #1844 @ndavalos
 [FIXED] Long search delay when filling water bottles, drinking from hands and drinking from empty cans is fixed on Chernarus, Namalsk and Napf. #1835 @schwanzkopfhegel
 [FIXED] Players can not purchase a negative number of items anymore.
-[FIXED] Removed antiwall glitch blocks for vanilla hospitals since Epoch uses DayZero hospitals. @jOoPs
 [FIXED] Switching weapons properly interrupts autorun now. #1850 @DeVloek
 [FIXED] Duplicate matchbox or knife error when lighting a fire or gutting with multiple matchboxes or knives on toolbelt. #1849 @DeVloek
 [FIXED] RU crates having zero cargo capacity and wrong classname DZ_ExplosivesBoxRU in loot table. #1852 @oiad
@@ -82,5 +80,8 @@
 [FIXED] Error handling upgraded 1051 databases that resulted in a <null> value for "rh_factor" and array for "bloodtype" in character_data medical field. @ebayShopper
 [FIXED] Error in server_playerSetup that resulted in a <null> value for dayz_onBack in character_data inventory if player had no weapon on back. @ebayShopper 
 [FIXED] Doors and plots not getting cleaned up properly. See new MaintenanceObjects variable and explanation in HiveExt.ini. @icomrade
+
+[REMOVED] Antiwall glitch blocks for vanilla hospitals since Epoch uses DayZero hospitals. @jOoPs
+[REMOVED] "Take ownership" on plot pole due to it being unnecessary and causing base objects to duplicate. #1811 @BNG-Lance @Clanwarfare
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.

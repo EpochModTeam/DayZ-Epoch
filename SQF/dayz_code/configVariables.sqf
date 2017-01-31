@@ -76,7 +76,6 @@ DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for 
 DZE_plotManagementMustBeClose = false; //Players must be within 10m of pole to be added as a plot friend.
 DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby.
 DZE_MaxPlotFriends = 10; //Max friends allowed on a plot. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
-DZE_PlotOwnership = true; //Allow plot owner to take ownership of buildables (except lockables) on the plot. Useful for servers that allow base capturing, so the new owner can modify, remove and upgrade existing structures.
 DZE_maintainCurrencyRate = 100; //The currency rate of what maintaining an item will be, for instance: at 100, 10 items will have a worth of 1000 (1 10oz gold or 1k coins) see actions/maintain_area.sqf for more examples.
 
 // Snap Build and Build Vectors

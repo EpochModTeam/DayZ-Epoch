@@ -15454,17 +15454,6 @@
 			<English>Some change is hidden in the overflow slots of your gear.</English>
 		</Key>
 		
-		<!-- A PLOT FOR LIFE BELOW -->
-		
-		<Key ID="STR_EPOCH_APLOTFORLIFE_TAKE_PLOT_OWNERSHIP">
-			<English>Take plot items ownership</English>
-			<German>Besitz aller Objekte übernehmen</German>
-		</Key>
-		<Key ID="STR_EPOCH_APLOTFORLIFE_TAKE_OWNERSHIP">
-			<English>Take Ownership: %1 objects ownership changed.</English>
-			<German>Besitz übernehmen: %1 Objekte haben Besitzer gewechselt.</German>
-		</Key>
-		
 		<!-- PLOT MANAGEMENT BELOW -->
 		
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE"> 

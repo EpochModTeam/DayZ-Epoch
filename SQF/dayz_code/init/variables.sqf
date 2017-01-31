@@ -250,7 +250,6 @@ dayz_resetSelfActions = {
 	s_player_toggleSnapSelectPoint = [];
 	snapActions = -1;
 	s_player_plot_boundary = -1;
-	s_player_plot_take_ownership = -1;
 	s_player_plotManagement = -1;
 	s_player_toggleDegree = -1;
 	s_player_toggleDegrees=[];
@@ -533,9 +532,6 @@ DZE_snapExtraRange = 0;
 DZE_tradeVehicle = ["trade_any_vehicle","trade_any_vehicle_free","trade_any_vehicle_old","trade_any_bicycle","trade_any_bicycle_old","trade_any_boat","trade_any_boat_old"];
 DZE_tradeVehicleKeyless = ["trade_any_bicycle","trade_any_bicycle_old","trade_any_vehicle_free"];
 DZE_tradeObject = DZE_tradeVehicle + ["trade_backpacks"];
-if (isNil "DZE_plotOwnershipExclusions") then {
-	DZE_plotTakeOwnershipItems = DayZ_SafeObjects - (DZE_LockableStorage + ["Plastic_Pole_EP1_DZ","DZ_storage_base"]);
-};
 DZE_GearCheckBypass = false;
 isInTraderCity = false;
 inTraderCity = "Unknown Trader";
