@@ -30,7 +30,11 @@ _blood = 0;
 _cureAttempt = 0;
 _lastRest = player getVariable ["lastRest", 0];
 _tent = _this select 3;
-_isOwner = (_tent getVariable ["characterID","0"]) == dayz_characterID;
+if (DZE_permanentPlot) then {
+	_isOwner = (_tent getVariable ["ownerPUID","0"]) == dayz_playerUID;
+} else {
+	_isOwner = (_tent getVariable ["characterID","0"]) == dayz_characterID;
+};
 
 while {r_doLoop} do {
 	_isAsleep = (animationState player) in _sleepArray;
