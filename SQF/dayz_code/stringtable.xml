@@ -16896,7 +16896,7 @@
 			<German>Geheimes Notizbuch</German>
 		</Key>
 		<Key ID="STR_EQUIP_NOTEBOOK_SECRET_DESC">
-			<English>In the notebook are some kind of secret information written. The text is encrypted with a secret code.</English>
+			<English>In the notebook is some kind of secret information written. The text is encrypted with a secret code.</English>
 			<German>In dem Notizbuch befinden sich offenbar geheime Informationen. Der Text ist mit einen Geheimcode verschlüsselt.</German>
 		</Key>	
 		<Key ID="STR_EQUIP_NOTEBOOK_HERBS">
@@ -16904,7 +16904,7 @@
 			<German>Kräuter Notizbuch</German>
 		</Key>
 		<Key ID="STR_EQUIP_NOTEBOOK_HERBS_DESC">
-			<English>That notebook contains many information about herbs. It is very well documented and illustrated with pictures.</English>
+			<English>The notebook contains a lot of information about herbs. It is very well documented and illustrated with pictures.</English>
 			<German>Das Notizbuch beinhaltet viele Informationen über Kräuter. Es ist sehr gut dokumentiert und illustriert.</German>
 		</Key>	
 		<Key ID="STR_EQUIP_DOCUMENT_RANDOM">
@@ -16920,7 +16920,7 @@
 			<German>Militärdokument</German>
 		</Key>
 		<Key ID="STR_EQUIP_DOCUMENT_MILITARY_DESC">
-			<English>A military document with many information about weapons, ammunition, tanks and helicopters.</English>
+			<English>A military document with a lot of information about weapons, ammunition, tanks and helicopters.</English>
 			<German>Ein Militärdokument mit vielen Informationen zu Waffen, Munition, Panzern und Helikoptern.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DOCUMENT_TOPSECRET">
@@ -16960,7 +16960,7 @@
 			<German>Militärkarte</German>
 		</Key>
 		<Key ID="STR_EQUIP_MAP_Military_DESC">
-			<English>A military map with many markers. It looks like that the map was used for a big military operation.</English>
+			<English>A military map with many markers. It looks like the map was used for a big military operation.</English>
 			<German>Eine Militärkarte mit vielen Markierungen. Es sieht so aus, als ob die Karte für eine große Militäroperation genutzt wurde.</German>
 		</Key>	
 		<Key ID="STR_EQUIP_MAP_SURVIVOR">
