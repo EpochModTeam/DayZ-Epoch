@@ -264,6 +264,7 @@ class CfgWeapons
 	#include "Tools\Radio.hpp"
 	#include "Item\ItemKeyKit.hpp"
 	#include "Item\ItemKeys.hpp"
+	#include "Item\Documents.hpp"
 	
 	
 	
