@@ -27,7 +27,7 @@ class CfgWeapons
 	#include "Weapon\Sniper\M107.hpp"
 	#include "Weapon\Sniper\KSVK.hpp"
 	#include "Weapon\Sniper\M4SPR.hpp"
-	
+	#include "Weapon\Sniper\VSSVintorez.hpp"
 	
 	
 	//each include is preceded by its required external references.
@@ -264,6 +264,7 @@ class CfgWeapons
 	#include "Tools\Radio.hpp"
 	#include "Item\ItemKeyKit.hpp"
 	#include "Item\ItemKeys.hpp"
+	#include "Item\Documents.hpp"
 	
 	
 	

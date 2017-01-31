@@ -16858,6 +16858,119 @@
 			<English>Remove Camo Net</English>
 			<German>Tarnnetz entfernen</German>
 		</Key>
+		<Key ID="str_salvage_safezone">
+			<English>You cannot salvage parts in a safe zone</English>
+			<Spanish>No se pueden recuperar piezas en una zona segura</Spanish>
+			<Russian>Вы не можете снять детали в безопасной зоне</Russian>
+			<French>Vous ne pouvez pas récupérer des pièces dans une zone sécurisée</French>
+			<Czech>Nemůžete zachránit díly v bezpečné zóně</Czech>
+			<German>Du kannst in einer Safezone keine Teile demontieren</German>
+			<Dutch>Je kunt niet delen redden in een veilige zone</Dutch>
+		</Key>
+		<Key ID="STR_EQUIP_NOTEBOOK_BIO">
+			<English>Biology Notebook</English>
+			<German>Biologie Notizbuch</German>
+		</Key>
+		<Key ID="STR_EQUIP_NOTEBOOK_BIO_DESC">
+			<English>A notebook with many notes about biological connections.</English>
+			<German>Ein Notizbuch mit vielen Notizen über biologische Zusammenhänge.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NOTEBOOK_CHE">
+			<English>Chemistry Notebook</English>
+			<German>Chemie Notizbuch</German>
+		</Key>
+		<Key ID="STR_EQUIP_NOTEBOOK_CHE_DESC">
+			<English>A notebook with many notes about chemical connections.</English>
+			<German>Ein Notizbuch mit vielen Notizen über chemische Zusammenhänge.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NOTEBOOK_PHY">
+			<English>Physics Notebook</English>
+			<German>Physik Notizbuch</German>
+		</Key>
+		<Key ID="STR_EQUIP_NOTEBOOK_PHY_DESC">
+			<English>A notebook with many notes about physical connections.</English>
+			<German>Ein Notizbuch mit vielen Notizen über physikalische Zusammenhänge.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_NOTEBOOK_SECRET">
+			<English>Secret Notebook</English>
+			<German>Geheimes Notizbuch</German>
+		</Key>
+		<Key ID="STR_EQUIP_NOTEBOOK_SECRET_DESC">
+			<English>In the notebook is some kind of secret information written. The text is encrypted with a secret code.</English>
+			<German>In dem Notizbuch befinden sich offenbar geheime Informationen. Der Text ist mit einen Geheimcode verschlüsselt.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_NOTEBOOK_HERBS">
+			<English>Herbs Notebook</English>
+			<German>Kräuter Notizbuch</German>
+		</Key>
+		<Key ID="STR_EQUIP_NOTEBOOK_HERBS_DESC">
+			<English>The notebook contains a lot of information about herbs. It is very well documented and illustrated with pictures.</English>
+			<German>Das Notizbuch beinhaltet viele Informationen über Kräuter. Es ist sehr gut dokumentiert und illustriert.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_DOCUMENT_RANDOM">
+			<English>Random Document</English>
+			<German>Irgendein Dokument</German>
+		</Key>
+		<Key ID="STR_EQUIP_DOCUMENT_RANDOM_DESC">
+			<English>Looks like a normal document, nothing special.</English>
+			<German>Sieht wie ein normales Dokument aus, nicht besonderes.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_DOCUMENT_MILITARY">
+			<English>Military Document</English>
+			<German>Militärdokument</German>
+		</Key>
+		<Key ID="STR_EQUIP_DOCUMENT_MILITARY_DESC">
+			<English>A military document with a lot of information about weapons, ammunition, tanks and helicopters.</English>
+			<German>Ein Militärdokument mit vielen Informationen zu Waffen, Munition, Panzern und Helikoptern.</German>
+		</Key>
+		<Key ID="STR_EQUIP_DOCUMENT_TOPSECRET">
+			<English>Top Secret Document</English>
+			<German>Streng geheimes Dokument</German>
+		</Key>
+		<Key ID="STR_EQUIP_DOCUMENT_TOPSECRET_DESC">
+			<English>A document with top secret information but the inscription "Top Secret" is missing.</English>
+			<German>Ein Dokument mit streng geheimen Informationen, aber die Aufschrift "Streng Geheim" fehlt.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_MANUAL_ELECTRONICS">
+			<English>Electronics Manual</English>
+			<German>Elektronik Handbuch</German>
+		</Key>
+		<Key ID="STR_EQUIP_MANUAL_ELECTRONICS_DESC">
+			<English>A manual about electronics and how to repair most common electronic items.</English>
+			<German>Ein Handbuch über Elektronik und wie man die am häufigsten vorkommenden elektronischen Gegenstände repariert.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_MANUAL_CAMERA">
+			<English>CCTV Camera Manual</English>
+			<German>Überwachungskamera Handbuch</German>
+		</Key>
+		<Key ID="STR_EQUIP_MANUAL_CAMERA_DESC">
+			<English>A manual about how to build and the use of a CCTV Camera.</English>
+			<German>Ein Handbuch über das Bauen und die Nutzung einer Überwachungskamera.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_MANUAL_REPAIR">
+			<English>Repair Manual</English>
+			<German>Reperaturhandbuch</German>
+		</Key>
+		<Key ID="STR_EQUIP_MANUAL_REPAIR_DESC">
+			<English>A repair manual about how to fix items.</English>
+			<German>Ein Reperaturhandbuch über das Reparieren von Gegenständen.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_MAP_Military">
+			<English>Military Map</English>
+			<German>Militärkarte</German>
+		</Key>
+		<Key ID="STR_EQUIP_MAP_Military_DESC">
+			<English>A military map with many markers. It looks like the map was used for a big military operation.</English>
+			<German>Eine Militärkarte mit vielen Markierungen. Es sieht so aus, als ob die Karte für eine große Militäroperation genutzt wurde.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_MAP_SURVIVOR">
+			<English>Map about Safe Places</English>
+			<German>Karte über sichere Ort</German>
+		</Key>
+		<Key ID="STR_EQUIP_MAP_SURVIVOR_DESC">
+			<English>A map with markers about safe places and where survivors can stay. Unfortunately useless now.</English>
+			<German>Eine Karte mit Markierungen von sicheres Orten, wo Überlebende bleiben können. Leider ist die Karte jetzt nutzlos.</German>
+		</Key>		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>
@@ -16871,15 +16984,6 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>
-		<Key ID="str_salvage_safezone">
-			<English>You cannot salvage parts in a safe zone</English>
-			<Spanish>No se pueden recuperar piezas en una zona segura</Spanish>
-			<Russian>Вы не можете снять детали в безопасной зоне</Russian>
-			<French>Vous ne pouvez pas récupérer des pièces dans une zone sécurisée</French>
-			<Czech>Nemůžete zachránit díly v bezpečné zóně</Czech>
-			<German>Du kannst in einer Safezone keine Teile demontieren</German>
-			<Dutch>Je kunt niet delen redden in een veilige zone</Dutch>
 		</Key>
 	</Package>
 </Project>
