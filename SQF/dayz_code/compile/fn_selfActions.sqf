@@ -4,7 +4,7 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- Function
 	- [] call fnc_usec_selfActions;
 ************************************************************/
-private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names",
+private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_temp_keys_names","_restrict",
 "_hasKey","_oldOwner","_hasAttached","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild",
 "_player_lockUnlock_crtl","_displayName","_hasIgnitors","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached",
 "_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget",
@@ -226,7 +226,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_isBicycle = _cursorTarget isKindOf "Bicycle";
 	_isMan = _cursorTarget isKindOf "Man"; //includes animals and zombies
 	_isDestructable = _cursorTarget isKindOf "BuiltItems";
-	_isGenerator = _cursorTarget isKindOf "Generator_DZ";
+	_isGenerator = _typeOfCursorTarget == "Generator_DZ";
 	//_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"]; //Checked in player_flipvehicle
 	_isFuel = false;
 	_hasBarrel = "ItemFuelBarrel" in _magazinesPlayer;
@@ -389,22 +389,23 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 */
 	if (_isAlive) then {
-		//Allow player to delete objects
-		if (_isDestructable || {((_typeOfCursorTarget in DZE_isWreck) or (_typeOfCursorTarget in DZE_isWreckBuilding))} || {(_typeOfCursorTarget in DZE_isRemovable)}) then {
+		_restrict = _typeOfCursorTarget in DZE_restrictRemoval;
+	
+		//Allow player to remove objects with no ownership or access required
+		if (!_restrict && (_isDestructable || _typeOfCursorTarget in DZE_isWreck || _typeOfCursorTarget in DZE_isWreckBuilding || _typeOfCursorTarget in DZE_isRemovable)) then {
 			if (_hasToolbox && _hasCrowbar) then {
 				_player_deleteBuild = true;
 			};
-		};	
-
-		if (_isModular || _isModularDoor || _isGenerator || {_typeOfCursorTarget in DZE_isDestroyableStorage}) then {
+		};
+		//Allow player to remove objects only if they have proper ownership or access
+		if (_restrict || _isModular || _isModularDoor || _isGenerator || _typeOfCursorTarget in DZE_isDestroyableStorage) then {
 			if (_hasToolbox && _hasCrowbar) then {
 				_hasAccess = [player, _cursorTarget] call FNC_check_access;
 				if ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) then {
 					_player_deleteBuild = true;
 				};
 			};
-		};
-		
+		};		
 		if (_isVehicle) then {
 			if ((_characterID != "0") && {!_isMan}) then {
 				_player_lockUnlock_crtl = true;
@@ -785,15 +786,10 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	if (_typeOfCursorTarget in dayz_fuelpumparray) then {
 		if (s_player_fuelauto < 0) then {		
 			// check if Generator_DZ is running within 30 meters
-			_findNearestGen = [];
-			{
-				if ((alive _x) && (_x getVariable ["GeneratorRunning", false])) then {
-					_findNearestGen set [count _findNearestGen,_x];
-				};
-			} count (nearestObjects [([player] call FNC_getPos), ["Generator_DZ"], 30]);
+			_findNearestGen = {((alive _x) && (_x getVariable ["GeneratorRunning",false]))} count (([player] call FNC_getPos) nearObjects ["Generator_DZ",30]);
 			
 			// show that pump needs power if no generator nearby.
-			if ((count _findNearestGen) > 0) then {
+			if (_findNearestGen > 0) then {
 				s_player_fuelauto = player addAction [localize "STR_EPOCH_ACTIONS_FILLVEH", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",objNull, 0, false, true];
 			} else {
 				s_player_fuelauto = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_NEEDPOWER"], "",[], 0, false, true];

@@ -130,8 +130,8 @@ while {_isOk} do {
 	if(_finished) then {
 		_counter = _counter + 1;
 		// 4% chance to break a required tool each pass
-		if((_isDestructable || _isRemovable) && !_isOwnerOfObj) then {
-			if (dayz_toolBreaking && {[0.04] call fn_chance}) then {_brokenTool = true;};
+		if ((_isDestructable || _isRemovable) && {!_isOwnerOfObj} && {dayz_toolBreaking && {[0.04] call fn_chance}}) then {
+			_brokenTool = true;
 		};
 	};
 	if(_brokenTool) exitWith {

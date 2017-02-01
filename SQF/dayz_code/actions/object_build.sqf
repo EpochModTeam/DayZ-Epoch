@@ -76,7 +76,7 @@ if (_build) then {
     };
 	
 /*    //set fuel, Later use Generator
-    if (_object isKindOf "Generator_DZ") then {
+    if (typeOf _object == "Generator_DZ") then {
     diag_log format["Object: %1, Fuel: %2",_object,fuel _object];
         if (local _object) then {
             _object setFuel 0;
