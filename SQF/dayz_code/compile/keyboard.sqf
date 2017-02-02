@@ -139,9 +139,12 @@ if (isNil "keyboard_keys") then {
     };
     _drop = {
 		if (r_drag_sqf) then {
-			_doors = nearestObjects [player,  DayZ_DropDrageeObjects, 3]; //Prevent exploit of glitching through doors
+			_doors = nearestObjects [player, DayZ_DropDrageeObjects, 3]; //Prevent dropping dragged player through objects
 			if (count _doors > 0) then {_handled = true;};
 			force_dropBody = true;
+		} else {
+			_doors = nearestObjects [player, DZE_DoorsLocked, 3];
+			if (count _doors > 0 && {speed player > 0}) then {_handled = true;}; //Prevent sprint and prone through doors glitch
 		};
     };
     _interrupt = {
