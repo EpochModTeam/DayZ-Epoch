@@ -4,7 +4,6 @@ private ["_WaterHoleArray","_ShuffleArray"];
 _WaterHoleArray = [
 	"BlackLake",
 	"Gvozdno",
-	"Gvozdno",
 	"Kabanino",
 	"Kopyto",
 	"Mogilevka",
