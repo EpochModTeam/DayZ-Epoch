@@ -158,7 +158,6 @@ fnc_usec_calculateBloodPerSec = {
 					_time = ((_time - 900) max 1) min 900;
 					_bloodLossPerSec = _bloodLossPerSec + (_time / 450) + 1;
 					_bloodLossPerSec = _bloodLossPerSec - (_bloodLossPerSec % 1);
-					//hintSilent (format["SetupMedFNCS: Blood Level: %2/12000 bloodLossPerSec %1",_bloodLossPerSec,r_player_blood]);
 				} else {
 					r_player_Sepsis = [false, 0];
 					r_player_infected = true;
@@ -168,8 +167,8 @@ fnc_usec_calculateBloodPerSec = {
 			
 			if ((_time < 1) and (isNil "sepsisStarted")) then {
 			//if (isNil "sepsisStarted") then {
-				//localize "str_medical_sepsis_warning" call dayz_rollingMessages;
-				systemChat (localize "str_medical_sepsis_warning");
+				localize "str_medical_sepsis_warning" call dayz_rollingMessages;
+				//systemChat (localize "str_medical_sepsis_warning");
 				player setVariable ["sepsisStarted", _time];
 			};
 		};
