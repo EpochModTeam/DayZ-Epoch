@@ -22,9 +22,8 @@ class Swarm_Base : Citizen1 {
 	forcedSpeed = 6;
 
 	class Eventhandlers {
-		init = "_this execFSM ""\z\AddOns\dayz_code\system\zombie_agent.fsm""";
-		//local = "if(_this select 1) then {[(position (_this select 0)),(_this select 0),true] execFSM '\z\AddOns\dayz_code\system\fn_swarmagent.fsm'};";
-		local = "_z = _this select 0; if (!(_this select 1)) exitWith {}; if (isServer) exitWith { _z call sched_co_deleteVehicle; }; [_z,true] execFSM '\z\AddOns\dayz_code\system\zombie_agent.fsm';";
+		init = "_this call zombie_initialize;";
+		local = "_z = _this select 0; if (!(_this select 1)) exitWith {}; if (isServer) exitWith { _z call sched_co_deleteVehicle; }; [_z,true] call zombie_initialize;";
 		HandleDamage = "_this call local_zombieDamage;";
 		Killed = "[_this,'zombieKills'] call local_eventKill;";
 	};

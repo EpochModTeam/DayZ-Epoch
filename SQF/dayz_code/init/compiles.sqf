@@ -663,6 +663,7 @@ fnc_Obj_FenceHandleDam = compile preprocessFileLineNumbers "\z\addons\dayz_code\
 object_roadFlare = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_roadFlare.sqf";
 DZ_KeyDown_EH = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\keyboard.sqf";
 fn_shuffleArray = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_shuffleArray.sqf";
+zombie_initialize = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_initialize.sqf";
 
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\traps\init.sqf";
 if (dayz_townGenerator) then {

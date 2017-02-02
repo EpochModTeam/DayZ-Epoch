@@ -282,9 +282,6 @@ class FSM
        "_agent disableAI ""FSM"";" \n
        "_newDest = getPosATL _agent;" \n
        "_timeN = time;" \n
-       "" \n
-       " _id = _agent addeventhandler [""HandleDamage"",{_this call local_zombieDamage}];" \n
-       "" \n
        "_target = objNull;" \n
        "_targetPos = [];" \n
        "_countr = 0;" \n

@@ -1,7 +1,7 @@
 // EPOCH CONFIG VARIABLES //
 
-// To change a variable copy it to your mission init.sqf in the Epoch Config Variables section
-// Standard DayZ variables are found in dayz_code\init\variables.sqf
+// To change a variable copy paste it in the mission init.sqf below the #include line.
+// Standard DayZ variables are found in dayz_code\init\variables.sqf.
 
 dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
 dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.

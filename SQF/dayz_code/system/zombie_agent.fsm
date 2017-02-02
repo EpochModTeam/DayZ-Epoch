@@ -211,11 +211,11 @@ class FSM
     class init
     {
       name = "init";
-      init = /*%FSM<STATEINIT""">*/"_agent = 	_this select 0;" \n
+      init = /*%FSM<STATEINIT""">*/"_agent = 	_this select 1; //Compatible with old configs like Namalsk's custom zombies" \n
        "_position = 		_agent modelToWorld [0,0,0];" \n
        "_secondHand = false;" \n
        "" \n
-       "if (count _this > 1) then {" \n
+       "if (count _this > 2) then {" \n
        "	_secondHand = true;" \n
        "	diag_log (""Second Hand Zombie Initialized: "" + str(_this));" \n
        "};"/*%FSM</STATEINIT""">*/;
@@ -475,9 +475,6 @@ class FSM
        "_timeN = diag_tickTime;" \n
        "" \n
        "_agent setBehaviour ""CARELESS"";" \n
-       "" \n
-       " _id = _agent addeventhandler [""HandleDamage"",{_this call local_zombieDamage}];" \n
-       "" \n
        "//hint ""run local zombie"";" \n
        "_isSomeone = true;" \n
        "" \n

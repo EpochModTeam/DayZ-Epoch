@@ -140,9 +140,6 @@ class FSM
        "_bodyStay = 	60;" \n
        "" \n
        "_timeN = time;" \n
-       "" \n
-       " _id = _agent addeventhandler [""HandleDamage"",{_this call local_zombieDamage}];" \n
-       "" \n
        "//hint ""run local zombie"";" \n
        "_isSomeone = true;" \n
        "" \n
