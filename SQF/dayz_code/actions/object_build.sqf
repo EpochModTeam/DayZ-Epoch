@@ -15,6 +15,8 @@ _uid = getPlayerUID player;
 
 _keepOnSlope = 0 == (getNumber (configFile >> "CfgVehicles" >> _classname >> "canbevertical"));
 
+//_damageArray = (getArray (configFile >> "CfgVehicles" >> _classname >> "damageValues"));
+
 Dayz_constructionContext set [ 4, false ]; // Stop the construction mode, cf. player_build.sqf
 
 //if (count Dayz_constructionContext < 5) then { Dayz_constructionContext set [ 5, false ]; // };
@@ -61,8 +63,8 @@ if (_build) then {
         _variables set [ count _variables, ["ownerArray", [getPlayerUID player]]];
 		_variables set [ count _variables, ["padlockCombination", _passcode]];
 		
-		_object removeAllEventHandlers "HandleDamage";
-		_object addeventhandler ["HandleDamage",{ diag_log (_this); if ((_this select 4) == 'PipeBomb') then { _this call fnc_Obj_FenceHandleDam; } else { false }; } ];
+		//_object removeAllEventHandlers "HandleDamage";
+		//_object addeventhandler ["HandleDamage",{ [_this,_damageArray] call fnc_Obj_FenceHandleDam; } ];
     };
     _object setVariable ["characterID",dayz_characterID, true];
 

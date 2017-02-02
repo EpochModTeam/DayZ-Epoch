@@ -1724,11 +1724,11 @@
 			<German>Wartung</German>
 		</Key>
 		<Key ID="str_disassembly">
-			<English>%1 Disassembly</English>
-			<Russian>%1 Разборка</Russian>
-			<French>Démonter la %1</French>
-			<Czech>Demontáž %1</Czech>
-			<German>%1 abbauen</German>
+			<English>Disassembly</English>
+			<Russian>Разборка</Russian>
+			<French>Démonter la</French>
+			<Czech>Demontáž</Czech>
+			<German>abbauen</German>
 		</Key>
 		<Key ID="str_build">
 			<English>Build %1</English>
