@@ -11390,7 +11390,7 @@
 			<Czech>Jiný hráč si vás chce označit jako přítele. K příjmutí, označte hráče jako přítele.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_7">
-			<English>Cannot access gear in a locked vehicle.</English>
+			<English>You cannot access gear in a locked vehicle.</English>
 			<German>Es kann nicht auf das Inventar bei verschlossenen Fahrzeugen zugegriffen werden.</German>
 			<Russian>Нельзя открыть снаряжение запертого транспорта.</Russian>
 			<Dutch>Je kunt niet bij de intentaris van een afgesloten voertuig.</Dutch>
@@ -11398,7 +11398,7 @@
 			<Czech>Nelze přistupovat k předmětům v zamčeném voze.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_8">
-			<English>No camo nets found nearby.</English>
+			<English>No camo nets were found nearby.</English>
 			<German>Keine Tarn-Netze in der Nähe gefunden.</German>
 			<Russian>Камуфляжные сети не найдены.</Russian>
 			<Dutch>Geen camouflagenet in de buurt gevonden.</Dutch>
@@ -11414,7 +11414,7 @@
 			<Czech>Byl jste naražen mezi dva objekty.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_10">
-			<English>Lock already in progress.</English>
+			<English>Lock is already in progress.</English>
 			<German>Abschließen bereits im Gange.</German>
 			<Russian>Уже закрывается.</Russian>
 			<Dutch>Wordt al op slot gezet.</Dutch>
@@ -11422,7 +11422,7 @@
 			<Czech>Zamykání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_11">
-			<English>Cannot lock while another player is nearby.</English>
+			<English>You cannot lock while another player is nearby.</English>
 			<German>Abschließen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
 			<Russian>Нельзя закрывать, когда другой игрок находится поблизости.</Russian>
 			<Dutch>Kan niet op slot zetten met een andere speler in de buurt.</Dutch>
@@ -11430,7 +11430,7 @@
 			<Czech>Nelze zamknout, když je poblíž jiný hráč.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_12">
-			<English>Cannot abort while in a trader area!</English>
+			<English>You cannot abort while in a trader area!</English>
 			<German>Du darfst dich nicht im Händler-Bereich ausloggen!</German>
 			<Russian>В торговой зоне нельзя выходить из игры!</Russian>
 			<Dutch>Kan niet uitloggen in een handel gebied.</Dutch>
@@ -11446,7 +11446,7 @@
 			<Czech>Toto již bylo zabaleno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_16">
-			<English>Cannot pack while another player is nearby.</English>
+			<English>You cannot pack while another player is nearby.</English>
 			<German>Packen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
 			<Russian>Нельзя упаковывать, когда другой игрок рядом.</Russian>
 			<Dutch>Kan niet inpakken met een andere speler in de buurt</Dutch>
@@ -11482,7 +11482,7 @@
 			<Czech>Nelze odemknout, pokud jsou poblíž jiní hráči.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_21">
-			<English>Unlock already in progress.</English>
+			<English>Unlock is already in progress.</English>
 			<German>Entsperren bereits im Gange.</German>
 			<Russian>Уже открывается.</Russian>
 			<Dutch>Wordt al reeds van slot gehaald.</Dutch>
@@ -11490,7 +11490,7 @@
 			<Czech>Odemykání již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_22">
-			<English>Boil already in progress.</English>
+			<English>Boil is already in progress.</English>
 			<German>Aufkochen bereits im Gange.</German>
 			<Russian>Уже кипятится.</Russian>
 			<Dutch>Je bent al aan ket koken.</Dutch>
@@ -11498,7 +11498,7 @@
 			<Czech>Převařování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_23">
-			<English>Cooking already in progress.</English>
+			<English>Cooking is already in progress.</English>
 			<German>Kochen bereits im Gange.</German>
 			<Russian>Уже готовится.</Russian>
 			<Dutch>Je bent al aan het koken.</Dutch>
@@ -11506,7 +11506,7 @@
 			<Czech>Vaření již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_24">
-			<English>Refuel already in progress.</English>
+			<English>Refuel is already in progress.</English>
 			<German>Betanken bereits im Gange.</German>
 			<Russian>Уже заправляется.</Russian>
 			<Dutch>Je bent al aan het tanken.</Dutch>
@@ -11546,7 +11546,7 @@
 			<Czech>Generátor byl nastartován.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_29">
-			<English>Gutting animal already in progress.</English>
+			<English>Gutting animal is already in progress.</English>
 			<German>Ausweiden des Tieres bereits im Gange.</German>
 			<Russian>Животное уже разделывается.</Russian>
 			<Dutch>Je bent dit dier al aan het opensnijden.</Dutch>
@@ -11554,7 +11554,7 @@
 			<Czech>Kuchání zvířete již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_31">
-			<English>Gutting zombie already in progress.</English>
+			<English>Gutting zombie is already in progress.</English>
 			<German>Ausweiden des Zombies bereits im Gange.</German>
 			<Russian>Зомби уже разделывается.</Russian>
 			<Dutch>Je bent deze zombie al aan het opensnijden.</Dutch>
@@ -11678,7 +11678,7 @@
 			<Czech>Stavba %1, %2 byla zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_48">
-			<English>Downgrade already in progress.</English>
+			<English>Downgrade is already in progress.</English>
 			<German>Downgrade bereits im Gange.</German>
 			<Russian>Уже понижается.</Russian>
 			<Dutch>Je bent al bezig met downgraden.</Dutch>
@@ -11686,7 +11686,7 @@
 			<Czech>Downgrade již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_49">
-			<English>Unable to downgrade you do not know the combination.</English>
+			<English>Unable to downgrade, you do not know the combination.</English>
 			<German>Downgraden nicht möglich, da du nicht die Kombination kennst.</German>
 			<Russian>Не удаётся понизить, вы не знаете комбинации.</Russian>
 			<Dutch>Kan niet downgraden, je weet de combinatie niet.</Dutch>
@@ -11702,7 +11702,7 @@
 			<Czech>Dosud nebylo nastaveno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_51">
-			<English>No downgrades available</English>
+			<English>No downgrades are available</English>
 			<German>Kein Downgrade vorhanden</German>
 			<Russian>Нет доступных понижений.</Russian>
 			<Dutch>Geen downgrades beschikbaar</Dutch>
@@ -11710,7 +11710,7 @@
 			<Czech>Downgrade není k dispozici</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_52">
-			<English>Upgrade already in progress.</English>
+			<English>Upgrade is already in progress.</English>
 			<German>Upgrade bereits im Gange.</German>
 			<Russian>Уже улучшается.</Russian>
 			<Dutch>Je bent al aan het upgraden.</Dutch>
@@ -11718,7 +11718,7 @@
 			<Czech>Upgrade již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_56">
-			<English>Copy key already in progress.</English>
+			<English>Copy key is already in progress.</English>
 			<German>Kopieren des Schlüssels bereits im Gange.</German>
 			<Russian>Ключ уже копируется.</Russian>
 			<Dutch>Je bent al een sleutel aan het kopieren</Dutch>
@@ -11726,7 +11726,7 @@
 			<Czech>Kopírování klíče již probíhá</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_57">
-			<English>Need Keymakers kit to make a copy of a key.</English>
+			<English>You need a Keymakers kit to make a copy of a key.</English>
 			<German>Du benötigst ein Schlüsselmacher Kit, um Kopien eines Schlüssels anfertigen zu können.</German>
 			<Russian>Нужен комплект для создания ключей, чтобы сделать копию ключа.</Russian>
 			<Dutch>Je hebt een sleutelmakers-set nodig om een sleutel te kopieren.</Dutch>
@@ -11741,7 +11741,7 @@
 			<Czech>Na vytvoření klíče potřebujete oheň v dosahu 3 metrů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_59">
-			<English>Key crafting requires a 1 Tin Bar.</English>
+			<English>Key crafting requires 1 Tin Bar.</English>
 			<German>Du benötigst 1 Zinn Barren, um einen Schlüssel zu kopieren.</German>
 			<Russian>Для создания ключа требуется 1 оловянный слиток.</Russian>
 			<Dutch>Je hebt 1 Tin bar nodig om een sleutel te maken.</Dutch>
@@ -11781,7 +11781,7 @@
 			<Czech>Vytváření zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_72">
-			<English>Harvest already in progress.</English>
+			<English>Harvest is already in progress.</English>
 			<German>Holzhacken bereits im Gange.</German>
 			<Russian>Уже собирается.</Russian>
 			<Dutch>Je bent al aan het oogsten.</Dutch>
@@ -11805,7 +11805,7 @@
 			<Czech>Musíte být blízko plodiny, abyste ji mohli sklidit.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_75">
-			<English>Open Crate already in progress.</English>
+			<English>Open Crate is already in progress.</English>
 			<German>Öffnen der Holzkiste bereits im Gange.</German>
 			<Russian>Ящик уже открывается.</Russian>
 			<Dutch>Je bent de kist al aan het openmaken.</Dutch>
@@ -11837,7 +11837,7 @@
 			<Czech>Otevřená zásobovací bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_79">
-			<English>Ore Mining already in progress.</English>
+			<English>Ore Mining is already in progress.</English>
 			<German>Erzgewinnung bereits im Gange.</German>
 			<Russian>Руда уже добывается.</Russian>
 			<Dutch>Je bent al erts aan het ontginnen.</Dutch>
@@ -11853,7 +11853,7 @@
 			<Czech>Zrušena těžba rudy.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_82">
-			<English>No upgrades available</English>
+			<English>No upgrades are available</English>
 			<German>Keine Upgrades vorhanden</German>
 			<Russian>Нет доступных улучшений.</Russian>
 			<Dutch>Geen upgrades beschikbaar</Dutch>
@@ -11869,7 +11869,7 @@
 			<Czech>Změna oblečení již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_84">
-			<English>Cannot change clothes when another player is nearby.</English>
+			<English>You cannot change clothes when another player is nearby.</English>
 			<German>Du kannst deine Kleidung nicht wechseln, wenn ein anderer Spieler in der Nähe ist.</German>
 			<Russian>Нельзя переодеваться, когда другой игрок рядом.</Russian>
 			<Dutch>Je kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
@@ -11885,7 +11885,7 @@
 			<Czech>Nemůžete nosit oblečení opačného pohlaví.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_88">
-			<English>Remove already in progress.</English>
+			<English>Remove is already in progress.</English>
 			<German>Entfernen bereits im Gange.</German>
 			<Russian>Уже убирается/снимается.</Russian>
 			<Dutch>Al bezig met verwijderen.</Dutch>
@@ -11893,7 +11893,7 @@
 			<Czech>Odstranění již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_89">
-			<English>Cannot remove running generator.</English>
+			<English>Cannot remove a running generator.</English>
 			<German>Ein laufender Generator kann nicht entfernt werden.</German>
 			<Russian>Нельзя убрать работающий генератор.</Russian>
 			<Dutch>Kan niet verwijderen als de generator nog aanstaat.</Dutch>
@@ -11901,7 +11901,7 @@
 			<Czech>Nemůžete odstranit běžící generátor.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_90">
-			<English>No parts found.</English>
+			<English>No parts were found.</English>
 			<German>Keine Teile gefunden.</German>
 			<Russian>Запчасти не найдены.</Russian>
 			<Dutch>Geen onderdelen gevonden.</Dutch>
@@ -11909,7 +11909,7 @@
 			<Czech>Nebyly nalezeny žádné části.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_91">
-			<English>Failed object no longer exists.</English>
+			<English>Failed, object no longer exists.</English>
 			<German>Fehlgeschlagen. Objekt existiert nicht mehr.</German>
 			<Russian>Объект не существует.</Russian>
 			<Dutch>Mislukt! Het object bestaat niet meer.</Dutch>
@@ -11917,7 +11917,7 @@
 			<Czech>Chyba. Objekt již neexistuje.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_92">
-			<English>Repair already in progress.</English>
+			<English>Repair is already in progress.</English>
 			<German>Reperatur bereits im Gange.</German>
 			<Russian>Уже чинится.</Russian>
 			<Dutch>Wordt al reeds gerepareerd.</Dutch>
@@ -11933,7 +11933,7 @@
 			<Czech>již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_99">
-			<English>Stop already in progress.</English>
+			<English>Stop is already in progress.</English>
 			<German>Stoppen des Generators bereits im Gange.</German>
 			<Russian>Уже останавливается.</Russian>
 			<Dutch>Bezig met stoppen.</Dutch>
@@ -11941,7 +11941,7 @@
 			<Czech>Zastavování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_100">
-			<English>Preparing stop generator, move to cancel.</English>
+			<English>Preparing to stop generator, move to cancel.</English>
 			<German>Generator wird abgeschaltet, bewege dich um den Vorgang abzubrechen.</German>
 			<Russian>Подготовка к остановке генератора, двигайтесь для отмены.</Russian>
 			<Dutch>Het uitschakellen van de generator word voorbereid, beweeg om te annuleren.</Dutch>
@@ -11957,7 +11957,7 @@
 			<Czech>Generátor byl zastaven.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_102">
-			<English>No Vehicles In Tow.</English>
+			<English>No Vehicles in Tow.</English>
 			<German>Kein Fahrzeug am Abschleppseil.</German>
 			<Russian>Нет транспорта на буксире.</Russian>
 			<Dutch>Geen voertuigen op sleep.</Dutch>
@@ -11965,7 +11965,7 @@
 			<Czech>Žádná vozidla nejsou zaháknutá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_103">
-			<English>Trade already in progress.</English>
+			<English>Trade is already in progress.</English>
 			<German>Handel bereits im Gange.</German>
 			<Russian>Вы уже заключаете сделку.</Russian>
 			<Dutch>Je bent al aan het handellen.</Dutch>
@@ -12005,7 +12005,7 @@
 			<Czech>Nemáte dostatek místa na Vašem opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_115">
-			<English>You cannot lock this %1, you do not know the combination.</English>
+			<English>You cannot lock %1, you do not know the combination.</English>
 			<German>Du kannst nicht diese(n) %1 abschließen, da du nicht die Kombination kennst.</German>
 			<Russian>Вы не можете закрыть 1%, вы не знаете комбинации.</Russian>
 			<Dutch>Je kunt deze %1 niet op slot zetten, je weet de combinatie niet.</Dutch>
@@ -12013,7 +12013,7 @@
 			<Czech>Nemůžete zamknout %1, neznáte správnou kombinaci.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_116">
-			<English>That %1 is already being locked.</English>
+			<English>%1 is already being locked.</English>
 			<German>Diese(r) %1 wird bereits abgeschlossen.</German>
 			<Russian>%1 уже закрыт.</Russian>
 			<Dutch>Deze %1 wordt al op slot gezet.</Dutch>
@@ -12037,7 +12037,7 @@
 			<Czech>%1 není ještě připravený.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_119">
-			<English>You cannot pack this %1, you do not know the combination.</English>
+			<English>You cannot pack %1, you do not know the combination.</English>
 			<German>Du kannst nicht diese(n) %1 packen, da du nicht die Kombination kennst.</German>
 			<Russian>Вы не можете упаковать 1%, вы не знаете комбинации.</Russian>
 			<Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
@@ -12045,7 +12045,7 @@
 			<Czech>Nemůžete sbalit %1, neznáte správnou kombinaci.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_120">
-			<English>That %1 is already being packed.</English>
+			<English>%1 is already being packed.</English>
 			<German>Diese(r) %1 wird bereits gepackt.</German>
 			<Russian>%1 уже запакован.</Russian>
 			<Dutch>Deze %1 wordt al reeds ingepakt.</Dutch>
@@ -12053,7 +12053,7 @@
 			<Czech>Balení %1 již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_121">
-			<English>Packing %1 move from this position to cancel within 5 seconds.</English>
+			<English>Packing %1, move from this position to cancel within 5 seconds.</English>
 			<German>%1 wird gepackt. Bewege dich in den nächsten 5 Sekunden um den Vorgang abzubrechen.</German>
 			<Russian>Упаковывание 1% сдвиньтесь с этой позиции в течение 5 секунд, для отмены.</Russian>
 			<Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
@@ -12113,7 +12113,7 @@
 			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_136">
-			<English>Unable to build %1 nearby.</English>
+			<English>Unable to build, %1 nearby.</English>
 			<German>Es ist nicht möglich %1 hier aufzubauen.</German>
 			<Russian>Здесь нельзя поставить %1.</Russian>
 			<Dutch>Bouwen niet mogelijk %1 in de buurt.</Dutch>
@@ -12154,7 +12154,7 @@
 			<Czech>Nastavil jste Vaši %2. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_141">
-			<English>Unable to downgrade %1 nearby.</English>
+			<English>Unable to downgrade, %1 nearby.</English>
 			<German>Downgraden von %1 ist nicht möglich.</German>
 			<Dutch>Kan niet downgraden %1 in de buurt.</Dutch>
 			<French>Impossible de dégrader, %1 est trop proche.</French>
@@ -12220,14 +12220,14 @@
 			<Czech>Těžení rudy, kdykoliv se pohněte pro zrušení. (%1/%2)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_156">
-			<English>%1 piles of ore has been successfully added in front of you.</English>
+			<English>%1 piles of ore have been successfully added in front of you.</English>
 			<German>%1 Stappel Erz wurden erfolgreich abgebaut und liegt nun vor dir.</German>
 			<Russian>%1 руда была успешно размещена перед вами.</Russian>
 			<Dutch>%1 hoopjes erts liggen nu voor je neus.</Dutch>
 			<Czech>%1 rudy bylo úspěšně položeno před Vás.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_157">
-			<English>Unable to upgrade %1 nearby.</English>
+			<English>Unable to upgrade, %1 nearby.</English>
 			<German>Upgrade von %1 ist nicht möglich.</German>
 			<Dutch>Kan niet upgraden %1 in de buurt.</Dutch>
 			<Czech>Upgrade %1 nelze poblíž udělat.</Czech>
@@ -12254,14 +12254,14 @@
 			<Czech>Začínám rozebírání %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_163">
-			<English>De-constructing %1 stage %2 of %3 walk away at anytime to cancel.</English>
+			<English>De-constructing %1, stage %2 of %3 walk away at anytime to cancel.</English>
 			<German>Abbau von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
 			<Russian>Разбор %1 стадия %2 из %3 уходите в любое время для отмены.</Russian>
 			<Dutch>Sloop van %1 bezig (%2 van %3) loop weg om te annuleren.</Dutch>
 			<Czech>Rozebírání %1, fáze %2 z %3. Kdykoliv se pohněte pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_164">
-			<English>%1 broke cannot remove %2.</English>
+			<English>%1 broke, cannot remove %2.</English>
 			<German>%1 wurde zerstört. %2 kann nicht mehr entfernt werden.</German>
 			<Russian>%1 сломан, нельзя убрать %2.</Russian>
 			<Dutch>%1 is kapot gegaan. kan %2 niet verwijderen.</Dutch>
@@ -12298,28 +12298,28 @@
 			<Czech>Pes snědl %1, ovšem stále není ochočen.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_175">
-			<English>%1 has been attached to Tow Truck.</English>
+			<English>%1 has been attached to the Tow Truck.</English>
 			<German>%1 ist mit dem Abschleppwagen befestigt.</German>
 			<Russian>%1 был взят на буксир.</Russian>
 			<Dutch>%1 is bevestigd aan de sleepwagen</Dutch>
 			<Czech>%1 byla připevněna k odtahovému vozidlu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_176">
-			<English>Failed to attach %1 to Tow Truck.</English>
+			<English>Failed to attach %1 to the Tow Truck.</English>
 			<German>Es war nicht möglich den/die %1 am Abschleppwagen zu befestigen.</German>
 			<Russian>Не удалось взять на буксир %1.</Russian>
 			<Dutch>Het is niet gelukt om %1 aan de sleepwagen te bevestigen.</Dutch>
 			<Czech>Nepodařilo se zaháknout %1 k odtahovému vozidlu.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_177">
-			<English>%1 too large and cannot be towed.</English>
+			<English>%1 is too large and cannot be towed.</English>
 			<German>%1 ist zu groß und kann nicht abgeschleppt werden.</German>
 			<Russian>%1 слишком большой и не может буксироваться.</Russian>
 			<Dutch>%1 is te groot om te slepen.</Dutch>
 			<Czech>%1 je příliž velký a nedá se odtáhnout.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_178">
-			<English>%1 has been detached from Tow Truck.</English>
+			<English>%1 has been detached from the Tow Truck.</English>
 			<German>%1 wird vom Abschleppwagen getrennt.</German>
 			<Russian>%1 был снят с буксира.</Russian>
 			<Dutch>%1 is losgemaakt van de sleepwagen.</Dutch>
@@ -12340,7 +12340,7 @@
 			<Czech>Prodáno %1 %2 za %3 %4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_182">
-			<English>Cannot sell %1, tires are too damaged.</English>
+			<English>Cannot sell %1, the tires are too damaged.</English>
 			<German>Kann nicht %1 verkaufen, da die Reifen zu sehr beschädigt sind.</German>
 			<Russian>Нельзя продать %1, колёса слишком повреждены.</Russian>
 			<Dutch>Kan %1 niet verkopen, banden hebben teveel schade.</Dutch>
