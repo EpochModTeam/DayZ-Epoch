@@ -73,7 +73,8 @@
 [FIXED] Bandit1_DZ and Bandit2_DZ were the same. Bandit1_DZ is back to the normal non-camo skin now. #1874 @DeVloek
 [FIXED] If a player force kills their game immediately after dying their body will no longer disappear. #1825 @looter809
 [FIXED] Some AI behavior was broken due to RadioProtocolEmpty. Unfortunately this reintroduces group chat spam.
-[FIXED] You can no longer pack your tent while sleeping.
+[FIXED] Players can no longer pack a tent while sleeping.
+[FIXED] Players can no longer walk under water at Topolka Dam. @Bruce-LXXVI
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade

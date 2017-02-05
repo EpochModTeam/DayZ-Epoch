@@ -181,5 +181,6 @@
 	["WaterHoleProxy",[4420.2,3962.4,-0.1],0],
 	["WaterHoleProxy",[4044.5,3327.4,0],0],
 	["WaterHoleProxy",[4602.9,2745.4,0],0],
-	["WaterHoleProxy",[2588,5941,1],0]
+	["WaterHoleProxy",[2588,5941,1],0],
+	["MAP_pond_big_01",[10299.095,3659.8674,2.4993041],0] //Blocks Topolka Dam walk under water glitch
 ],true,true,true] call fnc_spawnObjects;
