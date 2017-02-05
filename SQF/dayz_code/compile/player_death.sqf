@@ -1,4 +1,4 @@
-private ["_ammo","_body","_distance","_infected","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method"];
+private ["_ammo","_body","_distance","_infected","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method","_realSource"];
 
 if (deathHandled) exitWith {};
 deathHandled = true;
@@ -81,6 +81,7 @@ if (!local _source && isPlayer _source && !(_body isKindOf "PZombie_VB")) then {
 	//if you are a bandit or start first - player will not recieve humanity drop
 	_punishment = (_isBandit or {_body getVariable ["OpenTarget",false]});
 	_humanityHit = 0;
+	_realSource = effectiveCommander vehicle _source;
 
 	if (!_punishment) then {
 		//I'm "not guilty" - kill me and be punished
@@ -89,18 +90,18 @@ if (!local _source && isPlayer _source && !(_body isKindOf "PZombie_VB")) then {
 		// punish my killer 2000 for shooting a surivor
 		// but subtract 500 for each survivor I've murdered
 		_humanityHit = -(2000 - _myKills);
-		_kills = _source getVariable ["humanKills",0];
-		_source setVariable ["humanKills",(_kills + 1),true];
-		PVDZ_send = [_source,"Humanity",[_humanityHit,300]];
+		_kills = _realSource getVariable ["humanKills",0];
+		_realSource setVariable ["humanKills",(_kills + 1),true];
+		PVDZ_send = [_realSource,"Humanity",[_humanityHit,300]];
 		publicVariableServer "PVDZ_send";
 	} else {
 		//i'm "guilty" - kill me as bandit
-		_killsV = _source getVariable ["banditKills",0];
-		_source setVariable ["banditKills",(_killsV + 1),true];
+		_killsV = _realSource getVariable ["banditKills",0];
+		_realSource setVariable ["banditKills",(_killsV + 1),true];
 	};
 	
 	//Setup for study bodys.
-	_body setVariable ["KillingBlow",[_source,_punishment],true];
+	_body setVariable ["KillingBlow",[_realSource,_punishment],true];
 };
 
 disableSerialization;

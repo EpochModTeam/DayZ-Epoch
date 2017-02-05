@@ -95,7 +95,7 @@ if (_unit == player) then {
 			//if player is not free to shoot at inform server that _source shot at player
 			if (!_isBandit && !(player getVariable ["OpenTarget",false])) then
 			{
-				PVDZ_send = [_source,"OpenTarget",[]];
+				PVDZ_send = [(effectiveCommander vehicle _source),"OpenTarget",[]];
 				publicVariableServer "PVDZ_send";
 			};
 
@@ -121,7 +121,7 @@ if (_unit == player) then {
                     };
                     // In the case of outrageous damage (crashes, explosions, desync repeated headshots); cap the limit on humanity lost. 
 
-                [_source,_humanityHit] spawn {  
+                [(effectiveCommander vehicle _source),_humanityHit] spawn {  
                     private ["_source","_humanityHit"];
                     _source = _this select 0;
                     _humanityHit = _this select 1;
