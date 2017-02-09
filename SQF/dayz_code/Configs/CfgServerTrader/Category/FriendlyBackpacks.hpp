@@ -29,6 +29,11 @@ class Category_538 {
 		buy[] = {8,"ItemSilverBar10oz"};
 		sell[] = {4,"ItemSilverBar10oz"};
 	};
+	class DZ_CompactPack_EP1 {
+		type = "trade_backpacks";
+		buy[] = {1,"ItemGoldBar"};
+		sell[] = {5,"ItemSilverBar10oz"};
+	};	
 	class DZ_British_ACU {
 		type = "trade_backpacks";
 		buy[] = {4,"ItemGoldBar"};
