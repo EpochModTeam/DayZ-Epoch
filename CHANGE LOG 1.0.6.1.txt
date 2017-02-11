@@ -9,6 +9,7 @@
 [NEW] Added military flashlight attachments
 [NEW] Added full screen night vision goggles, classname: "NVGoggles_DZE" (must be added to traders by server owners) @icomrade
 [NEW] Added setting to easily disable base takeover and configure which items are removable without ownership or access. See DZE_restrictRemoval in configVariables.sqf. #1886 @AirwavesMan @oiad
+[NEW] Map markers are now automatically tagged with the name of the player who placed them. This can be easily removed or customized by admins. #1871 @looter809
 
 [CHANGED] Turbo and HoldBreath keybindings are now allowed again. @icomrade
 [CHANGED] Commented drink from hands at ponds due to client FPS impact. Players can still fill drinks at ponds by right clicking a container. #1816

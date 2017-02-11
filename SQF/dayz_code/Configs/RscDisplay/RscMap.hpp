@@ -27,8 +27,6 @@ class RscDisplayMainMap
 			h = "0.832";
 			colorBackground[] = {0.30,0.30,0.30,0.85};
 		};
-		
-		
 		class DiaryList: RscIGUIListBox
 		{
 			idc = 1001;
@@ -42,4 +40,10 @@ class RscDisplayMainMap
 			h = "0";
 		};
 	};
+};
+
+class RscDisplayInsertMarker
+{
+	idd = 54;
+	onUnload = "if (!isNil 'player_markMap') then {(_this select 0) call player_markMap;};";
 };
