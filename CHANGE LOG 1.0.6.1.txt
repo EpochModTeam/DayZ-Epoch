@@ -83,6 +83,7 @@
 [FIXED] Error handling upgraded 1051 databases that resulted in a <null> value for "rh_factor" and array for "bloodtype" in character_data medical field. @ebayShopper
 [FIXED] Error in server_playerSetup that resulted in a <null> value for dayz_onBack in character_data inventory if player had no weapon on back. @ebayShopper 
 [FIXED] Doors and plots not getting cleaned up properly. See new MaintenanceObjects variable and explanation in HiveExt.ini. @icomrade
+[FIXED] server_PublishVehicle3 will no longer dupe a vehicle if it fails to read the vehicle back from the database. @oiad
 
 [REMOVED] Antiwall glitch blocks for vanilla hospitals since Epoch uses DayZero hospitals. @jOoPs
 [REMOVED] "Take ownership" on plot pole due to it being unnecessary and causing base objects to duplicate. #1811 @BNG-Lance @Clanwarfare

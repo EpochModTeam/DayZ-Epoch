@@ -80,7 +80,10 @@ _key call server_hiveWrite;
 	};
 
 	if (!_done) exitWith {
-		diag_log("CUSTOM: failed to get id for : " + str(_uid));
+		diag_log("HIVE-pv3: failed to get id for : " + str(_uid));
+		_key = format["CHILD:310:%1:",_uid];
+		_key call server_hiveWrite;
+		
 		dze_waiting = "fail";
 		(owner _activatingPlayer) publicVariableClient "dze_waiting";
 	};
@@ -102,6 +105,7 @@ _key call server_hiveWrite;
 
 	// remove old vehicle from DB
 	[_objectID,_objectUID,_activatingPlayer] call server_deleteObj;
+	uiSleep 1;
 
 	// switch var to new vehicle at this point.
 	_object = _newobject;
@@ -137,9 +141,7 @@ _key call server_hiveWrite;
 	} count _objWpnTypes;
 
 	_object setVariable ["ObjectID", _oid, true];
-	
 	_object setVariable ["lastUpdate",time];
-	
 	_object setVariable ["CharacterID", _characterID, true];
 
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
