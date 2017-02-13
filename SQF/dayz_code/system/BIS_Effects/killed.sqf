@@ -17,7 +17,7 @@ if (!DZE_NoVehicleExplosions) then {
 		["Eject", _v] call BIS_Effects_globalEvent;
 		if ((random _int)>2.2) then
 		{
-			_b = createVehicle ["SmallSecondary", (getPosATL _v), [], 0, "CAN_COLLIDE"];
+			_b = "SmallSecondary" createvehicle (getpos _v);
 		};
 	};
 } else {

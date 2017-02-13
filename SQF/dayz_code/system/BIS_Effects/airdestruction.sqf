@@ -7,8 +7,11 @@ _i = 0;
 _dr = 0.2;
 _tv = 11;
 
+// No explosion CorePatch flag
+_no_explosion = getNumber(configFile >> "CfgVehicles" >> typeOf _v >> "NoDestructionExplosion_CP") > 0;
+
 if (!isDedicated) then {
-	_fl = "#particlesource" createVehicleLocal getPosATL _v;
+	_fl = "#particlesource" createVehicleLocal getpos _v;
 	_fl attachto [_v,[0,0,0],"destructionEffect2"];
 	_fl setParticleRandom [0.3, [1, 1, 0], [0, 0, 0], 0, 0.3, [0, 0, 0, 0], 0, 0];
 	_fl setParticleParams [["\Ca\Data\ParticleEffects\Universal\Universal", 16, 10, 32], "", "Billboard", 1, 2, "destructionEffect2",
@@ -16,7 +19,7 @@ if (!isDedicated) then {
 					[1, 1, 1, -1], [1, 1, 1, -0.5], [1, 1, 1, -0]], [1,0.5], 1, 0, "", "", _v];
 	_fl setDropInterval 1;
 
-	_sm = "#particlesource" createVehicleLocal getPosATL _v;
+	_sm = "#particlesource" createVehicleLocal getpos _v;
 	_sm attachto [_v,[0,0,0],"destructionEffect1"];
 	_sm setParticleRandom [2, [2, 2, 0], [0, 0, 0], 0, 0.3, [0, 0, 0, 0.1], 0, 0];
 	_sm setParticleParams [["\Ca\Data\ParticleEffects\Universal\Universal", 16, 7, 48], "", "Billboard", 1, 5, "destructionEffect1",
@@ -24,24 +27,30 @@ if (!isDedicated) then {
 					[0.45, 0.45, 0.45, 1],[0.6, 0.6, 0.6, 0.6], [0.7, 0.7, 0.7, 0.25], [1, 1, 1, 0]], [0.8,0.3,0.25], 1, 0, "", "", _v];
 	_sm setDropInterval 1;
 };
-
 removeallweapons _v;
-if (local _v) then {_expl = createVehicle ["HelicopterExploSmall", (getPosATL _v), [], 0, "CAN_COLLIDE"];};
-
-if (!isDedicated) then {
-	while {(_i < 1200) && ((((velocity _v) select 2) < -20) || (((getPosATL _v) select 2) > 8)) && !(alive _v) && !(isnull _v) && (((getPosATL _v) select 2) > 1)} do
-	{
-		_velocity = velocity _v;
-		_tv = (abs(_velocity select 0) + abs(_velocity select 1) + abs(_velocity select 2));
-		if (_tv > 2) then {_dr = (1/_tv)} else {_dr = 1};
-		_fl setDropInterval _dr;
-		_sm setDropInterval _dr;
-		_i = _i + 1;
-		sleep 0.2;
-	};
+if ((local _v) && !_no_explosion) then {
+	_trig = "EmptyDetector" createVehicleLocal [0,0,0];
+	_trig setTriggerArea [0,0,0,false];
+	_trig setVariable ["obj", _v];
+	_trig setTriggerStatements ["
+		_v = thisTrigger getVariable [""obj"", objNull];
+		createVehicle [""HelicopterExploSmall"", getPos _v, [], 0, ""CAN_COLLIDE""] setPosATL getPosATL _v;
+		deleteVehicle thisTrigger;
+	", "", ""];
 };
 
-_pos = getPosATL _v;
+while {_i <1200 && ((velocity _v select 2)<-20 || (getpos _v select 2)>8) && !(alive _v) && !(isnull _v) && (getpos _v select 2)>1} do {
+	if(!isDedicated) then {
+		_tv = (abs(_velocity select 0) + abs(_velocity select 1) + abs(_velocity select 2));
+		if (_tv>2) then {_dr=1/_tv} else {_dr=1};
+		_fl setDropInterval _dr;
+		_sm setDropInterval _dr;
+	};
+	_i=_i+1;
+	sleep 0.2;
+};
+
+_pos = getpos _v;
 clearVehicleInit _v;
 
 if (!isDedicated) then {
@@ -49,9 +58,9 @@ if (!isDedicated) then {
 	deletevehicle _sm;
 };
 
-if (surfaceiswater(_pos) && {(_pos select 2 ) < 9} ) then {
+if((getTerrainHeightASL getPosASL _v < -1) && (getPosASL _v select 2 < 1)) then {
 	if (!isDedicated) then {
-		_wave = "#particlesource" createVehicleLocal (getPosATL _v);
+		_wave = "#particlesource" createVehicleLocal (getpos _v);
 		_wave attachto [_v,[0,0,0],"destructionEffect1"];
 		_wave setParticleRandom [0.3, [1, 1, 0], [0.5, 0.5, 0], 0, 0.3, [0, 0, 0, 0], 0, 0];
 		_wave setParticleParams [["\Ca\Data\ParticleEffects\Universal\Universal", 16, 12, 13,0], "", "Billboard", 1, 1.6, "destructionEffect1",
@@ -60,7 +69,7 @@ if (surfaceiswater(_pos) && {(_pos select 2 ) < 9} ) then {
 		_wave setparticlecircle [2,[0,16,0]];
 		_wave setDropInterval 0.0015;
 
-		_splash = "#particlesource" createVehicleLocal (getPosATL _v);
+		_splash = "#particlesource" createVehicleLocal (getpos _v);
 		_splash attachto [_v,[0,0,0],"destructionEffect1"];
 		_splash setParticleRandom [2, [2, 2, 0], [2, 2, 7], 0, 0.5, [0, 0, 0, 0], 0, 0];
 		_splash setParticleParams [["\Ca\Data\ParticleEffects\Universal\Universal", 16, 13, 6, 0], "", "Billboard", 1, 4, "destructionEffect1",
@@ -76,8 +85,19 @@ if (surfaceiswater(_pos) && {(_pos select 2 ) < 9} ) then {
 	if ((local _v) && {!isNull _v}) then {
 		_velz = (velocity _v) select 2;
 		if (_velz > 1) then {_v setvelocity [velocity _v select 0,velocity _v select 1,0]};
-		_expl = createVehicle ["HelicopterExploBig", [_pos select 0,_pos select 1,(_pos select 2) + 1], [], 0, "CAN_COLLIDE"];
+		//_expl = createVehicle ["HelicopterExploBig", [_pos select 0,_pos select 1,(_pos select 2) + 1], [], 0, "CAN_COLLIDE"];
+		if(!_no_explosion) then {
+			_trig = "EmptyDetector" createVehicleLocal [0,0,0];
+			_trig setTriggerArea [0,0,0,false];
+			_trig setVariable ["obj", _v];
+			_trig setTriggerStatements ["
+				_v = thisTrigger getVariable [""obj"", objNull];
+				_atl = getPosATL _v; _atl set [2, (_atl select 2) + 1];
+				createVehicle [""HelicopterExploBig"", getPos _v, [], 0, ""CAN_COLLIDE""] setPosATL _atl;
+				deleteVehicle thisTrigger;
+			", "", ""];
+		};
 		sleep 0.05;
-		["AirDestructionStage2", _v, _int, _t, (getPosATL _v)] call BIS_Effects_globalEvent;
+		["AirDestructionStage2", _v, _int, _t, (getPos _v)] call BIS_Effects_globalEvent;
 	};
 };

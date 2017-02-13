@@ -1,5 +1,5 @@
 BIS_Effects_Init = true;
-
+Corepatch_Effects_Init = true;
 if (isNil "BIS_Effects_Init_DZE") then {
 	BIS_Effects_Init_DZE = true;
 	diag_log "Res3tting B!S effects...";
@@ -56,6 +56,13 @@ if (isNil "BIS_Effects_Init_DZE") then {
 		};
 	};
 	"BIS_effects_gepv" addPublicVariableEventHandler {
-		(_this select 1) call BIS_Effects_startEvent;
+		if(time <= 0) then {
+			(_this select 1) spawn { //Fire in the sky bug fix
+				waitUntil {time > 0};
+				_this call BIS_Effects_startEvent;
+			};
+		} else {
+			(_this select 1) call BIS_Effects_startEvent;
+		};
 	};
 };
