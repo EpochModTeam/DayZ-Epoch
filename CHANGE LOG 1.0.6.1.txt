@@ -21,7 +21,7 @@
 [CHANGED] The town generator and comfrey plant spawner loops are now fully disabled when dayz_townGenerator=false; to improve client FPS. #1816
 [CHANGED] AntiTP and scheduled security are now fully disabled when dayz_antihack=0. #1816
 [CHANGED] Changed default value for the variable dayz_bleedingeffect to 2 (blood particle effect only) due to negative FPS impact. Set to 3 to enable blood stains again. #1816
-[CHANGED] Group icons have been moved to a separate slower loop and the group system is disabled by default. See configVariables.sqf to enable. #1816
+[CHANGED] Group icons have been moved to a separate slower loop which only runs when in a group, and the group system is disabled by default. See configVariables.sqf to enable. #1816
 [CHANGED] Flies now spawn ten minutes after death instead of right away. Flies are also disabled by default due to negative FPS impact. See init.sqf to enable. #1816
 [CHANGED] SpawnCheck for loot and zombies has been lowered to 200m and switched to nearObjects instead of nearestObjects (same as 1051) for better client FPS. #1816
 [CHANGED] Increased head shot damage for normal hits (non-zombie and non-melee)
@@ -76,6 +76,8 @@
 [FIXED] Some AI behavior was broken due to RadioProtocolEmpty. Unfortunately this reintroduces group chat spam.
 [FIXED] Players can no longer pack a tent while sleeping.
 [FIXED] Players can no longer walk under water at Topolka Dam. @Bruce-LXXVI
+[FIXED] server_PublishVehicle3 will no longer dupe a vehicle if it fails to read the vehicle back from the database. @oiad
+[FIXED] Panic sounds will no longer overlap when the player is attacked by zombies. #1861 @DeVloek
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
@@ -83,7 +85,6 @@
 [FIXED] Error handling upgraded 1051 databases that resulted in a <null> value for "rh_factor" and array for "bloodtype" in character_data medical field. @ebayShopper
 [FIXED] Error in server_playerSetup that resulted in a <null> value for dayz_onBack in character_data inventory if player had no weapon on back. @ebayShopper 
 [FIXED] Doors and plots not getting cleaned up properly. See new MaintenanceObjects variable and explanation in HiveExt.ini. @icomrade
-[FIXED] server_PublishVehicle3 will no longer dupe a vehicle if it fails to read the vehicle back from the database. @oiad
 
 [REMOVED] Antiwall glitch blocks for vanilla hospitals since Epoch uses DayZero hospitals. @jOoPs
 [REMOVED] "Take ownership" on plot pole due to it being unnecessary and causing base objects to duplicate. #1811 @BNG-Lance @Clanwarfare
