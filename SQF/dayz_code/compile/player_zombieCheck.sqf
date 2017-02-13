@@ -131,9 +131,11 @@ if (_attacked) then {
 		[_refObj, "scream", 6, false] call dayz_zombieSpeak;
 	} else {
 		_lowBlood = (r_player_blood / r_player_bloodTotal) < 0.5;
-		if (_lowBlood) then {
+		if (diag_ticktime - dayz_panicCooldown > 9 && _lowBlood) then {
+			//Prevents overlapping sounds (panic tracks are 4-9s, this script is called every 1s)
+			//50% chance every 9s
 			dayz_panicCooldown = diag_ticktime;
-			[_refObj, "panic", 6, false] call dayz_zombieSpeak;
+			[_refObj, "panic", 1, false] call dayz_zombieSpeak;
 		};
 	};
 };
