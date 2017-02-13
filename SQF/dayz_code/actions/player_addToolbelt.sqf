@@ -7,6 +7,12 @@ _item = _this;
 _config = configFile >> "cfgWeapons" >> _item;
 _onBack = dayz_onBack in MeleeWeapons;
 
+//Check if toolbelt is full before removing melee
+if (getNumber (_config >> "type") == 1 && ({getNumber (configFile >> "CfgWeapons" >> _x >> "type") == 131072} count (weapons player)) >= 12) exitWith {
+	localize "str_player_24" call dayz_rollingMessages;
+	dayz_actionInProgress = false;
+};
+
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages; dayz_actionInProgress = false;};
 

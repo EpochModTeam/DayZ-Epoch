@@ -78,6 +78,7 @@
 [FIXED] Players can no longer walk under water at Topolka Dam. @Bruce-LXXVI
 [FIXED] server_PublishVehicle3 will no longer dupe a vehicle if it fails to read the vehicle back from the database. @oiad
 [FIXED] Panic sounds will no longer overlap when the player is attacked by zombies. #1861 @DeVloek
+[FIXED] Melee weapons will no longer be eaten when attempting to add them to a full toolbelt.
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
