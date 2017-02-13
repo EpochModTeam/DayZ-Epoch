@@ -41,7 +41,9 @@ dayz_promotePlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\grou
 dayz_rejectGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\reject.sqf";
 dayz_groupInit = true;
 
-execVM "\z\addons\dayz_code\groups\groupTags.sqf";
+if (count (units group player) > 1) then {
+	dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
+};
 
 if (dayz_requireRadio or {dayz_markGroup > 0} or {dayz_markSelf > 0} or {dayz_markBody > 0}) then {
 	execVM "\z\addons\dayz_code\groups\groupMarkers.sqf";

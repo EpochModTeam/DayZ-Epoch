@@ -13,4 +13,7 @@ dayz_groupDisbandThread = _group spawn {
 	
 	{[_x] joinSilent grpNull} count (units _this);
 	deleteGroup _this;
+	
+	terminate dayz_groupTags;
+	80000 cutText ["","PLAIN"];
 };

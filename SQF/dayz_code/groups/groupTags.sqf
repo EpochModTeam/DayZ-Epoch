@@ -3,7 +3,7 @@ private ["_display","_distance","_group","_icon","_index","_pos","_scale","_scre
 while {true} do {
 	_group = player call dayz_filterGroup;
 	
-	if (!visibleMap && count _group > 1 && cameraView in ["INTERNAL","EXTERNAL","GUNNER"]) then {
+	if (!visibleMap && count _group > 1) then { //Use (&& cameraView != "GROUP") if tactical view is allowed (blocked by default)
 		80000 cutRsc ["DZ_GroupTags","PLAIN"];
 		
 		_display = uiNamespace getVariable "DZ_GroupTags";
