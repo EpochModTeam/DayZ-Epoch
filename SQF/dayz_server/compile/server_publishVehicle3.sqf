@@ -105,7 +105,6 @@ _key call server_hiveWrite;
 
 	// remove old vehicle from DB
 	[_objectID,_objectUID,_activatingPlayer] call server_deleteObj;
-	uiSleep 1;
 
 	// switch var to new vehicle at this point.
 	_object = _newobject;

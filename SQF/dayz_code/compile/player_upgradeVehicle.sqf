@@ -130,10 +130,16 @@ if (_IsNearVehicle >= 1) then {
 						PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,true,_objectCharacterID,player];
 						publicVariableServer "PVDZE_veh_Upgrade";
 
-						localize "STR_EPOCH_VEHUP_SUCCESS" call dayz_rollingMessages;
-						
 						//Wait for hive to finish spawning vehicle. Prevents dupe via player queuing multiple upgrades.
 						waitUntil {!isNil "dze_waiting"};
+
+						if (dze_waiting == "fail") then {
+						    {player addMagazine _x;} count _temp_removed_array_mag;
+    						{player addWeapon _x;} count _temp_removed_array_wep;
+    						format[localize "str_crafting_failed",_newclassname] call dayz_rollingMessages;
+						} else {
+    						localize "STR_EPOCH_VEHUP_SUCCESS" call dayz_rollingMessages;
+						};
 					};
 				}
 				else {
