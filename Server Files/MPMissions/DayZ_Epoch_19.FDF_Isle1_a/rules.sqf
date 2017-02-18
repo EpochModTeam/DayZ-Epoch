@@ -1,7 +1,5 @@
 private ["_messages","_timeout"];
 
-waitUntil {uiSleep 1; !isNil ("Dayz_loginCompleted")};
-
 _messages = [
 	["DayZ Epoch", "Welcome "+(name player)],
 	["World", worldName],
