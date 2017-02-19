@@ -4,7 +4,8 @@ Construction[] =
 	{Loot_MAGAZINE,		9,		ItemPlank},
 	{Loot_MAGAZINE,		5,		ItemStone}, // Used for crafting and vanilla buildables
 	{Loot_MAGAZINE,		8,		equip_nails},
-	//{Loot_MAGAZINE,		9,		equip_metal_sheet_rusted},
+//	{Loot_MAGAZINE,		3,		ItemScrews},
+//	{Loot_MAGAZINE,		9,		equip_metal_sheet_rusted},
 	{Loot_MAGAZINE,		9,		equip_metal_sheet},
 	{Loot_MAGAZINE,		1,		equip_lever},
 	{Loot_MAGAZINE,		1,		ItemComboLock},
@@ -25,7 +26,6 @@ Construction[] =
 	{Loot_MAGAZINE,		1,		equip_brick},
 	{Loot_MAGAZINE,		3,		equip_duct_tape},
 	{Loot_MAGAZINE,		2,		equip_hose},
-//	{Loot_MAGAZINE,		3,		ItemScrews},
 //	{Loot_MAGAZINE,		1,		equip_scrapelectronics},
 	{Loot_MAGAZINE,		2,		equip_1inch_metal_pipe},
 	{Loot_MAGAZINE,		2,		equip_2inch_metal_pipe},

@@ -23,7 +23,7 @@ Metal Defaults - [Object,[High Explosive(0.5),Medium Explosive(0.25),Melee damag
 		_damage = switch (1==1) do {
 			case (((_this select 0) select 4) in ["PipeBomb"]): { (((_this select 0) select 1) select 0) }; //0.5 High explosive
 			case (((_this select 0) select 4) in ["explosive_bolt"]): { (((_this select 0) select 1) select 1) }; //0.25 Medium explosive, maybe grenades and other such items.
-			case (((_this select 0) select 4) in ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]): { (((_this select 0) select 2) + random(0.05) }; //0.00001 Melee damage, 
+			case (((_this select 0) select 4) in ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]): { ((_this select 0) select 2) }; //0.00001 Melee damage, 
 			//default { 0 };
 		};
 
@@ -75,9 +75,12 @@ _obj = ((_this select 0) select 0);
 _damage = switch (1==1) do {
 	case (((_this select 0) select 4) in ["PipeBomb"]): { ((_this select 1) select 0) }; //0.5 High explosive
 	case (((_this select 0) select 4) in ["explosive_bolt"]): { ((_this select 1) select 1) }; //0.25 Medium explosive, maybe grenades and other such items.
-	case (((_this select 0) select 4) in ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]): { ((_this select 1) select 2) + random(0.0005) }; //0.00001 Melee damage, 
+	case (((_this select 0) select 4) in ["Hatchet_Swing_Ammo","Crowbar_Swing_Ammo","Machete_Swing_Ammo"]): { ((_this select 1) select 2) }; //0.00001 Melee damage, 
 	//default { 0 };
 };
+
+//Just incase damage from melee is 0 (higher tier fences have no melee damage) we return false
+if (_damage == 0) then { _damage = false; }; 
 
 /*
 	//Server running or client

@@ -1,17 +1,13 @@
 /*
-    This script is not part of dayz permission must be given to use. r4z0r49@gmail.com or skype me R4Z0R49.
-    
     Simple class system to use this script.
     class Upgrade {
         requiredTools[] = {"ItemToolbox"};
         requiredParts[] = {"equip_crate","PartWoodPile"};
         create = "TentStorage1";
     };
-    
-    debugged by facoptere@gmail.com
 */
 
-private ["_cursorTarget","_type","_class","_requiredTools","_requiredParts","_upgradeType","_producedParts","_randomCreate",
+private ["_nearByChoppers","_cursorTarget","_type","_class","_requiredTools","_requiredParts","_upgradeType","_producedParts","_randomCreate",
 	"_upgradeClass","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_objectID","_objectUID",
 	"_ownerArray","_ownerPasscode","_dir","_vector","_object","_puid","_clanArray","_wh","_variables"];
 
@@ -22,6 +18,9 @@ if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
     _cursorTarget = if (count _cursorTarget == 0) then { objNull } else { _cursorTarget select 0 };
 };
 if (isNull _cursorTarget) exitWith {};
+
+_nearByChoppers = _cursorTarget nearObjects ["Helicopter", 10];
+if (count _nearByChoppers > 1) exitwith { localize "str_upgradevehctooClose" call dayz_rollingMessages; };
 
 _type = typeof _cursorTarget;
 _class = configFile >> "CfgVehicles" >> _type;
