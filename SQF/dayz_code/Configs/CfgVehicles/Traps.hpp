@@ -335,7 +335,7 @@ class TrapTripwireGrenade : TrapItems {
 
 	script = "tripgrenade"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
-	singleUse = 0;
+	singleUse = 1;
 	requireplot = 0;
 	constructioncount = 1;
 
@@ -387,7 +387,7 @@ class TrapTripwireSmoke : TrapItems {
 
 	script = "tripsmoke"; // compiled script variable name (used by server side loop)
 	initState = 1; // initial armed state
-	singleUse = 0;
+	singleUse = 1;
 	requireplot = 0;
 	constructioncount = 1;
 
