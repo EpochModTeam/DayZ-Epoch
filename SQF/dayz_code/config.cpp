@@ -93,7 +93,7 @@ class CfgAddons
 };
 
 class DefaultEventhandlers {
-	init = "if (isNil 'BIS_Effects_Init_DZE') then {[] call compile preProcessFileLineNumbers '\z\addons\dayz_code\system\BIS_Effects\init.sqf';};";
+	init = "if (isNil 'BIS_Effects_Init_DZ') then {[] call compile preProcessFileLineNumbers '\z\addons\dayz_code\system\BIS_Effects\init.sqf';};";
 };
 
 #include "Configs\rscTitles.hpp"
