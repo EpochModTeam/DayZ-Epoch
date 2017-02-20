@@ -125,9 +125,18 @@ sched_medical_effectsSlow = {
 	// every 10 seconds
 	HIDE_FSM_VARS
 
-	if (r_player_infected and !r_player_unconscious and 1 > random 2 and ((vehicle player == player and speed player < 5) or (vehicle player != player))) then {
-		[player,"cough",1,false] call dayz_zombieSpeak;
-		addCamShake [2, 1, 25];
+	if (!r_player_unconscious && (r_player_infected or r_player_inpain)) then {
+		//Original pain shake was stronger [2, 1, 25]
+		//Low blood still uses strong shake in init_medical.sqf
+		addCamShake [1, 1, 20];
+		
+		if (!r_player_infected) then {
+			playSound "breath_1"; //In pain
+		} else {
+			if (1 > random 2 && (speed player < 5 or {vehicle player != player})) then {
+				[player,"cough",1,false] call dayz_zombieSpeak;
+			};
+		};
 	};
 
 	objNull
