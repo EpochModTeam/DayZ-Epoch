@@ -6,7 +6,8 @@
 	onlyForPlayer = 1;\
 	shortcut = "";\
 	condition = "(['Repair',this] call userActionConditions)";\
-	statement = "this call player_repairVehicle;"
+	statement = "this call player_repairVehicle;";\
+	hideOnUse = 0
 
 #define ACTION_SALVAGE displayName = $STR_ACTIONS_SALVAGEVEH;\
 	displayNameDefault = $STR_ACTIONS_SALVAGEVEH;\
@@ -16,7 +17,8 @@
 	onlyForPlayer = 1;\
 	shortcut = "";\
 	condition = "(['Salvage',this] call userActionConditions)";\
-	statement = "this call player_salvageVehicle;"
+	statement = "this call player_salvageVehicle;";\
+	hideOnUse = 0
 	
 #define ACTION_PUSH displayName = $STR_ACTIONS_PUSH;\
 	displayNameDefault = $STR_ACTIONS_PUSH;\
