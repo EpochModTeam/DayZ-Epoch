@@ -81,13 +81,13 @@ if (isServer) then {
 	"PVDZ_plr_SwitchMove"	addPublicVariableEventHandler {((_this select 1) select 0) switchMove ((_this select 1) select 1);}; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
 	"PVDZ_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj}; //Used by built items (Epoch and Vanilla)
 	"PVDZ_veh_Save" 		addPublicVariableEventHandler {(_this select 1) call server_updateObject};
-	"PVDZ_fence_Update"		addPublicVariableEventHandler {(_this select 1) call server_addtoFenceUpdateArray};
+	//"PVDZ_fence_Update"		addPublicVariableEventHandler {(_this select 1) call server_addtoFenceUpdateArray};
 	"PVDZ_plr_Login1"		addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
 	"PVDZ_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
 	"PVDZ_plr_LoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
 	"PVDZ_obj_Destroy"		addPublicVariableEventHandler {(_this select 1) call server_deleteObj};
 	"PVDZ_send" addPublicVariableEventHandler {(_this select 1) call server_sendToClient};
-	"PVDZ_dayzCarBomb" addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
+	//"PVDZ_dayzCarBomb" addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\actions\detonate_bomb.sqf";};
 	//[player,[medical Array]];
 	"PVDZ_playerMedicalSync" addPublicVariableEventHandler { (_this select 1) call server_medicalSync; ((_this select 1) select 0) setVariable["Medical",((_this select 1) select 1),false]; }; //diag_log format["%1 - %2",((_this select 1) select 0),((_this select 1) select 1)]; };
 	
@@ -105,16 +105,18 @@ if (isServer) then {
 	};
 
 	//Added as part of the maintenance system to allow the server to replace the damaged model with a normal model.
-	"PVDZ_object_replace" addPublicVariableEventHandler {
-		_cursorTarget = _this select 1;
-		_vars = ((_this select 1) select 0) getVariable "MaintenanceVars";
+	/*"PVDZ_object_replace" addPublicVariableEventHandler {
+		_object = _this select 1;
+		_vars = _object getVariable "MaintenanceVars";
+		_ownerArray = _object getVariable ["ownerArray",[]];
 		
-		if (!isNil "_vars" && _cursorTarget isKindOf "DZ_buildables") then {
-			deleteVehicle ((_this select 1) select 0);
-			_object = createVehicle [(_vars select 0), (_vars select 1), [], 0, if (_type in DayZ_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
+		if (!isNil "_vars" && _object isKindOf "DZ_buildables") then {
+			deleteVehicle _object;
+			_object = createVehicle [(_vars select 0), (_vars select 1), [], 0, if ((_vars select 0) in DayZ_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
 			_object setVariable["Maintenance",false,true];
+			_object setVariable["ownerArray", _ownerArray, true];
 		};
-	};
+	};*/
 	
 	"PVDZ_sendUnconscious" addPublicVariableEventHandler {	
 		_owner = (_this select 1) select 0;
@@ -207,16 +209,16 @@ if (isServer) then {
 		*/
 	};
 	
-	"PVDZ_Server_LogIt" addPublicVariableEventHandler {
+	/*"PVDZ_Server_LogIt" addPublicVariableEventHandler {
 		_unitSending = _this select 0;
 		_info = _this select 1;
 		
 		diag_log format["WARNING: %1",_info];
-	};
+	};*/
 	
-	"PVDZ_Server_processSetAccessCode" addPublicVariableEventHandler {(_this select 1) call pvs_processSetAccessCode};
+	//"PVDZ_Server_processSetAccessCode" addPublicVariableEventHandler {(_this select 1) call pvs_processSetAccessCode};
 	
-	"PVDZ_Server_processCode" addPublicVariableEventHandler {(_this select 1) call pvs_processAccessCode};
+	//"PVDZ_Server_processCode" addPublicVariableEventHandler {(_this select 1) call pvs_processAccessCode};
 	
 	/*
 	"PVDZ_Server_processSetAccessCode" addPublicVariableEventHandler {
@@ -252,10 +254,10 @@ if (isServer) then {
 	};
 	*/
 	
-	"PVDZ_Server_buildLock" addPublicVariableEventHandler {
+	/*"PVDZ_Server_buildLock" addPublicVariableEventHandler {
 		_object = (_this select 1) select 0;
 		[_object,"buildLock"] call server_updateObject;
-	};
+	};*/
 };
 
 //Client only
@@ -304,11 +306,10 @@ if (!isDedicated) then {
 		_unit setVariable ["NORRN_unconscious", true, true];
 	};
 	
-	"PVCDZ_Client_processCode" addPublicVariableEventHandler {
+	/*"PVCDZ_Client_processCode" addPublicVariableEventHandler {
 		_object = (_this select 1) select 0;
 		_result = (_this select 1) select 1;
 		_codeGuess = (_this select 1) select 2;
-	
 		
 		if (_result) then {
 			_object setVariable ["dayz_padlockLockStatus", false,true];
@@ -319,12 +320,12 @@ if (!isDedicated) then {
 			format[localize "STR_BLD_WRONG_COMBO",typeOf _object] call dayz_rollingMessages;
 			_object setVariable ["dayz_padlockHistory", _codeGuess, true];
 		};
-	};
+	};*/
 	
-	"PVCDZ_Client_processAccessCode" addPublicVariableEventHandler {
+	/*"PVCDZ_Client_processAccessCode" addPublicVariableEventHandler {
 		_codeGuess = (_this select 1) select 0;
 		format[localize "STR_BLD_COMBO_SET",_codeGuess] call dayz_rollingMessages;
-	};
+	};*/
 	
 	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgRolling or DZE_DeathMsgDynamicText) then {
 		"PVDZE_deathMessage" addPublicVariableEventHandler {(_this select 1) call dze_deathMessage};
