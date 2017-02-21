@@ -26,6 +26,7 @@
 [CHANGED] SpawnCheck for loot and zombies has been lowered to 200m and switched to nearObjects instead of nearestObjects (same as 1051) for better client FPS. #1816
 [CHANGED] Increased head shot damage for normal hits (non-zombie and non-melee)
 [CHANGED] Slightly increased damage from vehicle run over
+[CHANGED] Moved study body back to fn_selfActions for easy admin customization.
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper

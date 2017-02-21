@@ -73,7 +73,6 @@ class zZombie_Base : Zed_Base {
 			condition = "(['Butcher',this] call userActionConditions)";
 			statement = "this spawn player_butcher;";
 		};
-		delete StudyBody;
 	};
 	
 	class HitPoints {

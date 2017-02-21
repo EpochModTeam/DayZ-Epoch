@@ -6,7 +6,7 @@
 #define IS_PZOMBIE (player isKindOf "PZombie_VB")
 
 /*
-	(['StudyBody',this] call userActionConditions)
+	(['Butcher',this] call userActionConditions)
 	
 	Return - must be true for action to show.
 */
@@ -17,7 +17,6 @@ _action = _this select 0;
 _object = _this select 1;
 
 _show = switch _action do {
-	case "StudyBody": {!IS_ALIVE};
 	case "Butcher": {!IS_ALIVE && !IN_VEHICLE && CAN_DO && !(_object getVariable["meatHarvested",false]) && !IS_PZOMBIE};
 	case "Drink": {!IN_VEHICLE && CAN_DO && !dayz_isSwimming};
 	case "PushPlane": {IS_ALIVE && !IN_VEHICLE && CAN_DO && count crew _object == 0 && !isEngineOn _object && !IS_PZOMBIE};

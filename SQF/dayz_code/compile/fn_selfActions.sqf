@@ -476,6 +476,16 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		player removeAction s_player_sleep;
 		s_player_sleep = -1;
 	};
+	
+	//Study Body
+	if (_cursorTarget getVariable["bodyName",""] != "") then {
+		if (s_player_studybody < 0) then {
+			s_player_studybody = player addAction [localize "str_action_studybody", "\z\addons\dayz_code\actions\study_body.sqf",_cursorTarget, 0, false, true];
+		};
+	} else {
+		player removeAction s_player_studybody;
+		s_player_studybody = -1;
+	};
 /*	
 	//Carbomb
 	_hasCarBomb = "ItemCarBomb" in _magazinesPlayer;
@@ -1038,6 +1048,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_packtentinfected = -1;
 	player removeAction s_player_fillfuel;
 	s_player_fillfuel = -1;
+	player removeAction s_player_studybody;
+	s_player_studybody = -1;
 	//fuel
 	player removeAction s_player_fillfuel210;
 	s_player_fillfuel210 = -1;
