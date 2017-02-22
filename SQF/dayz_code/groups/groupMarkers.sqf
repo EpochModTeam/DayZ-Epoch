@@ -1,4 +1,4 @@
-private ["_count","_found","_group","_hasGPS","_index","_marker","_markBody","_markGroup","_markSelf","_pos","_self","_vehicle"];
+private ["_bodyCount","_count","_group","_hasGPS","_index","_marker","_markBody","_markGroup","_markSelf","_name","_pos","_self","_vehicle"];
 
 while {true} do {
 	_group = player call dayz_filterGroup;
@@ -9,7 +9,7 @@ while {true} do {
 		if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
 		localize "STR_EPOCH_RADIO_CONTACT_LOST" call dayz_rollingMessages;
 	} else {
-		if (visibleMap or !isNull findDisplay 88890) then {
+		if (visibleMap or !isNull (uiNameSpace getVariable["BIS_RscMiniMap",displayNull])) then {
 			_hasGPS = "ItemGPS" in items player;
 			_markBody = (dayz_markBody == 1 or (dayz_markBody == 2 && _hasGPS));
 			_markGroup = (dayz_markGroup == 1 or (dayz_markGroup == 2 && _hasGPS));
@@ -40,21 +40,27 @@ while {true} do {
 			dayz_oldMemberCount = _count;
 			
 			if (_markBody) then {
-				_found = false;
+				_bodyCount = 0;
+				_name = name player;
 				{
-					if (_x getVariable["bodyName",""] == name player) exitWith {
-						_found = true;
+					if (_x getVariable["bodyName",""] == _name) then {
+						_bodyCount = _bodyCount + 1;
 						_pos = [_x] call FNC_GetPos;
-						deleteMarkerLocal "MyBody";
-						_marker = createMarkerLocal ["MyBody",_pos];
+						deleteMarkerLocal format["MyBody%1",_bodyCount];
+						_marker = createMarkerLocal [format["MyBody%1",_bodyCount],_pos];
 						_marker setMarkerTypeLocal "DestroyedVehicle";
 						_marker setMarkerTextLocal localize "STR_EPOCH_RIP";
 						_marker setMarkerColorLocal "ColorRed";
 					};
 				} count allDead;
-				if (!_found) then {deleteMarkerLocal "MyBody";}; //Body was deleted or hidden
+				
+				// Remove markers for bodies that were deleted
+				if (dayz_oldBodyCount > _bodyCount) then {
+					for "_i" from _bodyCount to dayz_oldBodyCount do {deleteMarkerLocal format["MyBody%1",_i];};
+				};
+				dayz_oldBodyCount = _bodyCount;
 			} else {
-				deleteMarkerLocal "MyBody";
+				for "_i" from 1 to dayz_oldBodyCount do {deleteMarkerLocal format["MyBody%1",_i];};
 			};
 		};
 	};

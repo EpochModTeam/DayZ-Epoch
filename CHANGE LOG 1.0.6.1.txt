@@ -81,6 +81,8 @@
 [FIXED] Panic sounds will no longer overlap when the player is attacked by zombies. #1861 @DeVloek
 [FIXED] Melee weapons will no longer be eaten when attempting to add them to a full toolbelt.
 [FIXED] Updated to Sa-Matra's latest Core Patch BIS Effects which fix the fire in the sky bug again. #1883 @oiad @icomrade
+[FIXED] Mark body now marks all of your bodies instead of just one. @oiad
+[FIXED] Group and body markers correctly update on the GPS mini map now.
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade

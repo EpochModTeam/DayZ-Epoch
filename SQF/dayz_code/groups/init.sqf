@@ -24,6 +24,7 @@ if (count _savedGroup > 0 && {!dayz_requireRadio or {dayz_requireRadio && "ItemR
 	} count allGroups;
 };
 
+dayz_oldBodyCount = 0;
 dayz_oldGroupCount = 0;
 dayz_oldMemberCount = 0;
 dayz_disbandGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\disband.sqf";
