@@ -3,6 +3,7 @@ private ["_leader","_oldGroup","_savedGroup"];
 uiSleep 1;
 if (count (units group player) > 1) then {
 	[player] joinSilent grpNull;
+	diag_log "Clearing group";
 };
 
 _savedGroup = (PVCDZ_plr_Login select 10) - [getPlayerUID player];
@@ -42,7 +43,7 @@ dayz_promotePlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\grou
 dayz_rejectGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\reject.sqf";
 dayz_groupInit = true;
 
-if (count (units group player) > 1) then {
+if (!isNil "PVDZ_Server_UpdateGroup") then {
 	dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
 };
 
