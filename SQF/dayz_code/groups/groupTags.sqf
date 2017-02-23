@@ -1,4 +1,5 @@
 private ["_display","_distance","_group","_icon","_index","_pos","_scale","_screen","_text"];
+disableSerialization;
 
 while {true} do {
 	_group = player call dayz_filterGroup;
