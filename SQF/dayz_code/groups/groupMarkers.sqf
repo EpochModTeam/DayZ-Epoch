@@ -9,7 +9,7 @@ while {true} do {
 		if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
 		localize "STR_EPOCH_RADIO_CONTACT_LOST" call dayz_rollingMessages;
 	} else {
-		if (visibleMap or !isNull (uiNameSpace getVariable["BIS_RscMiniMap",displayNull])) then {
+		if (visibleMap or !isNull (uiNamespace getVariable["BIS_RscMiniMap",displayNull])) then {
 			_hasGPS = "ItemGPS" in items player;
 			_markBody = (dayz_markBody == 1 or (dayz_markBody == 2 && _hasGPS));
 			_markGroup = (dayz_markGroup == 1 or (dayz_markGroup == 2 && _hasGPS));

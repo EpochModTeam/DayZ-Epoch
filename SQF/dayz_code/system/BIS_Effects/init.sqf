@@ -30,7 +30,6 @@ if (isNil "BIS_Effects_Init_DZ") then {
 		BIS_effects_gepv = _this;
 		publicVariable "BIS_effects_gepv";
 		_this call BIS_Effects_startEvent;
-		
 	};
 	
 	BIS_Effects_startEvent =
@@ -38,13 +37,13 @@ if (isNil "BIS_Effects_Init_DZ") then {
 		private "_KillEject";
 		_KillEject = {
 			private "_cancel";
-			if (((vehicle player) == (_this select 0)) && {(vehicle player) != player} && {player in (crew (_This select 0))}) then {
+			if (((vehicle player) == (_this select 0)) && {(vehicle player) != player} && {player in (crew (_this select 0))}) then {
 				_cancel = false;
 				{
 					if ((isInTraderCity || !canbuild) && {(player distance (_x select 0)) < (_x select 1)}) exitWith {_cancel = true;};
 				} count DZE_SafeZonePosArray;
 				player action ["getOut", (_this select 0)];
-				if (!_cancel && {!((_this select 0) iskindof "car")}) then {
+				if (!_cancel && !((_this select 0) iskindof "car")) then {
 					[player, "explosion"] call player_death;
 				};
 			};
