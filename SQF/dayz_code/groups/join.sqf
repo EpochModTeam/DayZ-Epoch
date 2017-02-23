@@ -28,7 +28,7 @@ if (!isNull _inviter) then {
 	[player] joinSilent (group _inviter);
 	if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
 	
-	if (isNil "dayz_groupTags" or {scriptDone "dayz_groupTags"}) then {
+	if (isNil "dayz_groupTags" or {scriptDone dayz_groupTags}) then {
 		dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
 	};
 
