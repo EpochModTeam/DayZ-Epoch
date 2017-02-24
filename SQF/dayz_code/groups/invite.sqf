@@ -28,7 +28,3 @@ PVDZ_groupInvite = [true,_invite];
 publicVariableServer "PVDZ_groupInvite";
 
 systemChat format[localize "STR_EPOCH_INVITE_TO",name _recipient];
-
-if (isNil "dayz_groupTags" or {scriptDone dayz_groupTags}) then {
-	dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
-};

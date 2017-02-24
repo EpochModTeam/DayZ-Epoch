@@ -27,10 +27,6 @@ if (!isNull _inviter) then {
 	_oldGroup = group player;
 	[player] joinSilent (group _inviter);
 	if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
-	
-	if (isNil "dayz_groupTags" or {scriptDone dayz_groupTags}) then {
-		dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
-	};
 
 	// Update saved group in DB
 	PVDZ_Server_UpdateGroup = [1,player];

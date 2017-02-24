@@ -1,14 +1,20 @@
-private ["_bodyCount","_count","_group","_hasGPS","_index","_marker","_markBody","_markGroup","_markSelf","_name","_pos","_self","_vehicle"];
+private ["_bodyCount","_count","_group","_hasGPS","_index","_inGroup","_marker","_markBody","_markGroup","_markSelf","_name","_pos","_self","_vehicle"];
 
 while {true} do {
 	_group = player call dayz_filterGroup;
+	_inGroup = count _group > 1;
 
-	if (dayz_requireRadio && {count _group > 1} && {!("ItemRadio" in items player)}) then {
+	if (dayz_requireRadio && {_inGroup} && {!("ItemRadio" in items player)}) then {
 		[player] joinSilent grpNull;
-		_group = [];
 		if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
-		localize "STR_EPOCH_RADIO_CONTACT_LOST" call dayz_rollingMessages;
+		terminate dayz_groupTags;
+		80000 cutText ["","PLAIN"];
+		localize "STR_EPOCH_LOST_RADIO_CONTACT" call dayz_rollingMessages;
 	} else {
+		if (_inGroup && scriptDone dayz_groupTags) then {
+			dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
+		};
+		
 		if (visibleMap or !isNull (uiNamespace getVariable["BIS_RscMiniMap",displayNull])) then {
 			_hasGPS = "ItemGPS" in items player;
 			_markBody = (dayz_markBody == 1 or (dayz_markBody == 2 && _hasGPS));
