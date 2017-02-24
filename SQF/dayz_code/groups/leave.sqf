@@ -1,7 +1,7 @@
 private "_group";
 _group = units group player;
 
-if (count _group == 1 or (!isNil "dayz_groupLeaveThread" && {!scriptDone dayz_groupLeaveThread})) exitWith {};
+if (count _group == 1 or (!scriptDone dayz_groupLeaveThread)) exitWith {};
 
 dayz_groupLeft = nil;
 PVDZ_Server_UpdateGroup = [3,player];

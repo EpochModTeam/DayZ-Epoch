@@ -43,10 +43,9 @@ dayz_promotePlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\grou
 dayz_rejectGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\reject.sqf";
 dayz_groupInit = true;
 
-if (!isNil "PVDZ_Server_UpdateGroup") then {
-	dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
-};
+//Initialize as script data type, no scriptNull in A2
+dayz_groupDisbandThread = 0 spawn {};
+dayz_groupLeaveThread = 0 spawn {};
+dayz_groupTags = 0 spawn {};
 
-if (dayz_requireRadio or {dayz_markGroup > 0} or {dayz_markSelf > 0} or {dayz_markBody > 0}) then {
-	execVM "\z\addons\dayz_code\groups\groupMarkers.sqf";
-};
+execVM "\z\addons\dayz_code\groups\groupMarkers.sqf";
