@@ -51,7 +51,7 @@ _remove = {
 
 _trigger = {
 	if (isServer) then {
-		private ["_entity"];
+		private "_entity";
 		_entity = _this select 0;
 
 		[nil,_trap,rSAY,["z_trap_trigger_0",60]] call RE;
@@ -64,7 +64,7 @@ _trigger = {
 private ["_event", "_trap", "_args"];
 _event = _this select 0;
 _trap = if (typeOf (_this select 1) == "EmptyDetector") then { dayz_traps_active select (dayz_traps_trigger find (_this select 1)) } else { _this select 1 };
-_args = if (count _this > 2) then { _this select 2 } else { [] };
+_args = if (count _this > 2) then { _this select 2 } else { [objNull] };
 
 switch (_event) do {
 	case "init": {

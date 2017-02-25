@@ -50,18 +50,20 @@ _remove = {
 
 _trigger = {
 	if (isServer) then {
-		private ["_entity"];
+		private "_entity";
 		_entity = _this select 0;
 
 		_trap animate ["LeftShutter", 1];
 		_trap animate ["RightShutter", 1];
 
 		[nil,_trap,rSAY,["trap_bear_0",60]] call RE;
-
-		if (_entity isKindOf "Animal") then {
-			_entity setDamage 1;
-		} else {
-			[_entity, "Legs", [_entity]] call server_sendToClient;
+		
+		if (!isNull _entity) then {
+			if (_entity isKindOf "Animal") then {
+				_entity setDamage 1;
+			} else {
+				[_entity, "Legs", [_entity]] call server_sendToClient;
+			};
 		};
 
 		[_trap] call trigger_trap;
@@ -71,7 +73,7 @@ _trigger = {
 private ["_event", "_trap", "_args"];
 _event = _this select 0;
 _trap = if (typeOf (_this select 1) == "EmptyDetector") then { dayz_traps_active select (dayz_traps_trigger find (_this select 1)) } else { _this select 1 };
-_args = if (count _this > 2) then { _this select 2 } else { [] };
+_args = if (count _this > 2) then { _this select 2 } else { [objNull] };
 
 switch (_event) do {
 	case "init": {

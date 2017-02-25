@@ -85,6 +85,7 @@
 [FIXED] Mark body now marks all of your bodies instead of just one. @oiad
 [FIXED] Group and body markers correctly update on the GPS mini map now.
 [FIXED] Vehicle lock and unlock actions are now refreshed correctly without needing to look away and back again. @oiad
+[FIXED] A potential undefined error on bear trap trigger. @oiad
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
