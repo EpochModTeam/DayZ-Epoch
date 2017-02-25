@@ -9,10 +9,13 @@
 	};
 	
 */
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
+
 private ["_cursorTarget","_item","_classname","_requiredTools","_requiredParts","_upgrade","_upgradeConfig",
 "_upgradeDisplayname","_onLadder","_isWater","_upgradeParts","_startUpgrade","_missingPartsConfig","_textMissingParts","_dis",
 "_sfx","_ownerID","_objectID","_objectUID","_alreadyupgrading","_dir","_weapons","_magazines","_backpacks","_object",
-"_objWpnTypes","_objWpnQty","_countr","_itemName","_vector"];
+"_objWpnTypes","_objWpnQty","_countr","_itemName","_vector","_playerNear"];
 
 _cursorTarget = _this select 3;
 
@@ -52,7 +55,15 @@ _isWater = 		(surfaceIsWater (getPosATL player)) or dayz_isSwimming;
 _upgradeParts = [];
 _startUpgrade = true;
 
-if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_rollingMessages; };
+if(_isWater or _onLadder) exitWith {dayz_actionInProgress = false; localize "str_CannotUpgrade" call dayz_rollingMessages;};
+
+// Make sure you are the closest player to the object
+_playerNear = _cursorTarget call dze_isnearest_player;
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
+
+// Make sure no other players are nearby
+_playerNear = {isPlayer _x} count (([_cursorTarget] call FNC_GetPos) nearEntities ["CAManBase",10]) > 1;
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 // lets check player has requiredTools for upgrade
 {
@@ -198,3 +209,5 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	localize "str_upgradeNoOption" call dayz_rollingMessages;
 */
 };
+
+dayz_actionInProgress = false;

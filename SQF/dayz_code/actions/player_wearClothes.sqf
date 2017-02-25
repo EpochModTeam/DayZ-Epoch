@@ -1,6 +1,10 @@
 if (dayz_lastClothesChange + 5 > diag_tickTime) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_lastClothesChange = diag_tickTime;
 
+// Make sure no other players are nearby
+_playerNear = {isPlayer _x} count (([player] call FNC_GetPos) nearEntities ["CAManBase",12]) > 1;
+if (_playerNear) exitWith {localize "STR_EPOCH_PLAYER_84" call dayz_rollingMessages;};
+
 if (_this in DZE_RestrictSkins) exitWith { format[localize "str_epoch_player_315",_this] call dayz_rollingMessages; };
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_83" call dayz_rollingMessages;};
 dayz_actionInProgress = true;

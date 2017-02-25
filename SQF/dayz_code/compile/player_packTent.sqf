@@ -14,8 +14,13 @@ if (DZE_permanentPlot) then {
 	_ownerID = _obj getVariable["ownerPUID","0"];
 };
 
+// Make sure you are the closest player to the tent
 _playerNear = _obj call dze_isnearest_player;
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_16" call dayz_rollingMessages;};
+
+// Make sure no other players are nearby
+_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase",10]) > 1;
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _packobj = getText (configFile >> "CfgVehicles" >> typeOf _obj >> "pack");
 
