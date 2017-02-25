@@ -27,6 +27,7 @@
 [CHANGED] Increased head shot damage for normal hits (non-zombie and non-melee)
 [CHANGED] Slightly increased damage from vehicle run over
 [CHANGED] Moved study body back to fn_selfActions for easy admin customization.
+[CHANGED] Players can now lock and unlock a vehicle when the key is in their backpack. This can be changed in epoch_tempKeys. #1897 @oiad
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper
@@ -83,6 +84,7 @@
 [FIXED] Updated to Sa-Matra's latest Core Patch BIS Effects which fix the fire in the sky bug again. #1883 @oiad @icomrade
 [FIXED] Mark body now marks all of your bodies instead of just one. @oiad
 [FIXED] Group and body markers correctly update on the GPS mini map now.
+[FIXED] Vehicle lock and unlock actions are now refreshed correctly without needing to look away and back again. @oiad
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
