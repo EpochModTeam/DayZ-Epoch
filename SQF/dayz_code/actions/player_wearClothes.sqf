@@ -55,8 +55,9 @@ if ( (isClass(_config >> _itemNew)) ) then {
 					player addMagazine _itemNew;
 					_morphHandle = [dayz_playerUID,dayz_characterID,_model] spawn player_humanityMorph;
 				};
+			} else {
+				localize "str_player_fail_wear3" call dayz_rollingMessages;
 			};
-
 		} else {
 			localize "str_epoch_player_86" call dayz_rollingMessages;
 		};

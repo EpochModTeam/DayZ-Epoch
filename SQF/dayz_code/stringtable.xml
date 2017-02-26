@@ -7316,6 +7316,9 @@
 			<French>Pour l&apos;instant cette tenue n&apos;existe pas pour femmes.</French>
 			<Czech>Hráči, kteří hrají za ženu nemohou měnit oblečení. Toto sexistické omezení bude odstraněno v nějakém budoucím patchi.</Czech>
 		</Key>
+		<Key ID="str_player_fail_wear3">
+			<English>You are already wearing these clothes.</English>
+		</Key>
 		<Key ID="str_player_actionslimit">
 			<English>Wait for the previous action to complete to perform another!</English>
 			<German>Du musst erst das Eine beenden, bevor du etwas Neues startest!</German>
