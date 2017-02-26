@@ -104,6 +104,11 @@ if ((count _upgrade) > 0) then {
 
 		format[localize "str_epoch_player_142",_text] call dayz_rollingMessages;
 
+		if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
+			_object addEventHandler ["HandleDamage",{false}];
+			_object enableSimulation false;
+		};
+		
 		if (DZE_permanentPlot) then {
 			_ownerID = _obj getVariable["ownerPUID","0"];
 			_object setVariable ["ownerPUID",_ownerID,true];

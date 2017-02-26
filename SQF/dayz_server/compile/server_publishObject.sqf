@@ -23,7 +23,7 @@ if ([_object, "Server"] call check_publishobject) then {
 	_key call server_hiveWrite;
 
 	if !(_object isKindOf "TrapItems") then {
-		if (DZE_GodModeBase) then {
+		if (DZE_GodModeBase && {!(_type in DZE_GodModeBaseExclude)}) then {
 			_object addEventHandler ["HandleDamage", {false}];
 		} else {
 			_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];

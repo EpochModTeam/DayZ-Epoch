@@ -88,6 +88,7 @@
 [FIXED] A potential undefined error on bear trap trigger. @oiad
 [FIXED] A few floating loot positions in firestation.
 [FIXED] Blocked a duping method involving changing clothes. Thanks to Sercan for reporting. @oiad
+[FIXED] Buildables now properly apply godmode if enabled during the restart window. @oiad
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade

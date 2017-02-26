@@ -469,6 +469,10 @@ if (_canBuild select 0) then {
 						publicVariableServer "PVDZ_obj_Publish";
 					};
 				};
+				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
+					_tmpbuilt addEventHandler ["HandleDamage",{false}];
+					_tmpbuilt enableSimulation false;
+				}; 
 			} else {
 				deleteVehicle _tmpbuilt;
 				localize "str_epoch_player_46" call dayz_rollingMessages;

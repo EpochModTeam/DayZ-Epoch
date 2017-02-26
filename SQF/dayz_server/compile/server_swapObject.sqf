@@ -65,9 +65,9 @@ _key call server_hiveWrite;
 _object setVariable ["lastUpdate",time];
 _object setVariable ["ObjectUID", _uid,true];
 // _object setVariable ["CharacterID",_charID,true];
-if (DZE_GodModeBase) then {
-	_object addEventHandler ["HandleDamage", {false}];
-}else{
+if (DZE_GodModeBase && {!(_class in DZE_GodModeBaseExclude)}) then {
+	_object addEventHandler ["HandleDamage",{false}];
+} else {
 	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 };
 // Test disabling simulation server side on buildables only.
