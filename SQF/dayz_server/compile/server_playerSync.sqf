@@ -1,5 +1,5 @@
 private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_currentModel","_currentAnim",
-"_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_playerBackp",
+"_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_playerBackp","_exitReason",
 "_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
 "_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
 "_magazines","_characterID","_charPos","_isInVehicle","_name","_inDebug","_newPos","_count","_maxDist","_relocate","_playerUID"];
@@ -16,20 +16,16 @@ _humanity = 0;
 _name = if (alive _character) then {name _character} else {"Dead Player"};
 _inDebug = (respawn_west_original distance _charPos) < 1500;
 
-if (_character isKindOf "Animal") exitWith {
-	diag_log ("ERROR: Cannot Sync Character " + _name + " is an Animal class");
+_exitReason = switch true do {
+	case (isNil "_characterID"): {("ERROR: Cannot Sync Character " + _name + " has nil characterID")}; //Unit is null
+	case (_inDebug): {format["INFO: Cannot Sync Character %1 near respawn_west %2. This is normal when relogging or changing clothes.",_name,_charPos]};
+	case (_characterID == "0"): {("ERROR: Cannot Sync Character " + _name + " has no characterID")};
+	case (_character isKindOf "Animal"): {("ERROR: Cannot Sync Character " + _name + " is an Animal class")};
+	default {"none"};
 };
 
-if (isNil "_characterID") exitWith {
-	diag_log ("ERROR: Cannot Sync Character " + _name + " has nil characterID");
-};
-
-if (_characterID == "0" or _inDebug) exitWith {
-	if (_inDebug) then {
-		diag_log format["INFO: server_playerSync: Cannot Sync Player %1 [%2]. Position in debug! %3. This is normal when respawning, relogging and changing clothes.",_name,_characterID,_charPos];
-	} else {
-		diag_log ("ERROR: Cannot Sync Character " + _name + " as no characterID");
-	};
+if (_exitReason != "none") exitWith {
+	diag_log _exitReason;
 };
 
 //Check for player initiated updates

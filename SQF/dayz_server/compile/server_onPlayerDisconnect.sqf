@@ -19,12 +19,12 @@ _playerObj = nil;
 
 //If playerObj is not in playableUnits then lets exit the disconnect system.
 if (isNil "_playerObj") exitWith {
-	diag_log format["%1: Exiting. Player is not in playableUnits. _this:%2", __FILE__, _this];
+	diag_log format["INFO: OnPlayerDisconnect exiting. Player is not in playableUnits. %1", _this];
 };
 
 //Player object is alive in debug zone. The player most likely just respawned.
 if (_playerPos distance respawn_west_original < 1500) exitWith {
-	diag_log format["%1: Exiting. Player is near respawn_west. This is normal if the player just died. _this:%2", __FILE__, _this];
+	diag_log format["INFO: OnPlayerDisconnect exiting. Player is near respawn_west. This is normal after death. %1", _this];
 	if (!isNull _playerObj) then {
 		_playerObj call sched_co_deleteVehicle;
 	};
