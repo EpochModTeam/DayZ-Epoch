@@ -114,7 +114,7 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 
 	if (_alreadyupgrading == 1) exitWith { localize "str_upgradeInProgress" call dayz_rollingMessages; };
 	
-	_cursorTarget setVariable["alreadyupgrading",1];
+	_cursorTarget setVariable["alreadyupgrading",1,true];
 
 	uiSleep 0.03;
 

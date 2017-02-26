@@ -34,7 +34,7 @@ _campItems = ["IC_DomeTent","IC_Tent"];
 if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) then {
 	player playActionNow "Medic";
 	_alreadyPacking = _obj getVariable["packing",0];
-	if (_alreadyPacking == 1) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages; dayz_actionInProgress = false;};
+	if (_alreadyPacking == 1) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages;};
 
 	_obj setVariable["packing",1,true];
 	_dir = direction _obj;
