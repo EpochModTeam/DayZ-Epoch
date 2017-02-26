@@ -1,7 +1,7 @@
 /*
 [_obj] call player_packTent;
 */
-if (dayz_actionInProgress) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_alreadyPacking","_backpacks","_bag","_campItems","_countr","_dir","_holder","_magazines","_obj","_objWpnQty","_objWpnTypes","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons"];
@@ -36,7 +36,7 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	_alreadyPacking = _obj getVariable["packing",0];
 	if (_alreadyPacking == 1) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages; dayz_actionInProgress = false;};
 
-	_obj setVariable["packing",1];
+	_obj setVariable["packing",1,true];
 	_dir = direction _obj;
 	_pos = getPosATL _obj;
 
