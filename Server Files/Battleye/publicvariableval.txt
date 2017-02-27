@@ -1,22 +1,22 @@
 //new
-5 "[;{&%]"
+5 "[;{(&%]"
 5 "\+" !"e\+0"
 1 "wrong side" // group hack, ban the first in a row
 1 "(init|set|add|action|all|attach|ATL|ASL|eye|exec|group|unit|clear|create|menu|ctrl|display|text|hint|drop)" !"\"(SetFuel|dayzSetDate|titleText|(|with )MeleeBaseball(|Bat(|Barbed|Nails))|StashSmall|smallboat_[12])\"" !"_Ball " !Attachement !Attachment_ !aslo
 1 "(entit|exit|able|find|fuel|join|frame|move|team|throw)" !"\"(switchmove|ItemFuelcan(|Empty)|PartFueltank|SetFuel|z_refuel_0|ItemSodaRocketFuel|cable_tie)\""
-1 "\"say\"" !"say\",\[\"z_[^"]+\",[0-9]+\]\]$"
+1 "\"say\"" !"say\",\[\"z_"
 1 "\"titleText\""
 1 "draw"
 1 "delete"
 1 "copy"
-1 "switch" !="\"switchmove\"" !="\"remExField\" = \[,<NULL-object>,\"switchmove\",\"ActsPercMrunSlowWrflDf_FlipFlopPara\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpsnonwnondnon_zevl\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpslowwrfldnon_gear\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady03\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady02\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady03\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aswmpercmstpsnonwnondnon\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove",\"aidlpercmstpslowwrfldnon_player_idlesteady04\"\]"
+1 "switch" !="\"switchmove\"" !="\"remExField\" = \[,<NULL-object>,\"switchmove\",\"ActsPercMrunSlowWrflDf_FlipFlopPara\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpsnonwnondnon_zevl\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpslowwrfldnon_gear\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady03\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady02\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady03\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aswmpercmstpsnonwnondnon\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpslowwrfldnon_player_idlesteady04\"\]"
 1 "hide" !"hideObject"
 1 "icon"
 1 "marker"
 1 "server"
 5 "compile"
 5 "loadFile"
-5 "call" !="dog_callBack" !="remExField" = \[,,"say",\["dog_callBack",120\]\]"
+5 "call" !="dog_callBack" !="\[,<NULL-object>,\"say\",\[\"dog_callBack\",120\]\]"
 1 "chat"
 1 "fade"
 5 "mission"
@@ -39,8 +39,6 @@
 5 "hintC"
 5 "hintS"
 5 "loading"
-5 "\"call\""
-5 "call compile"
 1 "jiprequest" !="<NULL-object>,,\"JIPrequest\"" !="\[<NULL-object>,,\"JIPrequest\"\]"
 1 "jipexec" //1 "rjipexec"
 5 "toString"
@@ -48,17 +46,8 @@
 5 "ctrlset"
 5 "rsay"
 5 "rland"
-5 "rsetDir"
 5 "_YakB"
-1 "BIS_"
-5 "local_sefFuel"
-1 "object_delLocal"
-1 "fnc_vehicleEventHandler"
 1 "player_medInject"
-1 "fnc_usec_damageVehicle"
-1 "dayzplayermorph"
-1 "server_playerMorph"
-5 "getVariable"
 5 "hiveupdateresu"
 5 "isServer"
 5 "isDedicated"
@@ -70,7 +59,6 @@
 5 "while"
 5 "count"
 5 "markerText"
-5 "BIS_fnc"
 5 "_bis"
 5 "markerType"
 5 "teamtype"
@@ -81,10 +69,6 @@
 5 "processInitCommands"
 5 "promptRName\.sqf"
 5 "\.sqf\"\]" !="init\.sqf\"\]"
-5 "rpcCodeVarName"
-5 "rpcDirectCall"
-5 "broadcastRpcCallAll"
-5 "broadcastRpcCallIfLocal"
 5 "norrnRACarUp"
 5 "norrnRAPicUp"
 5 "markerBrush"
@@ -170,21 +154,9 @@
 5 "onTeamS"
 5 "onShowNew"
 5 "setUnconscious"
-5 " exec "
-5 " set "
-5 " str "
-5 "exec\("
-5 "set\("
-5 "str\("
 5 "exec\["
 5 "set\["
 5 "str\["
-5 "exec\{"
-5 "set\{"
-5 "str\{"
-5 "exec'"
-5 "set'"
-5 "str'"
 5 "exec\""
 5 "set\""
 5 "str\""
@@ -197,39 +169,26 @@
 5 "\}exec"
 5 "\}set"
 5 "\}str"
-5 "'exec"
-5 "'set"
-5 "'str"
 5 "str	"
-5 "	\nstr"
 5 "\nstr"
 5 "str\n"
-5 "str\n	"
 5 ",str"
 5 "str,"
 5 "str "
 5 "set	"
-5 "	\nset"
 5 "\nset"
 5 "set\n"
-5 "set\n	"
 5 ",set"
 5 "set,"
 5 "set "
 5 "exec	"
-5 "	\nexec"
 5 "\nexec"
 5 "exec\n"
-5 "exec\n	"
 5 ",exec"
 5 "exec,"
 5 "exec "
 5 "isNil"
-5 "object_setFixServer"
 5 "modify"
-5 "BIS_Alice_fnc_CivilianHit"
-5 "BIS_Alice_mainscope"
-5 "BIS_fnc_getFactions"
 5 "allowConnection"
 5 "check_publishobject"
 5 "dayz_disco"
@@ -244,27 +203,14 @@
 5 "dayzPlayerLogin2"
 5 "isSinglePlayer"
 5 "needUpdate_objects"
-5 "server_characterSync"
-5 "server_getDiff"
-5 "server_getDiff2"
-5 "server_hiveReadWrite"
-5 "server_hiveWrite"
-5 "server_onPlayerDisconnect"
-5 "server_spawnCrashSite"
-5 "server_updateNearbyObjects"
 5 "vehicle_handleInteract"
 5 "vehicle_handleServerKilled"
 5 "allunits"
 5 "preprocess"
 5 "runinitscript"
-5 "createdialog"
-5 "\(" !"TELEPORT REVERT"
 5 "'"
 5 actionmonitor
 5 bis_
-5 building_spawnloot
-5 building_spawnzombies
-5 camp_spawnzombies
 5 dayz !"dayzSetDate"
 5 drn_
 5 eh_localcleanup
@@ -272,7 +218,6 @@
 5 fn_nicespot
 5 gear_ui_init
 5 horde_epeen_determine_humanity_fnc
-5 horde_epeen_fnc_fill_page
 5 infectedcamps
 5 local_eventkill
 5 local_gutobject
@@ -283,7 +228,6 @@
 5 player_animalcheck
 5 player_checkstealth
 5 player_combatroll
-5 player_countmagazines
 5 player_crossbowbolt
 5 player_death
 5 player_fired
@@ -301,9 +245,6 @@
 5 player_music
 5 player_packtent
 5 player_projectilenear
-5 player_spawn_1
-5 player_spawn_2
-5 player_spawncheck
 5 player_summedical
 5 player_switchmodel
 5 player_temp_calculation
@@ -325,4 +266,3 @@
 5 world_sunrise
 5 world_surfacenoise
 5 zombie_
-1 _this
