@@ -10,6 +10,7 @@
 [NEW] Added full screen night vision goggles, classname: "NVGoggles_DZE" (must be added to traders by server owners) @icomrade
 [NEW] Added setting to easily disable base takeover and configure which items are removable without ownership or access. See DZE_restrictRemoval in configVariables.sqf. #1886 @AirwavesMan @oiad
 [NEW] Map markers are now automatically tagged with the name of the player who placed them. This can be easily removed or customized by admins. #1871 @looter809
+[NEW] Added block in keyboard.sqf for sprint and prone through locked doors glitch. @LunaCB
 
 [CHANGED] Turbo and HoldBreath keybindings are now allowed again. @icomrade
 [CHANGED] Commented drink from hands at ponds due to client FPS impact. Players can still fill drinks at ponds by right clicking a container. #1816
@@ -28,6 +29,7 @@
 [CHANGED] Slightly increased damage from vehicle run over
 [CHANGED] Moved study body back to fn_selfActions for easy admin customization.
 [CHANGED] Players can now lock and unlock a vehicle when the key is in their backpack. This can be changed in epoch_tempKeys. #1897 @oiad
+[CHANGED] The vanilla building PVEHs have been commented out because we don't support or use the vanilla base objects currently.
 
 [FIXED] Wrong texture for z_hunter zombie. #1805 @schwanzkopfhegel @ebayShopper
 [FIXED] Refuel with generator at gas station not working. #1806 @Helios27 @ebayShopper
@@ -89,6 +91,7 @@
 [FIXED] A few floating loot positions in firestation.
 [FIXED] Blocked a duping method involving changing clothes. Thanks to Sercan for reporting. @oiad
 [FIXED] Buildables now properly apply godmode if enabled during the restart window. @oiad
+[FIXED] G36C ACOG attachment
 
 [NOTE] The fixes below are included in the 1.0.6 Build C server package released December 29th, 2016 (http://dayzepoch.com/a2dayzepoch.php)
 [FIXED] Hive child 309 errors that resulted in broken saving of newly built storage object inventory. @icomrade
