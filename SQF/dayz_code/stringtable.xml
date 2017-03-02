@@ -1732,6 +1732,7 @@
 		</Key>
 		<Key ID="str_upgradevehctooClose">
 			<English>Unable to upgrade, too close to a vehicle.</English>
+			<German>Upgrade nicht möglich, ein Fahrzeug ist zu nah.</German>
 		</Key>
 		<Key ID="str_build">
 			<English>Build %1</English>
@@ -7318,6 +7319,7 @@
 		</Key>
 		<Key ID="str_player_fail_wear3">
 			<English>You are already wearing these clothes.</English>
+			<German>Du trägst bereits diese Kleidung.</German>
 		</Key>
 		<Key ID="str_player_actionslimit">
 			<English>Wait for the previous action to complete to perform another!</English>
