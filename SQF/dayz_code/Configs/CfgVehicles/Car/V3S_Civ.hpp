@@ -72,6 +72,6 @@ class V3S_Refuel_TK_GUE_EP1_DZ: V3S_Refuel_TK_GUE_EP1 {
 	hiddenSelections[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
-	transportFuel = 0;
+	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
 	fuelCapacity = 10000;
 };

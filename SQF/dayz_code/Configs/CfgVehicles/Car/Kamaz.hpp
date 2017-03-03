@@ -92,7 +92,7 @@ class KamazRefuel_DZ: KamazRefuel {
 	class TransportMagazines{};
 	class TransportWeapons{};
 	fuelCapacity = 10400;
-	//For future Developement = transportFuel = 10400;			// refueltruck
+	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
 };
 class KamazRefuel_DZE1: KamazRefuel_DZ {
 	original = "KamazRefuel_DZ";
