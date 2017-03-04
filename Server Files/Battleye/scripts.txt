@@ -33,7 +33,7 @@
 5 serverCommand !="_character = if (serverCommandAvailable \"#kick\") then { call sched_tg_follow } else { player };" !"serverCommand (\"#vote kick \" + _selectedName);"
 5 setDamage !"([4654,9595,0] nearestObject 145259) setDamage 1;\n([4654,9595,0] nearestObject 145260) setDamage 1;" !"if (_entity isKindOf \"Animal\") then {\n_entity setDamage 1;" !"player setDamage 1;\n\nif (dayz_onBack != \"\") then {\n_body addWeapon dayz_onBack;" !"if(\"\" == typeOf _tree) then {\n_tree setDamage 1;\n};" !"if (_ent isKindOf \"Animal\" || _ent isKindOf \"zZombie_base\") then {\n_ent setDamage 1;"
 5 setDammage
-5 SetEventHandler !="_menu ctrlSetEventHandler [\"ButtonClick\",_compile];" !"inGameUISetEventHandler [\"Action\",\"false\"];"
+5 SetEventHandler !"\n_menu ctrlSetEventHandler [\"ButtonClick\",_compile];\n};" !"inGameUISetEventHandler [\"Action\",\"false\"];"
 5 setMarkerAlpha
 5 setMarkerBrush
 5 setMarkerColor !",if (_vehicle == _x) then {name _x} else {_vehicle call dayz_getCrew}];\n_marker setMarkerColorLocal \"ColorGreen\";"
@@ -43,7 +43,7 @@
 5 setMarkerSize
 5 setMarkerText !",if (_vehicle == _x) then {name _x} else {_vehicle call dayz_getCrew}];\n_marker setMarkerColorLocal \"ColorGreen\";"
 5 setMarkerType !",if (_vehicle == _x) then {name _x} else {_vehicle call dayz_getCrew}];\n_marker setMarkerColorLocal \"ColorGreen\";"
-5 setPosASL !="_unit setPosAsl [(_position select 0), (_position select 1), (LHA_height+1)];" !="_flame setPosASL [_pos select 0,_pos select 1,(_pos select 2)+0.2];" !="_fire setPosASL _location;" !"_objectHelper setPosASL _position;\n} else {" !"_b0x1337 setPosASL (getPosASL player);\n} else {" !"_obj setPosASL [_center select 0, " !"_obj setPosASL [_a, " !"_objectSnapGizmo setPosASL " !"_para setposasl [\n" !"_thingy setPosASL (ATLToASL _pos);\n} else {"
+5 setPosASL !="_unit setPosAsl [(_position select 0), (_position select 1), (LHA_height+1)];" !="_flame setPosASL [_pos select 0,_pos select 1,(_pos select 2)+0.2];" !="_fire setPosASL _location;" !"_objectHelper setPosASL _position;\n} else {" !"_b0x1337 setPosASL (getPosASL player);\n} else {" !"_obj setPosASL [_center select 0, _a, _b];" !"_objectSnapGizmo setPosASL " !"_para setposasl [\n" !"_thingy setPosASL (ATLToASL _pos);\n} else {"
 5 setTerrainGrid !"if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers \""
 5 setUnitRecoilCoefficient
 5 setVehicle !"if(_status) then {\n_vehicle setVehicleLock \"LOCKED\";\n} else {\n_vehicle setVehicleLock \"UNLOCKED\";\n};"
