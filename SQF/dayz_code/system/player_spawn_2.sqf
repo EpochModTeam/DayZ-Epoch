@@ -234,7 +234,7 @@ while {1 == 1} do {
 
 	// Regen some blood if player is well fed and resting
 	// Attention: regen _result must not trigger the "up" arrow of the blood icon
-	if (r_player_blood < 12000 and dayz_hunger < SleepFood 
+	if (r_player_blood < r_player_bloodTotal and dayz_hunger < SleepFood 
 		and dayz_thirst < SleepWater and !r_player_injured
 		 and !r_player_infected and !(r_player_Sepsis select 0) 
 		 and !r_player_unconscious) then {
@@ -242,10 +242,10 @@ while {1 == 1} do {
 		switch (1==1) do {
 			case (_result < 0.25) : {}; // not well fed
 			case ((toArray(animationState player) select 5) == 112) : { // prone
-				_result = _result * (1 + 10 * (12000 - r_player_blood) / 12000);
+				_result = _result * (1 + 10 * (r_player_bloodTotal - r_player_blood) / r_player_bloodTotal);
 			};
 			case (speed player < 1) : { // still
-				_result = _result * (1 + 4 * sqrt((12000 - r_player_blood) / 12000));
+				_result = _result * (1 + 4 * sqrt((r_player_bloodTotal - r_player_blood) / r_player_bloodTotal));
 			};
 			default { // moving
 			};
@@ -253,8 +253,8 @@ while {1 == 1} do {
 		r_player_bloodregen = r_player_bloodregen + _result;
 	};
 	
-	if (r_player_blood > 12000) then {
-		r_player_blood = 12000;
+	if (r_player_blood > r_player_bloodTotal) then {
+		r_player_blood = r_player_bloodTotal;
 	};
 
 	//Record low bloow

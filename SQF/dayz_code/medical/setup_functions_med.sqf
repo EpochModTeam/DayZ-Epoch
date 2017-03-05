@@ -252,7 +252,7 @@ fnc_usec_playerHandleBlood = {
 				call fnc_usec_resetWoundPoints;
 			};
 
-			_bloodDiff = r_player_blood - (player getVariable["USEC_BloodQty", 12000]);
+			_bloodDiff = r_player_blood - (player getVariable["USEC_BloodQty", r_player_bloodTotal]);
 			
 			if ((_bloodDiff >= 500) or (_bloodDiff <= -500)) then {
 				player setVariable["USEC_BloodQty",r_player_blood,true];
@@ -269,7 +269,7 @@ fnc_usec_playerHandleBlood = {
 			r_player_blood = r_player_blood + _bloodPerSec;
 		};
 
-		_bloodDiff = r_player_blood - (player getVariable["USEC_BloodQty", 12000]);
+		_bloodDiff = r_player_blood - (player getVariable["USEC_BloodQty", r_player_bloodTotal]);
 
 
 		if ((_bloodDiff >= 500) or (_bloodDiff <= -500)) then {

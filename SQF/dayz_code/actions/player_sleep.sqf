@@ -70,17 +70,17 @@ while {r_doLoop} do {
 			if (!r_player_injured && !r_player_infected && !(r_player_Sepsis select 0)) then {
 				//Give 53 + random amount of blood every 16 secs if player isn't injured.
 				if ((diag_tickTime - _timer) >= 16) then {
-					if (r_player_blood < 12000) then {
+					if (r_player_blood < r_player_bloodTotal) then {
 						//Make the random amount of blood you can gain equal to the percentage of blood you have.
-						_randomamount = round(random (r_player_blood/12000*100));
+						_randomamount = round(random (r_player_blood/r_player_bloodTotal*100));
 						_blood = 53 + _randomamount; //Max Possible 153.
 					};
 					
 					//Make sure we don't go over the max amount
-					if ((r_player_blood - 12000) < _blood) then {
+					if ((r_player_blood - r_player_bloodTotal) < _blood) then {
 						r_player_bloodregen = r_player_bloodregen + _blood;
 					} else {
-						r_player_blood = 12000;
+						r_player_blood = r_player_bloodTotal;
 					};
 					
 					_timer = diag_tickTime;

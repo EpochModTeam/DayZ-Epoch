@@ -103,7 +103,7 @@ _i = 0;
 _r = 0;
 _humanityAwarded = 0;
 
-_bloodAmount = if (!_wholeBag) then { 12000/*Full bloodbag*/ } else { 4000 /*Whole blood only gives 4k*/ };
+_bloodAmount = if (!_wholeBag) then { r_player_bloodTotal/*Full bloodbag*/ } else { 4000 /*Whole blood only gives 4k*/ };
 
 while {r_doLoop} do {
 	_animState = animationState player;

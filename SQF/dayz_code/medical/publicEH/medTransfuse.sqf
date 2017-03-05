@@ -61,7 +61,7 @@ while {r_doLoop} do {
 		};
 	};
 	
-	//If the players blood is equals too or aboue 12000 stop or if the blood mimic amount reaches 0 end the loop.
+	//If the players blood is equals too or above r_player_bloodTotal stop or if the blood mimic amount reaches 0 end the loop.
 	_blood = _unit getVariable ["USEC_BloodQty", 0];
 	
 	//diag_log format["Player Blood %1 - %2, - %3, - %4",_blood,_unit,_medic,(_unit getVariable "USEC_BloodQty")];

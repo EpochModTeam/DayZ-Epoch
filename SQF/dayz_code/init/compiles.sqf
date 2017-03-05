@@ -701,7 +701,7 @@ player_sumMedical = {
 		_character getVariable["USEC_inPain",false],
 		_character getVariable["USEC_isCardiac",false],
 		_character getVariable["USEC_lowBlood",false],
-		_character getVariable["USEC_BloodQty",12000],
+		_character getVariable["USEC_BloodQty",r_player_bloodTotal],
 		_wounds,
 		[_legs,_arms],
 		_character getVariable["unconsciousTime",0],
