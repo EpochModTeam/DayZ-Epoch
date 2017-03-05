@@ -159,31 +159,22 @@ Dayz_GUI_B = 0.26; // -0.26
 a_player_cooking = false;
 a_player_boil = false;
 a_player_jerryfilling = false;
-a_player_repairing = false;
 
 //Player self-action handles
 dayz_resetSelfActions = {
 	s_player_equip_carry = -1;
-	s_player_dragbody = -1;
 	s_player_fire = -1;
 	s_player_cook = -1;
 	s_player_boil = -1;
 	s_player_fireout = -1;
 	s_player_packtent = -1;
 	s_player_packtentinfected = -1;
-	s_player_fillwater = -1;
-	s_player_fillwater2 = -1;
 	s_player_fillfuel = -1;
 	s_player_grabflare = -1;
 	s_player_removeflare = -1;
-	s_player_painkiller = -1;
 	s_player_studybody = -1;
-	s_build_Sandbag1_DZ = -1;
-	s_build_Hedgehog_DZ = -1;
-	s_build_Wire_cat1 = -1;
 	s_player_deleteBuild = -1;
 	s_player_flipveh = -1;
-	s_player_stats = -1;
 	s_player_sleep = -1;
 	s_player_fillfuel210 = -1;
 	s_player_fillfuel20 = -1;
@@ -193,7 +184,6 @@ dayz_resetSelfActions = {
 	s_player_fishing = -1;
 	s_player_fishing_veh = -1;
 	s_player_gather = -1;
-	s_player_debugCheck = -1;
 	s_player_destroytent = -1;
 	s_player_attach_bomb = -1;
 	s_player_upgradestorage = -1;
@@ -263,15 +253,12 @@ dayz_resetSelfActions = {
 call dayz_resetSelfActions;
 
 //Engineering variables
-s_player_lastTarget = objNull;
 s_player_repairActions = [];
 
 //Initialize Medical Variables
 force_dropBody = false;
 r_interrupt = false;
 r_doLoop = false;
-r_self = false;
-r_self_actions = [];
 r_drag_sqf = false;
 r_action = false;
 r_action_unload = false;
@@ -300,13 +287,10 @@ r_player_foodstack = 1;
 r_player_lowblood = false;
 r_player_timeout = 0;
 r_player_bloodTotal = r_player_blood;
-r_public_blood = r_player_blood;
-r_player_bloodDanger = r_player_bloodTotal * 0.2;
 r_player_actions = [];
 r_handlerCount = 0;
 r_action_targets = [];
 r_pitchWhine = false;
-r_isBandit = false;
 dayz_DisplayGenderSelect = true;
 //blood test vars
 r_A_watered = false;
@@ -680,6 +664,7 @@ if (!isDedicated) then {
 	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
 
 	// EPOCH ADDITIONS
+	s_player_lastTarget = objNull;
 	if (isNil "DZE_BackpackAntiTheft") then {DZE_BackpackAntiTheft = false;};
 	if (isNil "DZE_requireplot") then {DZE_requireplot = 1;};
 	if (isNil "DZE_StaticConstructionCount") then {DZE_StaticConstructionCount = 0;};

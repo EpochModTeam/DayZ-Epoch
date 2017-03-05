@@ -1067,9 +1067,6 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	s_player_destroytent = -1;
 	// player removeAction s_player_attach_bomb;
 	//  s_player_attach_bomb = -1;
-	//debug
-	//player removeAction s_player_debugCheck;
-	//s_player_debugCheck = -1;
 	player removeAction s_player_upgradestorage;
 	s_player_upgradestorage = -1;
 	/* //Unlock,Lock // Vanilla base building currently not used in Epoch

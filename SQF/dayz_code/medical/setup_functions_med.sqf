@@ -117,13 +117,6 @@ fnc_usec_medic_removeActions = {
 	r_action_targets = [];
 };
 
-fnc_usec_self_removeActions = {
-	{
-		player removeAction _x;
-	} forEach r_self_actions;
-	r_self_actions = [];
-};
-
 fnc_usec_calculateBloodPerSec = {
 	private["_bloodLossPerSec","_bloodGainPerSec","_bloodPerSec"];
 	_bloodLossPerSec = 0;
