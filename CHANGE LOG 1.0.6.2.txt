@@ -1,3 +1,5 @@
-[FIXED] A2 auto refuel on Kamaz refuel trucks not disabled properly. #1855 @coresync2k @dreamforceinc
+[NEW] Added a few loot positions for Namalsk and Takistan. @skigoggles
+
+[FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.

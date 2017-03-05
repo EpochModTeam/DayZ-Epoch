@@ -115,11 +115,19 @@ class Land_smd_sara_stodola2: Farm { // brown open barn
 	lootPos[] = {{4.57617,0.255859,-2.16877},{-4.61133,-1.60156,-2.16877},{-5.38281,2.94336,-2.16877}};
 };
 // ALT-MAP Support
-
-//DZE ADDED BELOW
-class land_jzd_stodola1: Farm {
+class land_jzd_stodola1: Farm // nm
+{
 	lootPos[] = {{-3.81592,-11.418,-2.0262},{1.73877,-6.20605,-2.0262},{-4.13477,-0.265625,-2.0262},{-1.04883,0.180664,-2.0262}};
 };
+//land_plynom in Residential.hpp
+class land_zd_2: Farm // nm shed
+{
+	zedPos[] = {{-0.195313,0.174805,-1.82467}};
+	lootPos[] = {{0.630859,0.280273,-1.82467}, {-1.48145,1.44141,-1.82466}};
+};
+//land_zd_1 in Residential.hpp
+//land_marsh1 in Residential.hpp
+//DZE ADDED BELOW
 class land_shed_m01: Farm {
 	zedPos[] = {{0.218262,-1.78369,-0.347349}};
 };

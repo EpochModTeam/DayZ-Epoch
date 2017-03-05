@@ -19,3 +19,10 @@ class Land_BoatSmall_2b : Default
 	lootPos[] = {{0.00390625,-0.250977,-0.348389}};
 	lootGroup = Boat;
 };
+// ALT-MAP
+class land_molo : Default
+{
+	lootChance = 0.3;
+	lootPos[] = {{-0.94043,2.16602,3.30015}};
+	lootGroup = Boat;
+};

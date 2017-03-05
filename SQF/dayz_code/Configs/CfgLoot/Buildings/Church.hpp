@@ -139,11 +139,20 @@ class Land_Church_05R : Church
 		{-4.85,8.19,-8}
 	};
 };
-//DZE ADDED BELOW
-class land_kostelik_final_2122: Church {
+//ALT-MAP suport
+class land_kostelik_final_2122: Church //nm whitewashed wooden slats
+{
 	lootPos[] = {{5.41992,-3.45703,-5.57918},{-0.963379,4.74414,-5.57919},{1.09082,-2.79297,-5.57919},{-1.39063,-5.18555,-5.57918}};
 };
-
+class Land_A_Mosque_small_2_EP1: Church // tak
+{
+	lootPos[] = { { 1.33496,-0.726074,-2.48535 }, { -0.794922,-1.74414,-2.48538 } };
+};
+class Land_A_Minaret_EP1 : Church // tak
+{
+	lootPos[] =	{ {0.158691,0.131836,5.13947}, {1.86914,-2.97461,5.1394} 	};
+};
+//DZE ADDED BELOW
 class Land_A_Mosque_big_hq_EP1: Church {
 	lootPos[] = {{4.06592,-6.90674,-9.31999},{5.25195,4.07666,-9.31999},{5.70264,7.5376,-4.04752},{-4.78857,-7.00684,-4.04753},{3.93262,9.41846,0.567287},{0.882324,-0.134766,-9.31999}};
 };
@@ -161,11 +170,4 @@ class Land_A_Mosque_small_1_EP1: Church
 		{ 0.183105,0.826172,-2.04605 },
 		{ 6.66406,4.11719,-1.9437 },
 		{ 0.49707,-1.33301,-1.69603 }};
-};
-
-class Land_A_Mosque_small_2_EP1: Church
-{
-	lootPos[] = {
-		{ 1.33496,-0.726074,-2.48535 },
-		{ -0.794922,-1.74414,-2.48538 }};
 };
