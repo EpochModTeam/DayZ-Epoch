@@ -1,5 +1,6 @@
 [NEW] Added a few loot positions for Namalsk and Takistan. @skigoggles
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
+[FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. Removed DZE_NutritionDivisor config var, values can be changed in compiles.sqf. 
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.
