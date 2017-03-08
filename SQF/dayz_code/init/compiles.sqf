@@ -334,10 +334,10 @@ if (!isDedicated) then {
 			};
 									
 			case "Working": {
-				if (_calorieCount > 0) then { dayz_nutrition = dayz_nutrition - _calorieCount; };
-				if (_thirstCount > 0) then { dayz_thirst = dayz_thirst + _thirstCount; };
-				if (_hungerCount > 0) then { dayz_hunger = dayz_hunger + _hungerCount; };
-				if (_tempCount > 0) then { dayz_temperatur = dayz_temperatur + _tempCount; };
+				if (_calorieCount > 0) then { dayz_nutrition = dayz_nutrition - (_calorieCount / ((DZE_NutritionDivisor select 0) max 0.1)); };
+				if (_thirstCount > 0) then { dayz_thirst = dayz_thirst + (_thirstCount / ((DZE_NutritionDivisor select 1) max 0.1)); };
+				if (_hungerCount > 0) then { dayz_hunger = dayz_hunger + (_hungerCount / ((DZE_NutritionDivisor select 2) max 0.1)); };
+				if (_tempCount > 0) then { dayz_temperatur = dayz_temperatur + (_tempCount / ((DZE_NutritionDivisor select 3) max 0.1)); };
 			};
 		
 		};
