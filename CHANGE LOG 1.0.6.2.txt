@@ -2,5 +2,6 @@
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
+[FIXED] Glitch where group icons scaled very large momentarily while moving off screen.
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.
