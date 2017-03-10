@@ -268,3 +268,4 @@ array_reduceSize = {
 
 // Precise base building 1.0.5
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\kk_functions.sqf";
+#include "mission_check.sqf"
