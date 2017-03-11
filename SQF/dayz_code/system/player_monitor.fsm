@@ -488,7 +488,7 @@ class FSM
                          "_isInfected = false;" \n
                          "_characterCoins = 0;" \n
                          "_globalCoins = 0;" \n
-                         "_CoinsSpecial = 0;" \n
+                         "_bankCoins = 0;" \n
                          "" \n
                          "if (count _msg > 7) then {" \n
                          "	_isHiveOk = _msg select 7;" \n
@@ -496,7 +496,7 @@ class FSM
                          "	_isInfected = _msg select 9;" \n
                          "	_characterCoins		= _msg select 11;" \n
                          "	_globalCoins		= _msg select 12;" \n
-                         "	_CoinsSpecial		= _msg select 13;" \n
+                         "	_bankCoins		= _msg select 13;" \n
                          "	diag_log (""PLAYER RESULT: "" + str(_isHiveOk));" \n
                          "};" \n
                          "" \n
@@ -1159,8 +1159,8 @@ class FSM
                          "" \n
                          "if (Z_SingleCurrency) then {" \n
                          "	player setVariable [Z_MoneyVariable, _characterCoins, true];" \n
-                         "	player setVariable [""GlobalMoney"", _globalCoins, true];" \n
-                         "	player setVariable [""MoneySpecial"", _CoinsSpecial, true];" \n
+                         "	player setVariable [Z_globalVariable, _globalCoins, true];" \n
+                         "	player setVariable [Z_BankVariable, _bankCoins, true];" \n
                          "};" \n
                          "dayz_musicH = [] spawn player_music;" \n
                          "dayz_slowCheck = 	[] spawn player_spawn_2;" \n

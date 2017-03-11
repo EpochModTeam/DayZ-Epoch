@@ -68,7 +68,9 @@ Z_AllowTakingMoneyFromBackpack = true; // Allow traders to take money from backp
 Z_AllowTakingMoneyFromVehicle = true; // Allow traders to take money from vehicles when buying with default currency.
 Z_SingleCurrency = false; // Does your server use a single currency system?
 CurrencyName = "Coins"; // If using single currency this is the currency display name.
-Z_MoneyVariable = "cashMoney"; // If using single currency this is the variable name used to store player wealth.
+Z_moneyVariable = "cashMoney"; // If using single currency this is the variable name used to store player wealth.
+Z_bankVariable = "moneySpecial"; // If using single currency this is the variable name used to store object bank wealth.
+Z_globalVariable = "GlobalMoney"; // If using single currency this is the variable name used to store coins globally.
 DZE_MoneyStorageClasses = []; // If using single currency this is an array of object classes players can store coins in.
 
 // Plot Management and Plot for Life
