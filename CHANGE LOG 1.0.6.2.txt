@@ -5,6 +5,6 @@
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
 [FIXED] Glitch where group icons scaled very large momentarily while moving off screen.
-[FIXED] Possible mission file exploit
+[NEW] Added temporary check for mission file overwrite exploit. This can be removed after Bohemia patches it.
 
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.

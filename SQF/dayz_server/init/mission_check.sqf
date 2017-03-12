@@ -1,10 +1,14 @@
-//Temporary block for A2OA mission override exploit.
+//Temporary check for A2OA mission override exploit.
 //This bug should be fixed in the next EOL patch.
 //Put this code at the bottom of dayz_server\init\server_functions.sqf
 
-//List all of the files in your mission. For example, you may need to add 'custom\variables.sqf', etc.
-//DEFAULT VALUES ARE FOR DayZ_Epoch_11.Chernarus HOTFIX 1.0.6.1A
-_files = ['description.ext','init.sqf','mission.sqm','rules.sqf','server_traders.sqf','DZE_Hotfix_1.0.6.1A\groups\init.sqf','DZE_Hotfix_1.0.6.1A\groups\groupTags.sqf','DZE_Hotfix_1.0.6.1A\groups\groupMarkers.sqf','DZE_Hotfix_1.0.6.1A\init\compiles.sqf','DZE_Hotfix_1.0.6.1A\system\progress_monitor.sqf'];
+//List of files in your mission to check. For example, you may need to add 'custom\variables.sqf' etc.
+//Remove any you aren't using
+_files = [
+	'description.ext','init.sqf','mission.sqm','rules.sqf','server_traders.sqf',
+	'DZE_Hotfix_1.0.6.1A\groups\init.sqf','DZE_Hotfix_1.0.6.1A\groups\groupTags.sqf','DZE_Hotfix_1.0.6.1A\groups\groupMarkers.sqf',
+	'DZE_Hotfix_1.0.6.1A\init\compiles.sqf','DZE_Hotfix_1.0.6.1A\system\progress_monitor.sqf'
+];
 
 _list = [];
 {
@@ -17,7 +21,7 @@ _list = [];
 
 //Check mission integrity on all clients
 _temp = "HeliHEmpty" createVehicle [0,0,0];
-_temp setVehicleInit format["
+_temp setVehicleInit (str formatText["
 	if (isServer) exitWith {};
 	
 	_list = [];
@@ -44,6 +48,6 @@ _temp setVehicleInit format["
 			{(findDisplay _x) closeDisplay 2;} count [0,8,12,18,46,70];
 		};
 	};
-",_files,_list];
+",_files,_list]);
 
 processInitCommands;

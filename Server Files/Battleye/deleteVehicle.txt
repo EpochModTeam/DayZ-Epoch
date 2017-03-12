@@ -1,3 +1,4 @@
 //new
 1=(BanditW?1|Camo1|Sniper1|Soldier1|Survivor([123]|W2))_DZ
 1 !"Blood_Trail_DZ" !"WeaponHolder"
+5 "HeliHEmpty"
