@@ -372,7 +372,7 @@ class Mission
 			TRGDEF
 			name="TraderCity1";
 			expCond="(player distance TraderCity1) < 100; ";
-			expActiv="[""trader city Pikla"",true,""enter""] call player_traderCity;";
+			expActiv="[""trader city Pikia"",true,""enter""] call player_traderCity;";
 			expDesactiv="[""trader city Pikia"",true,""leave""] call player_traderCity;";
 		};
 		class Item1
