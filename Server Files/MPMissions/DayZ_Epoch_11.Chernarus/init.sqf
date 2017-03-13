@@ -71,7 +71,6 @@ spawnShoremode = 1; // Random spawn locations  1 = on shores, 0 = inland
 EpochUseEvents = false; //Enable event scheduler. Define custom scripts in dayz_server\modules to run on a schedule.
 EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 // EPOCH CONFIG VARIABLES END //
-dayz_groupSystem = true;
 
 diag_log 'dayz_preloadFinished reset';
 dayz_preloadFinished=nil;
