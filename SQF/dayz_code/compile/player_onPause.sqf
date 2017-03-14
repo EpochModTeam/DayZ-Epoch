@@ -14,9 +14,8 @@ _testTime = diag_tickTime;
 
 if (r_fracture_legs or _isPZombie) then {_btnRespawn ctrlEnable true;};
 
-dayz_lastCheckSave = time;
 //force gear save
-if (time - dayz_lastCheckSave > 10) then {
+if (diag_tickTime - dayz_lastSave > 10) then {
 	call player_forceSave;
 };
 
