@@ -242,27 +242,6 @@ _object_variables = {
 	_key call server_hiveWrite;
 };
 
-_object_coins = {
-	private ["_inventory","_key","_coins"];
-	_inventory = [getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object];
-	_object setVariable["lastInventory",_inventory];
-	if (_objectID == "0") then {
-		_key = format["CHILD:309:%1:",_objectUID] + str _inventory + ":";
-	} else {
-		_key = format["CHILD:303:%1:",_objectID] + str _inventory + ":";
-	};
-	if (Z_SingleCurrency) then {
-		_coins = _object getVariable [Z_MoneyVariable, -1]; //set to invalid value if getVariable fails to prevent overwriting of coins in DB
-		_key = _key + str _coins + ":";
-	};
-
-	#ifdef OBJECT_DEBUG
-	diag_log format["DELETE: Deleted by KEY: %1",_key];
-	#endif
-
-	_key call server_hiveWrite;
-};
-
 _object setVariable ["lastUpdate",diag_ticktime,true];
 switch (_type) do {
 	case "all": {
@@ -292,6 +271,7 @@ switch (_type) do {
 		call _objWallDamage;
 	};
 	case "coins": {
-		call _object_coins;
+		_object setVariable ["lastInventory",["forceUpdate"]];
+		call _object_inventory;
 	};
 };
