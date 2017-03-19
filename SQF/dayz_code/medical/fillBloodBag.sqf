@@ -46,7 +46,7 @@ while {r_doLoop and (_i < 25)} do {
 	if (_isMedic and !_started) then {
 		player removeMagazine "emptyBloodBag";
 		localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
-		[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_start","PLAIN DOWN"] call RE;
+		//[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_start","PLAIN DOWN"] call RE;
 		_started = true;
 	};
 	
@@ -69,7 +69,7 @@ while {r_doLoop and (_i < 25)} do {
 
 	if ((_blood <= _bloodAfter) or (_i == 25)) then {
 		localize "str_actions_medical_bagDone" call dayz_rollingMessages;
-		[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_bagDone","PLAIN DOWN"] call RE;
+		//[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_bagDone","PLAIN DOWN"] call RE;
 		//_victim setVariable ["USEC_BloodQty", _bloodAfter, true];
 		r_doLoop = false;
 		_complete = true;
@@ -81,7 +81,7 @@ while {r_doLoop and (_i < 25)} do {
 		r_doLoop = false;
 		r_interrupt = true;
 		localize "str_actions_medical_bagInterrupted" call dayz_rollingMessages;
-		[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_bagInterrupted","PLAIN DOWN"] call RE;
+		//[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_bagInterrupted","PLAIN DOWN"] call RE;
 	};
 };
 

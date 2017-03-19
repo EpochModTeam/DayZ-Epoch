@@ -14462,11 +14462,6 @@
 			<German>Kann ein Fahrzeug temporär aufschließen und starten. Klappt nicht immer und kann nur ein Mal verwendet werden.</German>
 			<Russian>Используется для временного взлома и запуска транспорта, присутствует шанс неудачи и расходуется при использовании.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_BLOODBAG_ACTION">
-			<English>Self transfusion</English>
-			<German>Selbst-Transfusion</German>
-			<Russian>Перелить себе</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_KILOOFHEMP">
 			<English>Kilo of Hemp</English>
 			<German>Kilo Hanf</German>
