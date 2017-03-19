@@ -27,7 +27,7 @@
 			position="action";
 			radius = 3.0;
 			onlyForPlayer = 1;
-			condition = "alive this";
+			condition = "!dayz_actionInProgress && (alive this)";
 			statement = "this spawn object_dismantle;";
 		};
 	};

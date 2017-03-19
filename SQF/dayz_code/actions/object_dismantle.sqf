@@ -1,3 +1,6 @@
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
+
 private ["_object","_proceed","_rndattemps","_limit","_dismantleToo","_ownerID","_objectID","_objectUID","_playerID","_claimedBy","_tools","_exit","_end","_onLadder","_isWater","_isOk","_counter","_text","_dis","_sfx","_animState","_started","_finished","_isMedic"];
 
 _object = _this;
@@ -36,14 +39,14 @@ _tools = getArray (configFile >> "CfgVehicles" >> (typeOf _object) >> "dismantle
 } foreach _tools;
 
 //End missing tools
-if (_exit) exitwith {};
+if (_exit) exitwith {dayz_actionInProgress = false;};
 
 
 //Normal blocked stuff
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = 		(surfaceIsWater (getPosATL player)) or dayz_isSwimming;
 
-if(_isWater or _onLadder) exitWith { localize "str_water_ladder_cant_do" call dayz_rollingMessages; };
+if(_isWater or _onLadder) exitWith {dayz_actionInProgress = false; localize "str_water_ladder_cant_do" call dayz_rollingMessages;};
 
 //Start loop
 _isOk = true;
@@ -151,8 +154,7 @@ if (_proceed) then {
 
 	format [localize "STR_BLD_DISMANTLED",typeOf _object] call dayz_rollingMessages;
 	
-	_activatingPlayer = player;
-	PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
+	PVDZ_obj_Destroy = [_objectID,_objectUID,player];
 	publicVariableServer "PVDZ_obj_Destroy";
 	
 	if (isServer) then {
@@ -164,3 +166,5 @@ if (_proceed) then {
 	
 	[_dismantleToo,1,1] call fn_dropItem;
 };
+
+dayz_actionInProgress = false;
