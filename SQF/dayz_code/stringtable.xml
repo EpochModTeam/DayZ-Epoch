@@ -7270,7 +7270,7 @@
 		</Key>
 		<Key ID="str_player_death_suicide">
 			<English>%1 committed suicide</English>
-			<German>%1 Selbstmord</German>
+			<German>%1 beging Selbstmord</German>
 			<Russian>%1 покончил с собой</Russian>
 		</Key>
 		<Key ID="str_player_death_died">
@@ -7552,12 +7552,12 @@
 		</Key>
 		<Key ID="str_death_rad">
 			<English>radiation</English>
-			<German>Strahlung</German>
+			<German>druch Strahlung</German>
 			<Russian>излучение</Russian>
 		</Key>
 		<Key ID="str_death_crushed">
 			<English>being crushed</English>
-			<German>zerquetscht</German>
+			<German>durch zu starke Quetschungen.</German>
 			<Russian>раздавлен</Russian>
 		</Key>
 		<Key ID="str_abort_playerclose">
