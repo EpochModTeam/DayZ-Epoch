@@ -1402,6 +1402,14 @@
 			<French>Vous n&apos;avez plus de place. Tout est tombé sur le sol.</French>
 			<German>Du hast keinen Platz mehr und lässt alles auf den Boden fallen.</German>
 		</Key>
+		<Key ID="str_actions_noroom">
+			<English>%1 is already in your inventory. Dropping on the ground!</English>
+			<German>%1 ist bereits in deinem Inventar. Fallenlassen auf den Boden!</German>
+			<Russian>%1 уже в вашем инвентаре. Сброшено на землю!</Russian>
+			<Dutch>%1 is al in je inventaris. Het laten vallen op de grond!</Dutch>
+			<French>%1 est déjà dans votre inventaire. Déposer sur le terrain!</French>
+			<Czech>%1 je již ve vašem inventáři. Pád na zem!</Czech>
+		</Key>
 		<Key ID="str_siphon_hose">
 			<English>A hose would be needed to do this.</English>
 			<Russian>Для этого нужен шланг.</Russian>
@@ -13284,14 +13292,6 @@
 			<Dutch>%1 is al in je inventaris. Toevoegen aan rugzak!</Dutch>
 			<French>%1 est déjà dans votre inventaire. Ajout d'un sac à dos!</French>
 			<Czech>%1 je již ve vašem inventáři. Přidání do batoh!</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_314">
-			<English>%1 is already in your inventory. Dropping on the ground!</English>
-			<German>%1 ist bereits in deinem Inventar. Fallenlassen auf den Boden!</German>
-			<Russian>%1 уже в вашем инвентаре. Сброшено на землю!</Russian>
-			<Dutch>%1 is al in je inventaris. Het laten vallen op de grond!</Dutch>
-			<French>%1 est déjà dans votre inventaire. Déposer sur le terrain!</French>
-			<Czech>%1 je již ve vašem inventáři. Pád na zem!</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_315">
 			<English>%1 is restricted.</English>

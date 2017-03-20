@@ -40,6 +40,7 @@ switch (_this select 0) do {
 				//Drop dull knife or empty matchbox if player already has one. Prevents duplicate tool.
 				player removeWeapon _remaining;
 				[_remaining,2,1] call fn_dropItem;
+				format[localize "str_actions_noroom",_remaining] call dayz_rollingMessages;
 			};
 			player addWeapon _remaining;
 		};

@@ -30,16 +30,17 @@ if (player hasWeapon _item) then {
 	_displayName = getText (configFile >> "CfgWeapons" >> _item >> "displayName");
 	
 	player removeMagazine _waterUsed;
-	Player removeWeapon _item;
+	player removeWeapon _item;
 	
-	Player addWeapon _repair;
+	if !(player hasWeapon _repair) then {
+		player addWeapon _repair;
+	} else {
+		//Drop sharpened knife if player already has one. Prevents duplicate tool.
+		[_repair,2,1] call fn_dropItem;
+		format[localize "str_actions_noroom",_repair] call dayz_rollingMessages;
+	};
 	
-	if (_waterUsed in ["ItemWaterBottle","ItemWaterBottleInfected","ItemWaterBottleSafe","ItemWaterBottleBoiled","ItemWaterBottleHerbal"]) then {
-		player addMagazine "ItemWaterBottleUnfilled";
-	};
-	if (_waterUsed in ["ItemCanteen","ItemCanteenInfected","ItemCanteenSafe","ItemCanteenBoiled","ItemCanteenHerbal"]) then {
-		player addMagazine "ItemCanteenEmpty";
-	};
+	player addMagazine (getText(configFile >> "CfgMagazines" >> _waterUsed >> "containerEmpty"));
 	
 	//Remove Later
 	player removeMagazine "equip_brick";

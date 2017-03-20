@@ -21,7 +21,7 @@ if (_this in items player) then {
 		_bag addWeaponCargoGlobal [_this,1];
 	} else {
 		[_this,2,1] call fn_dropItem;
-		systemChat format[localize "str_epoch_player_314",_this];
+		systemChat format[localize "str_actions_noroom",_this];
 	};
 } else {
 	//Remove melee magazines (BIS_fnc_invAdd fix)
@@ -30,7 +30,7 @@ if (_this in items player) then {
 	if !([player,_this] call BIS_fnc_invAdd) then {
 		systemChat localize "str_epoch_player_107";
 		[_this,2,1] call fn_dropItem;
-		systemChat format[localize "str_epoch_player_314",_this];
+		systemChat format[localize "str_actions_noroom",_this];
 	};
 	true call dz_fn_meleeMagazines;
 };
