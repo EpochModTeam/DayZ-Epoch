@@ -129,3 +129,17 @@ class DefaultEventhandlers {
 #include "Configs\RscDisplay\doorManagement\doorManagement.hpp"
 #include "Configs\RscDisplay\doorManagement\doorAccess.hpp"
 
+class CfgTasks
+{
+	//agentTasks[] = {"ZedMainTask"};
+	class ZedMainTask
+	{
+		name = "Zed Main Task";
+		//fsm = "\ca\animals2\Data\scripts\main.fsm";
+		fsm = "\z\AddOns\dayz_code\system\main.fsm";
+		condition = "\ca\animals2\Data\scripts\createSingleTask.sqf";
+		description = "Zed master task";
+		destination = "";
+		resources[] = {};
+	};
+};
