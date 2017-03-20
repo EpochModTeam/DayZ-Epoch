@@ -7552,7 +7552,7 @@
 		</Key>
 		<Key ID="str_death_rad">
 			<English>radiation</English>
-			<German>druch Strahlung</German>
+			<German>durch Strahlung.</German>
 			<Russian>излучение</Russian>
 		</Key>
 		<Key ID="str_death_crushed">
