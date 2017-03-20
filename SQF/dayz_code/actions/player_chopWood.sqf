@@ -1,5 +1,5 @@
 
-private ["_item","_result","_dis","_sfx","_num","_breaking","_countOut","_findNearestTree","_objName","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_tree","_distance2d"];
+private ["_addedTree","_objType","_item","_result","_dis","_sfx","_num","_breaking","_countOut","_findNearestTree","_objName","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_tree","_distance2d"];
 
 _item = _this;
 call gear_ui_init;
@@ -8,10 +8,14 @@ _countOut = floor(random 3) + 2;
 
 _findNearestTree = [];
 {
-	if (("" == typeOf _x) && {alive _x}) then {
+	_objType = typeOf _x;
+	_addedTree = _objType in dayz_treeTypes;
+	
+	if ((_objType == "" or _addedTree) && {alive _x}) then {
 		_objName = _x call fn_getModelName;
 		// Exit since we found a tree
-		if (_objName in dayz_trees) exitWith { _findNearestTree set [count _findNearestTree,_x]; };
+		//model name has "remote" on client when tree is spawned on server with createVehicle
+		if (_objName in dayz_trees or _addedTree) exitWith { _findNearestTree set [count _findNearestTree,_x]; };
 	};
 } count nearestObjects [getPosATL player, [], 20];
 

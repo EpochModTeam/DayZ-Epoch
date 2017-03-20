@@ -1,4 +1,4 @@
-private ["_unit","_ammo","_distance","_weapon","_projectile","_endPos","_dir","_doWait","_vel"];
+private ["_addedTree","_objType","_unit","_ammo","_weapon","_projectile"];
 _unit = 		_this select 0;
 _weapon = 		_this select 1;
 _ammo = 		_this select 4;
@@ -7,10 +7,14 @@ _projectile = 	_this select 6;
 if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {	
 	_findNearestTree = [];
 	{
-		if (("" == typeOf _x) && {alive _x}) then {			
+		_objType = typeOf _x;
+		_addedTree = _objType in dayz_treeTypes;
+		
+		if ((_objType == "" or _addedTree) && {alive _x}) then {
 			_objName = _x call fn_getModelName;
 			// Exit since we found a tree
-			if (_objName in dayz_trees) exitWith { _findNearestTree set [count _findNearestTree,_x]; };
+			//model name has "remote" on client when tree is spawned on server with createVehicle
+			if (_objName in dayz_trees or _addedTree) exitWith { _findNearestTree set [count _findNearestTree,_x]; };
 		};
 	} count nearestObjects [getPosATL player, [], 20];
 
@@ -35,8 +39,7 @@ if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
 				_itemOut = if (_ammo == "Chainsaw_Swing_Ammo") then {"PartWoodLumber"} else {"PartWoodPile"}; // Log can be crafted to > 2x plank > 4x woodpile			
 				[_itemOut,1,1] call fn_dropItem;
 
-				_distance = 60;
-				[player,_distance,false,getPosATL player] spawn player_alertZombies;
+				[player,60,false,getPosATL player] spawn player_alertZombies;
 			};
 			DZE_TEMP_treedmg = _damage;
 		};

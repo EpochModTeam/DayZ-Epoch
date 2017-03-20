@@ -1,6 +1,7 @@
 [NEW] Added a few loot positions for Namalsk and Takistan. @skigoggles
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
+[FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.
 [FIXED] POIs were moved back to global spawn again. This synchronizes the POI buildings and trees destroyed/chopped status for all clients.
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
