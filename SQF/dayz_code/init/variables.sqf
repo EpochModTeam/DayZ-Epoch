@@ -539,7 +539,6 @@ if (isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15
 if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
 DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
-TimeOutDisplayed = false;
 
 if (isServer) then {
 	dayz_traps = [];
@@ -663,6 +662,8 @@ if (!isDedicated) then {
 	dayz_getout = objNull;
 	dayz_getoutTime = 0;
 	dayz_HitBy = objNull;
+	skipGearSound = false;
+	TimeOutDisplayed = false;
 	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
 
 	// EPOCH ADDITIONS

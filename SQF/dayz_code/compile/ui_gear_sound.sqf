@@ -1,3 +1,5 @@
+if (skipGearSound) exitWith {};
+
 private["_type"];
 _type="open_inventory";
 if( (!isNull cursorTarget) && (player distance cursorTarget < 5) && (vehicle player == player) ) then {
