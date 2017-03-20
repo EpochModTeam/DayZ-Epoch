@@ -7266,15 +7266,16 @@
 		</Key>
 		<Key ID="str_player_studybody_female">
 			<English>Her name was %1, it appears she died from %2</English>
+			<German>Ihr Name war %1, anscheinend starb sie %2</German>				
 		</Key>
 		<Key ID="str_player_death_suicide">
 			<English>%1 committed suicide</English>
-			<German>%1 Selbstmord</German>
+			<German>%1 beging Selbstmord</German>
 			<Russian>%1 покончил с собой</Russian>
 		</Key>
 		<Key ID="str_player_death_died">
 			<English>%1 died from %2</English>
-			<German>%1 starb durch %2</German>
+			<German>%1 starb %2</German>
 			<Russian>%1 умер от %2</Russian>
 		</Key>
 		<Key ID="str_player_death_killed">
@@ -7311,7 +7312,7 @@
 		</Key>
 		<Key ID="str_player_fail_wear2">
 			<English>Currently Female Characters cannot change to this skin. This will change in a future update.</English>
-			<German>Momenten gibt es diese Kleidung nicht für weibliche Charaktere. Vielleicht in einer zukünftigen Version...</German>
+			<German>Momentan gibt es diese Kleidung nicht für weibliche Charaktere. Vielleicht in einer zukünftigen Version...</German>
 			<Russian>Персонажи женского пола не могут переодеваться в данной версии.</Russian>
 			<Spanish>Actualmente los personajes femeninos no se pueden cambiar de ropa. Esto será cambiado en futuras actualizaciones.</Spanish>
 			<French>Pour l&apos;instant cette tenue n&apos;existe pas pour femmes.</French>
@@ -7319,11 +7320,11 @@
 		</Key>
 		<Key ID="str_player_fail_wear3">
 			<English>You are already wearing these clothes.</English>
-			<German>Du trägst bereits diese Kleidung.</German>
+			<German>Du trägst diese Kleidung bereits.</German>
 		</Key>
 		<Key ID="str_player_actionslimit">
 			<English>Wait for the previous action to complete to perform another!</English>
-			<German>Du musst erst das Eine beenden, bevor du etwas Neues startest!</German>
+			<German>Warte bis die vorherige Aktion abgeschlossen ist, bevor du eine neue beginnst!</German>
 			<Russian>Дождитесь завершения предыдущего действия, перед тем, как начинать новое!</Russian>
 			<Spanish>¡Espera a terminar la acción previa para realizar otra!</Spanish>
 			<French>Attendez la fin de l&apos;action en cours avant d&apos;en commencer une autre!</French>
@@ -7551,12 +7552,12 @@
 		</Key>
 		<Key ID="str_death_rad">
 			<English>radiation</English>
-			<German>Strahlung</German>
+			<German>durch Strahlung.</German>
 			<Russian>излучение</Russian>
 		</Key>
 		<Key ID="str_death_crushed">
 			<English>being crushed</English>
-			<German>zerquetscht</German>
+			<German>durch zu starke Quetschungen.</German>
 			<Russian>раздавлен</Russian>
 		</Key>
 		<Key ID="str_abort_playerclose">
