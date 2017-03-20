@@ -604,7 +604,7 @@ if (!isDedicated) then {
 	dayz_disVisual = 0;
 	dayz_firedCooldown = 0;
 	dayz_damageCounter = time;
-	dayz_lastSave = time;
+	dayz_lastSave = diag_tickTime;
 	dayz_isSwimming = true;
 	dayz_currentDay = 0;
 	dayz_hasLight = false;

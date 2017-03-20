@@ -9,6 +9,7 @@
 [FIXED] Smoke and grenade tripwires now require a grenade to rearm after triggering.
 [FIXED] Player no longer does medic animation after triggering a single use trap.
 [FIXED] Removing a trap with no room in your gear will no longer delete the trap.
+[FIXED] Player_forceSave is now called correctly when the abort menu is opened. It was previously using the wrong variable and time.
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
