@@ -1,6 +1,7 @@
 /*
-	Add POI objects locally on every machine early.
-	Do not use execVM. This must be unscheduled to finish before player_monitor.fsm and server_monitor.sqf run. (objects or player spawn on top)
+	Add POI objects on server machine only.
+	Do not use execVM. This must be unscheduled to finish before server_monitor.sqf runs (vehicles or players can spawn on top)
+	Do not use createVehicleLocal for these. They contain trees and buildings (need chopped/destroyed status synchronized for all clients)
 */
 
 {

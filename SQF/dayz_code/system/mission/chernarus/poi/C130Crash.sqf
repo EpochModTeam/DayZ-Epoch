@@ -27,4 +27,4 @@
 	["Land_Camp_Fire_DZ",[12707.344,9520.4121,-0.00011634827],0],
 	["Land_Camp_Fire_DZ",[12712.194,9544.3564,8.9676323],0],
 	["Land_Camp_Fire_DZ",[12710.407,9548.6572,8.768301],0]
-],false,false,true] call fnc_spawnObjects;
+],false,false,false] call fnc_spawnObjects;

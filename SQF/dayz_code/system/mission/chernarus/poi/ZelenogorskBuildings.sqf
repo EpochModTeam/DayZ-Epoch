@@ -12,4 +12,4 @@
 	["MAP_phone_box",[2538.0273,5070.0796,3.0517578e-005],0],
 	["MAP_phone_box",[2540.3445,5070.0625,-1.5258789e-005],0],
 	["MAP_A_statue01",[2540.7234,5062.2808],0]
-],false,false,true] call fnc_spawnObjects;
+],false,false,false] call fnc_spawnObjects;

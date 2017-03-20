@@ -207,4 +207,4 @@
 	["Body2",[3760.5063,10178.691],89.311447],
 	["Land_Misc_deerstand",[3773.8142,10158.719,3.0517578e-005],-13.109641],
 	["MAP_asf3_6konec",[3826.2429,10102.542,-3.0517578e-005],-9.4858913]
-],false,false,true] call fnc_spawnObjects;
+],false,false,false] call fnc_spawnObjects;

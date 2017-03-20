@@ -40,4 +40,4 @@
 	["CampEast_EP1",[11744.933,3420.0603,-3.7193298e-005],-194.99712],
 	["Land_tent_east",[11730.796,3438.7427,2.7179718e-005],347.01086],
 	["Land_fort_bagfence_corner",[11715.259,3417.4905,6.1988831e-006],75.434654]
-],false,false,true] call fnc_spawnObjects;
+],false,false,false] call fnc_spawnObjects;

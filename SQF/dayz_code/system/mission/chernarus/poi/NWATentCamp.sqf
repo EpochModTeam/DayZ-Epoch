@@ -192,4 +192,4 @@
 	["MAP_b_prunus",[3940.4402,11031.171,3.0517578e-005],1.3066831],
 	["Land_Misc_deerstand",[3887.9919,11048.234,0.44055828],133.44647],
 	["Land_Misc_deerstand",[3919.6902,11062.58,-6.1035156e-005],133.44647]
-],false,false,true] call fnc_spawnObjects;
+],false,false,false] call fnc_spawnObjects;

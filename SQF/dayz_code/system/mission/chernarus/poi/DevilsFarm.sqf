@@ -402,4 +402,4 @@
 	["MAP_t_picea3f",[1720.7556,11643.052,0.00010681152],0],
 	["Mi8Wreck",[1726.4069,11681.369,-3.0517578e-005],-120.01289],
 	["Axe_woodblock",[1760.7675,11721.288,-0.48907313],-139.52458]
-],false,false,true] call fnc_spawnObjects;
+],false,false,false] call fnc_spawnObjects;
