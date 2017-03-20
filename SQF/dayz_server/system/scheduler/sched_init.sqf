@@ -6,7 +6,6 @@ call compile preprocessFileLineNumbers (_base+"sched_lootpiles.sqf");
 //call compile preprocessFileLineNumbers (_base+"sched_playersHivesync.sqf");
 //call compile preprocessFileLineNumbers (_base+"sched_vehiclesHivesync.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_sync.sqf");
-//call compile preprocessFileLineNumbers (_base+"sched_traps.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_safetyVehicle.sqf");
 
 [
@@ -18,7 +17,6 @@ call compile preprocessFileLineNumbers (_base+"sched_safetyVehicle.sqf");
 	 [ 6,	 	340,	sched_lootpiles ],
 	 [ 900,		0,		sched_sync ],
 	 [ 120,		48,		sched_safetyVehicle ]
-	 //[ 0.1, 		1,		sched_traps ]
 ] execFSM ("z\addons\dayz_code\system\scheduler\scheduler.fsm");
 
 //diag_log [ __FILE__, "Scheduler started"];

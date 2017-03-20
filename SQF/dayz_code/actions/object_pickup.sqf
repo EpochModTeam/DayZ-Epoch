@@ -6,7 +6,6 @@ _type = _array select 0;
 _classname = _array select 1;
 _holder = _array select 2;
 
-
 if (player distance _holder > 3) exitwith { localize "str_pickup_limit_1","PLAIN DOWN" };
 
 _playerID = getPlayerUID player;
@@ -28,8 +27,6 @@ if (isnil "claimed") then {
 };
 
 canPickup = false;
-
-if (_classname isKindOf "TrapBear") exitWith { deleteVehicle _holder; };
 
 player playActionNow "PutDown";
 
@@ -74,6 +71,17 @@ _isOk = [player,_config] call BIS_fnc_invAdd;
 true call dz_fn_meleeMagazines;
 
 if (_isOk) then {
+	if (_holder isKindOf "TrapItems") then {
+		if !(_holder getVariable ["fullRefund",true]) then {
+			//Trap was already triggered, refund all parts except grenade
+			player removeMagazine _classname;
+			["equip_string",1,1] call fn_dropItem;
+			["PartWoodPile",1,1] call fn_dropItem;
+			["equip_duct_tape",1,1] call fn_dropItem;
+		};
+		PVDZ_obj_Destroy = [(_holder getVariable["ObjectID","0"]),(_holder getVariable["ObjectUID","0"]),player];
+		publicVariableServer "PVDZ_obj_Destroy";
+	};
 	deleteVehicle _holder;
 } else {
 	if (!_isOk) exitWith {

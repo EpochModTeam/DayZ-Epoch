@@ -10,7 +10,9 @@ if (!isNull _trap) then {
 		if (isNull _trap) exitWith { /* break from loop */ };
 
 		if (((parseNumber _id > 0) || (parseNumber _uid > 0)) && !isNil "_armed") exitWith {
-			dayz_traps set [count dayz_traps, _trap];
+			if (isServer) then {
+				dayz_traps set [count dayz_traps, _trap];
+			};
 		};
 
 		uiSleep 0.5;

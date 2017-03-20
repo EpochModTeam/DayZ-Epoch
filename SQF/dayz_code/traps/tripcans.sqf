@@ -28,7 +28,7 @@ _arm = {
 
 		[_trap, _trigger] call arm_trap;
 	//} else {
-		_trap setVariable ["armed", true, true];
+		//_trap setVariable ["armed", true, true];
 	//};
 };
 

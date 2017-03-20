@@ -11,6 +11,24 @@ _init = {
 };
 
 _arm = {
+	_exit = false;
+	
+	if (!isDedicated && !(_trap getVariable["fullRefund",true])) then {
+		_exit = true;
+		{
+			if (_x in magazines player) exitWith {
+				player removeMagazine _x;
+				_exit = false;
+				_trap setVariable ["fullRefund",true,true];
+			};
+		} count ["HandGrenade_West","HandGrenade_East"];
+	};
+	
+	if (_exit) exitWith {
+		//Trap was already triggered, require grenade to rearm
+		format[localize "str_player_03",localize "str_dn_grenade"] call dayz_rollingMessages;
+	};
+	
 	//if (isServer) then {
 		_pos = getPosATL _trap;
 		_pos1 = _trap modelToWorld (_trap selectionPosition "TripA");
@@ -28,7 +46,7 @@ _arm = {
 
 		[_trap, _trigger] call arm_trap;
 	//} else {
-		_trap setVariable ["armed", true, true];
+		//_trap setVariable ["armed", true, true];
 	//};
 };
 
@@ -45,6 +63,8 @@ _remove = {
 		[_trap] call remove_trap;
 	} else {
 		[_trap] call remove_trap;
+		
+		//Refund is determined in object_pickup.sqf
 		[0,0,0,["cfgMagazines","ItemTrapTripwireGrenade",_trap]] spawn object_pickup;
 	};
 };
@@ -62,6 +82,10 @@ _trigger = {
 		_flare = createVehicle ["GrenadeHandTimedWest_DZ", _position, [], 0, "CAN_COLLIDE"];
 
 		[_trap] call trigger_trap;
+		//Trap is left nearby to allow null source in damage handler.
+		
+		//TO-DO: save this variable to DB, currently allows one free rearm after server restart
+		_trap setVariable ["fullRefund",false,true];
 	};
 };
 

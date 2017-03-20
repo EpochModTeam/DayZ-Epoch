@@ -12,9 +12,6 @@ _init = {
 
 _arm = {
 	//if (isServer) then {
-		_trap animate ["LeftShutter", 0];
-		_trap animate ["RightShutter", 0];
-
 		_trigger = createTrigger ["EmptyDetector", getPosATL _trap];
 		_trigger setpos getPosATL _trap;
 		_trigger setTriggerArea [0.5, 0.5, 0, false];
@@ -27,7 +24,7 @@ _arm = {
 
 		[_trap, _trigger] call arm_trap;
 	//} else {
-		_trap setVariable ["armed", true, true];
+		//_trap setVariable ["armed", true, true];
 	//};
 };
 

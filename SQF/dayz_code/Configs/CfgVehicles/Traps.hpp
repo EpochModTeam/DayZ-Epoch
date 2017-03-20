@@ -8,7 +8,7 @@ class BearTrap_DZ : TrapItems {
 	model = "\dayz_equip\models\bear_trap.p3d";
 
 	script = "beartrap"; // compiled script variable name (used by server side loop)
-	initState = 0; // initial armed state
+	initState = 0; // initial armed state (>0 is not currently working)
 	singleUse = 0;
 	nounderground = 0;
 	requireplot = 0;
@@ -128,7 +128,7 @@ class TrapBearTrapFlare : TrapItems {
 	constructioncount = 1;
 
 	script = "beartrapflare"; // compiled script variable name (used by server side loop)
-	initState = 1; // initial armed state
+	initState = 0; // initial armed state (>0 is not currently working)
 	singleUse = 1; // gets replaced by BearTrap_DZ due to animation issues
 
 	class Eventhandlers {
@@ -180,7 +180,7 @@ class TrapBearTrapSmoke : TrapItems {
 	constructioncount = 1;
 
 	script = "beartrapsmoke"; // compiled script variable name (used by server side loop)
-	initState = 1; // initial armed state
+	initState = 0; // initial armed state (>0 is not currently working)
 	singleUse = 1; // gets replaced by BearTrap_DZ due to animation issues
 
 	class Eventhandlers {
@@ -230,7 +230,7 @@ class Trap_Cans : TrapItems {
 	nounderground = 0;
 
 	script = "tripcans"; // compiled script variable name (used by server side loop)
-	initState = 1; // initial armed state
+	initState = 0; // initial armed state (>0 is not currently working)
 	singleUse = 0;
 	requireplot = 0;
 	constructioncount = 1;
@@ -282,7 +282,7 @@ class TrapTripwireFlare : TrapItems {
 	nounderground = 0;
 
 	script = "tripflare"; // compiled script variable name (used by server side loop)
-	initState = 1; // initial armed state
+	initState = 0; // initial armed state (>0 is not currently working)
 	singleUse = 0;
 	requireplot = 0;
 	constructioncount = 1;
@@ -334,8 +334,8 @@ class TrapTripwireGrenade : TrapItems {
 	nounderground = 0;
 
 	script = "tripgrenade"; // compiled script variable name (used by server side loop)
-	initState = 1; // initial armed state
-	singleUse = 1;
+	initState = 0; // initial armed state (>0 is not currently working)
+	singleUse = 0; //Trap can now be rearmed with another grenade
 	requireplot = 0;
 	constructioncount = 1;
 
@@ -386,8 +386,8 @@ class TrapTripwireSmoke : TrapItems {
 	nounderground = 0;
 
 	script = "tripsmoke"; // compiled script variable name (used by server side loop)
-	initState = 1; // initial armed state
-	singleUse = 1;
+	initState = 0; // initial armed state (>0 is not currently working)
+	singleUse = 0; //Trap can now be rearmed with another smoke
 	requireplot = 0;
 	constructioncount = 1;
 
