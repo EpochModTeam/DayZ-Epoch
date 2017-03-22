@@ -1376,7 +1376,7 @@
 			<Spanish>Se las arregló para conseguirse un conjunto de trapos se desgarre la ropa.</Spanish>
 			<Czech>Z roztrhaného oblečení jste získali jednu hromádku hadrů.</Czech>
 			<French>Vous avez réussi à faire un chiffon de ces vêtements.</French>
-			<German>Du schaffst es einen kleinen Haufen Lumpen zurechtzureißen.</German>
+			<German>Du schaffst es, einen kleinen Haufen Lumpen zurechtzureißen.</German>
 		</Key>
 		<Key ID="str_tear_clothes_2">
 			<English>You managed to get yourself two sets of rags from tearing the clothes.</English>
@@ -1384,7 +1384,7 @@
 			<Spanish>Se las arregló para conseguirse dos juegos de trapos se desgarre la ropa.</Spanish>
 			<Czech>Z roztrhaného oblečení jste získali dvě hromádky hadrů.</Czech>
 			<French>Vous avez réussi à faire 2 chiffons de ces vêtements.</French>
-			<German>Du schaffst es zwei kleine Haufen Lumpen zurechtzureißen.</German>
+			<German>Du schaffst es, zwei kleine Haufen Lumpen zurechtzureißen.</German>
 		</Key>
 		<Key ID="str_tear_clothes_3">
 			<English>You managed to get yourself three sets of rags from tearing the clothes.</English>
@@ -1392,7 +1392,7 @@
 			<Spanish>Se las arregló para conseguirse tres juegos de trapos se desgarre la ropa.</Spanish>
 			<Czech>Z roztrhaného oblečení jste získali tři hromádky hadrů.</Czech>
 			<French>Vous avez réussi à faire 3 chiffons de ces vêtements.</French>
-			<German>Du schaffst es drei kleine Haufen Lumpen zurechtzureißen.</German>
+			<German>Du schaffst es, drei kleine Haufen Lumpen zurechtzureißen.</German>
 		</Key>
 		<Key ID="str_tear_clothes_noroom">
 			<English>You have no room left. Everything was dropped on the ground.</English>
@@ -1500,7 +1500,7 @@
 			<English>Maybe you can fix it with tape and a handle.</English>
 			<Russian>Попробуйте использовать скотч и рукоять для починки.</Russian>
 			<Czech>Možná to půjde spravit s pomocí pásky a násady.</Czech>
-			<German>Vielleicht kann das mit etwas Klebeband und einem neuen Schaft repariert werden.</German>
+			<German>Vielleicht kann das mit etwas Klebeband und einem neuen Stiel repariert werden.</German>
 		</Key>
 		<Key ID="str_fixtoolMissingTape">
 			<English>You will need some tape for this.</English>
@@ -1512,7 +1512,7 @@
 			<English>You will need a lever to fix this.</English>
 			<Russian>Для этого нужна рукоять.</Russian>
 			<Czech>K tomuto bude třeba nějaká násada nebo topůrko.</Czech>
-			<German>Dafür brauchst du einen Schaft.</German>
+			<German>Dafür brauchst du einen Stiel.</German>
 		</Key>
 		<Key ID="str_fixToolSuccess">
 			<English>You have fixed your %1.</English>
@@ -1526,13 +1526,13 @@
 			<Spanish>Mientras que cortar los saltos de la manija.</Spanish>
 			<Czech>Během sekání se zlomilo topůrko.</Czech>
 			<French>La poignée s&apos;est cassée pendant que vous coupiez du bois</French>
-			<German>Du schlägst zu und der Schaft des Beils bricht.</German>
+			<German>Du schlägst zu und der Stiel des Beils bricht.</German>
 		</Key>
 		<Key ID="str_PickAxeHandleBreaks">
 			<English>Whilst mining the handle breaks.</English>
 			<Russian>Кирка сломалась во время добычи</Russian>
 			<Czech>Během kopání se zlomila násada.</Czech>
-			<German>Du schlägst zu und der Schaft der Spitzhacke bricht.</German>
+			<German>Du schlägst zu und der Stiel der Spitzhacke bricht.</German>
 		</Key>
 		<Key ID="str_missing_to_do_this">
 			<English>Missing %1 to do this.</English>
@@ -4468,13 +4468,13 @@
 			<English>Lever (Handle)</English>
 			<Russian>Рукоять</Russian>
 			<Czech>Násada (topůrko)</Czech>
-			<German>Schaft</German>
+			<German>Stiel</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_LEVER">
 			<English>A brand new handle that can be used to fix broken tools.</English>
 			<Russian>Новенькая рукоять для починки сломанных инструментов.</Russian>
 			<Czech>Zbrusu nová násada, která se může hodit k opravení nějakého rozbitého nářadí.</Czech>
-			<German>Ein neuer Schaft, um beschädigte Werkzeuge zu reparieren.</German>
+			<German>Ein neuer Stiel, um beschädigte Werkzeuge zu reparieren.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_CROWBAR">
 			<English>Crowbar</English>
