@@ -1,5 +1,6 @@
 class RscDisplayMainMap
 {
+	onKeyDown = FILTER_CHEATS;
 	class controls
 	{
 		delete CA_MainBackground;
@@ -45,5 +46,6 @@ class RscDisplayMainMap
 class RscDisplayInsertMarker
 {
 	idd = 54;
+	onKeyDown = FILTER_CHEATS;
 	onUnload = "if (!isNil 'player_markMap') then {(_this select 0) call player_markMap;};";
 };
