@@ -5393,7 +5393,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_6">
 			<English>A clean, unopened can of Mikhail Made Lemonade. Made by Mikhail.</English>
-			<German>Eine saubere, ungeöffnete Dose "Mikhail Made"-Limonade.</German>
+			<German>Eine saubere, ungeöffnete Dose "Mikhail Made"-Limonade. Hergestellt von Mikhail.</German>
 			<Russian>Чистая, закрытая банка лимонада. Производства "Mikhail".</Russian>
 			<Spanish>Una limpia y cerrada lata de limonada Mikhail.</Spanish>
 			<French>Une canette intacte de limonade à la Mikhail. Fabriqué par Mikhail.</French>
@@ -5462,7 +5462,7 @@
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_11">
 			<English>Beer</English>
-			<German>Bier</German>
+			<German>Dose (Bier)</German>
 			<Russian>Пиво</Russian>
 			<Spanish>Cerveza</Spanish>
 			<French>Bière</French>
