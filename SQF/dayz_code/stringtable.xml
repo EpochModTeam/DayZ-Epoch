@@ -6080,7 +6080,7 @@
 		</Key>
 		<Key ID="STR_JUNK_DESC_TOILETPAPER">
 			<English>A roll of toilet paper.</English>
-			<German>Eine Rolle Toilettenpapier. Im Notfall nützlich.</German>
+			<German>Eine Rolle Toilettenpapier. Im Notfall nützlich und in der heutigen Zeit wohl ein echter Luxus.</German>
 			<Russian>Рулон туалетной бумаги. Может быть весьма полезным в определенных ситуациях.</Russian>
 			<Spanish>Un rollo de papel higiénico.</Spanish>
 			<French>Un rouleau de papier toilette.</French>
@@ -6096,7 +6096,7 @@
 		</Key>
 		<Key ID="STR_JUNK_DESC_RAZOR">
 			<English>An old-fashioned cut-throat razor with a rounded French point.</English>
-			<German>Ein altmodisches Rasiermesser mit französischem Rundkopf.</German>
+			<German>Ein altmodisches Rasiermesser mit französischem Rundkopf. Es ist noch immer scharf und benutzbar.</German>
 			<Russian>Старомодная опасная бритва.</Russian>
 			<Spanish>Una vieja navaja con una punta francesa redondeada.</Spanish>
 			<French>Un coupe-chou démodé à pointe biseautée.</French>
@@ -6112,7 +6112,7 @@
 		</Key>
 		<Key ID="STR_BOOK_DESC_BIBLE">
 			<English>A collection of texts considered to be sacred.</English>
-			<German>Eine Sammlung religiöser Texte.</German>
+			<German>Eine Sammlung religiöser Texte. Ob die Religionen in dieser Zeit noch eine so große Rolle spielen?</German>
 			<Russian>Собрание священных текстов христиан, состоящее из Ветхого и Нового Завета.</Russian>
 			<Spanish>Una colección de textos considerados como sagrados.</Spanish>
 			<French>Un recueil de textes condidérés comme sacrés.</French>
@@ -6192,7 +6192,7 @@
 		<Key ID="STR_ITEM_DESC_JERRYCAN">
 			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
 			<Spanish>Un bidón de combustible de 20 litros para recargar vehículos y generadores.</Spanish>
-			<German>Ein 20-Liter-Kanister, der zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
+			<German>Ein 20-Liter-Kanister, welcher zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
 			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
 			<French>Un jerrican de 20 litres qui peut être utilisé pour réaprovisionner les véhicules et générateurs de courant.</French>
 			<Czech>Dvacetilitrový kanistr, který se dá použít k dotankování vozidel a generátorů.</Czech>
@@ -6363,7 +6363,7 @@
 			<Spanish>Gasa estéril con plata antibacteriana.</Spanish>
 			<French>Lingette antibactérienne</French>
 			<Czech>Antibakteriální ubrousky</Czech>
-			<German>Antibakterielle Desinfektionstücher, mit denen Wunden gereinigt und desinfiziert werden können.</German>
+			<German>Antibakterielle Desinfektionstücher, mit welchen Wunden gereinigt und desinfiziert werden können.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FISHINGPOLE">
 			<English>Fishing Pole</English>
@@ -6397,7 +6397,7 @@
 			<Spanish>Red de camuflaje militar para ocultar objetos en la vegetación densa.</Spanish>
 			<French>Filet militaire imitant le feuillage, utilisé pour cacher des objets.</French>
 			<Czech>Vojenská kamuflážní síť pro skrytí vozidel v zalesněném terénu.</Czech>
-			<German>Militärisches Tarnnetz, mit dem große Objekte im Unterholz versteckt werden können.</German>
+			<German>Militärisches Tarnnetz, mit welchem große Objekte im Unterholz versteckt werden können.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BEAR_TRAP_SMOKE">
 			<English>Bear Trap (Smoke)</English>
@@ -6413,7 +6413,7 @@
 			<Spanish>Trampa de osos que acciona una granada de humo.</Spanish>
 			<Czech>Díky této věcičce lze chytit zvíře nebo zranit člověka.</Czech>
 			<French>Un dispositif permettant de piéger un animal ou de blesser une personne.</French>
-			<German>Eine Schnappfalle, die mit einem zusätzlichen Rauchsignal versehen wurde.</German>
+			<German>Eine Bärenfalle, welche einem zusätzlichen Rauchsignal versehen wurde.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BEAR_TRAP_FLARE">
 			<English>Bear Trap (Flare)</English>
@@ -6429,7 +6429,7 @@
 			<Russian>Устройство для ловли животных, но может повредить и человека. Загорается при сработке.</Russian>
 			<Czech>Díky této věcičce lze chytit zvíře nebo zranit člověka.</Czech>
 			<French>Un dispositif permettant de piéger un animal ou de blesser une personne.</French>
-			<German>Eine Schnappfalle, die mit einem zusätzlichen Leuchtsignal versehen wurde.</German>
+			<German>Eine Bärenfalle, welche mit einem zusätzlichen Leuchtsignal versehen wurde.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_TRIPWIRE_CANS">
 			<English>Tripwire (Cans)</English>
@@ -6442,7 +6442,7 @@
 		<Key ID="STR_ITEM_DESC_TRIPWIRE_CANS">
 			<English>Homemade trap triggered by a hidden cable.</English>
 			<Russian>Натянутый шнур, воздействие на который сопровождается звоном жестянок.</Russian>
-			<German>Eine improvisierte Falle, die durch einen Stolperdraht ausgelöst wird.</German>
+			<German>Eine improvisierte Falle, welche durch einen Stolperdraht ausgelöst wird.</German>
 			<Spanish>Trampa explosiva casera mediante un cable oculto.</Spanish>
 			<French>Piège déclenché au passage d&apos;un fil caché.</French>
 			<Czech>Podomácku vyrobená past s nataženým drátem.</Czech>
@@ -6477,7 +6477,7 @@
 			<Russian>Натянутый шнур, воздействие на который сопровождается взрывом гранаты.</Russian>
 			<Czech>Podomácku vyrobená past s nataženým drátem a granátem v plechovce od piva.</Czech>
 			<French>Piège déclenché au passage d&apos;un fil caché.</French>
-			<German>Eine improvisierte Sprengfalle, die durch einen Stolperdraht ausgelöst wird.</German>
+			<German>Eine improvisierte Sprengfalle, welche durch einen Stolperdraht ausgelöst wird.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_TRIPWIRE_SMOKE">
 			<English>Tripwire (Smoke)</English>
@@ -6535,7 +6535,7 @@
 			<English>This kit is used to craft a crossbow</English>
 			<Russian>Набор (струны и плечи) для создания арбалета.</Russian>
 			<Czech>Tato sada obsahuje tětivu a lučiště. Součást nutná pro výrobu kuše.</Czech>
-			<German>Ein Armbrust-Selbstbau-Kit zum Herstellen einer Armbrust.</German>
+			<German>Ein Armbrust-Selbstbau-Kit, welches zum Herstellen einer Armbrust genutzt werden kann.</German>
 		</Key>
 		<Key ID="STR_ANTIBIOTICS_COMBINE">
 			<English>Combine</English>
@@ -6604,7 +6604,7 @@
 		</Key>
 		<Key ID="str_fail_tent_pack">
 			<English>You cannot pack this tent, it is not yours</English>
-			<German>Du kannst dieses Zelt nicht abbauen, es gehört dir nicht!</German>
+			<German>Du kannst dieses Zelt nicht abbauen, denn es gehört dir nicht.</German>
 			<Russian>Вы не можете свернуть эту палатку, так как она не ваша.</Russian>
 			<Spanish>No puedes embalar esta carpa ya que no es tuya.</Spanish>
 			<French>Vous ne pouvez pas replier cette tente, elle ne vous appartient pas.</French>
@@ -6708,7 +6708,7 @@
 		</Key>
 		<Key ID="str_build_failed_02">
 			<English>You have failed to build %1.</English>
-			<German>Aufbau gescheitert.</German>
+			<German>Der Aufbau ist gescheitert.</German>
 			<Russian>Вам не удалость построить %1.</Russian>
 			<Spanish>Fallaste al contruir un %1.</Spanish>
 			<French>Vous n&apos;avez pas réussi à contruire %1.</French>
@@ -6841,7 +6841,7 @@
 			<Spanish>Cargando e inicializando DayZMod</Spanish>
 			<French>Chargement et initialisation de DayZMod en cours</French>
 			<Czech>Probíhá nahrávání a inicializace DayZModu</Czech>
-			<German>Lade und initialisiere DayZ Mod</German>
+			<German>Lade und initialisiere DayZMod</German>
 		</Key>
 		<Key ID="str_player_retrying">
 			<English>Retrying Authentication</English>
@@ -6885,7 +6885,7 @@
 		</Key>
 		<Key ID="str_player_creating_character">
 			<English>Server responded, creating character</English>
-			<German>Server antwortet, Charakter wird erstellt</German>
+			<German>Server hat geantwortet, Charakter wird erstellt</German>
 			<Russian>Получен ответ от сервера. Идет создание персонажа</Russian>
 			<Spanish>El servidor respondió, creando personaje</Spanish>
 			<French>Réponse du serveur, création du personnage</French>
@@ -6953,7 +6953,7 @@
 			<Spanish>Usted está en el modo de fantasma, de volver a intentarlo en% 1 segundos!</Spanish>
 			<Czech>Nacházíte se v módu duchů, další pokus znovu za %1 sekund!</Czech>
 			<French>Vous êtes en quarantaine, nouvelle tentative dans %1 secondes!</French>
-			<German>Du bist im Ghost-Modus, versuche es nochmals in %1 Sekunden!</German>
+			<German>Du bist im Ghost-Modus. Bitte versuche es nochmals in %1 Sekunde(n)!</German>
 		</Key>
 		<Key ID="str_login_characterData">
 			<English>Character Data received from server</English>
@@ -6967,7 +6967,7 @@
 			<Russian>Игрок уже мертв! Отключитесь и попробуйте снова!</Russian>
 			<French>Vous êtes déjà mort, essayez encore!</French>
 			<Czech>Hráč je mrtev, odhlašte se a zkuste znovu!</Czech>
-			<German>Spieler tot. Bitte Verbidung trennen und noch einmal versuchen!</German>
+			<German>Spieler ist bereits tot. Bitte Verbidung trennen und noch einmal versuchen!</German>
 		</Key>
 		<Key ID="str_login_spawningLocalObjects">
 			<English>Spawning items...</English>
@@ -7110,10 +7110,12 @@
 		<Key ID="str_player_33">
 			<English>You seem to have misplaced the foodstuff.</English>
 			<Russian>Кажется вы выронили еду.</Russian>
+			<German>Du scheinst das Essen verloren zu haben.</German>
 		</Key>
 		<Key ID="str_misplaced_container">
 			<English>You seem to have misplaced the container.</English>
 			<Russian>Кажется вы потеряли контейнер.</Russian>
+			<German>Du scheinst den Behälter verloren zu haben.</German>
 		</Key>
 		<Key ID="str_mining_finished">
 			<English>You have finished collecting stone.</English>
@@ -7131,7 +7133,7 @@
 			<English>Canceled mining stone</English>
 			<Russian>Добыча камня отменена</Russian>
 			<Czech>Lámání kamene bylo přerušeno</Czech>
-			<German>Abbau abgebrochen</German>
+			<German>Der Abbau wurde abgebrochen.</German>
 		</Key>
 		<Key ID="str_mining_no_rocks">
 			<English>Cannot find any rocks around.</English>
@@ -7142,7 +7144,7 @@
 		<Key ID="STR_MINING_IN_PROGRESS">
 			<English>Mining already in progress!</English>
 			<Russian>Добыча в процессе!</Russian>
-			<German>Du bist bereits dabei etwas abzubauen!</German>
+			<German>Du bist bereits dabei etwas abzubauen.</German>
 		</Key>
 		<Key ID="str_player_toback_fail">
 			<English>Cannot add %1 to back.</English>
@@ -7162,7 +7164,7 @@
 		</Key>
 		<Key ID="str_player_31_missingtools">
 			<English>To build %1 you require %2.</English>
-			<German>Um %1 herzustellen, brauchst du %2.</German>
+			<German>Um %1 zu bauen, brauchst du %2.</German>
 			<Russian>Чтобы построить (%1), вам нужен (%2).</Russian>
 			<Spanish>Para crear un %1 necesitas %2.</Spanish>
 			<French>Pour construire un(e) %1, il vous faut : %2.</French>
@@ -7288,7 +7290,7 @@
 		</Key>
 		<Key ID="str_player_death_killed">
 			<English>%1 was killed by %2 with a %3 from %4m</English>
-			<German>%1 wurde von %2 mit einer %3 von %4m getötet</German>
+			<German>%1 wurde von %2 mit einer %3 aus %4m Entfernung getötet.</German>
 			<Russian>%1 был убит игроком %2 с %3 с расстояния %4м</Russian>
 		</Key>
 <!--		
@@ -7311,7 +7313,7 @@
 	-->
 		<Key ID="str_player_fail_wear1">
 			<English>You may not change clothes while in a vehicle</English>
-			<German>Du kannst dich in einem Fahrzeug nicht umziehen, hier ist es viel zu eng!</German>
+			<German>Du kannst dich in einem Fahrzeug nicht umziehen, hier ist es viel zu eng.</German>
 			<Russian>Нельзя переодеваться в транспорте</Russian>
 			<Spanish>No puedes cambiar de ropa mientras estás en un vehículo</Spanish>
 			<French>Vous ne pouvez pas vous changer dans un véhicule</French>
@@ -7332,7 +7334,7 @@
 		</Key>
 		<Key ID="str_player_actionslimit">
 			<English>Wait for the previous action to complete to perform another!</English>
-			<German>Warte bis die vorherige Aktion abgeschlossen ist, bevor du eine neue beginnst!</German>
+			<German>Warte bis die vorherige Aktion abgeschlossen ist, bevor du eine neue beginnst.</German>
 			<Russian>Дождитесь завершения предыдущего действия, перед тем, как начинать новое!</Russian>
 			<Spanish>¡Espera a terminar la acción previa para realizar otra!</Spanish>
 			<French>Attendez la fin de l&apos;action en cours avant d&apos;en commencer une autre!</French>
@@ -7361,21 +7363,21 @@
 			<Russian>Нельзя одновременно носить наготове два основных типа оружия!</Russian>
 			<French>Vous ne pouvez pas porter 2 armes principales!</French>
 			<Czech>Nelze mít najednou dvě hlavní zbraně!</Czech>
-			<German>Du kannst nicht zwei Primärwaffen gleichzeitig tragen!</German>
+			<German>Du kannst nicht zwei Primärwaffen gleichzeitig tragen.</German>
 		</Key>
 		<Key ID="str_player_ammo_CannotCount">
 			<English>Can&apos;t count magazines!</English>
 			<Russian>Не удалось пересчитать магазины!</Russian>
 			<French>Impossible de compter les chargeurs!</French>
 			<Czech>Nelze spočítat zásobníky!</Czech>
-			<German>Du kannst die Magazine nicht zählen!</German>
+			<German>Du kannst die Magazine nicht zählen.</German>
 		</Key>
 		<Key ID="str_player_lowPFS">
 			<English>LOW FPS! PLEASE CHANGE YOUR GRAPHIC SETTINGS</English>
 			<Russian>Низкий FPS! Измените настройки графики!</Russian>
 			<French>IMAGES SACCADEES, VEUILLEZ BAISSER VOS REGLAGES VIDEO</French>
 			<Czech>NÍZKÉ FPS (SNÍMKOVÁ FREKVENCE), UPRAVTE NASTAVENÍ GRAFIKY</Czech>
-			<German>NIEDRIGE FPS! ÄNDERE DIE GRAFIK-EINSTELLUNGEN</German>
+			<German>NIEDRIGE FPS! ÄNDERE DIE GRAFIK-EINSTELLUNGEN!</German>
 		</Key>
 
 		<Key ID="str_player_build_rotate">
@@ -7388,7 +7390,7 @@
 		</Key>
 		<Key ID="str_player_build_movingfast">
 			<English>You are moving too fast!</English>
-			<German>Du bewegst dich zu schnell!</German>
+			<German>Du bewegst dich zu schnell.</German>
 			<Russian>Вы слишком быстро движитесь!</Russian>
 			<Spanish>¡Te estás moviendo muy rápido!</Spanish>
 			<French>Vous vous déplacez trop vite!</French>
@@ -7602,7 +7604,7 @@
 		</Key>
 		<Key ID="str_broken_arrow">
 			<English>Arrow was broken and cannot be used again</English>
-			<German>Der Pfeil ist gebrochen und kann nicht noch einmal verwendet werden.</German>
+			<German>Der Pfeil ist gebrochen und kann nicht erneut verwendet werden.</German>
 			<Russian>Стрела сломалась. Ее нельзя использовать повторно.</Russian>
 			<Spanish>La flecha se rompió y no puede usarse nuevamente</Spanish>
 			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
@@ -7805,7 +7807,7 @@
 		</Key>
 		<Key ID="STR_UI_GENDER_DESC">
 			<English>Please select the gender you wish to play as. Your gender will be bound to this unique character and cannot be changed until you die.</English>
-			<German>Bitte wähle das Geschlecht aus, mit dem du Spielen willst. Das Geschlecht dieses Charakters kann nicht geändert werden, bis du stirbst.</German>
+			<German>Bitte wähle das Geschlecht aus, mit dem du spielen willst. Das Geschlecht dieses Charakters kann nicht geändert werden, bis du stirbst.</German>
 			<Russian>Пожалуйста, выберите пол вашего персонажа. Учтите, вы не сможете изменить его в течении игры, до тех пор, пока не погибнете.</Russian>
 			<Spanish>Por favor selecciona el género con el que deseas jugar. Tu género se enlazará a tu personaje y solo podrá ser cambiado cuando mueras.</Spanish>
 			<French>Veuillez sélectionner le genre que vous voulez jouer. Votre genre sera lié à ce personnage unique et sera définitif jusqu&apos;à la mort de ce dernier.</French>
@@ -7845,7 +7847,7 @@
 		</Key>
 		<Key ID="STR_UI_STREAMER_MODE_TOOLTIP">
 			<English>Hides server watermark and rules feed</English>
-			<German>Blendet das Server Wasserzeichen und die Chatliste aus.</German>
+			<German>Blendet das Server Wasserzeichen und die Regelliste aus.</German>
 		</Key>
 	</Package>
 	<Package name="playerstats">
@@ -8006,7 +8008,7 @@
 		<Key ID="str_playerstats_journal_2_info_3">
 			<!-- str_playerstats_journal_2 %6 -->
 			<English>I&apos;ve been here %1 days and counting.</English>
-			<German>ich bin jetzt seit %1 Tagen hier. Das werden noch ein paar mehr...</German>
+			<German>ich bin jetzt seit %1 Tagen hier. Tendenz steigend...</German>
 			<Russian>я тут уже %1 дней.</Russian>
 			<Spanish>estuve aquí por %1 días y contando.</Spanish>
 			<French>Je suis ici depuis %1 jours et quelque.</French>
@@ -8046,7 +8048,7 @@
 		</Key>
 		<Key ID="str_playerstats_journal_4_1">
 			<English>, although I do feel really sick</English>
-			<German>, aber ich fühle mich überhaupt nicht wohl</German>
+			<German>, obwohl ich mich wirklich schlecht fühle</German>
 			<Russian>, хотя я чувствую себя действительно больным</Russian>
 			<Spanish>, encima me siento realmente mal</Spanish>
 			<French>, bien que je me sens malade</French>
