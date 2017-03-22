@@ -58,7 +58,7 @@ if ((_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","Item
 
 _isOk = [player,_config2] call BIS_fnc_invAdd;
 if (_isOk) then {
-	player removeWeapon _item;
+	player removeWeapon _item; //Need use BIS_fnc_invRemove, or player can dupe item
 	//adding old melee converted to Item on place of removed _item
 	if (_melee2tb != "") then {
 		//we know there is place to add item but to prevent BE spam using _config2
