@@ -112,7 +112,7 @@ _switchUnit = {
 	_rndx = floor(random 100);
 	_rndy = floor(random 100);
 	_oldUnit setPosATL [(respawn_west_original select 0) + _rndx, (respawn_west_original select 1) + _rndy, 0];
-	_newUnit setPosATL [_position select 0,_position select 1,(_position select 2)+.1]; //Prevents swimming in ground glitch
+	_newUnit setPosATL _position;
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} count magazines _oldUnit;
 	if !(isNull _oldUnit) then {deleteVehicle _oldUnit;};

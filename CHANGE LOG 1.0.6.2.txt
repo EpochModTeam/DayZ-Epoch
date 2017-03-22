@@ -12,6 +12,7 @@
 [FIXED] Player_forceSave is now called correctly when the abort menu is opened. It was previously using the wrong variable and time.
 [FIXED] The unconscious wake up animation can no longer be skipped by using a bandage or other right click actions.
 [FIXED] Sharpening a knife will no longer delete one if the player already had a fully sharpened knife on their toolbelt (duplicate weapon).
+[FIXED] Swimming in ground when relogging on some maps again. #1913 @Cherdenko
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 

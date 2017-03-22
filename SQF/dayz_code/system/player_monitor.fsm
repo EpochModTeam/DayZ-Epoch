@@ -994,7 +994,7 @@ class FSM
                          "if (dayz_paraSpawn && freshSpawn == 2) then {" \n
                          "	player setPosATL [_setPos select 0,_setPos select 1,DZE_HaloSpawnHeight];" \n
                          "} else {" \n
-                         "	player setPosATL [_setPos select 0,_setPos select 1,(_setPos select 2)+.1]; //Prevents swimming in ground glitch" \n
+                         "	player setPosATL _setPos;" \n
                          "};" \n
                          "" \n
                          "player setVelocity [0,0,0.5];" \n
