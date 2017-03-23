@@ -269,15 +269,3 @@ array_reduceSize = {
 // Precise base building 1.0.5
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\kk_functions.sqf";
 #include "mission_check.sqf"
-
-/*
-	Create platform if respawn_west position is in water
-	Makes sure player is standing instead of swimming when teleported to land or air
-*/
-private "_platform";
-if (surfaceIsWater respawn_west_original) then {
-	_platform = createVehicle ["Land_Dirthump01",[0,0,0],[],0,"CAN_COLLIDE"];
-	_platform setPosASL [respawn_west_original select 0, respawn_west_original select 1, -0.1];
-	_platform setVehicleInit "this enableSimulation false;this allowDamage false;";
-	processInitCommands;
-};

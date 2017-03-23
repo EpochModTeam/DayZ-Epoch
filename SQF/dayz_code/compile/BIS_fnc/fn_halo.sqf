@@ -239,14 +239,8 @@ if (typename _this == typename []) then {
 	//--- Free fall
 	if (count _this == 2) exitwith { //Fresh spawn calling from player_monitor.fsm
 		_alt = _this select 1;
-		_unit allowDamage false;
-		_paraPosition = [_unit] call FNC_GetPos;
-		//_paraPosition set [2,_alt];
-		_para = createVehicle ["ParachuteWest", _paraPosition, [], 0, "CAN_COLLIDE"];
-		_para setpos _paraPosition;
-		_unit moveindriver _para; //Workaround for stuck swimming in air on maps with respawn_west in water. Can't setPos to ground first because antiTP blocks it.
+		_unit call fn_exitSwim;
 		_unit setvariable ["bis_fnc_halo_now",true];
-		_unit allowDamage true;
 		_unit spawn bis_fnc_halo;
 	};
 	//-------------

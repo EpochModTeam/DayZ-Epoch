@@ -113,6 +113,7 @@ _switchUnit = {
 	_rndy = floor(random 100);
 	_oldUnit setPosATL [(respawn_west_original select 0) + _rndx, (respawn_west_original select 1) + _rndy, 0];
 	_newUnit setPosATL _position;
+	if (surfaceIsWater respawn_west_original) then {_newUnit call fn_exitSwim;};
 	removeAllWeapons _oldUnit;
 	{_oldUnit removeMagazine _x;} count magazines _oldUnit;
 	if !(isNull _oldUnit) then {deleteVehicle _oldUnit;};
