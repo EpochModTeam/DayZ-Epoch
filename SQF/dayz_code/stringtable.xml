@@ -5251,7 +5251,7 @@
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_DESC">
 			<English>A bottle of boiled water that has been filled and can be consumed.</English>
-			<German>Eine Flasche mit zum Schutz vor Infektionen abgekochtem Wasser.</German>
+			<German>Eine Flasche gefüllt mit abgekochtem Wasser, um Infektionen vorzubeugen.</German>
 			<Russian>Бутылка чистой или обработанной воды. Пригодна для безопасного употребления.</Russian>
 			<Spanish>Una cantimplora llena con agua hervida y que puede consumirse.</Spanish>
 			<French>Une Bouteille remplie d&apos;eau bouillie qui peut être consommée.</French>
@@ -6129,7 +6129,7 @@
 		</Key>
 		<Key ID="STR_ITEM_NAME_CARDS">
 			<English>Cards</English>
-			<German>Karten</German>
+			<German>Skatkarten</German>
 			<Russian>Карты</Russian>
 			<Spanish>Cartas</Spanish>
 			<French>Cartes</French>
@@ -6653,7 +6653,7 @@
 		</Key>
 		<Key ID="str_fail_stash_pitch">
 			<English>You cannot place a %1 here. The area must be flat, and free of other objects.</English>
-			<German>%1 kann hier nicht angelegt werden. Der Untergrund muss flach und frei von Hindernissen sein.</German>
+			<German>%1 kann hier nicht platziert werden. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Нельзя установить %1 тут. Поверхность должна быть ровной, без объектов поблизости.</Russian>
 			<Spanish>No puedes ubicar una %1 aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<French>Vous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
@@ -7256,7 +7256,7 @@
 			<Russian>Вы должны находится возле источника воды чтобы попить.</Russian>
 			<Spanish>Debe estar cerca de una fuente de agua, como un estanque, pozo de agua, o bien para beber.</Spanish>
 			<Czech>Musíte být v blízkosti vodního zdroje jako je rybník, zavlažovací díra, nebo studna.</Czech>
-			<German>Du musst dich in der Nähe einer Wasserquelle befinden, um trinken zu können.</German>
+			<German>Du musst dich an einer Wasserquelle befinden, um trinken zu können.</German>
 			<French>Pour boire, vous devez être à côté d&apos;une source comme un plan d&apos;eau, une fontaine ou un puits</French>
 		</Key>
 		<Key ID="str_player_beinglooted">
@@ -7475,7 +7475,7 @@
 		</Key>
 		<Key ID="str_death_shothead">
 			<English>a gunshot to the head.</English>
-			<German>durch einen Schuss in den Kopf.</German>
+			<German>durch einen Kopfschuss.</German>
 			<Russian>попадания пули в голову.</Russian>
 			<Spanish>por un disparo en la cabeza.</Spanish>
 			<French>une balle dans la tête.</French>
@@ -7555,7 +7555,7 @@
 		</Key>
 		<Key ID="str_death_crash">
 			<English>a vehicle crash.</English>
-			<German>durch einen Fahrzeug Crash.</German>
+			<German>durch einen Fahrzeug-Crash.</German>
 		</Key>
 		<Key ID="str_death_runover">
 			<English>being run over.</English>
@@ -8361,11 +8361,13 @@
 			<English>Sedan</English>
 			<Russian>Седан</Russian>
 			<Spanish>Sedán</Spanish>
+			<German>Limousine</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV">
 			<English>HMMWV</English>
 			<Russian>Хамви</Russian>
 			<Spanish>Humvee Militar</Spanish>
+			<German>Humvee</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_ATV">
 			<English>ATV</English>
