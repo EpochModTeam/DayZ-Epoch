@@ -167,6 +167,7 @@
 			<Czech>Upéct jídlo</Czech>
 			<French>Cuire la Nourriture</French>
 		</Key>
+		<!-- Not used anymore
 		<Key ID="str_actions_self_06">
 			<English>Remove fireplace</English>
 			<German>Feuerstelle zerstören</German>
@@ -175,6 +176,7 @@
 			<French>Retirer le Feu de camp</French>
 			<Czech>Odstranit ohniště</Czech>
 		</Key>
+		Not used anymore -->
 		<Key ID="str_actions_self_07">
 			<English>Pack Tent</English>
 			<German>Zelt abbauen</German>
@@ -290,7 +292,7 @@
 		<Key ID="str_actions_medical_misplaced_antibiotics">
 			<English>You seem to have misplaced your antibiotics.</English>
 			<Russian>Похоже, вы потеряли антибиотики.</Russian>
-			<German>Du hast das Antibiotikum verloren.</German>
+			<German>Du scheinst das Antibiotikum verloren zu haben.</German>
 		</Key>
 		<Key ID="str_actions_medical_taken_antibiotics">
 			<English>You have taken antibiotics.</English>
@@ -563,7 +565,7 @@
 			<Russian>Тестер крови</Russian>
 			<French>Test de groupe sanguin</French>
 			<Czech>Krevní test</Czech>
-			<German>Blutgruppentestkit</German>
+			<German>Bluttestkit</German>
 		</Key>
 		<Key ID="STR_BLD_desc_bloodTester">
 			<English>Used to determine RH and blood type</English>
@@ -612,7 +614,7 @@
 			<Russian>Еще ненаполненный пакет для крови</Russian>
 			<French>Une poche de sang vide à remplir avec un kit de transfusion</French>
 			<Czech>Prázdný krevní vak, jenž je možné naplnit vlastní krví s pomocí transfúzní soupravy.</Czech>
-			<German>Eine sterile leere Blutkonserve, die mit Blut befüllt werden kann.</German>
+			<German>Eine sterile leere Blutkonserve, welche mit Blut befüllt werden kann.</German>
 		</Key>
 		<Key ID="str_actions_medical_bagMissingKit">
 			<English>Missing Transfusion kit.</English>
@@ -729,6 +731,7 @@
 			<French>Remettre du carburant dans %1 avec %2L</French>
 			<Czech>Doplnit %2L paliva do %1</Czech>
 		</Key>
+		<!-- Not used anymore
 		<Key ID="str_actions_medical_11">
 			<English>Issue %1</English>
 			<German>%1 ausgeben</German>
@@ -745,6 +748,7 @@
 			<French>Empaqueter %1</French>
 			<Czech>Zabalit %1</Czech>
 		</Key>
+		Not used anymore -->
 		<Key ID="str_actions_medical_14">
 			<English>Unload patients from %1</English>
 			<German>Patienten aus %1 ausladen</German>
@@ -779,7 +783,7 @@
 		</Key>
 		<Key ID="str_actions_medical_transfusion_failed_transfusionkit">
 			<English>Transfusion failed. Missing Transfusion Kit!</English>
-			<German>Die Transfusion ist fehlgeschlagen. Dir fehlt ein Transfusionkit!</German>
+			<German>Die Transfusion ist fehlgeschlagen! Dir fehlt ein Transfusionkit.</German>
 			<Russian>Переливание отменено. Отсутствует набор для переливания!</Russian>
 			<Czech>Transfúze selhala, chybí transfúzní souprava!</Czech>
 		</Key>
@@ -809,7 +813,7 @@
 		</Key>
 		<Key ID="str_actions_medical_dragbody_veh">
 			<English>You cannot enter a vehicle while dragging a body!</English>
-			<German>Du kannst nicht einsteigen, während du einen Körper ziehst!</German>
+			<German>Du kannst nicht einsteigen, während du einen Körper ziehst.</German>
 			<Russian>Нельзя сесть в транспорт, таская тело!</Russian>
 			<Spanish>¡No puedes entrar a un vehículo mientras arrastras un cuerpo!</Spanish>
 			<French>Vous ne pouvez pas entrer dans un véhicule lorsque vous traînez un corps!</French>
@@ -837,7 +841,6 @@
 			<German>Hacken</German>
 			<Czech>Rozsekat</Czech>
 			<French>Hacker</French>
-			<Spanish></Spanish>
 		</Key>
 		<Key ID="str_action_studybody">
 			<English>Study Body</English>
@@ -847,6 +850,7 @@
 			<French>Examiner le corps</French>
 			<Czech>Prozkoumat tělo</Czech>
 		</Key>
+		<!-- Not used anymore
 		<Key ID="str_actions_delete">
 			<English>Destroy %1</English>
 			<German>%1 entfernen</German>
@@ -862,6 +866,7 @@
 			<French>Sauvegarder %1</French>
 			<Czech>Uložit %1</Czech>
 		</Key>
+		Not used anymore -->
 		<Key ID="str_actions_flipveh">
 			<English>Turn Over %1</English>
 			<German>%1 umdrehen</German>
@@ -874,6 +879,7 @@
 			<English>Push Plane</English>
 			<German>Flugzeug schieben</German>
 		</Key>
+		<!-- Not used anymore
 		<Key ID="str_actions_stats">
 			<English>Enable Stats</English>
 			<German>Statistik aktiveren</German>
@@ -930,6 +936,7 @@
 			<French>Humanité</French>
 			<German>Menschlichkeit</German>
 		</Key>
+		Not used anymore -->
 		<Key ID="str_actions_self_destroytent">
 			<English>Destroy Tent</English>
 			<Russian>Уничтожить палатку</Russian>
@@ -1031,6 +1038,7 @@
 			<French>Préparer un feu de camp</French>
 			<Czech>Vytvořit ohniště</Czech>
 		</Key>
+		<!-- Not used anymore
 		<Key ID="STR_ACTIONS_CHOPWOOD">
 			<English>Harvest Wood</English>
 			<German>Holz hacken</German>
@@ -1039,6 +1047,7 @@
 			<French>Ramasser du bois</French>
 			<Czech>Nasekat dřevo</Czech>
 		</Key>
+		-->
 		<Key ID="STR_ACTIONS_MINE_STONE">
 			<English>Harvest Stone</English>
 			<Russian>Добыть камень</Russian>
@@ -4248,7 +4257,7 @@
 		</Key>
 		<Key ID="STR_MAG_DESC_4">
 			<English>Hand operated flare commonly found in roadside emergency kits. Will burn for approximately five minutes.</English>
-			<German>Eine Bengalische Fackel, die häufig in Erste-Hilfe-Kästen von Fahrzeugen zu finden ist. Eine Fackel brennt etwa fünf Minuten.</German>
+			<German>Eine Bengalische Fackel, welche häufig in Erste-Hilfe-Kästen von Fahrzeugen zu finden ist. Die Leuchdauer beträgt etwa 5 Minuten.</German>
 			<Russian>Гражданский сигнальный фаер, который обычно используют спасатели. Горит около пяти минут.</Russian>
 			<Spanish>Bengala manual comúnmente encontrada en los kits de emergencia al costado del camino. Quemará por aproximadamente cinco minutos.</Spanish>
 			<French>Fusée de détresse que l&apos;on trouve dans les trousses de secours. Eclaire pendant 5 minutes environs.</French>
@@ -6413,7 +6422,7 @@
 			<Spanish>Trampa de osos que acciona una granada de humo.</Spanish>
 			<Czech>Díky této věcičce lze chytit zvíře nebo zranit člověka.</Czech>
 			<French>Un dispositif permettant de piéger un animal ou de blesser une personne.</French>
-			<German>Eine Bärenfalle, welche einem zusätzlichen Rauchsignal versehen wurde.</German>
+			<German>Eine Bärenfalle, welche mit einem zusätzlichen Rauchsignal versehen wurde.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BEAR_TRAP_FLARE">
 			<English>Bear Trap (Flare)</English>
@@ -6604,7 +6613,7 @@
 		</Key>
 		<Key ID="str_fail_tent_pack">
 			<English>You cannot pack this tent, it is not yours</English>
-			<German>Du kannst dieses Zelt nicht abbauen, denn es gehört dir nicht.</German>
+			<German>Du kannst dieses Zelt nicht abbauen, weil es dir nicht gehört.</German>
 			<Russian>Вы не можете свернуть эту палатку, так как она не ваша.</Russian>
 			<Spanish>No puedes embalar esta carpa ya que no es tuya.</Spanish>
 			<French>Vous ne pouvez pas replier cette tente, elle ne vous appartient pas.</French>
@@ -11059,7 +11068,7 @@
 		<Key ID="STR_DZ_ATT_PSO1_DESC">
 			<English>Telescopic sight manufactured in Russia by the Novosibirsk instrument-making factory.</English>
 			<Russian>Прицел снайперский оптический — один из основных прицелов советского и российского снайперского вооружения.</Russian>
-			<German>Zielfernrohr, welchesin Russland von der Novosibirsk instrument-making factory hergestellt wurde.</German>
+			<German>Zielfernrohr, welches in Russland von der Novosibirsk instrument-making factory hergestellt wurde.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_PSO1_RMVE">
 			<English>Remove PSO-1</English>
