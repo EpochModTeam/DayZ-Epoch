@@ -8413,7 +8413,7 @@
 			<Russian>Обломки UH-1Y</Russian>
 			<Spanish>UH-1Y Estrellado</Spanish>
 			<Czech>Havarovaný UH-1Y</Czech>
-			<German>Zerstörter UH-1Y</German>
+			<German>Abgestürzter UH-1Y</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH60_WRECK">
 			<English>UH-60 Wreck</English>
@@ -8631,6 +8631,7 @@
 		</Key>
 		<Key ID="STR_BUILT_CAMONET_Dismantle">
 			<English>Dismantle Camonet</English>
+			<German>Tarnnetz abbauen</German>
 		</Key>
 		<Key ID="STR_BUILT_HEDGEHOG">
 			<English>Hedgehog (Steel)</English>
@@ -8755,7 +8756,7 @@
 			<Russian>Упакованный верстак, необходим для строительства зданий и некоторых ремесел.</Russian>
 			<French>Un établi plié, requis pour la construction et l&apos;artisanat</French>
 			<Czech>Rozložený a sbalený ponk, který je potřeba při stavbě budov a k výrobě některých předmětů.</Czech>
-			<German>Eine Werkbank. Sie wird zum Bauen von allerlei Objekten benötigt.</German>
+			<German>Eine Werkbank, welche zum Bauen von allerlei Objekten benötigt wird.</German>
 		</Key>
 		<Key ID="STR_BLD_build_ItemWorkBench">
 			<English>Place WorkBench</English>
@@ -8776,7 +8777,7 @@
 			<Russian>Необработанное бревно</Russian>
 			<French>Un rondin en bois brut</French>
 			<Czech>Neotesané dřevěné poleno</Czech>
-			<German>unbehauener Holzstamm</German>
+			<German>Ein roher Holzstamm, welcher keine Gebrauchsspuren aufweist.</German>
 		</Key>
 		<Key ID="STR_BLD_craft_ItemLog">
 			<English>Wooden Plank</English>
@@ -8795,21 +8796,21 @@
 			<Russian>Доски</Russian>
 			<French>Planches</French>
 			<Czech>Prkna</Czech>
-			<German>gesägte Holzplanke</German>
+			<German>Gesägte Holzplanke</German>
 		</Key>
 		<Key ID="STR_BLD_desc_ItemPlank">
 			<English>Saw Planks</English>
 			<Russian>Распиленные доски</Russian>
 			<French>Des planches de bois</French>
 			<Czech>Hrubá neohoblovaná prkna</Czech>
-			<German>Eine zurechtgesägte Holzplanke, zum Bauen von Objekten.</German>
+			<German>Eine zurechtgesägte Holzplanke, welche zum Herstellen von Objekten genutzt werden kann.</German>
 		</Key>
 		<Key ID="STR_BLD_craft_ItemPlank">
 			<English>Wood Piles</English>
 			<Russian>Поленья</Russian>
 			<French>Couper en petits bois</French>
 			<Czech>Rozštípat</Czech>
-			<German>Holzstoss</German>
+			<German>Holzpfähle</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemMetalSheet">
 			<English>Corrugated Sheet</English>
@@ -8830,14 +8831,14 @@
 			<Russian>Необработанный камень</Russian>
 			<French>Pierres</French>
 			<Czech>Kameny</Czech>
-			<German>grober Stein</German>
+			<German>Grober Stein</German>
 		</Key>
 		<Key ID="STR_BLD_desc_ItemStone">
 			<English>Rough Stone</English>
 			<Russian>Необработанный камень</Russian>
 			<French>Des grosses pierres pour la construction</French>
 			<Czech>Hrubé neopracované kameny, použitelné na stavbu.</Czech>
-			<German>Unbehauener, grober Stein zum Bauen von Gebäuden.</German>
+			<German>Ein unverarbeiteter grober Stein, welcher zum Bau von Gebäuden verwendet werden kann.</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemConcreteBlock">
 			<English>Concrete Block</English>
@@ -8851,7 +8852,7 @@
 			<Russian>Бетонный блок</Russian>
 			<French>Parpaing</French>
 			<Czech>Kus betonu</Czech>
-			<German>Betonblock, zum Bauen von Gebäuden.</German>
+			<German>Ein schwerer Betonblock, welcher zum Bau von Gebäuden verwendet werden kann.</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemRSJ">
 			<English>Steel Beam</English>
@@ -8865,7 +8866,7 @@
 			<Russian>Стальная двутавровая балка</Russian>
 			<French>Poutrelle IPN en acier</French>
 			<Czech>Ocelová traverza s I-profilem</Czech>
-			<German>Stahlträger zum Bauen und Verstärken von Gebäuden.</German>
+			<German>Ein großer Stahlträger, welcher zum Bau und Upgraden von Gebäuden verwendet werden kann.</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemScrews">
 			<English>Box of screws</English>
@@ -8879,7 +8880,7 @@
 			<Russian>Коробка шурупов по металлу</Russian>
 			<French>Une boite de vis métal</French>
 			<Czech>Krabička plná šroubů pro spojování kovových materiálů.</Czech>
-			<German>Eine Schachtel mit Metallschrauben.</German>
+			<German>Eine Schachtel gefüllt mit Metallschrauben. Sie sind gut erhalten.</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemPadlock">
 			<English>Padlock</English>
@@ -8893,7 +8894,7 @@
 			<Russian>Используется для запирания зданий.</Russian>
 			<French>Un cadenas pour protéger portes/portails</French>
 			<Czech>Tento visací zámek lze využít pro zabezpečení dílen a domů.</Czech>
-			<German>Ein Zahlenschloss, um Gebäude zu verschließen.</German>
+			<German>Ein Zahlenschloss, um Gebäude zu verschließen. Es funktioniert noch immer ordnungsgemäß.</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemBuildingBlueprint">
 			<English>Blueprint</English>
@@ -8907,7 +8908,7 @@
 			<Russian>Чертеж</Russian>
 			<French>Plan de construction</French>
 			<Czech>Stavební plány</Czech>
-			<German>Blaupause zum Konstruieren von Objekten.</German>
+			<German>Eine Plan zum Herstellen von verschiedenen Objekten.</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemWorkshop">
 			<English>Workshop</English>
@@ -8921,7 +8922,7 @@
 			<Russian>Чертежи мастерской</Russian>
 			<French>Plan de construction d&apos;un atelier.</French>
 			<Czech>Stavební plány pro vybudování dílny</Czech>
-			<German>Plan für den Bau einer Werkstatt.</German>
+			<German>Ein Plan für den Bau eines Schuppens, der als Werkstatt fungieren könnte.</German>
 		</Key>
 		<Key ID="STR_BLD_build_ItemWorkshop">
 			<English>WorkshopBase</English>
@@ -8935,14 +8936,14 @@
 			<Russian>Хибара</Russian>
 			<French>Abris de fortune</French>
 			<Czech>Chatrč</Czech>
-			<German>kleine Hütte</German>
+			<German>Kleine Hütte</German>
 		</Key>
 		<Key ID="STR_BLD_desc_ItemShantyHouse">
 			<English>Building Plans for a Basic Shanty House.</English>
 			<Russian>Чертежи для постройки хибары.</Russian>
 			<French>Plan de construction d&apos;un abris de fortune.</French>
 			<Czech>Stavební plány pro vybudování chatrče</Czech>
-			<German>Plan für den Bau einer kleinen Hütte.</German>
+			<German>Ein Plan für den Bau einer kleinen Hütte.</German>
 		</Key>
 		<Key ID="STR_BLD_build_ItemShantyHouse">
 			<English>ShantyHouseBase</English>
@@ -8984,7 +8985,7 @@
 			<Russian>Постройки</Russian>
 			<French>Buildables</French>
 			<Czech>Stavby</Czech>
-			<German>baubare Objekte</German>
+			<German>Baubare Objekte</German>
 		</Key>
 		<Key ID="STR_BLD_name_SurvivorWorkshop_Base">
 			<English>Workshop Foundation</English>
@@ -9061,56 +9062,56 @@
 			<Russian>Хибара (очертания)</Russian>
 			<French>Abris de fortine (esquisse)</French>
 			<Czech>Chatrč (náhled)</Czech>
-			<German>kleine Hütte (Vorschau)</German>
+			<German>Kleine Hütte (Vorschau)</German>
 		</Key>
 		<Key ID="STR_BLD_name_ShantyHouseStage2">
 			<English>Shanty House lvl.2</English>
 			<Russian>Хибара ур.2</Russian>
 			<French>Abris de fortune niv.2</French>
 			<Czech>Chatrč (úroveň 2)</Czech>
-			<German>kleine Hütte (Stufe 2)</German>
+			<German>Kleine Hütte (Stufe 2)</German>
 		</Key>
 		<Key ID="STR_BLD_name_ShantyHouseStage3">
 			<English>Shanty House lvl.3</English>
 			<Russian>Хибара ур.3</Russian>
 			<French>Abris de fortune niv.3</French>
 			<Czech>Chatrč (úroveň 3)</Czech>
-			<German>kleine Hütte (Stufe 3)</German>
+			<German>Kleine Hütte (Stufe 3)</German>
 		</Key>
 		<Key ID="STR_BLD_name_ShantyHouseStage4">
 			<English>Shanty House lvl.4</English>
 			<Russian>Хибара ур.4</Russian>
 			<French>Abris de fortune niv.4</French>
 			<Czech>Chatrč (úroveň 4)</Czech>
-			<German>kleine Hütte (Stufe 4)</German>
+			<German>Kleine Hütte (Stufe 4)</German>
 		</Key>
 		<Key ID="STR_BLD_name_ShantyHouseStage5">
 			<English>Shanty House lvl.5</English>
 			<Russian>Хибара ур.5</Russian>
 			<French>Abris de fortune niv.5</French>
 			<Czech>Chatrč (úroveň 5)</Czech>
-			<German>kleine Hütte (Stufe 5)</German>
+			<German>Kleine Hütte (Stufe 5)</German>
 		</Key>
 		<Key ID="STR_BLD_name_ShantyHouseStage6">
 			<English>Shanty House lvl.6</English>
 			<Russian>Хибара ур.6</Russian>
 			<French>Abris de fortune niv.6</French>
 			<Czech>Chatrč (úroveň 6)</Czech>
-			<German>kleine Hütte (Stufe 6)</German>
+			<German>Kleine Hütte (Stufe 6)</German>
 		</Key>
 		<Key ID="STR_BLD_name_ShantyHouseStage7">
 			<English>Shanty House lvl.7</English>
 			<Russian>Хибара ур.7</Russian>
 			<French>Abris de fortune niv.7</French>
 			<Czech>Chatrč (úroveň 7)</Czech>
-			<German>kleine Hütte (Stufe 7)</German>
+			<German>Kleine Hütte (Stufe 7)</German>
 		</Key>
 		<Key ID="STR_BLD_name_Metal_Ladder">
 			<English>Metal Ladder</English>
 			<Russian>Металлическая лестница</Russian>
 			<French>Echelle</French>
 			<Czech>Kovový žebřík</Czech>
-			<German>Metall-Leiter</German>
+			<German>Metallleiter</German>
 		</Key>
 		<Key ID="STR_BLD_name_WorkBench">
 			<English>Workbench</English>
@@ -9124,14 +9125,14 @@
 			<Russian>Верстак мастерской</Russian>
 			<French>Etabli (Atelier)</French>
 			<Czech>Dílenský ponk</Czech>
-			<German>Werkstatt Werkbank</German>
+			<German>Werkstatt-Werkbank</German>
 		</Key>
 		<Key ID="STR_BLD_name_WorkBench_Hidden">
 			<English>Hidden Workbench</English>
 			<Russian>Верстак (спрятанный)</Russian>
 			<French>Etabli (caché)</French>
 			<Czech>Skrytý ponk</Czech>
-			<German>versteckte Werkbank</German>
+			<German>Versteckte Werkbank</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemStorage">
 			<English>Storage Box</English>
@@ -9159,56 +9160,56 @@
 			<Russian>Самодельная плита</Russian>
 			<French>Four (Artisanat)</French>
 			<Czech>Provizorní kamna</Czech>
-			<German>improvisierter Herd</German>
+			<German>Improvisierter Herd</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox1">
 			<English>Contains WoodenFence lvl.1</English>
 			<Russian>Содержит деревянный забор ур.1</Russian>
 			<French>Pièces palissade niv.1</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 1)</Czech>
-			<German>beinhaltet Holzzaun (Stufe 1)</German>
+			<German>Beinhaltet Holzzaun (Stufe 1)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox2">
 			<English>Contains WoodenFence lvl.2</English>
 			<Russian>Содержит деревянный забор ур.2</Russian>
 			<French>Pièces palissade niv.2</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 2)</Czech>
-			<German>beinhaltet Holzzaun (Stufe 2)</German>
+			<German>Beinhaltet Holzzaun (Stufe 2)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox3">
 			<English>Contains WoodenFence lvl.3</English>
 			<Russian>Содержит деревянный забор ур.3</Russian>
 			<French>Pièces palissade niv.3</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 3)</Czech>
-			<German>beinhaltet Holzzaun (Stufe 3)</German>
+			<German>Beinhaltet Holzzaun (Stufe 3)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox4">
 			<English>Contains WoodenFence lvl.4</English>
 			<Russian>Содержит деревянный забор ур.4</Russian>
 			<French>Pièces palissade niv.4</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 4)</Czech>
-			<German>beinhaltet Holzzaun (Stufe 4)</German>
+			<German>Beinhaltet Holzzaun (Stufe 4)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox5">
 			<English>Contains WoodenFence lvl.5</English>
 			<Russian>Содержит деревянный забор ур.5</Russian>
 			<French>Pièces palissade niv.5</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 5</Czech>
-			<German>beinhaltet Holzzaun (Stufe 5)</German>
+			<German>Beinhaltet Holzzaun (Stufe 5)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox6">
 			<English>Contains WoodenFence lvl.6</English>
 			<Russian>Содержит деревянный забор ур.6</Russian>
 			<French>Pièces palissade niv.6</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 6)</Czech>
-			<German>beinhaltet Holzzaun (Stufe 6)</German>
+			<German>Beinhaltet Holzzaun (Stufe 6)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFenceBox7">
 			<English>Contains WoodenFence lvl.7</English>
 			<Russian>Содержит деревянный забор ур.7</Russian>
 			<French>Pièces palissade niv.7</French>
 			<Czech>Obsahuje dřevěný plot (úroveň 7)</Czech>
-			<German>beinhaltet Holzzaun (Stufe 7)</German>
+			<German>Beinhaltet Holzzaun (Stufe 7)</German>
 		</Key>
 		<Key ID="STR_BLD_name_WoodenFence_base">
 			<English>Wooden Fence</English>
@@ -9313,49 +9314,49 @@
 			<Russian>Содержит металлический забор ур.1</Russian>
 			<French>Pièces pour Palissade Métallique niv.1</French>
 			<Czech>Obsahuje kovový plot (úroveň 1)</Czech>
-			<German>beinhaltet Metallzaun (Stufe 1)</German>
+			<German>Beinhaltet Metallzaun (Stufe 1)</German>
 		</Key>
 		<Key ID="STR_BLD_name_MetalFenceBox2">
 			<English>Contains kit for MetalFence lvl.2</English>
 			<Russian>Содержит металлический забор ур.2</Russian>
 			<French>Pièces pour Palissade Métallique niv.2</French>
 			<Czech>Obsahuje kovový plot (úroveň 2)</Czech>
-			<German>beinhaltet Metallzaun (Stufe 2)</German>
+			<German>Beinhaltet Metallzaun (Stufe 2)</German>
 		</Key>
 		<Key ID="STR_BLD_name_MetalFenceBox3">
 			<English>Contains kit for MetalFence lvl.3</English>
 			<Russian>Содержит металлический забор ур.3</Russian>
 			<French>Pièces pour Palissade Métallique niv.3</French>
 			<Czech>Obsahuje kovový plot (úroveň 3)</Czech>
-			<German>beinhaltet Metallzaun (Stufe 3)</German>
+			<German>Beinhaltet Metallzaun (Stufe 3)</German>
 		</Key>
 		<Key ID="STR_BLD_name_MetalFenceBox4">
 			<English>Contains kit for MetalFence lvl.4</English>
 			<Russian>Содержит металлический забор ур.4</Russian>
 			<French>Pièces pour Palissade Métallique niv.4</French>
 			<Czech>Obsahuje kovový plot (úroveň 4)</Czech>
-			<German>beinhaltet Metallzaun (Stufe 4)</German>
+			<German>Beinhaltet Metallzaun (Stufe 4)</German>
 		</Key>
 		<Key ID="STR_BLD_name_MetalFenceBox5">
 			<English>Contains kit for MetalFence lvl.5</English>
 			<Russian>Содержит металлический забор ур.5</Russian>
 			<French>Pièces pour Palissade Métallique niv.5</French>
 			<Czech>Obsahuje kovový plot (úroveň 5)</Czech>
-			<German>beinhaltet Metallzaun (Stufe 5)</German>
+			<German>Beinhaltet Metallzaun (Stufe 5)</German>
 		</Key>
 		<Key ID="STR_BLD_name_MetalFenceBox6">
 			<English>Contains kit for MetalFence lvl.6</English>
 			<Russian>Содержит металлический забор ур.6</Russian>
 			<French>Pièces pour Palissade Métallique niv.6</French>
 			<Czech>Obsahuje kovový plot (úroveň 6)</Czech>
-			<German>beinhaltet Metallzaun (Stufe 6)</German>
+			<German>Beinhaltet Metallzaun (Stufe 6)</German>
 		</Key>
 		<Key ID="STR_BLD_name_MetalFenceBox7">
 			<English>Contains kit for MetalFence lvl.7</English>
 			<Russian>Содержит металлический забор ур.7</Russian>
 			<French>Pièces pour Palissade Métallique niv.7</French>
 			<Czech>Obsahuje kovový plot (úroveň 7)</Czech>
-			<German>beinhaltet Metallzaun (Stufe 7)</German>
+			<German>Beinhaltet Metallzaun (Stufe 7)</German>
 		</Key>
 		<Key ID="STR_BLD_name_MetalFence_base">
 			<English>Metal Fence lvl.1</English>
@@ -9607,7 +9608,7 @@
 		</Key>
 		<Key ID="STR_BLD_WRONG_COMBO">
 			<English>Combination incorrect, %1 is still locked.</English>
-			<German>Kombination inkorrekt, %1 ist immer noch verschlossen.</German>
+			<German>Kombination inkorrekt, %1 ist noch immer verschlossen.</German>
 			<Russian>Комбинация неправильна, %1 по-прежнему закрыт.</Russian>
 			<Dutch>Verkeerde code, %1 zit nog op slot.</Dutch>
 			<French>Combinaison incorrecte, %1 reste verrouillé.</French>
@@ -9616,27 +9617,27 @@
 		<Key ID="STR_BLD_COMBO_SET">
 			<English>You have set the combination to %1</English>
 			<Russian>Вы установили комбинацию: %1</Russian>
-			<German>Du hast die Kombination auf %1 geändert.</German>
+			<German>Du hast die Kombination zu %1 geändert.</German>
 		</Key>
 		<Key ID="STR_BLD_GATES_LOCKED">
 			<English>Gates locked.</English>
 			<Russian>Ворота заперты.</Russian>
-			<German>Tore verschlossen.</German>
+			<German>Die Tore sind verschlossen.</German>
 		</Key>
 		<Key ID="STR_BLD_GATES_UNLOCKED">
 			<English>Gates unlocked.</English>
 			<Russian>Ворота отомкнуты.</Russian>
-			<German>Tore aufgeschlossen.</German>
+			<German>Die Tore sind aufgeschlossen.</German>
 		</Key>
 		<Key ID="STR_BLD_GATES_OPENED">
 			<English>Gates opened.</English>
 			<Russian>Ворота открыты.</Russian>
-			<German>Tore geöffnet.</German>
+			<German>Die Tore sind geöffnet.</German>
 		</Key>
 		<Key ID="STR_BLD_GATES_CLOSED">
 			<English>Gates closed.</English>
 			<Russian>Ворота закрыты.</Russian>
-			<German>Tore geschlossen.</German>
+			<German>Die Tore sind geschlossen.</German>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_SETLOCKCODE">
 			<English>Set Lock Code</English>
@@ -9646,10 +9647,12 @@
 		<Key ID="STR_BLD_ACTIONS_LOCKBUILD">
 			<English>Lock Build</English>
 			<Russian>Заблокировать строительство</Russian>
+			<German>Gebäude verschließen</German>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCKBUILD">
 			<English>Unlock Build</English>
 			<Russian>Разблокировать строительство</Russian>
+			<German>Gebäude aufschließen</German>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCKGATE">
 			<English>Unlock Gate</English>
@@ -9679,7 +9682,7 @@
 		<Key ID="STR_BLD_BREAKIN_BROKEN_SLEDGE">
 			<English>Your Sledgehammer handle has snapped.</English>
 			<Russian>Ваша кувалда сломалась.</Russian>
-			<German>Dein Vorschlaghammergriff ist gebrochen.</German>
+			<German>Dein Vorschlaghammerstiel ist gebrochen.</German>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_BENT_CROWBAR">
 			<English>Your crowbar has bent.</English>
@@ -9689,27 +9692,27 @@
 		<Key ID="STR_BLD_BREAKIN">
 			<English>Breaking into compound, attempt (%1 of %2).</English>
 			<Russian>Проламываем преграду, попытка (%1 из %2).</Russian>
-			<German>Einbruchsversuch (%1 von %2).</German>
+			<German>Einbruchsversuch (%1 von %2)</German>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_CANCELLED">
 			<English>Break in cancelled.</English>
 			<Russian>Взлом прекращен.</Russian>
-			<German>Einbruch abgebrochen.</German>
+			<German>Der Einbruch wurde abgebrochen.</German>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_COMPLETE_FAIL">
 			<English>Break in attempt completed with limited success.</English>
 			<Russian>Попытка взлома завершилась с сомнительным успехом.</Russian>
-			<German>Einbruchsversuch komplett mit begrenztem Erfolg.</German>
+			<German>Der Einbruchsversuch ist komplett mit begrenztem Erfolg.</German>
 		</Key>
 		<Key ID="STR_BLD_BREAKIN_COMPLETE">
 			<English>Break in attempt successful.</English>
 			<Russian>Удачная попытка вломиться за преграду.</Russian>
-			<German>Einbruchsversuch erfolgreich.</German>
+			<German>Der Einbruchsversuch war erfolgreich.</German>
 		</Key>
 		<Key ID="STR_BLD_DISMANTLE_MISSING">
 			<English>You are missing the tool %1 to dismantle</English>
 			<Russian>Для демонтажа не хватает: %1</Russian>
-			<German>Dir fehlt das Werkzeug %1 zum Abbauen.</German>
+			<German>Dir fehlt %1 zum Abbauen.</German>
 		</Key>
 		<Key ID="STR_BLD_DISMANTLE_DAMAGED">
 			<English>Your tool has been damaged.</English>
@@ -9719,7 +9722,7 @@
 		<Key ID="STR_BLD_DISMANTLE_ATTEMPT">
 			<English>Dismantle attempt (%1 of %2).</English>
 			<Russian>Попытка демонтажа (%1 из %2).</Russian>
-			<German>Abbauversuch (%1 of %2).</German>
+			<German>Abbauversuch (%1 of %2)</German>
 		</Key>
 		<Key ID="STR_BLD_DISMANTLED">
 			<English>You have dismantled (%1).</English>
@@ -9737,6 +9740,7 @@
 		<Key ID="STR_DZ_WPN_M14_GH_NAME">
 			<English>M14 Camo</English>
 			<Russian>M14 (камуфляж)</Russian>
+			<German>M14 Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_CCO_NAME">
 			<English>M14 CCO</English>
@@ -9744,6 +9748,7 @@
 		<Key ID="STR_DZ_WPN_M14_CCO_GH_NAME">
 			<English>M14 CCO Camo</English>
 			<Russian>M14 CCO (камуфляж)</Russian>
+			<German>M14 CCO Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_HOLO_NAME">
 			<English>M14 Holo</English>
@@ -9751,6 +9756,7 @@
 		<Key ID="STR_DZ_WPN_M14_HOLO_GH_NAME">
 			<English>M14 Holo Camo</English>
 			<Russian>M14 Holo (камуфляж)</Russian>
+			<German>M14 Holo Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_M14_ACOG_NAME">
 			<English>M14 ACOG</English>
@@ -9758,6 +9764,7 @@
 		<Key ID="STR_DZ_WPN_M14_ACOG_GH_NAME">
 			<English>M14 ACOG Camo</English>
 			<Russian>M14 ACOG (камуфляж)</Russian>
+			<German>M14 ACOG Tarn</German>
 		</Key>
 		
 		<!-- Snipers -->
@@ -9767,6 +9774,7 @@
 		<Key ID="STR_DZ_WPN_M24_GH_NAME">
 			<English>M24 Camo</English>
 			<Russian>M24 (камуфляж)</Russian>
+			<German>M24 Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_M40A3_NAME">
 			<English>M40A3</English>
@@ -9774,6 +9782,7 @@
 		<Key ID="STR_DZ_WPN_M40A3_GH_NAME">
 			<English>M40A3 Camo</English>
 			<Russian>M40A3 (камуфляж)</Russian>
+			<German>M40A3 Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_DMR_NAME">
 			<English>DMR</English>
@@ -9781,6 +9790,7 @@
 		<Key ID="STR_DZ_WPN_DMR_GH_NAME">
 			<English>DMR Camo</English>
 			<Russian>DMR (камуфляж)</Russian>
+			<German>DMR Tarn</German>
 		</Key>
 		
 		<!-- M4A1 -->
@@ -10182,7 +10192,7 @@
 		<Key ID="STR_DZ_WPN_RPK_DESC">
 			<English>Light machine gun&lt;br/&gt;Caliber: 7.62x39mm</English>
 			<Russian>Легкий пулемет&lt;br/&gt;Калибр: 7.62x39мм</Russian>
-			<German>Leichtes Maschinengewehr&lt;br/&gt;Kaliber: 7.62x39mm</German>
+			<German>Leichtes Maschinengewehr Kaliber: 7.62x39mm</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_RPK_KOBRA_NAME">
 			<English>RPK Kobra</English>
@@ -10277,18 +10287,22 @@
 		<Key ID="STR_DZ_WPN_G36A_CAMO_NAME">
 			<English>G36A Camo</English>
 			<Russian>G36A (камуфляж)</Russian>
+			<German>G36A Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36A_CAMO_SD_NAME">
 			<English>G36A Camo SD</English>
 			<Russian>G36A ПБС (камуфляж)</Russian>
+			<German>G36A Tarn SD</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36K_CAMO_NAME">
 			<English>G36K Camo</English>
 			<Russian>G36K (камуфляж)</Russian>
+			<German>G36K Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36K_CAMO_SD_NAME">
 			<English>G36K Camo SD</English>
 			<Russian>G36K ПБС (камуфляж)</Russian>
+			<German>G36K Tarn SD</German>
 		</Key>
 		
 		<!-- MP5 -->
@@ -10451,6 +10465,7 @@
 		<Key ID="STR_DZ_WPN_MR43_DSMODE_NAME">
 			<English>Double Shot</English>
 			<Russian>Дуплет</Russian>
+			<German>Doppelschuss</German>
 		</Key>
 
 		<!-- Winchester1866 -->
@@ -10499,7 +10514,7 @@
 		<Key ID="STR_DZ_WPN_UK59_DESC">
 			<English>Chernarussian medium machine gun&lt;br/&gt;Caliber: 7.62x54mm</English>
 			<Russian>Чернарусский средний пулемет&lt;br/&gt;Калибр: 7.62x54мм</Russian>
-			<German>Cherna-russisches mittleres Maschinengewehr&lt;br/&gt;Kaliber: 7.62x54mm</German>
+			<German>Cherna-russisches mittleres Maschinengewehr Kaliber: 7.62x54mm</German>
 		</Key>
 		
 		<!-- SVD -->
@@ -10510,6 +10525,7 @@
 		<Key ID="STR_DZ_WPN_SVD_GH_NAME">
 			<English>SVD Camo</English>
 			<Russian>СВД (камуфляж)</Russian>
+			<German>SVD Tarn</German>
 		</Key>
 		
 		<!-- Mosin -->
@@ -10564,7 +10580,7 @@
 		<Key ID="STR_DZ_WPN_MOSIN_DESC">
 			<English>Bolt-action military rifle developed by the Imperial Russian Army in 1891.&lt;br/&gt;Caliber: 7.62x54mmR</English>
 			<Russian>Магазинная винтовка, принятая на вооружение Русской Императорской армии ВС России в 1891 году.</Russian>
-			<German>Kammerverschluss Militär Gewehr entwickelt von der Imperialen Russischen Armee 1891.&lt;br/&gt;Kaliber: 7.62x54mmR</German>			
+			<German>Kammerverschluss Militär Gewehr entwickelt von der Imperialen Russischen Armee 1891 Kaliber: 7.62x54mmR</German>			
 		</Key>
 		
 		<!-- Crossbow -->
@@ -10737,23 +10753,23 @@
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_NAME">
 			<English>Tranquilizer bolt</English>
 			<Russian>Болт (транквилизатор)</Russian>
-			<German>Tranquilizer Bolzen</German>
+			<German>Betäubungsbolzen</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_DESC">
 			<English>Crossbow bolt fitted with a sedative injector. Used to safely capture large animals.</English>
 			<Russian>Арбалетный болт с усыпляющей инъекцией. Используется для захвата крупных животных.</Russian>
-			<German>Armbrust Bolzen mit Beruhigungsmittel Injektor. Gut um große Tier sicher zu fangen.</German>
+			<German>Armbrustbolzen mit Betäubungsmittel-Injektor. Perfekt geeignet, um große Tiere zu fangen.</German>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_BOLT_EXP_NAME">
 			<English>Explosive bolt</English>
 			<Russian>Болт (взрывчатка)</Russian>
-			<German>Explosiv Bolzen</German>
+			<German>Explosivbolzen</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_BOLT_EXP_DESC">
 			<English>Crossbow bolt fitted with an explosive head.</English>
 			<Russian>Арбалетный болт с зарядом взрывчатки. РЭМБО!</Russian>
-			<German>Armbrust Bolzen mit einem explosiven Kopf.</German>
+			<German>Armbrustbolzen mit einem explosiven Kopf.</German>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_NAME">
@@ -10763,7 +10779,7 @@
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: UK-59</English>
 			<Russian>Калибр: 7.62x54мм&lt;br/&gt;Патронов: 50&lt;br/&gt;Используется в: UK-59</Russian>
-			<German>Kaliber: 7.62x54mm&lt;br/&gt;Schuss: 50&lt;br/&gt;Verwendet in: UK-59</German>
+			<German>Kaliber: 7.62x54mm Schuss: 50 Verwendet in: UK-59</German>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_NAME">
@@ -10773,7 +10789,7 @@
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_DESC">
 			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 75&lt;br/&gt;Used in: RPK</English>
 			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Патронов: 75&lt;br/&gt;Используется в: РПК</Russian>
-			<German>Kaliber: 7.62x39mm&lt;br/&gt;Schuss: 75&lt;br/&gt;Verwendet in: RPK</German>
+			<German>Kaliber: 7.62x39mm Schuss: 75 Verwendet in: RPK</German>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_545X39_RPK_NAME">
@@ -10797,7 +10813,7 @@
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_DESC">
 			<English>Caliber: 7.62x54mmR&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: Mosin Nagant</English>
 			<Russian>Калибр: 7.62x54mmR&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: Мосинка</Russian>
-			<German>Kaliber: 7.62x54mmR&lt;br/&gt;Schuss: 5&lt;br/&gt;Verwendet in: Mosin Nagant</German>
+			<German>Kaliber: 7.62x54mm Schuss: 5 Verwendet in: Mosin Nagant</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_17HMR_NAME">
 			<English>5Rnd. CZ 550 mag.</English>
@@ -10806,7 +10822,7 @@
 		<Key ID="STR_DZ_MAG_5RND_17HMR_DESC">
 			<English>Caliber: 9,3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
 			<Russian>Калибр: 9,3x62мм&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: CZ 550</Russian>
-			<German>Kaliber: 9,3x62mm&lt;br/&gt;Schuss: 5&lt;br/&gt;Verwendet in: CZ 550</German>
+			<German>Kaliber: 9,3x62mm Schuss: 5 Verwendet in: CZ 550</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_303BRITISH_NAME">
 			<English>10Rnd. Lee Enfield mag.</English>
@@ -10823,7 +10839,7 @@
 		<Key ID="STR_DZ_MAG_15RND_W1866_DESC">
 			<English>Caliber: 11x23mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Winchester 1866</English>
 			<Russian>Калибр: 11x23мм&lt;br/&gt;Патронов: 15&lt;br/&gt;Используется в: Винчестер 1866</Russian>
-			<German>Kaliber: 11x23mm&lt;br/&gt;Schuss: 15&lt;br/&gt;Verwendet in: Winchester 1866</German>
+			<German>Kaliber: 11x23mm Schuss: 15 Verwendet in: Winchester 1866</German>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_SLUG_NAME">
@@ -10840,7 +10856,7 @@
 			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
 			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
 			<Czech>Ráže: 12 &lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
-			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+			<German>Kaliber 12 Flintenlaufgeschoss 2 Schuss Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_NAME">
 			<English>2Rnd. 12Cal. Pellets</English>
@@ -10856,7 +10872,7 @@
 			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2&lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
 			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
 			<Czech>Ráže: 12&lt;br/&gt;Munice: 2&lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
-			<German>Kaliber 12 Schrotmunition&lt;br/&gt;2&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+			<German>Kaliber 12 Schrotmunition 2 Schuss Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_SLUG_NAME">
 			<English>8Rnd. 12 Cal. Slug</English>
@@ -10872,7 +10888,7 @@
 			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 8 &lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
 			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
 			<Czech>Ráže: 12 &lt;br/&gt;Munice: 8 &lt;br/&gt;Pro: M1014, Remington 870</Czech>
-			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;8 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+			<German>Kaliber 12 Flintenlaufgeschoss 8 Schuss Verwendet in: M1014, Remington 870</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_BUCK_NAME">
 			<English>8Rnd. 12Cal. Pellets</English>
@@ -10888,7 +10904,7 @@
 			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 8&lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
 			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
 			<Czech>Ráže: 12&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
-			<German>Kaliber 12 Schrotmunition&lt;br/&gt;8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+			<German>Kaliber 12 Schrotmunition 8 Schuss Verwendet in: M1014, Remington 870</German>
 		</Key>
 	
 		<!-- **** ATTACHMENTS **** -->
@@ -10901,7 +10917,7 @@
 		<Key ID="STR_DZ_ATT_ACT_TO_SECONDARY">
 			<English>Attach to secondary</English>
 			<Russian>Установить на доп.</Russian>
-			<German>An Sedundärwaffe anbringen</German>
+			<German>An Sekundärwaffe anbringen</German>
 		</Key>
 		
 		<!-- 9mm Suppressor -->
@@ -10926,7 +10942,7 @@
 			<English>A silencer that can be attached to Makarov.</English>
 			<Russian>ПБС для пистолета Макарова.</Russian>
 			<Czech>Tlumič, používá se pro vylepšení pistole Makarov.</Czech>
-			<German>Ein Schalldämpfer, der an eine Makarov angebracht werden kann.</German>
+			<German>Ein Schalldämpfer, welcher an eine Makarov angebracht werden kann.</German>
 		</Key>
 		<!-- 9mm Suppressor Bizon -->
 		<Key ID="STR_DZ_ATT_SUP9BIZON_NAME">
@@ -10939,7 +10955,7 @@
 			<English>A silencer that can be attached to Bizon.</English>
 			<Russian>Прибор бесшумной стрельбы для Бизона.</Russian>
 			<Czech>Tlumič, používá se pro vylepšení pušky Bizon.</Czech>
-			<German>Ein Schalldämpfer, der an eine Bizon angebracht werden kann.</German>
+			<German>Ein Schalldämpfer, welcher an eine Bizon angebracht werden kann.</German>
 		</Key>
 		
 		<!-- 5.56mm Suppressor -->
@@ -10975,7 +10991,7 @@
 		<Key ID="STR_DZ_ATT_CCO_DESC">
 			<English>CompM2 Close Combat Optic&lt;br/&gt;Manufactured by Swedish Aimpoint AB.</English>
 			<Russian>Aimpoint CompM2 — компактный прицел для стрелкового оружия&lt;br/&gt;Произведен шведской компанией Aimpoint AB.</Russian>
-			<German>CompM2 Close Combat Optic&lt;br/&gt;Hergestellt von Swedish Aimpoint AB.</German>
+			<German>CompM2 Close Combat Optic, hergestellt von Swedish Aimpoint AB.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_CCO_RMVE">
 			<English>Remove CCO</English>
@@ -10992,7 +11008,7 @@
 		<Key ID="STR_DZ_ATT_HOLO_DESC">
 			<English>Holographic Weapon Sight&lt;br/&gt;Manufactured by American EOTech Inc.</English>
 			<Russian>Голографический прицел для стрелкового оружия&lt;br/&gt;Произведен американской компанией EOTech Inc.</Russian>
-			<German>Holografisches Waffenvisier&lt;br/&gt;Hergestellt von American EOTech Inc.</German>
+			<German>Holografisches Waffenvisier, hergestellt von American EOTech Inc.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_HOLO_RMVE">
 			<English>Remove Holo</English>
@@ -11009,7 +11025,7 @@
 		<Key ID="STR_DZ_ATT_ACOG_DESC">
 			<English>Advanced Combat Optical Gunsight&lt;br/&gt;Manufactured by American Trijicon Inc.</English>
 			<Russian>Армейский оптический прицел для ведения огня из стрелкового оружия на среднюю дальность&lt;br/&gt;Произведен американской компанией Trijicon Inc.</Russian>
-			<German>Advanced Combat Optical Gunsight&lt;br/&gt;Hergestellt von American Trijicon Inc.</German>
+			<German>Advanced Combat Optical Gunsight, hergestellt von American Trijicon Inc.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_RMVE">
 			<English>Remove ACOG</English>
@@ -11026,7 +11042,7 @@
 		<Key ID="STR_DZ_ATT_KOBRA_DESC">
 			<English>Red dot collimator sight&lt;br/&gt;Manufactured in Izhevsk Russia.</English>
 			<Russian>Электронный коллиматорный прицел&lt;br/&gt;Произведен росийской компанией ОАО «Ижевский мотозавод „Аксион-холдинг“».</Russian>
-			<German>Rotpunkt Kollimator Sicht&lt;br/&gt;Hergestellt in Izhevsk Russland.</German>
+			<German>Rotpunkt Kollimator Sicht, hergestellt in Izhevsk Russland.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_RMVE">
 			<English>Remove Kobra</English>
@@ -11043,7 +11059,7 @@
 		<Key ID="STR_DZ_ATT_PSO1_DESC">
 			<English>Telescopic sight manufactured in Russia by the Novosibirsk instrument-making factory.</English>
 			<Russian>Прицел снайперский оптический — один из основных прицелов советского и российского снайперского вооружения.</Russian>
-			<German>Zielfernrohr hergestellt in Russland von der Novosibirsk instrument-making factory.</German>
+			<German>Zielfernrohr, welchesin Russland von der Novosibirsk instrument-making factory hergestellt wurde.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_PSO1_RMVE">
 			<English>Remove PSO-1</English>
@@ -11060,7 +11076,7 @@
 		<Key ID="STR_DZ_ATT_M203_DESC">
 			<English>Under-barrel grenade launcher</English>
 			<Russian>40-мм подствольный гранатомёт, разработанный в период 1967—1968 годов американской корпорацией AAI.</Russian>
-			<German>40mm Unterlaufgranatwerfer für M203 Granaten.</German>
+			<German>40mm Unterlaufgranatwerfer für M203 Granaten</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_M203_RMVE">
 			<English>Remove M203</English>
@@ -11077,7 +11093,7 @@
 		<Key ID="STR_DZ_ATT_GP25_DESC">
 			<English>Under-barrel grenade launcher</English>
 			<Russian>40-мм подствольный гранатомёт, разработанный в период 1972—1978 годов в  Тульском оружейном заводе.</Russian>
-			<German>40mm Unterlaufgranatwerfer für GP-25 Granaten.</German>
+			<German>40mm Unterlaufgranatwerfer für GP-25 Granaten</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_GP25_RMVE">
 			<English>Remove GP-25</English>
@@ -11094,7 +11110,7 @@
 		<Key ID="STR_DZ_ATT_FL_RFL_DESC">
 			<English>Rail-attachable rifle flashlight</English>
 			<Russian>Фонарь для установки на основное оружие</Russian>
-			<German>Taschenlampenaufsatz für Gewehre.</German>
+			<German>Taschenlampenaufsatz für Gewehre</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_FL_RFL_RMVE">
 			<English>Remove Flashlight</English>
@@ -11111,7 +11127,7 @@
 		<Key ID="STR_DZ_ATT_MFL_RFL_DESC">
 			<English>Rail-attachable military rifle flashlight</English>
 			<Russian>военный Фонарь для установки на основное оружие</Russian>
-			<German>Militärischer Taschenlampenaufsatz für Gewehre.</German>
+			<German>Militärischer Taschenlampenaufsatz für Gewehre</German>
 		</Key>
 		
 		<!-- Pistol flashlight -->
@@ -11123,7 +11139,7 @@
 		<Key ID="STR_DZ_ATT_FL_PST_DESC">
 			<English>Rail-attachable pistol flashlight</English>
 			<Russian>Фонарь для установки на пистолеты</Russian>
-			<German>Taschenlampenaufsatz für Pistolen.</German>
+			<German>Taschenlampenaufsatz für Pistolen</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_FL_PST_RMVE">
 			<English>Remove Flashlight</English>
@@ -11140,7 +11156,7 @@
 		<Key ID="STR_DZ_ATT_MFL_PST_DESC">
 			<English>Rail-attachable military pistol flashlight</English>
 			<Russian>военный Фонарь для установки на пистолеты</Russian>
-			<German>Militärischer Taschenlampenaufsatz für Pistolen.</German>			
+			<German>Militärischer Taschenlampenaufsatz für Pistolen</German>			
 		</Key>
 		
 		<!-- Ghillie -->
@@ -11152,7 +11168,7 @@
 		<Key ID="STR_DZ_ATT_GHIL_DESC">
 			<English>Assorted pieces of camo netting. Might be used to camouflage something small.</English>
 			<Russian>Разнообразные части камуфляжной сетки. Можно использовать для маскировки чего-нибудь небольшого.</Russian>
-			<German>Schmales Tarnnetz, gut um etwas Kleines abzudecken.</German>
+			<German>Ein schmales Tarnnetz, welches sich gut eignet, um etwas Kleines abzudecken.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_GHIL_RMVE">
 			<English>Remove Ghillie</English>
@@ -11169,7 +11185,7 @@
 		<Key ID="STR_DZ_ATT_PU_DESC">
 			<English>Standard issue Soviet sniper scope during World War II.&lt;br/&gt;Magnification: 3.5x</English>
 			<Russian>Советский оптический прицел, изначально созданный в 1940 году&lt;br/&gt;Кратность: 3.5х22</Russian>
-			<German>Standard Zielfernrohr der sowjetischen Scharfschützen im Zweiten Weltkrieg.&lt;br/&gt;Vergrößerung: 3.5x</German>
+			<German>Standard Zielfernrohr der sowjetischen Scharfschützen im Zweiten Weltkrieg Vergrößerung: 3.5x</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_PU_RMVE">
 			<English>Remove Scope</English>
