@@ -12119,7 +12119,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_133">
 			<English>You can only have one active plot pole where you are the plot owner.</English>
-			<German>Du darfst nur ein Grundstück haben, auf dem du der Besitzer bist.</German>
+			<German>Du darfst maximal ein Grundstück besitzen.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_134">
 			<English>You do not have access to build on this plot.</English>
