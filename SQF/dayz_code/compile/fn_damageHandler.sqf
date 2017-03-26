@@ -25,21 +25,19 @@ _isLocal = local _source;
 _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Dayz_freefall select 1 > 3)})});
 
 //Simple hack to help with a few issues from direct damage to physic based damage. ***until 2.0***
-	if (isNull dayz_getout) then {
+	if (diag_tickTime - dayz_getoutTime > 2 && (vehicle player == player)) then {
 		_vehicleArray = nearestObjects [(getPosATL (vehicle _unit)),["Car","Air","Motorcycle","Ship","Tank"],3];
 		{if (typeOf _x == "ParachuteWest") then {_vehicleArray = _vehicleArray - [_x];};} count _vehicleArray;
 		{
-			if ((speed _x > 10) or (speed _x < -8)) exitwith { dayz_HitBy = _x; };
+			if ((speed _x > 10) or (speed _x < -8)) exitWith { dayz_hitByTime = diag_tickTime; };
 		} count _vehicleArray;
 	};
 
 	//Lets see if the player has been struck by a moving vehicle.
-	if (!isNull dayz_HitBy && vehicle player == player) then { _ammo = "RunOver"; };
-	if ((_hit == "Legs") AND {(_ammo == "RunOver")}) then { dayz_HitBy = objNull; };
+	if (diag_tickTime - dayz_hitByTime < 2) then { _ammo = "RunOver"; };
 
-	//If a vehicle is moveing faster then 15 lets register some kind of direct damage rather then relying on indirect/physics damage.
-	if (!isNull dayz_getout && diag_tickTime - dayz_getoutTime < 5) then { _ammo = "Dragged"; };
-	if ((_hit == "Legs") AND {(_ammo == "Dragged")}) then { dayz_getout = objNull; };
+	//If a vehicle is moving faster then 15 lets register some kind of direct damage rather then relying on indirect/physics damage.
+	if (diag_tickTime - dayz_getoutTime < 2) then { _ammo = "Dragged"; };
 
 	_end = false;
 

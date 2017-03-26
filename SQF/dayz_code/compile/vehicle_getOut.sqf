@@ -49,7 +49,6 @@ if (_unit == player) then {
 	
 	//Lets make sure we can process some dmg from ejecting from the vehicle even traveling at lower speeds.
 	if (((speed _vehicle) > 15) or ((speed _vehicle) < -10)) then {
-		dayz_getout = _vehicle;
 		dayz_getoutTime = diag_tickTime;
 	};
 };

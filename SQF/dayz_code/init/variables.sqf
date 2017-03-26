@@ -659,9 +659,8 @@ if (!isDedicated) then {
 	dayz_dodge = false;
 	Dayz_constructionContext = [];
 	Dayz_freefall = [ time, 0, 0.1 ];
-	dayz_getout = objNull;
 	dayz_getoutTime = 0;
-	dayz_HitBy = objNull;
+	dayz_hitByTime = 0;
 	skipGearSound = false;
 	TimeOutDisplayed = false;
 	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
