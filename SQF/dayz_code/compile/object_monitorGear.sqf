@@ -47,10 +47,10 @@ if (vehicle player != player) then {
 	_object = cursorTarget;
 };
 
-_isVehicle = _object isKindOf "AllVehicles";
-_isMan = _object isKindOf "Man";
-_isStorage = _object isKindOf "Land_A_tent";
-_type=typeOf _object;
+_type = typeOf _object;
+_isVehicle = _type isKindOf "AllVehicles";
+_isMan = _type isKindOf "Man";
+_isStorage = _type isKindOf "Land_A_tent";
 _isNewStorage = _type in DZE_isNewStorage;
 
 _timeout = time + 2;
@@ -71,7 +71,8 @@ if (!(isNull (findDisplay 106))) then {
 			_backpacksMax = getNumber (configFile >> "CfgVehicles" >> _type >> "transportMaxBackpacks");
 
 			while {!(isNull (findDisplay 106))} do {
-				if(_isVehicle&&((locked _object)&&(vehicle player==player)))exitWith{(findDisplay 106)closeDisplay 1;};
+				//Exit if vehicle you are looking at is locked while gear is open
+				if (locked _object && {vehicle player == player}) exitWith {(findDisplay 106) closeDisplay 2;};
 				_weapons = call _countWeapons;
 				_magazines = call _countMagazines;
 				_backpacks = call _countBackpacks;
