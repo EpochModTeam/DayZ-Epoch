@@ -1,31 +1,22 @@
-private ["_valueIDCs","_object","_display","_weaponsMax","_magazinesMax","_backpacksMax","_weapons","_magazines","_backpacks","_freeSlots"];
+private ["_valueIDCs","_object","_display","_weaponsMax","_magazinesMax","_backpacksMax","_weapons","_magazines","_backpacks","_freeSlots","_type"];
 
 disableSerialization;
 
 _countWeapons = {
-	_weapons = [];
 	_return = 0;
-
-	_weapons = (getWeaponCargo _object) select 1;
-	{ _return = _return + _x } count _weapons;
+	{ _return = _return + _x } count ((getWeaponCargo _object) select 1);
 	_return
 };
 
 _countMagazines = {
-	_magazines = [];
 	_return = 0;
-
-	_magazines = (getMagazineCargo _object) select 1;
-	{ _return = _return + _x } count _magazines;
+	{ _return = _return + _x } count ((getMagazineCargo _object) select 1);
 	_return
 };
 
 _countBackpacks = {
-	_backpacks = [];
 	_return = 0;
-
-	_backpacks = (getBackpackCargo _object) select 1;
-	{ _return = _return + _x } count _backpacks;
+	{ _return = _return + _x } count ((getBackpackCargo _object) select 1);
 	_return
 };
 
@@ -35,8 +26,7 @@ _countFreeSlots = {
 };
 
 _getControlText = {
-	_control = _display displayCtrl 156;
-	_return = ctrlText _control;
+	_return = ctrlText (_display displayCtrl 156);
 	_return
 };
 
@@ -60,7 +50,8 @@ if (vehicle player != player) then {
 _isVehicle = _object isKindOf "AllVehicles";
 _isMan = _object isKindOf "Man";
 _isStorage = _object isKindOf "Land_A_tent";
-_isNewStorage = (typeOf _object) in DZE_isNewStorage;
+_type=typeOf _object;
+_isNewStorage = _type in DZE_isNewStorage;
 
 _timeout = time + 2;
 waitUntil { !(isNull (findDisplay 106)) or (_timeout < time) };
@@ -71,21 +62,22 @@ if (!(isNull (findDisplay 106))) then {
 	_display = findDisplay 106;
 
 	if ((_isVehicle or _isStorage or _isNewStorage) && !_isMan) then {
-		_objectName = getText (configFile >> "CfgVehicles" >> (typeof _object) >> "displayName");
-		_controlText = [] call _getControlText;
+		_objectName = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
+		_controlText = call _getControlText;
 
 		if (_objectName == _controlText) then {
-			_weaponsMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxWeapons");
-			_magazinesMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxMagazines");
-			_backpacksMax = getNumber (configFile >> "CfgVehicles" >> (typeof _object) >> "transportMaxBackpacks");
+			_weaponsMax = getNumber (configFile >> "CfgVehicles" >> _type >> "transportMaxWeapons");
+			_magazinesMax = getNumber (configFile >> "CfgVehicles" >> _type >> "transportMaxMagazines");
+			_backpacksMax = getNumber (configFile >> "CfgVehicles" >> _type >> "transportMaxBackpacks");
 
 			while {!(isNull (findDisplay 106))} do {
-				_weapons = [] call _countWeapons;
-				_magazines = [] call _countMagazines;
-				_backpacks = [] call _countBackpacks;
-				_freeSlots = [] call _countFreeSlots;
+				if(_isVehicle&&((locked _object)&&(vehicle player==player)))exitWith{(findDisplay 106)closeDisplay 1;};
+				_weapons = call _countWeapons;
+				_magazines = call _countMagazines;
+				_backpacks = call _countBackpacks;
+				_freeSlots = call _countFreeSlots;
 
-				[] call _setControlText;
+				call _setControlText;
 				uiSleep 0.01;
 			};
 		} else {
