@@ -15,7 +15,7 @@ if (!isNull _fuelTruck) then {
 
 _findNearestVehicle = [];
 {
-	if ((alive _x) && {_x != _fuelTruck} && {!(_x isKindOf "Man")}) exitWith {
+	if ((alive _x) && (_x != _fuelTruck) && (!(_x isKindOf "Man"))) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
 } count (nearestObjects [player, ["AllVehicles"], 30]);
