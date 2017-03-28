@@ -12117,6 +12117,10 @@
 			<French>%1 est rempli(e) à %2 pourcents de sa capacité.</French>
 			<Czech>%1 je naplněno do %2 procent kapacity.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_133">
+			<English>You can only have one active plot pole where you are the plot owner.</English>
+			<German>Du darfst maximal ein Grundstück besitzen.</German>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_134">
 			<English>You do not have access to build on this plot.</English>
 			<German>Du darfst auf diesem Grundstück nichts bauen, da du kein eingetragener Eigentümer bist.</German>

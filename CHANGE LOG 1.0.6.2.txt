@@ -1,4 +1,5 @@
 [NEW] Added a few loot positions for Namalsk and Takistan. @skigoggles
+[NEW] Added DZE_limitPlots so admins can limit plot poles to 1 per UID, disabled by default. @oiad
 
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
 
