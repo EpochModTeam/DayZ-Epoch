@@ -50,13 +50,15 @@ while {true} do {
 				_name = name player;
 				{
 					if (_x getVariable["bodyName",""] == _name) then {
-						_bodyCount = _bodyCount + 1;
-						_pos = [_x] call FNC_GetPos;
-						deleteMarkerLocal format["MyBody%1",_bodyCount];
-						_marker = createMarkerLocal [format["MyBody%1",_bodyCount],_pos];
-						_marker setMarkerTypeLocal "DestroyedVehicle";
-						_marker setMarkerTextLocal localize "STR_EPOCH_RIP";
-						_marker setMarkerColorLocal "ColorRed";
+						_pos = visiblePosition _x;
+						if (_pos select 2 >= 0) then { //Body is not hidden
+							_bodyCount = _bodyCount + 1;
+							deleteMarkerLocal format["MyBody%1",_bodyCount];
+							_marker = createMarkerLocal [format["MyBody%1",_bodyCount],_pos];
+							_marker setMarkerTypeLocal "DestroyedVehicle";
+							_marker setMarkerTextLocal localize "STR_EPOCH_RIP";
+							_marker setMarkerColorLocal "ColorRed";
+						};
 					};
 				} count allDead;
 				
