@@ -621,7 +621,7 @@ class RscTitles
 		};
 	};
 	class RSC_DZ_Messages {
-		idd = 4099999;
+		idd = -1;
 		movingEnable = 0;
 		fadein       =  0;
 		fadeout      =  5;
@@ -631,7 +631,7 @@ class RscTitles
 		class Controls {
 			class Message_Text: RscStructuredText
 			{
-				idc = 4099998;
+				idc = 3;
 				text = "";
 				x = 0.3 * safezoneW + safezoneX;
 				y = 0.859137 * safezoneH + safezoneY;

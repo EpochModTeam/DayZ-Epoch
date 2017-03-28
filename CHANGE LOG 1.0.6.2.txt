@@ -16,7 +16,8 @@
 [FIXED] Arma cheats enterable on map display and create marker text box. #1915 @BigEgg17
 [FIXED] It is no longer possible to duplicate melee weapons by double clicking to drop and right clicking at the same time. @F507DMT
 [FIXED] Death messages sometimes showing RunOver when they should not due to dayz_hitBy variable not resetting after being runover. @oiad
-[FIXED] Fix CFGMoves/Animation CTD on server. Thanks Choc
+[FIXED] CFGMoves/Animation CTD on server. Thanks Choc
+[FIXED] DayZ_RollingMessage FPS impact. #1926 @BigEgg17
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 

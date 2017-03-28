@@ -540,8 +540,8 @@ if (!isDedicated) then {
 		disableSerialization;
 		_showText = {
 			private "_textLine";
-			4099999 cutRsc ["RSC_DZ_Messages","plain"];
-			_textLine = (uiNamespace getVariable "DZ_Messages") displayCtrl 4099998;
+			15 cutRsc ["RSC_DZ_Messages","plain"];
+			_textLine = (uiNamespace getVariable "DZ_Messages") displayCtrl 3;
 			_textLine ctrlSetStructuredText (parseText _this);
 			_textLine ctrlCommit 0;
 		};
