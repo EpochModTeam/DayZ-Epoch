@@ -590,7 +590,7 @@ if (_canBuild select 0) then {
 				};
 				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
 					_tmpbuilt addEventHandler ["HandleDamage",{false}];
-					_tmpbuilt enableSimulation false;
+					if !(_classname in DZE_isNewStorage) then {_tmpbuilt enableSimulation false;};
 				}; 
 			} else { //if magazine was not removed, cancel publish
 				deleteVehicle _tmpbuilt;
