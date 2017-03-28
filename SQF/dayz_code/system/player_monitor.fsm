@@ -243,8 +243,8 @@ link127[] = {107,32};
 link128[] = {108,109};
 link129[] = {109,110};
 link130[] = {110,64};
-globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-398.479370,434.610596,1408.302368,243.848480,890,1244,1};
-window[] = {2,-1,-1,-1,-1,604,78,1098,78,3,908};
+globals[] = {0.000000,0,0,0,0,640,480,3,262,6316128,1,-406.909515,81.978119,1232.519287,318.468689,656,918,1};
+window[] = {2,-1,-1,-32000,-32000,1350,829,2787,260,1,674};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -610,18 +610,18 @@ class FSM
                         name = "Phase_One";
                         itemno = 17;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Phase_One'];};" \n
-                         "if ((!isNil ""DZE_defaultSkin"") && _isNew && (_isInfected == 0)) then {" \n
+                         "if ((!isNil ""dayz_selectGender"") && {(!isNil ""DZE_defaultSkin"") && (_isInfected == 0)}) then {" \n
                          "	if (dayz_selectGender == ""Survivor2_DZ"") then {" \n
                          "		_rand = (DZE_defaultSkin select 0) call BIS_fnc_selectRandom;" \n
                          "		_model = getText (configFile >> ""CfgMagazines"" >> ""Skins"" >> _rand >> ""playerModel""); //MALE" \n
                          "		if (_model == """") then {" \n
-                         "		_model = _rand;" \n
+                         "				_model = _rand;" \n
                          "		};" \n
                          "	} else {" \n
                          "		_rand = (DZE_defaultSkin select 1) call BIS_fnc_selectRandom;" \n
                          "		_model = getText (configFile >> ""CfgMagazines"" >> ""Skins"" >> _rand >> ""playerModel""); //FEMALE" \n
                          "		if (_model == """") then {" \n
-                         "			_model = _rand;" \n
+                         "				_model = _rand;" \n
                          "		};" \n
                          "	};" \n
                          "};" \n
@@ -1202,7 +1202,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"diag_log 'player_forceSave called from fsm';" \n
                          "//call player_forceSave;" \n
                          "" \n
-						 "//Check for bad controls at login" \n
+                         "//Check for bad controls at login" \n
                          "false spawn ui_updateControls;" \n
                          "" \n
                          "publicVariableServer ""PVDZ_plr_LoginRecord"";"/*%FSM</STATEINIT""">*/;
@@ -1965,12 +1965,12 @@ class FSM
                          "//Other Counters" \n
                          "	dayz_currentGlobalAnimals = count entities ""CAAnimalBase"";" \n
                          "	dayz_currentGlobalZombies = count entities ""zZombie_Base"";" \n
-						 "" \n
-						 "{" \n
-						 "	call compile preprocessFileLineNumbers (""\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\""+_x+"".sqf""); " \n
-						 "} count infectedWaterHoles;" \n
-						 "	" \n
-						 "diag_log (infectedWaterHoles);"/*%FSM</STATEINIT""">*/;
+                         "" \n
+                         "{" \n
+                         "	call compile preprocessFileLineNumbers (""\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\""+_x+"".sqf""); " \n
+                         "} count infectedWaterHoles;" \n
+                         "	" \n
+                         "diag_log (infectedWaterHoles);"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
                         {
