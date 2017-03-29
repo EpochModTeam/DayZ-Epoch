@@ -613,7 +613,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		player removeAction s_player_breakinhouse;
 		s_player_breakinhouse = -1;
 	};*/
-	if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then {
+	if (_typeOfCursorTarget == "Plastic_Pole_EP1_DZ" && {speed player <= 1}) then {
 		_hasAccess = [player, _cursorTarget] call FNC_check_access;
 		_allowed = ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3) or (_hasAccess select 4));
 		if (DZE_permanentPlot) then {

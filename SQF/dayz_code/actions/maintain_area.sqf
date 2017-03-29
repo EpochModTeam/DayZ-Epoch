@@ -30,7 +30,7 @@ s_player_maintain_area_force = 1;
 player removeAction s_player_maintain_area_preview;
 s_player_maintain_area_preview = 1;
 
-_target = nearestObject [[player] call FNC_getPos,"Plastic_Pole_EP1_DZ"];
+_target = (([player] call FNC_getPos) nearEntities ["Plastic_Pole_EP1_DZ",15]) select 0;
 _objects = nearestObjects [_target, DZE_maintainClasses, DZE_maintainRange];
 
 _objects_filtered = [];

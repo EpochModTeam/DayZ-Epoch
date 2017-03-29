@@ -8,7 +8,7 @@ _friendName = _userList lbText (lbCurSel _userList);
 
 if (_friendUID == "") exitWith {};
 
-_plots = nearestObjects [[player] call FNC_getPos, ["Plastic_Pole_EP1_DZ"],15];
+_plots = ([player] call FNC_getPos) nearEntities ["Plastic_Pole_EP1_DZ",15];
 
 _thePlot = _plots select 0;
 _friends = _thePlot getVariable ["plotfriends",[]];

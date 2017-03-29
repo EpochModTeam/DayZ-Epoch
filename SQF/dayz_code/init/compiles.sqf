@@ -606,19 +606,6 @@ if (!isDedicated) then {
 		[(format ["%1<br />%2<br />%3<br />%4",death_1,death_2,death_3,death_4]),(safeZoneX + _offset),safeZoneY,10,0,0,8000] spawn BIS_fnc_dynamicText;
 	};
 	
-	fnc_plotCheck = {
-		private ["_hasPole","_plotFriends"];
-		
-		_hasPole = false;
-		
-		{
-			_plotFriends = _x getVariable ["plotfriends",[]];
-				if (((_plotFriends select 0) select 0) == dayz_playerUID) exitWith {_hasPole = true;};
-		} count (entities "Plastic_Pole_EP1_DZ");
-		
-		_hasPole
-	};
-	
 	dayz_originalPlayer = player;
 
 	// database trader menu
