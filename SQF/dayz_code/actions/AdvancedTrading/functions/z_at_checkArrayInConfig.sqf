@@ -68,7 +68,7 @@ _totalPrice = 0;
 			_text = "";
 			_type = getText(missionConfigFile >> "CfgTraderCategory"  >> _cat  >> _y >> "type");
 			// Make sure type matches for items that have the same weapon and magazine classname (i.e. PipeBomb, Mine, Javelin, etc.)
-			if ((_type == "trade_items" && !(_y in _mags)) or (_type == "trade_weapons" && !(_y in _weaps))) exitWith {};
+			if ((_type == "trade_items" && !(_y in _mags) && !_swap) or (_type == "trade_weapons" && !(_y in _weaps))) exitWith {};
 			_sell = getArray(missionConfigFile >> "CfgTraderCategory"  >> _cat  >> _y >> "sell");
 			_buy = getArray(missionConfigFile >> "CfgTraderCategory"  >> _cat  >> _y >> "buy");
 			if (_swap) then {_y = "ItemBloodbag"};
