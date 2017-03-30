@@ -5,18 +5,18 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
     - Function
     - [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private ["_HitBy","_end","_unit","_hit","_damage","_unconscious","_source","_ammo","_Viralzed","_isMinor","_isHeadHit","_isPlayer","_isBandit","_punishment","_humanityHit","_myKills","_wpst","_sourceDist","_sourceWeap","_scale","_type","_nrj","_rndPain","_hitPain","_wound","_isHit","_isbleeding","_rndBleed","_hitBleed","_isInjured","_lowBlood","_rndInfection","_hitInfection","_isCardiac","_chance","_falling","_model","_isZombieHit","_sourceType","_sourceVehicleType","_isMan","_isVehicle","_isLocal"];
+private ["_end","_unit","_hit","_damage","_unconscious","_source","_ammo","_isMinor","_isHeadHit","_isPlayer","_isBandit","_punishment","_humanityHit","_myKills","_wpst","_sourceDist","_sourceWeap","_scale","_type","_rndPain","_hitPain","_wound","_isHit","_isbleeding","_rndBleed","_hitBleed","_isInjured","_lowBlood","_isCardiac","_chance","_falling","_model","_isZombieHit","_sourceType","_sourceVehicleType","_isMan","_isVehicle","_isLocal","_inVehicle"];
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
 _source = _this select 3;
 _ammo = _this select 4;
-//diag_log format["HandleDamage: Unit:%1 Hit:%2 Damage:%3 Source:%4 Ammo:%5",_unit,_hit,_damage,_source,_ammo];
+//diag_log format["%1 HandleDamage: Unit:%2 Hit:%3 Damage:%4 Source:%5 Ammo:%6",diag_tickTime,_unit,_hit,_damage,_source,_ammo];
 _unconscious = _unit getVariable ["NORRN_unconscious", false];
 _model = typeOf player;
 _sourceType = typeOf _source;
 _sourceVehicleType = typeOf (vehicle _source);
-_Viralzed = _sourceType in DayZ_ViralZeds;
+_inVehicle = vehicle _unit != _unit;
 _isMinor = (_hit in USEC_MinorWounds);
 _isHeadHit = (_hit == "head_hit");
 _isZombieHit = _ammo == "zombie";
@@ -24,34 +24,39 @@ _isLocal = local _source;
 
 _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Dayz_freefall select 1 > 3)})});
 
-//Simple hack to help with a few issues from direct damage to physic based damage. ***until 2.0***
-	if (diag_tickTime - dayz_getoutTime > 2 && (vehicle player == player)) then {
-		_vehicleArray = nearestObjects [(getPosATL (vehicle _unit)),["Car","Air","Motorcycle","Ship","Tank"],3];
-		{if (typeOf _x == "ParachuteWest") then {_vehicleArray = _vehicleArray - [_x];};} count _vehicleArray;
-		{
-			if ((speed _x > 10) or (speed _x < -8)) exitWith { dayz_hitByTime = diag_tickTime; };
-		} count _vehicleArray;
+//Simple hack to help with a few issues from direct damage to physics based damage. ***until 2.0***
+	//If a vehicle is moving faster than 15 lets register some kind of direct damage rather than relying on indirect/physics damage.
+	if (diag_tickTime - dayz_getoutTime < 1) then {
+		//Player ejected from a moving vehicle
+		_ammo = "Dragged";
+	} else {
+		//Lets see if the player has been struck by a moving vehicle.
+		if (!_inVehicle) then {
+			if (diag_tickTime - dayz_hitByTime < 1) then {
+				_ammo = "RunOver";
+			} else {
+				{
+					if ((speed _x > 10 or (speed _x < -8)) && {typeOf _x != "ParachuteWest"}) exitWith {
+						dayz_hitByTime = diag_tickTime;
+						_ammo = "RunOver";
+					};
+				} count (([_unit] call fnc_getPos) nearEntities [["Air","LandVehicle","Ship"],3]);
+			};
+		};
 	};
-
-	//Lets see if the player has been struck by a moving vehicle.
-	if (diag_tickTime - dayz_hitByTime < 2) then { _ammo = "RunOver"; };
-
-	//If a vehicle is moving faster then 15 lets register some kind of direct damage rather then relying on indirect/physics damage.
-	if (diag_tickTime - dayz_getoutTime < 2) then { _ammo = "Dragged"; };
 
 	_end = false;
 
 	if (!_falling) then {
-		if (_ammo == "" && _hit == "" && vehicle player != player) then {_ammo = "Crash";};
+		if (_ammo == "" && _hit == "" && _inVehicle) then {_ammo = "Crash";};
 		//No _ammo type exit, indirect/physics damage.
 		if (_ammo == "") exitwith { _end = true; };
 		
 		//If _source contains no object exit. But lets not exit if the unit returns player. Maybe its his own fault.
 		if (isNull _source && !(_ammo in ["Dragged","RunOver"])) then {
-			_vehicleArray = nearestObjects [(getPosATL (vehicle _unit)),["Car","Air","Motorcycle","Ship","Tank","TrapTripwireGrenade"],25];
-			{if (typeOf _x == "ParachuteWest") then {_vehicleArray = _vehicleArray - [_x];};} count _vehicleArray;
+			_vehicleArray = nearestObjects [([vehicle _unit] call fnc_getPos),["Air","LandVehicle","Ship","TrapTripwireGrenade"],25];
 			//Don't exit if a drivable vehicle (or drivable vehicle wreck) is nearby, because vehicle explosions register as a null source
-			if (count _vehicleArray == 0) then {
+			if (({typeOf _x != "ParachuteWest"} count _vehicleArray) == 0) then {
 				_end = true;
 				/*
 					Possible cheat. Record to block any incoming fall damage.
@@ -66,7 +71,6 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 	} else {
 		if (dayz_lastDamageSourceNull) then { _end = true; }; // Block incoming fall damage.
 	};
-
 
 	if (_end) exitwith { 0 };
 //End Simple hack for damage ***until 2.0***
@@ -130,7 +134,7 @@ if (_unit == player) then {
         };
     };
     
-	if ((vehicle player == player) and (!_unconscious)) then {
+	if (!_inVehicle && !_unconscious) then {
 		if (_ammo == "tranquiliser_bolt") then {
 			[_unit] spawn {
 				private ["_unit"];
@@ -375,10 +379,8 @@ if (_hit in USEC_MinorWounds) then {
         };
     } else {
         if (_falling) then {
-            _nrj = ((Dayz_freefall select 1)*20) / 100;
             _gravity = 9.81 min (2*(Dayz_freefall select 1)/((0.00001 + (Dayz_freefall select 2))^2));
             _nrj2 = _gravity * (Dayz_freefall select 1);
-            //diag_log [ "handler freefall", _nrj, _nrj2, Dayz_freefall];
             if (random(_nrj2 / (5 * 9.81)) > 0.5) then { // freefall from 5m => 1/2 chance to get hit legs registered
                     diag_log[__FILE__, "Legs damage registered from freefall, damage:",_damage,"gravity:", _gravity, 
                         "height:", (Dayz_freefall select 1), "blood loss", (_nrj2 * 25) ];

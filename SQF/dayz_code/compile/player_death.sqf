@@ -7,9 +7,11 @@ deathHandled = true;
 if (typeName (_this select 0) == "ARRAY") then {
 	_body = (_this select 0) select 0;
 	_source = (_this select 0) select 1;
+	diag_log format["Player_Death called from 'killed' event handler %1",_this];
 } else {
 	_body = player;
 	_source = _this select 0;
+	diag_log format["Player_Death called from script %1",_this];
 };
 
 _deathPos = getPos _body;

@@ -622,6 +622,7 @@ BIS_fnc_findNestedElement =	compile preprocessFileLineNumbers "\z\addons\dayz_co
 BIS_fnc_param = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BIS_fnc\fn_param.sqf";
 BIS_fnc_relativeDirTo = compile("private '_dir';_dir=_this call{" + (preprocessFileLineNumbers "ca\modules\Functions\geometry\fn_relativeDirTo.sqf")+"};if(_dir>180)then{_dir=_dir-360;};if(_dir<-180)then{_dir=_dir+360;};_dir");
 fnc_buildWeightedArray = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_buildWeightedArray.sqf";		//Checks which actions for nearby casualty
+fnc_getPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getPos.sqf";
 fnc_spawnObjects = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_spawnObjects.sqf";
 object_getHit = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_getHit.sqf";			//gets the hit value for a HitPoint (i.e. HitLegs) against the selection (i.e. "legs"), returns the value
 object_setHit = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_setHit.sqf";			//process the hit as a NORMAL damage (useful for persistent vehicles)
@@ -678,7 +679,6 @@ BIS_fnc_numberDigits = compile preprocessFileLineNumbers "\z\addons\dayz_code\co
 BIS_fnc_numberText = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_numberText.sqf";
 local_lockUnlock = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lockUnlock.sqf"; //When vehicle is local to unit perform locking vehicle
 FNC_GetSetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getSetPos.sqf";
-FNC_GetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getPos.sqf";
 dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_ejectPlayer.sqf";
 dayz_groupInvite = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\handleInvite.sqf";
 
