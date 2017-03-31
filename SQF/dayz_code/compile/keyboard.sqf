@@ -334,7 +334,6 @@ if (isNil "keyboard_keys") then {
 		[actionKeys "TacticalView", _block] call _addArray;
 	};
 	diag_log "keyboard_keys reset";
-	if (!isNil "bis_fnc_halo_keydown_eh") then {bis_fnc_halo_keydown_eh = (finddisplay 46) displayaddeventhandler ["keydown","_this call bis_fnc_halo_keydown;"];}; // halo in progress
 };
 
 if (r_player_unconsciousInputDisabled) exitWith {true};
