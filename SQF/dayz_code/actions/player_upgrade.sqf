@@ -127,7 +127,6 @@ if ((count _upgrade) > 0) then {
 			};
 			if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
 				_object addEventHandler ["HandleDamage",{false}];
-				_object enableSimulation false;
 			}; 
 			if (DZE_permanentPlot) then {
 				_ownerID = _obj getVariable["ownerPUID","0"];

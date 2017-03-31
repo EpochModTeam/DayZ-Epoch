@@ -471,7 +471,6 @@ if (_canBuild select 0) then {
 				};
 				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
 					_tmpbuilt addEventHandler ["HandleDamage",{false}];
-					_tmpbuilt enableSimulation false;
 				}; 
 			} else {
 				deleteVehicle _tmpbuilt;
