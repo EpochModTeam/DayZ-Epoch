@@ -15,7 +15,7 @@ if (typeName _add == "SCALAR") exitWith {
 			if (_uid == getPlayerUID player) then {
 				localize "STR_EPOCH_GROUP_KICKED" call dayz_rollingMessages;
 				terminate dayz_groupTags;
-				80000 cutText ["","PLAIN"];
+				8 cutText ["","PLAIN"];
 			} else {
 				systemChat format[localize "STR_EPOCH_PLAYER_KICKED",name (_uid call dayz_getPlayer)];
 			};
@@ -24,13 +24,13 @@ if (typeName _add == "SCALAR") exitWith {
 			systemChat format[localize "STR_EPOCH_PLAYER_LEFT",_uid];
 			if (count (player call dayz_filterGroup) == 1) then {
 				terminate dayz_groupTags;
-				80000 cutText ["","PLAIN"];
+				8 cutText ["","PLAIN"];
 			};
 		};
 		case 4: {
 			localize "STR_EPOCH_GROUP_DISBANDED" call dayz_rollingMessages;
 			terminate dayz_groupTags;
-			80000 cutText ["","PLAIN"];
+			8 cutText ["","PLAIN"];
 		};
 	};
 };

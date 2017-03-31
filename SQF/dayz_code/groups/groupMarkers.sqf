@@ -8,7 +8,7 @@ while {true} do {
 		[player] joinSilent grpNull;
 		if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
 		terminate dayz_groupTags;
-		80000 cutText ["","PLAIN"];
+		8 cutText ["","PLAIN"];
 		localize "STR_EPOCH_LOST_RADIO_CONTACT" call dayz_rollingMessages;
 	} else {
 		if (_inGroup && scriptDone dayz_groupTags) then {

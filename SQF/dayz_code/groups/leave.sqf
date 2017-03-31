@@ -13,5 +13,5 @@ dayz_groupLeaveThread = [] spawn {
 	[player] joinSilent grpNull;
 	
 	terminate dayz_groupTags;
-	80000 cutText ["","PLAIN"];
+	8 cutText ["","PLAIN"];
 };

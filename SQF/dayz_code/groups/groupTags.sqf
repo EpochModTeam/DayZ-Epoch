@@ -41,12 +41,12 @@ _refresh = {
 
 while {true} do {
 	waitUntil {uiSleep 1; DRAW_TAGS};
-	80000 cutRsc ["DZ_GroupTags","PLAIN"];
+	8 cutRsc ["DZ_GroupTags","PLAIN"];
 	
 	while {DRAW_TAGS} do {
 		call _refresh; //Must be called to finish in current frame
 		uiSleep 0.01;
 	};
 	
-	80000 cutText ["","PLAIN"];
+	8 cutText ["","PLAIN"];
 };

@@ -25,7 +25,7 @@ R3F_TIRED_FNCT_Voile_Noir = {
 R3F_TIRED_ForceWalk = false;
 
 R3F_TIRED_FNCT_Overburdened = {
-	localize "STR_R3F_WEIGHT_Overburdened" call dayz_rollingMessages;
+	[localize "STR_R3F_WEIGHT_Overburdened",1] call dayz_rollingMessages;
 	
 	if (!R3F_TIRED_ForceWalk) then {
 		R3F_TIRED_ForceWalk = true;
@@ -44,7 +44,7 @@ R3F_TIRED_FNCT_Overburdened = {
 			};
 			R3F_TIRED_ForceWalk = false;
 			player forceWalk false;
-			cutText ["","PLAIN DOWN"]; // Clear overburdened message
+			["",1] call dayz_rollingMessages; // Clear overburdened message
 		};
 	};
 };
