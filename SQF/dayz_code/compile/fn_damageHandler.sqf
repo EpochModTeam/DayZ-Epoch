@@ -242,7 +242,7 @@ if (_damage > 0.4) then {
     if (!(player == _source) && (_isPlayer or (_isMan && !_isZombieHit))) then { //Scale shots from AI units the same as shots from players
 		dayz_sourceBleeding = _source; //Used for death messages
         _scale = _scale + 800;
-        if (_isHeadHit) then {
+        if (_isHeadHit && (_ammo != "RunOver")) then {
 			if (_ammo in MeleeAmmo) then {
 				_scale = _scale + 500;
 			} else {
