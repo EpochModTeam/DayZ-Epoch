@@ -19,7 +19,7 @@ _countOut = 0;
 
 _findNearestTree = [];
 {
-	if((typeOf _x)in["fiberplant",""]) then {
+	if((typeOf _x) in ["fiberplant",""]) then {
 			
 		if (alive _x) then {
 				
@@ -92,9 +92,9 @@ if (count(_findNearestTree) >= 1) then {
 
 	if (_proceed) then {
 		//fix many players collect 1 plant, and have many items
-		if(({isPlayer _x && _x != player}count(_tree nearEntities ['CAManBase',10]))>0)exitWith{
+		if(({isPlayer _x && _x != player} count (_tree nearEntities ['CAManBase',10])) > 0 ) exitWith {
 			"You can not collect plants in the presence of other players." call dayz_rollingMessages; //TODO: add localize text
-			dayz_actionInProgress=false;
+			dayz_actionInProgress = false;
 		};
 		
 		//Remove melee magazines (BIS_fnc_invAdd fix)
@@ -114,9 +114,9 @@ if (count(_findNearestTree) >= 1) then {
 		
 		if(_i != 0) then {
 			// chop down tree
-			switch(typeOf _tree)do{
-				case "":{_tree setDamage 1;};
-				case "fiberplant":{deleteVehicle _tree;};
+			switch (typeOf _tree) do {
+				case "" : {_tree setDamage 1;};
+				case "fiberplant" : {deleteVehicle _tree;};
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 		
