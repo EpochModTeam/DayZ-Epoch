@@ -92,8 +92,8 @@ if (count(_findNearestTree) >= 1) then {
 
 	if (_proceed) then {
 		//fix many players collect 1 plant, and have many items
-		if(({isPlayer _x && _x != player} count (_tree nearEntities ['CAManBase',10])) > 0 ) exitWith {
-			"You can not collect plants in the presence of other players." call dayz_rollingMessages; //TODO: add localize text
+		if (({isPlayer _x && _x != player} count (_tree nearEntities ['CAManBase',10])) > 0 ) exitWith {
+			localize "str_pickup_limit_5" call dayz_rollingMessages;
 			dayz_actionInProgress = false;
 		};
 		
