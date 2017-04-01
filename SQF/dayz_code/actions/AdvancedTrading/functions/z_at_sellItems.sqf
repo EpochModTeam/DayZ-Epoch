@@ -17,26 +17,20 @@ _itemsCheckArray = [];
 _itemsToLog = [[],[],[],"sell"];
 
 _sellVehicle = {
-	private ["_damage","_tireDmg","_tires","_okToSell","_returnInfo","_obj","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_part_in","_qty_in","_activatingPlayer","_objects","_qty","_vehicle"];
+	private ["_damage","_tireDmg","_tires","_okToSell","_returnInfo","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_vehicle"];
 	_vehicle = _this select 0;
 	_sellType = _this select 1;
-	_part_in = typeOf _vehicle;
-	_qty_in = 1;
-	_activatingPlayer = player;
 	_returnInfo = [];
-	_objects = nearestObjects [(getPosATL player), [_part_in], Z_VehicleDistance];
-	_qty = ({(typeOf _x) == _part_in} count _objects);
-	if (_qty >= _qty_in) then {
-		_obj = (_objects select 0);
+	if (DZE_myVehicle == _vehicle) then {
 		_okToSell = true;
 		_tires = 0;
 		_tireDmg = 0;
 		_damage = 0;
 		if (!(_sellType in ["trade_any_boat", "trade_any_boat_old"])) then {
-			_hitpoints = _obj call vehicle_getHitpoints;
+			_hitpoints = DZE_myVehicle call vehicle_getHitpoints;
 			{
 				if (["Wheel",_x,false] call fnc_inString) then {
-					_damage = [_obj,_x] call object_getHit;
+					_damage = [DZE_myVehicle,_x] call object_getHit;
 					_tireDmg = _tireDmg + _damage;
 					_tires = _tires + 1;
 				};
@@ -47,16 +41,16 @@ _sellVehicle = {
 				};
 			};
 		};
-		_objectID			= _obj getVariable ["ObjectID","0"];
-		_objectUID			= _obj getVariable ["ObjectUID","0"];
-		_objectCharacterId	= _obj getVariable ["CharacterID","0"];
+		_objectID			= DZE_myVehicle getVariable ["ObjectID","0"];
+		_objectUID			= DZE_myVehicle getVariable ["ObjectUID","0"];
+		_objectCharacterId	= DZE_myVehicle getVariable ["CharacterID","0"];
 		_notSetup 			= (_objectID == "0" && _objectUID == "0");
 
-		if (local _obj && !isNull _obj && alive _obj && !_notSetup) then {
+		if (local DZE_myVehicle && !isNull DZE_myVehicle && alive DZE_myVehicle && !_notSetup) then {
 			if (_okToSell) then {
-				_returnInfo = [_objectCharacterId, _obj, _objectID, _objectUID, _sellType];
+				_returnInfo = [_objectCharacterId, DZE_myVehicle, _objectID, _objectUID, _sellType];
 			} else {
-				systemChat format[localize "str_epoch_player_182",typeOf _obj];
+				systemChat format[localize "str_epoch_player_182",typeOf DZE_myVehicle];
 				_returnInfo = [];
 			};
 		} else {
