@@ -11,6 +11,9 @@ if (_event < 3) then {
 	uiSleep 1;
 };
 
+//Do not update if calling player is dead. Prevent saving dayz_firstGroup.
+if (damage _player >= 1) exitWith {};
+
 if (_event == -1) exitWith {
 	//Promote _player
 	PVDZ_groupInvite = [-1,_player];
@@ -19,7 +22,7 @@ if (_event == -1) exitWith {
 
 _groupUIDs = [];
 {
-	if (alive _x && isPlayer _x) then {
+	if (damage _x < 1 && isPlayer _x) then {
 		_groupUIDs set [count _groupUIDs,getPlayerUID _x];
 	};
 } count (units group _player);
