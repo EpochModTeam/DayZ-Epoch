@@ -242,7 +242,7 @@ if (_damage > 0.4) then {
     if (!(player == _source) && (_isPlayer or (_isMan && !_isZombieHit))) then { //Scale shots from AI units the same as shots from players
 		dayz_sourceBleeding = _source; //Used for death messages
         _scale = _scale + 800;
-        if (_isHeadHit && (_ammo != "RunOver")) then {
+        if (_isHeadHit) then {
 			if (_ammo in MeleeAmmo) then {
 				_scale = _scale + 500;
 			} else {
@@ -260,7 +260,7 @@ if (_damage > 0.4) then {
 	//Zombies
 		case 3: {_scale = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "damageScale"); if (dayz_DamageMultiplier > 1) then {_scale = _scale * dayz_DamageMultiplier;};};
 	//RunOver
-		case 4: {_scale = _scale - 50}; //Based on 12k blood for run over with SUV at 70km/h
+		case 4: {_scale = 50}; //Based on 12k blood for run over with SUV at 70km/h
 	//Dragged
 		case 5: {_scale = 25};
 	//Crash
