@@ -523,7 +523,9 @@ inTraderCity = "Unknown Trader";
 PlayerDeaths = [];
 PVDZE_obj_Trade = []; // For all traders increment qty
 PVDZE_plr_DeathB = [];
-PVDZE_plr_TradeMenu = []; // For all traders
+if (!DZE_ConfigTrader) then {
+	PVDZE_plr_TradeMenu = []; // For all traders
+};
 snapGizmos = [];
 snapGizmosNearby = [];
 s_player_combi = [];
