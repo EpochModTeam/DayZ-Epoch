@@ -13,6 +13,12 @@ class car_sedan : SkodaBase {
 	};
 };
 
+class policecar: car_sedan {
+	class Upgrades {
+		ItemORP[] = {};
+	};
+};
+
 // Performance 1
 class car_sedan_DZE1: car_sedan {
 	original = "car_sedan";
