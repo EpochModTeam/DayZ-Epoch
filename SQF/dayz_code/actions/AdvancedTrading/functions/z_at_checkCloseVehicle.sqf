@@ -2,7 +2,7 @@ private ["_list","_result","_pos"];
 
 _result = false;
 _pos = [player] call FNC_GetPos;
-_list = nearestObjects [_pos, ["Air","LandVehicle","Ship"], Z_VehicleDistance];
+_list = _pos nearEntities [["Air","LandVehicle","Ship"],Z_VehicleDistance];
 
 if (!isNull DZE_myVehicle && {local DZE_myVehicle} && {alive DZE_myVehicle} && {DZE_myVehicle in _list}) then {
 	_result = true;
