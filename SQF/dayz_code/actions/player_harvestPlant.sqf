@@ -20,7 +20,7 @@ _countOut = 0;
 _findNearestTree = [];
 {
 	_obj=_x;
-	if (((typeOf _obj) in ["fiberplant",""]) && (alive _obj)) then {
+	if (((typeOf _obj) in ["fiberplant","MAP_pumpkin","MAP_p_Helianthus",""]) && (alive _obj)) then {
 		_objName = _obj call fn_getModelName;			
 		{
 			if ([_x,_objName] call fnc_inString) exitWith {
@@ -105,9 +105,10 @@ if (count(_findNearestTree) >= 1) then {
 		
 		if(_i != 0) then {
 			// chop down tree
-			switch (typeOf _tree) do {
-				case "" : {_tree setDamage 1;};
-				case "fiberplant" : {deleteVehicle _tree;};
+			if ((typeOf _tree)=="") then {
+				_tree setDamage 1;
+			} else {
+				deleteVehicle _tree;
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 		
