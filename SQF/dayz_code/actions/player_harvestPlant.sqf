@@ -3,7 +3,7 @@
 	Usage: spawn player_harvestPlant;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text"];
+private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text","_obj"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -19,26 +19,17 @@ _countOut = 0;
 
 _findNearestTree = [];
 {
-	if((typeOf _x) in ["fiberplant",""]) then {
-			
-		if (alive _x) then {
-				
-			_objName = _x call fn_getModelName;
-
-			// Exit since we found a tree
-			if (_objName in _trees) exitWith { 
-				_findNearestTree set [(count _findNearestTree),_x];
-
-				_index = _trees find _objName;
-
-				_itemOut = _treesOutput select _index;
-
-				_countOut = 1; 
-
+	_obj=_x;
+	if (((typeOf _obj) in ["fiberplant",""]) && (alive _obj)) then {
+		_objName = _obj call fn_getModelName;			
+		{
+			if ([_x,_objName] call fnc_inString) exitWith {
+				_findNearestTree set [(count _findNearestTree),_obj];
+				_itemOut = _treesOutput select _forEachIndex;
+				_countOut = 1;
 			};
-		};
+		}forEach _trees;
 	};
-
 } count nearestObjects [([player] call FNC_getPos), [], 10];
 
 //diag_log format["DEBUG TREES: %1", _findNearestTree];
