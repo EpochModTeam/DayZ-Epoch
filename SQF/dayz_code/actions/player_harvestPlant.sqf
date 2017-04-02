@@ -3,13 +3,14 @@
 	Usage: spawn player_harvestPlant;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text","_obj"];
+private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text","_obj","_treesClasnames"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 // allowed trees list move this later
 _trees = ["pumpkin.p3d","p_helianthus.p3d","p_fiberplant_ep1.p3d"];
+_treesClasnames = ["fiberplant","MAP_pumpkin","MAP_p_Helianthus",""];
 _treesOutput = ["FoodPumpkin","FoodSunFlowerSeed","ItemKiloHemp"];
 
 //_item = _this;
@@ -20,7 +21,7 @@ _countOut = 0;
 _findNearestTree = [];
 {
 	_obj=_x;
-	if (((typeOf _obj) in ["fiberplant","MAP_pumpkin","MAP_p_Helianthus",""]) && (alive _obj)) then {
+	if (((typeOf _obj) in _treesClasnames) && (alive _obj)) then {
 		_objName = _obj call fn_getModelName;			
 		{
 			if ([_x,_objName] call fnc_inString) exitWith {
