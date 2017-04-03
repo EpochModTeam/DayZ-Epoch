@@ -3,12 +3,13 @@
 	Usage: spawn player_harvestPlant;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text"];
+private ["_isOk","_i","_objName","_started","_finished","_animState","_isMedic","_proceed","_itemOut","_countOut","_tree","_trees","_findNearestTree","_index","_invResult","_treesOutput","_text","_obj"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 // allowed trees list move this later
+//classnames for manual spawn: "MAP_pumpkin","MAP_p_Helianthus","fiberplant"
 _trees = ["pumpkin.p3d","p_helianthus.p3d","p_fiberplant_ep1.p3d"];
 _treesOutput = ["FoodPumpkin","FoodSunFlowerSeed","ItemKiloHemp"];
 
@@ -19,26 +20,17 @@ _countOut = 0;
 
 _findNearestTree = [];
 {
-	if("" == typeOf _x) then {
-			
-		if (alive _x) then {
-				
-			_objName = _x call fn_getModelName;
-
-			// Exit since we found a tree
-			if (_objName in _trees) exitWith { 
-				_findNearestTree set [(count _findNearestTree),_x];
-
-				_index = _trees find _objName;
-
-				_itemOut = _treesOutput select _index;
-
-				_countOut = 1; 
-
+	_obj=_x;
+	if (alive _obj) then {
+		_objName = _obj call fn_getModelName;			
+		{
+			if ([_x,_objName] call fnc_inString) exitWith {
+				_findNearestTree set [(count _findNearestTree),_obj];
+				_itemOut = _treesOutput select _forEachIndex;
+				_countOut = 1;
 			};
-		};
+		}forEach _trees;
 	};
-
 } count nearestObjects [([player] call FNC_getPos), [], 10];
 
 //diag_log format["DEBUG TREES: %1", _findNearestTree];
@@ -91,6 +83,12 @@ if (count(_findNearestTree) >= 1) then {
 	};
 
 	if (_proceed) then {
+		//fix many players collect 1 plant, and have many items
+		if (({isPlayer _x && _x != player} count (_tree nearEntities ['CAManBase',10])) > 0 ) exitWith {
+			localize "str_pickup_limit_5" call dayz_rollingMessages;
+			dayz_actionInProgress = false;
+		};
+		
 		//Remove melee magazines (BIS_fnc_invAdd fix)
 		false call dz_fn_meleeMagazines;
 		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
@@ -108,8 +106,10 @@ if (count(_findNearestTree) >= 1) then {
 		
 		if(_i != 0) then {
 			// chop down tree
-			if("" == typeOf _tree) then {
+			if ((typeOf _tree)=="") then {
 				_tree setDamage 1;
+			} else {
+				deleteVehicle _tree;
 			};
 			//diag_log format["DEBUG TREE DAMAGE: %1", _tree];
 		
