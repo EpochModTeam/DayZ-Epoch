@@ -1,29 +1,19 @@
-private ["_addedTree","_objType","_unit","_ammo","_weapon","_projectile"];
+private ["_unit","_ammo","_weapon","_projectile","_tree"];
 _unit = 		_this select 0;
 _weapon = 		_this select 1;
 _ammo = 		_this select 4;
 _projectile = 	_this select 6;
 
-if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {	
-	_findNearestTree = [];
+if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
+	_tree = objNull;
 	{
-		_objType = typeOf _x;
-		_addedTree = _objType in dayz_treeTypes;
-		
-		if ((_objType == "" or _addedTree) && {alive _x}) then {
-			_objName = _x call fn_getModelName;
+		if (typeOf _x in dayz_treeTypes && {alive _x} && {(_x call fn_getModelName) in dayz_trees}) exitWith {
 			// Exit since we found a tree
-			//model name has "remote" on client when tree is spawned on server with createVehicle
-			if (_objName in dayz_trees or _addedTree) exitWith { _findNearestTree set [count _findNearestTree,_x]; };
+			_tree = _x;
 		};
 	} count nearestObjects [getPosATL player, [], 20];
 
-	//diag_log ("POSITION: " + str(_endPos));
-
-	if (count _findNearestTree > 0) then {
-
-		_tree = _findNearestTree select 0;
-
+	if (!isNull _tree) then {
 		// get 2d distance
 		_distance2d = [player, _tree] call BIS_fnc_distance2D;
 		
