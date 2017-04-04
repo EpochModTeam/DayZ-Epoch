@@ -105,13 +105,17 @@ if (!isNull _tree) then {
         format[localize "str_player_24_progress", _counter,_countOut] call dayz_rollingMessages;
     };
 
-   if (_proceed ||(_counter > 0) ) then {            
-		//remove vehicle, Need to ask server to remove.
-		PVDZ_objgather_Knockdown = [_tree,player];
-		publicVariableServer "PVDZ_objgather_Knockdown";         
-        //"Chopping down tree." call dayz_rollingMessages;
-        //localize "str_player_25" call dayz_rollingMessages;
-    };
+	if (_proceed || (_counter > 0)) then {
+		//localize "str_choppingTree" call dayz_rollingMessages;
+		//localize "str_player_25" call dayz_rollingMessages;
+		if (typeOf _tree == "") then {
+			// Ask server to setDamage on tree and sync for JIP
+			PVDZ_objgather_Knockdown = [_tree,player];
+			publicVariableServer "PVDZ_objgather_Knockdown";
+		} else {
+			deleteVehicle _tree;
+		};
+	};
     if !(_proceed) then {            
         localize "str_player_24_Stoped" call dayz_rollingMessages;
 
