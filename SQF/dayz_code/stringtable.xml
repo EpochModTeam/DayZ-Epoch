@@ -5014,7 +5014,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_2">
 			<English>Chicken Leg</English>
 			<German>Gebratene Hühnchenkeule</German>
-			<Russian>Жареный куриный окрочек</Russian>
+			<Russian>Жареный куриный окорочок</Russian>
 			<Spanish>Pata de Pollo</Spanish>
 			<French>Poulet grillé</French>
 			<Czech>Opečené kuřecí</Czech>
@@ -5022,7 +5022,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_2">
 			<English>Chicken Leg to be used for sustenance.</English>
 			<German>Eine Hühnchenkeule, die über Feuer gut durchgebraten wurde.</German>
-			<Russian>Жареный куриный окрочек, готовый к употреблению.</Russian>
+			<Russian>Жареный куриный окорочок, готовый к употреблению.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<French>La cuisse de poulet peut être consommée.</French>
 			<Czech>Kuřecí stehno může být snědeno, abyste přežili.</Czech>
@@ -7275,6 +7275,7 @@
 		<Key ID="str_player_studybody_female">
 			<English>Her name was %1, it appears she died from %2</English>
 			<German>Ihr Name war %1, anscheinend starb sie %2</German>				
+			<Russian>Её звали %1, похоже что она умерла от %2</Russian>
 		</Key>
 		<Key ID="str_player_death_suicide">
 			<English>%1 committed suicide</English>
@@ -7461,6 +7462,7 @@
 		<Key ID="str_death_shot">
 			<English>a gunshot wound.</English>
 			<German>an einer Schusswunde.</German>
+			<Russian>огнестрельного ранения.</Russian>
 		</Key>
 		<Key ID="str_death_shothead">
 			<English>a gunshot to the head.</English>
@@ -7497,7 +7499,7 @@
 		<Key ID="str_death_sick">
 			<English>infection.</English>
 			<German>an einer Infektion.</German>
-			<Russian>инфекционное заболевание.</Russian>
+			<Russian>инфекционного заболевания.</Russian>
 			<Spanish>infección.</Spanish>
 			<French>maladie.</French>
 			<Czech>nemoc.</Czech>
@@ -7537,36 +7539,42 @@
 		<Key ID="str_death_zombie">
 			<English>the infected.</English>
 			<German>durch Zombies.</German>
+			<Russian>зомби.</Russian>
 		</Key>
 		<Key ID="str_death_fall">
 			<English>falling.</English>
 			<German>durch einen Sturz aus zu großer Höhe.</German>
+			<Russian>падения.</Russian>
 		</Key>
 		<Key ID="str_death_crash">
 			<English>a vehicle crash.</English>
 			<German>durch einen Fahrzeug Crash.</German>
+			<Russian>автоаварии.</Russian>
 		</Key>
 		<Key ID="str_death_runover">
 			<English>being run over.</English>
 			<German>, weil er überfahren wurde.</German>
+			<Russian>колес автомашины.</Russian>
 		</Key>
 		<Key ID="str_death_eject">
 			<English>falling out of a moving vehicle.</English>
 			<German>, weil er aus einem fahrenden Fahrzeug fiel.</German>
+			<Russian>падения из движущегося транспорта.</Russian>
 		</Key>
 		<Key ID="str_death_melee">
 			<English>blunt force trauma.</English>
 			<German>durch stumpfe Gewalteinwirkung.</German>
+			<Russian>травмы из-за применения грубой силы.</Russian>
 		</Key>
 		<Key ID="str_death_rad">
-			<English>radiation</English>
+			<English>radiation.</English>
 			<German>durch Strahlung.</German>
-			<Russian>излучение</Russian>
+			<Russian>излучения.</Russian>
 		</Key>
 		<Key ID="str_death_crushed">
-			<English>being crushed</English>
+			<English>being crushed.</English>
 			<German>durch zu starke Quetschungen.</German>
-			<Russian>раздавлен</Russian>
+			<Russian>раздавления.</Russian>
 		</Key>
 		<Key ID="str_abort_playerclose">
 			<English>You cannot abort near another player!</English>
@@ -7846,6 +7854,7 @@
 		<Key ID="STR_UI_STREAMER_MODE_TOOLTIP">
 			<English>Hides server watermark and rules feed</English>
 			<German>Blendet das Server Wasserzeichen und die Chatliste aus.</German>
+			<Russian>Скрывает логотип сервера и новостную ленту</Russian>
 		</Key>
 	</Package>
 	<Package name="playerstats">
@@ -8629,6 +8638,7 @@
 		</Key>
 		<Key ID="STR_BUILT_CAMONET_Dismantle">
 			<English>Dismantle Camonet</English>
+			<Russian>Демонтировать камуфляжную сеть</Russian>
 		</Key>
 		<Key ID="STR_BUILT_HEDGEHOG">
 			<English>Hedgehog (Steel)</English>
@@ -11489,6 +11499,7 @@
 		<Key ID="STR_EPOCH_PLAYER_19_WAIT">
 			<English>You must wait another %1 seconds before you can enter another code.</English>
 			<German>Du musst weitere %1 Sekunden warten, bevor du einen anderen Code eingeben kannst.</German>
+			<Russian>Прежде чем ввести другой код, вы должны подождать %1 сек.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_20">
 			<English>Cannot unlock while another player is nearby.</English>
@@ -11597,6 +11608,7 @@
 		<Key ID="STR_EPOCH_PLAYER_33_OK">
 			<English>You managed to unlock %1 with your hotwire kit.</English>
 			<German>Du hast es geschafft %1 aufzubrechen.</German>			
+			<Russian>Вам удалось открыть %1 с помощью набора для угона.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_34">
 			<English>You are already filling a fuel container.</English>
@@ -12056,7 +12068,7 @@
 		<Key ID="STR_EPOCH_PLAYER_119">
 			<English>You cannot pack %1, you do not know the combination.</English>
 			<German>Du kannst nicht diese(n) %1 packen, da du nicht die Kombination kennst.</German>
-			<Russian>Вы не можете упаковать 1%, вы не знаете комбинации.</Russian>
+			<Russian>Вы не можете упаковать %1, вы не знаете комбинации.</Russian>
 			<Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
 			<French>Vous ne pouvez pas emballer %1, vous n'en connaissez pas la combinaison.</French>
 			<Czech>Nemůžete sbalit %1, neznáte správnou kombinaci.</Czech>
@@ -12072,7 +12084,7 @@
 		<Key ID="STR_EPOCH_PLAYER_121">
 			<English>Packing %1, move from this position to cancel within 5 seconds.</English>
 			<German>%1 wird gepackt. Bewege dich in den nächsten 5 Sekunden um den Vorgang abzubrechen.</German>
-			<Russian>Упаковывание 1% сдвиньтесь с этой позиции в течение 5 секунд, для отмены.</Russian>
+			<Russian>Упаковывание %1, сдвиньтесь с этой позиции в течение 5 секунд для отмены.</Russian>
 			<Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
 			<French>Emballage de %1, déplacez vous pour annuler dans moins de 5 secondes.</French>
 			<Czech>Balení %1. Pro zrušení se do 5 sekund pohněte.</Czech>
@@ -12124,6 +12136,7 @@
 		<Key ID="STR_EPOCH_PLAYER_134">
 			<English>You do not have access to build on this plot.</English>
 			<German>Du darfst auf diesem Grundstück nichts bauen, da du kein eingetragener Eigentümer bist.</German>
+			<Russian>Вы не можете здесь строить т.к. не являетесь владельцем этого столба.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_135">
 			<English>This item needs a %1 within %2 meters</English>
@@ -12180,6 +12193,7 @@
 			<Dutch>Kan niet downgraden %1 in de buurt.</Dutch>
 			<French>Impossible de dégrader, %1 est trop proche.</French>
 			<Czech>Downgrade %1 nelze poblíž udělat.</Czech>
+			<Russian>Понизить уровень %1 не представляется возможным.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_142">
 			<English>You have downgraded %1.</English>
@@ -12192,7 +12206,7 @@
 		<Key ID="STR_EPOCH_PLAYER_143">
 			<English>%1 of %2 could not be added to your inventory. (not enough room?)</English>
 			<German>%1 von %2 konnte dem Inventar nicht hinzugefügt werden. (Inventar voll?)</German>
-			<Russian>%2 (В количестве: %1) не может быть добавлен в ваш инвентарь. (недостаточно места?)</Russian>
+			<Russian>%2 (в количестве: %1) не может быть добавлен в ваш инвентарь. (Недостаточно места?)</Russian>
 			<Dutch>%1 van %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
 			<French>%1 sur %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
 			<Czech>%1 z %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
@@ -12252,6 +12266,7 @@
 			<German>Upgrade von %1 ist nicht möglich.</German>
 			<Dutch>Kan niet upgraden %1 in de buurt.</Dutch>
 			<Czech>Upgrade %1 nelze poblíž udělat.</Czech>
+			<Russian>Улучшить %1 не представляется возможным.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_158">
 			<English>You have upgraded %2. Combination is %1</English>
@@ -12298,10 +12313,12 @@
 		<Key ID="STR_EPOCH_PLAYER_166">
 			<English>You can't build a %1 within %2 meters of a safe zone.</English>
 			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einer Safe Zone.</German>
+			<Russian>Нельзя построить %1 в пределах %2м от безопасной зоны.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_167">
 			<English>You can't build a %1 within %2 meters of a %3.</English>
 			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einem Objekt (%3).</German>
+			<Russian>Нельзя построить %1 в пределах %2м от %3.</Russian>
 		</Key>
 
 		<Key ID="STR_EPOCH_PLAYER_173">
@@ -12372,6 +12389,7 @@
 			<German>1% nicht ausreichend auf Lager.</German>
 			<Dutch>Onvoldoende %1 voorraad.</Dutch>
 			<Czech>%1 není na skladě.</Czech>
+			<Russian>Товар закончился: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_184">
 			<English>Need %1 More %2</English>
@@ -12861,7 +12879,7 @@
 		<Key ID="STR_EPOCH_PLAYER_233">
 			<English>Craft Stair Supports</English>
 			<German>Treppenstützen herstellen</German>
-			<Russian>Создать: Stair Supports</Russian>
+			<Russian>Создать лестничные опоры</Russian>
 			<Dutch>Creëer trapsteunen</Dutch>
 			<Czech>Vytvořit Podpěry schodů</Czech>
 		</Key>
@@ -13341,6 +13359,7 @@
 		<Key ID="STR_EPOCH_PLAYER_331">
 			<English>%1 used to unlock vehicle.</English>
 			<German>%1 benutzt um Fahrzeug aufzuschließen.</German>
+			<Russian>%1 был использован для разблокировки транспорта.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
@@ -13462,7 +13481,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
 			<German>Fallschirm Sprung</German>
-			<Russian>HALO прыжок</Russian>
+			<Russian>Прыжок с парашютом</Russian>
 			<Dutch>Parachutesprong</Dutch>
 			<French>Chute Opérationnelle</French>
 			<Czech>Katapultovat se</Czech>
@@ -13539,6 +13558,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_MANAGEPLOT">
 			<English>Manage Plot</English>
 			<German>Verwalte Grundstücksmarkierung</German>
+			<Russian>Управление строительным столбом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_UNLOCK">
 			<English>Unlock %1</English>
@@ -13850,164 +13870,186 @@
 		<Key ID="STR_EPOCH_BULK_DISP_EMPTY">
 			<English>Supply Crate (Empty)</English>
 			<German>Kiste (Leer)</German>
+			<Russian>Пустой ящик для припасов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
 			<English>6x Soda (Coke)</English>
 			<German>6x Dose (Coke)</German>
-			<Russian>6x Газировка (Кола)</Russian>
+			<Russian>Ящик с 6-ю банками газировки (Кола)</Russian>
 			<Czech>6x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODACOKE_HALF">
 			<English>Supply Crate (6x Coke)</English>
 			<German>Kiste (6x Coke)</German>
+			<Russian>Ящик (6x Кола)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
 			<English>12x Soda (Coke)</English>
 			<German>12x Dose (Coke)</German>
-			<Russian>12x Газировка (Кола)</Russian>
+			<Russian>Ящик с 12-ю банками газировки (Кола)</Russian>
 			<Czech>12x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODACOKE_FULL">
 			<English>Supply Crate (12x Coke)</English>
 			<German>Kiste (12x Coke)</German>
+			<Russian>Ящик (12x Кола)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
 			<English>6x Soda (Pepsi)</English>
 			<German>6x Dose (Pepsi)</German>
-			<Russian>6x Газировка (Пепси)</Russian>
+			<Russian>Ящик с 6-ю банками газировки (Пепси)</Russian>
 			<Czech>6x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODAPEPSI_HALF">
 			<English>Supply Crate (6x Pepsi)</English>
 			<German>Kiste (6x Pepsi)</German>
+			<Russian>Ящик (6x Пепси)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
 			<English>12x Soda (Pepsi)</English>
 			<German>12x Dose (Pepsi)</German>
-			<Russian>12x Газировка (Пепси)</Russian>
+			<Russian>Ящик с 12-ю банками газировки (Пепси)</Russian>
 			<Czech>12x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODAPEPSI_FULL">
 			<English>Supply Crate (12x Pepsi)</English>
 			<German>Kiste (12x Pepsi)</German>
+			<Russian>Ящик (12x Пепси)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
 			<English>6x Bacon</English>
 			<German>6x Gebratener Speck</German>
-			<Russian>6x Готовый бекон</Russian>
+			<Russian>Ящик с 6-ю кусками вкусного жареного бекона</Russian>
 			<Czech>6x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_BACON_HALF">
 			<English>Supply Crate (6x Bacon)</English>
 			<German>Kiste (6x Bacon)</German>
+			<Russian>Ящик (Бекон 6шт.)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
 			<English>12x Bacon</English>
 			<German>12x Gebratener Speck</German>
-			<Russian>12x Готовый бекон</Russian>
+			<Russian>Ящик с 12-ю кусками вкусного жареного бекона</Russian>
 			<Czech>12x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_BACON_FULL">
 			<English>Supply Crate (12x Bacon)</English>
 			<German>Kiste (12x Bacon)</German>
+			<Russian>Ящик (Бекон 12шт.)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_G17">
 			<English>12x 17Rnd_9x19_glock17</English>
+			<Russian>Ящик с 12-ю новенькими магазинами&lt;br/&gt;для пистолета Glock 17&lt;br/&gt;(12шт. 17Rnd_9x19_glock17)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_G17">
 			<English>Supply Crate (12x G17)</English>
 			<German>Kiste (12x G17)</German>
+			<Russian>Ящик (12x G17)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_M9SD">
 			<English>12x 15Rnd_9x19_M9SD</English>
+			<Russian>Ящик с 12-ю новенькими магазинами&lt;br/&gt;для пистолета M9 с глушителем&lt;br/&gt;(12шт. 15Rnd_9x19_M9SD)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_M9SD">
 			<English>Supply Crate (12x M9SD)</English>
 			<German>Kiste (12x M9SD)</German>
+			<Russian>Ящик (12x M9SD)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_MP5SD">
 			<English>12x 30Rnd_9x19_MP5SD</English>
+			<Russian>Ящик с 12-ю новенькими магазинами&lt;br/&gt;для MP5 с ПБС&lt;br/&gt;(12шт. 30Rnd_9x19_MP5SD)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_MP5SD">
 			<English>Supply Crate (12x MP5SD)</English>
 			<German>Kiste (12x MP5SD)</German>
+			<Russian>Ящик (12x MP5SD)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_STANAGSD">
 			<English>12x 30Rnd_556x45_StanagSD</English>
+			<Russian>Ящик с 12-ю новенькими магазинами&lt;br/&gt;STANAG для автоматов с ПБС&lt;br/&gt;(12шт. 30Rnd_556x45_StanagSD)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_STANAGSD">
 			<English>Supply Crate (12x StanagSD)</English>
 			<German>Kiste (12x StanagSD)</German>
+			<Russian>Ящик (12x StanagSD)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
 			<English>12x SandBag</English>
 			<German>12x Sandsack</German>
-			<Russian>12x Мешок с песком</Russian>
+			<Russian>Ящик с 12-ю мешками с песком</Russian>
 			<Czech>12 Pytlů s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SANDBAG">
 			<English>Supply Crate (12x Sandbag)</English>
 			<German>Kiste (12x Sandsack)</German>
+			<Russian>Ящик (12x Мешок с песком)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
 			<English>12x Tank Trap</English>
 			<German>12x Panzersperre</German>
-			<Russian>12x Противотанковый ёж</Russian>
+			<Russian>Ящик с 12-ю противотанковыми ежами</Russian>
 			<Czech>12 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_TANKTRAP_FULL">
 			<English>Supply Crate (12x Tank Trap)</English>
 			<German>Kiste (12x Panzersperre)</German>
+			<Russian>Ящик (12x Противотанковый ёж)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
 			<English>6x Tank Trap</English>
 			<German>6x Panzersperre</German>
-			<Russian>6x Противотанковый ёж</Russian>
+			<Russian>Ящик с 6-ю противотанковыми ежами</Russian>
 			<Czech>6 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_TANKTRAP_HALF">
 			<English>Supply Crate (6x Tank Trap)</English>
 			<German>Kiste (6x Panzersperre)</German>
+			<Russian>Ящик (6x Противотанковый ёж)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
 			<English>12x Wire Kit</English>
 			<German>12x Stacheldraht</German>
-			<Russian>12x Колючая проволока</Russian>
+			<Russian>Ящик с 12-ю мотками колючей проволоки</Russian>
 			<Czech>12 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_FULL">
 			<English>Supply Crate (12x Wire Kit)</English>
 			<German>Kiste (12x Stacheldraht)</German>
+			<Russian>Ящик (12x Колючая проволока)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
 			<English>6x Wire Kit</English>
 			<German>6x Stacheldraht</German>
-			<Russian>6x Колючая проволока</Russian>
+			<Russian>Ящик с 6-ю мотками колючей проволоки</Russian>
 			<Czech>6 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_HALF">
 			<English>Supply Crate (6x Wire Kit)</English>
 			<German>Kiste (6x Stacheldraht)</German>
+			<Russian>Ящик (6x Колючая проволока)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
 			<English>12x Scrap Metal</English>
 			<German>12x Metallteile</German>
-			<Russian>12x Металлолом</Russian>
+			<Russian>Ящик с 12шт. металлолома</Russian>
 			<Czech>12x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_GENERIC_FULL">
 			<English>Supply Crate (12x Scrap Metal)</English>
 			<German>Kiste (12x Metallteile)</German>
+			<Russian>Ящик (12x Металлолом)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
 			<English>6x Scrap Metal</English>
 			<German>6x Metallteile</German>
-			<Russian>6x Металлолом</Russian>
+			<Russian>Ящик с 6шт. металлолома</Russian>
 			<Czech>6x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_GENERIC_HALF">
 			<English>Supply Crate (6x Scrap Metal)</English>
 			<German>Kiste (6x Metallteile)</German>
+			<Russian>Ящик (6x Металлолом)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE">
 			<English>Safe</English>
@@ -14156,26 +14198,32 @@
 		<Key ID="STR_CRAFT_NAME_FERTILIZER">
 			<English>Fertilizer</English>
 			<German>Dünger</German>
+			<Russian>Удобрение</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_FERTILIZER">
 			<English>A bag that is applied to soils or to plant tissues (usually leaves) to supply one or more plant nutrients essential to the growth of plants.</English>
 			<German>Ein Beutel mit Dünger, der aus unterschiedlichen Bestandteilen, hauptsächlich Erde und Mineralien, besteht, damit Pflanzen gut gedeihen können.</German>
+			<Russian>Мешок с удобрениями. Используется для улучшения роста растений.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PUMPKIN_SEED">
 			<English>Pumpkin Seed</English>
 			<German>Kürbis Samen</German>
+			<Russian>Тыквенное семечко</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PUMPKIN_SEED">
 			<English>A single pumpkin seed.</English>
 			<German>Ein einzelner Kürbis Samen.</German>
+			<Russian>Одно тыквенное семечко.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PUMPKIN_PLANT">
 			<English>Pumpkin Plant</English>
 			<German>Kürbis Pflanze</German>
+			<Russian>Тыквенная грядка</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PUMPKIN_PLANT">
 			<English>A fully grown pumpkin plant.</English>
 			<German>Eine ausgewachsene Kürbis Pflanze</German>
+			<Russian>Полностью возделанная тыквенная грядка.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_HEMP_SEED">
 			<English>Hemp Seed</English>
