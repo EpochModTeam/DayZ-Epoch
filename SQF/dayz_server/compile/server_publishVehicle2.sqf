@@ -88,7 +88,7 @@ _key call server_hiveWrite;
 		//_object = createVehicle [_class, _location, [], 0, "CAN_COLLIDE"];
 		// Don't use setPos or CAN_COLLIDE here. It will spawn inside other vehicles
 		_object = _class createVehicle _location;
-		if (surfaceIsWater _location && {count (_location nearEntities ["Ship",8]) == 0}) then {
+		if (surfaceIsWater _location && {({_x != _object} count (_location nearEntities ["Ship",8])) == 0}) then {
 			//createVehicle "NONE" is especially inaccurate in water
 			_object setPos _location;
 		};
