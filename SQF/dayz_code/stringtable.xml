@@ -15290,6 +15290,9 @@
 			<German>Du kannst nur ein Fahrzeug zur gleichen Zeit kaufen.</German>
 			<Russian>Вы можете купить только один транспорт за сделку.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_OBSTRUCTED">
+			<English>The trade area is obstructed. The vehicle will spawn at a safe place nearby.</English>
+		</Key>
 		<Key ID="STR_EPOCH_TRADE_DUPLICATE_TOOL">
 			<English>You can not buy more than one of the same tool into your gear.</English>
 			<German>Du kannst nicht mehr als ein Werkzeug von einer Sorte gleichzeitig in deine Ausrüstung kaufen.</German>

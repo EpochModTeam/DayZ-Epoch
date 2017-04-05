@@ -31,6 +31,7 @@
 [FIXED] Group saving issue which could potentially join a player to a random group or not save group properly after death.
 [FIXED] Harvested pumpkin, sunflower, and hemp plants no longer respawn after relog (allowed infinite harvesting).
 [FIXED] Multiple players can no longer harvest the same plant at once. #1928 @F507DMT
+[FIXED] Purchased boats sometimes not spawning on helipad even when it is free of obstructions.
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
