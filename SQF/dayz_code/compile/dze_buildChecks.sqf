@@ -12,6 +12,24 @@ if (!canbuild) exitWith {dayz_actionInProgress = false; format[localize "STR_EPO
 if (isNumber (configFile >> "CfgVehicles" >> _classname >> "requireplot")) then {
 	_requireplot = getNumber(configFile >> "CfgVehicles" >> _classname >> "requireplot");
 };
+
+_checkClass = {
+	private ["_checkOK","_distance"];
+
+	_checkOK = false;
+	_distance = DZE_SafeZoneNoBuildDistance;
+
+	{
+		if (typeName _x == "ARRAY") then {
+			if (_x select 0 == _classname) exitWith {_checkOK = true; _distance = _x select 1;};
+		} else {
+			if (_x == _className) exitWith {_checkOK = true};
+		};
+	} count DZE_SafeZoneNoBuildItems;
+
+	[_checkOK,_distance]
+};
+
 _isPole = (_classname == "Plastic_Pole_EP1_DZ");
 _isLandFireDZ = (_classname == "Land_Fire_DZ");
 
@@ -85,13 +103,15 @@ if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimi
 
 _text = getText (configFile >> 'CfgMagazines' >> _item >> 'displayName');
 
-if (((count DZE_SafeZoneNoBuildItems) > 0) && {_classname in DZE_SafeZoneNoBuildItems}) then {
+_buildCheck = call _checkClass;
+
+if (((count DZE_SafeZoneNoBuildItems) > 0) && (_buildCheck select 0)) then {
 	{
-		if ((player distance (_x select 0)) <  DZE_SafeZoneNoBuildDistance) exitWith { _canBuild = false; };
-	} forEach DZE_safeZonePosArray;
+		if ((player distance (_x select 0)) < _buildCheck select 1) exitWith {_canBuild = false;};
+	} count DZE_safeZonePosArray;
 };
 
-if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,DZE_SafeZoneNoBuildDistance] call dayz_rollingMessages; [false, _isPole]; };
+if !(_canBuild) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,_buildCheck select 1] call dayz_rollingMessages; [false, _isPole];};
 
 if ((count DZE_NoBuildNear) > 0) then {
 	_near = (nearestObjects [_pos,DZE_NoBuildNear,DZE_NoBuildNearDistance]);
