@@ -21,10 +21,11 @@ _checkClass = {
 
 	{
 		if (typeName _x == "ARRAY") then {
-			if (_x select 0 == _classname) exitWith {_checkOK = true; _distance = _x select 1;};
+			if (_x select 0 == _classname) then {_checkOK = true; _distance = _x select 1;};
 		} else {
-			if (_x == _className) exitWith {_checkOK = true};
+			if (_x == _className) then {_checkOK = true};
 		};
+		if (_checkOK) exitWith {};
 	} count DZE_SafeZoneNoBuildItems;
 
 	[_checkOK,_distance]
