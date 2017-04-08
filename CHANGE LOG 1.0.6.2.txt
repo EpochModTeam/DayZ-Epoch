@@ -33,6 +33,7 @@
 [FIXED] Multiple players can no longer harvest the same plant at once. #1928 @F507DMT
 [FIXED] Purchased boats sometimes not spawning on helipad even when it is free of obstructions.
 [FIXED] Unable to fill water at some ponds and wells on Napf and Namalsk due to missing or misplaced waterHoleProxy.
+[FIXED] Potential undefined error for dayz_characterID on login. @oiad
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
