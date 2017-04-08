@@ -26,7 +26,7 @@ DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI
 timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
 DZE_SafeZonePosArray = []; //Prevent players in safeZones from being killed if their vehicle is destroyed. Format is [[[3D POS], RADIUS],[[3D POS], RADIUS]]; Ex. DZE_SafeZonePosArray = [[[6325.6772,7807.7412,0],150],[[4063.4226,11664.19,0],150]];
-DZE_SafeZoneNoBuildItems = []; // Array of object class names not allowed to build near the safe zones listed above. i.e ["VaultStorageLocked","LockboxStorageLocked","Plastic_Pole_EP1_DZ"] etc.
+DZE_SafeZoneNoBuildItems = []; // Array of object class names not allowed to be built near the safe zones listed above. Can be nested arrays for custom distances. i.e ["VaultStorageLocked","LockboxStorageLocked",["Plastic_Pole_EP1_DZ",1300]] etc.
 DZE_SafeZoneNoBuildDistance = 150; // Distance from safe zones listed above to disallow building near.
 DZE_NoBuildNear = []; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
 DZE_NoBuildNearDistance = 150; // Distance from blacklisted objects to disallow building near.
