@@ -106,7 +106,7 @@ _text = getText (configFile >> 'CfgMagazines' >> _item >> 'displayName');
 
 _buildCheck = call _checkClass;
 
-if (((count DZE_SafeZoneNoBuildItems) > 0) && (_buildCheck select 0)) then {
+if (_buildCheck select 0) then {
 	{
 		if ((player distance (_x select 0)) < _buildCheck select 1) exitWith {_canBuild = false;};
 	} count DZE_safeZonePosArray;
