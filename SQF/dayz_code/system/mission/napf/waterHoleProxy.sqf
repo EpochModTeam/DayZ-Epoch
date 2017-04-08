@@ -1,145 +1,151 @@
 [[
-	["WaterHoleProxy",[16839,5163.87,1.10937],0],		// [36254: misc_well.p3d]
-	["WaterHoleProxy",[16616.1,4972.86,2.00711],0],		// [7618: pond_small_01.p3d] 168, 153
-	["WaterHoleProxy",[19076.9,6383.57,0.975849],0],	// [2813: nagara_pond_1.p3d] 190, 140/141
-	["WaterHoleProxy",[17697.1,4680.28,4.79833],0],		// [1281: sk_pond_50x.p3d] 176/177, 158/159
-	["WaterHoleProxy",[17747.1,4680.28,-2.96147],0],	// [21475: sk_pond_50x.p3d]
-	["WaterHoleProxy",[17697.1,4630.28,11.5447],0],		// [1211: sk_pond_50x.p3d]
-	["WaterHoleProxy",[17647.1,4580.28,-2.00972],0],	// [21472: sk_pond_50x.p3d]
-	["WaterHoleProxy",[17697.1,4580.28,-2.61644],0],	// [21473: sk_pond_50x.p3d]
-	["WaterHoleProxy",[17747.1,4630.28,-0.66235],0],	// [1210: sk_pond_50x.p3d]
-	["WaterHoleProxy",[17747.1,4680.28,-2.96147],0],	// [21475: sk_pond_50x.p3d]
-	["WaterHoleProxy",[17697.1,4580.28,-2.61644],0],	// [21473: sk_pond_50x.p3d]
-	["WaterHoleProxy",[17747.1,4630.28,-0.66235],0],	// [1210: sk_pond_50x.p3d]
-//----------------------------------------------
-//RESERVOIR
-	["WaterHoleProxy",[11037.9,4859.65,0],0], // [635056: sk_pond_50x.p3d] 110,105
-	["WaterHoleProxy",[11071.4,4822.5,0],0], // [635041: sk_pond_50x.p3d] 111,105
-	["WaterHoleProxy",[11000.8,4826.2,0],0], // [635055: sk_pond_50x.p3d] 110,105
-	["WaterHoleProxy",[11034.2,4789.04,0],0], // [635042: sk_pond_50x.p3d] 110,106
-	["WaterHoleProxy",[11004.5,4896.81,0],0], // [635057: sk_pond_50x.p3d] 110,105
-	["WaterHoleProxy",[10967.3,4863.35,0],0], // [635058: sk_pond_50x.p3d] 110,105
-	["WaterHoleProxy",[11104.9,4785.34,0],0], // [635040: sk_pond_50x.p3d] 111,106
-	["WaterHoleProxy",[11067.7,4751.88,0],0], // [635039: sk_pond_50x.p3d] 111,106
-	["WaterHoleProxy",[10933.9,4900.51,0],0], // [635073: sk_pond_50x.p3d] 109,105
-	["WaterHoleProxy",[11138.3,4748.18,0],0], // [635028: sk_pond_50x.p3d] 111,106
-	["WaterHoleProxy",[11101.2,4714.73,0],0], // [635029: sk_pond_50x.p3d] 111,106
-	["WaterHoleProxy",[10900.4,4937.67,0],0], // [635074: sk_pond_50x.p3d] 109,104
-	["WaterHoleProxy",[11171.8,4711.03,0],0], // [635027: sk_pond_50x.p3d] 112,106
-	["WaterHoleProxy",[11134.6,4677.57,0],0], // [635026: sk_pond_50x.p3d] 111,107
-	["WaterHoleProxy",[11097.5,4644.11,0],0], // [635025: sk_pond_50x.p3d] 111,107
-	["WaterHoleProxy",[10904,4991.25,0],0], // [635082: sk_pond_50x.p3d] 109,104
-	["WaterHoleProxy",[10885,4974.19,0],0], // [635084: sk_pond_50x.p3d] 109,104
-	["WaterHoleProxy",[10866.4,4957.46,0],0], // [635086: sk_pond_50x.p3d] 109,104
-	["WaterHoleProxy",[10847.9,4940.74,0],0], // [635089: sk_pond_50x.p3d] 108,104
-	["WaterHoleProxy",[11060.3,4610.65,0],0], // [635024: sk_pond_50x.p3d] 111,107
-	["WaterHoleProxy",[10989.7,4614.35,0],0], // [635032: sk_pond_50x.p3d] 110,107
-	["WaterHoleProxy",[10829.3,4924.01,0],0], // [635090: sk_pond_50x.p3d] 108,104
-	["WaterHoleProxy",[10858.1,4975.49,0],0], // [635087: sk_pond_50x.p3d] 109,104
-	["WaterHoleProxy",[10886.9,5010.2,0],0], // [635083: sk_pond_50x.p3d] 109,103
-	["WaterHoleProxy",[11205.2,4673.87,0],0], // [635011: sk_pond_50x.p3d] 112,107
-	["WaterHoleProxy",[10868,4993.14,0],0], // [635088: sk_pond_50x.p3d] 109,104
-	["WaterHoleProxy",[11168.1,4640.41,0],0], // [635010: sk_pond_50x.p3d] 112,107
-	["WaterHoleProxy",[10885.6,4655.21,0],0], // [635046: sk_pond_50x.p3d] 109,107
-	["WaterHoleProxy",[10810.7,4907.28,0],0], // [635092: sk_pond_50x.p3d] 108,105
-	["WaterHoleProxy",[11242.4,4707.33,0],0], // [635012: sk_pond_50x.p3d] 112,107
-	["WaterHoleProxy",[11130.9,4606.96,0],0], // [635009: sk_pond_50x.p3d] 111,108
-	["WaterHoleProxy",[10919.1,4618.05,0],0], // [635035: sk_pond_50x.p3d] 109,107
-	["WaterHoleProxy",[10792.1,4890.55,0],0], // [635093: sk_pond_50x.p3d] 108,105
-	["WaterHoleProxy",[11023.1,4577.2,0],0], // [635013: sk_pond_50x.p3d] 110,108
-	["WaterHoleProxy",[10773.6,4873.82,0],0], // [635091: sk_pond_50x.p3d] 108,105
-	["WaterHoleProxy",[10952.5,4580.9,0],0], // [635033: sk_pond_50x.p3d] 110,108
-	["WaterHoleProxy",[11238.7,4636.71,0],0], // [635006: sk_pond_50x.p3d] 112,107
-	["WaterHoleProxy",[11201.5,4603.26,0],0], // [635005: sk_pond_50x.p3d] 112,108
-	["WaterHoleProxy",[10755,4857.09,0],0], // [635094: sk_pond_50x.p3d] 108,105
-	["WaterHoleProxy",[10815,4658.91,0],0], // [635050: sk_pond_50x.p3d] 108,107
-	["WaterHoleProxy",[10848.5,4621.75,0],0], // [635047: sk_pond_50x.p3d] 108,107
-	["WaterHoleProxy",[11275.8,4670.17,0],0], // [635007: sk_pond_50x.p3d] 113,107
-	["WaterHoleProxy",[10881.9,4584.6,0],0], // [635034: sk_pond_50x.p3d] 109,108
-	["WaterHoleProxy",[10736.4,4840.37,0],0], // [635095: sk_pond_50x.p3d] 107,105
-	["WaterHoleProxy",[11313,4703.63,0],0], // [635008: sk_pond_50x.p3d] 113,107
-	["WaterHoleProxy",[10717.8,4823.64,0],0], // [635096: sk_pond_50x.p3d] 107,105
-	["WaterHoleProxy",[11272.1,4599.56,0],0], // [635003: sk_pond_50x.p3d] 113,108
-	["WaterHoleProxy",[11235,4566.1,0],0], // [635004: sk_pond_50x.p3d] 112,108
-	["WaterHoleProxy",[10777.8,4625.45,0],0], // [635049: sk_pond_50x.p3d] 108,107
-	["WaterHoleProxy",[10811.3,4588.29,0],0], // [635048: sk_pond_50x.p3d] 108,108
-	["WaterHoleProxy",[11309.3,4633.01,0],0], // [635002: sk_pond_50x.p3d] 113,107
-	["WaterHoleProxy",[10699.3,4806.91,0],0], // [635097: sk_pond_50x.p3d] 107,106
-	["WaterHoleProxy",[10744.4,4662.61,0],0], // [635065: sk_pond_50x.p3d] 107,107
-	["WaterHoleProxy",[11346.4,4666.47,0],0], // [635001: sk_pond_50x.p3d] 113,107
-	["WaterHoleProxy",[10710.9,4699.77,0],0], // [635067: sk_pond_50x.p3d] 107,107
-	["WaterHoleProxy",[10680.7,4790.18,0],0], // [635123: sk_pond_50x.p3d] 107,106
-	["WaterHoleProxy",[11383.6,4699.93,0],0], // [635000: sk_pond_50x.p3d] 114,107
-	["WaterHoleProxy",[11305.6,4562.4,0],0], // [634996: sk_pond_50x.p3d] 113,108
-	["WaterHoleProxy",[10662.1,4773.45,0],0], // [635125: sk_pond_50x.p3d] 107,106
-	["WaterHoleProxy",[11342.8,4595.86,0],0], // [634997: sk_pond_50x.p3d] 113,108
-	["WaterHoleProxy",[11379.9,4629.32,0],0], // [634998: sk_pond_50x.p3d] 114,107
-	["WaterHoleProxy",[10673.8,4666.31,0],0], // [635066: sk_pond_50x.p3d] 107,107
-	["WaterHoleProxy",[10643.5,4756.72,0],0], // [635133: sk_pond_50x.p3d] 106,106
-	["WaterHoleProxy",[11417.1,4662.77,0],0], // [634999: sk_pond_50x.p3d] 114,107
-	["WaterHoleProxy",[10640.3,4703.46,0],0], // [635081: sk_pond_50x.p3d] 106,107
-	["WaterHoleProxy",[10624.9,4740,0],0], // [887624: sk_pond_50x.p3d] 106,106
-	["WaterHoleProxy",[11339.1,4525.24,0],0], // [634995: sk_pond_50x.p3d] 113,108
-	["WaterHoleProxy",[11376.2,4558.7,0],0], // [634994: sk_pond_50x.p3d] 114,108
-	["WaterHoleProxy",[11413.4,4592.16,0],0], // [634992: sk_pond_50x.p3d] 114,108
-	["WaterHoleProxy",[10606.3,4723.27,0],0], // [887625: sk_pond_50x.p3d] 106,106
-	["WaterHoleProxy",[11488.5,4766.42,0],0], // [635110: sk_pond_50x.p3d] 115,106
-	["WaterHoleProxy",[10587.4,4706.2,0],0], // [635116: sk_pond_50x.p3d] 106,107
-	["WaterHoleProxy",[11372.5,4488.09,0],0], // [634891: sk_pond_50x.p3d] 114,109
-	["WaterHoleProxy",[11335.4,4454.63,0],0], // [634890: sk_pond_50x.p3d] 113,109
-	["WaterHoleProxy",[11508.5,4720.61,0],0], // [635108: sk_pond_50x.p3d] 115,106
-	["WaterHoleProxy",[11409.7,4521.54,0],0], // [634989: sk_pond_50x.p3d] 114,108
-	["WaterHoleProxy",[11446.8,4555,0],0], // [634990: sk_pond_50x.p3d] 114,108
-// RESERVOIR
-	["WaterHoleProxy",[11472.9,4376.62,0],0], // [634930: sk_pond_50x.p3d] 115,110
-	["WaterHoleProxy",[11476.6,4447.23,0],0], // [634987: sk_pond_50x.p3d] 115,109
-	["WaterHoleProxy",[11439.4,4413.77,0],0], // [634903: sk_pond_50x.p3d] 114,109
-	["WaterHoleProxy",[11435.7,4343.16,0],0], // [634881: sk_pond_50x.p3d] 114,110
-	["WaterHoleProxy",[11402.3,4380.32,0],0], // [634879: sk_pond_50x.p3d] 114,110
-	["WaterHoleProxy",[11406,4450.93,0],0], // [634900: sk_pond_50x.p3d] 114,109
-	["WaterHoleProxy",[11480.3,4517.85,0],0], // [634991: sk_pond_50x.p3d] 115,108
-	["WaterHoleProxy",[11368.8,4417.47,0],0], // [634859: sk_pond_50x.p3d] 114,109
-	["WaterHoleProxy",[11365.1,4346.86,0],0], // [619407: sk_pond_50x.p3d] 114,110
-	["WaterHoleProxy",[11331.6,4384.01,0],0], // [634837: sk_pond_50x.p3d] 113,110
-	["WaterHoleProxy",[11335.4,4454.63,0],0], // [634890: sk_pond_50x.p3d] 113,109
-//----------------------------------------------
-	["WaterHoleProxy",[14697.3,4769.11,3.87218],0], 	// [844954: sk_pond_50x.p3d] 146,157
-	["WaterHoleProxy",[15317.8,5955.62,-2.802],0], 		// [821993: sk_pond_50x.p3d] 155,143
-	["WaterHoleProxy",[18575.9,9994.99,-11.8012],0], 	// [796458: sk_pond_50x.p3d] 185,104
-	["WaterHoleProxy",[18554.8,10205,-2.88353],0], 		// [802612: sk_pond_50x.p3d] 185,102
-	["WaterHoleProxy",[18404.1,10360.3,-1.15134],0],	// [561293: sk_pond_50x.p3d] 184,101
-	["WaterHoleProxy",[16621.8,11761.4,2.92961],0], 	// [456006: pond_small_04.p3d]166,87
-	["WaterHoleProxy",[14723.7,7707.29,0.812378],0], 	// [784281: sk_pond_50x.p3d] 147, 27
-	["WaterHoleProxy",[13873.6,7669.02,0],0],			// [780578: sk_pond_50x.p3d] 138, 128
-	["WaterHoleProxy",[14196.1,12162.2,1.97623],0],		// [52048: sk_pond_50x.p3d] 141, 82/83
-	["WaterHoleProxy",[14176.6,12116.1,2.88378],0],		// [52094: sk_pond_50x.p3d]
-	["WaterHoleProxy",[14215.7,12208.2,2.71867],0],		// [52036: sk_pond_50x.p3d]
-	["WaterHoleProxy",[14157.1,12070.1,0.316508],0],	// [52112: sk_pond_50x.p3d]
-	["WaterHoleProxy",[14150.1,12181.7,4.22544],0],		// [52096: sk_pond_50x.p3d]
-	["WaterHoleProxy",[14130.6,12135.6,1.4165],0],		// [52095: sk_pond_50x.p3d]
-	["WaterHoleProxy",[14169.6,12227.7,4.90834],0],		// [52097: sk_pond_50x.p3d]
-	["WaterHoleProxy",[14111.1,12089.6,-6.09547],0],	// [52126: sk_pond_50x.p3d]
-	["WaterHoleProxy",[14136.7,11987.1,2.09159],0],		// [424987: pond_small_08.p3d] 141, 84
-	["WaterHoleProxy",[18369,17160.6,1.47549],0],		// [554594: misc_wellpump.p3d] 183,33
-	["WaterHoleProxy",[6307.72,4017.32,1.01775],0],		// [710994: rasman_pond.p3d] 63, 164
-	["WaterHoleProxy",[5401.35,4219.47,2.13702],0],		// [678642: kakaru_pond.p3d] 53/54,162
-	["WaterHoleProxy",[5857.86,3956.34,1.87843],0],		// [695477: nagara_pond_1.p3d] 58, 165
-	["WaterHoleProxy",[3507.66,4872.45,1.80212],0],		// [674052: kakaru_pond.p3d] 35, 156
-	["WaterHoleProxy",[3948.11,4871.19,1.87843],0],		// [662930: nagara_pond_1.p3d] 39, 156
-	["WaterHoleProxy",[4204.53,4895.96,1.87843],0],		// [662926: nagara_pond_1.p3d] 42,156
-	["WaterHoleProxy",[6573.84,6753.3,1.65832],0],		// [741015: pond_small_09.p3d] 65, 137
-	["WaterHoleProxy",[6378.31,6751.98,1.64444],0],		// [650405: pond_small_09.p3d] 63, 137
-	["WaterHoleProxy",[6288.85,6725.98,1.63806],0],		// [614041: pond_small_09.p3d] 62, 137
-	["WaterHoleProxy",[4458.62,9331.67,2.03162],0],		// [619754: nagara_pond_1.p3d] 44, 111
-	["WaterHoleProxy",[12474,10041.6,1.10836],0],		// [439142: misc_well.p3d] 124, 104
-	["WaterHoleProxy",[13518.6,12905.6,1.40116],0],		// [398388: pond_small_09.p3d] 135, 75
-	["WaterHoleProxy",[13120.3,12693.8,3.13171],0],		// [398399: pond_small_07.p3d] 131, 77
-	["WaterHoleProxy",[14327.8,13880.5,-0.156022],0],	// [846656: sk_pond_50x.p3d] 143, 68
-	["WaterHoleProxy",[7577.08,14133.2,1.10934],0],		// [172830: misc_well.p3d] 54, 54
-	["WaterHoleProxy",[9804.14,13986.4,1.12068],0],		// [248698: pond_small_02.p3d] 54, 54
-	["WaterHoleProxy",[12848.1,14712.4,1.24404],0],		// [293675: pond_small_10.p3d] 128, 57
-	["WaterHoleProxy",[12914.6,14515.2,2.84679],0],		// [293661: pond_big_02.p3d] 128/129,59
-	["WaterHoleProxy",[8844.21,14646,1.84563],0],		// [222571: pond_small_07.p3d] 88, 58
-	["WaterHoleProxy",[9611.45,16079.3,0.925323],0]	// [198164: pond_small_02.p3d] 96, 44
+	["WaterHoleProxy",[16839,5163.87,0],0], // [36254: misc_well.p3d] 168153
+	["WaterHoleProxy",[16616.1,4972.86,2.00712],0], // [7618: pond_small_01.p3d] 166155
+	["WaterHoleProxy",[19076.9,6383.57,0.975849],0], // [2813: nagara_pond_1.p3d] 190140
+	["WaterHoleProxy",[17697.1,4680.28,4.79833],0], // [1281: sk_pond_50x.p3d] 176157
+	["WaterHoleProxy",[17747.1,4680.28,-2.96148],0], // [21475: sk_pond_50x.p3d] 177157
+	["WaterHoleProxy",[17697.1,4630.28,11.5447],0], // [1211: sk_pond_50x.p3d] 176158
+	["WaterHoleProxy",[17647.1,4580.28,-2.00972],0], // [21472: sk_pond_50x.p3d] 176158
+	["WaterHoleProxy",[17697.1,4580.28,-2.61644],0], // [21473: sk_pond_50x.p3d] 176158
+	["WaterHoleProxy",[17747.1,4630.28,-0.662346],0], // [1210: sk_pond_50x.p3d] 177158
+	["WaterHoleProxy",[11037.9,4859.65,-6.52841],0], // [635056: sk_pond_50x.p3d] 110156
+	["WaterHoleProxy",[11071.4,4822.5,-7.3381],0], // [635041: sk_pond_50x.p3d] 110156
+	["WaterHoleProxy",[11000.8,4826.2,8.25858],0], // [635055: sk_pond_50x.p3d] 110156
+	["WaterHoleProxy",[11034.2,4789.04,11.3653],0], // [635042: sk_pond_50x.p3d] 110156
+	["WaterHoleProxy",[11004.5,4896.81,-8.20416],0], // [635057: sk_pond_50x.p3d] 110155
+	["WaterHoleProxy",[10967.3,4863.35,7.0914],0], // [635058: sk_pond_50x.p3d] 109156
+	["WaterHoleProxy",[11104.9,4785.34,-0.454941],0], // [635040: sk_pond_50x.p3d] 111156
+	["WaterHoleProxy",[11067.7,4751.88,19.7227],0], // [635039: sk_pond_50x.p3d] 110157
+	["WaterHoleProxy",[10933.9,4900.51,4.56717],0], // [635073: sk_pond_50x.p3d] 109155
+	["WaterHoleProxy",[11138.3,4748.18,4.3936],0], // [635028: sk_pond_50x.p3d] 111157
+	["WaterHoleProxy",[11101.2,4714.73,24.1172],0], // [635029: sk_pond_50x.p3d] 111157
+	["WaterHoleProxy",[10900.4,4937.67,4.41199],0], // [635074: sk_pond_50x.p3d] 109155
+	["WaterHoleProxy",[11171.8,4711.03,-4.4812],0], // [635027: sk_pond_50x.p3d] 111157
+	["WaterHoleProxy",[11134.6,4677.57,21.2833],0], // [635026: sk_pond_50x.p3d] 111158
+	["WaterHoleProxy",[11097.5,4644.11,15.3609],0], // [635025: sk_pond_50x.p3d] 110158
+	["WaterHoleProxy",[10904,4991.25,-4.0303],0], // [635082: sk_pond_50x.p3d] 109154
+	["WaterHoleProxy",[10885,4974.19,4.32936],0], // [635084: sk_pond_50x.p3d] 108155
+	["WaterHoleProxy",[10866.4,4957.46,10.1635],0], // [635086: sk_pond_50x.p3d] 108155
+	["WaterHoleProxy",[10847.9,4940.74,14.453],0], // [635089: sk_pond_50x.p3d] 108155
+	["WaterHoleProxy",[11060.3,4610.65,-0.599152],0], // [635024: sk_pond_50x.p3d] 110158
+	["WaterHoleProxy",[10989.7,4614.35,4.71136],0], // [635032: sk_pond_50x.p3d] 109158
+	["WaterHoleProxy",[10829.3,4924.01,15.9437],0], // [635090: sk_pond_50x.p3d] 108155
+	["WaterHoleProxy",[10858.1,4975.49,11.2934],0], // [635087: sk_pond_50x.p3d] 108155
+	["WaterHoleProxy",[10886.9,5010.2,-0.171722],0], // [635083: sk_pond_50x.p3d] 108154
+	["WaterHoleProxy",[11205.2,4673.87,11.4274],0], // [635011: sk_pond_50x.p3d] 112158
+	["WaterHoleProxy",[10868,4993.14,7.14198],0], // [635088: sk_pond_50x.p3d] 108154
+	["WaterHoleProxy",[11168.1,4640.41,16.6479],0], // [635010: sk_pond_50x.p3d] 111158
+	["WaterHoleProxy",[10885.6,4655.21,17.0698],0], // [635046: sk_pond_50x.p3d] 108158
+	["WaterHoleProxy",[10810.7,4907.28,17.8159],0], // [635092: sk_pond_50x.p3d] 108155
+	["WaterHoleProxy",[11242.4,4707.33,-11.2663],0], // [635012: sk_pond_50x.p3d] 112157
+	["WaterHoleProxy",[11130.9,4606.96,-2.43341],0], // [635009: sk_pond_50x.p3d] 111158
+	["WaterHoleProxy",[10919.1,4618.05,2.73297],0], // [635035: sk_pond_50x.p3d] 109158
+	["WaterHoleProxy",[10792.1,4890.55,20.5998],0], // [635093: sk_pond_50x.p3d] 107155
+	["WaterHoleProxy",[11023.1,4577.2,-25.9564],0], // [635013: sk_pond_50x.p3d] 110159
+	["WaterHoleProxy",[10773.6,4873.82,26.8091],0], // [635091: sk_pond_50x.p3d] 107156
+	["WaterHoleProxy",[10952.5,4580.9,-19.8656],0], // [635033: sk_pond_50x.p3d] 109158
+	["WaterHoleProxy",[11238.7,4636.71,19.2278],0], // [635006: sk_pond_50x.p3d] 112158
+	["WaterHoleProxy",[11201.5,4603.26,9.55371],0], // [635005: sk_pond_50x.p3d] 112158
+	["WaterHoleProxy",[10755,4857.09,31.6352],0], // [635094: sk_pond_50x.p3d] 107156
+	["WaterHoleProxy",[10815,4658.91,14.6644],0], // [635050: sk_pond_50x.p3d] 108158
+	["WaterHoleProxy",[10848.5,4621.75,2.15944],0], // [635047: sk_pond_50x.p3d] 108158
+	["WaterHoleProxy",[11275.8,4670.17,10.142],0], // [635007: sk_pond_50x.p3d] 112158
+	["WaterHoleProxy",[10881.9,4584.6,-18.4049],0], // [635034: sk_pond_50x.p3d] 108158
+	["WaterHoleProxy",[10736.4,4840.37,35.508],0], // [635095: sk_pond_50x.p3d] 107156
+	["WaterHoleProxy",[11313,4703.63,-4.06461],0], // [635008: sk_pond_50x.p3d] 113157
+	["WaterHoleProxy",[10717.8,4823.64,39.1563],0], // [635096: sk_pond_50x.p3d] 107156
+	["WaterHoleProxy",[11272.1,4599.56,17.3799],0], // [635003: sk_pond_50x.p3d] 112158
+	["WaterHoleProxy",[11235,4566.1,-11.1143],0], // [635004: sk_pond_50x.p3d] 112159
+	["WaterHoleProxy",[10777.8,4625.45,-9.78914],0], // [635049: sk_pond_50x.p3d] 107158
+	["WaterHoleProxy",[10811.3,4588.29,-16.4482],0], // [635048: sk_pond_50x.p3d] 108158
+	["WaterHoleProxy",[11309.3,4633.01,19.2797],0], // [635002: sk_pond_50x.p3d] 113158
+	["WaterHoleProxy",[10699.3,4806.91,40.5467],0], // [635097: sk_pond_50x.p3d] 106156
+	["WaterHoleProxy",[10744.4,4662.61,5.76035],0], // [635065: sk_pond_50x.p3d] 107158
+	["WaterHoleProxy",[11346.4,4666.47,11.6621],0], // [635001: sk_pond_50x.p3d] 113158
+	["WaterHoleProxy",[10710.9,4699.77,10.5278],0], // [635067: sk_pond_50x.p3d] 107157
+	["WaterHoleProxy",[10680.7,4790.18,37.9697],0], // [635123: sk_pond_50x.p3d] 106156
+	["WaterHoleProxy",[11383.6,4699.93,2.11406],0], // [635000: sk_pond_50x.p3d] 113157
+	["WaterHoleProxy",[11305.6,4562.4,4.33154],0], // [634996: sk_pond_50x.p3d] 113159
+	["WaterHoleProxy",[10662.1,4773.45,32.7776],0], // [635125: sk_pond_50x.p3d] 106157
+	["WaterHoleProxy",[11342.8,4595.86,19.7369],0], // [634997: sk_pond_50x.p3d] 113158
+	["WaterHoleProxy",[11379.9,4629.32,11.8494],0], // [634998: sk_pond_50x.p3d] 113158
+	["WaterHoleProxy",[10673.8,4666.31,-7.47173],0], // [635066: sk_pond_50x.p3d] 106158
+	["WaterHoleProxy",[10643.5,4756.72,24.929],0], // [635133: sk_pond_50x.p3d] 106157
+	["WaterHoleProxy",[11417.1,4662.77,-4.37135],0], // [634999: sk_pond_50x.p3d] 114158
+	["WaterHoleProxy",[10640.3,4703.46,0.893494],0], // [635081: sk_pond_50x.p3d] 106157
+	["WaterHoleProxy",[10624.9,4740,15.8796],0], // [887624: sk_pond_50x.p3d] 106157
+	["WaterHoleProxy",[11339.1,4525.24,8.1026],0], // [634995: sk_pond_50x.p3d] 113159
+	["WaterHoleProxy",[11376.2,4558.7,15.8378],0], // [634994: sk_pond_50x.p3d] 113159
+	["WaterHoleProxy",[11413.4,4592.16,-2.01369],0], // [634992: sk_pond_50x.p3d] 114158
+	["WaterHoleProxy",[11443.1,4484.39,4.64772],0], // [634988: sk_pond_50x.p3d] 114159
+	["WaterHoleProxy",[10606.3,4723.27,5.54526],0], // [887625: sk_pond_50x.p3d] 106157
+	["WaterHoleProxy",[11488.5,4766.42,-6.62918],0], // [635110: sk_pond_50x.p3d] 114157
+	["WaterHoleProxy",[10587.4,4706.2,-5.27829],0], // [635116: sk_pond_50x.p3d] 105157
+	["WaterHoleProxy",[11372.5,4488.09,11.0176],0], // [634891: sk_pond_50x.p3d] 113159
+	["WaterHoleProxy",[11335.4,4454.63,-1.92999],0], // [634890: sk_pond_50x.p3d] 113160
+	["WaterHoleProxy",[11508.5,4720.61,0.973633],0], // [635108: sk_pond_50x.p3d] 115157
+	["WaterHoleProxy",[11409.7,4521.54,8.57024],0], // [634989: sk_pond_50x.p3d] 114159
+	["WaterHoleProxy",[11446.8,4555,-9.04701],0], // [634990: sk_pond_50x.p3d] 114159
+	["WaterHoleProxy",[11472.9,4376.62,-2.42068],0], // [634930: sk_pond_50x.p3d] 114161
+	["WaterHoleProxy",[11476.6,4447.23,-1.43602],0], // [634987: sk_pond_50x.p3d] 114160
+	["WaterHoleProxy",[11439.4,4413.77,2.99809],0], // [634903: sk_pond_50x.p3d] 114160
+	["WaterHoleProxy",[11435.7,4343.16,0.659912],0], // [634881: sk_pond_50x.p3d] 114161
+	["WaterHoleProxy",[11402.3,4380.32,3.2477],0], // [634879: sk_pond_50x.p3d] 114160
+	["WaterHoleProxy",[11406,4450.93,8.49318],0], // [634900: sk_pond_50x.p3d] 114160
+	["WaterHoleProxy",[11480.3,4517.85,-5.37982],0], // [634991: sk_pond_50x.p3d] 114159
+	["WaterHoleProxy",[11368.8,4417.47,4.4339],0], // [634859: sk_pond_50x.p3d] 113160
+	["WaterHoleProxy",[11365.1,4346.86,-1.43745],0], // [619407: sk_pond_50x.p3d] 113161
+	["WaterHoleProxy",[11331.6,4384.01,-9.76031],0], // [634837: sk_pond_50x.p3d] 113160
+	["WaterHoleProxy",[14697.3,4769.11,3.87218],0], // [844954: sk_pond_50x.p3d] 146157
+	["WaterHoleProxy",[15317.8,5955.62,-2.80199],0], // [821993: sk_pond_50x.p3d] 153145
+	["WaterHoleProxy",[18575.9,9994.99,-11.8012],0], // [796458: sk_pond_50x.p3d] 185104
+	["WaterHoleProxy",[18554.8,10205,-2.88353],0], // [802612: sk_pond_50x.p3d] 185102
+	["WaterHoleProxy",[18404.1,10360.3,-1.15134],0], // [561293: sk_pond_50x.p3d] 184101
+	["WaterHoleProxy",[16621.8,11761.4,2.92961],0], // [456006: pond_small_04.p3d] 166087
+	["WaterHoleProxy",[14723.7,7707.29,0.812378],0], // [784281: sk_pond_50x.p3d] 147127
+	["WaterHoleProxy",[13873.6,7669.02,0],0], // [780578: sk_pond_50x.p3d] 138128
+	["WaterHoleProxy",[14196.1,12162.2,1.97623],0], // [52048: sk_pond_50x.p3d] 141083
+	["WaterHoleProxy",[14176.6,12116.1,2.88378],0], // [52094: sk_pond_50x.p3d] 141083
+	["WaterHoleProxy",[14215.7,12208.2,2.71867],0], // [52036: sk_pond_50x.p3d] 142082
+	["WaterHoleProxy",[14157.1,12070.1,0.316508],0], // [52112: sk_pond_50x.p3d] 141084
+	["WaterHoleProxy",[14150.1,12181.7,4.22544],0], // [52096: sk_pond_50x.p3d] 141082
+	["WaterHoleProxy",[14130.6,12135.6,1.4165],0], // [52095: sk_pond_50x.p3d] 141083
+	["WaterHoleProxy",[14169.6,12227.7,4.90834],0], // [52097: sk_pond_50x.p3d] 141082
+	["WaterHoleProxy",[14111.1,12089.6,-6.09547],0], // [52126: sk_pond_50x.p3d] 141083
+	["WaterHoleProxy",[14136.7,11987.1,2.09159],0], // [424987: pond_small_08.p3d] 141084
+	["WaterHoleProxy",[18369,17160.6,6.48499e-005],0], // [554594: misc_wellpump.p3d] 183033
+	["WaterHoleProxy",[6307.72,4017.32,1.01775],0], // [710994: rasman_pond.p3d] 063164
+	["WaterHoleProxy",[5401.35,4219.47,2.13702],0], // [678642: kakaru_pond.p3d] 054162
+	["WaterHoleProxy",[5857.86,3956.34,1.87843],0], // [695477: nagara_pond_1.p3d] 058165
+	["WaterHoleProxy",[3507.66,4872.45,1.80212],0], // [674052: kakaru_pond.p3d] 035156
+	["WaterHoleProxy",[3948.11,4871.19,1.87843],0], // [662930: nagara_pond_1.p3d] 039156
+	["WaterHoleProxy",[4204.53,4895.96,1.87843],0], // [662926: nagara_pond_1.p3d] 042155
+	["WaterHoleProxy",[6573.84,6753.3,1.65832],0], // [741015: pond_small_09.p3d] 065137
+	["WaterHoleProxy",[6378.31,6751.98,1.64444],0], // [650405: pond_small_09.p3d] 063137
+	["WaterHoleProxy",[6288.85,6725.98,1.63806],0], // [614041: pond_small_09.p3d] 062137
+	["WaterHoleProxy",[4458.62,9331.67,2.03163],0], // [619754: nagara_pond_1.p3d] 044111
+	["WaterHoleProxy",[12474,10041.6,-0.00100708],0], // [439142: misc_well.p3d] 124104
+	["WaterHoleProxy",[13518.6,12905.6,1.40116],0], // [398388: pond_small_09.p3d] 135075
+	["WaterHoleProxy",[13120.3,12693.8,3.13171],0], // [398399: pond_small_07.p3d] 131077
+	["WaterHoleProxy",[14327.8,13880.5,-0.156022],0], // [846656: sk_pond_50x.p3d] 143065
+	["WaterHoleProxy",[7577.08,14133.2,-3.43323e-005],0], // [172830: misc_well.p3d] 075063
+	["WaterHoleProxy",[9804.14,13986.4,1.12068],0], // [248698: pond_small_02.p3d] 098064
+	["WaterHoleProxy",[12848.1,14712.4,1.24404],0], // [293675: pond_small_10.p3d] 128057
+	["WaterHoleProxy",[12919.6,14549.6,3.23018],0], // [293661: sk_pond_50x.p3d] 129059
+	["WaterHoleProxy",[12878.1,14492.3,-0.705601],0], // [976518: sk_pond_50x.p3d] 128059
+	["WaterHoleProxy",[12870.2,14541.7,1.01112],0], // [976516: sk_pond_50x.p3d] 128059
+	["WaterHoleProxy",[12927.5,14500.2,1.42102],0], // [976517: sk_pond_50x.p3d] 129059
+	["WaterHoleProxy",[8844.21,14646,1.84563],0], // [222571: pond_small_07.p3d] 088058
+	["WaterHoleProxy",[9611.45,16079.3,0.925324],0], // [198164: pond_small_02.p3d] 096044
+	["WaterHoleProxy",[10987.8,8124.02,2.46219],0], // [516318: nagara_pond_3.p3d] 109123
+	["WaterHoleProxy",[9630.88,9157.42,1.27319],0], // [90194: pond_small_03.p3d] 096113
+	["WaterHoleProxy",[10573.6,10677.1,2.69863],0], // [298502: kakaru_pond.p3d] 105098
+	["WaterHoleProxy",[11502.8,13248.6,1.75877],0], // [366023: nagara_pond_3.p3d] 115072
+	["WaterHoleProxy",[11485.6,13184.4,1.69251],0], // [366002: nagara_pond_2.p3d] 114072
+	["WaterHoleProxy",[12210.6,14561.1,1.24606],0], // [264717: nagara_pond_1.p3d] 122059
+	["WaterHoleProxy",[13795.9,12442.2,2.54335],0], // [409416: pond_small_07.p3d] 137080
+	["WaterHoleProxy",[8860.1,14691.2,1.14171],0], // [222542: pond_small_09.p3d] 088057
+	["WaterHoleProxy",[8830.25,8408.68,1.62749],0], // [340712: pond_small_15.p3d] 088120
+	["WaterHoleProxy",[9926.72,14281.3,1.72974],0] // [222696: pond_big_02.p3d] 099061
 ],true,true,true] call fnc_spawnObjects;
 
