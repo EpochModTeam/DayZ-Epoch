@@ -13,7 +13,7 @@ private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_t
 "_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
-"_allowed","_hasAccess","_uid"];
+"_allowed","_hasAccess","_uid","_myCharID"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -27,6 +27,7 @@ _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
 _uid = getPlayerUID player;
 _nearLight = nearestObject [player,"LitObject"];
 _canPickLight = false;
+_myCharID = player getVariable ["CharacterID","0"];
 _vehicleOwnerID = _vehicle getVariable ["CharacterID","0"];
 _hasHotwireKit = "ItemHotwireKit" in _magazinesPlayer;
 _isPZombie = player isKindOf "PZombie_VB";
@@ -249,7 +250,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		_id = _uid;
 		_ownerID = _cursorTarget getVariable ["ownerPUID","0"];
 	} else {
-		_id = dayz_characterID;
+		_id = _myCharID;
 		_ownerID = _characterID;
 	};
 
@@ -1147,7 +1148,7 @@ if (_dogHandle > 0) then {
 	_dog = _dogHandle getFSMVariable "_dog";
 	if (isNil "_dog") exitWith {};
 	if (isNil "_ownerID") then {_ownerID = "0"};
-	if (_canDo && !_inVehicle && alive _dog && !(_ownerID in [dayz_characterID,_uid])) then {
+	if (_canDo && !_inVehicle && alive _dog && !(_ownerID in [_myCharID,_uid])) then {
 		if (s_player_movedog < 0) then {
 			s_player_movedog = player addAction [localize "str_actions_movedog", "\z\addons\dayz_code\actions\dog\move.sqf", player getVariable ["dogID",0], 1, false, true];
 		};

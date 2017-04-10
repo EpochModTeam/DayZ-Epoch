@@ -453,10 +453,10 @@ if (dayz_townGenerator) then {execVM "\z\addons\dayz_server\system\lit_fireplace
 	_uid = getPlayerUID _player;
 	_treeModel = _tree call fn_getModelName;
 
-	if ((_dis < 30) && (_treeModel in dayz_trees) && (_uid != "")) then {
+	if (_dis < 30 && (_treeModel in dayz_trees or (_treeModel in dayz_plant)) && (_uid != "")) then {
 		_tree setDamage 1;
 		dayz_choppedTrees set [count dayz_choppedTrees,_tree];
-		diag_log format["Server setDamage on tree %1 chopped down by %2(%3)",_treeModel,_name,_uid];
+		diag_log format["Server setDamage on tree or plant %1 chopped down by %2(%3)",_treeModel,_name,_uid];
 	};
 };
 

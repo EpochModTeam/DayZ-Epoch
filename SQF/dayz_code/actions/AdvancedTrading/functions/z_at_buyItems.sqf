@@ -135,7 +135,7 @@ if (_enoughMoney) then {
 		
 		// Note server now uses createVehicle "NONE" so next closest safePos is found automatically if location is blocked
 		if (count _helipad > 0) then {
-			_location = getPosATL (_helipad select 0);
+			_location = [(_helipad select 0)] call FNC_GetPos;
 		} else {
 			_location = [player] call FNC_GetPos;
 		};
@@ -143,7 +143,13 @@ if (_enoughMoney) then {
 		_sign = "Sign_arrow_down_large_EP1" createVehicleLocal [0,0,0];
 		_sign setPos _location;
 		_location = [_sign] call FNC_GetPos;
-		[_part_out,_sign] call fn_waitForObject;
+		
+		if (surfaceIsWater _location && {count (_location nearEntities ["Ship",8]) > 0}) then {
+			deleteVehicle _sign;
+			localize "STR_EPOCH_TRADE_OBSTRUCTED" call dayz_rollingMessages;
+		} else {
+			[_part_out,_sign] call fn_waitForObject;
+		};
 		
 		if (_buyingType in DZE_tradeVehicleKeyless) then {
 			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,"0",_activatingPlayer];

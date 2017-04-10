@@ -1,27 +1,20 @@
 
-private ["_addedTree","_objType","_item","_result","_dis","_sfx","_num","_breaking","_countOut","_findNearestTree","_objName","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_tree","_distance2d"];
+private ["_dis","_sfx","_breaking","_countOut","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_tree","_distance2d"];
 
-_item = _this;
 call gear_ui_init;
 closeDialog 1;
 _countOut = floor(random 3) + 2;
 
-_findNearestTree = [];
+_tree = objNull;
 {
-	_objType = typeOf _x;
-	_addedTree = _objType in dayz_treeTypes;
-	
-	if ((_objType == "" or _addedTree) && {alive _x}) then {
-		_objName = _x call fn_getModelName;
+	if (typeOf _x in dayz_treeTypes && {alive _x} && {(_x call fn_getModelName) in dayz_trees}) exitWith {
 		// Exit since we found a tree
-		//model name has "remote" on client when tree is spawned on server with createVehicle
-		if (_objName in dayz_trees or _addedTree) exitWith { _findNearestTree set [count _findNearestTree,_x]; };
+		_tree = _x;
 	};
 } count nearestObjects [getPosATL player, [], 20];
 
 //if (["forest",dayz_surfaceType] call fnc_inString) then {// Need tree object for PVDZ_objgather_Knockdown
-if (count _findNearestTree > 0) then {
-	_tree = _findNearestTree select 0;
+if (!isNull _tree) then {
 	_distance2d = [player, _tree] call BIS_fnc_distance2D;	
 	if (_distance2d > 5) exitWith {localize "str_player_23" call dayz_rollingMessages;};
     //Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
@@ -112,13 +105,17 @@ if (count _findNearestTree > 0) then {
         format[localize "str_player_24_progress", _counter,_countOut] call dayz_rollingMessages;
     };
 
-   if (_proceed ||(_counter > 0) ) then {            
-		//remove vehicle, Need to ask server to remove.
-		PVDZ_objgather_Knockdown = [_tree,player];
-		publicVariableServer "PVDZ_objgather_Knockdown";         
-        //"Chopping down tree." call dayz_rollingMessages;
-        //localize "str_player_25" call dayz_rollingMessages;
-    };
+	if (_proceed || (_counter > 0)) then {
+		//localize "str_choppingTree" call dayz_rollingMessages;
+		//localize "str_player_25" call dayz_rollingMessages;
+		if (typeOf _tree == "") then {
+			// Ask server to setDamage on tree and sync for JIP
+			PVDZ_objgather_Knockdown = [_tree,player];
+			publicVariableServer "PVDZ_objgather_Knockdown";
+		} else {
+			deleteVehicle _tree;
+		};
+	};
     if !(_proceed) then {            
         localize "str_player_24_Stoped" call dayz_rollingMessages;
 

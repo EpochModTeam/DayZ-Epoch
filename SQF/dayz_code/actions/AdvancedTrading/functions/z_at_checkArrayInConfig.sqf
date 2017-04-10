@@ -8,7 +8,7 @@
 *
 *	Fills up the sell or buy list if the item has a valid config.
 **/
-private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_vehUpgraded","_currencyQty","_swap"];
+private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_baseVehicle","_currencyQty","_swap","_swap2","_myVehType"];
 #include "defines.hpp"
 
 _weaps = _this select 0;
@@ -16,11 +16,12 @@ _mags = _this select 1;
 _extraText = _this select 2;
 _bags = _this select 3;
 _vehTrade = false;
-_vehUpgraded = "";
+_baseVehicle = "";
+_myVehType = typeOf DZE_myVehicle;
 
 if (false call Z_checkCloseVehicle) then {
-	_vehUpgraded = getText (configFile >> 'CfgVehicles' >> typeOf (DZE_myVehicle) >> 'original');
-	_all = _weaps + _mags + _bags + [(typeOf DZE_myVehicle)];
+	_baseVehicle = getText (configFile >> "CfgVehicles" >> _myVehType >> "original");
+	_all = _weaps + _mags + _bags + [_myVehType];
 	_vehTrade = true;
 } else {
 	_all = _weaps + _mags + _bags;
@@ -51,9 +52,13 @@ _totalPrice = 0;
 {
 	_y = _x;
 	_swap = false;
-	if (dayz_classicBloodBagSystem && _y == "ItemBloodbag") then {
+	_swap2 = false;
+	if (_y == "ItemBloodbag" && dayz_classicBloodBagSystem) then {
 		_y = "bloodBagONEG";
 		_swap = true;
+	};
+	if (_y == _myVehType && {_baseVehicle != ""}) then {
+		_swap2 = true;
 	};
 	{
 		private ["_cat","_exists","_pic","_text","_type","_sell","_buy","_buyCurrency","_sellCurrency","_worth"];
@@ -61,7 +66,10 @@ _totalPrice = 0;
 		if (isNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")) then {
 			_cat = format["Category_%1",getNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")];
 		};
-		if (_vehUpgraded != "" && _y == (typeOf DZE_myVehicle)) then { _y = _vehUpgraded; };
+		if (_swap2 && {!isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y)} && {isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _baseVehicle)}) then {
+			//Use base vehicle prices for upgraded _DZE[1-4] variants only if they are not explicitly added in trader config
+			_y = _baseVehicle;
+		};
 		_exists = isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y);
 		if (_exists) exitWith {
 			_pic = "";
@@ -92,7 +100,7 @@ _totalPrice = 0;
 
 			if (isNil '_text') then { _text = _y; };
 			_HasKey = true;
-			if (_vehTrade && {(typeOf DZE_myVehicle) == _y}) then {
+			if (_vehTrade && {_y == _myVehType}) then {
 				if (!(_type in DZE_tradeVehicleKeyless) && DZE_SaleRequiresKey) then {
 					_HasKey = [DZE_myVehicle, _all] call _HasKeyCheck;
 				};

@@ -550,24 +550,6 @@ class Land_Mil_Guardhouse: Military //MOVED FROM RESIDENTIAL
 	};
 };
 
-class UH1Wreck_DZ: Military {
-	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-	zombieChance = 0.3;
-	lootChance = 0.6;
-	minRoaming = 4;
-	maxRoaming = 8;
-	lootPos[] = {};
-};
-
-class UH60Wreck_DZ: Military {
-	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
-	zombieChance = 0.3;
-	lootChance = 0.6;
-	minRoaming = 4;
-	maxRoaming = 8;
-	lootPos[] = {};
-};
-
 class UH60_NAVY_Wreck_DZ: Military {
 	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
 	zombieChance = 0.3;

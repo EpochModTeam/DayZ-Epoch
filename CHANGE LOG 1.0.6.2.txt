@@ -1,5 +1,6 @@
 [NEW] Added a few loot positions for Namalsk and Takistan. @skigoggles
 [NEW] Added DZE_limitPlots so admins can limit plot poles to 1 per UID, disabled by default. @oiad
+[NEW] Pumpkin, sunflower, and hemp plants spawned with createVehicle can be harvested with a knife now. #1928 @F507DMT
 
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
 
@@ -22,9 +23,17 @@
 [FIXED] Random skin selection on new character creation with DZE_defaultSkin = [["Male skin1","Male skin2"],["Female skin1","Female skin2"]];
 [FIXED] Corpse markers are now deleted for bodies that are hidden.
 [FIXED] Unable to sell classic 'ItemBloodbag' at traders. @oiad
+[FIXED] Unable to sell upgraded _DZE[1-4] vehicle variants if their base vehicle class is removed from the trader configs.
 [FIXED] The player building a shed, tent or other unlocked storage was unable to use its gear until relog when DZE_GodModeBase=true; @oiad
 [FIXED] Death message killer inaccurate when player is caused to bleed by one unit and then killed by a different unit shortly after. @oiad
 [FIXED] The DayZ police car can no longer be upgraded to car_sedan_DZE1. #1929 @F507DMT
+[FIXED] Group tags sometimes printing WARNING: Function 'name' - x is dead to RPT.
+[FIXED] Group saving issue which could potentially join a player to a random group or not save group properly after death.
+[FIXED] Harvested pumpkin, sunflower, and hemp plants no longer respawn after relog (allowed infinite harvesting).
+[FIXED] Multiple players can no longer harvest the same plant at once. #1928 @F507DMT
+[FIXED] Purchased boats sometimes not spawning on helipad even when it is free of obstructions.
+[FIXED] Unable to fill water at some ponds and wells on Napf and Namalsk due to missing or misplaced waterHoleProxy.
+[FIXED] Potential undefined error for dayz_characterID on login. @oiad
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
