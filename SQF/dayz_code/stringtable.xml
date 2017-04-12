@@ -11213,6 +11213,11 @@
 			<Russian>Комплект рельсовой системы интеграции разработанной для SA-58</Russian>
 			<German>Ein Rail Integration System Kit designt für das SA-58 Sturmgewehr.</German>
 		</Key>
+		<Key ID="STR_DZ_ATT_RIS_RMVE">
+			<English>Remove RIS</English>
+			<Russian>Снять RIS</Russian>
+			<German>Entferne RIS</German>
+		</Key>
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_REMOVE">

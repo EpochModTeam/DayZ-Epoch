@@ -3,6 +3,7 @@
 [NEW] Pumpkin, sunflower, and hemp plants spawned with createVehicle can be harvested with a knife now. #1928 @F507DMT
 
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
+[UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.

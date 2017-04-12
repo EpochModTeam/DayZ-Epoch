@@ -53,6 +53,15 @@ class SA58_RIS_DZ : SA58_DZ
 		Attachment_FL = "SA58_RIS_FL_DZ";
 		Attachment_MFL = "SA58_RIS_MFL_DZ";
 	};
+	
+	class ItemActions
+	{
+		class RemoveRIS
+		{
+			text = $STR_DZ_ATT_RIS_RMVE;
+			script = "; ['Attachment_SA58RIS',_id,'SA58_DZ'] call player_removeAttachment";
+		};
+	};
 };
 
 class SA58_RIS_FL_DZ : SA58_RIS_DZ
