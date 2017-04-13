@@ -11221,6 +11221,11 @@
 			<Russian>Комплект рельсовой системы интеграции разработанной для SA-58</Russian>
 			<German>Ein Rail Integration System Kit designt für das SA-58 Sturmgewehr.</German>
 		</Key>
+		<Key ID="STR_DZ_ATT_RIS_RMVE">
+			<English>Remove RIS</English>
+			<Russian>Снять RIS</Russian>
+			<German>Entferne RIS</German>
+		</Key>
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_REMOVE">
@@ -11500,9 +11505,9 @@
 			<English>You entered the wrong code, wait %1 seconds.</English>
 			<German>Du hast einen falschen Code eingegeben, warte %1 Sekunden.</German>
 			<Russian>Вы несколько раз ввели неправильный код, подождите %1 сек.</Russian>
-			<Dutch>Je hebt te vaak een foute code ingevoerd. 10 seconden geduld svp.</Dutch>
-			<French>Trop d'erreurs avec le code, patientez 10 secondes</French>
-			<Czech>Mnohokrát jsi zadal špatný kód, musíš počkat 10 vteřin</Czech>
+			<Dutch>Je hebt te vaak een foute code ingevoerd. %1 seconden geduld svp.</Dutch>
+			<French>Trop d'erreurs avec le code, patientez %1 secondes</French>
+			<Czech>Mnohokrát jsi zadal špatný kód, musíš počkat %1 vteřin</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_19_WAIT">
 			<English>You must wait another %1 seconds before you can enter another code.</English>
