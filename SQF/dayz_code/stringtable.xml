@@ -1611,7 +1611,13 @@
 			<Czech>Na tomto objektu nelze provádět údržbu.</Czech>
 			<German>Dieses Objekt muss nicht gewartet werden.</German>
 		</Key>
-
+		<Key ID="str_cursorTargetNotFound">
+			<English>You must be looking at the item to interact with it.</English>
+			<Russian>Вы должны смотреть на предмет, тоже взаимодействующий с ним.</Russian>
+			<French>Vous devez également regarder l'élément avec lui.</French>
+			<Czech>Musíte se dívat na tento produkt příliš komunikovat s ním.</Czech>
+			<German>Sie müssen sich das Produkt anschauen, das auch mit ihm interagiert.</German>
+		</Key>
 		<Key ID="str_CannotUpgrade">
 			<English>Unable to upgrade at this time</English>
 			<Russian>Невозможно улучшить в данный момент</Russian>
