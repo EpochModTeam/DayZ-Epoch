@@ -14,7 +14,7 @@ if (isNil "sm_done") exitWith { diag_log ("Login cancelled, server is not ready.
 
 _inventory = [];
 _backpack = [];
-_survival = [0,0,0];
+_survival = [0,0,0,0];
 _model = "";
 _isInfected = 0;
 _CharacterCoins = 0;

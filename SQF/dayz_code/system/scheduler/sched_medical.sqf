@@ -58,6 +58,8 @@ sched_medical = { // 1 second
 	} else {
 		[] spawn fnc_usec_playerHandleBlood;
 	};
+	
+	dayz_sessionTime = dayz_sessionTime + 1;
 
 	[_unconHdlr]
 };

@@ -1,4 +1,4 @@
-private ["_charID","_newmodel","_old","_updates","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_wpnType","_ismelee","_coins","_bankCoins","_globalCoins"];
+private ["_charID","_newmodel","_old","_updates","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_wpnType","_ismelee","_survivalTime","_coins","_bankCoins","_globalCoins"];
 //_playerUID = _this select 0;
 _charID = _this select 1;
 _model = _this select 2;
@@ -25,6 +25,7 @@ _banditKills = player getVariable ["banditKills",0];
 //_achievements = player getVariable ["Achievements",[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];
 _combattimeout = player getVariable["combattimeout",0];
 _inCombat = player getVariable ["inCombat",false];
+_survivalTime = player getVariable ["SurvivalTime",0];
 _ConfirmedHumanKills = player getVariable ["ConfirmedHumanKills",0];
 _ConfirmedBanditKills = player getVariable ["ConfirmedBanditKills",0];
 _friendlies = player getVariable ["friendlies",[]];
@@ -90,7 +91,7 @@ player setVariable ["worldspace",_worldspace];
 //player setVariable ["Achievements",_achievements];
 player setVariable ["combattimeout",_combattimeout,false];
 player setVariable ["inCombat",_inCombat,true];
-
+player setVariable ["SurvivalTime",_survivalTime,false];
 player setVariable ["ConfirmedHumanKills",_ConfirmedHumanKills,true];
 player setVariable ["ConfirmedBanditKills",_ConfirmedBanditKills,true];
 player setVariable ["friendlies",_friendlies,true];

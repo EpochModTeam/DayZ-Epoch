@@ -846,11 +846,13 @@ class FSM
                          "};" \n
                          "" \n
                          "//Work out survival time" \n
-                         "_totalMins = _survival select 0;" \n
+                         "_totalMins = _survival select 3;" \n
                          "_days = floor (_totalMins / 1440);" \n
                          "_totalMins = (_totalMins - (_days * 1440));" \n
                          "_hours = floor (_totalMins / 60);" \n
                          "_mins =  (_totalMins - (_hours * 60));" \n
+                         "" \n
+                         "player setVariable [""SurvivalTime"",(_survival select 3),false];" \n
                          "" \n
                          "//player variables" \n
                          "dayz_characterID =		_charID;" \n
@@ -860,7 +862,7 @@ class FSM
                          "dayz_lastMeal =			(_lastAte * 60);" \n
                          "dayz_lastDrink =		(_lastDrank * 60);" \n
                          "dayz_zombiesLocal = 	0;			//Used to record how many local zombies being tracked" \n
-                         "dayz_Survived = _days;  //total alive dayz" \n
+                         "dayz_Survived = [_days,_hours,_mins,(_survival select 3)];  //total alive dayz" \n
                          "" \n
                          "//load in medical details" \n
                          "r_player_dead = 		player getVariable[""USEC_isDead"",false];" \n
@@ -1166,7 +1168,7 @@ class FSM
                          "dayz_musicH = [] spawn player_music;" \n
                          "dayz_slowCheck = 	[] spawn player_spawn_2;" \n
                          "Dayz_logonTime = daytime;" \n
-                         "Dayz_logonDate = dayz_Survived;" \n
+                         "Dayz_logonDate = floor ((_survival select 0) / 1440);" \n
                          "_position = getPosATL player;" \n
                          "_radius = 200;" \n
                          "//Current amounts" \n
@@ -1957,7 +1959,7 @@ class FSM
                          "Dayz_logonTown = ""Wilderness"";" \n
                          "if (count _nearestCity > 0) then {Dayz_logonTown = text (_nearestCity select 0)};" \n
                          "" \n
-                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",dayz_Survived]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
+                         "[_world,Dayz_logonTown,format[localize ""str_player_06"",(floor ((_survival select 0) / 1440))]] spawn {uiSleep 5; _this spawn BIS_fnc_infoText;};" \n
                          "" \n
                          "dayz_myPosition = getPosATL player;" \n
                          "Dayz_loginCompleted = true;" \n

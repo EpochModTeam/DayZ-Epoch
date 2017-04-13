@@ -1,6 +1,7 @@
 [NEW] Added a few loot positions for Namalsk and Takistan. @skigoggles
 [NEW] Added DZE_limitPlots so admins can limit plot poles to 1 per UID, disabled by default. @oiad
 [NEW] Pumpkin, sunflower, and hemp plants spawned with createVehicle can be harvested with a knife now. #1928 @F507DMT
+[NEW] The journal and dayz_survived variable now contain actual play time [array] instead of days since the character was created [number].
 
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
 [UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
@@ -41,4 +42,5 @@
 [FIXED] Glitch where group icons scaled very large momentarily while moving off screen.
 [NEW] Added temporary check for mission file overwrite exploit. This can be removed after Bohemia patches it.
 
+[INFO] HiveExt.dll has been updated to return character_data duration in the 101 call for the dayz_survived stat. Source is available at github.com/vbawol/DayZhiveEpoch/pull/13 @icomrade
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.

@@ -665,6 +665,7 @@ if (!isDedicated) then {
 	Dayz_freefall = [ time, 0, 0.1 ];
 	dayz_getoutTime = 0;
 	dayz_hitByTime = 0;
+	dayz_sessionTime = 0; //Approximate time elapsed since login in seconds
 	skipGearSound = false;
 	TimeOutDisplayed = false;
 	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
