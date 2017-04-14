@@ -1,3 +1,5 @@
+setMousePosition [0.5, 0.5];
+
 private ["_exit","_nearestObjects","_rID","_display","_cTarget","_dis","_friendlyTo","_lastSave","_startTime"];
 
 // players inside vehicle can always access its gear

@@ -44,7 +44,7 @@ _valueIDCs = [9002,9004,9006];
 if (vehicle player != player) then {
 	_object = vehicle player;
 } else {
-	_object = cursorTarget;
+	_object = _this;
 };
 
 _type = typeOf _object;
