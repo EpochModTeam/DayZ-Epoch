@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 private ["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_fueling","_array","_cantype",
 "_emptycan","_started","_finished","_animState","_isRefuel","_type"];
@@ -19,7 +19,6 @@ _fueling = player getVariable ["fueling",false];
 if (fuel _vehicle == 1) exitWith {dayz_actionInProgress = false;};
 
 player removeAction s_player_fillfuel + _capacity;
-a_player_jerryfilling = true;
 player setVariable ["fueling", true];
 
 if (!_fueling) then {
@@ -76,7 +75,7 @@ if (!_fueling) then {
 } else {
 	localize "str_refuel_fail" call dayz_rollingMessages;
 };
-a_player_jerryfilling = false;
+
 r_action = false;
 player setVariable ["fueling", false];
 dayz_actionInProgress = false;

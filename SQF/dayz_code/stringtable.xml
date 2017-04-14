@@ -838,7 +838,6 @@
 			<German>Hacken</German>
 			<Czech>Rozsekat</Czech>
 			<French>Hacker</French>
-			<Spanish></Spanish>
 		</Key>
 		<Key ID="str_action_studybody">
 			<English>Study Body</English>
@@ -11552,14 +11551,6 @@
 			<French>La cuisson est déjà en cours.</French>
 			<Czech>Vaření již probíhá.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_24">
-			<English>Refuel is already in progress.</English>
-			<German>Betanken bereits im Gange.</German>
-			<Russian>Уже заправляется.</Russian>
-			<Dutch>Je bent al aan het tanken.</Dutch>
-			<French>Le ravitaillement en carburant est déjà en cours.</French>
-			<Czech>Doplňování paliva již probíhá.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_25">
 			<English>Preparing to fuel and start generator, move to cancel.</English>
 			<German>Betanken und Starten des Generators, bewege dich um den Vorgang abzubrechen.</German>
@@ -11573,7 +11564,7 @@
 			<German>Abgebrochen.</German>
 			<Russian>Отмена.</Russian>
 			<Dutch>Ge-annuleerd.</Dutch>
-			<French>Annulé</French></French>
+			<French>Annulé</French>
 			<Czech>Zrušeno.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_27">
@@ -11628,14 +11619,6 @@
 			<English>You managed to unlock %1 with your hotwire kit.</English>
 			<German>Du hast es geschafft %1 aufzubrechen.</German>			
 			<Russian>Вам удалось открыть %1 с помощью набора для угона.</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_34">
-			<English>You are already filling a fuel container.</English>
-			<German>Befüllen des Kraftstoffbehälters bereits im Gange.</German>
-			<Russian>Канистра уже наполняется.</Russian>
-			<Dutch>Je bent al een jerrycan aan het vullen.</Dutch>
-			<French>Le remplissage du jerrycan est déjà en cours.</French>
-			<Czech>Plnění kanystru již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_36">
 			<English>No recent Deaths.</English>

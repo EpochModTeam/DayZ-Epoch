@@ -1,5 +1,5 @@
 private ["_isFuelTruck","_fuelTruckCapacity","_started","_finished","_animState","_isMedic","_newFuel","_abort","_newFuelSrc","_canSize","_vehicle","_configVeh","_capacity","_nameText","_fuelTruck","_findNearestVehicle"];
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 _fuelTruck = _this select 3;

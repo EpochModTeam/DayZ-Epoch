@@ -1,6 +1,6 @@
 private ["_vehicle","_started","_finished","_animState","_isMedic","_soundSource","_fuelCan","_emptyCan"];
 
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_24" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 player removeAction s_player_fillgen;
