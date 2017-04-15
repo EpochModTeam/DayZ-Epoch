@@ -1,6 +1,6 @@
 private ["_bottletext","_tin1text","_tin2text","_tintext","_hastinitem","_qty","_dis","_sfx","_WB2Add"];
 
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_22" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 _bottletext = getText (configFile >> "CfgMagazines" >> "ItemWaterBottle" >> "displayName");

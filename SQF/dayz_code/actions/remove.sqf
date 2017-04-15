@@ -1,4 +1,4 @@
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_88" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 /*
 delete object from db with extra waiting by [VB]AWOL

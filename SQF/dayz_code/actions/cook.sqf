@@ -1,5 +1,5 @@
 private ["_rawmeat","_cookedmeat","_meat","_meatcooked","_text","_qty","_dis","_sfx"];
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_23" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 //diag_log ("Cook Enabled");
 player removeAction s_player_cook;

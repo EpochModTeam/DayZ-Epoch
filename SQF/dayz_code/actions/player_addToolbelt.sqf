@@ -5,7 +5,7 @@
 	3. Removing tool from toolbelt and converting it to primary
 */
 
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_39" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 private ["_item","_config","_onLadder","_text","_create","_config2","_primaryFull","_removed","_toolsFull"];

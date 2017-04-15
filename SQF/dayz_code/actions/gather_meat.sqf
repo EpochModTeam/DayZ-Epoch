@@ -2,11 +2,7 @@ private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed"
 
 _isZombie = _this isKindOf "zZombie_base";
 if (dayz_actionInProgress) exitWith {
-	if (_isZombie) then {
-		localize "str_epoch_player_31" call dayz_rollingMessages;
-	} else {
-		localize "str_epoch_player_29" call dayz_rollingMessages;
-	};
+	localize "str_player_actionslimit" call dayz_rollingMessages;
 };
 dayz_actionInProgress = true;
 

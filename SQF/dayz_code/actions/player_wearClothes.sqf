@@ -6,7 +6,7 @@ _playerNear = {isPlayer _x} count (([player] call FNC_GetPos) nearEntities ["CAM
 if (_playerNear) exitWith {localize "STR_EPOCH_PLAYER_84" call dayz_rollingMessages;};
 
 if (_this in DZE_RestrictSkins) exitWith { format[localize "str_epoch_player_315",_this] call dayz_rollingMessages; };
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_83" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 /*
 _item call player_wearClothes;

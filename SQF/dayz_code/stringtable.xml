@@ -11535,22 +11535,6 @@
 			<French>Le déverrouillage est déjà en cours.</French>
 			<Czech>Odemykání již probíhá.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_22">
-			<English>Boil is already in progress.</English>
-			<German>Aufkochen bereits im Gange.</German>
-			<Russian>Уже кипятится.</Russian>
-			<Dutch>Je bent al aan ket koken.</Dutch>
-			<French>L'ébullition est déjà en cours.</French>
-			<Czech>Převařování již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_23">
-			<English>Cooking is already in progress.</English>
-			<German>Kochen bereits im Gange.</German>
-			<Russian>Уже готовится.</Russian>
-			<Dutch>Je bent al aan het koken.</Dutch>
-			<French>La cuisson est déjà en cours.</French>
-			<Czech>Vaření již probíhá.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_25">
 			<English>Preparing to fuel and start generator, move to cancel.</English>
 			<German>Betanken und Starten des Generators, bewege dich um den Vorgang abzubrechen.</German>
@@ -11582,22 +11566,6 @@
 			<Dutch>De generator is gestart.</Dutch>
 			<French>Le générateur a été démarré.</French>
 			<Czech>Generátor byl nastartován.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_29">
-			<English>Gutting animal is already in progress.</English>
-			<German>Ausweiden des Tieres bereits im Gange.</German>
-			<Russian>Животное уже разделывается.</Russian>
-			<Dutch>Je bent dit dier al aan het opensnijden.</Dutch>
-			<French>Le dépeçage de l'animal est déjà en cours.</French>
-			<Czech>Kuchání zvířete již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_31">
-			<English>Gutting zombie is already in progress.</English>
-			<German>Ausweiden des Zombies bereits im Gange.</German>
-			<Russian>Зомби уже разделывается.</Russian>
-			<Dutch>Je bent deze zombie al aan het opensnijden.</Dutch>
-			<French>Le dépeçage du zombie est déjà en cours.</French>
-			<Czech>Kuchání zombie již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_32">
 			<English>Hotwire vehicle is already in progress.</English>
@@ -11635,14 +11603,6 @@
 			<Dutch>Voertuig wordt al reeds op slot gezet.</Dutch>
 			<French>Le verrouillage du véhicule est déjà en cours.</French>
 			<Czech>Zamykání vozidla již probíhá.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_39">
-			<English>Add to toolbelt is already in progress.</English>
-			<German>Hinzufügen zum Werkzeuggürtel bereits im Gange.</German>
-			<Russian>Уже добавляется на пояс.</Russian>
-			<Dutch>Reeds bezig met toevoegen aan gereedschapsriem</Dutch>
-			<French>L'ajout à la ceinture est déjà en cours.</French>
-			<Czech>Přidávání do opasku na nářadí již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_40">
 			<English>Building already in progress.</English>
@@ -11795,14 +11755,6 @@
 			<French>Construction démarré</French>
 			<Czech>Tvorba začala</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_63">
-			<English>Crafting already in progress.</English>
-			<German>Herstellung bereits im Gange.</German>
-			<Russian>Уже создаётся.</Russian>
-			<Dutch>Je bent al bezig met creëren</Dutch>
-			<French>La construction est déjà en cours.</French>
-			<Czech>Vytváření již probíhá.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_64">
 			<English>Canceled crafting.</English>
 			<German>Herstellung abgebrochen.</German>
@@ -11891,14 +11843,6 @@
 			<French>Aucune amélioration disponible</French>
 			<Czech>Nejsou dostupné žádné upgrady</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_83">
-			<English>Changing clothes already in progress.</English>
-			<German>Wechseln der Kleidung bereits im Gange.</German>
-			<Russian>Вы уже переодеваетесь.</Russian>
-			<Dutch>Je bent je al aan het omkleden.</Dutch>
-			<French>Le changement de vêtements est déjà en cours.</French>
-			<Czech>Změna oblečení již probíhá.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_84">
 			<English>You cannot change clothes when another player is nearby.</English>
 			<German>Du kannst deine Kleidung nicht wechseln, wenn ein anderer Spieler in der Nähe ist.</German>
@@ -11914,14 +11858,6 @@
 			<Dutch>Je kunt je niet omkleden naar kleding van het andere geslacht.</Dutch>
 			<French>Vous ne pouvez pas porter les vêtements du sexe opposé.</French>
 			<Czech>Nemůžete nosit oblečení opačného pohlaví.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_88">
-			<English>Remove is already in progress.</English>
-			<German>Entfernen bereits im Gange.</German>
-			<Russian>Уже убирается/снимается.</Russian>
-			<Dutch>Al bezig met verwijderen.</Dutch>
-			<French>Le démontage est déjà en cours.</French>
-			<Czech>Odstranění již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_89">
 			<English>Cannot remove a running generator.</English>
@@ -11946,14 +11882,6 @@
 			<Dutch>Mislukt! Het object bestaat niet meer.</Dutch>
 			<French>Échec, l'objet n'existe plus.</French>
 			<Czech>Chyba. Objekt již neexistuje.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_92">
-			<English>Repair is already in progress.</English>
-			<German>Reperatur bereits im Gange.</German>
-			<Russian>Уже чинится.</Russian>
-			<Dutch>Wordt al reeds gerepareerd.</Dutch>
-			<French>La réparation est déjà en cours.</French>
-			<Czech>Opravování již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_96">
 			<English>already in progress.</English>
