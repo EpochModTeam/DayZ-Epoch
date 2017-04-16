@@ -13068,33 +13068,33 @@
 		<Key ID="STR_EPOCH_PLAYER_273">
 			<English>Craft H-Barrier</English>
 			<German>H-Barriere herstellen</German>
-			<Russian>Создать: Большой мешок с песком</Russian>
+			<Russian>Создать: H-Barrier</Russian>
 			<Czech>Vytvořit Velké pytle s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_1">
 			<English>Craft 3x H-Barrier</English>
 			<German>3x H-Barriere herstellen</German>
-			<Russian>Создать: 3 больших мешка с песком</Russian>
+			<Russian>Создать: 3x H-Barrier</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_2">
 			<English>Craft 5x H-Barrier</English>
 			<German>5x H-Barriere herstellen</German>
-			<Russian>Создать: 5 больших мешков с песком</Russian>
+			<Russian>Создать: 5x H-Barrier</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_3">
 			<English>Build H-Barrier</English>
 			<German>H-Barriere aufbauen</German>
-			<Russian>Установить: Большой мешок с песком</Russian>
+			<Russian>Установить: H-Barrier</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_4">
 			<English>Build 3x H-Barrier</English>
 			<German>3x H-Barriere aufbauen</German>
-			<Russian>Установить: 3 больших мешка с песком</Russian>
+			<Russian>Установить: 3x H-Barrier</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273_5">
 			<English>Build 5x H-Barrier</English>
 			<German>5x H-Barriere aufbauen</German>
-			<Russian>Установить: 5 больших мешков с песком</Russian>
+			<Russian>Установить: 5x H-Barrier</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_274">
 			<English>Craft Sandbag Nest</English>
