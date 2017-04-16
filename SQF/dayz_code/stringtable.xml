@@ -15533,6 +15533,9 @@
 			<Russian>Можно добавить друзей: %1</Russian>
 			<German>Nur %1 Freunde erlaubt.</German>
 		</Key>
+		<Key ID="STR_EPOCH_PLOTMANAGEMENT_CANT_REMOVE">
+			<English>You can't remove the plot owner.</English>
+		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY">
 			<English>Show plot boundary</English>
 			<German>Zeige Grundstücksgrenze</German>
@@ -16898,7 +16901,10 @@
 			<German>Du darfst diese Tür nicht verwalten.</German>
 			<Russian>У вас нет прав доступа.</Russian>
 		</Key>
-		
+		<Key ID="STR_EPOCH_DOORMANAGEMENT_CANT_REMOVE">
+			<English>You can't remove the door owner.</English>
+		</Key>
+
 		<Key ID="STR_EPOCH_OPEN_RAMP">
 			<English>Open Ramp</English>
 			<German>Rampe öffnen</German>
