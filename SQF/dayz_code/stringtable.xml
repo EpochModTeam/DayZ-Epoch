@@ -266,7 +266,7 @@
 		<Key ID="str_actions_medical_07">
 			<English>Give Painkillers</English>
 			<German>Schmerzmittel verabreichen</German>
-			<Russian>Дать болеутоляющие</Russian>
+			<Russian>Дать болеутоляющее</Russian>
 			<Spanish>Dar Analgésicos</Spanish>
 			<French>Donner des Antidouleurs</French>
 			<Czech>Dát Prášky proti bolesti</Czech>
@@ -1534,7 +1534,7 @@
 		</Key>
 		<Key ID="str_PickAxeHandleBreaks">
 			<English>Whilst mining the handle breaks.</English>
-			<Russian>Кирка сломалась во время добычи</Russian>
+			<Russian>Кирка сломалась во время добычи.</Russian>
 			<Czech>Během kopání se zlomila násada.</Czech>
 			<German>Du schlägst zu und der Schaft der Spitzhacke bricht.</German>
 		</Key>
@@ -1612,7 +1612,7 @@
 		</Key>
 		<Key ID="str_cursorTargetNotFound">
 			<English>You must be looking at the item to interact with it.</English>
-			<Russian>Вы должны смотреть на предмет, тоже взаимодействующий с ним.</Russian>
+			<Russian>Вы должны смотреть на предмет, чтобы взаимодействовать с ним.</Russian>
 			<French>Vous devez également regarder l'élément avec lui.</French>
 			<Czech>Musíte se dívat na tento produkt příliš komunikovat s ním.</Czech>
 			<German>Sie müssen sich das Produkt anschauen, das auch mit ihm interagiert.</German>
@@ -1849,14 +1849,14 @@
 		</Key>
 		<Key ID="str_upgradeMissingTool">
 			<English>Missing %1 to upgrade building.</English>
-			<Russian>Для улучшения нужно иметь %1</Russian>
+			<Russian>Для улучшения нужно иметь %1.</Russian>
 			<French>Outil manquant pour l&apos;amélioration: %1</French>
 			<Czech>Pro vylepšení budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt zu erweitern.</German>
 		</Key>
 		<Key ID="str_upgradeMissingPart">
 			<English>Missing %1 to upgrade building.</English>
-			<Russian>Для улучшения не хватает %1</Russian>
+			<Russian>Для улучшения не хватает %1.</Russian>
 			<French>Pièces manquantes pour l&apos;amélioration: %1</French>
 			<Czech>Pro vylepšení budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt zu erweitern.</German>
@@ -1870,28 +1870,28 @@
 		</Key>
 		<Key ID="str_disassembleMissingTool">
 			<English>Missing tool: %1 to dissassemble building.</English>
-			<Russian>Для разборки нужно иметь: %1</Russian>
+			<Russian>Для разборки нужно иметь %1.</Russian>
 			<French>Outil manquant pour le démontage: %1</French>
 			<Czech>Pro demontáž budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt abzubauen.</German>
 		</Key>
 		<Key ID="str_disassembleMissingPart">
 			<English>Missing %1 to dissassemble building.</English>
-			<Russian>Для разборки не хватает %1</Russian>
+			<Russian>Для разборки не хватает %1.</Russian>
 			<French>Pièces manquantes pour le démontage: %1</French>
 			<Czech>Pro demontáž budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt abzubauen.</German>
 		</Key>
 		<Key ID="str_maintenanceMissingTool">
 			<English>Missing tool: %1 for maintenance.</English>
-			<Russian>Для обслуживания нужно иметь: %1</Russian>
+			<Russian>Для обслуживания нужно иметь %1.</Russian>
 			<French>Outil manquant pour l&apos;entretien: %1</French>
 			<Czech>Pro údržbu budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt zu warten.</German>
 		</Key>
 		<Key ID="str_maintenanceMissingPart">
 			<English>Missing %1 for maintenance.</English>
-			<Russian>Для обслуживания не хватает %1</Russian>
+			<Russian>Для обслуживания не хватает %1.</Russian>
 			<French>Pièces manquantes pour l&apos;entretien: %1</French>
 			<Czech>Pro údržbu budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt zu warten.</German>
@@ -2284,7 +2284,7 @@
 		<Key ID="STR_ITEM_DESC_equip_part_silencer">
 			<German>Ein Schalldämpfer.</German>
 			<English>A Weapon Suppressor</English>
-			<Russian>Оружейный глушитель</Russian>
+			<Russian>Оружейный глушитель.</Russian>
 			<Spanish>Un silenciador</Spanish>
 			<French>Un silencieux</French>
 			<Czech>Tlumič pro střelné zbraně</Czech>
@@ -2300,7 +2300,7 @@
 		<Key ID="STR_ITEM_DESC_equip_part_camo">
 			<English>Camo materials/Pattern</English>
 			<German>Verschiedene Materialien und Farben zum Abtarnen von Ausrüstung.</German>
-			<Russian>Маскировочные материалы</Russian>
+			<Russian>Маскировочные материалы.</Russian>
 			<Spanish>Materiales de Camuflaje</Spanish>
 			<French>Du camouflage</French>
 			<Czech>Materiál pro maskovací potisk na zbraně</Czech>
@@ -2404,7 +2404,7 @@
 		<Key ID="STR_ITEM_NAME_equip_metal_sheet_rusted">
 			<English>Rusty Sheet Metal</English>
 			<German>Rostige Metallplatte</German>
-			<Russian>Ржавый лист металла</Russian>
+			<Russian>Ржавый лист металла.</Russian>
 			<Spanish>Lámina de Metal</Spanish>
 			<French>Plaque de métal rouillée</French>
 			<Czech>Zrezlý plech</Czech>
@@ -3405,7 +3405,7 @@
 		<Key ID="STR_EQUIP_NAME_1b_BROKEN">
 			<English>Broken Shovel</English>
 			<German>Kaputte Schaufel</German>			
-			<Russian>Сломаная лопата</Russian>
+			<Russian>Сломанная лопата</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_1b_BROKEN">
 			<English>Too much force has broken this Shovel. Hopefully you find something to repair it.</English>
@@ -3423,7 +3423,7 @@
 		<Key ID="STR_EQUIP_DESC_2">
 			<English>Toolbox that can be used for repairing damaged vehicles and equipment.</English>
 			<German>Eine Kiste mit Werkzeugen, die zum Reparieren beschädigter Fahrzeuge und Ausrüstung verwendet werden können.</German>
-			<Russian>Набор инструментов используется для ремонта поврежденной техники и снаряжения, а так же установки укреплений.</Russian>
+			<Russian>Набор инструментов используется для ремонта поврежденной техники и снаряжения, а также установки укреплений.</Russian>
 			<Spanish>La caja de herramientas puede ser usada para reparar vehículos y equipamiento dañado.</Spanish>
 			<French>Boîte à outils servant à réparer le matériel et les véhicules.</French>
 			<Czech>Sada nástrojů se používá pro opravy poškozených vozidel a vybavení.</Czech>
@@ -4524,7 +4524,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_MACHETE">
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
-			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой повседневный, как топор, но весьма мощный.</Russian>
+			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой универсальный, как топор, но весьма мощный.</Russian>
 			<Spanish>Una herramienta agrícola transformada en un arma. El machete puede ser menos versátil que un hacha común pero pega con fürza.</Spanish>
 			<Czech>Původně zbraň pro zahradničení. Nemá tolik využití jako sekera, ale proti zombie poslouží stejně dobře.</Czech>
 			<French>Un outil agricole qui peut être utilisé comme une arme. La machette est moins versatile que la hache mais plus tranchante.</French>
@@ -7114,7 +7114,7 @@
 		<Key ID="str_player_30">
 			<English>%1 must be on your person to move it to/from your toolbelt.</English>
 			<German>%1 muss sich in deinem Inventar befinden, damit du es an den Werkzeuggürtel hängen kannst.</German>
-			<Russian>Для перемещения с/на пояс, (%1) должен быть у вас.</Russian>
+			<Russian>Для перемещения с/на пояс, %1 должен быть у вас.</Russian>
 			<Spanish>%1 debe estar en tu persona para moverlo hacia/desde el cinturon.</Spanish>
 			<French>%1 doit être sur vous pour pouvoir le déplacer de/vers votre ceinture à outils.</French>
 			<Czech>%1 musí být v invetáři, aby se mohl přesunout z/do panelu nástrojů.</Czech>
@@ -7167,7 +7167,7 @@
 		<Key ID="str_player_31">
 			<English>%1 must be in your main inventory to %2 it.</English>
 			<German>%1 muss sich in deinem Inventar befinden, um es zu %2.</German>
-			<Russian>Чтобы %2, (%1) должен находиться в основном инвентаре.</Russian>
+			<Russian>Чтобы %2, %1 должен находиться в основном инвентаре.</Russian>
 			<Spanish>Debes tener un %1 en tu inventario principal para %2.</Spanish>
 			<French>%1 doit être dans votre inventaire principal pour pouvoir le %2</French>
 			<Czech>%1 musí být ve vašem hlavním inventáři pro %2.</Czech>
@@ -7175,7 +7175,7 @@
 		<Key ID="str_player_31_missingtools">
 			<English>To build %1 you require %2.</English>
 			<German>Um %1 herzustellen, brauchst du %2.</German>
-			<Russian>Чтобы построить (%1), вам нужен (%2).</Russian>
+			<Russian>Чтобы построить %1, вам нужен %2.</Russian>
 			<Spanish>Para crear un %1 necesitas %2.</Spanish>
 			<French>Pour construire un(e) %1, il vous faut : %2.</French>
 			<Czech>Abyste mohli postavit %1, potřebujete: %2.</Czech>
@@ -7183,7 +7183,7 @@
 		<Key ID="str_player_31_stash">
 			<English>To build a stash site you require %1.</English>
 			<German>Um eine Lagergrube auszuheben, brauchst du %1.</German>
-			<Russian>Чтобы соорудить схрон, вам нужны (%1).</Russian>
+			<Russian>Чтобы соорудить схрон, вам нужны %1.</Russian>
 			<Spanish>Para crear un escondite necesitas %1.</Spanish>
 			<French>Pour construire une planque, il vous faut %1.</French>
 			<Czech>Abyste postavili skrýš, je potřeba %1.</Czech>
@@ -7355,7 +7355,7 @@
 		<Key ID="str_player_ammo_successful">
 			<English>You have successfully loaded %1 ammunition.</English>
 			<German>Du hast erfolgreich %1 Mal Munition nachgeladen.</German>
-			<Russian>Вы успешно зарядили (%1).</Russian>
+			<Russian>Вы успешно зарядили %1.</Russian>
 			<Spanish>Cargaste exitosamente munición de %1</Spanish>
 			<French>Vous avez chargé %1 munitions.</French>
 			<Czech>Úspěšně jste nabili munici %1.</Czech>
@@ -7364,7 +7364,7 @@
 		<Key ID="str_player_ammo_fail">
 			<English>You need %1 type of ammo to do this.</English>
 			<German>Dafür brauchst du %1 Munition.</German>
-			<Russian>Вам нужны (%1) чтобы сделать это.</Russian>
+			<Russian>Вам нужны %1 чтобы сделать это.</Russian>
 			<Spanish>Necesitas munición del tipo %1 para hacer esto.</Spanish>
 			<French>Vous avez besoin de %1 type de munition pour ce faire.</French>
 			<Czech>Pro toto potřebujete tento typ munice: %1.</Czech>
@@ -8925,7 +8925,7 @@
 		</Key>
 		<Key ID="STR_BLD_desc_ItemBuildingBlueprint">
 			<English>Blueprint</English>
-			<Russian>Чертеж</Russian>
+			<Russian>Чертеж.</Russian>
 			<French>Plan de construction</French>
 			<Czech>Stavební plány</Czech>
 			<German>Blaupause zum Konstruieren von Objekten.</German>
@@ -8939,7 +8939,7 @@
 		</Key>
 		<Key ID="STR_BLD_desc_ItemWorkshop">
 			<English>Building Plans for a workshop.</English>
-			<Russian>Чертежи мастерской</Russian>
+			<Russian>Чертежи мастерской.</Russian>
 			<French>Plan de construction d&apos;un atelier.</French>
 			<Czech>Stavební plány pro vybudování dílny</Czech>
 			<German>Plan für den Bau einer Werkstatt.</German>
@@ -9587,7 +9587,7 @@
 		</Key>
 		<Key ID="STR_BLD_desc_ItemDIY_woodGate">
 			<English>For wooden Gates</English>
-			<Russian>Инструкции по созданию ворот</Russian>
+			<Russian>Инструкции по созданию ворот.</Russian>
 			<Czech>Do-It-Yourself návod na postavení dřevěné brány.</Czech>
 			<German>Ein Do-It-Yourself Handbuch, um Holztore zu bauen.</German>
 		</Key>
@@ -9675,12 +9675,12 @@
 		<Key ID="STR_BLD_ACTIONS_UNLOCKGATE">
 			<English>Unlock Gate</English>
 			<German>Tor aufschließen</German>
-			<Russian>Отомкнуть ворота</Russian>
+			<Russian>Отпереть ворота</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_LOCKGATE">
 			<English>Lock Gate</English>
 			<German>Tor abschließen</German>
-			<Russian>Замкнуть ворота</Russian>
+			<Russian>Запереть ворота</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_BREAKIN">
 			<English>Break In</English>
@@ -10464,7 +10464,7 @@
 		<Key ID="STR_DZ_WPN_MR43_DESC">
 			<English>A double-barreled shotgun is a shotgun with two parallel barrels, allowing two shots to be fired in quick succession.</English>
 			<German>Eine Schrotflinte mit zwei parallel montierten Läufen, die in schneller Folge abgefeuert werden können.</German>
-			<Russian>Двуствольные ружья употребляются почти исключительно в качестве охотничьих.</Russian>
+			<Russian>Двуствольные ружья почти всегда используются в качестве охотничьих.</Russian>
 			<Spanish>Una escopeta de doble barril permite disparar dos tiros en un corto periodo de tiempo.</Spanish>
 			<French>Fusil doté de 2 canons parallèles, permettant de tirer 2 coups rapprochés.</French>
 			<Czech>Dvouhlavňová brokovnice je brokovnice s dvěma hlavněmi vedle sebe, což umožnuje vystřelit dvakrát hned za sebou.</Czech>
@@ -11623,7 +11623,7 @@
 		<Key ID="STR_EPOCH_PLAYER_42">
 			<English>You cannot build while in a vehicle.</English>
 			<German>Bau innerhalb eine Fahrzeuges nicht möglich.</German>
-			<Russian>Нельзя строить, находясь в транспорте.</Russian>
+			<Russian>Нельзя строить находясь в транспорте.</Russian>
 			<Dutch>Je kunt niet bouwen als je je in een voertuig bevindt.</Dutch>
 			<French>Impossible de construire à bord d'un véhicule.</French>
 			<Czech>Nelze stavět, pokud jste ve vozidle.</Czech>
@@ -11982,7 +11982,7 @@
 		<Key ID="STR_EPOCH_PLAYER_117">
 			<English>Your %1 has been locked</English>
 			<German>Dein %1 wurde abgeschlossen.</German>
-			<Russian>Ваш %1 закрыт</Russian>
+			<Russian>Ваш %1 закрыт.</Russian>
 			<Dutch>Je %1 staat nu op slot</Dutch>
 			<French>Votre %1 a été verrouillé</French>
 			<Czech>Vaše %1 bylo zamčeno</Czech>
@@ -12030,7 +12030,7 @@
 		<Key ID="STR_EPOCH_PLAYER_123">
 			<English>Your %1 has been packed</English>
 			<German>Dein %1 wurde gepackt.</German>
-			<Russian>Ваш %1 упакован</Russian>
+			<Russian>Ваш %1 упакован.</Russian>
 			<Dutch>Je %1 is ingepakt.</Dutch>
 			<French>Votre %1 a été emballé(e).</French>
 			<Czech>Vaše %1 bylo/y zabalen/y/o.</Czech>
@@ -12072,7 +12072,7 @@
 		<Key ID="STR_EPOCH_PLAYER_135">
 			<English>This item needs a %1 within %2 meters</English>
 			<German>Dieses Gebäude benötitgt ein(e) %1 innerhalb von %2 Metern.</German>
-			<Russian>Этому строению требуется %1 в пределах %2 метров</Russian>
+			<Russian>Этому строению требуется %1 в пределах %2м.</Russian>
 			<Dutch>Dit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
 			<French>Ce bâtiment nécessite un %1 à moins de %2 mètres</French>
 			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
@@ -12304,7 +12304,7 @@
 		<Key ID="STR_EPOCH_PLAYER_181">
 			<English>Sold %1 %2 for %3 %4</English>
 			<German>Du hast für %3 %4 %1 %2 verkauft</German>
-			<Russian>Продано %1 %2 за %3 %4</Russian>
+			<Russian>Продано %1 %2 за %3 %4.</Russian>
 			<Dutch>Je hebt %1 %2 verkocht voor %3 %4.</Dutch>
 			<Czech>Prodáno %1 %2 za %3 %4</Czech>
 		</Key>
@@ -12325,7 +12325,7 @@
 		<Key ID="STR_EPOCH_PLAYER_184">
 			<English>Need %1 More %2</English>
 			<German>Du benötigst noch %1 %2</German>
-			<Russian>Нужно ещё %1 %2</Russian>
+			<Russian>Нужно ещё %1 %2.</Russian>
 			<Dutch>Nog %1 %2 nodig</Dutch>
 			<Czech>Bude ještě potřeba %1 %2</Czech>
 		</Key>
@@ -12339,7 +12339,7 @@
 		<Key ID="STR_EPOCH_PLAYER_186">
 			<English>Traded %1 %2 for %3 %4</English>
 			<German>Du hast für %3 %4 %1 %2 gehandelt</German>
-			<Russian>Продано %1 %2 за %3 %4</Russian>
+			<Russian>Продано %1 %2 за %3 %4.</Russian>
 			<Dutch>Je hebt %1 %2 verhandeld voor %3 %4</Dutch>
 			<Czech>Vyobchodováno %1 %2 za %3 %4</Czech>
 		</Key>
@@ -12773,7 +12773,7 @@
 		<Key ID="STR_EPOCH_PLAYER_229">
 			<English>Craft Lg Camo Net</English>
 			<German>Tarnnetz(groß) herstellen</German>
-			<Russian>Создать: Lg Camo Net</Russian>
+			<Russian>Создать: Большая масксеть</Russian>
 			<Dutch>Creëer groot camouflagenet</Dutch>
 			<Czech>Vytvořit Velkou kamuflážní síť</Czech>
 		</Key>
@@ -13797,13 +13797,13 @@
 		<Key ID="STR_EPOCH_BULK_DESC">
 			<English>12x Random Item</English>
 			<German>12x Zufällige Gegenstände</German>
-			<Russian>Какой-то предмет (12x)</Russian>
+			<Russian>Какой-то предмет (12x).</Russian>
 			<Czech>12x Náhodných předmětů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_EMPTY">
 			<English>Empty Supply Crate</English>
 			<German>Leere Versorgungskiste</German>
-			<Russian>Пустой ящик</Russian>
+			<Russian>Пустой ящик.</Russian>
 			<Czech>Prázdná bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_EMPTY">
@@ -13814,7 +13814,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
 			<English>6x Soda (Coke)</English>
 			<German>6x Dose (Coke)</German>
-			<Russian>Ящик с 6-ю банками газировки (Кола)</Russian>
+			<Russian>Ящик с 6-ю банками газировки (Кола).</Russian>
 			<Czech>6x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODACOKE_HALF">
@@ -13825,7 +13825,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_FULL">
 			<English>12x Soda (Coke)</English>
 			<German>12x Dose (Coke)</German>
-			<Russian>Ящик с 12-ю банками газировки (Кола)</Russian>
+			<Russian>Ящик с 12-ю банками газировки (Кола).</Russian>
 			<Czech>12x Soda s kolovou příchutí</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODACOKE_FULL">
@@ -13836,7 +13836,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_HALF">
 			<English>6x Soda (Pepsi)</English>
 			<German>6x Dose (Pepsi)</German>
-			<Russian>Ящик с 6-ю банками газировки (Пепси)</Russian>
+			<Russian>Ящик с 6-ю банками газировки (Пепси).</Russian>
 			<Czech>6x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODAPEPSI_HALF">
@@ -13847,7 +13847,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_SODAPEPSI_FULL">
 			<English>12x Soda (Pepsi)</English>
 			<German>12x Dose (Pepsi)</German>
-			<Russian>Ящик с 12-ю банками газировки (Пепси)</Russian>
+			<Russian>Ящик с 12-ю банками газировки (Пепси).</Russian>
 			<Czech>12x Pepsi</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SODAPEPSI_FULL">
@@ -13858,7 +13858,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_HALF">
 			<English>6x Bacon</English>
 			<German>6x Gebratener Speck</German>
-			<Russian>Ящик с 6-ю кусками вкусного жареного бекона</Russian>
+			<Russian>Ящик с 6-ю кусками вкусного жареного бекона.</Russian>
 			<Czech>6x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_BACON_HALF">
@@ -13869,7 +13869,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
 			<English>12x Bacon</English>
 			<German>12x Gebratener Speck</German>
-			<Russian>Ящик с 12-ю кусками вкусного жареного бекона</Russian>
+			<Russian>Ящик с 12-ю кусками вкусного жареного бекона.</Russian>
 			<Czech>12x Vepřové</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_BACON_FULL">
@@ -13916,7 +13916,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
 			<English>12x SandBag</English>
 			<German>12x Sandsack</German>
-			<Russian>Ящик с 12-ю мешками с песком</Russian>
+			<Russian>Ящик с 12-ю мешками с песком.</Russian>
 			<Czech>12 Pytlů s pískem</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_SANDBAG">
@@ -13927,7 +13927,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_FULL">
 			<English>12x Tank Trap</English>
 			<German>12x Panzersperre</German>
-			<Russian>Ящик с 12-ю противотанковыми ежами</Russian>
+			<Russian>Ящик с 12-ю противотанковыми ежами.</Russian>
 			<Czech>12 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_TANKTRAP_FULL">
@@ -13938,7 +13938,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_TANKTRAP_HALF">
 			<English>6x Tank Trap</English>
 			<German>6x Panzersperre</German>
-			<Russian>Ящик с 6-ю противотанковыми ежами</Russian>
+			<Russian>Ящик с 6-ю противотанковыми ежами.</Russian>
 			<Czech>6 Zátaras</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_TANKTRAP_HALF">
@@ -13949,7 +13949,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_FULL">
 			<English>12x Wire Kit</English>
 			<German>12x Stacheldraht</German>
-			<Russian>Ящик с 12-ю мотками колючей проволоки</Russian>
+			<Russian>Ящик с 12-ю мотками колючей проволоки.</Russian>
 			<Czech>12 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_FULL">
@@ -13960,7 +13960,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
 			<English>6x Wire Kit</English>
 			<German>6x Stacheldraht</German>
-			<Russian>Ящик с 6-ю мотками колючей проволоки</Russian>
+			<Russian>Ящик с 6-ю мотками колючей проволоки.</Russian>
 			<Czech>6 Drátů</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_HALF">
@@ -13971,7 +13971,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
 			<English>12x Scrap Metal</English>
 			<German>12x Metallteile</German>
-			<Russian>Ящик с 12шт. металлолома</Russian>
+			<Russian>Ящик с металлоломом (12шт).</Russian>
 			<Czech>12x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_GENERIC_FULL">
@@ -13982,7 +13982,7 @@
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_HALF">
 			<English>6x Scrap Metal</English>
 			<German>6x Metallteile</German>
-			<Russian>Ящик с 6шт. металлолома</Russian>
+			<Russian>Ящик с металлоломом (6шт).</Russian>
 			<Czech>6x Železný šrot</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_GENERIC_HALF">
@@ -14384,7 +14384,7 @@
 		<Key ID="STR_EPOCH_DOCUMENT_DESC">
 			<English>Unknown document</English>
 			<German>Unbekanntes Dokument</German>
-			<Russian>Неизвестный документ</Russian>
+			<Russian>Неизвестный документ.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED">
 			<English>Plot Deed</English>
@@ -14409,7 +14409,7 @@
 		<Key ID="STR_EPOCH_LETTER_DESC">
 			<English>Random letter</English>
 			<German>Irgendein Brief</German>
-			<Russian>Какое-то письмо</Russian>
+			<Russian>Какое-то письмо.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ROMANCENOVEL">
 			<English>Romance Novel</English>
@@ -14434,7 +14434,7 @@
 		<Key ID="STR_EPOCH_BOOK_DESC">
 			<English>Random Children's Book</English>
 			<German>Kinderbuch</German>
-			<Russian>Какая-то детская книга</Russian>
+			<Russian>Какая-то детская книга.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TORNNEWSPAPER">
 			<English>Torn Newspaper</English>
@@ -14554,6 +14554,7 @@
 		<Key ID="STR_EPOCH_GUNRACK">
 			<English>Gun Rack</English>
 			<German>Waffenregal</German>
+			<Russian>Полка для оружия</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GUNRACKKIT_DESC">
 			<English>A Gun Rack for 20 weapons.</English>
@@ -14568,7 +14569,7 @@
 		<Key ID="STR_EPOCH_WOODCRATE_DESC">
 			<English>A wooden crate that holds a lot of items.</English>
 			<German>Eine Holzkiste, um eine Menge Material zu verstauen.</German>
-			<Russian>Деревянный ящик, которой может вмещать много вещей.</Russian>
+			<Russian>Деревянный ящик, в который можно положить много вещей.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_OILBARREL">
 			<English>Oil Barrel</English>
@@ -14648,7 +14649,7 @@
 		<Key ID="STR_EPOCH_WIRE">
 			<English>Wire</English>
 			<German>Stacheldraht</German>
-<!--			<Russian>Проволока</Russian>	-->
+			<Russian>Колючая проволока</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DEERSTAND">
 			<English>Deer Stand</English>
@@ -15853,7 +15854,7 @@
 		<Key ID="STR_EPOCH_ALUMINUM_DESC">
 			<English>Aluminum Bar</English>
 			<German>Aluminumbarren</German>
-			<Russian>Алюминиевый слиток</Russian>
+			<Russian>Алюминиевый слиток.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_10OZALUMINUM">
 			<English>10oz Aluminum</English>
@@ -15862,7 +15863,7 @@
 		<Key ID="STR_EPOCH_10OZALUMINUM_DESC">
 			<English>10oz Aluminum Bar</English>
 			<German>10oz Aluminumbarren</German>
-			<Russian>Алюминиевый слиток (10 унций)</Russian>
+			<Russian>Алюминиевый слиток (10 унций).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BRONZE">
 			<English>Bronze</English>
@@ -15871,7 +15872,7 @@
 		<Key ID="STR_EPOCH_BRONZE_DESC">
 			<English>Bronze Bar</English>
 			<German>Bronzebarren</German>
-			<Russian>Бронзовый слиток</Russian>
+			<Russian>Бронзовый слиток.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COPPER">
 			<English>Copper</English>
@@ -15881,7 +15882,7 @@
 		<Key ID="STR_EPOCH_COPPER_DESC">
 			<English>Copper Bar</English>
 			<German>Kupferbarren</German>
-			<Russian>Медный слиток</Russian>
+			<Russian>Медный слиток.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_10OZCOPPER">
 			<English>10oz Copper</English>
@@ -15891,7 +15892,7 @@
 		<Key ID="STR_EPOCH_10OZCOPPER_DESC">
 			<English>10oz Copper Bar</English>
 			<German>10oz Kupferbarren</German>
-			<Russian>Медный слиток (10 унций)</Russian>
+			<Russian>Медный слиток (10 унций)./Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GOLD">
 			<English>Gold</English>
@@ -15900,7 +15901,7 @@
 		<Key ID="STR_EPOCH_GOLD_DESC">
 			<English>Gold Bar</English>
 			<German>Goldbarren</German>
-			<Russian>Золотой слиток</Russian>
+			<Russian>Золотой слиток.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_2OZGOLD">
 			<English>2oz Gold</English>
@@ -15991,7 +15992,7 @@
 		<Key ID="STR_EPOCH_SILVER_DESC">
 			<English>Silver Bar</English>
 			<German>Silberbarren</German>
-			<Russian>Серебряный слиток</Russian>
+			<Russian>Серебряный слиток.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_2OZSILVER">
 			<English>2oz Silver</English>
@@ -16091,7 +16092,7 @@
 		<Key ID="STR_EPOCH_TIN_DESC">
 			<English>Tin Bar</English>
 			<German>Zinnbarren</German>
-			<Russian>Оловянный слиток</Russian>
+			<Russian>Оловянный слиток.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_10OZTIN">
 			<English>10oz Tin</English>
@@ -16101,7 +16102,7 @@
 		<Key ID="STR_EPOCH_10OZTIN_DESC">
 			<English>10oz Tin Bar</English>
 			<German>10oz Zinnbarren</German>
-			<Russian>Оловянный слиток (10 унций)</Russian>
+			<Russian>Оловянный слиток (10 унций).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_OFFICERSUIT">
 			<English>Officer Suit</English>
@@ -16279,7 +16280,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ANNIE_DESC">
 			<English>Civilian (female)</English>
-			<Russian>Гражданская одежда (женская)</Russian>
+			<Russian>Гражданская одежда (женская).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MELLY">
 			<English>Melly</English>
@@ -16927,6 +16928,7 @@
 		<Key ID="str_fireplace_noMatches">
 			<English>You need matches to build a fireplace</English>
 			<German>Du brauchst Streichhölzer um ein Lagerfeuer zu bauen.</German>
+			<Russian>Нужны спички чтобы создать кострище.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M107_NAME">
 			<English>M107</English>
@@ -17007,7 +17009,7 @@
 		<Key ID="STR_EQUIP_KNIFE_ACTION">
 			<English>Harvest Plant</English>
 			<German>Pflanze ernten</German>
-			<Russian>Собрать урожай</Russian>
+			<Russian>Срезать растение</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_TOOLBOX_ACTION_1">
 			<English>Remove Camo Net</English>
