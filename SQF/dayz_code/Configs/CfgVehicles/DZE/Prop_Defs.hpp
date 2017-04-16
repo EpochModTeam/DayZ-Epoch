@@ -249,7 +249,7 @@ class BagFenceRound_DZ: BuiltItems
 	cost = 100;
 	model = "\ca\misc2\BagFenceRound.p3d";
 	icon = "\Ca\misc3\data\Icons\icon_bagFenceRound_ca.paa";
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,2.25,0.5};
 	mapSize = 2;
 	armor = 400;
 	displayName = $STR_EQUIP_NAME_21_ROUND;
