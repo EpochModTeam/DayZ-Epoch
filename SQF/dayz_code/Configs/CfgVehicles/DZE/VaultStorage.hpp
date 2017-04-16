@@ -21,7 +21,7 @@ class VaultStorageLocked: Land_A_tent {
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;
-	offset[] = {0,1.5,0};
+	offset[] = {0,2.5,0};
 	lockable = 4;
 	unlockedClass = "VaultStorage";
 	requireplot = 0;
