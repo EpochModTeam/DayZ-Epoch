@@ -8,5 +8,6 @@ _alive = alive _unit;
 
 
 if (_unconcious && !_inVeh && _alive) then {
+	DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on _unit's gear
 	player action ["Gear", _unit];
 };

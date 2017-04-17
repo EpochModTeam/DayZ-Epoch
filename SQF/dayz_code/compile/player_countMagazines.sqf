@@ -1,22 +1,18 @@
 /*
-count player magazines with ammo count
-value = call player_countMagazines;
-return all player magazines with ammo count
+	count player magazines with ammo count
+	value = call player_countMagazines;
+	return all player magazines with ammo count
 */
+
 private ["_dialog","_created","_magazineArray"];
 disableSerialization;
-disableUserInput true;
-disableUserInput true;
-disableUserInput true;
 
 _dialog = findDisplay 106;
 _created = false;
 
 if ( isNull _dialog ) then {
-	//startLoadingScreen [""];
-	DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on player's gear
-	skipGearSound = true; //Don't play sound for force save
-	createGearDialog [player, "RscDisplayGear"];
+	//Load Minimal gearMenu
+	createGearDialog [player, "RscDisplayGearMinimal"];
 	_dialog = findDisplay 106;
 	_created = true;
 };
@@ -55,11 +51,6 @@ for "_i" from 122 to 129 do
 
 if ( _created ) then {
 	closeDialog 0;
-	skipGearSound = false;
-	//endLoadingScreen;
 };
 
-disableUserInput false;
-disableUserInput false;
-disableUserInput false;
 _magazineArray
