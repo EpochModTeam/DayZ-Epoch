@@ -1,10 +1,13 @@
-private ["_bodyCount","_count","_group","_hasGPS","_index","_inGroup","_marker","_markBody","_markGroup","_markSelf","_name","_pos","_self","_vehicle"];
+private ["_bodyCount","_count","_group","_hasGPS","_index","_inGroup","_lastGroup","_marker","_markBody","_markGroup","_markSelf","_name","_oldGroup","_pos","_self","_vehicle"];
+
+_lastGroup = grpNull;
 
 while {true} do {
 	_group = player call dayz_filterGroup;
 	_inGroup = count _group > 1;
 
 	if (dayz_requireRadio && {_inGroup} && {!("ItemRadio" in items player)}) then {
+		_lastGroup = group player;
 		[player] joinSilent grpNull;
 		if (!isNull findDisplay 80000) then {findDisplay 80000 closeDisplay 2;};
 		terminate dayz_groupTags;
@@ -13,6 +16,16 @@ while {true} do {
 	} else {
 		if (_inGroup && scriptDone dayz_groupTags) then {
 			dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
+		};
+		
+		if (!isNull _lastGroup && {"ItemRadio" in items player}) then {
+			_oldGroup = group player;
+			[player] joinSilent _lastGroup;
+			if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
+			format[localize "STR_EPOCH_REJOINED_GROUP",name leader _lastGroup] call dayz_rollingMessages;
+			PVDZ_Server_UpdateGroup = [1,player];
+			publicVariableServer "PVDZ_Server_UpdateGroup";
+			_lastGroup = grpNull;
 		};
 		
 		if (visibleMap or !isNull (uiNamespace getVariable["BIS_RscMiniMap",displayNull])) then {

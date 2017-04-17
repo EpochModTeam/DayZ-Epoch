@@ -5,6 +5,7 @@
 
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
 [UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
+[UPDATED] The player now auto rejoins their group after dropping a radio and picking it back up when dayz_requireRadio=true. @SmokeyBR
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.
