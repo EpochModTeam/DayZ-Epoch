@@ -15536,6 +15536,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_CANT_REMOVE">
 			<English>You can't remove the plot owner.</English>
+			<Russian>Нельзя удалить владельца.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY">
 			<English>Show plot boundary</English>
@@ -16904,6 +16905,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_DOORMANAGEMENT_CANT_REMOVE">
 			<English>You can't remove the door owner.</English>
+			<Russian>Нельзя удалить владельца.</Russian>
 		</Key>
 
 		<Key ID="STR_EPOCH_OPEN_RAMP">
