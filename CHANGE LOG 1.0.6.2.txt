@@ -9,6 +9,7 @@
 [UPDATED] Owners can no longer be removed by added friends in plot and door management. @oiad
 [UPDATED] A new hidden version of the gear menu is now used for force saves so players do not see the dialog flash on screen.
 [UPDATED] Anyone can now lock a modular door without knowing the combination or having any special access. #1944 @ndavalos
+[UPDATED] Newest version of DayZero enterable buildings, which fixes #1601 - provided by Tansien and Zac https://zombies.nu/
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.

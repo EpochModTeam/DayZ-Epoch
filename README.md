@@ -14,6 +14,7 @@ http://dayzmod.com
 --------------------------
 Included Custom Addons
 --------------------------
+* DayZero Enterable Buildings - https://zombies.nu/
 * AutoGyro - by CSJ http://www.armaholic.com/page.php?id=2359
 * Taxi by [GLT]Myke http://www.armaholic.com/page.php?id=12289
 * Blackhawk and Seahawk Wrecks by [GLT]Myke http://www.armaholic.com/page.php?id=10670
@@ -27,7 +28,6 @@ Included Custom Addons
 * gdtmod_grass 1.00 by HeinBloed - http://www.gdt-server.net/
 * Bell 47/H-13 Helicopter by hcpookie - http://www.armaholic.com/page.php?id=22143
 * USEC CH53 by Rocket - http://dayz.com
-* More enterable buildings - Dayzero - https://zombies.nu/
 * Anzio 20mm Rifle by WillRobinson - http://www.armaholic.com/page.php?id=30175
 * RedRyder BB Gun by WillRobinson - https://github.com/arma2WillRobinson/Red-Ryder
 
@@ -122,9 +122,10 @@ Special thanks
 --------------------------
 * BIS for a incredible and versatile game and engine. http://www.bistudio.com/
 * Rocket - DAYZ! http://dayzmod.com | http://dayzgame.com 
+* Rajkosto - DayZ Hive DLL - https://github.com/rajkosto/hive
 * DayZ Community Developers - https://github.com/DayZMod
 * ziellos2k - Tag Friendly code. https://github.com/ziellos2k
-* Dayz Hive DLL - https://github.com/rajkosto/hive
+* Tansien and Zac - for providing and creating DayZero Enterable Buildings https://zombies.nu/
 * Munchiefest - Beta Tester, Wiki Editor, Ideas - http://www.twitch.tv/munchiefest
 * Chelsey - Beta Tester, New female textures.
 * OrangeSherbet - Beta Tester - http://www.twitch.tv/orangesherbet
