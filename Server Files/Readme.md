@@ -1,6 +1,6 @@
 Note: Both server and client should be updated to current A2OA stable 1.63.131129 or newer -- Beta build use is not recommended, wait until A2/OA updates are pushed to the stable channel.
 
-##Basic Install Guide
+## Basic Install Guide
 
 1. Install or update your [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]. You MUST install all previous Visual C++ Redistributables (x86 versions) [[found on this page](https://support.microsoft.com/en-us/kb/2977003)].
 
@@ -14,7 +14,7 @@ Note: Both server and client should be updated to current A2OA stable 1.63.13112
 
 6. It may be necessary to forward [[these ports](https://community.bistudio.com/wiki/Arma_3_Dedicated_Server#Port_Forwarding)] in the server's software and hardware firewalls.
 
-##Basic Upgrading Guide
+## Basic Upgrading Guide
 
 1. Perform steps #1 and #2 in the basic install guide, above. Be sure to update to the new MPMission, dayz_server, BattlEye filters and HiveExt.dll too.
 
