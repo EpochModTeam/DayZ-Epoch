@@ -327,6 +327,13 @@ class Land_Shed_W01 : Industrial
 	};
 };
 
+class Land_Shed_W4 : Industrial
+{
+	maxRoaming = 3;
+	zedPos[] = {};
+	lootPos[] = {{-1.8,2.3,-1.32},{-2.1,-1.85,-1.32},{1.85,2.83,-1.32},{0.85,-0.56,-1.32}};
+};
+
 class Land_Tovarna2 : Industrial
 {
 	zedPos[] =

@@ -163,13 +163,6 @@ class Land_HouseV_3I4 : Residential
 	lootPos[] = {{5.46387,2.80273,-2.61298}};
 };
 
-class Land_Shed_W4 : Residential
-{
-	maxRoaming = 3;
-	zedPos[] = {};
-	lootPos[] = {};
-};
-
 class Land_HouseV_3I1 : Residential
 {
 	maxRoaming = 3;
@@ -220,6 +213,7 @@ class Land_HouseV_1I3 : Residential
 {
 	zedPos[] = {{2.19531,-0.954102,-2.23218}};
 	lootPos[] = {{0.65,5.79,-1.7},{0.47,3.13,-1.35},{-0.27,-7.12,-2.15},{-2.61,1.11,-2.16},{1.63,-3.72,-2.16}};
+	lootPosSmall[] = {{-1.33,-1.79,-1.48},{-2.79,7.96,-2.16},{0.82,-7.94,-1.61},{-1.09,-7.95,-1.6}};
 };
 
 class Land_houseV_2T2 : Residential
