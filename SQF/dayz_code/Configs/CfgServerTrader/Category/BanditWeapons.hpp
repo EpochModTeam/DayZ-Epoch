@@ -54,4 +54,9 @@ class Category_627 {
 		buy[] = {2,"ItemGoldBar10oz"};
 		sell[] = {1,"ItemGoldBar10oz"};
 	};
+	class AKS_GOLD {
+		type = "trade_weapons";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
 };

@@ -19,10 +19,20 @@ class Category_488 {
 		buy[] = {1,"ItemGoldBar"};
 		sell[] = {2,"ItemSilverBar10oz"};
 	};
+	class MP5_SD_DZ {
+		type = "trade_weapons";
+		buy[] = {6,"ItemGoldBar"};
+		sell[] = {3,"ItemGoldBar"};
+	};
 	class Bizon_DZ {
 		type = "trade_weapons";
 		buy[] = {8,"ItemGoldBar"};
 		sell[] = {4,"ItemGoldBar"};
+	};
+	class Bizon_SD_DZ {
+		type = "trade_weapons";
+		buy[] = {1,"ItemGoldBar10oz"};
+		sell[] = {5,"ItemGoldBar"};
 	};
 };
 
