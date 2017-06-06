@@ -3,7 +3,7 @@
 */
 private ["_obj","_ownerID","_objectID","_objectUID","_location1","_location2","_packedClass","_text","_playerNear","_finished"];
 
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_15" call dayz_rollingMessages;};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 _obj = _this;
@@ -13,7 +13,7 @@ _text = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");
 // Silently exit if object no longer exists
 if (isNull _obj || !(alive _obj)) exitWith { dayz_actionInProgress = false; };
 
-// Server_handleSafeGear runs unscheduled and exits if object is null, so more secure check is not needed
+// Server_handleSafeGear is called unscheduled and exits if the object is null, so two players packing at the same time will not work
 _playerNear = _obj call dze_isnearest_player;
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_16" call dayz_rollingMessages;};
 

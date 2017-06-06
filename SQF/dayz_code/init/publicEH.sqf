@@ -101,7 +101,7 @@ if (isServer) then {
 		"PVDZE_plr_TradeMenu"	addPublicVariableEventHandler {(_this select 1) spawn server_traders};
 	};
 	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
-	"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) spawn server_handleSafeGear};
+	"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) call server_handleSafeGear};
 	if (dayz_groupSystem) then {
 		"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) spawn server_updateGroup};
 	};
