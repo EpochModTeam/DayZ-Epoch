@@ -106,5 +106,3 @@ if (_build) then {
     } foreach _items;
     format[localize "str_build_failed_02",_text] call dayz_rollingMessages;
 };
-
-dayz_actionInProgress = false;

@@ -1,4 +1,4 @@
-private ["_isFuelTruck","_fuelTruckCapacity","_started","_finished","_animState","_isMedic","_newFuel","_abort","_newFuelSrc","_canSize","_vehicle","_configVeh","_capacity","_nameText","_fuelTruck","_findNearestVehicle"];
+private ["_isFuelTruck","_fuelTruckCapacity","_finished","_newFuel","_abort","_newFuelSrc","_canSize","_vehicle","_configVeh","_capacity","_nameText","_fuelTruck","_findNearestVehicle"];
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
@@ -15,10 +15,10 @@ if (!isNull _fuelTruck) then {
 
 _findNearestVehicle = [];
 {
-	if ((alive _x) && (_x != _fuelTruck) && (!(_x isKindOf "Man"))) exitWith {
+	if (_x != _fuelTruck) exitWith {
 		_findNearestVehicle set [(count _findNearestVehicle),_x];
 	};
-} count (nearestObjects [player, ["AllVehicles"], 30]);
+} count (([player] call fnc_getPos) nearEntities [["Air","LandVehicle","Ship"],30]);
 
 if (count _findNearestVehicle >= 1) then {
 	// select the nearest one
@@ -35,43 +35,10 @@ if (count _findNearestVehicle >= 1) then {
 		_canSize = (_capacity / 10);
 	
 		format[localize "str_epoch_player_131",_nameText] call dayz_rollingMessages;
-			
-		// alert zombies
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
+		_finished = ["Medic",1] call fn_loopAction;
 
-		_finished = false;
-
-		// force animation 
-		player playActionNow "Medic";
-
-		r_interrupt = false;
-		_animState = animationState player;
-		r_doLoop = true;
-		_started = false;
-
-		while {r_doLoop} do {
-			_animState = animationState player;
-			_isMedic = ["medic",_animState] call fnc_inString;
-			if (_isMedic) then {
-				_started = true;
-			};
-			if (_started && !_isMedic) then {
-				r_doLoop = false;
-				_finished = true;
-			};
-			if (r_interrupt) then {
-				r_doLoop = false;
-			};
-			uiSleep 0.1;
-		};
-		r_doLoop = false;
-
-		if(!_finished) then {
-			r_interrupt = false;
-			if ((vehicle player) == player) then {
-				[objNull, player, rSwitchMove,""] call RE;
-				player playActionNow "stop";
-			};
+		if (!_finished) then {
 			_abort = true;
 		} else {
 			_newFuel = (((fuel _vehicle) * _capacity) + _canSize);

@@ -1,6 +1,6 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
-private ["_array","_vehicle","_part","_hitpoint","_type","_hasToolbox","_section","_nameType","_namePart","_damage","_selection","_dis","_sfx","_hitpoints","_allFixed","__FILE__"];
+private ["_array","_vehicle","_part","_hitpoint","_type","_nameType","_namePart","_damage","_selection","_dis","_sfx","_hitpoints","_allFixed","_finished"];
 
 _id = _this select 2;
 _array = _this select 3;
@@ -15,27 +15,24 @@ dayz_myCursorTarget = objNull;
 
 //diag_log(format["%1 %2", __FILE__, _this]);
 
-_hasToolbox = "ItemToolbox" in items player;
-_section = _part in magazines player;
-
 //moving this here because we need to know which part needed if we don't have it
 _nameType = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
-if (_section and _hasToolbox) then {
-	player removeMagazine _part;
-	player playActionNow "Medic";
-	sleep 1;
-
+if ("ItemToolbox" in items player && (_part in magazines player)) then {
 	_dis=20;
 	_sfx = "repair";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+	
+	_finished = ["Medic",1] call fn_loopAction;
+	
+	// Check again to make sure player did not drop item
+	if (!_finished or !(_part in magazines player)) exitWith {};
+	player removeMagazine _part;
 
 	// Added Nutrition-Factor for work
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
-
-	sleep 5;
 
 	_damage = [_vehicle,_hitpoint] call object_getHit;
 	_vehicle removeAction _id;

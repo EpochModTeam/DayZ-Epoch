@@ -1,7 +1,7 @@
-private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_cancel","_started","_finished","_hasToolbox","_nameType","_namePart","_animState","_isMedic","_damage","_BreakableParts","_selection","_wpn","_classname","_ismelee"];
+private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_cancel","_finished","_hasToolbox","_nameType","_namePart","_damage","_BreakableParts","_selection","_wpn","_classname","_ismelee"];
 
-if (dayz_salvageInProgress) exitWith { localize "str_salvage_inprogress" call dayz_rollingMessages; };
-dayz_salvageInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _array = 	_this select 3;
 _vehicle = 	_array select 0;
@@ -10,8 +10,6 @@ _hitpoint = _array select 2;
 _type = typeOf _vehicle; 
 _isOK = false;
 _brokenPart = false;
-_started = false;
-_finished = false;
 _hasToolbox = "ItemToolbox" in items player;
 _cancel = false;
 
@@ -27,28 +25,14 @@ if (_hasToolbox) then {
 		if ((_vehicle distance (_x select 0)) < (_x select 1)) exitWith {_cancel = true;};
 	} count DZE_SafeZonePosArray;
 	if (_cancel) exitWith {	(localize "str_salvage_safezone") call dayz_rollingMessages;};
-	player playActionNow "Medic";
+	
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,50,true,(getPosATL player)] call player_alertZombies;
 
-	// Added Nutrition-Factor for work
-	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
-
-	r_interrupt = false;
-	_animState = animationState player;
-	r_doLoop = true;
-	
-	while {r_doLoop} do {
-		_animState = animationState player;
-		_isMedic = ["medic",_animState] call fnc_inString;
-		if (_isMedic) then { _started = true; };
-		if (_started and !_isMedic) then { r_doLoop = false; _finished = true; };
-		if (r_interrupt) then { r_doLoop = false; };
-		uiSleep 0.1;
-	};
-	r_doLoop = false;
+	_finished = ["Medic",1] call fn_loopAction;
 
 	if (_finished) then {
+		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		//Remove melee magazines (BIS_fnc_invAdd fix)
 		false call dz_fn_meleeMagazines;
 		_damage = [_vehicle,_hitpoint] call object_getHit;
@@ -87,11 +71,6 @@ if (_hasToolbox) then {
 		};
 		true call dz_fn_meleeMagazines;
 	} else {
-		r_interrupt = false;
-		if (vehicle player == player) then {
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
-		};
 		localize "str_salvage_canceled" call dayz_rollingMessages;
 	};
 } else {
@@ -100,7 +79,7 @@ if (_hasToolbox) then {
 
 dayz_myCursorTarget = objNull;
 s_player_repair_crtl = -1;
-dayz_salvageInProgress = false;
+dayz_actionInProgress = false;
 
 //adding melee mags back if needed
 _wpn = primaryWeapon player;

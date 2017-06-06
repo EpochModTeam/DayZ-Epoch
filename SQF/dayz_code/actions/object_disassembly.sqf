@@ -13,8 +13,6 @@ if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
 
 if(isNull _cursorTarget) exitWith { localize "str_disassembleNoOption" call dayz_rollingMessages; };
 
-if (player getVariable["alreadyBuilding",0] == 1) exitWith { localize "str_upgradeInProgress" call dayz_rollingMessages; };
-
 //Normal blocked stuff
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _isWater = (surfaceIsWater (getPosATL player)) or dayz_isSwimming;
@@ -22,6 +20,9 @@ if(_isWater or _onLadder) exitWith { localize "str_water_ladder_cant_do" call da
 
 _alreadyRemoving = _cursorTarget getVariable["ObjectLocked",0];
 if (_alreadyRemoving == 1) exitWith { localize "str_disassembleInProgress" call dayz_rollingMessages; };
+
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _cursorTarget setVariable["ObjectLocked",1,true];
 _characterID = _cursorTarget getVariable ["characterID","0"];
@@ -39,7 +40,7 @@ _entry = configFile >> "CfgVehicles" >> _upgrade;
 r_interrupt = false;
 
 _disassemblyParts = [] + (getArray (_entry >> "Disassembly" >> "removedParts"));
-_disassemblyReturnChance = [] + (getNumber (_entry >> "Disassembly" >> "removedChance"));
+_disassemblyReturnChance = getNumber (_entry >> "Disassembly" >> "removedChance");
 
 for "_i" from 1 to 20 do {
     _parent = inheritsFrom _entry;
@@ -161,4 +162,4 @@ if (!_realObjectStillThere) then {
 localize "str_disassembleDone" call dayz_rollingMessages;
 
 _cursorTarget setVariable["ObjectLocked",0,true];
-
+dayz_actionInProgress = false;

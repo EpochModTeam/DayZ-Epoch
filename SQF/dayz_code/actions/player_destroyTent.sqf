@@ -1,4 +1,4 @@
-private ["_emptycan","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_alreadyDestroying","_randomJerryCan","_fireIntensity","_dis","_sfx"];
+private ["_emptycan","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_randomJerryCan","_fireIntensity","_dis","_sfx","_finished"];
 
 //Tent Object
 _obj = _this select 3;
@@ -27,19 +27,22 @@ _matchArray = [];
 if ((count _fuelArray == 0)) exitwith { systemChat (localize ("str_setFireFuel")); };
 if ((count _matchArray == 0)) exitwith { systemChat (localize ("str_setFireMatches")); };
 
-//Play normal action animation
-player playActionNow "Medic";
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
 
 //Actionmenu tools
 player removeAction s_player_destroytent;
 s_player_destroytent = -1;
 
-//Make sure you can only destroy once
-_alreadyDestroying = _obj getVariable["alreadyDestroying",0];
+_dis=20;
+_sfx = "tentpack";
+[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
+[player,_dis,true,(getPosATL player)] call player_alertZombies;
 
-if (_alreadyDestroying == 1) exitWith {localize "str_TentAlreadyLit" call dayz_rollingMessages;};
-
-_obj setVariable["alreadyDestroying",1];
+_finished = ["Medic",1] call fn_loopAction;
+if (!_finished or (isNull _obj)) exitWith {
+	dayz_actionInProgress = false;
+};
 
 //Jerry can system ** Needs redoing
 //Select random can from array
@@ -49,24 +52,20 @@ _name = getText (configFile >> "CfgMagazines" >> _randomJerryCan >> "displayName
 _emptycan = getText (configFile >> "CfgMagazines" >> _randomJerryCan >> "emptycan");
 _fireIntensity = getNumber (configFile >> "CfgMagazines" >> _randomJerryCan >> "fireIntensity");
 
+if !(_randomJerryCan in magazines player) exitWith {
+	localize "str_setFireFuel" call dayz_rollingMessages;
+	dayz_actionInProgress = false;
+};
+
 player removeMagazine _randomJerryCan;
 player addMagazine _emptycan;
 
 ["matches",0.3] call fn_dynamicTool;
 
-//Normal alerts 
-_dis=20;
-_sfx = "tentpack";
-[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-[player,_dis,true,(getPosATL player)] call player_alertZombies;
-
 // Added Nutrition-Factor for work
 ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-uiSleep 3;
-
-_activatingPlayer = player;
-PVDZ_obj_Destroy = [_objectID,_objectUID, _activatingPlayer];
+PVDZ_obj_Destroy = [_objectID,_objectUID,player];
 publicVariableServer "PVDZ_obj_Destroy";
 
 //Send killed for object
@@ -87,3 +86,4 @@ _obj inflame true;
 //_obj spawn player_fireMonitor;
 
 localize "str_success_tent_destroyed" call dayz_rollingMessages;
+dayz_actionInProgress = false;

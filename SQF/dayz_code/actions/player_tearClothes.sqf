@@ -1,4 +1,4 @@
-private ["_skin","_rnd","_rounded","_itemtocreate","_i","_config","_result"];
+private ["_skin","_rnd","_rounded","_itemtocreate","_i","_config","_result","_finished"];
 
 _skin = _this;
 _config = configFile >> "CfgMagazines" >> _skin;
@@ -9,11 +9,20 @@ _rounded = round _rnd;
 call gear_ui_init;
 closeDialog 0;
 
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
+
 //Tear the clothes
-player playActionNow "Medic";
 [player,"bandage",0,false] call dayz_zombieSpeak;
-uiSleep 6;
-if !(_skin in magazines player) exitWith {localize "str_tear_clothes_0" call dayz_rollingMessages;};
+_finished = ["Medic",1] call fn_loopAction;
+if (!_finished) exitWith {
+	dayz_actionInProgress = false;
+};
+
+if !(_skin in magazines player) exitWith {
+	localize "str_tear_clothes_0" call dayz_rollingMessages;
+	dayz_actionInProgress = false;
+};
 player removeMagazine _skin;
 
 switch (_rounded) do {
@@ -49,3 +58,5 @@ while {_i < _rounded} do {
 	};
 };
 true call dz_fn_meleeMagazines;
+
+dayz_actionInProgress = false;

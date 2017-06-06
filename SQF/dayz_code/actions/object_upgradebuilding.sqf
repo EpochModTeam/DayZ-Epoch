@@ -9,7 +9,7 @@
 
 private ["_nearByChoppers","_cursorTarget","_type","_class","_requiredTools","_requiredParts","_upgradeType","_producedParts","_randomCreate",
 	"_upgradeClass","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_objectID","_objectUID",
-	"_ownerArray","_ownerPasscode","_dir","_vector","_object","_puid","_clanArray","_wh","_variables"];
+	"_ownerArray","_ownerPasscode","_dir","_vector","_object","_puid","_clanArray","_wh","_variables","_finished"];
 
 _cursorTarget = _this;
 // ArmaA2 bug workaround: sometimes the object is null
@@ -71,26 +71,25 @@ if (!_ok) exitWith {
     { player addMagazine _x; } foreach _upgradeParts;
 	format [localize "str_upgradeMissingPart", _missing] call dayz_rollingMessages;
 };
-    
-//Upgrade Started
-if ((player getVariable["alreadyBuilding",0]) == 1) exitWith {
-    {  player addMagazine _x; } foreach _upgradeParts;
-    localize "str_upgradeInProgress" call dayz_rollingMessages;
-};
-player setVariable["alreadyBuilding",1];
 
-//play animation
-player playActionNow "Medic";
+if (dayz_actionInProgress) exitWith {
+	{ player addMagazine _x; } forEach _upgradeParts;
+	localize "str_player_actionslimit" call dayz_rollingMessages;
+};
+dayz_actionInProgress = true;
+
 _dis=20;
 [player,"tentpack",0,false,_dis] call dayz_zombieSpeak;
 [player,_dis,true,(getPosATL player)] call player_alertZombies;
 
+_finished = ["Medic",1] call fn_loopAction;
+if (!_finished) exitWith {
+	{ player addMagazine _x; } forEach _upgradeParts;
+	dayz_actionInProgress = false;
+};
+
 // Added Nutrition-Factor for work
 ["Working",0,[100,15,5,0]] call dayz_NutritionSystem;
-
-//wait animation end
-waitUntil {getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 1};
-waitUntil {getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 0};
     
 //get data from old building.
 _characterID = _cursorTarget getVariable ["characterID","0"];
@@ -153,5 +152,5 @@ if (isServer) then {
 player reveal _object;
 
 //Make sure  its unlocked 
-player setVariable["alreadyBuilding",0];
 localize "str_upgradeDone" call dayz_rollingMessages;
+dayz_actionInProgress = false;

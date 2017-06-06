@@ -10,7 +10,7 @@
 	failChance = 1;
 */
 //diag_log("crafting system");
-private ["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace","_classname","_isClass","_onLadder","_hasTools","_avail","_selection","_item","_amount","_itemName","_freeSlots","_slotType","_i","_j","_dis","_sfx"];
+private ["_config","_input","_output","_required","_failChance","_hasInput","_availabeSpace","_classname","_isClass","_onLadder","_hasTools","_avail","_selection","_item","_amount","_itemName","_freeSlots","_slotType","_i","_j","_dis","_sfx","_finished"];
 
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -129,13 +129,14 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 			//player playActionNow "PutDown";
 			call gear_ui_init;
 			closeDialog 1;
-			player playActionNow "Medic";
-			uiSleep 2;
-			//setup alert and speak
+			
 			_dis=20;
 			_sfx = if (_classname == "equip_rope") then {"bandage"} else {"chopwood"};
 			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 			[player,_dis,true,(getPosATL player)] call player_alertZombies;
+			
+			_finished = ["Medic",1] call fn_loopAction;
+			if (!_finished) exitWith {};
 			
 			{
 				_item = _x select 0;
@@ -155,7 +156,7 @@ if(!r_drag_sqf and !r_player_unconscious and !_onLadder) then {
 					//uiSleep 0.1;
 				};
 			} forEach _input;
-			uiSleep 3;
+
 			{
 				_item = _x select 0;
 				_selection = _x select 1;

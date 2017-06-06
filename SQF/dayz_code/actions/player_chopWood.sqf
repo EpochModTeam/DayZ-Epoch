@@ -1,5 +1,5 @@
 
-private ["_dis","_sfx","_breaking","_countOut","_counter","_isOk","_proceed","_animState","_started","_finished","_isMedic","_itemOut","_tree","_distance2d"];
+private ["_dis","_sfx","_breaking","_countOut","_counter","_isOk","_proceed","_finished","_itemOut","_tree","_distance2d"];
 
 call gear_ui_init;
 closeDialog 1;
@@ -26,40 +26,17 @@ if (!isNull _tree) then {
     _proceed = false;
 
     while {_isOk} do {
-        //play action   
-        player playActionNow "Medic";
-
         //setup alert and speak
         _dis=20;
         _sfx = "chopwood";
         [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
         [player,_dis,true,(getPosATL player)] call player_alertZombies;
+		
+		//play action
+		_finished = ["Medic",1] call fn_loopAction;
         
         // Working-Factor for chopping wood.
 		["Working",0,[50,10,5,0]] call dayz_NutritionSystem;
-
-        r_interrupt = false;
-        _animState = animationState player;
-        r_doLoop = true;
-        _started = false;
-        _finished = false;
-
-        while {r_doLoop} do {
-            _animState = animationState player;
-            _isMedic = ["medic",_animState] call fnc_inString;
-            if (_isMedic) then {
-                _started = true;
-            };
-            if (_started and !_isMedic) then {
-                r_doLoop = false;
-                _finished = true;
-            };
-            if (r_interrupt) then {
-                r_doLoop = false;
-            };
-
-            uiSleep 0.1;
-        };
 
         if(!_finished) exitWith {
             _isOk = false;
@@ -118,13 +95,6 @@ if (!isNull _tree) then {
 	};
     if !(_proceed) then {            
         localize "str_player_24_Stoped" call dayz_rollingMessages;
-
-        r_interrupt = false;
-
-        if (vehicle player == player) then {
-            [objNull, player, rSwitchMove,""] call RE;
-            player playActionNow "stop";
-        };
     };
     //adding melee mags back if needed
     switch (primaryWeapon player) do {

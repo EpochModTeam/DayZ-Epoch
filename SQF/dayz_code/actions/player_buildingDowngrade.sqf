@@ -2,7 +2,7 @@
 	DayZ Base Building Upgrades
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_ownerID","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems"];
+private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_ownerID","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems","_finished"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_48" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -37,13 +37,15 @@ _text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _upgrade = getArray (configFile >> "CfgVehicles" >> _classname >> "downgradeBuilding");
 
 if ((count _upgrade) > 0) then {
-
 	_newclassname = _upgrade select 0;
-
 	_refund = _upgrade select 1;
-	["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
-	player playActionNow "Medic";
+	
 	[player,20,true,(getPosATL player)] spawn player_alertZombies;
+	
+	_finished = ["Medic",1] call fn_loopAction;
+	if (!_finished) exitWith {};
+	
+	["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 
 	_invResult = false;
 	_abortInvAdd = false;

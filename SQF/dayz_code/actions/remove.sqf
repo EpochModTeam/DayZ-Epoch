@@ -4,7 +4,7 @@ dayz_actionInProgress = true;
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_obj","_objectID","_objectUID","_started","_finished","_animState","_isMedic","_isOk","_proceed","_counter","_limit","_objType","_sfx","_dis","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular","_success","_lootGroupIndex","_output"];
+private ["_obj","_objectID","_objectUID","_finished","_isOk","_proceed","_counter","_limit","_objType","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular","_success","_lootGroupIndex","_output"];
 
 player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
@@ -92,35 +92,8 @@ while {_isOk} do {
 	
 	format[localize "str_epoch_player_163",_nameVehicle,(_counter + 1),_limit] call dayz_rollingMessages;
 
-	player playActionNow "Medic";
-	_dis=20;
-	[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-
-	r_interrupt = false;
-	_animState = animationState player;
-	r_doLoop = true;
-	_started = false;
-	_finished = false;
-
-	while {r_doLoop} do {
-		_animState = animationState player;
-		_isMedic = ["medic",_animState] call fnc_inString;
-		if (_isMedic) then {
-			_started = true;
-		};
-		if (_started && !_isMedic) then {
-			r_doLoop = false;
-			_finished = true;
-			_sfx = "repair";
-			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-		};
-		if (r_interrupt) then {
-			r_doLoop = false;
-		};
-
-		uiSleep 0.1;
-
-	};
+	[player,"repair",0,false,20] call dayz_zombieSpeak;
+	_finished = ["Medic",1] call fn_loopAction;
 
 	if(!_finished) exitWith {
 		_isOk = false;
@@ -276,13 +249,6 @@ if (_proceed && _success) then {
 		};
 	} else {
 		localize "str_epoch_player_91" call dayz_rollingMessages;
-	};
-
-} else {
-	r_interrupt = false;
-	if (vehicle player == player) then {
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "stop";
 	};
 };
 dayz_actionInProgress = false;

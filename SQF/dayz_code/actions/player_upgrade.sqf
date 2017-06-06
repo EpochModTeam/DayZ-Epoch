@@ -2,7 +2,7 @@
 	DayZ Base Building Upgrades
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_ownerID","_qtyBP","_forEachIndex","_bpMags","_countNew","_bp2Remove","_count","_friendsArr","_vector","_temp_BP_removed_array"];
+private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_ownerID","_qtyBP","_forEachIndex","_bpMags","_countNew","_bp2Remove","_count","_friendsArr","_vector","_temp_BP_removed_array","_finished"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -51,9 +51,10 @@ if ((count _upgrade) > 0) then {
 	} forEach _requirements;
 	
 	if (_proceed) then {
-		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
-		player playActionNow "Medic";
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
+		_finished = ["Medic",1] call fn_loopAction;
+		if (!_finished) exitWith {};
+		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 	
 		_temp_removed_array = [];
 		_temp_BP_removed_array = [];

@@ -1,4 +1,4 @@
-private ["_vehicle","_started","_finished","_animState","_isMedic","_abort","_configVeh","_nameText","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_towTruck","_towTruckSize","_allowedSize"];
+private ["_vehicle","_finished","_configVeh","_nameText","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_towTruck","_towTruckSize","_allowedSize"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_96" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -37,45 +37,9 @@ if(_IsNearVehicle >= 1) then {
 	// alert zombies
 	[player,20,true,(getPosATL player)] spawn player_alertZombies;
 
-	_finished = false;
-
-	// force animation 
-	player playActionNow "Medic";
-
-	r_interrupt = false;
-	_animState = animationState player;
-	r_doLoop = true;
-	_started = false;
-
-	while {r_doLoop} do {
-		_animState = animationState player;
-		_isMedic = ["medic",_animState] call fnc_inString;
-		if (_isMedic) then {
-			_started = true;
-		};
-		if (_started && !_isMedic) then {
-			r_doLoop = false;
-			_finished = true;
-		};
-		if (r_interrupt) then {
-			r_doLoop = false;
-		};
-		uiSleep 0.1;
-	};
-	r_doLoop = false;
-
-	if(!_finished) then {
-		r_interrupt = false;
-			
-		if (vehicle player == player) then {
-			[objNull, player, rSwitchMove,""] call RE;
-			player playActionNow "stop";
-		};
-		_abort = true;
-	};
+	_finished = ["Medic",1] call fn_loopAction;
 
 	if (_finished) then {
-		
 		if((sizeOf typeOf _vehicle) <= _allowedSize) then {
 			if([_vehicle,_towTruck] call fnc_isInsideBuilding && ((vectorUp _vehicle) select 2) > 0.5) then {
 				if(typeOf _towTruck == "TOW_DZE" ) then {
@@ -93,9 +57,6 @@ if(_IsNearVehicle >= 1) then {
 		};
 
 	};
-
-
-
 } else {
 	localize "str_epoch_player_27" call dayz_rollingMessages;
 };

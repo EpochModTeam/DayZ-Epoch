@@ -2,7 +2,7 @@
 	DayZ Epoch Vehicle Upgrades
 	Made for DayZ Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_temp_removed_array","_countr","_objectID","_objectUID","_location","_dir","_objectCharacterID","_weapons","_magazines","_backpacks","_classname","_object","_holder","_objWpnTypes","_objWpnQty","_newclassname","_requirements","_upgrade","_vehicle","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle"];
+private ["_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_objectID","_objectUID","_location","_dir","_objectCharacterID","_classname","_newclassname","_upgrade","_vehicle","_findNearestVehicles","_findNearestVehicle","_IsNearVehicle","_finished","_temp_removed_array_mag","_temp_removed_array_wep"];
 
 if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_52" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -32,7 +32,7 @@ if (_IsNearVehicle >= 1) then {
 
 		_classname = typeOf _vehicle;
 
-		// lookup vehicle && find if any upgrades are available
+		// lookup vehicle and find if any upgrades are available
 		_upgrade = getArray (configFile >> "CfgVehicles" >> _classname >> "Upgrades" >> _upgrade);
 
 		if (!isNil "_upgrade" && (count _upgrade) > 0) then {
@@ -59,9 +59,9 @@ if (_IsNearVehicle >= 1) then {
 			} forEach _requirementsWeapon;
 
 			if (_proceed) then {
-
-				player playActionNow "Medic";
 				[player,20,true,(getPosATL player)] spawn player_alertZombies;
+				_finished = ["Medic",1] call fn_loopAction;
+				if (!_finished) exitWith {};
 
 				_temp_removed_array_mag = [];
 				_temp_removed_array_wep = [];

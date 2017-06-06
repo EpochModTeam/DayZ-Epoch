@@ -1,4 +1,4 @@
-private ["_dir","_classname","_b0x1337","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool"];
+private ["_dir","_classname","_b0x1337","_location","_item","_config","_create_raw","_create","_qty","_type","_hasCrate","_hasTool","_finished"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_75" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -27,6 +27,11 @@ if ((_location select 2) < 0) then {
 	_location set [2,0];
 };
 
+_finished = ["Medic",1] call fn_loopAction;
+if (!_finished or !(_item in magazines player)) exitWith {
+	dayz_actionInProgress = false;
+};
+
 //remove (partially) full crate
 player removeMagazine _item;
 _dir = getDir player;
@@ -36,9 +41,6 @@ _classname = "WeaponHolder";
 player addMagazine "bulk_empty";
 
 ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
-// Change to optional wait to complete
-player playActionNow "Medic";
-uiSleep 6;
 		
 _b0x1337 = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 _b0x1337 setDir _dir;

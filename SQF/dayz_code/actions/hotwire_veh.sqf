@@ -1,4 +1,4 @@
-private ["_time","_vehicle","_removed","_vehType"];
+private ["_time","_vehicle","_removed","_vehType","_finished"];
 _vehicle = _this select 3;
 
 if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_32" call dayz_rollingMessages;};
@@ -12,10 +12,13 @@ s_player_lockUnlockInside_ctrl = 1;
 _removed = ([player,"ItemHotwireKit",1] call BIS_fnc_invRemove);
 
 if (_removed == 1) then {
-	player playActionNow "Medic";
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,50,true,(getPosATL player)] spawn player_alertZombies;
-	uiSleep 8;
+	
+	_finished = ["Medic",1] call fn_loopAction;
+	if (!_finished) exitWith {
+		player addMagazine "ItemHotwireKit";
+	};
 	
 	_vehType = getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
 	if ((random 10) <= 7.5) then {

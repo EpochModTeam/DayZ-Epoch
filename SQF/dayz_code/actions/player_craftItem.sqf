@@ -23,7 +23,7 @@ class ItemActions
 	};
 };
 */
-private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_started","_finished","_animState","_isMedic","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
+private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_finished","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
 
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -113,33 +113,10 @@ if (_canDo) then {
 			if (_proceed) then {
 				localize "str_epoch_player_62" call dayz_rollingMessages;
 
-				player playActionNow "Medic";
-
 				[player,_sfx,0,false] call dayz_zombieSpeak;
 				[player,50,true,(getPosATL player)] spawn player_alertZombies;
 
-				r_interrupt = false;
-				_animState = animationState player;
-				r_doLoop = true;
-				_started = false;
-				_finished = false;
-
-				while {r_doLoop} do {
-					_animState = animationState player;
-					_isMedic = ["medic",_animState] call fnc_inString;
-					if (_isMedic) then {
-						_started = true;
-					};
-					if (_started && !_isMedic) then {
-						r_doLoop = false;
-						_finished = true;
-					};
-					if (r_interrupt) then {
-						r_doLoop = false;
-					};
-					uiSleep 0.1;
-				};
-				r_doLoop = false;
+				_finished = ["Medic",1] call fn_loopAction;
 
 				if (_finished) then {
 					_removed_total = 0; // count total of removed items
@@ -254,11 +231,6 @@ if (_canDo) then {
 					};
 
 				} else {
-					r_interrupt = false;
-					if (vehicle player == player) then {
-						[objNull, player, rSwitchMove,""] call RE;
-						player playActionNow "stop";
-					};
 					localize "str_epoch_player_64" call dayz_rollingMessages;
 					_craft_doLoop = false;
 				};

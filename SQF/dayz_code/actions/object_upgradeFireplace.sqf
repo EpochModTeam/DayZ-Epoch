@@ -11,8 +11,8 @@
 */
 private ["_objclass","_cursorTarget","_item","_classname","_requiredTools","_requiredParts","_upgrade","_upgradeConfig",
 "_upgradeDisplayname","_onLadder","_isWater","_upgradeParts","_startUpgrade","_missingPartsConfig","_textMissingParts","_dis",
-"_sfx","_ownerID","_objectID","_objectUID","_alreadyupgrading","_dir","_weapons","_magazines","_backpacks",
-"_object","_objWpnTypes","_objWpnQty","_countr","_itemName","_vector"];
+"_sfx","_ownerID","_objectID","_objectUID","_dir","_weapons","_magazines","_backpacks",
+"_object","_objWpnTypes","_objWpnQty","_countr","_itemName","_vector","_finished"];
 
 _cursorTarget = _this select 0;
 
@@ -21,6 +21,9 @@ if ((isNil "_cursorTarget") or {(isNull _cursorTarget)}) then {
     _cursorTarget = if (count _cursorTarget == 0) then { objNull } else { _cursorTarget select 0 };
 };
 if (isNull _cursorTarget) exitWith {};
+
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _item = typeof _cursorTarget;
 
@@ -59,7 +62,7 @@ _isWater = 		(surfaceIsWater (getPosATL player)) or dayz_isSwimming;
 _upgradeParts = [];
 _startUpgrade = true;
 
-if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_rollingMessages; };
+if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_rollingMessages; dayz_actionInProgress = false; };
 
 // lets check player has requiredTools for upgrade
 {
@@ -89,12 +92,14 @@ if(_isWater or _onLadder) exitWith { localize "str_CannotUpgrade" call dayz_roll
 
 //Does object have a upgrade option.
 if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
-	//play animation
-	player playActionNow "Medic";
 	_dis = 20;
 	_sfx = "tentpack";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+	
+	_finished = ["Medic",1] call fn_loopAction;
+	//Double check player did not drop required parts
+	if (!_finished or (isNull _cursorTarget) or ({!(_x in magazines player)} count _upgradeParts > 0)) exitWith {};
 
 	// Added Nutrition-Factor for work
 	["Working",0,[100,15,5,0]] call dayz_NutritionSystem;
@@ -103,15 +108,6 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	_ownerID = _cursorTarget getVariable ["characterID","0"];
 	_objectID = _cursorTarget getVariable ["ObjectID","0"];
 	_objectUID = _cursorTarget getVariable ["ObjectUID","0"];
-
-	//Upgrade
-	_alreadyupgrading = _cursorTarget getVariable["alreadyupgrading",0];
-
-	if (_alreadyupgrading == 1) exitWith { localize "str_upgradeInProgress" call dayz_rollingMessages; };
-	
-	_cursorTarget setVariable["alreadyupgrading",1];
-
-	uiSleep 0.03;
 
 	//Get location and direction of old item
 	_dir = round getDir _cursorTarget;
@@ -125,9 +121,6 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 
 	//get contents
 	_magazines = getMagazineCargo _cursorTarget;
-	
-	//replay animation
-	player playActionNow "Medic";
 	
 	deleteVehicle _cursorTarget;
 	
@@ -161,14 +154,10 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 		_countr = _countr + 1;
 	} count _objWpnTypes;
 	
-	uiSleep 3;
-	
 	//Light fire 
 	[_object,true] call dayz_inflame;
 	_object spawn player_fireMonitor;
 	
-	//publish new tent
-	//[[[],[]],[[],[]],[[],[]]]
 	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[[[],[]],_magazines,[[],[]]]];
 	publicVariableServer "PVDZ_obj_Publish";
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
@@ -179,3 +168,5 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	localize "str_upgradeNoOption" call dayz_rollingMessages;
 */
 };
+
+dayz_actionInProgress = false;

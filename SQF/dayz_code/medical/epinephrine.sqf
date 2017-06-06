@@ -1,17 +1,18 @@
-// bleed.sqf
+private ["_finished","_isDead","_unit"];
+
 _unit = (_this select 3) select 0;
 _isDead = _unit getVariable["USEC_isDead",false];
 call fnc_usec_medic_removeActions;
-player removeMagazine "ItemEpinephrine";
 
-player playActionNow "Medic";
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
-uiSleep 3;
+_finished = ["Medic",1] call fn_loopAction;
 
-if (!_isDead) then {
+if (!_isDead && _finished && ("ItemEpinephrine" in magazines player)) then {
+	player removeMagazine "ItemEpinephrine";
 	_unit setVariable ["NORRN_unconscious", false, true];
 	_unit setVariable ["USEC_isCardiac",false,true];
-	uiSleep 5;
 	
 	//give humanity
 	[25,0] call player_humanityChange;
@@ -21,3 +22,4 @@ if (!_isDead) then {
 };
 
 r_action = false;
+dayz_actionInProgress = false;

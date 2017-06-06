@@ -2,7 +2,7 @@
 	DayZ Base Building Maintenance
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_requirements","_obj","_upgrade","_objectCharacterID"];
+private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_requirements","_obj","_upgrade","_objectCharacterID","_finished"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -47,10 +47,13 @@ _proceed = true;
 	if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
 } forEach _requirements;
 
-if (_proceed) then {
-	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
-	player playActionNow "Medic";
+if (_proceed) then {	
 	[player,20,true,(getPosATL player)] spawn player_alertZombies;
+	
+	_finished = ["Medic",1] call fn_loopAction;
+	if (!_finished) exitWith {};
+	
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
 	_temp_removed_array = [];
 	_removed_total = 0;
@@ -88,7 +91,6 @@ if (_proceed) then {
 	_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
 	format[localize "STR_EPOCH_ACTIONS_6",_missingQty, _textMissing] call dayz_rollingMessages;
 };
-
 
 dayz_actionInProgress = false;
 s_player_maint_build = -1;

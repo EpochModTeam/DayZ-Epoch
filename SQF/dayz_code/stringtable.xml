@@ -167,14 +167,6 @@
 			<Czech>Upéct jídlo</Czech>
 			<French>Cuire la Nourriture</French>
 		</Key>
-		<Key ID="str_actions_self_06">
-			<English>Remove fireplace</English>
-			<German>Feuerstelle zerstören</German>
-			<Russian>Убрать костер</Russian>
-			<Spanish>Remover Fogata</Spanish>
-			<French>Retirer le Feu de camp</French>
-			<Czech>Odstranit ohniště</Czech>
-		</Key>
 		<Key ID="str_actions_self_07">
 			<English>Pack Tent</English>
 			<German>Zelt abbauen</German>
@@ -1133,15 +1125,6 @@
 			<French>Création de %1 réussie</French>
 			<Czech>Úspěšně jste vyrobili %1</Czech>
 		</Key>
-		<Key ID="str_salvage_inprogress">
-			<English>Salvage already in progress.</English>
-			<Spanish>La recuperación ya está en curso.</Spanish>
-			<Russian>Демонтаж в процессе.</Russian>
-			<Czech>Demontáž již probíhá.</Czech>
-			<French>Récupération déjà en cours.</French>
-			<German>Die Demontage läuft bereits.</German>
-			<Dutch>Reeds bezig met bergen.</Dutch>
-		</Key>
 		<Key ID="str_salvage_destroyed">
 			<!-- %1 part name %2 veh name -->
 			<English>You have destroyed %1 while attempting to remove from %2</English>
@@ -1270,15 +1253,6 @@
 			<Czech>Přečerpat z vozidla palivo</Czech>
 			<French>Siphonner le réservoir</French>
 			<German>Treibstoff aus Tank abzapfen</German>
-		</Key>
-		<Key ID="str_siphon_inprogress">
-			<English>Siphon already in progress.</English>
-			<Russian>Сливаем топливо.</Russian>
-			<Spanish>El sifón ya está en progreso.</Spanish>
-			<Czech>Přečerpávání již probíhá.</Czech>
-			<French>Siphonnage en cours.</French>
-			<German>Der Treibstoff fließt bereits ab.</German>
-			<Dutch>Reeds bezig met brandstofverplaatsing.</Dutch>
 		</Key>
 		<Key ID="str_siphon_preparing">
 			<!-- %1 empty jerrycan name -->
@@ -1437,14 +1411,6 @@
 			<Czech>Nelze zapálit, chybí palivo.</Czech>
 			<French>Impossible de mettre le feu, pas de carburant.</French>
 			<German>Ohne Benzin kannst du das nicht anzünden.</German>
-		</Key>
-		<Key ID="str_TentAlreadyLit">
-			<English>This tent is already being set on fire.</English>
-			<Russian>Эта палатка уже горит.</Russian>
-			<Spanish>Esta tienda de campaña ya está siendo incendiada.</Spanish>
-			<Czech>Tento stan je již zapálen.</Czech>
-			<French>Cette tente est déjà en feu.</French>
-			<German>Das Zelt brennt schon.</German>
 		</Key>
 		<Key ID="str_endSleepStandUp">
 			<English>Resting interrupted, proceeding to stand up.</English>
@@ -1630,13 +1596,6 @@
 			<French>Amélioration effectuée</French>
 			<Czech>Vylepšení dokončeno.</Czech>
 			<German>Erweiterung durchgeführt.</German>
-		</Key>
-		<Key ID="str_upgradeInProgress">
-			<English>Object is already upgrading</English>
-			<Russian>Объект уже улучшается.</Russian>
-			<French>L&apos;amélioration est déjà en cours</French>
-			<Czech>Objekt je právě vylepšován.</Czech>
-			<German>Dieses Objekt wird gerade erweitert.</German>
 		</Key>
 		<Key ID="str_upgradeNoOption">
 			<English>Object has no upgrade option.</English>
@@ -6630,22 +6589,6 @@
 			<French>Vous avez réussi à détruire une tente.</French>
 			<Czech>Úspěšně jste zničili stan.</Czech>
 		</Key>
-		<Key ID="str_success_tent_pitch">
-			<English>You have pitched your tent</English>
-			<German>Du hast das Zelt erfolgreich aufgeschlagen.</German>
-			<Russian>Вы установили палатку.</Russian>
-			<Spanish>Asentaste tu carpa.</Spanish>
-			<French>Vous avez installé votre tente.</French>
-			<Czech>Postavili jste stan.</Czech>
-		</Key>
-		<Key ID="str_fail_tent_pitch">
-			<English>You cannot place a Tent here. The area must be flat, and free of other objects</English>
-			<German>Du kannst hier kein Zelt aufbauen, da der Untergrund nicht flach und frei von Hindernissen ist.</German>
-			<Russian>Палатку нужно ставить на ровную поверхность, без объектов поблизости.</Russian>
-			<Spanish>No puedes asentar tu carpa aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>Vous ne pouvez pas placer de tente ici. Le sol doit être plat et dégagé.</French>
-			<Czech>Stan zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
-		</Key>
 		<Key ID="str_success_stash_pitch">
 			<English>You have created a %1.</English>
 			<German>Du hast eine %1 hergestellt.</German>
@@ -6733,14 +6676,6 @@
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
 			<French>Vous ne pouvez pas faire de feu de camp ici. Le sol doit être plat et dégagé.</French>
 			<Czech>Ohniště zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
-		</Key>
-		<Key ID="str_fireplace_removed">
-			<English>Fireplace has been removed</English>
-			<German>Die Feuerstelle wurde abgebaut.</German>
-			<Russian>Костер убран.</Russian>
-			<Spanish>La fogata fue removida.</Spanish>
-			<French>Le feu de camp a été retiré.</French>
-			<Czech>Ohniště bylo odstraněno.</Czech>
 		</Key>
 		<Key ID="str_success_gutted_animal">
 			<English>%1 has been gutted, %2 meat steaks now on the carcass</English>
@@ -7151,11 +7086,6 @@
 			<Czech>V blízkosti nejsou žádné skály.</Czech>
 			<German>Es befinden sich keine Felsen in der Nähe.</German>
 		</Key>
-		<Key ID="STR_MINING_IN_PROGRESS">
-			<English>Mining already in progress!</English>
-			<Russian>Добыча в процессе!</Russian>
-			<German>Du bist bereits dabei etwas abzubauen!</German>
-		</Key>
 		<Key ID="str_player_toback_fail">
 			<English>Cannot add %1 to back.</English>
 			<Spanish>No se pudo agregar %1 a la espalda.</Spanish>
@@ -7399,14 +7329,6 @@
 			<Spanish>Use Q y E para rotar el objeto y entonces seleccione la acción deseada</Spanish>
 			<French>Utilisez A et E pour tourner l&apos;objet, et V pour le pencher.</French>
 			<Czech>Použijte Q a E pro rotaci objektu, V pro naklopení. Poté vyberte vámi požadovanou akci.</Czech>
-		</Key>
-		<Key ID="str_player_build_movingfast">
-			<English>You are moving too fast!</English>
-			<German>Du bewegst dich zu schnell!</German>
-			<Russian>Вы слишком быстро двигаетесь!</Russian>
-			<Spanish>¡Te estás moviendo muy rápido!</Spanish>
-			<French>Vous vous déplacez trop vite!</French>
-			<Czech>Pohybujete se příliš rychle!</Czech>
 		</Key>
 		<Key ID="str_player_build_complete">
 			<English>Complete Build</English>
@@ -11891,14 +11813,6 @@
 			<French>déjà en cours.</French>
 			<Czech>již probíhá.</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_PLAYER_99">
-			<English>Stop is already in progress.</English>
-			<German>Stoppen des Generators bereits im Gange.</German>
-			<Russian>Уже останавливается.</Russian>
-			<Dutch>Bezig met stoppen.</Dutch>
-			<French>L'arrêt est déjà en cours.</French>
-			<Czech>Zastavování již probíhá.</Czech>
-		</Key>
 		<Key ID="STR_EPOCH_PLAYER_100">
 			<English>Preparing to stop generator, move to cancel.</English>
 			<German>Generator wird abgeschaltet, bewege dich um den Vorgang abzubrechen.</German>
@@ -12002,14 +11916,6 @@
 			<Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
 			<French>Vous ne pouvez pas emballer %1, vous n'en connaissez pas la combinaison.</French>
 			<Czech>Nemůžete sbalit %1, neznáte správnou kombinaci.</Czech>
-		</Key>
-		<Key ID="STR_EPOCH_PLAYER_120">
-			<English>%1 is already being packed.</English>
-			<German>Diese(r) %1 wird bereits gepackt.</German>
-			<Russian>%1 уже запакован.</Russian>
-			<Dutch>Deze %1 wordt al reeds ingepakt.</Dutch>
-			<French>%1 est déjà en cours d'emballage.</French>
-			<Czech>Balení %1 již probíhá.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_121">
 			<English>Packing %1, move from this position to cancel within 5 seconds.</English>

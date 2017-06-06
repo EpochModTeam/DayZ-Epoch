@@ -1,4 +1,4 @@
-private ["_bottletext","_tin1text","_tin2text","_tintext","_hastinitem","_qty","_dis","_sfx","_WB2Add"];
+private ["_bottletext","_tin1text","_tin2text","_tintext","_hastinitem","_qty","_dis","_sfx","_WB2Add","_finished"];
 
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -8,10 +8,7 @@ _tin1text = getText (configFile >> "CfgMagazines" >> "TrashTinCan" >> "displayNa
 _tin2text = getText (configFile >> "CfgMagazines" >> "ItemSodaEmpty" >> "displayName");
 _tintext = format["%1 / %2",_tin1text,_tin2text];
 //_hasbottleitem = (("ItemWaterBottle" in magazines player) || {"ItemWaterBottleInfected" in magazines player} || {"ItemWaterBottleSafe" in magazines player});
-_qty = 0;
-_qty = _qty  + ({
-_x in ["ItemWaterBottleInfected","ItemWaterBottle","ItemWaterBottleSafe","ItemWaterbottle1oz","ItemWaterbottle2oz","ItemWaterbottle3oz","ItemWaterbottle4oz","ItemWaterbottle5oz","ItemWaterbottle6oz","ItemWaterbottle7oz","ItemWaterbottle8oz","ItemWaterbottle9oz"];
-} count magazines player);
+_qty = {_x in ["ItemWaterBottleInfected","ItemWaterBottle","ItemWaterBottleSafe","ItemWaterbottle1oz","ItemWaterbottle2oz","ItemWaterbottle3oz","ItemWaterbottle4oz","ItemWaterbottle5oz","ItemWaterbottle6oz","ItemWaterbottle7oz","ItemWaterbottle8oz","ItemWaterbottle9oz"]} count magazines player;
 a_player_boil = true;
 player removeAction s_player_boil;
 //s_player_boil = -1;
@@ -28,13 +25,17 @@ _hastinitem = false;
 if (!_hastinitem) exitWith {format[localize "str_player_31",_tintext,localize "str_player_31_fill"] call dayz_rollingMessages; a_player_boil = false; dayz_actionInProgress = false;};
 */
 if (_qty > 0) then {
-	player playActionNow "Medic";
-	uiSleep 1;
 	_dis=10;
 	_sfx = "cook";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
-	uiSleep 5;
+	
+	_finished = ["Medic",1] call fn_loopAction;
+	
+	// Double check player did not drop item
+	_qty = {_x in ["ItemWaterBottleInfected","ItemWaterBottle","ItemWaterBottleSafe","ItemWaterbottle1oz","ItemWaterbottle2oz","ItemWaterbottle3oz","ItemWaterbottle4oz","ItemWaterbottle5oz","ItemWaterbottle6oz","ItemWaterbottle7oz","ItemWaterbottle8oz","ItemWaterbottle9oz"]} count magazines player;
+	
+	if (_qty == 0 or !_finished) exitWith {};
 
 	for "_x" from 1 to _qty do {
 		_WB2Add = "ItemWaterBottleBoiled";

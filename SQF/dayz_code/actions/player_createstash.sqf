@@ -1,4 +1,4 @@
-private ["_playerPos","_item","_location","_config","_text","_dir","_dis","_sfx","_consumetext","_stashname","_stashtype","_stash","_consume","_hasitemcount","_worldspace"];
+private ["_playerPos","_item","_location","_config","_text","_dir","_dis","_sfx","_consumetext","_stashname","_stashtype","_stash","_consume","_hasitemcount","_worldspace","_finished"];
 
 //check if can pitch here
 call gear_ui_init;
@@ -45,16 +45,16 @@ if ((count _worldspace) == 2) then {
 	player removeMagazine _consume;
 	_dir = round(direction player);
 
-	//wait a bit
-	player playActionNow "Medic";
-	uiSleep 1;
-
 	_dis=20;
 	_sfx = "tentunpack";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+	
+	_finished = ["Medic",1] call fn_loopAction;
+	if (!_finished) exitWith {
+		player addMagazine _consume;
+	};
 
-	uiSleep 5;
 	//place tent (local)
 	_stash = createVehicle [_stashtype, _location, [], 0, "CAN_COLLIDE"];
 	_stash setdir _dir;

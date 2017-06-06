@@ -856,7 +856,6 @@ class FSM
                          "" \n
                          "//player variables" \n
                          "dayz_characterID =		_charID;" \n
-                         "dayz_hasFire = 			objNull;		//records players Fireplace object" \n
                          "dayz_myCursorTarget = 	objNull;" \n
                          "dayz_myPosition = 		getPosATL player;	//Last recorded position" \n
                          "dayz_lastMeal =			(_lastAte * 60);" \n

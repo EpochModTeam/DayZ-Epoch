@@ -1,7 +1,6 @@
 // If an array was passed redirect to vanilla player_build (Epoch items pass a string)
 if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith {_this spawn player_buildVanilla;};
-private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objectHelperDir","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_started","_finished","_animState","_isMedic","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_ghost2","_VectorWorkAround","_objectHelper","_location1","_object","_object2","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild"];
-
+private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objectHelperDir","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_finished","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_ghost2","_VectorWorkAround","_objectHelper","_location1","_object","_object2","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -445,37 +444,13 @@ if (_canBuild select 0) then {
 
 		while {_isOk} do {
 			format[localize "str_epoch_player_139",_text, (_counter + 1),_limit] call dayz_rollingMessages; //report how many steps are done out of total limit
-			player playActionNow "Medic";
+
 			_dis=20;
 			_sfx = "repair";
 			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 			[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-
-			r_interrupt = false;
-			r_doLoop = true;
-			_started = false;
-			_finished = false;
-
-			while {r_doLoop} do {
-				_animState = animationState player;
-				_isMedic = ["medic",_animState] call fnc_inString;
-				if (_isMedic) then {
-					_started = true;
-				};
-				if (_started && !_isMedic) then {
-					r_doLoop = false;
-					_finished = true;
-				};
-				if (r_interrupt || (player getVariable["combattimeout",0] >= diag_tickTime)) then {
-					r_doLoop = false;
-				};
-				if (DZE_cancelBuilding) exitWith {
-					r_doLoop = false;
-				};
-				uiSleep 0.1;
-			};
-			r_doLoop = false;
-
+			
+			_finished = ["Medic",1,{player getVariable["combattimeout",0] >= diag_tickTime or DZE_cancelBuilding}] call fn_loopAction;
 
 			if(!_finished) exitWith {
 				_isOk = false;
@@ -490,7 +465,6 @@ if (_canBuild select 0) then {
 				_isOk = false;
 				_proceed = true;
 			};
-
 		};
 
 		if (_proceed) then {
@@ -596,15 +570,8 @@ if (_canBuild select 0) then {
 				localize "str_epoch_player_46" call dayz_rollingMessages;
 			};
 
-		} else { //if player was interrupted, cancel publish and stop build animations
-			r_interrupt = false;
-			if (vehicle player == player) then {
-				[objNull, player, rSwitchMove,""] call RE;
-				player playActionNow "stop";
-			};
-
+		} else { //if player was interrupted cancel publish
 			deleteVehicle _tmpbuilt;
-
 			localize "str_epoch_player_46" call dayz_rollingMessages;
 		};
 

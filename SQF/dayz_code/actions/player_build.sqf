@@ -4,7 +4,7 @@ if (!isNil "_this" && {typeName _this == "ARRAY"} && {count _this > 0}) exitWith
 	DayZ Base Building
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_started","_finished","_animState","_isMedic","_dis","_sfx","_tmpbuilt","_onLadder","_require","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_canBuild"];
+private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_finished","_dis","_sfx","_tmpbuilt","_onLadder","_require","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_canBuildOnPlot","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_canBuild"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -324,41 +324,14 @@ if (_canBuild select 0) then {
 		_counter = 0;
 
 		while {_isOk} do {
-		
 			format[localize "str_epoch_player_139",_text, (_counter + 1),_limit] call dayz_rollingMessages;
-
-			player playActionNow "Medic";
 
 			_dis=20;
 			_sfx = "repair";
 			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 			[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
 
-			r_interrupt = false;
-			r_doLoop = true;
-			_started = false;
-			_finished = false;
-
-			while {r_doLoop} do {
-				_animState = animationState player;
-				_isMedic = ["medic",_animState] call fnc_inString;
-				if (_isMedic) then {
-					_started = true;
-				};
-				if (_started && !_isMedic) then {
-					r_doLoop = false;
-					_finished = true;
-				};
-				if (r_interrupt || (player getVariable["combattimeout",0] >= diag_tickTime)) then {
-					r_doLoop = false;
-				};
-				if (DZE_cancelBuilding) exitWith {
-					r_doLoop = false;
-				};
-				uiSleep 0.1;
-			};
-			r_doLoop = false;
-
+			_finished = ["Medic",1,{player getVariable["combattimeout",0] >= diag_tickTime or DZE_cancelBuilding}] call fn_loopAction;
 
 			if(!_finished) exitWith {
 				_isOk = false;
@@ -373,7 +346,6 @@ if (_canBuild select 0) then {
 				_isOk = false;
 				_proceed = true;
 			};
-
 		};
 
 		if (_proceed) then {
@@ -477,14 +449,7 @@ if (_canBuild select 0) then {
 				localize "str_epoch_player_46" call dayz_rollingMessages;
 			};
 		} else {
-			r_interrupt = false;
-			if (vehicle player == player) then {
-				[objNull, player, rSwitchMove,""] call RE;
-				player playActionNow "stop";
-			};
-
 			deleteVehicle _tmpbuilt;
-
 			localize "str_epoch_player_46" call dayz_rollingMessages;
 		};
 	} else {

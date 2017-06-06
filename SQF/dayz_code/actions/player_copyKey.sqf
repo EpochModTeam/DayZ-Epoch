@@ -1,4 +1,4 @@
-private ["_item","_config","_pos","_onLadder","_create","_started","_finished","_animState","_isMedic","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
+private ["_item","_config","_pos","_onLadder","_create","_finished","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_56" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -25,36 +25,13 @@ call gear_ui_init;
 // require one tin bar per key
 _hasTinBar = 	"ItemTinBar" in magazines player;
 if (!_hasTinBar) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_59" call dayz_rollingMessages;};
-player playActionNow "Medic";
 
 [player,"repair",0,false] call dayz_zombieSpeak;
 [player,50,true,_pos] spawn player_alertZombies;
 			
-r_interrupt = false;
-_animState = animationState player;
-r_doLoop = true;
-_started = false;
-_finished = false;
-	
-while {r_doLoop} do {
-	_animState = animationState player;
-	_isMedic = ["medic",_animState] call fnc_inString;
-	if (_isMedic) then {
-		_started = true;
-	};
-	if (_started && !_isMedic) then {
-		r_doLoop = false;
-		_finished = true;
-	};
-	if (r_interrupt) then {
-		r_doLoop = false;
-	};
-	uiSleep 0.1;
-};
-r_doLoop = false;
+_finished = ["Medic",1] call fn_loopAction;
 
-if(_finished) then {
-
+if (_finished) then {
 	_num_removed = ([player,"ItemTinBar"] call BIS_fnc_invRemove);
 
 	if(_num_removed == 1) then {
@@ -64,11 +41,6 @@ if(_finished) then {
 		localize "str_epoch_player_61" call dayz_rollingMessages;
 	};
 } else {
-	r_interrupt = false;
-	if (vehicle player == player) then {
-		[objNull, player, rSwitchMove,""] call RE;
-		player playActionNow "stop";
-	};
 	localize "str_epoch_player_61" call dayz_rollingMessages;
 };
 dayz_actionInProgress = false;

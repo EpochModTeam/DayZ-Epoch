@@ -1,4 +1,4 @@
-private ["_vehicle","_curFuel","_newFuel","_started","_finished","_animState","_isMedic","_location1","_location2","_abort",
+private ["_vehicle","_curFuel","_newFuel","_finished","_location1","_location2","_abort",
 "_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText",
 "_availableCansEmpty","_hasHose","_PlayerNear"];
 
@@ -6,12 +6,12 @@ _vehicle = _this select 3;
 player removeAction s_player_siphonfuel;
 _hasHose = "equip_hose" in magazines player;
 
-if (dayz_siphonFuelInProgress) exitWith { localize "str_siphon_inprogress" call dayz_rollingMessages; };
 if (!_hasHose) exitWith {localize "str_siphon_hose" call dayz_rollingMessages; };
 _PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase", 10]) > 1;
 if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
-dayz_siphonFuelInProgress = true;
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 _abort = false;
 
 // Static vehicle fuel information
@@ -52,39 +52,8 @@ _nameText = 	getText(_configVeh >> "displayName");
 				// alert zombies
 				[player,20,true,(getPosATL player)] call player_alertZombies;
 
-				if(!dayz_isSwimming) then {
-					// force animation 
-					player playActionNow "Medic";
-
-					r_interrupt = false;
-					_animState = animationState player;
-					r_doLoop = true;
-					_started = false;
-	
-					while {r_doLoop} do {
-						_animState = animationState player;
-						_isMedic = ["medic",_animState] call fnc_inString;
-						if (_isMedic) then {
-							_started = true;
-						};
-						if (_started and !_isMedic) then {
-							r_doLoop = false;
-							_finished = true;
-						};
-						if (r_interrupt) then {
-							r_doLoop = false;
-						};
-						uiSleep 0.1;
-					};
-					r_doLoop = false;
-
-					if(!_finished) then {
-						r_interrupt = false;
-						if (vehicle player == player) then {
-							[objNull, player, rSwitchMove,""] call RE;
-							player playActionNow "stop";
-						};
-					};
+				if (!dayz_isSwimming) then {
+					_finished = ["Medic",1] call fn_loopAction;
 				} else {
 					// Alternate method in water make sure player stays in one spot for 6 seconds
 					_location1 = getPosATL player;
@@ -151,4 +120,4 @@ _nameText = 	getText(_configVeh >> "displayName");
 	if(_abort) exitWith {};
 } forEach magazines player;
 
-dayz_siphonFuelInProgress = false;
+dayz_actionInProgress = false;

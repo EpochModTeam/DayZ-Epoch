@@ -1,6 +1,5 @@
-private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_qty","_string","_isZombie","_humanity"];
+private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_qty","_string","_isZombie","_humanity","_finished"];
 
-_isZombie = _this isKindOf "zZombie_base";
 if (dayz_actionInProgress) exitWith {
 	localize "str_player_actionslimit" call dayz_rollingMessages;
 };
@@ -8,6 +7,7 @@ dayz_actionInProgress = true;
 
 _item = _this;
 _type = typeOf _item;
+_isZombie = _type isKindOf "zZombie_base";
 _hasHarvested = _item getVariable["meatHarvested",false];
 
 _knifeArray = [];
@@ -39,11 +39,13 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 	_isListed = isClass (configFile >> "CfgSurvival" >> "Meat" >> _type);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 
-	player playActionNow "Medic";
 	_dis=10;
 	_sfx = "gut";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+	
+	_finished = ["Medic",1] call fn_loopAction;
+	if (!_finished) exitWith {};
 
 	// Added Nutrition-Factor for work
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
@@ -64,7 +66,6 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 	
 	["knives",0.2] call fn_dynamicTool;
 	
-	uiSleep 6;
 	if (_isZombie) then {
 		// Reduce humanity for gutting zeds
 		_humanity = player getVariable ["humanity",0];
