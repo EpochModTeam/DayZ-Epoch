@@ -34,7 +34,10 @@ if (_IsNearVehicle >= 1) then {
 
 		// lookup vehicle and find if any upgrades are available
 		_upgrade = getArray (configFile >> "CfgVehicles" >> _classname >> "Upgrades" >> _upgrade);
-
+		
+		//fix policecar to car_sedan_DZE1, or fix config file
+		if(_classname in["policecar"])then{_upgrade=[];};
+		
 		if (!isNil "_upgrade" && (count _upgrade) > 0) then {
 
 			_newclassname = _upgrade select 0;
