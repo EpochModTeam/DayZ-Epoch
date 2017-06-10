@@ -231,7 +231,7 @@ if (dayz_townGenerator) then {
 };
 
 //record time started
-_playerObj setVariable ["lastTime",time];
+_playerObj setVariable ["lastTime",diag_ticktime];
 
 //set server-side inventory variable to monitor player gear
 if (count _inventory > 2) then {

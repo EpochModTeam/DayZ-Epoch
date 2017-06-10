@@ -862,6 +862,7 @@ class FSM
                          "dayz_lastDrink =		(_lastDrank * 60);" \n
                          "dayz_zombiesLocal = 	0;			//Used to record how many local zombies being tracked" \n
                          "dayz_Survived = [_days,_hours,_mins,(_survival select 3)];  //total alive dayz" \n
+                         "dayz_loginTime = diag_tickTime;" \n
                          "" \n
                          "//load in medical details" \n
                          "r_player_dead = 		player getVariable[""USEC_isDead"",false];" \n

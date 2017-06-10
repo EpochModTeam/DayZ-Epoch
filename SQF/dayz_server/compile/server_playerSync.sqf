@@ -41,7 +41,7 @@ _bankCoins = _character getVariable [Z_BankVariable, -1];
 _coins = _character getVariable [Z_MoneyVariable, -1]; //should getting coins fail set the variable to an invalid value to prevent overwritting the in the DB
 _lastPos = _character getVariable ["lastPos",_charPos];
 _usec_Dead = _character getVariable ["USEC_isDead",false];
-_lastTime = 	_character getVariable ["lastTime",diag_ticktime];
+_lastTime = _character getVariable ["lastTime",-1];
 _modelChk = 	_character getVariable ["model_CHK",""];
 _temp = round (_character getVariable ["temperature",100]);
 _lastMagazines = _character getVariable ["ServerMagArray",[[],""]];
@@ -116,10 +116,18 @@ if (!_usec_Dead) then {
 };
 _character setVariable ["medForceUpdate",false,true];
 
-_character addScore _kills;		
-_timeGross = 	(diag_ticktime - _lastTime);
-_timeSince = 	floor (_timeGross / 60);
-_timeLeft =		(_timeGross - (_timeSince * 60));
+_character addScore _kills;
+/*
+	Assess how much time has passed, for recording total time on server
+	Note "lastTime" is -1 after clothes change
+*/
+if (_lastTime == -1) then {
+	_character setVariable ["lastTime",diag_tickTime,false];
+} else {
+	_timeGross = (diag_tickTime - _lastTime);
+	_timeSince = floor (_timeGross / 60);
+	_timeLeft = (_timeGross - (_timeSince * 60));
+};
 /*
 	Get character state details
 */

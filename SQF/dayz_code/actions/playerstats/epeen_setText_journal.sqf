@@ -21,7 +21,7 @@ _1 = name player;
 dayz_currentGlobalZombies = count entities "zZombie_Base";
 
 //Work out survival time
-_currentTime = floor (dayz_sessionTime / 60);
+_currentTime = floor ((diag_tickTime - dayz_loginTime) / 60);
 _totalMins = (player getVariable "SurvivalTime") + _currentTime;
 _days = floor (_totalMins / 1440);
 _totalMins = (_totalMins - (_days * 1440));
