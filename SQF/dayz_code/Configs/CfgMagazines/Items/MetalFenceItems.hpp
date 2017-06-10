@@ -36,12 +36,13 @@ class ItemScrews: CA_Magazine //Construection,farm,indestrial,castle,residential
 	scope = 2;
 	count = 1;
 	type = 256;
-	displayName = "Loose Screws";//"Box of screws for metal"
+	displayName = $STR_BLD_name_ItemScrews;//"Box of screws for metal"
 	picture = "\z\addons\dayz_buildings\equip\item_screws.paa";
 	model = "z\addons\dayz_buildings\models\screws.p3d";
 	descriptionShort = $STR_BLD_desc_ItemScrews;//"Box of screws"
 };
 
+/*
 class ItemBagScrews: CA_Magazine//Construection,indestrial,supermarket
 {
 	scope = 2;
@@ -61,7 +62,6 @@ class ItemBagScrews: CA_Magazine//Construection,indestrial,supermarket
 	
 };
 
-/*
 ItemScrews //Construection,farm,indestrial,castle,residential
 ItemBagScrews //(LowChance)Construection,(LowChance)indestrial,supermarket
 ItemRSJ //Construection,farm,indestrial,castle

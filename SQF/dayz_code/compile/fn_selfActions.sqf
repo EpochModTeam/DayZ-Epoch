@@ -10,7 +10,7 @@ private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_t
 "_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget",
 "_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan",
 "_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isDisallowRefuel","_isDog",
-"_isModular","_isModularDoor","_isHouse","_isGate","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
+"_isModular","_isModularDoor","_isHouse","_isGateOperational","_isGateLockable","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
 "_allowed","_hasAccess","_uid","_myCharID"];
@@ -515,7 +515,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	/* //Vanilla base building currently not used in Epoch
 	// House locking and unlocking
 	_isHouse = _typeOfCursorTarget in ["SurvivorWorkshopAStage5", "SurvivorWorkshopBStage5", "SurvivorWorkshopCStage5"];
-	_isGate = _typeOfCursorTarget in ["WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4","MetalGate_1","MetalGate_2","MetalGate_3","MetalGate_4"];
+	_isGateOperational = _typeOfCursorTarget in ["WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4","MetalGate_1","MetalGate_2","MetalGate_3","MetalGate_4"];
+	_isGateLockable = _typeOfCursorTarget in ["WoodenGate_1","WoodenGate_2","WoodenGate_3","MetalGate_1","MetalGate_2","MetalGate_3"];
 	_isFence = _typeOfCursorTarget in ["WoodenFence_1","WoodenFence_2","WoodenFence_3","WoodenFence_4","WoodenFence_5","WoodenFence_6","MetalFence_1","MetalFence_2","MetalFence_3","MetalFence_4","MetalFence_5","MetalFence_6","MetalFence_7"];
 
 	//Only the owners can lock the gates
@@ -532,7 +533,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_ownerPID = (_ownerArray select 0);
 	
 	// open Gate
-	if (_isGate && _isClosed && _isUnlocked) then {
+	if (_isGateOperational && _isClosed && _isUnlocked) then {
 		if (s_player_openGate < 0) then {
 			s_player_openGate = player addAction [localize "STR_DN_OUT_O_GATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Open"], 1, true, true];
 		};
@@ -541,7 +542,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_openGate = -1;
 	};
 	// Close Gate
-	if (_isGate && _isOpen && _isUnlocked) then {
+	if (_isGateOperational && _isOpen && _isUnlocked) then {
 		if (s_player_CloseGate < 0) then {
 			s_player_CloseGate = player addAction [localize "STR_DN_OUT_C_GATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Close"], 1, true, true];
 		};
@@ -559,7 +560,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_setCode = -1;
 	};
 	//Lock Build point
-	if ((_isFence or _isGate) && (_ownerPID == _uid) && !_ownerBuildLock) then {
+	if ((_isFence or _isGateLockable) && (_ownerPID == _uid) && !_ownerBuildLock) then {
 		if (s_player_BuildLock < 0) then {
 			s_player_BuildLock = player addAction [localize "STR_BLD_ACTIONS_LOCKBUILD", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"BuildLock"], 1, true, true];
 		};
@@ -568,7 +569,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_BuildLock = -1;
 	};
 	//UnLock Build point
-	if ((_isFence or _isGate) && (_ownerPID == _uid) && _ownerBuildLock) then {
+	if ((_isFence or _isGateLockable) && (_ownerPID == _uid) && _ownerBuildLock) then {
 		if (s_player_BuildUnLock < 0) then {
 			s_player_BuildUnLock = player addAction [localize "STR_BLD_ACTIONS_UNLOCKBUILD", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"BuildUnLock"], 1, true, true];
 		};

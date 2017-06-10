@@ -153,6 +153,16 @@
 	["LADAWreck",[11325,6637.85,0.234833],160.033],
 	["Misc_TyreHeap",[11308.6,6640.9,0.0248337],170.033],
 	["Fort_Barricade_EP1",[11459.571,7390.7227,-0.040615425],225.14645],*/ //Wrecks are removable on Epoch and not synced across network if local spawned
+	//Cherno
 	["Land_CncBlock_D",[6382.5,2794,6],218],
-	["Land_CncBlock_D",[6382.5,2794,4.7],218]
+	["Land_CncBlock_D",[6382.5,2794,4.7],218],
+	//Berezino
+	["Land_CncBlock_D",[12228.8,9521.95,5.78098],23.2569],
+	["Land_CncBlock_D",[12228.8,9521.73,4.66826],23.2569],
+	["Land_CncBlock_D",[12239.6,9489.99,5.81526],142.355],
+	["Land_CncBlock_D",[12239.2,9489.61,4.5343],142.355],
+	["Land_CncBlock_D",[12803.3,10085.3,5.70783],201.212],
+	["Land_CncBlock_D",[12803.3,10085.3,4.5478],201.212],
+	["Land_CncBlock_D",[12778.4,10124,5.69832],201.186],
+	["Land_CncBlock_D",[12778.4,10124,4.55829],201.186]
 ],true,true,true] call fnc_spawnObjects;
