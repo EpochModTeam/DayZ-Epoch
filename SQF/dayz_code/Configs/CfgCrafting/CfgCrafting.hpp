@@ -12,20 +12,6 @@ class CfgCrafting {
 	#include "Recipes\Weapons\BaseBallBatBarbed.hpp"
 	#include "Recipes\Weapons\Crossbow.hpp"
 
-	//Not Ready
-	/*
-	#include "Recipes\Weapons\M9SD.hpp"
-	#include "Recipes\Weapons\M4A1_AIM.hpp"
-	#include "Recipes\Weapons\MAKAROVSD.hpp"
-	#include "Recipes\Weapons\bizonSD.hpp"
-	#include "Recipes\Weapons\SVD_CAMO.hpp"
-	#include "Recipes\Weapons\M4A1_Aim_CAMO.hpp"
-	#include "Recipes\Weapons\M4A1_HWS_GL_CAMO.hpp"
-	#include "Recipes\Weapons\G36C_camo.hpp"
-	#include "Recipes\Weapons\G36A_camo.hpp"
-	#include "Recipes\Weapons\G36K_camo.hpp"
-	*/
-
 	//Medical
 	#include "Recipes\Medical\Bandage.hpp"
 	#include "Recipes\Medical\sepsisBandage.hpp"

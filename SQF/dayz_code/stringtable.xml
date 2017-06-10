@@ -2705,159 +2705,6 @@
 			<French>Plan de fabrication d&apos;une Boussole. Requis : 1 rasoir, bouteille, bout de métal + Boîte à outils</French>
 			<German>Blaupause für einen improvisierten Kompass. Gebraucht werden: 1x Wasserflasche, 1x Rasierer, 1x Altmetall, Werkzeugkasten.</German>
 		</Key>
-		<Key ID="STR_CRAFT_NAME_M4A1_AIM">
-			<English>M4A1 AIM</English>
-			<French>M4A1 à viseur laser</French>
-			<Czech>M4A1 s CCO</Czech>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_M4A1_AIM">
-			<English>Blueprint to create a M4A1_AIM. Required - 1 M4A1, 1 Attachment_AIM. - ToolBox</English>
-			<Russian>Инструкция по сборке M4A1 AIM с глушителем. Нужно: M4A1, прицел AIM и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear M4A1 AIM. Requerido: 1 M4A1, 1 AIM y Caja de Herramientas</Spanish>
-			<French>Plan de fabrication d&apos;une M4A1 à viseur laser. Requis : 1 M4A1, 1 Fixation viseur laser + Boîte à outils</French>
-			<Czech>Návod pro vyrobení M4A1 s CCO mířidlem. Potřeba: 1x M4A1, 1x CCO mířidlo a sada nástrojů.</Czech>
-			<German>Blaupause für eine M4A1 AIM. Gebraucht werden: 1x M4A1, 1x CCO Rotpunktvisier, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_M4A1_HWS_GL_CAMO">
-			<English>M4A1 HWS GL Camo</English>
-			<Russian>Камуфлированный M4A1 HWS GL</Russian>
-			<Czech>M4A1 HWS GL Kamufláž</Czech>
-			<French>M4A1 HWS GL Camouflage</French>
-			<German>M4A1 HWS GL Tarn</German>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_M4A1_HWS_GL_CAMO">
-			<English>Blueprint to create a M4A1 HWS GL Camo. Required - 1 M4A1 HWS GL, 1 Attachment Camo. - ToolBox</English>
-			<Russian>Инструкция по сборке камуфлированного M4A1 HWS GL. Нужно: M4A1 HWS GL, камуфляж для оружия и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear M4A1 HWS GL Camo. Requerido: 1 M4A1 HWS GL, 1 Attachment Camo y Caja de Herramientas</Spanish>
-			<Czech>Návod pro vyrobení M4A1 HWS GL Kamufláž. Potřeba: 1x M4A1 HWS GL, 1x maskovací potisk a sada nástrojů</Czech>
-			<French>Plan de fabrication d&apos;une M4A1 holographique, lanceur de grenades, camouflage. Requis : 1 M4A1 HWS GL, 1 fixation camouflage + Boîte à outils</French>
-			<German>Blaupause für eine M4A1 HWS GL Tarn. Gebraucht werden: 1x M4A1 HWS GL, 1x Tarnmaterial, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_M9SD">
-			<English>M9 SD</English>
-			<Russian>M9 с глушителем</Russian>
-			<Spanish>M9 Silenciada</Spanish>
-			<French>M9 Silencieux</French>
-			<Czech>M9 s tlumičem</Czech>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_M9SD">
-			<English>Blueprint to create a M9SD. Required - 1 M9, 1 Attachment_Silencer. - ToolBox</English>
-			<Russian>Инструкция по сборке M9 с глушителем. Нужно: M9, глушитель и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear una M9 Silenciada. Requerido: 1 M9, 1 silenciador y Caja de Herramientas</Spanish>
-			<French>Plan de fabrication d&apos;un M9 silencieux. Requis : 1 M9, 1 Fixation Silencieux + Boîte à outils</French>
-			<Czech>Návod pro vyrobení M9 s tlumičem. Potřeba: 1x M9, 1x tlumič a sada nástrojů.</Czech>
-			<German>Blaupause für eine M9 SD. Gebraucht werden: 1x M9, 1x Schalldämpfer, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_MAKAROVSD">
-			<English>Makarov SD</English>
-			<Russian>ПМ с глушителем</Russian>
-			<French>Makarov Silencieux</French>
-			<Czech>Makarov s tlumičem</Czech>
-			<German>Makarow SD</German>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_MAKAROVSD">
-			<English>Blueprint to create a MAKAROVSD. Required - 1 MAKAROV, 1 Attachment_Silencer. - ToolBox</English>
-			<Russian>Инструкция по сборке ПМ с глушителем. Нужно: ПМ, глушитель и ящик с инструментами.</Russian>
-			<Spanish>Planos para crear una Makarov Silenciada. Requerido: 1 Makarov, 1 Silenciador y Caja de Herramientas.</Spanish>
-			<French>Plan de fabrication d&apos;un Makarov silencieux. Requis : 1 Makarov, 1 Fixation Silencieux + Boîte à outils</French>
-			<Czech>Návod pro vyrobení Makarov s tlumičem. Potřeba: 1x Makarov, 1x tlumič a sada nástrojů.</Czech>
-			<German>Blaupause für eine Makarow SD. Gebraucht werden: 1x Makarow, 1x Schalldämpfer, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_bizonSD">
-			<English>BizonSD</English>
-			<Russian>Бизон с глушителем</Russian>
-			<French>Bizon Silencieux</French>
-			<Czech>Bizon s tlumičem</Czech>
-			<German>Bizon SD</German>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_bizonSD">
-			<English>Blueprint to create a BizonSD. Required - 1 Bizon, 1 Attachment_Silencer. - ToolBox</English>
-			<Russian>Инструкция по сборке Бизона с глушителем. Нужно: Бизон, глушитель и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear una Bizon Silenciada. Requerido: 1 Bizon, 1 Silenciador y Caja de Herramientas</Spanish>
-			<French>Plan de fabrication d&apos;un Bizon silencieux. Requis : 1 Bizon, 1 Fixation Silencieux + Boîte à outils</French>
-			<Czech>Návod pro vyrobení Bizon s tlumičem. Potřeba: 1x Bizon, 1x tlumič a sada nástrojů.</Czech>
-			<German>Blaupause für eine Bizon SD. Gebraucht werden: 1x Bizon, 1x Schalldämpfer, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_SVD_CAMO">
-			<English>SVD CAMO</English>
-			<Russian>Камуфлированный СВД</Russian>
-			<Spanish>SVD Camuflado</Spanish>
-			<French>SVD Camouflage</French>
-			<Czech>SVD s maskovacím potiskem</Czech>
-			<German>SVD Tarn</German>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_SVD_CAMO">
-			<English>Blueprint to create a SVD_CAMO. Required - 1 SVD, 1 Attachment_CAMO, 1 Skin_Camo1_DZ. - ToolBox</English>
-			<Russian>Инструкция по камуфлированию СВД. Нужно: СВД, камуфляж для оружия и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear un SVD Camuflado. Requerido: 1 SVD, 1 Camuflaje, 1 Skin_Camo1_DZ y Caja de Herramientas</Spanish>
-			<French>Plan de fabrication d&apos;un SVD Camouflage. Requis : 1 SVD, 1 Fixation Camouflage, 1 tenue de camouflage + Boîte à outils</French>
-			<Czech>Návod pro vyrobení SVD s maskovacím potiskem. Potřeba: 1x SVD, 1x maskovací potisk, 1x hejkal a sada nástrojů</Czech>
-			<German>Blaupause für eine SVD Tarn. Gebraucht werden: 1x SVD, 1x Tarnmaterial, 1x Tarnmaterial, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_M4A1_Aim_CAMO">
-			<English>M4A1_Aim_CAMO</English>
-			<Russian>Камуфлированный M4A1 AIM</Russian>
-			<Spanish>M4A1 AIM Camuflado</Spanish>
-			<French>M4A1 à viseur laser et Camouflage</French>
-			<Czech>M4A1 s CCO a maskovacím potiskem</Czech>
-			<German>M4A1 AIM Tarn</German>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_M4A1_Aim_CAMO">
-			<English>Blueprint to create a M4A1_Aim_CAMO. Required - 1 M4A1_Aim, 1 Attachment_CAMO. - ToolBox</English>
-			<Russian>Инструкция по перекраске M4A1 AIM. Нужно: M4A1 AIM, камуфляж для оружия и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear M4A1 AIM Camuflado. Requerido: 1 M4A1 AIM, 1 Camuflaje y Caja de Herramientas</Spanish>
-			<French>Plan de fabrication d&apos;un M4A1 à viseur laser et Camouflage. Requis : 1 M4A1 à viseur laser, 1 Fixation Camouflage + Boîte à outils</French>
-			<Czech>Návod pro vyrobení M4A1 s mířidlem a maskovacím potiskem. Potřeba: 1x M4A1 s CCO, 1x maskovací potisk a sada nástrojů</Czech>
-			<German>Blaupause für eine M4A1 AIM Tarn. Gebraucht werden: 1x M4A1 AIM, 1x Tarnmaterial, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_G36C_CAMO">
-			<English>G36C CAMO</English>
-			<Russian>Камуфлированный G36C</Russian>
-			<Spanish>G36C Camuflada</Spanish>
-			<French>G36C Camouflage</French>
-			<Czech>G36C s maskovacím potiskem</Czech>
-			<German>G36C Tarn</German>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_G36C_CAMO">
-			<English>Blueprint to create a G36C_CAMO. Required - 1 G36C, 1 Attachment_CAMO. - ToolBox</English>
-			<Russian>Инструкция по перекраске G36C. Нужно: G36C, камуфляж для оружия и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear G36C Camuflada. Requerido: 1 G36C, 1 Camuflaje y Caja de Herramientas</Spanish>
-			<French>Plan de fabrication d&apos;un G36C Camouflage. Requis : 1 G36C, 1 Fixation Camouflage + Boîte à outils</French>
-			<Czech>Návod pro vyrobení G36C s maskovacím potiskem. Potřeba: 1x G36C, 1x maskovací potisk a sada nástrojů</Czech>
-			<German>Blaupause für eine G36C CAMO. Gebraucht werden: 1x G36C, 1x Attachment_CAMO, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_G36A_CAMO">
-			<English>G36A CAMO</English>
-			<Russian>Камуфлированный G36A</Russian>
-			<Spanish>G36A Camuflado</Spanish>
-			<French>G36A Camouflage</French>
-			<Czech>G36A s maskovacím potiskem</Czech>
-			<German>G36A Tarn</German>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_G36A_CAMO">
-			<English>Blueprint to create a G36A_CAMO. Required - 1 G36A, 1 Attachment_CAMO. - ToolBox</English>
-			<Russian>Инструкция по перекраске G36A. Нужно: G36A, камуфляж для оружия и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear G36A Camuflada. Requerido: 1 G36A, 1 Camuflaje y Caja de Herramientas</Spanish>
-			<French>Plan de fabrication d&apos;un G36A Camouflage. Requis : 1 G36A, 1 Fixation Camouflage + Boîte à outils</French>
-			<Czech>Návod pro vyrobení G36A s maskovacím potiskem. Potřeba: 1x G36A, 1x maskovací potisk a sada nástrojů</Czech>
-			<German>Blaupause für eine G36A Tarn. Gebraucht werden: 1x G36A, 1x Tarnmaterial, Werkzeugkasten.</German>
-		</Key>
-		<Key ID="STR_CRAFT_NAME_G36K_CAMO">
-			<English>G36K_CAMO</English>
-			<Russian>Камуфлированный G36K</Russian>
-			<Spanish>G36K Camuflado</Spanish>
-			<French>G36K Camouflage</French>
-			<Czech>G36K s maskovacím potiskem</Czech>
-			<German>G36K Tarn</German>
-		</Key>
-		<Key ID="STR_CRAFT_DESC_G36K_CAMO">
-			<English>Blueprint to create a G36K_CAMO. Required - 1 G36K, 1 Attachment_CAMO. - ToolBox</English>
-			<Russian>Инструкция по перекраске G36K. Нужно: G36K, камуфляж для оружия и ящик с инструментами.</Russian>
-			<Spanish>Plano para crear G36K Camuflada. Requerido: 1 G36K, 1 Camuflaje y Caja de Herramientas</Spanish>
-			<French>Plan de fabrication d&apos;un G36K Camouflage. Requis : 1 G36K, 1 Fixation Camouflage + Boîte à outils</French>
-			<Czech>Návod pro vyrobení G36K s maskovacím potiskem. Potřeba: 1x G36K, 1x maskovací potisk a sada nástrojů</Czech>
-			<German>Blaupause für eine G36K Tarn. Gebraucht werden: 1x G36K, 1x Tarnmaterial, Werkzeugkasten.</German>
-		</Key>
 		<Key ID="STR_CRAFT_NAME_HerbalDrink">
 			<English>Herbal Drink</English>
 			<Spanish>bebida Herbal</Spanish>
@@ -6589,22 +6436,6 @@
 			<French>Vous avez réussi à détruire une tente.</French>
 			<Czech>Úspěšně jste zničili stan.</Czech>
 		</Key>
-		<Key ID="str_success_stash_pitch">
-			<English>You have created a %1.</English>
-			<German>Du hast eine %1 hergestellt.</German>
-			<Russian>Вы соорудили %1.</Russian>
-			<Spanish>Acabaste de crear: %1.</Spanish>
-			<French>Vous avez créé un(e) %1.</French>
-			<Czech>Vyrobili jste %1.</Czech>
-		</Key>
-		<Key ID="str_fail_stash_pitch">
-			<English>You cannot place a %1 here. The area must be flat, and free of other objects.</English>
-			<German>%1 kann hier nicht angelegt werden. Der Untergrund muss flach und frei von Hindernissen sein.</German>
-			<Russian>Нельзя установить %1 тут. Поверхность должна быть ровной, без объектов поблизости.</Russian>
-			<Spanish>No puedes ubicar una %1 aquí. El área debe ser plana y libre de otros objetos.</Spanish>
-			<French>Vous ne pouvez pas placer un(e) ici, le sol doit être plat et dégagé.</French>
-			<Czech>Tady nelze postavit %1. Země musí být plochá a bez jiných objektů, které by mohly bránit stavbě.</Czech>
-		</Key>
 		<Key ID="str_player_consumed_food">
 			<English>You ate %1.</English>
 			<German>Du hast %1 gegessen.</German>
@@ -7109,14 +6940,6 @@
 			<Spanish>Para crear un %1 necesitas %2.</Spanish>
 			<French>Pour construire un(e) %1, il vous faut : %2.</French>
 			<Czech>Abyste mohli postavit %1, potřebujete: %2.</Czech>
-		</Key>
-		<Key ID="str_player_31_stash">
-			<English>To build a stash site you require %1.</English>
-			<German>Um eine Lagergrube auszuheben, brauchst du %1.</German>
-			<Russian>Чтобы соорудить схрон, вам нужны %1.</Russian>
-			<Spanish>Para crear un escondite necesitas %1.</Spanish>
-			<French>Pour construire une planque, il vous faut %1.</French>
-			<Czech>Abyste postavili skrýš, je potřeba %1.</Czech>
 		</Key>
 		<Key ID="str_player_31_build">
 			<English>build</English>

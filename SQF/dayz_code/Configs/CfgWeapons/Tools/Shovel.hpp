@@ -10,15 +10,7 @@ class ItemShovel : ItemCore
 	stashsmall = "StashSmall";
 	stashmedium = "StashMedium";
 	consume = "ItemSandbag";
-	
-	class ItemActions
-	{
-		/*class Use
-		{
-			text = $STR_CREATE_STASH;
-			script = "spawn player_createstash;";
-		};*/
-	};
+
 };
 
 class ItemShovelBroken : ItemCore
