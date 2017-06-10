@@ -34,7 +34,10 @@ class Crossbow_Base : Rifle
 	
 	dexterity = 1.6;
 	magazineReloadTime = 0;
-	reloadMagazineSound[] = {"", 1, 1};
+	//reloadMagazineSound[] = {"", 1, 1};
+	//reloadMagazineSound[] = {"\ca\Weapons\Data\Sound\FAL_reload", 0.316228, 1, 20};
+	//reloadMagazineSound[] = {"\ca\sounds\weapons\rifles\M1014-reload", 0.316228, 1, 20};
+	reloadMagazineSound[] = {"ca\sounds\weapons\rifles\reload-m16-3", 0.0562341, 1, 20};
 	handAnim[] = {"OFP2_ManSkeleton", "\Ca\weapons\data\Anim\Bizon.rtm"};
 	distanceZoomMin = 20;
 	distanceZoomMax = 20;
