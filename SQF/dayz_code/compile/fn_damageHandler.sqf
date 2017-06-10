@@ -134,15 +134,15 @@ if (_unit == player) then {
         };
     };
     
-	if (!_inVehicle && !_unconscious) then {
+	if (r_player_timeout == 0 && !_inVehicle) then {
 		if (_ammo == "tranquiliser_bolt") then {
+			r_player_timeout = 20 + round(random 60);
 			[_unit] spawn {
 				private ["_unit"];
 				_unit = _this select 0;
 				localize "str_player_tranquilized" call dayz_rollingMessages; 
 				[_unit,0.01] call fnc_usec_damageUnconscious;
 				_unit setVariable ["NORRN_unconscious", true, true];
-				r_player_timeout = 20 + round(random 60);
 				r_player_unconscious = true;
 				player setVariable["medForceUpdate",true,true];
 				player setVariable ["unconsciousTime", r_player_timeout, true];
@@ -152,12 +152,12 @@ if (_unit == player) then {
 		if (_damage > 0.4) then {
 			//Melee knockout system
 			if ((_isHeadHit) && (_ammo in ["Crowbar_Swing_Ammo","Bat_Swing_Ammo","Sledge_Swing_Ammo"])) then {
+				r_player_timeout = 20 + round(random 60);
 				[_unit] spawn {
 					 _unit = _this select 0;
 					localize "str_actions_medical_knocked_out" call dayz_rollingMessages; 
 					[_unit,0.01] call fnc_usec_damageUnconscious;
 					_unit setVariable ["NORRN_unconscious", true, true];
-					r_player_timeout = 20 + round(random 60);
 					r_player_unconscious = true;
 					player setVariable["medForceUpdate",true,true];
 					player setVariable ["unconsciousTime", r_player_timeout, true];
