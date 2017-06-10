@@ -20,7 +20,6 @@ Construction[] =
 	
 	//Items
 	{Loot_MAGAZINE,		6,		ItemSandbag},
-	{Loot_MAGAZINE,		4,		ItemJerryCan},
 	{Loot_MAGAZINE,		1,		ItemWire},
 	{Loot_MAGAZINE,		4,		ItemTankTrap},
 	{Loot_MAGAZINE,		1,		equip_brick},
@@ -31,7 +30,6 @@ Construction[] =
 	{Loot_MAGAZINE,		2,		equip_2inch_metal_pipe},
 	{Loot_MAGAZINE,		1,		MortarBucket},
 	{Loot_MAGAZINE,		2,		CinderBlocks},
-	{Loot_MAGAZINE,		3,		ItemFuelBarrelEmpty},
 	{Loot_MAGAZINE,		3,		ItemGenerator},
 	{Loot_MAGAZINE,		1,		fuel_pump_kit},
 	
@@ -41,5 +39,7 @@ Construction[] =
 	{Loot_PILE,			4,		Consumable, 1, 2},
 	{Loot_GROUP,		10,		Trash},
 	//{Loot_GROUP,		6,		Parts},
+	{Loot_GROUP,		4,		JerryCan},
+	{Loot_GROUP,		3,		FuelBarrel},
 	{Loot_GROUP,		3,		Generic}
 };

@@ -150,7 +150,7 @@ MilitarySpecialSmall[] =
 MilitaryIndustrial[] = {//DZE ADDED
 	{Loot_GROUP,		15,		Parts},
 	{Loot_MAGAZINE,		5,		FoodMRE},
-	{Loot_MAGAZINE,		3,		ItemFuelBarrelEmpty},
+	{Loot_GROUP,		3,		FuelBarrel},
 	{Loot_MAGAZINE,		2,		ItemGenerator},
 	{Loot_MAGAZINE,		2,		fuel_pump_kit},
 	{Loot_MAGAZINE,		3,		ItemWire},

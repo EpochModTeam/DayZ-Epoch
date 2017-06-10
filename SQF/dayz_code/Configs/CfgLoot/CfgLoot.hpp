@@ -36,6 +36,7 @@ class CfgLoot
 		#include "Groups\Trash.hpp"
 		#include "Groups\Consumable.hpp"
 		#include "Groups\ConsumableItems.hpp"
+		#include "Groups\Fuel.hpp"
 		#include "Groups\Parts.hpp"
 		//DZE
 		#include "Groups\Weapons.hpp"

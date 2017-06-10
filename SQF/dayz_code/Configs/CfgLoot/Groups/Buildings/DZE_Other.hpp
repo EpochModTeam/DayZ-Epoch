@@ -11,7 +11,7 @@ DynamicDebris[] =
 	{Loot_WEAPON,		5,		ItemHatchet},
 	{Loot_WEAPON,		5,		ItemCompass},
 	{Loot_PILE,			12,		Consumable, 1, 2},
-	{Loot_MAGAZINE,		7,		ItemJerryCan},
+	{Loot_GROUP,		7,		JerryCan},
 	{Loot_GROUP,		15,		Parts}
 };
 
@@ -30,7 +30,7 @@ DynamicDebrisMilitary[] =
 	{Loot_WEAPON,		5,		ItemHatchet},
 	{Loot_WEAPON,		5,		ItemCompass},
 	{Loot_PILE,			12,		Consumable, 1, 2},
-	{Loot_MAGAZINE,		7,		ItemJerryCan},
+	{Loot_GROUP,		7,		JerryCan},
 	{Loot_MAGAZINE,		7,		ItemSandbag},
 	{Loot_GROUP,		8,		Military},
 	{Loot_GROUP,		15,		Parts}
@@ -38,7 +38,7 @@ DynamicDebrisMilitary[] =
 SupplyDrop[] = {
 	{Loot_WEAPON,		5,		ItemSledge},
 	{Loot_PILE,			12,		Consumable, 1, 2},
-	{Loot_MAGAZINE,		7,		ItemJerryCan},
+	{Loot_GROUP,		7,		JerryCan},
 	{Loot_MAGAZINE,		7,		bulk_ItemTankTrap},
 	{Loot_MAGAZINE,		7,		PartPlywoodPack},
 	{Loot_MAGAZINE,		7,		PartPlankPack},

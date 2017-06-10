@@ -12,8 +12,6 @@ Farm[] =
 	
 	//Items
 	{Loot_MAGAZINE,		4,		ItemSandbag},
-	{Loot_MAGAZINE,		3,		ItemJerryCan},
-	{Loot_MAGAZINE,		4,		ItemFuelCan},
 	{Loot_MAGAZINE,		1,		TrapBear},
 	{Loot_MAGAZINE,		8,		PartWoodPile},
 	{Loot_MAGAZINE,		3,		equip_rope},
@@ -22,7 +20,6 @@ Farm[] =
 	{Loot_MAGAZINE,		4,		equip_string},
 	{Loot_MAGAZINE,		2,		equip_lever},
 	{Loot_MAGAZINE,		2,		PartPlankPack},
-	{Loot_MAGAZINE,		2,		ItemFuelBarrelEmpty},
 	{Loot_MAGAZINE,		1,		ItemLightBulb},
 	{Loot_MAGAZINE,		1,		ItemSledgeHead},
 	{Loot_MAGAZINE,		1.5,	ItemSledgeHandle},
@@ -33,6 +30,9 @@ Farm[] =
 	{Loot_GROUP,		3,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		Consumable},
 	{Loot_WEAPON,		3,		ItemMatchbox},
+	{Loot_GROUP,		3,		JerryCan},
+	{Loot_GROUP,		4,		FuelCan},
+	{Loot_GROUP,		2,		FuelBarrel},
 	{Loot_GROUP,		8,		Generic}
 };
 
