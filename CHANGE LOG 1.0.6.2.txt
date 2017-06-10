@@ -2,6 +2,7 @@
 [NEW] Added DZE_limitPlots so admins can limit plot poles to 1 per UID, disabled by default. @oiad
 [NEW] Pumpkin, sunflower, and hemp plants spawned with createVehicle can be harvested with a knife now. #1928 @F507DMT
 [NEW] The journal and dayz_survived variable now contain actual play time [array] instead of days since the character was created [number].
+[NEW] Added secondary iron sight to CZ550 and bolt animations to CZ550 and LeeEnfield by @Streatman
 
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
 [UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
