@@ -34,16 +34,14 @@ if (!isNull _tree) then {
 		
 		//play action
 		_finished = ["Medic",1] call fn_loopAction;
-        
-        // Working-Factor for chopping wood.
-		["Working",0,[50,10,5,0]] call dayz_NutritionSystem;
 
         if(!_finished) exitWith {
             _isOk = false;
             _proceed = false;
         };
 
-        if(_finished) then {                
+        if (_finished) then {
+			["Working",0,[50,10,5,0]] call dayz_NutritionSystem;
             _breaking = false;
             if (dayz_toolBreaking && {[0.09] call fn_chance}) then {
                 _breaking = true;
