@@ -1,4 +1,4 @@
-private ["_ammo","_body","_distance","_infected","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method","_realSource"];
+private ["_ammo","_body","_distance","_infected","_killed","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method","_realSource"];
 
 if (deathHandled) exitWith {};
 deathHandled = true;
@@ -8,10 +8,12 @@ if (typeName (_this select 0) == "ARRAY") then {
 	_body = (_this select 0) select 0;
 	_source = (_this select 0) select 1;
 	diag_log format["Player_Death called from 'killed' event handler %1",_this];
+	_killed = true;
 } else {
 	_body = player;
 	_source = _this select 0;
 	diag_log format["Player_Death called from script %1",_this];
+	_killed = false;
 };
 
 _deathPos = getPos _body;
@@ -26,8 +28,10 @@ _camera camSetTarget _deathPos;
 _camera camSetPos [_deathPos select 0, (_deathPos select 1) + 2, 5];
 _camera camCommit 0;
 
-//SetDamage immediately so Arma registers the player as dead and respawns them into new unit
-player setDamage 1;
+if (!_killed) then {
+	//Kill the player if they are not already dead so they respawn into new unit
+	_body setHit ["body",1];
+};
 
 if (dayz_onBack != "") then {
 	_body addWeapon dayz_onBack;
