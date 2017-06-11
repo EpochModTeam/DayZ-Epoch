@@ -46,6 +46,8 @@
 [FIXED] Potential undefined error for dayz_characterID on login. @oiad
 [FIXED] Actions like cook, gather meat, repair, etc. are now interrupted properly if the player vaults, moves or enters a vehicle during the medic animation. #1942 @SmokeyBR
 [FIXED] Readded crossbow reload sound
+[FIXED] Using setDamage or setHit to kill a player via script will no longer cause a double death.
+[FIXED] The dramatic recoil camera shake effect from a nearby bullet hit is now reset correctly instead of remaining permanent.
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
