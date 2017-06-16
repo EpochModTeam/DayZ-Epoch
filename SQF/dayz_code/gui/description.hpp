@@ -17,7 +17,7 @@ class RscText
 
 class RscPicture
 {
-	access=0;
+	//access=0;
 	type=0;
 	idc=-1;
 	style=48;

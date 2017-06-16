@@ -10,7 +10,7 @@ class DoorAccess
 	{
 		class ZupaBackground_1
 		{
-			access = 0;
+			//access = 0;
 			type = 0;
 			colorText[] = {0.8784,0.8471,0.651,1};
 			text = "";

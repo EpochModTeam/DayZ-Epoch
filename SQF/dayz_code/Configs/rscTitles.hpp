@@ -36,7 +36,7 @@ class RscDisplayEmpty;
 
 class RscDisplayMission: RscDisplayEmpty
 {
-	access = 0;
+	//access = 0;
 	idd = 46;
 	onKeyDown = "_handled = if (isNil 'DZ_KeyDown_EH') then {false} else {_this call DZ_KeyDown_EH}; _handled"; //assigned much quicker than spawning init_keyboard
 };
@@ -108,7 +108,7 @@ class RscDisplayChannel
 
 class RscPictureGUI
 {
-	access = 0;
+	//access = 0;
 	type = 0;
 	idc = -1;
 	colorBackground[] = {0,0,0,0};

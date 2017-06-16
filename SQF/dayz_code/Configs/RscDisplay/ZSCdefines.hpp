@@ -645,7 +645,7 @@ class ZSC_RscToolbox {
 
 class ZSC_RscTextT // Used in plot management
 {
-	access = 0;
+	//access = 0;
 	type = 0;
 	idc = -1;
 	colorBackground[] = {0,0,0,0};

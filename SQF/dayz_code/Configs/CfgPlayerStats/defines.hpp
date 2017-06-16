@@ -25,7 +25,7 @@
 
 class horde_RscPicture
 {
-    access = 0;
+    //access = 0;
     type = CT_STATIC;
     style = ST_PICTURE;
     idc = -1;
@@ -59,7 +59,7 @@ class horde_RscText
  
 class horde_RscStructuredText
 {
-    access = 0;
+    //access = 0;
     type = CT_STRUCTURED_TEXT;
     style = ST_CENTER;
 	font = "Zeppelin33";
@@ -77,7 +77,7 @@ class horde_RscStructuredText
 
 class horde_RscButton
 {
-	access = 0;
+	//access = 0;
 	type = CT_BUTTON;
 	style = ST_LEFT;
 	x = 0;

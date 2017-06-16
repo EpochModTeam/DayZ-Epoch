@@ -22,7 +22,7 @@ class PadlockButton
 {
 	deletable = 0;
 	fade = 0;
-	access = 0;
+	//access = 0;
 	type = 1;
 	text = "";
 	colorText[] = {1,1,1,0};

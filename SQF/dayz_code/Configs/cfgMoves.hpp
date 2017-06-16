@@ -33,7 +33,7 @@ class CfgMovesDogBase
 	class Default
 	{
 		actions = "";
-		access = 3;
+		//access = 3;
 		file = "";
 		looped = 1;
 		speed = 0.5;

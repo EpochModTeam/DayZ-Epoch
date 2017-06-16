@@ -5,7 +5,7 @@
 
 class RscTextTraderDialog
 {
-	access = 0;
+	//access = 0;
 	type = 0;
 	idc = -1;
 	colorBackground[] = {0,0,0,0};
@@ -23,7 +23,7 @@ class RscTextTraderDialog
 };
 class RscListBoxTraderDialog
 {
-	access = 0;
+	//access = 0;
 	type = 5;
 	w = 0.4;
 	h = 0.4;

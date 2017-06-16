@@ -9,7 +9,7 @@ class DZ_GroupText: RscText {
 };
 
 class DZ_GroupDynamicText: RscStructuredText {
-	access = 0;
+	//access = 0;
 	type = 13;
 	colorText[] = {1,1,1,1};
 	class Attributes {
