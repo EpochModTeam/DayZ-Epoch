@@ -1,78 +1,9 @@
 class DayLightingBrightAlmost;	// External class reference
 class DefaultClutter;	// External class reference
 class Grid;	// External class reference
-class DefaultLighting;	// External class reference
-class DayLightingRainy;	// External class reference
-class Weather;	// External class reference
-class CAWorld;
-class Overcast { // increased wave size during storms
-	class Weather1;
-	class Weather2;
-	class Weather3;
-	class Weather4;
-	class Weather5;
-	class Weather6;
-	class Weather7;
-};
 
 class CfgWorlds {
-	class DefaultWorld
-	{
-		class Weather
-		{
-			class Overcast
-			{
-				class Weather1;
-				class Weather2;
-				class Weather3;
-				class Weather4;
-				class Weather5;
-			};
-		};
-	};
-	class Chernarus: CAWorld {
-		class OutsideTerrain {
-			class Layers {
-				class Layer0;
-			};
-		};
-		class Grid: Grid
-		{
-			class Zoom1;
-			class Zoom2;
-			class Zoom3;
-		};
-		class SecondaryAirports
-		{
-			class ChernarusAirstrip1;
-			class ChernarusAirstrip2;
-		};
-		class ReplaceObjects;
-		class Sounds;
-		class Animation;
-		class Lighting;
-		class DayLightingBrightAlmost;
-		class DayLightingRainy;
-		class Weather: Weather
-		{
-			class Lighting: Lighting
-			{
-				class BrightAlmost;
-				class Rainy;
-			};
-			class Overcast: Overcast
-			{
-				class Weather1;
-				class Weather7;
-				class Weather2;
-				class Weather3;
-				class Weather4;
-				class Weather5;
-				class Weather6;
-			};
-		};
-	};
-
+	class Chernarus;
 	class DayZMod : Chernarus {
 		cutscenes[] = {"DayZModIntro1"};
 		description = DayZVersion;
