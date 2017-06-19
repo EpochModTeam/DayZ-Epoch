@@ -7,3 +7,8 @@ class CfgPatches {
 		requiredAddons[] = {"dayz_code"};
 	};
 };
+class CfgWeapons
+{
+	class ItemCore;
+	#include "ItemKeys.hpp"
+};

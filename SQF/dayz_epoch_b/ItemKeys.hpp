@@ -4,7 +4,7 @@ class ItemKey: ItemCore {
 	picture = "\z\addons\dayz_epoch\pictures\equip_key_CA.paa";
 	displayname = "Black Key";
 	keyid = 0;
-	scope = public;
+	scope = 2;
 	class ItemActions
 	{
 		class Toolbelt
@@ -16,31 +16,31 @@ class ItemKey: ItemCore {
 };
 class ItemKeyBlack: ItemKey {
 	keyid = 0;
-	scope = public;
+	scope = 2;
 };
 class ItemKeyGreen: ItemKey {
 	displayname = "Green Key";
 	model = "\z\addons\dayz_epoch\models\key_green.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_key_CA_green.paa";
-	scope = public;
+	scope = 2;
 };
 class ItemKeyBlue: ItemKey {
 	displayname = "Blue Key";
 	model = "\z\addons\dayz_epoch\models\key_blue.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_key_CA_blue.paa";
-	scope = public;
+	scope = 2;
 };
 class ItemKeyYellow: ItemKey {
 	displayname = "Yellow Key";
 	model = "\z\addons\dayz_epoch\models\key_yellow.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_key_CA_yellow.paa";
-	scope = public;
+	scope = 2;
 };
 class ItemKeyRed: ItemKey {
 	displayname = "Red Key";
 	model = "\z\addons\dayz_epoch\models\key_red.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_key_CA_red.paa";
-	scope = public;
+	scope = 2;
 };
 class ItemKeyGreen1: ItemKeyGreen {
 	keyid = 1;
