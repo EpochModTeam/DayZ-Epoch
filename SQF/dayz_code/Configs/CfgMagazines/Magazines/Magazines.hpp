@@ -18,5 +18,6 @@
 #include "Shotgun.hpp"
 #include "Arrows.hpp"
 #include "LauncherAmmo.hpp"
+#include "127x99.hpp" //Remove after A2OA stable branch exceeds Version 1.63.131129
 
 #undef COMBINE_MAG
