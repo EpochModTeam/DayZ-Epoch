@@ -1,6 +1,6 @@
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
 
-private ["_count","_anim","_weapon","_sprint","_stance","_transmove","_start","_timeout","_short","_sandLevel","_disableHdlr","_speed"];
+private ["_count","_anim","_weapon","_sprint","_stance","_transmove","_start","_timeout","_short","_sandLevel","_speed"];
 
 if (r_player_unconsciousInProgress) exitWith {};
 r_player_unconsciousInProgress = true;
