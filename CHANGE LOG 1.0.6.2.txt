@@ -48,6 +48,7 @@
 [FIXED] Readded crossbow reload sound
 [FIXED] Using setDamage or setHit to kill a player via script will no longer cause a double death.
 [FIXED] The dramatic recoil camera shake effect from a nearby bullet hit is now reset correctly instead of remaining permanent.
+[FIXED] Added temporary fix for missing AS50 ammo error with beta branch core patch. #1955 @AirwavesMan
 [FIXED] Melee and tranquilizer bolt knockouts were usually instant or far shorter than the intended time of 20s-80s.
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
