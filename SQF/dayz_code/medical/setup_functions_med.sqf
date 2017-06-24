@@ -32,21 +32,6 @@ fnc_usec_pitchWhine = {
 	};
 };
 
-/*
-//Old system 1.8.6
-fnc_usec_damageUnconscious1 = {
-	private["_unit","_damage"];
-	_unit = _this select 0;
-	_damage = _this select 1;
-	
-	diag_log format["fnc_usec_damageUnconscious: %1,%2,%3",_unit,_damage, player];
-	
-	if (_unit == player) then {
-		r_player_timeout = 120 min (round((((random 2) max 0.1) * _damage) * 20));
-		r_player_unconscious = true;
-	};
-};
-*/
 fnc_usec_damageUnconscious = {
 	private["_unit","_damage"];
 	_unit = _this select 0;
@@ -56,7 +41,9 @@ fnc_usec_damageUnconscious = {
 	
 	_inVehicle = (vehicle _unit != _unit);
 	if (_unit == player) then {
-		r_player_timeout = 120 min (round((((random 2) max 0.1) * _damage) * 20));
+		if (r_player_timeout <= 0) then {
+			r_player_timeout = 120 min (round((((random 2) max 0.1) * _damage) * 20));
+		};
 		r_player_unconscious = true;
 		
 		player setVariable["medForceUpdate",true];

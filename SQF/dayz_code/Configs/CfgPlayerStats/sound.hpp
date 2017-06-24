@@ -16,7 +16,7 @@ class CfgSounds
 	class horde_sound_close_book: Vas_yessir
 	{
 		name = "horde_sound_close_book";
-		sound[] = {"\z\addons\dayz_communityassets\sounds\close.wss", 1, 1};
+		sound[] = {"\z\addons\dayz_communityassets\sounds\close.wss", 0.5, 1};
 		titles[] = {};
 	};
 };

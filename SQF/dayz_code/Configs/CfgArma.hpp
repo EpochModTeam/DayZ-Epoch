@@ -20,7 +20,7 @@ class CfgActions {
 	class PutBag : None { show = 0; };
 	class DropBag : None { show = 0; };
 	class AddBag : None { show = 0; };
-	//class TakeMine : None { show = 0; };
+	class TakeMine : None { show = 0; };
 	class DropWeapon : None { show = 0; };
 	class PutWeapon : None { show = 0; };
 	class DropMagazine : None { show = 0; };
