@@ -26,12 +26,13 @@ sched_co_deleteVehicle = {
 
 
 sched_corpses = {
-	private ["_delQtyG","_delQtyZ","_delQtyP","_addFlies","_x","_deathTime","_onoff","_delQtyAnimal","_sound","_deathPos","_cpos","_animal","_nearPlayer"];
+	private ["_delQtyG","_delQtyZ","_delQtyP","_addFlies","_x","_deathTime","_onoff","_delQtyAnimal","_sound","_deathPos","_cpos","_animal","_nearPlayer","_delQtyV","_craters"];
 	// EVERY 2 MINUTE
 	// DELETE UNCONTROLLED ZOMBIES --- PUT FLIES ON FRESH PLAYER CORPSES --- REMOVE OLD FLIES & CORPSES
 	_delQtyZ = 0;
 	_delQtyP = 0;
 	_delQtyG = 0;
+	_delQtyV = 0;
 	_addFlies = 0;
 	{
 		if (local _x && {_x isKindOf "CAManBase"}) then {
@@ -117,6 +118,25 @@ sched_corpses = {
 				};
 			};
 		};
+		
+		if (_x in vehicles) then {
+			_deathTime = _x getVariable ["sched_co_deathTime", -1];
+			
+			if (_deathTime == -1) then {
+				_deathTime = diag_tickTime;
+				_x setVariable ["sched_co_deathTime", _deathTime];
+			};
+					
+			// 25 minutes = how long a destroyed vehicle stays on the map
+			if (diag_tickTime - _deathTime > 25*60) then {
+				_craters = _x nearObjects ["CraterLong",50];
+				if (count _craters > 0) then {
+					deleteVehicle (_craters select 0);
+				};
+				_x call sched_co_deleteVehicle;
+				_delQtyV = _delQtyV + 1;
+			};
+		};
 	} forEach allDead;
 	
 	_delQtyAnimal = 0;
@@ -140,9 +160,9 @@ sched_corpses = {
 	} forEach allGroups;
 	
 #ifdef SERVER_DEBUG
-	if (_delQtyZ+_delQtyP+_addFlies+_delQtyGrp+_delQtyG > 0) then {
-		diag_log format ["%1: Deleted %2 uncontrolled zombies, %3 uncontrolled animals, %4 dead character bodies, %7 ghosts and %5 empty groups. Added %6 flies.",__FILE__,
-		_delQtyZ,_delQtyAnimal,_delQtyP,_delQtyGrp,_addFlies,_delQtyG];
+	if (_delQtyZ+_delQtyP+_addFlies+_delQtyGrp+_delQtyG+_delQtyV > 0) then {
+		diag_log format ["%1: Deleted %2 uncontrolled zombies, %3 uncontrolled animals, %4 dead character bodies, %7 ghosts, %8 destroyed vehicles and %5 empty groups. Added %6 flies.",__FILE__,
+		_delQtyZ,_delQtyAnimal,_delQtyP,_delQtyGrp,_addFlies,_delQtyG,_delQtyV];
 	};
 #endif
 
