@@ -26,7 +26,7 @@ sched_co_deleteVehicle = {
 
 
 sched_corpses = {
-	private ["_delQtyG","_delQtyZ","_delQtyP","_addFlies","_x","_deathTime","_onoff","_delQtyAnimal","_sound","_deathPos","_cpos","_animal","_nearPlayer","_delQtyV","_craters"];
+	private ["_delQtyG","_delQtyZ","_delQtyP","_addFlies","_x","_deathTime","_onoff","_delQtyAnimal","_sound","_deathPos","_cpos","_animal","_nearPlayer","_delQtyV"];
 	// EVERY 2 MINUTE
 	// DELETE UNCONTROLLED ZOMBIES --- PUT FLIES ON FRESH PLAYER CORPSES --- REMOVE OLD FLIES & CORPSES
 	_delQtyZ = 0;
@@ -129,10 +129,7 @@ sched_corpses = {
 					
 			// 25 minutes = how long a destroyed vehicle stays on the map
 			if (diag_tickTime - _deathTime > 25*60) then {
-				_craters = _x nearObjects ["CraterLong",50];
-				if (count _craters > 0) then {
-					deleteVehicle (_craters select 0);
-				};
+				{deleteVehicle _x} forEach (_x nearObjects ["CraterLong",50]);
 				_x call sched_co_deleteVehicle;
 				_delQtyV = _delQtyV + 1;
 			};
