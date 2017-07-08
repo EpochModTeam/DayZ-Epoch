@@ -1,7 +1,7 @@
 #define CAN_DO (!r_drag_sqf && !r_player_unconscious && getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder") != 1)
 #define HAS_TOOLBOX ("ItemToolbox" in items player)
 #define IN_VEHICLE (vehicle player != player)
-#define IS_ALIVE (damage _object < 1)
+#define IS_ALIVE (if (_object isKindOf "zZombie_Base") then {alive _object} else {damage _object < 1})
 #define IS_DAMAGED (damage _object > 0)
 #define IS_PZOMBIE (player isKindOf "PZombie_VB")
 
