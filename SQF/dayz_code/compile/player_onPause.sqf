@@ -34,16 +34,28 @@ while {(!isNull _display) && !r_player_dead} do {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
 			[localize "str_abort_playerclose",1] call dayz_rollingMessages;
+			if (TimeOutDisplayed) then {
+				_display closeDisplay 2;
+				closeDialog 2;
+			};
 		};
 		case (_zedCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
 			[localize "str_abort_zedsclose",1] call dayz_rollingMessages;
+			if (TimeOutDisplayed) then {
+				_display closeDisplay 2;
+				closeDialog 2;
+			};
 		};
 		case (_inCombat) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in %2)", _btnAbortText, ceil (_timeout - diag_tickTime)];
 			[localize "str_abort_playerincombat",1] call dayz_rollingMessages;
+			if (TimeOutDisplayed) then {
+				_display closeDisplay 2;
+				closeDialog 2;
+			};
 		};
 		case (isInTraderCity) : {
 			_btnAbort ctrlEnable false;

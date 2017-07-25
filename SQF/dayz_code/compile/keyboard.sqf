@@ -128,9 +128,9 @@ if (isNil "keyboard_keys") then {
         };};
     };
     _forcesave = {
-        dayz_lastCheckBit = diag_ticktime;
-        call player_forceSave;
-		call dayz_EjectPlayer;
+		if (diag_tickTime - dayz_lastSave > 10) then {
+			call player_forceSave;
+		};
     };
     _forcesave2 = {
         if ((!isNull (findDisplay 106)) OR dialog) then {
@@ -300,7 +300,7 @@ if (isNil "keyboard_keys") then {
     [actionKeys "Diary", _journal] call _addArray;
     [actionKeys "NetworkStats", _journal] call _addArray;
 	[[DIK_F1], _muteSound] call _addArray;
-    //[[DIK_F4, DIK_TAB, DIK_DELETE], _forcesave] call _addArray;
+    [[DIK_F4, DIK_TAB, DIK_DELETE], _forcesave] call _addArray;
     //[[DIK_F4, DIK_RMENU, DIK_LMENU,DIK_LSHIFT,DIK_RSHIFT,DIK_ESCAPE], _forcesave2] call _addArray;
     [actionKeys "LeanLeft", _build_left ] call _addArray;
     [actionKeys "LeanRight", _build_right ] call _addArray;
