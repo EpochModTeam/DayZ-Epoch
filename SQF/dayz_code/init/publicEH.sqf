@@ -105,7 +105,8 @@ if (isServer) then {
 	if (dayz_groupSystem) then {
 		"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) spawn server_updateGroup};
 	};
-
+	"PVDZE_PingSend" addPublicVariableEventHandler {PVDZE_PingReceived = 1; (owner (_this select 1)) publicVariableClient "PVDZE_PingReceived";};
+	
 	//Added as part of the maintenance system to allow the server to replace the damaged model with a normal model.
 	/*"PVDZ_object_replace" addPublicVariableEventHandler {
 		_object = _this select 1;
@@ -322,4 +323,5 @@ if (!isDedicated) then {
 		// flies and swarm sound sync
 		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_flies.sqf";
 	};
+	"PVDZE_PingReceived" addPublicVariableEventHandler {DZE_LastPingResp = diag_tickTime;};
 };

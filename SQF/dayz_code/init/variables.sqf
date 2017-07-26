@@ -567,6 +567,7 @@ if (isServer) then {
 };
 
 if (!isDedicated) then {
+	DZE_LastPingResp = diag_tickTime;
 	dayz_buildingBubbleMonitor = [];
 	DayZ_fuelCans = ["ItemJerrycan","ItemFuelcan","ItemFuelBarrel"];
 	DayZ_fuelCansEmpty = ["ItemJerrycanEmpty","ItemFuelcanEmpty","ItemFuelBarrelEmpty"];

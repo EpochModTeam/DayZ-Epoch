@@ -1,5 +1,11 @@
-private ["_weapons","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
-_class = _this;
+private ["_weapons","_CID","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
+if (typeName _this == "ARRAY") then {
+	_class = _this select 0;
+	_CID = _this select 1;
+} else {
+	_class = _this;
+};
+
 if (gear_done) then {disableUserInput true;disableUserInput true;};
 disableSerialization;
 //Old location system causes issues with players getting damaged during movement.
@@ -74,9 +80,12 @@ _leader = (player == leader _oldGroup);
 //[player] joinSilent grpNull;
 _group = createGroup west;
 _newUnit = _group createUnit [_class,respawn_west_original,[],0,"NONE"];
+_newUnit allowDamage false;
 _newUnit setDir _dir;
 {_newUnit removeMagazine _x;} count magazines _newUnit;
 removeAllWeapons _newUnit;
+
+if (!isnil "_CID") then {_newUnit setVariable ["characterID",_CID,true];}; //set early to prevent dupe
 
 //Equip New Character
 {
