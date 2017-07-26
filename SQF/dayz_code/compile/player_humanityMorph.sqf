@@ -4,7 +4,7 @@ _charID = _this select 1;
 _model = _this select 2;
 _old = player;
 
-player allowDamage false;
+_old allowDamage false;
 player removeEventHandler ["FiredNear",eh_player_killed];
 player removeEventHandler ["HandleDamage",mydamage_eh1];
 player removeEventHandler ["Killed",mydamage_eh3];
@@ -38,7 +38,7 @@ if (Z_SingleCurrency) then {
 };
 
 //Switch
-_model call player_switchModel; //Already spawned thread, no need to spawn and waitUntil script is done
+[_model, _charID] call player_switchModel; //Already spawned thread, no need to spawn and waitUntil script is done
 
 //Login
 
@@ -111,10 +111,7 @@ dayz_actionInProgress = false; //Allow self actions to run now.
 eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;}];
 [player] call fnc_usec_damageHandle;
 player allowDamage true;
-
-player addWeapon "Loot";
-uiSleep 0.1;
-call dayz_meleeMagazineCheck;
+call player_forceSave;
 
 uiSleep 0.1;
 if !(isNull _old) then {deleteVehicle _old;};

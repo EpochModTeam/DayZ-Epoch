@@ -1,4 +1,4 @@
-private ["_display","_timeout","_inCombat","_playerCheck","_zedCheck"];
+private ["_display","_timeout","_inCombat","_playerCheck","_zedCheck","_lastPing"];
 disableSerialization;
 waitUntil {
 	_display = findDisplay 49;
@@ -11,6 +11,9 @@ _btnAbort ctrlEnable false;
 _btnAbortText = ctrlText _btnAbort;
 _isPZombie = player isKindOf "PZombie_VB";
 _testTime = diag_tickTime;
+PVDZE_PingSend = player;
+publicVariableServer "PVDZE_PingSend";
+_lastPing = diag_tickTime;
 
 if (r_fracture_legs or _isPZombie) then {_btnRespawn ctrlEnable true;};
 
@@ -29,7 +32,20 @@ while {(!isNull _display) && !r_player_dead} do {
 	if (!isNull _gearDisplay) then {
 		_gearDisplay closeDisplay 0;
 	};
+	if (diag_tickTime - _lastPing > 2) then {
+		PVDZE_PingSend = player;
+		publicVariableServer "PVDZE_PingSend";
+		_lastPing = diag_tickTime;
+	};
 	switch true do {
+		case (diag_tickTime - DZE_LastPingResp > 4) : {
+			_btnAbort ctrlEnable false;
+			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
+			if (TimeOutDisplayed) then {
+				_display closeDisplay 2;
+				closeDialog 2;
+			};
+		};
 		case (_playerCheck) : {
 			_btnAbort ctrlEnable false;
 			_btnAbort ctrlSetText format["%1 (in 10)", _btnAbortText];
