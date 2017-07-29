@@ -1,4 +1,5 @@
-private ["_weapons","_CID","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
+private ["_weapons","_isArray","_CID","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
+_isArray = typeName _this == "ARRAY";
 if (typeName _this == "ARRAY") then {
 	_class = _this select 0;
 	_CID = _this select 1;
@@ -80,13 +81,14 @@ _leader = (player == leader _oldGroup);
 //[player] joinSilent grpNull;
 _group = createGroup west;
 _newUnit = _group createUnit [_class,respawn_west_original,[],0,"NONE"];
-_newUnit allowDamage false;
-mydamage_eh1 = _newUnit AddEventHandler ["HandleDamage", {False}];
+if (_isArray) then {
+	_newUnit allowDamage false;
+	mydamage_eh1 = _newUnit AddEventHandler ["HandleDamage", {False}];
+	_newUnit setVariable ["characterID",_CID,true];
+};
 _newUnit setDir _dir;
 {_newUnit removeMagazine _x;} count magazines _newUnit;
 removeAllWeapons _newUnit;
-
-if (!isnil "_CID") then {_newUnit setVariable ["characterID",_CID,true];};
 
 //Equip New Character
 {
