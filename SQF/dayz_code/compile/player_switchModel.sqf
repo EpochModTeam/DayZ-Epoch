@@ -81,11 +81,12 @@ _leader = (player == leader _oldGroup);
 _group = createGroup west;
 _newUnit = _group createUnit [_class,respawn_west_original,[],0,"NONE"];
 _newUnit allowDamage false;
+mydamage_eh1 = _newUnit AddEventHandler ["HandleDamage", {False}];
 _newUnit setDir _dir;
 {_newUnit removeMagazine _x;} count magazines _newUnit;
 removeAllWeapons _newUnit;
 
-if (!isnil "_CID") then {_newUnit setVariable ["characterID",_CID,true];}; //set early to prevent dupe
+if (!isnil "_CID") then {_newUnit setVariable ["characterID",_CID,true];};
 
 //Equip New Character
 {

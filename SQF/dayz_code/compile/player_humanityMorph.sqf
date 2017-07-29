@@ -4,11 +4,12 @@ _charID = _this select 1;
 _model = _this select 2;
 _old = player;
 
+_old removeAllEventHandlers "FiredNear";
+_old removeAllEventHandlers "HandleDamage";
+_old removeAllEventHandlers "Killed";
+_old removeAllEventHandlers "Fired";
 _old allowDamage false;
-player removeEventHandler ["FiredNear",eh_player_killed];
-player removeEventHandler ["HandleDamage",mydamage_eh1];
-player removeEventHandler ["Killed",mydamage_eh3];
-player removeEventHandler ["Fired",mydamage_eh2];
+_old AddEventHandler ["HandleDamage", {False}];
 
 _updates = player getVariable ["updatePlayer",[false,false,false,false,false]];
 _updates set [0,true];
@@ -108,6 +109,7 @@ if (Z_SingleCurrency) then {
 
 call dayz_resetSelfActions; //New unit has no self actions yet. Reset variables so actions can be added back.
 dayz_actionInProgress = false; //Allow self actions to run now.
+player removeEventHandler ["HandleDamage",mydamage_eh1];
 eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;}];
 [player] call fnc_usec_damageHandle;
 player allowDamage true;
