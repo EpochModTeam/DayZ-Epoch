@@ -1,6 +1,6 @@
 private ["_weapons","_isArray","_CID","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
 _isArray = typeName _this == "ARRAY";
-if (typeName _this == "ARRAY") then {
+if (_isArray) then {
 	_class = _this select 0;
 	_CID = _this select 1;
 } else {
