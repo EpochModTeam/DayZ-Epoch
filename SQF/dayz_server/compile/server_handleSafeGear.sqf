@@ -112,7 +112,7 @@ switch (_status) do {
 		[_weapons,_magazines,_backpacks,_holder] call server_addCargo;
 		
 		// Delete safe from database
-		[_objectID,_objectUID,_player] call server_deleteObj;
+		[_objectID,_objectUID,_player] call server_deleteObjDirect;
 	};
 };
 

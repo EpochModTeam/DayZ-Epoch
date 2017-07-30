@@ -1,10 +1,21 @@
 /*
-[_objectID,_objectUID,_activatingPlayer] call server_deleteObj;
+[_objectID,_objectUID,_activatingPlayer,_object,DZE_AuthKey] call server_deleteObj;
+For PV calls from the client use this function, otherwise if calling directly from the server use server_deleteObjDirect
 */
-private["_id","_uid","_key","_activatingPlayer"];
+private["_id","_uid","_key","_activatingPlayer","_object","_clientKey","_PlayerUID","_PUIDIndex"];
+
+if (count _this < 5) exitWith {diag_log "Server_DeleteObj error: Improper parameter format";};
 _id 	= _this select 0;
 _uid 	= _this select 1;
 _activatingPlayer 	= _this select 2;
+_object = _this select 3;
+_clientKey = _this select 4;
+_PlayerUID = getPlayerUID _activatingPlayer;
+_PUIDIndex = DZE_ServerPUIDArray find _PlayerUID;
+
+if (_object distance _activatingPlayer > (Z_VehicleDistance + 10)) exitWith {diag_log "Server_DeleteObj error: Delete verification failed, referenced player is too far away from object";};
+if (_PUIDIndex < 0) exitWith {diag_log "Server_DeleteObj error: PUID NOT FOUND ON SERVER";};
+if ((((DZE_ServerClientKeys select _PUIDIndex) select 0) != (owner _activatingPlayer)) || (((DZE_ServerClientKeys select _PUIDIndex) select 1) != _clientKey)) exitWith {diag_log "Server_DeleteObj error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED";};
 
 if (isServer) then {
 	//remove from database
@@ -12,11 +23,11 @@ if (isServer) then {
 		//Send request
 		_key = format["CHILD:304:%1:",_id];
 		_key call server_hiveWrite;
-		diag_log format["DELETE: Player %1 deleted object with ID: %2",_activatingPlayer,_id];
+		diag_log format["DELETE: Player %1 ,with Player UID %2 deleted object with ID: %3",_activatingPlayer, _PlayerUID, _id];
 	} else  {
 		//Send request
 		_key = format["CHILD:310:%1:",_uid];
 		_key call server_hiveWrite;
-		diag_log format["DELETE: Player %1 deleted object with UID: %2",_activatingPlayer,_uid];
+		diag_log format["DELETE: Player %1 ,with Player UID %2 deleted object with UID: %3",_activatingPlayer, _PlayerUID, _uid];
 	};
 };

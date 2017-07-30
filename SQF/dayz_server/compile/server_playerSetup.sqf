@@ -223,8 +223,22 @@ _playerObj setVariable ["humanity",_humanity,true];
 _playerObj setVariable ["humanity_CHK",_humanity];
 _playerObj setVariable ["lastPos",getPosATL _playerObj];
 
-PVCDZ_plr_Login2 = [_worldspace,_state];
 _clientID = owner _playerObj;
+_randomKey = [];
+_randomInput = toArray "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+-=\][{}:";
+for "_i" from 0 to 12 do {
+	_randomKey set [count _randomKey, (_randomInput call BIS_fnc_selectRandom)];
+};
+_randomKey = toString _randomKey;
+_findIndex = DZE_ServerPUIDArray find _playerID;
+if (_findIndex > -1) then {
+	DZE_ServerClientKeys set [_findIndex, [_clientID,_randomKey]];
+} else {
+	DZE_ServerPUIDArray set [(count DZE_ServerPUIDArray), _playerID];
+	DZE_ServerClientKeys set [(count DZE_ServerClientKeys), [_clientID,_randomKey]];
+};
+
+PVCDZ_plr_Login2 = [_worldspace,_state,_randomKey];
 _clientID publicVariableClient "PVCDZ_plr_Login2";
 if (dayz_townGenerator) then {
 	_clientID publicVariableClient "PVCDZ_plr_plantSpawner";
@@ -237,7 +251,6 @@ _playerObj setVariable ["lastTime",diag_ticktime];
 if (count _inventory > 2) then {
 	_playerObj setVariable["ServerMagArray",[_inventory select 1,_inventory select 2], false];
 };
-
 
 //Record Player Login/LogOut
 [_playerID,_characterID,1,(_playerObj call fa_plr2str),((_worldspace select 1) call fa_coor2str)] call dayz_recordLogin;

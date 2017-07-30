@@ -124,7 +124,7 @@ _object setVariable ["characterID",_characterID,true];
 
 //remove old object
 deleteVehicle _cursorTarget;
-PVDZ_obj_Destroy = [_objectID,_objectUID,player];
+PVDZ_obj_Destroy = [_objectID,_objectUID,player,_object,DZE_AuthKey];
 publicVariableServer "PVDZ_obj_Destroy";
 
 // create a weaponholder with dismissed parts

@@ -538,6 +538,8 @@ DZE_maintainRange = ((DZE_PlotPole select 0)+20);
 if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
 
 if (isServer) then {
+	DZE_ServerPUIDArray = [];
+	DZE_ServerClientKeys = [];
 	dayz_traps = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
@@ -567,6 +569,7 @@ if (isServer) then {
 };
 
 if (!isDedicated) then {
+	DZE_AuthKey = "";
 	DZE_LastPingResp = diag_tickTime;
 	dayz_buildingBubbleMonitor = [];
 	DayZ_fuelCans = ["ItemJerrycan","ItemFuelcan","ItemFuelBarrel"];

@@ -33,7 +33,7 @@ if(isNull(_object)) then {
 if(_objectID == "0" && _objectUID == "0") then { 
 	_proceed = false;
 } else {
-	[_objectID,_objectUID,_activatingplayer] call server_deleteObj;
+	[_objectID,_objectUID,_activatingplayer,_obj] call server_deleteObjDirect;
 };
 
 _allowed = [_object, "Server"] call check_publishobject;

@@ -104,7 +104,7 @@ _key call server_hiveWrite;
 	_newobject = _class createVehicle [0,0,0];
 
 	// remove old vehicle from DB
-	[_objectID,_objectUID,_activatingPlayer] call server_deleteObj;
+	[_objectID,_objectUID,_activatingPlayer] call server_deleteObjDirect;
 
 	// switch var to new vehicle at this point.
 	_object = _newobject;

@@ -128,7 +128,7 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	_backpacks = getBackpackCargo _cursorTarget;
 	
 	//remove old tent
-	PVDZ_obj_Destroy = [_objectID,_objectUID,player];
+	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_cursorTarget,DZE_AuthKey];
 	publicVariableServer "PVDZ_obj_Destroy";
 	deleteVehicle _cursorTarget;
 	

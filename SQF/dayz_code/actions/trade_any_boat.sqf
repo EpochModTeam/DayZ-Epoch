@@ -159,7 +159,7 @@ if (_finished) then {
 
 				if(local _obj && !isNull _obj && alive _obj && !_notSetup) then {
 
-					PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer];
+					PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,DZE_AuthKey];
 					publicVariableServer "PVDZ_obj_Destroy";
 
 					deleteVehicle _obj; 
