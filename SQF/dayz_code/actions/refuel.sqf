@@ -16,7 +16,7 @@ _curFuel = ((fuel _vehicle) * _capacity);
 _newFuel = (_curFuel + _canSize);
 _fueling = player getVariable ["fueling",false];
 
-if (fuel _vehicle == 1) exitWith {dayz_actionInProgress = false;};
+if (fuel _vehicle == 1 || !(_canType in magazines player)) exitWith {dayz_actionInProgress = false;};
 
 player removeAction s_player_fillfuel + _capacity;
 player setVariable ["fueling", true];
