@@ -225,7 +225,7 @@ _playerObj setVariable ["lastPos",getPosATL _playerObj];
 
 _clientID = owner _playerObj;
 _randomKey = [];
-_randomInput = toArray "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+-=";
+_randomInput = toArray "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
 for "_i" from 0 to 12 do {
 	_randomKey set [count _randomKey, (_randomInput call BIS_fnc_selectRandom)];
 };
