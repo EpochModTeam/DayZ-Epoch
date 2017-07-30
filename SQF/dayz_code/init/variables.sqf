@@ -471,6 +471,7 @@ respawn_west_original = getMarkerPos "respawn_west"; //Prevent problems caused b
 
 switch (toLower worldName) do {
 	case "napf";
+	case "ruegen";
 	case "sauerland" : {dayz_minpos = -1000; dayz_maxpos = 26000;};
 	case "tavi" : {dayz_minpos = -26000; dayz_maxpos = 26000;};
 	case "chernarus" : {dayz_minpos = -1; dayz_maxpos = 16000;};

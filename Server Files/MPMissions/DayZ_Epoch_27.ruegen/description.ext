@@ -1,0 +1,35 @@
+respawn = "BASE";
+respawnDelay = 0;
+respawnDialog = 0;
+onLoadMission = "DayZ Epoch Ruegen";
+OnLoadIntro = "Welcome to Ruegen";
+OnLoadIntroTime = 0;
+OnLoadMissionTime = 0;
+disabledAI = 1;
+disableChannels[] = {0,2,6};
+enableItemsDropping = 0;
+onPauseScript = "";
+briefing = 0;
+debriefing = 0;
+
+titleParam1 = "AutoLogin:";
+valuesParam1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 31};
+defValueParam1 = 10; //auto login time limit in seconds, set value to 31 to disable auto login
+textsParam1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, "Disabled"};
+
+loadScreen = "\z\addons\dayz_code\gui\loadingscreen.paa";
+
+class Header
+{
+	gameType = COOP;            //DM, Team, Coop, ...
+	minPlayers = 1;             //min # of players the mission supports
+	maxPlayers = 100;            //Max # of players the mission supports
+};
+
+aiKills = 1;
+diagRadio = 1;
+diagHit = 1;
+
+#include "\z\addons\dayz_code\gui\description.hpp"
+#include "\z\addons\dayz_code\Configs\CfgLoot\CfgLoot.hpp"
+#include "\z\addons\dayz_code\Configs\CfgServerTrader\CfgServerTrader.hpp"
