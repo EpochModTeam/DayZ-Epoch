@@ -33,6 +33,7 @@ class DZ_GroupListBox: RscListBox {
 	arrowFull = "\ca\ui\data\ui_arrow_combo_active_ca.paa";
 	wholeHeight = .45;
 	rowHeight = .04;
+	color[] = {.7, .7, .7, 1};
 	colorActive[] = {0,0,0,1};
 	colorDisabled[] = {0,0,0,.3};
 	sizeEx = .023;
@@ -65,13 +66,13 @@ class DZ_GroupButton: RscButton {
 	colorBackgroundDisabled[] = {0.1, 0.1, 0.1, 0.5};
 	colorShadow[] = {0.95, 0.95, 0.95, 1};
 	colorBorder[] = {0.95, 0.95, 0.95, 1};
-	animTextureNormal = "\z\addons\dayz_code\gui\grey\ui_button_normal_ca.paa";
-	animTextureDisabled = "\z\addons\dayz_code\gui\grey\ui_button_disabled_ca.paa";
-	animTextureOver = "\z\addons\dayz_code\gui\grey\ui_button_over_ca.paa";
-	animTextureFocused = "\z\addons\dayz_code\gui\grey\ui_button_focus_ca.paa";
-	animTexturePressed = "\z\addons\dayz_code\gui\grey\ui_button_down_ca.paa";
-	animTextureDefault = "\z\addons\dayz_code\gui\grey\ui_button_default_ca.paa";
-	animTextureNoShortcut = "\z\addons\dayz_code\gui\grey\ui_button_normal_ca.paa";	
+	animTextureNormal = "\ca\ui\data\ui_button_normal_ca.paa";
+	animTextureDisabled = "\ca\ui\data\ui_button_disabled_ca.paa";
+	animTextureOver = "\ca\ui\data\ui_button_over_ca.paa";
+	animTextureFocused = "\ca\ui\data\ui_button_focus_ca.paa";
+	animTexturePressed = "\ca\ui\data\ui_button_down_ca.paa";
+	animTextureDefault = "\ca\ui\data\ui_button_default_ca.paa";
+	animTextureNoShortcut = "\ca\ui\data\ui_button_normal_ca.paa";	
 	textureNoShortcut = "";
 	class HitZone {
 		left = .002;
@@ -118,7 +119,7 @@ class DZ_GroupDialog {
 			sizeEx = .023;	
 			colorBackground[] = {};
 			colorText[] = {};
-			text = "\z\addons\dayz_code\gui\grey\ui_background_controls_ca.paa";
+			text = "\ca\ui\data\ui_background_controls_ca.paa";
 			moving = 0;
 			x = .0;
 			y = .1;
@@ -126,9 +127,9 @@ class DZ_GroupDialog {
 			h = .65;
 		};
 		class Title: DZ_GroupText {
-			text = $STR_EPOCH_GROUPS;
+			text = $STR_EPOCH_GROUP_MANAGEMENT;
 			sizeEx = .04;
-			x = .35;
+			x = .28;
 			y = .112;
 			w = .3;
 			h = .05;

@@ -16351,10 +16351,8 @@
 			<Russian>Группы (F5)</Russian>
 			<German>Gruppen (F5)</German>
 		</Key>
-		<Key ID="STR_EPOCH_GROUPS">
-			<English>Groups</English>
-			<Russian>Группы</Russian>
-			<German>Gruppen</German>
+		<Key ID="STR_EPOCH_GROUP_MANAGEMENT">
+			<English>Group Management</English>
 		</Key>
 		<Key ID="STR_EPOCH_MY_GROUP">
 			<English>My Group</English>
