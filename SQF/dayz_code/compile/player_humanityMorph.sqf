@@ -39,7 +39,7 @@ if (Z_SingleCurrency) then {
 };
 
 //Switch
-[_model, _charID] call player_switchModel; //Already spawned thread, no need to spawn and waitUntil script is done
+[_model, _charID, _humanity] call player_switchModel; //Already spawned thread, no need to spawn and waitUntil script is done
 
 //Login
 
@@ -113,7 +113,7 @@ player removeEventHandler ["HandleDamage",mydamage_eh1];
 eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;}];
 [player] call fnc_usec_damageHandle;
 player allowDamage true;
-call player_forceSave;
 
 uiSleep 0.1;
 if !(isNull _old) then {deleteVehicle _old;};
+call player_forceSave;

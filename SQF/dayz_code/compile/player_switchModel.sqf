@@ -1,8 +1,7 @@
-private ["_weapons","_isArray","_CID","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
+private ["_weapons","_isArray","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
 _isArray = typeName _this == "ARRAY";
 if (_isArray) then {
 	_class = _this select 0;
-	_CID = _this select 1;
 } else {
 	_class = _this;
 };
@@ -84,7 +83,8 @@ _newUnit = _group createUnit [_class,respawn_west_original,[],0,"NONE"];
 if (_isArray) then {
 	_newUnit allowDamage false;
 	mydamage_eh1 = _newUnit AddEventHandler ["HandleDamage", {False}];
-	_newUnit setVariable ["characterID",_CID,true];
+	_newUnit setVariable ["characterID",(_this select 1),true];
+	_newUnit setVariable ["humanity",(_this select 2),true];
 };
 _newUnit setDir _dir;
 {_newUnit removeMagazine _x;} count magazines _newUnit;
