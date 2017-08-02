@@ -71,7 +71,7 @@ _d = uiNameSpace getVariable 'RscDisplayMultiplayerSetup';
     //DEF_CA_B_EnableAll,
     //DEF_CA_B_Lock,
     DEF_CA_B_Params,
-    DEF_CA_B_DSinterface,
+    //DEF_CA_B_DSinterface,
     //DEF_CA_B_Kick,
     DEF_CA_ButtonContinue,
     DEF_CA_ButtonCancel,

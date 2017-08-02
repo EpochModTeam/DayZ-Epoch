@@ -772,3 +772,4 @@ class bloodTest
 };
 
 #include "RscDisplay\includes.hpp"
+delete RscDisplayDSinterface;

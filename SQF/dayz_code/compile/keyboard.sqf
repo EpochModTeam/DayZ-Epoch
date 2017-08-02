@@ -318,6 +318,8 @@ if (isNil "keyboard_keys") then {
 		[[DIK_LWIN,DIK_RWIN], {dayz_groupNameTags = !dayz_groupNameTags;_handled = true;}] call _addArray;
 		[actionKeys "TacticalView", _block] call _addArray;
 	};
+	[actionKeys "DSInterface", {_handled = true;}] call _addArray;
+	[[DIK_P], {if (_shiftState) then {_handled = true;};}] call _addArray;
 	diag_log "keyboard_keys reset";
 };
 

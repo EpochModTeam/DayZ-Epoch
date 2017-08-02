@@ -216,5 +216,6 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 			colorText[] = {0,0,0,0};
 			colorBackground[] = {0,0,0,0};
 		};
+		delete CA_B_DSinterface;
 	};
 };
