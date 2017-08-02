@@ -220,10 +220,10 @@ if (count _playerPos > 0) then {
 
 //Wait for HIVE to be free and send request
 _key = if (Z_SingleCurrency) then {
-	"CHILD:201:" + str(_characterID) + ":" + str(_playerPos) + ":" + str(_playerGear) + ":" + str(_playerBackp) + ":" + str(_medical) + ":false:false:" + str(_kills) + ":" + str(_headShots) + ":" + str(_distanceFoot) + ":" + str(_timeSince) + ":" + str(_currentState) + ":" + str(_killsH) + ":" + str(_killsB) + ":" + str(_currentModel) + ":" + str(_humanity) + ":" + str(_coins) + ":";
+	"CHILD:201:" + _characterID + ":" + str(_playerPos) + ":" + str(_playerGear) + ":" + str(_playerBackp) + ":" + str(_medical) + ":false:false:" + str(_kills) + ":" + str(_headShots) + ":" + str(_distanceFoot) + ":" + str(_timeSince) + ":" + str(_currentState) + ":" + str(_killsH) + ":" + str(_killsB) + ":" + _currentModel + ":" + str(_humanity) + ":" + str(_coins) + ":";
 	//format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins]
 } else {
-	"CHILD:201:" + str(_characterID) + ":" + str(_playerPos) + ":" + str(_playerGear) + ":" + str(_playerBackp) + ":" + str(_medical) + ":false:false:" + str(_kills) + ":" + str(_headShots) + ":" + str(_distanceFoot) + ":" + str(_timeSince) + ":" + str(_currentState) + ":" + str(_killsH) + ":" + str(_killsB) + ":" + str(_currentModel) + ":" + str(_humanity) + ":";
+	"CHILD:201:" + _characterID + ":" + str(_playerPos) + ":" + str(_playerGear) + ":" + str(_playerBackp) + ":" + str(_medical) + ":false:false:" + str(_kills) + ":" + str(_headShots) + ":" + str(_distanceFoot) + ":" + str(_timeSince) + ":" + str(_currentState) + ":" + str(_killsH) + ":" + str(_killsB) + ":" + _currentModel + ":" + str(_humanity) + ":";
 	//format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity]
 };
 
