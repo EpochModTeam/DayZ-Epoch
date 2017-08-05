@@ -13,7 +13,7 @@ private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_t
 "_isModular","_isModularDoor","_isHouse","_isGateOperational","_isGateLockable","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
-"_allowed","_hasAccess","_uid","_myCharID"];
+"_allowed","_hasAccess","_uid","_myCharID","_isLocked"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -228,6 +228,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_isMan = _cursorTarget isKindOf "Man"; //includes animals and zombies
 	_isDestructable = _cursorTarget isKindOf "BuiltItems";
 	_isGenerator = _typeOfCursorTarget == "Generator_DZ";
+	_isLocked = locked _cursorTarget;
 	//_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"]; //Checked in player_flipvehicle
 	_isFuel = false;
 	_hasBarrel = "ItemFuelBarrel" in _magazinesPlayer;
@@ -495,7 +496,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			_menu = dayz_myCursorTarget addAction [localize "str_actions_repairveh", "\z\addons\dayz_code\actions\repair_vehicle.sqf",_cursorTarget, 0, true, false];
 			if (!_isBicycle) then { //Bike wheels should not give full size tires. Also model does not update to show removed wheels.
 				if (!DZE_salvageLocked) then {
-					if (!locked _cursorTarget) then {
+					if (!_isLocked) then {
 						_menu1 = dayz_myCursorTarget addAction [localize "str_actions_salvageveh", "\z\addons\dayz_code\actions\salvage_vehicle.sqf",_cursorTarget, 0, true, false];
 						s_player_repairActions set [count s_player_repairActions,_menu1];
 					};
@@ -664,7 +665,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		};
 
 		_attached = _cursorTarget getVariable["attached",false];
-		if (_found && {_allowTow} && {!locked _cursorTarget} && {!_isPZombie} && {typeName _attached != "OBJECT"}) then {
+		if (_found && {_allowTow} && {!_isLocked} && {!_isPZombie} && {typeName _attached != "OBJECT"}) then {
 			if (s_player_heli_lift < 0) then {
 				s_player_heli_lift = player addAction [localize "STR_EPOCH_ACTIONS_ATTACHTOHELI", "\z\addons\dayz_code\actions\player_heliLift.sqf",[_liftHeli,_cursorTarget], -10, false, true];
 			};
@@ -682,7 +683,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 			_temp_keys_names = _totalKeys select 1;
 			_hasKey = _characterID in _temp_keys;
 			_oldOwner = (_characterID == _uid);
-			if (locked _cursorTarget) then {
+			if (_isLocked) then {
 				if (_hasKey || _oldOwner) then {
 					_unlock = player addAction [format[localize "STR_EPOCH_ACTIONS_UNLOCK",_text], "\z\addons\dayz_code\actions\unlock_veh.sqf",[_cursorTarget,(_temp_keys_names select (_temp_keys find _characterID))], 2, true, true];
 					s_player_lockunlock set [count s_player_lockunlock,_unlock];
