@@ -1,7 +1,23 @@
-/* Block local script execution bug. Still not fixed in A20A as of 1.63.131129 */
+/*
+	These event handlers are not cleared after exiting the editor, allowing script execution in MP servers
+	Still not fixed in A2OA as of 1.63.131129
+*/
 inGameUISetEventHandler ["PrevAction","false"];
 inGameUISetEventHandler ["NextAction","false"];
 inGameUISetEventHandler ["Action","false"];
+{
+	(findDisplay 12) displayCtrl 51 ctrlRemoveAllEventHandlers _x;
+	(findDisplay 12) displayRemoveAllEventHandlers _x;
+} count [
+	"Load","Unload","ChildDestroyed","MouseEnter","MouseExit","SetFocus",
+	"KillFocus","Timer","KeyDown","KeyUp","Char","IMEChar","IMEComposition","JoystickButton","MouseButtonDown",
+	"MouseButtonUp","MouseButtonClick","MouseButtonDblClick","MouseMoving","MouseHolding","MouseZChanged",
+	"CanDestroy","Destroy","ButtonClick","ButtonDblClick","ButtonDown","ButtonUp","LBSelChanged",
+	"LBListSelChanged","LBDblClick","LBDrag","LBDragging","LBDrop","TreeSelChanged","TreeLButtonDown",
+	"TreeDblClick","TreeExpanded","TreeCollapsed","TreeMouseMove","TreeMouseHold","TreeMouseExit",
+	"ToolBoxSelChanged","Checked","CheckedChanged","CheckBoxesSelChanged","HTMLLink","SliderPosChanged",
+	"ObjectMoved","MenuSelected","Draw","VideoStopped"
+];
 
 // (c) facoptere@gmail.com, licensed to DayZMod for the community
 //
