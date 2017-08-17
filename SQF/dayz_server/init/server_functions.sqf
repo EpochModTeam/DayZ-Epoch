@@ -250,7 +250,7 @@ fa_plr2str = {
 		_name = _x getVariable ["bodyName", nil];
 		if ((isNil "_name" OR {(_name == "")}) AND ({alive _x})) then { _name = name _x; };
 		if (isNil "_name" OR {(_name == "")}) then { _name = "UID#"+(getPlayerUID _x); };
-		_res = format["PID#%1(%2)", owner _x, _name ];
+		_res = if (isPlayer _x) then {format["PID#%1(%2)", owner _x, _name]} else {localize "STR_PLAYER_AI"};
 	};
 	_res
 };
