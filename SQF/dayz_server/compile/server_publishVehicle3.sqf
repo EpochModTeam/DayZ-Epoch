@@ -45,7 +45,7 @@ _key call server_hiveWrite;
    _class = _this select 3;
    _dir = _this select 4;
    // _location = _this select 5;
-   _location = [_object] call fnc_getPos;
+   _location = getPosATL _object;
    _donotusekey = _this select 6;
    _activatingPlayer = _this select 7;
 
@@ -111,7 +111,6 @@ _key call server_hiveWrite;
 
 	_object setDir _dir;
 	_object setPosATL _location;
-	_object setVectorUp surfaceNormal _location;
 						
 	//Add weapons
 	_objWpnTypes = 	_weapons select 0;
