@@ -33,7 +33,7 @@ switch (_variable) do {
 		_vehicle = _arraytosend select 0;
 		_state = _arraytosend select 1;	
 		if (local _vehicle) then {
-			//_vehicle engineOn _state;
+			_vehicle engineOn _state;
 			_vehicle setOwner _owner;
 		} else {
 			PVCDZ_veh_engineSwitch = _arraytosend;
