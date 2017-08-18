@@ -120,8 +120,9 @@ _fnc_lockCode = {
 	private ["_color","_code"];
 
 	if (_this == "") exitWith {0};
-	_color = "";
 	_code = if (typeName _this == "STRING") then {parseNumber _this} else {_this};
+	if (_code < 10000) exitWith {0};
+	_color = "";
 	_code = _code - 10000;
 	
 	if (_code <= 99) then {_color = localize "STR_TEAM_RED";};
@@ -129,7 +130,7 @@ _fnc_lockCode = {
 	if (_code >= 200) then {_color = localize "STR_TEAM_BLUE"; _code = _code - 200;};
 	if (_code <= 9) then {_code = format["0%1", _code];};
 	_code = format ["%1%2",_color,_code];
-	
+
 	_code
 };
 
