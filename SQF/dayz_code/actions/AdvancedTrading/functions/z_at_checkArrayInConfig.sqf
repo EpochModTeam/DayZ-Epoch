@@ -105,7 +105,7 @@ _totalPrice = 0;
 					_HasKey = [DZE_myVehicle, _all] call _HasKeyCheck;
 				};
 			};
-			if (!_HasKey) exitWith {};
+			if (!_HasKey || {_y == _myVehType && Z_SellingFrom != 2}) exitWith {};
 
 			_worth = 0;
 			_currencyQty = _buy select 0;
