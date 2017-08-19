@@ -121,7 +121,7 @@ _fnc_lockCode = {
 
 	if (_this == "") exitWith {0};
 	_code = if (typeName _this == "STRING") then {parseNumber _this} else {_this};
-	if (_code < 10000) exitWith {0};
+	if (_code < 10000 || {_code > 10299}) exitWith {0};
 	_color = "";
 	_code = _code - 10000;
 
