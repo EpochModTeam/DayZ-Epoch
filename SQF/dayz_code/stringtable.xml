@@ -11685,7 +11685,7 @@
 			<Czech>Nemáte dostatek místa na Vašem opasku na nářadí.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_115">
-			<English>You cannot lock %1, you do not know the combination.</English>
+			<English>You cannot lock this %1, you do not know the combination.</English>
 			<German>Du kannst nicht diese(n) %1 abschließen, da du nicht die Kombination kennst.</German>
 			<Russian>Вы не можете закрыть %1, вы не знаете комбинации.</Russian>
 			<Dutch>Je kunt deze %1 niet op slot zetten, je weet de combinatie niet.</Dutch>
@@ -11709,7 +11709,7 @@
 			<Czech>%1 není ještě připravený.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_119">
-			<English>You cannot pack %1, you do not know the combination.</English>
+			<English>You cannot pack this %1, you do not know the combination.</English>
 			<German>Du kannst nicht diese(n) %1 packen, da du nicht die Kombination kennst.</German>
 			<Russian>Вы не можете упаковать %1, вы не знаете комбинации.</Russian>
 			<Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
