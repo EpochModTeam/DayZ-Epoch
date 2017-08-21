@@ -62,7 +62,7 @@ _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 ,
 //diag_log ("HIVE: WRITE: "+ str(_key));
 _key call server_hiveWrite;
 
-_object setVariable ["lastUpdate",time];
+_object setVariable ["lastUpdate",diag_tickTime];
 _object setVariable ["ObjectUID", _uid,true];
 // _object setVariable ["CharacterID",_charID,true];
 if (DZE_GodModeBase && {!(_class in DZE_GodModeBaseExclude)}) then {
