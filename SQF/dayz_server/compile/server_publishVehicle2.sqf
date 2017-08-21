@@ -103,7 +103,7 @@ _key call server_hiveWrite;
 	clearMagazineCargoGlobal  _object;
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	_object setVariable ["ObjectID", _oid, true];
-	_object setVariable ["lastUpdate",time];
+	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 	//_object setVelocity [0,0,1];
 
