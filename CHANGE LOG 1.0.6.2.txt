@@ -4,6 +4,7 @@
 [NEW] The journal and dayz_survived variable now contain actual play time [array] instead of days since the character was created [number].
 [NEW] Added secondary iron sight to CZ550 and bolt animations to CZ550 and LeeEnfield by @Streatman
 [NEW] Added some basic compatibility for falconsan's Ruegen map (beta version released February 2016)
+[NEW] Admins can now define what parts are returned from modular building parts, see configVariables.sqf/DZE_modularConfig @oiad @BigEgg
 
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
 [UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
