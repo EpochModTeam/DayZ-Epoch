@@ -22,7 +22,7 @@ if (DZE_permanentPlot) then {
 };
 
 if (_obj getVariable ["GeneratorRunning", false]) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_89" call dayz_rollingMessages;};
-	
+
 _objectID 	= _obj getVariable ["ObjectID","0"];
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
@@ -71,7 +71,7 @@ _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName")
 
 format[localize "str_epoch_player_162",_nameVehicle] call dayz_rollingMessages;
 
-if (_isModular) then {
+if (_isModular && {_objType in _x} count DZE_modularConfig == 0) then {
      localize "STR_EPOCH_ACTIONS_21" call dayz_rollingMessages;
 };
 
@@ -138,7 +138,7 @@ if (_brokenTool) then {
 	} else {
 		if (([player,_removeTool,1] call BIS_fnc_invRemove) > 0) then {_success = true;};
 	};
-	
+
 	if (_success) then {
 		format[localize "str_epoch_player_164",getText(configFile >> "CfgWeapons" >> _removeTool >> "displayName"),_nameVehicle] call dayz_rollingMessages;
 	};
@@ -190,14 +190,27 @@ if (_proceed && _success) then {
 					default {_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput")};
 				};
 			} else {
-				_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
+				if ({_objType in _x} count DZE_modularConfig > 0) then {
+					{
+						private ["_class", "_refund"];
+						
+						_class = _x select 0;
+						_refund = _x select 1;
+						
+						if (_objType == _class) then {
+							{_selectedRemoveOutput set [count _selectedRemoveOutput,_x];} forEach _refund;
+						};
+					} count DZE_modularConfig;
+				} else {
+					_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
+				};
 				_preventRefund = (_objectID == "0" && _objectUID == "0");
 
 			};
 		};
 
 		if ((count _selectedRemoveOutput) <= 0) then {
-			localize "str_epoch_player_90" call dayz_rollingMessages;
+			[localize "str_epoch_player_90",1] call dayz_rollingMessages;
 		};
 
 		if (_ipos select 2 < 0) then {
