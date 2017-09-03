@@ -227,9 +227,7 @@ if (_proceed && _success) then {
 					_gems set [(count _gems), (_x select 0)];
 					_weights set [(count _weights), (_x select 1)];
 				} count DZE_GemOccurance;
-				diag_log [_gems, _weights];
 				_gemSelected = [_gems, _weights] call BIS_fnc_selectRandomWeighted;
-				diag_log _gemSelected;
 				_selectedRemoveOutput set [(count _selectedRemoveOutput),[_gemSelected,1]];
 			};
 		};
