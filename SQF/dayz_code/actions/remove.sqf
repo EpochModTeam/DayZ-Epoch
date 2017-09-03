@@ -241,7 +241,7 @@ if (_proceed && _success) then {
 				_itemOut = _x select 0;
 				_countOut = _x select 1;
 				if (typeName _countOut == "ARRAY") then {
-					_countOut = round((random (_countOut select 1)) + (_countOut select 0));
+					_countOut = round((random (_countOut select 1)) max (_countOut select 0));
 				};
 				if (count _x > 2) then {
 					switch (_x select 2) do {
