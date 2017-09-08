@@ -102,24 +102,26 @@ _buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables","DZ_s
 _center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
 if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {dayz_actionInProgress = false; format[localize "str_epoch_player_41",_distance] call dayz_rollingMessages; [false, _isPole];};
 
-_text = getText (configFile >> 'CfgMagazines' >> _item >> 'displayName');
+if !(dayz_playerUID in DZE_PlotManagementAdmins) then {
+	_text = getText (configFile >> 'CfgMagazines' >> _item >> 'displayName');
 
-_buildCheck = call _checkClass;
+	_buildCheck = call _checkClass;
 
-if (_buildCheck select 0) then {
-	{
-		if ((player distance (_x select 0)) < _buildCheck select 1) exitWith {_canBuild = false;};
-	} count DZE_safeZonePosArray;
+	if (_buildCheck select 0) then {
+		{
+			if ((player distance (_x select 0)) < _buildCheck select 1) exitWith {_canBuild = false;};
+		} count DZE_safeZonePosArray;
+	};
+
+	if !(_canBuild) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,_buildCheck select 1] call dayz_rollingMessages; [false, _isPole];};
+
+	if ((count DZE_NoBuildNear) > 0) then {
+		_near = (nearestObjects [_pos,DZE_NoBuildNear,DZE_NoBuildNearDistance]);
+		if ((count _near) > 0) then { _canBuild = false; };
+	};
+
+	if !(_canBuild) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_167",_text,DZE_NoBuildNearDistance,typeOf (_near select 0)] call dayz_rollingMessages; [false, _isPole];};
 };
-
-if !(_canBuild) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,_buildCheck select 1] call dayz_rollingMessages; [false, _isPole];};
-
-if ((count DZE_NoBuildNear) > 0) then {
-	_near = (nearestObjects [_pos,DZE_NoBuildNear,DZE_NoBuildNearDistance]);
-	if ((count _near) > 0) then { _canBuild = false; };
-};
-
-if !(_canBuild) exitWith { dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_167",_text,DZE_NoBuildNearDistance,typeOf (_near select 0)] call dayz_rollingMessages; [false, _isPole]; };
 
 if (_toolCheck) then {
 	_require =  getArray (configFile >> "cfgMagazines" >> _item >> "ItemActions" >> "Build" >> "require");
