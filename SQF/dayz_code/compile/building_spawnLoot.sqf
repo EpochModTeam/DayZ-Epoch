@@ -44,10 +44,12 @@ _lootGroup = Loot_GetGroup(getText(_config >> "lootGroup"));
 	_worldPos = _this modelToWorld _x;
 	_worldPos set [2, 0 max (_worldPos select 2)];
 	
-	//Delete existing lootpiles within 1m of spawn location
+	//Delete existing lootpiles within 1m of spawn location if no player is right next to it
 	{
-		deleteVehicle _x;
-		dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+		if ({isPlayer _x} count (_x nearEntities ["CAManBase",4]) == 0) then {
+			deleteVehicle _x;
+			dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+		};
 	}
 	foreach (_worldPos nearObjects ["ReammoBox", 1]);
 
