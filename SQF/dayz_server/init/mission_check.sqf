@@ -5,9 +5,7 @@
 //List of files in your mission to check. For example, you may need to add 'custom\variables.sqf' etc.
 //Remove any you aren't using
 _files = [
-	'description.ext','init.sqf','mission.sqm','rules.sqf','server_traders.sqf',
-	'DZE_Hotfix_1.0.6.1A\groups\init.sqf','DZE_Hotfix_1.0.6.1A\groups\groupTags.sqf','DZE_Hotfix_1.0.6.1A\groups\groupMarkers.sqf',
-	'DZE_Hotfix_1.0.6.1A\init\compiles.sqf','DZE_Hotfix_1.0.6.1A\system\progress_monitor.sqf'
+	'description.ext','init.sqf','mission.sqm','rules.sqf','server_traders.sqf'
 ];
 
 _list = [];
