@@ -54,7 +54,7 @@
 [FIXED] The dramatic recoil camera shake effect from a nearby bullet hit is now reset correctly instead of remaining permanent.
 [FIXED] Added temporary fix for missing AS50 ammo error with beta branch core patch. #1955 @AirwavesMan
 [FIXED] Melee and tranquilizer bolt knockouts were usually instant or far shorter than the intended time of 20s-80s.
-[FIXED] Multiple dupe fixes - SERVER ADMINS, DO NOT IMPLEMENT SCRIPTS WHICH KICK PLAYERS TO THE LOBBY, YOU MUST KICK THEM ENTIRELY OUT OF THE SERVER! (EX: send a restricted PublicVariable on the client instead, for BE to kick the player)
+[FIXED] Multiple dupe fixes - SERVER ADMINS, DO NOT IMPLEMENT SCRIPTS WHICH KICK PLAYERS TO THE LOBBY (ENDMISSION, FAILMISSION, etc.), YOU MUST KICK THEM ENTIRELY OUT OF THE SERVER! (EX: by BE restriction, but with the stock scripts.txt forceEnd, failmission, and endmission should kick the player anyway)
 
 [NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
