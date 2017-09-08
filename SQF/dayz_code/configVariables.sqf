@@ -94,6 +94,21 @@ DZE_dirWithDegrees = true; // When rotating objects with Q&E, use the custom deg
 DZE_buildMaxMoveDistance = 10; // Max distance player can walk from start position when building. Anything >= the differnce between DZE_PlotPole values is not recommended (allows walking into other plots).
 DZE_buildMaxHeightDistance = 10; // Max distance player can raise or lower object from start position when building.
 
+DZE_modularConfig = [];
+/*
+	Array of classnames with magazine based loot to be refunded on deconstruction of modular built items that do not typically refund.
+
+	For example:
+	DZE_modularConfig = [
+		["CinderWall_DZ", [["CinderBlocks",7],["MortarBucket",2]]],
+		["CinderWallDoor_DZ", [["CinderBlocks",7],["MortarBucket",2],["ItemTankTrap",3],["ItemPole",[1,3]]]]
+	];
+
+	This would refund 7 cinder blocks and 2 mortar for "CinderWall_DZ"
+	For "CinderWallDoor_DZ" you would get 7 cinder blocks, 2 mortar, 3 tank traps and a random number of poles between 1 and 3.
+	The refund amount can be an array where the first param is the minimum and the second is the maximum, it will refund a random amount between them.
+*/
+
 // Door Management
 DZE_doorManagement = true; // Enable Door Management by @DevZupa. 
 DZE_doorManagementMustBeClose = false; //Players must be within 10m of door to be added as a door friend.
