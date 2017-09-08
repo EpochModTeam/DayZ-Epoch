@@ -846,7 +846,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 				s_player_downgrade_build = -1;
 			};
 		};
-		_isDoorUnlocked = (((_cursorTarget animationPhase "Open_door" == 0) && (_cursorTarget animationPhase "Open_hinge" == 1)) || ((_cursorTarget animationPhase "Open_door" == 0) && (_cursorTarget animationPhase "Open_latch" == 1)));
+		_isDoorUnlocked = ((_cursorTarget animationPhase "Open_door" == 0) && {(_cursorTarget animationPhase "Open_hinge" == 1) || (_cursorTarget animationPhase "Open_latch" == 1)});
 		if (s_player_downgrade_build < 0 && _isDoorUnlocked) then {
 			_hasAccess = [player, _cursorTarget] call FNC_check_access;
 			if ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) then {
