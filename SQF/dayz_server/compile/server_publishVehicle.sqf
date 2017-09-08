@@ -103,7 +103,7 @@ dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 	};
 	if(!_done) exitWith { deleteVehicle _object; diag_log("CUSTOM: failed to get id for : " + str(_uid)); };
 
-	_object setVariable ["lastUpdate",time];
+	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 	_object setDamage _damage;
 

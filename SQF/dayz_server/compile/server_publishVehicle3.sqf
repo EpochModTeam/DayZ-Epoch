@@ -141,7 +141,7 @@ _key call server_hiveWrite;
 	} count _objWpnTypes;
 
 	_object setVariable ["ObjectID", _oid, true];
-	_object setVariable ["lastUpdate",time];
+	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
