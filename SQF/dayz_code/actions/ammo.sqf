@@ -17,7 +17,6 @@ _magazines = getArray (configFile >> "cfgWeapons" >> _weapon >> "magazines");
 } count _magazines;
 
 if (_ammo != "") then {
-	_vehicle removeMagazineTurret [_ammo,_turret];
 	_vehicle addMagazineTurret [_ammo,_turret];
 	player removeMagazine _ammo;
 	format[localize "str_player_ammo_successful",_ammoType] call dayz_rollingMessages;
