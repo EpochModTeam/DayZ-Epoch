@@ -171,7 +171,7 @@ if (_unit == player) then {
 		_sourceDist = round(_unit distance _source);
 		_sourceWeap = switch (true) do {
 			case (_ammo in ["PipeBomb","Mine","MineE"]): { format["with %1",_ammo] };
-			case (_isVehicle) : { format ["in %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
+			case (_isVehicle) : { format ["with a %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
 			case (_ammo in MeleeAmmo) : { format ["with %2%1",_wpst select 0, if (_sourceDist>6) then {"suspicious weapon "} else {""}] };
 			case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
 			case (["Horn", currentWeapon _source] call fnc_inString) : {"with suspicious vehicle "+str((getposATL _source) nearEntities [["Air", "LandVehicle", "Ship"],5])};
