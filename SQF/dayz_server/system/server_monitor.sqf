@@ -357,6 +357,11 @@ diag_log format["HIVE: BENCHMARK - Server_monitor.sqf finished streaming %1 obje
 if (dayz_townGenerator) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_plantSpawner.sqf"; // Draw the pseudo random seeds
 };
+#ifndef OBJECT_DEBUG
+	object_debug = false;
+#else
+	object_debug = true;
+#endif
 [] execFSM "\z\addons\dayz_server\system\server_vehicleSync.fsm"; 
 [] execVM "\z\addons\dayz_server\system\scheduler\sched_init.sqf"; // launch the new task scheduler
 
