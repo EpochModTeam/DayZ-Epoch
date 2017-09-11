@@ -120,6 +120,7 @@ if ((count _upgrade) > 0) then {
 				_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
 				
 				_objectCharacterID = _combination;
+				DZE_Lock_Door = _combination;
 				
 				format[localize "str_epoch_player_158",_combination,_text] call dayz_rollingMessages;
 				systemChat format[localize "str_epoch_player_158",_combination,_text];
