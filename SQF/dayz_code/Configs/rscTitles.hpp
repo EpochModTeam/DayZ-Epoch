@@ -775,7 +775,55 @@ class bloodTest
 };
 
 #include "RscDisplay\includes.hpp"
-delete RscDisplayDSinterface;
+class RscDisplayDSinterface: RscStandardDisplay
+{
+	idd = 155;
+	movingEnable = 0;
+	onLoad = "";
+	class ControlsBackground
+	{
+		delete Mainback;
+		delete EditProfileTitleBorder;
+		delete PlayersListBorder;
+		delete MissionsListBorder;
+		delete CA_PasswordText;
+		delete CA_EditPassword;
+		delete CA_B_Login;
+		delete CA_MissionListText;
+		delete CA_B_Vote_kick;
+		delete CA_B_Vote_admin;
+		delete CA_B_Play_Vote_Mission;
+		delete CA_B_Vote_Missions;
+		delete CA_B_Vote_Reassign;
+		delete CA_B_Vote_Restart;
+	};
+	class Controls
+	{
+		delete CA_B_Logout;
+		delete CA_B_Kick;
+		delete CA_B_Ban;
+		delete CA_B_Shutdown;
+		delete CA_B_Play_Mission;
+		delete CA_B_Missions;
+		delete CA_B_Reassign;
+		delete CA_B_Restart;
+		delete CA_AdminText;
+		delete MovingBar;
+		delete DummyBar;
+		delete CA_EditProfileTitle;
+		delete CA_Playerslist;
+		delete CA_MissionsList;
+		class CA_B_Cancel: RscShortcutButton
+		{
+			idc = 2;
+			x = "(77/100)	* SafeZoneW + SafeZoneX";
+			y = "(93/100)	* SafeZoneH + SafeZoneY";
+			w = "(20/100)	* SafeZoneW";
+			default = 0;
+			text = "Close";
+		};
+	};
+};
 class RscDisplayNewUser: RscStandardDisplay
 {
 	idd = 42;
