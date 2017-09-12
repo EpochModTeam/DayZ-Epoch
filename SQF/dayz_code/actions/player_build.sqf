@@ -387,7 +387,7 @@ if (_canBuild select 0) then {
 							_combination_2 = floor(random 10);
 							_combination_3 = floor(random 10);
 							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
-							dayz_combination = _combination;
+							DZE_Lock_Door = _combination;
 							_combinationDisplay = _combination;
 						};
 
