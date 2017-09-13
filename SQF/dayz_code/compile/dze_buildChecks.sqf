@@ -108,9 +108,7 @@ if !(dayz_playerUID in DZE_PlotManagementAdmins) then {
 	_buildCheck = call _checkClass;
 
 	if (_buildCheck select 0) then {
-		{
-			if ((player distance (_x select 0)) < _buildCheck select 1) exitWith {_canBuild = false;};
-		} count DZE_safeZonePosArray;
+		_canBuild = !((getPosATL player) call DZE_SafeZonePosCheck);
 	};
 
 	if !(_canBuild) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,_buildCheck select 1] call dayz_rollingMessages; [false, _isPole];};

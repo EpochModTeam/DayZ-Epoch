@@ -62,11 +62,11 @@ _cantSee = {
 _skipFOV = false;
 
 if ((_maxlocalspawned < _maxControlledZombies) && (dayz_CurrentNearByZombies < dayz_maxNearByZombies) && (dayz_currentGlobalZombies < dayz_maxGlobalZeds)) then {
-	if (_bypass) then {  
+	if (_bypass) then {
 		_skipFOV = true;
 		_position = [_position,3,20,1] call fn_selectRandomLocation;
 	};
-
+	if(_position call DZE_SafeZonePosCheck) exitWith {};
 	if (surfaceIsWater _position) exitWith { diag_log "Location is in Water Abort"; };
 
 	if ((_skipFOV) or {([_position, 15, 10, 70] call _cantSee)}) then {

@@ -845,3 +845,13 @@ dayz_engineSwitch = {
 		publicVariableServer "PVDZ_send";
 	};
 };
+
+DZE_SafeZonePosCheck = {
+	private ["_position","_skipPos"];
+	_position = _this;
+	_skipPos = false;
+	{
+		if ((_position distance (_x select 0)) < (_x select 1)) exitWith {_skipPos = true;};
+	} forEach DZE_SafeZonePosArray;
+	_skipPos;
+};

@@ -39,27 +39,25 @@ if (_lootChance <= 0) exitWith {};
 _lootPos = getArray (_config >> "lootPos");
 _lootGroup = Loot_GetGroup(getText(_config >> "lootGroup"));
 
-{
-	//Get the world position of the spawn position
-	_worldPos = _this modelToWorld _x;
-	_worldPos set [2, 0 max (_worldPos select 2)];
-	
-	//Delete existing lootpiles within 1m of spawn location if no player is right next to it
+if (!(_this call DZE_SafeZonePosCheck)) then {
 	{
-		if ({isPlayer _x} count (_x nearEntities ["CAManBase",4]) == 0) then {
-			deleteVehicle _x;
-			dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+		//Get the world position of the spawn position
+		_worldPos = _this modelToWorld _x;
+		_worldPos set [2, 0 max (_worldPos select 2)];
+		//Delete existing lootpiles within 1m of spawn location if no player is right next to it
+		{
+			if ({isPlayer _x} count (_x nearEntities ["CAManBase",4]) == 0) then {
+				deleteVehicle _x;
+				dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+			};
+		} foreach (_worldPos nearObjects ["ReammoBox", 1]);
+
+		if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then
+		{
+			Loot_SpawnGroup(_lootGroup, _worldPos);
 		};
-	}
-	foreach (_worldPos nearObjects ["ReammoBox", 1]);
-
-	if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then
-	{
-		Loot_SpawnGroup(_lootGroup, _worldPos);
-	};
-}
-foreach _lootPos;
-
+	} foreach _lootPos;
+};
 // EPOCH ADDITION
 // lootPosSmall are additional positions in lockers, on shelves, etc. for small objects only.
 // Example: soda cans, small ammo, pistols, bandage, etc.
@@ -68,24 +66,25 @@ if (isArray (_config >> "lootPosSmall")) then {
 	_lootPos = getArray (_config >> "lootPosSmall");
 	_lootGroup = Loot_GetGroup((getText(_config >> "lootGroup")) + "Small");
 	if (_lootGroup >= 1) then {
-		{
-			//Get the world position of the spawn position
-			_worldPos = _this modelToWorld _x;
-			_worldPos set [2, 0 max (_worldPos select 2)];
-			
-			//Delete existing lootpiles within 1m of spawn location
+		if (!(_this call DZE_SafeZonePosCheck)) then {
 			{
-				deleteVehicle _x;
-				dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
-			}
-			foreach (_worldPos nearObjects ["ReammoBox", 1]);
+				//Get the world position of the spawn position
+				_worldPos = _this modelToWorld _x;
+				_worldPos set [2, 0 max (_worldPos select 2)];
+				//Delete existing lootpiles within 1m of spawn location if no player is right next to it
+				{
+					if ({isPlayer _x} count (_x nearEntities ["CAManBase",4]) == 0) then {
+						deleteVehicle _x;
+						dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+					};
+				} foreach (_worldPos nearObjects ["ReammoBox", 1]);
 
-			if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then
-			{
-				Loot_SpawnGroup(_lootGroup, _worldPos);
-			};
-		}
-		foreach _lootPos;
+				if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then
+				{
+					Loot_SpawnGroup(_lootGroup, _worldPos);
+				};
+			} foreach _lootPos;
+		};
 	} else {
 		diag_log format["Loot group small: %1 does not exist", ((getText(_config >> "lootGroup")) + "Small")];
 	};
