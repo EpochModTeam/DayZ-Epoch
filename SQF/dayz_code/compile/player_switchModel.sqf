@@ -1,4 +1,4 @@
-private ["_weapons","_isArray","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
+private ["_weapons","_isArray","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_isMagazine","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
 _isArray = typeName _this == "ARRAY";
 if (_isArray) then {
 	_class = _this select 0;
@@ -162,15 +162,27 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 	{
 		if (typeName _x != "STRING") then {
 			_isWeapon = isClass (configFile >> "CfgWeapons" >> (_x select 0));
+			_isMagazine = isClass (configFile >> "CfgMagazines" >> (_x select 0));
+			if (_isWeapon && !_isMagazine) then {
+				_backpackWpnTypes set [count _backpackWpnTypes, (_x select 0)];
+				_backpackWpnQtys set [count _backpackWpnQtys, (_x select 1)];
+			};
 		} else {
 			_isWeapon = isClass (configFile >> "CfgWeapons" >> _x);
+			_isMagazine = isClass (configFile >> "CfgMagazines" >> _x);
+			if (_isWeapon && !_isMagazine) then {
+				_backpackWpnTypes set [count _backpackWpnTypes, _x];
+				_backpackWpnQtys set [count _backpackWpnQtys, 1];
+			};
 		};
-		if (!_isWeapon) then {
+		if (!_isWeapon || (_isWeapon && _isMagazine)) then {
 			_countr = _countr + 1;
 			if (typeName _x != "STRING") then {
-				dayz_myBackpack addMagazineCargoGlobal [_x select 0, 1];
-				_idc = 4999 + _countr;
-				_idc setIDCAmmoCount (_x select 1);
+				if (_x select 1 > 0) then { //Javelin rockets in BP returns ["Javelin", 0],"Javelin". Dupe on relog -> # real Javs + 1 per skin change
+					dayz_myBackpack addMagazineCargoGlobal [_x select 0, 1];
+					_idc = 4999 + _countr;
+					_idc setIDCAmmoCount (_x select 1);
+				};
 			} else {
 				dayz_myBackpack addMagazineCargoGlobal [_x, 1];
 			};
