@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Zombie Agent">*/
+/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, DayZ Zombie Agent">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,50.000000,-400.000000,150.000000,-350.000000,0.000000,"init"};
@@ -15,7 +15,7 @@ item10[] = {"true",8,218,-75.000000,-400.000000,25.000000,-350.000000,0.000000,"
 item11[] = {"Begin",2,250,-75.000000,-150.000000,25.000000,-100.000000,0.000000,"Begin"};
 item12[] = {"",7,210,-1179.000122,-29.000004,-1170.999878,-20.999996,0.000000,""};
 item13[] = {"",7,210,-354.000031,121.000000,-346.000000,129.000000,0.000000,""};
-item14[] = {"UnitReady",4,218,-275.000000,275.000000,-175.000000,325.000000,5.000000,"UnitReady"};
+item14[] = {"UnitReady",4,4314,-275.000000,275.000000,-175.000000,325.000000,5.000000,"UnitReady"};
 item15[] = {"Chase",2,250,-150.000000,375.000000,-50.000000,425.000000,0.000000,"Chase"};
 item16[] = {"Time_Check",4,218,50.000000,25.000000,150.000000,75.000000,1.000000,"Time" \n "Check"};
 item17[] = {"",7,210,-29.000006,121.000000,-20.999994,129.000000,0.000000,""};
@@ -84,7 +84,7 @@ item79[] = {"NotInRange",4,218,-275.000000,350.000000,-175.000000,400.000000,1.0
 item80[] = {"TimeCheck",4,218,-400.000000,275.000000,-300.000000,325.000000,0.000000,"TimeCheck"};
 item81[] = {"Has_Target",4,218,-150.000000,200.000000,-50.000000,250.000000,0.000000,"Has" \n "Target"};
 item82[] = {"Reset_MoveTo",2,250,-275.000000,200.000000,-175.000000,250.000000,0.000000,"Reset MoveTo"};
-item83[] = {"____FAKE____",9,3320,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
+item83[] = {"____FAKE____",9,0,0.000000,0.000000,0.000000,0.000000,0.000000,"____FAKE____"};
 link0[] = {0,10};
 link1[] = {0,53};
 link2[] = {2,3};
@@ -200,923 +200,993 @@ link111[] = {60,83};
 link112[] = {83,60};
 link113[] = {61,83};
 link114[] = {83,61};
-globals[] = {25.000000,1,0,0,0,640,480,1,189,6316128,1,-713.213928,288.267639,611.326172,-131.708481,806,598,1};
-window[] = {2,-1,-1,-1,-1,727,26,1234,26,3,824};
+globals[] = {0.000000,0,0,0,0,640,480,1,189,6316128,1,-497.896179,342.204590,880.103882,-416.531311,806,1244,1};
+window[] = {2,-1,-1,-32000,-32000,1039,338,1546,338,3,824};
 *//*%FSM</HEAD>*/
 class FSM
 {
-  fsmName = "DayZ Zombie Agent";
-  class States
-  {
-    /*%FSM<STATE "init">*/
-    class init
-    {
-      name = "init";
-      init = /*%FSM<STATEINIT""">*/"_agent = 	_this select 1; //Compatible with old configs like Namalsk's custom zombies" \n
-       "_position = 		_agent modelToWorld [0,0,0];" \n
-       "_secondHand = false;" \n
-       "" \n
-       "if (count _this > 2) then {" \n
-       "	_secondHand = true;" \n
-       "	diag_log (""Second Hand Zombie Initialized: "" + str(_this));" \n
-       "};"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "is_Dedicated">*/
-        class is_Dedicated
+        fsmName = "DayZ Zombie Agent";
+        class States
         {
-          priority = 5.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"isDedicated"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                /*%FSM<STATE "init">*/
+                class init
+                {
+                        name = "init";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"_agent = 	_this select 1; //Compatible with old configs like Namalsk's custom zombies" \n
+                         "_position = 		_agent modelToWorld [0,0,0];" \n
+                         "_secondHand = false;" \n
+                         "" \n
+                         "if (count _this > 2) then {" \n
+                         "	_secondHand = true;" \n
+                         "	diag_log (""Second Hand Zombie Initialized: "" + str(_this));" \n
+                         "};"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "is_Dedicated">*/
+                                class is_Dedicated
+                                {
+                                        itemno = 53;
+                                        priority = 5.000000;
+                                        to="End";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isDedicated"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 10;
+                                        priority = 0.000000;
+                                        to="Begin";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(!isNil 'dayz_clientPreload' && {dayz_clientPreload}) && !(isNull _agent)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "End">*/
+                class End
+                {
+                        name = "End";
+                        itemno = 1;
+                        init = /*%FSM<STATEINIT""">*/"if (!isDedicated) then {" \n
+                         "	if (!isNull _agent) then {" \n
+                         "		deleteVehicle _agent;" \n
+                         "		//dayz_spawnZombies = dayz_spawnZombies - 1;" \n
+                         "	};" \n
+                         "} else {" \n
+                         "	[_agent] call zombie_findOwner;" \n
+                         "};"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Looking_for_Targ">*/
+                class Looking_for_Targ
+                {
+                        name = "Looking_for_Targ";
+                        itemno = 3;
+                        init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
+                         "_target = _agent call zombie_findTargetAgent;" \n
+                         "_timeN = diag_tickTime;" \n
+                         "" \n
+                         "_newDest = _agent getVariable [""myDest"",getposATL _agent];" \n
+                         "if (!isNil ""_newDest"") then {" \n
+                         "	if (_newDest distance _myDest > 0) then {" \n
+                         "		_myDest = _newDest;" \n
+                         "		_agent moveTo _myDest;" \n
+                         "		_agent forceSpeed 2;" \n
+                         "	};" \n
+                         "};" \n
+                         "" \n
+                         "//diag_log (""Zombie "" + str(_agent) + "" Wait "");"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Nobody_Near">*/
+                                class Nobody_Near
+                                {
+                                        itemno = 5;
+                                        priority = 6.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Not_Alive">*/
+                                class Not_Alive
+                                {
+                                        itemno = 4;
+                                        priority = 5.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "No_Agent">*/
+                                class No_Agent
+                                {
+                                        itemno = 63;
+                                        priority = 5.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "player_check">*/
+                                class player_check
+                                {
+                                        itemno = 52;
+                                        priority = 2.000000;
+                                        to="Looking_for_Targ";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
+                                         "" \n
+                                         "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+                                         "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Time_Check">*/
+                                class Time_Check
+                                {
+                                        itemno = 16;
+                                        priority = 1.000000;
+                                        to="Looking_for_Targ";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Has_Target">*/
+                                class Has_Target
+                                {
+                                        itemno = 81;
+                                        priority = 0.000000;
+                                        to="Reset_MoveTo";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(isNull _target)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Loiter">*/
+                class Loiter
+                {
+                        name = "Loiter";
+                        itemno = 7;
+                        init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
+                         "_timeN = diag_tickTime;" \n
+                         "" \n
+                         "//Look for target" \n
+                         "_target = _agent call zombie_findTargetAgent;" \n
+                         "" \n
+                         "//Check for alert var" \n
+                         "_newDest = _agent getVariable [""myDest"",nil];" \n
+                         "" \n
+                         "if ((moveToCompleted _agent) or (moveToFailed _agent) or (Speed _agent == 0)) then { " \n
+                         "	_myDest = [_agent,_position] call zombie_loiter;" \n
+                         "};" \n
+                         "" \n
+                         "" \n
+                         "//Change location to alert" \n
+                         "if (!isNil ""_newDest"") then {" \n
+                         "	if (_newDest distance _myDest > 0) then {" \n
+                         "		_myDest = _newDest;" \n
+                         "	};" \n
+                         "};" \n
+                         "" \n
+                         "" \n
+                         "//Move to location" \n
+                         "" \n
+                         "if (_myDest distance (getposATL _agent) > 3) then {" \n
+                         "	//diag_log format[""Loiter - %1 - [%2,%3] - Range %4"",(typeof _agent),_myDest,_movingTo,(_myDest distance _movingTo)];" \n
+                         "" \n
+                         "	_agent moveTo _myDest;" \n
+                         "};" \n
+                         "" \n
+                         "//hintSilent (""loitering..."" + str(_agent distance (_agent getVariable [""myDest"",getposATL _agent])));" \n
+                         "" \n
+                         "if (_secondHand) then {" \n
+                         "	diag_log (""Zombie "" + str(_agent) + "" Loiter "" + "" distance: "" + str(_newDest distance _myDest));" \n
+                         "	_agent doMove (getPosATL player);" \n
+                         "	_agent moveTo (getPosATL player);" \n
+                         "};"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "player_check">*/
+                                class player_check
+                                {
+                                        itemno = 51;
+                                        priority = 2.000000;
+                                        to="Loiter";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
+                                         "" \n
+                                         "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+                                         "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Time_Check">*/
+                                class Time_Check
+                                {
+                                        itemno = 19;
+                                        priority = 0.000000;
+                                        to="Loiter";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Begin">*/
+                class Begin
+                {
+                        name = "Begin";
+                        itemno = 11;
+                        init = /*%FSM<STATEINIT""">*/"_hasMoved = 	_agent getVariable[""doLoiter"",true];" \n
+                         "" \n
+                         "_myDest = [_agent,_position] call zombie_loiter;" \n
+                         "_newDest = nil;" \n
+                         "_movingTo = _myDest;" \n
+                         "_array = 		[];" \n
+                         "_waypoint = [];" \n
+                         "" \n
+                         "_agentReset = false;" \n
+                         "" \n
+                         "_bodyStay = 	60;" \n
+                         "" \n
+                         "_agent disableAI ""FSM"";" \n
+                         "_timeN = diag_tickTime;" \n
+                         "" \n
+                         "_agent setBehaviour ""CARELESS"";" \n
+                         "_agent setSpeedMode ""FULL"";" \n
+                         "//hint ""run local zombie"";" \n
+                         "_isSomeone = true;" \n
+                         "" \n
+                         "_target = objNull;" \n
+                         "_targetPos = [];" \n
+                         "_countr = 0;" \n
+                         "" \n
+                         "//Spawn roaming script (individual to unit)" \n
+                         "_entityTime = diag_tickTime;" \n
+                         "" \n
+                         "_isCarrier = false;" \n
+                         "_chance =	round(random 12);" \n
+                         "if ((_chance % 4) == 0) then {" \n
+                         "	_isCarrier = true;" \n
+                         "};" \n
+                         "" \n
+                         "//Debug" \n
+                         "if (_secondHand) then {" \n
+                         "	diag_log (""Zombie Brain Initialized "" + str(_agent) + "" doLoiter: "" + str(_doLoiter));" \n
+                         "	[_agent,_position] call zombie_loiter;" \n
+                         "	_myDest = _agent getVariable [""myDest"",getposATL _agent];" \n
+                         "" \n
+                         "};" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "loiter">*/
+                                class loiter
+                                {
+                                        itemno = 66;
+                                        priority = 0.000000;
+                                        to="Loiter_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"" \n
+                                         "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "wait">*/
+                                class wait
+                                {
+                                        itemno = 2;
+                                        priority = 0.000000;
+                                        to="Looking_for_Targ";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_hasMoved"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Chase">*/
+                class Chase
+                {
+                        name = "Chase";
+                        itemno = 15;
+                        init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
+                         "" \n
+                         "_target = _agent call zombie_findTargetAgent;" \n
+                         "_targetPos = _target modelToWorld [0,-1,0];" \n
+                         "_isAlive = alive _agent;" \n
+                         "_isTargetAlive = alive _target;" \n
+                         "" \n
+                         "" \n
+                         "//Move to location" \n
+                         "if (_movingTo distance _targetPos > .5) then {" \n
+                         "	_agent moveTo _targetPos;" \n
+                         "	_agent setSpeedMode ""FULL"";" \n
+                         "};" \n
+                         "" \n
+                         "" \n
+                         "//Check if LOS" \n
+                         "if ((_agroCheck % 8) == 0) then {" \n
+                         "	_agroCheck = 0;" \n
+                         "	_cantSee = [_target,_agent] call dayz_losCheck;" \n
+                         "};"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Nobody_Near">*/
+                                class Nobody_Near
+                                {
+                                        itemno = 5;
+                                        priority = 6.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Not_Alive">*/
+                                class Not_Alive
+                                {
+                                        itemno = 4;
+                                        priority = 5.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "No_Agent">*/
+                                class No_Agent
+                                {
+                                        itemno = 63;
+                                        priority = 5.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "No_Target">*/
+                                class No_Target
+                                {
+                                        itemno = 20;
+                                        priority = 3.000000;
+                                        to="Reset_Targeting";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isNull _target) && ((diag_tickTime - _timeN) > 5)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Target_Dead">*/
+                                class Target_Dead
+                                {
+                                        itemno = 56;
+                                        priority = 3.000000;
+                                        to="Reset_Targeting";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isTargetAlive"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_timeN = diag_tickTime;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "cant_see">*/
+                                class cant_see
+                                {
+                                        itemno = 28;
+                                        priority = 2.000000;
+                                        to="Finish_Move";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_cantSee"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"//diag_log (""Cant See"");"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "TimeCheck">*/
+                                class TimeCheck
+                                {
+                                        itemno = 62;
+                                        priority = 2.000000;
+                                        to="Chase";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 2" \n
+                                         ""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_agroCheck= _agroCheck + 1;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "InRange">*/
+                                class InRange
+                                {
+                                        itemno = 77;
+                                        priority = 1.000000;
+                                        to="Attacking_Wait";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_agent distance _targetPos < 3.1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_agent stop true;" \n
+                                         "" \n
+                                         "_myDest = [ _agent modelToWorld [0,0,0]];" \n
+                                         "" \n
+                                         "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];" \n
+                                         "" \n
+                                         "_agroCheck= 0;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Cleanup_">*/
+                class Cleanup_
+                {
+                        name = "Cleanup_";
+                        itemno = 25;
+                        init = /*%FSM<STATEINIT""">*/"_waitStart = diag_tickTime;" \n
+                         "" \n
+                         "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+                         "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "nobody_around">*/
+                                class nobody_around
+                                {
+                                        itemno = 26;
+                                        priority = 0.000000;
+                                        to="End";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "someone_here">*/
+                                class someone_here
+                                {
+                                        itemno = 34;
+                                        priority = 0.000000;
+                                        to="wait";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_isSomeone"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Finish_Move">*/
+                class Finish_Move
+                {
+                        name = "Finish_Move";
+                        itemno = 29;
+                        init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
+                         "" \n
+                         "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+                         "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Nobody_Near">*/
+                                class Nobody_Near
+                                {
+                                        itemno = 5;
+                                        priority = 6.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "finished">*/
+                                class finished
+                                {
+                                        itemno = 30;
+                                        priority = 1.000000;
+                                        to="Reset_Targeting";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_agent distance _targetPos < 3"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"//diag_log (""Finished"");"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "too_long">*/
+                                class too_long
+                                {
+                                        itemno = 42;
+                                        priority = 0.000000;
+                                        to="Reset_Targeting";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 20"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"//diag_log (""Timeout"");"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Move">*/
+                class Move
+                {
+                        name = "Move";
+                        itemno = 33;
+                        init = /*%FSM<STATEINIT""">*/"_myDest = [_agent,_position] call zombie_loiter;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "True">*/
+                                class True
+                                {
+                                        itemno = 74;
+                                        priority = 0.000000;
+                                        to="Loiter_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "wait">*/
+                class wait
+                {
+                        name = "wait";
+                        itemno = 35;
+                        init = /*%FSM<STATEINIT""">*/"_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+                         "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
+                         "" \n
+                         "_timeN = diag_tickTime;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "time_up">*/
+                                class time_up
+                                {
+                                        itemno = 36;
+                                        priority = 0.000000;
+                                        to="End";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _waitStart) > 300"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "nobody_around">*/
+                                class nobody_around
+                                {
+                                        itemno = 26;
+                                        priority = 0.000000;
+                                        to="End";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "deleted">*/
+                                class deleted
+                                {
+                                        itemno = 47;
+                                        priority = 0.000000;
+                                        to="End";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"isNull _agent;"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Time_Check">*/
+                                class Time_Check
+                                {
+                                        itemno = 39;
+                                        priority = 0.000000;
+                                        to="wait";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 30"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Reset_Targeting">*/
+                class Reset_Targeting
+                {
+                        name = "Reset_Targeting";
+                        itemno = 45;
+                        init = /*%FSM<STATEINIT""">*/"// reset stance to favorite one" \n
+                         "_agent setUnitPos (_agent getVariable [""stance"", ""UP""]);" \n
+                         "" \n
+                         "//Lets move" \n
+                         "_myDest = [_agent,_position] call zombie_loiter;" \n
+                         "" \n
+                         "//Local" \n
+                         "_agent setVariable [""localtargets"",[],false];" \n
+                         "" \n
+                         "//Remote" \n
+                         "_remotetargets = [];" \n
+                         "_remotetargets = _agent getVariable [""remotetargets"",[]];" \n
+                         "" \n
+                         "//Clear remote on reset" \n
+                         "if (isNull _agent) then {_remotetargets = [];};" \n
+                         "if (count _remotetargets > 0) then {" \n
+                         "	_agent setVariable [""remotetargets"",[],true];" \n
+                         "};" \n
+                         "" \n
+                         "//Clear Target" \n
+                         "_target = objNull;" \n
+                         "" \n
+                         "//force Speed" \n
+                         "_agent forceSpeed 2;" \n
+                         "" \n
+                         "" \n
+                         "//diag_log (""Agent reset"");" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "loiter">*/
+                                class loiter
+                                {
+                                        itemno = 66;
+                                        priority = 0.000000;
+                                        to="Loiter_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"" \n
+                                         "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Loiter_1">*/
+                class Loiter_1
+                {
+                        name = "Loiter_1";
+                        itemno = 67;
+                        init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
+                         "_timeN = diag_tickTime;" \n
+                         "" \n
+                         "//Look for target" \n
+                         "_target = _agent call zombie_findTargetAgent;" \n
+                         "" \n
+                         "if (_myDest distance (getposATL _agent) > 3) then {" \n
+                         "	_agent moveTo _myDest;" \n
+                         "};" \n
+                         "" \n
+                         "//diag_log (""loitering..."" + str(_agent distance (_agent getVariable [""myDest"",_myDest])));"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Nobody_Near">*/
+                                class Nobody_Near
+                                {
+                                        itemno = 5;
+                                        priority = 6.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "No_Agent">*/
+                                class No_Agent
+                                {
+                                        itemno = 63;
+                                        priority = 5.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Not_Alive">*/
+                                class Not_Alive
+                                {
+                                        itemno = 4;
+                                        priority = 5.000000;
+                                        to="Cleanup_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Failed_Move">*/
+                                class Failed_Move
+                                {
+                                        itemno = 70;
+                                        priority = 3.000000;
+                                        to="Move";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"moveToFailed _agent;"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "MoveCompleted_">*/
+                                class MoveCompleted_
+                                {
+                                        itemno = 69;
+                                        priority = 3.000000;
+                                        to="Move";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"moveToCompleted _agent;" \n
+                                         "//_agent distance (_agent getVariable [""myDest"",getposATL _agent]) < 3"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "player_check">*/
+                                class player_check
+                                {
+                                        itemno = 73;
+                                        priority = 2.000000;
+                                        to="Loiter_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
+                                         "" \n
+                                         "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
+                                         "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Not_moving">*/
+                                class Not_moving
+                                {
+                                        itemno = 71;
+                                        priority = 1.000000;
+                                        to="Move";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(Speed _agent == 0)" \n
+                                         ""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Time_Check">*/
+                                class Time_Check
+                                {
+                                        itemno = 68;
+                                        priority = 0.000000;
+                                        to="Loiter_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Has_Target">*/
+                                class Has_Target
+                                {
+                                        itemno = 81;
+                                        priority = 0.000000;
+                                        to="Reset_MoveTo";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"!(isNull _target)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Attacking_Wait">*/
+                class Attacking_Wait
+                {
+                        name = "Attacking_Wait";
+                        itemno = 78;
+                        init = /*%FSM<STATEINIT""">*/"_targetPos = _target modelToWorld [0,-1,0];" \n
+                         "" \n
+                         "_timeN = diag_tickTime;" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "NotInRange">*/
+                                class NotInRange
+                                {
+                                        itemno = 79;
+                                        priority = 1.000000;
+                                        to="Chase";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_agent distance _targetPos > 3.1"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_agent stop false;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "TimeCheck">*/
+                                class TimeCheck
+                                {
+                                        itemno = 80;
+                                        priority = 0.000000;
+                                        to="Attacking_Wait";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _timeN) > 1)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Reset_MoveTo">*/
+                class Reset_MoveTo
+                {
+                        name = "Reset_MoveTo";
+                        itemno = 82;
+                        init = /*%FSM<STATEINIT""">*/"_agent moveTo (_agent modelToWorld [0,0,0]);"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "UnitReady">*/
+                                class UnitReady
+                                {
+                                        itemno = 14;
+                                        priority = 5.000000;
+                                        to="Chase";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"unitReady _agent"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"//Leader cries out" \n
+                                         "if (_isSomeone) then {" \n
+                                         "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
+                                         "};" \n
+                                         "" \n
+                                         "if (!_hasMoved) then {" \n
+                                         "	_agent setVariable[""doLoiter"",true,true];" \n
+                                         "};" \n
+                                         "" \n
+                                         "_myDest = [ _agent modelToWorld [0,0,0]];" \n
+                                         "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];" \n
+                                         "" \n
+                                         "//_adjustSpeed = if (DZE_slowZombies) then {2} else {_agent getVariable [""speedLimit"", 3]};" \n
+                                         "_speedMin = DZE_ZombieSpeed select 0;" \n
+                                         "_speedMax = DZE_ZombieSpeed select 1;" \n
+                                         "_adjustSpeed = if (_speedMin == _speedMax && ((_speedMin > 0) && (_speedMax > 0))) then {_speedMin} else {_agent getVariable [""speedLimit"", 3]};" \n
+                                         "" \n
+                                         "_agent forceSpeed _adjustSpeed;" \n
+                                         "" \n
+                                         "//Lets see if we can get the AI to stop running away before heading to the player" \n
+                                         "_agent moveTo (_agent modelToWorld [0,0,0]);" \n
+                                         "" \n
+                                         "_countr = 0;" \n
+                                         "_losCheck = 0;" \n
+                                         "_agroCheck = 0;" \n
+                                         "_cantSee = false;" \n
+                                         "_cantSeeAnything = false;" \n
+                                         "" \n
+                                         "" \n
+                                         "//diag_log (""Has Target"");"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "____FAKE____">*/
+                class ____FAKE____
+                {
+                        name = "____FAKE____";
+                        itemno = 83;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "TargetMoved">*/
+                                class TargetMoved
+                                {
+                                        itemno = 60;
+                                        priority = 3.000000;
+                                        to="____FAKE____";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(((_agent distance _target) >= 3) and ((diag_tickTime - _timeN) > 1))" \n
+                                         ""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"diag_log (""TargetMoved"");"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "MoveCompleted_">*/
+                                class MoveCompleted_
+                                {
+                                        itemno = 54;
+                                        priority = 3.000000;
+                                        to="____FAKE____";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"moveToCompleted _agent;" \n
+                                         "//_agent distance (_agent getVariable [""myDest"",getposATL _agent]) < 3"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;" \n
+                                         "//_myDest = _agent getVariable [""myDest"",getposATL _agent];"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Failed_Move">*/
+                                class Failed_Move
+                                {
+                                        itemno = 55;
+                                        priority = 3.000000;
+                                        to="____FAKE____";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"moveToFailed _agent;"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;" \n
+                                         "//_myDest = _agent getVariable [""myDest"",getposATL _agent];" \n
+                                         ""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Not_moving">*/
+                                class Not_moving
+                                {
+                                        itemno = 61;
+                                        priority = 1.000000;
+                                        to="____FAKE____";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(Speed _agent == 0)" \n
+                                         ""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "End_Attack">*/
+                                class End_Attack
+                                {
+                                        itemno = 59;
+                                        priority = 0.000000;
+                                        to="____FAKE____";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeAttack) > 0.3"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"[_agent,  ""zombie""] spawn player_zombieAttack;" \n
+                                         "_agent setVariable[""lastAttack"", diag_tickTime];"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Start_Attack">*/
+                                class Start_Attack
+                                {
+                                        itemno = 58;
+                                        priority = 0.000000;
+                                        to="____FAKE____";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"((local _target) and (_agent distance _target <= 3.3) and ((diag_tickTime - _last) > 2) and (_delta < 1.5) and (_delta > -1.5) and (alive _target))"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"[_agent,  ""zombie""] spawn player_attackdelay;" \n
+                                         "_agent setVariable[""lastAttack"", diag_tickTime];" \n
+                                         "" \n
+                                         "_timeAttack = diag_ticktime;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "true">*/
+                                class true
+                                {
+                                        itemno = 46;
+                                        priority = 0.000000;
+                                        to="____FAKE____";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"//diag_log (""Reset"");" \n
+                                         "" \n
+                                         ""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "loiter">*/
+                                class loiter
+                                {
+                                        itemno = 6;
+                                        priority = 0.000000;
+                                        to="Loiter";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;" \n
+                                         "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
         };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "true">*/
-        class true
+        initState="init";
+        finalStates[] =
         {
-          priority = 0.000000;
-          to="Begin";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(!isNil 'dayz_clientPreload' && {dayz_clientPreload}) && !(isNull _agent)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                "End",
         };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "End">*/
-    class End
-    {
-      name = "End";
-      init = /*%FSM<STATEINIT""">*/"if (!isDedicated) then {" \n
-       "	if (!isNull _agent) then {" \n
-       "		deleteVehicle _agent;" \n
-       "		//dayz_spawnZombies = dayz_spawnZombies - 1;" \n
-       "	};" \n
-       "} else {" \n
-       "	[_agent] call zombie_findOwner;" \n
-       "};"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Looking_for_Targ">*/
-    class Looking_for_Targ
-    {
-      name = "Looking_for_Targ";
-      init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
-       "_target = _agent call zombie_findTargetAgent;" \n
-       "_timeN = diag_tickTime;" \n
-       "" \n
-       "_newDest = _agent getVariable [""myDest"",getposATL _agent];" \n
-       "if (!isNil ""_newDest"") then {" \n
-       "	if (_newDest distance _myDest > 0) then {" \n
-       "		_myDest = _newDest;" \n
-       "		_agent moveTo _myDest;" \n
-       "		_agent forceSpeed 2;" \n
-       "	};" \n
-       "};" \n
-       "" \n
-       "//diag_log (""Zombie "" + str(_agent) + "" Wait "");"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "Nobody_Near">*/
-        class Nobody_Near
-        {
-          priority = 6.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Not_Alive">*/
-        class Not_Alive
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "No_Agent">*/
-        class No_Agent
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "player_check">*/
-        class player_check
-        {
-          priority = 2.000000;
-          to="Looking_for_Targ";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
-           "" \n
-           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
-           "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Time_Check">*/
-        class Time_Check
-        {
-          priority = 1.000000;
-          to="Looking_for_Targ";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Has_Target">*/
-        class Has_Target
-        {
-          priority = 0.000000;
-          to="Reset_MoveTo";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(isNull _target)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Loiter">*/
-    class Loiter
-    {
-      name = "Loiter";
-      init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
-       "_timeN = diag_tickTime;" \n
-       "" \n
-       "//Look for target" \n
-       "_target = _agent call zombie_findTargetAgent;" \n
-       "" \n
-       "//Check for alert var" \n
-       "_newDest = _agent getVariable [""myDest"",nil];" \n
-       "" \n
-       "if ((moveToCompleted _agent) or (moveToFailed _agent) or (Speed _agent == 0)) then { " \n
-       "	_myDest = [_agent,_position] call zombie_loiter;" \n
-       "};" \n
-       "" \n
-       "" \n
-       "//Change location to alert" \n
-       "if (!isNil ""_newDest"") then {" \n
-       "	if (_newDest distance _myDest > 0) then {" \n
-       "		_myDest = _newDest;" \n
-       "	};" \n
-       "};" \n
-       "" \n
-       "" \n
-       "//Move to location" \n
-       "" \n
-       "if (_myDest distance (getposATL _agent) > 3) then {" \n
-       "	//diag_log format[""Loiter - %1 - [%2,%3] - Range %4"",(typeof _agent),_myDest,_movingTo,(_myDest distance _movingTo)];" \n
-       "" \n
-       "	_agent moveTo _myDest;" \n
-       "};" \n
-       "" \n
-       "//hintSilent (""loitering..."" + str(_agent distance (_agent getVariable [""myDest"",getposATL _agent])));" \n
-       "" \n
-       "if (_secondHand) then {" \n
-       "	diag_log (""Zombie "" + str(_agent) + "" Loiter "" + "" distance: "" + str(_newDest distance _myDest));" \n
-       "	_agent doMove (getPosATL player);" \n
-       "	_agent moveTo (getPosATL player);" \n
-       "};"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "player_check">*/
-        class player_check
-        {
-          priority = 2.000000;
-          to="Loiter";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
-           "" \n
-           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
-           "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Time_Check">*/
-        class Time_Check
-        {
-          priority = 0.000000;
-          to="Loiter";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Begin">*/
-    class Begin
-    {
-      name = "Begin";
-      init = /*%FSM<STATEINIT""">*/"_hasMoved = 	_agent getVariable[""doLoiter"",true];" \n
-       "" \n
-       "_myDest = [_agent,_position] call zombie_loiter;" \n
-       "_newDest = nil;" \n
-       "_movingTo = _myDest;" \n
-       "_array = 		[];" \n
-       "_waypoint = [];" \n
-       "" \n
-       "_agentReset = false;" \n
-       "" \n
-       "_bodyStay = 	60;" \n
-       "" \n
-       "_agent disableAI ""FSM"";" \n
-       "_timeN = diag_tickTime;" \n
-       "" \n
-       "_agent setBehaviour ""CARELESS"";" \n
-       "_agent setSpeedMode ""FULL"";" \n
-       "//hint ""run local zombie"";" \n
-       "_isSomeone = true;" \n
-       "" \n
-       "_target = objNull;" \n
-       "_targetPos = [];" \n
-       "_countr = 0;" \n
-       "" \n
-       "//Spawn roaming script (individual to unit)" \n
-       "_entityTime = diag_tickTime;" \n
-       "" \n
-       "_isCarrier = false;" \n
-       "_chance =	round(random 12);" \n
-       "if ((_chance % 4) == 0) then {" \n
-       "	_isCarrier = true;" \n
-       "};" \n
-       "" \n
-       "//Debug" \n
-       "if (_secondHand) then {" \n
-       "	diag_log (""Zombie Brain Initialized "" + str(_agent) + "" doLoiter: "" + str(_doLoiter));" \n
-       "	[_agent,_position] call zombie_loiter;" \n
-       "	_myDest = _agent getVariable [""myDest"",getposATL _agent];" \n
-       "" \n
-       "};" \n
-       ""/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "loiter">*/
-        class loiter
-        {
-          priority = 0.000000;
-          to="Loiter_1";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"" \n
-           "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "wait">*/
-        class wait
-        {
-          priority = 0.000000;
-          to="Looking_for_Targ";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_hasMoved"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Chase">*/
-    class Chase
-    {
-      name = "Chase";
-      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
-       "" \n
-       "_target = _agent call zombie_findTargetAgent;" \n
-       "_targetPos = _target modelToWorld [0,-1,0];" \n
-       "_isAlive = alive _agent;" \n
-       "_isTargetAlive = alive _target;" \n
-       "" \n
-       "" \n
-       "//Move to location" \n
-       "if (_movingTo distance _targetPos > .5) then {" \n
-       "	_agent moveTo _targetPos;" \n
-       "	_agent setSpeedMode ""FULL"";" \n
-       "};" \n
-       "" \n
-       "" \n
-       "//Check if LOS" \n
-       "if ((_agroCheck % 8) == 0) then {" \n
-       "	_agroCheck = 0;" \n
-       "	_cantSee = [_target,_agent] call dayz_losCheck;" \n
-       "};"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "Nobody_Near">*/
-        class Nobody_Near
-        {
-          priority = 6.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Not_Alive">*/
-        class Not_Alive
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "No_Agent">*/
-        class No_Agent
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "No_Target">*/
-        class No_Target
-        {
-          priority = 3.000000;
-          to="Reset_Targeting";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNull _target) && ((diag_tickTime - _timeN) > 5)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Target_Dead">*/
-        class Target_Dead
-        {
-          priority = 3.000000;
-          to="Reset_Targeting";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isTargetAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_timeN = diag_tickTime;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "cant_see">*/
-        class cant_see
-        {
-          priority = 2.000000;
-          to="Finish_Move";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_cantSee"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//diag_log (""Cant See"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "TimeCheck">*/
-        class TimeCheck
-        {
-          priority = 2.000000;
-          to="Chase";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 2" \n
-           ""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_agroCheck= _agroCheck + 1;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "InRange">*/
-        class InRange
-        {
-          priority = 1.000000;
-          to="Attacking_Wait";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_agent distance _targetPos < 3.1"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_agent stop true;" \n
-           "" \n
-           "_myDest = [ _agent modelToWorld [0,0,0]];" \n
-           "" \n
-           "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];" \n
-           "" \n
-           "_agroCheck= 0;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Cleanup_">*/
-    class Cleanup_
-    {
-      name = "Cleanup_";
-      init = /*%FSM<STATEINIT""">*/"_waitStart = diag_tickTime;" \n
-       "" \n
-       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
-       "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "nobody_around">*/
-        class nobody_around
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "someone_here">*/
-        class someone_here
-        {
-          priority = 0.000000;
-          to="wait";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_isSomeone"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Finish_Move">*/
-    class Finish_Move
-    {
-      name = "Finish_Move";
-      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
-       "" \n
-       "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
-       "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "Nobody_Near">*/
-        class Nobody_Near
-        {
-          priority = 6.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "finished">*/
-        class finished
-        {
-          priority = 1.000000;
-          to="Reset_Targeting";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_agent distance _targetPos < 3"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//diag_log (""Finished"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "too_long">*/
-        class too_long
-        {
-          priority = 0.000000;
-          to="Reset_Targeting";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 20"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//diag_log (""Timeout"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Move">*/
-    class Move
-    {
-      name = "Move";
-      init = /*%FSM<STATEINIT""">*/"_myDest = [_agent,_position] call zombie_loiter;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "True">*/
-        class True
-        {
-          priority = 0.000000;
-          to="Loiter_1";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "wait">*/
-    class wait
-    {
-      name = "wait";
-      init = /*%FSM<STATEINIT""">*/"_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
-       "_isSomeone = ({isPlayer _x} count _list) > 0;" \n
-       "" \n
-       "_timeN = diag_tickTime;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "time_up">*/
-        class time_up
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _waitStart) > 300"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "nobody_around">*/
-        class nobody_around
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "deleted">*/
-        class deleted
-        {
-          priority = 0.000000;
-          to="End";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"isNull _agent;"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Time_Check">*/
-        class Time_Check
-        {
-          priority = 0.000000;
-          to="wait";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 30"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Reset_Targeting">*/
-    class Reset_Targeting
-    {
-      name = "Reset_Targeting";
-      init = /*%FSM<STATEINIT""">*/"// reset stance to favorite one" \n
-       "_agent setUnitPos (_agent getVariable [""stance"", ""UP""]);" \n
-       "" \n
-       "//Lets move" \n
-       "_myDest = [_agent,_position] call zombie_loiter;" \n
-       "" \n
-       "//Local" \n
-       "_agent setVariable [""localtargets"",[],false];" \n
-       "" \n
-       "//Remote" \n
-       "_remotetargets = [];" \n
-       "_remotetargets = _agent getVariable [""remotetargets"",[]];" \n
-       "" \n
-       "//Clear remote on reset" \n
-       "if (isNull _agent) then {_remotetargets = [];};" \n
-       "if (count _remotetargets > 0) then {" \n
-       "	_agent setVariable [""remotetargets"",[],true];" \n
-       "};" \n
-       "" \n
-       "//Clear Target" \n
-       "_target = objNull;" \n
-       "" \n
-       "//force Speed" \n
-       "_agent forceSpeed 2;" \n
-       "" \n
-       "" \n
-       "//diag_log (""Agent reset"");" \n
-       ""/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "loiter">*/
-        class loiter
-        {
-          priority = 0.000000;
-          to="Loiter_1";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"" \n
-           "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Loiter_1">*/
-    class Loiter_1
-    {
-      name = "Loiter_1";
-      init = /*%FSM<STATEINIT""">*/"_isAlive = alive _agent;" \n
-       "_timeN = diag_tickTime;" \n
-       "" \n
-       "//Look for target" \n
-       "_target = _agent call zombie_findTargetAgent;" \n
-       "" \n
-       "if (_myDest distance (getposATL _agent) > 3) then {" \n
-       "	_agent moveTo _myDest;" \n
-       "};" \n
-       "" \n
-       "//diag_log (""loitering..."" + str(_agent distance (_agent getVariable [""myDest"",_myDest])));"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "Nobody_Near">*/
-        class Nobody_Near
-        {
-          priority = 6.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isSomeone"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "No_Agent">*/
-        class No_Agent
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isNull _agent)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Not_Alive">*/
-        class Not_Alive
-        {
-          priority = 5.000000;
-          to="Cleanup_";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!_isAlive"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Failed_Move">*/
-        class Failed_Move
-        {
-          priority = 3.000000;
-          to="Move";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"moveToFailed _agent;"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "MoveCompleted_">*/
-        class MoveCompleted_
-        {
-          priority = 3.000000;
-          to="Move";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"moveToCompleted _agent;" \n
-           "//_agent distance (_agent getVariable [""myDest"",getposATL _agent]) < 3"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "player_check">*/
-        class player_check
-        {
-          priority = 2.000000;
-          to="Loiter_1";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _entityTime) > 30"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_entityTime = diag_tickTime;" \n
-           "" \n
-           "_list = (getposATL _agent) nearEntities [[""CAManBase"",""AllVehicles""],300];" \n
-           "_isSomeone = ({isPlayer _x} count _list) > 0;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Not_moving">*/
-        class Not_moving
-        {
-          priority = 1.000000;
-          to="Move";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(Speed _agent == 0)" \n
-           ""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Time_Check">*/
-        class Time_Check
-        {
-          priority = 0.000000;
-          to="Loiter_1";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 1"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Has_Target">*/
-        class Has_Target
-        {
-          priority = 0.000000;
-          to="Reset_MoveTo";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!(isNull _target)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Attacking_Wait">*/
-    class Attacking_Wait
-    {
-      name = "Attacking_Wait";
-      init = /*%FSM<STATEINIT""">*/"_targetPos = _target modelToWorld [0,-1,0];" \n
-       "" \n
-       "_timeN = diag_tickTime;" \n
-       ""/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "NotInRange">*/
-        class NotInRange
-        {
-          priority = 1.000000;
-          to="Chase";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_agent distance _targetPos > 3.1"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_agent stop false;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "TimeCheck">*/
-        class TimeCheck
-        {
-          priority = 0.000000;
-          to="Attacking_Wait";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((diag_tickTime - _timeN) > 1)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "Reset_MoveTo">*/
-    class Reset_MoveTo
-    {
-      name = "Reset_MoveTo";
-      init = /*%FSM<STATEINIT""">*/"_agent moveTo (_agent modelToWorld [0,0,0]);"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "UnitReady">*/
-        class UnitReady
-        {
-          priority = 5.000000;
-          to="Chase";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"unitReady _agent"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//Leader cries out" \n
-           "if (_isSomeone) then {" \n
-           "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
-           "};" \n
-           "" \n
-           "if (!_hasMoved) then {" \n
-           "	_agent setVariable[""doLoiter"",true,true];" \n
-           "};" \n
-           "" \n
-           "_myDest = [ _agent modelToWorld [0,0,0]];" \n
-           "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];" \n
-           "" \n
-		   "_adjustSpeed = if (DZE_slowZombies) then {2} else {_agent getVariable [""speedLimit"", 3]};" \n
-		   "_agent forceSpeed _adjustSpeed;" \n
-           "" \n
-           "//Lets see if we can get the AI to stop running away before heading to the player" \n
-           "_agent moveTo (_agent modelToWorld [0,0,0]);" \n
-           "" \n
-           "_countr = 0;" \n
-           "_losCheck = 0;" \n
-           "_agroCheck = 0;" \n
-           "_cantSee = false;" \n
-           "_cantSeeAnything = false;" \n
-           "" \n
-           "" \n
-           "//diag_log (""Has Target"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "____FAKE____">*/
-    class ____FAKE____
-    {
-      name = "____FAKE____";
-      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "TargetMoved">*/
-        class TargetMoved
-        {
-          priority = 3.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(((_agent distance _target) >= 3) and ((diag_tickTime - _timeN) > 1))" \n
-           ""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"diag_log (""TargetMoved"");"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "MoveCompleted_">*/
-        class MoveCompleted_
-        {
-          priority = 3.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"moveToCompleted _agent;" \n
-           "//_agent distance (_agent getVariable [""myDest"",getposATL _agent]) < 3"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;" \n
-           "//_myDest = _agent getVariable [""myDest"",getposATL _agent];"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Failed_Move">*/
-        class Failed_Move
-        {
-          priority = 3.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"moveToFailed _agent;"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;" \n
-           "//_myDest = _agent getVariable [""myDest"",getposATL _agent];" \n
-           ""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Not_moving">*/
-        class Not_moving
-        {
-          priority = 1.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(Speed _agent == 0)" \n
-           ""/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "End_Attack">*/
-        class End_Attack
-        {
-          priority = 0.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeAttack) > 0.3"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"[_agent,  ""zombie""] spawn player_zombieAttack;" \n
-           "_agent setVariable[""lastAttack"", diag_tickTime];"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "Start_Attack">*/
-        class Start_Attack
-        {
-          priority = 0.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((local _target) and (_agent distance _target <= 3.3) and ((diag_tickTime - _last) > 2) and (_delta < 1.5) and (_delta > -1.5) and (alive _target))"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"[_agent,  ""zombie""] spawn player_attackdelay;" \n
-           "_agent setVariable[""lastAttack"", diag_tickTime];" \n
-           "" \n
-           "_timeAttack = diag_ticktime;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "true">*/
-        class true
-        {
-          priority = 0.000000;
-          to="____FAKE____";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"//diag_log (""Reset"");" \n
-           "" \n
-           ""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "loiter">*/
-        class loiter
-        {
-          priority = 0.000000;
-          to="Loiter";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_hasMoved"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"_myDest = [_agent,_position] call zombie_loiter;" \n
-           "_agent forceSpeed 2;"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-  };
-  initState="init";
-  finalStates[] =
-  {
-    "End",
-  };
 };
 /*%FSM</COMPILE>*/

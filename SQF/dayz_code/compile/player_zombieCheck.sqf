@@ -1,7 +1,7 @@
 private ["_attacked","_chance","_near","_targeted","_localtargets","_remotetargets","_forcedSpeed","_vehicle","_refObj",
 "_multiplier","_isAir","_hearingThreshold","_sightThreshold","_type","_dist","_attackDist",
 "_targetedBySight","_targetedBySound","_targets","_last","_entHeight","_pHeight","_delta","_attackResult","_cantSee","_tPos","_zPos",
-"_targetAngle","_inAngle","_lowBlood"];
+"_targetAngle","_inAngle","_lowBlood","_speedMin","_speedMax"];
 
 _vehicle = vehicle player;
 _refObj = driver _vehicle;
@@ -9,9 +9,12 @@ _attacked = false; // at least one Z attacked the player
 _near = false;
 //_multiplier = 1;
 _isAir = _vehicle isKindOf "Air";
+_speedMin = DZE_ZombieSpeed select 0;
+_speedMax = DZE_ZombieSpeed select 1;
 
 {
-	_forcedSpeed = getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "forcedSpeed");
+	_forcedSpeed = if ((_speedMin != _speedMax) && {(_speedMin > 0) && (_speedMax > 0)}) then {((random (DZE_ZombieSpeed select 1)) max (DZE_ZombieSpeed select 0));} else {getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "forcedSpeed");};
+	//_forcedSpeed = getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "forcedSpeed");
 	//_hearingThreshold = getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "hearingThreshold");
 	//_sightThreshold = getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "sightThreshold");
 

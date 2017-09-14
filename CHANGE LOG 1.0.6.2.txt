@@ -18,6 +18,7 @@
 [UPDATED] Added cleanup of destroyed vehicles and CraterLong after 25 minutes in sched_corpses.sqf
 [UPDATED] Reverted group menu color scheme to A2OA default for consistency with game dialogs
 [UPDATED] Positions defined in DZE_SafeZonePosArray no longer spawn loot or zombies in their respective radius, added new compile to check positions against DZE_SafeZonePosArray "_PosInSafeZone = _positionToCheck call DZE_SafeZonePosCheck;"
+[UPDATED] DZE_ZombieSpeed = [min, max]; has replaced the, now removed, DZE_slowZombies variable. set DZE_ZombieSpeed = [2,2]; for DZE_slowZombies = true; behavior. see configvariables.sqf for more info
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.
