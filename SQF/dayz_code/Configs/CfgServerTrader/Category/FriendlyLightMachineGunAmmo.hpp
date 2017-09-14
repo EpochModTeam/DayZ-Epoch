@@ -14,6 +14,11 @@ class Category_622 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
+	class 200Rnd_762x51_M240 {
+		type = "trade_items";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {1,"ItemGoldBar"};
+	};
 	class 50Rnd_762x54_UK59 {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};
