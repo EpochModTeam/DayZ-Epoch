@@ -5,6 +5,7 @@
 [NEW] Added secondary iron sight to CZ550 and bolt animations to CZ550 and LeeEnfield by @Streatman
 [NEW] Added some basic compatibility for falconsan's Ruegen map (beta version released February 2016)
 [NEW] Admins can now define what parts are returned from modular building parts, see configVariables.sqf/DZE_modularConfig @oiad @BigEgg
+[NEW] Basic server-side authentication for server_deleteObj, server owners and script makers should review the changes if using PVDZ_obj_Destroy/server_deleteObj and verify custom/redefined code is compliant with these changes https://github.com/EpochModTeam/DayZ-Epoch/commit/8035df0ba0cd928b84085e288c5cb88260870a3e
 
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
 [UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
@@ -34,7 +35,7 @@
 [FIXED] Arma cheats enterable on map display and create marker text box. #1915 @BigEgg17
 [FIXED] It is no longer possible to duplicate melee weapons by double clicking to drop and right clicking at the same time. @F507DMT
 [FIXED] Death messages and damage sometimes showing RunOver when they should not due to a variable not resetting after being runover. @oiad
-[FIXED] CFGMoves/Animation CTD on server. Thanks Choc
+[FIXED] CFGMoves/Animation CTD on server. @icomrade Thanks Choc for reporting
 [FIXED] DayZ_RollingMessage FPS impact. #1926 @BigEgg17
 [FIXED] Random skin selection on new character creation with DZE_defaultSkin = [["Male skin1","Male skin2"],["Female skin1","Female skin2"]];
 [FIXED] Corpse markers are now deleted for bodies that are hidden.
