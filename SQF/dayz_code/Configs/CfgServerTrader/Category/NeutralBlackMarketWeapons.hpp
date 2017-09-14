@@ -64,6 +64,11 @@ class Category_526 {
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
 	};
+	class M249_m145_EP1_DZE {
+		type = "trade_weapons";
+		buy[] = {2,"ItemGoldBar10oz"};
+		sell[] = {9,"ItemGoldBar"};
+	};
 	class M60A4_EP1_DZE {
 		type = "trade_weapons";
 		buy[] = {2,"ItemGoldBar10oz"};

@@ -4,6 +4,11 @@ class Category_577 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
+	class 200Rnd_762x51_M240 {
+		type = "trade_items";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {1,"ItemGoldBar"};
+	};
 	class 30Rnd_556x45_StanagSD {
 		type = "trade_items";
 		buy[] = {4,"ItemSilverBar10oz"};
@@ -33,5 +38,15 @@ class Category_577 {
 		type = "trade_items";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
+	};
+	class 10Rnd_127x99_M107 {
+		type = "trade_items";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {5,"ItemGoldBar"};
+	};
+	class 3rnd_Anzio_20x102mm {
+		type = "trade_items";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {8,"ItemGoldBar"};
 	};
 };
