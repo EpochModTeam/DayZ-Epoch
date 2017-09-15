@@ -32,12 +32,12 @@ class UH1Y_DZ: UH1_Base {
 	{
 		class MainTurret: MainTurret
 		{
-			gunnerOpticsModel = "\ca\weapons\optika_SOFLAM";
+			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			magazines[] = {"2000Rnd_762x51_M134"};
 		};
 		class RightDoorGun: RightDoorGun
 		{
-			gunnerOpticsModel = "\ca\weapons\optika_SOFLAM";
+			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			visionMode[] = {"Normal","NVG"};
 			magazines[] = {"2000Rnd_762x51_M134"};
 		};
@@ -147,12 +147,12 @@ class UH1Y_DZE: UH1Y_DZ {
 	class Turrets : Turrets {
 		class MainTurret: MainTurret
 		{
-			gunnerOpticsModel = "\ca\weapons\optika_SOFLAM";
+			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			magazines[] = {};
 		};
 		class RightDoorGun: RightDoorGun
 		{
-			gunnerOpticsModel = "\ca\weapons\optika_SOFLAM";
+			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			visionMode[] = {"Normal","NVG"};
 			magazines[] = {};
 		};
