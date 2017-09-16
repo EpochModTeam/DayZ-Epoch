@@ -44,12 +44,10 @@ if (!(_this call DZE_SafeZonePosCheck)) then {
 		//Get the world position of the spawn position
 		_worldPos = _this modelToWorld _x;
 		_worldPos set [2, 0 max (_worldPos select 2)];
-		//Delete existing lootpiles within 1m of spawn location if no player is right next to it
+		//Delete existing lootpiles within 1m of spawn location
 		{
-			if ({isPlayer _x} count (_x nearEntities ["CAManBase",4]) == 0) then {
-				deleteVehicle _x;
-				dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
-			};
+			deleteVehicle _x;
+			dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
 		} foreach (_worldPos nearObjects ["ReammoBox", 1]);
 
 		if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then
@@ -71,12 +69,10 @@ if (isArray (_config >> "lootPosSmall")) then {
 				//Get the world position of the spawn position
 				_worldPos = _this modelToWorld _x;
 				_worldPos set [2, 0 max (_worldPos select 2)];
-				//Delete existing lootpiles within 1m of spawn location if no player is right next to it
+				//Delete existing lootpiles within 1m of spawn location
 				{
-					if ({isPlayer _x} count (_x nearEntities ["CAManBase",4]) == 0) then {
-						deleteVehicle _x;
-						dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
-					};
+					deleteVehicle _x;
+					dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
 				} foreach (_worldPos nearObjects ["ReammoBox", 1]);
 
 				if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then
