@@ -163,17 +163,9 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 		if (typeName _x != "STRING") then {
 			_isWeapon = isClass (configFile >> "CfgWeapons" >> (_x select 0));
 			_isMagazine = isClass (configFile >> "CfgMagazines" >> (_x select 0));
-			if (_isWeapon && !_isMagazine) then {
-				_backpackWpnTypes set [count _backpackWpnTypes, (_x select 0)];
-				_backpackWpnQtys set [count _backpackWpnQtys, (_x select 1)];
-			};
 		} else {
 			_isWeapon = isClass (configFile >> "CfgWeapons" >> _x);
 			_isMagazine = isClass (configFile >> "CfgMagazines" >> _x);
-			if (_isWeapon && !_isMagazine) then {
-				_backpackWpnTypes set [count _backpackWpnTypes, _x];
-				_backpackWpnQtys set [count _backpackWpnQtys, 1];
-			};
 		};
 		if (!_isWeapon || (_isWeapon && _isMagazine)) then {
 			_countr = _countr + 1;
