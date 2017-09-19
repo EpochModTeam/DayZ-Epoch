@@ -183,6 +183,10 @@ class BAF_L85A2_RIS_CWS
 {
 	weight = 5.2;
 };
+class BAF_L85A2_RIS_TWS_DZ
+{
+	weight = 5.2;
+};
 class FN_FAL
 {
 	weight = 4.5;
