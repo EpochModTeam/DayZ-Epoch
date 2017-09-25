@@ -2350,3 +2350,40 @@ INSERT INTO `trader_tids` VALUES(690, 'Cooked Meats', 176);
 INSERT INTO `trader_tids` VALUES(691, 'Drinks', 176);
 INSERT INTO `trader_tids` VALUES(692, 'Packaged Food', 176);
 INSERT INTO `trader_tids` VALUES(693, 'Attachments', 165);
+
+/*
+THIS PROCEDURE IS REQUIRED FOR 1062 AND RETURNS THE OBJECT ID MUCH MORE EFFICENTLY THAN THE METHOD IN 1061 SQF
+*/
+DROP procedure IF EXISTS `retObjID`;
+
+DELIMITER $$
+CREATE PROCEDURE `retObjID`(
+    IN objTableName VARCHAR(256),
+    IN SID INT(11),
+    IN UID bigint(24),
+    OUT OID INT(11)unsigned
+)
+BEGIN
+ DECLARE x INT;
+ declare sqlstr VARCHAR(256);
+ 
+ SET @OID = 0;
+ SET @x = 1;
+ SET @sqlstr = CONCAT('SELECT `ObjectID` from `', objTableName ,'` where `Instance` = ', SID ,' AND `ObjectUID` = ', UID ,' INTO @OID');
+ PREPARE stmt FROM @sqlstr;
+
+ WHILE (@x <= 5) DO
+  EXECUTE stmt;
+  IF (@OID > 0) then 
+   SET @x = 6;
+  else
+   SET  @x = @x + 1;
+   DO sleep(0.1);
+  END IF;
+ END WHILE;
+ DEALLOCATE PREPARE stmt;
+ SET OID = @OID;
+ SELECT @OID;
+END;$$
+
+DELIMITER ;

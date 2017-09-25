@@ -67,4 +67,5 @@
 [NEW] Added temporary check for mission file overwrite exploit. This can be removed after Bohemia patches it.
 
 [INFO] HiveExt.dll has been updated to return character_data duration in the 101 call for the dayz_survived stat. Source is available at github.com/vbawol/DayZhiveEpoch/pull/13 @icomrade
+[INFO] HiveExt.dll REQUIRES NEW PROCEDURE BE ADDED TO YOUR DATABASE, SEE 1.0.6.2_UPDATES.SQL! [REQUIRED BY IMPROVED VEHICLE/OBJECT SPAWNING LOGIC]
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.
