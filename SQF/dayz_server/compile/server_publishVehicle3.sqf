@@ -1,5 +1,5 @@
 private ["_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_result","_outcome","_oid","_countr","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty"];
-//PVDZE_veh_Publish2 = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+//PVDZE_veh_Upgrade = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 _object = 		_this select 0;
@@ -74,11 +74,12 @@ if (_outcome != "PASS") then {
 
 	// switch var to new vehicle at this point.
 	_object = _newobject;
+	
+	_object setVariable ["ObjectID", _oid, true];
+	_object setVariable ["lastUpdate",diag_tickTime];
+	_object setVariable ["CharacterID", _characterID, true];
+	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
-	_object setDir _dir;
-	_object setPosATL _location;
-	_object setVectorUp surfaceNormal _location;
-						
 	//Add weapons
 	_objWpnTypes = 	_weapons select 0;
 	_objWpnQty = 	_weapons select 1;
@@ -106,14 +107,11 @@ if (_outcome != "PASS") then {
 		_countr = _countr + 1;
 	} count _objWpnTypes;
 
-	_object setVariable ["ObjectID", _oid, true];
-	_object setVariable ["lastUpdate",diag_tickTime];
-	_object setVariable ["CharacterID", _characterID, true];
-
-	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+	_object setDir _dir;
+	_object setPosATL _location;
+	_object setVectorUp surfaceNormal _location;
 
 	_object call fnc_veh_ResetEH;
-
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.
 	PVDZE_veh_Init = _object;
 	publicVariable "PVDZE_veh_Init";
