@@ -162,7 +162,7 @@ if (_finished) then {
 					PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,DZE_AuthKey];
 					publicVariableServer "PVDZ_obj_Destroy";
 
-					deleteVehicle _obj; 
+					//deleteVehicle _obj; 
 
 					// payout 
 					_canAfford = [[[_part_out,_qty_out]],1] call epoch_returnChange;

@@ -55,7 +55,7 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 
 	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,DZE_AuthKey];
 	publicVariableServer "PVDZ_obj_Destroy";
-	deleteVehicle _obj;
+	//deleteVehicle _obj;
 
 	//Add weapons
 	_objWpnTypes = _weapons select 0;

@@ -72,6 +72,9 @@ if (!_ok) exitWith {
 	format [localize "str_upgradeMissingPart", _missing] call dayz_rollingMessages;
 };
 
+_PlayerNear = {isPlayer _x} count (([_cursorTarget] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;};
+
 if (dayz_actionInProgress) exitWith {
 	{ player addMagazine _x; } forEach _upgradeParts;
 	localize "str_player_actionslimit" call dayz_rollingMessages;
@@ -123,8 +126,8 @@ _object setVariable ["padlockCombination",_ownerPasscode,true];
 _object setVariable ["characterID",_characterID,true];
 
 //remove old object
-deleteVehicle _cursorTarget;
-PVDZ_obj_Destroy = [_objectID,_objectUID,player,_object,DZE_AuthKey];
+//deleteVehicle _cursorTarget;
+PVDZ_obj_Destroy = [_objectID,_objectUID,player,_cursorTarget,DZE_AuthKey];
 publicVariableServer "PVDZ_obj_Destroy";
 
 // create a weaponholder with dismissed parts

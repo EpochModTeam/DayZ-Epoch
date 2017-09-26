@@ -135,7 +135,7 @@ if (_proceed) then {
 	};
 	
 	//Need to update for sanity no client should ever create or delete anything
-	deleteVehicle _object;
+	//deleteVehicle _object;
 	
 	[_dismantleToo,1,1] call fn_dropItem;
 };

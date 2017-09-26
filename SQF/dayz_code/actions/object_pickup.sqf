@@ -81,8 +81,9 @@ if (_isOk) then {
 		};
 		PVDZ_obj_Destroy = [(_holder getVariable["ObjectID","0"]),(_holder getVariable["ObjectUID","0"]),player,_holder,DZE_AuthKey];
 		publicVariableServer "PVDZ_obj_Destroy";
+	} else {
+		deleteVehicle _holder;
 	};
-	deleteVehicle _holder;
 } else {
 	if (!_isOk) exitWith {
 		_holder setVariable["claimed",0,true];

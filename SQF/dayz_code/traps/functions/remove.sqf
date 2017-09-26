@@ -12,6 +12,6 @@ if (isServer) then {
 		//For normal remove let object_pickup.sqf perform deletion to ensure player has room in gear first, no others remove at same time and animation runs
 		PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,DZE_AuthKey];
 		publicVariableServer "PVDZ_obj_Destroy";
-		deleteVehicle _obj;
+		//deleteVehicle _obj;
 	};
 };

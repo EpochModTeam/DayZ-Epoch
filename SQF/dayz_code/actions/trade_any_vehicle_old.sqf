@@ -166,7 +166,7 @@ if (_qty >= _qty_in) then {
 							PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,DZE_AuthKey];
 							publicVariableServer "PVDZ_obj_Destroy";
 
-							deleteVehicle _obj; 
+							//deleteVehicle _obj; 
 
 							format[localize "str_epoch_player_181",_qty_in,_textPartIn,_qty_out,_textPartOut] call dayz_rollingMessages;
 							

@@ -192,7 +192,7 @@ if (_finished) then {
 						PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,DZE_AuthKey];
 						publicVariableServer "PVDZ_obj_Destroy";
 
-						deleteVehicle _obj;
+						//deleteVehicle _obj;
 
 						// remove Key
 						_temp_keys = [];

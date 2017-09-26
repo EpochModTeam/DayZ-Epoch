@@ -60,7 +60,7 @@ if ((count _VehKey2) > 0) then {
 	} else {
 		PVDZ_obj_Destroy = [(_VehKey2 select 2),(_VehKey2 select 3),player,(_VehKey2 select 1),DZE_AuthKey];
 		publicVariableServer "PVDZ_obj_Destroy";
-		deleteVehicle (_VehKey2 select 1);
+		//deleteVehicle (_VehKey2 select 1);
 	};
 } else {
 	_localResult2 = 0;

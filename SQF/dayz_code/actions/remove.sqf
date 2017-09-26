@@ -149,15 +149,15 @@ if (_proceed && _success) then {
 
 	// Double check that object is not null
 	if(!isNull(_obj)) then {
-
 		_ipos = getPosATL _obj;
-		deleteVehicle _obj;
 		
 		if(!_isWreck && !_isWreckBuilding) then {
 			PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,DZE_AuthKey];
 			publicVariableServer "PVDZ_obj_Destroy";
 		};
 
+		//deleteVehicle _obj;
+		
 		if (_isWreckBuilding) then {
 			PVDZ_send = [player,"RemoveObject",_ipos];
 			publicVariableServer "PVDZ_send";
