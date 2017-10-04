@@ -39,7 +39,7 @@ if (_lootChance <= 0) exitWith {};
 _lootPos = getArray (_config >> "lootPos");
 _lootGroup = Loot_GetGroup(getText(_config >> "lootGroup"));
 
-if (!(_this call DZE_SafeZonePosCheck)) then {
+if (!([_this] call DZE_SafeZonePosCheck)) then {
 	{
 		//Get the world position of the spawn position
 		_worldPos = _this modelToWorld _x;
@@ -64,7 +64,7 @@ if (isArray (_config >> "lootPosSmall")) then {
 	_lootPos = getArray (_config >> "lootPosSmall");
 	_lootGroup = Loot_GetGroup((getText(_config >> "lootGroup")) + "Small");
 	if (_lootGroup >= 1) then {
-		if (!(_this call DZE_SafeZonePosCheck)) then {
+		if (!([_this] call DZE_SafeZonePosCheck)) then {
 			{
 				//Get the world position of the spawn position
 				_worldPos = _this modelToWorld _x;
