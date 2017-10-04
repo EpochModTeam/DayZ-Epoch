@@ -20,7 +20,7 @@ s_player_repairActions = [];
 s_player_repair_crtl = 1;
 
 if (_hasToolbox) then {
-	if (_vehicle call DZE_SafeZonePosCheck) exitWith {(localize "str_salvage_safezone") call dayz_rollingMessages;};
+	if ([_vehicle] call DZE_SafeZonePosCheck) exitWith {(localize "str_salvage_safezone") call dayz_rollingMessages;};
 	
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,50,true,(getPosATL player)] call player_alertZombies;
