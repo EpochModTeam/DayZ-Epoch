@@ -33,7 +33,7 @@ if (_canLoot ) then {
 	//Walking Zombies
 	_num = (round(random _max)) max _min; // + round(_max / 3);
 	//diag_log ("Class: " + _type + " / Zombies: " + str(_unitTypes) + " / Walking: " + str(_num));
-	if(!(_originalPos call DZE_SafeZonePosCheck)) then {
+	if (!([_originalPos] call DZE_SafeZonePosCheck)) then {
 		for "_i" from 0 to _num do
 		{
 			//_iPos = _obj modelToWorld _originalPos;
@@ -52,7 +52,7 @@ if (_canLoot ) then {
 			{
 				_Pos = [_x select 0, _x select 1, 0];
 				_rnd = random 1;
-				if (_rnd < _zombieChance && {!(_Pos call DZE_SafeZonePosCheck)}) then {
+				if (_rnd < _zombieChance && {!([_Pos] call DZE_SafeZonePosCheck)}) then {
 					_iPos = _obj modelToWorld _Pos;
 					_nearByZed = {alive _x} count (_iPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]) > 0;
 					_nearByPlayer = ({isPlayer _x} count (_iPos nearEntities ["CAManBase",30])) > 0;
