@@ -11948,6 +11948,9 @@
 			<German>Du kannst hier kein(e) %1 bauen. Du befindest dich innerhalb von %2 Metern zu einem Objekt (%3).</German>
 			<Russian>Нельзя построить %1 в пределах %2м от %3.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_168">
+			<English>Building is restricted above %1 meter(s).</English>
+		</Key>
 
 		<Key ID="STR_EPOCH_PLAYER_173">
 			<English>Dog consumed %1, and is now tamed.</English>

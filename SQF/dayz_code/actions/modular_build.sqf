@@ -357,6 +357,20 @@ if (_canBuild select 0) then {
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
+		
+		if (DZE_BuildHeightLimit > 0 && abs(_objHDiff) > DZE_BuildHeightLimit) exitWith {
+			_isOk = false;
+			_cancel = true;
+			_reason = format[localize "STR_EPOCH_PLAYER_168",DZE_BuildHeightLimit];
+			detach _object;
+			deleteVehicle _object;
+			if (_VectorWorkAround) then {
+				detach _object2;
+				deleteVehicle _object2;
+			};
+			detach _objectHelper;
+			deleteVehicle _objectHelper;
+		};
 
 		if (player getVariable["combattimeout",0] >= diag_tickTime) exitWith {
 			_isOk = false;
