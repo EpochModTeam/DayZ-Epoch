@@ -30,6 +30,7 @@ DZE_SafeZoneNoBuildItems = []; // Array of object class names not allowed to be 
 DZE_SafeZoneNoBuildDistance = 150; // Distance from safe zones listed above to disallow building near.
 DZE_NoBuildNear = []; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
 DZE_NoBuildNearDistance = 150; // Distance from blacklisted objects to disallow building near.
+DZE_HeightLimit = 0; // 0 = No building height limit | >0 = Height limit in meters | Changing this to 30 would limit the maximum built height to 30 meters.
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
 DZE_DisabledChannels = [(localize "str_channel_side"),(localize "str_channel_global"),(localize "str_channel_command")]; //List of disabled voice channels. Other channels are: "str_channel_group","str_channel_direct","str_channel_vehicle"
