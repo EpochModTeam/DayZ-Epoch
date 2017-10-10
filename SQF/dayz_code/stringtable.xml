@@ -11950,6 +11950,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_168">
 			<English>Building is restricted above %1 meter(s).</English>
+			<Russian>Высота строительства ограничена %1м.</Russian>
 		</Key>
 
 		<Key ID="STR_EPOCH_PLAYER_173">
