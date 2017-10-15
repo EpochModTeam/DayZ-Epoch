@@ -45,7 +45,7 @@ if (_isPole) then {
 	_distance =  DZE_PlotPole select 1;
 	if (DZE_limitPlots && {!(dayz_playerUID in DZE_PlotManagementAdmins)}) then {
 		{
-			if (_x getVariable["ownerPUID","0"] == dayz_playerUID or (_x getVariable["CharacterID","0"] == dayz_characterID)) exitWith {
+			if (_x getVariable["ownerPUID","0"] == dayz_playerUID || (_x getVariable["CharacterID","0"] == dayz_characterID) || ((((_x getVariable ["plotfriends",[]]) select 0) select 0) == dayz_playerUID)) exitWith {
 				_hasPole = true;
 			};
 		} count (entities "Plastic_Pole_EP1_DZ");
