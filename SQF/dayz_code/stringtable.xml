@@ -11465,7 +11465,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_45">
 			<English>PgUp to raise or PgDn to lower (Hold ALT to raise faster or CTRL slower), Q or E to flip 180. Space-Bar to build.</English>
-			<German>PgUp zum Erhöhen oder PgDn zum Absenken (halte ALT zum schnelleren Erhöhen oder STRG zum Absenken), Q oder E zum Drehen. Drücke Leertaste um das Objekt zu plazieren.</German>
+			<German>BildAuf zum Erhöhen oder BildAb zum Absenken (halte ALT zum schnelleren Erhöhen oder STRG zum Absenken), Q oder E zum Drehen. Drücke Leertaste um das Objekt zu plazieren.</German>
 			<Russian>PgUp, чтобы поднять или PgDn, чтобы опустить (Удерживайте ALT, чтобы поднимать быстрее или CTRL, чтобы медленнее), Q или E для поворота на 180. Пробел, чтобы построить.</Russian>
 			<Dutch>PgUp voor omhoog or PgDn voor omlaag (Houd ALT ingedrukt voor snel en CTRL voor langzaam), Q of E draait het object 180graden. Spatiebalk start het bouwen.</Dutch>
 			<French>PgUp pour élever ou PgDn pour abaisser (Maintenez ALT pour élever plus rapidement ou CTRL plus lentement), A ou E pour une rotation à 180. Espace pour construire.</French>
@@ -11776,7 +11776,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_115">
 			<English>You cannot lock this %1, you do not know the combination.</English>
-			<German>Du kannst diese(n) %1 nicht abschließen, da du nicht die Kombination kennst.</German>
+			<German>Du kannst diese(n) %1 nicht abschließen, da du die Kombination nicht kennst.</German>
 			<Russian>Вы не можете закрыть %1, вы не знаете комбинации.</Russian>
 			<Dutch>Je kunt deze %1 niet op slot zetten, je weet de combinatie niet.</Dutch>
 			<French>Vous ne pouvez pas verrouiller %1, vous n'en connaissez pas la combinaison.</French>
@@ -11800,7 +11800,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_119">
 			<English>You cannot pack this %1, you do not know the combination.</English>
-			<German>Du kannst diese(n) %1 nicht packen, da du nicht die Kombination kennst.</German>
+			<German>Du kannst diese(n) %1 nicht packen, da du die Kombination nicht kennst.</German>
 			<Russian>Вы не можете упаковать %1, вы не знаете комбинации.</Russian>
 			<Dutch>Je kunt deze %1 niet inpakken, je weet de combinatie niet.</Dutch>
 			<French>Vous ne pouvez pas emballer %1, vous n'en connaissez pas la combinaison.</French>
