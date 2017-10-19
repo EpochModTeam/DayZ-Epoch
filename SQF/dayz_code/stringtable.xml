@@ -13081,7 +13081,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_321">
 			<English>You have interrupted lifting a vehicle!</English>
-			<German>Du hast das Fahrzeug Hochheben unterbrochen.</German>
+			<German>Du hast das Fahrzeughochheben unterbrochen.</German>
 			<Russian>Вы прервали подъём транспорта!</Russian>
 			<Dutch>Je hebt het takelen van het voertuig onderbroken!</Dutch>
 		</Key>
@@ -13363,7 +13363,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_FILLVEH">
 			<English>Fill Vehicle</English>
-			<German>Fahrzeug Auftanken</German>
+			<German>Fahrzeug auftanken</German>
 			<Russian>Заправить транспорт</Russian>
 			<Dutch>Vul Voertuig</Dutch>
 			<French>Faire le Plein</French>
@@ -13789,7 +13789,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_DESC">
 			<English>A placeable object that is used for very secure storage. Placing your safe will give you a 4 digit number that is used to open the safe.</English>
-			<German>Ein platzierbares Objekt für sehr sichere Aufbewahrung. Der vierstellige Code zum Öffnen wird nach dem Aufstellen angezeigt.</German>
+			<German>Ein platzierbares Objekt für eine sichere Aufbewahrung. Der vierstellige Code zum Öffnen wird nach dem Aufstellen angezeigt.</German>
 			<Russian>Личный сейф: Перемещаемый объект, который используется в качестве безопасного хранилища. Поставив сейф, вы получите 4-х значный код, который необходимо ввести, чтобы открыть сейф, запишите этот код!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_LOCKED">
@@ -15242,12 +15242,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_GEAR_AND_BAG_FULL">
 			<English>Cannot buy: Not enough empty slots in your gear or bag to accept change!</English>
-			<German>Kauf nicht möglich: Du hast nicht genug freie Plätze in deiner Ausrüstung oder deinem Rucksack!</German>
+			<German>Kauf nicht möglich: Du hast nicht genügend freie Plätze in deiner Ausrüstung oder deinem Rucksack!</German>
 			<Russian>Не хватает свободного места в снаряжении или рюкзаке!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BINOCULARS_FULL">
 			<English>Cannot buy: Not enough empty binocular slots in your gear!</English>
-			<German>Kauf nicht möglich: Du hast nicht genug freie Fernglas Plätze in deiner Ausrüstung!</German>
+			<German>Kauf nicht möglich: Du hast nicht genügend freie Fernglasplätze in deiner Ausrüstung!</German>
 			<Russian>Не хватает свободного места!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NEED_COINS">
@@ -15257,7 +15257,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NEED_MONEY">
 			<English>Cannot buy: Not enough money!</English>
-			<German>Kauf nicht möglich: Du hast nicht genug Geld!</German>
+			<German>Kauf nicht möglich: Du hast nicht genügend Geld!</German>
 			<Italian>Impossibile comprare: servono più soldi!</Italian>
 			<Spanish>No puedes comprar: ¡no tienes suficiente dinero!</Spanish>
 			<French>Achat impossible : argent insuffisant !</French>
@@ -15283,7 +15283,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_CHANGE_IN_BACKPACK">
 			<English>Some change was added to your backpack.</English>
-			<German>Etwas Wechselgeld wurden deinem Backpack hinzugefügt.</German>
+			<German>Etwas Wechselgeld wurden deinem Rucksack hinzugefügt.</German>
 			<Russian>В вашем рюкзаке произошли некоторые изменения.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_CHANGE_OVERFLOW">
@@ -15408,7 +15408,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_DESC">
 			<English>Half height cinder block wall.</English>
-			<German>Eine Betonwand, die nur zur Hälfte aufgebaut wurde.</German>
+			<German>Eine Betonwand, welche nur zur Hälfte aufgebaut wurde.</German>
 			<Russian>Половина стены из шлакоблоков.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FULLCINDERBLOCKWALL_DESC">
@@ -16773,12 +16773,12 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME">
 			<English>20Rnd. 12 Cal. Slug.</English>
-			<German>20 Schuss 12 Kal. Flintenlaufgeschoss</German>			
+			<German>20 Schuss Kal. 12 Flintenlaufgeschoss</German>			
 			<Russian>20п. 12к (пуля)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME">
 			<English>20Rnd. 12 Cal. Pellets.</English>
-			<German>20 Schuss 12 Kal. Schrot</German>
+			<German>20 Schuss Kal. 12 Schrot</German>
 			<Russian>20п. 12к (дробь)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_HE_NAME">
