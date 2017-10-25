@@ -102,7 +102,7 @@ _processGear = {
 					_sellCurrency = _sell select 1;
 					_part = (configFile >> "CfgMagazines" >> _sellCurrency);
 					_worth = getNumber(_part >> "worth");
-					if (_worth == 0) then { _worth = DZE_GemWorthList select (DZE_GemList find _buyCurrency); };
+					if (_worth == 0) then { _worth = DZE_GemWorthList select (DZE_GemList find _sellCurrency); };
 				} else {
 					_buyCurrency = CurrencyName;
 					_sellCurrency = CurrencyName;
