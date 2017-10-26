@@ -15426,6 +15426,16 @@
 			<German>Ein Türdurchgang aus Beton.</German>
 			<Russian>Дверной проём в стене из шлакоблоков.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_BLOCKDOOR">
+			<English>Cinder Door</English>
+			<German>Betontür</German>
+			<Russian>Дверной проём</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_BLOCKDOORLOCKED">
+			<English>Cinder Door (locked)</English>
+			<German>Betontür (verschlossen)</German>
+			<Russian>Дверной проём</Russian>
+		</Key>			
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
 			<German>Beton-Garagentürrahmen</German>
@@ -15436,6 +15446,16 @@
 			<German>Ein Garagentürrahmen aus Beton.</German>
 			<Russian>Гаражный дверной проём в стене из шлакоблоков.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_BLOCKGARAGEDOOR">
+			<English>Cinder Garage Door</English>
+			<German>Beton-Garagentür</German>
+			<Russian>Дверной проём (гаражный)</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_BLOCKGARAGEDOORLOCKED">
+			<English>Cinder Garage Door (locked)</English>
+			<German>Beton-Garagentür (verschlossen)</German>
+			<Russian>Дверной проём (гаражный)</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
 			<German>Holzboden/Decke</German>
