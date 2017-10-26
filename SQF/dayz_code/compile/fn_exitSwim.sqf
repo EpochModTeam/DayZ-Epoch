@@ -8,4 +8,5 @@ _para = "ParachuteWest" createVehicleLocal [0,0,0];
 _para setPos _paraPosition;
 _unit moveInDriver _para;
 deleteVehicle _para;
+_unit setPosATL _paraPosition;
 _unit allowDamage true;
