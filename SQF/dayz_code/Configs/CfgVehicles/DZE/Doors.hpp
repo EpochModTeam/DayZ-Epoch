@@ -281,7 +281,7 @@ class Land_ammo_supply_wreck: ruins	{
 /* Your doorsegment is derivated from the normal wall.*/
 class Land_DZE_WoodDoor: Land_DZE_WoodDoor_Base {
 	model = "\z\addons\dayz_epoch\models\small_wall_door_anim.p3d";
-	displayName =  "Wood Door";
+	displayName =  $STR_EPOCH_WALLWITHDOOR;
 	GhostPreview = "WoodDoor_Preview_DZ"; 
 	upgradeBuilding[] = {"Land_DZE_WoodDoorLocked",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -317,7 +317,7 @@ class Land_DZE_WoodDoor: Land_DZE_WoodDoor_Base {
 
 class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	model = "\z\addons\dayz_epoch\models\small_wall_door_locked_anim.p3d";
-	displayName =  "Wood Door Locked";
+	displayName =  $STR_EPOCH_WALLWITHDOORLOCKED;
 	GhostPreview = "WoodDoor_Preview_DZ"; 
 	downgradeBuilding[] = {"Land_DZE_WoodDoor",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -380,7 +380,7 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 
 class Land_DZE_LargeWoodDoor: Land_DZE_WoodDoor_Base {
 	model = "\z\addons\dayz_epoch\models\large_wall_door_anim.p3d";
-	displayName =  "Large Wood Door";
+	displayName =  $STR_EPOCH_LARGEWALLWITHDOOR;
 	GhostPreview = "LargeWoodDoor_Preview_DZ";
 	upgradeBuilding[] = {"Land_DZE_LargeWoodDoorLocked",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -416,7 +416,7 @@ class Land_DZE_LargeWoodDoor: Land_DZE_WoodDoor_Base {
 
 class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	model = "\z\addons\dayz_epoch\models\large_wall_door_locked_anim.p3d";
-	displayName =  "Large Wood Door Locked";
+	displayName =  $STR_EPOCH_LARGEWALLWITHDOORLOCKED;
 	GhostPreview = "LargeWoodDoor_Preview_DZ";
 	downgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -479,7 +479,7 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 
 class Land_DZE_GarageWoodDoor: Land_DZE_WoodDoor_Base {
 	model = "\z\addons\dayz_epoch\models\Garage_door_anim.p3d";
-	displayName =  "Garage Wood Door";
+	displayName =  $STR_EPOCH_WOODGARAGEDOOR;
 	GhostPreview = "GarageWoodDoor_Preview_DZ";
 	upgradeBuilding[] = {"Land_DZE_GarageWoodDoorLocked",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -515,7 +515,7 @@ class Land_DZE_GarageWoodDoor: Land_DZE_WoodDoor_Base {
 
 class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 	model = "\z\addons\dayz_epoch\models\Garage_door_locked_anim.p3d";
-	displayName =  "Garage Wood Door Locked";
+	displayName =  $STR_EPOCH_WOODGARAGEDOORLOCKED;
 	GhostPreview = "GarageWoodDoor_Preview_DZ";
 	downgradeBuilding[] = {"Land_DZE_GarageWoodDoor",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -579,7 +579,7 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 
 class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	model = "\z\addons\dayz_epoch\models\steel_garage_locked.p3d";
-	displayName =  "Block Garage Door Locked";
+	displayName =  $STR_EPOCH_BLOCKGARAGEDOORLOCKED;
 	GhostPreview = "CinderWallDoorway_Preview_DZ";
 	downgradeBuilding[] = {"CinderWallDoor_DZ",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -643,7 +643,7 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 
 class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";
-	displayName =  "Block Garage Door";
+	displayName =  $STR_EPOCH_BLOCKGARAGEDOOR;
 	GhostPreview = "CinderWallDoorway_Preview_DZ";
 	upgradeBuilding[] = {"CinderWallDoorLocked_DZ",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -681,7 +681,7 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 
 class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	model = "\z\addons\dayz_epoch\models\Steel_door_locked.p3d";
-	displayName =  "Block Door Locked";
+	displayName =  $STR_EPOCH_BLOCKDOORLOCKED;
 	GhostPreview = "CinderWallSmallDoorway_Preview_DZ";
 	downgradeBuilding[] = {"CinderWallDoorSmall_DZ",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
@@ -745,7 +745,7 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 
 class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 	model = "\z\addons\dayz_epoch\models\Steel_door.p3d";
-	displayName =  "Block Door";
+	displayName =  $STR_EPOCH_BLOCKDOOR;
 	GhostPreview = "CinderWallSmallDoorway_Preview_DZ";
 	upgradeBuilding[] = {"CinderWallDoorSmallLocked_DZ",{{"ItemComboLock",1}}};
 	/* Arma needs to know, how the animation trigger is triggered*/
