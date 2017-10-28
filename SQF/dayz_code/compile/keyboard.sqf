@@ -300,7 +300,8 @@ if (isNil "keyboard_keys") then {
     [actionKeys "Diary", _journal] call _addArray;
     [actionKeys "NetworkStats", _journal] call _addArray;
 	[[DIK_F1], _muteSound] call _addArray;
-    [[DIK_F4, DIK_TAB, DIK_DELETE], _forcesave] call _addArray;
+	[[DIK_F4], {if (diag_tickTime - dayz_lastSave > 10) then {call player_forceSave;};_handled = true;}] call _addArray;
+    [[DIK_TAB,DIK_DELETE], _forcesave] call _addArray;
     //[[DIK_F4, DIK_RMENU, DIK_LMENU,DIK_LSHIFT,DIK_RSHIFT,DIK_ESCAPE], _forcesave2] call _addArray;
     [actionKeys "LeanLeft", _build_left ] call _addArray;
     [actionKeys "LeanRight", _build_right ] call _addArray;
@@ -310,7 +311,7 @@ if (isNil "keyboard_keys") then {
 //  [[DIK_NUMPAD9], _rotate_right] call _addArray;
     [actionKeys "ForceCommandingMode", {DZE_5 = true;_handled = true;}] call _addArray;
     [[  DIK_F9,DIK_F10,DIK_F11,DIK_F12,
-        DIK_F8,DIK_F7,DIK_F6,DIK_F5,DIK_F4,
+        DIK_F8,DIK_F7,DIK_F6,DIK_F5,
         DIK_F3,DIK_F2,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
 	if (dayz_groupSystem) then {
@@ -318,8 +319,7 @@ if (isNil "keyboard_keys") then {
 		[[DIK_LWIN,DIK_RWIN], {dayz_groupNameTags = !dayz_groupNameTags;_handled = true;}] call _addArray;
 		[actionKeys "TacticalView", _block] call _addArray;
 	};
-	[actionKeys "DSInterface", {_handled = true;}] call _addArray;
-	[[DIK_P], {if (_shiftState) then {_handled = true;};}] call _addArray;
+	[actionKeys "DSInterface", _block] call _addArray;
 	diag_log "keyboard_keys reset";
 };
 

@@ -1056,8 +1056,6 @@ class FSM
                         itemno = 29;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Preload_Display'];};" \n
                          "" \n
-                         "dayz_lastCheckBit = 0;" \n
-                         "" \n
                          "player disableConversation true;" \n
                          "" \n
                          "eh_player_killed = player addeventhandler [""FiredNear"",{_this call player_weaponFiredNear;} ];" \n

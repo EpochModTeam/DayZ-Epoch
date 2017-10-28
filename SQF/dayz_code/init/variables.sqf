@@ -589,6 +589,7 @@ if (!isDedicated) then {
 
 	//player special variables
 	dayz_bloodBagHumanity = 300;
+	dayz_lastCheckBit = 0;
 	dayz_lastDamageSourceNull = false;
 	dayz_lastDamageSource = "none";
 	dayz_lastDamageTime = 0;
