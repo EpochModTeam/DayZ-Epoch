@@ -1,13 +1,10 @@
 private ["_weapons","_isArray","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_isMagazine","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
 _isArray = typeName _this == "ARRAY";
-if (_isArray) then {
-	_class = _this select 0;
-} else {
-	_class = _this;
-};
+_class = if (_isArray) then {_this select 0} else {_this};
 
 if (gear_done) then {disableUserInput true;disableUserInput true;};
 disableSerialization;
+
 //Old location system causes issues with players getting damaged during movement.
 //_position = getPosATL player;
 //New system testing needed.
@@ -52,13 +49,6 @@ if (_newBackpackType != "") then {
 _currentWpn = currentWeapon player;
 _muzzles = getArray(configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
 if (count _muzzles > 1) then {_currentWpn = currentMuzzle player;};
-
-//Debug Message
-//	diag_log "Attempting to switch model";
-//	diag_log str(_weapons);
-//	diag_log str(_magazines);
-//	diag_log (str(_backpackWpn));
-//	diag_log (str(_backpackMag));
 
 //Secure Player for Transformation
 //player setPosATL dayz_spawnPos;
@@ -193,12 +183,13 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 if (gear_done) then {disableUserInput false;disableUserInput false;disableUserInput false;disableUserInput false;};
 
 //Debug Message
-//diag_log "Swichtable Unit Created. Equipment:";
-//diag_log format["Weapons: %1",weapons _newUnit];
-//diag_log format["Magazines: %1",magazines _newUnit];
-//diag_log format["Backpack weapons: %1",getWeaponCargo unitBackpack _newUnit];
-//diag_log format["Backpack magazines: %1",getMagazineCargo unitBackpack _newUnit];
-
+/*
+diag_log "Swichtable Unit Created. Equipment:";
+diag_log format["Weapons: %1",weapons _newUnit];
+diag_log format["Magazines: %1",magazines _newUnit];
+diag_log format["Backpack weapons: %1",getWeaponCargo unitBackpack _newUnit];
+diag_log format["Backpack magazines: %1",getMagazineCargo unitBackpack _newUnit];
+*/
 player switchCamera _currentCamera;
 if (_currentWpn != "") then {_newUnit selectWeapon _currentWpn;};
 [objNull, player, rSwitchMove, _currentAnim] call RE;

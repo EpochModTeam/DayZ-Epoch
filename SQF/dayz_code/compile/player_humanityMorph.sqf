@@ -82,12 +82,12 @@ if (count _medical > 0) then {
 };
 
 //General Stats
-player setVariable ["humanity",_humanity,true];
+//player setVariable ["humanity",_humanity,true]; //Moved to player_switchModel
 player setVariable ["zombieKills",_zombieKills,true];
 player setVariable ["headShots",_headShots,true];
 player setVariable ["humanKills",_humanKills,true];
 player setVariable ["banditKills",_banditKills,true];
-player setVariable ["characterID",_charID,true];
+//player setVariable ["characterID",_charID,true]; //Moved to player_switchModel
 player setVariable ["worldspace",_worldspace];
 //player setVariable ["Achievements",_achievements];
 player setVariable ["combattimeout",_combattimeout,false];
@@ -109,7 +109,8 @@ if (Z_SingleCurrency) then {
 
 call dayz_resetSelfActions; //New unit has no self actions yet. Reset variables so actions can be added back.
 dayz_actionInProgress = false; //Allow self actions to run now.
-player removeEventHandler ["HandleDamage",mydamage_eh1];
+
+player removeAllEventHandlers "HandleDamage";
 eh_player_killed = player addeventhandler ["FiredNear",{_this call player_weaponFiredNear;}];
 [player] call fnc_usec_damageHandle;
 player allowDamage true;
