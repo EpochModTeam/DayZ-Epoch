@@ -23,9 +23,6 @@ class RscXListBox;
 class RscShortcutButton;
 class RscHTML;
 class RscDisplayEmpty;
-class RscEdit;
-class RscCombo;
-class RscXSliderH;
 
 #include "CfgPlayerStats\defines.hpp"
 #include "CfgPlayerStats\p_cover.hpp"
@@ -39,7 +36,6 @@ class RscXSliderH;
 
 class RscDisplayMission: RscDisplayEmpty
 {
-	//access = 0;
 	idd = 46;
 	onKeyDown = "_handled = if (isNil 'DZ_KeyDown_EH') then {false} else {_this call DZ_KeyDown_EH}; _handled"; //assigned much quicker than spawning init_keyboard
 };
@@ -111,7 +107,6 @@ class RscDisplayChannel
 
 class RscPictureGUI
 {
-	//access = 0;
 	type = 0;
 	idc = -1;
 	colorBackground[] = {0,0,0,0};
@@ -820,7 +815,7 @@ class RscDisplayDSinterface: RscStandardDisplay
 			y = "(93/100)	* SafeZoneH + SafeZoneY";
 			w = "(20/100)	* SafeZoneW";
 			default = 0;
-			text = "Close";
+			text = $STR_UI_CLOSE;
 		};
 	};
 };

@@ -127,8 +127,8 @@ sched_corpses = {
 				_x setVariable ["sched_co_deathTime", _deathTime];
 			};
 					
-			// 25 minutes = how long a destroyed vehicle stays on the map
-			if (diag_tickTime - _deathTime > 25*60) then {
+			// 5 minutes = how long a destroyed vehicle stays on the map
+			if (diag_tickTime - _deathTime > 5*60) then {
 				{deleteVehicle _x} forEach (_x nearObjects ["CraterLong",50]);
 				_x call sched_co_deleteVehicle;
 				_delQtyV = _delQtyV + 1;
