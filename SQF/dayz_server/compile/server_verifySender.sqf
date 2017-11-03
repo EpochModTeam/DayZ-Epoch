@@ -1,6 +1,8 @@
 /*
 	PVEH does not provide any information about the sender in A2, so
 	this is necessary to verify the sender was not spoofed.
+	
+	This is useful to hinder and identify cheaters who attempt mass deletion or creation of hive objects via PVS.
 */
 
 private ["_clientKey","_exitReason","_function","_index","_object","_params","_player","_playerUID"];

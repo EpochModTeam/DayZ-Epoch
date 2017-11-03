@@ -1,7 +1,11 @@
-private ["_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_result","_outcome","_oid","_countr","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_clientKey","_playerUID"];
+private ["_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_result","_outcome","_oid","_countr","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_clientKey","_exitReason","_playerUID"];
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-if (count _this < 7) exitWith {diag_log "Server_PublishVehicle3 error: Wrong parameter format";};
+if (count _this < 7) exitWith {
+	diag_log "Server_PublishVehicle3 error: Wrong parameter format";
+	dze_waiting = "fail";
+	(owner (_this select 5)) publicVariableClient "dze_waiting";
+};
 
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
@@ -14,7 +18,11 @@ _playerUID = getPlayerUID _activatingPlayer;
 _characterID = _keySelected;
 
 _exitReason = [_this,"PublishVehicle3",(_worldspace select 1),_clientKey,_playerUID,_activatingPlayer] call server_verifySender;
-if (_exitReason != "") exitWith {diag_log _exitReason};
+if (_exitReason != "") exitWith {
+	diag_log _exitReason;
+	dze_waiting = "fail";
+	(owner _activatingPlayer) publicVariableClient "dze_waiting";
+};
 
 if (!(isClass(configFile >> "CfgVehicles" >> _class)) || isNull _object) exitWith {
 	diag_log ("HIVE-PublishVehicle3 Error: Vehicle does not exist: "+ str(_class));
