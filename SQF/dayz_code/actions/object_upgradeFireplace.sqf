@@ -158,7 +158,7 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	[_object,true] call dayz_inflame;
 	_object spawn player_fireMonitor;
 	
-	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[[[],[]],_magazines,[[],[]]]];
+	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_pos],[[[],[]],_magazines,[[],[]]],player,dayz_authKey];
 	publicVariableServer "PVDZ_obj_Publish";
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 

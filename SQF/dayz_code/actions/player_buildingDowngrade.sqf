@@ -113,9 +113,9 @@ if ((count _upgrade) > 0) then {
 		if (DZE_permanentPlot) then {
 			_ownerID = _obj getVariable["ownerPUID","0"];
 			_object setVariable ["ownerPUID",_ownerID,true];
-			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,dayz_playerUID,_vector],_classname,_obj,player];
+			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location,dayz_playerUID,_vector],_classname,_obj,player,[],dayz_authKey];
 		} else {
-			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location, _vector],_classname,_obj,player];
+			PVDZE_obj_Swap = [_objectCharacterID,_object,[_dir,_location, _vector],_classname,_obj,player,[],dayz_authKey];
 		};
 		publicVariableServer "PVDZE_obj_Swap";
 

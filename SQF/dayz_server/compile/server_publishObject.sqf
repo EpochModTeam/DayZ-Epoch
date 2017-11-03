@@ -1,13 +1,20 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_type","_objectUID","_characterID","_object","_worldspace","_key","_ownerArray","_inventory"];
+private ["_type","_objectUID","_characterID","_object","_worldspace","_key","_ownerArray","_inventory","_clientKey","_exitReason","_player","_playerUID"];
+
+if (count _this < 6) exitWith {diag_log "Server_PublishObj error: Wrong parameter format";};
 
 _characterID =		_this select 0;
 _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _inventory = 		_this select 3;
-if (typeName _inventory != "ARRAY") then {_inventory = [];}; //Temp fix for error in player_build.sqf in 1.0.6 release
+_player = _this select 4;
+_clientKey = _this select 5;
 _type = typeOf _object;
+_playerUID = getPlayerUID _player;
+
+_exitReason = [_this,"PublishObj",(_worldspace select 1),_clientKey,_playerUID,_player] call server_verifySender;
+if (_exitReason != "") exitWith {diag_log _exitReason};
 
 if ([_object, "Server"] call check_publishobject) then {
 	//diag_log ("PUBLISH: Attempt " + str(_object));
@@ -35,7 +42,7 @@ if ([_object, "Server"] call check_publishobject) then {
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 	#ifdef OBJECT_DEBUG
-	diag_log ["PUBLISH: Created ",_type,"ObjectUID", _objectUID,"characterID", _characterID, " with variables/inventory:", _inventory ];
+	diag_log format["PUBLISH: Player %1(%2) created %3 with UID:%4 CID:%5 @%6 inventory:%7",_player,_playerUID,_type,_objectUID,_characterID,((_worldspace select 1) call fa_coor2str),_inventory];
 	#endif
 }
 else {

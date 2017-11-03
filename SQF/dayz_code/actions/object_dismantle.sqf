@@ -127,15 +127,8 @@ if (_proceed) then {
 
 	format [localize "STR_BLD_DISMANTLED",typeOf _object] call dayz_rollingMessages;
 	
-	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_object,DZE_AuthKey];
+	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_object,dayz_authKey];
 	publicVariableServer "PVDZ_obj_Destroy";
-	
-	if (isServer) then {
-		PVDZ_obj_Destroy call server_deleteObjDirect;
-	};
-	
-	//Need to update for sanity no client should ever create or delete anything
-	//deleteVehicle _object;
 	
 	[_dismantleToo,1,1] call fn_dropItem;
 };

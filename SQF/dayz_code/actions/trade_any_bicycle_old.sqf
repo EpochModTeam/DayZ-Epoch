@@ -108,7 +108,7 @@ if (_qty >= _qty_in) then {
 						_location = [_sign] call FNC_GetPos;
 						[_part_out,_sign] call fn_waitForObject;
 
-						PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,dayz_characterID,_activatingPlayer];
+						PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,dayz_characterID,_activatingPlayer,dayz_authKey];
 						publicVariableServer  "PVDZE_veh_Publish2";
 						
 						format[localize "str_epoch_player_180",_qty_in,_textPartIn,_textPartOut] call dayz_rollingMessages;
@@ -156,7 +156,7 @@ if (_qty >= _qty_in) then {
 								_objectID 	= _obj getVariable ["ObjectID","0"];
 								_objectUID	= _obj getVariable ["ObjectUID","0"];
 
-								PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,DZE_AuthKey];
+								PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,dayz_authKey];
 								publicVariableServer "PVDZ_obj_Destroy";
 
 								//deleteVehicle _obj; 

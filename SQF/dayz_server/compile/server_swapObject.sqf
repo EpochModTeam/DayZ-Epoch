@@ -1,16 +1,22 @@
-private ["_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer"];
-//[dayz_characterID,_tent,[_dir,_location],"TentStorage"]
+private ["_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer","_clientKey","_exitReason","_playerUID"];
+
+if (count _this < 8) exitWith {diag_log "Server_SwapObject error: Wrong parameter format";};
+
 _charID =		_this select 0;
 _object = 		_this select 1;
 _worldspace = 	_this select 2;
 _class = 		_this select 3;
 _obj = 			_this select 4;
 _activatingplayer = _this select 5;
-_inv = if (count _this > 6) then {_this select 6} else {[]};
+_inv = _this select 6;
+_clientKey = _this select 7;
 _proceed = false;
-
 _objectID = "0";
 _objectUID = "0";
+_playerUID = getPlayerUID _activatingPlayer;
+
+_exitReason = [_this,"SwapObject",(_worldspace select 1),_clientKey,_playerUID,_activatingPlayer] call server_verifySender;
+if (_exitReason != "") exitWith {diag_log _exitReason};
 
 if(!isNull(_obj)) then {
 	// Find objectID
@@ -33,7 +39,7 @@ if(isNull(_object)) then {
 if(_objectID == "0" && _objectUID == "0") then { 
 	_proceed = false;
 } else {
-	[_objectID,_objectUID,_activatingplayer,_obj] call server_deleteObjDirect;
+	[_objectID,_objectUID] call server_deleteObjDirect;
 };
 
 _allowed = [_object, "Server"] call check_publishobject;
@@ -75,4 +81,4 @@ _object enableSimulation false;
 
 dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
-diag_log ("PUBLISH: " + str(_activatingPlayer) + " upgraded " + (_class) + " with ID " + str(_uid));
+diag_log format["PUBLISH: Player %1(%2) upgraded or downgraded object to %3 with UID:%4 @%5",_activatingPlayer,_playerUID,_class,_uid,((_worldspace select 1) call fa_coor2str)];

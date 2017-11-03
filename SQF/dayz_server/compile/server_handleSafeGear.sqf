@@ -98,7 +98,8 @@ switch (_status) do {
 		_holder setVariable ["BackpackCargo",_backpacks,false];
 	};
 	case 2: { //Packing
-		_packedClass = getText (configFile >> "CfgVehicles" >> _type >> "packedClass");		
+		_packedClass = getText (configFile >> "CfgVehicles" >> _type >> "packedClass");
+		if (_packedClass == "") exitWith {diag_log format["Server_HandleSafeGear Error: invalid object type: %1",_type];};
 		_weapons = getWeaponCargo _obj;
 		_magazines = getMagazineCargo _obj;
 		_backpacks = getBackpackCargo _obj;
@@ -112,7 +113,7 @@ switch (_status) do {
 		[_weapons,_magazines,_backpacks,_holder] call server_addCargo;
 		
 		// Delete safe from database
-		[_objectID,_objectUID,_player] call server_deleteObjDirect;
+		[_objectID,_objectUID] call server_deleteObjDirect;
 	};
 };
 

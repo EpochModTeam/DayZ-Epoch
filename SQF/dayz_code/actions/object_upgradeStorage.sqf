@@ -128,7 +128,7 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	_backpacks = getBackpackCargo _cursorTarget;
 	
 	//remove old tent
-	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_cursorTarget,DZE_AuthKey];
+	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_cursorTarget,dayz_authKey];
 	publicVariableServer "PVDZ_obj_Destroy";
 	//deleteVehicle _cursorTarget;
 	
@@ -183,9 +183,9 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	//publish new tent	
 	if (DZE_permanentPlot) then {
 		_object setVariable ["ownerPUID",dayz_playerUID,true];
-		PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos, dayz_playerUID],[_weapons,_magazines,_backpacks]];
+		PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_pos,dayz_playerUID],[_weapons,_magazines,_backpacks],player,dayz_authKey];
 	} else {
-		PVDZ_obj_Publish = [dayz_characterID,_object,[_dir, _pos],[_weapons,_magazines,_backpacks]];
+		PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_pos],[_weapons,_magazines,_backpacks],player,dayz_authKey];
 	};
 	publicVariableServer "PVDZ_obj_Publish";
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];

@@ -79,7 +79,7 @@ if (_isOk) then {
 			["PartWoodPile",1,1] call fn_dropItem;
 			["equip_duct_tape",1,1] call fn_dropItem;
 		};
-		PVDZ_obj_Destroy = [(_holder getVariable["ObjectID","0"]),(_holder getVariable["ObjectUID","0"]),player,_holder,DZE_AuthKey];
+		PVDZ_obj_Destroy = [(_holder getVariable["ObjectID","0"]),(_holder getVariable["ObjectUID","0"]),player,_holder,dayz_authKey];
 		publicVariableServer "PVDZ_obj_Destroy";
 	} else {
 		deleteVehicle _holder;

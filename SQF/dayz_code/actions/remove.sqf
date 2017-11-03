@@ -152,7 +152,7 @@ if (_proceed && _success) then {
 		_ipos = getPosATL _obj;
 		
 		if(!_isWreck && !_isWreckBuilding) then {
-			PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,DZE_AuthKey];
+			PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,dayz_authKey];
 			publicVariableServer "PVDZ_obj_Destroy";
 		};
 

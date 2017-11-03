@@ -90,7 +90,7 @@ if (_build) then {
 */
 
     _object setVariable ["characterID",dayz_characterID,true];
-    PVDZ_obj_Publish = [dayz_characterID,_object,[round _direction, _location], _variables];
+    PVDZ_obj_Publish = [dayz_characterID,_object,[round _direction,_location],_variables,player,dayz_authKey];
     publicVariableServer "PVDZ_obj_Publish";
 	
     diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];

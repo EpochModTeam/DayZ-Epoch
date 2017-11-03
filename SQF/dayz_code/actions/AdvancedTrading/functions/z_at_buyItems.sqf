@@ -152,11 +152,11 @@ if (_enoughMoney) then {
 		};
 		
 		if (_buyingType in DZE_tradeVehicleKeyless) then {
-			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,"0",_activatingPlayer];
+			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,"0",_activatingPlayer,dayz_authKey];
 		} else {
-			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_keySelected,_activatingPlayer,dayz_authKey];
 		};
-		publicVariableServer  "PVDZE_veh_Publish2";
+		publicVariableServer "PVDZE_veh_Publish2";
 		_keySelected;
 	};
 

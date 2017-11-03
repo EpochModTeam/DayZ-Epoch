@@ -1,6 +1,7 @@
-private ["_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_result","_outcome","_oid","_countr","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty"];
-//PVDZE_veh_Upgrade = [_veh,[_dir,_location],_part_out,false,_keySelected,_activatingPlayer];
+private ["_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_result","_outcome","_oid","_countr","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_clientKey","_playerUID"];
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
+if (count _this < 7) exitWith {diag_log "Server_PublishVehicle3 error: Wrong parameter format";};
 
 _object = 		_this select 0;
 _worldspace = 	_this select 1;
@@ -8,10 +9,15 @@ _class = 		_this select 2;
 _donotusekey =	_this select 3;
 _keySelected =  _this select 4;
 _activatingPlayer =  _this select 5;
+_clientKey = _this select 6;
+_playerUID = getPlayerUID _activatingPlayer;
 _characterID = _keySelected;
 
+_exitReason = [_this,"PublishVehicle3",(_worldspace select 1),_clientKey,_playerUID,_activatingPlayer] call server_verifySender;
+if (_exitReason != "") exitWith {diag_log _exitReason};
+
 if (!(isClass(configFile >> "CfgVehicles" >> _class)) || isNull _object) exitWith {
-	diag_log ("HIVE-pv3: Vehicle does not exist: "+ str(_class));
+	diag_log ("HIVE-PublishVehicle3 Error: Vehicle does not exist: "+ str(_class));
 	dze_waiting = "fail";
 	(owner _activatingPlayer) publicVariableClient "dze_waiting";
 };
@@ -70,7 +76,7 @@ if (_outcome != "PASS") then {
 	_newobject = _class createVehicle [0,0,0];
 
 	// remove old vehicle from DB
-	[_objectID,_objectUID,_activatingPlayer] call server_deleteObjDirect;
+	[_objectID,_objectUID] call server_deleteObjDirect;
 
 	// switch var to new vehicle at this point.
 	_object = _newobject;
@@ -119,5 +125,5 @@ if (_outcome != "PASS") then {
 	dze_waiting = "success";
 	(owner _activatingPlayer) publicVariableClient "dze_waiting";
 
-	diag_log ("PUBLISH: " + str(_activatingPlayer) + " Upgraded " + (_class) + " with ID " + str(_uid));
+	diag_log format["PUBLISH: %1(%2) upgraded %3 with UID %4 @%5",_activatingPlayer,_playerUID,_class,_uid,(_location call fa_coor2str)];
 };

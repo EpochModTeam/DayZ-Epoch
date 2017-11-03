@@ -128,7 +128,7 @@ if (_finished) then {
 						_location = [_sign] call FNC_GetPos;
 						[_part_out,_sign] call fn_waitForObject;
 
-						PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_result select 1,_activatingPlayer];
+						PVDZE_veh_Publish2 = [[_dir,_location],_part_out,false,_result select 1,_activatingPlayer,dayz_authKey];
 						publicVariableServer  "PVDZE_veh_Publish2";
 						
 						format[localize "STR_EPOCH_ACTIONS_11",_qty_in,_textPartIn,_textPartOut] call dayz_rollingMessages;
@@ -159,7 +159,7 @@ if (_finished) then {
 
 				if(local _obj && !isNull _obj && alive _obj && !_notSetup) then {
 
-					PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,DZE_AuthKey];
+					PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,dayz_authKey];
 					publicVariableServer "PVDZ_obj_Destroy";
 
 					//deleteVehicle _obj; 

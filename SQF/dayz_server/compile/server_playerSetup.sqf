@@ -225,17 +225,17 @@ _playerObj setVariable ["lastPos",getPosATL _playerObj];
 
 _clientID = owner _playerObj;
 _randomKey = [];
-_randomInput = toArray "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
+_randomInput = toArray "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$^*";
 for "_i" from 0 to 12 do {
 	_randomKey set [count _randomKey, (_randomInput call BIS_fnc_selectRandom)];
 };
 _randomKey = toString _randomKey;
-_findIndex = DZE_ServerPUIDArray find _playerID;
+_findIndex = dayz_serverPUIDArray find _playerID;
 if (_findIndex > -1) then {
-	DZE_ServerClientKeys set [_findIndex, [_clientID,_randomKey]];
+	dayz_serverClientKeys set [_findIndex, [_clientID,_randomKey]];
 } else {
-	DZE_ServerPUIDArray set [(count DZE_ServerPUIDArray), _playerID];
-	DZE_ServerClientKeys set [(count DZE_ServerClientKeys), [_clientID,_randomKey]];
+	dayz_serverPUIDArray set [(count dayz_serverPUIDArray), _playerID];
+	dayz_serverClientKeys set [(count dayz_serverClientKeys), [_clientID,_randomKey]];
 };
 
 PVCDZ_plr_Login2 = [_worldspace,_state,_randomKey];

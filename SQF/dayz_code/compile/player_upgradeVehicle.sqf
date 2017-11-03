@@ -127,7 +127,7 @@ if (_IsNearVehicle >= 1) then {
 
 						[_newclassname,objNull] call fn_waitForObject;
 						dze_waiting = nil;
-						PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,true,_objectCharacterID,player];
+						PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,true,_objectCharacterID,player,dayz_authKey];
 						publicVariableServer "PVDZE_veh_Upgrade";
 
 						//Wait for hive to finish spawning vehicle. Prevents dupe via player queuing multiple upgrades.
