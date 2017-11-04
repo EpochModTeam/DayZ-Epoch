@@ -152,11 +152,12 @@ if (_proceed && _success) then {
 		_ipos = getPosATL _obj;
 		
 		if(!_isWreck && !_isWreckBuilding) then {
+			//Server performs deleteVehicle
 			PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,dayz_authKey];
 			publicVariableServer "PVDZ_obj_Destroy";
+		} else {
+			deleteVehicle _obj;
 		};
-
-		//deleteVehicle _obj;
 		
 		if (_isWreckBuilding) then {
 			PVDZ_send = [player,"RemoveObject",_ipos];
@@ -262,7 +263,6 @@ if (_proceed && _success) then {
 		localize "str_epoch_player_91" call dayz_rollingMessages;
 	};
 };
+
 dayz_actionInProgress = false;
 s_player_deleteBuild = -1;
-
-_obj

@@ -8,7 +8,7 @@
 */
 
 private ["_nearByChoppers","_cursorTarget","_type","_class","_requiredTools","_requiredParts","_upgradeType","_producedParts","_randomCreate",
-	"_upgradeClass","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_objectID","_objectUID",
+	"_upgradeClass","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_objectID","_objectUID","_playerNear",
 	"_ownerArray","_ownerPasscode","_dir","_vector","_object","_puid","_clanArray","_wh","_variables","_finished"];
 
 _cursorTarget = _this;
@@ -42,6 +42,9 @@ _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animatio
 _isWater = (surfaceIsWater (getPosATL player)) or dayz_isSwimming;
 if(_isWater or _onLadder) exitWith { localize "str_water_ladder_cant_do" call dayz_rollingMessages; };
 
+_playerNear = {isPlayer _x} count (([_cursorTarget] call fnc_getPos) nearEntities ["CAManBase",10]) > 1;
+if (_playerNear) exitWith { localize "str_pickup_limit_5" call dayz_rollingMessages; };
+
 // lets check player has requiredTools for upgrade
 _ok = true;
 _missing = "";
@@ -71,9 +74,6 @@ if (!_ok) exitWith {
     { player addMagazine _x; } foreach _upgradeParts;
 	format [localize "str_upgradeMissingPart", _missing] call dayz_rollingMessages;
 };
-
-_PlayerNear = {isPlayer _x} count (([_cursorTarget] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
-if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 if (dayz_actionInProgress) exitWith {
 	{ player addMagazine _x; } forEach _upgradeParts;

@@ -53,9 +53,9 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	_magazines = getMagazineCargo _obj;
 	_backpacks = getBackpackCargo _obj;
 
-	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,dayz_authKey];
+	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_pos,dayz_authKey,false];
 	publicVariableServer "PVDZ_obj_Destroy";
-	//deleteVehicle _obj;
+	deleteVehicle _obj;
 
 	//Add weapons
 	_objWpnTypes = _weapons select 0;

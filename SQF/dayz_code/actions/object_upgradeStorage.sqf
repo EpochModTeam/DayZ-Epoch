@@ -128,9 +128,9 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	_backpacks = getBackpackCargo _cursorTarget;
 	
 	//remove old tent
-	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_cursorTarget,dayz_authKey];
+	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_pos,dayz_authKey,false];
 	publicVariableServer "PVDZ_obj_Destroy";
-	//deleteVehicle _cursorTarget;
+	deleteVehicle _cursorTarget;
 	
 	// remove parts from players inventory before creation of new tent.
 	{
