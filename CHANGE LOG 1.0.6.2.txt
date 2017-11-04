@@ -61,12 +61,13 @@
 [FIXED] Melee and tranquilizer bolt knockouts were usually instant or far shorter than the intended time of 20s-80s.
 [FIXED] Multiple dupe fixes - SERVER ADMINS, DO NOT IMPLEMENT SCRIPTS WHICH KICK PLAYERS TO THE LOBBY (ENDMISSION, FAILMISSION, etc.), YOU MUST KICK THEM ENTIRELY OUT OF THE SERVER! (EX: by BE restriction, but with the stock scripts.txt forceEnd, failmission, and endmission should kick the player anyway)
 [FIXED] Certain classes (i.e. Satchel Charge) which are both magazines and weapons were not retained through skin change #1981 @AirwavesMan
+[FIXED] Blocked another A2OA script execution bug from improperly cleared eventhandlers. See dayz_code\system\antihack.sqf. Thanks to Dihan for reporting
 
-[NOTE] Fixes below are included in the mission file and server pbo as part of server package 1.0.6.1A (March 10th 2017)
+[NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
 [FIXED] Glitch where group icons scaled very large momentarily while moving off screen.
 [NEW] Added temporary check for mission file overwrite exploit. This can be removed after Bohemia patches it.
 
 [INFO] HiveExt.dll has been updated to return character_data duration in the 101 call for the dayz_survived stat. Source is available at github.com/vbawol/DayZhiveEpoch/pull/13 @icomrade
-[INFO] HiveExt.dll REQUIRES NEW PROCEDURE BE ADDED TO YOUR DATABASE, SEE 1.0.6.2_UPDATES.SQL! [REQUIRED BY IMPROVED VEHICLE/OBJECT SPAWNING LOGIC]
+[INFO] HiveExt.dll REQUIRES A NEW PROCEDURE BE ADDED TO YOUR DATABASE, SEE 1.0.6.2_UPDATES.SQL! [REQUIRED BY IMPROVED VEHICLE/OBJECT SPAWNING LOGIC]
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.

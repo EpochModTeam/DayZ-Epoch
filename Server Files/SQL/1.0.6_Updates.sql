@@ -146,6 +146,8 @@ INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_SCOPED",1]', 10, '[6,"Item
 INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_Sup9",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_Sup545",1]', 10, '[6,"ItemGoldBar",1]', '[3,"ItemGoldBar",1]', 0, 693, 'trade_items');
 INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_Sup556",1]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 693, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_MFL",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');
+INSERT INTO `Traders_DATA` VALUES(null, '["Attachment_MFL_Pist",1]', 10, '[4,"ItemGoldBar",1]', '[2,"ItemGoldBar",1]', 0, 693, 'trade_items');
 
 -- ----------------------------
 -- ItemMatchbox_DZE was removed because it was identical to ItemMatchbox, use dayz_matchboxCount config variable for match stick count
@@ -552,6 +554,20 @@ UPDATE character_data SET Backpack = REPLACE(Backpack, '"Winchester1866"', '"Win
 UPDATE character_data SET Inventory = REPLACE(Inventory, '"Winchester1866"', '"Winchester1866_DZ"') WHERE INSTR(Inventory, '"Winchester1866"') > 0;
 UPDATE object_data SET Inventory = REPLACE(Inventory, '"Winchester1866"', '"Winchester1866_DZ"') WHERE INSTR(Inventory, '"Winchester1866"') > 0;
 
+-- ----------------------------
+-- Fix M24 and DMR ammo prices so a profit can not be made by combining M24 rounds
+-- ----------------------------
+DELETE FROM `Traders_DATA` WHERE item = '["20Rnd_762x51_DMR"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["20Rnd_762x51_DMR",1]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 482, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["20Rnd_762x51_DMR",1]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 614, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["20Rnd_762x51_DMR",1]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 624, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["20Rnd_762x51_DMR",1]', 10, '[8,"ItemGoldBar",1]', '[4,"ItemGoldBar",1]', 0, 647, 'trade_items');
+DELETE FROM `Traders_DATA` WHERE item = '["5Rnd_762x51_M24"]';
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 482, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 527, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 614, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 624, 'trade_items');
+INSERT IGNORE INTO `Traders_DATA` VALUES (NULL, '["5Rnd_762x51_M24",1]', 10, '[2,"ItemGoldBar",1]', '[1,"ItemGoldBar",1]', 0, 647, 'trade_items');
 
 
 -- ----------------------------
