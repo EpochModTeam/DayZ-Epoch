@@ -1,11 +1,14 @@
-[NEW] Added a few loot positions for Namalsk and Takistan. @skigoggles
-[NEW] Added DZE_limitPlots so admins can limit plot poles to 1 per UID, disabled by default. @oiad
+[NEW] Newest version of DayZero enterable buildings provided by Tansien and Zac https://zombies.nu/. This fixes broken barracks shadows and adds several new interiors. #1601
+[NEW] Land_houseV_2T2 is now enterable. Interior modeled by @Streatman
+[NEW] Added loot positions for new enterable buildings
+[NEW] Added DZE_limitPlots so admins can limit plot poles to one per UID, disabled by default. @oiad
 [NEW] Pumpkin, sunflower, and hemp plants spawned with createVehicle can be harvested with a knife now. #1928 @F507DMT
 [NEW] The journal and dayz_survived variable now contain actual play time [array] instead of days since the character was created [number].
-[NEW] Added secondary iron sight to CZ550 and bolt animations to CZ550 and LeeEnfield by @Streatman
+[NEW] Added secondary iron sight to CZ550 modeled by @Streatman
+[NEW] Added bolt animations to CZ550 and LeeEnfield modeled by @Streatman
 [NEW] Added some basic compatibility for falconsan's Ruegen map (beta version released February 2016)
 [NEW] Admins can now define what parts are returned from modular building parts, see configVariables.sqf/DZE_modularConfig @oiad @BigEgg17
-[NEW] Basic server-side authentication for DeleteObj, PublishObj, PublishVeh and SwapObj, admins and script makers should review the changes if using PVDZ_obj_Destroy/Publish, PVDZE_obj_Swap, PVDZE_veh_Publish/Upgrade or server_deleteObj and verify custom code is compliant with these changes (github.com/EpochModTeam/DayZ-Epoch/commit/42e0047)
+[NEW] Added basic server-side authentication to hive object creation/deletion for improved security. Affects Server_(DeleteObj|PublishObj|PublishVeh|SwapObj), admins and script makers should review the changes if using PVDZ_obj_(Destroy|Publish), PVDZE_obj_Swap, PVDZE_veh_(Publish|Upgrade) or server_deleteObj and verify custom code is compliant with these changes (github.com/EpochModTeam/DayZ-Epoch/commit/42e0047)
 [NEW] BAF_L85A2_RIS_TWS_DZ to emulate the old behavior of the now NV only BAF_L85A2_RIS_CWS. Server owners must add the weapon on their own #1983
 [NEW] Admins can now define a maximum build height, see configVariables.sqf/DZE_BuildHeightLimit. @BigEgg17
 
@@ -15,13 +18,15 @@
 [UPDATED] Owners can no longer be removed by added friends in plot and door management. @oiad
 [UPDATED] A new hidden version of the gear menu is now used for force saves so players do not see the dialog flash on screen.
 [UPDATED] Anyone can now lock a modular door without knowing the combination or having any special access. #1944 @ndavalos
-[UPDATED] Newest version of DayZero enterable buildings, which fixes #1601 - provided by Tansien and Zac https://zombies.nu/
 [UPDATED] Locking and unlocking safes no longer plays the medic animation. #1942 @SmokeyBR
 [UPDATED] Locking and unlocking safes now uses call instead of spawn on the server. This fixes the user input lock and safes appearing to disappear momentarily when server FPS is low.
 [UPDATED] Added cleanup of destroyed vehicles and CraterLong after 5 minutes in sched_corpses.sqf.
 [UPDATED] Reverted group menu color scheme to A2OA default for consistency with game dialogs
 [UPDATED] Positions defined in DZE_SafeZonePosArray no longer spawn loot or zombies in their respective radius, added new compile to check positions against DZE_SafeZonePosArray "_PosInSafeZone = _positionToCheck call DZE_SafeZonePosCheck;"
 [UPDATED] DZE_ZombieSpeed = [min, max]; has replaced the, now removed, DZE_slowZombies variable. set DZE_ZombieSpeed = [2,2]; for DZE_slowZombies = true; behavior. see configvariables.sqf for more info
+[UPDATED] Reverted increased waves in stormy weather to Chernarus default settings.
+[UPDATED] Removed server control panel, because it is abused by players and not currently used by admins
+[UPDATED] Moved large format strings in dayz_server to str formatText to avoid A2 2048 format character limit corrupting hive data in some cases.
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.
@@ -62,6 +67,8 @@
 [FIXED] Multiple dupe fixes - SERVER ADMINS, DO NOT IMPLEMENT SCRIPTS WHICH KICK PLAYERS TO THE LOBBY (ENDMISSION, FAILMISSION, etc.), YOU MUST KICK THEM ENTIRELY OUT OF THE SERVER! (EX: by BE restriction, but with the stock scripts.txt forceEnd, failmission, and endmission should kick the player anyway)
 [FIXED] Certain classes (i.e. Satchel Charge) which are both magazines and weapons were not retained through skin change #1981 @AirwavesMan
 [FIXED] Blocked another A2OA script execution bug from improperly cleared eventhandlers. See dayz_code\system\antihack.sqf. Thanks to Dihan for reporting
+[FIXED] Missing silencer shadows on some _DZ weapons. Thanks @Streatman
+[FIXED] Death message server RPT logs were partially translated, resulting in sloppy mixed language sentences on non-English machines.
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 

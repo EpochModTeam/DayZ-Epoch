@@ -25,9 +25,9 @@ if (count _this > 7) then {
 if (typeName _currency  == "STRING") then {_price = format ["%1 %2",_price,_currency];};
 
 if (_buyorsell == 0) then { // Buy
-	_message = format["%1: %2 (%3) purchased %4x %5 into %6 at %7 for %8",localize "STR_EPOCH_PLAYER_289",_name,_playerUID,_quantity,_classname,_container,_traderCity,_price];
+	_message = format["Trader Menu: %1 (%2) purchased %3x %4 into %5 at %6 for %7",_name,_playerUID,_quantity,_classname,_container,_traderCity,_price];
 } else { // Sell
-	_message = format["%1: %2 (%3) sold %4x %5 from %6 at %7 for %8",localize "STR_EPOCH_PLAYER_289",_name,_playerUID,_quantity,_classname,_container,_traderCity,_price];
+	_message = format["Trader Menu: %1 (%2) sold %3x %4 from %5 at %6 for %7",_name,_playerUID,_quantity,_classname,_container,_traderCity,_price];
 };
 
 diag_log _message;

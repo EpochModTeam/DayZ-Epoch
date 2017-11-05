@@ -1,6 +1,6 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_characterID","_minutes","_newObject","_playerID","_playerName","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide","_bodyName","_type"];
+private ["_characterID","_minutes","_newObject","_playerID","_playerName","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide","_bodyName","_type","_english"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 
 _characterID = _this select 0;
@@ -74,13 +74,34 @@ if (_playerName != "unknown" or _sourceName != "unknown") then {
 	_bodyName = _message select 1;
 	
 	if (_type == "killed" && _sourceName == "AI") then {
-		_message set [2, (localize "STR_PLAYER_AI")];
+		_message set [2,"AI"];
 	};
 	
+	_english = [ //Do not use localize on server machine
+		"shot","a gunshot wound.",
+		"shothead","a gunshot to the head.",
+		"shotheavy","a large calibre gunshot.",
+		"bled","blood loss.",
+		"dehyd","dehydration.",
+		"sick","infection.",
+		"starve","starvation.",
+		"combatlog","combat logging.",
+		"explosion","an explosion.",
+		"unknown","an unknown cause.",
+		"zombie","the infected.",
+		"fall","falling.",
+		"crash","a vehicle crash.",
+		"runover","being run over.",
+		"eject","falling out of a moving vehicle.",
+		"melee","blunt force trauma.",
+		"rad","radiation.",
+		"crushed","being crushed."
+	];
+	
 	_message = switch _type do {
-		case "died": {format [localize "str_player_death_died", _bodyName, localize format["str_death_%1",_message select 2]]};
-		case "killed": {format [localize "str_player_death_killed", _bodyName, _message select 2, _message select 3, _message select 4]};
-		case "suicide": {format [localize "str_player_death_suicide", _bodyName]};
+		case "died": {format ["%1 died from %2", _bodyName, (_english select ((_english find (_message select 2))+1))]};
+		case "killed": {format ["%1 was killed by %2 with a %3 from %4m", _bodyName, _message select 2, _message select 3, _message select 4]};
+		case "suicide": {format ["%1 committed suicide", _bodyName]};
 	};
 	diag_log format["DeathMessage: %1",_message];
 };

@@ -126,9 +126,9 @@ _fnc_lockCode = {
 	_color = "";
 	_code = _code - 10000;
 
-	if (_code <= 99) then {_color = localize "STR_TEAM_RED";};
-	if (_code >= 100 && _code <= 199) then {_color = localize "STR_TEAM_GREEN"; _code = _code - 100;};
-	if (_code >= 200) then {_color = localize "STR_TEAM_BLUE"; _code = _code - 200;};
+	if (_code <= 99) then {_color = "Red";};
+	if (_code >= 100 && _code <= 199) then {_color = "Green"; _code = _code - 100;};
+	if (_code >= 200) then {_color = "Blue"; _code = _code - 200;};
 	if (_code <= 9) then {_code = format["0%1", _code];};
 	_code = format ["%1%2",_color,_code];
 
