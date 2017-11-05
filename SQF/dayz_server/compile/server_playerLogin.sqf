@@ -124,7 +124,7 @@ if (!_isNew) then {
 		if (!isNil "DefaultBackpack") then {_bcpk = DefaultBackpack;};
 	
 		//Wait for HIVE to be free
-		_key = format["CHILD:203:%1:%2:%3:",_charID,[_wpns,_mags],[_bcpk,[],[]]];
+		_key = str formatText["CHILD:203:%1:%2:%3:",_charID,[_wpns,_mags],[_bcpk,[],[]]];
 		_key call server_hiveWrite;
 	};
 };

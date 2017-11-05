@@ -220,11 +220,9 @@ if (count _playerPos > 0) then {
 
 //Wait for HIVE to be free and send request
 _key = if (Z_SingleCurrency) then {
-	"CHILD:201:" + _characterID + ":" + str(_playerPos) + ":" + str(_playerGear) + ":" + str(_playerBackp) + ":" + str(_medical) + ":false:false:" + str(_kills) + ":" + str(_headShots) + ":" + str(_distanceFoot) + ":" + str(_timeSince) + ":" + str(_currentState) + ":" + str(_killsH) + ":" + str(_killsB) + ":" + _currentModel + ":" + str(_humanity) + ":" + str(_coins) + ":";
-	//format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins]
+	str formatText["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins]
 } else {
-	"CHILD:201:" + _characterID + ":" + str(_playerPos) + ":" + str(_playerGear) + ":" + str(_playerBackp) + ":" + str(_medical) + ":false:false:" + str(_kills) + ":" + str(_headShots) + ":" + str(_distanceFoot) + ":" + str(_timeSince) + ":" + str(_currentState) + ":" + str(_killsH) + ":" + str(_killsB) + ":" + _currentModel + ":" + str(_humanity) + ":";
-	//format["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity]
+	str formatText["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity]
 };
 
 //diag_log str formatText["INFO - %2(UID:%3) PlayerSync, %1",_key,_name,_playerUID];
@@ -232,8 +230,7 @@ _key = if (Z_SingleCurrency) then {
 _key call server_hiveWrite;
 
 if (Z_SingleCurrency) then { //update global coins
-	//_key = format["CHILD:205:%1:%2:%3:%4:",_playerUID,dayZ_instance,_globalCoins,_bankCoins];
-	_key = 	"CHILD:205:" + str(_playerUID) + ":" + str(dayZ_instance) + ":" + str(_globalCoins) + ":" + str(_bankCoins) + ":";
+	_key = str formatText["CHILD:205:%1:%2:%3:%4:",_playerUID,dayZ_instance,_globalCoins,_bankCoins];
 	_key call server_hiveWrite;
 };
 

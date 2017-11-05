@@ -24,8 +24,8 @@ if ([_object, "Server"] call check_publishobject) then {
 	// we can't use getVariable because only the object creation is known from the server (position,direction,variables are not sync'ed yet)
 	//_characterID = _object getVariable [ "characterID", 0 ];
 	//_ownerArray = _object getVariable [ "ownerArray", [] ];
-	//_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:", dayZ_instance, _type, 0, _characterID, _worldspace, _inventory, [], 0,_objectUID ];
-	_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _type, 0 , _characterID, _worldspace call AN_fnc_formatWorldspace, _inventory, [], 0,_objectUID]; // Precise Base Building 1.0.5
+	//_key = str formatText["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:", dayZ_instance, _type, 0, _characterID, _worldspace, _inventory, [], 0,_objectUID];
+	_key = str formatText["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _type, 0, _characterID, _worldspace call AN_fnc_formatWorldspace, _inventory, [], 0,_objectUID]; // Precise Base Building 1.0.5
 
 	_key call server_hiveWrite;
 
