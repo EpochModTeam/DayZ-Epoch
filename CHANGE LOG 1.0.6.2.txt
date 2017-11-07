@@ -27,6 +27,7 @@
 [UPDATED] Reverted increased waves in stormy weather to Chernarus default settings.
 [UPDATED] Removed server control panel, because it is abused by players and not currently used by admins
 [UPDATED] Moved large format strings in dayz_server to str formatText to avoid A2 2048 format character limit corrupting hive data in some cases.
+[UPDATED] Vehicles can now only be sold from the "Gear" sell menu. This prevents accidental selling when using the "sell all" feature on backpacks and vehicle inventories.
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.
@@ -68,7 +69,7 @@
 [FIXED] Certain classes (i.e. Satchel Charge) which are both magazines and weapons were not retained through skin change #1981 @AirwavesMan
 [FIXED] Blocked another A2OA script execution bug from improperly cleared eventhandlers. See dayz_code\system\antihack.sqf. Thanks to Dihan for reporting
 [FIXED] Missing silencer shadows on some _DZ weapons. Thanks @Streatman
-[FIXED] Death message server RPT logs were partially translated, resulting in sloppy mixed language sentences on non-English machines.
+[FIXED] Launchers and launcher ammo are now detected correctly in the sell menu when a player has a launcher and ammo with the same classname.
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 

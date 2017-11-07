@@ -8,7 +8,7 @@
 *
 *	Fills up the sell or buy list if the item has a valid config.
 **/
-private ["_weaps","_mags","_extraText","_all","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_baseVehicle","_currencyQty","_swap","_swap2","_myVehType"];
+private ["_weaps","_mags","_extraText","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_baseVehicle","_currencyQty","_swap","_swap2","_myVehType"];
 #include "defines.hpp"
 
 _weaps = _this select 0;
@@ -37,9 +37,9 @@ _HasKeyCheck = {
 _totalPrice = 0;
 
 _processGear = {
-	private ["_array","_type","_cat","_exists","_pic","_text","_sell","_buy","_buyCurrency","_sellCurrency","_worth"];
+	private ["_configType","_passedType","_cat","_pic","_text","_sell","_buy","_buyCurrency","_sellCurrency","_worth"];
 
-	_type = _this select 1;
+	_passedType = _this select 1;
 	{
 		_y = _x;
 		_swap = false;
@@ -52,34 +52,35 @@ _processGear = {
 			_swap2 = true;
 		};
 		{
-			_cat =  format["Category_%1",(_arrayOfTraderCat select _forEachIndex select 1)];
+			_cat = format["Category_%1",(_arrayOfTraderCat select _forEachIndex select 1)];
 			if (isNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")) then {
 				_cat = format["Category_%1",getNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")];
 			};
-			if (_swap2 && {!isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y)} && {isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _baseVehicle)}) then {
+			if (_swap2 && {!isClass(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y)} && {isClass(missionConfigFile >> "CfgTraderCategory" >> _cat >> _baseVehicle)}) then {
 				//Use base vehicle prices for upgraded _DZE[1-4] variants only if they are not explicitly added in trader config
 				_y = _baseVehicle;
 			};
-			_exists = isClass(missionConfigFile >> "CfgTraderCategory"  >> _cat >> _y);
-			if (_exists) exitWith {
+			if (isClass(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y)) exitWith {
 				_pic = "";
 				_text = "";
-
-				_sell = getArray(missionConfigFile >> "CfgTraderCategory"  >> _cat  >> _y >> "sell");
-				_buy = getArray(missionConfigFile >> "CfgTraderCategory"  >> _cat  >> _y >> "buy");
+				_configType = getText(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "type");
+				if (_passedType == "find") then {_passedType = _configType;};
+				
+				_sell = getArray(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "sell");
+				_buy = getArray(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "buy");
 				if (_swap) then {_y = "ItemBloodbag"};
 				switch (true) do {
-					case (_type == "trade_items") :
+					case (_passedType == "trade_items") :
 					{
 						_pic = getText (configFile >> 'CfgMagazines' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgMagazines' >> _y >> 'displayName');
 					};
-					case (_type == "trade_weapons") :
+					case (_passedType == "trade_weapons") :
 					{
 						_pic = getText (configFile >> 'CfgWeapons' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgWeapons' >> _y >> 'displayName');
 					};
-					case (_type in DZE_tradeObject) :
+					case (_passedType in DZE_tradeObject) :
 					{
 						_pic = getText (configFile >> 'CfgVehicles' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgVehicles' >> _y >> 'displayName');
@@ -88,12 +89,13 @@ _processGear = {
 
 				if (isNil '_text') then { _text = _y; };
 				_HasKey = true;
-				if (_vehTrade && {_y == _myVehType}) then {
-					if (!(_type in DZE_tradeVehicleKeyless) && DZE_SaleRequiresKey) then {
+				if (_vehTrade && {_y in [_baseVehicle,_myVehType]}) then {
+					if (!(_passedType in DZE_tradeVehicleKeyless) && DZE_SaleRequiresKey) then {
 						_HasKey = call _HasKeyCheck;
 					};
+					if (Z_SellingFrom != 2) then {_HasKey = false;}; //Only allow selling vehicle from gear
 				};
-				if (!_HasKey || {_y == _myVehType && Z_SellingFrom != 2}) exitWith {};
+				if (_passedType != _configType or !_HasKey) exitWith {};
 
 				_worth = 0;
 				_currencyQty = _buy select 0;
@@ -109,7 +111,7 @@ _processGear = {
 				};
 				if (_currencyQty < 0) then {_buyCurrency = localize "STR_EPOCH_UNAVAILABLE";};
 				if ((_sell select 0) >= 0) then {
-					Z_SellableArray set [count(Z_SellableArray) , [_y, _type, _sell select 0, _text, _pic, _forEachIndex, _currencyQty, _sellCurrency, _buyCurrency, 0 ,_cat, _worth]];
+					Z_SellableArray set [count(Z_SellableArray) , [_y, _passedType, _sell select 0, _text, _pic, _forEachIndex, _currencyQty, _sellCurrency, _buyCurrency, 0 ,_cat, _worth]];
 				};
 				_totalPrice = _totalPrice + (_sell select 0);
 			};
@@ -120,7 +122,7 @@ _processGear = {
 if (false call Z_checkCloseVehicle) then {
 	_baseVehicle = getText (configFile >> "CfgVehicles" >> _myVehType >> "original");
 	_vehTrade = true;
-	[[_myVehType],"trade_any_vehicle"] call _processGear;
+	[[_myVehType],"find"] call _processGear;
 };
 
 [_weaps,"trade_weapons"] call _processGear;
