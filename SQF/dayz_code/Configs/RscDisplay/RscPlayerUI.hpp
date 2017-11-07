@@ -575,7 +575,7 @@ class RscTitles
 			class RscPicture_1303: RscPictureGUI
 			{
 				idc = 1303;
-				text = "\z\addons\dayz_code\gui\status\status_bleeding_ca.paa";
+				text = "\z\addons\dayz_code\gui\status_epoch\status_bleeding_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.79 * safezoneH + safezoneY;
 				w = 0.075;

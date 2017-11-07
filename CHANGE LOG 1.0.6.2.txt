@@ -70,6 +70,7 @@
 [FIXED] Blocked another A2OA script execution bug from improperly cleared eventhandlers. See dayz_code\system\antihack.sqf. Thanks to Dihan for reporting
 [FIXED] Missing silencer shadows on some _DZ weapons. Thanks @Streatman
 [FIXED] Launchers and launcher ammo are now detected correctly in the sell menu when a player has a launcher and ammo with the same classname.
+[FIXED] Wrong bleeding icon on Epoch legacy status UI
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
