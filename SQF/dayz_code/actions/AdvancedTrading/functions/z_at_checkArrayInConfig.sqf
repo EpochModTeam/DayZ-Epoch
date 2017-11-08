@@ -6,7 +6,7 @@
 *	@param String 			_this select 2 (_extraText) -> Indicator what container you are trading from
 *   @param Array of Strings _this select 3 (_bags) -> all backpacks in the container
 *
-*	Fills up the sell or buy list if the item has a valid config.
+*	Fills up the sellable list if the item has a valid config.
 **/
 private ["_weaps","_mags","_extraText","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_baseVehicle","_currencyQty","_swap","_swap2","_myVehType"];
 #include "defines.hpp"
@@ -24,7 +24,7 @@ _HasKeyCheck = {
 	private ["_objectCharacterID","_keyFound","_tempKeys"];
 
 	_keyFound = false;
-	_objectCharacterId	= DZE_myVehicle getVariable ["CharacterID","0"];
+	_objectCharacterId = DZE_myVehicle getVariable ["CharacterID","0"];
 	if (_objectCharacterId == "0") then {
 		_keyFound = true;
 	} else {

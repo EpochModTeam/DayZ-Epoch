@@ -13,7 +13,7 @@ private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_t
 "_isModular","_isModularDoor","_isHouse","_isGateOperational","_isGateLockable","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
-"_allowed","_hasAccess","_uid","_myCharID","_isLocked","_isDoorUnlocked"];
+"_allowed","_hasAccess","_uid","_myCharID","_isLocked"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -839,15 +839,14 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 	
 	// downgrade system
-	if ((DZE_Lock_Door == _characterID)  && {!keypadCancel} && {_isDestructable || _cursorTarget isKindOf "Land_DZE_WoodDoorLocked_Base" || _cursorTarget isKindOf "CinderWallDoorLocked_DZ_Base"}) then {
+	if (DZE_Lock_Door == _characterID && {!keypadCancel} && {_cursorTarget isKindOf "Land_DZE_WoodDoorLocked_Base" || _cursorTarget isKindOf "CinderWallDoorLocked_DZ_Base"}) then {
 		if ((s_player_lastTarget select 1) != _cursorTarget) then {
 			if (s_player_downgrade_build > 0) then {	
 				player removeAction s_player_downgrade_build;
 				s_player_downgrade_build = -1;
 			};
 		};
-		_isDoorUnlocked = ((_cursorTarget animationPhase "Open_door" == 0) && {(_cursorTarget animationPhase "Open_hinge" == 1) || (_cursorTarget animationPhase "Open_latch" == 1)});
-		if (s_player_downgrade_build < 0 && _isDoorUnlocked) then {
+		if (s_player_downgrade_build < 0) then {
 			_hasAccess = [player, _cursorTarget] call FNC_check_access;
 			if ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3)) then {
 				s_player_lastTarget set [1,_cursorTarget];
