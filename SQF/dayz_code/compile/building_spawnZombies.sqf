@@ -23,7 +23,7 @@ if (r_player_divideinvehicle > 0) then {
 _maxControlledZombies = round(dayz_maxLocalZombies);
 _enabled = false;
 
-if (_canLoot ) then {
+if (_canLoot && !([_originalPos] call DZE_SafeZonePosCheck)) then {
 	//Get zombie class
 	_unitTypes = 	getArray (_config >> "zombieClass");
 	_min = 			getNumber (_config >> "minRoaming");
@@ -33,13 +33,12 @@ if (_canLoot ) then {
 	//Walking Zombies
 	_num = (round(random _max)) max _min; // + round(_max / 3);
 	//diag_log ("Class: " + _type + " / Zombies: " + str(_unitTypes) + " / Walking: " + str(_num));
-	if (!([_originalPos] call DZE_SafeZonePosCheck)) then {
-		for "_i" from 0 to _num do
-		{
-			//_iPos = _obj modelToWorld _originalPos;
-			if ((_maxlocalspawned < _maxControlledZombies) and (dayz_CurrentNearByZombies < dayz_maxNearByZombies) and (dayz_currentGlobalZombies < dayz_maxGlobalZeds)) then {
-				[_originalPos,true,_unitTypes,_wreck] call zombie_generate;
-			};
+	
+	for "_i" from 0 to _num do
+	{
+		//_iPos = _obj modelToWorld _originalPos;
+		if ((_maxlocalspawned < _maxControlledZombies) and (dayz_CurrentNearByZombies < dayz_maxNearByZombies) and (dayz_currentGlobalZombies < dayz_maxGlobalZeds)) then {
+			[_originalPos,true,_unitTypes,_wreck] call zombie_generate;
 		};
 	};
 
@@ -52,7 +51,7 @@ if (_canLoot ) then {
 			{
 				_Pos = [_x select 0, _x select 1, 0];
 				_rnd = random 1;
-				if (_rnd < _zombieChance && {!([_Pos] call DZE_SafeZonePosCheck)}) then {
+				if (_rnd < _zombieChance) then {
 					_iPos = _obj modelToWorld _Pos;
 					_nearByZed = {alive _x} count (_iPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]) > 0;
 					_nearByPlayer = ({isPlayer _x} count (_iPos nearEntities ["CAManBase",30])) > 0;

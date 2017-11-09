@@ -5,6 +5,7 @@ _amount = _this select 1;
 _counter = 0;
 _agent = objNull;
 
+if ([_player] call DZE_SafeZonePosCheck) exitWith {};
 
 while {_counter < _amount} do {
 
@@ -12,7 +13,7 @@ while {_counter < _amount} do {
 	_type = "swarm_newBase"; //"_unitTypes call BIS_fnc_selectRandom;
 	//_type = "Pastor";
 	_position = [position _player,50,100,0] call fn_selectRandomLocation;
-	if ([_position] call DZE_SafeZonePosCheck) exitWith {};
+
 	_agent = createAgent [_type, _position, [], 0, "NONE"];
 
 	_agent setVariable["agentObjectSwarm",_agent,true];

@@ -61,6 +61,7 @@ DZE_GodModeBase = false; // Make player built base objects indestructible
 DZE_requireplot = 1; // Require a plot pole to build  0 = Off, 1 = On
 DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plotpoles]. Difference between them is the minimum buffer between bases.
 DZE_BuildingLimit = 150; // Max number of built objects allowed in DZE_PlotPole radius
+DZE_SafeZonePosArray = [[[4419,1629,0],100],[[8688,3129,0],100],[[9051,4073,0],100],[[7207,735,0],100],[[1891,3603,0],100],[[4763,7481,0],100],[[5228,8230,0],100],[[3352,2302,0],100],[[4338,6317,0],100],[[2243,9479,0],100],[[3807,7661,0],100]]; // Format is [[[3D POS],RADIUS],[[3D POS],RADIUS]]; Stops loot and zed spawn, salvage and players being killed if their vehicle is destroyed in these zones.
 DZE_SelfTransfuse = true; // Allow players to bloodbag themselves
 DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount given, infection chance %, cooldown in seconds]
 MaxDynamicDebris = 500; // Max number of random road blocks to spawn around the map

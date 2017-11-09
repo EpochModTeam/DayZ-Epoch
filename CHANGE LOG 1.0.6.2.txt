@@ -12,6 +12,7 @@
 [NEW] BAF_L85A2_RIS_TWS_DZ to emulate the old behavior of the now NV only BAF_L85A2_RIS_CWS. Server owners must add the weapon on their own #1983
 [NEW] Admins can now define a maximum build height, see configVariables.sqf/DZE_BuildHeightLimit. @BigEgg17
 
+[UPDATED] Loot and zed spawn is now disabled in trader cities by default. This is configurable in mission\init.sqf via DZE_SafeZonePosArray. Added function to check positions against DZE_SafeZonePosArray "_PosInSafeZone = _positionToCheck call DZE_SafeZonePosCheck;"
 [UPDATED] Zombie pathing. Zeds should now run more direct to players.
 [UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
 [UPDATED] The player now auto rejoins their group after dropping a radio and picking it back up when dayz_requireRadio=true. @SmokeyBR
@@ -22,7 +23,6 @@
 [UPDATED] Locking and unlocking safes now uses call instead of spawn on the server. This fixes the user input lock and safes appearing to disappear momentarily when server FPS is low.
 [UPDATED] Added cleanup of destroyed vehicles and CraterLong after 5 minutes in sched_corpses.sqf.
 [UPDATED] Reverted group menu color scheme to A2OA default for consistency with game dialogs
-[UPDATED] Positions defined in DZE_SafeZonePosArray no longer spawn loot or zombies in their respective radius, added new compile to check positions against DZE_SafeZonePosArray "_PosInSafeZone = _positionToCheck call DZE_SafeZonePosCheck;"
 [UPDATED] DZE_ZombieSpeed = [min, max]; has replaced the, now removed, DZE_slowZombies variable. set DZE_ZombieSpeed = [2,2]; for DZE_slowZombies = true; behavior. see configvariables.sqf for more info
 [UPDATED] Reverted increased waves in stormy weather to Chernarus default settings.
 [UPDATED] Removed server control panel, because it is abused by players and not currently used by admins
@@ -71,6 +71,7 @@
 [FIXED] Missing silencer shadows on some _DZ weapons. Thanks @Streatman
 [FIXED] Launchers and launcher ammo are now detected correctly in the sell menu when a player has a launcher and ammo with the same classname.
 [FIXED] Wrong bleeding icon on Epoch legacy status UI
+[FIXED] A locked door can now be auto unlocked right after placement by the player who built it
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
