@@ -22,7 +22,7 @@ class Category_488 {
 	class MP5_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {2,"ItemGoldBar"};
+		sell[] = {22,"ItemSilverBar10oz"};
 	};
 	class Bizon_DZ {
 		type = "trade_weapons";

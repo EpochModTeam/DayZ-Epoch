@@ -559,12 +559,12 @@ class Category_485 {
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
 		sell[] = {9,"ItemGoldBar"};
 	};
-	class Sa58V_CCO_EP1 { 			// This rifle should be removed because it is redundant
+	class Sa58V_CCO_EP1 { //Desert camo no attachment support
 		type = "trade_weapons";
 		buy[] = {4,"ItemGoldBar"};
 		sell[] = {2,"ItemGoldBar"};
 	};
-	class Sa58V_RCO_EP1 {			// This rifle should be removed because it is redundant
+	class Sa58V_RCO_EP1 { //Desert camo no attachment support
 		type = "trade_weapons";
 		buy[] = {8,"ItemGoldBar"};
 		sell[] = {4,"ItemGoldBar"};

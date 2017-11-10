@@ -102,57 +102,57 @@ class Category_574 {
 	class Mosin_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {1,"ItemGoldBar"};
+		sell[] = {12,"ItemSilverBar10oz"};
 	};
 	class Mosin_MFL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {2,"ItemGoldBar"};
+		sell[] = {22,"ItemSilverBar10oz"};
 	};
 	class Mosin_Belt_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {2,"ItemGoldBar"};
+		sell[] = {22,"ItemSilverBar10oz"};
 	};
 	class Mosin_Belt_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {3,"ItemGoldBar"};
+		sell[] = {32,"ItemSilverBar10oz"};
 	};
 	class Mosin_Belt_MFL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {4,"ItemGoldBar"};
+		sell[] = {42,"ItemSilverBar10oz"};
 	};
 	class Mosin_PU_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {4,"ItemGoldBar"};
+		sell[] = {32,"ItemSilverBar10oz"};
 	};
 	class Mosin_PU_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {5,"ItemGoldBar"};
+		sell[] = {42,"ItemSilverBar10oz"};
 	};
 	class Mosin_PU_MFL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {6,"ItemGoldBar"};
+		sell[] = {52,"ItemSilverBar10oz"};
 	};
 	class Mosin_PU_Belt_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {6,"ItemGoldBar"};
+		sell[] = {52,"ItemSilverBar10oz"};
 	};
 	class Mosin_PU_Belt_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {7,"ItemGoldBar"};
+		sell[] = {62,"ItemSilverBar10oz"};
 	};
 	class Mosin_PU_Belt_MFL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {8,"ItemGoldBar"};
+		sell[] = {72,"ItemSilverBar10oz"};
 	};
 };
 

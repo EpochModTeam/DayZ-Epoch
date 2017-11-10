@@ -28,6 +28,7 @@
 [UPDATED] Removed server control panel, because it is abused by players and not currently used by admins
 [UPDATED] Moved large format strings in dayz_server to str formatText to avoid A2 2048 format character limit corrupting hive data in some cases.
 [UPDATED] Vehicles can now only be sold from the "Gear" sell menu. This prevents accidental selling when using the "sell all" feature on backpacks and vehicle inventories.
+[UPDATED] Added all upgraded weapons to the traders as sell only for the sell price of the base weapon plus the sell price of attachments. This allows them to be sold without removing attachments first. #1982 @worldwidesorrow
 
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.

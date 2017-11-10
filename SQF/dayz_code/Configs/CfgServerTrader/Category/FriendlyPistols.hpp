@@ -7,7 +7,7 @@ class Category_489 {
 	class M9_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {2,"ItemGoldBar"};
+		sell[] = {25,"ItemSilverBar10oz"};
 	};	
 	class G17_DZ {
 		type = "trade_weapons";
@@ -17,27 +17,27 @@ class Category_489 {
 	class G17_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {1,"ItemGoldBar"};
+		sell[] = {12,"ItemSilverBar10oz"};
 	};
 	class G17_MFL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {2,"ItemGoldBar"};
+		sell[] = {22,"ItemSilverBar10oz"};
 	};
 	class G17_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {2,"ItemGoldBar"};
+		sell[] = {22,"ItemSilverBar10oz"};
 	};
 	class G17_SD_FL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {3,"ItemGoldBar"};
+		sell[] = {32,"ItemSilverBar10oz"};
 	};
 	class G17_SD_MFL_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {4,"ItemGoldBar"};
+		sell[] = {42,"ItemSilverBar10oz"};
 	};
 	class Makarov_DZ {
 		type = "trade_weapons";
@@ -47,7 +47,7 @@ class Category_489 {
 	class Makarov_SD_DZ {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {1,"ItemGoldBar"};
+		sell[] = {21,"ItemSilverBar10oz"};
 	};
 	class Revolver_DZ {
 		type = "trade_weapons";

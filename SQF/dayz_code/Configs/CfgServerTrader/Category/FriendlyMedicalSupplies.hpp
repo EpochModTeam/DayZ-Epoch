@@ -118,6 +118,6 @@ class Category_541 {
 	class ItemKiloHemp {
 		type = "trade_items";
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
-		sell[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
 	};
 };

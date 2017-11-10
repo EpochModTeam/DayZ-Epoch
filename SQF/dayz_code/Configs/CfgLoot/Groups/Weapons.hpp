@@ -49,7 +49,8 @@ sniperrifles[] = {
 	{Loot_WEAPON,		1,		CZ550_DZ}, //huntingrifle
 	{Loot_WEAPON,		0.8,	M24_des_EP1},
 	{Loot_WEAPON,		0.8,	M24_DZ}, //M24
-	{Loot_WEAPON,		0.7,	BAF_LRR_scoped},
+	{Loot_WEAPON,		0.6,	BAF_LRR_scoped},
+	{Loot_WEAPON,		0.6,	BAF_LRR_scoped_W},
 	{Loot_WEAPON,		0.5,	M107_DZ},
 	{Loot_WEAPON,		0.5,	KSVK_DZE},
 	{Loot_WEAPON,		0.5,	VSS_vintorez},
