@@ -1046,7 +1046,6 @@ class FSM
                                          "_myDest = [ _agent modelToWorld [0,0,0]];" \n
                                          "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];" \n
                                          "" \n
-                                         "//_adjustSpeed = if (DZE_slowZombies) then {2} else {_agent getVariable [""speedLimit"", 3]};" \n
                                          "_speedMin = DZE_ZombieSpeed select 0;" \n
                                          "_speedMax = DZE_ZombieSpeed select 1;" \n
                                          "_adjustSpeed = if (_speedMin == _speedMax && ((_speedMin > 0) && (_speedMax > 0))) then {_speedMin} else {_agent getVariable [""speedLimit"", 3]};" \n

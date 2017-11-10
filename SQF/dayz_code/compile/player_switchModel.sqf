@@ -150,7 +150,8 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 	if (gear_done) then {sleep 0.001;};
 	_countr = 0;
 	{
-		if (typeName _x != "STRING") then {
+		_isArray = typeName _x == "ARRAY";
+		if (_isArray) then {
 			_isWeapon = isClass (configFile >> "CfgWeapons" >> (_x select 0));
 			_isMagazine = isClass (configFile >> "CfgMagazines" >> (_x select 0));
 		} else {
@@ -159,7 +160,7 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 		};
 		if (!_isWeapon || (_isWeapon && _isMagazine)) then {
 			_countr = _countr + 1;
-			if (typeName _x != "STRING") then {
+			if (_isArray) then {
 				if (_x select 1 > 0) then { //Javelin rockets in BP returns ["Javelin", 0],"Javelin". Dupe on relog -> # real Javs + 1 per skin change
 					dayz_myBackpack addMagazineCargoGlobal [_x select 0, 1];
 					_idc = 4999 + _countr;

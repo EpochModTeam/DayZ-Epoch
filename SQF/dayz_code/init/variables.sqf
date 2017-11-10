@@ -536,7 +536,6 @@ if (isNil "DZE_SelfTransfuse") then {DZE_SelfTransfuse = false;};
 if (isNil "DZE_selfTransfuse_Values") then {DZE_selfTransfuse_Values = [12000,15,120];};
 if (isNil "DZE_PlotPole") then {DZE_PlotPole = [30,45];};
 DZE_maintainRange = ((DZE_PlotPole select 0)+20);
-if (isNil "DZE_slowZombies") then {DZE_slowZombies = false;};
 
 if (isServer) then {
 	dayz_serverPUIDArray = [];
