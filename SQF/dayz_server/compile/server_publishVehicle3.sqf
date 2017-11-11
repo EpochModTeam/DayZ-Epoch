@@ -1,4 +1,4 @@
-private ["_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_result","_outcome","_oid","_countr","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_objWpnTypes","_objWpnQty","_clientKey","_exitReason","_playerUID"];
+private ["_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_result","_outcome","_oid","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_clientKey","_exitReason","_playerUID"];
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 if (count _this < 7) exitWith {
@@ -93,33 +93,8 @@ if (_outcome != "PASS") then {
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
-
-	//Add weapons
-	_objWpnTypes = 	_weapons select 0;
-	_objWpnQty = 	_weapons select 1;
-	_countr = 0;
-	{
-		_object addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} count _objWpnTypes;
-
-	//Add Magazines
-	_objWpnTypes = _magazines select 0;
-	_objWpnQty = _magazines select 1;
-	_countr = 0;
-	{
-		_object addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} count _objWpnTypes;
-
-	//Add Backpacks
-	_objWpnTypes = _backpacks select 0;
-	_objWpnQty = _backpacks select 1;
-	_countr = 0;
-	{
-		_object addBackpackCargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} count _objWpnTypes;
+	
+	[_weapons,_magazines,_backpacks,_object] call server_addCargo;
 
 	_object setDir _dir;
 	_object setPosATL _location;

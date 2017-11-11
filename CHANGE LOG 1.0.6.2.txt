@@ -30,6 +30,7 @@
 [UPDATED] Vehicles can now only be sold from the "Gear" sell menu. This prevents accidental selling when using the "sell all" feature on backpacks and vehicle inventories.
 [UPDATED] Added all upgraded weapons to the traders as sell only for the sell price of the base weapon plus the sell price of attachments. This allows them to be sold without removing attachments first. #1982 @worldwidesorrow
 
+[FIXED] Purchased and upgraded vehicles will now spawn quicker and no longer be destroyed by sched_safetyVehicle when server FPS is low. HiveExt.dll and SQL must be updated. See 1.0.6.2_Updates.sql
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
 [FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.
 [FIXED] POIs were moved back to global spawn again. This synchronizes the POI buildings and trees destroyed/chopped status for all clients.

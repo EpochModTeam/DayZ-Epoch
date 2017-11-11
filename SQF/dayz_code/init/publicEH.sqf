@@ -94,8 +94,8 @@ if (isServer) then {
 	// EPOCH ADDITIONS
 	"PVDZE_maintainArea" 	addPublicVariableEventHandler {(_this select 1) spawn server_maintainArea};
 	"PVDZE_obj_Swap" 		addPublicVariableEventHandler {(_this select 1) spawn server_swapObject}; //Used to downgrade and upgrade Epoch buildables
-	"PVDZE_veh_Publish2"	addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh2}; //Used to purchase vehicles at traders
-	"PVDZE_veh_Upgrade"		addPublicVariableEventHandler {(_this select 1) spawn server_publishVeh3}; //Used for car upgrades
+	"PVDZE_veh_Publish2"	addPublicVariableEventHandler {(_this select 1) call server_publishVeh2}; //Used to purchase vehicles at traders
+	"PVDZE_veh_Upgrade"		addPublicVariableEventHandler {(_this select 1) call server_publishVeh3}; //Used for car upgrades
 	"PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
 	if (!DZE_ConfigTrader) then {
 		"PVDZE_plr_TradeMenu"	addPublicVariableEventHandler {(_this select 1) spawn server_traders};

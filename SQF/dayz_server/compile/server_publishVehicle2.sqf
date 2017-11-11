@@ -84,10 +84,14 @@ if (_outcome != "PASS") then {
 
 	if(DZE_TRADER_SPAWNMODE) then {
 		_object attachTo [_object_para, [0,0,-1.6]];
-		uiSleep 1;
-		WaitUntil{(([_object] call FNC_GetPos) select 2) < 0.1};
-		detach _object;
-		deleteVehicle _object_para;
+		[_object,_object_para] spawn {
+			_object = _this select 0;
+			_object_para = _this select 1;
+			uiSleep 1;
+			waitUntil {([_object] call fnc_getPos) select 2 < 0.1};
+			detach _object;
+			deleteVehicle _object_para;
+		};
 	};
 
 	_object call fnc_veh_ResetEH;
