@@ -110,7 +110,7 @@ _text = getText (configFile >> 'CfgMagazines' >> _item >> 'displayName');
 _buildCheck = call _checkClass;
 
 if (_buildCheck select 0 && !_isAdmin) then {
-	_canBuild = !((getPosATL player) call DZE_SafeZonePosCheck);
+	_canBuild = !([player,_buildCheck select 1] call DZE_SafeZonePosCheck);
 };
 
 if !(_canBuild) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_PLAYER_166",_text,_buildCheck select 1] call dayz_rollingMessages; [false, _isPole];};
