@@ -99,5 +99,5 @@ if (_outcome != "PASS") then {
 	PVDZE_veh_Init = _object;
 	publicVariable "PVDZE_veh_Init";
 
-	diag_log format["PUBLISH: %1(%2) bought %3 with UID %4 @%5",_activatingPlayer,_playerUID,_class,_uid,(_location call fa_coor2str)];
+	diag_log format["PUBLISH: %1(%2) bought %3 with UID %4 @%5",(_activatingPlayer call fa_plr2str),_playerUID,_class,_uid,(_location call fa_coor2str)];
 };

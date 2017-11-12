@@ -81,4 +81,4 @@ _object enableSimulation false;
 
 dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
-diag_log format["PUBLISH: Player %1(%2) upgraded or downgraded object to %3 with UID:%4 @%5",_activatingPlayer,_playerUID,_class,_uid,((_worldspace select 1) call fa_coor2str)];
+diag_log format["PUBLISH: Player %1(%2) upgraded or downgraded object to %3 with UID:%4 @%5",(_activatingPlayer call fa_plr2str),_playerUID,_class,_uid,((_worldspace select 1) call fa_coor2str)];

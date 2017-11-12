@@ -42,7 +42,7 @@ if ([_object, "Server"] call check_publishobject) then {
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 	#ifdef OBJECT_DEBUG
-	diag_log format["PUBLISH: Player %1(%2) created %3 with UID:%4 CID:%5 @%6 inventory:%7",_player,_playerUID,_type,_objectUID,_characterID,((_worldspace select 1) call fa_coor2str),_inventory];
+	diag_log format["PUBLISH: Player %1(%2) created %3 with UID:%4 CID:%5 @%6 inventory:%7",(_player call fa_plr2str),_playerUID,_type,_objectUID,_characterID,((_worldspace select 1) call fa_coor2str),_inventory];
 	#endif
 }
 else {

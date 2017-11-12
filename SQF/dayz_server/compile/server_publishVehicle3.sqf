@@ -77,14 +77,11 @@ if (_outcome != "PASS") then {
 	clearMagazineCargoGlobal  _object;
 	clearBackpackCargoGlobal _object;
 
-	// Remove marker
 	deleteVehicle _object;
+	[_objectID,_objectUID] call server_deleteObjDirect;
 
 	//_newobject = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
 	_newobject = _class createVehicle [0,0,0];
-
-	// remove old vehicle from DB
-	[_objectID,_objectUID] call server_deleteObjDirect;
 
 	// switch var to new vehicle at this point.
 	_object = _newobject;
@@ -93,12 +90,12 @@ if (_outcome != "PASS") then {
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
-	
-	[_weapons,_magazines,_backpacks,_object] call server_addCargo;
 
 	_object setDir _dir;
 	_object setPosATL _location;
 	_object setVectorUp surfaceNormal _location;
+	
+	[_weapons,_magazines,_backpacks,_object] call server_addCargo;
 
 	_object call fnc_veh_ResetEH;
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.
@@ -108,5 +105,5 @@ if (_outcome != "PASS") then {
 	dze_waiting = "success";
 	(owner _activatingPlayer) publicVariableClient "dze_waiting";
 
-	diag_log format["PUBLISH: %1(%2) upgraded %3 with UID %4 @%5",_activatingPlayer,_playerUID,_class,_uid,(_location call fa_coor2str)];
+	diag_log format["PUBLISH: %1(%2) upgraded %3 with UID %4 @%5",(_activatingPlayer call fa_plr2str),_playerUID,_class,_uid,(_location call fa_coor2str)];
 };

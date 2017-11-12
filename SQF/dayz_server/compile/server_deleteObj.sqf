@@ -23,11 +23,11 @@ if (isServer) then {
 		//Send request
 		_key = format["CHILD:304:%1:",_id];
 		_key call server_hiveWrite;
-		diag_log format["DELETE: Player %1(%2) deleted object with ID: %3",_activatingPlayer, _PlayerUID, _id];
+		diag_log format["DELETE: Player %1(%2) deleted object with ID: %3",(_activatingPlayer call fa_plr2str), _PlayerUID, _id];
 	} else  {
 		//Send request
 		_key = format["CHILD:310:%1:",_uid];
 		_key call server_hiveWrite;
-		diag_log format["DELETE: Player %1(%2) deleted object with UID: %3",_activatingPlayer, _PlayerUID, _uid];
+		diag_log format["DELETE: Player %1(%2) deleted object with UID: %3",(_activatingPlayer call fa_plr2str), _PlayerUID, _uid];
 	};
 };
