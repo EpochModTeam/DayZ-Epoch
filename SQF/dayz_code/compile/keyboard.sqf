@@ -240,7 +240,9 @@ if (isNil "keyboard_keys") then {
 	
     _addArray = {
         {
-            keyboard_keys set [_x, _this select 1];
+			if (_x <= 999999) then {
+				keyboard_keys set [_x, _this select 1];
+			};
         } forEach (_this select 0);
     };
 

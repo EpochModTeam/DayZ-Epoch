@@ -74,6 +74,7 @@
 [FIXED] Launchers and launcher ammo are now detected correctly in the sell menu when a player has a launcher and ammo with the same classname.
 [FIXED] Wrong bleeding icon on Epoch legacy status UI
 [FIXED] A locked door can now be auto unlocked right after placement by the player who built it
+[FIXED] A rare error in keyboard.sqf for certain combination binds.
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
