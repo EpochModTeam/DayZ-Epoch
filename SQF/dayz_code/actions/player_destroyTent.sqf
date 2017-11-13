@@ -68,7 +68,7 @@ player addMagazine _emptycan;
 PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,dayz_authKey,false];
 publicVariableServer "PVDZ_obj_Destroy";
 
-PVDZ_veh_Save = [_obj, "killed"];
+PVDZ_veh_Save = [_obj,"killed",false,false,dayz_playerUID,dayz_authKey];
 publicVariableServer "PVDZ_veh_Save";
 
 //Set fire to item

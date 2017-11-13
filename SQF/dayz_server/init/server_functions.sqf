@@ -13,6 +13,11 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\compile.sqf";
 
 BIS_Effects_Burn = {};
 dayz_disconnectPlayers = [];
+dayz_serverKey = [];
+for "_i" from 0 to 12 do {
+	dayz_serverKey set [_i, ceil(random 128)];
+};
+dayz_serverKey = toString dayz_serverKey;
 server_playerLogin = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerLogin.sqf";
 server_playerSetup = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSetup.sqf";
 server_onPlayerDisconnect = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_onPlayerDisconnect.sqf";
@@ -98,7 +103,7 @@ vehicle_handleServerKilled = {
 	_unit = _this select 0;
 	_killer = _this select 1;
 		
-	[_unit, "killed"] call server_updateObject;	
+	[_unit,"killed",false,false,"SERVER",dayz_serverKey] call server_updateObject;	
 	_unit removeAllMPEventHandlers "MPKilled";
 	_unit removeAllEventHandlers "Killed";
 	_unit removeAllEventHandlers "HandleDamage";

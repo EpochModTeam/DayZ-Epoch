@@ -8,7 +8,7 @@
 [NEW] Added bolt animations to CZ550 and LeeEnfield modeled by @Streatman
 [NEW] Added some basic compatibility for falconsan's Ruegen map (beta version released February 2016)
 [NEW] Admins can now define what parts are returned from modular building parts, see configVariables.sqf/DZE_modularConfig @oiad @BigEgg17
-[NEW] Added basic server-side authentication to hive object creation/deletion for improved security. Affects Server_(DeleteObj|PublishObj|PublishVeh|SwapObj), admins and script makers should review the changes if using PVDZ_obj_(Destroy|Publish), PVDZE_obj_Swap, PVDZE_veh_(Publish|Upgrade) or server_deleteObj and verify custom code is compliant with these changes (github.com/EpochModTeam/DayZ-Epoch/commit/42e0047)
+[NEW] Added basic server-side authentication to hive object creation/deletion for improved security. Affects Server_(DeleteObj|PublishObj|PublishVeh|SwapObj|UpdateObject), admins and script makers should review the changes if using PVDZ_obj_(Destroy|Publish), PVDZ_veh_Save, PVDZE_obj_Swap, PVDZE_veh_(Publish|Upgrade) or server_deleteObj and verify custom code is compliant with these changes (github.com/EpochModTeam/DayZ-Epoch/commit/42e0047)
 [NEW] BAF_L85A2_RIS_TWS_DZ to emulate the old behavior of the now NV only BAF_L85A2_RIS_CWS. Server owners must add the weapon on their own #1983
 [NEW] Admins can now define a maximum build height, see configVariables.sqf/DZE_BuildHeightLimit. @BigEgg17
 

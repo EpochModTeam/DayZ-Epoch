@@ -4,9 +4,9 @@ _unit = _this select 0;
 // ask server to set global damage to 1, save to the hive
 if (local _unit) then {
 	if (isServer) then {
-		[_unit, "killed"] call server_updateObject;
+		[_unit,"killed",false,false,"SERVER",dayz_serverKey] call server_updateObject;
 	} else {
-		PVDZ_veh_Save = [_unit, "killed"];
+		PVDZ_veh_Save = [_unit,"killed",false,false,dayz_playerUID,dayz_authKey];
 		publicVariableServer "PVDZ_veh_Save";
 	};
 };
