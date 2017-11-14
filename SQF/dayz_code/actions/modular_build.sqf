@@ -358,7 +358,7 @@ if (_canBuild select 0) then {
 			deleteVehicle _objectHelper;
 		};
 		
-		if (DZE_BuildHeightLimit > 0 && abs(_objHDiff) > DZE_BuildHeightLimit) exitWith {
+		if (DZE_BuildHeightLimit > 0 && {_position select 2 > DZE_BuildHeightLimit}) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = format[localize "STR_EPOCH_PLAYER_168",DZE_BuildHeightLimit];

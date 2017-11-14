@@ -17,7 +17,7 @@ while {_counter < _amount} do {
 	_method = "CAN_COLLIDE";
 	
 	_position = [getMarkerPos "center",1,6500,1] call fn_selectRandomLocation;
-	if(_position call DZE_SafeZonePosCheck) exitWith {};
+	if ([_position] call DZE_SafeZonePosCheck) exitWith {};
 	//Create Zed
 	_agent = createAgent [_type, _position, [], 1, _method];
 	//Set Random Direction
