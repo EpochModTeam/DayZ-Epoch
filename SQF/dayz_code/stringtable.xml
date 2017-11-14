@@ -8392,7 +8392,6 @@
 		</Key>
 		<Key ID="STR_BUILT_CAMONET_Dismantle">
 			<English>Dismantle Camonet</English>
-
 			<German>Tarnnetz abbauen</German>
 			<Russian>Демонтировать камуфляжную сеть</Russian>
 		</Key>
@@ -10363,12 +10362,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_MFL_NAME">
 			<English>Mosin Nagant MFL</English>
-			<German>Mosin Nagant ;TL</German>				
+			<German>Mosin Nagant TL</German>				
 			<Russian>Мосинка вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_NAME">
 			<English>Mosin Nagant Belt</English>
-			<German>Mosin Nagant Gurt </German>				
+			<German>Mosin Nagant Gurt</German>				
 			<Russian>Мосинка П</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_FL_NAME">
