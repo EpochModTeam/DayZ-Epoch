@@ -16,7 +16,7 @@ Farm[] =
 	{Loot_MAGAZINE,		8,		PartWoodPile},
 	{Loot_MAGAZINE,		3,		equip_rope},
 	{Loot_MAGAZINE,		3,		equip_duct_tape},
-	{Loot_MAGAZINE,		6,		equip_nails},
+	{Loot_MAGAZINE,		3,		equip_nails},
 	{Loot_MAGAZINE,		4,		equip_string},
 	{Loot_MAGAZINE,		2,		equip_lever},
 	{Loot_MAGAZINE,		2,		PartPlankPack},

@@ -21,7 +21,7 @@ Industrial[] =
 	{Loot_MAGAZINE,		1,		equip_brick},
 	{Loot_MAGAZINE,		3,		equip_duct_tape},
 	{Loot_MAGAZINE,		2,		equip_hose},
-	{Loot_MAGAZINE,		6,		equip_nails},
+	{Loot_MAGAZINE,		3,		equip_nails},
 //	{Loot_MAGAZINE,		3,		ItemScrews},
 //	{Loot_MAGAZINE,		1,		equip_scrapelectronics},
 	{Loot_MAGAZINE,		2,		equip_metal_sheet},
