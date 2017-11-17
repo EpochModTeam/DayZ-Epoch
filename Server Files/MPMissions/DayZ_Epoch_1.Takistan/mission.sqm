@@ -13,6 +13,7 @@ class Mission
 		"dayz_equip",
 		"cacharacters_pmc",
 		"ca_modules_functions",
+		"zero_buildings",
 		"dayz_epoch",
 		"pook_h13",
 		"glt_m300t",

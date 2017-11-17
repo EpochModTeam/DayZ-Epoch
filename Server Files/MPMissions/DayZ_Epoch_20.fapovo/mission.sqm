@@ -25,6 +25,7 @@ class Mission
 		"dayz_equip",
 		"cacharacters_pmc",
 		"ca_modules_functions",
+		"zero_buildings",
 		"dayz_epoch",
 		"ibr_fapovo",
 		"ibr_lcivilian_patch",
