@@ -476,6 +476,18 @@ class CfgVehicles {
 	#include "antihack_plants.hpp"
 	//#include "antihack_weaponholders.hpp"
 	
+	class Land_CncBlock_AntiHack: NonStrategic
+	{
+		scope=public;
+		vehicleClass="Misc";
+		//model = \Ca\misc3\CncBlock_D;
+		model = "z\addons\dayz_communityassets\models\CncBlock_D.p3d";
+		Icon = "\Ca\misc3\Data\Icons\icon_cnc_con_barrier_CA.paa";
+		mapSize = 4;
+		displayName=$STR_MISC_CNCBLOCK_D;
+		armor=150;
+	};
+	
 	//EPOCH
 	#include "DZE\Wrecks.hpp"
 	#include "DZE\Doors.hpp"
