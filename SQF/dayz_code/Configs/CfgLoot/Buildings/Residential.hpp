@@ -706,7 +706,7 @@ class Land_House_K_6_EP1: Residential // tak 3 story cement open door red blanke
 {
 	lootPos[] = {{2.36108,1.41309,-1.60797},{-2.57178,1.42285,-1.59425},{-4.81445,2.98193,1.48639},{-0.123047,3.83203,1.47144},{2.7063,0.193359,4.42145},{-4.3584,-2.99609,4.33153},{-0.0888672,3.0293,4.42143},{2.10864,0.180664,1.47076},{-4.10083,-2.09082,1.55551}};
 };
-//Land_Mil_Guardhouse_EP1 in Military.hpp
+
 //land_seb_bouda3 in Industrial.hpp
 class land_seb_mine_maringotka: Residential { // Nm
 	lootPos[] = {{0.423828,0.721191,-0.612675},{-0.976563,-1.32764,-0.612675}};

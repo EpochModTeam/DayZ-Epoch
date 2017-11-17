@@ -407,6 +407,37 @@ class Land_AII_upper_part: Military
 	lootPos[] = {{-0.616211, -3.80762, -2.31434}, {-2.62158, -1.05127, -2.32196}, {-2.30322, 2.0415, -2.32196}};
 };
 
+class Land_Mil_Guardhouse_EP1: Military //Not enterable, Takistan version
+{
+	zombieClass[] =
+	{
+		"z_soldier",
+		"z_soldier",
+		"z_policeman"
+	};
+	lootPos[] = {{-3.05859,1.76514,-1.59003},{-3.16895,3.45361,-1.59003},{-3.19922,-0.323242,-1.59003}};
+};
+
+class Land_Mil_Guardhouse: Military //Enterable zero_building
+{
+	zombieClass[] =
+	{
+		"z_soldier",
+		"z_soldier",
+		"z_policeman"
+	};
+	lootChance = 0.5;
+	maxRoaming = 3;
+	zedPos[] = {{-2.44727,0.250977,-1.70563},{-2.44873,3.00293,-1.70285}};
+	lootPos[] = {
+		//{-2.44727,0.250977,-1.70563},{-2.44873,3.00293,-1.70285}
+		{4.65381,-3.61914,-1.46277},{2.99756,3.54102,-0.712769}
+	};
+	lootPosSmall[] = {
+		{-0.798828,-3.51758,-1.46277},{3.73047,-3.95996,-1.32278},{-0.283203,-3.15723,-1.32278},{-0.996582,3.81445,-1.14279},{-1.33008,2.26563,-0.762787},{0.289063,3.66211,-0.0827942},{-1.17383,-0.112305,-1.48279}
+	};
+};
+
 //DZE ADDED BELOW
 class land_vstup: Military {
 	lootPos[] = {{-11.51,-2.64844,-1.53312},{-6.24463,-2.85059,-1.53312},{-1.16992,-2.84961,-1.53312},{2.70898,-2.85059,-1.53312}};
@@ -483,16 +514,6 @@ class Land_vez: Military
 	lootPos[] = {{-0.0585938,1.51367,1.36331}};
 	zedPos[] = {{-0.116699,-0.801758,-2.81857}};
 };
-class Land_Mil_Guardhouse_EP1: Military
-{
-	zombieClass[] =
-	{
-		"z_soldier",
-		"z_soldier",
-		"z_policeman"
-	};
-	lootPos[] = {{-3.05859,1.76514,-1.59003},{-3.16895,3.45361,-1.59003},{-3.19922,-0.323242,-1.59003}};
-};
 class Land_fortified_nest_big_EP1: Military
 {
 	lootPos[] = {
@@ -519,27 +540,6 @@ class HMMWVWreck: Military
 	maxRoaming = 2;
 	lootPos[] = {};
 };
-
-class Land_Mil_Guardhouse: Military //MOVED FROM RESIDENTIAL
-{
-	zombieClass[] =
-	{
-		"z_soldier",
-		"z_soldier",
-		"z_policeman"
-	};
-	lootChance = 0.5;
-	maxRoaming = 3;
-	zedPos[] = {{-2.44727,0.250977,-1.70563},{-2.44873,3.00293,-1.70285}};
-	lootPos[] = {
-		//{-2.44727,0.250977,-1.70563},{-2.44873,3.00293,-1.70285}
-		{4.65381,-3.61914,-1.46277},{2.99756,3.54102,-0.712769}
-	};
-	lootPosSmall[] = {
-		{-0.798828,-3.51758,-1.46277},{3.73047,-3.95996,-1.32278},{-0.283203,-3.15723,-1.32278},{-0.996582,3.81445,-1.14279},{-1.33008,2.26563,-0.762787},{0.289063,3.66211,-0.0827942},{-1.17383,-0.112305,-1.48279}
-	};
-};
-
 class UH60_NAVY_Wreck_DZ: Military {
 	zombieClass[] = {"z_soldier_pilot","z_soldier_heavy"};
 	zombieChance = 0.3;

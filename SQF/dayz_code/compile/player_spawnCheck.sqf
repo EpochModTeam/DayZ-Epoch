@@ -1,7 +1,7 @@
 private ["_isWreck","_maxControlledZombies","_looted","_zombied","_doNothing","_spawnZedRadius","_serverTime","_age","_nearbyBuildings","_position","_speed","_radius","_maxlocalspawned","_maxWeaponHolders","_currentWeaponHolders","_maxtoCreate","_inVehicle","_isAir","_isLand","_isSea","_Controlledzeddivided","_totalcrew","_nearby","_type","_config","_canSpawn","_dis","_checkLoot","_islocal","_bPos","_zombiesNum"];
 _age = -1;
 //_nearbyBuildings = [];
-_position = [player] call FNC_GetPos;
+_position = [player] call fnc_getPos;
 _speed = speed (vehicle player);
 _radius = 200; //150*0.707; Pointless Processing (106.5)
 _spawnZedRadius = 20;
@@ -122,12 +122,13 @@ if (_maxlocalspawned > 0) then { _spawnZedRadius = _spawnZedRadius * 3; };
 	//Loot
 		if (getNumber(_config >> "lootChance") > 0) then {
 			if (_currentWeaponHolders < _maxWeaponHolders) then {
-				//Baisc loot check
+				//Basic loot check
 				if ((_dis < 125) and (_dis > 30) and !_inVehicle and _checkLoot) then {
 					_serverTime = serverTime;
 					_looted = (_x getVariable ["looted",_serverTime]);
 					_age = _serverTime - _looted;
-					if ((_age == 0) or (_age > 900)) then { 
+					//Building refresh rate
+					if (_age == 0 or (_age > getNumber(_config >> "lootRefreshTimer"))) then { 
 						_x setVariable ["looted",_serverTime,!_islocal];
 						_x call building_spawnLoot;
 						if (!(_x in dayz_buildingBubbleMonitor)) then {
@@ -152,7 +153,7 @@ if (_maxlocalspawned > 0) then { _spawnZedRadius = _spawnZedRadius * 3; };
 					if (!_isWreck) then {
 						if ((dayz_spawnZombies < _maxControlledZombies) and (dayz_CurrentNearByZombies < dayz_maxNearByZombies) and (dayz_currentGlobalZombies < dayz_maxGlobalZeds)) then {
 							_bPos = getPosATL _x;
-							_zombiesNum = {alive _x} count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
+							_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
 						
 							if (_zombiesNum == 0) then {    
 								_x setVariable ["zombieSpawn",_serverTime,!_islocal];
@@ -169,7 +170,7 @@ if (_maxlocalspawned > 0) then { _spawnZedRadius = _spawnZedRadius * 3; };
 						};
 					} else {
 						_bPos = getPosATL _x;
-						_zombiesNum = {alive _x} count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 30)]);
+						_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 30)]);
 						//Should be a wreck
 					   if (_zombiesNum == 0) then { [_x,_isWreck] call building_spawnZombies; };
 					};
