@@ -231,6 +231,8 @@ _object_maintenance = {
 	_accessArray = _object getVariable ["dayz_padlockCombination",[]];
 	_variables set [count _variables, ["ownerArray", _ownerArray]];
 	_variables set [count _variables, ["padlockCombination", _accessArray]];
+	
+	_object setDamage 0;
 
 	if (_objectID == "0") then {
 		//_key = format["CHILD:309:%1:%2:",_objectUID,_ownerArray];

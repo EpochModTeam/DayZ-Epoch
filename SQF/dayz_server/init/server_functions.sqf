@@ -86,23 +86,47 @@ dayz_Achievements = {
 
 //Send fences to this array to be synced to db, should prove to be better performaince wise rather then updaing each time they take damage.
 server_addtoFenceUpdateArray = {
-	//Potential problem no current way to say what is setting the damage.
-	if ((_this select 0) isKindOf "DZ_buildables") then {
-		(_this select 0) setDamage (_this select 1);
+	private ["_class","_clientKey","_damage","_exitReason","_index","_object","_playerUID"];
+	_object = _this select 0;
+	_damage = _this select 1;
+	_playerUID = _this select 2;
+	_clientKey = _this select 3;
+	_index = dayz_serverPUIDArray find _playerUID;
+	_class = typeOf _object;
 
-		if !((_this select 0) in needUpdate_FenceObjects) then {
-			needUpdate_FenceObjects set [count needUpdate_FenceObjects, (_this select 0)];
+	_exitReason = switch true do {
+		//Can't use owner because player may already be dead, can't use distance because player may be far from fence
+		case (_clientKey == dayz_serverKey): {""};
+		case (_index < 0): {
+			format["Server_AddToFenceUpdateArray error: PUID NOT FOUND ON SERVER. PV ARRAY: %1",_this]
+		};
+		case ((dayz_serverClientKeys select _index) select 1 != _clientKey): {
+			format["Server_AddToFenceUpdateArray error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED. PV ARRAY: %1",_this]
+		};
+		case !(_class isKindOf "DZ_buildables"): {
+			format["Server_AddToFenceUpdateArray error: setDamage request on non DZ_buildable. PV ARRAY: %1",_this]
+		};
+		default {""};
+	};
+	
+	if (_exitReason != "") exitWith {diag_log _exitReason};	
+	
+	_object setDamage _damage;
+
+	if !(_object in needUpdate_FenceObjects) then {
+		needUpdate_FenceObjects set [count needUpdate_FenceObjects, _object];
+		if (_playerUID != "SERVER") then {
+			diag_log format["DAMAGE: PUID(%1) requested setDamage %2 on fence %3 ID:%4 UID:%5",_playerUID,_damage,_class,(_object getVariable["ObjectID","0"]),(_object getVariable["ObjectUID","0"])];
 		};
 	};
 };
-
 
 vehicle_handleServerKilled = {
 	private ["_unit","_killer"];
 	_unit = _this select 0;
 	_killer = _this select 1;
 		
-	[_unit,"killed",false,false,"SERVER",dayz_serverKey] call server_updateObject;	
+	[_unit,"killed",false,false,"SERVER",dayz_serverKey] call server_updateObject;
 	_unit removeAllMPEventHandlers "MPKilled";
 	_unit removeAllEventHandlers "Killed";
 	_unit removeAllEventHandlers "HandleDamage";
