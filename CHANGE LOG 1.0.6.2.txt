@@ -33,8 +33,8 @@
 
 [FIXED] Purchased and upgraded vehicles will now spawn quicker and no longer be destroyed by sched_safetyVehicle when server FPS is low. HiveExt.dll and SQL must be updated. See 1.0.6.2_Updates.sql
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
-[FIXED] Trees at POIs can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.
-[FIXED] POIs were moved back to global spawn again. This synchronizes the POI buildings and trees destroyed/chopped status for all clients.
+[FIXED] Trees at POI can be chopped down now. Other trees spawned with createVehicle can be added to dayz_treeTypes in variables.sqf to allow chopping them down.
+[FIXED] Vanilla POI were updated with new locations and moved back to global spawn again. This synchronizes the POI buildings and trees destroyed/chopped status for all clients.
 [FIXED] All traps now need to be armed after placing. This fixes them not triggering right after building.
 [FIXED] Smoke and grenade tripwires now require a grenade to rearm after triggering.
 [FIXED] Player no longer does medic animation after triggering a single use trap.

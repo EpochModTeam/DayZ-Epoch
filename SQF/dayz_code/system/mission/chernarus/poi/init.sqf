@@ -6,8 +6,15 @@
 
 {
 	call compile preprocessFileLineNumbers ("\z\addons\dayz_code\system\mission\chernarus\poi\" + _x + ".sqf");
+	
+	//This is needed to process all setVehicleInit commands
+	processInitCommands;
 } forEach [
-	//"Twains", //Filled with Server sleeps, removed for now
+	"NWATentCamp",
+	"ElektroWells",
+	"GvozdnoMilitaryBase",
+	"Shakhovka",
+	"Trains",
 	"DevilsFarm",
 	"NEA",
 	"C130Crash",
@@ -15,6 +22,5 @@
 	"DeadForest",
 	"KomyshovoRoadblock",
 	"MilitaryAirpoort",
-	"ZelenogorskBuildings",
-	"NWATentCamp"
+	"ZelenogorskBuildings"
 ];
