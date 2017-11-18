@@ -69,12 +69,12 @@ if (_outcome != "PASS") then {
 	#endif
 
 	// add items from previous vehicle here
-	_weapons = 		getWeaponCargo _object;
-	_magazines = 	getMagazineCargo _object;
-	_backpacks = 	getBackpackCargo _object;
+	_weapons = getWeaponCargo _object;
+	_magazines = getMagazineCargo _object;
+	_backpacks = getBackpackCargo _object;
 
-	clearWeaponCargoGlobal  _object;
-	clearMagazineCargoGlobal  _object;
+	clearWeaponCargoGlobal _object;
+	clearMagazineCargoGlobal _object;
 	clearBackpackCargoGlobal _object;
 
 	deleteVehicle _object;
@@ -85,7 +85,7 @@ if (_outcome != "PASS") then {
 
 	// switch var to new vehicle at this point.
 	_object = _newobject;
-	
+
 	_object setVariable ["ObjectID", _oid, true];
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
@@ -94,8 +94,8 @@ if (_outcome != "PASS") then {
 	_object setDir _dir;
 	_object setPosATL _location;
 	_object setVectorUp surfaceNormal _location;
-	
-	[_weapons,_magazines,_backpacks,_object] call server_addCargo;
+
+	[_weapons,_magazines,_backpacks,_object] call fn_addCargo;
 
 	_object call fnc_veh_ResetEH;
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.

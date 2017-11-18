@@ -4,7 +4,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_alreadyPacking","_backpacks","_bag","_campItems","_countr","_dir","_holder","_magazines","_obj","_objWpnQty","_objWpnTypes","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons","_finished"];
+private ["_alreadyPacking","_backpacks","_bag","_campItems","_dir","_holder","_magazines","_obj","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons","_finished"];
 
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
@@ -37,7 +37,7 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 
 	[player,"tentpack",0,false,20] call dayz_zombieSpeak;
 	[player,20,true,getPosATL player] call player_alertZombies;
-	
+
 	_finished = ["Medic",1] call fn_loopAction;
 	if (isNull _obj) exitWith {};
 	if (!_finished) exitWith {_obj setVariable["packing",0,true];};
@@ -46,7 +46,7 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	_bag = createVehicle [_packobj, _pos, [], 0, "CAN_COLLIDE"];
 	_bag setDir _dir;
 	player reveal _bag;
-	
+
 	_holder = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
 
 	_weapons = getWeaponCargo _obj;
@@ -57,32 +57,7 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	publicVariableServer "PVDZ_obj_Destroy";
 	deleteVehicle _obj;
 
-	//Add weapons
-	_objWpnTypes = _weapons select 0;
-	_objWpnQty = _weapons select 1;
-	_countr = 0;
-	{
-		_holder addWeaponCargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} count _objWpnTypes;
-
-	//Add Magazines
-	_objWpnTypes = _magazines select 0;
-	_objWpnQty = _magazines select 1;
-	_countr = 0;
-	{
-		_holder addMagazineCargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} count _objWpnTypes;
-
-	//Add Backpacks
-	_objWpnTypes = _backpacks select 0;
-	_objWpnQty = _backpacks select 1;
-	_countr = 0;
-	{
-		_holder addBackpackCargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} count _objWpnTypes;
+	[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
 
 	localize "str_success_tent_pack" call dayz_rollingMessages;
 } else {

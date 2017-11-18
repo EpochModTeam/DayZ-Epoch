@@ -36,7 +36,6 @@ server_sendToClient = compile preprocessFileLineNumbers "\z\addons\dayz_server\e
 server_verifySender = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_verifySender.sqf";
 
 // EPOCH ADDITIONS
-server_addCargo = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_addCargo.sqf";
 server_swapObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_swapObject.sqf"; //Used to downgrade and upgrade Epoch buildables
 server_publishVeh = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishVehicle.sqf"; //Used to spawn random vehicles by server
 server_publishVeh2 = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishVehicle2.sqf"; //Used to purchase vehicles at traders

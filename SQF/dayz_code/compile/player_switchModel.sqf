@@ -1,4 +1,4 @@
-private ["_weapons","_isArray","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_isMagazine","_backpackWpnTypes","_backpackWpnQtys","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
+private ["_weapons","_isArray","_backpackWpn","_backpackMag","_currentWpn","_isWeapon","_isMagazine","_countr","_class","_position","_dir","_currentAnim","_playerUID","_countMags","_magazines","_primweapon","_secweapon","_newBackpackType","_muzzles","_oldUnit","_group","_newUnit","_oldGroup","_idc","_display","_switchUnit","_leader","_currentCamera"];
 _isArray = typeName _this == "ARRAY";
 _class = if (_isArray) then {_this select 0} else {_this};
 
@@ -138,12 +138,6 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 	//_oldBackpack = dayz_myBackpack;
 	dayz_myBackpack = unitBackpack _newUnit;
 
-	_backpackWpnTypes = [];
-	_backpackWpnQtys = [];
-	if (count _backpackWpn > 0) then {
-		_backpackWpnTypes = _backpackWpn select 0;
-		_backpackWpnQtys = _backpackWpn select 1;
-	};
 	call _switchUnit;
 	if (gear_done) then {sleep 0.001;};
 	["1"] call gearDialog_create;
@@ -172,11 +166,8 @@ if (!isNil "_newBackpackType" && {_newBackpackType != ""}) then {
 		};
 	} count _backpackMag;
 	(findDisplay 106) closeDisplay 0;
-	_countr = 0;
-	{
-		dayz_myBackpack addWeaponCargoGlobal [_x,(_backpackWpnQtys select _countr)];
-		_countr = _countr + 1;
-	} count _backpackWpnTypes;
+
+	[_backpackWpn,[],[],dayz_myBackpack] call fn_addCargo;
 } else {
 	call _switchUnit;
 };

@@ -12,7 +12,7 @@
 private ["_objclass","_cursorTarget","_item","_classname","_requiredTools","_requiredParts","_upgrade","_upgradeConfig",
 "_upgradeDisplayname","_onLadder","_isWater","_upgradeParts","_startUpgrade","_missingPartsConfig","_textMissingParts","_dis",
 "_sfx","_ownerID","_objectID","_objectUID","_dir","_weapons","_magazines","_backpacks",
-"_object","_objWpnTypes","_objWpnQty","_countr","_itemName","_vector","_finished"];
+"_object","_itemName","_vector","_finished"];
 
 _cursorTarget = _this select 0;
 
@@ -143,17 +143,9 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	
 	//Make sure player knows about the new object
 	player reveal _object;
-	
-	//Add contents back
-	//Add Magazines
-	_objWpnTypes = _magazines select 0;
-	_objWpnQty = _magazines select 1;
-	_countr = 0;
-	{
-		_object addmagazinecargoGlobal [_x,(_objWpnQty select _countr)];
-		_countr = _countr + 1;
-	} count _objWpnTypes;
-	
+
+	[[],_magazines,[],_object] call fn_addCargo;
+
 	//Light fire 
 	[_object,true] call dayz_inflame;
 	_object spawn player_fireMonitor;

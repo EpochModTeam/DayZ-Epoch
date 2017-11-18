@@ -66,7 +66,7 @@ switch (_status) do {
 		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};
 		deleteVehicle _obj;
 		
-		[_weapons,_magazines,_backpacks,_holder] call server_addCargo;
+		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
 	};
 	case 1: { //Locking
 		_lockedClass = getText (configFile >> "CfgVehicles" >> _type >> "lockedClass");
@@ -110,7 +110,7 @@ switch (_status) do {
 		_holder setDir _dir;
 		_holder setPosATL _pos;
 		_holder addMagazineCargoGlobal [getText(configFile >> "CfgVehicles" >> _packedClass >> "seedItem"),1];
-		[_weapons,_magazines,_backpacks,_holder] call server_addCargo;
+		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
 		
 		// Delete safe from database
 		[_objectID,_objectUID] call server_deleteObjDirect;
