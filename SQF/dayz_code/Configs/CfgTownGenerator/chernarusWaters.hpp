@@ -2363,16 +2363,3 @@
 		};
 
 	};
-	
-	class W182 { //Blocks Topolka Dam walk under water glitch
-		position[] = {10299.095,3659.8674,2.4993041};
-		size = 50;
-		buildings = 1;
-		class Object0 {
-			type = "MAP_pond_big_01";
-			position[] = {10299.095,3659.8674,2.4993041};
-			direction = 0;
-			onFire = 0;
-		};
-	};
-
