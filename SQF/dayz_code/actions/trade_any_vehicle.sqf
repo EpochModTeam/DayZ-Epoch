@@ -1,4 +1,4 @@
-private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_keyColor","_damage","_tireDmg","_tires","_okToSell","_temp_keys","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
+private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_damage","_tireDmg","_tires","_okToSell","_temp_keys","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -196,9 +196,8 @@ if (_finished) then {
 
 						// remove Key
 						_temp_keys = [];
-						_keyColor = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
 						{
-							if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in _keyColor) then {
+							if (configName(inheritsFrom(configFile >> "CfgWeapons" >> _x)) in DZE_itemKeys) then {
 								if (str(getNumber(configFile >> "CfgWeapons" >> _x >> "keyid")) == _objectCharacterId) then {
 									[_activatingPlayer,_x] call BIS_fnc_invRemove;
 								};

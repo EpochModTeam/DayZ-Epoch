@@ -10,7 +10,7 @@
 private ["_isKeyOK","_keyColor","_keyNumber","_keySelected"];
 
 // First select key color
-_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
+_keyColor = DZE_keyColors call BIS_fnc_selectRandom;
 
 // then select number from 1 - 2500
 _keyNumber = (floor(random 2500)) + 1;

@@ -1,4 +1,4 @@
-private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keyColor","_keyNumber","_keySelected","_location","_moneyInfo","_wealth","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy"];
+private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keySelected","_location","_moneyInfo","_wealth","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy","_result"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
@@ -123,16 +123,15 @@ if (_enoughMoney) then {
 		if (_buyingType in DZE_tradeVehicleKeyless) then {
 			_isKeyOK = true;
 		} else {
-			_keyColor = ["Green","Red","Blue","Yellow","Black"] call BIS_fnc_selectRandom;
-			_keyNumber = (floor(random 2500)) + 1;
-			_keySelected = format["ItemKey%1%2",_keyColor,_keyNumber];
-			_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
+			_result = call epoch_generateKey;
+			_isKeyOK = _result select 0;
+			_keySelected = _result select 1;
 		};
 		if (!_isKeyOK) exitWith {localize "str_epoch_player_107" call dayz_rollingMessages; "";};
 		_activatingPlayer = player;
 		_dir = round(random 360);
 		_helipad = nearestObjects [player, ["HeliHCivil","HeliHempty"], 100];
-		
+
 		// Note server now uses createVehicle "NONE" so next closest safePos is found automatically if location is blocked
 		if (count _helipad > 0) then {
 			_location = [(_helipad select 0)] call FNC_GetPos;
@@ -150,7 +149,7 @@ if (_enoughMoney) then {
 		} else {
 			[_part_out,_sign] call fn_waitForObject;
 		};
-		
+
 		if (_buyingType in DZE_tradeVehicleKeyless) then {
 			PVDZE_veh_Publish2 = [[_dir,_location],_part_out,true,"0",_activatingPlayer,dayz_authKey];
 		} else {
@@ -162,7 +161,7 @@ if (_enoughMoney) then {
 
 	closeDialog 2;
 	_item2Add = "0";
-	
+
 	if (Z_SellingFrom == 0) then { //backpack
 		_backpack = unitBackpack player;
 		{
