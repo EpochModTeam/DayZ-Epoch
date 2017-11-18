@@ -1,23 +1,23 @@
 /*
-[_objectID,_objectUID,_activatingPlayer,_object,dayz_authKey] call server_deleteObj;
+[_objectID,_objectUID,_activatingPlayer,_objPos,dayz_authKey] call server_deleteObj;
 For PV calls from the client use this function, otherwise if calling directly from the server use server_deleteObjDirect
 */
-private["_id","_uid","_key","_activatingPlayer","_object","_clientKey","_exitReason","_PlayerUID","_processDelete"];
+private["_id","_uid","_key","_activatingPlayer","_objPos","_clientKey","_exitReason","_PlayerUID","_processDelete"];
 
 if (count _this < 5) exitWith {diag_log "Server_DeleteObj error: Improper parameter format";};
 _id 	= _this select 0;
 _uid 	= _this select 1;
 _activatingPlayer 	= _this select 2;
-_object = _this select 3;
+_objPos = _this select 3; //Can be object or position if _processDelete is false
 _clientKey = _this select 4;
 _processDelete = if (count _this > 5) then {_this select 5} else {true};
 _PlayerUID = getPlayerUID _activatingPlayer;
 
-_exitReason = [_this,"DeleteObj",_object,_clientKey,_PlayerUID,_activatingPlayer] call server_verifySender;
+_exitReason = [_this,"DeleteObj",_objPos,_clientKey,_PlayerUID,_activatingPlayer] call server_verifySender;
 if (_exitReason != "") exitWith {diag_log _exitReason};
 
 if (isServer) then {
-	if (_processDelete) then {deleteVehicle _object};
+	if (_processDelete) then {deleteVehicle _objPos};
 	//remove from database
 	if (parseNumber _id > 0) then {
 		//Send request
