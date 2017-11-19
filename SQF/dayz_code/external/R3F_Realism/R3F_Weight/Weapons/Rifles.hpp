@@ -151,11 +151,103 @@ class AK_74_GL_kobra
 {
 	weight = 4.2;
 };
-class BAF_L85A2_RIS_Holo
+class L85A2_DZ
+{
+	weight = 5;
+};
+class L85A2_FL_DZ
 {
 	weight = 5.2;
 };
+class L85A2_MFL_DZ
+{
+	weight = 5.2;
+};
+class L85A2_SD_DZ
+{
+	weight = 5.2;
+};
+class L85A2_SD_FL_DZ
+{
+	weight = 5.4;
+};
+class L85A2_SD_MFL_DZ
+{
+	weight = 5.4;
+};
+class L85A2_CCO_DZ
+{
+	weight = 5.2;
+};
+class L85A2_CCO_FL_DZ
+{
+	weight = 5.4;
+};
+class L85A2_CCO_MFL_DZ
+{
+	weight = 5.4;
+};
+class L85A2_CCO_SD_DZ
+{
+	weight = 5.4;
+};
+class L85A2_CCO_SD_FL_DZ
+{
+	weight = 5.6;
+};
+class L85A2_CCO_SD_MFL_DZ
+{
+	weight = 5.6;
+};
 class L85_Holo_DZ
+{
+	weight = 5.2;
+};
+class L85A2_Holo_FL_DZ
+{
+	weight = 5.4;
+};
+class L85A2_Holo_MFL_DZ
+{
+	weight = 5.4;
+};
+class L85A2_Holo_SD_DZ
+{
+	weight = 5.4;
+};
+class L85A2_Holo_SD_FL_DZ
+{
+	weight = 5.6;
+};
+class L85A2_Holo_SD_MFL_DZ
+{
+	weight = 5.6;
+};
+class L85A2_ACOG_DZ
+{
+	weight = 5.2;
+};
+class L85A2_ACOG_FL_DZ
+{
+	weight = 5.4;
+};
+class L85A2_ACOG_MFL_DZ
+{
+	weight = 5.4;
+};
+class L85A2_ACOG_SD_DZ
+{
+	weight = 5.4;
+};
+class L85A2_ACOG_SD_FL_DZ
+{
+	weight = 5.6;
+};
+class L85A2_ACOG_SD_MFL_DZ
+{
+	weight = 5.6;
+};
+class BAF_L85A2_RIS_Holo
 {
 	weight = 5.2;
 };
