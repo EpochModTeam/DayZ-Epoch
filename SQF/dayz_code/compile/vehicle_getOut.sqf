@@ -39,7 +39,7 @@ if (_unit == player) then {
 		};
 
 		//Log to server RPT (could give false pos) - should help admins see who is trying to abuse this.
-		PVDZ_Server_LogIt = format["Player %1 exited a vehicle(%2) close to buildable object as %3",_unit, (typeof _vehicle), _position];
+		PVDZ_Server_LogIt = format["Player %1 exited a %2 close to buildable object as %3",_unit, (typeof _vehicle), _position];
 		publicVariableServer "PVDZ_Server_LogIt";
 
 		localize "str_actions_exitBlocked" call dayz_rollingMessages;
@@ -51,7 +51,7 @@ if (_unit == player) then {
 	if (((speed _vehicle) > 15) or ((speed _vehicle) < -10)) then {
 		dayz_getoutTime = diag_tickTime;
 	};
-};
 
-//Debug Info
-//diag_log format["%1(%4) - %2 - %3, (playerPos: %5, ExitPos: %6, IntersectsWith: %7)",_vehicle,_position,_unit,(speed _vehicle),_playerPos,_exitPosition,_intersectsWith];
+	//Debug Info
+	//diag_log format["%1(%4) - %2 - %3, (playerPos: %5, ExitPos: %6, IntersectsWith: %7)",_vehicle,_position,_unit,(speed _vehicle),_playerPos,_exitPosition,_intersectsWith];
+};
