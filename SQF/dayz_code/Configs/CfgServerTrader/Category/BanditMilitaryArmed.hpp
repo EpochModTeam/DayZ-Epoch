@@ -14,11 +14,6 @@ class Category_569 {
 		buy[] = {6,"ItemGoldBar10oz"};
 		sell[] = {3,"ItemGoldBar10oz"};
 	};
-	class BTR40_MG_TK_INS_EP1 {
-		type = "trade_any_vehicle";
-		buy[] = {1,"ItemBriefcase100oz"};
-		sell[] = {5,"ItemGoldBar10oz"};
-	};
 	class GAZ_Vodnik_DZE {
 		type = "trade_any_vehicle";
 		buy[] = {2,"ItemBriefcase100oz"};
