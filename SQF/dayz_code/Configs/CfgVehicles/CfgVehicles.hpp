@@ -4,7 +4,8 @@ class WeaponCloudsGun;  // External class reference
 class WeaponFireMGun;   // External class reference
 class WeaponCloudsMGun;
 
-class CfgVehicles {
+class CfgVehicles 
+{
 	class ALL;
 	class AllVehicles : ALL
 	{
@@ -170,8 +171,11 @@ class CfgVehicles {
 		class ViewPilot;
 		class AnimationSources;
 		class EventHandlers;
-		class Reflectors {
-			class Left {
+		class Reflectors
+		{
+			class Left
+			{
+				angle = 120;
 				color[] = {0.9,0.8,0.8,1};
 				ambient[] = {0.1,0.1,0.1,1};
 				position = "L svetlo";
@@ -181,7 +185,9 @@ class CfgVehicles {
 				size = 0.5;
 				brightness = 0.5;
 			};
-			class Right {
+			class Right
+			{
+				angle = 120;
 				color[] = {0.9,0.8,0.8,1};
 				ambient[] = {0.1,0.1,0.1,1};
 				position = "P svetlo";
@@ -198,7 +204,7 @@ class CfgVehicles {
 			class Salvage {ACTION_SALVAGE; radius = 4;};
 		};*/
 	};
-	class Car: LandVehicle {
+	class Car : LandVehicle {
 		class HitPoints
 		{
 			class HitEngine;
@@ -273,7 +279,7 @@ class CfgVehicles {
 		};
 		class Eventhandlers;
 	};
-	class Truck;
+
 
 	//External Class
 	//class SkodaBase; //in Car\Skoda.hpp
@@ -291,7 +297,16 @@ class CfgVehicles {
 			class HitRBWheel:HitRBWheel{armor=1;};
 		};
 	};
-	class Motorcycle;
+	class Motorcycle : LandVehicle
+	{
+		class Reflectors
+		{
+			class Right
+			{
+				angle = 90;
+			};
+		};
+	};
 	class RubberBoat;
 	//class UAZ_Unarmed_Base;
 	//class HMMWV_Base;
@@ -299,7 +314,21 @@ class CfgVehicles {
 	class AH6X_EP1;
 	class An2_Base_EP1;
 	class TT650_Base;
-	class V3S_Base;
+	class Truck;
+	class V3S_Base : Truck
+	{
+		class Reflectors
+		{
+			class Left
+			{
+				angle = 120;
+			};
+			class Right
+			{
+				angle = 120;
+			};
+		};
+	};
 	class SUV_Base_EP1 : Car
 	{
 		class HitPoints : HitPoints
@@ -337,10 +366,26 @@ class CfgVehicles {
 	class BuiltItems;
 	class Building;
 	class ReammoBox;
-	
 	class M1030_base;
 	class MMT_base;
-	class Old_bike_base_EP1;
+	class Bicycle;
+	class Old_bike_base_EP1 : Bicycle
+	{
+		class Reflectors 
+		{
+			class Right
+			{
+				color[] = {0.9,0.8,0.8,1};
+				ambient[] = {0.1,0.1,0.1,1};
+				position = "P svetlo";
+				direction = "konec P svetla";
+				hitpoint = "P svetlo";
+				selection = "P svetlo";
+				brightness = 0.4;
+				size = 1;
+			};
+		};
+	};
 	class Old_moto_base;
 	class Ikarus_base;
 	//class Volha_TK_CIV_Base_EP1;

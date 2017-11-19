@@ -52,6 +52,8 @@ class AH6J_EP1_DZE: AH6J_EP1_DZ
 class AH6X_DZ: AH6X_EP1 {
 	displayname = $STR_VEH_NAME_AH6X;
 	displaynameshort = $STR_EP1_DN_AH6X;
+	model = "dayz_vehicles\helicopters\greybird\greybird.p3d";
+	//cargoAction[] = {"AH6j_Cargo_EP1","UH1Y_Cargo01","UH1Y_Cargo01"};
 	audible = 6;
 	enablemanualfire = 0;
 	scope = public;
@@ -61,7 +63,6 @@ class AH6X_DZ: AH6X_EP1 {
 	hiddenselections[] = {"camo1"};
 	hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa"};
 	icon = "\ca\air_e\data\UI\Icon_ah6x_CA.paa";
-	model = "\ca\air_e\ah6j\ah6x";
 	picture = "\ca\air_e\data\UI\Picture_ah6x_CA.paa";
 	isuav = 0;
 	radartype = 0;

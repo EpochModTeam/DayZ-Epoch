@@ -1,16 +1,18 @@
-class V3S_Civ: V3S_Base {
-		crew = "";
-		faction = "CIV";
-		rarityurban = 0.3;
-		scope = public;
-		side = 3;
-		typicalCargo[] = {};
-		class TransportMagazines {};
-		class TransportWeapons {};
-		class Library {
-			libtextdesc = $STR_EP1_LIB_V3S;
-		};
+class V3S_Civ : V3S_Base 
+{
+	crew = "";
+	faction = "CIV";
+	rarityurban = 0.3;
+	scope = public;
+	side = 3;
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	class Library 
+	{
+		libtextdesc = $STR_EP1_LIB_V3S;
 	};
+};
 
 class V3S_Base_EP1;
 class V3S_Open_TK_CIV_EP1: V3S_Base_EP1 {

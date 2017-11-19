@@ -14,13 +14,14 @@ class UH1H_base: Helicopter
 	};
 };
 
-class UH1H_DZ: UH1H_base 
+class UH1H_DZ: UH1H_base
 {
 	displayname = "UH-1H (Green Camo)";
 	displaynameshort = "UH-1H (Green Camo)";
 	scope = public;
 	side = 2;
 	crew = "";
+	model = "dayz_vehicles\helicopters\huey\huey.p3d";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
 	class TransportMagazines{};

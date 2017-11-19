@@ -30,6 +30,8 @@
 [UPDATED] Moved large format strings in dayz_server to str formatText to avoid A2 2048 format character limit corrupting hive data in some cases.
 [UPDATED] Vehicles can now only be sold from the "Gear" sell menu. This prevents accidental selling when using the "sell all" feature on backpacks and vehicle inventories.
 [UPDATED] Added all upgraded weapons to the traders as sell only for the sell price of the base weapon plus the sell price of attachments. This allows them to be sold without removing attachments first. #1982 @worldwidesorrow
+[UPDATED] Increased the coverage angle of headlights on land vehicles and added a headlight to the bicycle
+[UPDATED] The huey searchlight and gunner seat now have improved visibility in first person view.
 
 [FIXED] Purchased and upgraded vehicles will now spawn quicker and no longer be destroyed by sched_safetyVehicle when server FPS is low. HiveExt.dll and SQL must be updated. See 1.0.6.2_Updates.sql
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
