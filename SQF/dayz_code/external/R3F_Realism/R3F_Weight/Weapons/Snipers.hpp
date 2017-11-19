@@ -118,13 +118,21 @@ class SVD
 };
 class SVD_DZ
 {
+	weight =  6;
+};
+class SVD_Gh_DZ
+{
+	weight =  6.1;
+};
+class SVD_PSO1_DZ
+{
 	weight =  6.2;
 };
-class SVD_Camo
+class SVD_PSO1_Gh_DZ
 {
 	weight =  6.3;
 };
-class SVD_Gh_DZ
+class SVD_Camo
 {
 	weight =  6.3;
 };
