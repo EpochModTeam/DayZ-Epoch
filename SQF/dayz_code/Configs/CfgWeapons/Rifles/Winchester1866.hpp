@@ -1,10 +1,6 @@
-class Winchester1866_DZ : Rifle
+class Winchester1866_Base : Rifle
 {
 	scope = public;
-	
-	model = "\dayz_weapons\models\Winchester1866.p3d";
-	picture = "\dayz_weapons\textures\equip_winchester1866_CA.paa";
-	displayname = $STR_DZ_WPN_W1866_NAME;
 	descriptionShort = $STR_DZ_WPN_W1866_DESC;
 	
 	magazines[] = {15Rnd_W1866_Slug};
@@ -29,4 +25,11 @@ class Winchester1866_DZ : Rifle
 		recoil = "recoil_single_primary_9outof10";
 		recoilProne = "recoil_single_primary_prone_8outof10";
 	};
+};
+
+class Winchester1866_DZ : Winchester1866_Base
+{
+	model = "\dayz_weapons\models\Winchester1866.p3d";
+	picture = "\dayz_weapons\textures\equip_winchester1866_CA.paa";
+	displayname = $STR_DZ_WPN_W1866_NAME;
 };

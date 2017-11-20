@@ -20,13 +20,10 @@
 	brightness = 0.08;\
 }
 
-class Remington870_DZ : Rifle
+class Remington870_Base : Rifle
 {
 	scope = public;
 	
-	model = "\dayz_weapons\models\Remington870.p3d";
-	picture = "\dayz_weapons\textures\equip_remington870_CA.paa";
-	displayname = $STR_DZ_WPN_R870_NAME;
 	descriptionShort = $STR_DZ_WPN_R870_DESC;
 	
 	magazines[] =
@@ -57,6 +54,14 @@ class Remington870_DZ : Rifle
 		recoil = "recoil_single_primary_9outof10";
 		recoilProne = "recoil_single_primary_prone_8outof10";
 	};
+};
+
+class Remington870_DZ : Remington870_Base
+{
+	model = "\dayz_weapons\models\Remington870.p3d";
+	picture = "\dayz_weapons\textures\equip_remington870_CA.paa";
+	displayname = $STR_DZ_WPN_R870_NAME;
+	
 	class Attachments
 	{
 		Attachment_FL = "Remington870_FL_DZ";

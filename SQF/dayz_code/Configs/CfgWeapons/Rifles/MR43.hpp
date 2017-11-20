@@ -1,15 +1,12 @@
-class MR43_DZ : Rifle
+class MR43_Base : Rifle
 {
 	scope = public;
 	
-	model = "\dayz_weapons\models\mr43.p3d";
-	picture = "\dayz_weapons\textures\equip_mr43_CA.paa";
-	displayname = $STR_DZ_WPN_MR43_NAME;
 	descriptionShort = $STR_DZ_WPN_MR43_DESC;
 	
 	magazines[] =
 	{
-		2Rnd_12Gauge_Buck,
+		2Rnd_12Gauge_Buck,	
 		2Rnd_12Gauge_Slug		
 	};
 	
@@ -46,4 +43,11 @@ class MR43_DZ : Rifle
 		recoil = "recoil_single_primary_9outof10";
 		recoilProne = "recoil_single_primary_prone_8outof10";
 	};
+};
+
+class MR43_DZ : MR43_Base
+{
+	model = "\dayz_weapons\models\mr43.p3d";
+	picture = "\dayz_weapons\textures\equip_mr43_CA.paa";
+	displayname = $STR_DZ_WPN_MR43_NAME;
 };
