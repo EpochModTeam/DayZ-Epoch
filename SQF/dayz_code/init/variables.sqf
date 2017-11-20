@@ -590,6 +590,7 @@ if (!isDedicated) then {
 
 	//player special variables
 	dayz_bloodBagHumanity = 300;
+	dayz_HarvestingChance = [0.09];
 	dayz_lastCheckBit = 0;
 	dayz_lastDamageSourceNull = false;
 	dayz_lastDamageSource = "none";

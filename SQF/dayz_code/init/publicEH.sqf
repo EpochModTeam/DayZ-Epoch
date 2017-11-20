@@ -198,9 +198,7 @@ if (isServer) then {
 	};
 	
 	/*"PVDZ_Server_LogIt" addPublicVariableEventHandler {
-		_unitSending = _this select 0;
 		_info = _this select 1;
-		
 		diag_log format["WARNING: %1",_info];
 	};*/
 	
@@ -318,7 +316,7 @@ if (!isDedicated) then {
 	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgRolling or DZE_DeathMsgDynamicText) then {
 		"PVDZE_deathMessage" addPublicVariableEventHandler {(_this select 1) call dze_deathMessage};
 	};
-	
+
 	if (dayz_enableFlies) then {
 		// flies and swarm sound sync
 		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_flies.sqf";

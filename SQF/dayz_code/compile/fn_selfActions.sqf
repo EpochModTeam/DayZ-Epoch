@@ -523,6 +523,8 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	//Only the owners can lock the gates
 	_isLockableGate = _typeOfCursorTarget in ["WoodenGate_2","WoodenGate_3","WoodenGate_4","MetalGate_2","MetalGate_3","MetalGate_4"];
 	_isUnlocked = _cursorTarget getVariable ["isOpen","0"] == "1";
+	
+	_isActionInProgress = _cursorTarget getVariable ["actionInProgress",false];
 
 	//Allow the gates to be opened when not locked by anyone
 	_isOpen = ((_cursorTarget animationPhase "DoorL") == 1) || ((_cursorTarget animationPhase "DoorR") == 1);
@@ -597,7 +599,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_lockhouse = -1;
 	};
 	//Break In
-	if ((_isHouse or _isLockableGate) && (_ownerPID != _uid) && !_isUnlocked) then {
+	if ((_isHouse or _isLockableGate) && (_ownerPID != _uid) && !_isUnlocked && !_isActionInProgress) then {
 		if (s_player_breakinhouse < 0) then {
 			s_player_breakinhouse = player addAction [localize "STR_BLD_ACTIONS_BREAKIN", "\z\addons\dayz_code\actions\player_breakin.sqf",_cursorTarget, 1, true, true];
 		};

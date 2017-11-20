@@ -10,6 +10,6 @@ _return = [0.25] call fn_chance; // will return TRUE 25% of the time
 *************************************************************/
 private ["_result"];
 
-if ((_this select 0) > (random 1)) then {_result = true;} else {_result = false;};
+_result = if (((_this select 0) * 100) > floor(random 100)) then { true } else { false };
 
 _result

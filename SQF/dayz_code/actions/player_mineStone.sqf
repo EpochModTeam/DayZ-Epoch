@@ -1,4 +1,4 @@
-private ["_item","_dis","_sfx","_breaking","_counter","_rocks","_findNearestRock","_objName","_countOut","_isOk","_proceed","_finished","_itemOut"];
+private ["_mineChance","_item","_dis","_sfx","_breaking","_counter","_rocks","_findNearestRock","_objName","_countOut","_isOk","_proceed","_finished","_itemOut"];
 
 _item = _this;
 call gear_ui_init;
@@ -25,6 +25,9 @@ if (!isNull _findNearestRock) then {
     _counter = 0;
     _isOk = true;
     _proceed = false;
+	
+	//check chance before loop, for a maximum amount of 5 loops allowing 5 possiable chances
+	_mineChance = dayz_HarvestingChance call fn_chance;
 
     while {_isOk} do {
         //setup alert and speak
@@ -44,7 +47,7 @@ if (!isNull _findNearestRock) then {
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			
             _breaking = false;
-			if (dayz_toolBreaking && {[0.09] call fn_chance}) then {
+			if (dayz_toolBreaking && _mineChance) then {
                 _breaking = true;
                 if ("MeleePickaxe" in weapons player) then {
                     player removeWeapon "MeleePickaxe";

@@ -1,5 +1,5 @@
 
-private ["_dis","_sfx","_breaking","_countOut","_counter","_isOk","_proceed","_finished","_itemOut","_tree","_distance2d"];
+private ["_dis","_sfx","_breaking","_countOut","_counter","_isOk","_proceed","_finished","_itemOut","_tree","_distance2d","_chanceResult"];
 
 call gear_ui_init;
 closeDialog 1;
@@ -24,6 +24,9 @@ if (!isNull _tree) then {
     _counter = 0;
     _isOk = true;
     _proceed = false;
+	
+	//check chance before loop, for a maximum amount of 5 loops allowing 5 possiable chances
+	_chanceResult = dayz_HarvestingChance call fn_chance;
 
     while {_isOk} do {
         //setup alert and speak
@@ -43,7 +46,7 @@ if (!isNull _tree) then {
         if (_finished) then {
 			["Working",0,[50,10,5,0]] call dayz_NutritionSystem;
             _breaking = false;
-            if (dayz_toolBreaking && {[0.09] call fn_chance}) then {
+            if (dayz_toolBreaking && _chanceResult) then {
                 _breaking = true;
                 if ("MeleeHatchet" in weapons player) then {
                     player removeWeapon "MeleeHatchet";
