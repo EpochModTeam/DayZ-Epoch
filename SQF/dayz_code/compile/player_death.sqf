@@ -29,8 +29,8 @@ _camera camSetPos [_deathPos select 0, (_deathPos select 1) + 2, 5];
 _camera camCommit 0;
 
 if (!_killed) then {
-	//Kill the player if they are not already dead so they respawn into new unit
-	_body setHit ["body",1];
+	//Kill only if killed event handler has not already fired (respawnDelay=0 in description.ext)
+	player setDamage 1;
 };
 
 if (dayz_onBack != "") then {
@@ -74,7 +74,7 @@ if (!isNull _source) then {
 
 //Send Death Notice
 diag_log format["Player_Death: Body:%1 BodyName:%2 Infected:%3 SourceName:%4 SourceWeapon:%5 Distance:%6 Method:%7",_body,dayz_playerName,_infected,_sourceName,_sourceWeapon,_distance,_method];
-PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray dayz_playerName,_infected,toArray _sourceName,toArray _sourceWeapon,_distance,_method]; //Send name as array to avoid publicVariable value restrictions
+PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray dayz_playerName,_infected,toArray _sourceName,_sourceWeapon,_distance,_method]; //Send name as array to avoid publicVariable value restrictions
 publicVariableServer "PVDZ_plr_Death";
 
 _body setVariable ["deathType", if (_method == "suicide") then {"shot"} else {_method}, true];

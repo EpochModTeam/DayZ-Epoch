@@ -10,7 +10,7 @@ _playerID = _this select 3;
 _playerName = toString (_this select 4); //Sent as array to avoid publicVariable value restrictions
 _infected = _this select 5;
 _sourceName = toString (_this select 6);
-_sourceWeapon = toString (_this select 7);
+_sourceWeapon = _this select 7;
 _distance = _this select 8;
 _method = _this select 9;
 
