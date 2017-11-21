@@ -7047,7 +7047,7 @@
 			<Russian>%1 умер от %2</Russian>
 		</Key>
 		<Key ID="str_player_death_killed">
-			<English>%1 was killed by %2 with a %3 from %4m</English>
+			<English>%1 was killed by %2 with %3 from %4m</English>
 			<German>%1 wurde von %2 mit einer %3 aus %4m Entfernung getötet.</German>
 			<Russian>%1 был убит игроком %2 с %3 с расстояния %4м</Russian>
 		</Key>

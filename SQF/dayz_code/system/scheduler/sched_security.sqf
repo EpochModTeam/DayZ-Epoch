@@ -16,14 +16,14 @@ sched_security = {
 	_time = time;
 
 	if (typeName player != "OBJECT") then {
-		PVDZ_sec_atp = toArray (format["WARNING typename error for player UID#%1", getPlayerUID player]);
+		PVDZ_sec_atp = format["WARNING typename error for play3r UID#%1", getPlayerUID player];
 		publicVariableServer "PVDZ_sec_atp";
 		endMission "LOSER";
 	};
 
 	switch (true) do {
 		case (1==0) : {
-			PVDZ_sec_atp = toArray (format["WARNING true error for player UID#%1", getPlayerUID player]);
+			PVDZ_sec_atp = format["WARNING true error for play3r UID#%1", getPlayerUID player];
 			publicVariableServer "PVDZ_sec_atp";
 			endMission "LOSER";
 		};
@@ -33,7 +33,7 @@ sched_security = {
 	if (_time - _otime > 1 or _time < _otime) then {
 		_timeTrickCount = _timeTrickCount +1;
 		if (_timeTrickCount > 2) then {
-			PVDZ_sec_atp = toArray (format["WARNING unusual time shift for UID#%1", getPlayerUID player]);
+			PVDZ_sec_atp = format["WARNING unusual time shift for UID#%1", getPlayerUID player];
 			publicVariableServer "PVDZ_sec_atp";
 		};
 	};
@@ -43,7 +43,7 @@ sched_security = {
 	if (_pid != _netid) then {
 		_idTrickCount = _idTrickCount +1;
 		if (_idTrickCount > 2) then {
-			PVDZ_sec_atp = toArray (format["WARNING unusual outfit swap for UID#%1", getPlayerUID player]);
+			PVDZ_sec_atp = format["WARNING unusual outfit swap for UID#%1", getPlayerUID player];
 			publicVariableServer "PVDZ_sec_atp";
 		};
 	};
@@ -57,7 +57,7 @@ sched_security = {
 			    _u = (_list select _i);
 			    if (!isNull _u) then {
 			        _pos = getPosATL _u;
-			        PVDZ_sec_atp = toArray (format [ "From play3r UID#%1: illegal gr0up m3mber %2 at %3,%4... Server may be compromised!", getPlayerUID player, typeOf _u, _pos select 0, _pos select 1]);
+			        PVDZ_sec_atp = format ["From play3r UID#%1: illegal gr0up m3mber %2 at %3,%4... Server may be compromised!", getPlayerUID player, typeOf _u, _pos select 0, _pos select 1];
 			        publicVariableServer "PVDZ_sec_atp";
 			        deleteVehicle _u;
 			        _quit = true;

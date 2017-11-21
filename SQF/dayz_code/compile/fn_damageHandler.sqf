@@ -12,6 +12,7 @@ _damage = _this select 2;
 _source = _this select 3;
 _ammo = _this select 4;
 //diag_log format["%1 HandleDamage: Unit:%2 Hit:%3 Damage:%4 Source:%5 Ammo:%6",diag_tickTime,_unit,_hit,_damage,_source,_ammo];
+
 _unconscious = _unit getVariable ["NORRN_unconscious", false];
 _model = typeOf player;
 _sourceType = typeOf _source;
@@ -165,23 +166,22 @@ if (_unit == player) then {
 	_isVehicle = ({_sourceVehicleType isKindOf _x} count ["LandVehicle","Air","Ship"] > 0);
 
 	//Log to server. Useful for detecting damage and ammo cheats.
-	if (DZE_ServerLogHits && {!_isLocal} && {!_isZombieHit} && {_isMan or _isVehicle} && {diag_ticktime-(_source getVariable["lastloghit",0]) > 2}) then {
+	if (!_isLocal && {!_isZombieHit} && {_isMan or _isVehicle} && {diag_ticktime-(_source getVariable["lastloghit",0]) > 2}) then {
 		_wpst = weaponState _source;
 		_source setVariable ["lastloghit",diag_ticktime];
 		_sourceDist = round(_unit distance _source);
 		_sourceWeap = switch (true) do {
 			case (_ammo in ["PipeBomb","Mine","MineE"]): { format["with %1",_ammo] };
-			case (_isVehicle) : { format ["with a %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
+			case (_isVehicle) : { format ["with %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
 			case (_ammo in MeleeAmmo) : { format ["with %2%1",_wpst select 0, if (_sourceDist>6) then {"suspicious weapon "} else {""}] };
 			case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
-			case (["Horn", currentWeapon _source] call fnc_inString) : {"with suspicious vehicle "+str((getposATL _source) nearEntities [["Air", "LandVehicle", "Ship"],5])};
+			case (["Horn",currentWeapon _source] call fnc_inString) : { format ["with %1 suspicious", currentWeapon _source]};
 			case ((_wpst select 0 == "") AND {_wpst select 4 == 0}) : { format ["with %1/%2 suspicious", primaryWeapon _source, _ammo] };
 			case (_wpst select 0 != "") : { format ["with %1/%2 <ammo left:%3>", _wpst select 0, _ammo, _wpst select 4] };
 			default { "with suspicious weapon" };
 		};
 		
-		//Damage values over 999,999 will kick for PV value restriction (e+). These should not be possible for legitimate players.
-		PVDZ_sec_atp = [_unit, _source, toArray _sourceWeap, _sourceDist, _hit, str _damage]; //Send arbitrary string as array to allow stricter publicVariableVal.txt filter
+		PVDZ_sec_atp = [_unit, _source, _sourceWeap, _sourceDist, _hit, (_damage min 999999)];
 		publicVariableServer "PVDZ_sec_atp";
     };
 	
@@ -342,6 +342,7 @@ if (_damage > 0.4) then {
         if (!_isHit && !_isPZombie) then {
             //Create Wound
             _unit setVariable["hit_"+_wound,true,true];
+			
             PVDZ_hlt_Bleed = [_unit,_wound,_damage];
             publicVariable "PVDZ_hlt_Bleed";  // draw blood stream on character, on all gameclients
             [_unit,_wound,_hit] spawn fnc_usec_damageBleed;  // draw blood stream on character, locally
@@ -382,18 +383,15 @@ if (_hit in USEC_MinorWounds) then {
                         "height:", (Dayz_freefall select 1), "blood loss", (_nrj2 * 25) ];
                     [_unit,_hit,_damage] call object_processHit;
             } else {
-                    [_unit,"arms",(_damage / 6)] call object_processHit; // prevent broken legs due to arma bugs
+                    [_unit,"arms",(_damage / 6)] call object_processHit; // prevent broken arms due to arma bugs
             };
             if (_nrj2 > 30) then {
                 (3 min (_nrj2/100)) call fnc_usec_bulletHit; // red flash
                 r_player_blood = 0 max (r_player_blood - (_nrj2 * 25));
             };
         } else {
-            [_unit,_hit,(_damage / 2)] call object_processHit;
+			[_unit,_hit,(_damage / 2)] call object_processHit;
         };
-		
-		//Stop process hit running twice. its set aboue in the if else statement.
-		//[_unit,_hit,(_damage / 2)] call object_processHit;
 	};
 };
 

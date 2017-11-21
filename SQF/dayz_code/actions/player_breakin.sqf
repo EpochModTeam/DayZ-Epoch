@@ -121,7 +121,7 @@ if (isnil "_proceed") then {
 if (_proceed) then {
 	//Completed but no success.
 	if (!_brokein) then {
-		PVDZ_Server_LogIt = format["BROKEINFAILED: Player %1 Broke into Failed %2 at %3 chances:%4,%5",player, (typeof _target), (mapGridPosition _pos) , _sledgeChance, _crowBarChance];
+		PVDZ_sec_atp = format["BROKEINFAILED: Play3r %1 Broke into Failed %2 at %3 chances:%4,%5",player, (typeof _target), (mapGridPosition _pos), _sledgeChance, _crowBarChance];
 		
 		_msg = "STR_BLD_BREAKIN_COMPLETE_FAIL";
 	} else {
@@ -133,12 +133,12 @@ if (_proceed) then {
 		_target animate ["DoorL", 1];
 		
 		
-		PVDZ_Server_LogIt = format["BROKEINSUCCESSFUL: Player %1 Broke into %2 at %3",player, (typeof _target), (mapGridPosition _pos)];
+		PVDZ_sec_atp = format["BROKEINSUCCESSFUL: Play3r %1 Broke into %2 at %3",player, (typeof _target), (mapGridPosition _pos)];
 		
 		_msg = "STR_BLD_BREAKIN_COMPLETE";
 	};
 	//Send info to server for admins
-	publicVariableServer "PVDZ_Server_LogIt";
+	publicVariableServer "PVDZ_sec_atp";
 };
 
 //Interrupted for some reason

@@ -433,8 +433,8 @@ if (dayz_townGenerator) then {execVM "\z\addons\dayz_server\system\lit_fireplace
 "PVDZ_sec_atp" addPublicVariableEventHandler {
 	_x = _this select 1;
 	switch (1==1) do {
-		case (typeName (_x select 0) == "SCALAR") : { // just some logs from the client
-			diag_log (toString _x);
+		case (typeName _x == "STRING") : { // just some logs from the client
+			diag_log _x;
 		};
 		case (count _x == 2) : { // wrong side
 			diag_log format["P1ayer %1 reports possible 'side' hack. Server may be compromised!",(_x select 1) call fa_plr2Str];
@@ -444,7 +444,7 @@ if (dayz_townGenerator) then {execVM "\z\addons\dayz_server\system\lit_fireplace
 			_source = _x select 1;
 			if (!isNull _source) then {
 				diag_log format ["P1ayer %1 hit by %2 %3 from %4 meters in %5 for %6 damage",
-					_unit call fa_plr2Str, if (!isPlayer _source && alive _source) then {"AI"} else {_source call fa_plr2Str}, toString (_x select 2), _x select 3, _x select 4, _x select 5];
+					_unit call fa_plr2Str, if (!isPlayer _source && alive _source) then {"AI"} else {_source call fa_plr2Str}, _x select 2, _x select 3, _x select 4, _x select 5];
 			};
 		};
 	};

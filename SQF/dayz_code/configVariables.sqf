@@ -41,7 +41,6 @@ DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messa
 DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
 DZE_DeathMsgRolling = false; // Display death messages as rolling messages in bottom center of screen.
 DZE_DeathScreen = true; // True=Use Epoch death screen (Trade city obituaries have been amended) False=Use DayZ death screen (You are dead)
-DZE_ServerLogHits = false; // Log damage source, weapon, distance and ammo to server RPT for player hits. Useful for detecting damage and ammo cheats.
 
 // Dynamic Vehicles
 DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with

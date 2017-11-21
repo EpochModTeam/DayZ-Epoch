@@ -39,8 +39,8 @@ if (_unit == player) then {
 		};
 
 		//Log to server RPT (could give false pos) - should help admins see who is trying to abuse this.
-		PVDZ_Server_LogIt = format["Player %1 exited a %2 close to buildable object as %3",_unit, (typeof _vehicle), _position];
-		publicVariableServer "PVDZ_Server_LogIt";
+		PVDZ_sec_atp = format["WARNING: Play3r %1 exited %2 close to built fence as %3",_unit, (typeof _vehicle), _position];
+		publicVariableServer "PVDZ_sec_atp";
 
 		localize "str_actions_exitBlocked" call dayz_rollingMessages;
 

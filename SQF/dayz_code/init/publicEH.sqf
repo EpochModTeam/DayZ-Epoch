@@ -39,15 +39,15 @@ if (toLower worldName == "chernarus") then { //need to add building coordinates 
 						if (_ammo != "" && _ammo isKindOf "HelicopterExploSmall") then {
 							_who = player;
 							_dist = round (_who distance _building);
-							PVDZ_sec_atp = toArray (format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
-								getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist]);
+							PVDZ_sec_atp = format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
+								getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist];
 							publicVariableServer "PVDZ_sec_atp";
 						};
 					} else {
 						if (_who == player) then {
 							_dist = round (_who distance _building);
-							PVDZ_sec_atp = toArray (format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
-								getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist]);
+							PVDZ_sec_atp = format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
+								getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist];
 							publicVariableServer "PVDZ_sec_atp";
 						};
 					};
@@ -196,11 +196,6 @@ if (isServer) then {
 		};
 		*/
 	};
-	
-	/*"PVDZ_Server_LogIt" addPublicVariableEventHandler {
-		_info = _this select 1;
-		diag_log format["WARNING: %1",_info];
-	};*/
 	
 	//"PVDZ_Server_processSetAccessCode" addPublicVariableEventHandler {(_this select 1) call pvs_processSetAccessCode};
 	
