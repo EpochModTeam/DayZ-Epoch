@@ -26,6 +26,8 @@ _show = switch _action do {
 	//case "ObjectUpgrade": {CAN_DO && !IN_VEHICLE && !(_object getVariable["BuildLock",false])};
 	//case "ObjectMaintenance": {CAN_DO && !IN_VEHICLE && (_object getVariable["Maintenance",false] or IS_DAMAGED)};
 	//case "ObjectDisassembly": {CAN_DO && !IN_VEHICLE && HAS_TOOLBOX && !(_object getVariable["BuildLock",false]) && (((getPlayerUID player) in (_object getVariable["ownerArray",[]])) or (count (_object getVariable["ownerArray",[]]) == 0) or (typeOf _object in ["WoodenFence_1_foundation","WoodenGate_foundation"]))};
+	//Turrets
+	//case "AddAmmo": {IS_ALIVE && CAN_DO && IN_VEHICLE && (((assignedVehicleRole player) select 0) == 'Turret')};
 	default {false};
 };
 
