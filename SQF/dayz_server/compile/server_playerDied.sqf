@@ -32,13 +32,11 @@ if (_characterID != "0") then {
 	_key call server_hiveWrite;
 };
 
-#ifdef PLAYER_DEBUG
 diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2", 
 	_newObject call fa_plr2str, _pos call fa_coor2str,
 	_playerID, _characterID,
 	typeOf _newObject
 ];
-#endif
 
 // DEATH MESSAGES
 _suicide = ((_sourceName == _playerName) or (_method == "suicide"));

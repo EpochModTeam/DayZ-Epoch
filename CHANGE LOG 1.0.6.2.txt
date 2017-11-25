@@ -79,6 +79,7 @@
 [FIXED] A locked door can now be auto unlocked right after placement by the player who built it
 [FIXED] A rare error in keyboard.sqf for certain combination binds.
 [FIXED] Floating loot positions in hotel (Land_HouseB_Tenement)
+[FIXED] Updates to humanity and player stats after a skin change not always saving in hive (server_getDiff)
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 

@@ -1,8 +1,10 @@
+#include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
+
 private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_currentModel","_currentAnim",
 "_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_playerBackp","_exitReason",
 "_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
 "_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
-"_magazines","_characterID","_charPos","_isInVehicle","_name","_inDebug","_newPos","_count","_maxDist","_relocate","_playerUID"];
+"_magazines","_characterID","_charPos","_isInVehicle","_name","_inDebug","_newPos","_count","_maxDist","_relocate","_playerUID","_statsDiff"];
 //[player,array]
 
 _character = _this select 0;
@@ -45,17 +47,13 @@ _lastTime = _character getVariable ["lastTime",-1];
 _modelChk = 	_character getVariable ["model_CHK",""];
 _temp = round (_character getVariable ["temperature",100]);
 _lastMagazines = _character getVariable ["ServerMagArray",[[],""]];
-/*
-	Check previous stats against what client had when they logged in
-	this helps prevent JIP issues, where a new player wouldn't have received
-	the old players updates. Only valid for stats where clients could have
-	be recording results from their local objects (such as agent zombies)
-*/
-_kills = 		["zombieKills",_character] call server_getDiff;
-_killsB = 		["banditKills",_character] call server_getDiff;
-_killsH = 		["humanKills",_character] call server_getDiff;
-_headShots = 	["headShots",_character] call server_getDiff;
-_humanity = 	["humanity",_character] call server_getDiff2;
+//Get difference between current stats and stats at last sync
+_statsDiff = [_character,_playerUID] call server_getStatsDiff;
+_humanity = _statsDiff select 0;
+_kills = _statsDiff select 1;
+_headShots = _statsDiff select 2;
+_killsH = _statsDiff select 3;
+_killsB = _statsDiff select 4;
 
 _charPosLen = count _charPos;
 
@@ -225,8 +223,9 @@ _key = if (Z_SingleCurrency) then {
 	str formatText["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity]
 };
 
-//diag_log str formatText["INFO - %2(UID:%3) PlayerSync, %1",_key,_name,_playerUID];
-
+#ifdef PLAYER_DEBUG
+	diag_log str formatText["INFO - %2(UID:%4,CID:%3) PlayerSync, %1",_key,_name,_characterID,_playerUID];
+#endif
 _key call server_hiveWrite;
 
 if (Z_SingleCurrency) then { //update global coins

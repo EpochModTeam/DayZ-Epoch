@@ -1,4 +1,4 @@
-private ["_charID","_newmodel","_old","_updates","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_wpnType","_ismelee","_survivalTime","_coins","_bankCoins","_globalCoins"];
+private ["_charID","_newmodel","_old","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_wpnType","_ismelee","_survivalTime","_coins","_bankCoins","_globalCoins"];
 //_playerUID = _this select 0;
 _charID = _this select 1;
 _model = _this select 2;
@@ -11,9 +11,6 @@ _old removeAllEventHandlers "Fired";
 _old allowDamage false;
 _old AddEventHandler ["HandleDamage", {False}];
 
-_updates = player getVariable ["updatePlayer",[false,false,false,false,false]];
-_updates set [0,true];
-player setVariable ["updatePlayer",_updates,true];
 dayz_unsaved = true;
 //Logout
 _humanity = player getVariable ["humanity",0];

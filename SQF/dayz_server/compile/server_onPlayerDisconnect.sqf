@@ -91,6 +91,8 @@ if (_characterID != "?") then {
 	[_playerUID,_characterID,3,_playerName,(_playerPos call fa_coor2str)] call dayz_recordLogin;
 };
 
+missionNamespace setVariable [_playerUID,nil];
+
 if (alive _playerObj) then {
 	_playerObj call sched_co_deleteVehicle;
 };
