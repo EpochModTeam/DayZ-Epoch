@@ -1094,46 +1094,46 @@
 			<Czech>Chybějí vám následující věci: %1 %2</Czech>
 		</Key>
 		<Key ID="str_crafting_failed">
-			<English>Failed to create an %1</English>
+			<English>Failed to create %1.</English>
 			<German>%1 konnte nicht hergestellt werden.</German>
-			<Russian>Не удалось создать %1</Russian>
+			<Russian>Не удалось создать %1.</Russian>
 			<Spanish>Se falló al crear: %1</Spanish>
-			<French>Impossible de créer %1</French>
-			<Czech>Nepodařilo se vytvořit %1</Czech>
+			<French>Impossible de créer %1.</French>
+			<Czech>Nepodařilo se vytvořit %1.</Czech>
 		</Key>
 		<Key ID="str_crafting_space">
-			<English>Not enough inventory space to make items.</English>
-			<German>Du hast nicht genug Platz im Inventar, um den Gegenstand herzustellen.</German>
+			<English>Not enough inventory space to make the items.</English>
+			<German>Du hast nicht genug Platz im Inventar, um die Gegenstände herzustellen.</German>
 			<Russian>В инвентаре уже нет места.</Russian>
 			<Spanish>No hay espacio suficiente en tu inventario para crear objetos.</Spanish>
-			<French>Espace insuffisant pour créer les éléments.</French>
+			<French>Espace insuffisant pour créer les objets.</French>
 			<Czech>Nemáte dostatek místa v inventáři pro vyrobení předmětu.</Czech>
 		</Key>
 		<Key ID="str_crafting_success">
-			<English>Successfully created %1</English>
+			<English>Successfully created %1.</English>
 			<German>%1 wurde erfolgreich hergestellt.</German>
-			<Russian>Успешно создано (%1)</Russian>
+			<Russian>Успешно создано (%1).</Russian>
 			<Spanish>Se creó existosamente: %1</Spanish>
-			<French>Création de %1 réussie</French>
-			<Czech>Úspěšně jste vyrobili %1</Czech>
+			<French>Création de %1 réussie.</French>
+			<Czech>Úspěšně jste vyrobili %1.</Czech>
 		</Key>
 		<Key ID="str_salvage_destroyed">
 			<!-- %1 part name %2 veh name -->
-			<English>You have destroyed %1 while attempting to remove from %2</English>
-			<Spanish>Destruiste %1 al tratar de retirarlo del %2</Spanish>
-			<Russian>Вы сломали %1 в процессе демонтажа с %2</Russian>
+			<English>You have destroyed %1 while attempting to remove from %2.</English>
+			<Spanish>Destruiste %1 al tratar de retirarlo del %2.</Spanish>
+			<Russian>Вы сломали %1 в процессе демонтажа с %2.</Russian>
 			<Czech>%1 se vám při pokusu o demontáž z %2 podařilo úplně zničit.</Czech>
-			<French>Vous avez détruit %1 lors tentative de retrait de %2</French>
+			<French>Vous avez détruit %1 lors tentative de retrait de %2.</French>
 			<German>%1 wurde zerstört, als du versucht hast %2 auszuschlachten.</German>
-			<Dutch>Je hebt %1 gesloopt tijdens het demonteren van de %2</Dutch>
+			<Dutch>Je hebt %1 gesloopt tijdens het demonteren van de %2.</Dutch>
 		</Key>
 		<Key ID="str_salvage_removed">
 			<!-- %1 part name %2 veh name -->
-			<English>You have successfully removed %1 from the %2</English>
-			<Spanish>Retiraste exitosamente %1 del %2</Spanish>
-			<Russian>Вы успешно демонтировали %1 с %2</Russian>
-			<Czech>Úspěšně jste odmontovali %1 z %2</Czech>
-			<French>Vous avez retiré %1 de %2</French>
+			<English>You have successfully removed %1 from the %2.</English>
+			<Spanish>Retiraste exitosamente %1 del %2.</Spanish>
+			<Russian>Вы успешно демонтировали %1 с %2.</Russian>
+			<Czech>Úspěšně jste odmontovali %1 z %2.</Czech>
+			<French>Vous avez retiré %1 de %2.</French>
 			<German>%1 wurde erfolgreich aus %2 ausgebaut.</German>
 			<Dutch>Je hebt met succes de %1 van de %2 verwijderd.</Dutch>
 		</Key>
@@ -1177,7 +1177,7 @@
 			<Spanish>Pescaste un %1</Spanish>
 			<Czech>Chytili jste %1</Czech>
 			<French>Vous avez attrapé un %1.</French>
-			<German>Du hast eine(n) %1 gefangen!</German>
+			<German>Du hast eine(n) %1 gefangen.</German>
 		</Key>
 		<Key ID="str_fishing_equip">
 			<English>You need to equip your fishing pole.</English>
@@ -1192,7 +1192,7 @@
 			<Russian>Рыбалка отменена.</Russian>
 			<Spanish>Pesca Cancelada</Spanish>
 			<Czech>Rybaření přerušeno.</Czech>
-			<French>Pêche annulée</French>
+			<French>Pêche annulée.</French>
 			<German>Das Angeln wurde abgebrochen.</German>
 			<Dutch>Gestopt met vissen.</Dutch>
 		</Key>
@@ -1201,7 +1201,7 @@
 			<Russian>Чтобы рыбачить, нужно находиться на берегу или в лодке.</Russian>
 			<Spanish>Debes estar cerca de la costa o en un bote para pescar.</Spanish>
 			<Czech>Je nutné být blízko břehu nebo na lodi, abyste mohli rybařit.</Czech>
-			<French>Vous devez être face à la mer ou un plan d'eau pour pêcher</French>
+			<French>Vous devez être face à la mer ou un plan d'eau pour pêcher.</French>
 			<German>Du musst in der Nähe der Küste oder auf einem Boot sein, um zu angeln.</German>
 		</Key>
 		<Key ID="str_fishing_cast">
@@ -1252,17 +1252,17 @@
 			<Russian>Готовимся слить топливо. Не дергайтесь, чтобы наполнить %1.</Russian>
 			<Spanish>Preparando el sifón, quedate quieto para llenar el %1.</Spanish>
 			<Czech>Začíná přečerpávání. Stůjte klidně, abyste naplnili %1.</Czech>
-			<French>Prêt pour le siphonnage, ne bougez plus pour remplir le %1</French>
+			<French>Prêt pour le siphonnage, ne bougez plus pour remplir le %1.</French>
 			<German>Der Treibstoff kann abgezapft werden. Stillhalten, um %1 zu füllen.</German>
 			<Dutch>Bezig met brandstofverplaatsing, sta stil om %1 te vullen.</Dutch>
 		</Key>
 		<Key ID="str_siphon_drained">
 			<!-- %1 vehicle name -->
-			<English>%1 has been drained for %2 litres of Fuel</English>
+			<English>%1 has been drained for %2 litres of fuel.</English>
 			<Russian>Из %1 слито %2л топлива.</Russian>
 			<Spanish>Se le sustrajo %2 litros de combustible al %1.</Spanish>
 			<Czech>Z %1 bylo přečerpáno %2 litrů paliva.</Czech>
-			<French>Le %1 a été siphonné de %2 litres de carburant</French>
+			<French>Le %1 a été siphonné de %2 litres de carburant.</French>
 			<German>%1 wurden %2 Liter Treibstoff abgezapft.</German>
 			<Dutch>Je hebt %2 liter brandstof uit de %1 gehaald.</Dutch>
 		</Key>
@@ -1288,9 +1288,9 @@
 		</Key>
 		<Key ID="str_siphon_canceled">
 			<English>Canceled siphon</English>
-			<Russian>Слив отменен.</Russian>
+			<Russian>Слив отменен</Russian>
 			<Spanish>Sifón cancelado</Spanish>
-			<Czech>Přečerpávání přerušeno.</Czech>
+			<Czech>Přečerpávání přerušeno</Czech>
 			<French>Annuler le siphonnage</French>
 			<German>Das Abzapfen wurde abgebrochen.</German>
 			<Dutch>Brandstofverplaatsing stopgezet</Dutch>
@@ -1377,7 +1377,7 @@
 			<German>%1 ist bereits in deinem Inventar, deswegen lässt du es fallen.</German>
 			<Russian>%1 уже в вашем инвентаре. Сброшено на землю!</Russian>
 			<Dutch>%1 is al in je inventaris. Het laten vallen op de grond!</Dutch>
-			<French>%1 est déjà dans votre inventaire. Déposer sur le terrain!</French>
+			<French>%1 est déjà dans votre inventaire. Déposé sur le terrain!</French>
 			<Czech>%1 je již ve vašem inventáři. Pád na zem!</Czech>
 		</Key>
 		<Key ID="str_siphon_hose">
@@ -1564,7 +1564,7 @@
 		<Key ID="str_maintenanceNoOption">
 			<English>Object has no maintenance option.</English>
 			<Russian>Необслуживаемый объект.</Russian>
-			<French>Cet objet n&apos;a pas d&apos;option de maintenance</French>
+			<French>Cet objet n&apos;a pas d&apos;option de maintenance.</French>
 			<Czech>Na tomto objektu nelze provádět údržbu.</Czech>
 			<German>Dieses Objekt muss nicht gewartet werden.</German>
 		</Key>
@@ -1576,9 +1576,9 @@
 			<German>Du musst auf den Gegenstand schauen, mit dem du interagieren möchtest!</German>
 		</Key>
 		<Key ID="str_CannotUpgrade">
-			<English>Unable to upgrade at this time</English>
-			<Russian>Невозможно улучшить в данный момент</Russian>
-			<French>Amélioration impossible pour l&apos;instant</French>
+			<English>Unable to upgrade at this time.</English>
+			<Russian>Невозможно улучшить в данный момент.</Russian>
+			<French>Amélioration impossible pour l&apos;instant.</French>
 			<Czech>V této chvíli nelze vylepšit.</Czech>
 			<German>Dieses Objekt kann gerade nicht erweitert werden.</German>
 		</Key>
@@ -1592,44 +1592,44 @@
 		<Key ID="str_upgradeNoOption">
 			<English>Object has no upgrade option.</English>
 			<Russian>Объект нельзя улучшить.</Russian>
-			<French>Cet objet n&apos;a pas d&apos;option d&apos;amélioration</French>
+			<French>Cet objet n&apos;a pas d&apos;option d&apos;amélioration.</French>
 			<Czech>Tento objekt nelze vylepšit.</Czech>
 			<German>Dieses Objekt kann nicht erweitert werden.</German>
 		</Key>
 		<Key ID="str_bombAttached">
 			<English>Attached carbomb! The next survivor who starts the engine will blow up!</English>
 			<Russian>Бомба установлена! Выжившего, который решится завести двигатель разорвет на кусочки!</Russian>
-			<French>La bombe est posée! La prochaine personne qui démarrele véhicule sera éparpillée façon puzzle.</French>
+			<French>La bombe est posée! La prochaine personne qui démarrele véhicule sera éparpillée façon puzzle!</French>
 			<Czech>Bomba umístěna! Ten, kdo příště nastartuje motor, se upeče!</Czech>
 			<German>Sprengsatz angebracht! Die nächste Person, die den Motor startet, wird in die Luft fliegen!</German>
 		</Key>
 		<Key ID="str_bombAlready">
 			<English>This vehicle already has a bomb attached!</English>
 			<Russian>На этот транспорт уже установлена бомба!</Russian>
-			<French>Ce véhicule a déjà une bombe de posée</French>
+			<French>Ce véhicule a déjà une bombe de posée!</French>
 			<Czech>Na tomto vozidle je již bomba umístěna!</Czech>
 			<German>An diesem Fahrzeug ist bereits ein Sprengsatz angebracht!</German>
 		</Key>
 		<Key ID="str_bombMissing">
-			<English>You don&apos;t have a bomb in your inventory</English>
-			<Russian>Нужна бомба в инвентаре</Russian>
-			<French>Vous n&apos;avez pas de bombe</French>
-			<Czech>Nemáte u sebe bombu.</Czech>
+			<English>You don&apos;t have a bomb in your inventory!</English>
+			<Russian>Нужна бомба в инвентаре!</Russian>
+			<French>Vous n&apos;avez pas de bombe!</French>
+			<Czech>Nemáte u sebe bombu!</Czech>
 			<German>Du hast keinen Sprengsatz in deinem Inventar!</German>
 		</Key>
 		<Key ID="str_bombToolMissing">
-			<English>You need a toolbox and a crowbar to attach the bomb to this vehicle</English>
-			<Russian>Нужен ломик и ящик с инструментами, чтобы установить бомбу</Russian>
-			<French>Une boîte à outil et un pied-de-biche sont nécessaires pour poser la bombe</French>
+			<English>You need a toolbox and a crowbar to attach the bomb to this vehicle.</English>
+			<Russian>Нужен ломик и ящик с инструментами, чтобы установить бомбу.</Russian>
+			<French>Une boîte à outil et un pied-de-biche sont nécessaires pour poser la bombe.</French>
 			<Czech>K umístění bomby na tomto vozidle bude třeba sada nářadí a páčidlo.</Czech>
-			<German>Du benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen!</German>
+			<German>Du benötigst einen Werkzeugkasten und eine Brechstange, um an diesem Fahrzeug einen Sprengsatz anzubringen.</German>
 		</Key>
 		<Key ID="str_choppingTree">
 			<English>Chopping down tree.</English>
-			<Russian>Рубим дерево</Russian>
-			<French>Abattage de l&apos;arbre</French>
+			<Russian>Рубим дерево.</Russian>
+			<French>Abattage de l&apos;arbre.</French>
 			<Czech>Porážíte strom.</Czech>
-			<German>Baum wird gefällt</German>
+			<German>Baum wird gefällt.</German>
 		</Key>
 		<Key ID="str_cannotCombine">
 			<English>You have only one %1, there&apos;s nothing to combine.</English>
@@ -1641,7 +1641,7 @@
 		<Key ID="str_combineDoneFull">
 			<English>You&apos;ve combined %1 non-full %2(s) into %3 full %4.</English>
 			<Russian>Переснаряжено %3 полных (%4) из %1 неполных (%2).</Russian>
-			<French>Vous avez arrangé %1 %2s partiellement remplis en %3 %4 remplis</French>
+			<French>Vous avez arrangé %1 %2s partiellement remplis en %3 %4 remplis.</French>
 			<Czech>Zkombinovali jste %1x neúplný %2 a nyní máte %3x plný %4.</Czech>
 			<German>Du hast %1 teilweise gefüllte %2 zu %3 %4 kombiniert.</German>
 		</Key>
@@ -1653,8 +1653,8 @@
 			<German>Du hast %1 teilweise gefüllte %2 zu %3 %4 kombiniert. Das letzte %6 hat noch %4 %5.</German>
 		</Key>
 		<Key ID="str_combineDonePartialOne">
-			<English>You&apos;ve combined %1 non-full %2(s) into one.&lt;br/&gt;You have %3 %4 left</English>
-			<Russian>Переснаряжено %1 неполных (%2) в один. Осталось %3 %4</Russian>
+			<English>You&apos;ve combined %1 non-full %2(s) into one.&lt;br/&gt;You have %3 %4 left.</English>
+			<Russian>Переснаряжено %1 неполных (%2) в один. Осталось %3 %4.</Russian>
 			<French>Vous avez arrangé 1 %2 à partir de %1 %2s partiellement remplis.&lt;br/&gt;Il vous reste %3 %4.</French>
 			<Czech>Zkombinovali jste %1x neúplný %2 dohromady.&lt;br/&gt;Zbývá vám ještě %3x %4.</Czech>
 			<German>Du hast %1 teilweise gefüllte %2 zu einem kombiniert und hast %3 %4 übrig.</German>
@@ -4965,25 +4965,25 @@
 			<German>Ein Wolfsbarsch, welcher roh verzehrt werden kann.</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_TROUT_COOKED">
-			<English>Steelhead (Cooked)</English>
+			<English>Steelhead (cooked)</English>
 			<Russian>Форель (жареная)</Russian>
-			<Spanish>Trucha (Cocinada)</Spanish>
+			<Spanish>Trucha (cocinada)</Spanish>
 			<Czech>Pstruh (opečený)</Czech>
 			<French>Brochet (cuit)</French>
 			<German>Gebratene Stahlkopfforelle</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_TUNA_COOKED">
-			<English>Tuna (Cooked)</English>
+			<English>Tuna (cooked)</English>
 			<Russian>Тунец (жареный)</Russian>
-			<Spanish>Atún (Cocinado)</Spanish>
+			<Spanish>Atún (cocinado)</Spanish>
 			<Czech>Tuňák (opečený)</Czech>
 			<French>Thon (cuit)</French>
 			<German>Gebratener Thunfisch</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_SEABASS_COOKED">
-			<English>Seabass (Cooked)</English>
+			<English>Seabass (cooked)</English>
 			<Russian>Окунь (жареный)</Russian>
-			<Spanish>Lubina (Cocinada)</Spanish>
+			<Spanish>Lubina (cocinada)</Spanish>
 			<Czech>Mořčák (opečený)</Czech>
 			<French>Bar (cuit)</French>
 			<German>Gebratener Wolfsbarsch</German>
@@ -6565,7 +6565,7 @@
 			<Czech>Úspěšně jste připevnili %1 k %2</Czech>
 		</Key>
 		<Key ID="str_player_05">
-			<English>%1 has been filled with %2 litres of Fuel</English>
+			<English>%1 has been filled with %2 litres of fuel</English>
 			<German>%1 wurde mit %2 Litern Treibstoff betankt.</German>
 			<Russian>В %1 было залито %2 литров топлива.</Russian>
 			<Spanish>El %1 fue cargado con %2 litros de combustible.</Spanish>
@@ -6662,7 +6662,7 @@
 			<Czech>Spojení navázáno, vytvářím postavu</Czech>
 		</Key>
 		<Key ID="str_player_waiting_creation">
-			<English>Waiting for character to create</English>
+			<English>Waiting for character to be created</English>
 			<German>Warte auf Charaktererstellung</German>
 			<Russian>Ожидание создания персонажа</Russian>
 			<Spanish>Esperando a que el personaje sea creado</Spanish>
@@ -6715,7 +6715,7 @@
 			<Spanish>Este servidor está ejecutando una versión incorrecta de la aplicación del lado del servidor. No puedes jugar en este servidor.</Spanish>
 			<Czech>Tento server používá zastaralou verzi souborů pro hostování. Na tomto serveru nelze hrát.</Czech>
 			<French>Le serveur fonctionne avec une version incorrecte. Vous ne pouvez pas jouer sur ce serveur.</French>
-			<German>Dieser Server nutzt eine abweichende Serversoftware. Du kannst auf diesem Server nicht spielen.</German>
+			<German>Dieser Server nutzt eine abweichende Softwareversion. Du kannst auf diesem Server nicht spielen.</German>
 		</Key>
 		<Key ID="str_player_ghost">
 			<English>You are in ghost mode, trying again in %1 seconds!</English>
@@ -6783,7 +6783,7 @@
 			<Czech>Pro naplnění láhve na vodu je nutné být poblíž studny nebo rybníka.</Czech>
 		</Key>
 		<Key ID="str_player_21">
-			<English>You cannot do this while you are on a ladder</English>
+			<English>You cannot do this while you are on a ladder.</English>
 			<German>Das kannst du nicht, während du dich an einer Leiter festhältst.</German>
 			<Russian>Вы не можете этого делать, пока поднимаетесь по лестнице.</Russian>
 			<Spanish>No puedes hacer esto mientras estás en una escalera</Spanish>
@@ -6791,7 +6791,7 @@
 			<Czech>Akci nelze provést, jelikož jste na žebříku.</Czech>
 		</Key>
 		<Key ID="str_player_22">
-			<English>You must have wood in your inventory in order to create a fireplace</English>
+			<English>You must have wood in your inventory in order to create a fireplace.</English>
 			<German>Du musst etwas Holz bei dir haben, um eine Feuerstelle anlegen zu können.</German>
 			<Russian>Для разведения костра у вас должны быть дрова.</Russian>
 			<Spanish>Debes tener leña en tu inventario para poder crear una fogata.</Spanish>
@@ -6822,7 +6822,7 @@
 			<Czech>Nasekali jste dřevo.</Czech>
 		</Key>
 		<Key ID="str_player_24_progress">
-			<English>Chopping down tree (%1/%2). Walk away at anytime to cancel.</English>
+			<English>Chopping down tree (%1/%2). Walk away at any time to cancel.</English>
 			<Russian>Рубим дровишки... (%1/%2). Шагните в сторону, чтобы прекратить.</Russian>
 			<German>Der Baum wird gefällt... (%1/%2). Gehe ein Stück zur Seite, um abzubrechen.</German>
 			<Spanish>Tala de árboles (%1/%2). Walk away en cualquier momento para cancelar.</Spanish>
@@ -7000,7 +7000,7 @@
 			<French>porter</French>
 		</Key>
 		<Key ID="str_player_32">
-			<English>You must be near a water-source such as a pond, watering hole, or well to drink.</English>
+			<English>You must be near a water source such as a pond, watering hole, or well to drink.</English>
 			<Russian>Вы должны находится возле источника воды чтобы попить.</Russian>
 			<Spanish>Debe estar cerca de una fuente de agua, como un estanque, pozo de agua, o bien para beber.</Spanish>
 			<Czech>Musíte být v blízkosti vodního zdroje jako je rybník, zavlažovací díra, nebo studna.</Czech>
@@ -7053,33 +7053,33 @@
 		</Key>
 <!--		
 		<Key ID="str_player_fail_drink">
-			<English>You may not drink while in a vehicle</English>
+			<English>You may not drink while in a vehicle.</English>
 			<German>Du kannst nicht trinken, während du dich in einem Fahrzeug befindest.</German>
-			<Russian>Вы не можете пить в транспорте</Russian>
-			<Spanish>No puedes beber mientras estás en un vehículo</Spanish>
-			<French>Vous ne pouvez rien boire dans un véhicule</French>
-			<Czech>Neměl by jsi pít, když jsi ve vozidle</Czech>
+			<Russian>Вы не можете пить в транспорте.</Russian>
+			<Spanish>No puedes beber mientras estás en un vehículo.</Spanish>
+			<French>Vous ne pouvez rien boire dans un véhicule.</French>
+			<Czech>Neměl by jsi pít, když jsi ve vozidle.</Czech>
 		</Key>
 		<Key ID="str_player_fail_eat">
-			<English>You may not eat while in a vehicle</English>
+			<English>You may not eat while in a vehicle.</English>
 			<German>Du kannst nicht essen, während du dich in einem Fahrzeug befindest.</German>
-			<Russian>Вы не можете есть в транспорте</Russian>
-			<Spanish>No puedes comer mientras estás en un vehículo</Spanish>
-			<French>Vous ne pouvez rien manger dans un véhicule</French>
-			<Czech>Neměl by jsi jíst, když jsi ve vozidle</Czech>
+			<Russian>Вы не можете есть в транспорте.</Russian>
+			<Spanish>No puedes comer mientras estás en un vehículo.</Spanish>
+			<French>Vous ne pouvez rien manger dans un véhicule.</French>
+			<Czech>Neměl by jsi jíst, když jsi ve vozidle.</Czech>
 		</Key> 
 	-->
 		<Key ID="str_player_fail_wear1">
-			<English>You may not change clothes while in a vehicle</English>
+			<English>You may not change clothes while in a vehicle.</English>
 			<German>Du kannst dich in einem Fahrzeug nicht umziehen, hier ist es viel zu eng.</German>
-			<Russian>Нельзя переодеваться в транспорте</Russian>
-			<Spanish>No puedes cambiar de ropa mientras estás en un vehículo</Spanish>
-			<French>Vous ne pouvez pas vous changer dans un véhicule</French>
+			<Russian>Нельзя переодеваться в транспорте.</Russian>
+			<Spanish>No puedes cambiar de ropa mientras estás en un vehículo.</Spanish>
+			<French>Vous ne pouvez pas vous changer dans un véhicule.</French>
 			<Czech>Nelze se převléci, když jste ve vozidle.</Czech>
 			<Dutch>Je kunt je niet omkleden in een voertuig</Dutch>
 		</Key>
 		<Key ID="str_player_fail_wear2">
-			<English>Currently Female Characters cannot change to this skin. This will change in a future update.</English>
+			<English>Currently Female Characters cannot change to this skin. This might change in a future update.</English>
 			<German>Momentan gibt es diese Kleidung nicht für weibliche Charaktere. Vielleicht in einer zukünftigen Version...</German>
 			<Russian>Персонажи женского пола не могут переодеваться в данной версии.</Russian>
 			<Spanish>Actualmente los personajes femeninos no se pueden cambiar de ropa. Esto será cambiado en futuras actualizaciones.</Spanish>
@@ -7141,7 +7141,7 @@
 
 		<Key ID="str_player_build_rotate">
 			<English>Use Q and E to rotate the object, and V to tilt it.</English>
-			<German>Benutze Q und E, um das Objekt zu drehen. Wähle dann die gewünschte Aktion.</German>
+			<German>Benutze Q und E um das Objekt zu drehen und V um es zu neigen.</German>
 			<Russian>Используйте Q и E чтобы повернуть объект и V для наклона.</Russian>
 			<Spanish>Use Q y E para rotar el objeto y entonces seleccione la acción deseada</Spanish>
 			<French>Utilisez A et E pour tourner l&apos;objet, et V pour le pencher.</French>
@@ -7164,43 +7164,43 @@
 			<Czech>Přerušit stavbu</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_1">
-			<English>You need to be within 3 meters to pickup!</English>
-			<German>Du musst dich im Umkreis von drei Metern befinden, um das aufzunehmen.</German>
+			<English>You need to be within 3 meters to pick up this item!</English>
+			<German>Du musst dich im Umkreis von drei Metern befinden, um das aufzunehmen!</German>
 			<Russian>Чтобы поднять предмет, вы должны быть ближе 3х метров!</Russian>
 			<Spanish>¡Necesitas estar a menos de 3 metros para tomarlo!</Spanish>
 			<French>Vous devez être à moins de 3 mètres pour ramasser!</French>
-			<Czech>Abyste předmět sebrali, musíte být do vzdálenosti 3 metrů.</Czech>
+			<Czech>Abyste předmět sebrali, musíte být do vzdálenosti 3 metrů!</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_2">
-			<English>You must wait to pickup this item!</English>
-			<German>Du musst noch etwas warten, um das aufzunehmen.</German>
+			<English>You must wait to pick up this item!</English>
+			<German>Du musst noch etwas warten, um das aufzunehmen!</German>
 			<Russian>Чтобы поднять этот предмет, нужно подождать!</Russian>
 			<Spanish>¡Necesitas esperar para tomar este objeto!</Spanish>
 			<French>Vous devez attendre pour ramasser l&apos;objet!</French>
-			<Czech>Abyste sebrali předmět, musíte počkat.</Czech>
+			<Czech>Abyste sebrali předmět, musíte počkat!</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_3">
-			<English>You may only pickup one item at a time!</English>
-			<German>Du darfst immer nur einen Gegenstand davon aufheben.</German>
+			<English>You may only pick up one item at a time!</English>
+			<German>Du kannst immer nur einen Gegenstand gleichzeitig aufheben!</German>
 			<Russian>Можно поднимать только один предмет за раз!</Russian>
 			<Spanish>¡Solo puedes tomar un objeto a la vez!</Spanish>
 			<French>Vous ne pouvez prendre qu&apos;un objet à la fois!</French>
-			<Czech>Lze sebrat pouze jeden předmět zároveň.</Czech>
+			<Czech>Lze sebrat pouze jeden předmět zároveň!</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_4">
-			<English>Another Player is Near by, Only one player can be within 5 meters of a bag to pickup</English>
+			<English>Another Player is nearby. Only one player can be within 5 meters of a bag to pick up.</English>
 			<German>Ein anderer Spieler ist in der Nähe. Nur ein Spieler darf sich im Umkreis von fünf Metern befinden, um den Rucksack aufzunehmen.</German>
-			<Russian>Другой игрок рядом! Он должен быть далее 5ти метров от поднимаемого рюкзака</Russian>
-			<Spanish>Otro jugador cerca, solo un jugador debe estar a menos de 5 metros de la mochila para tomarla</Spanish>
+			<Russian>Другой игрок рядом! Он должен быть далее 5ти метров от поднимаемого рюкзака.</Russian>
+			<Spanish>Otro jugador cerca, solo un jugador debe estar a menos de 5 metros de la mochila para tomarla.</Spanish>
 			<French>Un autre joueur se trouve à proximité. Un seul joueur peut fouiller un sac dans un rayon de 5 mètres.</French>
-			<Czech>Poblíž je další hráč. Pouze jeden hráč může být v okolí 5 metrů, aby mohl být batoh zvednut..</Czech>
+			<Czech>Poblíž je další hráč. Pouze jeden hráč může být v okolí 5 metrů, aby mohl být batoh zvednut.</Czech>
 		</Key>
 		<Key ID="str_pickup_limit_5">
-			<English>Another player is nearby, only one player can be near to perform this action</English>
-			<German>Ein anderer Spieler ist in der Nähe. Nur ein Spieler darf sich in der Nähe aufhalten, um diese Aktion durchzuführen.</German>
+			<English>Another player is nearby. Only one player can be near to perform this action.</English>
+			<German>Ein anderer Spieler ist in der Nähe. Nur ein Spieler darf sich in der Nähe befinden, um diese Aktion durchzuführen.</German>
 			<Russian>Другой игрок рядом, только один игрок может делать это.</Russian>
-			<Spanish>Otro jugador que está cerca, sólo un jugador puede estar cerca para realizar esta acción</Spanish>
-			<French>Un autre joueur est à proximité, un seul joueur peut se trouver à proximité pour effectuer cette action</French>
+			<Spanish>Otro jugador que está cerca, sólo un jugador puede estar cerca para realizar esta acción.</Spanish>
+			<French>Un autre joueur est à proximité, un seul joueur peut se trouver à proximité pour effectuer cette action.</French>
 			<Czech>Další hráče je v blízkosti. Pouze jeden hráč smí být v blízkosti, aby šla provést tato akce.</Czech>
 		</Key>
 		<Key ID="str_refuel_fail">
@@ -7361,16 +7361,16 @@
 			<German>Kehre in %1 Sekunden zur Lobby zurück...</German>
 		</Key>
 		<Key ID="str_broken_arrow">
-			<English>Arrow was broken and cannot be used again</English>
+			<English>Arrow was broken and cannot be used again.</English>
 			<German>Der Pfeil ist gebrochen und kann nicht erneut verwendet werden.</German>
 			<Russian>Стрела сломалась. Ее нельзя использовать повторно.</Russian>
-			<Spanish>La flecha se rompió y no puede usarse nuevamente</Spanish>
+			<Spanish>La flecha se rompió y no puede usarse nuevamente.</Spanish>
 			<French>La flèche a été brisée et ne peut plus être utilisée.</French>
 			<Czech>Šipka se zlomila a nemůže být použita znovu.</Czech>
 		</Key>
 		<Key ID="str_must_have_weapon">
-			<English>Weapon, converting ammo for, must be in hands!</English>
-			<German>Du musst die Waffe, für die du Munition umwandeln willst, in den Händen halten.</German>
+			<English>The weapon you are converting ammo for must be in your hands!</English>
+			<German>Du musst die Waffe, für die du Munition umwandeln willst, in den Händen halten!</German>
 			<Spanish>¡El arma a la que se quiere convertir la munición debe estar en tus manos!</Spanish>
 			<Russian>Оружие, для которого конвертируются магазины, должно быть в руках!</Russian>
 			<French>Pour convertir des munitions pour une arme, celle ci doit être dans vos mains!</French>

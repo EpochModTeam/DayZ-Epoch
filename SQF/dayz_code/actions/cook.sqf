@@ -14,7 +14,7 @@ _finished = true;
 	_meat = _x;
 	_meatcooked = _cookedmeat select (_rawmeat find _meat);
 	if (_meat in magazines player) then {
-		_text = getText (configFile >> "CfgMagazines" >> _meatcooked >> "displayName");
+		_text = getText (configFile >> "CfgMagazines" >> _meat >> "displayName");
 
 		_dis=6;
 		_sfx = "cook";
