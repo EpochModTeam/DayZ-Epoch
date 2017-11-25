@@ -2,8 +2,10 @@ private ["_charID","_newmodel","_old","_humanity","_medical","_worldspace","_zom
 //_playerUID = _this select 0;
 _charID = _this select 1;
 _model = _this select 2;
-_old = player;
 
+if (typeOf player == _model) exitWith {};
+
+_old = player;
 _old removeAllEventHandlers "FiredNear";
 _old removeAllEventHandlers "HandleDamage";
 _old removeAllEventHandlers "Killed";

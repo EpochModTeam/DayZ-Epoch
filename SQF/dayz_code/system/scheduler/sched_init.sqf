@@ -14,6 +14,7 @@ call compile preprocessFileLineNumbers (_base+"sched_medical.sqf");
 //call compile preprocessFileLineNumbers (_base+"sched_achievement.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_gui.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_buildingBubble.sqf");
+//call compile preprocessFileLineNumbers (_base+"sched_humanityChange.sqf");
 
 if (dayz_antihack == 1) then {
 	call compile preprocessFileLineNumbers (_base+"sched_security.sqf");
@@ -39,6 +40,7 @@ if (count _list == 0) then {
 	 [ 6,	   24.18,	sched_spawnCheck, sched_spawnCheck_init ],
 	 [ 1, 		0.63,	sched_throwable, sched_throwable_init ],
 	 [ 1, 		0.33,	sched_medical, sched_medical_init ],
+	 //[ 15,	 	3,		sched_humanityChange ], //Humanity morphing disabled on Epoch to avoid loss of purchased clothing
 	 //[ 3,		2.70,	sched_achievement, sched_achievement_init ],
 	 [ 4,		2.38,	sched_bloodStains, sched_bloodStains_init ],
 	 [ 60, 	   10.44,	sched_animals ],

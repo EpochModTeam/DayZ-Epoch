@@ -670,6 +670,7 @@ if (!isDedicated) then {
 	dayz_hitByTime = 0;
 	skipGearSound = false;
 	TimeOutDisplayed = false;
+	playerHumanityCHK = 0;
 	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
 
 	// EPOCH ADDITIONS
