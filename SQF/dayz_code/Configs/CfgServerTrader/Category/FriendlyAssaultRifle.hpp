@@ -479,17 +479,133 @@ class Category_485 {
 		buy[] = {8,"ItemGoldBar"};
 		sell[] = {4,"ItemGoldBar"};
 	};
-	class L85_Holo_DZ {
+	//New L85 models by Streatman
+	class L85A2_DZ {
+		type = "trade_weapons";
+		buy[] = {4,"ItemGoldBar"};
+		sell[] = {2,"ItemGoldBar"};
+	};
+	class L85A2_FL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {3,"ItemGoldBar"};
+	};
+	class L85A2_MFL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {4,"ItemGoldBar"};
+	};
+	class L85A2_SD_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class L85A2_SD_FL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {7,"ItemGoldBar"};
+	};
+	class L85A2_SD_MFL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {8,"ItemGoldBar"};
+	};
+	class L85A2_CCO_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {4,"ItemGoldBar"};
+	};
+	class L85A2_CCO_FL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {5,"ItemGoldBar"};
+	};
+	class L85A2_CCO_MFL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class L85A2_CCO_SD_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {8,"ItemGoldBar"};
+	};
+	class L85A2_CCO_SD_FL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {9,"ItemGoldBar"};
+	};
+	class L85A2_CCO_SD_MFL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {1,"ItemGoldBar10oz"};
+	};
+	class L85A2_Holo_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {4,"ItemGoldBar"};
+	};
+	class L85A2_Holo_FL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {5,"ItemGoldBar"};
+	};
+	class L85A2_Holo_MFL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class L85A2_Holo_SD_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {8,"ItemGoldBar"};
+	};
+	class L85A2_Holo_SD_FL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {9,"ItemGoldBar"};
+	};
+	class L85A2_Holo_SD_MFL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {1,"ItemGoldBar10oz"};
+	};
+	class L85A2_ACOG_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {6,"ItemGoldBar"};
+	};
+	class L85A2_ACOG_FL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {7,"ItemGoldBar"};
+	};
+	class L85A2_ACOG_MFL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {8,"ItemGoldBar"};
+	};
+	class L85A2_ACOG_SD_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {1,"ItemGoldBar10oz"};
+	};
+	class L85A2_ACOG_SD_FL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {11,"ItemGoldBar"};
+	};
+	class L85A2_ACOG_SD_MFL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; //Sell only
+		sell[] = {12,"ItemGoldBar"};
+	};
+	class BAF_L85A2_RIS_SUSAT { //Not sure if this should be kept in 1.0.6.2.
 		type = "trade_weapons";
 		buy[] = {6,"ItemGoldBar"};
 		sell[] = {3,"ItemGoldBar"};
 	};
-	class BAF_L85A2_RIS_SUSAT {
-		type = "trade_weapons";
-		buy[] = {6,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
-	};
-	class BAF_L85A2_RIS_ACOG {
+	class BAF_L85A2_RIS_ACOG { //Streatman's model L85A2_ACOG_DZ should replace this.
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {5,"ItemGoldBar"};

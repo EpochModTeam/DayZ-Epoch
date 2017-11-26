@@ -64,15 +64,26 @@ class Category_487 {
 		buy[] = {-1,"ItemGoldBar10oz"}; // Sell only
 		sell[] = {7,"ItemGoldBar"};
 	};
-	class SVD_DZ {
+	//New SVD models by Streatman
+	class SVD_DZ { //SVD with iron sights
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
 	};
-	class SVD_Gh_DZ {
+	class SVD_Gh_DZ { //SVD with iron sights and ghillie attachment
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar10oz"}; // Sell only
 		sell[] = {7,"ItemGoldBar"};
+	};
+	class SVD_PSO1_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar10oz"}; // Sell only
+		sell[] = {1,"ItemGoldBar10oz"};
+	};
+	class SVD_PSO1_Gh_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar10oz"}; // Sell only
+		sell[] = {11,"ItemGoldBar"};
 	};
 	class SVD_des_EP1 { // desert camo
 		type = "trade_weapons";
