@@ -199,10 +199,6 @@ class L85A2_CCO_SD_MFL_DZ
 {
 	weight = 5.6;
 };
-class L85_Holo_DZ
-{
-	weight = 5.2;
-};
 class L85A2_Holo_FL_DZ
 {
 	weight = 5.4;

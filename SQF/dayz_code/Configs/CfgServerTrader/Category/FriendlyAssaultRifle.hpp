@@ -479,7 +479,6 @@ class Category_485 {
 		buy[] = {8,"ItemGoldBar"};
 		sell[] = {4,"ItemGoldBar"};
 	};
-	//New L85 models by Streatman
 	class L85A2_DZ {
 		type = "trade_weapons";
 		buy[] = {4,"ItemGoldBar"};
@@ -599,16 +598,6 @@ class Category_485 {
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar"}; //Sell only
 		sell[] = {12,"ItemGoldBar"};
-	};
-	class BAF_L85A2_RIS_SUSAT { //Not sure if this should be kept in 1.0.6.2.
-		type = "trade_weapons";
-		buy[] = {6,"ItemGoldBar"};
-		sell[] = {3,"ItemGoldBar"};
-	};
-	class BAF_L85A2_RIS_ACOG { //Streatman's model L85A2_ACOG_DZ should replace this.
-		type = "trade_weapons";
-		buy[] = {1,"ItemGoldBar10oz"};
-		sell[] = {5,"ItemGoldBar"};
 	};
 	class SA58_DZ {
 		type = "trade_weapons";

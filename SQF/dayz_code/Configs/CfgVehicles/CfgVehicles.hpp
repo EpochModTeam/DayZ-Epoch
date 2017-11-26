@@ -358,6 +358,7 @@ class CfgVehicles
 		class DestructionEffects;
 	};
 	class House_EP1;
+	class Land_HouseV_1I2;
 	class SpawnableWreck : House {};
 	class Strategic;
 	class NonStrategic;
@@ -496,6 +497,7 @@ class CfgVehicles
 	#include "Buildings\Land_VASICore.hpp"
 	#include "Buildings\Land_Vysilac_FM.hpp"
 	#include "Buildings\WaterSources.hpp"
+	#include "Buildings\Land_houseV_2T2.hpp"
 
 	//Duplicates of Epoch items in DZE\Prop_Defs.hpp
 	//#include "CamoNetting.hpp"
