@@ -9554,6 +9554,111 @@
 			<Russian>DMR (камуфляж)</Russian>
 			<German>DMR Tarn</German>
 		</Key>
+		<Key ID="STR_DZ_WPN_L115A3_NAME">
+			<English>L115A3 LRR</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_L115A3_DESC">
+			<English>Sniper rifle   &lt;br/&gt;Caliber: .338 Lapua Magnum</English>
+			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: .338 Lapua Magnum</Russian>
+			<German>Scharfschützengewehr  &lt;br/&gt;Kaliber: .338 Lapua Magnum</German>			
+		</Key>
+
+		<!-- L85A2 -->
+		<Key ID="STR_DZ_WPN_L85A2_NAME">
+			<English>L85A2</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_FL_NAME">
+			<English>L85A2 FL</English>
+			<Russian>L85A2 Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_MFL_NAME">
+			<English>L85A2 MFL</English>
+			<Russian>L85A2 вФ</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_SD_NAME">
+			<English>L85A2 SD</English>
+			<Russian>L85A2 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_SD_FL_NAME">
+			<English>L85A2 SD FL</English>
+			<Russian>L85A2 ПБС Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_SD_MFL_NAME">
+			<English>L85A2 SD MFL</English>
+			<Russian>L85A2 ПБС вФ</Russian>
+		</Key>
+		<!-- L85A2 CCO-->
+		<Key ID="STR_DZ_WPN_L85A2_CCO_NAME">
+			<English>L85A2 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_CCO_FL_NAME">
+			<English>L85A2 CCO FL</English>
+			<Russian>L85A2 CCO Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_CCO_MFL_NAME">
+			<English>L85A2 CCO MFL</English>
+			<Russian>L85A2 CCO вФ</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_NAME">
+			<English>L85A2 CCO SD</English>
+			<Russian>L85A2 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_FL_NAME">
+			<English>L85A2 CCO SD FL</English>
+			<Russian>L85A2 CCO ПБС Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_MFL_NAME">
+			<English>L85A2 CCO SD MFL</English>
+			<Russian>L85A2 CCO ПБС вФ</Russian>
+		</Key>
+		<!-- L85A2 Holo -->
+		<Key ID="STR_DZ_WPN_L85A2_HOLO_NAME">
+			<English>L85A2 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_HOLO_FL_NAME">
+			<English>L85A2 Holo FL</English>
+			<Russian>L85A2 Holo Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_HOLO_MFL_NAME">
+			<English>L85A2 Holo MFL</English>
+			<Russian>L85A2 Holo вФ</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_NAME">
+			<English>L85A2 Holo SD</English>
+			<Russian>L85A2 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_FL_NAME">
+			<English>L85A2 Holo SD FL</English>
+			<Russian>L85A2 Holo ПБС Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_MFL_NAME">
+			<English>L85A2 Holo SD MFL</English>
+			<Russian>L85A2 Holo ПБС вФ</Russian>
+		</Key>
+		<!-- L85A2 ACOG -->
+		<Key ID="STR_DZ_WPN_L85A2_ACOG_NAME">
+			<English>L85A2 ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_ACOG_FL_NAME">
+			<English>L85A2 ACOG FL</English>
+			<Russian>L85A2 ACOG Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_ACOG_MFL_NAME">
+			<English>L85A2 ACOG MFL</English>
+			<Russian>L85A2 ACOG вФ</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_NAME">
+			<English>L85A2 ACOG SD</English>
+			<Russian>L85A2 ACOG ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_FL_NAME">
+			<English>L85A2 ACOG SD FL</English>
+			<Russian>L85A2 ACOG ПБС Ф</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_MFL_NAME">
+			<English>L85A2 ACOG SD MFL</English>
+			<Russian>L85A2 ACOG ПБС вФ</Russian>
+		</Key>
 		
 		<!-- M4A1 -->
 		<Key ID="STR_DZ_WPN_M4A1_NAME">
@@ -10348,6 +10453,14 @@
 			<English>SVD Camo</English>
 			<Russian>СВД (камуфляж)</Russian>
 			<German>SVD Tarn</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_SVD_PSO1_NAME">
+			<English>SVD PSO-1</English>
+			<Russian>СВД ПСО-1</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_SVD_PSO1_GH_NAME">
+			<English>SVD PSO-1 Camo</English>
+			<Russian>СВД ПСО-1 (камуфляж)</Russian>
 		</Key>
 		
 		<!-- Mosin -->

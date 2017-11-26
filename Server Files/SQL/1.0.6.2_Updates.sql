@@ -6,9 +6,25 @@
 	EXISTING 1051 DATABASES SHOULD RUN 1.0.6_UPDATES.SQL FIRST, THEN RUN THIS FILE.
 */
 
-/*
-THIS PROCEDURE IS REQUIRED FOR 1062 AND RETURNS THE OBJECT ID MUCH MORE EFFICIENTLY THAN THE METHOD IN 1061 SQF
-*/
+
+/* Update L85 and SVD classnames */
+UPDATE `Traders_DATA` SET `item` = '["L85A2_DZ",3]' WHERE `item` = '["L85_Holo_DZ",3]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, '"L85_Holo_DZ"', '"L85A2_DZ"') WHERE INSTR(Backpack, '"L85_Holo_DZ"') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '"L85_Holo_DZ"', '"L85A2_DZ"') WHERE INSTR(Inventory, '"L85_Holo_DZ"') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '"L85_Holo_DZ"', '"L85A2_DZ"') WHERE INSTR(Inventory, '"L85_Holo_DZ"') > 0;
+
+UPDATE `Traders_DATA` SET `item` = '["SVD_PSO1_DZ",3]' WHERE `item` = '["SVD_DZ",3]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, '"SVD_DZ"', '"SVD_PSO1_DZ"') WHERE INSTR(Backpack, '"SVD_DZ"') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '"SVD_DZ"', '"SVD_PSO1_DZ"') WHERE INSTR(Inventory, '"SVD_DZ"') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '"SVD_DZ"', '"SVD_PSO1_DZ"') WHERE INSTR(Inventory, '"SVD_DZ"') > 0;
+
+UPDATE `Traders_DATA` SET `item` = '["SVD_PSO1_Gh_DZ",3]' WHERE `item` = '["SVD_Gh_DZ",3]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, '"SVD_Gh_DZ"', '"SVD_PSO1_Gh_DZ"') WHERE INSTR(Backpack, '"SVD_Gh_DZ"') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '"SVD_Gh_DZ"', '"SVD_PSO1_Gh_DZ"') WHERE INSTR(Inventory, '"SVD_Gh_DZ"') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '"SVD_Gh_DZ"', '"SVD_PSO1_Gh_DZ"') WHERE INSTR(Inventory, '"SVD_Gh_DZ"') > 0;
+
+
+/* THIS PROCEDURE IS REQUIRED FOR 1062 AND RETURNS THE OBJECT ID MUCH MORE EFFICIENTLY THAN THE METHOD IN 1061 SQF */
 DROP procedure IF EXISTS `retObjID`;
 
 DELIMITER $$

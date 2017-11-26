@@ -43,9 +43,8 @@ sniperrifles[] = {
 	{Loot_WEAPON,		1,		AK_107_PSO},
 	{Loot_WEAPON,		0.9,	M4SPR},
 	{Loot_WEAPON,		0.9,	M40A3_DZ}, //M40A3
-	{Loot_WEAPON,		0.7,	SVD_Gh_DZ}, //SVD_CAMO
-	{Loot_WEAPON,		0.7,	SVD_des_EP1},
-	{Loot_WEAPON,		0.7,	SVD_DZ}, //SVD
+	{Loot_WEAPON,		0.7,	SVD_PSO1_Gh_DZ},
+	{Loot_WEAPON,		0.7,	SVD_PSO1_DZ},
 	{Loot_WEAPON,		1,		CZ550_DZ}, //huntingrifle
 	{Loot_WEAPON,		0.8,	M24_des_EP1},
 	{Loot_WEAPON,		0.8,	M24_DZ}, //M24
@@ -96,14 +95,12 @@ assaultrifles[] = {
 	{Loot_WEAPON,		0.3,		SA58_ACOG_DZ}, //No camo, no grip handle
 	{Loot_WEAPON,		0.2,		Sa58V_RCO_EP1}, // Camo with grip handle
 	{Loot_WEAPON,		0.3,		SA58_RIS_DZ}, //SA58_DZ with different rail
-	{Loot_WEAPON,		0.4,		m8_compact},
-	{Loot_WEAPON,		0.3,		m8_sharpshooter},
-	{Loot_WEAPON,		0.3,		m8_holo_sd},
-	{Loot_WEAPON,		0.5,		m8_carbine},
-	{Loot_WEAPON,		0.2,		BAF_L85A2_RIS_SUSAT},
-	{Loot_WEAPON,		0.3,		L85_Holo_DZ}, //BAF_L85A2_RIS_Holo
+	{Loot_WEAPON,		0.3,		m8_compact},
+	{Loot_WEAPON,		0.2,		m8_sharpshooter},
+	{Loot_WEAPON,		0.2,		m8_holo_sd},
+	{Loot_WEAPON,		0.3,		m8_carbine},
+	{Loot_WEAPON,		0.5,		L85A2_DZ},
 	{Loot_WEAPON,		0.1,		M4A1_HWS_GL_SD_Camo},
-	{Loot_WEAPON,		0.2,		BAF_L85A2_RIS_ACOG}, //L85A2 ACOG
 	//Mk16
 	{Loot_WEAPON,		0.2,		SCAR_L_CQC_CCO_SD}, //Mk16 Aimpoint SD 
 	{Loot_WEAPON,		0.3,		SCAR_L_CQC}, //Mk16 CQC 

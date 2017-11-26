@@ -1,6 +1,8 @@
 [NEW] Newest version of DayZero enterable buildings provided by Tansien and Zac https://zombies.nu/. This fixes broken barracks shadows and adds several new interiors. #1601
 [NEW] Land_houseV_2T2 is now enterable. Interior modeled by @Streatman
 [NEW] Added loot positions for new enterable buildings
+[NEW] Added L85 attachments totaling 24 variants, new models by @Streatman. Class L85_Holo_DZ no longer exists and must be updated to L85A2_DZ in custom scripts and SQL.
+[NEW] SVD scope attachments can now be removed, new models by @Streatman
 [NEW] Added DZE_limitPlots so admins can limit plot poles to one per UID, disabled by default. @oiad
 [NEW] Pumpkin, sunflower, and hemp plants spawned with createVehicle can be harvested with a knife now. #1928 @F507DMT
 [NEW] The journal and dayz_survived variable now contain actual play time [array] instead of days since the character was created [number].
@@ -14,7 +16,7 @@
 [NEW] Admins can now change the lootRefreshTimer for each building type from the default 15 minutes. CfgLoot.hpp must be updated if using custom loot tables. 
 
 [UPDATED] Loot and zed spawn is now disabled in trader cities by default. This is configurable in mission\init.sqf via DZE_SafeZonePosArray. Added function to check positions against DZE_SafeZonePosArray "_PosInSafeZone = _positionToCheck call DZE_SafeZonePosCheck;"
-[UPDATED] Zombie pathing. Zeds should now run more direct to players.
+[UPDATED] Zombie pathing. Zeds should now run more direct to players and no longer get stuck at the position where a player entered a vehicle.
 [UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
 [UPDATED] The player now auto rejoins their group after dropping a radio and picking it back up when dayz_requireRadio=true. @SmokeyBR
 [UPDATED] Owners can no longer be removed by added friends in plot and door management. @oiad
