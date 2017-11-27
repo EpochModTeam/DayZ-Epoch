@@ -1,7 +1,7 @@
 [NEW] Newest version of DayZero enterable buildings provided by Tansien and Zac https://zombies.nu/. This fixes broken barracks shadows and adds several new interiors. #1601
 [NEW] Land_houseV_2T2 is now enterable. Interior modeled by @Streatman
 [NEW] Added loot positions for new enterable buildings
-[NEW] Added L85 attachments totaling 24 variants, new models by @Streatman. Class L85_Holo_DZ no longer exists and must be updated to L85A2_DZ in custom scripts and SQL.
+[NEW] Added L85 attachments totaling 24 variants, new models by @Streatman. Class L85_Holo_DZ no longer exists and must be updated to L85A2_DZ in custom scripts and SQL, see 1.0.6.2_Updates.sql
 [NEW] SVD scope attachments can now be removed, new models by @Streatman
 [NEW] Added DZE_limitPlots so admins can limit plot poles to one per UID, disabled by default. @oiad
 [NEW] Pumpkin, sunflower, and hemp plants spawned with createVehicle can be harvested with a knife now. #1928 @F507DMT
@@ -75,7 +75,7 @@
 [FIXED] Multiple dupe fixes - SERVER ADMINS, DO NOT IMPLEMENT SCRIPTS WHICH KICK PLAYERS TO THE LOBBY (ENDMISSION, FAILMISSION, etc.), YOU MUST KICK THEM ENTIRELY OUT OF THE SERVER! (EX: by BE restriction, but with the stock scripts.txt forceEnd, failmission, and endmission should kick the player anyway)
 [FIXED] Certain classes (i.e. Satchel Charge) which are both magazines and weapons were not retained through skin change #1981 @AirwavesMan
 [FIXED] Blocked another A2OA script execution bug from improperly cleared eventhandlers. See dayz_code\system\antihack.sqf. Thanks to Dihan for reporting
-[FIXED] Missing silencer shadows on some _DZ weapons. Thanks @Streatman
+[FIXED] Missing shadows on some _DZ weapons. Thanks @Streatman
 [FIXED] Launchers and launcher ammo are now detected correctly in the sell menu when a player has a launcher and ammo with the same classname.
 [FIXED] Wrong bleeding icon on Epoch legacy status UI
 [FIXED] A locked door can now be auto unlocked right after placement by the player who built it

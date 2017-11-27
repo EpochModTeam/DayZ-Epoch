@@ -9,19 +9,19 @@
 
 /* Update L85 and SVD classnames */
 UPDATE `Traders_DATA` SET `item` = '["L85A2_DZ",3]' WHERE `item` = '["L85_Holo_DZ",3]';
-UPDATE character_data SET Backpack = REPLACE(Backpack, '"L85_Holo_DZ"', '"L85A2_DZ"') WHERE INSTR(Backpack, '"L85_Holo_DZ"') > 0;
-UPDATE character_data SET Inventory = REPLACE(Inventory, '"L85_Holo_DZ"', '"L85A2_DZ"') WHERE INSTR(Inventory, '"L85_Holo_DZ"') > 0;
-UPDATE object_data SET Inventory = REPLACE(Inventory, '"L85_Holo_DZ"', '"L85A2_DZ"') WHERE INSTR(Inventory, '"L85_Holo_DZ"') > 0;
+UPDATE character_data SET Backpack = REPLACE(Backpack, '"L85_Holo_DZ"', '"L85A2_Holo_DZ"') WHERE INSTR(Backpack, '"L85_Holo_DZ"') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '"L85_Holo_DZ"', '"L85A2_Holo_DZ"') WHERE INSTR(Inventory, '"L85_Holo_DZ"') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '"L85_Holo_DZ"', '"L85A2_Holo_DZ"') WHERE INSTR(Inventory, '"L85_Holo_DZ"') > 0;
 
 UPDATE `Traders_DATA` SET `item` = '["L85A2_ACOG_DZ",3]' WHERE `item` = '["BAF_L85A2_RIS_ACOG",3]';
 UPDATE character_data SET Backpack = REPLACE(Backpack, '"BAF_L85A2_RIS_ACOG"', '"L85A2_ACOG_DZ"') WHERE INSTR(Backpack, '"BAF_L85A2_RIS_ACOG"') > 0;
 UPDATE character_data SET Inventory = REPLACE(Inventory, '"BAF_L85A2_RIS_ACOG"', '"L85A2_ACOG_DZ"') WHERE INSTR(Inventory, '"BAF_L85A2_RIS_ACOG"') > 0;
 UPDATE object_data SET Inventory = REPLACE(Inventory, '"BAF_L85A2_RIS_ACOG"', '"L85A2_ACOG_DZ"') WHERE INSTR(Inventory, '"BAF_L85A2_RIS_ACOG"') > 0;
 
-UPDATE `Traders_DATA` SET `item` = '["L85A2_DZ",3]' WHERE `item` = '["BAF_L85A2_RIS_SUSAT",3]';
-UPDATE character_data SET Backpack = REPLACE(Backpack, '"BAF_L85A2_RIS_SUSAT"', '"L85A2_DZ"') WHERE INSTR(Backpack, '"BAF_L85A2_RIS_SUSAT"') > 0;
-UPDATE character_data SET Inventory = REPLACE(Inventory, '"BAF_L85A2_RIS_SUSAT"', '"L85A2_DZ"') WHERE INSTR(Inventory, '"BAF_L85A2_RIS_SUSAT"') > 0;
-UPDATE object_data SET Inventory = REPLACE(Inventory, '"BAF_L85A2_RIS_SUSAT"', '"L85A2_DZ"') WHERE INSTR(Inventory, '"BAF_L85A2_RIS_SUSAT"') > 0;
+delete from `Traders_DATA` WHERE `item` = '["BAF_L85A2_RIS_SUSAT",3]';
+UPDATE character_data SET Backpack = REPLACE(Backpack, '"BAF_L85A2_RIS_SUSAT"', '"L85A2_ACOG_DZ"') WHERE INSTR(Backpack, '"BAF_L85A2_RIS_SUSAT"') > 0;
+UPDATE character_data SET Inventory = REPLACE(Inventory, '"BAF_L85A2_RIS_SUSAT"', '"L85A2_ACOG_DZ"') WHERE INSTR(Inventory, '"BAF_L85A2_RIS_SUSAT"') > 0;
+UPDATE object_data SET Inventory = REPLACE(Inventory, '"BAF_L85A2_RIS_SUSAT"', '"L85A2_ACOG_DZ"') WHERE INSTR(Inventory, '"BAF_L85A2_RIS_SUSAT"') > 0;
 
 UPDATE `Traders_DATA` SET `item` = '["SVD_PSO1_DZ",3]' WHERE `item` = '["SVD_DZ",3]';
 UPDATE character_data SET Backpack = REPLACE(Backpack, '"SVD_DZ"', '"SVD_PSO1_DZ"') WHERE INSTR(Backpack, '"SVD_DZ"') > 0;

@@ -64,13 +64,12 @@ class Category_487 {
 		buy[] = {-1,"ItemGoldBar10oz"}; // Sell only
 		sell[] = {7,"ItemGoldBar"};
 	};
-	//New SVD models by Streatman
-	class SVD_DZ { //SVD with iron sights
+	class SVD_DZ { // iron sights
 		type = "trade_weapons";
 		buy[] = {1,"ItemGoldBar10oz"};
 		sell[] = {6,"ItemGoldBar"};
 	};
-	class SVD_Gh_DZ { //SVD with iron sights and ghillie attachment
+	class SVD_Gh_DZ { // iron sights and ghillie
 		type = "trade_weapons";
 		buy[] = {-1,"ItemGoldBar10oz"}; // Sell only
 		sell[] = {7,"ItemGoldBar"};
