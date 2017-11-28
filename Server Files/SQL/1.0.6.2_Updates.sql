@@ -34,6 +34,11 @@ UPDATE character_data SET Inventory = REPLACE(Inventory, '"SVD_Gh_DZ"', '"SVD_PS
 UPDATE object_data SET Inventory = REPLACE(Inventory, '"SVD_Gh_DZ"', '"SVD_PSO1_Gh_DZ"') WHERE INSTR(Inventory, '"SVD_Gh_DZ"') > 0;
 
 
+/* PoliceCar was removed from dayz_vehicles */
+UPDATE `object_data` SET `Classname` = 'car_sedan' WHERE `Classname` = 'policecar';
+DELETE FROM `Traders_DATA` WHERE item = '["policecar"]';
+
+
 /* THIS PROCEDURE IS REQUIRED FOR 1062 AND RETURNS THE OBJECT ID MUCH MORE EFFICIENTLY THAN THE METHOD IN 1061 SQF */
 DROP procedure IF EXISTS `retObjID`;
 

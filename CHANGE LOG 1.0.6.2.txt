@@ -34,6 +34,7 @@
 [UPDATED] Added all upgraded weapons to the traders as sell only for the sell price of the base weapon plus the sell price of attachments. This allows them to be sold without removing attachments first. #1982 @worldwidesorrow
 [UPDATED] Increased the coverage angle of headlights on land vehicles and added a headlight to the bicycle
 [UPDATED] The huey searchlight and gunner seat now have improved visibility in first person view.
+[UPDATED] Removed policecar from dayz_vehicles due to model errors, SQL must be updated if this vehicle was used, see 1.0.6.2_Updates.sql
 
 [FIXED] Purchased and upgraded vehicles will now spawn quicker and no longer be destroyed by sched_safetyVehicle when server FPS is low. HiveExt.dll and SQL must be updated. See 1.0.6.2_Updates.sql
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
@@ -58,7 +59,6 @@
 [FIXED] Unable to sell upgraded _DZE[1-4] vehicle variants if their base vehicle class is removed from the trader configs.
 [FIXED] The player building a shed, tent or other unlocked storage was unable to use its gear until relog when DZE_GodModeBase=true; @oiad
 [FIXED] Death message killer inaccurate when player is caused to bleed by one unit and then killed by a different unit shortly after. @oiad
-[FIXED] The DayZ police car can no longer be upgraded to car_sedan_DZE1. #1929 @F507DMT
 [FIXED] Group tags sometimes printing WARNING: Function 'name' - x is dead to RPT.
 [FIXED] Group saving issue which could potentially join a player to a random group or not save group properly after death.
 [FIXED] Harvested pumpkin, sunflower, and hemp plants no longer respawn after relog (allowed infinite harvesting).
