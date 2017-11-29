@@ -267,21 +267,20 @@ class Boat : Ship
 };
 class RHIB: Boat
 {
-	displayName = "RHIB";
-	crew = "";
+	displayName = $STR_DN_RHIB;
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 };
 class RHIB2Turret: RHIB
 {
-	displayName = "RHIB (Mk19)";
+	displayName = $STR_DN_RHIB2;
 };
 
 class RHIB_DZ : Boat
 {
 	scope = public;
-	displayName = "RHIB";
+	displayName = $STR_DN_RHIB;
 	vehicleClass = "Ship";
 	accuracy = 0.5;
 	crew = "";
@@ -498,7 +497,7 @@ class RHIB_DZ : Boat
 		  "100Rnd_127x99_M2",
 		  "100Rnd_127x99_M2"
 		};
-		gunnerName = "front gunner";
+		gunnerName = $STR_POSITION_FRONTGUNNER;
 		gunnerOpticsModel = "\ca\weapons\optika_empty";
 		gunnerForceOptics = 0;
 		startEngine = 0;
@@ -533,7 +532,7 @@ class RHIB_DZ : Boat
 	};
 	class Library
 	{
-	  libTextDesc = "The Naval Special Warfare Rigid Hull Inflatable Boat is a fast, high-buoyancy all weather boat designed to transport a fully equipped team of eight-men and three crew members. It is also fully transportable by C-130 Hercules.";
+	  libTextDesc = $STR_LIB_RHIB;
 	};
 	extCameraPosition[] = {
 	  0,
