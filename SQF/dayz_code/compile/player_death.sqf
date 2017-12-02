@@ -187,7 +187,7 @@ if ((_body == (vehicle _body)) && {_animState != "deadstate" && {_animCheck != "
 	uiSleep 2;
 
 	for "_x" from 5 to 1 step -1 do {
-		titleText [format[localize "str_return_lobby", _x], "PLAIN DOWN", 1];
+		[format[localize "str_return_lobby", _x], 1] call dayz_rollingMessages;
 		uiSleep 1;
 	};
 
