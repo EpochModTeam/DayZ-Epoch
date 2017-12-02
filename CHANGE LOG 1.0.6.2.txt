@@ -83,6 +83,7 @@
 [FIXED] Floating loot positions in hotel (Land_HouseB_Tenement)
 [FIXED] Updates to humanity and player stats after a skin change not always saving in hive (server_getDiff)
 [FIXED] Bad vehicle type crew error for RHIB2Turret on A2OA main menu intro scene
+[FIXED] Fresh spawns running on login if they died while running
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 

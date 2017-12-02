@@ -1063,7 +1063,7 @@ class FSM
                          "//_state = player getVariable[""state"",[]];" \n
                          "_currentWpn = """";" \n
                          "_currentAnim = """";" \n
-                         "if ((!isNil ""_state"") AND {(count _state > 1)}) then {" \n
+                         "if (!isNil '_state' && {count _state > 1} && {_state select 1 != 'reset'}) then {" \n
                          "	//Reload players state" \n
                          "	_currentWpn		=	_state select 0;" \n
                          "	_currentAnim	=	_state select 1;" \n
@@ -1074,6 +1074,12 @@ class FSM
                          "} else {" \n
                          "	_currentWpn	=	""Makarov"";" \n
                          "	_currentAnim	=	""aidlpercmstpsraswpstdnon_player_idlesteady02"";" \n
+                         "	//Prevent fresh spawns running on login when they died running, switchMove does not stop it" \n
+                         "	disableUserInput true;" \n
+                         "	player playActionNow 'Stop';" \n
+                         "	disableUserInput false;" \n
+                         "	disableUserInput true;" \n
+                         "	disableUserInput false;" \n
                          "};" \n
                          "" \n
                          "reload player;" \n

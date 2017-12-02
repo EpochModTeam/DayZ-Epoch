@@ -205,6 +205,9 @@ if (_randomSpot) then {
 		diag_log format["%1: Error, failed to find a suitable spawn spot for player. area:%2",__FILE__, _mkr];
 	};
 	_worldspace = [0,_position];
+	
+	//Fresh spawn, clear animationState so anim from last sync does not play on login
+	_state = ["","reset"];
 };
 
 //record player pos locally for server checking
