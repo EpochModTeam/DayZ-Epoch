@@ -68,6 +68,12 @@ if (isNil "keyboard_keys") then {
 		call player_toggleSoundMute;
 		_handled = true;
 	};
+	_statusUI = {
+		profileNamespace setVariable ["statusUI",(if (profileNamespace getVariable ["statusUI",1] == 1) then {0} else {1})];
+		saveProfileNamespace;
+		call ui_changeDisplay;
+		_handled = true;
+	};
     _rifle = {
 		2 call dz_fn_switchWeapon;
         _handled = true;
@@ -302,6 +308,7 @@ if (isNil "keyboard_keys") then {
     [actionKeys "Diary", _journal] call _addArray;
     [actionKeys "NetworkStats", _journal] call _addArray;
 	[[DIK_F1], _muteSound] call _addArray;
+	[[DIK_F3], _statusUI] call _addArray;
 	[[DIK_F4], {if (diag_tickTime - dayz_lastSave > 10) then {call player_forceSave;};_handled = true;}] call _addArray;
     [[DIK_TAB,DIK_DELETE], _forcesave] call _addArray;
     //[[DIK_F4, DIK_RMENU, DIK_LMENU,DIK_LSHIFT,DIK_RSHIFT,DIK_ESCAPE], _forcesave2] call _addArray;
@@ -314,7 +321,7 @@ if (isNil "keyboard_keys") then {
     [actionKeys "ForceCommandingMode", {DZE_5 = true;_handled = true;}] call _addArray;
     [[  DIK_F9,DIK_F10,DIK_F11,DIK_F12,
         DIK_F8,DIK_F7,DIK_F6,DIK_F5,
-        DIK_F3,DIK_F2,DIK_9,
+        DIK_F2,DIK_9,
         DIK_8,DIK_7,DIK_6,DIK_5,DIK_4], _block] call _addArray;
 	if (dayz_groupSystem) then {
 		[[DIK_F5], _openGroups] call _addArray;

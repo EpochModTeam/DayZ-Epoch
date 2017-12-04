@@ -3,6 +3,7 @@
 [NEW] Added loot positions for new enterable buildings
 [NEW] Added L85 attachments totaling 24 variants, new models by @Streatman. Class L85_Holo_DZ no longer exists and must be updated to L85A2_DZ in custom scripts and SQL, see 1.0.6.2_Updates.sql
 [NEW] SVD scope attachments can now be removed, new models by @Streatman
+[NEW] Added option to toggle status icons in "Game Options" menu and via F3 hotkey. Note this will also toggle Epoch "friendly" tags because they are the same display.
 [NEW] Added DZE_limitPlots so admins can limit plot poles to one per UID, disabled by default. @oiad
 [NEW] Pumpkin, sunflower, and hemp plants spawned with createVehicle can be harvested with a knife now. #1928 @F507DMT
 [NEW] The journal and dayz_survived variable now contain actual play time [array] instead of days since the character was created [number].
@@ -13,7 +14,7 @@
 [NEW] Added basic server-side authentication to hive object creation/deletion for improved security. Affects Server_(DeleteObj|PublishObj|PublishVeh|SwapObj|UpdateObject), admins and script makers should review the changes if using PVDZ_obj_(Destroy|Publish), PVDZ_veh_Save, PVDZE_obj_Swap, PVDZE_veh_(Publish|Upgrade) or server_deleteObj and verify custom code is compliant with these changes (github.com/EpochModTeam/DayZ-Epoch/commit/42e0047)
 [NEW] BAF_L85A2_RIS_TWS_DZ to emulate the old behavior of the now NV only BAF_L85A2_RIS_CWS. Server owners must add the weapon on their own #1983
 [NEW] Admins can now define a maximum build height, see configVariables.sqf/DZE_BuildHeightLimit. @BigEgg17
-[NEW] Admins can now change the lootRefreshTimer for each building type from the default 15 minutes. CfgLoot.hpp must be updated if using custom loot tables. 
+[NEW] Admins can now change the lootRefreshTimer for each building type from the default 15 minutes. CfgLoot.hpp must be updated if using custom loot tables.
 
 [UPDATED] Loot and zed spawn is now disabled in trader cities by default. This is configurable in mission\init.sqf via DZE_SafeZonePosArray. Added function to check positions against DZE_SafeZonePosArray "_PosInSafeZone = _positionToCheck call DZE_SafeZonePosCheck;"
 [UPDATED] Zombie pathing. Zeds should now run more direct to players and no longer get stuck at the position where a player entered a vehicle.

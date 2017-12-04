@@ -607,7 +607,6 @@ if (!isDedicated) then {
 	dayz_nutrition = 0;
 	dayz_preloadFinished = true;
 	dayz_soundMuted = false;
-	dayz_statusArray = [1,1];
 	dayz_disAudial = 0;
 	dayz_disVisual = 0;
 	dayz_firedCooldown = 0;
@@ -652,17 +651,11 @@ if (!isDedicated) then {
 	dayz_inVehicle = false;
 	dayz_unsaved = false;
 	dayz_scaleLight = 0;
-	dayzDebug = false;
-	dayzState = -1;
 	dayz_onBack = "";
 	dayz_fishingInprogress = false;
 	lastSpawned = diag_tickTime;
 	lastSepsis = 0;
 	NORRN_dropAction = -1;
-	//uiNamespace setVariable ['DAYZ_GUI_display',displayNull];
-	//if (uiNamespace getVariable ['DZ_displayUI', 0] == 2) then {
-	//	dayzDebug = true;
-	//};
 	dayz_dodge = false;
 	Dayz_constructionContext = [];
 	Dayz_freefall = [ time, 0, 0.1 ];

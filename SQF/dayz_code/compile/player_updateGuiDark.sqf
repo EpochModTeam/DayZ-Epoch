@@ -1,6 +1,4 @@
-
-
-private ["_flash","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_array","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_id","_rID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_combattimeout","_timeleft"];
+private ["_flash","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_id","_rID","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_combattimeout","_timeleft"];
 
 _flash = {
     if (ctrlShown _this) then {
@@ -16,11 +14,6 @@ _foodVal   =  1 - (dayz_hunger / SleepFood);
 _thirstVal =  1 - (dayz_thirst / SleepWater);
 _tempVal   =  ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));	// Normalise to [0,1]
 
-if (uiNamespace getVariable ["DZ_displayUI", 0] == 1) exitWith {
-	_array = [_foodVal,_thirstVal];
-	_array
-};
-
 _combatVal = 0;
 _combattimeout = player getVariable["combattimeout",0];
 if (_combattimeout > 0) then {
@@ -33,7 +26,7 @@ _visual    =  (dayz_disVisual / 100);
 _bloodVal  =  r_player_blood / r_player_bloodTotal;
 
 _display = uiNamespace getVariable 'DAYZ_GUI_display';
-if (isNil "_display") exitWith { [_foodVal,_thirstVal] }; // not ready
+if (isNil "_display") exitWith {}; // not ready
 
 _ctrlBlood = 	_display displayCtrl 1300;
 _ctrlBleed = 	_display displayCtrl 1303;
@@ -48,7 +41,10 @@ _ctrlFracture = 	_display displayCtrl 1203;
 _ctrlMuteBackground = _display displayCtrl 1904;
 _ctrlMuteIcon = _display displayCtrl 1204;
 
-if (!dayz_soundMuted) then {
+if (dayz_soundMuted) then {
+	_ctrlMuteBackground ctrlShow true;
+	_ctrlMuteIcon ctrlShow true;
+} else {
 	_ctrlMuteBackground ctrlShow false;
 	_ctrlMuteIcon ctrlShow false;
 };
@@ -210,6 +206,3 @@ if (dayz_humanitytarget != _string) then {
 	_targetControl ctrlSetStructuredText (parseText _string);
 	dayz_humanitytarget = _string;
 };
-
-_array = [_foodVal,_thirstVal];
-_array

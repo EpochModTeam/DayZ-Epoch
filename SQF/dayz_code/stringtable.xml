@@ -7604,9 +7604,15 @@
 			<German>Streamer Modus:</German>
 		</Key>
 		<Key ID="STR_UI_STREAMER_MODE_TOOLTIP">
-			<English>Hides server watermark and rules feed</English>
+			<English>Hide server watermark and rules feed</English>
 			<German>Blendet das Server Wasserzeichen und die Regelliste aus.</German>
 			<Russian>Скрывает логотип сервера и новостную ленту</Russian>
+		</Key>
+		<Key ID="STR_UI_STATUS_ICONS">
+			<English>Status icons:</English>
+		</Key>
+		<Key ID="STR_UI_STATUS_ICONS_TOOLTIP">
+			<English>Show status icons (F3 hotkey)</English>
 		</Key>
 	</Package>
 	<Package name="playerstats">

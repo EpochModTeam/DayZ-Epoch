@@ -45,7 +45,7 @@ class RscDisplayConfigure {
 	onKeyDown = FILTER_CHEATS;
 };
 class RscDisplayGameOptions {
-	onLoad = "{(_this select 0) displayCtrl 140 lbAdd _x;} forEach [localize 'STR_DISABLED',localize 'STR_ENABLED']; (_this select 0) displayCtrl 140 lbSetCurSel (profileNamespace getVariable ['streamerMode',0]); uiNamespace setVariable ['streamerMode',(profileNamespace getVariable ['streamerMode',0])];";
+	onLoad = "{_idc = _x select 0; _var = _x select 1; _default = _x select 2; lbClear ((_this select 0) displayCtrl _idc); {(_this select 0) displayCtrl _idc lbAdd localize _x} forEach ['STR_DISABLED','STR_ENABLED']; (_this select 0) displayCtrl _idc lbSetCurSel (profileNamespace getVariable [_var,_default]); uiNamespace setVariable [_var,(profileNamespace getVariable [_var,_default])]} forEach [[103,'statusUI',1],[140,'streamerMode',0]];";
 	onUnload = "call ui_changeDisplay;";
 	onKeyDown = FILTER_CHEATS;
 	class controls {
@@ -60,6 +60,17 @@ class RscDisplayGameOptions {
 			x = 0.400534;
 			y = (0.420549 + -2*0.069854);
 			w = 0.3;
+		};
+		class CA_RadioSubtitles : CA_TextLanguage { //Subtitles settings have no effect in DayZ, so safe to overwrite
+			x = 0.159803;
+			y = (0.420549 + 0*0.069854);
+			text = $STR_UI_STATUS_ICONS;
+		};
+		class CA_ValueRadio : CA_ValueLanguage {
+			idc = 103;
+			y = (0.420549 + 0*0.069854);
+			tooltip = $STR_UI_STATUS_ICONS_TOOLTIP;
+			onLBSelChanged = "profileNamespace setVariable ['statusUI',(lbCurSel (_this select 0))];";
 		};
 		class CA_TextStreamerMode : CA_TextLanguage {
 			x = 0.159803;
@@ -79,7 +90,7 @@ class RscDisplayGameOptions {
 			y = 0.7625;
 			text = $STR_DISP_CANCEL;
 			//reset to original value
-			onButtonClick = "profileNamespace setVariable ['streamerMode',(uiNamespace getVariable 'streamerMode')]; saveProfileNamespace; if (!isNil 'player_toggleStreamerMode') then {call player_toggleStreamerMode;};";
+			onButtonClick = "{profileNamespace setVariable [_x,(uiNamespace getVariable _x)]} forEach ['statusUI','streamerMode']; saveProfileNamespace; if (!isNil 'player_toggleStreamerMode') then {call player_toggleStreamerMode;};";
 		};
 		class CA_ButtonContinue : RscShortcutButton {
 			idc = 1;
