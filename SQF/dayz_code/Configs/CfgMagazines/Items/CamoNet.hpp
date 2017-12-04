@@ -34,7 +34,7 @@
 		class Build
 		{
 			text = $STR_BUILD_CAMONET;
-			script = "; ['ItemCamoNetGrey','Build'] spawn player_build;";
+			script = "; ['ItemCamoNetGrey','Build'] spawn player_buildPlaceables;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"ItemCamoNetGrey"};
 			create = "CamoNet_DZ";

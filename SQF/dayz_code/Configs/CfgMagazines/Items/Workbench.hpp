@@ -9,10 +9,11 @@ class ItemWorkBench : CA_Magazine
 	descriptionShort = $STR_BLD_desc_ItemWorkBench;//"A Folded Workbench, required for House Building and Some Crafting"
 	vehicle = "WorkBench";
 	sfx = "tentunpack";
+	
 	class ItemActions {
 		class Build {
 			text = $STR_BLD_build_ItemWorkBench;//"place WorkBench"
-			script = "; ['ItemWorkBench','Build'] spawn player_build;";
+			script = "; ['ItemWorkBench','Build'] spawn player_buildPlaceables;";
 			require[] = {};
 			consume[] = {"ItemWorkBench"};
 			create = "WorkBench";

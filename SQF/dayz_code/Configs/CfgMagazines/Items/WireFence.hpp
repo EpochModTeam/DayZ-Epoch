@@ -17,7 +17,7 @@ class ItemWire : CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			consume[] = {"ItemWire"};
-			create = "Fort_RazorWire"; // 1.8.7 uses Wire_cat1
+			create = "Fort_RazorWire"; // vanilla uses Wire_cat1
 			byPass = "byPassRoadCheck";
 		};
 	};

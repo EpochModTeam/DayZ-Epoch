@@ -99,6 +99,7 @@ if (!isDedicated) then {
 	FNC_find_plots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_find_plots.sqf";
 
 	player_buildVanilla = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_buildVanilla.sqf";
+	player_buildPlaceables = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_buildPlaceables.sqf";
 	fn_buildCamera = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_buildCamera.sqf";
 	object_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_build.sqf";
 	object_upgradeFireplace = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_upgradeFireplace.sqf";

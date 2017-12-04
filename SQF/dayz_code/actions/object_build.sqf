@@ -24,7 +24,7 @@ Dayz_constructionContext set [ 4, false ]; // Stop the construction mode, cf. pl
 if (_build) then {
     _location = getPosATL _ghost;
     _direction = getDir _ghost;
-    _object = createVehicle [_classname, getMarkerpos "respawn_west", [], 0, "CAN_COLLIDE"];
+    _object = createVehicle [_classname, getMarkerpos "respawn_west", [], 0, "NONE"];
 	
     _object setDir _direction;
 	
