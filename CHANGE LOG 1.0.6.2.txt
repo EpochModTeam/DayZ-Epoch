@@ -35,6 +35,7 @@
 [UPDATED] Increased the coverage angle of headlights on land vehicles and added a headlight to the bicycle
 [UPDATED] The huey searchlight and gunner seat now have improved visibility in first person view.
 [UPDATED] Removed policecar from dayz_vehicles due to model errors, SQL must be updated if this vehicle was used, see 1.0.6.2_Updates.sql
+[UPDATED] Player is no longer set in combat for throwing a flare or chemlight
 
 [FIXED] Purchased and upgraded vehicles will now spawn quicker and no longer be destroyed by sched_safetyVehicle when server FPS is low. HiveExt.dll and SQL must be updated. See 1.0.6.2_Updates.sql
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
@@ -48,7 +49,7 @@
 [FIXED] The unconscious wake up animation can no longer be skipped by using a bandage or other right click actions.
 [FIXED] Sharpening a knife will no longer delete one if the player already had a fully sharpened knife on their toolbelt (duplicate weapon).
 [FIXED] Swimming in air or ground after relog, clothes change and respawn on certain maps. #1913 @Cherdenko
-[FIXED] Arma cheats enterable on map display and create marker text box. #1915 @BigEgg17
+[FIXED] Arma cheats (LeftShift + NumPad-) enterable on map display and create marker text box. #1915 @BigEgg17
 [FIXED] It is no longer possible to duplicate melee weapons by double clicking to drop and right clicking at the same time. @F507DMT
 [FIXED] Death messages and damage sometimes showing RunOver when they should not due to a variable not resetting after being runover. @oiad
 [FIXED] CFGMoves/Animation CTD on server. @icomrade Thanks Choc for reporting
