@@ -16,7 +16,7 @@ if (typeName (_this select 0) == "ARRAY") then {
 	_killed = false;
 };
 
-_deathPos = getPos _body;
+_deathPos = getPosATL _body;
 _playerID = getPlayerUID player;
 
 //Switch view to camera so player does not see debug plains at respawn_west
@@ -25,7 +25,7 @@ _camera camSetDir 0;
 _camera camSetFOV 1;
 _camera cameraEffect ["Internal","TOP"];
 _camera camSetTarget _deathPos;
-_camera camSetPos [_deathPos select 0, (_deathPos select 1) + 2, 5];
+_camera camSetPos [_deathPos select 0, (_deathPos select 1) + 2, (_deathPos select 2) + 5];
 _camera camCommit 0;
 
 if (!_killed) then {
@@ -34,7 +34,12 @@ if (!_killed) then {
 };
 
 if (dayz_onBack != "") then {
-	_body addWeapon dayz_onBack;
+	if (dayz_onBack in weapons _body) then {
+		//Prevent duplicate weapon error
+		[dayz_onBack,2,1,[_deathPos select 0,_deathPos select 1,0]] call fn_dropItem;
+	} else {
+		_body addWeapon dayz_onBack;
+	};
 };
 
 //Get killer information immediately. Weapon, distance or vehicle can change in seconds.
@@ -53,7 +58,7 @@ _ammo = if (count _this > 2) then {_this select 2} else {""};
 
 if (!isNull _source) then {
 	if (!isNull _body) then {
-		_distance = round (_body distance _source);
+		_distance = round (_deathPos distance _source);
 	};
 	
 	_sourceVehicleType = typeOf (vehicle _source);
@@ -178,7 +183,7 @@ if ((_body == (vehicle _body)) && {_animState != "deadstate" && {_animCheck != "
 	_deathPos = _this select 2;
 	
 	waitUntil {camCommitted _camera};
-	_camera camSetPos [_deathPos select 0, (_deathPos select 1) + 2, 15];
+	_camera camSetPos [_deathPos select 0, (_deathPos select 1) + 2, (_deathPos select 2) + 15];
 	_camera camCommit 4;
 	uiSleep 5;
 	

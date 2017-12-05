@@ -29,7 +29,7 @@
 5 playableUnits !"for [{_y=0},{_y < count(playableUnits)},{_y=_y+1}] do {" !"typeName player == \"OBJECT\" && {(player in playableUnits" !"AND {((alive _x) AND {((vehicle _x) distance _obj < 150)})}} count playableUnits)}) then {" !="_local = { _unit distance _x < _dis; } count playableUnits <= 1;" !"if (!_isOk) exitWith {false};\nuiSleep 0.001;\n} forEach playableUnits;" !"ManagementMustBeClose) then { player nearEntities [\"CAManBase\", 10] } else { playableUnits };"
 5 selectPlayer !"addSwitchableUnit dayz_originalPlayer;\nsetPlayable dayz_originalPlayer;\nselectPlayer dayz_originalPlayer;" !"addSwitchableUnit _newUnit;\nsetPlayable _newUnit;\nselectPlayer _newUnit;"
 5 serverCommand !="_character = if (serverCommandAvailable \"#kick\") then { call sched_tg_follow } else { player };" !"serverCommand (\"#vote kick \" + _selectedName);"
-5 setDamage !"if (_entity isKindOf \"Animal\") then {\n_entity setDamage 1;" !"player setDamage 1;\n};\n\nif (dayz_onBack != \"\") then {\n_body addWeapon dayz_onBack;" !"if (_ent isKindOf \"Animal\" || _ent isKindOf \"zZombie_base\") then {\n_ent setDamage 1;"
+5 setDamage !"if (_entity isKindOf \"Animal\") then {\n_entity setDamage 1;" !"player setDamage 1;\n};\n\nif (dayz_onBack != \"\") then {\nif (dayz_onBack in w" !"if (_ent isKindOf \"Animal\" || _ent isKindOf \"zZombie_base\") then {\n_ent setDamage 1;"
 5 setDammage
 5 SetEventHandler !"\n_menu ctrlSetEventHandler [\"ButtonClick\",_compile];\n};" !"inGameUISetEventHandler [\"Action\",\"false\"];"
 5 setMarkerAlpha
