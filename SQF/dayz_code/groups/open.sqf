@@ -1,10 +1,11 @@
 if (!isNull findDisplay 80000) exitWith {};
 
-private ["_disbandButton","_display","_group","_index","_inviteButton","_inviter","_inviterUID","_kickButton","_leader","_leaveButton","_myGroup","_playerList","_promoteButton","_uid"];
+private ["_disbandButton","_display","_group","_index","_inviteButton","_inviter","_inviterUID","_kickButton","_leader","_leaveButton","_myGroup","_newCount","_playerList","_promoteButton","_uid"];
 disableSerialization;
 createDialog "DZ_GroupDialog";
 _display = findDisplay 80000;
 _uid = getPlayerUID player;
+dayz_oldPlayerCount = 0;
 _playerList = _display displayCtrl 1;
 _myGroup = _display displayCtrl 2;
 _inviteButton = _display displayCtrl 3;
@@ -64,16 +65,22 @@ while {!isNull findDisplay 80000} do {
 		{_x ctrlShow false} count [_inviteText,_joinButton,_rejectButton];
     };
 	
-	//Fill player list
-	lbClear _playerList;
-	{
-		if (isPlayer _x && _x != player) then {
-			_index = _playerList lbAdd (name _x);
-			_playerList lbSetData [_index, getPlayerUID _x];
-			_playerList lbSetPicture [_index, if (count (units group _x) > 1) then {"\ca\ui\data\ui_task_failed_ca.paa"} else {"\ca\ui\data\ui_task_done_ca.paa"}];
-		};	    
-	} count allUnits;
-	lbSort _playerList;
+	_newCount = playersNumber west;
+	
+	if (dayz_oldPlayerCount != _newCount) then {
+		//Refresh player list
+		lbClear _playerList;
+		{
+			if (isPlayer _x && _x != player) then {
+				_index = _playerList lbAdd (name _x);
+				_playerList lbSetData [_index, getPlayerUID _x];
+				_playerList lbSetPicture [_index, if (count (units group _x) > 1) then {"\ca\ui\data\ui_task_failed_ca.paa"} else {"\ca\ui\data\ui_task_done_ca.paa"}];
+			};	    
+		} count allUnits;
+		lbSort _playerList;
+	};
+	
+	dayz_oldPlayerCount = _newCount;
      
 	uiSleep 1;
 };

@@ -11,4 +11,5 @@ if (player == leader group player && {!isNull _target} && {count (units group _t
 	_inviteButton ctrlShow true;
 } else {
 	_inviteButton ctrlShow false;
+	dayz_oldPlayerCount = 0; //Force player list refresh
 };

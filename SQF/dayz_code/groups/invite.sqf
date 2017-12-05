@@ -5,7 +5,9 @@ _playerList = findDisplay 80000 displayCtrl 1;
 _uid = _playerList lbData (lbCurSel _playerList);
 _recipient = _uid call dayz_getPlayer;
 
-if (isNull _recipient or player != leader group player or count (units group _recipient) > 1) exitWith {};
+if (isNull _recipient or player != leader group player or count (units group _recipient) > 1) exitWith {
+	dayz_oldPlayerCount = 0; //Force player list refresh
+};
 
 _hasInvite = false;
 {
