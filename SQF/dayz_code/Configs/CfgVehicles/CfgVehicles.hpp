@@ -311,7 +311,6 @@ class CfgVehicles
 	//class UAZ_Unarmed_Base;
 	//class HMMWV_Base;
 	class AH6_Base_EP1;
-	class AH6X_EP1;
 	class An2_Base_EP1;
 	class TT650_Base;
 	class Truck;

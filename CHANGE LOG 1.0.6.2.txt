@@ -35,6 +35,7 @@
 [UPDATED] Added all upgraded weapons to the traders as sell only for the sell price of the base weapon plus the sell price of attachments. This allows them to be sold without removing attachments first. #1982 @worldwidesorrow
 [UPDATED] Increased the coverage angle of headlights on land vehicles and added a headlight to the bicycle
 [UPDATED] The huey searchlight and gunner seat now have improved visibility in first person view.
+[UPDATED] The AH6X_DZ now uses a new model which removes the camera and computer, adds a search light and fixes unknown animation source turret errors.
 [UPDATED] Removed policecar from dayz_vehicles due to model errors, SQL must be updated if this vehicle was used, see 1.0.6.2_Updates.sql
 [UPDATED] Player is no longer set in combat for throwing a flare or chemlight
 
