@@ -3,7 +3,7 @@ class DoorManagement
 	idd = 711195;
 	onLoad = "if (DZE_doorManagementMustBeClose) then {(_this select 0) displayCtrl 7108 ctrlSetText localize 'STR_EPOCH_HUMANS_NEARBY';};";
 	class Controls {
-		class RscText_7100: ZSC_RscTextT
+		class RscText_7100: ZSC_RscText
 		{
 			idc = 7100;
 			x = 0.30 * safezoneW + safezoneX;
@@ -13,7 +13,7 @@ class DoorManagement
 			colorBackground[] = {0,0,0,0.8};
 		};
 
-		class RscListbox_7101: RscListbox
+		class RscListbox_7101: ZSC_RscListBox
 		{
 			idc = 7101;
 			x = 0.31* safezoneW + safezoneX;
@@ -22,9 +22,12 @@ class DoorManagement
 			h = 0.30 * safezoneH;
 			soundSelect[] = {"",0.1,1};
 			colorBackground[] = {0.1,0.1,0.1,0.8};
+			sizeEx = 0.035;
+			class ListScrollBar: ZSC_RscScrollBar{};
+			style = 16; //no outline
 		};
 
-		class RscListbox_7102: RscListbox
+		class RscListbox_7102: ZSC_RscListBox
 		{
 			idc = 7102;
 			x = 0.45 * safezoneW + safezoneX;
@@ -33,9 +36,12 @@ class DoorManagement
 			h = 0.30 * safezoneH;
 			soundSelect[] = {"",0.1,1};
 			colorBackground[] = {0.1,0.1,0.1,0.8};
+			sizeEx = 0.035;
+			class ListScrollBar: ZSC_RscScrollBar{};
+			style = 16; //no outline
 		};
 
-		class RscShortcutButton_7104: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7104: ZSC_RscButtonMenu
 		{
 			idc = 7104;
 			text = $STR_EPOCH_ADD;
@@ -45,7 +51,7 @@ class DoorManagement
 			onButtonClick = "[lbData [7101,lbCurSel 7101]] call DoorAddFriend;";
 		};
 
-		class RscShortcutButton_7105: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7105: ZSC_RscButtonMenu
 		{
 			idc = 7105;
 			text = $STR_DISP_DELETE;
@@ -55,7 +61,7 @@ class DoorManagement
 			onButtonClick = "[(lbCurSel 7102)] call DoorRemoveFriend;";
 		};
 
-		class RscShortcutButton_7106: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7106: ZSC_RscButtonMenu
 		{
 			idc = 7106;
 			text = $STR_UI_CLOSE;
@@ -65,7 +71,7 @@ class DoorManagement
 			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 2);";
 		};
 
-		class RscText_7107: ZSC_RscTextT
+		class RscText_7107: ZSC_RscText
 		{
 			idc = 7107;
 			text = $STR_EPOCH_DOORMANAGEMENT_TITLE;
@@ -73,11 +79,11 @@ class DoorManagement
 			y = 0.30 * safezoneH + safezoneY;
 			w = 0.30 * safezoneW;
 			h = 0.05 * safezoneH;
-			colorBackground[] = {0,0,0,0.8};
+			colorBackground[] = {ZSC_DARK_BLUE, 0.5};
 			colorText[] = {1,1,1,1};
 		};
 
-		class RscText_7108: ZSC_RscTextT
+		class RscText_7108: ZSC_RscText
 		{
 			idc = 7108;
 			text = $STR_MP_PLAYERS;
@@ -88,7 +94,7 @@ class DoorManagement
 			colorText[] = {1,1,1,1};
 		};		
 
-		class RscText_7103: ZSC_RscTextT 
+		class RscText_7103: ZSC_RscText 
 		{
 			idc = 71103;
 			text = $STR_EPOCH_DOORMANAGEMENT_FRIENDS;

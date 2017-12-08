@@ -55,10 +55,10 @@ _displayText = getText(configFile >> "CfgMagazines" >> _class >> "descriptionSho
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 		"<img image='%1'  size='3' align='center'/><br />" +
-		"<t color='#33BFFF' size='0.7'>%8: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%9: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%6 %7</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />",
+		"<t color='#bcbcbc' size='0.7'>%8: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%9: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%6 %7</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />",
 		_picture,
 		_display,
 		_class,
@@ -84,10 +84,10 @@ if (Z_SingleCurrency) then {
 	};
 	_formattedText = format [
 		"<img image='%1'  size='3' align='center'/><br />" +
-		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%6 <img image='%10' /> %9</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%5 <img image='%8' /> %7</t><br />",
+		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%14: </t><t color='#ffffff' size='0.7'>%6 <img image='%10' /> %9</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%5 <img image='%8' /> %7</t><br />",
 		_picture,
 		_display,
 		_class,
@@ -107,14 +107,14 @@ if (Z_SingleCurrency) then {
 
 if (count _compatible > 0) then {
 	_formattedText = _formattedText + format [
-		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t><br />"
+		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t><br />"
 		,localize "STR_EPOCH_COMPATIBLE",_compatibleText
 	];
 };
 
 if (_displayText != "") then {
 	_formattedText = _formattedText + format [
-		"<t color='#33BFFF' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
+		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
 		,localize "STR_EPOCH_DESCRIPTION",_displayText
 	];
 };

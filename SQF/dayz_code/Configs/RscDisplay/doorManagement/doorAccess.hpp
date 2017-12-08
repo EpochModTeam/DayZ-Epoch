@@ -10,7 +10,6 @@ class DoorAccess
 	{
 		class ZupaBackground_1
 		{
-			//access = 0;
 			type = 0;
 			colorText[] = {0.8784,0.8471,0.651,1};
 			text = "";
@@ -27,7 +26,7 @@ class DoorAccess
 			colorBackground[] = {0,0,0,0.8};
 		};
 
-		class ZupaHeader_2: ZSC_RscTextT
+		class ZupaHeader_2: ZSC_RscText
 		{
 			idc = -1;
 			x = 0.35 * safezoneW + safezoneX;
@@ -35,11 +34,11 @@ class DoorAccess
 			w = 0.20 * safezoneW;
 			h = 0.05 * safezoneH;
 			text = $STR_EPOCH_DOORACCESS_TITLE;
-			colorBackground[] = {0,0,0,0.8};
+			colorBackground[] = {ZSC_DARK_BLUE, 0.5};
 			colorText[] = {1,1,1,1};
 		};
 
-		class ZupaButton_1 : ZSC_RscButtonMenuBlue
+		class ZupaButton_1 : ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_EPOCH_DOORACCESS_SCAN;
@@ -50,7 +49,7 @@ class DoorAccess
 			onButtonClick = "keypadCancel = false; call player_unlockDoor";
 		};
 
-		class ZupaButton_4 : ZSC_RscButtonMenuBlue
+		class ZupaButton_4 : ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_EPOCH_DOORACCESS_MANUAL;
@@ -61,7 +60,7 @@ class DoorAccess
 			onButtonClick = "call player_enterCode";
 		};
 
-		class ZupaButton_2: ZSC_RscButtonMenuBlue
+		class ZupaButton_2: ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_DISP_CANCEL;
@@ -71,7 +70,7 @@ class DoorAccess
 			onButtonClick = "((ctrlParent (_this select 0)) closeDisplay 2);";
 		};		
 
-		class ZupaButton_3: ZSC_RscButtonMenuBlue
+		class ZupaButton_3: ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_EPOCH_ACTIONS_MANAGEDOOR;

@@ -35,11 +35,11 @@ if (isNumber (configFile >> 'CfgVehicles' >> _class >> 'transportMaxMagazines'))
 if (Z_SingleCurrency) then {
 	_formattedText = format [
 		"<img image='%1'  size='3'  align='center'/><br />" +
-		"<t color='#33BFFF' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 %4</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%16: </t><t color='#ffffff' size='0.7'><img image='%14'/> %8 <img image='%15'/> %9</t><br />",
+		"<t color='#bcbcbc' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 %4</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%16: </t><t color='#ffffff' size='0.7'><img image='%14'/> %8 <img image='%15'/> %9</t><br />",
 		_picture,
 		_display,
 		_class,
@@ -71,11 +71,11 @@ if (Z_SingleCurrency) then {
 	
 	_formattedText = format [
 		"<img image='%1'  size='3'  align='center'/><br />" +
-		"<t color='#33BFFF' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 <img image='%17' /> %4</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 <img image='%16' /> %7</t><br />" +
-		"<t color='#33BFFF' size='0.7'>%18: </t><t color='#ffffff' size='0.7'><img image='%14'/> %8 <img image='%15'/> %9</t><br />",
+		"<t color='#bcbcbc' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 <img image='%17' /> %4</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 <img image='%16' /> %7</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%18: </t><t color='#ffffff' size='0.7'><img image='%14'/> %8 <img image='%15'/> %9</t><br />",
 		_picture,
 		_display,
 		_class,

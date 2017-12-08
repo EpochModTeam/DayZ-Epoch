@@ -1,3 +1,5 @@
+#define ZSC_DARK_BLUE 0.3843, 0.7019, 0.8862
+
 class ZSC_RscScrollBar
 {
 	color[] = {1,1,1,0.6};
@@ -208,14 +210,14 @@ class ZSC_RscButton
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	colorText[] = {1,1,1,1.0};
 	colorDisabled[] = {0.4,0.4,0.4,1};
-	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",0.7};
-	colorBackgroundActive[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",1};
+	colorBackground[] = {ZSC_DARK_BLUE,0.7};
+	colorBackgroundActive[] = {ZSC_DARK_BLUE,1};
 	colorBackgroundDisabled[] = {0.95,0.95,0.95,1};
 	offsetX = 0.003;
 	offsetY = 0.003;
 	offsetPressedX = 0.002;
 	offsetPressedY = 0.002;
-	colorFocused[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",1};
+	colorFocused[] = {ZSC_DARK_BLUE,1};
 	colorShadow[] = {0,0,0,1};
 	colorBorder[] = {0,0,0,1};
 	borderSize = 0.0;
@@ -247,8 +249,8 @@ class ZSC_RscShortcutButton {
 	colorFocused[] = {1,1,1,1.0};
 	color2[] = {0.95,0.95,0.95,1};
 	colorDisabled[] = {1,1,1,0.25};
-	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",1};
-	colorBackgroundFocused[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.69])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.75])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.5])",1};
+	colorBackground[] = {ZSC_DARK_BLUE,1};
+	colorBackgroundFocused[] = {ZSC_DARK_BLUE,1};
 	colorBackground2[] = {1,1,1,1};
 	periodFocus = 1.2;
 	periodOver = 0.8;
@@ -315,12 +317,12 @@ class ZSC_RscButtonMenu : ZSC_RscShortcutButton {
 	animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
 	animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
 	animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
-	colorBackground[] = {0,0,0,0.8};
-	colorBackgroundFocused[] = {1,1,1,1};
-	colorBackground2[] = {0.75,0.75,0.75,1};
+	colorBackground[] = {ZSC_DARK_BLUE, 0.5};
+	colorBackgroundFocused[] = {.9,.9,.9,.5};
+	colorBackground2[] = {.9,.9,.9,.5};
 	color[] = {1,1,1,1};
-	colorFocused[] = {0,0,0,1};
-	color2[] = {0,0,0,1};
+	colorFocused[] = {1,1,1,1};
+	color2[] = {1,1,1,1};
 	colorText[] = {1,1,1,1};
 	colorDisabled[] = {1,1,1,0.25};
 	period = 1.2;
@@ -342,7 +344,7 @@ class ZSC_RscButtonMenu : ZSC_RscShortcutButton {
 	{
 		font = "Zeppelin32";
 		color = "#E5E5E5";
-		align = "left";
+		align = "center";
 		shadow = "false";
 	};
 	class ShortcutPos
@@ -412,7 +414,7 @@ class ZSC_RscCheckbox {
 	color[] = {0, 0, 0, 0};
 	colorBackground[] = {0, 0, 1, 1};
 	colorTextSelect[] = {0, 0.8, 0, 1};
-	colorSelectedBg[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 1};
+	colorSelectedBg[] = {ZSC_DARK_BLUE,1};
 	colorSelect[] = {0, 0, 0, 1};
 	colorTextDisable[] = {0.4, 0.4, 0.4, 1};
 	colorDisable[] = {0.4, 0.4, 0.4, 1};
@@ -441,12 +443,13 @@ class ZSC_RscProgress
 	shadow = 2;
 	colorFrame[] = {0, 0, 0, 1};
 	colorBackground[] = {0,0,0,0.7};
-	colorBar[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+	colorBar[] = {ZSC_DARK_BLUE,0.7};
 };
 
 class ZSC_RscListBox 
 {
-	style = 16;
+	style = 0; //white outline
+	//style = 16; //no outline
 	idc = -1;
 	type = 5;
 	w = 0.275;
@@ -456,8 +459,8 @@ class ZSC_RscListBox
 	colorText[] = {1, 1, 1, 1};
 	colorBackground[] = {0.28,0.28,0.28,0.28};
 	colorSelect2[] = {1, 1, 1, 1};
-	colorSelectBackground[] = {0.95, 0.95, 0.95, 0.5};
-	colorSelectBackground2[] = {1, 1, 1, 0.5};
+	colorSelectBackground[] = {.7,.7,.7,.5};
+	colorSelectBackground2[] = {.7,.7,.7,.5};
 	colorScrollbar[] = {0.2, 0.2, 0.2, 1};
 	wholeHeight = 0.45;
 	rowHeight = 0.04;
@@ -472,6 +475,16 @@ class ZSC_RscListBox
 	tooltipColorText[] = {1,1,1,1};
 	tooltipColorBox[] = {1,1,1,1};
 	tooltipColorShade[] = {0,0,0,0.65};
+	class ScrollBar {
+		color[] = {1, 1, 1, 0.6};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 0.3};
+		thumb = "\ca\ui\data\ui_scrollbar_thumb_ca.paa";
+		arrowFull = "\ca\ui\data\ui_arrow_top_active_ca.paa";
+		arrowEmpty = "\ca\ui\data\ui_arrow_top_ca.paa";
+		border = "\ca\ui\data\ui_border_scroll_ca.paa";
+		shadow = 0;
+	};
 	class ListScrollBar: ZSC_RscScrollBar
 	{
 		color[] = {1,1,1,1};
@@ -494,7 +507,7 @@ class ZSC_RscEdit {
 	colorText[] = {0.95, 0.95, 0.95, 1};
 	colorDisabled[] = {1, 1, 1, 0.25};
 	autocomplete = false;
-	colorSelection[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 1};
+	colorSelection[] = {ZSC_DARK_BLUE,1};
 	canModify = 1;
 	soundPush[] = { "", 0, 1 };
 	soundEnter[] =	{ "", 0, 1 };
@@ -638,38 +651,7 @@ class ZSC_RscToolbox {
 	colorSelect[] = {0.95, 0.95, 0.95, 1};
 	colorTextDisable[] = {0.4, 0.4, 0.4, 1};
 	colorDisable[] = {0.4, 0.4, 0.4, 1};
-	colorSelectedBg[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+	colorSelectedBg[] = {ZSC_DARK_BLUE, 0.5};
 	font = "Zeppelin32";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-};
-
-class ZSC_RscTextT // Used in plot management
-{
-	//access = 0;
-	type = 0;
-	idc = -1;
-	colorBackground[] = {0,0,0,0};
-	colorText[] = {0.8784,0.8471,0.651,1};
-	text = "";
-	fixedWidth = 0;
-	x = 0;
-	y = 0;
-	h = 0.037;
-	w = 0.3;
-	style = 0;
-	shadow = 2;
-	font = "Zeppelin32";
-	SizeEx = 0.03921;
-};
-
-class ZSC_RscButtonMenuBlue : ZSC_RscButtonMenu // Used in plot management
-{
-	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-	class Attributes
-	{
-		font = "Zeppelin32";
-		color = "#E5E5E5";
-		align = "center";
-		shadow = "false";
-	};
 };

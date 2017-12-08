@@ -612,7 +612,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		_allowed = ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3) or (_hasAccess select 4));
 		if (DZE_permanentPlot) then {
 			if (s_player_plotManagement < 0 && _allowed) then {
-				s_player_plotManagement = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
+				s_player_plotManagement = player addAction [format["<t color='#b3e6ff'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
 			};
 		} else {
 			if (s_player_maintain_area < 0) then {
@@ -727,7 +727,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		// Check player access
 		_hasAccess = [player, _cursorTarget] call FNC_check_access;
 		if (s_player_manageDoor < 0 && ((_hasAccess select 0) or (_hasAccess select 2) or (_hasAccess select 3) or (_hasAccess select 4) or (_hasAccess select 5) or (_hasAccess select 6))) then {
-			s_player_manageDoor = player addAction [format["<t color='#0059FF'>%1</t>", localize "STR_EPOCH_ACTIONS_MANAGEDOOR"], "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf", _cursorTarget, 5, false];
+			s_player_manageDoor = player addAction [format["<t color='#b3e6ff'>%1</t>", localize "STR_EPOCH_ACTIONS_MANAGEDOOR"], "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf", _cursorTarget, 5, false];
 		};
 	} else {
 		player removeAction s_player_manageDoor;

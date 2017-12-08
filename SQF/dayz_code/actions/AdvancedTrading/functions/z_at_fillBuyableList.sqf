@@ -18,7 +18,7 @@ _typeOf = typeOf (unitBackPack player);
 	if (_type == "trade_items") then {
 		{
 			if (isText(configFile >> "CfgWeapons" >> _x >> "Attachments" >> _name) or _name in getArray (configFile >> "CfgWeapons" >> _x >> "magazines")) then {
-				lbSetColor [Z_AT_BUYABLELIST, _index, [0.2,0.75,1,1]];
+				lbSetColor [Z_AT_BUYABLELIST, _index, [0, 1, 0, 0.8]]; //green
 			};
 		} count _weapons;
 		_count = {_x == _name} count magazines player;
@@ -31,10 +31,10 @@ _typeOf = typeOf (unitBackPack player);
 	};
 	
 	if (_count > 0) then {
-		lbSetColor [Z_AT_BUYABLELIST, _index, [0, 1, 0, 1]];
+		lbSetColor [Z_AT_BUYABLELIST, _index, [1, 0.8, 0, 1]]; //yellow
 	} else {
 		if ((_x select 6) < 0) then { //color items only allowed to either be sold or purchased
-			lbSetColor [Z_AT_BUYABLELIST, _index, [0, 0.57, 1, 1]];
+			lbSetColor [Z_AT_BUYABLELIST, _index, [1, 0, 0, 1]]; //red
 		};
 	};
 } count Z_BuyableArray;

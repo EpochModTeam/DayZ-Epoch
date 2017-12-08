@@ -15456,6 +15456,11 @@
 			<German>Zeige Grundstücksgrenze</German>
 			<Russian>Границы участка</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLOTMANAGEMENT_TITLE">
+			<English>Plot Management</English>
+			<German>Verwalte Grundstücksmarkierung</German>
+			<Russian>Управление строительным столбом</Russian>
+		</Key>
 		
 		<Key ID="STR_EPOCH_TRADER">
 			<English>Trader</English>

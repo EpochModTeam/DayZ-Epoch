@@ -3,7 +3,7 @@ class PlotManagement
 	idd = 711194;
 	onLoad = "if (DZE_plotManagementMustBeClose) then {(_this select 0) displayCtrl 7015 ctrlSetText localize 'STR_EPOCH_HUMANS_NEARBY';};";
 	class Controls {
-		class RscText_7000: ZSC_RscTextT
+		class RscText_7000: ZSC_RscText
 		{
 			idc = 7000;
 			x = 0.30 * safezoneW + safezoneX;
@@ -13,19 +13,19 @@ class PlotManagement
 			colorBackground[] = {0,0,0,0.8};
 		};	
 
-		class RscText_7007: ZSC_RscTextT
+		class RscText_7007: ZSC_RscText
 		{
 			idc = 7007;
-			text = $STR_EPOCH_ACTIONS_MANAGEPLOT;
+			text = $STR_EPOCH_PLOTMANAGEMENT_TITLE;
 			x = 0.30 * safezoneW + safezoneX;
 			y = 0.15 * safezoneH + safezoneY;
 			w = 0.30 * safezoneW;
 			h = 0.05 * safezoneH;
-			colorBackground[] = {0,0,0,0.8};
+			colorBackground[] = {ZSC_DARK_BLUE, 0.5};
 			colorText[] = {1,1,1,1};
 		};
 
-		class RscShortcutButton_7009: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7009: ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_EPOCH_DOME;
@@ -35,7 +35,7 @@ class PlotManagement
 			onButtonClick = "call PlotPreview;";
 		};
 
-		class RscShortcutButton_7010: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7010: ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_EPOCH_ACTIONS_MAINTAIN;
@@ -45,7 +45,7 @@ class PlotManagement
 			onButtonClick = "'maintain' call MaintainPlot;";
 		};
 
-		class RscShortcutButton_7011: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7011: ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_EPOCH_ACTIONS_MAINTAIN_FORCE;
@@ -55,7 +55,7 @@ class PlotManagement
 			onButtonClick = "'force' call MaintainPlot;";
 		};
 
-		class RscText_7012: ZSC_RscTextT
+		class RscText_7012: ZSC_RscText
 		{
 			idc = 7012;
 			text = "";
@@ -79,7 +79,7 @@ class PlotManagement
 			};
 		};
 
-		class RscText_7013: ZSC_RscTextT
+		class RscText_7013: ZSC_RscText
 		{
 			idc = 7013;
 			text = "";
@@ -90,7 +90,7 @@ class PlotManagement
 			colorText[] = {1,1,1,1};
 		};
 
-		class RscText_7008: ZSC_RscTextT
+		class RscText_7008: ZSC_RscText
 		{
 			idc = 7015;
 			text = $STR_MP_PLAYERS;
@@ -101,7 +101,7 @@ class PlotManagement
 			colorText[] = {1,1,1,1};
 		};
 
-		class RscText_7003: ZSC_RscTextT
+		class RscText_7003: ZSC_RscText
 		{
 			idc = -1;
 			text = $STR_EPOCH_PLOT_FRIENDS;
@@ -111,8 +111,7 @@ class PlotManagement
 			h = 0.03 * safezoneH;
 			colorText[] = {1,1,1,1};
 		};
-
-		class RscListbox_7001: RscListbox
+		class RscListbox_7001: ZSC_RscListBox
 		{
 			idc = 7001;
 			x = 0.31* safezoneW + safezoneX;
@@ -121,9 +120,12 @@ class PlotManagement
 			h = 0.30 * safezoneH;
 			soundSelect[] = {"",0.1,1};
 			colorBackground[] = {0.1,0.1,0.1,0.8};
+			sizeEx = 0.035;
+			class ListScrollBar: ZSC_RscScrollBar{};
+			style = 16; //no outline
 		};
 
-		class RscListbox_7002: RscListbox
+		class RscListbox_7002: ZSC_RscListBox
 		{
 			idc = 7002;
 			x = 0.45 * safezoneW + safezoneX;
@@ -132,9 +134,12 @@ class PlotManagement
 			h = 0.30 * safezoneH;
 			soundSelect[] = {"",0.1,1};
 			colorBackground[] = {0.1,0.1,0.1,0.8};
+			sizeEx = 0.035;
+			class ListScrollBar: ZSC_RscScrollBar{};
+			style = 16; //no outline
 		};
 
-		class RscShortcutButton_7004: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7004: ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_EPOCH_ADD;
@@ -144,7 +149,7 @@ class PlotManagement
 			onButtonClick = "[lbData [7001,lbCurSel 7001]] call PlotAddFriend;";
 		};
 
-		class RscShortcutButton_7005: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7005: ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_DISP_DELETE;
@@ -154,7 +159,7 @@ class PlotManagement
 			onButtonClick = "[(lbCurSel 7002)] call PlotRemoveFriend;";
 		};
 
-		class RscShortcutButton_7006: ZSC_RscButtonMenuBlue
+		class RscShortcutButton_7006: ZSC_RscButtonMenu
 		{
 			idc = -1;
 			text = $STR_UI_CLOSE;
