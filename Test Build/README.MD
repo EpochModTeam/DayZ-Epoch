@@ -13,7 +13,7 @@ Install instructions:
 
 5. Use the new dayz_server.pbo from [[here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/dayz_server.pbo)]
 
-6. Use the new HiveExt.dll from [[here](https://github.com/EpochModTeam/DayZ-Epoch/tree/master/Server%20Files/HiveExt.dll)] which requires [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]
+6. Use the new HiveExt.dll from [[here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Server%20Files/HiveExt.dll)] which requires [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]
 
 7. Use the new MPMission from Server Files\MPMissions.
 
@@ -44,5 +44,6 @@ The Zip file contains the following files:
 --------------------------
 * dayz_anim.pbo
 * dayz_code.pbo
+* dayz_epoch_b.pbo
 * dayz_sfx.pbo
 * mod.cpp
