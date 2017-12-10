@@ -598,8 +598,8 @@ if (!isDedicated) then {
 			death_3 = "";
 			death_4 = "";
 		};
-
-		death_1 = format["<t size='.8' align='left' color='#a81e13'>%1 </t><img align='left' image='%2'/><t size='.8' align='left' color='#3FB07D'> %3 (%4m)</t>",_playerName,_icon,_sourceName,_distance];
+		//Weapon images point left in A2
+		death_1 = format["<t size='.6' align='left' color='#ffffff'>%1 </t><img size='.8' align='left' image='%2'/><t size='.6' align='left' color='#ffffff'> %3 (%4m)</t>",_playerName,_icon,_sourceName,_distance];
 		death_1_time = diag_ticktime;
 		
 		//Prevent covering vehicle health bar HUD

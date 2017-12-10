@@ -92,14 +92,12 @@ if (!isNil "_magazines") then {
 //Check if update is requested
 if !((_charPos select 0 == 0) && (_charPos select 1 == 0)) then {
 	//Position is not zero
-	//diag_log ("getting position..."); sleep 0.05;
 	_playerPos = [round (direction _character),_charPos];
 	if (count _lastPos > 2 && {_charPosLen > 2}) then {
 		if (!_isInVehicle) then {_distanceFoot = round (_charPos distance _lastPos);};
 		_character setVariable["lastPos",_charPos];
 	};
 	if (_charPosLen < 3) then {_playerPos = [];};
-	//diag_log ("position = " + str(_playerPos)); sleep 0.05;
 };
 _character setVariable ["posForceUpdate",false,true];
 
@@ -108,9 +106,7 @@ _backpack = unitBackpack _character;
 _playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack];
 
 if (!_usec_Dead) then {
-	//diag_log ("medical check..."); sleep 0.05;
 	_medical = _character call player_sumMedical;
-	//diag_log ("medical result..." + str(_medical)); sleep 0.05;
 };
 _character setVariable ["medForceUpdate",false,true];
 

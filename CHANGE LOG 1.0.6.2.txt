@@ -12,7 +12,7 @@
 [NEW] Added some basic compatibility for falconsan's Ruegen map (beta version released February 2016)
 [NEW] Admins can now define what parts are returned from modular building parts, see configVariables.sqf/DZE_modularConfig @oiad @BigEgg17
 [NEW] Added basic server-side authentication to hive object creation/deletion for improved security. Affects Server_(DeleteObj|PublishObj|PublishVeh|SwapObj|UpdateObject), admins and script makers should review the changes if using PVDZ_obj_(Destroy|Publish), PVDZ_veh_Save, PVDZE_obj_Swap, PVDZE_veh_(Publish|Upgrade) or server_deleteObj and verify custom code is compliant with these changes (github.com/EpochModTeam/DayZ-Epoch/commit/42e0047)
-[NEW] BAF_L85A2_RIS_TWS_DZ to emulate the old behavior of the now NV only BAF_L85A2_RIS_CWS. Server owners must add the weapon on their own #1983
+[NEW] Added BAF_L85A2_RIS_TWS_DZ to emulate the old behavior of the now NV only BAF_L85A2_RIS_CWS. This weapon is not used by default. Server owners can implement it if desired. #1983
 [NEW] Admins can now define a maximum build height, see configVariables.sqf/DZE_BuildHeightLimit. @BigEgg17
 [NEW] Admins can now change the lootRefreshTimer for each building type from the default 15 minutes. CfgLoot.hpp must be updated if using custom loot tables.
 
@@ -31,10 +31,10 @@
 [UPDATED] DZE_ZombieSpeed = [min, max]; has replaced the, now removed, DZE_slowZombies variable. set DZE_ZombieSpeed = [2,2]; for DZE_slowZombies = true; behavior. see configvariables.sqf for more info
 [UPDATED] Reverted increased waves in stormy weather to Chernarus default settings.
 [UPDATED] Removed server control panel, because it is abused by players and not currently used by admins
-[UPDATED] Moved large format strings in dayz_server to str formatText to avoid A2 2048 format character limit corrupting hive data in some cases.
+[UPDATED] Moved large format strings in dayz_server to str formatText to avoid A2 2048 format character limit
 [UPDATED] Vehicles can now only be sold from the "Gear" sell menu. This prevents accidental selling when using the "sell all" feature on backpacks and vehicle inventories.
 [UPDATED] Added all upgraded weapons to the traders as sell only for the sell price of the base weapon plus the sell price of attachments. This allows them to be sold without removing attachments first. #1982 @worldwidesorrow
-[UPDATED] Increased the coverage angle of headlights on land vehicles and added a headlight to the bicycle
+[UPDATED] Increased the coverage angle of headlights on land vehicles and added a headlight to the old bicycle
 [UPDATED] The huey searchlight and gunner seat now have improved visibility in first person view.
 [UPDATED] The AH6X_DZ now uses a new model which removes the camera and computer, adds a search light and fixes unknown animation source turret errors.
 [UPDATED] Removed policecar from dayz_vehicles due to model errors, SQL must be updated if this vehicle was used, see 1.0.6.2_Updates.sql
@@ -63,7 +63,6 @@
 [FIXED] Unable to sell upgraded _DZE[1-4] vehicle variants if their base vehicle class is removed from the trader configs.
 [FIXED] The player building a shed, tent or other unlocked storage was unable to use its gear until relog when DZE_GodModeBase=true; @oiad
 [FIXED] Death message killer inaccurate when player is caused to bleed by one unit and then killed by a different unit shortly after. @oiad
-[FIXED] Group tags sometimes printing WARNING: Function 'name' - x is dead to RPT.
 [FIXED] Group saving issue which could potentially join a player to a random group or not save group properly after death.
 [FIXED] Harvested pumpkin, sunflower, and hemp plants no longer respawn after relog (allowed infinite harvesting).
 [FIXED] Multiple players can no longer harvest the same plant at once. #1928 @F507DMT
@@ -96,6 +95,7 @@
 [FIXED] Glitch where group icons scaled very large momentarily while moving off screen.
 [NEW] Added temporary check for mission file overwrite exploit. This can be removed after Bohemia patches it.
 
+[INFO] Server admins must update HiveExt.dll.
 [INFO] HiveExt.dll has been updated to return character_data duration in the 101 call for the dayz_survived stat. Source is available at github.com/vbawol/DayZhiveEpoch/pull/13 @icomrade
-[INFO] HiveExt.dll REQUIRES A NEW PROCEDURE BE ADDED TO YOUR DATABASE, SEE 1.0.6.2_UPDATES.SQL! [REQUIRED BY IMPROVED VEHICLE/OBJECT SPAWNING LOGIC]
+[INFO] HiveExt.dll REQUIRES A NEW PROCEDURE BE ADDED TO YOUR DATABASE FOR IMPROVED VEHICLE/OBJECT SPAWNING LOGIC, SEE 1.0.6.2_UPDATES.SQL!
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.
