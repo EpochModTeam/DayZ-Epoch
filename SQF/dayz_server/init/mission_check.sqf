@@ -2,7 +2,7 @@
 //This bug should be fixed in the next EOL patch.
 //Put this code at the bottom of dayz_server\init\server_functions.sqf
 
-//List of files in your mission to check. For example, you may need to add 'custom\variables.sqf' etc.
+//List of files in your mission to check. For example, you may want to add 'custom\variables.sqf' etc.
 //Remove any you aren't using
 _files = [
 	'description.ext','init.sqf','mission.sqm','rules.sqf','server_traders.sqf'
@@ -13,7 +13,8 @@ _list = [];
 	_file = toArray (toLower(preprocessFile _x));
 	_sum = 0;
 	_count = {_sum = _sum + _x; true} count _file;
-	_sum = _sum min 999999;		
+	if (_count > 999999) then {_count = _count % 999999}; //Prevent scientific notation when converting to string below
+	if (_sum > 999999) then {_sum = _sum % 999999};
 	_list set [count _list,[_count,_sum]];
 } forEach _files;
 
@@ -27,7 +28,8 @@ _temp setVehicleInit (str formatText["
 		_file = toArray (toLower(preprocessFile _x));
 		_sum = 0;
 		_count = {_sum = _sum + _x; true} count _file;
-		_sum = _sum min 999999;		
+		if (_count > 999999) then {_count = _count % 999999};
+		if (_sum > 999999) then {_sum = _sum % 999999};
 		_list set [count _list,[_count,_sum]];
 	} forEach %1;
 	
