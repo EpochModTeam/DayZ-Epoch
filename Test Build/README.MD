@@ -36,7 +36,7 @@ Test Server Information
 --------------------------
 The test server is currently maintained and hosted by icomrade
 
-* IP: 37.59.229.103
+* IP: 167.114.80.188
 * Port: 2402
 
 --------------------------
