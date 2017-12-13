@@ -61,7 +61,7 @@
 [FIXED] Corpse markers are now deleted for bodies that are hidden.
 [FIXED] Unable to sell classic 'ItemBloodbag' at traders. @oiad
 [FIXED] Unable to sell upgraded _DZE[1-4] vehicle variants if their base vehicle class is removed from the trader configs.
-[FIXED] The player building a shed, tent or other unlocked storage was unable to use its gear until relog when DZE_GodModeBase=true; @oiad
+[FIXED] The player building a shed, tent or other unlocked storage was unable to use its gear and M240 nests were non-functional until relog when DZE_GodModeBase=true; @oiad
 [FIXED] Death message killer inaccurate when player is caused to bleed by one unit and then killed by a different unit shortly after. @oiad
 [FIXED] Group saving issue which could potentially join a player to a random group or not save group properly after death.
 [FIXED] Harvested pumpkin, sunflower, and hemp plants no longer respawn after relog (allowed infinite harvesting).
@@ -89,6 +89,7 @@
 [FIXED] Fresh spawns running on login if they died while running
 [FIXED] Death camera height incorrect when player dies above terrain level
 [FIXED] Duplicate weapon error when player dies with the same weapon in hands and on back
+[FIXED] Vehicle getOut event handler no longer runs on M240 Nest and other static weapons.
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 
