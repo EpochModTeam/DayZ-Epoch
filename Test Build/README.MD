@@ -3,11 +3,11 @@
 
 Install instructions:
 
-1. Download these two files: [[1.9 addons](http://se1.dayz.nu/latest/1.9.0/Development/211/%40DayZMod_Client-Dev_1.9.0-5269f90%28211%29-Full.rar)] [[Epoch addons](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/EpochTest-1062-RC1.zip)]
+1. Download these two files: [[1.9 addons](http://se1.dayz.nu/latest/1.9.0/Stable/29/%40DayZMod_Client-1.9.0-Full.rar)] [[Epoch addons](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/EpochTest-1062-RC1.zip)]
 
 2. Make a copy of your @DayZ_Epoch1061 folder on both the client and server and rename it to @DayZ_Epoch1062.
 
-3. Copy the `@DayZMod_Client-Dev_1.9.0-x-Full.rar\@Dayz\Addons\` folder into your `@DayZ_Epoch1062\` folder and overwrite files when prompted. Make sure to do this on both the client and server.
+3. Copy the `@DayZMod_Client-1.9.0-Full.rar\@Dayz\Addons\` folder into your `@DayZ_Epoch1062\` folder and overwrite files when prompted. Make sure to do this on both the client and server.
 
 4. Copy the `EpochTest-1062-RC1\addons\` folder into your `@DayZ_Epoch1062\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
 
