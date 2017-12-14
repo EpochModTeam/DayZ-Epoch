@@ -1179,3 +1179,61 @@ class ItemKiloHemp : CA_Magazine
 		};
 	};
 };
+
+class ItemOilBarrelEmpty : ItemOilBarrel
+{
+	displayName = $STR_EPOCH_EMPTYOILBARREL;
+	descriptionShort = $STR_EPOCH_EMPTYOILBARREL_DESC;
+};	
+
+class ItemMethylaminBarrelEmpty : ItemOilBarrel
+{
+	displayName = $STR_EPOCH_EMPTYMETHYLAMINEBARREL;
+	descriptionShort = $STR_EPOCH_EMPTYMETHYLAMINEBARREL_DESC;
+};
+
+class ItemMethylaminBarrel : ItemOilBarrel
+{
+	displayName = $STR_EPOCH_METHYLAMINEBARREL;
+	descriptionShort = $STR_EPOCH_METHYLAMINEBARREL_DESC;
+};
+
+class ItemC4Charge : CA_Magazine
+{
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_C4_CHARGE;
+	descriptionShort = $STR_EPOCH_C4_CHARGE_DESC;
+	model = "\ca\weapons\explosive.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\carbomb.paa";
+};
+
+class ItemKiloTobacco : CA_Magazine
+{
+	scope = public;
+	count = 1;
+	displayName = $STR_EPOCH_KILOTOBACCO;
+	descriptionShort = $STR_EPOCH_KILOTOBACCO_DESC;
+	weight = 1;
+	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
+	type = 256;
+};
+
+class ItemKiloBlackTea : ItemKiloTobacco
+{
+	displayName = $STR_EPOCH_KILOBLACKTEA;
+	descriptionShort = $STR_EPOCH_KILOBLACKTEA_DESC;
+};
+
+class ItemTobaccoLeafs : CA_Magazine
+{
+	scope = public;
+	count = 1;
+	displayName = $STR_EPOCH_TOBACCO_LEAFS;
+	descriptionShort = $STR_EPOCH_TOBACCO_LEAFS_DESC;
+	model = "\z\addons\dayz_communityassets\models\comfrey.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_comfrey_CA.paa";
+	type = 256;
+};

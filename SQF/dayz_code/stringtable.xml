@@ -2538,7 +2538,19 @@
 			<Spanish>Una abrazadera de plástico para cables</Spanish>
 			<French>Un serre-câble en plastique</French>
 			<Czech>Svazek plastových kabelů.</Czech>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_equip_carbomb">
+			<English>Car Bomb</English>
+			<German>Autobombe</German>
 		</Key>
+		<Key ID="STR_ITEM_DESC_equip_carbomb">
+			<English>Can be attached to a vehicles engine and then automaticly explode when the next player enters the drivers seat!</English>
+			<German>Kann an einem Fahrzeugmotor angebracht werden. Die Bombe explodiert automatisch, wenn sich ein Spieler auf den Fahrersitz setzt.</German>
+		</Key>
+		<Key ID="STR_ACTIONS_attach_carbomb">
+			<English>Attach Car Bomb</English>
+			<German>Autobombe anbringen</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_aa_battery">
 			<English>AA Battery</English>
 			<German>AA-Batterie</German>
@@ -7610,9 +7622,11 @@
 		</Key>
 		<Key ID="STR_UI_STATUS_ICONS">
 			<English>Status icons:</English>
+			<German>Status Icons:</German>
 		</Key>
 		<Key ID="STR_UI_STATUS_ICONS_TOOLTIP">
 			<English>Show status icons (F3 hotkey)</English>
+			<German>Zeige Status Icons (F3 Hotkey)</German>
 		</Key>
 	</Package>
 	<Package name="playerstats">
@@ -9575,10 +9589,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_FL_NAME">
 			<English>L85A2 FL</English>
+			<German>L85A2 TL</German>
 			<Russian>L85A2 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_MFL_NAME">
 			<English>L85A2 MFL</English>
+			<German>L85A2 MTL</German>
 			<Russian>L85A2 вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_SD_NAME">
@@ -9587,10 +9603,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_SD_FL_NAME">
 			<English>L85A2 SD FL</English>
+			<German>L85A2 SD TL</German>
 			<Russian>L85A2 ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_SD_MFL_NAME">
 			<English>L85A2 SD MFL</English>
+			<German>L85A2 SD MTL</German>
 			<Russian>L85A2 ПБС вФ</Russian>
 		</Key>
 		<!-- L85A2 CCO-->
@@ -9599,10 +9617,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_CCO_FL_NAME">
 			<English>L85A2 CCO FL</English>
+			<German>L85A2 CCO TL</German>
 			<Russian>L85A2 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_CCO_MFL_NAME">
 			<English>L85A2 CCO MFL</English>
+			<German>L85A2 CCO MTL</German>
 			<Russian>L85A2 CCO вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_NAME">
@@ -9611,10 +9631,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_FL_NAME">
 			<English>L85A2 CCO SD FL</English>
+			<German>L85A2 CCO SD TL</German>
 			<Russian>L85A2 CCO ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_MFL_NAME">
 			<English>L85A2 CCO SD MFL</English>
+			<German>L85A2 CCO SD MTL</German>
 			<Russian>L85A2 CCO ПБС вФ</Russian>
 		</Key>
 		<!-- L85A2 Holo -->
@@ -9623,10 +9645,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_FL_NAME">
 			<English>L85A2 Holo FL</English>
+			<German>L85A2 Holo TL</German>
 			<Russian>L85A2 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_MFL_NAME">
 			<English>L85A2 Holo MFL</English>
+			<German>L85A2 Holo MTL</German>
 			<Russian>L85A2 Holo вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_NAME">
@@ -9635,10 +9659,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_FL_NAME">
 			<English>L85A2 Holo SD FL</English>
+			<German>L85A2 Holo SD TL</German>
 			<Russian>L85A2 Holo ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_MFL_NAME">
 			<English>L85A2 Holo SD MFL</English>
+			<German>L85A2 Holo SD MTL</German>
 			<Russian>L85A2 Holo ПБС вФ</Russian>
 		</Key>
 		<!-- L85A2 ACOG -->
@@ -9647,10 +9673,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_FL_NAME">
 			<English>L85A2 ACOG FL</English>
+			<German>L85A2 ACOG TL</German>
 			<Russian>L85A2 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_MFL_NAME">
 			<English>L85A2 ACOG MFL</English>
+			<German>L85A2 ACOG MTL</German>
 			<Russian>L85A2 ACOG вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_NAME">
@@ -9659,10 +9687,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_FL_NAME">
 			<English>L85A2 ACOG SD FL</English>
+			<German>L85A2 ACOG SD TL</German>
 			<Russian>L85A2 ACOG ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_MFL_NAME">
 			<English>L85A2 ACOG SD MFL</English>
+			<German>L85A2 ACOG SD MTL</German>
 			<Russian>L85A2 ACOG ПБС вФ</Russian>
 		</Key>
 		
@@ -11214,7 +11244,7 @@
 		</Key>
 		<Key ID="str_success_gutted_zombie">
 			<English>%1 has been gutted, zombie parts are now on the carcass</English>
-			<German>Du hast den Zombie (%1) ausgenommen und kannst das Fleisch jetzt abschneiden.</German>
+			<German>%1 wurde ausgenommen. Du kannst das Fleisch nun aus der Leiche nehmen.</German>
 			<Russian>Вы разделали: %1, куски плоти лежат на трупе</Russian>
 			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa</Spanish>
 			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
@@ -14491,6 +14521,14 @@
 			<German>210 Liter Öl in einem Fass.</German>
 			<Russian>210 литров нефти в бочке.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_EMPTYOILBARREL">
+			<English>Oil Barrel (Empty)</English>
+			<German>Leeres Ölfass</German>
+		</Key>
+		<Key ID="STR_EPOCH_EMPTYOILBARREL_DESC">
+			<English>210 litres of oil per barrel. (Empty)</English>
+			<German>Leeres 210 Liter Ölfass.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_FUELBARREL">
 			<English>Fuel Barrel</English>
 			<German>Kraftstofffass</German>
@@ -17100,6 +17138,54 @@
 			<English>A map with markers about safe places and where survivors can stay. Unfortunately useless now.</English>
 			<German>Eine Karte mit Markierungen von sicheres Orten, wo Überlebende bleiben können. Leider ist die Karte jetzt nutzlos.</German>
 			<Russian>Карта с маркерами о безопасных местах и где могут остаться выжившие. К сожалению, теперь бесполезна.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_METHYLAMINEBARREL">
+			<English>Methylamine Barrel</English>
+			<German>Methylaminfass</German>
+		</Key>
+		<Key ID="STR_EPOCH_EMPTYMETHYLAMINEBARREL">
+			<English>Methylamine Barrel (Empty)</English>
+			<German>Leeres Methylaminfass</German>
+		</Key>		
+		<Key ID="STR_EPOCH_METHYLAMINEBARREL_DESC">
+			<English>210 litres of Methylamine per barrel.</English>
+			<German>210 Liter Methylamin in einem Fass.</German>
+		</Key>
+		<Key ID="STR_EPOCH_EMPTYMETHYLAMINEBARREL_DESC">
+			<English>210 litres of Methylamine per barrel. (Empty)</English>
+			<German>Leeres 210 Liter Methylaminfass.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_C4_CHARGE">
+			<English>C4 Charge</English>
+			<German>C4 Ladung</German>
+		</Key>			
+		<Key ID="STR_EPOCH_C4_CHARGE_DESC">
+			<English>C4 charge to blow up buildings and vehicles.</English>
+			<German>Eine C4 Ladung, welche genutzt wird, um Gebäude oder Fahrzeuge zu sprengen.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_KILOTOBACCO">
+			<English>Kilo Tobacco</English>
+			<German>Kilo Tabak</German>
+		</Key>	
+		<Key ID="STR_EPOCH_KILOTOBACCO_DESC">
+			<English>A package of tobacco</English>
+			<German>Ein Paket Tabak</German>
+		</Key>	
+		<Key ID="STR_EPOCH_KILOBLACKTEA">
+			<English>Kilo Black Tea</English>
+			<German>Kilo Schwarzer Tee</German>
+		</Key>	
+		<Key ID="STR_EPOCH_KILOBLACKTEA_DESC">
+			<English>A package of black tea</English>
+			<German>Ein Paket Schwarzer Tee</German>
+		</Key>	
+		<Key ID="STR_EPOCH_TOBACCO_LEAFS">
+			<English>Tobacco Leafs</English>
+			<German>Tabakblätter</German>
+		</Key>	
+		<Key ID="STR_EPOCH_TOBACCO_LEAFS_DESC">
+			<English>Leaf of a tobacco plant</English>
+			<German>Blätter einer Tabakpflanze</German>
 		</Key>		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
