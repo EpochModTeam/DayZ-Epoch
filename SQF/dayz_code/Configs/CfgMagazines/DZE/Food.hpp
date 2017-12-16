@@ -18,6 +18,11 @@ class FoodPumpkin : FoodEdible {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
 	class ItemActions
 	{
+		class Consume
+		{
+			text = "Consume";
+			script = "spawn player_consume";
+		};
 		class Crafting
 		{
 		text = $STR_FOOD_NAME_PUMPKIN_CRAFT;
