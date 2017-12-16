@@ -2686,7 +2686,7 @@
 			<German>Antiseptische Bandage</German>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_SEPSISBandage">
-			<English>Blueprint to create an Sepsis cure and Bandage. Required - 3 Rags, 2 gauze, 1 string, 2 Comfrey Leafs.</English>
+			<English>Blueprint to create an Sepsis cure and Bandage. Required - 3 Rags, 2 gauze, 1 string, 2 Comfrey Leaves.</English>
 			<Spanish>Plano para crear un vendaje que combate la septicemia. Requerido: - 3 trapos, 2 gasas, 1 cuerda, 2 hojas de consuelda.</Spanish>
 			<Russian>Инструкция по созданию антисептических бинтов. Нужно: три тряпки, пара марль, шнур и пара листков живокоста.</Russian>
 			<Czech>Návod pro vyrobení antiseptického obvazu. Potřeba: 3x hadr, 2x gáza, 1x provázek, 2x listy kostivalu.</Czech>
@@ -14416,6 +14416,9 @@
 			<German>Kilo Hanf</German>
 			<Russian>Килограмм конопли</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_KILOOFHEMP_DESC">
+			<English>A package of hemp</English>
+		</Key>
 		<Key ID="STR_EPOCH_CANVAS">
 			<English>Canvas</English>
 			<German>Tuch</German>
@@ -17164,7 +17167,7 @@
 			<German>Eine C4 Ladung, welche genutzt wird, um Gebäude oder Fahrzeuge zu sprengen.</German>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOTOBACCO">
-			<English>Kilo Tobacco</English>
+			<English>Kilo of Tobacco</English>
 			<German>Kilo Tabak</German>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOTOBACCO_DESC">
@@ -17172,18 +17175,18 @@
 			<German>Ein Paket Tabak</German>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOBLACKTEA">
-			<English>Kilo Black Tea</English>
+			<English>Kilo of Black Tea</English>
 			<German>Kilo Schwarzer Tee</German>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOBLACKTEA_DESC">
 			<English>A package of black tea</English>
 			<German>Ein Paket Schwarzer Tee</German>
 		</Key>	
-		<Key ID="STR_EPOCH_TOBACCO_LEAFS">
-			<English>Tobacco Leafs</English>
+		<Key ID="STR_EPOCH_TOBACCO_LEAF">
+			<English>Tobacco Leaf</English>
 			<German>Tabakblätter</German>
 		</Key>	
-		<Key ID="STR_EPOCH_TOBACCO_LEAFS_DESC">
+		<Key ID="STR_EPOCH_TOBACCO_LEAF_DESC">
 			<English>Leaf of a tobacco plant</English>
 			<German>Blätter einer Tabakpflanze</German>
 		</Key>		

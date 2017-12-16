@@ -1152,7 +1152,7 @@ class ItemKiloHemp : CA_Magazine
 	scope = public;
 	count = 1;
 	displayName = $STR_EPOCH_KILOOFHEMP;
-	descriptionShort = $STR_EPOCH_KILOOFHEMP;
+	descriptionShort = $STR_EPOCH_KILOOFHEMP_DESC;
 	weight = 1;
 	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
@@ -1231,8 +1231,8 @@ class ItemTobaccoLeafs : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	displayName = $STR_EPOCH_TOBACCO_LEAFS;
-	descriptionShort = $STR_EPOCH_TOBACCO_LEAFS_DESC;
+	displayName = $STR_EPOCH_TOBACCO_LEAF;
+	descriptionShort = $STR_EPOCH_TOBACCO_LEAF_DESC;
 	model = "\z\addons\dayz_communityassets\models\comfrey.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_comfrey_CA.paa";
 	type = 256;
