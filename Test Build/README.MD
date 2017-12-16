@@ -27,6 +27,9 @@ Install instructions:
 
 Note: Both server and client should be updated to current A2OA stable 1.63.131129 or newer.
 
+@ebayShopper made a basic user interface for quickly testing most things without worrying about compatibility conflicts: 
+**[[You can get it here]](https://github.com/ebayShopper/TestKit).**
+
 Current Version: **EpochTest-1062-RC1**
 
 Build Date: **December 8th 2017**
