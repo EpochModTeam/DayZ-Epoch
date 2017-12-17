@@ -17,7 +17,7 @@ class ItemSodaEmpty : HandGrenade
 			script = ";[_id] spawn player_fillWater;";
 		};
 		class Crafting {
-			text = "Melt into Bars";
+			text = $STR_ACTIONS_MELT_BARS;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};
 			requiretools[] = {"ItemToolbox"};
@@ -46,7 +46,7 @@ class TrashTinCan : HandGrenade
 			script = ";[_id] spawn player_fillWater;";
 		};
 		class Crafting {
-			text = "Melt into Bars";
+			text = $STR_ACTIONS_MELT_BARS;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};
 			requiretools[] = {"ItemToolbox"};

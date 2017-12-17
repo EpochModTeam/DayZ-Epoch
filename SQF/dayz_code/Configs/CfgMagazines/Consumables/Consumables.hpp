@@ -29,7 +29,7 @@ class ConsumableBase : CA_Magazine
 	{
 		class Consume
 		{
-			text = "Consume";
+			text = $STR_EAT_FOOD;
 			script = "spawn player_consume";
 		};
 	};

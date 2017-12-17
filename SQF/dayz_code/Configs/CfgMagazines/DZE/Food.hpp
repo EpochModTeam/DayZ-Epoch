@@ -20,7 +20,7 @@ class FoodPumpkin : FoodEdible {
 	{
 		class Consume
 		{
-			text = "Consume";
+			text = $STR_EAT_FOOD;
 			script = "spawn player_consume";
 		};
 		class Crafting

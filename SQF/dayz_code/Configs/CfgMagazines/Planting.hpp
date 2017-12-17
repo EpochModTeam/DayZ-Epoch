@@ -21,7 +21,7 @@ class ItemPumpkinSeed: CA_Magazine {
 	class ItemActions {
 		class Crafting
 		{
-			text = "Craft Pumpkin Plant";
+			text = $STR_CRAFT_PUMPKIN_PLANT;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
 			requiretools[] = {"ItemKnife"};
@@ -42,8 +42,8 @@ class ItemPumpkinPlant: CA_Magazine {
 	type = 256;
 	class ItemActions {
 		class Build {
-			text = "Plant Pumpkin";
-			buildText = "pumpkin plant";
+			text = $STR_CRAFT_PLANT_PUMPKIN_PLANT;
+			buildText = $STR_CRAFT_NAME_PUMPKIN_PLANT;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
 			create = "Grave";			// TODO: model for Pumpkin Stage 1
@@ -63,7 +63,7 @@ class ItemHempSeed: CA_Magazine {
 	class ItemActions {
 		class Crafting
 		{
-			text = "Craft Hemp Plant";
+			text = $STR_CRAFT_HEMP_PLANT;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {""};
 			requiretools[] = {"ItemKnife"};
@@ -84,8 +84,8 @@ class ItemHempPlant: CA_Magazine {
 	type = 256;
 	class ItemActions {
 		class Build {
-			text = "Plant Hemp";
-			buildText = "hemp plant";
+			text = $STR_CRAFT_PLANT_HEMP_PLANT;
+			buildText = $STR_CRAFT_NAME_HEMP_PLANT;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
 			create = "MAP_c_fern";			// TODO: model for Hemp Stage 1
