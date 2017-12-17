@@ -172,7 +172,7 @@ if (_unit == player) then {
 		_sourceDist = round(_unit distance _source);
 		_sourceWeap = switch (true) do {
 			case (_ammo in ["PipeBomb","Mine","MineE"]): { format["with %1",_ammo] };
-			case (_isVehicle) : { format ["with %1",getText(configFile >> "CfgVehicles" >> _sourceVehicleType >> "displayName")] };
+			case (_isVehicle) : { format ["with %1",_sourceVehicleType] };
 			case (_ammo in MeleeAmmo) : { format ["with %2%1",_wpst select 0, if (_sourceDist>6) then {"suspicious weapon "} else {""}] };
 			case (_wpst select 0 == "Throw") : { format ["with %1 thrown", _wpst select 3] };
 			case (["Horn",currentWeapon _source] call fnc_inString) : { format ["with %1 suspicious", currentWeapon _source]};
@@ -301,10 +301,10 @@ if (_damage > 0.4) then {
             //Create Wound
             _unit setVariable["hit_"+_wound,true,true];
             
-            PVDZ_hlt_Bleed = [_unit,_wound,_damage];
+            PVDZ_hlt_Bleed = [_unit,_wound];
             publicVariable "PVDZ_hlt_Bleed";   // draw blood stream on character, on all gameclients
             
-            [_unit,_wound,_hit] spawn fnc_usec_damageBleed;  // draw blood stream on character, locally
+            [_unit,_wound] spawn fnc_usec_damageBleed;  // draw blood stream on character, locally
             
             //Set Injured if not already
             _isInjured = _unit getVariable["USEC_injured",false];
@@ -343,9 +343,9 @@ if (_damage > 0.4) then {
             //Create Wound
             _unit setVariable["hit_"+_wound,true,true];
 			
-            PVDZ_hlt_Bleed = [_unit,_wound,_damage];
+            PVDZ_hlt_Bleed = [_unit,_wound];
             publicVariable "PVDZ_hlt_Bleed";  // draw blood stream on character, on all gameclients
-            [_unit,_wound,_hit] spawn fnc_usec_damageBleed;  // draw blood stream on character, locally
+            [_unit,_wound] spawn fnc_usec_damageBleed;  // draw blood stream on character, locally
             //Set Injured if not already
             _isInjured = _unit getVariable["USEC_injured",false];
             if (!_isInjured) then {

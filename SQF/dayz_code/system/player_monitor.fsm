@@ -751,8 +751,8 @@ class FSM
                          "" \n
                          "{" \n
                          "	if (player getVariable[""hit_""+_x,false]) then { " \n
-                         "		[player,_x,_x] spawn fnc_usec_damageBleed; " \n
-                         "		PVDZ_hlt_Bleed = [player,_x,_x];" \n
+                         "		[player,_x] spawn fnc_usec_damageBleed; " \n
+                         "		PVDZ_hlt_Bleed = [player,_x];" \n
                          "		publicVariable ""PVDZ_hlt_Bleed""; // draw blood stream on character, on all gameclients" \n
                          "	};" \n
                          "} forEach USEC_typeOfWounds;" \n

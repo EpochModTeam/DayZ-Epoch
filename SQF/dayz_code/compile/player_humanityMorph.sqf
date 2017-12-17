@@ -62,7 +62,7 @@ if (count _medical > 0) then {
 	{
 		//diag_log format ["loop _x:1  wound:%2",_x, (USEC_typeOfWounds select _forEachIndex)];
 		player setVariable ["hit_"+_x,true,true];
-		PVDZ_hlt_Bleed = [player, _x, 1];
+		PVDZ_hlt_Bleed = [player, _x];
 		publicVariable "PVDZ_hlt_Bleed";
 	} forEach (_medical select 8);
 
