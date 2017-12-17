@@ -8,7 +8,7 @@ Note: Both server and client should be updated to current A2OA stable 1.63.13112
 
 3. Install MySQL server and create a new MySQL database called `dayz_epoch`. Import the epoch.sql file.
 
-4. Open HiveExt.ini and adjust the MySQL settings. Open config.cfg in the same folder and change the admin password.
+4. Open HiveExt.ini and adjust the MySQL settings. Open config.cfg in the same folder and change the admin password. Open BEServer.cfg in the BattlEye folder and update the RCon password.
 
 5. Launch the server with `-mod=@DayZ_Epoch;@DayZ_Epoch_Server;`. See the *.bat files in Config-Examples.
 

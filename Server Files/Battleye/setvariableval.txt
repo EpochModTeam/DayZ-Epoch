@@ -1,6 +1,10 @@
 //new
-5 "[;{(&%]"
-5 "\+" !"e\+0"
+5 \{
+5 \(
+5 ;
+5 &
+5 %
+5 \+ !e\+0
 1 "(init|set|add|action|all|attach|ATL|ASL|eye|exec|cam|group|unit|clear|create|menu|ctrl|display|text|hint|drop)"
 1 "(entit|exit|able|find|fuel|damage|join|frame|move|team|throw)"
 1 "draw"

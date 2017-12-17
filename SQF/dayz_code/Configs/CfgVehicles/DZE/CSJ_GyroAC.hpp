@@ -103,7 +103,7 @@ class CSJ_GyroP: Plane
 			condition = "(Count (Crew this)==0) and ((getpos this select 2) <1) and (!isengineon this)";
 			statement = "this exec ""\CSJ_GyroAC\scripts\CSJ_rotateGyroRight.sqs"" ";
 		};
-		class push
+		/*class push
 		{
 			displayName = $STR_ACTIONS_PUSH;
 			position = "osa leve smerovky";
@@ -111,7 +111,9 @@ class CSJ_GyroP: Plane
 			radius = 2;
 			condition = "(Count (Crew this)==0) and ((getpos this select 2) <1) and (!isengineon this)";
 			statement = "this exec ""\CSJ_GyroAC\scripts\CSJ_moveGyro.sqs"" ";
-		};
+		};*/
+		//CSJ_moveGyro.sqs uses excessive setPos per second which makes BEServer.cfg MaxSetPosPerInterval filter useless 
+		class PushPlane {ACTION_PUSH;};
 		//class Repair {ACTION_REPAIR; radius = 4;};
 		//class Salvage {ACTION_SALVAGE; radius = 4;};
 	};
