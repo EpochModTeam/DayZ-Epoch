@@ -1054,6 +1054,7 @@
 		</Key>
 		<Key ID="STR_ACTIONS_MELT_BARS">
 			<English>Melt into Bars</English>
+			<German>In Barren einschmelzen</German>
 		</Key>
 		<Key ID="STR_ACTIONS_BUILD">
 			<English>Build %1</English>
@@ -14128,9 +14129,11 @@
 		</Key>
 		<Key ID="STR_CRAFT_PLANT_HEMP_PLANT">
 			<English>Plant Hemp</English>
+			<German>Hanf anpflanzen</German>
 		</Key>
 		<Key ID="STR_CRAFT_HEMP_PLANT">
 			<English>Craft Hemp Plant</English>
+			<German>Hanfpflanze herstellen</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PUMPKIN">
 			<English>Pumpkin</English>
@@ -14144,9 +14147,11 @@
 		</Key>
 		<Key ID="STR_CRAFT_PLANT_PUMPKIN_PLANT">
 			<English>Plant Pumpkin</English>
+			<German>Kürbis anpflanzen</German>
 		</Key>
 		<Key ID="STR_CRAFT_PUMPKIN_PLANT">
 			<English>Craft Pumpkin Plant</English>
+			<German>Kürbispflanze herstellen</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_SUNFLOWER">
 			<English>Bag of Sunflower Seeds</English>
@@ -14432,6 +14437,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_KILOOFHEMP_DESC">
 			<English>A package of hemp</English>
+			<German>Ein Paket Hanf</German>
 		</Key>
 		<Key ID="STR_EPOCH_CANVAS">
 			<English>Canvas</English>
@@ -17198,11 +17204,11 @@
 		</Key>	
 		<Key ID="STR_EPOCH_TOBACCO_LEAF">
 			<English>Tobacco Leaf</English>
-			<German>Tabakblätter</German>
+			<German>Tabakblatt</German>
 		</Key>	
 		<Key ID="STR_EPOCH_TOBACCO_LEAF_DESC">
 			<English>Leaf of a tobacco plant</English>
-			<German>Blätter einer Tabakpflanze</German>
+			<German>Blatt einer Tabakpflanze</German>
 		</Key>		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
