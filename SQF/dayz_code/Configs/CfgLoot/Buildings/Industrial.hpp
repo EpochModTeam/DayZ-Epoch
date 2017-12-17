@@ -316,13 +316,8 @@ class Land_Misc_PowerStation : Industrial
 
 class Land_Shed_W01 : Industrial
 {
-	zedPos[] =
-	{
-		{-1.52832,-0.249023,-1.41138}
-	};
 	lootPos[] =
 	{
-		//{-1.52832,-0.249023,-1.41138}
 		{-1.46289,-0.12207,-1.41129}
 	};
 };

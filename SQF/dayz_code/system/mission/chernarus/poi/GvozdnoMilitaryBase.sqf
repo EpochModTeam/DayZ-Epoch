@@ -4967,54 +4967,6 @@ if (true) then
   _this setPos [7817.3745, 12607.859, -0.072570801];
 };
 
-_vehicle_1759 = objNull;
-if (true) then
-{
-  // Output from missionParser
-  _this = "MAP_paletaA" createVehicle [7793.4502, 12621.983, 0.28388977];
-
-
-  _vehicle_1759 = _this;
-  _this setDir 54.558628;
-  _this setPos [7793.4502, 12621.983, 0.28388977];
-};
-
-_vehicle_1760 = objNull;
-if (true) then
-{
-  // Output from missionParser
-  _this = "MAP_paletyC" createVehicle [7792.3008, 12624.64, 0.564888];
-
-
-  _vehicle_1760 = _this;
-  _this setDir 10.805914;
-  _this setPos [7792.3008, 12624.64, 0.564888];
-};
-
-_vehicle_1761 = objNull;
-if (true) then
-{
-  // Output from missionParser
-  _this = "MAP_paletyD" createVehicle [7793.4775, 12622.899, 0.59455109];
-
-
-  _vehicle_1761 = _this;
-  _this setDir 95.461502;
-  _this setPos [7793.4775, 12622.899, 0.59455109];
-};
-
-_vehicle_1762 = objNull;
-if (true) then
-{
-  // Output from missionParser
-  _this = "MAP_Pallets_Column" createVehicle [7791.6987, 12623.492, 0.24999237];
-
-
-  _vehicle_1762 = _this;
-  _this setDir 54.558628;
-  _this setPos [7791.6987, 12623.492, 0.24999237];
-};
-
 _vehicle_1763 = objNull;
 if (true) then
 {
@@ -5133,30 +5085,6 @@ if (true) then
   _vehicle_1793 = _this;
   _this setDir -26.055584;
   _this setPos [7776.9707, 12614.32, 3.0517578e-005];
-};
-
-_vehicle_1796 = objNull;
-if (true) then
-{
-  // Output from missionParser
-  _this = "MAP_Pallets_Column" createVehicle [7792.0308, 12621.317, 1.5258789e-005];
-
-
-  _vehicle_1796 = _this;
-  _this setDir 98.426163;
-  _this setPos [7792.0308, 12621.317, 1.5258789e-005];
-};
-
-_vehicle_1799 = objNull;
-if (true) then
-{
-  // Output from missionParser
-  _this = "MAP_pneu" createVehicle [7791.9751, 12621.572, 0.95465398];
-
-
-  _vehicle_1799 = _this;
-  _this setDir 98.426163;
-  _this setPos [7791.9751, 12621.572, 0.95465398];
 };
 
 _vehicle_1802 = objNull;
