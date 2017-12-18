@@ -11,19 +11,17 @@ Install instructions:
 
 4. Copy the `EpochTest-1062-RC1\addons\` folder into your `@DayZ_Epoch1062\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
 
-5. Use the new dayz_server.pbo from [[here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/dayz_server.pbo)]
+5. Download the new DayZ Server Pack and extract to your A2OA server root directiory, overwrite 1.0.6.1/earlier .DLLs. Requires: [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]
 
-6. Use the new HiveExt.dll from [[here](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Server%20Files/HiveExt.dll)] which requires [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]
+6. Use the new MPMission from Server Files\MPMissions.
 
-7. Use the new MPMission from Server Files\MPMissions.
+7. Set verifySignatures = 0; in your test server config.
 
-8. Set verifySignatures = 0; in your test server config.
+8. Use the new BattlEye filters from Server Files\Battleye.
 
-9. Use the new BattlEye filters from Server Files\Battleye.
+9. Modify your server and client launch parameters to use 1062; instead of 1061;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch1062;`  in Settings > Additional Parameters.
 
-10. Modify your server and client launch parameters to use 1062; instead of 1061;. In dayz_launcher you can go to the Advanced tab, disable all mods, then set `-mod=@DayZ_Epoch1062;`  in Settings > Additional Parameters.
-
-11. Make a new `dayz_epoch` database using Server Files\epoch.sql OR update a 1061 database using Server Files\1.0.6.2_Updates.sql. Be sure to backup your old database first.
+10. Make a new `dayz_epoch` database using Server Files\epoch.sql OR update a 1061 database using Server Files\1.0.6.2_Updates.sql. Be sure to backup your old database first.
 
 Note: Both server and client should be updated to current A2OA stable 1.63.131129 or newer.
 
