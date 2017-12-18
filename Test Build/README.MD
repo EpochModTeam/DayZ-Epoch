@@ -11,7 +11,7 @@ Install instructions:
 
 4. Copy the `EpochTest-1062-RC1\addons\` folder into your `@DayZ_Epoch1062\` folder and again overwrite files when prompted. Make sure to do this on both the client and server.
 
-5. Download the new DayZ Server Pack and extract to your A2OA server root directiory, overwrite 1.0.6.1/earlier .DLLs. Requires: [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]
+5. Download the new [[server pack](https://github.com/EpochModTeam/DayZ-Epoch/raw/master/Test%20Build/EpochServer-1062-RC1.7z)] and extract to your A2OA server root directory. Overwrite older .DLLs. Requires: [[Visual C++ Redistributable 2015 (x86 version)](https://www.microsoft.com/en-us/download/details.aspx?id=48145)]
 
 6. Use the new MPMission from Server Files\MPMissions.
 

@@ -1052,10 +1052,6 @@
 			<Czech>Spravit palici</Czech>
 			<German>Vorschlaghammer reparieren</German>
 		</Key>
-		<Key ID="STR_ACTIONS_MELT_BARS">
-			<English>Melt into Bars</English>
-			<German>In Barren einschmelzen</German>
-		</Key>
 		<Key ID="STR_ACTIONS_BUILD">
 			<English>Build %1</English>
 			<German>%1 bauen</German>
@@ -2548,7 +2544,7 @@
 			<German>Autobombe</German>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_carbomb">
-			<English>Can be attached to a vehicles engine and then automaticly explode when the next player enters the drivers seat!</English>
+			<English>Can be attached to a vehicle's engine and then automatically explode when the next player enters the driver's seat!</English>
 			<German>Kann an einem Fahrzeugmotor angebracht werden. Die Bombe explodiert automatisch, wenn sich ein Spieler auf den Fahrersitz setzt.</German>
 		</Key>
 		<Key ID="STR_ACTIONS_attach_carbomb">
@@ -2690,7 +2686,7 @@
 			<German>Antiseptische Bandage</German>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_SEPSISBandage">
-			<English>Blueprint to create an Sepsis cure and Bandage. Required - 3 Rags, 2 gauze, 1 string, 2 Comfrey Leaves.</English>
+			<English>Blueprint to create a sepsis cure and bandage. Required - 3 rags, 2 gauze, 1 string, 2 comfrey leaves.</English>
 			<Spanish>Plano para crear un vendaje que combate la septicemia. Requerido: - 3 trapos, 2 gasas, 1 cuerda, 2 hojas de consuelda.</Spanish>
 			<Russian>Инструкция по созданию антисептических бинтов. Нужно: три тряпки, пара марль, шнур и пара листков живокоста.</Russian>
 			<Czech>Návod pro vyrobení antiseptického obvazu. Potřeba: 3x hadr, 2x gáza, 1x provázek, 2x listy kostivalu.</Czech>
@@ -7626,7 +7622,6 @@
 		</Key>
 		<Key ID="STR_UI_STATUS_ICONS">
 			<English>Status icons:</English>
-			<German>Status Icons:</German>
 		</Key>
 		<Key ID="STR_UI_STATUS_ICONS_TOOLTIP">
 			<English>Show status icons (F3 hotkey)</English>
@@ -16104,6 +16099,10 @@
 			<English>10oz Tin Bar</English>
 			<German>10oz Zinnbarren</German>
 			<Russian>Оловянный слиток (10 унций).</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MELT_BARS">
+			<English>Melt into Bars</English>
+			<German>In Barren einschmelzen</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_OFFICERSUIT">
 			<English>Officer Suit</English>

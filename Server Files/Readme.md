@@ -6,7 +6,7 @@ Note: Both server and client should be updated to current A2OA stable 1.63.13112
 
 2. [[Download](http://dayzepoch.com/a2dayzepoch.php)] both client and server files and extract to the root `Arma 2 Operation Arrowhead` folder. Example: `C:\Program Files (x86)\Steam\steamapps\common\Arma 2 Operation Arrowhead`. On some Windows systems you may need to "UnBlock" the dll files. Right-click the file, Properties and click "Unblock".
 
-3. Install MySQL server and create a new MySQL database called `dayz_epoch`. Import the epoch.sql file.
+3. Install [[MySQL Server](https://dev.mysql.com/downloads/mysql/)] and create a new MySQL database called `dayz_epoch`. Import the epoch.sql file.
 
 4. Open HiveExt.ini and adjust the MySQL settings. Open config.cfg in the same folder and change the admin password. Open BEServer.cfg in the BattlEye folder and update the RCon password.
 
