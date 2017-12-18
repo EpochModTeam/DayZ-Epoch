@@ -40,6 +40,7 @@
 [UPDATED] Removed policecar from dayz_vehicles due to model errors, SQL must be updated if this vehicle was used, see 1.0.6.2_Updates.sql
 [UPDATED] Player is no longer set in combat for throwing a flare or chemlight
 [UPDATED] CSJ_Gyro push script so it no longer spams global setPos. This allows MaxSetPosPerInterval to be filtered in BEServer.cfg.
+[UPDATED] Updated DatabaseMySQL.dll to MySQL version 5.7.20, server admins should update to MySQL server 5.7.20 or above. Updated tbb.dll and tbbmalloc.dll to Intel TBB 2017
 
 [FIXED] Purchased and upgraded vehicles will now spawn quicker and no longer be destroyed by sched_safetyVehicle when server FPS is low. HiveExt.dll and SQL must be updated. See 1.0.6.2_Updates.sql
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
