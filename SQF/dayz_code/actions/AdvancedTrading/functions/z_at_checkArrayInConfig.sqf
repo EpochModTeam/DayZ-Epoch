@@ -39,7 +39,7 @@ _totalPrice = 0;
 _processGear = {
 	private ["_configType","_passedType","_cat","_pic","_text","_sell","_buy","_buyCurrency","_sellCurrency","_worth"];
 
-	_passedType = _this select 1;
+	_passedType = _this select 1; //Check for items that have the same magazine and weapon classname (PipeBomb, Stinger, Igla, etc.)
 	{
 		_y = _x;
 		_swap = false;
@@ -52,7 +52,7 @@ _processGear = {
 			_swap2 = true;
 		};
 		{
-			_cat = format["Category_%1",(_arrayOfTraderCat select _forEachIndex select 1)];
+			_cat = format["Category_%1",(_x select 1)];
 			if (isNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")) then {
 				_cat = format["Category_%1",getNumber (missionConfigFile >> "CfgTraderCategory" >> _cat >> "duplicate")];
 			};
@@ -60,7 +60,7 @@ _processGear = {
 				//Use base vehicle prices for upgraded _DZE[1-4] variants only if they are not explicitly added in trader config
 				_y = _baseVehicle;
 			};
-			if (isClass(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y)) exitWith {
+			if (isClass(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y) && {_passedType in ["find",(getText(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "type"))]}) exitWith {
 				_pic = "";
 				_text = "";
 				_configType = getText(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "type");
@@ -95,7 +95,7 @@ _processGear = {
 					};
 					if (Z_SellingFrom != 2) then {_HasKey = false;}; //Only allow selling vehicle from gear
 				};
-				if (_passedType != _configType or !_HasKey) exitWith {};
+				if (!_HasKey) exitWith {};
 
 				_worth = 0;
 				_currencyQty = _buy select 0;
