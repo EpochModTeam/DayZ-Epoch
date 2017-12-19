@@ -1,4 +1,4 @@
-private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keySelected","_location","_moneyInfo","_wealth","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy","_result"];
+private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keySelected","_location","_moneyInfo","_wealth","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy","_keyNumber"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
@@ -119,13 +119,13 @@ if (_enoughMoney) then {
 		_part_out = _this select 0;
 		_buyingType = _this select 1;
 		_keySelected = "0";
-		_isKeyOK= false;
+		_isKeyOK = false;
 		if (_buyingType in DZE_tradeVehicleKeyless) then {
 			_isKeyOK = true;
 		} else {
-			_result = call epoch_generateKey;
-			_isKeyOK = _result select 0;
-			_keySelected = _result select 1;
+			_keyNumber = (floor(random 2500)) + 1;
+			_keySelected = format["%1%2",DZE_itemKeys call BIS_fnc_selectRandom,_keyNumber];
+			_isKeyOK = 	isClass(configFile >> "CfgWeapons" >> _keySelected);
 		};
 		if (!_isKeyOK) exitWith {localize "str_epoch_player_107" call dayz_rollingMessages; "";};
 		_activatingPlayer = player;
