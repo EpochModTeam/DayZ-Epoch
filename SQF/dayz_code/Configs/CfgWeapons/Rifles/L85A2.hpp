@@ -145,10 +145,10 @@ class L85A2_SD_Base : L85A2_DZ
 {
 	magazines[] =
 	{
-		"30Rnd_556x45_StanagSD",
-		"30Rnd_556x45_Stanag", //Allow both SD and non-SD
-		"30Rnd_556x45_G36SD",
-		"30Rnd_556x45_G36"
+		30Rnd_556x45_StanagSD,
+		30Rnd_556x45_Stanag, //Allow both SD and non-SD
+		30Rnd_556x45_G36SD,
+		30Rnd_556x45_G36
 	};
 	fireLightDuration = 0;
 	fireLightIntensity = 0;

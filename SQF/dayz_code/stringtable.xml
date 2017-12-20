@@ -3052,7 +3052,7 @@
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_BELT">
 			<English>[A] Ammo belt</English>
-			<Russian>[М] Патронташ (Мосинка)</Russian>
+			<Russian>[М] Патронташ</Russian>
 			<Czech>Příslušenství - nábojový pás</Czech>
 			<German>[E] Munitionsgürtel</German>
 		</Key>
@@ -10501,61 +10501,61 @@
 		<!-- Mosin -->
 		<Key ID="STR_DZ_WPN_MOSIN_NAME">
 			<English>Mosin Nagant</English>
-			<Russian>Мосинка</Russian>
+			<Russian>Винтовка Мосина</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_FL_NAME">
 			<English>Mosin Nagant FL</English>
 			<German>Mosin Nagant TL</German>				
-			<Russian>Мосинка Ф</Russian>
+			<Russian>Винтовка Мосина Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_MFL_NAME">
 			<English>Mosin Nagant MFL</English>
 			<German>Mosin Nagant TL</German>				
-			<Russian>Мосинка вФ</Russian>
+			<Russian>Винтовка Мосина вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_NAME">
 			<English>Mosin Nagant Belt</English>
 			<German>Mosin Nagant Gurt</German>				
-			<Russian>Мосинка П</Russian>
+			<Russian>Винтовка Мосина П</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_FL_NAME">
 			<English>Mosin Nagant Belt FL</English>
 			<German>Mosin Nagant Gurt TL</German>				
-			<Russian>Мосинка П Ф</Russian>
+			<Russian>Винтовка Мосина П Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_MFL_NAME">
 			<English>Mosin Nagant Belt MFL</English>
 			<German>Mosin Nagant Gurt MTL</German>				
-			<Russian>Мосинка П вФ</Russian>
+			<Russian>Винтовка Мосина П вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_NAME">
 			<English>Mosin Nagant PU</English>
-			<Russian>Мосинка ПУ</Russian>
+			<Russian>Винтовка Мосина ПУ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_FL_NAME">
 			<English>Mosin Nagant PU FL</English>
 			<German>Mosin Nagant PU TL</German>				
-			<Russian>Мосинка ПР Ф</Russian>
+			<Russian>Винтовка Мосина ПР Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_MFL_NAME">
 			<English>Mosin Nagant PU MFL</English>
 			<German>Mosin Nagant PU MTL</German>				
-			<Russian>Мосинка ПР вФ</Russian>
+			<Russian>Винтовка Мосина ПР вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_NAME">
 			<English>Mosin Nagant PU Belt</English>
 			<German>Mosin Nagant PU Gurt</German>				
-			<Russian>Мосинка ПР П</Russian>
+			<Russian>Винтовка Мосина ПР П</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_FL_NAME">
 			<English>Mosin Nagant PU Belt FL</English>
 			<German>Mosin Nagant PU Gurt TL</German>				
-			<Russian>Мосинка ПР П Ф</Russian>
+			<Russian>Винтовка Мосина ПР П Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_MFL_NAME">
 			<English>Mosin Nagant PU Belt MFL</English>
 			<German>Mosin Nagant PU Gurt MTL</German>			
-			<Russian>Мосинка ПР П вФ</Russian>
+			<Russian>Винтовка Мосина ПР П вФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_DESC">
 			<English>Bolt-action military rifle developed by the Imperial Russian Army in 1891.&lt;br/&gt;Caliber: 7.62x54mmR</English>
@@ -10795,11 +10795,11 @@
 		
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_NAME">
 			<English>5Rnd. Mosin Nagant mag.</English>
-			<Russian>5п. Мосинка маг.</Russian>
+			<Russian>5п. для Винтовки Мосина</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_DESC">
 			<English>Caliber: 7.62x54mmR&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: Mosin Nagant</English>
-			<Russian>Калибр: 7.62x54mmR&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: Мосинка</Russian>
+			<Russian>Калибр: 7.62x54mmR&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в Винтовке Мосина</Russian>
 			<German>Kaliber: 7.62x54mmR&lt;br/&gt;Schuss: 5&lt;br/&gt;Verwendet in: Mosin Nagant</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_17HMR_NAME">
