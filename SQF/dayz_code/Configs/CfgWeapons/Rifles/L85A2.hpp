@@ -143,13 +143,11 @@ class L85A2_MFL_DZ : L85A2_DZ
 
 class L85A2_SD_Base : L85A2_DZ
 {
-	/*
 	magazines[] =
 	{
 	//	30Rnd_556x45_Stanag,
 		30Rnd_556x45_StanagSD
 	};
-	*/
 	fireLightDuration = 0;
 	fireLightIntensity = 0;
 	modes[] = {"Single","FullAuto"};
