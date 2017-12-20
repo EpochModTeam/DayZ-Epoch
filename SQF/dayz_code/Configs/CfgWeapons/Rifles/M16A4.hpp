@@ -65,11 +65,11 @@ class M16A4_DZ : M16A2
 	picture = "\z\addons\dayz_communityweapons\m16a4\data\w_m16a4_ca.paa";
 	displayName = $STR_DZ_WPN_M16A4;
 	
-	/*magazines[] = 
+	/*magazines[] = //Allow default A2 mags
 	{
 		30Rnd_556x45_Stanag,
 		30Rnd_556x45_StanagSD
-	};*/ //Allow use of G36 mags
+	};*/
 	
 	class Attachments
 	{

@@ -71,11 +71,11 @@ class M4A1_DZ : M4A1
 	
 	handAnim[]={"OFP2_ManSkeleton","\Ca\weapons_E\SCAR\Data\Anim\SCAR.rtm"};
 	
-	/*magazines[] =
+	/*magazines[] = //Allow default A2 mags
 	{
 		30Rnd_556x45_Stanag,
 		30Rnd_556x45_StanagSD
-	};*/ //Allow use of G36 mags
+	};*/
 	
 	class Attachments
 	{
@@ -163,11 +163,15 @@ class M4A1_SD_DZ : M4A1_AIM_SD_camo
 	
 	handAnim[]={"OFP2_ManSkeleton","\Ca\weapons_E\SCAR\Data\Anim\SCAR.rtm"};
 	
-	/*magazines[] =
+	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
-		30Rnd_556x45_Stanag
-	};*/ //Allow use of G36 mags
+		30Rnd_556x45_Stanag, //Allow both SD and non-SD
+		20Rnd_556x45_Stanag,
+		30Rnd_556x45_G36SD,
+		30Rnd_556x45_G36,
+		100Rnd_556x45_BetaCMag
+	};
 	
 	class Attachments
 	{

@@ -20,7 +20,7 @@ class Makarov_SD_DZ : MakarovSD
 	magazines[] =
 	{
 		8Rnd_9x18_MakarovSD,
-		8Rnd_9x18_Makarov
+		8Rnd_9x18_Makarov //Allow both SD and non-SD
 	};
 	
 	class ItemActions

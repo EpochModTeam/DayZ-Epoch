@@ -22,7 +22,7 @@ class M9_SD_DZ : M9SD
 	magazines[] =
 	{
 		15Rnd_9x19_M9SD,
-		15Rnd_9x19_M9
+		15Rnd_9x19_M9 //Allow both SD and non-SD
 	};
 	
 	class ItemActions

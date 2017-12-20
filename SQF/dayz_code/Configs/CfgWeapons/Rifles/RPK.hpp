@@ -10,7 +10,8 @@ class RPK_DZ : AK_47_M
 	magazines[] =
 	{
 		75Rnd_762x39_RPK,
-		30Rnd_762x39_AK47
+		30Rnd_762x39_AK47,
+		30Rnd_762x39_SA58
 	};
 	
 	modes[] = {FullAuto,Single};

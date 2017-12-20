@@ -27,7 +27,7 @@ class SA58_DZ : Sa58V_EP1
 	displayName = $STR_DZ_WPN_SA58_NAME;
 	
 	modes[] = {Single, FullAuto};
-	magazines[] = {30Rnd_762x39_SA58};
+	//magazines[] = {30Rnd_762x39_SA58}; //Allow default A2 mags
 	
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800};

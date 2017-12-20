@@ -7,7 +7,9 @@ class G17_DZ : glock17_EP1
 	magazines[] = 
 	{
 		17Rnd_9x19_glock17,
-		17Rnd_9x19_glock17SD
+		17Rnd_9x19_glock17SD, //not an A2 mag
+		15Rnd_9x19_M9,
+		15Rnd_9x19_M9SD
 	};
 	
 	delete FlashLight;
@@ -93,7 +95,9 @@ class G17_SD_DZ : M9SD
 	magazines[] = 
 	{
 		17Rnd_9x19_glock17SD,
-		17Rnd_9x19_glock17
+		17Rnd_9x19_glock17, //Allow both SD and non-SD
+		15Rnd_9x19_M9SD,
+		15Rnd_9x19_M9
 	};
 	
 	reloadMagazineSound[]={"Ca\Sounds_E\Weapons_E\Glock17\reload1",db0,1, 20};
