@@ -94,6 +94,7 @@
 [FIXED] Death camera height incorrect when player dies above terrain level
 [FIXED] Duplicate weapon error when player dies with the same weapon in hands and on back
 [FIXED] Vehicle getOut event handler no longer runs on M240 Nest and other static weapons.
+[FIXED] Autorun no longer freezes players when they spam the key or attempt to reactivate it near a body of water.
 
 [NOTE] Fixes below were included in hotfix 1.0.6.1A (March 10th 2017) and are now in the default files.
 [FIXED] Fixed food and drink going down 10x faster from melee and other "working" actions. 

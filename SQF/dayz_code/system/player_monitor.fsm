@@ -1074,12 +1074,14 @@ class FSM
                          "} else {" \n
                          "	_currentWpn	=	""Makarov"";" \n
                          "	_currentAnim	=	""aidlpercmstpsraswpstdnon_player_idlesteady02"";" \n
-                         "	//Prevent fresh spawns running on login when they died running, switchMove does not stop it" \n
-                         "	disableUserInput true;" \n
-                         "	player playActionNow 'Stop';" \n
-                         "	disableUserInput false;" \n
-                         "	disableUserInput true;" \n
-                         "	disableUserInput false;" \n
+                         "	if (speed player > 0) then {" \n
+                         "		//Prevent fresh spawns running on login when they died running, switchMove does not stop it" \n
+                         "		disableUserInput true;" \n
+                         "		player playActionNow 'Stop';" \n
+                         "		disableUserInput false;" \n
+                         "		disableUserInput true;" \n
+                         "		disableUserInput false;" \n
+                         "	};" \n
                          "};" \n
                          "" \n
                          "reload player;" \n
