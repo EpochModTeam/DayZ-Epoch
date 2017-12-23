@@ -2542,14 +2542,17 @@
 		<Key ID="STR_ITEM_NAME_equip_carbomb">
 			<English>Car Bomb</English>
 			<German>Autobombe</German>
+			<Russian>Автомобильная бомба</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_carbomb">
 			<English>Can be attached to a vehicle's engine and then automatically explode when the next player enters the driver's seat!</English>
 			<German>Kann an einem Fahrzeugmotor angebracht werden. Die Bombe explodiert automatisch, wenn sich ein Spieler auf den Fahrersitz setzt.</German>
+			<Russian>Может быть прикреплена к двигателю транспортного средства, затем автоматически взрывается, когда игрок садится на место водителя!</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_attach_carbomb">
 			<English>Attach Car Bomb</English>
 			<German>Autobombe anbringen</German>
+			<Russian>Прикрепить бомбу</Russian>
 		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_aa_battery">
 			<English>AA Battery</English>
@@ -7626,6 +7629,7 @@
 		<Key ID="STR_UI_STATUS_ICONS_TOOLTIP">
 			<English>Show status icons (F3 hotkey)</English>
 			<German>Zeige Status Icons (F3 Hotkey)</German>
+			<Russian>Показать иконки статуса (F3)</Russian>
 		</Key>
 	</Package>
 	<Package name="playerstats">
@@ -11242,10 +11246,10 @@
 			<German>Du kannst nicht zwischen den Kanälen wechseln solange VON aktiviert ist, warte 5 Sekunden.</German>				
 		</Key>
 		<Key ID="str_success_gutted_zombie">
-			<English>%1 has been gutted, zombie parts are now on the carcass</English>
+			<English>%1 has been gutted, zombie parts are now on the carcass.</English>
 			<German>%1 wurde ausgenommen. Du kannst das Fleisch nun aus der Leiche nehmen.</German>
-			<Russian>Вы разделали: %1, куски плоти лежат на трупе</Russian>
-			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa</Spanish>
+			<Russian>Вы разделали: %1, куски плоти лежат на трупе.</Russian>
+			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa.</Spanish>
 			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
 			<Czech>%1 byl zničený, zombie díly jsou nyní na kostru.</Czech>
 		</Key>
@@ -14542,10 +14546,12 @@
 		<Key ID="STR_EPOCH_EMPTYOILBARREL">
 			<English>Oil Barrel (Empty)</English>
 			<German>Leeres Ölfass</German>
+			<Russian>Бочка нефти (Пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYOILBARREL_DESC">
 			<English>210 litres of oil per barrel. (Empty)</English>
 			<German>Leeres 210 Liter Ölfass.</German>
+			<Russian>210-и литровая пустая бочка нефти.</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_FUELBARREL">
 			<English>Fuel Barrel</English>
@@ -14565,7 +14571,7 @@
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL_DESC">
 			<English>210 litres of fuel per barrel. (Empty)</English>
 			<German>Leeres 210 Liter Kraftstofffass.</German>
-			<Russian>Пустая бочка для топлива.</Russian>
+			<Russian>210-и литровая пустая бочка для топлива.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FIREBARRELKIT">
 			<English>Fire Barrel Kit</English>
@@ -16103,6 +16109,7 @@
 		<Key ID="STR_EPOCH_MELT_BARS">
 			<English>Melt into Bars</English>
 			<German>In Barren einschmelzen</German>
+			<Russian>Переплавить в слитки</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_OFFICERSUIT">
 			<English>Officer Suit</English>
@@ -17164,50 +17171,62 @@
 		<Key ID="STR_EPOCH_METHYLAMINEBARREL">
 			<English>Methylamine Barrel</English>
 			<German>Methylaminfass</German>
+			<Russian>Бочка метиламина</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYMETHYLAMINEBARREL">
 			<English>Methylamine Barrel (Empty)</English>
 			<German>Leeres Methylaminfass</German>
+			<Russian>Бочка метиламина (Пустая)</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_METHYLAMINEBARREL_DESC">
 			<English>210 litres of Methylamine per barrel.</English>
 			<German>210 Liter Methylamin in einem Fass.</German>
+			<Russian>210-литровая бочка метиламина.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYMETHYLAMINEBARREL_DESC">
 			<English>210 litres of Methylamine per barrel. (Empty)</English>
 			<German>Leeres 210 Liter Methylaminfass.</German>
+			<Russian>210-литровая пустая бочка метиламина.</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_C4_CHARGE">
 			<English>C4 Charge</English>
 			<German>C4 Ladung</German>
+			<Russian>Заряд C4</Russian>
 		</Key>			
 		<Key ID="STR_EPOCH_C4_CHARGE_DESC">
 			<English>C4 charge to blow up buildings and vehicles.</English>
 			<German>Eine C4 Ladung, welche genutzt wird, um Gebäude oder Fahrzeuge zu sprengen.</German>
+			<Russian>C4 используется для подрыва строений или транспортных средств.</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOTOBACCO">
 			<English>Kilo of Tobacco</English>
 			<German>Kilo Tabak</German>
+			<Russian>Кило махорки</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOTOBACCO_DESC">
 			<English>A package of tobacco</English>
 			<German>Ein Paket Tabak</German>
+			<Russian>Килограммовая упаковка табака</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOBLACKTEA">
 			<English>Kilo of Black Tea</English>
 			<German>Kilo Schwarzer Tee</German>
+			<Russian>Килограмм чая</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOBLACKTEA_DESC">
 			<English>A package of black tea</English>
 			<German>Ein Paket Schwarzer Tee</German>
+			<Russian>Килограммовая упаковка вкусного черного чая</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_TOBACCO_LEAF">
 			<English>Tobacco Leaf</English>
 			<German>Tabakblatt</German>
+			<Russian>Лист табака</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_TOBACCO_LEAF_DESC">
 			<English>Leaf of a tobacco plant</English>
 			<German>Blatt einer Tabakpflanze</German>
+			<Russian>Лист табака с табачной плантации</Russian>
 		</Key>		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
