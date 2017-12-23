@@ -17204,9 +17204,9 @@
 			<Russian>Кило махорки</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOTOBACCO_DESC">
-			<English>A package of tobacco.</English>
-			<German>Ein Paket Tabak.</German>
-			<Russian>Килограммовая упаковка табака.</Russian>
+			<English>A package of tobacco</English>
+			<German>Ein Paket Tabak</German>
+			<Russian>Килограммовая упаковка табака</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOBLACKTEA">
 			<English>Kilo of Black Tea</English>
@@ -17214,9 +17214,9 @@
 			<Russian>Килограмм чая</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_KILOBLACKTEA_DESC">
-			<English>A package of black tea.</English>
-			<German>Ein Paket Schwarzer Tee.</German>
-			<Russian>Килограммовая упаковка вкусного черного чая.</Russian>
+			<English>A package of black tea</English>
+			<German>Ein Paket Schwarzer Tee</German>
+			<Russian>Килограммовая упаковка вкусного черного чая</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_TOBACCO_LEAF">
 			<English>Tobacco Leaf</English>
@@ -17224,9 +17224,9 @@
 			<Russian>Лист табака</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_TOBACCO_LEAF_DESC">
-			<English>Leaf of a tobacco plant.</English>
-			<German>Blatt einer Tabakpflanze.</German>
-			<Russian>Лист табака с табачной плантации.</Russian>
+			<English>Leaf of a tobacco plant</English>
+			<German>Blatt einer Tabakpflanze</German>
+			<Russian>Лист табака с табачной плантации</Russian>
 		</Key>		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
