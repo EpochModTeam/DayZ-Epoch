@@ -17,7 +17,8 @@ if (!(_item in magazines player)) exitWith {dayz_actionInProgress = false;};
 _config = configFile >> "CfgMagazines" >> _item;
 
 _use = getArray (_config >> "ItemActions" >> "ReloadMag" >> "use");
-_consume = _use select 0;
+_consume = if (_item in (DZE_replaceMagazines select 0)) then {(DZE_replaceMagazines select 1) select ((DZE_replaceMagazines select 0) find _item)} else {_use select 0};
+
 _create = getArray (_config >> "ItemActions" >> "ReloadMag" >> "output") select 0;
 
 _item_ammo = gearSlotAmmoCount (uiNamespace getVariable 'uiControl');
