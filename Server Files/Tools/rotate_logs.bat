@@ -9,14 +9,14 @@
 
 :::::::::::::: CONFIG ::::::::::::::::::
 
-:: Set your Arma2AO Base installation directory. LEAVE OFF THE ENDING \
-set arma2srvpath=C:\Program Files (x86)\Steam\SteamApps\common\Arma 2 Operation Arrowhead
+:: Set your base server config directory. LEAVE OFF THE ENDING \
+set arma2srvpath=C:
 
 :: Set your Default server profile name. This is the name of the directory that stores your server.cfg
 :: This will be used in the case that you don't launch this script without the server param.
 :: Example: cfgdayz, US6, Chicago13, ect
 :: DEFAULTPROFILE
-set srvname=instance_11_chernarus
+set srvname=DZE_Server_Config
 
 :: Delete Original log files after they have been rotated? This keeps your logs more organized and saves space.
 :: This will not work unless the server is stopped first. This option works best set to 1 when using FireDaemon's Pre/Post Service tab
@@ -102,6 +102,16 @@ copy "%arma2srvpath%\%servername%\BattlEye\setdamage.log" "%arma2srvpath%\%serve
 copy "%arma2srvpath%\%servername%\BattlEye\setpos.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\setpos.log"
 copy "%arma2srvpath%\%servername%\BattlEye\setvariable.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\setvariable.log"
 copy "%arma2srvpath%\%servername%\BattlEye\addmagazinecargo.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\addmagazinecargo.log"
+copy "%arma2srvpath%\%servername%\BattlEye\attachto.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\attachto.log"
+copy "%arma2srvpath%\%servername%\BattlEye\addbackpackcargo.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\addbackpackcargo.log"
+copy "%arma2srvpath%\%servername%\BattlEye\addweaponcargo.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\addweaponcargo.log"
+copy "%arma2srvpath%\%servername%\BattlEye\deletevehicle.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\deletevehicle.log"
+copy "%arma2srvpath%\%servername%\BattlEye\remotecontrol.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\remotecontrol.log"
+copy "%arma2srvpath%\%servername%\BattlEye\selectplayer.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\selectplayer.log"
+copy "%arma2srvpath%\%servername%\BattlEye\setvariableval.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\setvariableval.log"
+copy "%arma2srvpath%\%servername%\BattlEye\teamswitch.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\teamswitch.log"
+copy "%arma2srvpath%\%servername%\BattlEye\waypointcondition.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\waypointcondition.log"
+copy "%arma2srvpath%\%servername%\BattlEye\waypointstatements.log" "%arma2srvpath%\%servername%\RotatedLogs\%weekday%\%dtStamp%\BattlEye\waypointstatements.log"
 
 echo (%weekday%) (%date%) (%time%)) Logs are backed up now...
 echo (%weekday%) (%date%) (%time%) Removing original log files.
@@ -110,6 +120,18 @@ del /Q /F "%arma2srvpath%\%servername%\arma2oaserver.mdmp"
 del /Q /F "%arma2srvpath%\%servername%\arma2oaserver.bidmp"
 del /Q /F "%arma2srvpath%\%servername%\server_console.log"
 del /Q /F "%arma2srvpath%\%servername%\runtime.log"
+del /Q /F "%arma2srvpath%\%servername%\HiveExt.log"
+del /Q /F "%arma2srvpath%\%servername%\server_log.txt"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\attachto.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\addbackpackcargo.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\addweaponcargo.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\deletevehicle.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\remotecontrol.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\selectplayer.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\setvariableval.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\teamswitch.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\waypointcondition.log"
+del /Q /F "%arma2srvpath%\%servername%\BattlEye\waypointstatements.log"
 del /Q /F "%arma2srvpath%\%servername%\BattlEye\scripts.log"
 del /Q /F "%arma2srvpath%\%servername%\BattlEye\createvehicle.log"
 del /Q /F "%arma2srvpath%\%servername%\BattlEye\mpeventhandler.log"

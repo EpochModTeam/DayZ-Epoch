@@ -42,6 +42,7 @@
 [UPDATED] CSJ_Gyro push script so it no longer spams global setPos. This allows MaxSetPosPerInterval to be filtered in BEServer.cfg.
 [UPDATED] Updated DatabaseMySQL.dll to MySQL version 5.7.20, server admins should update to MySQL server 5.7.20 or above. Updated tbb.dll and tbbmalloc.dll to Intel TBB 2017
 [UPDATED] Some DZ weapons which had magazine types restricted (AK, G17, M249, PDW) can now use all compatible A2 magazines. Silenced DZ weapons can now use both SD and non-SD magazines again.
+[UPDATED] Added example basic.cfg and BEServer.cfg files to server configs
 
 [FIXED] Purchased and upgraded vehicles will now spawn quicker and no longer be destroyed by sched_safetyVehicle when server FPS is low. HiveExt.dll and SQL must be updated. See 1.0.6.2_Updates.sql
 [FIXED] Kamaz refuel trucks no longer allow automatic refueling. #1855 @coresync2k @dreamforceinc
@@ -104,4 +105,5 @@
 [INFO] Server admins must update HiveExt.dll.
 [INFO] HiveExt.dll has been updated to return character_data duration in the 101 call for the dayz_survived stat. Source is available at github.com/vbawol/DayZhiveEpoch/pull/13 @icomrade
 [INFO] HiveExt.dll REQUIRES A NEW PROCEDURE BE ADDED TO YOUR DATABASE FOR IMPROVED VEHICLE/OBJECT SPAWNING LOGIC, SEE 1.0.6.2_UPDATES.SQL!
+[INFO] The server config directory should be located outside the server's A2OA directory for security. This is now done in the example server configs by default.
 [INFO] See Documents\CHANGE LOG 1.0.6.txt for the full list of 1.0.5.1 --> 1.0.6 changes.
