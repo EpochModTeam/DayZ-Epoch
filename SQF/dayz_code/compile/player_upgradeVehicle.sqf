@@ -139,6 +139,7 @@ if (_IsNearVehicle >= 1) then {
     						format[localize "str_crafting_failed",_newclassname] call dayz_rollingMessages;
 						} else {
     						localize "STR_EPOCH_VEHUP_SUCCESS" call dayz_rollingMessages;
+							["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 						};
 					};
 				}

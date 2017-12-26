@@ -31,15 +31,15 @@ fnc_snapActionCleanup = {
 	player removeAction s_player_toggleSnapSelect; s_player_toggleSnapSelect = -1;
 	if (count s_player_toggleSnapSelectPoint != 0) then {{player removeAction _x;} count s_player_toggleSnapSelectPoint; s_player_toggleSnapSelectPoint=[]; snapActions = -1;};
 	if (_s1 > 0) then {
-		s_player_toggleSnap = player addaction [format[("<t color=""#ffffff"">" + ("Snap: %1") +"</t>"),snapActionState],"\z\addons\dayz_code\actions\snap_build.sqf",[snapActionState,_object,_classname,_objectHelper],10,false,true];
+		s_player_toggleSnap = player addaction [format[("<t color=""#ffffff"">" + ("Snap: %1") +"</t>"),snapActionState], "\z\addons\dayz_code\actions\snap_build.sqf",[snapActionState,_object,_classname,_objectHelper],10,false,true];
 	};
 	if (_s2 > 0) then {
-		s_player_toggleSnapSelect = player addaction [format[("<t color=""#ffffff"">" + ("Snap Point: %1") +"</t>"),snapActionStateSelect],"\z\addons\dayz_code\actions\snap_build.sqf",[snapActionStateSelect,_object,_classname,_objectHelper],9,false,true];
+		s_player_toggleSnapSelect = player addaction [format[("<t color=""#ffffff"">" + ("Snap Point: %1") +"</t>"),snapActionStateSelect], "\z\addons\dayz_code\actions\snap_build.sqf",[snapActionStateSelect,_object,_classname,_objectHelper],9,false,true];
 	};
 	if (_s3 > 0) then {
 		s_player_toggleSnapSelectPoint=[];
 		_cnt = 0;
-		{snapActions = player addaction [format[("<t color=""#ffffff"">" + ("%1)Select: %2") +"</t>"),_cnt,_x select 3],"\z\addons\dayz_code\actions\snap_build.sqf",["Selected",_object,_classname,_objectHelper,_cnt],8,false,false];
+		{snapActions = player addaction [format[("<t color=""#ffffff"">" + ("%1)Select: %2") +"</t>"),_cnt,_x select 3], "\z\addons\dayz_code\actions\snap_build.sqf",["Selected",_object,_classname,_objectHelper,_cnt],8,false,false];
 		s_player_toggleSnapSelectPoint set [count s_player_toggleSnapSelectPoint,snapActions];
 		_cnt = _cnt+1;
 	}count _points;

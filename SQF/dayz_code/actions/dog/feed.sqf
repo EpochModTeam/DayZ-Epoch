@@ -6,6 +6,9 @@ _type = 	_array select 1;
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 if (_onLadder) exitWith {localize "str_player_21" call dayz_rollingMessages;};
 
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
+
 player playActionNow "PutDown";
 
 switch (_type) do {
@@ -35,3 +38,5 @@ switch (_type) do {
 		s_player_waterdog = -1;
 	};
 };
+
+dayz_actionInProgress = false;
