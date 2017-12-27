@@ -40,7 +40,7 @@
 [UPDATED] Removed policecar from dayz_vehicles due to model errors, SQL must be updated if this vehicle was used, see 1.0.6.2_Updates.sql
 [UPDATED] Player is no longer set in combat for throwing a flare or chemlight
 [UPDATED] CSJ_Gyro push script so it no longer spams global setPos. This allows MaxSetPosPerInterval to be filtered in BEServer.cfg.
-[UPDATED] Updated DatabaseMySQL.dll to MySQL version 5.7.20, server admins should update to MySQL server 5.7.20 or above. Updated tbb.dll and tbbmalloc.dll to Intel TBB 2017
+[UPDATED] Updated DatabaseMySQL.dll to MySQL version 5.7.20, server admins should update to MySQL server 5.7.20 or above. Updated tbb.dll and tbbmalloc.dll to Intel TBB 2018 Update 2
 [UPDATED] Some DZ weapons which had magazine types restricted (AK, G17, M249, PDW) can now use all compatible A2 magazines. Silenced DZ weapons can now use both SD and non-SD magazines again.
 [UPDATED] Added example basic.cfg and BEServer.cfg files to server configs
 
