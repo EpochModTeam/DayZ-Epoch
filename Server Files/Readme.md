@@ -32,6 +32,8 @@ Note: if you have copied your ArmA 2 addons into your ArmA2 OA/Expansion/Addons 
 
 3. Inside the server "Keys" folder remove any DayZ_Epoch*.bikey files from previous versions.
 
+4. Make sure you either start with a fresh dayz_server.pbo or you diffmerge your current one against the latest version! THIS WILL BREAK THINGS IF YOU DO NOT DO THIS STEP.
+
 ## SECURITY ADVISORY
 
 NOTE: The included `DZE_Server_Config` startup bats and files/folder structure is provided as an example only and should be configured to your needs, passwords NEED TO BE CHANGED, and profile/config folders should be placed outside your OA Directory
@@ -43,4 +45,4 @@ NOTE: DO NOT FORGET TO CHANGE THE PASSWORD IN BEServer.cfg
 
 3. Modify your startup.bat `-BEpath` `-cfg` `-config` `-profiles` startup flags to point to your new server config directory and files; an example is provided in step 4. You can gain additional security by appending random characters to your config file names and BE folder.
 
-4. `-profiles="C:\DZE_Server_Config" -BEpath="C:\DZE_Server_Config\BattlEye" -config="C:\DZE_Server_Config\11_chernarus.cfg" -cfg="C:\DZE_Server_Config\basic.cfg"`
+4. `"-profiles=C:\DZE_Server_Config" "-BEpath=C:\DZE_Server_Config\BattlEye" "-config=C:\DZE_Server_Config\11_chernarus.cfg" "-cfg=C:\DZE_Server_Config\basic.cfg"`
