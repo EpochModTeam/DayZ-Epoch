@@ -172,6 +172,7 @@ if (toLower worldName == "chernarus") then {
 		[[2581,3456,0],1019127], //lavicka_2.p3d bench
 		//Clip into zero_building Land_HouseV_3I3
 		[[2800,5202,0],187548], //popelnice.p3d trash can
+		[[12876,8031,0],294873], //popelnice.p3d trash can
 		//Clip into zero_building Land_HouseV_1L2
 		[[3656,2429,0],327885], //plot_rust_draty.p3d fence
 		[[3656,2429,0],328107], //plot_rust_draty.p3d fence

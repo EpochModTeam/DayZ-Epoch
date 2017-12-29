@@ -25,8 +25,10 @@ private "_object";
 	//Clip into zero_building Land_HouseV_1L2
 	[[3672,2435,0],327675], //kbud.p3d outhouse
 	
-	//Buildings too high above terrain level to enter
+	//Custom building interiors too high/low above/below terrain level to enter
 	[[7261,2799,0],342775], //Land_Shed_W4 zero_building
+	[[12871,8031,0],294946], //Land_HouseV_3I3 zero_building
+	[[12971,8022,0],295117], //Land_HouseV_3I3 zero_building
 	//Land_houseV_2T2 back stairs too high, temporary until Streatman model update
 	[[8679,2428,0],358075],
 	[[13351,5442,0],306657],
@@ -36,8 +38,10 @@ private "_object";
 //Respawn at correct position
 [[
 	["Land_Shed_W4",[7261.45,2799.33,0],317.308],
-	["Fence_corrugated_plate",[7262.15,2805.85,0],142.308],
+	["Fence_corrugated_plate",[7262.15,2805.85,0],142.308], //Cover floating fences nearby
 	["Fence_corrugated_plate",[7265.2,2808.42,0],137.308],
+	["Land_HouseV_3I3",[12870.7,8031.49,0],180],
+	["Land_HouseV_3I3",[12971,8022.49,0],268],
 	//Land_houseV_2T2 back stairs too high, temporary until Streatman model update
 	["Land_houseV_2T2",[8678.94,2427.98,-0.3],245],
 	["Land_houseV_2T2",[13350.6,5441.92,-0.1],0],

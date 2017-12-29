@@ -820,6 +820,8 @@ if (true) then
   _this setDir 71.406975;
   _this setVehicleInit "this setVectorUp [0,0,1];";
   _this setPos [7836.5088, 12622.839, 0.36634916];
+  _this addEventHandler ["HandleDamage",{0}]; //Forbid destruction (mi8wreck and static objects on top are left floating)
+  _this enableSimulation false;
 };
 
 _vehicle_446 = objNull;
