@@ -1,1 +1,2 @@
-[FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height
+[FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2)
+[FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed #2009 @TheFirstNoob

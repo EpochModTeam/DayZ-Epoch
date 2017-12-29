@@ -275,7 +275,7 @@ class ArmoredSUV_Base_PMC: Car
 			radius = 1;
 			onlyForPlayer = 1;
 			condition = "isNull (this turretUnit [0]) && (this animationPhase 'HideGun_01' == 0)";
-			statement = "this spawn {_this animate ['HideGun_01',1]; uiSleep 1; _this animate ['CloseCover1',1]; _this animate ['CloseCover2',1];};";
+			statement = "this animate ['HideGun_01',1]; this spawn {uiSleep 1; _this animate ['CloseCover1',1]; _this animate ['CloseCover2',1];};";
 		};
 	};
 };
