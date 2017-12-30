@@ -16,7 +16,7 @@
 [NEW] Admins can now define a maximum build height, see configVariables.sqf/DZE_BuildHeightLimit. @BigEgg17
 [NEW] Admins can now change the lootRefreshTimer for each building type from the default 15 minutes. CfgLoot.hpp must be updated if using custom loot tables.
 
-[UPDATED] Loot and zed spawn is now disabled in trader cities by default. This is configurable in mission\init.sqf via DZE_SafeZonePosArray. Added function to check positions against DZE_SafeZonePosArray "_PosInSafeZone = _positionToCheck call DZE_SafeZonePosCheck;"
+[UPDATED] Loot and zed spawn is now disabled in trader cities by default. This is configurable in mission\init.sqf via DZE_SafeZonePosArray. Added function to check positions against DZE_SafeZonePosArray "_PosInSafeZone = [_positionOrObjectToCheck] call DZE_SafeZonePosCheck;" An optional radius can be supplied as a second argument i.e: [_positionOrObjectToCheck,500]
 [UPDATED] Zombie pathing. Zeds should now run more direct to players and no longer get stuck at the position where a player entered a vehicle.
 [UPDATED] The RIS attachment can be removed from the SA58_RIS_DZ now. @LunaCB
 [UPDATED] The player now auto rejoins their group after dropping a radio and picking it back up when dayz_requireRadio=true. @SmokeyBR
