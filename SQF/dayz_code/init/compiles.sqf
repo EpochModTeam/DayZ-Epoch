@@ -853,7 +853,7 @@ DZE_SafeZonePosCheck = {
 	_position = _this select 0;
 	_skipPos = false;
 
-	if (DZE_SafeZoneZombieLoot || count _this > 1) then {
+	if (!DZE_SafeZoneZombieLoot || count _this > 1) then {
 		{
 			if ((_position distance (_x select 0)) < (if (count _this > 1) then {_this select 1} else {_x select 1})) exitWith {_skipPos = true;};
 		} forEach DZE_SafeZonePosArray;
