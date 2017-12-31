@@ -4406,7 +4406,7 @@ class Berezino {
 	class Object241 { type = "Rubbish1"; position[] = {11941.8, 9125.61, 0}; direction = 167; onFire = 0; };
 	class Object242 { type = "Rubbish4"; position[] = {11996, 9193.29, 0}; direction = 226; onFire = 0; };
 	class Object243 { type = "Body2"; position[] = {11960.5, 9168.33, 0}; direction = 258; onFire = 0; };
-	class Object244 { type = "HMMWVWreck"; position[] = {11940.3, 9113.78, 0}; direction = 280; onFire = 0; };
+	class Object244 { type = "HMMWVWreck"; position[] = {11940.8, 9115.5, 0}; direction = 285; onFire = 0; };
 	class Object245 { type = "Rubbish1"; position[] = {12100.5, 9070.32, 0}; direction = 264; onFire = 0; };
 	class Object246 { type = "Rubbish1"; position[] = {11984.7, 9037.48, 0}; direction = 264; onFire = 0; };
 	class Object247 { type = "Body1"; position[] = {11938.9, 9120.4, 0}; direction = 237; onFire = 0; };
