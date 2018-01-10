@@ -428,7 +428,7 @@ publicVariable "sm_done";
 [] execVM "\z\addons\dayz_server\compile\server_spawnCarePackages.sqf";
 [] execVM "\z\addons\dayz_server\compile\server_spawnCrashSites.sqf";
 
-if (dayz_townGenerator) then {execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";};
+execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
 
 "PVDZ_sec_atp" addPublicVariableEventHandler {
 	_x = _this select 1;

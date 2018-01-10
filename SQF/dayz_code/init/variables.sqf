@@ -390,7 +390,7 @@ if(isNil "dayz_infectiouswaterholes") then {
 	dayz_infectiouswaterholes = true; //Enable infected waterholes
 };
 if(isNil "dayz_POIs") then {
-    dayz_POIs = true; //Enable POI's
+    dayz_POIs = true; //Enable POIs
 };
 if(isNil "dayz_ForcefullmoonNights") then {
 	dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
@@ -399,10 +399,17 @@ if(isNil "dayz_randomMaxFuelAmount") then {
 	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
 };
 if(isNil "dayz_townGenerator") then {
-	dayz_townGenerator = true; // Spawn map junk. Currently only compatible with Chernarus. Need to add coordinates for other maps.
+	dayz_townGenerator = true; // Spawn map junk
 };
 if(isNil "dayz_townGeneratorBlackList") then {
 	dayz_townGeneratorBlackList = []; // Town generator will not spawn junk within 150m of these positions.
+};
+
+if (toLower worldName != "chernarus") then {
+	//Currently only compatible with Chernarus
+	dayz_infectiousWaterholes = false;
+	dayz_POIs = false;
+	dayz_townGenerator = false;
 };
 
 //Replace server individual settings with ranked settings

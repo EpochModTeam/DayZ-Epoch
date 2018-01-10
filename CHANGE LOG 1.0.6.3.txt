@@ -1,4 +1,7 @@
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2)
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed #2009 @TheFirstNoob
+[FIXED] POI fires were still spawning when POI was off and town generator was on
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot @oiad @_Lance_
+
+[INFO] Synced with DayZMod upstream up to commit ebad05f

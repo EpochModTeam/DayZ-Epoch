@@ -80,7 +80,8 @@ onPreloadFinished "diag_log [diag_tickTime,'onPreloadFinished']; dayz_preloadFin
 with uiNameSpace do {RscDMSLoad=nil;}; // autologon at next logon
 
 if (!isDedicated) then {
-	enableSaving [false, false];	startLoadingScreen ["","RscDisplayLoadCustom"];
+	enableSaving [false, false];
+	startLoadingScreen ["","RscDisplayLoadCustom"];
 	progressLoadingScreen 0;
 	dayz_loadScreenMsg = localize 'str_login_missionFile';
 	progress_monitor = [] execVM "\z\addons\dayz_code\system\progress_monitor.sqf";
@@ -107,13 +108,13 @@ if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers "\z\addons\day
 execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
 
 if (isServer) then {
-	if (dayz_POIs && (toLower worldName == "chernarus")) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf";};
+	if (dayz_POIs) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf";};
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\dynamic_vehicle.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\system\server_monitor.sqf";
 	execVM "\z\addons\dayz_server\traders\napf.sqf"; //Add trader agents
 	
 	//Get the server to setup what waterholes are going to be infected and then broadcast to everyone.
-	if (dayz_infectiousWaterholes && (toLower worldName == "chernarus")) then {execVM "\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\init.sqf";};
+	if (dayz_infectiousWaterholes) then {execVM "\z\addons\dayz_code\system\mission\chernarus\infectiousWaterholes\init.sqf";};
 	
 	// Lootable objects from CfgTownGeneratorDefault.hpp
 	if (dayz_townGenerator) then { execVM "\z\addons\dayz_code\system\mission\chernarus\MainLootableObjects.sqf"; };
