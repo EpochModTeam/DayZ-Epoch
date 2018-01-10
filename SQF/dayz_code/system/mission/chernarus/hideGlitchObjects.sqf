@@ -26,6 +26,7 @@ private "_object";
 	[[3672,2435,0],327675], //kbud.p3d outhouse
 	
 	//Custom building interiors too high/low above/below terrain level to enter
+	[[6079,4911,0],223850], //Land_Shed_W4 zero_building
 	[[7261,2799,0],342775], //Land_Shed_W4 zero_building
 	[[12871,8031,0],294946], //Land_HouseV_3I3 zero_building
 	[[12971,8022,0],295117], //Land_HouseV_3I3 zero_building
@@ -37,6 +38,7 @@ private "_object";
 
 //Respawn at correct position
 [[
+	["Land_Shed_W4",[6078.64,4911.5,-0.55],0],
 	["Land_Shed_W4",[7261.45,2799.33,0],317.308],
 	["Fence_corrugated_plate",[7262.15,2805.85,0],142.308], //Cover floating fences nearby
 	["Fence_corrugated_plate",[7265.2,2808.42,0],137.308],

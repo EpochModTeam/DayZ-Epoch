@@ -4,4 +4,4 @@
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot @oiad @_Lance_
 
-[INFO] Synced with DayZMod upstream up to commit ebad05f
+[INFO] Synced with DayZMod upstream up to commit d6bf213
