@@ -13,7 +13,7 @@ private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_t
 "_isModular","_isModularDoor","_isHouse","_isGateOperational","_isGateLockable","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
-"_allowed","_hasAccess","_uid","_myCharID","_isLocked","_isDistance"];
+"_allowed","_hasAccess","_uid","_myCharID","_isLocked","_isClose"];
 
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
@@ -30,7 +30,7 @@ _myCharID = player getVariable ["CharacterID","0"];
 _vehicleOwnerID = _vehicle getVariable ["CharacterID","0"];
 _hasHotwireKit = "ItemHotwireKit" in _magazinesPlayer;
 _isPZombie = player isKindOf "PZombie_VB";
-_isDistance = (player distance _cursorTarget < 3);
+_isClose = (player distance _cursorTarget < 3);
 _dogHandle = player getVariable ["dogID",0];
 
 if (!isNull _nearLight) then {
@@ -199,7 +199,7 @@ if (_isPZombie) then {
 	if (s_player_pzombiesvision < 0) then {
 		s_player_pzombiesvision = player addAction [localize "STR_EPOCH_ACTIONS_NIGHTVIS", "\z\addons\dayz_code\actions\pzombie\pz_vision.sqf", [], 4, false, true, "nightVision", "_this == _target"];
 	};
-	if (!isNull _cursorTarget && _isDistance) then {
+	if (!isNull _cursorTarget && _isClose) then {
 		_isZombie = _cursorTarget isKindOf "zZombie_base";
 		_isHarvested = _cursorTarget getVariable["meatHarvested",false];
 		_isMan = _cursorTarget isKindOf "Man"; //includes animals and zombies
@@ -735,7 +735,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	//Allow owner to unlock vault
-	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {_isDistance} && {!keypadCancel}) then {
+	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {_isClose} && {!keypadCancel}) then {
 		if (s_player_unlockvault < 0) then {
 			if (_typeOfCursorTarget in DZE_LockedStorage) then {
 				if (_characterID == dayz_combination || _ownerID == _uid) then {
@@ -760,7 +760,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	};
 
 	//Allow owner to pack vault
-	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {_isDistance}  && {!keypadCancel}) then {
+	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {_isClose}  && {!keypadCancel}) then {
 		if (s_player_lockvault < 0) then {
 			if (_characterID == dayz_combination || _ownerID == _uid) then {
 				s_player_lockvault = player addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true];

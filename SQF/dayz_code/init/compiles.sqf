@@ -849,13 +849,14 @@ dayz_engineSwitch = {
 };
 
 DZE_SafeZonePosCheck = {
-	private ["_position","_skipPos"];
+	private ["_customRadius","_position","_skipPos"];
 	_position = _this select 0;
+	_customRadius = count _this > 1;
 	_skipPos = false;
 
-	if (!DZE_SafeZoneZombieLoot || count _this > 1) then {
+	if (!DZE_SafeZoneZombieLoot or _customRadius) then {
 		{
-			if ((_position distance (_x select 0)) < (if (count _this > 1) then {_this select 1} else {_x select 1})) exitWith {_skipPos = true;};
+			if ((_position distance (_x select 0)) < (if (_customRadius) then {_this select 1} else {_x select 1})) exitWith {_skipPos = true;};
 		} forEach DZE_SafeZonePosArray;
 	};
 	_skipPos;
