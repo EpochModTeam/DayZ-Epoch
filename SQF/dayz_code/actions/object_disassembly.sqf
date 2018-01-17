@@ -1,5 +1,5 @@
 private ["_cursorTarget","_onLadder","_isWater","_alreadyRemoving","_characterID","_objectID","_objectUID","_ownerArray","_dir",
-	"_realObjectStillThere","_upgrade","_entry","_parent","_requiredParts","_requiredTools","_model","_toolsOK","_displayname",
+	"_realObjectStillThere","_upgrade","_entry","_parent","_requiredParts","_requiredTools","_model","_needTool","_displayname",
 	"_whpos","_wh","_object","_vector","_dis","_puid","_variables"];
 
 
@@ -51,12 +51,12 @@ for "_i" from 1 to 20 do {
 	diag_log format["%1 - %2 - %3 - %4 - %5",_parent,_requiredParts,_requiredTools,_model,_displayname];
 
     // check the tools needed
-    _toolsOK = true;
+    _needTool = "";
     {
-        if (!(_x IN items player)) exitWith { _toolsOK = false; };
+        if !(_x in items player) exitWith { _needTool = getText(configFile >> "CfgWeapons" >> _x >> "displayName"); };
     } count _requiredTools;
 	
-    if (!_toolsOK) exitWith { format [localize "str_disassembleMissingTool",getText (configFile >> "CfgWeapons" >> _x >> "displayName"),_displayname] call dayz_rollingMessages; };
+    if (_needTool != "") exitWith { format[localize "str_disassembleMissingTool",_needTool] call dayz_rollingMessages; };
 
     if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "disableWeapons") == 0) then {
         player playActionNow "Medic";
