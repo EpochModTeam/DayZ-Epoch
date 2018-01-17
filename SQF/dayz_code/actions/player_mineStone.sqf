@@ -1,4 +1,4 @@
-private ["_mineChance","_item","_dis","_sfx","_breaking","_counter","_rocks","_findNearestRock","_objName","_countOut","_isOk","_proceed","_finished","_itemOut"];
+private ["_mineChance","_item","_dis","_sfx","_breaking","_counter","_rocks","_findNearestRock","_objName","_countOut","_isOk","_proceed","_finished","_itemOut","_weapons"];
 
 _item = _this;
 call gear_ui_init;
@@ -30,20 +30,22 @@ if (!isNull _findNearestRock) then {
 	_mineChance = dayz_HarvestingChance call fn_chance;
 
     while {_isOk} do {
-        //setup alert and speak
         _dis=20;
         _sfx = "minestone";
         [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
         [player,_dis,true,(getPosATL player)] call player_alertZombies;
 
         _finished = ["Medic",1] call fn_loopAction;
-
-        if(!_finished) exitWith {
+		_weapons = weapons player;
+		_weapons set [count _weapons,dayz_onBack];
+		
+		//Make sure player did not drop pickaxe
+        if (!_finished or !("MeleePickaxe" in _weapons or ("ItemPickaxe" in _weapons))) exitWith {
             _isOk = false;
             _proceed = false;
         };
 
-        if(_finished) then {
+        if (_finished) then {
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 			
             _breaking = false;
@@ -57,6 +59,7 @@ if (!isNull _findNearestRock) then {
                     } else {
                         if (dayz_onBack == "MeleePickaxe") then {
                             dayz_onBack = "";
+							if (!isNull findDisplay 106) then {findDisplay 106 displayCtrl 1209 ctrlSetText "";};
                         };
                     };
                 };

@@ -1,5 +1,7 @@
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
 
-private ["_dis","_sfx","_breaking","_countOut","_counter","_isOk","_proceed","_finished","_itemOut","_tree","_distance2d","_chanceResult"];
+private ["_dis","_sfx","_breaking","_countOut","_counter","_isOk","_proceed","_finished","_itemOut","_tree","_distance2d","_chanceResult","_weapons"];
 
 call gear_ui_init;
 closeDialog 1;
@@ -17,8 +19,6 @@ _tree = objNull;
 if (!isNull _tree) then {
 	_distance2d = [player, _tree] call BIS_fnc_distance2D;	
 	if (_distance2d > 5) exitWith {localize "str_player_23" call dayz_rollingMessages;};
-    //Remove melee magazines (BIS_fnc_invAdd fix) (add new melee ammo to array if needed)
-    {player removeMagazines _x} forEach ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Fishing_Swing"];
 
     // Start chop tree loop
     _counter = 0;
@@ -29,7 +29,6 @@ if (!isNull _tree) then {
 	_chanceResult = dayz_HarvestingChance call fn_chance;
 
     while {_isOk} do {
-        //setup alert and speak
         _dis=20;
         _sfx = "chopwood";
         [player,_sfx,0,false,_dis] call dayz_zombieSpeak;
@@ -37,8 +36,11 @@ if (!isNull _tree) then {
 		
 		//play action
 		_finished = ["Medic",1] call fn_loopAction;
-
-        if(!_finished) exitWith {
+		_weapons = weapons player;
+		_weapons set [count _weapons,dayz_onBack];
+		
+		//Make sure player did not drop hatchet
+        if (!_finished or !("MeleeHatchet" in _weapons or ("ItemHatchet" in _weapons))) exitWith {
             _isOk = false;
             _proceed = false;
         };
@@ -56,6 +58,7 @@ if (!isNull _tree) then {
                     } else {
                         if (dayz_onBack == "MeleeHatchet") then {
                             dayz_onBack = "";
+							if (!isNull findDisplay 106) then {findDisplay 106 displayCtrl 1209 ctrlSetText "";};
                         };
                     };
                 };
@@ -97,13 +100,8 @@ if (!isNull _tree) then {
     if !(_proceed) then {            
         localize "str_player_24_Stoped" call dayz_rollingMessages;
     };
-    //adding melee mags back if needed
-    switch (primaryWeapon player) do {
-        case "MeleeHatchet": {player addMagazine 'Hatchet_Swing';};
-        case "MeleeCrowbar": {player addMagazine 'Crowbar_Swing';};
-        case "MeleeMachete": {player addMagazine 'Machete_Swing';};
-        case "MeleeFishingPole": {player addMagazine 'Fishing_Swing';};
-    };
 } else {
 	localize "str_player_23" call dayz_rollingMessages;
 };
+
+dayz_actionInProgress = false;

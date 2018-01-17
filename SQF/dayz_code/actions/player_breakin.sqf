@@ -48,23 +48,7 @@ while {_isOk} do {
 //check chance, for a maximum amount of 5 loops allowing 5 possiable chances to breakin we also now divide the max chance by the amount of trys. 
 	_sledgeChance = [((_values select 1) / _limit)] call fn_chance;
 	_crowBarChance = [((_values select 2) / _limit)] call fn_chance;
-	
-//Check if we have the tools to start
-	_hasSledgeHammer = "ItemSledge" in items player;
-	_hasCrowbar = "ItemCrowbar" in items player;
-
-	if (!_hasSledgeHammer) exitWith {
-		_proceed = nil;
-		localize "STR_BLD_BREAKIN_NEED_SLEDGE" call dayz_rollingMessages;
-		uiSleep 1;
-	};
-
-	if (!_hasCrowbar) exitWith {
-		_proceed = nil;
-		localize "STR_BLD_BREAKIN_NEED_CROWBAR" call dayz_rollingMessages;
-		uiSleep 1;
-	};
-	
+		
 //Run SFX	
 	_dis=20;
 	_sfx = "repair";
@@ -74,8 +58,12 @@ while {_isOk} do {
 //Run animation loop
 	_finished = ["Medic",1] call fn_loopAction;
 	
+	//Make sure player did not drop sledge or crowbar
+	_hasSledgeHammer = "ItemSledge" in items player;
+	_hasCrowbar = "ItemCrowbar" in items player;
+	
 //Everything happened as it should
-	if(_finished) then {
+	if (_finished && _hasSledgeHammer && _hasCrowbar) then {
 		//Add to Counter
 		_counter = _counter + 1;
 	} else {
