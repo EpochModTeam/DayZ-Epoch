@@ -2,7 +2,10 @@
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
 [FIXED] POI fires were still spawning when POI was off and town generator was on (2855997)
 [FIXED] Combo locks could be duplicated by two players removing them at the same time (564e3da)
+[FIXED] Bush b_corylus.p3d allowed chopping down for wood like a tree (42e519a)
+[FIXED] Player could shoot during unconscious wake up animation (634a01a)
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
+[UPDATED] Added notification when status icons are disabled
 
-[INFO] Synced with DayZMod upstream up to commit d6bf213
+[INFO] Synced with DayZMod upstream up to commit fe063a8

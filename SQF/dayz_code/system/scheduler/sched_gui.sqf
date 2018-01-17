@@ -12,6 +12,7 @@ sched_gui = {
 		if (profileNamespace getVariable ["statusUI",1] == 1) then {
 			3 cutRsc [if (toLower DZE_UI == "vanilla") then {"playerStatusGUI"} else {"playerStatusGUI_epoch"},"PLAIN",3]; // show the whole HUD
 		} else {
+			[] spawn {uiSleep 2; systemChat (localize "STR_UI_STATUS_ICONS_TOOLTIP");};
 			//This can be removed after friendlies system is removed from player_updateGUI
 			uiNamespace setVariable ["DAYZ_GUI_display",displayNull];
 		};
