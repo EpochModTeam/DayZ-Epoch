@@ -90,6 +90,9 @@ if (player == vehicle player) then {
 "dynamicBlur" ppEffectAdjust [0]; "dynamicBlur" ppEffectCommit 5;
 "colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0.0], [1, 1, 1, 1],  [1, 1, 1, 1]];"colorCorrections" ppEffectCommit 5;
 
+//Prevent firing while weapon is still shown on back. AmovPpneMstpSnonWnonDnon_healed has disableWeapons=0 in config (should be =1)
+waitUntil {uiSleep 1; !(animationState player in ["ainjppnemstpsnonwnondnon_rolltofront","amovppnemstpsnonwnondnon_healed","amovppnemstpsnonwnondnon"])};
+
 //once more to be safe
 disableUserInput false; disableUserInput false;
 disableUserInput true; disableUserInput true;
