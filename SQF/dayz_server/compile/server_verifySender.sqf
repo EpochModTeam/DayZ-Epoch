@@ -26,7 +26,7 @@ _exitReason = switch true do {
 	case (_index < 0): {
 		format["%1 error: PUID NOT FOUND ON SERVER. PV ARRAY: %2",_function,_params]
 	};
-	case (((dayz_serverClientKeys select _index) select 0 != owner _player) or ((dayz_serverClientKeys select _index) select 1 != _clientKey)): {
+	case (((dayz_serverClientKeys select _index) select 0 != owner _player) or !([((dayz_serverClientKeys select _index) select 1),_clientKey] call BIS_fnc_areEqual)): {
 		format["%1 error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED. PV ARRAY: %2",_function,_params]
 	};
 	default {""};

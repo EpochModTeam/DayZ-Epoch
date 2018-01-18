@@ -221,7 +221,6 @@ _randomInput = toArray "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234
 for "_i" from 0 to 12 do {
 	_randomKey set [count _randomKey, (_randomInput call BIS_fnc_selectRandom)];
 };
-_randomKey = toString _randomKey;
 _findIndex = dayz_serverPUIDArray find _playerID;
 if (_findIndex > -1) then {
 	dayz_serverClientKeys set [_findIndex, [_clientID,_randomKey]];
