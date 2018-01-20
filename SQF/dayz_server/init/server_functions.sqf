@@ -17,7 +17,6 @@ dayz_serverKey = [];
 for "_i" from 0 to 12 do {
 	dayz_serverKey set [_i, ceil(random 128)];
 };
-dayz_serverKey = toString dayz_serverKey;
 server_playerLogin = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerLogin.sqf";
 server_playerSetup = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSetup.sqf";
 server_onPlayerDisconnect = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_onPlayerDisconnect.sqf";
