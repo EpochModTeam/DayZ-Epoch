@@ -136,11 +136,10 @@ if (_qty >= _qty_in) then {
 					// total damage 
 					_tireDmg = 0;
 
-					_damage = 0;
 					{					
 						if(["Wheel",_x,false] call fnc_inString) then {		
 							_damage = [_obj,_x] call object_getHit;
-							_tireDmg = _tireDmg + _damage;
+							_tireDmg = _tireDmg + (_damage select 0);
 							_tires = _tires + 1;
 						};
 					} count _hitpoints;

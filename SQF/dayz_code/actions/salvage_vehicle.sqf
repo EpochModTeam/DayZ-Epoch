@@ -41,8 +41,8 @@ if (_is6WheelType) then {
 
 {
 	_hitpoint = _x;
-	_damage = [_vehicle,_x] call object_getHit;
-	
+	_hits = [_vehicle,_x] call object_getHit;
+	_damage = _hits select 0;
 	if !(_x in _RemovedPartsArray) then {
 		//if (_x in ["HitFuel","HitEngine"] && _damage >= 0.89) then {_damage = 1;};
 		_cmpt = toArray (_x);

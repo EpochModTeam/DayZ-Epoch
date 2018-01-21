@@ -40,16 +40,13 @@ if (_vehicle != player) then {
 	[_unit,"hit",0,false] call dayz_zombieSpeak;
 
 	if (_wound IN [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ]) then {
-		_strH = "hit_" + (_wound);
-		_dam = _vehicle getVariable [_strH,0];
-		_total = (_dam + _damage);
+		_dam = _vehicle getHit _wound;
 		
-		_woundDamage = _unit getVariable ["hit_"+_wound, 0];
-		// we limit how vehicle could be damaged by Z. Above 0.8, the vehicle could explode, which is ridiculous.
-		_damage =  (if (_woundDamage < 0.8 OR {(!(_wound IN dayZ_explosiveParts))}) then {0.1} else {0.01});
+		// we limit how _dam could be damaged by Z. Above 0.8, the vehicle could explode, which is ridiculous.
+		_damage =  (if (_dam < 0.8 OR {(!(_wound IN dayZ_explosiveParts))}) then {0.1} else {0.01});
 		// Add damage to vehicle. the "sethit" command will be done by the gameengine for which vehicle is local
 		//diag_log(format["%1: Part ""%2"" damaged from vehicle, damage:+%3", __FILE__, _wound, _damage]);
-		_total = [_vehicle,  _wound,  _woundDamage + _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
+		_total = [_vehicle,  _wound,  _damage,  _unit,  "zombie", true] call fnc_veh_handleDam;
 	};
 } else {
 	if ((_unit distance player) <= 3) then {

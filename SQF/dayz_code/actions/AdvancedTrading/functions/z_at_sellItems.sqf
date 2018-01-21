@@ -30,7 +30,7 @@ _sellVehicle = {
 			_hitpoints = DZE_myVehicle call vehicle_getHitpoints;
 			{
 				if (["Wheel",_x,false] call fnc_inString) then {
-					_damage = [DZE_myVehicle,_x] call object_getHit;
+					_damage = ([DZE_myVehicle,_x] call object_getHit) select 0;
 					_tireDmg = _tireDmg + _damage;
 					_tires = _tires + 1;
 				};

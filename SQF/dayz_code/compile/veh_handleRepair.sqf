@@ -25,15 +25,12 @@ _hitpointnames = [];
 
 if ((isNil "_selection") OR {(!(_selection in _hitpointnames))}) exitWith {_this select 2};
 
-_SVname = "hit_" + _selection;
-
 _log = format["%1 vehicle:%2#%3 part:""%4"" current_part_damage:%5", __FILE__,
 typeOf _unit, _unit getVariable ["ObjectID",""],
-_selection, _unit getVariable [_SVname, 0] ];
+_selection, _unit getHit _selection ];
 
 if (local _unit) then {
 	// only local unit can set the damage of a vehicle part
-	_unit setVariable [_SVname, 0, true];
 	_unit setHit [_selection, 0];
 	_log = format["%1. setH!t[%2,0]", _log, _selection];
 	if (!isServer) then {

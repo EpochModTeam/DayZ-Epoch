@@ -273,9 +273,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 			{
 				_selection = _x select 0;
 				_dam = if (!_isAir && {_selection in dayZ_explosiveParts}) then {(_x select 1) min 0.8;} else {_x select 1;};
-				_strH = "hit_" + (_selection);
-				_object setHit[_selection,_dam];
-				_object setVariable [_strH,_dam,true];
+				_object setHit [_selection,_dam];
 			} foreach _hitpoints;
 			[_object,"damage"] call server_updateObject;
 

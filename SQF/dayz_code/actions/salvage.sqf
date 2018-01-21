@@ -31,7 +31,8 @@ if (_hasToolbox) then {
 		["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 		//Remove melee magazines (BIS_fnc_invAdd fix)
 		false call dz_fn_meleeMagazines;
-		_damage = [_vehicle,_hitpoint] call object_getHit;
+		_hits = [_vehicle,_hitpoint] call object_getHit;
+		_damage = _hits select 0;
 		if (_damage < 1 && {_damage > 0}) then { //Tempfix for issue where certain hitpoints on some vehicles do not get damaged and allow infinite removal
 			_BreakableParts = ["HitGlass1","HitGlass2","HitGlass3","HitGlass4","HitGlass5","HitGlass6","HitLGlass","HitRGlass","HitEngine","HitFuel","HitHRotor"];
 			if (_hitpoint in _BreakableParts) then {
@@ -48,7 +49,7 @@ if (_hasToolbox) then {
 			};
 			
 			if (_isOK) then {
-				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
+				_selection = _hits select 1;
 				/*if ((_hitpoint == "HitEngine") or (_hitpoint == "HitFuel")) then {
 					[_vehicle, _selection, 0.89] call fnc_veh_handleDam;
 				} else {*/

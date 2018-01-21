@@ -133,8 +133,7 @@ if (_isVehicle) then {
 		};
 		
 		if (_wound in [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ]) then {
-			_strH = "hit_" + (_wound);
-			_dam = _vehicle getVariable [_strH,0];
+			_dam = _vehicle getHit _wound;
 			_total = (_dam + _damage);
 			
 			//handle vehicle dmg

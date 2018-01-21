@@ -34,12 +34,14 @@ if ("ItemToolbox" in items player && (_part in magazines player)) then {
 	// Added Nutrition-Factor for work
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-	_damage = [_vehicle,_hitpoint] call object_getHit;
+	_hits = [_vehicle,_hitpoint] call object_getHit;
+	_damage = _hits select 0;
+
 	_vehicle removeAction _id;
 	//dont waste loot on undamaged parts
 	if (_damage > 0) then {
 		//Fix the part
-		_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _hitpoint >> "name");
+		_selection = _hits select 1;
 
 		[_vehicle, _selection, 0, true] call fnc_veh_handleRepair;
 		_vehicle setvelocity [0,0,1];

@@ -115,24 +115,24 @@ _object_damage = {
 	_damage = damage _object;
 	_array = [];
 	_allFixed = true;
-	
+
 	{
 		_hit = [_object,_x] call object_getHit;
-		_selection = getText (configFile >> "CfgVehicles" >> _class >> "HitPoints" >> _x >> "name");
-		if (_hit > 0) then {
+		if ((_hit select 0) > 0) then {
+					  
 			_allFixed = false;
-			_array set [count _array,[_selection,_hit]];
-			//diag_log format ["Section Part: %1, Dmg: %2",_selection,_hit]; 
+			_array set [count _array,[(_hit select 1),(_hit select 0)]];
+			//diag_log format ["Section Part: %1, Dmg: %2",(_hit select 1),(_hit select 0)];
 		} else {
-			_array set [count _array,[_selection,0]]; 
+			_array set [count _array,[(_hit select 1),0]];
 		};
 	} forEach _hitpoints;
-	
+
 	if (_allFixed && !_totalDmg) then {_object setDamage 0;};
-	
-	if (_forced) then {        
+
+	if (_forced) then {
 		if (_object in needUpdate_objects) then {needUpdate_objects = needUpdate_objects - [_object];};
-		_recorddmg = true;	       
+		_recorddmg = true;
 	} else {
 		//Prevent damage events for the first 10 seconds of the servers live.
 		if (diag_ticktime - _lastUpdate > 10) then {
@@ -143,7 +143,7 @@ _object_damage = {
 			};
 		};
 	};
-	
+
 	if (_recorddmg) then {
 		if (_objectID == "0") then {
 			_key = format["CHILD:306:%1:",_objectUID] + str _array + ":" + str _damage + ":";
@@ -153,8 +153,8 @@ _object_damage = {
 		#ifdef OBJECT_DEBUG
 		diag_log ("HIVE: WRITE: "+ str(_key));
 		#endif
-		
-		_key call server_hiveWrite;   
+
+		_key call server_hiveWrite;
 	};
 };
 

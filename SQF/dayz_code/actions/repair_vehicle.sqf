@@ -8,7 +8,8 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 
 {
 	_hitpoint = _x;
-	_damage = [_vehicle,_x] call object_getHit;
+	_hits = [_vehicle,_x] call object_getHit;
+	_damage = _hits select 0;
 
 	_cmpt = toArray (_x);
 	_cmpt set [0,20];
