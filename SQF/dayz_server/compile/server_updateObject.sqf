@@ -188,11 +188,11 @@ _object_killed = {
 
 	_exitReason = switch true do {
 		//Can't use owner because player may already be dead, can't use distance because player may be far from vehicle wreck
-		case ([_clientKey,dayz_serverKey] call BIS_fnc_areEqual): {""};
+		case (_clientKey == dayz_serverKey): {""};
 		case (_index < 0): {
 			format["Server_UpdateObject error: PUID NOT FOUND ON SERVER. PV ARRAY: %1",_this]
 		};
-		case !([((dayz_serverClientKeys select _index) select 1),_clientKey] call BIS_fnc_areEqual): {
+		case ((dayz_serverClientKeys select _index) select 1 != _clientKey): {
 			format["Server_UpdateObject error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED. PV ARRAY: %1",_this]
 		};
 		case (alive _object && {!(_class isKindOf "TentStorage_base" or _class isKindOf "IC_Tent")}): {
