@@ -35,6 +35,7 @@ class half_cinder_wall_kit: CA_Magazine {
 		};
 	};
 };
+
 class full_cinder_wall_kit: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -53,6 +54,7 @@ class full_cinder_wall_kit: CA_Magazine {
 		};
 	};
 };
+
 class cinder_door_kit: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -71,6 +73,26 @@ class cinder_door_kit: CA_Magazine {
 		};
 	};
 };
+
+class cinder_door_kit_locked: CA_Magazine {
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_BLOCKDOORLOCKED;
+	descriptionShort = $STR_EPOCH_BLOCKDOORWAY_LOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	weight = 340;
+	class ItemActions {
+		class Build {
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderWallDoorSmallLocked_DZ";
+		};
+	};
+};
+
 class cinder_garage_kit: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -86,6 +108,25 @@ class cinder_garage_kit: CA_Magazine {
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoorway_DZ";
+		};
+	};
+};
+
+class cinder_garage_kit_locked: CA_Magazine {
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_BLOCKGARAGEDOORLOCKED;
+	descriptionShort = $STR_EPOCH_BLOCKGARAGEDOORWAY_LOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	weight = 340;
+	class ItemActions {
+		class Build {
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderWallDoorLocked_DZ";
 		};
 	};
 };
@@ -108,6 +149,7 @@ class ItemWoodFloor: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodFloorHalf: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -134,6 +176,7 @@ class ItemWoodFloorHalf: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodFloorQuarter: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -187,6 +230,7 @@ class ItemWoodStairs: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodStairsSupport: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -267,6 +311,7 @@ class ItemWoodWall: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodWallThird: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -293,6 +338,7 @@ class ItemWoodWallThird: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodWallWindow: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -338,6 +384,7 @@ class ItemWoodWallDoor: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodWallWithDoor: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -364,6 +411,7 @@ class ItemWoodWallWithDoor: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodWallWithDoorLocked: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -409,6 +457,7 @@ class ItemWoodWallGarageDoor: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodWallGarageDoorLocked: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -470,6 +519,7 @@ class ItemWoodWallLg: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodWallWindowLg: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -515,6 +565,7 @@ class ItemWoodWallDoorLg: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodWallWithDoorLg: CA_Magazine {
 	scope = public;
 	count = 1;
@@ -541,6 +592,7 @@ class ItemWoodWallWithDoorLg: CA_Magazine {
 		};
 	};
 };
+
 class ItemWoodWallWithDoorLgLocked: CA_Magazine {
 	scope = public;
 	count = 1;
