@@ -1,5 +1,5 @@
 //Checks if item is near a plot, if the player is plot owner or friendly, if there are too many items, and if the player has required tools
-private ["_isAdmin","_requireplot","_distance","_canBuild","_friendlies","_nearestPole","_ownerID","_pos","_item","_classname","_isPole","_isLandFireDZ","_IsNearPlot","_buildables","_center","_toolCheck","_plotcheck","_buildcheck","_isfriendly","_isowner","_require","_text","_near","_hasPole"];
+private ["_isAdmin","_requireplot","_distance","_canBuild","_friendlies","_nearestPole","_ownerID","_pos","_item","_classname","_isPole","_isLandFireDZ","_IsNearPlot","_buildables","_center","_toolCheck","_plotcheck","_buildcheck","_isfriendly","_isowner","_require","_text","_near","_plotPoles"];
 
 _pos = _this select 0;
 _item =	_this select 1;
@@ -36,7 +36,7 @@ _isPole = (_classname == "Plastic_Pole_EP1_DZ");
 _isLandFireDZ = (_classname == "Land_Fire_DZ");
 
 _canBuild = false;
-_hasPole = false;
+_plotPoles = 0;
 _nearestPole = objNull;
 _ownerID = 0;
 _friendlies = [];
@@ -44,10 +44,10 @@ _friendlies = [];
 if (_isPole) then {
 	_plotcheck = [player, true] call FNC_find_plots;
 	_distance = DZE_PlotPole select 1;
-	if (DZE_limitPlots && !_isAdmin) then {
+	if (DZE_limitPlots > 0 && !_isAdmin) then {
 		{
-			if (_x getVariable["ownerPUID","0"] == dayz_playerUID || (_x getVariable["CharacterID","0"] == dayz_characterID)) exitWith {
-				_hasPole = true;
+			if (_x getVariable["ownerPUID","0"] == dayz_playerUID || (_x getVariable["CharacterID","0"] == dayz_characterID)) then {
+				_plotPoles = _plotPoles +1;
 			};
 		} count (entities "Plastic_Pole_EP1_DZ");
 	};
@@ -61,7 +61,7 @@ _nearestPole = _plotcheck select 2;
 
 if (_isPole && {_IsNearPlot > 0}) exitWith {dayz_actionInProgress = false; format[localize "str_epoch_player_44",_distance] call dayz_rollingMessages; [_canBuild, _isPole];};
 
-if (_hasPole) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_PLAYER_133" call dayz_rollingMessages; [_canBuild, _isPole];};
+if (DZE_limitPlots > 0 && {_plotPoles >= DZE_LimitPlots}) exitWith {dayz_actionInProgress = false; format[localize "STR_EPOCH_PLAYER_133",DZE_limitPlots] call dayz_rollingMessages; [_canBuild, _isPole];};
 
 if (_IsNearPlot == 0) then {
 	if (_requireplot == 0 || {_isLandFireDZ}) then {
