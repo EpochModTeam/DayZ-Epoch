@@ -12000,7 +12000,7 @@
 		<Key ID="STR_EPOCH_PLAYER_133">
 			<English>You can only own %1 plot pole(s)</English>
 			<German>Du kannst nur %1 Grundstück(e) besitzen.</German>
-			<Russian>Вам может принадлежать только %1 участок/ов земли</Russian>
+			<Russian>Вам может принадлежать только %1 участок(а,ов) земли.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_134">
 			<English>You do not have access to build on this plot.</English>
