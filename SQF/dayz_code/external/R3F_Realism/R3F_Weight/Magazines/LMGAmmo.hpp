@@ -31,10 +31,6 @@ class 75Rnd_545x39_RPK
 {
 	weight = 1.25;
 };
-class 45Rnd_545x39_RPK
-{
-	weight = 1;
-};
 class 75Rnd_762x39_RPK
 {
 	weight = 1.5;

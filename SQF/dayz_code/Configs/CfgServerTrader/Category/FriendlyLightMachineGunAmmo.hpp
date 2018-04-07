@@ -29,11 +29,6 @@ class Category_622 {
 		buy[] = {2,"ItemGoldBar"};
 		sell[] = {1,"ItemGoldBar"};
 	};
-	class 45Rnd_545x39_RPK {
-		type = "trade_items";
-		buy[] = {1,"ItemGoldBar"};
-		sell[] = {5,"ItemSilverBar10oz"};
-	};
 	class 75Rnd_545x39_RPK {
 		type = "trade_items";
 		buy[] = {2,"ItemGoldBar"};

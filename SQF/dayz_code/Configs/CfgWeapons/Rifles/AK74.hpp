@@ -38,7 +38,6 @@ class AK74_Kobra_SD_DZ : AKS_74_UN_kobra
 	{
 		30Rnd_545x39_AKSD,
 		30Rnd_545x39_AK, //Allow both SD and non-SD
-		45Rnd_545x39_RPK,
 		75Rnd_545x39_RPK
 	};
 	
