@@ -14,7 +14,8 @@ class DMR_DZ : DMR
 		//recoilProne = "recoil_single_primary_prone_4outof10";
 	};
 	
-	//visionMode[] = {"Normal"};
+	//A2OA DMR does not allow NVG after 2018-04-05 CorePatch
+	visionMode[] = {"Normal", "NVG"};
 	
 	class Attachments
 	{
