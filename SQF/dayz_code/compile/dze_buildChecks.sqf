@@ -101,7 +101,7 @@ if (!_canBuild) exitWith {
 if (DZE_BuildHeightLimit > 0 && {([player] call fnc_getPos) select 2 > DZE_BuildHeightLimit}) exitWith {dayz_actionInProgress = false; format[localize "STR_EPOCH_PLAYER_168",DZE_BuildHeightLimit] call dayz_rollingMessages; [false, _isPole];};
 
 // Also count safes, lockboxes, vanilla buildables, tents and stashes against DZE_BuildingLimit
-_buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_buildables","DZ_storage_base"];
+_buildables = DZE_maintainClasses + DZE_LockableStorage + ["DZ_storage_base"];
 _center = if (isNull _nearestPole) then {_pos} else {_nearestPole};
 if ((count (nearestObjects [_center,_buildables,_distance])) >= DZE_BuildingLimit) exitWith {dayz_actionInProgress = false; format[localize "str_epoch_player_41",_distance] call dayz_rollingMessages; [false, _isPole];};
 
