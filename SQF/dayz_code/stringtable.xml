@@ -8124,18 +8124,6 @@
 		</Key>
 	</Package>
 	<Package name="vehicles">
-		<Key ID="STR_VEH_NAME_OLD_HATCHBACK">
-			<English>Honda Accord hatchback</English>
-			<Russian>Старый хэтчбэк</Russian>
-			<Czech>Stará Honda Accord v hatchback verzi</Czech>
-			<German>Alter Kleinwagen</German>
-		</Key>
-		<Key ID="STR_VEH_NAME_SEDAN">
-			<English>Sedan</English>
-			<Russian>Седан</Russian>
-			<Spanish>Sedán</Spanish>
-			<German>Limousine</German>
-		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV">
 			<English>HMMWV</English>
 			<Russian>Хамви</Russian>

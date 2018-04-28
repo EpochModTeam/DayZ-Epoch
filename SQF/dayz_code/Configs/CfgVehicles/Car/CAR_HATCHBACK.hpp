@@ -1,6 +1,6 @@
  class car_hatchback: SkodaBase {
 	crew = "";
-	displayname = $STR_VEH_NAME_OLD_HATCHBACK;
+	displayname = $STR_DN_HATCHBACK;
 	faction = "CIV";
 	maxspeed = 125;
 	scope = public;
