@@ -1184,12 +1184,14 @@ class ItemOilBarrelEmpty : ItemOilBarrel
 {
 	displayName = $STR_EPOCH_EMPTYOILBARREL;
 	descriptionShort = $STR_EPOCH_EMPTYOILBARREL_DESC;
+	picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";
 };	
 
 class ItemMethylaminBarrelEmpty : ItemOilBarrel
 {
 	displayName = $STR_EPOCH_EMPTYMETHYLAMINEBARREL;
 	descriptionShort = $STR_EPOCH_EMPTYMETHYLAMINEBARREL_DESC;
+	picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";
 };
 
 class ItemMethylaminBarrel : ItemOilBarrel
