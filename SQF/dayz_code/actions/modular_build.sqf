@@ -487,7 +487,7 @@ if (_canBuild select 0) then {
 			if(_num_removed == 1) then {
 				["Working",0,[20,10,5,0]] call dayz_NutritionSystem;
 				call player_forceSave;
-				format[localize "str_build_01",_text] call dayz_rollingMessages;
+				[format[localize "str_build_01",_text],1] call dayz_rollingMessages;
 
 				_tmpbuilt setVariable ["OEMPos",_location,true]; //store original location as a variable
 
