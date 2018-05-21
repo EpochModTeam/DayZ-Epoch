@@ -12037,7 +12037,7 @@
 			<Czech>Stavím %1 fáze %2 z %3, pohněte se pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_140">
-			<English>You have setup your %2. Combination is %1</English>
+			<English>You have setup your %2. The combination is %1</English>
 			<German>Du hast erfolgreich ein(e) %2 aufgebaut. Die Kombination lautet: %1</German>
 			<Russian>Вы установили свой %2. Комбинация %1</Russian>
 			<Dutch>Je hebt je %2 geplaatst. De combinatie is %1</Dutch>
