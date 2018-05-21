@@ -12126,7 +12126,7 @@
 			<Russian>Улучшить %1 не представляется возможным.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_158">
-			<English>You have upgraded %2. Combination is %1</English>
+			<English>You have upgraded %2. The combination is: %1</English>
 			<German>Du hast %2 geupgradet. Die Kombination lautet: %1</German>
 			<Russian>Вы улучшили %2. Комбинация %1</Russian>
 			<Dutch>Je hebt een %2 geupgrade. De combinatie is %1</Dutch>
