@@ -6,15 +6,14 @@
 */
 private ["_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID"];
 
-if (!isNil "DZE_DYN_UnlockDoorInprogress") exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
-
-DZE_DYN_UnlockDoorInprogress = true;
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 _doorMethod = "";
 _displayCombo = findDisplay 41144;
 _displayEye = findDisplay 61144;
-if(!isNull _displayEye) then {_display = _displayEye; _doorMethod = "Eye";};
-if(!isNull _displayCombo) then {_display = _displayCombo; _doorMethod = "Combo";};
+if (!isNull _displayEye) then {_display = _displayEye; _doorMethod = "Eye";};
+if (!isNull _displayCombo) then {_display = _displayCombo; _doorMethod = "Combo";};
 
 if (!isNull dayz_selectedDoor) then {
 	_obj = dayz_selectedDoor;
@@ -41,7 +40,8 @@ if (!isNull dayz_selectedDoor) then {
 		};
 
 		if (isNil "dayz_UnlockTime") then {dayz_UnlockTime = 5;};
-		if (DZE_doorManagementHarderPenalty && {(diag_tickTime - dayz_lastCodeFail) > 120}) then {dayz_UnlockTime = 5;};
+		if (DZE_doorManagementHarderPenalty && {((diag_tickTime - dayz_lastCodeFail) + dayz_unlockTime / 2) > 120}) then {dayz_UnlockTime = 5;};
+		
 
 		if (DZE_Lock_Door == _objectCharacterID) then {
 			[player,"combo_unlock",0,false] call dayz_zombieSpeak;
@@ -60,13 +60,13 @@ if (!isNull dayz_selectedDoor) then {
 			};
 			dayz_UnlockTime = 5;
 			dayz_lastCodeFail = 0;
-			
+
 			PVDZE_handleSafeGear = [player,_obj,5,if (_doorMethod == "EYE") then {"EYESCAN"} else {DZE_Lock_Door}];
 			publicVariableServer "PVDZE_handleSafeGear";
 		} else {
 			PVDZE_handleSafeGear = [player,_obj,6,if (_doorMethod == "EYE") then {"EYESCAN"} else {DZE_Lock_Door}];
 			publicVariableServer "PVDZE_handleSafeGear";
-			
+
 			DZE_Lock_Door = "";
 			[player,"combo_locked",0,false] call dayz_zombieSpeak;
 			[player,20,true,(getPosATL player)] spawn player_alertZombies;
@@ -90,4 +90,4 @@ if (!isNull dayz_selectedDoor) then {
 } else {
 	_display closeDisplay 2;
 };
-DZE_DYN_UnlockDoorInprogress = nil;
+dayz_actionInProgress = false;

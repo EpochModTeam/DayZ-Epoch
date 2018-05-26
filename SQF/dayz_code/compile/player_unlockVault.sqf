@@ -24,7 +24,6 @@ if !(_objType in DZE_LockedStorage) exitWith {
 _playerNear = _obj call dze_isnearest_player;
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_20" call dayz_rollingMessages;};
 
-// Silently exit if object no longer exists
 if (isNull _obj || !(alive _obj)) exitWith { dayz_actionInProgress = false; };
 
 _unlockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "unlockedClass");
@@ -34,25 +33,37 @@ _ownerID = _obj getVariable["CharacterID","0"];
 _ComboMatch = (_ownerID == dayz_combination);
 if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
 
+if (isNil "dayz_UnlockTime") then {dayz_UnlockTime = 5;};
+if (DZE_lockablesHarderPenalty && {((diag_tickTime - dayz_lastCodeFail) + dayz_unlockTime / 2) > 120}) then {dayz_UnlockTime = 5;};
+
 if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
-	(findDisplay 106) closeDisplay 0; // Close gear
+	(findDisplay 106) closeDisplay 0;
 	dze_waiting = nil;
-	
+	dayz_UnlockTime = 5;
+	dayz_lastCodeFail = 0;
+
 	[_unlockedClass,objNull] call fn_waitForObject;
-	
+
 	PVDZE_handleSafeGear = [player,_obj,0];
 	publicVariableServer "PVDZE_handleSafeGear";
 	//wait for response from server to verify safe was logged before proceeding
 	waitUntil {!isNil "dze_waiting"};
-	
+
 	format[localize "STR_BLD_UNLOCKED",_text] call dayz_rollingMessages;
 } else {
 	PVDZE_handleSafeGear = [player,_obj,3,dayz_combination];
 	publicVariableServer "PVDZE_handleSafeGear";
-	
+
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,25,true,(getPosATL player)] spawn player_alertZombies;
-	format[localize "STR_BLD_WRONG_COMBO",_text] call dayz_rollingMessages;
+	if (DZE_lockablesHarderPenalty) then {
+		dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);
+		dayz_UnlockTime = dayz_UnlockTime * 2;
+	} else {
+		dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);
+	};
+
+	format [localize "str_epoch_player_19",round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;
 };
 s_player_unlockvault = -1;
 dayz_actionInProgress = false;
