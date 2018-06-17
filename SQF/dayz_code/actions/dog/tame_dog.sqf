@@ -31,7 +31,7 @@ if (_hasMeat) then {
 	_textRemoved = getText(configFile >> "CfgMagazines" >> _meat >> "displayName");
 
 	// add failure rate based on skill level variable (days alive) 
-	_chanceToFail = (((random 1) + (dayz_Survived/100)) > 0.5);
+	_chanceToFail = (((random 1) + ((dayz_Survived select 0)/100)) > 0.5);
 
 	if (!_chanceToFail) then {
 		if (!moveToCompleted _dog) then {
