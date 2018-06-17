@@ -1,6 +1,6 @@
 /*
 	DayZ Base Building Upgrades
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+	Made for DayZ Epoch please ask permission to use/edit/distribute email vbawol@veteranbastards.com.
 */
 private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_ownerID","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems","_finished","_playerNear"];
 
@@ -14,15 +14,15 @@ _obj = _this select 3;
 
 _objectCharacterID = _obj getVariable ["CharacterID","0"];
 
-if (DZE_Lock_Door != _objectCharacterID) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_49" call dayz_rollingMessages;};
+if (DZE_Lock_Door != _objectCharacterID) exitWith {dayz_actionInProgress = false; s_player_downgrade_build = -1; localize "str_epoch_player_49" call dayz_rollingMessages;};
 
 _playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
-if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
+if (_playerNear) exitWith {dayz_actionInProgress = false; s_player_downgrade_build = -1; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _objectID 	= _obj getVariable ["ObjectID","0"];
 _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = false; s_player_upgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
+if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = false; s_player_downgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
 
 _classname = typeOf _obj;
 
