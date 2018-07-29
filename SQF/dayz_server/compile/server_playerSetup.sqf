@@ -166,7 +166,6 @@ if (count _stats > 0) then {
 };
 
 if (_randomSpot) then {
-	private ["_counter","_position","_isNear","_isZero","_mkr"];
 	if (!isDedicated) then {endLoadingScreen;};
 	_IslandMap = (toLower worldName in ["caribou","cmr_ovaron","dayznogova","dingor","dzhg","fallujah","fapovo","fdf_isle1_a","isladuala","lingor","mbg_celle2","namalsk","napf","oring","panthera2","ruegen","sara","sauerland","smd_sahrani_a2","tasmania2010","tavi","trinity","utes"]);
 
@@ -213,7 +212,7 @@ if (_randomSpot) then {
 //record player pos locally for server checking
 _playerObj setVariable ["characterID",_characterID,true];
 _playerObj setVariable ["humanity",_humanity,true];
-_playerObj setVariable ["lastPos",getPosATL _playerObj];
+_playerObj setVariable ["lastPos",_position];
 
 _clientID = owner _playerObj;
 _randomKey = [];
