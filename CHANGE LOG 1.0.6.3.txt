@@ -9,6 +9,7 @@
 [FIXED] Rare publicVariable value restrictions for AuthKey due to RNG with basic Latin characters (d48c907) @oiad @AirwavesMan
 [FIXED] Freeze when iterating through CfgWeapons in A2OA 1.64 due to conflict with ItemKeys in dayz_epoch_b.pbo #2010 @S-fly
 [FIXED] 45Rnd_545x39_RPK error after it was removed with the 2018-04-05 A2OA CorePatch (d249227)
+[FIXED] Disabled Arma's automatic vehicle refuel, repair and rearm at WarfareBVehicleServicePoint buildings. @dihan48
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled

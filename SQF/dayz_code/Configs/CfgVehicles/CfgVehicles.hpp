@@ -495,6 +495,7 @@ class CfgVehicles
 	#include "Buildings\Land_telek1.hpp"
 	#include "Buildings\Land_VASICore.hpp"
 	#include "Buildings\Land_Vysilac_FM.hpp"
+	#include "Buildings\WarfareBBaseStructure.hpp"
 	#include "Buildings\WaterSources.hpp"
 	#include "Buildings\Land_houseV_2T2.hpp"
 
