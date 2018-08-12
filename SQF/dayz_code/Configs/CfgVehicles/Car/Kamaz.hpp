@@ -89,6 +89,9 @@ class KamazRefuel_DZ: KamazRefuel {
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 8;	
 	class TransportMagazines{};
 	class TransportWeapons{};
 	fuelCapacity = 10400;

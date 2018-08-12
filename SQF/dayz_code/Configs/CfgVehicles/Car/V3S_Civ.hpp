@@ -72,6 +72,9 @@ class V3S_Refuel_TK_GUE_EP1_DZ: V3S_Refuel_TK_GUE_EP1 {
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 8;	
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
