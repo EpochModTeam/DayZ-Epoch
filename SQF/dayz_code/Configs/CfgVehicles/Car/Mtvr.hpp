@@ -21,6 +21,9 @@ class MtvrRefuel_base : MtvrRefuel
 	expansion = 1;
 	crew = "";
 	typicalCargo[] = {};
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 8;	
 	class TransportMagazines {};
 	class TransportWeapons {};
 };
@@ -44,6 +47,9 @@ class MtvrRefuel_DZ: MtvrRefuel {
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 8;	
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
