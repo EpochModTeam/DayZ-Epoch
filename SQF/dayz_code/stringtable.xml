@@ -8515,6 +8515,42 @@
 			<French>Prêtre infecté</French>
 			<Czech>Infikovaný kněz</Czech>
 		</Key>
+		<Key ID="STR_ZNAME_CREWMAN">
+			<English>Infected crewman</English>
+			<German>Infiziertes Besatzungsmitglied</German>
+		</Key>	
+		<Key ID="STR_ZNAME_OFFICER">
+			<English>Infected officer</English>
+			<German>Infizierter Offizier</German>
+		</Key>	
+		<Key ID="STR_ZNAME_GHILLIE">
+			<English>Infected sniper</English>
+			<German>Infizierter Scharfschütze</German>
+		</Key>		
+		<Key ID="STR_ZNAME_SPECIALFORCES">
+			<English>Infected special forces</English>
+			<German>Infizierte Spezialeinheit</German>
+		</Key>	
+		<Key ID="STR_ZNAME_REBELS">
+			<English>Infected rebel</English>
+			<German>Infizierter Rebell</German>
+		</Key>		
+		<Key ID="STR_ZNAME_LUMERJACK">
+			<English>Infected lumberjack</English>
+			<German>Infizierter Holzfäller</German>
+		</Key>	
+		<Key ID="STR_ZNAME_ROCKER">
+			<English>Infected rocker</English>
+			<German>Infizierter Rocker</German>
+		</Key>	
+		<Key ID="STR_ZNAME_ASSISTANT">
+			<English>Infected assistant</English>
+			<German>Infizierter Assistant</German>
+		</Key>		
+		<Key ID="STR_ZNAME_BODYGUARD">
+			<English>Infected bodyguard</English>
+			<German>Infizierter Leibwächter</German>
+		</Key>
 	</Package>
 	<Package name="construction">
 		<Key ID="STR_BLD_name_ItemWorkBench">
