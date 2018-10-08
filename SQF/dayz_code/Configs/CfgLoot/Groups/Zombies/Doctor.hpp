@@ -11,6 +11,6 @@ ZombieDoctor[] =
 
 ZombieDoctorViral[] =
 {
-	{Loot_GROUP,		10,		ZombieMedical},
+	{Loot_GROUP,		10,		ZombieDoctor},
 	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
 };
