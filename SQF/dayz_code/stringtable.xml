@@ -8452,7 +8452,7 @@
 			<Czech>Infikovaný</Czech>
 		</Key>
 		<Key ID="STR_ZNAME_INFECTEDVIRAL">
-			<English>Viral infected</English>
+			<English>Viral Infected</English>
 			<Spanish>Infectado Viral</Spanish>
 			<Russian>Опасный инфицированный</Russian>
 			<French>Viral infecté</French>
@@ -8460,7 +8460,7 @@
 			<German>Viral Infizierter</German>
 		</Key>
 		<Key ID="STR_ZNAME_POLICEMAN">
-			<English>Infected policeman</English>
+			<English>Infected Policeman</English>
 			<German>Infizierter Polizist</German>
 			<Spanish>Policía Infectado</Spanish>
 			<Russian>Инфицированный милиционер</Russian>
@@ -8468,7 +8468,7 @@
 			<Czech>Infikovaný policajt</Czech>
 		</Key>
 		<Key ID="STR_ZNAME_SUIT">
-			<English>Infected clerk</English>
+			<English>Infected Clerk</English>
 			<German>Infizierter Beamter</German>
 			<Spanish>Oficinista Infectado</Spanish>
 			<Russian>Инфицированный клерк</Russian>
@@ -8476,7 +8476,7 @@
 			<Czech>Infikovaný úředník</Czech>
 		</Key>
 		<Key ID="STR_ZNAME_WORKER">
-			<English>Infected worker</English>
+			<English>Infected Worker</English>
 			<German>Infizierter Arbeiter</German>
 			<Spanish>Trabajador Infectado</Spanish>
 			<Russian>Инфицированный работяга</Russian>
@@ -8484,7 +8484,7 @@
 			<Czech>Infikovaný dělník</Czech>
 		</Key>
 		<Key ID="STR_ZNAME_DOCTOR">
-			<English>Infected doctor</English>
+			<English>Infected Doctor</English>
 			<German>Infizierter Arzt</German>
 			<Spanish>Doctor Infectado</Spanish>
 			<Russian>Инфицированный доктор</Russian>
@@ -8492,7 +8492,7 @@
 			<Czech>Infikovaný doktor</Czech>
 		</Key>
 		<Key ID="STR_ZNAME_TEACHER">
-			<English>Infected teacher</English>
+			<English>Infected Teacher</English>
 			<German>Infizierter Lehrer</German>
 			<Spanish>Maestro Infectado</Spanish>
 			<Russian>Инфицированный учитель</Russian>
@@ -8500,7 +8500,7 @@
 			<Czech>Infikovaný učitel</Czech>
 		</Key>
 		<Key ID="STR_ZNAME_HUNTER">
-			<English>Infected hunter</English>
+			<English>Infected Hunter</English>
 			<German>Infizierter Jäger</German>
 			<Spanish>Cazador Infectado</Spanish>
 			<Russian>Инфицированный охотник</Russian>
@@ -8508,7 +8508,7 @@
 			<Czech>Infikovaný myslivec</Czech>
 		</Key>
 		<Key ID="STR_ZNAME_PRIEST">
-			<English>Infected priest</English>
+			<English>Infected Priest</English>
 			<German>Infizierter Priester</German>
 			<Spanish>Sacerdote Infectado</Spanish>
 			<Russian>Инфицированный священник</Russian>
@@ -8516,39 +8516,39 @@
 			<Czech>Infikovaný kněz</Czech>
 		</Key>
 		<Key ID="STR_ZNAME_CREWMAN">
-			<English>Infected crewman</English>
+			<English>Infected Crewman</English>
 			<German>Infiziertes Besatzungsmitglied</German>
 		</Key>	
 		<Key ID="STR_ZNAME_OFFICER">
-			<English>Infected officer</English>
+			<English>Infected Officer</English>
 			<German>Infizierter Offizier</German>
 		</Key>	
 		<Key ID="STR_ZNAME_GHILLIE">
-			<English>Infected sniper</English>
+			<English>Infected Sniper</English>
 			<German>Infizierter Scharfschütze</German>
 		</Key>		
 		<Key ID="STR_ZNAME_SPECIALFORCES">
-			<English>Infected special forces</English>
+			<English>Infected Special Forces</English>
 			<German>Infizierte Spezialeinheit</German>
 		</Key>	
 		<Key ID="STR_ZNAME_REBELS">
-			<English>Infected rebel</English>
+			<English>Infected Rebel</English>
 			<German>Infizierter Rebell</German>
 		</Key>		
 		<Key ID="STR_ZNAME_LUMERJACK">
-			<English>Infected lumberjack</English>
+			<English>Infected Lumberjack</English>
 			<German>Infizierter Holzfäller</German>
 		</Key>	
 		<Key ID="STR_ZNAME_ROCKER">
-			<English>Infected rocker</English>
+			<English>Infected Rocker</English>
 			<German>Infizierter Rocker</German>
 		</Key>	
 		<Key ID="STR_ZNAME_ASSISTANT">
-			<English>Infected assistant</English>
+			<English>Infected Assistant</English>
 			<German>Infizierter Assistant</German>
 		</Key>		
 		<Key ID="STR_ZNAME_BODYGUARD">
-			<English>Infected bodyguard</English>
+			<English>Infected Bodyguard</English>
 			<German>Infizierter Leibwächter</German>
 		</Key>
 	</Package>
