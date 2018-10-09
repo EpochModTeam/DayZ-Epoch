@@ -61,6 +61,16 @@ class CfgLoot
 		#include "Groups\Zombies\Suit.hpp" //DZE
 		#include "Groups\Zombies\Doctor.hpp" //DZE
 		#include "Groups\Zombies\Pilot.hpp" //DZE
+		//New 1.0.6.3
+		#include "Groups\Zombies\Bodyguard.hpp" //DZE
+		#include "Groups\Zombies\Crewman.hpp" //DZE
+		#include "Groups\Zombies\Ghillie.hpp" //DZE
+		#include "Groups\Zombies\Lumberjack.hpp" //DZE
+		#include "Groups\Zombies\Officer.hpp" //DZE
+		#include "Groups\Zombies\Rebels.hpp" //DZE
+		#include "Groups\Zombies\Rocker.hpp" //DZE
+		#include "Groups\Zombies\SpecialForces.hpp" //DZE
+		
 		
 		#undef DZ_BP_VestPouch
 		#undef DZ_BP_Patrol

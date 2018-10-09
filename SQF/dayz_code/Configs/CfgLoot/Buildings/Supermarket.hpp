@@ -8,12 +8,29 @@ class Supermarket : Default
 	{
 		"zZombie_Base",
 		"zZombie_Base",
+		"z_hunter",
 		"z_teacher",
-		"z_suit1",
-		"z_suit2",
-		"z_new_villager2",
-		"z_new_villager3",
-		"z_new_villager4"
+		"z_villager1",
+		"z_villager2",
+		"z_villager3",
+		"z_citizen1",
+		"z_citizen2",
+		"z_citizen3",
+		"z_citizen4",
+		"z_lumberjack1",
+		"z_lumberjack2",
+		"z_lumberjack3",
+		"z_lumberjack4",
+		"z_profiteer1",
+		"z_profiteer2",
+		"z_profiteer3",
+		"z_profiteer4",
+		"z_rocker1",
+		"z_rocker2",
+		"z_rocker3",
+		"z_rocker4",
+		"z_assistant",
+		"z_pilot"
 	};
 	lootGroup = Supermarket;
 };

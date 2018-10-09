@@ -1,4 +1,4 @@
-ZombiePilot[] =
+ZombieOfficer[] =
 {
 	{Loot_MAGAZINE,		1,		FoodMRE},
 	{Loot_MAGAZINE,		0.5,		ItemHotwireKit},
@@ -8,8 +8,8 @@ ZombiePilot[] =
 	{Loot_GROUP,		2,		Consumable}
 };
 
-ZombiePilotViral[] =
+ZombieOfficerViral[] =
 {
-	{Loot_GROUP,		10,		ZombiePilot},
+	{Loot_GROUP,		10,		ZombieOfficer},
 	{Loot_MAGAZINE,		1,		ItemAntibiotic1}
 };

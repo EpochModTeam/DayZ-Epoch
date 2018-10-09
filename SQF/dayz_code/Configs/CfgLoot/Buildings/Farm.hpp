@@ -2,7 +2,7 @@ class Farm : Default
 {
 	zombieChance = 0.3;
 	maxRoaming = 3;
-	zombieClass[] = {"zZombie_Base","z_hunter","z_hunter","z_hunter","z_villager1","z_villager2","z_villager3","z_new_villager2","z_new_villager3","z_new_villager4"};
+	zombieClass[] = {"zZombie_Base","z_hunter","z_hunter2","z_hunter3","z_hunter4","z_villager1","z_villager2","z_villager3","z_new_villager2","z_new_villager3","z_new_villager4"};
 	lootChance = 0.5;
 	lootGroup = Farm;
 };

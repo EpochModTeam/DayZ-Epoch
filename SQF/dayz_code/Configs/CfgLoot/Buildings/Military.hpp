@@ -9,7 +9,15 @@ class Military : Default
 		"z_soldier",
 		"z_policeman",
 		"z_soldier_heavy",
-		"z_soldier_heavy"
+		"z_soldier_heavy",
+		"z_soldier_usmc_ghillie",
+		"z_soldier_cdf_officer",
+		"z_soldier_cdf_commander",
+		"z_soldier_ru_specnaz",
+		"z_soldier_ru_commander",
+		"z_soldier_ru_specialforces",
+		"z_soldier_ru_soldier",
+		"z_soldier_ru_soldier_heavy"
 	};
 	lootChance = 0.4;
 	lootGroup = Military;
@@ -24,7 +32,15 @@ class MilitarySpecial : Military
 		"z_soldier_heavy",
 		"z_soldier_heavy",
 		"z_soldier_heavy",
-		"z_soldier"
+		"z_soldier",
+		"z_soldier_usmc_ghillie",
+		"z_soldier_cdf_officer",
+		"z_soldier_cdf_commander",
+		"z_soldier_ru_specnaz",
+		"z_soldier_ru_commander",
+		"z_soldier_ru_specialforces",
+		"z_soldier_ru_soldier",
+		"z_soldier_ru_soldier_heavy"
 	};
 	lootChance = 0.4;
 	lootGroup = MilitarySpecial;
@@ -64,7 +80,8 @@ class Land_Mil_ControlTower: Military
 	{
 		"z_soldier",
 		"z_soldier",
-		"z_policeman"
+		"z_policeman",
+		"z_soldier_ru_officer"
 	};
 	zedPos[] = {{10.0703,3.76367,-9.62869},{1.75195,5.68164,-5.51373},{3.85254,3.53516,-5.50372},{6.66113,-0.625488,-1.0787},{6.72266,3.23389,-1.0787},{2.63965,-0.191406,-1.0687}};
 	lootChance = 0.4;
@@ -82,7 +99,9 @@ class Land_SS_hangar: Military
 		"z_soldier_heavy",
 		"z_worker1",
 		"z_worker2",
-		"z_worker3"
+		"z_worker3",
+		"z_soldier_ru_pilot",
+		"z_soldier_ru_crewman"
 	};
 	maxRoaming = 3;
 	zedPos[] = {{-11.7158,-18.9541,-5.87253},{11.7344,-17.165,-5.87253},{-14.2461,23.0439,-5.87253}};
@@ -116,7 +135,13 @@ class Land_Mil_House: Military
 	{
 		"z_soldier",
 		"z_soldier",
-		"z_policeman"
+		"z_policeman",
+		"z_soldier_ru_ghillie",
+		"z_soldier_ru_specnaz",
+		"z_soldier_ru_commander",
+		"z_soldier_ru_specialforces",
+		"z_soldier_ru_soldier",
+		"z_soldier_ru_soldier_heavy"
 	};
 	zedPos[] = {{11.1638,4.70117,-5.67465},{12.4565,1.42383,-5.67465},{13.6672,4.42383,-5.67465}};
 	lootPos[] = {{8.02,4.33,-5.07},{5,2.6,-5.07},{10.72,-1.85,-5.57},{2.59,-5.69,-5.07},{0.71,-6.8,-5.07},{-7.48,-7.23,-4.24},{-10.11,-4.59,-5.07},{-12.21,-2.28,-5.07},{-7.87,4.44,-0.09},{-13.76,-6.49,-0.94},{-13.96,3.4,-0.94},{-1.71,-6.68,-0.94},{-1.38,-1.7,-0.94},{-12.84,2.75,3.25},{-6.69,-6.36,3.3},{-13.78,6.93,-0.69},{-5.78,6.62,-3.7},{12.91,3.06,-5.68},{14.4,1.51,-5.68},{3.92,2.42,-5.07},{10.82,-0.49,-5.57},{-1.9,-7.37,-5.07},{-1.71,3.84,-5.07},{-1.17,1.31,-5.07}};
