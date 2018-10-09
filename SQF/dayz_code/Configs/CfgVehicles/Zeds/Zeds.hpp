@@ -692,7 +692,7 @@ class z_soldier_ru_soldier_heavy : z_soldier_ru_soldier {
 }; 
 
 class z_soldier_ru_officer : z_soldier_ru_soldier {
-	displayName = $STR_ZNAME_OFFICER
+	displayName = $STR_ZNAME_OFFICER;
 	zombieLoot = ZombieOfficer;
 	model = "\ca\characters2\Rus\Soldier_CO";
 };
