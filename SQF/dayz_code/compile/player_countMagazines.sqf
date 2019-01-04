@@ -4,7 +4,7 @@
 	return all player magazines with ammo count
 */
 
-private ["_dialog","_created","_magazineArray"];
+private ["_dialog","_created","_magazineArray","_item","_val","_max"];
 disableSerialization;
 
 _dialog = findDisplay 106;
