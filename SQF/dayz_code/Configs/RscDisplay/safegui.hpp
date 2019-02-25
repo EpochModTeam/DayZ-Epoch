@@ -303,7 +303,7 @@ class SafeKeyPad
 			colorText[] = {0,1,0,1};
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0,0,0,0};
-			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak; keypadCancel = false; ((ctrlParent (_this select 0)) closeDisplay 2); if(!isNull dayz_selectedVault and (typeOf dayz_selectedVault) in DZE_LockedStorage) then {dayz_selectedVault spawn player_unlockVault;};";
+			onButtonClick = "[player,""keypad_tick"",0,false] call dayz_zombieSpeak; keypadCancel = false; ((ctrlParent (_this select 0)) closeDisplay 2); if(!isNull dayz_selectedVault) then {dayz_selectedVault spawn player_unlockVault;};";
 		};
 	};
 };
@@ -458,7 +458,7 @@ class ComboLockUI
 			y = 0.762017;
 			w = 0.201064;
 			h = 0.233964;
-			onButtonClick = "keypadCancel = false; call player_unlockDoor";
+			onButtonClick = "keypadCancel = false; if (!isNull dayz_selectedDoor) then {call player_unlockDoor;};";
 		};
 	};
 };

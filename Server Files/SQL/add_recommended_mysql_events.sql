@@ -7,7 +7,9 @@
 -- ----------------------------
 DROP FUNCTION IF EXISTS `FindVehicleKeysCount`;
 DELIMITER ;;
-CREATE FUNCTION `FindVehicleKeysCount`(`keyId` INT) RETURNS int(11)
+CREATE FUNCTION `FindVehicleKeysCount`(`keyId` INT)
+	RETURNS int(11)
+	DETERMINISTIC
 BEGIN
     DECLARE totalKeys INT DEFAULT 0;
     DECLARE keyName VARCHAR(32) DEFAULT "";
@@ -37,7 +39,9 @@ DELIMITER ;
 -- ----------------------------
 DROP FUNCTION IF EXISTS `DeleteNonKeyVehicles`;
 DELIMITER ;;
-CREATE FUNCTION `DeleteNonKeyVehicles`() RETURNS int(11)
+CREATE FUNCTION `DeleteNonKeyVehicles`()
+	RETURNS int(11)
+	DETERMINISTIC
 BEGIN
 	DELETE FROM
 		`Object_DATA`
