@@ -125,7 +125,7 @@ class Pickup_PK_GUE_DZE1: Pickup_PK_GUE_DZE {
 	terrainCoef = 1.8;
 
 	class Upgrades {
-		ItemAVE[] = {"Pickup_PK_GUE_DZE1",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"Pickup_PK_GUE_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
 	};
 };
 class Pickup_PK_TK_GUE_EP1_DZE1: Pickup_PK_TK_GUE_EP1_DZE {
