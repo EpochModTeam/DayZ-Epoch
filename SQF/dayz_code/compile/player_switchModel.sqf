@@ -79,6 +79,8 @@ if (_isArray) then {
 _newUnit setDir _dir;
 {_newUnit removeMagazine _x;} count magazines _newUnit;
 removeAllWeapons _newUnit;
+removeAllItems _newUnit;
+removebackpack _newUnit;
 
 //Equip New Character
 {
