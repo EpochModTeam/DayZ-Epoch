@@ -46,7 +46,7 @@ Initial Developers
 --------------------------
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
 * Axle - Tester, Trader City Designer - http://www.twitch.tv/axles
-* Paul Tomany - Models, Textures - ptomany@gmail.com - http://www.twitch.tv/sequisha
+* Sequisha - Models, Textures - http://www.twitch.tv/sequisha
 * [VB]GREEN - Graphics - http://www.twitch.tv/vbgreen
 
 --------------------------

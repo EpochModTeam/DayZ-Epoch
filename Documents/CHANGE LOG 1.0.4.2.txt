@@ -16,5 +16,5 @@
 
 [REMOVED] Old Towngenerator Config. @Skaronator
 
-[INFO] Models/textures by Paul Tomany. @Sequisha.
+[INFO] Models/textures by @Sequisha.
 [INFO] Special thanks to http://verthosting.com for hosting our development server.
