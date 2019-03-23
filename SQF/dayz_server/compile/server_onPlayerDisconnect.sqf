@@ -85,7 +85,7 @@ if (_characterID != "?") then {
 		};
 	} else {
 		//Done in server_playerSync above if player is alive
-		{[_x,"gear"] call server_updateObject} count (nearestObjects [_playerPos,DayZ_GearedObjects,10]);
+		{[_x,"gear"] call server_updateObject} count (nearestObjects [[_playerObj]call FNC_GetPos,DayZ_GearedObjects,10]);
 	};
 	
 	[_playerUID,_characterID,3,_playerName,(_playerPos call fa_coor2str)] call dayz_recordLogin;
