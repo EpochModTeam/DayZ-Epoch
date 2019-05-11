@@ -110,10 +110,10 @@ class Offroad_DSHKM_Gue_DZE1: Offroad_DSHKM_Gue_DZE
 	maxspeed = 170; // Offroad_DSHKM_base 150 | car 100
 	class Upgrades
 	{
-		ItemLRK[] = {"Offroad_DSHKM_Gue_DZE2",
+		ItemAVE[] = {"Offroad_DSHKM_Gue_DZE2",
 		{  },
 		{ 
-			{ "ItemLRK",1 },
+			{ "ItemAVE",1 },
 			{ "PartGeneric",2 },
 			{ "ItemTent",1 } }};
 	};

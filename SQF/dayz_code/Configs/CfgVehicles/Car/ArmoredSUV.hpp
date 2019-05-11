@@ -493,7 +493,7 @@ class ArmoredSUV_PMC_DZE2: ArmoredSUV_PMC_DZE1
 	};
 	class Upgrades
 	{
-		ItemLRK[] = {"ArmoredSUV_PMC_DZE4",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"ArmoredSUV_PMC_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
 	};
 };
 
