@@ -28,6 +28,7 @@ class Zed_Base : Citizen1 {
 	class HitDamage {};
 	armor = 3;
 	agentTasks[] = {};
+	canCarryBackPack = 1;
 };
 class zZombie_Base : Zed_Base {
 	scope = public;
