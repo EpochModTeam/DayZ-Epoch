@@ -14,6 +14,7 @@
 [FIXED] Disabled Arma's automatic vehicle refuel, repair and rearm at WarfareBVehicleServicePoint buildings (2c4f06c) @dihan48
 [FIXED] DistanceFoot database stat was incorrect. @dihan48
 [FIXED] Wrong cargo count of Refuel Trucks after last Corepatch. @AirwavesMan
+[FIXED] Vehicles jumping into the air after flipping. @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled
