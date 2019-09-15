@@ -230,4 +230,4 @@ if (Z_SingleCurrency) then { //update global coins
 };
 
 // Force gear updates for nearby vehicles/tents
-{[_x,"gear"] call server_updateObject;} count nearestObjects [[_character]call FNC_GetPos,DayZ_GearedObjects,10];
+{[_x,"gear"] call server_updateObject;} count nearestObjects [[_character] call FNC_GetPos,DayZ_GearedObjects,10];
