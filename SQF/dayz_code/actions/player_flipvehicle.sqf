@@ -1,4 +1,4 @@
-private ["_nearPlayers","_object"];
+private ["_nearPlayers","_object","_pos"];
 _object = _this select 3;
 
 _nearPlayers = {(isPlayer _x && _x != player)} count (player nearEntities ["CAManBase",8]);
@@ -11,7 +11,9 @@ if (!(_object isKindOf "ATV_Base_EP1") && _nearPlayers < 1) exitWith {
 player playMove "amovpknlmstpslowwrfldnon_amovpercmstpsraswrfldnon";
 waitUntil { animationState player != "amovpknlmstpslowwrfldnon_amovpercmstpsraswrfldnon"};
 
+_pos = getposATL _object;
 _object setVectorUp [0,0,1];
+_object setposATL _pos;
 
 // Alert Zombies
 [player,20,true,(getPosATL player)] call player_alertZombies;
