@@ -6508,7 +6508,7 @@
 			<Czech>Při stavbě %1 došlo k chybě.</Czech>
 		</Key>
 		<Key ID="str_fireplace_02">
-			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
+			<English>You cannot make a fireplace here. The area must be flat, and free of other objects.</English>
 			<German>Du kannst hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
@@ -6516,8 +6516,8 @@
 			<Czech>Ohniště zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
 		</Key>
 		<Key ID="str_success_gutted_animal">
-			<English>%1 has been gutted, %2 meat steaks now on the carcass</English>
-			<German>Du hast das Tier (%1) ausgenommen. Vom verbleibenden Fleisch kannst du %2 Stücke abschneiden.</German>
+			<English>%1 has been gutted, %2 meat steaks now on the carcass.</English>
+			<German>Du hast %1 ausgenommen und kannst nun %2 Stück(e) Fleisch aus dem Kadavar nehmen.</German>
 			<Russian>Вы разделали: %1. Доступно кусков мяса: %2</Russian>
 			<Spanish>Un %1 fue achurado, dejando %2 trozos de carne en el cuerpo.</Spanish>
 			<French>%1 a été dépecé, %2 morceaux de viande sont maintenant dans la carcasse.</French>
