@@ -53,14 +53,14 @@ if ("fire" in _needNear) then {
 	_isNear = {inflamed _x} count (_pPos nearObjects _distance);
 	if(_isNear == 0) then {
 		_abort = true;
-		_reason = "fire";
+		_reason = localize "STR_EPOCH_FIRE";
 	};
 };
 if ("workshop" in _needNear) then {
 	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
 	if(_isNear == 0) then {
 		_abort = true;
-		_reason = "workshop";
+		_reason = localize "STR_EPOCH_WORKBENCH_NEARBY";
 	};
 };
 if (_abort) exitWith {

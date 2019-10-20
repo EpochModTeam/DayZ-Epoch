@@ -16853,6 +16853,10 @@
 			<German>Feuer (angezündet)</German>
 			<Czech>Ohniště (hořící)</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_WORKBENCH_NEARBY">
+			<English>Workbench, Wooden Shed or Wood Shack</English>
+			<German>Werkbank, Holzschuppen oder Holzhütte</German>
+		</Key>		
 		<Key ID="STR_EPOCH_HUMANS_NEARBY">
 			<English>Humans Nearby</English>
 			<German>Spieler in der Nähe</German>
