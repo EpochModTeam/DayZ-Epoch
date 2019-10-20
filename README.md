@@ -65,6 +65,8 @@ GitHub Collaborators (In order of most commits)
 * Axles - https://github.com/Axles
 * Armifer - https://github.com/Armifer
 * Zupa - https://github.com/Windmolders
+* oiad - https://github.com/oiad
+* AirwavesMan - https://github.com/AirwavesMan
 
 --------------------------
 GitHub Contributors (In order of most commits)
