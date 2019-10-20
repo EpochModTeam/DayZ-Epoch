@@ -712,6 +712,15 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 		s_player_lockUnlock_crtl = -1;
 	};
 	
+	if (DZE_Hide_Body && {_isMan} && {!_isAlive}) then {
+		if (s_player_hide_body < 0) then {
+			s_player_hide_body = player addAction [localize "str_action_hide_body", "\z\addons\dayz_code\actions\hide_body.sqf",_cursorTarget, 1, true, true];
+		};
+	} else {
+		player removeAction s_player_hide_body;
+		s_player_hide_body = -1;
+	};	
+	
 	// gear access on surrendered player
 	if (isPlayer _cursorTarget && {_isAlive} && {_cursorTarget getVariable ["DZE_Surrendered",false]}) then {
 		if (s_player_SurrenderedGear < 0) then {

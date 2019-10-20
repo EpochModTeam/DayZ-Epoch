@@ -27,6 +27,7 @@ class CfgActions {
 	class PutMagazine : None { show = 0; };
 	class DeactivateMine : None { show = 0; };
 	class RepairVehicle: None { show = 0; };
+	class HideBody: None { show = 0; }; //Moved to fn_selfactions to allow editing
 /*
 "None"
 "GetInCommander"
