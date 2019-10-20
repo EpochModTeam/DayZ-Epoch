@@ -17,6 +17,7 @@
 [FIXED] Wrong cargo count of Refuel Trucks after last Corepatch. @AirwavesMan
 [FIXED] Vehicles jumping into the air after flipping. @AirwavesMan
 [FIXED] Crafting wooden arrows from wood piles and razors was not possible. @AirwavesMan
+[FIXED] Top snap point for half cinder wall was incorrect. @ndavalos, @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled

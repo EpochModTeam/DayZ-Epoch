@@ -288,7 +288,7 @@ class SnapBuilding {
 		{0,0,0,"Pivot"},
 		{-2.64, 0, 1.685,"Left"},
 		{2.64, 0, 1.685,"Right"},
-		{0, 0, 1.685,"Top"}
+		{0, 0, 1.5,"Top"}
 		};
 	};
 	class CinderWallDoorSmall_DZ: Cinder_DZE {};
