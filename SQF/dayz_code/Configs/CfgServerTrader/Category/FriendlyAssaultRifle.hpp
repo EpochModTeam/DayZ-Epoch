@@ -769,6 +769,36 @@ class Category_485 {
 		buy[] = {-1,"ItemGoldBar"}; // Sell only
 		sell[] = {1,"ItemGoldBar10oz"};
 	};
+	class AK107_DZ {
+		type = "trade_weapons";
+		buy[] = {2,"ItemGoldBar"};
+		sell[] = {1,"ItemGoldBar"};
+	};
+	class AK107_Kobra_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {3,"ItemGoldBar"};
+	};
+	class AK107_PSO1_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {5,"ItemGoldBar"};
+	};
+	class AK107_GL_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {3,"ItemGoldBar"};
+	};	
+	class AK107_GL_Kobra_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {5,"ItemGoldBar"};
+	};
+	class AK107_GL_PSO1_DZ {
+		type = "trade_weapons";
+		buy[] = {-1,"ItemGoldBar"}; // Sell only
+		sell[] = {7,"ItemGoldBar"};
+	};	
 	class FNFAL_DZ {
 		type = "trade_weapons";
 		buy[] = {8,"ItemGoldBar"};

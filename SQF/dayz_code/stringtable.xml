@@ -17261,7 +17261,60 @@
 			<English>Leaf of a tobacco plant</English>
 			<German>Blatt einer Tabakpflanze</German>
 			<Russian>Лист табака с табачной плантации</Russian>
-		</Key>		
+		</Key>	
+		
+		<!--New Epoch 1.0.6.3 weapon, attachment and magazine strings-->
+        <Key
+          ID="str_dss_30rnd_ak"> <!--Overwrites the Arma 2 description -->
+          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
+          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
+          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
+          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
+          <French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
+          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
+          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
+          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
+          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+        </Key>
+		<Key
+          ID="str_dss_75rnd_rpk"> <!--Overwrites the Arma 2 description -->
+          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 75 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
+          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
+          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 75 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
+          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 75 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
+          <French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 75 &lt;br/&gt;Utilisé avec : AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
+          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 75 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
+          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 75 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
+          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
+          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+        </Key>
+		
+		<!-- AK107 -->
+		<Key ID="STR_DZ_WPN_AK107_NAME">
+			<English>AK-107</English>
+			<Russian>АК-107</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_NAME">
+			<English>AK-107 GP-25</English>
+			<Russian>АК-107 ГП-25</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_KOBRA_NAME">
+			<English>AK-107 Kobra</English>
+			<Russian>АК-107 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_KOBRA_NAME">
+			<English>AK-107 GP-25 Kobra</English>
+			<Russian>АК-107 ГП-25 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_PSO1_NAME">
+			<English>AK-107 PSO-1</English>
+			<Russian>АК-107 ПСО-1</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_PSO1_NAME">
+			<English>AK-107 GP-25 PSO-1</English>
+			<Russian>АК-107 ГП-25 ПСО-1</Russian>
+		</Key>
+		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>

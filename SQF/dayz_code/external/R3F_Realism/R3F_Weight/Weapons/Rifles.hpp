@@ -23,6 +23,30 @@ class AK_107_GL_pso
 {
 	weight = 5.5;
 };
+class AK107_Kobra_DZ
+{
+	weight = 3.8;
+};
+class AK107_GL_Kobra_DZ
+{
+	weight = 5.3;
+};
+class AK107_PSO_DZ
+{
+	weight = 4;
+};
+class AK107_GL_PSO_DZ
+{
+	weight = 5.5;
+};
+class AK107_DZ
+{
+	weight = 3;
+};
+class AK107_GL_DZ
+{
+	weight = 4.5;
+};
 class AKS_74_U
 {
 	weight = 2.7;

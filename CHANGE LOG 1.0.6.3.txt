@@ -2,6 +2,7 @@
 [NEW] Added 93 new zombie models with loot groups and strings for Server Admins @Airwavesman
 [NEW] Zombie Loot supports backpacks now @Airwavesman
 [NEW] Hide Body can be edited and toggled now. Enabled by default, configVariables.sqf/DZE_Hide_Body @AirwavesMan
+[NEW] 6 AK-107 versions added with attachment support. @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5)
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -18,6 +19,7 @@
 [FIXED] Vehicles jumping into the air after flipping. @AirwavesMan
 [FIXED] Crafting wooden arrows from wood piles and razors was not possible. @AirwavesMan
 [FIXED] Top snap point for half cinder wall was incorrect. @ndavalos, @AirwavesMan
+[FIXED] The RPK-74 magazine could not be used with all AK-74 versions. @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled
