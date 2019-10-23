@@ -14798,7 +14798,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK">
 			<English>Lumber Pack</English>
-			<German>Bauholzstapel</German>
+			<German>Bauholzpaket</German>
 			<Russian>Упаковка пиломатериалов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK_DESC">
@@ -14833,7 +14833,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLYWOODPACK_DESC">
 			<English>Plywood in a stack.</English>
-			<German>Sperrholzstapel.</German>
+			<German>Sperrholz, gestapelt und zusammengebunden.</German>
 			<Russian>Упакованная фанера.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBER">
