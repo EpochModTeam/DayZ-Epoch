@@ -20,9 +20,10 @@
 [FIXED] Crafting wooden arrows from wood piles and razors was not possible. (d4b46e4) @AirwavesMan
 [FIXED] Top snap point for half cinder wall was incorrect. (8f10a36) @ndavalos, @AirwavesMan
 [FIXED] The RPK-74 magazine could not be used with all AK-74 versions. (82485ea) @AirwavesMan
-[FIXED] Multiple Vehicle Upgrades were not possbile. (ac884f2), (a430f79), (c24504a) @F507DMT 
+[FIXED] Multiple Vehicle Upgrades were not possibile. (ac884f2), (a430f79), (c24504a) @F507DMT 
 [FIXED] Fix an inventory dupe if on water. (a052ba7), (baf92eb) @F507DMT 
-[FIXED] The pickaxe and the broken pickaxe spawned in the ground on loot spawn. @AirwavesMan
+[FIXED] The pickaxe and the broken pickaxe spawned in the ground on loot spawn. (a09bb81a) @AirwavesMan
+[FIXED] Fix floating loot from remove, pack and fn_dropItem. @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper

@@ -17,15 +17,18 @@ _nearByPile= nearestObjects [_pos, ["WeaponHolder","WeaponHolderBase"],PILE_SEAR
 
 if (count _nearByPile == 0) then {
 	//No weapon holders found in the radius, spawn a new one
-	_holder = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
+	_holder = "WeaponHolder" createVehicle [0,0,0];
+	_holder setPosATL _pos;
 } else {
 	//Found a near by weapon holder lets select it.
 	_holder = _nearByPile select 0;
-	
+
 	if (!_manualPos) then {
+		private "_objects";
+
 		//check to make sure the player can see the selected weapon holder.
 		_objects = lineIntersectsWith [(_holder modeltoWorld PILE_OFFSET), _pos, player, _holder, true];
-		
+
 		//Can you see the current selected weapon holder
 		if (count _objects > 0) then {
 			//Unable to see the current selected weapon holder within the radius lets create a new one.
