@@ -29,5 +29,6 @@
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
 [UPDATED] Added night vision mode back to DMR_DZ and M4SPR_DZE after it was removed with the 2018-04-05 A2OA CorePatch (d6cf707) @ebayShopper
 [UPDATED] All M32 grenades using one inventroy slot now. (cc85067) @AirwavesMan
+[UPDATED] The Czech Vest Pouch can carry one weapon now. This was changed to be more intuitive and to avoid disappearing weapons. @AirwavesMan
 
 [INFO] Synced with DayZMod upstream up to commit fe063a8
