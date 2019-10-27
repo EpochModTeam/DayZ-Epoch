@@ -34,7 +34,7 @@ if (_hasToolbox) then {
 		_hits = [_vehicle,_hitpoint] call object_getHit;
 		_damage = _hits select 0;
 		if (_damage < 1 && {_damage > 0}) then { //Tempfix for issue where certain hitpoints on some vehicles do not get damaged and allow infinite removal
-			_BreakableParts = ["HitGlass1","HitGlass2","HitGlass3","HitGlass4","HitGlass5","HitGlass6","HitLGlass","HitRGlass","HitEngine","HitFuel","HitHRotor"];
+			_BreakableParts = ["HitLFWheel","HitRFWheel","HitLBWheel","HitRBWheel","HitLF2Wheel","HitRF2Wheel","HitLMWheel","HitRMWheel","HitLFWheel","HitRFWheel","HitLBWheel","HitRBWheel","HitLF2Wheel","HitRF2Wheel","HitLMWheel","HitRMWheel","HitGlass1","HitGlass2","HitGlass3","HitGlass4","HitGlass5","HitGlass6","HitLGlass","HitRGlass","HitEngine","HitFuel","HitHRotor"];
 			if (_hitpoint in _BreakableParts) then {
 				if ((random 1) < (_damage * 0.9)) then { //max 90% chance to break
 					_isOK = true;
