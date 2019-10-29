@@ -69,6 +69,7 @@ class CfgMagazines
 	#include "DZE\Currency\TinBar.hpp"
 
 	#include "DZE\ItemWaterbottle.hpp"
+	#include "DZE\PlasticWaterbottle.hpp"
 	#include "Planting.hpp"
 
 	// Building Stuff

@@ -4,6 +4,11 @@ class Category_601 {
 		buy[] = {3,"ItemSilverBar"};
 		sell[] = {1,"ItemSilverBar"};
 	};
+	class ItemPlasticWaterbottleUnfilled {
+		type = "trade_items";
+		buy[] = {2,"ItemSilverBar"};
+		sell[] = {1,"ItemSilverBar"};
+	};	
 	class ItemSodaCoke {
 		type = "trade_items";
 		buy[] = {2,"ItemSilverBar"};

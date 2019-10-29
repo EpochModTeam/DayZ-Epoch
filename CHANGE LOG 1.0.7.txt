@@ -3,6 +3,7 @@
 [NEW] Zombie Loot supports backpacks now. (096fc13) @AirwavesMan
 [NEW] Hide Body can be edited and toggled now. Enabled by default, configVariables.sqf/DZE_Hide_Body (c0e9fe6) @AirwavesMan
 [NEW] 6 AK-107 versions added with attachment support. (82485ea) @AirwavesMan
+[NEW] Added new waterbottles from DayZ Mod. Icons made by @DeVloek. Fully functional with all actions. @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -23,12 +24,13 @@
 [FIXED] Multiple Vehicle Upgrades were not possibile. (ac884f2), (a430f79), (c24504a) @F507DMT 
 [FIXED] Fix an inventory dupe if on water. (a052ba7), (baf92eb) @F507DMT 
 [FIXED] The pickaxe and the broken pickaxe spawned in the ground on loot spawn. (a09bb81a) @AirwavesMan
-[FIXED] Fix floating loot from remove, pack and fn_dropItem. @AirwavesMan
+[FIXED] Fix floating loot from remove, pack and fn_dropItem. (1268f55) @AirwavesMan
+[FIXED] Water dogs did not work with other waterbottles than the normal one. @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
 [UPDATED] Added night vision mode back to DMR_DZ and M4SPR_DZE after it was removed with the 2018-04-05 A2OA CorePatch (d6cf707) @ebayShopper
 [UPDATED] All M32 grenades using one inventroy slot now. (cc85067) @AirwavesMan
-[UPDATED] The Czech Vest Pouch can carry one weapon now. This was changed to be more intuitive and to avoid disappearing weapons. @AirwavesMan
+[UPDATED] The Czech Vest Pouch can carry one weapon now. This was changed to be more intuitive and to avoid disappearing weapons. (f7ea9cb) @AirwavesMan
 
 [INFO] Synced with DayZMod upstream up to commit fe063a8

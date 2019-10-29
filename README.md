@@ -118,6 +118,7 @@ GitHub Contributors (In order of most commits)
 * F507DMT - https://github.com/F507DMT 
 * ndavalos - https://github.com/ndavalos
 * SmokeyBR - https://github.com/SmokeyBR
+* DeVloek - https://github.com/DeVloek
 
 --------------------------
 Special thanks
