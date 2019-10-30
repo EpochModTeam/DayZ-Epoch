@@ -21,7 +21,7 @@ _exitReason = switch true do {
 	//If object or player was moved with setPos on client, position takes a second to update on server
 	//Coordinates can be used in place of object
 	case (_objPos distance _player > (Z_VehicleDistance + 10)): {
-		format["%1 error: Verification failed, player is too far from object. PV ARRAY: %2",_function,_params]
+		format["%1 error: Verification failed, player is too far from object. Distance: %2m/%3m limit PV ARRAY: %4",_function,round (_objPos distance _player),Z_VehicleDistance + 10,_params]
 	}; 
 	case (_index < 0): {
 		format["%1 error: PUID NOT FOUND ON SERVER. PV ARRAY: %2",_function,_params]
