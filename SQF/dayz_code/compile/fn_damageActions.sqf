@@ -8,7 +8,7 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- [] call fnc_usec_damageActions;
 ************************************************************/
 
-private ["_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasEmptyBag","_hasTester","_hasAntibiotics","_hasBloodBag","_vehClose","_action1","_action2","_action3","_playerMagazines","_isFriendly"];
+private ["_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasAntibiotics","_hasBloodBag","_vehClose","_action1","_action2","_action3","_playerMagazines","_isFriendly"];
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
@@ -29,9 +29,9 @@ if (_inVehicle) then {
 	};
 	if (!r_player_unconscious && !r_action2) then {
 		r_player_lastSeat = _assignedRole;
-		if (_vehicle isKindOf "helicopter" || (_inVehicle && ({(isPlayer _x) && (alive _x)} count (crew _vehicle) > 1))) then {
+		if (_vehicle isKindOf "helicopter" || {_inVehicle && {{(isPlayer _x) && (alive _x)} count (crew _vehicle) > 1}}) then {
 			//allow switch to pilot
-			if (((_assignedRole select 0) != "driver") && ((!alive _driver) or ((_vehicle emptyPositions "Driver") > 0))) then {
+			if (((_assignedRole select 0) != "driver") && {(!alive _driver) || {(_vehicle emptyPositions "Driver") > 0}}) then {
 				if (_vehicle isKindOf "helicopter") then {
 					_action = _vehicle addAction [localize "str_actions_helipilotseat", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToPilot",_driver], 0, false, true];
 				} else {
@@ -41,25 +41,25 @@ if (_inVehicle) then {
 				r_action2 = true;
 			};
 			//allow switch to cargo
-			if (((_assignedRole select 0) != "cargo") && ((_vehicle emptyPositions "Cargo") > 0)) then {
+			if (((_assignedRole select 0) != "cargo") && {(_vehicle emptyPositions "Cargo") > 0}) then {
 				_action = _vehicle addAction [localize "str_actions_helibackseat", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToCargo",_driver], 0, false, true];
 				r_player_actions2 set [count r_player_actions2,_action];
 				r_action2 = true;
 			};
 			//allow switch to gunner
-			if (((_assignedRole select 0) != "Turret") && ((_vehicle emptyPositions "Gunner") > 0)) then {
+			if (((_assignedRole select 0) != "Turret") && {(_vehicle emptyPositions "Gunner") > 0}) then {
 				_action = _vehicle addAction [localize "str_actions_heligunnerseat", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToTurret",_driver], 0, false, true];
 				r_player_actions2 set [count r_player_actions2,_action];
 				r_action2 = true;
 			};
 			//allow switch to commander
-			if (((assignedCommander _vehicle) != player) && ((_vehicle emptyPositions "Commander") > 0)) then {
+			if (((assignedCommander _vehicle) != player) && {(_vehicle emptyPositions "Commander") > 0}) then {
 				_action = _vehicle addAction[localize "STR_EPOCH_PLAYER_311", "\z\addons\dayz_code\actions\veh_seatActions.sqf", ["MoveToTurret", _driver], 0, false, true];
 				r_player_actions2 set [count r_player_actions2,_action];
 				r_action2 = true;
 			};
 		};
-		if ((count _assignedRole) > 1 || ((_assignedRole select 0) == "driver")) then {
+		if ((count _assignedRole) > 1 || {(_assignedRole select 0) == "driver"}) then {
 			_turret = [-1];
 			if ((count _assignedRole) > 1) then {
 				_turret = _assignedRole select 1;
@@ -113,14 +113,14 @@ if (r_player_unconscious) then {
 
 //Lets make sure the player is looking at the target
 if (isPlayer cursorTarget) then {
-	if (!r_drag_sqf && !r_action && !_inVehicle && !r_player_unconscious && (player distance _menClose < 3)) then {
+	if (!r_drag_sqf && {!r_action} && {!_inVehicle} && {!r_player_unconscious} && {player distance _menClose < 3}) then {
 		_unit = cursorTarget;
 		player reveal _unit;
-		
+
 		//Arrays
 		_antibiotics =["ItemAntibiotic","ItemAntibiotic1","ItemAntibiotic2","ItemAntibiotic3","ItemAntibiotic4","ItemAntibiotic5","ItemAntibiotic6"];
 		_bloodBags = ["ItemBloodbag","bloodBagANEG","bloodBagAPOS","bloodBagBNEG","bloodBagBPOS","bloodBagABNEG","bloodBagABPOS","bloodBagONEG","bloodBagOPOS"];
-		
+
 		//Var checks
 		_unconscious = _unit getVariable ["NORRN_unconscious", false];
 		_lowBlood = _unit getVariable ["USEC_lowBlood", false];
@@ -130,7 +130,7 @@ if (isPlayer cursorTarget) then {
 		_legsBroke = _unit getVariable ["hit_legs", 0] >= 1;
 		_armsBroke = _unit getVariable ["hit_hands", 0] >= 1;
 		_infected = _unit getVariable ["USEC_infected", false];
-		
+
 		//Magazine checks
 		_playerMagazines = magazines player;
 		_hasBandage = "ItemBandage" in _playerMagazines;
@@ -139,12 +139,9 @@ if (isPlayer cursorTarget) then {
 		_hasMorphine = "ItemMorphine" in _playerMagazines;
 		_hasSplint = "equip_woodensplint" in _playerMagazines;
 		_hasPainkillers = "ItemPainkiller" in _playerMagazines;
-		//_hasEmptyBag = "emptyBloodBag" in _playerMagazines;
-		//_hasTester = "bloodTester" in _playerMagazines;
-		
 		_hasAntibiotics = Array_Any(_playerMagazines, {_this in _antibiotics});
 		_hasBloodBag = Array_Any(_playerMagazines, {_this in _bloodBags});
-		
+
 		_vehClose = (getPosATL player) nearEntities [["Car","Tank","Helicopter","Plane","StaticWeapon","Ship"],5];
 
 		if (_hasPatient) then {
@@ -168,49 +165,49 @@ if (isPlayer cursorTarget) then {
 				r_player_actions set [count r_player_actions,NORRN_loadWoundedAction];
 			};
 			//Allow player to bandage
-			if(_injured && _hasBandage) then {
+			if(_injured && {_hasBandage}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"ItemBandage"], 0, true, true, "", "'ItemBandage' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Sepsis
-			if(_hasSepsis && _hasSepsisBandage) then {
+			if(_hasSepsis && {_hasSepsisBandage}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"ItemSepsisBandage"], 0, true, true, "", "'ItemBandage' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give Epinephrine
-			if(_unconscious && _hasEpi) then {
+			if(_unconscious && {_hasEpi}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_05", "\z\addons\dayz_code\medical\epinephrine.sqf",[_unit], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give Morphine
-			if((_legsBroke or _armsBroke) && _hasMorphine) then {
+			if((_legsBroke || {_armsBroke}) && {_hasMorphine}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_06", "\z\addons\dayz_code\medical\brokeBones.sqf",[_unit,"ItemMorphine"], 0, true, true, "", "'ItemMorphine' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give equip_woodensplint
-			if((_legsBroke or _armsBroke) && _hasSplint) then {
+			if((_legsBroke || {_armsBroke}) && {_hasSplint}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_06_splint", "\z\addons\dayz_code\medical\brokeBones.sqf",[_unit,"equip_woodensplint"], 0, true, true, "", "'equip_woodensplint' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give Painkillers
-			if(_inPain && _hasPainkillers) then {
+			if(_inPain && {_hasPainkillers}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_07", "\z\addons\dayz_code\medical\painkiller.sqf",[_unit], 0, true, true, "", "'ItemPainkiller' in magazines player"];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to transfuse blood
-			if(_lowBlood && _hasBloodBag) then {
+			if(_lowBlood && {_hasBloodBag}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_08", "\z\addons\dayz_code\medical\transfusion.sqf",[_unit], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give antibiotics
-			if (_infected && _hasAntibiotics) then {
+			if (_infected && {_hasAntibiotics}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_give_antibiotics", "\z\addons\dayz_code\medical\antibiotics.sqf",[_unit], 0, true, true];
 				r_player_actions set [count r_player_actions, _action];
@@ -233,7 +230,7 @@ if (isPlayer cursorTarget) then {
 };
 
 //Remove Actions
-if ((!_isClose or !_hasPatient) && r_action) then {
+if ((!_isClose || {!_hasPatient}) && {r_action}) then {
 	call fnc_usec_medic_removeActions;
 	r_action = false;
 };
