@@ -4,7 +4,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_alreadyPacking","_backpacks","_bag","_campItems","_dir","_holder","_magazines","_obj","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons","_finished"];
+private ["_alreadyPacking","_backpacks","_bag","_campItems","_dir","_holder","_magazines","_obj","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons","_finished","_posPlayer"];
 
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
@@ -42,13 +42,21 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	if (isNull _obj) exitWith {};
 	if (!_finished) exitWith {_obj setVariable["packing",0,true];};
 
+	_posPlayer = getPosATL player;
+	_pos set [2,_posPlayer select 2];
+
+	if (_pos select 2 < 0) then {
+		_pos set [2,0];
+	};
+
 	//place tent (local)
-	_bag = createVehicle [_packobj, _pos, [], 0, "CAN_COLLIDE"];
+	_bag = _packobj createVehicle [0,0,0];
 	_bag setDir _dir;
-	player reveal _bag;
+	_bag setPosATL _pos;
 
-	_holder = createVehicle ["WeaponHolder", _pos, [], 0, "CAN_COLLIDE"];
-
+	_holder = "WeaponHolder" createVehicle [0,0,0];
+	_holder setPosATL _pos;
+	
 	_weapons = getWeaponCargo _obj;
 	_magazines = getMagazineCargo _obj;
 	_backpacks = getBackpackCargo _obj;
@@ -58,6 +66,8 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	deleteVehicle _obj;
 
 	[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
+
+	player reveal _holder;
 
 	localize "str_success_tent_pack" call dayz_rollingMessages;
 } else {

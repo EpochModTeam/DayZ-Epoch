@@ -1,10 +1,11 @@
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
+
 /*
 [_obj] spawn player_packVault;
 */
-private ["_obj","_ownerID","_objectID","_objectUID","_location1","_location2","_packedClass","_text","_playerNear","_finished"];
 
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
-dayz_actionInProgress = true;
+private ["_obj","_ownerID","_objectID","_objectUID","_location1","_location2","_packedClass","_text","_playerNear","_finished","_ComboMatch"];
 
 _obj = _this;
 _packedClass = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "packedClass");
@@ -31,11 +32,11 @@ if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = fal
 if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith { dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
 
 format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
-uiSleep 1; 
+uiSleep 1;
 _location1 = getPosATL player;
 uiSleep 5;
 _location2 = getPosATL player;
-	
+
 if(_location1 distance _location2 > 0.1) exitWith {
 	format[localize "str_epoch_player_122",_text] call dayz_rollingMessages;
 	s_player_packvault = -1;
@@ -44,22 +45,22 @@ if(_location1 distance _location2 > 0.1) exitWith {
 
 if (!isNull _obj && alive _obj) then {
 	[player,"tentpack",0,false] call dayz_zombieSpeak;
-	
+
 	_finished = ["Medic",1] call fn_loopAction;
 	if (isNull _obj or !_finished) exitWith {};
-	
+
 	["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
-	
+
 	(findDisplay 106) closeDisplay 0; // Close gear
 	dze_waiting = nil;
-	
+
 	[_packedClass,objNull] call fn_waitForObject;
-	
+
 	PVDZE_handleSafeGear = [player,_obj,2];
-	publicVariableServer "PVDZE_handleSafeGear";	
+	publicVariableServer "PVDZE_handleSafeGear";
 	//wait for response from server to verify pack was logged and gear added before proceeding
 	waitUntil {!isNil "dze_waiting"};
-	
+
 	format[localize "str_epoch_player_123",_text] call dayz_rollingMessages;
 };
 s_player_packvault = -1;

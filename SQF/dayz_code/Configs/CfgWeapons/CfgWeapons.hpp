@@ -29,6 +29,8 @@ class CfgWeapons
 	#include "Weapon\Sniper\M4SPR.hpp"
 	#include "Weapon\Sniper\VSSVintorez.hpp"
 	
+	//Ak107
+	#include "Weapon\Assault\AK107.hpp"	
 	
 	//each include is preceded by its required external references.
 	

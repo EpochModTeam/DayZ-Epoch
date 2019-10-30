@@ -70,6 +70,8 @@ class ItemJerryMixed: CA_Magazine {
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN_DESC;
 	sfx = "refuel";
+	containerEmpty = "ItemJerrycanEmpty";
+	
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
@@ -78,6 +80,10 @@ class ItemJerryMixed: CA_Magazine {
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"CSGAS",1},{"ItemJerryMixed4",1}};
 			input[] = {{"ItemJerryMixed",1}};
+		};
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
 		};
 	};
 };
@@ -90,6 +96,8 @@ class ItemJerryMixed4: CA_Magazine {
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN_DESC;
 	sfx = "refuel";
+	containerEmpty = "ItemJerrycanEmpty";
+	
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
@@ -99,6 +107,10 @@ class ItemJerryMixed4: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerryMixed3",1}};
 			input[] = {{"ItemJerryMixed4",1}};
 		};
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};		
 	};
 };
 class ItemJerryMixed3: CA_Magazine {
@@ -110,6 +122,8 @@ class ItemJerryMixed3: CA_Magazine {
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN_DESC;
 	sfx = "refuel";
+	containerEmpty = "ItemJerrycanEmpty";
+	
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
@@ -119,6 +133,10 @@ class ItemJerryMixed3: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerryMixed2",1}};
 			input[] = {{"ItemJerryMixed3",1}};
 		};
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};		
 	};
 };
 class ItemJerryMixed2: CA_Magazine {
@@ -130,6 +148,8 @@ class ItemJerryMixed2: CA_Magazine {
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN_DESC;
 	sfx = "refuel";
+	containerEmpty = "ItemJerrycanEmpty";
+	
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
@@ -139,6 +159,10 @@ class ItemJerryMixed2: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerryMixed1",1}};
 			input[] = {{"ItemJerryMixed2",1}};
 		};
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};		
 	};
 };
 class ItemJerryMixed1: CA_Magazine {
@@ -150,6 +174,8 @@ class ItemJerryMixed1: CA_Magazine {
 	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
 	descriptionShort = $STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN;
 	sfx = "refuel";
+	containerEmpty = "ItemJerrycanEmpty";
+	
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
@@ -159,6 +185,10 @@ class ItemJerryMixed1: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerrycanEmpty",1}};
 			input[] = {{"ItemJerryMixed1",1}};
 		};
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};		
 	};
 };
 

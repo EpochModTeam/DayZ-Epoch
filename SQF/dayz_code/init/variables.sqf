@@ -194,7 +194,7 @@ dayz_resetSelfActions = {
 	s_player_setCode = -1;
 	s_player_BuildUnLock = -1;
 	s_player_BuildLock = -1;*/
-	
+
 	// EPOCH ADDITIONS
 	s_player_packvault = -1;
 	s_player_lockvault = -1;
@@ -217,7 +217,7 @@ dayz_resetSelfActions = {
 	s_player_barkdog = -1;
 	s_player_warndog = -1;
 	s_player_followdog = -1;
-	s_player_information = -1;	
+	s_player_information = -1;
 	s_player_fuelauto = -1;
 	s_player_fuelauto2 = -1;
 	s_player_fillgen = -1;
@@ -247,6 +247,7 @@ dayz_resetSelfActions = {
 	s_player_toggleVectors=[];
 	vectorActions = -1;
 	s_player_manageDoor = -1;
+    s_player_hide_body = -1;
 };
 call dayz_resetSelfActions;
 
@@ -311,13 +312,13 @@ gear_done = false;
 //player warming up vars
 //heatpack
 r_player_warming_heatpack = [false, 0];
-r_player_warming_heatpack_time = 600; 
+r_player_warming_heatpack_time = 600;
 
 //displays temp progress
 r_player_temp_factor = 0; //to be used for temp(up/down) indicators
 r_player_temp_min_factor = -0.04; //(lvl3 down arrow)
 r_player_temp_max_factor = 0.04; //(lvl3 up arrow)
- 
+
 //INT Nutrition Info
 r_player_Nutrition = 0; // Calories
 r_player_nutritionMuilpty = 2;
@@ -376,10 +377,10 @@ dayz_traps_active = [];
 dayz_traps_trigger = [];
 
 //Settings Not under dayz_settings
-if(isNil "dayz_attackRange") then { 
+if(isNil "dayz_attackRange") then {
 	dayz_attackRange = 3;
 };
-if(isNil "dayz_DamageMultiplier") then { 
+if(isNil "dayz_DamageMultiplier") then {
 	dayz_DamageMultiplier = 1;
 };
 if(isNil "dayz_quickSwitch") then {
@@ -416,7 +417,7 @@ if (toLower worldName != "chernarus") then {
 if(isNil "dayz_presets") then { dayz_presets = "Vanilla"; };
 
 switch (dayz_presets) do {
-	case "Custom": { //Custom 
+	case "Custom": { //Custom
 		if(isNil "dayz_enableGhosting") then { dayz_enableGhosting = false; };
 		if(isNil "dayz_ghostTimer") then { dayz_ghostTimer = 120; };
 		if(isNil "dayz_spawnselection") then { dayz_spawnselection = 0; };
@@ -436,7 +437,7 @@ switch (dayz_presets) do {
 		dayz_spawnselection = 0; //Turn on spawn selection 0 = random only spawns, 1 = Spawn choice based on limits
 		dayz_spawncarepkgs_clutterCutter = 0; //0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
+		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass
 		dayz_bleedingeffect = 2; //1= blood on the ground, 2= partical effect, 3 = both.
 		dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = true; // Set to true to disable all temperature changes.
@@ -450,7 +451,7 @@ switch (dayz_presets) do {
 		dayz_spawnselection = 0; //Turn on spawn selection 0 = random only spawns, 1 = Spawn choice based on limits
 		dayz_spawncarepkgs_clutterCutter = 0; //0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
+		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass
 		dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
 		dayz_OpenTarget_TimerTicks = 60 * 25; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = false; // Set to true to disable all temperature changes.
@@ -464,7 +465,7 @@ switch (dayz_presets) do {
 		dayz_spawnselection = 1; //Turn on spawn selection 0 = random only spawns, 1 = Spawn choice based on limits
 		dayz_spawncarepkgs_clutterCutter = 0; //0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
+		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass
 		dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
 		dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = false; // Set to true to disable all temperature changes.
@@ -554,8 +555,8 @@ if (isServer) then {
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
 	needUpdate_FenceObjects = [];
-	//dayz_spawnCrashSite_clutterCutter=0; // helicrash spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
-	//dayz_spawnInfectedSite_clutterCutter=0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
+	//dayz_spawnCrashSite_clutterCutter=0; // helicrash spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass
+	//dayz_spawnInfectedSite_clutterCutter=0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass
 	//Objects to remove when killed.
 	DayZ_nonCollide = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3", "StashMedium4", "DomeTentStorage", "DomeTentStorage0", "DomeTentStorage1", "DomeTentStorage2", "DomeTentStorage3", "DomeTentStorage4", "CamoNet_DZ", "DesertTentStorage", "DesertTentStorage0", "DesertTentStorage1", "DesertTentStorage2", "DomeTentStorage3", "DesertTentStorage4"];
 	DayZ_WoodenFence = ["WoodenFence_1","WoodenFence_2","WoodenFence_3","WoodenFence_4","WoodenFence_5","WoodenFence_6","WoodenFence_7"];
@@ -589,7 +590,7 @@ if (!isDedicated) then {
 	dayz_plantTypes = ["","MAP_pumpkin","MAP_p_Helianthus","fiberplant"];
 	//Needed for trees spawned with createVehicle like POI (typeOf returns class instead of "")
 	dayz_treeTypes = ["","MAP_t_picea1s","MAP_t_picea2s","MAP_t_picea3f","MAP_t_pinusN2s","MAP_t_pinusS2f","MAP_t_populus3s","MAP_t_betula2s","MAP_t_fagus2s","MAP_t_fagus2W","MAP_t_malus1s"];
-	
+
 	//temperature variables
 	dayz_temperatur = 36; //TeeChange
 	dayz_temperaturnormal = 36; //TeeChange
@@ -649,7 +650,7 @@ if (!isDedicated) then {
 	//Animals
 	dayz_currentGlobalAnimals =	0;
 	dayz_maxGlobalAnimals =	50;
-	//Plants	
+	//Plants
 	dayz_currentGlobalPlants = 0;
 	dayz_maxGlobalPlants = 500;
 	//Loot

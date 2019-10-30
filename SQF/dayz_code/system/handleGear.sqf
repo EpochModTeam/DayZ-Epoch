@@ -97,6 +97,13 @@ _isMagazine = {
 	_return
 };
 
+_isBackpack = {
+	private ["_item","_return"];
+	_item = _this select 0;
+	_return = (str(configfile >> "cfgVehicles" >> _item) != "");
+	_return
+};
+
 _IDCsArray = [
 	[107],
 	[121],
@@ -421,6 +428,11 @@ private ["_inputItem","_return"];
 		_return = (_name);
 	};
 
+	if ([_inputItem] call _isBackpack) then {
+		_name = getText(configfile >> "cfgVehicles" >> _inputItem >> "descriptionShort");
+		_return = ( _name);
+	};
+
 	_return
 };
 
@@ -436,6 +448,11 @@ _itemName = {
 
 	if ([_item] call _isMagazine) then {
 		_name = getText(configfile >> "cfgMagazines" >> _item >> "displayName");
+		_return = ( _name);
+	};
+
+	if ([_item] call _isBackpack) then {
+		_name = getText(configfile >> "cfgVehicles" >> _item >> "displayName");
 		_return = ( _name);
 	};
 

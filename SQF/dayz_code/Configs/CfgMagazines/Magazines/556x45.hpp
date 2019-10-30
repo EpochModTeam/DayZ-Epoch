@@ -19,7 +19,7 @@ class 100Rnd_556x45_M249 : 200Rnd_556x45_M249
 
 class 100Rnd_556x45_BetaCMag: CA_Magazine {
 	scope = public;
-	displayName = "MG36 Mag.";
+	displayName = $STR_DZ_MAG_100RND_556x45_MG36_NAME;
 	ammo = "B_556x45_Ball";
 	count = 100;
 	initSpeed = 920;
@@ -27,7 +27,7 @@ class 100Rnd_556x45_BetaCMag: CA_Magazine {
 	type="256";
 	tracersEvery = 4;
 	lastRoundsTracer = 4;
-	descriptionShort = "Caliber: 5.56x45 mm NATO Rounds: 100 Used in: MG36, X8 SAW";
+	descriptionShort = $STR_DZ_MAG_100RND_MG36_DESC;
 };
 
 

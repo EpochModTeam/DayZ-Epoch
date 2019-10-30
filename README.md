@@ -65,6 +65,8 @@ GitHub Collaborators (In order of most commits)
 * Axles - https://github.com/Axles
 * Armifer - https://github.com/Armifer
 * Zupa - https://github.com/Windmolders
+* oiad - https://github.com/oiad
+* AirwavesMan - https://github.com/AirwavesMan
 
 --------------------------
 GitHub Contributors (In order of most commits)
@@ -116,6 +118,7 @@ GitHub Contributors (In order of most commits)
 * F507DMT - https://github.com/F507DMT 
 * ndavalos - https://github.com/ndavalos
 * SmokeyBR - https://github.com/SmokeyBR
+* DeVloek - https://github.com/DeVloek
 
 --------------------------
 Special thanks

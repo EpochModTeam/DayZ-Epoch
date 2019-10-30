@@ -1,0 +1,36 @@
+[NEW] Time between unlocking safes/lockboxes after a failed code will be exponentially higher, see configVariables.sqf\DZE_lockablesHarderPenalty (c3cbca1) @oiad
+[NEW] Added 93 new zombie models with loot groups and strings for Server Admins. (2e15009) @AirwavesMan
+[NEW] Zombie Loot supports backpacks now. (096fc13) @AirwavesMan
+[NEW] Hide Body can be edited and toggled now. Enabled by default, configVariables.sqf/DZE_Hide_Body (c0e9fe6) @AirwavesMan
+[NEW] 6 AK-107 versions added with attachment support. (82485ea) @AirwavesMan
+[NEW] Added new waterbottles from DayZ Mod. Icons made by @DeVloek. Fully functional with all actions. @AirwavesMan
+
+[FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
+[FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
+[FIXED] POI fires were still spawning when POI was off and town generator was on (2855997) @ebayShopper
+[FIXED] Combo locks could be duplicated by two players removing them at the same time (564e3da) @shu @oiad
+[FIXED] Bush b_corylus.p3d allowed chopping down for wood like a tree (42e519a) @ebayShopper
+[FIXED] Player could shoot during unconscious wake up animation (634a01a) @ebayShopper
+[FIXED] Rare publicVariable value restrictions for AuthKey due to RNG with basic Latin characters (d48c907) @oiad @AirwavesMan
+[FIXED] Freeze when iterating through CfgWeapons in A2OA 1.64 due to conflict with ItemKeys in dayz_epoch_b.pbo #2010 @S-fly
+[FIXED] 45Rnd_545x39_RPK error after it was removed with the 2018-04-05 A2OA CorePatch (d249227) @ebayShopper
+[FIXED] Disabled Arma's automatic vehicle refuel, repair and rearm at WarfareBVehicleServicePoint buildings (2c4f06c) @dihan48
+[FIXED] DistanceFoot database stat was incorrect. (be777dd) @dihan48
+[FIXED] Wrong cargo count of Refuel Trucks after last Corepatch. (e26fb24) @AirwavesMan
+[FIXED] Vehicles jumping into the air after flipping. (096fc13) @AirwavesMan
+[FIXED] Crafting wooden arrows from wood piles and razors was not possible. (d4b46e4) @AirwavesMan
+[FIXED] Top snap point for half cinder wall was incorrect. (8f10a36) @ndavalos, @AirwavesMan
+[FIXED] The RPK-74 magazine could not be used with all AK-74 versions. (82485ea) @AirwavesMan
+[FIXED] Multiple Vehicle Upgrades were not possibile. (ac884f2), (a430f79), (c24504a) @F507DMT 
+[FIXED] Fix an inventory dupe if on water. (a052ba7), (baf92eb) @F507DMT 
+[FIXED] The pickaxe and the broken pickaxe spawned in the ground on loot spawn. (a09bb81a) @AirwavesMan
+[FIXED] Fix floating loot from remove, pack and fn_dropItem. (1268f55) @AirwavesMan
+[FIXED] Water dogs did not work with other waterbottles than the normal one. @AirwavesMan
+
+[UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
+[UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
+[UPDATED] Added night vision mode back to DMR_DZ and M4SPR_DZE after it was removed with the 2018-04-05 A2OA CorePatch (d6cf707) @ebayShopper
+[UPDATED] All M32 grenades using one inventroy slot now. (cc85067) @AirwavesMan
+[UPDATED] The Czech Vest Pouch can carry one weapon now. This was changed to be more intuitive and to avoid disappearing weapons. (f7ea9cb) @AirwavesMan
+
+[INFO] Synced with DayZMod upstream up to commit fe063a8

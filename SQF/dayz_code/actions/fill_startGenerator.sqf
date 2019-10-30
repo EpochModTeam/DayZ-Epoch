@@ -1,7 +1,7 @@
-private ["_vehicle","_finished","_soundSource","_fuelCan","_emptyCan"];
-
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_vehicle","_finished","_soundSource","_fuelCan","_emptyCan"];
 
 player removeAction s_player_fillgen;
 s_player_fillgen = 1;
@@ -24,16 +24,16 @@ _fuelCan = nil;
 
 if (_finished) then {
 	// take fuel can and replace with empty
-	
+
 	if(!(_vehicle getVariable ["GeneratorFilled", false]) && !isNil "_fuelCan") then {
-	 
+
 		if(([player,_fuelCan] call BIS_fnc_invRemove) == 1) then {
-			_emptyCan = getText (configFile >> "CfgMagazines" >> _fuelCan >> "emptycan");
+			_emptyCan = getText (configFile >> "CfgMagazines" >> _fuelCan >> "containerEmpty");
 			player addMagazine _emptyCan;
 
 			// mark as once filled
 			_vehicle setVariable ["GeneratorFilled", true,true];
-		
+
 			// Start generator
 			_vehicle setVariable ["GeneratorRunning", true,true];
 
@@ -46,7 +46,7 @@ if (_finished) then {
 			localize "str_epoch_player_28" call dayz_rollingMessages;
 			["Working",0,[0,1,3,0]] call dayz_NutritionSystem;
 		};
-	} else {	
+	} else {
 		// Start generator
 		_vehicle setVariable ["GeneratorRunning", true,true];
 

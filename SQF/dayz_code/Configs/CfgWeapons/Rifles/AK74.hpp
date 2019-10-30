@@ -5,13 +5,14 @@ class AK74_Kobra_DZ : AK_74
 	model = "z\addons\dayz_communityweapons\ak74\ak74_kobra.p3d";
 	picture = "\z\addons\dayz_communityweapons\ak74\data\w_ak74_kobra_ca.paa";
 	displayName = $STR_DZ_WPN_AK74_KOBRA_NAME;
-	/* //Allow default A2 mags
+	
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
-		30Rnd_545x39_AKSD
+		30Rnd_545x39_AKSD, //Allow both SD and non-SD
+		75Rnd_545x39_RPK
 	};
-	*/
+	
 	class Attachments
 	{
 		Attachment_GP25 = "AK74_GL_Kobra_DZ";

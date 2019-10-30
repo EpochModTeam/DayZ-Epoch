@@ -23,10 +23,10 @@ class ItemActions
 	};
 };
 */
-private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_finished","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx"];
-
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_finished","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx","_configParent","_pPos"];
 
 // This is used to find correct recipe based what itemaction was click allows multiple recipes per item.
 _crafting = _this select 0;
@@ -53,14 +53,14 @@ if ("fire" in _needNear) then {
 	_isNear = {inflamed _x} count (_pPos nearObjects _distance);
 	if(_isNear == 0) then {
 		_abort = true;
-		_reason = "fire";
+		_reason = localize "STR_EPOCH_FIRE";
 	};
 };
 if ("workshop" in _needNear) then {
 	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
 	if(_isNear == 0) then {
 		_abort = true;
-		_reason = "workshop";
+		_reason = localize "STR_EPOCH_WORKBENCH_NEARBY";
 	};
 };
 if (_abort) exitWith {
@@ -102,10 +102,8 @@ if (_canDo) then {
 					_itemIn = _x select 0;
 					_countIn = _x select 1;
 
-					_qty = { (_x == _itemIn) || (!_selectedRecipeInputStrict && configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
-
+					_qty = { (_x == _itemIn) || (!_selectedRecipeInputStrict && configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)} count magazines player;
 					if (_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-
 				} forEach _selectedRecipeInput;
 			};
 
@@ -127,7 +125,7 @@ if (_canDo) then {
 						_removed = 0;
 						_itemIn = _x select 0;
 						_countIn = _x select 1;
-						// diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
+						//diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
 						_tobe_removed_total = _tobe_removed_total + _countIn;
 
 						// Preselect the item
@@ -135,7 +133,7 @@ if (_canDo) then {
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
 							if ((_x == _itemIn) || (!_selectedRecipeInputStrict && _configParent == _itemIn)) then {
 								// Get lowest waterlevel
-								if ((_x == "ItemWaterbottle") ||( _configParent == "ItemWaterbottle")) then {
+								if ((_x == "ItemWaterbottle") || (_configParent == "ItemWaterbottle")) then {
 									_waterLevel = getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz");
 									if (_waterLevel_lowest == 0 || _waterLevel < _waterLevel_lowest) then {
 										_waterLevel_lowest = _waterLevel;
@@ -157,9 +155,9 @@ if (_canDo) then {
 								_removed_total = _removed_total + _num_removed;
 								if (_num_removed >= 1) then {
 									//diag_log format["debug remove: %1 of: %2", _configParent, _x];
-									if (_x == "ItemWaterbottle" || _configParent == "ItemWaterbottle") then {
+									if ((_x == "ItemWaterbottle") || (_configParent == "ItemWaterbottle")) then {
 										_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
-										if (_x in ["ItemWaterbottle9ozBoiled","ItemWaterbottle8ozBoiled","ItemWaterbottle7ozBoiled","ItemWaterbottle6ozBoiled","ItemWaterbottle5ozBoiled","ItemWaterbottle4ozBoiled","ItemWaterbottle3ozBoiled","ItemWaterbottle2ozBoiled","ItemWaterBottleBoiled"]) then {
+										if (_x in ["ItemWaterbottle9ozBoiled","ItemWaterbottle8ozBoiled","ItemWaterbottle7ozBoiled","ItemWaterbottle6ozBoiled","ItemWaterbottle5ozBoiled","ItemWaterbottle4ozBoiled","ItemWaterbottle3ozBoiled","ItemWaterbottle2ozBoiled","ItemWaterBottleBoiled","ItemPlasticWaterbottle9ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterBottleBoiled"]) then {
 											_boiled = true;
 										};
 									};
@@ -202,14 +200,28 @@ if (_canDo) then {
 								_itemOut = _x select 0;
 								_countOut = _x select 1;
 								if (_itemOut == "ItemWaterbottleUnfilled") then {
-									if (_waterLevel > 0) then {
-										if (_boiled) then {
-											_itemOut = format["ItemWaterbottle%1ozBoiled",_waterLevel];
+									{
+										if (_x in ["ItemPlasticWaterbottle","ItemPlasticWaterbottleInfected","ItemPlasticWaterbottleSafe","ItemPlasticWaterBottleBoiled","ItemPlasticWaterbottle1oz","ItemPlasticWaterbottle2oz","ItemPlasticWaterbottle3oz","ItemPlasticWaterbottle4oz","ItemPlasticWaterbottle5oz","ItemPlasticWaterbottle6oz","ItemPlasticWaterbottle7oz","ItemPlasticWaterbottle8oz","ItemPlasticWaterbottle9oz","ItemPlasticWaterbottle1ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle9ozBoiled"]) then {
+											_itemOut = "ItemPlasticWaterbottleUnfilled";
+											if (_waterLevel > 0) then {
+												if (_boiled) then {
+													_itemOut = format["ItemPlasticWaterbottle%1ozBoiled",_waterLevel];
+												} else {
+													_itemOut = format["ItemPlasticWaterbottle%1oz",_waterLevel];
+												};
+											};
 										} else {
-											_itemOut = format["ItemWaterbottle%1oz",_waterLevel];
+											if (_waterLevel > 0) then {
+												if (_boiled) then {
+													_itemOut = format["ItemWaterbottle%1ozBoiled",_waterLevel];
+												} else {
+													_itemOut = format["ItemWaterbottle%1oz",_waterLevel];
+												};
+											};
 										};
-									};
+									} foreach _temp_removed_array;
 								};
+
 								// diag_log format["Checking for water level: %1", _waterLevel];
 								for "_x" from 1 to _countOut do {
 									player addMagazine _itemOut;

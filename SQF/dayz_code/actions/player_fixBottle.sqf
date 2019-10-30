@@ -1,11 +1,11 @@
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
+
 private ["_bottle","_tape","_fixedBottle","_finished"];
 
 _bottle = _this;
 _tape = "equip_duct_tape";
-_fixedBottle = "ItemWaterBottleUnfilled";
-
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
-dayz_actionInProgress = true;
+_fixedBottle = ["ItemPlasticWaterbottleUnfilled", "ItemWaterBottleUnfilled"] select (_bottle == "ItemWaterbottleDmg");
 
 call gear_ui_init;
 closeDialog 0;

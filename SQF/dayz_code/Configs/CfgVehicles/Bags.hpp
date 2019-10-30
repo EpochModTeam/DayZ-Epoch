@@ -62,7 +62,7 @@ class DZ_Czech_Vest_Pouch: Bag_Base_EP1
 	picture = "\ca\weapons_e\data\icons\backpack_ACR_small_CA.paa";
 	scope = 2;
 	transportmaxmagazines = 12;
-	transportmaxweapons = 0;
+	transportmaxweapons = 1;
 	class eventHandlers
 	{
 		init="[(_this select 0),'CfgVehicles','DZ_Czech_Vest_Pouch'] execVM '\z\addons\dayz_code\init\object_BackpackAction.sqf';";
