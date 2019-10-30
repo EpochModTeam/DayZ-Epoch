@@ -328,7 +328,7 @@ class AdvancedTrading
 			x = 0.46 * safezoneW + safezoneX;
 			y = 0.77 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
-			onButtonClick = "call Z_SellItems;";
+			onButtonClick = "closeDialog 0; call Z_SellItems;";
 		};
 		class ZSC_RscButtonMenu_AT27: ZSC_RscButtonMenu
 		{
@@ -338,7 +338,7 @@ class AdvancedTrading
 			y = 0.77 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			onload = "ctrlShow [_this,false]";
-			onButtonClick = "call Z_BuyItems;";
+			onButtonClick = "closeDialog 0; call Z_BuyItems;";
 		};
 		class ZSC_RscButtonMenu_AT28: ZSC_RscButtonMenu
 		{
