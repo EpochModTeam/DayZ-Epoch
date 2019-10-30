@@ -1144,7 +1144,7 @@ class FSM
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Initialize'];};" \n
                          "" \n
                          "//Medical" \n
-                         "dayz_medicalH = [] execVM ""\z\addons\dayz_code\medical\init_medical.sqf"";	//Medical Monitor Script (client only)" \n
+                         "//dayz_medicalH = [] execVM ""\z\addons\dayz_code\medical\init_medical.sqf"";	//Medical Monitor Script (client only)" \n
                          "[player] call fnc_usec_damageHandle;" \n
                          "" \n
                          "if (r_player_unconscious) then {" \n

@@ -7,7 +7,7 @@ sched_medical_slow = {  // 10 seconds
  	//Do not global send
 		player setVariable["USEC_BloodQty", r_player_blood, false];
 		player setVariable["medForceUpdate", true, false];
-	//Send only to server	
+	//Send only to server
 		PVDZ_serverStoreVar = [player, "USEC_BloodQty", r_player_blood];
 		publicVariableServer "PVDZ_serverStoreVar";
 	};
@@ -18,7 +18,9 @@ sched_medical_slow = {  // 10 seconds
 sched_medical_init = { [ []spawn{} ] };
 sched_medical = { // 1 second
 	HIDE_FSM_VARS
-	private "_unconHdlr";
+	
+	private ["_unconHdlr","_lowBlood"];
+
 	_unconHdlr = _this select 0;
 
 	if (r_player_blood == r_player_bloodTotal) then {
@@ -26,7 +28,7 @@ sched_medical = { // 1 second
 	};
 
 	//r_player_unconscious = getVariable ["NORRN_unconscious", true];
-	
+
 	if (r_player_blood <= 0) then {
 		[dayz_sourceBleeding,"find"] call player_death;
 	};
@@ -38,14 +40,29 @@ sched_medical = { // 1 second
 		};
 	};
 
-	if ((r_player_blood <= 3000) and !r_player_unconscious) then {
-		if (random 100 > 99) then {
+	if (!r_player_unconscious && {(r_player_blood/r_player_bloodTotal) < 0.35}) then {
+			r_player_lowblood = true;
+			playSound "heartbeat_1";
+			addCamShake [2, 0.5, 25];
+			if (r_player_lowblood) then {
+				if (!dayz_soundMuted) then {
+					// muted is 0.25, so this is always higher
+					0 fadeSound ((r_player_blood/r_player_bloodTotal) + 0.5);
+				};
+				"dynamicBlur" ppEffectEnable true;"dynamicBlur" ppEffectAdjust [random 4]; "dynamicBlur" ppEffectCommit 0.2;
+			};
+			_lowBlood =	player getVariable ["USEC_lowBlood", false];
+			if ((r_player_blood < r_player_bloodTotal) and {!_lowBlood}) then {
+				player setVariable["USEC_lowBlood",true,true];
+			};
+
+		if (r_player_blood <= 3000 && {random 100 > 99}) then {
 			[player, ((random 0.1) + 0.2)] call fnc_usec_damageUnconscious;
 		};
 	};
 
 	//Handle Unconscious player
-	if ((r_player_unconscious) and (!r_player_unconsciousInProgress) and (scriptDone _unconHdlr)) then {
+	if ((r_player_unconscious) and {!r_player_unconsciousInProgress} and {scriptDone _unconHdlr}) then {
 		//localize "CLIENT: Start Unconscious Function";
 		_unconHdlr = [] spawn fnc_usec_unconscious;
 	};
@@ -62,7 +79,7 @@ sched_medical = { // 1 second
 	[_unconHdlr]
 };
 
-sched_medical_effects_init = { 
+sched_medical_effects_init = {
 	private ["_hndCC", "_hndDB", "_hndRB"];
 
 	_hndCC = ppEffectCreate ["colorCorrections", 3];
@@ -72,17 +89,18 @@ sched_medical_effects_init = {
 	_hndRB = ppEffectCreate ["radialBlur", 1];
 	_hndRB ppEffectEnable true;
 	_hndRB ppEffectAdjust [0, 0, 0.5, 0.5];
-	_hndRB ppEffectCommit 0;	
-	
+	_hndRB ppEffectCommit 0;
+
 	[ _hndCC, _hndDB, _hndRB ]
 };
 
-sched_medical_effects = { 
+sched_medical_effects = {
 	// every 2 seconds:
 	//	change saturation, blur and vignetting according to blood level
 	//	Shivering if character temperature is near the minimum
-	
-	private ["_hndCC", "_hndDB", "_tmp1", "_tmp2", "_tmp3"];
+
+	private ["_hndCC", "_hndDB", "_tmp1", "_tmp2", "_tmp3","_hndRB"];
+
 	_hndCC = _this select 0;
 	_hndDB = _this select 1;
 	_hndRB = _this select 2;
@@ -114,7 +132,7 @@ sched_medical_effects = {
 	[_hndCC, _hndDB, _hndRB] ppEffectCommit 1.5;
 
 	//Add Shivering
-	if (dayz_temperatur <= (0.125 * (dayz_temperaturmax - dayz_temperaturmin) + dayz_temperaturmin) and ((vehicle player == player and speed player < 5) or (vehicle player != player))) then {
+	if (dayz_temperatur <= (0.125 * (dayz_temperaturmax - dayz_temperaturmin) + dayz_temperaturmin) and {(vehicle player == player and speed player < 5) or (vehicle player != player)}) then {
 		addCamShake [0.6 * (dayz_temperaturmin / dayz_temperatur), 2, 30];
 	};
 
@@ -125,15 +143,15 @@ sched_medical_effectsSlow = {
 	// every 10 seconds
 	HIDE_FSM_VARS
 
-	if (!r_player_unconscious && (r_player_infected or r_player_inpain)) then {
+	if (!r_player_unconscious && {r_player_infected or r_player_inpain}) then {
 		//Original pain shake was stronger [2, 1, 25]
 		//Low blood still uses strong shake in init_medical.sqf
 		addCamShake [1, 1, 20];
-		
+
 		if (!r_player_infected) then {
 			playSound "breath_1"; //In pain
 		} else {
-			if (1 > random 2 && (speed player < 5 or {vehicle player != player})) then {
+			if ((1 > random 2) && {speed player < 5 or {vehicle player != player}}) then {
 				[player,"cough",1,false] call dayz_zombieSpeak;
 			};
 		};
