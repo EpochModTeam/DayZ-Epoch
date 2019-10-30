@@ -20,10 +20,17 @@ class ItemJerrycan : ItemJerrycanEmpty
 	descriptionShort = $STR_ITEM_DESC_JERRYCAN;
 	
 	fuelQuantity = 20;
-	emptycan = "ItemJerrycanEmpty";
+	containerEmpty = "ItemJerrycanEmpty";
 	
 	//used for tent burning
 	fireIntensity = 6;
+	
+	class ItemActions {
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
 };
 
 class ItemFuelcanEmpty : ItemJerrycanEmpty
@@ -46,8 +53,15 @@ class ItemFuelcan : ItemFuelcanEmpty
 	descriptionShort = $STR_ITEM_DESC_FUELCAN;
 	
 	fuelQuantity = 5;
-	emptycan = "ItemFuelcanEmpty";
+	containerEmpty = "ItemFuelcanEmpty";
 	
 	//used for tent burning
 	fireIntensity = 4;
+	
+	class ItemActions {
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};
 };
