@@ -18,6 +18,8 @@ class ItemMatchboxEmpty : ItemMatchbox_base
 class ItemMatchbox : ItemMatchbox_base
 {
 	scope = public;	
+	model = "\dayz_equip\models\matchbox_gear.p3d"; // Some mods override this. We leave this here just to be sure.
+	picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
 	matches = -1;
 	qtyRemaining = "Item5Matchbox";
 	
