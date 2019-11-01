@@ -29,6 +29,10 @@ class ItemMatchbox : ItemMatchbox_base
 			script = "spawn player_makeFire;"; //Do not use player_build because we have no ghost preview model for Land_Fire_DZ yet
 			use[] = {"PartWoodPile"};
 		};
+		class Combine {
+			text = $STR_ANTIBIOTICS_COMBINE;
+			script = "spawn player_combineMatches;";
+		};
 	};
 };
 
