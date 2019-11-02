@@ -11,11 +11,11 @@ class equip_rope : CA_Magazine {
 		class Crafting
 		{
 			text = $STR_BLD_craft_equip_rope;//"String"
-			script = "spawn player_craftItem;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {}; 
-			requiretools[] = {""};
-			output[] = {{"equip_string","CfgMagazines",2}};
-			input[] = {{"equip_rope","CfgMagazines",1}};
+			requiretools[] = {"ItemKnife"};
+			output[] = {{"equip_string",2}};
+			input[] = {{"equip_rope",1}};
 		};
 	};
 };	

@@ -13,12 +13,21 @@ class ItemLog : CA_Magazine
 		class Crafting
 		{
 			text = $STR_BLD_craft_ItemLog;//"Wooden Plank"
-			script = "spawn player_craftItem;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {}; 
 			requiretools[] = {"ItemHatchet"};
-			output[] = {{"ItemPlank","CfgMagazines",2}};
-			input[] = {{"ItemLog","CfgMagazines",1}};
+			output[] = {{"ItemPlank",2}};
+			input[] = {{"ItemLog",1}};
 		};
+		class Crafting1
+		{
+			text = $STR_EQUIP_NAME_40;//"Wood Piles"
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {}; 
+			requiretools[] = {"ItemHatchet"};
+			output[] = {{"PartWoodPile",4}};
+			input[] = {{"ItemLog",1}};
+		};		
 	};
 };	
 
@@ -36,12 +45,12 @@ class ItemPlank : CA_Magazine
 	{
 		class Crafting
 		{
-			text = $STR_BLD_craft_ItemPlank;//"Wood Piles"
-			script = "spawn player_craftItem;";
+			text = $STR_EQUIP_NAME_40;//"Wood Piles"
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {}; 
 			requiretools[] = {"ItemHatchet"};
-			output[] = {{"PartWoodPile","CfgMagazines",2}};
-			input[] = {{"ItemPlank","CfgMagazines",1}};
+			output[] = {{"PartWoodPile",2}};
+			input[] = {{"ItemPlank",1}};
 		};
 	};
 };
