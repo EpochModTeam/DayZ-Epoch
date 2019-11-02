@@ -6118,7 +6118,7 @@
 		<Key ID="STR_BACKPACK_DESC_SURVACU">
 			<English>Survival ACU. &lt;br/&gt;Capacity: 22 items</English>
 			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
-			<Russian>Рюкзак на (22 слотов)</Russian>
+			<Russian>Рюкзак на (22 слота)</Russian>
 			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
 			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
 			<German>Mittlerer Kampfrucksack mit Woodland-Tarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
@@ -6152,7 +6152,7 @@
 		<Key ID="STR_BACKPACK_DESC_CZECH">
 			<English>Czech Backpack. &lt;br/&gt;Capacity: 40 items</English>
 			<French>Sac-à-dos tchèque. &lt;br/&gt;Taille: 40</French>
-			<Russian>Рюкзак на (40 слота)</Russian>
+			<Russian>Рюкзак на (40 слотов)</Russian>
 			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;40 litros</Spanish>
 			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 40 litrů</Czech>
 			<German>Großer tschechischer Trekkingrucksack. &lt;br/&gt;Volumen: 40 Liter</German>
@@ -6169,7 +6169,7 @@
 		<Key ID="STR_BACKPACK_DESC_COYOTE">
 			<English>Backpack (coyote). &lt;br/&gt;Capacity: 50 items</English>
 			<French>Sac-à-dos (coyote). &lt;br/&gt;Taille: 50</French>
-			<Russian>Рюкзак на (50 слота)</Russian>
+			<Russian>Рюкзак на (50 слотов)</Russian>
 			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
 			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 50 litrů</Czech>
 			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 50 Liter</German>
@@ -13364,7 +13364,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_LGB">
 			<English>Large Gunbag &lt;br/&gt;Capacity: 60 items</English>
 			<German>Große Waffentasche &lt;br/&gt;Volumen: 60 Liter</German>
-			<Russian>Большая оружейная сумка (60 слота)</Russian>
+			<Russian>Большая оружейная сумка (60 слотов)</Russian>
 			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 60 liter</Dutch>
 			<French>Grand Fourreau &lt;br/&gt;Taille: 60</French>
 		</Key>		
@@ -13378,7 +13378,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_GB">
 			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
 			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
-			<Russian>Оружейная сумка (35 слота)</Russian>
+			<Russian>Оружейная сумка (35 слотов)</Russian>
 			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
 			<French>Fourreau&lt;br/&gt;Taille: 35</French>		
 		</Key>		
@@ -13392,7 +13392,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_COMPACT">
 			<English>Compact Pack &lt;br/&gt;Capacity: 25 items</English>
 			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
-			<Russian>Компактный рюкзак (25 слота)</Russian>
+			<Russian>Компактный рюкзак (25 слотов)</Russian>
 			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
 			<French>Sac Compact &lt;br/&gt;Taille: 25</French>		
 		</Key>		
@@ -13406,7 +13406,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL">
 			<English>Terminal Pack &lt;br/&gt;Capacity: 15 items</English>
 			<German>Terminal Rucksack &lt;br/&gt;Volumen: 15 Liter</German>
-			<Russian>Вокзальный рюкзак (15 слота)</Russian>
+			<Russian>Вокзальный рюкзак (15 слотов)</Russian>
 			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 15 liter</Dutch>
 			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 15</French>		
 		</Key>		
