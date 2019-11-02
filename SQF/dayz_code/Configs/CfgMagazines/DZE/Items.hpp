@@ -77,7 +77,7 @@ class ItemJerryMixed: CA_Magazine {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox"};
+			requiretools[] = {"ItemToolbox","ChainSaw"};
 			output[] = {{"CSGAS",1},{"ItemJerryMixed4",1}};
 			input[] = {{"ItemJerryMixed",1}};
 		};
@@ -103,7 +103,7 @@ class ItemJerryMixed4: CA_Magazine {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox"};
+			requiretools[] = {"ItemToolbox","ChainSaw"};
 			output[] = {{"CSGAS",1},{"ItemJerryMixed3",1}};
 			input[] = {{"ItemJerryMixed4",1}};
 		};
@@ -129,7 +129,7 @@ class ItemJerryMixed3: CA_Magazine {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox"};
+			requiretools[] = {"ItemToolbox","ChainSaw"};
 			output[] = {{"CSGAS",1},{"ItemJerryMixed2",1}};
 			input[] = {{"ItemJerryMixed3",1}};
 		};
@@ -155,7 +155,7 @@ class ItemJerryMixed2: CA_Magazine {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox"};
+			requiretools[] = {"ItemToolbox","ChainSaw"};
 			output[] = {{"CSGAS",1},{"ItemJerryMixed1",1}};
 			input[] = {{"ItemJerryMixed2",1}};
 		};
@@ -181,7 +181,7 @@ class ItemJerryMixed1: CA_Magazine {
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox"};
+			requiretools[] = {"ItemToolbox","ChainSaw"};
 			output[] = {{"CSGAS",1},{"ItemJerrycanEmpty",1}};
 			input[] = {{"ItemJerryMixed1",1}};
 		};
