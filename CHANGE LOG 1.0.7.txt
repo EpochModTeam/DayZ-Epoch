@@ -32,5 +32,8 @@
 [UPDATED] Added night vision mode back to DMR_DZ and M4SPR_DZE after it was removed with the 2018-04-05 A2OA CorePatch (d6cf707) @ebayShopper
 [UPDATED] All M32 grenades using one inventroy slot now. (cc85067) @AirwavesMan
 [UPDATED] The Czech Vest Pouch can carry one weapon now. This was changed to be more intuitive and to avoid disappearing weapons. (f7ea9cb) @AirwavesMan
+[UPDATED] Old/unused variables removed from variables.sqf. Entire file reorganized. (4accdee) @worldwidesorrow
+[UPDATED] Functions fnc_usec_damageHandler, dayz_inflame_showMenu, dayz_inflame_showMenu_other, DZ_KeyDown_EH, dayz_EjectPlayer compiled on client only - compiles.sqf. (7613e3a) @worldwidesorrow
+[UPDATED] "PVCDZ_OpenTarget_Reset" moved to client only - publicEH.sqf. (58a98b7) @worldwidesorrow
 
 [INFO] Synced with DayZMod upstream up to commit fe063a8
