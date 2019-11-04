@@ -291,7 +291,7 @@ if (!isDedicated) then {
 		s_player_toggleVector = -1;
 		vectorActions = -1;
 		s_player_manageDoor = -1;
-		s_player_hide_body;
+		s_player_hide_body = -1;
 	};
 	call dayz_resetSelfActions;
 	
