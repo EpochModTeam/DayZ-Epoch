@@ -86,8 +86,8 @@ class PartWoodPile : CA_Magazine
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {"ItemKnife"};
-			output[] = {{"1Rnd_Arrow_Wood",3}};
-			input[] = {{"PartWoodPile",1},{"ItemTrashRazor",1}};
+			output[] = {{"1Rnd_Arrow_Wood",5}};
+			input[] = {{"PartWoodPile",1},{"equip_feathers",2}};
 
 		};
 		class Crafting2
