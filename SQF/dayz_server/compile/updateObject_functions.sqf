@@ -5,7 +5,7 @@ server_obj_pos = {
 
 	_object = _this select 0;
 	_objectID = _this select 1;
-	_class = typeOf _object;
+	_class = _this select 2;
 
 	_position = getPosATL _object;
 	//_worldspace = [round (direction _object),_position];
@@ -26,27 +26,21 @@ server_obj_inv = {
 	_object = _this select 0;
 	_objectID = _this select 1;
 	_objectUID = _this select 2;
-	_class = typeOf _object;
-
-	if (_class isKindOf "TrapItems") then {
-		_inventory = [["armed",_object getVariable ["armed",false]]];
-	} else {
-		_isNormal = true;
-
-		if (DZE_permanentPlot && {_class == "Plastic_Pole_EP1_DZ"}) then {
-			_isNormal = false;
-			_inventory = _object getVariable ["plotfriends", []]; //We're replacing the inventory with UIDs for this item
+	_class = _this select 3;
+	
+	_inventory = call {
+		if (DZE_permanentPlot && {_class == "Plastic_Pole_EP1_DZ"}) exitwith {
+			_object getVariable ["plotfriends", []] //We're replacing the inventory with UIDs for this item
+		};	
+		if (DZE_doorManagement && {_class in DZE_DoorsLocked}) exitwith {
+			_object getVariable ["doorfriends", []] //We're replacing the inventory with UIDs for this item
+		};		
+		if (_class isKindOf "TrapItems") exitwith {
+			[["armed",_object getVariable ["armed",false]]]
 		};
-
-		if (DZE_doorManagement && {_class in DZE_DoorsLocked}) then {
-			_isNormal = false;
-			_inventory = _object getVariable ["doorfriends", []]; //We're replacing the inventory with UIDs for this item
-		};
-
-		if (_isNormal) then {
-			_inventory = [getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object];
-		};
+		[getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object]
 	};
+	
 
 	_previous = str(_object getVariable["lastInventory",[]]);
 	if (str _inventory != _previous) then {
@@ -137,8 +131,8 @@ server_obj_killed = {
 	_objectUID = _this select 2;
 	_playerUID = _this select 3;
 	_clientKey = _this select 4;
-
-	_class = typeOf _object;
+	_class = _this select 5;
+	
 	_index = dayz_serverPUIDArray find _playerUID;
 
 	_exitReason = call {
@@ -150,10 +144,10 @@ server_obj_killed = {
 		if ((dayz_serverClientKeys select _index) select 1 != _clientKey) exitwith {
 			format["Server_UpdateObject error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED. PV ARRAY: %1",_this]
 		};
-		if (alive _object && {!(_class isKindOf "TentStorage_base" or _class isKindOf "IC_Tent")}) exitwith {
+		if (alive _object or {!(_class isKindOf "TentStorage_base" or _class isKindOf "IC_Tent")}) exitwith {
 			format["Server_UpdateObject error: object kill request on living object. PV ARRAY: %1",_this]
 		};
-		if (1==1) exitwith {""};
+		"";
 	};
 
 	if (_exitReason != "") exitWith {diag_log _exitReason};

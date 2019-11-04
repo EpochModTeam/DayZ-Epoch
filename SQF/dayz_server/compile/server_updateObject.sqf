@@ -4,6 +4,8 @@ if (isNil "sm_done") exitWith {};
 private ["_class","_objectID","_objectUID","_isNotOk","_object","_type","_forced","_totalDmg"];
 
 _object = _this select 0;
+if ((isNil "_object") || {isNull _object}) exitWith {diag_log "server_updateObject.sqf _object null or nil, could not update object"};
+
 _type = _this select 1;
 _forced = if (count _this > 2) then {_this select 2} else {false};
 _totalDmg = if (count _this > 3) then {_this select 3} else {false};
@@ -11,7 +13,6 @@ _isNotOk = false;
 _objectID = "0";
 _objectUID = "0";
 
-if ((isNil "_object") || {isNull _object}) exitWith {diag_log "server_updateObject.sqf _object null or nil, could not update object"};
 _objectID = _object getVariable ["ObjectID","0"];
 _objectUID = _object getVariable ["ObjectUID","0"];
 _class = typeOf _object;
@@ -48,15 +49,15 @@ _object setVariable ["lastUpdate",diag_ticktime,true];
 
 call {
 	if (_type == "all") exitwith {
-		[_object,_objectID] call server_obj_pos;
-		[_object,_objectID,_objectUID] call server_obj_inv;
+		[_object,_objectID,_class] call server_obj_pos;
+		[_object,_objectID,_objectUID,_class] call server_obj_inv;
 		[_object,_objectID,_objectUID,_forced,_totalDmg] call server_obj_dam;
 	};
 	if (_type == "position") exitwith {
-		[_object,_objectID] call server_obj_pos;
+		[_object,_objectID,_class] call server_obj_pos;
 	};
 	if (_type == "gear") exitwith {
-		[_object,_objectID,_objectUID] call server_obj_inv;
+		[_object,_objectID,_objectUID,_class] call server_obj_inv;
 	};
 	if (_type == "damage" || {_type == "repair"}) exitwith {
 		[_object,_objectID,_objectUID,_forced,_totalDmg] call server_obj_dam;
@@ -70,10 +71,11 @@ call {
 
 		_playerUID = _this select 4;
 		_clientKey = _this select 5;
-		[_object,_objectID,_objectUID,_playerUID,_clientKey] call server_obj_killed;
+		[_object,_objectID,_objectUID,_playerUID,_clientKey,_class] call server_obj_killed;
 	};
 	if (_type == "coins") exitwith {
 		_object setVariable ["lastInventory",["forceUpdate"]];
 		[_object,_objectID,_objectUID] call server_obj_inv;
 	};
+	"";
 };
