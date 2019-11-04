@@ -6,8 +6,8 @@ class ItemPlasticWaterbottleUnfilled : CA_Magazine
 	
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottleEmpty.paa";
-	displayName = $STR_EQUIP_NAME_13;
-	descriptionShort = $STR_EQUIP_DESC_13;
+	displayName = $STR_EQUIP_NAME_WBPET_01;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_01;
 	
 	containerWater = "ItemPlasticWaterbottle";
 	containerWaterSafe = "ItemPlasticWaterbottleSafe";
@@ -30,9 +30,9 @@ class ItemPlasticWaterbottleDmg : CA_Magazine
 	type = WeaponSlotItem;
 	
 	model = "z\addons\dayz_communityassets\models\waterbottle_damaged.p3d";
-	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottleEmpty.paa";
-	displayName = $STR_ITEMWATERBOTTLEDMG_CODE_NAME;
-	descriptionShort = $STR_ITEMWATERBOTTLEDMG_CODE_DESC;
+	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottleDamaged.paa";
+	displayName = $STR_EQUIP_NAME_WBPET_02;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_02;
 	
 	class ItemActions
 	{
@@ -48,7 +48,8 @@ class ItemPlasticWaterBottle : ItemWaterBottle {
 	scope = public;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle10oz.paa";
-	
+	displayName = $STR_EQUIP_NAME_WBPET_03;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_03;	
 	Nutrition[] = {0,0,1000,0};	
 	infectionChance = 0.3;
 	
@@ -61,7 +62,8 @@ class ItemPlasticWaterBottleInfected : ItemWaterBottle
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle10oz.paa";
 	infectionChance = 1;
-	
+	displayName = $STR_EQUIP_NAME_WBPET_03;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_03;	
 	consumeOutput = "ItemPlasticWaterbottleUnfilled";	
 	containerEmpty = "ItemPlasticWaterbottleUnfilled";
 };
@@ -71,7 +73,8 @@ class ItemPlasticWaterBottleSafe : ItemWaterBottle
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle10oz.paa";
 	infectionChance = 0;
-	
+	displayName = $STR_EQUIP_NAME_WBPET_03;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_03;	
 	consumeOutput = "ItemPlasticWaterbottleUnfilled";	
 	containerEmpty = "ItemPlasticWaterbottleUnfilled";
 };
@@ -80,8 +83,8 @@ class ItemPlasticWaterBottleBoiled : ItemWaterBottle
 {
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle10oz.paa";
-	displayName = $STR_ITEMWATERBOTTLEBOILED_CODE_NAME;
-	descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
+	displayName = $STR_EQUIP_NAME_WBPET_04;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_04;
 	
 	infectionChance = 0;
 	consumeOutput = "ItemPlasticWaterbottleUnfilled";	
@@ -92,8 +95,8 @@ class ItemPlasticWaterBottleHerbal : ItemWaterBottle
 {
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle10oz.paa";
-	displayName = $STR_ITEM_NAME_HerbalDrink;
-	descriptionShort = $STR_ITEM_DESC_HerbalDrink;
+	displayName = $STR_EQUIP_NAME_WBPET_05;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_05;
 	
 	infectionChance = -0.5;
 	consumeOutput = "ItemPlasticWaterbottleUnfilled";	
@@ -101,8 +104,8 @@ class ItemPlasticWaterBottleHerbal : ItemWaterBottle
 };
 
 class ItemPlasticWaterbottle1oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE1OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE1OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE1OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE1OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle1oz.paa";
 	wateroz = 1;
@@ -131,8 +134,8 @@ class ItemPlasticWaterbottle1oz : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle2oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE2OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE2OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE2OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE2OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle2oz.paa";
 	wateroz = 2;
@@ -162,8 +165,8 @@ class ItemPlasticWaterbottle2oz : ItemWaterBottle {
 
 };
 class ItemPlasticWaterbottle3oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE3OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE3OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE3OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE3OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle3oz.paa";
 	wateroz = 3;
@@ -193,8 +196,8 @@ class ItemPlasticWaterbottle3oz : ItemWaterBottle {
 
 };
 class ItemPlasticWaterbottle4oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE4OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE4OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE4OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE4OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle4oz.paa";
 	wateroz = 4;
@@ -224,8 +227,8 @@ class ItemPlasticWaterbottle4oz : ItemWaterBottle {
 
 };
 class ItemPlasticWaterbottle5oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE5OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE5OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE5OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE5OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle5oz.paa";
 	wateroz = 5;
@@ -255,8 +258,8 @@ class ItemPlasticWaterbottle5oz : ItemWaterBottle {
 
 };
 class ItemPlasticWaterbottle6oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE6OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE6OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE6OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE6OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle6oz.paa";
 	wateroz = 6;
@@ -286,8 +289,8 @@ class ItemPlasticWaterbottle6oz : ItemWaterBottle {
 
 };
 class ItemPlasticWaterbottle7oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE7OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE7OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE7OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE7OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle7oz.paa";
 	wateroz = 7;
@@ -316,8 +319,8 @@ class ItemPlasticWaterbottle7oz : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle8oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE8OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE8OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE8OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE8OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle8oz.paa";
 	wateroz = 8;
@@ -347,8 +350,8 @@ class ItemPlasticWaterbottle8oz : ItemWaterBottle {
 
 };
 class ItemPlasticWaterbottle9oz : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE9OZ;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE9OZ_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE9OZ;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE9OZ_DESC;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle9oz.paa";
 	wateroz = 9;
@@ -378,8 +381,8 @@ class ItemPlasticWaterbottle9oz : ItemWaterBottle {
 };
 //inherit from ItemWaterBottle because that's how the crafting script checks required input
 class ItemPlasticWaterbottle1ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE1OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE1OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE1OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE1OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle1oz.paa";
@@ -408,8 +411,8 @@ class ItemPlasticWaterbottle1ozBoiled : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle2ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE2OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE2OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE2OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE2OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle2oz.paa";
@@ -438,8 +441,8 @@ class ItemPlasticWaterbottle2ozBoiled : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle3ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE3OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE3OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE3OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE3OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle3oz.paa";
@@ -468,8 +471,8 @@ class ItemPlasticWaterbottle3ozBoiled : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle4ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE4OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE4OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE4OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE4OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle4oz.paa";
@@ -498,8 +501,8 @@ class ItemPlasticWaterbottle4ozBoiled : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle5ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE5OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE5OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE5OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE5OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle5oz.paa";
@@ -528,8 +531,8 @@ class ItemPlasticWaterbottle5ozBoiled : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle6ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE6OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE6OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE6OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE6OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle6oz.paa";
@@ -558,8 +561,8 @@ class ItemPlasticWaterbottle6ozBoiled : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle7ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE7OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE7OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE7OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE7OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle7oz.paa";
@@ -588,8 +591,8 @@ class ItemPlasticWaterbottle7ozBoiled : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle8ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE8OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE8OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE8OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE8OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle8oz.paa";
@@ -618,8 +621,8 @@ class ItemPlasticWaterbottle8ozBoiled : ItemWaterBottle {
 	};
 };
 class ItemPlasticWaterbottle9ozBoiled : ItemWaterBottle {
-	displayName = $STR_EPOCH_WATERBOTTLE9OZBOILED;
-	descriptionShort = $STR_EPOCH_WATERBOTTLE9OZBOILED_DESC;
+	displayName = $STR_EPOCH_PET_WATERBOTTLE9OZBOILED;
+	descriptionShort = $STR_EPOCH_PET_WATERBOTTLE9OZBOILED_DESC;
 	infectionChance = 0;
 	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle9oz.paa";
