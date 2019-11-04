@@ -144,7 +144,7 @@ server_obj_killed = {
 		if ((dayz_serverClientKeys select _index) select 1 != _clientKey) exitwith {
 			format["Server_UpdateObject error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED. PV ARRAY: %1",_this]
 		};
-		if (alive _object or {!(_class isKindOf "TentStorage_base" or _class isKindOf "IC_Tent")}) exitwith {
+		if (alive _object and {!(_class isKindOf "TentStorage_base" or _class isKindOf "IC_Tent")}) exitwith {
 			format["Server_UpdateObject error: object kill request on living object. PV ARRAY: %1",_this]
 		};
 		"";
