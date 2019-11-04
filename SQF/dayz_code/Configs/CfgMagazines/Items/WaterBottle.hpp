@@ -33,13 +33,17 @@ class ItemWaterBottleDmg : CA_Magazine //We don't have a damaged canteen image/m
 	picture = "\dayz_equip\textures\equip_waterbottle_empty_ca.paa";
 	displayName = $STR_ITEMWATERBOTTLEDMG_CODE_NAME;
 	descriptionShort = $STR_ITEMWATERBOTTLEDMG_CODE_DESC;
+	sfx = "bandage";
 	
 	class ItemActions
 	{
-		class Repair
-		{
+		class Crafting {
 			text = $STR_ACTIONS_FIX_W;
-			script = "spawn player_fixBottle;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemWaterbottleUnfilled",1}};
+			input[] = {{"ItemWaterBottleDmg",1},{"equip_duct_tape",1}};
 		};
 	};
 };

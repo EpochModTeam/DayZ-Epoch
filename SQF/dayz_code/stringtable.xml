@@ -1311,22 +1311,6 @@
 			<French>Vous avez bu quelque chose.</French>
 			<German>Du hast etwas getrunken.</German>
 		</Key>
-		<Key ID="str_fix_water_bottle">
-			<English>You have successfully fixed a water bottle!</English>
-			<Russian>Вы успешно починили бутылку с водой!</Russian>
-			<Spanish>Usted ha resuelto con éxito una botella de agua!</Spanish>
-			<Czech>Úspěšně jste spravili láhev na vodu!</Czech>
-			<French>Vous avez bien réparé la bouteille d&apos;eau!</French>
-			<German>Du hast die Wasserflasche erfolgreich repariert!</German>
-		</Key>
-		<Key ID="str_fix_water_bottle_fail">
-			<English>You think you need Duct Tape to fix the bottle.</English>
-			<Russian>Похоже, нужен скотч, чтобы починить бутылку.</Russian>
-			<Spanish>Usted cree que necesita cinta para conductos para fijar la botella.</Spanish>
-			<Czech>Ke spravení láhve bude zřejmě třeba lepící páska.</Czech>
-			<French>Vous pensez que vous avez besoin de ruban adhésif pour réparer la bouteille.</French>
-			<German>Du könntest Klebeband gebrauchen, um die Flasche zu reparieren.</German>
-		</Key>
 		<Key ID="STR_TEAR_CLOTHES">
 			<English>Tear Clothes</English>
 			<German>Kleidung zerreißen</German>

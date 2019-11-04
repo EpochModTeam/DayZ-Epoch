@@ -33,13 +33,17 @@ class ItemPlasticWaterbottleDmg : CA_Magazine
 	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottleDamaged.paa";
 	displayName = $STR_EQUIP_NAME_WBPET_02;
 	descriptionShort = $STR_EQUIP_DESC_WBPET_02;
+	sfx = "bandage";
 	
 	class ItemActions
 	{
-		class Repair
-		{
-			text = $STR_ACTIONS_FIX_W;
-			script = "spawn player_fixBottle;";
+		class Crafting {
+			text = $STR_ACTIONS_FIX_W;			
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemPlasticWaterbottleUnfilled",1}};
+			input[] = {{"ItemPlasticWaterbottleDmg",1},{"equip_duct_tape",1}};
 		};
 	};
 };
