@@ -20,6 +20,7 @@ class Swarm_Base : Citizen1 {
 	damageScale = 200;
 	sepsisChance = 10;
 	forcedSpeed = 6;
+	canCarryBackPack = 1;
 
 	class Eventhandlers {
 		init = "_this call zombie_initialize;";

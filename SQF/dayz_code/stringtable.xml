@@ -1311,22 +1311,6 @@
 			<French>Vous avez bu quelque chose.</French>
 			<German>Du hast etwas getrunken.</German>
 		</Key>
-		<Key ID="str_fix_water_bottle">
-			<English>You have successfully fixed a water bottle!</English>
-			<Russian>Вы успешно починили бутылку с водой!</Russian>
-			<Spanish>Usted ha resuelto con éxito una botella de agua!</Spanish>
-			<Czech>Úspěšně jste spravili láhev na vodu!</Czech>
-			<French>Vous avez bien réparé la bouteille d&apos;eau!</French>
-			<German>Du hast die Wasserflasche erfolgreich repariert!</German>
-		</Key>
-		<Key ID="str_fix_water_bottle_fail">
-			<English>You think you need Duct Tape to fix the bottle.</English>
-			<Russian>Похоже, нужен скотч, чтобы починить бутылку.</Russian>
-			<Spanish>Usted cree que necesita cinta para conductos para fijar la botella.</Spanish>
-			<Czech>Ke spravení láhve bude zřejmě třeba lepící páska.</Czech>
-			<French>Vous pensez que vous avez besoin de ruban adhésif pour réparer la bouteille.</French>
-			<German>Du könntest Klebeband gebrauchen, um die Flasche zu reparieren.</German>
-		</Key>
 		<Key ID="STR_TEAR_CLOTHES">
 			<English>Tear Clothes</English>
 			<German>Kleidung zerreißen</German>
@@ -3537,7 +3521,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_12">
 			<English>A bottle of water that has been filled and can be consumed.</English>
-			<German>Eine Flasche, gefüllt mit Trinkwasser.</German>
+			<German>Eine Flasche gefüllt mit Trinkwasser.</German>
 			<Russian>Наполненная водой пластиковая бутылка. Вода сомнительного качества.</Russian>
 			<Spanish>Una botella de agua llena que puede consumirse.</Spanish>
 			<French>Bouteille (pleine)</French>
@@ -3545,7 +3529,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_13">
 			<English>Water Bottle (Empty)</English>
-			<German>Leere Wasserflasche</German>
+			<German>Wasserflasche (Leer)</German>
 			<Russian>Бутылка (пустая)</Russian>
 			<Spanish>Cantimplora (Vacía)</Spanish>
 			<French>Bouteille (vide)</French>
@@ -3557,7 +3541,7 @@
 			<German>Ausleeren</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_13">
-			<English>A bottle of water that is Empty. It might be useful to fill it with water again.</English>
+			<English>A bottle of water that is empty. It might be useful to fill it with water again.</English>
 			<German>Eine leere Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
 			<Russian>Пустая бутылка, которую можно наполнить водой.</Russian>
 			<Spanish>Una botella de agua vacía. Puede ser útil si se la llena con agua de nuevo.</Spanish>
@@ -5027,39 +5011,9 @@
 			<French>Un Bar cuit (valeur:1400).</French>
 			<German>Ein gebratener Wolfsbarsch, welcher reich an Eiweiß und Omega-3-Fettsäuren ist.</German>
 		</Key>
-		<Key ID="STR_ITEM_CANTEEN_NAME">
-			<English>Canteen</English>
-			<Russian>Котелок</Russian>
-			<German>Feldflasche</German>
-		</Key>
-		<Key ID="STR_ITEM_CANTEEN_DESC">
-			<English>A sturdy military canteen used to hold liquids for consumption.</English>
-			<Russian>Армейский котелок для хранения жидкостей и еды.</Russian>
-			<German>Eine stabile Feldflasche, um Wasser zu transportieren.</German>
-		</Key>
-		<Key ID="STR_ITEM_CANTEEN_EMPTY">
-			<English>Empty</English>
-			<Russian>Пустой</Russian>
-			<German>Ausleeren</German>
-		</Key>
-		<Key ID="STR_ITEM_CANTEEN_EMPTY_NAME">
-			<English>Canteen (empty)</English>
-			<Russian>Котелок (Пустой)</Russian>
-			<German>Feldflasche (leer)</German>
-		</Key>
-		<Key ID="STR_ITEM_CANTEEN_BOILED_NAME">
-			<English>Canteen (boiled)</English>
-			<Russian>Котелок (Прокипяченый)</Russian>
-			<German>Feldflasche (abgekocht)</German>
-		</Key>
-		<Key ID="STR_ITEM_CANTEEN_HERBAL_NAME">
-			<English>Canteen (herbal drink)</English>
-			<Russian>Котелок (Травяной напиток)</Russian>
-			<German>Feldflasche (Kräutertrunk)</German>
-		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEBOILED_CODE_NAME">
 			<English>Water Bottle (Boiled)</English>
-			<German>Wasserflasche (abgekocht)</German>
+			<German>Wasserflasche (Abgekocht)</German>
 			<Russian>Бутылка (чистая вода)</Russian>
 			<Spanish>Cantimplora con Agua Hervida</Spanish>
 			<French>Bouteille (Eau bouillie)</French>
@@ -5075,7 +5029,7 @@
 		</Key>
 		<Key ID="STR_ITEMWATERBOTTLEDMG_CODE_NAME">
 			<English>Water Bottle (Broken)</English>
-			<German>Wasserflasche (undicht)</German>
+			<German>Wasserflasche (Undicht)</German>
 			<Russian>Бутылка (испорчена)</Russian>
 			<Czech>Láhev na vodu (děravá)</Czech>
 		</Key>
@@ -6048,12 +6002,12 @@
 			<Dutch>Patrouillerugzak (coyote)</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_PATROL">
-			<English>Patrol Pack (coyote)</English>
-			<French>Sac de patrouille (coyote). &lt;br/&gt;Taille: 8</French>
-			<Russian>Рюкзак на (8 слотов)</Russian>
-			<Spanish>Mochila de patrullaje de tamaño pequeño.</Spanish>
-			<Czech>Malý batůžek na kratší výlety.</Czech>
-			<German>Einfacher Trekkingrucksack von "Coyote". Volumen: 8 Liter.</German>
+			<English>Patrol Pack (coyote). &lt;br/&gt;Capacity: 10 items</English>
+			<French>Sac de patrouille (coyote). &lt;br/&gt;Taille: 10</French>
+			<Russian>Рюкзак на (10 слотов)</Russian>
+			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;10 litros</Spanish>
+			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 10 litrů</Czech>
+			<German>Einfacher Trekkingrucksack von "Coyote". &lt;br/&gt;Volumen: 10 Liter</German>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_ACU">
 			<English>Assault Pack (ACU)</English>
@@ -6065,12 +6019,12 @@
 			<Dutch>Aanvalsrugzak (ACU)</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_ACU">
-			<English>Assault Pack (ACU)</English>
+			<English>Assault Pack (ACU). &lt;br/&gt;Capacity: 12 items</English>
 			<French>Sac d&apos;assault (ACU). &lt;br/&gt;Taille: 12</French>
 			<Russian>Рюкзак на (12 слотов)</Russian>
-			<Spanish>Mochila de asalto de tamaño intermedio.</Spanish>
-			<Czech>Klasický batoh americké armády.</Czech>
-			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. Volumen: 12 Liter.</German>
+			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;12 litros</Spanish>
+			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 12 litrů</Czech>
+			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 12 Liter</German>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_VEST">
 			<English>Czech Vest Pouch</English>
@@ -6082,12 +6036,12 @@
 			<Dutch>Tsjechische Borstzak</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_VEST">
-			<English>Czech Vest Pouch</English>
+			<English>Czech Vest Pouch. &lt;br/&gt;Capacity: 12 items</English>
 			<French>Sac tchèque. &lt;br/&gt;Taille: 12</French>
 			<Russian>Рюкзак на (12 слотов)</Russian>
-			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad.</Spanish>
-			<Czech>Česká vesta, která unese jen pár věcí.</Czech>
-			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. Volumen: 12 Liter.</German>
+			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;12 litros</Spanish>
+			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 12 litrů</Czech>
+			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 12 Liter</German>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_ALICE">
 			<English>Alice pack</English>
@@ -6099,12 +6053,12 @@
 			<Dutch>ALICE Rugzak</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_ALICE">
-			<English>Alice pack</English>
-			<French>Sac Alice. &lt;br/&gt;Taille: 16</French>
-			<Russian>Рюкзак на (16 слотов)</Russian>
-			<Spanish>Mochila Alice de tamaño medio.</Spanish>
-			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben.</Czech>
-			<German>Mittlerer Trekkingrucksack von "Alice". Volumen: 16 Liter</German>
+			<English>Alice pack. &lt;br/&gt;Capacity: 20 items</English>
+			<French>Sac Alice. &lt;br/&gt;Taille: 20</French>
+			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;20 litros</Spanish>
+			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 20 litrů</Czech>
+			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 20 Liter</German>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_SURVACU">
 			<English>Survival ACU</English>
@@ -6116,12 +6070,12 @@
 			<Dutch>Overlevings ACU</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_SURVACU">
-			<English>Survival ACU</English>
-			<French>ACU de survie&lt;br/&gt;Taille: 16</French>
-			<Russian>Рюкзак на (16 слотов)</Russian>
-			<Spanish>Mochila de supervivencia de tamaño medio.</Spanish>
-			<Czech>Větší batoh z obchodu Přežiju s.r.o.</Czech>
-			<German>Mittlerer Kampfrucksack mit Woodland-Tarnschema. Volumen: 16 Liter.</German>
+			<English>Survival ACU. &lt;br/&gt;Capacity: 22 items</English>
+			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
+			<Russian>Рюкзак на (22 слота)</Russian>
+			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
+			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
+			<German>Mittlerer Kampfrucksack mit Woodland-Tarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_BRITISH">
 			<English>British Assault Pack</English>
@@ -6133,12 +6087,12 @@
 			<Dutch>Britse Aanvalsrugzak</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_BRITISH">
-			<English>British Assault Pack</English>
-			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 18</French>
-			<Russian>Рюкзак на (18 слотов)</Russian>
-			<Spanish>Mochila de asalto británica de tamaño medio.</Spanish>
-			<Czech>Moderní a stylový batoh britské armády.</Czech>
-			<German>Großer Kampfrucksack der britischen Streitkräfte. Volumen: 18 Liter.</German>
+			<English>British Assault Pack. &lt;br/&gt;Capacity: 30 items</English>
+			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 30</French>
+			<Russian>Рюкзак на (30 слотов)</Russian>
+			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;30 litros</Spanish>
+			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 30 litrů</Czech>
+			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 30 Liter</German>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_CZECH">
 			<English>Czech Backpack</English>
@@ -6150,12 +6104,12 @@
 			<Dutch>Tsjechische Rugzak</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_CZECH">
-			<English>Czech Backpack</English>
-			<French>Sac-à-dos tchèque. &lt;br/&gt;Taille: 24</French>
-			<Russian>Рюкзак на (24 слота)</Russian>
-			<Spanish>Mochila checa de gran tamaño y difícil de ocultar.</Spanish>
-			<Czech>Vojenská krosna pro nošení nejen českých věcí.</Czech>
-			<German>Großer tschechischer Trekkingrucksack. Volumen: 24 Liter.</German>
+			<English>Czech Backpack. &lt;br/&gt;Capacity: 40 items</English>
+			<French>Sac-à-dos tchèque. &lt;br/&gt;Taille: 40</French>
+			<Russian>Рюкзак на (40 слотов)</Russian>
+			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;40 litros</Spanish>
+			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 40 litrů</Czech>
+			<German>Großer tschechischer Trekkingrucksack. &lt;br/&gt;Volumen: 40 Liter</German>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_COYOTE">
 			<English>Backpack (coyote)</English>
@@ -6167,12 +6121,12 @@
 			<Dutch>Rugzak (Coyote)</Dutch>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_COYOTE">
-			<English>Backpack (coyote)</English>
-			<French>Sac-à-dos (coyote). &lt;br/&gt;Taille: 24</French>
-			<Russian>Рюкзак на (24 слота)</Russian>
-			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar.</Spanish>
-			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně.</Czech>
-			<German>Großer Kampfrucksack von "Coyote". Volumen: 24 Liter.</German>
+			<English>Backpack (coyote). &lt;br/&gt;Capacity: 50 items</English>
+			<French>Sac-à-dos (coyote). &lt;br/&gt;Taille: 50</French>
+			<Russian>Рюкзак на (50 слотов)</Russian>
+			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
+			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 50 litrů</Czech>
+			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 50 Liter</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_WIPES">
 			<English>Wipes</English>
@@ -6508,7 +6462,7 @@
 			<Czech>Při stavbě %1 došlo k chybě.</Czech>
 		</Key>
 		<Key ID="str_fireplace_02">
-			<English>You cannot make a fireplace here. The area must be flat, and free of other objects</English>
+			<English>You cannot make a fireplace here. The area must be flat, and free of other objects.</English>
 			<German>Du kannst hier kein Feuer machen. Der Untergrund muss flach und frei von Hindernissen sein.</German>
 			<Russian>Костер нужно разводить на ровной поверхности, без объектов поблизости.</Russian>
 			<Spanish>No puedes hacer una fogata aquí. El área debe ser plana y libre de otros objetos.</Spanish>
@@ -6516,8 +6470,8 @@
 			<Czech>Ohniště zde nelze postavit. Plocha musí být rovná a dostatečně veliká.</Czech>
 		</Key>
 		<Key ID="str_success_gutted_animal">
-			<English>%1 has been gutted, %2 meat steaks now on the carcass</English>
-			<German>Du hast das Tier (%1) ausgenommen. Vom verbleibenden Fleisch kannst du %2 Stücke abschneiden.</German>
+			<English>%1 has been gutted, %2 meat steaks now on the carcass.</English>
+			<German>Du hast %1 ausgenommen und kannst nun %2 Stück(e) Fleisch aus dem Kadavar nehmen.</German>
 			<Russian>Вы разделали: %1. Доступно кусков мяса: %2</Russian>
 			<Spanish>Un %1 fue achurado, dejando %2 trozos de carne en el cuerpo.</Spanish>
 			<French>%1 a été dépecé, %2 morceaux de viande sont maintenant dans la carcasse.</French>
@@ -13361,6 +13315,13 @@
 			<Dutch>Grote Wapenzak</Dutch>
 			<French>Grand Fourreau</French>
 		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_LGB">
+			<English>Large Gunbag &lt;br/&gt;Capacity: 60 items</English>
+			<German>Große Waffentasche &lt;br/&gt;Volumen: 60 Liter</German>
+			<Russian>Большая оружейная сумка (60 слотов)</Russian>
+			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 60 liter</Dutch>
+			<French>Grand Fourreau &lt;br/&gt;Taille: 60</French>
+		</Key>		
 		<Key ID="STR_EPOCH_PACK_GB">
 			<English>Gunbag</English>
 			<German>Waffentasche</German>
@@ -13368,6 +13329,13 @@
 			<Dutch>Wapenzak</Dutch>
 			<French>Fourreau</French>
 		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_GB">
+			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
+			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
+			<Russian>Оружейная сумка (35 слотов)</Russian>
+			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
+			<French>Fourreau&lt;br/&gt;Taille: 35</French>		
+		</Key>		
 		<Key ID="STR_EPOCH_PACK_COMPACT">
 			<English>Compact Pack</English>
 			<German>Compact Rucksack</German>
@@ -13375,6 +13343,13 @@
 			<Dutch>Compacte Rugzak</Dutch>
 			<French>Sac Compact</French>
 		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_COMPACT">
+			<English>Compact Pack &lt;br/&gt;Capacity: 25 items</English>
+			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
+			<Russian>Компактный рюкзак (25 слотов)</Russian>
+			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
+			<French>Sac Compact &lt;br/&gt;Taille: 25</French>		
+		</Key>		
 		<Key ID="STR_EPOCH_PACK_TERMINAL">
 			<English>Terminal Pack</English>
 			<German>Terminal Rucksack</German>
@@ -13382,6 +13357,13 @@
 			<Dutch>Terminal Rugzak</Dutch>
 			<French>Sac à Dos (terminal)</French>
 		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL">
+			<English>Terminal Pack &lt;br/&gt;Capacity: 15 items</English>
+			<German>Terminal Rucksack &lt;br/&gt;Volumen: 15 Liter</German>
+			<Russian>Вокзальный рюкзак (15 слотов)</Russian>
+			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 15 liter</Dutch>
+			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 15</French>		
+		</Key>		
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
 			<German>Fallschirm Sprung</German>
@@ -14798,7 +14780,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK">
 			<English>Lumber Pack</English>
-			<German>Bauholzstapel</German>
+			<German>Bauholzpaket</German>
 			<Russian>Упаковка пиломатериалов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK_DESC">
@@ -14833,7 +14815,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLYWOODPACK_DESC">
 			<English>Plywood in a stack.</English>
-			<German>Sperrholzstapel.</German>
+			<German>Sperrholz, gestapelt und zusammengebunden.</German>
 			<Russian>Упакованная фанера.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBER">
@@ -14968,92 +14950,92 @@
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED">
 			<English>Water Bottle (Boiled 1oz)</English>
-			<German>Wasserflasche (abgekocht 100ml)</German>
+			<German>Wasserflasche (Abgek. 100ml)</German>
 			<Russian>Бутылка (чистая вода 1 унция)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED_DESC">
-			<English>Water Bottle with 1oz of water (Boiled).</English>
-			<German>Wasserflasche mit 100ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 1oz of boiled water.</English>
+			<German>Wasserflasche mit 100ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 1 унцией чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED">
 			<English>Water Bottle (Boiled 2oz)</English>
-			<German>Wasserflasche (abgekocht 200ml)</German>
+			<German>Wasserflasche (Abgek. 200ml)</German>
 			<Russian>Бутылка (чистая вода 2 унции)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED_DESC">
-			<English>Water Bottle with 2oz of water (Boiled).</English>
-			<German>Wasserflasche mit 200ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 2oz of boiled water.</English>
+			<German>Wasserflasche mit 200ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 2 унциями чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED">
 			<English>Water Bottle (Boiled 3oz)</English>
-			<German>Wasserflasche (abgekocht 300ml)</German>
+			<German>Wasserflasche (Abgek. 300ml)</German>
 			<Russian>Бутылка (чистая вода 3 унции)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED_DESC">
-			<English>Water Bottle with 3oz of water (Boiled).</English>
-			<German>Wasserflasche mit 300ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 3oz of boiled water.</English>
+			<German>Wasserflasche mit 300ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 3 унциями чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED">
 			<English>Water Bottle (Boiled 4oz)</English>
-			<German>Wasserflasche (abgekocht 400ml)</German>
+			<German>Wasserflasche (Abgek. 400ml)</German>
 			<Russian>Бутылка (чистая вода 4 унции)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED_DESC">
-			<English>Water Bottle with 4oz of water (Boiled).</English>
-			<German>Wasserflasche mit 400ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 4oz of boiled water.</English>
+			<German>Wasserflasche mit 400ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 4 унциями чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED">
 			<English>Water Bottle (Boiled 5oz)</English>
-			<German>Wasserflasche (abgekocht 500ml)</German>
+			<German>Wasserflasche (Abgek. 500ml)</German>
 			<Russian>Бутылка (чистая вода 5 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED_DESC">
-			<English>Water Bottle with 5oz of water (Boiled).</English>
-			<German>Wasserflasche mit 500ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 5oz of boiled water.</English>
+			<German>Wasserflasche mit 500ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 5 унциями чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED">
 			<English>Water Bottle (Boiled 6oz)</English>
-			<German>Wasserflasche (abgekocht 600ml)</German>
+			<German>Wasserflasche (Abgek. 600ml)</German>
 			<Russian>Бутылка (чистая вода 6 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED_DESC">
-			<English>Water Bottle with 6oz of water (Boiled).</English>
-			<German>Wasserflasche mit 600ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 6oz of boiled water.</English>
+			<German>Wasserflasche mit 600ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 6 унциями чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED">
 			<English>Water Bottle (Boiled 7oz)</English>
-			<German>Wasserflasche (abgekocht 700ml)</German>
+			<German>Wasserflasche (Abgek. 700ml)</German>
 			<Russian>Бутылка (чистая вода 7 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED_DESC">
-			<English>Water Bottle with 7oz of water (Boiled).</English>
-			<German>Wasserflasche mit 700ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 7oz of boiled water.</English>
+			<German>Wasserflasche mit 700ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 7 унциями чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED">
 			<English>Water Bottle (Boiled 8oz)</English>
-			<German>Wasserflasche (abgekocht 800ml)</German>
+			<German>Wasserflasche (Abgek. 800ml)</German>
 			<Russian>Бутылка (чистая вода 8 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED_DESC">
-			<English>Water Bottle with 8oz of water (Boiled).</English>
-			<German>Wasserflasche mit 800ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 8oz of boiled water.</English>
+			<German>Wasserflasche mit 800ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 8 унциями чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED">
 			<English>Water Bottle (Boiled 9oz)</English>
-			<German>Wasserflasche (abgekocht 900ml)</German>
+			<German>Wasserflasche (Abgek. 900ml)</German>
 			<Russian>Бутылка (чистая вода 9 унций)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED_DESC">
-			<English>Water Bottle with 9oz of water (Boiled).</English>
-			<German>Wasserflasche mit 900ml Wasser (abgekocht).</German>
+			<English>Water Bottle with 9oz of boiled water.</English>
+			<German>Wasserflasche mit 900ml abgekochtem Wasser.</German>
 			<Russian>Бутылка с 9 унциями чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE">
@@ -16853,6 +16835,10 @@
 			<German>Feuer (angezündet)</German>
 			<Czech>Ohniště (hořící)</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_WORKBENCH_NEARBY">
+			<English>Workbench, Wooden Shed or Wood Shack</English>
+			<German>Werkbank, Holzschuppen oder Holzhütte</German>
+		</Key>		
 		<Key ID="STR_EPOCH_HUMANS_NEARBY">
 			<English>Humans Nearby</English>
 			<German>Spieler in der Nähe</German>
@@ -17257,7 +17243,278 @@
 			<English>Leaf of a tobacco plant</English>
 			<German>Blatt einer Tabakpflanze</German>
 			<Russian>Лист табака с табачной плантации</Russian>
+		</Key>	
+		
+		<!--New Epoch 1.0.6.3 weapon, attachment and magazine strings-->		
+        <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
+          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
+          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
+          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
+          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
+          <French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
+          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
+          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
+          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
+          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+        </Key>
+		<Key ID="STR_DZ_MAG_75RND_RPK74_DESC">
+          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 75 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
+          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
+          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 75 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
+          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 75 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
+          <French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 75 &lt;br/&gt;Utilisé avec : AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
+          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 75 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
+          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 75 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
+          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
+          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+        </Key>
+		<Key ID="STR_DZ_MAG_100RND_556x45_MG36_NAME">
+			<English>100Rnd. MG36 drum mag.</English>
+			<German>100 Schuss MG36 Trommelmagazin</German>			
+			<Russian>100п. МГ-36 барабан</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_100RND_MG36_DESC">
+          <German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
+          <English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
+          <Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
+          <Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, M8 y L110</Spanish>
+          <French>Calibre : 5.56x45mm &lt;br/&gt;Munitions : 100 &lt;br/&gt;Utilisé avec : G36, MG36, M16, M4, M249, MK-12, M8 et L110</French>
+          <Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, M8 a L110</Czech>
+          <Russian>Патрон: 5.56x45 мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, M8, L110</Russian>
+          <Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, M8 i L110</Polish>
+          <Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
+        </Key>				
+		
+		<!-- AK107 -->
+		<Key ID="STR_DZ_WPN_AK107_NAME">
+			<English>AK-107</English>
+			<Russian>АК-107</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_NAME">
+			<English>AK-107 GP-25</English>
+			<Russian>АК-107 ГП-25</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_KOBRA_NAME">
+			<English>AK-107 Kobra</English>
+			<Russian>АК-107 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_KOBRA_NAME">
+			<English>AK-107 GP-25 Kobra</English>
+			<Russian>АК-107 ГП-25 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_PSO1_NAME">
+			<English>AK-107 PSO-1</English>
+			<Russian>АК-107 ПСО-1</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_PSO1_NAME">
+			<English>AK-107 GP-25 PSO-1</English>
+			<Russian>АК-107 ГП-25 ПСО-1</Russian>
+		</Key>
+		
+		<!--PET waterbottles -->
+		<Key ID="STR_EQUIP_NAME_WBPET_01">
+			<English>Water Bottle PET (Empty)</English>
+			<German>Wasserflasche PET (Leer)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBPET_01">
+			<English>A PET bottle of water that is empty. It might be useful to fill it with water again.</English>
+			<German>Eine leere Plastik-Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBPET_02">
+			<English>Water Bottle PET (Broken)</English>
+			<German>Wasserflasche PET (Undicht)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBPET_02">
+			<English>Broken PET Water Bottle that might be repairable.</English>
+			<German>Eine undichte Plastik-Wasserflasche, die repariert werden kann.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBPET_03">
+			<English>Water Bottle PET</English>
+			<German>Wasserflasche PET</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBPET_03">
+			<English>A PET bottle of water that has been filled and can be consumed.</English>
+			<German>Eine Plastik-Wasserflasche, gefüllt mit nicht abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBPET_04">
+			<English>Water Bottle PET (Boiled)</English>
+			<German>Wasserflasche PET (Abgekocht)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBPET_04">
+			<English>A PET bottle of boiled water that has been filled and can be consumed.</English>
+			<German>Eine Plastik-Wasserflasche gefüllt mit abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBPET_05">
+			<English>Herbal Drink (PET)</English>
+			<German>Kräutertrunk (PET)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBPET_05">
+			<English>A drink mixed with herbs that may help heal infection.</English>
+			<German>Ein Getränk aus Kräutern, welches bei Infektionen helfen könnte.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZ">
+			<English>Water Bottle PET (1oz)</English>
+			<German>Wasserflasche PET (100ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZ_DESC">
+			<English>Water Bottle PET with 1oz of water.</English>
+			<German>Wasserflasche PET mit 100ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZ">
+			<English>Water Bottle PET (2oz)</English>
+			<German>Wasserflasche PET (200ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZ_DESC">
+			<English>Water Bottle PET with 2oz of water.</English>
+			<German>Wasserflasche PET mit 200ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZ">
+			<English>Water Bottle PET (3oz)</English>
+			<German>Wasserflasche PET (300ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZ_DESC">
+			<English>Water Bottle PET with 3oz of water.</English>
+			<German>Wasserflasche PET mit 300ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZ">
+			<English>Water Bottle PET (4oz)</English>
+			<German>Wasserflasche PET (400ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZ_DESC">
+			<English>Water Bottle PET with 4oz of water.</English>
+			<German>Wasserflasche PET mit 400ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZ">
+			<English>Water Bottle PET (5oz)</English>
+			<German>Wasserflasche PET (500ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZ_DESC">
+			<English>Water Bottle PET with 5oz of water.</English>
+			<German>Wasserflasche PET mit 500ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZ">
+			<English>Water Bottle PET (6oz)</English>
+			<German>Wasserflasche PET (600ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZ_DESC">
+			<English>Water Bottle PET with 6oz of water.</English>
+			<German>Wasserflasche PET mit 600ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZ">
+			<English>Water Bottle PET (7oz)</English>
+			<German>Wasserflasche PET (700ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZ_DESC">
+			<English>Water Bottle PET with 7oz of water.</English>
+			<German>Wasserflasche PET mit 700ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZ">
+			<English>Water Bottle PET (8oz)</English>
+			<German>Wasserflasche PET (800ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZ_DESC">
+			<English>Water Bottle PET with 8oz of water.</English>
+			<German>Wasserflasche PET mit 800ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZ">
+			<English>Water Bottle PET (9oz)</English>
+			<German>Wasserflasche PET (900ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZ_DESC">
+			<English>Water Bottle PET with 9oz of water.</English>
+			<German>Wasserflasche PET mit 900ml Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZBOILED">
+			<English>Water Bottle PET (Boiled 1oz)</English>
+			<German>Wasserflasche PET (Abgek. 100ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZBOILED_DESC">
+			<English>Water Bottle PET with 1oz of boiled water.</English>
+			<German>Wasserflasche PET mit 100ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZBOILED">
+			<English>Water Bottle PET (Boiled 2oz)</English>
+			<German>Wasserflasche PET (Abgek. 200ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZBOILED_DESC">
+			<English>Water Bottle PET with 2oz of boiled water.</English>
+			<German>Wasserflasche PET mit 200ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZBOILED">
+			<English>Water Bottle PET (Boiled 3oz)</English>
+			<German>Wasserflasche PET (Abgek. 300ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZBOILED_DESC">
+			<English>Water Bottle PET with 3oz of boiled water.</English>
+			<German>Wasserflasche PET mit 300ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZBOILED">
+			<English>Water Bottle PET (Boiled 4oz)</English>
+			<German>Wasserflasche PET (Abgek. 400ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZBOILED_DESC">
+			<English>Water Bottle PET with 4oz of boiled water.</English>
+			<German>Wasserflasche PET mit 400ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZBOILED">
+			<English>Water Bottle PET (Boiled 5oz)</English>
+			<German>Wasserflasche PET (Abgek. 500ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZBOILED_DESC">
+			<English>Water Bottle PET with 5oz of boiled water.</English>
+			<German>Wasserflasche PET mit 500ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZBOILED">
+			<English>Water Bottle PET (Boiled 6oz)</English>
+			<German>Wasserflasche PET (Abgek. 600ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZBOILED_DESC">
+			<English>Water Bottle PET with 6oz of boiled water.</English>
+			<German>Wasserflasche PET mit 600ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZBOILED">
+			<English>Water Bottle PET (Boiled 7oz)</English>
+			<German>Wasserflasche PET (Abgek. 700ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZBOILED_DESC">
+			<English>Water Bottle PET with 7oz of boiled water.</English>
+			<German>Wasserflasche PET mit 700ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZBOILED">
+			<English>Water Bottle PET (Boiled 8oz)</English>
+			<German>Wasserflasche PET (Abgek. 800ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZBOILED_DESC">
+			<English>Water Bottle PET with 8oz of boiled water.</English>
+			<German>Wasserflasche PET mit 800ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED">
+			<English>Water Bottle PET (Boiled 9oz)</English>
+			<German>Wasserflasche PET (Abgek. 900ml)</German>
+		</Key>
+		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED_DESC">
+			<English>Water Bottle PET with 9oz of boiled water.</English>
+			<German>Wasserflasche PET mit 900ml abgekochtem Wasser.</German>
+		</Key>
+		
+		<!--dayz mod crash site display names-->
+		<Key ID="STR_EPOCH_CRASHSITE1">
+			<English>Mi-8 Wreck (Military)</English>
+			<German>Mi-8 Wrack (Militär)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CRASHSITE2">
+			<English>Mi-8 Wreck (Civil)</English>
+			<German>Mi-8 Wrack (Zivil)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CRASHSITE3">
+			<English>UH-1Y Wreck</English>
+			<German>UH-1Y Wrack</German>
+		</Key>
+		<Key ID="STR_EPOCH_CRASHSITE4">
+			<English>HC3 Merlin Wreck</English>
+			<German>HC3 Merlin Wrack</German>
 		</Key>		
+		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>

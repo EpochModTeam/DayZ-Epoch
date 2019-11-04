@@ -1,4 +1,4 @@
-private ["_type","_local","_unit"];
+private ["_chance","_dis","_isWoman","_local","_num","_rnd","_sound","_type","_unit"];
 
 _unit = _this select 0;
 _type = _this select 1;

@@ -1,3 +1,6 @@
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
+
 private ["_emptycan","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_randomJerryCan","_fireIntensity","_dis","_sfx","_finished"];
 
 //Tent Object
@@ -24,11 +27,8 @@ _matchArray = [];
 } count DayZ_fuelCans;
 
 //Make sure we have both components to create the fire.
-if ((count _fuelArray == 0)) exitwith { systemChat (localize ("str_setFireFuel")); };
-if ((count _matchArray == 0)) exitwith { systemChat (localize ("str_setFireMatches")); };
-
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
-dayz_actionInProgress = true;
+if ((count _fuelArray == 0)) exitwith { dayz_actionInProgress = false; systemChat (localize ("str_setFireFuel")); };
+if ((count _matchArray == 0)) exitwith { dayz_actionInProgress = false; systemChat (localize ("str_setFireMatches")); };
 
 //Actionmenu tools
 player removeAction s_player_destroytent;
@@ -46,10 +46,9 @@ if (!_finished or (isNull _obj)) exitWith {
 
 //Jerry can system ** Needs redoing
 //Select random can from array
-_randomJerryCan = _fuelArray call BIS_fnc_selectRandom; 
+_randomJerryCan = _fuelArray call BIS_fnc_selectRandom;
 
-_name = getText (configFile >> "CfgMagazines" >> _randomJerryCan >> "displayName");
-_emptycan = getText (configFile >> "CfgMagazines" >> _randomJerryCan >> "emptycan");
+_emptycan = getText (configFile >> "CfgMagazines" >> _randomJerryCan >> "containerEmpty");
 _fireIntensity = getNumber (configFile >> "CfgMagazines" >> _randomJerryCan >> "fireIntensity");
 
 if !(_randomJerryCan in magazines player) exitWith {

@@ -18,6 +18,8 @@ class ItemMatchboxEmpty : ItemMatchbox_base
 class ItemMatchbox : ItemMatchbox_base
 {
 	scope = public;	
+	model = "\dayz_equip\models\matchbox_gear.p3d"; // Some mods override this. We leave this here just to be sure.
+	picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
 	matches = -1;
 	qtyRemaining = "Item5Matchbox";
 	
@@ -28,6 +30,10 @@ class ItemMatchbox : ItemMatchbox_base
 			text = $STR_ACTIONS_MAKEFIRE;
 			script = "spawn player_makeFire;"; //Do not use player_build because we have no ghost preview model for Land_Fire_DZ yet
 			use[] = {"PartWoodPile"};
+		};
+		class Combine {
+			text = $STR_ANTIBIOTICS_COMBINE;
+			script = "spawn player_combineMatches;";
 		};
 	};
 };

@@ -4,7 +4,8 @@
 	return all player magazines with ammo count
 	Modified to save backpack magazine count by icomrade - Base for fix by Ziellos2k
 */
-private ["_control","_item","_val","_max","_count","_magazineArray","_dialog"];
+private ["_control","_count","_dialog","_i","_item","_magazineArray","_max","_val"];
+
 disableUserInput true;
 disableUserInput true;
 disableSerialization;
@@ -49,7 +50,7 @@ if ((typeOf (unitBackPack player)) != "") then {
 	ctrlActivate (_dialog displayCtrl 157);
 	if (gear_done) then {
 		waitUntil {ctrlShown (_dialog displayCtrl 159)};
-		sleep 0.001;
+		uiSleep 0.001;
 	};
 
 	for "_i" from 5000 to (5000 + _count) do {
@@ -68,6 +69,6 @@ if ((typeOf (unitBackPack player)) != "") then {
 };
 
 (findDisplay 106) closeDisplay 0;
-if (gear_done) then {sleep 0.001;};
+if (gear_done) then {uiSleep 0.001;};
 
-_magazineArray;
+_magazineArray

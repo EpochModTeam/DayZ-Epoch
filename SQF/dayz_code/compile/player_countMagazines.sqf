@@ -4,13 +4,14 @@
 	return all player magazines with ammo count
 */
 
-private ["_dialog","_created","_magazineArray"];
+private ["_control","_created","_dialog","_i","_item","_magazineArray","_max","_val"];
+
 disableSerialization;
 
 _dialog = findDisplay 106;
 _created = false;
 
-if ( isNull _dialog ) then {
+if (isNull _dialog) then {
 	//Load Minimal gearMenu
 	createGearDialog [player, "RscDisplayGearMinimal"];
 	_dialog = findDisplay 106;
@@ -19,8 +20,7 @@ if ( isNull _dialog ) then {
 
 _magazineArray = [];
 
-for "_i" from 109 to 120 do
-{
+for "_i" from 109 to 120 do {
 	_control = _dialog displayCtrl _i;
 	_item = gearSlotData _control;
 	_val = gearSlotAmmoCount _control;
@@ -34,8 +34,7 @@ for "_i" from 109 to 120 do
 	};
 };
 
-for "_i" from 122 to 129 do
-{
+for "_i" from 122 to 129 do {
 	_control = _dialog displayCtrl _i;
 	_item = gearSlotData _control;
 	_val = gearSlotAmmoCount _control;
@@ -49,7 +48,7 @@ for "_i" from 122 to 129 do
 	};
 };
 
-if ( _created ) then {
+if (_created) then {
 	closeDialog 0;
 };
 

@@ -64,11 +64,12 @@ class CfgMagazines
 	#include "DZE\Currency\GoldBar.hpp"
 	#include "DZE\Currency\SilverBar.hpp"
 	#include "DZE\Currency\CopperBar.hpp"
-	#include "DZE\Currency\BronzeBar.hpp"
+	//#include "DZE\Currency\BronzeBar.hpp" //The Bronze Bar has no model
 	#include "DZE\Currency\AluminumBar.hpp"
 	#include "DZE\Currency\TinBar.hpp"
 
 	#include "DZE\ItemWaterbottle.hpp"
+	#include "DZE\PlasticWaterbottle.hpp"
 	#include "Planting.hpp"
 
 	// Building Stuff

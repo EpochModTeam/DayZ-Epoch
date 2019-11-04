@@ -22,6 +22,27 @@ class WeaponHolder_ItemCrowbar: WeaponHolderBase
 		init="[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
 	};
 };
+class WeaponHolder_ItemPickaxe: WeaponHolderBase
+{
+	scope=2;
+	displayName = $STR_EQUIP_NAME_PICKAXE;
+	model = "z\addons\dayz_communityweapons\models\pickaxe\pickaxe.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers
+	{
+		init="[(_this select 0),'cfgWeapons','ItemPickaxe'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
+};
+class WeaponHolder_ItemPickaxeBroken: WeaponHolder_ItemPickaxe
+{
+	displayName = $STR_name_ItemPickaxeBroken;
+	
+	class eventHandlers
+	{
+		init="[(_this select 0),'cfgWeapons','ItemPickaxeBroken'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+	};
+};
 class WeaponHolder_ItemSledge : WeaponHolderBase { // Epoch class. Needed for player_dropWeapon
 	scope = public;
 	displayName = $STR_EQUIP_NAME_SledgeHammer;

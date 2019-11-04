@@ -18,7 +18,7 @@ class CfgCrafting {
 	#include "Recipes\Medical\woodensplint.hpp"
 	#include "Recipes\Medical\HerbalDrink.hpp"
 	//ammo
-	#include "Recipes\Ammo\WoodenArrow.hpp"
+	//#include "Recipes\Ammo\WoodenArrow.hpp"
 	//other
 	#include "Recipes\Other\woodencrate.hpp"
 	#include "Recipes\Other\nails.hpp"

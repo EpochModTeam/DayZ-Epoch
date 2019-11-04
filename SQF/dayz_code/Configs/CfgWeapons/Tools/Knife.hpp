@@ -18,6 +18,8 @@ class ItemKnife_Base : ItemCore
 class ItemKnife : ItemKnife_Base
 {
 	scope = public;
+	model = "\dayz_equip\models\knife_gear.p3d"; // Some mods override this. We leave this here just to be sure.
+	picture = "\dayz_equip\textures\equip_knife_ca.paa";
 	descriptionShort = $STR_EQUIP_DESC_4;
 	sharpnessRemaining = "ItemKnife5";
 };

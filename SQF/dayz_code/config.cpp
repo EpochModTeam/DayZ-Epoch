@@ -86,6 +86,7 @@ class CfgAddons
 				"redryder",
 				"Anzio_20",
 				"dayz_epoch_b",
+				"dayz_epoch_c",
 				"CfgVehicles"
 			};
 		};

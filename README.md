@@ -46,7 +46,7 @@ Initial Developers
 --------------------------
 * [VB]AWOL - Lead Developer - http://www.twitch.tv/vbawol
 * Axle - Tester, Trader City Designer - http://www.twitch.tv/axles
-* Paul Tomany - Models, Textures - ptomany@gmail.com - http://www.twitch.tv/sequisha
+* Sequisha - Models, Textures - http://www.twitch.tv/sequisha
 * [VB]GREEN - Graphics - http://www.twitch.tv/vbgreen
 
 --------------------------
@@ -65,6 +65,9 @@ GitHub Collaborators (In order of most commits)
 * Axles - https://github.com/Axles
 * Armifer - https://github.com/Armifer
 * Zupa - https://github.com/Windmolders
+* oiad - https://github.com/oiad
+* AirwavesMan - https://github.com/AirwavesMan
+* Seelenapparat - https://github.com/seelenapparat
 
 --------------------------
 GitHub Contributors (In order of most commits)
@@ -116,6 +119,8 @@ GitHub Contributors (In order of most commits)
 * F507DMT - https://github.com/F507DMT 
 * ndavalos - https://github.com/ndavalos
 * SmokeyBR - https://github.com/SmokeyBR
+* DeVloek - https://github.com/DeVloek
+* worldwidesorrow - https://github.com/worldwidesorrow
 
 --------------------------
 Special thanks

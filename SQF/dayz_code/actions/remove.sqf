@@ -4,7 +4,7 @@ dayz_actionInProgress = true;
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_obj","_objectID","_objectUID","_finished","_isOk","_proceed","_counter","_limit","_objType","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_ownerID","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_radius","_isWreckBuilding","_nameVehicle","_isModular","_success","_lootGroupIndex","_output"];
+private ["_plotcheck","_PlayerNear","_isMine","_obj","_objectID","_objectUID","_finished","_isOk","_proceed","_counter","_limit","_objType","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_isWreckBuilding","_nameVehicle","_isModular","_success","_lootGroupIndex","_output"];
 
 player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
@@ -38,7 +38,6 @@ _isRemovable = _objType in DZE_isRemovable;
 _isWreckBuilding = _objType in DZE_isWreckBuilding;
 _isMine = _objType in ["Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gold_vein_wreck"];
 _isModular = _obj isKindOf "ModularItems";
-_distance = DZE_PlotPole select 0;
 
 _PlayerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
 if (_PlayerNear && (_isMine or _objType == "Land_ammo_supply_wreck")) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
@@ -58,6 +57,8 @@ _IsNearPlot = _plotcheck select 1;
 _nearestPole = _plotcheck select 2;
 
 if(_IsNearPlot >= 1) then {
+	private ["_buildcheck","_isowner","_isfriendly"];
+
 	// Since there are plot poles nearby we need to check ownership && friend status
 	_buildcheck = [player, _nearestPole] call FNC_check_access;
 	_isowner = _buildcheck select 0;
@@ -89,7 +90,7 @@ while {_isOk} do {
 		_isOk = false;
 		_proceed = false;
 	};
-	
+
 	format[localize "str_epoch_player_163",_nameVehicle,(_counter + 1),_limit] call dayz_rollingMessages;
 
 	[player,"repair",0,false,20] call dayz_zombieSpeak;
@@ -150,7 +151,7 @@ if (_proceed && _success) then {
 	// Double check that object is not null
 	if(!isNull(_obj)) then {
 		_ipos = getPosATL _obj;
-		
+
 		if(!_isWreck && !_isWreckBuilding) then {
 			//Server performs deleteVehicle
 			PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,dayz_authKey];
@@ -158,7 +159,7 @@ if (_proceed && _success) then {
 		} else {
 			deleteVehicle _obj;
 		};
-		
+
 		if (_isWreckBuilding) then {
 			PVDZ_send = [player,"RemoveObject",_ipos];
 			publicVariableServer "PVDZ_send";
@@ -194,10 +195,10 @@ if (_proceed && _success) then {
 				if ({_objType in _x} count DZE_modularConfig > 0) then {
 					{
 						private ["_class", "_refund"];
-						
+
 						_class = _x select 0;
 						_refund = _x select 1;
-						
+
 						if (_objType == _class) then {
 							{_selectedRemoveOutput set [count _selectedRemoveOutput,_x];} forEach _refund;
 						};
@@ -214,14 +215,10 @@ if (_proceed && _success) then {
 			[localize "str_epoch_player_90",1] call dayz_rollingMessages;
 		};
 
-		if (_ipos select 2 < 0) then {
-			_ipos set [2,0];
-		};
-
-		_radius = 1;
-
 		if (_isMine) then {
 			if((random 10) <= 4) then {
+				private ["_gems","_weights","_gemSelected"];
+
 				_gems = [];
 				_weights = [];
 				{
@@ -235,7 +232,16 @@ if (_proceed && _success) then {
 
 		// give refund items
 		if((count _selectedRemoveOutput) > 0 && !_preventRefund) then {
-			_item = createVehicle ["WeaponHolder", _iPos, [], _radius, "CAN_COLLIDE"];
+			private "_posPlayer";
+
+			_posPlayer = getPosATL player;
+			_iPos set [2,_posPlayer select 2];
+
+			if (_iPos select 2 < 0) then {
+				_iPos set [2,0];
+			};
+
+			_item = "WeaponHolder" createVehicle [0,0,0];
 			{
 				_itemOut = _x select 0;
 				_countOut = _x select 1;
@@ -254,7 +260,6 @@ if (_proceed && _success) then {
 			} count _selectedRemoveOutput;
 
 			_item setposATL _iPos;
-
 			player reveal _item;
 			DZE_GearCheckBypass = true; //Bypass gear menu checks since dialog will always open on item
 			player action ["Gear", _item];

@@ -109,13 +109,13 @@ if (!isDedicated) then {
 	//player_sleep = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sleep.sqf";
 	player_combineMag = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
 	player_combineAntibiotics = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineAntibiotics.sqf";
+	player_combineMatches = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMatches.sqf";
 	player_createquiver = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_createQuiver.sqf";
 	player_fillquiver = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_fillQuiver.sqf";
 	//player_takearrow = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_takeArrow.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_switchWeapon.sqf";
 	//player_goFishing = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_goFishing.sqf";
 	player_gather = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_gather.sqf";
-	player_fixBottle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_fixBottle.sqf";
 	player_tearClothes = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_tearClothes.sqf";
 	//object_remove = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remove.sqf";
 	player_fixHatchet = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_fixTools.sqf";
@@ -205,6 +205,7 @@ if (!isDedicated) then {
 	player_manageDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\initDoorManagement.sqf";
 	player_enterCode = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\player_enterCode.sqf";	
 	FNC_check_access = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_check_access.sqf";
+	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
 
 	// Advanced trading default inits for maintaining, Advanced Trading and custom scripts to utilize gem based currency.
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\AdvancedTrading\defaultInit.sqf";
@@ -612,6 +613,80 @@ if (!isDedicated) then {
 	if (!DZE_ConfigTrader) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_hiveTrading.sqf";};
 	// recent murders menu
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_murderBoard.sqf";
+	
+	dayz_inflame_showMenu = {
+		private ["_object","_ret","_flame","_islit","_hasTool","_whatIwant"];
+
+		_object = _this select 0;
+		_whatIwant = _this select 1;
+		_ret = false;
+
+		_islit = (inflamed _object);
+		
+		_hasTool = false;
+		if (!_islit) then {
+			{
+				if (_x in items player) exitWith { _hasTool = true; };
+			} count DayZ_Ignitors;
+		};
+		_ret = (_whatIwant && !_islit && _hasTool) or (!_whatIwant && _isLit);
+
+		_ret
+	};
+	
+	dayz_reduceItems = {
+		private ["_item","_class","_amount","_qtyRemaining"];
+		
+		_item = _this select 0; //Item in current inventory.
+		_class = _this select 1; //Class type to use.
+
+		//Does player have the original item? (Not Really needed player_useMeds checks)
+		if (_item in magazines player) exitWith {
+			//Amount in current box (will be -1 for a random chance to start the reducing)
+			_amount = getNumber(configfile >> "CfgMagazines" >> _item >> _class >> "amount");
+
+			//Item to move too if there is some left
+			_qtyRemaining = getText(configfile >> "CfgMagazines" >> _item >> _class >> "qtyRemaining");
+					
+			//Only run for the random amount.
+			if (_amount == -1) then { 
+				//Chance to start the reduction 
+				if ([getNumber(configfile >> "CfgMagazines" >> _item >> _class >> "chance")] call fn_chance) then {
+					player removeMagazine _item;
+					player addMagazine _qtyRemaining;
+				};
+			} else {
+				player removeMagazine _item;
+				player addMagazine _qtyRemaining;
+			};
+		};
+		true
+	};
+	
+	dayz_inflame_showMenu_other = {
+		private ["_fireplace","_ret","_flame","_islit","_hasTool","_whatIwant"];
+
+		_fireplace = _this select 0;
+		_whatIwant = _this select 1;
+		_ret = false;
+		// return a boolean. true <=> player can put out the lit fire, can light a fire with match
+		_flame = nearestObjects [_fireplace, ["flamable_DZ"], 1];
+		_flame = if (count _flame > 0) then { _flame select 0 } else { objNull };
+		_islit = !(isNull _flame) && {(inflamed _flame)};
+		_hasTool = false;
+		if (!_islit) then {
+			{
+				if (_x in items player) exitWith { _hasTool = true; };
+			} count DayZ_Ignitors;
+		};
+		_ret = (_whatIwant && !_islit && _hasTool) or (!_whatIwant && _isLit);
+		//systemChat str [_flame, _hasTool, _islit, _ret];
+
+		_ret
+	};
+
+	DZ_KeyDown_EH = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\keyboard.sqf";
+	dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_ejectPlayer.sqf";
 };
 
 //Both
@@ -628,7 +703,6 @@ object_getHit = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\o
 object_setHit = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_setHit.sqf";			//process the hit as a NORMAL damage (useful for persistent vehicles)
 object_processHit = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_processHit.sqf";		//process the hit in the REVO damage system (records and sets hit)
 //object_cargoCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_cargoCheck.sqf";		//Run by the player or server to monitor changes in cargo contents
-fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
 // Vehicle damage fix
 fnc_veh_handleDam = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleDam.sqf";
 fnc_veh_handleKilled = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_handleKilled.sqf";
@@ -662,10 +736,10 @@ fn_getModelName = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile
 fn_niceSpot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_niceSpot.sqf";
 fnc_Obj_FenceHandleDam = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fence_handleDam.sqf";
 object_roadFlare = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_roadFlare.sqf";
-DZ_KeyDown_EH = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\keyboard.sqf";
 fn_shuffleArray = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_shuffleArray.sqf";
 zombie_initialize = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_initialize.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\traps\init.sqf";
+//call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\achievements_init.sqf"; //start achievements_init
 
 if (dayz_townGenerator) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\psrnd.sqf"; // pseudo random for plantSpanwer
@@ -681,7 +755,6 @@ BIS_fnc_numberDigits = compile preprocessFileLineNumbers "\z\addons\dayz_code\co
 BIS_fnc_numberText = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_numberText.sqf";
 local_lockUnlock = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_lockUnlock.sqf"; //When vehicle is local to unit perform locking vehicle
 FNC_GetSetPos = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fnc_getSetPos.sqf";
-dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_ejectPlayer.sqf";
 dayz_groupInvite = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\handleInvite.sqf";
 
 player_sumMedical = {
@@ -718,35 +791,6 @@ player_sumMedical = {
 	_medical
 };
 
-dayz_reduceItems = {
-    private ["_item","_class","_amount","_qtyRemaining"];
-	
-	_item = _this select 0; //Item in current inventory.
-	_class = _this select 1; //Class type to use.
-
-	//Does player have the original item? (Not Really needed player_useMeds checks)
-	if (_item in magazines player) exitWith {
-		//Amount in current box (will be -1 for a random chance to start the reducing)
-		_amount = getNumber(configfile >> "CfgMagazines" >> _item >> _class >> "amount");
-
-		//Item to move too if there is some left
-		_qtyRemaining = getText(configfile >> "CfgMagazines" >> _item >> _class >> "qtyRemaining");
-				
-		//Only run for the random amount.
-		if (_amount == -1) then { 
-			//Chance to start the reduction 
-			if ([getNumber(configfile >> "CfgMagazines" >> _item >> _class >> "chance")] call fn_chance) then {
-				player removeMagazine _item;
-				player addMagazine _qtyRemaining;
-			};
-		} else {
-			player removeMagazine _item;
-			player addMagazine _qtyRemaining;
-		};
-	};
-	true
-};
-
 dayz_inflame = {
     private "_object";
     _object = _this select 0;
@@ -756,26 +800,6 @@ dayz_inflame = {
     } else { // put out the fire
 		_object inflame false;
     };
-};
-
-dayz_inflame_showMenu = {
-    private ["_object","_ret","_flame","_islit","_hasTool","_whatIwant"];
-
-    _object = _this select 0;
-    _whatIwant = _this select 1;
-    _ret = false;
-
-    _islit = (inflamed _object);
-	
-    _hasTool = false;
-    if (!_islit) then {
-        {
-            if (_x in items player) exitWith { _hasTool = true; };
-        } count DayZ_Ignitors;
-    };
-    _ret = (_whatIwant && !_islit && _hasTool) or (!_whatIwant && _isLit);
-
-    _ret
 };
 
 dayz_inflame_other = {
@@ -803,28 +827,6 @@ dayz_inflame_other = {
         _flame = nearestObjects [_fireplace, ["flamable_DZ"], 1];
         if (count _flame > 0) then { (_flame select 0) inflame false; };
     };
-};
-
-dayz_inflame_showMenu_other = {
-    private ["_fireplace","_ret","_flame","_islit","_hasTool","_whatIwant"];
-
-    _fireplace = _this select 0;
-    _whatIwant = _this select 1;
-    _ret = false;
-    // return a boolean. true <=> player can put out the lit fire, can light a fire with match
-    _flame = nearestObjects [_fireplace, ["flamable_DZ"], 1];
-    _flame = if (count _flame > 0) then { _flame select 0 } else { objNull };
-    _islit = !(isNull _flame) && {(inflamed _flame)};
-    _hasTool = false;
-    if (!_islit) then {
-        {
-            if (_x in items player) exitWith { _hasTool = true; };
-        } count DayZ_Ignitors;
-    };
-    _ret = (_whatIwant && !_islit && _hasTool) or (!_whatIwant && _isLit);
-	//systemChat str [_flame, _hasTool, _islit, _ret];
-
-    _ret
 };
 
 isInflamed = {

@@ -274,6 +274,14 @@ class ItemOilBarrel: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
 	descriptionShort = $STR_EPOCH_OILBARREL_DESC;
+	containerEmpty = "ItemOilBarrelEmpty";
+	
+	class ItemActions {
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
 };
 class ItemFuelBarrel: CA_Magazine
 {
@@ -286,7 +294,14 @@ class ItemFuelBarrel: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
 	descriptionShort = $STR_EPOCH_FUELBARREL_DESC;
 	fireIntensity = 6; //used for tent burning
-	emptycan = "ItemFuelBarrelEmpty";
+	containerEmpty = "ItemFuelBarrelEmpty";
+	
+	class ItemActions {
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
 };
 class ItemFuelBarrelEmpty: ItemFuelBarrel
 {
@@ -1198,6 +1213,14 @@ class ItemMethylaminBarrel : ItemOilBarrel
 {
 	displayName = $STR_EPOCH_METHYLAMINEBARREL;
 	descriptionShort = $STR_EPOCH_METHYLAMINEBARREL_DESC;
+	containerEmpty = "ItemMethylaminBarrelEmpty";
+	
+	class ItemActions {
+		class Empty	{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
 };
 
 class ItemC4Charge : CA_Magazine

@@ -74,6 +74,7 @@ assaultrifles[] = {
 	{Loot_WEAPON,		0.1,		AKS_GOLD},
 	{Loot_WEAPON,		0.5,		AKM_DZ}, //AK_47_M
 	{Loot_WEAPON,		0.5,		AK74_DZ}, //AK_74
+	{Loot_WEAPON,		0.5,		AK107_DZ}, //AK_107
 	{Loot_WEAPON,		0.3,		FNFAL_DZ}, //FN_FAL
 	{Loot_WEAPON,		0.1,		FN_FAL_ANPVS4_DZE}, //FNFAL_ANPVS4_DZ is NV only _DZE is toggleable
 	{Loot_WEAPON,		0.5,		G36A_Camo_DZ}, //G36A_camo
