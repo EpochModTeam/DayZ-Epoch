@@ -17513,6 +17513,24 @@
 			<German>Wasserflasche PET mit 900ml abgekochtem Wasser.</German>
 		</Key>
 		
+		<!--dayz mod crash site display names-->
+		<Key ID="STR_EPOCH_CRASHSITE1">
+			<English>Mi-8 Wreck (Military)</English>
+			<German>Mi-8 Wrack (Militär)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CRASHSITE2">
+			<English>Mi-8 Wreck (Civil)</English>
+			<German>Mi-8 Wrack (Zivil)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CRASHSITE3">
+			<English>UH-1Y Wreck</English>
+			<German>UH-1Y Wrack</German>
+		</Key>
+		<Key ID="STR_EPOCH_CRASHSITE4">
+			<English>HC3 Merlin Wreck</English>
+			<German>HC3 Merlin Wrack</German>
+		</Key>		
+		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>

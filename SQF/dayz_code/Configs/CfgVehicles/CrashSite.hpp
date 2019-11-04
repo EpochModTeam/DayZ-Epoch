@@ -24,18 +24,21 @@ class CrashSite : House
 class CrashSite_RU : CrashSite
 {
 	scope = public;
+	displayname = $STR_EPOCH_CRASHSITE1;
 	model = "\z\addons\dayz_communityassets\crashsite\mi8\mi8_ru.p3d";
 	lootParams[] = {{0.6, -4.5, 0}, 7, 2.5, 5, 7};
 };
 
 class CrashSite_UN : CrashSite_RU
 {
+	displayname = $STR_EPOCH_CRASHSITE2;
 	model = "\z\addons\dayz_communityassets\crashsite\mi8\mi8_un.p3d";
 };
 
 class CrashSite_US : CrashSite
 {
 	scope = public;
+	displayname = $STR_EPOCH_CRASHSITE3;
 	model = "\ca\air2\uh1y\uh1y_crashed.p3d";
 	hiddenSelections[] = {"zasleh"};
 	smoke[] = {-0.8,-2.3,2};
@@ -45,6 +48,7 @@ class CrashSite_US : CrashSite
 class CrashSite_EU : CrashSite
 {
 	scope = public;
+	displayname = $STR_EPOCH_CRASHSITE4;
 	model = "\z\addons\dayz_communityassets\crashsite\hc3\hc3.p3d";
 	lootParams[] = {{-0.4, -0.5, 0}, 4, 2.5, 7.5, 7};
 };
