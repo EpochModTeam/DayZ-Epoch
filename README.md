@@ -67,6 +67,7 @@ GitHub Collaborators (In order of most commits)
 * Zupa - https://github.com/Windmolders
 * oiad - https://github.com/oiad
 * AirwavesMan - https://github.com/AirwavesMan
+* Seelenapparat - https://github.com/seelenapparat
 
 --------------------------
 GitHub Contributors (In order of most commits)
@@ -119,6 +120,7 @@ GitHub Contributors (In order of most commits)
 * ndavalos - https://github.com/ndavalos
 * SmokeyBR - https://github.com/SmokeyBR
 * DeVloek - https://github.com/DeVloek
+* worldwidesorrow - https://github.com/worldwidesorrow
 
 --------------------------
 Special thanks
