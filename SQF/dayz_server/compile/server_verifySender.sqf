@@ -16,20 +16,20 @@ _player = _this select 5;
 
 _index = dayz_serverPUIDArray find _playerUID;
 
-_exitReason = switch true do {
+_exitReason = call {
 	//If object or player is null distance returns 9999+
 	//If object or player was moved with setPos on client, position takes a second to update on server
 	//Coordinates can be used in place of object
-	case (_objPos distance _player > (Z_VehicleDistance + 10)): {
+	if (_objPos distance _player > (Z_VehicleDistance + 10)) exitwith {
 		format["%1 error: Verification failed, player is too far from object. Distance: %2m/%3m limit PV ARRAY: %4",_function,round (_objPos distance _player),Z_VehicleDistance + 10,_params]
 	}; 
-	case (_index < 0): {
+	if (_index < 0) exitwith {
 		format["%1 error: PUID NOT FOUND ON SERVER. PV ARRAY: %2",_function,_params]
 	};
-	case (((dayz_serverClientKeys select _index) select 0 != owner _player) or ((dayz_serverClientKeys select _index) select 1 != _clientKey)): {
+	if (((dayz_serverClientKeys select _index) select 0 != owner _player) or ((dayz_serverClientKeys select _index) select 1 != _clientKey)) exitwith {
 		format["%1 error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED. PV ARRAY: %2",_function,_params]
 	};
-	default {""};
+	"";
 };
 
 _exitReason
