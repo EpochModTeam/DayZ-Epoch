@@ -75,7 +75,7 @@ call {
 	};
 	if (_type == "coins") exitwith {
 		_object setVariable ["lastInventory",["forceUpdate"]];
-		[_object,_objectID,_objectUID] call server_obj_inv;
+		[_object,_objectID,_objectUID,_class] call server_obj_inv;
 	};
 	"";
 };
