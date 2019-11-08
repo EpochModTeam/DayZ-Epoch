@@ -1,6 +1,6 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_characterID","_minutes","_newObject","_playerID","_playerName","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide","_bodyName","_type"];
+private ["_characterID","_minutes","_newObject","_playerID","_playerName","_key","_pos","_infected","_sourceName","_sourceWeapon","_distance","_message","_method","_suicide","_bodyName","_type","_sourceID"];
 //[unit, weapon, muzzle, mode, ammo, magazine, projectile]
 
 _characterID = _this select 0;
@@ -13,6 +13,7 @@ _sourceName = toString (_this select 6);
 _sourceWeapon = _this select 7;
 _distance = _this select 8;
 _method = _this select 9;
+_sourceID = _this select 10;
 
 //Mark player as dead so we bypass the ghost system
 dayz_died set [count dayz_died, _playerID];
@@ -32,7 +33,7 @@ if (_characterID != "0") then {
 	_key call server_hiveWrite;
 };
 
-diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2", 
+diag_log format ["Player %1(%3) died as %5 at %2 CharID: %4",
 	_newObject call fa_plr2str, _pos call fa_coor2str,
 	_playerID, _characterID,
 	typeOf _newObject
@@ -41,7 +42,7 @@ diag_log format ["Player UID#%3 CID#%4 %1 as %5 died at %2",
 // DEATH MESSAGES
 _suicide = ((_sourceName == _playerName) or (_method == "suicide"));
 
-if (_method in ["explosion","melee","shot","shothead","shotheavy","suicide"] && !(_method == "explosion" && (_suicide or _sourceName == "unknown"))) then {
+if (_method in ["explosion","melee","shot","shothead","shotheavy","suicide"] && {!(_method == "explosion" && {_suicide || {_sourceName == "unknown"}})}) then {
 	if (_suicide) then {
 		_message = ["suicide",_playerName];
 	} else {
@@ -56,8 +57,8 @@ if (_method in ["explosion","melee","shot","shothead","shotheavy","suicide"] && 
 	_message = ["died",_playerName,_method];
 };
 
-if (_playerName != "unknown" or _sourceName != "unknown") then {
-	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgRolling or DZE_DeathMsgDynamicText) then {
+if (_playerName != "unknown" || {_sourceName != "unknown"}) then {
+	if (toLower DZE_DeathMsgChat != "none" || {DZE_DeathMsgRolling} || {DZE_DeathMsgDynamicText}) then {
 		PVDZE_deathMessage = _message;
 		//Don't use regular PV here since JIP clients don't need it
 		owner _newObject publicVariableClient "PVDZE_deathMessage"; //Send to dead player (not in playableUnits)
@@ -67,18 +68,18 @@ if (_playerName != "unknown" or _sourceName != "unknown") then {
 			};
 		} count playableUnits;
 	};
-	
+
 	_type = _message select 0;
 	_bodyName = _message select 1;
-	
-	if (_type == "killed" && _sourceName == "AI") then {
+
+	if (_type == "killed" && {_sourceName == "AI"}) then {
 		_message set [2, (localize "STR_PLAYER_AI")];
 	};
-	
-	_message = switch _type do {
-		case "died": {format [localize "str_player_death_died", _bodyName, localize format["str_death_%1",_message select 2]]};
-		case "killed": {format [localize "str_player_death_killed", _bodyName, _message select 2, _message select 3, _message select 4]};
-		case "suicide": {format [localize "str_player_death_suicide", _bodyName]};
+
+	_message = call {
+		if (_type == "died") exitwith {format ["%1(%3) died from %2", _bodyName, localize format["str_death_%1",_message select 2],_playerID]};
+		if (_type == "killed") exitwith {format ["%1(%5) was killed by %2(%6) with %3 from %4m", _bodyName, _message select 2, _message select 3, _message select 4,_playerID,_sourceID]};
+		if (_type == "suicide") exitwith {format ["%1(%2) committed suicide", _bodyName,_playerID]};
 	};
 	diag_log format["DeathMessage: %1",_message];
 };

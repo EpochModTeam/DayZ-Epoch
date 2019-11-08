@@ -1,7 +1,7 @@
-private ["_ammo","_body","_distance","_infected","_killed","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method","_realSource"];
-
 if (deathHandled) exitWith {};
 deathHandled = true;
+
+private ["_ammo","_body","_distance","_infected","_killed","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method","_realSource","_sourceID"];
 
 // Get reference to player object before respawn into new unit (respawnDelay=0 in description.ext)
 if (typeName (_this select 0) == "ARRAY") then {
@@ -18,6 +18,7 @@ if (typeName (_this select 0) == "ARRAY") then {
 
 _deathPos = getPosATL _body;
 _playerID = getPlayerUID player;
+_sourceID = "0";
 
 //Switch view to camera so player does not see debug plains at respawn_west
 _camera = "camera" camCreate _deathPos;
@@ -43,16 +44,16 @@ if (dayz_onBack != "") then {
 };
 
 //Get killer information immediately. Weapon, distance or vehicle can change in seconds.
-_infected = if (r_player_infected && DZE_PlayerZed) then {1} else {0};
+_infected = [0, 1] select (r_player_infected && {DZE_PlayerZed});
 _sourceName = "unknown";
 _sourceWeapon = "";
 _distance = 0;
 
-_method = switch true do {
-	case (_this select 1 != "find"): {_this select 1}; //Manually passed method
-	case (dayz_lastDamageSource != "none" && diag_tickTime - dayz_lastDamageTime < 30): {dayz_lastDamageSource}; //Major event takes priority for cause of death (zombie, melee, shot, fell, etc.)
-	case (dayz_lastMedicalSource != "none" && diag_tickTime - dayz_lastMedicalTime < 10): {dayz_lastMedicalSource}; //Starve, Dehyd, Sick
-	default {"bled"}; //No other damage sources in last 30 seconds
+_method = call {
+	if (_this select 1 != "find") exitwith {_this select 1}; //Manually passed method
+	if (dayz_lastDamageSource != "none" && {diag_tickTime - dayz_lastDamageTime < 30}) exitwith {dayz_lastDamageSource}; //Major event takes priority for cause of death (zombie, melee, shot, fell, etc.)
+	if (dayz_lastMedicalSource != "none" && {diag_tickTime - dayz_lastMedicalTime < 10}) exitwith {dayz_lastMedicalSource}; //Starve, Dehyd, Sick
+	"bled"; //No other damage sources in last 30 seconds
 };
 _ammo = if (count _this > 2) then {_this select 2} else {""};
 
@@ -60,7 +61,7 @@ if (!isNull _source) then {
 	if (!isNull _body) then {
 		_distance = round (_deathPos distance _source);
 	};
-	
+
 	_sourceVehicleType = typeOf (vehicle _source);
 	_sourceWeapon = currentWeapon _source;
 	_sourceWeapon = switch true do {
@@ -69,9 +70,14 @@ if (!isNull _source) then {
 		case (_sourceWeapon == "Throw"): {(weaponState _source) select 3};
 		default {_sourceWeapon};
 	};
-	
+
 	if (alive _source) then {
-		_sourceName = if (isPlayer _source) then {name _source} else {"AI"};
+		if (isPlayer _source) then {
+			_sourceName = name _source;
+			_sourceID = getPlayerUID _source;
+		} else {
+			_sourceName = "AI";
+		};
 	} else {
 		if (_source == _body) then {_sourceName = dayz_playerName;};
 	};
@@ -79,16 +85,16 @@ if (!isNull _source) then {
 
 //Send Death Notice
 diag_log format["Player_Death: Body:%1 BodyName:%2 Infected:%3 SourceName:%4 SourceWeapon:%5 Distance:%6 Method:%7",_body,dayz_playerName,_infected,_sourceName,_sourceWeapon,_distance,_method];
-PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray dayz_playerName,_infected,toArray _sourceName,_sourceWeapon,_distance,_method]; //Send name as array to avoid publicVariable value restrictions
+PVDZ_plr_Death = [dayz_characterID,0,_body,_playerID,toArray dayz_playerName,_infected,toArray _sourceName,_sourceWeapon,_distance,_method,_sourceID]; //Send name as array to avoid publicVariable value restrictions
 publicVariableServer "PVDZ_plr_Death";
 
 _body setVariable ["deathType", if (_method == "suicide") then {"shot"} else {_method}, true];
 
-if (!local _source && isPlayer _source && !(_body isKindOf "PZombie_VB")) then { //If corpse is a player zombie do not give killer a human or bandit kill
+if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) then { //If corpse is a player zombie do not give killer a human or bandit kill
 	//Values like humanity which were setVariabled onto player before death remain on corpse.
 	_isBandit = (_body getVariable["humanity",0]) <= -2000;
 	//_isBandit = (typeOf _body in ["Bandit1_DZ","BanditW1_DZ"]);
-	
+
 	//if you are a bandit or start first - player will not recieve humanity drop
 	_punishment = (_isBandit or {_body getVariable ["OpenTarget",false]});
 	_humanityHit = 0;
@@ -110,7 +116,7 @@ if (!local _source && isPlayer _source && !(_body isKindOf "PZombie_VB")) then {
 		_killsV = _realSource getVariable ["banditKills",0];
 		_realSource setVariable ["banditKills",(_killsV + 1),true];
 	};
-	
+
 	//Setup for study bodys.
 	_body setVariable ["KillingBlow",[_realSource,_punishment],true];
 };
@@ -177,16 +183,16 @@ if ((_body == (vehicle _body)) && {_animState != "deadstate" && {_animCheck != "
 	publicVariableServer "PVDZ_plr_SwitchMove";
 };
 
-[_body,_camera,_deathPos] spawn {	
+[_body,_camera,_deathPos] spawn {
 	_body = _this select 0;
 	_camera = _this select 1;
 	_deathPos = _this select 2;
-	
+
 	waitUntil {camCommitted _camera};
 	_camera camSetPos [_deathPos select 0, (_deathPos select 1) + 2, (_deathPos select 2) + 15];
 	_camera camCommit 4;
 	uiSleep 5;
-	
+
 	1 cutRsc [if (DZE_DeathScreen) then {"DeathScreen_DZE"} else {"DeathScreen_DZ"},"BLACK OUT",3];
 	playMusic "dayz_track_death_1";
 	uiSleep 2;
@@ -198,7 +204,7 @@ if ((_body == (vehicle _body)) && {_animState != "deadstate" && {_animCheck != "
 
 	PVDZ_Server_Simulation = [_body, false];
 	publicVariableServer "PVDZ_Server_Simulation";
-	
+
 	_camera cameraEffect ["Terminate","BACK"];
 	camDestroy _camera;
 
