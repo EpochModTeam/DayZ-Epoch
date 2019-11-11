@@ -1,13 +1,13 @@
 setMousePosition [0.5, 0.5];
 
-private ["_exit","_nearestObjects","_rID","_display","_cTarget","_dis","_friendlyTo","_lastSave","_startTime"];
+private ["_exit","_nearestObjects","_rID","_display","_cTarget","_dis","_friendlyTo","_lastSave","_startTime","_vehType","_gearSelection","_supplyPositionWorld","_ctType"];
 
 // players inside vehicle can always access its gear
 if ((vehicle player) == player) then {
 	disableSerialization;
 	_display = _this select 0;
 	_cTarget = cursorTarget;
-	_dis = if (_cTarget isKindOf "USEC_ch53_E" || _cTarget isKindOf "MV22") then {25} else {12};
+	_dis = [12,25] select (_cTarget isKindOf "USEC_ch53_E" || {_cTarget isKindOf "MV22"});
 	_exit = false;
 
 	if (!DZE_GearCheckBypass) then {
@@ -33,7 +33,7 @@ if ((vehicle player) == player) then {
 		if (DZE_BackpackAntiTheft) then {
 			_friendlyTo = player getvariable ["friendlyTo",[]];
 			_rID = if (DZE_permanentPlot) then { getPlayerUID _cTarget } else { _cTarget getVariable ["CharacterID","0"] };
-			if ((!canbuild or isInTraderCity) && {alive _cTarget} && {isPlayer _cTarget} && {!(_rID in _friendlyTo) && !(_cTarget in (units group player))} && {(player distance _cTarget) < 12}) then {
+			if ((isInTraderCity || {DZE_PVE_Mode} || {!canbuild}) && {alive _cTarget} && {isPlayer _cTarget} && {!(_rID in _friendlyTo) && !(_cTarget in (units group player))} && {(player distance _cTarget) < 12}) then {
 				localize "STR_EPOCH_PLAYER_316" call dayz_rollingMessages;
 				_display closeDisplay 2;
 			};
