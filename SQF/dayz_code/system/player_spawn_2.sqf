@@ -7,7 +7,6 @@ _isPZombie = player isKindOf "PZombie_VB";
 _radTimer = 0;
 
 _timer = diag_tickTime;
-_timer1 = diag_tickTime;
 _timer30 = diag_Ticktime;
 _timer150 = diag_ticktime;
 _timerMonitor = diag_ticktime;
@@ -344,46 +343,6 @@ while {1 == 1} do {
 		if (_ismelee) then {
 			call dayz_meleeMagazineCheck;
 		};
-	};
-	
-	if ((diag_tickTime - _timer1) > 10) then {
-		_position = getPosATL player;
-			//Other Counters
-		dayz_currentGlobalZombies = count entities "zZombie_Base";
-		_zeds = _position nearEntities ["zZombie_Base",200];
-		dayz_spawnZombies = 0;
-		dayz_CurrentNearByZombies = 0;
-		//Current amounts
-		{
-			if (alive _x) then {
-				if (local _x) then {
-					dayz_spawnZombies = dayz_spawnZombies + 1;
-				};
-				dayz_CurrentNearByZombies = dayz_CurrentNearByZombies + 1;
-			};
-		} count _zeds;
-		
-		//dayz_spawnZombies = {alive _x AND local _x} count (_position nearEntities ["zZombie_Base",400]);
-		//dayz_CurrentNearByZombies = {alive _x} count (_position nearEntities ["zZombie_Base",400]);
-		dayz_currentWeaponHolders = count (_position nearObjects ["ReammoBox",200]);
-		
-		//Remove empty cardborad box's << this needs to be changed moved (action menu or close button)
-		{
-			//get contents
-			_weapons = getWeaponCargo _x;
-			_magazines = getMagazineCargo _x;
-			_backpacks = getBackpackCargo _x;
-			
-			if ((count (_weapons select 0) < 1) and (count (_magazines select 0) < 1) and (count (_backpacks select 0) < 1)) then {
-				//remove vehicle, Need to ask server to remove.
-				diag_log format["Deleting empty nearby box: %1",_x];
-				PVDZ_obj_Delete = [_x,player];
-				publicVariableServer "PVDZ_obj_Delete";
-			};
-		
-		} count (_position nearObjects ["CardboardBox",10]);
-		
-		_timer1 = diag_tickTime;
 	};
 	
 	//Two primary guns pickup exploit fix
