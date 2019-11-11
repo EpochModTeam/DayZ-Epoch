@@ -8,13 +8,7 @@ class ItemHatchet : ItemCore
 	descriptionShort = $STR_EQUIP_DESC_HATCHET;
 	
 	class ItemActions
-	{
-		/* class Use
-		{
-			text = $STR_ACTIONS_CHOPWOOD;
-			script = "spawn player_chopWood;";
-		}; */ //removed in favor of actually needing to use the hatchet as a weapon
-		
+	{		
 		class ToBack
 		{
 			text = $STR_ACTIONS_2BACK;

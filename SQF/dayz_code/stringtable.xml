@@ -1016,14 +1016,6 @@
 			<French>Préparer un feu de camp</French>
 			<Czech>Vytvořit ohniště</Czech>
 		</Key>
-		<Key ID="STR_ACTIONS_CHOPWOOD">
-			<English>Harvest Wood</English>
-			<German>Holz hacken</German>
-			<Russian>Нарубить дров</Russian>
-			<Spanish>Recoger Leña</Spanish>
-			<French>Ramasser du bois</French>
-			<Czech>Nasekat dřevo</Czech>
-		</Key>
 		<Key ID="STR_ACTIONS_MINE_STONE">
 			<English>Harvest Stone</English>
 			<Russian>Добыть камень</Russian>
