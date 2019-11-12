@@ -330,8 +330,7 @@ if (!isDedicated) then {
 	inTraderCity = "Unknown Trader";
 	canPickup = false;
 	pickupInit = false;
-	mouseOverCarry = false; //for carry slot since determining mouse pos doesn't work right	
-	r_player_divideinvehicle = 0;
+	mouseOverCarry = false; //for carry slot since determining mouse pos doesn't work right
 	dayz_currentWeaponHolders = 0;
 	dayz_unsaved = false;
 	dayz_scaleLight = 0;
