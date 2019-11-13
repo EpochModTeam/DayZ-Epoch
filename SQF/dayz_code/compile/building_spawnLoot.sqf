@@ -1,9 +1,14 @@
 /*
 Spawns loot at the given building.
 
-Single parameter:
-	object		building to spawn loot at
-
+Parameters:
+	obj - building to spawn loot at
+	type - classname of building
+	config - building configs (type, loot chance, loot positions. loot refresh timer)
+	
+Usage:
+	[building,classname,_config] call building_spawnLoot;
+	
 Author:
 	Foxy
 */
@@ -11,37 +16,23 @@ Author:
 #include "\z\addons\dayz_code\util\Vector.hpp"
 #include "\z\addons\dayz_code\loot\Loot.hpp"
 
-private
-[
-	"_vectorUp",
-	"_type",
-	"_config",
-	"_lootChance",
-	"_lootPos",
-	"_lootGroup",
-	"_worldPos",
-	"_existingPile",
-	"_loot"
-];
+private ["_vectorUp","_type","_config","_lootChance","_lootPos","_lootGroup","_worldPos","_existingPile","_loot","_obj"];
 
-_vectorUp = vectorUp _this;
+_obj = _this select 0;
+_type = _this select 1;
+_config = _this select 2;
+_vectorUp = vectorUp _obj;
 if (Vector_Angle(Vector_UP,_vectorUp) > 20) exitWith { 0 };
-
-_type = typeOf _this;
-_config = missionConfigFile >> "CfgLoot" >> "Buildings" >> _type;
-
-if (!isClass _config) exitWith {};
-
 _lootChance = getNumber (_config >> "lootChance");
 
-if (_lootChance <= 0 or ([_this] call DZE_SafeZonePosCheck)) exitWith {};
+if (_lootChance <= 0 or ([_obj] call DZE_SafeZonePosCheck)) exitWith {};
 
 _lootPos = getArray (_config >> "lootPos");
 _lootGroup = Loot_GetGroup(getText(_config >> "lootGroup"));
 
 {
 	//Get the world position of the spawn position
-	_worldPos = _this modelToWorld _x;
+	_worldPos = _obj modelToWorld _x;
 	_worldPos set [2, 0 max (_worldPos select 2)];
 	
 	//Delete existing lootpiles within 1m of spawn location
@@ -68,7 +59,7 @@ if (isArray (_config >> "lootPosSmall")) then {
 	if (_lootGroup >= 1) then {
 		{
 			//Get the world position of the spawn position
-			_worldPos = _this modelToWorld _x;
+			_worldPos = _obj modelToWorld _x;
 			_worldPos set [2, 0 max (_worldPos select 2)];
 			//Delete existing lootpiles within 1m of spawn location
 			{
