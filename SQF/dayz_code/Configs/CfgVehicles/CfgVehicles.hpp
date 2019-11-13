@@ -499,12 +499,6 @@ class CfgVehicles
 	#include "Buildings\WaterSources.hpp"
 	#include "Buildings\Land_houseV_2T2.hpp"
 
-	//Duplicates of Epoch items in DZE\Prop_Defs.hpp
-	//#include "CamoNetting.hpp"
-	//#include "Hedgehog.hpp"
-	//#include "Sandbag.hpp"
-
-
 	//WeaponHolder
 	#include "WeaponHolder.hpp"
 
