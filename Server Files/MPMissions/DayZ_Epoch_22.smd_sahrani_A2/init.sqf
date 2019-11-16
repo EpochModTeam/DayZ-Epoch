@@ -99,7 +99,6 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functi
 progressLoadingScreen 0.15;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
 progressLoadingScreen 0.25;
-call compile preprocessFileLineNumbers "server_traders.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\smd_sahrani_a2.sqf"; //Add trader city objects locally on every machine early
 initialized = true;
 
@@ -121,6 +120,8 @@ if (isServer) then {
 };
 
 if (!isDedicated) then {
+	call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\server_traders\smd_sahrani_a2.sqf";
+
 	if (toLower worldName == "chernarus") then {
 		execVM "\z\addons\dayz_code\system\mission\chernarus\hideGlitchObjects.sqf";
 	};

@@ -5,7 +5,7 @@
 //List of files in your mission to check. For example, you may want to add 'custom\variables.sqf' etc.
 //Remove any you aren't using
 _files = [
-	'description.ext','init.sqf','mission.sqm','rules.sqf','server_traders.sqf'
+	'description.ext','init.sqf','mission.sqm','rules.sqf'
 ];
 
 _list = [];
