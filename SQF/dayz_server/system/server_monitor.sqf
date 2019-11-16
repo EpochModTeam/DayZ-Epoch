@@ -463,36 +463,6 @@ execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
 	};
 };
 
-// preload server traders menu data into cache
-if !(DZE_ConfigTrader) then {
-	{
-		// get tids
-		_traderData = call compile format["menu_%1;",_x];
-		if (!isNil "_traderData") then {
-			{
-				_traderid = _x select 1;
-				_retrader = [];
-
-				_key = format["CHILD:399:%1:",_traderid];
-				_data = "HiveEXT" callExtension _key;
-				_result = call compile format["%1",_data];
-				_status = _result select 0;
-		
-				if (_status == "ObjectStreamStart") then {
-					_val = _result select 1;
-					call compile format["ServerTcache_%1 = [];",_traderid];
-					for "_i" from 1 to _val do {
-						_data = "HiveEXT" callExtension _key;
-						_result = call compile format ["%1",_data];
-						call compile format["ServerTcache_%1 set [count ServerTcache_%1,%2]",_traderid,_result];
-						_retrader set [count _retrader,_result];
-					};
-				};
-			} forEach (_traderData select 0);
-		};
-	} forEach serverTraders;
-};
-
 if (_hiveLoaded) then {
 	_serverVehicleCounter spawn {
 		//  spawn_vehicles
@@ -541,9 +511,3 @@ if (_hiveLoaded) then {
 };
 
 [] spawn server_spawnEvents;
-/* //Causes issues with changing clothes
-_debugMarkerPosition = [(respawn_west_original select 0),(respawn_west_original select 1),1];
-_vehicle_0 = createVehicle ["DebugBox_DZ", _debugMarkerPosition, [], 0, "CAN_COLLIDE"];
-_vehicle_0 setPos _debugMarkerPosition;
-_vehicle_0 setVariable ["ObjectID","1",true];
-*/

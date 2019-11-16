@@ -96,9 +96,6 @@ if (isServer) then {
 	"PVDZE_veh_Publish2"	addPublicVariableEventHandler {(_this select 1) call server_publishVeh2}; //Used to purchase vehicles at traders
 	"PVDZE_veh_Upgrade"		addPublicVariableEventHandler {(_this select 1) call server_publishVeh3}; //Used for car upgrades
 	"PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
-	if (!DZE_ConfigTrader) then {
-		"PVDZE_plr_TradeMenu"	addPublicVariableEventHandler {(_this select 1) spawn server_traders};
-	};
 	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
 	"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) call server_handleSafeGear};
 	if (dayz_groupSystem) then {

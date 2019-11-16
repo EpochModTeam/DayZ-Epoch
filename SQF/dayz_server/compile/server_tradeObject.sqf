@@ -31,17 +31,7 @@ if (_buyorsell == 0) then { // Buy
 };
 
 diag_log _message;
-if (DZE_ConfigTrader) then {
-	_outcome = "PASS";
-} else {
-	//Send request
-	_key = format["CHILD:398:%1:%2:",_traderID,_buyorsell];
-
-	_data = "HiveEXT" callExtension _key;
-	_result = call compile format ["%1",_data];
-	// diag_log ("TRADE: RES: "+ str(_result));
-	_outcome = _result select 0;
-};
+_outcome = "PASS";
 
 if (_return) then {
 	dayzTradeResult = _outcome;

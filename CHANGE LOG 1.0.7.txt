@@ -42,4 +42,6 @@
 [UPDATED] "PVCDZ_OpenTarget_Reset" moved to client only - publicEH.sqf. (58a98b7) @worldwidesorrow
 [UPDATED] Many unused trader cites got moved into a new folder called 'Archive'. Those files will no longer be updated. @AirwavesMan
 
+[REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. @AirwavesMan
+
 [INFO] Synced with DayZMod upstream up to commit fe063a8
