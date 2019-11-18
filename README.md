@@ -68,6 +68,8 @@ GitHub Collaborators (In order of most commits)
 * oiad - https://github.com/oiad
 * AirwavesMan - https://github.com/AirwavesMan
 * Seelenapparat - https://github.com/seelenapparat
+* worldwidesorrow - https://github.com/worldwidesorrow
+* ArmaWizard - https://github.com/ArmaWizard
 
 --------------------------
 GitHub Contributors (In order of most commits)
