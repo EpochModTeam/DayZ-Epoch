@@ -781,6 +781,58 @@ class bloodTest
 };
 
 #include "RscDisplay\includes.hpp"
+
+//Override BIS Loadscreen
+class RscDisplayLoadCustom
+{
+	idd = -1;
+	onLoad = "uiNamespace setVariable ['BIS_loadingScreen',_this select 0];";
+
+    class ControlsBackground
+    {
+		class RscText_1000: RscText
+		{
+			idc = 202020;
+			x = -0.0737532 * safezoneW + safezoneX;
+			y = -0.132295 * safezoneH + safezoneY;
+			w = 1.1604 * safezoneW;
+			h = 1.19586 * safezoneH;
+			colorBackground[] = {0,0,0,1};
+		};
+
+		class RscPicture_1200: RscPicture
+		{
+			idc = 1200;
+			text = "#(argb,8,8,3)color(0,0,0,1)";
+			x = 0.242133 * safezoneW + safezoneX;
+			y = 0.00516077 * safezoneH + safezoneY;
+			w = 0.515733 * safezoneW;
+			h = 0.962187 * safezoneH;
+		};
+
+    };
+    
+    class controls
+    {
+        
+		class RscStructuredText_1101: RscStructuredText
+		{
+			idc = 8400;
+			x = 0.242133 * safezoneW + safezoneX;
+			y = 0.926112 * safezoneH + safezoneY;
+			w = 0.515733 * safezoneW;
+			h = 0.0274911 * safezoneH;
+		};
+		class RscStructuredText_1100: RscStructuredText
+		{
+			idc = 102;
+			x = 0.92548 * safezoneW + safezoneX;
+			y = 0.926112 * safezoneH + safezoneY;
+			w = 0.04 * safezoneW;
+			h = 0.0274911 * safezoneH;
+		};
+    }; 
+};
 class RscDisplayDSinterface: RscStandardDisplay
 {
 	idd = 155;
