@@ -2,7 +2,7 @@ class LAV25;
 class LAV25_DZ: LAV25 {
 	scope = public;
 	side = TGuerrila;
-	displayName = "LAV-25 DZ";
+	displayName = $STR_VEH_NAME_LAV25;
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -24,7 +24,7 @@ class LAV25_HQ;
 class LAV25_HQ_DZ: LAV25_HQ {
 	scope = public;
 	side = TGuerrila;
-	displayName = "LAV-25 (HQ) DZ";
+	displayName = $STR_VEH_NAME_LAV25_HQ;
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -34,8 +34,6 @@ class LAV25_HQ_DZ: LAV25_HQ {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-
-	transportSoldier = 6;
 
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 10; // Default: 10
@@ -47,7 +45,6 @@ class LAV25_HQ_DZ: LAV25_HQ {
 
 // Ammo Less
 class LAV25_DZE: LAV25_DZ {
-	displayName = "LAV-25 AL";
 	class Turrets: Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
@@ -55,7 +52,6 @@ class LAV25_DZE: LAV25_DZ {
 	};
 };
 class LAV25_HQ_DZE: LAV25_HQ_DZ {
-	displayName = "LAV-25 (HQ) AL";
 	class Turrets: Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
