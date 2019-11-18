@@ -723,6 +723,29 @@ class CfgSounds {
 		titles[] = {};
 	};
 
+	class z_safeopen_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_safeopen.ogg",1,1,30};
+		titles[] = {};
+	};
+	class z_safeclose_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_safeclose.ogg",1,1,30};
+		titles[] = {};
+	};
+	
+	class z_lockboxopen_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_lockboxopen.ogg",1,1,30};
+		titles[] = {};
+	};
+	
+	class z_lockboxclose_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_lockboxclose.ogg",1,1,30};
+		titles[] = {};
+	};
+	
 	class z_radzone1_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\geiger_level_0.ogg",1,1,10};
