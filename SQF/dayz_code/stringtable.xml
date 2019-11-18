@@ -8115,13 +8115,26 @@
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED">
 			<English>Pick-up covered (red)</English>
 			<German>Pick-up abgedeckt (rot)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_BLUE">
+			<English>Pick-up (blue)</English>
+			<German>Pick-up (blau)</German>
 		</Key>	
+		<Key ID="STR_VEH_NAME_PICKUP_GREY">
+			<English>Pick-up (grey)</English>
+			<German>Pick-up (grau)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN">
+			<English>Pick-up covered (tan)</English>
+			<German>Pick-up abgedeckt (gelbbraun)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_KAMAZ">
-			<English>Kamaz (open)</English>
-			<German>Kamaz (offen)</German>
+			<English>Kamaz open (Woodland)</English>
+			<German>Kamaz offen (Waldtarn)</German>
 		</Key>	
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT">
-			<English>Kamaz</English>
+			<English>Kamaz (Woodland)</English>
+			<German>Kamaz (Waldtarn)</German>
 		</Key>	
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL">
 			<English>Kamaz (Fuel)</English>
@@ -8203,12 +8216,12 @@
 			<German>MTVR (Wüstentarn)</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL">
-			<English>MTVR Fuel (Woodland)</English>
-			<German>MTVR Treibstoff (Waldtarn)</German>
+			<English>MTVR Woodland (Fuel)</English>
+			<German>MTVR Waldtarn (Treibstoff)</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL">
-			<English>MTVR Fuel (Desert)</English>
-			<German>MTVR Treibstoff (Wüstentarn)</German>
+			<English>MTVR Desert (Fuel)</English>
+			<German>MTVR Wüstentarn (Treibstoff)</German>
 		</Key>	
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM">
 			<English>Pick-up (DSHKM)</English>

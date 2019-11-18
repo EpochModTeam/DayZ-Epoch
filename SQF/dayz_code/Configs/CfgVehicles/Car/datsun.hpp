@@ -1,5 +1,6 @@
 class datsun1_civil_1_open;
 class datsun1_civil_1_open_DZE: datsun1_civil_1_open {
+	displayname = $STR_VEH_NAME_PICKUP_BLUE;
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
@@ -14,6 +15,7 @@ class datsun1_civil_1_open_DZE: datsun1_civil_1_open {
 };
 class datsun1_civil_2_covered;
 class datsun1_civil_2_covered_DZE: datsun1_civil_2_covered {
+	displayname = $STR_VEH_NAME_PICKUP_COVERED_TAN;
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
@@ -28,6 +30,7 @@ class datsun1_civil_2_covered_DZE: datsun1_civil_2_covered {
 };
 class datsun1_civil_3_open;
 class datsun1_civil_3_open_DZE: datsun1_civil_3_open {
+	displayname = $STR_VEH_NAME_PICKUP_GREY;
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
