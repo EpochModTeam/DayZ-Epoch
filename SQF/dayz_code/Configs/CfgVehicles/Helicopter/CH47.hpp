@@ -177,7 +177,7 @@ class CH_47F_EP1_DZE: CH47_base_EP1
 			gunEnd = "chamber_1";
 			weapons[] = {"M134"};
 			magazines[] = {};
-			gunnerName = "crew chief";
+			gunnerName = $STR_POSITION_CREWCHIEF;
 			gunnerOpticsModel = "\ca\weapons\optika_empty";
 			gunnerOutOpticsShowCursor = 1;
 			gunnerOpticsShowCursor = 1;
@@ -216,7 +216,7 @@ class CH_47F_EP1_DZE: CH47_base_EP1
 			stabilizedInAxes = "StabilizedInAxesNone";
 			selectionFireAnim = "zasleh_1";
 			proxyIndex = 2;
-			gunnerName = "door gunner";
+			gunnerName = $STR_POSITION_DOORGUNNER;
 			commanding = -3;
 			weapons[] = {"M134_2"};
 			gunBeg = "muzzle_2";
@@ -240,7 +240,7 @@ class CH_47F_EP1_DZE: CH47_base_EP1
 			stabilizedInAxes = "StabilizedInAxesNone";
 			selectionFireAnim = "zasleh_3";
 			proxyIndex = 3;
-			gunnerName = "rear gunner";
+			gunnerName = $STR_POSITION_REARGUNNER;
 			gunnerOpticsShowCursor = 0;
 			commanding = -1;
 			gunnerAction = "CH47_Gunner01_EP1";

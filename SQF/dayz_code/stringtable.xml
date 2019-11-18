@@ -17937,6 +17937,18 @@
 			<German>HC3 Merlin Wrack</German>
 		</Key>		
 		
+		<Key ID="STR_POSITION_VEH_FRONT_GUNNER">
+			<English>front gunner</English>
+			<German>Frontschütze</German>
+			<Italian>Artigliere anteriore</Italian>
+			<Spanish>artillero delantero</Spanish>
+			<French>Tireur avant</French>
+			<Czech>Přední střelec</Czech>
+			<Russian>Стрелок (нос)</Russian>
+			<Polish>Przedni strzelec</Polish>
+			<Hungarian>Első lövész</Hungarian>			
+		</Key>	
+		
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>
