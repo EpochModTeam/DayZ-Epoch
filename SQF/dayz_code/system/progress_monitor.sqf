@@ -32,10 +32,10 @@ while {true} do {
 		_image ctrlSetText getText(missionConfigFile >> "loadScreen");
 		if (dayz_loadScreenMsg != "" ) then {
 			_control1 = _display displayctrl 8400;
-			_control1 ctrlSetStructuredText parseText format["<t color='#FFFFFF' align='center'>%1</t>",dayz_loadScreenMsg];
+			_control1 ctrlSetStructuredText parseText format["<t align='center'>%1</t>",dayz_loadScreenMsg];
 		};
 		_control2 = _display displayctrl 102;
-		_control2 ctrlSetStructuredText parseText format["<t color='#FFFFFF' align='center'>%1</t>",floor(diag_ticktime - _timeoutStart)];
+		_control2 ctrlSetStructuredText parseText format["<t align='center'>%1</t>",floor(diag_ticktime - _timeoutStart)];
 		
 		_bar = _display displayCtrl 1010;
 		_bar progressSetPosition dayz_progressBarValue;
