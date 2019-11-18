@@ -43,6 +43,12 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	dayz_lastCodeFail = 0;
 
 	[_unlockedClass,objNull] call fn_waitForObject;
+	
+	if (_unlockedClass == "LockboxStorage") then {
+		[player,"lockboxopen",0,false] call dayz_zombieSpeak;
+	} else {
+		[player,"safeopen",0,false] call dayz_zombieSpeak;
+	};
 
 	PVDZE_handleSafeGear = [player,_obj,0];
 	publicVariableServer "PVDZE_handleSafeGear";
