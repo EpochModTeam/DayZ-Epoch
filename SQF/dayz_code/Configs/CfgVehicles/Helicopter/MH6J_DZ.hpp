@@ -6,7 +6,6 @@ class MH6J_DZ: AH6_Base_EP1
 	enablemanualfire = 0;
 	typicalCargo[] = {};
 	displayname = $STR_VEH_NAME_MH6J;
-	displaynameshort = $STR_EP1_DN_MH6J;
 	hiddenselections[] = {"camo1", "camo2"};
 	transportsoldier = 5;
 	hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa", "ca\air_e\ah6j\data\default_co.paa"};
@@ -24,5 +23,6 @@ class MH6J_DZ: AH6_Base_EP1
 	transportMaxWeapons = 3;
 	transportMaxMagazines = 20;
 	transportmaxbackpacks = 3;
+	fuelCapacity = 242;
 	class Turrets {};
 };	
