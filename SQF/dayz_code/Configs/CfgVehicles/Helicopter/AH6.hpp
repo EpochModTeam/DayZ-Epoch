@@ -2,7 +2,7 @@ class AH6J_EP1_DZ: AH6_Base_EP1
 {
 	scope = public;
 	side = 2;
-	displayName = "AH6J_DZ";
+	displayName = $STR_VEH_NAME_AH6J;
 	crew = "";
 	typicalCargo[] = {};
 	weapons[] = {"TwinM134","CMFlareLauncher"};
@@ -47,7 +47,7 @@ class AH6J_EP1_DZE: AH6J_EP1_DZ
 {
 	scope = public;
 	side = 2;
-	displayName = "AH6J_DZE";
+	displayName = $STR_VEH_NAME_AH6J;
 	magazines[] = {"60Rnd_CMFlareMagazine"};
 };
 
