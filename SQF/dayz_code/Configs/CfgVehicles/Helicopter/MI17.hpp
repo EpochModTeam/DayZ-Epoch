@@ -322,6 +322,67 @@ class Mi171Sh_CZ_EP1_DZ: Mi17_base {
 	};
 };
 
+class Mi171Sh_CZ_EP1_DZE: Mi171Sh_CZ_EP1_DZ {
+	class Turrets : Turrets {
+		class LeftTurret : MainTurret {
+			proxyIndex = 2;
+			commanding = -1;
+			primaryGunner = 0;
+			gunnerName = $STR_POSITION_DOORGUNNER;
+			minElev = -50;
+			maxElev = 30;
+			initElev = 11;
+			minTurn = 20;
+			maxTurn = 155;
+			initTurn = 80;
+			magazines[] = {};
+		};
+		
+		class BackTurret : BackTurret {
+			gunnerName = $STR_POSITION_REARGUNNER;
+			primaryGunner = 1;
+			commanding = -3;
+			proxyIndex = 3;
+			gunnerAction = "Mi171_Gunner_EP1";
+			gunnerInAction = "Mi171_Gunner_EP1";
+			minTurn = 130;
+			maxTurn = 230;
+			initTurn = 180;
+			minElev = -50;
+			maxElev = 10;
+			initElev = 0;
+			magazines[] = {};
+		};
+		
+		class RightTurret : MainTurret {
+			proxyIndex = 1;
+			gunnerName = $STR_POSITION_CREWCHIEF;
+			body = "Turret_3";
+			gun = "Gun_3";
+			animationSourceBody = "Turret_3";
+			animationSourceGun = "Gun_3";
+			minElev = -60;
+			maxElev = 30;
+			initElev = 11;
+			minTurn = -155;
+			maxTurn = -30;
+			initTurn = -70;
+			weapons[] = {PKT_3};
+			stabilizedInAxes = "StabilizedInAxesNone";
+			gunBeg = "muzzle_3";	// endpoint of the gun
+			gunEnd = "chamber_3";	// chamber of the gun
+			gunnerAction = "Mi8_Gunner";
+			gunnerInAction = "Mi8_Gunner";
+			memoryPointGun = "muzzle_3";
+			memoryPointGunnerOptics = "gunnerview3";
+			selectionFireAnim = "zasleh3";
+			primaryGunner = 0;
+			commanding = -1;
+			magazines[] = {};
+		};
+	};
+};
+
 //Unarmed
 class Mi17_Civilian;
 class Mi17_Civilian_DZ: Mi17_Civilian	 {
