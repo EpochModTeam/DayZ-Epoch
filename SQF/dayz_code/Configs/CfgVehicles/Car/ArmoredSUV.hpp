@@ -285,7 +285,7 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 	scope = public;
 	side = 2;
 	faction = "PMC_BAF";
-	displayName = "SUV (Armored) DZ";
+	displayName = $STR_VEH_NAME_SUV_ARMORED;
 	crew = "";
 	armor = 80;
 	typicalCargo[] = {};
@@ -355,8 +355,8 @@ class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
 	scope = public;
 	side = 2;
 	faction = "PMC_BAF";
+	displayName = $STR_VEH_NAME_SUV_ARMORED;
 	armor = 80;
-	displayName = "SUV (Armored) AL";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

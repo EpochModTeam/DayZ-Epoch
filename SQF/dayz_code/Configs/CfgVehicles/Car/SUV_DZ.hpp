@@ -81,6 +81,7 @@ class SUV_DZ: SUV_Base_EP1 {
 	};
 };
 class SUV_TK_CIV_EP1: SUV_Base_EP1 {
+	displayName = $STR_VEH_NAME_SUV_BLACK;
 	scope = public;
 	crew = "";
 	typicalCargo[] = {};
@@ -97,7 +98,7 @@ class SUV_TK_CIV_EP1: SUV_Base_EP1 {
 
 // Camo
 class SUV_Camo: SUV_TK_CIV_EP1 {
-	displayName = "SUV Camo";
+	displayName = $STR_VEH_NAME_SUV_CAMO;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\camo10.paa"};
 
 	class Upgrades {
@@ -107,7 +108,7 @@ class SUV_Camo: SUV_TK_CIV_EP1 {
 
 // SUV RECOLORS
 class SUV_Blue: SUV_TK_CIV_EP1 {
-	displayName = "SUV Blue";
+	displayName = $STR_VEH_NAME_SUV_BLUE;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_blue_co.paa"};
 
 	class Upgrades {
@@ -115,7 +116,7 @@ class SUV_Blue: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_Green: SUV_TK_CIV_EP1 {
-	displayName = "SUV Green";
+	displayName = $STR_VEH_NAME_SUV_GREEN;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_green_co.paa"};
 
 	class Upgrades {
@@ -123,7 +124,7 @@ class SUV_Green: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_Yellow: SUV_TK_CIV_EP1 {
-	displayName = "SUV Yellow";
+	displayName = $STR_VEH_NAME_SUV_YELLOW;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_yellow_co.paa"};
 
 	class Upgrades {
@@ -131,7 +132,7 @@ class SUV_Yellow: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_Red: SUV_TK_CIV_EP1 {
-	displayName = "SUV Red";
+	displayName = $STR_VEH_NAME_SUV_RED;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_red_co.paa"};
 
 	class Upgrades {
@@ -139,7 +140,7 @@ class SUV_Red: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_White: SUV_TK_CIV_EP1 {
-	displayName = "SUV White";
+	displayName = $STR_VEH_NAME_SUV_WHITE;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_white_co.paa"};
 
 	class Upgrades {
@@ -147,7 +148,7 @@ class SUV_White: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_Pink: SUV_TK_CIV_EP1 {
-	displayName = "SUV Pink";
+	displayName = $STR_VEH_NAME_SUV_PINK;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_pink_co.paa"};
 
 	class Upgrades {
@@ -155,7 +156,7 @@ class SUV_Pink: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_Charcoal: SUV_TK_CIV_EP1 {
-	displayName = "SUV Charcoal";
+	displayName = $STR_VEH_NAME_SUV_GREY;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_charcoal_co.paa"};
 
 	class Upgrades {
@@ -163,7 +164,7 @@ class SUV_Charcoal: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_Orange: SUV_TK_CIV_EP1 {
-	displayName = "SUV Orange";
+	displayName = $STR_VEH_NAME_SUV_ORANGE;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_orange_co.paa"};
 
 	class Upgrades {
@@ -171,7 +172,7 @@ class SUV_Orange: SUV_TK_CIV_EP1 {
 	};
 };
 class SUV_Silver: SUV_TK_CIV_EP1 {
-	displayName = "SUV Silver";
+	displayName = $STR_VEH_NAME_SUV_SILVER;
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_silver_co.paa"};
 
 	class Upgrades {

@@ -14,7 +14,7 @@ class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_base
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	displayName = "Off-road (DShKM) DZ";
+	displayName = $STR_VEH_NAME_PICKUP_DSHKM;
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hilux_armed\data\coyota_trup4_CO.paa"};
 	class Damage
 	{
@@ -59,7 +59,7 @@ class Offroad_DSHKM_Gue_DZE: Offroad_DSHKM_base
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	displayName = "Off-road (DShKM) AL";
+	displayName = $STR_VEH_NAME_PICKUP_DSHKM;
 	hiddenSelectionsTextures[] = {"\ca\wheeled\hilux_armed\data\coyota_trup4_CO.paa"};
 	class Damage
 	{

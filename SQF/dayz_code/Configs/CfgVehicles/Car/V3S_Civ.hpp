@@ -1,5 +1,6 @@
 class V3S_Civ : V3S_Base 
 {
+	displayname = $STR_VEH_NAME_V3S_CAMO_OPEN;
 	crew = "";
 	faction = "CIV";
 	rarityurban = 0.3;
@@ -16,12 +17,14 @@ class V3S_Civ : V3S_Base
 
 class V3S_Base_EP1;
 class V3S_Open_TK_CIV_EP1: V3S_Base_EP1 {
+	displayname = $STR_VEH_NAME_V3S_CIVIL_OPEN;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 };
 class V3S_Open_TK_EP1: V3S_Base_EP1 {
+	displayname = $STR_VEH_NAME_V3S_CAMO_OPEN;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -29,12 +32,12 @@ class V3S_Open_TK_EP1: V3S_Base_EP1 {
 };
 class V3S_TK_EP1_DZE: V3S_Base_EP1 {
 	scope = public;
+	displayname = $STR_VEH_NAME_V3S;
 	side = 0;
 	faction = "BIS_TK";
 	crew = "";
 	typicalCargo[] = {};
 	model = "\ca\wheeled_E\V3S\V3S_transport";
-	displayname = "V3S";
 	driverAction = "V3S_Driver_EP1";
 	class TransportMagazines {};
 	class TransportWeapons {};
@@ -47,7 +50,7 @@ class V3S_RA_TK_GUE_EP1_DZE: V3S_Base_EP1 {
 	//armor = 40;
 	typicalCargo[] = {};
 	vehicleClass = "Support";
-	displayname = "V3S Reammo";
+	displayname = $STR_VEH_NAME_V3S_REAMMO;
 	model = "\ca\wheeled_E\V3S\V3S_Repair";
 	Icon = "\CA\wheeled_e\data\UI\Icon_V3S_repair_CA.paa";
 	Picture = "\CA\wheeled_e\data\UI\Picture_V3S_repair_CA.paa";
@@ -67,6 +70,7 @@ class V3S_RA_TK_GUE_EP1_DZE: V3S_Base_EP1 {
 };
 class V3S_Refuel_TK_GUE_EP1;
 class V3S_Refuel_TK_GUE_EP1_DZ: V3S_Refuel_TK_GUE_EP1 {
+	displayname = $STR_VEH_NAME_V3S_FUEL;
 	scope = public;
 	side = 2;
 	crew = "";

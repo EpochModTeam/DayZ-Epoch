@@ -13,7 +13,6 @@ class Mi17_base: Helicopter  {
 //Armed
 class Mi17_DZ: Mi17_base	 {
 	displayname = $STR_VEH_NAME_MI17;
-	displaynameshort = "Mi-17";
 	scope = public;
 	side = 2;
 	crew = "";
@@ -49,8 +48,7 @@ class Mi17_DZE: Mi17_DZ	 {
 };
 
 class Mi17_TK_EP1_DZ: Mi17_base  {
-	displayname = "Mi-17 (TK)";
-	displaynameshort = "Mi-17 (TK)";
+	displayname = $STR_VEH_NAME_MI17_TK;
 	scope = public;
 	side = 2;
 	crew = "";
@@ -87,8 +85,7 @@ class Mi17_TK_EP1_DZE: Mi17_TK_EP1_DZ	 {
 };
 
 class Mi17_UN_CDF_EP1_DZ: Mi17_base  {
-	displayname = "Mi-17 (UN)";
-	displaynameshort = "Mi-17 (UN)";
+	displayname = $STR_VEH_NAME_MI17_UN;
 	scope = public;
 	side = 2;
 	crew = "";
@@ -125,8 +122,7 @@ class Mi17_UN_CDF_EP1_DZE: Mi17_UN_CDF_EP1_DZ	 {
 };
 
 class Mi17_CDF_DZ: Mi17_base {
-	displayname = "Mi-17 (CDF)";
-	displaynameshort = "Mi-17 (CDF)";
+	displayname = $STR_VEH_NAME_MI17_CDF;
 	scope = public;
 	side = 2;
 	crew = "";
@@ -163,8 +159,7 @@ class Mi17_CDF_DZE: Mi17_CDF_DZ	 {
 };
 
 class Mi171Sh_CZ_EP1_DZ: Mi17_base {
-	displayname = "Mi-171 (Sh)";
-	displaynameshort = "Mi-171 (Sh)";
+	displayname = $STR_VEH_NAME_MI17_SH;
 	scope = public;
 	side = 2;
 	crew = "";
@@ -385,9 +380,8 @@ class Mi171Sh_CZ_EP1_DZE: Mi171Sh_CZ_EP1_DZ {
 
 //Unarmed
 class Mi17_Civilian;
-class Mi17_Civilian_DZ: Mi17_Civilian	 {
-	displayname = "Mi-17 (Civilian)";
-	displaynameshort = "Mi-17 (Civ)";
+class Mi17_Civilian_DZ: Mi17_Civilian {
+	displayname = $STR_VEH_NAME_MI17_CIVIL;
 	scope = public;
 	side = 3;
 	crew = "";
@@ -404,8 +398,7 @@ class Mi17_Civilian_DZ: Mi17_Civilian	 {
 
 class Mi17_medevac_CDF;
 class Mi17_medevac_CDF_DZ: Mi17_medevac_CDF {
-	displayname = "Mi-17 MedEvac (CDF)";
-	displaynameshort = "Mi-17 MedEvac (CDF)";
+	displayname = $STR_VEH_NAME_MI17_MEDEVAC_CDF;
 	scope = public;
 	side = 3;
 	crew = "";
@@ -423,8 +416,7 @@ class Mi17_medevac_CDF_DZ: Mi17_medevac_CDF {
 
 class Mi17_medevac_Ins;
 class Mi17_medevac_Ins_DZ: Mi17_medevac_Ins {
-	displayname = "Mi-17 MedEvac (Ins)";
-	displaynameshort = "Mi-17 MedEvac (Ins)";
+	displayname = $STR_VEH_NAME_MI17_MEDEVAC_INS;
 	scope = public;
 	side = 3;
 	crew = "";
@@ -442,8 +434,7 @@ class Mi17_medevac_Ins_DZ: Mi17_medevac_Ins {
 
 class Mi17_medevac_RU;
 class Mi17_medevac_RU_DZ: Mi17_medevac_RU {
-	displayname = "Mi-17 MedEvac (RU)";
-	displaynameshort = "Mi-17 MedEvac (RU)";
+	displayname = $STR_VEH_NAME_MI17_MEDEVAC_RU;
 	scope = public;
 	side = 3;
 	crew = "";

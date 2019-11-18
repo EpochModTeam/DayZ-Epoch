@@ -2,7 +2,7 @@ class BTR90;
 class BTR90_DZ: BTR90 {
 	scope = public;
 	side = TGuerrila;
-	displayName = "BTR-90 DZ";
+	displayName = $STR_VEH_NAME_BTR90;
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -24,7 +24,7 @@ class BTR90_HQ;
 class BTR90_HQ_DZ: BTR90_HQ {
 	scope = public;
 	side = TGuerrila;
-	displayName = "BTR-90 (HQ) DZ";
+	displayName = $STR_VEH_NAME_BTR90_HQ;
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -47,7 +47,7 @@ class BTR90_HQ_DZ: BTR90_HQ {
 
 // Ammo Less
 class BTR90_DZE: BTR90_DZ {
-	displayName = "BTR-90 AL";
+	displayName = $STR_VEH_NAME_BTR90;
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			magazines[] = {};
@@ -55,7 +55,7 @@ class BTR90_DZE: BTR90_DZ {
 	};
 };
 class BTR90_HQ_DZE: BTR90_HQ_DZ {
-	displayName = "BTR-90 (HQ) AL";
+	displayName = $STR_VEH_NAME_BTR90_HQ;
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			magazines[] = {};

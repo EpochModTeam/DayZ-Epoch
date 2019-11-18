@@ -16,8 +16,7 @@ class UH1H_base: Helicopter
 
 class UH1H_DZ: UH1H_base
 {
-	displayname = "UH-1H (Green Camo)";
-	displaynameshort = "UH-1H (Green Camo)";
+	displayname = $STR_VEH_NAME_UH1H_WOODLAND;
 	scope = public;
 	side = 2;
 	crew = "";
@@ -48,8 +47,7 @@ class UH1H_DZ: UH1H_base
 
 class UH1H_2_DZ : UH1H_DZ
 {
-	displayname = "UH-1H (Desert Camo)";
-	displaynameshort = "UH-1H (Desert Camo)";	
+	displayname = $STR_VEH_NAME_UH1H_DESERT;
 	hiddenSelections[] = {"Camo1","Camo2","Camo_mlod"};
 	hiddenSelectionsTextures[] =
 	{

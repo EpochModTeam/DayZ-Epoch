@@ -1,6 +1,6 @@
 class car_sedan : SkodaBase {
 	crew = "";
-	displayname = $STR_DN_SEDAN;
+	displayname = $STR_VEH_NAME_SEDAN_WHITE;
 	faction = "CIV";
 	maxspeed = 125;
 	scope = public;
@@ -12,13 +12,7 @@ class car_sedan : SkodaBase {
 		ItemORP[] = {"car_sedan_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-/* //Removed from dayz_vehicles
-class policecar: car_sedan {
-	class Upgrades {
-		ItemORP[] = {};
-	};
-};
-*/
+
 // Performance 1
 class car_sedan_DZE1: car_sedan {
 	original = "car_sedan";

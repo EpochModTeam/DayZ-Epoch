@@ -1,4 +1,5 @@
 class MTVR : Truck {
+	displayName = $STR_VEH_NAME_MTVR_WOODLAND;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -7,6 +8,7 @@ class MTVR : Truck {
 
 class MTVR_base;
 class MTVR_DES_EP1 : MTVR_base {
+	displayName = $STR_VEH_NAME_MTVR_DESERT;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -32,7 +34,7 @@ class MtvrRefuel_DES_EP1_DZ : MtvrRefuel_base {
 	scope = public;
 	side = 2;
 	crew = "";
-	displayName = "MTVR (Fuel)";
+	displayName = $STR_VEH_NAME_MTVR_DESERT_REFUEL;
 	typicalCargo[] = {};
 	hiddenSelectionsTextures[] = { "\CA\wheeled_E\MTVR\Data\MTVR_body_desert_co.paa", "\CA\wheeled_E\MTVR\Data\MTVR_body2_desert_co.paa", "\CA\wheeled_E\MTVR\Data\MTVR_interier_desert_co.paa", "\CA\wheeled_E\MTVR\Data\MTVR_Fuel_desert_CO.paa" };
 	class TransportMagazines{};
@@ -45,6 +47,7 @@ class MtvrRefuel_DZ: MtvrRefuel {
 	scope = public;
 	side = 2;
 	crew = "";
+	displayName = $STR_VEH_NAME_MTVR_WOODLAND_REFUEL;
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
 	transportMaxWeapons = 50;

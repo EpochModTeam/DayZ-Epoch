@@ -2,8 +2,7 @@ class USEC_ch53_E;
 class CH53_DZE : USEC_ch53_E {
 	scope = public;
 	side = 2;
-	displayname = "USEC CH53E DZE";
-	displaynameshort = "CH53_DZE";
+	displayname = $STR_VEH_NAME_CH53;
 	destrType = "DestructWreck";
 	enablemanualfire = 0;
 	crew = "";

@@ -26,7 +26,7 @@ class MH60S_DZ : UH60_Base {
 	transportMaxBackpacks = 5;
 	scope = public;
 	accuracy = 1.5;	// accuracy needed to recognize type of this target
-	displayName = "MH-60S DZ";
+	displayName = $STR_VEH_NAME_MH60;
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			body = "mainTurret";
@@ -242,7 +242,7 @@ class UH60M_base_EP1: UH60_Base {
 	expansion = 1;
 	scope = private;
 	model = "\Ca\Air_E\UH60M\UH60M.p3d";
-	displayName = "UH-60";
+	displayName = $STR_VEH_NAME_UH60;
 	destrType = "DestructWreck";
 	picture = "\ca\air_e\data\UI\Picture_uh60m_CA.paa";
 	icon = "\ca\air_e\data\UI\Icon_uh60m_CA.paa";
@@ -375,7 +375,7 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1 {
 	transportmaxbackpacks = 5;
 	scope = public;
 	accuracy = 1.5;
-	displayName = "UH-60M DZ";
+	displayName = $STR_VEH_NAME_UH60;
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
@@ -452,7 +452,7 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1 {
 };
 // AMMO LESS
 class MH60S_DZE : MH60S_DZ {
-	displayName = "MH-60S AL";
+	displayName = $STR_VEH_NAME_MH60;
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
@@ -475,7 +475,7 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1 {
 	transportmaxbackpacks = 5;
 	scope = public;
 	accuracy = 1.5;
-	displayName = "UH-60M AL";
+	displayName = $STR_VEH_NAME_UH60;
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
@@ -554,8 +554,7 @@ class UH60M_EP1_DZE: UH60M_US_base_EP1 {
 // Unarmed medevac
 class UH60M_MEV_EP1;
 class UH60M_MEV_EP1_DZ : UH60M_MEV_EP1 {
-	displayname = "UH-60M MedEvac";
-	displaynameshort = "UH-60M MedEvac";
+	displayname = $STR_VEH_NAME_HH60;
 	scope = public; 
 	crew = ""; 
 	typicalCargo[] = {}; 

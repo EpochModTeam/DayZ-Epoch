@@ -234,14 +234,21 @@ class LandRover_Base: Car
 };
 
 class LandRover_CZ_EP1: LandRover_Base {
+	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_DESERT;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 };
-class LandRover_TK_CIV_EP1: LandRover_CZ_EP1 {};
-class BAF_Offroad_D: LandRover_CZ_EP1 {};
-class BAF_Offroad_W: BAF_Offroad_D {};
+class LandRover_TK_CIV_EP1: LandRover_CZ_EP1 {
+	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_RED;
+};
+class BAF_Offroad_D: LandRover_CZ_EP1 {
+	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_DESERT;
+};
+class BAF_Offroad_W: BAF_Offroad_D {
+	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND;
+};
 
 class LandRover_Special_CZ_EP1_DZ: LandRover_Base
 {
@@ -251,7 +258,7 @@ class LandRover_Special_CZ_EP1_DZ: LandRover_Base
 	crew = "";
 	typicalCargo[] = {};
 	model = "\ca\wheeled_E\LR\LR_Special";
-	displayname = "Military Offroad Special DZ";
+	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL;
 	Picture = "\CA\wheeled_e\Data\UI\Picture_lr_special_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_lr_special_CA.paa";
 	transportSoldier = 2;
@@ -384,7 +391,7 @@ class LandRover_Special_CZ_EP1_DZE: LandRover_Base
 	crew = "";
 	typicalCargo[] = {};
 	model = "\ca\wheeled_E\LR\LR_Special";
-	displayname = "Military Offroad Special AL";
+	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL;
 	Picture = "\CA\wheeled_e\Data\UI\Picture_lr_special_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_lr_special_CA.paa";
 	transportSoldier = 2;
@@ -518,10 +525,9 @@ class LandRover_MG_TK_EP1_DZ: LandRover_Base
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
-	class TransportWeapons {};
-	
+	class TransportWeapons {};	
 	model = "\ca\wheeled_E\LR\LR_MG";
-	displayname = "Military Offroad (M2) DZ";
+	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_M2;
 	Picture = "\CA\wheeled_e\Data\UI\Picture_lr_mg_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_lr_mg_CA.paa";
 	transportSoldier = 1;
@@ -589,10 +595,9 @@ class LandRover_MG_TK_EP1_DZE: LandRover_Base
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
-	class TransportWeapons {};
-	
+	class TransportWeapons {};	
 	model = "\ca\wheeled_E\LR\LR_MG";
-	displayname = "Military Offroad (M2) AL";
+	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_M2;
 	Picture = "\CA\wheeled_e\Data\UI\Picture_lr_mg_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_lr_mg_CA.paa";
 	transportSoldier = 1;

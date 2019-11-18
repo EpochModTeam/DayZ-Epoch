@@ -1,7 +1,6 @@
 class AN2_DZ: An2_Base_EP1
 {
-	displayname = $STR_VEH_NAME_AN2;
-	displaynameshort = $STR_EP1_DN_AN2_TK;
+	displayname = $STR_VEH_NAME_AN2_GREEN;
 	scope = public;
 	side = 2;
 	crew = "";
@@ -23,6 +22,7 @@ class AN2_DZ: An2_Base_EP1
 
 class AN2_2_DZ : AN2_DZ
 {
+	displayname = $STR_VEH_NAME_AN2_WHITERED;	
 	hiddenSelections[] ={"Camo1","Camo2","Camo3"};
 	hiddenSelectionsTextures[] =
 	{
@@ -35,8 +35,7 @@ class AN2_2_DZ : AN2_DZ
 class An2_2_TK_CIV_EP1;
 class An2_2_TK_CIV_EP1_DZ : An2_2_TK_CIV_EP1
 {
-	displayname = $STR_VEH_NAME_AN2;
-	displaynameshort = $STR_EP1_DN_AN2_TK;
+	displayname = $STR_VEH_NAME_AN2_WHITEGREEN;
 	scope = public;
 	side = 2;
 	crew = "";

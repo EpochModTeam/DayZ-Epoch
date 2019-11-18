@@ -1,8 +1,7 @@
 class GNT_C185C;
 class GNT_C185C_DZ: GNT_C185C
 {
-	displayname = "Cessna C185C White";
-	displaynameshort = "Cessna C185C White";
+	displayname = $STR_VEH_NAME_CESSNA_WHITE;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
@@ -18,8 +17,7 @@ class GNT_C185C_DZ: GNT_C185C
 class GNT_C185R;
 class GNT_C185R_DZ: GNT_C185R
 {
-	displayname = "Cessna C185R Yellow";
-	displaynameshort = "Cessna C185R Yellow";
+	displayname = $STR_VEH_NAME_CESSNA_YELLOW;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
@@ -35,8 +33,7 @@ class GNT_C185R_DZ: GNT_C185R
 class GNT_C185;
 class GNT_C185_DZ: GNT_C185
 {
-	displayname = "Cessna C185 Orange";
-	displaynameshort = "Cessna C185 Orange";
+	displayname = $STR_VEH_NAME_CESSNA_ORANGE;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
@@ -52,8 +49,7 @@ class GNT_C185_DZ: GNT_C185
 class GNT_C185U;
 class GNT_C185U_DZ: GNT_C185U
 {
-	displayname = "Cessna C185U Camo";
-	displaynameshort = "Cessna C185U Camo";
+	displayname = $STR_VEH_NAME_CESSNA_CAMO;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

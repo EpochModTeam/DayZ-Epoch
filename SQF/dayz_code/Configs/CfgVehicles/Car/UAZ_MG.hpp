@@ -451,7 +451,7 @@ class UAZ_MG_TK_EP1_DZ: UAZ_MG_Base
 	scope = public;
 	side = 0;
 	faction = "BIS_TK";
-	displayName = "UAZ (DShKM) DZ";
+	displayName = $STR_VEH_NAME_UAZ_DSHKM;
 	accuracy = 0.3;
 	crew = "";
 	typicalCargo[] = {};
@@ -503,7 +503,7 @@ class UAZ_MG_TK_EP1_DZE: UAZ_MG_Base
 	faction = "BIS_TK";
 	accuracy = 0.3;
 	crew = "";
-	displayName = "UAZ (DShKM) AL";
+	displayName = $STR_VEH_NAME_UAZ_DSHKM;
 	typicalCargo[] = {};
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\UAZ\Data\Uaz_main_IND_CO.paa","\ca\wheeled\data\uaz_mount_001_co.paa"};
 	class TransportMagazines {};

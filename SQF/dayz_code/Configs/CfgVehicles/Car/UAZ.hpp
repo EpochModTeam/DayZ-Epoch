@@ -85,6 +85,7 @@ class UAZ_CDF: UAZ_Unarmed_Base {
 	maxspeed = 190;
 	crew = "";
 	faction = "CDF";
+	displayName = $STR_VEH_NAME_UAZ_CDF;
 	hiddenselectionstextures[] = {"\ca\wheeled\data\Uaz_main_002_CO.paa"};
 	scope = public;
 	side = 1;
@@ -101,6 +102,7 @@ class UAZ_INS: UAZ_Unarmed_Base {
 	maxspeed = 190;
 	side = 0;
 	faction = "INS";
+	displayName = $STR_VEH_NAME_UAZ_INS;
 	accuracy = 0.3;
 	crew = "";
 	typicalCargo[] = {};
@@ -117,6 +119,7 @@ class UAZ_RU: UAZ_Unarmed_Base {
 	maxspeed = 190;
 	side = 0;
 	faction = "RU";
+	displayName = $STR_VEH_NAME_UAZ_RU;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -133,6 +136,7 @@ class UAZ_Unarmed_TK_EP1: UAZ_Unarmed_Base {
 	scope = public;
 	side = 0;
 	faction = "BIS_TK";
+	displayName = $STR_VEH_NAME_UAZ_TK;
 	accuracy = 0.3;
 	crew = "";
 	typicalCargo[] = {};
@@ -151,6 +155,7 @@ class UAZ_Unarmed_UN_EP1: UAZ_Unarmed_Base {
 	side = 2;
 	accuracy = 0.3;
 	faction = "BIS_UN";
+	displayName = $STR_VEH_NAME_UAZ_UN;
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\UAZ\Data\Uaz_main_UN_CO.paa"};
@@ -168,6 +173,7 @@ class UAZ_Unarmed_TK_CIV_EP1: UAZ_Unarmed_Base {
 	side = 3;
 	accuracy = 0.3;
 	faction = "BIS_TK_CIV";
+	displayName = $STR_VEH_NAME_UAZ_CIVIL;
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\UAZ\Data\Uaz_main_CIVIL_CO.paa"};

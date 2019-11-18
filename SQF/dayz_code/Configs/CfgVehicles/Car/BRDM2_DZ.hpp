@@ -6,8 +6,7 @@ class BRDM2_HQ_TK_GUE_EP1: BRDM2_HQ_Base {
 
 class BRDM2_HQ_TK_GUE_EP1_DZ: BRDM2_HQ_TK_GUE_EP1 {
 	scope = public;
-	displayname = "BRDM2 HQ (PKT)";
-	displaynameshort = "BRDM2 HQ (PKT)";
+	displayname = $STR_VEH_NAME_BRDM2_HQ;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

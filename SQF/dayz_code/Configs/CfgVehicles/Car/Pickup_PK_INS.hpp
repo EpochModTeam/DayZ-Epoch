@@ -2,7 +2,7 @@ class Pickup_PK_GUE;
 class Pickup_PK_GUE_DZ: Pickup_PK_GUE {
 	scope = public;
 	side = TGuerrila;
-	displayName = "Pickup (PK) DZ";
+	displayName = $STR_VEH_NAME_PICKUP_GUE_PKT;
 
 	crew = "";
 	typicalCargo[] = {};
@@ -18,7 +18,7 @@ class Pickup_PK_TK_GUE_EP1;
 class Pickup_PK_TK_GUE_EP1_DZ: Pickup_PK_TK_GUE_EP1 {
 	scope = public;
 	side = TGuerrila;
-	displayName = "Pickup (PK) DZ";
+	displayName = $STR_VEH_NAME_PICKUP_TK_PKT;
 
 	crew = "";
 	typicalCargo[] = {};
@@ -34,7 +34,7 @@ class Pickup_PK_INS;
 class Pickup_PK_INS_DZ: Pickup_PK_INS {
 	scope = public;
 	side = TGuerrila;
-	displayName = "Pickup (PK) DZ";
+	displayName = $STR_VEH_NAME_PICKUP_INS_PKT;
 
 	crew = "";
 	typicalCargo[] = {};
@@ -49,7 +49,6 @@ class Pickup_PK_INS_DZ: Pickup_PK_INS {
 
 // Ammo Less
 class Pickup_PK_GUE_DZE: Pickup_PK_GUE_DZ {
-	displayName = "Pickup (PK) AL";
 	class Turrets: Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
@@ -72,7 +71,6 @@ class Pickup_PK_GUE_DZE: Pickup_PK_GUE_DZ {
 	};
 };
 class Pickup_PK_TK_GUE_EP1_DZE: Pickup_PK_TK_GUE_EP1_DZ {
-	displayName = "Pickup (PK) AL";
 	class Turrets: Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
@@ -95,7 +93,6 @@ class Pickup_PK_TK_GUE_EP1_DZE: Pickup_PK_TK_GUE_EP1_DZ {
 	};
 };
 class Pickup_PK_INS_DZE: Pickup_PK_INS_DZ {
-	displayName = "Pickup (PK) AL";
 	class Turrets: Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};

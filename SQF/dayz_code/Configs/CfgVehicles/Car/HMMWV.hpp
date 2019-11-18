@@ -309,7 +309,7 @@ class HMMWV_DZ: HMMWV_Base {
 	
 	accuracy = 0.32;
 	displayname = $STR_VEH_NAME_HMMWV;
-	displaynameshort = "HMMWV (Wood Camo)";
+	displaynameshort = $STR_VEH_NAME_HMMWV;
 	hasgunner = 0;
 	hiddenselections[] = {"Camo1"};
 	hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
@@ -343,7 +343,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_Base
 	transportMaxMagazines = 120;
 	transportmaxbackpacks = 4;
 	model = "\ca\wheeled_e\HMMWV\M998A2_sov";
-	displayname = "HMMWV SOV DZ";
+	displayname = $STR_VEH_NAME_HMMWV_SOV;
 	armor = 40;
 	damageResistance = 0.00581;
 	threat[] = {1,0.3,0.3};
@@ -607,7 +607,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_Base
 	transportMaxMagazines = 120;
 	transportmaxbackpacks = 4;
 	model = "\ca\wheeled_e\HMMWV\M998A2_sov";
-	displayname = "HMMWV SOV AL";
+	displayname = $STR_VEH_NAME_HMMWV_SOV;
 	armor = 40;
 	damageResistance = 0.00581;
 	threat[] = {1,0.3,0.3};
@@ -867,7 +867,7 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZ: HMMWV_Base
 	side = 1;
 	scope = private;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
-	displayname = "HMMWV GPK (M2) DZ";
+	displayname = $STR_VEH_NAME_HMMWV_GPK;
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 120;
 	transportmaxbackpacks = 4;
@@ -967,7 +967,7 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZE: HMMWV_Base
 	scope = private;
 	armor = 80;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
-	displayname = "HMMWV GPK (M2) AL";
+	displayname = $STR_VEH_NAME_HMMWV_GPK;
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 120;
 	transportmaxbackpacks = 4;
@@ -1061,35 +1061,56 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_DES_Base_EP1_DZE
 
 class HMMWV_Armored;
 class HMMWV_Armored_DZ: HMMWV_Armored {
+	displayname = $STR_VEH_NAME_HMMWV_ARMORED;
 	scope = public;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	displayname = "HMMWV (M240) Woodland";
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 120;
 	transportmaxbackpacks = 4;
 	armor = 80;
 	damageResistance = 0.03099;
+	class Turrets; // External class reference
+	class MainTurret; // External class reference	
+		
 };
 
+class HMMWV_Armored_DZE: HMMWV_Armored_DZ {
+	class Turrets: Turrets {		
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};
+};
 class HMMWV_M2;
 class HMMWV_M2_DZ: HMMWV_M2 {
+	displayname = $STR_VEH_NAME_HMMWV_M2;
 	scope = public;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	displayname = "HMMWV (M2) Woodland";
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 120;
 	transportmaxbackpacks = 4;
 	armor = 40;
 	damageResistance = 0.00581;
+	class Turrets; // External class reference
+	class MainTurret; // External class reference	
+};
+
+class HMMWV_M2_DZE: HMMWV_M2_DZ {
+	class Turrets: Turrets {		
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};
 };
 
 class HMMWV_M1035_DES_EP1 : HMMWV_base {
+	displayname = $STR_VEH_NAME_HMMWV_DES;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -1097,6 +1118,7 @@ class HMMWV_M1035_DES_EP1 : HMMWV_base {
 };
 
 class HMMWV_Ambulance : HMMWV_base {
+	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -1105,6 +1127,7 @@ class HMMWV_Ambulance : HMMWV_base {
 
 class HMMWV;
 class HMMWV_DES_EP1 : HMMWV {
+	displayname = $STR_VEH_NAME_HMMWV_DES;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -1113,6 +1136,7 @@ class HMMWV_DES_EP1 : HMMWV {
 
 class HMMWV_Ambulance_base;
 class HMMWV_Ambulance_CZ_DES_EP1 : HMMWV_Ambulance_base {
+	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE_DES;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

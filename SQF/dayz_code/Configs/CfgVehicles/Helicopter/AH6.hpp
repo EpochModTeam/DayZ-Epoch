@@ -53,7 +53,6 @@ class AH6J_EP1_DZE: AH6J_EP1_DZ
 
 class AH6X_DZ: AH6_Base_EP1 {
 	displayname = $STR_VEH_NAME_AH6X;
-	displaynameshort = $STR_EP1_DN_AH6X;
 	model = "dayz_vehicles\helicopters\greybird\greybird.p3d";
 	//cargoAction[] = {"AH6j_Cargo_EP1","UH1Y_Cargo01","UH1Y_Cargo01"};
 	audible = 6;

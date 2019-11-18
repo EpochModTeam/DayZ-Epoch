@@ -8071,11 +8071,339 @@
 	</Package>
 	<Package name="vehicles">
 		<Key ID="STR_VEH_NAME_HMMWV">
-			<English>HMMWV</English>
+			<English>HMMWV (Woodland)</English>
 			<Russian>Хамви</Russian>
 			<Spanish>Humvee Militar</Spanish>
-			<German>Humvee</German>
+			<German>Humvee (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_SOV">
+			<English>HMMWV SOV (Desert)</English>
+			<German>Humvee SOV (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_HMMWV_GPK">
+			<English>HMMWV GPK (Desert)</English>
+			<German>Humvee GPK (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED">
+			<English>HMMWV M240 (Woodland)</English>
+			<German>Humvee M240 (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_HMMWV_M2">
+			<English>HMMWV M2 (Woodland)</English>
+			<German>Humvee M2 (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HMMWV_DES">
+			<English>HMMWV (Desert)</English>
+			<German>Humvee (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE">
+			<English>HMMWV Ambulance (Woodland)</English>
+			<German>Humvee Sanitätsfzg. (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES">
+			<English>HMMWV Ambulance (Desert)</English>
+			<German>Humvee Sanitätsfzg. (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_PICKUP_TAN">
+			<English>Pick-up (tan)</English>
+			<German>Pick-up (gelbbraun)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_WHITE">
+			<English>Pick-up (white)</English>
+			<German>Pick-up (weiß)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED">
+			<English>Pick-up covered (red)</English>
+			<German>Pick-up abgedeckt (rot)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_KAMAZ">
+			<English>Kamaz (open)</English>
+			<German>Kamaz (offen)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT">
+			<English>Kamaz</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL">
+			<English>Kamaz (Fuel)</English>
+			<German>Kamaz (Treibstoff)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_LADA_WHITE">
+			<English>Lada (white)</English>
+			<German>Lada (weiß)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_LADA_RED">
+			<English>Lada (red)</English>
+			<German>Lada (rot)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_LADA_POLICE">
+			<English>Lada Police</English>
+			<German>Lada Polizei</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_LADA_GREEN">
+			<English>Lada (green)</English>
+			<German>Lada (grün)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_LADA_HIPPY">
+			<English>Lada (Hippy)</English>
+			<German>Lada (Hippie)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_LADA_YELLOW">
+			<English>Lada (yellow)</English>
+			<German>Lada (gelb)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED">
+			<English>Military Offroad (red)</English>
+			<German>Militär Offroad (rot)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT">
+			<English>Military Offroad (Desert)</English>
+			<German>Militär Offroad (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND">
+			<English>Military Offroad (Woodland)</English>
+			<German>Militär Offroad (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL">
+			<English>Military Offroad (AGS-30)</English>
+			<German>Militär Offroad (AGS-30)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2">
+			<English>Military Offroad (M2)</English>
+			<German>Militär Offroad (M2)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_LAV25">
+			<English>LAV-25</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_LAV25_HQ">
+			<English>LAV-25 HQ (M240)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_HQ">
+			<English>BRDM HQ (PKT)</English>
+		</Key>			
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN">
+			<English>M113 UN Ambulance</English>
+			<German>M113 UN Sanitätsfzg.</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_M113_UN">
+			<English>M113 UN</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK">
+			<English>M113 TK Ambulance</English>
+			<German>M113 TK Sanitätsfzg.</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_M113_TK">
+			<English>M113 TK</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND">
+			<English>MTVR (Woodland)</English>
+			<German>MTVR (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MTVR_DESERT">
+			<English>MTVR (Desert)</English>
+			<German>MTVR (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL">
+			<English>MTVR Fuel (Woodland)</English>
+			<German>MTVR Treibstoff (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL">
+			<English>MTVR Fuel (Desert)</English>
+			<German>MTVR Treibstoff (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_PICKUP_DSHKM">
+			<English>Pick-up (DSHKM)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT">
+			<English>Pick-up GUE(PKT)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT">
+			<English>Pick-up INS(PKT)</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT">
+			<English>Pick-up TK(PKT)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BUS">
+			<English>Skoda Van (blue)</English>
+			<German>Skoda Van (blau)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE">
+			<English>Skoda Van (Ambulance)</English>
+			<German>Skoda Van (Ambulanz)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_WHITE">
+			<English>Skoda (white)</English>
+			<German>Skoda (weiß)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_SKODA_BLUE">
+			<English>Skoda (blue)</English>
+			<German>Skoda (blau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SKODA_RED">
+			<English>Skoda (red)</English>
+			<German>Skoda (rot)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SKODA_GREEN">
+			<English>Skoda (green)</English>
+			<German>Skoda (grün)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_BLACK">
+			<English>SUV (black)</English>
+			<German>SUV (schwarz)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_CAMO">
+			<English>SUV (Woodland)</English>
+			<German>SUV (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_RED">
+			<English>SUV (red)</English>
+			<German>SUV (rot)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_GREEN">
+			<English>SUV (green)</English>
+			<German>SUV (grün)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_YELLOW">
+			<English>SUV (yellow)</English>
+			<German>SUV (gelb)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_SILVER">
+			<English>SUV (silver)</English>
+			<German>SUV (silber)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_PINK">
+			<English>SUV (pink)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_BLUE">
+			<English>SUV (blue)</English>
+			<German>SUV (blau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_WHITE">
+			<English>SUV (white)</English>
+			<German>SUV (weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_ORANGE">
+			<English>SUV (orange)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_GREY">
+			<English>SUV (grey)</English>
+			<German>SUV (grau)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_SUV_ARMORED">
+			<English>SUV (Armored)</English>
+			<German>SUV (Gepanzert)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_CDF">
+			<English>UAZ (CDF)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_INS">
+			<English>UAZ (INS)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_RU">
+			<English>UAZ (RU)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_TK">
+			<English>UAZ (TK)</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_UAZ_UN">
+			<English>UAZ (UN)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CIVIL">
+			<English>UAZ (Civil)</English>
+			<German>UAZ (Zivil)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM">
+			<English>UAZ (DSHKM)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_TK">
+			<English>Ural (TK)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_CDF">
+			<English>Ural (CDF)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_UN">
+			<English>Ural (UN)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_CIVIL">
+			<English>Ural (Civil)</English>
+			<German>Ural (Zivil)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN">
+			<English>Ural open (Civil)</English>
+			<German>Ural offen (Zivil)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_FUEL">
+			<English>Ural (Fuel)</English>
+			<German>Ural (Treibstoff)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_V3S_FUEL">
+			<English>V3S (Fuel)</English>
+			<German>V3S (Treibstoff)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_V3S_CIVIL">
+			<English>V3S (Civil)</English>
+			<German>V3S (Zivil)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN">
+			<English>V3S open (Civil)</English>
+			<German>V3S offen (Zivil)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S">
+			<English>V3S</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN">
+			<English>V3S open (Woodland)</English>
+			<German>V3S offen (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_REAMMO">
+			<English>V3S (Rearm)</English>
+			<German>V3S (Munition)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_GAZ_BLUE">
+			<English>GAZ (blue)</English>
+			<German>GAZ (blau)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_GAZ_GREY">
+			<English>GAZ (grey)</English>
+			<German>GAZ (grau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_GAZ_BLACK">
+			<English>GAZ (black)</English>
+			<German>GAZ (schwarz)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_VWGOLF_RED">
+			<English>VW Golf (red)</English>
+			<German>VW Golf (rot)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SEDAN_WHITE">
+			<English>Sedan (white)</English>
+			<German>Sedan (weiß)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_SEDAN_TAXI">
+			<English>Sedan Taxi</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HATCHBACK">
+			<German>Kombilimousine</German>
+			<English>Old hatchback</English>
+			<Italian>Utilitaria</Italian>
+			<Spanish>Liftback</Spanish>
+			<French>Voiture avec hayon</French>
+			<Czech>Starý hatchback</Czech>
+			<Russian>Старый хэтчбек</Russian>
+			<Polish>Stary hatchback </Polish>
+			<Hungarian>Kupé</Hungarian>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BTR90">
+			<English>BTR-90</English>
+		</Key>			
+		<Key ID="STR_VEH_NAME_BTR90_HQ">
+			<English>BTR-90 HQ (PKT)</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_VODNIK_PKT">
+			<English>Vodnik (PKT)</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_VODNIK_BPPU">
+			<English>Vodnik (BPPU)</English>
+		</Key>			
 		<Key ID="STR_VEH_NAME_ATV">
 			<English>ATV</English>
 			<Russian>Квадроцикл</Russian>
@@ -8093,7 +8421,7 @@
 			<Spanish>Gomón PBX</Spanish>
 			<French>Zodiac</French>
 			<Czech>PBX člun</Czech>
-			<German>Schlauchboot</German>
+			<German>PBX Schlauchboot</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_FISHING_BOAT">
 			<English>Fishing boat</English>
@@ -8103,6 +8431,22 @@
 			<Czech>Rybářská loď</Czech>
 			<German>Fischerboot</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_JETSKI_YELLOW">
+			<English>Jet Ski (yellow)</English>
+			<German>Jetski (gelb)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_JETSKI_GREEN">
+			<English>Jet Ski (green)</English>
+			<German>Jetski (grün)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_JETSKI_BLUE">
+			<English>Jet Ski (blue)</English>
+			<German>Jetski (blau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_JETSKI_RED">
+			<English>Jet Ski (red)</English>
+			<German>Jetski (rot)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_AH6X">
 			<English>AH6X Little Bird</English>
 			<Russian>AH6X «Литтл Бёрд»</Russian>
@@ -8113,17 +8457,84 @@
 			<Russian>MH-6J «Литтл Бёрд»</Russian>
 			<German>MH-6J "Little Bird"</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_AH6J">
+			<English>AH6J Little Bird</English>
+			<Russian>AH6J «Литтл Бёрд»</Russian>
+			<German>AH6J "Little Bird"</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_MI17">
 			<English>Mi-17</English>
 			<Russian>Ми-17</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_TK">
+			<English>Mi-17 (TK)</English>
+			<Russian>Ми-17 (TK)</Russian>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MI17_SH">
+			<English>Mi-171Sh</English>
+			<Russian>Ми-171Sh</Russian>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MI17_CDF">
+			<English>Mi-17 (CDF)</English>
+			<Russian>Ми-17 (CDF)</Russian>
+		</Key>			
+		<Key ID="STR_VEH_NAME_MI17_UN">
+			<English>Mi-17 (UN)</English>
+			<Russian>Ми-17 (UN)</Russian>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MI17_CIVIL">
+			<English>Mi-17 (Civilan)</English>
+			<Russian>Ми-17 (Civilan)</Russian>
+			<German>Mi-17 (Zivil)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF">
+			<English>Mi-17 MedEvac (CDF)</English>
+			<Russian>Ми-17 MedEvac (CDF)</Russian>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS">
+			<English>Mi-17 MedEvac (INS)</English>
+			<Russian>Ми-17 MedEvac (INS)</Russian>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU">
+			<English>Mi-17 MedEvac (RU)</English>
+			<Russian>Ми-17 MedEvac (RU)</Russian>
+		</Key>			
+		<Key ID="STR_VEH_NAME_CH47">
+			<English>CH-47F Chinook</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_CH53">
+			<English>CH53E Super Stallion </English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1H_WOODLAND">
+			<English>UH-1H (Woodland)</English>
+			<German>UH-1H (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_UH1H_DESERT">
+			<English>UH-1H (Desert)</English>
+			<German>UH-1H (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MH60">
+			<English>MH-60S</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_UH60">
+			<English>UH-60M</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_HH60">
+			<English>HH-60M MedEvac</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MV22">
+			<English>MV-22</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_C130">
+			<English>C-130J Hercules</English>
+		</Key>			
 		<Key ID="STR_VEH_NAME_MI8_WRECK">
 			<English>Mi-8 Wreck</English>
 			<French>Epave de Mi-8</French>
 			<Russian>Обломки Ми-8</Russian>
 			<Spanish>Mi-8 Destruído</Spanish>
 			<Czech>Vrak Mi-8</Czech>
-			<German>Mi-8-Wrack</German>
+			<German>Mi-8 Wrack</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1Y_WRECK">
 			<English>Crashed UH-1Y</English>
@@ -8139,16 +8550,35 @@
 			<Russian>Обломки UH-60</Russian>
 			<Spanish>UH-60 Destruído</Spanish>
 			<Czech>Vrak UH-60</Czech>
-			<German>UH-60-Wrack</German>
+			<German>UH-60 Wrack</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_AN2">
-			<English>AN2 Cargo Plane</English>
-			<French>Avion transporteur AN2</French>
-			<Russian>Ан-2 «Кукурузник»</Russian>
-			<Spanish>Avión de Carga AN2</Spanish>
-			<Czech>Antonov AN-2</Czech>
-			<German>Antonow AN-2</German>
+		<Key ID="STR_VEH_NAME_AN2_GREEN">
+			<English>Antonov AN-2 (green)</English>
+			<German>Antonow AN-2 (grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_AN2_WHITEGREEN">
+			<English>Antonov AN-2 (white reen)</English>
+			<German>Antonow AN-2 (weiß grün)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_AN2_WHITERED">
+			<English>Antonov AN-2 (white red)</English>
+			<German>Antonow AN-2 (weiß rot)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_CESSNA_WHITE">
+			<English>Cessna C185C (white)</English>
+			<German>Cessna C185C (weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_CESSNA_YELLOW">
+			<English>Cessna C185R (yellow)</English>
+			<German>Cessna C185R (gelb)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_CESSNA_ORANGE">
+			<English>Cessna C185 (orange)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_CESSNA_CAMO">
+			<English>Cessna C185U (Camo)</English>
+			<German>Cessna C185U (Tarn)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_STASH">
 			<English>Stash</English>
 			<French>Planque</French>

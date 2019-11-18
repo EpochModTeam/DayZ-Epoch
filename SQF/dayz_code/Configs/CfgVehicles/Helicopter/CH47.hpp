@@ -2,7 +2,7 @@ class CH47_base_EP1: Helicopter
 {
 	expansion = 1;
 	scope = private;
-	displayName = "CH-47";
+	displayName = $STR_VEH_NAME_CH47;
 	side = 1;
 	faction = "BIS_US";
 	accuracy = 0.5;
@@ -125,7 +125,7 @@ class CH_47F_EP1_DZ : CH_47F_EP1 {
 	accuracy = 1000; 
 	model = "\ca\air_E\CH47\CH_47F"; 
 	scope = public; 
-	displayName = "CH-47F DZ"; 
+	displayName = $STR_VEH_NAME_CH47;
 	crew = ""; 
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -144,7 +144,6 @@ class CH_47F_EP1_DZE: CH47_base_EP1
 	model = "\ca\air_E\CH47\CH_47F";
 	scope = public;
 	maxSpeed = 293;
-	displayName = "CH-47F AL";
 	picture = "\ca\air_e\data\UI\Picture_ch47f_CA.paa";
 	icon = "\ca\air_e\data\UI\Icon_ch47f_CA.paa";
 	mapSize = 24;

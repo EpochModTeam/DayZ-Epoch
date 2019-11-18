@@ -1,5 +1,6 @@
 class hilux1_civil_1_open;
 class hilux1_civil_1_open_DZE: hilux1_civil_1_open {
+	displayName = $STR_VEH_NAME_PICKUP_TAN;
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
@@ -14,6 +15,7 @@ class hilux1_civil_1_open_DZE: hilux1_civil_1_open {
 };
 class hilux1_civil_2_covered;
 class hilux1_civil_2_covered_DZE: hilux1_civil_2_covered {
+	displayName = $STR_VEH_NAME_PICKUP_COVERED_RED;
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
@@ -28,6 +30,7 @@ class hilux1_civil_2_covered_DZE: hilux1_civil_2_covered {
 };
 class hilux1_civil_3_open;
 class hilux1_civil_3_open_DZE: hilux1_civil_3_open {
+	displayName = $STR_VEH_NAME_PICKUP_WHITE;
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};

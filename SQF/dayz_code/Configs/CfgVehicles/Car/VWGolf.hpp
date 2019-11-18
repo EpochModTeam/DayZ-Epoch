@@ -20,7 +20,7 @@ class VWGolf : Car {
 	model = "\ca\wheeled2\VWGOLF\vwgolf.p3d";
 	icon = "\ca\wheeled2\data\UI\Icon_VWGolf_CA.paa";
 	picture = "\ca\wheeled2\data\UI\Picture_VWGolf_CA.paa";
-	displayname = "Hatchback";
+	displayname = $STR_VEH_NAME_VWGOLF_RED;
 	class Library {
 		libTextDesc = "The Wolkie is a German-made small family car, sold in US as the Bunny.";
 	};

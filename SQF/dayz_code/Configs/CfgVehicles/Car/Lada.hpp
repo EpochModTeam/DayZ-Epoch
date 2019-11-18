@@ -184,7 +184,7 @@ class Lada_base: Car {
 
 class Lada1: Lada_base {
 	scope = public;
-	displayname = "UAZ (White)";
+	displayname = $STR_VEH_NAME_LADA_WHITE;
 	accuracy = 1000;
 	hiddenSelections[] = {};
 	rarityUrban = 0.6;
@@ -196,7 +196,7 @@ class Lada1: Lada_base {
 class Lada2: Lada_base {
 	scope = public;
 	hiddenSelections[] = {"Camo1"};
-	displayname = "UAZ (Red)";
+	displayname = $STR_VEH_NAME_LADA_RED;
 	accuracy = 1000;
 	hiddenSelectionsTextures[] = {"\ca\wheeled2\Lada\Data\Lada_red_CO.paa"};
 	rarityUrban = 0.4;
@@ -208,7 +208,7 @@ class Lada2: Lada_base {
 class LadaLM: Lada_base {
 	scope = public;
 	model = "\CA\wheeled2\Lada\Lada_LM.p3d";
-	displayname = "UAZ (Militia)";
+	displayname = $STR_VEH_NAME_LADA_POLICE;
 	class Reflectors: Reflectors {
 		class Left: Left {
 		};
@@ -243,11 +243,11 @@ class LadaLM: Lada_base {
 class Lada1_TK_CIV_EP1: Lada_base {
 	expansion = 1;
 	scope = public;
+	displayname = $STR_VEH_NAME_LADA_GREEN;
 	side = 3;
 	faction = "BIS_TK_CIV";
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\Lada\Data\Lada_ECIV1_CO.paa","\Ca\wheeled_E\Lada\Data\Lada_glass_ECIV1_CA.paa"};
-	displayname = "Lada";
 	accuracy = 1000;
 	rarityUrban = 0.4;
 	crew = "";
@@ -264,7 +264,7 @@ class Lada2_TK_CIV_EP1: Lada_base {
 	faction = "BIS_TK_CIV";
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\CA\wheeled_E\Lada\Data\Lada_ECIV2_CO.paa","\Ca\wheeled_E\Lada\Data\Lada_glass_ECIV2_CA.paa"};
-	displayname = "Lada (decorated)";
+	displayname = $STR_VEH_NAME_LADA_HIPPY;
 	accuracy = 1000;
 	rarityUrban = 0.4;
 	crew = "";
@@ -628,4 +628,6 @@ class Lada2_TK_CIV_EP1_DZE4: Lada2_TK_CIV_EP1_DZE3 {
 	fuelCapacity = 150; // car 50
 };
 
-class GLT_M300_LT : Lada_base {};
+class GLT_M300_LT : Lada_base {
+	displayname = $STR_VEH_NAME_LADA_YELLOW;	
+};

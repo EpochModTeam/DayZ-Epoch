@@ -1,4 +1,5 @@
 class UralCivil: Ural_Base {
+	displayName= $STR_VEH_NAME_URAL_CIVIL;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -6,18 +7,21 @@ class UralCivil: Ural_Base {
 };
 class Ural_CDF: Ural_Base {
 	crew = "";
+	displayName= $STR_VEH_NAME_URAL_CDF;
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 };
 class Ural_TK_CIV_EP1: Ural_Base {
 	crew = "";
+	displayName= $STR_VEH_NAME_URAL_TK;
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 };
 class Ural_UN_EP1: Ural_Base {
 	crew = "";
+	displayName= $STR_VEH_NAME_URAL_UN;
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
@@ -27,10 +31,9 @@ class UralCivil_DZ: UralCivil {
 	scope = public;
 	side=TCivilian;
 	faction=CIV;
-	displayName= $STR_DN_URAL_CIV;
 	vehicleClass = "Car";
 	
-	transportMaxWeapons = 40;
+	transportMaxWeapons = 50;
 	transportMaxMagazines = 200;
 	transportmaxbackpacks = 10;
 	
@@ -51,7 +54,7 @@ class UralCivil_DZE : Ural_Base {
 	scope = public;
 	side = 3;
 	faction = "CIV";
-	displayName = "Ural (Civil)";
+	displayName= $STR_VEH_NAME_URAL_CIVIL;
 	vehicleClass = "Car";
 	crew = "";
 	typicalCargo[] = {};
@@ -68,7 +71,7 @@ class UralCivil_DZE : Ural_Base {
 };
 class UralOpen_Base;
 class UralCivil2_DZE : UralOpen_Base {
-	displayName = "Ural (Civil 2)";
+	displayName = $STR_VEH_NAME_URAL_CIVIL_OPEN;
 	model = "\ca\wheeled\Ural_Open";
 	accuracy = 0.22;
 	scope = public;
@@ -89,6 +92,7 @@ class UralCivil2_DZE : UralOpen_Base {
 class UralRefuel_TK_EP1;
 class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
 	scope = public;
+	displayName = $STR_VEH_NAME_URAL_FUEL;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

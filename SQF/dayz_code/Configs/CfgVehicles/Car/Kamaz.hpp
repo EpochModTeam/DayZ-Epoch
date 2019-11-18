@@ -1,7 +1,7 @@
 class Kamaz_Base;
 class KamazOpen_DZE : Kamaz_Base {
 	scope = public;
-	displayName = "Utility Truck (Open)";
+	displayName = $STR_VEH_NAME_KAMAZ;
 	model = "\ca\wheeled2\Kamaz\Kamaz_Open";
 	picture = "\Ca\wheeled2\data\ui\Picture_kamaz_open_CA.paa";
 	Icon = "\Ca\wheeled2\data\ui\Icon_kamaz_open_CA.paa";
@@ -19,6 +19,7 @@ class KamazOpen_DZE : Kamaz_Base {
 };
 class Kamaz_DZE: Kamaz_Base {
 	scope = public;
+	displayName = $STR_VEH_NAME_KAMAZ_COVERT;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -85,6 +86,7 @@ class KamazOpen_DZE4: KamazOpen_DZE3 {
 class KamazRefuel;
 class KamazRefuel_DZ: KamazRefuel {
 	scope = public;
+	displayName = $STR_VEH_NAME_KAMAZ_REFUEL;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};

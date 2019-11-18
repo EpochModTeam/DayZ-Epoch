@@ -20,8 +20,7 @@ class Skoda: SkodaBase {
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
 	mapSize = 6;
-	displayName = "Car (white)";
-	displayNameShort = "Car";
+	displayName = $STR_VEH_NAME_SKODA_WHITE;
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenSelectionsTextures[] = {"\ca\wheeled\data\skodovka_bila_co.paa","\ca\wheeled\data\skodovka_int_co.paa"};
 	class Damage {
@@ -42,8 +41,7 @@ class SkodaBlue: SkodaBase {
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
 	mapSize = 6;
-	displayName = "Car (blue)";
-	displayNameShort = "Car";
+	displayName = $STR_VEH_NAME_SKODA_BLUE;
 	class Damage {
 		tex[] = {};
 		mat[] = {"ca\wheeled\data\skodovka_modra.rvmat","ca\wheeled\data\skodovka_modra.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
@@ -62,8 +60,7 @@ class SkodaRed: SkodaBase {
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
 	mapSize = 6;
-	displayName = "Car (red)";
-	displayNameShort = "Car";
+	displayName = $STR_VEH_NAME_SKODA_RED;
 	class Damage {
 		tex[] = {};
 		mat[] = {"ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
@@ -81,8 +78,7 @@ class SkodaGreen: SkodaBase {
 	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
 	mapSize = 6;
-	displayName = "Car (green)";
-	displayNameShort = "Car";
+	displayName = $STR_VEH_NAME_SKODA_GREEN;
 	class Damage {
 		tex[] = {};
 		mat[] = {"ca\wheeled\data\skodovka_zelena.rvmat","ca\wheeled\data\skodovka_zelena.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
@@ -377,4 +373,6 @@ class SkodaGreen_DZE4: SkodaGreen_DZE3 {
 	fuelCapacity = 210; // car 100
 };
 
-class GLT_M300_ST : SkodaBase {};
+class GLT_M300_ST : SkodaBase {
+	displayname = $STR_VEH_NAME_SEDAN_TAXI;
+};

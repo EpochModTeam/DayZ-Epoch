@@ -397,6 +397,7 @@ class M113Ambul_Base : M113_Base {
 class M113Ambul_UN_EP1_DZ : M113Ambul_Base {
 	expansion = 1;
 	scope = public;
+	displayName = $STR_VEH_NAME_M113_AMBULANCE_UN;
 	side = TGuerrila;
 	faction = BIS_UN;
 	crew = "";
@@ -416,6 +417,7 @@ class M113Ambul_UN_EP1_DZ : M113Ambul_Base {
 class M113_UN_EP1_DZ : M113_Base {
 	expansion = 1;
 	scope = public;
+	displayName = $STR_VEH_NAME_M113_UN;
 	side = TGuerrila;
 	faction = BIS_UN;
 	crew = "";
@@ -426,7 +428,6 @@ class M113_UN_EP1_DZ : M113_Base {
 	transportMaxMagazines = 100; // Default: 100
 	transportMaxWeapons = 20; // Default: 20
 	//transportmaxbackpacks = ; // Default:
-	displayName = "M113 UN DZ";
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
@@ -435,6 +436,7 @@ class M113_UN_EP1_DZ : M113_Base {
 class M113Ambul_TK_EP1_DZ : M113Ambul_Base {
 	expansion = 1;
 	scope = public;
+	displayName = $STR_VEH_NAME_M113_AMBULANCE_TK;
 	side = TGuerrila;
 	faction = BIS_TK;
 	crew = "";
@@ -454,6 +456,7 @@ class M113Ambul_TK_EP1_DZ : M113Ambul_Base {
 class M113_TK_EP1_DZ : M113_Base {
 	expansion = 1;
 	scope = public;
+	displayName = $STR_VEH_NAME_M113_TK;
 	side = TGuerrila;
 	faction = BIS_TK;
 	crew = "";
@@ -461,7 +464,6 @@ class M113_TK_EP1_DZ : M113_Base {
 	hiddenSelectionsTextures[] = {"\ca\Tracked_E\M113\Data\m113a3_01_TK_co.paa"};	
 	class TransportMagazines {};
 	class TransportWeapons {};
-	displayName = "M113 TK DZ";
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
@@ -472,7 +474,6 @@ class M113_TK_EP1_DZ : M113_Base {
 
 // Ammo Less
 class M113_UN_EP1_DZE: M113_UN_EP1_DZ {
-	displayName = "M113 UN AL";
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			magazines[] = {};
@@ -480,7 +481,6 @@ class M113_UN_EP1_DZE: M113_UN_EP1_DZ {
 	};
 };
 class M113_TK_EP1_DZE: M113_TK_EP1_DZ {
-	displayName = "M113 TK AL";
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			magazines[] = {};

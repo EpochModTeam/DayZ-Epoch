@@ -225,7 +225,7 @@ class Volha_TK_CIV_Base_EP1: Car {
 class Volha_1_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
 	scope = public;
 	accuracy = 1000;
-	displayname = "GAZ (blue)";
+	displayname = $STR_VEH_NAME_GAZ_BLUE;
 
 	class Upgrades {
 		ItemORP[] = {"Volha_1_TK_CIV_EP1_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -234,7 +234,7 @@ class Volha_1_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
 class Volha_2_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
 	scope = public;
 	accuracy = 1000;
-	displayname = "GAZ (grey)";
+	displayname = $STR_VEH_NAME_GAZ_GREY;
 	hiddenSelections[] = {"Camo1"};
 	hiddenSelectionsTextures[] = {"ca\wheeled_E\Volha\Data\Volha_Gray_ECIV_CO"};
 
@@ -245,7 +245,7 @@ class Volha_2_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
 class VolhaLimo_TK_CIV_EP1: Volha_TK_CIV_Base_EP1 {
 	scope = public;
 	accuracy = 1000;
-	displayname = "GAZ Limo";
+	displayname = $STR_VEH_NAME_GAZ_BLACK;
 	hiddenSelections[] = {"Camo1"};
 	hiddenSelectionsTextures[] = {"ca\wheeled_E\Volha\Data\Volha_Black_ECIV_CO"};
 

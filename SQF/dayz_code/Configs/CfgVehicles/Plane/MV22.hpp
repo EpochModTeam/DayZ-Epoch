@@ -2,7 +2,7 @@ class MV22;
 class MV22_DZ : MV22 { 
 	accuracy = 1000; 
 	scope = public; 
-	displayName = "MV-22"; 
+	displayName = $STR_VEH_NAME_MV22; 
 	crew = ""; 
 	typicalCargo[] = {};
 	class TransportMagazines {};
