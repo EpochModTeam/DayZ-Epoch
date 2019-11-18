@@ -82,7 +82,7 @@ with uiNameSpace do {RscDMSLoad=nil;}; // autologon at next logon
 if (!isDedicated) then {
 	enableSaving [false, false];
 	startLoadingScreen ["","RscDisplayLoadCustom"];
-	progressLoadingScreen 0;
+	dayz_progressBarValue = 0;
 	dayz_loadScreenMsg = localize 'str_login_missionFile';
 	progress_monitor = [] execVM "\z\addons\dayz_code\system\progress_monitor.sqf";
 	0 cutText ['','BLACK',0];
@@ -92,13 +92,13 @@ if (!isDedicated) then {
 
 initialized = false;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";
-progressLoadingScreen 0.05;
+dayz_progressBarValue = 0.05;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\publicEH.sqf";
-progressLoadingScreen 0.1;
+dayz_progressBarValue = 0.1;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functions_med.sqf";
-progressLoadingScreen 0.15;
+dayz_progressBarValue = 0.15;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
-progressLoadingScreen 0.25;
+dayz_progressBarValue = 0.25;
 call compile preprocessFileLineNumbers "server_traders.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\namalsk.sqf"; //Add trader city objects locally on every machine early
 initialized = true;

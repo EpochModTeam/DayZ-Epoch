@@ -363,7 +363,7 @@ class FSM
                          "dayz_loadScreenMsg = localize 'str_player_waiting_creation'; " \n
                          "" \n
                          "_playerUID = getPlayerUID player;" \n
-                         "progressLoadingScreen 0.6;" \n
+                         "dayz_progressBarValue = 0.6;" \n
                          "if (_debug == 1) then {diag_log [diag_tickTime,'Collect'];};"/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -429,7 +429,7 @@ class FSM
                          "dayz_loadScreenMsg = localize 'str_player_request';" \n
                          "" \n
                          "_msg = [];" \n
-                         "progressLoadingScreen 0.65;" \n
+                         "dayz_progressBarValue = 0.65;" \n
                          "PVDZ_plr_Login1 = [_playerUID,player];" \n
                          "publicVariableServer ""PVDZ_plr_Login1"";" \n
                          "diag_log ['Sent to server: PVDZ_plr_Login1', PVDZ_plr_Login1]; " \n
@@ -472,7 +472,7 @@ class FSM
                         name = "Parse_Login";
                         itemno = 13;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Parse_Login'];};" \n
-                         "progressLoadingScreen 0.8;" \n
+                         "dayz_progressBarValue = 0.8;" \n
                          "_charID		= _msg select 0;" \n
                          "_inventory	= _msg select 1;" \n
                          "_backpack	= _msg select 2;" \n
@@ -944,7 +944,7 @@ class FSM
                         name = "Position";
                         itemno = 23;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Position'];};" \n
-                         "progressLoadingScreen 0.85;" \n
+                         "dayz_progressBarValue = 0.85;" \n
                          ""/*%FSM</STATEINIT""">*/;
                         precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
                         class Links
@@ -980,7 +980,7 @@ class FSM
                         name = "Load_In";
                         itemno = 25;
                         init = /*%FSM<STATEINIT""">*/"if (_debug == 1) then {diag_log [diag_tickTime,'Load_In'];};" \n
-                         "progressLoadingScreen 0.95;" \n
+                         "dayz_progressBarValue = 0.95;" \n
                          "dayz_loadScreenMsg = localize 'str_player_setup_completed';" \n
                          "_torev4l=nearestObjects [_setPos, Dayz_plants + DayZ_GearedObjects + [""AllVehicles"",""WeaponHolder""], 50];" \n
                          "{ _null = [_x,0] spawn object_roadFlare; } count (allMissionObjects ""RoadFlare"");" \n
@@ -1956,7 +1956,7 @@ class FSM
                          "PVDZ_plr_LoginRecord = [_playerUID,_charID,0,toArray dayz_playerName];" \n
                          "" \n
                          "" \n
-                         "progressLoadingScreen 1;" \n
+                         "dayz_progressBarValue = 1;" \n
                          "" \n
                          "diag_log format ['Sent to server PVDZ_plr_LoginRecord: [%1, %2, %3, %4]',_playerUID,_charID,0,dayz_playerName]; " \n
                          "" \n

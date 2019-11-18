@@ -787,49 +787,53 @@ class RscDisplayLoadCustom
 {
 	idd = -1;
 	onLoad = "uiNamespace setVariable ['BIS_loadingScreen',_this select 0];";
-
     class ControlsBackground
     {
-		class RscText_1000: RscText
+		class BackgroundText: RscText
 		{
-			idc = 202020;
-			x = -0.0737532 * safezoneW + safezoneX;
-			y = -0.132295 * safezoneH + safezoneY;
-			w = 1.1604 * safezoneW;
-			h = 1.19586 * safezoneH;
+			idc = 1000;
+			x = -0.015625 * safezoneW + safezoneX;
+			y = -0.00875001 * safezoneH + safezoneY;
+			w = 1.10215 * safezoneW;
+			h = 1.11375 * safezoneH;
 			colorBackground[] = {0,0,0,1};
 		};
-
-		class RscPicture_1200: RscPicture
+		class BackgroundPicture: RscPictureKeepAspect
 		{
 			idc = 1200;
-			text = "#(argb,8,8,3)color(0,0,0,1)";
-			x = 0.242133 * safezoneW + safezoneX;
-			y = 0.00516077 * safezoneH + safezoneY;
-			w = 0.515733 * safezoneW;
-			h = 0.962187 * safezoneH;
+			text = "#(argb,8,8,3)color(1,1,1,0)";
+			x = -0.711867;
+			y = -0.34;
+			w = 2.42373;
+			h = 1.54596;
 		};
-
     };
-    
-    class controls
+    class Controls
     {
-        
-		class RscStructuredText_1101: RscStructuredText
+		class LoadingText: RscStructuredText
 		{
 			idc = 8400;
 			x = 0.242133 * safezoneW + safezoneX;
-			y = 0.926112 * safezoneH + safezoneY;
+			y = 0.9 * safezoneH + safezoneY;
 			w = 0.515733 * safezoneW;
 			h = 0.0274911 * safezoneH;
 		};
-		class RscStructuredText_1100: RscStructuredText
+		class TimeoutText: RscStructuredText
 		{
 			idc = 102;
 			x = 0.92548 * safezoneW + safezoneX;
-			y = 0.926112 * safezoneH + safezoneY;
+			y = 0.9 * safezoneH + safezoneY;
 			w = 0.04 * safezoneW;
 			h = 0.0274911 * safezoneH;
+		};
+		class ProgressBar : RscProgress
+		{
+			idc = 1010;
+			x = 0.242133 * safezoneW + safezoneX;
+			y = 0.95 * safezoneH + safezoneY;
+			w = 0.515733 * safezoneW;
+			h = 0.02 * safezoneH;
+
 		};
     }; 
 };

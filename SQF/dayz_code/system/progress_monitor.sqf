@@ -36,6 +36,9 @@ while {true} do {
 		};
 		_control2 = _display displayctrl 102;
 		_control2 ctrlSetStructuredText parseText format["<t color='#FFFFFF' align='center'>%1</t>",floor(diag_ticktime - _timeoutStart)];
+		
+		_bar = _display displayCtrl 1010;
+		_bar progressSetPosition dayz_progressBarValue;
 	};
 
 	uiSleep 0.2;
