@@ -36,6 +36,12 @@ if (!isNull _obj) then {
 	
 	[_lockedClass,objNull] call fn_waitForObject;
 	
+	if (_lockedClass == "LockboxStorageLocked") then {
+		[player,"lockboxclose",0,false] call dayz_zombieSpeak;
+	} else {
+		[player,"safeclose",0,false] call dayz_zombieSpeak;
+	};
+	
 	PVDZE_handleSafeGear = [player,_obj,1];
 	publicVariableServer "PVDZE_handleSafeGear";	
 	//wait for response from server to verify safe was logged and saved before proceeding
