@@ -130,7 +130,7 @@ if (!_isNew) then {
 	};
 };
 
-_isHiveOk = (_hiveVer >= dayz_hiveVersionNo); //EDITED
+_isHiveOk = true; //EDITED
 
 /*
 	if (count _inventory > 2 && {typeName (_inventory select 2) != "STRING"}) then {

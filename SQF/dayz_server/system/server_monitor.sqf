@@ -11,7 +11,8 @@ _legacyStreamingMethod = false; //use old object streaming method, more secure b
 dayz_serverIDMonitor = [];
 _DZE_VehObjects = [];
 dayz_versionNo = getText (configFile >> "CfgMods" >> "DayZ" >> "version");
-dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
+//dayz_hiveVersionNo = getNumber (configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
+dayz_hiveVersionNo = 1; // Changed to 1 - Change in Configs
 _hiveLoaded = false;
 _serverVehicleCounter = [];
 _tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
@@ -30,7 +31,7 @@ if (_outcome == "PASS") then {
 	_minute = _date select 4;
 
 	if (dayz_ForcefullmoonNights) then {_date = [2012,8,2,_hour,_minute];};
-	diag_log ["TIME SYNC: Local Time set to:", _date, "Fullmoon:",dayz_ForcefullmoonNights,"Date given by HiveExt.dll:",_result select 1];
+	diag_log ["TIME SYNC: Local Time set to:", _date, "Fullmoon:",dayz_ForcefullmoonNights,"Date given by EpochHive.dll:",_result select 1];
 	setDate _date;
 	dayzSetDate = _date;
 	publicVariable "dayzSetDate";
@@ -41,63 +42,17 @@ if (_outcome == "PASS") then {
 //Send the key
 _timeStart = diag_tickTime;
 
-for "_i" from 1 to 5 do {
-	diag_log "HIVE: trying to get objects";
-	_key = format["CHILD:302:%1:%2:",dayZ_instance, _legacyStreamingMethod];
-	_result = _key call server_hiveReadWrite;  
-	if (typeName _result == "STRING") then {
-		_shutdown = format["CHILD:400:%1:",(profileNamespace getVariable "SUPERKEY")];
-		_res = _shutdown call server_hiveReadWrite;
-		diag_log ("HIVE: attempt to kill.. HiveExt response:"+str(_res));
-	} else {
-		diag_log ("HIVE: found "+str(_result select 1)+" objects" );
-		_i = 99; // break
-	};
-};
 
-if (typeName _result == "STRING") exitWith {
-	diag_log "HIVE: Connection error. Server_monitor.sqf is exiting.";
-};	
-
-diag_log "HIVE: Request sent";
-_myArray = [];
-_val = 0;
-_status = _result select 0; //Process result
-_val = _result select 1;
-if (_legacyStreamingMethod) then {
-	if (_status == "ObjectStreamStart") then {
-		profileNamespace setVariable ["SUPERKEY",(_result select 2)];
-		_hiveLoaded = true;
-		//Stream Objects
-		diag_log ("HIVE: Commence Object Streaming...");
-		for "_i" from 1 to _val do  {
-			_result = _key call server_hiveReadWriteLarge;
-			_status = _result select 0;
-			_myArray set [count _myArray,_result];
-		};
-	};
-} else {
-	if (_val > 0) then {
-		_fileName = _key call server_hiveReadWrite;
-		_lastFN = profileNamespace getVariable["lastFN",""];
-		profileNamespace setVariable["lastFN",_fileName];
-		saveProfileNamespace;
-		if (_status == "ObjectStreamStart") then {
-			profileNamespace setVariable ["SUPERKEY",(_result select 2)];
-			_hiveLoaded = true;
-			_myArray = Call Compile PreProcessFile _fileName;
-			_key = format["CHILD:302:%1:%2:",_lastFN, _legacyStreamingMethod];
-			_result = _key call server_hiveReadWrite; //deletes previous object data dump
-		};
-	} else {
-		if (_status == "ObjectStreamStart") then {
-			profileNamespace setVariable ["SUPERKEY",(_result select 2)];
-			_hiveLoaded = true;
-		};
-	};
-};
-
-diag_log ("HIVE: Streamed " + str(_val) + " objects");
+diag_log "EpochHive attempting to get Object File";
+_key = format["CHILD:302:%1:",dayZ_instance];
+_result = _key call server_hiveReadWrite;
+_status = _result select 0;
+if(_status == "FAIL") exitWith{diag_log "Epoch Hive ERROR! FAILED TO GET OBJECT FILE!";};
+_file = _result select 1;
+_myArray = call compile preprocessFile _file;
+format["CHILD:300:%1:",_file] call server_hiveWrite; // Delete ObjectFile as its no longer needed
+_hiveLoaded = true;
+diag_log ("HIVE: Streamed " + str(count _myArray) + " objects");
 
 // Don't spawn objects if no clients are online (createVehicle fails with Ref to nonnetwork object)
 if ((playersNumber west + playersNumber civilian) == 0) exitWith {
@@ -107,16 +62,15 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 {
 	private ["_object","_posATL"];
 	//Parse Array
-	_action = 		_x select 0; 
-	_idKey = 		_x select 1;
-	_type =			_x select 2;
-	_ownerID = 		_x select 3;
-	_worldspace = 	_x select 4;
-	_inventory =	_x select 5;
-	_hitPoints =	_x select 6;
-	_fuel =			_x select 7;
-	_damage = 		_x select 8;
-	_storageMoney = _x select 9;
+	_idKey = 		_x select 0;
+	_type =			_x select 1;
+	_ownerID = 		_x select 2;
+	_worldspace = 	_x select 3;
+	_inventory =	_x select 4;
+	_hitPoints =	_x select 5;
+	_fuel =			_x select 6;
+	_damage = 		_x select 7;
+	_storageMoney = _x select 8;
 
 	//set object to be in maintenance mode
 	_maintenanceMode = false;
@@ -349,7 +303,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	_x setVelocity [0,0,1];
 } forEach _DZE_VehObjects;
 
-diag_log format["HIVE: BENCHMARK - Server_monitor.sqf finished streaming %1 objects in %2 seconds (unscheduled)",_val,diag_tickTime - _timeStart];
+diag_log format["HIVE: BENCHMARK - Server_monitor.sqf finished streaming %1 objects in %2 seconds (unscheduled)",(count _myArray),diag_tickTime - _timeStart];
 
 // # END OF STREAMING #
 if (dayz_townGenerator) then {
@@ -463,35 +417,6 @@ execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
 	};
 };
 
-// preload server traders menu data into cache
-if !(DZE_ConfigTrader) then {
-	{
-		// get tids
-		_traderData = call compile format["menu_%1;",_x];
-		if (!isNil "_traderData") then {
-			{
-				_traderid = _x select 1;
-				_retrader = [];
-
-				_key = format["CHILD:399:%1:",_traderid];
-				_data = "HiveEXT" callExtension _key;
-				_result = call compile format["%1",_data];
-				_status = _result select 0;
-		
-				if (_status == "ObjectStreamStart") then {
-					_val = _result select 1;
-					call compile format["ServerTcache_%1 = [];",_traderid];
-					for "_i" from 1 to _val do {
-						_data = "HiveEXT" callExtension _key;
-						_result = call compile format ["%1",_data];
-						call compile format["ServerTcache_%1 set [count ServerTcache_%1,%2]",_traderid,_result];
-						_retrader set [count _retrader,_result];
-					};
-				};
-			} forEach (_traderData select 0);
-		};
-	} forEach serverTraders;
-};
 
 if (_hiveLoaded) then {
 	_serverVehicleCounter spawn {

@@ -3,7 +3,7 @@
 private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_currentModel","_currentAnim",
 "_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_playerBackp","_exitReason",
 "_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
-"_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
+"_timeLeft","_config","_onLadder","_isTerminal","_temp","_currentState","_character",
 "_magazines","_characterID","_charPos","_isInVehicle","_name","_inDebug","_newPos","_count","_maxDist","_relocate","_playerUID","_statsDiff"];
 //[player,array]
 
@@ -17,7 +17,6 @@ _timeSince = 0;
 _humanity = 0;
 _name = if (alive _character) then {name _character} else {"Dead Player"};
 _inDebug = (respawn_west_original distance _charPos) < 1500;
-
 _exitReason = switch true do {
 	case (isNil "_characterID"): {("ERROR: Cannot Sync Character " + _name + " has nil characterID")}; //Unit is null
 	case (_inDebug): {format["INFO: Cannot Sync Character %1 near respawn_west %2. This is normal when relogging or changing clothes.",_name,_charPos]};
@@ -44,7 +43,6 @@ _coins = _character getVariable [Z_MoneyVariable, -1]; //should getting coins fa
 _lastPos = _character getVariable ["lastPos",_charPos];
 _usec_Dead = _character getVariable ["USEC_isDead",false];
 _lastTime = _character getVariable ["lastTime",-1];
-_modelChk = 	_character getVariable ["model_CHK",""];
 _temp = round (_character getVariable ["temperature",100]);
 _lastMagazines = _character getVariable ["ServerMagArray",[[],""]];
 //Get difference between current stats and stats at last sync
@@ -132,12 +130,6 @@ _onLadder =		(getNumber (_config >> "onLadder")) == 1;
 _isTerminal = 	(getNumber (_config >> "terminal")) == 1;
 //_wpnDisabled =	(getNumber (_config >> "disableWeapons")) == 1;
 _currentModel = typeOf _character;
-if (_currentModel == _modelChk) then {
-	_currentModel = "";
-} else {
-	_currentModel = str _currentModel;
-	_character setVariable ["model_CHK",typeOf _character];
-};
 if (count _this > 4) then { //calling from player_onDisconnect
 	if (_this select 4) then { //combat logged
 		_medical set [1, true]; //set unconcious to true
@@ -213,12 +205,7 @@ if (count _playerPos > 0) then {
 };
 
 //Wait for HIVE to be free and send request
-_key = if (Z_SingleCurrency) then {
-	str formatText["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins]
-} else {
-	str formatText["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity]
-};
-
+_key = str formatText["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins];
 #ifdef PLAYER_DEBUG
 	diag_log str formatText["INFO - %2(UID:%4,CID:%3) PlayerSync, %1",_key,_name,_characterID,_playerUID];
 #endif

@@ -12,6 +12,10 @@ dayZ_explosiveParts = ["palivo","motor"];
 dayz_traps_active = [];
 dayz_traps_trigger = [];
 
+//Used in player_sumMedical (called on server in server_playerSync)
+r_player_blood = 12000;
+r_player_bloodTotal = r_player_blood;
+
 // Used by player_sumMedical, should contains all limbs described in USEC_woundPoint. These limbs statuses are saved by server_playerSync in HIVE if they are bleeding (medical select 8)
 USEC_typeOfWounds = ["Pelvis","aimpoint","lelbow","relbow","RightFoot","LeftFoot","neck","pilot"];
 
@@ -177,7 +181,6 @@ if (!isDedicated) then {
 	r_fracture_legs = false;
 	r_fracture_arms = false;
 	r_player_vehicle = player;
-	r_player_blood = 12000;
 	r_player_bloodregen = 0;
 	r_player_bloodgainpersec = 0;
 	r_player_bloodlosspersec = 0;
@@ -187,7 +190,6 @@ if (!isDedicated) then {
 	// Player skill
 	r_player_lowblood = false;
 	r_player_timeout = 0;
-	r_player_bloodTotal = r_player_blood;
 	r_player_actions = [];
 	r_action_targets = [];
 	

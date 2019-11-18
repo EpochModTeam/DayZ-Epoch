@@ -167,7 +167,7 @@ check_publishobject = {
 server_hiveWrite = {
 	private "_data";
 	//diag_log ("ATTEMPT WRITE: " + _this);
-	_data = "HiveExt" callExtension _this;
+	_data = "EpochHive" callExtension _this;
 	//diag_log ("WRITE: " +str(_data));
 };
 
@@ -175,7 +175,7 @@ server_hiveReadWrite = {
 	private ["_key","_resultArray","_data"];
 	_key = _this;
 	//diag_log ("ATTEMPT READ/WRITE: " + _key);
-	_data = "HiveExt" callExtension _key;
+	_data = "EpochHive" callExtension _key;
 	//diag_log ("READ/WRITE: " +str(_data));
 	_resultArray = call compile str formatText["%1", _data];
 	if (isNil "_resultArray") then {_resultArray = "HIVE CONNECTION ERROR";};
@@ -247,7 +247,7 @@ generate_new_damage = {
 server_hiveReadWriteLarge = {
 	private["_key","_resultArray","_data"];
 	_key = _this;
-	_data = "HiveExt" callExtension _key;
+	_data = "EpochHive" callExtension _key;
 	_resultArray = call compile _data;
 	_resultArray
 };

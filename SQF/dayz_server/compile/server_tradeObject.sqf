@@ -37,7 +37,7 @@ if (DZE_ConfigTrader) then {
 	//Send request
 	_key = format["CHILD:398:%1:%2:",_traderID,_buyorsell];
 
-	_data = "HiveEXT" callExtension _key;
+	_data = "EpochHive" callExtension _key;
 	_result = call compile format ["%1",_data];
 	// diag_log ("TRADE: RES: "+ str(_result));
 	_outcome = _result select 0;
