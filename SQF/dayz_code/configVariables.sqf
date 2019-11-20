@@ -123,6 +123,8 @@ DZE_doorManagementAllowManualCode = true; //Allow unlocking doors by manually en
 DZE_doorManagementMaxFriends = 10; //Max friends allowed on a door. There is no character limit in the inventory field of the database, but lower values limit the max global setVariable size to improve performance.
 DZE_doorManagementHarderPenalty = true; //Enforce an exponential wait on attempts between unlocking a door from a failed code.
 
+DZE_LockedStorageAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to lock/unlock any vault or lockbox
+
 // Group System
 dayz_groupSystem = false; // Enable group system
 dayz_markGroup = 1; // Players can see their group members on the map 0=never, 1=always, 2=With GPS only

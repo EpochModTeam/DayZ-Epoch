@@ -746,7 +746,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	if ((_typeOfCursorTarget in DZE_LockableStorage) && {_characterID != "0"} && {_isClose} && {!keypadCancel}) then {
 		if (s_player_unlockvault < 0) then {
 			if (_typeOfCursorTarget in DZE_LockedStorage) then {
-				if ((_characterID == dayz_combination) || {_ownerID == _uid}) then {
+				if ((_characterID == dayz_combination) || {_ownerID == _uid} || {_uid in DZE_LockedStorageAdmins}) then {
 					_combi = player addAction [format[localize "STR_EPOCH_ACTIONS_OPEN",_text], "\z\addons\dayz_code\actions\vault_unlock.sqf",_cursorTarget, 0, false, true];
 					s_player_combi set [count s_player_combi,_combi];
 				} else {
@@ -770,11 +770,11 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	//Allow owner to pack vault
 	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {_isClose}  && {!keypadCancel}) then {
 		if (s_player_lockvault < 0) then {
-			if ((_characterID == dayz_combination) || {_ownerID == _uid}) then {
+			if ((_characterID == dayz_combination) || {_ownerID == _uid} || {_uid in DZE_LockedStorageAdmins}) then {
 				s_player_lockvault = player addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true];
 			};
 		};
-		if (s_player_packvault < 0 && {(_characterID == dayz_combination) || (_ownerID == _uid)}) then {
+		if (s_player_packvault < 0 && {(_characterID == dayz_combination) || (_ownerID == _uid) || (_uid in DZE_LockedStorageAdmins)}) then {
 			s_player_packvault = player addAction [format["<t color='#ff0000'>%1</t>",(format[localize "STR_EPOCH_ACTIONS_PACK",_text])], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true];
 		};
 	} else {
