@@ -28,7 +28,7 @@ _ownerID = _obj getVariable["CharacterID","0"];
 _ComboMatch = (_ownerID == dayz_combination);
 if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
 
-if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith {dayz_actionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call dayz_rollingMessages; };
+if (!_ComboMatch && {_ownerID != dayz_playerUID}  && {!(dayz_playerUID in DZE_LockedStorageAdmins)}) exitWith {dayz_actionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call dayz_rollingMessages; };
 
 if (!isNull _obj) then {
 	(findDisplay 106) closeDisplay 0; // Close gear

@@ -29,7 +29,7 @@ s_player_packvault = 1;
 
 if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_118",_text] call dayz_rollingMessages;};
 
-if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith { dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
+if (!_ComboMatch && {_ownerID != dayz_playerUID}  && {!(dayz_playerUID in DZE_LockedStorageAdmins)}) exitWith { dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
 
 format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
 uiSleep 1;

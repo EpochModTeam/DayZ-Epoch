@@ -36,7 +36,7 @@ if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
 if (isNil "dayz_UnlockTime") then {dayz_UnlockTime = 5;};
 if (DZE_lockablesHarderPenalty && {((diag_tickTime - dayz_lastCodeFail) + dayz_unlockTime / 2) > 120}) then {dayz_UnlockTime = 5;};
 
-if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
+if (_ComboMatch || {_ownerID == dayz_playerUID} || {dayz_playerUID in DZE_LockedStorageAdmins}) then {
 	(findDisplay 106) closeDisplay 0;
 	dze_waiting = nil;
 	dayz_UnlockTime = 5;
