@@ -15,9 +15,9 @@
 	Params:
 	[
 		[
-			["ObjectType1", [position], dir],
-			["ObjectType2", [position], dir],
-			["ObjectType3", [position], dir]
+			["ObjectType1", [position], dir, vectorUp(optional)],
+			["ObjectType2", [position], dir, vectorUp(optional)],
+			["ObjectType3", [position], dir, vectorUp(optional)]
 		],
 		false, // Block damage
 		false, // Use setPosATL instead of setPos
@@ -61,6 +61,10 @@ _fires = [
 		_object setPosATL (_x select 1);
 	} else {
 		_object setPos (_x select 1);
+	};
+	
+	if (count _x > 3) then {
+		_object setVectorUp (_x select 3);
 	};
 	
 	if (_blockDamage) then {
