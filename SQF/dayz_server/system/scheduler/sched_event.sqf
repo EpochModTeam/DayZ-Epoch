@@ -31,7 +31,6 @@ sched_event_init = {
 	_lastTime
 };
 
-// This function runs ever 10 seconds because ServerCurrentTime is used in player death logging.
 sched_event = {
 	private ["_date","_key","_result","_outcome","_handle","_datestr","_lastTime"];
 	// Find current time from server
