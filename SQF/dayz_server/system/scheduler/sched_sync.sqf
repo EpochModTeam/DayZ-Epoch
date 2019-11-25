@@ -22,4 +22,9 @@ sched_sync = {
 	};
 
 	objNull
-};	
+};
+
+sched_fps = {
+	diag_log format["SERVER FPS: %1  PLAYERS: %2",round diag_fps,playersNumber west];
+	objNull
+};
