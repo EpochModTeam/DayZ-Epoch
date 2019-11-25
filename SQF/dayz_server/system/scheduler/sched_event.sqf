@@ -51,10 +51,8 @@ sched_event = {
 			_lastTime = _datestr;
 
 			//diag_log ("EVENTS: Local Time is: " + _datestr);
-			
+			if (count EpochEvents == 0) exitWith {};
 			{
-				if (!EpochUseEvents) exitWith {};
-				
 				if (typeName _x == "ARRAY") then {
 					
 					// Run event at server start when minutes are set to -1
