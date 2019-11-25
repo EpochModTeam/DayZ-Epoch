@@ -420,11 +420,6 @@ publicVariable "sm_done";
 	};
 };
 
-//Points of interest
-//[] execVM "\z\addons\dayz_server\compile\server_spawnInfectedCamps.sqf"; //Adds random spawned camps in the woods with corpses and loot tents (negatively impacts FPS)
-[] execVM "\z\addons\dayz_server\compile\server_spawnCarePackages.sqf";
-[] execVM "\z\addons\dayz_server\compile\server_spawnCrashSites.sqf";
-
 execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
 
 "PVDZ_sec_atp" addPublicVariableEventHandler {
@@ -508,5 +503,3 @@ if (_hiveLoaded) then {
 		{[_x,"gear"] call server_updateObject} count _vehiclesToUpdate;
 	};
 };
-
-[] spawn server_spawnEvents;
