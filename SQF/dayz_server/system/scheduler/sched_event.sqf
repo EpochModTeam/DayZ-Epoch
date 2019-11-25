@@ -27,27 +27,28 @@ epoch_eventIsAny = {
 
 sched_event_init = {
 	diag_log("EPOCH EVENTS INIT");
-	EventSchedulerLastTime = "";
-	objNull
+	_lastTime = "";
+	_lastTime
 };
 
 // This function runs ever 10 seconds because ServerCurrentTime is used in player death logging.
 sched_event = {
-	private ["_date","_key","_result","_outcome","_handle","_datestr"];
+	private ["_date","_key","_result","_outcome","_handle","_datestr","_lastTime"];
 	// Find current time from server
+	_lastTime = _this;
 	_key = "CHILD:307:";
 	_result = _key call server_hiveReadWrite;
 	_outcome = _result select 0;
 	if(_outcome == "PASS") then {
 		_date = _result select 1;
 		_datestr  = str(_date);
-		if (EventSchedulerLastTime != _datestr) then {
+		if (_lastTime != _datestr) then {
 			
 			// internal timestamp
 			ServerCurrentTime = [(_date select 3), (_date select 4)];
 
 			// Once a minute.
-			EventSchedulerLastTime = _datestr;
+			_lastTime = _datestr;
 
 			//diag_log ("EVENTS: Local Time is: " + _datestr);
 			
@@ -73,5 +74,5 @@ sched_event = {
 			} forEach EpochEvents;
 		};
 	};
-	objNull
+	_lastTime
 };
