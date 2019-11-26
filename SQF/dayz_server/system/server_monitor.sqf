@@ -1,5 +1,4 @@
 private ["_date","_year","_month","_day","_hour","_minute","_date1","_key","_objectCount","_dir","_point","_i","_action","_dam","_selection","_wantExplosiveParts","_entity","_worldspace","_damage","_booleans","_rawData","_ObjectID","_class","_CharacterID","_inventory","_hitpoints","_fuel","_id","_objectArray","_script","_result","_outcome","_shutdown","_res"];
-[] execVM "\z\addons\dayz_server\system\s_fps.sqf"; //server monitor FPS (writes each ~181s diag_fps+181s diag_fpsmin*)
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 waitUntil {!isNil "BIS_MPF_InitDone" && initialized};
@@ -421,11 +420,6 @@ publicVariable "sm_done";
 	};
 };
 
-//Points of interest
-//[] execVM "\z\addons\dayz_server\compile\server_spawnInfectedCamps.sqf"; //Adds random spawned camps in the woods with corpses and loot tents (negatively impacts FPS)
-[] execVM "\z\addons\dayz_server\compile\server_spawnCarePackages.sqf";
-[] execVM "\z\addons\dayz_server\compile\server_spawnCrashSites.sqf";
-
 execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
 
 "PVDZ_sec_atp" addPublicVariableEventHandler {
@@ -509,5 +503,3 @@ if (_hiveLoaded) then {
 		{[_x,"gear"] call server_updateObject} count _vehiclesToUpdate;
 	};
 };
-
-[] spawn server_spawnEvents;
