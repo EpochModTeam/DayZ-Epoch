@@ -68,11 +68,9 @@ MaxDynamicDebris = 250; // Max number of random road blocks to spawn around the 
 MaxVehicleLimit = 200; // Max number of random vehicles to spawn around the map
 spawnArea = 1400; // Distance around markers to find a safe spawn position
 spawnShoremode = 1; // Random spawn locations  1 = on shores, 0 = inland
-EpochUseEvents = true; //Enable event scheduler. Define custom scripts in dayz_server\modules to run on a schedule.
 EpochEvents = [ //[year,month,day of month, minutes,name of file - .sqf] If minutes is set to -1, the event will run once immediately after server start.
 	["any","any","any","any",-1,"Care_Packages"],
 	//["any","any","any","any",-1,"Infected_Camps"], // (negatively impacts FPS)
-	//["any","any","any","any",-1,"CrashSites_Old"], // Old 1.0.5.1 Epoch version updated to work with Epoch 1.0.6+, includes mass graves.
 	["any","any","any","any",-1,"CrashSites"]
 ];
 // EPOCH CONFIG VARIABLES END //
