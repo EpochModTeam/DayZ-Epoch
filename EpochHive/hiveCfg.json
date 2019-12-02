@@ -1,0 +1,30 @@
+{
+  "Host": "localhost",
+  "Password": "",
+  "Schema": "dayz_epoch",
+  "User": "root",
+  "LogLevel": "debug",
+  "Time": "static",
+  "Hour": 11,
+  "Instance": 11,
+  "CustomMethods": [
+    {
+      "MethodName": "TestMethod1",
+      "SqlString": "select ObjectUID,Instance,Worldspace from object_data where ObjectID = '%1'",
+      "ReturnTypes": [
+        "string",
+        "scalar",
+        "array"
+      ]
+    },
+    {
+      "MethodName": "TestMethod2",
+      "SqlString": "select Classname,CharacterID,Damage from object_data where ObjectID = '%1'",
+      "ReturnTypes": [
+        "string",
+        "string",
+        "scalar"
+      ]
+    }
+  ]
+}
