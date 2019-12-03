@@ -19,7 +19,6 @@ closeDialog 1;
 
 // item is missing or tools are missing
 if (isNil "_waterUsed") exitWith {
-	//_displayName = getText (configFile >> "CfgMagazines" >> _use >> "displayName");
 	localize "str_sharpen_missing_water" call dayz_rollingMessages;
 	dayz_actionInProgress = false;
 };
@@ -28,6 +27,13 @@ if (isNil "_waterUsed") exitWith {
 if !("equip_brick" IN magazines player) exitWith {
 	_displayName = getText (configFile >> "CfgMagazines" >> "equip_brick" >> "displayName");
 	format [localize "str_missing_to_do_this",_displayName] call dayz_rollingMessages;
+	dayz_actionInProgress = false;
+};
+
+_finished = ["Medic",1] call fn_loopAction;
+
+if (!_finished) exitWith {
+	localize "STR_EPOCH_PLAYER_26" call dayz_rollingMessages;
 	dayz_actionInProgress = false;
 };
 
