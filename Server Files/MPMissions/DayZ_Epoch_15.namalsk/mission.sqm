@@ -35,7 +35,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Namalsk";
-		briefingDescription="Version 1.0.6.2";
+		briefingDescription="Version 1.0.7";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
@@ -52,7 +52,7 @@ class Mission
 			class Vehicles
 			{
 				items=100;
-#define PLRDEF position[]={13167,0,-362};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDamage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
+				#define PLRDEF position[]={13167,0,-362};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDamage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
 				class Item0{id=0;PLRDEF};
 				class Item1
 				{
@@ -188,10 +188,10 @@ class Mission
 	};
 	class Markers
 	{
-		items=27;
+		items=19;
 		class Item0
 		{
-			position[]={5893,50,8665};
+			position[]={5893,0,8665};
 			name="center";
 			type="Empty";
 			a=4000;b=4000;
@@ -204,180 +204,158 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={4619,15,10916};
+			position[]={4619,0,10916};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={7600,23,6019};
+			position[]={7600,0,6019};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={6497,27,11851};
+			position[]={6497,0,11851};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={7667,15,11706};
+			position[]={7667,0,11706};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={4340,34,4959};
+			position[]={4340,0,4959};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={7885,37,7206};
+			position[]={7885,0,7206};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={3012,69,7505};
+			position[]={3012,0,7505};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={4673,4,10003};
+			position[]={4673,0,10003};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={7858,25,9095};
+			position[]={7858,0,9095};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={8755,15,10119};
+			position[]={8755,0,10119};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={5822,33,5640};
+			position[]={5822,0,5640};
 			name="spawn10";
 			type="Empty";
 		};
 		class Item13
 		{
-			position[]={5893,50,8665};
+			position[]={5893,0,8665};
 			name="crashsites";
 			type="Empty";
 			a=4000;b=4000;
 		};
 		class Item14
 		{
-			position[]={5893,50,8665};
+			position[]={5893,0,8665};
 			name="carepackages";
 			type="Empty";
 			a=4000;b=0;
 		};
 		class Item15
 		{
-			position[]={5769,21,10774};
-			name="GerneralPartsSupplies";
-			text="Bastion and Alda's Supplies";
+			position[]={6224.7,0,9164.97};
+			name="TraderCity1";
+			text="Trader City Sebjan";
 			type="mil_circle";
-			colorName="ColorGreen";
+			colorName="ColorBlack";
 		};
 		class Item16
 		{
-			position[]={8885,14,10757};
-			name="WholesalerNorth";
-			text="Wholesaler Larz";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item17
-		{
-			position[]={5563,39,10343};
-			name="Doctor";
-			text="Dr. Zoidberg";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item18
-		{
-			position[]={4702,28,8925};
-			name="HighEndWeaponsAmmo";
-			text="Fry and Phil's Weapons/Ammo";
-			type="mil_circle";
-			colorName="ColorGreen";
-		};
-		class Item19
-		{
-			position[]={3604,185,8026};
-			name="HeroVendor";
-			text="Tanner's Hero Supplies";
-			type="hd_dot";
-			colorName="ColorBlue";
-		};
-		class Item20
-		{
-			position[]={7317,87,8023};
-			name="VehicleFriendly";
-			text="Rutahn's Vehicles";
-			type="mil_triangle";
-			colorName="ColorGreen";
-		};
-		class Item21
-		{
-			position[]={4305,3,4779};
-			name="NeutralVendors";
-			text="Brensk Neutral Camp";
-			type="mil_circle";
-			colorName="ColorBlack";
-		};
-		class Item22
-		{
-			position[]={2186,4,5766};
-			name="WholesalerSouth";
-			text="Dateu's Wholesale";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item23
-		{
-			position[]={5032,49,8234};
-			name="LowEndWeaponsAmmo";
-			text="Rhevn and Merkaba's Weapons/Ammo";
-			type="mil_circle";
-			colorName="ColorBlack";
-		};
-		class Item24
-		{
-			position[]={7720,4,5847};
-			name="BoatVendor";
-			text="Popeye's Boats";
-			type="mil_triangle";
-			colorName="ColorBlack";
-		};
-		class Item25
-		{
-			position[]={7239,240,7046};
-			name="Bandit Trader";
-			text="Bandit Trader";
+			position[]={7265.519,0,5804.69};
+			name="BanditVendor";
+			text="Bandit Vendor";
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item26
+		class Item17
 		{
-			position[]={6283,41,9380};
-			name="PlaneVendor";
-			text="AWOL's Air Vehicles";
-			type="mil_triangle";
-			colorName="ColorGreen";
+			position[]={8887.29,0,10754.3};
+			name="HeroVendor";
+			text="Hero Vendor";
+			type="mil_dot";
+			colorName="ColorBlue";
 		};
+		class Item18
+		{
+			position[]={6237.66,0,11939.93};
+			name="DockTrader";
+			text="Dock Trader";
+			type="mil_box";
+			colorName="ColorBlack";
+		};
+	};
+	
+	class Sensors
+	{
+		items=4;
+		#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{};
+		class Item0
+		{
+			position[]={6224.7,0,9164.97};
+			TRGDEF
+			name="zonetrader";
+			expCond="(player distance zonetrader) < 100;";
+			expActiv="[""Trader City Sebjan"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City Sebjan"",true,""leave""] call player_traderCity;";
+		};		
+		class Item1
+		{
+			position[]={7265.519,0,5804.69};
+			TRGDEF
+			name="zonebandit";
+			expCond="(player distance zonebandit) < 100;";
+			expActiv="[""Bandit Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Bandit Vendor"",true,""leave""] call player_traderCity;";
+		};
+		class Item2
+		{
+			position[]={8887.29,0,10754.3};
+			TRGDEF
+			name="zonehero";
+			expCond="(player distance zonehero) < 100;";
+			expActiv="[""Hero Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Hero Vendor"",true,""leave""] call player_traderCity;";
+		};	
+		class Item3
+		{
+			position[]={6237.66,0,11939.93};
+			TRGDEF
+			name="zonedock";
+			expCond="(player distance zonedock) < 100;";
+			expActiv="[""Dock Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Dock Trader"",true,""leave""] call player_traderCity;";
+		};			
 	};
 };
 class Intro

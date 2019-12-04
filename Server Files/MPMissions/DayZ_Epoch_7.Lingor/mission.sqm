@@ -30,6 +30,7 @@ class Mission
 		"ibr_lcivilian_patch",
 		"chn_crocodile",
 		"warfarebuildings",
+		"aif_arma1buildings",
 		"glt_m300t",
 		"pook_h13",
 		"csj_gyroac",
@@ -47,7 +48,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Lingor";
-		briefingDescription="Version 1.0.6.2";
+		briefingDescription="Version 1.0.7";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
@@ -64,7 +65,7 @@ class Mission
 			class Vehicles
 			{
 				items=100;
-#define PLRDEF position[]={4989,1,-4179};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDamage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
+				#define PLRDEF position[]={4989,1,-4179};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDamage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
 				class Item0{id=0;PLRDEF};
 				class Item1
 				{
@@ -200,295 +201,242 @@ class Mission
 	};
 	class Markers
 	{
-		items=39;
+		items=23;
 		class Item0
 		{
-			position[]={4078,30,4757};
+			position[]={4078,0,4757};
 			name="center";
 			type="Empty";
 			a=6000;b=6000;
 		};
 		class Item1
 		{
-			position[]={4989,1,-4178};
+			position[]={4989,0,-4178};
 			name="respawn_west";
 			type="Empty";
 		};
 		class Item2
 		{
-			position[]={2085,12,5500};
+			position[]={2085,0,5500};
 			name="spawn0";
 			type="Empty";
 		};
 		class Item3
 		{
-			position[]={1355,13,315};
+			position[]={1355,0,315};
 			name="spawn1";
 			type="Empty";
 		};
 		class Item4
 		{
-			position[]={4549,2,912};
+			position[]={4549,0,912};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={8880,4,1703};
+			position[]={8880,0,1703};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={579,15,5547};
+			position[]={579,0,5547};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={3249,6,2555};
+			position[]={3249,0,2555};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={6143,6,2753};
+			position[]={6143,0,2753};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={1268,14,2857};
+			position[]={1268,0,2857};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={8295,8,8667};
+			position[]={8295,0,8667};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={9071,14,7322};
+			position[]={9071,0,7322};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={6898,6,3970};
+			position[]={6898,0,3970};
 			name="spawn10";
 			type="Empty";
 		};
 		class Item13
 		{
-			position[]={4078,30,4757};
+			position[]={4078,0,4757};
 			name="crashsites";
 			type="Empty";
 			a=6000;b=6000;
 		};
 		class Item14
 		{
-			position[]={4078,30,4757};
+			position[]={4078,0,4757};
 			name="carepackages";
 			type="Empty";
 			a=6000;b=0;
 		};
 		class Item15
 		{
-			position[]={6011,13,6626};
-			name="RaceTrack";
-			text="Rommelo's Raceway";
-			type="mil_dot";
+			position[]={3012.5,0,7137}; 
+			name="Aircraftrader";
+			text="Aircraft Trader";
+			type="mil_triangle";
 			colorName="ColorBlack";
-			fillName="Border";
-			drawBorder=1;
 		};
 		class Item16
 		{
-			position[]={6539,20,6868};
-			name="RepairGuy";
-			text="Axles Repair Shop";
-			type="mil_box";
-			colorName="ColorGreen";
-		};
-		class Item17
-		{
-			position[]={7026,11,7105};
-			name="PlaneVendor";
-			text="AWOL's Planes";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item18
-		{
-			position[]={3054,14,8032};
-			name="Wholesale";
-			text="Wholesaler Blivion";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item19
-		{
-			position[]={3608,235,3685};
-			name="HighWeapons/ammo";
-			text="Jim and Joe's Weapons/Ammo";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item20
-		{
-			position[]={4245,46,4486};
-			name="Parts";
-			text="Whiskey's Parts";
-			type="mil_box";
-			colorName="ColorBlack";
-		};
-		class Item21
-		{
-			position[]={4138,23,1492};
-			name="Choppers";
-			text="Chip's Choppers";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item22
-		{
-			position[]={7553,11,3028};
-			name="lowEndCars";
-			text="Used Cars";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item23
-		{
-			position[]={7514,10,2953};
-			name="LowEndWeapons";
-			text="Chuck and Buck's Weapons/Ammo";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item24
-		{
-			position[]={3024,45,5956};
-			name="HighEndCars";
-			text="Green's Quality Cars";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item25
-		{
-			position[]={895,29,5271};
-			name="MedicalandBags";
-			text="Alejandria and Melly's Medica/Survival Shop";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item26
-		{
-			position[]={8357,23,8740};
-			name="Wholesaler";
-			text="Wholesaler Clive";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item27
-		{
-			position[]={4178,12,2342};
-			name="BagsNFood";
-			text="Bag lady Gina";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item28
-		{
-			position[]={728,41,1571};
-			name="Wholesalers";
-			text="Wholesaler Santos";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item29
-		{
-			position[]={1724,42,4137};
-			name="DirtTrackVendor";
-			text="Adventure 4x4";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item30
-		{
-			position[]={2376,56,4120};
-			name="OffRoad4x4";
-			text="MotoDrom 4x4 Offroad";
-			type="mil_dot";
-			colorName="ColorGreen";
-		};
-		class Item31
-		{
-			position[]={4015,4,5216};
-			name="BoatVendor";
-			text="Big Bob's Boats";
-			type="mil_triangle";
-			colorName="ColorBlack";
-		};
-		class Item32
-		{
-			position[]={5523,2,4412};
-			name="BoatVendor1";
-			text="Juan's Tour Boats";
-			type="mil_triangle";
-			colorName="ColorBlack";
-		};
-		class Item33
-		{
-			position[]={3939,2,2199};
-			name="BoatVendor2";
-			text="Jd's Armed boats";
-			type="mil_triangle";
-			colorName="ColorGreen";
-		};
-		class Item34
-		{
-			position[]={6673,52,6355};
-			name="BagVendor1";
-			text="Stella's Stop";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item35
-		{
-			position[]={4238,48,4842};
-			name="BagVendor2";
-			text="Samish Shop";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item36
-		{
-			position[]={6679,26,4296};
-			name="Doctor2";
-			text="Mad Scientist";
-			type="mil_dot";
-			colorName="ColorBlack";
-		};
-		class Item37
-		{
-			position[]={4099,16,9242};
-			name="BanditTrader";
-			text="Bandit Trader";
+			position[]={2847.81,0,9259.68}; 
+			name="BanditVendor";
+			text="Bandit Vendor";
 			type="mil_dot";
 			colorName="ColorRed";
 		};
-		class Item38
+		class Item17
 		{
-			position[]={4139,23,1465};
-			name="HeroTrader";
-			text="Hero Trader";
+			position[]={4682.73,0,4097.22};
+			name="HeroVendor";
+			text="Hero Vendor";
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
+		class Item18
+		{
+			position[]={2382.54,0,4163.14}; 
+			name="TradercityMotodrom";
+			text="Trader City Motodrom";
+			type="mil_circle";
+			colorName="ColorBlack";
+		};	
+		class Item19
+		{
+			position[]={7639.03,0,2088.31};
+			name="TradercityElVillon";
+			text="Trader City El Villon";
+			type="mil_circle";
+			colorName="ColorBlack";
+		};	
+		class Item20
+		{
+			position[]={5186.06,0,7694.74};
+			name="TradercitySanIsabel";
+			text="Trader City San Isabel";
+			type="mil_circle";
+			colorName="ColorGreen";
+		};	
+		class Item21
+		{
+			position[]={1428.51,0,1178.64};
+			name="DockTraderSouth";
+			text="South West Dock Trader";
+			type="mil_box";
+			colorName="ColorBlack";
+		};
+		class Item22
+		{
+			position[]={9071.49,0,8678.36};
+			name="DockTraderNorth";
+			text="North East Dock Trader";
+			type="mil_box";
+			colorName="ColorBlack";
+		};		
 	};
+	class Sensors
+	{
+		items=8;
+		#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{};
+		class Item0
+		{
+			position[]={2382.54,0,4163.14}; 
+			TRGDEF
+			name="zonemotodrom";
+			expCond="(player distance zonemotodrom) < 100;";
+			expActiv="[""Trader City Motodrom"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City Motodrom"",true,""leave""] call player_traderCity;";
+		};
+		class Item1
+		{
+			position[]={7639.03,0,2088.31};
+			TRGDEF
+			name="zoneellvillon";
+			expCond="(player distance zoneellvillon) < 100;";
+			expActiv="[""Trader City El Villon"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City El Villon"",true,""leave""] call player_traderCity;";
+		};
+		class Item2
+		{
+			position[]={5186.06,0,7694.74};
+			TRGDEF
+			name="zonesanisabel";
+			expCond="(player distance zonesanisabel) < 100;";
+			expActiv="[""Trader City San Isabel"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City San Isabel"",true,""leave""] call player_traderCity;";
+		};
+		class Item3
+		{
+			position[]={2834.25,0,9282.13}; 
+			TRGDEF
+			name="zonebandit";
+			expCond="(player distance zonebandit) < 100;";
+			expActiv="[""Bandit Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Bandit Vendor"",v,""leave""] call player_traderCity;";
+		};
+		class Item4
+		{
+			position[]={4678.09,0,4084.89};
+			TRGDEF
+			name="zonehero";
+			expCond="(player distance zonehero) < 100;";
+			expActiv="[""Hero Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Hero Vendor"",true,""leave""] call player_traderCity;";
+		};
+		class Item5
+		{
+			position[]={3012.5,0,7137}; 
+			TRGDEF
+			name="zoneaircraft";
+			expCond="(player distance zoneaircraft) < 100;";
+			expActiv="[""Aircraft Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Aircraft Trader"",true,""leave""] call player_traderCity;";
+		};
+		class Item6
+		{
+			position[]={1428.51,0,1178.64};
+			TRGDEF
+			name="zonedock1";
+			expCond="(player distance zonedock1) < 100;";
+			expActiv="[""Dock Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Dock Trader"",true,""leave""] call player_traderCity;";
+		};
+		class Item7
+		{
+			position[]={9071.49,0,8678.36}; 
+			TRGDEF
+			name="zonedock2";
+			expCond="(player distance zonedock2) < 100;";
+			expActiv="[""Dock Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Dock Trader"",true,""leave""] call player_traderCity;";
+		};		
+	};	
 };
 class Intro
 {

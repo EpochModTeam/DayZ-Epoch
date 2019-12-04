@@ -17930,7 +17930,7 @@
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED_DESC">
 			<English>Water Bottle PET with 9oz of boiled water.</English>
 			<German>Wasserflasche PET mit 900ml abgekochtem Wasser.</German>
-		</Key>
+		</Key>		
 		
 		<!--dayz mod crash site display names-->
 		<Key ID="STR_EPOCH_CRASHSITE1">
@@ -17949,7 +17949,7 @@
 			<English>HC3 Merlin Wreck</English>
 			<German>HC3 Merlin Wrack</German>
 		</Key>		
-		
+		<!-------------------------------------->		
 		<Key ID="STR_POSITION_VEH_FRONT_GUNNER">
 			<English>front gunner</English>
 			<German>Frontschütze</German>
@@ -17960,8 +17960,218 @@
 			<Russian>Стрелок (нос)</Russian>
 			<Polish>Przedni strzelec</Polish>
 			<Hungarian>Első lövész</Hungarian>			
+		</Key>			
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES">
+			<English>Air Vehicles</English>
+			<German>Luftfahrzeuge</German>
 		</Key>	
-		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES">
+			<English>Ground Vehicles</English>
+			<German>Bodenfahrzeuge</German>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_WEAPONS">
+			<English>Weapons</English>
+			<German>Waffen</German>
+			<Russian>Оружие</Russian>
+		</Key>			
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_AMMUNITION">
+			<English>Ammunition</English>
+			<German>Munition</German>
+			<Russian>Боеприпасы</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_CLOTHES">
+			<English>Clothes</English>
+			<German>Kleidung</German>
+			<Russian>Одежда</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_BLACKMARKET">
+			<English>Black Market</English>
+			<German>Schwarzmarkt</German>
+			<Russian>Чёрный рынок</Russian>
+		</Key>			
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_ATTACHMENTS">
+			<English>Attachments</English>
+			<German>Erweiterungen</German>
+			<Russian>Оружейные модули</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_PISTOLS">
+			<English>Pistols</English>
+			<German>Pistolen</German>
+			<Russian>Пистолеты</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNS">
+			<English>Submachine Guns</English>
+			<German>Maschinenpistole</German>
+			<Russian>Пистолеты-пулемёты</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_SINGLESHOT">
+			<English>Single-shot/Shotguns</English>
+			<German>Schrotflinten-/Einzelschusswaffen</German>
+			<Russian>Дробовики, ружья и арбалеты</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLES">
+			<English>Assault Rifles</English>
+			<German>Sturmgewehre</German>
+			<Russian>Штурмовые винтовки</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLES">
+			<English>Sniper Rifles</English>
+			<German>Scharfschützengewehre</German>
+			<Russian>Снайперские винтовки</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNS">
+			<English>Light Machine Guns</English>
+			<German>Leichte Maschinengewehre</German>
+			<Russian>Пулемёты</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_PISTOLAMMO">
+			<English>Pistol Ammunition</English>
+			<German>Pistolenmunition</German>
+			<Russian>Патроны для пистолетов</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNAMMO">
+			<English>Submachine Gun Ammunition</English>
+			<German>Maschinenpistolenmunition</German>
+			<Russian>Патроны для пистолетов-пулемётов</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_SINGLESHOTAMMO">
+			<English>Shotgun/Single-shot Ammunition</English>
+			<German>Schrotflinten-/Einzelschussmunition</German>
+			<Russian>Патроны для дробовиков и ружей</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLEAMMO">
+			<English>Assault Rifle Ammunition</English>
+			<German>Sturmgewehrmunition</German>
+			<Russian>Патроны для штурмовых винтовок</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLEAMMO">
+			<English>Sniper Rifle Ammunition</English>
+			<German>Scharfschützengewehrmunition</German>
+			<Russian>Патроны для снайперских винтовок</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNAMMO">
+			<English>Light Machine Gun Ammunition</English>
+			<German>Leichte Maschinengewehrmunition</German>
+			<Russian>Патроны для пулемётов</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_SMOKEGRENADES">
+			<English>Smoke Grenades</English>
+			<German>Rauchgranaten</German>
+			<Russian>Дымовые гранаты</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_FLARES">
+			<English>Chem-lites/Flares</English>
+			<German>Knicklichter/Leuchtsignale</German>
+			<Russian>Химсвет и осветительные гранаты</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_PACKAGEFOOD">
+			<English>Packaged Food</English>
+			<German>Abgepackte Nahrung</German>
+			<Russian>Еда в упаковке</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_COOKMEAT">
+			<English>Cooked Meat/Fish</English>
+			<German>Fleisch/Fisch gebraten</German>
+			<Russian>Еда приготовленная</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_DRINKS">
+			<English>Drinks</English>
+			<German>Getränke</German>
+			<Russian>Напитки</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_BACKPACKS">
+			<English>Backpacks</English>
+			<German>Rucksäcke</German>
+			<Russian>Рюкзаки</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS">
+			<English>Miscellaneous</English>
+			<German>Sonstiges</German>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_MEDICALSUPPLIES">
+			<English>Medical Supplies</English>
+			<German>Medizinische Vorräte</German>
+			<Russian>Медикаменты</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_TOOLS">
+			<English>Tools</English>
+			<German>Werkzeuge</German>
+			<Russian>Инструменты</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES">
+			<English>Building Supplies</English>
+			<German>Baumaterialien</German>
+			<Russian>Строительные материалы</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS">
+			<English>Vehicle Parts</English>
+			<German>Fahrzeugteile</German>
+			<Russian>Запчасти</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_BIKESATVS">
+			<English>Bikes/ATVs</English>
+			<German>Fahrräder/Motorräder/ATVs</German>
+			<Russian>Вело-, мото- и квадроциклы</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_CARS">
+			<English>Cars</English>
+			<German>Autos</German>
+			<Russian>Легковые автомобили</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_PICKUPS">
+			<English>Pick-ups</English>
+			<German>Pickups</German>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_UAZS">
+			<English>UAZs</English>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_SUVS">
+			<English>SUVs</English>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS">
+			<English>Cargo Trucks</English>
+			<German>LKWs</German>
+			<Russian>Грузовые автомобили</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_FUELTRUCKS">
+			<English>Fuel Trucks</English>
+			<German>Treibstoff-LKWs</German>
+			<Russian>Топливозаправщики</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_MILITARYUNARMED">
+			<English>Military Unarmed</English>
+			<German>Militär Unbewaffnet</German>
+			<Russian>Военная техника</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_HELICOPTER">
+			<English>Helicopter</English>
+			<German>Helikopter</German>
+			<Russian>вертолёты</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_AIRPLANES">
+			<English>Airplanes</English>
+			<German>Flugzeuge</German>
+			<Russian>Самолёты</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_BOATSARMED">
+			<English>Boats Armed</English>
+			<German>Bewaffnete Boote</German>
+			<Russian>Вооруженные катера</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_BOATSUNARMED">
+			<English>Boats Unarmed</English>
+			<German>Unbewaffnet Boote</German>
+			<Russian>Лодки без оружия</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_WHOLESALE">
+			<English>Wholesale</English>
+			<German>Großhandel</German>
+			<Russian>Оптовая торговля</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
+			<English>Trade %1 %2 for %3 %4</English>
+			<German>%1 %2 für %3 %4 handeln</German>
+		</Key>			
 		<!--Namalsk compatibility-->
 		 <Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>
