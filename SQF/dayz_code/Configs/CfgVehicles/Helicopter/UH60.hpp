@@ -361,6 +361,7 @@ class UH60M_base_EP1: UH60_Base {
 class UH60M_US_base_EP1: UH60M_base_EP1 {
 	side = 1;
 	faction = "BIS_US";
+	fuelCapacity = 2760;
 };
 class UH60M_EP1_DZ: UH60M_US_base_EP1 {
 	crew = "";
@@ -393,7 +394,7 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1 {
 			gunEnd = "chamber_1";
 			weapons[] = {"M134"};
 			magazines[] = {"2000Rnd_762x51_M134"};
-			gunnerName = "crew chief";
+			gunnerName = $STR_POSITION_CREWCHIEF;
 			gunnerOpticsModel = "\ca\weapons\optika_empty";
 			gunnerOutOpticsShowCursor = 1;
 			gunnerOpticsShowCursor = 1;
@@ -424,7 +425,7 @@ class UH60M_EP1_DZ: UH60M_US_base_EP1 {
 			stabilizedInAxes = "StabilizedInAxesNone";
 			selectionFireAnim = "zasleh_1";
 			proxyIndex = 2;
-			gunnerName = "door gunner";
+			gunnerName = $STR_POSITION_DOORGUNNER;
 			commanding = -3;
 			minElev = -60;
 			maxElev = 30;
@@ -462,91 +463,13 @@ class MH60S_DZE : MH60S_DZ {
 		};
 	};
 };
-class UH60M_EP1_DZE: UH60M_US_base_EP1 {
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines{};
-	class TransportWeapons{};
-	commanderCanSee = 2+16+32;
-	gunnerCanSee = 2+16+32;
-	driverCanSee = 2+16+32;
-	transportMaxWeapons = 10;
-	transportMaxMagazines = 100;
-	transportmaxbackpacks = 5;
-	scope = public;
-	accuracy = 1.5;
-	displayName = $STR_VEH_NAME_UH60;
-	class Turrets: Turrets {
-		class MainTurret: MainTurret {
-			body = "mainTurret";
-			gun = "mainGun";
-			minElev = -60;
-			maxElev = 30;
-			initElev = 0;
-			minTurn = -7;
-			maxTurn = 183;
-			initTurn = 0;
-			soundServo[] = {"",0.01,1};
-			animationSourceHatch = "";
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_1";
-			gunEnd = "chamber_1";
-			weapons[] = {"M134"};
+class UH60M_EP1_DZE: UH60M_EP1_DZ {
+	class Turrets : Turrets {
+		class MainTurret : MainTurret {
 			magazines[] = {};
-			gunnerName = "crew chief";
-			gunnerOpticsModel = "\ca\weapons\optika_empty";
-			gunnerOutOpticsShowCursor = 1;
-			gunnerOpticsShowCursor = 1;
-			gunnerAction = "UH60M_Gunner_EP1";
-			gunnerInAction = "UH60M_Gunner_EP1";
-			commanding = -2;
-			primaryGunner = 1;
-			class ViewOptics {
-				initAngleX = 0;
-				minAngleX = -30;
-				maxAngleX = 30;
-				initAngleY = 0;
-				minAngleY = -100;
-				maxAngleY = 100;
-				initFov = 0.7;
-				minFov = 0.25;
-				maxFov = 1.1;
-			};
-			gunnerCompartments = "Compartment2";
 		};
-		class RightDoorGun: MainTurret {
-			body = "Turret_2";
-			gun = "Gun_2";
-			animationSourceBody = "Turret_2";
-			animationSourceGun = "Gun_2";
-			weapons[] = {"M134_2"};
+		class RightDoorGun : RightDoorGun {
 			magazines[] = {};
-			stabilizedInAxes = "StabilizedInAxesNone";
-			selectionFireAnim = "zasleh_1";
-			proxyIndex = 2;
-			gunnerName = "door gunner";
-			commanding = -3;
-			minElev = -60;
-			maxElev = 30;
-			initElev = 0;
-			minTurn = -183;
-			maxTurn = 7;
-			initTurn = 0;
-			gunBeg = "muzzle_2";
-			gunEnd = "chamber_2";
-			primaryGunner = 0;
-			memoryPointGun = "machinegun_1";
-			memoryPointGunnerOptics = "gunnerview_2";
-		};
-	};
-	class AnimationSources: AnimationSources {
-		class Gatling_1 {
-			source = "revolving";
-			weapon = "M134";
-		};
-		class Gatling_2 {
-			source = "revolving";
-			weapon = "M134_2";
 		};
 	};
 };
