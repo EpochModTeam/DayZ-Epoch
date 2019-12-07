@@ -394,6 +394,7 @@ class Mi17_Civilian_DZ: Mi17_Civilian {
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
 	transportmaxbackpacks = 10;
+	fuelCapacity = 1500;
 };
 
 class Mi17_medevac_CDF;
