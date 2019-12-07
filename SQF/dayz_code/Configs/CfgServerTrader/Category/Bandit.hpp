@@ -1,5 +1,13 @@
 //Air Vehicles
 class Category_6 {
+	class pook_transport_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class pook_transport_DZ {type = "trade_any_vehicle";buy[] = {-2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
+	class pook_transport_CDF_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class pook_transport_CDF_DZ {type = "trade_any_vehicle";buy[] = {-2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
+	class pook_gunship_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class pook_gunship_DZ {type = "trade_any_vehicle";buy[] = {-2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
+	class pook_gunship_CDF_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class pook_gunship_CDF_DZ {type = "trade_any_vehicle";buy[] = {-2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
 	class AH6J_EP1_DZE {type = "trade_any_vehicle";buy[] = {3,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
 	class AH6J_EP1_DZ {type = "trade_any_vehicle";buy[] = {-2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
 	class Mi17_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};

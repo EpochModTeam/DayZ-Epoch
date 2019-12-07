@@ -448,6 +448,7 @@ class CfgVehicles
 	#include "Helicopter\CH47.hpp"
 	#include "Helicopter\BAF_Merlin.hpp"
 	#include "Helicopter\AH1Z.hpp"
+	#include "Helicopter\Pook.hpp"
 	#include "CrashSite.hpp"
 	//Planes
 	#include "Plane\AN2_DZ.hpp"

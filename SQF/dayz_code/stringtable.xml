@@ -8540,6 +8540,54 @@
 		</Key>		
 		<Key ID="STR_VEH_NAME_C130">
 			<English>C-130J Hercules</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_BELLH13_CIV">
+			<English>Bell 47 (Blue\White)</English>
+			<German>Bell 47 (Blau\Weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_WHITE">
+			<English>Bell 47 (White)</English>
+			<German>Bell 47 (Weiß)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLUE">
+			<English>Bell 47 (Blue)</English>
+			<German>Bell 47 (Blau)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLACK">
+			<English>Bell 47 (Black)</English>
+			<German>Bell 47 (Schwarz)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_YELLOW">
+			<English>Bell 47 (Yellow)</English>
+			<German>Bell 47 (Gelb)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC">
+			<English>Bell 47 MedEvac (Olive-green)</English>
+			<German>Bell 47 SanHS. (Olivgrün)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN">
+			<English>Bell 47 MedEvac (Green)</English>
+			<German>Bell 47 SanHS. (Grün)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE">
+			<English>Bell 47 MedEvac (Orange)</English>
+			<German>Bell 47 SanHS. (Orange)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP">
+			<English>Bell 47 Gunship (Olive-green)</English>
+			<German>Bell 47 Gunship (Olivgrün)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP_GREEN">
+			<English>Bell 47 Gunship (Green)</English>
+			<German>Bell 47 Gunship (Grün)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT">
+			<English>Bell 47 Transport (Olive-green)</English>
+			<German>Bell 47 Transport (Olivgrün)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT_GREEN">
+			<English>Bell 47 Transport (Green)</English>
+			<German>Bell 47 Transport (Grün)</German>
 		</Key>			
 		<Key ID="STR_VEH_NAME_MI8_WRECK">
 			<English>Mi-8 Wreck</English>
