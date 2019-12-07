@@ -10,6 +10,9 @@ class AH1Z_DZ: AH1Z {
 	driverCanSee = 2+16+32;
 	fuelCapacity = 1333;
 	
+	class Turrets;
+	class MainTurret;
+	
 	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
 	{
@@ -40,6 +43,15 @@ class AH1Z_DZ: AH1Z {
 			onlyForPlayer = 1;
 			condition = "!isEngineOn this && {player == driver this} && {this animationPhase 'mainrotor_unfolded' == 1}";
 			statement = "this animate ['mainrotor_folded',1]; this animate ['mainrotor_unfolded',0]; this animate ['rotorshaft_unfolded',0];";
+		};
+	};
+};
+
+class AH1Z_DZE: AH1Z_DZ {
+	magazines[] = {};
+	class Turrets: Turrets	{
+		class MainTurret: MainTurret {
+			magazines[] = {};
 		};
 	};
 };
