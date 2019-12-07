@@ -829,37 +829,8 @@ class GAZ_Vodnik_DZ : GAZ_Vodnik_HMG
 	};
 };
 
-
-class GAZ_Vodnik_DZE : GAZ_Vodnik_HMG
+class GAZ_Vodnik_DZE : GAZ_Vodnik_DZ
 {
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	model = "\ca\wheeled2\GAZ39371\GAZ39371_Vodnik.p3d";
-	displayname = $STR_VEH_NAME_VODNIK_PKT;
-	picture = "\Ca\wheeled2\data\UI\Picture_GAZ39371_CA.paa";
-	Icon = "\Ca\wheeled2\data\UI\Icon_GAZ39371_CA.paa";
-	gunnerCanSee = "4+8+16";
-	commanderCanSee = "4+8+16";
-	mapSize = 6.5;
-	transportSoldier = 10;
-	cargoAction[] = {
-	  "HMMWV_Cargo01",
-	  "Landrover_Cargo01",
-	  "UAZ_Cargo01"
-	};
-	class Library
-	{
-	  libTextDesc = "GAZ-3937 ""Vodnik"" is a Russian high-mobility multipurpose amphibious vehicle. It can carry up to 10 people and drive at speeds up to 112 km/h (or 5 km when floating).<br/>This is equipped with dual PK 7.62 mm machine gun.";
-	};
-	armor = 85;
-	damageResistance = 0.032;
-	threat[] = {
-	  0.5,
-	  0.1,
-	  0.2
-	};
-	enableManualFire = 0;
 	class Turrets : Turrets
 	{
 	  class MainTurret : MainTurret
@@ -938,39 +909,6 @@ class GAZ_Vodnik_DZE : GAZ_Vodnik_HMG
 		memoryPointGun = "machinegun2";
 		memoryPointGunnerOptics = "gunnerview2";
 		startEngine = 0;
-	  };
-	};
-	class AnimationSources : AnimationSources
-	{
-	  class ReloadAnim
-	  {
-		source = "reload";
-		weapon = "PKT";
-	  };
-	  class ReloadMagazine
-	  {
-		source = "reloadmagazine";
-		weapon = "PKT";
-	  };
-	  class Revolving
-	  {
-		source = "revolving";
-		weapon = "PKT";
-	  };
-	  class ReloadAnim_2
-	  {
-		source = "reload";
-		weapon = "PKT_2";
-	  };
-	  class ReloadMagazine_2
-	  {
-		source = "reloadmagazine";
-		weapon = "PKT_2";
-	  };
-	  class Revolving_2
-	  {
-		source = "revolving";
-		weapon = "PKT_2";
 	  };
 	};
 };
