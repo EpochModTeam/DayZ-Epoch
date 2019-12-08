@@ -350,73 +350,13 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 		};
 	};
 };
-class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
+class ArmoredSUV_PMC_DZE: ArmoredSUV_PMC_DZ
 {
-	scope = public;
-	side = 2;
-	faction = "PMC_BAF";
-	displayName = $STR_VEH_NAME_SUV_ARMORED;
-	armor = 80;
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	enableGPS = 1;  
-	transportMaxWeapons = 20; 
-	transportMaxMagazines = 150; 
-	transportmaxbackpacks = 10;
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
 		{
-			body = "mainTurret";
-			gun = "mainGun";
-			viewGunnerInExternal = 1;
-			minElev = -30;
-			maxElev = 45;
-			initElev = 0;
-			soundServo[] = {"",0.01,1};
-			animationSourceHatch = "";
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_1";
-			gunEnd = "chamber_1";
-			weapons[] = {"M134"};
-			maxHorizontalRotSpeed = 1.8;
-			maxVerticalRotSpeed = 1.8;
 			magazines[] = {};
-			gunnerAction = "ArmoredSUV_Gunner_PMC";
-		};
-	};
-	class AnimationSources: AnimationSources
-	{
-		class Revolving
-		{
-			source = "revolving";
-			weapon = "M134";
-		};
-		class HideGun_01
-		{
-			source = "user";
-			initPhase = 0;
-			animPeriod = 1.2;
-		};
-		class HideGun_02: HideGun_01
-		{
-		};
-		class HideGun_03: HideGun_01
-		{
-		};
-		class HideGun_04: HideGun_01
-		{
-		};
-		class CloseCover1
-		{
-			source = "user";
-			initPhase = 0;
-			animPeriod = 0.7;
-		};
-		class CloseCover2: CloseCover1
-		{
 		};
 	};
 	class Upgrades
