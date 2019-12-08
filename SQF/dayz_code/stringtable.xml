@@ -8475,7 +8475,10 @@
 		<Key ID="STR_VEH_NAME_JETSKI_RED">
 			<English>Jet Ski (red)</English>
 			<German>Jetski (rot)</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOZZIE">
+			<English>Mozzie</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_AH6X">
 			<English>AH6X Little Bird</English>
 			<Russian>AH6X «Литтл Бёрд»</Russian>

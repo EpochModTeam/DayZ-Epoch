@@ -450,6 +450,7 @@ class CfgVehicles
 	#include "Helicopter\BAF_Merlin.hpp"
 	#include "Helicopter\AH1Z.hpp"
 	#include "Helicopter\Pook.hpp"
+	#include "Helicopter\CSJ_GyroAC.hpp"
 	#include "CrashSite.hpp"
 	//Planes
 	#include "Plane\AN2_DZ.hpp"
@@ -537,7 +538,6 @@ class CfgVehicles
 	#include "DZE\Prop_Defs.hpp"
 	#include "DZE\Veins.hpp"
 	#include "DZE\ModularBuilding.hpp"
-	#include "DZE\CSJ_GyroAC.hpp"
 	class Land_A_tent;	// External class reference
 	#include "DZE\Grave.hpp"
 	class WeaponHolder;	// External class reference

@@ -19,7 +19,7 @@ AllowedVehiclesList = [
 	["car_sedan",_Ratio3],
 	["CH_47F_EP1_DZE",_Ratio1],
 	["CH53_DZE",_Ratio1],
-	["CSJ_GyroC",_Ratio3],
+	["CSJ_GyroC_DZE",_Ratio3],
 	["CSJ_GyroCover",_Ratio3],
 	["CSJ_GyroP",_Ratio3],
 	["datsun1_civil_1_open_DZE",_Ratio3],

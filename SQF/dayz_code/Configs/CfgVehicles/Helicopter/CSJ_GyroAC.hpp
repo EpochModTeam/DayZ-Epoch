@@ -250,3 +250,15 @@ class CSJ_GyroC: Helicopter
 		};
 	};
 };
+
+class CSJ_GyroC_DZ: CSJ_GyroC
+{
+	displayName = $STR_VEH_NAME_MOZZIE;
+	transportMaxMagazines = 3;
+	transportMaxWeapons = 1;
+};
+
+class CSJ_GyroC_DZE: CSJ_GyroC_DZ
+{
+	magazines[] = {};
+};
