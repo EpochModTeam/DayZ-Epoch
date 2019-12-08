@@ -8227,13 +8227,13 @@
 			<English>Pick-up (DSHKM)</English>
 		</Key>	
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT">
-			<English>Pick-up GUE(PKT)</English>
+			<English>Pick-up GUE (PKT)</English>
 		</Key>	
 		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT">
-			<English>Pick-up INS(PKT)</English>
+			<English>Pick-up INS (PKT)</English>
 		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT">
-			<English>Pick-up TK(PKT)</English>
+			<English>Pick-up TK (PKT)</English>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS">
 			<English>Skoda Van (blue)</English>
@@ -8405,6 +8405,14 @@
 			<Polish>Stary hatchback </Polish>
 			<Hungarian>Kupé</Hungarian>
 		</Key>	
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_GREEN">
+			<English>BTR-40 DSHKM (Green)</English>
+			<German>BTR-40 DSHKM (Grün)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD">
+			<English>BTR-40 DSHKM (Woodland)</English>
+			<German>BTR-40 DSHKM (Waldtarn)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR90">
 			<English>BTR-90</English>
 		</Key>			
@@ -8496,8 +8504,8 @@
 			<Russian>Ми-17 (UN)</Russian>
 		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_CIVIL">
-			<English>Mi-17 (Civilan)</English>
-			<Russian>Ми-17 (Civilan)</Russian>
+			<English>Mi-17 (Civilian)</English>
+			<Russian>Ми-17 (Civilian)</Russian>
 			<German>Mi-17 (Zivil)</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF">
@@ -8516,7 +8524,7 @@
 			<English>CH-47F Chinook</English>
 		</Key>		
 		<Key ID="STR_VEH_NAME_CH53">
-			<English>CH53E Super Stallion </English>
+			<English>CH53E Super Stallion</English>
 		</Key>	
 		<Key ID="STR_VEH_NAME_UH1H_WOODLAND">
 			<English>UH-1H (Woodland)</English>

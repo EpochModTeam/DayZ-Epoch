@@ -411,6 +411,7 @@ class CfgVehicles
 	//Cars
 	#include "Car\HMMWV.hpp"
 	#include "Car\ArmoredSUV.hpp"
+	#include "Car\BTR40.hpp"
 	#include "Car\BTR90.hpp"
 	#include "Car\datsun.hpp"
 	#include "Car\Gaz_Vodnik.hpp"

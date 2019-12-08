@@ -53,6 +53,10 @@ class Category_2 {
 	class LandRover_Special_CZ_EP1_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
 	class UAZ_MG_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 	class UAZ_MG_TK_EP1_DZ {type = "trade_any_vehicle";buy[] = {-6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
+	class BTR40_MG_TK_GUE_EP1_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class BTR40_MG_TK_GUE_EP1_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class BTR40_MG_TK_INS_EP1_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class BTR40_MG_TK_INS_EP1_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
 	class GAZ_Vodnik_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
 	class GAZ_Vodnik_DZ {type = "trade_any_vehicle";buy[] = {-2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
 	class BRDM2_HQ_TK_GUE_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
