@@ -124,7 +124,7 @@ if (toLower worldName in ["caribou","chernarus","cmr_ovaron","dayznogova","dingo
 		["JetSkiYanahui_Case_Red",_Ratio1],
 		["JetSkiYanahui_Case_Yellow",_Ratio1],
 		["PBX",_Ratio3],
-		["RHIB",_Ratio3],
+		["RHIB_DZE",_Ratio3],
 		["Smallboat_1",_Ratio3],
 		["Smallboat_2",_Ratio3],
 		["Zodiac",_Ratio3]

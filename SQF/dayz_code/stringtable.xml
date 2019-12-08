@@ -8436,6 +8436,14 @@
 		<Key ID="STR_VEH_NAME_TT650_INS">
 			<English>Yamaha TT650</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_RHIB_M2">
+			<English>RHIB (M2)</English>
+			<Russian>НЛЖК (M2)</Russian>
+		</Key>	
+		<Key ID="STR_VEH_NAME_RHIB_MK19">
+			<English>RHIB (MK 19)</English>
+			<Russian>НЛЖК (Мод. 19)</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PBX">
 			<English>PBX</English>
 			<Russian>Моторная лодка ПВХ</Russian>

@@ -1,6 +1,11 @@
 //Armed Boats
-class Category_48 {
-	class RHIB {type = "trade_any_boat";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+class Category_48 {	
+	class RHIB_DZE {type = "trade_any_boat";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class RHIB_DZ {type = "trade_any_boat";buy[] = {-4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};	
+	class RHIB2Turret_DZE {type = "trade_any_boat";buy[] = {8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
+	class RHIB2Turret_DZ {type = "trade_any_boat";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
+	class RHIB {type = "trade_any_boat";buy[] = {-4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class RHIB2Turret {type = "trade_any_boat";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
 };
 
 //Unarmed Boats
