@@ -488,52 +488,13 @@ class UAZ_MG_TK_EP1_DZ: UAZ_MG_Base
 	};
 };
 
-
-class UAZ_MG_TK_EP1_DZE: UAZ_MG_Base
+class UAZ_MG_TK_EP1_DZE: UAZ_MG_TK_EP1_DZ
 {
-	htMin = 60;
-	htMax = 1800;
-	afMax = 200;
-	mfMax = 100;
-	mFact = 1;
-	tBody = 250;
-	expansion = 1;
-	scope = public;
-	side = 0;
-	faction = "BIS_TK";
-	accuracy = 0.3;
-	crew = "";
-	displayName = $STR_VEH_NAME_UAZ_DSHKM;
-	typicalCargo[] = {};
-	hiddenSelectionsTextures[] = {"\CA\wheeled_E\UAZ\Data\Uaz_main_IND_CO.paa","\ca\wheeled\data\uaz_mount_001_co.paa"};
-	class TransportMagazines {};
-	class TransportWeapons{};
-	class Damage
-	{
-		tex[] = {};
-		mat[] = {"Ca\wheeled_E\UAZ\Data\uaz_main_metal.rvmat","Ca\wheeled_E\UAZ\Data\uaz_main_metal_damage.rvmat","Ca\wheeled_E\UAZ\Data\uaz_main_metal_destruct.rvmat","Ca\wheeled_E\UAZ\Data\uaz_other_metal.rvmat","Ca\wheeled_E\UAZ\Data\uaz_other_metal_damage.rvmat","Ca\wheeled_E\UAZ\Data\uaz_other_metal_destruct.rvmat","Ca\wheeled_E\UAZ\Data\uaz_mount.rvmat","Ca\wheeled_E\UAZ\Data\uaz_mount_damage.rvmat","Ca\wheeled_E\UAZ\Data\uaz_mount_destruct.rvmat","Ca\wheeled_E\UAZ\Data\uaz_skla.rvmat","Ca\wheeled_E\Data\auta_skla_damage.rvmat","Ca\wheeled_E\Data\auta_skla_damage.rvmat","Ca\wheeled_E\UAZ\Data\uaz_skla_in.rvmat","Ca\wheeled_E\Data\auta_skla_in_damage.rvmat","Ca\wheeled_E\Data\auta_skla_in_damage.rvmat","ca\weapons\data\dshk.rvmat","ca\weapons\data\dshk_damage.rvmat","ca\weapons\data\dshk_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
-	};
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
 		{
-			body = "mainTurret";
-			gun = "mainGun";
-			outGunnerMayFire = 1;
-			forceHideGunner = 0;
-			castGunnerShadow = 1;
-			viewGunnerInExternal = 1;
-			gunnerOpticsModel = "\ca\Weapons\optika_empty";
-			gunnerForceOptics = 0;
-			weapons[] = {"DShKM"};
-			soundServo[] = {"\ca\sounds\vehicles\servos\turret-1",0.1,1,15};
 			magazines[] = {};
-			gunnerAction = "UAZ_Gunner01";
-			gunnerInAction = "UAZ_Gunner01";
-			ejectDeadGunner = 1;
-			minElev = -25;
-			maxElev = 60;
-			stabilizedInAxes = "StabilizedInAxesNone";
 		};
 	};
 };
