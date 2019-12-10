@@ -100,7 +100,6 @@ class pook_transport_DZ: pook_H13_transport
 	scope = 2;
 	displayName = $STR_VEH_NAME_BELLH13_TRANSPORT;
 	crew = "";
-	enablemanualfire = 0;
 	typicalCargo[] = {};
 	radarType = 0;
 	class TransportMagazines{};
