@@ -104,4 +104,39 @@ class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
 	fuelCapacity = 10000;
+	supplyRadius = 0;
+};
+
+class UralReammo_CDF;
+class UralReammo_CDF_DZE: UralReammo_CDF {
+	scope = public;
+	displayName = $STR_VEH_NAME_URAL_WEAPONS;
+	side = 2;
+	crew = "";
+	typicalCargo[] = {};
+	hiddenSelections[] = {};
+	transportMaxWeapons = 75;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 8;
+	class TransportMagazines{};
+	class TransportWeapons{};
+	transportAmmo = 0;
+	supplyRadius = 0;
+};
+
+class UralRepair_CDF;
+class UralRepair_CDF_DZE: UralRepair_CDF {
+	scope = public;
+	displayName = $STR_VEH_NAME_URAL_AMMO;
+	side = 2;
+	crew = "";
+	typicalCargo[] = {};
+	hiddenSelections[] = {};
+	transportMaxWeapons = 25;
+	transportMaxMagazines = 300;
+	transportmaxbackpacks = 8;
+	class TransportMagazines{};
+	class TransportWeapons{};
+	transportRepair = 0;
+	supplyRadius = 0;
 };

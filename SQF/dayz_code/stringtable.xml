@@ -8336,6 +8336,30 @@
 		<Key ID="STR_VEH_NAME_URAL_UN">
 			<English>Ural (UN)</English>
 		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_AMMO">
+			<English>Ural (Material Transport)</English>
+			<German>Ural (Materialtransport)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS">
+			<English>Ural (Weapon Transport)</English>
+			<German>Ural (Waffentransport)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MTVR_AMMO">
+			<English>MVTR (Material Transport)</English>
+			<German>MVTR (Materialtransport)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MTVR_WEAPONS">
+			<English>MVTR (Weapon Transport)</English>
+			<German>MVTR (Waffentransport)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO">
+			<English>Kamaz (Material Transport)</English>
+			<German>Kamaz (Materialtransport)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS">
+			<English>Kamaz (Weapon Transport)</English>
+			<German>Kamaz (Waffentransport)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_URAL_CIVIL">
 			<English>Ural (Civil)</English>
 			<German>Ural (Zivil)</German>

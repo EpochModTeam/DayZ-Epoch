@@ -98,6 +98,7 @@ class KamazRefuel_DZ: KamazRefuel {
 	class TransportWeapons{};
 	fuelCapacity = 10400;
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
+	supplyRadius = 0;
 };
 class KamazRefuel_DZE1: KamazRefuel_DZ {
 	original = "KamazRefuel_DZ";
@@ -125,4 +126,38 @@ class KamazRefuel_DZE3: KamazRefuel_DZE2 {
 };
 class KamazRefuel_DZE4: KamazRefuel_DZE3 {
 	fuelCapacity = 10700; // Increase the total fuel capacity of the Refuel truck by the additional normal sized fuel tank of a Ural.
+};
+
+class KamazRepair;
+class KamazRepair_DZE : KamazRepair {
+	scope = public;
+	displayName = $STR_VEH_NAME_KAMAZ_AMMO;
+	side = 2;
+	crew = "";
+	typicalCargo[] = {};
+	hiddenSelections[] = {};
+	transportMaxWeapons = 25;
+	transportMaxMagazines = 300;
+	transportmaxbackpacks = 8;
+	class TransportMagazines{};
+	class TransportWeapons{};	
+	supplyRadius = 0;
+	transportRepair = 0;
+};
+
+class KamazReammo;
+class KamazReammo_DZE : KamazReammo {
+	scope = public;
+	displayName = $STR_VEH_NAME_KAMAZ_WEAPONS;
+	side = 2;
+	crew = "";
+	typicalCargo[] = {};
+	hiddenSelections[] = {};
+	transportMaxWeapons = 75;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 8;	
+	class TransportMagazines{};
+	class TransportWeapons{};	
+	supplyRadius = 0;
+	transportAmmo = 0;
 };
