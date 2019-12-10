@@ -8,8 +8,9 @@
 [NEW] Different boxes of matches can be combined now. (bc75ad8) @AirwavesMan
 [NEW] Adding a basic support for PVE Servers. This disables the PvP damage on the server. Disabled by default, configVariables.sqf/DZE_PVE_Mode (e7dbc5dd) @AirwavesMan
 [NEW] Dedicated sounds for opening and closing vaults. (c001c38, 9c83ef2, 61258c9, 76721e3) @worldwidesorrow
-[NEW] Add missing Mi171Sh, BRDM-2 HQ, HMMWV M2 and HMMWV Armored DZE versions. (cbf3760c, 9ab576fa, e36e3cc4) @AirwavesMan
+[NEW] Add missing Mi171Sh, BRDM-2 HQ, HMMWV M2, HMMWV Armored, Pook, AH1Z, RHIB, BTR-40 DSHKM, Jackal, Mozzie DZ/DZE versions. (cbf3760c, 9ab576fa, e36e3cc4, 7e451c59, 6b5ebe3c, 38a31290, 1186aa29, d542304a) @AirwavesMan
 [NEW] Add the option for vectorUp on spawned objects in fnc_spawnObjects. (bf9dc49) @worldwidesorrow
+[NEW] Add 2 new cargo truck versions. A truck for more items and a truck for more weapons. (02c91007) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -35,8 +36,9 @@
 [FIXED] Backpacks had no descriptions. (f1d5038) @AirwavesMan
 [FIXED] Potential dupe on lag with Advanced Trading. (0617a77) @oiad
 [FIXED] Invisible backseat bug on LAV-HQ DZ and DZE version. (5c3f2162) @AirwavesMan
-[FIXED] The fuel capacity of the MH-6J Little Bird was incorrect. (862cf39a) @AirwavesMan
+[FIXED] The fuel capacity of the MH-6J Little Bird, Mi17 Civilian, UH60M was incorrect. (862cf39a, f0e08f22, fc9cb679) @AirwavesMan
 [FIXED] AIs could attack traders. (f0ac4afc) @AirwavesMan
+[FIXED] RHIB_DZ floating gunner position. (38a31290) @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
