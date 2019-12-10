@@ -8421,10 +8421,26 @@
 		</Key>		
 		<Key ID="STR_VEH_NAME_VODNIK_PKT">
 			<English>Vodnik (PKT)</English>
-		</Key>		
+		</Key>	
 		<Key ID="STR_VEH_NAME_VODNIK_BPPU">
 			<English>Vodnik (BPPU)</English>
-		</Key>			
+		</Key>		
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT">
+			<English>Jackal L2A1 (Desert Camo)</English>
+			<German>Jackal L2A1 (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND">
+			<English>Jackal L2A1 (Wood Camo)</English>
+			<German>Jackal L2A1 (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT">
+			<English>Jackal MK19 (Desert Camo)</English>
+			<German>Jackal MK19 (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND">
+			<English>Jackal MK19 (Wood Camo)</English>
+			<German>Jackal MK19 (Waldtarn)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_ATV">
 			<English>ATV</English>
 			<Russian>Квадроцикл</Russian>
