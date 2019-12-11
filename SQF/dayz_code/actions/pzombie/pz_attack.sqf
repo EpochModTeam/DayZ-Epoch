@@ -13,7 +13,7 @@ if (!isNull _ent && {player distance _ent < 5}) then {
 		_ent setDamage 1;
 	} else {
 		/* PVS/PVC - Skaronator */
-		PVDZ_send = [_ent,"Legs",[_ent,player]];
+		PVDZ_send = [_ent,"Legs",[_ent,player],[_ent,dayz_authKey,player]];
 		publicVariableServer "PVDZ_send";
 	};
 	[player,"hit",0,false] call dayz_zombieSpeak;	
