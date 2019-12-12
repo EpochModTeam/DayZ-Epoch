@@ -161,7 +161,7 @@ if (_proceed && _success) then {
 		};
 
 		if (_isWreckBuilding) then {
-			PVDZ_send = [player,"RemoveObject",_ipos];
+			PVDZ_send = [player,"RemoveObject",_ipos,[_ipos,dayz_authKey,player]];
 			publicVariableServer "PVDZ_send";
 		};
 
