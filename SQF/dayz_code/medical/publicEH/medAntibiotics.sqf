@@ -1,9 +1,13 @@
-private ["_array","_unit","_medic"];
-_array = _this; //_this select 0;
-_unit = _array select 0;
-_medic = _array select 1;
+private ["_unit","_medic"];
 
-if ((_unit == player) or (vehicle player != player)) then {
+_unit = _this select 0;
+_medic = _this select 1;
+
+if (_unit == player) then {
 	r_player_infected = false;
 	_unit setVariable["USEC_infected",false,true];
+};
+
+if (_medic != player) then {
+	format [localize "str_actions_medical_antibiotics_received",(name _medic)] call dayz_rollingMessages;
 };
