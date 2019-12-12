@@ -1,23 +1,27 @@
-private ["_id","_unit"];
+private "_unit";
+
 _unit = (_this select 3) select 0;
 
 call fnc_usec_medic_removeActions;
 r_action = false;
+player removeMagazine "ItemPainkiller";
 
 if (vehicle player == player) then {
 	//not in a vehicle
 	player playActionNow "Gear";
 };
 
-if ((_unit == player) or (vehicle player != player)) then {
+if (_unit == player) then {
 	//Self Healing
-	_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medPainkiller.sqf";
+	[player,player] call player_medPainkiller;
+	localize "str_actions_medical_painkillers_self" call dayz_rollingMessages;
 } else {
-//Send to server its given to someone else.
+	// Heal another player
 	PVDZ_send = [_unit,"Painkiller",[_unit,player]];
 	publicVariableServer "PVDZ_send";
 	
+	// Give humanity
 	[20,0] call player_humanityChange;
+	
+	format [localize "str_actions_medical_painkillers_give",(name _unit)] call dayz_rollingMessages;
 };
-
-player removeMagazine "ItemPainkiller";
