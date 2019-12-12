@@ -1,4 +1,6 @@
-private "_finished";
+private ["_finished","_unit"];
+
+_unit = (_this select 3) select 0;
 
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -18,10 +20,23 @@ if (vehicle player == player) then {
 };
 
 if (_finished) then {
-	r_player_Sepsis = [false, 0];
-	player setVariable ["USEC_Sepsis", false, true];
-	player setVariable ["sepsisStarted", nil];
-	localize "str_actions_medical_wipe_self" call dayz_rollingMessages;
+	if (_unit == player) then {
+		// Self healing
+		r_player_Sepsis = [false, 0];
+		_unit setVariable ["USEC_Sepsis", false, true];
+		_unit setVariable ["sepsisStarted", nil];
+		
+		localize "str_actions_medical_wipe_self" call dayz_rollingMessages;
+	} else {
+		// Heal another player
+		PVDZ_send = [_unit,"AntiBacterialWipe",[_unit,player]];
+		publicVariableServer "PVDZ_send";
+	
+		// Give humanity
+		[20,0] call player_humanityChange;
+		
+		format[localize "str_actions_medical_general_give",localize "STR_ITEM_DESC_WIPES",(name _unit)] call dayz_rollingMessages;
+	};
 } else {
 	player addMagazine "ItemAntibacterialWipe";
 };
