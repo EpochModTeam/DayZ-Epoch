@@ -255,6 +255,7 @@ if (!isDedicated) then {
 	"PVCDZ_hlt_Transfuse"		addPublicVariableEventHandler {(_this select 1) spawn player_medTransfuse; };
 	"PVCDZ_hlt_PainK"			addPublicVariableEventHandler {(_this select 1) call player_medPainkiller};
 	"PVCDZ_hlt_AntiB"			addPublicVariableEventHandler {(_this select 1) call player_medAntiBiotics};
+	"PVCDZ_hlt_Wipe"			addPublicVariableEventHandler {(_this select 1) call player_medABWipe};
 	"PVCDZ_OpenTarget_Reset" addPublicVariableEventHandler { OpenTarget_Time = diag_tickTime; }; //reset OpenTarget timer
 	
 	"PVCDZ_plr_Legs" addPublicVariableEventHandler {
