@@ -39,6 +39,7 @@
 [FIXED] The fuel capacity of the MH-6J Little Bird, Mi17 Civilian, UH60M was incorrect. (862cf39a, f0e08f22, fc9cb679) @AirwavesMan
 [FIXED] AIs could attack traders. (f0ac4afc) @AirwavesMan
 [FIXED] RHIB_DZ floating gunner position. (38a31290) @AirwavesMan
+[FIXED] The carry and drag functions have been fixed. (bcc5b63) @worldwidesorrow
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
@@ -54,7 +55,13 @@
 [UPDATED] Moved FPS logging and server event spawner to the server sheduler (0a264b9) @worldwidesorrow
 [UPDATED] Vanilla events have been adjusted and moved to the server modules folder. The events are now spawned by the scheduler. (0a264b9) @worldwidesorrow
 [UPDATED] Trader files got rebuild. Trader Cites got overhauled (92700e8a) @AirwavesMan
+[UPDATED] Server side security added for higher risk PVDZ_send usage. (40dcf6f) @worldwidesorrow
+[UPDATED] New strings added to the string table for medical functions. (2a145bf) @worldwidesorrow
+[UPDATED] Medical functions audited. Old/unused medical functions moved to archive. @worldwidesorrow
+[UPDATED] Separate actions added for typed blood bags. Variable dayz_classicBloodBagSystem used to bypass unnecessary code. (a4c0638) @worldwidesorrow
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
+[REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow
+[REMOVED] PVDZ_drg_RaDrag, PVDZ_drg_RaLW, PVDZ_drg_RLact and PVDZ_Unconscious removed from publicvariable.txt. They have been replaced with PVDZ_send. (2d03fb9) @worldwidesorrow
 
 [INFO] Synced with DayZMod upstream up to commit fe063a8
