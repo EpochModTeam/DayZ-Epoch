@@ -59,7 +59,8 @@ _trigger = {
 			if (_entity isKindOf "Animal") then {
 				_entity setDamage 1;
 			} else {
-				[_entity, "Legs", [_entity]] call server_sendToClient;
+				PVCDZ_plr_Legs = [_entity];
+				(owner _entity) publicVariableClient "PVCDZ_plr_Legs";
 			};
 		};
 
