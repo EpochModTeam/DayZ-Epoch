@@ -1,4 +1,4 @@
-private ["_finished","_id","_unit","_item","_humanityGain"];
+private ["_msg","_finished","_id","_unit","_item","_humanityGain"];
 
 _unit = (_this select 3) select 0;
 _item = (_this select 3) select 1;
@@ -8,6 +8,9 @@ dayz_actionInProgress = true;
 
 player removeMagazine _item;
 
+call fnc_usec_medic_removeActions;
+r_action = false;
+
 if (vehicle player == player) then {
 	_finished = ["Medic",1] call fn_loopAction;
 } else {
@@ -15,32 +18,24 @@ if (vehicle player == player) then {
 	_finished = true;
 };
 
-if (_finished) then {
-	_unit setVariable ["hit_legs",0];
-	_unit setVariable ["hit_hands",0];
-	
-	if (_unit == player) then {
-		//give to player, Ie the player fixed himself
-		
-		//Self Healing
-		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medMorphine.sqf";
-	} else {
-		//give to remote player, ie the player fixed another player
-		
-		//Give humanity reward to player giving the morphine to another player.
-		_humanityGain = switch true do {
-			case (_item == "ItemMorphine"): { 50 };
-			case (_item == "equip_woodensplint"): { 25 };
-			default { 0 };
-		};
-		
-		if (_humanityGain > 0) then {
-			[_humanityGain,0] call player_humanityChange;
-		};
-	};
+_msg = if (_item == "equip_woodensplint") then {"STR_ITEM_NAME_WOODENSPLINT"} else {"STR_EQUIP_NAME_15"};
 
-	PVDZ_send = [_unit,"Morphine",[_unit,player]];
-	publicVariableServer "PVDZ_send";
+if (_finished) then {
+	if (_unit == player) then {
+		//Self Healing
+		[player,player,_item] call player_medMorphine;
+		
+		format [localize "str_actions_medical_general_self", (localize _msg)] call dayz_rollingMessages;
+	} else {
+		//Give humanity reward to player giving the morphine to another player.
+		_humanityGain = if (_item == "ItemMorphine") then {50} else {25};
+		[_humanityGain,0] call player_humanityChange;
+		
+		PVDZ_send = [_unit,"Morphine",[_unit,player,_item]];
+		publicVariableServer "PVDZ_send";
+		
+		format [localize "str_actions_medical_general_give", (localize _msg),(name _unit)] call dayz_rollingMessages;
+	};
 } else {
 	player addMagazine _item;
 };
