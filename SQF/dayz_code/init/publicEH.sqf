@@ -1,6 +1,4 @@
 // Both client and server
-"PVDZ_drg_RaLW"   		addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\publicEH\load_wounded.sqf"};
-"PVDZ_drg_RLact"		addPublicVariableEventHandler {[_this select 1] execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf"};
 "PVDZ_hlt_Bleed"		addPublicVariableEventHandler {(_this select 1) spawn fnc_usec_damageBleed};
 "PVCDZ_veh_SH" 			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam}; // set damage to vehicle part
 //"PVCDZ_obj_Damage" 		addPublicVariableEventHandler {(_this select 1) call fnc_Obj_FenceHandleDam}; // set damage to object. //Vanilla fences not used in Epoch
@@ -116,16 +114,6 @@ if (isServer) then {
 			_object setVariable["ownerArray", _ownerArray, true];
 		};
 	};*/
-	
-	"PVDZ_sendUnconscious" addPublicVariableEventHandler {	
-		_owner = (_this select 1) select 0;
-		_duration = (_this select 1) select 1;
-		
-		diag_log format["%1,%2",_owner,_duration];
-		
-		PVDZ_receiveUnconscious = [_owner,_duration];
-		(owner _owner) publicVariableClient "PVDZ_receiveUnconscious";
-	};
 
 	"PVDZ_Server_Simulation" addPublicVariableEventHandler {
 		_agent = (_this select 1) select 0;
@@ -252,6 +240,10 @@ if (!isDedicated) then {
 	};
 	"PVDZ_obj_RoadFlare"		addPublicVariableEventHandler {(_this select 1) spawn object_roadFlare};
 	"PVDZ_drg_RaDrag"   		addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrag.sqf"};
+	"PVDZ_drg_RaDrop"   		addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animDrop.sqf"};
+	"PVDZ_drg_RaCarry"   		addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\publicEH\animCarry.sqf"};
+	"PVDZ_drg_RaLW"				addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\load\load_wounded.sqf"};
+	"PVDZ_drg_RaUW"   			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\load\unload_wounded.sqf"};
 	"PVDZ_obj_Fire"				addPublicVariableEventHandler {(_this select 1) spawn BIS_Effects_Burn};
 	"PVCDZ_plr_Humanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
 	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {localize "str_epoch_player_2" call dayz_rollingMessages;};};
@@ -261,7 +253,6 @@ if (!isDedicated) then {
 	"PVCDZ_hlt_Bandage"			addPublicVariableEventHandler {(_this select 1) call player_medBandage};
 	"PVCDZ_hlt_Epi"				addPublicVariableEventHandler {(_this select 1) call player_medEpi};
 	"PVCDZ_hlt_Transfuse"		addPublicVariableEventHandler {(_this select 1) spawn player_medTransfuse; };
-	"PVCDZ_hlt_Transfuse_completed" addPublicVariableEventHandler {player setVariable["TransfusionCompleted",true]; };
 	"PVCDZ_hlt_PainK"			addPublicVariableEventHandler {(_this select 1) call player_medPainkiller};
 	"PVCDZ_hlt_AntiB"			addPublicVariableEventHandler {(_this select 1) call player_medAntiBiotics};
 	"PVCDZ_OpenTarget_Reset" addPublicVariableEventHandler { OpenTarget_Time = diag_tickTime; }; //reset OpenTarget timer

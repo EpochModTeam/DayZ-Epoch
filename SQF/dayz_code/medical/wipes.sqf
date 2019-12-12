@@ -1,5 +1,4 @@
-private ["_finished","_unit"];
-_unit = (_this select 3) select 0;
+private "_finished";
 
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -19,18 +18,10 @@ if (vehicle player == player) then {
 };
 
 if (_finished) then {
-	//["PVCDZ_hlt_Bandage",[_unit,player]] call broadcastRpcCallAll;
-	//PVCDZ_hlt_Bandage = [_unit,player];
-	//publicVariable "PVCDZ_hlt_Bandage";
-	//PVDZ_send = [_unit,"Bandage",[_unit,player]];
-	//publicVariableServer "PVDZ_send";
-	
-
-	if ((_unit == player) or (vehicle player != player)) then {
-		r_player_Sepsis = [false, 0];
-		player setVariable ["USEC_Sepsis", false, true];
-		player setVariable ["sepsisStarted", nil];
-	};
+	r_player_Sepsis = [false, 0];
+	player setVariable ["USEC_Sepsis", false, true];
+	player setVariable ["sepsisStarted", nil];
+	localize "str_actions_medical_wipe_self" call dayz_rollingMessages;
 } else {
 	player addMagazine "ItemAntibacterialWipe";
 };

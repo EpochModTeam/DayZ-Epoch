@@ -7,28 +7,20 @@
 *****************************************************************************************************************************
 Start drop_body.sqf
 */
+private ["_medic","_dragee"];
 
-_dragee = _this select 3;
+_medic = (_this select 3) select 0;
+_dragee = (_this select 3) select 1;
 
 player removeAction NORRN_dropAction;
-//player removeAction NORRN_carryAction;
-NORRN_remove_drag = true;
-r_drag_sqf = false;
-r_carry_sqf = false;
-r_action = false;
-_unit = player;
 
-detach _unit;
-detach _dragee;
-_unit switchMove "";
-_dragee switchMove "";
-NORRN_Dragged_body = objNull;
-_dragee setVariable ["NORRN_unit_dragged", false, true];
-
-//lie on back
-_dragee playMoveNow "ainjppnemstpsnonwrfldnon";
-//PVDZ_drg_Ralie = _dragee; // not used
-//publicVariable "PVDZ_drg_Ralie"; // not used
 force_dropBody = false;
+r_drag_sqf = false;
 
-if (true) exitWith {};
+//detach _medic;
+_medic switchMove "";
+
+if (alive _dragee) then {
+	PVDZ_send = [_dragee, "DropPlayer",_dragee,[_dragee,dayz_authKey,_medic]];
+	publicVariableServer "PVDZ_send";
+};

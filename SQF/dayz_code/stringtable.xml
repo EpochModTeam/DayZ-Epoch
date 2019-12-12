@@ -289,11 +289,6 @@
 			<Russian>Вы приняли антибиотики.</Russian>
 			<German>Du hast Antibiotikum eingenommen.</German>
 		</Key>
-		<Key ID="str_actions_medical_gave_antibiotics">
-			<English>You gave antibiotics.</English>
-			<Russian>Вы поделились антибиотиками.</Russian>
-			<German>Du hast Antibiotikum verabreicht.</German>
-		</Key>
 		<Key ID="str_actions_medical_knocked_out">
 			<English>You have been knocked out.</English>
 			<Russian>Вы оглушены.</Russian>
@@ -18292,6 +18287,65 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
+		</Key>
+		
+		<!--New Strings 1.0.7-->
+		<Key ID="str_actions_medical_gave_antibiotics">
+			<English>You gave antibiotics to %1</English>
+		</Key>
+		<Key ID="str_actions_medical_antibiotics_received">
+			<English>%1 has given you Antibiotics</English>
+		</Key>
+		<Key ID="str_actions_medical_bandage_self">
+			<English>You have bandaged your wounds</English>
+		</Key>
+		<Key ID="str_actions_medical_sepsisbandage_self">
+			<English>You have bandaged and sanitized your wounds</English>
+		</Key>
+		<Key ID="str_actions_medical_gave_bandage">
+			<English>You have bandaged %1</English>
+		</Key>
+		<Key ID="str_actions_medical_gave_sepsisbandage">
+			<English>You have bandaged and sanitized the wounds of %1</English>
+		</Key>
+		<Key ID="str_actions_medical_bandage_received">
+			<English>%1 has bandaged your wounds</English>
+		</Key>
+		<Key ID="str_actions_medical_sepsisbandage_received">
+			<English>%1 has bandaged and sanitized your wounds</English>
+		</Key>
+		<Key ID="str_actions_medical_general_self">
+			<English>You have given yourself a %1</English>
+		</Key>
+		<Key ID="str_actions_medical_general_give">
+			<English>You have given a %1 to %2</English>
+		</Key>
+		<Key ID="str_actions_medical_08a">
+			<English>Give %1</English>
+		</Key>
+		<Key ID="str_actions_medical_general_received">
+			<English>%1 has given you a %2</English>
+		</Key>
+		<Key ID="str_actions_medical_painkillers_self">
+			<English>You have taken painkillers</English>
+		</Key>
+		<Key ID="str_actions_medical_painkillers_give">
+			<English>You have given painkillers to %1</English>
+		</Key>
+		<Key ID="str_actions_medical_painkillers_receive">
+			<English>%1 has given you Painkillers</English>
+		</Key>
+		<Key ID="str_actions_medical_wipe_self">
+			<English>You have sanitized your wounds</English>
+		</Key>
+		<Key ID="str_actions_medical_04_sepsis">
+			<English>Give Sepsis Bandage</English>
+		</Key>
+		<Key ID="str_actions_unload_fail">
+			<English>You are not allowed to unload unconscious crew into the water</English>
+		</Key>
+		<Key ID="str_actions_medical_transfusion_fail">
+			<English>Wrong blood type used</English>
 		</Key>
 	</Package>
 </Project>

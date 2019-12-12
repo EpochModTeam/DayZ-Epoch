@@ -99,7 +99,6 @@ if !((_charPos select 0 == 0) && (_charPos select 1 == 0)) then {
 	};
 	if (_charPosLen < 3) then {_playerPos = [];};
 };
-_character setVariable ["posForceUpdate",false,true];
 
 //Check player backpack each time sync runs
 _backpack = unitBackpack _character;
@@ -108,7 +107,6 @@ _playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _back
 if (!_usec_Dead) then {
 	_medical = _character call player_sumMedical;
 };
-_character setVariable ["medForceUpdate",false,true];
 
 _character addScore _kills;
 /*

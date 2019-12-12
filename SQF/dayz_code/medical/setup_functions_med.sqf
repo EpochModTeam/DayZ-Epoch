@@ -46,7 +46,6 @@ fnc_usec_damageUnconscious = {
 		};
 		r_player_unconscious = true;
 		
-		player setVariable["medForceUpdate",true];
 		player setVariable ["unconsciousTime", r_player_timeout, true];
 	};
 	
@@ -228,14 +227,13 @@ fnc_usec_playerHandleBlood = {
 
 			if (_elapsedTime > _bleedTime) then {
 				r_player_injured = false;
-				_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
+				[player,player,false] call player_medBandage;
 			};
 
 			_bloodDiff = r_player_blood - (player getVariable["USEC_BloodQty", r_player_bloodTotal]);
 			
 			if ((_bloodDiff >= 500) or (_bloodDiff <= -500)) then {
 				player setVariable["USEC_BloodQty",r_player_blood,true];
-				player setVariable["medForceUpdate",true];
 			};
 			
 			
@@ -253,7 +251,6 @@ fnc_usec_playerHandleBlood = {
 
 		if ((_bloodDiff >= 500) or (_bloodDiff <= -500)) then {
 			player setVariable["USEC_BloodQty",r_player_blood,true];
-			player setVariable["medForceUpdate",true];
 		};
 	};
 };

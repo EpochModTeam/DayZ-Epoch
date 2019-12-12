@@ -1,40 +1,30 @@
 // unLoad_act.sqf
 // AUGUST 2010 - norrin
+// Updated December 2019 - JasonTM
 
-private ["_args","_dragger","_vcl","_wounded"];
+private ["_args","_unconscious_crew","_vehicle","_pos","_wounded","_medic"];
 
 _args = _this select 3;
-_name = _args select 0;
-_vcl = _args select 1;
-_crewVcl = crew _vcl;
-LHA_Deck = [];
-LHA_height = 0;
+_medic = _args select 0;
+_unconscious_crew = _args select 1;
+_vehicle = _args select 2;
+_pos = [_vehicle] call FNC_GetPos;
 
-//_name removeAction NORRN_pullOutAction; // NORRN_pullOutAction is defined anywhere
+r_action = false;
+call fnc_usec_medic_removeActions;
 
-for [{ _loop = 0 },{ _loop < count _crewVcl },{ _loop = _loop + 1}] do
-{
-	_unit = _crewVcl select _loop;
-
-	if (_unit getVariable "NORRN_unconscious") then
+// Prevent trolling unconscious players by checking that the position is not over water.
+if !(surfaceIsWater _pos) then {
 	{
-		unassignVehicle _unit;
-		uiSleep 0.05;
-		_unit action ["EJECT", _vcl];
-		uiSleep 1;
-		_position = getPosATL _unit;
-		_isOnDeck = getPosASL _unit in LHA_Deck;
-		if (_isOnDeck) then {
-			_unit setPosAsl [(_position select 0), (_position select 1), (LHA_height+1)];
-		};
-		_unit switchMove "";
-		_unit switchMove "ainjppnemstpsnonwrfldnon";
-		uiSleep 0.2;
-		//Needed or else patient user input is not fully disabled after eject
-		PVDZ_drg_RaDrag = [_unit];
-		publicVariable "PVDZ_drg_RaDrag";
-	};
-	uiSleep 0.1;
-};
+		_wounded = _x;
+		unassignVehicle _wounded;
+		_wounded action ["EJECT", _vehicle];
+		
+		// Send information to reestablish the "lie on back" animation
+		PVDZ_send = [_wounded,"UnloadWounded",_wounded,[_pos,dayz_authKey,_medic]];
+		publicVariableServer "PVDZ_send";
 
-if (true) exitWith {};
+	} count _unconscious_crew;
+} else {
+	localize "str_actions_unload_fail" call dayz_rollingMessages;
+};
