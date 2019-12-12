@@ -1,4 +1,4 @@
-private ["_finished","_id","_unit","_item"];
+private ["_msg","_finished","_unit","_item"];
 
 _unit = (_this select 3) select 0;
 _item = (_this select 3) select 1;
@@ -22,18 +22,22 @@ if (vehicle player != player) then {
 };
 
 if (_finished) then {
-	if ((_unit == player) or (vehicle player != player)) then {
+	if (_unit == player) then {
 	//Self Healing
-		_id = [player,player] execVM "\z\addons\dayz_code\medical\publicEH\medBandaged.sqf";
-		if (_item=="ItemSepsisBandage") then {
-			r_player_Sepsis = [false, 0];
-			player setVariable ["USEC_Sepsis", false, true];
-			player setVariable ["sepsisStarted", nil];
-		};
+		//Self Healing
+		[player, player, if (_item == "ItemSepsisBandage") then {true} else {false}] call player_medBandage;
+		_msg = if (_item == "ItemSepsisBandage") then {"str_actions_medical_sepsisbandage_self"} else {"str_actions_medical_bandage_self"};
+		localize _msg call dayz_rollingMessages;
 	} else {
-		PVDZ_send = [_unit,"Bandage",[_unit,player]];
+		// Heal another player
+		PVDZ_send = [_unit,"Bandage",[_unit, player, if (_item == "ItemSepsisBandage") then {true} else {false}]];
 		publicVariableServer "PVDZ_send";
+		
+		//Give humanity
 		[20,0] call player_humanityChange;
+		
+		_msg = if (_item == "ItemSepsisBandage") then {"str_actions_medical_gave_sepsisbandage"} else {"str_actions_medical_gave_bandage"};
+		format[localize _msg,(name _unit)] call dayz_rollingMessages;
 	};
 } else {
 	player addMagazine _item;
