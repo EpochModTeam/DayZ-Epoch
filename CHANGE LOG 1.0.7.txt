@@ -11,6 +11,7 @@
 [NEW] Add missing Mi171Sh, BRDM-2 HQ, HMMWV M2, HMMWV Armored, Pook, AH1Z, RHIB, BTR-40 DSHKM, Jackal, Mozzie DZ/DZE versions. (cbf3760c, 9ab576fa, e36e3cc4, 7e451c59, 6b5ebe3c, 38a31290, 1186aa29, d542304a) @AirwavesMan
 [NEW] Add the option for vectorUp on spawned objects in fnc_spawnObjects. (bf9dc49) @worldwidesorrow
 [NEW] Add 2 new cargo truck versions. A truck for more items and a truck for more weapons. (02c91007) @AirwavesMan
+[NEW] Add option to give another player an antibacterial wipe. (8c074be) @worldwidesorrow
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
