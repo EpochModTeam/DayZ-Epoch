@@ -6124,12 +6124,12 @@
 			<German>Desinfektionstücher</German>
 		</Key>
 		<Key ID="STR_ITEM_DESC_WIPES">
-			<English>Antibacterial Wipe.</English>
-			<Russian>Антибактериальные салфетки.</Russian>
-			<Spanish>Gasa estéril con plata antibacteriana.</Spanish>
+			<English>Antibacterial Wipe</English>
+			<Russian>Антибактериальные салфетки</Russian>
+			<Spanish>Gasa estéril con plata antibacteriana</Spanish>
 			<French>Lingette antibactérienne</French>
 			<Czech>Antibakteriální ubrousky</Czech>
-			<German>Antibakterielle Desinfektionstücher, mit welchen Wunden gereinigt und desinfiziert werden können.</German>
+			<German>Antibakterielle Desinfektionstücher, mit welchen Wunden gereinigt und desinfiziert werden können</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FISHINGPOLE">
 			<English>Fishing Pole</English>
