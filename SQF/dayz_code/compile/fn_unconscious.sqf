@@ -37,7 +37,6 @@ if (dayz_soundMuted) then {call player_toggleSoundMute;}; // hide icon before fa
 
 while { (diag_tickTime - _start) < _timeout and r_player_unconscious and alive player } do {
     player setVariable ["unconsciousTime", _timeout - diag_tickTime + _start, (_count % 10) == 0];
-    player setVariable["medForceUpdate",true, (_count % 300) == 0];
     if (!_short) then {
         _sandLevel set [ 3, 0.136829 * safezoneH * (diag_tickTime - _start) / _timeout ];
         ((uiNamespace getVariable 'DAYZ_GUI_waiting') displayCtrl 1400) ctrlSetPosition _sandLevel;
@@ -71,7 +70,6 @@ r_player_timeout = 0;
 player setVariable ["unconsciousTime", r_player_timeout, true]; 
 r_player_cardiac = false;
 player setVariable ["USEC_isCardiac",r_player_cardiac, true]; 
-player setVariable["medForceUpdate",true, true];
 
 r_player_unconsciousInProgress = false;
 
