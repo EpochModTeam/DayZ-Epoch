@@ -8,7 +8,7 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- [] call fnc_usec_damageActions;
 ************************************************************/
 
-private ["_dragged","_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasAntibiotics","_hasBloodBag","_vehClose","_action1","_action2","_action3","_playerMagazines","_isFriendly"];
+private ["_hasABWipes","_dragged","_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasAntibiotics","_hasBloodBag","_vehClose","_action1","_action2","_action3","_playerMagazines","_isFriendly"];
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
@@ -141,6 +141,7 @@ if (isPlayer cursorTarget) then {
 		_hasSplint = "equip_woodensplint" in _playerMagazines;
 		_hasPainkillers = "ItemPainkiller" in _playerMagazines;
 		_hasAntibiotics = Array_Any(_playerMagazines, {_this in _antibiotics});
+		_hasABWipes = "ItemAntibacterialWipe" in _playerMagazines;
 		if (dayz_classicBloodBagSystem) then {
 			_hasBloodBag = "ItemBloodbag" in _playerMagazines;
 		} else {
@@ -177,10 +178,16 @@ if (isPlayer cursorTarget) then {
 				_action = _unit addAction [localize "str_actions_medical_04", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"ItemBandage"], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];
 			};
-			//Sepsis
+			//Allow player to give sepsis bandage
 			if((_injured || {_hasSepsis}) && {_hasSepsisBandage}) then {
 				r_action = true;
 				_action = _unit addAction [localize "str_actions_medical_04_sepsis", "\z\addons\dayz_code\medical\bandage.sqf",[_unit,"ItemSepsisBandage"], 0, true, true];
+				r_player_actions set [count r_player_actions,_action];
+			};
+			//Allow player to give antibacterial wipe
+			if(_hasSepsis && {_hasABWipes}) then {
+				r_action = true;
+				_action = _unit addAction [format[localize "str_actions_medical_08a",localize "STR_ITEM_DESC_WIPES"], "\z\addons\dayz_code\medical\wipes.sqf",[_unit], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give Epinephrine
@@ -217,7 +224,7 @@ if (isPlayer cursorTarget) then {
 				} else {
 					_tempArray = [];
 					{ // This was a TODO by the Vanilla Mod devs.
-						if (_x in magazines player && {!(_x in _tempArray)}) then {
+						if (_x in _playerMagazines && {!(_x in _tempArray)}) then {
 							_displayName = getText(configFile >> "cfgMagazines" >> _x >> "displayName");
 							_action = _unit addAction [format[localize "str_actions_medical_08a",_displayName], "\z\addons\dayz_code\medical\transfusion.sqf",[_unit,_x], 0, true, true];
 							r_player_actions set [count r_player_actions,_action];

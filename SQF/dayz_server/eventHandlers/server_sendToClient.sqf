@@ -108,6 +108,11 @@ call {
 		_owner publicVariableClient "PVCDZ_hlt_AntiB";
 	};
 	
+	if (_variable == "AntiBacterialWipe") exitWith {
+		PVCDZ_hlt_Wipe = _arraytosend;
+		_owner publicVariableClient "PVCDZ_hlt_Wipe";
+	};
+	
 	if (_variable == "Legs") exitWith {
 		PVCDZ_plr_Legs = _arraytosend;
 		_owner publicVariableClient "PVCDZ_plr_Legs";

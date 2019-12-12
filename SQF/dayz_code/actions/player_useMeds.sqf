@@ -19,7 +19,7 @@ call {
 	if (_item == "ItemPainkiller") exitWith {[0,0,0,[player]] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
 	if (_item == "ItemAntibiotic") exitWith {[player,"ItemAntibiotic"] execVM "\z\addons\dayz_code\medical\antibiotics.sqf";};
 	if (_item == "ItemBloodbag") exitWith {[player,"ItemBloodbag"] execVM "\z\addons\dayz_code\medical\selfbloodbag.sqf";};
-	if (_item == "ItemAntibacterialWipe") exitWith {execVM "\z\addons\dayz_code\medical\wipes.sqf";};
+	if (_item == "ItemAntibacterialWipe") exitWith {[0,0,0,[player]] execVM "\z\addons\dayz_code\medical\wipes.sqf";};
 	if (_item == "ItemHeatPack") exitWith {player removeMagazine "ItemHeatPack"; r_player_warming_heatpack = [true, diag_tickTime]; localize "str_player_27" call dayz_rollingMessages;};  //dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
 	if (_item == "equip_woodensplint") exitWith {[0,0,0,[player,"equip_woodensplint"]] execVM "\z\addons\dayz_code\medical\brokeBones.sqf";};
 	if (_item == "ItemSepsisBandage") exitWith {[0,0,0,[player,"ItemSepsisBandage"]] execVM "\z\addons\dayz_code\medical\bandage.sqf";};
