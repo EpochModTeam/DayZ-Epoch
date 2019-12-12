@@ -1,52 +1,40 @@
 // Load_wounded.sqf
 // OCTOBER 2010 - norrin
+// Updated December 2019 - JasonTM
 
-private ["_wounded","_vcl","_group"];
+private ["_wounded","_vehicle","_group","_medic"];
 
 _wounded = _this select 0;
+_medic = _this select 1;
+_vehicle = _this select 2;
 
-if (!local _wounded) exitWith {};
+// Check to see that the first passed object matches local player object
+if (player != _wounded) exitWith {};
+if !(r_player_unconscious) exitWith {};
 
-uiSleep 1;
-_vcl = _wounded getVariable "NORRN_loadVcl";
-_wounded setVariable ["NORRN_unit_dragged", true, true];
+_wounded assignAsCargo _vehicle;
+_wounded moveInCargo _vehicle;
 
-_wounded assignAsCargo _vcl;
-_wounded moveInCargo _vcl;
-uiSleep 1;
-//["PVDZ_drg_RaLW",_wounded] call broadcastRpcCallAll;
-	PVDZ_drg_RaLW = _wounded;
-	publicVariable "PVDZ_drg_RaLW";
-  _wounded switchMove "kia_hmmwv_driver";
+// Animation needs to be synced on all clients.
+[nil, _wounded, rSWITCHMOVE, "KIA_HMMWV_Cargo01"] call RE;
+_wounded switchMove "KIA_HMMWV_Cargo01";
 
-if (local _wounded) then
-{
-	waitUntil {!(_wounded getVariable "NORRN_unconscious")|| !alive _wounded || vehicle _wounded == _wounded || (assignedVehicleRole _wounded) select 0 != "Cargo"};
+r_drag_sqf = true;
 
-	if ((vehicle _wounded == _wounded) || (assignedVehicleRole _wounded) select 0 != "Cargo") exitWith
-	{
-		if (_wounded getVariable "NORRN_AIunconscious") then
-		{
-			if (vehicle _wounded != _wounded) then
-			{
-				unassignVehicle _wounded;
-				uiSleep 0.05;
-				_wounded action ["EJECT", _vcl];
-				uiSleep 1;
-			};
-//			PVDZ_drg_RAlie = _wounded; // not used
-//			publicVariable "PVDZ_drg_RAlie"; // not used
-			_wounded switchMove "ainjppnemstpsnonwrfldnon";
-			_wounded setVariable ["NORRN_unit_dragged", false, true];
-			uiSleep 1;
+while {r_drag_sqf} do {
+	
+	// If the player wakes up, end the loop.
+	if (!(_wounded getVariable ["NORRN_unconscious", false])) then {
+		
+		uiSleep 2; // Give fn_unconsious time to finish
+		
+		if (vehicle _wounded != _wounded) then {
+			// fn_unconscious does not perform an animation if the player is in a vehicle.
+			[nil, _wounded, rSWITCHMOVE, "HMMWV_Cargo01"] call RE;
+			_wounded switchMove "HMMWV_Cargo01";
 		};
+		
+		r_drag_sqf = false;
 	};
-
-	if (vehicle _wounded != _wounded && alive _wounded) then
-	{
-		_wounded playMove "BasicDriver";
-	};
+	uiSleep 1;
 };
-uiSleep 0.01;
-
-if (true) exitWith {};
