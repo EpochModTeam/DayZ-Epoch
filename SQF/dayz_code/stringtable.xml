@@ -16904,18 +16904,16 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITANNIE_DESC">
 			<English>Bandit wrap blue top with brown pants.</English>
-			<Russian>Бандитский наряд с синим верхом и коричневыми брюками.</Russian>
+			<Russian>Бандитский костюм с синим верхом и коричневыми брюками.</Russian>
 			<German>Banditen Outfit mit blauem Top und brauner Hose.</German>
-<!--			<Russian>Бандитский костюм с синим верхом и коричневыми брюками.</Russian>-->
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITJANE">
 			<English>Bandit Jane</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITJANE_DESC">
 			<English>Bandit wrap grey top with brown camo pants.</English>
-			<Russian>Бандитский наряд с синим верхом и камуфляжными брюками.</Russian>
+			<Russian>Бандитский костюм с серым верхом и коричневыми камуфляжными брюками.</Russian>
 			<German>Banditen Outfit mit grauem Top und brauner Tarnhose.</German>
-<!--			<Russian>Бандитский костюм с серым верхом и коричневыми камуфляжными брюками.</Russian>-->
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JANE">
 			<English>Jane</English>
@@ -18436,9 +18434,121 @@
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
 			<German>%1 %2 für %3 %4 handeln</German>
+			<Russian>Обмен %1 %2 на %3 %4</Russian>
 		</Key>
+		<Key ID="str_actions_medical_gave_antibiotics">
+			<English>You gave antibiotics to %1</English>
+			<Russian>Вы дали антибиотики %1</Russian>
+			<German>Du hast %1 Antikiotika verabreicht.</German>
+		</Key>
+		<Key ID="str_actions_medical_antibiotics_received">
+			<English>%1 has given you Antibiotics</English>
+			<Russian>%1 дал вам Антибиотики</Russian>
+			<German>%1 hat dir ein Antibiotikum verabreicht.</German>
+		</Key>
+		<Key ID="str_actions_medical_bandage_self">
+			<English>You have bandaged your wounds</English>
+			<Russian>Вы перевязали свои раны</Russian>
+			<German>Du hast deine Wunden bandagiert.</German>
+		</Key>
+		<Key ID="str_actions_medical_sepsisbandage_self">
+			<English>You have bandaged and sanitized your wounds</English>
+			<Russian>Вы перевязали и продезинфицировали свои раны</Russian>
+			<German>Du hast deine Wunden gesäubert und bandagiert.</German>
+		</Key>
+		<Key ID="str_actions_medical_gave_bandage">
+			<English>You have bandaged %1</English>
+			<Russian>Вы перевязали %1</Russian>
+			<German>Du hast die Wunden von %1 bandagiert.</German>
+		</Key>
+		<Key ID="str_actions_medical_gave_sepsisbandage">
+			<English>You have bandaged and sanitized the wounds of %1</English>
+			<Russian>Вы перевязали и продезинфицировали раны %1</Russian>
+			<German>Du hast die Wunden von %1 gesäubert und bandagiert.</German>
+		</Key>
+		<Key ID="str_actions_medical_bandage_received">
+			<English>%1 has bandaged your wounds</English>
+			<Russian>%1 перевязал ваши раны</Russian>
+			<German>%1 hat deine Wunden bandagiert.</German>
+		</Key>
+		<Key ID="str_actions_medical_sepsisbandage_received">
+			<English>%1 has bandaged and sanitized your wounds</English>
+			<Russian>%1 перевязал и продезинфицировал ваши раны</Russian>
+			<German>%1 hat deine Wunden gesäubert und bandagiert.</German>
+		</Key>
+		<Key ID="str_actions_medical_wipes_received">
+			<English>%1 has sanitized your wounds</English>
+			<Russian>%1 продезинфицировал ваши раны</Russian>
+			<German>%1 hat deine Wunden gesäubert.</German>
+		</Key>	
+		<Key ID="str_actions_medical_gave_wipes">
+			<English>You have sanitized the wounds of %1</English>
+			<Russian>Вы продезинфицировали раны %1</Russian>
+			<German>Du hast die Wunden von %1 gesäubert.</German>
+		</Key>		
+		<Key ID="str_actions_medical_general_self">
+			<English>You have given yourself a %1</English>
+			<Russian>Вы дали себе %1</Russian>
+			<German>Du hast dir selber ein(e) %1 verabreicht.</German>
+		</Key>
+		<Key ID="str_actions_medical_general_give">
+			<English>You have given a %1 to %2</English>
+			<Russian>Вы дали %1 %2</Russian>
+			<German>Du hast %2 ein(e) %1 verabreicht.</German>
+		</Key>
+		<Key ID="str_actions_medical_08a">
+			<English>Give %1</English>
+			<Russian>Дать %1</Russian>
+			<German>%1 verabreichen</German>
+		</Key>
+		<Key ID="str_actions_medical_general_received">
+			<English>%1 has given you a %2</English>
+			<Russian>%1 дал вам %2</Russian>		
+			<German>%1 hat dir ein(e) verabreicht.</German>			
+		</Key>
+		<Key ID="str_actions_medical_painkillers_self">
+			<English>You have taken painkillers</English>
+			<Russian>Вы приняли обезболивающие</Russian>
+			<German>Du hast Schmerzmittel eingenommen.</German>		
+		</Key>
+		<Key ID="str_actions_medical_painkillers_give">
+			<English>You have given painkillers to %1</English>
+			<Russian>Вы дали обезболивающее %1</Russian>
+			<German>Du hast %1 Schmerzmittel verabreicht.</German>
+		</Key>
+		<Key ID="str_actions_medical_painkillers_receive">
+			<English>%1 has given you Painkillers</English>
+			<Russian>%1 дал вам обезболивающее</Russian>
+			<German>%1 hat dir Schmerzmittel verabreicht.</German>		
+		</Key>
+		<Key ID="str_actions_medical_wipe_self">
+			<English>You have sanitized your wounds</English>
+			<Russian>Вы продезинфицировали свои раны</Russian>
+			<German>Du hast deine Wunden gesäubert.</German>
+		</Key>
+		<Key ID="str_actions_medical_04_sepsis">
+			<English>Give Sepsis Bandage</English>
+			<Russian>Дать сепсис бинты</Russian>
+			<German>Sepsisbandage legen</German>
+		</Key>
+		<Key ID="str_actions_unload_fail">
+			<English>You are not allowed to unload unconscious crew into the water</English>
+			<Russian>Вы не можете выгрузить бессознательное тело в воду</Russian>
+			<German>Du kannst bewusstlose Personen nicht ins Wasser entladen.</German>
+		</Key>
+		<Key ID="str_actions_medical_transfusion_fail">
+			<English>Wrong blood type used</English>
+			<Russian>Использована неправильная группа крови</Russian>
+			<German>Du hast eine falsche Blutgruppe benutzt.</German>
+		</Key>
+		<Key ID="str_actions_medical_04_wipes">
+			<English>Clean Wounds</English>
+			<Russian>Чистые раны</Russian>
+			<German>Wunden säubern</German>
+		</Key>		
+		
 		<!--Namalsk compatibility-->
-		 <Key ID="STR_EQUIP_NAME_43">
+		<Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>
 		 	<German>Winter-Ghillie-Anzug</German>
 		  	<Russian>Зимний маскировочный костюм</Russian>
@@ -18450,85 +18560,6 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>
-		
-		<!--New Strings 1.0.7-->
-		<Key ID="str_actions_medical_gave_antibiotics">
-			<English>You gave antibiotics to %1</English>
-			<Russian>Вы дали антибиотики %1</Russian>
-		</Key>
-		<Key ID="str_actions_medical_antibiotics_received">
-			<English>%1 has given you Antibiotics</English>
-			<Russian>%1 дал вам Антибиотики</Russian>
-		</Key>
-		<Key ID="str_actions_medical_bandage_self">
-			<English>You have bandaged your wounds</English>
-			<Russian>Вы перевязали свои раны</Russian>
-		</Key>
-		<Key ID="str_actions_medical_sepsisbandage_self">
-			<English>You have bandaged and sanitized your wounds</English>
-			<Russian>Вы перевязали и продезинфицировали свои раны</Russian>
-		</Key>
-		<Key ID="str_actions_medical_gave_bandage">
-			<English>You have bandaged %1</English>
-			<Russian>Вы перевязали %1</Russian>
-		</Key>
-		<Key ID="str_actions_medical_gave_sepsisbandage">
-			<English>You have bandaged and sanitized the wounds of %1</English>
-			<Russian>Вы перевязали и продезинфицировали раны %1</Russian>
-		</Key>
-		<Key ID="str_actions_medical_bandage_received">
-			<English>%1 has bandaged your wounds</English>
-			<Russian>%1 перевязал ваши раны</Russian>
-		</Key>
-		<Key ID="str_actions_medical_sepsisbandage_received">
-			<English>%1 has bandaged and sanitized your wounds</English>
-			<Russian>%1 перевязал и продезинфицировал ваши раны</Russian>
-		</Key>
-		<Key ID="str_actions_medical_general_self">
-			<English>You have given yourself a %1</English>
-			<Russian>Вы дали себе %1</Russian>
-		</Key>
-		<Key ID="str_actions_medical_general_give">
-			<English>You have given a %1 to %2</English>
-			<Russian>Вы дали %1 %2</Russian>
-		</Key>
-		<Key ID="str_actions_medical_08a">
-			<English>Give %1</English>
-			<Russian>Дать %1</Russian>
-		</Key>
-		<Key ID="str_actions_medical_general_received">
-			<English>%1 has given you a %2</English>
-			<Russian>%1 дал вам %2</Russian>
-			
-		</Key>
-		<Key ID="str_actions_medical_painkillers_self">
-			<English>You have taken painkillers</English>
-			<Russian>Вы приняли обезболивающие</Russian>
-		</Key>
-		<Key ID="str_actions_medical_painkillers_give">
-			<English>You have given painkillers to %1</English>
-			<Russian>Вы дали обезболивающее %1</Russian>
-		</Key>
-		<Key ID="str_actions_medical_painkillers_receive">
-			<English>%1 has given you Painkillers</English>
-			<Russian>%1 дал вам обезболивающее</Russian>
-		</Key>
-		<Key ID="str_actions_medical_wipe_self">
-			<English>You have sanitized your wounds</English>
-			<Russian>Вы продезинфицировали свои раны</Russian>
-		</Key>
-		<Key ID="str_actions_medical_04_sepsis">
-			<English>Give Sepsis Bandage</English>
-			<Russian>Дать сепсис бинты</Russian>
-		</Key>
-		<Key ID="str_actions_unload_fail">
-			<English>You are not allowed to unload unconscious crew into the water</English>
-			<Russian>Вы не можете выгрузить бессознательное тело в воду</Russian>
-		</Key>
-		<Key ID="str_actions_medical_transfusion_fail">
-			<English>Wrong blood type used</English>
-			<Russian>Использована неправильная группа крови</Russian>
-		</Key>
+		</Key>	
 	</Package>
 </Project>

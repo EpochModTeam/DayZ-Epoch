@@ -187,7 +187,7 @@ if (isPlayer cursorTarget) then {
 			//Allow player to give antibacterial wipe
 			if(_hasSepsis && {_hasABWipes}) then {
 				r_action = true;
-				_action = _unit addAction [format[localize "str_actions_medical_08a",localize "STR_ITEM_DESC_WIPES"], "\z\addons\dayz_code\medical\wipes.sqf",[_unit], 0, true, true];
+				_action = _unit addAction [localize "str_actions_medical_04_wipes", "\z\addons\dayz_code\medical\wipes.sqf",[_unit], 0, true, true];
 				r_player_actions set [count r_player_actions,_action];
 			};
 			//Allow player to give Epinephrine

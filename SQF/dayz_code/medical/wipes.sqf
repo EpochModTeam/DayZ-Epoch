@@ -35,7 +35,7 @@ if (_finished) then {
 		// Give humanity
 		[20,0] call player_humanityChange;
 		
-		format[localize "str_actions_medical_general_give",localize "STR_ITEM_DESC_WIPES",(name _unit)] call dayz_rollingMessages;
+		format[localize "str_actions_medical_gave_wipes",(name _unit)] call dayz_rollingMessages;
 	};
 } else {
 	player addMagazine "ItemAntibacterialWipe";
