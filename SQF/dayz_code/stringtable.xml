@@ -8186,27 +8186,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED">
 			<English>Military Offroad (red)</English>
-			<Russian>Военный внедородник (красный)</Russian>
+			<Russian>Военный внедорожник (красный)</Russian>
 			<German>Militär Offroad (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT">
 			<English>Military Offroad (Desert)</English>
-			<Russian>Военный внедородник (Пустынный)</Russian>
+			<Russian>Военный внедорожник (Пустынный)</Russian>
 			<German>Militär Offroad (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND">
 			<English>Military Offroad (Woodland)</English>
-			<Russian>Военный внедородник (Лесной камуфляж)</Russian>
+			<Russian>Военный внедорожник (Лесной камуфляж)</Russian>
 			<German>Militär Offroad (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL">
 			<English>Military Offroad (AGS-30)</English>
-			<Russian>Военный внедородник (AGS-30)</Russian>
+			<Russian>Военный внедорожник (AGS-30)</Russian>
 			<German>Militär Offroad (AGS-30)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2">
 			<English>Military Offroad (M2)</English>
-			<Russian>Военный внедородник (M2)</Russian>
+			<Russian>Военный внедорожник (M2)</Russian>
 			<German>Militär Offroad (M2)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_LAV25">
@@ -18221,12 +18221,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES">
 			<English>Air Vehicles</English>
-			<Russian>Авиа Транскорт</Russian>
+			<Russian>Авиа Транспорт</Russian>
 			<German>Luftfahrzeuge</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES">
 			<English>Ground Vehicles</English>
-			<Russian>Наземный Транскорт</Russian>
+			<Russian>Наземный Транспорт</Russian>
 			<German>Bodenfahrzeuge</German>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_WEAPONS">
@@ -18508,7 +18508,7 @@
 		</Key>
 		<Key ID="str_actions_medical_painkillers_self">
 			<English>You have taken painkillers</English>
-			<Russian>Вы приняли обезболивающие</Russian>
+			<Russian>Вы приняли обезболивающее</Russian>
 			<German>Du hast Schmerzmittel eingenommen.</German>		
 		</Key>
 		<Key ID="str_actions_medical_painkillers_give">
