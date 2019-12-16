@@ -214,6 +214,9 @@ if (!isDedicated) then {
 	player_enterCode = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\doorManagement\player_enterCode.sqf";	
 	FNC_check_access = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_check_access.sqf";
 	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
+	if (DZE_SnowFall) then {
+		dzn_fnc_snowfall = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dzn_snowfall.sqf";
+	};
 
 	// Advanced trading default inits for maintaining, Advanced Trading and custom scripts to utilize gem based currency.
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\AdvancedTrading\defaultInit.sqf";

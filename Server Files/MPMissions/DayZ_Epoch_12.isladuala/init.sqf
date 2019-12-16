@@ -107,7 +107,12 @@ initialized = true;
 
 setTerrainGrid 25;
 if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\REsec.sqf";};
-execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
+
+if !(DZE_SnowFall) then {
+	execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
+} else {
+	execVM "\z\addons\dayz_code\system\DynamicWeatherEffectsSnow.sqf";
+};
 
 if (isServer) then {
 	if (dayz_POIs) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf";};

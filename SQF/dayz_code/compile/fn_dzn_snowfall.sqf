@@ -14,11 +14,12 @@ scriptName "fn_dzn_snowfall.sqf";
 	 Nice snow particle effect with a proper density and for the defined time.
 */
 
-private["_dzn_snow_density", "_dzn_snow_pc", "_dzn_snow_timer", "_isinbuilding"];
+private ["_dzn_snow_density", "_dzn_snow_pc", "_dzn_snow_timer", "_isinbuilding", "_d", "_h","_position","_dpos"];
 
 if (isNil "_this") then {
 	_this = [];
 };
+
 if (count _this > 0) then {
 	_dzn_snow_timer = abs (_this select 0);
 } else {
@@ -48,14 +49,14 @@ while {_dzn_snow_timer >= 0} do {
 	} else {
 		_isinbuilding	= false;
 	};
-	
+
 	while {(_dzn_snow_pc < _dzn_snow_density) && !_isinbuilding} do {
 		_dpos = [((_position select 0) + (_d - (random (2 * _d))) + ((velocity vehicle player select 0) * 6)), ((_position select 1) + (_d - (random (2 * _d))) + ((velocity vehicle player select 1) * 6)), ((_position select 2) + _h)];
 		drop ["\ca\data\cl_water", "", "Billboard", 1, 8, _dpos, wind, 1, 0.0001, 0.0, 0.5, [0.05, 0.05, 0.05], [[1, 1, 1, 0], [1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]], [0, 0], 0.2, 1.2, "", "", ""];
 		_dzn_snow_pc = _dzn_snow_pc + 1;
 	};
-	
-	sleep 0.1;
+
+	uisleep 0.1;
 	_dzn_snow_timer = _dzn_snow_timer - 0.1;
 	_dzn_snow_pc = 0;
 };

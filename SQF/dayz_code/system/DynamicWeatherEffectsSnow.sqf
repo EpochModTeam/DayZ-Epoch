@@ -5,7 +5,7 @@
  *   [_initialFog]: Optional. Fog when mission starts. Must be between 0 and 1 where 0 = no fog, 1 = maximum fog. -1 = random fog.
  *   [_initialOvercast]: Optional. Overcast when mission starts. Must be between 0 and 1 where 0 = no overcast, 1 = maximum overcast. -1 = random overcast.
  *   [_initialRain]: Optional. Rain when mission starts. Must be between 0 and 1 where 0 = no rain, 1 = maximum rain. -1 = random rain. (Overcast must be greater than or equal to 0.75).
- *   [_initialSnow]: Optional. Snow when mission starts. Must be between 0 and 1 where 0 = no snow, 1 = maximum snow. -1 = random snow. (Overcast must be greater than or equal to 0.75). 
+ *   [_initialSnow]: Optional. Snow when mission starts. Must be between 0 and 1 where 0 = no snow, 1 = maximum snow. -1 = random snow. (Overcast must be greater than or equal to 0.75).
  *   [_initialWind]: Optional. Wind when mission starts. Must be an array of form [x, z], where x is one wind strength vector and z is the other. x and z must be greater than or equal to 0. [-1, -1] = random wind.
  *   [_debug]: Optional. true if debug text is to be shown, otherwise false.
  */
@@ -14,103 +14,102 @@ private ["_initialFog", "_initialOvercast", "_initialRain","_initialSnow", "_ini
 private ["_minWeatherChangeTimeMin", "_maxWeatherChangeTimeMin", "_minTimeBetweenWeatherChangesMin", "_maxTimeBetweenWeatherChangesMin", "_rainIntervalRainProbability", "_snowIntervalSnowProbability", "_windChangeProbability"];
 private ["_minimumFog", "_maximumFog", "_minimumOvercast", "_maximumOvercast", "_minimumRain", "_maximumRain", "_minimumSnow", "_maximumSnow", "_minimumWind", "_maximumWind", "_minRainIntervalTimeMin", "_maxRainIntervalTimeMin", "_forceRainToStopAfterOneRainInterval", "_maxWind"];
 
-if (isNil "_this") then { _this = []; };
-if (count _this > 0) then { _initialFog = _this select 0; } else { _initialFog = -1; };
-if (count _this > 1) then { _initialOvercast = _this select 1; } else { _initialOvercast = -1; };
-if (count _this > 2) then { _initialRain = _this select 2; } else { _initialRain = -1; };
-if (count _this > 3) then { _initialSnow = _this select 3; } else { _initialSnow = 0.25; };
-if (count _this > 4) then { _initialWind = _this select 4; } else { _initialWind = [-1, -1]; };
-if (count _this > 5) then { _debug = _this select 5; } else { _debug = false; };
+_initialFog = -1;
+_initialOvercast = -1;
+_initialRain = -1;
+_initialWind = [-1, -1];
+_initialSnow = 1;
+_debug = false;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // The following variables can be changed to tweak weather behaviour
 
-// Debug True/False
-_debug = true;
-
-// Minimum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to 1 and less than or equal to 
+// Minimum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to 1 and less than or equal to
 // _maxWeatherChangeTimeMin. When weather changes, it is fog OR overcast that changes, not both at the same time. (Suggested value: 10).
-_minWeatherChangeTimeMin = 10;
+_minWeatherChangeTimeMin = DZE_WeatherVariables select 0;
 
 // Maximum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to _minWeatherChangeTimeMin.
 // (Suggested value: 20).
-_maxWeatherChangeTimeMin = 20;
+_maxWeatherChangeTimeMin = DZE_WeatherVariables select 1;
 
-// Minimum time in minutes that weather (fog and overcast) stays constant between weather changes. Must be less than or equal to 0 and 
+// Minimum time in minutes that weather (fog and overcast) stays constant between weather changes. Must be less than or equal to 0 and
 // greater than or equal to _minWeatherChangeTimeMin. (Suggested value: 5).
-_minTimeBetweenWeatherChangesMin = 5;
+_minTimeBetweenWeatherChangesMin = DZE_WeatherVariables select 2;
 
-// Maximum time in minutes that weather (fog and overcast) stays unchanged between weather changes. Must be greater than or equal to 
+// Maximum time in minutes that weather (fog and overcast) stays unchanged between weather changes. Must be greater than or equal to
 // _minWeatherChangeTimeMin. (Suggested value: 10).
-_maxTimeBetweenWeatherChangesMin = 10;
+_maxTimeBetweenWeatherChangesMin = DZE_WeatherVariables select 3;
 
 // Fog intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumFog
 // (0 = no fog, 1 = pea soup). (Suggested value: 0).
-_minimumFog = 0;
+_minimumFog = DZE_WeatherVariables select 4;
 
 // Fog intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumFog
 // (0 = no fog, 1 = pea soup). (Suggested value: 0.8).
-_maximumFog = 0.5;
+_maximumFog = DZE_WeatherVariables select 5; //0.5
 
 // Overcast intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumOvercast
 // (0 = no overcast, 1 = maximum overcast). (Suggested value: 0).
-_minimumOvercast = 0;
+_minimumOvercast = DZE_WeatherVariables select 6;
 
 // Overcast intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumOvercast
 // (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
-_maximumOvercast = 1;
+_maximumOvercast = DZE_WeatherVariables select 7;
 
 // When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain
 // (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0);
-_minimumRain = .1;
+_minimumRain = DZE_WeatherVariables select 8;
 
 // When raining, rain intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumRain
 // (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0.8);
-_maximumRain = 0.8;
-
-// When snow fall, snow intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumSnow
-// (0 = no snow, 1 = maximum snow intensity). (Suggested value: 0);
-_minimumSnow = 0.8;
-
-// When snow fall, snow intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumSnow
-// (0 = no snow, 1 = maximum snow intensity). (Suggested value: 0.8);
-_maximumSnow = 1.0;
+_maximumRain = DZE_WeatherVariables select 9;
 
 // Wind vector strength never falls below this value. Must be greater or equal to 0 and less than or equal to _maximumWind.
 // (Suggested value: 0);
-_minimumWind = 0;
+_minimumWind = DZE_WeatherVariables select 10;
 
 // Wind vector strength never exceeds this value. Must be greater or equal to 0 and greater than or equal to _minimumWind.
 // (Suggested value: 8).
-_maximumWind = 8;
+_maximumWind = DZE_WeatherVariables select 11;
 
-// Probability in percent for wind to change when weather changes. If set to 0 then wind will never change. If set to 100 then rain will 
+// Probability in percent for wind to change when weather changes. If set to 0 then wind will never change. If set to 100 then rain will
 // change every time the weather (fog or overcast) start to change. (Suggested value: 25);
-_windChangeProbability = 25;
+_windChangeProbability = DZE_WeatherVariables select 12;
 
-// A "rain interval" is defined as "a time interval during which it may rain in any intensity (or it may not rain at all)". When overcast 
-// goes above 0.75, a chain of rain intervals (defined below) is started. It cycles on until overcast falls below 0.75. At overcast 
+// A "rain interval" is defined as "a time interval during which it may rain in any intensity (or it may not rain at all)". When overcast
+// goes above 0.75, a chain of rain intervals (defined below) is started. It cycles on until overcast falls below 0.75. At overcast
 // below 0.75 rain intervals never execute (thus it cannot rain).
 
-// Probability in percent (0-100) for rain to start at every rain interval. Set this to 0 if you don't want rain at all. Set this to 100 
-// if you want it to rain constantly when overcast is greater than 0.75. In short: if you think that it generally rains to often then 
+// Probability in percent (0-100) for rain to start at every rain interval. Set this to 0 if you don't want rain at all. Set this to 100
+// if you want it to rain constantly when overcast is greater than 0.75. In short: if you think that it generally rains to often then
 // lower this value and vice versa. (Suggested value: 50).
-_rainIntervalRainProbability = 0;
-_snowIntervalSnowProbability = 100;
+_rainIntervalRainProbability = DZE_WeatherVariables select 13;
 
 // Minimum time in minutes for rain intervals. Must be greater or equal to 0 and less than or equal to _maxRainIntervalTimeMin.
 // (Suggested value: 0).
-_minRainIntervalTimeMin = 0;
+_minRainIntervalTimeMin = DZE_WeatherVariables select 14;
 
 // Maximum time in minutes for rain intervals. Must be greater than or equal to _minRainIntervalTimeMin. (Suggested value:
 // (_maxWeatherChangeTimeMin + _maxTimeBetweenWeatherChangesMin) / 2).
 _maxRainIntervalTimeMin = (_maxWeatherChangeTimeMin + _maxTimeBetweenWeatherChangesMin) / 2;
 
-// If set to true, then the rain is forced to stop after one rain interval during which it has rained (use this for example if you only want 
-// small occational cloudbursts ). If set to false, then the rain may stop, but it may also just change intensity for an 
+// If set to true, then the rain is forced to stop after one rain interval during which it has rained (use this for example if you only want
+// small occational cloudbursts ). If set to false, then the rain may stop, but it may also just change intensity for an
 // immedeate new rain interval. (Suggested value: false).
-_forceRainToStopAfterOneRainInterval = false;
+_forceRainToStopAfterOneRainInterval = DZE_WeatherVariables select 15;
 
+// When snow fall, snow intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumSnow
+// (0 = no snow, 1 = maximum snow intensity). (Suggested value: 0.8);
+_minimumSnow = DZE_WeatherVariables select 16;
+
+// When snow fall, snow intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumSnow
+// (0 = no snow, 1 = maximum snow intensity). (Suggested value: 1);
+_maximumSnow = DZE_WeatherVariables select 17;
+
+// Probability in percent (0-100) for snow to start at every snow interval. Set this to 0 if you don't want snow at all. Set this to 100
+// if you want it to snow constantly when overcast is greater than 0.75. In short: if you think that it generally snows to often then
+// lower this value and vice versa. (Suggested value: 100).
+_snowIntervalSnowProbability = DZE_WeatherVariables select 18;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Don't touch anything beneath this line
@@ -128,11 +127,11 @@ drn_DynamicWeather_DebugTextEventArgs = []; // Empty
  */
 drn_fnc_DynamicWeather_ShowDebugTextLocal = {
     private ["_minutes", "_seconds"];
-    
+
     if (!isNull player) then {
         player sideChat (_this select 0);
     };
-    
+
     _minutes = floor (time / 60);
     _seconds = floor (time - (_minutes * 60));
     diag_log ((str _minutes + ":" + str _seconds) + " Debug: " + (_this select 0));
@@ -157,7 +156,7 @@ drn_DynamicWeatherEventArgs = []; // [current overcast, current fog, current rai
 drn_AskServerDynamicWeatherEventArgs = []; // []
 
 drn_fnc_DynamicWeather_SetWeatherLocal = {
-    private ["_currentOvercast", "_currentFog", "_currentRain", "_currentSnow", "_currentWeatherChange", "_targetWeatherValue", "_timeUntilCompletion", "_currentWindX", "_currentWindZ"];
+    private ["_currentOvercast", "_currentFog", "_currentRain", "_currentWeatherChange", "_targetWeatherValue", "_timeUntilCompletion", "_currentWindX", "_currentWindZ","_currentSnow"];
 
     _currentOvercast = _this select 0;
     _currentFog = _this select 1;
@@ -168,14 +167,14 @@ drn_fnc_DynamicWeather_SetWeatherLocal = {
     _timeUntilCompletion = _this select 6;
     _currentWindX = _this select 7;
     _currentWindZ = _this select 8;
-    
+
     // Set current weather values
     0 setOvercast _currentOvercast;
     0 setFog _currentFog;
     drn_var_DynamicWeather_Rain = _currentRain;
     drn_var_DynamicWeather_Snow = _currentSnow;
     setWind [_currentWindX, _currentWindZ, true];
-    
+
     // Set forecast
     if (_currentWeatherChange == "OVERCAST") then {
         _timeUntilCompletion setOvercast _targetWeatherValue;
@@ -191,7 +190,7 @@ if (!isServer) then {
     };
 
     waitUntil {!isNil "drn_var_DynamicWeather_ServerInitialized"};
-    
+
     drn_AskServerDynamicWeatherEventArgs = [true];
     publicVariable "drn_AskServerDynamicWeatherEventArgs";
 };
@@ -199,7 +198,7 @@ if (!isServer) then {
 if (isServer) then {
     drn_fnc_DynamicWeather_SetWeatherAllClients = {
         private ["_timeUntilCompletion", "_currentWeatherChange"];
-        
+
         _timeUntilCompletion = drn_DynamicWeather_WeatherChangeCompletedTime - drn_DynamicWeather_WeatherChangeStartedTime;
         if (_timeUntilCompletion > 0) then {
             _currentWeatherChange = drn_DynamicWeather_CurrentWeatherChange;
@@ -207,23 +206,23 @@ if (isServer) then {
         else {
             _currentWeatherChange = "";
         };
-        
+
         drn_DynamicWeatherEventArgs = [overcast, fog, drn_var_DynamicWeather_Rain, drn_var_DynamicWeather_Snow, _currentWeatherChange, drn_DynamicWeather_WeatherTargetValue, _timeUntilCompletion, drn_DynamicWeather_WindX, drn_DynamicWeather_WindZ];
         publicVariable "drn_DynamicWeatherEventArgs";
         drn_DynamicWeatherEventArgs call drn_fnc_DynamicWeather_SetWeatherLocal;
     };
-    
+
     "drn_AskServerDynamicWeatherEventArgs" addPublicVariableEventHandler {
         call drn_fnc_DynamicWeather_SetWeatherAllClients;
     };
-    
+
     drn_DynamicWeather_CurrentWeatherChange = "";
     drn_DynamicWeather_WeatherTargetValue = 0;
     drn_DynamicWeather_WeatherChangeStartedTime = time;
     drn_DynamicWeather_WeatherChangeCompletedTime = time;
     drn_DynamicWeather_WindX = _initialWind select 0;
     drn_DynamicWeather_WindZ = _initialWind select 1;
-    
+
     if (_initialFog == -1) then {
         _initialFog = (_minimumFog + random (_maximumFog - _minimumFog));
     }
@@ -235,9 +234,9 @@ if (isServer) then {
             _initialFog = _maximumFog;
         };
     };
-    
+
     0 setFog _initialFog;
-    
+
     if (_initialOvercast == -1) then {
         _initialOvercast = (_minimumOvercast + random (_maximumOvercast - _minimumOvercast));
     }
@@ -249,9 +248,9 @@ if (isServer) then {
             _initialOvercast = _maximumOvercast;
         };
     };
-    
+
     0 setOvercast _initialOvercast;
-    
+
     if (_initialOvercast >= 0.75) then {
         if (_initialRain == -1) then {
             _initialRain = (_minimumRain + random (_minimumRain - _minimumRain));
@@ -268,15 +267,15 @@ if (isServer) then {
     else {
         _initialRain = 0;
     };
-    
+
     drn_var_DynamicWeather_Rain = _initialRain;
     0 setRain drn_var_DynamicWeather_Rain;
-    
+
     drn_var_DynamicWeather_Snow = _initialSnow;
     if (!isDedicated) then {[0, drn_var_DynamicWeather_Snow] spawn dzn_fnc_snowfall;};
-    
+
     _maxWind = _minimumWind + random (_maximumWind - _minimumWind);
-    
+
     if (drn_DynamicWeather_WindX == -1) then {
         if (random 100 < 50) then {
             drn_DynamicWeather_WindX = -_minimumWind - random (_maxWind - _minimumWind);
@@ -285,7 +284,7 @@ if (isServer) then {
             drn_DynamicWeather_WindX = _minimumWind + random (_maxWind - _minimumWind);
         };
     };
-    
+
     if (drn_DynamicWeather_WindZ == -1) then {
         if (random 100 < 50) then {
             drn_DynamicWeather_WindZ = -_minimumWind - random (_maxWind - _minimumWind);
@@ -294,21 +293,21 @@ if (isServer) then {
             drn_DynamicWeather_WindZ = _minimumWind + random (_maxWind - _minimumWind);
         };
     };
-    
+
     setWind [drn_DynamicWeather_WindX, drn_DynamicWeather_WindZ, true];
-    
-    sleep 0.05;
-    
+
+    uiSleep 0.05;
+
     publicVariable "drn_var_DynamicWeather_Rain";
     publicVariable "drn_var_DynamicWeather_Snow";
     drn_var_DynamicWeather_ServerInitialized = true;
     publicVariable "drn_var_DynamicWeather_ServerInitialized";
-    
+
     // Start weather thread
     [_minWeatherChangeTimeMin, _maxWeatherChangeTimeMin, _minTimeBetweenWeatherChangesMin, _maxTimeBetweenWeatherChangesMin, _minimumFog, _maximumFog, _minimumOvercast, _maximumOvercast, _minimumWind, _maximumWind, _windChangeProbability, _debug] spawn {
         private ["_minWeatherChangeTimeMin", "_maxWeatherChangeTimeMin", "_minTimeBetweenWeatherChangesMin", "_maxTimeBetweenWeatherChangesMin", "_minimumFog", "_maximumFog", "_minimumOvercast", "_maximumOvercast", "_minimumWind", "_maximumWind", "_windChangeProbability", "_debug"];
         private ["_weatherType", "_fogLevel", "_overcastLevel", "_oldFogLevel", "_oldOvercastLevel", "_weatherChangeTimeSek"];
-        
+
         _minWeatherChangeTimeMin = _this select 0;
         _maxWeatherChangeTimeMin = _this select 1;
         _minTimeBetweenWeatherChangesMin = _this select 2;
@@ -321,23 +320,23 @@ if (isServer) then {
         _maximumWind = _this select 9;
         _windChangeProbability = _this select 10;
         _debug = _this select 11;
-        
+
         // Set initial fog level
         _fogLevel = 2;
         _overcastLevel = 2;
-        
-        while {true} do {
-            // Sleep a while until next weather change
-            sleep floor (_minTimeBetweenWeatherChangesMin * 60 + random ((_maxTimeBetweenWeatherChangesMin - _minTimeBetweenWeatherChangesMin) * 60));
-            
-            if (_minimumFog == _maximumFog && _minimumOvercast != _maximumOvercast) then {
+
+        while {1 == 1} do {
+            // uiSleep a while until next weather change
+            uiSleep floor (_minTimeBetweenWeatherChangesMin * 60 + random ((_maxTimeBetweenWeatherChangesMin - _minTimeBetweenWeatherChangesMin) * 60));
+
+            if (_minimumFog == _maximumFog && {_minimumOvercast != _maximumOvercast}) then {
                 _weatherType = "OVERCAST";
             };
-            if (_minimumFog != _maximumFog && _minimumOvercast == _maximumOvercast) then {
+            if (_minimumFog != _maximumFog && {_minimumOvercast == _maximumOvercast}) then {
                 _weatherType = "FOG";
             };
-            if (_minimumFog != _maximumFog && _minimumOvercast != _maximumOvercast) then {
-                
+            if (_minimumFog != _maximumFog && {_minimumOvercast != _maximumOvercast}) then {
+
                 // Select type of weather to change
                 if ((random 100) < 50) then {
                     _weatherType = "OVERCAST";
@@ -346,22 +345,22 @@ if (isServer) then {
                     _weatherType = "FOG";
                 };
             };
-            
+
             // DEBUG
             //_weatherType = "OVERCAST";
-            
+
             if (_weatherType == "FOG") then {
-                
+
                 drn_DynamicWeather_CurrentWeatherChange = "FOG";
-                
+
                 // Select a new fog level
                 _oldFogLevel = _fogLevel;
                 _fogLevel = floor ((random 100) / 25);
-                
+
                 while {_fogLevel == _oldFogLevel} do {
                     _fogLevel = floor ((random 100) / 25);
                 };
-                
+
                 if (_fogLevel == 0) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumFog + (_maximumFog - _minimumFog) * random 0.05;
                 };
@@ -374,29 +373,29 @@ if (isServer) then {
                 if (_fogLevel == 3) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumFog + (_maximumFog - _minimumFog) * (0.55 + random 0.45);
                 };
-                
+
                 drn_DynamicWeather_WeatherChangeStartedTime = time;
                 _weatherChangeTimeSek = _minWeatherChangeTimeMin * 60 + random ((_maxWeatherChangeTimeMin - _minWeatherChangeTimeMin) * 60);
                 drn_DynamicWeather_WeatherChangeCompletedTime = time + _weatherChangeTimeSek;
-                
+
                 if (_debug) then {
                     ["Weather forecast: Fog " + str drn_DynamicWeather_WeatherTargetValue + " in " + str round (_weatherChangeTimeSek / 60) + " minutes."] call drn_fnc_DynamicWeather_ShowDebugTextAllClients;
                 };
             };
-            
+
             if (_weatherType == "OVERCAST") then {
-                
+
                 drn_DynamicWeather_CurrentWeatherChange = "OVERCAST";
-                
+
                 // Select a new overcast level
                 _oldOvercastLevel = _overcastLevel;
                 //_overcastLevel = floor ((random 100) / 25);
                 _overcastLevel = 3;
-                
+
                 while {_overcastLevel == _oldOvercastLevel} do {
                     _overcastLevel = floor ((random 100) / 25);
                 };
-                
+
                 if (_overcastLevel == 0) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumOvercast + (_maximumOvercast - _minimumOvercast) * random 0.05;
                 };
@@ -409,7 +408,7 @@ if (isServer) then {
                 if (_overcastLevel == 3) then {
                     drn_DynamicWeather_WeatherTargetValue = _minimumOvercast + (_maximumOvercast - _minimumOvercast) * (0.7 + random 0.3);
                 };
-                
+
                 // DEBUG
                 /*
                 if (overcast > 0.8) then {
@@ -419,22 +418,22 @@ if (isServer) then {
                     drn_DynamicWeather_WeatherTargetValue = 0.85;
                 };
                 */
-                
+
                 drn_DynamicWeather_WeatherChangeStartedTime = time;
                 _weatherChangeTimeSek = _minWeatherChangeTimeMin * 60 + random ((_maxWeatherChangeTimeMin - _minWeatherChangeTimeMin) * 60);
                 drn_DynamicWeather_WeatherChangeCompletedTime = time + _weatherChangeTimeSek;
-                
+
                 if (_debug) then {
                     ["Weather forecast: Overcast " + str drn_DynamicWeather_WeatherTargetValue + " in " + str round (_weatherChangeTimeSek / 60) + " minutes."] call drn_fnc_DynamicWeather_ShowDebugTextAllClients;
                 };
             };
-            
+
             // On average every one fourth of weather changes, change wind too
             if (random 100 < _windChangeProbability) then {
                 private ["_maxWind"];
-                
+
                 _maxWind = _minimumWind + random (_maximumWind - _minimumWind);
-                
+
                 if (random 100 < 50) then {
                     drn_DynamicWeather_WindX = -_minimumWind - random (_maxWind - _minimumWind);
                 }
@@ -447,24 +446,24 @@ if (isServer) then {
                 else {
                     drn_DynamicWeather_WindZ = _minimumWind + random (_maxWind - _minimumWind);
                 };
-                
+
                 if (_debug) then {
                     ["Wind changes: [" + str drn_DynamicWeather_WindX + ", " + str drn_DynamicWeather_WindZ + "]."] call drn_fnc_DynamicWeather_ShowDebugTextAllClients;
                 };
             };
-            
+
             call drn_fnc_DynamicWeather_SetWeatherAllClients;
-            
-            sleep _weatherChangeTimeSek;
+
+            uiSleep _weatherChangeTimeSek;
         };
     };
-    
+
     // Start rain thread
     if (_rainIntervalRainProbability > 0) then {
         [_minimumRain, _maximumRain, _minimumSnow, _maximumSnow, _forceRainToStopAfterOneRainInterval, _minRainIntervalTimeMin, _maxRainIntervalTimeMin, _rainIntervalRainProbability, _snowIntervalSnowProbability, _debug] spawn {
             private ["_minimumRain", "_maximumRain", "_minimumSnow", "_maximumSnow", "_forceRainToStopAfterOneRainInterval", "_minRainIntervalTimeMin", "_maxRainIntervalTimeMin", "_rainIntervalRainProbability", "_snowIntervalSnowProbability", "_debug"];
             private ["_nextRainEventTime", "_forceStop"];
-            
+
             _minimumRain = _this select 0;
             _maximumRain = _this select 1;
             _minimumSnow = _this select 2;
@@ -475,42 +474,40 @@ if (isServer) then {
             _rainIntervalRainProbability = _this select 7;
             _snowIntervalSnowProbability = _this select 8;
             _debug = _this select 9;
-            
+
             if (rain > 0) then {
                 drn_var_DynamicWeather_Rain = rain;
                 publicVariable "drn_var_DynamicWeather_Rain";
             };
-            
-            _nextRainEventTime = time;
 
+            _nextRainEventTime = time;
             _forceStop = false;
-            
-            while {true} do {
-                
+
+            while {1 == 1} do {
+
                 if (overcast > 0.75) then {
-                    
-                    if (dayTime > 10 && dayTime < 14) then {
+                    if (dayTime > 10 && {dayTime < 14}) then {
 						if (time >= _nextRainEventTime) then {
 	                        private ["_rainTimeSec"];
-	                        
+
 	                        // At every rain event time, start or stop rain with 50% probability
-	                        if (random 100 < _rainIntervalRainProbability && !_forceStop) then {
+	                        if (random 100 < _rainIntervalRainProbability && {!_forceStop}) then {
 	                            drn_var_DynamicWeather_rain = _minimumRain + random (_maximumRain - _minimumRain);
 	                            publicVariable "drn_var_DynamicWeather_rain";
-	                            
+
 	                            _forceStop = _forceRainToStopAfterOneRainInterval;
 	                        }
 	                        else {
 	                            drn_var_DynamicWeather_rain = 0;
 	                            publicVariable "drn_var_DynamicWeather_rain";
-	                            
+
 	                            _forceStop = false;
 	                        };
-	                        
+
 	                        // Pick a time for next rain change
 	                        _rainTimeSec = _minRainIntervalTimeMin * 60 + random ((_maxRainIntervalTimeMin - _minRainIntervalTimeMin) * 60);
 	                        _nextRainEventTime = time + _rainTimeSec;
-	                        
+
 	                        if (_debug) then {
 	                            ["Rain set to " + str drn_var_DynamicWeather_rain + " for " + str (_rainTimeSec / 60) + " minutes"] call drn_fnc_DynamicWeather_ShowDebugTextAllClients;
 	                        };
@@ -518,23 +515,23 @@ if (isServer) then {
                     } else {
 						if (time >= _nextRainEventTime) then {
 	                        private ["_snowTimeSec"];
-	                        
+
 	                        // At every snow event time, start or stop snow with 50% probability
-	                        if (random 100 < _snowIntervalSnowProbability && !_forceStop) then {
+	                        if (random 100 < _snowIntervalSnowProbability && {!_forceStop}) then {
 	                            drn_var_DynamicWeather_snow = _minimumSnow + random (_maximumSnow - _minimumSnow);
 								publicVariable "drn_var_DynamicWeather_snow";
-	                            
+
 	                            _forceStop = _forceRainToStopAfterOneRainInterval;
 	                        } else {
 	                            drn_var_DynamicWeather_snow = 0;
 	                            publicVariable "drn_var_DynamicWeather_snow";
 	                            _forceStop = false;
 	                        };
-	                        
+
 	                        // Pick a time for next snow change
 	                        _snowTimeSec = _minRainIntervalTimeMin * 60 + random ((_maxRainIntervalTimeMin - _minRainIntervalTimeMin) * 60);
 	                        _nextRainEventTime = time + _snowTimeSec;
-	                        
+
 	                        if (_debug) then {
 	                            ["Snow set to " + str drn_var_DynamicWeather_snow + " for " + str (_snowTimeSec / 60) + " minutes"] call drn_fnc_DynamicWeather_ShowDebugTextAllClients;
 	                        };
@@ -546,50 +543,50 @@ if (isServer) then {
                         drn_var_DynamicWeather_snow = 0;
                         publicVariable "drn_var_DynamicWeather_rain";
                         publicVariable "drn_var_DynamicWeather_snow";
-                        
+
                         if (_debug) then {
                             ["Rain / snow stops due to low overcast."] call drn_fnc_DynamicWeather_ShowDebugTextAllClients;
                         };
                     };
-                    
+
                     _nextRainEventTime = time;
                     _forceStop = false;
                 };
-                
+
                 if (_debug) then {
-                    sleep 1;
+                    uiSleep 1;
                 } else {
-                    sleep 10;
+                    uiSleep 10;
                 };
             };
         };
     };
 };
 
-[_rainIntervalRainProbability, _debug] spawn {
+drn_var_rainRoutine = [_rainIntervalRainProbability, _debug] spawn {
     private ["_rainIntervalRainProbability", "_debug"];
     private ["_rain", "_rainPerSecond"];
-    
+
     _rainIntervalRainProbability = _this select 0;
     _debug = _this select 1;
-    
+
     if (_debug) then {
         _rainPerSecond = 0.2;
     } else {
         _rainPerSecond = 0.03;
     };
-    
+
     if (_rainIntervalRainProbability > 0) then {
         _rain = drn_var_DynamicWeather_Rain;
     }
     else {
         _rain = 0;
     };
-    
+
     0 setRain _rain;
-    sleep 0.1;
-    
-    while {true} do {
+    uiSleep 0.1;
+
+    while {1 == 1} do {
         if (_rainIntervalRainProbability > 0) then {
             if (_rain < drn_var_DynamicWeather_Rain) then {
                 _rain = _rain + _rainPerSecond;
@@ -603,26 +600,26 @@ if (isServer) then {
         else {
             _rain = 0;
         };
-        
+
         3 setRain _rain;
-        
-        sleep 3;
+
+        uiSleep 3;
     };
 };
 
 [_snowIntervalSnowProbability, _debug] spawn {
     private ["_snowIntervalSnowProbability", "_debug"];
     private ["_snow", "_snowPerSecond"];
-    
+
     _snowIntervalSnowProbability = _this select 0;
     _debug = _this select 1;
-    
+
     if (_debug) then {
         _snowPerSecond = 0.2;
     } else {
         _snowPerSecond = 0.03;
     };
-    
+
     if (_snowIntervalSnowProbability > 0) then {
         _snow = drn_var_DynamicWeather_snow;
     }
@@ -631,9 +628,9 @@ if (isServer) then {
     };
 
     if (!isDedicated) then {[0.1, _snow] spawn dzn_fnc_snowfall;};
-    sleep 0.1;
-    
-    while {true} do {
+    uisleep 0.1;
+
+    while {1 == 1} do {
         if (_snowIntervalSnowProbability > 0) then {
             if (_snow < drn_var_DynamicWeather_snow) then {
                 _snow = _snow + _snowPerSecond;
@@ -648,7 +645,7 @@ if (isServer) then {
         };
 
         if (!isDedicated) then {[3, _snow] spawn dzn_fnc_snowfall;};
-        
-        sleep 3;
+
+        uisleep 3;
     };
 };

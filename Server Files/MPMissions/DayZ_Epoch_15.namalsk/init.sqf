@@ -64,6 +64,7 @@ DZE_BuildingLimit = 150; // Max number of built objects allowed in DZE_PlotPole 
 DZE_SafeZonePosArray = [[[6224.7,9164.97,0],100],[[7265.519,5804.69,0],100],[[8887.29,10754.3,0],100]]; // Format is [[[3D POS],RADIUS],[[3D POS],RADIUS]]; Stops loot and zed spawn, salvage and players being killed if their vehicle is destroyed in these zones.
 DZE_SelfTransfuse = true; // Allow players to bloodbag themselves
 DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount given, infection chance %, cooldown in seconds]
+DZE_SnowFall = true;
 MaxDynamicDebris = 500; // Max number of random road blocks to spawn around the map
 MaxVehicleLimit = 300; // Max number of random vehicles to spawn around the map
 spawnArea = 1400; // Distance around markers to find a safe spawn position
@@ -107,7 +108,13 @@ initialized = true;
 
 setTerrainGrid 25;
 if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\REsec.sqf";};
-execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
+
+if !(DZE_SnowFall) then {
+	execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
+} else {
+	DZE_WeatherVariables = [10, 20, 5, 10, 0, 0.2, 0.5, 1, 0, 0.6, 0, 8, 25, 30, 0, false, 0.8, 1, 100]; 
+	execVM "\z\addons\dayz_code\system\DynamicWeatherEffectsSnow.sqf";
+};
 
 if (isServer) then {
 	if (dayz_POIs) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf";};
