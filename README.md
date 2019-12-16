@@ -40,6 +40,8 @@ Included Custom Islands
 * | MBG Buildings 3 - European Theatre http://www.armaholic.com/page.php?id=14828
 * | MBG Generic African Buildings http://www.armaholic.com/page.php?id=17817
 * | German Town - and waysigns http://www.armaholic.com/page.php?id=9658
+* FDF Podagorsk by Goth http://www.armaholic.com/page.php?id=8791
+* Chernarus Winter by ArmanIII http://www.armaholic.com/page.php?id=27807
 
 --------------------------
 Initial Developers
