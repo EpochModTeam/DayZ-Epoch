@@ -21,6 +21,8 @@ _initialWind = [-1, -1];
 _initialSnow = 1;
 _debug = false;
 
+//Snowfall example: DZE_WeatherVariables = [10, 20, 5, 10, 0, 0.2, 0.5, 1, 0, 0.6, 0, 8, 25, 30, 0, false, 0.8, 1, 100];
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // The following variables can be changed to tweak weather behaviour
 

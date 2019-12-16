@@ -526,7 +526,6 @@ if (!isDedicated) then {
 	// Survival Variables
 	SleepFood = 2160; //minutes (48 hours)
 	SleepWater = 1440; //minutes (24 hours)
-	SleepTemperatur = 90 / 100;	//First value = Minutes until player reaches the coldest point at night (without other effects! night factor expected to be -1) //TeeChange
 	
 	// GUI
 	Dayz_GUI_R = 0.38; // 0.7 .38
