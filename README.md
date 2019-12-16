@@ -123,6 +123,7 @@ GitHub Contributors (In order of most commits)
 * SmokeyBR - https://github.com/SmokeyBR
 * DeVloek - https://github.com/DeVloek
 * worldwidesorrow - https://github.com/worldwidesorrow
+* RedLink-kam - https://github.com/RedLink-kam
 
 --------------------------
 Special thanks
