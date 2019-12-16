@@ -12,6 +12,10 @@
 [NEW] Add the option for vectorUp on spawned objects in fnc_spawnObjects. (bf9dc49) @worldwidesorrow
 [NEW] Add 2 new cargo truck versions. A truck for more items and a truck for more weapons. (02c91007) @AirwavesMan
 [NEW] Add option to give another player an antibacterial wipe. (8c074be) @worldwidesorrow
+[NEW] The Maps Podagorsk and Chernarus Winter are in Epoch included now.
+[NEW] Add snowfall to the game. This is enabled on all winter maps by default and can be changed in the configVariables.sqf/DZE_SnowFall (fff1196e) @AirwavesMan
+[NEW] Add Warm Clothes support. configVariables.sqf/DZE_WarmClothes (4058f596) @AirwavesMan
+[NEW] Add shivering - if the players body temperature is under a certain value the shivering starts. Can be defined and disabled with the last value in the DZE_WeatherVariables array. (4058f596) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
