@@ -10,6 +10,12 @@ class ItemLog : CA_Magazine
 	
 	class ItemActions
 	{
+		class Build {
+			text = $STR_ACTIONS_MAKEFIRE;
+			script = "spawn player_build;";
+			require[] = {"ItemMatchbox"};
+			create = "Land_Fire_DZ";	
+		};
 		class Crafting
 		{
 			text = $STR_BLD_craft_ItemLog;//"Wooden Plank"
