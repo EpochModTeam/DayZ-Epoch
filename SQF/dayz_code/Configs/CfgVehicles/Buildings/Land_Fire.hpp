@@ -104,18 +104,9 @@ class Land_Fire_DZ : Land_Fire {
 		transportMaxMagazines = 1;
 		transportMaxWeapons = 0;
 		transportMaxBackpacks = 0;
+		offset[] = {0,1,0};
+		constructioncount = 1;
 	class UserActions {
-		/*
-		class upgrade {
-			displayNameDefault = "Create Base Fire";
-			displayName = "Create Base Fire";
-			position = "ohniste";
-			radius = 3;
-			onlyForPlayer = 0;
-			condition = "alive this";
-			statement = "[this] spawn object_upgradeFireplace";
-		};
-		*/
 		class lightup {
 			displayNameDefault = $STR_ACTIONS_LIGHTFIRE;
 			displayName = $STR_ACTIONS_LIGHTFIRE;
@@ -135,13 +126,6 @@ class Land_Fire_DZ : Land_Fire {
 			statement = "[this,false] call dayz_inflame";
 		};
 	};
-	/*
-	class Upgrade {
-		requiredTools[] = {"ItemEtool"}; 
-		requiredParts[] = {"ItemLog", "ItemLog", "ItemStone", "ItemStone", "ItemStone"};
-		create = "Base_Fire_DZ";
-	};
-	*/
 };
 	
 class Base_Fire_DZ : Land_Fire {
