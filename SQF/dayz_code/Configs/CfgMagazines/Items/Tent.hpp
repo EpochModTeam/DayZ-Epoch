@@ -15,9 +15,7 @@ class ItemTent : CA_Magazine
 			text = $STR_PITCH_TENT;
 			script = "spawn player_build;";
 			require[] = {};
-			consume[] = {"ItemTent"};
 			create = "TentStorage";
-			//ghost = "TentStorage_Ghost";
 			//Bypass collision test
 			bypassCollision = "true";
 		};
@@ -28,7 +26,7 @@ class ItemTent : CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"desert_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
+			input[] = {{"ItemTent",2},{"equip_tent_poles",2}};
 		};
 		class Crafting1
 		{
@@ -37,7 +35,7 @@ class ItemTent : CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"forest_net_kit",1}};
-			input[] = {{"ItemTent",2},{"ItemPole",2}};
+			input[] = {{"ItemTent",2},{"equip_tent_poles",2}};
 		};
 	};
 };
@@ -60,9 +58,7 @@ class ItemDomeTent : CA_Magazine
 			text = $STR_PITCH_DOME_TENT;
 			script = "spawn player_build;";
 			require[] = {};
-			consume[] = {"ItemDomeTent"};
 			create = "DomeTentStorage";
-			//ghost = "DomeTentStorage_Ghost";
 			//Bypass collision test
 			bypassCollision = "true";
 		};
@@ -73,7 +69,7 @@ class ItemDomeTent : CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"forest_net_kit",1}};
-			input[] = {{"ItemDomeTent",2},{"ItemPole",2}};
+			input[] = {{"ItemDomeTent",2},{"equip_tent_poles",2}};
 		};
 	};
 };
@@ -97,7 +93,6 @@ class ItemDesertTent : CA_Magazine
 			text = $STR_PITCH_DESERT_TENT;
 			script = "spawn player_build;";
 			require[] = {};
-			consume[] = {"ItemDesertTent"};
 			create = "DesertTentStorage";
 		};
 		class Crafting
@@ -107,7 +102,7 @@ class ItemDesertTent : CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"desert_net_kit",1}};
-			input[] = {{"ItemDesertTent",2},{"ItemPole",2}};
+			input[] = {{"ItemDesertTent",2},{"equip_tent_poles",2}};
 		};
 	};
 };

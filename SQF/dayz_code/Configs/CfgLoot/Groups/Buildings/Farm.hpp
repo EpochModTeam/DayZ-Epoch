@@ -11,6 +11,7 @@ Farm[] =
 	{Loot_WEAPON,		5,		ItemKnife},
 	
 	//Items
+	{Loot_MAGAZINE,		1,		equip_tent_poles},
 	{Loot_MAGAZINE,		4,		ItemSandbag},
 	{Loot_MAGAZINE,		1,		TrapBear},
 	{Loot_MAGAZINE,		8,		PartWoodPile},

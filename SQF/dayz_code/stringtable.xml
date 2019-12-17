@@ -2036,9 +2036,9 @@
 			<German>Eine Metallstange, welche beim Handwerken verwendet werden kann.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_tent_poles">
-			<English>6 Tent Poles</English>
-			<German>6 Zeltstangen</German>
-			<Russian>6 распорок</Russian>
+			<English>Tent Poles</English>
+			<German>Zeltstangen</German>
+			<Russian>Pаспорок</Russian>
 			<Spanish>Varilla Metálica</Spanish>
 			<French>Perche métallique</French>
 			<Czech>Stanové tyče</Czech>
@@ -2049,7 +2049,7 @@
 			<Russian>6 палаточных распорок, которые могут пригодиться в мастерской для создания палаток и масксетей.</Russian>
 			<Czech>Šest stanových tyčí, jež lze využít při výrobě stanů a kamuflážních sítí.</Czech>
 			<French>Perche métallique (Artisanat)</French>
-			<German>Sechs Zeltstangen aus Metall, welche beim Handwerken verwendet werden können.</German>
+			<German>Sechs Zeltstangen aus Metall, welche zum Bau von Zelten und Tarnnetzen verwendet werden können.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_rubber_tube">
 			<English>Small rubber tube</English>

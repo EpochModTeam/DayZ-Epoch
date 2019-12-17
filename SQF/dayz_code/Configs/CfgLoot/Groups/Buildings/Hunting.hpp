@@ -29,6 +29,7 @@ Hunting[] =
 	
 	//Other
 	{Loot_MAGAZINE,		2,		ItemTent},
+	{Loot_MAGAZINE,		1,		equip_tent_poles},
 	{Loot_MAGAZINE,		2,		ItemBandage},
 	{Loot_MAGAZINE,		1,		ItemDomeTent},
 	{Loot_MAGAZINE,		3,		TrapBear},
