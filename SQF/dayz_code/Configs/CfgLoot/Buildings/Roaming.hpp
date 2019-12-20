@@ -36,7 +36,11 @@ class Land_HouseBlock_B4: HouseRoaming{
 };
 class Land_HouseBlock_C2 : HouseRoaming {};
 class Land_HouseBlock_C3 : HouseRoaming {};
-class Land_HouseBlock_C4 : HouseRoaming {};
+class Land_HouseBlock_C4 : HouseRoaming {
+	zedPos[] = {{1.54199,3.79883,-4.57855},{-1.8208,-1.80664,-4.57855},{1.72363,-1.67188,-4.5746},{-2.75586,-3.64844,-4.57855},{-2.49805,4.07422,-4.57855}};
+	lootPos[] = {{2.68457,3.71484,-5.46355},{-2.98145,3.95508,-5.46355},{-2.95117,-3.64258,-5.46355},{-2.81152,-3.53125,-1.49755},{3.00293,-3.85156,-1.49755},{-1.68311,1.36914,-1.49755}};
+	lootPosSmall[] = {{-3.30518,-1.75488,-4.77355},{2.38623,-0.0947266,-4.5696},{-2.56396,-1.65137,-1.05755},{0.203613,-1.61328,-0.907551},{1.9502,-3.79883,-4.6796}};
+};
 class Land_HouseBlock_C5 : HouseRoaming {};
 class Land_Misc_Cargo1D : HouseRoaming {};
 class Land_Ind_Shed_01_end : HouseRoaming {};
