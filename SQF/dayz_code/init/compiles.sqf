@@ -14,7 +14,7 @@ if (!isDedicated) then {
 
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_padlock.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
-	call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\compile.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
 	
 	fn_dropItem = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dropItem.sqf";
 	fn_dynamicTool = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dynamicTool.sqf";
