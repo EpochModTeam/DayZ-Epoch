@@ -481,7 +481,7 @@ if (!isDedicated) then {
 	DZE_maintainRange = ((DZE_PlotPole select 0)+20); // Default: maintain building objects within plot radius + 20 meters.
 	dayz_maxGlobalAnimals =	50;  // Maximum number of animals allowed on the map simultaneously.
 	dayz_maxGlobalPlants = 500; // Maximum number of plants to be spawned on the map.
-	dayz_maxMaxWeaponHolders = 80; // Maximum number of loot piles that can spawn within 200 meters of a player.
+	dayz_maxMaxWeaponHolders = 120; // Maximum number of loot piles that can spawn within 200 meters of a player.
 	dayz_maxLocalZombies = 15; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 	dayz_maxNearByZombies = 30; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 	dayz_maxAnimals = 5; // Used to calculate the max number of animals to spawn per player.
