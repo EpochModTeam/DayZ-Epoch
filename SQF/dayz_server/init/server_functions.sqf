@@ -9,7 +9,7 @@ BIS_MPF_remoteExecutionServer = {
 };
 
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\compile.sqf";
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
 
 BIS_Effects_Burn = {};
 dayz_disconnectPlayers = [];
