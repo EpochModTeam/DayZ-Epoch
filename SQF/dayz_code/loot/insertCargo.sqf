@@ -11,24 +11,23 @@ Author:
 	Foxy
 */
 
-#include "\z\addons\dayz_code\util\debug.hpp"
 #include "Loot.hpp"
 
+//Maximum number of magazines spawned along with weapons
+#define MAX_WEAPON_MAGAZINES 2
+
+private ["_container","_group","_count","_type","_item","_magazines"];
+
+_container = _this select 0;
+_group = _this select 1;
+_count = _this select 2;
+
 {
-	switch (_x select 0) do
-	{
-		case Loot_WEAPON:
-		{
-			(_this select 0) addWeaponCargoGlobal [_x select 1, 1];
-			
-			Debug_Assert(typeName (_x select 1) == typeName "" && { (_x select 1) != "" });
-			//Debug_Log(String_Format2("DEBUG: Loot_Insert Weapon: %1 Vehicle: %2", _x select 1, _this select 0));
-		};
-		
-		case Loot_MAGAZINE:
-		{
-			private "_item";
-			_item = _x select 1;
+	_type = _x select 0;
+	_item = _x select 1;
+	
+	call {
+		if (_type == Loot_MAGAZINE) exitWith {
 			if (dayz_classicBloodBagSystem && _item in dayz_typedBags) then {
 				if (_item in ["bloodTester","bloodBagAPOS","bloodBagABPOS"]) then { // reduce ItemBloodBag output slightly since typed bags spawn in bulk
 					_item = ["ItemBandage","ItemPainkiller","ItemMorphine","ItemHeatPack","ItemAntibacterialWipe"] call BIS_fnc_selectRandom;
@@ -36,13 +35,22 @@ Author:
 					_item = "ItemBloodbag";
 				};
 			};
-			(_this select 0) addMagazineCargoGlobal [_item, 1];
+			_container addMagazineCargoGlobal [_item, 1];
 		};
 		
-		case Loot_BACKPACK:
-		{
-			(_this select 0) addBackpackCargoGlobal [_x select 1, 1];
+		if (_type == Loot_WEAPON) exitWith {
+			_container addWeaponCargoGlobal [_item, 1];
+			
+			_magazines = getArray (configFile >> "CfgWeapons" >> _item >> "magazines");
+		
+			if (count _magazines > 0 && {getNumber (configFile >> "CfgWeapons" >> _item >> "melee") != 1}) then
+			{
+				_container addMagazineCargoGlobal [_magazines select 0, floor random (MAX_WEAPON_MAGAZINES + 1)];
+			};
+		};
+		
+		if (_type == Loot_BACKPACK) exitWith {
+			_container addBackpackCargoGlobal [_item, 1];
 		};
 	};
-} count Loot_Select(_this select 1, _this select 2);
-//foreach ([_this select 1, _this select 2] call loot_select);
+} count Loot_Select(_group,_count);
