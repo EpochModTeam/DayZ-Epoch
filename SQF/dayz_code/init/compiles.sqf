@@ -741,6 +741,7 @@ fn_shuffleArray = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile
 zombie_initialize = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_initialize.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\traps\init.sqf";
 //call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\achievements_init.sqf"; //start achievements_init
+fnc_fieldOfView = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_fieldOfView.sqf";
 
 if (dayz_townGenerator) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\psrnd.sqf"; // pseudo random for plantSpanwer
