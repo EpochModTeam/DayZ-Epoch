@@ -13,7 +13,6 @@ call compile preprocessFileLineNumbers (_base+"sched_playerActions.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_medical.sqf");
 //call compile preprocessFileLineNumbers (_base+"sched_achievement.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_gui.sqf");
-call compile preprocessFileLineNumbers (_base+"sched_buildingBubble.sqf");
 //call compile preprocessFileLineNumbers (_base+"sched_humanityChange.sqf");
 
 if (dayz_antihack == 1) then {
