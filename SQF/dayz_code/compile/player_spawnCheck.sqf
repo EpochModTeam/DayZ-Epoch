@@ -22,9 +22,6 @@ dayz_maxControlledZombies = dayz_maxLocalZombies;  // This variable is also used
 // Current loot spawns
 dayz_currentWeaponHolders = count (_position nearObjects ["ReammoBox",_radius]);
 
-//diag_log text format ["CURRENT LOOT SPAWNS %1",dayz_currentWeaponHolders];
-//diag_log text format ["CURRENT ZEDS %1",dayz_CurrentNearByZombies];
-
 // In vehicle check
 _vehicle = vehicle player;
 _inVehicle = (_vehicle != player);
