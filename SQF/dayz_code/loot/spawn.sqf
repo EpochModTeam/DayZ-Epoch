@@ -136,7 +136,7 @@ call {
 		
 		//Number of items to spawn
 		_spawnCount = (_lootInfo select 3) + floor random ((_lootInfo select 4) - (_lootInfo select 3) + 1);
-		Loot_InsertCargo(_vehicle, _item, _spawnCount);
+		Loot_InsertCargo(_vehicle, _lootInfo select 2, _spawnCount);
 		_vehicle setDir random 360;
 		
 		if (_isWater) then {
