@@ -49,7 +49,7 @@ if (_method in ["explosion","melee","shot","shothead","shotheavy","suicide"] && 
 		if (_sourceWeapon == "") then {_sourceWeapon = "unknown weapon";};
 		_message = ["killed",_playerName,_sourceName,_sourceWeapon,_distance];
 		// Store death messages to allow viewing at message board in trader citys.
-		PlayerDeaths set [count PlayerDeaths,[_playerName,_sourceName,_sourceWeapon,_distance,ServerCurrentTime]];
+		PlayerDeaths set [count PlayerDeaths,[_playerName,_sourceName,_sourceWeapon,_distance,[(ServerCurrentTime select 3), (ServerCurrentTime select 4)]]];
 	};
 } else {
 	// No source name, distance or weapon needed: "%1 died from %2" str_death_%1 (see stringtable)
