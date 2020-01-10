@@ -27,8 +27,7 @@ epoch_eventIsAny = {
 
 sched_event_init = {
 	diag_log("EPOCH EVENTS INIT");
-	_lastTime = "";
-	_lastTime
+	""
 };
 
 sched_event = {
@@ -44,7 +43,7 @@ sched_event = {
 		if (_lastTime != _datestr) then {
 			
 			// internal timestamp
-			ServerCurrentTime = [(_date select 3), (_date select 4)];
+			ServerCurrentTime = _date;
 
 			// Once a minute.
 			_lastTime = _datestr;
@@ -52,20 +51,20 @@ sched_event = {
 			//diag_log ("EVENTS: Local Time is: " + _datestr);
 			if (count EpochEvents == 0) exitWith {};
 			{
-				if (typeName _x == "ARRAY") then {
 					
-					// Run event at server start when minutes are set to -1
-					if ((_x select 4) == -1) then {
+				// Run event at server start when minutes are set to -1
+				if ((_x select 4) == -1) then {
+					diag_log ("RUNNING EVENT: " + (_x select 5) + " on " + _datestr);
+					_handle = [] execVM "\z\addons\dayz_server\modules\" + (_x select 5) + ".sqf";
+					
+					// Remove event from array so it doesn't run again.
+					_lastIndex = (count EpochEvents) - 1;
+					if (_lastIndex != _forEachIndex) then {EpochEvents set [_forEachIndex, EpochEvents select _lastIndex];};
+					EpochEvents resize _lastIndex;
+				} else {
+					if([[(_x select 0),(_x select 1),(_x select 2),(_x select 3),(_x select 4)],_date] call epoch_eventIsAny) then {
 						diag_log ("RUNNING EVENT: " + (_x select 5) + " on " + _datestr);
 						_handle = [] execVM "\z\addons\dayz_server\modules\" + (_x select 5) + ".sqf";
-						
-						// Set the current position to something other than an array so the event doesn't run again.
-						EpochEvents set [_forEachIndex, -1];
-					} else {
-						if([[(_x select 0),(_x select 1),(_x select 2),(_x select 3),(_x select 4)],_date] call epoch_eventIsAny) then {
-							diag_log ("RUNNING EVENT: " + (_x select 5) + " on " + _datestr);
-							_handle = [] execVM "\z\addons\dayz_server\modules\" + (_x select 5) + ".sqf";
-						};
 					};
 				};
 			} forEach EpochEvents;
