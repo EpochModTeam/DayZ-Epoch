@@ -1,9 +1,9 @@
 ZombiePolice[] =
 {
-	{Loot_GROUP,		2,		Consumable},
-	{Loot_GROUP,		3,		AmmoCivilian},
+	{Loot_GROUP,		6,		Consumable},
+	{Loot_GROUP,		4,		AmmoCivilian},
 	{Loot_MAGAZINE,		2,		ItemDocument},
-	{Loot_MAGAZINE,		0.5,		ItemHotwireKit},
+	{Loot_MAGAZINE,		1,		ItemHotwireKit},
 	{Loot_MAGAZINE,		1,		ItemComboLock},
 	{Loot_MAGAZINE,		3,		HandRoadFlare}
 };
