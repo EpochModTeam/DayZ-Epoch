@@ -44,7 +44,6 @@ if (count _list == 0) then {
 	 [ 4,		2.38,	sched_bloodStains, sched_bloodStains_init ],
 	 [ 60, 	   10.44,	sched_animals ],
 	 [ 10, 	    5.44,	sched_medical_slow ],
-	 [ 15, 	   35.44,	sched_buildingBubble ],
 	 [ 60, 	   20.44,	sched_newDay ],
 	 [ 1, 		0.51,	sched_buriedZeds, sched_buriedZeds_init ]
 	];
