@@ -16,25 +16,6 @@ _serverVehicleCounter = [];
 _tempMaint = DayZ_WoodenFence + DayZ_WoodenGates;
 diag_log "HIVE: Starting";
 
-//Set the Time
-_key = "CHILD:307:";
-_result = _key call server_hiveReadWrite;
-_outcome = _result select 0;
-if (_outcome == "PASS") then {
-	_date = _result select 1;
-	_year = _date select 0;
-	_month = _date select 1;
-	_day = _date select 2;
-	_hour = _date select 3;
-	_minute = _date select 4;
-
-	if (dayz_ForcefullmoonNights) then {_date = [2012,8,2,_hour,_minute];};
-	diag_log ["TIME SYNC: Local Time set to:", _date, "Fullmoon:",dayz_ForcefullmoonNights,"Date given by HiveExt.dll:",_result select 1];
-	setDate _date;
-	dayzSetDate = _date;
-	publicVariable "dayzSetDate";
-};
-
 //Stream in objects
 /* STREAM OBJECTS */
 //Send the key
