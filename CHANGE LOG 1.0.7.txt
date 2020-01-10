@@ -57,7 +57,7 @@
 [UPDATED] Many unused trader cites got moved into a new folder called 'Archive'. Those files will no longer be updated. (6699d8d7) @AirwavesMan
 [UPDATED] All vehicle names got updated and have a localization now. (e36e3cc4) @AirwavesMan
 [UPDATED] The gunner optics angle of the BRDM-2 HQ got adjusted so it has a better usage now. (9ab576fa) @AirwavesMan
-[UPDATED] Moved FPS logging and server event spawner to the server sheduler (0a264b9) @worldwidesorrow
+[UPDATED] Moved FPS logging and server event spawner to the server scheduler (0a264b9) @worldwidesorrow
 [UPDATED] Vanilla events have been adjusted and moved to the server modules folder. The events are now spawned by the scheduler. (0a264b9) @worldwidesorrow
 [UPDATED] Trader files got rebuild. Trader Cites got overhauled (92700e8a) @AirwavesMan
 [UPDATED] Server side security added for higher risk PVDZ_send usage. (40dcf6f) @worldwidesorrow

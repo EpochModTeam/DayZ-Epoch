@@ -1,3 +1,5 @@
+// Loot is inserted into tents so no "weaponholder_" type tools here.
+
 InfectedCampType[] =
 {
 	{Loot_NONE,			1,		Camp1_Small},
@@ -29,20 +31,19 @@ InfectedCampWreck[] =
 InfectedCamp[] =
 {
 	//Tools
-	{Loot_WEAPON,		7,		ItemWatch},
-	{Loot_WEAPON,		3,		ItemCompass},
-	{Loot_WEAPON,		7,		ItemFlashlight},
-	{Loot_WEAPON,		5,		ItemKnife},
-	{Loot_WEAPON,		4,		Binocular},
-	{Loot_WEAPON,		8,		ItemCrowbar},
+	{Loot_WEAPON,		1,		ItemWatch},
+	{Loot_WEAPON,		1,		ItemCompass},
+	{Loot_WEAPON,		1,		ItemFlashlight},
+	{Loot_WEAPON,		1,		ItemKnife},
+	{Loot_WEAPON,		1,		Binocular},
+	{Loot_WEAPON,		1,		ItemCrowbar},
 	
 	//Pistols
-	{Loot_GROUP,		10,		pistols},
+	{Loot_GROUP,		5,		pistols},
 
-	//Rifles
-	{Loot_GROUP,		6,		assaultrifles},
-	{Loot_GROUP,		8,		farmweapons},
-	{Loot_WEAPON,		2,		Mosin_DZ},
+	//Weapons
+	{Loot_GROUP,		10,		shotgunsingleshot},
+	{Loot_GROUP,		1,		Chainsaws},
 	{Loot_WEAPON,		4,		Crossbow_DZ},
 	{Loot_WEAPON,		5,		MeleeBaseBallBat},
 	
@@ -56,9 +57,10 @@ InfectedCamp[] =
 	{Loot_MAGAZINE,		2,		ItemBookBible},
 	
 	//Groups
-	{Loot_GROUP,		30,		MedicalLow},
-	{Loot_GROUP,		20,		MedicalHigh},
+	{Loot_GROUP,		15,		MedicalLow},
+	{Loot_GROUP,		10,		MedicalHigh},
+	{Loot_GROUP,		10,		AmmoCivilian},
 	{Loot_GROUP,		10,		Parts},
-	{Loot_GROUP,		100,	Consumable},
+	{Loot_GROUP,		30,		Consumable},
 	{Loot_WEAPON,		3,		ItemMatchbox}
 };
