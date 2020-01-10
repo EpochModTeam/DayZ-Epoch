@@ -92,6 +92,7 @@ if (isNil "keyboard_keys") then {
 		4 call dz_fn_switchWeapon;
         _handled = true;
     };
+	/*
     _throwable = { // select next non empty throwable weapon
         if (vehicle player == player) then {
             _ammo_throwable = [];
@@ -125,6 +126,7 @@ if (isNil "keyboard_keys") then {
             };
         };
     };
+	*/
 	_surrender = {
 		call player_surrender;
 		_handled = true;
@@ -215,8 +217,6 @@ if (isNil "keyboard_keys") then {
         };
         dayz_dodge = true;
     };
-
-    _build_camOnOff = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_buildCamera.sqf";
 
     _build_str8OnOff = {
 		r_interrupt = true;
@@ -320,7 +320,6 @@ if (isNil "keyboard_keys") then {
     //[[DIK_F4, DIK_RMENU, DIK_LMENU,DIK_LSHIFT,DIK_RSHIFT,DIK_ESCAPE], _forcesave2] call _addArray;
     [actionKeys "LeanLeft", _build_left ] call _addArray;
     [actionKeys "LeanRight", _build_right ] call _addArray;
-    [actionKeys "PersonView", _build_camOnOff ] call _addArray; // Camera Mode
     [actionKeys "GetOver", _build_str8OnOff ] call _addArray; // V
 //  [[DIK_NUMPAD7], _rotate_left] call _addArray;
 //  [[DIK_NUMPAD9], _rotate_right] call _addArray;
