@@ -8199,6 +8199,16 @@
 			<Russian>Военный внедорожник (Лесной камуфляж)</Russian>
 			<German>Militär Offroad (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND">
+			<English>Military Offroad Ambulance (Woodland)</English>
+			<Russian>Военный внедорожник Скорая (Лесной камуфляж)</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT">
+			<English>Military Offroad Ambulance (Desert)</English>
+			<Russian>Военный внедорожник Скорая (Пустынный)</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL">
 			<English>Military Offroad (AGS-30)</English>
 			<Russian>Военный внедорожник (AGS-30)</Russian>
@@ -8846,7 +8856,7 @@
 			<Russian>Средний схрон</Russian>
 			<Spanish>Escondite Mediano</Spanish>
 			<Czech>Skrýš (střední)</Czech>
-			<German>mittlere Lagergrube</German>
+			<German>Mittlere Lagergrube</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED1">
 			<English>Stash Medium +</English>
@@ -8854,7 +8864,7 @@
 			<Russian>Средний схрон +</Russian>
 			<Spanish>Escondite Mediano +</Spanish>
 			<Czech>Skrýš (střední) +</Czech>
-			<German>mittlere Lagergrube +</German>
+			<German>Mittlere Lagergrube +</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED2">
 			<English>Stash Medium ++</English>
@@ -8862,7 +8872,7 @@
 			<Russian>Средний схрон ++</Russian>
 			<Spanish>Escondite Mediano ++</Spanish>
 			<Czech>Skrýš (střední) ++</Czech>
-			<German>mittlere Lagergrube ++</German>
+			<German>Mittlere Lagergrube ++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED3">
 			<English>Stash Medium +++</English>
@@ -8870,7 +8880,7 @@
 			<Russian>Средний схрон +++</Russian>
 			<Spanish>Escondite Mediano +++</Spanish>
 			<Czech>Skrýš (střední) +++</Czech>
-			<German>mittlere Lagergrube +++</German>
+			<German>Mittlere Lagergrube +++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_MED4">
 			<English>Stash Medium ++++</English>
@@ -8878,7 +8888,7 @@
 			<Russian>Средний схрон ++++</Russian>
 			<Spanish>Escondite Mediano ++++</Spanish>
 			<Czech>Skrýš (střední) ++++</Czech>
-			<German>mittlere Lagergrube ++++</German>
+			<German>Mittlere Lagergrube ++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DOME_TENT">
 			<English>Dome Tent</English>
@@ -15319,7 +15329,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_NICEWOODSHED_DESC">
 			<English>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</English>
-			<German>Holzschuppen: Ein selbstbau-Objekt mit viel Platz für Material, Waffen und Rucksäcke. Es hat sogar eine Tür.</German>
+			<German>Holzschuppen: Ein Selbstbau-Objekt mit viel Platz für Material, Waffen und Rucksäcke. Es hat sogar eine Tür.</German>
 			<Russian>Деревянный сарай: Постройка с дверью, в которой можно хранить много предметов/оружия/рюкзаков.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODSHACK">
@@ -18546,7 +18556,22 @@
 			<Russian>Чистые раны</Russian>
 			<German>Wunden säubern</German>
 		</Key>		
-		
+		<Key ID="STR_VEH_NAME_STASH_SMALL_DESC">
+			<English>A small stash on the ground to store some items.</English>
+			<German>Ein kleines Versteck in der Erde, um Gegenstände zu verstauen.</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_STASH_MEDIUM_DESC">
+			<English>A medium stash on the ground to store some items.</English>
+			<German>Ein mittelgroßes Versteck in der Erde, um Gegenstände zu verstauen.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_CRAFT_SMALL_STASH">
+			<English>Craft Small Stash</English>
+			<German>Kleine Lagergrube herstellen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CRAFT_MEDIUM_STASH">
+			<English>Craft Medium Stash</English>
+			<German>Mittlere Lagergrube herstellen</German>
+		</Key>			
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>
