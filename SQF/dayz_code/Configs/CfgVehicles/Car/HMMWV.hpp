@@ -303,10 +303,10 @@ class HMMWV_Base: Car
 			blinking = 1;
 		};
 	};
+	class AnimationSources;
 };
 
-class HMMWV_DZ: HMMWV_Base {
-	
+class HMMWV_DZ: HMMWV_Base {	
 	accuracy = 0.32;
 	displayname = $STR_VEH_NAME_HMMWV;
 	displaynameshort = $STR_VEH_NAME_HMMWV;
@@ -316,15 +316,15 @@ class HMMWV_DZ: HMMWV_Base {
 	icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
 	mapsize = 5;
 	model = "ca\wheeled_E\HMMWV\HMMWV";
-	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
+	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";	
 	scope = public;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	transportMaxWeapons = 10;
-	transportMaxMagazines = 50;
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
 	transportmaxbackpacks = 4;
 	class Turrets {};
 	class Damage {
@@ -339,8 +339,8 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_Base
 	side = 1;
 	scope = public;
 	transportSoldier = 4;
-	transportMaxWeapons = 4;
-	transportMaxMagazines = 120;
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
 	transportmaxbackpacks = 4;
 	model = "\ca\wheeled_e\HMMWV\M998A2_sov";
 	displayname = $STR_VEH_NAME_HMMWV_SOV;
@@ -541,7 +541,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_Base
 		};
 		class SideTurret: MainTurret
 		{
-			gunnerName = "front gunner";
+			gunnerName = "$STR_POSITION_FRONTGUNNER";
 			weapons[] = {"M240_veh"};
 			magazines[] = {"100Rnd_762x51_M240"};
 			soundServo[] = {"\ca\wheeled\Data\Sound\servo3",0.0001,1.1};
@@ -597,194 +597,9 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_Base
 	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_regular_1_co.paa"};
 };
 
-class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_Base
+class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_M998A2_SOV_DES_EP1_DZ
 {
-	expansion = 1;
-	side = 1;
 	scope = public;
-	transportSoldier = 4;
-	transportMaxWeapons = 4;
-	transportMaxMagazines = 120;
-	transportmaxbackpacks = 4;
-	model = "\ca\wheeled_e\HMMWV\M998A2_sov";
-	displayname = $STR_VEH_NAME_HMMWV_SOV;
-	armor = 40;
-	damageResistance = 0.00581;
-	threat[] = {1,0.3,0.3};
-	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_sov_CA.paa";
-	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_sov_CA.paa";
-	driverAction = "HMMWV_Driver_EP1";
-	cargoAction[] = {"HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1","HMMWV_Cargo03_EP1","HMMWV_Cargo04_EP1"};
-	outsideSoundFilter = 0;
-	insideSoundCoef = 1;
-	soundGear[] = {"",5.62341e-005,1};
-	soundGetIn[] = {"ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\get_in2",0.562341,1};
-	soundGetOut[] = {"ca\SOUNDS\Vehicles\Wheeled\HMMWV\int\get_in2",0.562341,1,20};
-	soundEngineOnInt[] = {"ca\sounds\Vehicles\Wheeled\HMMWV\int\int-engine_start1",0.177828,1};
-	soundEngineOnExt[] = {"ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\engine_ON1",0.177828,1,100};
-	soundEngineOffInt[] = {"ca\sounds\vehicles\Wheeled\HMMWV\int\int-engine_off2",0.177828,1};
-	soundEngineOffExt[] = {"ca\sounds\vehicles\Wheeled\HMMWV\ext\engine_OFF2",0.177828,1,100};
-	buildCrash0[] = {"Ca\sounds\Vehicles\Crash\crash_building_01",0.707946,1,200};
-	buildCrash1[] = {"Ca\sounds\Vehicles\Crash\crash_building_02",0.707946,1,200};
-	buildCrash2[] = {"Ca\sounds\Vehicles\Crash\crash_building_03",0.707946,1,200};
-	buildCrash3[] = {"Ca\sounds\Vehicles\Crash\crash_building_04",0.707946,1,200};
-	soundBuildingCrash[] = {"buildCrash0",0.25,"buildCrash1",0.25,"buildCrash2",0.25,"buildCrash3",0.25};
-	WoodCrash0[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_01",0.707946,1,200};
-	WoodCrash1[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_02",0.707946,1,200};
-	WoodCrash2[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_03",0.707946,1,200};
-	WoodCrash3[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_04",0.707946,1,200};
-	WoodCrash4[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_05",0.707946,1,200};
-	WoodCrash5[] = {"Ca\sounds\Vehicles\Crash\crash_mix_wood_06",0.707946,1,200};
-	soundWoodCrash[] = {"woodCrash0",0.166,"woodCrash1",0.166,"woodCrash2",0.166,"woodCrash3",0.166,"woodCrash4",0.166,"woodCrash5",0.166};
-	ArmorCrash0[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_01",0.707946,1,200};
-	ArmorCrash1[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_02",0.707946,1,200};
-	ArmorCrash2[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_03",0.707946,1,200};
-	ArmorCrash3[] = {"Ca\sounds\Vehicles\Crash\crash_vehicle_04",0.707946,1,200};
-	soundArmorCrash[] = {"ArmorCrash0",0.25,"ArmorCrash1",0.25,"ArmorCrash2",0.25,"ArmorCrash3",0.25};
-	class SoundEvents
-	{
-		class AccelerationIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\int\int-acceleration1",0.1,1};
-			limit = "0.8";
-			expression = "(engineOn*(1-camPos))*gmeterZ";
-		};
-		class AccelerationOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\turspecial1",0.1,1,200};
-			limit = "0.8";
-			expression = "(engineOn*camPos)*gmeterZ";
-		};
-	};
-	class Sounds
-	{
-		class Engine
-		{
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1,300};
-			frequency = "(randomizer*0.05+0.95)*rpm";
-			volume = "camPos*engineOn*((rpm factor[0.15, 0.4]) min (rpm factor[0.7, 0.5]))";
-		};
-		class EngineHighOut
-		{
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1,400};
-			frequency = "(randomizer*0.05+0.95)*rpm";
-			volume = "camPos*engineOn*(rpm factor[0.5, 0.8])";
-		};
-		class IdleOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\idle_2",0.562341,1,100};
-			frequency = "1";
-			volume = "engineOn*camPos*(rpm factor[0.3, 0])";
-		};
-		class TiresRockOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-rock2",0.316228,1,30};
-			frequency = "1";
-			volume = "camPos*rock*(speed factor[2, 20])";
-		};
-		class TiresSandOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-sand2",0.316228,1,30};
-			frequency = "1";
-			volume = "camPos*sand*(speed factor[2, 20])";
-		};
-		class TiresGrassOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-grass2",0.316228,1,30};
-			frequency = "1";
-			volume = "camPos*grass*(speed factor[2, 20])";
-		};
-		class TiresMudOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-mud2",0.316228,1,30};
-			frequency = "1";
-			volume = "camPos*mud*(speed factor[2, 20])";
-		};
-		class TiresGravelOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-gravel2",0.316228,1,30};
-			frequency = "1";
-			volume = "camPos*gravel*(speed factor[2, 20])";
-		};
-		class TiresAsphaltOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\ext\ext-tires-asphalt3",0.316228,1,30};
-			frequency = "1";
-			volume = "camPos*asphalt*(speed factor[2, 20])";
-		};
-		class NoiseOut
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\ext\noise2",0.177828,1,30};
-			frequency = "1";
-			volume = "camPos*(damper0 max 0.03)*(speed factor[0, 8])";
-		};
-		class EngineLowIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_Low_1b",1,1};
-			frequency = "(randomizer*0.05+0.95)*rpm";
-			volume = "(1-camPos)*engineOn*((rpm factor[0.2, 0.4]) min (rpm factor[0.8, 0.6]))";
-		};
-		class EngineHighIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\Engine_Loop_High_1b",1,1};
-			frequency = "(randomizer*0.05+0.95)*rpm";
-			volume = "(1-camPos)*engineOn*(rpm factor[0.5, 1.0])";
-		};
-		class IdleIn
-		{
-			sound[] = {"\ca\sounds\Vehicles\Wheeled\HMMWV\ext\idle_2",0.316228,1};
-			frequency = "1";
-			volume = "engineOn*(rpm factor[0.4, 0])*(1-camPos)";
-		};
-		class TiresRockIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-rock2",1,1};
-			frequency = "1";
-			volume = "(1-camPos)*rock*(speed factor[2, 20])";
-		};
-		class TiresSandIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-sand2",1,1};
-			frequency = "1";
-			volume = "(1-camPos)*sand*(speed factor[2, 20])";
-		};
-		class TiresGrassIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-grass2",1,1};
-			frequency = "1";
-			volume = "(1-camPos)*grass*(speed factor[2, 20])";
-		};
-		class TiresMudIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-mud2",1,1};
-			frequency = "1";
-			volume = "(1-camPos)*mud*(speed factor[2, 20])";
-		};
-		class TiresGravelIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-gravel2",1,1};
-			frequency = "1";
-			volume = "(1-camPos)*gravel*(speed factor[2, 20])";
-		};
-		class TiresAsphaltIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Tires\int\int-tires-asphalt3",1,1};
-			frequency = "1";
-			volume = "(1-camPos)*asphalt*(speed factor[2, 20])";
-		};
-		class NoiseIn
-		{
-			sound[] = {"\ca\SOUNDS\Vehicles\Wheeled\Noises\int\noise2",0.446684,1};
-			frequency = "1";
-			volume = "(damper0 max 0.03)*(speed factor[0, 8])*(1-camPos)";
-		};
-		class Movement
-		{
-			sound = "soundEnviron";
-			frequency = "1";
-			volume = "0";
-		};
-	};
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -805,7 +620,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_Base
 		};
 		class SideTurret: MainTurret
 		{
-			gunnerName = "front gunner";
+			gunnerName = "$STR_POSITION_FRONTGUNNER";
 			weapons[] = {"M240_veh"};
 			magazines[] = {};
 			soundServo[] = {"\ca\wheeled\Data\Sound\servo3",0.0001,1.1};
@@ -829,47 +644,17 @@ class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_Base
 			LODTurnedIn = 1200;
 		};
 	};
-	class AnimationSources: AnimationSources
-	{
-		class ReloadAnim
-		{
-			source = "reload";
-			weapon = "M240_veh";
-		};
-		class ReloadMagazine
-		{
-			source = "reloadmagazine";
-			weapon = "M240_veh";
-		};
-		class Revolving
-		{
-			source = "revolving";
-			weapon = "M240_veh";
-		};
-	};
-	faction = "BIS_US";
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	class Damage
-	{
-		tex[] = {};
-		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_glass.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_glass_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_glass_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
-	};
-	HiddenSelections[] = {"camo","camo1","camo2"};
-	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_regular_1_co.paa"};
 };
 
-class HMMWV_M1151_M2_DES_Base_EP1_DZ: HMMWV_Base
+class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_Base 
 {
 	expansion = 1;
 	side = 1;
-	scope = private;
+	scope = public;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
 	displayname = $STR_VEH_NAME_HMMWV_GPK;
-	transportMaxWeapons = 4;
-	transportMaxMagazines = 120;
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
 	transportmaxbackpacks = 4;
 	threat[] = {1,0.6,0.6};
 	transportSoldier = 3;
@@ -938,82 +723,135 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZ: HMMWV_Base
 	class Damage
 	{
 		tex[] = {};
-		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_gpk.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
-	};
+		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
+	};	
 	HiddenSelections[] = {"camo","camo1","camo2","camo3"};
 	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_regular_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_gpk_tower_co.paa"};
 };
-class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_M1151_M2_DES_Base_EP1_DZ
-{
-	scope = public;
-	side = 1;
-	faction = "BIS_CZ";
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	class Damage
-	{
-		tex[] = {};
-		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
-	};
-};
 
-// AMMO LESS
-class HMMWV_M1151_M2_DES_Base_EP1_DZE: HMMWV_Base
-{
-	expansion = 1;
-	side = 1;
-	scope = private;
-	armor = 80;
-	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
-	displayname = $STR_VEH_NAME_HMMWV_GPK;
-	transportMaxWeapons = 4;
-	transportMaxMagazines = 120;
-	transportmaxbackpacks = 4;
-	threat[] = {1,0.6,0.6};
-	transportSoldier = 3;
-	damageResistance = 0.03099;
-	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_m2gpk_CA.paa";
-	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_m2gpk_CA.paa";
-	class Library
-	{
-		libTextDesc = "The High Mobility Multipurpose Wheeled Vehicle (HMMWV) replaced the M151 �Willys� jeep in US Army service. The HMMWV was designed to fill myriad roles, including that of light tactical commander's vehicle, special purpose shelter carrier, and mobile weapons platform. The HMMWV is equipped with a high-performance diesel engine and four-wheel drive, making it capable of negotiating very difficult terrain. <br/>This one is equipped with an M2 heavy machine gun which is effective against infantry or unarmored vehicles. It is also supplemented with the GPK (Gunner Protection Kit).";
-	};
-	driverAction = "HMMWV_Driver_EP1";
-	cargoAction[] = {"HMMWV_Cargo_EP1","HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1"};
-	faction = "BIS_US";
-	crew = "";
-	typicalCargo[] = {};
+class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
+	scope = public;
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
 		{
-			body = "mainTurret";
-			gun = "mainGun";
-			weapons[] = {"M2"};
 			magazines[] = {};
-			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.01,1,10};
-			minElev = -25;
-			maxElev = 60;
-			gunnerAction = "HMMWV_Gunner_EP1";
-			viewGunnerInExternal = 1;
+		};	
+	};
+};
+
+class HMMWV_Armored_DZ: HMMWV_base {
+	displayname = $STR_VEH_NAME_HMMWV_ARMORED;
+	model = "\ca\wheeled2\HMMWV\M1114_Armored\M1114_Armored.p3d";
+	accuracy = 0.32;
+	picture = "\Ca\wheeled\data\ico\HMMWVmk19_CA.paa";
+	Icon = "\Ca\wheeled\data\map_ico\icomap_hmwvmk19_CA.paa";	
+	scope = public;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;
+	armor = 80;
+	damageResistance = 0.03099;
+	mapSize = 5;
+	class AnimationSources: AnimationSources
+	{
+		class ReloadAnim
+		{
+			source = "reload";
+			weapon = "M240_veh";
+		};
+		class ReloadMagazine
+		{
+			source = "reloadmagazine";
+			weapon = "M240_veh";
+		};
+		class Revolving
+		{
+			source = "revolving";
+			weapon = "M240_veh";
+		};
+	};
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.2;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.2;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.2;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.2;
+		};
+	};
+	class Damage
+	{
+		tex[] = {};
+		mat[] = {"ca\wheeled\hmmwv\data\hmmwv_body.rvmat","ca\wheeled\hmmwv\data\hmmwv_body_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_body_Full_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_details.rvmat","ca\wheeled\hmmwv\data\hmmwv_details_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_details_Full_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_parts_1.rvmat","ca\wheeled\hmmwv\data\hmmwv_parts_1_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_parts_1_Full_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat","ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat","ca\wheeled\data\hmmwv_clocks_destruct.rvmat","ca\weapons\data\m240.rvmat","ca\weapons\data\m240.rvmat","ca\weapons\data\m240_destruct.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_in.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_in_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_in_Half_D.rvmat"};
+	};
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa","\ca\wheeled\hmmwv\data\hmmwv_parts_1_ca.paa"};
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			weapons[] = {"M240_veh"};
+			magazines[] = {"100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240"};
+			soundServo[] = {"\ca\wheeled\Data\Sound\servo3",0.0001,1.1};
+			gunnerAction = "HMMWV_Gunner04";
 			castGunnerShadow = 1;
-			stabilizedInAxes = "StabilizedInAxesBoth";
-			class ViewOptics
+			class HitPoints: HitPoints
 			{
-				initAngleX = 0;
-				minAngleX = -30;
-				maxAngleX = 30;
-				initAngleY = 0;
-				minAngleY = -100;
-				maxAngleY = 100;
-				initFov = 0.455;
-				minFov = 0.25;
-				maxFov = 0.7;
+				class HitTurret
+				{
+					armor = 1;
+					material = -1;
+					name = "vez";
+					visual = "vez";
+					passThrough = 0.3;
+				};
 			};
 		};
 	};
+	class Library
+	{
+		libTextDesc = "$STR_LIB_HMMWV_Armored";
+	};
+};
+
+class HMMWV_Armored_DZE: HMMWV_Armored_DZ {
+	class Turrets: Turrets {		
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};
+};
+
+class HMMWV_M2_DZ: HMMWV_base {
+	displayname = $STR_VEH_NAME_HMMWV_M2;
+	scope = public;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;
+	armor = 40;
+	damageResistance = 0.00581;
+	class Turrets; // External class reference
+	class MainTurret; // External class reference	
+	accuracy = 0.32;
 	class AnimationSources: AnimationSources
 	{
 		class ReloadAnim
@@ -1032,73 +870,8 @@ class HMMWV_M1151_M2_DES_Base_EP1_DZE: HMMWV_Base
 			weapon = "M2";
 		};
 	};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	class Damage
-	{
-		tex[] = {};
-		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_gpk.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
-	};
-	HiddenSelections[] = {"camo","camo1","camo2","camo3"};
-	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_regular_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_gpk_tower_co.paa"};
-};
-
-class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_DES_Base_EP1_DZE
-{
-	scope = public;
-	side = 1;
-	faction = "BIS_CZ";
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	class Damage
-	{
-		tex[] = {};
-		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_gpk_tower_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
-	};
-};
-
-class HMMWV_Armored;
-class HMMWV_Armored_DZ: HMMWV_Armored {
-	displayname = $STR_VEH_NAME_HMMWV_ARMORED;
-	scope = public;
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	transportMaxWeapons = 4;
-	transportMaxMagazines = 120;
-	transportmaxbackpacks = 4;
-	armor = 80;
-	damageResistance = 0.03099;
-	class Turrets; // External class reference
-	class MainTurret; // External class reference	
-		
-};
-
-class HMMWV_Armored_DZE: HMMWV_Armored_DZ {
-	class Turrets: Turrets {		
-		class MainTurret: MainTurret {
-			magazines[] = {};
-		};
-	};
-};
-class HMMWV_M2;
-class HMMWV_M2_DZ: HMMWV_M2 {
-	displayname = $STR_VEH_NAME_HMMWV_M2;
-	scope = public;
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	transportMaxWeapons = 4;
-	transportMaxMagazines = 120;
-	transportmaxbackpacks = 4;
-	armor = 40;
-	damageResistance = 0.00581;
-	class Turrets; // External class reference
-	class MainTurret; // External class reference	
+	hiddenSelections[] = {"Camo1"};
+	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};	
 };
 
 class HMMWV_M2_DZE: HMMWV_M2_DZ {
@@ -1109,36 +882,87 @@ class HMMWV_M2_DZE: HMMWV_M2_DZ {
 	};
 };
 
-class HMMWV_M1035_DES_EP1 : HMMWV_base {
+class HMMWV_M1035_DES_EP1_DZE : HMMWV_base {
+	scope = public;
+	model = "\ca\wheeled_e\HMMWV\M1035_transport";
 	displayname = $STR_VEH_NAME_HMMWV_DES;
+	transportSoldier = 3;
+	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_transport_CA.paa";
+	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_transport_CA.paa";
+	class Turrets{};
+	class Library
+	{
+		libTextDesc = "$STR_EP1_LIB_HMMWV_M1035_DES";
+	};
+	driverAction = "HMMWV_Driver_EP1";
+	cargoAction[] = {"HMMWV_Cargo_EP1","HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1"};
 	crew = "";
 	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
+	threat[] = {0.0,0.0,0.0};
+	class TransportMagazines{};
+	class TransportWeapons{};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;	
+	class Damage
+	{
+		tex[] = {};
+		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\HMMWV_Canvas.rvmat","Ca\wheeled_E\HMMWV\data\HMMWV_Canvas_damage.rvmat","Ca\wheeled_E\HMMWV\data\HMMWV_Canvas_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_hood_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_parts_1_destruct.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_regular_1_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
+	};
+	HiddenSelections[] = {"camo","camo1","camo2","camo3"};
+	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_canvas_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_canvas_1_co.paa"};
 };
 
-class HMMWV_Ambulance : HMMWV_base {
+class HMMWV_Ambulance_DZE : HMMWV_base {
+	scope = public;
 	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE;
+	model = "\ca\wheeled2\HMMWV\M997A2_Ambulance\M997A2_Ambulance";
+	vehicleClass = "Support";
+	mapSize = 5;
+	transportSoldier = 5;
+	cargoAction[] = {"HMMWV_Cargo01","BMP2_Cargo04"};	
 	crew = "";
 	typicalCargo[] = {};
+	hasGunner = 0;
 	class TransportMagazines {};
 	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;	
+	class Turrets{};
+	class Damage
+	{
+		tex[] = {};
+		mat[] = {"ca\wheeled\hmmwv\data\hmmwv_body.rvmat","ca\wheeled\hmmwv\data\hmmwv_body_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_body_Full_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_details.rvmat","ca\wheeled\hmmwv\data\hmmwv_details_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_details_Full_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_parts_1.rvmat","ca\wheeled\hmmwv\data\hmmwv_parts_1_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_parts_1_Full_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat","ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat","ca\wheeled\data\hmmwv_clocks_destruct.rvmat","ca\wheeled2\hmmwv\M997A2_Ambulance\Data\M997A2_Ambulance_3.rvmat","ca\wheeled2\hmmwv\M997A2_Ambulance\Data\M997A2_Ambulance_3_Half_D.rvmat","ca\wheeled2\hmmwv\M997A2_Ambulance\Data\M997A2_Ambulance_3_Full_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_in.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_in_Half_D.rvmat","ca\wheeled\hmmwv\data\hmmwv_glass_in_Half_D.rvmat"};
+	};
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa","\ca\wheeled\hmmwv\data\hmmwv_parts_1_ca.paa"};
+	class Library
+	{
+		libTextDesc = "$STR_LIB_HMMWV_Ambulance";
+	};	
+	attendant = 0;
 };
 
-class HMMWV;
-class HMMWV_DES_EP1 : HMMWV {
+class HMMWV_DES_EP1_DZE : HMMWV_DZ {
 	displayname = $STR_VEH_NAME_HMMWV_DES;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
+	hiddenSelections[] = {"Camo1"};
+	hiddenselectionstextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa"};
 };
 
-class HMMWV_Ambulance_base;
-class HMMWV_Ambulance_CZ_DES_EP1 : HMMWV_Ambulance_base {
+
+class HMMWV_Ambulance_CZ_DES_EP1_DZE : HMMWV_Ambulance_DZE {
+	scope = public;
 	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE_DES;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenselectionstextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa","\ca\wheeled\hmmwv\data\hmmwv_parts_1_ca.paa"};
+	attendant = 0;
 };
