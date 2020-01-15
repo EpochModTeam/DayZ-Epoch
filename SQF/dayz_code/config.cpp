@@ -85,6 +85,7 @@ class CfgAddons
 				"usec_ch53",
 				"redryder",
 				"Anzio_20",
+				"nst",
 				"dayz_epoch_b",
 				"dayz_epoch_c",
 				"CfgVehicles"

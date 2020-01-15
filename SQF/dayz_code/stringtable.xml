@@ -18571,7 +18571,70 @@
 		<Key ID="STR_EPOCH_CRAFT_MEDIUM_STASH">
 			<English>Craft Medium Stash</English>
 			<German>Mittlere Lagergrube herstellen</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_EQUIP_SOLDER">
+			<English>Portable Solder</English>
+			<German>Tragbarer Lötkolben</German>
+		</Key>	
+		<Key ID="STR_EQUIP_SOLDER_DESC">
+			<English>Soldering tool used for repairing broken equipment and items.</English>
+			<German>Ein tragbarer Lötkolben, um beschädigte Gegenstände und Ausrüstung zu reparieren.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_BROKEN_RADIO">
+			<English>Broken Radio</English>
+			<German>Beschädigtes Funkgerät</German>
+		</Key>	
+		<Key ID="STR_EQUIP_BROKEN_RADIO_DESC">
+			<English>A damaged radio that probably can be repaired.</English>
+			<German>Ein beschädigtes Funkgerät, das möglicherweise repariert werden kann.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_BROKEN_NV">
+			<English>Broken Night Vision Goggles</English>
+			<German>Beschädigtes Nachtsichtgerät</German>
+		</Key>	
+		<Key ID="STR_EQUIP_BROKEN_NV_DESC">
+			<English>Damaged night vision goggles that probably can be repaired.</English>
+			<German>Ein beschädigtes Nachtsichtgerät, das möglicherweise repariert werden kann.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_BROKEN_GPS">
+			<English>Broken GPS</English>
+			<German>Beschädigtes GPS</German>
+		</Key>	
+		<Key ID="STR_EQUIP_BROKEN_GPS_DESC">
+			<English>Damaged GPS that probably can be repaired.</English>
+			<German>Ein beschädigtes GPS, das möglicherweise repariert werden kann.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_PILOT_MASK">
+			<English>Pilot Mask</English>
+			<German>Pilotenmaske</German>
+		</Key>	
+		<Key ID="STR_EQUIP_PILOT_MASK_DESC">
+			<English>A wearable pilot mask.</English>
+			<German>Eine tragbare Pilotenmaske.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_GAS_MASK1">
+			<English>Gas Mask 4A1</English>
+			<German>Gasmaske 4A1</German>
+		</Key>	
+		<Key ID="STR_EQUIP_GAS_MASK1_DESC">
+			<English>Gas Mask 4A1 used by civilians.</English>
+			<German>Gasmaske 4A1 für die Zivilbevölkerung.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_GAS_MASK2">
+			<English>Gas Mask S10 NBC</English>
+			<German>Gasmaske S10 NBC</German>
+		</Key>	
+		<Key ID="STR_EQUIP_GAS_MASK2_DESC">
+			<English>Gas Mask S10 NBC used by the military.</English>
+			<German>Gasmaske S10 NBC für das Militär.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_APSI">
+			<English>APSI</English>
+		</Key>	
+		<Key ID="STR_EQUIP_APSI_DESC">
+			<English>APSI (Anti PSI) device, which full purpose is yet unknown.</English>
+			<German>APSI (Anti PSI) Emitter, dessen vollständige Funktion noch unbekannt ist.</German>
+		</Key>		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>

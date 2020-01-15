@@ -280,6 +280,15 @@ class CfgWeapons
 	#include "Tools\Radio.hpp"
 	#include "Tools\ItemKeyKit.hpp"
 	
+	#include "Tools\APSI.hpp"
+	#include "Tools\Pilotmask.hpp"
+	#include "Tools\Gasmask1.hpp"
+	#include "Tools\Gasmask2.hpp"
+	#include "Tools\GPSBroken.hpp"
+	#include "Tools\NVGBroken.hpp"	
+	#include "Tools\RadioBroken.hpp"
+	#include "Tools\Solder.hpp"
+	
 	#include "Item\ItemKeys.hpp"
 	#include "Item\Documents.hpp"
 	

@@ -30,6 +30,7 @@ Included Custom Addons
 * USEC CH53 by Rocket - http://dayz.com
 * Anzio 20mm Rifle by WillRobinson - http://www.armaholic.com/page.php?id=30175
 * RedRyder BB Gun by WillRobinson - https://github.com/arma2WillRobinson/Red-Ryder
+* Namalsk Addons by SumrakDZN - https://github.com/SumrakDZN/DayZNamalsk
 
 --------------------------
 Included Custom Islands
