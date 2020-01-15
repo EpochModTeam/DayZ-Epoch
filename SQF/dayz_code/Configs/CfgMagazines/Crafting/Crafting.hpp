@@ -60,3 +60,6 @@
 //#include "equip_brick.hpp"
 
 //Need adding to loot table
+
+//Epoch 1.0.7
+#include "equip_paintbucket.hpp"

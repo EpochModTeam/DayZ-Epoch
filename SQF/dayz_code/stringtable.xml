@@ -18284,6 +18284,54 @@
 			<English>A silencer that can be attached to 7.62 calibre rifles.</English>
 			<German>Ein Schalldämpfer der an Kaliber 7.62 Gewehre angebracht werden kann.</German>
 		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_NAME">
+			<English>Paint bucket (generic)</English>
+			<German>Farbeimer (Generisch)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_DESC">
+			<English>A generic bucket of paint.</English>
+			<German>Ein generischer Farbeimer.</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_BLACK_NAME">
+			<English>Paint bucket (black)</English>
+			<German>Farbeimer (Schwarz)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_BLACK_DESC">
+			<English>A bucket of black paint.</English>
+			<German>Ein Farbeimer mit schwarzer Farbe.</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_WHITE_NAME">
+			<English>Paint bucket (white)</English>
+			<German>Farbeimer (Weiss)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_WHITE_DESC">
+			<English>A bucket of white paint.</English>
+			<German>Ein Farbeimer mit weisser Farbe.</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_BLUE_NAME">
+			<English>Paint bucket (blue)</English>
+			<German>Farbeimer (Blau)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_BLUE_DESC">
+			<English>A bucket of blue paint.</English>
+			<German>Ein Farbeimer mit blauer Farbe.</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_PAINT_GREEN_NAME">
+			<English>Paint bucket (green)</English>
+			<German>Farbeimer (Grün)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_GREEN_DESC">
+			<English>A bucket of green paint.</English>
+			<German>Ein Farbeimer mit grüner Farbe.</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_RED_NAME">
+			<English>Paint bucket (red)</English>
+			<German>Farbeimer (Rot)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_PAINT_RED_DESC">
+			<English>A bucket of red paint.</English>
+			<German>Ein Farbeimer mit roter Farbe.</German>
+		</Key>		
 		
 		<!--dayz mod crash site display names-->
 		<Key ID="STR_EPOCH_CRASHSITE1">
