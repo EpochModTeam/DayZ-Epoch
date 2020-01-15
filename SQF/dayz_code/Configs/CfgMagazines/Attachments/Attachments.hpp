@@ -25,3 +25,11 @@
 #include "Ghillie.hpp"
 
 #include "SA58RIS.hpp"
+
+#include "ANPVS4.hpp"
+#include "Laser.hpp"
+#include "NSPU.hpp"
+#include "NV.hpp"
+#include "TWS.hpp"
+#include "Sup762.hpp"
+#include "Sup_45.hpp"

@@ -18215,6 +18215,76 @@
 			<German>Wasserflasche PET mit 900ml abgekochtem Wasser.</German>
 		</Key>
 		
+		<!--new attachments-->
+		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_NAME">
+			<English>[A] ANPVS4 Scope</English>
+			<German>[A] ANPVS4 Visier</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_DESC">
+			<English>An ANPVS4 scope.</English>
+			<German>Zielfernrohr vom Typ ANPVS4.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_GHIL_DES_NAME">
+			<English>[A] Small camo net. (desert)</English>
+			<German>[A] Kl. Tarnnetz (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_GHIL_SNOW_NAME">
+			<English>[A] Small camo net. (snow)</English>
+			<German>[A] Kl. Tarnnetz (Schneetarn)</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_GHIL_URB_NAME">
+			<English>[A] Small camo net. (urban)</English>
+			<German>[A] Kl. Tarnnetz (Stadttarn)</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_LASER_NAME">
+			<English>[A] Laserpointer</English>
+			<German>[A] Laser Pointer</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_LASER_DESC">
+			<English>An attachable laserpointer.</English>
+			<German>Ein Laser Pointer der an Gewehren angebracht werden kann.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_NSPU_NAME">
+			<English>[A] NSPU scope</English>
+			<German>[A] NSPU Visier</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_NSPU_DESC">
+			<English>An NSPU scope.</English>
+			<German>Zielfernrohr vom Typ NSPU.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_NV_NAME">
+			<English>[A] NV scope</English>
+			<German>[A] NV Visier</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_NV_DESC">
+			<English>A generic Night vision scope.</English>
+			<German>Generisches Nachtsichvisier.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_TWS_NAME">
+			<English>[A] TWS scope</English>
+			<German>[A] TWS Visier</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_TWS_DESC">
+			<English>A TWS scope.</English>
+			<German>Zielfernrohr vom Typ TWS.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_45SUP_NAME">
+			<English>[A] Silencer .45</English>
+			<German>[A] Schalldämpfer .45</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_45SUP_DESC">
+			<English>A silencer that can be attached to .45 calibre pistols.</English>
+			<German>Ein Schalldämpfer der an Kaliber .45 Pistolen angebracht werden kann.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_762SUP_NAME">
+			<English>[A] Silencer (7.62)</English>
+			<German>[A] Schalldämpfer (7.62)</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_762SUP_DESC">
+			<English>A silencer that can be attached to 7.62 calibre rifles.</English>
+			<German>Ein Schalldämpfer der an Kaliber 7.62 Gewehre angebracht werden kann.</German>
+		</Key>
+		
 		<!--dayz mod crash site display names-->
 		<Key ID="STR_EPOCH_CRASHSITE1">
 			<English>Mi-8 Wreck (Military)</English>
