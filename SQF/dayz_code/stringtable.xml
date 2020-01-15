@@ -17247,6 +17247,25 @@
 			<English>Camo Sapper</English>
 			<German>Tarn Pionier</German>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_CAMOWINTER">
+			<English>Warm Clothes</English>
+			<German>Warme Kleiung</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SKINS_CAMOWINTERW">
+			<English>Warm Clothes (white)</English>
+			<German>Warme Kleiung (weiß)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SKINS_SNIPER1W">
+			<English>Winter Ghillie</English>
+			<German>Winter-Ghillie</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SKINS_NACSOLDIER">
+			<English>NAC Soldier</English>
+			<German>NAC-Soldat</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SKINS_TAMIKA">
+			<English>Tamika</English>
+		</Key>		
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>

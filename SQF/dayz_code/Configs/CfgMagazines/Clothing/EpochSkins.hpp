@@ -422,3 +422,28 @@ class Skin_FR_Sapper_DZ: SkinBase {
 	displayName = $STR_EPOCH_SKINS_FRSAPPER;
 	descriptionShort = $STR_EPOCH_SKINS_FRSAPPER;
 };
+class Skin_CamoWinter_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CAMOWINTER;
+	descriptionShort = $STR_EPOCH_SKINS_CAMOWINTER;
+};
+class Skin_CamoWinterW_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CAMOWINTERW;
+	descriptionShort = $STR_EPOCH_SKINS_CAMOWINTERW;
+};
+class Skin_Sniper1W_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_SNIPER1W;
+	descriptionShort = $STR_EPOCH_SKINS_SNIPER1W;
+};
+class Skin_Nac_Soldier_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_NACSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_NACSOLDIER;
+};
+class Skin_Tamika_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TAMIKA;
+	descriptionShort = $STR_EPOCH_SKINS_TAMIKA;
+};

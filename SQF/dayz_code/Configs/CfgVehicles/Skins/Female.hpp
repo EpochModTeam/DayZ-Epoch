@@ -258,3 +258,8 @@ class SurvivorWurban_DZ: SurvivorW2_DZ
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\UrbanGirl.paa"};
 };
+
+class Tamika_DZ: SurvivorW2_DZ
+{
+	model = "\nst\ns_fraction\ns\ns_tamika.p3d";
+};

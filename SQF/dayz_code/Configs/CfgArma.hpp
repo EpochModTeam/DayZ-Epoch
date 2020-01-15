@@ -771,7 +771,6 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "INS_Worker2_DZ";
 		};
-		//new Epoch 1.06
 		class Skin_USMC_Soldier_Officer_DZ: Default {
 			sex = "male";
 			playerModel = "USMC_Soldier_Officer_DZ";
@@ -911,6 +910,26 @@ class CfgSurvival {
 		class Skin_FR_Sapper_DZ: Default {
 			sex = "male";
 			playerModel = "FR_Sapper_DZ";
+		};		
+		class Skin_CamoWinter_DZ: Default {
+			sex = "male";
+			playerModel = "CamoWinter_DZ";
 		};
+		class Skin_CamoWinterW_DZ: Default {
+			sex = "male";
+			playerModel = "CamoWinterW_DZ";
+		};
+		class Skin_Sniper1W_DZ: Default {
+			sex = "male";
+			playerModel = "Sniper1W_DZ";
+		};
+		class Skin_Nac_Soldier_DZ: Default {
+			sex = "male";
+			playerModel = "Nac_Soldier_DZ";
+		};
+		class Skin_Tamika_DZ: Default {
+			sex = "female";
+			playerModel = "Tamika_DZ";
+		};		
 	};
 };

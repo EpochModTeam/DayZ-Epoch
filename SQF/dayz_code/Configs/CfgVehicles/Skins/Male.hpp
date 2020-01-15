@@ -104,8 +104,6 @@ class Survivor3_DZ : Survivor2_DZ {
 	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa", "ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa", "ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
 };
 
-//See DZE\Females.hpp for female characters
-
 //Bandit1_DZ moved to DZE section below
 
 class Rocket_DZ: Survivor_DZ { //BAF_Soldier_Officer_W
@@ -1173,4 +1171,38 @@ class FR_Sapper_DZ: FR_Sapper {
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = 1;
 	canCarryBackPack = 1;
+};
+
+class CamoWinter_DZ: Survivor_DZ {
+    side = 1;
+    scope = public;
+    displayName = "Camo Winter";
+    model = "\nst\ns_dayz\characters\cw\camowinter_dzn.p3d";
+	faceType = "HeadMask1Black";
+    camouflage = 1.4;
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\rus\data\soldier_specnaz_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_partizan_w2.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w2.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w2.rvmat","ca\characters2\rus\data\soldier_speccom.RVmat","ca\characters2\rus\data\soldier_speccom_w1.RVmat","ca\characters2\rus\data\soldier_speccom_w2.RVmat"};
+	};	
+};
+
+class CamoWinterW_DZ: CamoWinter_DZ {
+	side = 1;
+	displayName = "Camo Winter";
+	model = "\nst\ns_dayz\characters\cw\camowinterw_dzn.p3d";
+};
+
+class Sniper1W_DZ: Sniper1_DZ {
+	side = 1;
+	displayName = "Winter Sniper";
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\nst\ns_dayz\characters\gw\data\ghillie_overall1w_co.paa"};
+};
+
+class Nac_Soldier_DZ: Survivor_DZ {
+	scope = public;
+    side = 1;
+    displayName = "NAC Soldier";
+    model = "\nst\ns_fraction\nac\nac_soldier_1";
 };
