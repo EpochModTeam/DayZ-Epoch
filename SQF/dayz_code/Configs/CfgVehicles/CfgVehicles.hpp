@@ -400,7 +400,7 @@ class CfgVehicles
 	#include "Zeds\SwarmZeds.hpp" //Swarm
 	#include "Zeds\PlayerZeds.hpp"
 	//Skins
-	#include "Skins\Females.hpp"
+	#include "Skins\Female.hpp"
 	#include "Skins\Male.hpp"
 	//Bags
 	#include "Bags.hpp"
