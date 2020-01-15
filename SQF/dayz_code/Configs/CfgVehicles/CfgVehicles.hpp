@@ -399,9 +399,9 @@ class CfgVehicles
 	#include "Zeds\WildZeds.hpp" //Viral type zeds
 	#include "Zeds\SwarmZeds.hpp" //Swarm
 	#include "Zeds\PlayerZeds.hpp"
-	#include "DZE\Females.hpp"
-	//Survivor Skins
-	#include "Skins.hpp"
+	//Skins
+	#include "Skins\Females.hpp"
+	#include "Skins\Male.hpp"
 	//Bags
 	#include "Bags.hpp"
 	//DZAnimal and DZ_Fin
