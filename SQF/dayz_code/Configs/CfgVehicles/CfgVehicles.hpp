@@ -502,6 +502,7 @@ class CfgVehicles
 	#include "Buildings\WarfareBBaseStructure.hpp"
 	#include "Buildings\WaterSources.hpp"
 	#include "Buildings\Land_houseV_2T2.hpp"
+	#include "Buildings\Land_Ind_Oil_Pump_EP1_DZE.hpp"
 
 	//WeaponHolder
 	#include "WeaponHolder.hpp"
