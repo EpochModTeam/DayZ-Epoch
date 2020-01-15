@@ -1206,3 +1206,174 @@ class Nac_Soldier_DZ: Survivor_DZ {
     displayName = "NAC Soldier";
     model = "\nst\ns_fraction\nac\nac_soldier_1";
 };
+
+class gsc_military_helmet_wdl_DZ : Survivor_DZ {
+	scope = public;
+	camouflage = 0.8;	
+	displayName = $STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_military_helmet_wdl.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
+	};
+};
+class gsc_military_head_wdl_DZ : Survivor_DZ {
+	scope = public;
+	camouflage = 0.8;	
+	displayName = $STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_military_head_wdl.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
+	};
+};
+class gsc_military_helmet_grey_DZ : Survivor_DZ {
+	scope = public;
+	camouflage = 0.8;	
+	displayName = $STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_military_helmet_grey.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
+	};
+};
+class gsc_military_head_grey_DZ : Survivor_DZ {
+	scope = public;
+	camouflage = 0.8;	
+	displayName = $STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_military_head_grey.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
+	};
+};
+class gsc_scientist1_DZ : Survivor_DZ {
+	scope = public;	
+	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_suit.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
+	};
+};
+class gsc_scientist1_head_DZ : Survivor_DZ {
+	scope = public;	
+	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST1_HEAD_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_suit_head.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
+	};
+};
+class gsc_scientist2_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST2_MASK_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_suit2.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
+	};
+};
+class gsc_scientist2_head_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST2_HEAD_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_suit2_head.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
+	};
+};
+class gsc_cloth_loner_head_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_ROOKIE_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_cloth_loner_head.p3d";
+};
+class gsc_eco_stalker_mask_neutral_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_LONER_MASK_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_stalker_mask.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};
+};
+class gsc_eco_stalker_head_neutral_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_LONER_HEAD_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_stalker_head.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};
+};
+class gsc_eco_stalker_mask_fred_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_stalker_mask_fred.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};
+};
+class gsc_eco_stalker_head_fred_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_FREEDOM_HEAD_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_stalker_head_fred.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};
+};
+class gsc_eco_stalker_mask_duty_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_DUTY_MASK_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_stalker_mask_duty.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};
+};
+class gsc_eco_stalker_head_duty_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_DUTY_HEAD_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_stalker_head_duty.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};
+};
+class gsc_eco_stalker_mask_camo_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_MONOLITH_MASK_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_stalker_mask_camo.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};
+};
+class gsc_eco_stalker_head_camo_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_STALKER_MONOLITH_HEAD_NAME;
+	side = 1;
+	model = "\gsc_stalker\gsc_eco_stalker_head_camo1.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};
+};

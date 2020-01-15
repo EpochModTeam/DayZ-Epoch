@@ -930,6 +930,74 @@ class CfgSurvival {
 		class Skin_Tamika_DZ: Default {
 			sex = "female";
 			playerModel = "Tamika_DZ";
+		};	
+		class Skin_gsc_military_helmet_wdl_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_military_helmet_wdl_DZ";
+		};
+		class Skin_gsc_military_head_wdl_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_military_head_wdl_DZ";
+		};
+		class Skin_gsc_military_helmet_grey_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_military_helmet_grey_DZ";
+		};
+		class Skin_gsc_military_head_grey_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_military_head_grey_DZ";
+		};
+		class Skin_gsc_scientist1_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_scientist1_DZ";
+		};
+		class Skin_gsc_scientist1_head_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_scientist1_head_DZ";
+		};
+		class Skin_gsc_scientist2_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_scientist2_DZ";
+		};
+		class Skin_gsc_scientist2_head_DZ : Default	{
+			sex = "male";
+			playerModel = "gsc_scientist2_head_DZ";
+		};
+		class Skin_gsc_cloth_loner_head_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_cloth_loner_head_DZ";
+		};
+		class Skin_gsc_eco_stalker_mask_neutral_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_neutral_DZ";
+		};
+		class Skin_gsc_eco_stalker_head_neutral_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_head_neutral_DZ";
+		};
+		class Skin_gsc_eco_stalker_mask_fred_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_fred_DZ";
+		};
+		class Skin_gsc_eco_stalker_head_fred_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_head_fred_DZ";
+		};
+		class Skin_gsc_eco_stalker_mask_duty_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_duty_DZ";
+		};
+		class Skin_gsc_eco_stalker_head_duty_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_head_duty_DZ";
+		};
+		class Skin_gsc_eco_stalker_mask_camo_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_camo_DZ";
+		};
+		class Skin_gsc_eco_stalker_head_camo_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_head_camo_DZ";
 		};		
 	};
 };

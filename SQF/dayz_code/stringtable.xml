@@ -18653,7 +18653,140 @@
 		<Key ID="STR_EQUIP_APSI_DESC">
 			<English>APSI (Anti PSI) device, which full purpose is yet unknown.</English>
 			<German>APSI (Anti PSI) Emitter, dessen vollständige Funktion noch unbekannt ist.</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
 		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_HEAD_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_MASK_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_HEAD_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
+			<English>Stalker (Rookie)</English>
+			<German>Stalker (Anfänger)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_LONER_HEAD_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_HEAD_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_DUTY_MASK_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_DUTY_HEAD_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_MASK_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_HEAD_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
+		 	<English>A pack of special armour that fits an apocalyptic environment.</English>
+		 	<German>Eine Spezial-Rüstung der gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_DESC">
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.</English>
+		 	<German>Eine spezieller Rad-Anzug der gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_NAME">
+			<English>Stalker (Rookie)</English>
+			<German>Stalker (Anfänger)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
+		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
+		 	<German>Heruntergekommene Klamotten die gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>		 
+		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_LONER_HEAD_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_HEAD_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_HEAD_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>		
+		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>

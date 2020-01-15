@@ -447,3 +447,88 @@ class Skin_Tamika_DZ: SkinBase {
 	displayName = $STR_EPOCH_SKINS_TAMIKA;
 	descriptionShort = $STR_EPOCH_SKINS_TAMIKA;
 };
+class Skin_gsc_military_helmet_wdl_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_military_head_wdl_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_military_helmet_grey_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_military_head_grey_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_scientist1_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+};
+class Skin_gsc_scientist1_head_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+};
+class Skin_gsc_scientist2_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+};
+class Skin_gsc_scientist2_head_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+};
+class Skin_gsc_cloth_loner_head_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_ROOKIE_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_ROOKIE_DESC;
+};
+class Skin_gsc_eco_stalker_mask_neutral_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_LONER_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_head_neutral_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_LONER_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_mask_fred_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_head_fred_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_FREEDOM_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_mask_duty_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_head_duty_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_DUTY_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_mask_camo_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_head_camo_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
