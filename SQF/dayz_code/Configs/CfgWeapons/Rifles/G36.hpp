@@ -3,13 +3,16 @@ class G36K_Camo_DZ : G36C
 	model = "z\addons\dayz_communityweapons\g36\g36k_camo.p3d";
 	picture = "\z\addons\dayz_communityweapons\g36\data\w_g36k_camo_ca.paa";
 	displayName = $STR_DZ_WPN_G36K_CAMO_NAME;
-	/* //Allow default A2 mags
 	magazines[] =
 	{
 		30Rnd_556x45_G36,
-		30Rnd_556x45_G36SD
+		30Rnd_556x45_G36SD, //Allow both SD and non-SD
+		100Rnd_556x45_BetaCMag,
+		30Rnd_556x45_Stanag,
+		30Rnd_556x45_StanagSD,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
-	*/
 	//G36 Optic
 	optics = true;
 	opticsDisablePeripherialVision = true;
@@ -92,7 +95,8 @@ class G36K_Camo_SD_DZ : G36_C_SD_eotech
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		30Rnd_556x45_StanagSD,
-		20Rnd_556x45_Stanag
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
 	
 	//G36 Optic

@@ -6,13 +6,18 @@ class M249_CCO_DZ : M249
 	
 	type = WeaponSlotPrimary;
 	
-	/*magazines[] = //Allow default A2 mags
+	magazines[] = 
 	{
 		200Rnd_556x45_M249,
 		100Rnd_556x45_M249,
+		30Rnd_556x45_G36SD,
+		30Rnd_556x45_G36, //Allow both SD and non-SD
+		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD
-	};*/
+		30Rnd_556x45_StanagSD,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
+	};
 	
 	class ItemActions
 	{

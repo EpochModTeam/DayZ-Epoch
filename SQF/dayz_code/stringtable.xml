@@ -19091,7 +19091,31 @@
 		<Key ID="STR_DZE_SKIN_KSK_WDL_TL_NAME">
 			<English>GER Teamleader (woodland)</English>
 			<German>Dt. Truppführer (Waldtarn)</German>
-		</Key>		 
+		</Key>	
+		<Key ID="STR_DZE_WPN_M16RUSTY_NAME">
+			<English>M16A2 (Rusty)</English>
+			<German>M16A2 (Rostig)</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M16RUSTY_DESC">
+			<English>This M16 rifle is in a very bad shape.</English>
+			<German>Dieses M16 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M4RUSTY_NAME">
+			<English>M4A1 (Rusty)</English>
+			<German>M4A1 (Rostig)</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M4RUSTY_DESC">
+			<English>This M4 rifle is in a very bad shape.</English>
+			<German>Dieses M4 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
+		</Key>	
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_NAME">
+			<English>60Rnd. Stanag Mag</English>
+			<German>60 Schuss Stanag Mag</German>
+		</Key>
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
+			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
+			<German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
+		</Key>		
 		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">

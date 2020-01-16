@@ -5,15 +5,18 @@ class L110A1_CCO_DZ : BAF_L110A1_Aim
 	displayName = $STR_DZ_WPN_L110A1_CCO_NAME;
 	irDistance = 0;
 	type = WeaponSlotPrimary;
-	/* //Allow default A2 mags
 	magazines[] =
 	{
 		200Rnd_556x45_M249,
 		100Rnd_556x45_M249,
+		30Rnd_556x45_G36SD,
+		30Rnd_556x45_G36, //Allow both SD and non-SD
+		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD
+		30Rnd_556x45_StanagSD,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
-	*/
 	class ItemActions
 	{
 		class RemoveCCO

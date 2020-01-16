@@ -32,6 +32,7 @@ Included Custom Addons
 * RedRyder BB Gun by WillRobinson - https://github.com/arma2WillRobinson/Red-Ryder
 * Namalsk Addons by SumrakDZN - https://github.com/SumrakDZN/DayZNamalsk
 * Stalker Units by Icewindo - http://www.armaholic.com/page.php?id=9795
+* Post Apocalypse Units by Icewindo - http://www.armaholic.com/page.php?id=11840
 * Ghillie Suits by Brainbug - http://www.armaholic.com/page.php?id=11424
 * Retextured German KSK Units by Brainbug - http://www.armaholic.com/page.php?id=11129
 
