@@ -19043,7 +19043,55 @@
 		<Key ID="STR_DZE_SKIN_GHILLIE_WDL_NAME">
 			<English>Sniper (Woodland)</English>
 			<German>Scharfschütze (Wald)</German>
-		</Key>			 
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_NAME">
+		 	<English>German Rifleman (Desert)</English>
+		 	<German>Dt. Schütze (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_DESC">
+		 	<English>German Rifleman (Desert)</English>
+		 	<German>Dt. Schütze (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_NAME">
+		 	<English>German Teamleader (Desert)</English>
+		 	<German>Dt. Truppführer (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_DESC">
+		 	<English>German Teamleader (Desert)</English>
+		 	<German>Dt. Truppführer (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_NAME">
+		 	<English>German Rifleman (woodland)</English>
+		 	<German>Dt. Schütze (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_DESC">
+		 	<English>German Rifleman (woodland)</English>
+		 	<German>Dt. Schütze (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_NAME">
+		 	<English>German Teamleader (woodland)</English>
+		 	<German>Dt. Truppführer (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_DESC">
+		 	<English>German Teamleader (woodland)</English>
+		 	<German>Dt. Truppführer (Waldtarn)</German>
+		 </Key>
+		<Key ID="STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME">
+			<English>GER Rifleman (desert)</English>
+			<German>Dt. Schütze (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_DES_TL_NAME">
+			<English>GER Teamleader (desert)</English>
+			<German>Dt. Truppführer (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_WDL_RIFLEMAN_NAME">
+			<English>GER Rifleman (woodland)</English>
+			<German>Dt. Schütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_WDL_TL_NAME">
+			<English>GER Teamleader (woodland)</English>
+			<German>Dt. Truppführer (Waldtarn)</German>
+		</Key>		 
 		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">

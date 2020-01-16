@@ -1501,3 +1501,23 @@ class GhillieFull_Wood16_DZ: Sniper1_DZ {
 	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood16.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
+
+class GER_Soldier_EP1_des_DZ: Survivor_DZ {
+	scope = public;
+	side = 1;
+	camouflage = 0.8;	
+	displayName = $STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME;
+	model = "\ksk_mod\GER_rifleman_des.p3d";
+};
+class GER_Soldier_TL_EP1_des_DZ: GER_Soldier_EP1_des_DZ {
+	displayName = $STR_DZE_SKIN_KSK_DES_TL_NAME;
+	model = "\ksk_mod\GER_rifleman_light_des.p3d";
+};
+class GER_Soldier_EP1_wdl_DZ: GER_Soldier_EP1_des_DZ {
+	displayName = $STR_DZE_SKIN_KSK_WDL_RIFLEMAN_NAME;
+	model = "\ksk_mod\GER_rifleman_wdl.p3d";
+};
+class GER_Soldier_TL_EP1_wdl_DZ: GER_Soldier_EP1_des_DZ {
+	displayName = $STR_DZE_SKIN_KSK_WDL_TL_NAME;
+	model = "\ksk_mod\GER_rifleman_light_wdl.p3d";
+};

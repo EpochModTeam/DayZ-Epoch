@@ -685,3 +685,23 @@ class Skin_GhillieFull_Wood16_DZ : SkinBase	{
 	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_16_NAME;
 	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
 };
+class Skin_GER_Soldier_EP1_des_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GER_SOLDIER_DES_NAME;
+	descriptionShort = $STR_DZE_EQUIP_GER_SOLDIER_DES_DESC;
+};
+class Skin_GER_Soldier_TL_EP1_des_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GER_TL_DES_NAME;
+	descriptionShort = $STR_DZE_EQUIP_GER_TL_DES_DESC;
+};
+class Skin_GER_Soldier_EP1_wdl_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GER_Soldier_WDL_NAME;
+	descriptionShort = $STR_DZE_EQUIP_GER_Soldier_WDL_DESC;
+};
+class Skin_GER_Soldier_TL_EP1_wdl_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GER_TL_WDL_NAME;
+	descriptionShort = $STR_DZE_EQUIP_GER_TL_WDL_DESC;
+};

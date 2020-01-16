@@ -33,6 +33,7 @@ Included Custom Addons
 * Namalsk Addons by SumrakDZN - https://github.com/SumrakDZN/DayZNamalsk
 * Stalker Units by Icewindo - http://www.armaholic.com/page.php?id=9795
 * Ghillie Suits by Brainbug - http://www.armaholic.com/page.php?id=11424
+* Retextured German KSK Units by Brainbug - http://www.armaholic.com/page.php?id=11129
 
 --------------------------
 Included Custom Islands

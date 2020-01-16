@@ -1118,6 +1118,22 @@ class CfgSurvival {
 		class Skin_GhillieFull_Wood16_DZ : Default {
 			sex = "male";
 			playerModel = "GhillieFull_Wood16_DZ";
+		};
+		class Skin_GER_Soldier_EP1_des_DZ : Default {
+			sex = "male";
+			playerModel = "GER_Soldier_EP1_des_DZ";
+		};
+		class Skin_GER_Soldier_TL_EP1_des_DZ : Default {
+			sex = "male";
+			playerModel = "GER_Soldier_TL_EP1_des_DZ";
+		};
+		class Skin_GER_Soldier_EP1_wdl_DZ : Default {
+			sex = "male";
+			playerModel = "GER_Soldier_EP1_wdl_DZ";
+		};
+		class Skin_GER_Soldier_TL_EP1_wdl_DZ : Default {
+			sex = "male";
+			playerModel = "GER_Soldier_TL_EP1_wdl_DZ";
 		};		
 	};
 };
