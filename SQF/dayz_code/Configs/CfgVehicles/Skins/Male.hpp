@@ -1377,3 +1377,127 @@ class gsc_eco_stalker_head_camo_DZ : Survivor_DZ {
 		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
 	};
 };
+
+class GhillieFull_Desert01_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert01.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Desert02_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert02.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Desert03_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert03.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Desert04_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert04.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Desert05_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert05.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Desert06_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert06.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Desert07_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert07.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Desert08_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert08.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+//new snow ghillies
+class GhillieFull_Snow01_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow01.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Snow02_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow02.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Snow03_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow03.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Snow04_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow04.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Snow05_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow05.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+//new urban ghillies
+class GhillieFull_Urban01_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_URB_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\urban\Skin_GhillieFull_Urban01.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+//new wood ghillies
+class GhillieFull_Wood01_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood01.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood02_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood02.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood03_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood03.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood04_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood04.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood05_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood05.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood06_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood06.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood07_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood07.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood08_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood08.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood09_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood09.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood10_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood10.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood11_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood11.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood12_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood12.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood13_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood13.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood14_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood14.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood15_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood15.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};
+class GhillieFull_Wood16_DZ: Sniper1_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood16.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
+};

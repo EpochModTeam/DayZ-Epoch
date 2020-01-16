@@ -11755,9 +11755,9 @@
 		
 		<!-- Ghillie -->
 		<Key ID="STR_DZ_ATT_GHIL_NAME">
-			<English>[A] Small camo netting</English>
+			<English>[A] Small camo net. (wood)</English>
 			<Russian>[М] Малый камуфляж</Russian>
-			<German>[E] Kleines Tarnnetz</German>
+			<German>[E] Kl. Tarnnetz (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_GHIL_DESC">
 			<English>Assorted pieces of camo netting. Might be used to camouflage something small.</English>
@@ -11820,6 +11820,76 @@
 			<Russian>Снять RIS</Russian>
 			<German>Entferne RIS</German>
 		</Key>
+		<!--new attachments-->
+		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_NAME">
+			<English>[A] ANPVS4 Scope</English>
+			<German>[E] ANPVS4 Visier</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_DESC">
+			<English>An ANPVS4 scope.</English>
+			<German>Zielfernrohr vom Typ ANPVS4.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_GHIL_DES_NAME">
+			<English>[A] Small camo net. (desert)</English>
+			<German>[E] Kl. Tarnnetz (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_GHIL_SNOW_NAME">
+			<English>[A] Small camo net. (snow)</English>
+			<German>[E] Kl. Tarnnetz (Schneetarn)</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_GHIL_URB_NAME">
+			<English>[A] Small camo net. (urban)</English>
+			<German>[E] Kl. Tarnnetz (Stadttarn)</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_LASER_NAME">
+			<English>[A] Laser Pointer</English>
+			<German>[E] Laserpointer</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_LASER_DESC">
+			<English>A laser pointer that can be attached to weapons.</English>
+			<German>Ein Laserpointer, der an Waffen angebracht werden kann.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_NSPU_NAME">
+			<English>[A] NSPU scope</English>
+			<German>[E] NSPU-Visier</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_NSPU_DESC">
+			<English>An NSPU scope.</English>
+			<German>Zielfernrohr vom Typ NSPU.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_NV_NAME">
+			<English>[A] NV scope</English>
+			<German>[E] NV-Visier</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_NV_DESC">
+			<English>A generic Night vision scope.</English>
+			<German>Generisches Nachtsichvisier.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_TWS_NAME">
+			<English>[A] TWS scope</English>
+			<German>[E] TWS-Visier</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_TWS_DESC">
+			<English>A TWS scope.</English>
+			<German>Zielfernrohr vom Typ TWS.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_45SUP_NAME">
+			<English>[A] .45cal Suppressor</English>
+			<German>[E] .45cal Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_45SUP_DESC">
+			<English>A silencer that can be attached to .45 caliber pistols.</English>
+			<German>Ein Schalldämpfer, der an Kaliber .45 Pistolen angebracht werden kann.</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_762SUP_NAME">
+			<English>[A] 7.62mm Suppressor</English>
+			<Russian>[М] 7.62мм глушитель</Russian>
+			<German>[E] 7.62mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZE_ATTACHMENT_762SUP_DESC">
+			<English>A silencer that can be attached to 7.62x51mm caliber rifles.</English>
+			<German>Ein Schalldämpfer, der an Kaliber 7.62x51mm Gewehre angebracht werden kann.</German>
+		</Key>		
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_REMOVE">
@@ -17248,16 +17318,20 @@
 			<German>Tarn Pionier</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTER">
-			<English>Warm Clothes</English>
-			<German>Warme Kleiung</German>
+			<English>Thermo Suit (tan)</English>
+			<German>Thermoanzug (braun)</German>
 		</Key>	
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTERW">
-			<English>Warm Clothes (white)</English>
-			<German>Warme Kleiung (weiß)</German>
+			<English>Thermo Suit (white)</English>
+			<German>Thermoanzug (weiß)</German>
+		</Key>	
+	    <Key ID="STR_DZE_EQUIP_CAMOWINTER_DESC">
+			<English>Thermo Suit, which can protect you from a cold and rainy weather.</English>
+			<German>Thermoanzug, der vor kalten und nassen Wetterbedingungen schützen kann.</German>
 		</Key>	
 		<Key ID="STR_EPOCH_SKINS_SNIPER1W">
-			<English>Winter Ghillie</English>
-			<German>Winter-Ghillie</German>
+			<English>Winter Ghillie Suit</English>
+			<German>Winter-Ghillie Anzug</German>
 		</Key>	
 		<Key ID="STR_EPOCH_SKINS_NACSOLDIER">
 			<English>NAC Soldier</English>
@@ -18214,76 +18288,6 @@
 			<Russian>Бутылка кипяченой воды с 900мл воды</Russian>
 			<German>Wasserflasche PET mit 900ml abgekochtem Wasser.</German>
 		</Key>
-		
-		<!--new attachments-->
-		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_NAME">
-			<English>[A] ANPVS4 Scope</English>
-			<German>[A] ANPVS4 Visier</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_DESC">
-			<English>An ANPVS4 scope.</English>
-			<German>Zielfernrohr vom Typ ANPVS4.</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_GHIL_DES_NAME">
-			<English>[A] Small camo net. (desert)</English>
-			<German>[A] Kl. Tarnnetz (Wüstentarn)</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_GHIL_SNOW_NAME">
-			<English>[A] Small camo net. (snow)</English>
-			<German>[A] Kl. Tarnnetz (Schneetarn)</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_GHIL_URB_NAME">
-			<English>[A] Small camo net. (urban)</English>
-			<German>[A] Kl. Tarnnetz (Stadttarn)</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_LASER_NAME">
-			<English>[A] Laserpointer</English>
-			<German>[A] Laser Pointer</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_LASER_DESC">
-			<English>An attachable laserpointer.</English>
-			<German>Ein Laser Pointer der an Gewehren angebracht werden kann.</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_NSPU_NAME">
-			<English>[A] NSPU scope</English>
-			<German>[A] NSPU Visier</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_NSPU_DESC">
-			<English>An NSPU scope.</English>
-			<German>Zielfernrohr vom Typ NSPU.</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_NV_NAME">
-			<English>[A] NV scope</English>
-			<German>[A] NV Visier</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_NV_DESC">
-			<English>A generic Night vision scope.</English>
-			<German>Generisches Nachtsichvisier.</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_TWS_NAME">
-			<English>[A] TWS scope</English>
-			<German>[A] TWS Visier</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_TWS_DESC">
-			<English>A TWS scope.</English>
-			<German>Zielfernrohr vom Typ TWS.</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_45SUP_NAME">
-			<English>[A] Silencer .45</English>
-			<German>[A] Schalldämpfer .45</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_45SUP_DESC">
-			<English>A silencer that can be attached to .45 calibre pistols.</English>
-			<German>Ein Schalldämpfer der an Kaliber .45 Pistolen angebracht werden kann.</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_762SUP_NAME">
-			<English>[A] Silencer (7.62)</English>
-			<German>[A] Schalldämpfer (7.62)</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_762SUP_DESC">
-			<English>A silencer that can be attached to 7.62 calibre rifles.</English>
-			<German>Ein Schalldämpfer der an Kaliber 7.62 Gewehre angebracht werden kann.</German>
-		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_NAME">
 			<English>Paint bucket (generic)</English>
 			<German>Farbeimer (Generisch)</German>
@@ -18838,7 +18842,7 @@
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
 		 	<English>A pack of special armour that fits an apocalyptic environment.</English>
-		 	<German>Eine Spezial-Rüstung der gut in eine apokalyptische Umgebung passen würden.</German>
+		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.</German>
 		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
 			<English>Stalker Mil. (woodland)</English>
@@ -18858,7 +18862,7 @@
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_DESC">
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.</English>
-		 	<German>Eine spezieller Rad-Anzug der gut in eine apokalyptische Umgebung passen würden.</German>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.</German>
 		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
 			<English>Scientist (Red rad-suit)</English>
@@ -18878,7 +18882,7 @@
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
 		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
-		 	<German>Heruntergekommene Klamotten die gut in eine apokalyptische Umgebung passen würden.</German>
+		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
 		 </Key>		 
 		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
 			<English>Stalker (Loner)</English>
@@ -18903,7 +18907,143 @@
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME">
 			<English>Stalker (Monolith)</English>
-		</Key>		
+		</Key>	
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_1_NAME">
+		 	<English>Ghillie Suit (Desert 1)</English>
+		 	<German>Ghillie-Anzug (Wüste 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_2_NAME">
+		 	<English>Ghillie Suit (Desert 2)</English>
+		 	<German>Ghillie-Anzug (Wüste 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_3_NAME">
+		 	<English>Ghillie Suit (Desert 3)</English>
+		 	<German>Ghillie-Anzug (Wüste 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_4_NAME">
+		 	<English>Ghillie Suit (Desert 4)</English>
+		 	<German>Ghillie-Anzug (Wüste 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_5_NAME">
+		 	<English>Ghillie Suit (Desert 5)</English>
+		 	<German>Ghillie-Anzug (Wüste 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_6_NAME">
+		 	<English>Ghillie Suit (Desert 6)</English>
+		 	<German>Ghillie-Anzug (Wüste 6)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_7_NAME">
+		 	<English>Ghillie Suit (Desert 7)</English>
+		 	<German>Ghillie-Anzug (Wüste 7)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_8_NAME">
+		 	<English>Ghillie Suit (Desert 8)</English>
+		 	<German>Ghillie-Anzug (Wüste 8)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME">
+		 	<English>Ghillie Suit (Snow 1)</English>
+		 	<German>Ghillie-Anzug (Schnee 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME">
+		 	<English>Ghillie Suit (Snow 2)</English>
+		 	<German>Ghillie-Anzug (Schnee 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME">
+		 	<English>Ghillie Suit (Snow 3)</English>
+		 	<German>Ghillie-Anzug (Schnee 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME">
+		 	<English>Ghillie Suit (Snow 4)</English>
+		 	<German>Ghillie-Anzug (Schnee 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME">
+		 	<English>Ghillie Suit (Snow 5)</English>
+		 	<German>Ghillie-Anzug (Schnee 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_URB_1_NAME">
+		 	<English>Ghillie Suit (Urban 1)</English>
+		 	<German>Ghillie-Anzug (Urban 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_1_NAME">
+		 	<English>Ghillie Suit (Wood 1)</English>
+		 	<German>Ghillie-Anzug (Wald 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_2_NAME">
+		 	<English>Ghillie Suit (Wood 2)</English>
+		 	<German>Ghillie-Anzug (Wald 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_3_NAME">
+		 	<English>Ghillie Suit (Wood 3)</English>
+		 	<German>Ghillie-Anzug (Wald 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_4_NAME">
+		 	<English>Ghillie Suit (Wood 4)</English>
+		 	<German>Ghillie-Anzug (Wald 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_5_NAME">
+		 	<English>Ghillie Suit (Wood 5)</English>
+		 	<German>Ghillie-Anzug (Wald 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_6_NAME">
+		 	<English>Ghillie Suit (Wood 6)</English>
+		 	<German>Ghillie-Anzug (Wald 6)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_7_NAME">
+		 	<English>Ghillie Suit (Wood 7)</English>
+		 	<German>Ghillie-Anzug (Wald 7)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_8_NAME">
+		 	<English>Ghillie Suit (Wood 8)</English>
+		 	<German>Ghillie-Anzug (Wald 8)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_9_NAME">
+		 	<English>Ghillie Suit (Wood 9)</English>
+		 	<German>Ghillie-Anzug (Wald 9)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_10_NAME">
+		 	<English>Ghillie Suit (Wood 10)</English>
+		 	<German>Ghillie-Anzug (Wald 10)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_11_NAME">
+		 	<English>Ghillie Suit (Wood 11)</English>
+		 	<German>Ghillie-Anzug (Wald 11)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_12_NAME">
+		 	<English>Ghillie Suit (Wood 12)</English>
+		 	<German>Ghillie-Anzug (Wald 12)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_13_NAME">
+		 	<English>Ghillie Suit (Wood 13)</English>
+		 	<German>Ghillie-Anzug (Wald 13)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_14_NAME">
+		 	<English>Ghillie Suit (Wood 14)</English>
+		 	<German>Ghillie-Anzug (Wald 14)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_15_NAME">
+		 	<English>Ghillie Suit (Wood 15)</English>
+		 	<German>Ghillie-Anzug (Wald 15)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_16_NAME">
+		 	<English>Ghillie Suit (Wood 16)</English>
+		 	<German>Ghillie-Anzug (Wald 16)</German>
+		 </Key>	
+		<Key ID="STR_DZE_SKIN_GHILLIE_DES_NAME">
+			<English>Sniper (Desert)</English>
+			<German>Scharfschütze (Wüste)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_SNOW_NAME">
+			<English>Sniper (Snow)</English>
+			<German>Scharfschütze (Schnee)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_URB_NAME">
+			<English>Sniper (Urban)</English>
+			<German>Scharfschütze (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_WDL_NAME">
+			<English>Sniper (Woodland)</English>
+			<German>Scharfschütze (Wald)</German>
+		</Key>			 
 		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">

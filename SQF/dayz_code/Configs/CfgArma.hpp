@@ -998,6 +998,126 @@ class CfgSurvival {
 		class Skin_gsc_eco_stalker_head_camo_DZ : Default {
 			sex = "male";
 			playerModel = "gsc_eco_stalker_head_camo_DZ";
+		};	
+		class Skin_GhillieFull_Desert01_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert01_DZ";
+		};
+		class Skin_GhillieFull_Desert02_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert02_DZ";
+		};
+		class Skin_GhillieFull_Desert03_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert03_DZ";
+		};
+		class Skin_GhillieFull_Desert04_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert04_DZ";
+		};
+		class Skin_GhillieFull_Desert05_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert05_DZ";
+		};
+		class Skin_GhillieFull_Desert06_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert06_DZ";
+		};
+		class Skin_GhillieFull_Desert07_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert07_DZ";
+		};
+		class Skin_GhillieFull_Desert08_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert08_DZ";
+		};
+		class Skin_GhillieFull_Snow01_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow01_DZ";
+		};
+		class Skin_GhillieFull_Snow02_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow02_DZ";
+		};
+		class Skin_GhillieFull_Snow03_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow03_DZ";
+		};
+		class Skin_GhillieFull_Snow04_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow04_DZ";
+		};
+		class Skin_GhillieFull_Snow05_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow05_DZ";
+		};
+		class Skin_GhillieFull_Urban01_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Urban01_DZ";
+		};
+		class Skin_GhillieFull_Wood01_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood01_DZ";
+		};
+		class Skin_GhillieFull_Wood02_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood02_DZ";
+		};
+		class Skin_GhillieFull_Wood03_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood03_DZ";
+		};
+		class Skin_GhillieFull_Wood04_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood04_DZ";
+		};
+		class Skin_GhillieFull_Wood05_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood05_DZ";
+		};
+		class Skin_GhillieFull_Wood06_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood06_DZ";
+		};
+		class Skin_GhillieFull_Wood07_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood07_DZ";
+		};
+		class Skin_GhillieFull_Wood08_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood08_DZ";
+		};
+		class Skin_GhillieFull_Wood09_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood09_DZ";
+		};
+		class Skin_GhillieFull_Wood10_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood10_DZ";
+		};
+		class Skin_GhillieFull_Wood11_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood11_DZ";
+		};
+		class Skin_GhillieFull_Wood12_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood12_DZ";
+		};
+		class Skin_GhillieFull_Wood13_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood13_DZ";
+		};
+		class Skin_GhillieFull_Wood14_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood14_DZ";
+		};
+		class Skin_GhillieFull_Wood15_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood15_DZ";
+		};
+		class Skin_GhillieFull_Wood16_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood16_DZ";
 		};		
 	};
 };

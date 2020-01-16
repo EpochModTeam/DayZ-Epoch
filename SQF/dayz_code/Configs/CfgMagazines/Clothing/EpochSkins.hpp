@@ -422,15 +422,16 @@ class Skin_FR_Sapper_DZ: SkinBase {
 	displayName = $STR_EPOCH_SKINS_FRSAPPER;
 	descriptionShort = $STR_EPOCH_SKINS_FRSAPPER;
 };
+//Namalsk Skins
 class Skin_CamoWinter_DZ: SkinBase {
 	scope = public;
 	displayName = $STR_EPOCH_SKINS_CAMOWINTER;
-	descriptionShort = $STR_EPOCH_SKINS_CAMOWINTER;
+	descriptionShort = $STR_DZE_EQUIP_CAMOWINTER_DESC;
 };
 class Skin_CamoWinterW_DZ: SkinBase {
 	scope = public;
 	displayName = $STR_EPOCH_SKINS_CAMOWINTERW;
-	descriptionShort = $STR_EPOCH_SKINS_CAMOWINTERW;
+	descriptionShort = $STR_DZE_EQUIP_CAMOWINTER_DESC;
 };
 class Skin_Sniper1W_DZ: SkinBase {
 	scope = public;
@@ -447,6 +448,7 @@ class Skin_Tamika_DZ: SkinBase {
 	displayName = $STR_EPOCH_SKINS_TAMIKA;
 	descriptionShort = $STR_EPOCH_SKINS_TAMIKA;
 };
+//Stalker Skins
 class Skin_gsc_military_helmet_wdl_DZ : SkinBase {
 	scope = public;
 	displayName = $STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME;
@@ -531,4 +533,155 @@ class Skin_gsc_eco_stalker_head_camo_DZ : SkinBase {
 	scope = public;
 	displayName = $STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME;
 	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+//New ghillies skins
+class Skin_GhillieFull_Desert01_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert02_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert03_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert04_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert05_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert06_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_6_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert07_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_7_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert08_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_8_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow01_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow02_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow03_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow04_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow05_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Urban01_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_URB_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood01_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood02_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood03_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood04_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood05_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood06_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_6_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood07_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_7_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood08_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_8_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood09_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_9_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood10_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_10_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood11_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_11_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood12_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_12_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood13_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_13_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood14_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_14_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood15_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_15_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood16_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_16_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
 };
