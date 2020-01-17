@@ -1134,6 +1134,30 @@ class CfgSurvival {
 		class Skin_GER_Soldier_TL_EP1_wdl_DZ : Default {
 			sex = "male";
 			playerModel = "GER_Soldier_TL_EP1_wdl_DZ";
+		};	
+		class Skin_Apo_Rifleman_01_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_01_DZ";
+		};
+		class Skin_Apo_Rifleman_02_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_02_DZ";
+		};
+		class Skin_Apo_Rifleman_03_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_03_DZ";
+		};
+		class Skin_Apo_Rifleman_04_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_04_DZ";
+		};
+		class Skin_Apo_Rifleman_05_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_05_DZ";
+		};
+		class Skin_Apo_Rifleman_06_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_06_DZ";
 		};		
 	};
 };

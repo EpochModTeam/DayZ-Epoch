@@ -1501,7 +1501,7 @@ class GhillieFull_Wood16_DZ: Sniper1_DZ {
 	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood16.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-
+//KSK Mod Skins
 class GER_Soldier_EP1_des_DZ: Survivor_DZ {
 	scope = public;
 	side = 1;
@@ -1520,4 +1520,37 @@ class GER_Soldier_EP1_wdl_DZ: GER_Soldier_EP1_des_DZ {
 class GER_Soldier_TL_EP1_wdl_DZ: GER_Soldier_EP1_des_DZ {
 	displayName = $STR_DZE_SKIN_KSK_WDL_TL_NAME;
 	model = "\ksk_mod\GER_rifleman_light_wdl.p3d";
+};
+//Ice Apo Mod Skins
+class Apo_Rifleman_01_DZ: Survivor_DZ {
+	scope = public;
+	camouflage = 0.8;	
+	displayName = $STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME;
+	side = 1;
+	model = "\ice_apo_resistance\soldier_hood_medium_beard.p3d";
+	picture = "\Ca\characters\data\Ico\i_null_CA.paa";
+	icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"ice_apo_resistance\data\us_soldier_sabot_body.rvmat", "ice_apo_resistance\data\us_soldier_sabot_body_wound1.rvmat", "ice_apo_resistance\data\us_soldier_sabot_body_wound2.rvmat", "ice_apo_resistance\data\civil_tshirt_body.rvmat", "ice_apo_resistance\data\civil_tshirt_body_wound1.rvmat", "ice_apo_resistance\data\civil_tshirt_body_wound2.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_white.rvmat", "CA\characters\Heads\Male\DefaultHead\data\hhl_white_wounds.rvmat", "CA\characters\Heads\Male\DefaultHead\data\hhl_white_wounds2.rvmat"};
+	};
+};
+class Apo_Rifleman_02_DZ : Apo_Rifleman_01_DZ {
+	model = "\ice_apo_resistance\soldier_helmet_medium.p3d";
+};	
+class Apo_Rifleman_03_DZ : Apo_Rifleman_01_DZ {
+	model = "\ice_apo_resistance\soldier_helmet_officer.p3d";
+	class Wounds {
+		tex[] = {};
+		mat[] = {"ice_apo_resistance\data\armysf_tl.rvmat", "ice_apo_resistance\data\armysf_tl_wound1.rvmat", "ice_apo_resistance\data\armysf_tl_wound2.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_white.rvmat", "CA\characters\Heads\Male\DefaultHead\data\hhl_white_wounds.rvmat", "CA\characters\Heads\Male\DefaultHead\data\hhl_white_wounds2.rvmat"};
+	};
+};	
+class Apo_Rifleman_04_DZ : Apo_Rifleman_01_DZ {
+	model = "\ice_apo_resistance\soldier_hat_medium_clean.p3d";
+};	
+class Apo_Rifleman_05_DZ : Apo_Rifleman_01_DZ {
+	model = "\ice_apo_resistance\soldier_mask_medium.p3d";
+};	
+class Apo_Rifleman_06_DZ : Apo_Rifleman_01_DZ {
+	model = "\ice_apo_resistance\soldier_tank_light_clean.p3d";
 };

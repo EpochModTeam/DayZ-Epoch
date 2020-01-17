@@ -705,3 +705,40 @@ class Skin_GER_Soldier_TL_EP1_wdl_DZ : SkinBase {
 	displayName = $STR_DZE_EQUIP_GER_TL_WDL_NAME;
 	descriptionShort = $STR_DZE_EQUIP_GER_TL_WDL_DESC;
 };
+//New ice apo skins
+class Skin_Apo_Rifleman_01_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_1_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_02_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_2_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_03_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_3_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_04_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_4_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_05_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_5_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_06_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};

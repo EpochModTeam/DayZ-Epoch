@@ -19116,6 +19116,38 @@
 			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
 			<German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
 		</Key>
+		<Key ID="STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME">
+			<English>Apocalyptic Rifleman</English>
+			<German>Apokalyptischer Schütze</German>
+		</Key>		 
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_1_NAME">
+		 	<English>Apo. Rifleman 1</English>
+		 	<German>Apo. Schütze 1</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_DESC">
+		 	<English>A pack of run down clothings that fits an apocalyptic environment.</English>
+		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_2_NAME">
+		 	<English>Apo. Rifleman 2</English>
+		 	<German>Apo. Schütze 2</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_3_NAME">
+		 	<English>Apo. Rifleman 3</English>
+		 	<German>Apo. Schütze 3</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_4_NAME">
+		 	<English>Apo. Rifleman 4</English>
+		 	<German>Apo. Schütze 4</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_5_NAME">
+		 	<English>Apo. Rifleman 5</English>
+		 	<German>Apo. Schütze 5</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME">
+		 	<English>Apo. Rifleman 6</English>
+		 	<German>Apo. Schütze 6</German>
+		 </Key>		
 		<!--epoch 107 new backpacks-->
 		<Key ID="STR_BACKPACK_NAME_PATROL_DZE1">
 			<English>Patrol Backpack</English>
