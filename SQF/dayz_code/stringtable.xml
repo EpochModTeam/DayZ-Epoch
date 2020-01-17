@@ -19147,7 +19147,116 @@
 		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME">
 		 	<English>Apo. Rifleman 6</English>
 		 	<German>Apo. Schütze 6</German>
-		 </Key>		
+		 </Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_TL_NAME">
+			<English>Spetsnaz Teamleader (Dark Tan)</English>
+			<German>Speznas Truppführer (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Dark Tan)</English>
+			<German>Speznas Späher (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SNIPER_NAME">
+			<English>Spetsnaz Sniper (Dark Tan)</English>
+			<German>Speznas Heckenschütze (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SPOTTER_NAME">
+			<English>Spetsnaz Spotter (Dark Tan)</English>
+			<German>Speznas Aufklärer (Braun)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_TL_NAME">
+			<English>Spetsnaz Teamleader (Camo)</English>
+			<German>Speznas Truppführer (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Camo)</English>
+			<German>Speznas Späher (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_MEDIC_NAME">
+			<English>Spetsnaz Medic (Camo)</English>
+			<German>Speznas Feldarzt (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_TL_NAME">
+			<English>Spetsnaz Teamleader (Woodland)</English>
+			<German>Speznas Truppführer (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_SCOUT_NAME">
+			<English>Spetsnaz Scout (Woodland)</English>
+			<German>Speznas Späher (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MARKSMAN_NAME">
+			<English>Spetsnaz Marksman (Woodland)</English>
+			<German>Speznas Scharfschütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MEDIC_NAME">
+			<English>Spetsnaz Medic (Woodland)</English>
+			<German>Speznas Feldarzt (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_OPERATOR_NAME">
+			<English>Spetsnaz Operator (Woodland)</English>
+			<German>Speznas Operator (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME">
+			<English>Spetsnaz MG Soldier (Woodland)</English>
+			<German>Speznas MG Schütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_TL_NAME">
+			<English>Spetsnaz Teamleader (Dark Tan)</English>
+			<German>Speznas Truppführer (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_TL_W_NAME">
+			<English>Spetsnaz Teamleader (Camo)</English>
+			<German>Speznas Truppführer (Flecktarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC">
+			<English>Special Spetsnaz clothings.</English>
+			<German>Spezielle Speznas Militärkleidung.</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Dark Tan)</English>
+			<German>Speznas Späher (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME">
+			<English>Spetsnaz Sniper (Dark Tan)</English>
+			<German>Speznas Heckenschütze (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME">
+			<English>Spetsnaz Spotter (Dark Tan)</English>
+			<German>Speznas Aufklärer (Braun)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Camo)</English>
+			<German>Speznas Späher (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME">
+			<English>Spetsnaz Rifleman (Camo)</English>
+			<German>Speznas Schütze (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME">
+			<English>Spetsnaz Teamleader (Woodland)</English>
+			<German>Speznas Truppführer (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME">
+			<English>Spetsnaz Scout (Woodland)</English>
+			<German>Speznas Späher (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME">
+			<English>Spez. Marksman (Woodland)</English>
+			<German>Speznas Scharfschütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME">
+			<English>Spetsnaz Medic (Woodland)</English>
+			<German>Speznas Feldarzt (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME">
+			<English>Spetsnaz Operator (Woodland)</English>
+			<German>Speznas Operator (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME">
+			<English>Spetsnaz MG Soldier (Woodland)</English>
+			<German>Speznas MG Schütze (Wald)</German>
+		</Key>	
+		 
 		<!--epoch 107 new backpacks-->
 		<Key ID="STR_BACKPACK_NAME_PATROL_DZE1">
 			<English>Patrol Backpack</English>
@@ -19612,7 +19721,8 @@
 			<Russian>Большая оружейная сумка (70 слотов)</Russian>
 			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 70 liter</Dutch>
 			<French>Grand Fourreau &lt;br/&gt;Taille: 70</French>
-		</Key>		
+		</Key>	
+		
 		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">

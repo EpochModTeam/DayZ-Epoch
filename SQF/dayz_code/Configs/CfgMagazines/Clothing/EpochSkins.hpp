@@ -742,3 +742,48 @@ class Skin_Apo_Rifleman_06_DZ : SkinBase
 	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME;
 	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
 };
+//New sg_gru skins
+class Skin_SG_GRU_TL_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_SG_GRU_DT_TL_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+};
+class Skin_SG_GRU_Scout_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME;
+};
+class Skin_SG_GRU_Sniper_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME;
+};
+class Skin_SG_GRU_Spotter_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME;
+};
+class Skin_SG_GRU_TL_W_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_TL_W_NAME;
+};
+class Skin_SG_GRU_Scout_W_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME;
+};
+class Skin_SG_GRU_Assaultman_W_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME;
+};
+class Skin_SG_GRU_Medic_W_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME;
+};
+class Skin_SG_GRU_TL_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME;
+};
+class Skin_SG_GRU_Scout_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME;
+};
+class Skin_SG_GRU_Marksman_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME;
+};
+class Skin_SG_GRU_Medic_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME;
+};
+class Skin_SG_GRU_Operator_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME;
+};
+class Skin_SG_GRU_MG_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME;
+};

@@ -1554,3 +1554,65 @@ class Apo_Rifleman_05_DZ : Apo_Rifleman_01_DZ {
 class Apo_Rifleman_06_DZ : Apo_Rifleman_01_DZ {
 	model = "\ice_apo_resistance\soldier_tank_light_clean.p3d";
 };
+
+class SG_GRU_TL_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_SG_GRU_DT_TL_NAME;
+	camouflage = 0.8;
+	model = "\SG_GRU\Soldier_Gorka_1.p3d";
+	picture = "\Ca\characters\data\Ico\i_null_CA.paa";
+	icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
+
+	class Wounds {
+		tex[] = {};
+		mat[] = {"ca\characters2\indepins\data\soldier_flecktarn.rvmat", "sg_gru\data\wounds\gorka_body_w1.rvmat", "sg_gru\data\wounds\gorka_body_w2.rvmat", "ca\characters2\rus\data\soldier_specnaz_partizan.rvmat", "sg_gru\data\wounds\gorka_legs_w1.rvmat", "sg_gru\data\wounds\gorka_legs_w2.rvmat"};
+	};
+};
+class SG_GRU_Scout_DZ : SG_GRU_TL_DZ {
+	displayName = $STR_DZE_SKIN_SG_GRU_DT_SCOUT_NAME;
+	model = "\SG_GRU\Soldier_Gorka_2.p3d";
+};
+class SG_GRU_Sniper_DZ : SG_GRU_TL_DZ {
+	displayName = $STR_DZE_SKIN_SG_GRU_DT_SNIPER_NAME;
+	model = "\SG_GRU\Soldier_Sniper.p3d";
+};
+class SG_GRU_Spotter_DZ : SG_GRU_TL_DZ {
+	displayName = $STR_DZE_SKIN_SG_GRU_DT_SPOTTER_NAME;
+	model = "\SG_GRU\Soldier_Spotter.p3d";
+};
+class SG_GRU_TL_W_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_GorkaW_1.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_FLT_TL_NAME;
+};
+class SG_GRU_Scout_W_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_GorkaW_2.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_FLT_SCOUT_NAME;
+};
+class SG_GRU_Assaultman_W_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_gorkaW_3.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_FLT_RIFLEMAN_NAME;
+};
+class SG_GRU_Medic_W_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_gorkaW_5.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_FLT_MEDIC_NAME;
+};
+class SG_GRU_TL_D_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_GorkaD_1.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_WDL_TL_NAME;
+};
+class SG_GRU_Scout_D_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_GorkaD_2.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_WDL_SCOUT_NAME;
+};
+class SG_GRU_Marksman_D_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_gorkaD_4.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_WDL_MARKSMAN_NAME;
+};
+class SG_GRU_Operator_D_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_gorkaD_6.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_WDL_OPERATOR_NAME;
+};
+class SG_GRU_MG_D_DZ : SG_GRU_TL_DZ {
+	model = "\SG_GRU\Soldier_gorkaD_7.p3d";
+	displayName = $STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME;
+};

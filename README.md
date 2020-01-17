@@ -36,6 +36,7 @@ Included Custom Addons
 * Ghillie Suits by Brainbug - http://www.armaholic.com/page.php?id=11424
 * Retextured German KSK Units by Brainbug - http://www.armaholic.com/page.php?id=11129
 * 19 Backpack Variants by lennard91 - http://www.armaholic.com/page.php?id=13793
+* Spetsnaz GRU by stagler - http://www.armaholic.com/page.php?id=15693
 
 --------------------------
 Included Custom Islands

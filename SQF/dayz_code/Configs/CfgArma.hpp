@@ -1158,6 +1158,58 @@ class CfgSurvival {
 		class Skin_Apo_Rifleman_06_DZ : Default {
 			sex = "male";
 			playerModel = "Apo_Rifleman_06_DZ";
+		};	
+		class Skin_SG_GRU_TL_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_TL_DZ";
+		};
+		class Skin_SG_GRU_Scout_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_Scout_DZ";
+		};
+		class Skin_SG_GRU_Sniper_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_Sniper_DZ";
+		};
+		class Skin_SG_GRU_Spotter_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_Spotter_DZ";
+		};
+		class Skin_SG_GRU_TL_W_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_TL_W_DZ";
+		};
+		class Skin_SG_GRU_Scout_W_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Scout_W_DZ";
+		};
+		class Skin_SG_GRU_Assaultman_W_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Assaultman_W_DZ";
+		};
+		class Skin_SG_GRU_Medic_W_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Medic_W_DZ";
+		};
+		class Skin_SG_GRU_TL_D_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_TL_D_DZ";
+		};
+		class Skin_SG_GRU_Scout_D_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_Scout_D_DZ";
+		};
+		class Skin_SG_GRU_Marksman_D_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Marksman_D_DZ";
+		};
+		class Skin_SG_GRU_Operator_D_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Operator_D_DZ";
+		};
+		class Skin_SG_GRU_MG_D_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_MG_D_DZ";
 		};		
 	};
 };
