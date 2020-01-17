@@ -19115,6 +19115,471 @@
 		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
 			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
 			<German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
+		</Key>
+		<!--epoch 107 new backpacks-->
+		<Key ID="STR_BACKPACK_NAME_PATROL_DZE1">
+			<English>Patrol Backpack</English>
+			<French>Sac de patrouille (coyote)</French>
+			<Russian>Патрульный рюкзак</Russian>
+			<Spanish>Mochila de Patrullaje (Coyote)</Spanish>
+			<Czech>Batůžek (coyote)</Czech>
+			<German>Patrol Rucksack (Coyote)</German>
+			<Dutch>Patrouillerugzak (coyote)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_PATROL_DZE1">
+			<English>Patrol Backpack &lt;br/&gt;Capacity: 10 items</English>
+			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 10</French>
+			<Russian>Рюкзак на (10 слотов)</Russian>
+			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;10 litros</Spanish>
+			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 10 litrů</Czech>
+			<German>Patrol Rucksack von "Coyote" &lt;br/&gt;Volumen: 10 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_PATROL_DZE2">
+			<English>Patrol Backpack+</English>
+			<French>Sac de patrouille (coyote)+</French>
+			<Russian>Патрульный рюкзак+</Russian>
+			<Spanish>Mochila de Patrullaje (Coyote)+</Spanish>
+			<Czech>Batůžek (coyote)+</Czech>
+			<German>Patrol Rucksack (Coyote)+</German>
+			<Dutch>Patrouillerugzak (coyote)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_PATROL_DZE2">
+			<English>Patrol Backpack &lt;br/&gt;Capacity: 15 items</English>
+			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 15</French>
+			<Russian>Рюкзак на (15 слотов)</Russian>
+			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;15 litros</Spanish>
+			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 15 litrů</Czech>
+			<German>Patrol Rucksack von "Coyote". &lt;br/&gt;Volumen: 15 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_VEST_DZE1">
+			<English>Czech Vest Pouch</English>
+			<French>Sac tchèque</French>
+			<Russian>Чешский рюкзак (малый)</Russian>
+			<Spanish>Bolsa Chaleco</Spanish>
+			<Czech>Česká vesta</Czech>
+			<German>Tschechischer Westenrucksack</German>
+			<Dutch>Tsjechische Borstzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_VEST_DZE1">
+			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 12 items</English>
+			<French>Sac tchèque &lt;br/&gt;Taille: 12</French>
+			<Russian>Рюкзак на (12 слотов)</Russian>
+			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;12 litros</Spanish>
+			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 12 litrů</Czech>
+			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 12 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_VEST_DZE2">
+			<English>Czech Vest Pouch+</English>
+			<French>Sac tchèque+</French>
+			<Russian>Чешский рюкзак (малый)+</Russian>
+			<Spanish>Bolsa Chaleco+</Spanish>
+			<Czech>Česká vesta+</Czech>
+			<German>Tschechischer Westenrucksack+</German>
+			<Dutch>Tsjechische Borstzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_VEST_DZE2">
+			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 17 items</English>
+			<French>Sac tchèque &lt;br/&gt;Taille: 17</French>
+			<Russian>Рюкзак на (17 слотов)</Russian>
+			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;17 litros</Spanish>
+			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 17 litrů</Czech>
+			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 17 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ACU_DZE1">
+			<English>Assault Backpack</English>
+			<French>Sac d&apos;assault (ACU)</French>
+			<Russian>Штурмовой рюкзак</Russian>
+			<Spanish>Mochila de Asalto (ACU)</Spanish>
+			<Czech>Batoh Assault Pack (ACU)</Czech>
+			<German>Kampfrucksack (ACU)</German>
+			<Dutch>Aanvalsrugzak (ACU)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ACU_DZE1">
+			<English>Assault Backpack &lt;br/&gt;Capacity: 15 items</English>
+			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 15</French>
+			<Russian>Рюкзак на (15 слотов)</Russian>
+			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;15 litros</Spanish>
+			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 15 litrů</Czech>
+			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 15 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ACU_DZE2">
+			<English>Assault Backpack+</English>
+			<French>Sac d&apos;assault (ACU)+</French>
+			<Russian>Штурмовой рюкзак+</Russian>
+			<Spanish>Mochila de Asalto (ACU)+</Spanish>
+			<Czech>Batoh Assault Pack (ACU)+</Czech>
+			<German>Kampfrucksack (ACU)+</German>
+			<Dutch>Aanvalsrugzak (ACU)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ACU_DZE2">
+			<English>Assault Backpack &lt;br/&gt;Capacity: 20 items</English>
+			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 20</French>
+			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;20 litros</Spanish>
+			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 20 litrů</Czech>
+			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 20 Liter</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE1">
+			<English>Terminal Backpack</English>
+			<German>Terminal Rucksack</German>
+			<Russian>Вокзальный рюкзак</Russian>
+			<Dutch>Terminal Rugzak</Dutch>
+			<French>Sac à Dos (terminal)</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE1">
+			<English>Terminal Backpack &lt;br/&gt;Capacity: 17 items</English>
+			<German>Terminal Rucksack &lt;br/&gt;Volumen: 17 Liter</German>
+			<Russian>Вокзальный рюкзак (17 слотов)</Russian>
+			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 17 liter</Dutch>
+			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 17</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE2">
+			<English>Terminal Backpack+</English>
+			<German>Terminal Rucksack+</German>
+			<Russian>Вокзальный рюкзак+</Russian>
+			<Dutch>Terminal Rugzak+</Dutch>
+			<French>Sac à Dos (terminal)+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE2">
+			<English>Terminal Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<German>Terminal Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
+			<Russian>Вокзальный рюкзак (22 слотов)</Russian>
+			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 22 liter</Dutch>
+			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 22</French>		
+		</Key>		
+		<Key ID="STR_EPOCH_PACK_TINY_DZE1">
+			<English>Tiny Backpack</English>
+			<German>Tiny Rucksack</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE1">
+			<English>Tiny Backpack &lt;br/&gt;Capacity: 18 items</English>
+			<German>Tiny Rucksack &lt;br/&gt;Volumen: 18 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_TINY_DZE2">
+			<English>Tiny Backpack+</English>
+			<German>Tiny Rucksack+</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE2">
+			<English>Tiny Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<German>Tiny Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
+		</Key>			
+		<Key ID="STR_BACKPACK_NAME_ALICE_DZE1">
+			<English>Alice Backpack</English>
+			<French>Sac Alice</French>
+			<Russian>Рюкзак ALICE</Russian>
+			<Spanish>Mochila Alice</Spanish>
+			<Czech>Batoh Alice</Czech>
+			<German>Alice Rucksack</German>
+			<Dutch>ALICE Rugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ALICE_DZE1">
+			<English>Alice Backpack &lt;br/&gt;Capacity: 20 items</English>
+			<French>Sac Alice. &lt;br/&gt;Taille: 20</French>
+			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;20 litros</Spanish>
+			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 20 litrů</Czech>
+			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 20 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ALICE_DZE2">
+			<English>Alice Backpack+</English>
+			<French>Sac Alice+</French>
+			<Russian>Рюкзак ALICE+</Russian>
+			<Spanish>Mochila Alice+</Spanish>
+			<Czech>Batoh Alice+</Czech>
+			<German>Alice Rucksack+</German>
+			<Dutch>ALICE Rugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ALICE_DZE2">
+			<English>Alice Backpack &lt;br/&gt;Capacity: 25 items</English>
+			<French>Sac Alice &lt;br/&gt;Taille: 25</French>
+			<Russian>Рюкзак на (25 слотов)</Russian>
+			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;25 litros</Spanish>
+			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 25 litrů</Czech>
+			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 25 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE1">
+			<English>Survival Backpack</English>
+			<French>ACU de survie</French>
+			<Russian>Рюкзак выживания</Russian>
+			<Spanish>Mochila de Supervivencia ACU</Spanish>
+			<Czech>Batoh Survival ACU</Czech>
+			<German>Survival Rucksack</German>
+			<Dutch>Overlevings ACU</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE1">
+			<English>Survival Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
+			<Russian>Рюкзак на (22 слота)</Russian>
+			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
+			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
+			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE2">
+			<English>Survival Backpack+</English>
+			<French>ACU de survie+</French>
+			<Russian>Рюкзак выживания+</Russian>
+			<Spanish>Mochila de Supervivencia ACU+</Spanish>
+			<Czech>Batoh Survival ACU+</Czech>
+			<German>Survival Rucksack+</German>
+			<Dutch>Overlevings ACU+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE2">
+			<English>Survival Backpack &lt;br/&gt;Capacity: 27 items</English>
+			<French>ACU de survie&lt;br/&gt;Taille: 27</French>
+			<Russian>Рюкзак на (27 слота)</Russian>
+			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;27 litros</Spanish>
+			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 27 litrů</Czech>
+			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 27 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_COMPACT_DZE1">
+			<English>Compact Backpack</English>
+			<German>Compact Rucksack</German>
+			<Russian>Компактный рюкзак</Russian>
+			<Dutch>Compacte Rugzak</Dutch>
+			<French>Sac Compact</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE1">
+			<English>Compact Backpack &lt;br/&gt;Capacity: 25 items</English>
+			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
+			<Russian>Компактный рюкзак (25 слотов)</Russian>
+			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
+			<French>Sac Compact &lt;br/&gt;Taille: 25</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_COMPACT_DZE2">
+			<English>Compact Backpack+</English>
+			<German>Compact Rucksack+</German>
+			<Russian>Компактный рюкзак+</Russian>
+			<Dutch>Compacte Rugzak+</Dutch>
+			<French>Sac Compact+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE2">
+			<English>Compact Backpack &lt;br/&gt;Capacity: 30 items</English>
+			<German>Compact Rucksack &lt;br/&gt;Volumen: 30 Liter</German>
+			<Russian>Компактный рюкзак (30 слотов)</Russian>
+			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 30 liter</Dutch>
+			<French>Sac Compact &lt;br/&gt;Taille: 30</French>		
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE1">
+			<English>British Assault Backpack</English>
+			<French>Sac d&apos;assault britannique</French>
+			<Russian>Британский рюкзак</Russian>
+			<Spanish>Mochila de Asalto Británica</Spanish>
+			<Czech>Britský batoh</Czech>
+			<German>Britischer Kampfrucksack</German>
+			<Dutch>Britse Aanvalsrugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE1">
+			<English>British Assault Backpack &lt;br/&gt;Capacity: 30 items</English>
+			<French>Sac d&apos;assault britannique &lt;br/&gt;Taille: 30</French>
+			<Russian>Рюкзак на (30 слотов)</Russian>
+			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;30 litros</Spanish>
+			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 30 litrů</Czech>
+			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 30 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE2">
+			<English>British Assault Backpack+</English>
+			<French>Sac d&apos;assault britannique+</French>
+			<Russian>Британский рюкзак+</Russian>
+			<Spanish>Mochila de Asalto Británica+</Spanish>
+			<Czech>Britský batoh+</Czech>
+			<German>Britischer Kampfrucksack+</German>
+			<Dutch>Britse Aanvalsrugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE2">
+			<English>British Assault Backpack. &lt;br/&gt;Capacity: 35 items</English>
+			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 35</French>
+			<Russian>Рюкзак на (35 слотов)</Russian>
+			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;35 litros</Spanish>
+			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 35 litrů</Czech>
+			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 35 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_GB_DZE1">
+			<English>Gunbag</English>
+			<German>Waffentasche</German>
+			<Russian>Оружейная сумка</Russian>
+			<Dutch>Wapenzak</Dutch>
+			<French>Fourreau</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE1">
+			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
+			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
+			<Russian>Оружейная сумка (35 слотов)</Russian>
+			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
+			<French>Fourreau&lt;br/&gt;Taille: 35</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_GB_DZE2">
+			<English>Gunbag+</English>
+			<German>Waffentasche+</German>
+			<Russian>Оружейная сумка+</Russian>
+			<Dutch>Wapenzak+</Dutch>
+			<French>Fourreau+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE2">
+			<English>Gunbag &lt;br/&gt;Capacity: 40 items</English>
+			<German>Waffentasche &lt;br/&gt;Volumen: 40 Liter</German>
+			<Russian>Оружейная сумка (40 слотов)</Russian>
+			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 40 liter</Dutch>
+			<French>Fourreau&lt;br/&gt;Taille: 40</French>		
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO1_DZE1">
+			<English>Night Backpack</English>
+			<German>Night Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO1_DZE1">
+			<English>Night Backpack &lt;br/&gt;Capacity: 35 items</English>
+			<German>Night Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO1_DZE2">
+			<English>Night Backpack+</English>
+			<German>Night Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO1_DZE2">
+			<English>Night Backpack &lt;br/&gt;Capacity: 40 items</English>
+			<German>Night Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO2_DZE1">
+			<English>Survivor Backpack</English>
+			<German>Survivor Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO2_DZE1">
+			<English>Survivor Backpack &lt;br/&gt;Capacity: 40 items</English>
+			<German>Survivor Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO2_DZE2">
+			<English>Survivor Backpack+</English>
+			<German>Survivor Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO2_DZE2">
+			<English>Survivor Backpack &lt;br/&gt;Capacity: 45 items</English>
+			<German>Survivor Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_CZECH_DZE1">
+			<English>Czech Backpack</English>
+			<French>Sac-à-dos tchèque</French>
+			<Russian>Чешский рюкзак</Russian>
+			<Spanish>Mochila Checa</Spanish>
+			<Czech>Český batoh</Czech>
+			<German>Tschechischer Rucksack</German>
+			<Dutch>Tsjechische Rugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_CZECH_DZE1">
+			<English>Czech Backpack &lt;br/&gt;Capacity: 45 items</English>
+			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 45</French>
+			<Russian>Рюкзак на (45 слотов)</Russian>
+			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;45 litros</Spanish>
+			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 45 litrů</Czech>
+			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_CZECH_DZE2">
+			<English>Czech Backpack+</English>
+			<French>Sac-à-dos tchèque+</French>
+			<Russian>Чешский рюкзак+</Russian>
+			<Spanish>Mochila Checa+</Spanish>
+			<Czech>Český batoh+</Czech>
+			<German>Tschechischer Rucksack+</German>
+			<Dutch>Tsjechische Rugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_CZECH_DZE2">
+			<English>Czech Backpack &lt;br/&gt;Capacity: 50 items</English>
+			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 50</French>
+			<Russian>Рюкзак на (50 слотов)</Russian>
+			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
+			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 50 litrů</Czech>
+			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO3_DZE1">
+			<English>Wanderer Backpack</English>
+			<German>Wanderer Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO3_DZE1">
+			<English>Wanderer Backpack &lt;br/&gt;Capacity: 50 items</English>
+			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO3_DZE2">
+			<English>Wanderer Backpack+</English>
+			<German>Wanderer Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO3_DZE2">
+			<English>Wanderer Backpack &lt;br/&gt;Capacity: 55 items</English>
+			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO4_DZE1">
+			<English>Legend Backpack</English>
+			<German>Legend Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO4_DZE1">
+			<English>Legend Backpack &lt;br/&gt;Capacity: 55 items</English>
+			<German>Legend Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO4_DZE2">
+			<English>Legend Backpack+</English>
+			<German>Legend Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO4_DZE2">
+			<English>Legend Backpack &lt;br/&gt;Capacity: 60 items</English>
+			<German>Legend Rucksack &lt;br/&gt;Volumen: 60 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE1">
+			<English>Coyote Backpack</English>
+			<French>Sac-à-dos (coyote)</French>
+			<Russian>Рюкзак Сoyote</Russian>
+			<Spanish>Mochila (Coyote)</Spanish>
+			<Czech>Batoh (coyote)</Czech>
+			<German>Kampfrucksack (Coyote)</German>
+			<Dutch>Rugzak (Coyote)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE1">
+			<English>Coyote Backpack &lt;br/&gt;Capacity: 60 items</English>
+			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 60</French>
+			<Russian>Рюкзак на (60 слотов)</Russian>
+			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;60 litros</Spanish>
+			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 60 litrů</Czech>
+			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 60 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE2">
+			<English>Coyote Backpack+</English>
+			<French>Sac-à-dos (coyote)+</French>
+			<Russian>Рюкзак Сoyote+</Russian>
+			<Spanish>Mochila (Coyote)+</Spanish>
+			<Czech>Batoh (coyote)+</Czech>
+			<German>Kampfrucksack (Coyote)+</German>
+			<Dutch>Rugzak (Coyote)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE2">
+			<English>Coyote Backpack &lt;br/&gt;Capacity: 65 items</English>
+			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 65</French>
+			<Russian>Рюкзак на (65 слотов)</Russian>
+			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;65 litros</Spanish>
+			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 65 litrů</Czech>
+			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 65 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_LGB_DZE1">
+			<English>Large Gunbag</English>
+			<German>Große Waffentasche</German>
+			<Russian>Большая оружейная сумка</Russian>
+			<Dutch>Grote Wapenzak</Dutch>
+			<French>Grand Fourreau</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE1">
+			<English>Large Gunbag &lt;br/&gt;Capacity: 65 items</English>
+			<German>Große Waffentasche &lt;br/&gt;Volumen: 65 Liter</German>
+			<Russian>Большая оружейная сумка (65 слотов)</Russian>
+			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 65 liter</Dutch>
+			<French>Grand Fourreau &lt;br/&gt;Taille: 65</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_LGB_DZE2">
+			<English>Large Gunbag+</English>
+			<German>Große Waffentasche+</German>
+			<Russian>Большая оружейная сумка+</Russian>
+			<Dutch>Grote Wapenzak+</Dutch>
+			<French>Grand Fourreau+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE2">
+			<English>Large Gunbag &lt;br/&gt;Capacity: 70 items</English>
+			<German>Große Waffentasche &lt;br/&gt;Volumen: 70 Liter</German>
+			<Russian>Большая оружейная сумка (70 слотов)</Russian>
+			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 70 liter</Dutch>
+			<French>Grand Fourreau &lt;br/&gt;Taille: 70</French>
 		</Key>		
 		
 		<!--Namalsk compatibility-->

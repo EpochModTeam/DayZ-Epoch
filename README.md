@@ -35,6 +35,7 @@ Included Custom Addons
 * Post Apocalypse Units by Icewindo - http://www.armaholic.com/page.php?id=11840
 * Ghillie Suits by Brainbug - http://www.armaholic.com/page.php?id=11424
 * Retextured German KSK Units by Brainbug - http://www.armaholic.com/page.php?id=11129
+* 19 Backpack Variants by lennard91 - http://www.armaholic.com/page.php?id=13793
 
 --------------------------
 Included Custom Islands
