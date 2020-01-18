@@ -207,7 +207,7 @@ class DZ_TerminalPack_EP1: Bag_Base_EP1
 	scope = public;
 	displayName = $STR_EPOCH_PACK_TERMINAL; 
 	descriptionShort = $STR_EPOCH_PACK_DESC_TERMINAL;
-	picture = "\ca\weapons_e\data\icons\backpack_US_ASSAULT_CA.paa"; 
+	picture = "\dayz_epoch_c\icons\backpacks\terminalpack.paa"; 
 	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
 	mapSize = 2; 
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us_AUV"; 
