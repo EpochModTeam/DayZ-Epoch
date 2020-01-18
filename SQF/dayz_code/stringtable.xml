@@ -8316,6 +8316,10 @@
 			<Russian>Шкода (зеленая)</Russian>
 			<German>Skoda (grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE">
+			<English>Skoda Octavia (white)</English>
+			<German>Skoda Octavia (weiß)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_BLACK">
 			<English>SUV (black)</English>
 			<Russian>SUV (черный)</Russian>
