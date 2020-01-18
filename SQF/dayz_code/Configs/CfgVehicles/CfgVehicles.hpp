@@ -439,6 +439,7 @@ class CfgVehicles
 	#include "Car\UralCivil_DZ.hpp"
 	#include "Car\BRDM2_DZ.hpp"
 	#include "Car\Jackal.hpp"
+	#include "Car\Dingo.hpp"
 	//Helicopters
 	#include "Helicopter\MI17.hpp"
 	#include "Helicopter\UH1H.hpp"
