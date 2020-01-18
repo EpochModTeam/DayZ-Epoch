@@ -8084,6 +8084,16 @@
 			<Russian>Хамви GPK (Пустынный)</Russian>
 			<German>Humvee GPK (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DSHKM">
+			<English>HMMWV DSHKM (Desert)</English>
+			<Russian>Хамви DSHKM (Пустынный)</Russian>
+			<German>Humvee DSHKM (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_HMMWV_AGS30">
+			<English>HMMWV AGS-30 (Desert)</English>
+			<Russian>Хамви AGS-30 (Пустынный)</Russian>
+			<German>Humvee AGS-30 (Wüstentarn)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED">
 			<English>HMMWV M240 (Woodland)</English>
 			<Russian>Хамви GPK (Лесной камуфляж)</Russian>
@@ -19176,6 +19186,10 @@
 			<English>Spetsnaz Medic (Camo)</English>
 			<German>Speznas Feldarzt (Flecktarn)</German>
 		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_RIFLEMAN_NAME">
+			<English>Spetsnaz Rifleman (Camo)</English>
+			<German>Speznas Schütze (Flecktarn)</German>
+		</Key>		
 		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_TL_NAME">
 			<English>Spetsnaz Teamleader (Woodland)</English>
 			<German>Speznas Truppführer (Waldtarn)</German>

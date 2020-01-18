@@ -1,4 +1,4 @@
-class HMMWV_Base: Car
+class HMMWV_DZE_Base: Car
 {
 	scope = private;
 	accuracy = 0.3;
@@ -306,7 +306,7 @@ class HMMWV_Base: Car
 	class AnimationSources;
 };
 
-class HMMWV_DZ: HMMWV_Base {	
+class HMMWV_DZ: HMMWV_DZE_Base {	
 	accuracy = 0.32;
 	displayname = $STR_VEH_NAME_HMMWV;
 	displaynameshort = $STR_VEH_NAME_HMMWV;
@@ -333,7 +333,7 @@ class HMMWV_DZ: HMMWV_Base {
 	};
 };
 
-class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_Base
+class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_DZE_Base
 {
 	expansion = 1;
 	side = 1;
@@ -646,7 +646,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_M998A2_SOV_DES_EP1_DZ
 	};
 };
 
-class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_Base 
+class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_DZE_Base 
 {
 	expansion = 1;
 	side = 1;
@@ -740,7 +740,102 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
 	};
 };
 
-class HMMWV_Armored_DZ: HMMWV_base {
+class HMMWV_M1114_AGS_ACR_DZ: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
+	displayName = $STR_VEH_NAME_HMMWV_AGS30;
+	model = "\Ca\Wheeled_ACR\HMMWV\M1114_AGS_ACR.p3d";	
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			weapons[] = {"AGS30"};
+			magazines[] = {"29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30","29Rnd_30mm_AGS30"};
+			gunnerAction = "LR_Gunner01_EP1";
+			gunnerOpticsModel = "\ca\weapons\optika_AGS30.p3d";
+			class GunFire: WeaponCloudsMGun
+			{
+				interval = 0.01;
+			};
+			class ViewOptics: ViewOptics
+			{
+				initFov = 0.2;
+				minFov = 0.058;
+				maxFov = 0.2;
+			};
+		};
+	};	
+	class AnimationSources: AnimationSources
+	{
+		class ReloadAnim
+		{
+			source = "reload";
+			weapon = "AGS30";
+		};
+		class ReloadMagazine
+		{
+			source = "reloadmagazine";
+			weapon = "AGS30";
+		};
+		class Revolving
+		{
+			source = "revolving";
+			weapon = "AGS30";
+		};
+	};	
+};
+
+class HMMWV_M1114_AGS_ACR_DZE: HMMWV_M1114_AGS_ACR_DZ {
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			magazines[] = {};
+		};
+	};	
+};
+
+class HMMWV_M1114_DSHKM_ACR_DZ: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
+	displayName = $STR_VEH_NAME_HMMWV_DSHKM;
+	model = "\Ca\Wheeled_ACR\HMMWV\M1114_DSK_ACR.p3d";
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			gunnerOpticsModel = "\ca\Weapons\optika_empty.p3d";
+			weapons[] = {"DShKM"};
+			magazines[] = {"50Rnd_127x107_DSHKM","50Rnd_127x107_DSHKM","50Rnd_127x107_DSHKM","50Rnd_127x107_DSHKM","50Rnd_127x107_DSHKM","50Rnd_127x107_DSHKM"};
+		};
+	};	
+	class AnimationSources: AnimationSources
+	{
+		class ReloadAnim
+		{
+			source = "reload";
+			weapon = "DShKM";
+		};
+		class ReloadMagazine
+		{
+			source = "reloadmagazine";
+			weapon = "DShKM";
+		};
+		class Revolving
+		{
+			source = "revolving";
+			weapon = "DShKM";
+		};
+	};	
+};
+
+class HMMWV_M1114_DSHKM_ACR_DZE: HMMWV_M1114_DSHKM_ACR_DZ {
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			magazines[] = {};
+		};
+	};		
+};
+
+class HMMWV_Armored_DZ: HMMWV_DZE_Base {
 	displayname = $STR_VEH_NAME_HMMWV_ARMORED;
 	model = "\ca\wheeled2\HMMWV\M1114_Armored\M1114_Armored.p3d";
 	accuracy = 0.32;
@@ -837,7 +932,7 @@ class HMMWV_Armored_DZE: HMMWV_Armored_DZ {
 	};
 };
 
-class HMMWV_M2_DZ: HMMWV_base {
+class HMMWV_M2_DZ: HMMWV_DZE_Base {
 	displayname = $STR_VEH_NAME_HMMWV_M2;
 	scope = public;
 	crew = "";
@@ -882,7 +977,7 @@ class HMMWV_M2_DZE: HMMWV_M2_DZ {
 	};
 };
 
-class HMMWV_M1035_DES_EP1_DZE : HMMWV_base {
+class HMMWV_M1035_DES_EP1_DZE : HMMWV_DZE_Base {
 	scope = public;
 	model = "\ca\wheeled_e\HMMWV\M1035_transport";
 	displayname = $STR_VEH_NAME_HMMWV_DES;
@@ -913,7 +1008,7 @@ class HMMWV_M1035_DES_EP1_DZE : HMMWV_base {
 	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_canvas_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_canvas_1_co.paa"};
 };
 
-class HMMWV_Ambulance_DZE : HMMWV_base {
+class HMMWV_Ambulance_DZE : HMMWV_DZE_Base {
 	scope = public;
 	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE;
 	model = "\ca\wheeled2\HMMWV\M997A2_Ambulance\M997A2_Ambulance";
