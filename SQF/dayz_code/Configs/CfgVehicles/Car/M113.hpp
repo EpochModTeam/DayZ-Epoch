@@ -409,9 +409,9 @@ class M113Ambul_UN_EP1_DZ : M113Ambul_Base {
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 5;
-	transportMaxMagazines = 25;
-	transportmaxbackpacks = 4;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 6;
 };
 
 class M113_UN_EP1_DZ : M113_Base {
@@ -425,9 +425,9 @@ class M113_UN_EP1_DZ : M113_Base {
 	hiddenSelectionsTextures[] = {"\ca\Tracked_E\M113\Data\m113a3_01_UN_co.paa"};	
 	class TransportMagazines {};
 	class TransportWeapons {};
-	transportMaxMagazines = 100; // Default: 100
-	transportMaxWeapons = 20; // Default: 20
-	//transportmaxbackpacks = ; // Default:
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 6;
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
@@ -448,9 +448,9 @@ class M113Ambul_TK_EP1_DZ : M113Ambul_Base {
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 5;
-	transportMaxMagazines = 25;
-	transportmaxbackpacks = 4;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 6;
 };
 
 class M113_TK_EP1_DZ : M113_Base {
@@ -467,9 +467,9 @@ class M113_TK_EP1_DZ : M113_Base {
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxMagazines = 100; // Default: 100
-	transportMaxWeapons = 20; // Default: 20
-	//transportmaxbackpacks = ; // Default:
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 6;
 };
 
 // Ammo Less
