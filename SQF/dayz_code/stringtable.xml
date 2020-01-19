@@ -8274,6 +8274,54 @@
 			<Russian>MTVR Пустынный (Заправщик)</Russian>
 			<German>MTVR Wüstentarn (Treibstoff)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND">
+			<English>Tatra (Woodland)</English>
+			<German>Tatra (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND">
+			<English>Tatra Open (Woodland)</English>
+			<German>Tatra Offen (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND">
+			<English>Tatra PKT (Woodland)</English>
+			<German>Tatra PKT (Waldtarn)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_TATRA_DESERT">
+			<English>Tatra (Desert)</English>
+			<German>Tatra (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT">
+			<English>Tatra Open (Desert)</English>
+			<German>Tatra Offen (Wüstentarn)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT">
+			<English>Tatra PKT (Desert)</English>
+			<German>Tatra PKT (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL">
+			<English>Tatra Woodland (Fuel)</English>
+			<German>Tatra Waldtarn (Treibstoff)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL">
+			<English>Tatra Desert (Fuel)</English>
+			<German>Tatra Wüstentarn (Treibstoff)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND">
+			<English>Tatra Material Transport (Woodland)</English>
+			<German>Tatra Materialtransport (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND">
+			<English>Tatra Weapon Transport (Woodland)</English>
+			<German>Tatra Waffentransport (Waldtarn)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT">
+			<English>Tatra Material Transport (Desert)</English>
+			<German>Tatra Materialtransport (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT">
+			<English>Tatra Weapon Transport (Desert)</English>
+			<German>Tatra Waffentransport (Wüstentarn)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM">
 			<English>Pick-up (DSHKM)</English>
 		</Key>

@@ -138,12 +138,6 @@ class CfgVehicles
 				class ViewOptics;
 			};
 		};
-		//Won't support loading external vehicle addons (with custom UserActions) which we can not include in Epoch. Child UserActions overwrite inherited UserActions.
-		/*class UserActions
-		{
-			class Repair {ACTION_REPAIR; radius = 8;};
-			class Salvage {ACTION_SALVAGE; radius = 8;};
-		};*/
 	};
 	class Plane: Air
 	{
@@ -157,8 +151,6 @@ class CfgVehicles
 		class AnimationSources;
 		class UserActions
 		{
-			//class Repair {ACTION_REPAIR; radius = 8;};
-			//class Salvage {ACTION_SALVAGE; radius = 8;};
 			class PushPlane {ACTION_PUSH;};
 		};
 	};
@@ -198,11 +190,6 @@ class CfgVehicles
 				brightness = 0.5;
 			};
 		};
-		/*class UserActions
-		{
-			class Repair {ACTION_REPAIR; radius = 4;};
-			class Salvage {ACTION_SALVAGE; radius = 4;};
-		};*/
 	};
 	class Car : LandVehicle {
 		class HitPoints
@@ -282,7 +269,6 @@ class CfgVehicles
 
 
 	//External Class
-	//class SkodaBase; //in Car\Skoda.hpp
 	class ATV_Base_EP1 : Car
 	{
 		class HitPoints : HitPoints
@@ -308,12 +294,28 @@ class CfgVehicles
 		};
 	};
 	class RubberBoat;
-	//class UAZ_Unarmed_Base;
-	//class HMMWV_Base;
 	class AH6_Base_EP1;
 	class An2_Base_EP1;
 	class TT650_Base;
-	class Truck;
+	class Truck: Car
+	{
+		class HitPoints: HitPoints
+		{
+			class HitLFWheel;
+			class HitLBWheel;
+			class HitLMWheel;
+			class HitRFWheel;
+			class HitRBWheel;
+			class HitRMWheel;
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
+		};
+		class DestructionEffects;
+		class Turrets;
+	};		
+	
 	class V3S_Base : Truck
 	{
 		class Reflectors
@@ -347,9 +349,6 @@ class CfgVehicles
 
 		};
 	};
-	//class Ship;
-	//class Bag_Base_EP1;
-	//class Bag_Base_BAF;
 	class HouseBase;
 	class Ruins: HouseBase {};
 	class House : HouseBase
@@ -362,7 +361,6 @@ class CfgVehicles
 	class Strategic;
 	class NonStrategic;
 	class Thing;
-//	class Land_Fire;
 	class BuiltItems;
 	class Building;
 	class ReammoBox;
@@ -388,8 +386,6 @@ class CfgVehicles
 	};
 	class Old_moto_base;
 	class Ikarus_base;
-	//class Volha_TK_CIV_Base_EP1;
-	//class LandRover_CZ_EP1;
 	class Ural_Base;
 
 	#include "RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
@@ -441,6 +437,7 @@ class CfgVehicles
 	#include "Car\Jackal.hpp"
 	#include "Car\Dingo.hpp"
 	#include "Car\Octavia.hpp"
+	#include "Car\Tatra_T810.hpp"
 	//Helicopters
 	#include "Helicopter\MI17.hpp"
 	#include "Helicopter\UH1H.hpp"
