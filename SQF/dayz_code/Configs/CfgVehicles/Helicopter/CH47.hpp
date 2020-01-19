@@ -2,7 +2,6 @@ class CH_47F_EP1;
 class CH_47F_EP1_DZ : CH_47F_EP1 { 
 	accuracy = 1000; 
 	vehicleClass = "Air";
-	model = "\ca\air_E\CH47\CH_47F"; 
 	scope = public; 
 	displayName = $STR_VEH_NAME_CH47;
 	crew = ""; 
