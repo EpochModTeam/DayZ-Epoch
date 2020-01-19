@@ -33,8 +33,6 @@ if (!isDedicated) then {
 	DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
 	timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 	
-	// Not sure about this one
-	DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
 	
 	// Build restrictions
 	DZE_NoBuildNear = []; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
@@ -115,14 +113,14 @@ if (!isDedicated) then {
 	dayz_markSelf = 0; // Players can see their own position on the map 0=never, 1=always, 2=With GPS only
 	dayz_markBody = 0; // Players can see their corpse position on the map 0=never, 1=always, 2=With GPS only
 	dayz_requireRadio = false; // Require players to have a radio on their toolbelt to create a group, be in a group and receive invites.
-};
-
+};	
 
 // Both
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
 dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
 DZE_HeliLift = true; // Enable Epoch heli lift system
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
+DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
 DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
 
 // Loot system
