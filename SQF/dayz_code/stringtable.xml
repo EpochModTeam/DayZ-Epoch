@@ -8236,8 +8236,18 @@
 			<English>LAV-25 HQ (M240)</English>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ">
-			<English>BRDM-2 HQ (PKT)</English>
+			<English>BRDM-2 HQ</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_TK">
+			<English>BRDM-2 TK</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_GUE">
+			<English>BRDM-2 GUE</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_BRDM2_DES">
+			<English>BRDM-2 Desert Camo</English>
+			<German>BRDM-2 Wüstentarn</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN">
 			<English>M113 UN Ambulance</English>
 			<Russian>M113 UN Скорая</Russian>
