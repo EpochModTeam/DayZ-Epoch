@@ -787,3 +787,59 @@ class Skin_SG_GRU_Operator_D_DZ : Skin_SG_GRU_TL_DZ {
 class Skin_SG_GRU_MG_D_DZ : Skin_SG_GRU_TL_DZ {
 	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME;
 };
+//ACR Skins
+class Skin_CZ_Soldier805_DES_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME;
+};
+class Skin_CZ_Soldier_805_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME;
+};
+class Skin_CZ_Soldier_Crew_Dst_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_CREW_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_CREW_NAME;
+};
+class Skin_CZ_Soldier_Officer_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_OFFICER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_OFFICER_NAME;
+};
+class Skin_CZ_Soldier_Recon_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_SPFORCE_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_SPFORCE_NAME;
+};
+class Skin_CZ_Soldier_Spec1_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_RECON_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_RECON_NAME;
+};
+class Skin_CZ_Soldier_Spec2_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_SAPPER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_SAPPER_NAME;
+};
+class Skin_CZ_Soldier_Spec3_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_ASSAULT_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_ASSAULT_NAME;
+};
+class Skin_CZ_Soldier_Spec_Demo_Dst_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME;
+};
+class Skin_CZ_Soldier_Sniper_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_GHILLIE_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_GHILLIE_NAME;
+};
+class Skin_CZ_Soldier_Light_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME;
+};

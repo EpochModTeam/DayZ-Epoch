@@ -16912,11 +16912,16 @@
 			<English>Sergei</English>
 			<Russian>Сергей</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER">
+			<English>Police Officer</English>
+			<German>Polizei Offizier</German>
+			<Russian>сотрудника полиции</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_SERGEI_DESC">
 			<English>Police Officer Uniform</English>
 			<German>Polizei Offizier Uniform</German>
 			<Russian>Униформа сотрудника полиции</Russian>
-		</Key>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_ETHAN">
 			<English>Ethan</English>
 			<Russian>Итан</Russian>
@@ -16926,6 +16931,11 @@
 			<German>Piloten Uniform</German>
 			<Russian>Униформа пилота</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_PILOT">
+			<English>Pilot</English>
+			<German>Pilot</German>
+			<Russian>пилота</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_HARRY">
 			<English>Harry</English>
 			<Russian>Гарри</Russian>
@@ -16935,16 +16945,29 @@
 			<German>Presse Kleidung</German>
 			<Russian>Униформа сотрудника прессы</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_JOURNALIST">
+			<English>Journalist</English>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_TERRORISTUNIFORM">
 			<English>Terrorist Uniform</English>
 			<German>Terroristen Kleidung</German>
 			<Russian>Униформа террориста</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_TERRORIST">
+			<English>Terrorist</English>
+			<German>Terrorist</German>
+			<Russian>террориста</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_REBELUNIFORM">
 			<English>Rebel Uniform</English>
 			<German>Rebellen Kleidung</German>
 			<Russian>Униформа повстанцев</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_REBEL">
+			<English>Rebel</English>
+			<German>Rebell</German>
+			<Russian>повстанцев</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_DONALD">
 			<English>Donald</English>
 			<Russian>Дональд</Russian>
@@ -16954,6 +16977,10 @@
 			<German>Geschäftsanzug</German>
 			<Russian>Деловой костюм</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_BUSINESSMAN">
+			<English>Business Man</English>
+			<German>Geschäftsmann</German>
+		</Key>			
 		<Key ID="STR_EPOCH_SKINS_JAMES">
 			<English>James</English>
 			<Russian>Джеймс</Russian>
@@ -16963,10 +16990,20 @@
 			<German>Priester Kleidung</German>
 			<Russian>Ряса священника</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_PRIEST">
+			<English>Priest</English>
+			<German>Priester</German>
+			<Russian>Ряса</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_DUANE">
 			<English>Duane</English>
 			<Russian>Дуэйн</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_Rocker">
+			<English>Rocker </English>
+			<German>Rocker</German>
+			<Russian>Рокер</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_DUANE_DESC">
 			<English>Rocker (black)</English>
 			<German>Rocker (schwarz)</German>
@@ -17223,6 +17260,13 @@
 			<Polish>Członek załogi</Polish>
 			<Hungarian>Legénység</Hungarian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_SOLDIER">
+			<English>Soldier</English>
+			<German>Soldat</German>
+		</Key>			
+		<Key ID="STR_EPOCH_SKINS_GENERAL">
+			<English>General</English>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_BOSS">
 			<English>Boss</English>
 			<Russian>Босс</Russian>
@@ -17307,9 +17351,9 @@
 			<German>MVD Soldat</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TERRORISTCAMO">
-			<English>Terrorist Camo</English>
+			<English>Camo Terrorist</English>
 			<Russian>Камуфляж Террориста</Russian>
-			<German>Terroristen Tarn</German>
+			<German>Tarn Terrorist</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_INSCOMMANDER">
 			<English>Ins Commander</English>
@@ -17331,6 +17375,10 @@
 			<Russian>Доктор</Russian>
 			<German>Doktor</German>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_WORKER">
+			<English>Worker</English>
+			<German>Arbeiter</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_WORKER1">
 			<English>Worker 1</English>
 			<German>Arbeiter 1</German>
@@ -17343,6 +17391,10 @@
 			<English>Worker 3</English>
 			<German>Arbeiter 3</German>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_TKCITIZEN">
+			<English>TK Citizen</English>
+			<German>TK Bürger</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN1">
 			<English>TK Citizen 1</English>
 			<German>TK Bürger 1</German>
@@ -17399,6 +17451,10 @@
 			<English>Camo Sapper</English>
 			<German>Tarn Pionier</German>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_THERMOSUITMAN">
+			<English>Man in Thermo Suit</English>
+			<German>Mann in Thermoanzug</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTER">
 			<English>Thermo Suit (tan)</English>
 			<German>Thermoanzug (braun)</German>
@@ -19340,9 +19396,52 @@
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME">
 			<English>Spetsnaz MG Soldier (Woodland)</English>
-			<German>Speznas MG Schütze (Wald)</German>
+			<German>Speznas MG Schütze (Waldtarn)</German>
 		</Key>	
-		 
+		<Key ID="STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME">
+			<English>ACR Soldier (Woodland)</English>
+			<German>ACR Soldat (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME">
+			<English>ACR Soldier (Desert)</English>
+			<German>ACR Soldat (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_CREW_NAME">
+			<English>ACR Crewman</English>
+			<German>ACR Besatzungsmitglied</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_OFFICER_NAME">
+			<English>ACR Officer</English>
+			<German>ACR Offizier</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_SPFORCE_NAME">
+			<English>ACR Special Forces</English>
+			<German>ACR Spezialeinheit</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_RECON_NAME">
+			<English>ACR Recon</English>
+			<German>ACR Aufklärer</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_ASSAULT_NAME">
+			<English>ACR Assault Unit</English>
+			<German>ACR Angriffseinheit</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_SAPPER_NAME">
+			<English>ACR Sapper</English>
+			<German>ACR Pionier</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME">
+			<English>ACR Heavy Soldier</English>
+			<German>ACR Schwerer Soldat</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_GHILLIE_NAME">
+			<English>ACR Ghillie Suit</English>
+			<German>ACR Ghillie-Anzug</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME">
+			<English>ACR Soldier Shirt</English>
+			<German>ACR Soldat T-Shirt</German>
+		</Key>		
 		<!--epoch 107 new backpacks-->
 		<Key ID="STR_BACKPACK_NAME_PATROL_DZE1">
 			<English>Patrol Backpack</English>

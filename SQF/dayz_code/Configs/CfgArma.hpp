@@ -1210,6 +1210,50 @@ class CfgSurvival {
 		class Skin_SG_GRU_MG_D_DZ : Default { 
 			sex = "male";
 			playerModel = "SG_GRU_MG_D_DZ";
+		};	
+		class Skin_CZ_Soldier805_DES_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier805_DES_ACR_DZ";
+		};
+		class Skin_CZ_Soldier_805_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_805_Wdl_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Crew_Dst_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Crew_Dst_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Officer_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Officer_Wdl_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Recon_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Recon_Wdl_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Spec1_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Spec1_Wdl_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Spec2_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Spec2_Wdl_ACR_DZ";
+		};	
+		class Skin_CZ_Soldier_Spec3_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Spec3_Wdl_ACR_DZ";
+		};	
+		class Skin_CZ_Soldier_Spec_Demo_Dst_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Spec_Demo_Dst_ACR_DZ";
+		};	
+		class Skin_CZ_Soldier_Sniper_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Sniper_ACR_DZ";
+		};
+		class Skin_CZ_Soldier_Light_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Light_Wdl_ACR_DZ";
 		};		
 	};
 };

@@ -135,7 +135,7 @@ class Rocket_DZ: Survivor_DZ { //BAF_Soldier_Officer_W
 
 class Soldier1_DZ: Survivor_DZ { //BAF_Soldier_W
 	scope = public;
-	displayName = "Soldier";
+	displayName = $STR_EPOCH_SKINS_SOLDIER;
 	model = "\ca\characters_d_BAF\BAF_Soldier_1_BAF";
 	portrait = "ca\characters_d_baf\Data\portraits\baf_soldier_CA";
 	class Wounds
@@ -161,7 +161,7 @@ class Soldier1_DZ: Survivor_DZ { //BAF_Soldier_W
 
 class Sniper1_DZ: Survivor_DZ { //BAF_Soldier_SniperH_W
 	scope = public;
-	displayName = "Sniper";
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
 	model = "\ca\characters_e\Ghillie\Ghillie_Overall";
 	portrait = "\Ca\characters\data\portraits\comBarHead_common_sniper_ca";
 	camouflage = 0.5;
@@ -203,7 +203,7 @@ class Camo1_DZ: Survivor_DZ { //BAF_Soldier_L_W
 
 class INS_Lopotev;
 class INS_Lopotev_DZ: INS_Lopotev {
-		displayName = "Boss";
+		displayName = $STR_EPOCH_SKINS_BOSS;
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -216,7 +216,7 @@ class INS_Lopotev_DZ: INS_Lopotev {
 };
 class RU_Soldier_Crew;
 class RU_Soldier_Crew_DZ: RU_Soldier_Crew {
-		displayName = "Crewman";
+		displayName = $STR_EPOCH_SKINS_CREWMAN;
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -229,7 +229,7 @@ class RU_Soldier_Crew_DZ: RU_Soldier_Crew {
 };
 class TK_Commander_EP1;
 class TK_Commander_EP1_DZ: TK_Commander_EP1 {
-		displayName = "General";
+		displayName = $STR_EPOCH_SKINS_GENERAL;
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -242,7 +242,7 @@ class TK_Commander_EP1_DZ: TK_Commander_EP1 {
 };
 class TK_Soldier_Sniper_EP1;
 class TK_Soldier_Sniper_EP1_DZ: TK_Soldier_Sniper_EP1 {
-		displayName = "Desert Sniper";
+		displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -255,7 +255,7 @@ class TK_Soldier_Sniper_EP1_DZ: TK_Soldier_Sniper_EP1 {
 };
 class TK_Special_Forces_MG_EP1;
 class TK_Special_Forces_MG_EP1_DZ: TK_Special_Forces_MG_EP1 {
-		displayName = "Smuggler";
+		displayName = $STR_EPOCH_SKINS_SMUGGLER;
 		side = 1;
 		weapons[] = {"Throw","Put"};
 		backpack = "";
@@ -357,7 +357,7 @@ class Bandit2_DZ: Soldier_Crew_PMC { //German bright color camo bandit
 // new bandits
 class GUE_Soldier_MG;
 class GUE_Soldier_MG_DZ: GUE_Soldier_MG {
-	displayName = "Bandit Gunner";
+	displayName = $STR_CHAR_2;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -383,7 +383,7 @@ class GUE_Soldier_Sniper_DZ: GUE_Soldier_Sniper {
 };
 class GUE_Soldier_Crew;
 class GUE_Soldier_Crew_DZ: GUE_Soldier_Crew {
-	displayName = "Bandit ";
+	displayName = $STR_CHAR_2;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -396,7 +396,7 @@ class GUE_Soldier_Crew_DZ: GUE_Soldier_Crew {
 };
 class GUE_Soldier_CO;
 class GUE_Soldier_CO_DZ: GUE_Soldier_CO {
-	displayName = "Bandit Gunner";
+	displayName = $STR_CHAR_2;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -409,7 +409,7 @@ class GUE_Soldier_CO_DZ: GUE_Soldier_CO {
 };
 class GUE_Soldier_2;
 class GUE_Soldier_2_DZ: GUE_Soldier_2 {
-	displayName = "Bandit Gunner";
+	displayName = $STR_CHAR_2;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -422,7 +422,7 @@ class GUE_Soldier_2_DZ: GUE_Soldier_2 {
 };
 class RU_Policeman;
 class RU_Policeman_DZ: RU_Policeman {
-	displayName = "Policeman";
+	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -435,7 +435,7 @@ class RU_Policeman_DZ: RU_Policeman {
 };
 class Pilot_EP1;
 class Pilot_EP1_DZ: Pilot_EP1 {
-	displayName = "Pilot";
+	displayName = $STR_EPOCH_SKINS_PILOT;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -448,7 +448,7 @@ class Pilot_EP1_DZ: Pilot_EP1 {
 };
 class Haris_Press_EP1;
 class Haris_Press_EP1_DZ: Haris_Press_EP1 {
-	displayName = "Press";
+	displayName = $STR_EPOCH_SKINS_JOURNALIST;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -461,7 +461,7 @@ class Haris_Press_EP1_DZ: Haris_Press_EP1 {
 };
 class Ins_Soldier_GL;
 class Ins_Soldier_GL_DZ: Ins_Soldier_GL {
-	displayName = "Terrorist";
+	displayName = $STR_EPOCH_SKINS_TERRORIST;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -474,7 +474,7 @@ class Ins_Soldier_GL_DZ: Ins_Soldier_GL {
 };
 class GUE_Commander;
 class GUE_Commander_DZ: GUE_Commander {
-	displayName = "Rebel";
+	displayName = $STR_EPOCH_SKINS_REBEL;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -487,7 +487,7 @@ class GUE_Commander_DZ: GUE_Commander {
 };
 class Functionary1_EP1;
 class Functionary1_EP1_DZ: Functionary1_EP1 {
-	displayName = "Business Suit";
+	displayName = $STR_EPOCH_SKINS_BUSINESSMAN;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -500,7 +500,7 @@ class Functionary1_EP1_DZ: Functionary1_EP1 {
 };
 class Priest;
 class Priest_DZ: Priest {
-	displayName = "Priest";
+	displayName = $STR_EPOCH_SKINS_PRIEST;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -513,7 +513,7 @@ class Priest_DZ: Priest {
 };
 class Rocker1;
 class Rocker1_DZ: Rocker1 {
-	displayName = "Rocker (black)";
+	displayName = $STR_EPOCH_SKINS_Rocker;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -526,7 +526,7 @@ class Rocker1_DZ: Rocker1 {
 };
 class Rocker2;
 class Rocker2_DZ: Rocker2 {
-	displayName = "Rocker (brown)";
+	displayName = $STR_EPOCH_SKINS_Rocker;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -539,7 +539,7 @@ class Rocker2_DZ: Rocker2 {
 };
 class Rocker3;
 class Rocker3_DZ: Rocker3 {
-	displayName = "Rocker (blue)";
+	displayName = $STR_EPOCH_SKINS_Rocker;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -552,7 +552,7 @@ class Rocker3_DZ: Rocker3 {
 };
 class Rocker4;
 class Rocker4_DZ: Rocker4 {
-	displayName = "Rocker (green)";
+	displayName = $STR_EPOCH_SKINS_Rocker;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -566,7 +566,7 @@ class Rocker4_DZ: Rocker4 {
 
 class TK_INS_Warlord_EP1;
 class TK_INS_Warlord_EP1_DZ: TK_INS_Warlord_EP1 {
-	displayName = "Takistani Warlord";
+	displayName = $STR_EPOCH_SKINS_TAKISTANIWARLORD;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -579,7 +579,7 @@ class TK_INS_Warlord_EP1_DZ: TK_INS_Warlord_EP1 {
 
 class TK_INS_Soldier_EP1;
 class TK_INS_Soldier_EP1_DZ: TK_INS_Soldier_EP1 {
-	displayName = "Takistani Soldier";
+	displayName = $STR_EPOCH_SKINS_TAKISTANISOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -592,7 +592,7 @@ class TK_INS_Soldier_EP1_DZ: TK_INS_Soldier_EP1 {
 	
 class CZ_Special_Forces_GL_DES_EP1;
 class CZ_Special_Forces_GL_DES_EP1_DZ: CZ_Special_Forces_GL_DES_EP1 {
-	displayName = "Special Forces";
+	displayName = $STR_EPOCH_SKINS_SPECIALFORCES;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -605,7 +605,7 @@ class CZ_Special_Forces_GL_DES_EP1_DZ: CZ_Special_Forces_GL_DES_EP1 {
 	
 class Drake_Light;
 class Drake_Light_DZ: Drake_Light {
-	displayName = "Desert Camo";
+	displayName = $STR_EPOCH_SKINS_DESERTCAMO;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -618,7 +618,7 @@ class Drake_Light_DZ: Drake_Light {
 };
 class Soldier_Bodyguard_AA12_PMC;
 class Soldier_Bodyguard_AA12_PMC_DZ: Soldier_Bodyguard_AA12_PMC {
-	displayName = "Bodyguard";
+	displayName = $STR_EPOCH_SKINS_BODYGUARD;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -630,7 +630,7 @@ class Soldier_Bodyguard_AA12_PMC_DZ: Soldier_Bodyguard_AA12_PMC {
 };
 
 class Soldier_Sniper_PMC_DZ: Soldier_Crew_PMC {
-	displayName = "Marksman";
+	displayName = $STR_EPOCH_SKINS_MARKSMAN;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -650,7 +650,7 @@ class Soldier_Sniper_PMC_DZ: Soldier_Crew_PMC {
 };
 class Soldier_TL_PMC;
 class Soldier_TL_PMC_DZ: Soldier_TL_PMC {
-	displayName = "Team Leader";
+	displayName = $STR_EPOCH_SKINS_TEAMLEADER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -662,7 +662,7 @@ class Soldier_TL_PMC_DZ: Soldier_TL_PMC {
 };
 class FR_OHara;
 class FR_OHara_DZ: FR_OHara {
-	displayName = "Jungle Camo";
+	displayName = $STR_EPOCH_SKINS_JUNGLECAMO;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -677,7 +677,7 @@ class FR_OHara_DZ: FR_OHara {
 };
 class FR_Rodriguez;
 class FR_Rodriguez_DZ: FR_Rodriguez {
-	displayName = "Gunner Outfit";
+	displayName = $STR_EPOCH_SKINS_GUNNEROUTFIT;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -691,7 +691,7 @@ class FR_Rodriguez_DZ: FR_Rodriguez {
 };
 class CZ_Soldier_Sniper_EP1;
 class CZ_Soldier_Sniper_EP1_DZ: CZ_Soldier_Sniper_EP1 {
-	displayName = "Desert Ghillie";
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -704,7 +704,7 @@ class CZ_Soldier_Sniper_EP1_DZ: CZ_Soldier_Sniper_EP1 {
 };
 class Graves_Light;
 class Graves_Light_DZ: Graves_Light {
-	displayName = "Urban Camo";
+	displayName = $STR_EPOCH_SKINS_URBANCAMO;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -719,7 +719,7 @@ class Graves_Light_DZ: Graves_Light {
 //new Epoch 1.06
 class USMC_Soldier_Officer;
 class USMC_Soldier_Officer_DZ: USMC_Soldier_Officer {
-	displayName = "USMC Officer";
+	displayName = $STR_EPOCH_SKINS_USMCOFFICER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -732,7 +732,7 @@ class USMC_Soldier_Officer_DZ: USMC_Soldier_Officer {
 };
 class USMC_Soldier_MG;
 class USMC_Soldier_MG_DZ: USMC_Soldier_MG {
-	displayName = "USMC Soldier";
+	displayName = $STR_EPOCH_SKINS_USMCSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -745,7 +745,7 @@ class USMC_Soldier_MG_DZ: USMC_Soldier_MG {
 };
 class USMC_Soldier_Pilot;
 class USMC_Soldier_Pilot_DZ: USMC_Soldier_Pilot {
-	displayName = "USMC Pilot";
+	displayName = $STR_EPOCH_SKINS_USMCPILOT;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -758,7 +758,7 @@ class USMC_Soldier_Pilot_DZ: USMC_Soldier_Pilot {
 };
 class FR_TL;
 class FR_TL_DZ: FR_TL {
-	displayName = "Camo Teamleader";
+	displayName = $STR_EPOCH_SKINS_CAMOTEAMLEADER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -771,7 +771,7 @@ class FR_TL_DZ: FR_TL {
 };
 class FR_R;
 class FR_R_DZ: FR_R {
-	displayName = "Camo Recon";
+	displayName = $STR_EPOCH_SKINS_CAMORECON;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -784,7 +784,7 @@ class FR_R_DZ: FR_R {
 };
 class FR_Marksman;
 class FR_Marksman_DZ: FR_Marksman {
-	displayName = "Camo Marksman";
+	displayName = $STR_EPOCH_SKINS_CAMOMARKSMAN;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -797,7 +797,7 @@ class FR_Marksman_DZ: FR_Marksman {
 };
 class FR_Assault_R;
 class FR_Assault_R_DZ: FR_Assault_R {
-	displayName = "Camo Assault";
+	displayName = $STR_EPOCH_SKINS_CAMOASSAULT;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -810,7 +810,7 @@ class FR_Assault_R_DZ: FR_Assault_R {
 };
 class RU_Soldier;
 class RU_Soldier_DZ: RU_Soldier {
-	displayName = "RU Soldier";
+	displayName = $STR_EPOCH_SKINS_RUSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -823,7 +823,7 @@ class RU_Soldier_DZ: RU_Soldier {
 };
 class RU_Soldier_Officer;
 class RU_Soldier_Officer_DZ: RU_Soldier_Officer {
-	displayName = "RU Officer";
+	displayName = $STR_EPOCH_SKINS_RUOFFICER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -836,7 +836,7 @@ class RU_Soldier_Officer_DZ: RU_Soldier_Officer {
 };
 class RUS_Soldier1;
 class RUS_Soldier1_DZ: RUS_Soldier1 {
-	displayName = "RU Camo";
+	displayName = $STR_EPOCH_SKINS_RUCAMO;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -849,7 +849,7 @@ class RUS_Soldier1_DZ: RUS_Soldier1 {
 };
 class RUS_Commander;
 class RUS_Commander_DZ: RUS_Commander {
-	displayName = "RU Commander";
+	displayName = $STR_EPOCH_SKINS_RUCOMMANDER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -862,7 +862,7 @@ class RUS_Commander_DZ: RUS_Commander {
 };
 class MVD_Soldier;
 class MVD_Soldier_DZ: MVD_Soldier {
-	displayName = "MVD Soldier";
+	displayName = $STR_EPOCH_SKINS_MVDSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -875,7 +875,7 @@ class MVD_Soldier_DZ: MVD_Soldier {
 };
 class Ins_Soldier_2;
 class Ins_Soldier_2_DZ: Ins_Soldier_2 {
-	displayName = "Terrorist Camo";
+	displayName = $STR_EPOCH_SKINS_TERRORISTCAMO;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -888,7 +888,7 @@ class Ins_Soldier_2_DZ: Ins_Soldier_2 {
 };
 class Ins_Commander;
 class Ins_Commander_DZ: Ins_Commander {
-	displayName = "Ins Commander";
+	displayName = $STR_EPOCH_SKINS_INSCOMMANDER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -901,7 +901,7 @@ class Ins_Commander_DZ: Ins_Commander {
 };
 class Ins_Soldier_Crew;
 class Ins_Soldier_Crew_DZ: Ins_Soldier_Crew {
-	displayName = "Ins Crewman";
+	displayName = $STR_EPOCH_SKINS_INSCREWMAN;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -914,7 +914,7 @@ class Ins_Soldier_Crew_DZ: Ins_Soldier_Crew {
 };
 class CDF_Soldier;
 class CDF_Soldier_DZ: CDF_Soldier {
-	displayName = "CDF Soldier";
+	displayName = $STR_EPOCH_SKINS_CDFSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -927,7 +927,7 @@ class CDF_Soldier_DZ: CDF_Soldier {
 };
 class Doctor;
 class Doctor_DZ: Doctor {
-	displayName = "Doctor";
+	displayName = $STR_EPOCH_SKINS_DOCTOR;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -940,7 +940,7 @@ class Doctor_DZ: Doctor {
 };
 class Assistant;
 class Assistant_DZ: Assistant {
-	displayName = "Assistant";
+	displayName = $STR_EPOCH_SKINS_ASSISTANT;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -953,7 +953,7 @@ class Assistant_DZ: Assistant {
 };
 class Worker1;
 class Worker1_DZ: Worker1 {
-	displayName = "Worker (1)";
+	displayName = $STR_EPOCH_SKINS_WORKER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -966,7 +966,7 @@ class Worker1_DZ: Worker1 {
 };
 class Worker3;
 class Worker3_DZ: Worker3 {
-	displayName = "Worker (3)";
+	displayName = $STR_EPOCH_SKINS_WORKER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -979,7 +979,7 @@ class Worker3_DZ: Worker3 {
 };
 class Worker4;
 class Worker4_DZ: Worker4 {
-	displayName = "Worker (4)";
+	displayName = $STR_EPOCH_SKINS_WORKER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -992,7 +992,7 @@ class Worker4_DZ: Worker4 {
 };
 class TK_CIV_Takistani01_EP1;
 class TK_CIV_Takistani01_EP1_DZ: TK_CIV_Takistani01_EP1 {
-	displayName = "TK Citizen (1)";
+	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1005,7 +1005,7 @@ class TK_CIV_Takistani01_EP1_DZ: TK_CIV_Takistani01_EP1 {
 };
 class TK_CIV_Takistani03_EP1;
 class TK_CIV_Takistani03_EP1_DZ: TK_CIV_Takistani03_EP1 {
-	displayName = "TK Citizen (2)";
+	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1018,7 +1018,7 @@ class TK_CIV_Takistani03_EP1_DZ: TK_CIV_Takistani03_EP1 {
 };
 class TK_CIV_Takistani04_EP1;
 class TK_CIV_Takistani04_EP1_DZ: TK_CIV_Takistani04_EP1 {
-	displayName = "TK Citizen (3)";
+	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1031,7 +1031,7 @@ class TK_CIV_Takistani04_EP1_DZ: TK_CIV_Takistani04_EP1 {
 };
 class TK_CIV_Takistani06_EP1;
 class TK_CIV_Takistani06_EP1_DZ: TK_CIV_Takistani06_EP1 {
-	displayName = "TK Citizen (4)";
+	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1044,7 +1044,7 @@ class TK_CIV_Takistani06_EP1_DZ: TK_CIV_Takistani06_EP1 {
 };
 class TK_INS_Soldier_AR_EP1;
 class TK_INS_Soldier_AR_EP1_DZ: TK_INS_Soldier_AR_EP1 {
-	displayName = "TK Soldier";
+	displayName = $STR_EPOCH_SKINS_TKSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1057,7 +1057,7 @@ class TK_INS_Soldier_AR_EP1_DZ: TK_INS_Soldier_AR_EP1 {
 };
 class TK_GUE_Soldier_EP1;
 class TK_GUE_Soldier_EP1_DZ: TK_GUE_Soldier_EP1 {
-	displayName = "TK GUE Soldier";
+	displayName = $STR_EPOCH_SKINS_TKGUESOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1070,7 +1070,7 @@ class TK_GUE_Soldier_EP1_DZ: TK_GUE_Soldier_EP1 {
 };
 class CZ_Soldier_SL_DES_EP1;
 class CZ_Soldier_SL_DES_EP1_DZ: CZ_Soldier_SL_DES_EP1 {
-	displayName = "CZ Soldier";
+	displayName = $STR_EPOCH_SKINS_CZSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1083,7 +1083,7 @@ class CZ_Soldier_SL_DES_EP1_DZ: CZ_Soldier_SL_DES_EP1 {
 };
 class US_Soldier_EP1;
 class US_Soldier_EP1_DZ: US_Soldier_EP1 {
-	displayName = "US Soldier";
+	displayName = $STR_EPOCH_SKINS_USSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1096,7 +1096,7 @@ class US_Soldier_EP1_DZ: US_Soldier_EP1 {
 };
 class UN_CDF_Soldier_Guard_EP1;
 class UN_CDF_Soldier_Guard_EP1_DZ: UN_CDF_Soldier_Guard_EP1 {
-	displayName = "UN Commander";
+	displayName = $STR_EPOCH_SKINS_UNCOMMANDER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1109,7 +1109,7 @@ class UN_CDF_Soldier_Guard_EP1_DZ: UN_CDF_Soldier_Guard_EP1 {
 };
 class UN_CDF_Soldier_EP1;
 class UN_CDF_Soldier_EP1_DZ: UN_CDF_Soldier_EP1 {
-	displayName = "UN Soldier";
+	displayName = $STR_EPOCH_SKINS_UNSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1122,7 +1122,7 @@ class UN_CDF_Soldier_EP1_DZ: UN_CDF_Soldier_EP1 {
 };
 class GER_Soldier_TL_EP1;
 class GER_Soldier_TL_EP1_DZ: GER_Soldier_TL_EP1 {
-	displayName = "GER Recon";
+	displayName = $STR_EPOCH_SKINS_GERRECON;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1135,7 +1135,7 @@ class GER_Soldier_TL_EP1_DZ: GER_Soldier_TL_EP1 {
 };
 class BAF_Soldier_Officer_MTP;
 class BAF_Soldier_Officer_MTP_DZ: BAF_Soldier_Officer_MTP {
-	displayName = "BAF Officer";
+	displayName = $STR_EPOCH_SKINS_BAFOFFICER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1148,7 +1148,7 @@ class BAF_Soldier_Officer_MTP_DZ: BAF_Soldier_Officer_MTP {
 };
 class BAF_Soldier_N_MTP;
 class BAF_Soldier_N_MTP_DZ: BAF_Soldier_N_MTP {
-	displayName = "BAF Soldier";
+	displayName = $STR_EPOCH_SKINS_BAFSOLDIER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1161,7 +1161,7 @@ class BAF_Soldier_N_MTP_DZ: BAF_Soldier_N_MTP {
 };
 class FR_Sapper;
 class FR_Sapper_DZ: FR_Sapper {
-	displayName = "Camo Sapper";
+	displayName = $STR_EPOCH_SKINS_FRSAPPER;
 	side = 1;
 	weapons[] = {"Throw","Put"};
 	backpack = "";
@@ -1176,7 +1176,7 @@ class FR_Sapper_DZ: FR_Sapper {
 class CamoWinter_DZ: Survivor_DZ {
     side = 1;
     scope = public;
-    displayName = "Camo Winter";
+    displayName = $STR_EPOCH_SKINS_THERMOSUITMAN;
     model = "\nst\ns_dayz\characters\cw\camowinter_dzn.p3d";
 	faceType = "HeadMask1Black";
     camouflage = 1.4;
@@ -1188,14 +1188,12 @@ class CamoWinter_DZ: Survivor_DZ {
 };
 
 class CamoWinterW_DZ: CamoWinter_DZ {
-	side = 1;
-	displayName = "Camo Winter";
 	model = "\nst\ns_dayz\characters\cw\camowinterw_dzn.p3d";
 };
 
 class Sniper1W_DZ: Sniper1_DZ {
 	side = 1;
-	displayName = "Winter Sniper";
+	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\nst\ns_dayz\characters\gw\data\ghillie_overall1w_co.paa"};
 };
@@ -1203,7 +1201,7 @@ class Sniper1W_DZ: Sniper1_DZ {
 class Nac_Soldier_DZ: Survivor_DZ {
 	scope = public;
     side = 1;
-    displayName = "NAC Soldier";
+    displayName = $STR_EPOCH_SKINS_NACSOLDIER;
     model = "\nst\ns_fraction\nac\nac_soldier_1";
 };
 
@@ -1616,3 +1614,106 @@ class SG_GRU_MG_D_DZ : SG_GRU_TL_DZ {
 	model = "\SG_GRU\Soldier_gorkaD_7.p3d";
 	displayName = $STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME;
 };
+class CZ_Soldier805_DES_ACR_DZ : Survivor_DZ {
+	scope = public;	
+	displayName = $STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME;
+	model = "\Ca\Characters_ACR\acr_dst_805";
+	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";
+	picture = "\Ca\characters\data\Ico\i_null_CA";
+	icon = "\Ca\characters2\data\icon\i_soldier_CA";	
+	camouflage = 1;
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.7;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\Characters_ACR\Data\acr_dst_805.rvmat","Ca\Characters_ACR\Data\acr_dst_805_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_805_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_805g.rvmat","Ca\Characters_ACR\Data\acr_dst_805g_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_805g_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_crew.rvmat","Ca\Characters_ACR\Data\acr_dst_crew_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_crew_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_leader.rvmat","Ca\Characters_ACR\Data\acr_dst_leader_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_leader_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_medic.rvmat","Ca\Characters_ACR\Data\acr_dst_medic_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_medic_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_mg.rvmat","Ca\Characters_ACR\Data\acr_dst_mg_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_mg_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_officer.rvmat","Ca\Characters_ACR\Data\acr_dst_officer_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_officer_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_spec1.rvmat","Ca\Characters_ACR\Data\acr_dst_spec1_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_spec1_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_spec2.rvmat","Ca\Characters_ACR\Data\acr_dst_spec2_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_spec2_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_spec3.rvmat","Ca\Characters_ACR\Data\acr_dst_spec3_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_spec3_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_805.rvmat","Ca\Characters_ACR\Data\acr_wld_805_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_805_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_805g.rvmat","Ca\Characters_ACR\Data\acr_wld_805g_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_805g_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_crew.rvmat","Ca\Characters_ACR\Data\acr_wld_crew_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_crew_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_leader.rvmat","Ca\Characters_ACR\Data\acr_wld_leader_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_leader_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_medic.rvmat","Ca\Characters_ACR\Data\acr_wld_medic_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_medic_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_mg.rvmat","Ca\Characters_ACR\Data\acr_wld_mg_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_mg_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_officer.rvmat","Ca\Characters_ACR\Data\acr_wld_officer_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_officer_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_rec1.rvmat","Ca\Characters_ACR\Data\acr_wld_rec1_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_rec1_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_soldier.rvmat","Ca\Characters_ACR\Data\acr_wld_soldier_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_soldier_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_spec1.rvmat","Ca\Characters_ACR\Data\acr_wld_spec1_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_spec1_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_spec2.rvmat","Ca\Characters_ACR\Data\acr_wld_spec2_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_spec2_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_spec3.rvmat","Ca\Characters_ACR\Data\acr_wld_spec3_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_spec3_d2.rvmat","Ca\Characters_ACR\Data\acr_light.rvmat","Ca\Characters_ACR\Data\acr_light_d1.rvmat","Ca\Characters_ACR\Data\acr_light_d2.rvmat","Ca\Characters_ACR\Data\acr_pilot.rvmat","Ca\Characters_ACR\Data\acr_pilot_d1.rvmat","Ca\Characters_ACR\Data\acr_pilot_d2.rvmat","Ca\Characters_ACR\Data\acr_soldier.rvmat","Ca\Characters_ACR\Data\acr_soldier_d1.rvmat","Ca\Characters_ACR\Data\acr_soldier_d2.rvmat","Ca\Characters_ACR\Data\acr_soldier_2.rvmat","Ca\Characters_ACR\Data\acr_soldier_2_d1.rvmat","Ca\Characters_ACR\Data\acr_soldier_2_d2.rvmat"};
+	};
+	class HitDamage
+	{
+		class Group0
+		{
+			hitSounds[] = {{{"ca\sounds\Characters\Noises\Damage\zozo-hit-01",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-02",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-03",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-04",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-05",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-06",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-07",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-08",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-09",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\zozo-hit-10",0.17782794,1,120},0.1}};
+			damageSounds[] = {{"body",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-01",0.056234132,1,120,0.25,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-05",0.056234132,1,120,0.25,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-08",0.056234132,1,120,0.25,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-14",0.056234132,1,120,0.25,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-05",0.056234132,1,120,0.3,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-08",0.056234132,1,120,0.3,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-01",0.056234132,1,120,0.4,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-05",0.056234132,1,120,0.5,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\zozo-damage-g1-14",0.056234132,1,120,0.5,20,40,60}}};
+		};
+		class Group1
+		{
+			hitSounds[] = {{{"ca\sounds\Characters\Noises\Damage\george-hit-01",0.17782794,1,120},0.2},{{"ca\sounds\Characters\Noises\Damage\george-hit-02",0.17782794,1,120},0.2},{{"ca\sounds\Characters\Noises\Damage\george-hit-03",0.17782794,1,120},0.2},{{"ca\sounds\Characters\Noises\Damage\george-hit-04",0.17782794,1,120},0.2},{{"ca\sounds\Characters\Noises\Damage\george-hit-05",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\george-hit-06",0.17782794,1,120},0.1}};
+			damageSounds[] = {{"body",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-01",0.056234132,1,120,0.125,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-02",0.056234132,1,120,0.125,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-03",0.056234132,1,120,0.125,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-04",0.056234132,1,120,0.125,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\george-damage-g2-01",0.056234132,1,120,0.125,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\george-damage-g2-02",0.056234132,1,120,0.125,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\george-damage-g2-03",0.056234132,1,120,0.125,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\george-damage-g2-07",0.056234132,1,120,0.125,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-03",0.056234132,1,120,0.33,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\george-damage-g2-03",0.056234132,1,120,0.33,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-02",0.056234132,1,120,0.34,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-01",0.056234132,1,120,0.33,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-04",0.056234132,1,120,0.33,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\george-damage-g1-02",0.056234132,1,120,0.34,20,40,60}}};
+		};
+		class Group2
+		{
+			hitSounds[] = {{{"ca\sounds\Characters\Noises\Damage\jennik-hit-01",0.17782794,1,120},0.2},{{"ca\sounds\Characters\Noises\Damage\jennik-hit-02",0.17782794,1,120},0.2},{{"ca\sounds\Characters\Noises\Damage\jennik-hit-03",0.17782794,1,120},0.2},{{"ca\sounds\Characters\Noises\Damage\jennik-hit-04",0.17782794,1,120},0.2},{{"ca\sounds\Characters\Noises\Damage\jennik-hit-05",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\jennik-hit-06",0.17782794,1,120},0.1}};
+			damageSounds[] = {{"body",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-01",0.056234132,1,120,0.165,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-02",0.056234132,1,120,0.165,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-04",0.056234132,1,120,0.165,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-05",0.056234132,1,120,0.165,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-06",0.056234132,1,120,0.165,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-07",0.056234132,1,120,0.175,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-02",0.056234132,1,120,0.33,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-01",0.056234132,1,120,0.33,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-06",0.056234132,1,120,0.34,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-07",0.056234132,1,120,0.5,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\jennik-damage-g1-04",0.056234132,1,120,0.5,20,40,60}}};
+		};
+		class Group3
+		{
+			hitSounds[] = {{{"ca\sounds\Characters\Noises\Damage\vasa-hit-01",0.17782794,1,120},0.15},{{"ca\sounds\Characters\Noises\Damage\vasa-hit-02",0.17782794,1,120},0.15},{{"ca\sounds\Characters\Noises\Damage\vasa-hit-03",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\vasa-hit-04",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\vasa-hit-05",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\vasa-hit-06",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\vasa-hit-07",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\vasa-hit-08",0.17782794,1,120},0.1},{{"ca\sounds\Characters\Noises\Damage\vasa-hit-09",0.17782794,1,120},0.1}};
+			damageSounds[] = {{"body",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-01",0.07079458,1,120,0.2,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-02",0.07079458,1,120,0.2,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-03",0.07079458,1,120,0.2,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-04",0.07079458,1,120,0.2,20,40,60}},{"body",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-05",0.07079458,1,120,0.2,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-03",0.07079458,1,120,0.33,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-01",0.07079458,1,120,0.33,20,40,60}},{"hands",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-04",0.07079458,1,120,0.34,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-01",0.07079458,1,120,0.5,20,40,60}},{"legs",{"ca\sounds\Characters\Noises\Damage\vasa-damage-g1-02",0.07079458,1,120,0.5,20,40,60}}};
+		};
+	};	
+};
+
+class CZ_Soldier_805_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME;
+	model = "\Ca\Characters_ACR\acr_wdl_805";
+};
+class CZ_Soldier_Crew_Dst_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_CREW_NAME;
+	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_crew_ca";
+	model = "\Ca\Characters_ACR\acr_dst_crew";
+};
+class CZ_Soldier_Officer_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_OFFICER_NAME;
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_spec_com_ca";
+	picture = "\Ca\characters\data\Ico\i_off_CA";
+	icon = "\Ca\characters2\data\icon\i_officer_CA";
+	model = "\Ca\Characters_ACR\acr_wdl_officer";
+};
+class CZ_Soldier_Recon_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_SPFORCE_NAME;
+	model = "\Ca\Characters_ACR\acr_wdl_rec1";
+	portrait = "\Ca\characters_E\data\portraits\delta_soldier_CA";
+};	
+class CZ_Soldier_Spec1_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_RECON_NAME;
+	model = "\Ca\Characters_ACR\acr_wdl_spec1";
+	portrait = "\Ca\characters\data\portraits\comBarHead_fr_soldier_ca";
+};	
+class CZ_Soldier_Spec2_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_SAPPER_NAME;
+	model = "\Ca\Characters_ACR\acr_wdl_spec2";
+	portrait = "\Ca\characters\data\portraits\comBarHead_fr_soldier_ca";
+};	
+class CZ_Soldier_Spec3_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_ASSAULT_NAME;
+	model = "\Ca\Characters_ACR\acr_wdl_spec3";
+	portrait = "\Ca\characters\data\portraits\comBarHead_fr_soldier_ca";
+	icon = "\Ca\characters2\data\icon\i_machinegunner_CA";
+};
+class CZ_Soldier_Spec_Demo_Dst_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME;
+	model = "\Ca\Characters_ACR\acr_dst_spec3";
+};
+class CZ_Soldier_Sniper_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+	portrait = "\Ca\characters\data\portraits\comBarHead_common_sniper_ca";
+	model = "\Ca\Characters_ACR\Ghillie_Overall";
+	camouflage = 0.5;	
+};
+class CZ_Soldier_Light_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
+	displayName = $STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME;
+	model = "\Ca\Characters_ACR\acr_wdl_light";
+	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca";
+};
+	
