@@ -188,7 +188,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=15;
+		items=25;
 		class Item0
 		{
 			position[]={5010,0,5250};
@@ -273,24 +273,155 @@ class Mission
 			position[]={5010,0,5250};
 			name="crashsites";
 			type="Empty";
-			a=7000;b=7000;
+			a=5000;b=5000;
 		};
 		class Item14
 		{
 			position[]={5010,0,5250};
 			name="carepackages";
 			type="Empty";
-			a=7000;b=0;
+			a=5000;b=0;
+		};
+		class Item15
+		{
+			position[]={9708,0,2661};
+			name="AirTraderE";
+			text="East Air Trader";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item16
+		{
+			position[]={546,0,6891};
+			name="AirTraderW";
+			text="West Air Trader";
+			type="mil_dot";
+			colorName="ColorGreen";
+		};
+		class Item17
+		{
+			position[]={734,0,3115};
+			name="HeroTrader";
+			text="Hero Trader";
+			type="mil_triangle";
+			colorName="ColorBlue";
+		};
+		class Item18
+		{
+			position[]={9507,0,7125};
+			name="BanditTrader";
+			text="Bandit Trader";
+			type="mil_triangle";
+			colorName="ColorRed";
+		};
+		class Item19
+		{
+			position[]={3108,0,3761};
+			name="Wholesaler";
+			text="Wholesaler";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item20
+		{
+			position[]={4356,0,6688};
+			name="LissabonTrader";
+			text="Trader City Lissabon";
+			type="mil_circle";
+			colorName="ColorBlack";
+		};
+		class Item21
+		{
+			position[]={8562,0,5676};
+			name="BoatDealer1";
+			text="Boat Dealer";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item22
+		{
+			position[]={1678,0,4564};
+			name="BoatDealer2";
+			text="Boat Dealer";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item23
+		{
+			position[]={7132,0,6479};
+			name="Wholesaler";
+			text="Wholesaler";
+			type="mil_dot";
+			colorName="ColorBlack";
+		};
+		class Item24
+		{
+			position[]={5877,0,3530};
+			name="RiadTrader";
+			text="Trader City Riad";
+			type="mil_circle";
+			colorName="ColorBlack";
 		};
 	};
-	/*
 	class Sensors
 	{
-		items=0;
+		items=6;
 		#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{};
-
+		class Item0
+		{
+			position[]={9708,0,2661};
+			TRGDEF
+			name="AirTraderE";
+			expCond="(player distance AirTraderE) < 100;";
+			expActiv="[""East Air Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""East Air Trader"",true,""leave""] call player_traderCity;";
+		};
+		class Item1
+		{
+			position[]={546,0,6891};
+			TRGDEF
+			name="AirTraderW";
+			expCond="(player distance AirTraderW) < 100;";
+			expActiv="[""West Air Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""West Air Trader"",true,""leave""] call player_traderCity;";
+		};
+		class Item2
+		{
+			position[]={734,0,3115};
+			TRGDEF
+			name="HeroTrader";
+			expCond="(player distance HeroTrader) < 100;";
+			expActiv="[""Hero Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Hero Trader"",true,""leave""] call player_traderCity;";
+		};
+		class Item3
+		{
+			position[]={9507,0,7125};
+			TRGDEF
+			name="BanditTrader";
+			expCond="(player distance BanditTrader) < 100;";
+			expActiv="[""Bandit Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Bandit Trader"",true,""leave""] call player_traderCity;";
+		};
+		class Item4
+		{
+			position[]={4356,0,6688};
+			TRGDEF
+			name="LissabonTrader";
+			expCond="(player distance LissabonTrader) < 100;";
+			expActiv="[""Trader City Lissabon"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City Lissabon"",true,""leave""] call player_traderCity;";
+		};
+		class Item5
+		{
+			position[]={5877,0,3530};
+			TRGDEF
+			name="RiadTrader";
+			expCond="(player distance RiadTrader) < 100;";
+			expActiv="[""Trader City Riad"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City Riad"",true,""leave""] call player_traderCity;";
+		};
 	};
-	*/
 };
 class Intro
 {
