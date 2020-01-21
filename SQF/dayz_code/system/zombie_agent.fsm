@@ -983,9 +983,11 @@ class FSM
            "	[_agent,""spotted"",0,false] call dayz_zombieSpeak;" \n
            "};" \n
            "" \n
-           "if (!_hasMoved) then {" \n
-           "	_agent setVariable[""doLoiter"",true,true];" \n
-           "};" \n
+           "// _hasMoved needs to be set to true for all zombies." \n
+           "_hasMoved = true;" \n
+		       "" \n
+		       "// doLoiter variable can be destroyed. It is not used anymore." \n
+           "_agent setVariable[""doLoiter"",nil];" \n
            "" \n
            "_myDest = [ _agent modelToWorld [0,0,0]];" \n
            "_agent setVariable [""myDest"",(_agent modelToWorld [0,0,0])];" \n
