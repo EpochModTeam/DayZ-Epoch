@@ -1,6 +1,3 @@
-#define DEBUG_STEP() call { dbg_step = false; waitUntil {dbg_step}; }
-
-#include "Debug.hpp"
 #include "Player.hpp"
 
 #define WeaponSlotPrimary		1
@@ -15,8 +12,6 @@
 #define IS_MAGAZINE(type) (type == WeaponSlotHandGunItem || type == WeaponSlotItem)
 
 dz_player_invTypes = [WeaponSlotPrimary, WeaponSlotHandGun, WeaponSlotSecondary, WeaponSlotHandGunItem, WeaponSlotItem, WeaponSlotBinocular, WeaponHardMounted, WeaponSlotInventory];
-dz_player_invSlots = [call compile getText (configFile >> "CfgVehicles" >> Player_BASE)] call BIS_FNC_invCodeToArray;
-//dz_player_invSlots = [1,1,1,8,12,2,0,12];
 
 dz_fn_player_numItems =
 {
