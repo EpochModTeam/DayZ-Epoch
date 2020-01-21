@@ -392,6 +392,8 @@ class CfgVehicles
 	//ZEDS
 	#include "Zeds\Zeds.hpp" //old type zeds
 	#include "Zeds\ViralZeds.hpp" //Viral type zeds
+	#include "Zeds\WildZeds.hpp" //Viral type zeds
+	#include "Zeds\SwarmZeds.hpp" //Swarm
 	#include "Zeds\PlayerZeds.hpp"
 	//Skins
 	#include "Skins\Female.hpp"
