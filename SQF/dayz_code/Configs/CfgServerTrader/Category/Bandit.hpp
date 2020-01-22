@@ -77,6 +77,10 @@ class Category_7 {
 	class HMMWV_M998A2_SOV_DES_EP1_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
 	class HMMWV_M1151_M2_CZ_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
 	class HMMWV_M1151_M2_CZ_DES_EP1_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class T810A_PKT_ACR_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class T810A_PKT_ACR_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class T810A_PKT_DES_ACR_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class T810A_PKT_DES_ACR_DZ {type = "trade_any_vehicle";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
 };
 
 //Weapons
