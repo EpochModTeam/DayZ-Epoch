@@ -1,12 +1,14 @@
 class hilux1_civil_1_open;
 class hilux1_civil_1_open_DZE: hilux1_civil_1_open {
 	displayName = $STR_VEH_NAME_PICKUP_TAN;
+	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	class HitPoints;
+	supplyRadius = 1.5;
 
 	class Upgrades {
 		ItemORP[] = {"hilux1_civil_1_open_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -16,12 +18,14 @@ class hilux1_civil_1_open_DZE: hilux1_civil_1_open {
 class hilux1_civil_2_covered;
 class hilux1_civil_2_covered_DZE: hilux1_civil_2_covered {
 	displayName = $STR_VEH_NAME_PICKUP_COVERED_RED;
+	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	class HitPoints;
+	supplyRadius = 1.5;
 
 	class Upgrades {
 		ItemORP[] = {"hilux1_civil_2_covered_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -31,12 +35,14 @@ class hilux1_civil_2_covered_DZE: hilux1_civil_2_covered {
 class hilux1_civil_3_open;
 class hilux1_civil_3_open_DZE: hilux1_civil_3_open {
 	displayName = $STR_VEH_NAME_PICKUP_WHITE;
+	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	class HitPoints;
+	supplyRadius = 1.5;
 
 	class Upgrades {
 		ItemORP[] = {"hilux1_civil_3_open_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};

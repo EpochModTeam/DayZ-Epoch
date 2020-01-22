@@ -3,6 +3,7 @@ class BAF_Jackal2_L2A1_D_DZ : BAF_Jackal2_L2A1_D
 {
 	scope = public;
 	displayname = $STR_VEH_NAME_JACKAL_L2A1_DESERT;
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -12,6 +13,7 @@ class BAF_Jackal2_L2A1_D_DZ : BAF_Jackal2_L2A1_D
 	transportmaxbackpacks = 5;
 	class Turrets;
 	class MainTurret;
+	supplyRadius = 1.5;
 };
 
 class BAF_Jackal2_L2A1_D_DZE : BAF_Jackal2_L2A1_D_DZ 
@@ -23,6 +25,9 @@ class BAF_Jackal2_L2A1_D_DZE : BAF_Jackal2_L2A1_D_DZ
 			gunnerName = "$STR_POSITION_COMMANDER";
 			primaryGunner = 0;
 			primaryObserver = 1;
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+			discreteDistanceInitIndex = 2;	
+			turretInfoType = "RscWeaponZeroing";			
 			commanding = 2;
 			body = "mainTurret_2";
 			gun = "mainGun_2";
@@ -67,7 +72,7 @@ class BAF_Jackal2_L2A1_D_DZE : BAF_Jackal2_L2A1_D_DZ
 			weapons[] = {"BAF_L2A1"};
 			minElev = -25;
 			maxElev = 40;
-			soundServo[] = {"\ca\wheeled\Data\Sound\servo3",1e-006,1.0};
+			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.0099999998,1,10};	
 			magazines[] = {};
 			gunnerAction = "Jackal_gunner_L2A1_BAF";
 			ejectDeadGunner = 0;
@@ -80,9 +85,6 @@ class BAF_Jackal2_L2A1_D_DZE : BAF_Jackal2_L2A1_D_DZ
 			gunnerOpticsModel = "ca\Weapons_baf\ACOG_optic";
 			class ViewOptics
 			{
-				visionMode[] = {"Normal"};
-				minElev = -25;
-				maxElev = 40;
 				initAngleX = 0;
 				minAngleX = -30;
 				maxAngleX = 30;
@@ -105,7 +107,7 @@ class BAF_Jackal2_L2A1_D_DZE : BAF_Jackal2_L2A1_D_DZ
 
 class BAF_Jackal2_L2A1_W_DZ : BAF_Jackal2_L2A1_D_DZ
 {
-	model = "ca\wheeled_w_baf\Jackal_L2A1_W_BAF";
+	model = "\CorePatch\CorePatch_Vehicles\models\Jackal_L2A1_W_BAF";
 	displayname = $STR_VEH_NAME_JACKAL_L2A1_WOODLAND;
 	class Turrets;
 	class MainTurret;
@@ -121,6 +123,9 @@ class BAF_Jackal2_L2A1_W_DZE : BAF_Jackal2_L2A1_W_DZ
 			gunnerName = "$STR_POSITION_COMMANDER";
 			primaryGunner = 0;
 			primaryObserver = 1;
+			turretInfoType = "RscWeaponZeroing";
+			discreteDistance[] = {100,200,300,400,500,600,800,1000,1200,1500};
+			discreteDistanceInitIndex = 2;			
 			commanding = 2;
 			body = "mainTurret_2";
 			gun = "mainGun_2";
@@ -165,7 +170,7 @@ class BAF_Jackal2_L2A1_W_DZE : BAF_Jackal2_L2A1_W_DZ
 			weapons[] = {"BAF_L2A1"};
 			minElev = -25;
 			maxElev = 40;
-			soundServo[] = {"\ca\wheeled\Data\Sound\servo3",1e-006,1.0};
+			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.0099999998,1,10};			
 			magazines[] = {};
 			gunnerAction = "Jackal_gunner_L2A1_BAF";
 			ejectDeadGunner = 0;
@@ -178,9 +183,6 @@ class BAF_Jackal2_L2A1_W_DZE : BAF_Jackal2_L2A1_W_DZ
 			gunnerOpticsModel = "ca\Weapons_baf\ACOG_optic";
 			class ViewOptics
 			{
-				visionMode[] = {"Normal"};
-				minElev = -25;
-				maxElev = 40;
 				initAngleX = 0;
 				minAngleX = -30;
 				maxAngleX = 30;
@@ -204,7 +206,8 @@ class BAF_Jackal2_L2A1_W_DZE : BAF_Jackal2_L2A1_W_DZ
 class BAF_Jackal2_GMG_D;
 class BAF_Jackal2_GMG_D_DZ : BAF_Jackal2_GMG_D
 {
-	displayname = $STR_BAF_CFGVEHICLES_BAF_JACKAL2_L2A1_D0;
+	displayname = $STR_VEH_NAME_JACKAL_MK19_DESERT;
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -216,6 +219,7 @@ class BAF_Jackal2_GMG_D_DZ : BAF_Jackal2_GMG_D
 	class MainTurret;
 	class M420_Turret;
 	class GMG_Turret;
+	supplyRadius = 1.5;
 };
 
 class BAF_Jackal2_GMG_D_DZE : BAF_Jackal2_GMG_D_DZ
@@ -239,7 +243,7 @@ class BAF_Jackal2_GMG_D_DZE : BAF_Jackal2_GMG_D_DZ
 			gunnerOutOpticsShowCursor = 0;
 			minElev = -25;
 			maxElev = 40;
-			soundServo[] = {"\ca\wheeled\Data\Sound\servo3",1e-006,1.0};
+			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.0099999998,1,10};
 			weapons[] = {"BAF_GMG"};
 			magazines[] = {};
 			gunnerAction = "Jackal_gunner_GMG_BAF";
@@ -257,10 +261,8 @@ class BAF_Jackal2_GMG_D_DZE : BAF_Jackal2_GMG_D_DZ
 			memoryPointGunnerOptics = "gunnerview";
 			optics = 1;
 			gunnerOpticsModel = "\ca\Weapons_baf\nlaw_optic";
-			displayName = "";
 			class ViewOptics
 			{
-				visionMode[] = {"Normal"};
 				initAngleX = 0;
 				minAngleX = -30;
 				maxAngleX = 30;
@@ -277,7 +279,7 @@ class BAF_Jackal2_GMG_D_DZE : BAF_Jackal2_GMG_D_DZ
 
 class BAF_Jackal2_GMG_W_DZ : BAF_Jackal2_GMG_D_DZ
 {
-	model = "ca\wheeled_w_baf\Jackal_GMG_W_BAF";
+	model = "\CorePatch\CorePatch_Vehicles\models\Jackal_GMG_W_BAF";
 	displayname = $STR_VEH_NAME_JACKAL_MK19_WOODLAND;
 	class Turrets;
 	class MainTurret;
@@ -305,7 +307,7 @@ class BAF_Jackal2_GMG_W_DZE : BAF_Jackal2_GMG_W_DZ
 			gunnerOutOpticsShowCursor = 0;
 			minElev = -25;
 			maxElev = 40;
-			soundServo[] = {"\ca\wheeled\Data\Sound\servo3",1e-006,1.0};
+			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.0099999998,1,10};
 			weapons[] = {"BAF_GMG"};
 			magazines[] = {};
 			gunnerAction = "Jackal_gunner_GMG_BAF";
@@ -323,10 +325,8 @@ class BAF_Jackal2_GMG_W_DZE : BAF_Jackal2_GMG_W_DZ
 			memoryPointGunnerOptics = "gunnerview";
 			optics = 1;
 			gunnerOpticsModel = "\ca\Weapons_baf\nlaw_optic";
-			displayName = "";
 			class ViewOptics
 			{
-				visionMode[] = {"Normal"};
 				initAngleX = 0;
 				minAngleX = -30;
 				maxAngleX = 30;

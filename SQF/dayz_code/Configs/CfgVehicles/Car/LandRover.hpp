@@ -2,6 +2,7 @@ class LandRover_CZ_EP1;
 class LandRover_CZ_EP1_DZE: LandRover_CZ_EP1 {
 	scope = public;
 	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_DESERT;
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -20,6 +21,7 @@ class LandRover_CZ_EP1_DZE: LandRover_CZ_EP1 {
 	class HitGlass1;
 	class HitGlass2;
 	class HitGlass3;	
+	supplyRadius = 1.2;
 	
 	class Upgrades {
 		ItemORP[] = {"LandRover_CZ_EP1_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -299,8 +301,7 @@ class BAF_Offroad_D_DZE: LandRover_CZ_EP1_DZE {
 	model = "ca\wheeled_d_baf\LR_covered_soft_BAF";
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
-    transportmaxbackpacks = 4;
-	supplyRadius = 0;
+    transportmaxbackpacks = 4;	
 	
 	class HitPoints;
 	class HitLFWheel;
@@ -488,10 +489,12 @@ class LandRover_Special_CZ_EP1_DZ: LandRover_Special_CZ_EP1
 {
 	scope = public;
 	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL;
+	vehicleClass = "DayZ Epoch Vehicles";
 	class Turrets;
 	class MainTurret;
 	class AGS30_Turret;
 	class PK_Turret;
+	class ViewOptics;
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
@@ -504,7 +507,8 @@ class LandRover_Special_CZ_EP1_DZ: LandRover_Special_CZ_EP1
 	class HitRFWheel;
 	class HitRBWheel;
 	class HitFuel;
-	class HitEngine;	
+	class HitEngine;
+	supplyRadius = 1.2;	
 };
 
 class LandRover_Special_CZ_EP1_DZE: LandRover_Special_CZ_EP1_DZ
@@ -513,6 +517,9 @@ class LandRover_Special_CZ_EP1_DZE: LandRover_Special_CZ_EP1_DZ
 	{
 		class AGS30_Turret: MainTurret
 		{
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300};
+			discreteDistanceInitIndex = 2;
+			turretInfoType = "RscWeaponZeroing";
 			body = "mainTurret";
 			gun = "mainGun";
 			gunnerForceOptics = 0;
@@ -526,9 +533,17 @@ class LandRover_Special_CZ_EP1_DZE: LandRover_Special_CZ_EP1_DZ
 			gunnerOpticsModel = "\ca\weapons\optika_AGS30";
 			stabilizedInAxes = "StabilizedInAxesNone";
 			minElev = -18;
+			class ViewOptics : ViewOptics
+			{
+				initFov = 0.1;
+				maxFov = 0.1;
+				minFov = 0.1;
+			};			
 		};
 		class PK_Turret: MainTurret
 		{
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+			discreteDistanceInitIndex = 2;
 			gunnerName = "$STR_POSITION_COMMANDER";
 			primaryGunner = 0;
 			primaryObserver = 1;
@@ -548,7 +563,8 @@ class LandRover_Special_CZ_EP1_DZE: LandRover_Special_CZ_EP1_DZ
 			initTurn = 0;
 			gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			gunnerForceOptics = 0;
-			weapons[] = {"PKT"};
+			turretInfoType = "RscWeaponZeroing";
+			weapons[] = {"PKTBC"};
 			magazines[] = {};
 			soundServo[] = {};
 			gunnerAction = "LR_Gunner02_EP1";
@@ -633,6 +649,7 @@ class LandRover_MG_TK_EP1_DZ: LandRover_MG_TK_EP1
 	class TransportMagazines {};
 	class TransportWeapons {};	
 	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_M2;
+	vehicleClass = "DayZ Epoch Vehicles";
 	class Turrets;
 	class MainTurret;
 	transportMaxWeapons = 15;
@@ -646,6 +663,7 @@ class LandRover_MG_TK_EP1_DZ: LandRover_MG_TK_EP1
 	class HitFuel;
 	class HitEngine;
 	class HitGlass1;	
+	supplyRadius = 1.2;
 };
 
 class LandRover_MG_TK_EP1_DZE: LandRover_MG_TK_EP1_DZ

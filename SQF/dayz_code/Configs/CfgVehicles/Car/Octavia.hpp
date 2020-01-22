@@ -1,14 +1,14 @@
 class Octavia_ACR_DZE: Car {
 	scope = public;
-	model = "\CA\Wheeled_ACR\Octavia\Octavia_ACR.p3d";
-	displayName = $STR_VEH_NAME_OCTAVIA_WHITE;
+	model = "\Corepatch\CorePatch_Vehicles\models\Octavia_ACR";
+	displayName = $STR_VEH_NAME_OCTAVIA_WHITE;	
 	icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Octavia_CA.paa";
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Octavia_CA.paa";
 	class Library
 	{
 		libTextDesc = "$STR_ACR_LIB_OCTAVIA";
 	};
-	vehicleClass = "Car";
+	vehicleClass = "DayZ Epoch Vehicles";
 	DriverAction = "Golf_Driver";
 	cargoAction[] = {"Golf_Cargo01","Golf_Cargo02","Golf_Cargo02"};
 	cargoIsCoDriver[] = {0};
@@ -27,6 +27,7 @@ class Octavia_ACR_DZE: Car {
 	armor = 20;
 	damageResistance = 0.01511;
 	fuelCapacity = 100;
+	supplyRadius = 1.3;
 	HiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\Ca\Wheeled_ACR\Octavia\Data\car_body_co.paa"};
 	class HitPoints: HitPoints

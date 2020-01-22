@@ -349,6 +349,7 @@ class CfgVehicles
 
 		};
 	};
+	class BRDM2_Base;
 	class HouseBase;
 	class Ruins: HouseBase {};
 	class House : HouseBase
@@ -367,6 +368,7 @@ class CfgVehicles
 	class M1030_base;
 	class MMT_base;
 	class Bicycle;
+	
 	class Old_bike_base_EP1 : Bicycle
 	{
 		class Reflectors 
@@ -385,8 +387,6 @@ class CfgVehicles
 		};
 	};
 	class Old_moto_base;
-	class Ikarus_base;
-	class Ural_Base;
 
 	#include "RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
 	//ZEDS
@@ -407,7 +407,8 @@ class CfgVehicles
 	//Cars
 	#include "Car\HMMWV.hpp"
 	#include "Car\ArmoredSUV.hpp"
-	#include "Car\BTR40.hpp"
+	#include "Car\BTR40.hpp"	
+	#include "Car\BTR60.hpp"
 	#include "Car\BTR90.hpp"
 	#include "Car\datsun.hpp"
 	#include "Car\Gaz_Vodnik.hpp"
@@ -438,6 +439,7 @@ class CfgVehicles
 	#include "Car\Dingo.hpp"
 	#include "Car\Octavia.hpp"
 	#include "Car\Tatra_T810.hpp"
+	#include "Car\BMP2.hpp"
 	//Helicopters
 	#include "Helicopter\MI17.hpp"
 	#include "Helicopter\UH1H.hpp"

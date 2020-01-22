@@ -1,6 +1,8 @@
 class ArmoredSUV_DZE_Base_PMC: Car
 {
+	scope = private;
 	brakeDistance = 19;
+	vehicleClass = "DayZ Epoch Vehicles";
 	htMin = 60;
 	htMax = 1800;
 	afMax = 200;
@@ -19,6 +21,8 @@ class ArmoredSUV_DZE_Base_PMC: Car
 	damageResistance = 0.03099;
 	transportSoldier = 3;
 	fuelCapacity = 130;
+	enableGPS = 0;
+	supplyRadius = 1.3;
 	weapons[] = {"MiniCarHorn"};
 	driverAction = "SUV_Driver_EP1";
 	cargoAction[] = {"SUV_Cargo_EP1","SUV_Cargo02_EP1","SUV_Cargo01_EP1"};
@@ -289,7 +293,6 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_DZE_Base_PMC
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	enableGPS = 1;  
 	transportMaxWeapons = 20; 
 	transportMaxMagazines = 150; 
 	transportmaxbackpacks = 10;

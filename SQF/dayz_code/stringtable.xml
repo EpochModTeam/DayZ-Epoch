@@ -8149,6 +8149,29 @@
 			<Russian>Пикап накрытый (оранжевый)</Russian>
 			<German>Pick-up abgedeckt (gelbbraun)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR">
+			<German>Traktor</German>
+			<English>Tractor</English>
+			<Italian>Trattore</Italian>
+			<Spanish>Tractor</Spanish>
+			<French>Tracteur</French>
+			<Czech>Traktor</Czech>
+			<Russian>Трактор</Russian>
+			<Polish>Ciągnik</Polish>
+			<Hungarian>Traktor</Hungarian>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TRACTOR_OLD">			
+			<English>Old Tractor</English>
+			<German>Alter Traktor</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_IKARUS_RED">
+			<English>Bus (Red)</English>
+			<German>Bus (Rot)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_BLUE">
+			<English>Bus (Blue)</English>
+			<German>Bus (Blau)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_KAMAZ">
 			<English>Kamaz open (Woodland)</English>
 			<Russian>Камаз открытый (Лесной камуфляж)</Russian>
@@ -8264,6 +8287,25 @@
 		<Key ID="STR_VEH_NAME_M113_TK">
 			<English>M113 TK</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_INS">
+			<English>BMP-2 INS</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_BMP2_CDF">
+			<English>BMP-2 CDF</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_TK">
+			<English>BMP-2 TK</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS">
+			<English>BMP-2 INS Ambulance</English>
+			<Russian>BMP-2 INS Скорая</Russian>
+			<German>BMP-2 INS Sanitätsfzg.</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF">
+			<English>BMP-2 CDF Ambulance</English>
+			<Russian>BMP-2 CDF Скорая</Russian>
+			<German>BMP-2 CDF Sanitätsfzg.</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND">
 			<English>MTVR (Woodland)</English>
 			<Russian>MTVR (Лесной камуфляж)</Russian>
@@ -8462,9 +8504,16 @@
 		<Key ID="STR_VEH_NAME_URAL_TK">
 			<English>Ural (TK)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_INS">
+			<English>Ural (INS)</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_CDF">
 			<English>Ural (CDF)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN">
+			<English>Ural open (CDF)</English>
+			<German>Ural offen (CDF)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_URAL_UN">
 			<English>Ural (UN)</English>
 		</Key>
@@ -8590,6 +8639,26 @@
 			<Russian>BTR-40 DSHKM (Лесной камуфляж)</Russian>
 			<German>BTR-40 DSHKM (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_GREEN">
+			<English>BTR-40 (Green)</English>
+			<Russian>BTR-40 (Зеленый)</Russian>
+			<German>BTR-40 (Grün)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_WOOD">
+			<English>BTR-40 (Woodland)</English>
+			<Russian>BTR-40 (Лесной камуфляж)</Russian>
+			<German>BTR-40 (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BTR60_WOOD">
+			<English>BTR-60 (Woodland)</English>
+			<Russian>BTR-60 (Лесной камуфляж)</Russian>
+			<German>BTR-60 (Waldtarn)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_BTR60_GREEN">
+			<English>BTR-60 (Green)</English>
+			<Russian>BTR-60 (Зеленый)</Russian>
+			<German>BTR-60 (Grün)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR90">
 			<English>BTR-90</English>
 		</Key>

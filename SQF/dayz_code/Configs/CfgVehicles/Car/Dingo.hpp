@@ -13,6 +13,7 @@ class Dingo_DZE_Base_ACR: Car
 	model = "\CA\Wheeled_ACR\Dingo\AMT_Dingo2a2_MG";
 	Picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Dingo2MG_CA.paa";
 	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Dingo2_CA.paa";
+	memoryPointSupply = "zamerny";
 	mapSize = 5;	
 	damperSize = 0.2;
 	damperForce = 1;
@@ -34,7 +35,8 @@ class Dingo_DZE_Base_ACR: Car
 	predictTurnSimul = 0.5;
 	brakeDistance = 8.5;
 	terrainCoef = 2.0;
-	enableGPS = 1;
+	enableGPS = 0;
+	supplyRadius = 1.8;
 	type = 1;
 	soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.01,1.0,10};
 	soundEnviron[] = {"",0.56234133,1};
@@ -49,7 +51,7 @@ class Dingo_DZE_Base_ACR: Car
 	castDriverShadow = 0;
 	radarType = 0;
 	unitInfoType = "UnitInfoShip";
-	vehicleClass = "Armored";
+	vehicleClass = "DayZ Epoch Vehicles";
 	threat[] = {1,0.1,0.4};	
 	class Turrets: Turrets
 	{
@@ -157,7 +159,7 @@ class Dingo_DZE_Base_ACR: Car
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\acr_karosse_wdl_co","\ca\wheeled_acr\dingo\data\a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_co","\ca\wheeled_acr\dingo\data\FLW200_co"};
 	soundGear[] = {"",0.00017782794,1};
 	insideSoundCoef = 0.8;
-	SoundGetIn[] = {"ca\Sounds_ACR\wheeled\Dingo\door",0.56234133,1};
+	SoundGetIn[] = {"ca\Sounds_ACR\wheeled\Dingo\door",0.56234133,1,40};	
 	SoundGetOut[] = {"ca\Sounds_ACR\wheeled\Dingo\door",0.56234133,1,40};
 	soundEngineOnInt[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_int_start",0.56234133,1.0};
 	soundEngineOnExt[] = {"ca\Sounds_ACR\wheeled\Dingo\Dingo_ext_start",0.56234133,1.0,250};
@@ -411,6 +413,10 @@ class Dingo_GL_Wdl_ACR_DZ: Dingo_DZE_Base_ACR
 				visionMode[] = {"Normal"};
 			};
 			soundServo[] = {"\Ca\sounds\Vehicles\Servos\turret-1",0.01,1.0,10};
+			class GunFire : WeaponCloudsMGun
+			{
+				interval = 0.0099999998;
+			};
 		};
 	};
 	class AnimationSources: AnimationSources

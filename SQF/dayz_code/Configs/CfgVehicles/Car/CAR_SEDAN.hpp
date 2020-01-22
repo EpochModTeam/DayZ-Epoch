@@ -1,12 +1,28 @@
-class car_sedan : SkodaBase {
-	crew = "";
-	displayname = $STR_VEH_NAME_SEDAN_WHITE;
-	faction = "CIV";
-	maxspeed = 125;
+class car_sedan;
+class car_sedan_DZE : car_sedan {
 	scope = public;
+	displayname = $STR_VEH_NAME_SEDAN_WHITE;
+	vehicleClass = "DayZ Epoch Vehicles";
+	maxspeed = 125;
+	armor = 20;
+	damageResistance = 0.01821;
+	fuelCapacity = 100;	
+	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
-	class TransportWeapons {};
+	class TransportWeapons {};	
+	class HitPoints;
+	class HitLFWheel;
+	class HitLBWheel;
+	class HitRFWheel;
+	class HitRBWheel;
+	class HitFuel;
+	class HitEngine;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;
+	supplyRadius = 1.5;
 
 	class Upgrades {
 		ItemORP[] = {"car_sedan_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -14,8 +30,8 @@ class car_sedan : SkodaBase {
 };
 
 // Performance 1
-class car_sedan_DZE1: car_sedan {
-	original = "car_sedan";
+class car_sedan_DZE1: car_sedan_DZE {
+	original = "car_sedan_DZE";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
 

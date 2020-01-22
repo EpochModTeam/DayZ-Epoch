@@ -1,12 +1,26 @@
- class car_hatchback: SkodaBase {
-	crew = "";
-	displayname = $STR_VEH_NAME_HATCHBACK;
-	faction = "CIV";
-	maxspeed = 125;
+class car_hatchback;
+class car_hatchback_DZE: car_hatchback {
 	scope = public;
+	displayname = $STR_VEH_NAME_HATCHBACK;
+	vehicleClass = "DayZ Epoch Vehicles";
+	maxspeed = 125;
+	armor = 20;
+	damageResistance = 0.01821;
+	fuelCapacity = 100;	
+	crew = "";
 	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
+	class HitPoints;
+	class HitLFWheel;
+	class HitLBWheel;
+	class HitRFWheel;
+	class HitRBWheel;
+	class HitFuel;
+	class HitEngine;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;
+	supplyRadius = 1.2;	
 	
 	class Upgrades {
 		ItemORP[] = {"car_hatchback_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -14,8 +28,8 @@
 };
 
 // Performance 1
-class car_hatchback_DZE1: car_hatchback {
-	original = "car_hatchback";
+class car_hatchback_DZE1: car_hatchback_DZE {
+	original = "car_hatchback_DZE";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
 

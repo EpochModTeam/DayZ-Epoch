@@ -4,7 +4,7 @@ class T810_DZE_Base_ACR: Truck
 	mapSize = 8;
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_T810_CA.paa";
 	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_T810_CA.paa";
-	vehicleClass = "Car";
+	vehicleClass = "DayZ Epoch Vehicles";
 	class Library
 	{
 		libTextDesc = "$STR_ACR_LIB_T810";
@@ -90,6 +90,7 @@ class T810_DZE_Base_ACR: Truck
 	getInAction = "GetInHigh";
 	getOutAction = "GetOutHigh";
 	cargoIsCoDriver[] = {1,0,0};
+	supplyRadius = 2.6;
 	class Turrets: Turrets
 	{
 		class MainTurret;
@@ -107,13 +108,17 @@ class T810_DZE_Base_ACR: Truck
 			gunnerName = "PKB Gunner";
 			gunnerGetInAction = "GetInHigh";
 			gunnerGetOutAction = "GetOutHigh";
-			weapons[] = {"PKT"};
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+			discreteDistanceInitIndex = 2;					
+			turretInfoType = "RscWeaponZeroing";
+			weapons[] = {"PKTBC"};
 			magazines[] = {"100Rnd_762x54_PK","100Rnd_762x54_PK","100Rnd_762x54_PK"};
 			gunBeg = "usti hlavne";
 			gunEnd = "konec hlavne";
 			animationSourceBody = "OtocVez";
 			animationSourceGun = "OtocHlaven";
 			memoryPointGun = "usti hlavne";
+			viewGunnerInExternal = 1;
 			body = "OtocVez";
 			gun = "OtocHlaven";
 			gunAxis = "osa_hlavne";
@@ -124,7 +129,7 @@ class T810_DZE_Base_ACR: Truck
 			minTurn = -360;
 			maxTurn = 360;
 			initTurn = 0;
-			soundServo[] = {};
+			soundServo[] = {"\ca\sounds\vehicles\servos\turret-1",0.1,1,15};
 			outGunnerMayFire = 1;
 			inGunnerMayFire = 1;
 			castGunnerShadow = 1;
@@ -143,7 +148,7 @@ class T810_DZE_Base_ACR: Truck
 		};
 	};
 	SoundGear[] = {"",0.0017782794,1};
-	soundGetIn[] = {"ca\sounds\vehicles\Wheeled\MTVR\ext\ext-truck-getin",0.70794576,1};
+	soundGetIn[] = {"ca\sounds\vehicles\Wheeled\MTVR\ext\ext-truck-getin",0.70794576,1,50};	
 	soundGetOut[] = {"ca\sounds\vehicles\Wheeled\MTVR\ext\ext-truck-getout",0.56234133,1,50};
 	soundEngineOnInt[] = {"CA\Sounds_ACR\wheeled\T810\t810_int_start",0.56234133,1.0};
 	soundEngineOnExt[] = {"CA\Sounds_ACR\wheeled\T810\t810_ext_start",0.56234133,1.0,350};
@@ -338,7 +343,7 @@ class T810A_PKT_ACR_DZ: T810_DZE_Base_ACR
 {
 	scope = public;
 	displayname = $STR_VEH_NAME_TATRA_PKT_WOODLAND;
-	model = "\Ca\Wheeled_ACR\T810\t810_vp2_acr.p3d";
+	model = "\CorePatch\CorePatch_Vehicles\models\T810_vp2_ACR";
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_T810_MG_CA.paa";
 	class AnimationSources: AnimationSources
 	{
@@ -351,27 +356,27 @@ class T810A_PKT_ACR_DZ: T810_DZE_Base_ACR
 		class ReloadMagazine
 		{
 			source = "reloadmagazine";
-			weapon = "PKT";
+			weapon = "PKTBC";
 		};
 		class Revolving
 		{
 			source = "revolving";
-			weapon = "PKT";
+			weapon = "PKTBC";
 		};
 		class belt_rotation
 		{
 			source = "reload";
-			weapon = "PKT";
+			weapon = "PKTBC";
 		};
 		class recoil
 		{
 			source = "reload";
-			weapon = "PKT";
+			weapon = "PKTBC";
 		};
 		class bolt
 		{
 			source = "reload";
-			weapon = "PKT";
+			weapon = "PKTBC";
 		};
 	};
 	hiddenSelections[] = {"camo1","camo2","camo3"};
@@ -392,13 +397,17 @@ class T810A_PKT_ACR_DZE: T810A_PKT_ACR_DZ
 			gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			gunnerForceOptics = 0;
 			gunnerOpticsShowCursor = 0;
+			viewGunnerInExternal = 1;
 			selectionFireAnim = "zasleh";
 			gunnerAction = "T810gunner";
 			gunnerInAction = "T810gunner";
 			gunnerName = "PKB Gunner";
 			gunnerGetInAction = "GetInHigh";
 			gunnerGetOutAction = "GetOutHigh";
-			weapons[] = {"PKT"};
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+			discreteDistanceInitIndex = 2;			
+			turretInfoType = "RscWeaponZeroing";
+			weapons[] = {"PKTBC"};
 			magazines[] = {};
 			gunBeg = "usti hlavne";
 			gunEnd = "konec hlavne";
@@ -415,7 +424,7 @@ class T810A_PKT_ACR_DZE: T810A_PKT_ACR_DZ
 			minTurn = -360;
 			maxTurn = 360;
 			initTurn = 0;
-			soundServo[] = {};
+			soundServo[] = {"\ca\sounds\vehicles\servos\turret-1",0.1,1,15};
 			outGunnerMayFire = 1;
 			inGunnerMayFire = 1;
 			castGunnerShadow = 1;

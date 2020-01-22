@@ -1,6 +1,7 @@
 class HMMWV_DZE_Base: Car
 {
 	scope = private;
+	vehicleClass = "DayZ Epoch Vehicles";
 	accuracy = 0.3;
 	side = 1;
 	faction = "USMC";
@@ -10,7 +11,6 @@ class HMMWV_DZE_Base: Car
 	Icon = "\Ca\wheeled\data\map_ico\icomap_hmwv50_CA.paa";
 	mapSize = 5;
 	displayName = "HMMWV";
-	vehicleClass = "Car";
 	crew = "";
 	typicalCargo[] = {};
 	damperSize = 0.2;
@@ -24,7 +24,8 @@ class HMMWV_DZE_Base: Car
 	predictTurnPlan = 0.9;
 	predictTurnSimul = 0.5;
 	terrainCoef = 2;
-	enableGPS = 1;
+	enableGPS = 0;
+	supplyRadius = 1.5;
 	type = 1;
 	cost = 100000;
 	armorGlass = 0.5;
@@ -354,7 +355,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_DZE_Base
 	outsideSoundFilter = 0;
 	insideSoundCoef = 1;
 	soundGear[] = {"",5.62341e-005,1};
-	soundGetIn[] = {"ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\get_in2",0.562341,1};
+	soundGetIn[] = {"ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\get_in2",0.56234133,1,20};	
 	soundGetOut[] = {"ca\SOUNDS\Vehicles\Wheeled\HMMWV\int\get_in2",0.562341,1,20};
 	soundEngineOnInt[] = {"ca\sounds\Vehicles\Wheeled\HMMWV\int\int-engine_start1",0.177828,1};
 	soundEngineOnExt[] = {"ca\SOUNDS\Vehicles\Wheeled\HMMWV\ext\engine_ON1",0.177828,1,100};

@@ -1,9 +1,7 @@
 class SUV_DZ: SUV_Base_EP1 {
 	crew = "";
-	faction = "BIS_TK_CIV";
-	rarityurban = 0.8;
 	scope = public;
-	side = 3;
+	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
@@ -80,16 +78,88 @@ class SUV_DZ: SUV_Base_EP1 {
 		};
 	};
 };
-class SUV_TK_CIV_EP1: SUV_Base_EP1 {
+
+class SUV_TK_CIV_EP1_DZE: SUV_Base_EP1 {
 	displayName = $STR_VEH_NAME_SUV_BLACK;
+	vehicleClass = "DayZ Epoch Vehicles";
 	scope = public;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	rarityUrban = 0.8;
-	faction = "BIS_TK_CIV";
-	side = 3;
+
+	class HitPoints : HitPoints {
+		class HitLFWheel:HitLFWheel {
+			armor = 0.15;
+			material = -1;
+			name = "wheel_1_1_steering";
+			passthrough = 0.3;
+			visual = "";
+		};
+		class HitLBWheel:HitLBWheel {
+			armor = 0.15;
+			material = -1;
+			name = "wheel_1_2_steering";
+			passthrough = 0.3;
+			visual = "";
+		};
+		class HitRFWheel:HitRFWheel {
+			armor = 0.15;
+			material = -1;
+			name = "wheel_2_1_steering";
+			passthrough = 0.3;
+			visual = "";
+		};
+		class HitRBWheel:HitRBWheel {
+			armor = 0.15;
+			material = -1;
+			name = "wheel_2_2_steering";
+			passthrough = 0.3;
+			visual = "";
+		};
+		class HitFuel:HitFuel {
+			armor = 0.14;
+			material = -1;
+			name = "palivo";
+			passthrough = 1;
+			visual = "";
+		};
+		class HitEngine:HitEngine {
+			armor = 0.5;
+			material = -1;
+			name = "motor";
+			passthrough = 1;
+			visual = "";
+		};
+		class HitGlass1:HitGlass1 {
+			armor = 0.1;
+			material = -1;
+			name = "glass1";
+			passthrough = 0;
+			visual = "glass1";
+		};
+		class HitGlass2:HitGlass2 {
+			armor = 0.1;
+			material = -1;
+			name = "glass2";
+			passthrough = 0;
+			visual = "glass2";
+		};
+		class HitGlass3:HitGlass3 {
+			armor = 0.1;
+			material = -1;
+			name = "glass3";
+			passthrough = 0;
+			visual = "glass3";
+		};
+		class HitGlass4:HitGlass4 {
+			armor = 0.1;
+			material = -1;
+			name = "glass4";
+			passthrough = 0;
+			visual = "glass4";
+		};
+	};	
 
 	class Upgrades {
 		ItemORP[] = {"SUV_TK_CIV_EP1_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -97,8 +167,9 @@ class SUV_TK_CIV_EP1: SUV_Base_EP1 {
 };
 
 // Camo
-class SUV_Camo: SUV_TK_CIV_EP1 {
+class SUV_Camo: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_CAMO;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\camo10.paa"};
 
 	class Upgrades {
@@ -107,72 +178,81 @@ class SUV_Camo: SUV_TK_CIV_EP1 {
 };
 
 // SUV RECOLORS
-class SUV_Blue: SUV_TK_CIV_EP1 {
+class SUV_Blue: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_BLUE;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_blue_co.paa"};
 
 	class Upgrades {
 		ItemORP[] = {"SUV_Blue_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SUV_Green: SUV_TK_CIV_EP1 {
+class SUV_Green: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_GREEN;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_green_co.paa"};
 
 	class Upgrades {
 		ItemORP[] = {"SUV_Green_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SUV_Yellow: SUV_TK_CIV_EP1 {
+class SUV_Yellow: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_YELLOW;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_yellow_co.paa"};
 
 	class Upgrades {
 		ItemORP[] = {"SUV_Yellow_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SUV_Red: SUV_TK_CIV_EP1 {
+class SUV_Red: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_RED;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_red_co.paa"};
 
 	class Upgrades {
 		ItemORP[] = {"SUV_Red_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SUV_White: SUV_TK_CIV_EP1 {
+class SUV_White: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_WHITE;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_white_co.paa"};
 
 	class Upgrades {
 		ItemORP[] = {"SUV_White_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SUV_Pink: SUV_TK_CIV_EP1 {
+class SUV_Pink: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_PINK;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_pink_co.paa"};
 
 	class Upgrades {
 		ItemORP[] = {"SUV_Pink_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SUV_Charcoal: SUV_TK_CIV_EP1 {
+class SUV_Charcoal: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_GREY;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_charcoal_co.paa"};
 
 	class Upgrades {
 		ItemORP[] = {"SUV_Charcoal_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SUV_Orange: SUV_TK_CIV_EP1 {
+class SUV_Orange: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_ORANGE;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_orange_co.paa"};
 
 	class Upgrades {
 		ItemORP[] = {"SUV_Orange_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SUV_Silver: SUV_TK_CIV_EP1 {
+class SUV_Silver: SUV_TK_CIV_EP1_DZE {
 	displayName = $STR_VEH_NAME_SUV_SILVER;
+	vehicleClass = "DayZ Epoch Vehicles";
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\suv_body_silver_co.paa"};
 
 	class Upgrades {
@@ -181,8 +261,8 @@ class SUV_Silver: SUV_TK_CIV_EP1 {
 };
 
 // Performance 1
-class SUV_TK_CIV_EP1_DZE1: SUV_TK_CIV_EP1 {
-	original = "SUV_TK_CIV_EP1";
+class SUV_TK_CIV_EP1_DZE1: SUV_TK_CIV_EP1_DZE {
+	original = "SUV_TK_CIV_EP1_DZE";
 	maxSpeed = 250; // max engine limit 125-130
 	brakeDistance = 14; // 19
 	terrainCoef = 1.5;

@@ -1,12 +1,15 @@
 class datsun1_civil_1_open;
 class datsun1_civil_1_open_DZE: datsun1_civil_1_open {
 	displayname = $STR_VEH_NAME_PICKUP_BLUE;
+	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	class HitPoints;
+	fuelCapacity = 100;	
+	supplyRadius = 1.5;
 
 	class Upgrades {
 		ItemORP[] = {"datsun1_civil_1_open_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -16,12 +19,15 @@ class datsun1_civil_1_open_DZE: datsun1_civil_1_open {
 class datsun1_civil_2_covered;
 class datsun1_civil_2_covered_DZE: datsun1_civil_2_covered {
 	displayname = $STR_VEH_NAME_PICKUP_COVERED_TAN;
+	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	class HitPoints;
+	fuelCapacity = 100;	
+	supplyRadius = 1.5;
 
 	class Upgrades {
 		ItemORP[] = {"datsun1_civil_2_covered_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
@@ -31,12 +37,15 @@ class datsun1_civil_2_covered_DZE: datsun1_civil_2_covered {
 class datsun1_civil_3_open;
 class datsun1_civil_3_open_DZE: datsun1_civil_3_open {
 	displayname = $STR_VEH_NAME_PICKUP_GREY;
+	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	class HitPoints;
+	fuelCapacity = 100;	
+	supplyRadius = 1.5;
 
 	class Upgrades {
 		ItemORP[] = {"datsun1_civil_3_open_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
