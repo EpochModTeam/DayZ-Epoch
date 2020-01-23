@@ -23,6 +23,7 @@ class 100Rnd_556x45_BetaCMag: CA_Magazine {
 	ammo = "B_556x45_Ball";
 	count = 100;
 	initSpeed = 920;
+	model = "dayz_epoch_c\models\magazines\MG36_mag.p3d";
 	picture = "\ca\weapons\g36\data\equip\M_MG36_CA.paa";
 	type="256";
 	tracersEvery = 4;

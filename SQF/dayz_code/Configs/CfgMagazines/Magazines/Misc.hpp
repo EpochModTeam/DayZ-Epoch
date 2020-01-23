@@ -26,27 +26,7 @@ class 10Rnd_303British : 10x_303
 	};
 };
 
-//Winchester 1866
-class 15Rnd_W1866_Slug : CA_Magazine
-{
-	scope = public;
-	
-	model = "\z\addons\dayz_communityassets\models\winammo.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_winammo_ca.paa";
-	displayName = $STR_DZ_MAG_15RND_W1866_NAME;
-	descriptionShort = $STR_DZ_MAG_15RND_W1866_DESC;
-	
-	ammo = B_1866_Slug;
-	count = 15;
-	initSpeed = 396;
-	displayNameShort = "Slug";
-	
-	class ItemActions
-	{
-		COMBINE_MAG
-	};
-};
-
+//M107
 class 10Rnd_127x99_m107 : CA_Magazine
 {
 	displayName = $STR_DZ_MAG_10Rnd_127x99_m107_NAME;
@@ -58,7 +38,7 @@ class 10Rnd_127x99_m107 : CA_Magazine
 		COMBINE_MAG
 	};
 };
-
+//KSVK
 class 5Rnd_127x108_KSVK : CA_Magazine
 {
 	displayName = $STR_DZ_MAG_5Rnd_127x108_KSVK_NAME;
@@ -70,7 +50,7 @@ class 5Rnd_127x108_KSVK : CA_Magazine
 		COMBINE_MAG
 	};
 };
-
+//L115
 class 5Rnd_86x70_L115A1: CA_Magazine
 {
 	displayName = $STR_DZ_MAG_5Rnd_86x70_L115A1_NAME;
@@ -82,8 +62,10 @@ class 5Rnd_86x70_L115A1: CA_Magazine
 		COMBINE_MAG
 	};
 };
+//VSS
 class 10Rnd_9x39_SP5_VSS: CA_Magazine
 {
+	model = "dayz_epoch_c\models\magazines\VSS_vintorez_mag.p3d";
 	displayName = $STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME;
 	
 	cartridgeName = "9x39";
@@ -93,8 +75,10 @@ class 10Rnd_9x39_SP5_VSS: CA_Magazine
 		COMBINE_MAG
 	};
 };
+//VSS
 class 20Rnd_9x39_SP5_VSS: CA_Magazine
 {
+	model = "dayz_epoch_c\models\magazines\VSS_vintorez_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME;
 	
 	cartridgeName = "9x39";
@@ -103,4 +87,22 @@ class 20Rnd_9x39_SP5_VSS: CA_Magazine
 	{
 		COMBINE_MAG
 	};
+};
+//Sa61
+class 10Rnd_B_765x17_Ball: CA_Magazine
+{
+	model = "dayz_epoch_c\models\magazines\sa61_mag.p3d";
+	displayName = "$STR_EP1_DN_10RND_B_765X17_BALL";
+	
+	cartridgeName = "765x17";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};	
+};
+//Sa61
+class 20Rnd_B_765x17_Ball: 10Rnd_B_765x17_Ball
+{
+	displayName = "$STR_EP1_DN_20RND_B_765X17_BALL";	
 };

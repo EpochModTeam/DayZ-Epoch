@@ -1,5 +1,26 @@
 /* Slugs */
 
+//Winchester 1866
+class 15Rnd_W1866_Slug : CA_Magazine
+{
+	scope = public;
+	
+	model = "\z\addons\dayz_communityassets\models\winammo.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_winammo_ca.paa";
+	displayName = $STR_DZ_MAG_15RND_W1866_NAME;
+	descriptionShort = $STR_DZ_MAG_15RND_W1866_DESC;
+	
+	ammo = B_1866_Slug;
+	count = 15;
+	initSpeed = 396;
+	displayNameShort = "Slug";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+
 class 8Rnd_B_Beneli_74Slug;
 class 8Rnd_12Gauge_Slug : 8Rnd_B_Beneli_74Slug
 {
@@ -128,6 +149,7 @@ class 2Rnd_12Gauge_Buck : 8Rnd_12Gauge_Buck
 //AA12 Ammo
 class 20Rnd_B_AA12_74Slug : CA_Magazine
 {
+	model = "dayz_epoch_c\models\magazines\AA12_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME;
 	
 	cartridgeName = "12Gauge_Slug";
@@ -139,6 +161,7 @@ class 20Rnd_B_AA12_74Slug : CA_Magazine
 };
 class 20Rnd_B_AA12_Pellets : CA_Magazine
 {
+	model = "dayz_epoch_c\models\magazines\AA12_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME;
 	
 	cartridgeName = "12Gauge_Pellets";
@@ -150,9 +173,32 @@ class 20Rnd_B_AA12_Pellets : CA_Magazine
 };
 class 20Rnd_B_AA12_HE : CA_Magazine
 {
+	model = "dayz_epoch_c\models\magazines\AA12_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_B_AA12_HE_NAME;
 	
 	cartridgeName = "19mm_HE";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+//Saiga12 Ammo
+class 8Rnd_B_Saiga12_74Slug: CA_Magazine
+{	
+	model = "dayz_epoch_c\models\magazines\Saiga12K_mag.p3d";
+	cartridgeName = "12Gauge_Slug";
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
+};
+
+class 8Rnd_B_Saiga12_Pellets: CA_Magazine
+{
+	model = "dayz_epoch_c\models\magazines\Saiga12K_mag.p3d";
+	cartridgeName = "12Gauge_Pellets";
 	
 	class ItemActions
 	{

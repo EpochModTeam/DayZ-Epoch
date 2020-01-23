@@ -2,6 +2,7 @@
 
 class 30Rnd_9x19_UZI : CA_Magazine
 {
+	model = "dayz_epoch_c\models\magazines\pdw_mag.p3d";
 	displayName = $STR_DZ_MAG_30RND_9X19_UZI_NAME;
 
 	cartridgeName = "9x19";
@@ -26,6 +27,7 @@ class 30Rnd_9x19_MP5 : CA_Magazine
 
 class 30Rnd_9x19_UZI_SD : CA_Magazine
 {
+	model = "dayz_epoch_c\models\magazines\pdw_mag.p3d";
 	displayName = $STR_DZ_MAG_30RND_9X19_UZISD_NAME;
 
 	cartridgeName = "9x19_SD";
