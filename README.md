@@ -133,6 +133,7 @@ GitHub Contributors (In order of most commits)
 * DeVloek - https://github.com/DeVloek
 * worldwidesorrow - https://github.com/worldwidesorrow
 * RedLink-kam - https://github.com/RedLink-kam
+* Helion4 - https://github.com/Helion4
 
 --------------------------
 Special thanks
