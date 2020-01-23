@@ -17,8 +17,6 @@ dz_fn_player_numItems =
 {
 	if (_this == 0) exitWith { 0 };
 	
-	Debug_Assert(_this in dz_player_invTypes);
-	
 	if (IS_MAGAZINE(_this)) then
 		{ { _this == getNumber (configFile >> "CfgMagazines" >> _x >> "type") } count magazines player; }
 	else
@@ -28,13 +26,11 @@ dz_fn_player_numItems =
 dz_fn_player_numEmptySlots =
 {
 	if (_this == 0) exitWith { 1000000 };
-	Debug_Assert(_this in dz_player_invTypes);
 	Player_NumSlots(_this) - Player_NumItems(_this);
 };
 
 dz_fn_player_addItem =
 {
-	Debug_CheckParams2("SCALAR","STRING");
 	
 	private ["_type", "_veh", "_num"];
 	
