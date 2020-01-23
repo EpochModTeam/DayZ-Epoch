@@ -14,7 +14,7 @@ weaponsRU[] =
 	// Sniper Rifles
 	{Loot_WEAPON,		4,		SVD_des_EP1},
 	{Loot_WEAPON,		4,		SVD_DZ},
-	{Loot_WEAPON,		4,		VSS_vintorez},
+	{Loot_WEAPON,		4,		VSS_vintorez_DZE},
 	{Loot_WEAPON,		1,		KSVK_DZE}, // High value weapon, low spawn chance.
 	{Loot_WEAPON,		1,		Anzio_20_DZ}, // High value weapon, low spawn chance.
 	
@@ -48,7 +48,7 @@ weaponsUS[] =
 	{Loot_WEAPON,		5,		AA12_PMC},
 	
 	// Sniper Rifles
-	{Loot_WEAPON,		5,		M4SPR},
+	{Loot_WEAPON,		5,		M4SPR_DZE},
 	{Loot_WEAPON,		4,		M40A3_DZ},
 	{Loot_WEAPON,		4,		M24_des_EP1},
 	{Loot_WEAPON,		4,		M24_DZ},
