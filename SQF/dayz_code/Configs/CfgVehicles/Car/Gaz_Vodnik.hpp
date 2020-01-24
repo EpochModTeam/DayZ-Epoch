@@ -32,7 +32,7 @@ class GAZ_Vodnik_HMG_DZE : GAZ_Vodnik_HMG_DZ {
 			gunEnd = "chamber_1";
 			memoryPointGun = "machinegun";
 			weapons[] = {"2A42","PKTBC","SmokeLauncher"};
-			magazines[] = {};
+			magazines[] = {"SmokeLauncherMag","SmokeLauncherMag","SmokeLauncherMag"};
 			gunnerOutOpticsShowCursor = 0;
 			gunnerOpticsShowCursor = 0;
 			gunnerAction = "GAZ_Gunner";
