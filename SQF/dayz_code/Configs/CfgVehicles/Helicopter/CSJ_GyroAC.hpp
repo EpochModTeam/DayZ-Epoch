@@ -252,8 +252,9 @@ class CSJ_GyroC: Helicopter
 };
 
 class CSJ_GyroC_DZ: CSJ_GyroC
-{
+{	
 	displayName = $STR_VEH_NAME_MOZZIE;
+	vehicleClass = "DayZ Epoch Vehicles";
 	transportMaxMagazines = 3;
 	transportMaxWeapons = 1;
 };

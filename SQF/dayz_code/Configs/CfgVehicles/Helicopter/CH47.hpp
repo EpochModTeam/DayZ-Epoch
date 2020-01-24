@@ -1,7 +1,6 @@
 class CH_47F_EP1;
 class CH_47F_EP1_DZ : CH_47F_EP1 { 
-	accuracy = 1000; 
-	vehicleClass = "Air";
+	vehicleClass = "DayZ Epoch Vehicles";
 	scope = public; 
 	displayName = $STR_VEH_NAME_CH47;
 	crew = ""; 
@@ -11,15 +10,17 @@ class CH_47F_EP1_DZ : CH_47F_EP1 {
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 10;
-	transportMaxMagazines = 200;
-	transportmaxbackpacks = 5;
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 360;
+	transportmaxbackpacks = 10;
 	class Turrets;
 	class MainTurret;
 	class RightDoorGun;
 	class BackDoorGun;
 	maxSpeed = 293;
 	fuelCapacity = 4043;
+	radartype = 0;
+	supplyRadius = 1.3;
 };
 
 class CH_47F_EP1_DZE: CH_47F_EP1_DZ
@@ -63,7 +64,7 @@ class CH_47F_EP1_DZE: CH_47F_EP1_DZ
 				minFov = 0.25;
 				maxFov = 1.1;
 			};
-			gunnerCompartments = "Compartment2";
+			gunnerCompartments = "Compartment1";
 			memoryPointsGetInGunner = "pos gunner";
 			memoryPointsGetInGunnerDir = "pos gunner dir";
 		};
@@ -93,6 +94,8 @@ class CH_47F_EP1_DZE: CH_47F_EP1_DZ
 		};
 		class BackDoorGun: MainTurret
 		{
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+			discreteDistanceInitIndex = 2;
 			body = "Turret3";
 			gun = "Gun_3";
 			minTurn = 130;
@@ -111,7 +114,8 @@ class CH_47F_EP1_DZE: CH_47F_EP1_DZ
 			commanding = -1;
 			gunnerAction = "CH47_Gunner01_EP1";
 			gunnerInAction = "CH47_Gunner01_EP1";
-			weapons[] = {"M240_veh"};
+			turretInfoType = "RscWeaponZeroing";
+			weapons[] = {"M240BC_veh"};
 			magazines[] = {};
 			gunBeg = "muzzle_3";
 			gunEnd = "chamber_3";

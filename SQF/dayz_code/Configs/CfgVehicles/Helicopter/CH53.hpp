@@ -1,9 +1,12 @@
 class USEC_ch53_E;
 class CH53_DZE : USEC_ch53_E {
 	scope = public;
-	side = 2;
 	displayname = $STR_VEH_NAME_CH53;
+	vehicleClass = "DayZ Epoch Vehicles";
 	destrType = "DestructWreck";
+	weapons[] = {"CMFlareLauncher"};
+	magazines[] = {"120Rnd_CMFlareMagazine"};
+	supplyRadius = 1.3;
 	enablemanualfire = 0;
 	crew = "";
 	soundGetIn[] = {"\ca\Sounds\Air\Noises\heli_door_01",0.316228,1};
@@ -23,8 +26,8 @@ class CH53_DZE : USEC_ch53_E {
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 25;
-	transportMaxMagazines = 80;
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 300;
 	transportmaxbackpacks = 15;
 	fuelCapacity = 3849;
 	class eventhandlers {

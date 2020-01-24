@@ -8825,6 +8825,18 @@
 			<English>CH-47F Chinook</English>
 			<Russian>CH-47F Чинук</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_AW101">
+			<English>AW101 Merlin</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1Y">
+			<English>UH-1Y Venom</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_KA60">
+			<English>Kamow Ka-60</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_AW159">
+			<English>AW159 Wildcat</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_CH53">
 			<English>CH53E Super Stallion</English>
 		</Key>

@@ -1,28 +1,24 @@
-class MH6J_DZ: AH6_Base_EP1
+class MH6J_EP1;
+class MH6J_DZ: MH6J_EP1
 {
 	scope = public;
-	side = 2;
 	crew = "";
 	enablemanualfire = 0;
 	typicalCargo[] = {};
 	displayname = $STR_VEH_NAME_MH6J;
-	hiddenselections[] = {"camo1", "camo2"};
-	transportsoldier = 5;
-	hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa", "ca\air_e\ah6j\data\default_co.paa"};
-	icon = "\ca\air_e\data\UI\Icon_mh6j_CA.paa";
-	model = "\ca\air_e\ah6j\mh6j";
-	picture = "\ca\air_e\data\UI\Picture_mh6j_CA.paa";
+	vehicleClass = "DayZ Epoch Vehicles";
 	radartype = 0;
 	class TransportMagazines{};
 	class TransportWeapons{};
-	weapons[] = {};
-	magazines[] = {};
+	weapons[] = {"CMFlareLauncher"};
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 3;
-	transportMaxMagazines = 20;
-	transportmaxbackpacks = 3;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 40;
+	transportmaxbackpacks = 4;
 	fuelCapacity = 242;
 	class Turrets {};
+	supplyRadius = 1.3;
 };	

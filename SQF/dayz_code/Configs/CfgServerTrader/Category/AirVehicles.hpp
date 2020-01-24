@@ -31,10 +31,11 @@ class Category_47 {
 	class pook_medevac_DZE {type = "trade_any_vehicle";buy[] =  {1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
 	class pook_medevac_CDF_DZE {type = "trade_any_vehicle";buy[] =  {1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
 	class pook_medevac_CIV_DZE {type = "trade_any_vehicle";buy[] =  {1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
-	class UH60M_MEV_EP1_DZ {type = "trade_any_vehicle";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
-	class Mi17_Civilian_DZ {type = "trade_any_vehicle";buy[] =  {1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
-	class Mi17_medevac_CDF_DZ {type = "trade_any_vehicle";buy[] =  {1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
-	class Mi17_medevac_Ins_DZ {type = "trade_any_vehicle";buy[] =  {1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
-	class Mi17_medevac_RU_DZ {type = "trade_any_vehicle";buy[] =  {1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
+	class Mi17_Civilian_DZ {type = "trade_any_vehicle";buy[] =  {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class Mi17_medevac_CDF_DZ {type = "trade_any_vehicle";buy[] =  {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class Mi17_medevac_Ins_DZ {type = "trade_any_vehicle";buy[] =  {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class Mi17_medevac_RU_DZ {type = "trade_any_vehicle";buy[] =  {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class UH60M_MEV_EP1_DZ {type = "trade_any_vehicle";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
 	class BAF_Merlin_DZE {type = "trade_any_vehicle";buy[] = {3,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class CH53_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
 };

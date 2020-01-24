@@ -1,6 +1,7 @@
 class AH1Z;
 class AH1Z_DZ: AH1Z {
 	scope = public; 
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = ""; 
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -9,6 +10,7 @@ class AH1Z_DZ: AH1Z {
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
 	fuelCapacity = 1333;
+	supplyRadius = 1.3;
 	
 	class Turrets;
 	class MainTurret;
@@ -20,8 +22,6 @@ class AH1Z_DZ: AH1Z {
 		engine = "if (_this select 1) then {(_this select 0) animate ['mainrotor_folded',1]; (_this select 0) animate ['mainrotor_unfolded',0]; (_this select 0) animate ['rotorshaft_unfolded',0];} else {_this select 0 setVariable ['engineOffTime',diag_tickTime,false];};"; //Unfold
 	};
 	class UserActions {
-		//class Repair {ACTION_REPAIR; radius = 8;};
-		//class Salvage {ACTION_SALVAGE; radius = 8;};
 		class Fold {
 			displayName = $STR_AM_PACK;
 			displayNameDefault = $STR_AM_PACK;
@@ -48,7 +48,7 @@ class AH1Z_DZ: AH1Z {
 };
 
 class AH1Z_DZE: AH1Z_DZ {
-	magazines[] = {};
+	magazines[] = {"120Rnd_CMFlareMagazine"};
 	class Turrets: Turrets	{
 		class MainTurret: MainTurret {
 			magazines[] = {};

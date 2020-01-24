@@ -1,40 +1,25 @@
-class AH6J_EP1_DZ: AH6_Base_EP1
+class AH6J_EP1;
+class AH6J_EP1_DZ: AH6J_EP1
 {
 	scope = public;
-	side = 2;
 	displayName = $STR_VEH_NAME_AH6J;
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	weapons[] = {"TwinM134","CMFlareLauncher"};
-	magazines[] = {"4000Rnd_762x51_M134","60Rnd_CMFlareMagazine"};
-	threat[] = {0.6,0.4,0.1};
-	gunBeg[] = {"muzzle_1","muzzle_2"};
-	gunEnd[] = {"chamber_1","chamber_2"};
-	radarType = 0;
+	magazines[] = {"4000Rnd_762x51_M134","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	class Turrets {};
-	class AnimationSources
-	{
-		class Gatling_1
-		{
-			source = "revolving";
-			weapon = "TwinM134";
-		};
-		class Gatling_2
-		{
-			source = "revolving";
-			weapon = "TwinM134";
-		};
-	};
-	hiddenSelections[] = {"camo1","camo2"};
-	hiddenSelectionsTextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa","ca\air_e\ah6j\data\default_co.paa"};
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 3;
-	transportMaxMagazines = 10;
-	transportmaxbackpacks = 2;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 40;
+	transportmaxbackpacks = 4;
+	fuelCapacity = 242;
+	supplyRadius = 1.3;
+	radartype = 0;
 	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
 	{
@@ -46,38 +31,30 @@ class AH6J_EP1_DZ: AH6_Base_EP1
 class AH6J_EP1_DZE: AH6J_EP1_DZ
 {
 	scope = public;
-	side = 2;
 	displayName = $STR_VEH_NAME_AH6J;
-	magazines[] = {"60Rnd_CMFlareMagazine"};
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 };
 
-class AH6X_DZ: AH6_Base_EP1 {
+class AH6X_EP1;
+class AH6X_DZ: AH6X_EP1 {
 	displayname = $STR_VEH_NAME_AH6X;
-	model = "dayz_vehicles\helicopters\greybird\greybird.p3d";
-	//cargoAction[] = {"AH6j_Cargo_EP1","UH1Y_Cargo01","UH1Y_Cargo01"};
-	audible = 6;
-	enablemanualfire = 0;
+	vehicleClass = "DayZ Epoch Vehicles";
 	scope = public;
-	side = 2;
 	crew = "";
 	typicalCargo[] = {};
-	hiddenselections[] = {"camo1"};
-	hiddenselectionstextures[] = {"ca\air_e\ah6j\data\ah6_merge1_co.paa"};
-	icon = "\ca\air_e\data\UI\Icon_ah6x_CA.paa";
-	picture = "\ca\air_e\data\UI\Picture_ah6x_CA.paa";
-	isuav = 0;
-	radartype = 0;
 	class TransportMagazines{};
 	class TransportWeapons{};
-	weapons[] = {};
-	magazines[] = {};
+	weapons[] = {"CMFlareLauncher"};
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 3;
-	transportMaxMagazines = 30;
-	transportmaxbackpacks = 2;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 40;
+	transportmaxbackpacks = 4;
 	fuelCapacity = 242;
+	radartype = 0;
+	supplyRadius = 1.3;
 
 	class Turrets {};
 	class DefaultEventhandlers;

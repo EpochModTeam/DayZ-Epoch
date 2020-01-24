@@ -2,6 +2,7 @@ class pook_H13_base;
 class pook_H13_base_DZE: pook_H13_base
 {
 	scope = 0;
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	enablemanualfire = 0;
 	typicalCargo[] = {};
@@ -9,19 +10,20 @@ class pook_H13_base_DZE: pook_H13_base
 	class TransportMagazines{};
 	class TransportWeapons{};
 	class Turrets {};
-	weapons[] = {};
-	magazines[] = {};
+	weapons[] = {"CMFlareLauncher"};
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	threat[] = {0,0,0};
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 3;
-	transportMaxMagazines = 30;
-	transportmaxbackpacks = 2;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 40;
+	transportmaxbackpacks = 4;
 	attendant = 0;	
 	transportAmmo = 0;
 	hideWeaponsCargo = 0;
 	fuelCapacity = 450;
+	supplyRadius = 1.3;
 	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
 	{
@@ -67,8 +69,8 @@ class pook_gunship_DZ:  pook_H13_base_DZE
 	memoryPointLRocket = "Rocket_1";
 	memoryPointRRocket = "Rocket_2";
 	selectionFireAnim = "zasleh";
-	weapons[] = {"pook_M60_dual","pook_H13Grenades"};
-	magazines[] = {"pook_1300Rnd_762x51_M60","pook_12Rnd_Grenade_Camel"};
+	weapons[] = {"pook_M60_dual","pook_H13Grenades","CMFlareLauncher"};
+	magazines[] = {"pook_1300Rnd_762x51_M60","pook_12Rnd_Grenade_Camel","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 
 	class DefaultEventhandlers;
 	class Eventhandlers: DefaultEventhandlers
@@ -80,7 +82,7 @@ class pook_gunship_DZ:  pook_H13_base_DZE
 
 class pook_gunship_DZE: pook_gunship_DZ
 {
-	magazines[] = {};
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 };
 
 class pook_gunship_CDF_DZ: pook_gunship_DZ
@@ -91,7 +93,7 @@ class pook_gunship_CDF_DZ: pook_gunship_DZ
 
 class pook_gunship_CDF_DZE: pook_gunship_CDF_DZ
 {
-	magazines[] = {};
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 };
 
 class pook_H13_transport;
@@ -117,8 +119,8 @@ class pook_transport_DZ: pook_H13_transport
 	transportAmmo = 0;
 	hideWeaponsCargo = 0;
 	fuelCapacity = 450;	
-	weapons[] = {"SmokeLauncher","pook_H13Grenades"};
-	magazines[] = {"SmokeLauncherMag","pook_12Rnd_Grenade_Camel"};
+	weapons[] = {"pook_H13Grenades","CMFlareLauncher"};
+	magazines[] = {"pook_12Rnd_Grenade_Camel","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
@@ -133,7 +135,7 @@ class pook_transport_DZ: pook_H13_transport
 
 class pook_transport_DZE: pook_transport_DZ
 {	
-	magazines[] = {};
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};
@@ -149,7 +151,7 @@ class pook_transport_CDF_DZ: pook_transport_DZ
 
 class pook_transport_CDF_DZE: pook_transport_CDF_DZ
 {
-	magazines[] = {};
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			magazines[] = {};

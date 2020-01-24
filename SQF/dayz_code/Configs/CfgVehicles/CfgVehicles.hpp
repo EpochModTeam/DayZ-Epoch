@@ -453,6 +453,8 @@ class CfgVehicles
 	#include "Helicopter\AH1Z.hpp"
 	#include "Helicopter\Pook.hpp"
 	#include "Helicopter\CSJ_GyroAC.hpp"
+	#include "Helicopter\KA60.hpp"
+	#include "Helicopter\AW159.hpp"
 	#include "CrashSite.hpp"
 	//Planes
 	#include "Plane\AN2_DZ.hpp"
