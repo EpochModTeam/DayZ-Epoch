@@ -293,9 +293,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class RubberBoat;
-	class AH6_Base_EP1;
-	class An2_Base_EP1;
+	
 	class TT650_Base;
 	class Truck: Car
 	{
@@ -471,11 +469,12 @@ class CfgVehicles
 	#include "Bikes\TT650_Civ.hpp"
 	#include "Bikes\M1030.hpp"
 	//Boat
-	#include "Boat\RHIB.hpp" //Must be first boat, includes Ship base class
+	#include "Boat\RHIB.hpp"
 	#include "Boat\PBX.hpp"
 	#include "Boat\Fishing_Boat.hpp"
 	#include "Boat\smallboat.hpp"
 	#include "Boat\JetSkiYanahui.hpp"
+	#include "Boat\Seafox.hpp"
 
 	//Includes all Building Stuff
 	// This parent class is made to make referring to these objects easier later with allMissionObjects

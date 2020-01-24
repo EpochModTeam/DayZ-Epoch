@@ -8731,13 +8731,20 @@
 			<Russian>НЛЖК (Мод. 19)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PBX">
-			<English>PBX</English>
+			<English>PBX Rubber Boat</English>
 			<Russian>Моторная лодка ПВХ</Russian>
 			<Spanish>Gomón PBX</Spanish>
-			<French>Zodiac</French>
+			<French>PBX canot</French>
 			<Czech>PBX člun</Czech>
 			<German>PBX Schlauchboot</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_CRRC">
+			<English>CRRC Rubber Boat</English>
+			<Spanish>Gomón CRRC</Spanish>
+			<French>CRRC canot</French>
+			<Czech>CRRC člun</Czech>
+			<German>CRRC Schlauchboot</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_FISHING_BOAT">
 			<English>Fishing boat</English>
 			<Russian>Рыбацкая лодка</Russian>
