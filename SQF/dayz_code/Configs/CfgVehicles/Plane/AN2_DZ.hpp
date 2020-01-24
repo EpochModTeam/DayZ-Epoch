@@ -1,6 +1,8 @@
+class An2_Base_EP1;
 class AN2_DZ: An2_Base_EP1
 {
 	displayname = $STR_VEH_NAME_AN2_GREEN;
+	vehicleClass = "DayZ Epoch Vehicles";
 	scope = public;
 	side = 2;
 	crew = "";
@@ -36,6 +38,7 @@ class An2_2_TK_CIV_EP1;
 class An2_2_TK_CIV_EP1_DZ : An2_2_TK_CIV_EP1
 {
 	displayname = $STR_VEH_NAME_AN2_WHITEGREEN;
+	vehicleClass = "DayZ Epoch Vehicles";
 	scope = public;
 	side = 2;
 	crew = "";

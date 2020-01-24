@@ -3,6 +3,7 @@ class MV22_DZ : MV22 {
 	accuracy = 1000; 
 	scope = public; 
 	displayName = $STR_VEH_NAME_MV22; 
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = ""; 
 	typicalCargo[] = {};
 	class TransportMagazines {};
