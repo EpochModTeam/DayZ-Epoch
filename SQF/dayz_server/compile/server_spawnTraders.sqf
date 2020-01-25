@@ -15,6 +15,7 @@ private "_trader";
 	_trader disableAI "MOVE";
 	_trader disableAI "TARGET";
 	_trader setBehaviour "CARELESS";
+	_trader setcaptive true;
 	_trader forceSpeed 0;
 	_trader allowDamage false;
 	_trader enableSimulation false;

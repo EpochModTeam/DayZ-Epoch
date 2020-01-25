@@ -10,14 +10,15 @@
 //  - arg#1 is a boolean: check also whether arg#0 is inside (bounding box of) some non-enterable buildings around. Can be used to check if a player or an installed item is on a building roof.
 //  - arg#0 is posATL, arg#1 should be a building
 
-private ["_unit","_inside","_building","_size"];
+private ["_check","_unit","_inside","_building","_size","_type"];
 
 _check = {
-	private ["_inside"];
+	private ["_building", "_point", "_inside", "_offset", "_relPos", "_boundingBox", "_min", "_max", "_myX", "_myY", "_myZ"];
 
 	_building = _this select 0;
-	_point = _this select 1;
 	_inside = false;
+	if (isNull _building) exitwith {_inside};
+	_point = _this select 1;	
 	_offset = 1; // shrink building boundingbox by this length.
 
 	_relPos = _building worldToModel _point;
@@ -64,7 +65,7 @@ else {
 	if ((!_inside) AND {(count _this > 1)}) then { // if optional argument is a boolean
 		{
 			_building = _x;
-			_type = typeOf _x;
+			_type = typeOf _building;
 			if ((((!(_type IN DayZ_SafeObjects)) // not installable objects
 				AND {(!(_type isKindOf "ReammoBox"))}) // not lootpiles (weaponholders and ammoboxes)
 				AND {((_size + (sizeOf _type)) > _unit distance _x)}) // objects might colliding

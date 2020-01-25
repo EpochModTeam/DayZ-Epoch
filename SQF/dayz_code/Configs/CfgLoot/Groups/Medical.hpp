@@ -1,37 +1,26 @@
 MedicalLow[] =
 {
-	{Loot_MAGAZINE,		8,		ItemBandage},
-	{Loot_MAGAZINE,		5,		ItemPainkiller},
-	{Loot_MAGAZINE,		4,		ItemMorphine},
-	{Loot_MAGAZINE,		3,		ItemEpinephrine},
-	{Loot_MAGAZINE,		4,		ItemAntibacterialWipe},
-	{Loot_MAGAZINE,		4,		ItemHeatPack}
+	{Loot_MAGAZINE,		5,		ItemBandage},
+	{Loot_MAGAZINE,		3,		ItemPainkiller},
+	{Loot_MAGAZINE,		3,		ItemMorphine},
+	{Loot_MAGAZINE,		1,		ItemEpinephrine},
+	{Loot_MAGAZINE,		2,		ItemAntibacterialWipe},
+	{Loot_MAGAZINE,		1,		ItemHeatPack}
 };
 
 MedicalHigh[] =
 {
-	{Loot_MAGAZINE,		5,		ItemMorphine},
-	{Loot_MAGAZINE,		3,		ItemBloodTester},
-	{Loot_MAGAZINE,		5,		ItemHeatPack},
-	{Loot_MAGAZINE,		2,		ItemBloodbagEmpty},
-	
-	{Loot_GROUP,		2,		Antibiotics},
-	{Loot_GROUP,		6,		Bloodbags},
-	
-	{Loot_GROUP,		7,		MedicalLow}
+	{Loot_MAGAZINE,		1,		bloodTester},
+	{Loot_MAGAZINE,		1,		emptyBloodBag},
+	{Loot_GROUP,		3,		Antibiotics},
+	{Loot_GROUP,		15,		Bloodbags},
+	{Loot_GROUP,		8,		MedicalLow}
 };
 
 MedicalBox[] =
 {
-	{Loot_MAGAZINE,		5,		ItemMorphine},
-	{Loot_MAGAZINE,		3,		ItemBloodTester},
-	{Loot_MAGAZINE,		5,		ItemHeatPack},
-	{Loot_MAGAZINE,		2,		ItemBloodbagEmpty},
-	
-	{Loot_GROUP,		1,		Antibiotics},
-	{Loot_GROUP,		15,		Bloodbags},
-	
-	{Loot_GROUP,		7,		MedicalLow}
+	{Loot_GROUP,		5,		MedicalHigh},
+	{Loot_GROUP,		1,		MedicalLow}
 };
 
 Antibiotics[] =
@@ -43,15 +32,12 @@ Antibiotics[] =
 
 Bloodbags[] =
 {
-	{Loot_MAGAZINE,		5,		ItemBloodbagAPos},
-	{Loot_MAGAZINE,		4,		ItemBloodbagANeg},
-	
-	{Loot_MAGAZINE,		5,		ItemBloodbagBPos},
-	{Loot_MAGAZINE,		4,		ItemBloodbagBNeg},
-	
-	{Loot_MAGAZINE,		2,		ItemBloodbagABPos},
-	{Loot_MAGAZINE,		2,		ItemBloodbagABNeg},
-	
-	{Loot_MAGAZINE,		2,		ItemBloodbagOPos},
-	{Loot_MAGAZINE,		1,		ItemBloodbagONeg}
+	{Loot_MAGAZINE,		5,		bloodBagAPOS},
+	{Loot_MAGAZINE,		4,		bloodBagANEG},
+	{Loot_MAGAZINE,		5,		bloodBagBPOS},
+	{Loot_MAGAZINE,		4,		bloodBagBNEG},
+	{Loot_MAGAZINE,		2,		bloodBagABPOS},
+	{Loot_MAGAZINE,		2,		bloodBagABNEG},
+	{Loot_MAGAZINE,		2,		bloodBagOPOS},
+	{Loot_MAGAZINE,		1,		bloodBagONEG}
 };

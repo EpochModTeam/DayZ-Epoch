@@ -23,7 +23,7 @@ _WaterHoleArray = [
 	"WillowLake"
 ];
 
-_infectedWaterHoles = _WaterHoleArray call fn_shuffleArray;
+_infectedWaterHoles = [_WaterHoleArray,5] call fn_shuffleArray;
 
 infectedWaterHoles = [];
 

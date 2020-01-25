@@ -25,3 +25,18 @@ class Attachment_Ghillie : CA_Magazine
 		};*/
 	};
 };
+class Attachment_Ghillie_Desert : Attachment_Ghillie
+{
+	picture = "\dayz_epoch_c\icons\attachments\attachment_netting_desert.paa";
+	displayName = $STR_DZE_ATTACHMENT_GHIL_DES_NAME;
+};
+class Attachment_Ghillie_Snow : Attachment_Ghillie
+{
+	picture = "\dayz_epoch_c\icons\attachments\attachment_netting_snow.paa";
+	displayName = $STR_DZE_ATTACHMENT_GHIL_SNOW_NAME;
+};
+class Attachment_Ghillie_Urban : Attachment_Ghillie
+{
+	picture = "\dayz_epoch_c\icons\attachments\attachment_netting_urban.paa";
+	displayName = $STR_DZE_ATTACHMENT_GHIL_URB_NAME;
+};

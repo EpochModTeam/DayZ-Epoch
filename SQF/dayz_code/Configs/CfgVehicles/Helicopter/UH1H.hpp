@@ -17,21 +17,26 @@ class UH1H_base: Helicopter
 class UH1H_DZ: UH1H_base
 {
 	displayname = $STR_VEH_NAME_UH1H_WOODLAND;
+	vehicleClass = "DayZ Epoch Vehicles";
 	scope = public;
-	side = 2;
 	crew = "";
 	model = "dayz_vehicles\helicopters\huey\huey.p3d";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
 	class TransportMagazines{};
 	class TransportWeapons{};
+	weapons[] = {"CMFlareLauncher"};
+	magazines[] = {"120Rnd_CMFlareMagazine"};		
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 5;
-	transportMaxMagazines = 25;
-	transportmaxbackpacks = 4;
-	fuelCapacity = 1333;
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 80;
+	transportmaxbackpacks = 6;
+	fuelCapacity = 1333;	
+	radartype = 0;
+	supplyRadius = 1.3;
+	
 	class Turrets : Turrets 
 	{
 		class MainTurret : MainTurret 

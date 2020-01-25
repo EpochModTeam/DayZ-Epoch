@@ -1,13 +1,17 @@
-private ["_ar","_rand_array","_rand"];
-_ar = _this;
-_rand_array = [];
-while {count _ar > 0} do {
-	_rand = (count _ar);
-	_rand = floor (random _rand);
-	_rand_array set [count _rand_array, _ar select _rand];
-	_ar set [_rand, "randarray_del"];
-	_ar = _ar - ["randarray_del"];
-	sleep 0.001;
-};
+//Killzone Kid Array Shuffle Plus
+//Usage: array = [array, shuffle count] call fn_shuffleArray;
 
-_rand_array
+private ["_arr","_cnt","_el1","_indx","_el2"];
+_arr = _this select 0;
+_cnt = count _arr - 1;
+if (_cnt < 1) exitWith {_arr;}; // add count check to prevent errors.
+_el1 = _arr select _cnt;
+_arr resize _cnt;
+for "_i" from 1 to (_this select 1) do {
+	_indx = floor random _cnt;
+	_el2 = _arr select _indx;
+	_arr set [_indx, _el1];
+	_el1 = _el2;
+};
+_arr set [_cnt, _el1];
+_arr

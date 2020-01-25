@@ -22,15 +22,15 @@ class CfgWeapons
 	#include "Loot.hpp"
 	
 	//Sniper Rifles
-	#include "Weapon\Sniper\Anzio_20.hpp"
-	#include "Weapon\Sniper\AS50.hpp"
-	#include "Weapon\Sniper\M107.hpp"
-	#include "Weapon\Sniper\KSVK.hpp"
-	#include "Weapon\Sniper\M4SPR.hpp"
-	#include "Weapon\Sniper\VSSVintorez.hpp"
+	#include "Rifles\Anzio_20.hpp"
+	#include "Rifles\AS50.hpp"
+	#include "Rifles\M107.hpp"
+	#include "Rifles\KSVK.hpp"
+	#include "Rifles\M4SPR.hpp"
+	#include "Rifles\VSSVintorez.hpp"
 	
 	//Ak107
-	#include "Weapon\Assault\AK107.hpp"	
+	#include "Rifles\AK107.hpp"	
 	
 	//each include is preceded by its required external references.
 	
@@ -102,7 +102,7 @@ class CfgWeapons
 	class m240_scoped_EP1;
 	#include "Rifles\M240.hpp"
 	
-	#include "Weapon\LMG\M60A4.hpp"
+	#include "Rifles\M60A4.hpp"
 
 	class M1014 : Rifle
 	{
@@ -278,7 +278,17 @@ class CfgWeapons
 	#include "Tools\FlashlightRed.hpp"
 	
 	#include "Tools\Radio.hpp"
-	#include "Item\ItemKeyKit.hpp"
+	#include "Tools\ItemKeyKit.hpp"
+	
+	#include "Tools\APSI.hpp"
+	#include "Tools\Pilotmask.hpp"
+	#include "Tools\Gasmask1.hpp"
+	#include "Tools\Gasmask2.hpp"
+	#include "Tools\GPSBroken.hpp"
+	#include "Tools\NVGBroken.hpp"	
+	#include "Tools\RadioBroken.hpp"
+	#include "Tools\Solder.hpp"
+	
 	#include "Item\ItemKeys.hpp"
 	#include "Item\Documents.hpp"
 	

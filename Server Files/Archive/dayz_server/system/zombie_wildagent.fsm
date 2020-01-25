@@ -1,0 +1,203 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DayZ Wild Zeds Control">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init",0,250,-75.000000,-400.000000,25.000000,-350.000000,0.000000,"init"};
+item1[] = {"No_More_Needed",4,218,-250.000000,-250.000000,-150.000000,-200.000000,0.000000,"No More" \n "Needed"};
+item2[] = {"Delay_",2,250,-75.000000,50.000000,25.000000,100.000000,0.000000,"Delay" \n ""};
+item3[] = {"Need_more",4,218,-75.000000,-175.000000,25.000000,-125.000000,3.000000,"Need more"};
+item4[] = {"Spawn",2,250,-75.000000,-100.000000,25.000000,-50.000000,0.000000,"Spawn"};
+item5[] = {"Timeout",4,218,50.000000,-250.000000,150.000000,-200.000000,0.000000,"Timeout"};
+item6[] = {"Return",8,218,-75.000000,-25.000000,25.000000,25.000000,0.000000,"Return"};
+item7[] = {"initialized",4,218,-75.000000,-325.000000,25.000000,-275.000000,0.000000,"initialized"};
+item8[] = {"prepare",2,250,-75.000000,-250.000000,25.000000,-200.000000,0.000000,"prepare"};
+item9[] = {"Check",2,250,-250.000000,-25.000000,-150.000000,25.000000,0.000000,"Check"};
+item10[] = {"",7,210,-204.000000,-154.000000,-196.000000,-146.000000,0.000000,""};
+item11[] = {"Released_Delay_",4,4314,-250.000000,50.000000,-150.000000,100.000000,0.000000,"Released" \n "Delay" \n ""};
+link0[] = {0,7};
+link1[] = {1,8};
+link2[] = {2,11};
+link3[] = {3,4};
+link4[] = {4,6};
+link5[] = {5,8};
+link6[] = {6,2};
+link7[] = {7,8};
+link8[] = {8,3};
+link9[] = {8,5};
+link10[] = {9,10};
+link11[] = {10,1};
+link12[] = {10,3};
+link13[] = {11,9};
+globals[] = {25.000000,1,0,0,0,640,480,1,47,6316128,1,-497.761261,579.685730,295.259521,-641.446960,689,599,1};
+window[] = {2,-1,-1,-32000,-32000,930,150,1479,150,3,707};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "DayZ Wild Zeds Control";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "initialized">*/
+        class initialized
+        {
+          priority = 0.000000;
+          to="prepare";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isnil ""bis_fnc_init"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log (""WILD  SPAWN: INITIALIZING WILD SPAWN SCRIPT"");" \n
+           ""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Delay_">*/
+    class Delay_
+    {
+      name = "Delay_";
+      init = /*%FSM<STATEINIT""">*/"_timeD = diag_tickTime;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Released_Delay_">*/
+        class Released_Delay_
+        {
+          priority = 0.000000;
+          to="Check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeD) > 5"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Spawn">*/
+    class Spawn
+    {
+      name = "Spawn";
+      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
+       "" \n
+       "" \n
+       "_tmp = [_unitTypes, _amount2Spawn];" \n
+       "_waiting = _tmp call server_Wildgenerate;" \n
+       "" \n
+       "" \n
+       "" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Return">*/
+        class Return
+        {
+          priority = 0.000000;
+          to="Delay_";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_waiting"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "prepare">*/
+    class prepare
+    {
+      name = "prepare";
+      init = /*%FSM<STATEINIT""">*/"_timeN = diag_tickTime;" \n
+       "_spawnmore = false;" \n
+       "_amount2Spawn =  100;" \n
+       "_totalamount=1000;" \n
+       "_unitTypes = [""Wild_Civ_newBase""];" \n
+       "" \n
+       "" \n
+       "_debugarea = getMarkerPos ""respawn_west"";" \n
+       "_pos = getMarkerPos ""center"";" \n
+       "" \n
+       "_wildZombies = {local _x} count (_pos nearEntities [""WildZombie_Base"",7500]);" \n
+       "_count = _totalamount - _wildZombies;" \n
+       "" \n
+       "if (_count >  _amount2Spawn) then {" \n
+       "	_spawnmore = true;" \n
+       "};" \n
+       "" \n
+       "diag_log format [""WILD SPAWN: Active: %1, Waiting: %2"",_wildZombies,_count]" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Need_more">*/
+        class Need_more
+        {
+          priority = 3.000000;
+          to="Spawn";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_spawnmore"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Timeout">*/
+        class Timeout
+        {
+          priority = 0.000000;
+          to="prepare";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _timeN) > 600"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Check">*/
+    class Check
+    {
+      name = "Check";
+      init = /*%FSM<STATEINIT""">*/"_spawnmore = false;" \n
+       "_wildZombies = {local _x} count (_pos nearEntities [""WildZombie_Base"",7500]);" \n
+       "_count = 200 - _wildZombies;" \n
+       "" \n
+       "if (_count >  _amount2Spawn) then {" \n
+       "	_spawnmore = true;" \n
+       "};"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Need_more">*/
+        class Need_more
+        {
+          priority = 3.000000;
+          to="Spawn";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_spawnmore"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "No_More_Needed">*/
+        class No_More_Needed
+        {
+          priority = 0.000000;
+          to="prepare";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!_spawnmore"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+  };
+};
+/*%FSM</COMPILE>*/

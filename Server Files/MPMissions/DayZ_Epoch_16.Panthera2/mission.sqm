@@ -36,7 +36,7 @@ class Mission
 	class Intel
 	{
 		briefingName="DayZ Epoch Panthera";
-		briefingDescription="Version 1.0.6.2";
+		briefingDescription="Version 1.0.7";
 		startWeather=0;
 		forecastWeather=0;
 		year=2008;
@@ -53,7 +53,7 @@ class Mission
 			class Vehicles
 			{
 				items=100;
-#define PLRDEF position[]={5134,1,-3091};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDamage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
+				#define PLRDEF position[]={5134,1,-3091};azimut=0;side="WEST";vehicle="Survivor1_DZ";skill=0.6;init="this enableSimulation false;this allowDamage false;this disableAI 'FSM';this disableAI 'ANIM';this disableAI 'MOVE';";player="PLAY CDG";
 				class Item0{id=0;PLRDEF};
 				class Item1
 				{
@@ -189,10 +189,10 @@ class Mission
 	};
 	class Markers
 	{
-		items=26;
+		items=25;
 		class Item0
 		{
-			position[]={5192,62,4994};
+			position[]={5192,0,4994};
 			name="center";
 			type="Empty";
 			a=6000;b=6000;
@@ -205,7 +205,7 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={1725,1,5462};
+			position[]={1725,0,5462};
 			name="spawn0";
 			type="Empty";
 		};
@@ -217,227 +217,219 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={5896,4,1669};
+			position[]={5896,0,1669};
 			name="spawn2";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={8744,16,2248};
+			position[]={8744,0,2248};
 			name="spawn3";
 			type="Empty";
 		};
 		class Item6
 		{
-			position[]={2453,7,6910};
+			position[]={2453,0,6910};
 			name="spawn4";
 			type="Empty";
 		};
 		class Item7
 		{
-			position[]={3249,6,2555};
+			position[]={3249,0,2555};
 			name="spawn5";
 			type="Empty";
 		};
 		class Item8
 		{
-			position[]={4114,107,3820};
+			position[]={4114,0,3820};
 			name="spawn6";
 			type="Empty";
 		};
 		class Item9
 		{
-			position[]={1876,1,2839};
+			position[]={1876,0,2839};
 			name="spawn7";
 			type="Empty";
 		};
 		class Item10
 		{
-			position[]={7988,1,6807};
+			position[]={7988,0,6807};
 			name="spawn8";
 			type="Empty";
 		};
 		class Item11
 		{
-			position[]={8818,9,5908};
+			position[]={8818,0,5908};
 			name="spawn9";
 			type="Empty";
 		};
 		class Item12
 		{
-			position[]={6116,31,3811};
+			position[]={6116,0,3811};
 			name="spawn10";
 			type="Empty";
 		};
 		class Item13
 		{
-			position[]={5192,62,4994};
+			position[]={5192,0,4994};
 			name="crashsites";
 			type="Empty";
 			a=6000;b=6000;
 		};
 		class Item14
 		{
-			position[]={5192,62,4994};
+			position[]={5192,0,4994};
 			name="carepackages";
 			type="Empty";
 			a=6000;b=0;
 		};
 		class Item15
 		{
-			position[]={4763,3,7484};
-			name="AirVehiclesF";
-			text="AWOL's Airfield";
-			type="mil_dot";
-			colorName="ColorGreen";
+			position[]={4763,0,7484};
+			name="Aircraftrader";
+			text="Aircraft Trader";
+			type="mil_triangle";
+			colorName="ColorBlack";
 		};
 		class Item16
 		{
-			position[]={5232,1,8228};
-			name="WholesalerNorth";
-			text="North's Wholesaler";
-			type="mil_dot";
+			position[]={5232,0,8228};
+			name="Wholesaler1";
+			text="Wholesaler";
+			type="mil_box";
 			colorName="ColorBlack";
 		};
 		class Item17
 		{
-			position[]={9056,9,4073};
-			name="HeroVehicles";
-			text="Darren's Hero Vehicles";
-			type="mil_triangle";
+			position[]={9051.4,0,4056};
+			name="HeroVendor";
+			text="Hero Vendor";
+			type="mil_dot";
 			colorName="ColorBlue";
 		};
 		class Item18
 		{
-			position[]={1891,5,3611};
-			name="NeutralAirVehicles";
-			text="Bandit Trader";
+			position[]={1891,0,3611};
+			name="BanditVendor";
+			text="Bandit Vendor";
 			type="mil_dot";
 			colorName="ColorRed";
 		};
 		class Item19
 		{
-			position[]={3349,1,2311};
-			name="Boats";
-			text="Sams Boats";
-			type="mil_triangle";
+			position[]={3357,0,2293.9};
+			name="BoatTrader1";
+			text="Boat Trader";
+			type="mil_box";
 			colorName="ColorBlack";
 		};
 		class Item20
 		{
-			position[]={8687,7,3137};
+			position[]={8687,0,3137};
 			name="NeutralTraders";
 			text="Trader City Selca";
 			type="mil_circle";
-			colorName="ColorBrown";
+			colorName="ColorBlack";
 		};
 		class Item21
 		{
-			position[]={4422,21,1629};
+			position[]={4422,0,1629};
 			name="NeutralTraderCity2";
 			text="Trader City Pikia";
 			type="mil_circle";
-			colorName="ColorBrown";
+			colorName="ColorBlack";
 		};
 		class Item22
 		{
-			position[]={7224,8,727};
-			name="WholesaleSouth";
-			text="South's Wholesaler";
-			type="mil_dot";
+			position[]={7224,0,727};
+			name="Wholesaler2";
+			text="Wholesaler";
+			type="mil_box";
 			colorName="ColorBlack";
 		};
 		class Item23
 		{
-			position[]={4338,101,6317};
+			position[]={4338,0,6317};
 			name="PlanicaTraders";
 			text="Trader City Planica";
 			type="mil_circle";
-			colorName="ColorBrown";
+			colorName="ColorGreen";
 		};
 		class Item24
 		{
-			position[]={2247,35,9473};
-			name="IslandVehiclePartsVendors";
-			text="Mello Vehicle/Parts Vendors";
-			type="mil_circle";
-			colorName="ColorBrown";
-		};
-		class Item25
-		{
-			position[]={3804,-1,7656};
-			name="Boat2";
-			text="North Boat Vendor";
-			type="mil_dot";
+			position[]={3804,0,7656};
+			name="BoatTrader2";
+			text="Boat Trader";
+			type="mil_box";
 			colorName="ColorBlack";
 		};
 	};
 	class Sensors
 	{
-		items=11;
-#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{};
+		items=10;
+		#define TRGDEF a=100;b=100;activationBy="WEST";repeating=1;interruptable=1;age="UNKNOWN";class Effects{};
 		class Item0
 		{
-			position[]={4419,22,1629};
+			position[]={4419,0,1629};
 			TRGDEF
 			name="TraderCity1";
 			expCond="(player distance TraderCity1) < 100;";
-			expActiv="[""trader city Pikia"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""trader city Pikia"",true,""leave""] call player_traderCity;";
+			expActiv="[""Trader City Pikia"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City Pikia"",true,""leave""] call player_traderCity;";
 		};
 		class Item1
 		{
-			position[]={8688,7,3129};
+			position[]={8688,0,3129};
 			TRGDEF
 			name="TraderCity2";
 			expCond="(player distance TraderCity2) < 100;";
-			expActiv="[""trader city Selca"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""trader city Selca"",true,""leave""] call player_traderCity;";
+			expActiv="[""Trader City Selca"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City Selca"",true,""leave""] call player_traderCity;";
 		};
 		class Item2
 		{
-			position[]={9051,9,4073};
+			position[]={9051,0,4073};
 			TRGDEF
 			name="HeroVendors";
 			expCond="(player distance HeroVendors) < 100;";
-			expActiv="[""Hero Trader Camp"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""Hero Trader Camp"",true,""leave""] call player_traderCity;";
+			expActiv="[""Hero Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Hero Vendor"",true,""leave""] call player_traderCity;";
 		};
 		class Item3
 		{
-			position[]={7207,6,735};
+			position[]={7207,0,735};
 			TRGDEF
 			name="WholeSaler1";
 			expCond="(player distance WholeSaler1) < 100;";
-			expActiv="[""South's Wholesale"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""South's Wholesale"",true,""leave""] call player_traderCity;";
+			expActiv="[""Wholesaler"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Wholesaler"",true,""leave""] call player_traderCity;";
 		};
 		class Item4
 		{
-			position[]={1891,4,3603};
+			position[]={1891,0,3603};
 			TRGDEF
 			name="BanditTrader";
 			expCond="(player distance BanditTrader) < 100;";
-			expActiv="[""Bandit Camp"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""Bandit Camp"",true,""leave""] call player_traderCity;";
+			expActiv="[""Bandit Vendor"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Bandit Vendor"",true,""leave""] call player_traderCity;";
 		};
 		class Item5
 		{
-			position[]={4763,3,7481};
+			position[]={4763,0,7481};
 			TRGDEF
 			name="AWOLsAirField";
 			expCond="(player distance AWOLsAirField) < 100;";
-			expActiv="[""AWOLs Airfield"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""AWOLs Airfield"",true,""leave""] call player_traderCity;";
-		};
+			expActiv="[""Aircraft Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Aircraft Trader"",true,""leave""] call player_traderCity;";
+		};	
 		class Item6
 		{
-			position[]={5228,2,8230};
+			position[]={5228,0,8230};
 			TRGDEF
 			name="Wholesaler2";
 			expCond="(player distance Wholesaler2) < 100;";
-			expActiv="[""West's Wholesale"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""West's Wholesale"",true,""leave""] call player_traderCity;";
+			expActiv="[""Wholesaler"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Wholesaler"",true,""leave""] call player_traderCity;";
 		};
 		class Item7
 		{
@@ -445,35 +437,26 @@ class Mission
 			TRGDEF
 			name="BoatVendor";
 			expCond="(player distance BoatVendor) < 100;";
-			expActiv="[""Sams Boat Vendor"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""Sams Boat Vendor"",true,""leave""] call player_traderCity;";
+			expActiv="[""Boat Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Boat Trader"",true,""leave""] call player_traderCity;";
 		};
 		class Item8
 		{
-			position[]={4338,101,6317};
+			position[]={4338,0,6317};
 			TRGDEF
 			name="PlanicaTraders";
 			expCond="(player distance PlanicaTraders) < 100;";
-			expActiv="[""trader city Planica"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""trader city Planica"",true,""leave""] call player_traderCity;";
+			expActiv="[""Trader City Planica"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Trader City Planica"",true,""leave""] call player_traderCity;";
 		};
 		class Item9
-		{
-			position[]={2243,35,9479};
-			TRGDEF
-			name="MelloVehicleRepair";
-			expCond="(player distance MelloVehicleRepair) < 100;";
-			expActiv="[""Mello"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""Mello"",true,""leave""] call player_traderCity;";
-		};
-		class Item10
 		{
 			position[]={3807,0,7661};
 			TRGDEF
 			name="BOAT12";
 			expCond="(player distance BOAT12) < 100;";
-			expActiv="[""North Boat Vendor"",true,""enter""] call player_traderCity;";
-			expDesactiv="[""North Boat Vendor"",true,""leave""] call player_traderCity;";
+			expActiv="[""Boat Trader"",true,""enter""] call player_traderCity;";
+			expDesactiv="[""Boat Trader"",true,""leave""] call player_traderCity;";
 		};
 	};
 };

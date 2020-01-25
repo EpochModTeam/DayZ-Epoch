@@ -1,8 +1,8 @@
 class BTR90;
 class BTR90_DZ: BTR90 {
 	scope = public;
-	side = TGuerrila;
 	displayName = $STR_VEH_NAME_BTR90;
+	vehicleClass = "DayZ Epoch Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -13,9 +13,10 @@ class BTR90_DZ: BTR90 {
 	class TransportMagazines {};
 	class TransportWeapons {};
 
-	transportMaxMagazines = 100; // Default: 100
-	transportMaxWeapons = 10; // Default: 10
-	//transportmaxbackpacks = ; // Default:
+	transportMaxMagazines = 100;
+	transportMaxWeapons = 20;
+	transportmaxbackpacks = 6;
+	supplyRadius = 1.8;
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
@@ -23,8 +24,8 @@ class BTR90_DZ: BTR90 {
 class BTR90_HQ;
 class BTR90_HQ_DZ: BTR90_HQ {
 	scope = public;
-	side = TGuerrila;
 	displayName = $STR_VEH_NAME_BTR90_HQ;
+	vehicleClass = "DayZ Epoch Vehicles";
 
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
@@ -36,10 +37,12 @@ class BTR90_HQ_DZ: BTR90_HQ {
 	class TransportWeapons {};
 
 	transportSoldier = 6;
+	enableGPS = 0;
 
-	transportMaxMagazines = 100; // Default: 100
-	transportMaxWeapons = 10; // Default: 10
-	//transportmaxbackpacks = ; // Default:
+	transportMaxMagazines = 100;
+	transportMaxWeapons = 20;
+	transportmaxbackpacks = 6;
+	supplyRadius = 1.8;
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference

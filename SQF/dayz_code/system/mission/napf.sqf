@@ -1,5 +1,5 @@
 [[
-    ["Base_WarfareBBarrier10xTall",[5144.42,4891.09,-0.0578766],348.934],
+    ["Base_WarfareBBarrier10xTall",[5144.42,4891.09,-0.0578766],348.934,[0,0,1]],
 	["Base_WarfareBBarrier10xTall",[5131.46,4883.35,-7.62939e-006],308.557],
 	["Base_WarfareBBarrier10xTall",[5124.51,4870.26,1.52588e-005],96.6995],
 	["Base_WarfareBBarrier10xTall",[5124.68,4855.49,7.62939e-006],80.9897],
@@ -237,7 +237,7 @@
 	["LAV25_HQ_unfolded",[10398.4,8272.74,-0.385117],309.178],
 	["HeliHCivil",[10381,8254.33,-1.52588e-005],0],
 	["Base_WarfareBBarrier10xTall",[10401.1,8275.25,-0.0164871],39.7788],
-	["Base_WarfareBBarrier10xTall",[10389.7,8273.22,-0.151352],131.768],
+	["Base_WarfareBBarrier10xTall",[10389.7,8273.22,-0.151352],131.768,[0,0,1]],
 	["Base_WarfareBBarrier10xTall",[10399.8,8265.16,0.00557709],131.72],
 	["Base_WarfareBBarrier10xTall",[10365.5,8246.71,0.0432129],44.7464],
 	["HeliHCivil",[15093.3,16403.6,3.43323e-005],317.396],

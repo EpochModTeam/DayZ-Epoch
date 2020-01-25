@@ -1,8 +1,8 @@
 class Pickup_PK_GUE;
 class Pickup_PK_GUE_DZ: Pickup_PK_GUE {
 	scope = public;
-	side = TGuerrila;
 	displayName = $STR_VEH_NAME_PICKUP_GUE_PKT;
+	vehicleClass = "DayZ Epoch Vehicles";
 
 	crew = "";
 	typicalCargo[] = {};
@@ -13,12 +13,13 @@ class Pickup_PK_GUE_DZ: Pickup_PK_GUE {
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
+	supplyRadius = 1.3;
 };
 class Pickup_PK_TK_GUE_EP1;
 class Pickup_PK_TK_GUE_EP1_DZ: Pickup_PK_TK_GUE_EP1 {
 	scope = public;
-	side = TGuerrila;
 	displayName = $STR_VEH_NAME_PICKUP_TK_PKT;
+	vehicleClass = "DayZ Epoch Vehicles";
 
 	crew = "";
 	typicalCargo[] = {};
@@ -29,12 +30,13 @@ class Pickup_PK_TK_GUE_EP1_DZ: Pickup_PK_TK_GUE_EP1 {
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
+	supplyRadius = 1.3;
 };
 class Pickup_PK_INS;
 class Pickup_PK_INS_DZ: Pickup_PK_INS {
 	scope = public;
-	side = TGuerrila;
 	displayName = $STR_VEH_NAME_PICKUP_INS_PKT;
+	vehicleClass = "DayZ Epoch Vehicles";
 
 	crew = "";
 	typicalCargo[] = {};
@@ -45,6 +47,7 @@ class Pickup_PK_INS_DZ: Pickup_PK_INS {
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
+	supplyRadius = 1.3;
 };
 
 // Ammo Less

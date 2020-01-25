@@ -1,105 +1,40 @@
-class Offroad_DSHKM_base: Car
-{
-	class Turrets: Turrets
-	{
-		class MainTurret;
-	};
-};
-class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_base
-{
+class Offroad_DSHKM_Gue;
+class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_Gue {
 	scope = public;
-	side = 2;
-	faction = "GUE";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
 	displayName = $STR_VEH_NAME_PICKUP_DSHKM;
-	hiddenSelectionsTextures[] = {"\ca\wheeled\hilux_armed\data\coyota_trup4_CO.paa"};
-	class Damage
-	{
-		tex[] = {};
-		mat[] = {"ca\wheeled\hilux_armed\data\detailmapy\coyota_armed.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_armed.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_armed_destruct.rvmat","ca\weapons\data\dshk.rvmat","ca\weapons\data\dshk.rvmat","ca\weapons\data\dshk_destruct.rvmat","ca\weapons\data\tripod_dshk.rvmat","ca\weapons\data\tripod_dshk.rvmat","ca\wheeled\hilux_armed\data\detailmapy\tripod_dshk_destruct.rvmat","ca\weapons\data\pkm.rvmat","ca\weapons\data\pkm.rvmat","ca\weapons\data\pkm_destruct.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_trup3.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_trup3.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_trup3_destruct.rvmat","ca\wheeled\hilux_armed\data\detailmapy\drziaky.rvmat","ca\wheeled\hilux_armed\data\detailmapy\drziaky.rvmat","ca\wheeled\hilux_armed\data\detailmapy\drziaky_destruct.rvmat","ca\wheeled\data\detailmapy\coyota_kola.rvmat","ca\wheeled\data\detailmapy\coyota_kola.rvmat","ca\wheeled\data\detailmapy\coyota_kola_destruct.rvmat","ca\wheeled\data\detailmapy\coyota_interier.rvmat","ca\wheeled\data\detailmapy\coyota_interier.rvmat","ca\wheeled\data\detailmapy\coyota_interier_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
-	};
-	class Turrets: Turrets
-	{
-		class MainTurret: MainTurret
-		{
-			body = "mainTurret";
-			gun = "mainGun";
-			outGunnerMayFire = 1;
-			forceHideGunner = 1;
-			castGunnerShadow = 1;
-			viewGunnerInExternal = 1;
-			gunnerOpticsModel = "\ca\Weapons\optika_empty";
-			gunnerForceOptics = 0;
-			weapons[] = {"DShKM"};
-			soundServo[] = {};
-			stabilizedInAxes = 0;
-			magazines[] = {"50Rnd_127x107_DSHKM"};
-			gunnerAction = "Hilux_Gunner";
-			gunnerInAction = "Hilux_Gunner";
-			ejectDeadGunner = 1;
-			minElev = -18;
-			maxElev = 60;
-			minTurn = -360;
-			maxTurn = 360;
-			initTurn = 0;
-			gunnerCompartments = "Compartment2";
-		};
-	};
+	vehicleClass = "DayZ Epoch Vehicles";
+	class Turrets;
+	class MainTurret;
+	class HitPoints;
+	class HitLFWheel;
+	class HitLBWheel;
+	class HitRFWheel;
+	class HitRBWheel;
+	class HitFuel;
+	class HitEngine;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;	
+	supplyRadius = 1.3;
 };
 
-class Offroad_DSHKM_Gue_DZE: Offroad_DSHKM_base
+class Offroad_DSHKM_Gue_DZE: Offroad_DSHKM_Gue_DZ
 {
-	scope = public;
-	side = 2;
-	faction = "GUE";
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	displayName = $STR_VEH_NAME_PICKUP_DSHKM;
-	hiddenSelectionsTextures[] = {"\ca\wheeled\hilux_armed\data\coyota_trup4_CO.paa"};
-	class Damage
-	{
-		tex[] = {};
-		mat[] = {"ca\wheeled\hilux_armed\data\detailmapy\coyota_armed.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_armed.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_armed_destruct.rvmat","ca\weapons\data\dshk.rvmat","ca\weapons\data\dshk.rvmat","ca\weapons\data\dshk_destruct.rvmat","ca\weapons\data\tripod_dshk.rvmat","ca\weapons\data\tripod_dshk.rvmat","ca\wheeled\hilux_armed\data\detailmapy\tripod_dshk_destruct.rvmat","ca\weapons\data\pkm.rvmat","ca\weapons\data\pkm.rvmat","ca\weapons\data\pkm_destruct.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_trup3.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_trup3.rvmat","ca\wheeled\hilux_armed\data\detailmapy\coyota_trup3_destruct.rvmat","ca\wheeled\hilux_armed\data\detailmapy\drziaky.rvmat","ca\wheeled\hilux_armed\data\detailmapy\drziaky.rvmat","ca\wheeled\hilux_armed\data\detailmapy\drziaky_destruct.rvmat","ca\wheeled\data\detailmapy\coyota_kola.rvmat","ca\wheeled\data\detailmapy\coyota_kola.rvmat","ca\wheeled\data\detailmapy\coyota_kola_destruct.rvmat","ca\wheeled\data\detailmapy\coyota_interier.rvmat","ca\wheeled\data\detailmapy\coyota_interier.rvmat","ca\wheeled\data\detailmapy\coyota_interier_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
-	};
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
 		{
-			body = "mainTurret";
-			gun = "mainGun";
-			outGunnerMayFire = 1;
-			forceHideGunner = 1;
-			castGunnerShadow = 1;
-			viewGunnerInExternal = 1;
-			gunnerOpticsModel = "\ca\Weapons\optika_empty";
-			gunnerForceOptics = 0;
-			weapons[] = {"DShKM"};
-			soundServo[] = {};
-			stabilizedInAxes = 0;
 			magazines[] = {};
-			gunnerAction = "Hilux_Gunner";
-			gunnerInAction = "Hilux_Gunner";
-			ejectDeadGunner = 1;
-			minElev = -18;
-			maxElev = 60;
-			minTurn = -360;
-			maxTurn = 360;
-			initTurn = 0;
-			gunnerCompartments = "Compartment2";
 		};
 	};
-	class Upgrades
-	{
-		ItemORP[] = {"Offroad_DSHKM_Gue_DZE1",
-		{  },
-		{ 
-			{ "ItemORP",1 },
-			{ "PartEngine",2 } }};
+	
+	class Upgrades {
+		ItemORP[] = {"Offroad_DSHKM_Gue_DZE1",{},{{"ItemORP",1},{ "PartEngine",2}}};
 	};
 };
 
@@ -108,14 +43,9 @@ class Offroad_DSHKM_Gue_DZE1: Offroad_DSHKM_Gue_DZE
 {
 	original = "Offroad_DSHKM_Gue_DZE";
 	maxspeed = 170; // Offroad_DSHKM_base 150 | car 100
-	class Upgrades
-	{
-		ItemAVE[] = {"Offroad_DSHKM_Gue_DZE2",
-		{  },
-		{ 
-			{ "ItemAVE",1 },
-			{ "PartGeneric",2 },
-			{ "ItemTent",1 } }};
+	
+	class Upgrades {
+		ItemAVE[] = {"Offroad_DSHKM_Gue_DZE2",{},{{"ItemAVE",1},{"PartGeneric",2},{"ItemTent",1}}};
 	};
 };
 // Armmor 2
@@ -174,14 +104,9 @@ class Offroad_DSHKM_Gue_DZE2: Offroad_DSHKM_Gue_DZE1
 			armor = 0.1;
 		};
 	};
-	class Upgrades
-	{
-		ItemLRK[] = {"Offroad_DSHKM_Gue_DZE3",
-		{  },
-		{ 
-			{ "ItemLRK",1 },
-			{ "PartGeneric",2 },
-			{ "ItemTent",1 } }};
+	
+	class Upgrades {
+		ItemLRK[] = {"Offroad_DSHKM_Gue_DZE3",{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemTent",1}}};
 	};
 
 };
@@ -190,14 +115,10 @@ class Offroad_DSHKM_Gue_DZE3: Offroad_DSHKM_Gue_DZE2
 {
 	transportMaxWeapons = 20;  // car 10
 	transportMaxMagazines = 100; // car 50 
-        transportmaxbackpacks = 4; // car 2
-        class Upgrades
-	{
-		ItemTNK[] = {"Offroad_DSHKM_Gue_DZE4",
-		{  },
-		{ 
-			{ "ItemTNK",1 },
-			{ "PartFueltank",2 } }};
+	transportmaxbackpacks = 4; // car 2
+	
+	class Upgrades	{
+		ItemTNK[] = {"Offroad_DSHKM_Gue_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
 	};
 };
 
@@ -206,4 +127,3 @@ class Offroad_DSHKM_Gue_DZE4: Offroad_DSHKM_Gue_DZE3
 {
 	fuelCapacity = 210; // car 100
 };
-	

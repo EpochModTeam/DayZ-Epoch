@@ -25,7 +25,7 @@ class 30Rnd_545x39_AKSD : 30Rnd_545x39_AK
 
 class 75Rnd_545x39_RPK : CA_Magazine
 {
-	model = "\ca\weapons\mag_univ.p3d";
+	model = "dayz_epoch_c\models\magazines\RPK_mag.p3d";
 	picture = "\CA\weapons\AK\data\equip\M_RPK_74_CA.paa";
 	displayName = $STR_DZ_MAG_75RND_545X39_RPK_NAME;
 	descriptionShort = $STR_DZ_MAG_75RND_RPK74_DESC;

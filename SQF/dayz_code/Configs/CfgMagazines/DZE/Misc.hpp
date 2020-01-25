@@ -16,7 +16,7 @@ class ItemCanvas: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"ItemTent",1}};
-			input[] = {{"ItemCanvas",2},{"ItemPole",2}};
+			input[] = {{"ItemCanvas",2},{"equip_tent_poles",2}};
 		};
 		class Crafting1
 		{
@@ -25,7 +25,7 @@ class ItemCanvas: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"ItemDesertTent",1}};
-			input[] = {{"ItemCanvas",3},{"ItemPole",3}};
+			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
 		class Crafting2
 		{
@@ -34,7 +34,7 @@ class ItemCanvas: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"ItemDomeTent",1}};
-			input[] = {{"ItemCanvas",3},{"ItemPole",3}};
+			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
 		};
 		class Crafting3
 		{
@@ -124,7 +124,6 @@ class ItemComboLock: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\combo_lock_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_combolock_ca.paa";
 	descriptionShort = $STR_EPOCH_COMBINATIONLOCK_DESC;
-
 };
 
 class ItemCorrugated : CA_Magazine

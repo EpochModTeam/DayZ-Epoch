@@ -56,7 +56,6 @@ if !(alive _item) then {
 	publicVariableServer "PVDZ_serverStoreVar";
 	
 	player setVariable["USEC_BloodQty",r_player_blood,true];
-	player setVariable["medForceUpdate",true];
 
 	dayz_lastDrink = time;
 	dayz_thirst = 0;

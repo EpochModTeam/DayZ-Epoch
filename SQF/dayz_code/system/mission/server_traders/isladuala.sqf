@@ -1,166 +1,187 @@
 // DayZ Epoch TRADERS for 12
-serverTraders = ["US_Delta_Force_Assault_EP1","RU_Citizen3","Rocker4","Profiteer4","Rita_Ensler_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","TK_GUE_Soldier_5_EP1","GUE_Soldier_MG","Worker2","Worker3","Soldier_GL_M16A2_PMC","Woodlander1","UN_CDF_Soldier_Pilot_EP1","RU_WorkWoman1","Dr_Annie_Baker_EP1","RU_Citizen4","RU_WorkWoman5","RU_Citizen1","RU_Villager3","TK_CIV_Takistani04_EP1","Pilot_EP1","RU_Profiteer4","Woodlander3","Dr_Hladik_EP1","Doctor","HouseWife1"];
-//--------------------------------------Special Traders Start
-// Aircraft Dealer - Aeroporto Molatia Inl.
-menu_Worker2 = [
-	[["Airplanes",517],["Helicopter Unarmed",519]],
-	[],
-	"friendly"
-];
-// Bandit Trader - Kirabo
-menu_GUE_Soldier_MG = [
-	[["Attachments",693],["Ammunition",577],["Clothing",575],["Helicopter Armed",512],["Military Armed",569],["Trucks Armed",534],["Weapons",627]],
-	[],
-	"hostile"
-];
-// Black Market Vendor - Aeroporto Tasmera
-menu_Soldier_GL_M16A2_PMC = [
-	[["Attachments",693],["Black Market Ammo",527],["Black Market Weapons",526],["Explosives",529]],
-	[],
-	"neutral"
-];
-// Boat 1 - Swonto
-menu_RU_Villager3 = [
-	[["Boats Armed",558],["Boats Unarmed",557]],
-	[],
-	"neutral"
-];
-// Boat 2 - Canto
-menu_HouseWife1 = [
-	[["Boats Armed",673],["Boats Unarmed",672]],
-	[],
-	"neutral"
-];
-// Hero Vendor - Kingala
-menu_US_Delta_Force_Assault_EP1 = [
-	[["Attachments",693],["Ammunition",478],["Clothes",476],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477]],
+
+serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","RU_Citizen4","Profiteer1","Rita_Ensler_EP1","Dr_Hladik_EP1","Worker2","TK_CIV_Worker01_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","RU_WorkWoman5","Doctor","Worker1","TK_CIV_Worker02_EP1","Rocker4","RU_Citizen3","RU_WorkWoman1","Dr_Annie_Baker_EP1","Worker3","RU_Pilot","RU_Villager3","HouseWife1","Profiteer2","Profiteer3"];
+
+/***************Hero Vendor*********/
+menu_FR_AC = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",1],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",2],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",3],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",4],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",5]],
 	[],
 	"hero"
 ];
-// Wholesaler 1 - Kingala
-menu_RU_Citizen4 = [
-	[["Wholesale",555]],
+/***************Bandit Vendor*********/
+menu_GUE_Commander = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",6],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",7],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",8],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",9],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",10]],
+	[],
+	"hostile"
+];
+/***********************************Pinley************************************/
+/***************Black Market*********/
+menu_GUE_Woodlander2 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_BLACKMARKET",11]],
 	[],
 	"neutral"
 ];
-// Wholesaler 2 - Kirabo
-menu_RU_Citizen1 = [
-	[["Wholesale",636]],
-	[],
-	"neutral"
-];
-//--------------------------------------Special Traders End
-//--------------------------------------First Trader City Start - Nubak
-// Ammunition 1
-menu_RU_Citizen3 = [
-	[["Assault Rifle Ammo",480],["Light Machine Gun Ammo",481],["Pistol Ammo",484],["Shotguns and Single-shot Ammo",573],["Sniper Rifle Ammo",482],["Submachine Gun Ammo",483]],
-	[],
-	"friendly"
-];
-// Building/Parts 1
-menu_Woodlander1 = [
-	[["Building Supplies",530],["Tools",532],["Vehicle Parts",531]],
-	[],
-	"friendly"
-];
-// General Store 1
-menu_RU_WorkWoman1 = [
-	[["Backpacks",538],["Clothes",628],["Cooked Meats",630],["Drinks",601],["Packaged Food",629]],
-	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
-	"friendly"
-];
-// Medical 1
-menu_Dr_Annie_Baker_EP1 = [
-	[["Chem-lites/Flares",542],["Medical Supplies",541],["Smoke Grenades",543]],
-	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
-	"friendly"
-];
-// Vehicles 1
-menu_Profiteer4 = [
-	[["Bikes and ATV",608],["Buses and Vans",563],["Cargo Trucks",564],["Fuel Trucks",492],["Military Unarmed",491],["Police",700],["Trucks",495],["Used Cars",585],["Utility Vehicles",565]],
-	[],
-	"friendly"
-];
-// Weapons 1
-menu_Rocker4 = [
-	[["Attachments",693],["Assault Rifle",485],["Light Machine Gun",486],["Pistols",489],["Shotguns and Single-shot",574],["Sniper Rifle",487],["Submachine Guns",488]],
-	[],
-	"friendly"
-];
-//--------------------------------------First Trader City End - Nubak
-//--------------------------------------Second Trader City Start - Pinley
-// Ammunition 2
-menu_CIV_EuroMan02_EP1 = [
-	[["Assault Rifle Ammo",609],["Light Machine Gun Ammo",610],["Pistol Ammo",611],["Shotguns and Single-shot Ammo",613],["Sniper Rifle Ammo",614],["Submachine Gun Ammo",612]],
-	[],
-	"neutral"
-];
-// Building/Parts 2
-menu_Woodlander3 = [
-	[["Building Supplies",662],["Tools",663],["Vehicle Parts",664]],
-	[],
-	"neutral"
-];
-// General Store 2
-menu_Rita_Ensler_EP1 = [
-	[["Backpacks",496],["Clothes",497],["Cooked Meats",580],["Drinks",498],["Packaged Food",579]],
-	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
-	"neutral"
-];
-// Medical Supplies 2
-menu_Dr_Hladik_EP1 = [
-	[["Chem-lites/Flares",666],["Medical Supplies",665],["Smoke Grenades",668]],
-	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
-	"neutral"
-];
-// Vehicles 2
-menu_Worker3 = [
-	[["Bikes and ATV",587],["Buses and Vans",588],["Cargo Trucks",586],["Fuel Trucks",589],["Military Unarmed",598],["Police",701],["Trucks",590],["Used Cars",520],["Utility Vehicles",591]],
-	[],
-	"neutral"
-];
-// Weapons 2
+
+/***************Weapons*********/
 menu_CIV_EuroMan01_EP1 = [
-	[["Attachments",693],["Assault Rifle",602],["Light Machine Gun",603],["Pistols",606],["Shotguns and Single-shot",607],["Sniper Rifle",605],["Submachine Guns",604]],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_ATTACHMENTS",12],[localize "STR_EPOCH_TRADER_CATEGORY_PISTOLS",13],[localize "STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNS",14],[localize "STR_EPOCH_TRADER_CATEGORY_SINGLESHOT",15],[localize "STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLES",16],[localize "STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLES",17],[localize "STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNS",18]],
 	[],
 	"neutral"
 ];
-//--------------------------------------Second Trader City End - Pinley
-//--------------------------------------Third Trader City Start - Camara
-// Ammunition 3
-menu_Pilot_EP1 = [
-	[["Assault Rifle Ammo",643],["Light Machine Gun Ammo",644],["Pistol Ammo",646],["Shotguns and Single-shot Ammo",649],["Sniper Rifle Ammo",647],["Submachine Gun Ammo",648]],
+
+/***************Ammunition*********/
+menu_CIV_EuroMan02_EP1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_PISTOLAMMO",19],[localize "STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNAMMO",20],[localize "STR_EPOCH_TRADER_CATEGORY_SINGLESHOTAMMO",21],[localize "STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLEAMMO",22],[localize "STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLEAMMO",23],[localize "STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNAMMO",24],[localize "STR_EPOCH_TRADER_CATEGORY_SMOKEGRENADES",25],[localize "STR_EPOCH_TRADER_CATEGORY_FLARES",26]],
 	[],
 	"neutral"
 ];
-// Building/Parts 3
-menu_TK_GUE_Soldier_5_EP1 = [
-	[["Building Supplies",508],["Tools",510],["Vehicle Parts",509]],
-	[],
-	"neutral"
-];
-// General Store 3
+
+/***************General Store*********/
 menu_RU_WorkWoman5 = [
-	[["Backpacks",632],["Clothes",631],["Cooked Meats",634],["Drinks",633],["Packaged Food",635]],
-	[["ItemTinBar","TrashJackDaniels",1,1,"buy","Empty Whiskey Bottle","Tin Bar",101]],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_PACKAGEFOOD",27],[localize "STR_EPOCH_TRADER_CATEGORY_COOKMEAT",28],[localize "STR_EPOCH_TRADER_CATEGORY_DRINKS",29],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",30],[localize "STR_EPOCH_TRADER_CATEGORY_BACKPACKS",31],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",32]],
+	[["ItemTinBar","TrashJackDaniels",1,1]],
 	"neutral"
 ];
-// Medical Supplies 3
+
+/***************Medical Supplies*********/
 menu_Doctor = [
-	[["Chem-lites/Flares",669],["Medical Supplies",670],["Smoke Grenades",671]],
-	[["FoodBioMeat","ItemZombieParts",1,1,"buy","Zombie Parts","Bio Meat",101]],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_MEDICALSUPPLIES",33]],
+	[["FoodBioMeat","ItemZombieParts",1,1]],
 	"neutral"
 ];
-// Vehicles 3
-menu_UN_CDF_Soldier_Pilot_EP1 = [
-	[["Bikes and ATV",536],["Buses and Vans",592],["Cargo Trucks",570],["Fuel Trucks",595],["Military Unarmed",599],["Trucks Unarmed",535],["Used Cars",600],["Utility Vehicles",568]],
+
+/***************Building/Parts*********/
+menu_Worker1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
 	[],
 	"neutral"
 ];
-// Weapons 3
-menu_TK_CIV_Takistani04_EP1 = [
-	[["Attachments",693],["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns and Single-shot",641],["Sniper Rifle",640],["Submachine Guns",642]],
+
+/***************Vehicles*********/
+menu_TK_CIV_Worker02_EP1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_BIKESATVS",37],[localize "STR_EPOCH_TRADER_CATEGORY_CARS",38],[localize "STR_EPOCH_TRADER_CATEGORY_PICKUPS",39],[localize "STR_EPOCH_TRADER_CATEGORY_UAZS",40],[localize "STR_EPOCH_TRADER_CATEGORY_SUVS",41],[localize "STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS",42],[localize "STR_EPOCH_TRADER_CATEGORY_FUELTRUCKS",43],[localize "STR_EPOCH_TRADER_CATEGORY_MILITARYUNARMED",44],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",45]],
 	[],
 	"neutral"
 ];
-//--------------------------------------Third Trader City End - Camara
+/*****************************************************************************/
+/************************************Camara*************************************/
+/***************Weapons*********/
+menu_RU_Citizen4 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_ATTACHMENTS",12],[localize "STR_EPOCH_TRADER_CATEGORY_PISTOLS",13],[localize "STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNS",14],[localize "STR_EPOCH_TRADER_CATEGORY_SINGLESHOT",15],[localize "STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLES",16],[localize "STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLES",17],[localize "STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNS",18]],
+	[],
+	"neutral"
+];
+
+/***************Ammunition*********/
+menu_Profiteer1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_PISTOLAMMO",19],[localize "STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNAMMO",20],[localize "STR_EPOCH_TRADER_CATEGORY_SINGLESHOTAMMO",21],[localize "STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLEAMMO",22],[localize "STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLEAMMO",23],[localize "STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNAMMO",24],[localize "STR_EPOCH_TRADER_CATEGORY_SMOKEGRENADES",25],[localize "STR_EPOCH_TRADER_CATEGORY_FLARES",26]],
+	[],
+	"neutral"
+];
+
+/***************General Store*********/
+menu_Rita_Ensler_EP1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_PACKAGEFOOD",27],[localize "STR_EPOCH_TRADER_CATEGORY_COOKMEAT",28],[localize "STR_EPOCH_TRADER_CATEGORY_DRINKS",29],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",30],[localize "STR_EPOCH_TRADER_CATEGORY_BACKPACKS",31],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",32]],
+	[["ItemTinBar","TrashJackDaniels",1,1]],
+	"neutral"
+];
+
+/***************Medical Supplies*********/
+menu_Dr_Hladik_EP1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_MEDICALSUPPLIES",33]],
+	[["FoodBioMeat","ItemZombieParts",1,1]],
+	"neutral"
+];
+
+/***************Building/Parts*********/
+menu_Worker2 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
+	[],
+	"neutral"
+];
+
+/***************Vehicles*********/
+menu_TK_CIV_Worker01_EP1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_BIKESATVS",37],[localize "STR_EPOCH_TRADER_CATEGORY_CARS",38],[localize "STR_EPOCH_TRADER_CATEGORY_PICKUPS",39],[localize "STR_EPOCH_TRADER_CATEGORY_UAZS",40],[localize "STR_EPOCH_TRADER_CATEGORY_SUVS",41],[localize "STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS",42],[localize "STR_EPOCH_TRADER_CATEGORY_FUELTRUCKS",43],[localize "STR_EPOCH_TRADER_CATEGORY_MILITARYUNARMED",44],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",45]],
+	[],
+	"neutral"
+];
+
+/*****************************************************************************/
+/***********************************Nubak*************************************/
+/***************Weapons*********/
+menu_Rocker4 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_ATTACHMENTS",12],[localize "STR_EPOCH_TRADER_CATEGORY_PISTOLS",13],[localize "STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNS",14],[localize "STR_EPOCH_TRADER_CATEGORY_SINGLESHOT",15],[localize "STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLES",16],[localize "STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLES",17],[localize "STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNS",18]],
+	[],
+	"friendly"
+];
+
+/***************Ammunition*********/
+menu_RU_Citizen3 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_PISTOLAMMO",19],[localize "STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNAMMO",20],[localize "STR_EPOCH_TRADER_CATEGORY_SINGLESHOTAMMO",21],[localize "STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLEAMMO",22],[localize "STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLEAMMO",23],[localize "STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNAMMO",24],[localize "STR_EPOCH_TRADER_CATEGORY_SMOKEGRENADES",25],[localize "STR_EPOCH_TRADER_CATEGORY_FLARES",26]],
+	[],
+	"friendly"
+];
+
+/***************General Store*********/
+menu_RU_WorkWoman1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_PACKAGEFOOD",27],[localize "STR_EPOCH_TRADER_CATEGORY_COOKMEAT",28],[localize "STR_EPOCH_TRADER_CATEGORY_DRINKS",29],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",30],[localize "STR_EPOCH_TRADER_CATEGORY_BACKPACKS",31],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",32]],
+	[["ItemTinBar","TrashJackDaniels",1,1]],
+	"friendly"
+];
+
+/***************Medical Supplies*********/
+menu_Dr_Annie_Baker_EP1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_MEDICALSUPPLIES",33]],
+	[["FoodBioMeat","ItemZombieParts",1,1]],
+	"friendly"
+];
+
+/***************Building/Parts*********/
+menu_Worker3 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
+	[],
+	"friendly"
+];
+
+/***************Vehicles*********/
+menu_TK_CIV_Worker01_EP1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_BIKESATVS",37],[localize "STR_EPOCH_TRADER_CATEGORY_CARS",38],[localize "STR_EPOCH_TRADER_CATEGORY_PICKUPS",39],[localize "STR_EPOCH_TRADER_CATEGORY_UAZS",40],[localize "STR_EPOCH_TRADER_CATEGORY_SUVS",41],[localize "STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS",42],[localize "STR_EPOCH_TRADER_CATEGORY_FUELTRUCKS",43],[localize "STR_EPOCH_TRADER_CATEGORY_MILITARYUNARMED",44],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",45]],
+	[],
+	"friendly"
+];
+/*****************************************************************************/
+/***************Aircraft Dealer*********/
+menu_RU_Pilot = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRPLANES",46],[localize "STR_EPOCH_TRADER_CATEGORY_HELICOPTER",47]],
+	[],
+	"neutral"
+];
+
+/***************Boat Vendor*********/
+menu_RU_Villager3 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_BOATSARMED",48],[localize "STR_EPOCH_TRADER_CATEGORY_BOATSUNARMED",49]],
+	[],
+	"neutral"
+];
+
+/***************Boat Vendor*********/
+menu_HouseWife1 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_BOATSARMED",48],[localize "STR_EPOCH_TRADER_CATEGORY_BOATSUNARMED",49]],
+	[],
+	"neutral"
+];
+
+/***************Wholesaler*********/
+menu_Profiteer2 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_WHOLESALE",50]],
+	[],
+	"neutral"
+];
+
+/***************Wholesaler*********/
+menu_Profiteer3 = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_WHOLESALE",50]],
+	[],
+	"neutral"
+];

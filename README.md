@@ -30,6 +30,13 @@ Included Custom Addons
 * USEC CH53 by Rocket - http://dayz.com
 * Anzio 20mm Rifle by WillRobinson - http://www.armaholic.com/page.php?id=30175
 * RedRyder BB Gun by WillRobinson - https://github.com/arma2WillRobinson/Red-Ryder
+* Namalsk Addons by SumrakDZN - https://github.com/SumrakDZN/DayZNamalsk
+* Stalker Units by Icewindo - http://www.armaholic.com/page.php?id=9795
+* Post Apocalypse Units by Icewindo - http://www.armaholic.com/page.php?id=11840
+* Ghillie Suits by Brainbug - http://www.armaholic.com/page.php?id=11424
+* Retextured German KSK Units by Brainbug - http://www.armaholic.com/page.php?id=11129
+* 19 Backpack Variants by lennard91 - http://www.armaholic.com/page.php?id=13793
+* Spetsnaz GRU by stagler - http://www.armaholic.com/page.php?id=15693
 
 --------------------------
 Included Custom Islands
@@ -40,6 +47,8 @@ Included Custom Islands
 * | MBG Buildings 3 - European Theatre http://www.armaholic.com/page.php?id=14828
 * | MBG Generic African Buildings http://www.armaholic.com/page.php?id=17817
 * | German Town - and waysigns http://www.armaholic.com/page.php?id=9658
+* FDF Podagorsk by Goth http://www.armaholic.com/page.php?id=8791
+* Chernarus Winter by ArmanIII http://www.armaholic.com/page.php?id=27807
 
 --------------------------
 Initial Developers
@@ -123,6 +132,8 @@ GitHub Contributors (In order of most commits)
 * SmokeyBR - https://github.com/SmokeyBR
 * DeVloek - https://github.com/DeVloek
 * worldwidesorrow - https://github.com/worldwidesorrow
+* RedLink-kam - https://github.com/RedLink-kam
+* Helion4 - https://github.com/Helion4
 
 --------------------------
 Special thanks

@@ -1,6 +1,8 @@
-class ArmoredSUV_Base_PMC: Car
+class ArmoredSUV_DZE_Base_PMC: Car
 {
+	scope = private;
 	brakeDistance = 19;
+	vehicleClass = "DayZ Epoch Vehicles";
 	htMin = 60;
 	htMax = 1800;
 	afMax = 200;
@@ -19,13 +21,15 @@ class ArmoredSUV_Base_PMC: Car
 	damageResistance = 0.03099;
 	transportSoldier = 3;
 	fuelCapacity = 130;
+	enableGPS = 0;
+	supplyRadius = 1.3;
 	weapons[] = {"MiniCarHorn"};
 	driverAction = "SUV_Driver_EP1";
 	cargoAction[] = {"SUV_Cargo_EP1","SUV_Cargo02_EP1","SUV_Cargo01_EP1"};
 	outsideSoundFilter = 1;
 	insideSoundCoef = 0.8;
 	soundGear[] = {"",5.62341e-005,1};
-	soundGetIn[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",0.562341,1};
+	soundGetIn[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",0.56234133,1,20};
 	soundGetOut[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_door",0.562341,1,20};
 	soundEngineOnInt[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_int_start",0.177828,1};
 	soundEngineOnExt[] = {"ca\Sounds_E\Wheeled_E\SUV\SUV_ext_start",0.177828,1,100};
@@ -190,7 +194,7 @@ class ArmoredSUV_Base_PMC: Car
 			sound = "soundEnviron";
 			frequency = "1";
 			volume = "0";
-		};
+		};		
 	};
 	class Turrets: Turrets
 	{
@@ -202,19 +206,19 @@ class ArmoredSUV_Base_PMC: Car
 	{
 		class HitLFWheel: HitLFWheel
 		{
-			armor = 0.4;
+			armor = 0.15000001;
 		};
 		class HitLBWheel: HitLBWheel
 		{
-			armor = 0.4;
+			armor = 0.15000001;
 		};
 		class HitRFWheel: HitRFWheel
 		{
-			armor = 0.4;
+			armor = 0.15000001;
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.4;
+			armor = 0.15000001;
 		};
 		class HitFuel: HitFuel
 		{
@@ -253,8 +257,6 @@ class ArmoredSUV_Base_PMC: Car
 		libTextDesc = "An SUV (Sport Utility Vehicle) is a generic marketing term for a vehicle similar to a station wagon, but built on a light-truck chassis. These particular SUVs are up-armored to protect the security operators inside from small-arms fire. This model has been outfitted with a M134 7.62mm Minigun, which can be retracted back into the vehicle.<br /><br /> ""Black Betty"" is a nickname often used for this vehicle by ION Inc. contractors.";
 	};
 	class UserActions {
-		//class Repair {ACTION_REPAIR; radius = 4;};
-		//class Salvage {ACTION_SALVAGE; radius = 4;};
 		class OpenHatch {
 			displayName = $STR_AM_OPENGUNNER;
 			displayNameDefault = $STR_AM_OPENGUNNER;
@@ -280,7 +282,7 @@ class ArmoredSUV_Base_PMC: Car
 	};
 };
 
-class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
+class ArmoredSUV_PMC_DZ: ArmoredSUV_DZE_Base_PMC
 {
 	scope = public;
 	side = 2;
@@ -291,7 +293,6 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	enableGPS = 1;  
 	transportMaxWeapons = 20; 
 	transportMaxMagazines = 150; 
 	transportmaxbackpacks = 10;
@@ -305,7 +306,7 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 			minElev = -30;
 			maxElev = 45;
 			initElev = 0;
-			soundServo[] = {"",0.01,1};
+			soundServo[] = {"\ca\sounds\vehicles\servos\turret-1",0.031622775,1,15};
 			animationSourceHatch = "";
 			stabilizedInAxes = "StabilizedInAxesNone";
 			gunBeg = "muzzle_1";
@@ -350,73 +351,13 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_Base_PMC
 		};
 	};
 };
-class ArmoredSUV_PMC_DZE: ArmoredSUV_Base_PMC
+class ArmoredSUV_PMC_DZE: ArmoredSUV_PMC_DZ
 {
-	scope = public;
-	side = 2;
-	faction = "PMC_BAF";
-	displayName = $STR_VEH_NAME_SUV_ARMORED;
-	armor = 80;
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	enableGPS = 1;  
-	transportMaxWeapons = 20; 
-	transportMaxMagazines = 150; 
-	transportmaxbackpacks = 10;
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
 		{
-			body = "mainTurret";
-			gun = "mainGun";
-			viewGunnerInExternal = 1;
-			minElev = -30;
-			maxElev = 45;
-			initElev = 0;
-			soundServo[] = {"",0.01,1};
-			animationSourceHatch = "";
-			stabilizedInAxes = "StabilizedInAxesNone";
-			gunBeg = "muzzle_1";
-			gunEnd = "chamber_1";
-			weapons[] = {"M134"};
-			maxHorizontalRotSpeed = 1.8;
-			maxVerticalRotSpeed = 1.8;
 			magazines[] = {};
-			gunnerAction = "ArmoredSUV_Gunner_PMC";
-		};
-	};
-	class AnimationSources: AnimationSources
-	{
-		class Revolving
-		{
-			source = "revolving";
-			weapon = "M134";
-		};
-		class HideGun_01
-		{
-			source = "user";
-			initPhase = 0;
-			animPeriod = 1.2;
-		};
-		class HideGun_02: HideGun_01
-		{
-		};
-		class HideGun_03: HideGun_01
-		{
-		};
-		class HideGun_04: HideGun_01
-		{
-		};
-		class CloseCover1
-		{
-			source = "user";
-			initPhase = 0;
-			animPeriod = 0.7;
-		};
-		class CloseCover2: CloseCover1
-		{
 		};
 	};
 	class Upgrades

@@ -1,6 +1,6 @@
 //new
-5 !=(remExField|remExFP) !=(PVCDZ_obj_GutBody|drn_AskServerDynamicWeatherEventArgs|BIS_effects_gepv|achievement) !=PVDZ_(drg_(RaDrag|RaLW|RLact)|getTickTime|hlt_Bleed|obj_(Delete|Publish|RoadFlare|Destroy|Fire)|veh_Save|veh_SF) !=PVDZ_(plr_(Death|Login[12]|LoginRecord|Save|SwitchMove)|Server(_Simulation|StoreVar)|sec_atp) !=PVDZ_(playerMedicalSync|object_replace|groupInvite) !=PVDZ_(send(|Unconscious)) !=PVDZ_Server_(buildLock|UpdateGroup) !=PVDZ_Server_process(Code|SetAccessCode) !=PVDZ_objgather_(Delete|Knockdown) !=PVDZE_(obj_(Swap|Trade)|maintainArea|PingSend|veh_(Lock|Publish2|Upgrade)|handleSafeGear|plr_(DeathB|FriendRQ|TradeMenu))
-1=BIS_effects_gepv|PVDZ_(drg_RaDrag|hlt_Bleed|obj_Delete|obj_Destroy|obj_Publish|plr_Death|plr_LoginRecord|sec_atp|send)
+5 !=(remExField|remExFP) !=(PVCDZ_obj_GutBody|drn_AskServerDynamicWeatherEventArgs|BIS_effects_gepv|achievement) !=PVDZ_(getTickTime|hlt_Bleed|obj_(Delete|Publish|RoadFlare|Destroy|Fire)|veh_Save|veh_SF) !=PVDZ_(plr_(Death|Login[12]|LoginRecord|Save|SwitchMove)|Server(_Simulation|StoreVar)|sec_atp) !=PVDZ_(playerMedicalSync|object_replace|groupInvite) !=PVDZ_send !=PVDZ_Server_(buildLock|UpdateGroup) !=PVDZ_Server_process(Code|SetAccessCode) !=PVDZ_objgather_(Delete|Knockdown) !=PVDZE_(obj_(Swap|Trade)|maintainArea|PingSend|veh_(Lock|Publish2|Upgrade)|handleSafeGear|plr_(DeathB|FriendRQ|TradeMenu))
+1=BIS_effects_gepv|PVDZ_(hlt_Bleed|obj_Delete|obj_Destroy|obj_Publish|plr_Death|plr_LoginRecord|sec_atp|send)
 1=PVDZ_veh_(Save|SF)
 1=PVDZE_obj_Swap
 1=PVDZE_veh_(Publish2|Upgrade)

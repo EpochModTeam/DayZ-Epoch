@@ -61,7 +61,7 @@ DZE_GodModeBase = false; // Make player built base objects indestructible
 DZE_requireplot = 1; // Require a plot pole to build  0 = Off, 1 = On
 DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plotpoles]. Difference between them is the minimum buffer between bases.
 DZE_BuildingLimit = 150; // Max number of built objects allowed in DZE_PlotPole radius
-DZE_SafeZonePosArray = [[[15502,17015,0],100],[[13166,6611,0],100],[[24710,21741,0],100],[[16983,1774,0],50],[[11045,15671,0],50],[[2504,3870,0],50],[[230,22703,0],50]]; // Format is [[[3D POS],RADIUS],[[3D POS],RADIUS]]; Stops loot and zed spawn, salvage and players being killed if their vehicle is destroyed in these zones.
+DZE_SafeZonePosArray = [[[15502,17015,0],100],[[13166,6611,0],100],[[24710,21741,0],100],[[16983,1774,0],100],[[11045,15671,0],100],[[15350,18522,0],100]]; // Format is [[[3D POS],RADIUS],[[3D POS],RADIUS]]; Stops loot and zed spawn, salvage and players being killed if their vehicle is destroyed in these zones.
 DZE_SelfTransfuse = true; // Allow players to bloodbag themselves
 DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount given, infection chance %, cooldown in seconds]
 MaxDynamicDebris = 500; // Max number of random road blocks to spawn around the map
@@ -107,7 +107,12 @@ initialized = true;
 
 setTerrainGrid 25;
 if (dayz_REsec == 1) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\REsec.sqf";};
-execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
+
+if !(DZE_SnowFall) then {
+	execVM "\z\addons\dayz_code\system\DynamicWeatherEffects.sqf";
+} else {
+	execVM "\z\addons\dayz_code\system\DynamicWeatherEffectsSnow.sqf";
+};
 
 if (isServer) then {
 	if (dayz_POIs) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\mission\chernarus\poi\init.sqf";};

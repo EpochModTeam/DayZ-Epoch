@@ -23,6 +23,7 @@ class 100Rnd_556x45_BetaCMag: CA_Magazine {
 	ammo = "B_556x45_Ball";
 	count = 100;
 	initSpeed = 920;
+	model = "dayz_epoch_c\models\magazines\MG36_mag.p3d";
 	picture = "\ca\weapons\g36\data\equip\M_MG36_CA.paa";
 	type="256";
 	tracersEvery = 4;
@@ -139,4 +140,19 @@ class 30Rnd_556x45_G36SD : 30Rnd_556x45_G36
 			};
 		};
 	};
+};
+
+//ice apo resistance mod new 60rnd stanag mag
+class 60Rnd_556x45_Stanag_tape_ice_DZE : CA_Magazine {
+	scope = public;
+	displayName = $STR_DZE_MAG_60RND_556x45_STANAG_NAME;
+	cartridgeName = "556x45";
+	ammo = "B_556x45_Ball";
+	count = 60;
+	initSpeed = 930;
+	//type = 2*		256;
+	type = 256;
+	tracersEvery = 0;
+	descriptionShort = $STR_DZE_MAG_60RND_556x45_STANAG_DESC;
+	picture = "\ice_apo_weapons\data\double_ca.paa";
 };

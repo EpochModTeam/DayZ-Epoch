@@ -9,7 +9,7 @@ BIS_MPF_remoteExecutionServer = {
 };
 
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\compile.sqf";
+call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
 
 BIS_Effects_Burn = {};
 dayz_disconnectPlayers = [];
@@ -29,7 +29,7 @@ server_deleteObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\comp
 server_deleteObjDirect = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_deleteObjDirect.sqf"; 	//Removes the object from the DB, NO AUTH, ONLY CALL FROM SERVER, NO PV ACCESS
 server_playerSync = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerSync.sqf";
 zombie_findOwner = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_findOwner.sqf";
-server_Wildgenerate = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_Wildgenerate.sqf";
+//server_Wildgenerate = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\zombie_Wildgenerate.sqf";
 base_fireMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\fire_monitor.sqf";
 spawnComposition = compile preprocessFileLineNumbers "ca\modules\dyno\data\scripts\objectMapper.sqf"; //"\z\addons\dayz_code\compile\object_mapper.sqf";
 server_sendToClient = compile preprocessFileLineNumbers "\z\addons\dayz_server\eventHandlers\server_sendToClient.sqf";

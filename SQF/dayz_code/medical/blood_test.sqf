@@ -312,7 +312,6 @@ if (_allClicked == 4) then {
 		[] spawn {
 			uiSleep 7;
 			player setVariable["blood_testDone",true,true];
-			player setVariable["medForceUpdate",true];
 		};
 	};
 	uiSleep 0.01;

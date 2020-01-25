@@ -10,6 +10,12 @@ class ItemLog : CA_Magazine
 	
 	class ItemActions
 	{
+		class Build {
+			text = $STR_ACTIONS_MAKEFIRE;
+			script = "spawn player_build;";
+			require[] = {"ItemMatchbox"};
+			create = "Land_Fire_DZ";	
+		};
 		class Crafting
 		{
 			text = $STR_BLD_craft_ItemLog;//"Wooden Plank"
@@ -68,8 +74,9 @@ class PartWoodPile : CA_Magazine
 	class ItemActions {
 		class Build {
 			text = $STR_ACTIONS_MAKEFIRE;
-			script = "spawn player_makeFire;"; //Do not use player_build because we have no ghost preview model for Land_Fire_DZ yet
-			use[] = {"PartWoodPile"};
+			script = "spawn player_build;";
+			require[] = {"ItemMatchbox"};
+			create = "Land_Fire_DZ";	
 		};
 		class Crafting
 		{

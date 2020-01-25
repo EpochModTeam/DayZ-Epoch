@@ -17,7 +17,7 @@ sched_onEachFrame = {
 		sched_ef_lowFPSctr = sched_ef_lowFPSctr +1;		
 		if (sched_ef_lowFPSctr < 50) then {
 			_ret = (1==1);	
-		}
+		};
 	}
 	else {
 		if (sched_ef_lowFPSctr == 1) then { hintSilent ""; };

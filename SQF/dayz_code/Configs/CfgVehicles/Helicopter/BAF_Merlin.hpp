@@ -1,6 +1,9 @@
 class BAF_Merlin_HC3_D;
 class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
 	scope = public; 
+	displayName = $STR_VEH_NAME_AW101;
+	vehicleClass = "DayZ Epoch Vehicles";
+	magazines[] = {"120Rnd_CMFlareMagazine"};
 	crew = ""; 
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -8,8 +11,10 @@ class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 15;
-	transportMaxMagazines = 150;
-	transportmaxbackpacks = 5;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 160;
+	transportmaxbackpacks = 6;
 	fuelCapacity = 3222;
+	radartype = 0;
+	supplyRadius = 1.3;
 };

@@ -1,97 +1,125 @@
-class SkodaBase: Car {
-	scope = private;
-	faction = "CIV";
+class Skoda;
+class Skoda_DZE: Skoda {
+	scope = public;
+	displayName = $STR_VEH_NAME_SKODA_WHITE;
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	maxSpeed = 110;
-	side = 3;
+	maxSpeed = 110;	
 	armor = 20;
 	damageResistance = 0.01821;
-	fuelCapacity = 50;
-};
-
-class Skoda: SkodaBase {
-	scope = public;
-	accuracy = 1000;
-	faction = "CIV";
-	model = "\ca\wheeled\skodovka";
-	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
-	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
-	mapSize = 6;
-	displayName = $STR_VEH_NAME_SKODA_WHITE;
-	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"\ca\wheeled\data\skodovka_bila_co.paa","\ca\wheeled\data\skodovka_int_co.paa"};
-	class Damage {
-		tex[] = {};
-		mat[] = {"ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
-	};
-	rarityUrban = 0.25;
+	fuelCapacity = 100;
+	class HitPoints;
+	class HitLFWheel;
+	class HitLBWheel;
+	class HitRFWheel;
+	class HitRBWheel;
+	class HitFuel;
+	class HitEngine;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;
+	supplyRadius = 1.3;
 
 	class Upgrades {
 		ItemORP[] = {"Skoda_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SkodaBlue: SkodaBase {
+
+class SkodaBlue;
+class SkodaBlue_DZE: SkodaBlue {
 	scope = public;
-	accuracy = 1000;
-	faction = "CIV";
-	model = "\ca\wheeled\skodovka_blue";
-	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
-	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
-	mapSize = 6;
 	displayName = $STR_VEH_NAME_SKODA_BLUE;
-	class Damage {
-		tex[] = {};
-		mat[] = {"ca\wheeled\data\skodovka_modra.rvmat","ca\wheeled\data\skodovka_modra.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
-	};
-	rarityUrban = 0.25;
+	vehicleClass = "DayZ Epoch Vehicles";
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	maxSpeed = 110;	
+	armor = 20;
+	damageResistance = 0.01821;
+	fuelCapacity = 100;
+	class HitPoints;
+	class HitLFWheel;
+	class HitLBWheel;
+	class HitRFWheel;
+	class HitRBWheel;
+	class HitFuel;
+	class HitEngine;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;
+	supplyRadius = 1.3;
 
 	class Upgrades {
 		ItemORP[] = {"SkodaBlue_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SkodaRed: SkodaBase {
+class SkodaRed;
+class SkodaRed_DZE: SkodaRed {
 	scope = public;
-	faction = "CIV";
-	accuracy = 1000;
-	model = "\ca\wheeled\skodovka_red";
-	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
-	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
-	mapSize = 6;
 	displayName = $STR_VEH_NAME_SKODA_RED;
-	class Damage {
-		tex[] = {};
-		mat[] = {"ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
-	};
+	vehicleClass = "DayZ Epoch Vehicles";
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	maxSpeed = 110;	
+	armor = 20;
+	damageResistance = 0.01821;
+	fuelCapacity = 100;
+	class HitPoints;
+	class HitLFWheel;
+	class HitLBWheel;
+	class HitRFWheel;
+	class HitRBWheel;
+	class HitFuel;
+	class HitEngine;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;
+	supplyRadius = 1.3;
 
 	class Upgrades {
 		ItemORP[] = {"SkodaRed_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
 	};
 };
-class SkodaGreen: SkodaBase {
-	scope = public;
-	faction = "CIV";
-	accuracy = 1000;
-	model = "\ca\wheeled\skodovka_green";
-	picture = "\Ca\wheeled\data\ico\skodovka_CA.paa";
-	Icon = "\Ca\wheeled\data\map_ico\icomap_skoda_CA.paa";
-	mapSize = 6;
-	displayName = $STR_VEH_NAME_SKODA_GREEN;
-	class Damage {
-		tex[] = {};
-		mat[] = {"ca\wheeled\data\skodovka_zelena.rvmat","ca\wheeled\data\skodovka_zelena.rvmat","ca\wheeled\data\skodovka_destruct.rvmat","ca\wheeled\data\detailmapy\auta_skla.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat","ca\wheeled\data\detailmapy\auta_skla_in_damage.rvmat"};
-	};
 
-	class Upgrades {
-		ItemORP[] = {"SkodaGreen_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
-	};
+class SkodaGreen;
+class SkodaGreen_DZE: SkodaGreen {
+	scope = public;
+	displayName = $STR_VEH_NAME_SKODA_GREEN;
+	vehicleClass = "DayZ Epoch Vehicles";
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	maxSpeed = 110;	
+	armor = 20;
+	damageResistance = 0.01821;
+	fuelCapacity = 100;
+	class HitPoints;
+	class HitLFWheel;
+	class HitLBWheel;
+	class HitRFWheel;
+	class HitRBWheel;
+	class HitFuel;
+	class HitEngine;
+	class HitGlass1;
+	class HitGlass2;
+	class HitGlass3;
+	class HitGlass4;
+	supplyRadius = 1.3;
 };
 
 // Performance 1
-class Skoda_DZE1: Skoda {
-	original = "Skoda";
+class Skoda_DZE1: Skoda_DZE {
+	original = "Skoda_DZE";
 	maxspeed = 150; // max engine limit 125-130
 	terrainCoef = 2.5;
 
@@ -99,8 +127,8 @@ class Skoda_DZE1: Skoda {
 		ItemAVE[] = {"Skoda_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
 	};
 };
-class SkodaBlue_DZE1: SkodaBlue {
-	original = "SkodaBlue";
+class SkodaBlue_DZE1: SkodaBlue_DZE {
+	original = "SkodaBlue_DZE";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -108,8 +136,8 @@ class SkodaBlue_DZE1: SkodaBlue {
 		ItemAVE[] = {"SkodaBlue_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
 	};
 };
-class SkodaRed_DZE1: SkodaRed {
-	original = "SkodaRed";
+class SkodaRed_DZE1: SkodaRed_DZE {
+	original = "SkodaRed_DZE";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -117,8 +145,8 @@ class SkodaRed_DZE1: SkodaRed {
 		ItemAVE[] = {"SkodaRed_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
 	};
 };
-class SkodaGreen_DZE1: SkodaGreen {
-	original = "SkodaGreen";
+class SkodaGreen_DZE1: SkodaGreen_DZE {
+	original = "SkodaGreen_DZE";
 	maxspeed = 150; // car 100
 	terrainCoef = 2.5;
 
@@ -372,7 +400,17 @@ class SkodaRed_DZE4: SkodaRed_DZE3 {
 class SkodaGreen_DZE4: SkodaGreen_DZE3 {
 	fuelCapacity = 210; // car 100
 };
-
-class GLT_M300_ST : SkodaBase {
+class GLT_M300_ST;
+class GLT_M300_ST_DZE : GLT_M300_ST {
 	displayname = $STR_VEH_NAME_SEDAN_TAXI;
+	vehicleClass = "DayZ Epoch Vehicles";
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	maxSpeed = 110;	
+	armor = 20;
+	damageResistance = 0.01821;
+	fuelCapacity = 100;	
+	supplyRadius = 1.3;
 };

@@ -4,28 +4,6 @@ class CfgLoot
 {
 	class Groups
 	{
-		//Not renamed yet
-		#define DZ_BP_VestPouch DZ_Czech_Vest_Pouch
-		#define DZ_BP_Patrol DZ_Patrol_Pack_EP1
-		#define DZ_BP_Assault DZ_Assault_Pack_EP1
-		#define DZ_BP_Survival DZ_TK_Assault_Pack_EP1
-		#define DZ_BP_Alice DZ_ALICE_Pack_EP1
-		#define DZ_BP_British DZ_British_ACU
-		#define DZ_BP_Czech DZ_CivilBackpack_EP1
-		#define DZ_BP_Coyote DZ_Backpack_EP1
-
-		#define ItemBloodbagAPos bloodBagAPOS
-		#define ItemBloodbagANeg bloodBagANEG
-		#define ItemBloodbagBPos bloodBagBPOS
-		#define ItemBloodbagBNeg bloodBagBNEG
-		#define ItemBloodbagABPos bloodBagABPOS
-		#define ItemBloodbagABNeg bloodBagABNEG
-		#define ItemBloodbagOPos bloodBagOPOS
-		#define ItemBloodbagONeg bloodBagONEG
-		
-		#define ItemBloodTester bloodTester
-		#define ItemTransfusionKit transfusionKit
-		#define ItemBloodbagEmpty emptyBloodBag
 		
 		// General groups
 		#include "Groups\Ammo.hpp"
@@ -43,6 +21,8 @@ class CfgLoot
 		#include "Groups\Clothes.hpp"
 		#include "Groups\Backpacks.hpp"
 		#include "Groups\Wrecks.hpp"
+		#include "Groups\Vanilla.hpp"
+		#include "Groups\Tools.hpp"
 		
 		// Points of interest
 		#include "Groups\CrashSite.hpp"
@@ -70,29 +50,6 @@ class CfgLoot
 		#include "Groups\Zombies\Rebels.hpp" //DZE
 		#include "Groups\Zombies\Rocker.hpp" //DZE
 		#include "Groups\Zombies\SpecialForces.hpp" //DZE
-		
-		
-		#undef DZ_BP_VestPouch
-		#undef DZ_BP_Patrol
-		#undef DZ_BP_Assault
-		#undef DZ_BP_Survival
-		#undef DZ_BP_Alice
-		#undef DZ_BP_British
-		#undef DZ_BP_Czech
-		#undef DZ_BP_Coyote
-
-		#undef ItemBloodbagAPos
-		#undef ItemBloodbagANeg
-		#undef ItemBloodbagBPos
-		#undef ItemBloodbagBNeg
-		#undef ItemBloodbagABPos
-		#undef ItemBloodbagABNeg
-		#undef ItemBloodbagOPos
-		#undef ItemBloodbagONeg
-		
-		#undef ItemBloodTester
-		#undef ItemTransfusionKit
-		#undef ItemBloodbagEmpty
 	};
 	
 	class Buildings

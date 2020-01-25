@@ -41,13 +41,16 @@ class G36C_DZ : G36C
 	model = "z\addons\dayz_communityweapons\g36c\g36c.p3d";
 	picture = "\z\addons\dayz_communityweapons\g36c\data\w_g36c_ca.paa";
 	displayName = $STR_DZ_WPN_G36C_NAME;
-	/* //Allow default A2 mags
 	magazines[] =
 	{
 		30Rnd_556x45_G36,
-		30Rnd_556x45_G36SD
+		30Rnd_556x45_G36SD, //Allow both SD and non-SD
+		100Rnd_556x45_BetaCMag,
+		30Rnd_556x45_Stanag,
+		30Rnd_556x45_StanagSD,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
-	*/
 	class Attachments
 	{
 		Attachment_CCO = "G36C_CCO_DZ";
@@ -70,7 +73,8 @@ class G36C_SD_DZ : G36_C_SD_eotech
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		30Rnd_556x45_StanagSD,
-		20Rnd_556x45_Stanag
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
 	
 	class Attachments

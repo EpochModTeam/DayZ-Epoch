@@ -147,12 +147,12 @@ class CfgAISkill {
 	aimingshake[] = {0, 0, 1, 1};
 	aimingspeed[] = {0, 0, 1, 1};
 	commanding[] = {0, 0, 1, 1};
-	courage[] = {0, 5, 10, 10};
-	endurance[] = {0, 0, 1, 0.1};
-	general[] = {0, 0, 1, 0.1};
+	courage[] = {0, 0, 1, 1};
+	endurance[] = {0, 0, 1, 1};
+	general[] = {0, 0, 1, 1};
 	reloadspeed[] = {0, 0, 1, 1};
-	spotdistance[] = {0, 0, 1, 0.6};
-	spottime[] = {0, 0, 1, 0.1};
+	spotdistance[] = {0, 0, 1, 1};
+	spottime[] = {0, 0, 1, 1};
 };
 
 class CfgLoadingTexts {
@@ -771,7 +771,6 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "INS_Worker2_DZ";
 		};
-		//new Epoch 1.06
 		class Skin_USMC_Soldier_Officer_DZ: Default {
 			sex = "male";
 			playerModel = "USMC_Soldier_Officer_DZ";
@@ -911,6 +910,350 @@ class CfgSurvival {
 		class Skin_FR_Sapper_DZ: Default {
 			sex = "male";
 			playerModel = "FR_Sapper_DZ";
+		};		
+		class Skin_CamoWinter_DZ: Default {
+			sex = "male";
+			playerModel = "CamoWinter_DZ";
 		};
+		class Skin_CamoWinterW_DZ: Default {
+			sex = "male";
+			playerModel = "CamoWinterW_DZ";
+		};
+		class Skin_Sniper1W_DZ: Default {
+			sex = "male";
+			playerModel = "Sniper1W_DZ";
+		};
+		class Skin_Nac_Soldier_DZ: Default {
+			sex = "male";
+			playerModel = "Nac_Soldier_DZ";
+		};
+		class Skin_Tamika_DZ: Default {
+			sex = "female";
+			playerModel = "Tamika_DZ";
+		};	
+		class Skin_gsc_military_helmet_wdl_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_military_helmet_wdl_DZ";
+		};
+		class Skin_gsc_military_head_wdl_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_military_head_wdl_DZ";
+		};
+		class Skin_gsc_military_helmet_grey_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_military_helmet_grey_DZ";
+		};
+		class Skin_gsc_military_head_grey_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_military_head_grey_DZ";
+		};
+		class Skin_gsc_scientist1_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_scientist1_DZ";
+		};
+		class Skin_gsc_scientist1_head_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_scientist1_head_DZ";
+		};
+		class Skin_gsc_scientist2_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_scientist2_DZ";
+		};
+		class Skin_gsc_scientist2_head_DZ : Default	{
+			sex = "male";
+			playerModel = "gsc_scientist2_head_DZ";
+		};
+		class Skin_gsc_cloth_loner_head_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_cloth_loner_head_DZ";
+		};
+		class Skin_gsc_eco_stalker_mask_neutral_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_neutral_DZ";
+		};
+		class Skin_gsc_eco_stalker_head_neutral_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_head_neutral_DZ";
+		};
+		class Skin_gsc_eco_stalker_mask_fred_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_fred_DZ";
+		};
+		class Skin_gsc_eco_stalker_head_fred_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_head_fred_DZ";
+		};
+		class Skin_gsc_eco_stalker_mask_duty_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_duty_DZ";
+		};
+		class Skin_gsc_eco_stalker_head_duty_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_head_duty_DZ";
+		};
+		class Skin_gsc_eco_stalker_mask_camo_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_mask_camo_DZ";
+		};
+		class Skin_gsc_eco_stalker_head_camo_DZ : Default {
+			sex = "male";
+			playerModel = "gsc_eco_stalker_head_camo_DZ";
+		};	
+		class Skin_GhillieFull_Desert01_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert01_DZ";
+		};
+		class Skin_GhillieFull_Desert02_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert02_DZ";
+		};
+		class Skin_GhillieFull_Desert03_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert03_DZ";
+		};
+		class Skin_GhillieFull_Desert04_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert04_DZ";
+		};
+		class Skin_GhillieFull_Desert05_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert05_DZ";
+		};
+		class Skin_GhillieFull_Desert06_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert06_DZ";
+		};
+		class Skin_GhillieFull_Desert07_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert07_DZ";
+		};
+		class Skin_GhillieFull_Desert08_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Desert08_DZ";
+		};
+		class Skin_GhillieFull_Snow01_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow01_DZ";
+		};
+		class Skin_GhillieFull_Snow02_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow02_DZ";
+		};
+		class Skin_GhillieFull_Snow03_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow03_DZ";
+		};
+		class Skin_GhillieFull_Snow04_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow04_DZ";
+		};
+		class Skin_GhillieFull_Snow05_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Snow05_DZ";
+		};
+		class Skin_GhillieFull_Urban01_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Urban01_DZ";
+		};
+		class Skin_GhillieFull_Wood01_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood01_DZ";
+		};
+		class Skin_GhillieFull_Wood02_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood02_DZ";
+		};
+		class Skin_GhillieFull_Wood03_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood03_DZ";
+		};
+		class Skin_GhillieFull_Wood04_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood04_DZ";
+		};
+		class Skin_GhillieFull_Wood05_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood05_DZ";
+		};
+		class Skin_GhillieFull_Wood06_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood06_DZ";
+		};
+		class Skin_GhillieFull_Wood07_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood07_DZ";
+		};
+		class Skin_GhillieFull_Wood08_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood08_DZ";
+		};
+		class Skin_GhillieFull_Wood09_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood09_DZ";
+		};
+		class Skin_GhillieFull_Wood10_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood10_DZ";
+		};
+		class Skin_GhillieFull_Wood11_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood11_DZ";
+		};
+		class Skin_GhillieFull_Wood12_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood12_DZ";
+		};
+		class Skin_GhillieFull_Wood13_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood13_DZ";
+		};
+		class Skin_GhillieFull_Wood14_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood14_DZ";
+		};
+		class Skin_GhillieFull_Wood15_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood15_DZ";
+		};
+		class Skin_GhillieFull_Wood16_DZ : Default {
+			sex = "male";
+			playerModel = "GhillieFull_Wood16_DZ";
+		};
+		class Skin_GER_Soldier_EP1_des_DZ : Default {
+			sex = "male";
+			playerModel = "GER_Soldier_EP1_des_DZ";
+		};
+		class Skin_GER_Soldier_TL_EP1_des_DZ : Default {
+			sex = "male";
+			playerModel = "GER_Soldier_TL_EP1_des_DZ";
+		};
+		class Skin_GER_Soldier_EP1_wdl_DZ : Default {
+			sex = "male";
+			playerModel = "GER_Soldier_EP1_wdl_DZ";
+		};
+		class Skin_GER_Soldier_TL_EP1_wdl_DZ : Default {
+			sex = "male";
+			playerModel = "GER_Soldier_TL_EP1_wdl_DZ";
+		};	
+		class Skin_Apo_Rifleman_01_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_01_DZ";
+		};
+		class Skin_Apo_Rifleman_02_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_02_DZ";
+		};
+		class Skin_Apo_Rifleman_03_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_03_DZ";
+		};
+		class Skin_Apo_Rifleman_04_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_04_DZ";
+		};
+		class Skin_Apo_Rifleman_05_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_05_DZ";
+		};
+		class Skin_Apo_Rifleman_06_DZ : Default {
+			sex = "male";
+			playerModel = "Apo_Rifleman_06_DZ";
+		};	
+		class Skin_SG_GRU_TL_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_TL_DZ";
+		};
+		class Skin_SG_GRU_Scout_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_Scout_DZ";
+		};
+		class Skin_SG_GRU_Sniper_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_Sniper_DZ";
+		};
+		class Skin_SG_GRU_Spotter_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_Spotter_DZ";
+		};
+		class Skin_SG_GRU_TL_W_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_TL_W_DZ";
+		};
+		class Skin_SG_GRU_Scout_W_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Scout_W_DZ";
+		};
+		class Skin_SG_GRU_Assaultman_W_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Assaultman_W_DZ";
+		};
+		class Skin_SG_GRU_Medic_W_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Medic_W_DZ";
+		};
+		class Skin_SG_GRU_TL_D_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_TL_D_DZ";
+		};
+		class Skin_SG_GRU_Scout_D_DZ : Default {
+			sex = "male";
+			playerModel = "SG_GRU_Scout_D_DZ";
+		};
+		class Skin_SG_GRU_Marksman_D_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Marksman_D_DZ";
+		};
+		class Skin_SG_GRU_Operator_D_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_Operator_D_DZ";
+		};
+		class Skin_SG_GRU_MG_D_DZ : Default { 
+			sex = "male";
+			playerModel = "SG_GRU_MG_D_DZ";
+		};	
+		class Skin_CZ_Soldier805_DES_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier805_DES_ACR_DZ";
+		};
+		class Skin_CZ_Soldier_805_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_805_Wdl_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Crew_Dst_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Crew_Dst_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Officer_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Officer_Wdl_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Recon_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Recon_Wdl_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Spec1_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Spec1_Wdl_ACR_DZ";
+		};		
+		class Skin_CZ_Soldier_Spec2_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Spec2_Wdl_ACR_DZ";
+		};	
+		class Skin_CZ_Soldier_Spec3_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Spec3_Wdl_ACR_DZ";
+		};	
+		class Skin_CZ_Soldier_Spec_Demo_Dst_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Spec_Demo_Dst_ACR_DZ";
+		};	
+		class Skin_CZ_Soldier_Sniper_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Sniper_ACR_DZ";
+		};
+		class Skin_CZ_Soldier_Light_Wdl_ACR_DZ : Default { 
+			sex = "male";
+			playerModel = "CZ_Soldier_Light_Wdl_ACR_DZ";
+		};		
 	};
 };

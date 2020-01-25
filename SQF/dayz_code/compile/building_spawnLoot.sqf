@@ -16,7 +16,7 @@ Author:
 #include "\z\addons\dayz_code\util\Vector.hpp"
 #include "\z\addons\dayz_code\loot\Loot.hpp"
 
-private ["_vectorUp","_type","_config","_lootChance","_lootPos","_lootGroup","_worldPos","_existingPile","_loot","_obj"];
+private ["_vectorUp","_type","_config","_lootChance","_lootPos","_lootGroup","_worldPos","_existingPile","_loot","_group","_smallGroup"];
 
 _obj = _this select 0;
 _type = _this select 1;
@@ -27,8 +27,18 @@ _lootChance = getNumber (_config >> "lootChance");
 
 if (_lootChance <= 0 or ([_obj] call DZE_SafeZonePosCheck)) exitWith {};
 
+_group = getText(_config >> "lootGroup");
 _lootPos = getArray (_config >> "lootPos");
-_lootGroup = Loot_GetGroup(getText(_config >> "lootGroup"));
+_lootPos = [_lootPos,5] call fn_shuffleArray;
+
+// Military buildings spawn matching loot.
+if (_group in ["Military","MilitaryIndustrial"]) then {
+	_lootGroup = Loot_SelectSingle(Loot_GetGroup(_group));
+	_smallGroup = _lootGroup select 2;
+	_lootGroup = Loot_GetGroup(_lootGroup select 1);
+} else {
+	_lootGroup = Loot_GetGroup(_group);
+};
 
 {
 	//Get the world position of the spawn position
@@ -39,11 +49,9 @@ _lootGroup = Loot_GetGroup(getText(_config >> "lootGroup"));
 	{
 		deleteVehicle _x;
 		dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
-	}
-	foreach (_worldPos nearObjects ["ReammoBox", 1]);
+	} count (_worldPos nearObjects ["ReammoBox", 1]);
 
-	if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then
-	{
+	if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then {
 		Loot_SpawnGroup(_lootGroup, _worldPos);
 	};
 }
@@ -55,8 +63,15 @@ foreach _lootPos;
 
 if (isArray (_config >> "lootPosSmall")) then {
 	_lootPos = getArray (_config >> "lootPosSmall");
-	_lootGroup = Loot_GetGroup((getText(_config >> "lootGroup")) + "Small");
+	
+	if (!isNil "_smallGroup") then {
+		_lootGroup = Loot_GetGroup(_smallGroup);
+	} else {
+		_lootGroup = Loot_GetGroup((_group) + "Small");
+	};
+	
 	if (_lootGroup >= 1) then {
+		_lootPos = [_lootPos,5] call fn_shuffleArray;
 		{
 			//Get the world position of the spawn position
 			_worldPos = _obj modelToWorld _x;
@@ -65,10 +80,9 @@ if (isArray (_config >> "lootPosSmall")) then {
 			{
 				deleteVehicle _x;
 				dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
-			} foreach (_worldPos nearObjects ["ReammoBox", 1]);
+			} count (_worldPos nearObjects ["ReammoBox", 1]);
 
-			if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then
-			{
+			if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then {
 				Loot_SpawnGroup(_lootGroup, _worldPos);
 			};
 		} foreach _lootPos;

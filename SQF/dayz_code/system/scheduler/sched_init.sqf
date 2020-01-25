@@ -13,7 +13,6 @@ call compile preprocessFileLineNumbers (_base+"sched_playerActions.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_medical.sqf");
 //call compile preprocessFileLineNumbers (_base+"sched_achievement.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_gui.sqf");
-call compile preprocessFileLineNumbers (_base+"sched_buildingBubble.sqf");
 //call compile preprocessFileLineNumbers (_base+"sched_humanityChange.sqf");
 
 if (dayz_antihack == 1) then {
@@ -37,7 +36,7 @@ if (count _list == 0) then {
 	 [ 0.2,	 	0.12,	sched_gui, sched_gui_init ],
 	 [ 2,	 	0.13,	sched_medical_effects, sched_medical_effects_init ],
 	 [ 10,	   15.13,	sched_medical_effectsSlow ],
-	 [ 6,	   24.18,	sched_spawnCheck, sched_spawnCheck_init ],
+	 [ 6,	   24.18,	sched_spawnCheck ],
 	 [ 1, 		0.63,	sched_throwable, sched_throwable_init ],
 	 [ 1, 		0.33,	sched_medical, sched_medical_init ],
 	 //[ 15,	 	3,		sched_humanityChange ], //Humanity morphing disabled on Epoch to avoid loss of purchased clothing
@@ -45,7 +44,6 @@ if (count _list == 0) then {
 	 [ 4,		2.38,	sched_bloodStains, sched_bloodStains_init ],
 	 [ 60, 	   10.44,	sched_animals ],
 	 [ 10, 	    5.44,	sched_medical_slow ],
-	 [ 15, 	   35.44,	sched_buildingBubble ],
 	 [ 60, 	   20.44,	sched_newDay ],
 	 [ 1, 		0.51,	sched_buriedZeds, sched_buriedZeds_init ]
 	];

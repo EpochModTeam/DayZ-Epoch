@@ -13,13 +13,11 @@ private ["_initialFog", "_initialOvercast", "_initialRain", "_initialWind", "_de
 private ["_minWeatherChangeTimeMin", "_maxWeatherChangeTimeMin", "_minTimeBetweenWeatherChangesMin", "_maxTimeBetweenWeatherChangesMin", "_rainIntervalRainProbability", "_windChangeProbability"];
 private ["_minimumFog", "_maximumFog", "_minimumOvercast", "_maximumOvercast", "_minimumRain", "_maximumRain", "_minimumWind", "_maximumWind", "_minRainIntervalTimeMin", "_maxRainIntervalTimeMin", "_forceRainToStopAfterOneRainInterval", "_maxWind"];
 
-if (isNil "_this") then { _this = []; };
-if (count _this > 0) then { _initialFog = _this select 0; } else { _initialFog = -1; };
-if (count _this > 1) then { _initialOvercast = _this select 1; } else { _initialOvercast = -1; };
-if (count _this > 2) then { _initialRain = _this select 2; } else { _initialRain = -1; };
-if (count _this > 3) then { _initialWind = _this select 3; } else { _initialWind = [-1, -1]; };
-if (count _this > 4) then { _debug = _this select 4; } else { _debug = false; };
-
+_initialFog = -1;
+_initialOvercast = -1;
+_initialRain = -1;
+_initialWind = [-1, -1];
+_debug = false;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // The following variables can be changed to tweak weather behaviour
@@ -311,13 +309,13 @@ if (isServer) then {
             // uiSleep a while until next weather change
             uiSleep floor (_minTimeBetweenWeatherChangesMin * 60 + random ((_maxTimeBetweenWeatherChangesMin - _minTimeBetweenWeatherChangesMin) * 60));
 
-            if (_minimumFog == _maximumFog && _minimumOvercast != _maximumOvercast) then {
+            if (_minimumFog == _maximumFog && {_minimumOvercast != _maximumOvercast}) then {
                 _weatherType = "OVERCAST";
             };
-            if (_minimumFog != _maximumFog && _minimumOvercast == _maximumOvercast) then {
+            if (_minimumFog != _maximumFog && {_minimumOvercast == _maximumOvercast}) then {
                 _weatherType = "FOG";
             };
-            if (_minimumFog != _maximumFog && _minimumOvercast != _maximumOvercast) then {
+            if (_minimumFog != _maximumFog && {_minimumOvercast != _maximumOvercast}) then {
 
                 // Select type of weather to change
                 if ((random 100) < 50) then {
@@ -470,7 +468,7 @@ if (isServer) then {
                         private ["_rainTimeSec"];
 
                         // At every rain event time, start or stop rain with 50% probability
-                        if (random 100 < _rainIntervalRainProbability && !_forceStop) then {
+                        if (random 100 < _rainIntervalRainProbability && {!_forceStop}) then {
                             drn_var_DynamicWeather_rain = _minimumRain + random (_maximumRain - _minimumRain);
                             publicVariable "drn_var_DynamicWeather_rain";
 
@@ -561,5 +559,3 @@ drn_var_rainRoutine = [_rainIntervalRainProbability, _debug] spawn {
         uiSleep 3;
     };
 };
-
-

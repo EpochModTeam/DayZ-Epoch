@@ -147,7 +147,6 @@ if (_unit == player) then {
 				localize "str_player_tranquilized" call dayz_rollingMessages;
 				[_unit,0.01] call fnc_usec_damageUnconscious;
 				_unit setVariable ["NORRN_unconscious", true, true];
-				player setVariable["medForceUpdate",true,true];
 			};
 		};
 
@@ -162,7 +161,6 @@ if (_unit == player) then {
 					localize "str_actions_medical_knocked_out" call dayz_rollingMessages;
 					[_unit,0.01] call fnc_usec_damageUnconscious;
 					_unit setVariable ["NORRN_unconscious", true, true];
-					player setVariable["medForceUpdate",true,true];
 				};
 			};
 		};
@@ -223,9 +221,6 @@ if (_damage > 0.1) then {
     if (_unit == player) then {
         //player sidechat format["Processed bullet hit for %1 (should only be for me!)",_unit];
         1 call fnc_usec_bulletHit;
-    };
-    if (local _unit) then {
-        _unit setVariable["medForceUpdate",true,true];
     };
 };
 

@@ -9,17 +9,12 @@ class FarmRoaming : Farm
 	zombieChance = 0.4;
 	maxRoaming = 2;
 };
-
 class Land_Shed_W03 : HouseRoaming {};
 class Land_HouseV_2T1 : HouseRoaming {};
 class Land_HouseV_3I2 : HouseRoaming {};
 class land_housev_3i3: HouseRoaming  {
-	lootPos[] = {
-		{-4.2334,0.291992,-1.47064},{1.10059,-2.99854,-0.790649},{3.53027,-2.34033,-1.74265}
-	};
-	lootPosSmall[] = {
-		{-4.85645,0.550293,-0.340637},{2.21289,0.783691,-0.160645},{-0.833008,0.554199,-0.620636},{1.79785,-2.99902,-1.09064},{5.06055,-2.68164,-1.56265}
-	};
+	lootPos[] = {{-4.2334,0.291992,-1.47064},{1.10059,-2.99854,-0.790649},{3.53027,-2.34033,-1.74265}};
+	lootPosSmall[] = {{-4.85645,0.550293,-0.340637},{2.21289,0.783691,-0.160645},{-0.833008,0.554199,-0.620636},{1.79785,-2.99902,-1.09064},{5.06055,-2.68164,-1.56265}};
 	zedPos[] = {{-4.18457,-1.68164,-0.525635},{0.419922,-1.00781,-0.525635},{4.35059,-1.37939,-0.98764}};
 };
 class Land_HouseBlock_A1_2 : HouseRoaming {};
@@ -36,24 +31,18 @@ class Land_HouseBlock_B4: HouseRoaming{
 };
 class Land_HouseBlock_C2 : HouseRoaming {};
 class Land_HouseBlock_C3 : HouseRoaming {};
-class Land_HouseBlock_C4 : HouseRoaming {};
+class Land_HouseBlock_C4 : HouseRoaming {
+	zedPos[] = {{1.54199,3.79883,-4.57855},{-1.8208,-1.80664,-4.57855},{1.72363,-1.67188,-4.5746},{-2.75586,-3.64844,-4.57855},{-2.49805,4.07422,-4.57855}};
+	lootPos[] = {{2.68457,3.71484,-5.46355},{-2.98145,3.95508,-5.46355},{-2.95117,-3.64258,-5.46355},{-2.81152,-3.53125,-1.49755},{3.00293,-3.85156,-1.49755},{-1.76465,0.222656,-1.48755}};
+	lootPosSmall[] = {{-3.30518,-1.75488,-4.77355},{2.38623,-0.0947266,-4.5696},{-2.56396,-1.65137,-1.05755},{0.203613,-1.61328,-0.907551},{1.9502,-3.79883,-4.6796},{-1.77246,2.92285,-1.48755},{2.42285,1.17822,-4.75355}};
+};
 class Land_HouseBlock_C5 : HouseRoaming {};
 class Land_Misc_Cargo1D : HouseRoaming {};
 class Land_Ind_Shed_01_end : HouseRoaming {};
 
 class Land_A_statue01 : HouseRoaming
 {
-	zombieClass[] =
-	{
-		"zZombie_Base",
-		"zZombie_Base",
-		"z_teacher",
-		"z_suit1",
-		"z_suit2",
-		"z_soldier",
-		"z_soldier_heavy",
-		"z_policeman"
-	};
+	zombieClass[] ={"zZombie_Base","zZombie_Base","z_teacher","z_suit1","z_suit2","z_soldier","z_soldier_heavy","z_policeman"};
 	minRoaming = 2;
 	maxRoaming = 8;
 };
@@ -73,14 +62,12 @@ class GraveCrossHelmet : Military
 
 class Land_Dam_Conc_20 : HouseRoaming
 {
-	//lootPos[] = {{5.75,1.14,9.1},{3.11,1.22,9.09},{-4.22,9.19,9.11}};
 	zedPos[] = {{3.11,1.22,9.09},{5.75,1.14,9.1},{-4.22,9.19,9.11}};
 	lootChance = 0.4;
 };
 
 class Land_Misc_Scaffolding : HouseRoaming
 {
-	//lootPos[] = {{0.43,6.92,0.45},{-0.16,-0.47,3.41},{-0.14,7.64,3.39},{-0.03,3.1,0.45}};
 	zedPos[] = {{-0.03,3.1,0.45},{0.43,6.92,0.45}};
 };
 // DAYZ AMP More buildings (DZE ADDED)

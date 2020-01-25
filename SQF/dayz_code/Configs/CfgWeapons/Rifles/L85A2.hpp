@@ -68,13 +68,16 @@ class L85A2_DZ : BAF_L85A2_RIS_Holo
 	
 	irDistance = 0;
 	
-	/* //Allow default A2 mags
 	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD
+		30Rnd_556x45_StanagSD,//Allow both SD and non-SD
+		30Rnd_556x45_G36,
+		30Rnd_556x45_G36SD, 
+		100Rnd_556x45_BetaCMag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
-	*/
 	class Single;
 	class FullAuto;
 	
@@ -146,9 +149,12 @@ class L85A2_SD_Base : L85A2_DZ
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
-		30Rnd_556x45_Stanag, //Allow both SD and non-SD
+		30Rnd_556x45_Stanag,//Allow both SD and non-SD
 		30Rnd_556x45_G36SD,
-		30Rnd_556x45_G36
+		30Rnd_556x45_G36, 
+		100Rnd_556x45_BetaCMag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
 	fireLightDuration = 0;
 	fireLightIntensity = 0;

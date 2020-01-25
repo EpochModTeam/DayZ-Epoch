@@ -14,7 +14,8 @@ class UH1_Base: Helicopter {
 };
 class UH1Y_DZ: UH1_Base {
 	scope = public;
-	side = 2;
+	displayname = $STR_VEH_NAME_UH1Y;
+	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -22,12 +23,15 @@ class UH1Y_DZ: UH1_Base {
 	commanderCanSee = 2+16+32;
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
-	transportMaxWeapons = 5;
-	transportMaxMagazines = 25;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 30;
 	transportmaxbackpacks = 4;
-	weapons[] = {};
-	magazines[] = {};
+	weapons[] = {"CMFlareLauncher"};
+	magazines[] = {"120Rnd_CMFlareMagazine"};	
 	fuelCapacity = 1333;
+	radartype = 0;
+	supplyRadius = 2.6;
+	
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -80,14 +84,7 @@ class UH1Y_DZ: UH1_Base {
 			};
 		};
 	};
-	/*class Turrets : Turrets {
-		class MainTurret : MainTurret {
-			magazines[] = {"2000Rnd_762x51_M134"};
-		};
-		class RightDoorGun : RightDoorGun {
-			magazines[] = {"2000Rnd_762x51_M134"};
-		};
-	};*/
+
 	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
 	{
@@ -95,8 +92,6 @@ class UH1Y_DZ: UH1_Base {
 		engine = "if (_this select 1) then {(_this select 0) animate ['mainrotor_folded',1]; (_this select 0) animate ['mainrotor_unfolded',0];} else {_this select 0 setVariable ['engineOffTime',diag_tickTime,false];};"; //Unfold
 	};
 	class UserActions {
-		//class Repair {ACTION_REPAIR; radius = 8;};
-		//class Salvage {ACTION_SALVAGE; radius = 8;};
 		class HUDoff {
 			displayName = $STR_AM_HUDON;
 			displayNameDefault = $STR_AM_HUDON;

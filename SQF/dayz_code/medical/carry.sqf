@@ -6,54 +6,69 @@
 
  JULY 2010 - norrin
 *****************************************************************************************************************************
-Start carry.sqf
+
+Updated December 2019 - JasonTM
 */
 
-private ["_unit","_dragee","_pos","_dir"];
+private ["_medic","_dragee","_unconscious","_dropObjects"];
 _dragee = _this select 3;
-_can_be_revived = NORRN_revive_array select 20;
-_can_be_revived_2 	= NORRN_revive_array select 21;
-_unit = player;
-r_carry_sqf = true;
-r_drag_sqf = false;
+_medic = player;
+_unconscious = _dragee getVariable ["NORRN_unconscious", false];
 
-_unit removeAction Norrn_carryAction;
 if (isNull _dragee) exitWith {};
-_dragee setVariable ["NORRN_unit_dragged", true, true];
+if (!_unconscious) exitWith {};
+
+_dropObjects = nearestObjects [player, DayZ_DropDrageeObjects, 3];
+if (count _dropObjects > 0) exitWith {};
+
+// Attach before the other client sets direction and position
+_dragee attachto [_medic,[0.1, 1.01, 0]];
+
+// Send information to start the carry process
+PVDZ_send = [_dragee,"CarryPlayer",_dragee,[_dragee,dayz_authKey,_medic]];
+publicVariableServer "PVDZ_send";
+
+// Wait until the other client has performed its actions.
+waitUntil {((_dragee getVariable ["NORRN_unit_dragged",false]) || (!alive _dragee));};
+
+uiSleep 1;
 detach _dragee;
-uiSleep 1.5;
-// public EH
-//PVDZ_drg_RACarUp = _dragee; // not used
-//publicVariable "PVDZ_drg_RACarUp"; // not used
-//_dragee switchMove "ainjpfalmstpsnonwrfldnon_carried_up";
-//PVDZ_drg_RAPicUp = _unit; // not used
-//publicVariable "PVDZ_drg_RAPicUp"; // not used
-_unit switchMove "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon";
+
+// Animation needs to be synced on all clients.
+[nil, _medic, rSWITCHMOVE, "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon"] call RE;
+_medic switchMove "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon";
+
+// Fix from fn_unconscious
+disableUserInput false; disableUserInput false;
+disableUserInput true; disableUserInput true;
+disableUserInput false; disableUserInput false;
+
 uiSleep 10;
-_dragee switchmove "ainjpfalmstpsnonwrfldnon_carried_still";
-_dragee attachto [_unit,[-0.2, 0.2, 0]];
 
+// Wait until first animation done to attach player
+_dragee attachto [_medic,[-0.2, 0.2, 0]];
 
-while {r_carry_sqf} do
-{
-	_anim_name = animationstate _unit;
-	if (!(_dragee getVariable "NORRN_unconscious")) exitWith
-	{
-		detach _dragee;
-		_unit switchMove "";
-		player removeAction Norrn_dropAction;
-		r_carry_sqf = false;
+//Unnecessary actions removed & drop body added
+call fnc_usec_medic_removeActions;
+r_action = false;
+force_dropBody = false;
+
+NORRN_dropAction = player addAction [localize "str_actions_medical_dropbody", "\z\addons\dayz_code\medical\drop_body.sqf",[_medic,_dragee], 0, false, true];
+r_drag_sqf = true;
+
+while {r_drag_sqf} do {
+
+	_dropObjects = nearestObjects [player, DayZ_DropDrageeObjects, 3]; //Prevent exploit of glitching through doors
+	if (force_dropBody || {count _dropObjects > 0} || {!(_dragee getVariable ["NORRN_unconscious", false])} || {!alive _dragee}) then {
+		[0,0,0,[_medic,_dragee]] execVM "\z\addons\dayz_code\medical\drop_body.sqf";
 	};
 
-	//check that dragged unit still exists
-	if (!alive _unit || _anim_name != "acinpknlmstpsraswrfldnon_acinpercmrunsraswrfldnon" && _anim_name != "acinpercmstpsraswrfldnon" && _anim_name != "acinpercmrunsraswrfldf") exitWith
-	{
-		player removeAction NORRN_dropAction;
-		detach _dragee;
-		_unit switchMove "";
-		r_carry_sqf = false;
+	if (vehicle player != player) then {
+		player action ["eject", vehicle player];
+		localize "str_actions_medical_dragbody_veh" call dayz_rollingMessages;
+		[0,0,0,[_medic,_dragee]] execVM "\z\addons\dayz_code\medical\drop_body.sqf";
 	};
+
 	uiSleep 0.1;
 };
-if (true) exitWith {};
 

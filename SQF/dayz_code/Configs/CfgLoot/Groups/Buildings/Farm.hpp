@@ -1,52 +1,40 @@
 Farm[] =
 {
 	//Weapons
-	{Loot_GROUP,		10,		farmweapons},
-	{Loot_WEAPON,		2,		ItemFishingPole},
+	{Loot_GROUP,		6,		shotgunsingleshot},
+	{Loot_GROUP,		1,		Chainsaws},
+	{Loot_WEAPON,		1,		ItemFishingPole},
 
 	//Tools
-	{Loot_WEAPON,		5,		ItemMachete},
-//	{Loot_WEAPON,		6,		ItemHatchet},
-	{Loot_VEHICLE,		6,		WeaponHolder_ItemHatchet},
-	{Loot_WEAPON,		5,		ItemKnife},
+	{Loot_VEHICLE,		5,		WeaponHolder_ItemHatchet},
+	{Loot_GROUP,		4,		ToolsBuilding},
 	
 	//Items
+	{Loot_MAGAZINE,		1,		equip_tent_poles},
 	{Loot_MAGAZINE,		4,		ItemSandbag},
 	{Loot_MAGAZINE,		1,		TrapBear},
-	{Loot_MAGAZINE,		8,		PartWoodPile},
-	{Loot_MAGAZINE,		3,		equip_rope},
-	{Loot_MAGAZINE,		3,		equip_duct_tape},
-	{Loot_MAGAZINE,		3,		equip_nails},
-	{Loot_MAGAZINE,		4,		equip_string},
-	{Loot_MAGAZINE,		2,		equip_lever},
 	{Loot_MAGAZINE,		2,		PartPlankPack},
 	{Loot_MAGAZINE,		1,		ItemLightBulb},
-	{Loot_MAGAZINE,		1,		ItemSledgeHead},
-	{Loot_MAGAZINE,		1.5,	ItemSledgeHandle},
 	
 	//Groups
-	{Loot_GROUP,		10,		Trash},
-	{Loot_GROUP,		15,		AmmoCivilian},
-	{Loot_GROUP,		3,		AttachmentsGeneric},
+	{Loot_GROUP,		10,		AmmoCivilian},
+	{Loot_GROUP,		1,		AttachmentsGeneric},
 	{Loot_GROUP,		8,		Consumable},
-	{Loot_WEAPON,		3,		ItemMatchbox},
-	{Loot_GROUP,		3,		JerryCan},
-	{Loot_GROUP,		4,		FuelCan},
-	{Loot_GROUP,		2,		FuelBarrel},
-	{Loot_GROUP,		8,		Generic}
+	{Loot_GROUP,		3,		ToolsSurvival},
+	{Loot_GROUP,		1,		JerryCan},
+	{Loot_GROUP,		1,		FuelCan},
+	{Loot_GROUP,		1,		FuelBarrel},
+	{Loot_GROUP,		6,		Generic}
 };
 
 FarmSmall[] =
 {
-	{Loot_GROUP,		10,		pistols},
-	{Loot_WEAPON,		5,		ItemKnife},
-	{Loot_MAGAZINE,		3,		equip_duct_tape},
-	{Loot_MAGAZINE,		6,		equip_nails},
-	{Loot_MAGAZINE,		4,		equip_string},
-	{Loot_GROUP,		10,		Trash},
-	{Loot_GROUP,		15,		AmmoCivilian},
-	{Loot_GROUP,		3,		AttachmentsGeneric},
-	{Loot_GROUP,		8,		Consumable},
-	{Loot_WEAPON,		3,		ItemMatchbox},
-	{Loot_GROUP,		8,		GenericSmall}
+	{Loot_GROUP,		8,		pistols},
+	{Loot_GROUP,		3,		ToolsSurvival},
+	{Loot_GROUP,		3,		VanillaSurvival},
+	{Loot_GROUP,		5,		Trash},
+	{Loot_GROUP,		8,		AmmoCivilian},
+	{Loot_GROUP,		1,		AttachmentsGeneric},
+	{Loot_GROUP,		5,		Consumable},
+	{Loot_GROUP,		5,		GenericSmall}
 };

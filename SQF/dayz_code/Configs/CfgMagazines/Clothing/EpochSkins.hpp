@@ -422,3 +422,424 @@ class Skin_FR_Sapper_DZ: SkinBase {
 	displayName = $STR_EPOCH_SKINS_FRSAPPER;
 	descriptionShort = $STR_EPOCH_SKINS_FRSAPPER;
 };
+//Namalsk Skins
+class Skin_CamoWinter_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CAMOWINTER;
+	descriptionShort = $STR_DZE_EQUIP_CAMOWINTER_DESC;
+};
+class Skin_CamoWinterW_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CAMOWINTERW;
+	descriptionShort = $STR_DZE_EQUIP_CAMOWINTER_DESC;
+};
+class Skin_Sniper1W_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_SNIPER1W;
+	descriptionShort = $STR_EPOCH_SKINS_SNIPER1W;
+};
+class Skin_Nac_Soldier_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_NACSOLDIER;
+	descriptionShort = $STR_EPOCH_SKINS_NACSOLDIER;
+};
+class Skin_Tamika_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_TAMIKA;
+	descriptionShort = $STR_EPOCH_SKINS_TAMIKA;
+};
+//Stalker Skins
+class Skin_gsc_military_helmet_wdl_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_military_head_wdl_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_military_helmet_grey_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_military_head_grey_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_scientist1_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+};
+class Skin_gsc_scientist1_head_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+};
+class Skin_gsc_scientist2_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+};
+class Skin_gsc_scientist2_head_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+};
+class Skin_gsc_cloth_loner_head_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_ROOKIE_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_ROOKIE_DESC;
+};
+class Skin_gsc_eco_stalker_mask_neutral_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_LONER_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_head_neutral_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_LONER_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_mask_fred_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_head_fred_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_FREEDOM_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_mask_duty_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_head_duty_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_DUTY_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_mask_camo_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+class Skin_gsc_eco_stalker_head_camo_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_DESC;
+};
+//New ghillies skins
+class Skin_GhillieFull_Desert01_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert02_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert03_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert04_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert05_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert06_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_6_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert07_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_7_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Desert08_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_8_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow01_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow02_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow03_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow04_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Snow05_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Urban01_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_URB_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood01_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood02_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood03_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood04_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood05_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood06_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_6_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood07_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_7_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood08_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_8_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood09_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_9_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood10_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_10_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood11_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_11_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood12_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_12_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood13_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_13_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood14_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_14_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood15_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_15_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GhillieFull_Wood16_DZ : SkinBase	{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_16_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
+};
+class Skin_GER_Soldier_EP1_des_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GER_SOLDIER_DES_NAME;
+	descriptionShort = $STR_DZE_EQUIP_GER_SOLDIER_DES_DESC;
+};
+class Skin_GER_Soldier_TL_EP1_des_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GER_TL_DES_NAME;
+	descriptionShort = $STR_DZE_EQUIP_GER_TL_DES_DESC;
+};
+class Skin_GER_Soldier_EP1_wdl_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GER_Soldier_WDL_NAME;
+	descriptionShort = $STR_DZE_EQUIP_GER_Soldier_WDL_DESC;
+};
+class Skin_GER_Soldier_TL_EP1_wdl_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_GER_TL_WDL_NAME;
+	descriptionShort = $STR_DZE_EQUIP_GER_TL_WDL_DESC;
+};
+//New ice apo skins
+class Skin_Apo_Rifleman_01_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_1_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_02_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_2_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_03_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_3_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_04_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_4_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_05_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_5_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+class Skin_Apo_Rifleman_06_DZ : SkinBase
+{
+	scope = public;
+	displayName = $STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME;
+	descriptionShort = $STR_DZE_EQUIP_APO_RIFLEMAN_DESC;
+};
+//New sg_gru skins
+class Skin_SG_GRU_TL_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_SG_GRU_DT_TL_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+};
+class Skin_SG_GRU_Scout_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME;
+};
+class Skin_SG_GRU_Sniper_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME;
+};
+class Skin_SG_GRU_Spotter_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME;
+};
+class Skin_SG_GRU_TL_W_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_TL_W_NAME;
+};
+class Skin_SG_GRU_Scout_W_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME;
+};
+class Skin_SG_GRU_Assaultman_W_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME;
+};
+class Skin_SG_GRU_Medic_W_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME;
+};
+class Skin_SG_GRU_TL_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME;
+};
+class Skin_SG_GRU_Scout_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME;
+};
+class Skin_SG_GRU_Marksman_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME;
+};
+class Skin_SG_GRU_Medic_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME;
+};
+class Skin_SG_GRU_Operator_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME;
+};
+class Skin_SG_GRU_MG_D_DZ : Skin_SG_GRU_TL_DZ {
+	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME;
+};
+//ACR Skins
+class Skin_CZ_Soldier805_DES_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME;
+};
+class Skin_CZ_Soldier_805_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME;
+};
+class Skin_CZ_Soldier_Crew_Dst_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_CREW_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_CREW_NAME;
+};
+class Skin_CZ_Soldier_Officer_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_OFFICER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_OFFICER_NAME;
+};
+class Skin_CZ_Soldier_Recon_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_SPFORCE_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_SPFORCE_NAME;
+};
+class Skin_CZ_Soldier_Spec1_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_RECON_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_RECON_NAME;
+};
+class Skin_CZ_Soldier_Spec2_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_SAPPER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_SAPPER_NAME;
+};
+class Skin_CZ_Soldier_Spec3_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_ASSAULT_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_ASSAULT_NAME;
+};
+class Skin_CZ_Soldier_Spec_Demo_Dst_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME;
+};
+class Skin_CZ_Soldier_Sniper_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_GHILLIE_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_GHILLIE_NAME;
+};
+class Skin_CZ_Soldier_Light_Wdl_ACR_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME;
+};

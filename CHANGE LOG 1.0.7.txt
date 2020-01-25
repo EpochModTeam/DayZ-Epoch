@@ -8,8 +8,14 @@
 [NEW] Different boxes of matches can be combined now. (bc75ad8) @AirwavesMan
 [NEW] Adding a basic support for PVE Servers. This disables the PvP damage on the server. Disabled by default, configVariables.sqf/DZE_PVE_Mode (e7dbc5dd) @AirwavesMan
 [NEW] Dedicated sounds for opening and closing vaults. (c001c38, 9c83ef2, 61258c9, 76721e3) @worldwidesorrow
-[NEW] Add missing Mi171Sh, BRDM-2 HQ, HMMWV M2 and HMMWV Armored DZE versions. (cbf3760c, 9ab576fa, e36e3cc4) @AirwavesMan
+[NEW] Add missing Mi171Sh, BRDM-2 HQ, HMMWV M2, HMMWV Armored, Pook, AH1Z, RHIB, BTR-40 DSHKM, Jackal, Mozzie DZ/DZE versions. (cbf3760c, 9ab576fa, e36e3cc4, 7e451c59, 6b5ebe3c, 38a31290, 1186aa29, d542304a) @AirwavesMan
 [NEW] Add the option for vectorUp on spawned objects in fnc_spawnObjects. (bf9dc49) @worldwidesorrow
+[NEW] Add 2 new cargo truck versions. A truck for more items and a truck for more weapons. (02c91007) @AirwavesMan
+[NEW] Add option to give another player an antibacterial wipe. (8c074be) @worldwidesorrow
+[NEW] The Maps Podagorsk and Chernarus Winter are in Epoch included now.
+[NEW] Add snowfall to the game. This is enabled on all winter maps by default and can be changed in the configVariables.sqf/DZE_SnowFall (fff1196e) @AirwavesMan
+[NEW] Add Warm Clothes support. configVariables.sqf/DZE_WarmClothes (4058f596) @AirwavesMan
+[NEW] Add shivering - if the players body temperature is under a certain value the shivering starts. Can be defined and disabled with the last value in the DZE_WeatherVariables array. (4058f596) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -35,7 +41,10 @@
 [FIXED] Backpacks had no descriptions. (f1d5038) @AirwavesMan
 [FIXED] Potential dupe on lag with Advanced Trading. (0617a77) @oiad
 [FIXED] Invisible backseat bug on LAV-HQ DZ and DZE version. (5c3f2162) @AirwavesMan
-[FIXED] The fuel capacity of the MH-6J Little Bird was incorrect. (862cf39a) @AirwavesMan
+[FIXED] The fuel capacity of the MH-6J Little Bird, Mi17 Civilian, UH60M was incorrect. (862cf39a, f0e08f22, fc9cb679) @AirwavesMan
+[FIXED] AIs could attack traders. (f0ac4afc) @AirwavesMan
+[FIXED] RHIB_DZ floating gunner position. (38a31290) @AirwavesMan
+[FIXED] The carry and drag functions have been fixed. (bcc5b63) @worldwidesorrow
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
@@ -48,9 +57,16 @@
 [UPDATED] Many unused trader cites got moved into a new folder called 'Archive'. Those files will no longer be updated. (6699d8d7) @AirwavesMan
 [UPDATED] All vehicle names got updated and have a localization now. (e36e3cc4) @AirwavesMan
 [UPDATED] The gunner optics angle of the BRDM-2 HQ got adjusted so it has a better usage now. (9ab576fa) @AirwavesMan
-[UPDATED] Moved FPS logging and server event spawner to the server sheduler (0a264b9) @worldwidesorrow
+[UPDATED] Moved FPS logging and server event spawner to the server scheduler (0a264b9) @worldwidesorrow
 [UPDATED] Vanilla events have been adjusted and moved to the server modules folder. The events are now spawned by the scheduler. (0a264b9) @worldwidesorrow
+[UPDATED] Trader files got rebuild. Trader Cites got overhauled (92700e8a) @AirwavesMan
+[UPDATED] Server side security added for higher risk PVDZ_send usage. (40dcf6f) @worldwidesorrow
+[UPDATED] New strings added to the string table for medical functions. (2a145bf) @worldwidesorrow
+[UPDATED] Medical functions audited. Old/unused medical functions moved to archive. @worldwidesorrow
+[UPDATED] Separate actions added for typed blood bags. Variable dayz_classicBloodBagSystem used to bypass unnecessary code. (a4c0638) @worldwidesorrow
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
+[REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow
+[REMOVED] PVDZ_drg_RaDrag, PVDZ_drg_RaLW, PVDZ_drg_RLact and PVDZ_Unconscious removed from publicvariable.txt. They have been replaced with PVDZ_send. (2d03fb9) @worldwidesorrow
 
 [INFO] Synced with DayZMod upstream up to commit fe063a8

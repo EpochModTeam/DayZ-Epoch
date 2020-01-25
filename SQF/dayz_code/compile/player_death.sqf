@@ -138,7 +138,6 @@ if (dayz_soundMuted) then {call player_toggleSoundMute;}; // hide icon before fa
 _body setVariable ["NORRN_unconscious", false, true];
 _body setVariable ["unconsciousTime", 0, true];
 _body setVariable ["USEC_isCardiac",false,true];
-_body setVariable ["medForceUpdate",true,true];
 _body setVariable ["bloodTaken", false, true];
 _body setVariable ["startcombattimer", 0]; //remove combat timer on death
 _body setVariable ["inCombat", false, true];
