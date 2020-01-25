@@ -31,7 +31,7 @@ class AW159_Lynx_BAF_DZ: AW159_Lynx_BAF {
 			gun = "obsGun";
 			animationSourceBody = "obsTurret";
 			animationSourceGun = "obsGun";
-			stabilizedInAxes = 3;
+			stabilizedInAxes = "StabilizedInAxesBoth";
 			memoryPointGunnerOptics = "commanderview";
 			minElev = -40;
 			maxElev = 20;
