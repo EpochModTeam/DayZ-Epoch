@@ -8711,17 +8711,90 @@
 			<Russian>Dingo MK19 (Лесной камуфляж)</Russian>
 			<German>Dingo MK19 (Waldtarn)</German>
 		</Key>		
-		<Key ID="STR_VEH_NAME_ATV">
-			<English>ATV</English>
-			<Russian>Квадроцикл</Russian>
-			<Spanish>Cuatriciclo</Spanish>
-			<French>Quad</French>
-			<Czech>Čtyřkolka (ATV)</Czech>
-			<German>Quad</German>
+		<Key ID="STR_VEH_NAME_ATV_BEIGE">
+			<English>ATV (Beige)</English>
+			<German>Quad (Beige)</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_TT650_INS">
-			<English>Yamaha TT650</English>
+		<Key ID="STR_VEH_NAME_ATV_GREEN">
+			<English>ATV (Green)</English>
+			<German>Quad (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_ATV_WHITE">
+			<English>ATV (White)</English>
+			<German>Quad (Weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_GREY">
+			<English>ATV (Grey)</English>
+			<German>Quad (Grau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_RED">
+			<English>ATV (Red)</English>
+			<German>Quad (Rot)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_LIGHTGREEN">
+			<English>ATV (Light Green)</English>
+			<German>Quad (Hellgrün)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLUE">
+			<English>ATV (Blue)</English>
+			<German>Quad (Blau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_YELLOW">
+			<English>ATV (Yellow)</English>
+			<German>Quad (Gelb)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_PURPLE">
+			<English>ATV (Purple)</English>
+			<German>Quad (Lila)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_BLACK">
+			<English>ATV (Black)</English>
+			<German>Quad (Schwarz)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BIKE_OLD">
+			<Chinese>Old Bike</Chinese>
+			<French>Vieille moto</French>
+			<Spanish>Bici vieja</Spanish>
+			<Italian>Vecchia bici</Italian>
+			<Hungarian>Old Bike</Hungarian>
+			<Polish>Stary motocykl</Polish>
+			<Russian>Старый велосипед</Russian>
+			<German>Altes Fahrrad</German>
+			<Czech>Staré kolo</Czech>
+			<English>Old Bike</English>
+			<Japanese>Old Bike</Japanese>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BIKE_MOUNTAINBIKE">
+			<German>Mountainbike</German>
+			<English>Mountain Bike</English>
+			<Italian>Mountain Bike</Italian>
+			<Spanish>Bici MMT</Spanish>
+			<French>Mountain Bike</French>
+			<Czech>Horské kolo</Czech>
+			<Russian>Горный велосипед</Russian>
+			<Polish>Rower górski</Polish>
+			<Hungarian>Mountain Bike</Hungarian>
+		</Key>			
+		<Key ID="STR_VEH_NAME_MOTORBIKE_WHITE">
+			<English>Motorbike (White)</English>
+			<German>Motorrad (Weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_REDWHITE">
+			<English>Motorbike TT650 (Red/White)</English>
+			<German>Motorrad TT650 (Rot/Weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_RUSTY">
+			<English>Motorbike TT650 (Rusty)</English>
+			<German>Motorrad TT650 (Rostig)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_FIRERED">
+			<English>Motorbike TT650 (Fire Red)</English>
+			<German>Motorrad TT650 (Feuerrot)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOTORBIKE_M1030_GREEN">
+			<English>Motorbike M1030 (Green)</English>
+			<German>Motorrad M1030 (Grün)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_RHIB_M2">
 			<English>RHIB (M2)</English>
 			<Russian>НЛЖК (M2)</Russian>

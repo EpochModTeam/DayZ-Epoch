@@ -269,20 +269,7 @@ class CfgVehicles
 
 
 	//External Class
-	class ATV_Base_EP1 : Car
-	{
-		class HitPoints : HitPoints
-		{
-			class HitEngine {armor=2;material=-1;name="motor";visual="motor";passThrough=0;};
-			class HitFuel {armor=1;material=-1;name="palivo";passThrough=0;};
 
-			class HitLFWheel:HitLFWheel{armor=1;};
-			class HitLBWheel:HitLBWheel{armor=1;};
-
-			class HitRFWheel:HitRFWheel{armor=1;};
-			class HitRBWheel:HitRBWheel{armor=1;};
-		};
-	};
 	class Motorcycle : LandVehicle
 	{
 		class Reflectors
@@ -294,7 +281,6 @@ class CfgVehicles
 		};
 	};
 	
-	class TT650_Base;
 	class Truck: Car
 	{
 		class HitPoints: HitPoints
@@ -312,22 +298,8 @@ class CfgVehicles
 		};
 		class DestructionEffects;
 		class Turrets;
-	};		
-	
-	class V3S_Base : Truck
-	{
-		class Reflectors
-		{
-			class Left
-			{
-				angle = 120;
-			};
-			class Right
-			{
-				angle = 120;
-			};
-		};
-	};
+	};	
+
 	class SUV_Base_EP1 : Car
 	{
 		class HitPoints : HitPoints
@@ -338,12 +310,10 @@ class CfgVehicles
 			class HitRBWheel;
 			class HitFuel;
 			class HitEngine;
-
-			//armored glass - hight armor value
-			class HitGlass1:HitGlass1 {armor=1;};
-			class HitGlass2:HitGlass2 {armor=1;};
-			class HitGlass3:HitGlass3 {armor=1;};
-			class HitGlass4:HitGlass4 {armor=1;};
+			class HitGlass1;
+			class HitGlass2;
+			class HitGlass3;
+			class HitGlass4;
 
 		};
 	};
@@ -363,28 +333,6 @@ class CfgVehicles
 	class BuiltItems;
 	class Building;
 	class ReammoBox;
-	class M1030_base;
-	class MMT_base;
-	class Bicycle;
-	
-	class Old_bike_base_EP1 : Bicycle
-	{
-		class Reflectors 
-		{
-			class Right
-			{
-				color[] = {0.9,0.8,0.8,1};
-				ambient[] = {0.1,0.1,0.1,1};
-				position = "P svetlo";
-				direction = "konec P svetla";
-				hitpoint = "P svetlo";
-				selection = "P svetlo";
-				brightness = 0.4;
-				size = 1;
-			};
-		};
-	};
-	class Old_moto_base;
 
 	#include "RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
 	//ZEDS
@@ -460,14 +408,10 @@ class CfgVehicles
 	#include "Plane\C130.hpp"
 	#include "Plane\Cessna_DZ.hpp"
 	//Bikes
-	#include "Bikes\ATV_US_EP1.hpp"
-	#include "Bikes\ATV_CZ_EP1.hpp"
-	#include "Bikes\MMT_Civ.hpp"
-	#include "Bikes\Old_bike.hpp"
-	#include "Bikes\Old_moto.hpp"
-	#include "Bikes\TT650_Ins.hpp"
-	#include "Bikes\TT650_Civ.hpp"
-	#include "Bikes\M1030.hpp"
+	#include "Bikes\ATVs.hpp"
+	#include "Bikes\Bikes.hpp"
+	#include "Bikes\Motorbikes.hpp"
+
 	//Boat
 	#include "Boat\RHIB.hpp"
 	#include "Boat\PBX.hpp"
