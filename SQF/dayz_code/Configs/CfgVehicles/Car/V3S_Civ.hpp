@@ -1,3 +1,18 @@
+class V3S_Base : Truck
+{
+	class Reflectors
+	{
+		class Left
+		{
+			angle = 120;
+		};
+		class Right
+		{
+			angle = 120;
+		};
+	};
+};
+
 class V3S_Civ;
 class V3S_Civ_DZE : V3S_Civ {
 	displayname = $STR_VEH_NAME_V3S_CAMO_OPEN;
