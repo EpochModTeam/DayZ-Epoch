@@ -8901,10 +8901,26 @@
 			<English>Mi-17 MedEvac (RU)</English>
 			<Russian>Ми-17 MedEvac (RU)</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_CH47">
-			<English>CH-47F Chinook</English>
-			<Russian>CH-47F Чинук</Russian>
+		<Key ID="STR_VEH_NAME_CH47_GREEN">
+			<English>CH-47F Chinook (Green)</English>
+			<German>CH-47F Chinook (Grün)</German>
+			<Russian>CH-47F Чинук (Зеленый)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_CH47_BLACK">
+			<English>CH-47F Chinook (Black)</English>
+			<German>CH-47F Chinook (Schwarz)</German>
+			<Russian>CH-47F Чинук (черный)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_DESERT">
+			<English>CH-47F Chinook (Desert)</English>
+			<German>CH-47F Chinook (Wüstentarn)</German>
+			<Russian>CH-47F Чинук (Пустынный)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_GREY">
+			<English>CH-47F Chinook (Grey)</English>
+			<German>CH-47F Chinook (Grau)</German>
+			<Russian>CH-47F Чинук (серый)</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_AW101">
 			<English>AW101 Merlin</English>
 		</Key>	

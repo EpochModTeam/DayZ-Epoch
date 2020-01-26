@@ -37,6 +37,7 @@ Included Custom Addons
 * Retextured German KSK Units by Brainbug - http://www.armaholic.com/page.php?id=11129
 * 19 Backpack Variants by lennard91 - http://www.armaholic.com/page.php?id=13793
 * Spetsnaz GRU by stagler - http://www.armaholic.com/page.php?id=15693
+* CH-47 Reskins by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=11202
 
 --------------------------
 Included Custom Islands

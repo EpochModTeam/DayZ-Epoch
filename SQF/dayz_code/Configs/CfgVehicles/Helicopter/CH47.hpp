@@ -2,7 +2,7 @@ class CH_47F_EP1;
 class CH_47F_EP1_DZ : CH_47F_EP1 { 
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = public; 
-	displayName = $STR_VEH_NAME_CH47;
+	displayName = $STR_VEH_NAME_CH47_GREEN;
 	crew = ""; 
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -11,7 +11,7 @@ class CH_47F_EP1_DZ : CH_47F_EP1 {
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
 	transportMaxWeapons = 40;
-	transportMaxMagazines = 360;
+	transportMaxMagazines = 300;
 	transportmaxbackpacks = 10;
 	class Turrets;
 	class MainTurret;
@@ -124,4 +124,34 @@ class CH_47F_EP1_DZE: CH_47F_EP1_DZ
 			memoryPointGunnerOptics = "gunnerview_3";
 		};
 	};
+};
+
+class CH_47F_EP1_Black_DZ : CH_47F_EP1_DZ {
+	displayName = $STR_VEH_NAME_CH47_BLACK;
+	model = "C1987_ch47\ca\air_e\CH47\CH_47F.p3d";
+};
+
+class CH_47F_EP1_Black_DZE : CH_47F_EP1_DZE {
+	displayName = $STR_VEH_NAME_CH47_BLACK;
+	model = "C1987_ch47\ca\air_e\CH47\CH_47F.p3d";
+};
+
+class CH_47F_EP1_GREY_DZ : CH_47F_EP1_DZ {
+	displayName = $STR_VEH_NAME_CH47_GREY;
+	model = "C1987_ch47\ca\air_e\CH47\CH_47F2.p3d";
+};
+
+class CH_47F_EP1_GREY_DZE : CH_47F_EP1_DZE {
+	displayName = $STR_VEH_NAME_CH47_GREY;
+	model = "C1987_ch47\ca\air_e\CH47\CH_47F2.p3d";
+};
+
+class CH_47F_EP1_DES_DZ : CH_47F_EP1_DZ {
+	displayName = $STR_VEH_NAME_CH47_DESERT;
+	model = "C1987_ch47\ca\air_e\CH47\CH_47F3.p3d";
+};
+
+class CH_47F_EP1_DES_DZE : CH_47F_EP1_DZE {
+	displayName = $STR_VEH_NAME_CH47_DESERT;
+	model = "C1987_ch47\ca\air_e\CH47\CH_47F3.p3d";
 };

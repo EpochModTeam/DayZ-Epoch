@@ -36,6 +36,12 @@ class Category_1 {
 	class UH1Y_DZ {type = "trade_any_vehicle";buy[] = {-3,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
 	class CH_47F_EP1_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
 	class CH_47F_EP1_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
+	class CH_47F_EP1_Black_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
+	class CH_47F_EP1_Black_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
+	class CH_47F_EP1_GREY_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
+	class CH_47F_EP1_GREY_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
+	class CH_47F_EP1_DES_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};
+	class CH_47F_EP1_DES_DZ {type = "trade_any_vehicle";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemBriefcase100oz"};};	
 };
 
 //Ground Vehicles
