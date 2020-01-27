@@ -196,3 +196,35 @@ class 64Rnd_9x19_SD_Bizon : CA_Magazine
 		COMBINE_MAG
 	};
 };
+
+/* CZ75 */
+
+class 18Rnd_9x19_Phantom : 15Rnd_9x19_M9
+{
+	descriptionShort = $STR_DZ_MAG_18RND_CZ75_DESC;
+	displayName = $STR_DZ_MAG_18Rnd_9x19_CZ75_NAME;
+	count = 18;
+	initSpeed = 400;
+	cartridgeName = "9x19";
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};
+};
+
+class 18Rnd_9x19_PhantomSD : 15Rnd_9x19_M9SD
+{
+	descriptionShort = $STR_DZ_MAG_18RND_CZ75_SD_DESC;
+	displayName = $STR_DZ_MAG_18Rnd_9x19_SD_CZ75_NAME;
+	count = 18;
+	cartridgeName = "9x19_SD";
+	initSpeed = 320;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};
+};

@@ -193,8 +193,7 @@ class CfgWeapons
 	class revolver_EP1;
 	#include "Pistols\Revolver.hpp"
 	
-	
-	
+	#include "Pistols\CZ75.hpp"	
 	
 	
 	/* MELEE */

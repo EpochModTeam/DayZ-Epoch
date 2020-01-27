@@ -134,10 +134,10 @@ weaponsEU[] =
 weaponsCZ[] = 
 {
 	// Pistols
-	{Loot_WEAPON,		2,		CZ_75_P_07_DUTY},
-	{Loot_WEAPON,		2,		CZ_75_D_COMPACT},
-	{Loot_WEAPON,		2,		CZ_75_SP_01_PHANTOM},
-	{Loot_WEAPON,		1,		CZ_75_SP_01_PHANTOM_SD},
+	{Loot_WEAPON,		2,		CZ75P_DZ},
+	{Loot_WEAPON,		2,		CZ75D_DZ},
+	{Loot_WEAPON,		2,		CZ75SP_DZ},
+	{Loot_WEAPON,		1,		CZ75SP_SD_DZ},
 	
 	// Sniper Rifles
 	{Loot_WEAPON,		3,		CZ750_DZ},

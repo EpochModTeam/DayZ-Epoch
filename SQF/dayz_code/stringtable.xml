@@ -11535,10 +11535,27 @@
 			<English>CZ 750 S1M1</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ750_DESC">
-			<English>Sniper rifle &lt;br/&gt;Caliber: 762x51mm</English>
-			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: 762x51mm</Russian>
-			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 762x51mm</German>
+			<English>Sniper rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: 7.62x51mm</Russian>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 		</Key>		
+		<!-- CZ75 -->
+		<Key ID="STR_DZ_WPN_CZ75P_NAME">
+			<English>CZ 75P</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ75D_NAME">
+			<English>CZ 75D</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ75SP_NAME">
+			<English>CZ 75SP</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ75SP_SD_NAME">
+			<English>CZ 75SP SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_CZ75_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm</German>
+		</Key>			
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -18132,15 +18149,33 @@
 			<English>10Rnd. CZ 750 mag.</English>
 			<Russian>10п. CZ 750 маг.</Russian>
 		</Key>	
+		<Key ID="STR_DZ_MAG_18Rnd_9x19_CZ75_NAME">
+			<English>18Rnd. CZ 75 mag.</English>
+			<Russian>18п. CZ 75 маг.</Russian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_18Rnd_9x19_SD_CZ75_NAME">
+			<English>18Rnd. CZ 75 SD mag.</English>
+			<Russian>18п. CZ 75 SD маг.</Russian>
+		</Key>			
 		<Key ID="STR_DZ_MAG_10RND_CZ750_DESC">
-			<English>Caliber: 762x51mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: CZ 750</English>
-			<Russian>Калибр: 762x51мм&lt;br/&gt;Патронов: 10&lt;br/&gt;Используется в: CZ 750</Russian>
-			<German>Kaliber: 762x51mm&lt;br/&gt;Schuss: 10&lt;br/&gt;Verwendet in: CZ 750</German>
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: CZ 750</English>
+			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Патронов: 10&lt;br/&gt;Используется в: CZ 750</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Schuss: 10&lt;br/&gt;Verwendet in: CZ 750</German>
 		</Key>	
 		<Key ID="STR_DZ_MAG_200RND_M240_DESC">
-			<English>Caliber: 762x51mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Jackal L2A1, Jackal MK19</English>
-			<Russian>Калибр: 762x51мм&lt;br/&gt;Патронов: 200&lt;br/&gt;Используется в: Jackal L2A1, Jackal MK19</Russian>
-			<German>Kaliber: 762x51mm&lt;br/&gt;Schuss: 200&lt;br/&gt;Verwendet in: Jackal L2A1, Jackal MK19</German>
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Jackal L2A1, Jackal MK19</English>
+			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Патронов: 200&lt;br/&gt;Используется в: Jackal L2A1, Jackal MK19</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Schuss: 200&lt;br/&gt;Verwendet in: Jackal L2A1, Jackal MK19</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_18RND_CZ75_DESC">
+			<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 18&lt;br/&gt;Used in: CZ 75</English>
+			<Russian>Калибр: 9x19мм&lt;br/&gt;Патронов: 18&lt;br/&gt;Используется в: CZ 75</Russian>
+			<German>Kaliber: 9x19mm&lt;br/&gt;Schuss: 18&lt;br/&gt;Verwendet in: CZ 75</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_18RND_CZ75_SD_DESC">
+			<English>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 18&lt;br/&gt;Used in: CZ 75SP SD</English>
+			<Russian>Калибр: 9x19мм SD&lt;br/&gt;Патронов: 18&lt;br/&gt;Используется в: CZ 75SP SD</Russian>
+			<German>Kaliber: 9x19mm SD&lt;br/&gt;Schuss: 18&lt;br/&gt;Verwendet in: CZ 75SP SD</German>
 		</Key>		
 		<Key ID="STR_DZ_MAG_SATCHEL_NAME">
 			<English>Satchel Charge</English>
