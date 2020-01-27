@@ -95,6 +95,10 @@ class Category_16 {
 	class m8_sharpshooter {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class m8_holo_sd {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class m8_carbine {type = "trade_weapons";buy[] = {5,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class CZ805_A1_DZ {type = "trade_weapons";buy[] = {5,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class CZ805_A1_GL_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class CZ805_A2_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class CZ805_A2_SD_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class G36C_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class G36C_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class G36C_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
@@ -274,6 +278,7 @@ class Category_16 {
 	class SCAR_H_CQC_CCO {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class SCAR_H_CQC_CCO_SD {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class SCAR_H_STD_EGLM_Spect {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class CZ805_B_GL_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 };
 
 //Sniper Rifles

@@ -76,6 +76,7 @@ class 20Rnd_762x51_B_SCAR : CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\mk17_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_MK17_DESC;
 	
 	cartridgeName = "762x51";
 	

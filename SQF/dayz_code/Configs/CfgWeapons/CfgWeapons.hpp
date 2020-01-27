@@ -81,6 +81,8 @@ class CfgWeapons
 	class M14_EP1;
 	#include "Rifles\M14.hpp"
 	
+	#include "Rifles\CZ805.hpp"
+	
 	class M24 : Rifle
 	{
 		class OpticsModes

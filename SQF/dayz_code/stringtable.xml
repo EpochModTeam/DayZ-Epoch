@@ -11573,7 +11573,7 @@
           <English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
           <Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19 mm</Italian>
           <Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19 mm</Spanish>
-          <French>Pistolet-mitrailleur &lt;br/&gt;Calibre : 9x19 mm</French>
+          <French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19 mm</French>
           <Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm</Czech>
           <Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм</Russian>
           <Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm </Polish>
@@ -11584,12 +11584,79 @@
           <English>Silenced submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
           <Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 9x19 mm</Italian>
           <Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 9x19 mm</Spanish>
-          <French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre : 9x19 mm</French>
+          <French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 9x19 mm</French>
           <Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
           <Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 9х19 мм</Russian>
           <Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm </Polish>
           <Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
-        </Key>		
+        </Key>
+		
+		<!-- CZ 805 -->
+		<Key ID="STR_DZ_WPN_CZ_805A1_NAME">
+			<English>CZ 805A1 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_CZ_805A1_GL_NAME">
+			<English>CZ 805A1 ACOG GL</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_CZ_805A2_NAME">
+			<English>CZ 805A2</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_CZ_805A2_SD_NAME">
+			<English>CZ 805A2 CCO SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_CZ_805B_NAME">
+			<English>CZ 805B1 ACOG GL</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_CZ_805A_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ_805B_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>		
+		
+		<Key ID="STR_DZE_WPN_M16RUSTY_NAME">
+			<English>M16A2 (Rusty)</English>
+			<German>M16A2 (Rostig)</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M16RUSTY_DESC">
+			<English>This M16 rifle is in a very bad shape.</English>
+			<German>Dieses M16 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M4RUSTY_NAME">
+			<English>M4A1 (Rusty)</English>
+			<German>M4A1 (Rostig)</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M4RUSTY_DESC">
+			<English>This M4 rifle is in a very bad shape.</English>
+			<German>Dieses M4 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
+		</Key>	
+		<!-- AK107 -->
+		<Key ID="STR_DZ_WPN_AK107_NAME">
+			<English>AK-107</English>
+			<Russian>АК-107</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_NAME">
+			<English>AK-107 GP-25</English>
+			<Russian>АК-107 ГП-25</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_KOBRA_NAME">
+			<English>AK-107 Kobra</English>
+			<Russian>АК-107 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_KOBRA_NAME">
+			<English>AK-107 GP-25 Kobra</English>
+			<Russian>АК-107 ГП-25 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_PSO1_NAME">
+			<English>AK-107 PSO-1</English>
+			<Russian>АК-107 ПСО-1</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_PSO1_NAME">
+			<English>AK-107 GP-25 PSO-1</English>
+			<Russian>АК-107 ГП-25 ПСО-1</Russian>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -11879,7 +11946,7 @@
           <English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5, Scorpion Evo 3</English>
           <Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5, Scorpion Evo 3</Italian>
           <Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5, Scorpion Evo 3 </Spanish>
-          <French>Calibre : 9x19 mm Parabellum &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : MP5, Scorpion Evo 3</French>
+          <French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: MP5, Scorpion Evo 3</French>
           <Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5, Scorpion Evo 3 SD</Czech>
           <Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5, Scorpion Evo 3</Russian>
           <Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5, Scorpion Evo 3</Polish>
@@ -11890,12 +11957,71 @@
           <English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5SD, Scorpion Evo 3 SD</English>
           <Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5SD, Scorpion Evo 3 SD</Italian>
           <Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5SD, Scorpion Evo 3 SD</Spanish>
-          <French>Calibre : 9x19 mm Parabellum &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : MP5SD, Scorpion Evo 3 SD</French>
+          <French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: MP5SD, Scorpion Evo 3 SD</French>
           <Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5SD, Scorpion Evo 3 SD</Czech>
           <Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5SD, Scorpion Evo 3 SD</Russian>
           <Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5SD, Scorpion Evo 3 SD</Polish>
           <Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5SD, Scorpion Evo 3 SD</Hungarian>
         </Key>	
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_NAME">
+			<English>60Rnd. Stanag Mag</English>
+			<German>60 Schuss Stanag Mag</German>
+		</Key>
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
+			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
+			<German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
+		</Key>		
+        <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
+          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
+          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
+          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
+          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
+          <French>Calibre: 5.45x39 mm &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
+          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
+          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
+          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
+          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+        </Key>
+		<Key ID="STR_DZ_MAG_75RND_RPK74_DESC">
+          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 75 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
+          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
+          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 75 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
+          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 75 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
+          <French>Calibre: 5.45x39 mm &lt;br/&gt;Munitions: 75 &lt;br/&gt;Utilisé avec: AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
+          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 75 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
+          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 75 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
+          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
+          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+        </Key>
+		<Key ID="STR_DZ_MAG_100RND_556x45_MG36_NAME">
+			<English>100Rnd. MG36 drum mag.</English>
+			<German>100 Schuss MG36 Trommelmagazin</German>
+			<Russian>100п. МГ-36 барабан</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_100RND_MG36_DESC">
+          <German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
+          <English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
+          <Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
+          <Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, M8 y L110</Spanish>
+          <French>Calibre: 5.56x45mm &lt;br/&gt;Munitions: 100 &lt;br/&gt;Utilisé avec: G36, MG36, M16, M4, M249, MK-12, M8 et L110</French>
+          <Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, M8 a L110</Czech>
+          <Russian>Патрон: 5.56x45 мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, M8, L110</Russian>
+          <Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, M8 i L110</Polish>
+          <Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
+        </Key>	
+      <Key ID="STR_DZ_MAG_20RND_MK17_DESC">
+        <Chinese>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</Chinese>
+        <French>Calibre : 7,62 x 51 mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec : Mk 17, M110, CZ 805B</French>
+        <Spanish>Calibre: 7.62x51 mm OTAN&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: Mk 17, M110, CZ 805B</Spanish>
+        <Italian>Calibro: 7,62x51 mm NATO&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: Mk 17, M110, CZ 805B</Italian>
+        <Hungarian>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</Hungarian>
+        <Polish>Kaliber: 7,62x51 mm NATO&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: Mk 17, M110, CZ 805B</Polish>
+        <Russian>Патрон: 7.62x51 мм НАТО&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: Mk 17, M110, CZ 805B</Russian>
+        <German>Kaliber: 7,62x51mm NATO&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: Mk 17, M110, CZ 805B</German>
+        <Czech>Kalibr: 7.62x51mm NATO&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Mk 17, M110, CZ 805B</Czech>
+        <English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</English>
+        <Japanese>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</Japanese>
+      </Key>		
 		
 		<!-- **** ATTACHMENTS **** -->
 		
@@ -14458,6 +14584,472 @@
 			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 15 liter</Dutch>
 			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 15</French>
 		</Key>
+		<!--epoch 107 new backpacks-->
+		<Key ID="STR_BACKPACK_NAME_PATROL_DZE1">
+			<English>Patrol Backpack</English>
+			<French>Sac de patrouille (coyote)</French>
+			<Russian>Патрульный рюкзак</Russian>
+			<Spanish>Mochila de Patrullaje (Coyote)</Spanish>
+			<Czech>Batůžek (coyote)</Czech>
+			<German>Patrol Rucksack (Coyote)</German>
+			<Dutch>Patrouillerugzak (coyote)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_PATROL_DZE1">
+			<English>Patrol Backpack &lt;br/&gt;Capacity: 10 items</English>
+			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 10</French>
+			<Russian>Рюкзак на (10 слотов)</Russian>
+			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;10 litros</Spanish>
+			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 10 litrů</Czech>
+			<German>Patrol Rucksack von "Coyote" &lt;br/&gt;Volumen: 10 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_PATROL_DZE2">
+			<English>Patrol Backpack+</English>
+			<French>Sac de patrouille (coyote)+</French>
+			<Russian>Патрульный рюкзак+</Russian>
+			<Spanish>Mochila de Patrullaje (Coyote)+</Spanish>
+			<Czech>Batůžek (coyote)+</Czech>
+			<German>Patrol Rucksack (Coyote)+</German>
+			<Dutch>Patrouillerugzak (coyote)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_PATROL_DZE2">
+			<English>Patrol Backpack &lt;br/&gt;Capacity: 15 items</English>
+			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 15</French>
+			<Russian>Рюкзак на (15 слотов)</Russian>
+			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;15 litros</Spanish>
+			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 15 litrů</Czech>
+			<German>Patrol Rucksack von "Coyote". &lt;br/&gt;Volumen: 15 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_VEST_DZE1">
+			<English>Czech Vest Pouch</English>
+			<French>Sac tchèque</French>
+			<Russian>Чешский рюкзак (малый)</Russian>
+			<Spanish>Bolsa Chaleco</Spanish>
+			<Czech>Česká vesta</Czech>
+			<German>Tschechischer Westenrucksack</German>
+			<Dutch>Tsjechische Borstzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_VEST_DZE1">
+			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 12 items</English>
+			<French>Sac tchèque &lt;br/&gt;Taille: 12</French>
+			<Russian>Рюкзак на (12 слотов)</Russian>
+			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;12 litros</Spanish>
+			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 12 litrů</Czech>
+			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 12 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_VEST_DZE2">
+			<English>Czech Vest Pouch+</English>
+			<French>Sac tchèque+</French>
+			<Russian>Чешский рюкзак (малый)+</Russian>
+			<Spanish>Bolsa Chaleco+</Spanish>
+			<Czech>Česká vesta+</Czech>
+			<German>Tschechischer Westenrucksack+</German>
+			<Dutch>Tsjechische Borstzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_VEST_DZE2">
+			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 17 items</English>
+			<French>Sac tchèque &lt;br/&gt;Taille: 17</French>
+			<Russian>Рюкзак на (17 слотов)</Russian>
+			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;17 litros</Spanish>
+			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 17 litrů</Czech>
+			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 17 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ACU_DZE1">
+			<English>Assault Backpack</English>
+			<French>Sac d&apos;assault (ACU)</French>
+			<Russian>Штурмовой рюкзак</Russian>
+			<Spanish>Mochila de Asalto (ACU)</Spanish>
+			<Czech>Batoh Assault Pack (ACU)</Czech>
+			<German>Kampfrucksack (ACU)</German>
+			<Dutch>Aanvalsrugzak (ACU)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ACU_DZE1">
+			<English>Assault Backpack &lt;br/&gt;Capacity: 15 items</English>
+			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 15</French>
+			<Russian>Рюкзак на (15 слотов)</Russian>
+			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;15 litros</Spanish>
+			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 15 litrů</Czech>
+			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 15 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ACU_DZE2">
+			<English>Assault Backpack+</English>
+			<French>Sac d&apos;assault (ACU)+</French>
+			<Russian>Штурмовой рюкзак+</Russian>
+			<Spanish>Mochila de Asalto (ACU)+</Spanish>
+			<Czech>Batoh Assault Pack (ACU)+</Czech>
+			<German>Kampfrucksack (ACU)+</German>
+			<Dutch>Aanvalsrugzak (ACU)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ACU_DZE2">
+			<English>Assault Backpack &lt;br/&gt;Capacity: 20 items</English>
+			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 20</French>
+			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;20 litros</Spanish>
+			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 20 litrů</Czech>
+			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 20 Liter</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE1">
+			<English>Terminal Backpack</English>
+			<German>Terminal Rucksack</German>
+			<Russian>Вокзальный рюкзак</Russian>
+			<Dutch>Terminal Rugzak</Dutch>
+			<French>Sac à Dos (terminal)</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE1">
+			<English>Terminal Backpack &lt;br/&gt;Capacity: 17 items</English>
+			<German>Terminal Rucksack &lt;br/&gt;Volumen: 17 Liter</German>
+			<Russian>Вокзальный рюкзак (17 слотов)</Russian>
+			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 17 liter</Dutch>
+			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 17</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE2">
+			<English>Terminal Backpack+</English>
+			<German>Terminal Rucksack+</German>
+			<Russian>Вокзальный рюкзак+</Russian>
+			<Dutch>Terminal Rugzak+</Dutch>
+			<French>Sac à Dos (terminal)+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE2">
+			<English>Terminal Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<German>Terminal Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
+			<Russian>Вокзальный рюкзак (22 слотов)</Russian>
+			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 22 liter</Dutch>
+			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 22</French>		
+		</Key>		
+		<Key ID="STR_EPOCH_PACK_TINY_DZE1">
+			<English>Tiny Backpack</English>
+			<German>Tiny Rucksack</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE1">
+			<English>Tiny Backpack &lt;br/&gt;Capacity: 18 items</English>
+			<German>Tiny Rucksack &lt;br/&gt;Volumen: 18 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_TINY_DZE2">
+			<English>Tiny Backpack+</English>
+			<German>Tiny Rucksack+</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE2">
+			<English>Tiny Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<German>Tiny Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
+		</Key>			
+		<Key ID="STR_BACKPACK_NAME_ALICE_DZE1">
+			<English>Alice Backpack</English>
+			<French>Sac Alice</French>
+			<Russian>Рюкзак ALICE</Russian>
+			<Spanish>Mochila Alice</Spanish>
+			<Czech>Batoh Alice</Czech>
+			<German>Alice Rucksack</German>
+			<Dutch>ALICE Rugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ALICE_DZE1">
+			<English>Alice Backpack &lt;br/&gt;Capacity: 20 items</English>
+			<French>Sac Alice. &lt;br/&gt;Taille: 20</French>
+			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;20 litros</Spanish>
+			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 20 litrů</Czech>
+			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 20 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ALICE_DZE2">
+			<English>Alice Backpack+</English>
+			<French>Sac Alice+</French>
+			<Russian>Рюкзак ALICE+</Russian>
+			<Spanish>Mochila Alice+</Spanish>
+			<Czech>Batoh Alice+</Czech>
+			<German>Alice Rucksack+</German>
+			<Dutch>ALICE Rugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ALICE_DZE2">
+			<English>Alice Backpack &lt;br/&gt;Capacity: 25 items</English>
+			<French>Sac Alice &lt;br/&gt;Taille: 25</French>
+			<Russian>Рюкзак на (25 слотов)</Russian>
+			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;25 litros</Spanish>
+			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 25 litrů</Czech>
+			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 25 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE1">
+			<English>Survival Backpack</English>
+			<French>ACU de survie</French>
+			<Russian>Рюкзак выживания</Russian>
+			<Spanish>Mochila de Supervivencia ACU</Spanish>
+			<Czech>Batoh Survival ACU</Czech>
+			<German>Survival Rucksack</German>
+			<Dutch>Overlevings ACU</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE1">
+			<English>Survival Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
+			<Russian>Рюкзак на (22 слота)</Russian>
+			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
+			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
+			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE2">
+			<English>Survival Backpack+</English>
+			<French>ACU de survie+</French>
+			<Russian>Рюкзак выживания+</Russian>
+			<Spanish>Mochila de Supervivencia ACU+</Spanish>
+			<Czech>Batoh Survival ACU+</Czech>
+			<German>Survival Rucksack+</German>
+			<Dutch>Overlevings ACU+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE2">
+			<English>Survival Backpack &lt;br/&gt;Capacity: 27 items</English>
+			<French>ACU de survie&lt;br/&gt;Taille: 27</French>
+			<Russian>Рюкзак на (27 слота)</Russian>
+			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;27 litros</Spanish>
+			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 27 litrů</Czech>
+			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 27 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_COMPACT_DZE1">
+			<English>Compact Backpack</English>
+			<German>Compact Rucksack</German>
+			<Russian>Компактный рюкзак</Russian>
+			<Dutch>Compacte Rugzak</Dutch>
+			<French>Sac Compact</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE1">
+			<English>Compact Backpack &lt;br/&gt;Capacity: 25 items</English>
+			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
+			<Russian>Компактный рюкзак (25 слотов)</Russian>
+			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
+			<French>Sac Compact &lt;br/&gt;Taille: 25</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_COMPACT_DZE2">
+			<English>Compact Backpack+</English>
+			<German>Compact Rucksack+</German>
+			<Russian>Компактный рюкзак+</Russian>
+			<Dutch>Compacte Rugzak+</Dutch>
+			<French>Sac Compact+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE2">
+			<English>Compact Backpack &lt;br/&gt;Capacity: 30 items</English>
+			<German>Compact Rucksack &lt;br/&gt;Volumen: 30 Liter</German>
+			<Russian>Компактный рюкзак (30 слотов)</Russian>
+			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 30 liter</Dutch>
+			<French>Sac Compact &lt;br/&gt;Taille: 30</French>		
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE1">
+			<English>British Assault Backpack</English>
+			<French>Sac d&apos;assault britannique</French>
+			<Russian>Британский рюкзак</Russian>
+			<Spanish>Mochila de Asalto Británica</Spanish>
+			<Czech>Britský batoh</Czech>
+			<German>Britischer Kampfrucksack</German>
+			<Dutch>Britse Aanvalsrugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE1">
+			<English>British Assault Backpack &lt;br/&gt;Capacity: 30 items</English>
+			<French>Sac d&apos;assault britannique &lt;br/&gt;Taille: 30</French>
+			<Russian>Рюкзак на (30 слотов)</Russian>
+			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;30 litros</Spanish>
+			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 30 litrů</Czech>
+			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 30 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE2">
+			<English>British Assault Backpack+</English>
+			<French>Sac d&apos;assault britannique+</French>
+			<Russian>Британский рюкзак+</Russian>
+			<Spanish>Mochila de Asalto Británica+</Spanish>
+			<Czech>Britský batoh+</Czech>
+			<German>Britischer Kampfrucksack+</German>
+			<Dutch>Britse Aanvalsrugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE2">
+			<English>British Assault Backpack. &lt;br/&gt;Capacity: 35 items</English>
+			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 35</French>
+			<Russian>Рюкзак на (35 слотов)</Russian>
+			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;35 litros</Spanish>
+			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 35 litrů</Czech>
+			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 35 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_GB_DZE1">
+			<English>Gunbag</English>
+			<German>Waffentasche</German>
+			<Russian>Оружейная сумка</Russian>
+			<Dutch>Wapenzak</Dutch>
+			<French>Fourreau</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE1">
+			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
+			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
+			<Russian>Оружейная сумка (35 слотов)</Russian>
+			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
+			<French>Fourreau&lt;br/&gt;Taille: 35</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_GB_DZE2">
+			<English>Gunbag+</English>
+			<German>Waffentasche+</German>
+			<Russian>Оружейная сумка+</Russian>
+			<Dutch>Wapenzak+</Dutch>
+			<French>Fourreau+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE2">
+			<English>Gunbag &lt;br/&gt;Capacity: 40 items</English>
+			<German>Waffentasche &lt;br/&gt;Volumen: 40 Liter</German>
+			<Russian>Оружейная сумка (40 слотов)</Russian>
+			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 40 liter</Dutch>
+			<French>Fourreau&lt;br/&gt;Taille: 40</French>		
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO1_DZE1">
+			<English>Night Backpack</English>
+			<German>Night Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO1_DZE1">
+			<English>Night Backpack &lt;br/&gt;Capacity: 35 items</English>
+			<German>Night Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO1_DZE2">
+			<English>Night Backpack+</English>
+			<German>Night Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO1_DZE2">
+			<English>Night Backpack &lt;br/&gt;Capacity: 40 items</English>
+			<German>Night Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO2_DZE1">
+			<English>Survivor Backpack</English>
+			<German>Survivor Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO2_DZE1">
+			<English>Survivor Backpack &lt;br/&gt;Capacity: 40 items</English>
+			<German>Survivor Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO2_DZE2">
+			<English>Survivor Backpack+</English>
+			<German>Survivor Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO2_DZE2">
+			<English>Survivor Backpack &lt;br/&gt;Capacity: 45 items</English>
+			<German>Survivor Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_CZECH_DZE1">
+			<English>Czech Backpack</English>
+			<French>Sac-à-dos tchèque</French>
+			<Russian>Чешский рюкзак</Russian>
+			<Spanish>Mochila Checa</Spanish>
+			<Czech>Český batoh</Czech>
+			<German>Tschechischer Rucksack</German>
+			<Dutch>Tsjechische Rugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_CZECH_DZE1">
+			<English>Czech Backpack &lt;br/&gt;Capacity: 45 items</English>
+			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 45</French>
+			<Russian>Рюкзак на (45 слотов)</Russian>
+			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;45 litros</Spanish>
+			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 45 litrů</Czech>
+			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_CZECH_DZE2">
+			<English>Czech Backpack+</English>
+			<French>Sac-à-dos tchèque+</French>
+			<Russian>Чешский рюкзак+</Russian>
+			<Spanish>Mochila Checa+</Spanish>
+			<Czech>Český batoh+</Czech>
+			<German>Tschechischer Rucksack+</German>
+			<Dutch>Tsjechische Rugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_CZECH_DZE2">
+			<English>Czech Backpack &lt;br/&gt;Capacity: 50 items</English>
+			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 50</French>
+			<Russian>Рюкзак на (50 слотов)</Russian>
+			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
+			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 50 litrů</Czech>
+			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO3_DZE1">
+			<English>Wanderer Backpack</English>
+			<German>Wanderer Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO3_DZE1">
+			<English>Wanderer Backpack &lt;br/&gt;Capacity: 50 items</English>
+			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO3_DZE2">
+			<English>Wanderer Backpack+</English>
+			<German>Wanderer Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO3_DZE2">
+			<English>Wanderer Backpack &lt;br/&gt;Capacity: 55 items</English>
+			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO4_DZE1">
+			<English>Legend Backpack</English>
+			<German>Legend Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO4_DZE1">
+			<English>Legend Backpack &lt;br/&gt;Capacity: 55 items</English>
+			<German>Legend Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO4_DZE2">
+			<English>Legend Backpack+</English>
+			<German>Legend Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO4_DZE2">
+			<English>Legend Backpack &lt;br/&gt;Capacity: 60 items</English>
+			<German>Legend Rucksack &lt;br/&gt;Volumen: 60 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE1">
+			<English>Coyote Backpack</English>
+			<French>Sac-à-dos (coyote)</French>
+			<Russian>Рюкзак Сoyote</Russian>
+			<Spanish>Mochila (Coyote)</Spanish>
+			<Czech>Batoh (coyote)</Czech>
+			<German>Kampfrucksack (Coyote)</German>
+			<Dutch>Rugzak (Coyote)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE1">
+			<English>Coyote Backpack &lt;br/&gt;Capacity: 60 items</English>
+			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 60</French>
+			<Russian>Рюкзак на (60 слотов)</Russian>
+			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;60 litros</Spanish>
+			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 60 litrů</Czech>
+			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 60 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE2">
+			<English>Coyote Backpack+</English>
+			<French>Sac-à-dos (coyote)+</French>
+			<Russian>Рюкзак Сoyote+</Russian>
+			<Spanish>Mochila (Coyote)+</Spanish>
+			<Czech>Batoh (coyote)+</Czech>
+			<German>Kampfrucksack (Coyote)+</German>
+			<Dutch>Rugzak (Coyote)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE2">
+			<English>Coyote Backpack &lt;br/&gt;Capacity: 65 items</English>
+			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 65</French>
+			<Russian>Рюкзак на (65 слотов)</Russian>
+			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;65 litros</Spanish>
+			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 65 litrů</Czech>
+			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 65 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_LGB_DZE1">
+			<English>Large Gunbag</English>
+			<German>Große Waffentasche</German>
+			<Russian>Большая оружейная сумка</Russian>
+			<Dutch>Grote Wapenzak</Dutch>
+			<French>Grand Fourreau</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE1">
+			<English>Large Gunbag &lt;br/&gt;Capacity: 65 items</English>
+			<German>Große Waffentasche &lt;br/&gt;Volumen: 65 Liter</German>
+			<Russian>Большая оружейная сумка (65 слотов)</Russian>
+			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 65 liter</Dutch>
+			<French>Grand Fourreau &lt;br/&gt;Taille: 65</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_LGB_DZE2">
+			<English>Large Gunbag+</English>
+			<German>Große Waffentasche+</German>
+			<Russian>Большая оружейная сумка+</Russian>
+			<Dutch>Grote Wapenzak+</Dutch>
+			<French>Grand Fourreau+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE2">
+			<English>Large Gunbag &lt;br/&gt;Capacity: 70 items</English>
+			<German>Große Waffentasche &lt;br/&gt;Volumen: 70 Liter</German>
+			<Russian>Большая оружейная сумка (70 слотов)</Russian>
+			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 70 liter</Dutch>
+			<French>Grand Fourreau &lt;br/&gt;Taille: 70</French>
+		</Key>
+		
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
 			<German>Fallschirm Sprung</German>
@@ -17791,7 +18383,511 @@
 		</Key>	
 		<Key ID="STR_EPOCH_SKINS_TAMIKA">
 			<English>Tamika</English>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
 		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_HEAD_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_MASK_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_HEAD_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
+			<English>Stalker (Rookie)</English>
+			<German>Stalker (Anfänger)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_LONER_HEAD_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_HEAD_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_DUTY_MASK_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_DUTY_HEAD_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_MASK_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_HEAD_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
+		 	<English>A pack of special armour that fits an apocalyptic environment.</English>
+		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_DESC">
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.</English>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_NAME">
+			<English>Stalker (Rookie)</English>
+			<German>Stalker (Anfänger)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
+		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
+		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>		 
+		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_LONER_HEAD_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_HEAD_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_HEAD_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>	
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_1_NAME">
+		 	<English>Ghillie Suit (Desert 1)</English>
+		 	<German>Ghillie-Anzug (Wüste 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_2_NAME">
+		 	<English>Ghillie Suit (Desert 2)</English>
+		 	<German>Ghillie-Anzug (Wüste 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_3_NAME">
+		 	<English>Ghillie Suit (Desert 3)</English>
+		 	<German>Ghillie-Anzug (Wüste 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_4_NAME">
+		 	<English>Ghillie Suit (Desert 4)</English>
+		 	<German>Ghillie-Anzug (Wüste 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_5_NAME">
+		 	<English>Ghillie Suit (Desert 5)</English>
+		 	<German>Ghillie-Anzug (Wüste 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_6_NAME">
+		 	<English>Ghillie Suit (Desert 6)</English>
+		 	<German>Ghillie-Anzug (Wüste 6)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_7_NAME">
+		 	<English>Ghillie Suit (Desert 7)</English>
+		 	<German>Ghillie-Anzug (Wüste 7)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_8_NAME">
+		 	<English>Ghillie Suit (Desert 8)</English>
+		 	<German>Ghillie-Anzug (Wüste 8)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME">
+		 	<English>Ghillie Suit (Snow 1)</English>
+		 	<German>Ghillie-Anzug (Schnee 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME">
+		 	<English>Ghillie Suit (Snow 2)</English>
+		 	<German>Ghillie-Anzug (Schnee 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME">
+		 	<English>Ghillie Suit (Snow 3)</English>
+		 	<German>Ghillie-Anzug (Schnee 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME">
+		 	<English>Ghillie Suit (Snow 4)</English>
+		 	<German>Ghillie-Anzug (Schnee 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME">
+		 	<English>Ghillie Suit (Snow 5)</English>
+		 	<German>Ghillie-Anzug (Schnee 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_URB_1_NAME">
+		 	<English>Ghillie Suit (Urban 1)</English>
+		 	<German>Ghillie-Anzug (Urban 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_1_NAME">
+		 	<English>Ghillie Suit (Wood 1)</English>
+		 	<German>Ghillie-Anzug (Wald 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_2_NAME">
+		 	<English>Ghillie Suit (Wood 2)</English>
+		 	<German>Ghillie-Anzug (Wald 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_3_NAME">
+		 	<English>Ghillie Suit (Wood 3)</English>
+		 	<German>Ghillie-Anzug (Wald 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_4_NAME">
+		 	<English>Ghillie Suit (Wood 4)</English>
+		 	<German>Ghillie-Anzug (Wald 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_5_NAME">
+		 	<English>Ghillie Suit (Wood 5)</English>
+		 	<German>Ghillie-Anzug (Wald 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_6_NAME">
+		 	<English>Ghillie Suit (Wood 6)</English>
+		 	<German>Ghillie-Anzug (Wald 6)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_7_NAME">
+		 	<English>Ghillie Suit (Wood 7)</English>
+		 	<German>Ghillie-Anzug (Wald 7)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_8_NAME">
+		 	<English>Ghillie Suit (Wood 8)</English>
+		 	<German>Ghillie-Anzug (Wald 8)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_9_NAME">
+		 	<English>Ghillie Suit (Wood 9)</English>
+		 	<German>Ghillie-Anzug (Wald 9)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_10_NAME">
+		 	<English>Ghillie Suit (Wood 10)</English>
+		 	<German>Ghillie-Anzug (Wald 10)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_11_NAME">
+		 	<English>Ghillie Suit (Wood 11)</English>
+		 	<German>Ghillie-Anzug (Wald 11)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_12_NAME">
+		 	<English>Ghillie Suit (Wood 12)</English>
+		 	<German>Ghillie-Anzug (Wald 12)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_13_NAME">
+		 	<English>Ghillie Suit (Wood 13)</English>
+		 	<German>Ghillie-Anzug (Wald 13)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_14_NAME">
+		 	<English>Ghillie Suit (Wood 14)</English>
+		 	<German>Ghillie-Anzug (Wald 14)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_15_NAME">
+		 	<English>Ghillie Suit (Wood 15)</English>
+		 	<German>Ghillie-Anzug (Wald 15)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_16_NAME">
+		 	<English>Ghillie Suit (Wood 16)</English>
+		 	<German>Ghillie-Anzug (Wald 16)</German>
+		 </Key>	
+		<Key ID="STR_DZE_SKIN_GHILLIE_DES_NAME">
+			<English>Sniper (Desert)</English>
+			<German>Scharfschütze (Wüste)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_SNOW_NAME">
+			<English>Sniper (Snow)</English>
+			<German>Scharfschütze (Schnee)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_URB_NAME">
+			<English>Sniper (Urban)</English>
+			<German>Scharfschütze (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_WDL_NAME">
+			<English>Sniper (Woodland)</English>
+			<German>Scharfschütze (Wald)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_NAME">
+		 	<English>German Rifleman (Desert)</English>
+		 	<German>Dt. Schütze (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_DESC">
+		 	<English>German Rifleman (Desert)</English>
+		 	<German>Dt. Schütze (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_NAME">
+		 	<English>German Teamleader (Desert)</English>
+		 	<German>Dt. Truppführer (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_DESC">
+		 	<English>German Teamleader (Desert)</English>
+		 	<German>Dt. Truppführer (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_NAME">
+		 	<English>German Rifleman (woodland)</English>
+		 	<German>Dt. Schütze (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_DESC">
+		 	<English>German Rifleman (woodland)</English>
+		 	<German>Dt. Schütze (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_NAME">
+		 	<English>German Teamleader (woodland)</English>
+		 	<German>Dt. Truppführer (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_DESC">
+		 	<English>German Teamleader (woodland)</English>
+		 	<German>Dt. Truppführer (Waldtarn)</German>
+		 </Key>
+		<Key ID="STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME">
+			<English>GER Rifleman (desert)</English>
+			<German>Dt. Schütze (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_DES_TL_NAME">
+			<English>GER Teamleader (desert)</English>
+			<German>Dt. Truppführer (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_WDL_RIFLEMAN_NAME">
+			<English>GER Rifleman (woodland)</English>
+			<German>Dt. Schütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_WDL_TL_NAME">
+			<English>GER Teamleader (woodland)</English>
+			<German>Dt. Truppführer (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME">
+			<English>Apocalyptic Rifleman</English>
+			<German>Apokalyptischer Schütze</German>
+		</Key>		 
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_1_NAME">
+		 	<English>Apo. Rifleman 1</English>
+		 	<German>Apo. Schütze 1</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_DESC">
+		 	<English>A pack of run down clothings that fits an apocalyptic environment.</English>
+		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_2_NAME">
+		 	<English>Apo. Rifleman 2</English>
+		 	<German>Apo. Schütze 2</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_3_NAME">
+		 	<English>Apo. Rifleman 3</English>
+		 	<German>Apo. Schütze 3</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_4_NAME">
+		 	<English>Apo. Rifleman 4</English>
+		 	<German>Apo. Schütze 4</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_5_NAME">
+		 	<English>Apo. Rifleman 5</English>
+		 	<German>Apo. Schütze 5</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME">
+		 	<English>Apo. Rifleman 6</English>
+		 	<German>Apo. Schütze 6</German>
+		 </Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_TL_NAME">
+			<English>Spetsnaz Teamleader (Dark Tan)</English>
+			<German>Speznas Truppführer (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Dark Tan)</English>
+			<German>Speznas Späher (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SNIPER_NAME">
+			<English>Spetsnaz Sniper (Dark Tan)</English>
+			<German>Speznas Heckenschütze (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SPOTTER_NAME">
+			<English>Spetsnaz Spotter (Dark Tan)</English>
+			<German>Speznas Aufklärer (Braun)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_TL_NAME">
+			<English>Spetsnaz Teamleader (Camo)</English>
+			<German>Speznas Truppführer (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Camo)</English>
+			<German>Speznas Späher (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_MEDIC_NAME">
+			<English>Spetsnaz Medic (Camo)</English>
+			<German>Speznas Feldarzt (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_RIFLEMAN_NAME">
+			<English>Spetsnaz Rifleman (Camo)</English>
+			<German>Speznas Schütze (Flecktarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_TL_NAME">
+			<English>Spetsnaz Teamleader (Woodland)</English>
+			<German>Speznas Truppführer (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_SCOUT_NAME">
+			<English>Spetsnaz Scout (Woodland)</English>
+			<German>Speznas Späher (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MARKSMAN_NAME">
+			<English>Spetsnaz Marksman (Woodland)</English>
+			<German>Speznas Scharfschütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MEDIC_NAME">
+			<English>Spetsnaz Medic (Woodland)</English>
+			<German>Speznas Feldarzt (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_OPERATOR_NAME">
+			<English>Spetsnaz Operator (Woodland)</English>
+			<German>Speznas Operator (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME">
+			<English>Spetsnaz MG Soldier (Woodland)</English>
+			<German>Speznas MG Schütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_TL_NAME">
+			<English>Spetsnaz Teamleader (Dark Tan)</English>
+			<German>Speznas Truppführer (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_TL_W_NAME">
+			<English>Spetsnaz Teamleader (Camo)</English>
+			<German>Speznas Truppführer (Flecktarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC">
+			<English>Special Spetsnaz clothings.</English>
+			<German>Spezielle Speznas Militärkleidung.</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Dark Tan)</English>
+			<German>Speznas Späher (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME">
+			<English>Spetsnaz Sniper (Dark Tan)</English>
+			<German>Speznas Heckenschütze (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME">
+			<English>Spetsnaz Spotter (Dark Tan)</English>
+			<German>Speznas Aufklärer (Braun)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Camo)</English>
+			<German>Speznas Späher (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME">
+			<English>Spetsnaz Rifleman (Camo)</English>
+			<German>Speznas Schütze (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME">
+			<English>Spetsnaz Teamleader (Woodland)</English>
+			<German>Speznas Truppführer (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME">
+			<English>Spetsnaz Scout (Woodland)</English>
+			<German>Speznas Späher (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME">
+			<English>Spez. Marksman (Woodland)</English>
+			<German>Speznas Scharfschütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME">
+			<English>Spetsnaz Medic (Woodland)</English>
+			<German>Speznas Feldarzt (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME">
+			<English>Spetsnaz Operator (Woodland)</English>
+			<German>Speznas Operator (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME">
+			<English>Spetsnaz MG Soldier (Woodland)</English>
+			<German>Speznas MG Schütze (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME">
+			<English>ACR Soldier (Woodland)</English>
+			<German>ACR Soldat (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME">
+			<English>ACR Soldier (Desert)</English>
+			<German>ACR Soldat (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_CREW_NAME">
+			<English>ACR Crewman</English>
+			<German>ACR Besatzungsmitglied</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_OFFICER_NAME">
+			<English>ACR Officer</English>
+			<German>ACR Offizier</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_SPFORCE_NAME">
+			<English>ACR Special Forces</English>
+			<German>ACR Spezialeinheit</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_RECON_NAME">
+			<English>ACR Recon</English>
+			<German>ACR Aufklärer</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_ASSAULT_NAME">
+			<English>ACR Assault Unit</English>
+			<German>ACR Angriffseinheit</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_SAPPER_NAME">
+			<English>ACR Sapper</English>
+			<German>ACR Pionier</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME">
+			<English>ACR Heavy Soldier</English>
+			<German>ACR Schwerer Soldat</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_GHILLIE_NAME">
+			<English>ACR Ghillie Suit</English>
+			<German>ACR Ghillie-Anzug</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME">
+			<English>ACR Soldier Shirt</English>
+			<German>ACR Soldat T-Shirt</German>
+		</Key>			
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>
@@ -18473,72 +19569,6 @@
 			<English>Leaf of a tobacco plant</English>
 			<German>Blatt einer Tabakpflanze</German>
 			<Russian>Лист табака с табачной плантации</Russian>
-		</Key>
-		
-		<!--New Epoch 1.0.6.3 weapon, attachment and magazine strings-->
-        <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
-          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
-          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
-          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
-          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
-          <French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
-          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
-          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
-          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
-          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
-        </Key>
-		<Key ID="STR_DZ_MAG_75RND_RPK74_DESC">
-          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 75 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
-          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
-          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 75 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
-          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 75 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
-          <French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 75 &lt;br/&gt;Utilisé avec : AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
-          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 75 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
-          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 75 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
-          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
-          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
-        </Key>
-		<Key ID="STR_DZ_MAG_100RND_556x45_MG36_NAME">
-			<English>100Rnd. MG36 drum mag.</English>
-			<German>100 Schuss MG36 Trommelmagazin</German>
-			<Russian>100п. МГ-36 барабан</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_100RND_MG36_DESC">
-          <German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
-          <English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
-          <Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
-          <Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, M8 y L110</Spanish>
-          <French>Calibre : 5.56x45mm &lt;br/&gt;Munitions : 100 &lt;br/&gt;Utilisé avec : G36, MG36, M16, M4, M249, MK-12, M8 et L110</French>
-          <Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, M8 a L110</Czech>
-          <Russian>Патрон: 5.56x45 мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, M8, L110</Russian>
-          <Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, M8 i L110</Polish>
-          <Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
-        </Key>
-		
-		<!-- AK107 -->
-		<Key ID="STR_DZ_WPN_AK107_NAME">
-			<English>AK-107</English>
-			<Russian>АК-107</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_GL_NAME">
-			<English>AK-107 GP-25</English>
-			<Russian>АК-107 ГП-25</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_KOBRA_NAME">
-			<English>AK-107 Kobra</English>
-			<Russian>АК-107 Кобра</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_GL_KOBRA_NAME">
-			<English>AK-107 GP-25 Kobra</English>
-			<Russian>АК-107 ГП-25 Кобра</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_PSO1_NAME">
-			<English>AK-107 PSO-1</English>
-			<Russian>АК-107 ПСО-1</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_GL_PSO1_NAME">
-			<English>AK-107 GP-25 PSO-1</English>
-			<Russian>АК-107 ГП-25 ПСО-1</Russian>
 		</Key>
 		
 		<!--PET waterbottles -->
@@ -19259,1001 +20289,7 @@
 		<Key ID="STR_EQUIP_APSI_DESC">
 			<English>APSI (Anti PSI) device, which full purpose is yet unknown.</English>
 			<German>APSI (Anti PSI) Emitter, dessen vollständige Funktion noch unbekannt ist.</German>
-		</Key>	
-		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME">
-			<English>Stalker Mil. (woodland)</English>
-			<German>Stalker Mil. (Wald)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME">
-			<English>Stalker Mil. (woodland)</English>
-			<German>Stalker Mil. (Wald)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME">
-			<English>Stalker Mil. (urban)</English>
-			<German>Stalker Mil. (Urban)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME">
-			<English>Stalker Mil. (urban)</English>
-			<German>Stalker Mil. (Urban)</German>
 		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME">
-			<English>Scientist (Red rad-suit)</English>
-			<German>Wissenschaftler (Roter Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_HEAD_NAME">
-			<English>Scientist (Red rad-suit)</English>
-			<German>Wissenschaftler (Roter Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_MASK_NAME">
-			<English>Scientist (Yellow rad-suit)</English>
-			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_HEAD_NAME">
-			<English>Scientist (Yellow rad-suit)</English>
-			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
-			<English>Stalker (Rookie)</English>
-			<German>Stalker (Anfänger)</German>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
-			<English>Stalker (Loner)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_LONER_HEAD_NAME">
-			<English>Stalker (Loner)</English>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME">
-			<English>Stalker (Freedom)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_HEAD_NAME">
-			<English>Stalker (Freedom)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_DUTY_MASK_NAME">
-			<English>Stalker (Duty)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_DUTY_HEAD_NAME">
-			<English>Stalker (Duty)</English>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_MASK_NAME">
-			<English>Stalker (Monolith)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_HEAD_NAME">
-			<English>Stalker (Monolith)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME">
-			<English>Stalker Mil. (woodland)</English>
-			<German>Stalker Mil. (Wald)</German>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
-		 	<English>A pack of special armour that fits an apocalyptic environment.</English>
-		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.</German>
-		 </Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
-			<English>Stalker Mil. (woodland)</English>
-			<German>Stalker Mil. (Wald)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME">
-			<English>Stalker Mil. (urban)</English>
-			<German>Stalker Mil. (Urban)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME">
-			<English>Stalker Mil. (urban)</English>
-			<German>Stalker Mil. (Urban)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME">
-			<English>Scientist (Red rad-suit)</English>
-			<German>Wissenschaftler (Roter Rad-Anzug)</German>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_DESC">
-		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.</English>
-		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.</German>
-		 </Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
-			<English>Scientist (Red rad-suit)</English>
-			<German>Wissenschaftler (Roter Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME">
-			<English>Scientist (Yellow rad-suit)</English>
-			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME">
-			<English>Scientist (Yellow rad-suit)</English>
-			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_NAME">
-			<English>Stalker (Rookie)</English>
-			<German>Stalker (Anfänger)</German>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
-		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
-		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
-		 </Key>		 
-		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
-			<English>Stalker (Loner)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_LONER_HEAD_NAME">
-			<English>Stalker (Loner)</English>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME">
-			<English>Stalker (Freedom)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_HEAD_NAME">
-			<English>Stalker (Freedom)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME">
-			<English>Stalker (Duty)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_HEAD_NAME">
-			<English>Stalker (Duty)</English>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME">
-			<English>Stalker (Monolith)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME">
-			<English>Stalker (Monolith)</English>
-		</Key>	
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_1_NAME">
-		 	<English>Ghillie Suit (Desert 1)</English>
-		 	<German>Ghillie-Anzug (Wüste 1)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_2_NAME">
-		 	<English>Ghillie Suit (Desert 2)</English>
-		 	<German>Ghillie-Anzug (Wüste 2)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_3_NAME">
-		 	<English>Ghillie Suit (Desert 3)</English>
-		 	<German>Ghillie-Anzug (Wüste 3)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_4_NAME">
-		 	<English>Ghillie Suit (Desert 4)</English>
-		 	<German>Ghillie-Anzug (Wüste 4)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_5_NAME">
-		 	<English>Ghillie Suit (Desert 5)</English>
-		 	<German>Ghillie-Anzug (Wüste 5)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_6_NAME">
-		 	<English>Ghillie Suit (Desert 6)</English>
-		 	<German>Ghillie-Anzug (Wüste 6)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_7_NAME">
-		 	<English>Ghillie Suit (Desert 7)</English>
-		 	<German>Ghillie-Anzug (Wüste 7)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_8_NAME">
-		 	<English>Ghillie Suit (Desert 8)</English>
-		 	<German>Ghillie-Anzug (Wüste 8)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME">
-		 	<English>Ghillie Suit (Snow 1)</English>
-		 	<German>Ghillie-Anzug (Schnee 1)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME">
-		 	<English>Ghillie Suit (Snow 2)</English>
-		 	<German>Ghillie-Anzug (Schnee 2)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME">
-		 	<English>Ghillie Suit (Snow 3)</English>
-		 	<German>Ghillie-Anzug (Schnee 3)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME">
-		 	<English>Ghillie Suit (Snow 4)</English>
-		 	<German>Ghillie-Anzug (Schnee 4)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME">
-		 	<English>Ghillie Suit (Snow 5)</English>
-		 	<German>Ghillie-Anzug (Schnee 5)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_URB_1_NAME">
-		 	<English>Ghillie Suit (Urban 1)</English>
-		 	<German>Ghillie-Anzug (Urban 1)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_1_NAME">
-		 	<English>Ghillie Suit (Wood 1)</English>
-		 	<German>Ghillie-Anzug (Wald 1)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_2_NAME">
-		 	<English>Ghillie Suit (Wood 2)</English>
-		 	<German>Ghillie-Anzug (Wald 2)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_3_NAME">
-		 	<English>Ghillie Suit (Wood 3)</English>
-		 	<German>Ghillie-Anzug (Wald 3)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_4_NAME">
-		 	<English>Ghillie Suit (Wood 4)</English>
-		 	<German>Ghillie-Anzug (Wald 4)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_5_NAME">
-		 	<English>Ghillie Suit (Wood 5)</English>
-		 	<German>Ghillie-Anzug (Wald 5)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_6_NAME">
-		 	<English>Ghillie Suit (Wood 6)</English>
-		 	<German>Ghillie-Anzug (Wald 6)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_7_NAME">
-		 	<English>Ghillie Suit (Wood 7)</English>
-		 	<German>Ghillie-Anzug (Wald 7)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_8_NAME">
-		 	<English>Ghillie Suit (Wood 8)</English>
-		 	<German>Ghillie-Anzug (Wald 8)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_9_NAME">
-		 	<English>Ghillie Suit (Wood 9)</English>
-		 	<German>Ghillie-Anzug (Wald 9)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_10_NAME">
-		 	<English>Ghillie Suit (Wood 10)</English>
-		 	<German>Ghillie-Anzug (Wald 10)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_11_NAME">
-		 	<English>Ghillie Suit (Wood 11)</English>
-		 	<German>Ghillie-Anzug (Wald 11)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_12_NAME">
-		 	<English>Ghillie Suit (Wood 12)</English>
-		 	<German>Ghillie-Anzug (Wald 12)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_13_NAME">
-		 	<English>Ghillie Suit (Wood 13)</English>
-		 	<German>Ghillie-Anzug (Wald 13)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_14_NAME">
-		 	<English>Ghillie Suit (Wood 14)</English>
-		 	<German>Ghillie-Anzug (Wald 14)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_15_NAME">
-		 	<English>Ghillie Suit (Wood 15)</English>
-		 	<German>Ghillie-Anzug (Wald 15)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_16_NAME">
-		 	<English>Ghillie Suit (Wood 16)</English>
-		 	<German>Ghillie-Anzug (Wald 16)</German>
-		 </Key>	
-		<Key ID="STR_DZE_SKIN_GHILLIE_DES_NAME">
-			<English>Sniper (Desert)</English>
-			<German>Scharfschütze (Wüste)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_GHILLIE_SNOW_NAME">
-			<English>Sniper (Snow)</English>
-			<German>Scharfschütze (Schnee)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_GHILLIE_URB_NAME">
-			<English>Sniper (Urban)</English>
-			<German>Scharfschütze (Urban)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_GHILLIE_WDL_NAME">
-			<English>Sniper (Woodland)</English>
-			<German>Scharfschütze (Wald)</German>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_NAME">
-		 	<English>German Rifleman (Desert)</English>
-		 	<German>Dt. Schütze (Wüstentarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_DESC">
-		 	<English>German Rifleman (Desert)</English>
-		 	<German>Dt. Schütze (Wüstentarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_NAME">
-		 	<English>German Teamleader (Desert)</English>
-		 	<German>Dt. Truppführer (Wüstentarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_DESC">
-		 	<English>German Teamleader (Desert)</English>
-		 	<German>Dt. Truppführer (Wüstentarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_NAME">
-		 	<English>German Rifleman (woodland)</English>
-		 	<German>Dt. Schütze (Waldtarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_DESC">
-		 	<English>German Rifleman (woodland)</English>
-		 	<German>Dt. Schütze (Waldtarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_NAME">
-		 	<English>German Teamleader (woodland)</English>
-		 	<German>Dt. Truppführer (Waldtarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_DESC">
-		 	<English>German Teamleader (woodland)</English>
-		 	<German>Dt. Truppführer (Waldtarn)</German>
-		 </Key>
-		<Key ID="STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME">
-			<English>GER Rifleman (desert)</English>
-			<German>Dt. Schütze (Wüstentarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_KSK_DES_TL_NAME">
-			<English>GER Teamleader (desert)</English>
-			<German>Dt. Truppführer (Wüstentarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_KSK_WDL_RIFLEMAN_NAME">
-			<English>GER Rifleman (woodland)</English>
-			<German>Dt. Schütze (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_KSK_WDL_TL_NAME">
-			<English>GER Teamleader (woodland)</English>
-			<German>Dt. Truppführer (Waldtarn)</German>
-		</Key>	
-		<Key ID="STR_DZE_WPN_M16RUSTY_NAME">
-			<English>M16A2 (Rusty)</English>
-			<German>M16A2 (Rostig)</German>
-		</Key>
-		<Key ID="STR_DZE_WPN_M16RUSTY_DESC">
-			<English>This M16 rifle is in a very bad shape.</English>
-			<German>Dieses M16 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
-		</Key>
-		<Key ID="STR_DZE_WPN_M4RUSTY_NAME">
-			<English>M4A1 (Rusty)</English>
-			<German>M4A1 (Rostig)</German>
-		</Key>
-		<Key ID="STR_DZE_WPN_M4RUSTY_DESC">
-			<English>This M4 rifle is in a very bad shape.</English>
-			<German>Dieses M4 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
-		</Key>	
-		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_NAME">
-			<English>60Rnd. Stanag Mag</English>
-			<German>60 Schuss Stanag Mag</German>
-		</Key>
-		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
-			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
-			<German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME">
-			<English>Apocalyptic Rifleman</English>
-			<German>Apokalyptischer Schütze</German>
-		</Key>		 
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_1_NAME">
-		 	<English>Apo. Rifleman 1</English>
-		 	<German>Apo. Schütze 1</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_DESC">
-		 	<English>A pack of run down clothings that fits an apocalyptic environment.</English>
-		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_2_NAME">
-		 	<English>Apo. Rifleman 2</English>
-		 	<German>Apo. Schütze 2</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_3_NAME">
-		 	<English>Apo. Rifleman 3</English>
-		 	<German>Apo. Schütze 3</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_4_NAME">
-		 	<English>Apo. Rifleman 4</English>
-		 	<German>Apo. Schütze 4</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_5_NAME">
-		 	<English>Apo. Rifleman 5</English>
-		 	<German>Apo. Schütze 5</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME">
-		 	<English>Apo. Rifleman 6</English>
-		 	<German>Apo. Schütze 6</German>
-		 </Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_DT_TL_NAME">
-			<English>Spetsnaz Teamleader (Dark Tan)</English>
-			<German>Speznas Truppführer (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SCOUT_NAME">
-			<English>Spetsnaz Scout (Dark Tan)</English>
-			<German>Speznas Späher (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SNIPER_NAME">
-			<English>Spetsnaz Sniper (Dark Tan)</English>
-			<German>Speznas Heckenschütze (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SPOTTER_NAME">
-			<English>Spetsnaz Spotter (Dark Tan)</English>
-			<German>Speznas Aufklärer (Braun)</German>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_TL_NAME">
-			<English>Spetsnaz Teamleader (Camo)</English>
-			<German>Speznas Truppführer (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_SCOUT_NAME">
-			<English>Spetsnaz Scout (Camo)</English>
-			<German>Speznas Späher (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_MEDIC_NAME">
-			<English>Spetsnaz Medic (Camo)</English>
-			<German>Speznas Feldarzt (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_RIFLEMAN_NAME">
-			<English>Spetsnaz Rifleman (Camo)</English>
-			<German>Speznas Schütze (Flecktarn)</German>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_TL_NAME">
-			<English>Spetsnaz Teamleader (Woodland)</English>
-			<German>Speznas Truppführer (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_SCOUT_NAME">
-			<English>Spetsnaz Scout (Woodland)</English>
-			<German>Speznas Späher (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MARKSMAN_NAME">
-			<English>Spetsnaz Marksman (Woodland)</English>
-			<German>Speznas Scharfschütze (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MEDIC_NAME">
-			<English>Spetsnaz Medic (Woodland)</English>
-			<German>Speznas Feldarzt (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_OPERATOR_NAME">
-			<English>Spetsnaz Operator (Woodland)</English>
-			<German>Speznas Operator (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME">
-			<English>Spetsnaz MG Soldier (Woodland)</English>
-			<German>Speznas MG Schütze (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_TL_NAME">
-			<English>Spetsnaz Teamleader (Dark Tan)</English>
-			<German>Speznas Truppführer (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_TL_W_NAME">
-			<English>Spetsnaz Teamleader (Camo)</English>
-			<German>Speznas Truppführer (Flecktarn)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC">
-			<English>Special Spetsnaz clothings.</English>
-			<German>Spezielle Speznas Militärkleidung.</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME">
-			<English>Spetsnaz Scout (Dark Tan)</English>
-			<German>Speznas Späher (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME">
-			<English>Spetsnaz Sniper (Dark Tan)</English>
-			<German>Speznas Heckenschütze (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME">
-			<English>Spetsnaz Spotter (Dark Tan)</English>
-			<German>Speznas Aufklärer (Braun)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME">
-			<English>Spetsnaz Scout (Camo)</English>
-			<German>Speznas Späher (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME">
-			<English>Spetsnaz Rifleman (Camo)</English>
-			<German>Speznas Schütze (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME">
-			<English>Spetsnaz Teamleader (Woodland)</English>
-			<German>Speznas Truppführer (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME">
-			<English>Spetsnaz Scout (Woodland)</English>
-			<German>Speznas Späher (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME">
-			<English>Spez. Marksman (Woodland)</English>
-			<German>Speznas Scharfschütze (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME">
-			<English>Spetsnaz Medic (Woodland)</English>
-			<German>Speznas Feldarzt (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME">
-			<English>Spetsnaz Operator (Woodland)</English>
-			<German>Speznas Operator (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME">
-			<English>Spetsnaz MG Soldier (Woodland)</English>
-			<German>Speznas MG Schütze (Waldtarn)</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME">
-			<English>ACR Soldier (Woodland)</English>
-			<German>ACR Soldat (Waldtarn)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME">
-			<English>ACR Soldier (Desert)</English>
-			<German>ACR Soldat (Wüstentarn)</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_CREW_NAME">
-			<English>ACR Crewman</English>
-			<German>ACR Besatzungsmitglied</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_OFFICER_NAME">
-			<English>ACR Officer</English>
-			<German>ACR Offizier</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_SPFORCE_NAME">
-			<English>ACR Special Forces</English>
-			<German>ACR Spezialeinheit</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_RECON_NAME">
-			<English>ACR Recon</English>
-			<German>ACR Aufklärer</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_ASSAULT_NAME">
-			<English>ACR Assault Unit</English>
-			<German>ACR Angriffseinheit</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_SAPPER_NAME">
-			<English>ACR Sapper</English>
-			<German>ACR Pionier</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME">
-			<English>ACR Heavy Soldier</English>
-			<German>ACR Schwerer Soldat</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_GHILLIE_NAME">
-			<English>ACR Ghillie Suit</English>
-			<German>ACR Ghillie-Anzug</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME">
-			<English>ACR Soldier Shirt</English>
-			<German>ACR Soldat T-Shirt</German>
-		</Key>		
-		<!--epoch 107 new backpacks-->
-		<Key ID="STR_BACKPACK_NAME_PATROL_DZE1">
-			<English>Patrol Backpack</English>
-			<French>Sac de patrouille (coyote)</French>
-			<Russian>Патрульный рюкзак</Russian>
-			<Spanish>Mochila de Patrullaje (Coyote)</Spanish>
-			<Czech>Batůžek (coyote)</Czech>
-			<German>Patrol Rucksack (Coyote)</German>
-			<Dutch>Patrouillerugzak (coyote)</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_PATROL_DZE1">
-			<English>Patrol Backpack &lt;br/&gt;Capacity: 10 items</English>
-			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 10</French>
-			<Russian>Рюкзак на (10 слотов)</Russian>
-			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;10 litros</Spanish>
-			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 10 litrů</Czech>
-			<German>Patrol Rucksack von "Coyote" &lt;br/&gt;Volumen: 10 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_PATROL_DZE2">
-			<English>Patrol Backpack+</English>
-			<French>Sac de patrouille (coyote)+</French>
-			<Russian>Патрульный рюкзак+</Russian>
-			<Spanish>Mochila de Patrullaje (Coyote)+</Spanish>
-			<Czech>Batůžek (coyote)+</Czech>
-			<German>Patrol Rucksack (Coyote)+</German>
-			<Dutch>Patrouillerugzak (coyote)+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_PATROL_DZE2">
-			<English>Patrol Backpack &lt;br/&gt;Capacity: 15 items</English>
-			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 15</French>
-			<Russian>Рюкзак на (15 слотов)</Russian>
-			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;15 litros</Spanish>
-			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 15 litrů</Czech>
-			<German>Patrol Rucksack von "Coyote". &lt;br/&gt;Volumen: 15 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_VEST_DZE1">
-			<English>Czech Vest Pouch</English>
-			<French>Sac tchèque</French>
-			<Russian>Чешский рюкзак (малый)</Russian>
-			<Spanish>Bolsa Chaleco</Spanish>
-			<Czech>Česká vesta</Czech>
-			<German>Tschechischer Westenrucksack</German>
-			<Dutch>Tsjechische Borstzak</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_VEST_DZE1">
-			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 12 items</English>
-			<French>Sac tchèque &lt;br/&gt;Taille: 12</French>
-			<Russian>Рюкзак на (12 слотов)</Russian>
-			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;12 litros</Spanish>
-			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 12 litrů</Czech>
-			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 12 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_VEST_DZE2">
-			<English>Czech Vest Pouch+</English>
-			<French>Sac tchèque+</French>
-			<Russian>Чешский рюкзак (малый)+</Russian>
-			<Spanish>Bolsa Chaleco+</Spanish>
-			<Czech>Česká vesta+</Czech>
-			<German>Tschechischer Westenrucksack+</German>
-			<Dutch>Tsjechische Borstzak+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_VEST_DZE2">
-			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 17 items</English>
-			<French>Sac tchèque &lt;br/&gt;Taille: 17</French>
-			<Russian>Рюкзак на (17 слотов)</Russian>
-			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;17 litros</Spanish>
-			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 17 litrů</Czech>
-			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 17 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_ACU_DZE1">
-			<English>Assault Backpack</English>
-			<French>Sac d&apos;assault (ACU)</French>
-			<Russian>Штурмовой рюкзак</Russian>
-			<Spanish>Mochila de Asalto (ACU)</Spanish>
-			<Czech>Batoh Assault Pack (ACU)</Czech>
-			<German>Kampfrucksack (ACU)</German>
-			<Dutch>Aanvalsrugzak (ACU)</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_ACU_DZE1">
-			<English>Assault Backpack &lt;br/&gt;Capacity: 15 items</English>
-			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 15</French>
-			<Russian>Рюкзак на (15 слотов)</Russian>
-			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;15 litros</Spanish>
-			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 15 litrů</Czech>
-			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 15 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_ACU_DZE2">
-			<English>Assault Backpack+</English>
-			<French>Sac d&apos;assault (ACU)+</French>
-			<Russian>Штурмовой рюкзак+</Russian>
-			<Spanish>Mochila de Asalto (ACU)+</Spanish>
-			<Czech>Batoh Assault Pack (ACU)+</Czech>
-			<German>Kampfrucksack (ACU)+</German>
-			<Dutch>Aanvalsrugzak (ACU)+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_ACU_DZE2">
-			<English>Assault Backpack &lt;br/&gt;Capacity: 20 items</English>
-			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 20</French>
-			<Russian>Рюкзак на (20 слотов)</Russian>
-			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;20 litros</Spanish>
-			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 20 litrů</Czech>
-			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 20 Liter</German>
-		</Key>	
-		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE1">
-			<English>Terminal Backpack</English>
-			<German>Terminal Rucksack</German>
-			<Russian>Вокзальный рюкзак</Russian>
-			<Dutch>Terminal Rugzak</Dutch>
-			<French>Sac à Dos (terminal)</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE1">
-			<English>Terminal Backpack &lt;br/&gt;Capacity: 17 items</English>
-			<German>Terminal Rucksack &lt;br/&gt;Volumen: 17 Liter</German>
-			<Russian>Вокзальный рюкзак (17 слотов)</Russian>
-			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 17 liter</Dutch>
-			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 17</French>		
-		</Key>
-		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE2">
-			<English>Terminal Backpack+</English>
-			<German>Terminal Rucksack+</German>
-			<Russian>Вокзальный рюкзак+</Russian>
-			<Dutch>Terminal Rugzak+</Dutch>
-			<French>Sac à Dos (terminal)+</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE2">
-			<English>Terminal Backpack &lt;br/&gt;Capacity: 22 items</English>
-			<German>Terminal Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
-			<Russian>Вокзальный рюкзак (22 слотов)</Russian>
-			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 22 liter</Dutch>
-			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 22</French>		
-		</Key>		
-		<Key ID="STR_EPOCH_PACK_TINY_DZE1">
-			<English>Tiny Backpack</English>
-			<German>Tiny Rucksack</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE1">
-			<English>Tiny Backpack &lt;br/&gt;Capacity: 18 items</English>
-			<German>Tiny Rucksack &lt;br/&gt;Volumen: 18 Liter</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_TINY_DZE2">
-			<English>Tiny Backpack+</English>
-			<German>Tiny Rucksack+</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE2">
-			<English>Tiny Backpack &lt;br/&gt;Capacity: 22 items</English>
-			<German>Tiny Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
-		</Key>			
-		<Key ID="STR_BACKPACK_NAME_ALICE_DZE1">
-			<English>Alice Backpack</English>
-			<French>Sac Alice</French>
-			<Russian>Рюкзак ALICE</Russian>
-			<Spanish>Mochila Alice</Spanish>
-			<Czech>Batoh Alice</Czech>
-			<German>Alice Rucksack</German>
-			<Dutch>ALICE Rugzak</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_ALICE_DZE1">
-			<English>Alice Backpack &lt;br/&gt;Capacity: 20 items</English>
-			<French>Sac Alice. &lt;br/&gt;Taille: 20</French>
-			<Russian>Рюкзак на (20 слотов)</Russian>
-			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;20 litros</Spanish>
-			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 20 litrů</Czech>
-			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 20 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_ALICE_DZE2">
-			<English>Alice Backpack+</English>
-			<French>Sac Alice+</French>
-			<Russian>Рюкзак ALICE+</Russian>
-			<Spanish>Mochila Alice+</Spanish>
-			<Czech>Batoh Alice+</Czech>
-			<German>Alice Rucksack+</German>
-			<Dutch>ALICE Rugzak+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_ALICE_DZE2">
-			<English>Alice Backpack &lt;br/&gt;Capacity: 25 items</English>
-			<French>Sac Alice &lt;br/&gt;Taille: 25</French>
-			<Russian>Рюкзак на (25 слотов)</Russian>
-			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;25 litros</Spanish>
-			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 25 litrů</Czech>
-			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 25 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE1">
-			<English>Survival Backpack</English>
-			<French>ACU de survie</French>
-			<Russian>Рюкзак выживания</Russian>
-			<Spanish>Mochila de Supervivencia ACU</Spanish>
-			<Czech>Batoh Survival ACU</Czech>
-			<German>Survival Rucksack</German>
-			<Dutch>Overlevings ACU</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE1">
-			<English>Survival Backpack &lt;br/&gt;Capacity: 22 items</English>
-			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
-			<Russian>Рюкзак на (22 слота)</Russian>
-			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
-			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
-			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE2">
-			<English>Survival Backpack+</English>
-			<French>ACU de survie+</French>
-			<Russian>Рюкзак выживания+</Russian>
-			<Spanish>Mochila de Supervivencia ACU+</Spanish>
-			<Czech>Batoh Survival ACU+</Czech>
-			<German>Survival Rucksack+</German>
-			<Dutch>Overlevings ACU+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE2">
-			<English>Survival Backpack &lt;br/&gt;Capacity: 27 items</English>
-			<French>ACU de survie&lt;br/&gt;Taille: 27</French>
-			<Russian>Рюкзак на (27 слота)</Russian>
-			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;27 litros</Spanish>
-			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 27 litrů</Czech>
-			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 27 Liter</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_COMPACT_DZE1">
-			<English>Compact Backpack</English>
-			<German>Compact Rucksack</German>
-			<Russian>Компактный рюкзак</Russian>
-			<Dutch>Compacte Rugzak</Dutch>
-			<French>Sac Compact</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE1">
-			<English>Compact Backpack &lt;br/&gt;Capacity: 25 items</English>
-			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
-			<Russian>Компактный рюкзак (25 слотов)</Russian>
-			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
-			<French>Sac Compact &lt;br/&gt;Taille: 25</French>		
-		</Key>
-		<Key ID="STR_EPOCH_PACK_COMPACT_DZE2">
-			<English>Compact Backpack+</English>
-			<German>Compact Rucksack+</German>
-			<Russian>Компактный рюкзак+</Russian>
-			<Dutch>Compacte Rugzak+</Dutch>
-			<French>Sac Compact+</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE2">
-			<English>Compact Backpack &lt;br/&gt;Capacity: 30 items</English>
-			<German>Compact Rucksack &lt;br/&gt;Volumen: 30 Liter</German>
-			<Russian>Компактный рюкзак (30 слотов)</Russian>
-			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 30 liter</Dutch>
-			<French>Sac Compact &lt;br/&gt;Taille: 30</French>		
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE1">
-			<English>British Assault Backpack</English>
-			<French>Sac d&apos;assault britannique</French>
-			<Russian>Британский рюкзак</Russian>
-			<Spanish>Mochila de Asalto Británica</Spanish>
-			<Czech>Britský batoh</Czech>
-			<German>Britischer Kampfrucksack</German>
-			<Dutch>Britse Aanvalsrugzak</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE1">
-			<English>British Assault Backpack &lt;br/&gt;Capacity: 30 items</English>
-			<French>Sac d&apos;assault britannique &lt;br/&gt;Taille: 30</French>
-			<Russian>Рюкзак на (30 слотов)</Russian>
-			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;30 litros</Spanish>
-			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 30 litrů</Czech>
-			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 30 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE2">
-			<English>British Assault Backpack+</English>
-			<French>Sac d&apos;assault britannique+</French>
-			<Russian>Британский рюкзак+</Russian>
-			<Spanish>Mochila de Asalto Británica+</Spanish>
-			<Czech>Britský batoh+</Czech>
-			<German>Britischer Kampfrucksack+</German>
-			<Dutch>Britse Aanvalsrugzak+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE2">
-			<English>British Assault Backpack. &lt;br/&gt;Capacity: 35 items</English>
-			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 35</French>
-			<Russian>Рюкзак на (35 слотов)</Russian>
-			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;35 litros</Spanish>
-			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 35 litrů</Czech>
-			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 35 Liter</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_GB_DZE1">
-			<English>Gunbag</English>
-			<German>Waffentasche</German>
-			<Russian>Оружейная сумка</Russian>
-			<Dutch>Wapenzak</Dutch>
-			<French>Fourreau</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE1">
-			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
-			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
-			<Russian>Оружейная сумка (35 слотов)</Russian>
-			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
-			<French>Fourreau&lt;br/&gt;Taille: 35</French>		
-		</Key>
-		<Key ID="STR_EPOCH_PACK_GB_DZE2">
-			<English>Gunbag+</English>
-			<German>Waffentasche+</German>
-			<Russian>Оружейная сумка+</Russian>
-			<Dutch>Wapenzak+</Dutch>
-			<French>Fourreau+</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE2">
-			<English>Gunbag &lt;br/&gt;Capacity: 40 items</English>
-			<German>Waffentasche &lt;br/&gt;Volumen: 40 Liter</German>
-			<Russian>Оружейная сумка (40 слотов)</Russian>
-			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 40 liter</Dutch>
-			<French>Fourreau&lt;br/&gt;Taille: 40</French>		
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO1_DZE1">
-			<English>Night Backpack</English>
-			<German>Night Rucksack</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO1_DZE1">
-			<English>Night Backpack &lt;br/&gt;Capacity: 35 items</English>
-			<German>Night Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO1_DZE2">
-			<English>Night Backpack+</English>
-			<German>Night Rucksack+</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO1_DZE2">
-			<English>Night Backpack &lt;br/&gt;Capacity: 40 items</English>
-			<German>Night Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO2_DZE1">
-			<English>Survivor Backpack</English>
-			<German>Survivor Rucksack</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO2_DZE1">
-			<English>Survivor Backpack &lt;br/&gt;Capacity: 40 items</English>
-			<German>Survivor Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO2_DZE2">
-			<English>Survivor Backpack+</English>
-			<German>Survivor Rucksack+</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO2_DZE2">
-			<English>Survivor Backpack &lt;br/&gt;Capacity: 45 items</English>
-			<German>Survivor Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_CZECH_DZE1">
-			<English>Czech Backpack</English>
-			<French>Sac-à-dos tchèque</French>
-			<Russian>Чешский рюкзак</Russian>
-			<Spanish>Mochila Checa</Spanish>
-			<Czech>Český batoh</Czech>
-			<German>Tschechischer Rucksack</German>
-			<Dutch>Tsjechische Rugzak</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_CZECH_DZE1">
-			<English>Czech Backpack &lt;br/&gt;Capacity: 45 items</English>
-			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 45</French>
-			<Russian>Рюкзак на (45 слотов)</Russian>
-			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;45 litros</Spanish>
-			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 45 litrů</Czech>
-			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_CZECH_DZE2">
-			<English>Czech Backpack+</English>
-			<French>Sac-à-dos tchèque+</French>
-			<Russian>Чешский рюкзак+</Russian>
-			<Spanish>Mochila Checa+</Spanish>
-			<Czech>Český batoh+</Czech>
-			<German>Tschechischer Rucksack+</German>
-			<Dutch>Tsjechische Rugzak+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_CZECH_DZE2">
-			<English>Czech Backpack &lt;br/&gt;Capacity: 50 items</English>
-			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 50</French>
-			<Russian>Рюкзак на (50 слотов)</Russian>
-			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
-			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 50 litrů</Czech>
-			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO3_DZE1">
-			<English>Wanderer Backpack</English>
-			<German>Wanderer Rucksack</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO3_DZE1">
-			<English>Wanderer Backpack &lt;br/&gt;Capacity: 50 items</English>
-			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO3_DZE2">
-			<English>Wanderer Backpack+</English>
-			<German>Wanderer Rucksack+</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO3_DZE2">
-			<English>Wanderer Backpack &lt;br/&gt;Capacity: 55 items</English>
-			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO4_DZE1">
-			<English>Legend Backpack</English>
-			<German>Legend Rucksack</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO4_DZE1">
-			<English>Legend Backpack &lt;br/&gt;Capacity: 55 items</English>
-			<German>Legend Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO4_DZE2">
-			<English>Legend Backpack+</English>
-			<German>Legend Rucksack+</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO4_DZE2">
-			<English>Legend Backpack &lt;br/&gt;Capacity: 60 items</English>
-			<German>Legend Rucksack &lt;br/&gt;Volumen: 60 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE1">
-			<English>Coyote Backpack</English>
-			<French>Sac-à-dos (coyote)</French>
-			<Russian>Рюкзак Сoyote</Russian>
-			<Spanish>Mochila (Coyote)</Spanish>
-			<Czech>Batoh (coyote)</Czech>
-			<German>Kampfrucksack (Coyote)</German>
-			<Dutch>Rugzak (Coyote)</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE1">
-			<English>Coyote Backpack &lt;br/&gt;Capacity: 60 items</English>
-			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 60</French>
-			<Russian>Рюкзак на (60 слотов)</Russian>
-			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;60 litros</Spanish>
-			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 60 litrů</Czech>
-			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 60 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE2">
-			<English>Coyote Backpack+</English>
-			<French>Sac-à-dos (coyote)+</French>
-			<Russian>Рюкзак Сoyote+</Russian>
-			<Spanish>Mochila (Coyote)+</Spanish>
-			<Czech>Batoh (coyote)+</Czech>
-			<German>Kampfrucksack (Coyote)+</German>
-			<Dutch>Rugzak (Coyote)+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE2">
-			<English>Coyote Backpack &lt;br/&gt;Capacity: 65 items</English>
-			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 65</French>
-			<Russian>Рюкзак на (65 слотов)</Russian>
-			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;65 litros</Spanish>
-			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 65 litrů</Czech>
-			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 65 Liter</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_LGB_DZE1">
-			<English>Large Gunbag</English>
-			<German>Große Waffentasche</German>
-			<Russian>Большая оружейная сумка</Russian>
-			<Dutch>Grote Wapenzak</Dutch>
-			<French>Grand Fourreau</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE1">
-			<English>Large Gunbag &lt;br/&gt;Capacity: 65 items</English>
-			<German>Große Waffentasche &lt;br/&gt;Volumen: 65 Liter</German>
-			<Russian>Большая оружейная сумка (65 слотов)</Russian>
-			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 65 liter</Dutch>
-			<French>Grand Fourreau &lt;br/&gt;Taille: 65</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_LGB_DZE2">
-			<English>Large Gunbag+</English>
-			<German>Große Waffentasche+</German>
-			<Russian>Большая оружейная сумка+</Russian>
-			<Dutch>Grote Wapenzak+</Dutch>
-			<French>Grand Fourreau+</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE2">
-			<English>Large Gunbag &lt;br/&gt;Capacity: 70 items</English>
-			<German>Große Waffentasche &lt;br/&gt;Volumen: 70 Liter</German>
-			<Russian>Большая оружейная сумка (70 слотов)</Russian>
-			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 70 liter</Dutch>
-			<French>Grand Fourreau &lt;br/&gt;Taille: 70</French>
-		</Key>	
-		
 		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">

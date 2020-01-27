@@ -153,11 +153,11 @@ weaponsCZ[] =
 	{Loot_WEAPON,		6,		Sa58V_CCO_EP1},
 	{Loot_WEAPON,		6,		Sa58V_RCO_EP1},
 	{Loot_WEAPON,		6,		SA58_RIS_DZ},
-	{Loot_WEAPON,		6,		CZ805_A1_ACR},
-	{Loot_WEAPON,		6,		CZ805_A1_GL_ACR},
-	{Loot_WEAPON,		6,		CZ805_A2_ACR},
-	{Loot_WEAPON,		6,		CZ805_A2_SD_ACR},
-	{Loot_WEAPON,		3,		CZ805_B_GL_ACR}, // 7.62x51, uses SCAR mags.
+	{Loot_WEAPON,		6,		CZ805_A1_DZ},
+	{Loot_WEAPON,		6,		CZ805_A1_GL_DZ},
+	{Loot_WEAPON,		6,		CZ805_A2_DZ},
+	{Loot_WEAPON,		6,		CZ805_A2_SD_DZ},
+	{Loot_WEAPON,		3,		CZ805_B_GL_DZ}, // 7.62x51, uses SCAR mags.
 	
 	// Machine Gun
 	{Loot_WEAPON,		6,		UK59_DZ}
