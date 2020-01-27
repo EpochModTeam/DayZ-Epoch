@@ -273,6 +273,7 @@ class Category_16 {
 class Category_17 {
 	class M4SPR {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class CZ550_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class CZ750_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class M24_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class M24_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {7,"ItemGoldBar"};};
 	// desert camo

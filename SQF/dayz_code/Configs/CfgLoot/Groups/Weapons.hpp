@@ -140,7 +140,7 @@ weaponsCZ[] =
 	{Loot_WEAPON,		1,		CZ_75_SP_01_PHANTOM_SD},
 	
 	// Sniper Rifles
-	{Loot_WEAPON,		3,		CZ_750_S1_ACR},
+	{Loot_WEAPON,		3,		CZ750_DZ},
 	{Loot_WEAPON,		3,		M110_NVG_EP1}, // Technically a US rifle, but the CZ group does not have a DMR type rifle.
 	
 	// Submachine Guns

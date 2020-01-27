@@ -11530,6 +11530,16 @@
 			<German>Armbrust mit Zielfernrohr MTL</German>
 		</Key>
 		
+		<!-- CZ750 -->
+		<Key ID="STR_DZ_WPN_CZ750_NAME">
+			<English>CZ 750 S1M1</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ750_DESC">
+			<English>Sniper rifle &lt;br/&gt;Caliber: 762x51mm</English>
+			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: 762x51mm</Russian>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 762x51mm</German>
+		</Key>		
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
@@ -18118,6 +18128,20 @@
 			<English>20Rnd. 19mm HE.</English>
 			<Russian>20п. 19мм HE</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_10Rnd_762x51_CZ750_NAME">
+			<English>10Rnd. CZ 750 mag.</English>
+			<Russian>10п. CZ 750 маг.</Russian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_10RND_CZ750_DESC">
+			<English>Caliber: 762x51mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: CZ 750</English>
+			<Russian>Калибр: 762x51мм&lt;br/&gt;Патронов: 10&lt;br/&gt;Используется в: CZ 750</Russian>
+			<German>Kaliber: 762x51mm&lt;br/&gt;Schuss: 10&lt;br/&gt;Verwendet in: CZ 750</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_200RND_M240_DESC">
+			<English>Caliber: 762x51mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Jackal L2A1, Jackal MK19</English>
+			<Russian>Калибр: 762x51мм&lt;br/&gt;Патронов: 200&lt;br/&gt;Используется в: Jackal L2A1, Jackal MK19</Russian>
+			<German>Kaliber: 762x51mm&lt;br/&gt;Schuss: 200&lt;br/&gt;Verwendet in: Jackal L2A1, Jackal MK19</German>
+		</Key>		
 		<Key ID="STR_DZ_MAG_SATCHEL_NAME">
 			<English>Satchel Charge</English>
 			<French>Charges en sacoche</French>

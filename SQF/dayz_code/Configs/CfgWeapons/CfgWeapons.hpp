@@ -28,6 +28,7 @@ class CfgWeapons
 	#include "Rifles\KSVK.hpp"
 	#include "Rifles\M4SPR.hpp"
 	#include "Rifles\VSSVintorez.hpp"
+	#include "Rifles\CZ750.hpp"
 	
 	//Ak107
 	#include "Rifles\AK107.hpp"	

@@ -69,7 +69,7 @@ class 100Rnd_762x51_M240: CA_Magazine
 class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 {
 	displayName = "200Rnd. M240";
 	count = 200;
-	descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 200 <br/>Used in: M240, Mk 48 Mod 0";
+	descriptionShort = $STR_DZ_MAG_200RND_M240_DESC;
 };
 
 class 20Rnd_762x51_B_SCAR : CA_Magazine
@@ -97,3 +97,21 @@ class 20Rnd_762x51_SB_SCAR : CA_Magazine
 		COMBINE_MAG
 	};
 };
+
+class 10Rnd_762x51_CZ750 : 5Rnd_762x51_M24
+{
+	count = 10;
+	picture = "\Ca\Weapons_ACR\Data\UI\picture_CZ750_mag_CA.paa";
+	displayName = $STR_DZ_MAG_10Rnd_762x51_CZ750_NAME;
+	descriptionShort = $STR_DZ_MAG_10RND_CZ750_DESC;
+	
+	cartridgeName = "762x51";
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};
+};
+
+
