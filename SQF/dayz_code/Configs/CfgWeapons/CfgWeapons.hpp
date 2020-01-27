@@ -188,9 +188,10 @@ class CfgWeapons
 	#include "Pistols\Makarov.hpp"
 	
 	class UZI_EP1;
+	class UZI_SD_EP1;
 	#include "Pistols\PDW.hpp"
 	
-	class revolver_EP1;
+	class revolver_EP1;	
 	#include "Pistols\Revolver.hpp"
 	
 	#include "Pistols\CZ75.hpp"	

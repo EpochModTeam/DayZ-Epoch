@@ -58,7 +58,7 @@ weaponsUS[] =
 	
 	// Submachine Guns
 	{Loot_WEAPON,		3,		PDW_DZ},
-	{Loot_WEAPON,		3,		UZI_SD_EP1},
+	{Loot_WEAPON,		3,		PDW_SD_DZ},
 	
 	// Assault Rifles
 	{Loot_WEAPON,		6,		M16A2_DZ},
