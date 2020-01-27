@@ -380,6 +380,54 @@ class Mi171Sh_CZ_EP1_DZE: Mi171Sh_CZ_EP1_DZ {
 	};
 };
 
+class Mi17_DES_DZ: Mi17_DZ {
+	displayname = $STR_VEH_NAME_MI17_DESERT;
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body5_co.paa","dayz_epoch_c\skins\mi17\mi17_det2_co.paa"};
+};
+
+class Mi17_DES_DZE: Mi17_DZE {
+	displayname = $STR_VEH_NAME_MI17_DESERT;
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body5_co.paa","dayz_epoch_c\skins\mi17\mi17_det2_co.paa"};
+};
+
+class Mi17_GREEN_DZ: Mi17_DZ {
+	displayname = $STR_VEH_NAME_MI17_GREEN;
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body2_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+};
+
+class Mi17_GREEN_DZE: Mi17_DZE {
+	displayname = $STR_VEH_NAME_MI17_GREEN;
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body2_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+};
+
+class Mi17_BLUE_DZ: Mi17_DZ {
+	displayname = $STR_VEH_NAME_MI17_BLUE;
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body3_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+};
+
+class Mi17_BLUE_DZE: Mi17_DZE {
+	displayname = $STR_VEH_NAME_MI17_BLUE;
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body3_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+};
+
+class Mi17_BLACK_DZ: Mi17_DZ {
+	displayname = $STR_VEH_NAME_MI17_BLACK;
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body4_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+};
+
+class Mi17_BLACK_DZE: Mi17_DZE {
+	displayname = $STR_VEH_NAME_MI17_BLACK;
+	hiddenSelections[] = {"Camo1","Camo2"};
+	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body4_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+};
+
 //Unarmed
 class Mi17_Civilian;
 class Mi17_Civilian_DZ: Mi17_Civilian {

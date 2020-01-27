@@ -8901,6 +8901,26 @@
 			<English>Mi-17 MedEvac (RU)</English>
 			<Russian>Ми-17 MedEvac (RU)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_DESERT">
+			<English>Mi-17 (Desert)</English>
+			<Russian>Ми-17 (Desert)</Russian>
+			<German>Mi-17 (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MI17_GREEN">
+			<English>Mi-17 (Green)</English>
+			<Russian>Ми-17 (Зеленый)</Russian>
+			<German>Mi-17 (Grün)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_MI17_BLUE">
+			<English>Mi-17 (Blue)</English>
+			<Russian>Ми-17 (Синий)</Russian>
+			<German>Mi-17 (Blau)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_BLACK">
+			<English>Mi-17 (Black)</English>
+			<Russian>Ми-17 (черный)</Russian>
+			<German>Mi-17 (Schwarz)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_CH47_GREEN">
 			<English>CH-47F Chinook (Green)</English>
 			<German>CH-47F Chinook (Grün)</German>
@@ -8936,6 +8956,10 @@
 		<Key ID="STR_VEH_NAME_CH53">
 			<English>CH53E Super Stallion</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_GREEN">
+			<English>UH-1H (Green)</English>
+			<German>UH-1H (Grün)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_WOODLAND">
 			<English>UH-1H (Woodland)</English>
 			<Russian>UH-1H (Лесной камуфляж)</Russian>
@@ -8946,6 +8970,26 @@
 			<Russian>UH-1H (Пустынный)</Russian>
 			<German>UH-1H (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_CDF">
+			<English>UH-1H (CDF)</English>
+			<German>UH-1H (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT">
+			<English>UH-1H (Desert, light)</English>
+			<German>UH-1H (Wüstentarn, hell)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1H_BLACK">
+			<English>UH-1H (Black)</English>
+			<German>UH-1H (Schwarz)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1H_GREY">
+			<English>UH-1H (Grey)</English>
+			<German>UH-1H (Grau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1H_SAR">
+			<English>UH-1H (SAR)</English>
+			<German>UH-1H (SAR)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MH60">
 			<English>MH-60S</English>
 		</Key>

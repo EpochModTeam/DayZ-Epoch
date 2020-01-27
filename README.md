@@ -38,6 +38,9 @@ Included Custom Addons
 * 19 Backpack Variants by lennard91 - http://www.armaholic.com/page.php?id=13793
 * Spetsnaz GRU by stagler - http://www.armaholic.com/page.php?id=15693
 * CH-47 Reskins by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=11202
+* RACS UH-1H Huey Reskins by lennard91 - http://www.armaholic.com/page.php?id=11697
+* UH1H Search and Rescue Skin by Sam563 - https://opendayz.net/threads/uh1h-search-and-rescue-skin.22516/
+* Contractor Mi-17 Pack by lennard91 - http://www.armaholic.com/page.php?id=18498
 
 --------------------------
 Included Custom Islands
