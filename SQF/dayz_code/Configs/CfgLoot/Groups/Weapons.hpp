@@ -144,9 +144,9 @@ weaponsCZ[] =
 	{Loot_WEAPON,		3,		M110_NVG_EP1}, // Technically a US rifle, but the CZ group does not have a DMR type rifle.
 	
 	// Submachine Guns
-	{Loot_WEAPON,		7,		Evo_ACR},
-	{Loot_WEAPON,		7,		Evo_mrad_ACR},
-	{Loot_WEAPON,		5,		evo_sd_ACR},
+	{Loot_WEAPON,		7,		Scorpion_Evo3_DZ},
+	{Loot_WEAPON,		7,		Scorpion_Evo3_CCO_DZ},
+	{Loot_WEAPON,		5,		Scorpion_Evo3_CCO_SD_DZ},
 	
 	// Assault Rifles
 	{Loot_WEAPON,		6,		SA58_DZ},

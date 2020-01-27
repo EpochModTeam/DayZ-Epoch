@@ -11539,6 +11539,7 @@
 			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: 7.62x51mm</Russian>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 		</Key>		
+		
 		<!-- CZ75 -->
 		<Key ID="STR_DZ_WPN_CZ75P_NAME">
 			<English>CZ 75P</English>
@@ -11555,7 +11556,40 @@
 		<Key ID="STR_DZ_WPN_CZ75_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm</German>
-		</Key>			
+		</Key>	
+		
+		<!-- Scorpion Evo 3 -->
+		<Key ID="STR_DZ_WPN_SC_EVO3_NAME">
+			<English>Scorpion Evo 3</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SC_EVO3_CCO_NAME">
+			<English>Scorpion Evo 3 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SC_EVO3_CCO_SD_NAME">
+			<English>Scorpion Evo 3 CCO SD</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_SC_EVO3_DESC">
+          <German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
+          <English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
+          <Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19 mm</Italian>
+          <Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19 mm</Spanish>
+          <French>Pistolet-mitrailleur &lt;br/&gt;Calibre : 9x19 mm</French>
+          <Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm</Czech>
+          <Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм</Russian>
+          <Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm </Polish>
+          <Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_SC_EVO3_SD_DESC">
+          <German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
+          <English>Silenced submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
+          <Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 9x19 mm</Italian>
+          <Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 9x19 mm</Spanish>
+          <French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre : 9x19 mm</French>
+          <Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
+          <Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 9х19 мм</Russian>
+          <Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm </Polish>
+          <Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+        </Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -11839,8 +11873,30 @@
 			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
 			<Czech>Ráže: 12&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
 			<German>Kaliber 12 Schrotmunition&lt;br/&gt;8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
-		</Key>
-	
+		</Key>		
+        <Key ID="STR_DZ_MAG_30RND_MP5_DESC">
+          <German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: MP5, Scorpion Evo 3</German>
+          <English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5, Scorpion Evo 3</English>
+          <Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5, Scorpion Evo 3</Italian>
+          <Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5, Scorpion Evo 3 </Spanish>
+          <French>Calibre : 9x19 mm Parabellum &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : MP5, Scorpion Evo 3</French>
+          <Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5, Scorpion Evo 3 SD</Czech>
+          <Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5, Scorpion Evo 3</Russian>
+          <Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5, Scorpion Evo 3</Polish>
+          <Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5, Scorpion Evo 3</Hungarian>
+        </Key>			
+        <Key ID="STR_DZ_MAG_30RND_MP5SD_DESC">
+          <German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: MP5SD, Scorpion Evo 3 SD</German>
+          <English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5SD, Scorpion Evo 3 SD</English>
+          <Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5SD, Scorpion Evo 3 SD</Italian>
+          <Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5SD, Scorpion Evo 3 SD</Spanish>
+          <French>Calibre : 9x19 mm Parabellum &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : MP5SD, Scorpion Evo 3 SD</French>
+          <Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5SD, Scorpion Evo 3 SD</Czech>
+          <Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5SD, Scorpion Evo 3 SD</Russian>
+          <Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5SD, Scorpion Evo 3 SD</Polish>
+          <Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5SD, Scorpion Evo 3 SD</Hungarian>
+        </Key>	
+		
 		<!-- **** ATTACHMENTS **** -->
 		
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">
