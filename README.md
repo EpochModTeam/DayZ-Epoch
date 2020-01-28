@@ -41,6 +41,7 @@ Included Custom Addons
 * RACS UH-1H Huey Reskins by lennard91 - http://www.armaholic.com/page.php?id=11697
 * UH1H Search and Rescue Skin by Sam563 - https://opendayz.net/threads/uh1h-search-and-rescue-skin.22516/
 * Contractor Mi-17 Pack by lennard91 - http://www.armaholic.com/page.php?id=18498
+* "Heckler & Koch" MP7 by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=8379
 
 --------------------------
 Included Custom Islands

@@ -362,6 +362,26 @@ class CfgAmmo
 		visiblefire = 16;
 	};
 	
+	//MP7
+	class B_46x30_Ball: BulletBase
+	{
+		cartridge = "FxCartridge_Mp7";
+		cost = 5;
+		typicalSpeed = 700;
+		airFriction = -0.001425;
+		hit = 8.5;
+	};
+	class B_46x30_SD_Ball: BulletBase
+	{
+		cartridge = "FxCartridge_Mp7";
+		visibleFire = 0.065;
+		audibleFire = 0.065;
+		cost = 5;
+		typicalSpeed = 650;
+		airFriction = -0.0012;
+		hit = 7.0;
+	};
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

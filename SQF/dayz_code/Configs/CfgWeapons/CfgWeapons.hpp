@@ -144,6 +144,7 @@ class CfgWeapons
 	class MP5SD;
 	#include "Rifles\MP5.hpp"
 	#include "Rifles\CZScorpion.hpp"
+	#include "Rifles\MP7.hpp"
 	
 	class M16A2;
 	class M16A2GL;

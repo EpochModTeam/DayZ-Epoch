@@ -7,4 +7,6 @@ class CfgRecoils
 	Mosin_Nagant_CarbineRecoil[] = {0,0,0,0.0500,0.12,0.3,0.1000,0,0};
 	Mosin_NagantRecoilProne[] = {0,0,0,0.0500,0.04500,0.1,0.1000,0,0};
 	Mosin_Nagant_CarbineRecoilProne[] = {0,0,0,0.0500,0.12,0.3,0.1000,0,0};
+	
+	MP7Recoil[] = {0,0.005,0.005,0.005,0.007,0.006,0.09,0.002,-0.0015,0.1,0,0};
 };

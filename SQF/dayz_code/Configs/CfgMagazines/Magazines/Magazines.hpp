@@ -14,7 +14,8 @@
 #include "762x39.hpp"		//AK47, SA58
 #include "762x51.hpp"		//M240, FN FAL, DMR, M24
 #include "762x54r.hpp"		//PK, SVD, Mosin
-#include "Misc.hpp"			//CZ550, Lee-Enfield, Winchester 1866
+#include "46x30.hpp"		//MP7
+#include "Misc.hpp"			//CZ550, Lee-Enfield
 #include "Shotgun.hpp"
 #include "Arrows.hpp"
 #include "LauncherAmmo.hpp"

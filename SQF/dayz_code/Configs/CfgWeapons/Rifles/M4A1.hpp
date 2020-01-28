@@ -1568,15 +1568,8 @@ class M4A1_GL_ACOG_SD_MFL_DZ : M4A1_GL_SD_MFL_DZ
 
 //ice apo resistance mod m4
 class ice_apo_weapons_M4_DZE : M4A1 {
-	class FlashLight {
-		color[] = {0.9, 0.9, 0.7, 0.9};
-		ambient[] = {0.1, 0.1, 0.1, 1.0};
-		position = "flash dir";
-		direction = "flash";
-		angle = 30;
-		scale[] = {1, 1, 0.5};
-		brightness = 0.1;
-	};
+	M4A1_FLASHLIGHT;
+	
 	scope = public;
 	model = "\ice_apo_weapons\M4_ironsight";
 	picture = "\ice_apo_weapons\Data\m4a1_ca.paa";

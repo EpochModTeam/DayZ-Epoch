@@ -52,6 +52,30 @@ class Category_14 {
 	class Scorpion_Evo3_CCO_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {22,"ItemSilverBar10oz"};};	
 	class Bizon_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class Bizon_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class MP7_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class MP7_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};
+	class MP7_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class MP7_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
+	class MP7_SD_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {9,"ItemGoldBar"};};
+	class MP7_SD_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
+	class MP7_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class MP7_CCO_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};
+	class MP7_CCO_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
+	class MP7_CCO_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
+	class MP7_CCO_SD_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {11,"ItemGoldBar"};};
+	class MP7_CCO_SD_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
+	class MP7_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class MP7_Holo_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};
+	class MP7_Holo_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
+	class MP7_Holo_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
+	class MP7_Holo_SD_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {11,"ItemGoldBar"};};
+	class MP7_Holo_SD_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
+	class MP7_ACOG_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class MP7_ACOG_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};
+	class MP7_ACOG_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
+	class MP7_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
+	class MP7_ACOG_SD_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {11,"ItemGoldBar"};};
+	class MP7_ACOG_SD_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
 };
 
 //Single-shot/Shotguns

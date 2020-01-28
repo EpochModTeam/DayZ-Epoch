@@ -589,6 +589,17 @@ class CfgVehicles
 		};
 		*/
 	};
+	class ThingEffect;
+	class FxCartridge_Mp7: ThingEffect
+	{
+		model = "\C1987_Mp7\cartridge\46_30.p3d";
+		displayName = "4.6x30mm Cartridge";
+		submerged = 0;
+		submergeSpeed = 0;
+		timeToLive = 5;
+		disappearAtContact = 1;
+		airRotation = 1.0;
+	};
 };
 /*
 class CfgNonAIVehicles { //IN CfgNonAIVehicles.hpp

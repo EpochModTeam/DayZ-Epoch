@@ -7004,7 +7004,7 @@
 		</Key>
 		<Key ID="str_player_death_killed">
 			<English>%1 was killed by %2 with %3 from %4m</English>
-			<German>%1 wurde von %2 mit einer %3 aus %4m Entfernung getötet.</German>
+			<German>%1 wurde von %2 mit %3 aus %4m Entfernung getötet.</German>
 			<Russian>%1 был убит игроком %2 с %3 с расстояния %4м</Russian>
 		</Key>
 <!--		
@@ -11632,6 +11632,7 @@
 			<English>This M4 rifle is in a very bad shape.</English>
 			<German>Dieses M4 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
 		</Key>	
+		
 		<!-- AK107 -->
 		<Key ID="STR_DZ_WPN_AK107_NAME">
 			<English>AK-107</English>
@@ -11656,7 +11657,135 @@
 		<Key ID="STR_DZ_WPN_AK107_GL_PSO1_NAME">
 			<English>AK-107 GP-25 PSO-1</English>
 			<Russian>АК-107 ГП-25 ПСО-1</Russian>
+		</Key>	
+
+		<!-- MP7 -->
+		<Key ID="STR_DZ_WPN_MP7_NAME">
+			<English>MP7</English>
 		</Key>		
+		<Key ID="STR_DZ_WPN_MP7_FL_NAME">
+			<English>MP7 FL</English>
+			<German>MP7 TL</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MP7_MFL_NAME">
+			<English>MP7 MFL</English>
+			<German>MP7 MTL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_SD_NAME">
+			<English>MP7 SD</English>
+			<Russian>MP7 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_SD_FL_NAME">
+			<English>MP7 SD FL</English>
+			<German>MP7 SD TL</German>
+			<Russian>MP7 ПБС FL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_SD_MFL_NAME">
+			<English>MP7 SD MFL</English>
+			<German>MP7 SD MTL</German>
+			<Russian>MP7 ПБС MFL</Russian>
+		</Key>
+		<!-- MP7 CCO-->
+		<Key ID="STR_DZ_WPN_MP7_CCO_NAME">
+			<English>MP7 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_FL_NAME">
+			<English>MP7 CCO FL</English>
+			<German>MP7 CCO TL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_MFL_NAME">
+			<English>MP7 CCO MFL</English>
+			<German>MP7 CCO MTL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_SD_NAME">
+			<English>MP7 CCO SD</English>
+			<Russian>MP7 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_SD_FL_NAME">
+			<English>MP7 CCO SD FL</English>
+			<German>MP7 CCO SD TL</German>
+			<Russian>MP7 CCO ПБС FL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_SD_MFL_NAME">
+			<English>MP7 CCO SD MFL</English>
+			<German>MP7 CCO SD MTL</German>
+			<Russian>MP7 CCO ПБС MFL</Russian>
+		</Key>
+		<!-- MP7 Holo -->
+		<Key ID="STR_DZ_WPN_MP7_HOLO_NAME">
+			<English>MP7 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_FL_NAME">
+			<English>MP7 Holo FL</English>
+			<German>MP7 Holo TL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_MFL_NAME">
+			<English>MP7 Holo MFL</English>
+			<German>MP7 Holo MTL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_SD_NAME">
+			<English>MP7 Holo SD</English>
+			<Russian>MP7 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_SD_FL_NAME">
+			<English>MP7 Holo SD FL</English>
+			<German>MP7 Holo SD TL</German>
+			<Russian>MP7 Holo ПБС FL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_SD_MFL_NAME">
+			<English>MP7 Holo SD MFL</English>
+			<German>MP7 Holo SD MTL</German>
+			<Russian>MP7 Holo ПБС MFL</Russian>
+		</Key>
+		<!-- MP7 ACOG -->
+		<Key ID="STR_DZ_WPN_MP7_ACOG_NAME">
+			<English>MP7 ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_FL_NAME">
+			<English>MP7 ACOG FL</English>
+			<German>MP7 ACOG TL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_MFL_NAME">
+			<English>MP7 ACOG MFL</English>
+			<German>MP7 ACOG MTL</German>
+			<Russian>MP7 ACOG MFL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_SD_NAME">
+			<English>MP7 ACOG SD</English>
+			<Russian>MP7 ACOG ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_SD_FL_NAME">
+			<English>MP7 ACOG SD FL</English>
+			<German>MP7 ACOG SD TL</German>
+			<Russian>MP7 ACOG ПБС FL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_SD_MFL_NAME">
+			<English>MP7 ACOG SD MFL</English>
+			<German>MP7 ACOG SD MTL</German>
+			<Russian>MP7 ACOG ПБС MFL</Russian>
+		</Key>	
+        <Key ID="STR_DZ_WPN_MP7_DESC">
+          <German>Maschinenpistole &lt;br/&gt;Kaliber: 4.6x30mm</German>
+          <English>Submachine gun  &lt;br/&gt;Caliber: 4.6x30mm</English>
+          <Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 4.6x30mm</Italian>
+          <Spanish>Metralleta  &lt;br/&gt;Calibre: 4.6x30mm</Spanish>
+          <French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 4.6x30mm</French>
+          <Czech>Samopal &lt;br/&gt;Kalibr: 4.6x30mm</Czech>
+          <Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм</Russian>
+          <Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 4.6x30mm </Polish>
+          <Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_MP7_SD_DESC">
+          <German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 4.6x30mm</German>
+          <English>Silenced submachine gun  &lt;br/&gt;Caliber: 4.6x30mm</English>
+          <Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 4.6x30mm</Italian>
+          <Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 4.6x30mm</Spanish>
+          <French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 4.6x30mm</French>
+          <Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 4.6x30mm</Czech>
+          <Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 9х19 мм</Russian>
+          <Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 4.6x30mm </Polish>
+          <Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm</Hungarian>
+        </Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -12021,7 +12150,41 @@
         <Czech>Kalibr: 7.62x51mm NATO&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Mk 17, M110, CZ 805B</Czech>
         <English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</English>
         <Japanese>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</Japanese>
-      </Key>		
+      </Key>	
+	  <Key ID="STR_DZ_MAG_40RND_MP7_NAME">
+		<English>40Rnd. MP7 mag.</English>
+		<Russian>40п. MP7 маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_40RND_MP7SD_NAME">
+		<English>40Rnd. MP7 SD mag.</English>
+		<Russian>40п. MP7 SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_40RND_MP7_DESC">
+        <Chinese>Caliber: 4.6x30mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7</Chinese>
+        <French>Calibre : 4.6x30mm&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec : MP7</French>
+        <Spanish>Calibre: 4.6x30mm&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: MP7</Spanish>
+        <Italian>Calibro: 4.6x30mm&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: MP7</Italian>
+        <Hungarian>Caliber: 4.6x30mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7</Hungarian>
+        <Polish>Kaliber: 4.6x30mm&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: MP7</Polish>
+        <Russian>Патрон: 4.6x30 мм&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: MP7</Russian>
+        <German>Kaliber: 4.6x30mm&lt;br/&gt;Patronen: 40&lt;br/&gt;Eingesetzt in: MP7</German>
+        <Czech>Kalibr: 4.6x30mm&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7</Czech>
+        <English>Caliber: 4.6x30mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7</English>
+        <Japanese>Caliber: 4.6x30mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7</Japanese>
+      </Key>
+      <Key ID="STR_DZ_MAG_40RND_MP7SD_DESC">
+        <Chinese>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</Chinese>
+        <French>Calibre : 4.6x30mm SD&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec : MP7 SD</French>
+        <Spanish>Calibre: 4.6x30mm SD&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: MP7 SD</Spanish>
+        <Italian>Calibro: 4.6x30mm SD&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: MP7 SD</Italian>
+        <Hungarian>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</Hungarian>
+        <Polish>Kaliber: 4.6x30mm SD&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: MP7 SD</Polish>
+        <Russian>Патрон: 4.6x30 мм SD&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: MP7 SD</Russian>
+        <German>Kaliber: 4.6x30mm SD&lt;br/&gt;Patronen: 40&lt;br/&gt;Eingesetzt in: MP7 SD</German>
+        <Czech>Kalibr: 4.6x30mm SD&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7 SD</Czech>
+        <English>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</English>
+        <Japanese>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</Japanese>
+      </Key>	  
 		
 		<!-- **** ATTACHMENTS **** -->
 		
