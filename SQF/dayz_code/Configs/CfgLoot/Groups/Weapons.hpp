@@ -6,6 +6,8 @@ weaponsRU[] =
 	// Pistols
 	{Loot_WEAPON,		2,		Makarov_DZ},
 	{Loot_WEAPON,		1,		Makarov_SD_DZ},
+	{Loot_WEAPON,		2,		P99_Silver_DZ},
+	{Loot_WEAPON,		1,		P99_Silver_SD_DZ},			
 	
 	// Bolt action rifles and shotguns
 	{Loot_WEAPON,		5,		Saiga12K},
@@ -42,6 +44,8 @@ weaponsUS[] =
 	// Pistols
 	{Loot_WEAPON,		1,		M9_DZ},
 	{Loot_WEAPON,		2,		M9_SD_DZ},
+	{Loot_WEAPON,		2,		P99_Green_DZ},
+	{Loot_WEAPON,		1,		P99_Green_SD_DZ},		
 	
 	// Bolt action rifles and shotguns
 	{Loot_WEAPON,		5,		Remington870_DZ},
@@ -82,6 +86,8 @@ weaponsEU[] =
 	// Pistols
 	{Loot_WEAPON,		2,		G17_DZ},
 	{Loot_WEAPON,		1,		G17_SD_DZ},
+	{Loot_WEAPON,		2,		P99_Black_DZ},
+	{Loot_WEAPON,		1,		P99_Black_SD_DZ},	
 	
 	// Bolt action rifles and shotguns
 	{Loot_WEAPON,		5,		LeeEnfield_DZ},

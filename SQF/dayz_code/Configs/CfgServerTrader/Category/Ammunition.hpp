@@ -10,6 +10,8 @@ class Category_19 {
 	class 7Rnd_45ACP_1911 {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class 8Rnd_9x18_Makarov {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class 8Rnd_9x18_MakarovSD {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class 15Rnd_10x22_p99 {type = "trade_items";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
+	class 15Rnd_10x22_p99_sd {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};		
 };
 
 //Submachine Gun Ammo

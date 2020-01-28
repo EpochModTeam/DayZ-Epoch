@@ -362,6 +362,27 @@ class CfgAmmo
 		visiblefire = 16;
 	};
 	
+	//P99
+	class B_10x22_Ball: BulletBase
+	{
+		cartridge = "FxCartridge_Small";
+		cost = 5;
+		typicalSpeed = 344;
+		airFriction = -0.0017;
+		hit = 8.5;
+	};
+	class B_10x22_SD: BulletBase
+	{
+		cartridge = "FxCartridge_Small";
+		visibleFire = 0.035;
+		audibleFire = 0.035;
+		visibleFireTime = 2;
+		cost = 1;
+		typicalSpeed = 265;
+		airFriction = -0.000955;
+		hit = 7.5;
+	};
+	
 	//MP7
 	class B_46x30_Ball: BulletBase
 	{

@@ -38,6 +38,12 @@ class Category_13 {
 	class G17_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {22,"ItemSilverBar10oz"};};
 	class G17_SD_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {32,"ItemSilverBar10oz"};};
 	class G17_SD_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {42,"ItemSilverBar10oz"};};
+	class P99_Black_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class P99_Black_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {25,"ItemSilverBar10oz"};};	
+	class P99_Green_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class P99_Green_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {25,"ItemSilverBar10oz"};};	
+	class P99_Silver_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class P99_Silver_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {25,"ItemSilverBar10oz"};};		
 };
 
 //Submachine Guns

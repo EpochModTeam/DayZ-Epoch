@@ -11785,8 +11785,26 @@
           <Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 9х19 мм</Russian>
           <Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 4.6x30mm </Polish>
           <Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm</Hungarian>
-        </Key>		
-		
+        </Key>	
+
+		<!-- P99 -->		
+
+		<Key ID="STR_DZ_WPN_P99_NAME">
+			<English>P99</English>
+			<German>P99</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_P99SD_NAME">
+			<English>P99 SD</English>
+			<German>P99 SD</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_P99_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 10x22mm</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 10x22mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_P99SD_DESC">
+			<English>Silenced Semi-automatic Pistol &lt;br/&gt;Caliber: 10x22mm SD</English>
+			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: 10x22mm SD</German>
+		</Key>			
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
@@ -12184,6 +12202,40 @@
         <Czech>Kalibr: 4.6x30mm SD&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7 SD</Czech>
         <English>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</English>
         <Japanese>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</Japanese>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_15RND_P99_NAME">
+		<English>15Rnd. P99 mag.</English>
+		<Russian>15п. P99 маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_15RND_P99SD_NAME">
+		<English>15Rnd. P99 SD mag.</English>
+		<Russian>15п. P99 SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_15RND_P99_DESC">
+        <Chinese>Caliber: 10x22mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99</Chinese>
+        <French>Calibre : 10x22mm&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec : P99</French>
+        <Spanish>Calibre: 10x22mm&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: P99</Spanish>
+        <Italian>Calibro: 10x22mm&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: P99</Italian>
+        <Hungarian>Caliber: 10x22mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99</Hungarian>
+        <Polish>Kaliber: 10x22mm&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: P99</Polish>
+        <Russian>Патрон: 10x22 мм&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: P99</Russian>
+        <German>Kaliber: 10x22mm&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: P99</German>
+        <Czech>Kalibr: 10x22mm&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99</Czech>
+        <English>Caliber: 10x22mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99</English>
+        <Japanese>Caliber: 10x22mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99</Japanese>
+      </Key>
+      <Key ID="STR_DZ_MAG_15RND_P99SD_DESC">
+        <Chinese>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</Chinese>
+        <French>Calibre : 10x22mm SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec : P99 SD</French>
+        <Spanish>Calibre: 10x22mm SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: P99 SD</Spanish>
+        <Italian>Calibro: 10x22mm SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: P99 SD</Italian>
+        <Hungarian>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</Hungarian>
+        <Polish>Kaliber: 10x22mm SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: P99 SD</Polish>
+        <Russian>Патрон: 10x22 мм SD&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: P99 SD</Russian>
+        <German>Kaliber: 10x22mm SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: P99 SD</German>
+        <Czech>Kalibr: 10x22mm SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99 SD</Czech>
+        <English>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</English>
+        <Japanese>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</Japanese>
       </Key>	  
 		
 		<!-- **** ATTACHMENTS **** -->

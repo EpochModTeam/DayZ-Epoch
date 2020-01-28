@@ -180,6 +180,7 @@ class CfgWeapons
 	class M9;
 	class M9SD;
 	#include "Pistols\M9.hpp"
+	#include "Pistols\P99.hpp"
 	
 	class glock17_EP1;
 	#include "Pistols\G17.hpp"

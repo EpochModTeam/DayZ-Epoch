@@ -8,6 +8,7 @@
 
 #include "9x18.hpp"			//Makarov
 #include "9x19.hpp"			//MP5, PDW, Bizon, M9, G17
+#include "10x22.hpp"		//P99
 #include "45ACP.hpp"		//Colt M1911, Revolver
 #include "545x39.hpp"		//AK74, RPK74
 #include "556x45.hpp"		//M249, STANAG, G36
