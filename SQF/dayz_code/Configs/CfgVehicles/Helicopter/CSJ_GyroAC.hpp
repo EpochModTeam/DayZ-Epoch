@@ -257,6 +257,7 @@ class CSJ_GyroC_DZ: CSJ_GyroC
 	vehicleClass = "DayZ Epoch Vehicles";
 	transportMaxMagazines = 3;
 	transportMaxWeapons = 1;
+	fuelCapacity = 200;
 };
 
 class CSJ_GyroC_DZE: CSJ_GyroC_DZ
