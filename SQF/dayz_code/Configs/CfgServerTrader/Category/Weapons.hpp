@@ -14,6 +14,7 @@ class Category_12 {
 	class Attachment_ACOG {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	class Attachment_PSO1 {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class Attachment_Sup9 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class Attachment_Sup10 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class Attachment_Sup545 {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class Attachment_Sup556 {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class Attachment_GP25 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};	

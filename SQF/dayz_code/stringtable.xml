@@ -12311,6 +12311,17 @@
 			<Czech>Tlumič, používá se pro vylepšení pušky Bizon.</Czech>
 			<German>Ein Schalldämpfer, welcher an eine Bizon angebracht werden kann.</German>
 		</Key>
+		<!-- 10mm Suppressor P99-->
+		<Key ID="STR_DZ_ATT_SUP10_NAME">
+			<English>[A] 10mm Suppressor</English>
+			<Russian>[М] 10мм глушитель</Russian>
+			<German>[E] 10mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP10_DESC">
+			<English>10mm Sound suppressor</English>
+			<Russian>ПБС для калибра 10мм</Russian>
+			<German>10mm Schalldämpfer</German>
+		</Key>		
 		
 		<!-- 5.56mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP556_NAME">

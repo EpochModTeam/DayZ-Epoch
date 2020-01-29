@@ -17,6 +17,7 @@
 #include "GP25.hpp"
 
 #include "Sup9.hpp"
+#include "Sup10.hpp"
 #include "Sup556.hpp"
 #include "Sup545.hpp"
 #include "SupMakarov.hpp"

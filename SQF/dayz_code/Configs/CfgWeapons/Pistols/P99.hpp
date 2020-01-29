@@ -15,7 +15,7 @@ class P99_Black_DZ: M9
 	
 	class Attachments
 	{
-		Attachment_Sup9 = "P99_Black_SD_DZ";
+		Attachment_Sup10 = "P99_Black_SD_DZ";
 	};	
 };
 
@@ -37,7 +37,7 @@ class P99_Black_SD_DZ: M9SD
 		class RemoveSuppressor
 		{
 			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup9',_id,'P99_Black_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Sup10',_id,'P99_Black_DZ'] call player_removeAttachment";
 		};
 	};	
 };
@@ -50,7 +50,7 @@ class P99_Green_DZ: P99_Black_DZ
 
 	class Attachments
 	{
-		Attachment_Sup9 = "P99_Green_SD_DZ";
+		Attachment_Sup10 = "P99_Green_SD_DZ";
 	};
 };
 
@@ -65,7 +65,7 @@ class P99_Green_SD_DZ: P99_Black_SD_DZ
 		class RemoveSuppressor
 		{
 			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup9',_id,'P99_Green_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Sup10',_id,'P99_Green_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -78,7 +78,7 @@ class P99_Silver_DZ: P99_Black_DZ
 	
 	class Attachments
 	{
-		Attachment_Sup9 = "P99_Silver_SD_DZ";
+		Attachment_Sup10 = "P99_Silver_SD_DZ";
 	};
 
 };
@@ -94,7 +94,7 @@ class P99_Silver_SD_DZ: P99_Black_SD_DZ
 		class RemoveSuppressor
 		{
 			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup9',_id,'P99_Silver_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Sup10',_id,'P99_Silver_DZ'] call player_removeAttachment";
 		};
 	};
 };

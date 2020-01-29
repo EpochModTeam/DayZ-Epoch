@@ -14,6 +14,7 @@ AttachmentsRU[] =
 	{Loot_MAGAZINE,		1,		Attachment_Kobra},
 	{Loot_MAGAZINE,		1,		Attachment_PSO1},
 	{Loot_MAGAZINE,		1,		Attachment_Sup9},
+	{Loot_MAGAZINE,		1,		Attachment_Sup10},		
 	{Loot_MAGAZINE,		1,		Attachment_Sup545},
 	{Loot_MAGAZINE,		1,		Attachment_GP25},
 	{Loot_MAGAZINE,		1,		Attachment_Ghillie}
@@ -28,7 +29,8 @@ AttachmentsUS[] =
 	{Loot_MAGAZINE,		1,		Attachment_Ghillie},
 	{Loot_MAGAZINE,		1,		Attachment_M203},
 	{Loot_MAGAZINE,		1,		Attachment_Sup556},
-	{Loot_MAGAZINE,		1,		Attachment_Sup9}
+	{Loot_MAGAZINE,		1,		Attachment_Sup9},
+	{Loot_MAGAZINE,		1,		Attachment_Sup10}
 };
 
 // Attachments for European Guns
@@ -39,6 +41,7 @@ AttachmentsEU[] =
 	{Loot_MAGAZINE,		1,		Attachment_ACOG},
 	{Loot_MAGAZINE,		1,		Attachment_Sup556},
 	{Loot_MAGAZINE,		3,		Attachment_Sup9},
+	{Loot_MAGAZINE,		3,		Attachment_Sup10},	
 	{Loot_MAGAZINE,		1,		Attachment_MFL},
 	{Loot_MAGAZINE,		3,		Attachment_MFL_Pist} // G17 only
 };
