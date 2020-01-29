@@ -1,6 +1,7 @@
 class 20Rnd_762x51_FNFAL : CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\fnFal_mag.p3d";
+	picture = "\dayz_epoch_c\icons\magazines\m_fnFal_ca.paa";
 	displayName = $STR_DZ_MAG_20RND_762X51_FNFAL_NAME;
 	
 	cartridgeName = "762x51";
@@ -75,6 +76,7 @@ class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 {
 class 20Rnd_762x51_B_SCAR : CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\mk17_mag.p3d";
+	picture = "\dayz_epoch_c\icons\magazines\m_mk17_ca.paa";
 	displayName = $STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_MK17_DESC;
 	
@@ -89,6 +91,7 @@ class 20Rnd_762x51_B_SCAR : CA_Magazine
 class 20Rnd_762x51_SB_SCAR : CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\mk17_mag.p3d";
+	picture = "\dayz_epoch_c\icons\magazines\m_mk17sd_ca.paa";
 	displayName = $STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME;
 	
 	cartridgeName = "762x51_SD";
