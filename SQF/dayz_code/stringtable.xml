@@ -11611,11 +11611,16 @@
 			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
 		</Key>
+		<Key ID="STR_DZ_WPN_CZ_805A_SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
+		</Key>		
 		<Key ID="STR_DZ_WPN_CZ_805B_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-		</Key>		
+		</Key>	
 		
+		<!-- Rusty Weapons -->
 		<Key ID="STR_DZE_WPN_M16RUSTY_NAME">
 			<English>M16A2 (Rusty)</English>
 			<German>M16A2 (Rostig)</German>
@@ -11787,15 +11792,12 @@
           <Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm</Hungarian>
         </Key>	
 
-		<!-- P99 -->		
-
+		<!-- P99 -->	
 		<Key ID="STR_DZ_WPN_P99_NAME">
 			<English>P99</English>
-			<German>P99</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_P99SD_NAME">
 			<English>P99 SD</English>
-			<German>P99 SD</German>
 		</Key>		
 		<Key ID="STR_DZ_WPN_P99_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 10x22mm</English>
@@ -11804,7 +11806,28 @@
 		<Key ID="STR_DZ_WPN_P99SD_DESC">
 			<English>Silenced Semi-automatic Pistol &lt;br/&gt;Caliber: 10x22mm SD</English>
 			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: 10x22mm SD</German>
+		</Key>		
+	
+		<!-- Famas -->
+		<Key ID="STR_DZ_WPN_FAMAS_NAME">
+			<English>Famas</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_FAMAS_COO_NAME">
+			<English>Famas CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_FAMAS_HOLO_NAME">
+			<English>Famas Holo</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_FAMAS_SD_NAME">
+			<English>Famas SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_FAMAS_COO_SD_NAME">
+			<English>Famas CCO SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_FAMAS_HOLO_SD_NAME">
+			<English>Famas Holo SD</English>
 		</Key>			
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">

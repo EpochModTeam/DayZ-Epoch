@@ -77,10 +77,13 @@ class CfgWeapons
 	class M4A1;
 	class M4A1_AIM_SD_camo;
 	#include "Rifles\M4A1.hpp"
+	//Famas
+	#include "Rifles\Famas.hpp"	
 	
 	class M14_EP1;
 	#include "Rifles\M14.hpp"
 	
+	//CZ 805
 	#include "Rifles\CZ805.hpp"
 	
 	class M24 : Rifle

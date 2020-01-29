@@ -43,6 +43,7 @@ Included Custom Addons
 * Contractor Mi-17 Pack by lennard91 - http://www.armaholic.com/page.php?id=18498
 * "Heckler & Koch" MP7 by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=8379
 * P99 Projekt by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=9985
+* FAMAS Pack by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=8867
 
 --------------------------
 Included Custom Islands

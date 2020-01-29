@@ -19,7 +19,7 @@ class CZ805_A2_DZ: CZ805_A2_ACR {
 class CZ805_A2_SD_ACR;
 class CZ805_A2_SD_DZ: CZ805_A2_SD_ACR {
 	displayName = $STR_DZ_WPN_CZ_805A2_SD_NAME;
-	descriptionShort = $STR_DZ_WPN_CZ_805A_DESC;	
+	descriptionShort = $STR_DZ_WPN_CZ_805A_SD_DESC;	
 };
 
 class CZ805_B_GL_ACR;
