@@ -16,6 +16,7 @@
 #include "762x51.hpp"		//M240, FN FAL, DMR, M24
 #include "762x54r.hpp"		//PK, SVD, Mosin
 #include "46x30.hpp"		//MP7
+#include "680x43.hpp"		//ACR
 #include "Misc.hpp"			//CZ550, Lee-Enfield
 #include "Shotgun.hpp"
 #include "Arrows.hpp"

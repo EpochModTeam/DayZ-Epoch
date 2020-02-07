@@ -113,6 +113,8 @@ AmmoUS[] =
 	// Assault rifles
 	{Loot_MAGAZINE,		10,		30Rnd_556x45_Stanag},
 	{Loot_MAGAZINE,		8,		30Rnd_556x45_StanagSD},
+	{Loot_MAGAZINE,		6,		ACR_30Rnd_680x43},
+	{Loot_MAGAZINE,		4,		ACR_30Rnd_680x43_SD},	
 	
 	// Sniper rifles
 	{Loot_MAGAZINE,		7,		5Rnd_762x51_M24},

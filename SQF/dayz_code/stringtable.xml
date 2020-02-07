@@ -11826,7 +11826,105 @@
 		</Key>	
 		<Key ID="STR_DZ_WPN_FAMAS_HOLO_SD_NAME">
 			<English>Famas Holo SD</English>
+		</Key>	
+
+		<!-- ACR -->	
+		<Key ID="STR_DZ_WPN_ACR_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_NV_DESC">
+			<English>Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Sturmgewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_NV_SD_DESC">
+			<English>Silenced Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Schallgedämpftes Sturmgewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_TWS_DESC">
+			<English>Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Sturmgewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_TWS_SD_DESC">
+			<English>Silenced Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Schallgedämpftes Sturmgewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_NAME">
+			<English>ACR</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_COO_NAME">
+			<English>ACR CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_HOLO_NAME">
+			<English>ACR Holo</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_ACOG_NAME">
+			<English>ACR ACOG</English>
 		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_GL_NAME">
+			<English>ACR GL</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_TWS_NAME">
+			<English>ACR TWS</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_TWS_SD_NAME">
+			<English>ACR TWS SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_TWS_GL_NAME">
+			<English>ACR TWS GL</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_TWS_GL_SD_NAME">
+			<English>ACR TWS GL SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_CCO_GL_NAME">
+			<English>ACR CCO GL</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_HOLO_GL_NAME">
+			<English>ACR Holo GL</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_SD_NAME">
+			<English>ACR SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_COO_SD_NAME">
+			<English>ACR CCO SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_ACOG_SD_NAME">
+			<English>ACR ACOG SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_ACOG_GL_NAME">
+			<English>ACR ACOG GL</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_ACOG_GL_SD_NAME">
+			<English>ACR ACOG GL SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_GL_SD_NAME">
+			<English>ACR GL SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_CCO_GL_SD_NAME">
+			<English>ACR CCO GL SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_HOLO_SD_NAME">
+			<English>ACR Holo SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_HOLO_GL_SD_NAME">
+			<English>ACR Holo GL SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_NV_GL_NAME">
+			<English>ACR NV GL</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_NV_GL_SD_NAME">
+			<English>ACR NV GL SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_NV_SD_NAME">
+			<English>ACR NV SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_NV_NAME">
+			<English>ACR NV</English>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -12259,6 +12357,41 @@
         <Czech>Kalibr: 10x22mm SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99 SD</Czech>
         <English>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</English>
         <Japanese>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</Japanese>
+      </Key>
+
+	  <Key ID="STR_DZ_MAG_30RND_ACR_NAME">
+		<English>30Rnd. ACR mag.</English>
+		<Russian>30п. ACR маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_30RND_ACRSD_NAME">
+		<English>30Rnd. ACR SD mag.</English>
+		<Russian>30п. ACR SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_30RND_ACR_DESC">
+        <Chinese>Caliber: 6.80x43mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR</Chinese>
+        <French>Calibre : 6.80x43mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec : ACR</French>
+        <Spanish>Calibre: 6.80x43mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: ACR</Spanish>
+        <Italian>Calibro: 6.80x43mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: ACR</Italian>
+        <Hungarian>Caliber: 6.80x43mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR</Hungarian>
+        <Polish>Kaliber: 6.80x43mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: ACR</Polish>
+        <Russian>Патрон: 6.80x43 мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: ACR</Russian>
+        <German>Kaliber: 6.80x43mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: ACR</German>
+        <Czech>Kalibr: 6.80x43mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: ACR</Czech>
+        <English>Caliber: 6.80x43mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR</English>
+        <Japanese>Caliber: 6.80x43mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR</Japanese>
+      </Key>
+      <Key ID="STR_DZ_MAG_30RND_ACRSD_DESC">
+        <Chinese>Caliber: 6.80x43mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR SD</Chinese>
+        <French>Calibre : 6.80x43mm SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec : ACR SD</French>
+        <Spanish>Calibre: 6.80x43mm SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: ACR SD</Spanish>
+        <Italian>Calibro: 6.80x43mm SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: ACR SD</Italian>
+        <Hungarian>Caliber: 6.80x43mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR SD</Hungarian>
+        <Polish>Kaliber: 6.80x43mm SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: ACR SD</Polish>
+        <Russian>Патрон: 6.80x43 мм SD&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: ACR SD</Russian>
+        <German>Kaliber: 6.80x43mm SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: ACR SD</German>
+        <Czech>Kalibr: 6.80x43mm SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: ACR SD</Czech>
+        <English>Caliber: 6.80x43mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR SD</English>
+        <Japanese>Caliber: 6.80x43mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR SD</Japanese>
       </Key>	  
 		
 		<!-- **** ATTACHMENTS **** -->
@@ -12322,7 +12455,17 @@
 			<Russian>ПБС для калибра 10мм</Russian>
 			<German>10mm Schalldämpfer</German>
 		</Key>		
-		
+		<!-- 6.8mm Suppressor ACR-->
+		<Key ID="STR_DZ_ATT_SUP68_NAME">
+			<English>[A] 6.80mm Suppressor</English>
+			<Russian>[М] 6.80мм глушитель</Russian>
+			<German>[E] 6.80mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP68_DESC">
+			<English>6.80mm Sound suppressor</English>
+			<Russian>ПБС для калибра 6.80мм</Russian>
+			<German>6.80mm Schalldämpfer</German>
+		</Key>			
 		<!-- 5.56mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP556_NAME">
 			<English>[A] 5.56mm Suppressor</English>
@@ -12644,6 +12787,10 @@
 			<English>A TWS scope.</English>
 			<German>Zielfernrohr vom Typ TWS.</German>
 		</Key>
+		<Key ID="STR_ATTACHMENT_RMVE_TWS">
+			<English>Remove TWS scope</English>
+			<German>TWS entfernen</German>
+		</Key>		
 		<Key ID="STR_DZE_ATTACHMENT_45SUP_NAME">
 			<English>[A] .45cal Suppressor</English>
 			<German>[E] .45cal Schalldämpfer</German>

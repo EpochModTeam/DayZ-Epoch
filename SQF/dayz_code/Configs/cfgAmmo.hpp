@@ -403,6 +403,41 @@ class CfgAmmo
 		hit = 7.0;
 	};
 	
+	//ACR
+	class B_680x43_Ball: BulletBase
+	{
+		hit = 10;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		caliber = 0.7;
+		visibleFire = 18;
+		audibleFire = 16;
+		cost = 1.1;
+		airFriction = -0.0011787;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		tracerScale = 1.1;
+		tracerStartTime = 0.05;
+		tracerEndTime = 1;
+		typicalSpeed = 700;
+	};
+	class B_680x43_SD: BulletBase
+	{
+		hit = 9;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		caliber = 0.7;
+		visibleFire = 0.08;
+		audibleFire = 0.08;
+		visibleFireTime = 2;
+		cost = 1.1;
+		airFriction = -0.0011787;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		tracerScale = 1.1;
+		tracerStartTime = 0.05;
+		tracerEndTime = 1;
+		typicalSpeed = 420;
+	};	
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

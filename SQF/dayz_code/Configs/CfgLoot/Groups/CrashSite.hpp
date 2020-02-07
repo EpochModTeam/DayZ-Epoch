@@ -54,6 +54,8 @@ CrashSiteUS[] =
 	//Weapons
 	{Loot_GROUP,		30,		weaponsUS},
 	{Loot_WEAPON,		1,		M107_DZ}, // High value weapon
+	{Loot_WEAPON,		5,		ACR_WDL_NV_DZ}, // ACR WDL NV
+	{Loot_WEAPON,		5,		ACR_BL_NV_DZ}, // ACR BL NV
 
 	//Tools
 	{Loot_GROUP,		3,		ToolsMilitary},
