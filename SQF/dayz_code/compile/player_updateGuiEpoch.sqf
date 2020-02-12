@@ -1,4 +1,4 @@
-private ["_flash","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_id","_rID","_rfriendlies","_rfriendlyTo","_distance","_targetControl"];
+private ["_ctrlCombatBorder","_ctrlBloodOuter","_ctrlFoodBorder","_ctrlThirstBorder","_ctrlTempBorder","_flash","_display","_ctrlBlood","_ctrlBleed","_bloodVal","_humanityName","_ctrlFood","_ctrlThirst","_thirstVal","_foodVal","_ctrlTemp","_tempVal","_combatVal","_ctrlEar","_ctrlEye","_ctrlCombat","_ctrlFracture","_visualText","_visual","_audibleText","_audible","_blood","_thirstLvl","_foodLvl","_tempImg","_thirst","_food","_temp","_bloodLvl","_tempLvl","_color","_string","_humanity","_size","_friendlies","_id","_rID","_rfriendlies","_rfriendlyTo","_distance","_targetControl"];
 
 _flash = {
     if (ctrlShown _this) then {
@@ -17,6 +17,20 @@ _combatVal = if (player getVariable["combattimeout",0] >= diag_tickTime) then {0
 
 _display = uiNamespace getVariable 'DAYZ_GUI_display';
 if (isNil "_display") exitWith {}; // not ready
+
+if (toLower DZE_UI == "whiteborders") then {
+	_ctrlBloodOuter = _display displayCtrl 1200;
+	_ctrlFoodBorder = _display displayCtrl 1201;
+	_ctrlThirstBorder = _display displayCtrl 1202;
+	_ctrlTempBorder = _display displayCtrl 1208;
+	_ctrlCombatBorder = _display displayCtrl 1207;
+	// Set border colors to white so they show up better against a green background.
+	_ctrlBloodOuter ctrlSetTextColor [1,1,1,1];
+	_ctrlFoodBorder ctrlSetTextColor [1,1,1,1];
+	_ctrlThirstBorder ctrlSetTextColor [1,1,1,1];
+	_ctrlTempBorder ctrlSetTextColor [1,1,1,1];
+	_ctrlCombatBorder ctrlSetTextColor [1,1,1,1];
+};
 
 _ctrlBlood = 	_display displayCtrl 1300;
 _ctrlBleed = 	_display displayCtrl 1303;
@@ -101,13 +115,13 @@ _ctrlTemp ctrlSetText _temp;
 // Visual:
 _visualtext = "";
 _visual = (round((dayz_disVisual / 100) * 4)) min 5;
-if (_visual > 0) then {_visualtext = "\z\addons\dayz_code\gui\status\val_" + str(_visual) + "_ca.paa"};
+if (_visual > 0) then {_visualtext = "\z\addons\dayz_code\gui\status_epoch\val_" + str(_visual) + "_ca.paa"};
 _ctrlEye ctrlSetText _visualtext;
 
 // Audible
 _audibletext = "";
 _audible = (round((dayz_disAudial / 50) * 4)) min 5;
-if (_audible > 0) then {_audibletext = "\z\addons\dayz_code\gui\status\val_" + str(_audible) + "_ca.paa"};
+if (_audible > 0) then {_audibletext = "\z\addons\dayz_code\gui\status_epoch\val_" + str(_audible) + "_ca.paa"};
 _ctrlEar ctrlSetText _audibletext;
 
 // Fracture/Broken Legs
