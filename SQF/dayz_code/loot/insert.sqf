@@ -45,7 +45,7 @@ if (!local _unit) exitWith {
 		};
 		
 		if (_type == Loot_BACKPACK) exitWith {
-			if (!isNull unitBackpack _unit) then {
+			if (isNull unitBackpack _unit) then {
 				_unit addBackpack _item;
 			};
 		};
