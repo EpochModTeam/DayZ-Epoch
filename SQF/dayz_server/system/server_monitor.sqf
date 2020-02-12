@@ -361,46 +361,6 @@ allowConnection = true;
 sm_done = true;
 publicVariable "sm_done";
 
-// Trap loop
-[] spawn {
-	private ["_array","_array2","_array3","_script","_armed"];
-	_array = str dayz_traps;
-	_array2 = str dayz_traps_active;
-	_array3 = str dayz_traps_trigger;
-
-	while {1 == 1} do {
-		if ((str dayz_traps != _array) || (str dayz_traps_active != _array2) || (str dayz_traps_trigger != _array3)) then {
-			_array = str dayz_traps;
-			_array2 = str dayz_traps_active;
-			_array3 = str dayz_traps_trigger;
-			//diag_log "DEBUG: traps";
-			//diag_log format["dayz_traps (%2) -> %1", dayz_traps, count dayz_traps];
-			//diag_log format["dayz_traps_active (%2) -> %1", dayz_traps_active, count dayz_traps_active];
-			//diag_log format["dayz_traps_trigger (%2) -> %1", dayz_traps_trigger, count dayz_traps_trigger];
-			//diag_log "DEBUG: end traps";
-		};
-
-		{
-			if (isNull _x) then {
-				dayz_traps = dayz_traps - [_x];
-				_armed = false;
-				_script = {};
-			} else {
-				_armed = _x getVariable ["armed", false];
-				_script = call compile getText (configFile >> "CfgVehicles" >> typeOf _x >> "script");
-			};
-			
-			if (_armed) then {
-				if !(_x in dayz_traps_active) then {["arm", _x] call _script;};
-			} else {
-				if (_x in dayz_traps_active) then {["disarm", _x] call _script;};
-			};
-			uiSleep 0.01;
-		} forEach dayz_traps;
-		uiSleep 1;
-	};
-};
-
 execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
 
 "PVDZ_sec_atp" addPublicVariableEventHandler {
