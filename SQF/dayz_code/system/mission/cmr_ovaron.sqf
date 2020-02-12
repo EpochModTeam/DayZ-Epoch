@@ -125,7 +125,7 @@
 	["Base_WarfareBBarrier10xTall",[7975, 4746, -5.7220459e-005],11],
 	["Base_WarfareBBarrier10xTall",[6199, 1298, -0.10902898],86],
 	["Base_WarfareBBarrier10xTall",[6267, 1303, -0.079432704],86],
-	["WoodStairsSans_DZ",[9054.4, 2085.1, -1.6514561],-23.5],
+	["WoodStairsSans_DZ",[9052.2, 2084, -1.6514561],63],
 	["MAP_A_Castle_WallS_End_ruins",[3161, 5620, 0.3],0],
 	["MAP_A_Castle_WallS_End_ruins",[7074, 4619, 0],-13]
 ],true,false,true] call fnc_spawnObjects;
