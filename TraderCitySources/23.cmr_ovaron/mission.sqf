@@ -204,26 +204,6 @@ if (true) then
   if (false) then {_group_0 selectLeader _this;};
 };
 
-_vehicle_49 = objNull;
-if (true) then
-{
-  _this = createVehicle ["mbg_brickhouse_03_EO", [5336.5649, 2614.3506, -2.6922495], [], 0, "CAN_COLLIDE"];
-  _vehicle_49 = _this;
-  _this setDir -39.485416;
-  _this setVehicleInit "setVectorUp [0,0,1]";
-  _this setPos [5336.5649, 2614.3506, -2.6922495];
-};
-
-_vehicle_51 = objNull;
-if (true) then
-{
-  _this = createVehicle ["mbg_brickhouse_03_EO", [4901.3066, 7627.8979, -2.4978182], [], 0, "CAN_COLLIDE"];
-  _vehicle_51 = _this;
-  _this setDir -219.44348;
-  _this setVehicleInit "setVectorUp [0,0,1]";
-  _this setPos [4901.3066, 7627.8979, -2.4978182];
-};
-
 _vehicle_52 = objNull;
 if (true) then
 {
@@ -973,10 +953,10 @@ if (true) then
 _vehicle_241 = objNull;
 if (true) then
 {
-  _this = createVehicle ["WoodStairsSans_DZ", [9054.4307, 2085.093, -1.6514561], [], 0, "CAN_COLLIDE"];
+  _this = createVehicle ["WoodStairsSans_DZ", [9052.2422, 2083.9226, -1.6514561], [], 0, "CAN_COLLIDE"];
   _vehicle_241 = _this;
-  _this setDir -23.526371;
-  _this setPos [9054.4307, 2085.093, -1.6514561];
+  _this setDir 63.067951;
+  _this setPos [9052.2422, 2083.9226, -1.6514561];
 };
 
 _vehicle_243 = objNull;
@@ -1014,45 +994,6 @@ if (true) then
   _this setPos [7073.9321, 4619.2891, -1.5258789e-005];
 };
 
-_vehicle_250 = objNull;
-if (true) then
-{
-  _this = createVehicle ["ASC_EU_LHS_lampa_sidlconc", [743.37463, 3120.4446, -3.3378601e-006], [], 0, "CAN_COLLIDE"];
-  _vehicle_250 = _this;
-  _this setDir -5.274075;
-  _this setVehicleInit "setVectorUp [0,0,1]";
-  _this setPos [743.37463, 3120.4446, -3.3378601e-006];
-};
-
-_vehicle_251 = objNull;
-if (true) then
-{
-  _this = createVehicle ["ASC_EU_LHS_lampa_sidlconc", [9498.9189, 7120.0449, 5.5789948e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_251 = _this;
-  _this setDir -178.73158;
-  _this setVehicleInit "setVectorUp [0,0,1]";
-  _this setPos [9498.9189, 7120.0449, 5.5789948e-005];
-};
-
-_vehicle_254 = objNull;
-if (true) then
-{
-  _this = createVehicle ["ASC_EU_LHSSidl1", [4367.6943, 6701.2021, -1.5258789e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_254 = _this;
-  _this setDir 18.196474;
-  _this setVehicleInit "setVectorUp [0,0,1]";
-  _this setPos [4367.6943, 6701.2021, -1.5258789e-005];
-};
-
-_vehicle_257 = objNull;
-if (true) then
-{
-  _this = createVehicle ["LAND_ASC_Wall_Lamp_New", [4336.9897, 6712.811, 1.5613016], [], 0, "CAN_COLLIDE"];
-  _vehicle_257 = _this;
-  _this setDir -171.57396;
-  _this setPos [4336.9897, 6712.811, 1.5613016];
-};
-
 _vehicle_258 = objNull;
 if (true) then
 {
@@ -1070,22 +1011,6 @@ if (true) then
   _this setDir -165.70822;
   _this setVehicleInit "setVectorUp [0,0,1]";
   _this setPos [5844.5332, 3545.6711, -4.5776367e-005];
-};
-
-_vehicle_267 = objNull;
-if (true) then
-{
-  _this = createVehicle ["LAND_ASC_Wall_Lamp_Old", [718.77686, 3122.3845, 1.3589859e-005], [], 0, "CAN_COLLIDE"];
-  _vehicle_267 = _this;
-  _this setPos [718.77686, 3122.3845, 1.3589859e-005];
-};
-
-_vehicle_268 = objNull;
-if (true) then
-{
-  _this = createVehicle ["ASC_EU_LHSInd", [712.03259, 3127.0247, 8.5830688e-006], [], 0, "CAN_COLLIDE"];
-  _vehicle_268 = _this;
-  _this setPos [712.03259, 3127.0247, 8.5830688e-006];
 };
 
 processInitCommands;
