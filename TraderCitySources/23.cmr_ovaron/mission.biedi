@@ -261,30 +261,6 @@ class _unit_6
 		SKILL="0.60000002";
 	};
 };
-class _vehicle_49
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[5336.5649, 2614.3506, -2.6922495]";
-		TYPE="mbg_brickhouse_03_EO";
-		AZIMUT="-39.485416";
-		INIT="setVectorUp [0,0,1]";
-		PARENT="";
-	};
-};
-class _vehicle_51
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4901.3066, 7627.8979, -2.4978182]";
-		TYPE="mbg_brickhouse_03_EO";
-		AZIMUT="-219.44348";
-		INIT="setVectorUp [0,0,1]";
-		PARENT="";
-	};
-};
 class _vehicle_52
 {
 	objectType="vehicle";
@@ -1206,9 +1182,9 @@ class _vehicle_241
 	objectType="vehicle";
 	class Arguments
 	{
-		POSITION="[9054.4307, 2085.093, -1.6514561]";
+		POSITION="[9052.2422, 2083.9226, -1.6514561]";
 		TYPE="WoodStairsSans_DZ";
-		AZIMUT="-23.526371";
+		AZIMUT="63.067951";
 		PARENT="";
 	};
 };
@@ -1255,53 +1231,6 @@ class _vehicle_248
 		PARENT="";
 	};
 };
-class _vehicle_250
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[743.37463, 3120.4446, -3.3378601e-006]";
-		TYPE="ASC_EU_LHS_lampa_sidlconc";
-		AZIMUT="-5.274075";
-		INIT="setVectorUp [0,0,1]";
-		PARENT="";
-	};
-};
-class _vehicle_251
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[9498.9189, 7120.0449, 5.5789948e-005]";
-		TYPE="ASC_EU_LHS_lampa_sidlconc";
-		AZIMUT="-178.73158";
-		INIT="setVectorUp [0,0,1]";
-		PARENT="";
-	};
-};
-class _vehicle_254
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4367.6943, 6701.2021, -1.5258789e-005]";
-		TYPE="ASC_EU_LHSSidl1";
-		AZIMUT="18.196474";
-		INIT="setVectorUp [0,0,1]";
-		PARENT="";
-	};
-};
-class _vehicle_257
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[4336.9897, 6712.811, 1.5613016]";
-		TYPE="LAND_ASC_Wall_Lamp_New";
-		AZIMUT="-171.57396";
-		PARENT="";
-	};
-};
 class _vehicle_258
 {
 	objectType="vehicle";
@@ -1322,26 +1251,6 @@ class _vehicle_262
 		TYPE="ASC_EU_LHVSidl1";
 		AZIMUT="-165.70822";
 		INIT="setVectorUp [0,0,1]";
-		PARENT="";
-	};
-};
-class _vehicle_267
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[718.77686, 3122.3845, 1.3589859e-005]";
-		TYPE="LAND_ASC_Wall_Lamp_Old";
-		PARENT="";
-	};
-};
-class _vehicle_268
-{
-	objectType="vehicle";
-	class Arguments
-	{
-		POSITION="[712.03259, 3127.0247, 8.5830688e-006]";
-		TYPE="ASC_EU_LHSInd";
 		PARENT="";
 	};
 };
