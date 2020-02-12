@@ -64,7 +64,6 @@ AllowedVehiclesList = [
 	["MTVR_DES_EP1_DZE",_Ratio3],
 	["MV22_DZ",_Ratio1],
 	["Offroad_DSHKM_Gue_DZE",_Ratio3],
-	["Old_bike_TK_INS_EP1_DZE",_Ratio3],
 	["Old_moto_TK_Civ_EP1_DZE",_Ratio3],
 	["Pickup_PK_GUE_DZE",_Ratio3],
 	["Pickup_PK_INS_DZE",_Ratio3],
