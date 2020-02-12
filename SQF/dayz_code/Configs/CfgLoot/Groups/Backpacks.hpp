@@ -1,18 +1,18 @@
 backpacks[] = {
-	{Loot_BACKPACK,		5,		DZ_Assault_Pack_EP1},
-	{Loot_BACKPACK,		5,		DZ_Czech_Vest_Pouch},
-	{Loot_BACKPACK,		4,		DZ_Patrol_Pack_EP1},
-	{Loot_BACKPACK,		4,		DZ_TerminalPack_EP1},
-	{Loot_BACKPACK,		3,		DZ_ALICE_Pack_EP1},
-	{Loot_BACKPACK,		2,		DZ_TK_Assault_Pack_EP1},
-	{Loot_BACKPACK,		1,		DZ_CompactPack_EP1}
+	{Loot_BACKPACK,		5,		Assault_Pack_DZE1},
+	{Loot_BACKPACK,		5,		Czech_Vest_Pouch_DZE1},
+	{Loot_BACKPACK,		4,		Patrol_Pack_DZE1},
+	{Loot_BACKPACK,		4,		TerminalPack_DZE1},
+	{Loot_BACKPACK,		3,		ALICE_Pack_DZE1},
+	{Loot_BACKPACK,		2,		TK_Assault_Pack_DZE1},
+	{Loot_BACKPACK,		1,		CompactPack_DZE1}
 };
 militarybackpacks[] = {
-	{Loot_BACKPACK,		3,		DZ_British_ACU},
-	{Loot_BACKPACK,		2,		DZ_GunBag_EP1},
-	{Loot_BACKPACK,		2,		DZ_CivilBackpack_EP1},
-	{Loot_BACKPACK,		2,		DZ_Backpack_EP1},
-	{Loot_BACKPACK,		1,		DZ_LargeGunBag_EP1},
+	{Loot_BACKPACK,		3,		British_ACU_DZE1},
+	{Loot_BACKPACK,		2,		GunBag_DZE1},
+	{Loot_BACKPACK,		2,		CzechBackpack_DZE1},
+	{Loot_BACKPACK,		2,		CoyoteBackpack_DZE1},
+	{Loot_BACKPACK,		1,		LargeGunBag_DZE1},
 	
 	// New for 1.0.7
 	{Loot_BACKPACK,		1,		TinyPack_DZE1},
