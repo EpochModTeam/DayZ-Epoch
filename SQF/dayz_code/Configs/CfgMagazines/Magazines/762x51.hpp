@@ -127,6 +127,7 @@ class 20Rnd_762x51_RSASS: CA_Magazine
 	displayName = $STR_DZ_MAG_20RND_RSASS_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_RSASS_DESC;
 	count = 20;
+	cartridgeName = "762x51";
 	ammo = "Rem_762x51_Ball";	
 	
 	class ItemActions
@@ -140,5 +141,6 @@ class 20Rnd_762x51_RSASS_SD: 20Rnd_762x51_RSASS
 	initSpeed = 850;
 	displayName = $STR_DZ_MAG_20RND_RSASSSD_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_RSASSSD_DESC;
+	cartridgeName = "762x51_SD";
 	ammo = "Rem_762x51_SD";	
 };
