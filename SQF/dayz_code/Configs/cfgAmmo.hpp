@@ -438,6 +438,80 @@ class CfgAmmo
 		typicalSpeed = 420;
 	};	
 	
+	//RSASS
+	class Rem_762x51_Ball: BulletBase
+	{
+		hit = 12;
+		typicalSpeed = 900;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		visibleFire = 22;
+		audibleFire = 18;
+		visibleFireTime = 3;
+		cost = 1.2;
+		airLock = 1;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		tracerStartTime = -1;
+		tracerEndTime = 1;
+		airFriction = -0.0009324;
+	};
+	class Rem_762x51_SD: BulletBase
+	{
+		hit = 11;
+		typicalSpeed = 850;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		audibleFire = 0.1;
+		visibleFireTime = 2;
+		cost = 1.2;
+		airLock = 1;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		tracerStartTime = -1;
+		tracerEndTime = 1.4;
+		visibleFire = 0.1;
+		airFriction = -0.00098;		
+	};	
+	
+	//XM2010
+	class Rem_300Win_Ball: BulletBase
+	{
+		hit = 14;
+		typicalSpeed = 850;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		visibleFire = 18;
+		audibleFire = 18;
+		visibleFireTime = 3;
+		cost = 1.2;
+		airLock = 1;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		tracerScale = 1.2;
+		tracerStartTime = -1;
+		tracerEndTime = 1;
+		airFriction = -0.0009324;
+	};
+	class Rem_300Win_SD: BulletBase
+	{
+		hit = 12;
+		typicalSpeed = 750;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		visibleFire = 0.1;
+		audibleFire = 0.1;
+		visibleFireTime = 3;
+		cost = 1.2;
+		airLock = 1;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		tracerScale = 1.2;
+		tracerStartTime = -1;
+		tracerEndTime = 1;
+		airFriction = -0.0009324;
+	};
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

@@ -54,6 +54,7 @@ class CfgWeapons
 		class Single;
 	};
 	#include "Rifles\DMR.hpp"
+	#include "Rifles\RSASS.hpp"
 	
 	class FN_FAL;
 	class FN_FAL_ANPVS4;
@@ -97,7 +98,7 @@ class CfgWeapons
 	#include "Rifles\M24.hpp"
 	
 	class M40A3;
-	#include "Rifles\M40A3.hpp"
+	#include "Rifles\M40A3.hpp"	
 	
 	class M249;
 	#include "Rifles\M249.hpp"
@@ -176,8 +177,8 @@ class CfgWeapons
 	#include "Rifles\Remington870.hpp"
 	#include "Rifles\Crossbow.hpp"
 	#include "Rifles\L115A3.hpp"
-	
-	
+	#include "Rifles\MSR.hpp"
+	#include "Rifles\XM2010.hpp"
 	
 	/* PISTOLS */
 	

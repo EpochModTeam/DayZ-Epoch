@@ -17,10 +17,11 @@
 #include "762x54r.hpp"		//PK, SVD, Mosin
 #include "46x30.hpp"		//MP7
 #include "680x43.hpp"		//ACR
+#include "86x70.hpp"		//L115, MSR
+#include "762x67.hpp"		//XM2010
 #include "Misc.hpp"			//CZ550, Lee-Enfield
 #include "Shotgun.hpp"
 #include "Arrows.hpp"
 #include "LauncherAmmo.hpp"
-#include "127x99.hpp" //Remove after A2OA stable branch exceeds Version 1.63.131129
 
 #undef COMBINE_MAG

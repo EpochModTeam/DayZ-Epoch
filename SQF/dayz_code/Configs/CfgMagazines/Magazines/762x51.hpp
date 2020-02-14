@@ -118,4 +118,27 @@ class 10Rnd_762x51_CZ750 : 5Rnd_762x51_M24
 	};
 };
 
+class 20Rnd_762x51_RSASS: CA_Magazine
+{
+	scope = public;
+	initSpeed = 900;
+	picture = "\FHQ_Remington\ammo\ui\i_20rndpmag.paa";
+	model = "\FHQ_Remington\RSASS\magazine.p3d";
+	displayName = $STR_DZ_MAG_20RND_RSASS_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_RSASS_DESC;
+	count = 20;
+	ammo = "Rem_762x51_Ball";	
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};	
+};
 
+class 20Rnd_762x51_RSASS_SD: 20Rnd_762x51_RSASS
+{
+	initSpeed = 850;
+	displayName = $STR_DZ_MAG_20RND_RSASSSD_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_RSASSSD_DESC;
+	ammo = "Rem_762x51_SD";	
+};

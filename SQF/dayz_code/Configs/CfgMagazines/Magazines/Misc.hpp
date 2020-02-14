@@ -50,18 +50,7 @@ class 5Rnd_127x108_KSVK : CA_Magazine
 		COMBINE_MAG
 	};
 };
-//L115
-class 5Rnd_86x70_L115A1: CA_Magazine
-{
-	displayName = $STR_DZ_MAG_5Rnd_86x70_L115A1_NAME;
-	
-	cartridgeName = "86x70";
-	
-	class ItemActions
-	{
-		COMBINE_MAG
-	};
-};
+
 //VSS
 class 10Rnd_9x39_SP5_VSS: CA_Magazine
 {

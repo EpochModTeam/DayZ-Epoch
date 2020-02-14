@@ -59,6 +59,7 @@ weaponsUS[] =
 	{Loot_WEAPON,		4,		M14_DZ},
 	{Loot_WEAPON,		3,		DMR_DZ},
 	{Loot_WEAPON,		1,		M107_DZ}, // High value weapon, low spawn chance.
+	{Loot_WEAPON,		1,		MSR_DZ}, // High value weapon, low spawn chance.	
 	
 	// Submachine Guns
 	{Loot_WEAPON,		3,		PDW_DZ},
@@ -100,6 +101,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		1,		L115A3_2_DZ}, // Green Lapua
 	{Loot_WEAPON,		4,		SCAR_H_LNG_Sniper_SD},
 	{Loot_WEAPON,		4,		SCAR_H_LNG_Sniper},
+	{Loot_WEAPON,		1,		RSASS_DZ},		
 	{Loot_WEAPON,		4,		FNFAL_DZ},
 	{Loot_WEAPON,		3,		FN_FAL_ANPVS4_DZE}, //FNFAL_ANPVS4_DZ is NV only _DZE is toggleable
 	{Loot_WEAPON,		1,		BAF_AS50_scoped_DZ}, // High value weapon, low spawn chance.
@@ -153,6 +155,7 @@ weaponsCZ[] =
 	// Sniper Rifles
 	{Loot_WEAPON,		3,		CZ750_DZ},
 	{Loot_WEAPON,		3,		M110_NVG_EP1}, // Technically a US rifle, but the CZ group does not have a DMR type rifle.
+	{Loot_WEAPON,		1,		XM2010_DZ}, // High value weapon, low spawn chance.
 	
 	// Submachine Guns
 	{Loot_WEAPON,		7,		Scorpion_Evo3_DZ},
