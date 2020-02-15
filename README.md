@@ -45,6 +45,7 @@ Included Custom Addons
 * P99 Projekt by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=9985
 * FAMAS Pack by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=8867
 * FHQ Remington Weapon Pack by Alwarren - http://www.armaholic.com/page.php?id=17971
+* RH PDW pack by Robert Hammer - http://www.armaholic.com/page.php?id=12214
 
 --------------------------
 Included Custom Islands

@@ -80,7 +80,8 @@ class CfgWeapons
 	#include "Rifles\M4A1.hpp"
 	//Famas
 	#include "Rifles\Famas.hpp"	
-	#include "Rifles\ACR.hpp"	
+	#include "Rifles\ACR.hpp"
+	#include "Rifles\KACPDW.hpp"
 	
 	class M14_EP1;
 	#include "Rifles\M14.hpp"

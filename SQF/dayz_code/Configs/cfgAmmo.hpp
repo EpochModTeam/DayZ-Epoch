@@ -512,6 +512,14 @@ class CfgAmmo
 		airFriction = -0.0009324;
 	};
 	
+	//KAC PDW
+	class B_556x45_Ball;
+	class B_6x35_Ball: B_556x45_Ball
+	{
+		airfriction = -0.0015;
+		hit = 8.5;
+	};
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

@@ -44,8 +44,8 @@ AmmoCZ[] = {
 	{Loot_MAGAZINE,		3,		20Rnd_762x51_B_SCAR},
 	
 	// Submachine guns
-	{Loot_MAGAZINE,		3,		20Rnd_9x19_EVO},
-	{Loot_MAGAZINE,		3,		20Rnd_9x19_EVOSD},
+	{Loot_MAGAZINE,		3,		30Rnd_9x19_MP5},
+	{Loot_MAGAZINE,		3,		30Rnd_9x19_MP5SD},	
 	{Loot_MAGAZINE,		3,		20Rnd_B_765x17_Ball},
 	
 	// Pistols
@@ -114,6 +114,7 @@ AmmoUS[] =
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_UZI_SD},
 	
 	// Assault rifles
+	{Loot_MAGAZINE,		6,		30Rnd_6x35_KAC},
 	{Loot_MAGAZINE,		10,		30Rnd_556x45_Stanag},
 	{Loot_MAGAZINE,		8,		30Rnd_556x45_StanagSD},
 	{Loot_MAGAZINE,		6,		ACR_30Rnd_680x43},

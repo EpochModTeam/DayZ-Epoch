@@ -417,13 +417,17 @@ class Category_16 {
 	class ACR_SNOW_NV_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {14,"ItemGoldBar"};};	
 	class ACR_SNOW_NV_GL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {16,"ItemGoldBar"};};
 	class ACR_SNOW_NV_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {18,"ItemGoldBar"};};
-	class ACR_SNOW_NV_GL_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};	
+	class ACR_SNOW_NV_GL_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class KAC_PDW_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class KAC_PDW_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class KAC_PDW_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class KAC_PDW_ACOG_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
 };
 
 //Sniper Rifles
 class Category_17 {
-	class M4SPR {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class CZ550_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class M4SPR_DZE {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};	
 	class CZ750_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class M24_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class M24_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {7,"ItemGoldBar"};};
@@ -431,7 +435,7 @@ class Category_17 {
 	class M24_des_EP1 {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class M40A3_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class M40A3_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {7,"ItemGoldBar"};};
-	class VSS_vintorez {type = "trade_weapons";buy[] = {3,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar"};};
+	class VSS_vintorez_DZE {type = "trade_weapons";buy[] = {3,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar"};};
 	// iron sights
 	class SVD_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	// iron sights and ghillie

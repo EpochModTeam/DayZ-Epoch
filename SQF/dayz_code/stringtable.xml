@@ -12042,7 +12042,25 @@
 		<Key ID="STR_DZ_WPN_XM2010_SD_NV_DESC">
 			<English>Remington XM2010, silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .300</English>
 			<German>Remington XM2010, schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .300</German>
+		</Key>	
+
+		<Key ID="STR_DZ_WPN_KACPDW_NAME">
+			<English>KAC PDW</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_KACPDW_CCO_NAME">
+			<English>KAC PDW CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_KACPDW_HOLO_NAME">
+			<English>KAC PDW Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_KACPDW_ACOG_NAME">
+			<English>KAC PDW ACOG</English>
 		</Key>		
+		<Key ID="STR_DZ_WPN_KACPDW_DESC">
+			<English>KAC PDW, short barrel rifle &lt;br/&gt;Caliber: 6x35mm</English>
+			<German>KAC PDW, Kurzlaufgewehr &lt;br/&gt;Kaliber: 6x35mm</German>
+		</Key>
+		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -12585,6 +12603,21 @@
         <German>Kaliber: .300 SD&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: XM2010 SD</German>
         <Czech>Kalibr: .300 SD&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: XM2010 SD</Czech>
 		<Hungarian>Kaliber: .300 SD &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: XM2010 SD</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_30RND_KACPDW_NAME">
+		<English>30Rnd. KAC PDW mag.</English>
+		<Russian>30п. KAC PDW маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_30RND_KACPDW_DESC">
+	    <English>Caliber: 6x35mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: KAC PDW</English>
+        <French>Calibre : 6x35mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec : KACPDW</French>
+        <Spanish>Calibre: 6x35mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: KAC PDW</Spanish>
+        <Italian>Calibro: 6x35mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: KAC PDW</Italian>
+        <Polish>Kaliber: 6x35mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: KAC PDW</Polish>
+        <Russian>Патрон: 6x35mm &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: KAC PDW</Russian>
+        <German>Kaliber: 6x35mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: KAC PDW</German>
+        <Czech>Kalibr: 6x35mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: KAC PDW</Czech>
+        <Hungarian>Kaliber: 6x35mm &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: KAC PDW</Hungarian>
       </Key>	  
 		
 		<!-- **** ATTACHMENTS **** -->
