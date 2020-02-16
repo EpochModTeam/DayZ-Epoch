@@ -102,8 +102,8 @@ class KAC_PDW_ACOG_DZ: KAC_PDW_DZ
 	displayName = $STR_DZ_WPN_KACPDW_ACOG_NAME;
 	picture = "\RH_pdw\inv\w_pdw_acog_ca.paa";
 	model = "\RH_pdw\RH_pdw_acog.p3d";
-	modelOptics = "\RH_pdw\fnc_acog_ta31rco.p3d";
 	dexterity = 2.1;
+	modelOptics = "\Ca\weapons_E\SCAR\ACOG_TA31_optic_4x.p3d";
 	
 	class OpticsModes
 	{

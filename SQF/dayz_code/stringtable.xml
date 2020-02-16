@@ -12044,6 +12044,7 @@
 			<German>Remington XM2010, schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .300</German>
 		</Key>	
 
+		<!-- KAC PDW -->	
 		<Key ID="STR_DZ_WPN_KACPDW_NAME">
 			<English>KAC PDW</English>
 		</Key>	
@@ -12060,6 +12061,59 @@
 			<English>KAC PDW, short barrel rifle &lt;br/&gt;Caliber: 6x35mm</English>
 			<German>KAC PDW, Kurzlaufgewehr &lt;br/&gt;Kaliber: 6x35mm</German>
 		</Key>
+		
+		<!-- M1A SOCOM -->	
+		<Key ID="STR_DZ_WPN_M1ASC16_NAME">
+			<English>M1A SOCOM 16</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M1ASC16_ACOG_NAME">
+			<English>M1A SOCOM 16 ACOG</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_M1ASC16_CCO_NAME">
+			<English>M1A SOCOM 16 CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC16_HOLO_NAME">
+			<English>M1A SOCOM 16 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC16_PU_NAME">
+			<English>M1A SOCOM 16 PU</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_M1ASC16_SNIPER_NAME">
+			<English>M1A SOCOM 16 Sniper</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M1ASC2_NAME">
+			<English>M1A SOCOM 2</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC2_ACOG_NAME">
+			<English>M1A SOCOM 2 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC2_CCO_NAME">
+			<English>M1A SOCOM 2 CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC2_HOLO_NAME">
+			<English>M1A SOCOM 2 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC2_PU_NAME">
+			<English>M1A SOCOM 2 PU</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M1ASC2_SNIPER_NAME">
+			<English>M1A SOCOM 2 Sniper</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC16_DESC">
+			<English>M1A SOCOM 16, semi-automatic rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>M1A SOCOM 16, halbautomatisches Gewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>			
+		<Key ID="STR_DZ_WPN_M1ASC2_DESC">
+			<English>M1A SOCOM 2, semi-automatic rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>M1A SOCOM 2, halbautomatisches Gewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M21_NAME">
+			<English>M21 SWS</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M21_DESC">
+			<English>M21 SWS, Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>M21 SWS, Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>			
 		
 		
 		<!-- **** MAGAZINES **** -->
