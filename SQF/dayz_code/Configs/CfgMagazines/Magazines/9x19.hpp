@@ -62,6 +62,7 @@ class 30Rnd_9x19_MP5SD : CA_Magazine
 class 15Rnd_9x19_M9 : CA_Magazine
 {
 	displayName = $STR_DZ_MAG_15RND_9X19_M9_NAME;
+	descriptionShort = $STR_DZ_MAG_15RND_M9_9x19_DESC;
 	
 	cartridgeName = "9x19";
 	
@@ -90,6 +91,7 @@ class 17Rnd_9x19_glock17 : CA_Magazine
 	model = "z\addons\dayz_communityweapons\magazines\g17.p3d";
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_glock17_ca.paa";
 	displayName = $STR_DZ_MAG_17RND_9X19_GLOCK17_NAME;
+	descriptionShort = $STR_DZ_MAG_17RND_G17_9x19_DESC;
 	
 	cartridgeName = "9x19";
 	
@@ -117,6 +119,7 @@ class 15Rnd_9x19_M9SD : 15Rnd_9x19_M9
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_m9sd_ca.paa";
 	displayName = $STR_DZ_MAG_15RND_9X19_M9SD_NAME;
+	descriptionShort = $STR_DZ_MAG_15RND_M9SD_9x19_DESC;
 	
 	cartridgeName = "9x19_SD";
 	
@@ -144,6 +147,7 @@ class 17Rnd_9x19_glock17SD : 15Rnd_9x19_M9SD
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_glock17sd_ca.paa";
 	displayName = $STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME;
+	descriptionShort = $STR_DZ_MAG_17RND_G17SD_9x19_DESC;
 	
 	cartridgeName = "9x19_SD";
 
@@ -168,8 +172,6 @@ class 17Rnd_9x19_glock17SD : 15Rnd_9x19_M9SD
 		};
 	};
 };
-
-
 
 /* Bizon */
 
@@ -232,4 +234,139 @@ class 18Rnd_9x19_PhantomSD : 15Rnd_9x19_M9SD
 		delete ReloadMag;
 		COMBINE_MAG
 	};
+};
+
+/* FN Browning HP */
+
+class 13Rnd_9x19_BHP: 15Rnd_9x19_M9
+{
+	displayName = $STR_DZ_MAG_13RND_9x19_BHP_NAME;
+	descriptionShort = $STR_DZ_MAG_13RND_BHP_9x19_DESC;
+	model = "\RH_de\mags\mag_mk22.p3d";
+	picture = "\RH_de\inv\m_mk22.paa";
+	count = 13;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
+};
+
+/* SIG Sauer P226 */
+
+class 15Rnd_9x19_P226: 15Rnd_9x19_M9
+{
+	displayName = $STR_DZ_MAG_15RND_9x19_P226_NAME;
+	descriptionShort = $STR_DZ_MAG_15RND_P226_9x19_DESC;
+	model = "\RH_de\mags\mag_mk22.p3d";
+	picture = "\RH_de\inv\m_mk22.paa";
+	count = 15;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
+};
+
+/* Walther P38 */
+
+class 8Rnd_9x19_P38: 15Rnd_9x19_M9
+{
+	displayName = $STR_DZ_MAG_8RND_9x19_P38_NAME;
+	descriptionShort = $STR_DZ_MAG_8RND_P38_9x19_DESC;
+	model = "\RH_de\mags\mag_p38.p3d";
+	picture = "\RH_de\inv\m_p38.paa";
+	count = 8;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
+};
+
+/* Mk 22 Mod 0 */
+
+class 8Rnd_9x19_MK22: 15Rnd_9x19_M9
+{
+	displayName = $STR_DZ_MAG_8RND_9x19_MK22_NAME;
+	descriptionShort = $STR_DZ_MAG_8RND_MK22_9x19_DESC;
+	model = "\RH_de\mags\mag_mk22.p3d";
+	picture = "\RH_de\inv\m_mk22.paa";
+	count = 8;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
+};
+
+class 8Rnd_9x19_MK22SD: 15Rnd_9x19_M9SD
+{
+	displayName = $STR_DZ_MAG_8RND_9x19_MK22SD_NAME;
+	descriptionShort = $STR_DZ_MAG_8RND_MK22SD_9x19_DESC;
+	model = "\RH_de\mags\mag_mk22.p3d";
+	picture = "\RH_de\inv\m_mk22.paa";
+	count = 8;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
+};
+
+
+/* M93R */
+
+class 20Rnd_9x19_M93R: 15Rnd_9x19_M9
+{
+	displayName = $STR_DZ_MAG_20RND_9x19mm_M93R_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_9x19mm_M93R_DESC;
+	model = "\RH_de\mags\mag_m93r.p3d";
+	picture = "\RH_de\inv\m_m93.paa";
+	count = 20;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
+};
+
+/* G18 */
+
+class 33Rnd_9x19_G18: 15Rnd_9x19_M9
+{
+	displayName = $STR_DZ_MAG_33RND_9x19mm_G18_NAME;
+	descriptionShort = $STR_DZ_MAG_33RND_9x19mm_G18_DESC;
+	model = "\RH_de\mags\mag_m93r.p3d";
+	picture = "\RH_de\inv\m_m93.paa";
+	count = 33;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
+};
+
+/* Tec-9 */
+
+class 32Rnd_9x19_TEC9: 15Rnd_9x19_M9
+{
+	displayName = $STR_DZ_MAG_32RND_9x19mm_TEC9_NAME;
+	descriptionShort = $STR_DZ_MAG_32RND_9x19mm_TEC9_DESC;
+	model = "\RH_de\mags\mag_tec9.p3d";
+	picture = "\RH_de\inv\m_tec9.paa";
+	count = 32;
+	
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
 };

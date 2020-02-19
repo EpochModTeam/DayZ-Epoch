@@ -5,8 +5,11 @@ AmmoCivilian[] =
 {
 	// Pistols
 	{Loot_MAGAZINE,		7,		8Rnd_9x18_Makarov},
+	{Loot_MAGAZINE,		3,		32Rnd_9x19_TEC9},
 	{Loot_MAGAZINE,		5,		7Rnd_45ACP_1911},
 	{Loot_MAGAZINE,		3,		6Rnd_45ACP},
+	{Loot_MAGAZINE,		1,		6Rnd_44Magnum},
+	{Loot_MAGAZINE,		1,		6Rnd_357Magnum},
 	
 	// Rifles
 	{Loot_MAGAZINE,		3,		15Rnd_W1866_Slug},
@@ -49,6 +52,7 @@ AmmoCZ[] = {
 	{Loot_MAGAZINE,		3,		20Rnd_B_765x17_Ball},
 	
 	// Pistols
+	{Loot_MAGAZINE,		5,		13Rnd_9x19_BHP},
 	{Loot_MAGAZINE,		5,		18Rnd_9x19_Phantom},
 	{Loot_MAGAZINE,		5,		18Rnd_9x19_PhantomSD},
 	
@@ -67,6 +71,7 @@ AmmoCZ[] = {
 AmmoRU[] =
 {
 	// Pistols
+	{Loot_MAGAZINE,		8,		8Rnd_762x25_TT33},
 	{Loot_MAGAZINE,		8,		8Rnd_9x18_Makarov},
 	{Loot_MAGAZINE,		8,		8Rnd_9x18_MakarovSD},
 	
@@ -106,8 +111,12 @@ AmmoRU[] =
 AmmoUS[] =
 {
 	// Pistols
+	{Loot_MAGAZINE,		8,		8Rnd_9x19_MK22},
+	{Loot_MAGAZINE,		8,		8Rnd_9x19_MK22SD},	
 	{Loot_MAGAZINE,		8,		15Rnd_9x19_M9},
 	{Loot_MAGAZINE,		8,		15Rnd_9x19_M9SD},
+	{Loot_MAGAZINE,		6,		7Rnd_45ACP_1911},
+	{Loot_MAGAZINE,		6,		7Rnd_45ACP_1911SD},		
 	
 	// Submachine guns
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_UZI},
@@ -147,8 +156,15 @@ AmmoUS[] =
 AmmoEU[] =
 {
 	// Pistols
+	{Loot_MAGAZINE,		8,		7nd_9x17_PPK},
+	{Loot_MAGAZINE,		8,		8Rnd_9x19_P38},
+	{Loot_MAGAZINE,		8,		15Rnd_9x19_P226},
+	{Loot_MAGAZINE,		8,		20Rnd_9x19_M93R},
+	{Loot_MAGAZINE,		8,		33Rnd_9x19_G18},
 	{Loot_MAGAZINE,		8,		17Rnd_9x19_glock17},
 	{Loot_MAGAZINE,		8,		17Rnd_9x19_glock17SD},
+	{Loot_MAGAZINE,		4,		15Rnd_45ACP_USP},
+	{Loot_MAGAZINE,		4,		15Rnd_45ACP_USPSD},	
 	
 	// Submachine guns
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_MP5},

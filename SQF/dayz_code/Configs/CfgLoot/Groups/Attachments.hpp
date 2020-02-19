@@ -28,9 +28,11 @@ AttachmentsUS[] =
 	{Loot_MAGAZINE,		1,		Attachment_ACOG},
 	{Loot_MAGAZINE,		1,		Attachment_Ghillie},
 	{Loot_MAGAZINE,		1,		Attachment_M203},
+	{Loot_MAGAZINE,		1,		Attachment_Sup68},
 	{Loot_MAGAZINE,		1,		Attachment_Sup556},
 	{Loot_MAGAZINE,		1,		Attachment_Sup9},
-	{Loot_MAGAZINE,		1,		Attachment_Sup10}
+	{Loot_MAGAZINE,		1,		Attachment_Sup10},
+	{Loot_MAGAZINE,		1,		Attachment_Sup45}
 };
 
 // Attachments for European Guns
@@ -40,10 +42,11 @@ AttachmentsEU[] =
 	{Loot_MAGAZINE,		1,		Attachment_Holo},
 	{Loot_MAGAZINE,		1,		Attachment_ACOG},
 	{Loot_MAGAZINE,		1,		Attachment_Sup556},
-	{Loot_MAGAZINE,		3,		Attachment_Sup9},
-	{Loot_MAGAZINE,		3,		Attachment_Sup10},	
+	{Loot_MAGAZINE,		1,		Attachment_Sup9},
+	{Loot_MAGAZINE,		1,		Attachment_Sup10},
+	{Loot_MAGAZINE,		1,		Attachment_Sup45},	
 	{Loot_MAGAZINE,		1,		Attachment_MFL},
-	{Loot_MAGAZINE,		3,		Attachment_MFL_Pist} // G17 only
+	{Loot_MAGAZINE,		1,		Attachment_MFL_Pist} // G17 only
 };
 
 // Attachments for SA58
@@ -53,5 +56,6 @@ AttachmentsCZ[] =
 	{Loot_MAGAZINE,		1,		Attachment_Holo},
 	{Loot_MAGAZINE,		1,		Attachment_ACOG},
 	{Loot_MAGAZINE,		1,		Attachment_SA58RIS},
+	{Loot_MAGAZINE,		1,		Attachment_Sup9},
 	{Loot_MAGAZINE,		1,		Attachment_MFL}
 };

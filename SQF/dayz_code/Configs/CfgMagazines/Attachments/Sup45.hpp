@@ -1,4 +1,4 @@
-class Attachment_Sup_45 : CA_Magazine {
+class Attachment_Sup45 : CA_Magazine {
 	scope = public;
 	count = 1;
 	type = 256;
@@ -15,5 +15,10 @@ class Attachment_Sup_45 : CA_Magazine {
 			text = $STR_DZ_ATT_ACT_TO_SECONDARY;
 			script = "; [_id,0] call player_attachAttachment";
 		};
+		class AttachToPrimary
+		{
+			text = $STR_DZ_ATT_ACT_TO_PRIMARY;
+			script = "; [_id,1] call player_attachAttachment";
+		};		
 	};
 };

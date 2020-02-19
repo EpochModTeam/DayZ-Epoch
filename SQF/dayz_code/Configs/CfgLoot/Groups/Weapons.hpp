@@ -4,6 +4,7 @@
 weaponsRU[] =
 {
 	// Pistols
+	{Loot_WEAPON,		2,		Tokarew_TT33_DZ},
 	{Loot_WEAPON,		2,		Makarov_DZ},
 	{Loot_WEAPON,		1,		Makarov_SD_DZ},
 	{Loot_WEAPON,		2,		P99_Silver_DZ},
@@ -42,10 +43,18 @@ weaponsRU[] =
 weaponsUS[] =
 {
 	// Pistols
-	{Loot_WEAPON,		1,		M9_DZ},
-	{Loot_WEAPON,		2,		M9_SD_DZ},
+	{Loot_WEAPON,		1,		MK22_DZ},
+	{Loot_WEAPON,		1,		MK22_SD_DZ},
+	{Loot_WEAPON,		1,		MK22_2_DZ},
+	{Loot_WEAPON,		1,		MK22_2_SD_DZ},	
+	{Loot_WEAPON,		2,		M9_DZ},
+	{Loot_WEAPON,		1,		M9_SD_DZ},
+	{Loot_WEAPON,		2,		M9_Camo_DZ},
+	{Loot_WEAPON,		1,		M9_Camo_SD_DZ},	
 	{Loot_WEAPON,		2,		P99_Green_DZ},
-	{Loot_WEAPON,		1,		P99_Green_SD_DZ},		
+	{Loot_WEAPON,		1,		P99_Green_SD_DZ},	
+	{Loot_WEAPON,		2,		Kimber_M1911_DZ},
+	{Loot_WEAPON,		1,		Kimber_M1911_SD_DZ},	
 	
 	// Bolt action rifles and shotguns
 	{Loot_WEAPON,		5,		Remington870_DZ},
@@ -88,10 +97,18 @@ weaponsUS[] =
 weaponsEU[] =
 {
 	// Pistols
+	{Loot_WEAPON,		2,		M93R_DZ},
+	{Loot_WEAPON,		2,		G18_DZ},
+	{Loot_WEAPON,		2,		P226_DZ},
+	{Loot_WEAPON,		2,		P226_Silver_DZ},
+	{Loot_WEAPON,		2,		PPK_DZ},
+	{Loot_WEAPON,		2,		P38_DZ},
 	{Loot_WEAPON,		2,		G17_DZ},
 	{Loot_WEAPON,		1,		G17_SD_DZ},
 	{Loot_WEAPON,		2,		P99_Black_DZ},
-	{Loot_WEAPON,		1,		P99_Black_SD_DZ},	
+	{Loot_WEAPON,		1,		P99_Black_SD_DZ},
+	{Loot_WEAPON,		2,		USP_DZ},
+	{Loot_WEAPON,		1,		USP_SD_DZ},		
 	
 	// Bolt action rifles and shotguns
 	{Loot_WEAPON,		5,		LeeEnfield_DZ},
@@ -148,6 +165,7 @@ weaponsEU[] =
 weaponsCZ[] = 
 {
 	// Pistols
+	{Loot_WEAPON,		2,		BrowningHP_DZ},	
 	{Loot_WEAPON,		2,		CZ75P_DZ},
 	{Loot_WEAPON,		2,		CZ75D_DZ},
 	{Loot_WEAPON,		2,		CZ75SP_DZ},
@@ -181,10 +199,15 @@ weaponsCZ[] =
 };
 
 pistols[] = { // Residential spawns
-	{Loot_WEAPON,		7,		Makarov_DZ},
-	{Loot_WEAPON,		5,		M1911_DZ},
-	{Loot_WEAPON,		3,		Revolver_DZ},
-	{Loot_WEAPON,		1,		revolver_gold_EP1}
+	{Loot_WEAPON,		9,		Makarov_DZ},
+	{Loot_WEAPON,		7,		M1911_DZ},
+	{Loot_WEAPON,		7,		M1911_2_DZ},
+	{Loot_WEAPON,		5,		Revolver_DZ},	
+	{Loot_WEAPON,		1,		revolver_gold_EP1},
+	{Loot_WEAPON,		2,		Colt_Anaconda_DZ},	
+	{Loot_WEAPON,		1,		Colt_Anaconda_Gold_DZ},	
+	{Loot_WEAPON,		2,		Colt_Bull_DZ},	
+	{Loot_WEAPON,		1,		Colt_Python_DZ}
 };
 
 

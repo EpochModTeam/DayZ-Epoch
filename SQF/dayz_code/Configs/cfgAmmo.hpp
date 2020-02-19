@@ -450,10 +450,6 @@ class CfgAmmo
 		audibleFire = 18;
 		visibleFireTime = 3;
 		cost = 1.2;
-		airLock = 1;
-		model = "\ca\Weapons\Data\bullettracer\tracer_red";
-		tracerStartTime = -1;
-		tracerEndTime = 1;
 		airFriction = -0.0009324;
 	};
 	class Rem_762x51_SD: BulletBase
@@ -466,11 +462,6 @@ class CfgAmmo
 		audibleFire = 0.1;
 		visibleFireTime = 2;
 		cost = 1.2;
-		airLock = 1;
-		model = "\ca\Weapons\Data\bullettracer\tracer_red";
-		tracerStartTime = -1;
-		tracerEndTime = 1.4;
-		visibleFire = 0.1;
 		airFriction = -0.00098;		
 	};	
 	
@@ -486,11 +477,6 @@ class CfgAmmo
 		audibleFire = 18;
 		visibleFireTime = 3;
 		cost = 1.2;
-		airLock = 1;
-		model = "\ca\Weapons\Data\bullettracer\tracer_red";
-		tracerScale = 1.2;
-		tracerStartTime = -1;
-		tracerEndTime = 1;
 		airFriction = -0.0009324;
 	};
 	class Rem_300Win_SD: BulletBase
@@ -504,11 +490,6 @@ class CfgAmmo
 		audibleFire = 0.1;
 		visibleFireTime = 3;
 		cost = 1.2;
-		airLock = 1;
-		model = "\ca\Weapons\Data\bullettracer\tracer_red";
-		tracerScale = 1.2;
-		tracerStartTime = -1;
-		tracerEndTime = 1;
 		airFriction = -0.0009324;
 	};
 	
@@ -518,6 +499,82 @@ class CfgAmmo
 	{
 		airfriction = -0.0015;
 		hit = 8.5;
+	};
+	
+	//Colt Anaconda, Taurus Raging Bull
+	class B_44mag_Ball: BulletBase
+	{
+		hit = 12;
+		cost = 1;
+		cartridge = "FxCartridge_Small";
+		typicalSpeed = 260;
+		airFriction = -0.0015;
+		caliber = 0.5;
+	};
+	
+	//Colt Python
+	class B_357mag_Ball: BulletBase
+	{
+		hit = 14;
+		cost = 1;
+		cartridge = "FxCartridge_Small";
+		typicalSpeed = 260;
+		airFriction = -0.0015;
+		caliber = 0.3;
+	};	
+	
+	//Walther PPK
+	class B_9x17_Ball: BulletBase
+	{		
+		airfriction = -0.002751;
+		audiblefire = 15;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 6.2;
+		typicalspeed = 320;
+		visiblefire = 12;		
+	};
+	
+	//USP SD
+	class B_45ACP_SD: BulletBase
+	{
+		airfriction = -0.0013522;
+		visibleFire = 0.08;
+		audibleFire = 0.08;		
+		caliber = 0.33; //33
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 8;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 260;
+	};
+	
+	//Tokarew TT-33
+	class B_762x25_Ball: BulletBase
+	{
+		airfriction = -0.002751;
+		audiblefire = 15;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 9.5;
+		typicalspeed = 300;
+		visiblefire = 15;
+	};
+	
+	//Ruger MK2
+	class B_22lfB_Ball: BulletBase
+	{
+		airfriction = -0.002751;
+		audiblefire = 10;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 5;
+		typicalspeed = 400;
+		visiblefire = 10;
 	};
 	
 	//mosin nagant

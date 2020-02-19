@@ -189,20 +189,30 @@ class CfgWeapons
 	class M9SD;
 	#include "Pistols\M9.hpp"
 	#include "Pistols\P99.hpp"
+	#include "Pistols\Browning.hpp"
+	#include "Pistols\P226.hpp"
+	#include "Pistols\P38.hpp"
+	#include "Pistols\PPK.hpp"
+	#include "Pistols\MK22.hpp"
 	
 	class glock17_EP1;
 	#include "Pistols\G17.hpp"
+	#include "Pistols\G18.hpp"
 	
 	class Colt1911;
 	#include "Pistols\M1911.hpp"
+	#include "Pistols\USP.hpp"
 	
 	class Makarov;
 	class MakarovSD;
 	#include "Pistols\Makarov.hpp"
+	#include "Pistols\TT33.hpp"
+	#include "Pistols\RugerMK2.hpp"
 	
 	class UZI_EP1;
 	class UZI_SD_EP1;
 	#include "Pistols\PDW.hpp"
+	#include "Pistols\TEC9.hpp"
 	
 	class revolver_EP1;	
 	#include "Pistols\Revolver.hpp"

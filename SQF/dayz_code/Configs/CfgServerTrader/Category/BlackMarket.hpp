@@ -5,6 +5,7 @@ class Category_11 {
 	class Saiga12K {type = "trade_weapons";buy[] = {3,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class AA12_PMC {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};		
 	class revolver_gold_EP1 {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Colt_Anaconda_Gold_DZ {type = "trade_weapons";buy[] = {9,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar10oz"};};
 	class AKS_GOLD {type = "trade_weapons";buy[] = {8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};	
 	class MAAWS {type = "trade_weapons";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};		
 	class 8Rnd_B_Saiga12_74Slug {type = "trade_items";buy[] = {5,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
