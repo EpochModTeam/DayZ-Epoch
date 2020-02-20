@@ -11,6 +11,12 @@ class 200Rnd_556x45_M249: CA_Magazine
 	};
 };
 
+class 200Rnd_556x45_L110A1: 200Rnd_556x45_M249
+{
+	displayName = $STR_DZ_MAG_200RND_556X45_L110_NAME;
+	descriptionShort = $STR_BAF_CFGMAGAZINES_200RND_556X45_L110A10_0;
+};
+
 class 100Rnd_556x45_M249 : 200Rnd_556x45_M249
 {
 	model = "z\addons\dayz_communityweapons\magazines\100rnd_m249.p3d";

@@ -9,6 +9,7 @@ class M249_CCO_DZ : M249
 	magazines[] = 
 	{
 		200Rnd_556x45_M249,
+		200Rnd_556x45_L110A1,
 		100Rnd_556x45_M249,
 		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
@@ -71,6 +72,7 @@ class M249_EP1_DZ: M249_EP1 { //Iron sight with shorter stock (slightly differen
 	magazines[] = 
 	{
 		200Rnd_556x45_M249,
+		200Rnd_556x45_L110A1,
 		100Rnd_556x45_M249,
 		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
@@ -87,6 +89,7 @@ class M249_m145_EP1_DZE: M249_m145_EP1 {
 	magazines[] = 
 	{
 		200Rnd_556x45_M249,
+		200Rnd_556x45_L110A1,
 		100Rnd_556x45_M249,
 		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,

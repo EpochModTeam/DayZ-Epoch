@@ -12476,7 +12476,11 @@
 			<German>200 Schuss M249 Gurt</German>
 			<Russian>200п. M249 лента</Russian>
 		</Key>
-		
+		<Key ID="STR_DZ_MAG_200RND_556X45_L110_NAME">
+			<English>200Rnd. L110 belt</English>
+			<German>200 Schuss L110 Gurt</German>
+			<Russian>200п. L110 лента</Russian>
+		</Key>		
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_NAME">
 			<English>5Rnd. Mosin Nagant mag.</English>
 			<Russian>5п. для Винтовки Мосина</Russian>
