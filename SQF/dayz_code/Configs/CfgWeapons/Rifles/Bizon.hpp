@@ -5,8 +5,7 @@ class Bizon_DZ : bizon
 	
 	magazines[] =
 	{
-		64Rnd_9x19_Bizon,
-		64Rnd_9x19_SD_Bizon
+		64Rnd_9x19_Bizon
 	};
 	
 	weaponInfoType = "RscWeaponZeroing";
@@ -27,8 +26,7 @@ class Bizon_SD_DZ : bizon_silenced
 	
 	magazines[] =
 	{
-		64Rnd_9x19_SD_Bizon,
-		64Rnd_9x19_Bizon
+		64Rnd_9x19_SD_Bizon
 	};
 	
 	weaponInfoType = "RscWeaponZeroing";

@@ -10,11 +10,9 @@ class M249_CCO_DZ : M249
 	{
 		200Rnd_556x45_M249,
 		100Rnd_556x45_M249,
-		30Rnd_556x45_G36SD,
-		30Rnd_556x45_G36, //Allow both SD and non-SD
+		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
@@ -67,11 +65,33 @@ class M249_Holo_DZ : M249_CCO_DZ
 };
 
 class M249_EP1;
-class M249_EP1_DZ:M249_EP1 { //Iron sight with shorter stock (slightly different look from M249_DZ) can also fire MG36 mags
+class M249_EP1_DZ: M249_EP1 { //Iron sight with shorter stock (slightly different look from M249_DZ) can also fire MG36 mags
 	type = WeaponSlotPrimary;
+	
+	magazines[] = 
+	{
+		200Rnd_556x45_M249,
+		100Rnd_556x45_M249,
+		30Rnd_556x45_G36,
+		100Rnd_556x45_BetaCMag,
+		30Rnd_556x45_Stanag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
+	};	
 };
 
 class M249_m145_EP1;
-class M249_m145_EP1_DZE:M249_m145_EP1 {
+class M249_m145_EP1_DZE: M249_m145_EP1 {
 	type = WeaponSlotPrimary;
+	
+	magazines[] = 
+	{
+		200Rnd_556x45_M249,
+		100Rnd_556x45_M249,
+		30Rnd_556x45_G36,
+		100Rnd_556x45_BetaCMag,
+		30Rnd_556x45_Stanag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
+	};	
 };

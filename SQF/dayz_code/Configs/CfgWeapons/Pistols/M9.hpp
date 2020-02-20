@@ -4,12 +4,7 @@ class M9_DZ: M9
 	
 	begin1[] = {"\RH_de\Sound\m93r.wss",0.794328,1,700};
 	soundBegin[] = {"begin1",1};
-
-	magazines[] =
-	{
-		15Rnd_9x19_M9,
-		15Rnd_9x19_M9SD
-	};
+	magazines[] = {"15Rnd_9x19_M9"};
 	
 	class Attachments
 	{
@@ -25,12 +20,7 @@ class M9_SD_DZ: M9SD
 	
 	begin1[] = {"\RH_de\Sound\m9sd.wss",0.316228,1,200};
 	soundBegin[] = {"begin1",1};
-
-	magazines[] =
-	{
-		15Rnd_9x19_M9SD,
-		15Rnd_9x19_M9 //Allow both SD and non-SD
-	};
+	magazines[] = {"15Rnd_9x19_M9SD"};
 	
 	class ItemActions
 	{
@@ -77,11 +67,7 @@ class M93R_DZ: M9
 	UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";
 	modes[] = {"Single","Burst"};
 	
-	magazines[] =
-	{
-		20Rnd_9x19_M93R,
-		15Rnd_9x19_M9
-	};	
+	magazines[] = {"20Rnd_9x19_M93R","15Rnd_9x19_M9"};	
 	
 	class Single: Mode_SemiAuto
 	{

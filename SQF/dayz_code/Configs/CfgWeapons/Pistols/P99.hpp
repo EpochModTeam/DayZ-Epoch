@@ -6,7 +6,7 @@ class P99_Black_DZ: M9
 	soundBegin[] = {"begin1",1};
 	begin1[] = {"\C1987_P99\sound\p99.wss",1.0,1};
 	reloadMagazineSound[] = {"\C1987_P99\sound\p99_reload.wss",0.1,1,20};
-	magazines[] = {"15Rnd_10x22_p99","15Rnd_10x22_p99_sd"};
+	magazines[] = {"15Rnd_10x22_p99"};
 	descriptionShort = $STR_DZ_WPN_P99_DESC;
 	class Library
 	{

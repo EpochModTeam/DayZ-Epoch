@@ -44,10 +44,8 @@ class G36C_DZ : G36C
 	magazines[] =
 	{
 		30Rnd_556x45_G36,
-		30Rnd_556x45_G36SD, //Allow both SD and non-SD
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
@@ -69,12 +67,7 @@ class G36C_SD_DZ : G36_C_SD_eotech
 	magazines[] =
 	{
 		30Rnd_556x45_G36SD,
-		30Rnd_556x45_G36, //Allow both SD and non-SD
-		100Rnd_556x45_BetaCMag,
-		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,
-		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		30Rnd_556x45_StanagSD
 	};
 	
 	class Attachments

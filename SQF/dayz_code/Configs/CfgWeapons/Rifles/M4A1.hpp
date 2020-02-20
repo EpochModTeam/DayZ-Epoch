@@ -74,8 +74,6 @@ class M4A1_DZ : M4A1
 	magazines[] = 
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,//Allow both SD and non-SD
-		30Rnd_556x45_G36SD,
 		30Rnd_556x45_G36, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
@@ -171,12 +169,7 @@ class M4A1_SD_DZ : M4A1_AIM_SD_camo
 	magazines[] =
 	{
 		30Rnd_556x45_G36SD,
-		30Rnd_556x45_G36, //Allow both SD and non-SD
-		100Rnd_556x45_BetaCMag,
-		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,
-		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		30Rnd_556x45_StanagSD
 	};
 	
 	class Attachments
@@ -1578,8 +1571,6 @@ class ice_apo_weapons_M4_DZE : M4A1 {
 	magazines[] = 
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,//Allow both SD and non-SD
-		30Rnd_556x45_G36SD,
 		30Rnd_556x45_G36, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,

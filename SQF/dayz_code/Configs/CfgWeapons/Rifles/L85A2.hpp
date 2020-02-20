@@ -71,9 +71,7 @@ class L85A2_DZ : BAF_L85A2_RIS_Holo
 	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,//Allow both SD and non-SD
 		30Rnd_556x45_G36,
-		30Rnd_556x45_G36SD, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_tape_ice_DZE
@@ -149,12 +147,7 @@ class L85A2_SD_Base : L85A2_DZ
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
-		30Rnd_556x45_Stanag,//Allow both SD and non-SD
-		30Rnd_556x45_G36SD,
-		30Rnd_556x45_G36, 
-		100Rnd_556x45_BetaCMag,
-		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		30Rnd_556x45_G36SD
 	};
 	fireLightDuration = 0;
 	fireLightIntensity = 0;
@@ -762,4 +755,13 @@ class BAF_L85A2_RIS_TWS_DZ : BAF_L85A2_RIS_CWS
 	discreteDistance[] = {100,200,300,400,500,600,700,800};
 	discreteDistanceInitIndex = 2;
 	displayName = "L85A2 TWS";
+	
+	magazines[] =
+	{
+		30Rnd_556x45_Stanag,
+		30Rnd_556x45_G36,
+		100Rnd_556x45_BetaCMag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
+	};	
 };

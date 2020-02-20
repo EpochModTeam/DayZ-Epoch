@@ -29,6 +29,8 @@ class PDW_DZ : UZI_EP1
 		maxRange = 50;
 		maxRangeProbab = 0.02;
 	};
+	
+	magazines[] = {"30Rnd_9x19_UZI"};
 
 	class Attachments
 	{
@@ -62,6 +64,8 @@ class PDW_SD_DZ : UZI_SD_EP1
 		maxRange = 20;
 		maxRangeProbab = 0.02;
 	};	
+	
+	magazines[] = {"30Rnd_9x19_UZI_SD"};
 	
 	class ItemActions
 	{

@@ -2,14 +2,14 @@ class Evo_ACR;
 class Scorpion_Evo3_DZ: Evo_ACR {
 	displayName = $STR_DZ_WPN_SC_EVO3_NAME;
 	descriptionShort = $STR_DZ_WPN_SC_EVO3_DESC;
-	magazines[] = {"30Rnd_9x19_MP5","30Rnd_9x19_MP5SD"};
+	magazines[] = {"30Rnd_9x19_MP5"};
 };
 
 class Evo_mrad_ACR;
 class Scorpion_Evo3_CCO_DZ: Evo_mrad_ACR {
 	displayName = $STR_DZ_WPN_SC_EVO3_CCO_NAME;
 	descriptionShort = $STR_DZ_WPN_SC_EVO3_DESC;
-	magazines[] = {"30Rnd_9x19_MP5","30Rnd_9x19_MP5SD"};
+	magazines[] = {"30Rnd_9x19_MP5"};
 	
 	class Attachments
 	{

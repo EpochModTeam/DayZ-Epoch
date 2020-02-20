@@ -122,7 +122,7 @@ class OpticsModes\
 class ACR_DZ_BASE: M4A1 {
 	scope = private;
 	ACR_FLASHLIGHT;
-	magazines[] = {"ACR_30Rnd_680x43","ACR_30Rnd_680x43_SD"};
+	magazines[] = {"ACR_30Rnd_680x43"};
 	class Library
 	{
 		libTextDesc = "Remington ACR";

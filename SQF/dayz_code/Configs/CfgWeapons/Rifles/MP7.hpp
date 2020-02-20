@@ -108,7 +108,7 @@ class MP7_base: MP5A5
 	};
 	reloadMagazineSound[] = {"\C1987_Mp7\sound\mp7_reload.wss",1,1,20};
 	drySound[] = {"\C1987_Mp7\sound\mp7_dry.wss",1,1,20};
-	magazines[] = {"40Rnd_46x30_mp7","40Rnd_46x30_sd_mp7"};
+	magazines[] = {"40Rnd_46x30_mp7"};
 	descriptionShort = "HK MP7A1";
 	class Library
 	{

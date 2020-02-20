@@ -23,9 +23,7 @@ class Famas_DZ: M4A1
 	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,//Allow both SD and non-SD
 		30Rnd_556x45_G36,
-		30Rnd_556x45_G36SD, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_tape_ice_DZE
@@ -108,12 +106,7 @@ class Famas_SD_DZ: M4A1_AIM_SD_camo
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
-		30Rnd_556x45_Stanag,//Allow both SD and non-SD
-		30Rnd_556x45_G36SD,
-		30Rnd_556x45_G36, 
-		100Rnd_556x45_BetaCMag,
-		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		30Rnd_556x45_G36SD
 	};	
 	
 	class Attachments
