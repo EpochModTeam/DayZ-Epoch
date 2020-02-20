@@ -191,6 +191,7 @@ class 64Rnd_9x19_Bizon : CA_Magazine
 class 64Rnd_9x19_SD_Bizon : CA_Magazine
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_bizonsd_ca.paa";
+	model = "z\addons\dayz_communityweapons\magazines\bizon.p3d";
 	displayName = $STR_DZ_MAG_64RND_9X19_BIZONSD_NAME;
 
 	
