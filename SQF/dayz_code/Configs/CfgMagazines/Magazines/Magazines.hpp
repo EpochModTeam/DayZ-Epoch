@@ -25,6 +25,7 @@
 #include "680x43.hpp"		//ACR
 #include "86x70.hpp"		//L115, MSR
 #include "762x67.hpp"		//XM2010
+#include "20x102.hpp"		//Anzio
 #include "Misc.hpp"			//CZ550, Lee-Enfield
 #include "Shotgun.hpp"
 #include "Arrows.hpp"

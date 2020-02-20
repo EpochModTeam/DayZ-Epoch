@@ -11540,7 +11540,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_M107_DESC">
 			<English>Anti-materiel sniper rifle&lt;br/&gt;Caliber: 12.7x99mm</English>
-			<German>Panzerbrechendes Scharfschützengewehr vom Kalibier. &lt;br/&gt;Kaliber: 12.7x99mm</German>
+			<German>Panzerbrechendes Scharfschützengewehr &lt;br/&gt;Kaliber: 12.7x99mm</German>
 			<Russian>Крупнокалиберная полуавтоматическая снайперская винтовка Баррет М107.&lt;br/&gt;Патрон: 12.7x99мм НАТО</Russian>
 		</Key>	
 		
@@ -12282,6 +12282,15 @@
 		<Key ID="STR_DZ_WPN_TEC9_DESC">
 			<English>Automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<German>Automatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+		</Key>	
+		
+		<!-- Anzio 20mm -->	
+		<Key ID="STR_DZ_WPN_ANZIO_NAME">
+			<English>Anzio 20mm</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ANZIO_DESC">
+			<English>Anti-materiel sniper rifle&lt;br/&gt;Caliber: 20x102mm</English>
+			<German>Panzerbrechendes Scharfschützengewehr &lt;br/&gt;Kaliber: 20x102mm</German>
 		</Key>			
 		
 		<!-- **** MAGAZINES **** -->
@@ -13211,6 +13220,21 @@
 			<Russian>Калибр: 9x19мм SD&lt;br/&gt;Патронов: 18&lt;br/&gt;Используется в: CZ 75SP SD</Russian>
 			<German>Kaliber: 9x19mm SD&lt;br/&gt;Patronen: 18&lt;br/&gt;Verwendet in: CZ 75SP SD</German>
 		</Key>	
+	  <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_NAME">
+			<English>3Rnd. Anzio 20mm mag.</English>
+			<Russian>3п. Anzio 20mm маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_DESC">
+			<English>Caliber: 20x102mm&lt;br/&gt;Rounds: 3&lt;br/&gt;Used in: Anzio 20mm</English>
+			<French>Calibre : 20x102mm&lt;br/&gt;Munitions : 3&lt;br/&gt;Utilisé avec: Anzio 20mm</French>
+			<Spanish>Calibre: 20x102mm&lt;br/&gt;Cartuchos: 3&lt;br/&gt;Usado en: Anzio 20mm</Spanish>
+			<Italian>Calibro: 20x102mm&lt;br/&gt;Munizioni: 3&lt;br/&gt;Usato in: Anzio 20mm</Italian>
+			<Polish>Kaliber: 20x102mm&lt;br/&gt;Naboje: 3&lt;br/&gt;Uzywany w: Anzio 20mm</Polish>
+			<Russian>Патрон: 20x102mm &lt;br/&gt;Количество: 3&lt;br/&gt;Исп. в: Anzio 20mm</Russian>
+			<German>Kaliber: 20x102mm&lt;br/&gt;Patronen: 3&lt;br/&gt;Eingesetzt in: Anzio 20mm</German>
+			<Czech>Kalibr: 20x102mm&lt;br/&gt;Nábojů: 3&lt;br/&gt;Pro: Anzio 20mm</Czech>
+			<Hungarian>Kaliber: 20x102mm&lt;br/&gt; Töltények: 3&lt;br/&gt; Hozzá tartozó fegyver: Anzio 20mm</Hungarian>
+      </Key>		
 		
 		<!-- **** ATTACHMENTS **** -->
 		
