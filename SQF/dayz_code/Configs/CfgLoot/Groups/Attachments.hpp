@@ -13,6 +13,8 @@ AttachmentsRU[] =
 {
 	{Loot_MAGAZINE,		1,		Attachment_Kobra},
 	{Loot_MAGAZINE,		1,		Attachment_PSO1},
+	{Loot_MAGAZINE,		1,		Attachment_NSPU},
+	{Loot_MAGAZINE,		1,		Attachment_Ghillie_Desert},
 	{Loot_MAGAZINE,		1,		Attachment_Sup9},
 	{Loot_MAGAZINE,		1,		Attachment_Sup10},		
 	{Loot_MAGAZINE,		1,		Attachment_Sup545},

@@ -3,6 +3,7 @@ class Category_12 {
 	class Attachment_BELT {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class Attachment_SA58RIS {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class Attachment_Ghillie {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Attachment_Ghillie_Desert {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Attachment_FL_Pist {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Attachment_MFL_Pist {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class Attachment_FL {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
@@ -14,6 +15,7 @@ class Category_12 {
 	class Attachment_ACOG {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	class Attachment_Tws {type = "trade_items";buy[] = {-8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	class Attachment_PSO1 {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class Attachment_NSPU {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class Attachment_Sup9 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class Attachment_Sup10 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class Attachment_Sup45 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
@@ -475,7 +477,8 @@ class Category_17 {
 	class SVD_PSO1_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class SVD_PSO1_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {11,"ItemGoldBar"};};
 	// desert camo
-	class SVD_des_EP1 {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
+	class SVD_PSO1_Gh_DES_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {11,"ItemGoldBar"};};
+	class SVD_NSPU_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 };
 
 //Light Machine Guns

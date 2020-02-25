@@ -15,7 +15,6 @@ weaponsRU[] =
 	{Loot_WEAPON,		5,		Mosin_PU_DZ},
 	
 	// Sniper Rifles
-	{Loot_WEAPON,		4,		SVD_des_EP1},
 	{Loot_WEAPON,		4,		SVD_DZ},
 	{Loot_WEAPON,		4,		VSS_vintorez_DZE},
 	{Loot_WEAPON,		1,		KSVK_DZE}, // High value weapon, low spawn chance.

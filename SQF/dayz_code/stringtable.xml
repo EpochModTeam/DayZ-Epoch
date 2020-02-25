@@ -11429,6 +11429,10 @@
 			<English>SVD PSO-1 Camo</English>
 			<Russian>СВД ПСО-1 (камуфляж)</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_SVD_PSO1_DES_NAME">
+			<English>SVD PSO-1 Desert</English>
+			<German>SVD PSO-1 Wüstentarn</German>
+		</Key>		
 		
 		<!-- Mosin -->
 		<Key ID="STR_DZ_WPN_MOSIN_NAME">
@@ -13634,9 +13638,13 @@
 			<German>[E] NSPU-Visier</German>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_NSPU_DESC">
-			<English>An NSPU scope.</English>
+			<English>NSPU scope</English>
 			<German>Zielfernrohr vom Typ NSPU.</German>
 		</Key>
+		<Key ID="STR_DZ_ATT_NSPU_RMVE">
+			<English>Remove NSPU</English>
+			<German>NSPU entfernen</German>
+		</Key>		
 		<Key ID="STR_DZE_ATTACHMENT_NV_NAME">
 			<English>[A] NV scope</English>
 			<German>[E] NV-Visier</German>
