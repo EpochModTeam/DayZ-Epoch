@@ -249,13 +249,6 @@ class Category_16 {
 	class M4A1_GL_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
 	class M4A1_GL_ACOG_SD_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {13,"ItemGoldBar"};};
 	class M4A1_GL_ACOG_SD_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {14,"ItemGoldBar"};};
-	//GL Holo Green Camo
-	class M4A1_HWS_GL_camo {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
-	class M4A1_HWS_GL_SD_Camo {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
-	//CCO FL Desert Camo
-	class M4A3_CCO_EP1 {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
-	class M4A3_RCO_GL_EP1 {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
-	class M4A1_Aim_camo {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class SCAR_L_CQC {type = "trade_weapons";buy[] = {7,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class SCAR_L_CQC_CCO_SD {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {8,"ItemGoldBar"};};
 	class SCAR_L_CQC_Holo {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};

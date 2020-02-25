@@ -116,8 +116,16 @@ class Category_2 {
 class Category_3 {
 	//Holo SD desert camo
 	class G36_C_SD_camo {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
-	//CCO SD green camo
-	class M4A1_AIM_SD_camo {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
+	//CCO green camo
+	class M4A1_Camo_CCO_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class M4A1_Camo_CCO_SD_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
+	//GL Holo Green Camo
+	class M4A1_Camo_Holo_GL_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class M4A1_Camo_Holo_GL_SD_DZ {type = "trade_weapons";buy[] = {12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};	
+	//CCO FL Desert Camo
+	class M4A3_DES_CCO_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	//ACOG GL Grey
+	class M4A3_ACOG_GL_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};	
 	class FNFAL_ANPVS4_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
 	// FN_FAL_ANPVS4_DZE has toggleable night vision
 	class FN_FAL_ANPVS4_DZE {type = "trade_weapons";buy[] = {3,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};

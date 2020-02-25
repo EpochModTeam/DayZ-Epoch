@@ -79,10 +79,9 @@ weaponsUS[] =
 	{Loot_WEAPON,		6,		M16A2_DZ},
 	{Loot_WEAPON,		6,		M16A4_ACOG_DZ},
 	{Loot_WEAPON,		6,		M4A1_DZ},
-	{Loot_WEAPON,		6,		M4A1_AIM_SD_camo},
-	{Loot_WEAPON,		6,		M4A1_HWS_GL_camo},
-	{Loot_WEAPON,		6,		M4A3_CCO_EP1},
-	{Loot_WEAPON,		6,		M4A1_HWS_GL_SD_Camo},
+	{Loot_WEAPON,		6,		M4A1_Camo_CCO_DZ},
+	{Loot_WEAPON,		6,		M4A1_Camo_Holo_GL_DZ},
+	{Loot_WEAPON,		6,		M4A3_DES_CCO_DZ},
 	{Loot_WEAPON,		6,		ACR_WDL_DZ},
 	{Loot_WEAPON,		6,		ACR_BL_DZ},
 	

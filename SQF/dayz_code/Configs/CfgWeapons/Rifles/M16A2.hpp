@@ -35,7 +35,7 @@ class M16A2_GL_DZ : M16A2GL
 	};
 };
 //ice apo resistance mod m16
-class ice_apo_weapons_M16_DZE : M16A2 {
+class M16A2_Rusty_DZ : M16A2 {
 	class FlashLight {
 		color[] = {0.9, 0.9, 0.7, 0.9};
 		ambient[] = {0.1, 0.1, 0.1, 1.0};
@@ -63,3 +63,4 @@ class ice_apo_weapons_M16_DZE : M16A2 {
 		libTextDesc = "This M16 rifle is in a very bad shape.";
 	};
 };
+

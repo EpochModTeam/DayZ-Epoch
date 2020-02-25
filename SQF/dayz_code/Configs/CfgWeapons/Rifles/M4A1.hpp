@@ -1560,7 +1560,7 @@ class M4A1_GL_ACOG_SD_MFL_DZ : M4A1_GL_SD_MFL_DZ
 };
 
 //ice apo resistance mod m4
-class ice_apo_weapons_M4_DZE : M4A1 {
+class M4A1_Rusty_DZ : M4A1 {
 	M4A1_FLASHLIGHT;
 	
 	scope = public;
@@ -1581,6 +1581,78 @@ class ice_apo_weapons_M4_DZE : M4A1 {
 		libTextDesc = "This M4 rifle is in a very bad shape.";
 	};
 };
+
+class M4A1_AIM_camo;
+class M4A1_Camo_CCO_DZ: M4A1_AIM_camo {
+	magazines[] = 
+	{
+		30Rnd_556x45_Stanag,
+		30Rnd_556x45_G36, 
+		100Rnd_556x45_BetaCMag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
+	};
+	
+	class Attachments
+	{
+		Attachment_Sup556 = "M4A1_Camo_CCO_SD_DZ";
+	};	
+};
+
+class M4A1_Camo_CCO_SD_DZ: M4A1_AIM_SD_camo {
+	magazines[] =
+	{
+		30Rnd_556x45_StanagSD,
+		30Rnd_556x45_G36SD
+	};
+	
+	class Attachments {};	
+	class ItemActions
+	{
+		class RemoveSuppressor
+		{
+			text = $STR_ATTACHMENT_RMVE_Silencer;
+			script = "; ['Attachment_Sup556',_id,'M4A1_Camo_CCO_DZ'] call player_removeAttachment";
+		};
+	};	
+};
+
+class M4A1_HWS_GL_camo;
+class M4A1_Camo_Holo_GL_DZ: M4A1_HWS_GL_camo {
+	magazines[] = 
+	{
+		30Rnd_556x45_Stanag,
+		30Rnd_556x45_G36, 
+		100Rnd_556x45_BetaCMag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
+	};
+	
+	class Attachments
+	{
+		Attachment_Sup556 = "M4A1_Camo_Holo_GL_SD_DZ";
+	};	
+};
+
+class M4A1_HWS_GL_SD_Camo;
+class M4A1_Camo_Holo_GL_SD_DZ: M4A1_HWS_GL_SD_Camo {
+	magazines[] =
+	{
+		30Rnd_556x45_StanagSD,
+		30Rnd_556x45_G36SD
+	};
+	
+	class Attachments {};	
+	class ItemActions
+	{
+		class RemoveSuppressor
+		{
+			text = $STR_ATTACHMENT_RMVE_Silencer;
+			script = "; ['Attachment_Sup556',_id,'M4A1_Camo_Holo_GL_DZ'] call player_removeAttachment";
+		};
+	};	
+};
+
 #undef M4A1_FLASHLIGHT
 #undef M4A1_MFLASHLIGHT
 #undef M4A1_M203
