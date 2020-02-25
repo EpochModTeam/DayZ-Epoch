@@ -1,24 +1,22 @@
 //Bikes/ATV
 class Category_37 {
-	class MMT_Civ {type = "trade_any_bicycle";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
-	class Old_bike_TK_INS_EP1 {type = "trade_any_bicycle";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
-	class TT650_Civ {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class TT650_Ins {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class TT650_TK_CIV_EP1 {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class M1030_US_DES_EP1 {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class Old_moto_TK_Civ_EP1 {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CZ_EP1 {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_US_EP1 {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CIV_Black_CP {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CIV_Grey_CP {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CIV_Red_CP {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CIV_Green_CP {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CIV_Blue_CP {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CIV_Yellow_CP {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CIV_Purple_CP {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class ATV_CIV_CP {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
-	class BAF_ATV_D {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};			
-	class BAF_ATV_W {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};		
+	class MMT_Civ_DZE {type = "trade_any_bicycle";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class Old_bike_TK_CIV_EP1_DZE {type = "trade_any_bicycle";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class Old_moto_TK_Civ_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class M1030_US_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class TT650_Civ_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class TT650_Ins_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class TT650_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class ATV_CZ_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class ATV_CIV_CP_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class ATV_CIV_Grey_CP_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class ATV_CIV_Red_CP_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class ATV_CIV_Green_CP_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class BAF_ATV_W_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};	
+	class ATV_CIV_Blue_CP_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class ATV_CIV_Yellow_CP_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class ATV_CIV_Purple_CP_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};	
+	class ATV_CIV_Black_CP_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};	
 };
 
 //Cars

@@ -1,11 +1,7 @@
 class Makarov_DZ : Makarov
 {
 	displayName = $STR_DZ_WPN_PM_NAME;
-	magazines[] =
-	{
-		8Rnd_9x18_Makarov,
-		8Rnd_9x18_MakarovSD
-	};
+	magazines[] = {"8Rnd_9x18_Makarov"};
 	
 	class Attachments
 	{
@@ -17,11 +13,7 @@ class Makarov_DZ : Makarov
 class Makarov_SD_DZ : MakarovSD
 {
 	displayName = $STR_DZ_WPN_PM_SD_NAME;
-	magazines[] =
-	{
-		8Rnd_9x18_MakarovSD,
-		8Rnd_9x18_Makarov //Allow both SD and non-SD
-	};
+	magazines[] = {"8Rnd_9x18_MakarovSD"};
 	
 	class ItemActions
 	{

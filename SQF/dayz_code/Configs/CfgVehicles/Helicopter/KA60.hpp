@@ -38,7 +38,7 @@ class Ka60_GL_PMC_DZ: Ka60_GL_PMC {
 			initTurn = 80;
 			soundServo[] = {"",0.01,1.0};
 			animationSourceHatch = "";
-			stabilizedInAxes = "StabilizedInAxesNone";
+			stabilizedInAxes = "StabilizedInAxesBoth";
 			gunBeg = "muzzle_1";
 			gunEnd = "chamber_1";
 			turretInfoType = "RscWeaponZeroing";

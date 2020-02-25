@@ -362,6 +362,221 @@ class CfgAmmo
 		visiblefire = 16;
 	};
 	
+	//P99
+	class B_10x22_Ball: BulletBase
+	{
+		cartridge = "FxCartridge_Small";
+		cost = 5;
+		typicalSpeed = 344;
+		airFriction = -0.0017;
+		hit = 8.5;
+	};
+	class B_10x22_SD: BulletBase
+	{
+		cartridge = "FxCartridge_Small";
+		visibleFire = 0.035;
+		audibleFire = 0.035;
+		visibleFireTime = 2;
+		cost = 1;
+		typicalSpeed = 265;
+		airFriction = -0.000955;
+		hit = 7.5;
+	};
+	
+	//MP7
+	class B_46x30_Ball: BulletBase
+	{
+		cartridge = "FxCartridge_Mp7";
+		cost = 5;
+		typicalSpeed = 700;
+		airFriction = -0.001425;
+		hit = 8.5;
+	};
+	class B_46x30_SD_Ball: BulletBase
+	{
+		cartridge = "FxCartridge_Mp7";
+		visibleFire = 0.065;
+		audibleFire = 0.065;
+		cost = 5;
+		typicalSpeed = 650;
+		airFriction = -0.0012;
+		hit = 7.0;
+	};
+	
+	//ACR
+	class B_680x43_Ball: BulletBase
+	{
+		hit = 10;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		caliber = 0.7;
+		visibleFire = 18;
+		audibleFire = 16;
+		cost = 1.1;
+		airFriction = -0.0011787;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		tracerScale = 1.1;
+		tracerStartTime = 0.05;
+		tracerEndTime = 1;
+		typicalSpeed = 700;
+	};
+	class B_680x43_SD: BulletBase
+	{
+		hit = 9;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		caliber = 0.7;
+		visibleFire = 0.08;
+		audibleFire = 0.08;
+		visibleFireTime = 2;
+		cost = 1.1;
+		airFriction = -0.0011787;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		tracerScale = 1.1;
+		tracerStartTime = 0.05;
+		tracerEndTime = 1;
+		typicalSpeed = 420;
+	};	
+	
+	//RSASS
+	class Rem_762x51_Ball: BulletBase
+	{
+		hit = 12;
+		typicalSpeed = 900;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		visibleFire = 22;
+		audibleFire = 18;
+		visibleFireTime = 3;
+		cost = 1.2;
+		airFriction = -0.0009324;
+	};
+	class Rem_762x51_SD: BulletBase
+	{
+		hit = 11;
+		typicalSpeed = 850;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		audibleFire = 0.1;
+		visibleFireTime = 2;
+		cost = 1.2;
+		airFriction = -0.00098;		
+	};	
+	
+	//XM2010
+	class Rem_300Win_Ball: BulletBase
+	{
+		hit = 14;
+		typicalSpeed = 850;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		visibleFire = 18;
+		audibleFire = 18;
+		visibleFireTime = 3;
+		cost = 1.2;
+		airFriction = -0.0009324;
+	};
+	class Rem_300Win_SD: BulletBase
+	{
+		hit = 12;
+		typicalSpeed = 750;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		visibleFire = 0.1;
+		audibleFire = 0.1;
+		visibleFireTime = 3;
+		cost = 1.2;
+		airFriction = -0.0009324;
+	};
+	
+	//KAC PDW
+	class B_556x45_Ball;
+	class B_6x35_Ball: B_556x45_Ball
+	{
+		airfriction = -0.0015;
+		hit = 8.5;
+	};
+	
+	//Colt Anaconda, Taurus Raging Bull
+	class B_44mag_Ball: BulletBase
+	{
+		hit = 12;
+		cost = 1;
+		cartridge = "FxCartridge_Small";
+		typicalSpeed = 260;
+		airFriction = -0.0015;
+		caliber = 0.5;
+	};
+	
+	//Colt Python
+	class B_357mag_Ball: BulletBase
+	{
+		hit = 14;
+		cost = 1;
+		cartridge = "FxCartridge_Small";
+		typicalSpeed = 260;
+		airFriction = -0.0015;
+		caliber = 0.3;
+	};	
+	
+	//Walther PPK
+	class B_9x17_Ball: BulletBase
+	{		
+		airfriction = -0.002751;
+		audiblefire = 15;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 6.2;
+		typicalspeed = 320;
+		visiblefire = 12;		
+	};
+	
+	//USP SD
+	class B_45ACP_SD: BulletBase
+	{
+		airfriction = -0.0013522;
+		visibleFire = 0.08;
+		audibleFire = 0.08;		
+		caliber = 0.33; //33
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 8;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 260;
+	};
+	
+	//Tokarew TT-33
+	class B_762x25_Ball: BulletBase
+	{
+		airfriction = -0.002751;
+		audiblefire = 15;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 9.5;
+		typicalspeed = 300;
+		visiblefire = 15;
+	};
+	
+	//Ruger MK2
+	class B_22lfB_Ball: BulletBase
+	{
+		airfriction = -0.002751;
+		audiblefire = 10;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 5;
+		typicalspeed = 400;
+		visiblefire = 10;
+	};
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

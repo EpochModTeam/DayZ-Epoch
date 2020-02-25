@@ -14,3 +14,8 @@ if (isNull _body) exitWith { dayz_actionInProgress = false;};
 player action ["hideBody", _body];
 
 dayz_actionInProgress = false;
+
+if (_body isKindOf "zZombie_base" || {_body isKindOf "Animal"}) then {
+	uisleep 5;
+	deleteVehicle _body;
+};

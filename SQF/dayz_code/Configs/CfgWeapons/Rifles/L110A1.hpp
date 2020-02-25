@@ -7,13 +7,12 @@ class L110A1_CCO_DZ : BAF_L110A1_Aim
 	type = WeaponSlotPrimary;
 	magazines[] =
 	{
+		200Rnd_556x45_L110A1,
 		200Rnd_556x45_M249,
 		100Rnd_556x45_M249,
-		30Rnd_556x45_G36SD,
-		30Rnd_556x45_G36, //Allow both SD and non-SD
+		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,
 		20Rnd_556x45_Stanag,
 		60Rnd_556x45_Stanag_tape_ice_DZE
 	};
@@ -64,6 +63,17 @@ class L110A1_DZ : L110A1_CCO_DZ
 	class ItemActions {};
 };
 
-class BAF_L110A1_Aim_DZE:BAF_L110A1_Aim { //Slightly different scope from L110A1_CCO_DZ, otherwise identical
+class BAF_L110A1_Aim_DZE: BAF_L110A1_Aim { //Slightly different scope from L110A1_CCO_DZ, otherwise identical
 	type = WeaponSlotPrimary;
+	magazines[] =
+	{
+		200Rnd_556x45_L110A1,
+		200Rnd_556x45_M249,
+		100Rnd_556x45_M249,
+		30Rnd_556x45_G36,
+		100Rnd_556x45_BetaCMag,
+		30Rnd_556x45_Stanag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
+	};	
 };

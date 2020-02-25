@@ -168,10 +168,10 @@ MilitaryCZ[] =
 MilitarySmallCZ[] =
 {
 	{Loot_WEAPON,		6,		Sa61_EP1},
-	{Loot_WEAPON,		3,		CZ_75_P_07_DUTY},
-	{Loot_WEAPON,		3,		CZ_75_D_COMPACT},
-	{Loot_WEAPON,		3,		CZ_75_SP_01_PHANTOM},
-	{Loot_WEAPON,		2,		CZ_75_SP_01_PHANTOM_SD},
+	{Loot_WEAPON,		3,		CZ75P_DZ},
+	{Loot_WEAPON,		3,		CZ75D_DZ},
+	{Loot_WEAPON,		3,		CZ75SP_DZ},
+	{Loot_WEAPON,		2,		CZ75SP_SD_DZ},
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_GROUP,		3,		militaryclothes},
 	{Loot_MAGAZINE,		1,		PipeBomb},

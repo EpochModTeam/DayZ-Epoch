@@ -6,13 +6,6 @@ class MP5_DZ : MP5A5
 	magazines[] =
 	{
 		30Rnd_9x19_MP5,
-		30Rnd_9x19_MP5SD,
-		30Rnd_9x19_UZI,
-		30Rnd_9x19_UZI_SD,
-		15Rnd_9x19_M9,
-		15Rnd_9x19_M9SD,
-		17Rnd_9x19_glock17,
-		17Rnd_9x19_glock17SD //not an A2 mag
 	};
 	
 	class Attachments
@@ -30,14 +23,7 @@ class MP5_SD_DZ : MP5SD
 	
 	magazines[] =
 	{
-		30Rnd_9x19_MP5SD,
-		30Rnd_9x19_MP5, //Allow both SD and non-SD
-		30Rnd_9x19_UZI_SD,
-		30Rnd_9x19_UZI,
-		15Rnd_9x19_M9SD,
-		15Rnd_9x19_M9,
-		17Rnd_9x19_glock17SD,
-		17Rnd_9x19_glock17
+		30Rnd_9x19_MP5SD
 	};
 	
 	class ItemActions

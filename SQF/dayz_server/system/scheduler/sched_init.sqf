@@ -5,6 +5,7 @@ call compile preprocessFileLineNumbers (PATH+"sched_lootpiles.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_sync.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_safetyVehicle.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_event.sqf");
+call compile preprocessFileLineNumbers (PATH+"sched_traps.sqf");
 
 [
 	// period	offset	code <-> ctx				init code ->ctx
@@ -14,7 +15,8 @@ call compile preprocessFileLineNumbers (PATH+"sched_event.sqf");
 	 [ 6,	 	340,	sched_lootpiles ],
 	 [ 900,		0,		sched_sync ],
 	 [ 120,		48,		sched_safetyVehicle ],
-	 [ 360,		480,	sched_fps ]
+	 [ 360,		480,	sched_fps ],
+	 [ 30,		60,		sched_traps,				sched_traps_init ]
 ] execFSM ("z\addons\dayz_code\system\scheduler\scheduler.fsm");
 
 //diag_log [ __FILE__, "Scheduler started"];

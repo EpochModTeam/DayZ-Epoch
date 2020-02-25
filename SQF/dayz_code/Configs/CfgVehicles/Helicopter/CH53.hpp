@@ -27,7 +27,7 @@ class CH53_DZE : USEC_ch53_E {
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
 	transportMaxWeapons = 40;
-	transportMaxMagazines = 300;
+	transportMaxMagazines = 250;
 	transportmaxbackpacks = 15;
 	fuelCapacity = 3849;
 	class eventhandlers {

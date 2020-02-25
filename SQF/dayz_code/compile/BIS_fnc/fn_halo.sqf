@@ -3,9 +3,9 @@ uiSleep 0.01;
 
 //--- HALO -------------------------------------------------------------------------------------------------------------------------------------
 if (typename _this == typename objnull) then {
-	
+
 	_unit = _this;
-	
+
 	//--- Eject!
 	waituntil {(vehicle _unit) iskindof "ParachuteBase" || !isnil {_unit getvariable "bis_fnc_halo_now"}};
 	if (!local _unit) exitwith {};
@@ -14,7 +14,7 @@ if (typename _this == typename objnull) then {
 	_parachute = vehicle _unit;
 	if (_parachute != _unit) then {
 		deletevehicle _parachute;
-	}; 
+	};
 
 	//--- Init
 	_dir = ([[0,0,0],velocity _unit] call bis_fnc_dirto);
@@ -54,7 +54,7 @@ if (typename _this == typename objnull) then {
 		/* 17 */		"",
 		/* 18 */		player
 		];
-		bis_fnc_halo_clouds = "#particlesource" createVehicleLocal _pos;  
+		bis_fnc_halo_clouds = "#particlesource" createVehicleLocal _pos;
 		bis_fnc_halo_clouds setParticleParams _parray;
 		bis_fnc_halo_clouds setParticleRandom [0, [100, 100, 0], [0, 0, 0], 0, 0, [0, 0, 0, 0], 0, 1];
 		bis_fnc_halo_clouds setParticleCircle [00, [00, 00, 00]];
@@ -65,7 +65,7 @@ if (typename _this == typename objnull) then {
 		bis_fnc_halo_ppRadialBlur = ppeffectcreate ["RadialBlur",464];
 		bis_fnc_halo_ppRadialBlur ppEffectAdjust [0.01,0.01,0.3,0.3];
 		bis_fnc_halo_ppRadialBlur ppEffectCommit 0.01;
-		bis_fnc_halo_ppRadialBlur ppEffectEnable true ; 
+		bis_fnc_halo_ppRadialBlur ppEffectEnable true ;
 		bis_fnc_halo_soundLoop = time;
 		playsound "BIS_HALO_Flapping";
 
@@ -111,11 +111,11 @@ if (typename _this == typename objnull) then {
 		[] spawn {
 			_time = time - 0.1;
 			while {alive player && vehicle player == player && isnil {player getvariable "bis_fnc_halo_terminate"} && (([player] call FNC_GetPos) select 2) > DZE_HaloOpenChuteHeight} do {
-			
+
 				//--- FPS counter
 				_fpsCoef = ((time - _time) * 60) / acctime; //Script is optimized for 60 FPS
 				_time = time;
-				
+
 				bis_fnc_halo_velLimit = 0.2 * _fpsCoef;
 				bis_fnc_halo_velAdd = 0.03 * _fpsCoef;
 				bis_fnc_halo_dirLimit = 1 * _fpsCoef;
@@ -165,7 +165,7 @@ if (typename _this == typename objnull) then {
 				bis_fnc_halo_ppRadialBlur ppEffectAdjust [0.02,0.02,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef,0.3 - (bis_fnc_halo_vel/7)/_fpsCoef];
 				bis_fnc_halo_ppRadialBlur ppEffectCommit 0.01;
 				*/
-				if (DZE_HaloAltitudeMeter && !isNil "Dayz_loginCompleted") then {
+				if (DZE_HaloAltitudeMeter && {!isNil "Dayz_loginCompleted"}) then {
 					titleText [
 						format [
 							localize "str_halo_altitude_speed",
@@ -174,7 +174,7 @@ if (typename _this == typename objnull) then {
 						],"PLAIN DOWN",0.01
 					];
 				};
-				
+
 				uiSleep 0.01;
 			};
 			//--- End
@@ -199,7 +199,7 @@ if (typename _this == typename objnull) then {
 				player switchmove "adthppnemstpsraswrfldnon_1";
 				player setvelocity [0,0,0];
 			} else {
-				if (DZE_HaloOpenChuteHeight > -1 && isNil "bis_fnc_halo_para_dirAbs") then {
+				if (DZE_HaloOpenChuteHeight > -1 && {isNil "bis_fnc_halo_para_dirAbs"}) then {
 					//Auto open chute
 					[player] spawn BIS_fnc_Halo;
 				};
@@ -244,10 +244,10 @@ if (typename _this == typename []) then {
 		_unit spawn bis_fnc_halo;
 	};
 	//-------------
-	
+
 	_para = objnull;
 	_vel = [];
-	_unit allowDamage false; //Prevent glitch death when opening chute 
+	_unit allowDamage false; //Prevent glitch death when opening chute
 	_paraPosition1 = [_unit] call FNC_GetPos;
 	_para = createVehicle ["ParachuteWest", _paraPosition1, [], 0, "CAN_COLLIDE"];
 	//_para = "BIS_Steerable_Parachute" createVehicle position _unit;
@@ -345,6 +345,17 @@ if (typename _this == typename []) then {
 					(-bis_fnc_halo_para_vel * 75) + 0.5*(sin (time * 180)),
 					(+bis_fnc_halo_para_dir * 25) + 0.5*(cos (time * 180))
 				] call bis_fnc_setpitchbank;
+
+				_para = vehicle player;
+				_speed = abs speed _para;
+			if ((_para != player) && {_speed > 13}) then {
+				_velocity = velocity _para;
+				_y = 0.8;				
+				if (_speed > 20) then {_y = 0.1;};
+				_drop = [(_velocity select 0) * _y, (_velocity select 1) * _y, (_velocity select 2) * 1.1];
+				_para SetVelocity _drop;
+			};
+
 		};
 
 		bis_fnc_halo_para_mousemoving_eh = (finddisplay 46) displayaddeventhandler ["mousemoving","_this call bis_fnc_halo_para_loop;"];

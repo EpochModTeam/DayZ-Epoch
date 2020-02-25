@@ -36,10 +36,10 @@ if (!isDedicated) then {
 	building_spawnZombies = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnZombies.sqf";
 	player_fired = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
 	player_packTent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packTent.sqf";
-	player_updateGui = switch (toLower DZE_UI) do {
-		case "dark": {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGuiDark.sqf";};
-		case "epoch": {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGuiEpoch.sqf";};
-		case "vanilla": {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";};
+	player_updateGui = call {
+		if (toLower DZE_UI == "vanilla") exitWith {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";};
+		if (toLower DZE_UI == "dark") exitWith {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGuiDark.sqf";};
+		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGuiEpoch.sqf"; // default Epoch.
 	};
 	player_crossbowBolt = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
 	player_music = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music

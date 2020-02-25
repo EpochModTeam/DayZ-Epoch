@@ -4,8 +4,6 @@ class M16A2_DZ : M16A2
 	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,//Allow both SD and non-SD
-		30Rnd_556x45_G36SD,
 		30Rnd_556x45_G36, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
@@ -22,8 +20,6 @@ class M16A2_GL_DZ : M16A2GL
 	magazines[] =
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,//Allow both SD and non-SD
-		30Rnd_556x45_G36SD,
 		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
@@ -58,8 +54,6 @@ class ice_apo_weapons_M16_DZE : M16A2 {
 	magazines[] = 
 	{
 		30Rnd_556x45_Stanag,
-		30Rnd_556x45_StanagSD,//Allow both SD and non-SD
-		30Rnd_556x45_G36SD,
 		30Rnd_556x45_G36, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,

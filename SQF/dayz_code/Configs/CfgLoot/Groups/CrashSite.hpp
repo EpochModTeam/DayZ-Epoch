@@ -54,6 +54,8 @@ CrashSiteUS[] =
 	//Weapons
 	{Loot_GROUP,		30,		weaponsUS},
 	{Loot_WEAPON,		1,		M107_DZ}, // High value weapon
+	{Loot_WEAPON,		5,		ACR_WDL_NV_DZ}, // ACR WDL NV
+	{Loot_WEAPON,		5,		ACR_BL_NV_DZ}, // ACR BL NV
 
 	//Tools
 	{Loot_GROUP,		3,		ToolsMilitary},
@@ -125,7 +127,7 @@ CrashSiteEUPile[] =
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_MAGAZINE,		10,		FoodMRE},
 	{Loot_GROUP,		15,		AmmoEU},
-	{Loot_MAGAZINE,		3,		5Rnd_127x99_as50},
+	{Loot_MAGAZINE,		3,		5Rnd_127x99_as50_CP},
 	{Loot_GROUP,		10,		MedicalLow}
 };
 

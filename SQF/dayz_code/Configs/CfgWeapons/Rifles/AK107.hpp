@@ -6,7 +6,6 @@ class AK107_Kobra_DZ : AK_107_kobra
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
-		30Rnd_545x39_AKSD, //Allow both SD and non-SD
 		75Rnd_545x39_RPK
 	};
 	
@@ -33,7 +32,6 @@ class AK107_DZ : AK_107_CP
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
-		30Rnd_545x39_AKSD, //Allow both SD and non-SD
 		75Rnd_545x39_RPK
 	};	
 	
@@ -55,7 +53,6 @@ class AK107_GL_DZ : AK_107_GL_CP
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
-		30Rnd_545x39_AKSD, //Allow both SD and non-SD
 		75Rnd_545x39_RPK
 	};
 		
@@ -82,7 +79,6 @@ class AK107_PSO_DZ : AK_107_pso
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
-		30Rnd_545x39_AKSD, //Allow both SD and non-SD
 		75Rnd_545x39_RPK
 	};
 		
@@ -108,7 +104,6 @@ class AK107_GL_PSO_DZ : AK_107_GL_pso
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
-		30Rnd_545x39_AKSD, //Allow both SD and non-SD
 		75Rnd_545x39_RPK
 	};
 		
@@ -136,7 +131,6 @@ class AK107_GL_Kobra_DZ : AK_107_GL_kobra
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
-		30Rnd_545x39_AKSD, //Allow both SD and non-SD
 		75Rnd_545x39_RPK
 	};
 		

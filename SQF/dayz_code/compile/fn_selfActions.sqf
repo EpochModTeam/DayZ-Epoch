@@ -217,8 +217,8 @@ if (_isPZombie) then {
 	};
 };
 
-// Increase distance only if AIR or SHIP
-_allowedDistance = [4, 8] select ((_cursorTarget isKindOf "Air") || (_cursorTarget isKindOf "Ship"));
+// Increase distance only if AIR, SHIP or TANK
+_allowedDistance = [4, 8] select ((_cursorTarget isKindOf "Air") || {_cursorTarget isKindOf "Ship"} || {_cursorTarget isKindOf "Tank"});
 
 if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance _cursorTarget < _allowedDistance} && {_canDo}) then {
 //Has some kind of target

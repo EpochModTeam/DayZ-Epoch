@@ -28,6 +28,7 @@ class CfgWeapons
 	#include "Rifles\KSVK.hpp"
 	#include "Rifles\M4SPR.hpp"
 	#include "Rifles\VSSVintorez.hpp"
+	#include "Rifles\CZ750.hpp"
 	
 	//Ak107
 	#include "Rifles\AK107.hpp"	
@@ -53,6 +54,7 @@ class CfgWeapons
 		class Single;
 	};
 	#include "Rifles\DMR.hpp"
+	#include "Rifles\RSASS.hpp"
 	
 	class FN_FAL;
 	class FN_FAL_ANPVS4;
@@ -76,9 +78,18 @@ class CfgWeapons
 	class M4A1;
 	class M4A1_AIM_SD_camo;
 	#include "Rifles\M4A1.hpp"
+	//Famas
+	#include "Rifles\Famas.hpp"	
+	#include "Rifles\ACR.hpp"
+	#include "Rifles\KACPDW.hpp"
 	
 	class M14_EP1;
 	#include "Rifles\M14.hpp"
+	#include "Rifles\M1ASC.hpp"
+	#include "Rifles\M21.hpp"
+	
+	//CZ 805
+	#include "Rifles\CZ805.hpp"
 	
 	class M24 : Rifle
 	{
@@ -90,7 +101,7 @@ class CfgWeapons
 	#include "Rifles\M24.hpp"
 	
 	class M40A3;
-	#include "Rifles\M40A3.hpp"
+	#include "Rifles\M40A3.hpp"	
 	
 	class M249;
 	#include "Rifles\M249.hpp"
@@ -140,6 +151,8 @@ class CfgWeapons
 	class MP5A5;
 	class MP5SD;
 	#include "Rifles\MP5.hpp"
+	#include "Rifles\CZScorpion.hpp"
+	#include "Rifles\MP7.hpp"
 	
 	class M16A2;
 	class M16A2GL;
@@ -167,33 +180,44 @@ class CfgWeapons
 	#include "Rifles\Remington870.hpp"
 	#include "Rifles\Crossbow.hpp"
 	#include "Rifles\L115A3.hpp"
-	
-	
+	#include "Rifles\MSR.hpp"
+	#include "Rifles\XM2010.hpp"
 	
 	/* PISTOLS */
 	
 	class M9;
 	class M9SD;
 	#include "Pistols\M9.hpp"
+	#include "Pistols\P99.hpp"
+	#include "Pistols\Browning.hpp"
+	#include "Pistols\P226.hpp"
+	#include "Pistols\P38.hpp"
+	#include "Pistols\PPK.hpp"
+	#include "Pistols\MK22.hpp"
 	
 	class glock17_EP1;
 	#include "Pistols\G17.hpp"
+	#include "Pistols\G18.hpp"
 	
 	class Colt1911;
 	#include "Pistols\M1911.hpp"
+	#include "Pistols\USP.hpp"
 	
 	class Makarov;
 	class MakarovSD;
 	#include "Pistols\Makarov.hpp"
+	#include "Pistols\TT33.hpp"
+	#include "Pistols\RugerMK2.hpp"
 	
 	class UZI_EP1;
+	class UZI_SD_EP1;
 	#include "Pistols\PDW.hpp"
+	#include "Pistols\TEC9.hpp"
 	
-	class revolver_EP1;
+	class revolver_EP1;	
 	#include "Pistols\Revolver.hpp"
 	
-	
-	
+	#include "Pistols\CZ75.hpp"	
 	
 	
 	/* MELEE */

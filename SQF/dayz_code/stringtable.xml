@@ -4455,7 +4455,7 @@
 			<German>Halbautomatische Pistole vom Typ Beretta 92, Militärversion mit Schalldämpfer&lt;br/&gt;Kaliber: 9 x 19 mm</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M1911">
-			<English>M1911</English>
+			<English>Colt M1911</English>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M1911">
 			<English>Semi-automatic pistol &lt;br/&gt;Caliber: .45 ACP</English>
@@ -7004,7 +7004,7 @@
 		</Key>
 		<Key ID="str_player_death_killed">
 			<English>%1 was killed by %2 with %3 from %4m</English>
-			<German>%1 wurde von %2 mit einer %3 aus %4m Entfernung getötet.</German>
+			<German>%1 wurde von %2 mit %3 aus %4m Entfernung getötet.</German>
 			<Russian>%1 был убит игроком %2 с %3 с расстояния %4м</Russian>
 		</Key>
 <!--		
@@ -8711,17 +8711,90 @@
 			<Russian>Dingo MK19 (Лесной камуфляж)</Russian>
 			<German>Dingo MK19 (Waldtarn)</German>
 		</Key>		
-		<Key ID="STR_VEH_NAME_ATV">
-			<English>ATV</English>
-			<Russian>Квадроцикл</Russian>
-			<Spanish>Cuatriciclo</Spanish>
-			<French>Quad</French>
-			<Czech>Čtyřkolka (ATV)</Czech>
-			<German>Quad</German>
+		<Key ID="STR_VEH_NAME_ATV_BEIGE">
+			<English>ATV (Beige)</English>
+			<German>Quad (Beige)</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_TT650_INS">
-			<English>Yamaha TT650</English>
+		<Key ID="STR_VEH_NAME_ATV_GREEN">
+			<English>ATV (Green)</English>
+			<German>Quad (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_ATV_WHITE">
+			<English>ATV (White)</English>
+			<German>Quad (Weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_GREY">
+			<English>ATV (Grey)</English>
+			<German>Quad (Grau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_RED">
+			<English>ATV (Red)</English>
+			<German>Quad (Rot)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_LIGHTGREEN">
+			<English>ATV (Light Green)</English>
+			<German>Quad (Hellgrün)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_ATV_BLUE">
+			<English>ATV (Blue)</English>
+			<German>Quad (Blau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_YELLOW">
+			<English>ATV (Yellow)</English>
+			<German>Quad (Gelb)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_PURPLE">
+			<English>ATV (Purple)</English>
+			<German>Quad (Lila)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_ATV_BLACK">
+			<English>ATV (Black)</English>
+			<German>Quad (Schwarz)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BIKE_OLD">
+			<Chinese>Old Bike</Chinese>
+			<French>Vieille moto</French>
+			<Spanish>Bici vieja</Spanish>
+			<Italian>Vecchia bici</Italian>
+			<Hungarian>Old Bike</Hungarian>
+			<Polish>Stary motocykl</Polish>
+			<Russian>Старый велосипед</Russian>
+			<German>Altes Fahrrad</German>
+			<Czech>Staré kolo</Czech>
+			<English>Old Bike</English>
+			<Japanese>Old Bike</Japanese>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BIKE_MOUNTAINBIKE">
+			<German>Mountainbike</German>
+			<English>Mountain Bike</English>
+			<Italian>Mountain Bike</Italian>
+			<Spanish>Bici MMT</Spanish>
+			<French>Mountain Bike</French>
+			<Czech>Horské kolo</Czech>
+			<Russian>Горный велосипед</Russian>
+			<Polish>Rower górski</Polish>
+			<Hungarian>Mountain Bike</Hungarian>
+		</Key>			
+		<Key ID="STR_VEH_NAME_MOTORBIKE_WHITE">
+			<English>Motorbike (White)</English>
+			<German>Motorrad (Weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_REDWHITE">
+			<English>Motorbike TT650 (Red/White)</English>
+			<German>Motorrad TT650 (Rot/Weiß)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_RUSTY">
+			<English>Motorbike TT650 (Rusty)</English>
+			<German>Motorrad TT650 (Rostig)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOTORBIKE_TT650_FIRERED">
+			<English>Motorbike TT650 (Fire Red)</English>
+			<German>Motorrad TT650 (Feuerrot)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MOTORBIKE_M1030_GREEN">
+			<English>Motorbike M1030 (Green)</English>
+			<German>Motorrad M1030 (Grün)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_RHIB_M2">
 			<English>RHIB (M2)</English>
 			<Russian>НЛЖК (M2)</Russian>
@@ -8828,10 +8901,46 @@
 			<English>Mi-17 MedEvac (RU)</English>
 			<Russian>Ми-17 MedEvac (RU)</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_CH47">
-			<English>CH-47F Chinook</English>
-			<Russian>CH-47F Чинук</Russian>
+		<Key ID="STR_VEH_NAME_MI17_DESERT">
+			<English>Mi-17 (Desert)</English>
+			<Russian>Ми-17 (Desert)</Russian>
+			<German>Mi-17 (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MI17_GREEN">
+			<English>Mi-17 (Green)</English>
+			<Russian>Ми-17 (Зеленый)</Russian>
+			<German>Mi-17 (Grün)</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_MI17_BLUE">
+			<English>Mi-17 (Blue)</English>
+			<Russian>Ми-17 (Синий)</Russian>
+			<German>Mi-17 (Blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_BLACK">
+			<English>Mi-17 (Black)</English>
+			<Russian>Ми-17 (черный)</Russian>
+			<German>Mi-17 (Schwarz)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_CH47_GREEN">
+			<English>CH-47F Chinook (Green)</English>
+			<German>CH-47F Chinook (Grün)</German>
+			<Russian>CH-47F Чинук (Зеленый)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_BLACK">
+			<English>CH-47F Chinook (Black)</English>
+			<German>CH-47F Chinook (Schwarz)</German>
+			<Russian>CH-47F Чинук (черный)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_DESERT">
+			<English>CH-47F Chinook (Desert)</English>
+			<German>CH-47F Chinook (Wüstentarn)</German>
+			<Russian>CH-47F Чинук (Пустынный)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_GREY">
+			<English>CH-47F Chinook (Grey)</English>
+			<German>CH-47F Chinook (Grau)</German>
+			<Russian>CH-47F Чинук (серый)</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_AW101">
 			<English>AW101 Merlin</English>
 		</Key>	
@@ -8847,6 +8956,10 @@
 		<Key ID="STR_VEH_NAME_CH53">
 			<English>CH53E Super Stallion</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_GREEN">
+			<English>UH-1H (Green)</English>
+			<German>UH-1H (Grün)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_WOODLAND">
 			<English>UH-1H (Woodland)</English>
 			<Russian>UH-1H (Лесной камуфляж)</Russian>
@@ -8857,6 +8970,26 @@
 			<Russian>UH-1H (Пустынный)</Russian>
 			<German>UH-1H (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_CDF">
+			<English>UH-1H (CDF)</English>
+			<German>UH-1H (CDF)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT">
+			<English>UH-1H (Desert, light)</English>
+			<German>UH-1H (Wüstentarn, hell)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1H_BLACK">
+			<English>UH-1H (Black)</English>
+			<German>UH-1H (Schwarz)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1H_GREY">
+			<English>UH-1H (Grey)</English>
+			<German>UH-1H (Grau)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1H_SAR">
+			<English>UH-1H (SAR)</English>
+			<German>UH-1H (SAR)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MH60">
 			<English>MH-60S</English>
 		</Key>
@@ -11071,12 +11204,16 @@
 		
 		<!-- M9 -->
 		<Key ID="STR_DZ_WPN_M9_NAME">
-			<English>M9</English>
+			<English>Beretta M9</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_M9_SD_NAME">
-			<English>M9 SD</English>
-			<Russian>M9 ПБС</Russian>
+			<English>Beretta M9 SD</English>
+			<Russian>Beretta M9 ПБС</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M9_SD_DESC">
+			<English>Silenced Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum SD</English>
+			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum SD</German>	
+		</Key>		
 		
 		<!-- G17 -->
 		<Key ID="STR_DZ_WPN_G17_NAME">
@@ -11396,6 +11533,765 @@
 			<Russian>Арбалет ПР MFL</Russian>
 			<German>Armbrust mit Zielfernrohr MTL</German>
 		</Key>
+
+		<!-- M107 -->
+		<Key ID="STR_DZ_WPN_M107_NAME">
+			<English>M107</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_M107_DESC">
+			<English>Anti-materiel sniper rifle&lt;br/&gt;Caliber: 12.7x99mm</English>
+			<German>Panzerbrechendes Scharfschützengewehr &lt;br/&gt;Kaliber: 12.7x99mm</German>
+			<Russian>Крупнокалиберная полуавтоматическая снайперская винтовка Баррет М107.&lt;br/&gt;Патрон: 12.7x99мм НАТО</Russian>
+		</Key>	
+		
+		<!-- CZ750 -->
+		<Key ID="STR_DZ_WPN_CZ750_NAME">
+			<English>CZ 750 S1M1</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ750_DESC">
+			<English>Sniper rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: 7.62x51mm</Russian>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>		
+		
+		<!-- CZ75 -->
+		<Key ID="STR_DZ_WPN_CZ75P_NAME">
+			<English>CZ 75P</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ75D_NAME">
+			<English>CZ 75D</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ75SP_NAME">
+			<English>CZ 75SP</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ75SP_SD_NAME">
+			<English>CZ 75SP SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_CZ75_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm</German>
+		</Key>	
+		
+		<!-- Scorpion Evo 3 -->
+		<Key ID="STR_DZ_WPN_SC_EVO3_NAME">
+			<English>Scorpion Evo 3</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SC_EVO3_CCO_NAME">
+			<English>Scorpion Evo 3 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SC_EVO3_CCO_SD_NAME">
+			<English>Scorpion Evo 3 CCO SD</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_SC_EVO3_DESC">
+          <German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
+          <English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
+          <Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm</Italian>
+          <Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm</Spanish>
+          <French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm</French>
+          <Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm</Czech>
+          <Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм</Russian>
+          <Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm </Polish>
+          <Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_SC_EVO3_SD_DESC">
+          <German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
+          <English>Silenced submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
+          <Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 9x19mm</Italian>
+          <Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 9x19mm</Spanish>
+          <French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 9x19mm</French>
+          <Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
+          <Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 9х19мм</Russian>
+          <Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm </Polish>
+          <Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+        </Key>
+		
+		<!-- CZ 805 -->
+		<Key ID="STR_DZ_WPN_CZ_805A1_NAME">
+			<English>CZ 805A1 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_CZ_805A1_GL_NAME">
+			<English>CZ 805A1 ACOG GL</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_CZ_805A2_NAME">
+			<English>CZ 805A2</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_CZ_805A2_SD_NAME">
+			<English>CZ 805A2 CCO SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_CZ_805B_NAME">
+			<English>CZ 805B1 ACOG GL</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_CZ_805A_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_CZ_805A_SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_CZ_805B_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>	
+		
+		<!-- Rusty Weapons -->
+		<Key ID="STR_DZE_WPN_M16RUSTY_NAME">
+			<English>M16A2 (Rusty)</English>
+			<German>M16A2 (Rostig)</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M16RUSTY_DESC">
+			<English>This M16 rifle is in a very bad shape.</English>
+			<German>Dieses M16 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M4RUSTY_NAME">
+			<English>M4A1 (Rusty)</English>
+			<German>M4A1 (Rostig)</German>
+		</Key>
+		<Key ID="STR_DZE_WPN_M4RUSTY_DESC">
+			<English>This M4 rifle is in a very bad shape.</English>
+			<German>Dieses M4 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
+		</Key>	
+		
+		<!-- AK107 -->
+		<Key ID="STR_DZ_WPN_AK107_NAME">
+			<English>AK-107</English>
+			<Russian>АК-107</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_NAME">
+			<English>AK-107 GP-25</English>
+			<Russian>АК-107 ГП-25</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_KOBRA_NAME">
+			<English>AK-107 Kobra</English>
+			<Russian>АК-107 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_KOBRA_NAME">
+			<English>AK-107 GP-25 Kobra</English>
+			<Russian>АК-107 ГП-25 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_PSO1_NAME">
+			<English>AK-107 PSO-1</English>
+			<Russian>АК-107 ПСО-1</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AK107_GL_PSO1_NAME">
+			<English>AK-107 GP-25 PSO-1</English>
+			<Russian>АК-107 ГП-25 ПСО-1</Russian>
+		</Key>	
+
+		<!-- MP7 -->
+		<Key ID="STR_DZ_WPN_MP7_NAME">
+			<English>MP7</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MP7_FL_NAME">
+			<English>MP7 FL</English>
+			<German>MP7 TL</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MP7_MFL_NAME">
+			<English>MP7 MFL</English>
+			<German>MP7 MTL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_SD_NAME">
+			<English>MP7 SD</English>
+			<Russian>MP7 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_SD_FL_NAME">
+			<English>MP7 SD FL</English>
+			<German>MP7 SD TL</German>
+			<Russian>MP7 ПБС FL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_SD_MFL_NAME">
+			<English>MP7 SD MFL</English>
+			<German>MP7 SD MTL</German>
+			<Russian>MP7 ПБС MFL</Russian>
+		</Key>
+		<!-- MP7 CCO-->
+		<Key ID="STR_DZ_WPN_MP7_CCO_NAME">
+			<English>MP7 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_FL_NAME">
+			<English>MP7 CCO FL</English>
+			<German>MP7 CCO TL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_MFL_NAME">
+			<English>MP7 CCO MFL</English>
+			<German>MP7 CCO MTL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_SD_NAME">
+			<English>MP7 CCO SD</English>
+			<Russian>MP7 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_SD_FL_NAME">
+			<English>MP7 CCO SD FL</English>
+			<German>MP7 CCO SD TL</German>
+			<Russian>MP7 CCO ПБС FL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_CCO_SD_MFL_NAME">
+			<English>MP7 CCO SD MFL</English>
+			<German>MP7 CCO SD MTL</German>
+			<Russian>MP7 CCO ПБС MFL</Russian>
+		</Key>
+		<!-- MP7 Holo -->
+		<Key ID="STR_DZ_WPN_MP7_HOLO_NAME">
+			<English>MP7 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_FL_NAME">
+			<English>MP7 Holo FL</English>
+			<German>MP7 Holo TL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_MFL_NAME">
+			<English>MP7 Holo MFL</English>
+			<German>MP7 Holo MTL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_SD_NAME">
+			<English>MP7 Holo SD</English>
+			<Russian>MP7 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_SD_FL_NAME">
+			<English>MP7 Holo SD FL</English>
+			<German>MP7 Holo SD TL</German>
+			<Russian>MP7 Holo ПБС FL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_HOLO_SD_MFL_NAME">
+			<English>MP7 Holo SD MFL</English>
+			<German>MP7 Holo SD MTL</German>
+			<Russian>MP7 Holo ПБС MFL</Russian>
+		</Key>
+		<!-- MP7 ACOG -->
+		<Key ID="STR_DZ_WPN_MP7_ACOG_NAME">
+			<English>MP7 ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_FL_NAME">
+			<English>MP7 ACOG FL</English>
+			<German>MP7 ACOG TL</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_MFL_NAME">
+			<English>MP7 ACOG MFL</English>
+			<German>MP7 ACOG MTL</German>
+			<Russian>MP7 ACOG MFL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_SD_NAME">
+			<English>MP7 ACOG SD</English>
+			<Russian>MP7 ACOG ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_SD_FL_NAME">
+			<English>MP7 ACOG SD FL</English>
+			<German>MP7 ACOG SD TL</German>
+			<Russian>MP7 ACOG ПБС FL</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MP7_ACOG_SD_MFL_NAME">
+			<English>MP7 ACOG SD MFL</English>
+			<German>MP7 ACOG SD MTL</German>
+			<Russian>MP7 ACOG ПБС MFL</Russian>
+		</Key>	
+        <Key ID="STR_DZ_WPN_MP7_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: 4.6x30mm</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: 4.6x30mm</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 4.6x30mm</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: 4.6x30mm</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 4.6x30mm</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: 4.6x30mm</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 4.6x30мм</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 4.6x30mm</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_MP7_SD_DESC">
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 4.6x30mm SD</English>		
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 4.6x30mm SD</German>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 4.6x30mm SD</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 4.6x30mm SD</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 4.6x30mm SD</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 4.6x30mm SD</Czech>
+			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 4.6x30мм SD</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 4.6x30mm SD </Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm SD</Hungarian>
+        </Key>
+
+		<!-- P99 -->	
+		<Key ID="STR_DZ_WPN_P99_NAME">
+			<English>P99</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_P99SD_NAME">
+			<English>P99 SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_P99_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 10x22mm</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 10x22mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_P99SD_DESC">
+			<English>Silenced Semi-automatic Pistol &lt;br/&gt;Caliber: 10x22mm SD</English>
+			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: 10x22mm SD</German>
+		</Key>		
+	
+		<!-- Famas -->
+		<Key ID="STR_DZ_WPN_FAMAS_NAME">
+			<English>Famas</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_FAMAS_COO_NAME">
+			<English>Famas CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_FAMAS_HOLO_NAME">
+			<English>Famas Holo</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_FAMAS_SD_NAME">
+			<English>Famas SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_FAMAS_COO_SD_NAME">
+			<English>Famas CCO SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_FAMAS_HOLO_SD_NAME">
+			<English>Famas Holo SD</English>
+		</Key>	
+
+		<!-- ACR -->	
+		<Key ID="STR_DZ_WPN_ACR_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_NV_DESC">
+			<English>Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Sturmgewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_NV_SD_DESC">
+			<English>Silenced Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Schallgedämpftes Sturmgewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_TWS_DESC">
+			<English>Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Sturmgewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_TWS_SD_DESC">
+			<English>Silenced Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
+			<German>Schallgedämpftes Sturmgewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_NAME">
+			<English>ACR</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_COO_NAME">
+			<English>ACR CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_HOLO_NAME">
+			<English>ACR Holo</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_ACOG_NAME">
+			<English>ACR ACOG</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_GL_NAME">
+			<English>ACR GL</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_TWS_NAME">
+			<English>ACR TWS</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_TWS_SD_NAME">
+			<English>ACR TWS SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_TWS_GL_NAME">
+			<English>ACR TWS GL</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_TWS_GL_SD_NAME">
+			<English>ACR TWS GL SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_CCO_GL_NAME">
+			<English>ACR CCO GL</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_HOLO_GL_NAME">
+			<English>ACR Holo GL</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_SD_NAME">
+			<English>ACR SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_COO_SD_NAME">
+			<English>ACR CCO SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_ACOG_SD_NAME">
+			<English>ACR ACOG SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_ACOG_GL_NAME">
+			<English>ACR ACOG GL</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_ACOG_GL_SD_NAME">
+			<English>ACR ACOG GL SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_GL_SD_NAME">
+			<English>ACR GL SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_CCO_GL_SD_NAME">
+			<English>ACR CCO GL SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_HOLO_SD_NAME">
+			<English>ACR Holo SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_HOLO_GL_SD_NAME">
+			<English>ACR Holo GL SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_ACR_NV_GL_NAME">
+			<English>ACR NV GL</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ACR_NV_GL_SD_NAME">
+			<English>ACR NV GL SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_ACR_NV_SD_NAME">
+			<English>ACR NV SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ACR_NV_NAME">
+			<English>ACR NV</English>
+		</Key>	
+		
+		<!-- RSASS -->	
+		<Key ID="STR_DZ_WPN_RSASS_NAME">
+			<English>R11 RSASS</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_RSASSSD_NAME">
+			<English>R11 RSASS SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_RSASS_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_RSASS_SD_DESC">
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_RSASS_TWS_NAME">
+			<English>R11 RSASS TWS</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_RSASSSD_TWS_NAME">
+			<English>R11 RSASS TWS SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_RSASS_TWS_DESC">
+			<English>Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_RSASS_SD_TWS_DESC">
+			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>	
+		
+		<!-- MSR -->	
+		<Key ID="STR_DZ_WPN_MSR_NAME">
+			<English>MSR</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MSRSD_NAME">
+			<English>MSR SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MSR_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: .338</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .338</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MSR_SD_DESC">
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .338</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .338</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MSR_TWS_NAME">
+			<English>MSR TWS</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MSRSD_TWS_NAME">
+			<English>MSR TWS SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MSR_TWS_DESC">
+			<English>Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .338</English>
+			<German>Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .338</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MSR_SD_TWS_DESC">
+			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .338</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .338</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MSR_NV_NAME">
+			<English>MSR NV</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MSRSD_NV_NAME">
+			<English>MSR NV SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MSR_NV_DESC">
+			<English>Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .338</English>
+			<German>Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .338</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MSR_SD_NV_DESC">
+			<English>Silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .338</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .338</German>
+		</Key>	
+
+		<!-- XM2010 -->	
+		<Key ID="STR_DZ_WPN_XM2010_NAME">
+			<English>XM2010</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_XM2010SD_NAME">
+			<English>XM2010 SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_XM2010_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: .300</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .300</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_XM2010_SD_DESC">
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .300</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .300</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_XM2010_TWS_NAME">
+			<English>XM2010 TWS</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_XM2010SD_TWS_NAME">
+			<English>XM2010 TWS SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_XM2010_TWS_DESC">
+			<English>Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .300</English>
+			<German>Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .300</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_XM2010_SD_TWS_DESC">
+			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .300</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .300</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_XM2010_NV_NAME">
+			<English>XM2010 NV</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_XM2010SD_NV_NAME">
+			<English>XM2010 NV SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_XM2010_NV_DESC">
+			<English>Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .300</English>
+			<German>Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .300</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_XM2010_SD_NV_DESC">
+			<English>Silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .300</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .300</German>
+		</Key>	
+
+		<!-- KAC PDW -->	
+		<Key ID="STR_DZ_WPN_KACPDW_NAME">
+			<English>KAC PDW</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_KACPDW_CCO_NAME">
+			<English>KAC PDW CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_KACPDW_HOLO_NAME">
+			<English>KAC PDW Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_KACPDW_ACOG_NAME">
+			<English>KAC PDW ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_KACPDW_DESC">
+			<English>Short barrel rifle &lt;br/&gt;Caliber: 6x35mm</English>
+			<German>Kurzlaufgewehr &lt;br/&gt;Kaliber: 6x35mm</German>
+		</Key>
+		
+		<!-- M1A SOCOM -->	
+		<Key ID="STR_DZ_WPN_M1ASC16_NAME">
+			<English>M1A SOCOM 16</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M1ASC16_ACOG_NAME">
+			<English>M1A SOCOM 16 ACOG</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_M1ASC16_CCO_NAME">
+			<English>M1A SOCOM 16 CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC16_HOLO_NAME">
+			<English>M1A SOCOM 16 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC16_PU_NAME">
+			<English>M1A SOCOM 16 PU</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_M1ASC16_SNIPER_NAME">
+			<English>M1A SOCOM 16 Sniper</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M1ASC2_NAME">
+			<English>M1A SOCOM 2</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC2_ACOG_NAME">
+			<English>M1A SOCOM 2 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC2_CCO_NAME">
+			<English>M1A SOCOM 2 CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC2_HOLO_NAME">
+			<English>M1A SOCOM 2 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC2_PU_NAME">
+			<English>M1A SOCOM 2 PU</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M1ASC2_SNIPER_NAME">
+			<English>M1A SOCOM 2 Sniper</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M1ASC16_DESC">
+			<English>Semi-automatic rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Halbautomatisches Gewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>			
+		<Key ID="STR_DZ_WPN_M1ASC2_DESC">
+			<English>Semi-automatic rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Halbautomatisches Gewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M21_NAME">
+			<English>M21 SWS</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M21_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>			
+		
+		<!-- Colts -->	
+		<Key ID="STR_DZ_WPN_COLT_ANACONDA_NAME">
+			<English>Colt Anaconda</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_COLT_ANACONDA_GOLD_NAME">
+			<English>Colt Anaconda Gold</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_COLT_ANACONDA_DESC">
+			<English>Revolver &lt;br/&gt;Caliber: .44 Magnum</English>
+			<German>Revolver &lt;br/&gt;Kaliber: .44 Magnum</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_COLT_PYTHON_NAME">
+			<English>Colt Python</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_COLT_PYTHON_DESC">
+			<English>Revolver &lt;br/&gt;Caliber: .357 Magnum</English>
+			<German>Revolver &lt;br/&gt;Kaliber: .357 Magnum</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_TAURUS_NAME">
+			<English>Taurus Raging Bull</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_TAURUS_DESC">
+			<English>Revolver &lt;br/&gt;Caliber: .44 Magnum</English>
+			<German>Revolver &lt;br/&gt;Kaliber: .44 Magnum</German>
+		</Key>	
+
+		<!-- FN Browning HP-->	
+		<Key ID="STR_DZ_WPN_BROWNING_HP_NAME">
+			<English>FN Browning HP</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_BROWNING_HP_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+		</Key>	
+
+		<!-- SIG Sauer P226 -->	
+		<Key ID="STR_DZ_WPN_P226_NAME">
+			<English>SIG Sauer P226</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_P226_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+		</Key>	
+		
+		<!-- Walther P38 -->	
+		<Key ID="STR_DZ_WPN_P38_NAME">
+			<English>Walther P38</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_P38_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+		</Key>
+
+		<!-- Walther PPK -->	
+		<Key ID="STR_DZ_WPN_PPK_NAME">
+			<English>Walther PPK</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_PPK_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .380 ACP</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .380 ACP</German>
+		</Key>		
+		
+		<!-- Mk 22 Mod 0 -->	
+		<Key ID="STR_DZ_WPN_MK22_NAME">
+			<English>Mk 22 Mod 0</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK22_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK22SD_NAME">
+			<English>Mk 22 Mod 0 SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK22SD_DESC">
+			<English>Silenced semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum SD</English>
+			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum SD</German>
+		</Key>		
+
+		<!-- USP -->	
+		<Key ID="STR_DZ_WPN_USP_NAME">
+			<English>USP</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_USP_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .45 ACP</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_USPSD_NAME">
+			<English>USP SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_USPSD_DESC">
+			<English>Silenced semi-automatic Pistol &lt;br/&gt;Caliber: .45 ACP SD</English>
+			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
+		</Key>	
+
+		<!-- Kimber 1911 -->	
+		<Key ID="STR_DZ_WPN_KIMBER1911_NAME">
+			<English>Kimber M1911</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_KIMBER1911_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .45 ACP</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_KIMBER1911SD_NAME">
+			<English>Kimber M1911 SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_KIMBER1911SD_DESC">
+			<English>Silenced semi-automatic Pistol &lt;br/&gt;Caliber: .45 ACP SD</English>
+			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
+		</Key>		
+
+		<!-- Tokarew TT-33 -->	
+		<Key ID="STR_DZ_WPN_TT33_NAME">
+			<English>Tokarew TT-33</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_TT33_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 7.62x25mm</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 7.62x25mm</German>
+		</Key>		
+		
+		<!-- Ruger MK2 -->	
+		<Key ID="STR_DZ_WPN_RUGERMK2_NAME">
+			<English>Ruger MK2</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_RUGERMK2_DESC">
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .22</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .22</German>
+		</Key>	
+		
+		<!-- M93R -->	
+		<Key ID="STR_DZ_WPN_M93R_NAME">
+			<English>Beretta M93R</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M93R_DESC">
+			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+		</Key>		
+
+		<!-- Glock 18 -->	
+		<Key ID="STR_DZ_WPN_G18_NAME">
+			<English>G18</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_G18_DESC">
+			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+		</Key>	
+
+		<!-- Tec-9 -->	
+		<Key ID="STR_DZ_WPN_TEC9_NAME">
+			<English>Tec-9</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_TEC9_DESC">
+			<English>Automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<German>Automatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+		</Key>	
+		
+		<!-- Anzio 20mm -->	
+		<Key ID="STR_DZ_WPN_ANZIO_NAME">
+			<English>Anzio 20mm</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_ANZIO_DESC">
+			<English>Anti-materiel sniper rifle&lt;br/&gt;Caliber: 20x102mm</English>
+			<German>Panzerbrechendes Scharfschützengewehr &lt;br/&gt;Kaliber: 20x102mm</German>
+		</Key>			
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -11454,8 +12350,9 @@
 			<Russian>7п. 1911 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_45ACP_NAME">
-			<English>6Rnd. revolver ammo</English>
+			<English>6Rnd. Revolver ammo</English>
 			<Russian>6п. для револьвера</Russian>
+			<German>6Rnd. .45 Revolver</German>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_30RND_545x39_AKSD_NAME">
@@ -11549,7 +12446,7 @@
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: UK-59</English>
 			<Russian>Калибр: 7.62x54мм&lt;br/&gt;Патронов: 50&lt;br/&gt;Используется в: UK-59</Russian>
-			<German>Kaliber: 7.62x54mm&lt;br/&gt;Schuss: 50&lt;br/&gt;Verwendet in: UK-59</German>
+			<German>Kaliber: 7.62x54mm&lt;br/&gt;Patronen: 50&lt;br/&gt;Verwendet in: UK-59</German>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_NAME">
@@ -11560,7 +12457,7 @@
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_DESC">
 			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 75&lt;br/&gt;Used in: RPK</English>
 			<Russian>Калибр: 7.62x39мм&lt;br/&gt;Патронов: 75&lt;br/&gt;Используется в: РПК</Russian>
-			<German>Kaliber: 7.62x39mm&lt;br/&gt;Schuss: 75&lt;br/&gt;Verwendet in: RPK</German>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 75&lt;br/&gt;Verwendet in: RPK</German>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_75RND_545X39_RPK_NAME">
@@ -11579,7 +12476,11 @@
 			<German>200 Schuss M249 Gurt</German>
 			<Russian>200п. M249 лента</Russian>
 		</Key>
-		
+		<Key ID="STR_DZ_MAG_200RND_556X45_L110_NAME">
+			<English>200Rnd. L110 belt</English>
+			<German>200 Schuss L110 Gurt</German>
+			<Russian>200п. L110 лента</Russian>
+		</Key>		
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_NAME">
 			<English>5Rnd. Mosin Nagant mag.</English>
 			<Russian>5п. для Винтовки Мосина</Russian>
@@ -11587,7 +12488,7 @@
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_DESC">
 			<English>Caliber: 7.62x54mmR&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: Mosin Nagant</English>
 			<Russian>Калибр: 7.62x54mmR&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в Винтовке Мосина</Russian>
-			<German>Kaliber: 7.62x54mmR&lt;br/&gt;Schuss: 5&lt;br/&gt;Verwendet in: Mosin Nagant</German>
+			<German>Kaliber: 7.62x54mmR&lt;br/&gt;Patronen: 5&lt;br/&gt;Verwendet in: Mosin Nagant</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_17HMR_NAME">
 			<English>5Rnd. CZ 550 mag.</English>
@@ -11596,7 +12497,7 @@
 		<Key ID="STR_DZ_MAG_5RND_17HMR_DESC">
 			<English>Caliber: 9,3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
 			<Russian>Калибр: 9,3x62мм&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: CZ 550</Russian>
-			<German>Kaliber: 9,3x62mm&lt;br/&gt;Schuss: 5&lt;br/&gt;Verwendet in: CZ 550</German>
+			<German>Kaliber: 9,3x62mm&lt;br/&gt;Patronen: 5&lt;br/&gt;Verwendet in: CZ 550</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_303BRITISH_NAME">
 			<English>10Rnd. Lee Enfield mag.</English>
@@ -11613,7 +12514,7 @@
 		<Key ID="STR_DZ_MAG_15RND_W1866_DESC">
 			<English>Caliber: 11x23mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Winchester 1866</English>
 			<Russian>Калибр: 11x23мм&lt;br/&gt;Патронов: 15&lt;br/&gt;Используется в: Винчестер 1866</Russian>
-			<German>Kaliber: 11x23mm&lt;br/&gt;Schuss: 15&lt;br/&gt;Verwendet in: Winchester 1866</German>
+			<German>Kaliber: 11x23mm&lt;br/&gt;Patronen: 15&lt;br/&gt;Verwendet in: Winchester 1866</German>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_SLUG_NAME">
@@ -11679,8 +12580,666 @@
 			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
 			<Czech>Ráže: 12&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
 			<German>Kaliber 12 Schrotmunition&lt;br/&gt;8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+		</Key>		
+        <Key ID="STR_DZ_MAG_30RND_MP5_DESC">
+          <German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: MP5, Scorpion Evo 3</German>
+          <English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5, Scorpion Evo 3</English>
+          <Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5, Scorpion Evo 3</Italian>
+          <Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5, Scorpion Evo 3 </Spanish>
+          <French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: MP5, Scorpion Evo 3</French>
+          <Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5, Scorpion Evo 3 SD</Czech>
+          <Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5, Scorpion Evo 3</Russian>
+          <Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5, Scorpion Evo 3</Polish>
+          <Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5, Scorpion Evo 3</Hungarian>
+        </Key>			
+        <Key ID="STR_DZ_MAG_30RND_MP5SD_DESC">
+          <German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: MP5SD, Scorpion Evo 3 SD</German>
+          <English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5SD, Scorpion Evo 3 SD</English>
+          <Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5SD, Scorpion Evo 3 SD</Italian>
+          <Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5SD, Scorpion Evo 3 SD</Spanish>
+          <French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: MP5SD, Scorpion Evo 3 SD</French>
+          <Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5SD, Scorpion Evo 3 SD</Czech>
+          <Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5SD, Scorpion Evo 3 SD</Russian>
+          <Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5SD, Scorpion Evo 3 SD</Polish>
+          <Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5SD, Scorpion Evo 3 SD</Hungarian>
+        </Key>	
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_NAME">
+			<English>60Rnd. Stanag Mag</English>
+			<German>60 Schuss Stanag Mag</German>
 		</Key>
-	
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
+			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
+			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
+		</Key>		
+        <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
+          <German>Kaliber: 5,45x39mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
+          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
+          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
+          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
+          <French>Calibre: 5.45x39 mm &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
+          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
+          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
+          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
+          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+        </Key>
+		<Key ID="STR_DZ_MAG_75RND_RPK74_DESC">
+          <German>Kaliber: 5,45x39mm &lt;br/&gt;Patronen: 75 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
+          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
+          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 75 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
+          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 75 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
+          <French>Calibre: 5.45x39 mm &lt;br/&gt;Munitions: 75 &lt;br/&gt;Utilisé avec: AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
+          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 75 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
+          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 75 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
+          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
+          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+        </Key>
+		<Key ID="STR_DZ_MAG_100RND_556x45_MG36_NAME">
+			<English>100Rnd. MG36 drum mag.</English>
+			<German>100 Schuss MG36 Trommelmagazin</German>
+			<Russian>100п. МГ-36 барабан</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_100RND_MG36_DESC">
+          <German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
+          <English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
+          <Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
+          <Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, M8 y L110</Spanish>
+          <French>Calibre: 5.56x45mm &lt;br/&gt;Munitions: 100 &lt;br/&gt;Utilisé avec: G36, MG36, M16, M4, M249, MK-12, M8 et L110</French>
+          <Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, M8 a L110</Czech>
+          <Russian>Патрон: 5.56x45 мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, M8, L110</Russian>
+          <Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, M8 i L110</Polish>
+          <Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
+        </Key>	
+      <Key ID="STR_DZ_MAG_20RND_MK17_DESC">
+		<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</English>
+        <French>Calibre : 7,62 x 51 mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: Mk 17, M110, CZ 805B</French>
+        <Spanish>Calibre: 7.62x51 mm OTAN&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: Mk 17, M110, CZ 805B</Spanish>
+        <Italian>Calibro: 7,62x51 mm NATO&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: Mk 17, M110, CZ 805B</Italian>
+        <Polish>Kaliber: 7,62x51 mm NATO&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: Mk 17, M110, CZ 805B</Polish>
+        <Russian>Патрон: 7.62x51 мм НАТО&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: Mk 17, M110, CZ 805B</Russian>
+        <German>Kaliber: 7,62x51mm NATO&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: Mk 17, M110, CZ 805B</German>
+        <Czech>Kalibr: 7.62x51mm NATO&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Mk 17, M110, CZ 805B</Czech>
+        <Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Mk 17, M110, CZ 805B</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_40RND_MP7_NAME">
+		<English>40Rnd. MP7 mag.</English>
+		<Russian>40п. MP7 маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_40RND_MP7SD_NAME">
+		<English>40Rnd. MP7 SD mag.</English>
+		<Russian>40п. MP7 SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_40RND_MP7_DESC">
+		<English>Caliber: 4.6x30mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7</English>
+        <French>Calibre : 4.6x30mm&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec: MP7</French>
+        <Spanish>Calibre: 4.6x30mm&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: MP7</Spanish>
+        <Italian>Calibro: 4.6x30mm&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: MP7</Italian>
+        <Polish>Kaliber: 4.6x30mm&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: MP7</Polish>
+        <Russian>Патрон: 4.6x30 мм&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: MP7</Russian>
+        <German>Kaliber: 4.6x30mm&lt;br/&gt;Patronen: 40&lt;br/&gt;Eingesetzt in: MP7</German>
+        <Czech>Kalibr: 4.6x30mm&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7</Czech>
+		<Hungarian>Kaliber: 4.6x30mm &lt;br/&gt; Töltények: 40 &lt;br/&gt; Hozzá tartozó fegyver: MP7</Hungarian>       
+      </Key>
+      <Key ID="STR_DZ_MAG_40RND_MP7SD_DESC">
+		<English>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</English>
+        <French>Calibre : 4.6x30mm SD&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec: MP7 SD</French>
+        <Spanish>Calibre: 4.6x30mm SD&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: MP7 SD</Spanish>
+        <Italian>Calibro: 4.6x30mm SD&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: MP7 SD</Italian>
+        <Polish>Kaliber: 4.6x30mm SD&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: MP7 SD</Polish>
+        <Russian>Патрон: 4.6x30 мм SD&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: MP7 SD</Russian>
+        <German>Kaliber: 4.6x30mm SD&lt;br/&gt;Patronen: 40&lt;br/&gt;Eingesetzt in: MP7 SD</German>
+        <Czech>Kalibr: 4.6x30mm SD&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7 SD</Czech>
+        <Hungarian>Kaliber: 4.6x30mm SD &lt;br/&gt; Töltények: 40 &lt;br/&gt; Hozzá tartozó fegyver: MP7 SD</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_15RND_P99_NAME">
+		<English>15Rnd. P99 mag.</English>
+		<Russian>15п. P99 маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_15RND_P99SD_NAME">
+		<English>15Rnd. P99 SD mag.</English>
+		<Russian>15п. P99 SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_15RND_P99_DESC">
+		<English>Caliber: 10x22mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99</English>
+        <French>Calibre : 10x22mm&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: P99</French>
+        <Spanish>Calibre: 10x22mm&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: P99</Spanish>
+        <Italian>Calibro: 10x22mm&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: P99</Italian>
+        <Polish>Kaliber: 10x22mm&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: P99</Polish>
+        <Russian>Патрон: 10x22 мм&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: P99</Russian>
+        <German>Kaliber: 10x22mm&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: P99</German>
+        <Czech>Kalibr: 10x22mm&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99</Czech>
+        <Hungarian>Kaliber: 10x22mm &lt;br/&gt; Töltények: 15 &lt;br/&gt; Hozzá tartozó fegyver: P99</Hungarian>
+      </Key>
+      <Key ID="STR_DZ_MAG_15RND_P99SD_DESC">
+		<English>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</English>
+        <French>Calibre : 10x22mm SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: P99 SD</French>
+        <Spanish>Calibre: 10x22mm SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: P99 SD</Spanish>
+        <Italian>Calibro: 10x22mm SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: P99 SD</Italian>
+        <Polish>Kaliber: 10x22mm SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: P99 SD</Polish>
+        <Russian>Патрон: 10x22 мм SD&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: P99 SD</Russian>
+        <German>Kaliber: 10x22mm SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: P99 SD</German>
+        <Czech>Kalibr: 10x22mm SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99 SD</Czech>
+        <Hungarian>Kaliber: 10x22mm SD &lt;br/&gt; Töltények: 15 &lt;br/&gt; Hozzá tartozó fegyver: P99 SD</Hungarian>
+      </Key>
+	  <Key ID="STR_DZ_MAG_30RND_ACR_NAME">
+		<English>30Rnd. ACR mag.</English>
+		<Russian>30п. ACR маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_30RND_ACRSD_NAME">
+		<English>30Rnd. ACR SD mag.</English>
+		<Russian>30п. ACR SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_30RND_ACR_DESC">
+		<English>Caliber: 6.80x43mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR</English>
+        <French>Calibre : 6.80x43mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: ACR</French>
+        <Spanish>Calibre: 6.80x43mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: ACR</Spanish>
+        <Italian>Calibro: 6.80x43mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: ACR</Italian>
+        <Polish>Kaliber: 6.80x43mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: ACR</Polish>
+        <Russian>Патрон: 6.80x43 мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: ACR</Russian>
+        <German>Kaliber: 6.80x43mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: ACR</German>
+        <Czech>Kalibr: 6.80x43mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: ACR</Czech>
+        <Hungarian>Kaliber: 6.80x43mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: ACR</Hungarian>
+      </Key>
+      <Key ID="STR_DZ_MAG_30RND_ACRSD_DESC">
+		<English>Caliber: 6.80x43mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR SD</English>
+        <French>Calibre : 6.80x43mm SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: ACR SD</French>
+        <Spanish>Calibre: 6.80x43mm SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: ACR SD</Spanish>
+        <Italian>Calibro: 6.80x43mm SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: ACR SD</Italian>
+        <Polish>Kaliber: 6.80x43mm SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: ACR SD</Polish>
+        <Russian>Патрон: 6.80x43 мм SD&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: ACR SD</Russian>
+        <German>Kaliber: 6.80x43mm SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: ACR SD</German>
+        <Czech>Kalibr: 6.80x43mm SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: ACR SD</Czech>
+        <Hungarian>Kaliber: 6.80x43mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: ACR SD</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_20RND_RSASS_NAME">
+		<English>30Rnd. RSASS mag.</English>
+		<Russian>30п. RSASS маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_20RND_RSASSSD_NAME">
+		<English>30Rnd. RSASS SD mag.</English>
+		<Russian>30п. RSASS SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_20RND_RSASS_DESC">
+		<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: RSASS</English>
+        <French>Calibre : 7.62x51mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: RSASS</French>
+        <Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: RSASS</Spanish>
+        <Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: RSASS</Italian>
+        <Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: RSASS</Polish>
+        <Russian>Патрон: 7.62x51 мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: RSASS</Russian>
+        <German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: RSASS</German>
+        <Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: RSASS</Czech>
+        <Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: RSASS</Hungarian>
+      </Key>
+      <Key ID="STR_DZ_MAG_20RND_RSASSSD_DESC">
+		<English>Caliber: 7.62x51mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: RSASS SD</English>
+        <French>Calibre : 7.62x51mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: RSASS SD</French>
+        <Spanish>Calibre: 7.62x51mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: RSASS SD</Spanish>
+        <Italian>Calibro: 7.62x51mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: RSASS SD</Italian>
+        <Polish>Kaliber: 7.62x51mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: RSASS SD</Polish>
+        <Russian>Патрон: 7.62x51 мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: RSASS SD</Russian>
+        <German>Kaliber: 7.62x51mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: RSASS SD</German>
+        <Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: RSASS SD</Czech>
+        <Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: RSASS SD</Hungarian>
+      </Key>	  
+	  <Key ID="STR_DZ_MAG_7RND_MSR_NAME">
+		<English>7Rnd. MSR mag.</English>
+		<Russian>7п. MSR маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_7RND_MSRSD_NAME">
+		<English>7Rnd. MSR SD mag.</English>
+		<Russian>7п. MSR SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_7RND_MSR_DESC">
+		<English>Caliber: .338&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: MSR</English>
+        <French>Calibre : .338&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: MSR</French>
+        <Spanish>Calibre: .338&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: MSR</Spanish>
+        <Italian>Calibro: .338&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: MSR</Italian>
+        <Polish>Kaliber: .338&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: MSR</Polish>
+        <Russian>Патрон: .338 &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: MSR</Russian>
+        <German>Kaliber: .338&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: MSR</German>
+        <Czech>Kalibr: .338&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: MSR</Czech>
+        <Hungarian>Kaliber: .338 &lt;br/&gt; Töltények: 7 &lt;br/&gt; Hozzá tartozó fegyver: MSR</Hungarian>
+      </Key>
+      <Key ID="STR_DZ_MAG_7RND_MSRSD_DESC">
+		<English>Caliber: .338 SD&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: MSR SD</English>
+        <French>Calibre : .338 SD&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: MSR SD</French>
+        <Spanish>Calibre: .338 SD&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: MSR SD</Spanish>
+        <Italian>Calibro: .338 SD&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: MSR SD</Italian>
+        <Polish>Kaliber: .338 SD&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: MSR SD</Polish>
+        <Russian>Патрон: .338 SD&lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: MSR SD</Russian>
+        <German>Kaliber: .338 SD&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: MSR SD</German>
+        <Czech>Kalibr: .338 SD&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: MSR SD</Czech>
+        <Hungarian>Kaliber: .338 SD &lt;br/&gt; Töltények: 7 &lt;br/&gt; Hozzá tartozó fegyver: MSR SD</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_5RND_XM2010_NAME">
+		<English>5Rnd. XM2010 mag.</English>
+		<Russian>5п. XM2010 маг.</Russian>
+	  </Key> 	
+	  <Key ID="STR_DZ_MAG_5RND_XM2010SD_NAME">
+		<English>5Rnd. XM2010 SD mag.</English>
+		<Russian>5п. XM2010 SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_5RND_XM2010_DESC">
+	    <English>Caliber: .300&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: XM2010</English>
+        <French>Calibre : .300&lt;br/&gt;Munitions : 5&lt;br/&gt;Utilisé avec: XM2010</French>
+        <Spanish>Calibre: .300&lt;br/&gt;Cartuchos: 5&lt;br/&gt;Usado en: XM2010</Spanish>
+        <Italian>Calibro: .300&lt;br/&gt;Munizioni: 5&lt;br/&gt;Usato in: XM2010</Italian>
+        <Polish>Kaliber: .300&lt;br/&gt;Naboje: 5&lt;br/&gt;Uzywany w: XM2010</Polish>
+        <Russian>Патрон: .300 &lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: XM2010</Russian>
+        <German>Kaliber: .300&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: XM2010</German>
+        <Czech>Kalibr: .300&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: XM2010</Czech>
+        <Hungarian>Kaliber: .300 &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: XM2010</Hungarian>
+      </Key>
+      <Key ID="STR_DZ_MAG_5RND_XM2010SD_DESC">
+	    <English>Caliber: .300 SD&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: XM2010 SD</English>
+        <French>Calibre : .300 SD&lt;br/&gt;Munitions : 5&lt;br/&gt;Utilisé avec: XM2010 SD</French>
+        <Spanish>Calibre: .300 SD&lt;br/&gt;Cartuchos: 5&lt;br/&gt;Usado en: XM2010 SD</Spanish>
+        <Italian>Calibro: .300 SD&lt;br/&gt;Munizioni: 5&lt;br/&gt;Usato in: XM2010 SD</Italian>
+        <Polish>Kaliber: .300 SD&lt;br/&gt;Naboje: 5&lt;br/&gt;Uzywany w: XM2010 SD</Polish>
+        <Russian>Патрон: .300 SD&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: XM2010 SD</Russian>
+        <German>Kaliber: .300 SD&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: XM2010 SD</German>
+        <Czech>Kalibr: .300 SD&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: XM2010 SD</Czech>
+		<Hungarian>Kaliber: .300 SD &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: XM2010 SD</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_30RND_KACPDW_NAME">
+		<English>30Rnd. KAC PDW mag.</English>
+		<Russian>30п. KAC PDW маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_30RND_KACPDW_DESC">
+	    <English>Caliber: 6x35mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: KAC PDW</English>
+        <French>Calibre : 6x35mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: KAC PDW</French>
+        <Spanish>Calibre: 6x35mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: KAC PDW</Spanish>
+        <Italian>Calibro: 6x35mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: KAC PDW</Italian>
+        <Polish>Kaliber: 6x35mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: KAC PDW</Polish>
+        <Russian>Патрон: 6x35mm &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: KAC PDW</Russian>
+        <German>Kaliber: 6x35mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: KAC PDW</German>
+        <Czech>Kalibr: 6x35mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: KAC PDW</Czech>
+        <Hungarian>Kaliber: 6x35mm &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: KAC PDW</Hungarian>
+      </Key>
+	  <Key ID="STR_DZ_MAG_6RND_44MAGNUM_NAME">
+		<English>6Rnd. .44 Magnum</English>
+		<Russian>6п. .44 Magnum</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_6RND_44MAGNUM_DESC">
+	    <English>Caliber: .44 Magnum&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: Colt Anaconda, Taurus Raging Bull</English>
+        <French>Calibre : .44 Magnum&lt;br/&gt;Munitions : 6&lt;br/&gt;Utilisé avec: Taurus Raging Bull</French>
+        <Spanish>Calibre: .44 Magnum&lt;br/&gt;Cartuchos: 6&lt;br/&gt;Usado en: Colt Anaconda, Taurus Raging Bull</Spanish>
+        <Italian>Calibro: .44 Magnum&lt;br/&gt;Munizioni: 6&lt;br/&gt;Usato in: Colt Anaconda, Taurus Raging Bull</Italian>
+        <Polish>Kaliber: .44 Magnum&lt;br/&gt;Naboje: 6&lt;br/&gt;Uzywany w: Colt Anaconda, Taurus Raging Bull</Polish>
+        <Russian>Патрон: .44 Magnum &lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: Colt Anaconda, Taurus Raging Bull</Russian>
+        <German>Kaliber: .44 Magnum&lt;br/&gt;Patronen: 6&lt;br/&gt;Eingesetzt in: Colt Anaconda, Taurus Raging Bull</German>
+        <Czech>Kalibr: .44 Magnum&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: Colt Anaconda, Taurus Raging Bull</Czech>
+        <Hungarian>Kaliber: .44 Magnum &lt;br/&gt; Töltények: 6&lt;br/&gt; Hozzá tartozó fegyver: Colt Anaconda, Taurus Raging Bull</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_6RND_357MAGNUM_NAME">
+		<English>6Rnd. .357 Magnum</English>
+		<Russian>6п. .357 Magnum</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_6RND_357MAGNUM_DESC">
+	    <English>Caliber: .357 Magnum&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: Colt Python</English>
+        <French>Calibre : .357 Magnum&lt;br/&gt;Munitions : 6&lt;br/&gt;Utilisé avec: Colt Python</French>
+        <Spanish>Calibre: .357 Magnum&lt;br/&gt;Cartuchos: 6&lt;br/&gt;Usado en: Colt Python</Spanish>
+        <Italian>Calibro: .357 Magnum&lt;br/&gt;Munizioni: 6&lt;br/&gt;Usato in: Colt Python</Italian>
+        <Polish>Kaliber: .357 Magnum&lt;br/&gt;Naboje: 6&lt;br/&gt;Uzywany w: Colt Python</Polish>
+        <Russian>Патрон: .357 Magnum &lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: Colt Python</Russian>
+        <German>Kaliber: .357 Magnum&lt;br/&gt;Patronen: 6&lt;br/&gt;Eingesetzt in: Colt Python</German>
+        <Czech>Kalibr: .357 Magnum&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: Colt Python</Czech>
+        <Hungarian>Kaliber: .357 Magnum &lt;br/&gt; Töltények: 6&lt;br/&gt; Hozzá tartozó fegyver: Colt Python</Hungarian>
+      </Key>
+	  <Key ID="STR_DZ_MAG_13RND_9x19_BHP_NAME">
+		<English>13Rnd. Browning mag.</English>
+		<Russian>13п. Browning маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_13RND_BHP_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 13&lt;br/&gt;Used in: FN Browning HP</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 13&lt;br/&gt;Utilisé avec: FN Browning HP</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 13&lt;br/&gt;Usado en: FN Browning HP</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 13&lt;br/&gt;Usato in: FN Browning HP</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 13&lt;br/&gt;Uzywany w: FN Browning HP</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 13&lt;br/&gt;Исп. в: FN Browning HP</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 13&lt;br/&gt;Eingesetzt in: FN Browning HP</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 13&lt;br/&gt;Pro: FN Browning HP</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 13&lt;br/&gt; Hozzá tartozó fegyver: FN Browning HP</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_15RND_9x19_P226_NAME">
+		<English>15Rnd. P226 mag.</English>
+		<Russian>15п. P226 маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_15RND_P226_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: SIG Sauer P226</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: SIG Sauer P226</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: SIG Sauer P226</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: SIG Sauer P226</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: SIG Sauer P226</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: SIG Sauer P226</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: SIG Sauer P226</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: SIG Sauer P226</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: SIG Sauer P226</Hungarian>
+      </Key>	  
+	  <Key ID="STR_DZ_MAG_8RND_9x19_P38_NAME">
+		<English>8Rnd. P38 mag.</English>
+		<Russian>8п. P38 маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_8RND_P38_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Walther P38</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Walther P38</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Walther P38</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Walther P38</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Walther P38</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Walther P38</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Walther P38</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Walther P38</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Walther P38</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_7RND_9x17_PPK_NAME">
+		<English>7Rnd. PPK mag.</English>
+		<Russian>7п. PPK маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_7RND_PPK_9x17_DESC">
+	    <English>Caliber: .380 ACP&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Walther PPK</English>
+        <French>Calibre : .380 ACP&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Walther PPK</French>
+        <Spanish>Calibre: .380 ACP&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Walther PPK</Spanish>
+        <Italian>Calibro: .380 ACP&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Walther PPK</Italian>
+        <Polish>Kaliber: .380 ACP&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Walther PPK</Polish>
+        <Russian>Патрон: .380 ACP &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Walther PPK</Russian>
+        <German>Kaliber: .380 ACP&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Walther PPK</German>
+        <Czech>Kalibr: .380 ACP&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Walther PPK</Czech>
+        <Hungarian>Kaliber: .380 ACP &lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Walther PPK</Hungarian>
+      </Key>
+	  <Key ID="STR_DZ_MAG_8RND_9x19_MK22_NAME">
+		<English>8Rnd. MK 22 mag.</English>
+		<Russian>8п. MK 22 маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_8RND_MK22_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Mk 22 Mod 0</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Mk 22 Mod 0</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Mk 22 Mod 0</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Mk 22 Mod 0</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Mk 22 Mod 0</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Mk 22 Mod 0</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Mk 22 Mod 0</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Mk 22 Mod 0</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Mk 22 Mod 0</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_8RND_9x19_MK22SD_NAME">
+		<English>8Rnd. MK 22 SD mag.</English>
+		<Russian>8п. MK 22 SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_8RND_MK22SD_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Mk 22 Mod 0 SD</English>
+        <French>Calibre : 9x19mm Parabellum SD&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Mk 22 Mod 0 SD</French>
+        <Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Mk 22 Mod 0 SD</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Mk 22 Mod 0 SD</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Mk 22 Mod 0 SD</Polish>
+        <Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Mk 22 Mod 0 SD</Russian>
+        <German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Mk 22 Mod 0 SD</German>
+        <Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Mk 22 Mod 0 SD</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Mk 22 Mod 0 SD</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_15RND_45ACP_USP_NAME">
+		<English>15Rnd. USP mag.</English>
+		<Russian>15п. USP маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_15RND_USP_45ACP_DESC">
+	    <English>Caliber: .45 ACP&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: USP</English>
+        <French>Calibre : .45 ACP&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: USP</French>
+        <Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: USP</Spanish>
+        <Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: USP</Italian>
+        <Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: USP</Polish>
+        <Russian>Патрон: .45 ACP &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: USP</Russian>
+        <German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: USP</German>
+        <Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: USP</Czech>
+        <Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: USP</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_15RND_45ACP_USPSD_NAME">
+		<English>15Rnd. USP SD mag.</English>
+		<Russian>15п. USP SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_15RND_USPSD_45ACP_DESC">
+	    <English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: USP SD</English>
+        <French>Calibre : .45 ACP SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: USP SD</French>
+        <Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: USP SD</Spanish>
+        <Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: USP SD</Italian>
+        <Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: USP SD</Polish>
+        <Russian>Патрон: .45 ACP SD &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: USP SD</Russian>
+        <German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: USP SD</German>
+        <Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: USP SD</Czech>
+        <Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: USP SD</Hungarian>
+      </Key>	  
+      <Key ID="STR_DZ_MAG_7RND_M1911_45ACP_DESC">
+	    <English>Caliber: .45 ACP&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Kimber M1911, Colt M1911</English>
+        <French>Calibre : .45 ACP&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Kimber M1911, Colt M1911</French>
+        <Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Kimber M1911, Colt M1911</Spanish>
+        <Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Kimber M1911, Colt M1911</Italian>
+        <Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Kimber M1911, Colt M1911</Polish>
+        <Russian>Патрон: .45 ACP&lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Kimber M1911, Colt M1911</Russian>
+        <German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Kimber M1911, Colt M1911</German>
+        <Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Kimber M1911, Colt M1911</Czech>
+        <Hungarian>Kaliber: .45 ACP&lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Kimber M1911, Colt M1911</Hungarian>
+      </Key>	  
+	  <Key ID="STR_DZ_MAG_7RND_45ACP_KIMBER1911SD_NAME">
+		<English>7Rnd. M1911 SD mag.</English>
+		<Russian>7п. M1911 SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_7RND_KIMBER1911SD_45ACP_DESC">
+	    <English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Kimber M1911 SD</English>
+        <French>Calibre : .45 ACP SD&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Kimber M1911 SD</French>
+        <Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Kimber M1911 SD</Spanish>
+        <Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Kimber M1911 SD</Italian>
+        <Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Kimber M1911 SD</Polish>
+        <Russian>Патрон: .45 ACP SD &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Kimber M1911 SD</Russian>
+        <German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Kimber M1911 SD</German>
+        <Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Kimber M1911 SD</Czech>
+        <Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Kimber M1911 SD</Hungarian>
+      </Key>
+	  <Key ID="STR_DZ_MAG_8RND_762x25_TT33_NAME">
+		<English>8Rnd. TT-33 mag.</English>
+		<Russian>8п. TT-33 маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_8RND_TT33_762x25_DESC">
+	    <English>Caliber: 7.62x25mm&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Tokarew TT-33</English>
+        <French>Calibre : 7.62x25mm&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Tokarew TT-33</French>
+        <Spanish>Calibre: 7.62x25mm&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Tokarew TT-33</Spanish>
+        <Italian>Calibro: 7.62x25mm&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Tokarew TT-33</Italian>
+        <Polish>Kaliber: 7.62x25mm&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Tokarew TT-33</Polish>
+        <Russian>Патрон: 7.62x25mm &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Пистолет TT-33</Russian>
+        <German>Kaliber: 7.62x25mm&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Tokarew TT-33</German>
+        <Czech>Kalibr: 7.62x25mm&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Tokarew TT-33</Czech>
+        <Hungarian>Kaliber: 7.62x25mm &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Tokarew TT-33</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_10RND_C22_RUGERMK2_NAME">
+		<English>10Rnd. Ruger MK2 mag.</English>
+		<Russian>10п. Ruger MK2 маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_10RND_RUGERMK2_C22_DESC">
+	    <English>Caliber: .22 lfB&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: Ruger MK2</English>
+        <French>Calibre : .22 lfB&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: Ruger MK2</French>
+        <Spanish>Calibre: .22 lfB&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: Ruger MK2</Spanish>
+        <Italian>Calibro: .22 lfB&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: Ruger MK2</Italian>
+        <Polish>Kaliber: .22 lfB&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: Ruger MK2</Polish>
+        <Russian>Патрон: .22 lfB &lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: Ruger MK2</Russian>
+        <German>Kaliber: .22 lfB&lt;br/&gt;Patronen: 10&lt;br/&gt;Eingesetzt in: Ruger MK2</German>
+        <Czech>Kalibr: .22 lfB&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: Ruger MK2</Czech>
+        <Hungarian>Kaliber: .22 lfB &lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: Ruger MK2</Hungarian>
+      </Key>
+	  <Key ID="STR_DZ_MAG_20RND_9x19mm_M93R_NAME">
+		<English>20Rnd. M93R mag.</English>
+		<Russian>20п. M93R маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_20RND_9x19mm_M93R_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: M93R</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: M93R</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: M93R</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: M93R</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: M93R</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: M93R</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: M93R</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: M93R</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: M93R</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_33RND_9x19mm_G18_NAME">
+		<English>33Rnd. G18 mag.</English>
+		<Russian>33п. G18 маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_33RND_9x19mm_G18_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: G18</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 33&lt;br/&gt;Utilisé avec: G18</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 33&lt;br/&gt;Usado en: G18</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 33&lt;br/&gt;Usato in: G18</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 33&lt;br/&gt;Uzywany w: G18</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 33&lt;br/&gt;Исп. в: G18</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 33&lt;br/&gt;Eingesetzt in: G18</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 33&lt;br/&gt;Pro: G18</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: G18</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_32RND_9x19mm_TEC9_NAME">
+		<English>32Rnd. Tec-9 mag.</English>
+		<Russian>32п. Tec-9 маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_32RND_9x19mm_TEC9_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Tec-9</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 32&lt;br/&gt;Utilisé avec: Tec-9</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 32&lt;br/&gt;Usado en: Tec-9</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 32&lt;br/&gt;Usato in: Tec-9</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 32&lt;br/&gt;Uzywany w: Tec-9</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 32&lt;br/&gt;Исп. в: Tec-9</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 32&lt;br/&gt;Eingesetzt in: Tec-9</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 32&lt;br/&gt;Pro: Tec-9</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 32&lt;br/&gt; Hozzá tartozó fegyver: Tec-9</Hungarian>
+      </Key>	  
+      <Key ID="STR_DZ_MAG_15RND_M9_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Beretta M9, Beretta M93R</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: Beretta M9, Beretta M93R</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: Beretta M9, Beretta M93R</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: Beretta M9, Beretta M93R</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: Beretta M9, Beretta M93R</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: Beretta M9, Beretta M93R</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: Beretta M9, Beretta M93R</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: Beretta M9, Beretta M93R</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: Beretta M9, Beretta M93R</Hungarian>
+      </Key>	
+      <Key ID="STR_DZ_MAG_15RND_M9SD_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Beretta M9 SD</English>
+        <French>Calibre : 9x19mm Parabellum SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: Beretta M9 SD</French>
+        <Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: Beretta M9 SD</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: Beretta M9 SD</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: Beretta M9 SD</Polish>
+        <Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: Beretta M9 SD</Russian>
+        <German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: Beretta M9 SD</German>
+        <Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: Beretta M9 SD</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: Beretta M9 SD</Hungarian>
+      </Key>
+      <Key ID="STR_DZ_MAG_17RND_G17_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 17&lt;br/&gt;Used in: G17</English>
+        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 17&lt;br/&gt;Utilisé avec: G17</French>
+        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 17&lt;br/&gt;Usado en: G17</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 17&lt;br/&gt;Usato in: G17</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 17&lt;br/&gt;Uzywany w: G17</Polish>
+        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 17&lt;br/&gt;Исп. в: G17</Russian>
+        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 17&lt;br/&gt;Eingesetzt in: G17</German>
+        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 17&lt;br/&gt;Pro: G17</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 17&lt;br/&gt; Hozzá tartozó fegyver: G17</Hungarian>
+      </Key>	
+      <Key ID="STR_DZ_MAG_17RND_G17SD_9x19_DESC">
+	    <English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 17&lt;br/&gt;Used in: G17 SD</English>
+        <French>Calibre : 9x19mm Parabellum SD&lt;br/&gt;Munitions : 17&lt;br/&gt;Utilisé avec: G17 SD</French>
+        <Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 17&lt;br/&gt;Usado en: G17 SD</Spanish>
+        <Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 17&lt;br/&gt;Usato in: G17 SD</Italian>
+        <Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 17&lt;br/&gt;Uzywany w: G17 SD</Polish>
+        <Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 17&lt;br/&gt;Исп. в: G17 SD</Russian>
+        <German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 17&lt;br/&gt;Eingesetzt in: G17 SD</German>
+        <Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 17&lt;br/&gt;Pro: G17 SD</Czech>
+        <Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 17&lt;br/&gt; Hozzá tartozó fegyver: G17 SD</Hungarian>
+      </Key>	  
+		<Key ID="STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME">
+			<English>20Rnd. SCAR mag.</English>
+			<Russian>20п. SCAR маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME">
+			<English>20Rnd. SCAR SD mag.</English>
+			<Russian>20п. SCAR SD маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10Rnd_127x99_m107_NAME">
+			<English>10Rnd. M107 mag.</English>
+			<Russian>10п. M107 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_5Rnd_127x108_KSVK_NAME">
+			<English>5Rnd. KSVK mag.</English>
+			<Russian>5п. KSVK маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_5Rnd_86x70_L115A1_NAME">
+			<English>5Rnd. L115 mag.</English>
+			<Russian>5п. L115 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME">
+			<English>20Rnd. VSS mag.</English>
+			<Russian>20п. VSS маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME">
+			<English>10Rnd. VSS mag.</English>
+			<Russian>10п. VSS маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME">
+			<English>20Rnd. 12 Cal. Slug.</English>
+			<German>20 Schuss Kal. 12 Flintenlaufgeschoss</German>
+			<Russian>20п. 12к (пуля)</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME">
+			<English>20Rnd. 12 Cal. Pellets.</English>
+			<German>20 Schuss Kal. 12 Schrot</German>
+			<Russian>20п. 12к (дробь)</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_HE_NAME">
+			<English>20Rnd. 19mm HE.</English>
+			<Russian>20п. 19мм HE</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10Rnd_762x51_CZ750_NAME">
+			<English>10Rnd. CZ 750 mag.</English>
+			<Russian>10п. CZ 750 маг.</Russian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_18Rnd_9x19_CZ75_NAME">
+			<English>18Rnd. CZ 75 mag.</English>
+			<Russian>18п. CZ 75 маг.</Russian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_18Rnd_9x19_SD_CZ75_NAME">
+			<English>18Rnd. CZ 75 SD mag.</English>
+			<Russian>18п. CZ 75 SD маг.</Russian>
+		</Key>			
+		<Key ID="STR_DZ_MAG_10RND_CZ750_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: CZ 750</English>
+			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Патронов: 10&lt;br/&gt;Используется в: CZ 750</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 10&lt;br/&gt;Verwendet in: CZ 750</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_200RND_M240_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Jackal L2A1, Jackal MK19</English>
+			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Патронов: 200&lt;br/&gt;Используется в: Jackal L2A1, Jackal MK19</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 200&lt;br/&gt;Verwendet in: Jackal L2A1, Jackal MK19</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_18RND_CZ75_DESC">
+			<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 18&lt;br/&gt;Used in: CZ 75</English>
+			<Russian>Калибр: 9x19мм&lt;br/&gt;Патронов: 18&lt;br/&gt;Используется в: CZ 75</Russian>
+			<German>Kaliber: 9x19mm&lt;br/&gt;Patronen: 18&lt;br/&gt;Verwendet in: CZ 75</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_18RND_CZ75_SD_DESC">
+			<English>Caliber: 9x19mm SD&lt;br/&gt;Rounds: 18&lt;br/&gt;Used in: CZ 75SP SD</English>
+			<Russian>Калибр: 9x19мм SD&lt;br/&gt;Патронов: 18&lt;br/&gt;Используется в: CZ 75SP SD</Russian>
+			<German>Kaliber: 9x19mm SD&lt;br/&gt;Patronen: 18&lt;br/&gt;Verwendet in: CZ 75SP SD</German>
+		</Key>	
+	  <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_NAME">
+			<English>3Rnd. Anzio 20mm mag.</English>
+			<Russian>3п. Anzio 20mm маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_DESC">
+			<English>Caliber: 20x102mm&lt;br/&gt;Rounds: 3&lt;br/&gt;Used in: Anzio 20mm</English>
+			<French>Calibre : 20x102mm&lt;br/&gt;Munitions : 3&lt;br/&gt;Utilisé avec: Anzio 20mm</French>
+			<Spanish>Calibre: 20x102mm&lt;br/&gt;Cartuchos: 3&lt;br/&gt;Usado en: Anzio 20mm</Spanish>
+			<Italian>Calibro: 20x102mm&lt;br/&gt;Munizioni: 3&lt;br/&gt;Usato in: Anzio 20mm</Italian>
+			<Polish>Kaliber: 20x102mm&lt;br/&gt;Naboje: 3&lt;br/&gt;Uzywany w: Anzio 20mm</Polish>
+			<Russian>Патрон: 20x102mm &lt;br/&gt;Количество: 3&lt;br/&gt;Исп. в: Anzio 20mm</Russian>
+			<German>Kaliber: 20x102mm&lt;br/&gt;Patronen: 3&lt;br/&gt;Eingesetzt in: Anzio 20mm</German>
+			<Czech>Kalibr: 20x102mm&lt;br/&gt;Nábojů: 3&lt;br/&gt;Pro: Anzio 20mm</Czech>
+			<Hungarian>Kaliber: 20x102mm&lt;br/&gt; Töltények: 3&lt;br/&gt; Hozzá tartozó fegyver: Anzio 20mm</Hungarian>
+      </Key>		
+		
 		<!-- **** ATTACHMENTS **** -->
 		
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">
@@ -11731,7 +13290,28 @@
 			<Czech>Tlumič, používá se pro vylepšení pušky Bizon.</Czech>
 			<German>Ein Schalldämpfer, welcher an eine Bizon angebracht werden kann.</German>
 		</Key>
-		
+		<!-- 10mm Suppressor P99-->
+		<Key ID="STR_DZ_ATT_SUP10_NAME">
+			<English>[A] 10mm Suppressor</English>
+			<Russian>[М] 10мм глушитель</Russian>
+			<German>[E] 10mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP10_DESC">
+			<English>10mm Sound suppressor</English>
+			<Russian>ПБС для калибра 10мм</Russian>
+			<German>10mm Schalldämpfer</German>
+		</Key>		
+		<!-- 6.8mm Suppressor ACR-->
+		<Key ID="STR_DZ_ATT_SUP68_NAME">
+			<English>[A] 6.80mm Suppressor</English>
+			<Russian>[М] 6.80мм глушитель</Russian>
+			<German>[E] 6.80mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP68_DESC">
+			<English>6.80mm Sound suppressor</English>
+			<Russian>ПБС для калибра 6.80мм</Russian>
+			<German>6.80mm Schalldämpfer</German>
+		</Key>			
 		<!-- 5.56mm Suppressor -->
 		<Key ID="STR_DZ_ATT_SUP556_NAME">
 			<English>[A] 5.56mm Suppressor</English>
@@ -12053,6 +13633,10 @@
 			<English>A TWS scope.</English>
 			<German>Zielfernrohr vom Typ TWS.</German>
 		</Key>
+		<Key ID="STR_ATTACHMENT_RMVE_TWS">
+			<English>Remove TWS scope</English>
+			<German>TWS entfernen</German>
+		</Key>		
 		<Key ID="STR_DZE_ATTACHMENT_45SUP_NAME">
 			<English>[A] .45cal Suppressor</English>
 			<German>[E] .45cal Schalldämpfer</German>
@@ -14242,6 +15826,472 @@
 			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 15 liter</Dutch>
 			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 15</French>
 		</Key>
+		<!--epoch 107 new backpacks-->
+		<Key ID="STR_BACKPACK_NAME_PATROL_DZE1">
+			<English>Patrol Backpack</English>
+			<French>Sac de patrouille (coyote)</French>
+			<Russian>Патрульный рюкзак</Russian>
+			<Spanish>Mochila de Patrullaje (Coyote)</Spanish>
+			<Czech>Batůžek (coyote)</Czech>
+			<German>Patrol Rucksack (Coyote)</German>
+			<Dutch>Patrouillerugzak (coyote)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_PATROL_DZE1">
+			<English>Patrol Backpack &lt;br/&gt;Capacity: 10 items</English>
+			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 10</French>
+			<Russian>Рюкзак на (10 слотов)</Russian>
+			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;10 litros</Spanish>
+			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 10 litrů</Czech>
+			<German>Patrol Rucksack von "Coyote" &lt;br/&gt;Volumen: 10 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_PATROL_DZE2">
+			<English>Patrol Backpack+</English>
+			<French>Sac de patrouille (coyote)+</French>
+			<Russian>Патрульный рюкзак+</Russian>
+			<Spanish>Mochila de Patrullaje (Coyote)+</Spanish>
+			<Czech>Batůžek (coyote)+</Czech>
+			<German>Patrol Rucksack (Coyote)+</German>
+			<Dutch>Patrouillerugzak (coyote)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_PATROL_DZE2">
+			<English>Patrol Backpack &lt;br/&gt;Capacity: 15 items</English>
+			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 15</French>
+			<Russian>Рюкзак на (15 слотов)</Russian>
+			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;15 litros</Spanish>
+			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 15 litrů</Czech>
+			<German>Patrol Rucksack von "Coyote". &lt;br/&gt;Volumen: 15 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_VEST_DZE1">
+			<English>Czech Vest Pouch</English>
+			<French>Sac tchèque</French>
+			<Russian>Чешский рюкзак (малый)</Russian>
+			<Spanish>Bolsa Chaleco</Spanish>
+			<Czech>Česká vesta</Czech>
+			<German>Tschechischer Westenrucksack</German>
+			<Dutch>Tsjechische Borstzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_VEST_DZE1">
+			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 12 items</English>
+			<French>Sac tchèque &lt;br/&gt;Taille: 12</French>
+			<Russian>Рюкзак на (12 слотов)</Russian>
+			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;12 litros</Spanish>
+			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 12 litrů</Czech>
+			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 12 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_VEST_DZE2">
+			<English>Czech Vest Pouch+</English>
+			<French>Sac tchèque+</French>
+			<Russian>Чешский рюкзак (малый)+</Russian>
+			<Spanish>Bolsa Chaleco+</Spanish>
+			<Czech>Česká vesta+</Czech>
+			<German>Tschechischer Westenrucksack+</German>
+			<Dutch>Tsjechische Borstzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_VEST_DZE2">
+			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 17 items</English>
+			<French>Sac tchèque &lt;br/&gt;Taille: 17</French>
+			<Russian>Рюкзак на (17 слотов)</Russian>
+			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;17 litros</Spanish>
+			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 17 litrů</Czech>
+			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 17 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ACU_DZE1">
+			<English>Assault Backpack</English>
+			<French>Sac d&apos;assault (ACU)</French>
+			<Russian>Штурмовой рюкзак</Russian>
+			<Spanish>Mochila de Asalto (ACU)</Spanish>
+			<Czech>Batoh Assault Pack (ACU)</Czech>
+			<German>Kampfrucksack (ACU)</German>
+			<Dutch>Aanvalsrugzak (ACU)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ACU_DZE1">
+			<English>Assault Backpack &lt;br/&gt;Capacity: 15 items</English>
+			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 15</French>
+			<Russian>Рюкзак на (15 слотов)</Russian>
+			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;15 litros</Spanish>
+			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 15 litrů</Czech>
+			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 15 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ACU_DZE2">
+			<English>Assault Backpack+</English>
+			<French>Sac d&apos;assault (ACU)+</French>
+			<Russian>Штурмовой рюкзак+</Russian>
+			<Spanish>Mochila de Asalto (ACU)+</Spanish>
+			<Czech>Batoh Assault Pack (ACU)+</Czech>
+			<German>Kampfrucksack (ACU)+</German>
+			<Dutch>Aanvalsrugzak (ACU)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ACU_DZE2">
+			<English>Assault Backpack &lt;br/&gt;Capacity: 20 items</English>
+			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 20</French>
+			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;20 litros</Spanish>
+			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 20 litrů</Czech>
+			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 20 Liter</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE1">
+			<English>Terminal Backpack</English>
+			<German>Terminal Rucksack</German>
+			<Russian>Вокзальный рюкзак</Russian>
+			<Dutch>Terminal Rugzak</Dutch>
+			<French>Sac à Dos (terminal)</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE1">
+			<English>Terminal Backpack &lt;br/&gt;Capacity: 17 items</English>
+			<German>Terminal Rucksack &lt;br/&gt;Volumen: 17 Liter</German>
+			<Russian>Вокзальный рюкзак (17 слотов)</Russian>
+			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 17 liter</Dutch>
+			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 17</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE2">
+			<English>Terminal Backpack+</English>
+			<German>Terminal Rucksack+</German>
+			<Russian>Вокзальный рюкзак+</Russian>
+			<Dutch>Terminal Rugzak+</Dutch>
+			<French>Sac à Dos (terminal)+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE2">
+			<English>Terminal Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<German>Terminal Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
+			<Russian>Вокзальный рюкзак (22 слотов)</Russian>
+			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 22 liter</Dutch>
+			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 22</French>		
+		</Key>		
+		<Key ID="STR_EPOCH_PACK_TINY_DZE1">
+			<English>Tiny Backpack</English>
+			<German>Tiny Rucksack</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE1">
+			<English>Tiny Backpack &lt;br/&gt;Capacity: 18 items</English>
+			<German>Tiny Rucksack &lt;br/&gt;Volumen: 18 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_TINY_DZE2">
+			<English>Tiny Backpack+</English>
+			<German>Tiny Rucksack+</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE2">
+			<English>Tiny Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<German>Tiny Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
+		</Key>			
+		<Key ID="STR_BACKPACK_NAME_ALICE_DZE1">
+			<English>Alice Backpack</English>
+			<French>Sac Alice</French>
+			<Russian>Рюкзак ALICE</Russian>
+			<Spanish>Mochila Alice</Spanish>
+			<Czech>Batoh Alice</Czech>
+			<German>Alice Rucksack</German>
+			<Dutch>ALICE Rugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ALICE_DZE1">
+			<English>Alice Backpack &lt;br/&gt;Capacity: 20 items</English>
+			<French>Sac Alice. &lt;br/&gt;Taille: 20</French>
+			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;20 litros</Spanish>
+			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 20 litrů</Czech>
+			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 20 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_ALICE_DZE2">
+			<English>Alice Backpack+</English>
+			<French>Sac Alice+</French>
+			<Russian>Рюкзак ALICE+</Russian>
+			<Spanish>Mochila Alice+</Spanish>
+			<Czech>Batoh Alice+</Czech>
+			<German>Alice Rucksack+</German>
+			<Dutch>ALICE Rugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_ALICE_DZE2">
+			<English>Alice Backpack &lt;br/&gt;Capacity: 25 items</English>
+			<French>Sac Alice &lt;br/&gt;Taille: 25</French>
+			<Russian>Рюкзак на (25 слотов)</Russian>
+			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;25 litros</Spanish>
+			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 25 litrů</Czech>
+			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 25 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE1">
+			<English>Survival Backpack</English>
+			<French>ACU de survie</French>
+			<Russian>Рюкзак выживания</Russian>
+			<Spanish>Mochila de Supervivencia ACU</Spanish>
+			<Czech>Batoh Survival ACU</Czech>
+			<German>Survival Rucksack</German>
+			<Dutch>Overlevings ACU</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE1">
+			<English>Survival Backpack &lt;br/&gt;Capacity: 22 items</English>
+			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
+			<Russian>Рюкзак на (22 слота)</Russian>
+			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
+			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
+			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE2">
+			<English>Survival Backpack+</English>
+			<French>ACU de survie+</French>
+			<Russian>Рюкзак выживания+</Russian>
+			<Spanish>Mochila de Supervivencia ACU+</Spanish>
+			<Czech>Batoh Survival ACU+</Czech>
+			<German>Survival Rucksack+</German>
+			<Dutch>Overlevings ACU+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE2">
+			<English>Survival Backpack &lt;br/&gt;Capacity: 27 items</English>
+			<French>ACU de survie&lt;br/&gt;Taille: 27</French>
+			<Russian>Рюкзак на (27 слота)</Russian>
+			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;27 litros</Spanish>
+			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 27 litrů</Czech>
+			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 27 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_COMPACT_DZE1">
+			<English>Compact Backpack</English>
+			<German>Compact Rucksack</German>
+			<Russian>Компактный рюкзак</Russian>
+			<Dutch>Compacte Rugzak</Dutch>
+			<French>Sac Compact</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE1">
+			<English>Compact Backpack &lt;br/&gt;Capacity: 25 items</English>
+			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
+			<Russian>Компактный рюкзак (25 слотов)</Russian>
+			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
+			<French>Sac Compact &lt;br/&gt;Taille: 25</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_COMPACT_DZE2">
+			<English>Compact Backpack+</English>
+			<German>Compact Rucksack+</German>
+			<Russian>Компактный рюкзак+</Russian>
+			<Dutch>Compacte Rugzak+</Dutch>
+			<French>Sac Compact+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE2">
+			<English>Compact Backpack &lt;br/&gt;Capacity: 30 items</English>
+			<German>Compact Rucksack &lt;br/&gt;Volumen: 30 Liter</German>
+			<Russian>Компактный рюкзак (30 слотов)</Russian>
+			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 30 liter</Dutch>
+			<French>Sac Compact &lt;br/&gt;Taille: 30</French>		
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE1">
+			<English>British Assault Backpack</English>
+			<French>Sac d&apos;assault britannique</French>
+			<Russian>Британский рюкзак</Russian>
+			<Spanish>Mochila de Asalto Británica</Spanish>
+			<Czech>Britský batoh</Czech>
+			<German>Britischer Kampfrucksack</German>
+			<Dutch>Britse Aanvalsrugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE1">
+			<English>British Assault Backpack &lt;br/&gt;Capacity: 30 items</English>
+			<French>Sac d&apos;assault britannique &lt;br/&gt;Taille: 30</French>
+			<Russian>Рюкзак на (30 слотов)</Russian>
+			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;30 litros</Spanish>
+			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 30 litrů</Czech>
+			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 30 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE2">
+			<English>British Assault Backpack+</English>
+			<French>Sac d&apos;assault britannique+</French>
+			<Russian>Британский рюкзак+</Russian>
+			<Spanish>Mochila de Asalto Británica+</Spanish>
+			<Czech>Britský batoh+</Czech>
+			<German>Britischer Kampfrucksack+</German>
+			<Dutch>Britse Aanvalsrugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE2">
+			<English>British Assault Backpack. &lt;br/&gt;Capacity: 35 items</English>
+			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 35</French>
+			<Russian>Рюкзак на (35 слотов)</Russian>
+			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;35 litros</Spanish>
+			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 35 litrů</Czech>
+			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 35 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_GB_DZE1">
+			<English>Gunbag</English>
+			<German>Waffentasche</German>
+			<Russian>Оружейная сумка</Russian>
+			<Dutch>Wapenzak</Dutch>
+			<French>Fourreau</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE1">
+			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
+			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
+			<Russian>Оружейная сумка (35 слотов)</Russian>
+			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
+			<French>Fourreau&lt;br/&gt;Taille: 35</French>		
+		</Key>
+		<Key ID="STR_EPOCH_PACK_GB_DZE2">
+			<English>Gunbag+</English>
+			<German>Waffentasche+</German>
+			<Russian>Оружейная сумка+</Russian>
+			<Dutch>Wapenzak+</Dutch>
+			<French>Fourreau+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE2">
+			<English>Gunbag &lt;br/&gt;Capacity: 40 items</English>
+			<German>Waffentasche &lt;br/&gt;Volumen: 40 Liter</German>
+			<Russian>Оружейная сумка (40 слотов)</Russian>
+			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 40 liter</Dutch>
+			<French>Fourreau&lt;br/&gt;Taille: 40</French>		
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO1_DZE1">
+			<English>Night Backpack</English>
+			<German>Night Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO1_DZE1">
+			<English>Night Backpack &lt;br/&gt;Capacity: 35 items</English>
+			<German>Night Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO1_DZE2">
+			<English>Night Backpack+</English>
+			<German>Night Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO1_DZE2">
+			<English>Night Backpack &lt;br/&gt;Capacity: 40 items</English>
+			<German>Night Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO2_DZE1">
+			<English>Survivor Backpack</English>
+			<German>Survivor Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO2_DZE1">
+			<English>Survivor Backpack &lt;br/&gt;Capacity: 40 items</English>
+			<German>Survivor Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO2_DZE2">
+			<English>Survivor Backpack+</English>
+			<German>Survivor Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO2_DZE2">
+			<English>Survivor Backpack &lt;br/&gt;Capacity: 45 items</English>
+			<German>Survivor Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_CZECH_DZE1">
+			<English>Czech Backpack</English>
+			<French>Sac-à-dos tchèque</French>
+			<Russian>Чешский рюкзак</Russian>
+			<Spanish>Mochila Checa</Spanish>
+			<Czech>Český batoh</Czech>
+			<German>Tschechischer Rucksack</German>
+			<Dutch>Tsjechische Rugzak</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_CZECH_DZE1">
+			<English>Czech Backpack &lt;br/&gt;Capacity: 45 items</English>
+			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 45</French>
+			<Russian>Рюкзак на (45 слотов)</Russian>
+			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;45 litros</Spanish>
+			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 45 litrů</Czech>
+			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_CZECH_DZE2">
+			<English>Czech Backpack+</English>
+			<French>Sac-à-dos tchèque+</French>
+			<Russian>Чешский рюкзак+</Russian>
+			<Spanish>Mochila Checa+</Spanish>
+			<Czech>Český batoh+</Czech>
+			<German>Tschechischer Rucksack+</German>
+			<Dutch>Tsjechische Rugzak+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_CZECH_DZE2">
+			<English>Czech Backpack &lt;br/&gt;Capacity: 50 items</English>
+			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 50</French>
+			<Russian>Рюкзак на (50 слотов)</Russian>
+			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
+			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 50 litrů</Czech>
+			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO3_DZE1">
+			<English>Wanderer Backpack</English>
+			<German>Wanderer Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO3_DZE1">
+			<English>Wanderer Backpack &lt;br/&gt;Capacity: 50 items</English>
+			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO3_DZE2">
+			<English>Wanderer Backpack+</English>
+			<German>Wanderer Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO3_DZE2">
+			<English>Wanderer Backpack &lt;br/&gt;Capacity: 55 items</English>
+			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO4_DZE1">
+			<English>Legend Backpack</English>
+			<German>Legend Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO4_DZE1">
+			<English>Legend Backpack &lt;br/&gt;Capacity: 55 items</English>
+			<German>Legend Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_APO4_DZE2">
+			<English>Legend Backpack+</English>
+			<German>Legend Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_APO4_DZE2">
+			<English>Legend Backpack &lt;br/&gt;Capacity: 60 items</English>
+			<German>Legend Rucksack &lt;br/&gt;Volumen: 60 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE1">
+			<English>Coyote Backpack</English>
+			<French>Sac-à-dos (coyote)</French>
+			<Russian>Рюкзак Сoyote</Russian>
+			<Spanish>Mochila (Coyote)</Spanish>
+			<Czech>Batoh (coyote)</Czech>
+			<German>Kampfrucksack (Coyote)</German>
+			<Dutch>Rugzak (Coyote)</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE1">
+			<English>Coyote Backpack &lt;br/&gt;Capacity: 60 items</English>
+			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 60</French>
+			<Russian>Рюкзак на (60 слотов)</Russian>
+			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;60 litros</Spanish>
+			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 60 litrů</Czech>
+			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 60 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE2">
+			<English>Coyote Backpack+</English>
+			<French>Sac-à-dos (coyote)+</French>
+			<Russian>Рюкзак Сoyote+</Russian>
+			<Spanish>Mochila (Coyote)+</Spanish>
+			<Czech>Batoh (coyote)+</Czech>
+			<German>Kampfrucksack (Coyote)+</German>
+			<Dutch>Rugzak (Coyote)+</Dutch>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE2">
+			<English>Coyote Backpack &lt;br/&gt;Capacity: 65 items</English>
+			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 65</French>
+			<Russian>Рюкзак на (65 слотов)</Russian>
+			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;65 litros</Spanish>
+			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 65 litrů</Czech>
+			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 65 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_LGB_DZE1">
+			<English>Large Gunbag</English>
+			<German>Große Waffentasche</German>
+			<Russian>Большая оружейная сумка</Russian>
+			<Dutch>Grote Wapenzak</Dutch>
+			<French>Grand Fourreau</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE1">
+			<English>Large Gunbag &lt;br/&gt;Capacity: 65 items</English>
+			<German>Große Waffentasche &lt;br/&gt;Volumen: 65 Liter</German>
+			<Russian>Большая оружейная сумка (65 слотов)</Russian>
+			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 65 liter</Dutch>
+			<French>Grand Fourreau &lt;br/&gt;Taille: 65</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_LGB_DZE2">
+			<English>Large Gunbag+</English>
+			<German>Große Waffentasche+</German>
+			<Russian>Большая оружейная сумка+</Russian>
+			<Dutch>Grote Wapenzak+</Dutch>
+			<French>Grand Fourreau+</French>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE2">
+			<English>Large Gunbag &lt;br/&gt;Capacity: 70 items</English>
+			<German>Große Waffentasche &lt;br/&gt;Volumen: 70 Liter</German>
+			<Russian>Большая оружейная сумка (70 слотов)</Russian>
+			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 70 liter</Dutch>
+			<French>Grand Fourreau &lt;br/&gt;Taille: 70</French>
+		</Key>
+		
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
 			<German>Fallschirm Sprung</German>
@@ -17575,7 +19625,511 @@
 		</Key>	
 		<Key ID="STR_EPOCH_SKINS_TAMIKA">
 			<English>Tamika</English>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
 		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_HEAD_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_MASK_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_HEAD_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
+			<English>Stalker (Rookie)</English>
+			<German>Stalker (Anfänger)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_LONER_HEAD_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_HEAD_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_DUTY_MASK_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_DUTY_HEAD_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_MASK_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_HEAD_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
+		 	<English>A pack of special armour that fits an apocalyptic environment.</English>
+		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
+			<English>Stalker Mil. (woodland)</English>
+			<German>Stalker Mil. (Wald)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME">
+			<English>Stalker Mil. (urban)</English>
+			<German>Stalker Mil. (Urban)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_DESC">
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.</English>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
+			<English>Scientist (Red rad-suit)</English>
+			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME">
+			<English>Scientist (Yellow rad-suit)</English>
+			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_NAME">
+			<English>Stalker (Rookie)</English>
+			<German>Stalker (Anfänger)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
+		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
+		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>		 
+		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_LONER_HEAD_NAME">
+			<English>Stalker (Loner)</English>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_HEAD_NAME">
+			<English>Stalker (Freedom)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_HEAD_NAME">
+			<English>Stalker (Duty)</English>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME">
+			<English>Stalker (Monolith)</English>
+		</Key>	
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_1_NAME">
+		 	<English>Ghillie Suit (Desert 1)</English>
+		 	<German>Ghillie-Anzug (Wüste 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_2_NAME">
+		 	<English>Ghillie Suit (Desert 2)</English>
+		 	<German>Ghillie-Anzug (Wüste 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_3_NAME">
+		 	<English>Ghillie Suit (Desert 3)</English>
+		 	<German>Ghillie-Anzug (Wüste 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_4_NAME">
+		 	<English>Ghillie Suit (Desert 4)</English>
+		 	<German>Ghillie-Anzug (Wüste 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_5_NAME">
+		 	<English>Ghillie Suit (Desert 5)</English>
+		 	<German>Ghillie-Anzug (Wüste 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_6_NAME">
+		 	<English>Ghillie Suit (Desert 6)</English>
+		 	<German>Ghillie-Anzug (Wüste 6)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_7_NAME">
+		 	<English>Ghillie Suit (Desert 7)</English>
+		 	<German>Ghillie-Anzug (Wüste 7)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_8_NAME">
+		 	<English>Ghillie Suit (Desert 8)</English>
+		 	<German>Ghillie-Anzug (Wüste 8)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME">
+		 	<English>Ghillie Suit (Snow 1)</English>
+		 	<German>Ghillie-Anzug (Schnee 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME">
+		 	<English>Ghillie Suit (Snow 2)</English>
+		 	<German>Ghillie-Anzug (Schnee 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME">
+		 	<English>Ghillie Suit (Snow 3)</English>
+		 	<German>Ghillie-Anzug (Schnee 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME">
+		 	<English>Ghillie Suit (Snow 4)</English>
+		 	<German>Ghillie-Anzug (Schnee 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME">
+		 	<English>Ghillie Suit (Snow 5)</English>
+		 	<German>Ghillie-Anzug (Schnee 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_URB_1_NAME">
+		 	<English>Ghillie Suit (Urban 1)</English>
+		 	<German>Ghillie-Anzug (Urban 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_1_NAME">
+		 	<English>Ghillie Suit (Wood 1)</English>
+		 	<German>Ghillie-Anzug (Wald 1)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_2_NAME">
+		 	<English>Ghillie Suit (Wood 2)</English>
+		 	<German>Ghillie-Anzug (Wald 2)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_3_NAME">
+		 	<English>Ghillie Suit (Wood 3)</English>
+		 	<German>Ghillie-Anzug (Wald 3)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_4_NAME">
+		 	<English>Ghillie Suit (Wood 4)</English>
+		 	<German>Ghillie-Anzug (Wald 4)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_5_NAME">
+		 	<English>Ghillie Suit (Wood 5)</English>
+		 	<German>Ghillie-Anzug (Wald 5)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_6_NAME">
+		 	<English>Ghillie Suit (Wood 6)</English>
+		 	<German>Ghillie-Anzug (Wald 6)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_7_NAME">
+		 	<English>Ghillie Suit (Wood 7)</English>
+		 	<German>Ghillie-Anzug (Wald 7)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_8_NAME">
+		 	<English>Ghillie Suit (Wood 8)</English>
+		 	<German>Ghillie-Anzug (Wald 8)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_9_NAME">
+		 	<English>Ghillie Suit (Wood 9)</English>
+		 	<German>Ghillie-Anzug (Wald 9)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_10_NAME">
+		 	<English>Ghillie Suit (Wood 10)</English>
+		 	<German>Ghillie-Anzug (Wald 10)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_11_NAME">
+		 	<English>Ghillie Suit (Wood 11)</English>
+		 	<German>Ghillie-Anzug (Wald 11)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_12_NAME">
+		 	<English>Ghillie Suit (Wood 12)</English>
+		 	<German>Ghillie-Anzug (Wald 12)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_13_NAME">
+		 	<English>Ghillie Suit (Wood 13)</English>
+		 	<German>Ghillie-Anzug (Wald 13)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_14_NAME">
+		 	<English>Ghillie Suit (Wood 14)</English>
+		 	<German>Ghillie-Anzug (Wald 14)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_15_NAME">
+		 	<English>Ghillie Suit (Wood 15)</English>
+		 	<German>Ghillie-Anzug (Wald 15)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_16_NAME">
+		 	<English>Ghillie Suit (Wood 16)</English>
+		 	<German>Ghillie-Anzug (Wald 16)</German>
+		 </Key>	
+		<Key ID="STR_DZE_SKIN_GHILLIE_DES_NAME">
+			<English>Sniper (Desert)</English>
+			<German>Scharfschütze (Wüste)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_SNOW_NAME">
+			<English>Sniper (Snow)</English>
+			<German>Scharfschütze (Schnee)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_URB_NAME">
+			<English>Sniper (Urban)</English>
+			<German>Scharfschütze (Urban)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GHILLIE_WDL_NAME">
+			<English>Sniper (Woodland)</English>
+			<German>Scharfschütze (Wald)</German>
+		</Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_NAME">
+		 	<English>German Rifleman (Desert)</English>
+		 	<German>Dt. Schütze (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_DESC">
+		 	<English>German Rifleman (Desert)</English>
+		 	<German>Dt. Schütze (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_NAME">
+		 	<English>German Teamleader (Desert)</English>
+		 	<German>Dt. Truppführer (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_DESC">
+		 	<English>German Teamleader (Desert)</English>
+		 	<German>Dt. Truppführer (Wüstentarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_NAME">
+		 	<English>German Rifleman (woodland)</English>
+		 	<German>Dt. Schütze (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_DESC">
+		 	<English>German Rifleman (woodland)</English>
+		 	<German>Dt. Schütze (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_NAME">
+		 	<English>German Teamleader (woodland)</English>
+		 	<German>Dt. Truppführer (Waldtarn)</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_DESC">
+		 	<English>German Teamleader (woodland)</English>
+		 	<German>Dt. Truppführer (Waldtarn)</German>
+		 </Key>
+		<Key ID="STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME">
+			<English>GER Rifleman (desert)</English>
+			<German>Dt. Schütze (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_DES_TL_NAME">
+			<English>GER Teamleader (desert)</English>
+			<German>Dt. Truppführer (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_WDL_RIFLEMAN_NAME">
+			<English>GER Rifleman (woodland)</English>
+			<German>Dt. Schütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_KSK_WDL_TL_NAME">
+			<English>GER Teamleader (woodland)</English>
+			<German>Dt. Truppführer (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME">
+			<English>Apocalyptic Rifleman</English>
+			<German>Apokalyptischer Schütze</German>
+		</Key>		 
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_1_NAME">
+		 	<English>Apo. Rifleman 1</English>
+		 	<German>Apo. Schütze 1</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_DESC">
+		 	<English>A pack of run down clothings that fits an apocalyptic environment.</English>
+		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_2_NAME">
+		 	<English>Apo. Rifleman 2</English>
+		 	<German>Apo. Schütze 2</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_3_NAME">
+		 	<English>Apo. Rifleman 3</English>
+		 	<German>Apo. Schütze 3</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_4_NAME">
+		 	<English>Apo. Rifleman 4</English>
+		 	<German>Apo. Schütze 4</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_5_NAME">
+		 	<English>Apo. Rifleman 5</English>
+		 	<German>Apo. Schütze 5</German>
+		 </Key>
+		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME">
+		 	<English>Apo. Rifleman 6</English>
+		 	<German>Apo. Schütze 6</German>
+		 </Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_TL_NAME">
+			<English>Spetsnaz Teamleader (Dark Tan)</English>
+			<German>Speznas Truppführer (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Dark Tan)</English>
+			<German>Speznas Späher (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SNIPER_NAME">
+			<English>Spetsnaz Sniper (Dark Tan)</English>
+			<German>Speznas Heckenschütze (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SPOTTER_NAME">
+			<English>Spetsnaz Spotter (Dark Tan)</English>
+			<German>Speznas Aufklärer (Braun)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_TL_NAME">
+			<English>Spetsnaz Teamleader (Camo)</English>
+			<German>Speznas Truppführer (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Camo)</English>
+			<German>Speznas Späher (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_MEDIC_NAME">
+			<English>Spetsnaz Medic (Camo)</English>
+			<German>Speznas Feldarzt (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_RIFLEMAN_NAME">
+			<English>Spetsnaz Rifleman (Camo)</English>
+			<German>Speznas Schütze (Flecktarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_TL_NAME">
+			<English>Spetsnaz Teamleader (Woodland)</English>
+			<German>Speznas Truppführer (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_SCOUT_NAME">
+			<English>Spetsnaz Scout (Woodland)</English>
+			<German>Speznas Späher (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MARKSMAN_NAME">
+			<English>Spetsnaz Marksman (Woodland)</English>
+			<German>Speznas Scharfschütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MEDIC_NAME">
+			<English>Spetsnaz Medic (Woodland)</English>
+			<German>Speznas Feldarzt (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_OPERATOR_NAME">
+			<English>Spetsnaz Operator (Woodland)</English>
+			<German>Speznas Operator (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME">
+			<English>Spetsnaz MG Soldier (Woodland)</English>
+			<German>Speznas MG Schütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_TL_NAME">
+			<English>Spetsnaz Teamleader (Dark Tan)</English>
+			<German>Speznas Truppführer (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_TL_W_NAME">
+			<English>Spetsnaz Teamleader (Camo)</English>
+			<German>Speznas Truppführer (Flecktarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC">
+			<English>Special Spetsnaz clothings.</English>
+			<German>Spezielle Speznas Militärkleidung.</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Dark Tan)</English>
+			<German>Speznas Späher (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME">
+			<English>Spetsnaz Sniper (Dark Tan)</English>
+			<German>Speznas Heckenschütze (Braun)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME">
+			<English>Spetsnaz Spotter (Dark Tan)</English>
+			<German>Speznas Aufklärer (Braun)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME">
+			<English>Spetsnaz Scout (Camo)</English>
+			<German>Speznas Späher (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME">
+			<English>Spetsnaz Rifleman (Camo)</English>
+			<German>Speznas Schütze (Flecktarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME">
+			<English>Spetsnaz Teamleader (Woodland)</English>
+			<German>Speznas Truppführer (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME">
+			<English>Spetsnaz Scout (Woodland)</English>
+			<German>Speznas Späher (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME">
+			<English>Spez. Marksman (Woodland)</English>
+			<German>Speznas Scharfschütze (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME">
+			<English>Spetsnaz Medic (Woodland)</English>
+			<German>Speznas Feldarzt (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME">
+			<English>Spetsnaz Operator (Woodland)</English>
+			<German>Speznas Operator (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME">
+			<English>Spetsnaz MG Soldier (Woodland)</English>
+			<German>Speznas MG Schütze (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME">
+			<English>ACR Soldier (Woodland)</English>
+			<German>ACR Soldat (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME">
+			<English>ACR Soldier (Desert)</English>
+			<German>ACR Soldat (Wüstentarn)</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_CREW_NAME">
+			<English>ACR Crewman</English>
+			<German>ACR Besatzungsmitglied</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_OFFICER_NAME">
+			<English>ACR Officer</English>
+			<German>ACR Offizier</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_SPFORCE_NAME">
+			<English>ACR Special Forces</English>
+			<German>ACR Spezialeinheit</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_RECON_NAME">
+			<English>ACR Recon</English>
+			<German>ACR Aufklärer</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_ASSAULT_NAME">
+			<English>ACR Assault Unit</English>
+			<German>ACR Angriffseinheit</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_ACR_SAPPER_NAME">
+			<English>ACR Sapper</English>
+			<German>ACR Pionier</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME">
+			<English>ACR Heavy Soldier</English>
+			<German>ACR Schwerer Soldat</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_GHILLIE_NAME">
+			<English>ACR Ghillie Suit</English>
+			<German>ACR Ghillie-Anzug</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME">
+			<English>ACR Soldier Shirt</English>
+			<German>ACR Soldat T-Shirt</German>
+		</Key>			
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>
@@ -17935,56 +20489,6 @@
 			<German>Du brauchst Streichhölzer um ein Lagerfeuer aufzubauen.</German>
 			<Russian>Нужны спички чтобы создать кострище.</Russian>
 		</Key>
-		<Key ID="STR_DZ_WPN_M107_NAME">
-			<English>M107</English>
-		</Key>
-		<Key ID="STR_DZ_WPN_M107_DESC">
-			<English>Anti-materiel sniper rifle, 12.7x99 mm caliber round.</English>
-			<German>Panzerbrechendes Scharfschützengewehr vom Kalibier 12.7x99 mm.</German>
-			<Russian>Крупнокалиберная полуавтоматическая снайперская винтовка Баррет М107.&lt;br/&gt;Патрон: 12.7x99мм НАТО</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME">
-			<English>20Rnd. SCAR mag.</English>
-			<Russian>20п. SCAR маг.</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME">
-			<English>20Rnd. SCAR SD mag.</English>
-			<Russian>20п. SCAR SD маг.</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_10Rnd_127x99_m107_NAME">
-			<English>10Rnd. M107 mag.</English>
-			<Russian>10п. M107 маг.</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_5Rnd_127x108_KSVK_NAME">
-			<English>5Rnd. KSVK mag.</English>
-			<Russian>5п. KSVK маг.</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_5Rnd_86x70_L115A1_NAME">
-			<English>5Rnd. L115 mag.</English>
-			<Russian>5п. L115 маг.</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME">
-			<English>20Rnd. VSS mag.</English>
-			<Russian>20п. VSS маг.</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME">
-			<English>10Rnd. VSS mag.</English>
-			<Russian>10п. VSS маг.</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME">
-			<English>20Rnd. 12 Cal. Slug.</English>
-			<German>20 Schuss Kal. 12 Flintenlaufgeschoss</German>
-			<Russian>20п. 12к (пуля)</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME">
-			<English>20Rnd. 12 Cal. Pellets.</English>
-			<German>20 Schuss Kal. 12 Schrot</German>
-			<Russian>20п. 12к (дробь)</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_HE_NAME">
-			<English>20Rnd. 19mm HE.</English>
-			<Russian>20п. 19мм HE</Russian>
-		</Key>
 		<Key ID="STR_DZ_MAG_SATCHEL_NAME">
 			<English>Satchel Charge</English>
 			<French>Charges en sacoche</French>
@@ -18225,72 +20729,6 @@
 			<English>Leaf of a tobacco plant</English>
 			<German>Blatt einer Tabakpflanze</German>
 			<Russian>Лист табака с табачной плантации</Russian>
-		</Key>
-		
-		<!--New Epoch 1.0.6.3 weapon, attachment and magazine strings-->
-        <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
-          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
-          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
-          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
-          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
-          <French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 30 &lt;br/&gt;Utilisé avec : AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
-          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
-          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
-          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
-          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
-        </Key>
-		<Key ID="STR_DZ_MAG_75RND_RPK74_DESC">
-          <German>Kaliber: 5,45x39mm &lt;br/&gt;Schuss: 75 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
-          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
-          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 75 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
-          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 75 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
-          <French>Calibre : 5.45x39 mm &lt;br/&gt;Munitions : 75 &lt;br/&gt;Utilisé avec : AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
-          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 75 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
-          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 75 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
-          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
-          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
-        </Key>
-		<Key ID="STR_DZ_MAG_100RND_556x45_MG36_NAME">
-			<English>100Rnd. MG36 drum mag.</English>
-			<German>100 Schuss MG36 Trommelmagazin</German>
-			<Russian>100п. МГ-36 барабан</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_100RND_MG36_DESC">
-          <German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
-          <English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
-          <Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
-          <Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, M8 y L110</Spanish>
-          <French>Calibre : 5.56x45mm &lt;br/&gt;Munitions : 100 &lt;br/&gt;Utilisé avec : G36, MG36, M16, M4, M249, MK-12, M8 et L110</French>
-          <Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, M8 a L110</Czech>
-          <Russian>Патрон: 5.56x45 мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, M8, L110</Russian>
-          <Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, M8 i L110</Polish>
-          <Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
-        </Key>
-		
-		<!-- AK107 -->
-		<Key ID="STR_DZ_WPN_AK107_NAME">
-			<English>AK-107</English>
-			<Russian>АК-107</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_GL_NAME">
-			<English>AK-107 GP-25</English>
-			<Russian>АК-107 ГП-25</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_KOBRA_NAME">
-			<English>AK-107 Kobra</English>
-			<Russian>АК-107 Кобра</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_GL_KOBRA_NAME">
-			<English>AK-107 GP-25 Kobra</English>
-			<Russian>АК-107 ГП-25 Кобра</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_PSO1_NAME">
-			<English>AK-107 PSO-1</English>
-			<Russian>АК-107 ПСО-1</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_AK107_GL_PSO1_NAME">
-			<English>AK-107 GP-25 PSO-1</English>
-			<Russian>АК-107 ГП-25 ПСО-1</Russian>
 		</Key>
 		
 		<!--PET waterbottles -->
@@ -19011,1001 +21449,7 @@
 		<Key ID="STR_EQUIP_APSI_DESC">
 			<English>APSI (Anti PSI) device, which full purpose is yet unknown.</English>
 			<German>APSI (Anti PSI) Emitter, dessen vollständige Funktion noch unbekannt ist.</German>
-		</Key>	
-		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME">
-			<English>Stalker Mil. (woodland)</English>
-			<German>Stalker Mil. (Wald)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME">
-			<English>Stalker Mil. (woodland)</English>
-			<German>Stalker Mil. (Wald)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME">
-			<English>Stalker Mil. (urban)</English>
-			<German>Stalker Mil. (Urban)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME">
-			<English>Stalker Mil. (urban)</English>
-			<German>Stalker Mil. (Urban)</German>
 		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME">
-			<English>Scientist (Red rad-suit)</English>
-			<German>Wissenschaftler (Roter Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_HEAD_NAME">
-			<English>Scientist (Red rad-suit)</English>
-			<German>Wissenschaftler (Roter Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_MASK_NAME">
-			<English>Scientist (Yellow rad-suit)</English>
-			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_HEAD_NAME">
-			<English>Scientist (Yellow rad-suit)</English>
-			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
-			<English>Stalker (Rookie)</English>
-			<German>Stalker (Anfänger)</German>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
-			<English>Stalker (Loner)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_LONER_HEAD_NAME">
-			<English>Stalker (Loner)</English>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME">
-			<English>Stalker (Freedom)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_HEAD_NAME">
-			<English>Stalker (Freedom)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_DUTY_MASK_NAME">
-			<English>Stalker (Duty)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_DUTY_HEAD_NAME">
-			<English>Stalker (Duty)</English>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_MASK_NAME">
-			<English>Stalker (Monolith)</English>
-		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_HEAD_NAME">
-			<English>Stalker (Monolith)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME">
-			<English>Stalker Mil. (woodland)</English>
-			<German>Stalker Mil. (Wald)</German>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
-		 	<English>A pack of special armour that fits an apocalyptic environment.</English>
-		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.</German>
-		 </Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
-			<English>Stalker Mil. (woodland)</English>
-			<German>Stalker Mil. (Wald)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME">
-			<English>Stalker Mil. (urban)</English>
-			<German>Stalker Mil. (Urban)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME">
-			<English>Stalker Mil. (urban)</English>
-			<German>Stalker Mil. (Urban)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME">
-			<English>Scientist (Red rad-suit)</English>
-			<German>Wissenschaftler (Roter Rad-Anzug)</German>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_DESC">
-		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.</English>
-		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.</German>
-		 </Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
-			<English>Scientist (Red rad-suit)</English>
-			<German>Wissenschaftler (Roter Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME">
-			<English>Scientist (Yellow rad-suit)</English>
-			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME">
-			<English>Scientist (Yellow rad-suit)</English>
-			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_NAME">
-			<English>Stalker (Rookie)</English>
-			<German>Stalker (Anfänger)</German>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
-		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
-		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
-		 </Key>		 
-		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
-			<English>Stalker (Loner)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_LONER_HEAD_NAME">
-			<English>Stalker (Loner)</English>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME">
-			<English>Stalker (Freedom)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_HEAD_NAME">
-			<English>Stalker (Freedom)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME">
-			<English>Stalker (Duty)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_HEAD_NAME">
-			<English>Stalker (Duty)</English>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME">
-			<English>Stalker (Monolith)</English>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME">
-			<English>Stalker (Monolith)</English>
-		</Key>	
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_1_NAME">
-		 	<English>Ghillie Suit (Desert 1)</English>
-		 	<German>Ghillie-Anzug (Wüste 1)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_2_NAME">
-		 	<English>Ghillie Suit (Desert 2)</English>
-		 	<German>Ghillie-Anzug (Wüste 2)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_3_NAME">
-		 	<English>Ghillie Suit (Desert 3)</English>
-		 	<German>Ghillie-Anzug (Wüste 3)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_4_NAME">
-		 	<English>Ghillie Suit (Desert 4)</English>
-		 	<German>Ghillie-Anzug (Wüste 4)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_5_NAME">
-		 	<English>Ghillie Suit (Desert 5)</English>
-		 	<German>Ghillie-Anzug (Wüste 5)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_6_NAME">
-		 	<English>Ghillie Suit (Desert 6)</English>
-		 	<German>Ghillie-Anzug (Wüste 6)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_7_NAME">
-		 	<English>Ghillie Suit (Desert 7)</English>
-		 	<German>Ghillie-Anzug (Wüste 7)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_8_NAME">
-		 	<English>Ghillie Suit (Desert 8)</English>
-		 	<German>Ghillie-Anzug (Wüste 8)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME">
-		 	<English>Ghillie Suit (Snow 1)</English>
-		 	<German>Ghillie-Anzug (Schnee 1)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME">
-		 	<English>Ghillie Suit (Snow 2)</English>
-		 	<German>Ghillie-Anzug (Schnee 2)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME">
-		 	<English>Ghillie Suit (Snow 3)</English>
-		 	<German>Ghillie-Anzug (Schnee 3)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME">
-		 	<English>Ghillie Suit (Snow 4)</English>
-		 	<German>Ghillie-Anzug (Schnee 4)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME">
-		 	<English>Ghillie Suit (Snow 5)</English>
-		 	<German>Ghillie-Anzug (Schnee 5)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_URB_1_NAME">
-		 	<English>Ghillie Suit (Urban 1)</English>
-		 	<German>Ghillie-Anzug (Urban 1)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_1_NAME">
-		 	<English>Ghillie Suit (Wood 1)</English>
-		 	<German>Ghillie-Anzug (Wald 1)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_2_NAME">
-		 	<English>Ghillie Suit (Wood 2)</English>
-		 	<German>Ghillie-Anzug (Wald 2)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_3_NAME">
-		 	<English>Ghillie Suit (Wood 3)</English>
-		 	<German>Ghillie-Anzug (Wald 3)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_4_NAME">
-		 	<English>Ghillie Suit (Wood 4)</English>
-		 	<German>Ghillie-Anzug (Wald 4)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_5_NAME">
-		 	<English>Ghillie Suit (Wood 5)</English>
-		 	<German>Ghillie-Anzug (Wald 5)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_6_NAME">
-		 	<English>Ghillie Suit (Wood 6)</English>
-		 	<German>Ghillie-Anzug (Wald 6)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_7_NAME">
-		 	<English>Ghillie Suit (Wood 7)</English>
-		 	<German>Ghillie-Anzug (Wald 7)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_8_NAME">
-		 	<English>Ghillie Suit (Wood 8)</English>
-		 	<German>Ghillie-Anzug (Wald 8)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_9_NAME">
-		 	<English>Ghillie Suit (Wood 9)</English>
-		 	<German>Ghillie-Anzug (Wald 9)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_10_NAME">
-		 	<English>Ghillie Suit (Wood 10)</English>
-		 	<German>Ghillie-Anzug (Wald 10)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_11_NAME">
-		 	<English>Ghillie Suit (Wood 11)</English>
-		 	<German>Ghillie-Anzug (Wald 11)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_12_NAME">
-		 	<English>Ghillie Suit (Wood 12)</English>
-		 	<German>Ghillie-Anzug (Wald 12)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_13_NAME">
-		 	<English>Ghillie Suit (Wood 13)</English>
-		 	<German>Ghillie-Anzug (Wald 13)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_14_NAME">
-		 	<English>Ghillie Suit (Wood 14)</English>
-		 	<German>Ghillie-Anzug (Wald 14)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_15_NAME">
-		 	<English>Ghillie Suit (Wood 15)</English>
-		 	<German>Ghillie-Anzug (Wald 15)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_16_NAME">
-		 	<English>Ghillie Suit (Wood 16)</English>
-		 	<German>Ghillie-Anzug (Wald 16)</German>
-		 </Key>	
-		<Key ID="STR_DZE_SKIN_GHILLIE_DES_NAME">
-			<English>Sniper (Desert)</English>
-			<German>Scharfschütze (Wüste)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_GHILLIE_SNOW_NAME">
-			<English>Sniper (Snow)</English>
-			<German>Scharfschütze (Schnee)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_GHILLIE_URB_NAME">
-			<English>Sniper (Urban)</English>
-			<German>Scharfschütze (Urban)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_GHILLIE_WDL_NAME">
-			<English>Sniper (Woodland)</English>
-			<German>Scharfschütze (Wald)</German>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_NAME">
-		 	<English>German Rifleman (Desert)</English>
-		 	<German>Dt. Schütze (Wüstentarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_DESC">
-		 	<English>German Rifleman (Desert)</English>
-		 	<German>Dt. Schütze (Wüstentarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_NAME">
-		 	<English>German Teamleader (Desert)</English>
-		 	<German>Dt. Truppführer (Wüstentarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_DESC">
-		 	<English>German Teamleader (Desert)</English>
-		 	<German>Dt. Truppführer (Wüstentarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_NAME">
-		 	<English>German Rifleman (woodland)</English>
-		 	<German>Dt. Schütze (Waldtarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_DESC">
-		 	<English>German Rifleman (woodland)</English>
-		 	<German>Dt. Schütze (Waldtarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_NAME">
-		 	<English>German Teamleader (woodland)</English>
-		 	<German>Dt. Truppführer (Waldtarn)</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_DESC">
-		 	<English>German Teamleader (woodland)</English>
-		 	<German>Dt. Truppführer (Waldtarn)</German>
-		 </Key>
-		<Key ID="STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME">
-			<English>GER Rifleman (desert)</English>
-			<German>Dt. Schütze (Wüstentarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_KSK_DES_TL_NAME">
-			<English>GER Teamleader (desert)</English>
-			<German>Dt. Truppführer (Wüstentarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_KSK_WDL_RIFLEMAN_NAME">
-			<English>GER Rifleman (woodland)</English>
-			<German>Dt. Schütze (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_KSK_WDL_TL_NAME">
-			<English>GER Teamleader (woodland)</English>
-			<German>Dt. Truppführer (Waldtarn)</German>
-		</Key>	
-		<Key ID="STR_DZE_WPN_M16RUSTY_NAME">
-			<English>M16A2 (Rusty)</English>
-			<German>M16A2 (Rostig)</German>
-		</Key>
-		<Key ID="STR_DZE_WPN_M16RUSTY_DESC">
-			<English>This M16 rifle is in a very bad shape.</English>
-			<German>Dieses M16 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
-		</Key>
-		<Key ID="STR_DZE_WPN_M4RUSTY_NAME">
-			<English>M4A1 (Rusty)</English>
-			<German>M4A1 (Rostig)</German>
-		</Key>
-		<Key ID="STR_DZE_WPN_M4RUSTY_DESC">
-			<English>This M4 rifle is in a very bad shape.</English>
-			<German>Dieses M4 Gewehr ist in einem sehr heruntergekommenen Zustand.</German>
-		</Key>	
-		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_NAME">
-			<English>60Rnd. Stanag Mag</English>
-			<German>60 Schuss Stanag Mag</German>
-		</Key>
-		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
-			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
-			<German>Kaliber: 5.56x45mm &lt;br/&gt;Schuss: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME">
-			<English>Apocalyptic Rifleman</English>
-			<German>Apokalyptischer Schütze</German>
-		</Key>		 
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_1_NAME">
-		 	<English>Apo. Rifleman 1</English>
-		 	<German>Apo. Schütze 1</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_DESC">
-		 	<English>A pack of run down clothings that fits an apocalyptic environment.</English>
-		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_2_NAME">
-		 	<English>Apo. Rifleman 2</English>
-		 	<German>Apo. Schütze 2</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_3_NAME">
-		 	<English>Apo. Rifleman 3</English>
-		 	<German>Apo. Schütze 3</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_4_NAME">
-		 	<English>Apo. Rifleman 4</English>
-		 	<German>Apo. Schütze 4</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_5_NAME">
-		 	<English>Apo. Rifleman 5</English>
-		 	<German>Apo. Schütze 5</German>
-		 </Key>
-		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME">
-		 	<English>Apo. Rifleman 6</English>
-		 	<German>Apo. Schütze 6</German>
-		 </Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_DT_TL_NAME">
-			<English>Spetsnaz Teamleader (Dark Tan)</English>
-			<German>Speznas Truppführer (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SCOUT_NAME">
-			<English>Spetsnaz Scout (Dark Tan)</English>
-			<German>Speznas Späher (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SNIPER_NAME">
-			<English>Spetsnaz Sniper (Dark Tan)</English>
-			<German>Speznas Heckenschütze (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SPOTTER_NAME">
-			<English>Spetsnaz Spotter (Dark Tan)</English>
-			<German>Speznas Aufklärer (Braun)</German>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_TL_NAME">
-			<English>Spetsnaz Teamleader (Camo)</English>
-			<German>Speznas Truppführer (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_SCOUT_NAME">
-			<English>Spetsnaz Scout (Camo)</English>
-			<German>Speznas Späher (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_MEDIC_NAME">
-			<English>Spetsnaz Medic (Camo)</English>
-			<German>Speznas Feldarzt (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_RIFLEMAN_NAME">
-			<English>Spetsnaz Rifleman (Camo)</English>
-			<German>Speznas Schütze (Flecktarn)</German>
-		</Key>		
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_TL_NAME">
-			<English>Spetsnaz Teamleader (Woodland)</English>
-			<German>Speznas Truppführer (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_SCOUT_NAME">
-			<English>Spetsnaz Scout (Woodland)</English>
-			<German>Speznas Späher (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MARKSMAN_NAME">
-			<English>Spetsnaz Marksman (Woodland)</English>
-			<German>Speznas Scharfschütze (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MEDIC_NAME">
-			<English>Spetsnaz Medic (Woodland)</English>
-			<German>Speznas Feldarzt (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_OPERATOR_NAME">
-			<English>Spetsnaz Operator (Woodland)</English>
-			<German>Speznas Operator (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME">
-			<English>Spetsnaz MG Soldier (Woodland)</English>
-			<German>Speznas MG Schütze (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_TL_NAME">
-			<English>Spetsnaz Teamleader (Dark Tan)</English>
-			<German>Speznas Truppführer (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_TL_W_NAME">
-			<English>Spetsnaz Teamleader (Camo)</English>
-			<German>Speznas Truppführer (Flecktarn)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC">
-			<English>Special Spetsnaz clothings.</English>
-			<German>Spezielle Speznas Militärkleidung.</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME">
-			<English>Spetsnaz Scout (Dark Tan)</English>
-			<German>Speznas Späher (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME">
-			<English>Spetsnaz Sniper (Dark Tan)</English>
-			<German>Speznas Heckenschütze (Braun)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME">
-			<English>Spetsnaz Spotter (Dark Tan)</English>
-			<German>Speznas Aufklärer (Braun)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME">
-			<English>Spetsnaz Scout (Camo)</English>
-			<German>Speznas Späher (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME">
-			<English>Spetsnaz Rifleman (Camo)</English>
-			<German>Speznas Schütze (Flecktarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME">
-			<English>Spetsnaz Teamleader (Woodland)</English>
-			<German>Speznas Truppführer (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME">
-			<English>Spetsnaz Scout (Woodland)</English>
-			<German>Speznas Späher (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME">
-			<English>Spez. Marksman (Woodland)</English>
-			<German>Speznas Scharfschütze (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME">
-			<English>Spetsnaz Medic (Woodland)</English>
-			<German>Speznas Feldarzt (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME">
-			<English>Spetsnaz Operator (Woodland)</English>
-			<German>Speznas Operator (Waldtarn)</German>
-		</Key>
-		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME">
-			<English>Spetsnaz MG Soldier (Woodland)</English>
-			<German>Speznas MG Schütze (Waldtarn)</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME">
-			<English>ACR Soldier (Woodland)</English>
-			<German>ACR Soldat (Waldtarn)</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME">
-			<English>ACR Soldier (Desert)</English>
-			<German>ACR Soldat (Wüstentarn)</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_CREW_NAME">
-			<English>ACR Crewman</English>
-			<German>ACR Besatzungsmitglied</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_OFFICER_NAME">
-			<English>ACR Officer</English>
-			<German>ACR Offizier</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_SPFORCE_NAME">
-			<English>ACR Special Forces</English>
-			<German>ACR Spezialeinheit</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_RECON_NAME">
-			<English>ACR Recon</English>
-			<German>ACR Aufklärer</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_ASSAULT_NAME">
-			<English>ACR Assault Unit</English>
-			<German>ACR Angriffseinheit</German>
-		</Key>		
-		<Key ID="STR_DZE_EQUIP_ACR_SAPPER_NAME">
-			<English>ACR Sapper</English>
-			<German>ACR Pionier</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME">
-			<English>ACR Heavy Soldier</English>
-			<German>ACR Schwerer Soldat</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_GHILLIE_NAME">
-			<English>ACR Ghillie Suit</English>
-			<German>ACR Ghillie-Anzug</German>
-		</Key>	
-		<Key ID="STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME">
-			<English>ACR Soldier Shirt</English>
-			<German>ACR Soldat T-Shirt</German>
-		</Key>		
-		<!--epoch 107 new backpacks-->
-		<Key ID="STR_BACKPACK_NAME_PATROL_DZE1">
-			<English>Patrol Backpack</English>
-			<French>Sac de patrouille (coyote)</French>
-			<Russian>Патрульный рюкзак</Russian>
-			<Spanish>Mochila de Patrullaje (Coyote)</Spanish>
-			<Czech>Batůžek (coyote)</Czech>
-			<German>Patrol Rucksack (Coyote)</German>
-			<Dutch>Patrouillerugzak (coyote)</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_PATROL_DZE1">
-			<English>Patrol Backpack &lt;br/&gt;Capacity: 10 items</English>
-			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 10</French>
-			<Russian>Рюкзак на (10 слотов)</Russian>
-			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;10 litros</Spanish>
-			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 10 litrů</Czech>
-			<German>Patrol Rucksack von "Coyote" &lt;br/&gt;Volumen: 10 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_PATROL_DZE2">
-			<English>Patrol Backpack+</English>
-			<French>Sac de patrouille (coyote)+</French>
-			<Russian>Патрульный рюкзак+</Russian>
-			<Spanish>Mochila de Patrullaje (Coyote)+</Spanish>
-			<Czech>Batůžek (coyote)+</Czech>
-			<German>Patrol Rucksack (Coyote)+</German>
-			<Dutch>Patrouillerugzak (coyote)+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_PATROL_DZE2">
-			<English>Patrol Backpack &lt;br/&gt;Capacity: 15 items</English>
-			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 15</French>
-			<Russian>Рюкзак на (15 слотов)</Russian>
-			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;15 litros</Spanish>
-			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 15 litrů</Czech>
-			<German>Patrol Rucksack von "Coyote". &lt;br/&gt;Volumen: 15 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_VEST_DZE1">
-			<English>Czech Vest Pouch</English>
-			<French>Sac tchèque</French>
-			<Russian>Чешский рюкзак (малый)</Russian>
-			<Spanish>Bolsa Chaleco</Spanish>
-			<Czech>Česká vesta</Czech>
-			<German>Tschechischer Westenrucksack</German>
-			<Dutch>Tsjechische Borstzak</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_VEST_DZE1">
-			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 12 items</English>
-			<French>Sac tchèque &lt;br/&gt;Taille: 12</French>
-			<Russian>Рюкзак на (12 слотов)</Russian>
-			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;12 litros</Spanish>
-			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 12 litrů</Czech>
-			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 12 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_VEST_DZE2">
-			<English>Czech Vest Pouch+</English>
-			<French>Sac tchèque+</French>
-			<Russian>Чешский рюкзак (малый)+</Russian>
-			<Spanish>Bolsa Chaleco+</Spanish>
-			<Czech>Česká vesta+</Czech>
-			<German>Tschechischer Westenrucksack+</German>
-			<Dutch>Tsjechische Borstzak+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_VEST_DZE2">
-			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 17 items</English>
-			<French>Sac tchèque &lt;br/&gt;Taille: 17</French>
-			<Russian>Рюкзак на (17 слотов)</Russian>
-			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;17 litros</Spanish>
-			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 17 litrů</Czech>
-			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 17 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_ACU_DZE1">
-			<English>Assault Backpack</English>
-			<French>Sac d&apos;assault (ACU)</French>
-			<Russian>Штурмовой рюкзак</Russian>
-			<Spanish>Mochila de Asalto (ACU)</Spanish>
-			<Czech>Batoh Assault Pack (ACU)</Czech>
-			<German>Kampfrucksack (ACU)</German>
-			<Dutch>Aanvalsrugzak (ACU)</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_ACU_DZE1">
-			<English>Assault Backpack &lt;br/&gt;Capacity: 15 items</English>
-			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 15</French>
-			<Russian>Рюкзак на (15 слотов)</Russian>
-			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;15 litros</Spanish>
-			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 15 litrů</Czech>
-			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 15 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_ACU_DZE2">
-			<English>Assault Backpack+</English>
-			<French>Sac d&apos;assault (ACU)+</French>
-			<Russian>Штурмовой рюкзак+</Russian>
-			<Spanish>Mochila de Asalto (ACU)+</Spanish>
-			<Czech>Batoh Assault Pack (ACU)+</Czech>
-			<German>Kampfrucksack (ACU)+</German>
-			<Dutch>Aanvalsrugzak (ACU)+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_ACU_DZE2">
-			<English>Assault Backpack &lt;br/&gt;Capacity: 20 items</English>
-			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 20</French>
-			<Russian>Рюкзак на (20 слотов)</Russian>
-			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;20 litros</Spanish>
-			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 20 litrů</Czech>
-			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 20 Liter</German>
-		</Key>	
-		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE1">
-			<English>Terminal Backpack</English>
-			<German>Terminal Rucksack</German>
-			<Russian>Вокзальный рюкзак</Russian>
-			<Dutch>Terminal Rugzak</Dutch>
-			<French>Sac à Dos (terminal)</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE1">
-			<English>Terminal Backpack &lt;br/&gt;Capacity: 17 items</English>
-			<German>Terminal Rucksack &lt;br/&gt;Volumen: 17 Liter</German>
-			<Russian>Вокзальный рюкзак (17 слотов)</Russian>
-			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 17 liter</Dutch>
-			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 17</French>		
-		</Key>
-		<Key ID="STR_EPOCH_PACK_TERMINAL_DZE2">
-			<English>Terminal Backpack+</English>
-			<German>Terminal Rucksack+</German>
-			<Russian>Вокзальный рюкзак+</Russian>
-			<Dutch>Terminal Rugzak+</Dutch>
-			<French>Sac à Dos (terminal)+</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE2">
-			<English>Terminal Backpack &lt;br/&gt;Capacity: 22 items</English>
-			<German>Terminal Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
-			<Russian>Вокзальный рюкзак (22 слотов)</Russian>
-			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 22 liter</Dutch>
-			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 22</French>		
-		</Key>		
-		<Key ID="STR_EPOCH_PACK_TINY_DZE1">
-			<English>Tiny Backpack</English>
-			<German>Tiny Rucksack</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE1">
-			<English>Tiny Backpack &lt;br/&gt;Capacity: 18 items</English>
-			<German>Tiny Rucksack &lt;br/&gt;Volumen: 18 Liter</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_TINY_DZE2">
-			<English>Tiny Backpack+</English>
-			<German>Tiny Rucksack+</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE2">
-			<English>Tiny Backpack &lt;br/&gt;Capacity: 22 items</English>
-			<German>Tiny Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
-		</Key>			
-		<Key ID="STR_BACKPACK_NAME_ALICE_DZE1">
-			<English>Alice Backpack</English>
-			<French>Sac Alice</French>
-			<Russian>Рюкзак ALICE</Russian>
-			<Spanish>Mochila Alice</Spanish>
-			<Czech>Batoh Alice</Czech>
-			<German>Alice Rucksack</German>
-			<Dutch>ALICE Rugzak</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_ALICE_DZE1">
-			<English>Alice Backpack &lt;br/&gt;Capacity: 20 items</English>
-			<French>Sac Alice. &lt;br/&gt;Taille: 20</French>
-			<Russian>Рюкзак на (20 слотов)</Russian>
-			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;20 litros</Spanish>
-			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 20 litrů</Czech>
-			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 20 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_ALICE_DZE2">
-			<English>Alice Backpack+</English>
-			<French>Sac Alice+</French>
-			<Russian>Рюкзак ALICE+</Russian>
-			<Spanish>Mochila Alice+</Spanish>
-			<Czech>Batoh Alice+</Czech>
-			<German>Alice Rucksack+</German>
-			<Dutch>ALICE Rugzak+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_ALICE_DZE2">
-			<English>Alice Backpack &lt;br/&gt;Capacity: 25 items</English>
-			<French>Sac Alice &lt;br/&gt;Taille: 25</French>
-			<Russian>Рюкзак на (25 слотов)</Russian>
-			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;25 litros</Spanish>
-			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 25 litrů</Czech>
-			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 25 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE1">
-			<English>Survival Backpack</English>
-			<French>ACU de survie</French>
-			<Russian>Рюкзак выживания</Russian>
-			<Spanish>Mochila de Supervivencia ACU</Spanish>
-			<Czech>Batoh Survival ACU</Czech>
-			<German>Survival Rucksack</German>
-			<Dutch>Overlevings ACU</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE1">
-			<English>Survival Backpack &lt;br/&gt;Capacity: 22 items</English>
-			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
-			<Russian>Рюкзак на (22 слота)</Russian>
-			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
-			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
-			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_SURVACU_DZE2">
-			<English>Survival Backpack+</English>
-			<French>ACU de survie+</French>
-			<Russian>Рюкзак выживания+</Russian>
-			<Spanish>Mochila de Supervivencia ACU+</Spanish>
-			<Czech>Batoh Survival ACU+</Czech>
-			<German>Survival Rucksack+</German>
-			<Dutch>Overlevings ACU+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE2">
-			<English>Survival Backpack &lt;br/&gt;Capacity: 27 items</English>
-			<French>ACU de survie&lt;br/&gt;Taille: 27</French>
-			<Russian>Рюкзак на (27 слота)</Russian>
-			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;27 litros</Spanish>
-			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 27 litrů</Czech>
-			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 27 Liter</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_COMPACT_DZE1">
-			<English>Compact Backpack</English>
-			<German>Compact Rucksack</German>
-			<Russian>Компактный рюкзак</Russian>
-			<Dutch>Compacte Rugzak</Dutch>
-			<French>Sac Compact</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE1">
-			<English>Compact Backpack &lt;br/&gt;Capacity: 25 items</English>
-			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
-			<Russian>Компактный рюкзак (25 слотов)</Russian>
-			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
-			<French>Sac Compact &lt;br/&gt;Taille: 25</French>		
-		</Key>
-		<Key ID="STR_EPOCH_PACK_COMPACT_DZE2">
-			<English>Compact Backpack+</English>
-			<German>Compact Rucksack+</German>
-			<Russian>Компактный рюкзак+</Russian>
-			<Dutch>Compacte Rugzak+</Dutch>
-			<French>Sac Compact+</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE2">
-			<English>Compact Backpack &lt;br/&gt;Capacity: 30 items</English>
-			<German>Compact Rucksack &lt;br/&gt;Volumen: 30 Liter</German>
-			<Russian>Компактный рюкзак (30 слотов)</Russian>
-			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 30 liter</Dutch>
-			<French>Sac Compact &lt;br/&gt;Taille: 30</French>		
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE1">
-			<English>British Assault Backpack</English>
-			<French>Sac d&apos;assault britannique</French>
-			<Russian>Британский рюкзак</Russian>
-			<Spanish>Mochila de Asalto Británica</Spanish>
-			<Czech>Britský batoh</Czech>
-			<German>Britischer Kampfrucksack</German>
-			<Dutch>Britse Aanvalsrugzak</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE1">
-			<English>British Assault Backpack &lt;br/&gt;Capacity: 30 items</English>
-			<French>Sac d&apos;assault britannique &lt;br/&gt;Taille: 30</French>
-			<Russian>Рюкзак на (30 слотов)</Russian>
-			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;30 litros</Spanish>
-			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 30 litrů</Czech>
-			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 30 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_BRITISH_DZE2">
-			<English>British Assault Backpack+</English>
-			<French>Sac d&apos;assault britannique+</French>
-			<Russian>Британский рюкзак+</Russian>
-			<Spanish>Mochila de Asalto Británica+</Spanish>
-			<Czech>Britský batoh+</Czech>
-			<German>Britischer Kampfrucksack+</German>
-			<Dutch>Britse Aanvalsrugzak+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE2">
-			<English>British Assault Backpack. &lt;br/&gt;Capacity: 35 items</English>
-			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 35</French>
-			<Russian>Рюкзак на (35 слотов)</Russian>
-			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;35 litros</Spanish>
-			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 35 litrů</Czech>
-			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 35 Liter</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_GB_DZE1">
-			<English>Gunbag</English>
-			<German>Waffentasche</German>
-			<Russian>Оружейная сумка</Russian>
-			<Dutch>Wapenzak</Dutch>
-			<French>Fourreau</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE1">
-			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
-			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
-			<Russian>Оружейная сумка (35 слотов)</Russian>
-			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
-			<French>Fourreau&lt;br/&gt;Taille: 35</French>		
-		</Key>
-		<Key ID="STR_EPOCH_PACK_GB_DZE2">
-			<English>Gunbag+</English>
-			<German>Waffentasche+</German>
-			<Russian>Оружейная сумка+</Russian>
-			<Dutch>Wapenzak+</Dutch>
-			<French>Fourreau+</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE2">
-			<English>Gunbag &lt;br/&gt;Capacity: 40 items</English>
-			<German>Waffentasche &lt;br/&gt;Volumen: 40 Liter</German>
-			<Russian>Оружейная сумка (40 слотов)</Russian>
-			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 40 liter</Dutch>
-			<French>Fourreau&lt;br/&gt;Taille: 40</French>		
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO1_DZE1">
-			<English>Night Backpack</English>
-			<German>Night Rucksack</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO1_DZE1">
-			<English>Night Backpack &lt;br/&gt;Capacity: 35 items</English>
-			<German>Night Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO1_DZE2">
-			<English>Night Backpack+</English>
-			<German>Night Rucksack+</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO1_DZE2">
-			<English>Night Backpack &lt;br/&gt;Capacity: 40 items</English>
-			<German>Night Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO2_DZE1">
-			<English>Survivor Backpack</English>
-			<German>Survivor Rucksack</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO2_DZE1">
-			<English>Survivor Backpack &lt;br/&gt;Capacity: 40 items</English>
-			<German>Survivor Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO2_DZE2">
-			<English>Survivor Backpack+</English>
-			<German>Survivor Rucksack+</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO2_DZE2">
-			<English>Survivor Backpack &lt;br/&gt;Capacity: 45 items</English>
-			<German>Survivor Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_CZECH_DZE1">
-			<English>Czech Backpack</English>
-			<French>Sac-à-dos tchèque</French>
-			<Russian>Чешский рюкзак</Russian>
-			<Spanish>Mochila Checa</Spanish>
-			<Czech>Český batoh</Czech>
-			<German>Tschechischer Rucksack</German>
-			<Dutch>Tsjechische Rugzak</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_CZECH_DZE1">
-			<English>Czech Backpack &lt;br/&gt;Capacity: 45 items</English>
-			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 45</French>
-			<Russian>Рюкзак на (45 слотов)</Russian>
-			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;45 litros</Spanish>
-			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 45 litrů</Czech>
-			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_CZECH_DZE2">
-			<English>Czech Backpack+</English>
-			<French>Sac-à-dos tchèque+</French>
-			<Russian>Чешский рюкзак+</Russian>
-			<Spanish>Mochila Checa+</Spanish>
-			<Czech>Český batoh+</Czech>
-			<German>Tschechischer Rucksack+</German>
-			<Dutch>Tsjechische Rugzak+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_CZECH_DZE2">
-			<English>Czech Backpack &lt;br/&gt;Capacity: 50 items</English>
-			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 50</French>
-			<Russian>Рюкзак на (50 слотов)</Russian>
-			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
-			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 50 litrů</Czech>
-			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO3_DZE1">
-			<English>Wanderer Backpack</English>
-			<German>Wanderer Rucksack</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO3_DZE1">
-			<English>Wanderer Backpack &lt;br/&gt;Capacity: 50 items</English>
-			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO3_DZE2">
-			<English>Wanderer Backpack+</English>
-			<German>Wanderer Rucksack+</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO3_DZE2">
-			<English>Wanderer Backpack &lt;br/&gt;Capacity: 55 items</English>
-			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO4_DZE1">
-			<English>Legend Backpack</English>
-			<German>Legend Rucksack</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO4_DZE1">
-			<English>Legend Backpack &lt;br/&gt;Capacity: 55 items</English>
-			<German>Legend Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_APO4_DZE2">
-			<English>Legend Backpack+</English>
-			<German>Legend Rucksack+</German>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_APO4_DZE2">
-			<English>Legend Backpack &lt;br/&gt;Capacity: 60 items</English>
-			<German>Legend Rucksack &lt;br/&gt;Volumen: 60 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE1">
-			<English>Coyote Backpack</English>
-			<French>Sac-à-dos (coyote)</French>
-			<Russian>Рюкзак Сoyote</Russian>
-			<Spanish>Mochila (Coyote)</Spanish>
-			<Czech>Batoh (coyote)</Czech>
-			<German>Kampfrucksack (Coyote)</German>
-			<Dutch>Rugzak (Coyote)</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE1">
-			<English>Coyote Backpack &lt;br/&gt;Capacity: 60 items</English>
-			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 60</French>
-			<Russian>Рюкзак на (60 слотов)</Russian>
-			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;60 litros</Spanish>
-			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 60 litrů</Czech>
-			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 60 Liter</German>
-		</Key>
-		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE2">
-			<English>Coyote Backpack+</English>
-			<French>Sac-à-dos (coyote)+</French>
-			<Russian>Рюкзак Сoyote+</Russian>
-			<Spanish>Mochila (Coyote)+</Spanish>
-			<Czech>Batoh (coyote)+</Czech>
-			<German>Kampfrucksack (Coyote)+</German>
-			<Dutch>Rugzak (Coyote)+</Dutch>
-		</Key>
-		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE2">
-			<English>Coyote Backpack &lt;br/&gt;Capacity: 65 items</English>
-			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 65</French>
-			<Russian>Рюкзак на (65 слотов)</Russian>
-			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;65 litros</Spanish>
-			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 65 litrů</Czech>
-			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 65 Liter</German>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_LGB_DZE1">
-			<English>Large Gunbag</English>
-			<German>Große Waffentasche</German>
-			<Russian>Большая оружейная сумка</Russian>
-			<Dutch>Grote Wapenzak</Dutch>
-			<French>Grand Fourreau</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE1">
-			<English>Large Gunbag &lt;br/&gt;Capacity: 65 items</English>
-			<German>Große Waffentasche &lt;br/&gt;Volumen: 65 Liter</German>
-			<Russian>Большая оружейная сумка (65 слотов)</Russian>
-			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 65 liter</Dutch>
-			<French>Grand Fourreau &lt;br/&gt;Taille: 65</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_LGB_DZE2">
-			<English>Large Gunbag+</English>
-			<German>Große Waffentasche+</German>
-			<Russian>Большая оружейная сумка+</Russian>
-			<Dutch>Grote Wapenzak+</Dutch>
-			<French>Grand Fourreau+</French>
-		</Key>
-		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE2">
-			<English>Large Gunbag &lt;br/&gt;Capacity: 70 items</English>
-			<German>Große Waffentasche &lt;br/&gt;Volumen: 70 Liter</German>
-			<Russian>Большая оружейная сумка (70 слотов)</Russian>
-			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 70 liter</Dutch>
-			<French>Grand Fourreau &lt;br/&gt;Taille: 70</French>
-		</Key>	
-		
 		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">

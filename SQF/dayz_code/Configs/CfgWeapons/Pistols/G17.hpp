@@ -2,15 +2,8 @@ class G17_DZ : glock17_EP1
 {
 	model = "z\addons\dayz_communityweapons\g17\g17.p3d";
 	picture = "\z\addons\dayz_communityweapons\g17\data\w_g17_ca.paa";
-	displayName = $STR_DZ_WPN_G17_NAME;
-	
-	magazines[] = 
-	{
-		17Rnd_9x19_glock17,
-		17Rnd_9x19_glock17SD, //not an A2 mag
-		15Rnd_9x19_M9,
-		15Rnd_9x19_M9SD
-	};
+	displayName = $STR_DZ_WPN_G17_NAME;	
+	magazines[] = {"17Rnd_9x19_glock17"};
 	
 	delete FlashLight;
 	
@@ -26,7 +19,7 @@ class G17_FL_DZ : G17_DZ
 {
 	model = "z\addons\dayz_communityweapons\g17\g17_fl.p3d";
 	picture = "\z\addons\dayz_communityweapons\g17\data\w_g17_fl_ca.paa";
-	displayName = $STR_DZ_WPN_G17_FL_NAME;
+	displayName = $STR_DZ_WPN_G17_FL_NAME;		
 
 	class FlashLight
 	{
@@ -91,14 +84,7 @@ class G17_SD_DZ : M9SD
 	model = "z\addons\dayz_communityweapons\g17\g17_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\g17\data\w_g17_sd_ca.paa";
 	displayName = $STR_DZ_WPN_G17_SD_NAME;
-	
-	magazines[] = 
-	{
-		17Rnd_9x19_glock17SD,
-		17Rnd_9x19_glock17, //Allow both SD and non-SD
-		15Rnd_9x19_M9SD,
-		15Rnd_9x19_M9
-	};
+	magazines[] = {"17Rnd_9x19_glock17SD"};
 	
 	reloadMagazineSound[]={"Ca\Sounds_E\Weapons_E\Glock17\reload1",db0,1, 20};
 

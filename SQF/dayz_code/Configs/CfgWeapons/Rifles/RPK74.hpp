@@ -6,9 +6,8 @@ class RPK74_Kobra_DZ : RPK_74
 	
 	magazines[] =
 	{
-		75Rnd_545x39_RPK, //75 was moved to first in array
-		30Rnd_545x39_AK,
-		30Rnd_545x39_AKSD
+		75Rnd_545x39_RPK,
+		30Rnd_545x39_AK
 	};
 	
 	modes[] = {FullAuto,Single};

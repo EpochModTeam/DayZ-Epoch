@@ -37,6 +37,17 @@ Included Custom Addons
 * Retextured German KSK Units by Brainbug - http://www.armaholic.com/page.php?id=11129
 * 19 Backpack Variants by lennard91 - http://www.armaholic.com/page.php?id=13793
 * Spetsnaz GRU by stagler - http://www.armaholic.com/page.php?id=15693
+* CH-47 Reskins by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=11202
+* RACS UH-1H Huey Reskins by lennard91 - http://www.armaholic.com/page.php?id=11697
+* UH1H Search and Rescue Skin by Sam563 - https://opendayz.net/threads/uh1h-search-and-rescue-skin.22516/
+* Contractor Mi-17 Pack by lennard91 - http://www.armaholic.com/page.php?id=18498
+* "Heckler & Koch" MP7 by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=8379
+* P99 Projekt by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=9985
+* FAMAS Pack by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=8867
+* FHQ Remington Weapon Pack by Alwarren - http://www.armaholic.com/page.php?id=17971
+* RH PDW pack by Robert Hammer - http://www.armaholic.com/page.php?id=12214
+* RH M14 pack by Robert Hammer - http://www.armaholic.com/page.php?id=11374
+* RH Pistol Pack Remake by Robert Hammer - http://www.armaholic.com/page.php?id=12800
 
 --------------------------
 Included Custom Islands
@@ -59,7 +70,7 @@ Initial Developers
 * [VB]GREEN - Graphics - http://www.twitch.tv/vbgreen
 
 --------------------------
-GitHub Collaborators (In order of most commits)
+GitHub Collaborators
 --------------------------
 * vbawol - https://github.com/vbawol
 * eltexonline - https://github.com/eltexonline
@@ -81,7 +92,7 @@ GitHub Collaborators (In order of most commits)
 * ArmaWizard - https://github.com/ArmaWizard
 
 --------------------------
-GitHub Contributors (In order of most commits)
+GitHub Contributors
 --------------------------
 * vbawol - https://github.com/vbawol
 * dayz10k - https://github.com/dayz10k
