@@ -15,6 +15,7 @@ class FNFAL_DZ : FN_FAL
 	{
 		Attachment_CCO = "FNFAL_CCO_DZ";
 		Attachment_Holo = "FNFAL_Holo_DZ";
+		Attachment_ANPVS4 = "FN_FAL_ANPVS4_DZE";
 	};
 };
 
@@ -57,6 +58,16 @@ class FNFAL_ANPVS4_DZ : FN_FAL_ANPVS4
 	modes[] = {Single};
 };
 
-class FN_FAL_ANPVS4_DZE:FN_FAL_ANPVS4 {
+class FN_FAL_ANPVS4_DZE: FN_FAL_ANPVS4 {
 	visionMode[] = {"Normal", "NVG"};
+	modes[] = {Single};
+	
+	class ItemActions
+	{
+		class RemoveANPVS
+		{
+			text = $STR_DZ_ATT_ANPVS4_RMVE;
+			script = "; ['Attachment_ANPVS4',_id,'FNFAL_DZ'] call player_removeAttachment";
+		};
+	};	
 };

@@ -13610,9 +13610,13 @@
 			<German>[E] ANPVS4 Visier</German>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_DESC">
-			<English>An ANPVS4 scope.</English>
+			<English>ANPVS4 scope</English>
 			<German>Zielfernrohr vom Typ ANPVS4.</German>
 		</Key>
+		<Key ID="STR_DZ_ATT_ANPVS4_RMVE">
+			<English>Remove ANPVS4 scope</English>
+			<German>ANPVS4 entfernen</German>
+		</Key>		
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_DES_NAME">
 			<English>[A] Small camo net. (desert)</English>
 			<German>[E] Kl. Tarnnetz (Wüstentarn)</German>
@@ -13642,7 +13646,7 @@
 			<German>Zielfernrohr vom Typ NSPU.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_NSPU_RMVE">
-			<English>Remove NSPU</English>
+			<English>Remove NSPU scope</English>
 			<German>NSPU entfernen</German>
 		</Key>		
 		<Key ID="STR_DZE_ATTACHMENT_NV_NAME">
@@ -13670,8 +13674,8 @@
 			<German>[E] .45cal Schalldämpfer</German>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_45SUP_DESC">
-			<English>A silencer that can be attached to .45 caliber pistols.</English>
-			<German>Ein Schalldämpfer, der an Kaliber .45 Pistolen angebracht werden kann.</German>
+			<English>A silencer that can be attached to .45 caliber weapons.</English>
+			<German>Ein Schalldämpfer, der an Kaliber .45 Waffen angebracht werden kann.</German>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_762SUP_NAME">
 			<English>[A] 7.62mm Suppressor</English>

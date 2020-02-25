@@ -43,6 +43,7 @@ AttachmentsEU[] =
 	{Loot_MAGAZINE,		1,		Attachment_CCO},
 	{Loot_MAGAZINE,		1,		Attachment_Holo},
 	{Loot_MAGAZINE,		1,		Attachment_ACOG},
+	{Loot_MAGAZINE,		1,		Attachment_ANPVS4},
 	{Loot_MAGAZINE,		1,		Attachment_Sup556},
 	{Loot_MAGAZINE,		1,		Attachment_Sup9},
 	{Loot_MAGAZINE,		1,		Attachment_Sup10},

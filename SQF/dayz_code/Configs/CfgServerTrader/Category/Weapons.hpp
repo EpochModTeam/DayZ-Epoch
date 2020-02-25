@@ -13,6 +13,7 @@ class Category_12 {
 	class Attachment_Kobra {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class Attachment_SCOPED {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class Attachment_ACOG {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
+	class Attachment_ANPVS4 {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class Attachment_Tws {type = "trade_items";buy[] = {-8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	class Attachment_PSO1 {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class Attachment_NSPU {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
