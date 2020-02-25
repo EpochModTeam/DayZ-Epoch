@@ -158,7 +158,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		4,		MG36_Camo_DZ},
 	{Loot_WEAPON,		4,		MG36_DZ},
 	{Loot_WEAPON,		3,		Mk48_DZ},
-	{Loot_WEAPON,		5,		BAF_L86A2_ACOG}
+	{Loot_WEAPON,		5,		L86A2_LSW_DZ}
 };
 
 weaponsCZ[] = 

@@ -166,6 +166,7 @@ class CfgWeapons
 	
 	class BAF_L85A2_RIS_Holo;
 	#include "Rifles\L85A2.hpp"
+	#include "Rifles\L86A2.hpp"
 	
 	class bizon;
 	class bizon_silenced;
