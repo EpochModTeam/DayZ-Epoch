@@ -132,9 +132,9 @@ weaponsEU[] =
 	// Assault Rifles
 	{Loot_WEAPON,		5,		G36A_Camo_DZ},
 	{Loot_WEAPON,		5,		G36C_DZ},
-	{Loot_WEAPON,		5,		G36C_camo},
+	{Loot_WEAPON,		5,		G36C_Camo_DZ},
 	{Loot_WEAPON,		5,		G36K_Camo_DZ},
-	{Loot_WEAPON,		5,		G36_C_SD_camo},
+	{Loot_WEAPON,		5,		G36C_Camo_Holo_SD_DZ},
 	{Loot_WEAPON,		5,		m8_compact},
 	{Loot_WEAPON,		5,		m8_sharpshooter},
 	{Loot_WEAPON,		5,		m8_holo_sd},
@@ -155,8 +155,8 @@ weaponsEU[] =
 	// Machine Guns
 	{Loot_WEAPON,		6,		M8_SAW},
 	{Loot_WEAPON,		4,		L110A1_DZ},
-	{Loot_WEAPON,		4,		MG36_camo},
-	{Loot_WEAPON,		4,		MG36},
+	{Loot_WEAPON,		4,		MG36_Camo_DZ},
+	{Loot_WEAPON,		4,		MG36_DZ},
 	{Loot_WEAPON,		3,		Mk48_DZ},
 	{Loot_WEAPON,		5,		BAF_L86A2_ACOG}
 };

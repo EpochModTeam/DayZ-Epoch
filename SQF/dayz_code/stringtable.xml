@@ -11160,6 +11160,14 @@
 			<English>G36C ACOG SD</English>
 			<Russian>G36C ACOG ПБС</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_G36C_CAMO_NAME">
+			<English>G36C Camo</English>
+			<German>G36C Tarn</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_G36C_CAMO_HOLO_SD_NAME">
+			<English>G36C Camo Holo SD</English>
+			<German>G36C Tarn Holo SD</German>
+		</Key>		
 		
 		<!-- G36 -->
 		<Key ID="STR_DZ_WPN_G36A_CAMO_NAME">
@@ -12291,7 +12299,19 @@
 		<Key ID="STR_DZ_WPN_ANZIO_DESC">
 			<English>Anti-materiel sniper rifle&lt;br/&gt;Caliber: 20x102mm</English>
 			<German>Panzerbrechendes Scharfschützengewehr &lt;br/&gt;Kaliber: 20x102mm</German>
-		</Key>			
+		</Key>	
+
+		<!-- MG36 -->
+		<Key ID="STR_DZ_WPN_MG36_NAME">
+			<English>MG36</English>
+			<Russian>MG36</Russian>
+			<German>MG36</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MG36_CAMO_NAME">
+			<English>MG36 Camo</English>
+			<Russian>MG36 (камуфляж)</Russian>
+			<German>MG36 Tarn</German>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		

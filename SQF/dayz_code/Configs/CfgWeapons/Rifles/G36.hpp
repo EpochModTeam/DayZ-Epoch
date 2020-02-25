@@ -188,21 +188,24 @@ class G36A_Camo_DZ : G36K_Camo_DZ
 		dispersion = 0.0007;
 	};
 	
-	class Attachments {};
+	class Attachments
+	{
+		Attachment_Sup556 = "G36A_Camo_SD_DZ";
+	};
 };
 
-/*class G36A_Camo_SD_DZ : G36K_Camo_SD_DZ
+class G36A_Camo_SD_DZ : G36K_Camo_SD_DZ
 {
 	model = "z\addons\dayz_communityweapons\g36\g36a_camo_sd";
-	picture = "\z\addons\dayz_communityweapons\g36\data\w_g36a_camo_sd_ca.paa";
-	displayName = $STR_DZ_WPN_G36K_CAMO_SD_NAME;
+	picture = "\dayz_epoch_c\icons\weapons\G36A_Camo_SD.paa";
+	displayName = $STR_DZ_WPN_G36A_CAMO_SD_NAME;
 	
 	class ItemActions
 	{
 		class RemoveSuppressor
 		{
 			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup556',_id,'G36K_Camo_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Sup556',_id,'G36A_Camo_DZ'] call player_removeAttachment";
 		};
 	};
-};*/
+};

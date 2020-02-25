@@ -115,7 +115,11 @@ class Category_2 {
 //Weapons
 class Category_3 {
 	//Holo SD desert camo
-	class G36_C_SD_camo {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
+	class G36C_Camo_Holo_SD_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
+	class G36A_Camo_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class G36A_Camo_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};
+	class G36K_Camo_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class G36K_Camo_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};	
 	//CCO green camo
 	class M4A1_Camo_CCO_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class M4A1_Camo_CCO_SD_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};

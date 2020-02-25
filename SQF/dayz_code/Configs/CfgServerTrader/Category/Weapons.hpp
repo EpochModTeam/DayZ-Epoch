@@ -171,10 +171,7 @@ class Category_16 {
 	class G36C_Holo_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
 	class G36C_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
 	//Iron sight desert camo
-	class G36C_camo {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
-	class G36A_Camo_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
-	class G36K_Camo_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
-	class G36K_Camo_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};
+	class G36C_Camo_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class M16A2_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class M16A2_GL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class M16A4_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
@@ -493,8 +490,8 @@ class Category_18 {
 	class UK59_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class PKM_DZ {type = "trade_weapons";buy[] = {3,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
 	class M8_SAW {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
-	class MG36 {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
-	class MG36_camo {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};	
+	class MG36_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
+	class MG36_Camo_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};	
 	class L110A1_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class L110A1_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {7,"ItemGoldBar"};};
 	class L110A1_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {7,"ItemGoldBar"};};
