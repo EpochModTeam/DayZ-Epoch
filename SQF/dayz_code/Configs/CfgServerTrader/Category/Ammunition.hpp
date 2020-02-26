@@ -40,6 +40,8 @@ class Category_20 {
 	class 64Rnd_9x19_SD_Bizon {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
 	class 40Rnd_46x30_mp7 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class 40Rnd_46x30_sd_mp7 {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};	
+	class 33Rnd_45ACP_KRISS {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};	
+	class 33Rnd_45ACP_KRISSSD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 };
 
 //Single-shot/Shotgun Ammo

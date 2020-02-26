@@ -51,7 +51,13 @@ class 15Rnd_45ACP_USP: 7Rnd_45ACP_1911
 	descriptionShort = $STR_DZ_MAG_15RND_USP_45ACP_DESC;
 	model = "\RH_de\mags\mag_usp.p3d";
 	picture = "\RH_de\inv\m_usp.paa";
-	count = 15;
+	count = 15;	
+
+	class ItemActions
+	{
+		delete ReloadMag;
+		COMBINE_MAG
+	};	
 };
 class 15Rnd_45ACP_USPSD: 15Rnd_45ACP_USP
 {
@@ -70,4 +76,21 @@ class 7Rnd_45ACP_1911SD: 15Rnd_45ACP_USPSD
 	picture = "\RH_de\inv\m_colt.paa";
 	ammo = "B_45ACP_SD";
 	count = 7;
+};
+
+class 33Rnd_45ACP_KRISS: 15Rnd_45ACP_USP
+{
+	displayName = $STR_DZ_MAG_33RND_45ACP_KRISS_NAME;
+	descriptionShort = $STR_DZ_MAG_33RND_KRISS_45ACP_DESC;
+	model = "\RH_smg\mags\mag_kriss30.p3d";
+	picture = "\RH_smg\inv\m_kriss30.paa";
+	count = 33;
+	type = 256;
+};
+class 33Rnd_45ACP_KRISSSD: 33Rnd_45ACP_KRISS
+{
+	displayName = $STR_DZ_MAG_33RND_45ACP_KRISSSD_NAME;
+	descriptionShort = $STR_DZ_MAG_33RND_KRISSSD_45ACP_DESC;
+	picture = "\RH_smg\inv\m_kriss30.paa";
+	ammo = "B_45ACP_SD";
 };

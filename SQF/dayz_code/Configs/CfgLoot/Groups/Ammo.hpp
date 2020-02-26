@@ -121,6 +121,8 @@ AmmoUS[] =
 	// Submachine guns
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_UZI},
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_UZI_SD},
+	{Loot_MAGAZINE,		5,		33Rnd_45ACP_KRISS},
+	{Loot_MAGAZINE,		5,		33Rnd_45ACP_KRISSSD},
 	
 	// Assault rifles
 	{Loot_MAGAZINE,		6,		30Rnd_6x35_KAC},
@@ -156,7 +158,7 @@ AmmoUS[] =
 AmmoEU[] =
 {
 	// Pistols
-	{Loot_MAGAZINE,		8,		7nd_9x17_PPK},
+	{Loot_MAGAZINE,		8,		7Rnd_9x17_PPK},
 	{Loot_MAGAZINE,		8,		8Rnd_9x19_P38},
 	{Loot_MAGAZINE,		8,		15Rnd_9x19_P226},
 	{Loot_MAGAZINE,		8,		20Rnd_9x19_M93R},

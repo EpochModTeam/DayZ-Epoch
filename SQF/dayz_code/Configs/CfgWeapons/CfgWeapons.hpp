@@ -157,6 +157,7 @@ class CfgWeapons
 	class MP5A5;
 	class MP5SD;
 	#include "Rifles\MP5.hpp"
+	#include "Rifles\Kriss.hpp"
 	#include "Rifles\CZScorpion.hpp"
 	#include "Rifles\MP7.hpp"
 	

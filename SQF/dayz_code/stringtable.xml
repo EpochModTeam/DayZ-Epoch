@@ -12337,7 +12337,49 @@
 		</Key>			
 		<Key ID="STR_DZ_WPN_PDR_HOLO_NAME">
 			<English>Magpul PDR Holo</English>
+		</Key>	
+
+		<!-- KRISS -->
+		<Key ID="STR_DZ_WPN_KRISS_NAME">
+			<English>KRISS</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_KRISS_CCO_NAME">
+			<English>KRISS CCO</English>
 		</Key>			
+		<Key ID="STR_DZ_WPN_KRISS_HOLO_NAME">
+			<English>KRISS Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_KRISS_SD_NAME">
+			<English>KRISS SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_KRISS_CCO_SD_NAME">
+			<English>KRISS CCO SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_KRISS_HOLO_SD_NAME">
+			<English>KRISS Holo SD</English>
+		</Key>	
+        <Key ID="STR_DZ_WPN_KRISS_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: .45 ACP</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: .45 ACP</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: .45 ACP</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: .45 ACP</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: .45 ACP</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: .45 ACP</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_KRISS_SD_DESC">
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: .45 ACP SD</English>		
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: .45 ACP SD</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: .45 ACP SD</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: .45 ACP SD</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: .45 ACP SD</Czech>
+			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: .45 ACP SD</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
+        </Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -13284,7 +13326,37 @@
 			<German>Kaliber: 20x102mm&lt;br/&gt;Patronen: 3&lt;br/&gt;Eingesetzt in: Anzio 20mm</German>
 			<Czech>Kalibr: 20x102mm&lt;br/&gt;Nábojů: 3&lt;br/&gt;Pro: Anzio 20mm</Czech>
 			<Hungarian>Kaliber: 20x102mm&lt;br/&gt; Töltények: 3&lt;br/&gt; Hozzá tartozó fegyver: Anzio 20mm</Hungarian>
-      </Key>		
+      </Key>	
+	  <Key ID="STR_DZ_MAG_33RND_45ACP_KRISS_NAME">
+		<English>33Rnd. KRISS mag.</English>
+		<Russian>33п. KRISS маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_33RND_KRISS_45ACP_DESC">
+	    <English>Caliber: .45 ACP&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: KRISS</English>
+        <French>Calibre : .45 ACP&lt;br/&gt;Munitions : 33&lt;br/&gt;Utilisé avec: KRISS</French>
+        <Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 33&lt;br/&gt;Usado en: KRISS</Spanish>
+        <Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 33&lt;br/&gt;Usato in: KRISS</Italian>
+        <Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 33&lt;br/&gt;Uzywany w: KRISS</Polish>
+        <Russian>Патрон: .45 ACP &lt;br/&gt;Количество: 33&lt;br/&gt;Исп. в: KRISS</Russian>
+        <German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 33&lt;br/&gt;Eingesetzt in: KRISS</German>
+        <Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 33&lt;br/&gt;Pro: KRISS</Czech>
+        <Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: KRISS</Hungarian>
+      </Key>	
+	  <Key ID="STR_DZ_MAG_33RND_45ACP_KRISSSD_NAME">
+		<English>33Rnd. KRISS SD mag.</English>
+		<Russian>33п. KRISS SD маг.</Russian>
+	  </Key> 	  
+      <Key ID="STR_DZ_MAG_33RND_KRISSSD_45ACP_DESC">
+	    <English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: KRISS SD</English>
+        <French>Calibre : .45 ACP SD&lt;br/&gt;Munitions : 33&lt;br/&gt;Utilisé avec: KRISS SD</French>
+        <Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cartuchos: 33&lt;br/&gt;Usado en: KRISS SD</Spanish>
+        <Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 33&lt;br/&gt;Usato in: KRISS SD</Italian>
+        <Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 33&lt;br/&gt;Uzywany w: KRISS SD</Polish>
+        <Russian>Патрон: .45 ACP SD &lt;br/&gt;Количество: 33&lt;br/&gt;Исп. в: KRISS SD</Russian>
+        <German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 33&lt;br/&gt;Eingesetzt in: KRISS SD</German>
+        <Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 33&lt;br/&gt;Pro: KRISS SD</Czech>
+        <Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: KRISS SD</Hungarian>
+      </Key>	  
 		
 		<!-- **** ATTACHMENTS **** -->
 		

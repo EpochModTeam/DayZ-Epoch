@@ -112,6 +112,12 @@ class Category_14 {
 	class MP7_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
 	class MP7_ACOG_SD_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {11,"ItemGoldBar"};};
 	class MP7_ACOG_SD_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
+	class Kriss_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class Kriss_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
+	class Kriss_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class Kriss_CCO_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
+	class Kriss_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class Kriss_Holo_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
 };
 
 //Single-shot/Shotguns

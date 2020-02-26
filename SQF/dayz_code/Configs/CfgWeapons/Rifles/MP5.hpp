@@ -5,7 +5,7 @@ class MP5_DZ : MP5A5
 	
 	magazines[] =
 	{
-		30Rnd_9x19_MP5,
+		30Rnd_9x19_MP5
 	};
 	
 	class Attachments

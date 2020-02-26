@@ -7,6 +7,7 @@ class 10Rnd_22lfB_RUGERMK2: CA_Magazine
 	model = "\RH_de\mags\mag_mk2.p3d";
 	ammo = "B_22lfB_Ball";
 	count = 10;
+	type = 16;
 	
 	class ItemActions
 	{
