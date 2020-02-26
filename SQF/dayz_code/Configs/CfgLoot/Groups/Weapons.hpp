@@ -139,6 +139,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		5,		m8_holo_sd},
 	{Loot_WEAPON,		5,		m8_carbine},
 	{Loot_WEAPON,		5,		L85A2_DZ},
+	{Loot_WEAPON,		5,		HK53A3_DZ},
 	{Loot_WEAPON,		5,		Famas_DZ},
 	{Loot_WEAPON,		5,		SCAR_L_CQC_CCO_SD},
 	{Loot_WEAPON,		5,		SCAR_L_CQC},

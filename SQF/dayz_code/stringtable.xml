@@ -12317,6 +12317,17 @@
 			<German>MG36 Tarn</German>
 		</Key>		
 		
+		<!-- HK53A3 -->
+		<Key ID="STR_DZ_WPN_HK53A3_NAME">
+			<English>HK53A3</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK53A3_CCO_NAME">
+			<English>HK53A3 CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_HK53A3_HOLO_NAME">
+			<English>HK53A3 Holo</English>
+		</Key>	
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">

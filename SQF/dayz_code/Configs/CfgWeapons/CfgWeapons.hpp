@@ -80,6 +80,10 @@ class CfgWeapons
 	class M4A1_AIM_SD_camo;
 	#include "Rifles\M4A1.hpp"
 	#include "Rifles\M4A3.hpp"
+	
+	//HK53
+	#include "Rifles\HK53.hpp"
+	
 	//Famas
 	#include "Rifles\Famas.hpp"	
 	#include "Rifles\ACR.hpp"
