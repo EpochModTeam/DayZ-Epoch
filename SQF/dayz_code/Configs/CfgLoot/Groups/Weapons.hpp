@@ -72,6 +72,7 @@ weaponsUS[] =
 	// Submachine Guns
 	{Loot_WEAPON,		3,		PDW_DZ},
 	{Loot_WEAPON,		3,		Kriss_DZ},
+	{Loot_WEAPON,		3,		Mac10_DZ},
 	
 	// Assault Rifles
 	{Loot_WEAPON,		6,		KAC_PDW_DZ},

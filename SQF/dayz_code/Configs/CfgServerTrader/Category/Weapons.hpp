@@ -78,6 +78,7 @@ class Category_13 {
 //Submachine Guns
 class Category_14 {
 	class Sa61_EP1 {type = "trade_weapons";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class Mac10_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};		
 	class TEC9_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};	
 	class PDW_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class PDW_SD_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};

@@ -4,6 +4,7 @@ class 30Rnd_9x19_UZI : CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\pdw_mag.p3d";
 	displayName = $STR_DZ_MAG_30RND_9X19_UZI_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_9X19_UZI_DESC;	
 
 	cartridgeName = "9x19";
 	
@@ -30,6 +31,7 @@ class 30Rnd_9x19_UZI_SD : CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\pdw_mag.p3d";
 	displayName = $STR_DZ_MAG_30RND_9X19_UZISD_NAME;	
+	descriptionShort = $STR_DZ_MAG_30RND_9X19_UZISD_DESC;	
 	picture = "\dayz_epoch_c\icons\magazines\m_uzisd_ca.paa";
 
 	cartridgeName = "9x19_SD";
