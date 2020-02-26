@@ -81,6 +81,7 @@ weaponsUS[] =
 	{Loot_WEAPON,		6,		M4A1_Camo_CCO_DZ},
 	{Loot_WEAPON,		6,		M4A1_Camo_Holo_GL_DZ},
 	{Loot_WEAPON,		6,		M4A3_DES_CCO_DZ},
+	{Loot_WEAPON,		6,		PDR_DZ},
 	{Loot_WEAPON,		6,		ACR_WDL_DZ},
 	{Loot_WEAPON,		6,		ACR_BL_DZ},
 	

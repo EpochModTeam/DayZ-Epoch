@@ -12328,6 +12328,17 @@
 			<English>HK53A3 Holo</English>
 		</Key>	
 		
+		<!-- Magpul PDR -->
+		<Key ID="STR_DZ_WPN_PDR_NAME">
+			<English>Magpul PDR</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_PDR_CCO_NAME">
+			<English>Magpul PDR CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_PDR_HOLO_NAME">
+			<English>Magpul PDR Holo</English>
+		</Key>			
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
