@@ -160,6 +160,7 @@ class CfgWeapons
 	#include "Rifles\Kriss.hpp"
 	#include "Rifles\CZScorpion.hpp"
 	#include "Rifles\MP7.hpp"
+	#include "Rifles\TMP.hpp"
 	
 	class M16A2;
 	class M16A2GL;
@@ -221,7 +222,7 @@ class CfgWeapons
 	class UZI_SD_EP1;
 	#include "Pistols\PDW.hpp"
 	#include "Pistols\TEC9.hpp"
-	#include "Pistols\MAC10.hpp"
+	#include "Pistols\MAC10.hpp"	
 	
 	class revolver_EP1;	
 	#include "Pistols\Revolver.hpp"

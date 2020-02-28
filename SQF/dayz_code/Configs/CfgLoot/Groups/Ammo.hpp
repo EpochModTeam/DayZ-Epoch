@@ -171,6 +171,8 @@ AmmoEU[] =
 	// Submachine guns
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_MP5},
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_MP5SD},
+	{Loot_MAGAZINE,		6,		30Rnd_9x19_TMP},
+	{Loot_MAGAZINE,		6,		30Rnd_9x19_TMPSD},	
 	
 	// Assault rifles
 	{Loot_MAGAZINE,		10,		30Rnd_556x45_G36},

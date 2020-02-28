@@ -373,3 +373,19 @@ class 32Rnd_9x19_TEC9: 15Rnd_9x19_M9
 		COMBINE_MAG
 	};	
 };
+
+class 30Rnd_9x19_TMP : 30Rnd_9x19_MP5
+{
+	displayName = $STR_DZ_MAG_30RND_9X19_TMP_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_TMP_DESC;	
+	model = "\RH_smg\mags\mag_uzi.p3d";
+	picture = "\RH_smg\inv\m_uzi.paa";	
+};
+
+class 30Rnd_9x19_TMPSD : 30Rnd_9x19_MP5SD
+{
+	model = "\RH_smg\mags\mag_uzi.p3d";
+	picture = "\RH_smg\inv\m_uzi.paa";
+	displayName = $STR_DZ_MAG_30RND_9X19_TMPSD_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_TMPSD_DESC;
+};
