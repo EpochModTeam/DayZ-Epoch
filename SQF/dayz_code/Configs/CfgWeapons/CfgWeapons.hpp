@@ -161,6 +161,7 @@ class CfgWeapons
 	#include "Rifles\CZScorpion.hpp"
 	#include "Rifles\MP7.hpp"
 	#include "Rifles\TMP.hpp"
+	#include "Rifles\UMP.hpp"
 	
 	class M16A2;
 	class M16A2GL;

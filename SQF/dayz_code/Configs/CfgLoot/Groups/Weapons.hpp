@@ -71,7 +71,9 @@ weaponsUS[] =
 	
 	// Submachine Guns
 	{Loot_WEAPON,		3,		PDW_DZ},
+	{Loot_WEAPON,		3,		PDW_SD_DZ},
 	{Loot_WEAPON,		3,		Kriss_DZ},
+	{Loot_WEAPON,		3,		Kriss_SD_DZ},
 	{Loot_WEAPON,		3,		Mac10_DZ},
 	
 	// Assault Rifles
@@ -130,6 +132,9 @@ weaponsEU[] =
 	{Loot_WEAPON,		7,		MP7_DZ},
 	{Loot_WEAPON,		7,		MP7_SD_DZ},	
 	{Loot_WEAPON,		7,		TMP_DZ},	
+	{Loot_WEAPON,		7,		TMP_SD_DZ},	
+	{Loot_WEAPON,		7,		UMP_DZ},
+	{Loot_WEAPON,		7,		UMP_SD_DZ},
 	
 	// Assault Rifles
 	{Loot_WEAPON,		5,		G36A_Camo_DZ},

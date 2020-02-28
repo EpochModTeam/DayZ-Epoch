@@ -12406,6 +12406,48 @@
 			<English>Steyr TMP Holo SD</English>
 		</Key>
 		
+		<!-- UMP -->
+		<Key ID="STR_DZ_WPN_UMP_NAME">
+			<English>UMP</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_UMP_CCO_NAME">
+			<English>UMP CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_UMP_HOLO_NAME">
+			<English>UMP Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_UMP_SD_NAME">
+			<English>UMP SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_UMP_CCO_SD_NAME">
+			<English>UMP CCO SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_UMP_HOLO_SD_NAME">
+			<English>UMP Holo SD</English>
+		</Key>	
+        <Key ID="STR_DZ_WPN_UMP_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: .45 ACP</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: .45 ACP</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: .45 ACP</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: .45 ACP</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: .45 ACP</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: .45 ACP</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_UMP_SD_DESC">
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: .45 ACP SD</English>		
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: .45 ACP SD</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: .45 ACP SD</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: .45 ACP SD</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: .45 ACP SD</Czech>
+			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: .45 ACP SD</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
+        </Key>		
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
@@ -13383,26 +13425,26 @@
 			<Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: KRISS SD</Hungarian>
 		</Key>	
 		<Key ID="STR_DZ_MAG_30RND_9X19_UZI_DESC">
-			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: PDW, MAC-10, Steyr TMP</English>
-			<French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: PDW, MAC-10, Steyr TMP</French>
-			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: PDW, MAC-10, Steyr TMP</Spanish>
-			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: PDW, MAC-10, Steyr TMP</Italian>
-			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: PDW, MAC-10, Steyr TMP</Polish>
-			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: PDW, MAC-10, Steyr TMP</Russian>
-			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: PDW, MAC-10, Steyr TMP</German>
-			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: PDW, MAC-10, Steyr TMP</Czech>
-			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: PDW, MAC-10, Steyr TMP</Hungarian>
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: PDW, MAC-10</English>
+			<French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: PDW, MAC-10</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: PDW, MAC-10</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: PDW, MAC-10</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: PDW, MAC-10</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: PDW, MAC-10</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: PDW, MAC-10</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: PDW, MAC-10</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: PDW, MAC-10</Hungarian>
 		</Key>	  
 		<Key ID="STR_DZ_MAG_30RND_9X19_UZISD_DESC">
-			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: PDW SD, Steyr TMP SD</English>
-			<French>Calibre : 9x19mm Parabellum SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: PDW SD, Steyr TMP SD</French>
-			<Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: PDW SD, Steyr TMP SD</Spanish>
-			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: PDW SD, Steyr TMP SD</Italian>
-			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: PDW SD, Steyr TMP SD</Polish>
-			<Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: PDW SD, Steyr TMP SD</Russian>
-			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: PDW SD, Steyr TMP SD</German>
-			<Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: PDW SD, Steyr TMP SD</Czech>
-			<Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: PDW SD, Steyr TMP SD</Hungarian>
+			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: PDW SD</English>
+			<French>Calibre : 9x19mm Parabellum SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: PDW SD</French>
+			<Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: PDW SD</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: PDW SD</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: PDW SD</Polish>
+			<Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: PDW SD</Russian>
+			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: PDW SD</German>
+			<Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: PDW SD</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: PDW SD</Hungarian>
 		</Key>	
 		<Key ID="STR_DZ_MAG_30RND_9X19_TMPSD_NAME">
 			<English>30Rnd. TMP SD mag.</English>
@@ -13413,27 +13455,57 @@
 			<Russian>30п. TMP маг.</Russian>
 		</Key>	  
         <Key ID="STR_DZ_MAG_30RND_TMP_DESC">
-			<German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: TMP</German>
-			<English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: TMP</English>
-			<Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: TMP</Italian>
-			<Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: TMP </Spanish>
-			<French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: TMP</French>
-			<Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: TMP</Czech>
-			<Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: TMP</Russian>
-			<Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: TMP</Polish>
-			<Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: TMP</Hungarian>
+			<German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: Steyr TMP</German>
+			<English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: Steyr TMP</English>
+			<Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: Steyr TMP</Italian>
+			<Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: Steyr TMP </Spanish>
+			<French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: Steyr TMP</French>
+			<Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: Steyr TMP</Czech>
+			<Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: Steyr TMP</Russian>
+			<Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr TMP</Polish>
+			<Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr TMP</Hungarian>
         </Key>			
         <Key ID="STR_DZ_MAG_30RND_TMPSD_DESC">
-			<German>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in:  TMP SD</German>
-			<English>Caliber: 9x19 mm Parabellum SD&lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in:  TMP SD</English>
-			<Italian>Calibro: 9x19 mm Parabellum SD&lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in:  TMP SD</Italian>
-			<Spanish>Calibre: 9x19 mm Parabellum SD&lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso:  TMP SD</Spanish>
-			<French>Calibre: 9x19 mm Parabellum SD&lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec:  TMP SD</French>
-			<Czech>Kalibr: 9x19 mm Parabellum SD&lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro:  TMP SD</Czech>
-			<Russian>Патрон: 9x19 мм парабеллум SD&lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в:  TMP SD</Russian>
-			<Polish>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w:  TMP SD</Polish>
-			<Hungarian>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver:  TMP SD</Hungarian>
+			<German>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: Steyr TMP SD</German>
+			<English>Caliber: 9x19 mm Parabellum SD&lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: Steyr TMP SD</English>
+			<Italian>Calibro: 9x19 mm Parabellum SD&lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: Steyr TMP SD</Italian>
+			<Spanish>Calibre: 9x19 mm Parabellum SD&lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: Steyr TMP SD</Spanish>
+			<French>Calibre: 9x19 mm Parabellum SD&lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: Steyr TMP SD</French>
+			<Czech>Kalibr: 9x19 mm Parabellum SD&lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: Steyr TMP SD</Czech>
+			<Russian>Патрон: 9x19 мм парабеллум SD&lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: Steyr TMP SD</Russian>
+			<Polish>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr TMP SD</Polish>
+			<Hungarian>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr TMP SD</Hungarian>
         </Key>	
+		<Key ID="STR_DZ_MAG_25RND_45_UMP_NAME">
+			<English>25Rnd. UMP mag.</English>
+			<Russian>25п. UMP маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_25RND_45_UMPSD_NAME">
+			<English>25Rnd. UMP SD mag.</English>
+			<Russian>25п. UMP глуш. маг.</Russian>
+		</Key>		
+        <Key ID="STR_DZ_MAG_25RND_UMP_DESC">
+			<German>Kaliber: .45 ACP &lt;br/&gt;Patronen: 25 &lt;br/&gt;Eingesetzt in: UMP</German>
+			<English>Caliber: .45 ACP &lt;br/&gt;Rounds: 25 &lt;br/&gt;Used in: UMP</English>
+			<Italian>Calibro: .45 ACP &lt;br/&gt;Munizioni: 25 &lt;br/&gt;Si usa in: UMP</Italian>
+			<Spanish>Calibre: .45 ACP &lt;br/&gt;Cargas: 25 &lt;br/&gt;Uso: UMP </Spanish>
+			<French>Calibre: .45 ACP &lt;br/&gt;Munitions: 25 &lt;br/&gt;Utilisé avec: UMP</French>
+			<Czech>Kalibr: .45 ACP &lt;br/&gt;Nábojů: 25 &lt;br/&gt;Pro: UMP</Czech>
+			<Russian>Патрон: .45 ACP &lt;br/&gt;Количество: 25 &lt;br/&gt;Используется в: UMP</Russian>
+			<Polish>Kaliber: .45 ACP &lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP</Polish>
+			<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP</Hungarian>
+        </Key>			
+        <Key ID="STR_DZ_MAG_25RND_UMPSD_DESC">
+			<German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 25 &lt;br/&gt;Eingesetzt in: UMP SD</German>
+			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 25 &lt;br/&gt;Used in: UMP SD</English>
+			<Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 25 &lt;br/&gt;Si usa in: UMP SD</Italian>
+			<Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cargas: 25 &lt;br/&gt;Uso: UMP SD</Spanish>
+			<French>Calibre: .45 ACP SD&lt;br/&gt;Munitions: 25 &lt;br/&gt;Utilisé avec: UMP SD</French>
+			<Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 25 &lt;br/&gt;Pro: UMP SD</Czech>
+			<Russian>Патрон: .45 ACP SD&lt;br/&gt;Количество: 25 &lt;br/&gt;Используется в: UMP SD</Russian>
+			<Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP SD</Polish>
+			<Hungarian>Kaliber: .45 ACP SD&lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP SD</Hungarian>
+        </Key>		
 	  
 		<!-- **** ATTACHMENTS **** -->
 		

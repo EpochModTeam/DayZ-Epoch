@@ -94,3 +94,19 @@ class 33Rnd_45ACP_KRISSSD: 33Rnd_45ACP_KRISS
 	picture = "\RH_smg\inv\m_kriss30.paa";
 	ammo = "B_45ACP_SD";
 };
+
+class 25Rnd_45ACP_UMP: 33Rnd_45ACP_KRISS
+{
+	displayName = $STR_DZ_MAG_25RND_45_UMP_NAME;
+	descriptionShort = $STR_DZ_MAG_25RND_UMP_DESC;
+	model = "\RH_smg\mags\mag_ump.p3d";
+	picture = "\RH_smg\inv\m_ump.paa";
+	count = 25;
+};
+class 25Rnd_45ACP_UMPSD: 25Rnd_45ACP_UMP
+{
+	displayName = $STR_DZ_MAG_25RND_45_UMPSD_NAME;
+	descriptionShort = $STR_DZ_MAG_25RND_UMPSD_DESC;
+	picture = "\RH_smg\inv\m_ump.paa";
+	ammo = "B_45ACP_SD";
+};

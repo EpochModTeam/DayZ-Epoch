@@ -44,6 +44,8 @@ class Category_20 {
 	class 40Rnd_46x30_sd_mp7 {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};	
 	class 33Rnd_45ACP_KRISS {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};	
 	class 33Rnd_45ACP_KRISSSD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class 25Rnd_45ACP_UMP {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};	
+	class 25Rnd_45ACP_UMPSD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 };
 
 //Single-shot/Shotgun Ammo
