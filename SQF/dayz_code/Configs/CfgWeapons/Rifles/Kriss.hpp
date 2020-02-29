@@ -96,7 +96,8 @@ class Kriss_SD_DZ: MP5_SD_DZ
 	descriptionShort = $STR_DZ_WPN_KRISS_SD_DESC;
 	model = "\RH_smg\RH_krisssd.p3d";
 	picture = "\RH_smg\inv\krisssd.paa";
-	handAnim[] = {"OFP2_ManSkeleton","\RH_smg\Anim\NORRN_RH_Kris.rtm"};
+	handAnim[] = {"OFP2_ManSkeleton","\RH_smg\Anim\NORRN_RH_Kris1.rtm"};
+	reloadMagazineSound[] = {"\RH_smg\Sound\kriss_reload.wss",0.056234,1,25};
 	magazines[] = {"33Rnd_45ACP_KRISSSD"};
 	fireLightDuration = 0.0;
 	fireLightIntensity = 0.0;

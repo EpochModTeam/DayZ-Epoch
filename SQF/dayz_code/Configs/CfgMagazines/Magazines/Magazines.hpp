@@ -22,6 +22,7 @@
 #include "762x51.hpp"		//M240, FN FAL, DMR, M24
 #include "762x54r.hpp"		//PK, SVD, Mosin
 #include "46x30.hpp"		//MP7
+#include "57x28.hpp"		//P90
 #include "680x43.hpp"		//ACR
 #include "86x70.hpp"		//L115, MSR
 #include "762x67.hpp"		//XM2010

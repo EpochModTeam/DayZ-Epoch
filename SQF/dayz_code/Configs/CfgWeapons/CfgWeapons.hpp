@@ -162,6 +162,7 @@ class CfgWeapons
 	#include "Rifles\MP7.hpp"
 	#include "Rifles\TMP.hpp"
 	#include "Rifles\UMP.hpp"
+	#include "Rifles\P90.hpp"
 	
 	class M16A2;
 	class M16A2GL;

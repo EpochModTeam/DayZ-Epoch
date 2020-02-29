@@ -12446,7 +12446,49 @@
 			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: .45 ACP SD</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
+        </Key>	
+		
+		<!-- P90 -->
+		<Key ID="STR_DZ_WPN_P90_NAME">
+			<English>P90</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_P90_CCO_NAME">
+			<English>P90 CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_P90_HOLO_NAME">
+			<English>P90 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_P90_SD_NAME">
+			<English>P90 SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_P90_CCO_SD_NAME">
+			<English>P90 CCO SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_P90_HOLO_SD_NAME">
+			<English>P90 Holo SD</English>
+		</Key>	
+        <Key ID="STR_DZ_WPN_P90_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: 5.7x28mm</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: 5.7x28mm</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 5.7x28mm</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: 5.7x28mm</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 5.7x28mm</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: 5.7x28mm</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 5.7x28mm</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 5.7x28mm</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm</Hungarian>
         </Key>		
+        <Key ID="STR_DZ_WPN_P90_SD_DESC">
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 5.7x28mm SD</English>		
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 5.7x28mm SD</German>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 5.7x28mm SD</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 5.7x28mm SD</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 5.7x28mm SD</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 5.7x28mm SD</Czech>
+			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 5.7x28mm SD</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 5.7x28mm SD </Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm SD</Hungarian>
+        </Key>
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -13506,6 +13548,37 @@
 			<Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP SD</Polish>
 			<Hungarian>Kaliber: .45 ACP SD&lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP SD</Hungarian>
         </Key>		
+		<Key ID="STR_DZ_MAG_50RND_P90_NAME">
+			<English>50Rnd. P90 mag.</English>
+			<Russian>50п. P90 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_50RND_P90SD_NAME">
+			<English>50Rnd. P90 SD mag.</English>
+			<Russian>50п. P90 глуш. маг.</Russian>
+		</Key>		
+        <Key ID="STR_DZ_MAG_50RND_P90_DESC">
+			<German>Kaliber: 5.7x28mm &lt;br/&gt;Patronen: 50 &lt;br/&gt;Eingesetzt in: P90</German>
+			<English>Caliber: 5.7x28mm &lt;br/&gt;Rounds: 50 &lt;br/&gt;Used in: P90</English>
+			<Italian>Calibro: 5.7x28mm &lt;br/&gt;Munizioni: 50 &lt;br/&gt;Si usa in: P90</Italian>
+			<Spanish>Calibre: 5.7x28mm &lt;br/&gt;Cargas: 50 &lt;br/&gt;Uso: P90 </Spanish>
+			<French>Calibre: 5.7x28mm &lt;br/&gt;Munitions: 50 &lt;br/&gt;Utilisé avec: P90</French>
+			<Czech>Kalibr: 5.7x28mm &lt;br/&gt;Nábojů: 50 &lt;br/&gt;Pro: P90</Czech>
+			<Russian>Патрон: 5.7x28mm &lt;br/&gt;Количество: 50 &lt;br/&gt;Используется в: P90</Russian>
+			<Polish>Kaliber: 5.7x28mm &lt;br/&gt;Naboje: 50 &lt;br/&gt;Używane w: P90</Polish>
+			<Hungarian>Kaliber: 5.7x28mm &lt;br/&gt; Töltények: 50 &lt;br/&gt; Hozzá tartozó fegyver: P90</Hungarian>
+        </Key>			
+        <Key ID="STR_DZ_MAG_50RND_P90SD_DESC">
+			<German>Kaliber: 5.7x28mm SD&lt;br/&gt;Patronen: 50 &lt;br/&gt;Eingesetzt in: P90 SD</German>
+			<English>Caliber: 5.7x28mm SD&lt;br/&gt;Rounds: 50 &lt;br/&gt;Used in: P90 SD</English>
+			<Italian>Calibro: 5.7x28mm SD&lt;br/&gt;Munizioni: 50 &lt;br/&gt;Si usa in: P90 SD</Italian>
+			<Spanish>Calibre: 5.7x28mm SD&lt;br/&gt;Cargas: 50 &lt;br/&gt;Uso: P90 SD</Spanish>
+			<French>Calibre: 5.7x28mm SD&lt;br/&gt;Munitions: 50 &lt;br/&gt;Utilisé avec: P90 SD</French>
+			<Czech>Kalibr: 5.7x28mm SD&lt;br/&gt;Nábojů: 50 &lt;br/&gt;Pro: P90 SD</Czech>
+			<Russian>Патрон: 5.7x28mm SD&lt;br/&gt;Количество: 50 &lt;br/&gt;Используется в: P90 SD</Russian>
+			<Polish>Kaliber: 5.7x28mm SD&lt;br/&gt;Naboje: 50 &lt;br/&gt;Używane w: P90 SD</Polish>
+			<Hungarian>Kaliber: 5.7x28mm SD&lt;br/&gt; Töltények: 50 &lt;br/&gt; Hozzá tartozó fegyver: P90 SD</Hungarian>
+        </Key>		
+		
 	  
 		<!-- **** ATTACHMENTS **** -->
 		
@@ -13567,7 +13640,18 @@
 			<English>10mm Sound suppressor</English>
 			<Russian>ПБС для калибра 10мм</Russian>
 			<German>10mm Schalldämpfer</German>
-		</Key>		
+		</Key>	
+		<!-- 5.7mm Suppressor ACR-->
+		<Key ID="STR_DZ_ATT_SUP57_NAME">
+			<English>[A] 5.7mm Suppressor</English>
+			<Russian>[М] 5.7vмм глушитель</Russian>
+			<German>[E] 5.7mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP57_DESC">
+			<English>5.7mm Sound suppressor</English>
+			<Russian>ПБС для калибра 5.7мм</Russian>
+			<German>5.7mm Schalldämpfer</German>
+		</Key>			
 		<!-- 6.8mm Suppressor ACR-->
 		<Key ID="STR_DZ_ATT_SUP68_NAME">
 			<English>[A] 6.80mm Suppressor</English>

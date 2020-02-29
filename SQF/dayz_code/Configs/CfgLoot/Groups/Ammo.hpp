@@ -175,6 +175,8 @@ AmmoEU[] =
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_TMPSD},	
 	{Loot_MAGAZINE,		6,		25Rnd_45ACP_UMP},
 	{Loot_MAGAZINE,		6,		25Rnd_45ACP_UMPSD},		
+	{Loot_MAGAZINE,		6,		50Rnd_57x28_P90},
+	{Loot_MAGAZINE,		6,		50Rnd_57x28_P90SD},		
 	
 	// Assault rifles
 	{Loot_MAGAZINE,		10,		30Rnd_556x45_G36},

@@ -10,6 +10,8 @@ class Mac10_DZ: PDW_DZ
 	distanceZoomMax = 107;
 	modes[] = {"Single","FullAuto"};
 	
+	class Attachments {};
+	
 	class Single: Mode_SemiAuto
 	{
 		begin1[] = {"\RH_smg\sound\mac10.wss",1.778279,1,900};

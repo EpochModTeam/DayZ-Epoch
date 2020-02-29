@@ -577,6 +577,38 @@ class CfgAmmo
 		visiblefire = 10;
 	};
 	
+	//P90
+	class B_57x28_Ball: BulletBase
+	{
+		airfriction = -0.0013522;
+		audibleFire = 16;		
+		visiblefire = 16;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 8;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 400;
+	};
+	
+	//P90 SD
+	class B_57x28_SD: BulletBase
+	{
+		airfriction = -0.0013522;
+		visibleFire = 0.08;
+		audibleFire = 0.08;		
+		caliber = 0.33; //33
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 8;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 300;
+	};
+	
+	
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

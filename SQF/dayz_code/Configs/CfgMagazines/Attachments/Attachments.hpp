@@ -18,6 +18,7 @@
 
 #include "Sup9.hpp"
 #include "Sup10.hpp"
+#include "Sup57.hpp"
 #include "Sup68.hpp"
 #include "Sup556.hpp"
 #include "Sup545.hpp"
