@@ -80,6 +80,7 @@ class CfgWeapons
 	class M4A1_AIM_SD_camo;
 	#include "Rifles\M4A1.hpp"
 	#include "Rifles\M4A3.hpp"	
+	#include "Rifles\HK416.hpp"	
 	//HK53
 	#include "Rifles\HK53.hpp"
 	//Magpul PDR
@@ -87,7 +88,7 @@ class CfgWeapons
 	//Famas
 	#include "Rifles\Famas.hpp"	
 	#include "Rifles\ACR.hpp"
-	#include "Rifles\KACPDW.hpp"
+	#include "Rifles\KACPDW.hpp"	
 	
 	class M14_EP1;
 	#include "Rifles\M14.hpp"

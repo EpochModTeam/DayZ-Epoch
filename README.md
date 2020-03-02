@@ -49,6 +49,7 @@ Included Custom Addons
 * RH M14 pack by Robert Hammer - http://www.armaholic.com/page.php?id=11374
 * RH Pistol Pack Remake by Robert Hammer - http://www.armaholic.com/page.php?id=12800
 * RH SMG pack by Robert Hammer - http://www.armaholic.com/page.php?id=13788
+* RH HK416 Pack by Robert Hammer - http://www.armaholic.com/page.php?id=11789
 
 --------------------------
 Included Custom Islands

@@ -11892,7 +11892,7 @@
 			<English>ACR ACOG</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_GL_NAME">
-			<English>ACR GL</English>
+			<English>ACR M203</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_TWS_NAME">
 			<English>ACR TWS</English>
@@ -11901,16 +11901,16 @@
 			<English>ACR TWS SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_TWS_GL_NAME">
-			<English>ACR TWS GL</English>
+			<English>ACR TWS M203</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_TWS_GL_SD_NAME">
-			<English>ACR TWS GL SD</English>
+			<English>ACR TWS M203 SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_CCO_GL_NAME">
-			<English>ACR CCO GL</English>
+			<English>ACR CCO M203</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_HOLO_GL_NAME">
-			<English>ACR Holo GL</English>
+			<English>ACR Holo M203</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_SD_NAME">
 			<English>ACR SD</English>
@@ -11922,35 +11922,35 @@
 			<English>ACR ACOG SD</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_ACOG_GL_NAME">
-			<English>ACR ACOG GL</English>
+			<English>ACR ACOG M203</English>
 		</Key>		
 		<Key ID="STR_DZ_WPN_ACR_ACOG_GL_SD_NAME">
-			<English>ACR ACOG GL SD</English>
+			<English>ACR ACOG M203 SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_GL_SD_NAME">
-			<English>ACR GL SD</English>
+			<English>ACR M203 SD</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_CCO_GL_SD_NAME">
-			<English>ACR CCO GL SD</English>
+			<English>ACR CCO M203 SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_HOLO_SD_NAME">
 			<English>ACR Holo SD</English>
 		</Key>		
 		<Key ID="STR_DZ_WPN_ACR_HOLO_GL_SD_NAME">
-			<English>ACR Holo GL SD</English>
+			<English>ACR Holo M203 SD</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_NV_GL_NAME">
-			<English>ACR NV GL</English>
+			<English>ACR NV M203</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_NV_GL_SD_NAME">
-			<English>ACR NV GL SD</English>
+			<English>ACR NV M203 SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_NV_SD_NAME">
 			<English>ACR NV SD</English>
 		</Key>		
 		<Key ID="STR_DZ_WPN_ACR_NV_NAME">
 			<English>ACR NV</English>
-		</Key>	
+		</Key>		
 		
 		<!-- RSASS -->	
 		<Key ID="STR_DZ_WPN_RSASS_NAME">
@@ -12489,6 +12489,74 @@
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 5.7x28mm SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm SD</Hungarian>
         </Key>
+		
+		<!-- HK416 -->
+		<Key ID="STR_DZ_WPN_HK416_NAME">
+			<English>HK416</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_SD_NAME">
+			<English>HK416 SD</English>
+			<Russian>HK416 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_NAME">
+			<English>HK416 M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_SD_NAME">
+			<English>HK416 M203 SD</English>
+			<Russian>HK416 M203 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_CCO_NAME">
+			<English>HK416 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_CCO_SD_NAME">
+			<English>HK416 CCO SD</English>
+			<Russian>HK416 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_CCO_NAME">
+			<English>HK416 M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_CCO_SD_NAME">
+			<English>HK416 M203 CCO SD</English>
+			<Russian>HK416 M203 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_HOLO_NAME">
+			<English>HK416 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_HOLO_SD_NAME">
+			<English>HK416 Holo SD</English>
+			<Russian>HK416 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_HOLO_NAME">
+			<English>HK416 M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_HOLO_SD_NAME">
+			<English>HK416 M203 Holo SD</English>
+			<Russian>HK416 M203 Holo ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_HK416C_NAME">
+			<English>HK416C</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_GL_NAME">
+			<English>HK416C M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_CCO_NAME">
+			<English>HK416C CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_GL_CCO_NAME">
+			<English>HK416C M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_HOLO_NAME">
+			<English>HK416C Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_GL_HOLO_NAME">
+			<English>HK416C M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_ACOG_NAME">
+			<English>HK416C ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_GL_ACOG_NAME">
+			<English>HK416C M203 ACOG</English>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
