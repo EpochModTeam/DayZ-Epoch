@@ -120,7 +120,9 @@ weaponsEU[] =
 	{Loot_WEAPON,		1,		L115A3_DZ}, // Tan Lapua
 	{Loot_WEAPON,		1,		L115A3_2_DZ}, // Green Lapua
 	{Loot_WEAPON,		4,		SCAR_H_LNG_Sniper_SD},
-	{Loot_WEAPON,		4,		SCAR_H_LNG_Sniper},
+	{Loot_WEAPON,		4,		SCAR_H_LNG_Sniper},	
+	{Loot_WEAPON,		2,		HK417_Sniper_SD_DZ},
+	{Loot_WEAPON,		2,		HK417_Sniper_DZ},
 	{Loot_WEAPON,		1,		RSASS_DZ},		
 	{Loot_WEAPON,		4,		FNFAL_DZ},
 	{Loot_WEAPON,		3,		FN_FAL_ANPVS4_DZE}, //FNFAL_ANPVS4_DZ is NV only _DZE is toggleable with attachment support
@@ -153,6 +155,8 @@ weaponsEU[] =
 	{Loot_WEAPON,		5,		Famas_DZ},
 	{Loot_WEAPON,		5,		HK416_DZ},
 	{Loot_WEAPON,		5,		HK416C_DZ},	
+	{Loot_WEAPON,		5,		HK417_DZ},
+	{Loot_WEAPON,		5,		HK417C_DZ},		
 	{Loot_WEAPON,		5,		SCAR_L_CQC_CCO_SD},
 	{Loot_WEAPON,		5,		SCAR_L_CQC},
 	{Loot_WEAPON,		5,		SCAR_L_CQC_Holo},

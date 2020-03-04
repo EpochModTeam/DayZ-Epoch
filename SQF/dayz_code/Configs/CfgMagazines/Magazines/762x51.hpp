@@ -138,9 +138,33 @@ class 20Rnd_762x51_RSASS: CA_Magazine
 
 class 20Rnd_762x51_RSASS_SD: 20Rnd_762x51_RSASS
 {
+	picture = "\FHQ_Remington\ammo\ui\i_20rndpmag.paa";
 	initSpeed = 850;
 	displayName = $STR_DZ_MAG_20RND_RSASSSD_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_RSASSSD_DESC;
 	cartridgeName = "762x51_SD";
 	ammo = "Rem_762x51_SD";	
 };
+
+class 20Rnd_762x51_HK417: 20Rnd_762x51_RSASS
+{
+	picture = "\RH_hk416\inv\m_hk417.paa";
+	displayName = $STR_DZ_MAG_20RND_HK417_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_HK417_DESC;
+	count = 20;
+	cartridgeName = "762x51";
+	ammo = "Rem_762x51_Ball";	
+	
+
+};
+
+class 20Rnd_762x51_HK417SD: 20Rnd_762x51_HK417
+{
+	initSpeed = 850;
+	displayName = $STR_DZ_MAG_20RND_HK417SD_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_HK417SD_DESC;
+	cartridgeName = "762x51_SD";
+	ammo = "Rem_762x51_SD";	
+};
+
+

@@ -12557,6 +12557,88 @@
 		<Key ID="STR_DZ_WPN_HK416C_GL_ACOG_NAME">
 			<English>HK416C M203 ACOG</English>
 		</Key>		
+	
+		<!-- HK417 -->
+		<Key ID="STR_DZ_WPN_HK417_NAME">
+			<English>HK417</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_SD_NAME">
+			<English>HK417 SD</English>
+			<Russian>HK417 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_GL_NAME">
+			<English>HK417 M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_GL_SD_NAME">
+			<English>HK417 M203 SD</English>
+			<Russian>HK417 M203 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_CCO_NAME">
+			<English>HK417 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_CCO_SD_NAME">
+			<English>HK417 CCO SD</English>
+			<Russian>HK417 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_GL_CCO_NAME">
+			<English>HK417 M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_GL_CCO_SD_NAME">
+			<English>HK417 M203 CCO SD</English>
+			<Russian>HK417 M203 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_HOLO_NAME">
+			<English>HK417 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_HOLO_SD_NAME">
+			<English>HK417 Holo SD</English>
+			<Russian>HK417 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_GL_HOLO_NAME">
+			<English>HK417 M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_GL_HOLO_SD_NAME">
+			<English>HK417 M203 Holo SD</English>
+			<Russian>HK417 M203 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_ACOG_NAME">
+			<English>HK417 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_HK417_ACOG_SD_NAME">
+			<English>HK417 ACOG SD</English>
+			<Russian>HK417 ACOG ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_HK417C_NAME">
+			<English>HK417C</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_GL_NAME">
+			<English>HK417C M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_CCO_NAME">
+			<English>HK417C CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_GL_CCO_NAME">
+			<English>HK417C M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_HOLO_NAME">
+			<English>HK417C Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_GL_HOLO_NAME">
+			<English>HK417C M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_GL_ACOG_NAME">
+			<English>HK417C M203 ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_ACOG_NAME">
+			<English>HK417C ACOG</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_HK417_SNIPER_NAME">
+			<English>HK417 Sniper</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_SNIPER_SD_NAME">
+			<English>HK417 Sniper SD</English>
+			<Russian>HK417 Sniper ПБС</Russian>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -13646,7 +13728,36 @@
 			<Polish>Kaliber: 5.7x28mm SD&lt;br/&gt;Naboje: 50 &lt;br/&gt;Używane w: P90 SD</Polish>
 			<Hungarian>Kaliber: 5.7x28mm SD&lt;br/&gt; Töltények: 50 &lt;br/&gt; Hozzá tartozó fegyver: P90 SD</Hungarian>
         </Key>		
-		
+		<Key ID="STR_DZ_MAG_20RND_HK417_NAME">
+			<English>30Rnd. HK417 mag.</English>
+			<Russian>30п. HK417 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_20RND_HK417SD_NAME">
+			<English>30Rnd. HK417 SD mag.</English>
+			<Russian>30п. HK417 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_HK417_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: HK417</English>
+			<French>Calibre : 7.62x51mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: HK417</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: HK417</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: HK417</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: HK417</Polish>
+			<Russian>Патрон: 7.62x51 мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: HK417</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: HK417</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: HK417</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: HK417</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_HK417SD_DESC">
+			<English>Caliber: 7.62x51mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: HK417 SD</English>
+			<French>Calibre : 7.62x51mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: HK417 SD</French>
+			<Spanish>Calibre: 7.62x51mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: HK417 SD</Spanish>
+			<Italian>Calibro: 7.62x51mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: HK417 SD</Italian>
+			<Polish>Kaliber: 7.62x51mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: HK417 SD</Polish>
+			<Russian>Патрон: 7.62x51 мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: HK417 SD</Russian>
+			<German>Kaliber: 7.62x51mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: HK417 SD</German>
+			<Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: HK417 SD</Czech>
+			<Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: HK417 SD</Hungarian>
+		</Key>		
 	  
 		<!-- **** ATTACHMENTS **** -->
 		
@@ -13754,6 +13865,18 @@
 			<Russian>ПБС для калибра 5.45мм</Russian>
 			<German>5.45mm Schalldämpfer</German>
 		</Key>
+		
+		<!-- 7.62mm Suppressor -->
+		<Key ID="STR_DZ_ATT_SUP762_NAME">
+			<English>[A] 7.62mm Suppressor</English>
+			<Russian>[М] 7.62мм глушитель</Russian>
+			<German>[E] 7.62mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP762_DESC">
+			<English>7.62mm Sound suppressor</English>
+			<Russian>ПБС для калибра 7.62мм</Russian>
+			<German>7.62mm Schalldämpfer</German>
+		</Key>		
 		
 		<!-- CCO -->
 		<Key ID="STR_DZ_ATT_CCO_NAME">
@@ -14072,15 +14195,6 @@
 			<English>A silencer that can be attached to .45 caliber weapons.</English>
 			<German>Ein Schalldämpfer, der an Kaliber .45 Waffen angebracht werden kann.</German>
 		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_762SUP_NAME">
-			<English>[A] 7.62mm Suppressor</English>
-			<Russian>[М] 7.62мм глушитель</Russian>
-			<German>[E] 7.62mm Schalldämpfer</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_762SUP_DESC">
-			<English>A silencer that can be attached to 7.62x51mm caliber rifles.</English>
-			<German>Ein Schalldämpfer, der an Kaliber 7.62x51mm Gewehre angebracht werden kann.</German>
-		</Key>		
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_REMOVE">
