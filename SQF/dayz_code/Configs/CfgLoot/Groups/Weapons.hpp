@@ -77,6 +77,7 @@ weaponsUS[] =
 	{Loot_WEAPON,		3,		Mac10_DZ},
 	
 	// Assault Rifles
+	{Loot_WEAPON,		6,		CTAR21_DZ},
 	{Loot_WEAPON,		6,		KAC_PDW_DZ},
 	{Loot_WEAPON,		6,		M16A2_DZ},
 	{Loot_WEAPON,		6,		M16A4_ACOG_DZ},

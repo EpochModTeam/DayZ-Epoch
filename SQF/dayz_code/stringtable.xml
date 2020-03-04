@@ -12639,6 +12639,17 @@
 			<English>HK417 Sniper SD</English>
 			<Russian>HK417 Sniper ПБС</Russian>
 		</Key>		
+
+		<!-- CTAR21 -->
+		<Key ID="STR_DZ_WPN_CTAR21_NAME">
+			<English>CTAR-21</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CTAR21_CCO_NAME">
+			<English>CTAR-21 CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_CTAR21_ACOG_NAME">
+			<English>CTAR-21 ACOG</English>
+		</Key>	
 		
 		<!-- **** MAGAZINES **** -->
 		
