@@ -25,16 +25,21 @@ class 100Rnd_556x45_M249 : 200Rnd_556x45_M249
 
 class 100Rnd_556x45_BetaCMag: CA_Magazine {
 	scope = public;
-	displayName = $STR_DZ_MAG_100RND_556x45_MG36_NAME;
+	displayName = $STR_DZ_MAG_100RND_556x45_BetaCMag_NAME;
 	ammo = "B_556x45_Ball";
 	count = 100;
 	initSpeed = 920;
 	model = "dayz_epoch_c\models\magazines\MG36_mag.p3d";
 	picture = "\ca\weapons\g36\data\equip\M_MG36_CA.paa";
-	type="256";
+	type = WeaponSlotItem;
 	tracersEvery = 4;
 	lastRoundsTracer = 4;
-	descriptionShort = $STR_DZ_MAG_100RND_MG36_DESC;
+	descriptionShort = $STR_DZ_MAG_100RND_BetaCMag_DESC;
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
 };
 
 

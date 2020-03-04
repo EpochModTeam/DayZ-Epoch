@@ -91,6 +91,7 @@ class CfgWeapons
 	#include "Rifles\KACPDW.hpp"	
 	//CTAR-21
 	#include "Rifles\CTAR21.hpp"	
+	#include "Rifles\Masada.hpp"	
 	
 	class M14_EP1;
 	#include "Rifles\M14.hpp"

@@ -12566,13 +12566,6 @@
 			<English>HK417 SD</English>
 			<Russian>HK417 ПБС</Russian>
 		</Key>
-		<Key ID="STR_DZ_WPN_HK417_GL_NAME">
-			<English>HK417 M203</English>
-		</Key>
-		<Key ID="STR_DZ_WPN_HK417_GL_SD_NAME">
-			<English>HK417 M203 SD</English>
-			<Russian>HK417 M203 ПБС</Russian>
-		</Key>
 		<Key ID="STR_DZ_WPN_HK417_CCO_NAME">
 			<English>HK417 CCO</English>
 		</Key>
@@ -12580,26 +12573,12 @@
 			<English>HK417 CCO SD</English>
 			<Russian>HK417 CCO ПБС</Russian>
 		</Key>
-		<Key ID="STR_DZ_WPN_HK417_GL_CCO_NAME">
-			<English>HK417 M203 CCO</English>
-		</Key>
-		<Key ID="STR_DZ_WPN_HK417_GL_CCO_SD_NAME">
-			<English>HK417 M203 CCO SD</English>
-			<Russian>HK417 M203 CCO ПБС</Russian>
-		</Key>
 		<Key ID="STR_DZ_WPN_HK417_HOLO_NAME">
 			<English>HK417 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_HK417_HOLO_SD_NAME">
 			<English>HK417 Holo SD</English>
 			<Russian>HK417 Holo ПБС</Russian>
-		</Key>
-		<Key ID="STR_DZ_WPN_HK417_GL_HOLO_NAME">
-			<English>HK417 M203 Holo</English>
-		</Key>
-		<Key ID="STR_DZ_WPN_HK417_GL_HOLO_SD_NAME">
-			<English>HK417 M203 Holo SD</English>
-			<Russian>HK417 M203 Holo ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_HK417_ACOG_NAME">
 			<English>HK417 ACOG</English>
@@ -12650,6 +12629,36 @@
 		<Key ID="STR_DZ_WPN_CTAR21_ACOG_NAME">
 			<English>CTAR-21 ACOG</English>
 		</Key>	
+		
+		<!-- Masada -->
+		<Key ID="STR_DZ_WPN_Masada_NAME">
+			<English>Masada</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_SD_NAME">
+			<English>Masada SD</English>
+			<Russian>Masada ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_CCO_NAME">
+			<English>Masada CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_CCO_SD_NAME">
+			<English>Masada CCO SD</English>
+			<Russian>Masada CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_HOLO_NAME">
+			<English>Masada Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_HOLO_SD_NAME">
+			<English>Masada Holo SD</English>
+			<Russian>Masada Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_ACOG_NAME">
+			<English>Masada ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_Masada_ACOG_SD_NAME">
+			<English>Masada ACOG SD</English>
+			<Russian>Masada ACOG ПБС</Russian>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -12991,12 +13000,10 @@
 			<Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
 			<Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
         </Key>
-		<Key ID="STR_DZ_MAG_100RND_556x45_MG36_NAME">
-			<English>100Rnd. MG36 drum mag.</English>
-			<German>100 Schuss MG36 Trommelmagazin</German>
-			<Russian>100п. МГ-36 барабан</Russian>
+		<Key ID="STR_DZ_MAG_100RND_556x45_BetaCMag_NAME">
+			<English>100Rnd. Beta C-Mag</English>
 		</Key>
-		<Key ID="STR_DZ_MAG_100RND_MG36_DESC">
+		<Key ID="STR_DZ_MAG_100RND_BetaCMag_DESC">
 			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
 			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
 			<Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
