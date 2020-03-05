@@ -12658,7 +12658,16 @@
 		<Key ID="STR_DZ_WPN_Masada_ACOG_SD_NAME">
 			<English>Masada ACOG SD</English>
 			<Russian>Masada ACOG ПБС</Russian>
-		</Key>		
+		</Key>	
+
+		<!-- AKS -->
+		<Key ID="STR_DZ_WPN_AKS_GOLD_NAME">
+			<English>AKS Gold</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_AKS_SILVER_NAME">
+			<English>AKS Silver</English>
+			<German>AKS Silber</German>
+		</Key>			
 		
 		<!-- **** MAGAZINES **** -->
 		

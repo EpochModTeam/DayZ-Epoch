@@ -25,9 +25,9 @@ weaponsRU[] =
 	{Loot_WEAPON,		7,		Bizon_SD_DZ},
 	
 	// Assault Rifles
-	{Loot_WEAPON,		6,		AK74_Kobra_DZ},
 	{Loot_WEAPON,		6,		AKS74U_DZ},
-	{Loot_WEAPON,		1,		AKS_GOLD},
+	{Loot_WEAPON,		1,		AKS_Gold_DZ},
+	{Loot_WEAPON,		1,		AKS_Silver_DZ},
 	{Loot_WEAPON,		6,		AKM_DZ},
 	{Loot_WEAPON,		6,		AK107_DZ}, // Attachment support added to AK-107 in 1.0.7
 	{Loot_WEAPON,		6,		AK74_DZ},
