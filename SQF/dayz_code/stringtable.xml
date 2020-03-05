@@ -12667,6 +12667,14 @@
 		<Key ID="STR_DZ_WPN_AKS_SILVER_NAME">
 			<English>AKS Silver</English>
 			<German>AKS Silber</German>
+		</Key>		
+
+		<!-- AN-94 Abakan -->
+		<Key ID="STR_DZ_WPN_AN94_NAME">
+			<English>AN-94 Abakan</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_AN94_GL_NAME">
+			<English>AN-94 Abakan GP-25</English>
 		</Key>			
 		
 		<!-- **** MAGAZINES **** -->

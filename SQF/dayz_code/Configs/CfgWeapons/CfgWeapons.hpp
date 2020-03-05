@@ -40,13 +40,14 @@ class CfgWeapons
 	class AK_74;
 	class AKS_74_UN_kobra;
 	#include "Rifles\AK74.hpp"
+	#include "Rifles\AN94.hpp"
 	
 	class AKS_74_U;
 	#include "Rifles\AKS74U.hpp"
 	
 	class AK_47_M;
 	#include "Rifles\AKM.hpp"
-	#include "Rifles\AKS.hpp"
+	#include "Rifles\AKS.hpp"	
 	
 	#include "Rifles\RPK.hpp"
 	
