@@ -570,6 +570,7 @@ class Category_17 {
 	// desert camo
 	class SVD_PSO1_Gh_DES_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {11,"ItemGoldBar"};};
 	class SVD_NSPU_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class SVU_PSO1_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 };
 
 //Light Machine Guns

@@ -158,6 +158,7 @@ class CfgWeapons
 		};
 	};
 	#include "Rifles\SVD.hpp"
+	#include "Rifles\SVU.hpp"
 	
 	#include "Rifles\Mosin.hpp"
 	

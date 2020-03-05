@@ -6,6 +6,7 @@ class Category_11 {
 	class AA12_PMC {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};		
 	class revolver_gold_EP1 {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class Colt_Anaconda_Gold_DZ {type = "trade_weapons";buy[] = {9,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class SVD_Gold_DZ {type = "trade_weapons";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};	
 	class AKS_GOLD {type = "trade_weapons";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};	
 	class AKS_Gold_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};	
 	class AKS_Silver_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};		

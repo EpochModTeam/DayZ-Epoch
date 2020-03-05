@@ -12677,6 +12677,16 @@
 			<English>AN-94 Abakan GP-25</English>
 		</Key>			
 		
+		<!-- SVD Gold -->
+		<Key ID="STR_DZ_WPN_SVD_GOLD_NAME">
+			<English>SVD Gold</English>
+		</Key>
+		
+		<!-- SVU -->
+		<Key ID="STR_DZ_WPN_SVU_NAME">
+			<English>SVU</English>
+		</Key>		
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
