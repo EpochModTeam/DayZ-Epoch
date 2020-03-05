@@ -36,6 +36,7 @@ weaponsRU[] =
 	{Loot_WEAPON,		6,		AK107_DZ}, // Attachment support added to AK-107 in 1.0.7
 	{Loot_WEAPON,		6,		AK74_DZ},
 	{Loot_WEAPON,		6,		AN94_DZ},
+	{Loot_WEAPON,		6,		RK95_DZ},
 	
 	// Machine Guns
 	{Loot_WEAPON,		3,		RPK74_DZ},

@@ -86,6 +86,8 @@ AmmoRU[] =
 	{Loot_MAGAZINE,		10,		30Rnd_545x39_AK},
 	{Loot_MAGAZINE,		8,		30Rnd_545x39_AKSD},
 	{Loot_MAGAZINE,		10,		30Rnd_762x39_AK47},
+	{Loot_MAGAZINE,		10,		30Rnd_762x39_RK95},
+	{Loot_MAGAZINE,		8,		30Rnd_762x39_RK95SD},
 	
 	// Sniper rifles
 	{Loot_MAGAZINE,		5,		10Rnd_762x54_SVD},

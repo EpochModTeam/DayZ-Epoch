@@ -48,6 +48,7 @@ class CfgWeapons
 	class AK_47_M;
 	#include "Rifles\AKM.hpp"
 	#include "Rifles\AKS.hpp"	
+	#include "Rifles\RK95.hpp"
 	
 	#include "Rifles\RPK.hpp"
 	

@@ -607,7 +607,22 @@ class CfgAmmo
 		typicalspeed = 300;
 	};
 	
-	
+	//RK-95 SD
+	class B_762x39_SD: BulletBase
+	{
+		hit = 9;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		visibleFire = 0.08;
+		audibleFire = 0.08;	
+		cost = 1;
+		typicalSpeed = 410;
+		tracerColor[] = {0.2,0.8,0.1,0.04};
+		tracerColorR[] = {0,0,0,0};
+		airFriction = -0.00195;
+		caliber = 0.83;
+	};
 	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
