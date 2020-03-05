@@ -7,6 +7,8 @@ weaponsRU[] =
 	{Loot_WEAPON,		2,		Tokarew_TT33_DZ},
 	{Loot_WEAPON,		2,		Makarov_DZ},
 	{Loot_WEAPON,		1,		Makarov_SD_DZ},
+	{Loot_WEAPON,		2,		APS_DZ},
+	{Loot_WEAPON,		1,		APS_SD_DZ},	
 	{Loot_WEAPON,		2,		P99_Silver_DZ},
 	{Loot_WEAPON,		1,		P99_Silver_SD_DZ},			
 	

@@ -74,6 +74,8 @@ AmmoRU[] =
 	{Loot_MAGAZINE,		8,		8Rnd_762x25_TT33},
 	{Loot_MAGAZINE,		8,		8Rnd_9x18_Makarov},
 	{Loot_MAGAZINE,		8,		8Rnd_9x18_MakarovSD},
+	{Loot_MAGAZINE,		8,		20Rnd_9x18_APS},
+	{Loot_MAGAZINE,		8,		20Rnd_9x18_APSSD},	
 	
 	// Submachine guns
 	{Loot_MAGAZINE,		6,		64Rnd_9x19_Bizon},

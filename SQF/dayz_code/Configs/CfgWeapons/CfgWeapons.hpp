@@ -227,6 +227,7 @@ class CfgWeapons
 	#include "Pistols\Makarov.hpp"
 	#include "Pistols\TT33.hpp"
 	#include "Pistols\RugerMK2.hpp"
+	#include "Pistols\APS.hpp"
 	
 	class UZI_EP1;
 	class UZI_SD_EP1;

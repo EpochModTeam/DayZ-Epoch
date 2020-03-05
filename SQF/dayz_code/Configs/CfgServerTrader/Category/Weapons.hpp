@@ -42,9 +42,11 @@ class Category_13 {
 	class USP_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class USP_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class PPK_DZ {type = "trade_weapons";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};	
-	class Tokarew_TT33_DZ {type = "trade_weapons";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class Tokarew_TT33_DZ {type = "trade_weapons";buy[] = {3,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class Makarov_DZ {type = "trade_weapons";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class Makarov_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {21,"ItemSilverBar10oz"};};	
+	class APS_DZ {type = "trade_weapons";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
+	class APS_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {21,"ItemSilverBar10oz"};};	
 	class P38_DZ {type = "trade_weapons";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};	
 	class BrowningHP_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};	
 	class MK22_DZ {type = "trade_weapons";buy[] = {6,"ItemSilverBar10oz"};sell[] = {3,"ItemSilverBar10oz"};};

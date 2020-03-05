@@ -12693,7 +12693,23 @@
 		<!-- SVU -->
 		<Key ID="STR_DZ_WPN_SVU_NAME">
 			<English>SVU</English>
+		</Key>
+
+		<!-- APS -->
+		<Key ID="STR_DZ_WPN_APS_NAME">
+			<English>APS</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_APSSD_NAME">
+			<English>APS SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_APSSD_DESC">
+			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x18mm SD</English>
+			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x18mm SD</German>
 		</Key>		
+		<Key ID="STR_DZ_WPN_APS_DESC">
+			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x18mm</English>
+			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x18mm</German>
+		</Key>			
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -13810,6 +13826,36 @@
 			<German>Kaliber: 7.62x51mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: HK417 SD</German>
 			<Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: HK417 SD</Czech>
 			<Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: HK417 SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_20RND_APS_NAME">
+			<English>20Rnd. APS mag.</English>
+			<Russian>20п. APS маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_20RND_APSSD_NAME">
+			<English>20Rnd. APS SD mag.</English>
+			<Russian>20п. APS SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_APS_DESC">
+			<English>Caliber: 9x18mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: APS</English>
+			<French>Calibre : 9x18mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: APS</French>
+			<Spanish>Calibre: 9x18mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: APS</Spanish>
+			<Italian>Calibro: 9x18mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: APS</Italian>
+			<Polish>Kaliber: 9x18mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: APS</Polish>
+			<Russian>Патрон: 9x18 мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: APS</Russian>
+			<German>Kaliber: 9x18mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: APS</German>
+			<Czech>Kalibr: 9x18mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: APS</Czech>
+			<Hungarian>Kaliber: 9x18mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: APS</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_APSSD_DESC">
+			<English>Caliber: 9x18mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: APS SD</English>
+			<French>Calibre : 9x18mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: APS SD</French>
+			<Spanish>Calibre: 9x18mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: APS SD</Spanish>
+			<Italian>Calibro: 9x18mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: APS SD</Italian>
+			<Polish>Kaliber: 9x18mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: APS SD</Polish>
+			<Russian>Патрон: 9x18 мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: APS SD</Russian>
+			<German>Kaliber: 9x18mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: APS SD</German>
+			<Czech>Kalibr: 9x18mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: APS SD</Czech>
+			<Hungarian>Kaliber: 9x18mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: APS SD</Hungarian>
 		</Key>		
 	  
 		<!-- **** ATTACHMENTS **** -->

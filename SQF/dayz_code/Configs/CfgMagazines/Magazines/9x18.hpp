@@ -17,3 +17,17 @@ class 8Rnd_9x18_MakarovSD : 8Rnd_9x18_Makarov
 		COMBINE_MAG
 	};
 };
+
+class 20Rnd_9x18_APS : 8Rnd_9x18_Makarov
+{
+	displayName = $STR_DZ_MAG_20RND_APS_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_APS_DESC;
+	count = 20;
+};
+
+class 20Rnd_9x18_APSSD : 8Rnd_9x18_MakarovSD
+{
+	displayName = $STR_DZ_MAG_20RND_APSSD_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_APSSD_DESC;
+	count = 20;
+};
