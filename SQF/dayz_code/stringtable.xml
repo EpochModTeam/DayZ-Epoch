@@ -11209,6 +11209,14 @@
 			<English>Bizon SD</English>
 			<Russian>Бизон ПБС</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_BIZON_KOBRA_NAME">
+			<English>Bizon Kobra</English>
+			<Russian>Бизон Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_BIZON_KOBRA_SD_NAME">
+			<English>Bizon Kobra SD</English>
+			<Russian>Бизон Кобра ПБС</Russian>
+		</Key>		
 		
 		<!-- M9 -->
 		<Key ID="STR_DZ_WPN_M9_NAME">
