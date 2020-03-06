@@ -43,6 +43,7 @@ weaponsRU[] =
 	{Loot_WEAPON,		6,		RK95_DZ},
 	{Loot_WEAPON,		6,		Groza9_DZ},
 	{Loot_WEAPON,		6,		Groza1_DZ},
+	{Loot_WEAPON,		6,		VAL_DZ},
 	
 	// Machine Guns
 	{Loot_WEAPON,		3,		RPK74_DZ},

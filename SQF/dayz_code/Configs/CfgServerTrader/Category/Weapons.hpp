@@ -397,6 +397,9 @@ class Category_16 {
 	class Groza9_Sniper_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {15,"ItemGoldBar"};};
 	class Groza9_GL_Sniper_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {2,"ItemGoldBar10oz"};};
 	class Groza9_Sniper_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {2,"ItemGoldBar10oz"};};
+	class VAL_DZ {type = "trade_weapons";buy[] = {3,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class VAL_Kobra_DZ {type = "trade_weapons";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class VAL_POS1_DZ {type = "trade_weapons";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class AKS74U_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class AKS74U_Kobra_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class AKS74U_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
@@ -421,9 +424,9 @@ class Category_16 {
 	class AK107_GL_PSO1_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};	
 	class AN94_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class AN94_GL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
-	class FNFAL_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
-	class FNFAL_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
-	class FNFAL_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class FNFAL_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class FNFAL_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
+	class FNFAL_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
 	class M14_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class M14_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {11,"ItemGoldBar"};};
 	class M14_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {12,"ItemGoldBar"};};

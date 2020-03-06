@@ -3,6 +3,7 @@ class 10Rnd_9x39_SP5_VSS: CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\VSS_vintorez_mag.p3d";
 	displayName = $STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME;
+	descriptionShort = $STR_DZ_MAG_10RND_939_VSSVAL_DESC;
 	
 	cartridgeName = "9x39";
 	
@@ -16,6 +17,7 @@ class 20Rnd_9x39_SP5_VSS: CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\VSS_vintorez_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_939_VSSVAL_DESC;
 	
 	cartridgeName = "9x39";
 	

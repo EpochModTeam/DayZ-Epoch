@@ -26,8 +26,7 @@ class CfgWeapons
 	#include "Rifles\AS50.hpp"
 	#include "Rifles\M107.hpp"
 	#include "Rifles\KSVK.hpp"
-	#include "Rifles\M4SPR.hpp"
-	#include "Rifles\VSSVintorez.hpp"
+	#include "Rifles\M4SPR.hpp"	
 	#include "Rifles\CZ750.hpp"
 	
 	//Ak107
@@ -52,6 +51,10 @@ class CfgWeapons
 	#include "Rifles\Groza.hpp"
 	
 	#include "Rifles\RPK.hpp"
+	
+	//VSS
+	#include "Rifles\VSSVintorez.hpp"
+	#include "Rifles\VAL.hpp"
 	
 	class DMR : Rifle
 	{

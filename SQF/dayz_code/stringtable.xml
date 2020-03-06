@@ -12792,6 +12792,21 @@
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm SD</German>
 		</Key>		
 		
+		<!-- AS VAL -->
+		<Key ID="STR_DZ_WPN_ASVAL_NAME">
+			<English>AS VAL</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ASVAL_Kobra_NAME">
+			<English>AS VAL Kobra</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ASVAL_PSO1_NAME">
+			<English>AS VAL PSO-1</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ASVAL_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 9x39mm</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
+		</Key>			
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
@@ -13668,13 +13683,35 @@
 			<Russian>5п. L115 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME">
-			<English>20Rnd. VSS mag.</English>
-			<Russian>20п. VSS маг.</Russian>
+			<English>20Rnd. VSS/VAL mag.</English>
+			<Russian>20п. VSS/VAL маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME">
-			<English>10Rnd. VSS mag.</English>
-			<Russian>10п. VSS маг.</Russian>
+			<English>10Rnd. VSS/VAL mag.</English>
+			<Russian>10п. VSS/VAL маг.</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20RND_939_VSSVAL_DESC">
+			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: VSS Vintorez, AS VAL</English>
+			<French>Calibre: 9x39mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: VSS Vintorez, AS VAL</French>
+			<Spanish>Calibre: 9x39mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: VSS Vintorez, AS VAL</Spanish>
+			<Italian>Calibro: 9x39mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: VSS Vintorez, AS VAL</Italian>
+			<Polish>Kaliber: 9x39mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: VSS Vintorez, AS VAL</Polish>
+			<Russian>Патрон: 9x39mm &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: VSS Vintorez, AS VAL</Russian>
+			<German>Kaliber: 9x39mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: VSS Vintorez, AS VAL</German>
+			<Czech>Kalibr: 9x39mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: VSS Vintorez, AS VAL</Czech>
+			<Hungarian>Kaliber: 9x39mm &lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS VAL</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10RND_939_VSSVAL_DESC">
+			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: VSS Vintorez, AS VAL</English>
+			<French>Calibre: 9x39mm&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: VSS Vintorez, AS VAL</French>
+			<Spanish>Calibre: 9x39mm&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: VSS Vintorez, AS VAL</Spanish>
+			<Italian>Calibro: 9x39mm&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: VSS Vintorez, AS VAL</Italian>
+			<Polish>Kaliber: 9x39mm&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: VSS Vintorez, AS VAL</Polish>
+			<Russian>Патрон: 9x39mm &lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: VSS Vintorez, AS VAL</Russian>
+			<German>Kaliber: 9x39mm&lt;br/&gt;Patronen: 10&lt;br/&gt;Eingesetzt in: VSS Vintorez, AS VAL</German>
+			<Czech>Kalibr: 9x39mm&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: VSS Vintorez, AS VAL</Czech>
+			<Hungarian>Kaliber: 9x39mm &lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS VAL</Hungarian>
+		</Key>	
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME">
 			<English>20Rnd. 12 Cal. Slug.</English>
 			<German>20 Schuss Kal. 12 Flintenlaufgeschoss</German>
