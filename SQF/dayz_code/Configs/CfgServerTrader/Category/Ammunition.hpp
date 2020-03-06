@@ -79,6 +79,10 @@ class Category_22 {
 	class 30Rnd_762x39_SA58 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class 30Rnd_762x39_RK95 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class 30Rnd_762x39_RK95SD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class 30Rnd_762x39_Groza1 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class 30Rnd_762x39_Groza1SD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class 20Rnd_9x39_Groza9 {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class 20Rnd_9x39_Groza9SD {type = "trade_items";buy[] = {3,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class 20Rnd_762x51_FNFAL {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
 	class ACR_30Rnd_680x43 {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
 	class ACR_30Rnd_680x43_SD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};

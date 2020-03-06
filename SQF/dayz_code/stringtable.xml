@@ -12736,7 +12736,61 @@
 		<Key ID="STR_DZ_WPN_RK95_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm SD</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm SD</German>
-		</Key>			
+		</Key>	
+
+		<!-- Groza9 -->
+		<Key ID="STR_DZ_WPN_Groza9_NAME">
+			<English>Groza-9</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_SD_NAME">
+			<English>Groza-9 SD</English>
+			<Russian>Groza-9 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_GL_NAME">
+			<English>Groza-9 GP-25</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_SNIPER_NAME">
+			<English>Groza-9 Sniper</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_GL_SNIPER_NAME">
+			<English>Groza-9 GP-25 Sniper</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_SNIPER_SD_NAME">
+			<English>Groza-9 Sniper SD</English>
+			<Russian>Groza-9 Sniper ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 9x39mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_Groza9SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 9x39mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm SD</German>
+		</Key>		
+		
+		<!-- Groza1 -->
+		<Key ID="STR_DZ_WPN_Groza1_NAME">
+			<English>Groza-1</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza1_SD_NAME">
+			<English>Groza-1 SD</English>
+			<Russian>Groza-1 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza1_SNIPER_NAME">
+			<English>Groza-1 Sniper</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza1_SNIPER_SD_NAME">
+			<English>Groza-1 Sniper SD</English>
+			<Russian>Groza-1 Sniper ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza1_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_Groza1SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm SD</German>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -13936,6 +13990,66 @@
 			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK</Czech>
 			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK</Hungarian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20RND_Groza9_NAME">
+			<English>20Rnd. Groza-9 mag.</English>
+			<Russian>20п. Groza-9 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_20RND_Groza9SD_NAME">
+			<English>20Rnd. Groza-9 SD mag.</English>
+			<Russian>20п. Groza-9 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_Groza9_DESC">
+			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Groza-9</English>
+			<French>Calibre: 9x39mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: Groza-9</French>
+			<Spanish>Calibre: 9x39mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: Groza-9</Spanish>
+			<Italian>Calibro: 9x39mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: Groza-9</Italian>
+			<Polish>Kaliber: 9x39mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: Groza-9</Polish>
+			<Russian>Патрон: 9x39мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: Groza-9</Russian>
+			<German>Kaliber: 9x39mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: Groza-9</German>
+			<Czech>Kalibr: 9x39mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Groza-9</Czech>
+			<Hungarian>Kaliber: 9x39mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Groza-9</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_Groza9SD_DESC">
+			<English>Caliber: 9x39mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Groza-9 SD</English>
+			<French>Calibre: 9x39mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: Groza-9 SD</French>
+			<Spanish>Calibre: 9x39mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: Groza-9 SD</Spanish>
+			<Italian>Calibro: 9x39mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: Groza-9 SD</Italian>
+			<Polish>Kaliber: 9x39mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: Groza-9 SD</Polish>
+			<Russian>Патрон: 9x39мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: Groza-9 SD</Russian>
+			<German>Kaliber: 9x39mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: Groza-9 SD</German>
+			<Czech>Kalibr: 9x39mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Groza-9 SD</Czech>
+			<Hungarian>Kaliber: 9x39mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Groza-9 SD</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_Groza1_NAME">
+			<English>30Rnd. Groza-1 mag.</English>
+			<Russian>30п. Groza-1 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_30RND_Groza1SD_NAME">
+			<English>30Rnd. Groza-1 SD mag.</English>
+			<Russian>30п. Groza-1 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_Groza1_DESC">
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: Groza-1</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: Groza-1</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: Groza-1</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: Groza-1</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: Groza-1</Polish>
+			<Russian>Патрон: 7.62x39мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Groza-1</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: Groza-1</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: Groza-1</Czech>
+			<Hungarian>Kaliber: 7.62x39mm&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Groza-1</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_Groza1SD_DESC">
+			<English>Caliber: 7.62x39mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: Groza-1 SD</English>
+			<French>Calibre: 7.62x39mm SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: Groza-1 SD</French>
+			<Spanish>Calibre: 7.62x39mm SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: Groza-1 SD</Spanish>
+			<Italian>Calibro: 7.62x39mm SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: Groza-1 SD</Italian>
+			<Polish>Kaliber: 7.62x39mm SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: Groza-1 SD</Polish>
+			<Russian>Патрон: 7.62x39мм SD&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Groza-1 SD</Russian>
+			<German>Kaliber: 7.62x39mm SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: Groza-1 SD</German>
+			<Czech>Kalibr: 7.62x39mm SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: Groza-1 SD</Czech>
+			<Hungarian>Kaliber: 7.62x39mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Groza-1 SD</Hungarian>
+		</Key>		
 		
 		<!-- **** ATTACHMENTS **** -->
 		
@@ -14054,7 +14168,19 @@
 			<English>7.62mm Sound suppressor</English>
 			<Russian>ПБС для калибра 7.62мм</Russian>
 			<German>7.62mm Schalldämpfer</German>
-		</Key>		
+		</Key>	
+		
+		<!-- 9x39mm Suppressor -->
+		<Key ID="STR_DZ_ATT_SUP939_NAME">
+			<English>[A] 9x39mm Suppressor</English>
+			<Russian>[М] 9x39мм глушитель</Russian>
+			<German>[E] 9x39mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP762_DESC">
+			<English>9x39mm Sound suppressor</English>
+			<Russian>ПБС для калибра 9x39мм</Russian>
+			<German>9x39mm Schalldämpfer</German>
+		</Key>			
 		
 		<!-- CCO -->
 		<Key ID="STR_DZ_ATT_CCO_NAME">

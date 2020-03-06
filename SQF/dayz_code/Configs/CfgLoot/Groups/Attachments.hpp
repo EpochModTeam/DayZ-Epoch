@@ -18,6 +18,8 @@ AttachmentsRU[] =
 	{Loot_MAGAZINE,		1,		Attachment_Sup9},
 	{Loot_MAGAZINE,		1,		Attachment_Sup10},		
 	{Loot_MAGAZINE,		1,		Attachment_Sup545},
+	{Loot_MAGAZINE,		1,		Attachment_Sup939},
+	{Loot_MAGAZINE,		1,		Attachment_Sup762},
 	{Loot_MAGAZINE,		1,		Attachment_GP25},
 	{Loot_MAGAZINE,		1,		Attachment_Ghillie}
 };
@@ -48,7 +50,8 @@ AttachmentsEU[] =
 	{Loot_MAGAZINE,		1,		Attachment_Sup9},
 	{Loot_MAGAZINE,		1,		Attachment_Sup10},
 	{Loot_MAGAZINE,		1,		Attachment_Sup45},	
-	{Loot_MAGAZINE,		1,		Attachment_Sup57},		
+	{Loot_MAGAZINE,		1,		Attachment_Sup57},
+	{Loot_MAGAZINE,		1,		Attachment_Sup762},	
 	{Loot_MAGAZINE,		1,		Attachment_MFL},
 	{Loot_MAGAZINE,		1,		Attachment_MFL_Pist} // G17 only
 };

@@ -24,6 +24,7 @@
 #include "Sup556.hpp"
 #include "Sup545.hpp"
 #include "Sup762.hpp"
+#include "Sup939.hpp"
 #include "SupMakarov.hpp"
 #include "SupBizon.hpp"
 

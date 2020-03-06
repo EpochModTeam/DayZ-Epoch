@@ -21,6 +21,10 @@ weaponsRU[] =
 	{Loot_WEAPON,		1,		SVD_Gold_DZ},
 	{Loot_WEAPON,		4,		SVD_DZ},
 	{Loot_WEAPON,		4,		VSS_vintorez_DZE},
+	{Loot_WEAPON,		4,		Groza9_Sniper_DZ},
+	{Loot_WEAPON,		1,		Groza9_Sniper_SD_DZ},
+	{Loot_WEAPON,		4,		Groza1_Sniper_DZ},
+	{Loot_WEAPON,		1,		Groza1_Sniper_SD_DZ},	
 	{Loot_WEAPON,		1,		KSVK_DZE}, // High value weapon, low spawn chance.
 	{Loot_WEAPON,		1,		Anzio_20_DZ}, // High value weapon, low spawn chance.
 	
@@ -37,6 +41,8 @@ weaponsRU[] =
 	{Loot_WEAPON,		6,		AK74_DZ},
 	{Loot_WEAPON,		6,		AN94_DZ},
 	{Loot_WEAPON,		6,		RK95_DZ},
+	{Loot_WEAPON,		6,		Groza9_DZ},
+	{Loot_WEAPON,		6,		Groza1_DZ},
 	
 	// Machine Guns
 	{Loot_WEAPON,		3,		RPK74_DZ},

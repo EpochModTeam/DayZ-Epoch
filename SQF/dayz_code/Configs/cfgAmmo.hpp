@@ -624,6 +624,36 @@ class CfgAmmo
 		caliber = 0.83;
 	};
 	
+	//Groza-9
+	class B_9x39_OC14_Ball: BulletBase
+	{
+		airfriction = -0.0013522;
+		audibleFire = 26;		
+		visiblefire = 26;
+		caliber = 0.33;
+		cartridge = "FxCartridge_762";
+		cost = 5;
+		hit = 11;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 450;
+	};
+	
+	//Groza-9 SD
+	class B_9x39_OC14_SD: BulletBase
+	{
+		airfriction = -0.0013522;
+		visibleFire = 0.08;
+		audibleFire = 0.08;		
+		caliber = 0.33; //33
+		cartridge = "FxCartridge_762";
+		cost = 5;
+		hit = 11;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 300;
+	};	
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

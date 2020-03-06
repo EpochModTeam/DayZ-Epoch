@@ -88,3 +88,13 @@ class 30Rnd_762x39_RK95SD : 30Rnd_762x39_RK95
 	
 	cartridgeName = "762x39_SD";
 };
+
+class 30Rnd_762x39_Groza1: 30Rnd_762x39_RK95 {
+	displayName = $STR_DZ_MAG_30RND_Groza1_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_Groza1_DESC;	
+};
+
+class 30Rnd_762x39_Groza1SD: 30Rnd_762x39_RK95SD {
+	displayName = $STR_DZ_MAG_30RND_Groza1SD_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_Groza1SD_DESC;	
+};
