@@ -1,6 +1,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
-private ["_array","_vehicle","_part","_hitpoint","_type","_nameType","_namePart","_damage","_selection","_dis","_sfx","_hitpoints","_allFixed","_finished"];
+
+private ["_id","_hits","_array","_vehicle","_part","_hitpoint","_type","_nameType","_namePart","_damage","_selection","_dis","_sfx","_finished"];
 
 _id = _this select 2;
 _array = _this select 3;
@@ -8,7 +9,6 @@ _vehicle = _array select 0;
 _part = _array select 1;
 _hitpoint = _array select 2;
 _type = typeOf _vehicle;
-
 
 {dayz_myCursorTarget removeAction _x} forEach s_player_repairActions;s_player_repairActions = [];
 dayz_myCursorTarget = objNull;
@@ -19,14 +19,14 @@ dayz_myCursorTarget = objNull;
 _nameType = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
-if ("ItemToolbox" in items player && (_part in magazines player)) then {
+if ("ItemToolbox" in items player && {_part in magazines player}) then {
 	_dis=20;
 	_sfx = "repair";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
-	
+
 	_finished = ["Medic",1] call fn_loopAction;
-	
+
 	// Check again to make sure player did not drop item
 	if (!_finished or !(_part in magazines player)) exitWith {};
 	player removeMagazine _part;
