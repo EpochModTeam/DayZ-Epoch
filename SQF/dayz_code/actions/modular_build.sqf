@@ -1,7 +1,7 @@
-private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objectHelperDir","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_finished","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_ghost2","_VectorWorkAround","_objectHelper","_location1","_object","_object2","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild"];
-
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_abort","_reason","_distance","_isNear","_lockable","_isAllowedUnderGround","_offset","_classname","_zheightdirection","_zheightchanged","_rotate","_objectHelperPos","_objHDiff","_position","_isOk","_dir","_vector","_cancel","_location2","_buildOffset","_location","_limit","_finished","_proceed","_counter","_dis","_sfx","_combination_1_Display","_combination_1","_combination_2","_combination_3","_combination","_combinationDisplay","_combination_4","_num_removed","_tmpbuilt","_vUp","_classnametmp","_text","_ghost","_objectHelper","_location1","_object","_helperColor","_canDo","_pos","_onLadder","_vehicle","_inVehicle","_needNear","_canBuild","_friendsArr"];
 
 _pos = [player] call FNC_GetPos;
 
@@ -48,36 +48,33 @@ _reason = "";
 _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActions" >> "Build" >> "neednearby");
 
 {
-	switch(_x) do{
-		case "fire":
-		{
+	call {
+		if (_x == "fire") exitwith {
 			_distance = 3;
 			_isNear = {inflamed _x} count (_pos nearObjects _distance);
-			if(_isNear == 0) then {
+			if (_isNear == 0) then {
 				_abort = true;
 				_reason = localize "STR_EPOCH_FIRE";
 			};
 		};
-		case "workshop":
-		{
+		if (_x == "workshop") exitwith {
 			_distance = 3;
 			_isNear = count (nearestObjects [_pos, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
-			if(_isNear == 0) then {
+			if (_isNear == 0) then {
 				_abort = true;
 				_reason = localize "STR_EPOCH_WORKBENCH_NEARBY";
 			};
 		};
-		case "fueltank":
-		{
+		if (_x == "fueltank") exitwith {
 			_distance = 30;
 			_isNear = count (nearestObjects [_pos, dayz_fuelsources, _distance]);
-			if(_isNear == 0) then {
+			if (_isNear == 0) then {
 				_abort = true;
 				_reason = localize "STR_EPOCH_VEHUP_TNK";
 			};
 		};
 	};
-} forEach _needNear;
+} count _needNear;
 
 if (_abort) exitWith {
 	format[localize "str_epoch_player_135",_reason,_distance] call dayz_rollingMessages;
@@ -96,41 +93,28 @@ if (_canBuild select 0) then {
 	_ghost = getText (configFile >> "CfgVehicles" >> _classname >> "ghostpreview");
 
 	_lockable = 0;
-	if(isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then {
+	if (isNumber (configFile >> "CfgVehicles" >> _classname >> "lockable")) then {
 		_lockable = getNumber(configFile >> "CfgVehicles" >> _classname >> "lockable");
 	};
 
 	_isAllowedUnderGround = 1;
-	if(isNumber (configFile >> "CfgVehicles" >> _classname >> "nounderground")) then {
+	if (isNumber (configFile >> "CfgVehicles" >> _classname >> "nounderground")) then {
 		_isAllowedUnderGround = getNumber(configFile >> "CfgVehicles" >> _classname >> "nounderground");
 	};
 
-	_offset = 	getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
+	_offset = getArray (configFile >> "CfgVehicles" >> _classname >> "offset");
 	_objectHelper = objNull;
 	_isOk = true;
 	_location1 = [player] call FNC_GetPos;
 	_dir = getDir player;
-	_ghost2 = "";
-	_VectorWorkAround = false;
-
-	if (_classname == "CinderWall_DZ") then {
-		_ghost2 = _ghost;
-		_ghost = "CinderWallHalf_Preview_DZ";
-		_VectorWorkAround = true;
-	};
 
 	if (_ghost != "") then {
 		_classname = _ghost;
 	};
 
 	_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
-	_object2 = ObjNull;
-	if (_VectorWorkAround) then {
-		_object2 = _ghost2 createVehicleLocal [0,0,0];
-		hideObject _object;
-	};
 
-	if((count _offset) <= 0) then {
+	if ((count _offset) <= 0) then {
 		_offset = [0,(abs(((boundingBox _object)select 0) select 1)),0];
 	};
 
@@ -138,14 +122,9 @@ if (_canBuild select 0) then {
 	_helperColor = "#(argb,8,8,3)color(0,0,0,0,ca)";
 	_objectHelper setobjecttexture [0,_helperColor];
 	_objectHelper attachTo [player,_offset];
-	if (_VectorWorkAround) then {
-		_object attachTo [_objectHelper,[0,0,-1.65]];
-		_object2 attachTo [_object,[0,0,1.65]];
-	} else {
-		_object attachTo [_objectHelper,[0,0,0]];
-	};
+	_object attachTo [_objectHelper,[0,0,0]];
 
-	if (isClass (configFile >> "SnapBuilding" >> _classname)) then {	
+	if (isClass (configFile >> "SnapBuilding" >> _classname)) then {
 		["","","",["Init",_object,_classname,_objectHelper]] spawn snap_build;
 	};
 
@@ -153,12 +132,12 @@ if (_canBuild select 0) then {
 		["","","",["Init","Init",0]] spawn build_vectors;
 	};
 
-	_objHDiff = 0;	
+	_objHDiff = 0;
 	_cancel = false;
 	_reason = "";
-	
+
 	helperDetach = false;
-	_canDo = (!r_drag_sqf and !r_player_unconscious);
+	_canDo = (!r_drag_sqf && {!r_player_unconscious});
 	_position = [_objectHelper] call FNC_GetPos;
 
 	while {_isOk} do {
@@ -200,7 +179,7 @@ if (_canBuild select 0) then {
 		if (DZE_4) then {
 			_rotate = true;
 			DZE_4 = false;
-			if(DZE_dirWithDegrees) then{
+			if (DZE_dirWithDegrees) then{
 				DZE_memDir = DZE_memDir - DZE_curDegree;
 			}else{
 				DZE_memDir = DZE_memDir - 45;
@@ -209,27 +188,27 @@ if (_canBuild select 0) then {
 		if (DZE_6) then {
 			_rotate = true;
 			DZE_6 = false;
-			if(DZE_dirWithDegrees) then{
+			if (DZE_dirWithDegrees) then{
 				DZE_memDir = DZE_memDir + DZE_curDegree;
 			}else{
 				DZE_memDir = DZE_memDir + 45;
 			};
 		};
-		
-		if(DZE_updateVec) then{
+
+		if (DZE_updateVec) then{
 			[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 			DZE_updateVec = false;
 		};
-		
+
 		if (DZE_F and _canDo) then {
 			if (helperDetach) then {
 				_objectHelper attachTo [player];
 				DZE_memDir = DZE_memDir-(getDir player);
 				helperDetach = false;
 				[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
-			} else {		
+			} else {
 				_objectHelperPos = getPosATL _objectHelper;
-				detach _objectHelper;			
+				detach _objectHelper;
 				DZE_memDir = getDir _objectHelper;
 				[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 				_objectHelper setPosATL _objectHelperPos;
@@ -239,46 +218,45 @@ if (_canBuild select 0) then {
 			DZE_F = false;
 		};
 
-		if(_rotate) then {
+		if (_rotate) then {
 			[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 		};
 
-		if(_zheightchanged) then {
+		if (_zheightchanged) then {
 			if (!helperDetach) then {
-			detach _objectHelper;
-			_objectHelperDir = getDir _objectHelper;
+				detach _objectHelper;
 			};
 
 			_position = [_objectHelper] call FNC_GetPos;
 
-			if(_zheightdirection == "up") then {
+			if (_zheightdirection == "up") then {
 				_position set [2,((_position select 2)+0.1)];
 				_objHDiff = _objHDiff + 0.1;
 			};
-			if(_zheightdirection == "down") then {
+			if (_zheightdirection == "down") then {
 				_position set [2,((_position select 2)-0.1)];
 				_objHDiff = _objHDiff - 0.1;
 			};
 
-			if(_zheightdirection == "up_alt") then {
+			if (_zheightdirection == "up_alt") then {
 				_position set [2,((_position select 2)+1)];
 				_objHDiff = _objHDiff + 1;
 			};
-			if(_zheightdirection == "down_alt") then {
+			if (_zheightdirection == "down_alt") then {
 				_position set [2,((_position select 2)-1)];
 				_objHDiff = _objHDiff - 1;
 			};
 
-			if(_zheightdirection == "up_ctrl") then {
+			if (_zheightdirection == "up_ctrl") then {
 				_position set [2,((_position select 2)+0.01)];
 				_objHDiff = _objHDiff + 0.01;
 			};
-			if(_zheightdirection == "down_ctrl") then {
+			if (_zheightdirection == "down_ctrl") then {
 				_position set [2,((_position select 2)-0.01)];
 				_objHDiff = _objHDiff - 0.01;
 			};
 
-			if((_isAllowedUnderGround == 0) && ((_position select 2) < 0)) then {
+			if ((_isAllowedUnderGround == 0) && {(_position select 2) < 0}) then {
 				_position set [2,0];
 			};
 
@@ -289,7 +267,7 @@ if (_canBuild select 0) then {
 			};
 
 			if (!helperDetach) then {
-			_objectHelper attachTo [player];
+				_objectHelper attachTo [player];
 			};
 			[_objectHelper,[DZE_memForBack,DZE_memLeftRight,DZE_memDir]] call fnc_SetPitchBankYaw;
 		};
@@ -298,74 +276,54 @@ if (_canBuild select 0) then {
 
 		_location2 = [player] call FNC_GetPos;
 		_objectHelperPos = [_objectHelper] call FNC_GetPos;
-		
-		if(DZE_5) exitWith {
+
+		if (DZE_5) exitWith {
 			_isOk = false;
 			_position = [_object] call FNC_GetPos;
 			detach _object;
 			_dir = getDir _object;
-			_vector = [(vectorDir _object),(vectorUp _object)];	
+			_vector = [(vectorDir _object),(vectorUp _object)];
 			deleteVehicle _object;
-			if (_VectorWorkAround) then {
-				detach _object2;
-				deleteVehicle _object2;
-			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
 
-		if(_location1 distance _location2 > DZE_buildMaxMoveDistance) exitWith {
+		if (_location1 distance _location2 > DZE_buildMaxMoveDistance) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = format[localize "STR_EPOCH_BUILD_FAIL_MOVED",DZE_buildMaxMoveDistance];
 			detach _object;
 			deleteVehicle _object;
-			if (_VectorWorkAround) then {
-				detach _object2;
-				deleteVehicle _object2;
-			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
-		
-		if(_location1 distance _objectHelperPos > DZE_buildMaxMoveDistance) exitWith {
+
+		if (_location1 distance _objectHelperPos > DZE_buildMaxMoveDistance) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = format[localize "STR_EPOCH_BUILD_FAIL_TOO_FAR",DZE_buildMaxMoveDistance];
 			detach _object;
 			deleteVehicle _object;
-			if (_VectorWorkAround) then {
-				detach _object2;
-				deleteVehicle _object2;
-			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
 
-		if(abs(_objHDiff) > DZE_buildMaxHeightDistance) exitWith {
+		if (abs(_objHDiff) > DZE_buildMaxHeightDistance) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = format[localize "STR_EPOCH_BUILD_FAIL_HEIGHT",DZE_buildMaxHeightDistance];
 			detach _object;
 			deleteVehicle _object;
-			if (_VectorWorkAround) then {
-				detach _object2;
-				deleteVehicle _object2;
-			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
-		
+
 		if (DZE_BuildHeightLimit > 0 && {_position select 2 > DZE_BuildHeightLimit}) exitWith {
 			_isOk = false;
 			_cancel = true;
 			_reason = format[localize "STR_EPOCH_PLAYER_168",DZE_BuildHeightLimit];
 			detach _object;
 			deleteVehicle _object;
-			if (_VectorWorkAround) then {
-				detach _object2;
-				deleteVehicle _object2;
-			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
@@ -376,10 +334,6 @@ if (_canBuild select 0) then {
 			_reason = localize "str_epoch_player_43";
 			detach _object;
 			deleteVehicle _object;
-			if (_VectorWorkAround) then {
-				detach _object2;
-				deleteVehicle _object2;
-			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
@@ -390,15 +344,11 @@ if (_canBuild select 0) then {
 			_reason = localize "STR_EPOCH_PLAYER_46";
 			detach _object;
 			deleteVehicle _object;
-			if (_VectorWorkAround) then {
-				detach _object2;
-				deleteVehicle _object2;
-			};
 			detach _objectHelper;
 			deleteVehicle _objectHelper;
 		};
 	};
-	
+
 	_isOk = true;
 	_proceed = false;
 	_counter = 0;
@@ -407,33 +357,33 @@ if (_canBuild select 0) then {
 	if (!DZE_BuildOnRoads) then {
 		if (isOnRoad _position) then { _cancel = true; _reason = localize "STR_EPOCH_BUILD_FAIL_ROAD"; };
 	};
-	if(!canbuild) then { _cancel = true; _reason = format[localize "STR_EPOCH_PLAYER_136",localize "STR_EPOCH_TRADER"]; };
+	if (!canbuild) then { _cancel = true; _reason = format[localize "STR_EPOCH_PLAYER_136",localize "STR_EPOCH_TRADER"]; };
 
-	if(!_cancel) then {
+	if (!_cancel) then {
 		_classname = _classnametmp;
 		_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
 		_tmpbuilt setdir _dir;
 		_tmpbuilt setVariable["memDir",_dir,true];
 		_location = _position;
 
-		if((_isAllowedUnderGround == 0) && ((_location select 2) < 0)) then {
+		if ((_isAllowedUnderGround == 0) && {(_location select 2) < 0}) then {
 			_location set [2,0];
 		};
-		
+
 		_tmpbuilt setVectorDirAndUp _vector;
-		
+
 		_buildOffset = [0,0,0];
 		_vUp = _vector select 1;
 		switch (_classname) do {
 			case "MetalFloor_DZ": { _buildOffset = [(_vUp select 0) * .148, (_vUp select 1) * .148,0]; };
 		};
-		
+
 		_location = [
 			(_location select 0) - (_buildOffset select 0),
 			(_location select 1) - (_buildOffset select 1),
 			(_location select 2) - (_buildOffset select 2)
 		];
-	
+
 		if (surfaceIsWater _location) then {
 			_tmpbuilt setPosASL _location;
 			_location = ASLtoATL _location;
@@ -461,19 +411,19 @@ if (_canBuild select 0) then {
 			_sfx = "repair";
 			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 			[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
-			
+
 			_finished = ["Medic",1,{player getVariable["combattimeout",0] >= diag_tickTime or DZE_cancelBuilding}] call fn_loopAction;
 
-			if(!_finished) exitWith {
+			if (!_finished) exitWith {
 				_isOk = false;
 				_proceed = false;
 			};
 
-			if(_finished) then {
+			if (_finished) then {
 				_counter = _counter + 1;
 			};
 
-			if(_counter == _limit) exitWith {
+			if (_counter == _limit) exitWith {
 				_isOk = false;
 				_proceed = true;
 			};
@@ -482,14 +432,14 @@ if (_canBuild select 0) then {
 		if (_proceed) then {
 
 			_num_removed = ([player,DZE_buildItem] call BIS_fnc_invRemove); //remove item's magazine from inventory
-			if(_num_removed == 1) then {
+			if (_num_removed == 1) then {
 				["Working",0,[20,10,5,0]] call dayz_NutritionSystem;
 				call player_forceSave;
 				[format[localize "str_build_01",_text],1] call dayz_rollingMessages;
 
 				_tmpbuilt setVariable ["OEMPos",_location,true]; //store original location as a variable
 
-				if(_lockable > 1) then { //if item has code lock on it
+				if (_lockable > 1) then { //if item has code lock on it
 
 					_combinationDisplay = ""; //define new display
 
@@ -576,7 +526,7 @@ if (_canBuild select 0) then {
 				};
 				if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
 					_tmpbuilt addEventHandler ["HandleDamage",{false}];
-				}; 
+				};
 			} else { //if magazine was not removed, cancel publish
 				deleteVehicle _tmpbuilt;
 				localize "str_epoch_player_46" call dayz_rollingMessages;

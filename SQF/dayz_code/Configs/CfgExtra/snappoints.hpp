@@ -21,76 +21,76 @@ class SnapBuilding {
 	};
 	class Land_HBarrier5Preview: Barrier{ //fix for broken offsets in ghost
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-0.75,0.1,"Back"},
-		{0,0.75,0.1,"Front"},
-		{-2.85,0,0.1,"Left"},
-		{2.85,0,0.1,"Right"},
-		{0,0,0.9,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-0.75,0.1,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,0.75,0.1,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-2.85,0,0.1,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.85,0,0.1,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0,0,0.9,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class Land_HBarrier5_DZ: Land_HBarrier5Preview {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-0.75,0,"Back"},
-		{0,0.75,0,"Front"},
-		{-2.85,0,0,"Left"},
-		{2.85,0,0,"Right"},
-		{0,0,0.9,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-0.75,0,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,0.75,0,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-2.85,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.85,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0,0,0.9,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	}; 
 	
 	class Land_HBarrier3ePreview: Barrier { //whitelist inheritance
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-0.75,0,"Back"},
-		{0,0.75,0,"Front"},
-		{-1.7,0,0,"Left"},
-		{1.7,0,0,"Right"},
-		{0,0,0.9,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-0.75,0,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,0.75,0,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-1.7,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.7,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0,0,0.9,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class Land_HBarrier3_DZ: Land_HBarrier3ePreview{}; //point inheritance
 
 	class Land_HBarrier1Preview: Barrier {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-0.75,0,"Back"},
-		{0,0.75,0,"Front"},
-		{-0.6,0,0,"Left"},
-		{0.6,0,0,"Right"},
-		{0,0,0.9,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-0.75,0,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,0.75,0,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-0.6,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{0.6,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0,0,0.9,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class Land_HBarrier1_DZ: Land_HBarrier1Preview{};
 		
 	class Fort_RazorWirePreview: Barrier {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-0.95,-0.3,"Back"},
-		{0,0.95,-0.3,"Front"},
-		{-4.1,0,-0.3,"Left"},
-		{4.1,0,-0.3,"Right"},
-		{0,0,1,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-0.95,-0.3,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,0.95,-0.3,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-4.1,0,-0.3,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{4.1,0,-0.3,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0,0,1,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class Fort_RazorWire: Fort_RazorWirePreview {};
 	
 	class Sandbag1_DZ: Barrier {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-1.5,0,0,"Left"},
-		{1.5,0,0,"Right"},
-		{0,0,0.4,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-1.5,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.5,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0,0,0.4,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	
 	class BagFenceRound_DZ: Barrier {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-1.295,0.38,0,"Left"},
-		{1.295,0.38,0,"Right"},
-		{0,0,0.4,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-1.295,0.38,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.295,0.38,0,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0,0,0.4,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	
@@ -130,50 +130,50 @@ class SnapBuilding {
 	
 	class WoodFloorQuarter_Preview_DZ: FloorsWallsStairs { //fix for broken offsets in ghost
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-1.23,0,"Back"},
-		{0,1.23,0,"Front"},
-		{-1.24,0,0,"Left"},
-		{1.24,0,0,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-1.23,0,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,1.23,0,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-1.24,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.24,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	
 	class WoodFloorQuarter_DZ: FloorsWallsStairs { 
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-1.23,0.137726,"Back"},
-		{0,1.23,0.137726,"Front"},
-		{-1.24,0,0.137726,"Left"},
-		{1.24,0,0.137726,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-1.23,0.137726,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,1.23,0.137726,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-1.24,0,0.137726,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.24,0,0.137726,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	
 	class WoodFloorHalf_Preview_DZ: FloorsWallsStairs { //fix for broken offsets in ghost
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-2.34,0,"Back"},
-		{0,2.34,0,"Front"},
-		{-1.25,0,0,"Left"},
-		{1.25,0,0,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-2.34,0,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,2.34,0,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-1.25,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.25,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	class WoodFloorHalf_DZ: FloorsWallsStairs{
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-2.34,0.1407,"Back"},
-		{0,2.34,0.1407,"Front"},
-		{-1.25,0,0.1407,"Left"},
-		{1.25,0,0.1407,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-2.34,0.1407,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,2.34,0.1407,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-1.25,0,0.1407,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.25,0,0.1407,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	
 	class WoodFloor_Preview_DZ: FloorsWallsStairs {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-2.33,0.130,"Back"},
-		{0,2.33,0.130,"Front"},
-		{-2.495,0,0.130,"Left"},
-		{2.495,0,0.130,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-2.33,0.130,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,2.33,0.130,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-2.495,0,0.130,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.495,0,0.130,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 		radius = 10;
 	};
@@ -181,11 +181,11 @@ class SnapBuilding {
 	
 	class Stairs_DZE: FloorsWallsStairs {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{1.56055,-0.78,1.5,"Back"},
-		{1.56055,0.78,1.5,"Front"},
-		{1.73926,0.05,2.9,"Top"},
-		{-1.73926,0.05,0,"Bottom"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{1.56055,-0.78,1.5,$STR_EPOCH_ACTION_SNAP_BACK},
+		{1.56055,0.78,1.5,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{1.73926,0.05,2.9,$STR_EPOCH_ACTION_SNAP_TOP},
+		{-1.73926,0.05,0,$STR_EPOCH_ACTION_SNAP_BOTTOM}
 		};
 	};
 	class WoodStairs_DZ: Stairs_DZE {};
@@ -195,10 +195,10 @@ class SnapBuilding {
 
 	class WoodSmall_DZE: FloorsWallsStairs { // Small wood walls
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.285, 0, 1.5,"Left"},
-		{2.285, 0, 1.5,"Right"},
-		{0, 0, 3,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-2.285, 0, 1.5,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.285, 0, 1.5,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0, 0, 3,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class WoodSmallWallDoor_Preview_DZ: WoodSmall_DZE {};
@@ -213,10 +213,10 @@ class SnapBuilding {
 	
 	class WoodLarge_DZE: FloorsWallsStairs { //Large wood walls
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.45, 0, 1.5,"Left"},
-		{2.45, 0, 1.5,"Right"},
-		{0, 0, 3,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-2.45, 0, 1.5,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.45, 0, 1.5,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0, 0, 3,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class WoodLargeWall_Preview_DZ: WoodLarge_DZE {};
@@ -224,10 +224,10 @@ class SnapBuilding {
 	class WoodLargeWallDoor_Preview_DZ: WoodLarge_DZE {};
 	class WoodSmallWallThird_Preview_DZ: WoodLarge_DZE {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.445, 0, 1.5,"Left"},
-		{2.445, 0, 1.5,"Right"},
-		{0, 0, 1.17,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-2.445, 0, 1.5,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.445, 0, 1.5,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0, 0, 1.17,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class WoodSmallWallThird_DZ: WoodSmallWallThird_Preview_DZ{};
@@ -243,41 +243,33 @@ class SnapBuilding {
 	
 	class Cinder_DZE: FloorsWallsStairs { //All cinder walls and doors
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.685,"Left"},
-		{2.64, 0, 1.685,"Right"},
-		{0, 0, 3.37042,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_BOTTOM},
+		{-2.64, 0, 1.685,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.64, 0, 1.685,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0, 0, 3.37042,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 		radius = 10;
-	};
-	class CinderWall_Preview_DZ: Cinder_DZE {
-		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.64, 0, -0.009,"Left"},
-		{2.64, 0, -0.009,"Right"},
-		{0, 0, 1.685,"Top"},
-		{0,0,-1.685,"Bottom"}
-		};
 	};
 	class CinderWallDoorway_Preview_DZ: Cinder_DZE {};
 	class CinderWallSmallDoorway_Preview_DZ: Cinder_DZE {}; 
 	class CinderWallHalf_Preview_DZ: Cinder_DZE {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.685,"Left"},
-		{2.64, 0, 1.685,"Right"},
-		{0, 0, 1.5,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_BOTTOM},
+		{-2.64, 0, 1.685,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.64, 0, 1.685,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0, 0, 1.5,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class CinderWall_DZ: Cinder_DZE {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.685,"Left"},
-		{2.64, 0, 1.685,"Right"},
-		{0, 0, 3.37042,"Top"},
-		{0,0,-1.685,"Bottom"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_BOTTOM},
+		{-2.64, 0, 1.685,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.64, 0, 1.685,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0, 0, 3.37042,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
+	class CinderWall_Preview_DZ: CinderWall_DZ {};
+
 	class CinderWallDoorway_DZ: Cinder_DZE {};
 	class CinderWallDoorLocked_DZ: Cinder_DZE {};
 	class CinderWallDoor_DZ: Cinder_DZE {};
@@ -285,34 +277,26 @@ class SnapBuilding {
 	class CinderWallDoorSmallLocked_DZ: Cinder_DZE {};
 	class CinderWallHalf_DZ: Cinder_DZE {
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.64, 0, 1.685,"Left"},
-		{2.64, 0, 1.685,"Right"},
-		{0, 0, 1.5,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-2.64, 0, 1.685,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.64, 0, 1.685,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0, 0, 1.5,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class CinderWallDoorSmall_DZ: Cinder_DZE {};
-	
-	class MetalFloor_Preview_DZ: FloorsWallsStairs {
-		points[] = {
-		{0,0,0.011,"Pivot"},
-		{0, -2.64, 0.025,"Back"},
-		{0, 2.64, 0.025,"Front"},
-		{-2.64, 0, 0.025,"Left"},
-		{2.64, 0, 0.025,"Right"}
-		};
-		radius = 12;
-	};
+
 	class MetalFloor_DZ: FloorsWallsStairs{
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0, -2.64, 0.166,"Back"},
-		{0, 2.64, 0.166,"Front"},
-		{-2.64, 0, 0.166,"Left"},
-		{2.64, 0, 0.166,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0, -2.64, 0.025,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0, 2.64, 0.025,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-2.64, 0, 0.025,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.64, 0, 0.025,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 		radius = 12;
 	};
+	
+	class MetalFloor_Preview_DZ: MetalFloor_DZ {};
 	
 	//Non essential Items that only snap to themselves, do whitelist inheritance if you want these to snap
 	class WoodCrate_DZ {
@@ -321,12 +305,12 @@ class SnapBuilding {
 		};
 		radius = 5;
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,-0.47,0,"Back"},
-		{0,0.47,0,"Front"},
-		{-0.47,0,0,"Left"},
-		{0.47,0,0,"Right"},
-		{0,0,0.47,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,-0.47,0,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,0.47,0,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{-0.47,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{0.47,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT},
+		{0,0,0.47,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 		
@@ -336,9 +320,9 @@ class SnapBuilding {
 		};
 		radius = 5;
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-1.5,0,0,"Left"},
-		{1.5,0,0,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-1.5,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.5,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	
@@ -348,8 +332,8 @@ class SnapBuilding {
 		};
 		radius = 5;
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-4.1,0,0,"Left"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-4.1,0,0,$STR_EPOCH_ACTION_SNAP_LEFT}
 		};
 	};
 	
@@ -359,9 +343,9 @@ class SnapBuilding {
 		};
 		radius = 10;
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-2.95,0,0.3,"Left"},
-		{2.95,0,0.3,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-2.95,0,0.3,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{2.95,0,0.3,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	
@@ -371,9 +355,9 @@ class SnapBuilding {
 		};
 		radius = 10;
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-1.95,0,0.88,"Left"},
-		{1.95,0,0.88,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-1.95,0,0.88,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{1.95,0,0.88,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	
@@ -383,10 +367,10 @@ class SnapBuilding {
 		};
 		radius = 7;
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0.65,-1.7,1.2,"Back"},
-		{0.65,1.5,1.2,"Front"},
-		{3.34,-0.115,2.82,"Top"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0.65,-1.7,1.2,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0.65,1.5,1.2,$STR_EPOCH_ACTION_SNAP_FRONT},
+		{3.34,-0.115,2.82,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
 	class WoodRamp_DZ: WoodRamp_Preview_DZ{};
@@ -397,9 +381,9 @@ class SnapBuilding {
 		};
 		radius = 5;
 		points[] = {
-		{0,0,0,"Pivot"},
-		{-0.4,0,1.725,"Left"},
-		{0.4,0,1.725,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{-0.4,0,1.725,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{0.4,0,1.725,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	class WoodLadder_DZ: WoodLadder_Preview_DZ{};
@@ -411,11 +395,11 @@ class SnapBuilding {
 		};
 		radius = 5;
 		points[] = {
-		{0,0,0,"Pivot"},
-		{0,0.284,0.615,"Back"},
-		{0,0,1.23,"Top"},
-		{-0.362,0,0.615,"Left"},
-		{0.362,0,0.615,"Right"}
+		{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+		{0,0.284,0.615,$STR_EPOCH_ACTION_SNAP_BACK},
+		{0,0,1.23,$STR_EPOCH_ACTION_SNAP_TOP},
+		{-0.362,0,0.615,$STR_EPOCH_ACTION_SNAP_LEFT},
+		{0.362,0,0.615,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 		
 	};

@@ -22331,6 +22331,154 @@
 		<Key ID="STR_EQUIP_APSI_DESC">
 			<English>APSI (Anti PSI) device, which full purpose is yet unknown.</English>
 			<German>APSI (Anti PSI) Emitter, dessen vollständige Funktion noch unbekannt ist.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE">
+			<English>Disabled:</English>
+			<German>Deaktiviert:</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE_MSG">
+			<English>Use action menu to enable.</English>
+			<German>Benutzte das Scrollmenü zum Aktivieren.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ENABLE">
+			<English>Enabled:</English>
+			<German>Aktiviert:</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ENABLE_MSG">
+			<English>Use action menu to disable.</English>
+			<German>Benutzte das Scrollmenü zum Deaktivieren.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_AUTO_DETECT">
+			<English>Automatic snap point detection.</English>
+			<German>Das Snapping findet automatisch den nächsten Snap-Punkt.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_MANUAL_DETECT">
+			<English>Select your preferred snap point.</English>
+			<German>Wähle selbstständig den nächsten Snap-Punkt.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_PGUPPGDOWN">
+			<English>[PgUP / PgDOWN]</English>
+			<German>[Bild Auf / Bild Ab].</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_PGUPPGDOWN_MSG">
+			<English>Adjust height of object by 10cm.</English>
+			<German>Passt die Höhe des Objektes um 10cm an.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ALT_PGUPPGDOWN">
+			<English>[Alt] + [PgUP / PgDOWN]</English>
+			<German>[Alt] + [Bild Auf / Bild Ab].</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ALT_PGUPPGDOWN_MSG">
+			<English>Adjust height of object by 1m.</English>
+			<German>Passt die Höhe des Objektes um 1m an.</German>
+		</Key>
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_CTRL_PGUPPGDOWN">
+			<English>[Ctrl] + [PgUP / PgDOWN]</English>
+			<German>[Strg] + [Bild Auf / Bild Ab].</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_CTRL_PGUPPGDOWN_MSG">
+			<English>Adjust height of object by 1cm.</English>
+			<German>Passt die Höhe des Objektes um 1cm an.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ROTATE180_MSG">
+			<English>Rotate object 180 degrees while holding.</English>
+			<German>Dreht das Objekt um 180 Grad.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ROTATE45_MSG">
+			<English>Rotate object 45 degrees while holding.</English>
+			<German>Dreht das Objekt um 45 Grad.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_DROP_MSG">
+			<English>Drop / Pick up object.</English>
+			<German>Objekt feststellen / aufnehmen.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_SNAP_MSG">
+			<English>Drop / Pick up object.</English>
+			<German>Objekt snappen / aufnehmen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_ON">
+			<English>ON</English>
+			<German>AN</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_OFF">
+			<English>OFF</English>
+			<German>AUS</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_SNAP_POINT_MANUAL">
+			<English>Manual</English>
+			<German>Manuell</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_SNAP_POINT">
+			<English>Snap Points:</English>
+			<German>Snap-Punkte:</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_SNAP_SELECT">
+			<English>Select:</English>
+			<German>Auswahl:</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT">
+			<English>Right</English>
+			<German>Rechts</German>
+		</Key>			
+		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT">
+			<English>Left</English>
+			<German>Links</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_SNAP_PIVOT">
+			<English>Pivot</English>
+			<German>Mittelpunkt</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_BACK">
+			<English>Back</English>
+			<German>Hinten</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT">
+			<English>Front</English>
+			<German>Vorne</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_BOTTOM">
+			<English>Bottom</English>
+			<German>Boden</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_TOP">
+			<English>Top</English>
+			<German>Spitze</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_VECTORS">
+			<English>Vectors:</English>
+			<German>Vektoren:</German>
+		</Key>		
+		<Key ID="STR_EPOCH_VECTORS_PITCH_FORWARD">
+			<English>Pitch Forward</English>
+			<German>Nach vorne neigen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_VECTORS_PITCH_BACK">
+			<English>Pitch Back</English>
+			<German>Nach hinten neigen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_VECTORS_BANK_LEFT">
+			<English>Bank Left</English>
+			<German>Nach links neigen</German>
+		</Key>			
+		<Key ID="STR_EPOCH_VECTORS_BANK_RIGHT">
+			<English>Bank Right</English>
+			<German>Nach rechts neigen</German>
+		</Key>
+		<Key ID="STR_EPOCH_VECTORS_RESET">
+			<English>Reset</English>
+			<German>Zurücksetzen</German>
+		</Key>
+		<Key ID="STR_EPOCH_VECTORS_CLOSE">
+			<English>CLOSE</English>
+			<German>Schließen</German>
+		</Key>
+		<Key ID="STR_EPOCH_VECTORS_OPEN">
+			<English>OPEN</English>
+			<German>Öffnen</German>
+		</Key>
+		<Key ID="STR_EPOCH_VECTORS_DEGREES">
+			<English>DEGREES:</English>
+			<German>Grad:</German>
 		</Key>		
 		
 		<!--Namalsk compatibility-->
