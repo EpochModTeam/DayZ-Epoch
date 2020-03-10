@@ -51,6 +51,7 @@ Included Custom Addons
 * RH SMG pack by Robert Hammer - http://www.armaholic.com/page.php?id=13788
 * RH HK416 Pack by Robert Hammer - http://www.armaholic.com/page.php?id=11789
 * RH Ak's Pack by Robert Hammer - http://www.armaholic.com/page.php?id=9029
+* RH MGS weapon pack by Robert Hammer - http://www.armaholic.com/page.php?id=13095
 
 --------------------------
 Included Custom Islands

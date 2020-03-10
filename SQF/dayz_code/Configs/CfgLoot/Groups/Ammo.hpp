@@ -144,6 +144,7 @@ AmmoUS[] =
 	{Loot_MAGAZINE,		1,		10Rnd_127x99_m107},
 	{Loot_MAGAZINE,		1,		7Rnd_86x70_MSR},
 	{Loot_MAGAZINE,		4,		20Rnd_762x51_DMR},
+	{Loot_MAGAZINE,		4,		20Rnd_762x51_DMRSD},
 	
 	// Machine guns
 	{Loot_MAGAZINE,		3,		100Rnd_556x45_M249},

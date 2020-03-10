@@ -12144,9 +12144,20 @@
 		<Key ID="STR_DZ_WPN_M21_NAME">
 			<English>M21 SWS</English>
 		</Key>	
+		<Key ID="STR_DZ_WPN_M21A5_NAME">
+			<English>M21A5</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_M21A5_SD_NAME">
+			<English>M21A5 SD</English>
+			<Russian>M21A5 ПБС</Russian>
+		</Key>		
 		<Key ID="STR_DZ_WPN_M21_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M21SD_DESC">
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
 		</Key>			
 		
 		<!-- Colts -->	
@@ -12805,7 +12816,48 @@
 		<Key ID="STR_DZ_WPN_ASVAL_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 9x39mm</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
+		</Key>		
+
+		<!-- MK14 -->
+		<Key ID="STR_DZ_WPN_MK14_NAME">
+			<English>MK 14</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_SD_NAME">
+			<English>MK 14 SD</English>
+			<Russian>MK 14 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_CCO_NAME">
+			<English>MK 14 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_CCO_SD_NAME">
+			<English>MK 14 CCO SD</English>
+			<Russian>MK 14 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_HOLO_NAME">
+			<English>MK 14 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_HOLO_SD_NAME">
+			<English>MK 14 Holo SD</English>
+			<Russian>MK 14 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_ACOG_NAME">
+			<English>MK 14 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK14_ACOG_SD_NAME">
+			<English>MK 14 ACOG SD</English>
+			<Russian>MK 14 ACOG ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK14_SNIPER_NAME">
+			<English>MK 14 Sniper</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK14_SNIPER_SD_NAME">
+			<English>MK 14 Sniper SD</English>
+			<Russian>MK 14 Sniper ПБС</Russian>
 		</Key>			
+		<Key ID="STR_DZ_WPN_MK14SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>	
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -12911,6 +12963,10 @@
 			<English>20Rnd. DMR mag.</English>
 			<Russian>20п. DMR маг.</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20RND_762X51_DMRSD_NAME">
+			<English>20Rnd. DMR SD mag.</English>
+			<Russian>20п. DMR глуш. маг.</Russian>
+		</Key>		
 		<Key ID="STR_DZ_MAG_5RND_762X51_M24_NAME">
 			<English>5Rnd. M24/M40 mag.</English>
 			<Russian>5п. M24/M40 маг.</Russian>
@@ -13009,9 +13065,9 @@
 			<Russian>5п. CZ 550 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_17HMR_DESC">
-			<English>Caliber: 9,3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
-			<Russian>Калибр: 9,3x62мм&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: CZ 550</Russian>
-			<German>Kaliber: 9,3x62mm&lt;br/&gt;Patronen: 5&lt;br/&gt;Verwendet in: CZ 550</German>
+			<English>Caliber: 9.3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
+			<Russian>Калибр: 9.3x62мм&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: CZ 550</Russian>
+			<German>Kaliber: 9.3x62mm&lt;br/&gt;Patronen: 5&lt;br/&gt;Verwendet in: CZ 550</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_303BRITISH_NAME">
 			<English>10Rnd. Lee Enfield mag.</English>
@@ -13045,7 +13101,7 @@
 			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
 			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
 			<Czech>Ráže: 12 &lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
-			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+			<German>Kaliber: 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_NAME">
 			<English>2Rnd. 12Cal. Pellets</English>
@@ -14086,6 +14142,28 @@
 			<German>Kaliber: 7.62x39mm SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: Groza-1 SD</German>
 			<Czech>Kalibr: 7.62x39mm SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: Groza-1 SD</Czech>
 			<Hungarian>Kaliber: 7.62x39mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Groza-1 SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_20RND_DMR_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: DMR, M14, MK 14, M1A, M21 SWS, M21A5</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: DMR, M14, MK 14, M1A, M21 SWS, M21A5</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Polish>
+			<Russian>Патрон: 7.62x51мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: DMR, M14, MK 14, M1A, M21 SWS, M21A5</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_DMRSD_DESC">
+			<English>Caliber: 7.62x51mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK 14 SD, M21A5 SD</English>
+			<French>Calibre: 7.62x51mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: MK 14 SD, M21A5 SD</French>
+			<Spanish>Calibre: 7.62x51mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: MK 14 SD, M21A5 SD</Spanish>
+			<Italian>Calibro: 7.62x51mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: MK 14 SD, M21A5 SD</Italian>
+			<Polish>Kaliber: 7.62x51mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: MK 14 SD, M21A5 SD</Polish>
+			<Russian>Патрон: 7.62x51мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: MK 14 SD, M21A5 SD</Russian>
+			<German>Kaliber: 7.62x51mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: MK 14 SD, M21A5 SD</German>
+			<Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: MK 14 SD, M21A5 SD</Czech>
+			<Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: MK 14 SD, M21A5 SD</Hungarian>
 		</Key>		
 		
 		<!-- **** ATTACHMENTS **** -->

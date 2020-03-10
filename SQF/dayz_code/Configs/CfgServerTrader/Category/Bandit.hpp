@@ -149,6 +149,8 @@ class Category_8 {
 	class RSASS_SD_DZ {type = "trade_weapons";buy[] = {-6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};	
 	class HK417_Sniper_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 	class HK417_Sniper_SD_DZ {type = "trade_weapons";buy[] = {-6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
+	class MK14_Sniper_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
+	class MK14_Sniper_SD_DZ {type = "trade_weapons";buy[] = {-6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 	class DMR_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 	class DMR_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {31,"ItemGoldBar"};};	
 	class M21_DZ {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};

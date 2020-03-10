@@ -16,6 +16,7 @@ class 20Rnd_762x51_DMR : CA_Magazine
 {
 	model = "\dayz_equip\models\mag20.p3d";
 	displayName = $STR_DZ_MAG_20RND_762X51_DMR_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_DMR_DESC;
 	
 	cartridgeName = "762x51";
 	
@@ -30,6 +31,21 @@ class 20Rnd_762x51_DMR : CA_Magazine
 			use[] = {"20Rnd_762x51_DMR"};
 			output[] = {"5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24"};
 		};
+	};
+};
+
+class 20Rnd_762x51_DMRSD : 20Rnd_762x51_DMR
+{
+	displayName = $STR_DZ_MAG_20RND_762X51_DMRSD_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_DMRSD_DESC;
+	ammo = "Rem_762x51_SD";	
+	
+	cartridgeName = "762x51_SD";
+	
+	class ItemActions
+	{
+		COMBINE_MAG		
+		delete ReloadMag;
 	};
 };
 

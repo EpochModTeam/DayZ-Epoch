@@ -433,6 +433,14 @@ class Category_16 {
 	class M14_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {12,"ItemGoldBar"};};
 	class M14_CCO_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {13,"ItemGoldBar"};};
 	class M14_Holo_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {13,"ItemGoldBar"};};	
+	class MK14_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class MK14_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
+	class MK14_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
+	class MK14_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {15,"ItemGoldBar"};};
+	class MK14_CCO_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {17,"ItemGoldBar"};};
+	class MK14_Holo_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {17,"ItemGoldBar"};};
+	class MK14_ACOG_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {14,"ItemGoldBar"};};
+	class MK14_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {19,"ItemGoldBar"};};
 	class M1A_SC16_BL_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class M1A_SC16_BL_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {12,"ItemGoldBar"};};
 	class M1A_SC16_BL_HOLO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {12,"ItemGoldBar"};};	

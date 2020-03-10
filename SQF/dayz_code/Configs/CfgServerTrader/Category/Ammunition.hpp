@@ -88,10 +88,11 @@ class Category_22 {
 	class ACR_30Rnd_680x43 {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
 	class ACR_30Rnd_680x43_SD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class 20Rnd_762x51_DMR {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class 20Rnd_762x51_DMRSD {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class 20Rnd_762x51_B_SCAR {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class 20Rnd_762x51_SB_SCAR {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
 	class 20Rnd_762x51_HK417 {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
-	class 20Rnd_762x51_HK417SD {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class 20Rnd_762x51_HK417SD {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 };
 
 //Sniper Rifle Ammo

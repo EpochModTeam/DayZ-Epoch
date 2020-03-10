@@ -76,9 +76,10 @@ weaponsUS[] =
 	{Loot_WEAPON,		5,		M4SPR_DZE},
 	{Loot_WEAPON,		4,		M40A3_DZ},
 	{Loot_WEAPON,		4,		M24_des_EP1},
-	{Loot_WEAPON,		4,		M24_DZ},
-	{Loot_WEAPON,		4,		M14_DZ},
+	{Loot_WEAPON,		4,		M24_DZ},	
 	{Loot_WEAPON,		3,		DMR_DZ},
+	{Loot_WEAPON,		3,		MK14_Sniper_DZ},
+	{Loot_WEAPON,		3,		M21A5_DZ},
 	{Loot_WEAPON,		1,		M107_DZ}, // High value weapon, low spawn chance.
 	{Loot_WEAPON,		1,		MSR_DZ}, // High value weapon, low spawn chance.	
 	
@@ -90,6 +91,8 @@ weaponsUS[] =
 	{Loot_WEAPON,		3,		Mac10_DZ},
 	
 	// Assault Rifles
+	{Loot_WEAPON,		6,		M14_DZ},
+	{Loot_WEAPON,		6,		MK14_DZ},
 	{Loot_WEAPON,		6,		Masada_DZ},
 	{Loot_WEAPON,		6,		Masada_BL_DZ},
 	{Loot_WEAPON,		6,		CTAR21_DZ},
