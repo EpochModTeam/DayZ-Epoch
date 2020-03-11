@@ -112,7 +112,8 @@ weaponsUS[] =
 	{Loot_WEAPON,		5,		M249_m145_EP1_DZE},
 	{Loot_WEAPON,		3,		m240_scoped_EP1_DZE},
 	{Loot_WEAPON,		3,		M240_DZ},
-	{Loot_WEAPON,		5,		M249_DZ}
+	{Loot_WEAPON,		5,		M249_DZ},
+	{Loot_WEAPON,		5,		M249_EP1_DZ},	
 };
 
 weaponsEU[] =
