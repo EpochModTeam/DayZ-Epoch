@@ -81,7 +81,7 @@ class CfgWeapons
 	};
 	#include "Rifles\G36.hpp"
 	#include "Rifles\G36C.hpp"
-	#include "Rifles\MG36.hpp"
+	#include "Rifles\MG36.hpp"	
 	
 	class M4A1;
 	class M4A1_AIM_SD_camo;
@@ -99,6 +99,7 @@ class CfgWeapons
 	//CTAR-21
 	#include "Rifles\CTAR21.hpp"	
 	#include "Rifles\Masada.hpp"	
+	#include "Rifles\MK16.hpp"
 	
 	class M14_EP1;
 	#include "Rifles\M14.hpp"

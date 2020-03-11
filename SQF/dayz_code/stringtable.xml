@@ -12859,6 +12859,62 @@
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 		</Key>	
 		
+		<!-- MK 16 -->
+		<Key ID="STR_DZ_WPN_MK16_NAME">
+			<English>MK 16</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_NAME">
+			<English>MK 16 M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_CCO_NAME">
+			<English>MK 16 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_CCO_SD_NAME">
+			<English>MK 16 CCO SD</English>
+			<Russian>MK 16 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_CCO_NAME">
+			<English>MK 16 M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_CCO_SD_NAME">
+			<English>MK 16 M203 CCO SD</English>
+			<Russian>MK 16 M203 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_HOLO_NAME">
+			<English>MK 16 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_HOLO_SD_NAME">
+			<English>MK 16 Holo SD</English>
+			<Russian>MK 16 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_HOLO_NAME">
+			<English>MK 16 M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_HOLO_SD_NAME">
+			<English>MK 16 M203 Holo SD</English>
+			<Russian>MK 16 M203 Holo ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK16_ACOG_NAME">
+			<English>MK 16 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK16_GL_ACOG_NAME">
+			<English>MK 16 M203 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK16_ACOG_SD_NAME">
+			<English>MK 16 ACOG SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_MK16_GL_ACOG_SD_NAME">
+			<English>MK 16 M203 ACOG SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK16_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK16SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm SD</German>
+		</Key>			
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
