@@ -150,6 +150,7 @@ class MK16_Holo_DZ : MK16_DZ
 	model = "\RH_mgswp\RH_Scarl_eotech.p3d";
 	picture = "\RH_mgswp\inv\scarl_eotech.paa";
 	displayName = $STR_DZ_WPN_MK16_HOLO_NAME;
+	handAnim[] = {};
 	MK16_Laser;
 	
 	class Attachments
@@ -172,6 +173,7 @@ class MK16_ACOG_DZ : MK16_DZ
 	model = "\RH_mgswp\RH_Scarl_acog.p3d";
 	picture = "\RH_mgswp\inv\scarl_acog.paa";
 	displayName = $STR_DZ_WPN_MK16_ACOG_NAME;
+	handAnim[] = {};
 	
 	MK16_Laser;	
 	MK16_ACOG;
@@ -278,10 +280,7 @@ class MK16_GL_ACOG_DZ : MK16_GL_DZ
 	MK16_M203;	
 	MK16_ACOG;
 	
-	class Attachments
-	{
-		Attachment_Sup556 = "MK16_GL_ACOG_SD_DZ";
-	};
+	class Attachments {};
 	
 	class ItemActions
 	{
@@ -306,15 +305,16 @@ class MK16_CCO_SD_DZ : MK16_DZ
 	displayName = $STR_DZ_WPN_MK16_CCO_SD_NAME;	
 	descriptionShort = $STR_DZ_WPN_MK16SD_DESC;
 	modes[] = {"Single","FullAuto"};
+	handAnim[] = {};
 	
 	MK16_Laser;
 	
-	class Single: Mode_SemiAuto
+	class Single: Single
 	{
 		begin1[] = {"\RH_mgswp\sound\scarl_sd",1.0,1,110};
 		soundBegin[] = {"begin1",1};
 	};
-	class FullAuto: Mode_FullAuto
+	class FullAuto: FullAuto
 	{
 		begin1[] = {"\RH_mgswp\sound\scarl_sd",1.0,1,110};
 		soundBegin[] = {"begin1",1};
@@ -338,6 +338,7 @@ class MK16_Holo_SD_DZ : MK16_CCO_SD_DZ
 	model = "\RH_mgswp\RH_Scarl_sd_eotech.p3d";
 	picture = "\RH_mgswp\inv\scarl_sd_eotech.paa";
 	displayName = $STR_DZ_WPN_MK16_HOLO_SD_NAME;
+	handAnim[] = {};
 	
 	MK16_Laser;
 	

@@ -107,6 +107,7 @@ class CfgWeapons
 	#include "Rifles\M21.hpp"
 	#include "Rifles\HK417.hpp"	
 	#include "Rifles\MK14.hpp"	
+	#include "Rifles\MK17.hpp"
 	
 	//CZ 805
 	#include "Rifles\CZ805.hpp"

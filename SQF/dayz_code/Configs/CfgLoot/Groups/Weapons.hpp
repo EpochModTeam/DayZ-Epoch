@@ -180,9 +180,10 @@ weaponsEU[] =
 	{Loot_WEAPON,		5,		MK16_CCO_SD_DZ},
 	{Loot_WEAPON,		5,		MK16_Holo_SD_DZ},
 	{Loot_WEAPON,		5,		MK16_ACOG_SD_DZ},
-	{Loot_WEAPON,		3,		SCAR_H_CQC_CCO},
-	{Loot_WEAPON,		3,		SCAR_H_CQC_CCO_SD},
-	{Loot_WEAPON,		3,		SCAR_H_STD_EGLM_Spect},
+	{Loot_WEAPON,		3,		MK17_DZ},
+	{Loot_WEAPON,		3,		MK17_CCO_SD_DZ},
+	{Loot_WEAPON,		3,		MK17_Holo_SD_DZ},
+	{Loot_WEAPON,		3,		MK17_ACOG_SD_DZ},
 	
 	// Machine Guns
 	{Loot_WEAPON,		6,		M8_SAW},

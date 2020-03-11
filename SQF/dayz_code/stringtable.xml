@@ -12859,52 +12859,52 @@
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 		</Key>	
 		
-		<!-- MK 16 -->
+		<!-- MK16 -->
 		<Key ID="STR_DZ_WPN_MK16_NAME">
-			<English>MK 16</English>
+			<English>MK16</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_GL_NAME">
-			<English>MK 16 M203</English>
+			<English>MK16 M203</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_CCO_NAME">
-			<English>MK 16 CCO</English>
+			<English>MK16 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_CCO_SD_NAME">
-			<English>MK 16 CCO SD</English>
-			<Russian>MK 16 CCO ПБС</Russian>
+			<English>MK16 CCO SD</English>
+			<Russian>MK16 CCO ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_GL_CCO_NAME">
-			<English>MK 16 M203 CCO</English>
+			<English>MK16 M203 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_GL_CCO_SD_NAME">
-			<English>MK 16 M203 CCO SD</English>
-			<Russian>MK 16 M203 CCO ПБС</Russian>
+			<English>MK16 M203 CCO SD</English>
+			<Russian>MK16 M203 CCO ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_HOLO_NAME">
-			<English>MK 16 Holo</English>
+			<English>MK16 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_HOLO_SD_NAME">
-			<English>MK 16 Holo SD</English>
-			<Russian>MK 16 Holo ПБС</Russian>
+			<English>MK16 Holo SD</English>
+			<Russian>MK16 Holo ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_GL_HOLO_NAME">
-			<English>MK 16 M203 Holo</English>
+			<English>MK16 M203 Holo</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16_GL_HOLO_SD_NAME">
-			<English>MK 16 M203 Holo SD</English>
-			<Russian>MK 16 M203 Holo ПБС</Russian>
+			<English>MK16 M203 Holo SD</English>
+			<Russian>MK16 M203 Holo ПБС</Russian>
 		</Key>	
 		<Key ID="STR_DZ_WPN_MK16_ACOG_NAME">
-			<English>MK 16 ACOG</English>
+			<English>MK16 ACOG</English>
 		</Key>		
 		<Key ID="STR_DZ_WPN_MK16_GL_ACOG_NAME">
-			<English>MK 16 M203 ACOG</English>
+			<English>MK16 M203 ACOG</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_MK16_ACOG_SD_NAME">
-			<English>MK 16 ACOG SD</English>
+			<English>MK16 ACOG SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_MK16_GL_ACOG_SD_NAME">
-			<English>MK 16 M203 ACOG SD</English>
+			<English>MK16 M203 ACOG SD</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_MK16_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
@@ -12914,6 +12914,59 @@
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm SD</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm SD</German>
 		</Key>			
+
+		<!-- MK17 -->
+		<Key ID="STR_DZ_WPN_MK17_NAME">
+			<English>MK17</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_NAME">
+			<English>MK17 M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_CCO_NAME">
+			<English>MK17 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_CCO_SD_NAME">
+			<English>MK17 CCO SD</English>
+			<Russian>MK17 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_CCO_NAME">
+			<English>MK17 M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_CCO_SD_NAME">
+			<English>MK17 M203 CCO SD</English>
+			<Russian>MK17 M203 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_HOLO_NAME">
+			<English>MK17 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_HOLO_SD_NAME">
+			<English>MK17 Holo SD</English>
+			<Russian>MK17 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_HOLO_NAME">
+			<English>MK17 M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_HOLO_SD_NAME">
+			<English>MK17 M203 Holo SD</English>
+			<Russian>MK17 M203 Holo ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK17_ACOG_NAME">
+			<English>MK17 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK17_GL_ACOG_NAME">
+			<English>MK17 M203 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK17_ACOG_SD_NAME">
+			<English>MK17 ACOG SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_MK17_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK17SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
+		</Key>	
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -13274,15 +13327,15 @@
 			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
         </Key>	
 		<Key ID="STR_DZ_MAG_20RND_MK17_DESC">
-			<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</English>
-			<French>Calibre: 7,62 x 51 mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: Mk 17, M110, CZ 805B</French>
-			<Spanish>Calibre: 7.62x51 mm OTAN&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: Mk 17, M110, CZ 805B</Spanish>
-			<Italian>Calibro: 7,62x51 mm NATO&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: Mk 17, M110, CZ 805B</Italian>
-			<Polish>Kaliber: 7,62x51 mm NATO&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: Mk 17, M110, CZ 805B</Polish>
-			<Russian>Патрон: 7.62x51 мм НАТО&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: Mk 17, M110, CZ 805B</Russian>
-			<German>Kaliber: 7,62x51mm NATO&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: Mk 17, M110, CZ 805B</German>
-			<Czech>Kalibr: 7.62x51mm NATO&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Mk 17, M110, CZ 805B</Czech>
-			<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Mk 17, M110, CZ 805B</Hungarian>
+			<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK17, M110, CZ 805B</English>
+			<French>Calibre: 7,62 x 51 mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: MK17, M110, CZ 805B</French>
+			<Spanish>Calibre: 7.62x51 mm OTAN&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: MK17, M110, CZ 805B</Spanish>
+			<Italian>Calibro: 7,62x51 mm NATO&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: MK17, M110, CZ 805B</Italian>
+			<Polish>Kaliber: 7,62x51 mm NATO&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: MK17, M110, CZ 805B</Polish>
+			<Russian>Патрон: 7.62x51 мм НАТО&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: MK17, M110, CZ 805B</Russian>
+			<German>Kaliber: 7,62x51mm NATO&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: MK17, M110, CZ 805B</German>
+			<Czech>Kalibr: 7.62x51mm NATO&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: MK17, M110, CZ 805B</Czech>
+			<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: MK17, M110, CZ 805B</Hungarian>
 		</Key>	
 		<Key ID="STR_DZ_MAG_40RND_MP7_NAME">
 			<English>40Rnd. MP7 mag.</English>
