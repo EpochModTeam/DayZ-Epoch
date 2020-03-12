@@ -131,7 +131,7 @@ class Category_8 {
 	//ACOG GL Grey
 	class M4A3_ACOG_GL_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};	
 	class FNFAL_ANPVS4_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
-	// FN_FAL_ANPVS4_DZE has toggleable night vision
+	// FN_FAL_ANPVS4_DZE has toggleable night vision, attachment support
 	class FN_FAL_ANPVS4_DZE {type = "trade_weapons";buy[] = {3,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class Mk43_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class MK43_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};

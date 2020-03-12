@@ -11,6 +11,16 @@ class TMP_DZ: MP5A5
 	{
 		begin1[] = {"\RH_smg\sound\tmp.wss",1.778279,1,900};
 		soundBegin[] = {"begin1",1};
+		reloadTime = 0.07;
+		recoil = "recoil_single_primary_1outof10";
+		recoilProne = "recoil_single_primary_prone_1outof10";
+		dispersion = 0.003;
+		minRange = 2;
+		minRangeProbab = 0.25;
+		midRange = 40;
+		midRangeProbab = 0.7;
+		maxRange = 150;
+		maxRangeProbab = 0.05;		
 	};
 	
 	delete Burst; 
@@ -19,6 +29,18 @@ class TMP_DZ: MP5A5
 	{
 		begin1[] = {"\RH_smg\sound\tmp.wss",1.778279,1,900};
 		soundBegin[] = {"begin1",1};
+		soundContinuous = 0;
+		reloadTime = 0.1;
+		ffCount = 1;
+		recoil = "recoil_auto_primary_1outof10";
+		recoilProne = "recoil_auto_primary_prone_1outof10";
+		dispersion = 0.003;
+		minRange = 0;
+		minRangeProbab = 0.2;
+		midRange = 20;
+		midRangeProbab = 0.7;
+		maxRange = 40;
+		maxRangeProbab = 0.05;		
 	};
 	
 	magazines[] = {"30Rnd_9x19_TMP"};
@@ -84,6 +106,16 @@ class TMP_SD_DZ: MP5SD
 	{
 		begin1[] = {"\RH_smg\sound\tmpsd.wss",1.778279,1,50};
 		soundBegin[] = {"begin1",1};
+		reloadTime = 0.07;
+		recoil = "recoil_single_primary_1outof10";
+		recoilProne = "recoil_single_primary_prone_1outof10";
+		dispersion = 0.003;
+		minRange = 2;
+		minRangeProbab = 0.25;
+		midRange = 40;
+		midRangeProbab = 0.7;
+		maxRange = 150;
+		maxRangeProbab = 0.05;		
 	};
 	
 	delete Burst; 
@@ -92,6 +124,18 @@ class TMP_SD_DZ: MP5SD
 	{
 		begin1[] = {"\RH_smg\sound\tmpsd.wss",1.778279,1,50};
 		soundBegin[] = {"begin1",1};
+		soundContinuous = 0;
+		reloadTime = 0.1;
+		ffCount = 1;
+		recoil = "recoil_auto_primary_1outof10";
+		recoilProne = "recoil_auto_primary_prone_1outof10";
+		dispersion = 0.003;
+		minRange = 0;
+		minRangeProbab = 0.2;
+		midRange = 20;
+		midRangeProbab = 0.7;
+		maxRange = 40;
+		maxRangeProbab = 0.05;			
 	};	
 	
 	magazines[] = {"30Rnd_9x19_TMPSD"};

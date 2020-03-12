@@ -161,6 +161,14 @@ class ACR_DZ_BASE: M4A1 {
 		begin1[] = {"fhq_remington\ACR\sfx\acr_auto.ogg",1.77828,1,1000};
 		begin2[] = {"fhq_remington\ACR\sfx\acr_auto.ogg",1.77828,1,1000};
 		soundBegin[] = {"begin1",0.5,"begin2",0.5};
+		recoil = "recoil_auto_primary_2outof10";
+		recoilProne = "recoil_auto_primary_prone_2outof10";
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 40;
+		midRangeProbab = 0.7;
+		maxRange = 80;
+		maxRangeProbab = 0.05;		
 	};
 	displayName = "ACR (Woodland)";
 	picture = "\fhq_remington\acr\ui\i_acr_wdl_iron.paa";

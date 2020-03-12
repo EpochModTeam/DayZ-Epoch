@@ -16,6 +16,8 @@ class Groza9_DZ: AKM_DZ
 	{
 		begin1[] = {"\RH_aks\sound\oc14.wss",1.778279,1,1000};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		reloadTime = 0.085;
 		dispersion = 0.0025;
 		minRange = 1;
@@ -29,6 +31,8 @@ class Groza9_DZ: AKM_DZ
 	{
 		begin1[] = {"\RH_aks\sound\oc14.wss",1.778279,1,1000};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		reloadTime = 0.08;
 		ffCount = 30;
 		dispersion = 0.0025;
@@ -104,12 +108,12 @@ class Groza9_SD_DZ: Groza9_DZ
 	magazines[] = {"20Rnd_9x39_Groza9SD"};
 	handAnim[] = {"OFP2_ManSkeleton","\CA\weapons\Data\Anim\Bizon.rtm"};
 	modes[] = {"Single","FullAuto"};
-	class Single: Mode_SemiAuto
+	class Single: Single
 	{
 		begin1[] = {"\RH_aks\sound\oc14sd.wss",0.562341,1,150};
-		soundBegin[] = {"begin1",1};
+		soundBegin[] = {"begin1",1};		
 	};
-	class FullAuto: Mode_FullAuto
+	class FullAuto: FullAuto
 	{
 		begin1[] = {"\RH_aks\sound\oc14sd.wss",0.562341,1,150};
 		soundBegin[] = {"begin1",1};
@@ -162,6 +166,8 @@ class Groza1_DZ: AKM_DZ
 	{
 		begin1[] = {"\RH_aks\Sound\gr1.wss",1.778279,1,1000};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_3outof10";
+		recoilProne = "recoil_single_primary_prone_3outof10";		
 		reloadTime = 0.08;
 		dispersion = 0.0027;
 		minRange = 2;
@@ -175,6 +181,8 @@ class Groza1_DZ: AKM_DZ
 	{
 		begin1[] = {"\RH_aks\Sound\gr1.wss",1.778279,1,1000};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_3outof10";
+		recoilProne = "recoil_single_primary_prone_3outof10";				
 		reloadTime = 0.08;
 		ffCount = 30;
 		dispersion = 0.0027;
@@ -223,7 +231,7 @@ class Groza1_SD_DZ: Groza1_DZ
 	modes[] = {"Single","FullAuto"};
 	magazines[] = {"30Rnd_762x39_Groza1SD"};
 	
-	class Single: Mode_SemiAuto
+	class Single: Single
 	{
 		begin1[] = {"\RH_aks\sound\gr1sd.wss",0.562341,1,50};
 		soundBegin[] = {"begin1",1};
@@ -236,7 +244,7 @@ class Groza1_SD_DZ: Groza1_DZ
 		maxRange = 200;
 		maxRangeProbab = 0.1;
 	};
-	class FullAuto: Mode_FullAuto
+	class FullAuto: FullAuto
 	{
 		begin1[] = {"\RH_aks\sound\gr1sd.wss",0.562341,1,50};
 		soundBegin[] = {"begin1",1};

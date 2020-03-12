@@ -48,11 +48,31 @@ class Masada_DZ : M4A1
 	{
 		begin1[] = {"\RH_hk416\sound\acr.wss",1.778279,1,1000};
 		soundBegin[] = {"begin1",1};
+		reloadTime = 0.075;
+		recoil = "recoil_single_primary_3outof10";
+		recoilProne = "recoil_single_primary_prone_3outof10";
+		dispersion = 0.001;
+		minRange = 2;
+		minRangeProbab = 0.3;
+		midRange = 250;
+		midRangeProbab = 0.7;
+		maxRange = 400;
+		maxRangeProbab = 0.05;			
 	};
 	class FullAuto: Mode_FullAuto
 	{
 		begin1[] = {"\RH_hk416\sound\acr.wss",1.778279,1,1000};
 		soundBegin[] = {"begin1",1};
+		reloadTime = 0.09;
+		recoil = "recoil_auto_primary_3outof10";
+		recoilProne = "recoil_auto_primary_prone_3outof10";
+		dispersion = 0.00175;
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 25;
+		midRangeProbab = 0.7;
+		maxRange = 70;
+		maxRangeProbab = 0.05;			
 	};	
 	
 	magazines[] = 
@@ -87,11 +107,31 @@ class Masada_SD_DZ : M4A1_AIM_SD_camo
 	{
 		begin1[] = {"\RH_hk416\sound\massd.wss",1.0,1,50};
 		soundBegin[] = {"begin1",1};
+		reloadTime = 0.075;
+		recoil = "recoil_single_primary_3outof10";
+		recoilProne = "recoil_single_primary_prone_3outof10";
+		dispersion = 0.001;
+		minRange = 2;
+		minRangeProbab = 0.3;
+		midRange = 250;
+		midRangeProbab = 0.7;
+		maxRange = 400;
+		maxRangeProbab = 0.05;		
 	};
 	class FullAuto: Mode_FullAuto
 	{
 		begin1[] = {"\RH_hk416\sound\massd.wss",1.0,1,50};
 		soundBegin[] = {"begin1",1};
+		reloadTime = 0.09;
+		recoil = "recoil_auto_primary_3outof10";
+		recoilProne = "recoil_auto_primary_prone_3outof10";
+		dispersion = 0.00175;
+		minRange = 0;
+		minRangeProbab = 0.1;
+		midRange = 25;
+		midRangeProbab = 0.7;
+		maxRange = 70;
+		maxRangeProbab = 0.05;		
 	};	
 	
 	magazines[] =

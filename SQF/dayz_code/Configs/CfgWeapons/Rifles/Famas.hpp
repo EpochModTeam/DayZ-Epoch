@@ -8,15 +8,29 @@ class Famas_DZ: M4A1
 	modes[] = {"Single","Fullauto"};
 	class Single: Mode_SemiAuto
 	{
-		sound[] = {"\C1987_famas\sound\Famas.wss",1.778279,1,1000};
+		begin1[] = {"\C1987_famas\sound\Famas.wss",1.778279,1,1000};
+		soundBegin[] = {"begin1",1};
 		recoil = "recoil_single_primary_3outof10";
 		recoilProne = "recoil_single_primary_prone_3outof10";
+		minRange = 2;
+		minRangeProbab = 0.3;
+		midRange = 40;
+		midRangeProbab = 0.7;
+		maxRange = 150;
+		maxRangeProbab = 0.05;
 	};
 	class FullAuto: Mode_FullAuto
 	{
-		sound[] = {"\C1987_famas\sound\Famas.wss",1.778279,1,1000};
+		begin1[] = {"\C1987_famas\sound\Famas.wss",1.778279,1,1000};
+		soundBegin[] = {"begin1",1};
 		recoil = "recoil_single_primary_3outof10";
 		recoilProne = "recoil_single_primary_prone_3outof10";
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 20;
+		midRangeProbab = 0.7;
+		maxRange = 40;
+		maxRangeProbab = 0.05;
 	};
 	descriptionShort = $STR_DZ_WPN_CZ_805A_DESC;
 	
@@ -91,15 +105,29 @@ class Famas_SD_DZ: M4A1_AIM_SD_camo
 	modes[] = {"Single","Fullauto"};
 	class Single: Mode_SemiAuto
 	{
-		sound[] = {"\C1987_famas\sound\Famas_sd.wss",1.0,1,300};
+		begin1[] = {"\C1987_famas\sound\Famas_sd.wss",1.0,1,300};
+		soundBegin[] = {"begin1",1};
 		recoil = "recoil_single_primary_3outof10";
 		recoilProne = "recoil_single_primary_prone_3outof10";
+		minRange = 2;
+		minRangeProbab = 0.3;
+		midRange = 40;
+		midRangeProbab = 0.7;
+		maxRange = 150;
+		maxRangeProbab = 0.05;
 	};
 	class FullAuto: Mode_FullAuto
 	{
-		sound[] = {"\C1987_famas\sound\Famas_sd.wss",1.0,1,300};
+		begin1[] = {"\C1987_famas\sound\Famas_sd.wss",1.0,1,300};
+		soundBegin[] = {"begin1",1};
 		recoil = "recoil_single_primary_3outof10";
 		recoilProne = "recoil_single_primary_prone_3outof10";
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 20;
+		midRangeProbab = 0.7;
+		maxRange = 40;
+		maxRangeProbab = 0.05;
 	};
 	descriptionShort = $STR_DZ_WPN_CZ_805A_SD_DESC;
 	
