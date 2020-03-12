@@ -128,6 +128,10 @@ class Category_3 {
 	class M4A1_Camo_Holo_GL_SD_DZ {type = "trade_weapons";buy[] = {12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};	
 	//CCO FL Desert Camo
 	class M4A3_DES_CCO_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	//Camo
+	class M4A3_Camo_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};		
+	//ACOG Camo
+	class M4A3_Camo_ACOG_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	//ACOG GL Grey
 	class M4A3_ACOG_GL_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};	
 	class FNFAL_ANPVS4_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
