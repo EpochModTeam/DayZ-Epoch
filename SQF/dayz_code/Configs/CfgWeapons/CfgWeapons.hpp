@@ -100,6 +100,7 @@ class CfgWeapons
 	#include "Rifles\CTAR21.hpp"	
 	#include "Rifles\Masada.hpp"	
 	#include "Rifles\MK16.hpp"
+	#include "Rifles\XM8.hpp"
 	
 	class M14_EP1;
 	#include "Rifles\M14.hpp"
@@ -108,6 +109,7 @@ class CfgWeapons
 	#include "Rifles\HK417.hpp"	
 	#include "Rifles\MK14.hpp"	
 	#include "Rifles\MK17.hpp"
+	#include "Rifles\M110.hpp"
 	
 	//CZ 805
 	#include "Rifles\CZ805.hpp"

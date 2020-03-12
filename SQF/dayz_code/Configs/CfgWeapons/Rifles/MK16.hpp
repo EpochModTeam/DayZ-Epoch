@@ -426,6 +426,38 @@ class MK16_GL_ACOG_SD_DZ : MK16_CCO_SD_DZ
 	};
 };
 
+class MK16_BL_CCO_DZ : MK16_CCO_DZ
+{
+	model = "\RH_mgswp\RH_scarLb_aim.p3d";
+	picture = "\RH_mgswp\inv\scarlb_aim.paa";	
+	class Attachments {};	
+	class ItemActions {};
+};
+
+class MK16_BL_GL_ACOG_DZ : MK16_GL_ACOG_DZ 
+{
+	model = "\RH_mgswp\RH_Scarlb_gl_acog.p3d";
+	picture = "\RH_mgswp\inv\Scarlb_gl_acog.paa";
+	class Attachments {};	
+	class ItemActions {};	
+};
+
+class MK16_BL_Holo_SD_DZ : MK16_Holo_SD_DZ 
+{
+	model = "\RH_mgswp\RH_Scarlb_sd_eotech.p3d";
+	picture = "\RH_mgswp\inv\scarlb_sd_eotech.paa";	
+	class Attachments {};	
+	class ItemActions {};
+};
+
+class MK16_BL_GL_CCO_SD_DZ : MK16_GL_CCO_SD_DZ
+{
+	model = "\RH_mgswp\RH_Scarlb_sd_gl_aim.p3d";
+	picture = "\RH_mgswp\inv\Scarlb_sd_gl_aim.paa";
+	class Attachments {};	
+	class ItemActions {};
+};
+
 #undef MK16_ACOG
 #undef MK16_Laser
 #undef MK16_M203

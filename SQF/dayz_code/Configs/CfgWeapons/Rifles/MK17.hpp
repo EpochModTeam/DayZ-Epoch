@@ -71,7 +71,7 @@ class MK17_DZ : M4A1
 	
 	class Single: Mode_SemiAuto
 	{
-		begin1[] = {"\RH_mgswp\sound\scarh",1.77828,1,1700};
+		begin1[] = {"\RH_mgswp\sound\scarh",1.77828,1,1100};
 		soundBegin[] = {"begin1",1};
 		dispersion = 0.0025;
 		reloadtime = 0.096;
@@ -88,7 +88,7 @@ class MK17_DZ : M4A1
 	};
 	class FullAuto: Mode_FullAuto
 	{
-		begin1[] = {"\RH_mgswp\sound\scarh",1.77828,1,1700};
+		begin1[] = {"\RH_mgswp\sound\scarh",1.77828,1,1100};
 		soundBegin[] = {"begin1",1};
 		dispersion = 0.0025;
 		reloadtime = 0.096;
@@ -390,6 +390,83 @@ class MK17_GL_Holo_SD_DZ : MK17_CCO_SD_DZ
 			script = "; ['Attachment_M203',_id,'MK17_Holo_SD_DZ'] call player_removeAttachment";
 		};
 	};
+};
+
+class MK17_BL_Holo_DZ : MK17_Holo_DZ
+{
+	model = "\RH_mgswp\RH_Scarhb_eotech.p3d";
+	picture = "\RH_mgswp\inv\scarhb_eotech.paa";
+	class Attachments {};	
+	class ItemActions {};
+};
+
+class MK17_BL_GL_ACOG_DZ : MK17_GL_ACOG_DZ 
+{
+	model = "\RH_mgswp\RH_Scarhb_gl_acog.p3d";
+	picture = "\RH_mgswp\inv\Scarhb_gl_acog.paa";
+	class Attachments {};	
+	class ItemActions {};	
+};
+
+class MK17_BL_CCO_SD_DZ : MK17_CCO_SD_DZ 
+{
+	model = "\RH_mgswp\RH_scarhb_sd_aim.p3d";
+	picture = "\RH_mgswp\inv\scarhb_sd_aim.paa";
+	class Attachments {};	
+	class ItemActions {};
+};
+
+class MK17_BL_GL_Holo_SD_DZ : MK17_GL_Holo_SD_DZ
+{
+	model = "\RH_mgswp\RH_scarhb_sd_gl_eotech.p3d";
+	picture = "\RH_mgswp\inv\scarhb_sd_gl_eotech.paa";
+	class Attachments {};	
+	class ItemActions {};
+};
+
+class SCAR_H_LNG_Sniper;
+class MK17_Sniper_DZ: SCAR_H_LNG_Sniper {
+	descriptionShort = $STR_DZ_WPN_MK17_SNIPER_DESC;
+};
+
+class SCAR_H_LNG_Sniper_SD;
+class MK17_Sniper_SD_DZ: SCAR_H_LNG_Sniper_SD {
+	descriptionShort = $STR_DZ_WPN_MK17SD_SNIPER_DESC;
+	modes[] = {"SCAR_H_SD_Single","SCAR_H_SD_FullAuto"};
+	class SCAR_H_SD_Single: Mode_SemiAuto
+	{
+		begin1[] = {"\RH_mgswp\sound\scarh_sd",1.0,1,75};
+		soundBegin[] = {"begin1",1};
+		dispersion = 0.0015;
+		reloadTime = 0.1;
+		recoil = "recoil_single_primary_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 250;
+		midRangeProbab = 0.7;
+		maxRange = 350;
+		maxRangeProbab = 0.5;
+		aiRateOfFireDistance = 350;
+	};
+	class SCAR_H_SD_FullAuto: Mode_FullAuto
+	{
+		begin1[] = {"\RH_mgswp\sound\scarh_sd",1.0,1,75};
+		soundBegin[] = {"begin1",1};
+		end1[] = {"\ca\sounds_E\weapons_E\SCAR\SCAR_SD_single1",2.5118864,1,50};
+		end2[] = {"\ca\sounds_E\weapons_E\SCAR\SCAR_SD_single2",2.5118864,1,50};
+		soundEnd[] = {"end1",0.5,"end2",0.5};
+		dispersion = 0.004;
+		reloadTime = 0.1;
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 50;
+		midRangeProbab = 0.58;
+		maxRange = 100;
+		maxRangeProbab = 0.04;
+	};	
 };
 
 

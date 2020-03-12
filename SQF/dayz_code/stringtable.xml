@@ -12857,7 +12857,7 @@
 		<Key ID="STR_DZ_WPN_MK14SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-		</Key>	
+		</Key>			
 		
 		<!-- MK16 -->
 		<Key ID="STR_DZ_WPN_MK16_NAME">
@@ -12958,7 +12958,7 @@
 		</Key>	
 		<Key ID="STR_DZ_WPN_MK17_ACOG_SD_NAME">
 			<English>MK17 ACOG SD</English>
-		</Key>			
+		</Key>		
 		<Key ID="STR_DZ_WPN_MK17_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
@@ -12966,6 +12966,43 @@
 		<Key ID="STR_DZ_WPN_MK17SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_SNIPER_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17SD_SNIPER_DESC">
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>			
+		
+		<!-- XM8 -->
+		<Key ID="STR_DZ_WPN_XM8_CARBINE_NAME">
+			<English>XM8 Carbine</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_XM8_GL_CARBINE_NAME">
+			<English>XM8 XM320 Carbine</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_XM8_COMPACT_NAME">
+			<English>XM8 Compact</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_XM8_SHARPSHOOTER_NAME">
+			<English>XM8 Sharpshooter</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_XM8_SAW_NAME">
+			<English>XM8 SAW</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_XM8_CARBINE_SD_NAME">
+			<English>XM8 Carbine SD</English>
+		</Key>	
+		
+		<!-- M110 -->
+		<Key ID="STR_DZ_WPN_M110_NV_NAME">
+			<English>M110 NV</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M110_NV_DESC">
+			<English>Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
 		</Key>	
 		
 		<!-- **** MAGAZINES **** -->

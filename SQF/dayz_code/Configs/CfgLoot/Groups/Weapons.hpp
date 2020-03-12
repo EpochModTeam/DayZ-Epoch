@@ -139,8 +139,8 @@ weaponsEU[] =
 	// Sniper Rifles
 	{Loot_WEAPON,		1,		L115A3_DZ}, // Tan Lapua
 	{Loot_WEAPON,		1,		L115A3_2_DZ}, // Green Lapua
-	{Loot_WEAPON,		4,		SCAR_H_LNG_Sniper_SD},
-	{Loot_WEAPON,		4,		SCAR_H_LNG_Sniper},	
+	{Loot_WEAPON,		4,		MK17_Sniper_SD_DZ},
+	{Loot_WEAPON,		4,		MK17_Sniper_DZ},	
 	{Loot_WEAPON,		2,		HK417_Sniper_SD_DZ},
 	{Loot_WEAPON,		2,		HK417_Sniper_DZ},
 	{Loot_WEAPON,		1,		RSASS_DZ},		
@@ -166,10 +166,11 @@ weaponsEU[] =
 	{Loot_WEAPON,		5,		G36C_Camo_DZ},
 	{Loot_WEAPON,		5,		G36K_Camo_DZ},
 	{Loot_WEAPON,		5,		G36C_Camo_Holo_SD_DZ},
-	{Loot_WEAPON,		5,		m8_compact},
-	{Loot_WEAPON,		5,		m8_sharpshooter},
-	{Loot_WEAPON,		5,		m8_holo_sd},
-	{Loot_WEAPON,		5,		m8_carbine},
+	{Loot_WEAPON,		5,		XM8_Compact_DZ},
+	{Loot_WEAPON,		5,		XM8_Sharpsh_DZ},
+	{Loot_WEAPON,		5,		XM8_SD_DZ},
+	{Loot_WEAPON,		5,		XM8_DZ},
+	{Loot_WEAPON,		5,		XM8_GL_DZ},
 	{Loot_WEAPON,		5,		L85A2_DZ},
 	{Loot_WEAPON,		5,		HK53A3_DZ},
 	{Loot_WEAPON,		5,		Famas_DZ},
@@ -187,7 +188,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		3,		MK17_ACOG_SD_DZ},
 	
 	// Machine Guns
-	{Loot_WEAPON,		6,		M8_SAW},
+	{Loot_WEAPON,		6,		XM8_SAW_DZ},
 	{Loot_WEAPON,		4,		L110A1_DZ},
 	{Loot_WEAPON,		4,		MG36_Camo_DZ},
 	{Loot_WEAPON,		4,		MG36_DZ},
@@ -206,7 +207,7 @@ weaponsCZ[] =
 	
 	// Sniper Rifles
 	{Loot_WEAPON,		3,		CZ750_DZ},
-	{Loot_WEAPON,		3,		M110_NVG_EP1}, // Technically a US rifle, but the CZ group does not have a DMR type rifle.
+	{Loot_WEAPON,		3,		M110_NV_DZ}, // Technically a US rifle, but the CZ group does not have a DMR type rifle.
 	{Loot_WEAPON,		1,		XM2010_DZ}, // High value weapon, low spawn chance.
 	
 	// Submachine Guns
