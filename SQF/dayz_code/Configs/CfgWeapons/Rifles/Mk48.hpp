@@ -57,3 +57,15 @@ class Mk48_Holo_DZ : Mk48_CCO_DZ
 		};
 	};
 };
+
+class Mk_48_DES_EP1;
+class Mk48_DES_CCO_DZ: Mk_48_DES_EP1 {
+	displayName = $STR_DZ_WPN_MK48_CCO_NAME;
+	type = WeaponSlotPrimary;
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {300,400,500,600,700,800,900,1000};
+	discreteDistanceInitIndex = 0;
+	irDistance = 150;
+	irLaserPos = "laser pos";
+	irLaserEnd = "laser dir";	
+};

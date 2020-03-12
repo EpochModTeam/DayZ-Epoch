@@ -13005,6 +13005,20 @@
 			<German>Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
 		</Key>	
 		
+		<!-- Mk43 -->
+		<Key ID="STR_DZ_WPN_MK43_NAME">
+			<English>Mk43</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK43_HOLO_NAME">
+			<English>Mk43 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK43_ACOG_NAME">
+			<English>Mk43 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK43_M145_NAME">
+			<English>Mk43 M145</English>
+		</Key>		
+		
 		<!-- **** MAGAZINES **** -->
 		
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">

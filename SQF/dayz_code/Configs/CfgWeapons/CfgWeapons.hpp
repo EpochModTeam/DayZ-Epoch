@@ -137,6 +137,7 @@ class CfgWeapons
 	#include "Rifles\M240.hpp"
 	
 	#include "Rifles\M60A4.hpp"
+	#include "Rifles\MK43.hpp"
 
 	class M1014 : Rifle
 	{

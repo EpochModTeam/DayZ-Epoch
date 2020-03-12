@@ -109,11 +109,13 @@ weaponsUS[] =
 	
 	// Machine Guns
 	{Loot_WEAPON,		3,		M60A4_EP1_DZE},
+	{Loot_WEAPON,		3,		Mk43_DZ},
+	{Loot_WEAPON,		3,		MK43_M145_DZ},
 	{Loot_WEAPON,		5,		M249_m145_EP1_DZE},
 	{Loot_WEAPON,		3,		m240_scoped_EP1_DZE},
 	{Loot_WEAPON,		3,		M240_DZ},
 	{Loot_WEAPON,		5,		M249_DZ},
-	{Loot_WEAPON,		5,		M249_EP1_DZ},	
+	{Loot_WEAPON,		5,		M249_EP1_DZ}	
 };
 
 weaponsEU[] =
@@ -193,6 +195,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		4,		MG36_Camo_DZ},
 	{Loot_WEAPON,		4,		MG36_DZ},
 	{Loot_WEAPON,		3,		Mk48_DZ},
+	{Loot_WEAPON,		3,		Mk48_DES_CCO_DZ},
 	{Loot_WEAPON,		5,		L86A2_LSW_DZ}
 };
 
