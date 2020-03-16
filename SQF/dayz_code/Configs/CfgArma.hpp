@@ -1254,6 +1254,34 @@ class CfgSurvival {
 		class Skin_CZ_Soldier_Light_Wdl_ACR_DZ : Default { 
 			sex = "male";
 			playerModel = "CZ_Soldier_Light_Wdl_ACR_DZ";
-		};		
+		};	
+		class Skin_Firefighter1_DZ : Default { 
+			sex = "male";
+			playerModel = "Firefighter1_DZ";
+		};	
+		class Skin_Firefighter2_DZ : Default { 
+			sex = "male";
+			playerModel = "Firefighter2_DZ";
+		};
+		class Skin_Firefighter3_DZ : Default { 
+			sex = "male";
+			playerModel = "Firefighter3_DZ";
+		};
+		class Skin_Firefighter4_DZ : Default { 
+			sex = "male";
+			playerModel = "Firefighter4_DZ";
+		};
+		class Skin_Firefighter5_DZ : Default { 
+			sex = "male";
+			playerModel = "Firefighter5_DZ";
+		};	
+		class Skin_Firefighter_Officer1_DZ : Default { 
+			sex = "male";
+			playerModel = "Firefighter_Officer1_DZ";
+		};	
+		class Skin_Firefighter_Officer2_DZ : Default { 
+			sex = "male";
+			playerModel = "Firefighter_Officer2_DZ";
+		};			
 	};
 };

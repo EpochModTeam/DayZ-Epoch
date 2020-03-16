@@ -843,3 +843,38 @@ class Skin_CZ_Soldier_Light_Wdl_ACR_DZ : SkinBase {
 	displayName = $STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME;
 	descriptionShort = $STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME;
 };
+class Skin_Firefighter1_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_FIREFIGHTER1_NAME;
+	descriptionShort = $STR_DZE_SKIN_FIREFIGHTER1_NAME;
+};
+class Skin_Firefighter2_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_FIREFIGHTER2_NAME;
+	descriptionShort = $STR_DZE_SKIN_FIREFIGHTER2_NAME;
+};
+class Skin_Firefighter3_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_FIREFIGHTER3_NAME;
+	descriptionShort = $STR_DZE_SKIN_FIREFIGHTER3_NAME;
+};
+class Skin_Firefighter4_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_FIREFIGHTER4_NAME;
+	descriptionShort = $STR_DZE_SKIN_FIREFIGHTER4_NAME;
+};
+class Skin_Firefighter5_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_FIREFIGHTER5_NAME;
+	descriptionShort = $STR_DZE_SKIN_FIREFIGHTER5_NAME;
+};
+class Skin_Firefighter_Officer1_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_FIREFIGHTER_OFFICER1_NAME;
+	descriptionShort = $STR_DZE_SKIN_FIREFIGHTER_OFFICER1_NAME;
+};
+class Skin_Firefighter_Officer2_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_FIREFIGHTER_OFFICER2_NAME;
+	descriptionShort = $STR_DZE_SKIN_FIREFIGHTER_OFFICER2_NAME;
+};

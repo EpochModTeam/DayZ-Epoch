@@ -8710,7 +8710,7 @@
 			<English>Dingo MK19 (Wood Camo)</English>
 			<Russian>Dingo MK19 (Лесной камуфляж)</Russian>
 			<German>Dingo MK19 (Waldtarn)</German>
-		</Key>		
+		</Key>	
 		<Key ID="STR_VEH_NAME_ATV_BEIGE">
 			<English>ATV (Beige)</English>
 			<German>Quad (Beige)</German>
@@ -9435,6 +9435,10 @@
 			<French>Prêtre infecté</French>
 			<Czech>Infikovaný kněz</Czech>
 		</Key>
+		<Key ID="STR_ZNAME_FIREFIGHTER">
+			<English>Infected Firefighter</English>
+			<German>Infizierter Feuerwehrmann</German>
+		</Key>		
 		<Key ID="STR_ZNAME_CREWMAN">
 			<English>Infected Crewman</English>
 			<Russian>Инфицированный Пилот</Russian>
@@ -21271,6 +21275,42 @@
 		<Key ID="STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME">
 			<English>ACR Soldier Shirt</English>
 			<German>ACR Soldat T-Shirt</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_FIREFIGHTER_NAME">
+			<English>Firefighter</English>
+			<German>Feuerwehrmann</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_FIREFIGHTER_OFFICER_NAME">
+			<English>Firefighter Officer</English>
+			<German>Feuerwehroffizier</German>
+		</Key>			
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER1_NAME">
+			<English>Firefighter 1</English>
+			<German>Feuerwehrmann 1</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER2_NAME">
+			<English>Firefighter 2</English>
+			<German>Feuerwehrmann 2</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER3_NAME">
+			<English>Firefighter 3</English>
+			<German>Feuerwehrmann 3</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER4_NAME">
+			<English>Firefighter 4</English>
+			<German>Feuerwehrmann 4</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER5_NAME">
+			<English>Firefighter 5</English>
+			<German>Feuerwehrmann 5</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER_OFFICER1_NAME">
+			<English>Firefighter Officer 1</English>
+			<German>Feuerwehroffizier 1</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER_OFFICER2_NAME">
+			<English>Firefighter Officer 2</English>
+			<German>Feuerwehroffizier 2</German>
 		</Key>			
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>

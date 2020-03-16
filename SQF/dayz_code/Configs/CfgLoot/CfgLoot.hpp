@@ -50,6 +50,7 @@ class CfgLoot
 		#include "Groups\Zombies\Rebels.hpp" //DZE
 		#include "Groups\Zombies\Rocker.hpp" //DZE
 		#include "Groups\Zombies\SpecialForces.hpp" //DZE
+		#include "Groups\Zombies\Firefighter.hpp" //DZE
 	};
 	
 	class Buildings

@@ -52,6 +52,9 @@ Included Custom Addons
 * RH HK416 Pack by Robert Hammer - http://www.armaholic.com/page.php?id=11789
 * RH Ak's Pack by Robert Hammer - http://www.armaholic.com/page.php?id=9029
 * RH MGS weapon pack by Robert Hammer - http://www.armaholic.com/page.php?id=13095
+* German Technical Relief Pack (THW Pack) by Marseille77 - http://www.armaholic.com/page.php?id=15466
+* German Firefighters Pack by Marseille77 - http://www.armaholic.com/page.php?id=20391
+
 
 --------------------------
 Included Custom Islands

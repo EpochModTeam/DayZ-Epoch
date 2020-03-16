@@ -1716,4 +1716,58 @@ class CZ_Soldier_Light_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 	model = "\Ca\Characters_ACR\acr_wdl_light";
 	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca";
 };
-	
+
+class Firefighter1_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_FIREFIGHTER_NAME;
+	model = "\kpfs_thw\characters\worker\thw_worker";
+	hiddenSelections[] = {"camo01","hps","glasses"};
+	hiddenSelectionsTextures[] = {"\kpfs_thw\characters\worker\thw_worker_co.paa"};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_thw\characters\worker\thw_worker.rvmat","kpfs_thw\characters\worker\thw_worker_wound1.rvmat","kpfs_thw\characters\worker\thw_worker_wound2.rvmat"};
+	};
+};
+class Firefighter2_DZ : Firefighter1_DZ {
+	hiddenSelections[] = {"camo01"};
+	hiddenSelectionsTextures[] = {"\kpfs_thw\characters\worker\thw_worker_co.paa"};
+};
+class Firefighter3_DZ : Firefighter1_DZ {
+	hiddenSelections[] = {"camo01","hps","glasses"};
+	hiddenSelectionsTextures[] = {"\kpfs_thw\characters\press\thw_press_co.paa"};
+};
+class Firefighter4_DZ : Firefighter1_DZ {
+	model = "kpfs_feuerwehr\firefighter";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"kpfs_feuerwehr\man\fw_man.rvmat","kpfs_feuerwehr\man\fw_man_wound1.rvmat","kpfs_feuerwehr\man\fw_man_wound2.rvmat"};
+	};
+	hiddenSelections[] = {"camo01","camo02"};
+	hiddenSelectionsTextures[] = {"\kpfs_feuerwehr\man\fw_man_co.paa","\kpfs_feuerwehr\man\fw_helmet_tl_co.paa"};	
+};
+class Firefighter5_DZ : Firefighter4_DZ {
+	model = "kpfs_feuerwehr\firefighter";
+	hiddenSelectionsTextures[] = {"\kpfs_feuerwehr\man\fw_leader_co.paa","\kpfs_feuerwehr\man\fw_helmet_sl_co.paa"};
+};
+class Firefighter_Officer1_DZ : Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_FIREFIGHTER_OFFICER_NAME;
+	model = "\kpfs_thw\characters\officer\thw_officer";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_thw\characters\officer\thw_officer.rvmat","kpfs_thw\characters\officer\thw_officer_wound1.rvmat","kpfs_thw\characters\officer\thw_officer_wound2.rvmat"};
+	};
+};
+class Firefighter_Officer2_DZ : Firefighter_Officer1_DZ {
+	model = "kpfs_feuerwehr\fwofficer";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"kpfs_feuerwehr\officer\fw_officer.rvmat","kpfs_feuerwehr\officer\fw_officer_wound1.rvmat","kpfs_feuerwehr\officer\fw_officer_wound2.rvmat"};
+	};
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+};
