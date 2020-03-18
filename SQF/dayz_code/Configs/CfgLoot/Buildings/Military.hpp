@@ -8,6 +8,7 @@ class Military : Default
 		"z_soldier",
 		"z_soldier",
 		"z_policeman",
+		"z_policeman2",
 		"z_soldier_heavy",
 		"z_soldier_heavy",
 		"z_soldier_usmc_ghillie",
@@ -33,7 +34,8 @@ class MilitaryIndustrial: Military
 		"z_soldier",
 		"z_worker1",
 		"z_worker2",
-		"z_worker3"
+		"z_worker3",
+		"z_worker4"
 	};
 	lootChance = 0.5;
 	lootGroup = MilitaryIndustrial;

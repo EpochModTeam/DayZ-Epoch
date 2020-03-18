@@ -329,6 +329,18 @@ class z_policeman : zZombie_Base {
 		mat[] = {"ca\characters2\civil\policeman\data\policeman.rvmat", "ca\characters2\civil\policeman\data\w1_policeman.rvmat", "ca\characters2\civil\policeman\data\w2_policeman.rvmat", "ca\characters\heads\male\defaulthead\data\hhl.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
 	};
 };
+
+class z_policeman2: z_policeman {
+	model = "kpfs_civ\guard";
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"kpfs_civ\data\guard.rvmat","kpfs_civ\data\guard_wound1.rvmat","kpfs_civ\data\guard_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
+	};
+};
+
 class z_suit1 : zZombie_Base {
 	displayName = $STR_ZNAME_SUIT;
 	zombieLoot = ZombieSuit;
@@ -342,9 +354,21 @@ class z_suit1 : zZombie_Base {
 	};
 }; 
 class z_suit2 : z_suit1 {
-	zombieLoot = ZombieSuit;
 	hiddenSelectionsTextures[] = {"\ca\characters2\civil\functionary\data\functionary2_co.paa"};
 };
+
+class z_suit3 : z_suit1 {
+	hiddenSelectionsTextures[] = {"\kpfs_civ\data\functionary_cdu_co.paa"};
+};
+
+class z_suit4 : z_suit1 {
+	hiddenSelectionsTextures[] = {"\kpfs_civ\data\functionary_fdp_co.paa"};
+};
+
+class z_suit5 : z_suit1 {
+	hiddenSelectionsTextures[] = {"\kpfs_civ\data\functionary_spd_co.paa"};
+};
+
 class z_worker1 : zZombie_Base { 
 	displayName = $STR_ZNAME_WORKER;
 	zombieLoot = ZombieWorker;
@@ -364,6 +388,18 @@ class z_worker2 : z_worker1 {
 class z_worker3 : z_worker1 {
 	hiddenSelectionsTextures[] = {"\Ca\characters_E\Overall\Data\Overall_2_co.paa"};
 };
+
+class z_worker4: z_worker1 {
+	model = "kpfs_civ\worker";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\characters_E\Overall\Data\Overall.rvmat","Ca\characters_E\Overall\Data\W1_Overall.rvmat","Ca\characters_E\Overall\Data\W2_Overall.rvmat"};
+	};
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+};
+
 class z_doctor : zZombie_Base { 
 	displayName = $STR_ZNAME_DOCTOR;
 	model = "\ca\characters2\civil\Doctor\Doctor";
@@ -378,9 +414,22 @@ class z_doctor : zZombie_Base {
 }; 
 class z_teacher : z_doctor { 
 	displayName = $STR_ZNAME_TEACHER;
-	zombieLoot = ZombieCivilian;
+	zombieLoot = ZombieTeacher;
 	hiddenSelectionsTextures[] = {"\dayz\textures\clothes\teacher_co.paa"};
 }; 
+
+class z_assistant : z_doctor { 
+	displayName = $STR_ZNAME_ASSISTANT;
+	zombieLoot = ZombieCivilian;
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\doctor\data\doctor_3_co.paa"};
+};
+
+class z_gardener : z_doctor { 
+	displayName = $STR_ZNAME_GARDENER;
+	zombieLoot = ZombieGardener;
+	hiddenSelectionsTextures[] = {"\kpfs_civ\data\dealer_beer_co.paa"};
+};
+
 class z_hunter : zZombie_Base { 
 	displayName = $STR_ZNAME_HUNTER;
 	zombieLoot = ZombieHunter;
@@ -394,7 +443,25 @@ class z_hunter : zZombie_Base {
 	};
 };
 
-// New 1.0.6.3 Zombies
+class z_hunter2 : z_hunter {
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\woodlander\data\woodlander_co.paa"};
+};
+class z_hunter3 : z_hunter {
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\woodlander\data\woodlander_v2_co.paa"};
+};
+class z_hunter4 : z_hunter {
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\woodlander\data\woodlander_v4_co.paa"};
+};
+class z_hunter5 : z_hunter {
+	model = "kpfs_civ\hunter";
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\IndepIns\Data\prizrak.rvmat","ca\characters2\IndepIns\Data\W1_prizrak.rvmat","ca\characters2\IndepIns\Data\W2_prizrak.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
+	};
+};
 
 class z_soldier_usmc_soldier : z_soldier {
 	displayName = $STR_ZNAME_SOLDIER;
@@ -986,27 +1053,6 @@ class z_rocker4 : z_rocker1 {
 	hiddenSelectionsTextures[] = {"\ca\characters2\Civil\Rocker\Data\rocker_v4_co.paa","\ca\characters2\Civil\Rocker\Data\rockerhair_v3_ca.paa"};
 };
 
-class z_hunter2 : z_hunter {
-	displayName = $STR_ZNAME_HUNTER;
-	zombieLoot = ZombieHunter;
-	hiddenSelectionsTextures[] = {"\ca\characters2\civil\woodlander\data\woodlander_co.paa"};
-};
-class z_hunter3 : z_hunter {
-	displayName = $STR_ZNAME_HUNTER;
-	zombieLoot = ZombieHunter;
-	hiddenSelectionsTextures[] = {"\ca\characters2\civil\woodlander\data\woodlander_v2_co.paa"};
-};
-class z_hunter4 : z_hunter {
-	displayName = $STR_ZNAME_HUNTER;
-	zombieLoot = ZombieHunter;
-	hiddenSelectionsTextures[] = {"\ca\characters2\civil\woodlander\data\woodlander_v4_co.paa"};
-};
-class z_assistant : z_doctor { 
-	displayName = $STR_ZNAME_ASSISTANT;
-	zombieLoot = ZombieCivilian;
-	hiddenSelectionsTextures[] = {"\ca\characters2\civil\doctor\data\doctor_3_co.paa"};
-};
-
 class z_pilot : zZombie_Base {
 	displayName = $STR_ZNAME_PILOT;
 	zombieLoot = ZombieCivilian;
@@ -1453,3 +1499,42 @@ class z_firefighter5 : z_firefighter4 {
 	model = "kpfs_feuerwehr\firefighter";
 	hiddenSelectionsTextures[] = {"\kpfs_feuerwehr\man\fw_leader_co.paa","\kpfs_feuerwehr\man\fw_helmet_sl_co.paa"};
 };
+
+class z_postman1 : zZombie_Base { 
+	displayName = $STR_ZNAME_POSTMAN;
+	zombieLoot = ZombiePostman;
+	model = "kpfs_civ\dbp_officer";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_civ\data\dbp_officer.rvmat","kpfs_civ\data\dbp_officer_wound1.rvmat","kpfs_civ\data\dbp_officer_wound2.rvmat"};
+	};
+};
+
+class z_postman2 : z_postman1 { 
+	model = "kpfs_civ\dbp_officer_cap";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_civ\data\dbp72_officer.rvmat","kpfs_civ\data\dbp72_officer_wound1.rvmat","kpfs_civ\data\dbp72_officer_wound2.rvmat"};
+	};
+};
+
+class z_postman3 : z_postman1 { 
+	model = "kpfs_civ\dpag_1_tshirt";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_civ\data\civil_tshirt_body.rvmat","kpfs_civ\data\civil_tshirt_body_wound1.rvmat","kpfs_civ\data\civil_tshirt_body_wound2.rvmat"};
+	};
+};
+
+class z_postman4: z_postman1 {
+	model = "kpfs_civ\dp_officer";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_civ\data\dp_officer.rvmat","kpfs_civ\data\dp_officer_wound1.rvmat","kpfs_civ\data\dp_officer_wound2.rvmat"};
+	};
+};
+

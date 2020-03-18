@@ -5,8 +5,13 @@ class Skin_Rocket_DZ: SkinBase {
 };
 class Skin_RU_Policeman_DZ: SkinBase {
 	scope = public;
-	displayName = $STR_EPOCH_SKINS_SERGEI;
-	descriptionShort = $STR_EPOCH_SKINS_SERGEI_DESC;
+	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER1;
+	descriptionShort = $STR_EPOCH_SKINS_POLICE_DESC;
+};
+class Skin_RU_Policeman2_DZ: SkinBase {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER2;
+	descriptionShort = $STR_EPOCH_SKINS_POLICE_DESC;
 };
 class Skin_Pilot_EP1_DZ: SkinBase {
 	scope = public;
@@ -877,4 +882,39 @@ class Skin_Firefighter_Officer2_DZ : SkinBase {
 	scope = public;
 	displayName = $STR_DZE_SKIN_FIREFIGHTER_OFFICER2_NAME;
 	descriptionShort = $STR_DZE_SKIN_FIREFIGHTER_OFFICER2_NAME;
+};
+class Skin_Postman1_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_POSTMAN1_NAME;
+	descriptionShort = $STR_DZE_SKIN_POSTMAN1_NAME;
+};
+class Skin_Postman2_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_POSTMAN2_NAME;
+	descriptionShort = $STR_DZE_SKIN_POSTMAN2_NAME;
+};
+class Skin_Postman3_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_POSTMAN3_NAME;
+	descriptionShort = $STR_DZE_SKIN_POSTMAN3_NAME;
+};
+class Skin_Postman4_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_POSTMAN4_NAME;
+	descriptionShort = $STR_DZE_SKIN_POSTMAN4_NAME;
+};
+class Skin_SchoolTeacher_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_TEACHER_NAME;
+	descriptionShort = $STR_DZE_SKIN_TEACHER_NAME;
+};
+class Skin_Gardener_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_GARDENER_NAME;
+	descriptionShort = $STR_DZE_SKIN_GARDENER_NAME;
+};
+class Skin_Hunter_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_HUNTER_NAME;
+	descriptionShort = $STR_DZE_SKIN_HUNTER_NAME;
 };

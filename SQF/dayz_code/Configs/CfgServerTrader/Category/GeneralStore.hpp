@@ -126,6 +126,13 @@ class Category_30 {
 	class Skin_Firefighter5_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_Firefighter_Officer1_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_Firefighter_Officer2_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};	
+	class Skin_Postman1_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_Postman2_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_Postman3_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_Postman4_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_Hunter_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_Gardener_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_SchoolTeacher_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 };
 
 //Backpacks

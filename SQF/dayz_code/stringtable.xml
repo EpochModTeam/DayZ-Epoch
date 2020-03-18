@@ -9484,6 +9484,14 @@
 			<Russian>Инфицированный Охранник</Russian>
 			<German>Infizierter Leibwächter</German>
 		</Key>
+		<Key ID="STR_ZNAME_POSTMAN">
+			<English>Infected Postman</English>
+			<German>Infizierter Postbote</German>
+		</Key>		
+		<Key ID="STR_ZNAME_GARDENER">
+			<English>Infected Gardener</English>
+			<German>Infizierter Gärtner</German>
+		</Key>			
 	</Package>
 	<Package name="construction">
 		<Key ID="STR_BLD_name_ItemWorkBench">
@@ -20202,19 +20210,20 @@
 			<German>Offiziers Anzug</German>
 			<Russian>Униформа офицера</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_SKINS_SERGEI">
-			<English>Sergei</English>
-			<Russian>Сергей</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER">
-			<English>Police Officer</English>
-			<German>Polizei Offizier</German>
-			<Russian>сотрудника полиции</Russian>
-		</Key>
-		<Key ID="STR_EPOCH_SKINS_SERGEI_DESC">
+		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER1">
+			<English>Police Officer 1</English>
+			<German>Polizei Offizier 1</German>
+			<Russian>сотрудника полиции 1</Russian>
+		</Key>		
+		<Key ID="STR_EPOCH_SKINS_POLICE_DESC">
 			<English>Police Officer Uniform</English>
 			<German>Polizei Offizier Uniform</German>
 			<Russian>Униформа сотрудника полиции</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER2">
+			<English>Police Officer 2</English>
+			<German>Polizei Offizier 2</German>
+			<Russian>сотрудника полиции 2</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_SKINS_ETHAN">
 			<English>Ethan</English>
@@ -20664,6 +20673,14 @@
 		<Key ID="STR_EPOCH_SKINS_ASSISTANT">
 			<English>Assistant</English>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_TEACHER">
+			<English>Teacher</English>
+			<German>Lehrer</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SKINS_GARDENER">
+			<English>Gardener</English>
+			<German>Gärtner</German>
+		</Key>			
 		<Key ID="STR_EPOCH_SKINS_DOCTOR">
 			<English>Doctor</English>
 			<Russian>Доктор</Russian>
@@ -21283,6 +21300,14 @@
 		<Key ID="STR_DZE_EQUIP_FIREFIGHTER_OFFICER_NAME">
 			<English>Firefighter Officer</English>
 			<German>Feuerwehroffizier</German>
+		</Key>
+		<Key ID="STR_DZE_EQUIP_POSTMAN_NAME">
+			<English>Postman</English>
+			<German>Postbote</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_HUNTER_NAME">
+			<English>Hunter</English>
+			<German>Jäger</German>
 		</Key>			
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER1_NAME">
 			<English>Firefighter 1</English>
@@ -21312,6 +21337,34 @@
 			<English>Firefighter Officer 2</English>
 			<German>Feuerwehroffizier 2</German>
 		</Key>			
+		<Key ID="STR_DZE_SKIN_POSTMAN1_NAME">
+			<English>Postman 1</English>
+			<German>Postbote 1</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_POSTMAN2_NAME">
+			<English>Postman 2</English>
+			<German>Postbote 2</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_POSTMAN3_NAME">
+			<English>Postman 3</English>
+			<German>Postbote 3</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_POSTMAN4_NAME">
+			<English>Postman 4</English>
+			<German>Postbote 4</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_TEACHER_NAME">
+			<English>Teacher</English>
+			<German>Lehrer</German>
+		</Key>
+		<Key ID="STR_DZE_SKIN_GARDENER_NAME">
+			<English>Gardener</English>
+			<German>Gärtner</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_HUNTER_NAME">
+			<English>Hunter</English>
+			<German>Jäger</German>
+		</Key>		
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>

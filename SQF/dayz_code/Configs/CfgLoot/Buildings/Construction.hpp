@@ -6,7 +6,8 @@ class Construction : Default
 	{
 		"z_worker1",
 		"z_worker2",
-		"z_worker3"
+		"z_worker3",
+		"z_worker4"
 	};
 	lootChance = 0.4;
 	lootGroup = Construction;

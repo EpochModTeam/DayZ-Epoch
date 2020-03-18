@@ -54,6 +54,7 @@ Included Custom Addons
 * RH MGS weapon pack by Robert Hammer - http://www.armaholic.com/page.php?id=13095
 * German Technical Relief Pack (THW Pack) by Marseille77 - http://www.armaholic.com/page.php?id=15466
 * German Firefighters Pack by Marseille77 - http://www.armaholic.com/page.php?id=20391
+* German Civil Pack by Marseille77 - http://www.armaholic.com/page.php?id=9793
 
 
 --------------------------

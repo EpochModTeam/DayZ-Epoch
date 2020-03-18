@@ -28,7 +28,14 @@ clothes[] = {
 	{Loot_MAGAZINE,	1,	Skin_Firefighter4_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Firefighter5_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Firefighter_Officer1_DZ},
-	{Loot_MAGAZINE,	1,	Skin_Firefighter_Officer2_DZ}
+	{Loot_MAGAZINE,	1,	Skin_Firefighter_Officer2_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Postman1_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Postman2_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Postman3_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Postman4_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Hunter_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Gardener_DZ},
+	{Loot_MAGAZINE,	1,	Skin_SchoolTeacher_DZ},
 };
 
 // These should probably be split up into separate groups.

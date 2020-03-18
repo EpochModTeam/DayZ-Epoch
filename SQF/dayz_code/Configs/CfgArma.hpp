@@ -574,6 +574,10 @@ class CfgSurvival {
 			sex = "male";
 			playerModel = "RU_Policeman_DZ";
 		};
+		class Skin_RU_Policeman2_DZ: Default {
+			sex = "male";
+			playerModel = "RU_Policeman2_DZ";
+		};		
 		class Skin_Pilot_EP1_DZ: Default {
 			sex = "male";
 			playerModel = "Pilot_EP1_DZ";
@@ -1282,6 +1286,34 @@ class CfgSurvival {
 		class Skin_Firefighter_Officer2_DZ : Default { 
 			sex = "male";
 			playerModel = "Firefighter_Officer2_DZ";
-		};			
+		};		
+		class Skin_Postman1_DZ : Default { 
+			sex = "male";
+			playerModel = "Postman1_DZ";
+		};	
+		class Skin_Postman2_DZ : Default { 
+			sex = "male";
+			playerModel = "Postman2_DZ";
+		};	
+		class Skin_Postman3_DZ : Default { 
+			sex = "male";
+			playerModel = "Postman3_DZ";
+		};	
+		class Skin_Postman4_DZ : Default { 
+			sex = "male";
+			playerModel = "Postman4_DZ";
+		};		
+		class Skin_SchoolTeacher_DZ : Default { 
+			sex = "male";
+			playerModel = "SchoolTeacher_DZ";
+		};		
+		class Skin_Gardener_DZ : Default { 
+			sex = "male";
+			playerModel = "Gardener_DZ";
+		};	
+		class Skin_Hunter_DZ : Default { 
+			sex = "male";
+			playerModel = "Hunter_DZ";
+		};		
 	};
 };

@@ -41,7 +41,7 @@ class CfgLoot
 		#include "Groups\Zombies\Suit.hpp" //DZE
 		#include "Groups\Zombies\Doctor.hpp" //DZE
 		#include "Groups\Zombies\Pilot.hpp" //DZE
-		//New 1.0.6.3
+		//New 1.0.7
 		#include "Groups\Zombies\Bodyguard.hpp" //DZE
 		#include "Groups\Zombies\Crewman.hpp" //DZE
 		#include "Groups\Zombies\Ghillie.hpp" //DZE
@@ -51,6 +51,9 @@ class CfgLoot
 		#include "Groups\Zombies\Rocker.hpp" //DZE
 		#include "Groups\Zombies\SpecialForces.hpp" //DZE
 		#include "Groups\Zombies\Firefighter.hpp" //DZE
+		#include "Groups\Zombies\Postman.hpp" //DZE
+		#include "Groups\Zombies\Teacher.hpp" //DZE
+		#include "Groups\Zombies\Gardener.hpp" //DZE
 	};
 	
 	class Buildings

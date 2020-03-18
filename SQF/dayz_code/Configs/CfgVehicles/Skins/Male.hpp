@@ -420,19 +420,30 @@ class GUE_Soldier_2_DZ: GUE_Soldier_2 {
 	canHideBodies = 1;
 	canCarryBackPack = 1;
 };
-class RU_Policeman;
-class RU_Policeman_DZ: RU_Policeman {
-	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+
+class RU_Policeman_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER1;
+	model = "\ca\characters2\civil\Policeman\Policeman";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\civil\policeman\data\policeman.rvmat","ca\characters2\civil\policeman\data\w1_policeman.rvmat","ca\characters2\civil\policeman\data\w2_policeman.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
+	};
 };
+
+class RU_Policeman2_DZ: RU_Policeman_DZ {
+	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER2;
+	model = "kpfs_civ\guard";
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"kpfs_civ\data\guard.rvmat","kpfs_civ\data\guard_wound1.rvmat","kpfs_civ\data\guard_wound2.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
+	};
+};
+
 class Pilot_EP1;
 class Pilot_EP1_DZ: Pilot_EP1 {
 	displayName = $STR_EPOCH_SKINS_PILOT;
@@ -925,32 +936,36 @@ class CDF_Soldier_DZ: CDF_Soldier {
 	canHideBodies = 1;
 	canCarryBackPack = 1;
 };
-class Doctor;
-class Doctor_DZ: Doctor {
+
+class Doctor_DZ: Survivor_DZ {
+	scope = public;
+	attendant = 0;
 	displayName = $STR_EPOCH_SKINS_DOCTOR;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\civil\Doctor\Doctor";
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\doctor\data\doctor_co.paa"};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\civil\doctor\data\doctor.rvmat","ca\characters2\civil\doctor\data\W1_doctor.rvmat","ca\characters2\civil\doctor\data\W2_doctor.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat"};
+	};	
 };
-class Assistant;
-class Assistant_DZ: Assistant {
+
+class Assistant_DZ: Doctor_DZ {
 	displayName = $STR_EPOCH_SKINS_ASSISTANT;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\doctor\data\doctor_3_co.paa"};
 };
+
+class SchoolTeacher_DZ: Doctor_DZ {
+	displayName = $STR_EPOCH_SKINS_TEACHER;
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\doctor\data\doctor2_co.paa"};
+};
+
+class Gardener_DZ: Doctor_DZ {
+	displayName = $STR_EPOCH_SKINS_GARDENER;
+	hiddenSelectionsTextures[] = {"\kpfs_civ\data\dealer_beer_co.paa"};
+};
+
 class Worker1;
 class Worker1_DZ: Worker1 {
 	displayName = $STR_EPOCH_SKINS_WORKER;
@@ -1770,4 +1785,55 @@ class Firefighter_Officer2_DZ : Firefighter_Officer1_DZ {
 	};
 	hiddenSelections[] = {};
 	hiddenSelectionsTextures[] = {};
+};
+
+class Postman1_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_POSTMAN_NAME;
+	model = "kpfs_civ\dbp_officer";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_civ\data\dbp_officer.rvmat","kpfs_civ\data\dbp_officer_wound1.rvmat","kpfs_civ\data\dbp_officer_wound2.rvmat"};
+	};
+};
+
+class Postman2_DZ: Postman1_DZ {
+	model = "kpfs_civ\dbp_officer_cap";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_civ\data\dbp72_officer.rvmat","kpfs_civ\data\dbp72_officer_wound1.rvmat","kpfs_civ\data\dbp72_officer_wound2.rvmat"};
+	};
+};
+
+class Postman3_DZ: Postman1_DZ {
+	model = "kpfs_civ\dpag_1_tshirt";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_civ\data\civil_tshirt_body.rvmat","kpfs_civ\data\civil_tshirt_body_wound1.rvmat","kpfs_civ\data\civil_tshirt_body_wound2.rvmat"};
+	};
+};
+
+class Postman4_DZ: Postman1_DZ {
+	model = "kpfs_civ\dp_officer";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_civ\data\dp_officer.rvmat","kpfs_civ\data\dp_officer_wound1.rvmat","kpfs_civ\data\dp_officer_wound2.rvmat"};
+	};
+};
+
+class Hunter_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_HUNTER_NAME;
+	model = "kpfs_civ\hunter";
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\IndepIns\Data\prizrak.rvmat","ca\characters2\IndepIns\Data\W1_prizrak.rvmat","ca\characters2\IndepIns\Data\W2_prizrak.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
+	};
 };

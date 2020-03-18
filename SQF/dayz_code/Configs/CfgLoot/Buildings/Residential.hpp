@@ -32,7 +32,13 @@ class Residential : Default
 		"z_firefighter2",
 		"z_firefighter3",
 		"z_firefighter4",
-		"z_firefighter5"		
+		"z_firefighter5",
+		"z_postman1",
+		"z_postman2",
+		"z_postman3",
+		"z_postman4",
+		"z_assistant",
+		"z_gardener"	
 	};
 	lootChance = 0.5;
 	lootGroup = Residential;
