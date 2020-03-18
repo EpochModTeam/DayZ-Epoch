@@ -4,6 +4,7 @@ class 30Rnd_9x19_UZI : CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\pdw_mag.p3d";
 	displayName = $STR_DZ_MAG_30RND_9X19_UZI_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_9X19_UZI_DESC;	
 
 	cartridgeName = "9x19";
 	
@@ -30,6 +31,7 @@ class 30Rnd_9x19_UZI_SD : CA_Magazine
 {
 	model = "dayz_epoch_c\models\magazines\pdw_mag.p3d";
 	displayName = $STR_DZ_MAG_30RND_9X19_UZISD_NAME;	
+	descriptionShort = $STR_DZ_MAG_30RND_9X19_UZISD_DESC;	
 	picture = "\dayz_epoch_c\icons\magazines\m_uzisd_ca.paa";
 
 	cartridgeName = "9x19_SD";
@@ -370,4 +372,20 @@ class 32Rnd_9x19_TEC9: 15Rnd_9x19_M9
 		delete ReloadMag;
 		COMBINE_MAG
 	};	
+};
+
+class 30Rnd_9x19_TMP : 30Rnd_9x19_MP5
+{
+	displayName = $STR_DZ_MAG_30RND_9X19_TMP_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_TMP_DESC;	
+	model = "\RH_smg\mags\mag_uzi.p3d";
+	picture = "\RH_smg\inv\m_uzi.paa";	
+};
+
+class 30Rnd_9x19_TMPSD : 30Rnd_9x19_MP5SD
+{
+	model = "\RH_smg\mags\mag_uzi.p3d";
+	picture = "\RH_smg\inv\m_uzi.paa";
+	displayName = $STR_DZ_MAG_30RND_9X19_TMPSD_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_TMPSD_DESC;
 };

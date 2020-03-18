@@ -3,6 +3,8 @@ class Category_19 {
 	class 7Rnd_9x17_PPK {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};	
 	class 8Rnd_9x18_Makarov {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class 8Rnd_9x18_MakarovSD {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};	
+	class 20Rnd_9x18_APS {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};
+	class 20Rnd_9x18_APSSD {type = "trade_items";buy[] = {8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};	
 	class 8Rnd_762x25_TT33 {type = "trade_items";buy[] = {6,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
 	class 8Rnd_9x19_P38 {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class 13Rnd_9x19_BHP {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};
@@ -36,10 +38,18 @@ class Category_20 {
 	class 30Rnd_9x19_UZI_SD {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
 	class 30Rnd_9x19_MP5 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class 30Rnd_9x19_MP5SD {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
+	class 30Rnd_9x19_TMP {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class 30Rnd_9x19_TMPSD {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
 	class 64Rnd_9x19_Bizon {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class 64Rnd_9x19_SD_Bizon {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
 	class 40Rnd_46x30_mp7 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
-	class 40Rnd_46x30_sd_mp7 {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};	
+	class 40Rnd_46x30_sd_mp7 {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};	
+	class 33Rnd_45ACP_KRISS {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};	
+	class 33Rnd_45ACP_KRISSSD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class 25Rnd_45ACP_UMP {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};	
+	class 25Rnd_45ACP_UMPSD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class 50Rnd_57x28_P90 {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
+	class 50Rnd_57x28_P90SD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};	
 };
 
 //Single-shot/Shotgun Ammo
@@ -64,15 +74,25 @@ class Category_22 {
 	class 30Rnd_556x45_G36 {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class 30Rnd_556x45_G36SD {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class 30Rnd_545x39_AK {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
-	class 30Rnd_545x39_AKSD {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
-	class 30Rnd_762x39_AK47 {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
-	class 30Rnd_762x39_SA58 {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
+	class 30Rnd_545x39_AKSD {type = "trade_items";buy[] = {3,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class 30Rnd_762x39_AK47 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class 30Rnd_762x39_SA58 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class 30Rnd_762x39_RK95 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class 30Rnd_762x39_RK95SD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class 30Rnd_762x39_Groza1 {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class 30Rnd_762x39_Groza1SD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class 20Rnd_9x39_Groza9 {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class 20Rnd_9x39_Groza9SD {type = "trade_items";buy[] = {3,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class 20Rnd_9x39_SP5_VSS {type = "trade_items";buy[] = {3,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};	
 	class 20Rnd_762x51_FNFAL {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
 	class ACR_30Rnd_680x43 {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
 	class ACR_30Rnd_680x43_SD {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class 20Rnd_762x51_DMR {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class 20Rnd_762x51_DMRSD {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class 20Rnd_762x51_B_SCAR {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class 20Rnd_762x51_SB_SCAR {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class 20Rnd_762x51_HK417 {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class 20Rnd_762x51_HK417SD {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 };
 
 //Sniper Rifle Ammo

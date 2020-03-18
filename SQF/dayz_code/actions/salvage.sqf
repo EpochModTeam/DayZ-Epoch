@@ -1,13 +1,13 @@
-private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_finished","_hasToolbox","_nameType","_namePart","_damage","_BreakableParts","_selection","_wpn","_classname","_ismelee"];
-
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_finished","_hasToolbox","_nameType","_namePart","_damage","_BreakableParts","_selection","_wpn","_hits","_ismelee"];
 
 _array = 	_this select 3;
 _vehicle = 	_array select 0;
 _part =		_array select 1;
 _hitpoint = _array select 2;
-_type = typeOf _vehicle; 
+_type = typeOf _vehicle;
 _isOK = false;
 _brokenPart = false;
 _hasToolbox = "ItemToolbox" in items player;
@@ -21,7 +21,7 @@ s_player_repair_crtl = 1;
 
 if (_hasToolbox) then {
 	if ([_vehicle] call DZE_SafeZonePosCheck) exitWith {(localize "str_salvage_safezone") call dayz_rollingMessages;};
-	
+
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,50,true,(getPosATL player)] call player_alertZombies;
 
@@ -43,11 +43,11 @@ if (_hasToolbox) then {
 					_isOK = [player,_part] call BIS_fnc_invAdd;
 					_brokenPart = false;
 				};
-			} else {				
+			} else {
 				_isOK = [player,_part] call BIS_fnc_invAdd;
 				_brokenPart = false;
 			};
-			
+
 			if (_isOK) then {
 				_selection = _hits select 1;
 				/*if ((_hitpoint == "HitEngine") or (_hitpoint == "HitFuel")) then {
@@ -80,7 +80,6 @@ dayz_actionInProgress = false;
 
 //adding melee mags back if needed
 _wpn = primaryWeapon player;
-//diag_log format["Classname: %1, WPN: %2", _classname,_wpn];
 _ismelee = (getNumber (configFile >> "CfgWeapons" >> _wpn >> "melee") == 1);
 if (_ismelee) then {
 	call dayz_meleeMagazineCheck;

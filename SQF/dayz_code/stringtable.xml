@@ -8710,7 +8710,7 @@
 			<English>Dingo MK19 (Wood Camo)</English>
 			<Russian>Dingo MK19 (Лесной камуфляж)</Russian>
 			<German>Dingo MK19 (Waldtarn)</German>
-		</Key>		
+		</Key>	
 		<Key ID="STR_VEH_NAME_ATV_BEIGE">
 			<English>ATV (Beige)</English>
 			<German>Quad (Beige)</German>
@@ -9435,6 +9435,10 @@
 			<French>Prêtre infecté</French>
 			<Czech>Infikovaný kněz</Czech>
 		</Key>
+		<Key ID="STR_ZNAME_FIREFIGHTER">
+			<English>Infected Firefighter</English>
+			<German>Infizierter Feuerwehrmann</German>
+		</Key>		
 		<Key ID="STR_ZNAME_CREWMAN">
 			<English>Infected Crewman</English>
 			<Russian>Инфицированный Пилот</Russian>
@@ -11160,6 +11164,14 @@
 			<English>G36C ACOG SD</English>
 			<Russian>G36C ACOG ПБС</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_G36C_CAMO_NAME">
+			<English>G36C Camo</English>
+			<German>G36C Tarn</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_G36C_CAMO_HOLO_SD_NAME">
+			<English>G36C Camo Holo SD</English>
+			<German>G36C Tarn Holo SD</German>
+		</Key>		
 		
 		<!-- G36 -->
 		<Key ID="STR_DZ_WPN_G36A_CAMO_NAME">
@@ -11201,6 +11213,14 @@
 			<English>Bizon SD</English>
 			<Russian>Бизон ПБС</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_BIZON_KOBRA_NAME">
+			<English>Bizon Kobra</English>
+			<Russian>Бизон Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_BIZON_KOBRA_SD_NAME">
+			<English>Bizon Kobra SD</English>
+			<Russian>Бизон Кобра ПБС</Russian>
+		</Key>		
 		
 		<!-- M9 -->
 		<Key ID="STR_DZ_WPN_M9_NAME">
@@ -11421,6 +11441,10 @@
 			<English>SVD PSO-1 Camo</English>
 			<Russian>СВД ПСО-1 (камуфляж)</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_SVD_PSO1_DES_NAME">
+			<English>SVD PSO-1 Desert</English>
+			<German>SVD PSO-1 Wüstentarn</German>
+		</Key>		
 		
 		<!-- Mosin -->
 		<Key ID="STR_DZ_WPN_MOSIN_NAME">
@@ -11583,26 +11607,26 @@
 			<English>Scorpion Evo 3 CCO SD</English>
 		</Key>
         <Key ID="STR_DZ_WPN_SC_EVO3_DESC">
-          <German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
-          <English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
-          <Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm</Italian>
-          <Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm</Spanish>
-          <French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm</French>
-          <Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm</Czech>
-          <Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм</Russian>
-          <Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm </Polish>
-          <Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm </Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
         </Key>		
         <Key ID="STR_DZ_WPN_SC_EVO3_SD_DESC">
-          <German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
-          <English>Silenced submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
-          <Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 9x19mm</Italian>
-          <Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 9x19mm</Spanish>
-          <French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 9x19mm</French>
-          <Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
-          <Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 9х19мм</Russian>
-          <Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm </Polish>
-          <Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 9x19mm</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 9x19mm</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 9x19mm</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
+			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 9х19мм</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm </Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
         </Key>
 		
 		<!-- CZ 805 -->
@@ -11880,7 +11904,7 @@
 			<English>ACR ACOG</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_GL_NAME">
-			<English>ACR GL</English>
+			<English>ACR M203</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_TWS_NAME">
 			<English>ACR TWS</English>
@@ -11889,16 +11913,16 @@
 			<English>ACR TWS SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_TWS_GL_NAME">
-			<English>ACR TWS GL</English>
+			<English>ACR TWS M203</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_TWS_GL_SD_NAME">
-			<English>ACR TWS GL SD</English>
+			<English>ACR TWS M203 SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_CCO_GL_NAME">
-			<English>ACR CCO GL</English>
+			<English>ACR CCO M203</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_HOLO_GL_NAME">
-			<English>ACR Holo GL</English>
+			<English>ACR Holo M203</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_SD_NAME">
 			<English>ACR SD</English>
@@ -11910,35 +11934,35 @@
 			<English>ACR ACOG SD</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_ACOG_GL_NAME">
-			<English>ACR ACOG GL</English>
+			<English>ACR ACOG M203</English>
 		</Key>		
 		<Key ID="STR_DZ_WPN_ACR_ACOG_GL_SD_NAME">
-			<English>ACR ACOG GL SD</English>
+			<English>ACR ACOG M203 SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_GL_SD_NAME">
-			<English>ACR GL SD</English>
+			<English>ACR M203 SD</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_CCO_GL_SD_NAME">
-			<English>ACR CCO GL SD</English>
+			<English>ACR CCO M203 SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_HOLO_SD_NAME">
 			<English>ACR Holo SD</English>
 		</Key>		
 		<Key ID="STR_DZ_WPN_ACR_HOLO_GL_SD_NAME">
-			<English>ACR Holo GL SD</English>
+			<English>ACR Holo M203 SD</English>
 		</Key>	
 		<Key ID="STR_DZ_WPN_ACR_NV_GL_NAME">
-			<English>ACR NV GL</English>
+			<English>ACR NV M203</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_NV_GL_SD_NAME">
-			<English>ACR NV GL SD</English>
+			<English>ACR NV M203 SD</English>
 		</Key>			
 		<Key ID="STR_DZ_WPN_ACR_NV_SD_NAME">
 			<English>ACR NV SD</English>
 		</Key>		
 		<Key ID="STR_DZ_WPN_ACR_NV_NAME">
 			<English>ACR NV</English>
-		</Key>	
+		</Key>		
 		
 		<!-- RSASS -->	
 		<Key ID="STR_DZ_WPN_RSASS_NAME">
@@ -12124,9 +12148,20 @@
 		<Key ID="STR_DZ_WPN_M21_NAME">
 			<English>M21 SWS</English>
 		</Key>	
+		<Key ID="STR_DZ_WPN_M21A5_NAME">
+			<English>M21A5</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_M21A5_SD_NAME">
+			<English>M21A5 SD</English>
+			<Russian>M21A5 ПБС</Russian>
+		</Key>		
 		<Key ID="STR_DZ_WPN_M21_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_M21SD_DESC">
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
 		</Key>			
 		
 		<!-- Colts -->	
@@ -12291,7 +12326,702 @@
 		<Key ID="STR_DZ_WPN_ANZIO_DESC">
 			<English>Anti-materiel sniper rifle&lt;br/&gt;Caliber: 20x102mm</English>
 			<German>Panzerbrechendes Scharfschützengewehr &lt;br/&gt;Kaliber: 20x102mm</German>
+		</Key>	
+
+		<!-- MG36 -->
+		<Key ID="STR_DZ_WPN_MG36_NAME">
+			<English>MG36</English>
+			<Russian>MG36</Russian>
+			<German>MG36</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MG36_CAMO_NAME">
+			<English>MG36 Camo</English>
+			<Russian>MG36 (камуфляж)</Russian>
+			<German>MG36 Tarn</German>
+		</Key>		
+		
+		<!-- HK53A3 -->
+		<Key ID="STR_DZ_WPN_HK53A3_NAME">
+			<English>HK53A3</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK53A3_CCO_NAME">
+			<English>HK53A3 CCO</English>
 		</Key>			
+		<Key ID="STR_DZ_WPN_HK53A3_HOLO_NAME">
+			<English>HK53A3 Holo</English>
+		</Key>	
+		
+		<!-- Magpul PDR -->
+		<Key ID="STR_DZ_WPN_PDR_NAME">
+			<English>Magpul PDR</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_PDR_CCO_NAME">
+			<English>Magpul PDR CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_PDR_HOLO_NAME">
+			<English>Magpul PDR Holo</English>
+		</Key>	
+
+		<!-- KRISS -->
+		<Key ID="STR_DZ_WPN_KRISS_NAME">
+			<English>KRISS</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_KRISS_CCO_NAME">
+			<English>KRISS CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_KRISS_HOLO_NAME">
+			<English>KRISS Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_KRISS_SD_NAME">
+			<English>KRISS SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_KRISS_CCO_SD_NAME">
+			<English>KRISS CCO SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_KRISS_HOLO_SD_NAME">
+			<English>KRISS Holo SD</English>
+		</Key>	
+        <Key ID="STR_DZ_WPN_KRISS_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: .45 ACP</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: .45 ACP</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: .45 ACP</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: .45 ACP</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: .45 ACP</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: .45 ACP</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_KRISS_SD_DESC">
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: .45 ACP SD</English>		
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: .45 ACP SD</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: .45 ACP SD</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: .45 ACP SD</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: .45 ACP SD</Czech>
+			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: .45 ACP SD</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
+        </Key>		
+
+		<!-- MAC-10 -->
+		<Key ID="STR_DZ_WPN_MAC10_NAME">
+			<English>MAC-10</English>
+		</Key>	
+		
+		<!-- Steyr TMP -->
+		<Key ID="STR_DZ_WPN_TMP_NAME">
+			<English>Steyr TMP</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_TMP_CCO_NAME">
+			<English>Steyr TMP CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_TMP_Holo_NAME">
+			<English>Steyr TMP Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_TMP_SD_NAME">
+			<English>Steyr TMP SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_TMP_CCO_SD_NAME">
+			<English>Steyr TMP CCO SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_TMP_Holo_SD_NAME">
+			<English>Steyr TMP Holo SD</English>
+		</Key>
+		
+		<!-- UMP -->
+		<Key ID="STR_DZ_WPN_UMP_NAME">
+			<English>UMP</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_UMP_CCO_NAME">
+			<English>UMP CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_UMP_HOLO_NAME">
+			<English>UMP Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_UMP_SD_NAME">
+			<English>UMP SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_UMP_CCO_SD_NAME">
+			<English>UMP CCO SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_UMP_HOLO_SD_NAME">
+			<English>UMP Holo SD</English>
+		</Key>	
+        <Key ID="STR_DZ_WPN_UMP_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: .45 ACP</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: .45 ACP</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: .45 ACP</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: .45 ACP</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: .45 ACP</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: .45 ACP</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_UMP_SD_DESC">
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: .45 ACP SD</English>		
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: .45 ACP SD</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: .45 ACP SD</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: .45 ACP SD</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: .45 ACP SD</Czech>
+			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: .45 ACP SD</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
+        </Key>	
+		
+		<!-- P90 -->
+		<Key ID="STR_DZ_WPN_P90_NAME">
+			<English>P90</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_P90_CCO_NAME">
+			<English>P90 CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_P90_HOLO_NAME">
+			<English>P90 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_P90_SD_NAME">
+			<English>P90 SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_P90_CCO_SD_NAME">
+			<English>P90 CCO SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_P90_HOLO_SD_NAME">
+			<English>P90 Holo SD</English>
+		</Key>	
+        <Key ID="STR_DZ_WPN_P90_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: 5.7x28mm</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: 5.7x28mm</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 5.7x28mm</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: 5.7x28mm</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 5.7x28mm</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: 5.7x28mm</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 5.7x28mm</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 5.7x28mm</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm</Hungarian>
+        </Key>		
+        <Key ID="STR_DZ_WPN_P90_SD_DESC">
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 5.7x28mm SD</English>		
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 5.7x28mm SD</German>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 5.7x28mm SD</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 5.7x28mm SD</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 5.7x28mm SD</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 5.7x28mm SD</Czech>
+			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 5.7x28mm SD</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 5.7x28mm SD </Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm SD</Hungarian>
+        </Key>
+		
+		<!-- HK416 -->
+		<Key ID="STR_DZ_WPN_HK416_NAME">
+			<English>HK416</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_SD_NAME">
+			<English>HK416 SD</English>
+			<Russian>HK416 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_NAME">
+			<English>HK416 M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_SD_NAME">
+			<English>HK416 M203 SD</English>
+			<Russian>HK416 M203 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_CCO_NAME">
+			<English>HK416 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_CCO_SD_NAME">
+			<English>HK416 CCO SD</English>
+			<Russian>HK416 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_CCO_NAME">
+			<English>HK416 M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_CCO_SD_NAME">
+			<English>HK416 M203 CCO SD</English>
+			<Russian>HK416 M203 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_HOLO_NAME">
+			<English>HK416 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_HOLO_SD_NAME">
+			<English>HK416 Holo SD</English>
+			<Russian>HK416 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_HOLO_NAME">
+			<English>HK416 M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416_GL_HOLO_SD_NAME">
+			<English>HK416 M203 Holo SD</English>
+			<Russian>HK416 M203 Holo ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_HK416C_NAME">
+			<English>HK416C</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_GL_NAME">
+			<English>HK416C M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_CCO_NAME">
+			<English>HK416C CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_GL_CCO_NAME">
+			<English>HK416C M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_HOLO_NAME">
+			<English>HK416C Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_GL_HOLO_NAME">
+			<English>HK416C M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_ACOG_NAME">
+			<English>HK416C ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK416C_GL_ACOG_NAME">
+			<English>HK416C M203 ACOG</English>
+		</Key>		
+	
+		<!-- HK417 -->
+		<Key ID="STR_DZ_WPN_HK417_NAME">
+			<English>HK417</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_SD_NAME">
+			<English>HK417 SD</English>
+			<Russian>HK417 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_CCO_NAME">
+			<English>HK417 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_CCO_SD_NAME">
+			<English>HK417 CCO SD</English>
+			<Russian>HK417 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_HOLO_NAME">
+			<English>HK417 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_HOLO_SD_NAME">
+			<English>HK417 Holo SD</English>
+			<Russian>HK417 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_ACOG_NAME">
+			<English>HK417 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_HK417_ACOG_SD_NAME">
+			<English>HK417 ACOG SD</English>
+			<Russian>HK417 ACOG ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_HK417C_NAME">
+			<English>HK417C</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_GL_NAME">
+			<English>HK417C M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_CCO_NAME">
+			<English>HK417C CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_GL_CCO_NAME">
+			<English>HK417C M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_HOLO_NAME">
+			<English>HK417C Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_GL_HOLO_NAME">
+			<English>HK417C M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_GL_ACOG_NAME">
+			<English>HK417C M203 ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417C_ACOG_NAME">
+			<English>HK417C ACOG</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_HK417_SNIPER_NAME">
+			<English>HK417 Sniper</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_HK417_SNIPER_SD_NAME">
+			<English>HK417 Sniper SD</English>
+			<Russian>HK417 Sniper ПБС</Russian>
+		</Key>		
+
+		<!-- CTAR21 -->
+		<Key ID="STR_DZ_WPN_CTAR21_NAME">
+			<English>CTAR-21</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_CTAR21_CCO_NAME">
+			<English>CTAR-21 CCO</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_CTAR21_ACOG_NAME">
+			<English>CTAR-21 ACOG</English>
+		</Key>	
+		
+		<!-- Masada -->
+		<Key ID="STR_DZ_WPN_Masada_NAME">
+			<English>Masada</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_SD_NAME">
+			<English>Masada SD</English>
+			<Russian>Masada ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_CCO_NAME">
+			<English>Masada CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_CCO_SD_NAME">
+			<English>Masada CCO SD</English>
+			<Russian>Masada CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_HOLO_NAME">
+			<English>Masada Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_HOLO_SD_NAME">
+			<English>Masada Holo SD</English>
+			<Russian>Masada Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Masada_ACOG_NAME">
+			<English>Masada ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_Masada_ACOG_SD_NAME">
+			<English>Masada ACOG SD</English>
+			<Russian>Masada ACOG ПБС</Russian>
+		</Key>	
+
+		<!-- AKS -->
+		<Key ID="STR_DZ_WPN_AKS_GOLD_NAME">
+			<English>AKS Gold</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_AKS_SILVER_NAME">
+			<English>AKS Silver</English>
+			<German>AKS Silber</German>
+		</Key>		
+
+		<!-- AN-94 Abakan -->
+		<Key ID="STR_DZ_WPN_AN94_NAME">
+			<English>AN-94 Abakan</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_AN94_GL_NAME">
+			<English>AN-94 Abakan GP-25</English>
+		</Key>			
+		
+		<!-- SVD Gold -->
+		<Key ID="STR_DZ_WPN_SVD_GOLD_NAME">
+			<English>SVD Gold</English>
+		</Key>
+		
+		<!-- SVU -->
+		<Key ID="STR_DZ_WPN_SVU_NAME">
+			<English>SVU</English>
+		</Key>
+
+		<!-- APS -->
+		<Key ID="STR_DZ_WPN_APS_NAME">
+			<English>APS</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_APSSD_NAME">
+			<English>APS SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_APSSD_DESC">
+			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x18mm SD</English>
+			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x18mm SD</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_APS_DESC">
+			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x18mm</English>
+			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x18mm</German>
+		</Key>	
+
+		<!-- RK95 -->
+		<Key ID="STR_DZ_WPN_RK95_NAME">
+			<English>RK-95</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_RK95_SD_NAME">
+			<English>RK-95 SD</English>
+			<Russian>RK-95 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_RK95_CCO_NAME">
+			<English>RK-95 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_RK95_CCO_SD_NAME">
+			<English>RK-95 CCO SD</English>
+			<Russian>RK-95 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_RK95_ACOG_NAME">
+			<English>RK-95 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_RK95_ACOG_SD_NAME">
+			<English>RK-95 ACOG SD</English>
+			<Russian>RK-95 ACOG ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_RK95_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm SD</German>
+		</Key>	
+
+		<!-- Groza9 -->
+		<Key ID="STR_DZ_WPN_Groza9_NAME">
+			<English>Groza-9</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_SD_NAME">
+			<English>Groza-9 SD</English>
+			<Russian>Groza-9 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_GL_NAME">
+			<English>Groza-9 GP-25</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_SNIPER_NAME">
+			<English>Groza-9 Sniper</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_GL_SNIPER_NAME">
+			<English>Groza-9 GP-25 Sniper</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_SNIPER_SD_NAME">
+			<English>Groza-9 Sniper SD</English>
+			<Russian>Groza-9 Sniper ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza9_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 9x39mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_Groza9SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 9x39mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm SD</German>
+		</Key>		
+		
+		<!-- Groza1 -->
+		<Key ID="STR_DZ_WPN_Groza1_NAME">
+			<English>Groza-1</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza1_SD_NAME">
+			<English>Groza-1 SD</English>
+			<Russian>Groza-1 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza1_SNIPER_NAME">
+			<English>Groza-1 Sniper</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza1_SNIPER_SD_NAME">
+			<English>Groza-1 Sniper SD</English>
+			<Russian>Groza-1 Sniper ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_Groza1_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm</German>
+		</Key>		
+		<Key ID="STR_DZ_WPN_Groza1SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm SD</German>
+		</Key>		
+		
+		<!-- AS VAL -->
+		<Key ID="STR_DZ_WPN_ASVAL_NAME">
+			<English>AS VAL</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ASVAL_Kobra_NAME">
+			<English>AS VAL Kobra</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ASVAL_PSO1_NAME">
+			<English>AS VAL PSO-1</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_ASVAL_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 9x39mm</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
+		</Key>		
+
+		<!-- MK14 -->
+		<Key ID="STR_DZ_WPN_MK14_NAME">
+			<English>MK 14</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_SD_NAME">
+			<English>MK 14 SD</English>
+			<Russian>MK 14 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_CCO_NAME">
+			<English>MK 14 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_CCO_SD_NAME">
+			<English>MK 14 CCO SD</English>
+			<Russian>MK 14 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_HOLO_NAME">
+			<English>MK 14 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_HOLO_SD_NAME">
+			<English>MK 14 Holo SD</English>
+			<Russian>MK 14 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK14_ACOG_NAME">
+			<English>MK 14 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK14_ACOG_SD_NAME">
+			<English>MK 14 ACOG SD</English>
+			<Russian>MK 14 ACOG ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK14_SNIPER_NAME">
+			<English>MK 14 Sniper</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK14_SNIPER_SD_NAME">
+			<English>MK 14 Sniper SD</English>
+			<Russian>MK 14 Sniper ПБС</Russian>
+		</Key>			
+		<Key ID="STR_DZ_WPN_MK14SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>			
+		
+		<!-- MK16 -->
+		<Key ID="STR_DZ_WPN_MK16_NAME">
+			<English>MK16</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_NAME">
+			<English>MK16 M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_CCO_NAME">
+			<English>MK16 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_CCO_SD_NAME">
+			<English>MK16 CCO SD</English>
+			<Russian>MK16 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_CCO_NAME">
+			<English>MK16 M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_CCO_SD_NAME">
+			<English>MK16 M203 CCO SD</English>
+			<Russian>MK16 M203 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_HOLO_NAME">
+			<English>MK16 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_HOLO_SD_NAME">
+			<English>MK16 Holo SD</English>
+			<Russian>MK16 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_HOLO_NAME">
+			<English>MK16 M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK16_GL_HOLO_SD_NAME">
+			<English>MK16 M203 Holo SD</English>
+			<Russian>MK16 M203 Holo ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK16_ACOG_NAME">
+			<English>MK16 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK16_GL_ACOG_NAME">
+			<English>MK16 M203 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK16_ACOG_SD_NAME">
+			<English>MK16 ACOG SD</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_MK16_GL_ACOG_SD_NAME">
+			<English>MK16 M203 ACOG SD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK16_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK16SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm SD</German>
+		</Key>			
+
+		<!-- MK17 -->
+		<Key ID="STR_DZ_WPN_MK17_NAME">
+			<English>MK17</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_NAME">
+			<English>MK17 M203</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_CCO_NAME">
+			<English>MK17 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_CCO_SD_NAME">
+			<English>MK17 CCO SD</English>
+			<Russian>MK17 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_CCO_NAME">
+			<English>MK17 M203 CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_CCO_SD_NAME">
+			<English>MK17 M203 CCO SD</English>
+			<Russian>MK17 M203 CCO ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_HOLO_NAME">
+			<English>MK17 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_HOLO_SD_NAME">
+			<English>MK17 Holo SD</English>
+			<Russian>MK17 Holo ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_HOLO_NAME">
+			<English>MK17 M203 Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_GL_HOLO_SD_NAME">
+			<English>MK17 M203 Holo SD</English>
+			<Russian>MK17 M203 Holo ПБС</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK17_ACOG_NAME">
+			<English>MK17 ACOG</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK17_GL_ACOG_NAME">
+			<English>MK17 M203 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK17_ACOG_SD_NAME">
+			<English>MK17 ACOG SD</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_MK17_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK17SD_DESC">
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17_SNIPER_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_MK17SD_SNIPER_DESC">
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>			
+		
+		<!-- XM8 -->
+		<Key ID="STR_DZ_WPN_XM8_CARBINE_NAME">
+			<English>XM8 Carbine</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_XM8_GL_CARBINE_NAME">
+			<English>XM8 XM320 Carbine</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_XM8_COMPACT_NAME">
+			<English>XM8 Compact</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_XM8_SHARPSHOOTER_NAME">
+			<English>XM8 Sharpshooter</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_XM8_SAW_NAME">
+			<English>XM8 SAW</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_XM8_CARBINE_SD_NAME">
+			<English>XM8 Carbine SD</English>
+		</Key>	
+		
+		<!-- M110 -->
+		<Key ID="STR_DZ_WPN_M110_NV_NAME">
+			<English>M110 NV</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M110_NV_DESC">
+			<English>Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>	
+		
+		<!-- Mk43 -->
+		<Key ID="STR_DZ_WPN_MK43_NAME">
+			<English>Mk43</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK43_HOLO_NAME">
+			<English>Mk43 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK43_ACOG_NAME">
+			<English>Mk43 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_MK43_M145_NAME">
+			<English>Mk43 M145</English>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -12318,7 +13048,7 @@
 		<Key ID="STR_DZ_MAG_30RND_9X19_UZI_NAME">
 			<English>30Rnd. PDW mag.</English>
 			<Russian>30п. PDW маг.</Russian>
-		</Key>
+		</Key>		
 		<Key ID="STR_DZ_MAG_30RND_9X19_MP5SD_NAME">
 			<English>30Rnd. MP5 SD mag.</English>
 			<Russian>30п. MP5 глуш. маг.</Russian>
@@ -12397,6 +13127,10 @@
 			<English>20Rnd. DMR mag.</English>
 			<Russian>20п. DMR маг.</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20RND_762X51_DMRSD_NAME">
+			<English>20Rnd. DMR SD mag.</English>
+			<Russian>20п. DMR глуш. маг.</Russian>
+		</Key>		
 		<Key ID="STR_DZ_MAG_5RND_762X51_M24_NAME">
 			<English>5Rnd. M24/M40 mag.</English>
 			<Russian>5п. M24/M40 маг.</Russian>
@@ -12495,9 +13229,9 @@
 			<Russian>5п. CZ 550 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_17HMR_DESC">
-			<English>Caliber: 9,3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
-			<Russian>Калибр: 9,3x62мм&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: CZ 550</Russian>
-			<German>Kaliber: 9,3x62mm&lt;br/&gt;Patronen: 5&lt;br/&gt;Verwendet in: CZ 550</German>
+			<English>Caliber: 9.3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
+			<Russian>Калибр: 9.3x62мм&lt;br/&gt;Патронов: 5&lt;br/&gt;Используется в: CZ 550</Russian>
+			<German>Kaliber: 9.3x62mm&lt;br/&gt;Patronen: 5&lt;br/&gt;Verwendet in: CZ 550</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_303BRITISH_NAME">
 			<English>10Rnd. Lee Enfield mag.</English>
@@ -12531,7 +13265,7 @@
 			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
 			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
 			<Czech>Ráže: 12 &lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
-			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+			<German>Kaliber: 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_NAME">
 			<English>2Rnd. 12Cal. Pellets</English>
@@ -12582,26 +13316,26 @@
 			<German>Kaliber 12 Schrotmunition&lt;br/&gt;8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
 		</Key>		
         <Key ID="STR_DZ_MAG_30RND_MP5_DESC">
-          <German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: MP5, Scorpion Evo 3</German>
-          <English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5, Scorpion Evo 3</English>
-          <Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5, Scorpion Evo 3</Italian>
-          <Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5, Scorpion Evo 3 </Spanish>
-          <French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: MP5, Scorpion Evo 3</French>
-          <Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5, Scorpion Evo 3 SD</Czech>
-          <Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5, Scorpion Evo 3</Russian>
-          <Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5, Scorpion Evo 3</Polish>
-          <Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5, Scorpion Evo 3</Hungarian>
+			<German>Kaliber: 9x19mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: MP5, Scorpion Evo 3</German>
+			<English>Caliber: 9x19mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5, Scorpion Evo 3</English>
+			<Italian>Calibro: 9x19mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5, Scorpion Evo 3</Italian>
+			<Spanish>Calibre: 9x19mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5, Scorpion Evo 3 </Spanish>
+			<French>Calibre: 9x19mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: MP5, Scorpion Evo 3</French>
+			<Czech>Kalibr: 9x19mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5, Scorpion Evo 3 SD</Czech>
+			<Russian>Патрон: 9x19мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5, Scorpion Evo 3</Russian>
+			<Polish>Kaliber: 9x19mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5, Scorpion Evo 3</Polish>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5, Scorpion Evo 3</Hungarian>
         </Key>			
         <Key ID="STR_DZ_MAG_30RND_MP5SD_DESC">
-          <German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: MP5SD, Scorpion Evo 3 SD</German>
-          <English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5SD, Scorpion Evo 3 SD</English>
-          <Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5SD, Scorpion Evo 3 SD</Italian>
-          <Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5SD, Scorpion Evo 3 SD</Spanish>
-          <French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: MP5SD, Scorpion Evo 3 SD</French>
-          <Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5SD, Scorpion Evo 3 SD</Czech>
-          <Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5SD, Scorpion Evo 3 SD</Russian>
-          <Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5SD, Scorpion Evo 3 SD</Polish>
-          <Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5SD, Scorpion Evo 3 SD</Hungarian>
+			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: MP5SD, Scorpion Evo 3 SD</German>
+			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: MP5SD, Scorpion Evo 3 SD</English>
+			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: MP5SD, Scorpion Evo 3 SD</Italian>
+			<Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: MP5SD, Scorpion Evo 3 SD</Spanish>
+			<French>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: MP5SD, Scorpion Evo 3 SD</French>
+			<Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: MP5SD, Scorpion Evo 3 SD</Czech>
+			<Russian>Патрон: 9x19мм парабеллум SD&lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: MP5SD, Scorpion Evo 3 SD</Russian>
+			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: MP5SD, Scorpion Evo 3 SD</Polish>
+			<Hungarian>Kaliber: 9x19mm Parabellum SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5SD, Scorpion Evo 3 SD</Hungarian>
         </Key>	
 		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_NAME">
 			<English>60Rnd. Stanag Mag</English>
@@ -12611,545 +13345,565 @@
 			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
 			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
 		</Key>		
-        <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
-          <German>Kaliber: 5,45x39mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
-          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
-          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
-          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
-          <French>Calibre: 5.45x39 mm &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
-          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
-          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
-          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
-          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
+         <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
+			<German>Kaliber: 5.45x39mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-107 und RPK-74</German>
+			<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-107 and RPK-74</English>
+			<Italian>Calibro: 5.45x39mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74, AK-107 e RPK-74</Italian>
+			<Spanish>Calibre: 5.45x39mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74, AK-107 y RPK-74</Spanish>
+			<French>Calibre: 5.45x39mm &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: AK-74, AK-107 et RPK-74</French>
+			<Czech>Kalibr: 5.45x39mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74, AK-107 a RPK-74</Czech>
+			<Russian>Патрон: 5.45x39мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: АК-74, АК-107, РПК-74</Russian>
+			<Polish>Kaliber: 5.45x39mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74, AK-107 i RPK-74</Polish>
+			<Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-107 and RPK-74</Hungarian>
         </Key>
-		<Key ID="STR_DZ_MAG_75RND_RPK74_DESC">
-          <German>Kaliber: 5,45x39mm &lt;br/&gt;Patronen: 75 &lt;br/&gt;Eingesetzt in: AK-74, AK-74 Kobra, AKS-74U, AK-107 und RPK-74</German>
-          <English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</English>
-          <Italian>Calibro: 5,45x39 mm &lt;br/&gt;Munizioni: 75 &lt;br/&gt;Si usa in: AK-74, AK-74 Kobra, AKS-74U, AK-107 e RPK-74</Italian>
-          <Spanish>Calibre: 5,45x39 mm &lt;br/&gt;Cargas: 75 &lt;br/&gt;Uso: AK-74, AK-74 Kobra, AKS-74U, AK-107 y RPK-74</Spanish>
-          <French>Calibre: 5.45x39 mm &lt;br/&gt;Munitions: 75 &lt;br/&gt;Utilisé avec: AK-74, AK-74 Kobra, AKS-74U, AK-107 et RPK-74</French>
-          <Czech>Kalibr: 5,45x39mm &lt;br/&gt;Nábojů: 75 &lt;br/&gt;Pro: AK-74, AK-74 Kobra, AKS-74U, AK-107 a RPK-74</Czech>
-          <Russian>Патрон: 5.45x39 мм &lt;br/&gt;Количество: 75 &lt;br/&gt;Используется в: АК-74, АКС-74, АКС-74У, АК-107, РПК-74</Russian>
-          <Polish>Kaliber: 5,45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-74 Kobra, AKS-74U, AK-107 i RPK-74</Polish>
-          <Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-74 Kobra, AKS-74U, AK-107 and RPK-74</Hungarian>
-        </Key>
-		<Key ID="STR_DZ_MAG_100RND_556x45_MG36_NAME">
-			<English>100Rnd. MG36 drum mag.</English>
-			<German>100 Schuss MG36 Trommelmagazin</German>
-			<Russian>100п. МГ-36 барабан</Russian>
-		</Key>
-		<Key ID="STR_DZ_MAG_100RND_MG36_DESC">
-          <German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
-          <English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
-          <Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
-          <Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, M8 y L110</Spanish>
-          <French>Calibre: 5.56x45mm &lt;br/&gt;Munitions: 100 &lt;br/&gt;Utilisé avec: G36, MG36, M16, M4, M249, MK-12, M8 et L110</French>
-          <Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, M8 a L110</Czech>
-          <Russian>Патрон: 5.56x45 мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, M8, L110</Russian>
-          <Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, M8 i L110</Polish>
-          <Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
+		<Key ID="STR_DZ_MAG_30RND_AK74SD_DESC">
+			<German>Kaliber: 5.45x39mm SD &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: AK-74 SD</German>
+			<English>Caliber: 5.45x39mm SD &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74 SD</English>
+			<Italian>Calibro: 5.45x39mm SD &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: AK-74 SD</Italian>
+			<Spanish>Calibre: 5.45x39mm SD &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: AK-74 SD</Spanish>
+			<French>Calibre: 5.45x39mm SD &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: AK-74 SD</French>
+			<Czech>Kalibr: 5.45x39mm SD &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: AK-74 SD</Czech>
+			<Russian>Патрон: 5.45x39мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: AK-74 SD</Russian>
+			<Polish>Kaliber: 5.45x39mm SD &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: AK-74 SD</Polish>
+			<Hungarian>Kaliber: 5.45x39mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-74 SD</Hungarian>
         </Key>	
-      <Key ID="STR_DZ_MAG_20RND_MK17_DESC">
-		<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Mk 17, M110, CZ 805B</English>
-        <French>Calibre : 7,62 x 51 mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: Mk 17, M110, CZ 805B</French>
-        <Spanish>Calibre: 7.62x51 mm OTAN&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: Mk 17, M110, CZ 805B</Spanish>
-        <Italian>Calibro: 7,62x51 mm NATO&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: Mk 17, M110, CZ 805B</Italian>
-        <Polish>Kaliber: 7,62x51 mm NATO&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: Mk 17, M110, CZ 805B</Polish>
-        <Russian>Патрон: 7.62x51 мм НАТО&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: Mk 17, M110, CZ 805B</Russian>
-        <German>Kaliber: 7,62x51mm NATO&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: Mk 17, M110, CZ 805B</German>
-        <Czech>Kalibr: 7.62x51mm NATO&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Mk 17, M110, CZ 805B</Czech>
-        <Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Mk 17, M110, CZ 805B</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_40RND_MP7_NAME">
-		<English>40Rnd. MP7 mag.</English>
-		<Russian>40п. MP7 маг.</Russian>
-	  </Key> 	
-	  <Key ID="STR_DZ_MAG_40RND_MP7SD_NAME">
-		<English>40Rnd. MP7 SD mag.</English>
-		<Russian>40п. MP7 SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_40RND_MP7_DESC">
-		<English>Caliber: 4.6x30mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7</English>
-        <French>Calibre : 4.6x30mm&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec: MP7</French>
-        <Spanish>Calibre: 4.6x30mm&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: MP7</Spanish>
-        <Italian>Calibro: 4.6x30mm&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: MP7</Italian>
-        <Polish>Kaliber: 4.6x30mm&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: MP7</Polish>
-        <Russian>Патрон: 4.6x30 мм&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: MP7</Russian>
-        <German>Kaliber: 4.6x30mm&lt;br/&gt;Patronen: 40&lt;br/&gt;Eingesetzt in: MP7</German>
-        <Czech>Kalibr: 4.6x30mm&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7</Czech>
-		<Hungarian>Kaliber: 4.6x30mm &lt;br/&gt; Töltények: 40 &lt;br/&gt; Hozzá tartozó fegyver: MP7</Hungarian>       
-      </Key>
-      <Key ID="STR_DZ_MAG_40RND_MP7SD_DESC">
-		<English>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</English>
-        <French>Calibre : 4.6x30mm SD&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec: MP7 SD</French>
-        <Spanish>Calibre: 4.6x30mm SD&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: MP7 SD</Spanish>
-        <Italian>Calibro: 4.6x30mm SD&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: MP7 SD</Italian>
-        <Polish>Kaliber: 4.6x30mm SD&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: MP7 SD</Polish>
-        <Russian>Патрон: 4.6x30 мм SD&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: MP7 SD</Russian>
-        <German>Kaliber: 4.6x30mm SD&lt;br/&gt;Patronen: 40&lt;br/&gt;Eingesetzt in: MP7 SD</German>
-        <Czech>Kalibr: 4.6x30mm SD&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7 SD</Czech>
-        <Hungarian>Kaliber: 4.6x30mm SD &lt;br/&gt; Töltények: 40 &lt;br/&gt; Hozzá tartozó fegyver: MP7 SD</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_15RND_P99_NAME">
-		<English>15Rnd. P99 mag.</English>
-		<Russian>15п. P99 маг.</Russian>
-	  </Key> 	
-	  <Key ID="STR_DZ_MAG_15RND_P99SD_NAME">
-		<English>15Rnd. P99 SD mag.</English>
-		<Russian>15п. P99 SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_15RND_P99_DESC">
-		<English>Caliber: 10x22mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99</English>
-        <French>Calibre : 10x22mm&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: P99</French>
-        <Spanish>Calibre: 10x22mm&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: P99</Spanish>
-        <Italian>Calibro: 10x22mm&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: P99</Italian>
-        <Polish>Kaliber: 10x22mm&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: P99</Polish>
-        <Russian>Патрон: 10x22 мм&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: P99</Russian>
-        <German>Kaliber: 10x22mm&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: P99</German>
-        <Czech>Kalibr: 10x22mm&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99</Czech>
-        <Hungarian>Kaliber: 10x22mm &lt;br/&gt; Töltények: 15 &lt;br/&gt; Hozzá tartozó fegyver: P99</Hungarian>
-      </Key>
-      <Key ID="STR_DZ_MAG_15RND_P99SD_DESC">
-		<English>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</English>
-        <French>Calibre : 10x22mm SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: P99 SD</French>
-        <Spanish>Calibre: 10x22mm SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: P99 SD</Spanish>
-        <Italian>Calibro: 10x22mm SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: P99 SD</Italian>
-        <Polish>Kaliber: 10x22mm SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: P99 SD</Polish>
-        <Russian>Патрон: 10x22 мм SD&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: P99 SD</Russian>
-        <German>Kaliber: 10x22mm SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: P99 SD</German>
-        <Czech>Kalibr: 10x22mm SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99 SD</Czech>
-        <Hungarian>Kaliber: 10x22mm SD &lt;br/&gt; Töltények: 15 &lt;br/&gt; Hozzá tartozó fegyver: P99 SD</Hungarian>
-      </Key>
-	  <Key ID="STR_DZ_MAG_30RND_ACR_NAME">
-		<English>30Rnd. ACR mag.</English>
-		<Russian>30п. ACR маг.</Russian>
-	  </Key> 	
-	  <Key ID="STR_DZ_MAG_30RND_ACRSD_NAME">
-		<English>30Rnd. ACR SD mag.</English>
-		<Russian>30п. ACR SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_30RND_ACR_DESC">
-		<English>Caliber: 6.80x43mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR</English>
-        <French>Calibre : 6.80x43mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: ACR</French>
-        <Spanish>Calibre: 6.80x43mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: ACR</Spanish>
-        <Italian>Calibro: 6.80x43mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: ACR</Italian>
-        <Polish>Kaliber: 6.80x43mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: ACR</Polish>
-        <Russian>Патрон: 6.80x43 мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: ACR</Russian>
-        <German>Kaliber: 6.80x43mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: ACR</German>
-        <Czech>Kalibr: 6.80x43mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: ACR</Czech>
-        <Hungarian>Kaliber: 6.80x43mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: ACR</Hungarian>
-      </Key>
-      <Key ID="STR_DZ_MAG_30RND_ACRSD_DESC">
-		<English>Caliber: 6.80x43mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR SD</English>
-        <French>Calibre : 6.80x43mm SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: ACR SD</French>
-        <Spanish>Calibre: 6.80x43mm SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: ACR SD</Spanish>
-        <Italian>Calibro: 6.80x43mm SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: ACR SD</Italian>
-        <Polish>Kaliber: 6.80x43mm SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: ACR SD</Polish>
-        <Russian>Патрон: 6.80x43 мм SD&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: ACR SD</Russian>
-        <German>Kaliber: 6.80x43mm SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: ACR SD</German>
-        <Czech>Kalibr: 6.80x43mm SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: ACR SD</Czech>
-        <Hungarian>Kaliber: 6.80x43mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: ACR SD</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_20RND_RSASS_NAME">
-		<English>30Rnd. RSASS mag.</English>
-		<Russian>30п. RSASS маг.</Russian>
-	  </Key> 	
-	  <Key ID="STR_DZ_MAG_20RND_RSASSSD_NAME">
-		<English>30Rnd. RSASS SD mag.</English>
-		<Russian>30п. RSASS SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_20RND_RSASS_DESC">
-		<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: RSASS</English>
-        <French>Calibre : 7.62x51mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: RSASS</French>
-        <Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: RSASS</Spanish>
-        <Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: RSASS</Italian>
-        <Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: RSASS</Polish>
-        <Russian>Патрон: 7.62x51 мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: RSASS</Russian>
-        <German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: RSASS</German>
-        <Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: RSASS</Czech>
-        <Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: RSASS</Hungarian>
-      </Key>
-      <Key ID="STR_DZ_MAG_20RND_RSASSSD_DESC">
-		<English>Caliber: 7.62x51mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: RSASS SD</English>
-        <French>Calibre : 7.62x51mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: RSASS SD</French>
-        <Spanish>Calibre: 7.62x51mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: RSASS SD</Spanish>
-        <Italian>Calibro: 7.62x51mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: RSASS SD</Italian>
-        <Polish>Kaliber: 7.62x51mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: RSASS SD</Polish>
-        <Russian>Патрон: 7.62x51 мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: RSASS SD</Russian>
-        <German>Kaliber: 7.62x51mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: RSASS SD</German>
-        <Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: RSASS SD</Czech>
-        <Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: RSASS SD</Hungarian>
-      </Key>	  
-	  <Key ID="STR_DZ_MAG_7RND_MSR_NAME">
-		<English>7Rnd. MSR mag.</English>
-		<Russian>7п. MSR маг.</Russian>
-	  </Key> 	
-	  <Key ID="STR_DZ_MAG_7RND_MSRSD_NAME">
-		<English>7Rnd. MSR SD mag.</English>
-		<Russian>7п. MSR SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_7RND_MSR_DESC">
-		<English>Caliber: .338&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: MSR</English>
-        <French>Calibre : .338&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: MSR</French>
-        <Spanish>Calibre: .338&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: MSR</Spanish>
-        <Italian>Calibro: .338&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: MSR</Italian>
-        <Polish>Kaliber: .338&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: MSR</Polish>
-        <Russian>Патрон: .338 &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: MSR</Russian>
-        <German>Kaliber: .338&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: MSR</German>
-        <Czech>Kalibr: .338&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: MSR</Czech>
-        <Hungarian>Kaliber: .338 &lt;br/&gt; Töltények: 7 &lt;br/&gt; Hozzá tartozó fegyver: MSR</Hungarian>
-      </Key>
-      <Key ID="STR_DZ_MAG_7RND_MSRSD_DESC">
-		<English>Caliber: .338 SD&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: MSR SD</English>
-        <French>Calibre : .338 SD&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: MSR SD</French>
-        <Spanish>Calibre: .338 SD&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: MSR SD</Spanish>
-        <Italian>Calibro: .338 SD&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: MSR SD</Italian>
-        <Polish>Kaliber: .338 SD&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: MSR SD</Polish>
-        <Russian>Патрон: .338 SD&lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: MSR SD</Russian>
-        <German>Kaliber: .338 SD&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: MSR SD</German>
-        <Czech>Kalibr: .338 SD&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: MSR SD</Czech>
-        <Hungarian>Kaliber: .338 SD &lt;br/&gt; Töltények: 7 &lt;br/&gt; Hozzá tartozó fegyver: MSR SD</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_5RND_XM2010_NAME">
-		<English>5Rnd. XM2010 mag.</English>
-		<Russian>5п. XM2010 маг.</Russian>
-	  </Key> 	
-	  <Key ID="STR_DZ_MAG_5RND_XM2010SD_NAME">
-		<English>5Rnd. XM2010 SD mag.</English>
-		<Russian>5п. XM2010 SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_5RND_XM2010_DESC">
-	    <English>Caliber: .300&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: XM2010</English>
-        <French>Calibre : .300&lt;br/&gt;Munitions : 5&lt;br/&gt;Utilisé avec: XM2010</French>
-        <Spanish>Calibre: .300&lt;br/&gt;Cartuchos: 5&lt;br/&gt;Usado en: XM2010</Spanish>
-        <Italian>Calibro: .300&lt;br/&gt;Munizioni: 5&lt;br/&gt;Usato in: XM2010</Italian>
-        <Polish>Kaliber: .300&lt;br/&gt;Naboje: 5&lt;br/&gt;Uzywany w: XM2010</Polish>
-        <Russian>Патрон: .300 &lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: XM2010</Russian>
-        <German>Kaliber: .300&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: XM2010</German>
-        <Czech>Kalibr: .300&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: XM2010</Czech>
-        <Hungarian>Kaliber: .300 &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: XM2010</Hungarian>
-      </Key>
-      <Key ID="STR_DZ_MAG_5RND_XM2010SD_DESC">
-	    <English>Caliber: .300 SD&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: XM2010 SD</English>
-        <French>Calibre : .300 SD&lt;br/&gt;Munitions : 5&lt;br/&gt;Utilisé avec: XM2010 SD</French>
-        <Spanish>Calibre: .300 SD&lt;br/&gt;Cartuchos: 5&lt;br/&gt;Usado en: XM2010 SD</Spanish>
-        <Italian>Calibro: .300 SD&lt;br/&gt;Munizioni: 5&lt;br/&gt;Usato in: XM2010 SD</Italian>
-        <Polish>Kaliber: .300 SD&lt;br/&gt;Naboje: 5&lt;br/&gt;Uzywany w: XM2010 SD</Polish>
-        <Russian>Патрон: .300 SD&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: XM2010 SD</Russian>
-        <German>Kaliber: .300 SD&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: XM2010 SD</German>
-        <Czech>Kalibr: .300 SD&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: XM2010 SD</Czech>
-		<Hungarian>Kaliber: .300 SD &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: XM2010 SD</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_30RND_KACPDW_NAME">
-		<English>30Rnd. KAC PDW mag.</English>
-		<Russian>30п. KAC PDW маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_30RND_KACPDW_DESC">
-	    <English>Caliber: 6x35mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: KAC PDW</English>
-        <French>Calibre : 6x35mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: KAC PDW</French>
-        <Spanish>Calibre: 6x35mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: KAC PDW</Spanish>
-        <Italian>Calibro: 6x35mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: KAC PDW</Italian>
-        <Polish>Kaliber: 6x35mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: KAC PDW</Polish>
-        <Russian>Патрон: 6x35mm &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: KAC PDW</Russian>
-        <German>Kaliber: 6x35mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: KAC PDW</German>
-        <Czech>Kalibr: 6x35mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: KAC PDW</Czech>
-        <Hungarian>Kaliber: 6x35mm &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: KAC PDW</Hungarian>
-      </Key>
-	  <Key ID="STR_DZ_MAG_6RND_44MAGNUM_NAME">
-		<English>6Rnd. .44 Magnum</English>
-		<Russian>6п. .44 Magnum</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_6RND_44MAGNUM_DESC">
-	    <English>Caliber: .44 Magnum&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: Colt Anaconda, Taurus Raging Bull</English>
-        <French>Calibre : .44 Magnum&lt;br/&gt;Munitions : 6&lt;br/&gt;Utilisé avec: Taurus Raging Bull</French>
-        <Spanish>Calibre: .44 Magnum&lt;br/&gt;Cartuchos: 6&lt;br/&gt;Usado en: Colt Anaconda, Taurus Raging Bull</Spanish>
-        <Italian>Calibro: .44 Magnum&lt;br/&gt;Munizioni: 6&lt;br/&gt;Usato in: Colt Anaconda, Taurus Raging Bull</Italian>
-        <Polish>Kaliber: .44 Magnum&lt;br/&gt;Naboje: 6&lt;br/&gt;Uzywany w: Colt Anaconda, Taurus Raging Bull</Polish>
-        <Russian>Патрон: .44 Magnum &lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: Colt Anaconda, Taurus Raging Bull</Russian>
-        <German>Kaliber: .44 Magnum&lt;br/&gt;Patronen: 6&lt;br/&gt;Eingesetzt in: Colt Anaconda, Taurus Raging Bull</German>
-        <Czech>Kalibr: .44 Magnum&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: Colt Anaconda, Taurus Raging Bull</Czech>
-        <Hungarian>Kaliber: .44 Magnum &lt;br/&gt; Töltények: 6&lt;br/&gt; Hozzá tartozó fegyver: Colt Anaconda, Taurus Raging Bull</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_6RND_357MAGNUM_NAME">
-		<English>6Rnd. .357 Magnum</English>
-		<Russian>6п. .357 Magnum</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_6RND_357MAGNUM_DESC">
-	    <English>Caliber: .357 Magnum&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: Colt Python</English>
-        <French>Calibre : .357 Magnum&lt;br/&gt;Munitions : 6&lt;br/&gt;Utilisé avec: Colt Python</French>
-        <Spanish>Calibre: .357 Magnum&lt;br/&gt;Cartuchos: 6&lt;br/&gt;Usado en: Colt Python</Spanish>
-        <Italian>Calibro: .357 Magnum&lt;br/&gt;Munizioni: 6&lt;br/&gt;Usato in: Colt Python</Italian>
-        <Polish>Kaliber: .357 Magnum&lt;br/&gt;Naboje: 6&lt;br/&gt;Uzywany w: Colt Python</Polish>
-        <Russian>Патрон: .357 Magnum &lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: Colt Python</Russian>
-        <German>Kaliber: .357 Magnum&lt;br/&gt;Patronen: 6&lt;br/&gt;Eingesetzt in: Colt Python</German>
-        <Czech>Kalibr: .357 Magnum&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: Colt Python</Czech>
-        <Hungarian>Kaliber: .357 Magnum &lt;br/&gt; Töltények: 6&lt;br/&gt; Hozzá tartozó fegyver: Colt Python</Hungarian>
-      </Key>
-	  <Key ID="STR_DZ_MAG_13RND_9x19_BHP_NAME">
-		<English>13Rnd. Browning mag.</English>
-		<Russian>13п. Browning маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_13RND_BHP_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 13&lt;br/&gt;Used in: FN Browning HP</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 13&lt;br/&gt;Utilisé avec: FN Browning HP</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 13&lt;br/&gt;Usado en: FN Browning HP</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 13&lt;br/&gt;Usato in: FN Browning HP</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 13&lt;br/&gt;Uzywany w: FN Browning HP</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 13&lt;br/&gt;Исп. в: FN Browning HP</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 13&lt;br/&gt;Eingesetzt in: FN Browning HP</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 13&lt;br/&gt;Pro: FN Browning HP</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 13&lt;br/&gt; Hozzá tartozó fegyver: FN Browning HP</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_15RND_9x19_P226_NAME">
-		<English>15Rnd. P226 mag.</English>
-		<Russian>15п. P226 маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_15RND_P226_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: SIG Sauer P226</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: SIG Sauer P226</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: SIG Sauer P226</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: SIG Sauer P226</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: SIG Sauer P226</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: SIG Sauer P226</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: SIG Sauer P226</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: SIG Sauer P226</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: SIG Sauer P226</Hungarian>
-      </Key>	  
-	  <Key ID="STR_DZ_MAG_8RND_9x19_P38_NAME">
-		<English>8Rnd. P38 mag.</English>
-		<Russian>8п. P38 маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_8RND_P38_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Walther P38</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Walther P38</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Walther P38</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Walther P38</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Walther P38</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Walther P38</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Walther P38</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Walther P38</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Walther P38</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_7RND_9x17_PPK_NAME">
-		<English>7Rnd. PPK mag.</English>
-		<Russian>7п. PPK маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_7RND_PPK_9x17_DESC">
-	    <English>Caliber: .380 ACP&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Walther PPK</English>
-        <French>Calibre : .380 ACP&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Walther PPK</French>
-        <Spanish>Calibre: .380 ACP&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Walther PPK</Spanish>
-        <Italian>Calibro: .380 ACP&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Walther PPK</Italian>
-        <Polish>Kaliber: .380 ACP&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Walther PPK</Polish>
-        <Russian>Патрон: .380 ACP &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Walther PPK</Russian>
-        <German>Kaliber: .380 ACP&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Walther PPK</German>
-        <Czech>Kalibr: .380 ACP&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Walther PPK</Czech>
-        <Hungarian>Kaliber: .380 ACP &lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Walther PPK</Hungarian>
-      </Key>
-	  <Key ID="STR_DZ_MAG_8RND_9x19_MK22_NAME">
-		<English>8Rnd. MK 22 mag.</English>
-		<Russian>8п. MK 22 маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_8RND_MK22_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Mk 22 Mod 0</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Mk 22 Mod 0</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Mk 22 Mod 0</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Mk 22 Mod 0</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Mk 22 Mod 0</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Mk 22 Mod 0</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Mk 22 Mod 0</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Mk 22 Mod 0</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Mk 22 Mod 0</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_8RND_9x19_MK22SD_NAME">
-		<English>8Rnd. MK 22 SD mag.</English>
-		<Russian>8п. MK 22 SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_8RND_MK22SD_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Mk 22 Mod 0 SD</English>
-        <French>Calibre : 9x19mm Parabellum SD&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Mk 22 Mod 0 SD</French>
-        <Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Mk 22 Mod 0 SD</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Mk 22 Mod 0 SD</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Mk 22 Mod 0 SD</Polish>
-        <Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Mk 22 Mod 0 SD</Russian>
-        <German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Mk 22 Mod 0 SD</German>
-        <Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Mk 22 Mod 0 SD</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Mk 22 Mod 0 SD</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_15RND_45ACP_USP_NAME">
-		<English>15Rnd. USP mag.</English>
-		<Russian>15п. USP маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_15RND_USP_45ACP_DESC">
-	    <English>Caliber: .45 ACP&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: USP</English>
-        <French>Calibre : .45 ACP&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: USP</French>
-        <Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: USP</Spanish>
-        <Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: USP</Italian>
-        <Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: USP</Polish>
-        <Russian>Патрон: .45 ACP &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: USP</Russian>
-        <German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: USP</German>
-        <Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: USP</Czech>
-        <Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: USP</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_15RND_45ACP_USPSD_NAME">
-		<English>15Rnd. USP SD mag.</English>
-		<Russian>15п. USP SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_15RND_USPSD_45ACP_DESC">
-	    <English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: USP SD</English>
-        <French>Calibre : .45 ACP SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: USP SD</French>
-        <Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: USP SD</Spanish>
-        <Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: USP SD</Italian>
-        <Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: USP SD</Polish>
-        <Russian>Патрон: .45 ACP SD &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: USP SD</Russian>
-        <German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: USP SD</German>
-        <Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: USP SD</Czech>
-        <Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: USP SD</Hungarian>
-      </Key>	  
-      <Key ID="STR_DZ_MAG_7RND_M1911_45ACP_DESC">
-	    <English>Caliber: .45 ACP&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Kimber M1911, Colt M1911</English>
-        <French>Calibre : .45 ACP&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Kimber M1911, Colt M1911</French>
-        <Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Kimber M1911, Colt M1911</Spanish>
-        <Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Kimber M1911, Colt M1911</Italian>
-        <Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Kimber M1911, Colt M1911</Polish>
-        <Russian>Патрон: .45 ACP&lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Kimber M1911, Colt M1911</Russian>
-        <German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Kimber M1911, Colt M1911</German>
-        <Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Kimber M1911, Colt M1911</Czech>
-        <Hungarian>Kaliber: .45 ACP&lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Kimber M1911, Colt M1911</Hungarian>
-      </Key>	  
-	  <Key ID="STR_DZ_MAG_7RND_45ACP_KIMBER1911SD_NAME">
-		<English>7Rnd. M1911 SD mag.</English>
-		<Russian>7п. M1911 SD маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_7RND_KIMBER1911SD_45ACP_DESC">
-	    <English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Kimber M1911 SD</English>
-        <French>Calibre : .45 ACP SD&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Kimber M1911 SD</French>
-        <Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Kimber M1911 SD</Spanish>
-        <Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Kimber M1911 SD</Italian>
-        <Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Kimber M1911 SD</Polish>
-        <Russian>Патрон: .45 ACP SD &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Kimber M1911 SD</Russian>
-        <German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Kimber M1911 SD</German>
-        <Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Kimber M1911 SD</Czech>
-        <Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Kimber M1911 SD</Hungarian>
-      </Key>
-	  <Key ID="STR_DZ_MAG_8RND_762x25_TT33_NAME">
-		<English>8Rnd. TT-33 mag.</English>
-		<Russian>8п. TT-33 маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_8RND_TT33_762x25_DESC">
-	    <English>Caliber: 7.62x25mm&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Tokarew TT-33</English>
-        <French>Calibre : 7.62x25mm&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Tokarew TT-33</French>
-        <Spanish>Calibre: 7.62x25mm&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Tokarew TT-33</Spanish>
-        <Italian>Calibro: 7.62x25mm&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Tokarew TT-33</Italian>
-        <Polish>Kaliber: 7.62x25mm&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Tokarew TT-33</Polish>
-        <Russian>Патрон: 7.62x25mm &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Пистолет TT-33</Russian>
-        <German>Kaliber: 7.62x25mm&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Tokarew TT-33</German>
-        <Czech>Kalibr: 7.62x25mm&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Tokarew TT-33</Czech>
-        <Hungarian>Kaliber: 7.62x25mm &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Tokarew TT-33</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_10RND_C22_RUGERMK2_NAME">
-		<English>10Rnd. Ruger MK2 mag.</English>
-		<Russian>10п. Ruger MK2 маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_10RND_RUGERMK2_C22_DESC">
-	    <English>Caliber: .22 lfB&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: Ruger MK2</English>
-        <French>Calibre : .22 lfB&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: Ruger MK2</French>
-        <Spanish>Calibre: .22 lfB&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: Ruger MK2</Spanish>
-        <Italian>Calibro: .22 lfB&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: Ruger MK2</Italian>
-        <Polish>Kaliber: .22 lfB&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: Ruger MK2</Polish>
-        <Russian>Патрон: .22 lfB &lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: Ruger MK2</Russian>
-        <German>Kaliber: .22 lfB&lt;br/&gt;Patronen: 10&lt;br/&gt;Eingesetzt in: Ruger MK2</German>
-        <Czech>Kalibr: .22 lfB&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: Ruger MK2</Czech>
-        <Hungarian>Kaliber: .22 lfB &lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: Ruger MK2</Hungarian>
-      </Key>
-	  <Key ID="STR_DZ_MAG_20RND_9x19mm_M93R_NAME">
-		<English>20Rnd. M93R mag.</English>
-		<Russian>20п. M93R маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_20RND_9x19mm_M93R_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: M93R</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: M93R</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: M93R</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: M93R</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: M93R</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: M93R</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: M93R</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: M93R</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: M93R</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_33RND_9x19mm_G18_NAME">
-		<English>33Rnd. G18 mag.</English>
-		<Russian>33п. G18 маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_33RND_9x19mm_G18_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: G18</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 33&lt;br/&gt;Utilisé avec: G18</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 33&lt;br/&gt;Usado en: G18</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 33&lt;br/&gt;Usato in: G18</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 33&lt;br/&gt;Uzywany w: G18</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 33&lt;br/&gt;Исп. в: G18</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 33&lt;br/&gt;Eingesetzt in: G18</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 33&lt;br/&gt;Pro: G18</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: G18</Hungarian>
-      </Key>	
-	  <Key ID="STR_DZ_MAG_32RND_9x19mm_TEC9_NAME">
-		<English>32Rnd. Tec-9 mag.</English>
-		<Russian>32п. Tec-9 маг.</Russian>
-	  </Key> 	  
-      <Key ID="STR_DZ_MAG_32RND_9x19mm_TEC9_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Tec-9</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 32&lt;br/&gt;Utilisé avec: Tec-9</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 32&lt;br/&gt;Usado en: Tec-9</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 32&lt;br/&gt;Usato in: Tec-9</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 32&lt;br/&gt;Uzywany w: Tec-9</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 32&lt;br/&gt;Исп. в: Tec-9</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 32&lt;br/&gt;Eingesetzt in: Tec-9</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 32&lt;br/&gt;Pro: Tec-9</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 32&lt;br/&gt; Hozzá tartozó fegyver: Tec-9</Hungarian>
-      </Key>	  
-      <Key ID="STR_DZ_MAG_15RND_M9_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Beretta M9, Beretta M93R</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: Beretta M9, Beretta M93R</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: Beretta M9, Beretta M93R</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: Beretta M9, Beretta M93R</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: Beretta M9, Beretta M93R</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: Beretta M9, Beretta M93R</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: Beretta M9, Beretta M93R</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: Beretta M9, Beretta M93R</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: Beretta M9, Beretta M93R</Hungarian>
-      </Key>	
-      <Key ID="STR_DZ_MAG_15RND_M9SD_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Beretta M9 SD</English>
-        <French>Calibre : 9x19mm Parabellum SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: Beretta M9 SD</French>
-        <Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: Beretta M9 SD</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: Beretta M9 SD</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: Beretta M9 SD</Polish>
-        <Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: Beretta M9 SD</Russian>
-        <German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: Beretta M9 SD</German>
-        <Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: Beretta M9 SD</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: Beretta M9 SD</Hungarian>
-      </Key>
-      <Key ID="STR_DZ_MAG_17RND_G17_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 17&lt;br/&gt;Used in: G17</English>
-        <French>Calibre : 9x19mm Parabellum&lt;br/&gt;Munitions : 17&lt;br/&gt;Utilisé avec: G17</French>
-        <Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 17&lt;br/&gt;Usado en: G17</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 17&lt;br/&gt;Usato in: G17</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 17&lt;br/&gt;Uzywany w: G17</Polish>
-        <Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 17&lt;br/&gt;Исп. в: G17</Russian>
-        <German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 17&lt;br/&gt;Eingesetzt in: G17</German>
-        <Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 17&lt;br/&gt;Pro: G17</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 17&lt;br/&gt; Hozzá tartozó fegyver: G17</Hungarian>
-      </Key>	
-      <Key ID="STR_DZ_MAG_17RND_G17SD_9x19_DESC">
-	    <English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 17&lt;br/&gt;Used in: G17 SD</English>
-        <French>Calibre : 9x19mm Parabellum SD&lt;br/&gt;Munitions : 17&lt;br/&gt;Utilisé avec: G17 SD</French>
-        <Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 17&lt;br/&gt;Usado en: G17 SD</Spanish>
-        <Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 17&lt;br/&gt;Usato in: G17 SD</Italian>
-        <Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 17&lt;br/&gt;Uzywany w: G17 SD</Polish>
-        <Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 17&lt;br/&gt;Исп. в: G17 SD</Russian>
-        <German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 17&lt;br/&gt;Eingesetzt in: G17 SD</German>
-        <Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 17&lt;br/&gt;Pro: G17 SD</Czech>
-        <Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 17&lt;br/&gt; Hozzá tartozó fegyver: G17 SD</Hungarian>
-      </Key>	  
+		<Key ID="STR_DZ_MAG_75RND_RPK74_DESC">
+			<German>Kaliber: 5.45x39mm &lt;br/&gt;Patronen: 75 &lt;br/&gt;Eingesetzt in: AK-74, AK-107 und RPK-74</German>
+			<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 75 &lt;br/&gt;Used in: AK-74, AK-107 and RPK-74</English>
+			<Italian>Calibro: 5.45x39mm &lt;br/&gt;Munizioni: 75 &lt;br/&gt;Si usa in: AK-74, AK-107 e RPK-74</Italian>
+			<Spanish>Calibre: 5.45x39mm &lt;br/&gt;Cargas: 75 &lt;br/&gt;Uso: AK-74, AK-107 y RPK-74</Spanish>
+			<French>Calibre: 5.45x39mm &lt;br/&gt;Munitions: 75 &lt;br/&gt;Utilisé avec: AK-74, AK-107 et RPK-74</French>
+			<Czech>Kalibr: 5.45x39mm &lt;br/&gt;Nábojů: 75 &lt;br/&gt;Pro: AK-74, AK-107 a RPK-74</Czech>
+			<Russian>Патрон: 5.45x39мм &lt;br/&gt;Количество: 75 &lt;br/&gt;Используется в: АК-74, АК-107, РПК-74</Russian>
+			<Polish>Kaliber: 5.45x39mm &lt;br/&gt;Naboje: 75 &lt;br/&gt;Używane w: AK-74, AK-107 i RPK-74</Polish>
+			<Hungarian>Kaliber: 5.45x39mm &lt;br/&gt; Töltények: 75 &lt;br/&gt; Hozzá tartozó fegyver: AK-74, AK-107 and RPK-74</Hungarian>
+        </Key>
+		<Key ID="STR_DZ_MAG_100RND_556x45_BetaCMag_NAME">
+			<English>100Rnd. Beta C-Mag</English>
+		</Key>
+		<Key ID="STR_DZ_MAG_100RND_BetaCMag_DESC">
+			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
+			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
+			<Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
+			<Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, M8 y L110</Spanish>
+			<French>Calibre: 5.56x45mm &lt;br/&gt;Munitions: 100 &lt;br/&gt;Utilisé avec: G36, MG36, M16, M4, M249, MK-12, M8 et L110</French>
+			<Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, M8 a L110</Czech>
+			<Russian>Патрон: 5.56x45мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, M8, L110</Russian>
+			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, M8 i L110</Polish>
+			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
+        </Key>	
+		<Key ID="STR_DZ_MAG_20RND_MK17_DESC">
+			<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK17, M110, CZ 805B</English>
+			<French>Calibre: 7.62x51mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: MK17, M110, CZ 805B</French>
+			<Spanish>Calibre: 7.62x51mm OTAN&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: MK17, M110, CZ 805B</Spanish>
+			<Italian>Calibro: 7.62x51mm NATO&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: MK17, M110, CZ 805B</Italian>
+			<Polish>Kaliber: 7.62x51mm NATO&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: MK17, M110, CZ 805B</Polish>
+			<Russian>Патрон: 7.62x51мм НАТО&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: MK17, M110, CZ 805B</Russian>
+			<German>Kaliber: 7.62x51mm NATO&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: MK17, M110, CZ 805B</German>
+			<Czech>Kalibr: 7.62x51mm NATO&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: MK17, M110, CZ 805B</Czech>
+			<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: MK17, M110, CZ 805B</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_20RND_MK17SD_DESC">
+			<English>Caliber: 7.62x51mm NATO SD &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK17 SD</English>
+			<French>Calibre: 7.62x51mm OTAN SD &lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: MK17 SD</French>
+			<Spanish>Calibre: 7.62x51mm OTAN&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: MK17 SD</Spanish>
+			<Italian>Calibro: 7.62x51mm NATO SD &lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: MK17 SD</Italian>
+			<Polish>Kaliber: 7.62x51mm NATO SD &lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: MK17 SD</Polish>
+			<Russian>Патрон: 7.62x51мм НАТО SD &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: MK17 SD</Russian>
+			<German>Kaliber: 7.62x51mm NATO SD &lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: MK17 SD</German>
+			<Czech>Kalibr: 7.62x51mm NATO SD &lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: MK17 SD</Czech>
+			<Hungarian>Kaliber: 7.62x51mm NATO &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: MK17 SD</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_40RND_MP7_NAME">
+			<English>40Rnd. MP7 mag.</English>
+			<Russian>40п. MP7 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_40RND_MP7SD_NAME">
+			<English>40Rnd. MP7 SD mag.</English>
+			<Russian>40п. MP7 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_40RND_MP7_DESC">
+			<English>Caliber: 4.6x30mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7</English>
+			<French>Calibre: 4.6x30mm&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec: MP7</French>
+			<Spanish>Calibre: 4.6x30mm&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: MP7</Spanish>
+			<Italian>Calibro: 4.6x30mm&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: MP7</Italian>
+			<Polish>Kaliber: 4.6x30mm&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: MP7</Polish>
+			<Russian>Патрон: 4.6x30 мм&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: MP7</Russian>
+			<German>Kaliber: 4.6x30mm&lt;br/&gt;Patronen: 40&lt;br/&gt;Eingesetzt in: MP7</German>
+			<Czech>Kalibr: 4.6x30mm&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7</Czech>
+			<Hungarian>Kaliber: 4.6x30mm &lt;br/&gt; Töltények: 40 &lt;br/&gt; Hozzá tartozó fegyver: MP7</Hungarian>       
+		</Key>
+		<Key ID="STR_DZ_MAG_40RND_MP7SD_DESC">
+			<English>Caliber: 4.6x30mm SD&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7 SD</English>
+			<French>Calibre: 4.6x30mm SD&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec: MP7 SD</French>
+			<Spanish>Calibre: 4.6x30mm SD&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: MP7 SD</Spanish>
+			<Italian>Calibro: 4.6x30mm SD&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: MP7 SD</Italian>
+			<Polish>Kaliber: 4.6x30mm SD&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: MP7 SD</Polish>
+			<Russian>Патрон: 4.6x30 мм SD&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: MP7 SD</Russian>
+			<German>Kaliber: 4.6x30mm SD&lt;br/&gt;Patronen: 40&lt;br/&gt;Eingesetzt in: MP7 SD</German>
+			<Czech>Kalibr: 4.6x30mm SD&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: MP7 SD</Czech>
+			<Hungarian>Kaliber: 4.6x30mm SD &lt;br/&gt; Töltények: 40 &lt;br/&gt; Hozzá tartozó fegyver: MP7 SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_15RND_P99_NAME">
+			<English>15Rnd. P99 mag.</English>
+			<Russian>15п. P99 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_15RND_P99SD_NAME">
+			<English>15Rnd. P99 SD mag.</English>
+			<Russian>15п. P99 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_15RND_P99_DESC">
+			<English>Caliber: 10x22mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99</English>
+			<French>Calibre: 10x22mm&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: P99</French>
+			<Spanish>Calibre: 10x22mm&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: P99</Spanish>
+			<Italian>Calibro: 10x22mm&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: P99</Italian>
+			<Polish>Kaliber: 10x22mm&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: P99</Polish>
+			<Russian>Патрон: 10x22 мм&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: P99</Russian>
+			<German>Kaliber: 10x22mm&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: P99</German>
+			<Czech>Kalibr: 10x22mm&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99</Czech>
+			<Hungarian>Kaliber: 10x22mm &lt;br/&gt; Töltények: 15 &lt;br/&gt; Hozzá tartozó fegyver: P99</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_15RND_P99SD_DESC">
+			<English>Caliber: 10x22mm SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99 SD</English>
+			<French>Calibre: 10x22mm SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: P99 SD</French>
+			<Spanish>Calibre: 10x22mm SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: P99 SD</Spanish>
+			<Italian>Calibro: 10x22mm SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: P99 SD</Italian>
+			<Polish>Kaliber: 10x22mm SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: P99 SD</Polish>
+			<Russian>Патрон: 10x22 мм SD&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: P99 SD</Russian>
+			<German>Kaliber: 10x22mm SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: P99 SD</German>
+			<Czech>Kalibr: 10x22mm SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: P99 SD</Czech>
+			<Hungarian>Kaliber: 10x22mm SD &lt;br/&gt; Töltények: 15 &lt;br/&gt; Hozzá tartozó fegyver: P99 SD</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_ACR_NAME">
+			<English>30Rnd. ACR mag.</English>
+			<Russian>30п. ACR маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_30RND_ACRSD_NAME">
+			<English>30Rnd. ACR SD mag.</English>
+			<Russian>30п. ACR SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_ACR_DESC">
+			<English>Caliber: 6.80x43mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR</English>
+			<French>Calibre: 6.80x43mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: ACR</French>
+			<Spanish>Calibre: 6.80x43mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: ACR</Spanish>
+			<Italian>Calibro: 6.80x43mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: ACR</Italian>
+			<Polish>Kaliber: 6.80x43mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: ACR</Polish>
+			<Russian>Патрон: 6.80x43 мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: ACR</Russian>
+			<German>Kaliber: 6.80x43mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: ACR</German>
+			<Czech>Kalibr: 6.80x43mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: ACR</Czech>
+			<Hungarian>Kaliber: 6.80x43mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: ACR</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_ACRSD_DESC">
+			<English>Caliber: 6.80x43mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR SD</English>
+			<French>Calibre: 6.80x43mm SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: ACR SD</French>
+			<Spanish>Calibre: 6.80x43mm SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: ACR SD</Spanish>
+			<Italian>Calibro: 6.80x43mm SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: ACR SD</Italian>
+			<Polish>Kaliber: 6.80x43mm SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: ACR SD</Polish>
+			<Russian>Патрон: 6.80x43 мм SD&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: ACR SD</Russian>
+			<German>Kaliber: 6.80x43mm SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: ACR SD</German>
+			<Czech>Kalibr: 6.80x43mm SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: ACR SD</Czech>
+			<Hungarian>Kaliber: 6.80x43mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: ACR SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_20RND_RSASS_NAME">
+			<English>30Rnd. RSASS mag.</English>
+			<Russian>30п. RSASS маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_20RND_RSASSSD_NAME">
+			<English>30Rnd. RSASS SD mag.</English>
+			<Russian>30п. RSASS SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_RSASS_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: RSASS</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: RSASS</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: RSASS</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: RSASS</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: RSASS</Polish>
+			<Russian>Патрон: 7.62x51 мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: RSASS</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: RSASS</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: RSASS</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: RSASS</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_RSASSSD_DESC">
+			<English>Caliber: 7.62x51mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: RSASS SD</English>
+			<French>Calibre: 7.62x51mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: RSASS SD</French>
+			<Spanish>Calibre: 7.62x51mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: RSASS SD</Spanish>
+			<Italian>Calibro: 7.62x51mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: RSASS SD</Italian>
+			<Polish>Kaliber: 7.62x51mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: RSASS SD</Polish>
+			<Russian>Патрон: 7.62x51 мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: RSASS SD</Russian>
+			<German>Kaliber: 7.62x51mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: RSASS SD</German>
+			<Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: RSASS SD</Czech>
+			<Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: RSASS SD</Hungarian>
+		</Key>	  
+		<Key ID="STR_DZ_MAG_7RND_MSR_NAME">
+			<English>7Rnd. MSR mag.</English>
+			<Russian>7п. MSR маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_7RND_MSRSD_NAME">
+			<English>7Rnd. MSR SD mag.</English>
+			<Russian>7п. MSR SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_7RND_MSR_DESC">
+			<English>Caliber: .338&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: MSR</English>
+			<French>Calibre: .338&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: MSR</French>
+			<Spanish>Calibre: .338&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: MSR</Spanish>
+			<Italian>Calibro: .338&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: MSR</Italian>
+			<Polish>Kaliber: .338&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: MSR</Polish>
+			<Russian>Патрон: .338 &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: MSR</Russian>
+			<German>Kaliber: .338&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: MSR</German>
+			<Czech>Kalibr: .338&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: MSR</Czech>
+			<Hungarian>Kaliber: .338 &lt;br/&gt; Töltények: 7 &lt;br/&gt; Hozzá tartozó fegyver: MSR</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_7RND_MSRSD_DESC">
+			<English>Caliber: .338 SD&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: MSR SD</English>
+			<French>Calibre: .338 SD&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: MSR SD</French>
+			<Spanish>Calibre: .338 SD&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: MSR SD</Spanish>
+			<Italian>Calibro: .338 SD&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: MSR SD</Italian>
+			<Polish>Kaliber: .338 SD&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: MSR SD</Polish>
+			<Russian>Патрон: .338 SD&lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: MSR SD</Russian>
+			<German>Kaliber: .338 SD&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: MSR SD</German>
+			<Czech>Kalibr: .338 SD&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: MSR SD</Czech>
+			<Hungarian>Kaliber: .338 SD &lt;br/&gt; Töltények: 7 &lt;br/&gt; Hozzá tartozó fegyver: MSR SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_5RND_XM2010_NAME">
+			<English>5Rnd. XM2010 mag.</English>
+			<Russian>5п. XM2010 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_5RND_XM2010SD_NAME">
+			<English>5Rnd. XM2010 SD mag.</English>
+			<Russian>5п. XM2010 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_5RND_XM2010_DESC">
+			<English>Caliber: .300&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: XM2010</English>
+			<French>Calibre: .300&lt;br/&gt;Munitions : 5&lt;br/&gt;Utilisé avec: XM2010</French>
+			<Spanish>Calibre: .300&lt;br/&gt;Cartuchos: 5&lt;br/&gt;Usado en: XM2010</Spanish>
+			<Italian>Calibro: .300&lt;br/&gt;Munizioni: 5&lt;br/&gt;Usato in: XM2010</Italian>
+			<Polish>Kaliber: .300&lt;br/&gt;Naboje: 5&lt;br/&gt;Uzywany w: XM2010</Polish>
+			<Russian>Патрон: .300 &lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: XM2010</Russian>
+			<German>Kaliber: .300&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: XM2010</German>
+			<Czech>Kalibr: .300&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: XM2010</Czech>
+			<Hungarian>Kaliber: .300 &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: XM2010</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_5RND_XM2010SD_DESC">
+			<English>Caliber: .300 SD&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: XM2010 SD</English>
+			<French>Calibre: .300 SD&lt;br/&gt;Munitions : 5&lt;br/&gt;Utilisé avec: XM2010 SD</French>
+			<Spanish>Calibre: .300 SD&lt;br/&gt;Cartuchos: 5&lt;br/&gt;Usado en: XM2010 SD</Spanish>
+			<Italian>Calibro: .300 SD&lt;br/&gt;Munizioni: 5&lt;br/&gt;Usato in: XM2010 SD</Italian>
+			<Polish>Kaliber: .300 SD&lt;br/&gt;Naboje: 5&lt;br/&gt;Uzywany w: XM2010 SD</Polish>
+			<Russian>Патрон: .300 SD&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: XM2010 SD</Russian>
+			<German>Kaliber: .300 SD&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: XM2010 SD</German>
+			<Czech>Kalibr: .300 SD&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: XM2010 SD</Czech>
+			<Hungarian>Kaliber: .300 SD &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: XM2010 SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_KACPDW_NAME">
+			<English>30Rnd. KAC PDW mag.</English>
+			<Russian>30п. KAC PDW маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_KACPDW_DESC">
+			<English>Caliber: 6x35mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: KAC PDW</English>
+			<French>Calibre: 6x35mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: KAC PDW</French>
+			<Spanish>Calibre: 6x35mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: KAC PDW</Spanish>
+			<Italian>Calibro: 6x35mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: KAC PDW</Italian>
+			<Polish>Kaliber: 6x35mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: KAC PDW</Polish>
+			<Russian>Патрон: 6x35mm &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: KAC PDW</Russian>
+			<German>Kaliber: 6x35mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: KAC PDW</German>
+			<Czech>Kalibr: 6x35mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: KAC PDW</Czech>
+			<Hungarian>Kaliber: 6x35mm &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: KAC PDW</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_6RND_44MAGNUM_NAME">
+			<English>6Rnd. .44 Magnum</English>
+			<Russian>6п. .44 Magnum</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_44MAGNUM_DESC">
+			<English>Caliber: .44 Magnum&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: Colt Anaconda, Taurus Raging Bull</English>
+			<French>Calibre: .44 Magnum&lt;br/&gt;Munitions : 6&lt;br/&gt;Utilisé avec: Taurus Raging Bull</French>
+			<Spanish>Calibre: .44 Magnum&lt;br/&gt;Cartuchos: 6&lt;br/&gt;Usado en: Colt Anaconda, Taurus Raging Bull</Spanish>
+			<Italian>Calibro: .44 Magnum&lt;br/&gt;Munizioni: 6&lt;br/&gt;Usato in: Colt Anaconda, Taurus Raging Bull</Italian>
+			<Polish>Kaliber: .44 Magnum&lt;br/&gt;Naboje: 6&lt;br/&gt;Uzywany w: Colt Anaconda, Taurus Raging Bull</Polish>
+			<Russian>Патрон: .44 Magnum &lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: Colt Anaconda, Taurus Raging Bull</Russian>
+			<German>Kaliber: .44 Magnum&lt;br/&gt;Patronen: 6&lt;br/&gt;Eingesetzt in: Colt Anaconda, Taurus Raging Bull</German>
+			<Czech>Kalibr: .44 Magnum&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: Colt Anaconda, Taurus Raging Bull</Czech>
+			<Hungarian>Kaliber: .44 Magnum &lt;br/&gt; Töltények: 6&lt;br/&gt; Hozzá tartozó fegyver: Colt Anaconda, Taurus Raging Bull</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_6RND_357MAGNUM_NAME">
+			<English>6Rnd. .357 Magnum</English>
+			<Russian>6п. .357 Magnum</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_357MAGNUM_DESC">
+			<English>Caliber: .357 Magnum&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: Colt Python</English>
+			<French>Calibre: .357 Magnum&lt;br/&gt;Munitions : 6&lt;br/&gt;Utilisé avec: Colt Python</French>
+			<Spanish>Calibre: .357 Magnum&lt;br/&gt;Cartuchos: 6&lt;br/&gt;Usado en: Colt Python</Spanish>
+			<Italian>Calibro: .357 Magnum&lt;br/&gt;Munizioni: 6&lt;br/&gt;Usato in: Colt Python</Italian>
+			<Polish>Kaliber: .357 Magnum&lt;br/&gt;Naboje: 6&lt;br/&gt;Uzywany w: Colt Python</Polish>
+			<Russian>Патрон: .357 Magnum &lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: Colt Python</Russian>
+			<German>Kaliber: .357 Magnum&lt;br/&gt;Patronen: 6&lt;br/&gt;Eingesetzt in: Colt Python</German>
+			<Czech>Kalibr: .357 Magnum&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: Colt Python</Czech>
+			<Hungarian>Kaliber: .357 Magnum &lt;br/&gt; Töltények: 6&lt;br/&gt; Hozzá tartozó fegyver: Colt Python</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_13RND_9x19_BHP_NAME">
+			<English>13Rnd. Browning mag.</English>
+			<Russian>13п. Browning маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_13RND_BHP_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 13&lt;br/&gt;Used in: FN Browning HP</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 13&lt;br/&gt;Utilisé avec: FN Browning HP</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 13&lt;br/&gt;Usado en: FN Browning HP</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 13&lt;br/&gt;Usato in: FN Browning HP</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 13&lt;br/&gt;Uzywany w: FN Browning HP</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 13&lt;br/&gt;Исп. в: FN Browning HP</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 13&lt;br/&gt;Eingesetzt in: FN Browning HP</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 13&lt;br/&gt;Pro: FN Browning HP</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 13&lt;br/&gt; Hozzá tartozó fegyver: FN Browning HP</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_15RND_9x19_P226_NAME">
+			<English>15Rnd. P226 mag.</English>
+			<Russian>15п. P226 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_15RND_P226_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: SIG Sauer P226</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: SIG Sauer P226</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: SIG Sauer P226</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: SIG Sauer P226</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: SIG Sauer P226</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: SIG Sauer P226</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: SIG Sauer P226</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: SIG Sauer P226</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: SIG Sauer P226</Hungarian>
+		</Key>	  
+		<Key ID="STR_DZ_MAG_8RND_9x19_P38_NAME">
+			<English>8Rnd. P38 mag.</English>
+			<Russian>8п. P38 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_P38_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Walther P38</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Walther P38</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Walther P38</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Walther P38</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Walther P38</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Walther P38</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Walther P38</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Walther P38</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Walther P38</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_7RND_9x17_PPK_NAME">
+			<English>7Rnd. PPK mag.</English>
+			<Russian>7п. PPK маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_7RND_PPK_9x17_DESC">
+			<English>Caliber: .380 ACP&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Walther PPK</English>
+			<French>Calibre: .380 ACP&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Walther PPK</French>
+			<Spanish>Calibre: .380 ACP&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Walther PPK</Spanish>
+			<Italian>Calibro: .380 ACP&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Walther PPK</Italian>
+			<Polish>Kaliber: .380 ACP&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Walther PPK</Polish>
+			<Russian>Патрон: .380 ACP &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Walther PPK</Russian>
+			<German>Kaliber: .380 ACP&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Walther PPK</German>
+			<Czech>Kalibr: .380 ACP&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Walther PPK</Czech>
+			<Hungarian>Kaliber: .380 ACP &lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Walther PPK</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_9x19_MK22_NAME">
+			<English>8Rnd. MK 22 mag.</English>
+			<Russian>8п. MK 22 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_MK22_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Mk 22 Mod 0</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Mk 22 Mod 0</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Mk 22 Mod 0</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Mk 22 Mod 0</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Mk 22 Mod 0</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Mk 22 Mod 0</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Mk 22 Mod 0</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Mk 22 Mod 0</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Mk 22 Mod 0</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_8RND_9x19_MK22SD_NAME">
+			<English>8Rnd. MK 22 SD mag.</English>
+			<Russian>8п. MK 22 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_MK22SD_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Mk 22 Mod 0 SD</English>
+			<French>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Mk 22 Mod 0 SD</French>
+			<Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Mk 22 Mod 0 SD</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Mk 22 Mod 0 SD</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Mk 22 Mod 0 SD</Polish>
+			<Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Mk 22 Mod 0 SD</Russian>
+			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Mk 22 Mod 0 SD</German>
+			<Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Mk 22 Mod 0 SD</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Mk 22 Mod 0 SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_15RND_45ACP_USP_NAME">
+			<English>15Rnd. USP mag.</English>
+			<Russian>15п. USP маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_15RND_USP_45ACP_DESC">
+			<English>Caliber: .45 ACP&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: USP</English>
+			<French>Calibre: .45 ACP&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: USP</French>
+			<Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: USP</Spanish>
+			<Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: USP</Italian>
+			<Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: USP</Polish>
+			<Russian>Патрон: .45 ACP &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: USP</Russian>
+			<German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: USP</German>
+			<Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: USP</Czech>
+			<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: USP</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_15RND_45ACP_USPSD_NAME">
+			<English>15Rnd. USP SD mag.</English>
+			<Russian>15п. USP SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_15RND_USPSD_45ACP_DESC">
+			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: USP SD</English>
+			<French>Calibre: .45 ACP SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: USP SD</French>
+			<Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: USP SD</Spanish>
+			<Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: USP SD</Italian>
+			<Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: USP SD</Polish>
+			<Russian>Патрон: .45 ACP SD &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: USP SD</Russian>
+			<German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: USP SD</German>
+			<Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: USP SD</Czech>
+			<Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: USP SD</Hungarian>
+		</Key>	  
+		<Key ID="STR_DZ_MAG_7RND_M1911_45ACP_DESC">
+			<English>Caliber: .45 ACP&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Kimber M1911, Colt M1911</English>
+			<French>Calibre: .45 ACP&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Kimber M1911, Colt M1911</French>
+			<Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Kimber M1911, Colt M1911</Spanish>
+			<Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Kimber M1911, Colt M1911</Italian>
+			<Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Kimber M1911, Colt M1911</Polish>
+			<Russian>Патрон: .45 ACP&lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Kimber M1911, Colt M1911</Russian>
+			<German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Kimber M1911, Colt M1911</German>
+			<Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Kimber M1911, Colt M1911</Czech>
+			<Hungarian>Kaliber: .45 ACP&lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Kimber M1911, Colt M1911</Hungarian>
+		</Key>	  
+		<Key ID="STR_DZ_MAG_7RND_45ACP_KIMBER1911SD_NAME">
+			<English>7Rnd. M1911 SD mag.</English>
+			<Russian>7п. M1911 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_7RND_KIMBER1911SD_45ACP_DESC">
+			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Kimber M1911 SD</English>
+			<French>Calibre: .45 ACP SD&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Kimber M1911 SD</French>
+			<Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Kimber M1911 SD</Spanish>
+			<Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Kimber M1911 SD</Italian>
+			<Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Kimber M1911 SD</Polish>
+			<Russian>Патрон: .45 ACP SD &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Kimber M1911 SD</Russian>
+			<German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Kimber M1911 SD</German>
+			<Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Kimber M1911 SD</Czech>
+			<Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Kimber M1911 SD</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_762x25_TT33_NAME">
+			<English>8Rnd. TT-33 mag.</English>
+			<Russian>8п. TT-33 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_TT33_762x25_DESC">
+			<English>Caliber: 7.62x25mm&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Tokarew TT-33</English>
+			<French>Calibre: 7.62x25mm&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: Tokarew TT-33</French>
+			<Spanish>Calibre: 7.62x25mm&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: Tokarew TT-33</Spanish>
+			<Italian>Calibro: 7.62x25mm&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: Tokarew TT-33</Italian>
+			<Polish>Kaliber: 7.62x25mm&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: Tokarew TT-33</Polish>
+			<Russian>Патрон: 7.62x25mm &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Пистолет TT-33</Russian>
+			<German>Kaliber: 7.62x25mm&lt;br/&gt;Patronen: 8&lt;br/&gt;Eingesetzt in: Tokarew TT-33</German>
+			<Czech>Kalibr: 7.62x25mm&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: Tokarew TT-33</Czech>
+			<Hungarian>Kaliber: 7.62x25mm &lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: Tokarew TT-33</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_10RND_C22_RUGERMK2_NAME">
+			<English>10Rnd. Ruger MK2 mag.</English>
+			<Russian>10п. Ruger MK2 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_10RND_RUGERMK2_C22_DESC">
+			<English>Caliber: .22 lfB&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: Ruger MK2</English>
+			<French>Calibre: .22 lfB&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: Ruger MK2</French>
+			<Spanish>Calibre: .22 lfB&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: Ruger MK2</Spanish>
+			<Italian>Calibro: .22 lfB&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: Ruger MK2</Italian>
+			<Polish>Kaliber: .22 lfB&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: Ruger MK2</Polish>
+			<Russian>Патрон: .22 lfB &lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: Ruger MK2</Russian>
+			<German>Kaliber: .22 lfB&lt;br/&gt;Patronen: 10&lt;br/&gt;Eingesetzt in: Ruger MK2</German>
+			<Czech>Kalibr: .22 lfB&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: Ruger MK2</Czech>
+			<Hungarian>Kaliber: .22 lfB &lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: Ruger MK2</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_9x19mm_M93R_NAME">
+			<English>20Rnd. M93R mag.</English>
+			<Russian>20п. M93R маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_9x19mm_M93R_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: M93R</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: M93R</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: M93R</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: M93R</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: M93R</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: M93R</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: M93R</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: M93R</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: M93R</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_33RND_9x19mm_G18_NAME">
+			<English>33Rnd. G18 mag.</English>
+			<Russian>33п. G18 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_33RND_9x19mm_G18_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: G18</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 33&lt;br/&gt;Utilisé avec: G18</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 33&lt;br/&gt;Usado en: G18</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 33&lt;br/&gt;Usato in: G18</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 33&lt;br/&gt;Uzywany w: G18</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 33&lt;br/&gt;Исп. в: G18</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 33&lt;br/&gt;Eingesetzt in: G18</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 33&lt;br/&gt;Pro: G18</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: G18</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_32RND_9x19mm_TEC9_NAME">
+			<English>32Rnd. Tec-9 mag.</English>
+			<Russian>32п. Tec-9 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_32RND_9x19mm_TEC9_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Tec-9</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 32&lt;br/&gt;Utilisé avec: Tec-9</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 32&lt;br/&gt;Usado en: Tec-9</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 32&lt;br/&gt;Usato in: Tec-9</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 32&lt;br/&gt;Uzywany w: Tec-9</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 32&lt;br/&gt;Исп. в: Tec-9</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 32&lt;br/&gt;Eingesetzt in: Tec-9</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 32&lt;br/&gt;Pro: Tec-9</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 32&lt;br/&gt; Hozzá tartozó fegyver: Tec-9</Hungarian>
+		</Key>	  
+		<Key ID="STR_DZ_MAG_15RND_M9_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Beretta M9, Beretta M93R</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: Beretta M9, Beretta M93R</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: Beretta M9, Beretta M93R</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: Beretta M9, Beretta M93R</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: Beretta M9, Beretta M93R</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: Beretta M9, Beretta M93R</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: Beretta M9, Beretta M93R</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: Beretta M9, Beretta M93R</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: Beretta M9, Beretta M93R</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_15RND_M9SD_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: Beretta M9 SD</English>
+			<French>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: Beretta M9 SD</French>
+			<Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: Beretta M9 SD</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: Beretta M9 SD</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: Beretta M9 SD</Polish>
+			<Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: Beretta M9 SD</Russian>
+			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 15&lt;br/&gt;Eingesetzt in: Beretta M9 SD</German>
+			<Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: Beretta M9 SD</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: Beretta M9 SD</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_17RND_G17_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 17&lt;br/&gt;Used in: G17</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 17&lt;br/&gt;Utilisé avec: G17</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 17&lt;br/&gt;Usado en: G17</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 17&lt;br/&gt;Usato in: G17</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 17&lt;br/&gt;Uzywany w: G17</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 17&lt;br/&gt;Исп. в: G17</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 17&lt;br/&gt;Eingesetzt in: G17</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 17&lt;br/&gt;Pro: G17</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 17&lt;br/&gt; Hozzá tartozó fegyver: G17</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_17RND_G17SD_9x19_DESC">
+			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 17&lt;br/&gt;Used in: G17 SD</English>
+			<French>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Munitions : 17&lt;br/&gt;Utilisé avec: G17 SD</French>
+			<Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 17&lt;br/&gt;Usado en: G17 SD</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 17&lt;br/&gt;Usato in: G17 SD</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 17&lt;br/&gt;Uzywany w: G17 SD</Polish>
+			<Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 17&lt;br/&gt;Исп. в: G17 SD</Russian>
+			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 17&lt;br/&gt;Eingesetzt in: G17 SD</German>
+			<Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 17&lt;br/&gt;Pro: G17 SD</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 17&lt;br/&gt; Hozzá tartozó fegyver: G17 SD</Hungarian>
+		</Key>	  
 		<Key ID="STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME">
 			<English>20Rnd. SCAR mag.</English>
 			<Russian>20п. SCAR маг.</Russian>
@@ -13171,13 +13925,35 @@
 			<Russian>5п. L115 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME">
-			<English>20Rnd. VSS mag.</English>
-			<Russian>20п. VSS маг.</Russian>
+			<English>20Rnd. VSS/VAL mag.</English>
+			<Russian>20п. VSS/VAL маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME">
-			<English>10Rnd. VSS mag.</English>
-			<Russian>10п. VSS маг.</Russian>
+			<English>10Rnd. VSS/VAL mag.</English>
+			<Russian>10п. VSS/VAL маг.</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20RND_939_VSSVAL_DESC">
+			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: VSS Vintorez, AS VAL</English>
+			<French>Calibre: 9x39mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: VSS Vintorez, AS VAL</French>
+			<Spanish>Calibre: 9x39mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: VSS Vintorez, AS VAL</Spanish>
+			<Italian>Calibro: 9x39mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: VSS Vintorez, AS VAL</Italian>
+			<Polish>Kaliber: 9x39mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: VSS Vintorez, AS VAL</Polish>
+			<Russian>Патрон: 9x39mm &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: VSS Vintorez, AS VAL</Russian>
+			<German>Kaliber: 9x39mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: VSS Vintorez, AS VAL</German>
+			<Czech>Kalibr: 9x39mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: VSS Vintorez, AS VAL</Czech>
+			<Hungarian>Kaliber: 9x39mm &lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS VAL</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10RND_939_VSSVAL_DESC">
+			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: VSS Vintorez, AS VAL</English>
+			<French>Calibre: 9x39mm&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: VSS Vintorez, AS VAL</French>
+			<Spanish>Calibre: 9x39mm&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: VSS Vintorez, AS VAL</Spanish>
+			<Italian>Calibro: 9x39mm&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: VSS Vintorez, AS VAL</Italian>
+			<Polish>Kaliber: 9x39mm&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: VSS Vintorez, AS VAL</Polish>
+			<Russian>Патрон: 9x39mm &lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: VSS Vintorez, AS VAL</Russian>
+			<German>Kaliber: 9x39mm&lt;br/&gt;Patronen: 10&lt;br/&gt;Eingesetzt in: VSS Vintorez, AS VAL</German>
+			<Czech>Kalibr: 9x39mm&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: VSS Vintorez, AS VAL</Czech>
+			<Hungarian>Kaliber: 9x39mm &lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS VAL</Hungarian>
+		</Key>	
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME">
 			<English>20Rnd. 12 Cal. Slug.</English>
 			<German>20 Schuss Kal. 12 Flintenlaufgeschoss</German>
@@ -13230,7 +14006,7 @@
 	  </Key> 	  
       <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_DESC">
 			<English>Caliber: 20x102mm&lt;br/&gt;Rounds: 3&lt;br/&gt;Used in: Anzio 20mm</English>
-			<French>Calibre : 20x102mm&lt;br/&gt;Munitions : 3&lt;br/&gt;Utilisé avec: Anzio 20mm</French>
+			<French>Calibre: 20x102mm&lt;br/&gt;Munitions : 3&lt;br/&gt;Utilisé avec: Anzio 20mm</French>
 			<Spanish>Calibre: 20x102mm&lt;br/&gt;Cartuchos: 3&lt;br/&gt;Usado en: Anzio 20mm</Spanish>
 			<Italian>Calibro: 20x102mm&lt;br/&gt;Munizioni: 3&lt;br/&gt;Usato in: Anzio 20mm</Italian>
 			<Polish>Kaliber: 20x102mm&lt;br/&gt;Naboje: 3&lt;br/&gt;Uzywany w: Anzio 20mm</Polish>
@@ -13238,7 +14014,343 @@
 			<German>Kaliber: 20x102mm&lt;br/&gt;Patronen: 3&lt;br/&gt;Eingesetzt in: Anzio 20mm</German>
 			<Czech>Kalibr: 20x102mm&lt;br/&gt;Nábojů: 3&lt;br/&gt;Pro: Anzio 20mm</Czech>
 			<Hungarian>Kaliber: 20x102mm&lt;br/&gt; Töltények: 3&lt;br/&gt; Hozzá tartozó fegyver: Anzio 20mm</Hungarian>
-      </Key>		
+      </Key>	
+		<Key ID="STR_DZ_MAG_33RND_45ACP_KRISS_NAME">
+			<English>33Rnd. KRISS mag.</English>
+			<Russian>33п. KRISS маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_33RND_KRISS_45ACP_DESC">
+			<English>Caliber: .45 ACP&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: KRISS</English>
+			<French>Calibre: .45 ACP&lt;br/&gt;Munitions : 33&lt;br/&gt;Utilisé avec: KRISS</French>
+			<Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 33&lt;br/&gt;Usado en: KRISS</Spanish>
+			<Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 33&lt;br/&gt;Usato in: KRISS</Italian>
+			<Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 33&lt;br/&gt;Uzywany w: KRISS</Polish>
+			<Russian>Патрон: .45 ACP &lt;br/&gt;Количество: 33&lt;br/&gt;Исп. в: KRISS</Russian>
+			<German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 33&lt;br/&gt;Eingesetzt in: KRISS</German>
+			<Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 33&lt;br/&gt;Pro: KRISS</Czech>
+			<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: KRISS</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_33RND_45ACP_KRISSSD_NAME">
+			<English>33Rnd. KRISS SD mag.</English>
+			<Russian>33п. KRISS SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_33RND_KRISSSD_45ACP_DESC">
+			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: KRISS SD</English>
+			<French>Calibre: .45 ACP SD&lt;br/&gt;Munitions : 33&lt;br/&gt;Utilisé avec: KRISS SD</French>
+			<Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cartuchos: 33&lt;br/&gt;Usado en: KRISS SD</Spanish>
+			<Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 33&lt;br/&gt;Usato in: KRISS SD</Italian>
+			<Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 33&lt;br/&gt;Uzywany w: KRISS SD</Polish>
+			<Russian>Патрон: .45 ACP SD &lt;br/&gt;Количество: 33&lt;br/&gt;Исп. в: KRISS SD</Russian>
+			<German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 33&lt;br/&gt;Eingesetzt in: KRISS SD</German>
+			<Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 33&lt;br/&gt;Pro: KRISS SD</Czech>
+			<Hungarian>Kaliber: .45 ACP SD &lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: KRISS SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_9X19_UZI_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: PDW, MAC-10</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: PDW, MAC-10</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: PDW, MAC-10</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: PDW, MAC-10</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: PDW, MAC-10</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: PDW, MAC-10</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: PDW, MAC-10</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: PDW, MAC-10</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: PDW, MAC-10</Hungarian>
+		</Key>	  
+		<Key ID="STR_DZ_MAG_30RND_9X19_UZISD_DESC">
+			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: PDW SD</English>
+			<French>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: PDW SD</French>
+			<Spanish>Calibre: 9x19mm Parabellum SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: PDW SD</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: PDW SD</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: PDW SD</Polish>
+			<Russian>Патрон: 9x19mm Parabellum SD &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: PDW SD</Russian>
+			<German>Kaliber: 9x19mm Parabellum SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: PDW SD</German>
+			<Czech>Kalibr: 9x19mm Parabellum SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: PDW SD</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum SD &lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: PDW SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_9X19_TMPSD_NAME">
+			<English>30Rnd. TMP SD mag.</English>
+			<Russian>30п. TMP глуш. маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_9X19_TMP_NAME">
+			<English>30Rnd. TMP mag.</English>
+			<Russian>30п. TMP маг.</Russian>
+		</Key>	  
+        <Key ID="STR_DZ_MAG_30RND_TMP_DESC">
+			<German>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: Steyr TMP</German>
+			<English>Caliber: 9x19 mm Parabellum &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: Steyr TMP</English>
+			<Italian>Calibro: 9x19 mm Parabellum &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: Steyr TMP</Italian>
+			<Spanish>Calibre: 9x19 mm Parabellum &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: Steyr TMP </Spanish>
+			<French>Calibre: 9x19 mm Parabellum &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: Steyr TMP</French>
+			<Czech>Kalibr: 9x19 mm Parabellum &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: Steyr TMP</Czech>
+			<Russian>Патрон: 9x19 мм парабеллум &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: Steyr TMP</Russian>
+			<Polish>Kaliber: 9x19 mm Parabellum &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr TMP</Polish>
+			<Hungarian>Kaliber: 9x19 mm Parabellum &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr TMP</Hungarian>
+        </Key>			
+        <Key ID="STR_DZ_MAG_30RND_TMPSD_DESC">
+			<German>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: Steyr TMP SD</German>
+			<English>Caliber: 9x19 mm Parabellum SD&lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: Steyr TMP SD</English>
+			<Italian>Calibro: 9x19 mm Parabellum SD&lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: Steyr TMP SD</Italian>
+			<Spanish>Calibre: 9x19 mm Parabellum SD&lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: Steyr TMP SD</Spanish>
+			<French>Calibre: 9x19 mm Parabellum SD&lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: Steyr TMP SD</French>
+			<Czech>Kalibr: 9x19 mm Parabellum SD&lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: Steyr TMP SD</Czech>
+			<Russian>Патрон: 9x19 мм парабеллум SD&lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: Steyr TMP SD</Russian>
+			<Polish>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr TMP SD</Polish>
+			<Hungarian>Kaliber: 9x19 mm Parabellum SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr TMP SD</Hungarian>
+        </Key>	
+		<Key ID="STR_DZ_MAG_25RND_45_UMP_NAME">
+			<English>25Rnd. UMP mag.</English>
+			<Russian>25п. UMP маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_25RND_45_UMPSD_NAME">
+			<English>25Rnd. UMP SD mag.</English>
+			<Russian>25п. UMP глуш. маг.</Russian>
+		</Key>		
+        <Key ID="STR_DZ_MAG_25RND_UMP_DESC">
+			<German>Kaliber: .45 ACP &lt;br/&gt;Patronen: 25 &lt;br/&gt;Eingesetzt in: UMP</German>
+			<English>Caliber: .45 ACP &lt;br/&gt;Rounds: 25 &lt;br/&gt;Used in: UMP</English>
+			<Italian>Calibro: .45 ACP &lt;br/&gt;Munizioni: 25 &lt;br/&gt;Si usa in: UMP</Italian>
+			<Spanish>Calibre: .45 ACP &lt;br/&gt;Cargas: 25 &lt;br/&gt;Uso: UMP </Spanish>
+			<French>Calibre: .45 ACP &lt;br/&gt;Munitions: 25 &lt;br/&gt;Utilisé avec: UMP</French>
+			<Czech>Kalibr: .45 ACP &lt;br/&gt;Nábojů: 25 &lt;br/&gt;Pro: UMP</Czech>
+			<Russian>Патрон: .45 ACP &lt;br/&gt;Количество: 25 &lt;br/&gt;Используется в: UMP</Russian>
+			<Polish>Kaliber: .45 ACP &lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP</Polish>
+			<Hungarian>Kaliber: .45 ACP &lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP</Hungarian>
+        </Key>			
+        <Key ID="STR_DZ_MAG_25RND_UMPSD_DESC">
+			<German>Kaliber: .45 ACP SD&lt;br/&gt;Patronen: 25 &lt;br/&gt;Eingesetzt in: UMP SD</German>
+			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 25 &lt;br/&gt;Used in: UMP SD</English>
+			<Italian>Calibro: .45 ACP SD&lt;br/&gt;Munizioni: 25 &lt;br/&gt;Si usa in: UMP SD</Italian>
+			<Spanish>Calibre: .45 ACP SD&lt;br/&gt;Cargas: 25 &lt;br/&gt;Uso: UMP SD</Spanish>
+			<French>Calibre: .45 ACP SD&lt;br/&gt;Munitions: 25 &lt;br/&gt;Utilisé avec: UMP SD</French>
+			<Czech>Kalibr: .45 ACP SD&lt;br/&gt;Nábojů: 25 &lt;br/&gt;Pro: UMP SD</Czech>
+			<Russian>Патрон: .45 ACP SD&lt;br/&gt;Количество: 25 &lt;br/&gt;Используется в: UMP SD</Russian>
+			<Polish>Kaliber: .45 ACP SD&lt;br/&gt;Naboje: 25 &lt;br/&gt;Używane w: UMP SD</Polish>
+			<Hungarian>Kaliber: .45 ACP SD&lt;br/&gt; Töltények: 25 &lt;br/&gt; Hozzá tartozó fegyver: UMP SD</Hungarian>
+        </Key>		
+		<Key ID="STR_DZ_MAG_50RND_P90_NAME">
+			<English>50Rnd. P90 mag.</English>
+			<Russian>50п. P90 маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_50RND_P90SD_NAME">
+			<English>50Rnd. P90 SD mag.</English>
+			<Russian>50п. P90 глуш. маг.</Russian>
+		</Key>		
+        <Key ID="STR_DZ_MAG_50RND_P90_DESC">
+			<German>Kaliber: 5.7x28mm &lt;br/&gt;Patronen: 50 &lt;br/&gt;Eingesetzt in: P90</German>
+			<English>Caliber: 5.7x28mm &lt;br/&gt;Rounds: 50 &lt;br/&gt;Used in: P90</English>
+			<Italian>Calibro: 5.7x28mm &lt;br/&gt;Munizioni: 50 &lt;br/&gt;Si usa in: P90</Italian>
+			<Spanish>Calibre: 5.7x28mm &lt;br/&gt;Cargas: 50 &lt;br/&gt;Uso: P90 </Spanish>
+			<French>Calibre: 5.7x28mm &lt;br/&gt;Munitions: 50 &lt;br/&gt;Utilisé avec: P90</French>
+			<Czech>Kalibr: 5.7x28mm &lt;br/&gt;Nábojů: 50 &lt;br/&gt;Pro: P90</Czech>
+			<Russian>Патрон: 5.7x28mm &lt;br/&gt;Количество: 50 &lt;br/&gt;Используется в: P90</Russian>
+			<Polish>Kaliber: 5.7x28mm &lt;br/&gt;Naboje: 50 &lt;br/&gt;Używane w: P90</Polish>
+			<Hungarian>Kaliber: 5.7x28mm &lt;br/&gt; Töltények: 50 &lt;br/&gt; Hozzá tartozó fegyver: P90</Hungarian>
+        </Key>			
+        <Key ID="STR_DZ_MAG_50RND_P90SD_DESC">
+			<German>Kaliber: 5.7x28mm SD&lt;br/&gt;Patronen: 50 &lt;br/&gt;Eingesetzt in: P90 SD</German>
+			<English>Caliber: 5.7x28mm SD&lt;br/&gt;Rounds: 50 &lt;br/&gt;Used in: P90 SD</English>
+			<Italian>Calibro: 5.7x28mm SD&lt;br/&gt;Munizioni: 50 &lt;br/&gt;Si usa in: P90 SD</Italian>
+			<Spanish>Calibre: 5.7x28mm SD&lt;br/&gt;Cargas: 50 &lt;br/&gt;Uso: P90 SD</Spanish>
+			<French>Calibre: 5.7x28mm SD&lt;br/&gt;Munitions: 50 &lt;br/&gt;Utilisé avec: P90 SD</French>
+			<Czech>Kalibr: 5.7x28mm SD&lt;br/&gt;Nábojů: 50 &lt;br/&gt;Pro: P90 SD</Czech>
+			<Russian>Патрон: 5.7x28mm SD&lt;br/&gt;Количество: 50 &lt;br/&gt;Используется в: P90 SD</Russian>
+			<Polish>Kaliber: 5.7x28mm SD&lt;br/&gt;Naboje: 50 &lt;br/&gt;Używane w: P90 SD</Polish>
+			<Hungarian>Kaliber: 5.7x28mm SD&lt;br/&gt; Töltények: 50 &lt;br/&gt; Hozzá tartozó fegyver: P90 SD</Hungarian>
+        </Key>		
+		<Key ID="STR_DZ_MAG_20RND_HK417_NAME">
+			<English>30Rnd. HK417 mag.</English>
+			<Russian>30п. HK417 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_20RND_HK417SD_NAME">
+			<English>30Rnd. HK417 SD mag.</English>
+			<Russian>30п. HK417 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_HK417_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: HK417</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: HK417</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: HK417</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: HK417</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: HK417</Polish>
+			<Russian>Патрон: 7.62x51мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: HK417</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: HK417</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: HK417</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: HK417</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_HK417SD_DESC">
+			<English>Caliber: 7.62x51mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: HK417 SD</English>
+			<French>Calibre: 7.62x51mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: HK417 SD</French>
+			<Spanish>Calibre: 7.62x51mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: HK417 SD</Spanish>
+			<Italian>Calibro: 7.62x51mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: HK417 SD</Italian>
+			<Polish>Kaliber: 7.62x51mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: HK417 SD</Polish>
+			<Russian>Патрон: 7.62x51мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: HK417 SD</Russian>
+			<German>Kaliber: 7.62x51mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: HK417 SD</German>
+			<Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: HK417 SD</Czech>
+			<Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: HK417 SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_20RND_APS_NAME">
+			<English>20Rnd. APS mag.</English>
+			<Russian>20п. APS маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_20RND_APSSD_NAME">
+			<English>20Rnd. APS SD mag.</English>
+			<Russian>20п. APS SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_APS_DESC">
+			<English>Caliber: 9x18mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: APS</English>
+			<French>Calibre: 9x18mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: APS</French>
+			<Spanish>Calibre: 9x18mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: APS</Spanish>
+			<Italian>Calibro: 9x18mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: APS</Italian>
+			<Polish>Kaliber: 9x18mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: APS</Polish>
+			<Russian>Патрон: 9x18мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: APS</Russian>
+			<German>Kaliber: 9x18mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: APS</German>
+			<Czech>Kalibr: 9x18mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: APS</Czech>
+			<Hungarian>Kaliber: 9x18mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: APS</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_APSSD_DESC">
+			<English>Caliber: 9x18mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: APS SD</English>
+			<French>Calibre: 9x18mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: APS SD</French>
+			<Spanish>Calibre: 9x18mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: APS SD</Spanish>
+			<Italian>Calibro: 9x18mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: APS SD</Italian>
+			<Polish>Kaliber: 9x18mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: APS SD</Polish>
+			<Russian>Патрон: 9x18мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: APS SD</Russian>
+			<German>Kaliber: 9x18mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: APS SD</German>
+			<Czech>Kalibr: 9x18mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: APS SD</Czech>
+			<Hungarian>Kaliber: 9x18mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: APS SD</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_RK95_NAME">
+			<English>30Rnd. RK-95 mag.</English>
+			<Russian>30п. RK-95 маг.</Russian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_30RND_RK95_DESC">
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: RK-95</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: RK-95</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: RK-95</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: RK-95</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: RK-95</Polish>
+			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: RK-95</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: RK-95</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: RK-95</Czech>
+			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: RK-95</Hungarian>
+		</Key>			
+		<Key ID="STR_DZ_MAG_30RND_RK95SD_NAME">
+			<English>30Rnd. RK-95 SD mag.</English>
+			<Russian>30п. RK-95 SD маг.</Russian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_30RND_RK95SD_DESC">
+			<English>Caliber: 7.62x39mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: RK-95 SD</English>
+			<French>Calibre: 7.62x39mm SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: RK-95 SD</French>
+			<Spanish>Calibre: 7.62x39mm SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: RK-95 SD</Spanish>
+			<Italian>Calibro: 7.62x39mm SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: RK-95 SD</Italian>
+			<Polish>Kaliber: 7.62x39mm SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: RK-95 SD</Polish>
+			<Russian>Патрон: 7.62x39мм SD&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: RK-95 SD</Russian>
+			<German>Kaliber: 7.62x39mm SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: RK-95 SD</German>
+			<Czech>Kalibr: 7.62x39mm SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: RK-95 SD</Czech>
+			<Hungarian>Kaliber: 7.62x39mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: RK-95 SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_AK47M_DESC">
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: AK-47M, SA-58, RPK</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, SA-58, RPK</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, SA-58, RPK</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, SA-58, RPK</Polish>
+			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, SA-58, RPK</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: AK-47M, SA-58, RPK</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK</Czech>
+			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_SA58_DESC">
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: AK-47M, SA-58, RPK</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, SA-58, RPK</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, SA-58, RPK</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, SA-58, RPK</Polish>
+			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, SA-58, RPK</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: AK-47M, SA-58, RPK</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK</Czech>
+			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_Groza9_NAME">
+			<English>20Rnd. Groza-9 mag.</English>
+			<Russian>20п. Groza-9 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_20RND_Groza9SD_NAME">
+			<English>20Rnd. Groza-9 SD mag.</English>
+			<Russian>20п. Groza-9 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_Groza9_DESC">
+			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Groza-9</English>
+			<French>Calibre: 9x39mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: Groza-9</French>
+			<Spanish>Calibre: 9x39mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: Groza-9</Spanish>
+			<Italian>Calibro: 9x39mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: Groza-9</Italian>
+			<Polish>Kaliber: 9x39mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: Groza-9</Polish>
+			<Russian>Патрон: 9x39мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: Groza-9</Russian>
+			<German>Kaliber: 9x39mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: Groza-9</German>
+			<Czech>Kalibr: 9x39mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Groza-9</Czech>
+			<Hungarian>Kaliber: 9x39mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Groza-9</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_Groza9SD_DESC">
+			<English>Caliber: 9x39mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Groza-9 SD</English>
+			<French>Calibre: 9x39mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: Groza-9 SD</French>
+			<Spanish>Calibre: 9x39mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: Groza-9 SD</Spanish>
+			<Italian>Calibro: 9x39mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: Groza-9 SD</Italian>
+			<Polish>Kaliber: 9x39mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: Groza-9 SD</Polish>
+			<Russian>Патрон: 9x39мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: Groza-9 SD</Russian>
+			<German>Kaliber: 9x39mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: Groza-9 SD</German>
+			<Czech>Kalibr: 9x39mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: Groza-9 SD</Czech>
+			<Hungarian>Kaliber: 9x39mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: Groza-9 SD</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_Groza1_NAME">
+			<English>30Rnd. Groza-1 mag.</English>
+			<Russian>30п. Groza-1 маг.</Russian>
+		</Key> 	
+		<Key ID="STR_DZ_MAG_30RND_Groza1SD_NAME">
+			<English>30Rnd. Groza-1 SD mag.</English>
+			<Russian>30п. Groza-1 SD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_Groza1_DESC">
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: Groza-1</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: Groza-1</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: Groza-1</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: Groza-1</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: Groza-1</Polish>
+			<Russian>Патрон: 7.62x39мм&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Groza-1</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: Groza-1</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: Groza-1</Czech>
+			<Hungarian>Kaliber: 7.62x39mm&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Groza-1</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_Groza1SD_DESC">
+			<English>Caliber: 7.62x39mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: Groza-1 SD</English>
+			<French>Calibre: 7.62x39mm SD&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: Groza-1 SD</French>
+			<Spanish>Calibre: 7.62x39mm SD&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: Groza-1 SD</Spanish>
+			<Italian>Calibro: 7.62x39mm SD&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: Groza-1 SD</Italian>
+			<Polish>Kaliber: 7.62x39mm SD&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: Groza-1 SD</Polish>
+			<Russian>Патрон: 7.62x39мм SD&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Groza-1 SD</Russian>
+			<German>Kaliber: 7.62x39mm SD&lt;br/&gt;Patronen: 30&lt;br/&gt;Eingesetzt in: Groza-1 SD</German>
+			<Czech>Kalibr: 7.62x39mm SD&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: Groza-1 SD</Czech>
+			<Hungarian>Kaliber: 7.62x39mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Groza-1 SD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_20RND_DMR_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: DMR, M14, MK 14, M1A, M21 SWS, M21A5</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: DMR, M14, MK 14, M1A, M21 SWS, M21A5</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Polish>
+			<Russian>Патрон: 7.62x51мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: DMR, M14, MK 14, M1A, M21 SWS, M21A5</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: DMR, M14, MK 14, M1A, M21 SWS, M21A5</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_DMRSD_DESC">
+			<English>Caliber: 7.62x51mm SD&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK 14 SD, M21A5 SD</English>
+			<French>Calibre: 7.62x51mm SD&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: MK 14 SD, M21A5 SD</French>
+			<Spanish>Calibre: 7.62x51mm SD&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: MK 14 SD, M21A5 SD</Spanish>
+			<Italian>Calibro: 7.62x51mm SD&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: MK 14 SD, M21A5 SD</Italian>
+			<Polish>Kaliber: 7.62x51mm SD&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: MK 14 SD, M21A5 SD</Polish>
+			<Russian>Патрон: 7.62x51мм SD&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: MK 14 SD, M21A5 SD</Russian>
+			<German>Kaliber: 7.62x51mm SD&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: MK 14 SD, M21A5 SD</German>
+			<Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: MK 14 SD, M21A5 SD</Czech>
+			<Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: MK 14 SD, M21A5 SD</Hungarian>
+		</Key>		
 		
 		<!-- **** ATTACHMENTS **** -->
 		
@@ -13300,7 +14412,18 @@
 			<English>10mm Sound suppressor</English>
 			<Russian>ПБС для калибра 10мм</Russian>
 			<German>10mm Schalldämpfer</German>
-		</Key>		
+		</Key>	
+		<!-- 5.7mm Suppressor ACR-->
+		<Key ID="STR_DZ_ATT_SUP57_NAME">
+			<English>[A] 5.7mm Suppressor</English>
+			<Russian>[М] 5.7vмм глушитель</Russian>
+			<German>[E] 5.7mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP57_DESC">
+			<English>5.7mm Sound suppressor</English>
+			<Russian>ПБС для калибра 5.7мм</Russian>
+			<German>5.7mm Schalldämpfer</German>
+		</Key>			
 		<!-- 6.8mm Suppressor ACR-->
 		<Key ID="STR_DZ_ATT_SUP68_NAME">
 			<English>[A] 6.80mm Suppressor</English>
@@ -13335,6 +14458,30 @@
 			<Russian>ПБС для калибра 5.45мм</Russian>
 			<German>5.45mm Schalldämpfer</German>
 		</Key>
+		
+		<!-- 7.62mm Suppressor -->
+		<Key ID="STR_DZ_ATT_SUP762_NAME">
+			<English>[A] 7.62mm Suppressor</English>
+			<Russian>[М] 7.62мм глушитель</Russian>
+			<German>[E] 7.62mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP762_DESC">
+			<English>7.62mm Sound suppressor</English>
+			<Russian>ПБС для калибра 7.62мм</Russian>
+			<German>7.62mm Schalldämpfer</German>
+		</Key>	
+		
+		<!-- 9x39mm Suppressor -->
+		<Key ID="STR_DZ_ATT_SUP939_NAME">
+			<English>[A] 9x39mm Suppressor</English>
+			<Russian>[М] 9x39мм глушитель</Russian>
+			<German>[E] 9x39mm Schalldämpfer</German>
+		</Key>
+		<Key ID="STR_DZ_ATT_SUP762_DESC">
+			<English>9x39mm Sound suppressor</English>
+			<Russian>ПБС для калибра 9x39мм</Russian>
+			<German>9x39mm Schalldämpfer</German>
+		</Key>			
 		
 		<!-- CCO -->
 		<Key ID="STR_DZ_ATT_CCO_NAME">
@@ -13586,9 +14733,13 @@
 			<German>[E] ANPVS4 Visier</German>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_DESC">
-			<English>An ANPVS4 scope.</English>
+			<English>ANPVS4 scope</English>
 			<German>Zielfernrohr vom Typ ANPVS4.</German>
 		</Key>
+		<Key ID="STR_DZ_ATT_ANPVS4_RMVE">
+			<English>Remove ANPVS4 scope</English>
+			<German>ANPVS4 entfernen</German>
+		</Key>		
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_DES_NAME">
 			<English>[A] Small camo net. (desert)</English>
 			<German>[E] Kl. Tarnnetz (Wüstentarn)</German>
@@ -13614,9 +14765,13 @@
 			<German>[E] NSPU-Visier</German>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_NSPU_DESC">
-			<English>An NSPU scope.</English>
+			<English>NSPU scope</English>
 			<German>Zielfernrohr vom Typ NSPU.</German>
 		</Key>
+		<Key ID="STR_DZ_ATT_NSPU_RMVE">
+			<English>Remove NSPU scope</English>
+			<German>NSPU entfernen</German>
+		</Key>		
 		<Key ID="STR_DZE_ATTACHMENT_NV_NAME">
 			<English>[A] NV scope</English>
 			<German>[E] NV-Visier</German>
@@ -13642,18 +14797,9 @@
 			<German>[E] .45cal Schalldämpfer</German>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_45SUP_DESC">
-			<English>A silencer that can be attached to .45 caliber pistols.</English>
-			<German>Ein Schalldämpfer, der an Kaliber .45 Pistolen angebracht werden kann.</German>
+			<English>A silencer that can be attached to .45 caliber weapons.</English>
+			<German>Ein Schalldämpfer, der an Kaliber .45 Waffen angebracht werden kann.</German>
 		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_762SUP_NAME">
-			<English>[A] 7.62mm Suppressor</English>
-			<Russian>[М] 7.62мм глушитель</Russian>
-			<German>[E] 7.62mm Schalldämpfer</German>
-		</Key>
-		<Key ID="STR_DZE_ATTACHMENT_762SUP_DESC">
-			<English>A silencer that can be attached to 7.62x51mm caliber rifles.</English>
-			<German>Ein Schalldämpfer, der an Kaliber 7.62x51mm Gewehre angebracht werden kann.</German>
-		</Key>		
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_REMOVE">
@@ -20129,6 +21275,42 @@
 		<Key ID="STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME">
 			<English>ACR Soldier Shirt</English>
 			<German>ACR Soldat T-Shirt</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_FIREFIGHTER_NAME">
+			<English>Firefighter</English>
+			<German>Feuerwehrmann</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_FIREFIGHTER_OFFICER_NAME">
+			<English>Firefighter Officer</English>
+			<German>Feuerwehroffizier</German>
+		</Key>			
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER1_NAME">
+			<English>Firefighter 1</English>
+			<German>Feuerwehrmann 1</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER2_NAME">
+			<English>Firefighter 2</English>
+			<German>Feuerwehrmann 2</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER3_NAME">
+			<English>Firefighter 3</English>
+			<German>Feuerwehrmann 3</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER4_NAME">
+			<English>Firefighter 4</English>
+			<German>Feuerwehrmann 4</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER5_NAME">
+			<English>Firefighter 5</English>
+			<German>Feuerwehrmann 5</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER_OFFICER1_NAME">
+			<English>Firefighter Officer 1</English>
+			<German>Feuerwehroffizier 1</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_FIREFIGHTER_OFFICER2_NAME">
+			<English>Firefighter Officer 2</English>
+			<German>Feuerwehroffizier 2</German>
 		</Key>			
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
@@ -21449,6 +22631,154 @@
 		<Key ID="STR_EQUIP_APSI_DESC">
 			<English>APSI (Anti PSI) device, which full purpose is yet unknown.</English>
 			<German>APSI (Anti PSI) Emitter, dessen vollständige Funktion noch unbekannt ist.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE">
+			<English>Disabled:</English>
+			<German>Deaktiviert:</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE_MSG">
+			<English>Use action menu to enable.</English>
+			<German>Benutzte das Scrollmenü zum Aktivieren.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ENABLE">
+			<English>Enabled:</English>
+			<German>Aktiviert:</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ENABLE_MSG">
+			<English>Use action menu to disable.</English>
+			<German>Benutzte das Scrollmenü zum Deaktivieren.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_AUTO_DETECT">
+			<English>Automatic snap point detection.</English>
+			<German>Das Snapping findet automatisch den nächsten Snap-Punkt.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_MANUAL_DETECT">
+			<English>Select your preferred snap point.</English>
+			<German>Wähle selbstständig den nächsten Snap-Punkt.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_PGUPPGDOWN">
+			<English>[PgUP / PgDOWN]</English>
+			<German>[Bild Auf / Bild Ab].</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_PGUPPGDOWN_MSG">
+			<English>Adjust height of object by 10cm.</English>
+			<German>Passt die Höhe des Objektes um 10cm an.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ALT_PGUPPGDOWN">
+			<English>[Alt] + [PgUP / PgDOWN]</English>
+			<German>[Alt] + [Bild Auf / Bild Ab].</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ALT_PGUPPGDOWN_MSG">
+			<English>Adjust height of object by 1m.</English>
+			<German>Passt die Höhe des Objektes um 1m an.</German>
+		</Key>
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_CTRL_PGUPPGDOWN">
+			<English>[Ctrl] + [PgUP / PgDOWN]</English>
+			<German>[Strg] + [Bild Auf / Bild Ab].</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_CTRL_PGUPPGDOWN_MSG">
+			<English>Adjust height of object by 1cm.</English>
+			<German>Passt die Höhe des Objektes um 1cm an.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ROTATE180_MSG">
+			<English>Rotate object 180 degrees while holding.</English>
+			<German>Dreht das Objekt um 180 Grad.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ROTATE45_MSG">
+			<English>Rotate object 45 degrees while holding.</English>
+			<German>Dreht das Objekt um 45 Grad.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_DROP_MSG">
+			<English>Drop / Pick up object.</English>
+			<German>Objekt feststellen / aufnehmen.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_SNAP_MSG">
+			<English>Drop / Pick up object.</English>
+			<German>Objekt snappen / aufnehmen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_ON">
+			<English>ON</English>
+			<German>AN</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_OFF">
+			<English>OFF</English>
+			<German>AUS</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_SNAP_POINT_MANUAL">
+			<English>Manual</English>
+			<German>Manuell</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_SNAP_POINT">
+			<English>Snap Points:</English>
+			<German>Snap-Punkte:</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_SNAP_SELECT">
+			<English>Select:</English>
+			<German>Auswahl:</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT">
+			<English>Right</English>
+			<German>Rechts</German>
+		</Key>			
+		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT">
+			<English>Left</English>
+			<German>Links</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_SNAP_PIVOT">
+			<English>Pivot</English>
+			<German>Mittelpunkt</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_BACK">
+			<English>Back</English>
+			<German>Hinten</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT">
+			<English>Front</English>
+			<German>Vorne</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_SNAP_BOTTOM">
+			<English>Bottom</English>
+			<German>Boden</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_TOP">
+			<English>Top</English>
+			<German>Spitze</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_VECTORS">
+			<English>Vectors:</English>
+			<German>Vektoren:</German>
+		</Key>		
+		<Key ID="STR_EPOCH_VECTORS_PITCH_FORWARD">
+			<English>Pitch Forward</English>
+			<German>Nach vorne neigen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_VECTORS_PITCH_BACK">
+			<English>Pitch Back</English>
+			<German>Nach hinten neigen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_VECTORS_BANK_LEFT">
+			<English>Bank Left</English>
+			<German>Nach links neigen</German>
+		</Key>			
+		<Key ID="STR_EPOCH_VECTORS_BANK_RIGHT">
+			<English>Bank Right</English>
+			<German>Nach rechts neigen</German>
+		</Key>
+		<Key ID="STR_EPOCH_VECTORS_RESET">
+			<English>Reset</English>
+			<German>Zurücksetzen</German>
+		</Key>
+		<Key ID="STR_EPOCH_VECTORS_CLOSE">
+			<English>CLOSE</English>
+			<German>Schließen</German>
+		</Key>
+		<Key ID="STR_EPOCH_VECTORS_OPEN">
+			<English>OPEN</English>
+			<German>Öffnen</German>
+		</Key>
+		<Key ID="STR_EPOCH_VECTORS_DEGREES">
+			<English>DEGREES:</English>
+			<German>Grad:</German>
 		</Key>		
 		
 		<!--Namalsk compatibility-->

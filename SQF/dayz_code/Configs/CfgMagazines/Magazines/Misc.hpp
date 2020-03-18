@@ -51,32 +51,6 @@ class 5Rnd_127x108_KSVK : CA_Magazine
 	};
 };
 
-//VSS
-class 10Rnd_9x39_SP5_VSS: CA_Magazine
-{
-	model = "dayz_epoch_c\models\magazines\VSS_vintorez_mag.p3d";
-	displayName = $STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME;
-	
-	cartridgeName = "9x39";
-	
-	class ItemActions
-	{
-		COMBINE_MAG
-	};
-};
-//VSS
-class 20Rnd_9x39_SP5_VSS: CA_Magazine
-{
-	model = "dayz_epoch_c\models\magazines\VSS_vintorez_mag.p3d";
-	displayName = $STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME;
-	
-	cartridgeName = "9x39";
-	
-	class ItemActions
-	{
-		COMBINE_MAG
-	};
-};
 //Sa61
 class 10Rnd_B_765x17_Ball: CA_Magazine
 {

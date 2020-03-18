@@ -74,6 +74,8 @@ AmmoRU[] =
 	{Loot_MAGAZINE,		8,		8Rnd_762x25_TT33},
 	{Loot_MAGAZINE,		8,		8Rnd_9x18_Makarov},
 	{Loot_MAGAZINE,		8,		8Rnd_9x18_MakarovSD},
+	{Loot_MAGAZINE,		8,		20Rnd_9x18_APS},
+	{Loot_MAGAZINE,		8,		20Rnd_9x18_APSSD},	
 	
 	// Submachine guns
 	{Loot_MAGAZINE,		6,		64Rnd_9x19_Bizon},
@@ -84,6 +86,12 @@ AmmoRU[] =
 	{Loot_MAGAZINE,		10,		30Rnd_545x39_AK},
 	{Loot_MAGAZINE,		8,		30Rnd_545x39_AKSD},
 	{Loot_MAGAZINE,		10,		30Rnd_762x39_AK47},
+	{Loot_MAGAZINE,		10,		30Rnd_762x39_RK95},
+	{Loot_MAGAZINE,		8,		30Rnd_762x39_RK95SD},
+	{Loot_MAGAZINE,		10,		30Rnd_762x39_Groza1},
+	{Loot_MAGAZINE,		8,		30Rnd_762x39_Groza1SD},	
+	{Loot_MAGAZINE,		10,		20Rnd_9x39_Groza9},
+	{Loot_MAGAZINE,		8,		20Rnd_9x39_Groza9SD},
 	
 	// Sniper rifles
 	{Loot_MAGAZINE,		5,		10Rnd_762x54_SVD},
@@ -121,6 +129,8 @@ AmmoUS[] =
 	// Submachine guns
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_UZI},
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_UZI_SD},
+	{Loot_MAGAZINE,		5,		33Rnd_45ACP_KRISS},
+	{Loot_MAGAZINE,		5,		33Rnd_45ACP_KRISSSD},
 	
 	// Assault rifles
 	{Loot_MAGAZINE,		6,		30Rnd_6x35_KAC},
@@ -134,6 +144,7 @@ AmmoUS[] =
 	{Loot_MAGAZINE,		1,		10Rnd_127x99_m107},
 	{Loot_MAGAZINE,		1,		7Rnd_86x70_MSR},
 	{Loot_MAGAZINE,		4,		20Rnd_762x51_DMR},
+	{Loot_MAGAZINE,		4,		20Rnd_762x51_DMRSD},
 	
 	// Machine guns
 	{Loot_MAGAZINE,		3,		100Rnd_556x45_M249},
@@ -156,7 +167,7 @@ AmmoUS[] =
 AmmoEU[] =
 {
 	// Pistols
-	{Loot_MAGAZINE,		8,		7nd_9x17_PPK},
+	{Loot_MAGAZINE,		8,		7Rnd_9x17_PPK},
 	{Loot_MAGAZINE,		8,		8Rnd_9x19_P38},
 	{Loot_MAGAZINE,		8,		15Rnd_9x19_P226},
 	{Loot_MAGAZINE,		8,		20Rnd_9x19_M93R},
@@ -169,6 +180,12 @@ AmmoEU[] =
 	// Submachine guns
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_MP5},
 	{Loot_MAGAZINE,		6,		30Rnd_9x19_MP5SD},
+	{Loot_MAGAZINE,		6,		30Rnd_9x19_TMP},
+	{Loot_MAGAZINE,		6,		30Rnd_9x19_TMPSD},	
+	{Loot_MAGAZINE,		6,		25Rnd_45ACP_UMP},
+	{Loot_MAGAZINE,		6,		25Rnd_45ACP_UMPSD},		
+	{Loot_MAGAZINE,		6,		50Rnd_57x28_P90},
+	{Loot_MAGAZINE,		6,		50Rnd_57x28_P90SD},		
 	
 	// Assault rifles
 	{Loot_MAGAZINE,		10,		30Rnd_556x45_G36},

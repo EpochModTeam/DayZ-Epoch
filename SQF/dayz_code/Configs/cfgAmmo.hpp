@@ -577,6 +577,83 @@ class CfgAmmo
 		visiblefire = 10;
 	};
 	
+	//P90
+	class B_57x28_Ball: BulletBase
+	{
+		airfriction = -0.0013522;
+		audibleFire = 16;		
+		visiblefire = 16;
+		caliber = 0.33;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 8;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 400;
+	};
+	
+	//P90 SD
+	class B_57x28_SD: BulletBase
+	{
+		airfriction = -0.0013522;
+		visibleFire = 0.08;
+		audibleFire = 0.08;		
+		caliber = 0.33; //33
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		hit = 8;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 300;
+	};
+	
+	//RK-95 SD
+	class B_762x39_SD: BulletBase
+	{
+		hit = 9;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_762";
+		visibleFire = 0.08;
+		audibleFire = 0.08;	
+		cost = 1;
+		typicalSpeed = 410;
+		tracerColor[] = {0.2,0.8,0.1,0.04};
+		tracerColorR[] = {0,0,0,0};
+		airFriction = -0.00195;
+		caliber = 0.83;
+	};
+	
+	//Groza-9
+	class B_9x39_OC14_Ball: BulletBase
+	{
+		airfriction = -0.0013522;
+		audibleFire = 26;		
+		visiblefire = 26;
+		caliber = 0.33;
+		cartridge = "FxCartridge_762";
+		cost = 5;
+		hit = 11;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 450;
+	};
+	
+	//Groza-9 SD
+	class B_9x39_OC14_SD: BulletBase
+	{
+		airfriction = -0.0013522;
+		visibleFire = 0.08;
+		audibleFire = 0.08;		
+		caliber = 0.33; //33
+		cartridge = "FxCartridge_762";
+		cost = 5;
+		hit = 11;
+		indirecthit = 0;
+		indirecthitrange = 0;
+		typicalspeed = 300;
+	};	
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

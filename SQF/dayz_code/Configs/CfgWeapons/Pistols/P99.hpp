@@ -8,10 +8,6 @@ class P99_Black_DZ: M9
 	reloadMagazineSound[] = {"\C1987_P99\sound\p99_reload.wss",0.1,1,20};
 	magazines[] = {"15Rnd_10x22_p99"};
 	descriptionShort = $STR_DZ_WPN_P99_DESC;
-	class Library
-	{
-		libTextDesc = "The Walther P99 is a semi-automatic pistol developed by the German Company Carl Walther GmbH Sportwaffen of Ulm for law enforcement, security forces and the civilian shooting market as a replacement for the Walther P5 and the P88. The P99 and its variants are also made under license by Fabryka Broni Radom.";
-	};
 	
 	class Attachments
 	{

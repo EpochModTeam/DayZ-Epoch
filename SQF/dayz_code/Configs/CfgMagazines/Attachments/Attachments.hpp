@@ -18,9 +18,13 @@
 
 #include "Sup9.hpp"
 #include "Sup10.hpp"
+#include "Sup45.hpp"
+#include "Sup57.hpp"
 #include "Sup68.hpp"
 #include "Sup556.hpp"
 #include "Sup545.hpp"
+#include "Sup762.hpp"
+#include "Sup939.hpp"
 #include "SupMakarov.hpp"
 #include "SupBizon.hpp"
 
@@ -33,5 +37,3 @@
 #include "NSPU.hpp"
 #include "NV.hpp"
 #include "TWS.hpp"
-#include "Sup762.hpp"
-#include "Sup45.hpp"

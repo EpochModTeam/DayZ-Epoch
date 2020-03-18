@@ -223,4 +223,31 @@ class G36C_ACOG_SD_DZ : G36C_SD_DZ
 	};
 };
 
+class G36C_camo;
+class G36C_Camo_DZ : G36C_camo 
+{
+	displayName = $STR_DZ_WPN_G36C_CAMO_NAME;
+	
+	magazines[] =
+	{
+		30Rnd_556x45_G36,
+		100Rnd_556x45_BetaCMag,
+		30Rnd_556x45_Stanag,
+		20Rnd_556x45_Stanag,
+		60Rnd_556x45_Stanag_tape_ice_DZE
+	};	
+};
+
+class G36_C_SD_camo;
+class G36C_Camo_Holo_SD_DZ : G36_C_SD_camo 
+{
+	displayName = $STR_DZ_WPN_G36C_CAMO_HOLO_SD_NAME;
+	
+	magazines[] =
+	{
+		30Rnd_556x45_G36SD,
+		30Rnd_556x45_StanagSD
+	};	
+};
+
 #undef G36C_ACOG

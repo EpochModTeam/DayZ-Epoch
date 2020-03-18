@@ -96,13 +96,14 @@ if (!isDedicated) then {
 	player_mineStone = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_mineStone.sqf";
 	if (DZE_modularBuild) then {
 		player_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\modular_build.sqf";
+		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\snap_functions.sqf";
 		snap_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
+		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\vector_functions.sqf";
+		build_vectors = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\build_vectors.sqf";
 	} else {
 		player_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
 	};
-    DZE_build_vector_file = "\z\addons\dayz_code\compile\BuildVectors\build_vectors.sqf";
-    build_vectors = compile preprocessFileLineNumbers DZE_build_vector_file;
-	fnc_SetPitchBankYaw = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\fnc_SetPitchBankYaw.sqf";
+
 	FNC_find_plots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_find_plots.sqf";
 
 	//player_buildVanilla = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_buildVanilla.sqf";

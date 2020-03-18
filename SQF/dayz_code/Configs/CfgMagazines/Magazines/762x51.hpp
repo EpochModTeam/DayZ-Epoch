@@ -16,6 +16,7 @@ class 20Rnd_762x51_DMR : CA_Magazine
 {
 	model = "\dayz_equip\models\mag20.p3d";
 	displayName = $STR_DZ_MAG_20RND_762X51_DMR_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_DMR_DESC;
 	
 	cartridgeName = "762x51";
 	
@@ -30,6 +31,21 @@ class 20Rnd_762x51_DMR : CA_Magazine
 			use[] = {"20Rnd_762x51_DMR"};
 			output[] = {"5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24", "5Rnd_762x51_M24"};
 		};
+	};
+};
+
+class 20Rnd_762x51_DMRSD : 20Rnd_762x51_DMR
+{
+	displayName = $STR_DZ_MAG_20RND_762X51_DMRSD_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_DMRSD_DESC;
+	ammo = "Rem_762x51_SD";	
+	
+	cartridgeName = "762x51_SD";
+	
+	class ItemActions
+	{
+		COMBINE_MAG		
+		delete ReloadMag;
 	};
 };
 
@@ -93,6 +109,7 @@ class 20Rnd_762x51_SB_SCAR : CA_Magazine
 	model = "dayz_epoch_c\models\magazines\mk17_mag.p3d";
 	picture = "\dayz_epoch_c\icons\magazines\m_mk17sd_ca.paa";
 	displayName = $STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_MK17SD_DESC;
 	
 	cartridgeName = "762x51_SD";
 	
@@ -138,9 +155,33 @@ class 20Rnd_762x51_RSASS: CA_Magazine
 
 class 20Rnd_762x51_RSASS_SD: 20Rnd_762x51_RSASS
 {
+	picture = "\FHQ_Remington\ammo\ui\i_20rndpmag.paa";
 	initSpeed = 850;
 	displayName = $STR_DZ_MAG_20RND_RSASSSD_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_RSASSSD_DESC;
 	cartridgeName = "762x51_SD";
 	ammo = "Rem_762x51_SD";	
 };
+
+class 20Rnd_762x51_HK417: 20Rnd_762x51_RSASS
+{
+	picture = "\RH_hk416\inv\m_hk417.paa";
+	displayName = $STR_DZ_MAG_20RND_HK417_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_HK417_DESC;
+	count = 20;
+	cartridgeName = "762x51";
+	ammo = "Rem_762x51_Ball";	
+	
+
+};
+
+class 20Rnd_762x51_HK417SD: 20Rnd_762x51_HK417
+{
+	initSpeed = 850;
+	displayName = $STR_DZ_MAG_20RND_HK417SD_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_HK417SD_DESC;
+	cartridgeName = "762x51_SD";
+	ammo = "Rem_762x51_SD";	
+};
+
+

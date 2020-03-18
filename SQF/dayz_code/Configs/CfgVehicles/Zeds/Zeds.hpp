@@ -1418,3 +1418,38 @@ class z_soldier_pmc_bodyguard : z_soldier {
 		mat[] = {"Ca\Characters_PMC\Gracenko\Data\gracenko.rvmat","Ca\Characters_PMC\Gracenko\Data\w1_gracenko.rvmat","Ca\Characters_PMC\Gracenko\Data\w2_gracenko.rvmat"};
 	};
 };
+
+class z_firefighter1 : zZombie_Base { 
+	displayName = $STR_ZNAME_FIREFIGHTER;
+	model = "\kpfs_thw\characters\worker\thw_worker";
+	zombieLoot = ZombieFirefighter;
+	hiddenSelections[] = {"camo01","hps","glasses"};
+	hiddenSelectionsTextures[] = {"\kpfs_thw\characters\worker\thw_worker_co.paa"};	
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","kpfs_thw\characters\worker\thw_worker.rvmat","kpfs_thw\characters\worker\thw_worker_wound1.rvmat","kpfs_thw\characters\worker\thw_worker_wound2.rvmat"};
+	};
+};
+class z_firefighter2 : z_firefighter1 { 
+	hiddenSelections[] = {"camo01"};
+	hiddenSelectionsTextures[] = {"\kpfs_thw\characters\worker\thw_worker_co.paa"};
+}; 
+class z_firefighter3 : z_firefighter1 { 
+	hiddenSelections[] = {"camo01","hps","glasses"};
+	hiddenSelectionsTextures[] = {"\kpfs_thw\characters\press\thw_press_co.paa"};
+};
+class z_firefighter4 : z_firefighter1 { 
+	model = "kpfs_feuerwehr\firefighter";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"kpfs_feuerwehr\man\fw_man.rvmat","kpfs_feuerwehr\man\fw_man_wound1.rvmat","kpfs_feuerwehr\man\fw_man_wound2.rvmat"};
+	};
+	hiddenSelections[] = {"camo01","camo02"};
+	hiddenSelectionsTextures[] = {"\kpfs_feuerwehr\man\fw_man_co.paa","\kpfs_feuerwehr\man\fw_helmet_tl_co.paa"};	
+}; 
+class z_firefighter5 : z_firefighter4 { 
+	model = "kpfs_feuerwehr\firefighter";
+	hiddenSelectionsTextures[] = {"\kpfs_feuerwehr\man\fw_leader_co.paa","\kpfs_feuerwehr\man\fw_helmet_sl_co.paa"};
+};

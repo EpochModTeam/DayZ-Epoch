@@ -26,8 +26,7 @@ class CfgWeapons
 	#include "Rifles\AS50.hpp"
 	#include "Rifles\M107.hpp"
 	#include "Rifles\KSVK.hpp"
-	#include "Rifles\M4SPR.hpp"
-	#include "Rifles\VSSVintorez.hpp"
+	#include "Rifles\M4SPR.hpp"	
 	#include "Rifles\CZ750.hpp"
 	
 	//Ak107
@@ -40,14 +39,22 @@ class CfgWeapons
 	class AK_74;
 	class AKS_74_UN_kobra;
 	#include "Rifles\AK74.hpp"
+	#include "Rifles\AN94.hpp"
 	
 	class AKS_74_U;
 	#include "Rifles\AKS74U.hpp"
 	
 	class AK_47_M;
 	#include "Rifles\AKM.hpp"
+	#include "Rifles\AKS.hpp"	
+	#include "Rifles\RK95.hpp"
+	#include "Rifles\Groza.hpp"
 	
 	#include "Rifles\RPK.hpp"
+	
+	//VSS
+	#include "Rifles\VSSVintorez.hpp"
+	#include "Rifles\VAL.hpp"
 	
 	class DMR : Rifle
 	{
@@ -74,19 +81,35 @@ class CfgWeapons
 	};
 	#include "Rifles\G36.hpp"
 	#include "Rifles\G36C.hpp"
+	#include "Rifles\MG36.hpp"	
 	
 	class M4A1;
 	class M4A1_AIM_SD_camo;
 	#include "Rifles\M4A1.hpp"
+	#include "Rifles\M4A3.hpp"	
+	#include "Rifles\HK416.hpp"	
+	//HK53
+	#include "Rifles\HK53.hpp"
+	//Magpul PDR
+	#include "Rifles\PDR.hpp"	
 	//Famas
 	#include "Rifles\Famas.hpp"	
 	#include "Rifles\ACR.hpp"
-	#include "Rifles\KACPDW.hpp"
+	#include "Rifles\KACPDW.hpp"	
+	//CTAR-21
+	#include "Rifles\CTAR21.hpp"	
+	#include "Rifles\Masada.hpp"	
+	#include "Rifles\MK16.hpp"
+	#include "Rifles\XM8.hpp"
 	
 	class M14_EP1;
 	#include "Rifles\M14.hpp"
 	#include "Rifles\M1ASC.hpp"
 	#include "Rifles\M21.hpp"
+	#include "Rifles\HK417.hpp"	
+	#include "Rifles\MK14.hpp"	
+	#include "Rifles\MK17.hpp"
+	#include "Rifles\M110.hpp"
 	
 	//CZ 805
 	#include "Rifles\CZ805.hpp"
@@ -114,6 +137,7 @@ class CfgWeapons
 	#include "Rifles\M240.hpp"
 	
 	#include "Rifles\M60A4.hpp"
+	#include "Rifles\MK43.hpp"
 
 	class M1014 : Rifle
 	{
@@ -145,14 +169,19 @@ class CfgWeapons
 		};
 	};
 	#include "Rifles\SVD.hpp"
+	#include "Rifles\SVU.hpp"
 	
 	#include "Rifles\Mosin.hpp"
 	
 	class MP5A5;
 	class MP5SD;
 	#include "Rifles\MP5.hpp"
+	#include "Rifles\Kriss.hpp"
 	#include "Rifles\CZScorpion.hpp"
 	#include "Rifles\MP7.hpp"
+	#include "Rifles\TMP.hpp"
+	#include "Rifles\UMP.hpp"
+	#include "Rifles\P90.hpp"
 	
 	class M16A2;
 	class M16A2GL;
@@ -164,6 +193,7 @@ class CfgWeapons
 	
 	class BAF_L85A2_RIS_Holo;
 	#include "Rifles\L85A2.hpp"
+	#include "Rifles\L86A2.hpp"
 	
 	class bizon;
 	class bizon_silenced;
@@ -208,11 +238,13 @@ class CfgWeapons
 	#include "Pistols\Makarov.hpp"
 	#include "Pistols\TT33.hpp"
 	#include "Pistols\RugerMK2.hpp"
+	#include "Pistols\APS.hpp"
 	
 	class UZI_EP1;
 	class UZI_SD_EP1;
 	#include "Pistols\PDW.hpp"
 	#include "Pistols\TEC9.hpp"
+	#include "Pistols\MAC10.hpp"	
 	
 	class revolver_EP1;	
 	#include "Pistols\Revolver.hpp"

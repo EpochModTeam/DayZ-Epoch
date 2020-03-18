@@ -42,26 +42,31 @@ class PDW_SD_DZ : UZI_SD_EP1
 {
 	class Single: Mode_SemiAuto
 	{
-		begin1[] = {"\RH_smg\sound\mp5sd.wss",1.778279,1,300};
+		begin1[] = {"\RH_smg\sound\mp5sd.wss",1.778279,1,50};
 		soundBegin[] = {"begin1",1};
+		reloadTime = 0.075;
+		recoil = "recoil_single_pistol_2outof3";
+		recoilProne = "recoil_single_pistol_prone_2outof3";
 		minRange = 0;
 		minRangeProbab = 0.05;
-		midRange = 15;
+		midRange = 30;
 		midRangeProbab = 0.3;
-		maxRange = 20;
+		maxRange = 50;
 		maxRangeProbab = 0.04;
 	};
 	class FullAuto: Mode_FullAuto
 	{
-		begin1[] = {"\RH_smg\sound\mp5sd.wss",1.778279,1,300};
+		begin1[] = {"\RH_smg\sound\mp5sd.wss",1.778279,1,50};
 		soundBegin[] = {"begin1",1};
-		recoil = "recoil_single_pistol_2outof3";
-		recoilProne = "recoil_single_pistol_prone_2outof3";
+		soundBurst = 0;
+		reloadTime = 0.075;
+		recoil = "recoil_single_pistol_3outof3";
+		recoilProne = "recoil_single_pistol_prone_3outof3";
 		minRange = 0;
 		minRangeProbab = 0.1;
-		midRange = 15;
+		midRange = 30;
 		midRangeProbab = 0.3;
-		maxRange = 20;
+		maxRange = 50;
 		maxRangeProbab = 0.02;
 	};	
 	

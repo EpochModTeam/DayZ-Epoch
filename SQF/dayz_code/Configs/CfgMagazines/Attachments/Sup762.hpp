@@ -4,8 +4,8 @@ class Attachment_Sup762 : CA_Magazine {
 	type = 256;
 	model = "\z\addons\dayz_communityweapons\attachments\suppressor556\suppressor556.p3d";
 	picture = "\z\addons\dayz_communityweapons\attachments\suppressor556\data\m_suppressor556_ca.paa";
-	displayName = $STR_DZE_ATTACHMENT_762SUP_NAME;
-	descriptionShort = $STR_DZE_ATTACHMENT_762SUP_DESC;
+	displayName = $STR_DZ_ATT_SUP762_NAME;
+	descriptionShort = $STR_DZ_ATT_SUP762_DESC;
 	class ItemActions
 	{		
 		class AttachToPrimary

@@ -37,3 +37,38 @@ class M21_DZ: M14_EP1
 		maxRangeProbab = 0.05;
 	};		
 };
+
+class M21A5_DZ: M21_DZ
+{
+	displayName = $STR_DZ_WPN_M21A5_NAME;
+	model = "\RH_mgswp\RH_mk21a5.p3d";
+	picture = "\RH_mgswp\inv\mk21a5.paa";
+	handAnim[] = {"OFP2_ManSkeleton","\RH_mgswp\anim\RH_M4cs.rtm"};
+	modelOptics = "\ca\weapons\2Dscope_MilDot_10";
+	opticsZoomMin = "0.28778/10";
+	opticsZoomMax = "0.28778/10";
+	opticsZoomInit = "0.28778/10";
+	discretefov[] = {};
+	discreteInitIndex = 0;
+	visionMode[] = {"Normal"};
+	distanceZoomMin = 329;
+	distanceZoomMax = 329;
+	weaponInfoType = "RscWeaponZeroing";
+	discreteDistance[] = {100,200,300,400,500,600,700,800};
+	discreteDistanceInitIndex = 2;
+};
+
+class M21A5_SD_DZ: M21A5_DZ
+{
+	displayName = $STR_DZ_WPN_M21A5_SD_NAME;
+	descriptionShort = $STR_DZ_WPN_M21SD_DESC;
+	model = "\RH_mgswp\RH_mk21a5sd.p3d";
+	picture = "\RH_mgswp\inv\mk21a5sd.paa";
+	magazines[] = {20Rnd_762x51_DMRSD};	
+	
+	class Single: Mode_SemiAuto
+	{
+		begin1[] = {"\RH_mgswp\sound\m14sd",1.0,1,200};
+		soundBegin[] = {"begin1",1};
+	};		
+};
