@@ -47,8 +47,10 @@ if (_group in ["Military","MilitaryIndustrial"]) then {
 	
 	//Delete existing lootpiles within 1m of spawn location
 	{
-		deleteVehicle _x;
-		dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+		if (!(_x getVariable ["permaLoot",false])) then {
+			deleteVehicle _x;
+			dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+		};
 	} count (_worldPos nearObjects ["ReammoBox", 1]);
 
 	if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then {
@@ -78,8 +80,10 @@ if (isArray (_config >> "lootPosSmall")) then {
 			_worldPos set [2, 0 max (_worldPos select 2)];
 			//Delete existing lootpiles within 1m of spawn location
 			{
-				deleteVehicle _x;
-				dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+				if (!(_x getVariable ["permaLoot",false])) then {
+					deleteVehicle _x;
+					dayz_currentWeaponHolders = dayz_currentWeaponHolders - 1;
+				};
 			} count (_worldPos nearObjects ["ReammoBox", 1]);
 
 			if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then {
