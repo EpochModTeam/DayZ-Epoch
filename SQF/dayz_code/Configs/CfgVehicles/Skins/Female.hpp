@@ -13,6 +13,12 @@ class SurvivorW2_DZ: Soldier_Bodyguard_M4_PMC
 	canHideBodies = true;
 	identityTypes[] = {"Language_W_EN_EP1","Woman"};
 	languages[] = {"EN"};
+	attendant = 0;
+	engineer = 0;
+	canDeactivateMines = 0;	
+	sensitivity = 10;	
+	sensitivityEar = 1;
+	
 	class TalkTopics
 	{
 		core = "Core_E";

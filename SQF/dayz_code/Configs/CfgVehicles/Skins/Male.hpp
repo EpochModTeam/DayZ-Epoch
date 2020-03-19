@@ -21,7 +21,7 @@ class Civilian: CAManBase
 	{
 		class HitHead: HitHead
 		{
-			armor = 0.6;
+			armor = 0.4;
 		};
 		class HitBody: HitBody
 		{
@@ -68,7 +68,7 @@ class Civilian: CAManBase
 };
 
 class Survivor_DZ : Civilian {
-	scope = protected;
+	scope = private;
 	side = TWest;
 	weapons[] = {"Throw", "Put"};
 	magazines[] = {};
@@ -79,11 +79,48 @@ class Survivor_DZ : Civilian {
 	backpack = "";
 	canCarryBackPack = 1;
 	enableGPS = 1;
+	attendant = 0;
+	engineer = 0;
+	canDeactivateMines = 0;
+	sensitivity = 10;	
+	sensitivityEar = 1;
 	
 	class Eventhandlers
 	{
 		//local = "_z = _this select 0; if (!isServer && {!isNull _z} && {!(side _z in [west,east,civilian])}) exitWith { PVDZ_sec_atp = ['wrong side', player]; publicVariableServer 'PVDZ_sec_atp'; deleteVehicle _z; };";
 	};
+};
+
+class SoldierLight_Base_DZ : Survivor_DZ {
+	camouflage = 1.0;
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
+};
+
+class SoldierHeavy_Base_DZ : Survivor_DZ {
+	camouflage = 1.0;
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.8;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
 
 class Survivor1_DZ : Survivor_DZ {
@@ -106,7 +143,7 @@ class Survivor3_DZ : Survivor2_DZ {
 
 //Bandit1_DZ moved to DZE section below
 
-class Rocket_DZ: Survivor_DZ { //BAF_Soldier_Officer_W
+class Rocket_DZ: SoldierLight_Base_DZ { //BAF_Soldier_Officer_W
 	scope = public;
 	displayName = "Rocket";
 	model = "\ca\characters_d_BAF\BAF_Soldier_Officer_BAF";
@@ -117,23 +154,11 @@ class Rocket_DZ: Survivor_DZ { //BAF_Soldier_Officer_W
 		tex[] = {};
 		mat[] = {"ca\characters_d_baf\Data\armour.rvmat","ca\characters_d_baf\Data\W1_armour.rvmat","ca\characters_d_baf\Data\W2_armour.rvmat","ca\characters_d_baf\Data\camo.rvmat","ca\characters_d_baf\Data\W1_camo.rvmat","ca\characters_d_baf\Data\W2_camo.rvmat"};
 	};
-	class HitPoints: HitPoints
-	{
-		class HitHead: HitHead
-		{
-			armor = 0.7;
-		};
-		class HitBody: HitBody
-		{
-			armor = 1;
-			passThrough = 0.8;
-		};
-	};
 	hiddenSelections[] = {"Camo","Camo2","Camo3"};
 	hiddenSelectionsTextures[] = {"\ca\characters_W_baf\data\camo_dpm_co.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
 
-class Soldier1_DZ: Survivor_DZ { //BAF_Soldier_W
+class Soldier1_DZ: SoldierHeavy_Base_DZ { //BAF_Soldier_W
 	scope = public;
 	displayName = $STR_EPOCH_SKINS_SOLDIER;
 	model = "\ca\characters_d_BAF\BAF_Soldier_1_BAF";
@@ -142,18 +167,6 @@ class Soldier1_DZ: Survivor_DZ { //BAF_Soldier_W
 	{
 		tex[] = {};
 		mat[] = {"ca\characters_d_baf\Data\armour.rvmat","ca\characters_d_baf\Data\W1_armour.rvmat","ca\characters_d_baf\Data\W2_armour.rvmat","ca\characters_d_baf\Data\camo.rvmat","ca\characters_d_baf\Data\W1_camo.rvmat","ca\characters_d_baf\Data\W2_camo.rvmat"};
-	};
-	class HitPoints: HitPoints
-	{
-		class HitHead: HitHead
-		{
-			armor = 0.7;
-		};
-		class HitBody: HitBody
-		{
-			armor = 1;
-			passThrough = 0.8;
-		};
 	};
 	hiddenSelections[] = {"Camo","Camo2","Camo3"};
 	hiddenSelectionsTextures[] = {"\ca\characters_W_baf\data\camo_dpm_co.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
@@ -174,7 +187,7 @@ class Sniper1_DZ: Survivor_DZ { //BAF_Soldier_SniperH_W
 	hiddenSelectionsTextures[] = {"\ca\characters_W_baf\data\Ghillie_Overall2_co.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
 
-class Camo1_DZ: Survivor_DZ { //BAF_Soldier_L_W
+class Camo1_DZ: SoldierLight_Base_DZ { //BAF_Soldier_L_W
 	scope = public;
 	displayName = $STR_CHAR_1;
 	model = "\ca\characters_d_BAF\BAF_Soldier_light_BAF";
@@ -185,245 +198,170 @@ class Camo1_DZ: Survivor_DZ { //BAF_Soldier_L_W
 		tex[] = {};
 		mat[] = {"ca\characters_d_baf\Data\armour.rvmat","ca\characters_d_baf\Data\W1_armour.rvmat","ca\characters_d_baf\Data\W2_armour.rvmat","ca\characters_d_baf\Data\camo.rvmat","ca\characters_d_baf\Data\W1_camo.rvmat","ca\characters_d_baf\Data\W2_camo.rvmat"};
 	};
-	class HitPoints: HitPoints
-	{
-		class HitHead: HitHead
-		{
-			armor = 0.7;
-		};
-		class HitBody: HitBody
-		{
-			armor = 1;
-			passThrough = 0.8;
-		};
-	};
 	hiddenSelections[] = {"Camo","Camo2","Camo3"};
 	hiddenSelectionsTextures[] = {"\ca\characters_W_baf\data\camo_dpm_co.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
 
-class INS_Lopotev;
-class INS_Lopotev_DZ: INS_Lopotev {
-		displayName = $STR_EPOCH_SKINS_BOSS;
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-};
-class RU_Soldier_Crew;
-class RU_Soldier_Crew_DZ: RU_Soldier_Crew {
-		displayName = $STR_EPOCH_SKINS_CREWMAN;
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-};
-class TK_Commander_EP1;
-class TK_Commander_EP1_DZ: TK_Commander_EP1 {
-		displayName = $STR_EPOCH_SKINS_GENERAL;
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-};
-class TK_Soldier_Sniper_EP1;
-class TK_Soldier_Sniper_EP1_DZ: TK_Soldier_Sniper_EP1 {
-		displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-};
-class TK_Special_Forces_MG_EP1;
-class TK_Special_Forces_MG_EP1_DZ: TK_Special_Forces_MG_EP1 {
-		displayName = $STR_EPOCH_SKINS_SMUGGLER;
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
+class INS_Lopotev_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_BOSS;
+	model = "\ca\characters2\OpforIns\Ins_Lopotev";
+	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\data\hhl.rvmat","ca\characters\data\us_hhl_wound1.rvmat","ca\characters\data\us_hhl_wound2.rvmat","ca\characters2\OpforIns\data\ins_lopotev.rvmat","ca\characters2\OpforIns\data\W1_ins_lopotev.RVmat","ca\characters2\OpforIns\data\W2_ins_lopotev.RVmat"};
+	};	
 };
 
-// good
-class INS_Soldier_AR;
-class INS_Soldier_AR_DZ: INS_Soldier_AR {
-		displayName = "Cooper";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-		faceType = "Man";
-};
-class INS_Soldier_CO;
-class INS_Soldier_CO_DZ: INS_Soldier_CO {
-		displayName = "Travis";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-};
-class INS_Bardak;
-class INS_Bardak_DZ: INS_Bardak {
-		displayName = "Paulo";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
-};
-class INS_Worker2;
-class INS_Worker2_DZ: INS_Worker2 {
-		displayName = "Steve";
-		side = 1;
-		weapons[] = {"Throw","Put"};
-		backpack = "";
-		magazines[] = {};
-		respawnWeapons[] = {"Throw","Put"};
-		respawnMagazines[] = {};
-		weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-		canHideBodies = 1;
-		canCarryBackPack = 1;
+class RU_Soldier_Crew_DZ: SoldierLight_Base_DZ {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_CREWMAN;
+	model = "\ca\characters2\Rus\Soldier_Crew";
+	portrait = "\Ca\characters\data\portraits\comBarHead_common_crew_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\Rus\DATA\soldier_flora_vsr_vest.RVmat","ca\characters2\Rus\DATA\soldier_flora_vsr_vest_w1.RVmat","ca\characters2\Rus\DATA\soldier_flora_vsr_vest_w2.RVmat","ca\characters2\Rus\DATA\soldier_co_flora_vsr_vest.RVmat","ca\characters2\Rus\DATA\soldier_co_flora_vsr_vest_w1.RVmat","ca\characters2\Rus\DATA\soldier_co_flora_vsr_vest_w2.RVmat","ca\characters2\Rus\DATA\soldier_mg_flora_vsr_vest.RVmat","ca\characters2\Rus\DATA\soldier_mg_flora_vsr_vest_w1.RVmat","ca\characters2\Rus\DATA\soldier_mg_flora_vsr_vest_w2.RVmat","ca\characters2\Rus\DATA\soldier_at_flora_VSR_vest.RVmat","ca\characters2\Rus\DATA\soldier_at_flora_VSR_vest_w1.RVmat","ca\characters2\Rus\DATA\soldier_at_flora_VSR_vest_w2.RVmat","ca\characters2\Rus\DATA\soldier_pilot_flora_vsr.RVmat","ca\characters2\Rus\DATA\soldier_pilot_flora_vsr_w1.RVmat","ca\characters2\Rus\DATA\soldier_pilot_flora_vsr_w2.RVmat","ca\characters2\Rus\DATA\soldier_crew_flora_vsr.RVmat","ca\characters2\Rus\DATA\soldier_crew_flora_vsr_w1.RVmat","ca\characters2\Rus\DATA\soldier_crew_flora_vsr_w2.RVmat","ca\characters2\Rus\DATA\Commander.rvmat","ca\characters2\Rus\DATA\W1_Commander.rvmat","ca\characters2\Rus\DATA\W2_Commander.rvmat"};
+	};	
 };
 
-// bandits
-class Soldier_Crew_PMC;
-class Bandit1_DZ : Soldier_Crew_PMC { //Normal black PMC vest bandit
+class TK_Commander_EP1_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_GENERAL;
+	model = "\CA\characters_E\TK\Tk_Commander";
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_soldier_ca";
+	hiddenSelections[] = {"Camo"};
+};
+
+class TK_Soldier_Sniper_EP1_DZ: Sniper1_DZ {
+	scope = public;
+	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+	model = "\ca\characters_E\Ghillie\Ghillie_Top";
+	portrait = "\Ca\characters\data\portraits\comBarHead_common_sniper_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\data\us_hhl.rvmat","ca\characters\data\us_hhl_wound1.rvmat","ca\characters\data\us_hhl_wound2.rvmat"};
+	};
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\ca\characters_E\Ghillie\Data\Ghillie_Top_desert_co.paa"};	
+};
+
+class TK_Special_Forces_MG_EP1_DZ: SoldierLight_Base_DZ {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_SMUGGLER;
+	model = "\CA\characters_E\TK\Tk_StormTrooper";
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_soldier_ca";
+	hiddenSelections[] = {"Camo"};
+};
+
+class INS_Soldier_AR_DZ: SoldierLight_Base_DZ {
+	scope = public;
+	displayName = "Cooper";
+	model = "\ca\characters2\OpforIns\Ins_Soldier_1.p3d";
+	portrait = "\Ca\characters\data\portraits\comBarHead_opFor_ca";
+	hiddenSelections[] = {"medic"};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\OpforIns\data\lifcik_body_1.RVmat","ca\characters2\OpforIns\data\lifcik_body_1_W1.RVmat","ca\characters2\OpforIns\data\lifcik_body_1_W2.RVmat","ca\characters2\OpforIns\data\smersh_body_2.RVmat","ca\characters2\OpforIns\data\smersh_body_2_W1.RVmat","ca\characters2\OpforIns\data\smersh_body_2_W2.RVmat","ca\characters2\OpforIns\data\smersh_body_G.RVmat","ca\characters2\OpforIns\data\smersh_body_G_W1.RVmat","ca\characters2\OpforIns\data\smersh_body_G_W2.RVmat","ca\characters2\OpforIns\data\smersh_body_COM.RVmat","ca\characters2\OpforIns\data\smersh_body_COM_W1.RVmat","ca\characters2\OpforIns\data\smersh_body_COM_W2.RVmat","ca\characters2\OpforIns\data\lifcik_body_1.RVmat","ca\characters2\OpforIns\data\lifcik_body_1_W1.RVmat","ca\characters2\OpforIns\data\lifcik_body_1_W2.RVmat","ca\characters2\OpforIns\data\lifcik_body_AT.RVmat","ca\characters2\OpforIns\data\lifcik_body_AT_W1.RVmat","ca\characters2\OpforIns\data\lifcik_body_AT_W2.RVmat","Ca\characters2\OpforIns\Data\commander.rvmat","Ca\characters2\OpforIns\Data\commander_w1.rvmat","Ca\characters2\OpforIns\Data\commander_w2.rvmat","ca\characters2\OpforIns\data\lifcik_body_Crew.RVmat","ca\characters2\OpforIns\data\lifcik_body_AT_W1.RVmat","ca\characters2\OpforIns\data\lifcik_body_AT_W2.RVmat"};
+	};	
+};
+
+class INS_Soldier_CO_DZ: INS_Soldier_AR_DZ {
+	displayName = "Travis";
+	model = "\ca\characters2\OpforIns\Ins_Soldier_Com.p3d";
+};
+
+class INS_Bardak_DZ: TK_Commander_EP1_DZ {
+	displayName = "Paulo";
+	model = "\ca\characters2\OpforIns\Ins_Bardak.p3d";
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_spec_com_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\data\hhl.rvmat","ca\characters\data\us_hhl_wound1.rvmat","ca\characters\data\us_hhl_wound2.rvmat","ca\characters2\OpforIns\data\Ins_Bardak.rvmat","ca\characters2\OpforIns\data\W1_ins_bardak.rvmat","ca\characters2\OpforIns\data\W2_ins_bardak.rvmat"};
+	};	
+};
+
+class INS_Worker2_DZ: INS_Soldier_AR_DZ {
+	displayName = "Steve";
+	model = "\ca\characters2\civil\Worker\Worker";
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\worker\data\Worker_v2_CO.paa"};
+};
+
+class Bandit1_DZ : SoldierLight_Base_DZ { //Normal black PMC vest bandit
+	scope = public;
 	displayName = $STR_CHAR_2;
-	side = 1;
-	weapons[] = {"Throw","Put"};
 	model = "\dayz\characters\man_bandit";
 	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
-	magazines[] = {};
-	backpack = "";
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
+	HiddenSelections[] = {"camo"};
+	HiddenSelectionsTextures[] = {"ca\characters_pmc\frost\data\frost_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\Frost\Data\Frost_1_co.paa"",""\Ca\Characters_PMC\Frost\Data\Frost_2_co.paa"",""\Ca\Characters_PMC\Frost\Data\Frost_3_co.paa""] select floor random 3];";
+	};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\Characters_PMC\Frost\Data\frost.rvmat","Ca\Characters_PMC\Frost\Data\w1_frost.rvmat","Ca\Characters_PMC\Frost\Data\w2_frost.rvmat"};
+	};	
 };
-class Bandit2_DZ: Soldier_Crew_PMC { //German bright color camo bandit
+
+class Bandit2_DZ: Bandit1_DZ { //German bright color camo bandit
 	scope = public;
-	side = 1;
 	displayName = $STR_CHAR_2;
 	weapons[] = {"Throw","Put"};
 	model = "\ca\characters_E\GER\GER_rifleman";
 	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
-	magazines[] = {};
-	backpack = "";
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\dayz\textures\clothes\bandit_tex1_co.paa"};
-	weaponSlots = "1 + 4 + 12* 256 + 2* 4096 + 2 + 8* 16 + 12*131072";
-	canHideBodies = 1;
+	class EventHandlers {};
 };
 
-// new bandits
-class GUE_Soldier_MG;
-class GUE_Soldier_MG_DZ: GUE_Soldier_MG {
-	displayName = $STR_CHAR_2;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-class GUE_Soldier_Sniper;
-class GUE_Soldier_Sniper_DZ: GUE_Soldier_Sniper {
-	displayName = "Bandit Sniper";
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-class GUE_Soldier_Crew;
-class GUE_Soldier_Crew_DZ: GUE_Soldier_Crew {
-	displayName = $STR_CHAR_2;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-class GUE_Soldier_CO;
-class GUE_Soldier_CO_DZ: GUE_Soldier_CO {
-	displayName = $STR_CHAR_2;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-class GUE_Soldier_2;
-class GUE_Soldier_2_DZ: GUE_Soldier_2 {
-	displayName = $STR_CHAR_2;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-
-class RU_Policeman_DZ: Survivor_DZ {
+class GUE_Soldier_MG_DZ: SoldierLight_Base_DZ {
 	scope = public;
-	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER1;
+	displayName = $STR_CHAR_2;
+	model = "\ca\characters2\IndepIns\Soldier_MG.p3d";
+	portrait = "\Ca\characters\data\portraits\comBarHead_opFor_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\IndepIns\Data\soldier_khaki.RVmat","ca\characters2\IndepIns\Data\soldier_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier_khaki_W2.RVmat","ca\characters2\IndepIns\Data\soldier_flecktarn.RVmat","ca\characters2\IndepIns\Data\soldier_flecktarn_W1.RVmat","ca\characters2\IndepIns\Data\soldier_flecktarn_W2.RVmat","ca\characters2\IndepIns\Data\soldier2_khaki.RVmat","ca\characters2\IndepIns\Data\soldier2_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier2_khaki_W2.RVmat","ca\characters2\IndepIns\Data\soldier2_woodland.RVmat","ca\characters2\IndepIns\Data\soldier2_woodland_W1.RVmat","ca\characters2\IndepIns\Data\soldier2_woodland_W2.RVmat","ca\characters2\IndepIns\Data\soldier_mg_khaki.RVmat","ca\characters2\IndepIns\Data\soldier_mg_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier_mg_khaki_W2.RVmat","ca\characters2\IndepIns\Data\soldier_mg_flecktarn.RVmat","ca\characters2\IndepIns\Data\soldier_mg_flecktarn_W1.RVmat","ca\characters2\IndepIns\Data\soldier_mg_flecktarn_W2.RVmat","ca\characters2\civil\worker\data\worker.rvmat","ca\characters2\civil\worker\data\W1_worker.rvmat","ca\characters2\civil\worker\data\W2_worker.rvmat","ca\characters2\civil\Woodlander\data\Woodlander.rvmat","ca\characters2\civil\Woodlander\data\W1_Woodlander.rvmat","ca\characters2\civil\Woodlander\data\W2_Woodlander.rvmat","ca\characters2\Civil\Villager\Data\villager.RVmat","ca\characters2\Civil\Villager\Data\villager_w1.RVmat","ca\characters2\Civil\Villager\Data\villager_w2.RVmat","ca\characters2\IndepIns\Data\prizrak.rvmat","ca\characters2\IndepIns\Data\W1_prizrak.rvmat","ca\characters2\IndepIns\Data\W2_prizrak.rvmat","ca\characters2\IndepIns\Data\soldier_back_khaki.RVmat","ca\characters2\IndepIns\Data\soldier_back_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier_back_khaki_W2.RVmat","ca\characters2\IndepIns\Data\soldier_back_woodland.RVmat","ca\characters2\IndepIns\Data\soldier_back_woodland_W1.RVmat","ca\characters2\IndepIns\Data\soldier_back_woodland_W2.RVmat","ca\characters2\Data\ghillie.rvmat","ca\characters2\Data\w1_ghillie.rvmat","ca\characters2\Data\w2_ghillie.rvmat","ca\characters2\IndepIns\Data\soldier_com_flecktarn.RVmat","ca\characters2\IndepIns\Data\soldier_com_flecktarn_W1.RVmat","ca\characters2\IndepIns\Data\soldier_com_flecktarn_W2.RVmat","ca\characters2\IndepIns\Data\soldier_com_khaki.RVmat","ca\characters2\IndepIns\Data\soldier_com_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier_com_khaki_W2.RVmat"};
+	};
+};
+
+class GUE_Soldier_Sniper_DZ: Sniper1_DZ {
+	displayName = "Bandit Sniper";
+	model = "\ca\characters2\Ghillie_Top";
+	hiddenSelections[] = {};
+	hiddenSelectionsTextures[] = {};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\IndepIns\Data\soldier_khaki.RVmat","ca\characters2\IndepIns\Data\soldier_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier_khaki_W2.RVmat","ca\characters2\IndepIns\Data\soldier_flecktarn.RVmat","ca\characters2\IndepIns\Data\soldier_flecktarn_W1.RVmat","ca\characters2\IndepIns\Data\soldier_flecktarn_W2.RVmat","ca\characters2\IndepIns\Data\soldier2_khaki.RVmat","ca\characters2\IndepIns\Data\soldier2_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier2_khaki_W2.RVmat","ca\characters2\IndepIns\Data\soldier2_woodland.RVmat","ca\characters2\IndepIns\Data\soldier2_woodland_W1.RVmat","ca\characters2\IndepIns\Data\soldier2_woodland_W2.RVmat","ca\characters2\IndepIns\Data\soldier_mg_khaki.RVmat","ca\characters2\IndepIns\Data\soldier_mg_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier_mg_khaki_W2.RVmat","ca\characters2\IndepIns\Data\soldier_mg_flecktarn.RVmat","ca\characters2\IndepIns\Data\soldier_mg_flecktarn_W1.RVmat","ca\characters2\IndepIns\Data\soldier_mg_flecktarn_W2.RVmat","ca\characters2\civil\worker\data\worker.rvmat","ca\characters2\civil\worker\data\W1_worker.rvmat","ca\characters2\civil\worker\data\W2_worker.rvmat","ca\characters2\civil\Woodlander\data\Woodlander.rvmat","ca\characters2\civil\Woodlander\data\W1_Woodlander.rvmat","ca\characters2\civil\Woodlander\data\W2_Woodlander.rvmat","ca\characters2\Civil\Villager\Data\villager.RVmat","ca\characters2\Civil\Villager\Data\villager_w1.RVmat","ca\characters2\Civil\Villager\Data\villager_w2.RVmat","ca\characters2\IndepIns\Data\prizrak.rvmat","ca\characters2\IndepIns\Data\W1_prizrak.rvmat","ca\characters2\IndepIns\Data\W2_prizrak.rvmat","ca\characters2\IndepIns\Data\soldier_back_khaki.RVmat","ca\characters2\IndepIns\Data\soldier_back_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier_back_khaki_W2.RVmat","ca\characters2\IndepIns\Data\soldier_back_woodland.RVmat","ca\characters2\IndepIns\Data\soldier_back_woodland_W1.RVmat","ca\characters2\IndepIns\Data\soldier_back_woodland_W2.RVmat","ca\characters2\Data\ghillie.rvmat","ca\characters2\Data\w1_ghillie.rvmat","ca\characters2\Data\w2_ghillie.rvmat","ca\characters2\IndepIns\Data\soldier_com_flecktarn.RVmat","ca\characters2\IndepIns\Data\soldier_com_flecktarn_W1.RVmat","ca\characters2\IndepIns\Data\soldier_com_flecktarn_W2.RVmat","ca\characters2\IndepIns\Data\soldier_com_khaki.RVmat","ca\characters2\IndepIns\Data\soldier_com_khaki_W1.RVmat","ca\characters2\IndepIns\Data\soldier_com_khaki_W2.RVmat"};
+	};	
+};
+
+class GUE_Soldier_Crew_DZ: GUE_Soldier_MG_DZ {
+	portrait = "\Ca\characters\data\portraits\comBarHead_common_crew_ca";
+	model = "\ca\characters2\IndepIns\Soldier.p3d";
+	faceType = "HeadMask1Black";
+};
+
+class GUE_Soldier_CO_DZ: GUE_Soldier_MG_DZ {
+	model = "\ca\characters2\IndepIns\Soldier_COM.p3d";
+};
+
+class GUE_Soldier_2_DZ: GUE_Soldier_MG_DZ {
+	model = "\ca\characters2\IndepIns\Soldier2.p3d";
+};
+
+class RU_Policeman_DZ: SoldierLight_Base_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_POLICE_OFFICER;
 	model = "\ca\characters2\civil\Policeman\Policeman";
 	class Wounds
 	{
@@ -433,7 +371,6 @@ class RU_Policeman_DZ: Survivor_DZ {
 };
 
 class RU_Policeman2_DZ: RU_Policeman_DZ {
-	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER2;
 	model = "kpfs_civ\guard";
 	hiddenSelections[] = {};
 	hiddenSelectionsTextures[] = {};
@@ -444,502 +381,392 @@ class RU_Policeman2_DZ: RU_Policeman_DZ {
 	};
 };
 
-class Pilot_EP1;
-class Pilot_EP1_DZ: Pilot_EP1 {
+class Pilot_EP1_DZ: Survivor_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_PILOT;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\Ca\characters_E\Civil\Pilot\pilot";
 };
-class Haris_Press_EP1;
-class Haris_Press_EP1_DZ: Haris_Press_EP1 {
+
+class Haris_Press_EP1_DZ: Survivor_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_JOURNALIST;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters_E\Civil\Harris\Harris";
+	hiddenSelections[] = {};
 };
-class Ins_Soldier_GL;
-class Ins_Soldier_GL_DZ: Ins_Soldier_GL {
+
+class Ins_Soldier_GL_DZ: INS_Soldier_AR_DZ {
 	displayName = $STR_EPOCH_SKINS_TERRORIST;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\OpforIns\Ins_Soldier_G.p3d";
+	faceType = "HeadMask3Khaki";
 };
-class GUE_Commander;
-class GUE_Commander_DZ: GUE_Commander {
+
+class GUE_Commander_DZ: GUE_Soldier_MG_DZ {
 	displayName = $STR_EPOCH_SKINS_REBEL;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\IndepIns\Prizrak";
 };
-class Functionary1_EP1;
-class Functionary1_EP1_DZ: Functionary1_EP1 {
+
+class Functionary1_EP1_DZ: Survivor_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_BUSINESSMAN;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\Ca\characters_E\Civil\Functionary\Functionary";
 };
-class Priest;
-class Priest_DZ: Priest {
+
+class Priest_DZ: Survivor_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_PRIEST;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-class Rocker1;
-class Rocker1_DZ: Rocker1 {
-	displayName = $STR_EPOCH_SKINS_Rocker;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-class Rocker2;
-class Rocker2_DZ: Rocker2 {
-	displayName = $STR_EPOCH_SKINS_Rocker;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-class Rocker3;
-class Rocker3_DZ: Rocker3 {
-	displayName = $STR_EPOCH_SKINS_Rocker;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-};
-class Rocker4;
-class Rocker4_DZ: Rocker4 {
-	displayName = $STR_EPOCH_SKINS_Rocker;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\civil\Priest\Priest";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\civil\priest\data\priest.rvmat","ca\characters2\civil\priest\data\W1_priest.rvmat","ca\characters2\civil\priest\data\W2_priest.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat"};
+	};
 };
 
-class TK_INS_Warlord_EP1;
-class TK_INS_Warlord_EP1_DZ: TK_INS_Warlord_EP1 {
+class Rocker1_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_EPOCH_SKINS_Rocker;
+	model = "\ca\characters2\civil\Rocker\Rocker";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\civil\Rocker\data\Rocker.rvmat","ca\characters2\civil\Rocker\data\W1_Rocker.rvmat","ca\characters2\civil\Rocker\data\W2_Rocker.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat"};
+	};
+	hiddenSelections[] = {"Camo","CamoB"};
+	hiddenSelectionsTextures[] = {"\ca\characters2\Civil\Rocker\Data\rocker_co.paa","\ca\characters2\Civil\Rocker\Data\rockerhair_ca.paa"};
+};
+
+class Rocker2_DZ: Rocker1_DZ {
+	hiddenSelectionsTextures[] = {"\ca\characters2\Civil\Rocker\Data\rocker_v2_co.paa","\ca\characters2\Civil\Rocker\Data\rockerhair_ca.paa"};
+};
+
+class Rocker3_DZ: Rocker1_DZ {
+	hiddenSelectionsTextures[] = {"\ca\characters2\Civil\Rocker\Data\rocker_v3_co.paa","\ca\characters2\Civil\Rocker\Data\rockerhair_v2_ca.paa"};
+};
+
+class Rocker4_DZ: Rocker1_DZ {
+	hiddenSelectionsTextures[] = {"\ca\characters2\Civil\Rocker\Data\rocker_v4_co.paa","\ca\characters2\Civil\Rocker\Data\rockerhair_v3_ca.paa"};
+};
+
+class TK_INS_Warlord_EP1_DZ: Survivor_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_TAKISTANIWARLORD;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
+	model = "\CA\characters_E\LOC\LOC_soldier02";
+	portrait = "\Ca\characters_E\data\portraits\loc_soldier_CA";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"CA\characters_E\LOC\Data\LOC_soldier02.rvmat","CA\characters_E\LOC\Data\W1_LOC_soldier02.rvmat","CA\characters_E\LOC\Data\W2_LOC_soldier02.rvmat"};
+	};
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_opfor02_1_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\LOC\Data\LOC_opfor02_1_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor02_2_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor02_3_co.paa""] select floor random 3]";
+	};
 };
 
-class TK_INS_Soldier_EP1;
-class TK_INS_Soldier_EP1_DZ: TK_INS_Soldier_EP1 {
+class TK_INS_Soldier_EP1_DZ: TK_INS_Warlord_EP1_DZ {
 	displayName = $STR_EPOCH_SKINS_TAKISTANISOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
+	model = "\CA\characters_E\LOC\LOC_soldier01";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"CA\characters_E\LOC\Data\LOC_soldier01.rvmat","CA\characters_E\LOC\Data\W1_LOC_soldier01.rvmat","CA\characters_E\LOC\Data\W2_LOC_soldier01.rvmat"};
+	};	
+	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_opfor01_1_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\LOC\Data\LOC_opfor01_1_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor01_2_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor01_3_co.paa""] select floor random 3]";
+	};
 };
 	
-class CZ_Special_Forces_GL_DES_EP1;
-class CZ_Special_Forces_GL_DES_EP1_DZ: CZ_Special_Forces_GL_DES_EP1 {
+class CZ_Special_Forces_GL_DES_EP1_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_SPECIALFORCES;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
+	model = "\CA\characters_E\ACR\acr_soldier_spec1";
+	portrait = "\Ca\characters\data\portraits\comBarHead_bluFor_cdf_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {};
+	};
+	hiddenSelections[] = {"Camo"};
 };
 	
-class Drake_Light;
-class Drake_Light_DZ: Drake_Light {
+class Drake_Light_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_DESERTCAMO;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	faceType = "Man";
+	model = "\ca\characters_E\US\US_machine_gunner_Light";
+	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters_E\US\data\tex1.rvmat","ca\characters_E\US\data\W1_tex1.rvmat","ca\characters_E\US\data\W2_tex1.rvmat","ca\characters_E\US\data\tex4.rvmat","ca\characters_E\US\data\W1_tex4.rvmat","ca\characters_E\US\data\W2_tex4.rvmat","ca\characters_e\US\data\us_pilot.rvmat","ca\characters_e\US\data\W1_us_pilot.rvmat","ca\characters_e\US\data\W2_us_pilot.rvmat"};
+	};	
 };
-class Soldier_Bodyguard_AA12_PMC;
-class Soldier_Bodyguard_AA12_PMC_DZ: Soldier_Bodyguard_AA12_PMC {
+
+class Soldier_Bodyguard_AA12_PMC_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_BODYGUARD;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
+	model = "\Ca\Characters_PMC\Dixon\Dixon.p3d";
+	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca.paa";
+	HiddenSelections[] = {"camo1","camo2","camo3"};
+	HiddenSelectionsTextures[] = {"ca\characters_E\Civil\Harris\Data\european-man_01_co.paa","ca\characters_pmc\dixon\data\dix_co.paa","ca\characters_E\Delta\Data\DO_Equip_CO.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""ca\characters_pmc\dixon\data\european-man_02_co.paa"",""ca\characters_pmc\dixon\data\european-man_03_co.paa"",""ca\characters_pmc\dixon\data\european-man_04_co.paa"",""ca\characters_pmc\dixon\data\european-man_05_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [1,[""Ca\Characters_PMC\Dixon\Data\Dix_1_CO.paa"",""Ca\Characters_PMC\Dixon\Data\Dix_2_CO.paa"",""Ca\Characters_PMC\Dixon\Data\Dix_3_CO.paa"",""Ca\Characters_PMC\Dixon\Data\Dix_4_CO.paa"",""Ca\Characters_PMC\Dixon\Data\Dix_4_CO.paa""] select floor random 5]";
+	};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\Characters_PMC\Dixon\Data\dix.rvmat","Ca\Characters_PMC\Dixon\Data\w1_dix.rvmat","Ca\Characters_PMC\Dixon\Data\w2_dix.rvmat","Ca\Characters_PMC\Dixon\Data\do_equip.rvmat","Ca\Characters_PMC\Dixon\Data\w1_do_equip.rvmat","Ca\Characters_PMC\Dixon\Data\w2_do_equip.rvmat","Ca\Characters_PMC\Dixon\Data\european-man_01.rvmat","Ca\Characters_PMC\Dixon\Data\w1_european-man_01.rvmat","Ca\Characters_PMC\Dixon\Data\w2_european-man_01.rvmat"};
+	};
 };
 
-class Soldier_Sniper_PMC_DZ: Soldier_Crew_PMC {
+class Soldier_Sniper_PMC_DZ: Soldier_Bodyguard_AA12_PMC_DZ {
 	displayName = $STR_EPOCH_SKINS_MARKSMAN;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-
 	model = "\dayz\characters\man_hero";
-	HiddenSelections[] = {"camo1","camo2","camo3"};
 	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa","ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa","ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
 	class EventHandlers
 	{
 		init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\PMC_soldier\Data\bauer_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_3_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_4_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_5_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [1,[""ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_1_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_3_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [2,[""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_CO.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa""] select floor random 2]";
 	};
 };
-class Soldier_TL_PMC;
-class Soldier_TL_PMC_DZ: Soldier_TL_PMC {
+
+class Soldier_TL_PMC_DZ: Soldier_Bodyguard_AA12_PMC_DZ {
 	displayName = $STR_EPOCH_SKINS_TEAMLEADER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
+	model = "\Ca\Characters_PMC\Gracenko\Gracenko.p3d";
+	HiddenSelections[] = {"camo"};
+	HiddenSelectionsTextures[] = {"ca\characters_pmc\gracenko\data\gracenko_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\Gracenko\Data\Gracenko_1_co.paa"",""\Ca\Characters_PMC\Gracenko\Data\Gracenko_2_co.paa"",""\Ca\Characters_PMC\Gracenko\Data\Gracenko_3_co.paa"",""\Ca\Characters_PMC\Gracenko\Data\Gracenko_4_co.paa""] select floor random 4];";
+	};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\Characters_PMC\Gracenko\Data\gracenko.rvmat","Ca\Characters_PMC\Gracenko\Data\w1_gracenko.rvmat","Ca\Characters_PMC\Gracenko\Data\w2_gracenko.rvmat"};
+	};
 };
-class FR_OHara;
-class FR_OHara_DZ: FR_OHara {
+
+class FR_OHara_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_JUNGLECAMO;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-	attendant = 0; 
-	faceType = "Man";
+	model = "\ca\characters2\USMC\Ohara";
+	portrait = "\Ca\characters\data\portraits\comBarHead_ohara_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\characters2\USMC\DATA\fr_corpsman_body.rvmat","Ca\characters2\USMC\DATA\W1_fr_corpsman_body.rvmat","Ca\characters2\USMC\DATA\W2_fr_corpsman_body.rvmat","Ca\characters2\USMC\DATA\fr_corpsman_gear.rvmat","Ca\characters2\USMC\DATA\W1_fr_corpsman_gear.rvmat","Ca\characters2\USMC\DATA\W2_fr_corpsman_gear.rvmat"};
+	};	
 };
-class FR_Rodriguez;
-class FR_Rodriguez_DZ: FR_Rodriguez {
+
+class FR_Rodriguez_DZ: FR_OHara_DZ {
 	displayName = $STR_EPOCH_SKINS_GUNNEROUTFIT;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-	faceType = "Man";
+	model = "\ca\characters2\USMC\Rodriguez";
+	portrait = "\Ca\characters\data\portraits\comBarHead_rodriguez_ca";
 };
-class CZ_Soldier_Sniper_EP1;
-class CZ_Soldier_Sniper_EP1_DZ: CZ_Soldier_Sniper_EP1 {
+
+class CZ_Soldier_Sniper_EP1_DZ: Sniper1_DZ {	
 	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters_E\Ghillie\Ghillie_Overall";
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\ca\characters_E\Ghillie\Data\ghillie_overall1_desert_co.paa"};	
 };
-class Graves_Light;
-class Graves_Light_DZ: Graves_Light {
+
+class Graves_Light_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_URBANCAMO;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
-	faceType = "Man";
+	model = "\ca\characters_E\Delta\Delta2_Light.p3d";
+	portrait = "\ca\characters_E\data\portraits\Graves_CA.paa";
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\ca\characters_e\Delta\Data\DO_1_Multicam_CO"};	
 };
-//new Epoch 1.06
-class USMC_Soldier_Officer;
-class USMC_Soldier_Officer_DZ: USMC_Soldier_Officer {
+
+class USMC_Soldier_Officer_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_USMCOFFICER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\USMC\USMC_soldier_Officer";
+	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\characters2\usmc\marines\data\usmc_soldier.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_soldier_at.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_soldier_CO.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_soldier_DMR.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_soldier_med.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_soldier_mine.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_soldier_saw.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_soldier_scout.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_soldier_tl.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\usmc\marines\data\usmc_Crew.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","ca\characters2\usmc\data\usmc_officer_body.rvmat","ca\characters2\data\USMC_soldier_W1.rvmat","ca\characters2\data\USMC_soldier_W2.rvmat","Ca\characters2\USMC\data\us_Crew.rvmat","Ca\characters2\USMC\data\W1_us_crew.rvmat","Ca\characters2\USMC\data\W2_us_crew.rvmat"};
+	};
 };
-class USMC_Soldier_MG;
-class USMC_Soldier_MG_DZ: USMC_Soldier_MG {
+
+class USMC_Soldier_MG_DZ: USMC_Soldier_Officer_DZ {	
 	displayName = $STR_EPOCH_SKINS_USMCSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\USMC\usmc_soldier_MG";
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.8;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
-class USMC_Soldier_Pilot;
-class USMC_Soldier_Pilot_DZ: USMC_Soldier_Pilot {
+
+class USMC_Soldier_Pilot_DZ: USMC_Soldier_MG_DZ {
 	displayName = $STR_EPOCH_SKINS_USMCPILOT;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\USMC\usmc_soldier_pilot";
+	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_pilot_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\data\us_pilot_body.rvmat","ca\characters\data\us_pilot_body_wound1.rvmat","ca\characters\data\us_pilot_body_wound2.rvmat","ca\characters\data\us_pilot_hhl.rvmat","ca\characters\data\us_pilot_hhl_wound1.rvmat","ca\characters\data\us_pilot_hhl_wound2.rvmat"};
+	};	
 };
-class FR_TL;
-class FR_TL_DZ: FR_TL {
+
+class FR_TL_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_CAMOTEAMLEADER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\USMC\FR_CO";
+	portrait = "\Ca\characters\data\portraits\comBarHead_fr_soldier_ca";	
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\characters2\USMC\DATA\FR_CO_Body.RVmat","Ca\characters2\USMC\DATA\W1_FR_co_body.rvmat","Ca\characters2\USMC\DATA\W2_FR_co_body.rvmat","Ca\characters2\USMC\DATA\FR_CO_Gear.RVmat","Ca\characters2\USMC\DATA\W1_FR_CO_Gear.RVmat","Ca\characters2\USMC\DATA\W2_FR_CO_Gear.RVmat"};
+	};
 };
-class FR_R;
-class FR_R_DZ: FR_R {
+
+class FR_R_DZ: FR_TL_DZ {
 	displayName = $STR_EPOCH_SKINS_CAMORECON;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\USMC\FR_Scout1";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\characters2\USMC\DATA\FR_Scout1_Body.RVmat","Ca\characters2\USMC\DATA\W1_FR_Scout1_body.rvmat","Ca\characters2\USMC\DATA\W2_FR_Scout1_body.rvmat","Ca\characters2\USMC\DATA\FR_Scout1_Gear.RVmat","Ca\characters2\USMC\DATA\W1_FR_Scout1_Gear.RVmat","Ca\characters2\USMC\DATA\W2_FR_Scout1_Gear.RVmat"};
+	};	
 };
-class FR_Marksman;
-class FR_Marksman_DZ: FR_Marksman {
+
+class FR_Marksman_DZ: FR_TL_DZ {
 	displayName = $STR_EPOCH_SKINS_CAMOMARKSMAN;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\USMC\FR_Marksman";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\characters2\USMC\DATA\FR_Marksman_Body.RVmat","Ca\characters2\USMC\DATA\W1_FR_Marksman_body.rvmat","Ca\characters2\USMC\DATA\W2_FR_Marksman_body.rvmat","Ca\characters2\USMC\DATA\FR_Marksman_Gear.RVmat","Ca\characters2\USMC\DATA\W1_FR_Marksman_Gear.RVmat","Ca\characters2\USMC\DATA\W2_FR_Marksman_Gear.RVmat"};
+	};
 };
-class FR_Assault_R;
-class FR_Assault_R_DZ: FR_Assault_R {
+
+class FR_Assault_R_DZ: FR_TL_DZ {
 	displayName = $STR_EPOCH_SKINS_CAMOASSAULT;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\USMC\FR_DirAction1";
+	portrait = "\Ca\characters\data\portraits\comBarHead_fr_spec_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\characters2\USMC\DATA\FR_DA1.rvmat","Ca\characters2\USMC\DATA\W1_FR_DA1.rvmat","Ca\characters2\USMC\DATA\W2_FR_DA1.rvmat"};
+	};	
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.8;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
-class RU_Soldier;
-class RU_Soldier_DZ: RU_Soldier {
+
+class RU_Soldier_DZ: SoldierHeavy_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_RUSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_soldier_ca";
+	model = "\ca\characters2\Rus\Soldier";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\Rus\DATA\soldier_flora_vsr_vest.RVmat","ca\characters2\Rus\DATA\soldier_flora_vsr_vest_w1.RVmat","ca\characters2\Rus\DATA\soldier_flora_vsr_vest_w2.RVmat","ca\characters2\Rus\DATA\soldier_co_flora_vsr_vest.RVmat","ca\characters2\Rus\DATA\soldier_co_flora_vsr_vest_w1.RVmat","ca\characters2\Rus\DATA\soldier_co_flora_vsr_vest_w2.RVmat","ca\characters2\Rus\DATA\soldier_mg_flora_vsr_vest.RVmat","ca\characters2\Rus\DATA\soldier_mg_flora_vsr_vest_w1.RVmat","ca\characters2\Rus\DATA\soldier_mg_flora_vsr_vest_w2.RVmat","ca\characters2\Rus\DATA\soldier_at_flora_VSR_vest.RVmat","ca\characters2\Rus\DATA\soldier_at_flora_VSR_vest_w1.RVmat","ca\characters2\Rus\DATA\soldier_at_flora_VSR_vest_w2.RVmat","ca\characters2\Rus\DATA\soldier_pilot_flora_vsr.RVmat","ca\characters2\Rus\DATA\soldier_pilot_flora_vsr_w1.RVmat","ca\characters2\Rus\DATA\soldier_pilot_flora_vsr_w2.RVmat","ca\characters2\Rus\DATA\soldier_crew_flora_vsr.RVmat","ca\characters2\Rus\DATA\soldier_crew_flora_vsr_w1.RVmat","ca\characters2\Rus\DATA\soldier_crew_flora_vsr_w2.RVmat","ca\characters2\Rus\DATA\Commander.rvmat","ca\characters2\Rus\DATA\W1_Commander.rvmat","ca\characters2\Rus\DATA\W2_Commander.rvmat"};
+	};	
 };
-class RU_Soldier_Officer;
-class RU_Soldier_Officer_DZ: RU_Soldier_Officer {
+
+
+class RU_Soldier_Officer_DZ: RU_Soldier_DZ {
 	displayName = $STR_EPOCH_SKINS_RUOFFICER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	portrait = "\Ca\characters\data\portraits\comBarHead_common_officer_ca";
+	model = "\ca\characters2\Rus\Soldier_CO";	
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
-class RUS_Soldier1;
-class RUS_Soldier1_DZ: RUS_Soldier1 {
+
+class RUS_Soldier1_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_RUCAMO;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\Rus\Specnaz_Back";
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_spec_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\rus\data\soldier_specnaz_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_partizan_w2.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w2.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w2.rvmat","ca\characters2\rus\data\soldier_speccom.RVmat","ca\characters2\rus\data\soldier_speccom_w1.RVmat","ca\characters2\rus\data\soldier_speccom_w2.RVmat"};
+	};	
 };
-class RUS_Commander;
-class RUS_Commander_DZ: RUS_Commander {
+
+class RUS_Commander_DZ: RUS_Soldier1_DZ {
 	displayName = $STR_EPOCH_SKINS_RUCOMMANDER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\Rus\Specnaz_CO";
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_spec_com_ca";
 };
-class MVD_Soldier;
-class MVD_Soldier_DZ: MVD_Soldier {
+
+class MVD_Soldier_DZ: SoldierHeavy_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_MVDSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\Rus\Vityaz";
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_mvd_ca";
+	faceType = "HeadMask1Black";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\rus\data\soldier_vityaz_2_partizan_vest.rvmat","ca\characters2\rus\data\soldier_vityaz_2_partizan_vest_w1.rvmat","ca\characters2\rus\data\soldier_vityaz_2_partizan_vest_w2.rvmat","ca\characters2\rus\data\soldier_vityaz_partizan_vest.rvmat","ca\characters2\rus\data\soldier_vityaz_partizan_vest_w1.rvmat","ca\characters2\rus\data\soldier_vityaz_partizan_vest_w2.rvmat"};
+	};	
 };
-class Ins_Soldier_2;
-class Ins_Soldier_2_DZ: Ins_Soldier_2 {
+
+class Ins_Soldier_2_DZ: INS_Soldier_AR_DZ {	
 	displayName = $STR_EPOCH_SKINS_TERRORISTCAMO;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\OpforIns\Ins_Soldier_2.p3d";
+	faceType = "HeadMask3Khaki";
 };
-class Ins_Commander;
-class Ins_Commander_DZ: Ins_Commander {
+
+class Ins_Commander_DZ: INS_Soldier_AR_DZ {
 	displayName = $STR_EPOCH_SKINS_INSCOMMANDER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\OpforIns\Ins_Commander.p3d";
+	portrait = "\Ca\characters\data\portraits\comBarHead_ru_spec_com_ca";
 };
-class Ins_Soldier_Crew;
-class Ins_Soldier_Crew_DZ: Ins_Soldier_Crew {
+
+class Ins_Soldier_Crew_DZ: INS_Soldier_AR_DZ {
 	displayName = $STR_EPOCH_SKINS_INSCREWMAN;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\OpforIns\Ins_Soldier_Crew.p3d";
+	portrait = "\Ca\characters\data\portraits\comBarHead_common_crew_ca";
 };
-class CDF_Soldier;
-class CDF_Soldier_DZ: CDF_Soldier {
+
+class CDF_Soldier_DZ: SoldierHeavy_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_CDFSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	portrait = "\Ca\characters\data\portraits\comBarHead_bluFor_cdf_ca";
+	model = "\ca\characters2\Blufor\Soldier";
 };
 
 class Doctor_DZ: Survivor_DZ {
-	scope = public;
-	attendant = 0;
+	scope = public;	
 	displayName = $STR_EPOCH_SKINS_DOCTOR;
 	model = "\ca\characters2\civil\Doctor\Doctor";
 	hiddenSelections[] = {"Camo"};
@@ -966,230 +793,205 @@ class Gardener_DZ: Doctor_DZ {
 	hiddenSelectionsTextures[] = {"\kpfs_civ\data\dealer_beer_co.paa"};
 };
 
-class Worker1;
-class Worker1_DZ: Worker1 {
+class Worker1_DZ: Survivor_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_WORKER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\civil\Worker\Worker";
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\worker\data\worker_co.paa"};
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_Wounds.rvmat","ca\characters2\civil\worker\data\worker.rvmat","ca\characters2\civil\worker\data\W1_worker.rvmat","ca\characters2\civil\worker\data\W2_worker.rvmat"};
+	};
 };
-class Worker3;
-class Worker3_DZ: Worker3 {
-	displayName = $STR_EPOCH_SKINS_WORKER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+
+class Worker3_DZ: Worker1_DZ {
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\worker\data\Worker_v3_CO.paa"};
 };
-class Worker4;
-class Worker4_DZ: Worker4 {
-	displayName = $STR_EPOCH_SKINS_WORKER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+
+class Worker4_DZ: Worker1_DZ {
+	hiddenSelectionsTextures[] = {"\ca\characters2\civil\worker\data\Worker_v4_CO.paa"};
 };
-class TK_CIV_Takistani01_EP1;
-class TK_CIV_Takistani01_EP1_DZ: TK_CIV_Takistani01_EP1 {
+
+class TK_CIV_Takistani01_EP1_DZ: Survivor_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	hiddenSelections[] = {"Camo"};
+	model = "\CA\characters_E\civil\Tak_civil01\Tak_civil01";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"CA\characters_E\civil\Tak_civil01\Data\Tak_civil01.rvmat","CA\characters_E\civil\Tak_civil01\Data\W1_Tak_civil01.rvmat","CA\characters_E\civil\Tak_civil01\Data\W2_Tak_civil01.rvmat"};
+	};
+	hiddenSelectionsTextures[] = {"\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_1_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_1_co.paa"",""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_2_co.paa"",""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_3_co.paa"",""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_4_co.paa"",""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_5_co.paa""] select floor random 5]";
+	};	
 };
-class TK_CIV_Takistani03_EP1;
-class TK_CIV_Takistani03_EP1_DZ: TK_CIV_Takistani03_EP1 {
-	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+
+class TK_CIV_Takistani03_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
+	model = "\CA\characters_E\civil\Tak_civil03\Tak_civil03";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"CA\characters_E\civil\Tak_civil03\Data\Tak_civil03.rvmat","CA\characters_E\civil\Tak_civil03\Data\W1_Tak_civil03.rvmat","CA\characters_E\civil\Tak_civil03\Data\W2_Tak_civil03.rvmat"};
+	};
+	hiddenSelectionsTextures[] = {"\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_1_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_1_co.paa"",""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_2_co.paa"",""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_3_co.paa"",""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_4_co.paa"",""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_5_co.paa""] select floor random 5]";
+	};
 };
-class TK_CIV_Takistani04_EP1;
-class TK_CIV_Takistani04_EP1_DZ: TK_CIV_Takistani04_EP1 {
-	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+
+class TK_CIV_Takistani04_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
+	model = "\CA\characters_E\civil\Tak_civil04\Tak_civil04";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"CA\characters_E\civil\Tak_civil04\Data\Tak_civil04.rvmat","CA\characters_E\civil\Tak_civil04\Data\W1_Tak_civil04.rvmat","CA\characters_E\civil\Tak_civil04\Data\W2_Tak_civil04.rvmat"};
+	};
+	hiddenSelectionsTextures[] = {"\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_1_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_1_co.paa"",""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_2_co.paa"",""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_3_co.paa"",""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_4_co.paa"",""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_5_co.paa""] select floor random 5]";
+	};
 };
-class TK_CIV_Takistani06_EP1;
-class TK_CIV_Takistani06_EP1_DZ: TK_CIV_Takistani06_EP1 {
-	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+
+class TK_CIV_Takistani06_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
+	model = "\CA\characters_E\civil\Tak_civil06\Tak_civil06";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"CA\characters_E\civil\Tak_civil06\Data\Tak_civil06.rvmat","CA\characters_E\civil\Tak_civil06\Data\W1_Tak_civil06.rvmat","CA\characters_E\civil\Tak_civil06\Data\W2_Tak_civil06.rvmat"};
+	};
+	hiddenSelectionsTextures[] = {"\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_1_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_1_co.paa"",""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_2_co.paa"",""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_3_co.paa"",""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_4_co.paa"",""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_5_co.paa""] select floor random 5]";
+	};
 };
-class TK_INS_Soldier_AR_EP1;
-class TK_INS_Soldier_AR_EP1_DZ: TK_INS_Soldier_AR_EP1 {
+
+class TK_INS_Soldier_AR_EP1_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_TKSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\CA\characters_E\LOC\LOC_soldier05";
+	portrait = "\Ca\characters_E\data\portraits\loc_soldier_CA";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"CA\characters_E\LOC\Data\LOC_soldier05.rvmat","CA\characters_E\LOC\Data\W1_LOC_soldier05.rvmat","CA\characters_E\LOC\Data\W2_LOC_soldier05.rvmat"};
+	};
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_opfor05_1_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\LOC\Data\LOC_opfor05_1_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor05_2_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor05_3_co.paa""] select floor random 3]";
+	};
 };
-class TK_GUE_Soldier_EP1;
-class TK_GUE_Soldier_EP1_DZ: TK_GUE_Soldier_EP1 {
+
+class TK_GUE_Soldier_EP1_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_TKGUESOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\CA\characters_E\LOC\LOC_soldier01";
+	portrait = "\Ca\characters_E\data\portraits\loc_soldier_CA";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"CA\characters_E\LOC\Data\LOC_soldier01.rvmat","CA\characters_E\LOC\Data\W1_LOC_soldier01.rvmat","CA\characters_E\LOC\Data\W2_LOC_soldier01.rvmat"};
+	};
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_ind01_1_co.paa"};
+	class EventHandlers: EventHandlers
+	{
+		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\LOC\Data\LOC_ind01_1_co.paa"",""\CA\characters_E\LOC\Data\LOC_ind01_2_co.paa"",""\CA\characters_E\LOC\Data\LOC_ind01_3_co.paa""] select floor random 3]";
+	};
 };
-class CZ_Soldier_SL_DES_EP1;
-class CZ_Soldier_SL_DES_EP1_DZ: CZ_Soldier_SL_DES_EP1 {
+
+class CZ_Soldier_SL_DES_EP1_DZ: SoldierHeavy_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_CZSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	portrait = "\Ca\characters\data\portraits\comBarHead_bluFor_cdf_ca";
+	hiddenSelections[] = {"Camo"};
+	model = "\CA\characters_E\ACR\acr_soldier";
 };
-class US_Soldier_EP1;
-class US_Soldier_EP1_DZ: US_Soldier_EP1 {
+
+class US_Soldier_EP1_DZ: SoldierHeavy_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_USSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters_e\US\US_rifleman";
+	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters_E\US\data\tex1.rvmat","ca\characters_E\US\data\W1_tex1.rvmat","ca\characters_E\US\data\W2_tex1.rvmat","ca\characters_E\US\data\tex4.rvmat","ca\characters_E\US\data\W1_tex4.rvmat","ca\characters_E\US\data\W2_tex4.rvmat","ca\characters_e\US\data\us_pilot.rvmat","ca\characters_e\US\data\W1_us_pilot.rvmat","ca\characters_e\US\data\W2_us_pilot.rvmat"};
+	};	
 };
-class UN_CDF_Soldier_Guard_EP1;
-class UN_CDF_Soldier_Guard_EP1_DZ: UN_CDF_Soldier_Guard_EP1 {
+
+class UN_CDF_Soldier_Guard_EP1_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_UNCOMMANDER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters_e\UN\UN_CDF_Officer";
+	portrait = "\Ca\characters\data\portraits\comBarHead_common_officer_ca";
 };
-class UN_CDF_Soldier_EP1;
-class UN_CDF_Soldier_EP1_DZ: UN_CDF_Soldier_EP1 {
+
+class UN_CDF_Soldier_EP1_DZ: SoldierHeavy_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_UNSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters_E\UN\UN_CDF_Soldier";
 };
-class GER_Soldier_TL_EP1;
-class GER_Soldier_TL_EP1_DZ: GER_Soldier_TL_EP1 {
+
+class GER_Soldier_TL_EP1_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_GERRECON;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters_E\GER\GER_rifleman_light";
+	portrait = "\Ca\characters\data\portraits\comBarHead_opFor_ca";
+	hiddenSelections[] = {"Camo"};
 };
-class BAF_Soldier_Officer_MTP;
-class BAF_Soldier_Officer_MTP_DZ: BAF_Soldier_Officer_MTP {
+
+class BAF_Soldier_Officer_MTP_DZ: SoldierLight_Base_DZ {
+	scope = public;
 	displayName = $STR_EPOCH_SKINS_BAFOFFICER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	portrait = "\ca\characters_d_baf\Data\portraits\baf_officer_CA";
+	model = "\ca\characters_d_BAF\BAF_Soldier_Officer_BAF";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters_d_baf\Data\armour.rvmat","ca\characters_d_baf\Data\W1_armour.rvmat","ca\characters_d_baf\Data\W2_armour.rvmat","ca\characters_d_baf\Data\camo.rvmat","ca\characters_d_baf\Data\W1_camo.rvmat","ca\characters_d_baf\Data\W2_camo.rvmat"};
+	};
+	hiddenSelections[] = {"Camo","Camo2","Camo3"};
+	hiddenSelectionsTextures[] = {"\ca\characters_d_baf\data\camo_MTP_co.paa","\ca\characters_d_baf\data\armour_co.paa","\ca\characters_d_baf\data\equip_d_co.paa"};
 };
-class BAF_Soldier_N_MTP;
-class BAF_Soldier_N_MTP_DZ: BAF_Soldier_N_MTP {
+
+class BAF_Soldier_N_MTP_DZ: BAF_Soldier_Officer_MTP_DZ {
 	displayName = $STR_EPOCH_SKINS_BAFSOLDIER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters_d_BAF\BAF_Soldier_1_BAF";
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.8;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
-class FR_Sapper;
-class FR_Sapper_DZ: FR_Sapper {
+
+class FR_Sapper_DZ: FR_TL_DZ {
 	displayName = $STR_EPOCH_SKINS_FRSAPPER;
-	side = 1;
-	weapons[] = {"Throw","Put"};
-	backpack = "";
-	magazines[] = {};
-	respawnWeapons[] = {"Throw","Put"};
-	respawnMagazines[] = {};
-	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
-	canHideBodies = 1;
-	canCarryBackPack = 1;
+	model = "\ca\characters2\USMC\FR_Scout3";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\characters2\USMC\DATA\FR_Scout3_Body.RVmat","Ca\characters2\USMC\DATA\W1_FR_Scout3_body.rvmat","Ca\characters2\USMC\DATA\W2_FR_Scout3_body.rvmat","Ca\characters2\USMC\DATA\FR_Scout3_Gear.RVmat","Ca\characters2\USMC\DATA\W1_FR_Scout3_Gear.RVmat","Ca\characters2\USMC\DATA\W2_FR_Scout3_Gear.RVmat"};
+	};	
 };
 
 class CamoWinter_DZ: Survivor_DZ {
-    side = 1;
     scope = public;
     displayName = $STR_EPOCH_SKINS_THERMOSUITMAN;
     model = "\nst\ns_dayz\characters\cw\camowinter_dzn.p3d";
@@ -1207,63 +1009,64 @@ class CamoWinterW_DZ: CamoWinter_DZ {
 };
 
 class Sniper1W_DZ: Sniper1_DZ {
-	side = 1;
 	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\nst\ns_dayz\characters\gw\data\ghillie_overall1w_co.paa"};
 };
 
-class Nac_Soldier_DZ: Survivor_DZ {
+class Nac_Soldier_DZ: SoldierHeavy_Base_DZ {
 	scope = public;
-    side = 1;
     displayName = $STR_EPOCH_SKINS_NACSOLDIER;
     model = "\nst\ns_fraction\nac\nac_soldier_1";
 };
 
-class gsc_military_helmet_wdl_DZ : Survivor_DZ {
+class gsc_military_helmet_wdl_DZ : SoldierHeavy_Base_DZ {
 	scope = public;
-	camouflage = 0.8;	
 	displayName = $STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_military_helmet_wdl.p3d";
 	class Wounds {
 		tex[] = {};
 		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
 	};
 };
-class gsc_military_head_wdl_DZ : Survivor_DZ {
-	scope = public;
-	camouflage = 0.8;	
+class gsc_military_head_wdl_DZ : gsc_military_helmet_wdl_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_military_head_wdl.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
-	};
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
-class gsc_military_helmet_grey_DZ : Survivor_DZ {
-	scope = public;
-	camouflage = 0.8;	
+
+class gsc_military_helmet_grey_DZ : gsc_military_helmet_wdl_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_military_helmet_grey.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
-	};
 };
-class gsc_military_head_grey_DZ : Survivor_DZ {
-	scope = public;
-	camouflage = 0.8;	
+class gsc_military_head_grey_DZ : gsc_military_helmet_wdl_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_military_head_grey.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
-	};
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};		
 };
+
 class gsc_scientist1_DZ : Survivor_DZ {
 	scope = public;	
 	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME;
@@ -1274,43 +1077,29 @@ class gsc_scientist1_DZ : Survivor_DZ {
 		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
 	};
 };
-class gsc_scientist1_head_DZ : Survivor_DZ {
-	scope = public;	
+
+class gsc_scientist1_head_DZ : gsc_scientist1_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST1_HEAD_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_suit_head.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
-	};
 };
-class gsc_scientist2_DZ : Survivor_DZ {
-	scope = public;
+
+class gsc_scientist2_DZ : gsc_scientist1_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST2_MASK_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_suit2.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
-	};
 };
-class gsc_scientist2_head_DZ : Survivor_DZ {
-	scope = public;
+
+class gsc_scientist2_head_DZ : gsc_scientist1_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST2_HEAD_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_suit2_head.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
-	};
 };
+
 class gsc_cloth_loner_head_DZ : Survivor_DZ {
 	scope = public;
 	displayName = $STR_DZE_SKIN_STALKER_ROOKIE_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_cloth_loner_head.p3d";
 };
-class gsc_eco_stalker_mask_neutral_DZ : Survivor_DZ {
+
+class gsc_eco_stalker_mask_neutral_DZ : SoldierLight_Base_DZ {
 	scope = public;
 	displayName = $STR_DZE_SKIN_STALKER_LONER_MASK_NAME;
 	side = 1;
@@ -1320,107 +1109,106 @@ class gsc_eco_stalker_mask_neutral_DZ : Survivor_DZ {
 		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
 	};
 };
-class gsc_eco_stalker_head_neutral_DZ : Survivor_DZ {
-	scope = public;
+class gsc_eco_stalker_head_neutral_DZ : gsc_eco_stalker_mask_neutral_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_LONER_HEAD_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_stalker_head.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
-	};
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};		
 };
-class gsc_eco_stalker_mask_fred_DZ : Survivor_DZ {
-	scope = public;
+class gsc_eco_stalker_mask_fred_DZ : gsc_eco_stalker_mask_neutral_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_stalker_mask_fred.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
-	};
 };
-class gsc_eco_stalker_head_fred_DZ : Survivor_DZ {
-	scope = public;
+class gsc_eco_stalker_head_fred_DZ : gsc_eco_stalker_mask_neutral_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_FREEDOM_HEAD_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_stalker_head_fred.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
-	};
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};		
 };
-class gsc_eco_stalker_mask_duty_DZ : Survivor_DZ {
-	scope = public;
+class gsc_eco_stalker_mask_duty_DZ : gsc_eco_stalker_mask_neutral_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_DUTY_MASK_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_stalker_mask_duty.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
-	};
 };
-class gsc_eco_stalker_head_duty_DZ : Survivor_DZ {
-	scope = public;
+class gsc_eco_stalker_head_duty_DZ : gsc_eco_stalker_mask_neutral_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_DUTY_HEAD_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_stalker_head_duty.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
-	};
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};		
 };
-class gsc_eco_stalker_mask_camo_DZ : Survivor_DZ {
-	scope = public;
+class gsc_eco_stalker_mask_camo_DZ : gsc_eco_stalker_mask_neutral_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_MONOLITH_MASK_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_stalker_mask_camo.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
-	};
 };
-class gsc_eco_stalker_head_camo_DZ : Survivor_DZ {
-	scope = public;
+class gsc_eco_stalker_head_camo_DZ : gsc_eco_stalker_mask_neutral_DZ {
 	displayName = $STR_DZE_SKIN_STALKER_MONOLITH_HEAD_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_stalker_head_camo1.p3d";
-	class Wounds {
-		tex[] = {};
-		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
-	};
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};		
 };
 
 class GhillieFull_Desert01_DZ: Sniper1_DZ {
 	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert01.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Desert02_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+class GhillieFull_Desert02_DZ: GhillieFull_Desert01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert02.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Desert03_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+class GhillieFull_Desert03_DZ: GhillieFull_Desert01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert03.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Desert04_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+class GhillieFull_Desert04_DZ: GhillieFull_Desert01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert04.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Desert05_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+class GhillieFull_Desert05_DZ: GhillieFull_Desert01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert05.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Desert06_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+class GhillieFull_Desert06_DZ: GhillieFull_Desert01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert06.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Desert07_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+class GhillieFull_Desert07_DZ: GhillieFull_Desert01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert07.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Desert08_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
+class GhillieFull_Desert08_DZ: GhillieFull_Desert01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\desert\Skin_GhillieFull_Desert08.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
 //new snow ghillies
@@ -1428,20 +1216,16 @@ class GhillieFull_Snow01_DZ: Sniper1_DZ {
 	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow01.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Snow02_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+class GhillieFull_Snow02_DZ: GhillieFull_Snow01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow02.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Snow03_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+class GhillieFull_Snow03_DZ: GhillieFull_Snow01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow03.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Snow04_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+class GhillieFull_Snow04_DZ: GhillieFull_Snow01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow04.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Snow05_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
+class GhillieFull_Snow05_DZ: GhillieFull_Snow01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\snow\Skin_GhillieFull_Snow05.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
 //new urban ghillies
@@ -1454,71 +1238,55 @@ class GhillieFull_Wood01_DZ: Sniper1_DZ {
 	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood01.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood02_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood02_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood02.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood03_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood03_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood03.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood04_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood04_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood04.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood05_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood05_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood05.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood06_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood06_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood06.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood07_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood07_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood07.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood08_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood08_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood08.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood09_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood09_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood09.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood10_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood10_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood10.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood11_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood11_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood11.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood12_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood12_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood12.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood13_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood13_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood13.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood14_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood14_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood14.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood15_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood15_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood15.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
-class GhillieFull_Wood16_DZ: Sniper1_DZ {
-	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
+class GhillieFull_Wood16_DZ: GhillieFull_Wood01_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ghillies\wood\Skin_GhillieFull_Wood16.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
+
 //KSK Mod Skins
-class GER_Soldier_EP1_des_DZ: Survivor_DZ {
-	scope = public;
-	side = 1;
-	camouflage = 0.8;	
+class GER_Soldier_EP1_des_DZ: SoldierLight_Base_DZ {	
+	scope = public;	
 	displayName = $STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME;
 	model = "\ksk_mod\GER_rifleman_des.p3d";
 };
@@ -1534,12 +1302,11 @@ class GER_Soldier_TL_EP1_wdl_DZ: GER_Soldier_EP1_des_DZ {
 	displayName = $STR_DZE_SKIN_KSK_WDL_TL_NAME;
 	model = "\ksk_mod\GER_rifleman_light_wdl.p3d";
 };
+
 //Ice Apo Mod Skins
-class Apo_Rifleman_01_DZ: Survivor_DZ {
+class Apo_Rifleman_01_DZ: SoldierLight_Base_DZ {
 	scope = public;
-	camouflage = 0.8;	
 	displayName = $STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME;
-	side = 1;
 	model = "\ice_apo_resistance\soldier_hood_medium_beard.p3d";
 	picture = "\Ca\characters\data\Ico\i_null_CA.paa";
 	icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
@@ -1550,6 +1317,18 @@ class Apo_Rifleman_01_DZ: Survivor_DZ {
 };
 class Apo_Rifleman_02_DZ : Apo_Rifleman_01_DZ {
 	model = "\ice_apo_resistance\soldier_helmet_medium.p3d";
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.8;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};		
 };	
 class Apo_Rifleman_03_DZ : Apo_Rifleman_01_DZ {
 	model = "\ice_apo_resistance\soldier_helmet_officer.p3d";
@@ -1568,20 +1347,16 @@ class Apo_Rifleman_06_DZ : Apo_Rifleman_01_DZ {
 	model = "\ice_apo_resistance\soldier_tank_light_clean.p3d";
 };
 
-class SG_GRU_TL_DZ : Survivor_DZ {
+class SG_GRU_TL_DZ : SoldierLight_Base_DZ {
 	scope = public;
 	displayName = $STR_DZE_SKIN_SG_GRU_DT_TL_NAME;
-	camouflage = 0.8;
 	model = "\SG_GRU\Soldier_Gorka_1.p3d";
-	picture = "\Ca\characters\data\Ico\i_null_CA.paa";
-	icon = "\Ca\characters2\data\icon\i_soldier_CA.paa";
-
 	class Wounds {
 		tex[] = {};
 		mat[] = {"ca\characters2\indepins\data\soldier_flecktarn.rvmat", "sg_gru\data\wounds\gorka_body_w1.rvmat", "sg_gru\data\wounds\gorka_body_w2.rvmat", "ca\characters2\rus\data\soldier_specnaz_partizan.rvmat", "sg_gru\data\wounds\gorka_legs_w1.rvmat", "sg_gru\data\wounds\gorka_legs_w2.rvmat"};
 	};
 };
-class SG_GRU_Scout_DZ : SG_GRU_TL_DZ {
+class SG_GRU_Scout_DZ : SG_GRU_TL_DZ {	
 	displayName = $STR_DZE_SKIN_SG_GRU_DT_SCOUT_NAME;
 	model = "\SG_GRU\Soldier_Gorka_2.p3d";
 };
@@ -1629,26 +1404,11 @@ class SG_GRU_MG_D_DZ : SG_GRU_TL_DZ {
 	model = "\SG_GRU\Soldier_gorkaD_7.p3d";
 	displayName = $STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME;
 };
-class CZ_Soldier805_DES_ACR_DZ : Survivor_DZ {
+class CZ_Soldier805_DES_ACR_DZ : SoldierHeavy_Base_DZ {
 	scope = public;	
 	displayName = $STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME;
 	model = "\Ca\Characters_ACR\acr_dst_805";
-	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";
-	picture = "\Ca\characters\data\Ico\i_null_CA";
-	icon = "\Ca\characters2\data\icon\i_soldier_CA";	
-	camouflage = 1;
-	class HitPoints: HitPoints
-	{
-		class HitHead: HitHead
-		{
-			armor = 0.7;
-		};
-		class HitBody: HitBody
-		{
-			armor = 1;
-			passThrough = 0.8;
-		};
-	};	
+	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";	
 	class Wounds
 	{
 		tex[] = {};
@@ -1691,9 +1451,19 @@ class CZ_Soldier_Crew_Dst_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 class CZ_Soldier_Officer_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 	displayName = $STR_DZE_EQUIP_ACR_OFFICER_NAME;
 	portrait = "\Ca\characters\data\portraits\comBarHead_ru_spec_com_ca";
-	picture = "\Ca\characters\data\Ico\i_off_CA";
-	icon = "\Ca\characters2\data\icon\i_officer_CA";
 	model = "\Ca\Characters_ACR\acr_wdl_officer";
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
 class CZ_Soldier_Recon_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 	displayName = $STR_DZE_EQUIP_ACR_SPFORCE_NAME;
@@ -1704,17 +1474,52 @@ class CZ_Soldier_Spec1_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 	displayName = $STR_DZE_EQUIP_ACR_RECON_NAME;
 	model = "\Ca\Characters_ACR\acr_wdl_spec1";
 	portrait = "\Ca\characters\data\portraits\comBarHead_fr_soldier_ca";
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };	
 class CZ_Soldier_Spec2_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 	displayName = $STR_DZE_EQUIP_ACR_SAPPER_NAME;
 	model = "\Ca\Characters_ACR\acr_wdl_spec2";
 	portrait = "\Ca\characters\data\portraits\comBarHead_fr_soldier_ca";
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };	
 class CZ_Soldier_Spec3_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 	displayName = $STR_DZE_EQUIP_ACR_ASSAULT_NAME;
 	model = "\Ca\Characters_ACR\acr_wdl_spec3";
 	portrait = "\Ca\characters\data\portraits\comBarHead_fr_soldier_ca";
-	icon = "\Ca\characters2\data\icon\i_machinegunner_CA";
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
 class CZ_Soldier_Spec_Demo_Dst_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 	displayName = $STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME;
@@ -1730,6 +1535,18 @@ class CZ_Soldier_Light_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 	displayName = $STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME;
 	model = "\Ca\Characters_ACR\acr_wdl_light";
 	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca";
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.5;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
 };
 
 class Firefighter1_DZ : Survivor_DZ {

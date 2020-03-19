@@ -2,6 +2,8 @@ class SkinBase : CA_Magazine
 {
 	count = 1;
 	type = WeaponSlotItem;
+	sex = "male";
+	playerModel = "Survivor2_DZ";
 	
 	model = "\dayz_equip\models\cloth_parcel.p3d";
 	picture = "\dayz_equip\textures\equip_cloth_parcel_ca.paa";
@@ -44,8 +46,4 @@ class SkinBase : CA_Magazine
 	weight = 1;
 };
 
-#include "Ghillie.hpp"
-#include "Camo.hpp"
-#include "Soldier.hpp"
-#include "Survivor.hpp"
 #include "EpochSkins.hpp"

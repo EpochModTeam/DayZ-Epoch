@@ -42,14 +42,14 @@ if ( (isClass(_config >> _itemNew)) ) then {
 	if ( (isClass(_config >> _item)) ) then {
 		// Current sex of player skin
 		
-		_currentSex = getText (configFile >> "CfgSurvival" >> "Skins" >> _itemNew >> "sex");
+		_currentSex = getText (configFile >> "CfgMagazines" >> _itemNew >> "sex");
 		// Sex of new skin
-		_newSex = getText (configFile >> "CfgSurvival" >> "Skins" >> _item >> "sex");
+		_newSex = getText (configFile >> "CfgMagazines" >> _item >> "sex");
 		//diag_log ("Debug Clothes: sex In: " + str(_currentSex) + " Out: " + str(_newSex));
 
 		if(_currentSex == _newSex) then {
 			// Get model name from config
-			_model = getText (configFile >> "CfgSurvival" >> "Skins" >> _item >> "playerModel");
+			_model = getText (configFile >> "CfgMagazines" >> _item >> "playerModel");
 			if (_model != _myModel) then {
 				if(([player,_item] call BIS_fnc_invRemove) == 1) then {
 					player addMagazine _itemNew;

@@ -106,6 +106,7 @@ class Category_30 {
 	class Skin_Rocker1_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_Rocker3_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_RU_Policeman_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_RU_Policeman2_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_Pilot_EP1_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_Rocker4_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_SurvivorW3_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};

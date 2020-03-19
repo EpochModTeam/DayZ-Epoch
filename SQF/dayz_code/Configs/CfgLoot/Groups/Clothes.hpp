@@ -1,5 +1,6 @@
 clothes[] = {
 	{Loot_MAGAZINE,	1,	Skin_RU_Policeman_DZ},
+	{Loot_MAGAZINE,	1,	Skin_RU_Policeman2_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Pilot_EP1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Functionary1_EP1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Priest_DZ},
@@ -35,7 +36,7 @@ clothes[] = {
 	{Loot_MAGAZINE,	1,	Skin_Postman4_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Hunter_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Gardener_DZ},
-	{Loot_MAGAZINE,	1,	Skin_SchoolTeacher_DZ},
+	{Loot_MAGAZINE,	1,	Skin_SchoolTeacher_DZ}
 };
 
 // These should probably be split up into separate groups.
@@ -175,7 +176,6 @@ militaryclothes[] = {
 	{Loot_MAGAZINE,	1,	Skin_SG_GRU_TL_D_DZ},
 	{Loot_MAGAZINE,	1,	Skin_SG_GRU_Scout_D_DZ},
 	{Loot_MAGAZINE,	1,	Skin_SG_GRU_Marksman_D_DZ},
-	{Loot_MAGAZINE,	1,	Skin_SG_GRU_Medic_D_DZ},
 	{Loot_MAGAZINE,	1,	Skin_SG_GRU_Operator_D_DZ},
 	{Loot_MAGAZINE,	1,	Skin_SG_GRU_MG_D_DZ},
 	{Loot_MAGAZINE,	1,	Skin_CZ_Soldier805_DES_ACR_DZ},

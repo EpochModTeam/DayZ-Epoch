@@ -20212,17 +20212,17 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER1">
 			<English>Police Officer 1</English>
-			<German>Polizei Offizier 1</German>
+			<German>Polizist 1</German>
 			<Russian>сотрудника полиции 1</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_SKINS_POLICE_DESC">
 			<English>Police Officer Uniform</English>
-			<German>Polizei Offizier Uniform</German>
+			<German>Polizeiuniform</German>
 			<Russian>Униформа сотрудника полиции</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER2">
 			<English>Police Officer 2</English>
-			<German>Polizei Offizier 2</German>
+			<German>Polizist 2</German>
 			<Russian>сотрудника полиции 2</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_SKINS_ETHAN">
@@ -21308,6 +21308,11 @@
 		<Key ID="STR_DZE_EQUIP_HUNTER_NAME">
 			<English>Hunter</English>
 			<German>Jäger</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_POLICE_OFFICER">
+			<English>Police Officer</English>
+			<German>Polizist</German>
+			<Russian>сотрудника полиции</Russian>
 		</Key>			
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER1_NAME">
 			<English>Firefighter 1</English>
