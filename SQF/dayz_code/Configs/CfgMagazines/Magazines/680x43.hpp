@@ -9,17 +9,17 @@ class ACR_30Rnd_680x43: CA_Magazine
 	tracersEvery = 0;
 	model = "\FHQ_Remington\acr\magazine.p3d";	
 	count = 30;
-
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};
 };
-class ACR_30Rnd_680x43_SD: CA_Magazine
+class ACR_30Rnd_680x43_SD: ACR_30Rnd_680x43
 {
-	scope = 2;
 	displayName = $STR_DZ_MAG_30RND_ACRSD_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_ACRSD_DESC;
 	picture = "\FHQ_Remington\ammo\ui\i_30rndpmag.paa";
 	ammo = "B_680x43_SD";
-	initSpeed = 420;
-	tracersEvery = 0;
-	model = "\FHQ_Remington\acr\magazine.p3d";	
-	count = 30;
+	initSpeed = 420;	
 };
