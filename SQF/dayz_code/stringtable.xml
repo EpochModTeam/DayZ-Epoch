@@ -9491,6 +9491,10 @@
 		<Key ID="STR_ZNAME_GARDENER">
 			<English>Infected Gardener</English>
 			<German>Infizierter Gärtner</German>
+		</Key>
+		<Key ID="STR_ZNAME_SCIENTIST">
+			<English>Infected Scientist</English>
+			<German>Infizierter Wissenschaftler</German>
 		</Key>			
 	</Package>
 	<Package name="construction">

@@ -1070,7 +1070,6 @@ class gsc_military_head_grey_DZ : gsc_military_helmet_wdl_DZ {
 class gsc_scientist1_DZ : Survivor_DZ {
 	scope = public;	
 	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME;
-	side = 1;
 	model = "\gsc_stalker\gsc_eco_suit.p3d";
 	class Wounds {
 		tex[] = {};

@@ -1538,3 +1538,295 @@ class z_postman4: z_postman1 {
 	};
 };
 
+class z_warmclothes1 : z_soldier { 
+	model = "\nst\ns_dayz\characters\cw\camowinter_dzn.p3d";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters2\rus\data\soldier_specnaz_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_partizan_w2.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w2.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w1.rvmat","ca\characters2\rus\data\soldier_specnaz_back_partizan_w2.rvmat","ca\characters2\rus\data\soldier_speccom.RVmat","ca\characters2\rus\data\soldier_speccom_w1.RVmat","ca\characters2\rus\data\soldier_speccom_w2.RVmat"};
+	};
+};
+
+class z_warmclothes2 : z_warmclothes1 { 
+	model = "\nst\ns_dayz\characters\cw\camowinterw_dzn.p3d";
+};
+
+class z_stalker_wdl_military : z_soldier { 
+	model = "\gsc_stalker\gsc_military_head_wdl.p3d";
+	zombieLoot = ZombieStalkerMilitary;
+	
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\military.rvmat", "gsc_stalker\military_wound1.rvmat", "gsc_stalker\military_wound2.rvmat"};
+	};
+	class HitPoints : HitPoints {
+		class HitHead {
+			armor = 0.7;
+			material = -1;
+			name = "head_hit";
+			passThrough = true;
+		};
+		
+		class HitBody {
+			armor = 10;
+			material = -1;
+			name = "body";
+			passThrough = true;
+		};
+		
+		class HitHands {
+			armor = 1;
+			material = -1;
+			name = "hands";
+			passThrough = true;
+		};
+		
+		class HitLegs {
+			armor = 1;
+			material = -1;
+			name = "legs";
+			passThrough = true;
+		};
+	};	
+};
+class z_stalker_helmet_wdl_military : z_stalker_wdl_military { 
+	model = "\gsc_stalker\gsc_military_helmet_wdl.p3d";
+	class HitPoints : HitPoints {
+		class HitHead {
+			armor = 1;
+			material = -1;
+			name = "head_hit";
+			passThrough = true;
+		};
+		
+		class HitBody {
+			armor = 10;
+			material = -1;
+			name = "body";
+			passThrough = true;
+		};
+		
+		class HitHands {
+			armor = 1;
+			material = -1;
+			name = "hands";
+			passThrough = true;
+		};
+		
+		class HitLegs {
+			armor = 1;
+			material = -1;
+			name = "legs";
+			passThrough = true;
+		};
+	};	
+};
+
+class z_stalker_grey_military : z_stalker_wdl_military { 
+	model = "\gsc_stalker\gsc_military_head_grey.p3d";
+};
+
+class z_stalker_helmet_grey_military : z_stalker_helmet_wdl_military { 
+	model = "\gsc_stalker\gsc_military_helmet_grey.p3d";
+};
+
+class z_stalker_neutral : z_stalker_wdl_military { 
+	model = "\gsc_stalker\gsc_eco_stalker_head.p3d";
+	zombieLoot = ZombieStalkerNeutral;
+	
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};	
+};
+
+class z_stalker_mask_neutral : z_stalker_helmet_wdl_military { 
+	model = "\gsc_stalker\gsc_eco_stalker_mask.p3d";
+	zombieLoot = ZombieStalkerNeutral;
+	
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\stalker.rvmat", "gsc_stalker\stalker_wound1.rvmat", "gsc_stalker\stalker_wound2.rvmat"};
+	};	
+};
+
+class z_stalker_freedom : z_stalker_neutral { 
+	model = "\gsc_stalker\gsc_eco_stalker_head_fred.p3d";
+	zombieLoot = ZombieStalkerFreedom;
+};
+
+class z_stalker_mask_freedom : z_stalker_mask_neutral { 
+	model = "\gsc_stalker\gsc_eco_stalker_mask_fred.p3d";
+	zombieLoot = ZombieStalkerFreedom;
+};
+
+class z_stalker_duty : z_stalker_neutral { 
+	model = "\gsc_stalker\gsc_eco_stalker_head_fred.p3d";
+	zombieLoot = ZombieStalkerDuty;
+};
+
+class z_stalker_mask_duty : z_stalker_mask_neutral { 
+	model = "\gsc_stalker\gsc_eco_stalker_mask_fred.p3d";
+	zombieLoot = ZombieStalkerDuty;
+};
+
+class z_stalker_monolith : z_stalker_neutral { 
+	model = "\gsc_stalker\gsc_eco_stalker_head_camo1.p3d";
+	zombieLoot = ZombieStalkerMonolith;
+};
+
+class z_stalker_mask_monolith : z_stalker_mask_neutral { 
+	model = "\gsc_stalker\gsc_eco_stalker_mask_camo.p3d";
+	zombieLoot = ZombieStalkerMonolith;
+};
+
+
+class z_stalker_scientist1 : z_soldier { 
+	model = "\gsc_stalker\gsc_eco_suit_head.p3d";
+	displayName = $STR_ZNAME_SCIENTIST;
+	zombieLoot = ZombieStalkerScientist;
+
+	class Wounds {
+		tex[] = {};
+		mat[] = {"gsc_stalker\scien.rvmat", "gsc_stalker\scien_wound1.rvmat", "gsc_stalker\scien_wound2.rvmat"};
+	};
+	class HitPoints : HitPoints {
+		class HitHead {
+			armor = 0.5;
+			material = -1;
+			name = "head_hit";
+			passThrough = true;
+		};
+		
+		class HitBody {
+			armor = 4;
+			material = -1;
+			name = "body";
+			passThrough = true;
+		};
+		
+		class HitHands {
+			armor = 1;
+			material = -1;
+			name = "hands";
+			passThrough = true;
+		};
+		
+		class HitLegs {
+			armor = 1;
+			material = -1;
+			name = "legs";
+			passThrough = true;
+		};
+	};	
+	
+};
+class z_stalker_helmet_scientist1 : z_stalker_scientist1 { 
+	model = "\gsc_stalker\gsc_eco_suit.p3d";
+	class HitPoints : HitPoints {
+		class HitHead {
+			armor = 0.8;
+			material = -1;
+			name = "head_hit";
+			passThrough = true;
+		};
+		
+		class HitBody {
+			armor = 4;
+			material = -1;
+			name = "body";
+			passThrough = true;
+		};
+		
+		class HitHands {
+			armor = 1;
+			material = -1;
+			name = "hands";
+			passThrough = true;
+		};
+		
+		class HitLegs {
+			armor = 1;
+			material = -1;
+			name = "legs";
+			passThrough = true;
+		};
+	};		
+};
+
+class z_stalker_scientist2 : z_stalker_scientist1 { 
+	model = "\gsc_stalker\gsc_eco_suit2_head.p3d";
+};
+
+class z_stalker_helmet_scientist2 : z_stalker_helmet_scientist1 { 
+	model = "\gsc_stalker\gsc_eco_suit2.p3d";
+};
+
+class z_apo_rifle1: z_soldier {
+	model = "\ice_apo_resistance\soldier_hood_medium_beard.p3d";
+	zombieLoot = ZombieApoViral;
+	
+	class Wounds {
+		tex[] = {};
+		mat[] = {"ice_apo_resistance\data\us_soldier_sabot_body.rvmat", "ice_apo_resistance\data\us_soldier_sabot_body_wound1.rvmat", "ice_apo_resistance\data\us_soldier_sabot_body_wound2.rvmat", "ice_apo_resistance\data\civil_tshirt_body.rvmat", "ice_apo_resistance\data\civil_tshirt_body_wound1.rvmat", "ice_apo_resistance\data\civil_tshirt_body_wound2.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_white.rvmat", "CA\characters\Heads\Male\DefaultHead\data\hhl_white_wounds.rvmat", "CA\characters\Heads\Male\DefaultHead\data\hhl_white_wounds2.rvmat"};
+	};
+};
+
+class z_apo_rifle2: z_apo_rifle1 {
+	model = "\ice_apo_resistance\soldier_helmet_medium.p3d";
+	zombieLoot = ZombieApo;
+	
+	class HitPoints: HitPoints
+	{
+		class HitHead: HitHead
+		{
+			armor = 0.8;
+		};
+		class HitBody: HitBody
+		{
+			armor = 1;
+			passThrough = 0.8;
+		};
+	};	
+};
+
+class z_apo_rifle3: z_apo_rifle1 {
+	model = "\ice_apo_resistance\soldier_helmet_officer.p3d";
+	zombieLoot = ZombieApo;
+	
+	class Wounds {
+		tex[] = {};
+		mat[] = {"ice_apo_resistance\data\armysf_tl.rvmat", "ice_apo_resistance\data\armysf_tl_wound1.rvmat", "ice_apo_resistance\data\armysf_tl_wound2.rvmat", "ca\characters\heads\male\defaulthead\data\hhl_white.rvmat", "CA\characters\Heads\Male\DefaultHead\data\hhl_white_wounds.rvmat", "CA\characters\Heads\Male\DefaultHead\data\hhl_white_wounds2.rvmat"};
+	};	
+};
+
+class z_apo_rifle4: z_apo_rifle1 {
+	model = "\ice_apo_resistance\soldier_hat_medium_clean.p3d";	
+	zombieLoot = ZombieApo;	
+};
+
+class z_apo_rifle5: z_apo_rifle1 {
+	model = "\ice_apo_resistance\soldier_mask_medium.p3d";	
+	zombieLoot = ZombieApo;	
+};
+
+class z_apo_rifle6: z_apo_rifle1 {
+	model = "\ice_apo_resistance\soldier_tank_light_clean.p3d";	
+	zombieLoot = ZombieApo;
+};
+
+class z_soldier_acr_rifle1: z_soldier {
+	model = "\Ca\Characters_ACR\acr_wdl_spec3";
+	zombieLoot = ZombieSpecialForces;
+	
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\Characters_ACR\Data\acr_dst_805.rvmat","Ca\Characters_ACR\Data\acr_dst_805_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_805_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_805g.rvmat","Ca\Characters_ACR\Data\acr_dst_805g_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_805g_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_crew.rvmat","Ca\Characters_ACR\Data\acr_dst_crew_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_crew_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_leader.rvmat","Ca\Characters_ACR\Data\acr_dst_leader_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_leader_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_medic.rvmat","Ca\Characters_ACR\Data\acr_dst_medic_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_medic_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_mg.rvmat","Ca\Characters_ACR\Data\acr_dst_mg_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_mg_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_officer.rvmat","Ca\Characters_ACR\Data\acr_dst_officer_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_officer_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_spec1.rvmat","Ca\Characters_ACR\Data\acr_dst_spec1_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_spec1_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_spec2.rvmat","Ca\Characters_ACR\Data\acr_dst_spec2_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_spec2_d2.rvmat","Ca\Characters_ACR\Data\acr_dst_spec3.rvmat","Ca\Characters_ACR\Data\acr_dst_spec3_d1.rvmat","Ca\Characters_ACR\Data\acr_dst_spec3_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_805.rvmat","Ca\Characters_ACR\Data\acr_wld_805_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_805_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_805g.rvmat","Ca\Characters_ACR\Data\acr_wld_805g_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_805g_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_crew.rvmat","Ca\Characters_ACR\Data\acr_wld_crew_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_crew_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_leader.rvmat","Ca\Characters_ACR\Data\acr_wld_leader_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_leader_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_medic.rvmat","Ca\Characters_ACR\Data\acr_wld_medic_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_medic_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_mg.rvmat","Ca\Characters_ACR\Data\acr_wld_mg_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_mg_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_officer.rvmat","Ca\Characters_ACR\Data\acr_wld_officer_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_officer_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_rec1.rvmat","Ca\Characters_ACR\Data\acr_wld_rec1_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_rec1_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_soldier.rvmat","Ca\Characters_ACR\Data\acr_wld_soldier_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_soldier_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_spec1.rvmat","Ca\Characters_ACR\Data\acr_wld_spec1_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_spec1_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_spec2.rvmat","Ca\Characters_ACR\Data\acr_wld_spec2_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_spec2_d2.rvmat","Ca\Characters_ACR\Data\acr_wld_spec3.rvmat","Ca\Characters_ACR\Data\acr_wld_spec3_d1.rvmat","Ca\Characters_ACR\Data\acr_wld_spec3_d2.rvmat","Ca\Characters_ACR\Data\acr_light.rvmat","Ca\Characters_ACR\Data\acr_light_d1.rvmat","Ca\Characters_ACR\Data\acr_light_d2.rvmat","Ca\Characters_ACR\Data\acr_pilot.rvmat","Ca\Characters_ACR\Data\acr_pilot_d1.rvmat","Ca\Characters_ACR\Data\acr_pilot_d2.rvmat","Ca\Characters_ACR\Data\acr_soldier.rvmat","Ca\Characters_ACR\Data\acr_soldier_d1.rvmat","Ca\Characters_ACR\Data\acr_soldier_d2.rvmat","Ca\Characters_ACR\Data\acr_soldier_2.rvmat","Ca\Characters_ACR\Data\acr_soldier_2_d1.rvmat","Ca\Characters_ACR\Data\acr_soldier_2_d2.rvmat"};
+	};
+};
+
+class z_soldier_acr_rifle2: z_soldier_acr_rifle1 {
+	model = "\Ca\Characters_ACR\acr_wdl_light";
+	zombieLoot = ZombieMilitary;
+};

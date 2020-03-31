@@ -6,7 +6,6 @@ class Military : Default
 	{
 		"z_soldier",
 		"z_soldier",
-		"z_soldier",
 		"z_policeman",
 		"z_policeman2",
 		"z_soldier_heavy",
@@ -18,7 +17,10 @@ class Military : Default
 		"z_soldier_ru_commander",
 		"z_soldier_ru_specialforces",
 		"z_soldier_ru_soldier",
-		"z_soldier_ru_soldier_heavy"
+		"z_soldier_ru_soldier_heavy",
+		"z_soldier_acr_rifle1",
+		"z_soldier_acr_rifle2",
+		"z_soldier_acr_rifle2"
 	};
 	lootChance = 0.55;
 	lootGroup = Military;
@@ -32,6 +34,7 @@ class MilitaryIndustrial: Military
 		"z_soldier",
 		"z_soldier_heavy",
 		"z_soldier",
+		"z_soldier_acr_rifle2",
 		"z_worker1",
 		"z_worker2",
 		"z_worker3",
@@ -68,7 +71,9 @@ class Land_Mil_ControlTower: Military
 		"z_soldier",
 		"z_soldier",
 		"z_policeman",
-		"z_soldier_ru_officer"
+		"z_soldier_ru_officer",
+		"z_soldier_acr_rifle2",
+		"z_soldier_acr_rifle2"
 	};
 	zedPos[] = {{10.0703,3.76367,-9.62869},{1.75195,5.68164,-5.51373},{3.85254,3.53516,-5.50372},{6.66113,-0.625488,-1.0787},{6.72266,3.23389,-1.0787},{2.63965,-0.191406,-1.0687}};
 	lootPos[] = {{3.41,-3.29,-5.5},{9.5,-3.63,-5.5},{8.25,-2.09,-9.64},{-0.01,1.93,-9.64},{-1.96,-3.36,-9.64},{-8.37,-3.53,-9.64},{-6.19,-0.04,-8.83},{-5.49,-3.16,-8.83},{-1.92,0.06,-10.19},{-1.92,0.06,-10.19},{-2.12,-0.01,-9.64},{9.35,6.05,-9.65},{2.6,3.76,-5.5},{7.58,2.04,-0.38},{2.22,-0.87,-1.07},{5.15,-1.88,-0.39},{2.79688,-3.91602,-9.64148}};
@@ -82,6 +87,7 @@ class Land_SS_hangar: MilitaryIndustrial
 		"z_soldier_pilot",
 		"z_soldier_heavy",
 		"z_soldier_pilot",
+		"z_soldier_acr_rifle2",
 		"z_soldier_heavy",
 		"z_worker1",
 		"z_worker2",
@@ -105,6 +111,7 @@ class Land_A_TVTower_Base: Military
 	{
 		"z_soldier",
 		"z_soldier",
+		"z_soldier_acr_rifle2",
 		"z_policeman"
 	};
 	zedPos[] = {{-0.95166,1.48047,-2.31586},{-2.01782,-4.24121,-2.30939},{-0.982422,-1.92383,-2.25586}};
@@ -119,6 +126,8 @@ class Land_Mil_House: Military
 		"z_soldier",
 		"z_soldier",
 		"z_policeman",
+		"z_soldier_acr_rifle2",
+		"z_soldier_acr_rifle2",
 		"z_soldier_ru_ghillie",
 		"z_soldier_ru_specnaz",
 		"z_soldier_ru_commander",
