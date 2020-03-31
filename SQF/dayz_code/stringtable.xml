@@ -22841,7 +22841,12 @@
 		<Key ID="STR_EPOCH_VECTORS_DEGREES">
 			<English>DEGREES:</English>
 			<German>Grad:</German>
-		</Key>		
+		</Key>	
+		
+		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
+		<Key ID="STR_FAL_Street_Sign">
+			<English>Street Sign</English>
+		</Key>			
 		
 		<!--Namalsk compatibility-->
 		<Key ID="STR_EQUIP_NAME_43">
