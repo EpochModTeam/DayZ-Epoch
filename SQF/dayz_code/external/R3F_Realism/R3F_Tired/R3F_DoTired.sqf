@@ -38,15 +38,15 @@ while {true} do {
 				R3F_TIRED_Ratio_Overweight = R3F_TIRED_WEIGHT_RATIO1;
 			} else {
 				R3F_TIRED_Ratio_Overweight = R3F_TIRED_WEIGHT_RATIO2;
-			};			
+			};
 		} else {
 			R3F_TIRED_Ratio_Overweight = R3F_TIRED_WEIGHT_RATIO3;
-		};		
-	} else {	
+		};
+	} else {
 		R3F_TIRED_Ratio_Overweight = R3F_TIRED_WEIGHT_RATIO4;
-	};	
-		 
-	if (alive player) then {	
+	};
+
+	if (alive player) then {
 		switch (toArray (animationState player) select 5) do {
 			case 112: {
 				R3F_TIRED_Ratio_Position = R3F_TIRED_DOWN_LEVEL;
@@ -58,25 +58,24 @@ while {true} do {
 				R3F_TIRED_Ratio_Position = R3F_TIRED_UP_LEVEL;
 			};
 		};
-	
-		R3F_TIRED_vitesse_de_mon_joueur = [0,0,0] distance velocity player;	
+
+		R3F_TIRED_vitesse_de_mon_joueur = [0,0,0] distance velocity player;
 		R3F_TIRED_coeff_mon_elevation_en_z = 0 max ((velocity player select 2) / R3F_TIRED_WEIGHT_CLIMB_FACTOR);
-		
+
 		_posATL = (getPosATL player) select 2;
-		
-		
-		if((vehicle player == player) && (_posATL < 100)) then {
-			R3F_TIRED_Accumulator =  R3F_TIRED_Accumulator 	
-					+ (R3F_TIRED_POIDS_TOTAL_PLAYER * R3F_TIRED_vitesse_de_mon_joueur * R3F_TIRED_Ratio_Position * R3F_TIRED_WEIGHT_SPEED_RATIO*R3F_TIRED_Ratio_Overweight) 
+
+		if ((vehicle player == player) && {_posATL < 100}) then {
+			R3F_TIRED_Accumulator =  R3F_TIRED_Accumulator
+					+ (R3F_TIRED_POIDS_TOTAL_PLAYER * R3F_TIRED_vitesse_de_mon_joueur * R3F_TIRED_Ratio_Position * R3F_TIRED_WEIGHT_SPEED_RATIO*R3F_TIRED_Ratio_Overweight)
 					+ (R3F_TIRED_POIDS_TOTAL_PLAYER * R3F_TIRED_coeff_mon_elevation_en_z * R3F_TIRED_WEIGHT_LEVEL2);
-				
+
 		};
-		
+
 		R3F_TIRED_Accumulator = 0 max (R3F_TIRED_Accumulator - R3F_TIRED_Ratio_Recovery);
-		
+
 		_level = ((R3F_TIRED_Accumulator / R3F_TIRED_BLACKOUT_LEVEL) *  100);
 		_level = 0 max (1 - (_level / 100));
-		
+
 		#ifdef R3F_TIRED_DEBUG
 			/*hintsilent format["Fatique : %1/%2\nBlack level : %3\nPoids total : %4\n Poids armement : %5",
 				R3F_TIRED_Accumulator,
@@ -85,17 +84,17 @@ while {true} do {
 				R3F_TIRED_POIDS_TOTAL_PLAYER,
 				R3F_Weight];*/
 		#endif
-		
+
 		[_level] call R3F_TIRED_FNCT_Voile_Noir;
 		if (R3F_Weight < 150) then {R3F_TIRED_Accumulator = 0;}; // Reset if player drops most of their gear, so overburden doesn't get stuck on for several minutes after carrying way too much weight.
 		if (R3F_TIRED_Accumulator > R3F_TIRED_BLACKOUT_LEVEL) then { call R3F_TIRED_FNCT_Overburdened; };
-	} else {	
+	} else {
 		R3F_TIRED_Accumulator = 0;
 	};
 
-	if (R3F_TIRED_GLOBAL_TIRING 
-		&& R3F_TIRED_vitesse_de_mon_joueur > 4 
-		&& R3F_TIRED_Ratio_Recovery > R3F_TIRED_RATIO_RECOVERING
+	if (R3F_TIRED_GLOBAL_TIRING
+		&& {R3F_TIRED_vitesse_de_mon_joueur > 4}
+		&& {R3F_TIRED_Ratio_Recovery > R3F_TIRED_RATIO_RECOVERING}
 		) then {
 			R3F_TIRED_Counter_Time= R3F_TIRED_Counter_Time + 1;
 	};
@@ -111,11 +110,11 @@ while {true} do {
 			_level,
 			R3F_Weight,
 			R3F_TIRED_Counter_Time];
-			
-			
+
+
 	_s call FNC_PrintToRPT;
 	#endif
-	
+
 	if ((R3F_TIRED_Counter_Time > R3F_TIRED_TIME_RECOVERING)) then {
 		R3F_TIRED_Ratio_Recovery = R3F_TIRED_Ratio_Recovery - 1;
 		R3F_TIRED_Counter_Time = 0;
@@ -126,4 +125,3 @@ while {true} do {
 };
 
 //[_voil] call R3F_TIRED_FNCT_Effect_Off;
-

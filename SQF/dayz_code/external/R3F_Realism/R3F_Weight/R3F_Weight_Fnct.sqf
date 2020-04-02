@@ -9,29 +9,31 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *****************************************************************************/
 #include "R3F_WEIGHT_Configuration.sqf"
 R3F_WEIGHT_FNCT_MakeSingleArray = {
-	private ["_arr_i","_arr_n", "_arr", "_n", "_nb", "_x"];
+	private ["_arr_i","_arr_n", "_arr", "_n", "_nb"];
+
 	_arr_i = (_this select 0) select 0;
 	_arr_n = (_this select 0) select 1;
-	
 	_arr = [];
-	
+
 	_n = 0;
 	{
 		_nb = _arr_n select _n;
-		for [{_i = 0}, {_i < _nb}, {_i = _i + 1}] do{
-			_arr = _arr + [_x];
+
+		for "_i"  from 1 to _nb do{
+			_arr set [count _arr,_x];
 		};
 		_n = _n + 1;
-		
-	}count _arr_i;
-	
+
+	} count _arr_i;
+
 	_arr;
 };
 
 R3F_WEIGHT_FNCT_GetItemWeight = {
-	private ["_arr_class", "_total_weight", "_weight"];
+	private ["_arr_class", "_total_weight", "_weight","_bagpack","_type"];
+
 	_arr_class = (_this select 0) + (_this select 1);
-	if (dayz_onBack != "" && count _this > 2) then {
+	if (dayz_onBack != "" && {count _this > 2}) then {
 		_arr_class set [count _arr_class, dayz_onBack];
 	};
 	_total_weight = 0;
@@ -46,21 +48,31 @@ R3F_WEIGHT_FNCT_GetItemWeight = {
 				_weight = getNumber(CfgWeight >> "Magazines" >> _x >> "weight");
 				_total_weight = _total_weight + _weight;
 			}else{
-				
+
 				_weight = 0;
 				if(isNumber (configFile >> "cfgMagazines" >> _x >> "weight")) then {
 					_weight = getNumber(configFile >> "cfgMagazines" >> _x >> "weight");
 				};
-				
+
 				if(_weight > 0) then {
 					_total_weight = _total_weight + _weight;
 				} else {
-					// log only if not found 
-					//diag_log format["No R3F weight config for: %1", _x];
-				};				
+					// log only if not found
+					diag_log format["No R3F weight config for: %1", _x];
+				};
 			};
 		};
 	}count _arr_class;
+
+	_bagpack = unitBackpack player;
+	if (!isNull _bagpack) then {
+		_type = typeof _bagpack;
+		if (isclass(CfgWeight >> "Backpacks" >> _type)) then {
+			_weight = getNumber(CfgWeight >> "Backpacks" >> _type >> "weight");
+			_total_weight = _total_weight + _weight;
+		};
+	};
+
 	_total_weight;
 };
 
@@ -81,4 +93,3 @@ R3F_WEIGHT_FNCT_GetWeight = {
 	};
 	_return;
 };
-

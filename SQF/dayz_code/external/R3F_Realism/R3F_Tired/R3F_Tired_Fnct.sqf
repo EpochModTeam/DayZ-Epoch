@@ -15,6 +15,8 @@ FNC_PrintToRPT = {
 };
 
 R3F_TIRED_FNCT_Voile_Noir = {
+	private "_level";
+	
 	_level = _this select 0;
 	if(_level < R3F_TIRED_SHORTNESS_THRESHOLD ) then{
 		playSound "heartbeat_1";
@@ -26,7 +28,7 @@ R3F_TIRED_ForceWalk = false;
 
 R3F_TIRED_FNCT_Overburdened = {
 	[localize "STR_R3F_WEIGHT_Overburdened",1] call dayz_rollingMessages;
-	
+
 	if (!R3F_TIRED_ForceWalk) then {
 		R3F_TIRED_ForceWalk = true;
 		[] spawn {
@@ -37,7 +39,7 @@ R3F_TIRED_FNCT_Overburdened = {
 					if ((abs(_vel select 0)) > 2 || (abs(_vel select 1)) > 2) then {
 						player setVelocity [-(_vel select 0),-(_vel select 1),_vel select 2];
 						player forceWalk true;
-						
+
 					};
 				};
 				uiSleep 0.001;
