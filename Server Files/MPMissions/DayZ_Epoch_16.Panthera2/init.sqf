@@ -29,7 +29,6 @@ if (dayz_presets == "Custom") then {
 	dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
 	dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass 
 	dayz_bleedingeffect = 2; //1 = blood on the ground (negatively impacts FPS), 2 = partical effect, 3 = both
-	dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked
 	dayz_nutritionValuesSystem = true; //true, Enables nutrition system, false, disables nutrition system.
 	dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic ItemBloodbag
 	dayz_enableFlies = false; // Enable flies on dead bodies (negatively impacts FPS).
