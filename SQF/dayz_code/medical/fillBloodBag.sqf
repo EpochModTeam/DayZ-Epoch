@@ -39,17 +39,17 @@ if (vehicle player == player) then {
 	player playActionNow "Medic";
 };
 
-while {r_doLoop and (_i < 25)} do {
+while {r_doLoop && (_i < 25)} do {
 	_animState = animationState player;
 	_isMedic = ["medic",_animState] call fnc_inString;
 
-	if (_isMedic and !_started) then {
+	if (_isMedic && {!_started}) then {
 		player removeMagazine "emptyBloodBag";
 		localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
 		//[player,_victim,"loc",rTITLETEXT,localize "str_actions_medical_transfusion_start","PLAIN DOWN"] call RE;
 		_started = true;
 	};
-	
+
 	if (_started) then {
 		if ((diag_tickTime - _timer) >= 1) then {
 			_timer = diag_tickTime;
@@ -93,8 +93,8 @@ if (_complete) then {
 	if (dayz_classicBloodBagSystem) then {
 		player addMagazine "ItemBloodbag";
 	} else {
-		switch (_bloodType) do {
-			case "A" : {
+		call {
+			if (_bloodType == "A") exitwith {
 				if (_rh) then {
 					player addMagazine "wholeBloodBagAPOS";
 				} else {
@@ -102,7 +102,7 @@ if (_complete) then {
 				};
 			};
 
-			case "B" : {
+			if (_bloodType == "B") exitwith {
 				if (_rh) then {
 					player addMagazine "wholeBloodBagBPOS";
 				} else {
@@ -110,7 +110,7 @@ if (_complete) then {
 				};
 			};
 
-			case "AB" : {
+			if (_bloodType == "AB") exitwith {
 				if (_rh) then {
 					player addMagazine "wholeBloodBagABPOS";
 				} else {
@@ -118,7 +118,7 @@ if (_complete) then {
 				};
 			};
 
-			case "O" : {
+			if (_bloodType == "O") exitwith {
 				if (_rh) then {
 					player addMagazine "wholeBloodBagOPOS";
 				} else {

@@ -17,23 +17,22 @@ _randRh = random 100;
 _randType = random 100;
 _bt_val = nil;
 _rh_val = nil;
-switch true do {
-	case (_randType >= 61) : {
+
+call {
+	if (_randType >= 61) exitwith {
 		_bt_val = "O";
-		_rh_val = if (_randRh >= 89) then { false } else { true };
+		_rh_val = [true,false] select (_randRh >= 89);
 	};
-	case (_randType >= 29) : {
+	if (_randType >= 29) exitwith {
 		_bt_val = "A";
-		_rh_val = if (_randRh >= 89) then { false } else { true };
+		_rh_val = [true,false] select (_randRh >= 89);
 	};
-	case (_randType >= 6) : {
+	if (_randType >= 6) exitwith {
 		_bt_val = "B";
-		_rh_val = if (_randRh >= 94) then { false } else { true };
+		_rh_val = [true,false] select (_randRh >= 94);
 	};
-	default {
-		_bt_val = "AB";
-		_rh_val = if (_randRh >= 91) then { false } else { true };
-	};
+	_bt_val = "AB";
+	_rh_val = [true,false] select (_randRh >= 91);
 };
 //diag_log ["_playerObj BLOOD CALC: Blood Type,Rh Type=", _bt_val, _rh_val];
 

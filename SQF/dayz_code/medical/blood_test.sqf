@@ -2,7 +2,7 @@
 Used to check and display blood type + Rh
 By icomrade for DayZ Mod
 ********************************************************* */
-private ["_unit","_abc","_opened","_water_displayed","_A_Watered","_B_Watered","_allDisplayed","_water_closed","_D_Watered","_control_Watered","_needleOpened","_needleRed","_needleRest","_antiABlooded","_allClicked","_antiBBlooded","_antiDBlooded","_control_displayed","_antiA_displayed","_antiB_displayed","_antiD_displayed","_results_shown","_isDone","_watered","_watered_complete","_isClose","_unit","_hasTester","_dialog","_display","_resultsCard_hidden","_antiA","_AntiB","_AntiD","_Control","_waterBottle","_needle","_name","_resultsCard_front","_antiAUntested","_antiBUntested","_antiDUntested","_controlUntested","_waterBottleImage","_waterBottleClickedImage","_needleClosedImage","_needleOpenImage","_watered_image","_needleRedImage","_bloodTypeCard","_bloodTypeCardHidden","_controlImage","_RBWhole1","_RBWhole2","_RBWhole3","_RBWhole4","_RBWhole5","_Aglut1","_Aglut2","_Aglut3","_Aglut4","_Aglut5","_wholeArray","_aglutArray","_rnd1","_rnd2","_rnd3","_type","_rh"];
+private ["_unit","_abc","_opened","_water_displayed","_A_Watered","_B_Watered","_allDisplayed","_water_closed","_D_Watered","_control_Watered","_needleOpened","_needleRed","_antiABlooded","_allClicked","_antiBBlooded","_antiDBlooded","_control_displayed","_antiA_displayed","_antiB_displayed","_antiD_displayed","_results_shown","_isDone","_watered","_watered_complete","_isClose","_unit","_hasTester","_display","_resultsCard_hidden","_antiA","_AntiB","_AntiD","_Control","_waterBottle","_needle","_name","_resultsCard_front","_antiAUntested","_antiBUntested","_antiDUntested","_controlUntested","_waterBottleImage","_waterBottleClickedImage","_needleClosedImage","_needleOpenImage","_watered_image","_needleRedImage","_bloodTypeCard","_bloodTypeCardHidden","_controlImage","_RBWhole1","_RBWhole2","_RBWhole3","_RBWhole4","_RBWhole5","_Aglut1","_Aglut2","_Aglut3","_Aglut4","_Aglut5","_wholeArray","_aglutArray","_rnd1","_rnd2","_rnd3","_type","_rh"];
 disableSerialization;
 
 //remove option
@@ -33,11 +33,10 @@ _needleRed = false;
 _antiABlooded = false;
 _antiBBlooded = false;
 _antiDBlooded = false;
-_needleRest = false;
 _allClicked = 0;
 if (!_hasTester) exitWith {};
 
-_dialog = createDialog "bloodTest";
+createDialog "bloodTest";
 
 uiSleep 0.02;
 
@@ -102,7 +101,7 @@ _rnd3 = ceil(random 4);
 _type = _unit getVariable ["blood_type", false];
 _rh = _unit getVariable ["rh_factor", false];
 
-while {!_isDone and r_doLoop} do {
+while {!_isDone && r_doLoop} do {
 _watered = r_A_watered or r_B_watered or r_D_watered or r_control_watered;
 
 	//display untested images
@@ -121,30 +120,30 @@ _watered = r_A_watered or r_B_watered or r_D_watered or r_control_watered;
 	};
 
 	//display clicked water bottle image
-	if (r_water_clicked and !_water_displayed) then {
+	if (r_water_clicked && {!_water_displayed}) then {
 		_waterBottle ctrlSetText _waterBottleClickedImage;
 		_water_displayed = true;
 		player removeMagazine "bloodTester";
 	};
 
 	//display water marks
-	if (r_water_clicked and _watered and (_watered_complete <= 4)) then {
-		if (r_A_watered and !_A_Watered) then {
+	if (r_water_clicked && {_watered} && {_watered_complete <= 4}) then {
+		if (r_A_watered && {!_A_Watered}) then {
 			_antiA ctrlSetText _watered_image;
 			_A_Watered = true;
 			_watered_complete = _watered_complete + 1;
 		};
-		if (r_B_watered and !_B_Watered) then {
+		if (r_B_watered && {!_B_Watered}) then {
 			_antiB ctrlSetText _watered_image;
 			_B_Watered = true;
 			_watered_complete = _watered_complete + 1;
 		};
-		if (r_D_watered and !_D_Watered) then {
+		if (r_D_watered && {!_D_Watered}) then {
 			_antiD ctrlSetText _watered_image;
 			_D_Watered = true;
 			_watered_complete = _watered_complete + 1;
 		};
-		if (r_control_watered and !_control_Watered) then {
+		if (r_control_watered && {!_control_Watered}) then {
 			_Control ctrlSetText _watered_image;
 			_control_Watered = true;
 			_watered_complete = _watered_complete + 1;
@@ -152,49 +151,49 @@ _watered = r_A_watered or r_B_watered or r_D_watered or r_control_watered;
 	};
 
 	//open needle
-	if ((r_needleclicked == 1) and !_needleOpened) then {
+	if ((r_needleclicked == 1) && {!_needleOpened}) then {
 		_needle ctrlSetText _needleOpenImage;
 		_needleOpened = true;
 	};
 
 
 	//close water
-	if ((_watered_complete >= 4) and !_water_closed) then {
+	if ((_watered_complete >= 4) && {!_water_closed}) then {
 		_water_closed = true;
 		_waterBottle ctrlSetText _waterBottleImage;
 	};
 	//needle clicked
-	if ((r_needleclicked >= 2) and !_needleRed and _needleOpened and (_watered_complete >= 4) and !r_needleReset) then {
+	if ((r_needleclicked >= 2) && {!_needleRed && {_needleOpened} && {_watered_complete >= 4} && {!r_needleReset}}) then {
 		_needle ctrlSetText _needleRedImage;
 		_needleRed = true;
 	};
 
 	//reset needle
-	if (_needleRed and r_needleReset) then {
+	if (_needleRed && {r_needleReset}) then {
 		_needle ctrlSetText _needleOpenImage;
 		_needleRed = false;
 	};
 
 	//fill with blood
-		if (r_antiA_done and !_antiABlooded and _needleRed) then {
+		if (r_antiA_done && {!_antiABlooded} && {_needleRed}) then {
 			r_needleReset = true;
 			_antiA ctrlSetText _controlImage;
 			_antiABlooded = true;
 			_allClicked = _allClicked + 1;
 		};
-		if (r_antiB_done and !_antiBBlooded and _needleRed) then {
+		if (r_antiB_done && {!_antiBBlooded} && {_needleRed}) then {
 			r_needleReset = true;
 			_antiB ctrlSetText _controlImage;
 			_antiBBlooded = true;
 			_allClicked = _allClicked + 1;
 		};
-		if (r_antiD_done and !_antiDBlooded and _needleRed) then {
+		if (r_antiD_done && {!_antiDBlooded} && {_needleRed}) then {
 			r_needleReset = true;
 			_antiD ctrlSetText _controlImage;
 			_antiDBlooded = true;
 			_allClicked = _allClicked + 1;
 		};
-		if (r_control_done and !_control_displayed and _needleRed) then {
+		if (r_control_done && {!_control_displayed} && {_needleRed}) then {
 			r_needleReset = true;
 			_Control ctrlSetText _controlImage;
 			_control_displayed = true;
@@ -207,106 +206,106 @@ _watered = r_A_watered or r_B_watered or r_D_watered or r_control_watered;
 		};
 	//The magic happens
 if (_allClicked == 4) then {
-	switch (_type) do {
-		case "A" : {
-		if (!_allDisplayed) then {
-			uiSleep 2;
-			if (r_antiA_done and !_antiA_displayed) then {
-				_antiA ctrlSetText (_aglutArray select _rnd1);
-				_antiA_displayed = true;
-			};
-			if (r_antiB_done and !_antiB_displayed) then {
-				_AntiB ctrlSetText (_wholeArray select _rnd2);
-				_antiB_displayed = true;
-			};
-			if (r_antiD_done and !_antiD_displayed) then {
-				if (_rh) then {
-					_AntiD ctrlSetText (_aglutArray select _rnd3);
-				} else {
-					_AntiD ctrlSetText (_wholeArray select _rnd3);
+	call {
+		if (_type == "A") exitwith {
+			if (!_allDisplayed) then {
+				uiSleep 2;
+				if (r_antiA_done && {!_antiA_displayed}) then {
+					_antiA ctrlSetText (_aglutArray select _rnd1);
+					_antiA_displayed = true;
 				};
-				_antiD_displayed = true;
-			};
-			_allDisplayed = true;
-		};
-		};
-		case "B" : {
-		if (!_allDisplayed) then {
-			uiSleep 2;
-			if (r_antiA_done and !_antiA_displayed) then {
-				_antiA ctrlSetText (_wholeArray select _rnd1);
-				_antiA_displayed = true;
-			};
-			if (r_antiB_done and !_antiB_displayed) then {
-				_AntiB ctrlSetText (_aglutArray select _rnd2);
-				_antiB_displayed = true;
-			};
-			if (r_antiD_done and !_antiD_displayed) then {
-				if (_rh) then {
-					_AntiD ctrlSetText (_aglutArray select _rnd3);
-				} else {
-					_AntiD ctrlSetText (_wholeArray select _rnd3);
+				if (r_antiB_done && {!_antiB_displayed}) then {
+					_AntiB ctrlSetText (_wholeArray select _rnd2);
+					_antiB_displayed = true;
 				};
-				_antiD_displayed = true;
-			};
-			_allDisplayed = true;
-		};
-		};
-		case "AB" : {
-		if (!_allDisplayed) then {
-			uiSleep 2;
-			if (r_antiA_done and !_antiA_displayed) then {
-				_antiA ctrlSetText (_aglutArray select _rnd1);
-				_antiA_displayed = true;
-			};
-			if (r_antiB_done and !_antiB_displayed) then {
-				_AntiB ctrlSetText (_aglutArray select _rnd2);
-				_antiB_displayed = true;
-			};
-			if (r_antiD_done and !_antiD_displayed) then {
-				if (_rh) then {
-					_AntiD ctrlSetText (_aglutArray select _rnd3);
-				} else {
-					_AntiD ctrlSetText (_wholeArray select _rnd3);
+				if (r_antiD_done && {!_antiD_displayed}) then {
+					if (_rh) then {
+						_AntiD ctrlSetText (_aglutArray select _rnd3);
+					} else {
+						_AntiD ctrlSetText (_wholeArray select _rnd3);
+					};
+					_antiD_displayed = true;
 				};
-				_antiD_displayed = true;
+				_allDisplayed = true;
 			};
-			_allDisplayed = true;
 		};
-		};
-		case "O" : {
-		if (!_allDisplayed) then {
-			uiSleep 2;
-			if (r_antiA_done and !_antiA_displayed) then {
-				_antiA ctrlSetText (_wholeArray select _rnd1);
-				_antiA_displayed = true;
-			};
-			if (r_antiB_done and !_antiB_displayed) then {
-				_AntiB ctrlSetText (_wholeArray select _rnd2);
-				_antiB_displayed = true;
-			};
-			if (r_antiD_done and !_antiD_displayed) then {
-				if (_rh) then {
-					_AntiD ctrlSetText (_aglutArray select _rnd3);
-				} else {
-					_AntiD ctrlSetText (_wholeArray select _rnd3);
+		if (_type == "B") exitwith {
+			if (!_allDisplayed) then {
+				uiSleep 2;
+				if (r_antiA_done && {!_antiA_displayed}) then {
+					_antiA ctrlSetText (_wholeArray select _rnd1);
+					_antiA_displayed = true;
 				};
-				_antiD_displayed = true;
+				if (r_antiB_done && {!_antiB_displayed}) then {
+					_AntiB ctrlSetText (_aglutArray select _rnd2);
+					_antiB_displayed = true;
+				};
+				if (r_antiD_done && {!_antiD_displayed}) then {
+					if (_rh) then {
+						_AntiD ctrlSetText (_aglutArray select _rnd3);
+					} else {
+						_AntiD ctrlSetText (_wholeArray select _rnd3);
+					};
+					_antiD_displayed = true;
+				};
+				_allDisplayed = true;
 			};
-			_allDisplayed = true;
 		};
+		if (_type == "AB") exitwith {
+			if (!_allDisplayed) then {
+				uiSleep 2;
+				if (r_antiA_done && {!_antiA_displayed}) then {
+					_antiA ctrlSetText (_aglutArray select _rnd1);
+					_antiA_displayed = true;
+				};
+				if (r_antiB_done && {!_antiB_displayed}) then {
+					_AntiB ctrlSetText (_aglutArray select _rnd2);
+					_antiB_displayed = true;
+				};
+				if (r_antiD_done && {!_antiD_displayed}) then {
+					if (_rh) then {
+						_AntiD ctrlSetText (_aglutArray select _rnd3);
+					} else {
+						_AntiD ctrlSetText (_wholeArray select _rnd3);
+					};
+					_antiD_displayed = true;
+				};
+				_allDisplayed = true;
+			};
+		};
+		if (_type == "O") exitwith {
+			if (!_allDisplayed) then {
+				uiSleep 2;
+				if (r_antiA_done && {!_antiA_displayed}) then {
+					_antiA ctrlSetText (_wholeArray select _rnd1);
+					_antiA_displayed = true;
+				};
+				if (r_antiB_done && {!_antiB_displayed}) then {
+					_AntiB ctrlSetText (_wholeArray select _rnd2);
+					_antiB_displayed = true;
+				};
+				if (r_antiD_done && {!_antiD_displayed}) then {
+					if (_rh) then {
+						_AntiD ctrlSetText (_aglutArray select _rnd3);
+					} else {
+						_AntiD ctrlSetText (_wholeArray select _rnd3);
+					};
+					_antiD_displayed = true;
+				};
+				_allDisplayed = true;
+			};
 		};
 	};
 
 	r_canClick_resultsCard = true;
-	if (r_resultsCard_Clicked and _antiD_displayed and _antiB_displayed and _antiA_displayed and _control_displayed and !_results_shown) then {
+	if (r_resultsCard_Clicked && {_antiD_displayed && {_antiB_displayed} && {_antiA_displayed} && {_control_displayed} && {!_results_shown}}) then {
 		_resultsCard_hidden ctrlShow false;
 		_resultsCard_front ctrlShow true;
 		_resultsCard_front ctrlSetText _bloodTypeCard;
 		_results_shown = true;
 	};
 };
-	if (_antiD_displayed and _antiB_displayed and _antiA_displayed and _control_displayed and _results_shown) then {
+	if (_antiD_displayed && {_antiB_displayed && {_antiA_displayed} && {_control_displayed} && {_results_shown}}) then {
 		r_doLoop = false;
 		_isDone = true;
 		[] spawn {

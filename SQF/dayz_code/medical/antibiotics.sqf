@@ -42,7 +42,7 @@ if !(isNil "_medsUsed") then {
 		publicVariableServer "PVDZ_send";
 
 		//Give humnaity for good deeds
-		[20,0] call player_humanityChange;
+		20 call player_humanityChange;
 
 		_msg = format[localize "str_actions_medical_gave_antibiotics", (name _unit)];
 	};

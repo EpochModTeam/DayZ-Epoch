@@ -19,9 +19,9 @@ if (_unit == player) then {
 	// Heal another player
 	PVDZ_send = [_unit,"Painkiller",[_unit,player]];
 	publicVariableServer "PVDZ_send";
-	
+
 	// Give humanity
-	[20,0] call player_humanityChange;
-	
+	20 call player_humanityChange;
+
 	format [localize "str_actions_medical_painkillers_give",(name _unit)] call dayz_rollingMessages;
 };

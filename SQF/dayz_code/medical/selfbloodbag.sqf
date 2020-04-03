@@ -1,7 +1,7 @@
-private ["_msg","_unit","_bagUsed","_duration","_rhVal","_badBag","_bloodType","_bloodBagWholeNeeded","_wholeBag","_transfusionInfection","_finished","_bloodAmount"];
-
 // Check to see if enough time has passed since the last self-transfusion.
 if (time - dayz_lastSelfTransfusion <= DZE_selfTransfuse_Values select 2) exitWith {localize "str_actions_medical_18" call dayz_rollingMessages;};
+
+private ["_msg","_unit","_bagUsed","_duration","_rhVal","_badBag","_bloodType","_bloodBagWholeNeeded","_wholeBag","_transfusionInfection","_finished","_bloodAmount"];
 
 _unit = _this select 0;
 _bagUsed = _this select 1;
@@ -26,7 +26,7 @@ if (!dayz_classicBloodBagSystem) then {
 	if (!_wholeBag) then {_badBag = true;};
 };
 
-_bloodAmount = if (!_wholeBag) then {(DZE_selfTransfuse_Values select 0)} else {4000};
+_bloodAmount = [4000,(DZE_selfTransfuse_Values select 0)] select (!_wholeBag);
 
 localize "str_actions_medical_transfusion_start" call dayz_rollingMessages;
 _unit removeMagazine _bagUsed;
