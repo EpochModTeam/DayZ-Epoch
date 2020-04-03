@@ -1,11 +1,10 @@
-private ["_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockColor","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons","_message","_suppliedCode","_fnc_lockCode"];
+private ["_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons","_message","_suppliedCode"];
 
 _player = _this select 0;
 _obj = _this select 1;
 _status = _this select 2;
 
-_name = if (alive _player) then {name _player} else {"Dead Player"};
-
+_name = ["Dead Player",name _player] select (alive _player);
 _type = typeOf _obj;
 _pos = _obj getVariable ["OEMPos",getPosATL _obj];
 _dir = direction _obj;
@@ -27,14 +26,14 @@ if (isNull _player) then {diag_log "ERROR: server_handleSafeGear called with Nul
 _clientID = owner _player;
 _playerUID = getPlayerUID _player;
 
-_statusText = switch (_status) do {
-	case 0: {"UNLOCKED"}; // unlock safe/lockbox
-	case 1: {"LOCKED"}; // lock safe/lockbox
-	case 2: {"PACKED"}; // pack safe/lockbox
-	case 3: {"FAILED unlocking"}; // failed unlock safe/lockbox
-	case 4: {"LOCKED"}; // lock door
-	case 5: {"UNLOCKED"}; // unlock door
-	case 6: {"FAILED unlocking"}; // failed unlocking door
+_statusText = call {
+	if (_status == 0) exitwith {"UNLOCKED"}; // unlock safe/lockbox
+	if (_status == 1) exitwith {"LOCKED"}; // lock safe/lockbox
+	if (_status == 5) exitwith {"UNLOCKED"}; // unlock door
+	if (_status == 4) exitwith {"LOCKED"}; // lock door
+	if (_status == 3) exitwith {"FAILED unlocking"}; // failed unlock safe/lockbox
+	if (_status == 6) exitwith {"FAILED unlocking"}; // failed unlocking door
+	if (_status == 2) exitwith {"PACKED"}; // pack safe/lockbox
 };
 
 if (isNull _obj) exitWith {
@@ -45,15 +44,14 @@ if (isNull _obj) exitWith {
 	};
 };
 
-switch (_status) do {
-	case 0: { //Unlocking
+call {
+	if (_status == 0) exitwith { //Unlocking
 		_unlockedClass = getText (configFile >> "CfgVehicles" >> _type >> "unlockedClass");
 		_weapons = _obj getVariable ["WeaponCargo",[]];
 		_magazines = _obj getVariable ["MagazineCargo",[]];
 		_backpacks = _obj getVariable ["BackpackCargo",[]];
-		
+
 		// Create new unlocked safe, then delete old locked safe
-		//_holder = createVehicle [_unlockedClass,_pos,[],0,"CAN_COLLIDE"];
 		_holder = _unlockedClass createVehicle [0,0,0];
 		_holder setDir _dir;
 		_holder setVariable ["memDir",_dir,true];
@@ -65,20 +63,19 @@ switch (_status) do {
 		_holder setVariable ["OEMPos",_pos,true];
 		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};
 		deleteVehicle _obj;
-		
+
 		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
 	};
-	case 1: { //Locking
+	if (_status == 1) exitwith { //Locking
 		_lockedClass = getText (configFile >> "CfgVehicles" >> _type >> "lockedClass");
-	
+
 		// Save to database (also happens if a player is within 10m in server_playerSync and server_onPlayerDisconnect)
 		[_obj,"gear"] call server_updateObject;
 		_weapons = getWeaponCargo _obj;
 		_magazines = getMagazineCargo _obj;
 		_backpacks = getBackpackCargo _obj;
-		
+
 		// Create new locked safe, then delete old unlocked safe
-		//_holder = createVehicle [_lockedClass,_pos,[],0,"CAN_COLLIDE"];
 		_holder = _lockedClass createVehicle [0,0,0];
 		_holder setDir _dir;
 		_holder setVariable ["memDir",_dir,true];
@@ -88,63 +85,45 @@ switch (_status) do {
 		_holder setVariable ["ObjectID",_objectID,true];
 		_holder setVariable ["ObjectUID",_objectUID,true];
 		_holder setVariable ["OEMPos",_pos,true];
-		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};		
+		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};
 		deleteVehicle _obj;
-		
+
 		// Local setVariable gear onto new locked safe for easy access on next unlock
 		// Do not send big arrays over network! Only server needs these
 		_holder setVariable ["WeaponCargo",_weapons,false];
 		_holder setVariable ["MagazineCargo",_magazines,false];
 		_holder setVariable ["BackpackCargo",_backpacks,false];
 	};
-	case 2: { //Packing
+	if (_status == 2) exitwith { //Packing
 		_packedClass = getText (configFile >> "CfgVehicles" >> _type >> "packedClass");
 		if (_packedClass == "") exitWith {diag_log format["Server_HandleSafeGear Error: invalid object type: %1",_type];};
 		_weapons = getWeaponCargo _obj;
 		_magazines = getMagazineCargo _obj;
 		_backpacks = getBackpackCargo _obj;
-		
-		//_holder = createVehicle [_packedClass,_pos,[],0,"CAN_COLLIDE"];
+
 		_holder = _packedClass createVehicle [0,0,0];
 		deleteVehicle _obj;
 		_holder setDir _dir;
 		_holder setPosATL _pos;
 		_holder addMagazineCargoGlobal [getText(configFile >> "CfgVehicles" >> _packedClass >> "seedItem"),1];
 		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
-		
+
 		// Delete safe from database
-		[_objectID,_objectUID] call server_deleteObjDirect;
+		[_objectID,_objectUID,_obj] call server_deleteObjDirect;
 	};
 };
 
-_fnc_lockCode = {
-	private ["_color","_code"];
-
-	if (_this == "") exitWith {0};
-	_code = if (typeName _this == "STRING") then {parseNumber _this} else {_this};
-	if (_code < 10000 || {_code > 10299}) exitWith {0};
-	_color = "";
-	_code = _code - 10000;
-
-	if (_code <= 99) then {_color = "Red";};
-	if (_code >= 100 && _code <= 199) then {_color = "Green"; _code = _code - 100;};
-	if (_code >= 200) then {_color = "Blue"; _code = _code - 200;};
-	if (_code <= 9) then {_code = format["0%1", _code];};
-	_code = format ["%1%2",_color,_code];
-
-	_code
-};
-
 if (_status < 4) then {
-	_type = switch _type do {
-		case "VaultStorage";
-		case "VaultStorageLocked": {
+	_type = call {
+		if (_type == "VaultStorageLocked" || {_type == "VaultStorage"}) exitwith {
 			"Safe"
 		};
-		case "LockboxStorage";
-		case "LockboxStorageLocked": {
-			_lockCode = _charID call _fnc_lockCode;
-			if (_status == 3) then {_suppliedCode = _suppliedCode call _fnc_lockCode;};
+		if (_type == "LockboxStorage") exitwith {
+			"LockBox"
+		};
+		if (_type == "LockboxStorageLocked" || {_type == "LockboxStorage"}) exitwith {
+			_lockCode = _charID call server_fnc_lockCode;
+			if (_status == 3) then {_suppliedCode = _suppliedCode call server_fnc_lockCode;};
 			"LockBox"
 		};
 	};
