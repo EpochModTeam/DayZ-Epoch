@@ -67,7 +67,7 @@ call {
 	};
 	
 	if (_variable == "Humanity") exitWith {
-		PVCDZ_plr_Humanity = _arraytosend;
+		PVCDZ_plr_Humanity = _arraytosend select 0;
 		_owner publicVariableClient "PVCDZ_plr_Humanity";
 		//diag_log ("Humanity" +str(PVCDZ_plr_Humanity));
 	};
@@ -116,12 +116,6 @@ call {
 	if (_variable == "Legs") exitWith {
 		PVCDZ_plr_Legs = _arraytosend;
 		_owner publicVariableClient "PVCDZ_plr_Legs";
-	};
-	
-	if (_variable == "OpenTarget") exitWith {
-		_unit setVariable ["OpenTarget",true,true];
-		PVCDZ_OpenTarget_Reset = true;
-		_owner publicVariableClient "PVCDZ_OpenTarget_Reset";
 	};
 	
 	if (_variable == "tagFriendly") exitWith {

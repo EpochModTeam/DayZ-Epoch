@@ -5,7 +5,8 @@ scriptName "Functions\misc\fn_damageHandler.sqf";
     - Function
     - [unit, selectionName, damage, source, projectile] call fnc_usec_damageHandler;
 ************************************************************/
-private ["_end","_unit","_hit","_damage","_unconscious","_source","_ammo","_isMinor","_isHeadHit","_isPlayer","_isBandit","_punishment","_humanityHit","_myKills","_wpst","_sourceDist","_sourceWeap","_scale","_type","_rndPain","_hitPain","_wound","_isHit","_isbleeding","_rndBleed","_hitBleed","_isInjured","_lowBlood","_isCardiac","_chance","_falling","_model","_isZombieHit","_sourceType","_sourceVehicleType","_isMan","_isVehicle","_isLocal","_inVehicle","_vehicleArray","_isPZombie","_isScratched","_rndBleedChance"];
+private ["_end","_unit","_hit","_damage","_unconscious","_source","_ammo","_isMinor","_isHeadHit","_isPlayer","_wpst","_sourceDist","_sourceWeap","_scale","_type","_rndPain","_hitPain","_wound","_isHit","_isbleeding","_rndBleed","_hitBleed","_isInjured","_lowBlood","_isCardiac","_chance","_falling","_model","_isZombieHit","_sourceType","_sourceVehicleType","_isMan","_isVehicle","_isLocal","_inVehicle","_vehicleArray","_isPZombie","_rndBleedChance"];
+
 _unit = _this select 0;
 _hit = _this select 1;
 _damage = _this select 2;
@@ -23,7 +24,7 @@ _isHeadHit = (_hit == "head_hit");
 _isZombieHit = _ammo == "zombie";
 _isLocal = local _source;
 
-_falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Dayz_freefall select 1 > 3)})});
+_falling = (((_hit == "legs") && {(_source==_unit)}) && {((_ammo=="") && {(Dayz_freefall select 1 > 3)})});
 
 //Simple hack to help with a few issues from direct damage to physics based damage. ***until 2.0***
 	//If a vehicle is moving faster than 15 lets register some kind of direct damage rather than relying on indirect/physics damage.
@@ -37,7 +38,7 @@ _falling = (((_hit == "legs") AND {(_source==_unit)}) AND {((_ammo=="") AND {(Da
 				_ammo = "RunOver";
 			} else {
 				{
-					if ((speed _x > 10 or (speed _x < -8)) && {typeOf _x != "ParachuteWest"}) exitWith {
+					if ((speed _x > 10 || (speed _x < -8)) && {typeOf _x != "ParachuteWest"}) exitWith {
 						dayz_hitByTime = diag_tickTime;
 						_ammo = "RunOver";
 					};
@@ -90,60 +91,13 @@ if (_unit == player) then {
 		_unit setVariable["inCombat",true,true];
 	};
 
-    if (_hit == "" && {_ammo != "Crash"}) exitWith //Ignore none part dmg. Exit after processing humanity hit. Don't punish driver for damaging passenger in crash
-	{
-        if (!_isLocal && {_isPlayer} && {alive player} && {!_isPZombie}) then //Do not punish for shooting a player zombie
-		{
-			_isBandit = (player getVariable["humanity",0]) <= -5000;
-			//_isBandit = (_model in ["Bandit1_DZ","BanditW1_DZ"]);
-
-			//if player is not free to shoot at inform server that _source shot at player
-			if (!_isBandit && {!(player getVariable ["OpenTarget",false])}) then
-			{
-				PVDZ_send = [(effectiveCommander vehicle _source),"OpenTarget",[]];
-				publicVariableServer "PVDZ_send";
-			};
-
-			// Due to server errors or desync killing someone in a bandit skin with >-2000 humanity CAN occur.
-            // Attacker should not be punished for killing a Bandit skin under any circumstances.
-            // To prevent this we check for Bandit Skin.
-
-			// - Accidental Murder - \\  When wearing the garb of a non-civilian you are taking your life in your own hands
-			// Attackers humanity should not be punished for killing a survivor who has shrouded his identity in military garb.
-
-            _punishment = (_isBandit or {player getVariable ["OpenTarget",false]});
-            _humanityHit = 0;
-
-            if (!_punishment && {(dayz_lastHumanityChange + 3) < diag_tickTime}) then {
-				dayz_lastHumanityChange = diag_tickTime;
-                _myKills =  200 - ((player getVariable ["humanKills",0]) * 3.3);
-                // how many non bandit players have I (the shot/damaged player) killed?
-                // punish my killer 200 for shooting a surivor
-                // but subtract 50 for each survivor I've murdered
-                _humanityHit = -(_myKills * _damage);
-                    if (_humanityHit < -800) then {
-                        _humanityHit = -800;
-                    };
-                    // In the case of outrageous damage (crashes, explosions, desync repeated headshots); cap the limit on humanity lost.
-
-                [(effectiveCommander vehicle _source),_humanityHit] spawn {
-                    private ["_source","_humanityHit"];
-                    _source = _this select 0;
-                    _humanityHit = _this select 1;
-                    PVDZ_send = [_source,"Humanity",[_humanityHit,30]];
-                    publicVariableServer "PVDZ_send";
-                };
-            };
-        };
-    };
-
-	if (r_player_timeout == 0 && !_inVehicle) then {
+	if (r_player_timeout == 0 && {!_inVehicle}) then {
 		if (_ammo == "tranquiliser_bolt") then {
 			r_player_timeout = 20 + round(random 60);
-			[_unit] spawn {
+			_unit spawn {
 				private "_unit";
 
-				_unit = _this select 0;
+				_unit = _this;
 				localize "str_player_tranquilized" call dayz_rollingMessages;
 				[_unit,0.01] call fnc_usec_damageUnconscious;
 				_unit setVariable ["NORRN_unconscious", true, true];
@@ -154,10 +108,10 @@ if (_unit == player) then {
 			//Melee knockout system
 			if ((_isHeadHit) && {_ammo in ["Crowbar_Swing_Ammo","Bat_Swing_Ammo","Sledge_Swing_Ammo"]}) then {
 				r_player_timeout = 20 + round(random 60);
-				[_unit] spawn {
+				_unit spawn {
 					private "_unit";
 
-					_unit = _this select 0;
+					_unit = _this;
 					localize "str_actions_medical_knocked_out" call dayz_rollingMessages;
 					[_unit,0.01] call fnc_usec_damageUnconscious;
 					_unit setVariable ["NORRN_unconscious", true, true];
@@ -170,7 +124,7 @@ if (_unit == player) then {
 	_isVehicle = ({_sourceVehicleType isKindOf _x} count ["LandVehicle","Air","Ship"] > 0);
 
 	//Log to server. Useful for detecting damage and ammo cheats.
-	if (!_isLocal && {!_isZombieHit} && {_isMan or _isVehicle} && {diag_ticktime-(_source getVariable["lastloghit",0]) > 2}) then {
+	if (!_isLocal && {!_isZombieHit} && {_isMan || _isVehicle} && {diag_ticktime-(_source getVariable["lastloghit",0]) > 2}) then {
 		_wpst = weaponState _source;
 		_source setVariable ["lastloghit",diag_ticktime];
 		_sourceDist = round(_unit distance _source);
@@ -196,7 +150,7 @@ if (_unit == player) then {
 		if (_ammo == "RunOver") exitwith {"runover"};
 		if (_ammo == "Dragged") exitwith {"eject"};
 		if (_ammo in MeleeAmmo) exitwith {"melee"};
-		if (!_isLocal && {(_isMan && !(currentWeapon _source in ["","Throw"])) or _isVehicle}) exitwith {"shot"};
+		if (!_isLocal && {(_isMan && {!(currentWeapon _source in ["","Throw"])}) || _isVehicle}) exitwith {"shot"};
 		"none";
 	};
 	if (dayz_lastDamageSource != "none") then {dayz_lastDamageTime = diag_tickTime;};
@@ -208,7 +162,7 @@ if (_hit == "" && {_ammo != "Crash"}) exitWith { 0 };
 //Ammo Type Setup
 _type = call {
     if ({_ammo isKindOf _x} count ["Grenade","ShellBase","TimeBombCore","BombCore","MissileCore","RocketCore","FuelExplosion","GrenadeBase"] > 0) exitwith { 1 };
-	if ((_ammo isKindof "B_127x107_Ball") or (_ammo isKindof "B_127x99_Ball")) exitwith  { 2 };
+	if ((_ammo isKindof "B_127x107_Ball") || (_ammo isKindof "B_127x99_Ball")) exitwith  { 2 };
 	if (_isZombieHit) exitwith { 3 };
 	if (_ammo == "RunOver") exitwith { 4 };
 	if (_ammo == "Dragged") exitwith { 5 };
@@ -235,7 +189,7 @@ if (_damage > 0.4) then {
 
     //End body part scale
 	//???????????
-    if (!(player == _source) && {_isPlayer or (_isMan && {!_isZombieHit})}) then { //Scale shots from AI units the same as shots from players
+    if (!(player == _source) && {_isPlayer || (_isMan && {!_isZombieHit})}) then { //Scale shots from AI units the same as shots from players
 		dayz_sourceBleeding = _source; //Used in player_death
         _scale = _scale + 800;
         if (_isHeadHit) then {
@@ -254,7 +208,9 @@ if (_damage > 0.4) then {
 	//Bullet types
         if (_type == 2) exitwith {_scale = _scale + 150};
 	//Zombies
-		if (_type == 3) exitwith {_scale = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "damageScale"); if (dayz_DamageMultiplier > 1) then {_scale = _scale * dayz_DamageMultiplier;};};
+		if (_type == 3) exitwith {_scale = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "damageScale");
+			if (dayz_DamageMultiplier > 1) then {_scale = _scale * dayz_DamageMultiplier;};
+		};
 	//RunOver
 		if (_type == 4) exitwith {_scale = 10}; //Based on 12k blood for run over with SUV at 70km/h
 	//Dragged
@@ -287,7 +243,6 @@ if (_damage > 0.4) then {
     _isHit = _unit getVariable["hit_"+_wound,false];
 
     _isbleeding = false;
-    _isScratched = false;
 
 	_rndBleed = floor(random 100);
     _rndBleedChance = getNumber (configFile >> "CfgVehicles" >> _sourceType >> "BleedChance");
@@ -312,7 +267,7 @@ if (_damage > 0.4) then {
 
             if (!_isInjured) then {
                 _unit setVariable["USEC_injured",true,true];
-                if ((_unit == player) and (!_isZombieHit)) then {
+                if ((_unit == player) && {!_isZombieHit}) then {
                     dayz_sourceBleeding = _source;
                 };
             };
@@ -342,7 +297,7 @@ if (_damage > 0.4) then {
             };
         };
     } else {
-        if (!_isHit && !_isPZombie) then {
+        if (!_isHit && {!_isPZombie}) then {
             //Create Wound
             _unit setVariable["hit_"+_wound,true,true];
 
@@ -384,11 +339,10 @@ if (_hit in USEC_MinorWounds) then {
             _gravity = 9.81 min (2*(Dayz_freefall select 1)/((0.00001 + (Dayz_freefall select 2))^2));
             _nrj2 = _gravity * (Dayz_freefall select 1);
             if (random(_nrj2 / (5 * 9.81)) > 0.5) then { // freefall from 5m => 1/2 chance to get hit legs registered
-                    diag_log[__FILE__, "Legs damage registered from freefall, damage:",_damage,"gravity:", _gravity,
-                        "height:", (Dayz_freefall select 1), "blood loss", (_nrj2 * 25) ];
-                    [_unit,_hit,_damage] call object_processHit;
+                diag_log[__FILE__, "Legs damage registered from freefall, damage:",_damage,"gravity:", _gravity,"height:", (Dayz_freefall select 1), "blood loss", (_nrj2 * 25) ];
+                [_unit,_hit,_damage] call object_processHit;
             } else {
-                    [_unit,"arms",(_damage / 6)] call object_processHit; // prevent broken arms due to arma bugs
+                [_unit,"arms",(_damage / 6)] call object_processHit; // prevent broken arms due to arma bugs
             };
             if (_nrj2 > 30) then {
                 (3 min (_nrj2/100)) call fnc_usec_bulletHit; // red flash

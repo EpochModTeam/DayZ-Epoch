@@ -1,7 +1,7 @@
 if (deathHandled) exitWith {};
 deathHandled = true;
 
-private ["_ammo","_body","_distance","_infected","_killed","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_isBandit","_punishment","_humanityHit","_myKills","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method","_realSource","_sourceID"];
+private ["_humankill","_ammo","_body","_distance","_infected","_killed","_playerID","_sourceName","_sourceWeapon","_sourceVehicleType","_humanityBody","_humanitySource","_humanityHit","_kills","_killsV","_display","_myGroup","_camera","_deathPos","_animState","_animStateArray","_animCheck","_source","_method","_realSource","_sourceID"];
 
 // Get reference to player object before respawn into new unit (respawnDelay=0 in description.ext)
 if (typeName (_this select 0) == "ARRAY") then {
@@ -64,11 +64,11 @@ if (!isNull _source) then {
 
 	_sourceVehicleType = typeOf (vehicle _source);
 	_sourceWeapon = currentWeapon _source;
-	_sourceWeapon = switch true do {
-		case (_ammo in ["PipeBomb","Mine","MineE"]): {_ammo};
-		case ({_sourceVehicleType isKindOf _x} count ["LandVehicle","Air","Ship"] > 0): {_sourceVehicleType};
-		case (_sourceWeapon == "Throw"): {(weaponState _source) select 3};
-		default {_sourceWeapon};
+	_sourceWeapon = call {
+		if (_ammo in ["PipeBomb","Mine","MineE"]) exitwith {_ammo};
+		if ({_sourceVehicleType isKindOf _x} count ["LandVehicle","Air","Ship"] > 0) exitwith {_sourceVehicleType};
+		if (_sourceWeapon == "Throw") exitwith {(weaponState _source) select 3};
+		_sourceWeapon;
 	};
 
 	if (alive _source) then {
@@ -92,33 +92,72 @@ _body setVariable ["deathType", if (_method == "suicide") then {"shot"} else {_m
 
 if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) then { //If corpse is a player zombie do not give killer a human or bandit kill
 	//Values like humanity which were setVariabled onto player before death remain on corpse.
-	_isBandit = (_body getVariable["humanity",0]) <= -2000;
-	//_isBandit = (typeOf _body in ["Bandit1_DZ","BanditW1_DZ"]);
-
-	//if you are a bandit or start first - player will not recieve humanity drop
-	_punishment = (_isBandit or {_body getVariable ["OpenTarget",false]});
+	_humankill = false;
 	_humanityHit = 0;
+	_humanityBody = _body getVariable["humanity",0];
 	_realSource = effectiveCommander vehicle _source;
+	_humanitySource = _realSource getVariable ["humanity",0];
 
-	if (!_punishment) then {
-		//I'm "not guilty" - kill me and be punished
-		_myKills = (_body getVariable ["humanKills",0]) * 33.3;
-		// how many non bandit players have I (the dead player) killed?
-		// punish my killer 2000 for shooting a surivor
-		// but subtract 500 for each survivor I've murdered
-		_humanityHit = -(2000 - _myKills);
-		_kills = _realSource getVariable ["humanKills",0];
-		_realSource setVariable ["humanKills",(_kills + 1),true];
-		PVDZ_send = [_realSource,"Humanity",[_humanityHit,300]];
-		publicVariableServer "PVDZ_send";
-	} else {
-		//i'm "guilty" - kill me as bandit
-		_killsV = _realSource getVariable ["banditKills",0];
-		_realSource setVariable ["banditKills",(_killsV + 1),true];
+	call {
+		if (_humanitySource <= -2000) exitwith {//Killer is Bandit
+			call {
+				if (_humanityBody <= -2000) exitwith {//Body is Bandit
+					_killsV = _realSource getVariable ["banditKills",0];
+					_realSource setVariable ["banditKills",(_killsV + 1),true];
+					_humanityHit = -250;
+				};
+
+				_kills = _realSource getVariable ["humanKills",0];
+				_realSource setVariable ["humanKills",(_kills + 1),true];
+				_humankill = true;
+
+				if (_humanityBody >= 5000) exitwith {//Body is Hero
+					_humanityHit = -1000;
+				};
+				_humanityHit = -500; //Body is Survivor
+			};
+		};
+		if (_humanitySource >= 5000) exitwith {//Killer is Hero
+			call {
+				if (_humanityBody <= -2000) exitwith {//Body is Bandit
+					_killsV = _realSource getVariable ["banditKills",0];
+					_realSource setVariable ["banditKills",(_killsV + 1),true];
+					_humanityHit = 1000;
+				};
+
+				_kills = _realSource getVariable ["humanKills",0];
+				_realSource setVariable ["humanKills",(_kills + 1),true];
+				_humankill = true;
+
+				if (_humanityBody >= 5000) exitwith {//Body is Hero
+					_humanityHit = -1000;
+				};
+				_humanityHit = -500; //Body is Survivor
+			};
+		};
+		call {//Killer is Survivor
+			if (_humanityBody <= -2000) exitwith {//Body is Bandit
+				_killsV = _realSource getVariable ["banditKills",0];
+				_realSource setVariable ["banditKills",(_killsV + 1),true];
+				_humanityHit = 500;
+			};
+
+			_kills = _realSource getVariable ["humanKills",0];
+			_realSource setVariable ["humanKills",(_kills + 1),true];
+			_humankill = true;
+
+			if (_humanityBody >= 5000) exitwith {//Body is Hero
+				_humanityHit = -500;
+			};
+			_humanityHit = -250; //Body is Survivor
+		};
 	};
 
+	PVDZ_send = [_realSource,"Humanity",[_humanityHit]];
+	publicVariableServer "PVDZ_send";
+
 	//Setup for study bodys.
-	_body setVariable ["KillingBlow",[_realSource,_punishment],true];
+	_body setVariable ["KillingBlow",[_realSource,_humankill],true];
 };
 
 disableSerialization;

@@ -42,7 +42,6 @@ call { // Custom DayZ preset variables are also located in the mission init file
 		if (isNil "dayz_spawnCrashSite_clutterCutter") then {dayz_spawnCrashSite_clutterCutter = 0;};
 		if (isNil "dayz_spawnInfectedSite_clutterCutter") then {dayz_spawnInfectedSite_clutterCutter = 0;};
 		if (isNil "dayz_bleedingeffect") then {dayz_bleedingeffect = 2;};
-		if (isNil "dayz_OpenTarget_TimerTicks") then {dayz_OpenTarget_TimerTicks = 60 * 10;};
 		if (isNil "dayz_temperature_override") then {dayz_temperature_override = true;};
 		if (isNil "dayz_nutritionValuesSystem") then {dayz_nutritionValuesSystem = false;};
 		if (isNil "dayz_classicBloodBagSystem") then {dayz_classicBloodBagSystem = false;};
@@ -56,7 +55,6 @@ call { // Custom DayZ preset variables are also located in the mission init file
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 		dayz_bleedingeffect = 2; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = true; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = false; //Enables nutrition system
 		dayz_classicBloodBagSystem = true; //Enables one type of bloodbag
@@ -70,7 +68,6 @@ call { // Custom DayZ preset variables are also located in the mission init file
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 		dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_OpenTarget_TimerTicks = 60 * 25; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = false; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = true; //Enables nutrition system
 		dayz_classicBloodBagSystem = false; //Enables one type of bloodbag
@@ -84,7 +81,6 @@ call { // Custom DayZ preset variables are also located in the mission init file
 		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
 		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
 		dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked.
 		dayz_temperature_override = false; // Set to true to disable all temperature changes.
 		dayz_nutritionValuesSystem = true; //Enables nutrition system
 		dayz_classicBloodBagSystem = false; //Enables one type of bloodbag
@@ -310,7 +306,6 @@ if (!isDedicated) then {
 	a_player_boil = false;
 	
 	// General Variables
-	OpenTarget_Time = 0;
 	dayz_actionInProgress = false;
 	dayz_DisplayGenderSelect = true;
 	carryClick = false;
