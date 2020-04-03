@@ -121,7 +121,7 @@ if (_status < 4) then {
 		if (_type == "LockboxStorage") exitwith {
 			"LockBox"
 		};
-		if (_type == "LockboxStorageLocked" || {_type == "LockboxStorage"}) exitwith {
+		if (_type == "LockboxStorageLocked") exitwith {
 			_lockCode = _charID call server_fnc_lockCode;
 			if (_status == 3) then {_suppliedCode = _suppliedCode call server_fnc_lockCode;};
 			"LockBox"
