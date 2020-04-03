@@ -310,7 +310,6 @@ class HMMWV_DZE_Base: Car
 class HMMWV_DZ: HMMWV_DZE_Base {	
 	accuracy = 0.32;
 	displayname = $STR_VEH_NAME_HMMWV;
-	displaynameshort = $STR_VEH_NAME_HMMWV;
 	hasgunner = 0;
 	hiddenselections[] = {"Camo1"};
 	hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
@@ -331,6 +330,91 @@ class HMMWV_DZ: HMMWV_DZE_Base {
 	class Damage {
 		mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
 		tex[] = {};
+	};
+};
+
+class Hummer_DZE: HMMWV_DZ {	
+	displayname = $STR_VEH_NAME_HUMMER;
+	hiddenSelections[] = {"camo1","camo2","camo3"};
+	hiddenSelectionsTextures[] = {"\sra_civilian\wheeled\hmmwv\hmmwv_body_co.paa","\sra_civilian\wheeled\hmmwv\hmmwv_hood_co.paa","\sra_civilian\wheeled\hmmwv\hmmwv_regular_co.paa"};
+	icon = "\SRA_civilian\Wheeled\data\icomap_hmwv_CA.paa";
+	model = "\SRA_civilian\Wheeled\HMMWV\hmmwv";
+	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
+	
+	class HitPoints: HitPoints
+	{
+		class HitBody
+		{
+			armor = 2;
+			material = -1;
+			name = "karoserie";
+			passThrough = 0;
+			visual = "karoserie";
+		};
+		class HitEngine: HitBody
+		{
+			name = "motor";
+			visual = "motor";
+		};
+		class HitFuel: HitBody
+		{
+			armor = 1;
+			name = "palivo";
+			visual = "palivo";
+		};
+		class HitGlass1: HitGlass1
+		{
+			armor = 1;
+			name = "glass1";
+			visual = "glass1";
+			passThrough = 0;
+		};
+		class HitGlass2: HitGlass1
+		{
+			name = "glass2";
+			visual = "glass2";
+		};
+		class HitGlass3: HitGlass1
+		{
+			name = "glass3";
+			visual = "glass3";
+		};
+		class HitGlass4: HitGlass1
+		{
+			name = "glass4";
+			visual = "glass4";
+		};
+		class HitGlass5: HitGlass1
+		{
+			name = "glass5";
+			visual = "glass5";
+		};
+		class HitLFWheel
+		{
+			armor = 0.35;
+			material = -1;
+			name = "levy predni tlumic";
+			passThrough = 0.3;
+			visual = "";
+		};
+		class HitLBWheel: HitLFWheel
+		{
+			name = "levy zadni tlumic";
+		};
+		class HitRFWheel: HitLFWheel
+		{
+			name = "pravy predni tlumic";
+		};
+		class HitRBWheel: HitLFWheel
+		{
+			name = "pravy zadni tlumic";
+		};
+	};	
+
+	class Damage
+	{
+		tex[] = {};
+		mat[] = {"sra_civilian\wheeled\hmmwv\hmmwv_body.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_body_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_body_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in_half_d.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular_destruct.rvmat"};
 	};
 };
 

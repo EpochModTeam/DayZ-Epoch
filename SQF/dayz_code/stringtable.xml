@@ -8074,6 +8074,9 @@
 			<Spanish>Humvee Militar</Spanish>
 			<German>Humvee (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HUMMER">
+			<English>Hummer</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_SOV">
 			<English>HMMWV SOV (Desert)</English>
 			<Russian>Хамви SOV (Пустынный)</Russian>
@@ -8139,6 +8142,11 @@
 			<Russian>Пикап (синий)</Russian>
 			<German>Pick-up (blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREEN">
+			<English>Pick-up (green)</English>
+			<Russian>Пикап (зеленая)</Russian>
+			<German>Pick-up (grün)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_GREY">
 			<English>Pick-up (grey)</English>
 			<Russian>Пикап (серый)</Russian>
@@ -8172,6 +8180,10 @@
 			<English>Bus (Blue)</English>
 			<German>Bus (Blau)</German>
 		</Key>		
+		<Key ID="STR_VEH_NAME_IKARUS_WHITE">
+			<English>Bus (White)</English>
+			<German>Bus (Weiß)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_KAMAZ">
 			<English>Kamaz open (Woodland)</English>
 			<Russian>Камаз открытый (Лесной камуфляж)</Russian>
@@ -8618,17 +8630,16 @@
 			<English>Sedan Taxi</English>
 			<Russian>Sedan Такси</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_HATCHBACK">
-			<German>Kombilimousine</German>
-			<English>Old hatchback</English>
-			<Italian>Utilitaria</Italian>
-			<Spanish>Liftback</Spanish>
-			<French>Voiture avec hayon</French>
-			<Czech>Starý hatchback</Czech>
-			<Russian>Старый хэтчбек</Russian>
-			<Polish>Stary hatchback </Polish>
-			<Hungarian>Kupé</Hungarian>
+		<Key ID="STR_VEH_NAME_HATCHBACK_YELLOW">			
+			<English>Old hatchback (yellow)</English>
+			<German>Kombilimousine (gelb)</German>
+			<Russian>Старый хэтчбек (желтый)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_RED">
+			<English>Old hatchback (red)</English>
+			<German>Kombilimousine (rot)</German>
+			<Russian>Старый хэтчбек (красный)</Russian>
+		</Key>			
 		<Key ID="STR_VEH_NAME_BTR40_DSHKM_GREEN">
 			<English>BTR-40 DSHKM (Green)</English>
 			<Russian>BTR-40 DSHKM (Зеленый)</Russian>

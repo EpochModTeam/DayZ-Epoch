@@ -120,6 +120,10 @@ AllowedVehiclesList = [
 	["ATV_CIV_Yellow_CP_DZE",_Ratio1],
 	["ATV_CIV_Purple_CP_DZE",_Ratio1],
 	["ATV_CIV_Black_CP_DZE",_Ratio1],
+	["Ikarus_White_DZE",_Ratio1],
+	["car_hatchback_red_DZE",_Ratio1],
+	["datsun1_red_covered_DZE",_Ratio1],
+	["datsun1_green_open_DZE",_Ratio1],
 	["Octavia_ACR_DZE",_Ratio1],
 	["T810A_ACR_DZE",_Ratio1],
 	["T810A_ACR_DES_DZE",_Ratio1],
@@ -180,7 +184,8 @@ AllowedVehiclesList = [
 	["BAF_Jackal2_L2A1_D_DZE",_Ratio1],
 	["BAF_Jackal2_L2A1_W_DZE",_Ratio1],
 	["BAF_Jackal2_GMG_D_DZE",_Ratio1],
-	["BAF_Jackal2_GMG_W_DZE",_Ratio1]
+	["BAF_Jackal2_GMG_W_DZE",_Ratio1],
+	["Hummer_DZE",_Ratio1]
 ];
 
 // There are no good spawn locations for C130 on Namalsk or Caribou Frontier.

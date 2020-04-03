@@ -31,6 +31,7 @@ class Category_38 {
 	class Volha_2_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class VWGolf_DZE {type = "trade_any_vehicle";buy[] = {3,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class car_hatchback_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class car_hatchback_red_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class car_sedan_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class GLT_M300_ST_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class GLT_M300_LT_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
@@ -45,7 +46,9 @@ class Category_38 {
 class Category_39 {	
 	class datsun1_civil_3_open_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class datsun1_civil_1_open_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
+	class datsun1_green_open_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	class datsun1_civil_2_covered_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
+	class datsun1_red_covered_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	class hilux1_civil_1_open_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class hilux1_civil_3_open_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class hilux1_civil_2_covered_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
@@ -133,18 +136,20 @@ class Category_44 {
 	class LandRover_Ambulance_Des_ACR_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
 	class BTR40_TK_INS_EP1_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class BTR40_TK_GUE_EP1_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};	
+	class GAZ_Vodnik_MedEvac_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
 	class HMMWV_M1035_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class HMMWV_Ambulance_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class HMMWV_Ambulance_CZ_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class HMMWV_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class HMMWV_DZ {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
-	class GAZ_Vodnik_MedEvac_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class Hummer_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 };
 
 //Miscellaneous
 class Category_45 {
 	class Ikarus_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class Ikarus_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class Ikarus_White_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class S1203_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class S1203_ambulance_EP1_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class tractor_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
