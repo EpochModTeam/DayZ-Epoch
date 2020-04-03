@@ -28,7 +28,7 @@ if(!isNull(_obj)) then {
 	};
 	// Remove old object
 	deleteVehicle _obj;
-	
+
 	_proceed = true;
 };
 
@@ -36,23 +36,23 @@ if(isNull(_object)) then {
 	_proceed = false;
 };
 
-if(_objectID == "0" && _objectUID == "0") then { 
+if(_objectID == "0" && {_objectUID == "0"}) then {
 	_proceed = false;
 } else {
-	[_objectID,_objectUID] call server_deleteObjDirect;
+	[_objectID,_objectUID,_obj] call server_deleteObjDirect;
 };
 
 _allowed = [_object, "Server"] call check_publishobject;
-if (!_allowed || !_proceed) exitWith { 
+if (!_allowed || !_proceed) exitWith {
 	if(!isNull(_object)) then {
-		deleteVehicle _object; 
+		deleteVehicle _object;
 	};
 	diag_log ("Invalid object swap by playerUID:" + _playerUID);
 };
 
 // Publish variables
 _object setVariable ["CharacterID",_charID,true];
-	
+
 //_object setVariable ["ObjectUID",_objectUID,true];
 _object setVariable ["OEMPos",(_worldspace select 1),true];
 

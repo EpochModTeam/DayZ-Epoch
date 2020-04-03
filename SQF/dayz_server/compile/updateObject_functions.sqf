@@ -21,26 +21,26 @@ server_obj_pos = {
 };
 
 server_obj_inv = {
-	private ["_object","_objectID", "_objectUID", "_class","_inventory","_key","_isNormal","_coins","_previous"];
+	private ["_object","_objectID", "_objectUID", "_class","_inventory","_key","_coins","_previous"];
 
 	_object = _this select 0;
 	_objectID = _this select 1;
 	_objectUID = _this select 2;
 	_class = _this select 3;
-	
+
 	_inventory = call {
 		if (DZE_permanentPlot && {_class == "Plastic_Pole_EP1_DZ"}) exitwith {
 			_object getVariable ["plotfriends", []] //We're replacing the inventory with UIDs for this item
-		};	
+		};
 		if (DZE_doorManagement && {_class in DZE_DoorsLocked}) exitwith {
 			_object getVariable ["doorfriends", []] //We're replacing the inventory with UIDs for this item
-		};		
+		};
 		if (_class isKindOf "TrapItems") exitwith {
 			[["armed",_object getVariable ["armed",false]]]
 		};
 		[getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object]
 	};
-	
+
 
 	_previous = str(_object getVariable["lastInventory",[]]);
 	if (str _inventory != _previous) then {
@@ -132,7 +132,7 @@ server_obj_killed = {
 	_playerUID = _this select 3;
 	_clientKey = _this select 4;
 	_class = _this select 5;
-	
+
 	_index = dayz_serverPUIDArray find _playerUID;
 
 	_exitReason = call {
@@ -170,5 +170,5 @@ server_obj_killed = {
 		diag_log format["DELETE: PUID(%1) requested destroy on object %2 ID:%3 UID:%4",_playerUID,_class,_objectID,_objectUID];
 	};
 
-	if (_class in DayZ_removableObjects || {_class in DZE_isRemovable}) then {[_objectID,_objectUID] call server_deleteObjDirect;};
+	if (_class in DayZ_removableObjects || {_class in DZE_isRemovable}) then {[_objectID,_objectUID,_object] call server_deleteObjDirect;};
 };

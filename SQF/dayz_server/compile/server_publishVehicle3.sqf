@@ -40,7 +40,7 @@ _uid = _worldspace call dayz_objectUID2;
 
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, [], [], 1,_uid];
 #ifdef OBJECT_DEBUG
-diag_log ("HIVE: WRITE: "+ str(_key)); 
+diag_log ("HIVE: WRITE: "+ str(_key));
 #endif
 
 _key call server_hiveWrite;
@@ -78,7 +78,7 @@ if (_outcome != "PASS") then {
 	clearBackpackCargoGlobal _object;
 
 	deleteVehicle _object;
-	[_objectID,_objectUID] call server_deleteObjDirect;
+	[_objectID,_objectUID,_object] call server_deleteObjDirect;
 
 	//_newobject = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
 	_newobject = _class createVehicle [0,0,0];

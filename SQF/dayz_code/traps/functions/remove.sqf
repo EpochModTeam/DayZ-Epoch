@@ -5,7 +5,7 @@ _objectID = _obj getVariable ["ObjectID","0"];
 _objectUID = _obj getVariable ["ObjectUID","0"];
 
 if (isServer) then {
-	[_objectID,_objectUID] call server_deleteObjDirect;
+	[_objectID,_objectUID,_obj] call server_deleteObjDirect;
 } else {
 	if (count _this == 2) then {
 		//single use trap triggered, remove with no animation
