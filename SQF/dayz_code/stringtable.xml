@@ -9506,6 +9506,22 @@
 		<Key ID="STR_ZNAME_SCIENTIST">
 			<English>Infected Scientist</English>
 			<German>Infizierter Wissenschaftler</German>
+		</Key>		
+		<Key ID="STR_ZNAME_PRISONER">
+			<English>Infected Prisoner</English>
+			<German>Infizierter Häftling</German>
+		</Key>		
+		<Key ID="STR_ZNAME_REPORTER">
+			<English>Infected Reporter</English>
+			<German>Infizierter Reporter</German>
+		</Key>		
+		<Key ID="STR_ZNAME_MAFIABOSS">
+			<English>Infected Mafia Boss</English>
+			<German>Infizierter Mafia Boss</German>
+		</Key>	
+		<Key ID="STR_ZNAME_DRUGDEALER">
+			<English>Infected Drug Dealer</English>
+			<German>Infizierter Drogenhändler</German>
 		</Key>			
 	</Package>
 	<Package name="construction">
@@ -14500,7 +14516,7 @@
 			<Russian>[М] 9x39мм глушитель</Russian>
 			<German>[E] 9x39mm Schalldämpfer</German>
 		</Key>
-		<Key ID="STR_DZ_ATT_SUP762_DESC">
+		<Key ID="STR_DZ_ATT_SUP393_DESC">
 			<English>9x39mm Sound suppressor</English>
 			<Russian>ПБС для калибра 9x39мм</Russian>
 			<German>9x39mm Schalldämpfer</German>
@@ -21328,6 +21344,24 @@
 			<English>Police Officer</English>
 			<German>Polizist</German>
 			<Russian>сотрудника полиции</Russian>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_PRISONER_NAME">
+			<English>Prisoner</English>
+			<German>Häftling</German>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_REPORTER_NAME">
+			<English>Reporter</English>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_MAFIABOSS_NAME">
+			<English>Mafia Boss</English>
+		</Key>		
+		<Key ID="STR_DZE_EQUIP_DRUGDEALER_NAME">
+			<English>Drug Dealer</English>
+			<German>Drogenhändler</German>
+		</Key>	
+		<Key ID="STR_DZE_EQUIP_BUSINESSMAN_NAME">
+			<English>Business Man</English>
+			<German>Geschäftsmann</German>
 		</Key>			
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER1_NAME">
 			<English>Firefighter 1</English>
@@ -21385,6 +21419,88 @@
 			<English>Hunter</English>
 			<German>Jäger</German>
 		</Key>		
+		<Key ID="STR_DZE_SKIN_CIVILIAN1_NAME">
+			<English>Civilian 1</English>
+			<German>Zivilist 1</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN2_NAME">
+			<English>Civilian 2</English>
+			<German>Zivilist 2</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN3_NAME">
+			<English>Civilian 3</English>
+			<German>Zivilist 3</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN4_NAME">
+			<English>Civilian 4</English>
+			<German>Zivilist 4</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN5_NAME">
+			<English>Civilian 5</English>
+			<German>Zivilist 5</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN6_NAME">
+			<English>Civilian 6</English>
+			<German>Zivilist 6</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN7_NAME">
+			<English>Civilian 7</English>
+			<German>Zivilist 7</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN8_NAME">
+			<English>Civilian 8</English>
+			<German>Zivilist 8</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN9_NAME">
+			<English>Civilian 9</English>
+			<German>Zivilist 9</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN10_NAME">
+			<English>Civilian 10</English>
+			<German>Zivilist 10</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN11_NAME">
+			<English>Civilian 11</English>
+			<German>Zivilist 11</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN12_NAME">
+			<English>Civilian 12</English>
+			<German>Zivilist 12</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN13_NAME">
+			<English>Civilian 13</English>
+			<German>Zivilist 13</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_CIVILIAN14_NAME">
+			<English>Civilian 14</English>
+			<German>Zivilist 14</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_PRISONER1_NAME">
+			<English>Prisoner 1</English>
+			<German>Häftling 1</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_PRISONER2_NAME">
+			<English>Prisoner 2</English>
+			<German>Häftling 2</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_PRISONER3_NAME">
+			<English>Prisoner 3</English>
+			<German>Häftling 3</German>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_REPORTER_NAME">
+			<English>Reporter</English>
+		</Key>		
+		<Key ID="STR_DZE_SKIN_MAFIABOSS_NAME">
+			<English>Mafia Boss</English>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_DRUGDEALER_NAME">
+			<English>Drug Dealer</English>
+			<German>Drogenhändler</German>
+		</Key>	
+		<Key ID="STR_DZE_SKIN_BUSINESSMAN_NAME">
+			<English>Business Man</English>
+			<German>Geschäftsmann</German>
+		</Key>			
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>

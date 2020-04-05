@@ -7,11 +7,13 @@ class Supermarket : Default
 	zombieClass[] =
 	{
 		"zZombie_Base",
-		"z_hunter",
 		"z_teacher",
 		"z_villager1",
 		"z_villager2",
 		"z_villager3",
+		"z_new_villager2",
+		"z_new_villager3",
+		"z_new_villager4",		
 		"z_citizen1",
 		"z_citizen2",
 		"z_citizen3",
@@ -40,7 +42,21 @@ class Supermarket : Default
 		"z_postman3",
 		"z_postman4",
 		"z_assistant",
-		"z_gardener"
+		"z_gardener",
+		"z_civilian1",		
+		"z_civilian3",	
+		"z_civilian5",
+		"z_civilian7",
+		"z_civilian9",
+		"z_civilian11",
+		"z_civilian13",
+		"z_civilian15",
+		"z_prisoner1",
+		"z_prisoner2",
+		"z_prisoner3",
+		"z_mafiaboss",
+		"z_dealer",
+		"z_suit6"			
 	};
 	lootGroup = Supermarket;
 };

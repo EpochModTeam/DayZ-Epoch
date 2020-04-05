@@ -38,7 +38,10 @@ class MilitaryIndustrial: Military
 		"z_worker1",
 		"z_worker2",
 		"z_worker3",
-		"z_worker4"
+		"z_worker4",
+		"z_new_worker2",
+		"z_new_worker3",
+		"z_new_worker4"		
 	};
 	lootChance = 0.5;
 	lootGroup = MilitaryIndustrial;
@@ -69,10 +72,9 @@ class Land_Mil_ControlTower: Military
 	zombieClass[] =
 	{
 		"z_soldier",
-		"z_soldier",
-		"z_policeman",
+		"z_soldier_heavy",
 		"z_soldier_ru_officer",
-		"z_soldier_acr_rifle2",
+		"z_soldier_ru_commander",
 		"z_soldier_acr_rifle2"
 	};
 	zedPos[] = {{10.0703,3.76367,-9.62869},{1.75195,5.68164,-5.51373},{3.85254,3.53516,-5.50372},{6.66113,-0.625488,-1.0787},{6.72266,3.23389,-1.0787},{2.63965,-0.191406,-1.0687}};
@@ -92,6 +94,10 @@ class Land_SS_hangar: MilitaryIndustrial
 		"z_worker1",
 		"z_worker2",
 		"z_worker3",
+		"z_worker4",
+		"z_new_worker2",
+		"z_new_worker3",
+		"z_new_worker4",		
 		"z_soldier_ru_pilot",
 		"z_soldier_ru_crewman"
 	};
@@ -110,9 +116,10 @@ class Land_A_TVTower_Base: Military
 	zombieClass[] =
 	{
 		"z_soldier",
-		"z_soldier",
-		"z_soldier_acr_rifle2",
-		"z_policeman"
+		"z_soldier_heavy",
+		"z_soldier_ru_officer",
+		"z_soldier_ru_commander",
+		"z_soldier_acr_rifle2"
 	};
 	zedPos[] = {{-0.95166,1.48047,-2.31586},{-2.01782,-4.24121,-2.30939},{-0.982422,-1.92383,-2.25586}};
 	lootPos[] = {{-2.68,-5.79,-22.67},{-2.58,1.46,-22.67},{1.4,-5.85,-22.67},{-1.22,2.99,-20.71},{2.12,2.16,-14.76},{-3.99,-3.58,-14.36},{-4.13,2.92,-10.61},{1.22,1.67,-6.03},{-3.95,-3.39,-6.4},{-4.45,0.97,-2.31},{-4.52,0.61,2.78},{0.82,-0.5,7.21},{-1.82,3.73,2.78}};
@@ -121,11 +128,12 @@ class Land_A_TVTower_Base: Military
 
 class Land_Mil_House: Military
 {
-		zombieClass[] =
+	zombieClass[] =
 	{
 		"z_soldier",
 		"z_soldier",
 		"z_policeman",
+		"z_policeman2",
 		"z_soldier_acr_rifle2",
 		"z_soldier_acr_rifle2",
 		"z_soldier_ru_ghillie",
@@ -328,10 +336,17 @@ class Land_Mil_hangar_EP1: MilitaryIndustrial // tak hangar
 		"z_soldier_pilot",
 		"z_soldier_heavy",
 		"z_soldier_pilot",
+		"z_soldier_acr_rifle2",
 		"z_soldier_heavy",
 		"z_worker1",
 		"z_worker2",
-		"z_worker3"
+		"z_worker3",
+		"z_worker4",
+		"z_new_worker2",
+		"z_new_worker3",
+		"z_new_worker4",		
+		"z_soldier_ru_pilot",
+		"z_soldier_ru_crewman"
 	};
 	maxRoaming = 3;
 	lootPos[] = {{-9.83203,-12.4097,-5.38129},{10.5488,-12.1318,-5.38129},{13.002,0.0214844,-5.38129},{-13.3887,0.25,-5.38129},{13.3203,20.5176,-5.38129},{-13.1865,19.9839,-5.38129},{0.0195313,21.5078,-5.38129},{0.49707,11.5469,-5.38129},{-0.836914,-0.634277,-5.38129},{0.177734,-11.6821,-5.38129}};
@@ -341,8 +356,10 @@ class Land_Mil_ControlTower_EP1: Military // tak atc
 	zombieClass[] =
 	{
 		"z_soldier",
-		"z_soldier",
-		"z_policeman"
+		"z_soldier_heavy",
+		"z_soldier_ru_officer",
+		"z_soldier_ru_commander",
+		"z_soldier_acr_rifle2"
 	};
 	lootPos[] = {
 		{ 5.53369,3.64355,-5.46368 },
@@ -370,7 +387,16 @@ class Land_Mil_House_EP1: Military // tak
 	{
 		"z_soldier",
 		"z_soldier",
-		"z_policeman"
+		"z_policeman",
+		"z_policeman2",
+		"z_soldier_acr_rifle2",
+		"z_soldier_acr_rifle2",
+		"z_soldier_ru_ghillie",
+		"z_soldier_ru_specnaz",
+		"z_soldier_ru_commander",
+		"z_soldier_ru_specialforces",
+		"z_soldier_ru_soldier",
+		"z_soldier_ru_soldier_heavy"
 	};
 	vehPos[] = {
 		{ 13.439,3.25244,-5.71244,84 }};
@@ -417,7 +443,16 @@ class Land_Mil_Guardhouse_EP1: Military //Not enterable, Takistan version
 	{
 		"z_soldier",
 		"z_soldier",
-		"z_policeman"
+		"z_policeman",
+		"z_policeman2",
+		"z_soldier_acr_rifle2",
+		"z_soldier_acr_rifle2",
+		"z_soldier_ru_ghillie",
+		"z_soldier_ru_specnaz",
+		"z_soldier_ru_commander",
+		"z_soldier_ru_specialforces",
+		"z_soldier_ru_soldier",
+		"z_soldier_ru_soldier_heavy"
 	};
 	lootPos[] = {{-3.05859,1.76514,-1.59003},{-3.16895,3.45361,-1.59003},{-3.19922,-0.323242,-1.59003}};
 };
@@ -428,7 +463,16 @@ class Land_Mil_Guardhouse: Military //Enterable zero_building
 	{
 		"z_soldier",
 		"z_soldier",
-		"z_policeman"
+		"z_policeman",
+		"z_policeman2",
+		"z_soldier_acr_rifle2",
+		"z_soldier_acr_rifle2",
+		"z_soldier_ru_ghillie",
+		"z_soldier_ru_specnaz",
+		"z_soldier_ru_commander",
+		"z_soldier_ru_specialforces",
+		"z_soldier_ru_soldier",
+		"z_soldier_ru_soldier_heavy"
 	};
 	maxRoaming = 3;
 	zedPos[] = {{-2.44727,0.250977,-1.70563},{-2.44873,3.00293,-1.70285}};

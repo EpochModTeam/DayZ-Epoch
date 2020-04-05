@@ -2,7 +2,7 @@ class Office : Residential
 {
 	maxRoaming = 3;
 	lootChance = 0.2;
-	zombieClass[] = {"z_suit1","z_suit2","z_suit3","z_suit4","z_suit5"};
+	zombieClass[] = {"z_suit1","z_suit2","z_suit3","z_suit4","z_suit5","z_suit6"};
 	lootGroup = Office;
 };
 

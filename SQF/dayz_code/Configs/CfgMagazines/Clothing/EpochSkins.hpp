@@ -1295,3 +1295,150 @@ class Skin_Hunter_DZ : SkinBase {
 	sex = "male";
 	playerModel = "Hunter_DZ";	
 };
+class Skin_Civilian1_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN1_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN1_NAME;
+	sex = "male";
+	playerModel = "Civilian1_DZ";	
+};
+class Skin_Civilian2_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN2_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN2_NAME;
+	sex = "male";
+	playerModel = "Civilian2_DZ";	
+};
+class Skin_Civilian3_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN3_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN3_NAME;
+	sex = "male";
+	playerModel = "Civilian3_DZ";	
+};
+class Skin_Civilian4_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN4_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN4_NAME;
+	sex = "male";
+	playerModel = "Civilian4_DZ";	
+};
+class Skin_Civilian5_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN5_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN5_NAME;
+	sex = "male";
+	playerModel = "Civilian5_DZ";	
+};
+class Skin_Civilian6_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN6_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN6_NAME;
+	sex = "male";
+	playerModel = "Civilian6_DZ";	
+};
+class Skin_Civilian7_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN7_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN7_NAME;
+	sex = "male";
+	playerModel = "Civilian7_DZ";	
+};
+class Skin_Civilian8_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN8_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN8_NAME;
+	sex = "male";
+	playerModel = "Civilian8_DZ";	
+};
+class Skin_Civilian9_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN9_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN9_NAME;
+	sex = "male";
+	playerModel = "Civilian9_DZ";	
+};
+class Skin_Civilian10_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN10_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN10_NAME;
+	sex = "male";
+	playerModel = "Civilian10_DZ";	
+};
+class Skin_Civilian11_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN11_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN11_NAME;
+	sex = "male";
+	playerModel = "Civilian11_DZ";	
+};
+class Skin_Civilian12_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN12_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN12_NAME;
+	sex = "male";
+	playerModel = "Civilian12_DZ";	
+};
+class Skin_Civilian13_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN13_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN13_NAME;
+	sex = "male";
+	playerModel = "Civilian13_DZ";	
+};
+class Skin_Civilian14_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_CIVILIAN14_NAME;
+	descriptionShort = $STR_DZE_SKIN_CIVILIAN14_NAME;
+	sex = "male";
+	playerModel = "Civilian14_DZ";	
+};
+class Skin_Prisoner1_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_PRISONER1_NAME;
+	descriptionShort = $STR_DZE_SKIN_PRISONER1_NAME;
+	sex = "male";
+	playerModel = "Prisoner1_DZ";	
+};
+class Skin_Prisoner2_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_PRISONER2_NAME;
+	descriptionShort = $STR_DZE_SKIN_PRISONER2_NAME;
+	sex = "male";
+	playerModel = "Prisoner2_DZ";	
+};
+class Skin_Prisoner3_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_PRISONER3_NAME;
+	descriptionShort = $STR_DZE_SKIN_PRISONER3_NAME;
+	sex = "male";
+	playerModel = "Prisoner3_DZ";	
+};
+class Skin_Reporter_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_REPORTER_NAME;
+	descriptionShort = $STR_DZE_SKIN_REPORTER_NAME;
+	sex = "male";
+	playerModel = "Reporter_DZ";	
+};
+class Skin_MafiaBoss_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_MAFIABOSS_NAME;
+	descriptionShort = $STR_DZE_SKIN_MAFIABOSS_NAME;
+	sex = "male";
+	playerModel = "MafiaBoss_DZ";	
+};
+class Skin_Dealer_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_DRUGDEALER_NAME;
+	descriptionShort = $STR_DZE_SKIN_DRUGDEALER_NAME;
+	sex = "male";
+	playerModel = "Dealer_DZ";	
+};
+class Skin_BusinessMan_DZ : SkinBase {
+	scope = public;
+	displayName = $STR_DZE_SKIN_BUSINESSMAN_NAME;
+	descriptionShort = $STR_DZE_SKIN_BUSINESSMAN_NAME;
+	sex = "male";
+	playerModel = "BusinessMan_DZ";	
+};

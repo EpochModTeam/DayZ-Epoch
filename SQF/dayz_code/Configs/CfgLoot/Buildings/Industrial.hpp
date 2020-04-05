@@ -8,7 +8,6 @@ class Industrial : Default
 		"z_worker2",
 		"z_worker3",
 		"z_worker4",
-		"z_worker5",		
 		"z_new_worker2",
 		"z_new_worker3",
 		"z_new_worker4"

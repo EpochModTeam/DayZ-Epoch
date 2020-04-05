@@ -369,6 +369,17 @@ class z_suit5 : z_suit1 {
 	hiddenSelectionsTextures[] = {"\kpfs_civ\data\functionary_spd_co.paa"};
 };
 
+class z_suit6 : zZombie_Base {
+	displayName = $STR_ZNAME_SUIT;
+	zombieLoot = ZombieSuit;
+	model = "\sra_civilian\chancellor";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\chancellor\pobocnik.rvmat","sra_civilian\chancellor\pobocnik_wound1.rvmat","sra_civilian\chancellor\pobocnik_wound2.rvmat"};
+	};
+};
+
 class z_worker1 : zZombie_Base { 
 	displayName = $STR_ZNAME_WORKER;
 	zombieLoot = ZombieWorker;
@@ -1829,4 +1840,147 @@ class z_soldier_acr_rifle1: z_soldier {
 class z_soldier_acr_rifle2: z_soldier_acr_rifle1 {
 	model = "\Ca\Characters_ACR\acr_wdl_light";
 	zombieLoot = ZombieMilitary;
+};
+
+class z_civilian1 : zZombie_Base { 
+	hiddenSelections[] = {"Camo01","Camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_dress_co.paa","sra_civilian\civilian\klouboucek_cepice1_co.paa"};
+	
+	model = "\sra_civilian\civil_1_tshirt";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\data\civil_tshirt_body.rvmat","sra_civilian\data\civil_tshirt_body_wound1.rvmat","sra_civilian\data\civil_tshirt_body_wound2.rvmat","sra_civilian\civilian\civil_tshirt_shorts_body.rvmat","sra_civilian\civilian\civil_tshirt_shorts_body_wound1.rvmat","sra_civilian\civilian\civil_tshirt_shorts_body_wound2.rvmat","sra_civilian\civilian\civil_tshirt_kapsy_body.rvmat","sra_civilian\civilian\civil_tshirt_kapsy_body_wound1.rvmat","sra_civilian\civilian\civil_tshirt_kapsy_body_wound2.rvmat"};
+	};
+};
+
+class z_civilian2 : z_civilian1 { 
+	hiddenSelections[] = {"Camo01","cap","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_dress_co.paa"};
+	model = "\sra_civilian\civil_1_tshirt_shorts";
+};
+
+class z_civilian3 : z_civilian1 { 
+	hiddenSelections[] = {"camo01","cap","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_metlos_co.paa"};
+};
+
+class z_civilian4 : z_civilian2 { 
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_metlos_co.paa","sra_civilian\civilian\klouboucek_cepice2_co.paa"};
+};
+
+class z_civilian5 : z_civilian1 { 
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_mrbanana_co.paa","sra_civilian\civilian\klouboucek_cepice2_co.paa"};
+};
+
+class z_civilian6 : z_civilian2 { 
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_mrbanana_co.paa","sra_civilian\civilian\klouboucek_cepice1_co.paa"};
+};
+
+class z_civilian7 : z_civilian1 { 
+	hiddenSelections[] = {"camo01","camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_cowboy_co.paa","sra_civilian\civilian\klouboucek_cepice2_co.paa"};
+};
+
+class z_civilian8 : z_civilian2 { 
+	hiddenSelections[] = {"camo01","camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_cowboy_co.paa","sra_civilian\civilian\klouboucek_cepice2_co.paa"};
+};
+
+class z_civilian9 : z_civilian1 { 
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_nogova_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
+};
+
+class z_civilian10 : z_civilian2 { 
+	hiddenSelections[] = {"camo01","boonie","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_nogova_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
+};
+
+class z_civilian11 : z_civilian1 { 
+	hiddenSelections[] = {"camo01","boonie","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_pepe_co.paa"};
+	model = "\sra_civilian\civil_2_tshirt";
+};
+
+class z_civilian12 : z_civilian2 { 
+	hiddenSelections[] = {"camo01","camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_pepe_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
+};
+
+class z_civilian13 : z_civilian1 { 
+	hiddenSelections[] = {"camo01","camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_star_co.paa","sra_civilian\civilian\klouboucek_cepice1_co.paa"};
+	model = "\sra_civilian\civil_2_tshirt";
+};
+
+class z_civilian14 : z_civilian2 { 
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_star_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
+};
+
+class z_civilian15 : z_civilian1 { 
+	hiddenSelections[] = {"Camo01"};
+	hiddenSelectionsTextures[] = {"sra_civilian\dead\civil_tshirt_01_dead_co.paa"};
+	model = "\sra_civilian\Civil_Undead_1";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {};
+	};
+};
+
+class z_prisoner1 : zZombie_Base {
+	displayName = $STR_ZNAME_PRISONER;
+	zombieLoot = ZombiePrisoner;
+	hiddenSelections[] = {"Camo01"};
+	hiddenSelectionsTextures[] = {"sra_civilian\prisoner\vezen_labordress_torn1_co.paa"};
+	
+	model = "\sra_civilian\Civil_Undead_1";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"sra_civilian\prisoner\civil_vezen_hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\data\civil_tshirt_body.rvmat","sra_civilian\data\civil_tshirt_body_wound1.rvmat","sra_civilian\data\civil_tshirt_body_wound2.rvmat"};
+	};
+};
+
+class z_prisoner2 : z_prisoner1 {
+	hiddenSelectionsTextures[] = {"sra_civilian\prisoner\vezen_stripdress_intact_co.paa"};
+};
+
+class z_prisoner3 : z_prisoner1 {
+	hiddenSelectionsTextures[] = {"sra_civilian\prisoner\vezen_tshirtdress_torn_co.paa"};
+};
+
+class z_reporter : zZombie_Base {
+	displayName = $STR_ZNAME_REPORTER;
+	model = "\sra_civilian\civil_pressmanik";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white_wounds2.rvmat","sra_civilian\pressmanik\pressmanik.rvmat","sra_civilian\pressmanik\pressmanik_wound1.rvmat","sra_civilian\pressmanik\pressmanik_wound2.rvmat"};
+	};	
+};
+class z_mafiaboss : zZombie_Base {
+	displayName = $STR_ZNAME_MAFIABOSS;
+	zombieLoot = ZombieDrugDealer;
+	model = "\sra_civilian\civil_tvreport";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white_wounds2.rvmat","sra_civilian\tvreport\tvreport.rvmat","sra_civilian\tvreport\tvreport_wound1.rvmat","sra_civilian\tvreport\tvreport_wound2.rvmat"};
+	};
+};
+class z_dealer : zZombie_Base {
+	displayName = $STR_ZNAME_DRUGDEALER;
+	zombieLoot = ZombieDrugDealer;
+	model = "\sra_civilian\arms_dealer";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\dealer\suit_bodysnake.rvmat","sra_civilian\dealer\suit_bodysnake_wound1.rvmat","sra_civilian\dealer\suit_bodysnake_wound2.rvmat"};
+	};
 };

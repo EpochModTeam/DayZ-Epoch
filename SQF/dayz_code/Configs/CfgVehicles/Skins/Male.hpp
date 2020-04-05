@@ -75,7 +75,7 @@ class Survivor_DZ : Civilian {
 	respawnWeapons[] = {"Throw", "Put"};
 	respawnMagazines[] = {};
 	weaponSlots = 1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072;
-	canHideBodies = true;
+	canHideBodies = false; //fn_selfaction handles hide bodie
 	backpack = "";
 	canCarryBackPack = 1;
 	enableGPS = 1;
@@ -1643,7 +1643,7 @@ class Postman4_DZ: Postman1_DZ {
 
 class Hunter_DZ: Survivor_DZ {
 	scope = public;
-	displayName = $STR_DZE_SKIN_HUNTER_NAME;
+	displayName = $STR_DZE_EQUIP_HUNTER_NAME;
 	model = "kpfs_civ\hunter";
 	hiddenSelections[] = {};
 	hiddenSelectionsTextures[] = {};
@@ -1653,3 +1653,135 @@ class Hunter_DZ: Survivor_DZ {
 		mat[] = {"ca\characters2\IndepIns\Data\prizrak.rvmat","ca\characters2\IndepIns\Data\W1_prizrak.rvmat","ca\characters2\IndepIns\Data\W2_prizrak.rvmat","ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat"};
 	};
 };
+
+class Civilian1_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_CHAR_1;
+	hiddenSelections[] = {"Camo01","Camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_dress_co.paa","sra_civilian\civilian\klouboucek_cepice1_co.paa"};
+	
+	model = "\sra_civilian\civil_1_tshirt";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\data\civil_tshirt_body.rvmat","sra_civilian\data\civil_tshirt_body_wound1.rvmat","sra_civilian\data\civil_tshirt_body_wound2.rvmat","sra_civilian\civilian\civil_tshirt_shorts_body.rvmat","sra_civilian\civilian\civil_tshirt_shorts_body_wound1.rvmat","sra_civilian\civilian\civil_tshirt_shorts_body_wound2.rvmat","sra_civilian\civilian\civil_tshirt_kapsy_body.rvmat","sra_civilian\civilian\civil_tshirt_kapsy_body_wound1.rvmat","sra_civilian\civilian\civil_tshirt_kapsy_body_wound2.rvmat"};
+	};
+};
+class Civilian2_DZ: Civilian1_DZ {
+	hiddenSelections[] = {"Camo01","cap","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_dress_co.paa"};
+	model = "\sra_civilian\civil_1_tshirt_shorts";
+};
+class Civilian3_DZ: Civilian1_DZ {
+	hiddenSelections[] = {"camo01","cap","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_metlos_co.paa"};
+};
+class Civilian4_DZ: Civilian2_DZ {
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_metlos_co.paa","sra_civilian\civilian\klouboucek_cepice2_co.paa"};
+};
+class Civilian5_DZ: Civilian1_DZ {
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_mrbanana_co.paa","sra_civilian\civilian\klouboucek_cepice2_co.paa"};
+};
+class Civilian6_DZ: Civilian2_DZ {
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_mrbanana_co.paa","sra_civilian\civilian\klouboucek_cepice1_co.paa"};
+};
+class Civilian7_DZ: Civilian1_DZ {
+	hiddenSelections[] = {"camo01","camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_cowboy_co.paa","sra_civilian\civilian\klouboucek_cepice2_co.paa"};
+};
+class Civilian8_DZ: Civilian2_DZ {
+	hiddenSelections[] = {"camo01","camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_cowboy_co.paa","sra_civilian\civilian\klouboucek_cepice2_co.paa"};
+};
+class Civilian9_DZ: Civilian1_DZ {
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_nogova_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
+};
+class Civilian10_DZ: Civilian2_DZ {
+	hiddenSelections[] = {"camo01","boonie","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_nogova_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
+};
+class Civilian11_DZ: Civilian1_DZ {
+	hiddenSelections[] = {"camo01","boonie","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_pepe_co.paa"};
+	model = "\sra_civilian\civil_2_tshirt";
+};
+class Civilian12_DZ: Civilian2_DZ {
+	hiddenSelections[] = {"camo01","camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_pepe_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
+};
+class Civilian13_DZ: Civilian1_DZ {
+	hiddenSelections[] = {"camo01","camo02","boonie"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_star_co.paa","sra_civilian\civilian\klouboucek_cepice1_co.paa"};
+	model = "\sra_civilian\civil_2_tshirt";
+};
+class Civilian14_DZ: Civilian2_DZ {
+	hiddenSelections[] = {"camo01","camo03","cap"};
+	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_star_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
+};
+class Prisoner1_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_PRISONER_NAME;
+	hiddenSelections[] = {"Camo01"};
+	hiddenSelectionsTextures[] = {"sra_civilian\prisoner\vezen_labordress_torn1_co.paa"};
+	
+	model = "\sra_civilian\Civil_Undead_1";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"sra_civilian\prisoner\civil_vezen_hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\data\civil_tshirt_body.rvmat","sra_civilian\data\civil_tshirt_body_wound1.rvmat","sra_civilian\data\civil_tshirt_body_wound2.rvmat"};
+	};
+};
+class Prisoner2_DZ: Prisoner1_DZ {
+	hiddenSelectionsTextures[] = {"sra_civilian\prisoner\vezen_stripdress_intact_co.paa"};
+};
+class Prisoner3_DZ: Prisoner1_DZ {
+	hiddenSelectionsTextures[] = {"sra_civilian\prisoner\vezen_tshirtdress_torn_co.paa"};
+};
+class Reporter_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_REPORTER_NAME;
+	model = "\sra_civilian\civil_pressmanik";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white_wounds2.rvmat","sra_civilian\pressmanik\pressmanik.rvmat","sra_civilian\pressmanik\pressmanik_wound1.rvmat","sra_civilian\pressmanik\pressmanik_wound2.rvmat"};
+	};	
+};
+
+class MafiaBoss_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_MAFIABOSS_NAME;
+	model = "\sra_civilian\civil_tvreport";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl_white.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_white_wounds2.rvmat","sra_civilian\tvreport\tvreport.rvmat","sra_civilian\tvreport\tvreport_wound1.rvmat","sra_civilian\tvreport\tvreport_wound2.rvmat"};
+	};
+};
+
+class Dealer_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_DRUGDEALER_NAME;
+	model = "\sra_civilian\arms_dealer";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\dealer\suit_bodysnake.rvmat","sra_civilian\dealer\suit_bodysnake_wound1.rvmat","sra_civilian\dealer\suit_bodysnake_wound2.rvmat"};
+	};
+};
+
+class BusinessMan_DZ: Survivor_DZ {
+	scope = public;
+	displayName = $STR_DZE_EQUIP_BUSINESSMAN_NAME;
+	model = "\sra_civilian\chancellor";
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\chancellor\pobocnik.rvmat","sra_civilian\chancellor\pobocnik_wound1.rvmat","sra_civilian\chancellor\pobocnik_wound2.rvmat"};
+	};
+};
+
