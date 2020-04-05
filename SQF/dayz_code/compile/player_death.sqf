@@ -55,7 +55,8 @@ _method = call {
 	if (dayz_lastMedicalSource != "none" && {diag_tickTime - dayz_lastMedicalTime < 10}) exitwith {dayz_lastMedicalSource}; //Starve, Dehyd, Sick
 	"bled"; //No other damage sources in last 30 seconds
 };
-_ammo = if (count _this > 2) then {_this select 2} else {""};
+
+_ammo = ["", _this select 2] select (count _this > 2);
 
 if (!isNull _source) then {
 	if (!isNull _body) then {
@@ -100,46 +101,10 @@ if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) th
 
 	call {
 		if (_humanitySource <= -2000) exitwith {//Killer is Bandit
-			call {
-				if (_humanityBody <= -2000) exitwith {//Body is Bandit
-					_killsV = _realSource getVariable ["banditKills",0];
-					_realSource setVariable ["banditKills",(_killsV + 1),true];
-					_humanityHit = -250;
-				};
-
-				_kills = _realSource getVariable ["humanKills",0];
-				_realSource setVariable ["humanKills",(_kills + 1),true];
-				_humankill = true;
-
-				if (_humanityBody >= 5000) exitwith {//Body is Hero
-					_humanityHit = -1000;
-				};
-				_humanityHit = -500; //Body is Survivor
-			};
-		};
-		if (_humanitySource >= 5000) exitwith {//Killer is Hero
-			call {
-				if (_humanityBody <= -2000) exitwith {//Body is Bandit
-					_killsV = _realSource getVariable ["banditKills",0];
-					_realSource setVariable ["banditKills",(_killsV + 1),true];
-					_humanityHit = 1000;
-				};
-
-				_kills = _realSource getVariable ["humanKills",0];
-				_realSource setVariable ["humanKills",(_kills + 1),true];
-				_humankill = true;
-
-				if (_humanityBody >= 5000) exitwith {//Body is Hero
-					_humanityHit = -1000;
-				};
-				_humanityHit = -500; //Body is Survivor
-			};
-		};
-		call {//Killer is Survivor
 			if (_humanityBody <= -2000) exitwith {//Body is Bandit
 				_killsV = _realSource getVariable ["banditKills",0];
 				_realSource setVariable ["banditKills",(_killsV + 1),true];
-				_humanityHit = 500;
+				_humanityHit = -250;
 			};
 
 			_kills = _realSource getVariable ["humanKills",0];
@@ -147,10 +112,42 @@ if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) th
 			_humankill = true;
 
 			if (_humanityBody >= 5000) exitwith {//Body is Hero
-				_humanityHit = -500;
+				_humanityHit = -1000;
 			};
-			_humanityHit = -250; //Body is Survivor
+			_humanityHit = -500; //Body is Survivor
 		};
+		if (_humanitySource >= 5000) exitwith {//Killer is Hero
+			if (_humanityBody <= -2000) exitwith {//Body is Bandit
+				_killsV = _realSource getVariable ["banditKills",0];
+				_realSource setVariable ["banditKills",(_killsV + 1),true];
+				_humanityHit = 1000;
+			};
+
+			_kills = _realSource getVariable ["humanKills",0];
+			_realSource setVariable ["humanKills",(_kills + 1),true];
+			_humankill = true;
+
+			if (_humanityBody >= 5000) exitwith {//Body is Hero
+				_humanityHit = -1000;
+			};
+			_humanityHit = -500; //Body is Survivor
+		};
+
+		//Killer is Survivor
+		if (_humanityBody <= -2000) exitwith {//Body is Bandit
+			_killsV = _realSource getVariable ["banditKills",0];
+			_realSource setVariable ["banditKills",(_killsV + 1),true];
+			_humanityHit = 500;
+		};
+
+		_kills = _realSource getVariable ["humanKills",0];
+		_realSource setVariable ["humanKills",(_kills + 1),true];
+		_humankill = true;
+
+		if (_humanityBody >= 5000) exitwith {//Body is Hero
+			_humanityHit = -500;
+		};
+		_humanityHit = -250; //Body is Survivor
 	};
 
 	PVDZ_send = [_realSource,"Humanity",[_humanityHit]];
