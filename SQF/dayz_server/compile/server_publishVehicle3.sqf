@@ -73,14 +73,11 @@ if (_outcome != "PASS") then {
 	_magazines = getMagazineCargo _object;
 	_backpacks = getBackpackCargo _object;
 
-	clearWeaponCargoGlobal _object;
-	clearMagazineCargoGlobal _object;
-	clearBackpackCargoGlobal _object;
-
 	deleteVehicle _object;
 	[_objectID,_objectUID,_object] call server_deleteObjDirect;
 
-	//_newobject = createVehicle [_class, [0,0,0], [], 0, "CAN_COLLIDE"];
+	uiSleep 3;
+	
 	_newobject = _class createVehicle [0,0,0];
 
 	// switch var to new vehicle at this point.
@@ -90,6 +87,10 @@ if (_outcome != "PASS") then {
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
+
+	clearWeaponCargoGlobal _object;
+	clearMagazineCargoGlobal _object;
+	clearBackpackCargoGlobal _object;
 
 	_object setDir _dir;
 	_object setPosATL _location;
