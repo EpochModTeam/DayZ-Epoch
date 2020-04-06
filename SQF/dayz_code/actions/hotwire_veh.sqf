@@ -14,17 +14,19 @@ _removed = ([player,"ItemHotwireKit",1] call BIS_fnc_invRemove);
 if (_removed == 1) then {
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,50,true,(getPosATL player)] spawn player_alertZombies;
-	
+
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {
 		player addMagazine "ItemHotwireKit";
 	};
-	
+
+	player setVariable ["humanity",((player getVariable["humanity",0]) - 100),true]; // Player loses humanity for hotwiring a vehicle
+
 	_vehType = getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
 	if ((random 10) <= 7.5) then {
 		PVDZE_veh_Lock = [_vehicle,false];
 		_time = diag_tickTime;
-		
+
 		if (local _vehicle) then {
 			PVDZE_veh_Lock call local_lockUnlock;
 		} else {
@@ -38,7 +40,6 @@ if (_removed == 1) then {
 	};
 };
 
-//Let fn_selfActions run now
 s_player_lockUnlock_crtl = -1;
 s_player_lockUnlockInside_ctrl = -1;
 dayz_actionInProgress = false;
