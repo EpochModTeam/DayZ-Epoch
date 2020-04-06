@@ -2,6 +2,7 @@ class AK_107_kobra;
 class AK107_Kobra_DZ : AK_107_kobra 
 {
 	displayName = $STR_DZ_WPN_AK107_KOBRA_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
 	
 	magazines[] =
 	{
@@ -28,6 +29,7 @@ class AK_107_CP;
 class AK107_DZ : AK_107_CP
 {
 	displayName = $STR_DZ_WPN_AK107_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
 	
 	magazines[] =
 	{
@@ -49,6 +51,7 @@ class AK_107_GL_CP;
 class AK107_GL_DZ : AK_107_GL_CP
 {
 	displayName = $STR_DZ_WPN_AK107_GL_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
 	
 	magazines[] =
 	{
@@ -75,6 +78,7 @@ class AK_107_pso;
 class AK107_PSO_DZ : AK_107_pso
 {
 	displayName = $STR_DZ_WPN_AK107_PSO1_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
 	
 	magazines[] =
 	{
@@ -100,6 +104,7 @@ class AK_107_GL_pso;
 class AK107_GL_PSO_DZ : AK_107_GL_pso
 {
 	displayName = $STR_DZ_WPN_AK107_GL_PSO1_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
 	
 	magazines[] =
 	{
@@ -127,6 +132,7 @@ class AK_107_GL_kobra;
 class AK107_GL_Kobra_DZ : AK_107_GL_kobra
 {
 	displayName = $STR_DZ_WPN_AK107_GL_KOBRA_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
 	
 	magazines[] =
 	{

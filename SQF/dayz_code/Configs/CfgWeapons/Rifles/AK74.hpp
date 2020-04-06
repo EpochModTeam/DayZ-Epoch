@@ -5,6 +5,7 @@ class AK74_Kobra_DZ : AK_74
 	model = "z\addons\dayz_communityweapons\ak74\ak74_kobra.p3d";
 	picture = "\z\addons\dayz_communityweapons\ak74\data\w_ak74_kobra_ca.paa";
 	displayName = $STR_DZ_WPN_AK74_KOBRA_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
 	
 	magazines[] =
 	{
@@ -33,6 +34,7 @@ class AK74_Kobra_SD_DZ : AKS_74_UN_kobra
 	model = "z\addons\dayz_communityweapons\ak74\ak74_kobra_sd.p3d";
 	picture = "\z\addons\dayz_communityweapons\ak74\data\w_ak74_kobra_sd_ca.paa";
 	displayName = $STR_DZ_WPN_AK74_KOBRA_SD_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
 	
 	magazines[] =
 	{
