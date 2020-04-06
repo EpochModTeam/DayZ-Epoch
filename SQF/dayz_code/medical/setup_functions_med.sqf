@@ -311,52 +311,52 @@ fnc_usec_damageBleed = {
 		[0,0,0];
 	};
 
-		while {1 == 1} do {
-			scopeName "main";
-			waitUntil {(vehicle _unit == _unit)};
+	while {1 == 1} do {
+		scopeName "main";
+		waitUntil {(vehicle _unit == _unit)};
 
-			if ((dayz_bleedingeffect == 2) or (dayz_bleedingeffect == 3)) then {
-				//Blood partical
-				_point = "Logic" createVehicleLocal getPosATL _unit;
-				_source = "#particlesource" createVehicleLocal getPosATL _unit;
-				_source setParticleParams
-				/* Sprite */			[["\Ca\Data\ParticleEffects\Universal\Universal", 16, 13, 1],"",	// File,Ntieth,Index,Count,Loop(Bool)
-				/* Type */				"Billboard",
-				/* TimmerPer */			1,
-				/* Lifetime */			0.2,
-				/* Position */			[0,0,0],
-				/* MoveVelocity */		[0,0,0.5],
-				/* Simulation */		1,0.32,0.1,0.05,	//rotationVel,weight,volume,rubbing
-				/* Scale */				[0.05,0.25],
-				/* Color */				[[0.2,0.01,0.01,1],[0.2,0.01,0.01,0]],
-				/* AnimSpeed */			[0.1],
-				/* randDirPeriod */		0,
-				/* randDirIntesity */	0,
-				/* onTimerScript */		"",
-				/* DestroyScript */		"",
-				/* Follow */			_point];
-				_source setParticleRandom [2, [0, 0, 0], [0.0, 0.0, 0.0], 0, 0.5, [0, 0, 0, 0.1], 0, 0, 10];
-				_source setDropInterval 0.02;
-				_point attachTo [_unit,_modelPos,_wound];
-			};
-
-			uiSleep 5;
-
-			while {((_unit getVariable["USEC_injured",true]) && {alive _unit})} do {
-				scopeName "loop";
-				if (vehicle _unit != _unit) then {
-					BreakOut "loop";
-				};
-				uiSleep 1;
-			};
-			deleteVehicle _source;
-			deleteVehicle _point;
-
-			if (!(_unit getVariable["USEC_injured",false])) then {
-				BreakOut "main";
-			};
+		if ((dayz_bleedingeffect == 2) or (dayz_bleedingeffect == 3)) then {
+			//Blood partical
+			_point = "Logic" createVehicleLocal getPosATL _unit;
+			_source = "#particlesource" createVehicleLocal getPosATL _unit;
+			_source setParticleParams
+			/* Sprite */			[["\Ca\Data\ParticleEffects\Universal\Universal", 16, 13, 1],"",	// File,Ntieth,Index,Count,Loop(Bool)
+			/* Type */				"Billboard",
+			/* TimmerPer */			1,
+			/* Lifetime */			0.2,
+			/* Position */			[0,0,0],
+			/* MoveVelocity */		[0,0,0.5],
+			/* Simulation */		1,0.32,0.1,0.05,	//rotationVel,weight,volume,rubbing
+			/* Scale */				[0.05,0.25],
+			/* Color */				[[0.2,0.01,0.01,1],[0.2,0.01,0.01,0]],
+			/* AnimSpeed */			[0.1],
+			/* randDirPeriod */		0,
+			/* randDirIntesity */	0,
+			/* onTimerScript */		"",
+			/* DestroyScript */		"",
+			/* Follow */			_point];
+			_source setParticleRandom [2, [0, 0, 0], [0.0, 0.0, 0.0], 0, 0.5, [0, 0, 0, 0.1], 0, 0, 10];
+			_source setDropInterval 0.02;
+			_point attachTo [_unit,_modelPos,_wound];
 		};
 
+		uiSleep 5;
+
+		while {((_unit getVariable["USEC_injured",true]) && {alive _unit})} do {
+			scopeName "loop";
+			if (vehicle _unit != _unit) then {
+				BreakOut "loop";
+			};
+			uiSleep 1;
+		};
 		deleteVehicle _source;
 		deleteVehicle _point;
+
+		if (!(_unit getVariable["USEC_injured",false])) then {
+			BreakOut "main";
+		};
+	};
+
+	deleteVehicle _source;
+	deleteVehicle _point;
 };

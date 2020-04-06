@@ -3591,9 +3591,65 @@
 			<French>Antibiotiques</French>
 			<Czech>Antibiotika</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_6">
+			<English>Antibiotics (6 left)</English>
+			<German>Antibiotikum (6 übrig)</German>
+			<Russian>Антибиотики (6 izquierda)</Russian>
+			<Spanish>Antibióticos (6 restante)</Spanish>
+			<French>Antibiotiques (6 reste)</French>
+			<Czech>Antibiotika (6 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_5">
+			<English>Antibiotics (5 left)</English>
+			<German>Antibiotikum (5 übrig)</German>
+			<Russian>Антибиотики (5 izquierda)</Russian>
+			<Spanish>Antibióticos (5 restante)</Spanish>
+			<French>Antibiotiques (5 reste)</French>
+			<Czech>Antibiotika (5 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_4">
+			<English>Antibiotics (4 left)</English>
+			<German>Antibiotikum (4 übrig)</German>
+			<Russian>Антибиотики (4 izquierda)</Russian>
+			<Spanish>Antibióticos (4 restante)</Spanish>
+			<French>Antibiotiques (4 reste)</French>
+			<Czech>Antibiotika (4 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_3">
+			<English>Antibiotics (3 left)</English>
+			<German>Antibiotikum (3 übrig)</German>
+			<Russian>Антибиотики (3 izquierda)</Russian>
+			<Spanish>Antibióticos (3 restante)</Spanish>
+			<French>Antibiotiques (3 reste)</French>
+			<Czech>Antibiotika (3 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_2">
+			<English>Antibiotics (2 left)</English>
+			<German>Antibiotikum (2 übrig)</German>
+			<Russian>Антибиотики (2 izquierda)</Russian>
+			<Spanish>Antibióticos (2 restante)</Spanish>
+			<French>Antibiotiques (2 reste)</French>
+			<Czech>Antibiotika (2 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_1">
+			<English>Antibiotics (1 left)</English>
+			<German>Antibiotikum (1 übrig)</German>
+			<Russian>Антибиотики (1 izquierda)</Russian>
+			<Spanish>Antibióticos (1 restante)</Spanish>
+			<French>Antibiotiques (1 reste)</French>
+			<Czech>Antibiotika (1 zbývající)</Czech>
+		</Key>		
+		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_EMPTY">
+			<English>Antibiotics (empty)</English>
+			<German>Antibiotikum (leer)</German>
+			<Russian>Антибиотики (пустой)</Russian>
+			<Spanish>Antibióticos (vacio)</Spanish>
+			<French>Antibiotiques (vide)</French>
+			<Czech>Antibiotika (prázdný)</Czech>
+		</Key>			
 		<Key ID="STR_EQUIP_DESC_17">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</English>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann.</German>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird.</German>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций.</Russian>
 			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales.</Spanish>
 			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes.</French>
@@ -3602,32 +3658,50 @@
 		<Key ID="STR_EQUIP_DESC_48">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 6 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 6 таблеток.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 6 Stück übrig.</German>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (6 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (6 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (6 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (6 zbývající)</Czech>			
 		</Key>
 		<Key ID="STR_EQUIP_DESC_49">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 5 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 5 таблеток.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 5 Stück übrig.</German>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (5 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (5 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (5 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (5 zbývající)</Czech>			
 		</Key>
 		<Key ID="STR_EQUIP_DESC_50">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 4 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 4 таблетки.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 4 Stück übrig.</German>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (4 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (4 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (4 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (4 zbývající)</Czech>			
 		</Key>
 		<Key ID="STR_EQUIP_DESC_51">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 3 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 3 таблетки.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 3 Stück übrig.</German>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (3 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (3 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (3 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (3 zbývající)</Czech>			
 		</Key>
 		<Key ID="STR_EQUIP_DESC_52">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 2 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 2 таблетки.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 2 Stück übrig.</German>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (2 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (2 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (2 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (2 zbývající)</Czech>			
 		</Key>
 		<Key ID="STR_EQUIP_DESC_53">
 			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 1 Remaining.</English>
 			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталась 1 таблетка.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung oder Prophylaxe verschiedener bakterieller Infektionen verwendet werden kann. 1 Stück übrig.</German>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (1 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (1 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (1 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (1 zbývající)</Czech>				
 		</Key>
 		<Key ID="STR_EQUIP_DESC_54">
 			<English>Empty box of Azithromycin.</English>
@@ -3642,6 +3716,67 @@
 			<French>Antalgiques</French>
 			<Czech>Prášky proti bolesti</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_PAINKILLER_6">
+			<English>Painkillers (6 left)</English>
+			<German>Schmerzmittel (6 übrig)</German>
+			<Russian>Болеутоляющее (6 izquierda)</Russian>
+			<Spanish>Analgésicos (6 restante)</Spanish>
+			<French>Antalgiques (6 reste)</French>
+			<Czech>Prášky proti bolesti (6 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_PAINKILLER_5">
+			<English>Painkillers (5 left)</English>
+			<German>Schmerzmittel (5 übrig)</German>
+			<Russian>Болеутоляющее (5 izquierda)</Russian>
+			<Spanish>Analgésicos (5 restante)</Spanish>
+			<French>Antalgiques (5 reste)</French>
+			<Czech>Prášky proti bolesti (5 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_PAINKILLER_4">
+			<English>Painkillers (4 left)</English>
+			<German>Schmerzmittel (4 übrig)</German>
+			<Russian>Болеутоляющее (4 izquierda)</Russian>
+			<Spanish>Analgésicos (4 restante)</Spanish>
+			<French>Antalgiques (4 reste)</French>
+			<Czech>Prášky proti bolesti (4 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_PAINKILLER_3">
+			<English>Painkillers (3 left)</English>
+			<German>Schmerzmittel (3 übrig)</German>
+			<Russian>Болеутоляющее (3 izquierda)</Russian>
+			<Spanish>Analgésicos (3 restante)</Spanish>
+			<French>Antalgiques (3 reste)</French>
+			<Czech>Prášky proti bolesti (3 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_PAINKILLER_2">
+			<English>Painkillers (2 left)</English>
+			<German>Schmerzmittel (2 übrig)</German>
+			<Russian>Болеутоляющее (2 izquierda)</Russian>
+			<Spanish>Analgésicos (2 restante)</Spanish>
+			<French>Antalgiques (2 reste)</French>
+			<Czech>Prášky proti bolesti (2 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_PAINKILLER_1">
+			<English>Painkillers (1 left)</English>
+			<German>Schmerzmittel (1 übrig)</German>
+			<Russian>Болеутоляющее (1 izquierda)</Russian>
+			<Spanish>Analgésicos (1 restante)</Spanish>
+			<French>Antalgiques (1 reste)</French>
+			<Czech>Prášky proti bolesti (1 zbývající)</Czech>
+		</Key>		
+		<Key ID="STR_EQUIP_NAME_PAINKILLER_EMPTY">
+			<English>Painkillers (empty)</English>
+			<German>Schmerzmittel (leer)</German>
+			<Russian>Болеутоляющее (пустой)</Russian>
+			<Spanish>Analgésicos (vacio)</Spanish>
+			<French>Antalgiques (vide)</French>
+			<Czech>Prášky proti bolesti (prázdný)</Czech>			
+		</Key>		
+		<Key ID="STR_EQUIP_DESC_PAINKILLER_EMPTY">
+			<English>Empty box of Painkillers.</English>
+			<Russian>Пустая коробка азитромицина.</Russian>
+			<German>Leere Schachtel Schmerzmittel.</German>
+		</Key>		
 		<Key ID="STR_EQUIP_DESC_18">
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds.</English>
 			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden.</German>
@@ -3650,6 +3785,54 @@
 			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours.</French>
 			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_PAINKILLER_6">
+			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (6 left)</English>
+			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (6 übrig)</German>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (6 izquierda)</Russian>
+			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (6 restante)</Spanish>
+			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (6 reste)</French>
+			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (6 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_DESC_PAINKILLER_5">
+			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (5 left)</English>
+			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (5 übrig)</German>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (5 izquierda)</Russian>
+			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (5 restante)</Spanish>
+			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (5 reste)</French>
+			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (5 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_PAINKILLER_4">
+			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (4 left)</English>
+			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (4 übrig)</German>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (4 izquierda)</Russian>
+			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (4 restante)</Spanish>
+			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (4 reste)</French>
+			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (4 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_PAINKILLER_3">
+			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (3 left)</English>
+			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (3 übrig)</German>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (3 izquierda)</Russian>
+			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (3 restante)</Spanish>
+			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (3 reste)</French>
+			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (3 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_PAINKILLER_2">
+			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (2 left)</English>
+			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (2 übrig)</German>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (2 izquierda)</Russian>
+			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (2 restante)</Spanish>
+			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (2 reste)</French>
+			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (2 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_PAINKILLER_1">
+			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (1 left)</English>
+			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (1 übrig)</German>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (1 izquierda)</Russian>
+			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (1 restante)</Spanish>
+			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (1 reste)</French>
+			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (1 zbývající)</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_SEPSISBANDAGE">
 			<English>Sepsis Bandage</English>
 			<German>Antiseptische Bandage</German>

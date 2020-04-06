@@ -1,5 +1,6 @@
 #include "BloodBags.hpp"
 #include "Antibiotic.hpp"
+#include "Painkiller.hpp"
 
 class ItemAntibacterialWipe : CA_Magazine
 {
@@ -59,27 +60,6 @@ class ItemSepsisBandage : CA_Magazine
 		class Use
 		{
 			text = $STR_BANDAGE_SELF;
-			script = "spawn player_useMeds;";
-		};
-	};
-};
-
-class ItemPainkiller : CA_Magazine
-{
-	scope = public;
-	count = 1;
-	type = WeaponSlotItem;
-	
-	model = "\dayz_equip\models\med_painkiller_gear.p3d";
-	picture = "\dayz_equip\textures\equip_painkiller_ca.paa";
-	displayName = $STR_EQUIP_NAME_18;
-	descriptionShort = $STR_EQUIP_DESC_18;
-	
-	class ItemActions
-	{
-		class Use
-		{
-			text = $STR_TAKE_PAINKILLER;
 			script = "spawn player_useMeds;";
 		};
 	};

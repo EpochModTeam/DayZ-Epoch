@@ -1,27 +1,46 @@
-private "_unit";
+private ["_unit","_medsUsed"];
 
-_unit = (_this select 3) select 0;
-
-call fnc_usec_medic_removeActions;
-r_action = false;
-player removeMagazine "ItemPainkiller";
-
-if (vehicle player == player) then {
-	//not in a vehicle
-	player playActionNow "Gear";
+if (count _this > 2) then {
+	_unit = (_this select 3) select 0;
+	_medsUsed = nil;
+} else {
+	_unit = _this select 0;
+	_medsUsed = _this select 1;
 };
 
-if (_unit == player) then {
-	//Self Healing
-	[player,player] call player_medPainkiller;
-	localize "str_actions_medical_painkillers_self" call dayz_rollingMessages;
-} else {
-	// Heal another player
-	PVDZ_send = [_unit,"Painkiller",[_unit,player]];
-	publicVariableServer "PVDZ_send";
+if (isNil "_medsUsed") then {
+	{
+		if (_x in magazines player) exitWith {
+			// Set painkillers if not defined (used when giving to somebody)
+			_medsUsed = _x;
+		};
+	} count ["ItemPainkiller","ItemPainkiller1","ItemPainkiller2","ItemPainkiller3","ItemPainkiller4","ItemPainkiller5","ItemPainkiller6"];
+};
 
-	// Give humanity
-	20 call player_humanityChange;
+if !(isNil "_medsUsed") then {
+	//Remove one table from the box.
+	[_medsUsed,"medical"] call dayz_reduceItems;
 
-	format [localize "str_actions_medical_painkillers_give",(name _unit)] call dayz_rollingMessages;
+	call fnc_usec_medic_removeActions;
+	r_action = false;
+
+	if (vehicle player == player) then {
+		//not in a vehicle
+		player playActionNow "Gear";
+	};
+
+	if (_unit == player) then {
+		//Self Healing
+		[player,player] call player_medPainkiller;
+		localize "str_actions_medical_painkillers_self" call dayz_rollingMessages;
+	} else {
+		// Heal another player
+		PVDZ_send = [_unit,"Painkiller",[_unit,player]];
+		publicVariableServer "PVDZ_send";
+
+		// Give humanity
+		20 call player_humanityChange;
+
+		format [localize "str_actions_medical_painkillers_give",(name _unit)] call dayz_rollingMessages;
+	};
 };

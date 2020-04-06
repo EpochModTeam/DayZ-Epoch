@@ -16,13 +16,19 @@ if (!_hasmeditem) exitWith {format[localize "str_player_31",_text,localize "str_
 call {
 	if (_item == "ItemBandage") exitWith {[0,0,0,[player,"ItemBandage"]] execVM "\z\addons\dayz_code\medical\bandage.sqf";};
 	if (_item == "ItemMorphine") exitWith {[0,0,0,[player,"ItemMorphine"]] execVM "\z\addons\dayz_code\medical\brokeBones.sqf";};
-	if (_item == "ItemPainkiller") exitWith {[0,0,0,[player]] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
-	if (_item == "ItemAntibiotic") exitWith {[player,"ItemAntibiotic"] execVM "\z\addons\dayz_code\medical\antibiotics.sqf";};
+	if (_item == "ItemPainkiller") exitWith {[player,"ItemPainkiller"] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
+	if (_item == "ItemPainkiller6") exitWith {[player,"ItemPainkiller6"] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
+	if (_item == "ItemPainkiller5") exitWith {[player,"ItemPainkiller5"] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
+	if (_item == "ItemPainkiller4") exitWith {[player,"ItemPainkiller4"] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
+	if (_item == "ItemPainkiller3") exitWith {[player,"ItemPainkiller3"] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
+	if (_item == "ItemPainkiller2") exitWith {[player,"ItemPainkiller2"] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
+	if (_item == "ItemPainkiller1") exitWith {[player,"ItemPainkiller1"] execVM "\z\addons\dayz_code\medical\painkiller.sqf";};
 	if (_item == "ItemBloodbag") exitWith {[player,"ItemBloodbag"] execVM "\z\addons\dayz_code\medical\selfbloodbag.sqf";};
 	if (_item == "ItemAntibacterialWipe") exitWith {[0,0,0,[player]] execVM "\z\addons\dayz_code\medical\wipes.sqf";};
 	if (_item == "ItemHeatPack") exitWith {player removeMagazine "ItemHeatPack"; r_player_warming_heatpack = [true, diag_tickTime]; localize "str_player_27" call dayz_rollingMessages;};  //dayz_temperatur = (dayz_temperatur + 5) min dayz_temperaturmax;
 	if (_item == "equip_woodensplint") exitWith {[0,0,0,[player,"equip_woodensplint"]] execVM "\z\addons\dayz_code\medical\brokeBones.sqf";};
 	if (_item == "ItemSepsisBandage") exitWith {[0,0,0,[player,"ItemSepsisBandage"]] execVM "\z\addons\dayz_code\medical\bandage.sqf";};
+	if (_item == "ItemAntibiotic") exitWith {[player,"ItemAntibiotic"] execVM "\z\addons\dayz_code\medical\antibiotics.sqf";};	
 	if (_item == "ItemAntibiotic1") exitWith {[player,"ItemAntibiotic1"] execVM "\z\addons\dayz_code\medical\antibiotics.sqf";};
 	if (_item == "ItemAntibiotic2") exitWith {[player,"ItemAntibiotic2"] execVM "\z\addons\dayz_code\medical\antibiotics.sqf";};
 	if (_item == "ItemAntibiotic3") exitWith {[player,"ItemAntibiotic3"] execVM "\z\addons\dayz_code\medical\antibiotics.sqf";};

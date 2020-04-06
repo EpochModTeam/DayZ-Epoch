@@ -19,7 +19,7 @@ class Category_33 {
 	class ItemHeatPack {type = "trade_items";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
 	class ItemMorphine {type = "trade_items";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
 	class equip_woodensplint {type = "trade_items";buy[] = {-2,"ItemSilverBar"};sell[] = {5,"ItemSilverBar"};};
-	class ItemPainkiller {type = "trade_items";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};	
+	class ItemPainkiller {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class equip_gauze {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class equip_gauzepackaged {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class equip_rag {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};

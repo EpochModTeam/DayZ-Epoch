@@ -1,7 +1,7 @@
 MedicalLow[] =
 {
+	{Loot_GROUP,		3,		Painkillers},
 	{Loot_MAGAZINE,		5,		ItemBandage},
-	{Loot_MAGAZINE,		3,		ItemPainkiller},
 	{Loot_MAGAZINE,		3,		ItemMorphine},
 	{Loot_MAGAZINE,		1,		ItemEpinephrine},
 	{Loot_MAGAZINE,		2,		ItemAntibacterialWipe},
@@ -21,6 +21,17 @@ MedicalBox[] =
 {
 	{Loot_GROUP,		5,		MedicalHigh},
 	{Loot_GROUP,		1,		MedicalLow}
+};
+
+Painkillers[] =
+{
+	{Loot_MAGAZINE,		1,		ItemPainkiller},
+	{Loot_MAGAZINE,		1,		ItemPainkiller6},
+	{Loot_MAGAZINE,		2,		ItemPainkiller5},
+	{Loot_MAGAZINE,		3,		ItemPainkiller4},
+	{Loot_MAGAZINE,		4,		ItemPainkiller3},
+	{Loot_MAGAZINE,		5,		ItemPainkiller2},
+	{Loot_MAGAZINE,		6,		ItemPainkiller1}
 };
 
 Antibiotics[] =

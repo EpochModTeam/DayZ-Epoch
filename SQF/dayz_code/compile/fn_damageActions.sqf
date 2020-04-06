@@ -8,7 +8,7 @@ scriptName "Functions\misc\fn_damageActions.sqf";
 	- [] call fnc_usec_damageActions;
 ************************************************************/
 
-private ["_hasABWipes","_dragged","_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasAntibiotics","_hasBloodBag","_vehClose","_action1","_action2","_action3","_playerMagazines","_isFriendly"];
+private ["_hasABWipes","_dragged","_menClose","_hasPatient","_vehicle","_inVehicle","_isClose","_assignedRole","_driver","_action","_turret","_weapons","_weaponName","_crew","_unconscious_crew","_patients","_vehType","_unit","_antibiotics","_bloodBags","_unconscious","_lowBlood","_injured","_hasSepsis","_inPain","_legsBroke","_armsBroke","_infected","_hasBandage","_hasSepsisBandage","_hasEpi","_hasMorphine","_hasSplint","_hasPainkillers","_hasAntibiotics","_hasBloodBag","_vehClose","_action1","_action2","_action3","_playerMagazines","_isFriendly","_action4","_painkillers"];
 
 _menClose = cursorTarget;
 _hasPatient = alive _menClose;
@@ -76,7 +76,7 @@ if (_inVehicle) then {
 	};
 	//Check if patients
 	_crew = crew _vehicle;
-	if (count _crew > 0 && !r_player_unconscious) then {
+	if (count _crew > 0 && {!r_player_unconscious}) then {
 		_unconscious_crew = [];
 		{
 			if (_x getVariable "NORRN_unconscious") then {
@@ -118,7 +118,8 @@ if (isPlayer cursorTarget) then {
 		player reveal _unit;
 
 		//Arrays
-		_antibiotics =["ItemAntibiotic","ItemAntibiotic1","ItemAntibiotic2","ItemAntibiotic3","ItemAntibiotic4","ItemAntibiotic5","ItemAntibiotic6"];
+		_antibiotics = ["ItemAntibiotic","ItemAntibiotic1","ItemAntibiotic2","ItemAntibiotic3","ItemAntibiotic4","ItemAntibiotic5","ItemAntibiotic6"];
+		_painkillers = ["ItemPainkiller","ItemPainkiller1","ItemPainkiller2","ItemPainkiller3","ItemPainkiller4","ItemPainkiller5","ItemPainkiller6"];
 		_bloodBags = ["bloodBagANEG","bloodBagAPOS","bloodBagBNEG","bloodBagBPOS","bloodBagABNEG","bloodBagABPOS","bloodBagONEG","bloodBagOPOS","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"];
 
 		//Var checks
@@ -139,7 +140,7 @@ if (isPlayer cursorTarget) then {
 		_hasEpi = "ItemEpinephrine" in _playerMagazines;
 		_hasMorphine = "ItemMorphine" in _playerMagazines;
 		_hasSplint = "equip_woodensplint" in _playerMagazines;
-		_hasPainkillers = "ItemPainkiller" in _playerMagazines;
+		_hasPainkillers = Array_Any(_playerMagazines, {_this in _painkillers});
 		_hasAntibiotics = Array_Any(_playerMagazines, {_this in _antibiotics});
 		_hasABWipes = "ItemAntibacterialWipe" in _playerMagazines;
 		if (dayz_classicBloodBagSystem) then {
