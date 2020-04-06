@@ -5,3 +5,8 @@ class ItemKeyKit: ItemCore {
 	descriptionShort=$STR_EQUIP_KEYKIT_DESC;
 	picture="\z\addons\dayz_epoch\pictures\equip_keykit_ca.paa";
 };
+
+class ItemKeyKitBroken: ItemKeyKit {
+	displayname = $STR_EQUIP_KEYKIT_BROKEN;
+	descriptionShort = $STR_EQUIP_KEYKIT_BROKEN_DESC;
+};

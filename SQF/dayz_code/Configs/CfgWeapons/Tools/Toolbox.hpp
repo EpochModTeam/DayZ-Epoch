@@ -13,5 +13,11 @@ class ItemToolbox : ItemCore
 			script=";[['DesertCamoNet_DZ','ForestCamoNet_DZ','DesertLargeCamoNet_DZ','ForestLargeCamoNet_DZ'],10,'str_epoch_player_8'] call player_removeNearby;";
 		};
 	};
+};
 
+class ItemToolboxBroken : ItemToolbox
+{
+	displayName = $STR_EQUIP_NAME_2_BROKEN;
+	descriptionShort = $STR_EQUIP_DESC_2_BROKEN;
+	class ItemActions {};
 };

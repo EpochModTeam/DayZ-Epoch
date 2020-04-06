@@ -3162,14 +3162,22 @@
 			<French>Outil de tranchée</French>
 			<Czech>Polní lopatka</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_1_BROKEN">
+			<English>Broken Entrenching Tool</English>
+			<German>Kaputter Klappspaten</German>
+		</Key>		
 		<Key ID="STR_EQUIP_DESC_1">
-			<English>Collapsible spade used together with the engineering backpack to create field defences</English>
+			<English>Collapsible spade used together with the engineering backpack to create field defences.</English>
 			<German>Ein Klappspaten, welcher beim Verschanzen und für viele Bautätigkeiten benötigt wird.</German>
 			<Russian>Саперная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
 			<Spanish>Una pala plegable usada para crear defensas en el campo.</Spanish>
 			<French>Une pelle démontable permettant de construire des éléments de défense.</French>
 			<Czech>Polní lopatka se používá při stavbě obranných postavení. Pokud jste SpecNaz, umíte s ní zabít.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_1_BROKEN">
+			<English>Broken collapsible spade that must be repaired.</English>
+			<German>Ein kaputter Klappspaten, welcher repariert werden muss.</German>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_1b">
 			<English>Shovel</English>
 			<German>Schaufel</German>
@@ -3204,6 +3212,10 @@
 			<French>Boîte à outils</French>
 			<Czech>Sada nástrojů</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_2_BROKEN">
+			<English>Broken Toolbox</English>
+			<German>Kaputter Werkzeugkasten</German>
+		</Key>		
 		<Key ID="STR_EQUIP_DESC_2">
 			<English>Toolbox that can be used for repairing damaged vehicles and equipment.</English>
 			<German>Eine Kiste mit Werkzeugen, welche zum Reparieren beschädigter Fahrzeuge und Ausrüstung verwendet werden können.</German>
@@ -3212,6 +3224,10 @@
 			<French>Boîte à outils servant à réparer le matériel et les véhicules.</French>
 			<Czech>Sada nástrojů se používá pro opravy poškozených vozidel a vybavení.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_2_BROKEN">
+			<English>A broken toolbox that must be repaired.</English>
+			<German>Ein kaputter Werkzeugkasten, welcher repariert werden muss.</German>
+		</Key>		
 		<Key ID="str_info_limitedbox">
 			<English>While creating the fire you realise you only have 5 matches left.</English>
 			<Russian>После розжига огня осталось всего 5 спичек.</Russian>
@@ -3394,6 +3410,10 @@
 			<French>Lampe torche</French>
 			<Czech>Baterka</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_5_BROKEN">
+			<English>Broken Flashlight</English>
+			<German>Kaputte Taschenlampe</German>
+		</Key>
 		<Key ID="STR_EQUIP_DESC_5">
 			<English>Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>
 			<German>Batteriebetriebene Taschenlampe, benötigte Batterien: 2x R20/D</German>
@@ -3402,6 +3422,10 @@
 			<French>Lampe torche à piles.&lt;br/&gt;Piles: 2 x Type D</French>
 			<Czech>Klasická baterka na baterie&lt;br/&gt;Baterie: 2xD</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_5_BROKEN">
+			<English>A broken Battery-powered Flashlight that must be repaired.</English>
+			<German>Eine kaputte batteriebetriebene Taschenlampe, welche repariert werden muss.</German>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_6">
 			<English>Flashlight (Military)</English>
 			<German>Militärtaschenlampe</German>
@@ -3410,6 +3434,10 @@
 			<French>Lampe torche (Mil.)</French>
 			<Czech>Baterka (Vojenská)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_6_BROKEN">
+			<English>Broken Flashlight (Military)</English>
+			<German>Kaputte Militärtaschenlampe</German>
+		</Key>
 		<Key ID="STR_EQUIP_DESC_6">
 			<English>Military Red-light Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>
 			<German>Militärische, batteriebetriebene Rotlichtlampe, benötigte Batterien: 2x R20/D</German>
@@ -3417,6 +3445,10 @@
 			<Spanish>Linterna Militar de luz roja a pilas&lt;br/&gt;Pilas: 2 x D</Spanish>
 			<French>Lampe torche militaire à piles, lumière rouge.&lt;br/&gt;Piles: 2 x Type D</French>
 			<Czech>Vojenská baterka s červeným světlem na baterie&lt;br/&gt;Baterie: 2xD</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_6_BROKEN">
+			<English>A broken military Red-light that must be repaired.</English>
+			<German>Eine kaputte militärische, batteriebetriebene Rotlichtlampe, welche repariert werden muss.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_7">
 			<English>Bandage</English>
@@ -4521,6 +4553,10 @@
 			<Czech>Mačeta</Czech>
 			<French>Machette</French>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_MACHETE_BROKEN">
+			<English>Broken Machete</English>
+			<German>Kaputte Machete</German>
+		</Key>		
 		<Key ID="STR_EQUIP_DESC_MACHETE">
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
 			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой универсальный, как топор, но весьма мощный.</Russian>
@@ -4529,6 +4565,10 @@
 			<French>Un outil agricole qui peut être utilisé comme une arme. La machette est moins versatile que la hache mais plus tranchante.</French>
 			<German>Ein ursprünglich in der Landwirtschaft verwendetes Werkzeug mit langer Klinge, das auch als Waffe verwendet werden kann. Ungeeignet zum Holzfällen.</German>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_MACHETE_BROKEN">
+			<English>Broken machete that must be reparied.</English>
+			<German>Eine kaputte Machete, welche repariert werden muss.</German>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_BASEBALLBAT">
 			<English>Baseball Bat</English>
 			<Russian>Бейсбольная бита</Russian>
@@ -6355,6 +6395,10 @@
 			<German>Angel</German>
 			<Dutch>Vishengel</Dutch>
 		</Key>
+		<Key ID="STR_ITEM_NAME_FISHINGPOLEBROKEN">
+			<English>Broken Fishing Pole</English>
+			<German>Kaputte Angel</German>
+		</Key>
 		<Key ID="STR_ITEM_DESC_FISHINGPOLE">
 			<English>This carbon fiber rod may be old but she still works like a charm.</English>
 			<Russian>Эта карбоновая палка хоть и выглядит старой, но работает как надо.</Russian>
@@ -6364,6 +6408,10 @@
 			<German>Die Carbon-Angelrute mag alt aussehen, funktioniert aber noch tadellos.</German>
 			<Dutch>Dit carbonnen hengeltje is al oud, maar werkt nog prima!</Dutch>
 		</Key>
+		<Key ID="STR_ITEM_DESC_FISHINGPOLE_BROKEN">
+			<English>A broken fishing pole that must be repaired.</English>
+			<German>Eine kaputte Angelrute, welche repariert werden muss.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_CAMONET">
 			<English>CamoNet</English>
 			<Russian>Камуфляжная сеть</Russian>
@@ -15272,6 +15320,10 @@
 			<French>Kit de Reproduction de Clés</French>
 			<Czech>Sada klíčů</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_KEYKIT_BROKEN">
+			<English>Broken Keymakers kit</English>
+			<German>Kaputtes Schlüsselmacher Kit</German>
+		</Key>		
 		<Key ID="STR_EQUIP_KEYKIT_DESC">
 			<English>Kit including the tools required to smelt, mold and shape keys.</English>
 			<German>Ein Kit zum Schmelzen und Formen von Schlüsseln.</German>
@@ -15281,6 +15333,10 @@
 			<French>Ce kit inclut tous les outils nécessaires à fondre, modeler et découper des clés.</French>
 			<Czech>Sada obsahující nástroje potřebné k vytvoření klíčů.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_KEYKIT_BROKEN_DESC">
+			<English>A broken kit to make key that must be repaired.</English>
+			<German>Ein kaputtes Kit zum Schmelzen und Formen von Schlüsseln, welches repariert werden muss.</German>
+		</Key>		
 		<Key ID="STR_EQUIP_SLEDGE_DESC">
 			<English>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</English>
 			<German>Ein Vorschlaghammer ist ein aus einem Hammerkopf (typischerweise aus geschmiedetem Stahl) und einem Stiel bestehendes Handwerkzeug. Der Vorschlaghammer kann mit höheren Schlagkräften als andere Hämmer genutzt werden.</German>
@@ -23014,10 +23070,18 @@
 			<English>Portable Solder</English>
 			<German>Tragbarer Lötkolben</German>
 		</Key>	
+		<Key ID="STR_EQUIP_SOLDER_BROKEN">
+			<English>Broken Portable Solder</English>
+			<German>Kaputter Tragbarer Lötkolben</German>
+		</Key>			
 		<Key ID="STR_EQUIP_SOLDER_DESC">
 			<English>Soldering tool used for repairing broken equipment and items.</English>
 			<German>Ein tragbarer Lötkolben, um beschädigte Gegenstände und Ausrüstung zu reparieren.</German>
-		</Key>	
+		</Key>
+		<Key ID="STR_EQUIP_SOLDER_BROKEN_DESC">
+			<English>Broken soldering tool that must be reparied.</English>
+			<German>Ein kaputter tragbarer Lötkolben, welcher repariert werden muss.</German>
+		</Key>		
 		<Key ID="STR_EQUIP_BROKEN_RADIO">
 			<English>Broken Radio</English>
 			<German>Beschädigtes Funkgerät</German>
@@ -23046,33 +23110,65 @@
 			<English>Pilot Mask</English>
 			<German>Pilotenmaske</German>
 		</Key>	
+		<Key ID="STR_EQUIP_PILOT_MASK_BROKEN">
+			<English>Broken Pilot Mask</English>
+			<German>Kaputte Pilotenmaske</German>
+		</Key>		
 		<Key ID="STR_EQUIP_PILOT_MASK_DESC">
 			<English>A wearable pilot mask.</English>
 			<German>Eine tragbare Pilotenmaske.</German>
 		</Key>	
+		<Key ID="STR_EQUIP_PILOT_MASK_BROKEN_DESC">
+			<English>A wearable pilot mask that must be repaired.</English>
+			<German>Eine tragbare Pilotenmaske, welche repariert werden muss.</German>
+		</Key>			
 		<Key ID="STR_EQUIP_GAS_MASK1">
 			<English>Gas Mask 4A1</English>
 			<German>Gasmaske 4A1</German>
 		</Key>	
+		<Key ID="STR_EQUIP_GAS_MASK1_BROKEN">
+			<English>Broken Gas Mask 4A1</English>
+			<German>Kaputte Gasmaske 4A1</German>
+		</Key>			
 		<Key ID="STR_EQUIP_GAS_MASK1_DESC">
 			<English>Gas Mask 4A1 used by civilians.</English>
 			<German>Gasmaske 4A1 für die Zivilbevölkerung.</German>
 		</Key>		
+		<Key ID="STR_EQUIP_GAS_MASK1_BROKEN_DESC">
+			<English>A broken Gas Mask 4A1 that must be repaired.</English>
+			<German>Eine kaputte Gasmaske 4A1, welche repariert werden muss.</German>
+		</Key>			
 		<Key ID="STR_EQUIP_GAS_MASK2">
 			<English>Gas Mask S10 NBC</English>
 			<German>Gasmaske S10 NBC</German>
 		</Key>	
+		<Key ID="STR_EQUIP_GAS_MASK2_BROKEN">
+			<English>Broken Gas Mask S10 NBC</English>
+			<German>Kaputte Gasmaske S10 NBC</German>
+		</Key>		
 		<Key ID="STR_EQUIP_GAS_MASK2_DESC">
 			<English>Gas Mask S10 NBC used by the military.</English>
 			<German>Gasmaske S10 NBC für das Militär.</German>
 		</Key>		
+		<Key ID="STR_EQUIP_GAS_MASK2_BROKEN_DESC">
+			<English>A broken Gas Mask S10 NBC that must be repaired.</English>
+			<German>Eine kaputte Gasmaske S10 NBC, welche repariert werden muss.</German>
+		</Key>			
 		<Key ID="STR_EQUIP_APSI">
 			<English>APSI</English>
 		</Key>	
+		<Key ID="STR_EQUIP_APSI_BROKEN">
+			<English>Broken APSI</English>
+			<English>Beschädigtes APSI</English>
+		</Key>			
 		<Key ID="STR_EQUIP_APSI_DESC">
 			<English>APSI (Anti PSI) device, which full purpose is yet unknown.</English>
 			<German>APSI (Anti PSI) Emitter, dessen vollständige Funktion noch unbekannt ist.</German>
 		</Key>	
+		<Key ID="STR_EQUIP_APSI_BROKEN_DESC">
+			<English>Broken APSI (Anti PSI) device, that must be repaired.</English>
+			<German>Kaputter APSI (Anti PSI) Emitter, welcher repariert werden muss.</German>
+		</Key>			
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE">
 			<English>Disabled:</English>
 			<German>Deaktiviert:</German>

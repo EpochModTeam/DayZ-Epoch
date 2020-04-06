@@ -26,3 +26,10 @@ class ItemMachete : ItemCore
 		};
 	};
 };
+
+class ItemMacheteBroken : ItemMachete
+{	
+	displayName = $STR_EQUIP_NAME_MACHETE_BROKEN;	
+	descriptionShort = $STR_EQUIP_DESC_MACHETE_BROKEN;
+	class ItemActions {};
+};

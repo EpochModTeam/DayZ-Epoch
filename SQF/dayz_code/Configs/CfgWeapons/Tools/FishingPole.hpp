@@ -38,3 +38,10 @@ class ItemFishingPole : ItemCore
 		};
 	};
 };
+
+class ItemFishingPoleBroken : ItemFishingPole
+{
+	displayName = $STR_ITEM_NAME_FISHINGPOLEBROKEN;
+	descriptionShort = $STR_ITEM_DESC_FISHINGPOLE_BROKEN;
+	class ItemActions {};
+};

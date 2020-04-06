@@ -5,3 +5,8 @@ class ItemSolder_DZE : ItemCore {
 	picture = "\nst\ns_dayz\items\solder\data\icon_solder_dzn_ca.paa";
 	descriptionShort = $STR_EQUIP_SOLDER_DESC;
 };
+
+class ItemSolderBroken_DZE : ItemSolder_DZE {
+	displayName = $STR_EQUIP_SOLDER_BROKEN;
+	descriptionShort = $STR_EQUIP_SOLDER_BROKEN_DESC;
+};
