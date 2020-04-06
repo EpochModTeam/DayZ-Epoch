@@ -13060,7 +13060,31 @@
 		</Key>	
 		<Key ID="STR_DZ_WPN_MK43_M145_NAME">
 			<English>Mk43 M145</English>
-		</Key>		
+		</Key>	
+
+		<!-- Steyr Aug A3 -->
+		<Key ID="STR_DZ_WPN_AUGA3_NAME">
+			<English>Steyr Aug A3</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_AUGA3_HOLO_NAME">
+			<English>Steyr Aug A3 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_AUGA3_ACOG_NAME">
+			<English>Steyr Aug A3 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_AUGA3_GL_NAME">
+			<English>Steyr Aug A3 M203</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_AUGA3_HOLO_GL_NAME">
+			<English>Steyr Aug A3 Holo M203</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_AUGA3_ACOG_GL_NAME">
+			<English>Steyr Aug A3 ACOG M203</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_AUGA3_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
+		</Key>			
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -14390,7 +14414,20 @@
 			<Czech>Kalibr: 7.62x51mm SD&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: MK 14 SD, M21A5 SD</Czech>
 			<Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: MK 14 SD, M21A5 SD</Hungarian>
 		</Key>		
-		
+		<Key ID="STR_DZ_MAG_30RND_556x45_AUG_NAME">
+			<English>30Rnd. Steyr Aug mag</English>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_AUG_DESC">
+			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: Steyr Aug A3</German>
+			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: Steyr Aug A3</English>
+			<Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 30 &lt;br/&gt;Si usa in: Steyr Aug A3</Italian>
+			<Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 30 &lt;br/&gt;Uso: Steyr Aug A3</Spanish>
+			<French>Calibre: 5.56x45mm &lt;br/&gt;Munitions: 30 &lt;br/&gt;Utilisé avec: Steyr Aug A3</French>
+			<Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 30 &lt;br/&gt;Pro: Steyr Aug A3</Czech>
+			<Russian>Патрон: 5.56x45мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: Steyr Aug A3</Russian>
+			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr Aug A3</Polish>
+			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr Aug A3</Hungarian>
+        </Key>		
 		<!-- **** ATTACHMENTS **** -->
 		
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">

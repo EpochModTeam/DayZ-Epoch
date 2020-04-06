@@ -69,6 +69,7 @@ class Category_21 {
 //Assault Rifle Ammo
 class Category_22 {
 	class 30Rnd_6x35_KAC {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class 30Rnd_556x45_Aug {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};	
 	class 30Rnd_556x45_Stanag {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class 30Rnd_556x45_StanagSD {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
 	class 30Rnd_556x45_G36 {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};

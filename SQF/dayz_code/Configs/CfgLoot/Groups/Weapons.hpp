@@ -188,6 +188,9 @@ weaponsEU[] =
 	{Loot_WEAPON,		3,		MK17_CCO_SD_DZ},
 	{Loot_WEAPON,		3,		MK17_Holo_SD_DZ},
 	{Loot_WEAPON,		3,		MK17_ACOG_SD_DZ},
+	{Loot_WEAPON,		3,		SteyrAug_A3_Green_DZ},
+	{Loot_WEAPON,		3,		SteyrAug_A3_ACOG_Green_DZ},
+	{Loot_WEAPON,		3,		SteyrAug_A3_Holo_Green_DZ},	
 	
 	// Machine Guns
 	{Loot_WEAPON,		6,		XM8_SAW_DZ},

@@ -13,24 +13,11 @@ class CfgWeapons
 	class ItemCore;
 	class Rifle;
 	class Pistol;
-	class GrenadeLauncher;
-	
-	
+	class GrenadeLauncher;	
 	
 	/* Dummy weapons */
 	#include "Throw.hpp"
-	#include "Loot.hpp"
-	
-	//Sniper Rifles
-	#include "Rifles\Anzio_20.hpp"
-	#include "Rifles\AS50.hpp"
-	#include "Rifles\M107.hpp"
-	#include "Rifles\KSVK.hpp"
-	#include "Rifles\M4SPR.hpp"	
-	#include "Rifles\CZ750.hpp"
-	
-	//Ak107
-	#include "Rifles\AK107.hpp"	
+	#include "Loot.hpp"	
 	
 	//each include is preceded by its required external references.
 	
@@ -39,6 +26,7 @@ class CfgWeapons
 	class AK_74;
 	class AKS_74_UN_kobra;
 	#include "Rifles\AK74.hpp"
+	#include "Rifles\AK107.hpp"	
 	#include "Rifles\AN94.hpp"
 	
 	class AKS_74_U;
@@ -51,10 +39,6 @@ class CfgWeapons
 	#include "Rifles\Groza.hpp"
 	
 	#include "Rifles\RPK.hpp"
-	
-	//VSS
-	#include "Rifles\VSSVintorez.hpp"
-	#include "Rifles\VAL.hpp"
 	
 	class DMR : Rifle
 	{
@@ -88,15 +72,12 @@ class CfgWeapons
 	#include "Rifles\M4A1.hpp"
 	#include "Rifles\M4A3.hpp"	
 	#include "Rifles\HK416.hpp"	
-	//HK53
+	#include "Rifles\SteyrAug.hpp"	
 	#include "Rifles\HK53.hpp"
-	//Magpul PDR
 	#include "Rifles\PDR.hpp"	
-	//Famas
 	#include "Rifles\Famas.hpp"	
 	#include "Rifles\ACR.hpp"
 	#include "Rifles\KACPDW.hpp"	
-	//CTAR-21
 	#include "Rifles\CTAR21.hpp"	
 	#include "Rifles\Masada.hpp"	
 	#include "Rifles\MK16.hpp"
@@ -111,7 +92,6 @@ class CfgWeapons
 	#include "Rifles\MK17.hpp"
 	#include "Rifles\M110.hpp"
 	
-	//CZ 805
 	#include "Rifles\CZ805.hpp"
 	
 	class M24 : Rifle
@@ -125,6 +105,7 @@ class CfgWeapons
 	
 	class M40A3;
 	#include "Rifles\M40A3.hpp"	
+	#include "Rifles\CZ750.hpp"
 	
 	class M249;
 	#include "Rifles\M249.hpp"
@@ -171,6 +152,11 @@ class CfgWeapons
 	#include "Rifles\SVD.hpp"
 	#include "Rifles\SVU.hpp"
 	
+	#include "Rifles\VSSVintorez.hpp"
+	#include "Rifles\VAL.hpp"
+	
+	#include "Rifles\KSVK.hpp"	
+	
 	#include "Rifles\Mosin.hpp"
 	
 	class MP5A5;
@@ -212,6 +198,10 @@ class CfgWeapons
 	#include "Rifles\L115A3.hpp"
 	#include "Rifles\MSR.hpp"
 	#include "Rifles\XM2010.hpp"
+	#include "Rifles\Anzio_20.hpp"
+	#include "Rifles\AS50.hpp"
+	#include "Rifles\M107.hpp"	
+	#include "Rifles\M4SPR.hpp"		
 	
 	/* PISTOLS */
 	

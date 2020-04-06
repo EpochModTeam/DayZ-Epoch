@@ -153,17 +153,29 @@ class 30Rnd_556x45_G36SD : 30Rnd_556x45_G36
 	};
 };
 
-//ice apo resistance mod new 60rnd stanag mag
-class 60Rnd_556x45_Stanag_tape_ice_DZE : CA_Magazine {
-	scope = public;
-	displayName = $STR_DZE_MAG_60RND_556x45_STANAG_NAME;
-	cartridgeName = "556x45";
-	ammo = "B_556x45_Ball";
-	count = 60;
-	initSpeed = 930;
-	//type = 2*		256;
-	type = 256;
-	tracersEvery = 0;
+class 60Rnd_556x45_Stanag_Taped : 30Rnd_556x45_Stanag {
+	displayName = $STR_DZE_MAG_60RND_556x45_STANAG_NAME;	
 	descriptionShort = $STR_DZE_MAG_60RND_556x45_STANAG_DESC;
-	picture = "\ice_apo_weapons\data\double_ca.paa";
+	count = 60;
+	//picture = "\ice_apo_weapons\data\double_ca.paa"; - will be replaced soon
+	class ItemActions
+	{
+		COMBINE_MAG
+		
+		class ReloadMag	{};
+	};	
+};
+
+class 30Rnd_556x45_Aug : 30Rnd_556x45_Stanag {
+	displayName = $STR_DZ_MAG_30RND_556x45_AUG_NAME;
+	descriptionShort = $STR_DZ_MAG_30RND_AUG_DESC;
+	picture = "\MIDF_Weapons\aug_a3\pictures\aug_a3_mag.paa";
+	model = "\MIDF_Weapons\aug_a3\aug_a3_mag.p3d";	
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+		
+		class ReloadMag	{};
+	};	
 };

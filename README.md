@@ -56,6 +56,7 @@ Included Custom Addons
 * German Firefighters Pack by Marseille77 - http://www.armaholic.com/page.php?id=20391
 * German Civil Pack by Marseille77 - http://www.armaholic.com/page.php?id=9793
 * Sahrani Rearmed: Sahrani Civilians by Marseille77 - http://www.armaholic.com/page.php?id=24325
+* Modern Irish Defence Forces - Steyr Aug A3 Pack by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=9505
 
 --------------------------
 Included Custom Islands
