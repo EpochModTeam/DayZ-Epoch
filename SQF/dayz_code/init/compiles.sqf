@@ -867,3 +867,30 @@ DZE_SafeZonePosCheck = {
 	};
 	_skipPos;
 };
+
+fnc_lockCode = {
+	private ["_color","_code","_cText"];
+
+	if (_this == "") exitWith {0};
+
+	_code = [_this,parseNumber _this] select (typeName _this == "STRING");
+
+	if (_code < 10000 || {_code > 10299}) exitWith {0};
+
+	_color = "";
+	_code = _code - 10000;
+	
+	if (isDedicated) then { // Always show the code server side non localized.
+		_cText = ["Red","Green","Blue"];
+	} else {
+		_cText = [localize "STR_TEAM_RED",localize "STR_TEAM_GREEN",localize "STR_TEAM_BLUE"];
+	};
+
+	if (_code <= 99) then {_color = _cText select 0;};
+	if (_code >= 100 && {_code <= 199}) then {_color = _cText select 1; _code = _code - 100;};
+	if (_code >= 200) then {_color = _cText select 2; _code = _code - 200;};
+	if (_code <= 9) then {_code = format["0%1", _code];};
+	_code = format ["%1%2",_color,_code];
+
+	_code
+};
