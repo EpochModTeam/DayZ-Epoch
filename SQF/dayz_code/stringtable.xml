@@ -3238,20 +3238,52 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_3">
 			<English>Box of Matches</English>
-			<German>Schachtel Streichhölzer</German>
+			<German>Streichhölzer</German>
 			<Russian>Коробок спичек</Russian>
 			<Spanish>Caja de Fósforos</Spanish>
 			<French>Boîte d&apos;allumettes</French>
 			<Czech>Krabička zápalek</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_3_A">
-			<English>5 Matches Left. Box of safety matches for starting a fire under controlled conditions.</English>
-			<Russian>Коробок с пятью спичками.</Russian>
-			<Spanish>5 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
-			<French>5 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
-			<Czech>Zbývá 5 zápalek. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel mit fünf verbleibenden Sicherheitszündhölzern. Von Kindern fernhalten.</German>
+		<Key ID="STR_EQUIP_NAME_MATCHES_5">
+			<English>Box of Matches (5 left)</English>
+			<German>Streichhölzer (5 übrig)</German>
+			<Russian>Коробок спичек (5 izquierda)</Russian>
+			<Spanish>Caja de Fósforos (5 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (5 reste)</French>
+			<Czech>Krabička zápalek (5 zbývající)</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_MATCHES_4">
+			<English>Box of Matches (4 left)</English>
+			<German>Streichhölzer (4 übrig)</German>
+			<Russian>Коробок спичек (4 izquierda)</Russian>
+			<Spanish>Caja de Fósforos (4 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (4 reste)</French>
+			<Czech>Krabička zápalek (4 zbývající)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_MATCHES_3">
+			<English>Box of Matches (3 left)</English>
+			<German>Streichhölzer (3 übrig)</German>
+			<Russian>Коробок спичек (3 izquierda)</Russian>
+			<Spanish>Caja de Fósforos (3 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (3 reste)</French>
+			<Czech>Krabička zápalek (3 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_MATCHES_2">
+			<English>Box of Matches (2 left)</English>
+			<German>Streichhölzer (2 übrig)</German>
+			<Russian>Коробок спичек (2 izquierda)</Russian>
+			<Spanish>Caja de Fósforos (2 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (2 reste)</French>
+			<Czech>Krabička zápalek (2 zbývající)</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_MATCHES_1">
+			<English>Box of Matches (1 left)</English>
+			<German>Streichhölzer (1 übrig)</German>
+			<Russian>Коробок спичек (1 izquierda)</Russian>
+			<Spanish>Caja de Fósforos (1 restante)</Spanish>
+			<French>Boîte d&apos;allumettes (1 reste)</French>
+			<Czech>Krabička zápalek (1 zbývající)</Czech>
+		</Key>	
 		<Key ID="STR_EQUIP_DESC_3_B">
 			<English>4 Matches Left. Box of safety matches for starting a fire under controlled conditions.</English>
 			<Russian>Коробок с четырьмя спичками.</Russian>

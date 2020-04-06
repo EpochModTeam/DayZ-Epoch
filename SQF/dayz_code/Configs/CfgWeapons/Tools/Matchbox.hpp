@@ -35,30 +35,35 @@ class ItemMatchbox : ItemMatchbox_base
 //Do not add to loot tables.
 class Item5Matchbox : ItemMatchbox
 {
+	displayName = $STR_EQUIP_NAME_MATCHES_5;
 	descriptionShort = $STR_EQUIP_DESC_3_A;
 	matches = 5;
 	qtyRemaining = "Item4Matchbox";
 };
 class Item4Matchbox : ItemMatchbox
 {
+	displayName = $STR_EQUIP_NAME_MATCHES_4;
 	descriptionShort = $STR_EQUIP_DESC_3_B;
 	qtyRemaining = "Item3Matchbox";
 	matches = 4;
 };
 class Item3Matchbox : ItemMatchbox
 {
+	displayName = $STR_EQUIP_NAME_MATCHES_3;
 	descriptionShort = $STR_EQUIP_DESC_3_C;
 	qtyRemaining = "Item2Matchbox";
 	matches = 3;
 };
 class Item2Matchbox : ItemMatchbox
-{
+{	
+	displayName = $STR_EQUIP_NAME_MATCHES_2;
 	descriptionShort = $STR_EQUIP_DESC_3_D;
 	qtyRemaining = "Item1Matchbox";
 	matches = 2;
 };
 class Item1Matchbox : ItemMatchbox
 {
+	displayName = $STR_EQUIP_NAME_MATCHES_1;
 	descriptionShort = $STR_EQUIP_DESC_3_E;
 	qtyRemaining = "ItemMatchboxEmpty";
 	matches = 1;
