@@ -7,7 +7,7 @@ class M16A2_DZ : M16A2
 		30Rnd_556x45_G36, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	class Attachments
 	{
@@ -23,7 +23,7 @@ class M16A2_GL_DZ : M16A2GL
 		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	class ItemActions
 	{
@@ -57,7 +57,7 @@ class M16A2_Rusty_DZ : M16A2 {
 		30Rnd_556x45_G36, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	class Library {
 		libTextDesc = "This M16 rifle is in a very bad shape.";

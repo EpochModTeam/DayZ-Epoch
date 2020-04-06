@@ -40,7 +40,7 @@ class Famas_DZ: M4A1
 		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	
 	class Attachments

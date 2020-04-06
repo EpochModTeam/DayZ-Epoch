@@ -8,7 +8,7 @@ class CZ805_A1_DZ: CZ805_A1_ACR {
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };
 
@@ -22,7 +22,7 @@ class CZ805_A1_GL_DZ: CZ805_A1_GL_ACR {
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };
 
@@ -36,7 +36,7 @@ class CZ805_A2_DZ: CZ805_A2_ACR {
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 };
 

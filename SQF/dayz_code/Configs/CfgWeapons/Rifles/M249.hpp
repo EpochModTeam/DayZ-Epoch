@@ -15,7 +15,7 @@ class M249_CCO_DZ : M249
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	
 	class ItemActions
@@ -78,7 +78,7 @@ class M249_EP1_DZ: M249_EP1 { //Iron sight with shorter stock (slightly differen
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };
 
@@ -95,6 +95,6 @@ class M249_m145_EP1_DZE: M249_m145_EP1 {
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };

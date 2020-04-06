@@ -14,7 +14,7 @@ class XM8_DZ: m8_carbine {
 		100Rnd_556x45_BetaCMag,	
 		30Rnd_556x45_Stanag,		
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};		
 	
 	class Single: Mode_SemiAuto
@@ -99,7 +99,7 @@ class XM8_GL_DZ: m8_carbineGL {
 		100Rnd_556x45_BetaCMag,	
 		30Rnd_556x45_Stanag,		
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 	
 	class Single: Mode_SemiAuto
@@ -176,7 +176,7 @@ class XM8_Compact_DZ: m8_compact {
 		100Rnd_556x45_BetaCMag,	
 		30Rnd_556x45_Stanag,		
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 	
 	class Single: Mode_SemiAuto
@@ -268,7 +268,7 @@ class XM8_Sharpsh_DZ: m8_sharpshooter {
 		100Rnd_556x45_BetaCMag,	
 		30Rnd_556x45_Stanag,		
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	
 	class Single: Mode_SemiAuto
@@ -345,7 +345,7 @@ class XM8_SAW_DZ: m8_SAW {
 		30Rnd_556x45_G36,		
 		30Rnd_556x45_Stanag,		
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 	
 	modes[] = {"FullAuto"};

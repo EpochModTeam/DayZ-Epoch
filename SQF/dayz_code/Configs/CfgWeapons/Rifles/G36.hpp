@@ -9,7 +9,7 @@ class G36K_Camo_DZ : G36C
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	//G36 Optic
 	optics = true;

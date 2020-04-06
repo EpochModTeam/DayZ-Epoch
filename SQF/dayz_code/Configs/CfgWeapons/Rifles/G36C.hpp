@@ -47,7 +47,7 @@ class G36C_DZ : G36C
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	class Attachments
 	{
@@ -234,7 +234,7 @@ class G36C_Camo_DZ : G36C_camo
 		100Rnd_556x45_BetaCMag,
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };
 

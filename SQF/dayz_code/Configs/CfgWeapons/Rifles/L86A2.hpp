@@ -6,6 +6,6 @@ class L86A2_LSW_DZ: BAF_L86A2_ACOG {
 		30Rnd_556x45_G36, 
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };

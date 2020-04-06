@@ -74,7 +74,7 @@ class L85A2_DZ : BAF_L85A2_RIS_Holo
 		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};
 	class Single;
 	class FullAuto;
@@ -762,6 +762,6 @@ class BAF_L85A2_RIS_TWS_DZ : BAF_L85A2_RIS_CWS
 		30Rnd_556x45_G36,
 		100Rnd_556x45_BetaCMag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };

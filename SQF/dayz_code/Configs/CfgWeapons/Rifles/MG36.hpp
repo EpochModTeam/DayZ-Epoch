@@ -7,7 +7,7 @@ class MG36_DZ: MG36 {
 		30Rnd_556x45_G36,		
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };
 
@@ -20,6 +20,6 @@ class MG36_Camo_DZ: MG36_camo {
 		30Rnd_556x45_G36,		
 		30Rnd_556x45_Stanag,
 		20Rnd_556x45_Stanag,
-		60Rnd_556x45_Stanag_tape_ice_DZE
+		60Rnd_556x45_Stanag_Taped
 	};	
 };
