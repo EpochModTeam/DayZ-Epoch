@@ -51,9 +51,11 @@ spawn_roadblocks = compile preprocessFileLineNumbers "\z\addons\dayz_server\comp
 spawn_vehicles = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_vehicles.sqf";
 
 server_medicalSync = {
+	private ["_player","_array"];
+
 	_player = _this select 0;
 	_array = _this select 1;
-	
+
 	_player setVariable ["USEC_isDead",(_array select 0)]; //0
 	_player setVariable ["NORRN_unconscious",(_array select 1)]; //1
 	_player setVariable ["USEC_infected",(_array select 2)]; //2
@@ -75,55 +77,17 @@ dayz_Achievements = {
 	_achievementID = (_this select 0) select 0;
 	_player = (_this select 0) select 1;
 	_playerOwnerID = owner _player;
-	
+
 	_achievements = _player getVariable "Achievements";
 	_achievements set [_achievementID,1];
 	_player setVariable ["Achievements",_achievements];
 };
 */
 
-//Send fences to this array to be synced to db, should prove to be better performaince wise rather then updaing each time they take damage.
-server_addtoFenceUpdateArray = {
-	private ["_class","_clientKey","_damage","_exitReason","_index","_object","_playerUID"];
-	_object = _this select 0;
-	_damage = _this select 1;
-	_playerUID = _this select 2;
-	_clientKey = _this select 3;
-	_index = dayz_serverPUIDArray find _playerUID;
-	_class = typeOf _object;
-
-	_exitReason = switch true do {
-		//Can't use owner because player may already be dead, can't use distance because player may be far from fence
-		case (_clientKey == dayz_serverKey): {""};
-		case (_index < 0): {
-			format["Server_AddToFenceUpdateArray error: PUID NOT FOUND ON SERVER. PV ARRAY: %1",_this]
-		};
-		case ((dayz_serverClientKeys select _index) select 1 != _clientKey): {
-			format["Server_AddToFenceUpdateArray error: CLIENT AUTH KEY INCORRECT OR UNRECOGNIZED. PV ARRAY: %1",_this]
-		};
-		case !(_class isKindOf "DZ_buildables"): {
-			format["Server_AddToFenceUpdateArray error: setDamage request on non DZ_buildable. PV ARRAY: %1",_this]
-		};
-		default {""};
-	};
-	
-	if (_exitReason != "") exitWith {diag_log _exitReason};	
-	
-	_object setDamage _damage;
-
-	if !(_object in needUpdate_FenceObjects) then {
-		needUpdate_FenceObjects set [count needUpdate_FenceObjects, _object];
-		if (_playerUID != "SERVER") then {
-			diag_log format["DAMAGE: PUID(%1) requested setDamage %2 on fence %3 ID:%4 UID:%5",_playerUID,_damage,_class,(_object getVariable["ObjectID","0"]),(_object getVariable["ObjectUID","0"])];
-		};
-	};
-};
-
 vehicle_handleServerKilled = {
-	private ["_unit","_killer"];
+	private "_unit";
 	_unit = _this select 0;
-	_killer = _this select 1;
-		
+
 	[_unit,"killed",false,false,"SERVER",dayz_serverKey] call server_updateObject;
 	_unit removeAllMPEventHandlers "MPKilled";
 	_unit removeAllEventHandlers "Killed";
@@ -133,7 +97,7 @@ vehicle_handleServerKilled = {
 };
 
 check_publishobject = {
-	private ["_saveObject","_allowed","_allowedObjects","_object","_playername"];
+	private ["_saveObject","_allowed","_object","_playername"];
 
 	_object = _this select 0;
 	_playername = _this select 1;
@@ -147,13 +111,13 @@ check_publishobject = {
 		_saveObject = "DayZ_SafeObjects";
 		_allowed = true;
 	};
-	
+
 	//Buildings
 	if (_object isKindOf "DZ_buildables") then {
 		_saveObject = "DZ_buildables";
 		_allowed = true;
 	};
-	
+
 	#ifdef OBJECT_DEBUG
 		diag_log format["DEBUG: Object: %1 published by %2 is allowed by %3",_object,_playername,_saveObject];
 	#endif
@@ -187,23 +151,23 @@ server_getStatsDiff = {
 	_playerUID = _this select 1;
 	_result = [];
 	_statsArray = missionNamespace getVariable _playerUID;
-	
+
 	if (isNil "_statsArray") exitWith {
 		diag_log format["Server_getStatsDiff error: playerUID %1 not found on server",_playerUID];
 		[0,0,0,0,0]
 	};
-	
+
 	{
 		_new = _player getVariable [_x,0];
 		_old = _statsArray select _forEachIndex;
 		_result set [_forEachIndex, (_new - _old)];
 		_statsArray set [_forEachIndex, _new]; //updates original var too
 	} forEach ["humanity","zombieKills","headShots","humanKills","banditKills"];
-	
+
 	#ifdef PLAYER_DEBUG
-	diag_log format["Server_getStatsDiff - Object:%1 Diffs:%2 New:%3",_player,_result,_statsArray];
+		diag_log format["Server_getStatsDiff - Object:%1 Diffs:%2 New:%3",_player,_result,_statsArray];
 	#endif
-	
+
 	_result
 };
 
@@ -223,14 +187,14 @@ dayz_recordLogin = {
 	private ["_key","_status","_name"];
 	_key = format["CHILD:103:%1:%2:%3:",_this select 0,_this select 1,_this select 2];
 	_key call server_hiveWrite;
-		
-	_status = switch (1==1) do {
-		case ((_this select 2) == 0): { "CLIENT LOADED & PLAYING" };
-		case ((_this select 2) == 1): { "LOGIN PUBLISHING, Location " +(_this select 4) };
-		case ((_this select 2) == 2): { "LOGGING IN" };
-		case ((_this select 2) == 3): { "LOGGED OUT, Location " +(_this select 4) };
+
+	_status = call {
+		if ((_this select 2) == 0) exitwith { "CLIENT LOADED & PLAYING" };
+		if ((_this select 2) == 1) exitwith { "LOGIN PUBLISHING, Location " +(_this select 4) };
+		if ((_this select 2) == 2) exitwith { "LOGGING IN" };
+		if ((_this select 2) == 3) exitwith { "LOGGED OUT, Location " +(_this select 4) };
 	};
-	
+
 	_name = if (typeName (_this select 3) == "ARRAY") then { toString (_this select 3) } else { _this select 3 };
 	diag_log format["INFO - Player: %1(UID:%3/CID:%4) Status: %2",_name,_status,(_this select 0),(_this select 1)];
 };
@@ -254,8 +218,10 @@ fa_coor2str = {
 	private["_pos","_res","_nearestCity","_town"];
 
 	_pos = +(_this);
-	if (count _pos < 1) then { _pos = [0,0]; }
-	else { if (count _pos < 2) then { _pos = [_pos select 0,0]; };
+	if (count _pos < 1) then {
+		_pos = [0,0];
+	} else {
+		if (count _pos < 2) then { _pos = [_pos select 0,0]; };
 	};
 	_nearestCity = nearestLocations [_pos, ["NameCityCapital","NameCity","NameVillage","NameLocal"],1000];
 	_town = "Wilderness";
