@@ -1630,6 +1630,30 @@
 			<Czech>Zkombinovali jste %1x neúplný %2 dohromady.&lt;br/&gt;Zbývá vám ještě %3x %4.</Czech>
 			<German>Du hast %1 teilweise gefüllte %2 zu einem kombiniert und hast %3 %4 übrig.</German>
 		</Key>
+		<Key ID="str_combineQuiver">
+			<English>quiver</English>
+			<German>Köcher</German>
+		</Key>		
+		<Key ID="str_combineQuivers">
+			<English>quivers</English>
+			<German>Köcher</German>
+		</Key>	
+		<Key ID="str_combineArrows">
+			<English>arrows</English>
+			<German>Pfeile</German>
+		</Key>
+		<Key ID="str_combineMagazines">
+			<English>magazines</English>
+			<German>Magazine</German>
+		</Key>		
+		<Key ID="str_combineMagazine">
+			<English>magazine</English>
+			<German>Magazin</German>
+		</Key>	
+		<Key ID="str_combineBullets">
+			<English>bullets</English>
+			<German>Kugeln</German>
+		</Key>		
 		<Key ID="str_sleepStats">
 			<English>Blood regenerated: %1, Blood: %2</English>
 			<Russian>Крови восстановлено: %1, Кровь: %2</Russian>
@@ -4141,7 +4165,7 @@
 			<Spanish>Pila de Leña</Spanish>
 			<French>Tas de bois</French>
 			<Czech>Hromádka dřeva</Czech>
-		</Key>
+		</Key>		
 		<Key ID="STR_EQUIP_DESC_40">
 			<English>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</English>
 			<German>Ein kleiner Stapel frisch gehacktes Holz, welches unter anderem dazu verwendet werden kann, ein Feuer zu machen.</German>
@@ -9848,13 +9872,6 @@
 			<French>Des planches de bois</French>
 			<Czech>Hrubá neohoblovaná prkna</Czech>
 			<German>Eine zurechtgesägte Holzplanke, welche zum Herstellen von Objekten genutzt werden kann.</German>
-		</Key>
-		<Key ID="STR_BLD_craft_ItemPlank">
-			<English>Wood Piles</English>
-			<Russian>Поленья</Russian>
-			<French>Couper en petits bois</French>
-			<Czech>Rozštípat</Czech>
-			<German>Holzpfähle</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemMetalSheet">
 			<English>Corrugated Sheet</English>
