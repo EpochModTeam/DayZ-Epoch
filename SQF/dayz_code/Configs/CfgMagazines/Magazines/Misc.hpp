@@ -26,18 +26,6 @@ class 10Rnd_303British : 10x_303
 	};
 };
 
-//M107
-class 10Rnd_127x99_m107 : CA_Magazine
-{
-	displayName = $STR_DZ_MAG_10Rnd_127x99_m107_NAME;
-	
-	cartridgeName = "127x99";
-	
-	class ItemActions
-	{
-		COMBINE_MAG
-	};
-};
 //KSVK
 class 5Rnd_127x108_KSVK : CA_Magazine
 {

@@ -14259,6 +14259,21 @@
 			<English>10Rnd. M107 mag.</English>
 			<Russian>10п. M107 маг.</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_5RND_127x99_m107_DESC">
+			<English>Caliber: 12.7x99mm NATO&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: M107, AS50</English>
+			<French>Calibre: 12.7x99mm NATO&lt;br/&gt;Munitions : 5&lt;br/&gt;Utilisé avec: M107, AS50</French>
+			<Spanish>Calibre: 12.7x99mm NATO&lt;br/&gt;Cartuchos: 5&lt;br/&gt;Usado en: M107, AS50</Spanish>
+			<Italian>Calibro: 12.7x99mm NATO&lt;br/&gt;Munizioni: 5&lt;br/&gt;Usato in: M107, AS50</Italian>
+			<Polish>Kaliber: 12.7x99mm NATO&lt;br/&gt;Naboje: 5&lt;br/&gt;Uzywany w: M107, AS50</Polish>
+			<Russian>Патрон: 12.7x99mm NATO&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: M107, AS50</Russian>
+			<German>Kaliber: 12.7x99mm NATO&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: M107, AS50</German>
+			<Czech>Kalibr: 12.7x99mm NATO&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: M107, AS50</Czech>
+			<Hungarian>Kaliber: 12.7x99mm NATO&lt;br/&gt; Töltények: 5&lt;br/&gt; Hozzá tartozó fegyver: M107, AS50</Hungarian>
+		</Key>			
+		<Key ID="STR_DZ_MAG_5Rnd_127x99_AS50_NAME">
+			<English>5Rnd. AS50 mag.</English>
+			<Russian>5п. AS50 маг.</Russian>
+		</Key>		
 		<Key ID="STR_DZ_MAG_5Rnd_127x108_KSVK_NAME">
 			<English>5Rnd. KSVK mag.</English>
 			<Russian>5п. KSVK маг.</Russian>
@@ -16335,7 +16350,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_201">
 			<English>Empty Case</English>
-			<German>Leerer Koffer</German>
+			<German>Koffer leeren</German>
 			<Russian>Пустой чемоданчик</Russian>
 			<Dutch>Maak kist leeg</Dutch>
 			<Czech>Prázdný kufřík</Czech>
