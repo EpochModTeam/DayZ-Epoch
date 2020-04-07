@@ -1,4 +1,4 @@
-private ["_zeds","_isWreck","_looted","_zombied","_doNothing","_spawnZedRadius","_serverTime","_age","_position","_radius","_maxtoCreate","_inVehicle","_isAir","_isLand","_isSea","_Controlledzeddivided","_nearby","_type","_config","_canSpawn","_dis","_checkLoot","_islocal","_bPos","_zombiesNum"];
+private ["_zeds","_isWreck","_looted","_zombied","_doNothing","_spawnZedRadius","_serverTime","_age","_position","_radius","_inVehicle","_Controlledzeddivided","_nearby","_type","_config","_canSpawn","_dis","_checkLoot","_islocal","_bPos","_zombiesNum","_vehicle"];
 _age = -1;
 _position = [player] call fnc_getPos;
 _radius = 200; // distance from player to perform checks.
@@ -35,13 +35,13 @@ if (_inVehicle) then {
     //Crew can spawn zeds.
     if ((count (crew _vehicle)) > 1) then {
         _Controlledzeddivided = 2;
-        
+
         //Dont allow driver to spawn if we have other crew members.
-        if (player == driver _vehicle) exitwith {_doNothing = true;};
+    	if (player == driver _vehicle) exitwith {_doNothing = true;};
     } else {
         _Controlledzeddivided = 4;
     };
-    
+
     if (_Controlledzeddivided > 0) then {
         dayz_maxControlledZombies = round(dayz_maxControlledZombies / _Controlledzeddivided);
     };
@@ -90,7 +90,7 @@ if (_doNothing) exitWith {};
 
 	//Logging
 	diag_log (format["%1 Local.Agents: %2/%3, NearBy.Agents: %8/%9, Global.Agents: %6/%7, W.holders: %10/%11, (radius:%4m %5fps).","SpawnCheck",
-		dayz_spawnZombies, dayz_maxControlledZombies, _radius, round diag_fpsmin,dayz_currentGlobalZombies, 
+		dayz_spawnZombies, dayz_maxControlledZombies, _radius, round diag_fpsmin,dayz_currentGlobalZombies,
 		dayz_maxGlobalZeds, dayz_CurrentNearByZombies, dayz_maxNearByZombies, dayz_currentWeaponHolders,dayz_maxMaxWeaponHolders]);
 };*/
 
@@ -110,7 +110,7 @@ _serverTime = serverTime; // Get the current time once per cycle.
     if (_canSpawn) then {
 	    _dis = _x distance player;
 		_islocal = _x getVariable ["", false]; // object created locally via TownGenerator.
-		
+
 		//Loot
 		if (dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders) then { // Check this first
 			_checkLoot = (count (getArray (_config >> "lootPos"))) > 0;
@@ -129,17 +129,17 @@ _serverTime = serverTime; // Get the current time once per cycle.
 			if (_dis > _spawnZedRadius) then {
 				_zombied = (_x getVariable ["zombieSpawn",_serverTime]);
 				_age = _serverTime - _zombied;
-				if ((_age == 0) || {_age > 300}) then { 
+				if ((_age == 0) || {_age > 300}) then {
 					//Make sure crash sites always spawn Zeds
 					_isWreck = _x isKindOf "CrashSite";
 					_bPos = getPosATL _x;
 					if (!_isWreck) then {
 						if ((dayz_spawnZombies < dayz_maxControlledZombies) && {dayz_CurrentNearByZombies < dayz_maxNearByZombies} && {dayz_currentGlobalZombies < dayz_maxGlobalZeds}) then {
 							_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);
-							if (_zombiesNum == 0) then {   
+							if (_zombiesNum == 0) then {
 								_x setVariable ["zombieSpawn",_serverTime,!_islocal];
 								[_x,_bPos,_config,false] call building_spawnZombies;
-							};							
+							};
 						};
 					} else {
 						_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 30)]);
@@ -149,4 +149,4 @@ _serverTime = serverTime; // Get the current time once per cycle.
 			};
 		};
     };
-} forEach _nearby;
+} count _nearby;

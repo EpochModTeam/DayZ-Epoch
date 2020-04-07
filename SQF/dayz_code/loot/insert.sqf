@@ -50,4 +50,4 @@ if (!local _unit) exitWith {
 			};
 		};
 	};
-} count Loot_Select(_group,_count);
+} foreach Loot_Select(_group,_count);

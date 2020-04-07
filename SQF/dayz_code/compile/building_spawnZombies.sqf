@@ -2,7 +2,7 @@
         Created exclusively for ArmA2:OA - DayZMod.
         Please request permission to use/alter/distribute from project leader (R4Z0R49)
 */
-private ["_type","_position","_minDist","_maxDist","_isWreck","_nearByPlayer","_iPos","_positions","_zombieChance","_unitTypes","_min","_max","_num","_clean","_obj","_config","_i","_objPos"];
+private ["_type","_position","_minDist","_maxDist","_isWreck","_nearByPlayer","_iPos","_positions","_zombieChance","_unitTypes","_min","_max","_num","_obj","_config","_i","_objPos"];
 _obj = _this select 0;
 _objPos = _this select 1;
 _config = _this select 2;
@@ -17,8 +17,8 @@ if (!([_objPos] call DZE_SafeZonePosCheck)) then {
 	_zombieChance =	getNumber (_config >> "zombieChance");
 	_num = round(random(_max - _min) + _min);
 	_minDist = (sizeOf _type);
-	_maxDist = if (_isWreck) then {(_minDist + 20)} else {(_minDist + 10)}; // zeds at crash sites can spawn further away.
-	
+	_maxDist = [(_minDist + 10),(_minDist + 20)] select (_isWreck); // zeds at crash sites can spawn further away.
+
 	// Walking Zombies
 	for "_i" from 0 to _num do {
 		if ((dayz_spawnZombies < dayz_maxControlledZombies) && {dayz_CurrentNearByZombies < dayz_maxNearByZombies} && {dayz_currentGlobalZombies < dayz_maxGlobalZeds}) then {
@@ -26,7 +26,7 @@ if (!([_objPos] call DZE_SafeZonePosCheck)) then {
 			[_position,true,_unitTypes,_isWreck,false] call zombie_generate;
 		};
 	};
-	
+
 	// Internal Zombies
 	_nearByPlayer = ({isPlayer _x} count (_objPos nearEntities ["CAManBase",30])) > 0;
 	if (!_nearByPlayer) then {

@@ -34,6 +34,6 @@ _zPos set [2, (_zPos select 2) + 1.7];
 		};
 	};
 	if (!_isOk) exitWith {false};
-} forEach playableUnits;
+} count playableUnits;
 
 _isOk
