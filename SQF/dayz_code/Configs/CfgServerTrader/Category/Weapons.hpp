@@ -411,9 +411,9 @@ class Category_16 {
 	class SA58_ACOG_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
 	class SA58_ACOG_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {9,"ItemGoldBar"};};
 	//Desert camo no attachment support
-	class Sa58V_CCO_EP1 {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class Sa58V_Camo_CCO_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	//Desert camo no attachment support
-	class Sa58V_RCO_EP1 {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
+	class Sa58V_Camo_ACOG_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class AKM_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class AKM_Kobra_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};
 	class AKM_PSO1_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};
@@ -507,7 +507,8 @@ class Category_16 {
 	class MK17_GL_Holo_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {18,"ItemGoldBar"};};
 	class MK17_ACOG_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {14,"ItemGoldBar"};};
 	class MK17_GL_ACOG_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {16,"ItemGoldBar"};};
-	class MK17_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {18,"ItemGoldBar"};};	class CZ805_B_GL_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class MK17_ACOG_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {18,"ItemGoldBar"};};	
+	class CZ805_B_GL_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class HK417_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class HK417_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};
 	class HK417_Holo_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {12,"ItemGoldBar"};};

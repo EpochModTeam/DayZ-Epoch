@@ -4,7 +4,7 @@ class AKM_DZ : AK_47_M
 	picture = "\z\addons\dayz_communityweapons\akm\data\w_akm_ca.paa";
 	displayName = $STR_DZ_WPN_AKM_NAME;
 	
-	//magazines[] = {30Rnd_762x39_AK47}; //Allow default A2 mags
+	magazines[] = {30Rnd_762x39_AK47,60Rnd_762x39_AK47_Taped};
 	
 	//iron sight zeroing
 	weaponInfoType = "RscWeaponZeroing";

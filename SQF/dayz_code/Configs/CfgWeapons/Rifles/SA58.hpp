@@ -27,7 +27,7 @@ class SA58_DZ : Sa58V_EP1
 	displayName = $STR_DZ_WPN_SA58_NAME;
 	
 	modes[] = {Single, FullAuto};
-	//magazines[] = {30Rnd_762x39_SA58}; //Allow default A2 mags
+	magazines[] = {30Rnd_762x39_SA58,30Rnd_762x39_AK47,60Rnd_762x39_AK47_Taped};
 	
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800};
@@ -373,4 +373,16 @@ class SA58_ACOG_MFL_DZ : SA58_ACOG_DZ
 			script = "; ['Attachment_MFL',_id,'SA58_ACOG_DZ'] call player_removeAttachment";
 		};
 	};
+};
+
+class Sa58V_DZ: Sa58V_EP1 {
+	magazines[] = {30Rnd_762x39_SA58,30Rnd_762x39_AK47,60Rnd_762x39_AK47_Taped};
+};
+class Sa58V_CCO_EP1;
+class Sa58V_Camo_CCO_DZ: Sa58V_CCO_EP1 {
+	magazines[] = {30Rnd_762x39_SA58,30Rnd_762x39_AK47,60Rnd_762x39_AK47_Taped};
+};
+class Sa58V_RCO_EP1;
+class Sa58V_Camo_ACOG_DZ: Sa58V_RCO_EP1 {
+	magazines[] = {30Rnd_762x39_SA58,30Rnd_762x39_AK47,60Rnd_762x39_AK47_Taped};
 };

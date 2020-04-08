@@ -223,8 +223,8 @@ weaponsCZ[] =
 	
 	// Assault Rifles
 	{Loot_WEAPON,		6,		SA58_DZ},
-	{Loot_WEAPON,		6,		Sa58V_CCO_EP1},
-	{Loot_WEAPON,		6,		Sa58V_RCO_EP1},
+	{Loot_WEAPON,		6,		Sa58V_Camo_CCO_DZ},
+	{Loot_WEAPON,		6,		Sa58V_Camo_ACOG_DZ},
 	{Loot_WEAPON,		6,		SA58_RIS_DZ},
 	{Loot_WEAPON,		6,		CZ805_A1_DZ},
 	{Loot_WEAPON,		6,		CZ805_A1_GL_DZ},

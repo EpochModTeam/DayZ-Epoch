@@ -11,7 +11,8 @@ class RPK_DZ : AK_47_M
 	{
 		75Rnd_762x39_RPK,
 		30Rnd_762x39_AK47,
-		30Rnd_762x39_SA58
+		30Rnd_762x39_SA58,
+		60Rnd_762x39_AK47_Taped
 	};
 	
 	modes[] = {FullAuto,Single};

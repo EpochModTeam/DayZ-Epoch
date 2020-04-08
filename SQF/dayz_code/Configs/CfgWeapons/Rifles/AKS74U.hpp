@@ -8,6 +8,7 @@ class AKS74U_Kobra_DZ : AKS_74_U
 	magazines[] =
 	{
 		30Rnd_545x39_AK,
+		60Rnd_545x39_AK_Taped,
 		75Rnd_545x39_RPK
 	};
 	
@@ -35,7 +36,8 @@ class AKS74U_Kobra_SD_DZ : AKS_74_UN_kobra
 	
 	magazines[] =
 	{
-		30Rnd_545x39_AKSD
+		30Rnd_545x39_AKSD,
+		60Rnd_545x39_AKSD_Taped
 	};
 	
 	class ItemActions

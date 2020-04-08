@@ -47,7 +47,8 @@ class CZ805_A2_SD_DZ: CZ805_A2_SD_ACR {
 	magazines[] =
 	{
 		30Rnd_556x45_G36SD,
-		30Rnd_556x45_StanagSD
+		30Rnd_556x45_StanagSD,
+		60Rnd_556x45_StanagSD_Taped
 	};	
 };
 

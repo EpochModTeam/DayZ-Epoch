@@ -7,6 +7,7 @@ class RPK74_Kobra_DZ : RPK_74
 	magazines[] =
 	{
 		75Rnd_545x39_RPK,
+		60Rnd_545x39_AK_Taped,
 		30Rnd_545x39_AK
 	};
 	

@@ -13441,6 +13441,14 @@
 			<English>30Rnd. AK-47M mag.</English>
 			<Russian>30п. АК-47М маг.</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_60RND_762X39_AK47_NAME">
+			<English>60Rnd. AK-47M mag.</English>
+			<Russian>60п. АК-47М маг.</Russian>
+		</Key>	
+		<Key ID="STR_DZE_MAG_60RND_762X39_AK47_DESC">
+			<English>Caliber: 7.62x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
+			<German>Kaliber: 7.62x39mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: AK-47M, SA-58, RPK</German>
+		</Key>		
 		<Key ID="STR_DZ_MAG_30RND_762X39_SA58_NAME">
 			<English>30Rnd. SA-58 mag.</English>
 			<Russian>30п. SA-58 маг.</Russian>
@@ -13480,12 +13488,12 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_100RND_762X51_M240_NAME">
 			<English>100Rnd. M240 belt</English>
-			<German>100 Schuss M240 Gurt</German>
+			<German>100Rnd. M240 Gurt</German>
 			<Russian>100п. M240 лента</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_100RND_762x54_PK_NAME">
 			<English>100Rnd. PK belt</English>
-			<German>100 Schuss PK Gurt</German>
+			<German>100Rnd. PK Gurt</German>
 			<Russian>100п. ПК лента</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_762x54_SVD_NAME">
@@ -13517,7 +13525,7 @@
 		
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_NAME">
 			<English>50Rnd. UK-59 belt</English>
-			<German>50 Schuss UK-59 Gurt</German>
+			<German>50Rnd. UK-59 Gurt</German>
 			<Russian>50п. UK-59 лента</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_DESC">
@@ -13528,7 +13536,7 @@
 		
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_NAME">
 			<English>75Rnd. RPK drum mag.</English>
-			<German>75 Schuss RPK Trommelmagazin</German>
+			<German>75Rnd. RPK Trommelmagazin</German>
 			<Russian>75п. РПК барабан</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_DESC">
@@ -13539,23 +13547,23 @@
 		
 		<Key ID="STR_DZ_MAG_75RND_545X39_RPK_NAME">
 			<English>75Rnd. RPK-74 drum mag.</English>
-			<German>75 Schuss RPK-74 Trommelmagazin</German>
+			<German>75Rnd. RPK-74 Trommelmagazin</German>
 			<Russian>75п. РПК-74 барабан</Russian>
 		</Key>
 		
 		<Key ID="STR_DZ_MAG_100RND_556X45_M249_NAME">
 			<English>100Rnd. M249 belt</English>
-			<German>100 Schuss M249 Gurt</German>
+			<German>100Rnd. M249 Gurt</German>
 			<Russian>100п. M249 лента</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_556X45_M249_NAME">
 			<English>200Rnd. M249 belt</English>
-			<German>200 Schuss M249 Gurt</German>
+			<German>200Rnd. M249 Gurt</German>
 			<Russian>200п. M249 лента</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_556X45_L110_NAME">
 			<English>200Rnd. L110 belt</English>
-			<German>200 Schuss L110 Gurt</German>
+			<German>200Rnd. L110 Gurt</German>
 			<Russian>200п. L110 лента</Russian>
 		</Key>		
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_NAME">
@@ -13582,7 +13590,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_W1866_NAME">
 			<English>15Rnd. 1866 ammo</English>
-			<German>15 Schuss 1866er Flintenlaufgeschoss</German>
+			<German>15Rnd. 1866er</German>
 			<Russian>15п. для 1866</Russian>
 			<Spanish>15 Rondas. Balas para 1866</Spanish>
 			<French>15 balles pour 1866</French>
@@ -13600,7 +13608,6 @@
 			<Spanish>2Rnd. Slug</Spanish>
 			<French>2 balles</French>
 			<Czech>2 patrony Slug</Czech>
-			<German>2 Schuss Flintenlaufgeschoss</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_SLUG_DESC">
 			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2 &lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
@@ -13616,7 +13623,7 @@
 			<Spanish>2Rnd. Perdigones</Spanish>
 			<French>2 cartouches</French>
 			<Czech>2 patrony broků</Czech>
-			<German>2 Schuss Schrot</German>
+			<German>2Rnd. 12Cal. Schrot</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_DESC">
 			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2&lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
@@ -13632,7 +13639,6 @@
 			<Spanish>8Rnd. Slug</Spanish>
 			<French>8 balles</French>
 			<Czech>8 patrony Slug</Czech>
-			<German>8 Schuss Flintenlaufgeschoss</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_SLUG_DESC">
 			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 8 &lt;br/&gt;Used in: M1014, Remington 870</English>
@@ -13648,7 +13654,7 @@
 			<Spanish>8Rnd. Perdigones</Spanish>
 			<French>8 cartouches</French>
 			<Czech>8 patrony broků</Czech>
-			<German>8 Schuss Schrot</German>
+			<German>8Rnd. 12Cal. Schrot</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_BUCK_DESC">
 			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M1014, Remington 870</English>
@@ -13681,13 +13687,33 @@
 			<Hungarian>Kaliber: 9x19mm Parabellum SD&lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: MP5SD, Scorpion Evo 3 SD</Hungarian>
         </Key>	
 		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_NAME">
-			<English>60Rnd. Stanag Mag</English>
-			<German>60 Schuss Stanag Mag</German>
+			<English>60Rnd. Stanag mag</English>
 		</Key>
-		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
-			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, M16, M4, M249, MK-12 and L110</English>
-			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, M16, M4, M249, MK-12 und L110</German>
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAGSD_NAME">
+			<English>60Rnd. Stanag SD mag</English>
 		</Key>		
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAG_DESC">
+			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</English>
+			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</German>
+		</Key>
+		<Key ID="STR_DZE_MAG_60RND_556x45_STANAGSD_DESC">
+			<English>Caliber: 5.56x45mm SD&lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</English>
+			<German>Kaliber: 5.56x45mm SD&lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</German>
+		</Key>	
+		<Key ID="STR_DZE_MAG_60RND_545x39_AK74_NAME">
+			<English>60Rnd. AK-74 mag</English>
+		</Key>	
+		<Key ID="STR_DZE_MAG_60RND_545x39_AK74_DESC">
+			<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-74, AK-107 and RPK-74</English>
+			<German>Kaliber: 5.45x39mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: AK-74, AK-107 und RPK-74</German>
+		</Key>
+		<Key ID="STR_DZE_MAG_60RND_545x39_AK74SD_NAME">
+			<English>60Rnd. AK-74 SD mag</English>
+		</Key>			
+		<Key ID="STR_DZE_MAG_60RND_545x39_AK74SD_DESC">
+			<English>Caliber: 5.45x39mm SD&lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-74 SD</English>
+			<German>Kaliber: 5.45x39mm SD&lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Eingesetzt in: AK-74 SD</German>
+		</Key>			
          <Key ID="STR_DZ_MAG_30RND_AK74_DESC">
 			<German>Kaliber: 5.45x39mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: AK-74, AK-107 und RPK-74</German>
 			<English>Caliber: 5.45x39mm &lt;br/&gt;Rounds: 30 &lt;br/&gt;Used in: AK-74, AK-107 and RPK-74</English>
@@ -13725,15 +13751,15 @@
 			<English>100Rnd. Beta C-Mag</English>
 		</Key>
 		<Key ID="STR_DZ_MAG_100RND_BetaCMag_DESC">
-			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, M8 und L110</German>
-			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, M8 and L110</English>
-			<Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, M8 e L110</Italian>
-			<Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, M8 y L110</Spanish>
-			<French>Calibre: 5.56x45mm &lt;br/&gt;Munitions: 100 &lt;br/&gt;Utilisé avec: G36, MG36, M16, M4, M249, MK-12, M8 et L110</French>
-			<Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, M8 a L110</Czech>
-			<Russian>Патрон: 5.56x45мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, M8, L110</Russian>
-			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, M8 i L110</Polish>
-			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, M8 and L110</Hungarian>
+			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 100 &lt;br/&gt;Eingesetzt in: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</German>
+			<English>Caliber: 5.56x45mm &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</English>
+			<Italian>Calibro: 5.56x45mm &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Italian>
+			<Spanish>Calibre: 5.56x45mm &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Spanish>
+			<French>Calibre: 5.56x45mm &lt;br/&gt;Munitions: 100 &lt;br/&gt;Utilisé avec: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</French>
+			<Czech>Kalibr: 5.56x45mm &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Czech>
+			<Russian>Патрон: 5.56x45мм &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Russian>
+			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Polish>
+			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21</Hungarian>
         </Key>	
 		<Key ID="STR_DZ_MAG_20RND_MK17_DESC">
 			<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK17, M110, CZ 805B</English>

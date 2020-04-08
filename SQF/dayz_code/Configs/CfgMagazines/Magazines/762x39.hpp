@@ -23,9 +23,26 @@ class 30Rnd_762x39_AK47 : CA_Magazine
 	};
 };
 
+
+class 60Rnd_762x39_AK47_Taped : 30Rnd_762x39_AK47
+{
+	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_akmtwin_mag.paa";
+    model = "\z\addons\dayz_epoch_w\magazine\dze_akm_twin_mag.p3d";
+	displayName = $STR_DZ_MAG_60RND_762X39_AK47_NAME;
+	descriptionShort = $STR_DZE_MAG_60RND_762X39_AK47_DESC;
+	count = 60;
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+		
+		delete ReloadMag;
+	};
+};
+
 class 75Rnd_762x39_RPK : 30Rnd_762x39_AK47
 {
-	model = "dayz_epoch_c\models\magazines\RPK_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_RPK_mag.p3d";
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_rpk_ca.paa";
 	displayName = $STR_DZ_MAG_75RND_762X39_RPK_NAME;
 	descriptionShort = $STR_DZ_MAG_75RND_762X39_RPK_DESC;

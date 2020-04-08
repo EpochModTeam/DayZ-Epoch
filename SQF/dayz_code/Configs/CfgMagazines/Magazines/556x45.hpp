@@ -29,7 +29,7 @@ class 100Rnd_556x45_BetaCMag: CA_Magazine {
 	ammo = "B_556x45_Ball";
 	count = 100;
 	initSpeed = 920;
-	model = "dayz_epoch_c\models\magazines\MG36_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_MG36_mag.p3d";
 	picture = "\ca\weapons\g36\data\equip\M_MG36_CA.paa";
 	type = WeaponSlotItem;
 	tracersEvery = 4;
@@ -157,12 +157,27 @@ class 60Rnd_556x45_Stanag_Taped : 30Rnd_556x45_Stanag {
 	displayName = $STR_DZE_MAG_60RND_556x45_STANAG_NAME;	
 	descriptionShort = $STR_DZE_MAG_60RND_556x45_STANAG_DESC;
 	count = 60;
-	//picture = "\ice_apo_weapons\data\double_ca.paa"; - will be replaced soon
+	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_stan_twin_ca.paa";
+    model = "\z\addons\dayz_epoch_w\magazine\dze_stannag_twinmag.p3d";
 	class ItemActions
 	{
 		COMBINE_MAG
 		
-		class ReloadMag	{};
+		delete ReloadMag;
+	};	
+};
+
+class 60Rnd_556x45_StanagSD_Taped : 30Rnd_556x45_StanagSD {
+	displayName = $STR_DZE_MAG_60RND_556x45_STANAGSD_NAME;	
+	descriptionShort = $STR_DZE_MAG_60RND_556x45_STANAGSD_DESC;
+	count = 60;
+	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_stan_twin_ca.paa";
+    model = "\z\addons\dayz_epoch_w\magazine\dze_stannag_twinmag.p3d";
+	class ItemActions
+	{
+		COMBINE_MAG
+		
+		delete ReloadMag;
 	};	
 };
 
@@ -176,6 +191,6 @@ class 30Rnd_556x45_Aug : 30Rnd_556x45_Stanag {
 	{
 		COMBINE_MAG
 		
-		class ReloadMag	{};
+		delete ReloadMag;
 	};	
 };

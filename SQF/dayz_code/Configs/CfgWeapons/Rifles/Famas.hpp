@@ -134,7 +134,8 @@ class Famas_SD_DZ: M4A1_AIM_SD_camo
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
-		30Rnd_556x45_G36SD
+		30Rnd_556x45_G36SD,
+		60Rnd_556x45_StanagSD_Taped
 	};	
 	
 	class Attachments

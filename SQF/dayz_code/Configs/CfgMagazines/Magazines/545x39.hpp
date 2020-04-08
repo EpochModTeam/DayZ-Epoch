@@ -11,6 +11,14 @@ class 30Rnd_545x39_AK : CA_Magazine
 	};
 };
 
+class 60Rnd_545x39_AK_Taped : 30Rnd_545x39_AK {
+	displayName = $STR_DZE_MAG_60RND_545x39_AK74_NAME;	
+	descriptionShort = $STR_DZE_MAG_60RND_545x39_AK74_DESC;
+	count = 60;
+	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_aktwin_mag.paa";
+    model = "\z\addons\dayz_epoch_w\magazine\dze_ak47_twinmag.p3d";
+};
+
 class 30Rnd_545x39_AKSD : 30Rnd_545x39_AK
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_ak74sd_ca.paa";
@@ -24,9 +32,17 @@ class 30Rnd_545x39_AKSD : 30Rnd_545x39_AK
 	};
 };
 
+class 60Rnd_545x39_AKSD_Taped : 30Rnd_545x39_AKSD {
+	displayName = $STR_DZE_MAG_60RND_545x39_AK74SD_NAME;	
+	descriptionShort = $STR_DZE_MAG_60RND_545x39_AK74SD_DESC;
+	count = 60;
+	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_aktwin_mag.paa";
+    model = "\z\addons\dayz_epoch_w\magazine\dze_ak47_twinmag.p3d";
+};
+
 class 75Rnd_545x39_RPK : CA_Magazine
 {
-	model = "dayz_epoch_c\models\magazines\RPK_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_RPK_mag.p3d";
 	picture = "\CA\weapons\AK\data\equip\M_RPK_74_CA.paa";
 	displayName = $STR_DZ_MAG_75RND_545X39_RPK_NAME;
 	descriptionShort = $STR_DZ_MAG_75RND_RPK74_DESC;
