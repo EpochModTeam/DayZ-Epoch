@@ -40,7 +40,7 @@ dz_fn_switchWeapon = {
 		};
 		
 		if (_option == 2) exitWith { // Switch to rifle
-			if (_current == "") exitWith { // No current weapon
+			if (_current == "" || {_current == "Throw"}) exitWith { // No current weapon
 				switch FIND_RIFLE do {
 					case 1: { //In primary
 						player selectWeapon primaryWeapon player;
@@ -87,7 +87,7 @@ dz_fn_switchWeapon = {
 			};
 		};
 		if (_option == 4) exitWith { //Switch to melee or onBack
-			if (_current == "") exitWith { //No current weapon
+			if (_current == "" || {_current == "Throw"}) exitWith { //No current weapon
 				switch FIND_MELEE do {
 					case 1: { //In primary
 						player selectWeapon primaryWeapon player;
@@ -107,14 +107,14 @@ dz_fn_switchWeapon = {
 				};
 			};
 			// Default: Current is pistol
-				if (DZE_TwoPrimaries > 1 && {!IS_MELEE(dayz_onBack)}) exitWith { // Allow switching to on back rifle if DZE_TwoPrimaries = 2.
-					if (dayz_quickSwitch) then {
-						true call dz_fn_switchWeapon_swap;
-					} else {
-						call dz_fn_switchWeapon_swapSecure;
-					};
+			if (DZE_TwoPrimaries > 1 && {!IS_MELEE(dayz_onBack)}) exitWith { // Allow switching to on back rifle if DZE_TwoPrimaries = 2.
+				if (dayz_quickSwitch) then {
+					true call dz_fn_switchWeapon_swap;
+				} else {
+					call dz_fn_switchWeapon_swapSecure;
 				};
-				switch FIND_MELEE do { // Find melee weapon
+			};
+			switch FIND_MELEE do { // Find melee weapon
 				case 1: { // In primary
 					player selectWeapon primaryWeapon player;
 					if (Player_GetStance() == Player_GetStance_PRONE) then {
@@ -162,6 +162,8 @@ dz_fn_switchWeapon_swap = {
 //Swaps rifle / melee forcing an animation
 dz_fn_switchWeapon_swapSecure = {
 	private ["_anim","_array","_str"];
+	if (dayz_actionInProgress) exitWith {};
+	dayz_actionInProgress = true;
 	//animation states are in the form "AmovPerc...", "AmovPknl...", "AmovPpne..."
 	_array = toArray (animationState player);
 	_str = toString [_array select 5,_array select 6,_array select 7];
@@ -174,5 +176,6 @@ dz_fn_switchWeapon_swapSecure = {
 		true call dz_fn_switchWeapon_swap;
 		player removeEventHandler ["AnimDone", dz_switchWeapon_handler];
 		dz_switchWeapon_handler = nil;
+		dayz_actionInProgress = false;
 	}];
 };
