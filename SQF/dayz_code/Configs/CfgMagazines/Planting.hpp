@@ -4,8 +4,8 @@ class ItemFertilizer: CA_Magazine {
 	displayName = $STR_CRAFT_NAME_FERTILIZER;
 	descriptionShort = $STR_CRAFT_DESC_FERTILIZER;
 	weight = 0.1;
-	model = "z\addons\dayz_communityassets\models\mre.p3d";	// TODO: model + icon
-	picture = "\z\addons\dayz_communityassets\pictures\equip_mre_CA.paa";
+	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_fertilizer_ca.paa";
+    model = "\z\addons\dayz_epoch_w\magazine\dze_fertilizer.p3d";
 	type = 256;
 };
 

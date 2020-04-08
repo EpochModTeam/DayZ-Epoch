@@ -2,6 +2,7 @@
 class 5Rnd_86x70_L115A1: CA_Magazine
 {
 	displayName = $STR_DZ_MAG_5Rnd_86x70_L115A1_NAME;
+	model = "\z\addons\dayz_epoch_w\magazine\dze_lapua_mag.p3d";
 	
 	cartridgeName = "86x70";
 	

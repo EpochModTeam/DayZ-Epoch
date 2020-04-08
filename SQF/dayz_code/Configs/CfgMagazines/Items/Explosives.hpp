@@ -12,4 +12,5 @@ class PipeBomb: TimeBomb
 {
 	displayName = $STR_DZ_MAG_SATCHEL_NAME; // Singular "Satchel Charge" for death messages "with a x"
 	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
+	model = "\z\addons\dayz_epoch_w\magazine\dze_satchel.p3d";
 };

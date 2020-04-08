@@ -33,5 +33,6 @@
 #include "Shotgun.hpp"
 #include "Arrows.hpp"
 #include "LauncherAmmo.hpp"
+#include "Grenades.hpp"
 
 #undef COMBINE_MAG

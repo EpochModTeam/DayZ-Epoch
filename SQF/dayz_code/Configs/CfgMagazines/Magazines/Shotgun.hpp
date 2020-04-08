@@ -149,7 +149,7 @@ class 2Rnd_12Gauge_Buck : 8Rnd_12Gauge_Buck
 //AA12 Ammo
 class 20Rnd_B_AA12_74Slug : CA_Magazine
 {
-	model = "dayz_epoch_c\models\magazines\AA12_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_AA12_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME;
 	
 	cartridgeName = "12Gauge_Slug";
@@ -161,7 +161,7 @@ class 20Rnd_B_AA12_74Slug : CA_Magazine
 };
 class 20Rnd_B_AA12_Pellets : CA_Magazine
 {
-	model = "dayz_epoch_c\models\magazines\AA12_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_AA12_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME;
 	
 	cartridgeName = "12Gauge_Pellets";
@@ -173,7 +173,7 @@ class 20Rnd_B_AA12_Pellets : CA_Magazine
 };
 class 20Rnd_B_AA12_HE : CA_Magazine
 {
-	model = "dayz_epoch_c\models\magazines\AA12_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_AA12_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_B_AA12_HE_NAME;
 	
 	cartridgeName = "19mm_HE";
@@ -186,7 +186,7 @@ class 20Rnd_B_AA12_HE : CA_Magazine
 //Saiga12 Ammo
 class 8Rnd_B_Saiga12_74Slug: CA_Magazine
 {	
-	model = "dayz_epoch_c\models\magazines\Saiga12K_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_Saiga12K_mag.p3d";
 	cartridgeName = "12Gauge_Slug";
 	
 	class ItemActions
@@ -197,7 +197,7 @@ class 8Rnd_B_Saiga12_74Slug: CA_Magazine
 
 class 8Rnd_B_Saiga12_Pellets: CA_Magazine
 {
-	model = "dayz_epoch_c\models\magazines\Saiga12K_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_Saiga12K_mag.p3d";
 	cartridgeName = "12Gauge_Pellets";
 	
 	class ItemActions

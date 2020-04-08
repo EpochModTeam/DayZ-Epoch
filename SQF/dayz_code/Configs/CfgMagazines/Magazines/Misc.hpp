@@ -42,7 +42,7 @@ class 5Rnd_127x108_KSVK : CA_Magazine
 //Sa61
 class 10Rnd_B_765x17_Ball: CA_Magazine
 {
-	model = "dayz_epoch_c\models\magazines\sa61_mag.p3d";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_sa61_mag.p3d";
 	displayName = "$STR_EP1_DN_10RND_B_765X17_BALL";
 	
 	cartridgeName = "765x17";
