@@ -25,9 +25,7 @@ class CfgWeight
 	class Magazines
 	{
 		#include "Magazines\Attachments.hpp"
-		#include "Magazines\BuildingSupplies.hpp"
 		#include "Magazines\Bulk.hpp"
-		#include "Magazines\Clothes.hpp"
 		#include "Magazines\Crafting.hpp"
 		#include "Magazines\Currency.hpp"
 		#include "Magazines\Drinks.hpp"
@@ -45,4 +43,8 @@ class CfgWeight
 		#include "Magazines\Trash.hpp"
 		#include "Magazines\VehicleParts.hpp"
 	};
+	class Backpacks
+	{
+		#include "Backpacks\Backpack.hpp"
+	};	
 };
