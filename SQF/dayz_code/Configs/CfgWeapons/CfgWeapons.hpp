@@ -203,6 +203,7 @@ class CfgWeapons
 	#include "Rifles\M107.hpp"	
 	#include "Rifles\M4SPR.hpp"		
 	#include "Rifles\M200CheyTac.hpp"	
+	#include "Rifles\WA2000.hpp"	
 	
 	/* PISTOLS */
 	

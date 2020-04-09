@@ -98,6 +98,7 @@ CrashSiteEU[] =
 	//Weapons
 	{Loot_GROUP,		30,		weaponsEU},
 	{Loot_WEAPON,		1,		BAF_AS50_scoped_DZ}, // High value weapon
+	{Loot_WEAPON,		1,		WA2000_DZ},
 
 	//Tools
 	{Loot_GROUP,		3,		ToolsMilitary},
@@ -130,6 +131,7 @@ CrashSiteEUPile[] =
 	{Loot_MAGAZINE,		10,		FoodMRE},
 	{Loot_GROUP,		15,		AmmoEU},
 	{Loot_MAGAZINE,		3,		5Rnd_127x99_as50_CP},
+	{Loot_MAGAZINE,		3,		6Rnd_762x51_WA2000},
 	{Loot_GROUP,		10,		MedicalLow}
 };
 

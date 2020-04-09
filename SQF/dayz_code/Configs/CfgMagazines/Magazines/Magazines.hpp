@@ -19,7 +19,7 @@
 #include "6x35.hpp"			//KAC PDW
 #include "762x25.hpp"		//Tokarew TT-33
 #include "762x39.hpp"		//AK47, SA58
-#include "762x51.hpp"		//M240, FN FAL, DMR, M24
+#include "762x51.hpp"		//M240, FN FAL, DMR, M24, RSASS WA2000
 #include "762x54r.hpp"		//PK, SVD, Mosin
 #include "46x30.hpp"		//MP7
 #include "57x28.hpp"		//P90

@@ -185,4 +185,20 @@ class 20Rnd_762x51_HK417SD: 20Rnd_762x51_HK417
 	ammo = "Rem_762x51_SD";	
 };
 
-
+class 6Rnd_762x51_WA2000: CA_Magazine
+{
+	scope = public;
+	initSpeed = 900;
+	picture	= "\z\addons\dayz_epoch_w\wa2000\data\m_wa2000_CA.paa";
+	model = "\z\addons\dayz_epoch_w\wa2000\h4_wa2000_mag.p3d";
+	displayName = $STR_DZ_MAG_6RND_WA2000_NAME;
+	descriptionShort = $STR_DZ_MAG_6RND_WA2000_DESC;
+	count = 6;
+	cartridgeName = "762x51";
+	ammo = "Rem_762x51_Ball";	
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};	
+};

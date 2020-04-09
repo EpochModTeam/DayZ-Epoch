@@ -13371,7 +13371,14 @@
 		<Key ID="STR_DZ_WPN_M200_CHEYTAC_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac</German>
-		</Key>			
+		</Key>
+		<Key ID="STR_DZ_WPN_WA2000_NAME">
+			<English>WA2000</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_WA2000_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
+		</Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -13881,12 +13888,12 @@
 			<Hungarian>Kaliber: 6.80x43mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: ACR SD</Hungarian>
 		</Key>	
 		<Key ID="STR_DZ_MAG_20RND_RSASS_NAME">
-			<English>30Rnd. RSASS mag.</English>
-			<Russian>30п. RSASS маг.</Russian>
+			<English>20Rnd. RSASS mag.</English>
+			<Russian>20п. RSASS маг.</Russian>
 		</Key> 	
 		<Key ID="STR_DZ_MAG_20RND_RSASSSD_NAME">
-			<English>30Rnd. RSASS SD mag.</English>
-			<Russian>30п. RSASS SD маг.</Russian>
+			<English>20Rnd. RSASS SD mag.</English>
+			<Russian>20п. RSASS SD маг.</Russian>
 		</Key> 	  
 		<Key ID="STR_DZ_MAG_20RND_RSASS_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: RSASS</English>
@@ -14770,6 +14777,22 @@
 			<Polish>Kaliber: .408 Chey Tac &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M200 Chey Tac</Polish>
 			<Hungarian>Kaliber: .408 Chey Tac &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M200 Chey Tac</Hungarian>
         </Key>	
+		<Key ID="STR_DZ_MAG_6RND_WA2000_NAME">
+			<English>6Rnd. WA2000 mag.</English>
+			<Russian>6п. WA2000 маг.</Russian>
+		</Key> 
+		<Key ID="STR_DZ_MAG_6RND_WA2000_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: WA2000</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 6&lt;br/&gt;Utilisé avec: WA2000</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 6&lt;br/&gt;Usado en: WA2000</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 6&lt;br/&gt;Usato in: WA2000</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 6&lt;br/&gt;Uzywany w: WA2000</Polish>
+			<Russian>Патрон: 7.62x51 мм&lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: WA2000</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 6&lt;br/&gt;Eingesetzt in: WA2000</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: WA2000</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 6 &lt;br/&gt; Hozzá tartozó fegyver: WA2000</Hungarian>
+		</Key>		
+		
 		<!-- **** ATTACHMENTS **** -->
 		
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">
