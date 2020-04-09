@@ -654,6 +654,28 @@ class CfgAmmo
 		typicalspeed = 300;
 	};	
 	
+	// M200 Chey Tac
+	class B_408_CheyTac_Ball: BulletBase
+	{
+		hit = 26;
+		indirectHit = 1;
+		indirectHitRange = 0.01;
+		cartridge = "FxCartridge_127";
+		visibleFire = 22;
+		audibleFire = 22;
+		visibleFireTime = 3;
+		cost = 20;
+		airLock = 0;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		caliber = 2.07;
+		tracerColor[] = {0,0,0,0};
+		tracerColorR[] = {0,0,0,0};
+		tracerStartTime = -1;
+		airFriction = -0.0005;
+		muzzleEffect = "BIS_Effects_HeavySniper";
+		typicalspeed = 950;
+	};
+	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase
 	{

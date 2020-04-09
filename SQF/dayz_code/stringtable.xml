@@ -13364,6 +13364,13 @@
 		<Key ID="STR_DZ_WPN_AUGA3_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M200_CHEYTAC_NAME">
+			<English>M200 Chey Tac</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_M200_CHEYTAC_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac</German>
 		</Key>			
 		
 		<!-- **** MAGAZINES **** -->
@@ -14748,7 +14755,21 @@
 			<Russian>Патрон: 5.56x45мм &lt;br/&gt;Количество: 30 &lt;br/&gt;Используется в: Steyr Aug A3</Russian>
 			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 30 &lt;br/&gt;Używane w: Steyr Aug A3</Polish>
 			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr Aug A3</Hungarian>
-        </Key>		
+        </Key>	
+		<Key ID="STR_DZ_MAG_5RND_408_CHEYTAC_NAME">
+			<English>5Rnd. Chey Tac mag</English>
+		</Key>
+		<Key ID="STR_DZ_MAG_5RND_CHEYTAC_DESC">
+			<German>Kaliber: .408 Chey Tac &lt;br/&gt;Patronen: 5 &lt;br/&gt;Eingesetzt in: M200 Chey Tac</German>
+			<English>Caliber: .408 Chey Tac &lt;br/&gt;Rounds: 5 &lt;br/&gt;Used in: M200 Chey Tac</English>
+			<Italian>Calibro: .408 Chey Tac &lt;br/&gt;Munizioni: 5 &lt;br/&gt;Si usa in: M200 Chey Tac</Italian>
+			<Spanish>Calibre: .408 Chey Tac &lt;br/&gt;Cargas: 5 &lt;br/&gt;Uso: M200 Chey Tac</Spanish>
+			<French>Calibre: .408 Chey Tac &lt;br/&gt;Munitions: 5 &lt;br/&gt;Utilisé avec: M200 Chey Tac</French>
+			<Czech>Kalibr: .408 Chey Tac &lt;br/&gt;Nábojů: 5 &lt;br/&gt;Pro: M200 Chey Tac</Czech>
+			<Russian>Патрон: 5.56x45мм &lt;br/&gt;Количество: 5 &lt;br/&gt;Используется в: M200 Chey Tac</Russian>
+			<Polish>Kaliber: .408 Chey Tac &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M200 Chey Tac</Polish>
+			<Hungarian>Kaliber: .408 Chey Tac &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M200 Chey Tac</Hungarian>
+        </Key>	
 		<!-- **** ATTACHMENTS **** -->
 		
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">

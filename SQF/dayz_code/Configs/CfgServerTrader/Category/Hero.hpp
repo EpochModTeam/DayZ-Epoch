@@ -176,6 +176,7 @@ class Category_3 {
 	class m107_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar10oz"};};
 	class Anzio_20_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar10oz"};};
 	class BAF_AS50_scoped_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar10oz"};};
+	class M200_CheyTac_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar10oz"};};
 	class KSVK_DZE {type = "trade_weapons";buy[] = {1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
 	class BAF_L85A2_RIS_TWS_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar10oz"};};
 };
@@ -199,6 +200,7 @@ class Category_4 {
 	class 5Rnd_127x99_AS50 {type = "trade_items";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
 	class 5Rnd_127x99_as50_CP {type = "trade_items";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
 	class 5Rnd_127x108_KSVK {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class 5Rnd_408_CheyTac {type = "trade_items";buy[] = {-4,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
 	class 200Rnd_556x45_M249 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class 100Rnd_762x51_M240 {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class 100Rnd_762x54_PK {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};

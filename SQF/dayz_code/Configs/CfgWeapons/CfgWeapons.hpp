@@ -202,6 +202,7 @@ class CfgWeapons
 	#include "Rifles\AS50.hpp"
 	#include "Rifles\M107.hpp"	
 	#include "Rifles\M4SPR.hpp"		
+	#include "Rifles\M200CheyTac.hpp"	
 	
 	/* PISTOLS */
 	

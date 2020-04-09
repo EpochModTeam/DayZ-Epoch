@@ -29,6 +29,7 @@
 #include "20x102.hpp"		//Anzio
 #include "9x39.hpp"			//Groza, VSS
 #include "127x99.hpp"		//M107, AS-50
+#include "408CheyTac.hpp"	//M200 Cheytac
 #include "Misc.hpp"			//CZ550, Lee-Enfield, KSVK, SA-61
 #include "Shotgun.hpp"
 #include "Arrows.hpp"
