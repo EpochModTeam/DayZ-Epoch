@@ -149,6 +149,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		4,		FNFAL_DZ},
 	{Loot_WEAPON,		3,		FN_FAL_ANPVS4_DZE}, //FNFAL_ANPVS4_DZ is NV only _DZE is toggleable with attachment support
 	{Loot_WEAPON,		1,		BAF_AS50_scoped_DZ}, // High value weapon, low spawn chance.
+	{Loot_WEAPON,		1,		Barrett_MRAD_Sniper_DZ}, // High value weapon, low spawn chance.
 	
 	// Submachine Guns
 	{Loot_WEAPON,		7,		MP5_DZ},
@@ -161,6 +162,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		7,		UMP_SD_DZ},
 	{Loot_WEAPON,		7,		P90_DZ},
 	{Loot_WEAPON,		7,		P90_SD_DZ},	
+	{Loot_WEAPON,		7,		Sten_MK_DZ},	
 	
 	// Assault Rifles
 	{Loot_WEAPON,		5,		G36A_Camo_DZ},

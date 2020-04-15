@@ -168,6 +168,7 @@ class CfgWeapons
 	#include "Rifles\TMP.hpp"
 	#include "Rifles\UMP.hpp"
 	#include "Rifles\P90.hpp"
+	#include "Rifles\Sten.hpp"
 	
 	class M16A2;
 	class M16A2GL;
@@ -204,6 +205,7 @@ class CfgWeapons
 	#include "Rifles\M4SPR.hpp"		
 	#include "Rifles\M200CheyTac.hpp"	
 	#include "Rifles\WA2000.hpp"	
+	#include "Rifles\BarrettMRAD.hpp"	
 	
 	/* PISTOLS */
 	

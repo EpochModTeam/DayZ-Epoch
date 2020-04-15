@@ -1,8 +1,8 @@
 //M107
 class 10Rnd_127x99_m107 : CA_Magazine
 {
-	displayName = $STR_DZ_MAG_10Rnd_127x99_m107_NAME;
-	descriptionShort = $STR_DZ_MAG_5RND_127x99_m107_DESC;
+	displayName = $STR_DZ_MAG_10Rnd_127x99_M107_NAME;
+	descriptionShort = $STR_DZ_MAG_10RND_127x99_M107_DESC;
 	
 	cartridgeName = "127x99";
 	

@@ -174,6 +174,9 @@ class Category_3 {
 	class L115A3_2_DZ {type = "trade_weapons";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};	
 	class MSR_DZ {type = "trade_weapons";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};	
 	class MSR_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};	
+	class Barrett_MRAD_Iron_DZ {type = "trade_weapons";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};
+	class Barrett_MRAD_CCO_DZ {type = "trade_weapons";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {52,"ItemGoldBar"};};
+	class Barrett_MRAD_Sniper_DZ {type = "trade_weapons";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {6,"ItemGoldBar10oz"};};
 	class m107_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {6,"ItemGoldBar10oz"};};
 	class Anzio_20_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar10oz"};};
 	class BAF_AS50_scoped_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar10oz"};};
@@ -197,6 +200,7 @@ class Category_4 {
 	class 5Rnd_86x70_L115A1 {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class 7Rnd_86x70_MSR {type = "trade_items";buy[] = {7,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class 7Rnd_86x70_MSR_SD {type = "trade_items";buy[] = {-7,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class 10Rnd_86x70_MRAD {type = "trade_items";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	class 10Rnd_127x99_M107 {type = "trade_items";buy[] = {-1,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};
 	class 3rnd_Anzio_20x102mm {type = "trade_items";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
 	class 5Rnd_127x99_AS50 {type = "trade_items";buy[] = {-1,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};

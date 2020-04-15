@@ -43,7 +43,6 @@ class L115A3_Base : Rifle
 		maxRange = 1500;
 		maxRangeProbab = 0.05;
 	};
-/// type = WeaponSlotPrimary + WeaponSlotSecondary;	
 };
 
 class L115A3_DZ : L115A3_Base

@@ -13378,7 +13378,37 @@
 		<Key ID="STR_DZ_WPN_WA2000_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-		</Key>		
+		</Key>	
+		<Key ID="STR_DZ_WPN_BARETT_MRAD_IRON_NAME">
+			<English>Barrett MRAD</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_BARETT_MRAD_CCO_NAME">
+			<English>Barrett MRAD CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_BARETT_MRAD_SNIPER_NAME">
+			<English>Barrett MRAD Sniper</English>
+		</Key>			
+		<Key ID="STR_DZ_WPN_BARETT_MRAD_DESC">
+			<English>Sniper rifle &lt;br/&gt;Caliber: .338 Lapua Magnum</English>
+			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: .338 Lapua Magnum</Russian>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .338 Lapua Magnum</German>
+		</Key>	
+		
+		<!-- Sten MK -->
+		<Key ID="STR_DZ_WPN_STEN_MK_NAME">
+			<English>Sten MK</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_STEN_MK_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm Parabellum</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm Parabellum</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm Parabellum</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm Parabellum</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм Parabellum</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
+        </Key>	
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -14295,20 +14325,20 @@
 			<English>20Rnd. SCAR SD mag.</English>
 			<Russian>20п. SCAR SD маг.</Russian>
 		</Key>
-		<Key ID="STR_DZ_MAG_10Rnd_127x99_m107_NAME">
+		<Key ID="STR_DZ_MAG_10Rnd_127x99_M107_NAME">
 			<English>10Rnd. M107 mag.</English>
 			<Russian>10п. M107 маг.</Russian>
 		</Key>
-		<Key ID="STR_DZ_MAG_5RND_127x99_m107_DESC">
-			<English>Caliber: 12.7x99mm NATO&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: M107, AS50</English>
-			<French>Calibre: 12.7x99mm NATO&lt;br/&gt;Munitions : 5&lt;br/&gt;Utilisé avec: M107, AS50</French>
-			<Spanish>Calibre: 12.7x99mm NATO&lt;br/&gt;Cartuchos: 5&lt;br/&gt;Usado en: M107, AS50</Spanish>
-			<Italian>Calibro: 12.7x99mm NATO&lt;br/&gt;Munizioni: 5&lt;br/&gt;Usato in: M107, AS50</Italian>
-			<Polish>Kaliber: 12.7x99mm NATO&lt;br/&gt;Naboje: 5&lt;br/&gt;Uzywany w: M107, AS50</Polish>
-			<Russian>Патрон: 12.7x99mm NATO&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: M107, AS50</Russian>
-			<German>Kaliber: 12.7x99mm NATO&lt;br/&gt;Patronen: 5&lt;br/&gt;Eingesetzt in: M107, AS50</German>
-			<Czech>Kalibr: 12.7x99mm NATO&lt;br/&gt;Nábojů: 5&lt;br/&gt;Pro: M107, AS50</Czech>
-			<Hungarian>Kaliber: 12.7x99mm NATO&lt;br/&gt; Töltények: 5&lt;br/&gt; Hozzá tartozó fegyver: M107, AS50</Hungarian>
+		<Key ID="STR_DZ_MAG_10RND_127x99_M107_DESC">
+			<English>Caliber: 12.7x99mm NATO&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: M107, AS50</English>
+			<French>Calibre: 12.7x99mm NATO&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: M107, AS50</French>
+			<Spanish>Calibre: 12.7x99mm NATO&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: M107, AS50</Spanish>
+			<Italian>Calibro: 12.7x99mm NATO&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: M107, AS50</Italian>
+			<Polish>Kaliber: 12.7x99mm NATO&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: M107, AS50</Polish>
+			<Russian>Патрон: 12.7x99mm NATO&lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: M107, AS50</Russian>
+			<German>Kaliber: 12.7x99mm NATO&lt;br/&gt;Patronen: 10&lt;br/&gt;Eingesetzt in: M107, AS50</German>
+			<Czech>Kalibr: 12.7x99mm NATO&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: M107, AS50</Czech>
+			<Hungarian>Kaliber: 12.7x99mm NATO&lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: M107, AS50</Hungarian>
 		</Key>			
 		<Key ID="STR_DZ_MAG_5Rnd_127x99_AS50_NAME">
 			<English>5Rnd. AS50 mag.</English>
@@ -14792,6 +14822,36 @@
 			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: WA2000</Czech>
 			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 6 &lt;br/&gt; Hozzá tartozó fegyver: WA2000</Hungarian>
 		</Key>		
+		<Key ID="STR_DZ_MAG_10RND_BARRETT_MRAD_NAME">
+			<English>10Rnd. MRAD mag.</English>
+			<Russian>10п. MRAD маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_10RND_BARRETT_MRAD_DESC">
+			<English>Caliber: .338&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: Barrett MRAD</English>
+			<French>Calibre: .338&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: Barrett MRAD</French>
+			<Spanish>Calibre: .338&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: Barrett MRAD</Spanish>
+			<Italian>Calibro: .338&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: Barrett MRAD</Italian>
+			<Polish>Kaliber: .338&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: Barrett MRAD</Polish>
+			<Russian>Патрон: .338 &lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: Barrett MRAD</Russian>
+			<German>Kaliber: .338&lt;br/&gt;Patronen: 10&lt;br/&gt;Eingesetzt in: Barrett MRAD</German>
+			<Czech>Kalibr: .338&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: Barrett MRAD</Czech>
+			<Hungarian>Kaliber: .338 &lt;br/&gt; Töltények: 10 &lt;br/&gt; Hozzá tartozó fegyver: Barrett MRAD</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_32RND_9x19mm_STEN_NAME">
+			<English>32Rnd. Sten MK mag.</English>
+			<Russian>32п. Sten MK маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_32RND_9x19mm_STEN_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Sten MK</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 32&lt;br/&gt;Utilisé avec: Sten MK</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 32&lt;br/&gt;Usado en: Sten MK</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 32&lt;br/&gt;Usato in: Sten MK</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 32&lt;br/&gt;Uzywany w: Sten MK</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 32&lt;br/&gt;Исп. в: Sten MK</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 32&lt;br/&gt;Eingesetzt in: Sten MK</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 32&lt;br/&gt;Pro: Sten MK</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 32&lt;br/&gt; Hozzá tartozó fegyver: Sten MK</Hungarian>
+		</Key>
 		
 		<!-- **** ATTACHMENTS **** -->
 		

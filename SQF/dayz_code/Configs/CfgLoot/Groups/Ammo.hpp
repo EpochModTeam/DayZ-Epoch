@@ -185,7 +185,8 @@ AmmoEU[] =
 	{Loot_MAGAZINE,		6,		25Rnd_45ACP_UMP},
 	{Loot_MAGAZINE,		6,		25Rnd_45ACP_UMPSD},		
 	{Loot_MAGAZINE,		6,		50Rnd_57x28_P90},
-	{Loot_MAGAZINE,		6,		50Rnd_57x28_P90SD},		
+	{Loot_MAGAZINE,		6,		50Rnd_57x28_P90SD},	
+	{Loot_MAGAZINE,		6,		32Rnd_9x19_STEN},		
 	
 	// Assault rifles
 	{Loot_MAGAZINE,		10,		30Rnd_556x45_G36},
@@ -203,6 +204,7 @@ AmmoEU[] =
 	{Loot_MAGAZINE,		3,		5Rnd_86x70_L115A1},
 	{Loot_MAGAZINE,		1,		5Rnd_127x99_as50_CP},
 	{Loot_MAGAZINE,		1,		20Rnd_762x51_RSASS},
+	{Loot_MAGAZINE,		1,		10Rnd_86x70_MRAD},
 	
 	// Machine guns
 	{Loot_MAGAZINE,		3,		100Rnd_556x45_BetaCMag},
