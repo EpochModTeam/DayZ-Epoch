@@ -4,6 +4,7 @@ class Category_11 {
 	class MeleeBaseballbatNails {type = "trade_weapons";buy[] = {-2,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class Saiga12K {type = "trade_weapons";buy[] = {3,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class AA12_PMC {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};		
+	class USAS12_DZ {type = "trade_weapons";buy[] = {7,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};	
 	class revolver_gold_EP1 {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class Colt_Anaconda_Gold_DZ {type = "trade_weapons";buy[] = {9,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar10oz"};};
 	class SVD_Gold_DZ {type = "trade_weapons";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};	
@@ -13,6 +14,8 @@ class Category_11 {
 	class MAAWS {type = "trade_weapons";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};		
 	class 8Rnd_B_Saiga12_74Slug {type = "trade_items";buy[] = {5,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
 	class 8Rnd_B_Saiga12_Pellets {type = "trade_items";buy[] = {5,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
+	class 20Rnd_B_Usas12_74Slug {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {5,"ItemSilverBar"};};
+	class 20Rnd_B_Usas12_Pellets {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {5,"ItemSilverBar"};};
 	class 20Rnd_B_AA12_Pellets {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {5,"ItemSilverBar"};};
 	class 20Rnd_B_AA12_74Slug {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {5,"ItemSilverBar"};};
 	class 1Rnd_Bolt_Explosive {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};

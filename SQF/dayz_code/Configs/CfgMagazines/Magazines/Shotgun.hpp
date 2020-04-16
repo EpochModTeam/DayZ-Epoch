@@ -205,3 +205,15 @@ class 8Rnd_B_Saiga12_Pellets: CA_Magazine
 		COMBINE_MAG
 	};
 };
+
+class 20Rnd_B_Usas12_74Slug: 8Rnd_B_Saiga12_74Slug {
+	displayName = $STR_DZ_MAG_20RND_USAS12_SLUG_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_USAS12_SLUG_DESC;	
+	count = 20;
+};
+
+class 20Rnd_B_Usas12_Pellets: 8Rnd_B_Saiga12_Pellets {
+	displayName = $STR_DZ_MAG_20RND_USAS12_PELLETS_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_USAS12_PELLETS_DESC;	
+	count = 20;
+};

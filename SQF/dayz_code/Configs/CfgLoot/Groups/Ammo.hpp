@@ -46,6 +46,10 @@ AmmoCZ[] = {
 	{Loot_MAGAZINE,		1,		10Rnd_762x51_CZ750},
 	{Loot_MAGAZINE,		3,		20Rnd_762x51_B_SCAR},
 	
+	//  Shotgun
+	{Loot_MAGAZINE,		1,		20Rnd_B_Usas12_74Slug},
+	{Loot_MAGAZINE,		1,		20Rnd_B_Usas12_Pellets},	
+	
 	// Submachine guns
 	{Loot_MAGAZINE,		3,		30Rnd_9x19_MP5},
 	{Loot_MAGAZINE,		3,		30Rnd_9x19_MP5SD},	

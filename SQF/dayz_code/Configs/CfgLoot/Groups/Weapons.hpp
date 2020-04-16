@@ -215,6 +215,9 @@ weaponsCZ[] =
 	{Loot_WEAPON,		2,		CZ75SP_DZ},
 	{Loot_WEAPON,		1,		CZ75SP_SD_DZ},
 	
+	// Bolt action rifles and shotguns
+	{Loot_WEAPON,		5,		USAS12_DZ},
+	
 	// Sniper Rifles
 	{Loot_WEAPON,		3,		CZ750_DZ},
 	{Loot_WEAPON,		3,		M110_NV_DZ}, // Technically a US rifle, but the CZ group does not have a DMR type rifle.

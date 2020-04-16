@@ -198,6 +198,7 @@ class CfgWeapons
 	#include "Rifles\MR43.hpp"
 	#include "Rifles\Winchester1866.hpp"
 	#include "Rifles\Remington870.hpp"
+	#include "Rifles\Usas12.hpp"
 	#include "Rifles\Crossbow.hpp"
 	#include "Rifles\L115A3.hpp"
 	#include "Rifles\MSR.hpp"

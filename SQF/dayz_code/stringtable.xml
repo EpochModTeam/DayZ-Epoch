@@ -13449,7 +13449,16 @@
 			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм Parabellum</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
-        </Key>			
+        </Key>	
+
+		<!-- USAS12 -->
+		<Key ID="STR_DZ_WPN_USAS12_NAME">
+			<English>USAS-12</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_USAS12_DESC">			
+			<English>Automatic Shotgun &lt;br/&gt;Caliber: Caliber 12</English>
+			<German>Selbstladeschrotflinte &lt;br/&gt;Kaliber: Kaliber 12</German>
+      </Key>		
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -14821,7 +14830,8 @@
 			<Hungarian>Kaliber: 7.62x51mm SD &lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: MK 14 SD, M21A5 SD</Hungarian>
 		</Key>		
 		<Key ID="STR_DZ_MAG_30RND_556x45_AUG_NAME">
-			<English>30Rnd. Steyr Aug mag</English>
+			<English>30Rnd. Steyr Aug mag.</English>
+			<Russian>30п. Steyr Aug маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_AUG_DESC">
 			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Eingesetzt in: Steyr Aug A3</German>
@@ -14835,7 +14845,8 @@
 			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: Steyr Aug A3</Hungarian>
         </Key>	
 		<Key ID="STR_DZ_MAG_5RND_408_CHEYTAC_NAME">
-			<English>5Rnd. Chey Tac mag</English>
+			<English>5Rnd. Chey Tac mag.</English>
+			<Russian>5п. Chey Tac маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_CHEYTAC_DESC">
 			<German>Kaliber: .408 Chey Tac &lt;br/&gt;Patronen: 5 &lt;br/&gt;Eingesetzt in: M200 Chey Tac</German>
@@ -14937,6 +14948,37 @@
 			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 70&lt;br/&gt;Eingesetzt in: Suomi M-31</German>
 			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 70&lt;br/&gt;Pro: Suomi M-31</Czech>
 			<Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 70&lt;br/&gt; Hozzá tartozó fegyver: Suomi M-31</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_USAS12_SLUG_NAME">
+			<English>20Rnd. USAS-12 Slug</English>
+			<Russian>20п. USAS-12 Slug</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_USAS12_SLUG_DESC">
+			<English>Caliber: Caliber 12 Slug &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: USAS-12</English>
+			<French>Calibre: Calibre 12 Slug &lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: USAS-12</French>
+			<Spanish>Calibre: Calibre 12 Slug &lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: USAS-12</Spanish>
+			<Italian>Calibro: Calibro 12 Slug &lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: USAS-12</Italian>
+			<Polish>Kaliber: Kaliber 12 Slug &lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: USAS-12</Polish>
+			<Russian>Патрон: Патрон 12 &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: USAS-12</Russian>
+			<German>Kaliber: Kaliber 12 Slug &lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: USAS-12</German>
+			<Czech>Kalibr: Kalibr 12 Slug &lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: USAS-12</Czech>
+			<Hungarian>Kaliber: Kaliber 12 Slug &lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: USAS-12</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_20RND_USAS12_PELLETS_NAME">
+			<English>20Rnd. USAS-12 Pellets</English>
+			<German>20Rnd. USAS-12 Schrot</German>
+			<Russian>20п. USAS-12 Pellets</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_USAS12_PELLETS_DESC">
+			<English>Caliber: Caliber 12 Pellets &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: USAS-12</English>
+			<French>Calibre: Calibre 12 Pellets &lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: USAS-12</French>
+			<Spanish>Calibre: Calibre 12 Pellets &lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: USAS-12</Spanish>
+			<Italian>Calibro: Calibro 12 Pellets &lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: USAS-12</Italian>
+			<Polish>Kaliber: Kaliber 12 Pellets &lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: USAS-12</Polish>
+			<Russian>Патрон: Патрон 12 &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: USAS-12</Russian>
+			<German>Kaliber: Kaliber 12 Schrot &lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: USAS-12</German>
+			<Czech>Kalibr: Kalibr 12 Pellets &lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: USAS-12</Czech>
+			<Hungarian>Kaliber: Kaliber 12 Pellets &lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: USAS-12</Hungarian>
 		</Key>		
 		
 		<!-- **** ATTACHMENTS **** -->
