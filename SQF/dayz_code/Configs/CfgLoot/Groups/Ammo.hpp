@@ -197,6 +197,7 @@ AmmoEU[] =
 	
 	// Battle rifles
 	{Loot_MAGAZINE,		4,		20Rnd_762x51_FNFAL},
+	{Loot_MAGAZINE,		4,		20Rnd_762x51_G3},
 	{Loot_MAGAZINE,		5,		20Rnd_762x51_B_SCAR},
 	{Loot_MAGAZINE,		3,		20Rnd_762x51_SB_SCAR},
 	

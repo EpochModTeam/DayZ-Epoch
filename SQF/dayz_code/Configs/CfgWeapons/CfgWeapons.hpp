@@ -50,6 +50,7 @@ class CfgWeapons
 	class FN_FAL;
 	class FN_FAL_ANPVS4;
 	#include "Rifles\FNFAL.hpp"
+	#include "Rifles\G3.hpp"
 	
 	class G36C : Rifle
 	{
@@ -90,7 +91,7 @@ class CfgWeapons
 	#include "Rifles\HK417.hpp"	
 	#include "Rifles\MK14.hpp"	
 	#include "Rifles\MK17.hpp"
-	#include "Rifles\M110.hpp"
+	#include "Rifles\M110.hpp"	
 	
 	#include "Rifles\CZ805.hpp"
 	

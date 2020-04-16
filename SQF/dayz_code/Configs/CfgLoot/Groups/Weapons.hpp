@@ -148,6 +148,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		1,		RSASS_DZ},		
 	{Loot_WEAPON,		4,		FNFAL_DZ},
 	{Loot_WEAPON,		3,		FN_FAL_ANPVS4_DZE}, //FNFAL_ANPVS4_DZ is NV only _DZE is toggleable with attachment support
+	{Loot_WEAPON,		4,		G3_DZ},	
 	{Loot_WEAPON,		1,		BAF_AS50_scoped_DZ}, // High value weapon, low spawn chance.
 	{Loot_WEAPON,		1,		Barrett_MRAD_Sniper_DZ}, // High value weapon, low spawn chance.
 	

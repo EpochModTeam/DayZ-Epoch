@@ -12,6 +12,14 @@ class 20Rnd_762x51_FNFAL : CA_Magazine
 	};
 };
 
+class 20Rnd_762x51_G3 : 20Rnd_762x51_FNFAL
+{
+	picture	= "\z\addons\dayz_epoch_w\g3\data\m_g3_CA.paa";
+	model = "\z\addons\dayz_epoch_w\g3\h4g3_mag.p3d";
+	displayName = $STR_DZ_MAG_20RND_G3_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_G3_DESC;
+};
+
 class 20Rnd_762x51_DMR : CA_Magazine
 {
 	model = "\dayz_equip\models\mag20.p3d";
