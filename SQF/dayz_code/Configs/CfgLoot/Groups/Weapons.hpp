@@ -164,6 +164,7 @@ weaponsEU[] =
 	{Loot_WEAPON,		7,		P90_DZ},
 	{Loot_WEAPON,		7,		P90_SD_DZ},	
 	{Loot_WEAPON,		7,		Sten_MK_DZ},	
+	{Loot_WEAPON,		7,		MAT49_DZ},
 	
 	// Assault Rifles
 	{Loot_WEAPON,		5,		G36A_Camo_DZ},

@@ -401,3 +401,15 @@ class 32Rnd_9x19_STEN: 30Rnd_9x19_MP5
 	initSpeed = 700;
 	count = 32;
 };
+
+/* MAT 49 */
+
+class 32Rnd_9x19_MAT49: 30Rnd_9x19_MP5
+{
+	displayName = $STR_DZ_MAG_32RND_9x19mm_MAT49_NAME;
+	descriptionShort = $STR_DZ_MAG_32RND_9x19mm_MAT49_DESC;
+	picture	= "\z\addons\dayz_epoch_w\sten\data\m_sten_CA.paa";
+	model = "\z\addons\dayz_epoch_w\sten\h4_sten_mag.p3d";
+	initSpeed = 600;
+	count = 32;
+};

@@ -170,6 +170,7 @@ class CfgWeapons
 	#include "Rifles\UMP.hpp"
 	#include "Rifles\P90.hpp"
 	#include "Rifles\Sten.hpp"
+	#include "Rifles\MAT49.hpp"
 	
 	class M16A2;
 	class M16A2GL;

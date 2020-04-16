@@ -9,7 +9,7 @@
 #include "22lfB.hpp"		//Ruger Mk22
 #include "9x17.hpp"			//PPK
 #include "9x18.hpp"			//Makarov
-#include "9x19.hpp"			//MP5, PDW, Bizon, M9, G17, CZ75, Browning HP, P226, P38, Sten MK
+#include "9x19.hpp"			//MP5, PDW, Bizon, M9, G17, CZ75, Browning HP, P226, P38, Sten MK, MAT-49
 #include "10x22.hpp"		//P99
 #include "45ACP.hpp"		//Colt M1911, Revolver
 #include "44Magnum.hpp"		//Taurus Raging Bull, Colt Anaconda

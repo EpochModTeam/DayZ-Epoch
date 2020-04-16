@@ -13417,7 +13417,23 @@
         <Key ID="STR_DZ_WPN_G3_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-		</Key>			
+		</Key>	
+
+		<!-- MAT 49 -->
+		<Key ID="STR_DZ_WPN_MAT49_NAME">
+			<English>MAT-49</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_MAT49_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm Parabellum</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm Parabellum</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm Parabellum</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm Parabellum</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм Parabellum</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
+        </Key>			
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -14875,6 +14891,21 @@
 			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: G3</German>
 			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: G3</Czech>
 			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 20 &lt;br/&gt; Hozzá tartozó fegyver: G3</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_32RND_9x19mm_MAT49_NAME">
+			<English>32Rnd. MAT-49 mag.</English>
+			<Russian>32п. MAT-49 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_32RND_9x19mm_MAT49_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: MAT-49</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 32&lt;br/&gt;Utilisé avec: MAT-49</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 32&lt;br/&gt;Usado en: MAT-49</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 32&lt;br/&gt;Usato in: MAT-49</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 32&lt;br/&gt;Uzywany w: MAT-49</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 32&lt;br/&gt;Исп. в: MAT-49</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 32&lt;br/&gt;Eingesetzt in: MAT-49</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 32&lt;br/&gt;Pro: MAT-49</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 32&lt;br/&gt; Hozzá tartozó fegyver: MAT-49</Hungarian>
 		</Key>		
 		
 		<!-- **** ATTACHMENTS **** -->
