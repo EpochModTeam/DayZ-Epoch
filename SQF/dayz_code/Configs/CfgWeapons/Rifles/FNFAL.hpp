@@ -6,7 +6,7 @@ class FNFAL_DZ : FN_FAL
 	
 	magazines[] = {20Rnd_762x51_FNFAL};
 	
-	modes[] = {Single};
+	modes[] = {Single, FullAuto};
 	
 	distanceZoomMin = 300;
 	distanceZoomMax = 300;
@@ -55,12 +55,12 @@ class FNFAL_Holo_DZ : FNFAL_CCO_DZ
 
 class FNFAL_ANPVS4_DZ : FN_FAL_ANPVS4
 {
-	modes[] = {Single};
+	modes[] = {Single, FullAuto};
 };
 
 class FN_FAL_ANPVS4_DZE: FN_FAL_ANPVS4 {
 	visionMode[] = {"Normal", "NVG"};
-	modes[] = {Single};
+	modes[] = {Single, FullAuto};
 	
 	class ItemActions
 	{
