@@ -13433,6 +13433,22 @@
 			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм Parabellum</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
+        </Key>
+
+		<!-- Suomi M-31 -->
+		<Key ID="STR_DZ_WPN_M31_NAME">
+			<English>Suomi M-31</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_M31_DESC">
+			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
+			<English>Submachine gun  &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
+			<Italian>Fucile mitragliatore &lt;br/&gt;Calibro: 9x19mm Parabellum</Italian>
+			<Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm Parabellum</Spanish>
+			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm Parabellum</French>
+			<Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm Parabellum</Czech>
+			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 9x19мм Parabellum</Russian>
+			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
+			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
         </Key>			
 		
 		<!-- **** MAGAZINES **** -->
@@ -14906,6 +14922,21 @@
 			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 32&lt;br/&gt;Eingesetzt in: MAT-49</German>
 			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 32&lt;br/&gt;Pro: MAT-49</Czech>
 			<Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 32&lt;br/&gt; Hozzá tartozó fegyver: MAT-49</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_70RND_9x19mm_M31_NAME">
+			<English>70Rnd. Suomi M-31 mag.</English>
+			<Russian>70п. Suomi M-31 маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_70RND_9x19mm_M31_DESC">
+			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 70&lt;br/&gt;Used in: Suomi M-31</English>
+			<French>Calibre: 9x19mm Parabellum&lt;br/&gt;Munitions : 70&lt;br/&gt;Utilisé avec: Suomi M-31</French>
+			<Spanish>Calibre: 9x19mm Parabellum&lt;br/&gt;Cartuchos: 70&lt;br/&gt;Usado en: Suomi M-31</Spanish>
+			<Italian>Calibro: 9x19mm Parabellum&lt;br/&gt;Munizioni: 70&lt;br/&gt;Usato in: Suomi M-31</Italian>
+			<Polish>Kaliber: 9x19mm Parabellum&lt;br/&gt;Naboje: 70&lt;br/&gt;Uzywany w: Suomi M-31</Polish>
+			<Russian>Патрон: 9x19mm Parabellum &lt;br/&gt;Количество: 70&lt;br/&gt;Исп. в: Suomi M-31</Russian>
+			<German>Kaliber: 9x19mm Parabellum&lt;br/&gt;Patronen: 70&lt;br/&gt;Eingesetzt in: Suomi M-31</German>
+			<Czech>Kalibr: 9x19mm Parabellum&lt;br/&gt;Nábojů: 70&lt;br/&gt;Pro: Suomi M-31</Czech>
+			<Hungarian>Kaliber: 9x19mm Parabellum&lt;br/&gt; Töltények: 70&lt;br/&gt; Hozzá tartozó fegyver: Suomi M-31</Hungarian>
 		</Key>		
 		
 		<!-- **** ATTACHMENTS **** -->

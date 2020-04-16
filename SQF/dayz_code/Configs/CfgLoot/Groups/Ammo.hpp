@@ -50,6 +50,7 @@ AmmoCZ[] = {
 	{Loot_MAGAZINE,		3,		30Rnd_9x19_MP5},
 	{Loot_MAGAZINE,		3,		30Rnd_9x19_MP5SD},	
 	{Loot_MAGAZINE,		3,		20Rnd_B_765x17_Ball},
+	{Loot_MAGAZINE,		3,		70Rnd_9x19_M31},
 	
 	// Pistols
 	{Loot_MAGAZINE,		5,		13Rnd_9x19_BHP},

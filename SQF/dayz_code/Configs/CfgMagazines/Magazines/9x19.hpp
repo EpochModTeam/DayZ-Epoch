@@ -413,3 +413,15 @@ class 32Rnd_9x19_MAT49: 30Rnd_9x19_MP5
 	initSpeed = 600;
 	count = 32;
 };
+
+/* Suomi M-31 */
+
+class 70Rnd_9x19_M31: 30Rnd_9x19_MP5
+{
+	displayName = $STR_DZ_MAG_70RND_9x19mm_M31_NAME;
+	descriptionShort = $STR_DZ_MAG_70RND_9x19mm_M31_DESC;
+	picture = "\z\addons\dayz_epoch_w\suomi\data\W_suomi_mag_CA.paa";
+	model = "z\addons\dayz_epoch_w\suomi\suomikp31_mag.p3d";
+	initSpeed = 700;
+	count = 70;
+};

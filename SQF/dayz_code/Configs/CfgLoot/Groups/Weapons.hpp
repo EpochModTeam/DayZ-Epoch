@@ -224,6 +224,7 @@ weaponsCZ[] =
 	{Loot_WEAPON,		7,		Scorpion_Evo3_DZ},
 	{Loot_WEAPON,		7,		Scorpion_Evo3_CCO_DZ},
 	{Loot_WEAPON,		5,		Scorpion_Evo3_CCO_SD_DZ},
+	{Loot_WEAPON,		7,		M31_DZ},
 	
 	// Assault Rifles
 	{Loot_WEAPON,		6,		SA58_DZ},
