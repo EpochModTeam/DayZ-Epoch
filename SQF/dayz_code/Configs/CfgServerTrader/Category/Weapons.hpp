@@ -33,6 +33,7 @@ class Category_12 {
 //Pistols
 class Category_13 {
 	class Revolver_DZ {type = "trade_weapons";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class Colt_Revolver_DZ {type = "trade_weapons";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};	
 	class Colt_Anaconda_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class Colt_Bull_DZ {type = "trade_weapons";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class Colt_Python_DZ {type = "trade_weapons";buy[] = {-4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};

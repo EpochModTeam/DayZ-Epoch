@@ -25,6 +25,7 @@ class 6Rnd_45ACP: CA_Magazine
 {
 	model = "\dayz_equip\models\ammo_acp45.p3d";
 	displayName = $STR_DZ_MAG_6RND_45ACP_NAME;
+	descriptionShort = $STR_DZ_MAG_6RND_45ACP_DESC;
 	
 	cartridgeName = "45ACP";
 	

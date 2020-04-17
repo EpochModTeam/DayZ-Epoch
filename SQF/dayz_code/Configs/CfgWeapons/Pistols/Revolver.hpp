@@ -62,3 +62,13 @@ class Colt_Python_DZ: Colt_Anaconda_DZ
 	magazines[] = {"6Rnd_357Magnum"};
 	recoil = "ColtPython_Recoil";
 };
+
+class Colt_Revolver_DZ: Revolver_DZ
+{
+	model = "\z\addons\dayz_epoch_w\colt\h4_colt";
+	picture	= "\z\addons\dayz_epoch_w\colt\data\w_colt_ca.paa";
+	displayName	= $STR_DZ_WPN_COLT_REVOLVER_NAME;
+	descriptionShort = $STR_DZ_WPN_COLT_REVOLVER_DESC;	
+	begin1[] = {"\RH_de\sound\anac.wss",0.794328,1,800};
+	soundBegin[] = {begin1,1};
+};

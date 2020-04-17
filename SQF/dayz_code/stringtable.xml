@@ -13467,7 +13467,16 @@
         <Key ID="STR_DZ_WPN_DESERT_EAGLE_DESC">			
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .50 AE</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .50 AE</German>
-      </Key>	  
+      </Key>
+
+		<!-- Colt Revolver -->
+		<Key ID="STR_DZ_WPN_COLT_REVOLVER_NAME">
+			<English>Colt Revolver</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_COLT_REVOLVER_DESC">			
+			<English>Revolver &lt;br/&gt;Caliber: .45 ACP</English>
+			<German>Revolver &lt;br/&gt;Kaliber: .45 ACP</German>
+		</Key>	  
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -15004,6 +15013,17 @@
 			<Czech>Kalibr: .50 AE&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Desert Eagle</Czech>
 			<Hungarian>Kaliber: .50 AE&lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Desert Eagle</Hungarian>
 		</Key>		
+		<Key ID="STR_DZ_MAG_6RND_45ACP_DESC">
+			<English>Caliber: .45 ACP&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: Revolver, Colt Revolver</English>
+			<French>Calibre: .45 ACP&lt;br/&gt;Munitions : 6&lt;br/&gt;Utilisé avec: Revolver, Colt Revolver</French>
+			<Spanish>Calibre: .45 ACP&lt;br/&gt;Cartuchos: 6&lt;br/&gt;Usado en: Revolver, Colt Revolver</Spanish>
+			<Italian>Calibro: .45 ACP&lt;br/&gt;Munizioni: 6&lt;br/&gt;Usato in: Revolver, Colt Revolver</Italian>
+			<Polish>Kaliber: .45 ACP&lt;br/&gt;Naboje: 6&lt;br/&gt;Uzywany w: Revolver, Colt Revolver</Polish>
+			<Russian>Патрон: .45 ACP &lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: Revolver, Colt Revolver</Russian>
+			<German>Kaliber: .45 ACP&lt;br/&gt;Patronen: 6&lt;br/&gt;Eingesetzt in: Revolver, Colt Revolver</German>
+			<Czech>Kalibr: .45 ACP&lt;br/&gt;Nábojů: 6&lt;br/&gt;Pro: Revolver, Colt Revolver</Czech>
+			<Hungarian>Kaliber: .45 ACP&lt;br/&gt; Töltények: 6&lt;br/&gt; Hozzá tartozó fegyver: Revolver, Colt Revolver</Hungarian>
+		</Key>
 		
 		<!-- **** ATTACHMENTS **** -->
 		

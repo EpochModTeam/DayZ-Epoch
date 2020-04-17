@@ -251,6 +251,7 @@ pistols[] = { // Residential spawns
 	{Loot_WEAPON,		7,		M1911_DZ},
 	{Loot_WEAPON,		7,		M1911_2_DZ},
 	{Loot_WEAPON,		1,		DesertEagle_DZ},
+	{Loot_WEAPON,		5,		Colt_Revolver_DZ},
 	{Loot_WEAPON,		5,		Revolver_DZ},	
 	{Loot_WEAPON,		1,		revolver_gold_EP1},
 	{Loot_WEAPON,		2,		Colt_Anaconda_DZ},	
