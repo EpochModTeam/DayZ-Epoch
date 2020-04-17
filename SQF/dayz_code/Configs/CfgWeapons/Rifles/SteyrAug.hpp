@@ -172,13 +172,15 @@ class SteyrAug_A3_Holo_Blue_DZ: SteyrAug_A3_Holo_Green_DZ {
 	};	
 };
 
-class SteyrAug_A3_GL_Green_DZ: SteyrAug_A3_base {
+class SteyrAug_A3_GL_Green_DZ: SteyrAug_A3_Green_DZ {
 	scope = public;
 	displayName = $STR_DZ_WPN_AUGA3_GL_NAME;
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_gl_green.paa";
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_gl.p3d";	
 	muzzles[] = {this, M203Muzzle};
 	handAnim[] = {"OFP2_ManSkeleton","\MIDF_Weapons\data\anim\A3_GL.rtm"};
+
+	class Attachments {};	
 	
 	class ItemActions
 	{
