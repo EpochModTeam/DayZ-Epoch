@@ -125,7 +125,7 @@ class XM2010_SD_DZ: XM2010_SD_BASE
 class XM2010_NV_DZ: XM2010_BASE
 {
 	scope = public;
-	displayName = $TR_DZ_WPN_XM2010_NV_NAME;
+	displayName = $STR_DZ_WPN_XM2010_NV_NAME;
 	descriptionShort = $STR_DZ_WPN_XM2010_NV_DESC;
 	model = "\fhq_remington\XM2010\XM2010_nv.p3d";
 	picture = "\fhq_remington\XM2010\icons\xm2010_nv.paa";
