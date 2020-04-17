@@ -53,7 +53,6 @@ class Colt_Bull_DZ: Colt_Anaconda_DZ
 
 class Colt_Python_DZ: Colt_Anaconda_DZ
 {
-	scope = 2;
 	displayName = $STR_DZ_WPN_COLT_PYTHON_NAME;
 	descriptionShort = $STR_DZ_WPN_COLT_PYTHON_DESC;
 	model = "\RH_de\RH_python.p3d";

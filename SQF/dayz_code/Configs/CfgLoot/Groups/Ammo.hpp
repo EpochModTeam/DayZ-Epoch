@@ -7,6 +7,7 @@ AmmoCivilian[] =
 	{Loot_MAGAZINE,		7,		8Rnd_9x18_Makarov},
 	{Loot_MAGAZINE,		3,		32Rnd_9x19_TEC9},
 	{Loot_MAGAZINE,		5,		7Rnd_45ACP_1911},
+	{Loot_MAGAZINE,		1,		7Rnd_50AE_Deagle},
 	{Loot_MAGAZINE,		3,		6Rnd_45ACP},
 	{Loot_MAGAZINE,		1,		6Rnd_44Magnum},
 	{Loot_MAGAZINE,		1,		6Rnd_357Magnum},

@@ -36,6 +36,7 @@ class Category_13 {
 	class Colt_Anaconda_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class Colt_Bull_DZ {type = "trade_weapons";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class Colt_Python_DZ {type = "trade_weapons";buy[] = {-4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class DesertEagle_DZ {type = "trade_weapons";buy[] = {-4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class M1911_DZ {type = "trade_weapons";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class M1911_2_DZ {type = "trade_weapons";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class Kimber_M1911_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};

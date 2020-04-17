@@ -14,6 +14,7 @@
 #include "45ACP.hpp"		//Colt M1911, Revolver
 #include "44Magnum.hpp"		//Taurus Raging Bull, Colt Anaconda
 #include "357Magnum.hpp"	//Colt Python
+#include "50AE.hpp"			//Desert Eagle
 #include "545x39.hpp"		//AK74, RPK74
 #include "556x45.hpp"		//M249, STANAG, G36, Steyr Aug, Beta-C-Mag
 #include "6x35.hpp"			//KAC PDW

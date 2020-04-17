@@ -13458,7 +13458,16 @@
         <Key ID="STR_DZ_WPN_USAS12_DESC">			
 			<English>Automatic Shotgun &lt;br/&gt;Caliber: Caliber 12</English>
 			<German>Selbstladeschrotflinte &lt;br/&gt;Kaliber: Kaliber 12</German>
-      </Key>		
+      </Key>	
+	  
+		<!-- Desert Eagle -->
+		<Key ID="STR_DZ_WPN_DESERT_EAGLE_NAME">
+			<English>Desert Eagle</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_DESERT_EAGLE_DESC">			
+			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .50 AE</English>
+			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .50 AE</German>
+      </Key>	  
 		
 		<!-- **** MAGAZINES **** -->
 		
@@ -14979,6 +14988,21 @@
 			<German>Kaliber: Kaliber 12 Schrot &lt;br/&gt;Patronen: 20&lt;br/&gt;Eingesetzt in: USAS-12</German>
 			<Czech>Kalibr: Kalibr 12 Pellets &lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: USAS-12</Czech>
 			<Hungarian>Kaliber: Kaliber 12 Pellets &lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: USAS-12</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_7RND_50AE_DESERT_EAGLE_NAME">
+			<English>7Rnd. .50 AE mag.</English>
+			<Russian>7п. .50 AE маг.</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_7RND_50AE_DESERT_EAGLE_DESC">
+			<English>Caliber: .50 AE&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Desert Eagle</English>
+			<French>Calibre: .50 AE&lt;br/&gt;Munitions : 7&lt;br/&gt;Utilisé avec: Desert Eagle</French>
+			<Spanish>Calibre: .50 AE&lt;br/&gt;Cartuchos: 7&lt;br/&gt;Usado en: Desert Eagle</Spanish>
+			<Italian>Calibro: .50 AE&lt;br/&gt;Munizioni: 7&lt;br/&gt;Usato in: Desert Eagle</Italian>
+			<Polish>Kaliber: .50 AE&lt;br/&gt;Naboje: 7&lt;br/&gt;Uzywany w: Desert Eagle</Polish>
+			<Russian>Патрон: .50 AE &lt;br/&gt;Количество: 7&lt;br/&gt;Исп. в: Desert Eagle</Russian>
+			<German>Kaliber: .50 AE&lt;br/&gt;Patronen: 7&lt;br/&gt;Eingesetzt in: Desert Eagle</German>
+			<Czech>Kalibr: .50 AE&lt;br/&gt;Nábojů: 7&lt;br/&gt;Pro: Desert Eagle</Czech>
+			<Hungarian>Kaliber: .50 AE&lt;br/&gt; Töltények: 7&lt;br/&gt; Hozzá tartozó fegyver: Desert Eagle</Hungarian>
 		</Key>		
 		
 		<!-- **** ATTACHMENTS **** -->
