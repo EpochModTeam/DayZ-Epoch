@@ -9,7 +9,7 @@ class M31_DZ: MP5A5
 	fireLightDuration = 0.000;
 	fireLightIntensity = 0.000;
 	drySound[] = {"Ca\sounds\Weapons\rifles\dry",db-50,1,10};
-	reloadMagazineSound[] = {"ca\sounds\weapons\rifles\reload-m16-3",db-25,1,25};
+	reloadMagazineSound[] = {"rh_aks\sound\rpk74_reload",db-25,1,25};
 	distanceZoomMin	= 50;
 	distanceZoomMax	= 50;
 	handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons\data\Anim\HKMP5.rtm"};
@@ -18,9 +18,8 @@ class M31_DZ: MP5A5
 	modes[] = {Single, FullAuto};
 	class Single : Mode_SemiAuto
 	{
-		begin1[] = {"ca\sounds\weapons\rifles\Bizon_single1", db5, 1,1000};
-		begin2[] = {"ca\sounds\weapons\rifles\Bizon_single2", db5, 1,1000};
-		soundBegin[] = {begin1,0.5, begin2,0.5};
+		begin1[] = {"rh_aks\sound\rpk74", db5, 1,1000};
+		soundBegin[] = {begin1,1};
 		reloadTime = 0.07;
 		recoil = "recoil_single_primary_1outof10";
 		recoilProne = "recoil_single_primary_prone_1outof10";
@@ -34,9 +33,8 @@ class M31_DZ: MP5A5
 	};
 	class FullAuto : Mode_FullAuto
 	{
-		begin1[] = {"ca\sounds\weapons\rifles\Bizon_single1", db5, 1,1000};
-		begin2[] = {"ca\sounds\weapons\rifles\Bizon_single2", db5, 1,1000};
-		soundBegin[] = {begin1,0.5, begin2,0.5};
+		begin1[] = {"rh_aks\sound\rpk74", db5, 1,1000};
+		soundBegin[] = {begin1,1};
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		ffCount = 1;

@@ -16,11 +16,10 @@ class MAT49_DZ: MP5A5
 	modes[] = {Single, FullAuto};
 	class Single: Mode_SemiAuto
 	{
-		begin1[] = {"ca\sounds\weapons\rifles\Bizon_single1", db5, 1,1000};
-		begin2[] = {"ca\sounds\weapons\rifles\Bizon_single2", db5, 1,1000};
-		soundBegin[] = {begin1,0.5, begin2,0.5};
+		begin1[] = {"rh_smg\sound\mp7", db5, 1,1000};
+		soundBegin[] = {begin1,1};
 		reloadTime = 0.07;
-		recoil = "recoil_single_primary_1outof10";
+		recoil = "recoil_single_primary_2outof10";
 		recoilProne = "recoil_single_primary_prone_1outof10";
 		dispersion = 0.003;
 		minRange = 2;
@@ -32,13 +31,12 @@ class MAT49_DZ: MP5A5
 	};
 	class FullAuto: Mode_FullAuto
 	{
-		begin1[]={"ca\sounds\weapons\rifles\Bizon_single1", db5, 1,1000};
-		begin2[]={"ca\sounds\weapons\rifles\Bizon_single2", db5, 1,1000};
-		soundBegin[]={begin1,0.5, begin2,0.5};
+		begin1[] = {"rh_smg\sound\mp7", db5, 1,1000};
+		soundBegin[] = {begin1,1};
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		ffCount =1;
-		recoil = "recoil_auto_primary_1outof10";
+		recoil = "recoil_auto_primary_2outof10";
 		recoilProne = "recoil_auto_primary_prone_1outof10";
 		aiRateOfFire = 0.001;
 		dispersion = 0.003; //0.007;

@@ -17,9 +17,8 @@ class G3_DZ: FNFAL_DZ
 	modes[] = {Single, FullAuto};
 	class Single : Mode_SemiAuto
 	{
-		begin1[] = {"Ca\Sounds_E\Weapons_E\FNFAL\FNFAL_single_1", db5, 1,1500};
-		begin2[] = {"Ca\Sounds_E\Weapons_E\FNFAL\FNFAL_single_2", db5, 1,1500};
-		soundBegin[] = {begin1,0.5, begin2,0.5};
+		begin1[] = {"rh_mgswp\sound\scarAk", db5, 1,1000};
+		soundBegin[] = {begin1,1};
 		reloadTime = 0.07;
 		recoil = "recoil_single_primary_1outof10";
 		recoilProne = "recoil_single_primary_prone_1outof10";
@@ -33,9 +32,8 @@ class G3_DZ: FNFAL_DZ
 	};
 	class FullAuto : Mode_FullAuto
 	{
-		begin1[] = {"Ca\Sounds_E\Weapons_E\FNFAL\FNFAL_single_1", db5, 1,1500};
-		begin2[] = {"Ca\Sounds_E\Weapons_E\FNFAL\FNFAL_single_2", db5, 1,1500};
-		soundBegin[] = {begin1,0.5, begin2,0.5};
+		begin1[] = {"rh_mgswp\sound\scarAk", db5, 1,1000};
+		soundBegin[] = {begin1,1};
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		ffCount = 1;
