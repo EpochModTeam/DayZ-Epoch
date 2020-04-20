@@ -218,7 +218,7 @@ class MK14_SD_DZ: M14_EP1
 
 class MK14_CCO_SD_DZ: MK14_SD_DZ
 {
-	displayName = $TR_DZ_WPN_MK14_CCO_SD_NAME;
+	displayName = $STR_DZ_WPN_MK14_CCO_SD_NAME;
 	model = "\RH_mgswp\RH_mk14sdaim.p3d";
 	picture = "\RH_mgswp\inv\mk14sdaim.paa";
 	handAnim[] = {"OFP2_ManSkeleton","\RH_mgswp\anim\RH_M4cs.rtm"};
