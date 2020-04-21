@@ -110,10 +110,10 @@ if (DZE_UI == 1) then { // Vanilla
 	//  Blood Regen & BloodLoss:
 	_uiNumber = call {
 		if (r_player_bloodpersec <= -50) exitWith {-3};
-		if ((r_player_bloodpersec <= -25) && (r_player_bloodpersec > -50)) exitWith {-2};
-		if ((r_player_bloodpersec < 0) && (r_player_bloodpersec > -25)) exitWith {-1};
-		if ((r_player_bloodpersec > 5) && (r_player_bloodpersec < 25)) exitWith {1};
-		if ((r_player_bloodpersec >= 25) && (r_player_bloodpersec < 50)) exitWith {2};
+		if ((r_player_bloodpersec <= -25) && {r_player_bloodpersec > -50}) exitWith {-2};
+		if ((r_player_bloodpersec < 0) && {r_player_bloodpersec > -25}) exitWith {-1};
+		if ((r_player_bloodpersec > 5) && {r_player_bloodpersec < 25}) exitWith {1};
+		if ((r_player_bloodpersec >= 25) && {r_player_bloodpersec < 50}) exitWith {2};
 		if (r_player_bloodpersec >= 50) exitWith {3};
 		0;
 	};
@@ -140,10 +140,10 @@ if (DZE_UI == 1) then { // Vanilla
 	
 	_tempText = call {
 		if (r_player_temp_factor <= r_player_temp_min_factor) exitWith {_tempText + "_down3_ca.paa"};
-		if ((r_player_temp_factor <= r_player_temp_min_factor*0.50) && (r_player_temp_factor > r_player_temp_min_factor)) exitWith {_tempText + "_down2_ca.paa"};
-		if ((r_player_temp_factor < r_player_temp_min_factor*0.2) && (r_player_temp_factor > r_player_temp_min_factor*0.50)) exitWith {_tempText + "_down1_ca.paa"};
-		if ((r_player_temp_factor > r_player_temp_max_factor*0.2) && (r_player_temp_factor < r_player_temp_max_factor*0.50)) exitWith {_tempText + "_up1_ca.paa"};
-		if ((r_player_temp_factor >= r_player_temp_max_factor*0.50) && (r_player_temp_factor < r_player_temp_max_factor)) exitWith {_tempText + "_up2_ca.paa"};
+		if ((r_player_temp_factor <= r_player_temp_min_factor*0.50) && {r_player_temp_factor > r_player_temp_min_factor}) exitWith {_tempText + "_down2_ca.paa"};
+		if ((r_player_temp_factor < r_player_temp_min_factor*0.2) && {r_player_temp_factor > r_player_temp_min_factor*0.50}) exitWith {_tempText + "_down1_ca.paa"};
+		if ((r_player_temp_factor > r_player_temp_max_factor*0.2) && {r_player_temp_factor < r_player_temp_max_factor*0.50}) exitWith {_tempText + "_up1_ca.paa"};
+		if ((r_player_temp_factor >= r_player_temp_max_factor*0.50) && {r_player_temp_factor < r_player_temp_max_factor}) exitWith {_tempText + "_up2_ca.paa"};
 		if (r_player_temp_factor >= r_player_temp_max_factor) exitWith {_tempText + "_up3_ca.paa"};
 		"\z\addons\dayz_code\gui\status\status_temp_outside_ca.paa";
 	};
@@ -178,9 +178,9 @@ _ctrlFood ctrlSetText _food;
 
 _tempImg = call {
 	if (_tempLvl >= 36) exitWith {4};
-	if (_tempLvl > 33 && _tempLvl < 36) exitWith {3};
-	if (_tempLvl >= 30 && _tempLvl <= 33) exitWith {2};
-	if (_tempLvl > 28 && _tempLvl < 30) exitWith {1};
+	if (_tempLvl > 33 && {_tempLvl < 36}) exitWith {3};
+	if (_tempLvl >= 30 && {_tempLvl <= 33}) exitWith {2};
+	if (_tempLvl > 28 && {_tempLvl < 30}) exitWith {1};
 	0;
 };
 _temp = _path + "status_temp_" + str(_tempImg) + "_ca.paa";
@@ -212,7 +212,7 @@ if !(canStand player) then { //&& !(ctrlShown _ctrlFracture) makes icon flash no
 };
 
 //  Flashing
-if ((DZE_UI == 1 && DZE_VanillaUICombatIcon) || !(DZE_UI == 1)) then {
+if ((DZE_UI == 1 && DZE_VanillaUICombatIcon) || {!(DZE_UI == 1)}) then {
 	if (_combatVal == 0) then {
 		_ctrlCombat call _flash;
 	} else {
@@ -285,7 +285,7 @@ if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTar
 		_rfriendlies = _humanityTarget getVariable ["friendlies", []];
 		_rfriendlyTo = _humanityTarget getVariable ["friendlyTo", []];
 
-		if ((_rID in _friendlies) && (_id in _rfriendlies)) then {
+		if ((_rID in _friendlies) && {_id in _rfriendlies}) then {
 
 			if !(_id in _rfriendlyTo) then {
 				// diag_log format["IS FRIENDLY: %1", _player];
