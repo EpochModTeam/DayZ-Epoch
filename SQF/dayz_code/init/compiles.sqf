@@ -36,11 +36,7 @@ if (!isDedicated) then {
 	building_spawnZombies = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnZombies.sqf";
 	player_fired = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
 	player_packTent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packTent.sqf";
-	player_updateGui = call {
-		if (toLower DZE_UI == "vanilla") exitWith {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";};
-		if (toLower DZE_UI == "dark") exitWith {compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGuiDark.sqf";};
-		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGuiEpoch.sqf"; // default Epoch.
-	};
+	player_updateGui = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";
 	player_crossbowBolt = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
 	player_music = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music
 	player_death = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_death.sqf";
@@ -239,7 +235,8 @@ if (!isDedicated) then {
 		_myExp = _myExp * 0.7;
 		_myExp
 	};
-
+	
+	/* This function doesn't appear to be necessary. Leaving it commented out for now - JasonTM.
 	ui_initDisplay = {
 		private ["_ctrlBleed","_ctrlFracture","_display","_control"];
 		disableSerialization;
@@ -254,7 +251,7 @@ if (!isDedicated) then {
 			_ctrlFracture = _display displayCtrl 1203;
 			_ctrlFracture ctrlShow false;
 		};
-		/* // These controls don't exist yet
+		 // These controls don't exist yet
 		_ctrlDogFoodBorder = _display displayCtrl 1501;
 		_ctrlDogFoodBorder ctrlShow false;
 		_ctrlDogFood = _display displayCtrl 1701;
@@ -264,8 +261,9 @@ if (!isDedicated) then {
 		_ctrlDogWaterBorder ctrlShow false;
 		_ctrlDogWater = _display displayCtrl 1702;
 		_ctrlDogWater ctrlShow false
-		*/
+		
 	};
+	*/
 
 	dayz_angleCheck = {
 		private ["_degree","_tPos","_zPos","_inAngle","_agent","_target","_eyeDir"];
