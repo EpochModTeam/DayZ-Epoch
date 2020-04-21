@@ -23670,6 +23670,21 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>	
+		</Key>
+		<Key ID="STR_UI_STATUS_VANILLA">
+			<English>Vanilla</English>
+		</Key>
+		<Key ID="STR_UI_STATUS_EPOCH">
+			<English>Epoch</English>
+		</Key>
+		<Key ID="STR_UI_STATUS_DARK">
+			<English>Dark</English>
+		</Key>
+		<Key ID="STR_UI_STATUS_WB">
+			<English>White Borders</English>
+		</Key>
+		<Key ID="STR_UI_STATUS_GB">
+			<English>Green Borders</English>
+		</Key>
 	</Package>
 </Project>

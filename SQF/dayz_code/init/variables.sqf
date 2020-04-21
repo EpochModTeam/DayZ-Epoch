@@ -483,6 +483,7 @@ if (!isDedicated) then {
 	dayz_animalDistance = 600; // Used to calculate the distance from players that animals should spawn and be deleted.
 
 	// Epoch Additions
+	DZE_UI = profileNamespace getVariable ["statusUI",1];
 	dayz_combination = "";
 	keypadCancel = false; //Brute force fix
 	keyPadReset = {uiSleep 2; keypadCancel = false;};

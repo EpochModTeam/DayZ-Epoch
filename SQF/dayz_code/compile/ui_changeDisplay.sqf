@@ -1,17 +1,19 @@
+private "_ui";
 disableSerialization;
 
-if (profileNamespace getVariable ["statusUI",1] == 1) then {
-	private "_style";
-	_style = call {
-		if (toLower DZE_UI == "vanilla") exitWith {"playerStatusGUI"};
-		if (toLower DZE_UI in ["whiteborders","greenborders"]) exitWith {"playerStatusGUI_legacy"};
-		"playerStatusGUI_epoch"; // default
+DZE_UI = (profileNamespace getVariable ["statusUI",1]);
+
+if !(DZE_UI == 0) then {
+	_ui = call {
+		if (DZE_UI == 1) exitWith {"playerStatusGUI"};
+		if (DZE_UI == 2) exitWith {"playerStatusGUI_epoch"};
+		"playerStatusGUI_legacy";
 	};
-	3 cutRsc [_style,"PLAIN",0];
+	3 cutRsc [_ui,"PLAIN",0];
 	call player_updateGui;
-	call ui_initDisplay;
-	hintSilent "";
+	//call ui_initDisplay; // I think this function is old and no longer necessary - JasonTM.
+	//hintSilent ""; // not sure why this is here.
 } else {
 	3 cutRsc ["default","PLAIN",0];
-	hintSilent "";
+	//hintSilent ""; // or here.
 };

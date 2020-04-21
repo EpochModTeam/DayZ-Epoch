@@ -45,7 +45,7 @@ class RscDisplayConfigure {
 	onKeyDown = FILTER_CHEATS;
 };
 class RscDisplayGameOptions {
-	onLoad = "{_idc = _x select 0; _var = _x select 1; _default = _x select 2; lbClear ((_this select 0) displayCtrl _idc); {(_this select 0) displayCtrl _idc lbAdd localize _x} forEach ['STR_DISABLED','STR_ENABLED']; (_this select 0) displayCtrl _idc lbSetCurSel (profileNamespace getVariable [_var,_default]); uiNamespace setVariable [_var,(profileNamespace getVariable [_var,_default])]} forEach [[103,'statusUI',1],[140,'streamerMode',0]];";
+	onLoad = "{_idc = _x select 0; _var = _x select 1; _default = _x select 2; lbClear ((_this select 0) displayCtrl _idc); {(_this select 0) displayCtrl _idc lbAdd localize _x} forEach ([['STR_DISABLED','STR_ENABLED'],['STR_DISABLED','STR_UI_STATUS_VANILLA','STR_UI_STATUS_EPOCH','STR_UI_STATUS_DARK','STR_UI_STATUS_WB','STR_UI_STATUS_GB']] select (_forEachIndex == 0));(_this select 0) displayCtrl _idc lbSetCurSel (profileNamespace getVariable [_var,_default]); uiNamespace setVariable [_var,(profileNamespace getVariable [_var,_default])];} forEach [[103,'statusUI',1],[140,'streamerMode',0]];";
 	onUnload = "call ui_changeDisplay;";
 	onKeyDown = FILTER_CHEATS;
 	class controls {
