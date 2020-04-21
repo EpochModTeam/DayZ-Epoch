@@ -382,11 +382,11 @@ class RscTitles
 			class RscPicture_1203: RscPictureGUI
 			{
 				idc = 1203;
-				text = "\z\addons\dayz_code\gui\status\status_effect_brokenleg.paa";
+				text = "\z\addons\dayz_code\gui\status_epoch\status_fracture_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
 				y = 0.58 * safezoneH + safezoneY;
-				w = 0.075;
-				h = 0.10;
+				w = 0.06;
+				h = 0.08;
 				colorText[] = {1,1,1,1};
 			};
 			class RscPicture_1904: RscPictureGUI
@@ -403,7 +403,7 @@ class RscTitles
 				idc = 1204;
 				text = "\z\addons\dayz_code\gui\status\status_sound_muted.paa"; // previously status_connection_ca which is not used
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.51 * safezoneH + safezoneY;
+				y = 0.44 * safezoneH + safezoneY;
 				w = 0.075;
 				h = 0.10;
 				colorText[] = {1,1,1,1};
@@ -569,7 +569,7 @@ class RscTitles
 				idc = 1204;
 				text = "\z\addons\dayz_code\gui\status\status_sound_muted.paa"; // previously status_connection_ca which is not used
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.51 * safezoneH + safezoneY;
+				y = 0.44 * safezoneH + safezoneY;
 				w = 0.075;
 				h = 0.10;
 				colorText[] = {1,1,1,1};
