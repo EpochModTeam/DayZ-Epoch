@@ -4,23 +4,23 @@ sched_gui_init = { [false] };
 
 sched_gui = {
 	HIDE_FSM_VARS
-	private [ "_array", "_initDone", "_style"];
+	private [ "_array", "_initDone", "_ui"];
 
 	_initDone = _this select 0;
 
 	if ((!_initDone and !isNil 'Dayz_loginCompleted') and {(Dayz_loginCompleted)}) then {
-		if (profileNamespace getVariable ["statusUI",1] == 1) then {
-			_style = call {
-				if (toLower DZE_UI == "vanilla") exitWith {"playerStatusGUI";};
-				if (toLower DZE_UI in ["whiteborders","greenborders"]) exitWith {"playerStatusGUI_legacy";};
-				"playerStatusGUI_epoch"; // default
+		if !(DZE_UI == 0) then {
+			_ui = call {
+				if (DZE_UI == 1) exitWith {"playerStatusGUI"};
+				if (DZE_UI == 2) exitWith {"playerStatusGUI_epoch"};
+				"playerStatusGUI_legacy";
 			};
-			3 cutRsc [_style,"PLAIN",3]; // show the whole HUD
+			3 cutRsc [_ui,"PLAIN",0];
 		} else {
 			[] spawn {uiSleep 2; systemChat (localize "STR_UI_STATUS_ICONS_TOOLTIP");};
 			//This can be removed after friendlies system is removed from player_updateGUI
 			uiNamespace setVariable ["DAYZ_GUI_display",displayNull];
-		};
+		};		
        _initDone = true;
 	};
 	//else {
