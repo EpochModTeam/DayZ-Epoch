@@ -29,7 +29,6 @@ if (!isDedicated) then {
 	DZE_HumanityTargetDistance = 25; // Distance to show name tags (red for bandit, blue for hero, green for friend)
 	DZE_HeartBeat = false; // Enable heartbeat sound when looking at bandit (<= -3000 humanity) up close
 	DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["Skin_GUE_Soldier_CO_DZ","Skin_GUE_Soldier_2_DZ"] etc.
-	DZE_UI = "vanilla"; //"vanilla","epoch","dark","WhiteBorders","GreenBorders"  UI status icons style. Dark accommodates color blind people.
 	DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
 	timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
 	
