@@ -69,13 +69,10 @@ if (isNil "keyboard_keys") then {
 		_handled = true;
 	};
 	_statusUI = {
-		if (profileNamespace getVariable ["statusUI",1] == 1) then {
-			profileNamespace setVariable ["statusUI",0];
-			[format[localize "STR_UI_STATUS_ICONS" + " %1",localize "STR_DISABLED"],1] call dayz_rollingMessages;
-		} else {
-			profileNamespace setVariable ["statusUI",1];
-			[format[localize "STR_UI_STATUS_ICONS" + " %1",localize "STR_ENABLED"],1] call dayz_rollingMessages;
-		};		
+		DZE_UI = DZE_UI + 1;
+		if (DZE_UI == 6) then {DZE_UI = 0; [format[localize "STR_UI_STATUS_ICONS" + " %1",localize "STR_DISABLED"],1] call dayz_rollingMessages;};
+		if (DZE_UI == 1) then {[format[localize "STR_UI_STATUS_ICONS" + " %1",localize "STR_ENABLED"],1] call dayz_rollingMessages;};
+		profileNamespace setVariable ["statusUI",DZE_UI];
 		saveProfileNamespace;
 		call ui_changeDisplay;
 		_handled = true;
