@@ -1,6 +1,7 @@
 class 29Rnd_30mm_AGS30 : CA_Magazine { 
 	scope = public; 
-	displayName = "HE Rounds"; 
+	displayName = $STR_DZ_MAG_29RND_AGS30_NAME; 
+	descriptionShort = $STR_DZ_MAG_29RND_AGS30_DESC;
 	model = "\z\addons\dayz_epoch\models\30mm_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_30mm_mag_ca.paa";
 	ammo = "G_30mm_HE"; 
@@ -9,11 +10,12 @@ class 29Rnd_30mm_AGS30 : CA_Magazine {
 	initSpeed = 185; 
 	maxLeadSpeed = 100; 
 	nameSound = "grenadelauncher"; 
-	weight = 16;
 };
+
 class 48Rnd_40mm_MK19 : CA_Magazine { 
 	scope = public; 
-	displayName = "Mk. 19 40mm"; 
+	displayName = $STR_DZ_MAG_48RND_MK19_NAME; 
+	descriptionShort = $STR_DZ_MAG_48RND_MK19_DESC;
 	model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_40mm_mag_ca.paa";
 	ammo = "G_40mm_HE"; 
@@ -22,12 +24,13 @@ class 48Rnd_40mm_MK19 : CA_Magazine {
 	initSpeed = 240; 
 	maxLeadSpeed = 100; 
 	nameSound = "grenadelauncher"; 
-	weight = 25;
 };
+
 class 2000Rnd_762x51_M134 : CA_Magazine { 
 	count = 2000; 
 	scope = public; 
-	displayName = "M134 7.62 Nato"; 
+	displayName = $STR_DZ_MAG_2000RND_M134_NAME; 
+	descriptionShort = $STR_DZ_MAG_2000RND_M134_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_m134_mag_ca.paa";
 	model = "\z\addons\dayz_epoch\models\m134_mag.p3d";
 	ammo = "B_762x51_3RndBurst"; 
@@ -35,11 +38,18 @@ class 2000Rnd_762x51_M134 : CA_Magazine {
 	maxLeadSpeed = 200; 
 	tracersEvery = 5; 
 	nameSound = "mgun";
-	weight = 50;
 };
+
+class 4000Rnd_762x51_M134 : 2000Rnd_762x51_M134 { 
+	count = 4000; 
+	displayName = $STR_DZ_MAG_4000RND_M134_NAME; 
+	descriptionShort = $STR_DZ_MAG_4000RND_M134_DESC;
+};
+
 class 100Rnd_127x99_M2 : CA_Magazine { 
 	scope = public; 
-	displayName = "M2 Machine Gun"; 
+	displayName = $STR_DZ_MAG_100RND_M2_NAME; 
+	descriptionShort = $STR_DZ_MAG_100RND_M2_DESC;
 	model = "\z\addons\dayz_epoch\models\50cal_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_50cal_mag_ca.paa";
 	ammo = "B_127x99_Ball"; 
@@ -50,11 +60,12 @@ class 100Rnd_127x99_M2 : CA_Magazine {
 	tracersEvery = 3; 
 	lastRoundsTracer = 5; 
 	nameSound = "mgun"; 
-	weight = 8;
 };
+
 class 50Rnd_127x107_DSHKM : CA_Magazine { 
 	scope = public; 
-	displayName = "DShKM"; 
+	displayName = $STR_DZ_MAG_50RND_DSHKM_NAME; 
+	descriptionShort = $STR_DZ_MAG_50RND_DSHKM_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_Dshkm_mag_ca.paa";
 	model = "\z\addons\dayz_epoch\models\dshkm_mag.p3d";
 	ammo = "B_127x107_Ball"; 
@@ -65,14 +76,31 @@ class 50Rnd_127x107_DSHKM : CA_Magazine {
 	tracersEvery = 3; 
 	lastRoundsTracer = 5; 
 	nameSound = "mgun"; 
-	weight = 4;
 };
+
+class 150Rnd_127x107_DSHKM : 50Rnd_127x107_DSHKM { 
+	scope = public; 
+	displayName = $STR_DZ_MAG_150RND_DSHKM_NAME; 
+	descriptionShort = $STR_DZ_MAG_150RND_DSHKM_DESC;
+	count = 150; 
+};
+
+class 50Rnd_127x108_KORD : 50Rnd_127x107_DSHKM { 
+	displayName = $STR_DZ_MAG_50RND_KORD_NAME; 
+	descriptionShort = $STR_DZ_MAG_50RND_KORD_DESC;
+};
+
+class 150Rnd_127x108_KORD : 150Rnd_127x107_DSHKM { 
+	displayName = $STR_DZ_MAG_150RND_KORD_NAME; 
+	descriptionShort = $STR_DZ_MAG_150RND_KORD_DESC;
+};
+
 //Pook stuff
 class pook_1300Rnd_762x51_M60: CA_Magazine
 {
 	scope = 2;
-	displayName = "Pook 1300Rnd. 7.62";
-	descriptionShort = "Caliber: 7.62x51mm <br/>Rounds: 1300 <br/>Used in: Pook H13 Gunship";
+	displayName = $STR_DZ_MAG_1300RND_TWINM60_NAME;
+	descriptionShort = $STR_DZ_MAG_1300RND_TWINM60_DESC;
 	ammo = "pook_762x51_M60";
 	count = 1300;
 	tracersEvery = 5;
@@ -81,13 +109,13 @@ class pook_1300Rnd_762x51_M60: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_m134_mag_ca.paa";
 	model = "\z\addons\dayz_epoch\models\m134_mag.p3d";
 	type = "256";
-	weight = 20;
-	
 };
+
 class pook_250Rnd_762x51: CA_Magazine
 {
 	scope = 2;
-	displayName = "Pook 250Rnd. M240";
+	displayName = $STR_DZ_MAG_250RND_POOKM60_NAME;
+	descriptionShort = $STR_DZ_MAG_250RND_POOKM60_DESC;
 	picture = "\CA\weapons\data\equip\m_m240_ca.paa";
 	count = 250;
 	type = "256";
@@ -96,32 +124,68 @@ class pook_250Rnd_762x51: CA_Magazine
 	tracersEvery = 4;
 	lastRoundsTracer = 4;
 	nameSound = "mgun";
-	descriptionShort = "Caliber: 7.62x51mm NATO <br/>Rounds: 250 <br/>Used in: Pook H13 Transport";
 	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\100Rnd_762x51_M240.p3d";
-	weight = 8;
 };
+
+class 6Rnd_Grenade_Camel: CA_Magazine
+{
+	scope = 2;
+	displayName = $STR_DZ_MAG_6RND_CAMELGRENADE_NAME;
+	descriptionShort = $STR_DZ_MAG_6RND_CAMELGRENADE_DESC;	
+	ammo = "G_Camel_HE";
+	count = 6;
+	initSpeed = 3;
+	maxLeadSpeed = 200;
+	nameSound = "grenade";
+	type = "256";
+	picture = "\z\addons\dayz_epoch\pictures\equip_40mm_mag_ca.paa";
+	model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
+};
+
 class pook_12Rnd_Grenade_Camel: CA_Magazine
 {
 	scope = 2;
 	ammo = "pook_camel_HE";
 	count = 12;
-	displayName = "12Rnd. Pook Grenade";
+	displayName = $STR_DZ_MAG_12RND_POOKGRENADE_NAME;
+	descriptionShort = $STR_DZ_MAG_12RND_POOKGRENADE_DESC;
 	initSpeed = 3;
 	maxLeadSpeed = 200;
 	nameSound = "grenade";
 	type = "256";
-	picture = "\CA\weapons_E\Data\icons\m_6x40mmHP_CA.paa";
+	picture = "\z\addons\dayz_epoch\pictures\equip_40mm_mag_ca.paa";
+	model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
+	
 };
+
 //mozzie
 class 3Rnd_GyroGrenade: CA_Magazine
 {
 	scope = 2;
-	displayName = "3Rnd. Autogyro Grenade";
+	displayName = $STR_DZ_MAG_3RND_MOZZIEGRENADE_NAME;
+	descriptionShort = $STR_DZ_MAG_3RND_MOZZIEGRENADE_DESC;
 	ammo = "GyroGrenade";
 	count = 3;
 	initSpeed = 3;
 	maxLeadSpeed = 200;
 	nameSound = "grenade";
 	type = "256";
-	picture = "\CA\weapons_E\Data\icons\m_6x40mmHP_CA.paa";
+	picture = "\z\addons\dayz_epoch\pictures\equip_40mm_mag_ca.paa";
+	model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
+};
+
+class 500Rnd_TwinVickers: CA_Magazine
+{
+	scope = 2;
+	displayName = $STR_DZ_MAG_500RND_TWINVICKERS_NAME;
+	descriptionShort = $STR_DZ_MAG_500RND_TWINVICKERS_DESC;
+	model = "\z\addons\dayz_epoch\models\50cal_mag.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_50cal_mag_ca.paa";	
+	ammo = "B_77x56_Ball";
+	count = 500;
+	initSpeed = 740;
+	maxLeadSpeed = 200;
+	tracersEvery = 3;
+	nameSound = "mgun";
+	type = "256";
 };

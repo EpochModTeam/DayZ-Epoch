@@ -15025,6 +15025,203 @@
 			<Hungarian>Kaliber: .45 ACP&lt;br/&gt; Töltények: 6&lt;br/&gt; Hozzá tartozó fegyver: Revolver, Colt Revolver</Hungarian>
 		</Key>
 		
+		<!-- **** Vehicle Ammo **** -->
+		
+		<Key ID="STR_DZ_MAG_29RND_AGS30_NAME">
+			<English>29Rnd. AGS-30</English>
+			<Russian>29п. AGS-30</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_29RND_AGS30_DESC">
+			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 29&lt;br/&gt;Used in: AGS-30</English>
+			<German>Kaliber: 30mm HE &lt;br/&gt;Granaten: 29&lt;br/&gt;Eingesetzt in: AGS-30</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_48RND_MK19_NAME">
+			<English>48Rnd. MK 19</English>
+			<Russian>48п. MK 19</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_48RND_MK19_DESC">
+			<English>Caliber: 40mm HE &lt;br/&gt;Grenades: 48&lt;br/&gt;Used in: MK 19</English>
+			<German>Kaliber: 40mm HE &lt;br/&gt;Granaten: 48&lt;br/&gt;Eingesetzt in: MK 19</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_2000RND_M134_NAME">
+			<English>2000Rnd. M134</English>
+			<Russian>2000п. M134</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2000RND_M134_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: M134, Twin M60</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 2000&lt;br/&gt;Utilisé avec: M134, Twin M60</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: M134, Twin M60</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: M134, Twin M60</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: M134, Twin M60</Polish>
+			<Russian>Патрон: 7.62x51mm &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: M134, Twin M60</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Eingesetzt in: M134, Twin M60</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: M134, Twin M60</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: M134, Twin M60</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_4000RND_M134_NAME">
+			<English>4000Rnd. M134</English>
+			<Russian>4000п. M134</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4000RND_M134_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 4000&lt;br/&gt;Used in: M134</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 4000&lt;br/&gt;Utilisé avec: M134</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 4000&lt;br/&gt;Usado en: M134</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 4000&lt;br/&gt;Usato in: M134</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 4000&lt;br/&gt;Uzywany w: M134</Polish>
+			<Russian>Патрон: 7.62x51mm &lt;br/&gt;Количество: 4000&lt;br/&gt;Исп. в: M134</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 4000&lt;br/&gt;Eingesetzt in: M134</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 4000&lt;br/&gt;Pro: M134</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 4000&lt;br/&gt; Hozzá tartozó fegyver: M134</Hungarian>
+		</Key>
+		
+		<Key ID="STR_DZ_MAG_100RND_M2_NAME">
+			<English>100Rnd. M2</English>
+			<Russian>100п. M2</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_100RND_M2_DESC">
+			<English>Caliber: .50&lt;br/&gt;Rounds: 100&lt;br/&gt;Used in: M2</English>
+			<French>Calibre: .50&lt;br/&gt;Munitions : 100&lt;br/&gt;Utilisé avec: M2</French>
+			<Spanish>Calibre: .50&lt;br/&gt;Cartuchos: 100&lt;br/&gt;Usado en: M2</Spanish>
+			<Italian>Calibro: .50&lt;br/&gt;Munizioni: 100&lt;br/&gt;Usato in: M2</Italian>
+			<Polish>Kaliber: .50&lt;br/&gt;Naboje: 100&lt;br/&gt;Uzywany w: M2</Polish>
+			<Russian>Патрон: .50 &lt;br/&gt;Количество: 100&lt;br/&gt;Исп. в: M2</Russian>
+			<German>Kaliber: .50&lt;br/&gt;Patronen: 100&lt;br/&gt;Eingesetzt in: M2</German>
+			<Czech>Kalibr: .50&lt;br/&gt;Nábojů: 100&lt;br/&gt;Pro: M2</Czech>
+			<Hungarian>Kaliber: .50&lt;br/&gt; Töltények: 100&lt;br/&gt; Hozzá tartozó fegyver: M2</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_50RND_DSHKM_NAME">
+			<English>50Rnd. DSHKM</English>
+			<Russian>50п. DSHKM</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_50RND_DSHKM_DESC">
+			<English>Caliber: 12.7x107mm&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: DSHKM</English>
+			<French>Calibre: 12.7x107mm&lt;br/&gt;Munitions : 50&lt;br/&gt;Utilisé avec: DSHKM</French>
+			<Spanish>Calibre: 12.7x107mm&lt;br/&gt;Cartuchos: 50&lt;br/&gt;Usado en: DSHKM</Spanish>
+			<Italian>Calibro: 12.7x107mm&lt;br/&gt;Munizioni: 50&lt;br/&gt;Usato in: DSHKM</Italian>
+			<Polish>Kaliber: 12.7x107mm&lt;br/&gt;Naboje: 50&lt;br/&gt;Uzywany w: DSHKM</Polish>
+			<Russian>Патрон: 12.7x107mm &lt;br/&gt;Количество: 50&lt;br/&gt;Исп. в: DSHKM</Russian>
+			<German>Kaliber: 12.7x107mm&lt;br/&gt;Patronen: 50&lt;br/&gt;Eingesetzt in: DSHKM</German>
+			<Czech>Kalibr: 12.7x107mm&lt;br/&gt;Nábojů: 50&lt;br/&gt;Pro: DSHKM</Czech>
+			<Hungarian>Kaliber: 12.7x107mm&lt;br/&gt; Töltények: 50&lt;br/&gt; Hozzá tartozó fegyver: DSHKM</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_150RND_DSHKM_NAME">
+			<English>150Rnd. DSHKM</English>
+			<Russian>150п. DSHKM</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_150RND_DSHKM_DESC">
+			<English>Caliber: 12.7x107mm&lt;br/&gt;Rounds: 150&lt;br/&gt;Used in: DSHKM</English>
+			<French>Calibre: 12.7x107mm&lt;br/&gt;Munitions : 150&lt;br/&gt;Utilisé avec: DSHKM</French>
+			<Spanish>Calibre: 12.7x107mm&lt;br/&gt;Cartuchos: 150&lt;br/&gt;Usado en: DSHKM</Spanish>
+			<Italian>Calibro: 12.7x107mm&lt;br/&gt;Munizioni: 150&lt;br/&gt;Usato in: DSHKM</Italian>
+			<Polish>Kaliber: 12.7x107mm&lt;br/&gt;Naboje: 150&lt;br/&gt;Uzywany w: DSHKM</Polish>
+			<Russian>Патрон: 12.7x107mm &lt;br/&gt;Количество: 150&lt;br/&gt;Исп. в: DSHKM</Russian>
+			<German>Kaliber: 12.7x107mm&lt;br/&gt;Patronen: 150&lt;br/&gt;Eingesetzt in: DSHKM</German>
+			<Czech>Kalibr: 12.7x107mm&lt;br/&gt;Nábojů: 150&lt;br/&gt;Pro: DSHKM</Czech>
+			<Hungarian>Kaliber: 12.7x107mm&lt;br/&gt; Töltények: 150&lt;br/&gt; Hozzá tartozó fegyver: DSHKM</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_50RND_KORD_NAME">
+			<English>50Rnd. KORD</English>
+			<Russian>50п. KORD</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_50RND_KORD_DESC">
+			<English>Caliber: 12.7x108mm&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: KORD</English>
+			<French>Calibre: 12.7x108mm&lt;br/&gt;Munitions : 50&lt;br/&gt;Utilisé avec: KORD</French>
+			<Spanish>Calibre: 12.7x108mm&lt;br/&gt;Cartuchos: 50&lt;br/&gt;Usado en: KORD</Spanish>
+			<Italian>Calibro: 12.7x108mm&lt;br/&gt;Munizioni: 50&lt;br/&gt;Usato in: KORD</Italian>
+			<Polish>Kaliber: 12.7x108mm&lt;br/&gt;Naboje: 50&lt;br/&gt;Uzywany w: KORD</Polish>
+			<Russian>Патрон: 12.7x108mm &lt;br/&gt;Количество: 50&lt;br/&gt;Исп. в: KORD</Russian>
+			<German>Kaliber: 12.7x108mm&lt;br/&gt;Patronen: 50&lt;br/&gt;Eingesetzt in: KORD</German>
+			<Czech>Kalibr: 12.7x108mm&lt;br/&gt;Nábojů: 50&lt;br/&gt;Pro: KORD</Czech>
+			<Hungarian>Kaliber: 12.7x108mm&lt;br/&gt; Töltények: 50&lt;br/&gt; Hozzá tartozó fegyver: KORD</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_150RND_KORD_NAME">
+			<English>150Rnd. KORD</English>
+			<Russian>150п. KORD</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_150RND_KORD_DESC">
+			<English>Caliber: 12.7x108mm&lt;br/&gt;Rounds: 150&lt;br/&gt;Used in: KORD</English>
+			<French>Calibre: 12.7x108mm&lt;br/&gt;Munitions : 150&lt;br/&gt;Utilisé avec: KORD</French>
+			<Spanish>Calibre: 12.7x108mm&lt;br/&gt;Cartuchos: 150&lt;br/&gt;Usado en: KORD</Spanish>
+			<Italian>Calibro: 12.7x108mm&lt;br/&gt;Munizioni: 150&lt;br/&gt;Usato in: KORD</Italian>
+			<Polish>Kaliber: 12.7x108mm&lt;br/&gt;Naboje: 150&lt;br/&gt;Uzywany w: KORD</Polish>
+			<Russian>Патрон: 12.7x108mm &lt;br/&gt;Количество: 150&lt;br/&gt;Исп. в: KORD</Russian>
+			<German>Kaliber: 12.7x108mm&lt;br/&gt;Patronen: 150&lt;br/&gt;Eingesetzt in: KORD</German>
+			<Czech>Kalibr: 12.7x108mm&lt;br/&gt;Nábojů: 150&lt;br/&gt;Pro: KORD</Czech>
+			<Hungarian>Kaliber: 12.7x108mm&lt;br/&gt; Töltények: 150&lt;br/&gt; Hozzá tartozó fegyver: KORD</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_1300RND_TWINM60_NAME">
+			<English>1300Rnd. Twin M60</English>
+			<Russian>1300п. Twin M60</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1300RND_TWINM60_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 1300&lt;br/&gt;Used in: Twin M60</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 1300&lt;br/&gt;Utilisé avec: Twin M60</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 1300&lt;br/&gt;Usado en: Twin M60</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 1300&lt;br/&gt;Usato in: Twin M60</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 1300&lt;br/&gt;Uzywany w: Twin M60</Polish>
+			<Russian>Патрон: 7.62x51mm &lt;br/&gt;Количество: 1300&lt;br/&gt;Исп. в: Twin M60</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 1300&lt;br/&gt;Eingesetzt in: Twin M60</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 1300&lt;br/&gt;Pro: Twin M60</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 1300&lt;br/&gt; Hozzá tartozó fegyver: Twin M60</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_250RND_POOKM60_NAME">
+			<English>250Rnd. Pook M60</English>
+			<Russian>250п. Pook M60</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_250RND_POOKM60_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: Pook M60</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 250&lt;br/&gt;Utilisé avec: Pook M60</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 250&lt;br/&gt;Usado en: Pook M60</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 250&lt;br/&gt;Usato in: Pook M60</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 250&lt;br/&gt;Uzywany w: Pook M60</Polish>
+			<Russian>Патрон: 7.62x51mm &lt;br/&gt;Количество: 250&lt;br/&gt;Исп. в: Pook M60</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 250&lt;br/&gt;Eingesetzt in: Pook M60</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 250&lt;br/&gt;Pro: Pook M60</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 250&lt;br/&gt; Hozzá tartozó fegyver: Pook M60</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_12RND_POOKGRENADE_NAME">
+			<English>12Rnd. Pook Grenade</English>
+			<German>12Rnd. Pook Granate</German>
+			<Russian>12п. Pook Grenade</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_12RND_POOKGRENADE_DESC">
+			<English>HE Grenade &lt;br/&gt;Grenades: 12&lt;br/&gt;Used in: Pook</English>
+			<German>HE Granate &lt;br/&gt;Granaten: 12&lt;br/&gt;Eingesetzt in: Pook</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_6RND_CAMELGRENADE_NAME">
+			<English>6Rnd. Camel Grenade</English>
+			<German>6Rnd. Camel Granate</German>
+			<Russian>6п. Camel Grenade</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_CAMELGRENADE_DESC">
+			<English>HE Grenade &lt;br/&gt;Grenades: 6&lt;br/&gt;Used in: Camel</English>
+			<German>HE Granate &lt;br/&gt;Granaten: 6&lt;br/&gt;Eingesetzt in: Camel</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_3RND_MOZZIEGRENADE_NAME">
+			<English>3Rnd. Pook Grenade</English>
+			<German>3Rnd. Pook Granate</German>
+			<Russian>3п. Pook Grenade</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_3RND_MOZZIEGRENADE_DESC">
+			<English>HE Grenade &lt;br/&gt;Grenades: 3&lt;br/&gt;Used in: Mozzie</English>
+			<German>HE Granate &lt;br/&gt;Granaten: 3&lt;br/&gt;Eingesetzt in: Mozzie</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_500RND_TWINVICKERS_NAME">
+			<English>500Rnd. Twin Vickers</English>
+			<Russian>500п. Twin Vickers</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_500RND_TWINVICKERS_DESC">
+			<English>Caliber: 7.7x56mm&lt;br/&gt;Rounds: 500&lt;br/&gt;Used in: Twin Vickers</English>
+			<French>Calibre: 7.7x56mm&lt;br/&gt;Munitions : 500&lt;br/&gt;Utilisé avec: Twin Vickers</French>
+			<Spanish>Calibre: 7.7x56mm&lt;br/&gt;Cartuchos: 500&lt;br/&gt;Usado en: Twin Vickers</Spanish>
+			<Italian>Calibro: 7.7x56mm&lt;br/&gt;Munizioni: 500&lt;br/&gt;Usato in: Twin Vickers</Italian>
+			<Polish>Kaliber: 7.7x56mm&lt;br/&gt;Naboje: 500&lt;br/&gt;Uzywany w: Twin Vickers</Polish>
+			<Russian>Патрон: 7.7x56mm &lt;br/&gt;Количество: 500&lt;br/&gt;Исп. в: Twin Vickers</Russian>
+			<German>Kaliber: 7.7x56mm&lt;br/&gt;Patronen: 500&lt;br/&gt;Eingesetzt in: Twin Vickers</German>
+			<Czech>Kalibr: 7.7x56mm&lt;br/&gt;Nábojů: 500&lt;br/&gt;Pro: Twin Vickers</Czech>
+			<Hungarian>Kaliber: 7.7x56mm&lt;br/&gt; Töltények: 500&lt;br/&gt; Hozzá tartozó fegyver: Twin Vickers</Hungarian>
+		</Key>
+		
 		<!-- **** ATTACHMENTS **** -->
 		
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">
@@ -23650,7 +23847,25 @@
 		<Key ID="STR_EPOCH_VECTORS_DEGREES">
 			<English>DEGREES:</English>
 			<German>Grad:</German>
-		</Key>	
+		</Key>			
+		<Key ID="STR_UI_STATUS_VANILLA">
+			<English>Vanilla</English>
+		</Key>
+		<Key ID="STR_UI_STATUS_EPOCH">
+			<English>Epoch</English>
+		</Key>
+		<Key ID="STR_UI_STATUS_DARK">
+			<English>Dark</English>
+			<German>Dunkel</German>
+		</Key>
+		<Key ID="STR_UI_STATUS_WB">
+			<English>White Borders</English>
+			<German>Weiße Umrandung</German>
+		</Key>
+		<Key ID="STR_UI_STATUS_GB">
+			<English>Green Borders</English>
+			<German>Grüne Umrandung</German>
+		</Key>
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
@@ -23670,21 +23885,6 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>
-		<Key ID="STR_UI_STATUS_VANILLA">
-			<English>Vanilla</English>
-		</Key>
-		<Key ID="STR_UI_STATUS_EPOCH">
-			<English>Epoch</English>
-		</Key>
-		<Key ID="STR_UI_STATUS_DARK">
-			<English>Dark</English>
-		</Key>
-		<Key ID="STR_UI_STATUS_WB">
-			<English>White Borders</English>
-		</Key>
-		<Key ID="STR_UI_STATUS_GB">
-			<English>Green Borders</English>
-		</Key>
+		</Key>	
 	</Package>
 </Project>
