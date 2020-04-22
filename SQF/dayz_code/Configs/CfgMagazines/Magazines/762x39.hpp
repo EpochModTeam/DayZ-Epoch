@@ -107,11 +107,15 @@ class 30Rnd_762x39_RK95SD : 30Rnd_762x39_RK95
 };
 
 class 30Rnd_762x39_Groza1: 30Rnd_762x39_RK95 {
+	model = "\RH_aks\mags\mag_ak47.p3d";
+	picture = "\dayz_epoch_c\icons\magazines\m_g1.paa";	
 	displayName = $STR_DZ_MAG_30RND_Groza1_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_Groza1_DESC;	
 };
 
 class 30Rnd_762x39_Groza1SD: 30Rnd_762x39_RK95SD {
+	model = "\RH_aks\mags\mag_ak47.p3d";
+	picture = "\dayz_epoch_c\icons\magazines\m_g1_sd.paa";	
 	displayName = $STR_DZ_MAG_30RND_Groza1SD_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_Groza1SD_DESC;	
 };
