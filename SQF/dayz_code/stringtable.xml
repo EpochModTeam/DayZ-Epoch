@@ -15101,6 +15101,17 @@
 			<Polish>Kaliber: 7.62x51mm &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M24, M40</Polish>
 			<Hungarian>Kaliber: 7.62x51mm &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M24, M40</Hungarian>
         </Key>		
+        <Key ID="str_dss_1rnd_flarewhite_gp25">
+			<English>Type: Flare &lt;br/&gt;Rounds: 1 &lt;br/&gt;Used in: GP-25 grenade launcher</English>
+			<French>Type: Fusée &lt;br/&gt;Munitions : 1 &lt;br/&gt;Utilisé avec : lance-grenades GP-25</French>
+			<Spanish>Tipo: Bengala &lt;br/&gt;Cargas: 1 &lt;br/&gt;Uso: lanzagranadas GP-25</Spanish>
+			<Italian>Tipo: Razzo luminoso &lt;br/&gt;Munizioni: 1 &lt;br/&gt;Si usa in: lanciagranate GP-25</Italian>
+			<Hungarian>Típus: Jelzőfény &lt;br/&gt; Lőszer: 1 &lt;br/&gt; Hozzá tartozó fegyver: GP-25 gránátvető</Hungarian>
+			<Polish>Typ: Flara &lt;br/&gt;Naboje: 1 &lt;br/&gt;Używane w: granatnik GP-25</Polish>
+			<Russian>Тип: сигнальная ракета &lt;br/&gt;Количество: 1 &lt;br/&gt;Используется в: ГП-25</Russian>
+			<German>Typ: Leuchtgeschoss &lt;br/&gt;Schuss: 1 &lt;br/&gt;Verwendet in: GP-25 Granatwerfer</German>
+			<Czech>Typ: světlice &lt;br/&gt;Nábojů: 1 &lt;br/&gt;Pro: granátomet GP-25</Czech>			
+        </Key>	
 		
 		<!-- **** Vehicle Ammo **** -->
 		

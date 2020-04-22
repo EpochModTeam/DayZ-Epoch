@@ -162,6 +162,8 @@ AmmoUS[] =
 	{Loot_MAGAZINE,		1,		FlareWhite_M203},
 	{Loot_MAGAZINE,		1,		FlareGreen_M203},
 	{Loot_MAGAZINE,		1,		1Rnd_Smoke_M203},
+	{Loot_MAGAZINE,		1,		1Rnd_SmokeRed_M203},
+	{Loot_MAGAZINE,		1,		1Rnd_SmokeGreen_M203},
 	
 	// Hand grenades
 	{Loot_MAGAZINE,		1,		SmokeShell},
@@ -225,11 +227,12 @@ AmmoEU[] =
 	{Loot_MAGAZINE,		1,		FlareWhite_M203},
 	{Loot_MAGAZINE,		1,		FlareGreen_M203},
 	{Loot_MAGAZINE,		1,		1Rnd_Smoke_M203},
+	{Loot_MAGAZINE,		1,		1Rnd_SmokeYellow_M203},
 	
 	// Hand grenades
-	{Loot_MAGAZINE,		1,		SmokeShell},
-	{Loot_MAGAZINE,		1,		SmokeShellRed},
-	{Loot_MAGAZINE,		1,		SmokeShellGreen},
+	{Loot_MAGAZINE,		1,		SmokeShellYellow},
+	{Loot_MAGAZINE,		1,		SmokeShellBlue},
+	{Loot_MAGAZINE,		1,		SmokeShellOrange},
 	{Loot_MAGAZINE,		1,		HandGrenade_West}
 };
 
