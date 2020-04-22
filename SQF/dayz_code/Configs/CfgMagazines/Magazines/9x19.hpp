@@ -295,7 +295,7 @@ class 8Rnd_9x19_MK22: 15Rnd_9x19_M9
 	displayName = $STR_DZ_MAG_8RND_9x19_MK22_NAME;
 	descriptionShort = $STR_DZ_MAG_8RND_MK22_9x19_DESC;
 	model = "\RH_de\mags\mag_mk22.p3d";
-	picture = "\RH_de\inv\m_mk22.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_mk22.paa";
 	count = 8;
 	
 	class ItemActions
@@ -310,7 +310,7 @@ class 8Rnd_9x19_MK22SD: 15Rnd_9x19_M9SD
 	displayName = $STR_DZ_MAG_8RND_9x19_MK22SD_NAME;
 	descriptionShort = $STR_DZ_MAG_8RND_MK22SD_9x19_DESC;
 	model = "\RH_de\mags\mag_mk22.p3d";
-	picture = "\RH_de\inv\m_mk22.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_mk22_sd.paa";
 	count = 8;
 	
 	class ItemActions
@@ -379,13 +379,13 @@ class 30Rnd_9x19_TMP : 30Rnd_9x19_MP5
 	displayName = $STR_DZ_MAG_30RND_9X19_TMP_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_TMP_DESC;	
 	model = "\RH_smg\mags\mag_uzi.p3d";
-	picture = "\RH_smg\inv\m_uzi.paa";	
+	picture = "\dayz_epoch_c\icons\magazines\m_uzi.paa";
 };
 
 class 30Rnd_9x19_TMPSD : 30Rnd_9x19_MP5SD
 {
 	model = "\RH_smg\mags\mag_uzi.p3d";
-	picture = "\RH_smg\inv\m_uzi.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_uzi_sd.paa";
 	displayName = $STR_DZ_MAG_30RND_9X19_TMPSD_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_TMPSD_DESC;
 };

@@ -2,6 +2,7 @@ class 100Rnd_762x54_PK : CA_Magazine
 {
 	model = "z\addons\dayz_communityweapons\magazines\pk.p3d";
 	displayName = $STR_DZ_MAG_100RND_762x54_PK_NAME;
+	descriptionShort = $STR_DZ_MAG_100RND_762x54_PK_DESC;
 	
 	cartridgeName = "762x54";
 	type = WeaponSlotItem; // Only takes up one gear slot in Epoch

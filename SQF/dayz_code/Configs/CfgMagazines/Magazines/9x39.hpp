@@ -1,7 +1,8 @@
 //VSS
 class 10Rnd_9x39_SP5_VSS: CA_Magazine
 {
-	model = "dayz_epoch_c\models\magazines\VSS_vintorez_mag.p3d";
+	picture = "\dayz_epoch_c\icons\magazines\m_vssx10_ca.paa";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_VSS_vintorez_mag.p3d";
 	displayName = $STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME;
 	descriptionShort = $STR_DZ_MAG_10RND_939_VSSVAL_DESC;
 	
@@ -15,7 +16,8 @@ class 10Rnd_9x39_SP5_VSS: CA_Magazine
 
 class 20Rnd_9x39_SP5_VSS: CA_Magazine
 {
-	model = "dayz_epoch_c\models\magazines\VSS_vintorez_mag.p3d";
+	picture = "\dayz_epoch_c\icons\magazines\m_vssx20_ca.paa";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_VSS_vintorez_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_939_VSSVAL_DESC;
 	
@@ -47,7 +49,7 @@ class 20Rnd_9x39_Groza9: CA_Magazine {
 class 20Rnd_9x39_Groza9SD: 20Rnd_9x39_Groza9 {
 	displayName = $STR_DZ_MAG_20RND_Groza9SD_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_Groza9SD_DESC;
-	picture = "\RH_aks\inv\m_oc.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_oc_sd.paa";
 	cartridgeName = "9x39_SD";
 	ammo = "B_9x39_OC14_SD";
 };

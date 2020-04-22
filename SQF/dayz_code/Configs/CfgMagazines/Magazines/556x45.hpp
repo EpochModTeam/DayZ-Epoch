@@ -50,6 +50,7 @@ class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag
 {
 	//model = "\dayz_equip\models\mag30.p3d";
 	displayName = $STR_DZ_MAG_30RND_556x45_STANAG_NAME;
+	descriptionShort = $STR_DZE_MAG_30RND_556x45_STANAG_DESC;
 	
 	cartridgeName = "556x45";
 	
@@ -76,6 +77,7 @@ class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag
 class 30Rnd_556x45_G36 : 30Rnd_556x45_Stanag
 {
 	displayName = $STR_DZ_MAG_30RND_556x45_G36_NAME;
+	descriptionShort = $STR_DZE_MAG_30RND_556x45_G36_DESC;
 
 	cartridgeName = "556x45";
 	
@@ -103,6 +105,7 @@ class 30Rnd_556x45_StanagSD : 30Rnd_556x45_Stanag
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_30stanagsd_ca.paa";
 	displayName = $STR_DZ_MAG_30RND_556x45_STANAGSD_NAME;	
+	descriptionShort = $STR_DZE_MAG_30RND_556x45_STANAGSD_DESC;
 
 	cartridgeName = "556x45_SD";
 	
@@ -130,6 +133,7 @@ class 30Rnd_556x45_G36SD : 30Rnd_556x45_G36
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_g36sd_ca.paa";
 	displayName = $STR_DZ_MAG_30RND_556x45_G36SD_NAME;
+	descriptionShort = $STR_DZE_MAG_30RND_556x45_G36SD_DESC;
 	
 	cartridgeName = "556x45_SD";
 	

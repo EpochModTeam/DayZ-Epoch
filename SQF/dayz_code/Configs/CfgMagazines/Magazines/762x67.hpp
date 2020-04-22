@@ -23,4 +23,5 @@ class 5Rnd_762x67_XM2010_SD: 5Rnd_762x67_XM2010
 	displayName = $STR_DZ_MAG_5RND_XM2010SD_NAME;
 	descriptionShort = $STR_DZ_MAG_5RND_XM2010SD_DESC;
 	ammo = "Rem_300Win_SD";
+	picture = "\FHQ_Remington\ammo\ui\i_xm2010_sd.paa";
 };

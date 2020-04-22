@@ -19,7 +19,7 @@ class ACR_30Rnd_680x43_SD: ACR_30Rnd_680x43
 {
 	displayName = $STR_DZ_MAG_30RND_ACRSD_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_ACRSD_DESC;
-	picture = "\FHQ_Remington\ammo\ui\i_30rndpmag.paa";
+	picture = "\FHQ_Remington\ammo\ui\i_30rndpmag_sd.paa";
 	ammo = "B_680x43_SD";
 	initSpeed = 420;	
 };

@@ -1,7 +1,7 @@
 class 7Rnd_45ACP_1911: CA_Magazine
 {
 	model = "\RH_de\mags\mag_kim.p3d";
-	picture = "\RH_de\inv\m_colt.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_colt.paa";
 	displayName = $STR_DZ_MAG_7RND_45ACP_1911_NAME;
 	descriptionShort = $STR_DZ_MAG_7RND_M1911_45ACP_DESC;
 	
@@ -48,7 +48,7 @@ class 15Rnd_45ACP_USP: 7Rnd_45ACP_1911
 	displayName = $STR_DZ_MAG_15RND_45ACP_USP_NAME;
 	descriptionShort = $STR_DZ_MAG_15RND_USP_45ACP_DESC;
 	model = "\RH_de\mags\mag_usp.p3d";
-	picture = "\RH_de\inv\m_usp.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_usp.paa";
 	count = 15;	
 
 	class ItemActions
@@ -61,7 +61,7 @@ class 15Rnd_45ACP_USPSD: 15Rnd_45ACP_USP
 {
 	displayName = $STR_DZ_MAG_15RND_45ACP_USPSD_NAME;
 	descriptionShort = $STR_DZ_MAG_15RND_USPSD_45ACP_DESC;
-	picture = "\RH_de\inv\m_usp.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_usp_sd.paa";
 	ammo = "B_45ACP_SD";
 	initSpeed = 278;
 };
@@ -71,7 +71,7 @@ class 7Rnd_45ACP_1911SD: 15Rnd_45ACP_USPSD
 	displayName = $STR_DZ_MAG_7RND_45ACP_KIMBER1911SD_NAME;
 	descriptionShort = $STR_DZ_MAG_7RND_KIMBER1911SD_45ACP_DESC;
 	model = "\RH_de\mags\mag_kim.p3d";
-	picture = "\RH_de\inv\m_colt.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_colt_sd.paa";
 	ammo = "B_45ACP_SD";
 	count = 7;
 };
@@ -81,7 +81,7 @@ class 33Rnd_45ACP_KRISS: 15Rnd_45ACP_USP
 	displayName = $STR_DZ_MAG_33RND_45ACP_KRISS_NAME;
 	descriptionShort = $STR_DZ_MAG_33RND_KRISS_45ACP_DESC;
 	model = "\RH_smg\mags\mag_kriss30.p3d";
-	picture = "\RH_smg\inv\m_kriss30.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_kriss30.paa";
 	count = 33;
 	type = 256;
 };
@@ -89,7 +89,7 @@ class 33Rnd_45ACP_KRISSSD: 33Rnd_45ACP_KRISS
 {
 	displayName = $STR_DZ_MAG_33RND_45ACP_KRISSSD_NAME;
 	descriptionShort = $STR_DZ_MAG_33RND_KRISSSD_45ACP_DESC;
-	picture = "\RH_smg\inv\m_kriss30.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_kriss30_sd.paa";
 	ammo = "B_45ACP_SD";
 };
 
@@ -98,13 +98,13 @@ class 25Rnd_45ACP_UMP: 33Rnd_45ACP_KRISS
 	displayName = $STR_DZ_MAG_25RND_45_UMP_NAME;
 	descriptionShort = $STR_DZ_MAG_25RND_UMP_DESC;
 	model = "\RH_smg\mags\mag_ump.p3d";
-	picture = "\RH_smg\inv\m_ump.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_ump.paa";
 	count = 25;
 };
 class 25Rnd_45ACP_UMPSD: 25Rnd_45ACP_UMP
 {
 	displayName = $STR_DZ_MAG_25RND_45_UMPSD_NAME;
 	descriptionShort = $STR_DZ_MAG_25RND_UMPSD_DESC;
-	picture = "\RH_smg\inv\m_ump.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_ump_sd.paa";
 	ammo = "B_45ACP_SD";
 };

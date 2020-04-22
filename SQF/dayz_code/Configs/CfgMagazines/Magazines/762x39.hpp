@@ -81,8 +81,8 @@ class 30Rnd_762x39_SA58 : CA_Magazine
 
 class 30Rnd_762x39_RK95 : 30Rnd_762x39_AK47
 {
-	model = "\RH_aks\mags\mag_ak47.p3d";
-	picture = "\RH_aks\inv\m_ak.paa";
+	model = "\RH_aks\mags\mag_rk.p3d";
+	picture = "\dayz_epoch_c\icons\magazines\m_rk95.paa";
 	displayName = $STR_DZ_MAG_30RND_RK95_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_RK95_DESC;
 	
@@ -98,7 +98,7 @@ class 30Rnd_762x39_RK95 : 30Rnd_762x39_AK47
 
 class 30Rnd_762x39_RK95SD : 30Rnd_762x39_RK95
 {
-	picture = "\RH_aks\inv\m_ak.paa";	
+	picture = "\dayz_epoch_c\icons\magazines\m_rk95_sd.paa";
 	displayName = $STR_DZ_MAG_30RND_RK95SD_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_RK95SD_DESC;
 	ammo = "B_762x39_SD";

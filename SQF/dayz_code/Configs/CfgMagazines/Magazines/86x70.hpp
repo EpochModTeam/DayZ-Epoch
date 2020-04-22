@@ -26,6 +26,7 @@ class 7Rnd_86x70_MSR_SD: 7Rnd_86x70_MSR
 	initSpeed = 850;
 	displayName = $STR_DZ_MAG_7RND_MSRSD_NAME;
 	descriptionShort = $STR_DZ_MAG_7RND_MSRSD_DESC;
+	picture = "\FHQ_Remington\ammo\ui\i_msr_sd.paa";
 };
 
 class 10Rnd_86x70_MRAD: 5Rnd_86x70_L115A1
