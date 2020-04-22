@@ -5,6 +5,7 @@ class FoodBioMeat: FoodEdible {
 	picture = "\z\addons\dayz_epoch\pictures\equip_biomeat_CA.paa";
 	descriptionShort = $STR_FOOD_NAME_BIOMEAT_DESC;
 	bloodRegen = 1600;
+	infectionChance = 0.4;
 };
 // new DZE harvested food
 class FoodPumpkin : FoodEdible {
