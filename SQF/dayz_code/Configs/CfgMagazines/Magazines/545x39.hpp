@@ -15,7 +15,7 @@ class 60Rnd_545x39_AK_Taped : 30Rnd_545x39_AK {
 	displayName = $STR_DZE_MAG_60RND_545x39_AK74_NAME;	
 	descriptionShort = $STR_DZE_MAG_60RND_545x39_AK74_DESC;
 	count = 60;
-	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_aktwin_mag.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_ak74_taped.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_ak47_twinmag.p3d";
 };
 
@@ -36,7 +36,7 @@ class 60Rnd_545x39_AKSD_Taped : 30Rnd_545x39_AKSD {
 	displayName = $STR_DZE_MAG_60RND_545x39_AK74SD_NAME;	
 	descriptionShort = $STR_DZE_MAG_60RND_545x39_AK74SD_DESC;
 	count = 60;
-	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_aktwin_mag.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_ak74_taped_sd.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_ak47_twinmag.p3d";
 };
 

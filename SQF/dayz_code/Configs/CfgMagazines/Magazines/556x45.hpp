@@ -161,7 +161,7 @@ class 60Rnd_556x45_Stanag_Taped : 30Rnd_556x45_Stanag {
 	displayName = $STR_DZE_MAG_60RND_556x45_STANAG_NAME;	
 	descriptionShort = $STR_DZE_MAG_60RND_556x45_STANAG_DESC;
 	count = 60;
-	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_stan_twin_ca.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_stanag_taped.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_stannag_twinmag.p3d";
 	class ItemActions
 	{
@@ -175,7 +175,7 @@ class 60Rnd_556x45_StanagSD_Taped : 30Rnd_556x45_StanagSD {
 	displayName = $STR_DZE_MAG_60RND_556x45_STANAGSD_NAME;	
 	descriptionShort = $STR_DZE_MAG_60RND_556x45_STANAGSD_DESC;
 	count = 60;
-	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_stan_twin_ca.paa";
+	picture = "\dayz_epoch_c\icons\magazines\m_stanag_taped_sd.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_stannag_twinmag.p3d";
 	class ItemActions
 	{
