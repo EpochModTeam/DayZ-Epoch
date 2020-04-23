@@ -5,6 +5,7 @@ class AKM_DZ : AK_47_M
 	displayName = $STR_DZ_WPN_AKM_NAME;
 	
 	magazines[] = {30Rnd_762x39_AK47,60Rnd_762x39_AK47_Taped};
+	modes[] = {"Single","FullAuto"};
 	
 	//iron sight zeroing
 	weaponInfoType = "RscWeaponZeroing";
