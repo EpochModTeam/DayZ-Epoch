@@ -109,3 +109,221 @@ class PartWoodPile : CA_Magazine
 		};
 	};
 };
+
+class PartPlankPack: CA_Magazine
+{
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_LUMBERPACK;
+	model = "\z\addons\dayz_epoch\models\plank_pack.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_lumber_pack_CA.paa";
+	descriptionShort = $STR_EPOCH_LUMBERPACK_DESC;
+	weight = 6;
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_251;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"sawmill"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"PartWoodLumber",3}};
+			input[] = {{"PartPlankPack",1}};
+		};
+	};
+};
+
+class PartPlywoodPack: CA_Magazine
+{
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_PLYWOODPACK;
+	model = "\z\addons\dayz_epoch\models\plywood_pack.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_plywood_pack_CA.paa";
+	descriptionShort = $STR_EPOCH_PLYWOODPACK_DESC;
+	weight = 12;
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_251;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"sawmill"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"PartWoodPlywood",3}};
+			input[] = {{"PartPlywoodPack",1}};
+		};
+	};
+};
+
+class PartWoodLumber: CA_Magazine
+{
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_LUMBER;
+	model = "\z\addons\dayz_epoch\models\planks.p3d";
+	picture= "\z\addons\dayz_epoch\pictures\equip_wood_planks_CA.paa";
+	descriptionShort = $STR_EPOCH_LUMBER_DESC;
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_254;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"sawmill"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"PartWoodPlywood",1}};
+			input[] = {{"PartWoodLumber",2}};
+
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_PLAYER_255;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"bulk_empty",1}};
+			input[] = {{"PartWoodLumber",2},{"PartGeneric",1}};
+
+		};
+		class Crafting2
+		{
+			text = $STR_EPOCH_PLAYER_256;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"deer_stand_kit",1}};
+			input[] = {{"PartWoodLumber",8},{"PartWoodPile",2}};
+
+		};
+		class Crafting3
+		{
+			text = $STR_EPOCH_PLAYER_257;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodStairs",1}};
+			input[] = {{"PartWoodLumber",8}};
+
+		};
+		class Crafting4
+		{
+			text = $STR_EPOCH_PLAYER_258;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodLadder",1}};
+			input[] = {{"PartWoodLumber",8}};
+
+		};
+		class Crafting5
+		{
+			text = $STR_EPOCH_PLAYER_259;
+			Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"sawmill"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"PartPlankPack",1}};
+			input[] = {{"PartWoodLumber",3}};
+		};
+		class Crafting6
+		{
+			text = $STR_EPOCH_PLAYER_277;
+			Script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemGunRackKit",1}};
+			input[] = {{"PartWoodLumber",6}};
+		};
+		class Crafting7
+		{
+			text = $STR_EPOCH_PLAYER_304;
+			Script = ";['Crafting7','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodCrateKit",1}};
+			input[] = {{"PartWoodLumber",6}};
+		};
+	};
+};
+
+class PartWoodPlywood: CA_Magazine
+{
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_PLYWOOD;
+	model = "\z\addons\dayz_epoch\models\plywood.p3d";
+	picture= "\z\addons\dayz_epoch\pictures\equip_plywood_CA.paa";
+	descriptionShort = $STR_EPOCH_PLYWOOD_DESC;
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_260;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"workbench_kit",1}};
+			input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_PLAYER_261;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"wood_shack_kit",1}};
+			input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+		};
+		class Crafting2
+		{
+			text = $STR_EPOCH_PLAYER_262;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"ItemWoodFloorQuarter",1}};
+			input[] = {{"PartWoodPlywood",3},{"PartWoodLumber",3}};
+		};
+		class Crafting3
+		{
+			text = $STR_EPOCH_PLAYER_263;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"ItemWoodWallThird",1}};
+			input[] = {{"PartWoodPlywood",3},{"PartWoodLumber",3}};
+		};
+		class Crafting4
+		{
+			text = $STR_EPOCH_PLAYER_264;
+			Script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"sawmill"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"PartPlywoodPack",1}};
+			input[] = {{"PartWoodPlywood",3}};
+		};
+	};
+};
+
+class equip_wood_pallet : CA_Magazine {
+	scope = public;
+	count = 1;
+	displayName = $STR_ITEM_NAME_equip_wood_pallet;
+	descriptionShort = $STR_ITEM_DESC_equip_wood_pallet;
+	model = "\z\addons\dayz_communityassets\models\wooden_pallet.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_wpallet_ca.paa";
+	type = 256;
+};
+
+class equip_crate : CA_Magazine {
+	scope = public;
+	count = 1;
+	displayName = $STR_ITEM_NAME_equip_crate;
+	descriptionShort = $STR_ITEM_DESC_equip_crate;
+	model = "\z\addons\dayz_communityassets\models\crate.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_crate.paa";
+	type = 256;
+};

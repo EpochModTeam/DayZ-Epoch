@@ -83,12 +83,6 @@ class ItemSoda : FoodDrink
 	consumeDrop = true;
 };
 
-//Player made drinks base class
-/*class ItemBrew : FoodDrink
-{
-	Nutrition[] = {0,0,0,0};
-};*/
-
 //Raw food base class
 class FoodRaw : FoodEdible
 {
@@ -111,3 +105,4 @@ class FoodCooked : FoodEdible
 
 #include "Soda.hpp"
 #include "WaterBottle.hpp"
+#include "PlasticWaterbottle.hpp"

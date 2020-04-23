@@ -118,3 +118,48 @@ class ItemHeatPack : CA_Magazine
 		};
 	};
 };
+
+class equip_woodensplint : CA_Magazine {
+	scope = public;
+	count = 1;
+	displayName = $STR_ITEM_NAME_WOODENSPLINT;
+	descriptionShort = $STR_ITEM_DESC_WOODENSPLINT;
+	model = "\z\addons\dayz_communityassets\models\woodensplint.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_woodensplint_ca.paa";
+	type = 256;
+	class ItemActions {
+		class Use {
+			text = $STR_ACTIONS_BRACE_LEG;
+			script = "spawn player_useMeds;";
+		};
+	};
+};
+
+class equip_gauze : CA_Magazine {
+	scope = public;
+	count = 1;
+	displayName = $STR_ITEM_NAME_equip_gauze;
+	descriptionShort = $STR_ITEM_DESC_equip_gauze;
+	model = "\z\addons\dayz_communityassets\models\gauze.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_gauze_ca.paa";
+	type = 256;
+};
+
+class equip_gauzepackaged : CA_Magazine {
+	scope = public;
+	count = 1;
+	displayName = $STR_ITEM_NAME_equip_gauzepackaged;
+	descriptionShort = $STR_ITEM_DESC_equip_gauzepackaged;
+	model = "\z\addons\dayz_communityassets\models\gauze_package.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_gauze_package_ca.paa";
+	type = 256;
+};
+
+class equip_herb_box : CA_Magazine {
+	scope = public;
+	count = 1;
+	displayName = $STR_EQUIP_NAME_HERBBOX;
+	descriptionShort = $STR_EQUIP_DESC_HERBBOX;
+	model = "\z\addons\dayz_communityassets\models\herb_box.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_herb_box_ca.paa";
+};
