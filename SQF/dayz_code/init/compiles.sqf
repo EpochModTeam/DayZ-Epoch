@@ -15,7 +15,12 @@ if (!isDedicated) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_padlock.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
-
+	
+	actionMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\actionMonitor.sqf";
+	object_pickup = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickup.sqf";
+	object_pickupAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf";
+	object_BackpackAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf";
+	
 	fn_dropItem = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dropItem.sqf";
 	fn_dynamicTool = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dynamicTool.sqf";
 	fn_exitSwim = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_exitSwim.sqf";
@@ -101,8 +106,7 @@ if (!isDedicated) then {
 
 	FNC_find_plots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_find_plots.sqf";
 	player_wearClothes = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
-	player_dropWeapon = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_dropWeapon.sqf";
-	object_pickup = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\object_pickup.sqf";
+	player_dropWeapon = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_dropWeapon.sqf";	
 	player_combineMag = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
 	player_combineAntibiotics = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineAntibiotics.sqf";
 	player_combinePainkiller = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combinePainkiller.sqf";

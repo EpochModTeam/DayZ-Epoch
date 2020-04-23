@@ -7,7 +7,7 @@ class WoodenArrowF : WeaponHolderBase {
 
 	class eventHandlers
 	{
-		init = "[(_this select 0),'cfgMagazines','1Rnd_Arrow_Wood'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','1Rnd_Arrow_Wood'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_ItemCrowbar: WeaponHolderBase
@@ -19,7 +19,7 @@ class WeaponHolder_ItemCrowbar: WeaponHolderBase
 	
 	class eventHandlers
 	{
-		init="[(_this select 0),'cfgWeapons','ItemCrowbar'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init="[(_this select 0),'cfgWeapons','ItemCrowbar'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_ItemPickaxe: WeaponHolderBase
@@ -31,7 +31,7 @@ class WeaponHolder_ItemPickaxe: WeaponHolderBase
 	
 	class eventHandlers
 	{
-		init="[(_this select 0),'cfgWeapons','ItemPickaxe'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init="[(_this select 0),'cfgWeapons','ItemPickaxe'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_ItemPickaxeBroken: WeaponHolder_ItemPickaxe
@@ -40,7 +40,7 @@ class WeaponHolder_ItemPickaxeBroken: WeaponHolder_ItemPickaxe
 	
 	class eventHandlers
 	{
-		init="[(_this select 0),'cfgWeapons','ItemPickaxeBroken'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init="[(_this select 0),'cfgWeapons','ItemPickaxeBroken'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_ItemSledge : WeaponHolderBase { // Epoch class. Needed for player_dropWeapon
@@ -50,7 +50,7 @@ class WeaponHolder_ItemSledge : WeaponHolderBase { // Epoch class. Needed for pl
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgWeapons','ItemSledge'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgWeapons','ItemSledge'] spawn object_pickupAction;";
 	};
 };
 /*
@@ -63,7 +63,7 @@ class WeaponHolder_MeleeBaseBallBat: WeaponHolderBase
 	
 	class eventHandlers
 	{
-		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBat'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBat'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_MeleeBatBarbed: WeaponHolderBase
@@ -75,7 +75,7 @@ class WeaponHolder_MeleeBatBarbed: WeaponHolderBase
 	
 	class eventHandlers
 	{
-		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBatBarbed'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBatBarbed'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_MeleeBaseBallBatNails: WeaponHolderBase
@@ -87,7 +87,7 @@ class WeaponHolder_MeleeBaseBallBatNails: WeaponHolderBase
 	
 	class eventHandlers
 	{
-		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBatNails'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBatNails'] spawn object_pickupAction;";
 	};
 };
 */
@@ -100,7 +100,7 @@ class WeaponHolder_MeleeMachete: WeaponHolderBase
 	
 	class eventHandlers
 	{
-		init="[(_this select 0),'cfgWeapons','MeleeMachete'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init="[(_this select 0),'cfgWeapons','MeleeMachete'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_ItemJerrycanEmpty : WeaponHolderBase {
@@ -110,7 +110,7 @@ class WeaponHolder_ItemJerrycanEmpty : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemJerrycanEmpty'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','ItemJerrycanEmpty'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_ItemFuelcanEmpty : WeaponHolderBase {
@@ -120,7 +120,7 @@ class WeaponHolder_ItemFuelcanEmpty : WeaponHolderBase {
 	destrType = "DestructNo";
 
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemFuelcanEmpty'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','ItemFuelcanEmpty'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_ItemFuelcan : WeaponHolderBase {
@@ -130,7 +130,7 @@ class WeaponHolder_ItemFuelcan : WeaponHolderBase {
 	destrType = "DestructNo";
 
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemFuelcan'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','ItemFuelcan'] spawn object_pickupAction;";
 	};
 };
 class WeaponHolder_ItemCamoNet : WeaponHolderBase {
@@ -141,7 +141,7 @@ class WeaponHolder_ItemCamoNet : WeaponHolderBase {
 	destrType = "DestructNo";
 
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','forest_net_kit'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','forest_net_kit'] spawn object_pickupAction;";
 	};
 };
 
@@ -152,7 +152,7 @@ class WeaponHolder_ItemDomeTent : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemDomeTent'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','ItemDomeTent'] spawn object_pickupAction;";
 	};
 };
 
@@ -163,7 +163,7 @@ class WeaponHolder_ItemDesertTent : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemDesertTent'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','ItemDesertTent'] spawn object_pickupAction;";
 	};
 };
 
@@ -174,6 +174,6 @@ class WeaponHolder_ItemCrate : WeaponHolderBase {
 	destrType = "DestructNo";
 		
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','equip_crate'] execVM '\z\addons\dayz_code\init\object_pickupAction.sqf';";
+		init = "[(_this select 0),'cfgMagazines','equip_crate'] spawn object_pickupAction;";
 	};
 };
