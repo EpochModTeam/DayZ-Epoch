@@ -6,7 +6,7 @@ class WA2000_DZ: m107
 	displayname = $STR_DZ_WPN_WA2000_NAME;
 	descriptionShort = $STR_DZ_WPN_WA2000_DESC;
 	model = "z\addons\dayz_epoch_w\wa2000\h4_wa2000.p3d";
-	picture = "\z\addons\dayz_epoch_w\wa2000\data\w_wa2000_ca.paa";
+	picture = "\dayz_epoch_c\icons\weapons\w_wa2000_ca.paa";
 	UiPicture = "\CA\weapons\data\Ico\i_sniper_CA.paa";
 	magazines[] = {6Rnd_762x51_WA2000};
 	handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons\data\Anim\M24.rtm"};
