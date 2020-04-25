@@ -8,7 +8,7 @@ private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_t
 "_hasKey","_oldOwner","_hasAttached","_isZombie","_isHarvested","_isMan","_isFuel","_hasRawMeat","_hastinitem","_player_deleteBuild",
 "_player_lockUnlock_crtl","_displayName","_hasIgnitors","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached",
 "_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget",
-"_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_isVehicletype","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan",
+"_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan",
 "_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isDisallowRefuel","_isDog",
 "_isModular","_isModularDoor","_isHouse","_isGateOperational","_isGateLockable","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
@@ -54,16 +54,13 @@ if (_canPickLight && {!dayz_hasLight} && {!_isPZombie}) then {
 };
 
 if (s_player_equip_carry < 0) then {
-	if (dayz_onBack != "" && { !_inVehicle && { !_onLadder && { !r_player_unconscious } } }) then {
+	if (dayz_onBack != "" && {!_inVehicle && {!_onLadder && {!r_player_unconscious}}}) then {
 		dz_plr_carryActionItem = dayz_onBack;
 		_text = getText (configFile >> "CfgWeapons" >> dz_plr_carryActionItem >> "displayName");
-		s_player_equip_carry = player addAction [
-			format [localize "STR_ACTIONS_WEAPON", _text],
-			"\z\addons\dayz_code\actions\player_switchWeapon_action.sqf",
-			nil, 0.5, false, true];
+		s_player_equip_carry = player addAction [format [localize "STR_ACTIONS_WEAPON", _text],"\z\addons\dayz_code\actions\player_switchWeapon_action.sqf",nil, 0.5, false, true];
 	};
 } else {
-	if (dayz_onBack != dz_plr_carryActionItem || { _inVehicle || { _onLadder || { r_player_unconscious } } } ) then {
+	if (dayz_onBack != dz_plr_carryActionItem || {_inVehicle || {_onLadder || {r_player_unconscious}}}) then {
 		player removeAction s_player_equip_carry;
 		s_player_equip_carry = -1;
 	};
@@ -221,7 +218,6 @@ if (_isPZombie) then {
 _allowedDistance = [4, 8] select ((_cursorTarget isKindOf "Air") || {_cursorTarget isKindOf "Ship"} || {_cursorTarget isKindOf "Tank"});
 
 if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance _cursorTarget < _allowedDistance} && {_canDo}) then {
-//Has some kind of target
 	_typeOfCursorTarget = typeOf _cursorTarget;
 	_isVehicle = _cursorTarget isKindOf "AllVehicles";
 	_isBicycle = _cursorTarget isKindOf "Bicycle";
@@ -229,7 +225,6 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	_isDestructable = _cursorTarget isKindOf "BuiltItems";
 	_isGenerator = _typeOfCursorTarget == "Generator_DZ";
 	_isLocked = locked _cursorTarget;
-	//_isVehicletype = _typeOfCursorTarget in ["ATV_US_EP1","ATV_CZ_EP1"]; //Checked in player_flipvehicle
 	_isFuel = false;
 	_hasBarrel = "ItemFuelBarrel" in _magazinesPlayer;
 	_hasFuel20 = "ItemJerrycan" in _magazinesPlayer;
@@ -417,8 +412,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 		//upgrade items
 		if (_typeOfCursorTarget in _upgradeItems) then {
 			if (s_player_upgradestorage < 0) then {
-				_displayName = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
-				s_player_upgradestorage = player addAction [format[localize "STR_EPOCH_UPGRADE",_displayName], "\z\addons\dayz_code\actions\object_upgradeStorage.sqf",_cursorTarget, 0, false, true];
+				s_player_upgradestorage = player addAction [format[localize "STR_EPOCH_UPGRADE",_text], "\z\addons\dayz_code\actions\object_upgradeStorage.sqf",_cursorTarget, 0, false, true];
 			};
 		} else {
 			player removeAction s_player_upgradestorage;
@@ -439,6 +433,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 		player removeAction s_player_packtent;
 		s_player_packtent = -1;
 	};
+
 	//other tents
 	if (_istypeTent) then {
 		_hasIgnitors = {_x in DayZ_Ignitors} count _itemsPlayer > 0;
@@ -768,14 +763,12 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	};
 
 	//Allow owner to pack vault
-	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {_isClose}  && {!keypadCancel}) then {
+	if ((_typeOfCursorTarget in DZE_UnLockedStorage) && {_characterID != "0"} && {_isClose} && {!keypadCancel} && {(_characterID == dayz_combination || _ownerID == _uid)}) then {
 		if (s_player_lockvault < 0) then {
-			if ((_characterID == dayz_combination) || {_ownerID == _uid}) then {
-				s_player_lockvault = player addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true];
-			};
+			s_player_lockvault = player addAction [format[localize "STR_EPOCH_ACTIONS_LOCK",_text], "\z\addons\dayz_code\actions\vault_lock.sqf",_cursorTarget, 0, false, true];
 		};
-		if (s_player_packvault < 0 && {(_characterID == dayz_combination) || (_ownerID == _uid)}) then {
-			s_player_packvault = player addAction [format["<t color='#ff0000'>%1</t>",(format[localize "STR_EPOCH_ACTIONS_PACK",_text])], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true];
+		if (s_player_packvault < 0) then {
+			s_player_packvault = player addAction [format["<t color='#ff0000'>%1</t>",format[localize "STR_EPOCH_ACTIONS_PACK",_text]], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true];
 		};
 	} else {
 		player removeAction s_player_packvault;
@@ -797,10 +790,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	//Fuel Pump
 	if (_typeOfCursorTarget in dayz_fuelpumparray) then {
 		if (s_player_fuelauto < 0) then {
-			// check if Generator_DZ is running within 30 meters
 			_findNearestGen = {((alive _x) && (_x getVariable ["GeneratorRunning",false]))} count (([player] call FNC_getPos) nearObjects ["Generator_DZ",30]);
-
-			// show that pump needs power if no generator nearby.
 			if (_findNearestGen > 0) then {
 				s_player_fuelauto = player addAction [localize "STR_EPOCH_ACTIONS_FILLVEH", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",objNull, 0, false, true];
 			} else {
@@ -815,7 +805,6 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	//Fuel Pump on truck
 	if (_typeOfCursorTarget in DZE_fueltruckarray && {_isAlive}) then {
 		if (s_player_fuelauto2 < 0) then {
-			// show that fuel truck pump needs power.
 			if (isEngineOn _cursorTarget) then {
 				s_player_fuelauto2 = player addAction [localize "STR_EPOCH_ACTIONS_FILLVEH", "\z\addons\dayz_code\actions\fill_nearestVehicle.sqf",_cursorTarget, 0, false, true];
 			} else {
@@ -949,7 +938,6 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 				s_player_parts set [count s_player_parts,_cancel];
 			} else {
 				private ["_itemName1","_itemName2"];
-				// Static Menu
 				{
 					_itemName1 = getText (configFile >> "CfgMagazines" >> (_x select 0) >> "displayName");
 					_itemName2 = getText (configFile >> "CfgMagazines" >> (_x select 1) >> "displayName");
