@@ -1,4 +1,4 @@
-if (player isKindOf "PZombie_VB") exitWith {};
+if (isServer || {player isKindOf "PZombie_VB"}) exitWith {};
 /*
 	Created exclusively for ArmA2:OA - DayZMod.
 	Please request permission to use/alter from R4Z0R49.

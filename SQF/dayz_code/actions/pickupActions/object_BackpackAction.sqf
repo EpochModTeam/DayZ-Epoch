@@ -1,4 +1,4 @@
-if (player isKindOf "PZombie_VB") exitWith {};
+if (isServer || {player isKindOf "PZombie_VB"}) exitWith {};
 
 private ["_holder", "_type", "_classname", "_actionSet", "_name"];
 

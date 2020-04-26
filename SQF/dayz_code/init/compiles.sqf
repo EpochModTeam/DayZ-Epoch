@@ -18,8 +18,6 @@ if (!isDedicated) then {
 	
 	actionMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\actionMonitor.sqf";
 	object_pickup = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickup.sqf";
-	object_pickupAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf";
-	object_BackpackAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf";
 	
 	fn_dropItem = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dropItem.sqf";
 	fn_dynamicTool = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dynamicTool.sqf";
@@ -750,6 +748,10 @@ zombie_initialize = compile preprocessFileLineNumbers "\z\addons\dayz_code\compi
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\traps\init.sqf";
 //call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\achievements_init.sqf"; //start achievements_init
 fnc_fieldOfView = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_fieldOfView.sqf";
+//object_pickupAction and object_BackpackAction needs to be compiled for server too, since backpacks and weaponholders can be spawned from the server
+object_pickupAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf";
+object_BackpackAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf";
+
 
 if (dayz_townGenerator) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\psrnd.sqf"; // pseudo random for plantSpanwer
