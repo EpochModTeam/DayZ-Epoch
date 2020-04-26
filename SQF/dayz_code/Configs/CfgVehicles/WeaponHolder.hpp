@@ -177,3 +177,205 @@ class WeaponHolder_ItemCrate : WeaponHolderBase {
 		init = "[(_this select 0),'cfgMagazines','equip_crate'] spawn object_pickupAction;";
 	};
 };
+
+class WeaponHolder_Colt1911 : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_WPN_HOLDR_1;
+	model = "\dayz_equip\proxy\Colt1911.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','Colt1911'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_ItemHatchet : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_HATCHET;
+	model = "\dayz_equip\models\hatchet.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','ItemHatchet'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_MeleeCrowbar : WeaponHolderBase {
+	scope = public;
+	displayName = "Crowbar";
+	model = "\dayz_equip\models\crowbar.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','MeleeCrowbar'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_huntingrifle : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_WPN_HOLDR_2;
+	model = "\dayz_equip\proxy\huntingrifle.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','huntingrifle'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_M4A1 : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_WPN_HOLDR_3;
+	model = "\dayz_equip\proxy\M4A1.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','M4A1'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_ItemTent : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_20;
+	model = "\dayz_equip\proxy\tentbag.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemTent'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_ItemFlashlight : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_5;
+	model = "\dayz_equip\proxy\flashlight.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','ItemFlashlight'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_ItemFlashlightRed : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_6;
+	model = "\dayz_equip\proxy\flashlight_mil.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','ItemFlashlightRed'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_ItemWaterbottle : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_12;
+	model = "\dayz_equip\proxy\waterbottle.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemWaterbottleUnfilled'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_ItemGenerator : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_31;
+	model = "\dayz_equip\models\generator.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemGenerator'] execVM '\z\addons\dayz_code\init\object_generator.sqf';";
+	};
+};
+
+class WeaponHolder_ItemToolbox : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_2;
+	model = "\dayz_equip\proxy\toolbox.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgWeapons','ItemToolbox'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_PartFueltank : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_8;
+	model = "\dayz_equip\proxy\fueltank.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','PartFueltank'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_PartWheel : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_9;
+	model = "\dayz_equip\proxy\wheel.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','PartWheel'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_PartGeneric : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_10;
+	model = "\dayz_equip\proxy\genericparts.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','PartGeneric'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_PartVRotor : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_32;
+	model = "\dayz_equip\proxy\vrotor.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','PartVRotor'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_PartEngine : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_11;
+	model = "\dayz_equip\proxy\engine.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','PartEngine'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_PartGlass : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_30;
+	model = "\dayz_equip\proxy\carglass.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','PartGlass'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_ItemJerrycan : WeaponHolderBase {
+	scope = public;
+	displayName = $STR_EQUIP_NAME_19;
+	model = "\dayz_equip\proxy\jerrycan.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemJerrycan'] spawn object_pickupAction";
+	};
+};
+
+class WeaponHolder_ItemJerrycanSide : WeaponHolder_ItemJerrycan {
+	model = "\dayz_equip\proxy\jerrycan_side.p3d";
+};
