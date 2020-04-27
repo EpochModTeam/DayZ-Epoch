@@ -433,6 +433,29 @@ class SCAR_H_LNG_Sniper_SD;
 class MK17_Sniper_SD_DZ: SCAR_H_LNG_Sniper_SD {
 	descriptionShort = $STR_DZ_WPN_MK17SD_SNIPER_DESC;
 	modes[] = {"SCAR_H_SD_Single","SCAR_H_SD_FullAuto"};
+	weaponInfoType = "RscWeaponZeroing";
+	class OpticsModes
+	{
+		class StepScope
+		{
+			opticsID = 1;
+			useModelOptics = 1;
+			opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
+			opticsZoomInit = 0.227272727;
+			opticsZoomMax = 0.227272727;
+			opticsZoomMin = 0.0623;
+			memoryPointCamera = "eye";
+			opticsFlare = 1;
+			opticsDisablePeripherialVision = 1;
+			distanceZoomMin = 100;
+			distanceZoomMax = 100;
+			cameraDir = "";
+			visionMode[] = {"Normal"};
+			discreteDistance[] = {50,100,200,300,400,500,600,700,800};
+			discreteDistanceInitIndex = 1;
+		};
+	};	
+	
 	class SCAR_H_SD_Single: Mode_SemiAuto
 	{
 		begin1[] = {"\RH_mgswp\sound\scarh_sd",1.0,1,75};

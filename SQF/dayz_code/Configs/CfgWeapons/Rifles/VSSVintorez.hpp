@@ -1,6 +1,47 @@
 class VSS_vintorez;
 class VSS_vintorez_DZE: VSS_vintorez
 {
+	class OpticsModes
+	{		
+		class Scope
+		{
+			cameraDir = "";
+			distanceZoomMax = 200;
+			distanceZoomMin = 200;
+			memoryPointCamera = "opticView";
+			opticsDisablePeripherialVision = 1;
+			opticsFlare = 1;
+			opticsID = 1;
+			opticsPPEffects[] = {
+				"OpticsCHAbera2",
+				"OpticsBlur3"
+			};
+			opticsZoomInit = 0.0623;
+			opticsZoomMax = 0.0623;
+			opticsZoomMin = 0.0623;
+			useModelOptics = 1;
+			visionMode[] = {"Normal"};
+			discreteDistance[] = {100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800};
+			discreteDistanceInitIndex = 2;
+		};
+		class Ironsights: Scope
+		{
+			distanceZoomMax = 100;
+			distanceZoomMin = 100;
+			memoryPointCamera = "eye";
+			opticsDisablePeripherialVision = 0;
+			opticsFlare = 0;
+			opticsID = 2;
+			opticsPPEffects[] = {};
+			opticsZoomInit = 0.5;
+			opticsZoomMax = 1.1;
+			opticsZoomMin = 0.25;
+			useModelOptics = 0;
+			visionMode[] = {};
+			discreteDistance[] = {100, 150, 200, 220, 250, 270, 300, 320, 350, 370, 400, 420};
+			discreteDistanceInitIndex = 0;
+		};			
+	};	
 	class Single: Mode_SemiAuto
 	{
 		dispersion = 0.0018;
