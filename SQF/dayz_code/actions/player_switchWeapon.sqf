@@ -19,18 +19,18 @@ dz_fn_switchWeapon = {
 	if Player_IsInVehicle exitWith {};
 	if Player_IsOnLadder() exitWith {};
 	if (dayz_autoRun) then {call dayz_autoRunOff;};
-	
+
 	private ["_current","_secondary","_option"];
-	
+
 	_option = _this;
 	_current = currentWeapon player;
-	
+
 	call {
 		if (_option == 0) exitWith { // Instantly switch primary and carry, also update gear
 			if (IS_PRIMARY(_current)) then {true call dz_fn_switchWeapon_swap;} else {false call dz_fn_switchWeapon_swap;};
-			[[(findDisplay 106)],"onLBSelChanged"] execVM "\z\addons\dayz_code\system\handleGear.sqf";
+			[[(findDisplay 106)],"onLBSelChanged"] spawn fn_handleGear;
 		};
-		
+
 		if (_option == 1) exitWith { //Switch primary and carry
 			if (dayz_quickSwitch) then {
 				true call dz_fn_switchWeapon_swap;
@@ -38,7 +38,7 @@ dz_fn_switchWeapon = {
 				call dz_fn_switchWeapon_swapSecure;
 			};
 		};
-		
+
 		if (_option == 2) exitWith { // Switch to rifle
 			if (_current == "" || {_current == "Throw"}) exitWith { // No current weapon
 				switch FIND_RIFLE do {
@@ -76,7 +76,7 @@ dz_fn_switchWeapon = {
 				};
 			};
 		};
-		
+
 		if (_option == 3) exitWith { //Switch to pistol
 			if (IS_PRIMARY(_current)) then { //If current weapon is primary
 				_secondary = Player_GetSidearm();
@@ -150,7 +150,7 @@ dz_fn_switchWeapon_swap = {
 	} else {
 		dayz_onBack = [primaryWeapon player,player removeWeapon primaryWeapon player,player addWeapon dayz_onBack] select 0;
 	};
-	
+
 	if (_this) then {
 		player selectWeapon primaryWeapon player;
 		if (IS_MELEE(primaryWeapon player)) then {
@@ -169,10 +169,10 @@ dz_fn_switchWeapon_swapSecure = {
 	_str = toString [_array select 5,_array select 6,_array select 7];
 	_anim = format["AmovP%1MstpSrasWrflDnon_AmovP%1MstpSrasWpstDnon",_str];
 	player playMoveNow _anim;
-	
+
 	//Add AnimDone event handler to wait until current weapon is put away
 	dz_switchWeapon_handler = player addEventHandler ["AnimDone", {
-		
+
 		true call dz_fn_switchWeapon_swap;
 		player removeEventHandler ["AnimDone", dz_switchWeapon_handler];
 		dz_switchWeapon_handler = nil;

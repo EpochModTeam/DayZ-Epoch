@@ -4,7 +4,7 @@ class RscDisplayGear
 	enableDisplay = 1;
 	movingEnable = 0;
 	
-	onLoad = "_this call fn_gearMenuChecks; false call dz_fn_meleeMagazines; dayz_gearThread = cursorTarget spawn object_monitorGear; call gear_ui_init; call ui_gear_sound; if (isNil 'IGUI_GEAR_activeFilter') then {IGUI_GEAR_activeFilter = 0}; [_this, 'onLoad'] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
+	onLoad = "_this call fn_gearMenuChecks; false call dz_fn_meleeMagazines; dayz_gearThread = cursorTarget spawn object_monitorGear; call gear_ui_init; call ui_gear_sound; if (isNil 'IGUI_GEAR_activeFilter') then {IGUI_GEAR_activeFilter = 0}; [_this, 'onLoad'] spawn fn_handleGear;";
 	onUnload = "true call dz_fn_meleeMagazines; terminate dayz_gearThread; call player_selectWeapon; call player_forceSave;";
 	onMouseMoving = "[] call gear_ui_hide;";
 	onMouseHolding = "[] call gear_ui_hide;";
@@ -313,8 +313,8 @@ class RscDisplayGear
 					idc = 146;
 					x = -2;
 					style = 2048;
-					onSetFocus = "[_this,'onFocus'] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
-					onButtonClick = "false call dz_fn_meleeMagazines; [_this,'onLBListSelChanged'] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
+					onSetFocus = "[_this,'onFocus'] spawn fn_handleGear;";
+					onButtonClick = "false call dz_fn_meleeMagazines; [_this,'onLBListSelChanged'] spawn fn_handleGear;";
 					text = "&lt;";
 				};
 				
@@ -331,9 +331,9 @@ class RscDisplayGear
 					colorSelectBackground[] = {0.28,0.25,0.18,0.4};
 					colorSelectBackground2[] = {0.28,0.25,0.18,0.4};
 					shadow = 0;
-					onLBSelChanged = "[_this,'onLBSelChanged'] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
-					onLBListSelChanged = "[_this,'onLBListSelChanged'] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
-					onKillFocus = "[_this,'onKillFocus'] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
+					onLBSelChanged = "[_this,'onLBSelChanged'] spawn fn_handleGear;";
+					onLBListSelChanged = "[_this,'onLBListSelChanged'] spawn fn_handleGear;";
+					onKillFocus = "[_this,'onKillFocus'] spawn fn_handleGear;";
 					x = 0;
 					y = 0;
 					//w = 0.46;
@@ -348,8 +348,8 @@ class RscDisplayGear
 				{
 					idc = 147;
 					x = -2;
-					onSetFocus = "[_this,""onFocus""] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
-					onButtonClick = "false call dz_fn_meleeMagazines; [_this,""onLBListSelChanged""] execVM '\z\addons\dayz_code\system\handleGear.sqf'";
+					onSetFocus = "[_this,""onFocus""] spawn fn_handleGear;";
+					onButtonClick = "false call dz_fn_meleeMagazines; [_this,""onLBListSelChanged""] spawn fn_handleGear;";
 					text = ">";
 				};
 			};
@@ -514,7 +514,7 @@ class RscDisplayGear
 					h = 0.174;
 					colorBackground[] = {0.27,0.34,0.47,0.2};
 					colorBackgroundSelected[] = {0.27,0.34,0.47,0.8};
-					onMouseButtonDblClick = "if (!(ctrlShown ((findDisplay 106) displayCtrl 158)) && ((gearSlotData (_this select 0)) isKindOf 'Bag_Base_EP1')) then { [player,'open_backpack',0,false,5] call dayz_zombieSpeak; };";
+					onMouseButtonDblClick = "if (!(ctrlShown ((findDisplay 106) displayCtrl 158)) && {(gearSlotData (_this select 0)) isKindOf 'Bag_Base_EP1'}) then { [player,'open_backpack',0,false,5] call dayz_zombieSpeak; };";
 				};
 				
 				class CA_Gear_slot_carry : CA_Gear_slot_primary
@@ -524,7 +524,7 @@ class RscDisplayGear
 					y = 0.364;
 					w = 0.309;
 					h = 0.174;
-					onMouseEnter = "if ((DayZ_onBack != """") && (dayz_onBack in MeleeWeapons)) then {mouseOverCarry = true;} else {mouseOverCarry = false;};";
+					onMouseEnter = "if ((DayZ_onBack != """") && {dayz_onBack in MeleeWeapons}) then {mouseOverCarry = true;} else {mouseOverCarry = false;};";
 					onMouseExit = "mouseOverCarry = false;";
 					colorActive[] = {1,1,1,1};
 					colorBackground[] = {0.74,0.74,0.74,0.2}; // has no effect

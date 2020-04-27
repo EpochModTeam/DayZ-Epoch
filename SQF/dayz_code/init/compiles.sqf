@@ -16,6 +16,8 @@ if (!isDedicated) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
 	
+	call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\handleGearFunctions.sqf";
+	fn_handleGear = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\handleGear.sqf";
 	actionMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\actionMonitor.sqf";
 	object_pickup = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickup.sqf";
 	

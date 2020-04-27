@@ -16,14 +16,14 @@ call gear_ui_init;
 
 if (_item in ["ItemHatchet","ItemCrowbar","ItemMachete","ItemFishingPole","ItemSledge"]) then {
 	//free primary slot for new melee (remember item to add after)
-	switch (_item) do {
-		case "ItemHatchet": {player removeWeapon "ItemHatchet"; dayz_onBack = "MeleeHatchet";};
-		case "ItemCrowbar": {player removeWeapon "ItemCrowbar"; dayz_onBack = "MeleeCrowbar";};
-		case "ItemMachete": {player removeWeapon "ItemMachete"; dayz_onBack = "MeleeMachete";};
-		case "ItemFishingPole": {player removeWeapon "ItemFishingPole"; dayz_onBack = "MeleeFishingPole";};
-		case "ItemSledge": {player removeWeapon "ItemSledge"; dayz_onBack = "MeleeSledge";};
+	call {
+		if (_item == "ItemHatchet") exitwith {player removeWeapon "ItemHatchet"; dayz_onBack = "MeleeHatchet";};
+		if (_item == "ItemCrowbar") exitwith {player removeWeapon "ItemCrowbar"; dayz_onBack = "MeleeCrowbar";};
+		if (_item == "ItemMachete") exitwith {player removeWeapon "ItemMachete"; dayz_onBack = "MeleeMachete";};
+		if (_item == "ItemFishingPole") exitwith {player removeWeapon "ItemFishingPole"; dayz_onBack = "MeleeFishingPole";};
+		if (_item == "ItemSledge") exitwith {player removeWeapon "ItemSledge"; dayz_onBack = "MeleeSledge";};
 	};
 	disableSerialization;
-	[[(findDisplay 106)],"onLBSelChanged"] execVM "\z\addons\dayz_code\system\handleGear.sqf"; //update back
+	[[(findDisplay 106)],"onLBSelChanged"] spawn fn_handleGear; //update back
 
 };
