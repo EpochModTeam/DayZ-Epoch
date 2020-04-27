@@ -148,3 +148,96 @@ class VSS_Vintorez
 {
 	weight = 3.2;
 };
+//NEW
+class MSR_DZ
+{
+	weight = 3.2;
+};
+class RSASS_DZ
+{
+	weight = 3.2;
+};
+class XM2010_DZ
+{
+	weight = 3.2;
+};
+class M21_DZ
+{
+	weight = 3.2;
+};
+class M1A_SC16_BL_Sniper_DZ
+{
+	weight = 9.8;
+};
+class M1A_SC16_TAN_Sniper_DZ
+{
+	weight = 9.8;
+};
+class M1A_SC2_BL_Sniper_DZ
+{
+	weight = 9.8;
+};
+class SVD_PSO1_Gh_DES_DZ
+{
+	weight = 9.8;
+};
+class SVD_NSPU_DZ
+{
+	weight = 9.8;
+};
+class HK417_Sniper_DZ 
+{
+	weight = 9.8;
+};
+class HK417_Sniper_SD_DZ
+{
+	weight = 9.8;
+};
+class  Groza1_Sniper_DZ
+{
+	weight = 9.8;
+};
+class Groza1_Sniper_SD_DZ
+{
+	weight = 9.8;
+};
+class Groza9_Sniper_DZ
+{
+	weight = 9.8;
+};
+class Groza9_GL_Sniper_DZ
+{
+	weight = 9.8;
+};
+class Groza9_Sniper_SD_DZ
+{
+	weight = 9.8;
+};
+class  MK14_Sniper_DZ
+{
+	weight = 9.8;
+};
+class MK14_Sniper_SD_DZ
+{
+	weight = 9.8;
+};
+class MK17_Sniper_DZ
+{
+	weight = 9.8;
+};
+class MK17_Sniper_SD_DZ
+{
+	weight = 9.8;
+};
+class M110_NV_DZ
+{
+	weight = 9.8;
+};
+class M4A3_Camo_DZ
+{
+	weight = 9.8;
+};
+class M4A3_Camo_ACOG_DZ
+{
+	weight = 9.8;
+};

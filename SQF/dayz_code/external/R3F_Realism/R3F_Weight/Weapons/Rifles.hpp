@@ -391,7 +391,7 @@ class G36A_Camo_DZ
 {
 	weight = 3.6;
 };
-class G36C_camo
+class G36C_Camo_DZ
 {
 	weight = 2.8;
 };
@@ -406,10 +406,6 @@ class G36K_Camo_DZ
 class G36K_Camo_SD_DZ
 {
 	weight = 3.2;
-};
-class G36_C_SD_camo
-{
-	weight = 3.6;
 };
 class LeeEnfield
 {
@@ -870,4 +866,421 @@ class M14_Holo_DZ
 class M14_Holo_Gh_DZ
 {
 	weight = 5.8;
+};
+//NEW
+class M1A_SC16_BL_DZ
+{
+	weight = 5.8;
+};
+class M1A_SC16_BL_CCO_DZ
+{
+	weight = 6.2;
+};
+class M1A_SC16_BL_HOLO_DZ
+{
+	weight = 6.2;
+};
+class M1A_SC16_BL_ACOG_DZ
+{
+	weight = 6.6;
+};
+class M1A_SC16_BL_PU_DZ
+{
+	weight = 6.8;
+};
+class M1A_SC16_TAN_DZ
+{
+	weight = 5.8;
+};
+class M1A_SC16_TAN_CCO_DZ
+{
+	weight = 6.2;
+};
+class M1A_SC16_TAN_HOLO_DZ
+{
+	weight = 6.2;
+};
+class M1A_SC16_TAN_ACOG_DZ
+{
+	weight = 6.6;
+};
+class M1A_SC16_TAN_PU_DZ
+{
+	weight = 6.8;
+};
+class M1A_SC2_BL_DZ
+{
+	weight = 5.8;
+};
+class M1A_SC2_BL_CCO_DZ
+{
+	weight = 6.2;
+};
+class M1A_SC2_BL_HOLO_DZ
+{
+	weight = 6.2;
+};
+class M1A_SC2_BL_ACOG_DZ
+{
+	weight = 6.6;
+};
+class M1A_SC2_BL_PU_DZ
+{
+	weight = 6.8;
+};
+class G36C_Camo_Holo_SD_DZ
+{
+	weight = 5.8;
+};
+class HK53A3_DZ
+{
+	weight = 7.8;
+};
+class PDR_DZ
+{
+	weight = 5.1;
+};
+class HK416_DZ
+{
+	weight = 5.0;
+};
+class HK416_CCO_DZ
+{
+	weight = 5.2;
+};
+class  HK416_SD_DZ
+{
+	weight = 5.2;
+};
+class HK416_CCO_SD_DZ
+{
+	weight = 5.4;
+};
+class HK416_Holo_SD_DZ
+{
+	weight = 5.4;
+};
+class HK416_GL_DZ
+{
+	weight = 5.2;
+};
+class HK416_GL_SD_DZ
+{
+	weight = 5.4;
+};
+class HK416_GL_CCO_DZ
+{
+	weight = 5.4;
+};
+class HK416_GL_CCO_SD_DZ
+{
+	weight = 5.6;
+};
+class HK416_GL_Holo_DZ
+{
+	weight = 5.4;
+};
+class HK416_GL_Holo_SD_DZ
+{
+	weight = 5.6;
+};
+class HK416C_DZ
+{
+	weight = 5.0;
+};
+class HK416C_CCO_DZ
+{
+	weight = 5.2;
+};
+class HK416C_Holo_DZ
+{
+	weight = 5.2;
+};
+class HK416C_GL_DZ 
+{
+	weight = 5.2;
+};
+class HK416C_GL_CCO_DZ
+{
+	weight = 5.4;
+};
+class HK416C_GL_Holo_DZ
+{
+	weight = 5.4;
+};
+class HK416C_ACOG_DZ
+{
+	weight = 5.4;
+};
+class HK416C_GL_ACOG_DZ
+{
+	weight = 5.6;
+};
+class HK417_DZ
+{
+	weight = 5.0;
+};
+class HK417_CCO_DZ
+{
+	weight = 5.2;
+};
+class HK417_Holo_DZ
+{
+	weight = 5.2;
+};
+class  HK417_SD_DZ
+{
+	weight = 5.2;
+};
+class HK417_CCO_SD_DZ
+{
+	weight = 5.4;
+};
+class HK417_Holo_SD_DZ
+{
+	weight = 5.4;
+};
+class  HK417_ACOG_DZ
+{
+	weight = 5.2;
+};
+class HK417_ACOG_SD_DZ
+{
+	weight = 5.4;
+};
+class HK417C_DZ
+{
+	weight = 5.4;
+};
+class HK417C_CCO_DZ
+{
+	weight = 5.6;
+};
+class HK417C_Holo_DZ
+{
+	weight = 5.4;
+};
+class HK417C_GL_DZ
+{
+	weight = 5.6;
+};
+class HK417C_GL_CCO_DZ
+{
+	weight = 5.0;
+};
+class HK417C_GL_Holo_DZ
+{
+	weight = 5.2;
+};
+class HK417C_ACOG_DZ
+{
+	weight = 5.4;
+};
+class HK417C_GL_ACOG_DZ 
+{
+	weight = 5.6;
+};
+class CTAR21_DZ
+{
+	weight = 5.4;
+};
+class CTAR21_CCO_DZ
+{
+	weight = 5.4;
+};
+class CTAR21_ACOG_DZ
+{
+	weight = 5.4;
+};
+class Groza1_DZ
+{
+	weight = 5.6;
+};
+class Groza1_SD_DZ
+{
+	weight = 5.6;
+};
+class  Groza9_DZ
+{
+	weight = 5.6;
+};
+class Groza9_SD_DZ
+{
+	weight = 5.6;
+};
+class Groza9_GL_DZ
+{
+	weight = 5.6;
+};
+class  MK14_DZ
+{
+	weight = 5.6;
+};
+class MK16_DZ
+{
+	weight = 5.6;
+};
+class MK16_CCO_DZ
+{
+	weight = 5.6;
+};
+class MK16_Holo_DZ
+{
+	weight = 5.6;
+};
+class MK16_CCO_SD_DZ
+{
+	weight = 5.6;
+};
+class MK16_Holo_SD_DZ
+{
+	weight = 5.6;
+};
+class MK16_GL_DZ
+{
+	weight = 5.6;
+};
+class MK16_GL_CCO_DZ
+{
+	weight = 5.6;
+};
+class MK16_GL_CCO_SD_DZ
+{
+	weight = 5.6;
+};
+class MK16_GL_Holo_DZ
+{
+	weight = 5.6;
+};
+class MK16_GL_Holo_SD_DZ
+{
+	weight = 5.6;
+};
+class MK16_ACOG_DZ
+{
+	weight = 5.6;
+};
+class MK16_GL_ACOG_DZ
+{
+	weight = 5.6;
+};
+class MK16_ACOG_SD_DZ
+{
+	weight = 5.6;
+};
+class MK16_GL_ACOG_SD_DZ
+{
+	weight = 5.6;
+};
+class MK17_DZ
+{
+	weight = 5.6;
+};
+class MK17_CCO_DZ
+{
+	weight = 5.6;
+};
+class MK17_Holo_DZ
+{
+	weight = 5.6;
+};
+class MK17_CCO_SD_DZ
+{
+	weight = 5.6;
+};
+class MK17_Holo_SD_DZ
+{
+	weight = 5.6;
+};
+class  MK17_GL_DZ
+{
+	weight = 5.6;
+};
+class MK17_GL_CCO_DZ
+{
+	weight = 5.6;
+};
+class MK17_GL_CCO_SD_DZ
+{
+	weight = 5.6;
+};
+class MK17_GL_Holo_DZ
+{
+	weight = 5.6;
+};
+class MK17_GL_Holo_SD_DZ
+{
+	weight = 5.6;
+};
+class MK17_ACOG_DZ
+{
+	weight = 5.6;
+};
+class MK17_GL_ACOG_DZ
+{
+	weight = 5.6;
+};
+class MK17_ACOG_SD_DZ
+{
+	weight = 5.6;
+};
+class XM8_Compact_DZ
+{
+	weight = 5.6;
+};
+class XM8_DES_Compact_DZ
+{
+	weight = 5.6;
+};
+class XM8_GREY_Compact_DZ
+{
+	weight = 5.6;
+};
+class XM8_GREY_2_Compact_DZ
+{
+	weight = 5.6;
+};
+class  XM8_DZ
+{
+	weight = 5.6;
+};
+class XM8_DES_DZ
+{
+	weight = 5.6;
+};
+class XM8_GREY_DZ
+{
+	weight = 5.6;
+};
+class XM8_GREY_2_DZ
+{
+	weight = 5.6;
+};
+class XM8_GL_DZ
+{
+	weight = 5.6;
+};
+class XM8_DES_GL_DZ
+{
+	weight = 5.6;
+};
+class XM8_GREY_GL_DZ
+{
+	weight = 5.6;
+};
+class XM8_Sharpsh_DZ
+{
+	weight = 5.6;
+};
+class XM8_DES_Sharpsh_DZ
+{
+	weight = 5.6;
+};
+class XM8_GREY_Sharpsh_DZ
+{
+	weight = 5.6;
+};
+class XM8_SD_DZ
+{
+	weight = 5.6;
 };

@@ -80,3 +80,64 @@ class Attachment_Sup556
 {
 	weight = 0.1;
 };
+
+//New
+
+class Attachment_ANPVS4 
+{
+	weight = 0.1;
+};
+
+class Attachment_Laser 
+{
+	weight = 0.1;
+};
+
+class Attachment_NSPU 
+{
+	weight = 0.1;
+};
+
+class Attachment_NV 
+{
+	weight = 0.1;
+};
+
+class Attachment_Sup45
+{
+	weight = 0.1;
+};
+
+class Attachment_Sup762
+{
+	weight = 0.1;
+};
+
+class Attachment_SupBizon
+{
+	weight = 0.1;
+};
+
+class Attachment_SupMakarov
+{
+	weight = 0.1;
+};
+
+class Attachment_Tws
+{
+	weight = 0.1;
+};
+
+class Attachment_Sup10
+{
+	weight = 0.1;
+};
+
+class Attachment_Sup68
+{
+	weight = 0.1;
+};
+class Attachment_Ghillie_Desert
+{
+	weight = 0.1;
+};

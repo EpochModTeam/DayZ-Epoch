@@ -55,7 +55,7 @@ class m240_scoped_EP1_DZE
 {
 	weight = 14;
 };
-class MG36_camo
+class MG36_Camo_DZ  //NEW
 {
 	weight = 3.6;
 };
@@ -119,7 +119,7 @@ class Mk48_Holo_DZ
 {
 	weight = 8.4;
 };
-class MG36
+class MG36_DZ  //NEW
 {
 	weight = 3.6;
 };
@@ -171,7 +171,42 @@ class UK59_DZ
 {
 	weight = 4.7;
 };
-class BAF_L86A2_ACOG
+class L86A2_LSW_DZ  //NEW
 {
 	weight = 6.7;
 };
+class XM8_SAW_DZ  //NEW
+{
+	weight = 6.7;
+};
+class XM8_DES_SAW_DZ  //NEW
+{
+	weight = 6.7;
+};
+class XM8_GREY_SAW_DZ  //NEW
+{
+	weight = 6.7;
+};
+class Mk43_DZ  //NEW
+{
+	weight = 6.7;
+};
+class MK43_Holo_DZ  //NEW
+{
+	weight = 6.7;
+};
+class MK43_ACOG_DZ  //NEW
+{
+	weight = 6.7;
+};
+class Mk48_DES_CCO_DZ  //NEW
+{
+	weight = 6.7;
+};
+class MK43_M145_DZ  //NEW
+{
+	weight = 6.7;
+};
+
+
+

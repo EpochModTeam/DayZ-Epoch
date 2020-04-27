@@ -8,63 +8,83 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 @date 20101006
 *****************************************************************************/
 
-class PartWheel 
+class PG7V
 {
-	weight = 10;
+	weight = 2.2;
 };
-class PartFueltank 
+class PG7VL
 {
-	weight = 10;
+	weight = 2.6;
 };
-class PartGlass 
+class PG7VR
 {
-	weight = 5;
+	weight = 4.5;
 };
-class PartEngine 
+class PG9_AT
 {
-	weight = 15;
+	weight = 4.5;
 };
-class PartGeneric 
-{
-	weight = 5;
-};
-class PartVRotor 
-{
-	weight = 15;
-};
-class ItemJerrycan 
-{
-	weight = 10;
-};
-class ItemJerryMixed 
-{
-	weight = 10;
-};
-class ItemJerryMixed4 
-{
-	weight = 8;
-};
-class ItemJerryMixed3 
-{
-	weight = 6;
-};
-class ItemJerryMixed2 
-{
-	weight = 4;
-};
-class ItemJerryMixed1 
+class OG7
 {
 	weight = 2;
 };
-class ItemJerrycanEmpty
+class OG9_HE
 {
-	weight = 1;
+	weight = 2;
 };
-class ItemFuelcan 
+class RPG18
 {
-	weight = 5;
+	weight = 1.2;
 };
-class ItemFuelcanEmpty 
+class AT13
 {
-	weight = 0.5;
+	weight = 14;
+};
+class Igla
+{
+	weight = 11;
+};
+class 2Rnd_Igla
+{
+	weight = 22;
+};
+class Strela
+{
+	weight = 10;
+};
+class Javelin
+{
+	weight = 12;
+};
+class M136
+{
+	weight = 6;
+};
+class Stinger
+{
+	weight = 6;
+};
+class SMAW_HEAA
+{
+	weight = 6;
+};
+class SMAW_HEDP
+{
+	weight = 6;
+};
+class MAAWS_HEDP
+{
+	weight = 6;
+};
+class MAAWS_HEAT
+{
+	weight = 6;
+};
+class NLAW
+{
+	weight = 6;
+};
+class Dragon_EP1
+{
+	weight = 11;
 };

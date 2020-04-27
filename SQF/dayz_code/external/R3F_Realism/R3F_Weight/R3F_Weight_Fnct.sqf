@@ -40,27 +40,32 @@ R3F_WEIGHT_FNCT_GetItemWeight = {
 	_weight = 0;
 	CfgWeight = configFile >> "CfgWeight";
 	{
-		if(isclass(CfgWeight >> "Weapons" >> _x)) then {
+		
+		if (isclass(CfgWeight >> "Weapons" >> _x)) then {
 			_weight = getNumber(CfgWeight >> "Weapons" >> _x >> "weight");
 			_total_weight = _total_weight + _weight;
-		}else{
-			if(isclass(CfgWeight >> "Magazines" >> _x)) then {
-				_weight = getNumber(CfgWeight >> "Magazines" >> _x >> "weight");
-				_total_weight = _total_weight + _weight;
-			}else{
-
-				_weight = 0;
-				if(isNumber (configFile >> "cfgMagazines" >> _x >> "weight")) then {
-					_weight = getNumber(configFile >> "cfgMagazines" >> _x >> "weight");
-				};
-
-				if(_weight > 0) then {
+		} else {	
+			if (isNumber (configFile >> "cfgWeapons" >> _x >> "weight")) then {
+				_weight = getNumber(configFile >> "cfgWeapons" >> _x >> "weight");
+			} else {		
+				if (isclass(CfgWeight >> "Magazines" >> _x)) then {
+					_weight = getNumber(CfgWeight >> "Magazines" >> _x >> "weight");
 					_total_weight = _total_weight + _weight;
 				} else {
-					// log only if not found
-					diag_log format["No R3F weight config for: %1", _x];
+
+					_weight = 0;
+					if (isNumber (configFile >> "cfgMagazines" >> _x >> "weight")) then {
+						_weight = getNumber(configFile >> "cfgMagazines" >> _x >> "weight");
+					};
+
+					if (_weight > 0) then {
+						_total_weight = _total_weight + _weight;
+					} else {
+						// log only if not found
+						diag_log format["No R3F weight config for: %1", _x];
+					};
 				};
-			};
+			};	
 		};
 	}count _arr_class;
 
