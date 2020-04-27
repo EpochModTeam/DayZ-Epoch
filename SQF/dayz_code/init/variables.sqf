@@ -567,6 +567,4 @@ if (!isDedicated) then {
 		["RightFoot","LeftFoot"],
 		["neck","pilot"]
 	];
-	
-	DZE_Quarantine = false; // used in player_spawn_2.sqf, but for no reason. There is no function that alters this variable.
 };
