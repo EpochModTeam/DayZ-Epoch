@@ -284,7 +284,7 @@ class WeaponHolder_ItemGenerator : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		init = "[(_this select 0),'cfgMagazines','ItemGenerator'] execVM '\z\addons\dayz_code\init\object_generator.sqf';";
+		delete init;
 	};
 };
 
