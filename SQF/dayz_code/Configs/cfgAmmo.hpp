@@ -624,6 +624,21 @@ class CfgAmmo
 		caliber = 0.83;
 	};
 	
+	//VSS_Vintorez
+	class B_9x39_SP5 : BulletBase {
+		hit = 13;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		cartridge = "FxCartridge_9mm";
+		cost = 5;
+		typicalSpeed = 700;
+		visibleFire = 0.07;
+		audibleFire = 0.07;
+		visibleFireTime = 2;
+		airFriction = -0.001;
+		caliber = 0.33;
+	};	
+	
 	//Groza-9
 	class B_9x39_OC14_Ball: BulletBase
 	{
@@ -633,10 +648,10 @@ class CfgAmmo
 		caliber = 0.33;
 		cartridge = "FxCartridge_762";
 		cost = 5;
-		hit = 11;
+		hit = 13;
 		indirecthit = 0;
 		indirecthitrange = 0;
-		typicalspeed = 450;
+		typicalspeed = 850;
 	};
 	
 	//Groza-9 SD
@@ -648,10 +663,10 @@ class CfgAmmo
 		caliber = 0.33; //33
 		cartridge = "FxCartridge_762";
 		cost = 5;
-		hit = 11;
+		hit = 13;
 		indirecthit = 0;
 		indirecthitrange = 0;
-		typicalspeed = 300;
+		typicalspeed = 700;
 	};	
 	
 	// M200 Chey Tac
@@ -805,22 +820,8 @@ class CfgAmmo
 	{
 		//explosiontime = 1;
 		fusedistance = 0;
-	};
-	
-	//VSS_Vintorez
-	class B_9x39_SP5 : BulletBase {
-		hit = 13;
-		indirectHit = 0;
-		indirectHitRange = 0;
-		cartridge = "FxCartridge_9mm";
-		cost = 5;
-		typicalSpeed = 300;
-		visibleFire = 0.07;
-		audibleFire = 0.07;
-		visibleFireTime = 2;
-		airFriction = -0.001;
-		caliber = 0.33;
 	};	
+
 	//Epoch Melee
 	class Chainsaw_Swing_Ammo : Melee {
 		hit = 9;

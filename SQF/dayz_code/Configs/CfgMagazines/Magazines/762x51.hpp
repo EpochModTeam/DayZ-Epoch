@@ -122,6 +122,8 @@ class 20Rnd_762x51_SB_SCAR : CA_Magazine
 	picture = "\dayz_epoch_c\icons\magazines\m_mk17sd_ca.paa";
 	displayName = $STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_MK17SD_DESC;
+	ammo = "Rem_762x51_SD";	
+	initSpeed = 750;
 	
 	cartridgeName = "762x51_SD";
 	
