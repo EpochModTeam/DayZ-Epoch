@@ -9,7 +9,7 @@ _projectile = _this select 6;
 //Alert Nearby
 _audible = getNumber (configFile >> "CfgAmmo" >> _ammo >> "audibleFire");
 _caliber = getNumber (configFile >> "CfgAmmo" >> _ammo >> "caliber");
-_distance = round(_audible * 10 * _caliber);
+_distance = round(_audible * 20 * _caliber);
 
 dayz_disAudial = _distance;
 dayz_firedCooldown = time;
@@ -24,11 +24,12 @@ if (_ammo isKindOf "Melee") exitWith {
 	_this call player_harvest; // harvest wood check
 };
 
-if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or (_ammo isKindOf "G_40mm_HE")) then {
+if ((_ammo isKindOf "SmokeShell") || {_ammo isKindOf "GrenadeHandTimedWest"} || {_ammo isKindOf "G_40mm_HE"}) then {
 	if (_ammo isKindOf "G_40mm_HE") then { dayz_disAudial = 30 };
 
 	[_unit,_ammo] spawn {
-		private ["_pos","_group","_localtargets","_remotetargets"];
+		private ["_pos","_group","_localtargets","_remotetargets","_unit","_ammo","_projectile","_isLocal","_targets"];
+
 		_unit = _this select 0;
 		_ammo = _this select 1;
 
@@ -52,18 +53,15 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 				_remotetargets = _group getVariable ["remotetargets",[]];
 				_targets = _localtargets + _remotetargets;
 				if !(_projectile in _targets) then {
-					switch (_isLocal) do {
-						case false: {
-							_remotetargets set [count _remotetargets,_projectile];
-							_x setVariable ["remotetargets",_remotetargets,true];
-						};
-						case true: {
-							_localtargets set [count _localtargets,_projectile];
-							_x setVariable ["localtargets",_localtargets,false];
-						};
+					if (!_isLocal) then {
+						_remotetargets set [count _remotetargets,_projectile];
+						_x setVariable ["remotetargets",_remotetargets,true];
+					} else  {
+						_localtargets set [count _localtargets,_projectile];
+						_x setVariable ["localtargets",_localtargets,false];
 					};
 				};
-			} forEach (_pos nearEntities ["zZombie_Base",50]);
+			} count (_pos nearEntities ["zZombie_Base",50]);
 		} else {
 			while {alive _projectile} do {
 				_pos = getPosATL _projectile;
@@ -100,7 +98,7 @@ if ((_ammo isKindOf "SmokeShell") or (_ammo isKindOf "GrenadeHandTimedWest") or 
 			publicVariable "PVDZ_obj_RoadFlare";
 			[_this] spawn player_throwObject;
 		};
-		
+
 		//Auto select main weapon after throwing
 		call player_selectWeapon;
 	};
