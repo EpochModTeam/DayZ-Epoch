@@ -463,7 +463,28 @@ class CfgAmmo
 		visibleFireTime = 2;
 		cost = 1.2;
 		airFriction = -0.00098;		
-	};	
+	};
+	
+	//MSR SD
+	class B_86x70_SD: BulletBase
+	{
+		hit = 23;
+		indirectHit = 3;
+		indirectHitRange = 0.01;
+		cartridge = "FxCartridge_127";
+		visibleFire = 0.1;
+		audibleFire = 0.1;
+		visibleFireTime = 3;
+		cost = 20;
+		airLock = 1;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		caliber = 2.07;
+		tracerColor[] = {0,0,0,0};
+		tracerColorR[] = {0,0,0,0};
+		tracerStartTime = -1;
+		airFriction = -0.0005;
+		muzzleEffect = "BIS_Effects_HeavySniper";
+	};
 	
 	//XM2010
 	class Rem_300Win_Ball: BulletBase
