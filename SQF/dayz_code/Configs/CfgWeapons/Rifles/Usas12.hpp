@@ -1,4 +1,3 @@
-class Saiga12K; 
 class USAS12_DZ: Saiga12K
 {
 	scope = public;		
@@ -28,9 +27,8 @@ class USAS12_DZ: Saiga12K
 	modes[] = {"Single", "FullAuto"};
 	class Single: Mode_SemiAuto
 	{
-		begin1[] = {"Ca\Sounds_PMC\Weapons_PMC\SHOTGUN\shotgun1", db5, 1,1200};
-		begin2[] = {"Ca\Sounds_PMC\Weapons_PMC\SHOTGUN\shotgun4", db5, 1,1200};
-		soundBegin[] = {begin1,0.5, begin2,0.5};
+		begin1[] = {"dayz_epoch_c\sounds\weapons\spas12_shot", db5, 1,1200};
+		soundBegin[] = {begin1,1};
 		dispersion = 0.002;
 		reloadTime = 0.2;
 		recoil = "recoil_single_primary_6outof10";
@@ -44,9 +42,8 @@ class USAS12_DZ: Saiga12K
 	};
 	class FullAuto: Mode_FullAuto
 	{
-		begin1[] = {"Ca\Sounds_PMC\Weapons_PMC\SHOTGUN\shotgun1", db5, 1,1200};
-		begin2[] = {"Ca\Sounds_PMC\Weapons_PMC\SHOTGUN\shotgun4", db5, 1,1200};
-		soundBegin[] = {begin1,0.5, begin2,0.5};
+		begin1[] = {"dayz_epoch_c\sounds\weapons\spas12_shot", db5, 1,1200};
+		soundBegin[] = {begin1,1};
 		dispersion = 0.003;
 		reloadTime = 0.2;
 		recoil = "recoil_single_primary_6outof10";

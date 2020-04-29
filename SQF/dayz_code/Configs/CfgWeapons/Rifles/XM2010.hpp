@@ -12,7 +12,7 @@ class XM2010_BASE: Rifle
 	modelOptics = "\ca\Weapons_baf\LRR_optic";
 	opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
 	opticsFlare = 1;
-	begin1[] = {"\dayz_epoch_c\sounds\weapons\xm2010.ogg",10,1,2000};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\xm2010_shot",10,1,2000};
 	soundBegin[] = {"begin1",1};
 	soundContinuous = 0;
 	drySound[] = {"Ca\sounds\Weapons\rifles\dry",0.01,1,10};
@@ -67,7 +67,7 @@ class XM2010_SD_BASE: Rifle
 	modelOptics = "\ca\Weapons_baf\LRR_optic";
 	opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
 	opticsFlare = 1;
-	begin1[] = {"\dayz_epoch_c\sounds\weapons\xm2010sd.ogg",2.51189,1,50};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\xm2010sd_shot",2.51189,1,50};
 	soundBegin[] = {"begin1",1};
 	soundContinuous = 0;
 	drySound[] = {"Ca\sounds\Weapons\rifles\dry",0.01,1,10};

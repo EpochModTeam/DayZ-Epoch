@@ -49,9 +49,8 @@ class VSS_vintorez_DZE: VSS_vintorez
 		reloadTime = 0.1;
 		recoil = "recoil_single_primary_4outof10";
 		recoilProne = "recoil_single_primary_prone_4outof10";
-		begin1[] = {"\dayz_epoch_c\sounds\weapons\vss.ogg",1.0,1,50};
-		begin2[] = {"\dayz_epoch_c\sounds\weapons\vss.ogg",1.0,1,50};
-		soundBegin[] = {"begin1",0.5,"begin2",0.5};
+		begin1[] = {"\dayz_epoch_c\sounds\weapons\vss_shot",1.0,1,50};
+		soundBegin[] = {"begin1",1};
 		minRange = 2;
 		minRangeProbab = 0.1;
 		midRange = 250;
@@ -66,9 +65,8 @@ class VSS_vintorez_DZE: VSS_vintorez
 		reloadTime = 0.08;
 		recoil = "recoil_auto_primary_3outof10";
 		recoilProne = "recoil_auto_primary_prone_3outof10";
-		begin1[] = {"\dayz_epoch_c\sounds\weapons\vss.ogg",1.0,1,50};
-		begin2[] = {"\dayz_epoch_c\sounds\weapons\vss.ogg",1.0,1,50};
-		soundBegin[] = {"begin1",0.5,"begin2",0.5};
+		begin1[] = {"\dayz_epoch_c\sounds\weapons\vss_shot",1.0,1,50};
+		soundBegin[] = {"begin1",1};
 		minRange = 0;
 		minRangeProbab = 0.1;
 		midRange = 60;

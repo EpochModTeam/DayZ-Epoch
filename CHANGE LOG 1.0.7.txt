@@ -23,14 +23,15 @@
 [NEW] 5 new backpacks. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
 [NEW] Different backpack skins for the Coyote and the Czech Backpack. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
 [NEW] All backpacks got updated and have 2 new versions now. A regular and an updated version now. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
-[NEW] A fire place can be crafted directly from a wooden log now. () @AirwavesMan
-[NEW] New sounds for M1911, SVD, VSS Vintorez, PDW, PDW SD, Winchester 1866. @AirwavesMan
+[NEW] A fire place can be crafted directly from a wooden log now. (2b8997ec) @AirwavesMan
+[NEW] New sounds for M1911, SVD, VSS Vintorez, PDW, PDW SD, Winchester 1866, Saiga 12k. @AirwavesMan
 [NEW] All vehicles are grouped under the vehicleClass: 'DayZ Epoch Vehicles', so they can be found in the editor. @AirwavesMan
 [NEW] Painkillers have different packages with pills now and work the same like anitbiotics work now. (b4b8860c) @AirwavesMan
 [NEW] New helicopter skins for: Ch-47, Mi-17, UH-1H. (43337b6a), (c47821ee) @AirwavesMan
 [NEW] Add KA60 and AW159 Epoch versions with PKT and M240. (8de9858b) @AirwavesMan
 [NEW] Add Land_Ind_Oil_Pump_EP1_DZE, a version with no pumping sound. (8557f559) @seelenapparat
 [NEW] Add a proper display name for heli crashes. (ba31c67b) @seelenapparat
+[NEW] Players can craft a firebarrel kit from empty methylamin and empty oil barrels too now. (b4b93562) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -101,6 +102,7 @@
 [UPDATED] Add the correct icon for the Terminal Backpack. (1a411660) @AirwavesMan, @DeVloek
 [UPDATED] Fill mixed gas into a chainsaw requires a chainsaw now. (b0edf3cb) @AirwavesMan
 [UPDATED] Craft a tent needs 2x equip_tent_poles no longer 2x ItemPole now. (73289a69) @AirwavesMan
+[UPDATED] Crafting a firebarrel kit requires no longer matches. (b4b93562) @nadal28 @AirwavesMan
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
 [REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow

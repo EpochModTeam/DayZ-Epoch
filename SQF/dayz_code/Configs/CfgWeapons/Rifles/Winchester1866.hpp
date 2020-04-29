@@ -18,9 +18,8 @@ class Winchester1866_Base : Rifle
 		soundContinuous = 0;
 		reloadTime = 0.5;
 		reloadMagazineSound[] = {"\ca\sounds\weapons\rifles\M1014-reload", 0.316228, 1, 20};
-		begin1[] = {"dayz_weapons\sounds\shotgun_0", 1.77828, 1, 1000};
-		begin2[] = {"dayz_weapons\sounds\shotgun_1", 1.77828, 1, 1000};
-		soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
+		begin1[] = {"dayz_epoch_c\sounds\weapons\winchester_shot", 1.77828, 1, 1000};
+		soundBegin[] = {"begin1", 1};
 		drySound[] = {"ca\sounds\weapons\rifles\dry", 0.01, 1, 10};
 		recoil = "recoil_single_primary_9outof10";
 		recoilProne = "recoil_single_primary_prone_8outof10";

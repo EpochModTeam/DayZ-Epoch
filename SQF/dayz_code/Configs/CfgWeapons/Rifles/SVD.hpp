@@ -4,22 +4,10 @@ class SVD_PSO1_DZ : SVD
 	picture = "\ca\weapons\data\equip\w_svd_ca.paa";
 	displayName = $STR_DZ_WPN_SVD_PSO1_NAME;
 	
-	begin1[] = {"\dayz_epoch_c\sounds\weapons\svd.ogg",20,1,2000};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\svd_shot",20,1,2000};
 	soundBegin[] = {"begin1",1};
 	
-	//weaponInfoType = "RscWeaponEmpty";
-	//discreteDistance[] = {};
-	//discreteDistanceInitIndex = 0;
-	//distanceZoomMin = 200;
-	//distanceZoomMax = 200;
-	
 	magazines[] = {10Rnd_762x54_SVD};	
-	//reloadTime = 0.06;
-	
-	//recoil = "recoil_single_primary_4outof10";
-	//recoilProne = "recoil_single_primary_prone_4outof10";
-	
-	//dispersion = 0.00045;
 	
 	class OpticsModes : OpticsModes
 	{

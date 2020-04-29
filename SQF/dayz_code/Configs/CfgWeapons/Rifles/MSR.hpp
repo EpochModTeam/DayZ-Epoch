@@ -12,7 +12,7 @@ class MSR_BASE: Rifle
 	modelOptics = "\ca\Weapons_baf\LRR_optic";
 	opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
 	opticsFlare = 1;
-	begin1[] = {"\dayz_epoch_c\sounds\weapons\msr.ogg",10,1,2000};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\msr_shot",10,1,2000};
 	soundBegin[] = {"begin1",1};
 	soundContinuous = 0;
 	drySound[] = {"Ca\sounds\Weapons\rifles\dry",0.01,1,10};
@@ -67,7 +67,7 @@ class MSR_SD_BASE: Rifle
 	modelOptics = "\ca\Weapons_baf\LRR_optic";
 	opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
 	opticsFlare = 1;
-	begin1[] = {"\dayz_epoch_c\sounds\weapons\msrsd.ogg",2.51189,1,50};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\msrsd_shot",2.51189,1,50};
 	soundBegin[] = {"begin1",1};
 	soundContinuous = 0;
 	drySound[] = {"Ca\sounds\Weapons\rifles\dry",0.01,1,10};

@@ -17,7 +17,7 @@ class RSASS_BASE: DMR
 	distanceZoomMax = 120;
 	opticsZoomInit = 0.15;
 	dexterity = 1.55;
-	begin1[] = {"\dayz_epoch_c\sounds\weapons\rsass.ogg",10,1,2000};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\rsass_shot",10,1,2000};
 	soundBegin[] = {"begin1",1};
 	drySound[] = {"Ca\Sounds_E\Weapons_E\M110\M110_dry",1,1,20};
 	reloadMagazineSound[] = {"Ca\Sounds_E\Weapons_E\M110\M110_reload",1,1,100};
@@ -36,7 +36,7 @@ class RSASS_BASE: DMR
 	};
 	class Single: Mode_SemiAuto
 	{
-		begin1[] = {"\dayz_epoch_c\sounds\weapons\rsass.ogg",10,1,2000};
+		begin1[] = {"\dayz_epoch_c\sounds\weapons\rsass_shot",10,1,2000};
 		soundBegin[] = {"begin1",1};
 		reloadMagazineSound[] = {"Ca\Sounds_E\Weapons_E\M110\M110_reload",1,1,100};
 		dispersion = 0.00012;
@@ -94,10 +94,9 @@ class RSASS_BASE: DMR
 class RSASS_SD_BASE: RSASS_BASE
 {
 	magazines[] = {"20Rnd_762x51_RSASS_SD"};
-	modes[] = {"FHQ_RSASS_H_SD_Single"};
-	class FHQ_RSASS_H_SD_Single: Mode_SemiAuto
+	class Single: Mode_SemiAuto
 	{
-		begin1[] = {"\dayz_epoch_c\sounds\weapons\rsass_sd.ogg",2.51189,1,50};
+		begin1[] = {"\dayz_epoch_c\sounds\weapons\rsass_sd_shot",2.51189,1,50};
 		soundBegin[] = {"begin1",1};
 		dispersion = 0.0015;
 		reloadTime = 0.1;
