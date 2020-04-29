@@ -103,7 +103,7 @@ class ItemFuelBarrelEmpty: ItemFuelBarrel
 			text = $STR_EPOCH_PLAYER_276;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox","ItemMatchbox"};
+			requiretools[] = {"ItemToolbox"};
 			output[] = {{"ItemFireBarrel_kit",1}};
 			input[] = {{"ItemFuelBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
 		};
@@ -114,7 +114,6 @@ class ItemOilBarrel: CA_Magazine
 {
 	scope = public;
 	count = 1;
-	// fuelQuantity = 210;
 	type = 256;
 	displayName = $STR_EPOCH_OILBARREL;
 	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
@@ -135,6 +134,19 @@ class ItemOilBarrelEmpty : ItemOilBarrel
 	displayName = $STR_EPOCH_EMPTYOILBARREL;
 	descriptionShort = $STR_EPOCH_EMPTYOILBARREL_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_276;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemFireBarrel_kit",1}};
+			input[] = {{"ItemOilBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
+		};
+	};	
 };	
 
 class ItemMethylaminBarrelEmpty : ItemOilBarrel
@@ -142,6 +154,19 @@ class ItemMethylaminBarrelEmpty : ItemOilBarrel
 	displayName = $STR_EPOCH_EMPTYMETHYLAMINEBARREL;
 	descriptionShort = $STR_EPOCH_EMPTYMETHYLAMINEBARREL_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_oildrum_e_CA.paa";
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_276;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemFireBarrel_kit",1}};
+			input[] = {{"ItemMethylaminBarrelEmpty",1},{"ItemJerryCan",1},{"PartWoodPile",4}};
+		};
+	};	
 };
 
 class ItemMethylaminBarrel : ItemOilBarrel
