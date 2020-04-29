@@ -13,7 +13,7 @@ weaponsRU[] =
 	{Loot_WEAPON,		1,		P99_Silver_SD_DZ},			
 	
 	// Bolt action rifles and shotguns
-	{Loot_WEAPON,		5,		Saiga12K},
+	{Loot_WEAPON,		5,		Saiga12K_DZ},
 	{Loot_WEAPON,		5,		Mosin_PU_DZ},
 	
 	// Sniper Rifles
