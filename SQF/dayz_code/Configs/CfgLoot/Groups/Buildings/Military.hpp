@@ -26,6 +26,8 @@ MilitaryRU[] =
 	{Loot_CONTAINER,	2,		DZ_AmmoBoxUS, AmmoBoxRU1, 10, 20},	//5.45x39
 	{Loot_CONTAINER,	2,		DZ_AmmoBoxRU, AmmoBoxRU2, 10, 20},	//7.62x39
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxRU3, 3, 7},	//7.62x54R
+	{Loot_CONTAINER,	2,		DZ_AmmoBoxRU, AmmoBoxRU6, 5, 9},	//7.62x39
+	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxRU7, 5, 9},	//9x39mm	
 	{Loot_CONTAINER,	1,		DZ_ExplosiveBoxRU, AmmoBoxRU4, 5, 15},	//GP-25
 	{Loot_CONTAINER,	1,		DZ_ExplosiveBoxRU, AmmoBoxRU5, 3, 7},	//Grenades
 
@@ -71,7 +73,8 @@ MilitaryUS[] =
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxUS2, 7, 14},	//7.62x51
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxUS3, 7, 14},	//M203
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxUS4, 7, 14},	//Explosives
-
+	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxUS5, 7, 14},	//6.80x43
+	
 	//Other
 	{Loot_MAGAZINE,		3,		FoodMRE},
 	{Loot_PILE,			15,		AmmoUS, 1, 4},
@@ -111,7 +114,10 @@ MilitaryEU[] =
 	
 	//Containers
 	{Loot_CONTAINER,	1,		DZ_AmmoBoxUS, AmmoBoxEU1, 7, 14},	//5.56x45
-	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxEU2, 7, 14},	//7.62x51mm
+	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxEU2, 7, 14},	//7.62x51, 8.6x70
+	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxEU3, 7, 14},	//7.62x51, 5.56x45
+	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxEU4, 7, 14},	//7.62x51
+	{Loot_CONTAINER,	1,		DZ_AmmoBoxRU, AmmoBoxEU5, 7, 14},	//5.7x28, .45ACP
 
 	//Other
 	{Loot_MAGAZINE,		3,		FoodMRE},
