@@ -82,7 +82,7 @@ _isPZombie = _model isKindOf "PZombie_VB";
 _isMan = _sourceType isKindOf "CAManBase";
 _isPlayer = (isPlayer _source);
 
-if (DZE_PVE_Mode && {_isPlayer} && {!_falling}) exitWith {};
+if (DZE_PVE_Mode && {_isPlayer} && {!_falling} && {!_isZombieHit}) exitWith {};
 
 if (_unit == player) then {
 //Set player in combat
