@@ -9402,6 +9402,12 @@
 			<Russian>Антонов AN-2 (бело-красный)</Russian>
 			<German>Antonow AN-2 (weiß rot)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_AN2_VICKER">
+			<English>Antonov AN-2 (VICKERS)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_AN2_M134">
+			<English>Antonov AN-2 (M134)</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_CESSNA_WHITE">
 			<English>Cessna C185C (white)</English>
 			<Russian>Cessna C185C (белая)</Russian>
@@ -14481,11 +14487,6 @@
 			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Патронов: 10&lt;br/&gt;Используется в: CZ 750</Russian>
 			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 10&lt;br/&gt;Verwendet in: CZ 750</German>
 		</Key>	
-		<Key ID="STR_DZ_MAG_200RND_M240_DESC">
-			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Jackal L2A1, Jackal MK19</English>
-			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Патронов: 200&lt;br/&gt;Используется в: Jackal L2A1, Jackal MK19</Russian>
-			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 200&lt;br/&gt;Verwendet in: Jackal L2A1, Jackal MK19</German>
-		</Key>
 		<Key ID="STR_DZ_MAG_18RND_CZ75_DESC">
 			<English>Caliber: 9x19mm&lt;br/&gt;Rounds: 18&lt;br/&gt;Used in: CZ 75</English>
 			<Russian>Калибр: 9x19мм&lt;br/&gt;Патронов: 18&lt;br/&gt;Используется в: CZ 75</Russian>
@@ -15115,14 +15116,144 @@
 		
 		<!-- **** Vehicle Ammo **** -->
 		
+		<Key ID="STR_DZ_MAG_6RND_M32_HELI_NAME">
+			<English>6Rnd. HE M32 Heli</English>
+			<Russian>6п. HE M32 Heli</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_M32_HELI_DESC">
+			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 6&lt;br/&gt;Used in: M32 Heli</English>
+			<German>Kaliber: 30mm HE &lt;br/&gt;Granaten: 6&lt;br/&gt;Verwendet in: M32 Heli</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_200RND_M240_NAME">
+			<English>200Rnd. M240 mag.</English>
+		</Key> 
+		<Key ID="STR_DZ_MAG_200RND_M240_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Jackal L2A1, Jackal MK19</English>
+			<Russian>Калибр: 7.62x51мм&lt;br/&gt;Патронов: 200&lt;br/&gt;Используется в: Jackal L2A1, Jackal MK19</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 200&lt;br/&gt;Verwendet in: Jackal L2A1, Jackal MK19</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_1200RND_M240_NAME">
+			<English>1200Rnd. M240 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1200RND_M240_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 1200&lt;br/&gt;Used in: M240</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 1200&lt;br/&gt;Utilisé avec: M240</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 1200&lt;br/&gt;Usado en: M240</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 1200&lt;br/&gt;Usato in: M240</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 1200&lt;br/&gt;Uzywany w: M240</Polish>
+			<Russian>Патрон: 7.62x51mm &lt;br/&gt;Количество: 1200&lt;br/&gt;Исп. в: M240</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 1200&lt;br/&gt;Verwendet in: M240</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 1200&lt;br/&gt;Pro: M240</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 1200&lt;br/&gt; Hozzá tartozó fegyver: M240</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_460RND_M240_NAME">
+			<English>460Rnd. Pandur II mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_460RND_M240_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 460&lt;br/&gt;Used in: Pandur II</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 460&lt;br/&gt;Utilisé avec: Pandur II</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 460&lt;br/&gt;Usado en: Pandur II</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 460&lt;br/&gt;Usato in: Pandur II</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 460&lt;br/&gt;Uzywany w: Pandur II</Polish>
+			<Russian>Патрон: 7.62x51mm &lt;br/&gt;Количество: 460&lt;br/&gt;Исп. в: Pandur II</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 460&lt;br/&gt;Verwendet in: Pandur II</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 460&lt;br/&gt;Pro: Pandur II</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 460&lt;br/&gt; Hozzá tartozó fegyver: Pandur II</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_1200RND_M621_NAME">
+			<English>1200Rnd. M621 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1200RND_M621_DESC">
+			<English>Caliber: 20mm&lt;br/&gt;Rounds: 1200&lt;br/&gt;Used in: M621</English>
+			<French>Calibre: 20mm&lt;br/&gt;Munitions : 1200&lt;br/&gt;Utilisé avec: M621</French>
+			<Spanish>Calibre: 20mm&lt;br/&gt;Cartuchos: 1200&lt;br/&gt;Usado en: M621</Spanish>
+			<Italian>Calibro: 20mm&lt;br/&gt;Munizioni: 1200&lt;br/&gt;Usato in: M621</Italian>
+			<Polish>Kaliber: 20mm&lt;br/&gt;Naboje: 1200&lt;br/&gt;Uzywany w: M621</Polish>
+			<Russian>Патрон: 20mm &lt;br/&gt;Количество: 1200&lt;br/&gt;Исп. в: M621</Russian>
+			<German>Kaliber: 20mm&lt;br/&gt;Patronen: 1200&lt;br/&gt;Verwendet in: M621</German>
+			<Czech>Kalibr: 20mm&lt;br/&gt;Nábojů: 1200&lt;br/&gt;Pro: M621</Czech>
+			<Hungarian>Kaliber: 20mm&lt;br/&gt; Töltények: 1200&lt;br/&gt; Hozzá tartozó fegyver: M621</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_1500RND_PKT_NAME">
+			<English>1500Rnd. PKT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1500RND_PKT_DESC">
+			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 1500&lt;br/&gt;Used in: PKT</English>
+			<French>Calibre: 7.62x54mm&lt;br/&gt;Munitions : 1500&lt;br/&gt;Utilisé avec: PKT</French>
+			<Spanish>Calibre: 7.62x54mm&lt;br/&gt;Cartuchos: 1500&lt;br/&gt;Usado en: PKT</Spanish>
+			<Italian>Calibro: 7.62x54mm&lt;br/&gt;Munizioni: 1500&lt;br/&gt;Usato in: PKT</Italian>
+			<Polish>Kaliber: 7.62x54mm&lt;br/&gt;Naboje: 1500&lt;br/&gt;Uzywany w: PKT</Polish>
+			<Russian>Патрон: 7.62x54mm &lt;br/&gt;Количество: 1500&lt;br/&gt;Исп. в: PKT</Russian>
+			<German>Kaliber: 7.62x54mm&lt;br/&gt;Patronen: 1500&lt;br/&gt;Verwendet in: PKT</German>
+			<Czech>Kalibr: 7.62x54mm&lt;br/&gt;Nábojů: 1500&lt;br/&gt;Pro: PKT</Czech>
+			<Hungarian>Kaliber: 7.62x54mm&lt;br/&gt; Töltények: 1500&lt;br/&gt; Hozzá tartozó fegyver: PKT</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_2000RND_PKT_NAME">
+			<English>2000Rnd. PKT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2000RND_PKT_DESC">
+			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: PKT</English>
+			<French>Calibre: 7.62x54mm&lt;br/&gt;Munitions : 2000&lt;br/&gt;Utilisé avec: PKT</French>
+			<Spanish>Calibre: 7.62x54mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: PKT</Spanish>
+			<Italian>Calibro: 7.62x54mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: PKT</Italian>
+			<Polish>Kaliber: 7.62x54mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: PKT</Polish>
+			<Russian>Патрон: 7.62x54mm &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: PKT</Russian>
+			<German>Kaliber: 7.62x54mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Verwendet in: PKT</German>
+			<Czech>Kalibr: 7.62x54mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: PKT</Czech>
+			<Hungarian>Kaliber: 7.62x54mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: PKT</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_250RND_PKT_NAME">
+			<English>250Rnd. PKT T90 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_250RND_PKT_DESC">
+			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: PKT T90</English>
+			<French>Calibre: 7.62x54mm&lt;br/&gt;Munitions : 250&lt;br/&gt;Utilisé avec: PKT T90</French>
+			<Spanish>Calibre: 7.62x54mm&lt;br/&gt;Cartuchos: 250&lt;br/&gt;Usado en: PKT T90</Spanish>
+			<Italian>Calibro: 7.62x54mm&lt;br/&gt;Munizioni: 250&lt;br/&gt;Usato in: PKT T90</Italian>
+			<Polish>Kaliber: 7.62x54mm&lt;br/&gt;Naboje: 250&lt;br/&gt;Uzywany w: PKT T90</Polish>
+			<Russian>Патрон: 7.62x54mm &lt;br/&gt;Количество: 250&lt;br/&gt;Исп. в: PKT T90</Russian>
+			<German>Kaliber: 7.62x54mm&lt;br/&gt;Patronen: 250&lt;br/&gt;Verwendet in: PKT T90</German>
+			<Czech>Kalibr: 7.62x54mm&lt;br/&gt;Nábojů: 250&lt;br/&gt;Pro: PKT T90</Czech>
+			<Hungarian>Kaliber: 7.62x54mm&lt;br/&gt; Töltények: 250&lt;br/&gt; Hozzá tartozó fegyver: PKT T90</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_200RND_PKT_NAME">
+			<English>200Rnd. PKT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_200RND_PKT_DESC">
+			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: PKT</English>
+			<French>Calibre: 7.62x54mm&lt;br/&gt;Munitions : 200&lt;br/&gt;Utilisé avec: PKT</French>
+			<Spanish>Calibre: 7.62x54mm&lt;br/&gt;Cartuchos: 200&lt;br/&gt;Usado en: PKT</Spanish>
+			<Italian>Calibro: 7.62x54mm&lt;br/&gt;Munizioni: 200&lt;br/&gt;Usato in: PKT</Italian>
+			<Polish>Kaliber: 7.62x54mm&lt;br/&gt;Naboje: 200&lt;br/&gt;Uzywany w: PKT</Polish>
+			<Russian>Патрон: 7.62x54mm &lt;br/&gt;Количество: 200&lt;br/&gt;Исп. в: PKT</Russian>
+			<German>Kaliber: 7.62x54mm&lt;br/&gt;Patronen: 200&lt;br/&gt;Verwendet in: PKT</German>
+			<Czech>Kalibr: 7.62x54mm&lt;br/&gt;Nábojů: 200&lt;br/&gt;Pro: PKT</Czech>
+			<Hungarian>Kaliber: 7.62x54mm&lt;br/&gt; Töltények: 200&lt;br/&gt; Hozzá tartozó fegyver: PKT</Hungarian>
+		</Key>		
 		<Key ID="STR_DZ_MAG_29RND_AGS30_NAME">
 			<English>29Rnd. AGS-30</English>
 			<Russian>29п. AGS-30</Russian>
 		</Key> 	  
 		<Key ID="STR_DZ_MAG_29RND_AGS30_DESC">
-			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 29&lt;br/&gt;Used in: AGS-30</English>
-			<German>Kaliber: 30mm HE &lt;br/&gt;Granaten: 29&lt;br/&gt;Verwendet in: AGS-30</German>
+			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 29&lt;br/&gt;Used in: AGS-30, AGS-17</English>
+			<German>Kaliber: 30mm HE &lt;br/&gt;Granaten: 29&lt;br/&gt;Verwendet in: AGS-30, AGS-17</German>
 		</Key>	
+		<Key ID="STR_DZ_MAG_29RND_AGS30_HELI_NAME">
+			<English>29Rnd. AGS-30 Heli</English>
+			<Russian>29п. AGS-30 Heli</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_29RND_AGS30_HELI_DESC">
+			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 29&lt;br/&gt;Used in: AGS-30 Heli</English>
+			<German>Kaliber: 30mm HE &lt;br/&gt;Granaten: 29&lt;br/&gt;Verwendet in: AGS-30 Heli</German>
+		</Key>			
+		<Key ID="STR_DZ_MAG_400RND_AGS17_NAME">
+			<English>400Rnd. AGS-17</English>
+			<Russian>400п. AGS-17</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_400RND_AGS17_DESC">
+			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 400&lt;br/&gt;Used in: AGS-17</English>
+			<German>Kaliber: 30mm HE &lt;br/&gt;Granaten: 400&lt;br/&gt;Verwendet in: AGS-17</German>
+		</Key>		
 		<Key ID="STR_DZ_MAG_48RND_MK19_NAME">
 			<English>48Rnd. MK 19</English>
 			<Russian>48п. MK 19</Russian>
@@ -15161,7 +15292,21 @@
 			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 4000&lt;br/&gt;Pro: M134</Czech>
 			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 4000&lt;br/&gt; Hozzá tartozó fegyver: M134</Hungarian>
 		</Key>
-		
+		<Key ID="STR_DZ_MAG_2000RND_L94A1_NAME">
+			<English>2000Rnd. L94A1</English>
+			<Russian>2000п. L94A1</Russian>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2000RND_L94A1_DESC">
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: L94A1, Twin M60</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 2000&lt;br/&gt;Utilisé avec: L94A1, Twin M60</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: L94A1, Twin M60</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: L94A1, Twin M60</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: L94A1, Twin M60</Polish>
+			<Russian>Патрон: 7.62x51мм &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: L94A1, Twin M60</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Verwendet in: L94A1, Twin M60</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: L94A1, Twin M60</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: L94A1, Twin M60</Hungarian>
+		</Key>		
 		<Key ID="STR_DZ_MAG_100RND_M2_NAME">
 			<English>100Rnd. M2</English>
 			<Russian>100п. M2</Russian>
@@ -15308,6 +15453,1275 @@
 			<German>Kaliber: 7.7x56mm&lt;br/&gt;Patronen: 500&lt;br/&gt;Verwendet in: Twin Vickers</German>
 			<Czech>Kalibr: 7.7x56mm&lt;br/&gt;Nábojů: 500&lt;br/&gt;Pro: Twin Vickers</Czech>
 			<Hungarian>Kaliber: 7.7x56mm&lt;br/&gt; Töltények: 500&lt;br/&gt; Hozzá tartozó fegyver: Twin Vickers</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_60RND_DECOYFLARES_NAME">
+			<English>60Rnd. Decoy Flare</English>
+			<German>60Rnd. IR-Täuschkörper</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_60RND_DECOYFLARES_DESC">
+			<English>Decoy Flare &lt;br/&gt;Flares: 60&lt;br/&gt;Used in: Flare Launcher</English>
+			<German>IR-Täuschkörper &lt;br/&gt;Täuschkörper: 60&lt;br/&gt;Verwendet in: Signal-Abschussgerät</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_120RND_DECOYFLARES_NAME">
+			<English>120Rnd. Decoy Flare</English>
+			<German>120Rnd. IR-Täuschkörper</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_120RND_DECOYFLARES_DESC">
+			<English>Decoy Flare &lt;br/&gt;Flares: 120&lt;br/&gt;Used in: Flare Launcher</English>
+			<German>IR-Täuschkörper &lt;br/&gt;Täuschkörper: 120&lt;br/&gt;Verwendet in: Signal-Abschussgerät</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_240RND_DECOYFLARES_NAME">
+			<English>240Rnd. Decoy Flare</English>
+			<German>240Rnd. IR-Täuschkörper</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_240RND_DECOYFLARES_DESC">
+			<English>Decoy Flare &lt;br/&gt;Flares: 240&lt;br/&gt;Used in: Flare Launcher</English>
+			<German>IR-Täuschkörper &lt;br/&gt;Täuschkörper: 240&lt;br/&gt;Verwendet in: Signal-Abschussgerät</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_60RND_CHAFFFLARES_NAME">
+			<English>60Rnd. Chaff Flare</English>
+			<German>60Rnd. Radartäuschkörper</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_60RND_CHAFFFLARES_DESC">
+			<English>Chaff Flare &lt;br/&gt;Flares: 60&lt;br/&gt;Used in: Flare Launcher</English>
+			<German>Radartäuschkörper &lt;br/&gt;Täuschkörper: 60&lt;br/&gt;Verwendet in: Signal-Abschussgerät</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_120RND_CHAFFFLARES_NAME">
+			<English>120Rnd. Chaff Flare</English>
+			<German>120Rnd. Radartäuschkörper</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_120RND_CHAFFFLARES_DESC">
+			<English>Chaff Flare &lt;br/&gt;Flares: 120&lt;br/&gt;Used in: Flare Launcher</English>
+			<German>Radartäuschkörper &lt;br/&gt;Täuschkörper: 120&lt;br/&gt;Verwendet in: Signal-Abschussgerät</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_240RND_CHAFFFLARES_NAME">
+			<English>240Rnd. Chaff Flare</English>
+			<German>240Rnd. Radartäuschkörper</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_240RND_CHAFFFLARES_DESC">
+			<English>Chaff Flare &lt;br/&gt;Flares: 240&lt;br/&gt;Used in: Flare Launcher</English>
+			<German>Radartäuschkörper &lt;br/&gt;Täuschkörper: 240&lt;br/&gt;Verwendet in: Signal-Abschussgerät</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_2RND_SMOKEGRENADES_NAME">
+			<English>2Rnd. Smoke Grenades</English>
+			<German>2Rnd. Nebelgranaten</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_SMOKEGRENADES_DESC">
+			<English>Defense Smoke Grenades &lt;br/&gt;Smoke Grenades: 2&lt;br/&gt;Used in: Smoke Launcher</English>
+			<German>Abwehr-Nebelgranaten &lt;br/&gt;Nebelgranaten: 2&lt;br/&gt;Verwendet in: Nebelwerfer</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_500RND_KPVT_NAME">
+			<English>500Rnd. KPVT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_500RND_KPVT_DESC">
+			<English>KPVT &lt;br/&gt;Rounds: 500&lt;br/&gt;Used in: KPVT</English>
+			<German>KPVT &lt;br/&gt;Patronen: 500&lt;br/&gt;Verwendet in: KPVT</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_230RND_2A42_NAME">
+			<English>230Rnd. 2A42 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_230RND_2A42_DESC">
+			<English>30mm HE&lt;br/&gt;Rounds: 230&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
+			<German>30mm HE&lt;br/&gt;Geschosse: 230&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_250RND_2A42_NAME">
+			<English>250Rnd. 2A42 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_250RND_2A42_DESC">
+			<English>30mm HE&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
+			<German>30mm HE&lt;br/&gt;Geschosse: 250&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_150RND_2A42_NAME">
+			<English>150Rnd. 2A42 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_150RND_2A42_DESC">
+			<English>30mm HE&lt;br/&gt;Rounds: 150&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
+			<German>30mm HE&lt;br/&gt;Geschosse: 150&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_150RND_2A42AP_NAME">
+			<English>150Rnd. 2A42 AP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_150RND_2A42AP_DESC">
+			<English>30mm AP&lt;br/&gt;Rounds: 150&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
+			<German>30mm AP&lt;br/&gt;Geschosse: 150&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_250RND_2A42AP_NAME">
+			<English>250Rnd. 2A42 AP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_250RND_2A42AP_DESC">
+			<English>30mm AP&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
+			<German>30mm AP&lt;br/&gt;Geschosse: 250&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_230RND_2A42AP_NAME">
+			<English>230Rnd. 2A42 AP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_230RND_2A42AP_DESC">
+			<English>30mm AP&lt;br/&gt;Rounds: 230&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
+			<German>30mm AP&lt;br/&gt;Geschosse: 230&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_250RND_2A72AP_NAME">
+			<English>250Rnd. 2A72 AP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_250RND_2A72AP_DESC">
+			<English>30mm AP&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A72 30mm Cannon</English>
+			<German>30mm AP&lt;br/&gt;Geschosse: 250&lt;br/&gt;Verwendet in: 2A72 30-mm-Kanone</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_250RND_2A72HE_NAME">
+			<English>250Rnd. 2A72 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_250RND_2A72HE_DESC">
+			<English>30mm HE&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A72 30mm Cannon</English>
+			<German>30mm HE&lt;br/&gt;Geschosse: 250&lt;br/&gt;Verwendet in: 2A72 30-mm-Kanone</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_1904RND_2A38MAA_NAME">
+			<English>1904Rnd. 2A38M AA mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1904RND_2A38MAA_DESC">
+			<English>30mm AA&lt;br/&gt;Rounds: 1904&lt;br/&gt;Used in: 2A38M 30mm Cannon</English>
+			<German>30mm AA&lt;br/&gt;Geschosse: 1904&lt;br/&gt;Verwendet in: 2A38M 30-mm-Kanone</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_1470RND_YAKB_NAME">
+			<English>1470Rnd. YakB mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1470RND_YAKB_DESC">
+			<English>Caliber: 12.7x108mm&lt;br/&gt;Rounds: 1470&lt;br/&gt;Used in: YakB</English>
+			<French>Calibre: 12.7x108mm&lt;br/&gt;Munitions : 1470&lt;br/&gt;Utilisé avec: YakB</French>
+			<Spanish>Calibre: 12.7x108mm&lt;br/&gt;Cartuchos: 1470&lt;br/&gt;Usado en: YakB</Spanish>
+			<Italian>Calibro: 12.7x108mm&lt;br/&gt;Munizioni: 1470&lt;br/&gt;Usato in: YakB</Italian>
+			<Polish>Kaliber: 12.7x108mm&lt;br/&gt;Naboje: 1470&lt;br/&gt;Uzywany w: YakB</Polish>
+			<Russian>Патрон: 12.7x108mm &lt;br/&gt;Количество: 1470&lt;br/&gt;Исп. в: YakB</Russian>
+			<German>Kaliber: 12.7x108mm&lt;br/&gt;Patronen: 1470&lt;br/&gt;Verwendet in: YakB</German>
+			<Czech>Kalibr: 12.7x108mm&lt;br/&gt;Nábojů: 1470&lt;br/&gt;Pro: YakB</Czech>
+			<Hungarian>Kaliber: 12.7x108mm&lt;br/&gt; Töltények: 1470&lt;br/&gt; Hozzá tartozó fegyver: YakB</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_750RND_M197_NAME">
+			<English>750Rnd. M197 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_750RND_M197_DESC">
+			<English>Caliber: 20mm&lt;br/&gt;Rounds: 750&lt;br/&gt;Used in: M197</English>
+			<French>Calibre: 20mm&lt;br/&gt;Munitions : 750&lt;br/&gt;Utilisé avec: M197</French>
+			<Spanish>Calibre: 20mm&lt;br/&gt;Cartuchos: 750&lt;br/&gt;Usado en: M197</Spanish>
+			<Italian>Calibro: 20mm&lt;br/&gt;Munizioni: 750&lt;br/&gt;Usato in: M197</Italian>
+			<Polish>Kaliber: 20mm&lt;br/&gt;Naboje: 750&lt;br/&gt;Uzywany w: M197</Polish>
+			<Russian>Патрон: 20mm &lt;br/&gt;Количество: 750&lt;br/&gt;Исп. в: M197</Russian>
+			<German>Kaliber: 20mm&lt;br/&gt;Patronen: 750&lt;br/&gt;Verwendet in: M197</German>
+			<Czech>Kalibr: 20mm&lt;br/&gt;Nábojů: 750&lt;br/&gt;Pro: M197</Czech>
+			<Hungarian>Kaliber: 20mm&lt;br/&gt; Töltények: 750&lt;br/&gt; Hozzá tartozó fegyver: M197</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_2100RND_M168_NAME">
+			<English>2100Rnd. M168 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2100RND_M168_DESC">
+			<English>Caliber: 20mm&lt;br/&gt;Rounds: 2100&lt;br/&gt;Used in: M168</English>
+			<French>Calibre: 20mm&lt;br/&gt;Munitions : 2100&lt;br/&gt;Utilisé avec: M168</French>
+			<Spanish>Calibre: 20mm&lt;br/&gt;Cartuchos: 2100&lt;br/&gt;Usado en: M168</Spanish>
+			<Italian>Calibro: 20mm&lt;br/&gt;Munizioni: 2100&lt;br/&gt;Usato in: M168</Italian>
+			<Polish>Kaliber: 20mm&lt;br/&gt;Naboje: 2100&lt;br/&gt;Uzywany w: M168</Polish>
+			<Russian>Патрон: 20mm &lt;br/&gt;Количество: 2100&lt;br/&gt;Исп. в: M168</Russian>
+			<German>Kaliber: 20mm&lt;br/&gt;Patronen: 2100&lt;br/&gt;Verwendet in: M168</German>
+			<Czech>Kalibr: 20mm&lt;br/&gt;Nábojů: 2100&lt;br/&gt;Pro: M168</Czech>
+			<Hungarian>Kaliber: 20mm&lt;br/&gt; Töltények: 2100&lt;br/&gt; Hozzá tartozó fegyver: M168</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_2000RND_AZP85_NAME">
+			<English>2000Rnd. AZP85 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2000RND_AZP85_DESC">
+			<English>Caliber: 23mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: AZP85</English>
+			<French>Calibre: 23mm&lt;br/&gt;Munitions : 2000&lt;br/&gt;Utilisé avec: AZP85</French>
+			<Spanish>Calibre: 23mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: AZP85</Spanish>
+			<Italian>Calibro: 23mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: AZP85</Italian>
+			<Polish>Kaliber: 23mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: AZP85</Polish>
+			<Russian>Патрон: 23mm &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: AZP85</Russian>
+			<German>Kaliber: 23mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Verwendet in: AZP85</German>
+			<Czech>Kalibr: 23mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: AZP85</Czech>
+			<Hungarian>Kaliber: 23mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: AZP85</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_40RND_AZP85_NAME">
+			<English>40Rnd. AZP85 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_40RND_AZP85_DESC">
+			<English>Caliber: 23mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: AZP85</English>
+			<French>Calibre: 23mm&lt;br/&gt;Munitions : 40&lt;br/&gt;Utilisé avec: AZP85</French>
+			<Spanish>Calibre: 23mm&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: AZP85</Spanish>
+			<Italian>Calibro: 23mm&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: AZP85</Italian>
+			<Polish>Kaliber: 23mm&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: AZP85</Polish>
+			<Russian>Патрон: 23mm &lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: AZP85</Russian>
+			<German>Kaliber: 23mm&lt;br/&gt;Patronen: 40&lt;br/&gt;Verwendet in: AZP85</German>
+			<Czech>Kalibr: 23mm&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: AZP85</Czech>
+			<Hungarian>Kaliber: 23mm&lt;br/&gt; Töltények: 40&lt;br/&gt; Hozzá tartozó fegyver: AZP85</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_1000RND_2A14HE_NAME">
+			<English>1000Rnd. 2A14 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1000RND_2A14HE_DESC">
+			<English>Caliber: 23mm HE&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: 2A14</English>
+			<French>Calibre: 23mm HE&lt;br/&gt;Munitions : 1000&lt;br/&gt;Utilisé avec: 2A14</French>
+			<Spanish>Calibre: 23mm HE&lt;br/&gt;Cartuchos: 1000&lt;br/&gt;Usado en: 2A14</Spanish>
+			<Italian>Calibro: 23mm HE&lt;br/&gt;Munizioni: 1000&lt;br/&gt;Usato in: 2A14</Italian>
+			<Polish>Kaliber: 23mm HE&lt;br/&gt;Naboje: 1000&lt;br/&gt;Uzywany w: 2A14</Polish>
+			<Russian>Патрон: 23mm HE &lt;br/&gt;Количество: 1000&lt;br/&gt;Исп. в: 2A14</Russian>
+			<German>Kaliber: 23mm HE&lt;br/&gt;Patronen: 1000&lt;br/&gt;Verwendet in: 2A14</German>
+			<Czech>Kalibr: 23mm HE&lt;br/&gt;Nábojů: 1000&lt;br/&gt;Pro: 2A14</Czech>
+			<Hungarian>Kaliber: 23mm HE&lt;br/&gt; Töltények: 1000&lt;br/&gt; Hozzá tartozó fegyver: 2A14</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_1000RND_2A14AP_NAME">
+			<English>1000Rnd. 2A14 AP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1000RND_2A14AP_DESC">
+			<English>Caliber: 23mm AP&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: 2A14</English>
+			<French>Calibre: 23mm AP&lt;br/&gt;Munitions : 1000&lt;br/&gt;Utilisé avec: 2A14</French>
+			<Spanish>Calibre: 23mm AP&lt;br/&gt;Cartuchos: 1000&lt;br/&gt;Usado en: 2A14</Spanish>
+			<Italian>Calibro: 23mm AP&lt;br/&gt;Munizioni: 1000&lt;br/&gt;Usato in: 2A14</Italian>
+			<Polish>Kaliber: 23mm AP&lt;br/&gt;Naboje: 1000&lt;br/&gt;Uzywany w: 2A14</Polish>
+			<Russian>Патрон: 23mm AP &lt;br/&gt;Количество: 1000&lt;br/&gt;Исп. в: 2A14</Russian>
+			<German>Kaliber: 23mm AP&lt;br/&gt;Patronen: 1000&lt;br/&gt;Verwendet in: 2A14</German>
+			<Czech>Kalibr: 23mm AP&lt;br/&gt;Nábojů: 1000&lt;br/&gt;Pro: 2A14</Czech>
+			<Hungarian>Kaliber: 23mm AP&lt;br/&gt; Töltények: 1000&lt;br/&gt; Hozzá tartozó fegyver: 2A14</Hungarian>
+		</Key>			
+		<Key ID="STR_DZ_MAG_520RND_GSh23L_NAME">
+			<English>520Rnd. GSh23L mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_520RND_GSh23L_DESC">
+			<English>Caliber: 23mm&lt;br/&gt;Rounds: 520&lt;br/&gt;Used in: GSh23L</English>
+			<French>Calibre: 23mm&lt;br/&gt;Munitions : 520&lt;br/&gt;Utilisé avec: GSh23L</French>
+			<Spanish>Calibre: 23mm&lt;br/&gt;Cartuchos: 520&lt;br/&gt;Usado en: GSh23L</Spanish>
+			<Italian>Calibro: 23mm&lt;br/&gt;Munizioni: 520&lt;br/&gt;Usato in: GSh23L</Italian>
+			<Polish>Kaliber: 23mm&lt;br/&gt;Naboje: 520&lt;br/&gt;Uzywany w: GSh23L</Polish>
+			<Russian>Патрон: 23mm &lt;br/&gt;Количество: 520&lt;br/&gt;Исп. в: GSh23L</Russian>
+			<German>Kaliber: 23mm&lt;br/&gt;Patronen: 520&lt;br/&gt;Verwendet in: GSh23L</German>
+			<Czech>Kalibr: 23mm&lt;br/&gt;Nábojů: 520&lt;br/&gt;Pro: GSh23L</Czech>
+			<Hungarian>Kaliber: 23mm&lt;br/&gt; Töltények: 520&lt;br/&gt; Hozzá tartozó fegyver: GSh23L</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_300RND_GAU12_NAME">
+			<English>300Rnd. GAU12 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_300RND_GAU12_DESC">
+			<English>Caliber: 25mm HE&lt;br/&gt;Rounds: 300&lt;br/&gt;Used in: GAU12</English>
+			<French>Calibre: 25mm HE&lt;br/&gt;Munitions : 300&lt;br/&gt;Utilisé avec: GAU12</French>
+			<Spanish>Calibre: 25mm HE&lt;br/&gt;Cartuchos: 300&lt;br/&gt;Usado en: GAU12</Spanish>
+			<Italian>Calibro: 25mm HE&lt;br/&gt;Munizioni: 300&lt;br/&gt;Usato in: GAU12</Italian>
+			<Polish>Kaliber: 25mm HE&lt;br/&gt;Naboje: 300&lt;br/&gt;Uzywany w: GAU12</Polish>
+			<Russian>Патрон: 25mm HE &lt;br/&gt;Количество: 300&lt;br/&gt;Исп. в: GAU12</Russian>
+			<German>Kaliber: 25mm HE&lt;br/&gt;Patronen: 300&lt;br/&gt;Verwendet in: GAU12</German>
+			<Czech>Kalibr: 25mm HE&lt;br/&gt;Nábojů: 300&lt;br/&gt;Pro: GAU12</Czech>
+			<Hungarian>Kaliber: 25mm HE&lt;br/&gt; Töltények: 300&lt;br/&gt; Hozzá tartozó fegyver: GAU12</Hungarian>
+		</Key>			
+		<Key ID="STR_DZ_MAG_210RND_M242HE_NAME">
+			<English>210Rnd. M242 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_210RND_M242HE_DESC">
+			<English>Caliber: 25mm HE&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: M242</English>
+			<French>Calibre: 25mm HE&lt;br/&gt;Munitions : 210&lt;br/&gt;Utilisé avec: M242</French>
+			<Spanish>Calibre: 25mm HE&lt;br/&gt;Cartuchos: 210&lt;br/&gt;Usado en: M242</Spanish>
+			<Italian>Calibro: 25mm HE&lt;br/&gt;Munizioni: 210&lt;br/&gt;Usato in: M242</Italian>
+			<Polish>Kaliber: 25mm HE&lt;br/&gt;Naboje: 210&lt;br/&gt;Uzywany w: M242</Polish>
+			<Russian>Патрон: 25mm HE &lt;br/&gt;Количество: 210&lt;br/&gt;Исп. в: M242</Russian>
+			<German>Kaliber: 25mm HE&lt;br/&gt;Patronen: 210&lt;br/&gt;Verwendet in: M242</German>
+			<Czech>Kalibr: 25mm HE&lt;br/&gt;Nábojů: 210&lt;br/&gt;Pro: M242</Czech>
+			<Hungarian>Kaliber: 25mm HE&lt;br/&gt; Töltények: 210&lt;br/&gt; Hozzá tartozó fegyver: M242</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_210RND_M242AP_NAME">
+			<English>210Rnd. M242 AP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_210RND_M242AP_DESC">
+			<English>Caliber: 25mm AP&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: M242</English>
+			<French>Calibre: 25mm AP&lt;br/&gt;Munitions : 210&lt;br/&gt;Utilisé avec: M242</French>
+			<Spanish>Calibre: 25mm AP&lt;br/&gt;Cartuchos: 210&lt;br/&gt;Usado en: M242</Spanish>
+			<Italian>Calibro: 25mm AP&lt;br/&gt;Munizioni: 210&lt;br/&gt;Usato in: M242</Italian>
+			<Polish>Kaliber: 25mm AP&lt;br/&gt;Naboje: 210&lt;br/&gt;Uzywany w: M242</Polish>
+			<Russian>Патрон: 25mm AP &lt;br/&gt;Количество: 210&lt;br/&gt;Исп. в: M242</Russian>
+			<German>Kaliber: 25mm AP&lt;br/&gt;Patronen: 210&lt;br/&gt;Verwendet in: M242</German>
+			<Czech>Kalibr: 25mm AP&lt;br/&gt;Nábojů: 210&lt;br/&gt;Pro: M242</Czech>
+			<Hungarian>Kaliber: 25mm AP&lt;br/&gt; Töltények: 210&lt;br/&gt; Hozzá tartozó fegyver: M242</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_1350RND_GAU8_NAME">
+			<English>1350Rnd. GAU-8 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1350RND_GAU8_DESC">
+			<English>Caliber: 30mm AP&lt;br/&gt;Rounds: 1350&lt;br/&gt;Used in: GAU-8</English>
+			<French>Calibre: 30mm AP&lt;br/&gt;Munitions : 1350&lt;br/&gt;Utilisé avec: GAU-8</French>
+			<Spanish>Calibre: 30mm AP&lt;br/&gt;Cartuchos: 1350&lt;br/&gt;Usado en: GAU-8</Spanish>
+			<Italian>Calibro: 30mm AP&lt;br/&gt;Munizioni: 1350&lt;br/&gt;Usato in: GAU-8</Italian>
+			<Polish>Kaliber: 30mm AP&lt;br/&gt;Naboje: 1350&lt;br/&gt;Uzywany w: GAU-8</Polish>
+			<Russian>Патрон: 30mm AP &lt;br/&gt;Количество: 1350&lt;br/&gt;Исп. в: GAU-8</Russian>
+			<German>Kaliber: 30mm AP&lt;br/&gt;Patronen: 1350&lt;br/&gt;Verwendet in: GAU-8</German>
+			<Czech>Kalibr: 30mm AP&lt;br/&gt;Nábojů: 1350&lt;br/&gt;Pro: GAU-8</Czech>
+			<Hungarian>Kaliber: 30mm AP&lt;br/&gt; Töltények: 1350&lt;br/&gt; Hozzá tartozó fegyver: GAU-8</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_180RND_GSh301_NAME">
+			<English>180Rnd. GSh-301 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_180RND_GSh301_DESC">
+			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 180&lt;br/&gt;Used in: GSh-301</English>
+			<French>Calibre: 30mm HE&lt;br/&gt;Munitions : 180&lt;br/&gt;Utilisé avec: GSh-301</French>
+			<Spanish>Calibre: 30mm HE&lt;br/&gt;Cartuchos: 180&lt;br/&gt;Usado en: GSh-301</Spanish>
+			<Italian>Calibro: 30mm HE&lt;br/&gt;Munizioni: 180&lt;br/&gt;Usato in: GSh-301</Italian>
+			<Polish>Kaliber: 30mm HE&lt;br/&gt;Naboje: 180&lt;br/&gt;Uzywany w: GSh-301</Polish>
+			<Russian>Патрон: 30mm HE &lt;br/&gt;Количество: 180&lt;br/&gt;Исп. в: GSh-301</Russian>
+			<German>Kaliber: 30mm HE&lt;br/&gt;Patronen: 180&lt;br/&gt;Verwendet in: GSh-301</German>
+			<Czech>Kalibr: 30mm HE&lt;br/&gt;Nábojů: 180&lt;br/&gt;Pro: GSh-301</Czech>
+			<Hungarian>Kaliber: 30mm HE&lt;br/&gt; Töltények: 180&lt;br/&gt; Hozzá tartozó fegyver: GSh-301</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_750RND_GSh301_NAME">
+			<English>750Rnd. GSh-301 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_750RND_GSh301_DESC">
+			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 750&lt;br/&gt;Used in: GSh-301</English>
+			<French>Calibre: 30mm HE&lt;br/&gt;Munitions : 750&lt;br/&gt;Utilisé avec: GSh-301</French>
+			<Spanish>Calibre: 30mm HE&lt;br/&gt;Cartuchos: 750&lt;br/&gt;Usado en: GSh-301</Spanish>
+			<Italian>Calibro: 30mm HE&lt;br/&gt;Munizioni: 750&lt;br/&gt;Usato in: GSh-301</Italian>
+			<Polish>Kaliber: 30mm HE&lt;br/&gt;Naboje: 750&lt;br/&gt;Uzywany w: GSh-301</Polish>
+			<Russian>Патрон: 30mm HE &lt;br/&gt;Количество: 750&lt;br/&gt;Исп. в: GSh-301</Russian>
+			<German>Kaliber: 30mm HE&lt;br/&gt;Patronen: 750&lt;br/&gt;Verwendet in: GSh-301</German>
+			<Czech>Kalibr: 30mm HE&lt;br/&gt;Nábojů: 750&lt;br/&gt;Pro: GSh-301</Czech>
+			<Hungarian>Kaliber: 30mm HE&lt;br/&gt; Töltények: 750&lt;br/&gt; Hozzá tartozó fegyver: GSh-301</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_M119HE_NAME">
+			<English>30Rnd. M119 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_M119HE_DESC">
+			<English>Caliber: 105mm HE&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
+			<French>Calibre: 105mm HE&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: M119</French>
+			<Spanish>Calibre: 105mm HE&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
+			<Italian>Calibro: 105mm HE&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
+			<Polish>Kaliber: 105mm HE&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
+			<Russian>Патрон: 105mm HE &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<German>Kaliber: 105mm HE&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
+			<Czech>Kalibr: 105mm HE&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
+			<Hungarian>Kaliber: 105mm HE&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_M119WP_NAME">
+			<English>30Rnd. M119 WP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_M119WP_DESC">
+			<English>Caliber: 105mm WP&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
+			<French>Calibre: 105mm WP&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: M119</French>
+			<Spanish>Calibre: 105mm WP&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
+			<Italian>Calibro: 105mm WP&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
+			<Polish>Kaliber: 105mm WP&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
+			<Russian>Патрон: 105mm WP &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<German>Kaliber: 105mm WP&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
+			<Czech>Kalibr: 105mm WP&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
+			<Hungarian>Kaliber: 105mm WP&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_M119SADARM_NAME">
+			<English>30Rnd. M119 SADARM mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_M119SADARM_DESC">
+			<English>Caliber: 105mm SADARM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
+			<French>Calibre: 105mm SADARM&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: M119</French>
+			<Spanish>Calibre: 105mm SADARM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
+			<Italian>Calibro: 105mm SADARM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
+			<Polish>Kaliber: 105mm SADARM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
+			<Russian>Патрон: 105mm SADARM &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<German>Kaliber: 105mm SADARM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
+			<Czech>Kalibr: 105mm SADARM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
+			<Hungarian>Kaliber: 105mm SADARM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_M119LASER_NAME">
+			<English>30Rnd. M119 Laser mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_M119LASER_DESC">
+			<English>Caliber: 105mm Laser&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
+			<French>Calibre: 105mm Laser&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: M119</French>
+			<Spanish>Calibre: 105mm Laser&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
+			<Italian>Calibro: 105mm Laser&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
+			<Polish>Kaliber: 105mm Laser&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
+			<Russian>Патрон: 105mm Laser &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<German>Kaliber: 105mm Laser&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
+			<Czech>Kalibr: 105mm Laser&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
+			<Hungarian>Kaliber: 105mm Laser&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_M119SMOKE_NAME">
+			<English>30Rnd. M119 Smoke mag.</English>
+			<German>30Rnd. M119 Rauch mag.</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_M119SMOKE_DESC">
+			<English>Caliber: 105mm Smoke&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
+			<French>Calibre: 105mm Smoke&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: M119</French>
+			<Spanish>Calibre: 105mm Smoke&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
+			<Italian>Calibro: 105mm Smoke&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
+			<Polish>Kaliber: 105mm Smoke&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
+			<Russian>Патрон: 105mm Smoke &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<German>Kaliber: 105mm Rauch&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
+			<Czech>Kalibr: 105mm Smoke&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
+			<Hungarian>Kaliber: 105mm Smoke&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_M119ILLUM_NAME">
+			<English>30Rnd. M119 ILLUM mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_M119ILLUM_DESC">
+			<English>Caliber: 105mm ILLUM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
+			<French>Calibre: 105mm ILLUM&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: M119</French>
+			<Spanish>Calibre: 105mm ILLUM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
+			<Italian>Calibro: 105mm ILLUM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
+			<Polish>Kaliber: 105mm ILLUM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
+			<Russian>Патрон: 105mm ILLUM &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<German>Kaliber: 105mm ILLUM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
+			<Czech>Kalibr: 105mm ILLUM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
+			<Hungarian>Kaliber: 105mm ILLUM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_20RND_M1A2HE_NAME">
+			<English>20Rnd. M1A2 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_M1A2HE_DESC">
+			<English>Caliber: 120mm HE&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: M1A2</English>
+			<French>Calibre: 120mm HE&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: M1A2</French>
+			<Spanish>Calibre: 120mm HE&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: M1A2</Spanish>
+			<Italian>Calibro: 120mm HE&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: M1A2</Italian>
+			<Polish>Kaliber: 120mm HE&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: M1A2</Polish>
+			<Russian>Патрон: 120mm HE &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: M1A2</Russian>
+			<German>Kaliber: 120mm HE&lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: M1A2</German>
+			<Czech>Kalibr: 120mm HE&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: M1A2</Czech>
+			<Hungarian>Kaliber: 120mm HE&lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: M1A2</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_20RND_M1A2SABOT_NAME">
+			<English>20Rnd. M1A2 SABOT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_20RND_M1A2SABOT_DESC">
+			<English>Caliber: 120mm SABOT&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: M1A2</English>
+			<French>Calibre: 120mm SABOT&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: M1A2</French>
+			<Spanish>Calibre: 120mm SABOT&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: M1A2</Spanish>
+			<Italian>Calibro: 120mm SABOT&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: M1A2</Italian>
+			<Polish>Kaliber: 120mm SABOT&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: M1A2</Polish>
+			<Russian>Патрон: 120mm SABOT &lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: M1A2</Russian>
+			<German>Kaliber: 120mm SABOT&lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: M1A2</German>
+			<Czech>Kalibr: 120mm SABOT&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: M1A2</Czech>
+			<Hungarian>Kaliber: 120mm SABOT&lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: M1A2</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_30RND_D30HE_NAME">
+			<English>30Rnd. D-30 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_D30HE_DESC">
+			<English>Caliber: 122mm HE&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
+			<French>Calibre: 122mm HE&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: D-30</French>
+			<Spanish>Calibre: 122mm HE&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
+			<Italian>Calibro: 122mm HE&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
+			<Polish>Kaliber: 122mm HE&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
+			<Russian>Патрон: 122mm HE &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<German>Kaliber: 122mm HE&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
+			<Czech>Kalibr: 122mm HE&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
+			<Hungarian>Kaliber: 122mm HE&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_D30WP_NAME">
+			<English>30Rnd. D-30 WP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_D30WP_DESC">
+			<English>Caliber: 122mm WP&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
+			<French>Calibre: 122mm WP&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: D-30</French>
+			<Spanish>Calibre: 122mm WP&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
+			<Italian>Calibro: 122mm WP&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
+			<Polish>Kaliber: 122mm WP&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
+			<Russian>Патрон: 122mm WP &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<German>Kaliber: 122mm WP&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
+			<Czech>Kalibr: 122mm WP&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
+			<Hungarian>Kaliber: 122mm WP&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_D30SADARM_NAME">
+			<English>30Rnd. D-30 SADARM mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_D30SADARM_DESC">
+			<English>Caliber: 122mm SADARM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
+			<French>Calibre: 122mm SADARM&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: D-30</French>
+			<Spanish>Calibre: 122mm SADARM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
+			<Italian>Calibro: 122mm SADARM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
+			<Polish>Kaliber: 122mm SADARM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
+			<Russian>Патрон: 122mm SADARM &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<German>Kaliber: 122mm SADARM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
+			<Czech>Kalibr: 122mm SADARM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
+			<Hungarian>Kaliber: 122mm SADARM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_D30LASER_NAME">
+			<English>30Rnd. D-30 Laser mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_D30LASER_DESC">
+			<English>Caliber: 122mm Laser&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
+			<French>Calibre: 122mm Laser&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: D-30</French>
+			<Spanish>Calibre: 122mm Laser&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
+			<Italian>Calibro: 122mm Laser&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
+			<Polish>Kaliber: 122mm Laser&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
+			<Russian>Патрон: 122mm Laser &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<German>Kaliber: 122mm Laser&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
+			<Czech>Kalibr: 122mm Laser&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
+			<Hungarian>Kaliber: 122mm Laser&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_30RND_D30SMOKE_NAME">
+			<English>30Rnd. D-30 Smoke mag.</English>
+			<German>30Rnd. D-30 Rauch mag.</German>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_D30SMOKE_DESC">
+			<English>Caliber: 122mm Smoke&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
+			<French>Calibre: 122mm Smoke&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: D-30</French>
+			<Spanish>Calibre: 122mm Smoke&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
+			<Italian>Calibro: 122mm Smoke&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
+			<Polish>Kaliber: 122mm Smoke&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
+			<Russian>Патрон: 122mm Smoke &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<German>Kaliber: 122mm Rauch&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
+			<Czech>Kalibr: 122mm Smoke&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
+			<Hungarian>Kaliber: 122mm Smoke&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_30RND_D30ILLUM_NAME">
+			<English>30Rnd. D-30 ILLUM mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_30RND_D30ILLUM_DESC">
+			<English>Caliber: 122mm ILLUM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
+			<French>Calibre: 122mm ILLUM&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: D-30</French>
+			<Spanish>Calibre: 122mm ILLUM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
+			<Italian>Calibro: 122mm ILLUM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
+			<Polish>Kaliber: 122mm ILLUM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
+			<Russian>Патрон: 122mm ILLUM &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<German>Kaliber: 122mm ILLUM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
+			<Czech>Kalibr: 122mm ILLUM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
+			<Hungarian>Kaliber: 122mm ILLUM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_22RND_T72HE_NAME">
+			<English>22Rnd. T72 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_22RND_T72HE_DESC">
+			<English>Caliber: 125mm HE&lt;br/&gt;Rounds: 22&lt;br/&gt;Used in: T72</English>
+			<French>Calibre: 125mm HE&lt;br/&gt;Munitions : 22&lt;br/&gt;Utilisé avec: T72</French>
+			<Spanish>Calibre: 125mm HE&lt;br/&gt;Cartuchos: 22&lt;br/&gt;Usado en: T72</Spanish>
+			<Italian>Calibro: 125mm HE&lt;br/&gt;Munizioni: 22&lt;br/&gt;Usato in: T72</Italian>
+			<Polish>Kaliber: 125mm HE&lt;br/&gt;Naboje: 22&lt;br/&gt;Uzywany w: T72</Polish>
+			<Russian>Патрон: 125mm HE &lt;br/&gt;Количество: 22&lt;br/&gt;Исп. в: T72</Russian>
+			<German>Kaliber: 125mm HE&lt;br/&gt;Patronen: 22&lt;br/&gt;Verwendet in: T72</German>
+			<Czech>Kalibr: 125mm HE&lt;br/&gt;Nábojů: 22&lt;br/&gt;Pro: T72</Czech>
+			<Hungarian>Kaliber: 125mm HE&lt;br/&gt; Töltények: 22&lt;br/&gt; Hozzá tartozó fegyver: T72</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_22RND_2A70HE_NAME">
+			<English>22Rnd. 2A70 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_22RND_2A70HE_DESC">
+			<English>Caliber: 100mm HE&lt;br/&gt;Rounds: 22&lt;br/&gt;Used in: 2A70</English>
+			<French>Calibre: 100mm HE&lt;br/&gt;Munitions : 22&lt;br/&gt;Utilisé avec: 2A70</French>
+			<Spanish>Calibre: 100mm HE&lt;br/&gt;Cartuchos: 22&lt;br/&gt;Usado en: 2A70</Spanish>
+			<Italian>Calibro: 100mm HE&lt;br/&gt;Munizioni: 22&lt;br/&gt;Usato in: 2A70</Italian>
+			<Polish>Kaliber: 100mm HE&lt;br/&gt;Naboje: 22&lt;br/&gt;Uzywany w: 2A70</Polish>
+			<Russian>Патрон: 100mm HE &lt;br/&gt;Количество: 22&lt;br/&gt;Исп. в: 2A70</Russian>
+			<German>Kaliber: 100mm HE&lt;br/&gt;Patronen: 22&lt;br/&gt;Verwendet in: 2A70</German>
+			<Czech>Kalibr: 100mm HE&lt;br/&gt;Nábojů: 22&lt;br/&gt;Pro: 2A70</Czech>
+			<Hungarian>Kaliber: 100mm HE&lt;br/&gt; Töltények: 22&lt;br/&gt; Hozzá tartozó fegyver: 2A70</Hungarian>
+		</Key>			
+		<Key ID="STR_DZ_MAG_23RND_T72SABOT_NAME">
+			<English>23Rnd. T72 SABOT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_23RND_T72SABOT_DESC">
+			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 23&lt;br/&gt;Used in: T72</English>
+			<French>Calibre: 125mm SABOT&lt;br/&gt;Munitions : 23&lt;br/&gt;Utilisé avec: T72</French>
+			<Spanish>Calibre: 125mm SABOT&lt;br/&gt;Cartuchos: 23&lt;br/&gt;Usado en: T72</Spanish>
+			<Italian>Calibro: 125mm SABOT&lt;br/&gt;Munizioni: 23&lt;br/&gt;Usato in: T72</Italian>
+			<Polish>Kaliber: 125mm SABOT&lt;br/&gt;Naboje: 23&lt;br/&gt;Uzywany w: T72</Polish>
+			<Russian>Патрон: 125mm SABOT &lt;br/&gt;Количество: 23&lt;br/&gt;Исп. в: T72</Russian>
+			<German>Kaliber: 125mm SABOT&lt;br/&gt;Patronen: 23&lt;br/&gt;Verwendet in: T72</German>
+			<Czech>Kalibr: 125mm SABOT&lt;br/&gt;Nábojů: 23&lt;br/&gt;Pro: T72</Czech>
+			<Hungarian>Kaliber: 125mm SABOT&lt;br/&gt; Töltények: 23&lt;br/&gt; Hozzá tartozó fegyver: T72</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_22RND_IMISABOT_NAME">
+			<English>22Rnd. IMI SABOT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_22RND_IMISABOT_DESC">
+			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 22&lt;br/&gt;Used in: IMI</English>
+			<French>Calibre: 125mm SABOT&lt;br/&gt;Munitions : 22&lt;br/&gt;Utilisé avec: IMI</French>
+			<Spanish>Calibre: 125mm SABOT&lt;br/&gt;Cartuchos: 22&lt;br/&gt;Usado en: IMI</Spanish>
+			<Italian>Calibro: 125mm SABOT&lt;br/&gt;Munizioni: 22&lt;br/&gt;Usato in: IMI</Italian>
+			<Polish>Kaliber: 125mm SABOT&lt;br/&gt;Naboje: 22&lt;br/&gt;Uzywany w: IMI</Polish>
+			<Russian>Патрон: 125mm SABOT &lt;br/&gt;Количество: 22&lt;br/&gt;Исп. в: IMI</Russian>
+			<German>Kaliber: 125mm SABOT&lt;br/&gt;Patronen: 22&lt;br/&gt;Verwendet in: IMI</German>
+			<Czech>Kalibr: 125mm SABOT&lt;br/&gt;Nábojů: 22&lt;br/&gt;Pro: IMI</Czech>
+			<Hungarian>Kaliber: 125mm SABOT&lt;br/&gt; Töltények: 22&lt;br/&gt; Hozzá tartozó fegyver: IMI</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_15RND_T72SABOT_NAME">
+			<English>15Rnd. T72 SABOT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_15RND_T72SABOT_DESC">
+			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: T72</English>
+			<French>Calibre: 125mm SABOT&lt;br/&gt;Munitions : 15&lt;br/&gt;Utilisé avec: T72</French>
+			<Spanish>Calibre: 125mm SABOT&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: T72</Spanish>
+			<Italian>Calibro: 125mm SABOT&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: T72</Italian>
+			<Polish>Kaliber: 125mm SABOT&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: T72</Polish>
+			<Russian>Патрон: 125mm SABOT &lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: T72</Russian>
+			<German>Kaliber: 125mm SABOT&lt;br/&gt;Patronen: 15&lt;br/&gt;Verwendet in: T72</German>
+			<Czech>Kalibr: 125mm SABOT&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: T72</Czech>
+			<Hungarian>Kaliber: 125mm SABOT&lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: T72</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_33RND_85mmHE_NAME">
+			<English>33Rnd. 85mm HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_33RND_85mmHE_DESC">
+			<English>Caliber: 85mm HE&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: 85mm Cannon</English>
+			<French>Calibre: 85mm HE&lt;br/&gt;Munitions : 33&lt;br/&gt;Utilisé avec: 85mm Cannon</French>
+			<Spanish>Calibre: 85mm HE&lt;br/&gt;Cartuchos: 33&lt;br/&gt;Usado en: 85mm Cannon</Spanish>
+			<Italian>Calibro: 85mm HE&lt;br/&gt;Munizioni: 33&lt;br/&gt;Usato in: 85mm Cannon</Italian>
+			<Polish>Kaliber: 85mm HE&lt;br/&gt;Naboje: 33&lt;br/&gt;Uzywany w: 85mm Cannon</Polish>
+			<Russian>Патрон: 85mm HE &lt;br/&gt;Количество: 33&lt;br/&gt;Исп. в: 85mm Cannon</Russian>
+			<German>Kaliber: 85mm HE&lt;br/&gt;Patronen: 33&lt;br/&gt;Verwendet in: 85mm Kanone</German>
+			<Czech>Kalibr: 85mm HE&lt;br/&gt;Nábojů: 33&lt;br/&gt;Pro: 85mm Cannon</Czech>
+			<Hungarian>Kaliber: 85mm HE&lt;br/&gt; Töltények: 33&lt;br/&gt; Hozzá tartozó fegyver: 85mm Cannon</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_10RND_85mmAP_NAME">
+			<English>10Rnd. 85mm AP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_10RND_85mmAP_DESC">
+			<English>Caliber: 85mm AP&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: 85mm Cannon</English>
+			<French>Calibre: 85mm AP&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: 85mm Cannon</French>
+			<Spanish>Calibre: 85mm AP&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: 85mm Cannon</Spanish>
+			<Italian>Calibro: 85mm AP&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: 85mm Cannon</Italian>
+			<Polish>Kaliber: 85mm AP&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: 85mm Cannon</Polish>
+			<Russian>Патрон: 85mm AP &lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: 85mm Cannon</Russian>
+			<German>Kaliber: 85mm AP&lt;br/&gt;Patronen: 10&lt;br/&gt;Verwendet in: 85mm Kanone</German>
+			<Czech>Kalibr: 85mm AP&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: 85mm Cannon</Czech>
+			<Hungarian>Kaliber: 85mm AP&lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: 85mm Cannon</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_8RND_AT5_BMP2_NAME">
+			<English>8Rnd. AT5 BMP-2</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_AT5_BMP2_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT5 BMP-2</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: AT5 BMP-2</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_5RND_AT5_BRDM2_NAME">
+			<English>5Rnd. AT5 BRDM-2</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_5RND_AT5_BRDM2_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 5&lt;br/&gt;Used in: AT5 BRDM-2</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 5&lt;br/&gt;Verwendet in: AT5 BRDM-2</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_8RND_AT5_BMP3_NAME">
+			<English>8Rnd. AT5 BMP-3</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_AT5_BMP3_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT5 BMP-3</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: AT5 BMP-3</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_5RND_AT5_T90_NAME">
+			<English>5Rnd. AT5 T90</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_5RND_AT5_T90_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 5&lt;br/&gt;Used in: AT5 T90</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 5&lt;br/&gt;Verwendet in: AT5 T90</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_4RND_AT9_Mi24P_NAME">
+			<English>4Rnd. AT9 Mi-24P</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_AT9_Mi24P_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT9 Mi-24P</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AT9 Mi-24P</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_8RND_AT9_Mi24V_NAME">
+			<English>8Rnd. AT9 Mi-24V</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_AT9_Mi24V_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT9 Mi-24V</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: AT9 Mi-24V</German>
+		</Key>			
+		<Key ID="STR_DZ_MAG_4RND_AT6_Mi24V_NAME">
+			<English>4Rnd. AT6 Mi-24V</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_AT6_Mi24V_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT6 Mi-24V</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AT6 Mi-24V</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_4RND_AT2_Mi24D_NAME">
+			<English>4Rnd. AT2 Mi-24D</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_AT2_Mi24D_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT2 Mi-24D</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AT2 Mi-24D</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_6RND_AT13_NAME">
+			<English>6Rnd. AT13</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_AT13_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: AT13</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: AT13</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_6RND_TOW_NAME">
+			<English>6Rnd. TOW</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_TOW_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: TOW</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: TOW</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_2RND_TOW_NAME">
+			<English>2Rnd. TOW</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_TOW_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: TOW</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: TOW</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_2RND_ATGM_NAME">
+			<English>2Rnd. ATGM</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_ATGM_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: ATGM Spike</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: ATGM Spike</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_1RND_Bolide_NAME">
+			<English>1Rnd. Bolide</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1RND_Bolide_DESC">
+			<English>Anti Air Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: RBS-70</English>
+			<German>Flugabwehrrakete&lt;br/&gt;Raketen: 1&lt;br/&gt;Verwendet in: RBS-70</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_6RND_TOW2_NAME">
+			<English>6Rnd. TOW-2</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_TOW2_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: TOW-2</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: TOW-2</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_2RND_TOW2_NAME">
+			<English>2Rnd. TOW-2</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_TOW2_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: TOW-2</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: TOW-2</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_HELLFIRE_NAME">
+			<English>8Rnd. Hellfire</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_HELLFIRE_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Hellfire</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: Hellfire</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_4RND_HELLFIRE_NAME">
+			<English>4Rnd. Hellfire</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_HELLFIRE_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Hellfire</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: Hellfire</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_12RND_Vikhr_KA52_NAME">
+			<English>12Rnd. Vikhr Ka-52</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_12RND_Vikhr_KA52_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: Vikhr Ka-52</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 12&lt;br/&gt;Verwendet in: Vikhr Ka-52</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_4RND_Sidewinder_AV8B_NAME">
+			<English>4Rnd. Sidewinder AV-8B</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_Sidewinder_AV8B_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Sidewinder AV-8B</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: Sidewinder AV-8B</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_Sidewinder_AH64_NAME">
+			<English>8Rnd. Sidewinder AH64</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_Sidewinder_AH64_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Sidewinder AH64</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: Sidewinder AH64</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_2RND_F35_NAME">
+			<English>2Rnd. Sidewinder F35B</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_F35_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Sidewinder F35B</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: Sidewinder F35B</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_2RND_AH1Z_NAME">
+			<English>2Rnd. Sidewinder AH-1Z</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_AH1Z_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Sidewinder AH-1Z</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: Sidewinder AH-1Z</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_14RND_FFAR_NAME">
+			<English>14Rnd. FFAR Hydra</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_14RND_FFAR_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 14&lt;br/&gt;Used in: FFAR Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 14&lt;br/&gt;Verwendet in: FFAR Hydra</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_28RND_FFAR_NAME">
+			<English>28Rnd. FFAR Hydra</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_28RND_FFAR_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 28&lt;br/&gt;Used in: FFAR Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 28&lt;br/&gt;Verwendet in: FFAR Hydra</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_38RND_FFAR_NAME">
+			<English>38Rnd. FFAR Hydra</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_38RND_FFAR_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 38&lt;br/&gt;Used in: FFAR Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 38&lt;br/&gt;Verwendet in: FFAR Hydra</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_12RND_FFAR_NAME">
+			<English>12Rnd. FFAR Hydra</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_12RND_FFAR_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: FFAR Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 12&lt;br/&gt;Verwendet in: FFAR Hydra</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_12RND_CRV7_NAME">
+			<English>12Rnd. CRV7 Hydra</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_12RND_CRV7_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: CRV7 Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 12&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_38RND_CRV7_NAME">
+			<English>38Rnd. CRV7 Hydra</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_38RND_CRV7_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 38&lt;br/&gt;Used in: CRV7 Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 38&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_6RND_CRV7_HEPD_NAME">
+			<English>6Rnd. CRV7 HEPD Hydra</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_CRV7_HEPD_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: CRV7 Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_6RND_CRV7_FAT_NAME">
+			<English>6Rnd. CRV7 FAT Hydra</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_CRV7_FAT_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: CRV7 Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+		</Key>			
+		<Key ID="STR_DZ_MAG_40RND_80mm_NAME">
+			<English>40Rnd. 80mm HE</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_40RND_80mm_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 80mm Launcher</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: 80mm-Raketenwerfer</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_80RND_80mm_NAME">
+			<English>80Rnd. 80mm HE</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_80RND_80mm_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 80&lt;br/&gt;Used in: 80mm Launcher</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 80&lt;br/&gt;Verwendet in: 80mm-Raketenwerfer</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_40RND_GRAD_NAME">
+			<English>40Rnd. GRAD</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_40RND_GRAD_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: BM-21 Grad</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: BM-21 Grad</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_40RND_RM70_NAME">
+			<English>40Rnd. RM-70</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_40RND_RM70_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: RM-70</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: RM-70</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_12RND_MLRS_NAME">
+			<English>12Rnd. MLRS</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_12RND_MLRS_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: M270 MLRS</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 12&lt;br/&gt;Verwendet in: M270 MLRS</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_40RND_S8T_NAME">
+			<English>40Rnd. S8T</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_40RND_S8T_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 80mm Launcher</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: 80mm-Raketenwerfer</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_80RND_S8T_NAME">
+			<English>80Rnd. S8T</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_80RND_S8T_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 80&lt;br/&gt;Used in: 80mm Launcher</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 80&lt;br/&gt;Verwendet in: 80mm-Raketenwerfer</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_64RND_57mm_NAME">
+			<English>64Rnd. 57mm</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_64RND_57mm_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 64&lt;br/&gt;Used in: 57mm Launcher</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 64&lt;br/&gt;Verwendet in: 57mm-Raketenwerfer</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_14RND_57mm_NAME">
+			<English>14Rnd. 57mm</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_14RND_57mm_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 14&lt;br/&gt;Used in: 57mm Launcher</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 14&lt;br/&gt;Verwendet in: 57mm-Raketenwerfer</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_128RND_57mm_NAME">
+			<English>128Rnd. 57mm</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_128RND_57mm_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 128&lt;br/&gt;Used in: 57mm Launcher</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 128&lt;br/&gt;Verwendet in: 57mm-Raketenwerfer</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_192RND_57mm_NAME">
+			<English>192Rnd. 57mm</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_192RND_57mm_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 192&lt;br/&gt;Used in: 57mm Launcher</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 192&lt;br/&gt;Verwendet in: 57mm-Raketenwerfer</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_6RND_GBU12_NAME">
+			<English>6Rnd. GBU-12</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_GBU12_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: AV-8B</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: AV-8B</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_2RND_GBU12_NAME">
+			<English>2Rnd. GBU-12</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_GBU12_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: AV-8B</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: AV-8B</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_4RND_GBU12_NAME">
+			<English>4Rnd. GBU-12</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_GBU12_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AV-8B</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AV-8B</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_2RND_FAB_NAME">
+			<English>2Rnd. FAB 250</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_FAB_DESC">
+			<English>Unguided bomb&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: FAB 250</English>
+			<German>Freifallbombe&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: FAB 250</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_4RND_FAB_NAME">
+			<English>4Rnd. FAB 250</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_FAB_DESC">
+			<English>Unguided bomb&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: FAB 250</English>
+			<German>Freifallbombe&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: FAB 250</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_6RND_Mk82_NAME">
+			<English>6Rnd. Mk82</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_Mk82_DESC">
+			<English>Unguided bomb&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: Mk82</English>
+			<German>Freifallbombe&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: Mk82</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_3RND_Mk82_NAME">
+			<English>3Rnd. Mk82</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_3RND_Mk82_DESC">
+			<English>Unguided bomb&lt;br/&gt;Rockets: 3&lt;br/&gt;Used in: Mk82</English>
+			<German>Freifallbombe&lt;br/&gt;Raketen: 3&lt;br/&gt;Verwendet in: Mk82</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_4RND_R73_NAME">
+			<English>4Rnd. R-73</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_R73_DESC">
+			<English>Air-to-Air Missile&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: R-73</English>
+			<German>Luft-Luft-Rakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: R-73</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_2RND_R73_NAME">
+			<English>2Rnd. R-73</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_R73_DESC">
+			<English>Air-to-Air Missile&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: R-73</English>
+			<German>Luft-Luft-Rakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: R-73</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_4RND_Ch29_NAME">
+			<English>4Rnd. Ch-29</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_Ch29_DESC">
+			<English>Air-to-ground missile &lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Ch-29</English>
+			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: Ch-29</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_6RND_Ch29_NAME">
+			<English>6Rnd. Ch-29</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_6RND_Ch29_DESC">
+			<English>Air-to-ground missile &lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: Ch-29</English>
+			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: Ch-29</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_Ch29_NAME">
+			<English>8Rnd. Ch-29</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_Ch29_DESC">
+			<English>Air-to-ground missile &lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Ch-29</English>
+			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: Ch-29</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_2RND_Maverick_NAME">
+			<English>2Rnd. Maverick</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_Maverick_DESC">
+			<English>Air-to-ground missile &lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: A-10</English>
+			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: A-10</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_4RND_Maverick_NAME">
+			<English>4Rnd. Maverick</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_Maverick_DESC">
+			<English>Air-to-ground missile &lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: L-159</English>
+			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: L-159</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_8RND_9M311_NAME">
+			<English>8Rnd. 9M311</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_9M311_DESC">
+			<English>Anti air missile &lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: 2S6 Tunguska</English>
+			<German>Flugabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: 2S6 Tunguska</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_STINGER_NAME">
+			<English>8Rnd. Stinger</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_STINGER_DESC">
+			<English>Anti Air Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Stinger</English>
+			<German>Luftabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: Stinger</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_4RND_STINGER_NAME">
+			<English>4Rnd. Stinger</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_STINGER_DESC">
+			<English>Anti Air Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Stinger</English>
+			<German>Luftabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: Stinger</German>
+		</Key>			
+		<Key ID="STR_DZ_MAG_2RND_STINGER_NAME">
+			<English>2Rnd. Stinger</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_2RND_STINGER_DESC">
+			<English>Anti Air Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Stinger</English>
+			<German>Luftabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: Stinger</German>
+		</Key>	
+		<Key ID="STR_DZ_MAG_21RND_T55HEAT_NAME">
+			<English>21Rnd. HEAT T55 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_21RND_T55HEAT_DESC">
+			<English>Caliber: 100mm HEAT&lt;br/&gt;Rounds: 21&lt;br/&gt;Used in: T55</English>
+			<French>Calibre: 100mm HEAT&lt;br/&gt;Munitions : 21&lt;br/&gt;Utilisé avec: T55</French>
+			<Spanish>Calibre: 100mm HEAT&lt;br/&gt;Cartuchos: 21&lt;br/&gt;Usado en: T55</Spanish>
+			<Italian>Calibro: 100mm HEAT&lt;br/&gt;Munizioni: 21&lt;br/&gt;Usato in: T55</Italian>
+			<Polish>Kaliber: 100mm HEAT&lt;br/&gt;Naboje: 21&lt;br/&gt;Uzywany w: T55</Polish>
+			<Russian>Патрон: 100mm HEAT &lt;br/&gt;Количество: 21&lt;br/&gt;Исп. в: T55</Russian>
+			<German>Kaliber: 100mm HEAT&lt;br/&gt;Patronen: 21&lt;br/&gt;Verwendet in: T55</German>
+			<Czech>Kalibr: 100mm HEAT&lt;br/&gt;Nábojů: 21&lt;br/&gt;Pro: T55</Czech>
+			<Hungarian>Kaliber: 100mm HEAT&lt;br/&gt; Töltények: 21&lt;br/&gt; Hozzá tartozó fegyver: T55</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_24RND_M120HE_NAME">
+			<English>24Rnd. M120 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_24RND_M120HE_DESC">
+			<English>Caliber: 120mm HE&lt;br/&gt;Rounds: 24&lt;br/&gt;Used in: M120</English>
+			<French>Calibre: 120mm HE&lt;br/&gt;Munitions : 24&lt;br/&gt;Utilisé avec: M120</French>
+			<Spanish>Calibre: 120mm HE&lt;br/&gt;Cartuchos: 24&lt;br/&gt;Usado en: M120</Spanish>
+			<Italian>Calibro: 120mm HE&lt;br/&gt;Munizioni: 24&lt;br/&gt;Usato in: M120</Italian>
+			<Polish>Kaliber: 120mm HE&lt;br/&gt;Naboje: 24&lt;br/&gt;Uzywany w: M120</Polish>
+			<Russian>Патрон: 120mm HE &lt;br/&gt;Количество: 24&lt;br/&gt;Исп. в: M120</Russian>
+			<German>Kaliber: 120mm HE&lt;br/&gt;Patronen: 24&lt;br/&gt;Verwendet in: M120</German>
+			<Czech>Kalibr: 120mm HE&lt;br/&gt;Nábojů: 24&lt;br/&gt;Pro: M120</Czech>
+			<Hungarian>Kaliber: 120mm HE&lt;br/&gt; Töltények: 24&lt;br/&gt; Hozzá tartozó fegyver: M120</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_8RND_M252HE_NAME">
+			<English>8Rnd. M252 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_M252HE_DESC">
+			<English>Caliber: 81mm HE&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M252</English>
+			<French>Calibre: 81mm HE&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: M252</French>
+			<Spanish>Calibre: 81mm HE&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: M252</Spanish>
+			<Italian>Calibro: 81mm HE&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: M252</Italian>
+			<Polish>Kaliber: 81mm HE&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: M252</Polish>
+			<Russian>Патрон: 81mm HE &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: M252</Russian>
+			<German>Kaliber: 81mm HE&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M252</German>
+			<Czech>Kalibr: 81mm HE&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: M252</Czech>
+			<Hungarian>Kaliber: 81mm HE&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: M252</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_M252WP_NAME">
+			<English>8Rnd. M252 WP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_M252WP_DESC">
+			<English>Caliber: 81mm WP&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M252</English>
+			<French>Calibre: 81mm WP&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: M252</French>
+			<Spanish>Calibre: 81mm WP&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: M252</Spanish>
+			<Italian>Calibro: 81mm WP&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: M252</Italian>
+			<Polish>Kaliber: 81mm WP&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: M252</Polish>
+			<Russian>Патрон: 81mm WP &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: M252</Russian>
+			<German>Kaliber: 81mm WP&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M252</German>
+			<Czech>Kalibr: 81mm WP&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: M252</Czech>
+			<Hungarian>Kaliber: 81mm WP&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: M252</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_M252ILLUM_NAME">
+			<English>8Rnd. M252 ILLUM mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_M252ILLUM_DESC">
+			<English>Caliber: 81mm ILLUM&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M252</English>
+			<French>Calibre: 81mm ILLUM&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: M252</French>
+			<Spanish>Calibre: 81mm ILLUM&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: M252</Spanish>
+			<Italian>Calibro: 81mm ILLUM&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: M252</Italian>
+			<Polish>Kaliber: 81mm ILLUM&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: M252</Polish>
+			<Russian>Патрон: 81mm ILLUM &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: M252</Russian>
+			<German>Kaliber: 81mm ILLUM&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M252</German>
+			<Czech>Kalibr: 81mm ILLUM&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: M252</Czech>
+			<Hungarian>Kaliber: 81mm ILLUM&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: M252</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_8RND_2B14HE_NAME">
+			<English>8Rnd. 2B14 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_2B14HE_DESC">
+			<English>Caliber: 82mm HE&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: 2B14</English>
+			<French>Calibre: 82mm HE&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: 2B14</French>
+			<Spanish>Calibre: 82mm HE&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: 2B14</Spanish>
+			<Italian>Calibro: 82mm HE&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: 2B14</Italian>
+			<Polish>Kaliber: 82mm HE&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: 2B14</Polish>
+			<Russian>Патрон: 82mm HE &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: 2B14</Russian>
+			<German>Kaliber: 82mm HE&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: 2B14</German>
+			<Czech>Kalibr: 82mm HE&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: 2B14</Czech>
+			<Hungarian>Kaliber: 82mm HE&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: 2B14</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_2B14WP_NAME">
+			<English>8Rnd. 2B14 WP mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_2B14WP_DESC">
+			<English>Caliber: 82mm WP&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: 2B14</English>
+			<French>Calibre: 82mm WP&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: 2B14</French>
+			<Spanish>Calibre: 82mm WP&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: 2B14</Spanish>
+			<Italian>Calibro: 82mm WP&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: 2B14</Italian>
+			<Polish>Kaliber: 82mm WP&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: 2B14</Polish>
+			<Russian>Патрон: 82mm WP &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: 2B14</Russian>
+			<German>Kaliber: 82mm WP&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: 2B14</German>
+			<Czech>Kalibr: 82mm WP&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: 2B14</Czech>
+			<Hungarian>Kaliber: 82mm WP&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: 2B14</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_8RND_2B14ILLUM_NAME">
+			<English>8Rnd. 2B14 ILLUM mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_8RND_2B14ILLUM_DESC">
+			<English>Caliber: 82mm ILLUM&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: 2B14</English>
+			<French>Calibre: 82mm ILLUM&lt;br/&gt;Munitions : 8&lt;br/&gt;Utilisé avec: 2B14</French>
+			<Spanish>Calibre: 82mm ILLUM&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: 2B14</Spanish>
+			<Italian>Calibro: 82mm ILLUM&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: 2B14</Italian>
+			<Polish>Kaliber: 82mm ILLUM&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: 2B14</Polish>
+			<Russian>Патрон: 82mm ILLUM &lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: 2B14</Russian>
+			<German>Kaliber: 82mm ILLUM&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: 2B14</German>
+			<Czech>Kalibr: 82mm ILLUM&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: 2B14</Czech>
+			<Hungarian>Kaliber: 82mm ILLUM&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: 2B14</Hungarian>
+		</Key>		
+		<Key ID="STR_DZ_MAG_200RND_FV510HE_NAME">
+			<English>200Rnd. FV510 HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_200RND_FV510HE_DESC">
+			<English>Caliber: 40mm HE&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: FV510</English>
+			<French>Calibre: 40mm HE&lt;br/&gt;Munitions : 200&lt;br/&gt;Utilisé avec: FV510</French>
+			<Spanish>Calibre: 40mm HE&lt;br/&gt;Cartuchos: 200&lt;br/&gt;Usado en: FV510</Spanish>
+			<Italian>Calibro: 40mm HE&lt;br/&gt;Munizioni: 200&lt;br/&gt;Usato in: FV510</Italian>
+			<Polish>Kaliber: 40mm HE&lt;br/&gt;Naboje: 200&lt;br/&gt;Uzywany w: FV510</Polish>
+			<Russian>Патрон: 40mm HE &lt;br/&gt;Количество: 200&lt;br/&gt;Исп. в: FV510</Russian>
+			<German>Kaliber: 40mm HE&lt;br/&gt;Patronen: 200&lt;br/&gt;Verwendet in: FV510</German>
+			<Czech>Kalibr: 40mm HE&lt;br/&gt;Nábojů: 200&lt;br/&gt;Pro: FV510</Czech>
+			<Hungarian>Kaliber: 40mm HE&lt;br/&gt; Töltények: 200&lt;br/&gt; Hozzá tartozó fegyver: FV510</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_200RND_FV510SABOT_NAME">
+			<English>200Rnd. FV510 SABOT mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_200RND_FV510SABOT_DESC">
+			<English>Caliber: 40mm SABOT&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: FV510</English>
+			<French>Calibre: 40mm SABOT&lt;br/&gt;Munitions : 200&lt;br/&gt;Utilisé avec: FV510</French>
+			<Spanish>Calibre: 40mm SABOT&lt;br/&gt;Cartuchos: 200&lt;br/&gt;Usado en: FV510</Spanish>
+			<Italian>Calibro: 40mm SABOT&lt;br/&gt;Munizioni: 200&lt;br/&gt;Usato in: FV510</Italian>
+			<Polish>Kaliber: 40mm SABOT&lt;br/&gt;Naboje: 200&lt;br/&gt;Uzywany w: FV510</Polish>
+			<Russian>Патрон: 40mm SABOT &lt;br/&gt;Количество: 200&lt;br/&gt;Исп. в: FV510</Russian>
+			<German>Kaliber: 40mm SABOT&lt;br/&gt;Patronen: 200&lt;br/&gt;Verwendet in: FV510</German>
+			<Czech>Kalibr: 40mm SABOT&lt;br/&gt;Nábojů: 200&lt;br/&gt;Pro: FV510</Czech>
+			<Hungarian>Kaliber: 40mm SABOT&lt;br/&gt; Töltények: 200&lt;br/&gt; Hozzá tartozó fegyver: FV510</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_210RND_ZPL_20_NAME">
+			<English>210Rnd. ZPL-20 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_210RND_ZPL_20_DESC">
+			<English>Caliber: 20mm&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: ZPL-20</English>
+			<French>Calibre: 20mm&lt;br/&gt;Munitions : 210&lt;br/&gt;Utilisé avec: ZPL-20</French>
+			<Spanish>Calibre: 20mm&lt;br/&gt;Cartuchos: 210&lt;br/&gt;Usado en: ZPL-20</Spanish>
+			<Italian>Calibro: 20mm&lt;br/&gt;Munizioni: 210&lt;br/&gt;Usato in: ZPL-20</Italian>
+			<Polish>Kaliber: 20mm&lt;br/&gt;Naboje: 210&lt;br/&gt;Uzywany w: ZPL-20</Polish>
+			<Russian>Патрон: 20mm &lt;br/&gt;Количество: 210&lt;br/&gt;Исп. в: ZPL-20</Russian>
+			<German>Kaliber: 20mm&lt;br/&gt;Patronen: 210&lt;br/&gt;Verwendet in: ZPL-20</German>
+			<Czech>Kalibr: 20mm&lt;br/&gt;Nábojů: 210&lt;br/&gt;Pro: ZPL-20</Czech>
+			<Hungarian>Kaliber: 20mm&lt;br/&gt; Töltények: 210&lt;br/&gt; Hozzá tartozó fegyver: ZPL-20</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_140RND_ATKMK44_NAME">
+			<English>140Rnd. HE ATK MK44 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_140RND_ATKMK44_DESC">
+			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 140&lt;br/&gt;Used in: ATK MK44</English>
+			<French>Calibre: 30mm HE&lt;br/&gt;Munitions : 140&lt;br/&gt;Utilisé avec: ATK MK44</French>
+			<Spanish>Calibre: 30mm HE&lt;br/&gt;Cartuchos: 140&lt;br/&gt;Usado en: ATK MK44</Spanish>
+			<Italian>Calibro: 30mm HE&lt;br/&gt;Munizioni: 140&lt;br/&gt;Usato in: ATK MK44</Italian>
+			<Polish>Kaliber: 30mm HE&lt;br/&gt;Naboje: 140&lt;br/&gt;Uzywany w: ATK MK44</Polish>
+			<Russian>Патрон: 30mm HE &lt;br/&gt;Количество: 140&lt;br/&gt;Исп. в: ATK MK44</Russian>
+			<German>Kaliber: 30mm HE&lt;br/&gt;Patronen: 140&lt;br/&gt;Verwendet in: ATK MK44</German>
+			<Czech>Kalibr: 30mm HE&lt;br/&gt;Nábojů: 140&lt;br/&gt;Pro: ATK MK44</Czech>
+			<Hungarian>Kaliber: 30mm HE&lt;br/&gt; Töltények: 140&lt;br/&gt; Hozzá tartozó fegyver: ATK MK44</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_60RND_ATKMK44_NAME">
+			<English>60Rnd. AP ATK MK44 mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_60RND_ATKMK44_DESC">
+			<English>Caliber: 30mm AP&lt;br/&gt;Rounds: 60&lt;br/&gt;Used in: ATK MK44</English>
+			<French>Calibre: 30mm AP&lt;br/&gt;Munitions : 60&lt;br/&gt;Utilisé avec: ATK MK44</French>
+			<Spanish>Calibre: 30mm AP&lt;br/&gt;Cartuchos: 60&lt;br/&gt;Usado en: ATK MK44</Spanish>
+			<Italian>Calibro: 30mm AP&lt;br/&gt;Munizioni: 60&lt;br/&gt;Usato in: ATK MK44</Italian>
+			<Polish>Kaliber: 30mm AP&lt;br/&gt;Naboje: 60&lt;br/&gt;Uzywany w: ATK MK44</Polish>
+			<Russian>Патрон: 30mm AP &lt;br/&gt;Количество: 60&lt;br/&gt;Исп. в: ATK MK44</Russian>
+			<German>Kaliber: 30mm AP&lt;br/&gt;Patronen: 60&lt;br/&gt;Verwendet in: ATK MK44</German>
+			<Czech>Kalibr: 30mm AP&lt;br/&gt;Nábojů: 60&lt;br/&gt;Pro: ATK MK44</Czech>
+			<Hungarian>Kaliber: 30mm AP&lt;br/&gt; Töltények: 60&lt;br/&gt; Hozzá tartozó fegyver: ATK MK44</Hungarian>
+		</Key>	
+		<Key ID="STR_DZ_MAG_1RND_PG15V_NAME">
+			<English>1Rnd. PG15V HE</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1RND_PG15V_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: 2A28 Grom</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 1&lt;br/&gt;Verwendet in: 2A28 Grom</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_40RND_PG15V_NAME">
+			<English>40Rnd. PG15V HE</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_40RND_PG15V_DESC">
+			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 2A28 Grom</English>
+			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: 2A28 Grom</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_1RND_AT3_NAME">
+			<English>1Rnd. AT-3 Sagger</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1RND_AT3_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: AT-3</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 1&lt;br/&gt;Verwendet in: AT-3</German>
+		</Key>		
+		<Key ID="STR_DZ_MAG_4RND_AT3_NAME">
+			<English>4Rnd. AT-3 Sagger</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_4RND_AT3_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT-3</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AT-3</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_400RND_M621_NAME">
+			<English>400Rnd. 20mm HE mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_400RND_M621_DESC">
+			<English>Caliber: 20mm HE&lt;br/&gt;Rounds: 400&lt;br/&gt;Used in: 20mm Cannon M621</English>
+			<French>Calibre: 20mm HE&lt;br/&gt;Munitions : 400&lt;br/&gt;Utilisé avec: 20mm Cannon M621</French>
+			<Spanish>Calibre: 20mm HE&lt;br/&gt;Cartuchos: 400&lt;br/&gt;Usado en: 20mm Cannon M621</Spanish>
+			<Italian>Calibro: 20mm HE&lt;br/&gt;Munizioni: 400&lt;br/&gt;Usato in: 20mm Cannon M621</Italian>
+			<Polish>Kaliber: 20mm HE&lt;br/&gt;Naboje: 400&lt;br/&gt;Uzywany w: 20mm Cannon M621</Polish>
+			<Russian>Патрон: 20mm HE &lt;br/&gt;Количество: 400&lt;br/&gt;Исп. в: 20mm Cannon M621</Russian>
+			<German>Kaliber: 20mm HE&lt;br/&gt;Patronen: 400&lt;br/&gt;Verwendet in: 20mm Kanone M621</German>
+			<Czech>Kalibr: 20mm HE&lt;br/&gt;Nábojů: 400&lt;br/&gt;Pro: 20mm Cannon M621</Czech>
+			<Hungarian>Kaliber: 20mm HE&lt;br/&gt; Töltények: 400&lt;br/&gt; Hozzá tartozó fegyver: 20mm Cannon M621</Hungarian>
+		</Key>
+		<Key ID="STR_DZ_MAG_1200RND_M789_NAME">
+			<English>1200Rnd. 30x113mm mag.</English>
+		</Key> 	  
+		<Key ID="STR_DZ_MAG_1200RND_M789_DESC">
+			<English>Caliber: 30x113mm&lt;br/&gt;Rounds: 1200&lt;br/&gt;Used in: AH-64</English>
+			<French>Calibre: 30x113mm&lt;br/&gt;Munitions : 1200&lt;br/&gt;Utilisé avec: AH-64</French>
+			<Spanish>Calibre: 30x113mm&lt;br/&gt;Cartuchos: 1200&lt;br/&gt;Usado en: AH-64</Spanish>
+			<Italian>Calibro: 30x113mm&lt;br/&gt;Munizioni: 1200&lt;br/&gt;Usato in: AH-64</Italian>
+			<Polish>Kaliber: 30x113mm&lt;br/&gt;Naboje: 1200&lt;br/&gt;Uzywany w: AH-64</Polish>
+			<Russian>Патрон: 30x113mm &lt;br/&gt;Количество: 1200&lt;br/&gt;Исп. в: AH-64</Russian>
+			<German>Kaliber: 30x113mm&lt;br/&gt;Patronen: 1200&lt;br/&gt;Verwendet in: AH-64</German>
+			<Czech>Kalibr: 30x113mm&lt;br/&gt;Nábojů: 1200&lt;br/&gt;Pro: AH-64</Czech>
+			<Hungarian>Kaliber: 30x113mm&lt;br/&gt; Töltények: 1200&lt;br/&gt; Hozzá tartozó fegyver: AH-64</Hungarian>
 		</Key>
 		
 		<!-- **** ATTACHMENTS **** -->
