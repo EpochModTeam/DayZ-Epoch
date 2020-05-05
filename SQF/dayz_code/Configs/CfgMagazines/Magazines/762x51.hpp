@@ -95,12 +95,6 @@ class 100Rnd_762x51_M240: CA_Magazine
 	};
 };
 
-class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 {
-	displayName = "200Rnd. M240";
-	count = 200;
-	descriptionShort = $STR_DZ_MAG_200RND_M240_DESC;
-};
-
 class 20Rnd_762x51_B_SCAR : CA_Magazine
 {
 	model = "\z\addons\dayz_epoch_w\magazine\dze_mk17_mag.p3d";
