@@ -22,6 +22,7 @@ class BTR60_TK_EP1_DZ: BTR60_TK_EP1 {
 	transportmaxbackpacks = 6;
 	enableGPS = 0;
 	supplyRadius = 1.8;
+	crewVulnerable = 1;
 
 	class Turrets: Turrets
 	{

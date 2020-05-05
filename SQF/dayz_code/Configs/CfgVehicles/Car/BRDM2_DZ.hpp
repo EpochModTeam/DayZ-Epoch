@@ -23,6 +23,7 @@ class BRDM2_HQ_TK_GUE_EP1_DZ: BRDM2_HQ_TK_GUE_EP1 {
 	fuelCapacity = 220;
 	enableGPS = 0;
 	supplyRadius = 1.4;
+	crewVulnerable = 1;
 
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
@@ -74,6 +75,7 @@ class BRDM2_TK_EP1_DZ: BRDM2_TK_EP1 {
 	fuelCapacity = 220;	
 	enableGPS = 0;
 	supplyRadius = 1.4;
+	crewVulnerable = 1;
 	
 	class Turrets: Turrets
 	{

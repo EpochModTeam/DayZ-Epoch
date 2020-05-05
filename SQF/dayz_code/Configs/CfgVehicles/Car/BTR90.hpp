@@ -17,6 +17,7 @@ class BTR90_DZ: BTR90 {
 	transportMaxWeapons = 20;
 	transportmaxbackpacks = 6;
 	supplyRadius = 1.8;
+	crewVulnerable = 1;
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
@@ -43,6 +44,7 @@ class BTR90_HQ_DZ: BTR90_HQ {
 	transportMaxWeapons = 20;
 	transportmaxbackpacks = 6;
 	supplyRadius = 1.8;
+	crewVulnerable = 1;
 
 	class Turrets; // External class reference
 	class MainTurret; // External class reference

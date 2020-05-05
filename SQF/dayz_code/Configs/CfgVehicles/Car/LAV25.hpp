@@ -19,6 +19,7 @@ class LAV25_DZ: LAV25 {
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
 	supplyRadius = 1.8;
+	crewVulnerable = 1;
 };
 class LAV25_HQ;
 class LAV25_HQ_DZ: LAV25_HQ {
@@ -41,6 +42,7 @@ class LAV25_HQ_DZ: LAV25_HQ {
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
 	supplyRadius = 1.8;
+	crewVulnerable = 1;
 };
 
 // Ammo Less

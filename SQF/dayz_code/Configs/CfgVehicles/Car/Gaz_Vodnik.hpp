@@ -16,6 +16,7 @@ class GAZ_Vodnik_HMG_DZ : GAZ_Vodnik_HMG {
     transportmaxbackpacks = 4;
 	enableGPS = 0;
 	supplyRadius = 1.8;
+	crewVulnerable = 1;
 };
 
 class GAZ_Vodnik_HMG_DZE : GAZ_Vodnik_HMG_DZ {
@@ -99,6 +100,7 @@ class GAZ_Vodnik_DZ : GAZ_Vodnik {
     transportmaxbackpacks = 4;	
 	enableGPS = 0;
 	supplyRadius = 1.8;
+	crewVulnerable = 1;
 };
 
 class GAZ_Vodnik_DZE : GAZ_Vodnik_DZ
@@ -184,6 +186,7 @@ class GAZ_Vodnik_DZE : GAZ_Vodnik_DZ
 
 class GAZ_Vodnik_MedEvac;
 class GAZ_Vodnik_MedEvac_DZE : GAZ_Vodnik_MedEvac {
+	crewVulnerable = 1;
 	displayname = "$STR_DN_GAZ_VODNIK_MEDEVAC";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
