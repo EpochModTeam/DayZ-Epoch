@@ -25387,6 +25387,9 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>	
+		</Key>
+		<Key ID="str_player_fail_wear4">
+			<English>You cannot change clothes when you are being targeted by NPCs</English>
+		</Key>
 	</Package>
 </Project>
