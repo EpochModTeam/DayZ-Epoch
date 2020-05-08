@@ -71,6 +71,7 @@
 [FIXED] Loading screen progress bar did not work since the last Arma 2 1.64 patch. (21e5cfae) @IsGoose
 [FIXED] Players were unable to open a few tank versions with their key. (9cc8b5d8) @AirwavesMan
 [FIXED] The epoch versions of the RHIB boats were incorrect. (38a31290) @AirwavesMan
+[FIXED] Players are no longer able to exploit the player_wearClothes function to reset AI targeting. (5c29704) @morgoth0, @Arrakis, @worldwidesorrow.
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
