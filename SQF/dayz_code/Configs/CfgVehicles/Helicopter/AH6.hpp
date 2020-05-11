@@ -39,6 +39,7 @@ class AH6X_EP1;
 class AH6X_DZ: AH6X_EP1 {
 	displayname = $STR_VEH_NAME_AH6X;
 	vehicleClass = "DayZ Epoch Vehicles";
+	model = "dayz_vehicles\helicopters\greybird\greybird.p3d";
 	scope = public;
 	crew = "";
 	typicalCargo[] = {};
