@@ -678,14 +678,16 @@ class FSM
                          "			//Magazines" \n
                          "			_countr = 0;" \n
                          "			{" \n
-                         "				if (_x == ""BoltSteel"") then { _x = ""1Rnd_Arrow_Wood"" }; // Convert BoltSteel to WoodenArrow" \n
-                         "				if (dayz_classicBloodBagSystem) then {" \n
-                         "					if (_x in dayz_typedBags) then {_x = ""ItemBloodbag""};" \n
-                         "				} else {" \n
-                         "					if (_x == ""ItemBloodbag"") then { _x = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
+						 "				if (_x != ""CSGAS"") then {" \n
+                         "					if (_x == ""BoltSteel"") then { _x = ""1Rnd_Arrow_Wood"" }; // Convert BoltSteel to WoodenArrow" \n
+                         "					if (dayz_classicBloodBagSystem) then {" \n
+                         "						if (_x in dayz_typedBags) then {_x = ""ItemBloodbag""};" \n
+                         "					} else {" \n
+                         "						if (_x == ""ItemBloodbag"") then { _x = ""bloodBagONEG"" }; // Convert ItemBloodbag into universal blood type/rh bag" \n
+                         "					};" \n
+                         "					dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
                          "				};" \n
-                         "				dayz_myBackpack addMagazineCargoGlobal [_x,(_backpackMagQty select _countr)];" \n
-                         "				_countr = _countr + 1;" \n
+						 "			_countr = _countr + 1;" \n
                          "			} forEach _backpackMagTypes;" \n
                          "			" \n
                          "			dayz_myBackpackMags =	getMagazineCargo dayz_myBackpack;" \n
