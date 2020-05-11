@@ -18,7 +18,7 @@ class ItemSledgeHead : CA_Magazine
 	model = "\z\addons\dayz_epoch\models\sledge_head.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_sledge_head_ca.paa";
 	descriptionShort = $STR_EPOCH_SLEDGEHAMMERHEAD_DESC;
-	weight = 9;
+
 	class ItemActions
 	{
 		class Crafting
@@ -43,7 +43,7 @@ class ItemSledgeHandle : CA_Magazine
 	model = "\z\addons\dayz_epoch\models\sledge_handle.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_sledge_handle_ca.paa";
 	descriptionShort = $STR_EPOCH_SLEDGEHAMMERHANDLE_DESC;
-	weight = 1;
+
 	class ItemActions
 	{
 		class Crafting
@@ -59,7 +59,8 @@ class ItemSledgeHandle : CA_Magazine
 	};
 };
 
-class equip_Crossbow_Kit : CA_Magazine {
+class equip_Crossbow_Kit : CA_Magazine 
+{
 	scope = public;
 	count = 1;
 	displayName = $STR_ITEM_NAME_CROSSBOW_KIT;
@@ -67,14 +68,43 @@ class equip_Crossbow_Kit : CA_Magazine {
 	model = "\z\addons\community_crossbow\models\Crossbow_kit.p3d";
 	picture = "\z\addons\community_crossbow\textures\Crossbow_kit.paa";
 	type = 256;
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_CRAFTING_CROSSBOW;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {};
+			outputweapons[] = {"Crossbow_DZ"};
+			input[] = {{"equip_Crossbow_Kit",1},{"equip_crossbow_stock",1}};
+		};
+	};	
 };
 
-class equip_crossbow_stock : CA_Magazine {
+class equip_crossbow_stock : CA_Magazine 
+{
 	scope = public;
 	count = 1;
-	displayName = "Crossbow (Stock)";
-	descriptionShort="You require a Crossbow String kit to craft this weapon";
+	displayName = $STR_ITEM_NAME_CROSSBOW_STOCK;
+	descriptionShort = $STR_ITEM_DESC_CROSSBOW_STOCK;
 	model = "z\addons\community_crossbow\models\crossbow_stock.p3d";
 	picture = "\z\addons\community_crossbow\icons\crossbow_stock.paa";
 	type = 256;
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_CRAFTING_CROSSBOW;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {};
+			outputweapons[] = {"Crossbow_DZ"};
+			input[] = {{"equip_Crossbow_Kit",1},{"equip_crossbow_stock",1}};
+		};
+	};	
 };

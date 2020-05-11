@@ -15,6 +15,32 @@ class MeleeBaseBallBat : MeleeWeapon
 	{
 		libTextDesc = $STR_EQUIP_DESC_BASEBALLBAT;
 	};
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_CRAFTING_NAILEDBASEBALLBAT;
+			script = ";['Crafting','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {};
+			outputweapons[] = {"MeleeBaseBallBatNails"};
+			input[] = {{"equip_nails",1}};
+			inputweapons[] = {"MeleeBaseBallBat"};
+		};
+		class Crafting1
+		{
+			text = $STR_CRAFTING_BASEBALLBATBARBED;
+			script = ";['Crafting1','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {};
+			outputweapons[] = {"MeleeBaseBallBatBarbed"};
+			input[] = {{"equip_nails",1},{"ItemWire",1}};
+			inputweapons[] = {"MeleeBaseBallBat"};
+		};		
+	};	
 };
 
 class MeleeBaseBallBatBarbed : MeleeWeapon

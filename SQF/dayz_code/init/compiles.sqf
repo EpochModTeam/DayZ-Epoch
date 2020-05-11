@@ -157,11 +157,11 @@ if (!isDedicated) then {
 	player_spawn_2 = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\player_spawn_2.sqf";
 
 	//Crafting
-	fn_updateCraftUI = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_updateCraftUI.sqf";
 	player_craftItem = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItem.sqf";
-	player_craftItemVanilla = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItemVanilla.sqf";
-	player_craftItemGUI = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItemGUI.sqf";
-	player_checkRecipe = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_checkRecipe.sqf";
+	//fn_updateCraftUI = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_updateCraftUI.sqf";
+	//player_craftItemVanilla = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItemVanilla.sqf";
+	//player_craftItemGUI = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_craftItemGUI.sqf";
+	//player_checkRecipe = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_checkRecipe.sqf";
 
 	// EPOCH ADDITIONS
 	dayz_autoRunOff = {dayz_autoRun = false; terminate dayz_autoRunThread; if (speed player > 0) then {player playActionNow "Stop"};};
@@ -515,9 +515,9 @@ if (!isDedicated) then {
 
 	dz_fn_meleeMagazines = {
 		if (_this) then {
-			{ player addMagazine _x } count MeleeMagazines;
+			{ player addMagazine _x } foreach MeleeMagazines;
 		} else {
-			{ player removeMagazines _x } count MeleeMagazines;
+			{ player removeMagazines _x } foreach MeleeMagazines;
 		};
 	};
 

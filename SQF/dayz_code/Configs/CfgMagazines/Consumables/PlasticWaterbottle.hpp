@@ -93,7 +93,25 @@ class ItemPlasticWaterBottleBoiled : ItemWaterBottle
 	infectionChance = 0;
 	consumeOutput = "ItemPlasticWaterbottleUnfilled";	
 	containerEmpty = "ItemPlasticWaterbottleUnfilled";
- };
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_CRAFTING_HERBALDRINK;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemPlasticWaterBottleHerbal",1}};
+			input[] = {{"equip_herb_box",1},{"ItemPlasticWaterBottleBoiled",1}};
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
+};
 
 class ItemPlasticWaterBottleHerbal : ItemWaterBottle
 {

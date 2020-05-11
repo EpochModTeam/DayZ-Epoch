@@ -3,7 +3,6 @@ class ItemFertilizer: CA_Magazine {
 	count = 1;
 	displayName = $STR_CRAFT_NAME_FERTILIZER;
 	descriptionShort = $STR_CRAFT_DESC_FERTILIZER;
-	weight = 0.1;
 	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_fertilizer_ca.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_fertilizer.p3d";
 	type = 256;
@@ -14,7 +13,6 @@ class ItemPumpkinSeed: CA_Magazine {
 	count = 1;
 	displayName = $STR_CRAFT_NAME_PUMPKIN_SEED;
 	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_SEED;
-	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
 	type = 256;
@@ -36,7 +34,6 @@ class ItemPumpkinPlant: CA_Magazine {
 	count = 1;
 	displayName = $STR_CRAFT_NAME_PUMPKIN_PLANT;
 	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_PLANT;
-	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
 	type = 256;
@@ -56,7 +53,6 @@ class ItemHempSeed: CA_Magazine {
 	count = 1;
 	displayName = $STR_CRAFT_NAME_HEMP_SEED;
 	descriptionShort = $STR_CRAFT_DESC_HEMP_SEED;
-	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";
 	type = 256;
@@ -78,7 +74,6 @@ class ItemHempPlant: CA_Magazine {
 	count = 1;
 	displayName = $STR_CRAFT_NAME_HEMP_PLANT;
 	descriptionShort = $STR_CRAFT_DESC_HEMP_PLANT;
-	weight = 0.1;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";
 	type = 256;
@@ -99,7 +94,6 @@ class ItemKiloHemp : CA_Magazine
 	count = 1;
 	displayName = $STR_EPOCH_KILOOFHEMP;
 	descriptionShort = $STR_EPOCH_KILOOFHEMP_DESC;
-	weight = 1;
 	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
 	type = 256;
@@ -132,7 +126,6 @@ class ItemKiloTobacco : CA_Magazine
 	count = 1;
 	displayName = $STR_EPOCH_KILOTOBACCO;
 	descriptionShort = $STR_EPOCH_KILOTOBACCO_DESC;
-	weight = 1;
 	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
 	type = 256;

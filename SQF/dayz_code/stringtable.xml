@@ -4219,14 +4219,6 @@
 			<Russian>Картонная коробка</Russian>
 			<German>Kartonschachtel</German>
 		</Key>
-		<Key ID="STR_WPN_NAME_4">
-			<English>Compound Crossbow</English>
-			<German>Kompositarmbrust</German>
-			<Russian>Составной арбалет</Russian>
-			<Spanish>Ballesta Compuesta</Spanish>
-			<French>Arbalète composite</French>
-			<Czech>Kuše</Czech>
-		</Key>
 		<Key ID="STR_WPN_DESC_4">
 			<English>The compound crossbow is, once the aim is mastered, a powerful short-range single-shot weapon with a long reload time.</English>
 			<German>Die Kompositarmbrust ist, wenn man das Zielen beherrscht, eine starke und lautlose Waffe - allerdings mit kurzer Reichweite und langer Nachladezeit.</German>
@@ -25368,7 +25360,55 @@
 			<English>Green Borders</English>
 			<German>Grüne Umrandung</German>
 		</Key>
-		
+		<Key ID="str_player_fail_wear4">
+			<English>You cannot change clothes when you are being targeted by NPCs!</English>
+			<German>Du kannst deine Kleidung nicht wechseln, wenn du dich in einem Gefecht mit NPCs befindest!</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_CROSSBOW_STOCK">
+			<English>Crossbow Stock</English>
+			<German>Armbrustschaft</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_CROSSBOW_STOCK">
+			<English>You require a Crossbow String kit to craft this weapon.</English>
+			<German>Zum Herstellen einer Armbrust wird ein Armbrust-Selbstbau-Kit benötigt.</German>
+		</Key>			
+		<Key ID="STR_CRAFTING_CROSSBOW">
+			<English>Craft Crossbow</English>
+			<German>Armbrust herstellen</German>
+		</Key>			
+		<Key ID="STR_CRAFTING_NAILEDBASEBALLBAT">
+			<English>Craft Nailed Baseball Bat</English>
+			<German>Nagelkeule herstellen</German>
+		</Key>		
+		<Key ID="STR_CRAFTING_BASEBALLBATBARBED">
+			<English>Craft Baseball Bat Barbed</English>
+			<German>Stacheldrahtkeule herstellen</German>
+		</Key>
+		<Key ID="STR_CRAFTING_HERBALDRINK">
+			<English>Mix Herbal Drink</English>
+			<German>Kräutertrunk mixen</German>
+		</Key>	
+		<Key ID="STR_CRAFTING_SEPSISBANDAGE">
+			<English>Craft Sepsis Bandage</English>
+			<German>Sepsisbandage herstellen</German>
+		</Key>	
+		<Key ID="STR_CRAFTING_PACKAGEGAUZE">
+			<English>Unpack Gauze Packaged</English>
+			<German>Mullbindenpackung entpacken</German>
+		</Key>
+		<Key ID="STR_CRAFTING_SPLINT">
+			<English>Craft Wooden Splint</English>
+			<German>Holzschiene herstellen</German>
+		</Key>		
+		<Key ID="STR_CRAFTING_NAILS">
+			<English>Craft Nails</English>
+			<German>Nägel herstellen</German>
+		</Key>			
+		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
+			<English>Needed items:</English>
+			<German>Benötigte Gegenstände:</German>
+		</Key>		
+	
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
@@ -25387,9 +25427,6 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>
-		<Key ID="str_player_fail_wear4">
-			<English>You cannot change clothes when you are being targeted by NPCs</English>
-		</Key>
+		</Key>	
 	</Package>
 </Project>

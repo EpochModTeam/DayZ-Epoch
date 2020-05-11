@@ -58,6 +58,15 @@ class ItemPlank : CA_Magazine
 			output[] = {{"PartWoodPile",2}};
 			input[] = {{"ItemPlank",1}};
 		};
+		class Crafting1
+		{
+			text = $STR_CRAFTING_SPLINT;
+			Script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemKnife"};
+			output[] = {{"equip_woodensplint",1}};
+			input[] = {{"ItemPlank",1},{"equip_duct_tape",1},{"equip_string",1}};
+		};			
 	};
 };
 
@@ -82,7 +91,7 @@ class PartWoodPile : CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_242;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"sawmill"};
+			neednearby[] = {};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"PartWoodLumber",1}};
 			input[] = {{"PartWoodPile",2}};
@@ -107,6 +116,15 @@ class PartWoodPile : CA_Magazine
 			input[] = {{"PartWoodPile",6}};
 
 		};
+		class Crafting3
+		{
+			text = $STR_CRAFTING_SPLINT;
+			Script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemKnife"};
+			output[] = {{"equip_woodensplint",1}};
+			input[] = {{"PartWoodPile",1},{"equip_duct_tape",1},{"equip_string",1}};
+		};		
 	};
 };
 
@@ -126,7 +144,7 @@ class PartPlankPack: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_251;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"sawmill"};
+			neednearby[] = {};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"PartWoodLumber",3}};
 			input[] = {{"PartPlankPack",1}};
@@ -150,7 +168,7 @@ class PartPlywoodPack: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_251;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"sawmill"};
+			neednearby[] = {};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"PartWoodPlywood",3}};
 			input[] = {{"PartPlywoodPack",1}};
@@ -173,7 +191,7 @@ class PartWoodLumber: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_254;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"sawmill"};
+			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"PartWoodPlywood",1}};
 			input[] = {{"PartWoodLumber",2}};
@@ -196,7 +214,7 @@ class PartWoodLumber: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"deer_stand_kit",1}};
-			input[] = {{"PartWoodLumber",8},{"PartWoodPile",2}};
+			input[] = {{"PartWoodLumber",8},{"PartWoodPile",2},{"equip_nails",2}};
 
 		};
 		class Crafting3
@@ -206,7 +224,7 @@ class PartWoodLumber: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"ItemWoodStairs",1}};
-			input[] = {{"PartWoodLumber",8}};
+			input[] = {{"PartWoodLumber",8},{"equip_nails",2}};
 
 		};
 		class Crafting4
@@ -216,14 +234,14 @@ class PartWoodLumber: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"ItemWoodLadder",1}};
-			input[] = {{"PartWoodLumber",8}};
+			input[] = {{"PartWoodLumber",8},{"equip_nails",2}};
 
 		};
 		class Crafting5
 		{
 			text = $STR_EPOCH_PLAYER_259;
 			Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"sawmill"};
+			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"PartPlankPack",1}};
 			input[] = {{"PartWoodLumber",3}};
@@ -235,16 +253,16 @@ class PartWoodLumber: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"ItemGunRackKit",1}};
-			input[] = {{"PartWoodLumber",6}};
+			input[] = {{"PartWoodPlywood",1},{"PartWoodLumber",4},{"equip_nails",1}};
 		};
 		class Crafting7
 		{
-			text = $STR_EPOCH_PLAYER_304;
+			text = $STR_CRAFTING_SPLINT;
 			Script = ";['Crafting7','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {"ItemToolbox"};
-			output[] = {{"ItemWoodCrateKit",1}};
-			input[] = {{"PartWoodLumber",6}};
+			requiretools[] = {"ItemKnife"};
+			output[] = {{"equip_woodensplint",1}};
+			input[] = {{"PartWoodLumber",1},{"equip_duct_tape",1},{"equip_string",1}};
 		};
 	};
 };
@@ -276,7 +294,7 @@ class PartWoodPlywood: CA_Magazine
 			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"wood_shack_kit",1}};
-			input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",4}};
+			input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",4},{"equip_nails",2}};
 		};
 		class Crafting2
 		{
@@ -300,11 +318,20 @@ class PartWoodPlywood: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_264;
 			Script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"sawmill"};
+			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"PartPlywoodPack",1}};
 			input[] = {{"PartWoodPlywood",3}};
 		};
+		class Crafting5
+		{
+			text = $STR_EPOCH_PLAYER_304;
+			Script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodCrateKit",1}};
+			input[] = {{"PartWoodPlywood",4},{"PartWoodLumber",2},{"equip_nails",1}};
+		};		
 	};
 };
 

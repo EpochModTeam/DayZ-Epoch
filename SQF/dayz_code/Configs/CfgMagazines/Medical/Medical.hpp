@@ -41,6 +41,16 @@ class ItemBandage : CA_Magazine
 			text = $STR_BANDAGE_SELF;
 			script = "spawn player_useMeds;";
 		};
+		class Crafting
+		{
+			text = $STR_CRAFTING_SEPSISBANDAGE;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemSepsisBandage",1}};
+			outputweapons[] = {};
+			input[] = {{"ItemBandage",1},{"equip_comfreyleafs",1}};
+		};		
 	};
 };
 
@@ -127,6 +137,7 @@ class equip_woodensplint : CA_Magazine {
 	model = "\z\addons\dayz_communityassets\models\woodensplint.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_woodensplint_ca.paa";
 	type = 256;
+	
 	class ItemActions {
 		class Use {
 			text = $STR_ACTIONS_BRACE_LEG;
@@ -143,6 +154,20 @@ class equip_gauze : CA_Magazine {
 	model = "\z\addons\dayz_communityassets\models\gauze.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_gauze_ca.paa";
 	type = 256;
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_269;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemKnife"};
+			output[] = {{"ItemBandage",2}};
+			outputweapons[] = {};
+			input[] = {{"equip_gauze",2},{"equip_rag",1},{"equip_string",1}};
+		};
+	};	
 };
 
 class equip_gauzepackaged : CA_Magazine {
@@ -153,6 +178,20 @@ class equip_gauzepackaged : CA_Magazine {
 	model = "\z\addons\dayz_communityassets\models\gauze_package.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_gauze_package_ca.paa";
 	type = 256;
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_CRAFTING_PACKAGEGAUZE;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"equip_gauze",3}};
+			outputweapons[] = {};
+			input[] = {{"equip_gauzepackaged",1}};
+		};
+	};	
 };
 
 class equip_herb_box : CA_Magazine {
@@ -161,5 +200,5 @@ class equip_herb_box : CA_Magazine {
 	displayName = $STR_EQUIP_NAME_HERBBOX;
 	descriptionShort = $STR_EQUIP_DESC_HERBBOX;
 	model = "\z\addons\dayz_communityassets\models\herb_box.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_herb_box_ca.paa";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_herb_box_ca.paa";	
 };

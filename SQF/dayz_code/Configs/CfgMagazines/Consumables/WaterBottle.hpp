@@ -46,6 +46,24 @@ class ItemWaterBottleBoiled : ItemWaterBottle
 	descriptionShort = $STR_ITEMWATERBOTTLEBOILED_CODE_DESC;
 	
 	infectionChance = 0;
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_CRAFTING_HERBALDRINK;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemWaterBottleHerbal",1}};
+			input[] = {{"equip_herb_box",1},{"ItemWaterBottleBoiled",1}};
+		};
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
  };
 
 class ItemWaterBottleHerbal : ItemWaterBottle

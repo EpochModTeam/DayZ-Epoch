@@ -297,11 +297,7 @@ class CfgWeapons
 	#include "Melee\Machete.hpp"
 	#include "Melee\BaseballBat.hpp"
 	#include "Melee\FishingPole.hpp"
-	#include "Melee\MeleeSledgehammer.hpp"
-	
-	
-	
-	
+	#include "Melee\MeleeSledgehammer.hpp"	
 	
 	/* TOOLS */
 	
@@ -340,54 +336,4 @@ class CfgWeapons
 	
 	#include "Item\ItemKeys.hpp"
 	#include "Item\Documents.hpp"
-	
-	
-	
-	
-	/* OTHER */
-	
-	/*class ItemFlashlightEmpty : ItemCore
-	{
-		scope = public;
-		displayName = $STR_EQUIP_NAME_5;
-		model = "\dayz_equip\models\flashlight.p3d";
-		picture = "\dayz_equip\textures\equip_flashlight_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_5;
-	};
-	
-	class ItemSodaEmpty : HandGrenade
-	{
-		scope = public;
-		displayName = $STR_EQUIP_NAME_35;
-		model = "\dayz_equip\models\soda_coke_e.p3d";
-		picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_35;
-		ammo = "SodaCan";
-		class ItemActions
-		{
-			class Drink
-			{
-				text = $STR_ACTIONS_DRINK2;
-				script = ";[_id] spawn player_fillWater;";
-			};
-		};
-	};
-	
-	class TrashTinCan : HandGrenade
-	{
-		scope = public;
-		displayName = $STR_EQUIP_NAME_33;
-		model = "\dayz_equip\models\trash_tincan.p3d";
-		picture = "\dayz_equip\textures\equip_tincan_ca.paa";
-		descriptionShort = $STR_EQUIP_DESC_33;
-		ammo = "TinCan";
-		class ItemActions
-		{
-			class Drink
-			{
-				text = $STR_ACTIONS_DRINK2;
-				script = ";[_id] spawn player_fillWater;";
-			};
-		};
-	};*/
 };

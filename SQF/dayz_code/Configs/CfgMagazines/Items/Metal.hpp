@@ -17,6 +17,14 @@ class PartGeneric : CA_Magazine
 			output[] = {{"ItemPole",1}};
 			input[] = {{"PartGeneric",2}};
 		};
+		class Crafting1 {
+			text = $STR_CRAFTING_NAILS;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"fire"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"equip_nails",4}};
+			input[] = {{"PartGeneric",2}};
+		};		
 	};
 };
 

@@ -1,6 +1,3 @@
-// If a string was passed redirect to vanilla player_craftItem (Epoch items always pass an array)
-if (typeName _this == "STRING") exitWith {_this spawn player_craftItemVanilla;};
-
 /*
 	DayZ Epoch Crafting 0.3
 	Made for DayZ Epoch && Unleashed by [VB]AWOL please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
@@ -26,16 +23,13 @@ class ItemActions
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_finished","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx","_configParent","_pPos"];
+private ["_tradeComplete","_onLadder","_canDo","_selectedRecipeOutput","_boiled","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_itemOut","_countOut","_finished","_removed","_tobe_removed_total","_textCreate","_textMissing","_selectedRecipeInput","_selectedRecipeInputStrict","_num_removed","_removed_total","_temp_removed_array","_abort","_waterLevel","_waterLevel_lowest","_reason","_isNear","_selectedRecipeTools","_distance","_crafting","_needNear","_item","_baseClass","_num_removed_weapons","_outputWeapons","_inputWeapons","_randomOutput","_craft_doLoop","_selectedWeapon","_selectedMag","_sfx","_configParent","_pPos","_text"];
 
 // This is used to find correct recipe based what itemaction was click allows multiple recipes per item.
 _crafting = _this select 0;
-
 // This tells the script what type of item we are clicking on
 _baseClass = _this select 1;
-
 _item =  _this select 2;
-
 _abort = false;
 _distance = 3;
 _reason = "";
@@ -43,7 +37,7 @@ _waterLevel = 0;
 _outputWeapons = [];
 _selectedRecipeOutput = [];
 _onLadder =	(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
-_canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
+_canDo = (!r_player_unconscious && {!r_drag_sqf} && {!_onLadder});
 _boiled = false;
 
 // Need Near Requirements
@@ -68,13 +62,11 @@ if (_abort) exitWith {
 	dayz_actionInProgress = false;
 };
 
-// diag_log format["Checking for fire: %1", _isFireNear];
-
 if (_canDo) then {
 	_selectedRecipeTools = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "requiretools");
 	_selectedRecipeOutput = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "output");
 	_selectedRecipeInput = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "input");
-	_selectedRecipeInputStrict = ((isNumber (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputstrict")) && (getNumber (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputstrict") > 0));
+	_selectedRecipeInputStrict = ((isNumber (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputstrict")) && {getNumber (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputstrict") > 0});
 	_outputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "outputweapons");
 	_inputWeapons = getArray (configFile >> _baseClass >> _item >> "ItemActions" >> _crafting >> "inputweapons");
 
@@ -102,9 +94,27 @@ if (_canDo) then {
 					_itemIn = _x select 0;
 					_countIn = _x select 1;
 
-					_qty = { (_x == _itemIn) || (!_selectedRecipeInputStrict && configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)} count magazines player;
-					if (_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
-				} forEach _selectedRecipeInput;
+					_qty = { (_x == _itemIn) || (!_selectedRecipeInputStrict && {configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn})} count magazines player;
+					if (_qty < _countIn) exitWith {
+						_missing = _itemIn;
+						_missingQty = (_countIn - _qty);
+						_proceed = false;
+					};
+				} count _selectedRecipeInput;
+			};
+
+			if (count _inputWeapons > 0 && {_proceed}) then {
+				{
+					_itemIn = _x;
+					_countIn = 1;
+					_qty = { (_x == _itemIn) || (!_selectedRecipeInputStrict && {configName(inheritsFrom(configFile >> "cfgWeapons" >> _x)) == _itemIn})} count weapons player;
+
+					if (_qty < _countIn) exitWith {
+						_missing = _itemIn;
+						_missingQty = (_countIn - _qty);
+						_proceed = false;
+					};
+				} count _inputWeapons;
 			};
 
 			// If all parts proceed
@@ -131,7 +141,7 @@ if (_canDo) then {
 						// Preselect the item
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
-							if ((_x == _itemIn) || (!_selectedRecipeInputStrict && _configParent == _itemIn)) then {
+							if ((_x == _itemIn) || (!_selectedRecipeInputStrict && {_configParent == _itemIn})) then {
 								// Get lowest waterlevel
 								if ((_x == "ItemWaterbottle") || (_configParent == "ItemWaterbottle")) then {
 									_waterLevel = getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz");
@@ -140,15 +150,14 @@ if (_canDo) then {
 									};
 								};
 							};
-						} forEach (magazines player);
+						} count (magazines player);
 
 						{
 							_configParent = configName(inheritsFrom(configFile >> "cfgMagazines" >> _x));
-							if ((_removed < _countIn) && ((_x == _itemIn) || (!_selectedRecipeInputStrict && _configParent == _itemIn))) then {
-								if ((_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && (getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest))) then {
+							if ((_removed < _countIn) && {(_x == _itemIn) || (!_selectedRecipeInputStrict && {_configParent == _itemIn})}) then {
+								if ((_waterLevel_lowest == 0) || ((_waterLevel_lowest > 0) && {getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz") == _waterLevel_lowest})) then {
 									_num_removed = ([player,_x] call BIS_fnc_invRemove);
-								}
-								else {
+								} else {
 									_num_removed = 0;
 								};
 								_removed = _removed + _num_removed;
@@ -164,9 +173,8 @@ if (_canDo) then {
 									_temp_removed_array set [count _temp_removed_array,_x];
 								};
 							};
-						} forEach (magazines player);
-
-					} forEach _selectedRecipeInput;
+						} foreach (magazines player);
+					} count _selectedRecipeInput;
 
 					//diag_log format["removed: %1 of: %2", _removed, _tobe_removed_total];
 
@@ -175,27 +183,33 @@ if (_canDo) then {
 						_num_removed_weapons = 0;
 						{
 							_num_removed_weapons = _num_removed_weapons + ([player,_x] call BIS_fnc_invRemove);
-						} forEach _inputWeapons;
+						} count _inputWeapons;
 						if (_num_removed_weapons == (count _inputWeapons)) then {
 							if (_randomOutput == 1) then {
-								if (!isNil "_outputWeapons" && count _outputWeapons > 0) then {
+								if (!isNil "_outputWeapons" && {count _outputWeapons > 0}) then {
 									_selectedWeapon = _outputWeapons call BIS_fnc_selectRandom;
 									_outputWeapons = [_selectedWeapon];
 								};
-								if (!isNil "_selectedRecipeOutput" && count _selectedRecipeOutput > 0) then {
+								if (!isNil "_selectedRecipeOutput" && {count _selectedRecipeOutput > 0}) then {
 									_selectedMag = _selectedRecipeOutput call BIS_fnc_selectRandom;
 									_selectedRecipeOutput = [_selectedMag];
 								};
 								// exit loop
 								_craft_doLoop = false;
 							};
+
 							{
-								if (_x == "ItemSledge") then {
+								if (_x in weapons player) then {
 									_x call player_addDuplicateTool;
 								} else {
-									player addWeapon _x;
+									if (getNumber(configFile >> "CfgWeapons" >> _x >> "type") == 256) then {
+										player addWeapon _x;
+									} else {
+										_x call player_addDuplicateTool;
+									};
 								};
-							} forEach _outputWeapons;
+							} count _outputWeapons;
+
 							{
 								_itemOut = _x select 0;
 								_countOut = _x select 1;
@@ -219,7 +233,7 @@ if (_canDo) then {
 												};
 											};
 										};
-									} foreach _temp_removed_array;
+									} count _temp_removed_array;
 								};
 
 								// diag_log format["Checking for water level: %1", _waterLevel];
@@ -231,25 +245,45 @@ if (_canDo) then {
 								format[localize "str_epoch_player_150",_textCreate,_countOut] call dayz_rollingMessages;
 								// sleep here
 								uiSleep 1;
-							} forEach _selectedRecipeOutput;
+							} count _selectedRecipeOutput;
 
-							_tradeComplete = _tradeComplete+1;
+							_tradeComplete = _tradeComplete + 1;
 						};
-
 					} else {
 						// Refund parts since we failed
-						{player addMagazine _x; } forEach _temp_removed_array;
+						{player addMagazine _x; } count _temp_removed_array;
 						format[localize "STR_EPOCH_PLAYER_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
 					};
-
 				} else {
 					localize "str_epoch_player_64" call dayz_rollingMessages;
 					_craft_doLoop = false;
 				};
-
 			} else {
-				_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
+				if (isClass (configFile >> "CfgMagazines" >> _missing)) then {
+					_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
+				} else {
+					if (isClass (configFile >> "CfgWeapons" >> _missing)) then {
+						_textMissing = getText(configFile >> "CfgWeapons" >> _missing >> "displayName");
+					} else {
+						_textMissing = getText(configFile >> "CfgVehicles" >> _missing >> "displayName");
+					};
+				};
 				format[localize "str_epoch_player_152",_missingQty, _textMissing,_tradeComplete] call dayz_rollingMessages;
+				systemchat localize "STR_CRAFTING_NEEDED_ITEMS";
+
+				if (count _selectedRecipeInput > 0) then {
+					{
+						_text = getText(configFile >> "CfgMagazines" >> (_x select 0) >> "displayName");
+						systemchat format ["%2x %1",_text,(_x select 1)];
+					} count _selectedRecipeInput;
+				};
+				if (count _inputWeapons > 0) then {
+					{
+						_text = getText(configFile >> "CfgWeapons" >> _x >> "displayName");
+						systemchat format ["1x %1",_text];
+
+					} count _inputWeapons;
+				};
 				_craft_doLoop = false;
 			};
 		} else {

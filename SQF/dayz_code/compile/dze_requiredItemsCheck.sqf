@@ -44,7 +44,7 @@ _missingText = "";
 		_missingText = _x;
 	} else {
 		if (_forEachIndex == ((count _missing) - 1)) then {
-			_missingText = _missingText + " and " + _x;
+			_missingText = _missingText + ", " + _x;
 		} else {
 			_missingText = _missingText + ", " + _x;
 		};
@@ -53,7 +53,12 @@ _missingText = "";
 
 _hasbuilditem = _item in magazines player;
 if (!_hasbuilditem && {_text != ""}) exitWith {dayz_actionInProgress = false; format[localize "str_player_31",_text,"build"] call dayz_rollingMessages; false;};
-if (!_hasrequireditem) exitWith {dayz_actionInProgress = false; format[localize "str_epoch_player_137",_missingText] call dayz_rollingMessages; false;};
+if (!_hasrequireditem) exitWith {
+	dayz_actionInProgress = false;
+	systemChat format[localize "str_epoch_player_137",_missingText];
+	format[localize "str_epoch_player_137",_missingText] call dayz_rollingMessages;
+	false;
+};
 
 //When calling this function in another script use a silent exitWith, unless you have something special to say. i.e. if (!_hasrequireditem) exitWith{};
 _hasrequireditem;

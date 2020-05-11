@@ -1,5 +1,5 @@
 #include "RscGroups.hpp"
-#include "RscDisplayCraftingMenu.hpp"
+//#include "RscDisplayCraftingMenu.hpp"
 #include "RscDisplayGear.hpp"
 #include "RscDisplayGearMinimal.hpp"
 #include "RscDisplayGenderSelect.hpp"
