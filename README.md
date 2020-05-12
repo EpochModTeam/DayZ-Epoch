@@ -19,15 +19,15 @@ Included Custom Addons
 * Taxi by [GLT]Myke http://www.armaholic.com/page.php?id=12289
 * Blackhawk and Seahawk Wrecks by [GLT]Myke http://www.armaholic.com/page.php?id=10670
 * SUV Colors by Python.au http://www.armaholic.com/page.php?id=17176
-* R3F Realism by http://www.team-r3f.org/
+* R3F Realism by Team [R3F] - http://www.armaholic.com/page.php?id=12610
 * ASC EU Lights Mod http://www.armaholic.com/page.php?id=12076
 * MAP Editorupgrade (EU) http://www.armaholic.com/page.php?id=6194
-* st_movement by ShackTac https://dev-heaven.net/projects/shacktac/files
-* st_bunnyhop by ShackTac https://dev-heaven.net/projects/shacktac/files
+* ShackTac Movement by Rg - http://www.armaholic.com/page.php?id=12540
+* ShackTac Bunnyhop by Macolik - http://www.armaholic.com/page.php?id=17546
 * Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr and Sahbazz http://www.armaholic.com/page.php?id=13053
-* gdtmod_grass 1.00 by HeinBloed - http://www.gdt-server.net/
+* gdtmod_grass 1.00 by HeinBloed - http://www.armaholic.com/page.php?id=6628
 * Bell 47/H-13 Helicopter by hcpookie - http://www.armaholic.com/page.php?id=22143
-* USEC CH53 by Rocket - http://dayz.com
+* USEC CH53 by Rocket - http://www.armaholic.com/page.php?id=13949
 * Anzio 20mm Rifle by WillRobinson - http://www.armaholic.com/page.php?id=30175
 * RedRyder BB Gun by WillRobinson - https://github.com/arma2WillRobinson/Red-Ryder
 * Namalsk Addons by SumrakDZN - https://github.com/SumrakDZN/DayZNamalsk
