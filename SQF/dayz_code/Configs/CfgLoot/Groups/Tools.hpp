@@ -21,7 +21,7 @@ ToolsBuilding[] =
 	{Loot_MAGAZINE,	2,		ItemSledgeHead},
 	{Loot_TOOL,		3,		ItemKeyKit},
 	{Loot_TOOL,		6,		ItemToolbox},
-	{Loot_TOOL,		4,		ItemEtool}
+	{Loot_TOOL,		4,		ItemShovel} 
 };
 
 // Small tools that can spawn anywhere
@@ -34,5 +34,5 @@ ToolsMilitary[] =
 	{Loot_TOOL,		1,		Binocular},
 	{Loot_TOOL,		1,		NVGoggles},
 	{Loot_TOOL,		1,		Binocular_Vector},
-	{Loot_TOOL,		1,		ItemEtool}
+	{Loot_TOOL,		1,		ItemEtool} //Equal to ItemShovel just the military version
 };
