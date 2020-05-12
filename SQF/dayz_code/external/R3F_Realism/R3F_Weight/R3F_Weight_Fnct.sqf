@@ -30,7 +30,7 @@ R3F_WEIGHT_FNCT_MakeSingleArray = {
 };
 
 R3F_WEIGHT_FNCT_GetItemWeight = {
-	private ["_arr_class", "_total_weight", "_weight","_bagpack","_type"];
+	private ["_arr_class", "_total_weight", "_weight","_bagpack","_type","_cfgWeight"];
 
 	_arr_class = (_this select 0) + (_this select 1);
 	if (dayz_onBack != "" && {count _this > 2}) then {
@@ -38,18 +38,18 @@ R3F_WEIGHT_FNCT_GetItemWeight = {
 	};
 	_total_weight = 0;
 	_weight = 0;
-	CfgWeight = configFile >> "CfgWeight";
+	_cfgWeight = configFile >> "CfgWeight";
 	{
 		
-		if (isclass(CfgWeight >> "Weapons" >> _x)) then {
-			_weight = getNumber(CfgWeight >> "Weapons" >> _x >> "weight");
+		if (isclass(_cfgWeight >> "Weapons" >> _x)) then {
+			_weight = getNumber(_cfgWeight >> "Weapons" >> _x >> "weight");
 			_total_weight = _total_weight + _weight;
 		} else {	
 			if (isNumber (configFile >> "cfgWeapons" >> _x >> "weight")) then {
 				_weight = getNumber(configFile >> "cfgWeapons" >> _x >> "weight");
 			} else {		
-				if (isclass(CfgWeight >> "Magazines" >> _x)) then {
-					_weight = getNumber(CfgWeight >> "Magazines" >> _x >> "weight");
+				if (isclass(_cfgWeight >> "Magazines" >> _x)) then {
+					_weight = getNumber(_cfgWeight >> "Magazines" >> _x >> "weight");
 					_total_weight = _total_weight + _weight;
 				} else {
 
@@ -62,7 +62,7 @@ R3F_WEIGHT_FNCT_GetItemWeight = {
 						_total_weight = _total_weight + _weight;
 					} else {
 						// log only if not found
-						diag_log format["No R3F weight config for: %1", _x];
+						//diag_log format["No R3F weight config for: %1", _x];
 					};
 				};
 			};	
@@ -72,8 +72,8 @@ R3F_WEIGHT_FNCT_GetItemWeight = {
 	_bagpack = unitBackpack player;
 	if (!isNull _bagpack) then {
 		_type = typeof _bagpack;
-		if (isclass(CfgWeight >> "Backpacks" >> _type)) then {
-			_weight = getNumber(CfgWeight >> "Backpacks" >> _type >> "weight");
+		if (isclass(_cfgWeight >> "Backpacks" >> _type)) then {
+			_weight = getNumber(_cfgWeight >> "Backpacks" >> _type >> "weight");
 			_total_weight = _total_weight + _weight;
 		};
 	};
