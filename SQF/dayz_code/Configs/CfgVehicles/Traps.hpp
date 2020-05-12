@@ -1,4 +1,6 @@
-class TrapItems : NonStrategic {};
+class TrapItems : NonStrategic {
+	offset[] = {0,2,0};
+};
 
 class BearTrap_DZ : TrapItems {
 	scope = public;
