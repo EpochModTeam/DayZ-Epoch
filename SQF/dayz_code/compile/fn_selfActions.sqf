@@ -409,15 +409,6 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 
 	//remove Own objects
 	if (_ownerID == _id) then {
-		//upgrade items
-		if (_typeOfCursorTarget in _upgradeItems) then {
-			if (s_player_upgradestorage < 0) then {
-				s_player_upgradestorage = player addAction [format[localize "STR_EPOCH_UPGRADE",_text], "\z\addons\dayz_code\actions\object_upgradeStorage.sqf",_cursorTarget, 0, false, true];
-			};
-		} else {
-			player removeAction s_player_upgradestorage;
-			s_player_upgradestorage = -1
-		};
 		if (_istypeTent) then {
 			//Packing my tent
 			if (s_player_packtent < 0) then {
@@ -428,8 +419,6 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 			s_player_packtent = -1;
 		};
 	} else {
-		player removeAction s_player_upgradestorage;
-		s_player_upgradestorage = -1;
 		player removeAction s_player_packtent;
 		s_player_packtent = -1;
 	};
@@ -817,7 +806,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	};
 
 	// inplace upgrade tool
-	if ((_cursorTarget isKindOf "ModularItems") || {_cursorTarget isKindOf "Land_DZE_WoodDoor_Base"} || {_cursorTarget isKindOf "CinderWallDoor_DZ_Base"}) then {
+	if ((_cursorTarget isKindOf "ModularItems") || {_cursorTarget isKindOf "Land_DZE_WoodDoor_Base"} || {_cursorTarget isKindOf "CinderWallDoor_DZ_Base"} || {_cursorTarget isKindOf "DZ_storage_base"}) then {
 		if ((s_player_lastTarget select 0) != _cursorTarget) then {
 			if (s_player_upgrade_build > 0) then {
 				player removeAction s_player_upgrade_build;
@@ -1055,8 +1044,6 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	s_player_destroytent = -1;
 	// player removeAction s_player_attach_bomb;
 	//  s_player_attach_bomb = -1;
-	player removeAction s_player_upgradestorage;
-	s_player_upgradestorage = -1;
 	/* //Unlock,Lock // Vanilla base building currently not used in Epoch
 	player removeAction s_player_setCode;
 	s_player_setCode = -1;

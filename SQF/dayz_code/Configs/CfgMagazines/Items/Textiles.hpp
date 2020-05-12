@@ -12,48 +12,30 @@ class ItemCanvas: CA_Magazine
 	{
 		class Crafting
 		{
-			text = $STR_EPOCH_PLAYER_190;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"ItemTent",1}};
-			input[] = {{"ItemCanvas",2},{"equip_tent_poles",2}};
-		};
-		class Crafting1
-		{
-			text = $STR_EPOCH_PLAYER_191;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"ItemDesertTent",1}};
-			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
-		};
-		class Crafting2
-		{
-			text = $STR_EPOCH_PLAYER_192;
-			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"ItemDomeTent",1}};
-			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
-		};
-		class Crafting3
-		{
-			text = $STR_EPOCH_PLAYER_193;
-			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemKnife"};
-			output[] = {{"sun_shade_kit",1}};
-			input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
-		};
-		class Crafting4
-		{
 			text = $STR_EPOCH_PLAYER_194;
-			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemKnife"};
 			output[] = {{"ItemBurlap",1}};
 			input[] = {{"ItemCanvas",2}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_CRAFT_SMALL_STASH;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"StashSmall_kit",1}};
+			input[] = {{"ItemCanvas",1},{"PartWoodPile",2}};
+		};		
+		class Crafting2
+		{
+			text = $STR_EPOCH_PLAYER_193;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"sun_shade_kit",1}};
+			input[] = {{"ItemCanvas",1},{"PartWoodLumber",4}};
 		};
 	};
 };

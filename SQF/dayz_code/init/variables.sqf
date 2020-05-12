@@ -24,6 +24,7 @@ DZE_DoorsLocked = ["Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked
 DZE_isWreckBuilding = ["Land_wreck_cinder","Land_wood_wreck_quarter","Land_wood_wreck_floor","Land_wood_wreck_third","Land_wood_wreck_frame","Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gold_vein_wreck","Land_ammo_supply_wreck"];
 DZE_LockedStorage = ["VaultStorageLocked","LockboxStorageLocked"];
 DZE_isWreck = ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
+DZE_isNewStorage = ["VaultStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ"];
 
 if (isNil "dayz_POIs") then {dayz_POIs = true;}; //Enable POI's
 if (isNil "dayz_ForcefullmoonNights") then {dayz_ForcefullmoonNights = false;}; // Forces night time to be full moon.
@@ -226,9 +227,8 @@ if (!isDedicated) then {
 		s_player_fishing_veh = -1;
 		s_player_gather = -1;
 		s_player_destroytent = -1;
-		s_player_attach_bomb = -1;
-		s_player_upgradestorage = -1;
-		s_player_Drinkfromhands = -1;
+		//s_player_attach_bomb = -1;
+		//s_player_Drinkfromhands = -1;
 		/*s_player_lockhouse = -1; //Vanilla base building currently not used in Epoch
 		s_player_unlockhouse = -1;
 		s_player_openGate = -1;
@@ -366,7 +366,6 @@ if (!isDedicated) then {
 	DZE_maintainClasses = ["ModularItems","DZE_Housebase","LightPole_DZ","BuiltItems","Generator_DZ","DZ_buildables","Plastic_Pole_EP1_DZ","Fence_corrugated_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","StickFence_DZ","DesertCamoNet_DZ","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ","DeerStand_DZ","Scaffolding_DZ","FireBarrel_DZ","M240Nest_DZ"];
 	DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP1_DZ","V3S_Refuel_TK_GUE_EP1_DZ","MtvrRefuel_DZ","KamazRefuel_DZE1","KamazRefuel_DZE2","KamazRefuel_DZE3","KamazRefuel_DZE4","T810A_ACR_REFUEL_DES_DZE","T810A_ACR_REFUEL_DES_DZE1","T810A_ACR_REFUEL_DES_DZE2","T810A_ACR_REFUEL_DES_DZE3","T810A_ACR_REFUEL_DES_DZE4","T810A_ACR_REFUEL_DZE","T810A_ACR_REFUEL_DZE1","T810A_ACR_REFUEL_DZE2","T810A_ACR_REFUEL_DZE3","T810A_ACR_REFUEL_DZE4"];
 	DZE_HeliAllowToTow = ["hilux1_civil_1_open","HMMWV_Base","Lada_base","Offroad_DSHKM_base","Pickup_PK_base","SkodaBase","tractor","VWGolf","Volha_TK_CIV_Base_EP1","S1203_TK_CIV_EP1","SUV_Base_EP1","ArmoredSUV_Base_PMC","UAZ_Base","LandRover_Base","Ship"];
-	DZE_isNewStorage = ["VaultStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ"];
 	DZE_isDestroyableStorage = ["OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ"];
 	DZE_tradeVehicle = ["trade_any_vehicle","trade_any_vehicle_free","trade_any_vehicle_old","trade_any_bicycle","trade_any_bicycle_old","trade_any_boat","trade_any_boat_old"];
 	DZE_tradeVehicleKeyless = ["trade_any_bicycle","trade_any_bicycle_old","trade_any_vehicle_free"];

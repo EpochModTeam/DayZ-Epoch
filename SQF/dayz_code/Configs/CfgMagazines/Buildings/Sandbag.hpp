@@ -2,8 +2,7 @@ class ItemSandbag : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = WeaponSlotItem;	
 	model = "\dayz_equip\models\sandbags.p3d";
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 	displayName = $STR_EQUIP_NAME_21;
@@ -21,18 +20,6 @@ class ItemSandbag : CA_Magazine
 			//bypass RoadCheck
 			byPass = "byPassRoadCheck";
 		};
-		/*
-		class Build2
-		{
-			text = $STR_CREATE_STASH;
-			script = "; [_id,'Build2'] spawn player_buildPlaceables;";
-			require[] = {"ItemEtool"};
-			consume[] = {"ItemSandbag"};
-			create = "StashSmall";
-			//Bypass collision test
-			bypassCollision = "true";
-		}; 
-		*/
 		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_273;
@@ -60,22 +47,8 @@ class ItemSandbag : CA_Magazine
 			output[] = {{"BagFenceRound_DZ_kit",1}};
 			input[] = {{"ItemSandbag",1}};
 		};
-		/*
-		class Crafting3
-		{
-			text = "Craft M240 Nest";
-			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemEtool","ItemToolbox","M240_DZ"};
-			output[] = {{"m240_nest_kit",1}};
-			input[] = {{"ItemSandbag",4},{"ItemCanvas",1},{"PartWoodPlywood",4},{"PartWoodLumber",3}};
-			inputweapons[] = {"M240_DZ"};
-		};
-		*/
 	};
 };
-
-// EPOCH ADDITIONS
 
 class BagFenceRound_DZ_kit : CA_Magazine {
 	scope = public;
@@ -85,6 +58,7 @@ class BagFenceRound_DZ_kit : CA_Magazine {
 	descriptionShort = $STR_EQUIP_DESC_21;
 	model = "\dayz_equip\models\sandbags.p3d";
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
+	
 	class ItemActions {
 		class Build {
 			text = $STR_EPOCH_PLAYER_299;
@@ -112,7 +86,7 @@ class ItemSandbagLarge : CA_Magazine {
 	descriptionShort = $STR_EQUIP_DESC_21_HBARRIER;
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-	weight = 50;
+
 	class ItemActions {
 		class Build {
 			text = $STR_EPOCH_PLAYER_273_3;
@@ -140,7 +114,7 @@ class ItemSandbagExLarge : CA_Magazine {
 	descriptionShort = $STR_EQUIP_DESC_21_HBARRIER;
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-	weight = 150;
+
 	class ItemActions {
 		class Build {
 			text = $STR_EPOCH_PLAYER_273_4;
@@ -168,7 +142,7 @@ class ItemSandbagExLarge5x : CA_Magazine {
 	descriptionShort = $STR_EQUIP_DESC_21_HBARRIER;
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-	weight = 200;
+
 	class ItemActions {
 		class Build {
 			text = $STR_EPOCH_PLAYER_273_5;
@@ -188,7 +162,7 @@ class sandbag_nest_kit: CA_Magazine
 	descriptionShort = $STR_EQUIP_DESC_21_NEST;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	weight = 50;
+
 	class ItemActions
 	{
 		class Build

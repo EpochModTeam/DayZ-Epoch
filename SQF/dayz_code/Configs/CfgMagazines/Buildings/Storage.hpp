@@ -7,7 +7,7 @@ class outhouse_kit: CA_Magazine
 	descriptionShort = $STR_EPOCH_OUTHOUSE_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	weight = 25;
+
 	class ItemActions
 	{
 		class Build
@@ -29,7 +29,7 @@ class wooden_shed_kit: CA_Magazine
 	descriptionShort = $STR_EPOCH_NICEWOODSHED_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	weight = 25;
+
 	class ItemActions
 	{
 		class Build
@@ -51,7 +51,7 @@ class wood_shack_kit: CA_Magazine
 	descriptionShort = $STR_EPOCH_WOODSHACK;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	weight = 25;
+
 	class ItemActions
 	{
 		class Build
@@ -73,7 +73,7 @@ class storage_shed_kit: CA_Magazine
 	descriptionShort = $STR_EPOCH_STORAGESHED_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	weight = 75;
+
 	class ItemActions
 	{
 		class Build
@@ -95,7 +95,7 @@ class ItemGunRackKit: CA_Magazine
 	descriptionShort = $STR_EPOCH_GUNRACKKIT_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	weight = 20;
+
 	class ItemActions
 	{
 		class Build
@@ -116,7 +116,7 @@ class ItemWoodCrateKit: CA_Magazine
 	descriptionShort = $STR_EPOCH_WOODCRATE_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	weight = 20;
+
 	class ItemActions
 	{
 		class Build
@@ -138,6 +138,7 @@ class ItemVault: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\safe_onside.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_safe_ca.paa";
 	descriptionShort = $STR_EPOCH_SAFE_DESC;
+	
 	class ItemActions
 	{
 		class Build
@@ -159,7 +160,7 @@ class ItemLockbox: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
 	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
-	weight = 15;
+	
 	class ItemActions
 	{
 		class Build
@@ -168,6 +169,28 @@ class ItemLockbox: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "LockboxStorageLocked";
+		};
+	};
+};
+
+class StashSmall_kit: CA_Magazine
+{
+	scope = public;
+	count = 1;
+	type = 256;
+	displayName = $STR_VEH_NAME_STASH;
+	descriptionShort = $STR_VEH_NAME_STASH_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemShovel"};
+			create = "StashSmall";
 		};
 	};
 };
