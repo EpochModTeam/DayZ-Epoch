@@ -1,4 +1,4 @@
-private ["_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer","_clientKey","_exitReason","_playerUID"];
+private ["_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer","_clientKey","_exitReason","_playerUID","_weapons","_obj","_magazines","_backpacks"];
 
 if (count _this < 8) exitWith {diag_log "Server_SwapObject error: Wrong parameter format";};
 
@@ -18,13 +18,19 @@ _playerUID = getPlayerUID _activatingPlayer;
 _exitReason = [_this,"SwapObject",(_worldspace select 1),_clientKey,_playerUID,_activatingPlayer] call server_verifySender;
 if (_exitReason != "") exitWith {diag_log _exitReason};
 
-if(!isNull(_obj)) then {
+if (!isNull(_obj)) then {
 	// Find objectID
 	_objectID 	= _obj getVariable ["ObjectID","0"];
 	// Find objectUID
 	_objectUID	= _obj getVariable ["ObjectUID","0"];
 	if !(DZE_GodModeBase) then {
 		_obj removeAllMPEventHandlers "MPKilled";
+	};
+	if (_class isKindOf "Land_A_tent" || {_class in DZE_isNewStorage}) then {
+		_weapons = getWeaponCargo _obj;
+		_magazines = getMagazineCargo _obj;
+		_backpacks = getBackpackCargo _obj;
+		_inv = [_weapons,_magazines,_backpacks];
 	};
 	// Remove old object
 	deleteVehicle _obj;
@@ -76,6 +82,11 @@ if (DZE_GodModeBase && {!(_class in DZE_GodModeBaseExclude)}) then {
 } else {
 	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 };
+
+if (count _inv > 0) then {
+	[_weapons,_magazines,_backpacks,_object] call fn_addCargo;
+};
+
 // Test disabling simulation server side on buildables only.
 _object enableSimulation false;
 

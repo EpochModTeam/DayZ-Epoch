@@ -74,7 +74,7 @@ class CinderWallHalf_DZ: ModularItems {
 	armor = 2200;
 	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF;
 	vehicleClass = "Fortifications";
-	upgradeBuilding[] = {"CinderWall_DZ",{{"CinderBlocks",4},{"MortarBucket",1}}};
+	upgradeBuilding[] = {"CinderWall_DZ",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
 	maintainBuilding[] = {{"MortarBucket",1}};
 	GhostPreview = "CinderWallHalf_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -127,7 +127,7 @@ class CinderWallDoorway_DZ: ModularItems {
 	displayName = $STR_EPOCH_BLOCKGARAGEDOORWAY;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"MortarBucket",1}};
-	upgradeBuilding[] = {"CinderWallDoor_DZ",{{"ItemPole",3},{"ItemTankTrap",3}}};
+	upgradeBuilding[] = {"CinderWallDoor_DZ",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
 	GhostPreview = "CinderWallDoorway_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {
@@ -153,7 +153,7 @@ class CinderWallSmallDoorway_DZ: ModularItems {
 	displayName = $STR_EPOCH_BLOCKDOORWAY;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"MortarBucket",1}};
-	upgradeBuilding[] = {"CinderWallDoorSmall_DZ",{{"ItemPole",1},{"ItemTankTrap",1}}};
+	upgradeBuilding[] = {"CinderWallDoorSmall_DZ",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
 	GhostPreview = "CinderWallSmallDoorway_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {
@@ -257,7 +257,7 @@ class WoodLargeWall_DZ: ModularItems {
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWOODWALL;
 	vehicleClass = "Fortifications";
-	upgradeBuilding[] = {"WoodLargeWallWin_DZ",{{"PartGlass",1}}};
+	upgradeBuilding[] = {"WoodLargeWallWin_DZ",{"ItemToolbox"},{{"PartGlass",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodLargeWall_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -284,7 +284,7 @@ class WoodLargeWallDoor_DZ: ModularItems {
 	displayName = $STR_EPOCH_LARGEWALLWITHDOORWAY;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+	upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{"ItemToolbox"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	GhostPreview = "WoodLargeWallDoor_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {
@@ -334,7 +334,7 @@ class WoodSmallWall_DZ: ModularItems {
 	displayName = $STR_EPOCH_WOODWALL;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodSmallWallWin_DZ",{{"PartGlass",1}}};
+	upgradeBuilding[] = {"WoodSmallWallWin_DZ",{"ItemToolbox"},{{"PartGlass",1}}};
 	GhostPreview = "WoodSmallWall_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {
@@ -407,7 +407,7 @@ class WoodSmallWallDoor_DZ: ModularItems {
 	armor = 2000;
 	displayName = $STR_EPOCH_WALLWITHDOORWAY;
 	vehicleClass = "Fortifications";
-	upgradeBuilding[] = {"Land_DZE_WoodDoor",{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+	upgradeBuilding[] = {"Land_DZE_WoodDoor",{"ItemToolbox"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodSmallWallDoor_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -434,7 +434,7 @@ class WoodStairs_DZ: ModularItems {
 	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodStairsRails_DZ",{{"PartWoodLumber",2}}};
+	upgradeBuilding[] = {"WoodStairsRails_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairs_Preview_DZ";
 };
 class WoodLadder_DZ: ModularItems {
@@ -480,7 +480,7 @@ class WoodStairsSans_DZ: ModularItems {
 	displayName = $STR_EPOCH_WOODSTAIRS;
 	vehicleClass = "Fortifications";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodStairs_DZ",{{"PartWoodLumber",2}}};
+	upgradeBuilding[] = {"WoodStairs_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairsSans_Preview_DZ";
 };
 
