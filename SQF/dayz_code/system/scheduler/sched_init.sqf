@@ -3,7 +3,6 @@
 _base="z\addons\dayz_code\system\scheduler\";
 call compile preprocessFileLineNumbers (_base+"sched_oneachframe.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_throwable.sqf");
-call compile preprocessFileLineNumbers (_base+"sched_bloodstains.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_animals.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_buriedZeds.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_gravity.sqf");
@@ -11,9 +10,12 @@ call compile preprocessFileLineNumbers (_base+"sched_newDay.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_spawnCheck.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_playerActions.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_medical.sqf");
-//call compile preprocessFileLineNumbers (_base+"sched_achievement.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_gui.sqf");
-//call compile preprocessFileLineNumbers (_base+"sched_humanityChange.sqf");
+//call compile preprocessFileLineNumbers (_base+"sched_achievement.sqf");
+
+if (dayz_bleedingeffect != 2) then {
+	call compile preprocessFileLineNumbers (_base+"sched_bloodstains.sqf");
+};	
 
 if (dayz_antihack == 1) then {
 	call compile preprocessFileLineNumbers (_base+"sched_security.sqf");
@@ -39,14 +41,16 @@ if (count _list == 0) then {
 	 [ 6,	   24.18,	sched_spawnCheck ],
 	 [ 1, 		0.63,	sched_throwable, sched_throwable_init ],
 	 [ 1, 		0.33,	sched_medical, sched_medical_init ],
-	 //[ 15,	 	3,		sched_humanityChange ], //Humanity morphing disabled on Epoch to avoid loss of purchased clothing
 	 //[ 3,		2.70,	sched_achievement, sched_achievement_init ],
-	 [ 4,		2.38,	sched_bloodStains, sched_bloodStains_init ],
 	 [ 60, 	   10.44,	sched_animals ],
 	 [ 10, 	    5.44,	sched_medical_slow ],
 	 [ 60, 	   20.44,	sched_newDay ],
 	 [ 1, 		0.51,	sched_buriedZeds, sched_buriedZeds_init ]
 	];
+	
+	if (dayz_bleedingeffect != 2) then {
+		_list set [count _list, [ 4, 2.38, sched_bloodStains, sched_bloodStains_init]];
+	};
 	
 	if (dayz_antihack == 1) then {
 		_list set [count _list, [0.2, 0.15, sched_security, sched_security_init]];

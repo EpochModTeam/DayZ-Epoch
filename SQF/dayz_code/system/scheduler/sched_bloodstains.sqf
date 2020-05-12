@@ -5,11 +5,11 @@ sched_bloodStains_init = {
 };
 
 sched_bloodStains = {
-	private ["_end","_lastpos","_stain", "_plpos"];
+	private ["_end","_lastpos","_stain", "_plpos","_bloodpool"];
 
 	_bloodpool = _this;
 	_plpos = visiblePosition player; //ATL
-	if (r_player_injured and {(dayz_bleedingeffect % 2 == 1)}) then {
+	if (r_player_injured) then {
 		// add a fresh blood stain
 		if (((vehicle player == player) and (!dayz_isSwimming)) AND {((_plpos select 2 < 0.3) AND {((getTerrainHeightASL _plpos) > 1.5)})}) then {
 			_end = count _bloodpool -1;
@@ -27,7 +27,7 @@ sched_bloodStains = {
 			};
 		};
 	}
-	else { 
+	else {
 		// remove the oldest blood stain
 		if (count _bloodpool > 0) then {
 			_stain = _bloodpool select 0;
