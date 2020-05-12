@@ -2,12 +2,12 @@ class PartGeneric : CA_Magazine
 {
 	scope = public;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = WeaponSlotItem;	
 	model = "\dayz_equip\models\genericparts.p3d";
 	picture = "\dayz_equip\textures\equip_genericparts_ca.paa";
 	displayName = $STR_EQUIP_NAME_10;
 	descriptionShort = $STR_EQUIP_DESC_10;
+	
 	class ItemActions {
 		class Crafting {
 			text = $STR_EPOCH_PLAYER_213;
@@ -37,6 +37,7 @@ class ItemPole: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\pipe.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_pipe_CA.paa";
 	descriptionShort = $STR_EPOCH_METALPOLE_DESC;
+	
 	class ItemActions
 	{
 		class Crafting
@@ -148,4 +149,35 @@ class equip_tent_poles : CA_Magazine {
 	model = "z\addons\dayz_communityassets\models\1m_pole_6.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_1m_pole_6_ca.paa";
 	type = 256;
+	
+	class ItemActions
+	{	
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_190;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"ItemTent",1}};
+			input[] = {{"ItemCanvas",2},{"equip_tent_poles",2}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_PLAYER_191;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"ItemDesertTent",1}};
+			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
+		};
+		class Crafting2
+		{
+			text = $STR_EPOCH_PLAYER_192;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemKnife"};
+			output[] = {{"ItemDomeTent",1}};
+			input[] = {{"ItemCanvas",3},{"equip_tent_poles",2}};
+		};
+	};	
 };
