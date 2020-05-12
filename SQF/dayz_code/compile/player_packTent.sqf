@@ -4,7 +4,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_alreadyPacking","_backpacks","_bag","_campItems","_dir","_holder","_magazines","_obj","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons","_finished","_posPlayer"];
+private ["_alreadyPacking","_backpacks","_bag","_campItems","_dir","_holder","_magazines","_obj","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons","_finished","_posPlayer","_text"];
 
 _obj = _this;
 _ownerID = _obj getVariable["CharacterID","0"];
@@ -38,6 +38,9 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	[player,"tentpack",0,false,20] call dayz_zombieSpeak;
 	[player,20,true,getPosATL player] call player_alertZombies;
 
+	_text = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");
+	format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
+
 	_finished = ["Medic",1] call fn_loopAction;
 	if (isNull _obj) exitWith {};
 	if (!_finished) exitWith {_obj setVariable["packing",0,true];};
@@ -56,7 +59,7 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 
 	_holder = "WeaponHolder" createVehicle [0,0,0];
 	_holder setPosATL _pos;
-	
+
 	_weapons = getWeaponCargo _obj;
 	_magazines = getMagazineCargo _obj;
 	_backpacks = getBackpackCargo _obj;
