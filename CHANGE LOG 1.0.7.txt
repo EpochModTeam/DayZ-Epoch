@@ -110,6 +110,7 @@
 [UPDATED] Crafting a firebarrel kit requires no longer matches. (b4b93562) @nadal28 @AirwavesMan
 [UPDATED] Crafting shows all required items now. (8315d899) @AirwavesMan
 [UPDATED] Relogging with a chainsaw in the backpack will delete the chainsaw gas instead of refilling it. (132e9506) @AirwavesMan
+[UPDATED] The group invite message contains the name of the inviter now. (396d0313) @ch0c @AirwavesMan
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
 [REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow
