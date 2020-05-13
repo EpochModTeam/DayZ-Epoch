@@ -1,22 +1,4 @@
-﻿/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-
-class 20Rnd_B_765x17_Ball
-{
-	weight = 0.4;
-};
-class 10Rnd_B_765x17_Ball
-{
-	weight = 0.2;
-};
-class 30Rnd_9x19_UZI_SD
+﻿class 30Rnd_9x19_UZI_SD
 {
 	weight =  0.4;
 };
@@ -55,4 +37,100 @@ class 8Rnd_9x18_MakarovSD
 class 7Rnd_45ACP_1911 
 {
 	weight = 0.02;
+};
+class 10Rnd_9x19_Compact 
+{
+	weight = 0.02;
+};
+class 20Rnd_9x19_M93R 
+{
+	weight = 0.02;
+};
+class 15Rnd_10x22_p99 
+{
+	weight = 0.02;
+};
+class 15Rnd_10x22_p99_sd 
+{
+	weight = 0.02;
+};
+class 13Rnd_9x19_BHP 
+{
+	weight = 0.02;
+};
+class 15Rnd_9x19_P226 
+{
+	weight = 0.02;
+};
+class 8Rnd_9x19_P38 
+{
+	weight = 0.02;
+};
+class 7Rnd_9x17_PPK 
+{
+	weight = 0.02;
+};
+class 8Rnd_9x19_MK22 
+{
+	weight = 0.02;
+};
+class 8Rnd_9x19_MK22SD 
+{
+	weight = 0.02;
+};
+class 10Rnd_22lfB_RUGERMK2 
+{ 
+	weight = 0.01; 
+};
+class 20Rnd_9x18_APS 
+{ 
+	weight = 0.45; 
+};
+class 20Rnd_9x18_APSSD 
+{ 
+	weight = 0.45; 
+};
+class 33Rnd_9x19_G18 
+{ 
+	weight = 0.4; 
+};
+class 32Rnd_9x19_TEC9 
+{ 
+	weight = 0.4; 
+};
+class 15Rnd_45ACP_USP 
+{ 
+	weight = 0.04; 
+};
+class 15Rnd_45ACP_USPSD 
+{ 
+	weight = 0.04; 
+};
+class 7Rnd_45ACP_1911SD 
+{ 
+	weight = 0.02; 
+};
+class 6Rnd_44Magnum 
+{ 
+	weight = 0.4; 
+};
+class 6Rnd_357Magnum 
+{ 
+	weight = 0.5; 
+};
+class 7Rnd_50AE_Deagle 
+{ 
+	weight = 0.5; 
+};
+class 8Rnd_762x25_TT33 
+{ 
+	weight = 0.2; 
+};
+class 18Rnd_9x19_Phantom 
+{ 
+	weight = 0.2; 
+};
+class 18Rnd_9x19_PhantomSD 
+{ 
+	weight = 0.2; 
 };

@@ -1,13 +1,4 @@
-﻿/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-class ItemAntibacterialWipe 
+﻿class ItemAntibacterialWipe 
 {
 	weight = 0.003;
 };
@@ -146,4 +137,48 @@ class transfusionKit
 class emptyBloodBag
 {
 	weight = 0.003;
+};
+class ItemPainkiller6 
+{ 
+	weight = 0.6; 
+};
+class ItemPainkiller5 
+{ 
+	weight = 0.5; 
+};
+class ItemPainkiller4 
+{ 
+	weight = 0.4; 
+};
+class ItemPainkiller3 
+{ 
+	weight = 0.3; 
+};
+class ItemPainkiller2 
+{ 
+	weight = 0.2; 
+};
+class ItemPainkiller1 
+{ 
+	weight = 0.1; 
+};
+class ItemPainkillerEmpty 
+{ 
+	weight = 0.0; 
+};
+class equip_woodensplint 
+{ 
+	weight = 1.0; 
+};
+class equip_gauze 
+{ 
+	weight = 0.2; 
+};
+class equip_gauzepackaged 
+{ 
+	weight = 0.4; 
+};
+class equip_herb_box 
+{ 
+	weight = 0.8; 
 };

@@ -47,3 +47,11 @@ class equip_comfreyleafs
 {
 	weight = 0.1;
 };
+class FoodPumpkin 
+{ 
+	weight = 3; 
+};
+class FoodSunFlowerSeed 
+{ 
+	weight = 0.2; 
+};

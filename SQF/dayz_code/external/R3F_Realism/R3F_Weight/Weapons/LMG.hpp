@@ -1,17 +1,16 @@
-﻿/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-class L110A1_DZ
+﻿class L110A1_DZ
 {
 	weight = 6.5;
 };
 class L110A1_CCO_DZ
+{
+	weight = 6.7;
+};
+class BAF_L110A1_Aim
+{
+	weight = 6.7;
+};
+class BAF_L110A1_Aim_Small
 {
 	weight = 6.7;
 };
@@ -55,7 +54,11 @@ class m240_scoped_EP1_DZE
 {
 	weight = 14;
 };
-class MG36_Camo_DZ  //NEW
+class MG36_Camo_DZ  
+{
+	weight = 3.6;
+};
+class MG36_camo  
 {
 	weight = 3.6;
 };
@@ -119,7 +122,11 @@ class Mk48_Holo_DZ
 {
 	weight = 8.4;
 };
-class MG36_DZ  //NEW
+class MG36  
+{
+	weight = 3.6;
+};
+class MG36_DZ  
 {
 	weight = 3.6;
 };
@@ -147,6 +154,10 @@ class RPK74_DZ
 {
 	weight = 4.7;
 };
+class RPK_74_Large
+{
+	weight = 4.7;
+};
 class RPK74_Kobra_DZ
 {
 	weight = 4.9;
@@ -171,42 +182,104 @@ class UK59_DZ
 {
 	weight = 4.7;
 };
-class L86A2_LSW_DZ  //NEW
+class L86A2_LSW_DZ  
 {
 	weight = 6.7;
 };
-class XM8_SAW_DZ  //NEW
+class XM8_SAW_DZ  
 {
 	weight = 6.7;
 };
-class XM8_DES_SAW_DZ  //NEW
+class XM8_DES_SAW_DZ  
 {
 	weight = 6.7;
 };
-class XM8_GREY_SAW_DZ  //NEW
+class XM8_GREY_SAW_DZ  
 {
 	weight = 6.7;
 };
-class Mk43_DZ  //NEW
+class Mk43_DZ  
 {
 	weight = 6.7;
 };
-class MK43_Holo_DZ  //NEW
+class MK43_Holo_DZ  
 {
 	weight = 6.7;
 };
-class MK43_ACOG_DZ  //NEW
+class MK43_ACOG_DZ  
 {
 	weight = 6.7;
 };
-class Mk48_DES_CCO_DZ  //NEW
+class Mk48_DES_CCO_DZ  
 {
 	weight = 6.7;
 };
-class MK43_M145_DZ  //NEW
+class MK43_M145_DZ  
 {
 	weight = 6.7;
 };
-
-
+class UK59_ACR  
+{
+	weight = 6.6;
+};
+class MG36_Large  
+{
+	weight = 6.2;
+};
+class M60A4_EP1_Small  
+{
+	weight = 6.3;
+};
+class M240_Small  
+{
+	weight = 6.1;
+};
+class M249_Small  
+{
+	weight = 6.1;
+};
+class M249_EP1_Small  
+{
+	weight = 6.1;
+};
+class  M249_m145_EP1_Small  
+{
+	weight = 6.3;
+};
+class Mk_48_Small  
+{
+	weight = 6.3;
+};
+class PK_Small  
+{
+	weight = 5.7;
+};
+class Pecheneg_Small  
+{
+	weight = 6.2;
+};
+class UK59_ACR_Small  
+{
+	weight = 6.2;
+};
+class m240_scoped_EP1_Small  
+{
+	weight = 6.2;
+};
+class Mk_48_DES_EP1_Small  
+{
+	weight = 6.1;
+};
+class MG36_camo_Large
+{	
+	weight = 6.2;
+};
+class m8_SAW_Large 				
+{ 	
+	weight = 5.5;
+};
+class M249_TWS_EP1_Small 		
+{ 	
+	weight = 7.0;
+};
 

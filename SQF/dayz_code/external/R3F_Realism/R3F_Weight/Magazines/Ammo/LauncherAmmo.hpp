@@ -1,14 +1,4 @@
-﻿/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-
-class PG7V
+﻿class PG7V
 {
 	weight = 2.2;
 };
@@ -85,6 +75,18 @@ class NLAW
 	weight = 6;
 };
 class Dragon_EP1
+{
+	weight = 11;
+};
+class SMAW_HEAA_Big
+{
+	weight = 11;
+};
+class SMAW_HEDP_Big
+{
+	weight = 11;
+};
+class NLAW_Big
 {
 	weight = 11;
 };

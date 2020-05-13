@@ -1,14 +1,4 @@
-﻿/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-
-class Crossbow  
+﻿class Crossbow  
 {
 	weight = 1;
 };
@@ -33,6 +23,18 @@ class Crossbow_Scope_DZ
 	weight = 1.1;
 };
 class Crossbow_Scope_FL_DZ  
+{
+	weight = 1.2;
+};
+class Crossbow_MFL_DZ
+{
+	weight = 1.1;
+};
+class Crossbow_CCO_MFL_DZ
+{
+	weight = 1.2;
+};
+class Crossbow_Scope_MFL_DZ
 {
 	weight = 1.2;
 };
@@ -80,11 +82,27 @@ class Saiga12K
 {
 	weight = 3.5;
 };
+class Saiga12K_DZ
+{
+	weight = 3.5;
+};
 class Winchester1866
 {
-	weight = 2.8;
+	weight = 4.8;
 };
 class Winchester1866_DZ
 {
-	weight = 2.8;
+	weight = 4.8;
+};
+class Remington870_MFL_DZ
+{
+	weight = 4.8;
+};
+class USAS12_DZ
+{
+	weight = 3.8;
+};
+class AA12_PMC				
+{ 	
+	weight = 4.5;
 };

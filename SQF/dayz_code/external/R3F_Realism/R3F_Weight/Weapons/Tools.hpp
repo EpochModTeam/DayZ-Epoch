@@ -1,48 +1,42 @@
-/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-
 class Chainsaw 
-{
+{	
 	weight = 4.5;
 };
 class ChainSawB 
-{
+{	
 	weight = 4.5;
 };
 class ChainsawG 
-{
+{	
 	weight = 4.5;
 };
 class ChainsawP 
-{
+{	
 	weight = 4.5;
 };
 class ChainsawR 
-{
+{	
 	weight = 4.5;
 };
 class Binocular
-{
+{	
 	weight = 1;
 };
 class Binocular_Vector
-{
+{	
 	weight = 1;
 };
 class NVGoggles
-{
+{	
 	weight = 1;
 };
-class Laserdesignator
-{
+class Laserdesignator_mounted
+{	
 	weight = 5.5;
+};
+class Laserdesignator
+{	
+	weight = 6.0;
 };
 class ItemCompass
 {
@@ -207,4 +201,240 @@ class ItemShovelBroken
 class ItemFishingPole  
 {
 	weight = 1;
+};
+class Kostey_photos  
+{
+	weight = 1;
+};
+class Kostey_map_case 
+{
+	weight = 1;
+};
+class Kostey_notebook 
+{
+	weight = 1;
+};
+class CDF_dogtags
+{
+	weight = 1;
+};
+class Moscow_Bombing_File 
+{
+	weight = 1;
+};
+class Cobalt_File
+{
+	weight = 1;
+};
+class EvPhoto  
+{
+	weight = 1;
+};
+class EvMap  
+{
+	weight = 1;
+};
+class EvMoscow 
+{
+	weight = 1;
+};
+class EvKobalt
+{
+	weight = 1;
+};
+class EvMoney
+{
+	weight = 1;
+};
+class EvDogTags
+{
+	weight = 1;
+};
+class PMC_documents
+{
+	weight = 1;
+};
+class LRTV_ACR
+{
+	weight = 5;
+};
+class ItemDIY_wood
+{
+	weight = 1;
+};
+class ItemDIY_Gate
+{
+	weight = 1;
+};
+class ItemDIY_metal
+{
+	weight = 1;
+};
+class NVGoggles_DZE
+{
+	weight = 1;
+};
+class ItemNVGBroken_DZE
+{
+	weight = 1;
+};
+class ItemMap_Debug
+{
+	weight = 1;
+};
+class ItemGPSBroken_DZE
+{
+	weight = 1;
+};
+class ItemToolboxBroken
+{
+	weight = 1;
+};
+class ItemEtoolBroken
+{
+	weight = 1;
+};
+class ItemFishingPoleBroken
+{
+	weight = 1;
+};
+class ItemSledgeBroken
+{
+	weight = 1;
+};
+class ItemSledgeHammer
+{
+	weight = 1;
+};
+class ItemSledgeHammerBroken
+{
+	weight = 1;
+};
+class ItemCrowbarBent
+{
+	weight = 1;
+};
+class ItemMachete
+{
+	weight = 1;
+};
+class ItemMacheteBroken
+{
+	weight = 1;
+};
+class ItemFlashlightBroken
+{
+	weight = 1;
+};
+class MeleeFlashlight
+{
+	weight = 1;
+};
+class ItemFlashlightRedBroken
+{
+	weight = 1;
+};
+class MeleeFlashlightRed
+{
+	weight = 1;
+};
+class ItemRadioBroken_DZE
+{
+	weight = 1;
+};
+class ItemAPSI_DZE
+{
+	weight = 1;
+};
+class ItemAPSIBroken_DZE
+{
+	weight = 1;
+};
+class ItemPilotmask_DZE
+{
+	weight = 1;
+};
+class ItemPilotmaskBroken_DZE
+{
+	weight = 1;
+};
+class ItemGasmask1_DZE
+{
+	weight = 1;
+};
+class ItemGasmask1Broken_DZE
+{
+	weight = 1;
+};
+class ItemGasmask2_DZE
+{
+	weight = 1;
+};
+class ItemGasmask2Broken_DZE
+{
+	weight = 1;
+};
+class ItemSolder_DZE
+{
+	weight = 1;
+};
+class ItemSolderBroken_DZE
+{
+	weight = 1;
+};
+class Notebook_bio_DZE
+{
+	weight = 1;
+};
+class Notebook_che_DZE
+{
+	weight = 1;
+};
+class Notebook_phy_DZE
+{
+	weight = 1;
+};
+class Notebook_secret_DZE
+{
+	weight = 1;
+};
+class Notebook_herbs_DZE
+{	
+	weight = 1;
+};
+class Document_Random_DZE
+{
+	weight = 1;
+};
+class Document_Military_DZE
+{
+	weight = 1;
+};
+class Document_Topsecret_DZE
+{
+	weight = 1;
+};
+class Manual_electronics_DZE
+{
+	weight = 1;
+};
+class Manual_camera_DZE
+{
+	weight = 1;
+};
+class Manual_repair_DZE
+{
+	weight = 1;
+};
+class Map_Military_DZE
+{
+	weight = 1;
+};
+class Map_Survivor_DZE
+{
+	weight = 1;
+};
+class ItemKeyKitBroken 
+{ 
+	weight = 1; 
 };

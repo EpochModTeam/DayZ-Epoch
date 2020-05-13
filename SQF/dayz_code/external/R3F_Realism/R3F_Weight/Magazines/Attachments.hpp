@@ -1,14 +1,4 @@
-﻿/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-
-class Attachment_ACOG 
+﻿class Attachment_ACOG 
 {
 	weight = 0.1;
 };
@@ -80,9 +70,6 @@ class Attachment_Sup556
 {
 	weight = 0.1;
 };
-
-//New
-
 class Attachment_ANPVS4 
 {
 	weight = 0.1;
@@ -140,4 +127,20 @@ class Attachment_Sup68
 class Attachment_Ghillie_Desert
 {
 	weight = 0.1;
+};
+class Attachment_Sup57 
+{ 
+	weight = 0.1; 
+};
+class Attachment_Sup939 
+{ 
+	weight = 0.1; 
+};
+class Attachment_Ghillie_Snow 
+{ 
+	weight = 0.1; 
+};
+class Attachment_Ghillie_Urban 
+{ 
+	weight = 0.1; 
 };

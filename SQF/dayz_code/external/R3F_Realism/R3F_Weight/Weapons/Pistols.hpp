@@ -154,3 +154,99 @@ class M1911_2_DZ
 {
 	weight = 0.9;
 };
+class CZ_75_D_COMPACT
+{
+	weight = 0.9;
+};
+class CZ_75_P_07_DUTY
+{
+	weight = 0.9;
+};
+class CZ_75_SP_01_PHANTOM
+{
+	weight = 0.9;
+};
+class CZ_75_SP_01_PHANTOM_SD
+{
+	weight = 0.9;
+};
+class M9_Camo_SD_DZ
+{
+	weight = 0.9;
+};
+class M93R_DZ
+{
+	weight = 0.9;
+};
+class P226_DZ
+{
+	weight = 0.9;
+};
+class P226_Silver_DZ
+{
+	weight = 0.9;
+};
+class P38_DZ
+{
+	weight = 0.9;
+};
+class PPK_DZ
+{
+	weight = 0.9;
+};
+class G17_MFL_DZ
+{
+	weight = 0.9;
+};
+class G17_SD_MFL_DZ
+{
+	weight = 1.1;
+};
+class G18_DZ
+{
+	weight = 0.9;
+};
+class Tokarew_TT33_DZ 		
+{ 	
+	weight = 0.9;
+};
+class Ruger_MK2_DZ 		
+{ 	
+	weight = 0.9;
+};
+class APS_DZ		
+{ 	
+	weight = 0.9;
+};
+class APS_SD_DZ 
+{ 	
+	weight = 0.9;
+};
+class TEC9_DZ 	
+{ 	
+	weight = 0.9;
+};
+class Colt_Revolver_DZ 	
+{ 	
+	weight = 0.9;
+};
+class CZ75P_DZ 		
+{ 	
+	weight = 0.9;
+};
+class CZ75D_DZ 		
+{ 	
+	weight = 0.9;
+};
+class CZ75SP_DZ 	
+{ 		
+	weight = 0.9;
+};
+class CZ75SP_SD_DZ 	
+{ 	
+	weight = 0.9;
+};
+class DesertEagle_DZ 
+{ 	
+	weight = 3.0;
+};

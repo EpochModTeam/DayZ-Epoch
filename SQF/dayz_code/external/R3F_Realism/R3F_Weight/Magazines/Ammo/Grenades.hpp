@@ -6,7 +6,6 @@ class HandGrenade_west
 {
 	weight = 0.5;
 };
-
 class 1Rnd_HE_M203
 {	
 	weight = 0.5;
@@ -79,7 +78,6 @@ class 6Rnd_SmokeYellow_M203
 {
 	weight = 3;
 };
-
 class 1Rnd_HE_GP25
 {	
 	weight = 0.5;
@@ -115,4 +113,40 @@ class 1Rnd_SmokeYellow_GP25
 class 1Rnd_SmokeGreen_GP25
 {
 	weight = 0.5;
+};
+class HandGrenade 
+{ 
+	weight = 0.5; 
+};
+class HandGrenade_Stone 
+{ 
+	weight = 0.5; 
+};
+class SmokeShell 
+{ 
+	weight = 0.5; 
+};
+class SmokeShellRed 
+{ 
+	weight = 0.5; 
+};
+class SmokeShellGreen 
+{ 
+	weight = 0.5; 
+};
+class SmokeShellYellow 
+{ 
+	weight = 0.5; 
+};
+class SmokeShellPurple 
+{ 
+	weight = 0.5; 
+};
+class SmokeShellBlue 
+{ 
+	weight = 0.5; 
+};
+class SmokeShellOrange 
+{ 
+	weight = 0.5; 
 };

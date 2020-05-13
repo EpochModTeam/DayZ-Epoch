@@ -104,3 +104,11 @@ class ItemBriefcaseS100oz
 {
 	weight = 3.8;
 };
+class ItemBriefcase_Base 
+{ 
+	weight = 1.0; 
+};
+class ItemBriefcaseS10oz 
+{ 
+	weight = 1.1; 
+};

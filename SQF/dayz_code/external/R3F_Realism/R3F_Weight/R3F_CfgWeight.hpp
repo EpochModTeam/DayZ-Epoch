@@ -70,6 +70,7 @@ class CfgWeight
 		#include "Magazines\Medical.hpp"
 		#include "Magazines\Trash.hpp"	
 		
+		#include "Magazines\Ammo\MeleeAmmo.hpp"
 		#include "Magazines\Ammo\LauncherAmmo.hpp"
 		#include "Magazines\Ammo\LMGAmmo.hpp"		
 		#include "Magazines\Ammo\PistolAmmo.hpp"
@@ -78,6 +79,7 @@ class CfgWeight
 		#include "Magazines\Ammo\SMGAmmo.hpp"
 		#include "Magazines\Ammo\SniperAmmo.hpp"		
 		#include "Magazines\Ammo\VehicleAmmo.hpp"	
+		#include "Magazines\Ammo\Grenades.hpp"	
 	};
 	class Backpacks
 	{

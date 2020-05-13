@@ -1,20 +1,10 @@
-﻿/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-
-class m107_TWS_EP1
+﻿class m107_TWS_EP1
 {
 	weight = 14.3;
 };
 class M24_des_EP1
 {
-	weight = 6;
+	weight = 7;
 };
 class M110_TWS_EP1
 {
@@ -26,7 +16,11 @@ class M110_NVG_EP1
 };
 class BAF_AS50_scoped
 {
-	weight = 5.6;
+	weight = 13;
+};
+class BAF_AS50_TWS
+{
+	weight = 13.2;
 };
 class BAF_LRR_scoped
 {
@@ -46,7 +40,7 @@ class L115A3_2_DZ
 };
 class Anzio_20
 {
-	weight = 14;
+	weight = 15.4;
 };
 class m107_DZ
 {
@@ -54,19 +48,19 @@ class m107_DZ
 };
 class M4SPR
 {
-	weight = 4.5;
+	weight = 6.8;
 };
 class DMR
 {
-	weight = 5.5;
+	weight = 8.5;
 };
 class DMR_DZ
 {
-	weight = 5.5;
+	weight = 8.5;
 };
 class DMR_Gh_DZ
 {
-	weight = 5.6;
+	weight = 8.7;
 };
 class Huntingrifle
 {
@@ -86,15 +80,15 @@ class KSVK_DZE
 };
 class M24
 {
-	weight = 6;
+	weight = 7;
 };
 class M24_DZ
 {
-	weight = 6;
+	weight = 7;
 };
 class M24_Gh_DZ
 {
-	weight = 6.1;
+	weight = 7.1;
 };
 class M40A3
 {
@@ -114,41 +108,41 @@ class M107
 };
 class SVD_NSPU_EP1
 {
-	weight =  6.9;
+	weight =  9.8;
 };
 class SVD_des_EP1
 {
-	weight =  6.3;
+	weight =  9;
 };
 class SVD
 {
-	weight =  6.2;
+	weight =  9;
 };
 class SVD_DZ
 {
-	weight =  6;
+	weight =  8.6;
 };
 class SVD_Gh_DZ
 {
-	weight =  6.1;
+	weight =  8.8;
 };
 class SVD_PSO1_DZ
 {
-	weight =  6.2;
+	weight =  9;
 };
 class SVD_PSO1_Gh_DZ
 {
-	weight =  6.3;
+	weight =  9.2;
 };
 class SVD_Camo
 {
-	weight =  6.3;
+	weight =  9.2;
 };
 class VSS_Vintorez
 {
-	weight = 3.2;
+	weight = 5.3;
 };
-//NEW
+
 class MSR_DZ
 {
 	weight = 3.2;
@@ -156,6 +150,18 @@ class MSR_DZ
 class RSASS_DZ
 {
 	weight = 3.2;
+};
+class RSASS_TWS_DZ 
+{
+	weight = 3.3; 
+};
+class RSASS_SD_DZ
+{
+	weight = 3.1;
+};
+class RSASS_TWS_SD_DZ
+{
+	weight = 3.5;
 };
 class XM2010_DZ
 {
@@ -179,7 +185,7 @@ class M1A_SC2_BL_Sniper_DZ
 };
 class SVD_PSO1_Gh_DES_DZ
 {
-	weight = 9.8;
+	weight = 9.4;
 };
 class SVD_NSPU_DZ
 {
@@ -231,13 +237,169 @@ class MK17_Sniper_SD_DZ
 };
 class M110_NV_DZ
 {
-	weight = 9.8;
+	weight = 7.5;
 };
-class M4A3_Camo_DZ
+class ksvk_Small
 {
-	weight = 9.8;
+	weight = 12;
 };
-class M4A3_Camo_ACOG_DZ
+class m107_Small
 {
-	weight = 9.8;
+	weight = 14;
 };
+class m107_TWS_EP1_Small
+{
+	weight = 14.3;
+};
+class DMR_SKN
+{
+	weight = 8.5;
+};
+class M21A5_DZ
+{
+	weight = 7.8;
+};
+class M21A5_SD_DZ
+{
+	weight = 8.0;
+};
+class CZ750_DZ
+{
+	weight = 7.5;
+};
+class SVD_Gold_DZ
+{
+	weight = 15.0;
+};
+class SVU_PSO1_DZ
+{
+	weight = 10.5;
+};
+class VSS_vintorez_DZE
+{
+	weight = 5.3;
+};
+class Mosin_BR_DZ
+{
+	weight = 7.0;
+};
+class Mosin_MFL_DZ
+{
+	weight = 7.2;
+};
+class Mosin_Belt_MFL_DZ
+{
+	weight = 7.4;
+};
+class Mosin_PU_MFL_DZ
+{
+	weight = 7.4;
+};
+class Mosin_PU_Belt_MFL_DZ
+{
+	weight = 7.6;
+};
+class MSR_SD_DZ
+{
+	weight = 10.6;
+};
+class MSR_NV_DZ
+{
+	weight = 10.8;
+};
+class MSR_NV_SD_DZ
+{
+	weight = 11.0;
+};
+class MSR_TWS_DZ
+{
+	weight = 11.0;
+};
+class MSR_TWS_SD_DZ
+{
+	weight = 11.2;
+};
+class XM2010_SD_DZ
+{
+	weight = 12.0;
+};
+class XM2010_NV_DZ
+{
+	weight = 12.2;
+};
+class XM2010_NV_SD_DZ
+{
+	weight = 12.4;
+};
+class XM2010_TWS_DZ
+{
+	weight = 12.4;
+};
+class XM2010_TWS_SD_DZ
+{
+	weight = 12.6;
+};
+class Anzio_20_DZ
+{
+	weight = 15.4;
+};
+class BAF_AS50_scoped_DZ
+{
+	weight = 13;
+};
+class m107_SKN
+{
+	weight = 14.0;
+};
+class M4SPR_DZE
+{
+	weight = 6.8;
+};
+class M200_CheyTac_DZ
+{
+	weight = 15.0;
+};
+class WA2000_DZ
+{
+	weight = 10.4;
+};
+class Barrett_MRAD_Iron_DZ
+{
+	weight = 12.6;
+};
+class Barrett_MRAD_CCO_DZ
+{
+	weight = 12.8;
+};
+class Barrett_MRAD_Sniper_DZ
+{
+	weight = 12.4;
+};
+class PMC_AS50_scoped 				
+{ 	
+	weight = 13;
+};
+class PMC_AS50_TWS 					
+{ 	
+	weight = 13.2; 
+};
+class CZ_750_S1_ACR 				
+{ 	
+	weight = 4.8; 
+};
+class BAF_AS50_scoped_Large 		
+{ 	
+	weight = 13; 
+};
+class BAF_AS50_TWS_Large 			
+{ 	
+	weight = 13.2; 
+};
+class PMC_AS50_scoped_Large 		
+{ 	weight = 13; 
+};
+class PMC_AS50_TWS_Large 			
+{ 	
+	weight = 13.2; 
+};
+

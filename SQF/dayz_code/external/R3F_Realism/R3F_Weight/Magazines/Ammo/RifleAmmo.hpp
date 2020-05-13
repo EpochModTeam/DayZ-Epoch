@@ -1,45 +1,4 @@
-﻿/****************************************************************************
-Copyright (C) 2010 Team ~R3F~
-This program is free software under the terms of the GNU General Public License version 3.
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
-@authors team-r3f.org
-@version 1.00
-@date 20101006
-*****************************************************************************/
-class Hatchet_Swing 
-{
-	weight = 0;
-};
-class Machete_Swing 
-{
-	weight = 0;
-};
-class Fishing_Swing 
-{
-	weight = 0;
-};
-class Crowbar_Swing
-{
-	weight = 0;
-};
-class Sledge_Swing
-{
-	weight = 0;
-};
-class Bat_Swing
-{
-	weight = 0;
-};
-class BatBarbed_Swing
-{
-	weight = 0;
-};
-class BatNails_Swing
-{
-	weight = 0;
-};
-class 5Rnd_762x54_Mosin
+﻿class 5Rnd_762x54_Mosin
 {
 	weight = 0.08;
 };
@@ -94,4 +53,80 @@ class 30Rnd_556x45_G36
 class 30Rnd_556x45_G36SD
 {
 	weight = 0.5;
+};
+class 60Rnd_545x39_AK_Taped
+{
+	weight = 1;
+};
+class 60Rnd_545x39_AKSD_Taped
+{
+	weight = 1;
+};
+class 60Rnd_556x45_Stanag_Taped
+{
+	weight = 1;
+};
+class 60Rnd_762x39_AK47_Taped
+{
+	weight = 1.6;
+};
+class 60Rnd_556x45_StanagSD_Taped 
+{ 
+	weight = 1; 
+};
+class 20Rnd_9x39_Groza9
+{
+	weight = 1;
+};
+class 20Rnd_9x39_Groza9SD
+{
+	weight = 1.0;
+};
+class 30Rnd_762x39_Groza1
+{
+	weight = 1;
+};
+class 30Rnd_762x39_Groza1SD
+{
+	weight = 1;
+};
+class 30Rnd_556x45_Aug
+{
+	weight = 1;
+};
+class ACR_30Rnd_680x43
+{
+	weight = 1;
+};
+class ACR_30Rnd_680x43_SD
+{
+	weight = 1;
+};
+class 30Rnd_6x35_KAC
+{
+	weight = 1;
+};
+class 20Rnd_762x51_HK417SD
+{
+	weight = 1;
+};
+class 20Rnd_762x51_HK417
+{
+	weight = 1;
+};
+class 60Rnd_762x54_DT 
+{ 
+	weight = 2; 
+};
+class 30Rnd_762x39_RK95 
+{ 
+	weight = 0.9; 
+};
+class 30Rnd_762x39_RK95SD 
+{ 
+	weight = 0.9; 
+};
+class 20Rnd_762x51_G3 
+{ 
+	weight = 0.8; 
 };

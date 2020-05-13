@@ -23,3 +23,7 @@ class ItemJerryMixed1
 {
 	weight = 2;
 };
+class CSGAS 
+{ 
+	weight = 2; 
+};

@@ -71,6 +71,14 @@ class 8Rnd_B_Saiga12_74Slug
 {
 	weight = 0.3;
 };
+class 8Rnd_B_Beneli_74Slug
+{
+	weight = 0.4;
+};
+class 8Rnd_B_Beneli_Pellets
+{
+	weight = 0.5;
+};
 class 8Rnd_B_Saiga12_Pellets
 {
 	weight = 0.3;
@@ -88,6 +96,14 @@ class 20Rnd_B_AA12_74Slug
 	weight = 1.2;
 };
 class 20Rnd_B_AA12_HE
+{
+	weight = 1.5;
+};
+class 20Rnd_B_Usas12_74Slug
+{
+	weight = 1.5;
+};
+class 20Rnd_B_Usas12_Pellets
 {
 	weight = 1.5;
 };
