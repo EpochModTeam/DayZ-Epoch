@@ -14,10 +14,10 @@ while {true} do {
 		8 cutText ["","PLAIN"];
 		localize "STR_EPOCH_LOST_RADIO_CONTACT" call dayz_rollingMessages;
 	} else {
-		if (_inGroup && scriptDone dayz_groupTags) then {
+		if (_inGroup && {scriptDone dayz_groupTags}) then {
 			dayz_groupTags = execVM "\z\addons\dayz_code\groups\groupTags.sqf";
 		};
-		
+
 		if (!isNull _lastGroup && {"ItemRadio" in items player}) then {
 			_oldGroup = group player;
 			[player] joinSilent _lastGroup;
@@ -27,18 +27,18 @@ while {true} do {
 			publicVariableServer "PVDZ_Server_UpdateGroup";
 			_lastGroup = grpNull;
 		};
-		
+
 		if (visibleMap or !isNull (uiNamespace getVariable["BIS_RscMiniMap",displayNull])) then {
 			_hasGPS = "ItemGPS" in items player;
-			_markBody = (dayz_markBody == 1 or (dayz_markBody == 2 && _hasGPS));
-			_markGroup = (dayz_markGroup == 1 or (dayz_markGroup == 2 && _hasGPS));
-			_markSelf = (dayz_markSelf == 1 or (dayz_markSelf == 2 && _hasGPS));
-			
+			_markBody = (dayz_markBody == 1 or (dayz_markBody == 2 && {_hasGPS}));
+			_markGroup = (dayz_markGroup == 1 or (dayz_markGroup == 2 && {_hasGPS}));
+			_markSelf = (dayz_markSelf == 1 or (dayz_markSelf == 2 && {_hasGPS}));
+
 			_index = 0;
 			{
 				_self = _x == player;
 				_vehicle = vehicle _x;
-				if ((_self or _markGroup) && (!_self or _markSelf) && (effectiveCommander _vehicle == _x)) then {
+				if ((_self or _markGroup) && {!_self or _markSelf} && {effectiveCommander _vehicle == _x}) then {
 					_pos = [_x] call FNC_GetPos;
 					deleteMarkerLocal format["groupMember%1",_index];
 					_marker = createMarkerLocal [format["groupMember%1",_index],_pos];
@@ -50,14 +50,14 @@ while {true} do {
 				};
 				_index = _index + 1;
 			} count _group;
-			
+
 			// Remove markers for group members that left
 			_count = count _group;
 			if (dayz_oldMemberCount > _count) then {
 				for "_i" from _count to dayz_oldMemberCount do {deleteMarkerLocal format["groupMember%1",_i];};
 			};
 			dayz_oldMemberCount = _count;
-			
+
 			if (_markBody) then {
 				_bodyCount = 0;
 				_name = name player;
@@ -74,7 +74,7 @@ while {true} do {
 						};
 					};
 				} count allDead;
-				
+
 				// Remove markers for bodies that were deleted
 				if (dayz_oldBodyCount > _bodyCount) then {
 					for "_i" from _bodyCount to dayz_oldBodyCount do {deleteMarkerLocal format["MyBody%1",_i];};
@@ -85,6 +85,6 @@ while {true} do {
 			};
 		};
 	};
-	
+
 	uiSleep 1;
 };

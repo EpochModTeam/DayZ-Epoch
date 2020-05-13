@@ -4,14 +4,14 @@ _add = _this select 0;
 _uid = _this select 1;
 
 if (typeName _add == "SCALAR") exitWith {
-	switch _add do {
-		case -1: { //Promote
+	call {
+		if (_add == -1) exitWith { //Promote
 			(group player) selectLeader _uid;
 		};
-		case 1: {
+		if (_add == 1) exitWith {
 			systemChat format[localize "STR_EPOCH_PLAYER_JOINED",_uid];
 		};
-		case 2: {
+		if (_add == 2) exitWith {
 			if (_uid == getPlayerUID player) then {
 				localize "STR_EPOCH_GROUP_KICKED" call dayz_rollingMessages;
 				terminate dayz_groupTags;
@@ -20,14 +20,14 @@ if (typeName _add == "SCALAR") exitWith {
 				systemChat format[localize "STR_EPOCH_PLAYER_KICKED",name (_uid call dayz_getPlayer)];
 			};
 		};
-		case 3: {
+		if (_add == 3) exitWith {
 			systemChat format[localize "STR_EPOCH_PLAYER_LEFT",_uid];
 			if (count (player call dayz_filterGroup) == 1) then {
 				terminate dayz_groupTags;
 				8 cutText ["","PLAIN"];
 			};
 		};
-		case 4: {
+		if (_add == 4) exitWith {
 			localize "STR_EPOCH_GROUP_DISBANDED" call dayz_rollingMessages;
 			terminate dayz_groupTags;
 			8 cutText ["","PLAIN"];
@@ -40,8 +40,12 @@ if (_add) then {
 	_inviter = _uid select 0;
 	_recipient = _uid select 1;
 	dayz_activeInvites set [count dayz_activeInvites,_uid];
-	if (!isDedicated && {_recipient == getPlayerUID player} && {!dayz_requireRadio or {dayz_requireRadio && "ItemRadio" in items player}}) then {
-		localize "STR_EPOCH_INVITE_NEW" call dayz_rollingMessages;
+	if (!isDedicated && {_recipient == getPlayerUID player} && {!dayz_requireRadio or {dayz_requireRadio && {"ItemRadio" in items player}}}) then {
+		private "_name";
+
+		_name = toString(_uid select 2);
+
+		 format[localize "STR_EPOCH_INVITE_NEW",_name] call dayz_rollingMessages;
 	};
 } else {
 	// Remove all invites to this player
@@ -60,7 +64,7 @@ if (isServer) then {
 	PVDZ_groupInvite = _this;
 	{
 		_unit = getPlayerUID _x;
-		if (_unit != "" && ((!_add && _unit != _recipient) or (_add && _unit != _inviter))) then {
+		if (_unit != "" && {(!_add && {_unit != _recipient}) or (_add && {_unit != _inviter})}) then {
 			// Don't use regular PV because JIP clients don't need it (dayz_activeInvites is synced to them in server_playerLogin)
 			owner _x publicVariableClient "PVDZ_groupInvite";
 		};

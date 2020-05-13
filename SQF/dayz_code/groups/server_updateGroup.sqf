@@ -2,8 +2,8 @@ private ["_event","_groupUIDs","_kickedUID","_name","_newGroup","_player","_play
 
 _event = _this select 0;
 _player = _this select 1;
-_kickedUID = if (count _this > 2) then {_this select 2} else {"0"};
-_name = if (alive _player) then {name _player} else {"unknown"};
+_kickedUID = ["0",_this select 2] select (count _this > 2);
+_name = ["unknown",name _player] select (alive _player);
 _playerUID = getPlayerUID _player;
 
 if (_event < 3) then {
@@ -22,29 +22,29 @@ if (_event == -1) exitWith {
 
 _groupUIDs = [];
 {
-	if (damage _x < 1 && isPlayer _x) then {
+	if (damage _x < 1 && {isPlayer _x}) then {
 		_groupUIDs set [count _groupUIDs,getPlayerUID _x];
 	};
 } count (units group _player);
 
 _newGroup = [];
-_newGroup = switch _event do {
+_newGroup = call {
 	//Join
-	case 1: {_groupUIDs};
+	if (_event == 1) exitwith {_groupUIDs};
 	//Kick (target was already kicked from group)
-	case 2: {
+	if (_event == 2) exitwith {
 		_name = _kickedUID;
 		format["CHILD:204:%1:%2:%3:",_name,dayZ_instance,[]] call server_hiveWrite;
 		_groupUIDs
 	};
 	//Leave
-	case 3: {
+	if (_event == 3) exitwith {
 		dayz_groupLeft = true;
 		(owner _player) publicVariableClient "dayz_groupLeft";
 		(_groupUIDs - [_playerUID])
 	};
 	//Disband
-	case 4: {
+	if (_event == 4) exitwith {
 		_name = 0; //Not needed
 		dayz_groupDisbanded = true;
 		(owner _player) publicVariableClient "dayz_groupDisbanded";
@@ -54,7 +54,7 @@ _newGroup = switch _event do {
 
 //Update all group members' saved group in DB
 {
-	_save = if (_event == 3 && _x == _playerUID) then {[]} else {_newGroup};
+	_save = [_newGroup,[]] select (_event == 3 && {_x == _playerUID});
 	format["CHILD:204:%1:%2:%3:",_x,dayZ_instance,_save] call server_hiveWrite;
 } count _groupUIDs;
 

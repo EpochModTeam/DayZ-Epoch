@@ -8,7 +8,7 @@ if (count (units group player) > 1) then {
 
 _savedGroup = (PVCDZ_plr_Login select 10) - [getPlayerUID player];
 
-if (count _savedGroup > 0 && {!dayz_requireRadio or {dayz_requireRadio && "ItemRadio" in items player}}) then {
+if (count _savedGroup > 0 && {!dayz_requireRadio or {dayz_requireRadio && {"ItemRadio" in items player}}}) then {
 	{
 		//Only auto join player into group if leader is in their savedGroup
 		_leader = leader _x;
@@ -17,7 +17,7 @@ if (count _savedGroup > 0 && {!dayz_requireRadio or {dayz_requireRadio && "ItemR
 			[player] joinSilent _x;
 			if (count (units _oldGroup) == 0) then {deleteGroup _oldGroup;};
 			format[localize "STR_EPOCH_REJOINED_GROUP",name _leader] call dayz_rollingMessages;
-			
+
 			// Update saved group in DB
 			PVDZ_Server_UpdateGroup = [1,player];
 			publicVariableServer "PVDZ_Server_UpdateGroup";
