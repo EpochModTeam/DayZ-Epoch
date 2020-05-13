@@ -1563,6 +1563,7 @@ class 60Rnd_30mm_ATKMK44_AP_ACR: 140Rnd_30mm_ATKMK44_HE_ACR
 };
 class PG15V: Vehicle_ammo_base
 {
+	scope = 2;
 	displayName = $STR_DZ_MAG_1RND_PG15V_NAME;
 	descriptionShort = $STR_DZ_MAG_1RND_PG15V_DESC;	
 	reloadAction = "";
@@ -1584,6 +1585,7 @@ class 40rnd_PG15V: PG15V
 };
 class AT3: Vehicle_ammo_base
 {
+	scope = 2;
 	displayName = $STR_DZ_MAG_1RND_AT3_NAME;
 	descriptionShort = $STR_DZ_MAG_1RND_AT3_DESC;
 	nameSound = "missiles";
@@ -1603,6 +1605,7 @@ class 4rnd_AT3: AT3
 };
 class 1Rnd_AT3 : Vehicle_ammo_base
 {
+	scope = 2;
 	displayName = $STR_DZ_MAG_1RND_AT3_NAME;
 	descriptionShort = $STR_DZ_MAG_1RND_AT3_DESC;	
 	ammo = "M_AT3_AT";
