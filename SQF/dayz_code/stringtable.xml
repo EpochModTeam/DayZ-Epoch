@@ -19281,7 +19281,11 @@
 			<German>Installationsanleitung für die Fahrzeugbewaffnung.</German>
 			<Russian>Руководство по установке оружия.</Russian>
 			<Czech>Návod na instalaci zbraně na vozidlo.</Czech>
-		</Key>
+		</Key>,
+		<Key ID="STR_EPOCH_VEHUP_IN_PROGRESS">
+			<English>Vehicle Upgrade in progress, please wait...</English>
+			<German>Fahrzeug-Upgrade im Gange, bitte warte...</German>
+		</Key>		
 		<Key ID="STR_EPOCH_VEHUP_SUCCESS">
 			<English>Vehicle Upgrade Successful.</English>
 			<German>Fahrzeug-Upgrade abgeschlossen.</German>
@@ -23955,9 +23959,9 @@
 			<Russian>Вы снова присоединились к группе %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_NEW">
-			<English>New group invite - Press F5 to view</English>
-			<German>Neue Gruppeneinladung - Drücke F5 um sie dir anzusehen</German>
-			<Russian>Приглашение от другой группы, нажмите F5 чтобы посмотреть</Russian>
+            <English>New group invite from %1 - Press F5 to view</English>
+            <German>Neue Gruppeneinladung von %1 - Drücke F5 um sie dir anzusehen</German>
+            <Russian>Групповое приглашение от %1, нажмите F5 чтобы посмотреть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_INVITE_PENDING">
 			<English>This player already has a pending invite.</English>
@@ -25079,18 +25083,10 @@
 			<English>A small stash on the ground to store some items.</English>
 			<German>Ein kleines Versteck in der Erde, um Gegenstände zu verstauen.</German>
 		</Key>	
-		<Key ID="STR_VEH_NAME_STASH_MEDIUM_DESC">
-			<English>A medium stash on the ground to store some items.</English>
-			<German>Ein mittelgroßes Versteck in der Erde, um Gegenstände zu verstauen.</German>
-		</Key>			
 		<Key ID="STR_EPOCH_CRAFT_SMALL_STASH">
 			<English>Craft Small Stash</English>
 			<German>Kleine Lagergrube herstellen</German>
 		</Key>		
-		<Key ID="STR_EPOCH_CRAFT_MEDIUM_STASH">
-			<English>Craft Medium Stash</English>
-			<German>Mittlere Lagergrube herstellen</German>
-		</Key>	
 		<Key ID="STR_EQUIP_SOLDER">
 			<English>Portable Solder</English>
 			<German>Tragbarer Lötkolben</German>
@@ -25408,7 +25404,11 @@
 			<English>Needed items:</English>
 			<German>Benötigte Gegenstände:</German>
 		</Key>		
-	
+		<Key ID="STR_CRAFTING_NEEDED_TOOLS_SHOVEL_ETOOL">
+			<English>%1 or %2</English>
+			<German>%1 oder %2</German>
+		</Key>	
+		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
