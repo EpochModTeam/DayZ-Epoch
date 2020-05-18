@@ -1,5 +1,6 @@
 class Dayz_Plant3: Plant_Base {
 	model = "z\addons\dayz_communityassets\models\comfrey_up_small.p3d";
+	vehicleClass = "DayZ Epoch Buildings";
 	transportMaxMagazines = 1;
 	class TransportMagazines {
 		class _xx_leaf {
@@ -11,6 +12,7 @@ class Dayz_Plant3: Plant_Base {
 
 class Dayz_Plant2: Plant_Base {
 	model = "z\addons\dayz_communityassets\models\comfrey_up_mid.p3d";
+	vehicleClass = "DayZ Epoch Buildings";
 	transportMaxMagazines = 2;
 	class TransportMagazines {
 		class _xx_leaf {
@@ -22,6 +24,7 @@ class Dayz_Plant2: Plant_Base {
 
 class Dayz_Plant1: Plant_Base {
 	model = "z\addons\dayz_communityassets\models\comfrey_up.p3d";
+	vehicleClass = "DayZ Epoch Buildings";
 	transportMaxMagazines = 3;
 	class TransportMagazines {
 		class _xx_leaf {

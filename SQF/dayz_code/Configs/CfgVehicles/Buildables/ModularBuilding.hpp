@@ -37,7 +37,7 @@ class MetalFloor_DZ: ModularItems {
 	mapSize = 2;
 	armor = 3000;
 	displayName = $STR_EPOCH_METALFLOOR;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	GhostPreview = "MetalFloor_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {
@@ -60,7 +60,7 @@ class WoodRamp_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2000;
 	displayName = $STR_EPOCH_WOODRAMP;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	GhostPreview = "WoodRamp_Preview_DZ";
 };
 class CinderWallHalf_DZ: ModularItems {
@@ -73,7 +73,7 @@ class CinderWallHalf_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2200;
 	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	upgradeBuilding[] = {"CinderWall_DZ",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
 	maintainBuilding[] = {{"MortarBucket",1}};
 	GhostPreview = "CinderWallHalf_Preview_DZ";
@@ -99,7 +99,7 @@ class CinderWall_DZ: ModularItems {
 	mapSize = 2;
 	armor = 3400;
 	displayName = $STR_EPOCH_CINDERBLOCKWALL;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"MortarBucket",1}};
 	GhostPreview = "CinderWall_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -125,7 +125,7 @@ class CinderWallDoorway_DZ: ModularItems {
 	mapSize = 2;
 	armor = 3400;
 	displayName = $STR_EPOCH_BLOCKGARAGEDOORWAY;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"MortarBucket",1}};
 	upgradeBuilding[] = {"CinderWallDoor_DZ",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
 	GhostPreview = "CinderWallDoorway_Preview_DZ";
@@ -151,7 +151,7 @@ class CinderWallSmallDoorway_DZ: ModularItems {
 	mapSize = 2;
 	armor = 3400;
 	displayName = $STR_EPOCH_BLOCKDOORWAY;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"MortarBucket",1}};
 	upgradeBuilding[] = {"CinderWallDoorSmall_DZ",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
 	GhostPreview = "CinderWallSmallDoorway_Preview_DZ";
@@ -178,7 +178,7 @@ class WoodFloor_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2000;
 	displayName = $STR_EPOCH_FLOORCEILING;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",4}};
 	GhostPreview = "WoodFloor_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -203,7 +203,7 @@ class WoodFloorHalf_DZ: ModularItems {
 	mapSize = 2;
 	armor = 1000;
 	displayName = $STR_EPOCH_FLOORCEILINGHALF;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",2}};
 	constructioncount = 2;
 	GhostPreview = "WoodFloorHalf_Preview_DZ";
@@ -229,7 +229,7 @@ class WoodFloorQuarter_DZ: ModularItems {
 	mapSize = 2;
 	armor = 600;
 	displayName = $STR_EPOCH_FLOORCEILINGQUARTER;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	constructioncount = 1;
 	GhostPreview = "WoodFloorQuarter_Preview_DZ";
@@ -256,7 +256,7 @@ class WoodLargeWall_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWOODWALL;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	upgradeBuilding[] = {"WoodLargeWallWin_DZ",{"ItemToolbox"},{{"PartGlass",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodLargeWall_Preview_DZ";
@@ -282,7 +282,7 @@ class WoodLargeWallDoor_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWALLWITHDOORWAY;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{"ItemToolbox"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	GhostPreview = "WoodLargeWallDoor_Preview_DZ";
@@ -307,7 +307,7 @@ class WoodLargeWallWin_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWALLWITHWINDOW;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodLargeWallWin_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -332,7 +332,7 @@ class WoodSmallWall_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2000;
 	displayName = $STR_EPOCH_WOODWALL;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodSmallWallWin_DZ",{"ItemToolbox"},{{"PartGlass",1}}};
 	GhostPreview = "WoodSmallWall_Preview_DZ";
@@ -357,7 +357,7 @@ class WoodSmallWallThird_DZ: ModularItems {
 	mapSize = 2;
 	armor = 600;
 	displayName = $STR_EPOCH_WOODWALLTHIRDPART;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	constructioncount = 1;
 	GhostPreview = "WoodSmallWallThird_Preview_DZ";
@@ -382,7 +382,7 @@ class WoodSmallWallWin_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2000;
 	displayName = $STR_EPOCH_WALLWITHWINDOW;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodSmallWallWin_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -406,7 +406,7 @@ class WoodSmallWallDoor_DZ: ModularItems {
 	mapSize = 2;
 	armor = 2000;
 	displayName = $STR_EPOCH_WALLWITHDOORWAY;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	upgradeBuilding[] = {"Land_DZE_WoodDoor",{"ItemToolbox"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodSmallWallDoor_Preview_DZ";
@@ -432,7 +432,7 @@ class WoodStairs_DZ: ModularItems {
 	mapSize = 2;
 	armor = 600;
 	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodStairsRails_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairs_Preview_DZ";
@@ -447,7 +447,7 @@ class WoodLadder_DZ: ModularItems {
 	mapSize = 2;
 	armor = 300;
 	displayName = $STR_EPOCH_WOODLADDER;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "WoodLadder_Preview_DZ";
 	ladders[] = {{"start1","end1"}};
@@ -463,7 +463,7 @@ class WoodStairsRails_DZ: ModularItems {
 	mapSize = 2;
 	armor = 700;
 	displayName = $STR_EPOCH_WOODSTAIRSRAILS;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "WoodStairs_Preview_DZ";
 };
@@ -478,13 +478,14 @@ class WoodStairsSans_DZ: ModularItems {
 	mapSize = 2;
 	armor = 500;
 	displayName = $STR_EPOCH_WOODSTAIRS;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodStairs_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairsSans_Preview_DZ";
 };
 
-// ghost models
+
+// Ghost previews
 class CinderWallSmallDoorway_Preview_DZ: NonStrategic {
 	scope = public;
 	destrType = "DestructNo";
@@ -495,7 +496,7 @@ class CinderWallSmallDoorway_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Cinder Doorway Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class CinderWallDoorway_Preview_DZ: NonStrategic {
 	scope = public;
@@ -507,7 +508,7 @@ class CinderWallDoorway_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Cinder Garage Doorway Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class MetalFloor_Preview_DZ: NonStrategic {
 	scope = public;
@@ -519,7 +520,7 @@ class MetalFloor_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Metal Floor Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodRamp_Preview_DZ: NonStrategic {
 	scope = public;
@@ -531,7 +532,7 @@ class WoodRamp_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Wood Ramp Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 
 };
 class CinderWallHalf_Preview_DZ: NonStrategic {
@@ -544,7 +545,7 @@ class CinderWallHalf_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Cinder Block Wall 1/2 Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class CinderWall_Preview_DZ: NonStrategic {
 	scope = public;
@@ -556,7 +557,7 @@ class CinderWall_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Cinder Block Wall Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 
 class WoodFloorQuarter_Preview_DZ: NonStrategic {
@@ -569,7 +570,7 @@ class WoodFloorQuarter_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Floor 1/4 Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodFloorHalf_Preview_DZ: NonStrategic {
 	scope = public;
@@ -581,7 +582,7 @@ class WoodFloorHalf_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Floor 1/2 Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodSmallWall_Preview_DZ: NonStrategic {
 	scope = public;
@@ -593,7 +594,7 @@ class WoodSmallWall_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Small Wall Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodSmallWallThird_Preview_DZ: NonStrategic {
 	scope = public;
@@ -605,7 +606,7 @@ class WoodSmallWallThird_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Small Wall Preview 1/3";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodSmallWallWin_Preview_DZ: NonStrategic {
 	scope = public;
@@ -617,7 +618,7 @@ class WoodSmallWallWin_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Small Wall Window Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodFloor_Preview_DZ: NonStrategic {
 	scope = public;
@@ -629,7 +630,7 @@ class WoodFloor_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Wood Floor Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodSmallWallDoor_Preview_DZ: NonStrategic {
 	scope = public;
@@ -641,7 +642,7 @@ class WoodSmallWallDoor_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Small Wall Door Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodLargeWall_Preview_DZ: NonStrategic {
 	scope = public;
@@ -653,7 +654,7 @@ class WoodLargeWall_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Large Wall Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodLargeWallDoor_Preview_DZ: NonStrategic {
 	scope = public;
@@ -665,7 +666,7 @@ class WoodLargeWallDoor_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Large Wall Door Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodLargeWallWin_Preview_DZ: NonStrategic {
 	scope = public;
@@ -677,7 +678,7 @@ class WoodLargeWallWin_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Large Wall Window Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 
 class WoodStairs_Preview_DZ: NonStrategic {
@@ -690,7 +691,7 @@ class WoodStairs_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Wood Stairs Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodStairsSans_Preview_DZ: NonStrategic {
 	scope = public;
@@ -702,7 +703,7 @@ class WoodStairsSans_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Wood Stairs Sans Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 
 class WoodLadder_Preview_DZ: NonStrategic {
@@ -715,7 +716,7 @@ class WoodLadder_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Wood Stairs Sans Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodDoor_Preview_DZ: NonStrategic {
 	scope = public;
@@ -727,7 +728,7 @@ class WoodDoor_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Door Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class LargeWoodDoor_Preview_DZ: NonStrategic {
 	scope = public;
@@ -739,7 +740,7 @@ class LargeWoodDoor_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Large Door Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };
 class GarageWoodDoor_Preview_DZ: NonStrategic {
 	scope = public;
@@ -751,5 +752,5 @@ class GarageWoodDoor_Preview_DZ: NonStrategic {
 	mapSize = 2;
 	armor = 1000;
 	displayName = "Garage Door Preview";
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 };

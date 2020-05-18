@@ -333,19 +333,20 @@ class CfgVehicles
 	class BuiltItems;
 	class Building;
 	class ReammoBox;
+	class Land_A_tent;
 
-	#include "RepairParts.hpp" //names for all reapir parts. Needs moving to hitpoints
+	#include "RepairParts.hpp"
 	//ZEDS
-	#include "Zeds\Zeds.hpp" //old type zeds
+	#include "Zeds\Zeds.hpp" //All type zeds
 	#include "Zeds\ViralZeds.hpp" //Viral type zeds
-	#include "Zeds\WildZeds.hpp" //Viral type zeds
-	#include "Zeds\SwarmZeds.hpp" //Swarm
-	#include "Zeds\PlayerZeds.hpp"
+	#include "Zeds\WildZeds.hpp" //Wild type zeds
+	#include "Zeds\SwarmZeds.hpp" //Swarm type zeds
+	#include "Zeds\PlayerZeds.hpp" //Player type zeds
 	//Skins
 	#include "Skins\Female.hpp"
 	#include "Skins\Male.hpp"
 	//Bags
-	#include "Bags.hpp"
+	#include "Bags.hpp"	// Backpacks
 	//DZAnimal and DZ_Fin
 	#include "Animal.hpp"
 
@@ -421,13 +422,8 @@ class CfgVehicles
 	#include "Boat\Seafox.hpp"
 
 	//Includes all Building Stuff
-	// This parent class is made to make referring to these objects easier later with allMissionObjects
-	#include "Buildings\HouseDZ.hpp"
-	//Fire
-	#include "Buildings\Land_Fire.hpp"
-	//Buildings
+	//Houses
 	#include "Buildings\Land_A_Crane_02b.hpp"
-	#include "Buildings\Land_A_FuelStation_Feed.hpp"
 	#include "Buildings\Land_A_TVTower_Mid.hpp"
 	#include "Buildings\Land_A_TVTower_Top.hpp"
 	#include "Buildings\Land_Farm_WTower.hpp"
@@ -445,66 +441,56 @@ class CfgVehicles
 	#include "Buildings\Land_telek1.hpp"
 	#include "Buildings\Land_VASICore.hpp"
 	#include "Buildings\Land_Vysilac_FM.hpp"
-	#include "Buildings\WarfareBBaseStructure.hpp"
-	#include "Buildings\WaterSources.hpp"
+	#include "Buildings\WarfareBBaseStructure.hpp"	
 	#include "Buildings\Land_houseV_2T2.hpp"
-	#include "Buildings\Land_Ind_Oil_Pump_EP1_DZE.hpp"
-
-	//WeaponHolder
-	#include "WeaponHolder.hpp"
-
-	//itemBox's
-	//#include "CardboardBox.hpp"
-	#include "LootContainer.hpp"
-
-	//Tents,storage
-	//#include "Storage.hpp"
+	#include "Buildings\Land_Ind_Oil_Pump_EP1_DZE.hpp"	//Oil Pump without sound
+	#include "Buildings\Fuelstations.hpp"
+	#include "Buildings\land_ibr_hangar.hpp" //Works only if Lingor is loaded
 	
-	// Traps 
-	#include "Traps.hpp"
-
-	//Antihack
-	#include "antihack_logic.hpp"
-	#include "antihack_plants.hpp"
-	//#include "antihack_weaponholders.hpp"
+	#include "Land_Fire.hpp"	
+	#include "WaterSources.hpp"	
+	#include "Blood_Trail_DZ.hpp"
+	#include "DebugBox.hpp"
+	#include "Graves.hpp" // GraveDZE and Massgrave
+	#include "Veins.hpp" //Veins and Wrecks
+	#include "SupplyCrate.hpp" //Supply Crate and Wreck
+	#include "InfectedCamps.hpp"		
 	
-	class Land_CncBlock_AntiHack: NonStrategic
-	{
-		scope=public;
-		vehicleClass="Misc";
-		//model = \Ca\misc3\CncBlock_D;
-		model = "z\addons\dayz_communityassets\models\CncBlock_D.p3d";
-		Icon = "\Ca\misc3\Data\Icons\icon_cnc_con_barrier_CA.paa";
-		mapSize = 4;
-		displayName=$STR_MISC_CNCBLOCK_D;
-		armor=150;
+	//Buildables
+	class DZ_storage_base : Land_A_tent {
+		scope = private;
+		armor = 5;
+		displayname = $STR_VEH_NAME_STASH;
+		icon = "";
+		mapsize = 3;
+		transportMaxMagazines = 0;
+		transportMaxWeapons = 0;
+		transportMaxBackpacks = 0;	
+		constructioncount = 1;
+		requireplot = 0;
+		nounderground = 0;
+		offset[] = {0,3,1};
 	};
 	
-	//EPOCH
-	#include "DZE\Wrecks.hpp"
-	#include "DZE\Doors.hpp"
-	#include "DZE\Prop_Defs.hpp"
-	#include "DZE\Veins.hpp"
-	#include "DZE\ModularBuilding.hpp"
-	class Land_A_tent;	// External class reference
-	#include "DZE\Grave.hpp"
+	#include "Buildables\Stashes.hpp"
+	#include "Buildables\Tents.hpp"
+	#include "Buildables\Storage.hpp"
+	#include "Buildables\LockableStorage.hpp"
+	#include "Buildables\Traps.hpp"	
+	#include "Buildables\Generator.hpp"	
+	#include "Buildables\Doors.hpp"
+	#include "Buildables\ModularBuilding.hpp"	
+	#include "Buildables\ModularWrecks.hpp"	
+	#include "Buildables\Misc.hpp"		
+	
+	//Loot Container
+	#include "LootContainer\AmmoCrates.hpp"
+	#include "LootContainer\CardboardBox.hpp"
+	
+	//WeaponHolder	
 	class WeaponHolder;	// External class reference
-	#include "DZE\LockboxStorage.hpp"
-	#include "DZE\VaultStorage.hpp"
-	#include "DZE\TentStorage.hpp"
+	#include "WeaponHolder.hpp"	
 	
-	
-	//Blood Trail
-	#include "Buildings\Blood_Trail_DZ.hpp"
-
-	class waterHoleProxy: House {
-		model = "z\addons\dayz_communityassets\models\waterHoleProxy.p3d";
-	};
-	
-	//Camps
-	#include "InfectedCamps\IC_Fireplace1.hpp"
-
-	//class WeaponHolder;
 	class Plant_Base: WeaponHolder {
 		scope = public;
 		icon = "";
@@ -518,77 +504,29 @@ class CfgVehicles
 			init="(_this select 0)setVariable['permaLoot',true];";
 		};
 		supplyRadius = 1;
-	};
+	};	
+	
 	#include "gathered_plants.hpp"
-	class Generator_Base: Land_A_tent //Vanilla generator uses SkodaBase but is currently not functional
+	
+	//Antihack
+	#include "AntiHack\antihack_logic.hpp"
+	#include "AntiHack\antihack_plants.hpp"
+	
+	class Land_CncBlock_AntiHack: NonStrategic
 	{
-		model = "\dayz_equip\models\generator_gear.p3d";
-		picture = "\dayz_equip\textures\equip_generator_ca.paa";
-		displayName="Generator";
+		scope = public;
+		vehicleClass = "Misc";
+		model = "z\addons\dayz_communityassets\models\CncBlock_D.p3d";
+		Icon = "\Ca\misc3\Data\Icons\icon_cnc_con_barrier_CA.paa";
+		mapSize = 4;
+		displayName = $STR_MISC_CNCBLOCK_D;
+		armor = 150;
 	};
-	class Generator_DZ: Generator_Base
-	{
-		scope = public; // vanilla uses protected
-		transportMaxWeapons=0;
-		transportmaxbackpacks = 0;
-		transportMaxMagazines=10;
-		displayName = "Generator";
-		weapons[] = {};
-		magazines[] = {};
-		class TransportBackpacks{};
-		class TransportMagazines{};
-		class TransportWeapons{};
-		class TransportItems{};
-		maximumLoad = 200;
-		supplyRadius = -1;
-		memoryPointSupply = "";
-		
-		soundengineoffext[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-stop-1", 0.398107, 1, 250};
-		soundengineonext[] = {"ca\sounds\vehicles\Wheeled\sedan\ext\ext-sedan-start-1", 0.398107, 1, 250};		
-		// Epoch values
-		destrType = "DestructNo";
-		cost = 100;
-		offset[] = {0,1.5,0};
-		model = "\dayz_equip\models\generator.p3d";
-		icon = "\ca\data\data\Unknown_object.paa";
-		mapSize = 2;
-		armor = 400;		
-		vehicleClass = "Fortifications";
-		constructioncount = 1;
-		removeoutput[] = {{"ItemGenerator",1}};
-		requireplot = 0;
-		nounderground = 0;
+	
+	class waterHoleProxy: House {
+		model = "z\addons\dayz_communityassets\models\waterHoleProxy.p3d";
+	};	
 
-		class Turrets {};
-		
-		/* // Vanilla generator actions below are currently not functional, Epoch has these in fn_selfActions
-		class UserActions
-		{
-			class EngineOn
-			{
-				displayNameDefault = "Switch On";
-				displayName = "Switch On";
-				position = "";
-				shortcut = "EngineOn";
-				radius = 2.7;
-				onlyForPlayer = 1;
-				condition = "alive this and !isEngineOn this";
-				statement = "[this,true] call dayz_engineSwitch";
-			};
-			class EngineOff: EngineOn
-			{
-				displayNameDefault = "Switch Off";
-				displayName = "Switch Off";
-				position = "";
-				shortcut = "EngineOn";
-				radius = 2.7;
-				onlyForPlayer = 1;
-				condition = "alive this and isEngineOn this";
-				statement = "player action ['engineOff', this];";
-			};
-		};
-		*/
-	};
 	class ThingEffect;
 	class FxCartridge_Mp7: ThingEffect
 	{
@@ -601,7 +539,3 @@ class CfgVehicles
 		airRotation = 1.0;
 	};
 };
-/*
-class CfgNonAIVehicles { //IN CfgNonAIVehicles.hpp
-	#include "StreetLamps.hpp"
-};*/

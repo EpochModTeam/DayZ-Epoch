@@ -98,14 +98,15 @@ class Land_Fire_barrel : Land_Fire
 			statement = "[this,false] call dayz_inflame_other";
 		};
 	};
+	vehicleClass = "DayZ Epoch Buildings";
 };
 
 class Land_Fire_DZ : Land_Fire {
-		transportMaxMagazines = 1;
-		transportMaxWeapons = 0;
-		transportMaxBackpacks = 0;
-		offset[] = {0,1,0};
-		constructioncount = 1;
+	transportMaxMagazines = 1;
+	transportMaxWeapons = 0;
+	transportMaxBackpacks = 0;
+	offset[] = {0,1,0};
+	constructioncount = 1;
 	class UserActions {
 		class lightup {
 			displayNameDefault = $STR_ACTIONS_LIGHTFIRE;
@@ -126,14 +127,15 @@ class Land_Fire_DZ : Land_Fire {
 			statement = "[this,false] call dayz_inflame";
 		};
 	};
+	vehicleClass = "DayZ Epoch Buildings";
 };
 	
 class Base_Fire_DZ : Land_Fire {
-		displayName = "Permanent fireplace";
-		transportMaxMagazines = 1;
-		transportMaxWeapons = 0;
-		transportMaxBackpacks = 0;
-		model = "\Ca\misc3\Campfire";
+	displayName = "Permanent fireplace";
+	transportMaxMagazines = 1;
+	transportMaxWeapons = 0;
+	transportMaxBackpacks = 0;
+	model = "\Ca\misc3\Campfire";
 };
 
 class Land_Camp_Fire_DZ : Land_Fire {
@@ -141,6 +143,7 @@ class Land_Camp_Fire_DZ : Land_Fire {
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;
 	model = "\Ca\misc3\Campfire";
+	vehicleClass = "DayZ Epoch Buildings";
 };		
 
 class Misc_TyreHeap: Land_Fire

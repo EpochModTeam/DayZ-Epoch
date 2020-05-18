@@ -8,13 +8,13 @@ class BearTrap_DZ : TrapItems {
 	displayName = $STR_EQUIP_NAME_BEARTRAP;
 	descriptionShort = $STR_EQUIP_DESC_BEARTRAP;
 	model = "\dayz_equip\models\bear_trap.p3d";
-
 	script = "beartrap"; // compiled script variable name (used by server side loop)
 	initState = 0; // initial armed state (>0 is not currently working)
 	singleUse = 0;
 	nounderground = 0;
 	requireplot = 0;
 	constructioncount = 1;
+	vehicleClass = "DayZ Epoch Buildables";
 	
 	class Eventhandlers {
 		init = "['init', _this select 0] spawn beartrap;";
@@ -113,6 +113,7 @@ class Bomb
 		{ "Target",
 		{ 0,-0.07875 },1 }};
 	};
+	vehicleClass = "";
 };
 
 class TrapBearTrapFlare : TrapItems {
@@ -124,7 +125,7 @@ class TrapBearTrapFlare : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_BEAR_TRAP_FLARE;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	nounderground = 0;
 	requireplot = 0;
 	constructioncount = 1;
@@ -176,7 +177,7 @@ class TrapBearTrapSmoke : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_BEAR_TRAP_SMOKE;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	nounderground = 0;
 	requireplot = 0;
 	constructioncount = 1;
@@ -228,7 +229,7 @@ class Trap_Cans : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_CANS;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	nounderground = 0;
 
 	script = "tripcans"; // compiled script variable name (used by server side loop)
@@ -280,7 +281,7 @@ class TrapTripwireFlare : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_FLARE;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	nounderground = 0;
 
 	script = "tripflare"; // compiled script variable name (used by server side loop)
@@ -332,7 +333,7 @@ class TrapTripwireGrenade : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_GRENADE;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	nounderground = 0;
 
 	script = "tripgrenade"; // compiled script variable name (used by server side loop)
@@ -384,7 +385,7 @@ class TrapTripwireSmoke : TrapItems {
 	mapSize = 0;
 	armor = 400;
 	displayName = $STR_ITEM_NAME_TRIPWIRE_SMOKE;
-	vehicleClass = "Fortifications";
+	vehicleClass = "DayZ Epoch Buildables";
 	nounderground = 0;
 
 	script = "tripsmoke"; // compiled script variable name (used by server side loop)

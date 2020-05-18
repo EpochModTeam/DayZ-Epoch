@@ -1,4 +1,7 @@
-class WeaponHolderBase;
+class WeaponHolderBase: ReammoBox {
+	vehicleClass = "DayZ Epoch Weaponholder";
+};
+
 class WoodenArrowF : WeaponHolderBase {
 	scope = public;
 	displayName = $STR_ITEMWOODENARROW_CODE_NAME;
@@ -53,44 +56,6 @@ class WeaponHolder_ItemSledge : WeaponHolderBase { // Epoch class. Needed for pl
 		init = "[(_this select 0),'cfgWeapons','ItemSledge'] spawn object_pickupAction;";
 	};
 };
-/*
-class WeaponHolder_MeleeBaseBallBat: WeaponHolderBase
-{
-	scope=2;
-	displayName=$STR_EQUIP_NAME_BASEBALLBAT;
-	model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
-	destrType = "DestructNo";
-	
-	class eventHandlers
-	{
-		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBat'] spawn object_pickupAction;";
-	};
-};
-class WeaponHolder_MeleeBatBarbed: WeaponHolderBase
-{
-	scope=2;
-	displayName=$STR_CRAFT_NAME_BaseBallBatBarbed;
-	model="\z\addons\dayz_communityassets\models\baseball_bat.p3d";
-	destrType = "DestructNo";
-	
-	class eventHandlers
-	{
-		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBatBarbed'] spawn object_pickupAction;";
-	};
-};
-class WeaponHolder_MeleeBaseBallBatNails: WeaponHolderBase
-{
-	scope=2;
-	displayName=$STR_CRAFT_NAME_NailedBaseballBat;
-	model="\z\addons\dayz_communityassets\models\baseball_bat_nails.p3d";
-	destrType = "DestructNo";
-	
-	class eventHandlers
-	{
-		init="[(_this select 0),'cfgWeapons','MeleeBaseBallBatNails'] spawn object_pickupAction;";
-	};
-};
-*/
 class WeaponHolder_MeleeMachete: WeaponHolderBase
 {
 	scope=2;
@@ -136,8 +101,7 @@ class WeaponHolder_ItemFuelcan : WeaponHolderBase {
 class WeaponHolder_ItemCamoNet : WeaponHolderBase {
 	scope = public;
 	displayName = $STR_ITEM_NAME_CAMONET;
-//	model = "dayz_equip\proxy\tentbag.p3d"; // was models\tentbag_gear.prd ...
-	model = "z\addons\dayz_communityassets\models\packed_net_green.p3d"; // was models\tentbag_gear.prd ...
+	model = "z\addons\dayz_communityassets\models\packed_net_green.p3d";
 	destrType = "DestructNo";
 
 	class eventHandlers {
@@ -202,7 +166,7 @@ class WeaponHolder_ItemHatchet : WeaponHolderBase {
 
 class WeaponHolder_MeleeCrowbar : WeaponHolderBase {
 	scope = public;
-	displayName = "Crowbar";
+	displayName = $STR_EQUIP_NAME_CROWBAR;
 	model = "\dayz_equip\models\crowbar.p3d";
 	destrType = "DestructNo";
 	
@@ -378,4 +342,16 @@ class WeaponHolder_ItemJerrycan : WeaponHolderBase {
 
 class WeaponHolder_ItemJerrycanSide : WeaponHolder_ItemJerrycan {
 	model = "\dayz_equip\proxy\jerrycan_side.p3d";
+};
+
+class WeaponHolder_ItemVault: WeaponHolder {
+	scope = protected;
+	displayName = $STR_EPOCH_SAFE;
+	seedItem = "ItemVault";
+};
+
+class WeaponHolder_ItemLockbox: WeaponHolder {
+	scope = protected;
+	displayName = $STR_EPOCH_LOCKBOX;
+	seedItem = "ItemLockbox";
 };

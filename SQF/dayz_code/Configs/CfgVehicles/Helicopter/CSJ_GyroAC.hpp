@@ -186,10 +186,10 @@ class CSJ_GyroC: Helicopter
 	soundGetIn[] = {"",0.1,1};
 	soundGetOut[] = {"",0.1,1};
 	//soundEngine[] = {"\CSJ_GyroAC\UH1_v1.wss",10.1189,2};
-	soundEngineOnInt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\DZE\UH1_v1int",1,1};
-	soundEngineOnExt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\DZE\UH1_v1int",1,1,800};
-	soundEngineOffInt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\DZE\UH1_v1stop",1,1};
-	soundEngineOffExt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\DZE\UH1_v1stop",1,1,800};
+	soundEngineOnInt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\Helicopter\UH1_v1int",1,1};
+	soundEngineOnExt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\Helicopter\UH1_v1int",1,1,800};
+	soundEngineOffInt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\Helicopter\UH1_v1stop",1,1};
+	soundEngineOffExt[] = {"\z\addons\dayz_code\Configs\CfgVehicles\Helicopter\UH1_v1stop",1,1,800};
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
