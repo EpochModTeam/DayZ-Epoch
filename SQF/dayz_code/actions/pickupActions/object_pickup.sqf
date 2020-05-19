@@ -6,7 +6,7 @@ _type = _array select 0;
 _classname = _array select 1;
 _holder = _array select 2;
 
-if (player distance _holder > 3) exitwith { localize "str_pickup_limit_1","PLAIN DOWN" };
+if (player distance _holder > 3) exitwith {localize "str_pickup_limit_1" call dayz_rollingMessages};
 
 _playerID = getPlayerUID player;
 player removeAction s_player_holderPickup;
@@ -22,16 +22,13 @@ if (!canPickup) exitwith {
 
 _claimedBy = _holder getVariable "claimed";
 
-if (isnil "claimed") then {
-	_holder setVariable["claimed",_playerID,true];
-};
+if (isNil "claimed") then {_holder setVariable["claimed",_playerID,true];};
 
 canPickup = false;
 
 player playActionNow "PutDown";
 
-//Adding random chance of arrow is re-usable on pickup
-_broken = ((_classname == "1Rnd_Arrow_Wood") && {[0.15] call fn_chance});
+_broken = ((_classname == "1Rnd_Arrow_Wood") && {[0.15] call fn_chance}); // Adding random chance of arrow is re-usable on pickup
 if (_broken) exitWith { deleteVehicle _holder; localize "str_broken_arrow" call dayz_rollingMessages; };
 
 _claimedBy = _holder getVariable["claimed","0"];
@@ -42,8 +39,6 @@ if (_classname isKindOf "Bag_Base_EP1") exitWith {
 	_PlayerNear = {isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 10]) > 1;
 	if (_PlayerNear) exitWith {localize "str_pickup_limit_4" call dayz_rollingMessages;};
 
-	//diag_log("Picked up a bag: " + _classname);
-	
 	_hasBag = unitBackpack player;
 
 	if (isNull _hasBag) then {
@@ -53,12 +48,10 @@ if (_classname isKindOf "Bag_Base_EP1") exitWith {
 		uiSleep 0.03;
 		player action ["TakeBag", _holder];
 	};
-	
-	//Lets wait to make sure the player has some kind of backpack.
+
 	waitUntil { !isNull (unitBackpack player) };
 	uiSleep 0.03;
-	
-	//Lets call inventory save
+
 	PVDZ_plr_Save = [player,nil,false];
 	publicVariableServer "PVDZ_plr_Save";
 };
@@ -92,9 +85,7 @@ if (_isOk) then {
 };
 uiSleep 3;
 
-//adding melee mags back if needed
 _wpn = primaryWeapon player;
 _ismelee = (getNumber (configFile >> "CfgWeapons" >> _wpn >> "melee") == 1);
-if (_ismelee) then {
-	call dayz_meleeMagazineCheck;
-};
+
+if (_ismelee) then {call dayz_meleeMagazineCheck;};
