@@ -51,7 +51,7 @@ if ("fire" in _needNear) then {
 	};
 };
 if ("workshop" in _needNear) then {
-	_isNear = count (nearestObjects [player, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
+	_isNear = count (nearestObjects [player, DZE_Workshops, _distance]);
 	if(_isNear == 0) then {
 		_abort = true;
 		_reason = localize "STR_EPOCH_WORKBENCH_NEARBY";

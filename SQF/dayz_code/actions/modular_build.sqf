@@ -59,7 +59,7 @@ _needNear = getArray (configFile >> "CfgMagazines" >> DZE_buildItem >> "ItemActi
 		};
 		if (_x == "workshop") exitwith {
 			_distance = 3;
-			_isNear = count (nearestObjects [_pos, ["Wooden_shed_DZ","WoodShack_DZ","WorkBench_DZ"], _distance]);
+			_isNear = count (nearestObjects [_pos, DZE_Workshops, _distance]);
 			if (_isNear == 0) then {
 				_abort = true;
 				_reason = localize "STR_EPOCH_WORKBENCH_NEARBY";
