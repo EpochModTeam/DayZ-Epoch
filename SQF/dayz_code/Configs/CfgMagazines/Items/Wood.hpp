@@ -18,17 +18,26 @@ class ItemLog : CA_Magazine
 		};
 		class Crafting
 		{
-			text = $STR_BLD_craft_ItemLog;//"Wooden Plank"
+			text = $STR_EPOCH_PLAYER_242;//"Lumber"
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemHatchet","ItemToolbox","ItemKnife" };
+			output[] = {{"PartWoodLumber",2}};
+			input[] = {{"ItemLog",1}};
+		};		
+		class Crafting1
+		{
+			text = $STR_BLD_craft_ItemLog;//"Wooden Plank"
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {}; 
 			requiretools[] = {"ItemHatchet"};
 			output[] = {{"ItemPlank",2}};
 			input[] = {{"ItemLog",1}};
 		};
-		class Crafting1
+		class Crafting2
 		{
 			text = $STR_EQUIP_NAME_40;//"Wood Piles"
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {}; 
 			requiretools[] = {"ItemHatchet"};
 			output[] = {{"PartWoodPile",4}};

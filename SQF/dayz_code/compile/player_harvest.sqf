@@ -1,8 +1,6 @@
-private ["_unit","_ammo","_weapon","_projectile","_tree"];
-_unit = 		_this select 0;
-_weapon = 		_this select 1;
-_ammo = 		_this select 4;
-_projectile = 	_this select 6;
+private ["_ammo","_tree","_distance2d","_damage","_itemOut"];
+
+_ammo = _this select 4;
 
 if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
 	_tree = objNull;
@@ -16,7 +14,7 @@ if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
 	if (!isNull _tree) then {
 		// get 2d distance
 		_distance2d = [player, _tree] call BIS_fnc_distance2D;
-		
+
 		if (_distance2d <= 5) then {
 			// damage must be going down
 			_damage = damage _tree;
@@ -30,7 +28,7 @@ if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
 						deleteVehicle _tree;
 					};
 				};
-				_itemOut = if (_ammo == "Chainsaw_Swing_Ammo") then {"PartWoodLumber"} else {"PartWoodPile"}; // Log can be crafted to > 2x plank > 4x woodpile			
+				_itemOut = [["PartWoodPile","PartWoodPile","ItemLog"] call BIS_fnc_selectRandom,"PartWoodLumber"] select (_ammo == "Chainsaw_Swing_Ammo"); 
 				[_itemOut,1,1] call fn_dropItem;
 
 				[player,60,false,getPosATL player] spawn player_alertZombies;
