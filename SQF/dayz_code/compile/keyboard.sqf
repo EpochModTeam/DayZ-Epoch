@@ -2,7 +2,8 @@
 
 #include "\ca\editor\Data\Scripts\dikCodes.h"
 
-private ["_dikCode","_shiftState","_ctrlState","_altState","_handled","_cancelBuild","_dze_f","_dze_q","_dze_z","_autoRun","_filterCheat","_openGroups","_muteSound","_statusUI","_rifle","_pistol","_melee","_surrender","_gear","_forcesave","_drop","_interrupt","_noise","_journal","_build_left","_build_right","_build_str8OnOff","_block","_addArray","_code"];
+//private ["_dikCode","_shiftState","_ctrlState","_altState","_handled","_cancelBuild","_dze_f","_dze_q","_dze_z","_autoRun","_filterCheat","_openGroups","_muteSound","_statusUI","_rifle","_pistol","_melee","_surrender","_gear","_forcesave","_drop","_interrupt","_noise","_journal","_build_left","_build_right","_build_str8OnOff","_block","_addArray","_code"];
+//Keyboard.sqf gets called very often
 
 _dikCode = _this select 1;
 _shiftState = _this select 2;
@@ -332,8 +333,6 @@ if (isNil "keyboard_keys") then {
     [actionKeys "LeanLeft", _build_left ] call _addArray;
     [actionKeys "LeanRight", _build_right ] call _addArray;
     [actionKeys "GetOver", _build_str8OnOff ] call _addArray; // V
-//  [[DIK_NUMPAD7], _rotate_left] call _addArray;
-//  [[DIK_NUMPAD9], _rotate_right] call _addArray;
     [actionKeys "ForceCommandingMode", {DZE_5 = true;_handled = true;}] call _addArray;
     [[  DIK_F9,DIK_F10,DIK_F11,DIK_F12,
         DIK_F8,DIK_F7,DIK_F6,DIK_F5,
