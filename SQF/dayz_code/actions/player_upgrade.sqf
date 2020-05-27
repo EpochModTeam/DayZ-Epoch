@@ -13,10 +13,10 @@ s_player_upgrade_build = 1;
 _obj = _this select 3;
 _objectID 	= _obj getVariable ["ObjectID","0"];
 _objectUID	= _obj getVariable ["ObjectUID","0"];
-
-if (_objectID == "0" && {_objectUID == "0"}) exitWith {dayz_actionInProgress = false; s_player_upgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
-
 _classname = typeOf _obj;
+
+if ((_objectID == "0" && {_objectUID == "0"}) || _classname in DZE_DisableUpgrade) exitWith {dayz_actionInProgress = false; s_player_upgrade_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
+
 _text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 _upgrade = getArray (configFile >> "CfgVehicles" >> _classname >> "upgradeBuilding");
 
