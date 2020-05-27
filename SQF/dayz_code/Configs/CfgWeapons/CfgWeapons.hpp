@@ -336,4 +336,6 @@ class CfgWeapons
 	
 	#include "Item\ItemKeys.hpp"
 	#include "Item\Documents.hpp"
+	
+	#include "VehicleWeapons.hpp"
 };
