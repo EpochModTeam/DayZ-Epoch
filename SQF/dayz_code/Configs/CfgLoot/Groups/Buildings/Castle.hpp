@@ -12,7 +12,8 @@ Castle[] =
 	
 	//Items
 	{Loot_MAGAZINE,		4,		ItemSandbag},
-//	{Loot_MAGAZINE,		1,		equip_Crossbow_Kit}, //not functional yet
+	{Loot_MAGAZINE,		2,		equip_Crossbow_Kit},
+	{Loot_MAGAZINE,		2,		equip_crossbow_stock},
 	{Loot_MAGAZINE,		2,		ItemComboLock},
 	{Loot_MAGAZINE,		1,		equip_tent_poles},
 	{Loot_MAGAZINE,		1,		forest_net_kit},

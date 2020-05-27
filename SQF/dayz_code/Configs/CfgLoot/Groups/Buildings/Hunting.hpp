@@ -29,6 +29,8 @@ Hunting[] =
 	{Loot_MAGAZINE,		2,		1Rnd_Bolt_Tranquilizer},
 	{Loot_MAGAZINE,		1,		1Rnd_Bolt_Explosive},
 	{Loot_MAGAZINE,		1,		20Rnd_762x51_DMR},
+	{Loot_MAGAZINE,		6,		equip_Crossbow_Kit},
+	{Loot_MAGAZINE,		6,		equip_crossbow_stock},	
 	
 	{Loot_PILE,			10,		AmmoCivilian, 1, 3},
 	{Loot_PILE,			10,		Consumable, 1, 3},

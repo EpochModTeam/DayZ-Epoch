@@ -20,7 +20,8 @@ MilitaryIndustrialRU[] = {
 	{Loot_MAGAZINE,		1,		ItemWire},
 	{Loot_PILE,			5,		Trash, 1, 2},
 	{Loot_PILE,			3,		Consumable, 1, 2},
-	{Loot_GROUP, 		10, 	MilitaryRU}
+	{Loot_GROUP, 		10, 	MilitaryRU},
+	{Loot_MAGAZINE,		4,		ItemScrews}
 };
 
 MilitaryIndustrialSmallRU[] = {
@@ -39,7 +40,8 @@ MilitaryIndustrialUS[] = {
 	{Loot_MAGAZINE,		1,		ItemWire},
 	{Loot_PILE,			5,		Trash, 1, 2},
 	{Loot_PILE,			3,		Consumable, 1, 2},
-	{Loot_GROUP, 		10, 	MilitaryUS}
+	{Loot_GROUP, 		10, 	MilitaryUS},
+	{Loot_MAGAZINE,		4,		ItemScrews}
 };
 
 MilitaryIndustrialSmallUS[] = {
@@ -58,7 +60,8 @@ MilitaryIndustrialEU[] = {
 	{Loot_MAGAZINE,		1,		ItemWire},
 	{Loot_PILE,			5,		Trash, 1, 2},
 	{Loot_PILE,			3,		Consumable, 1, 2},
-	{Loot_GROUP, 		10, 	MilitaryEU}
+	{Loot_GROUP, 		10, 	MilitaryEU},
+	{Loot_MAGAZINE,		4,		ItemScrews}
 };
 
 MilitaryIndustrialSmallEU[] = {
@@ -77,7 +80,8 @@ MilitaryIndustrialCZ[] = {
 	{Loot_MAGAZINE,		1,		ItemWire},
 	{Loot_PILE,			5,		Trash, 1, 2},
 	{Loot_PILE,			3,		Consumable, 1, 2},
-	{Loot_GROUP, 		10, 	MilitaryCZ}
+	{Loot_GROUP, 		10, 	MilitaryCZ},
+	{Loot_MAGAZINE,		4,		ItemScrews}
 };
 
 MilitaryIndustrialSmallCZ[] = {

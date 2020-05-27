@@ -12,7 +12,7 @@ Industrial[] =
 	
 	//Other
 	{Loot_GROUP,		15,		Parts},
-	{Loot_GROUP,		3,		VanillaConstruction},
+	{Loot_GROUP,		6,		VanillaConstruction},
 	{Loot_PILE,			10,		Trash, 1, 3},
 	{Loot_PILE,			3,		Consumable, 1, 2},
 	{Loot_GROUP,		4,		JerryCan},
