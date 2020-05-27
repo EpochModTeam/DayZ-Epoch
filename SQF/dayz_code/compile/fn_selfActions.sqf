@@ -806,7 +806,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	};
 
 	// inplace upgrade tool
-	if ((_cursorTarget isKindOf "ModularItems") || {_cursorTarget isKindOf "Land_DZE_WoodDoor_Base"} || {_cursorTarget isKindOf "CinderWallDoor_DZ_Base"} || {_cursorTarget isKindOf "DZ_storage_base"}) then {
+	if ((_cursorTarget isKindOf "ModularItems") || (_cursorTarget isKindOf "Land_DZE_WoodDoor_Base") || (_cursorTarget isKindOf "CinderWallDoor_DZ_Base") || (_cursorTarget isKindOf "DZ_storage_base") || (_typeOfCursorTarget in DZE_isNewStorage)) then {
 		if ((s_player_lastTarget select 0) != _cursorTarget) then {
 			if (s_player_upgrade_build > 0) then {
 				player removeAction s_player_upgrade_build;

@@ -20964,26 +20964,36 @@
 			<German>Metallstange: Ein paar robuste Metallstangen zum Bau von Zelten und anderen Teilen.</German>
 			<Russian>Труба: Несколько прочных металлических труб, используются для изготовления палаток и в строительстве.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_GUNRACKKIT">
-			<English>Gun Rack Kit</English>
-			<German>Waffenregalbausatz</German>
-			<Russian>Полка для оружия</Russian>
-		</Key>
 		<Key ID="STR_EPOCH_GUNRACK">
 			<English>Gun Rack</English>
 			<German>Waffenregal</German>
 			<Russian>Полка для оружия</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_GUNRACK2">
+			<English>Gun Rack +</English>
+			<German>Waffenregal +</German>
+			<Russian>Полка для оружия +</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_GUNRACKKIT_DESC">
 			<English>A Gun Rack for 20 weapons.</English>
 			<German>Ein Waffenregal für 20 Waffen.</German>
 			<Russian>Полка, на которую можно повесить до 20 оружия.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_GUNRACKKIT_DESC2">
+			<English>A Gun Rack for 40 weapons.</English>
+			<German>Ein Waffenregal für 40 Waffen.</German>
+			<Russian>Полка, на которую можно повесить до 40 оружия.</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_WOODCRATE">
 			<English>Wooden Crate</English>
 			<German>Holzkiste</German>
 			<Russian>Деревянный ящик</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WOODCRATE2">
+			<English>Wooden Crate +</English>
+			<German>Holzkiste +</German>
+			<Russian>Деревянный ящик +</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_WOODCRATE_DESC">
 			<English>A wooden crate that holds a lot of items.</English>
 			<German>Eine Holzkiste, um eine Menge Material zu verstauen.</German>
@@ -21149,6 +21159,11 @@
 			<German>Holzschuppen</German>
 			<Russian>Деревянный сарай</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_NICEWOODSHED2">
+			<English>Nice Wooden Shed +</English>
+			<German>Holzschuppen +</German>
+			<Russian>Деревянный сарай +</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_NICEWOODSHED_DESC">
 			<English>Nice Wooden Shed: A crafted object that holds a lot of items/weapons/backpacks and has a door that opens and closes.</English>
 			<German>Holzschuppen: Ein Selbstbau-Objekt mit viel Platz für Material, Waffen und Rucksäcke. Es hat sogar eine Tür.</German>
@@ -21159,6 +21174,11 @@
 			<German>Holzhütte</German>
 			<Russian>Деревянная лачуга</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WOODSHACK2">
+			<English>Wooden Shack +</English>
+			<German>Holzhütte +</German>
+			<Russian>Деревянная лачуга +</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_M240NEST">
 			<English>M240 Nest</English>
 			<Russian>Гнездо M240</Russian>
@@ -21203,6 +21223,11 @@
 			<German>Lagerschuppen</German>
 			<Russian>Лабаз</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_STORAGESHED2">
+			<English>Storage Shed +</English>
+			<German>Lagerschuppen +</German>
+			<Russian>Лабаз +</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_STORAGESHED_DESC">
 			<English>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</English>
 			<German>Lagerschuppen: Ein großes Objekt mit viel Platz für Material, Waffen und Rucksäcke. Nicht begehbar.</German>

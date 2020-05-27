@@ -79,7 +79,7 @@ class ItemPole: CA_Magazine
 	};
 };
 
-class ItemMetalSheet: CA_Magazine //Construection,farm,indestrial,castle
+class ItemMetalSheet: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -110,7 +110,7 @@ class equip_metal_sheet_rusted : CA_Magazine {
 	type = 256;
 };
 
-class ItemRSJ: CA_Magazine //Construection,farm,indestrial,castle
+class ItemRSJ: CA_Magazine
 {
 	scope = 2;
 	count = 1;
