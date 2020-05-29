@@ -11,6 +11,13 @@ class GraveDZE: Land_A_tent {
 class Mass_grave;
 class Mass_grave_DZ: Mass_grave
 {
-	displayName = "Mass Grave W/ Zombies";
 	vehicleClass = "DayZ Epoch Buildings";
+};
+
+class Mass_grave_DZE: Mass_grave
+{
+	vehicleClass = "DayZ Epoch Buildings";
+	transportMaxMagazines = 200;
+	transportMaxWeapons = 50;
+	transportMaxBackpacks = 10;
 };
