@@ -1,8 +1,8 @@
 class ItemSandbag : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;	
+	type = 256;	
 	model = "\dayz_equip\models\sandbags.p3d";
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 	displayName = $STR_EQUIP_NAME_21;
@@ -50,8 +50,9 @@ class ItemSandbag : CA_Magazine
 	};
 };
 
-class BagFenceRound_DZ_kit : CA_Magazine {
-	scope = public;
+class BagFenceRound_DZ_kit : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EQUIP_NAME_21_ROUND;
@@ -59,8 +60,10 @@ class BagFenceRound_DZ_kit : CA_Magazine {
 	model = "\dayz_equip\models\sandbags.p3d";
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 	
-	class ItemActions {
-		class Build {
+	class ItemActions 
+	{
+		class Build 
+		{
 			text = $STR_EPOCH_PLAYER_299;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
@@ -78,8 +81,9 @@ class BagFenceRound_DZ_kit : CA_Magazine {
 	};
 };
 
-class ItemSandbagLarge : CA_Magazine {
-	scope = public;
+class ItemSandbagLarge : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EQUIP_NAME_21_HBARRIER;
@@ -87,8 +91,10 @@ class ItemSandbagLarge : CA_Magazine {
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 
-	class ItemActions {
-		class Build {
+	class ItemActions 
+	{
+		class Build 
+		{
 			text = $STR_EPOCH_PLAYER_273_3;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
@@ -106,8 +112,9 @@ class ItemSandbagLarge : CA_Magazine {
 	};
 };
 
-class ItemSandbagExLarge : CA_Magazine {
-	scope = public;
+class ItemSandbagExLarge : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EQUIP_NAME_21_3XHBARRIER;
@@ -115,8 +122,10 @@ class ItemSandbagExLarge : CA_Magazine {
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 
-	class ItemActions {
-		class Build {
+	class ItemActions 
+	{
+		class Build 
+		{
 			text = $STR_EPOCH_PLAYER_273_4;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
@@ -134,8 +143,9 @@ class ItemSandbagExLarge : CA_Magazine {
 	};
 };
 
-class ItemSandbagExLarge5x : CA_Magazine {
-	scope = public;
+class ItemSandbagExLarge5x : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EQUIP_NAME_21_5XHBARRIER;
@@ -143,8 +153,10 @@ class ItemSandbagExLarge5x : CA_Magazine {
 	model = "\dayz_equip\models\sandbags.p3d"; // TODO model
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
 
-	class ItemActions {
-		class Build {
+	class ItemActions 
+	{
+		class Build 
+		{
 			text = $STR_EPOCH_PLAYER_273_5;
 			script = "spawn player_build;";
 			require[] = {"ItemEtool"};
@@ -155,7 +167,7 @@ class ItemSandbagExLarge5x : CA_Magazine {
 
 class sandbag_nest_kit: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EQUIP_NAME_21_NEST;

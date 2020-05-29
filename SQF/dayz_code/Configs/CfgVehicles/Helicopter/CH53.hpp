@@ -1,6 +1,6 @@
 class USEC_ch53_E;
 class CH53_DZE : USEC_ch53_E {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_CH53;
 	vehicleClass = "DayZ Epoch Vehicles";
 	destrType = "DestructWreck";

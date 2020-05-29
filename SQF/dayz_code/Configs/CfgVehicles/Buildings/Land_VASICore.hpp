@@ -1,6 +1,6 @@
 class Land_VASICore: NonStrategic
 	{
-		scope = protected;
+		scope = 1;
 		animated = 0;
 		reversed = 0;
 		vehicleClass = "Objects";

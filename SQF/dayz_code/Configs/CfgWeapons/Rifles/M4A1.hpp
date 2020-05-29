@@ -1564,7 +1564,7 @@ class M4A1_GL_ACOG_SD_MFL_DZ : M4A1_GL_SD_MFL_DZ
 class M4A1_Rusty_DZ : M4A1 {
 	M4A1_FLASHLIGHT;
 	
-	scope = public;
+	scope = 2;
 	model = "\ice_apo_weapons\M4_ironsight";
 	picture = "\ice_apo_weapons\Data\m4a1_ca.paa";
 	displayName = $STR_DZE_WPN_M4RUSTY_NAME;

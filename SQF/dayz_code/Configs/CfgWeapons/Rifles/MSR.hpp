@@ -1,6 +1,6 @@
 class MSR_BASE: Rifle
 {
-	scope = private;
+	scope = 0;
 	irLaserPos = "laser pos";
 	irLaserEnd = "laser dir";
 	irDistance = 100;
@@ -53,7 +53,7 @@ class MSR_BASE: Rifle
 };
 class MSR_SD_BASE: Rifle
 {
-	scope = private;
+	scope = 0;
 	irLaserPos = "laser pos";
 	irLaserEnd = "laser dir";
 	irDistance = 100;
@@ -109,7 +109,7 @@ class MSR_SD_BASE: Rifle
 
 class MSR_DZ: MSR_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_MSR_NAME;
 	descriptionShort = $STR_DZ_WPN_MSR_DESC;	
 	model = "\fhq_remington\MSR\MSR.p3d";
@@ -118,7 +118,7 @@ class MSR_DZ: MSR_BASE
 
 class MSR_SD_DZ: MSR_SD_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_MSRSD_NAME;
 	descriptionShort = $STR_DZ_WPN_MSR_SD_DESC;	
 	model = "\fhq_remington\MSR\MSR_sd.p3d";
@@ -127,7 +127,7 @@ class MSR_SD_DZ: MSR_SD_BASE
 
 class MSR_NV_DZ: MSR_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_MSR_NV_NAME;
 	descriptionShort = $STR_DZ_WPN_MSR_NV_DESC;	
 	model = "\fhq_remington\MSR\MSR_nv.p3d";
@@ -137,7 +137,7 @@ class MSR_NV_DZ: MSR_BASE
 
 class MSR_NV_SD_DZ: MSR_SD_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_MSRSD_NV_NAME;
 	descriptionShort = $STR_DZ_WPN_MSR_SD_NV_DESC;	
 	model = "\fhq_remington\MSR\MSR_nv_sd.p3d";
@@ -147,7 +147,7 @@ class MSR_NV_SD_DZ: MSR_SD_BASE
 
 class MSR_TWS_DZ: MSR_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_MSR_TWS_NAME;
 	descriptionShort = $STR_DZ_WPN_MSR_TWS_DESC;	
 	model = "\fhq_remington\MSR\MSR_tws.p3d";
@@ -184,7 +184,7 @@ class MSR_TWS_DZ: MSR_BASE
 
 class MSR_TWS_SD_DZ: MSR_SD_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_MSRSD_TWS_NAME;
 	descriptionShort = $STR_DZ_WPN_MSR_SD_TWS_DESC;	
 	model = "\fhq_remington\MSR\MSR_tws_sd.p3d";

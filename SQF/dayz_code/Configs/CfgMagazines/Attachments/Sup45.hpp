@@ -1,10 +1,10 @@
-class Attachment_Sup45 : CA_Magazine {
-	scope = public;
+class Attachment_Sup45 : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	model = "\z\addons\dayz_communityweapons\attachments\suppressor9\suppressor9.p3d";
-	picture = "\z\addons\dayz_communityweapons\attachments\suppressor9\data\m_suppressor9_ca.paa";
-	
+	picture = "\z\addons\dayz_communityweapons\attachments\suppressor9\data\m_suppressor9_ca.paa";	
 	displayName = $STR_DZE_ATTACHMENT_45SUP_NAME;
 	descriptionShort = $STR_DZE_ATTACHMENT_45SUP_DESC;
 	

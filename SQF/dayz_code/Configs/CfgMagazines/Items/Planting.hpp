@@ -1,5 +1,6 @@
-class ItemFertilizer: CA_Magazine {
-	scope = public;
+class ItemFertilizer: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_CRAFT_NAME_FERTILIZER;
 	descriptionShort = $STR_CRAFT_DESC_FERTILIZER;
@@ -8,15 +9,18 @@ class ItemFertilizer: CA_Magazine {
 	type = 256;
 };
 
-class ItemPumpkinSeed: CA_Magazine {
-	scope = public;
+class ItemPumpkinSeed: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_CRAFT_NAME_PUMPKIN_SEED;
 	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_SEED;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
 	type = 256;
-	class ItemActions {
+	
+	class ItemActions 
+	{
 		class Crafting
 		{
 			text = $STR_CRAFT_PUMPKIN_PLANT;
@@ -29,16 +33,20 @@ class ItemPumpkinSeed: CA_Magazine {
 	};
 };
 
-class ItemPumpkinPlant: CA_Magazine {
-	scope = public;
+class ItemPumpkinPlant: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_CRAFT_NAME_PUMPKIN_PLANT;
 	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_PLANT;
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
 	type = 256;
-	class ItemActions {
-		class Build {
+	
+	class ItemActions 
+	{
+		class Build 
+		{
 			text = $STR_CRAFT_PLANT_PUMPKIN_PLANT;
 			buildText = $STR_CRAFT_NAME_PUMPKIN_PLANT;
 			script = "spawn player_build;";
@@ -48,15 +56,18 @@ class ItemPumpkinPlant: CA_Magazine {
 	};
 };
 
-class ItemHempSeed: CA_Magazine {
-	scope = public;
+class ItemHempSeed: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_CRAFT_NAME_HEMP_SEED;
 	descriptionShort = $STR_CRAFT_DESC_HEMP_SEED;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";
 	type = 256;
-	class ItemActions {
+	
+	class ItemActions
+	{
 		class Crafting
 		{
 			text = $STR_CRAFT_HEMP_PLANT;
@@ -69,16 +80,20 @@ class ItemHempSeed: CA_Magazine {
 	};
 };
 
-class ItemHempPlant: CA_Magazine {
-	scope = public;
+class ItemHempPlant: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_CRAFT_NAME_HEMP_PLANT;
 	descriptionShort = $STR_CRAFT_DESC_HEMP_PLANT;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";
 	type = 256;
-	class ItemActions {
-		class Build {
+	
+	class ItemActions 
+	{
+		class Build 
+		{
 			text = $STR_CRAFT_PLANT_HEMP_PLANT;
 			buildText = $STR_CRAFT_NAME_HEMP_PLANT;
 			script = "spawn player_build;";
@@ -90,13 +105,14 @@ class ItemHempPlant: CA_Magazine {
 
 class ItemKiloHemp : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_EPOCH_KILOOFHEMP;
 	descriptionShort = $STR_EPOCH_KILOOFHEMP_DESC;
 	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
 	type = 256;
+	
 	class ItemActions
 	{
 		class Crafting
@@ -122,7 +138,7 @@ class ItemKiloHemp : CA_Magazine
 
 class ItemKiloTobacco : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_EPOCH_KILOTOBACCO;
 	descriptionShort = $STR_EPOCH_KILOTOBACCO_DESC;
@@ -131,15 +147,20 @@ class ItemKiloTobacco : CA_Magazine
 	type = 256;
 };
 
-class ItemKiloBlackTea : ItemKiloTobacco
+class ItemKiloBlackTea : CA_Magazine
 {
+	scope = 2;
+	count = 1;
 	displayName = $STR_EPOCH_KILOBLACKTEA;
 	descriptionShort = $STR_EPOCH_KILOBLACKTEA_DESC;
+	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
+	type = 256;	
 };
 
 class ItemTobaccoLeafs : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_EPOCH_TOBACCO_LEAF;
 	descriptionShort = $STR_EPOCH_TOBACCO_LEAF_DESC;
@@ -148,8 +169,9 @@ class ItemTobaccoLeafs : CA_Magazine
 	type = 256;
 };
 
-class equip_comfreyleafs : CA_Magazine {
-	scope = public;
+class equip_comfreyleafs : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_comfreyleafs;
 	descriptionShort = $STR_ITEM_DESC_equip_comfreyleafs;

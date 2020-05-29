@@ -1,6 +1,6 @@
 class Sten_MK_DZ: MP5A5
 {
-	scope = public;
+	scope = 2;
 	model = "z\addons\dayz_epoch_w\sten\h4_sten.p3d";
 	displayName = $STR_DZ_WPN_STEN_MK_NAME;
 	picture	= "\z\addons\dayz_epoch_w\sten\data\W_sten_CA.paa";

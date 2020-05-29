@@ -1,6 +1,6 @@
 class PBX;
 class PBX_DZE: PBX {
-	scope = public;	
+	scope = 2;	
 	displayname = $STR_VEH_NAME_PBX;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -16,7 +16,7 @@ class PBX_DZE: PBX {
 
 class Zodiac;
 class Zodiac_DZE: Zodiac {
-	scope = public;	
+	scope = 2;	
 	displayname = $STR_VEH_NAME_CRRC;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

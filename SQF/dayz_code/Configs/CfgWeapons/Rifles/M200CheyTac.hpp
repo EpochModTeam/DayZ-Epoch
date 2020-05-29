@@ -1,7 +1,7 @@
 class M200_CheyTac_DZ: m107
 {
-	scope = public;
-	type = WeaponSlotPrimary;
+	scope = 2;
+	type = 1;
 	canlock	= 0;
 	displayname = $STR_DZ_WPN_M200_CHEYTAC_NAME;
 	descriptionShort = $STR_DZ_WPN_M200_CHEYTAC_DESC;

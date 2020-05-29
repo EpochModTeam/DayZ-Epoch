@@ -1,6 +1,6 @@
 class Lada1;
 class Lada1_DZE: Lada1 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_LADA_WHITE;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -29,7 +29,7 @@ class Lada1_DZE: Lada1 {
 };
 class Lada2;
 class Lada2_DZE: Lada2 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_LADA_RED;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -58,7 +58,7 @@ class Lada2_DZE: Lada2 {
 };
 class LadaLM;
 class LadaLM_DZE: LadaLM {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_LADA_POLICE;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -88,7 +88,7 @@ class LadaLM_DZE: LadaLM {
 
 class Lada1_TK_CIV_EP1;
 class Lada1_TK_CIV_EP1_DZE: Lada1_TK_CIV_EP1 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_LADA_GREEN;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -117,7 +117,7 @@ class Lada1_TK_CIV_EP1_DZE: Lada1_TK_CIV_EP1 {
 };
 class Lada2_TK_CIV_EP1;
 class Lada2_TK_CIV_EP1_DZE: Lada2_TK_CIV_EP1 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_LADA_HIPPY;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

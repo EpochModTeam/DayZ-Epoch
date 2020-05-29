@@ -1,9 +1,8 @@
 class 200Rnd_556x45_M249: CA_Magazine
 {
 	displayName = $STR_DZ_MAG_200RND_556X45_M249_NAME;
-
 	cartridgeName = "556x45";
-	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
+	type = 256;
 	
 	class ItemActions
 	{
@@ -24,14 +23,14 @@ class 100Rnd_556x45_M249 : 200Rnd_556x45_M249
 };
 
 class 100Rnd_556x45_BetaCMag: CA_Magazine {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_MAG_100RND_556x45_BetaCMag_NAME;
 	ammo = "B_556x45_Ball";
 	count = 100;
 	initSpeed = 920;
 	model = "\z\addons\dayz_epoch_w\magazine\dze_MG36_mag.p3d";
 	picture = "\ca\weapons\g36\data\equip\M_MG36_CA.paa";
-	type = WeaponSlotItem;
+	type = 256;
 	tracersEvery = 4;
 	lastRoundsTracer = 4;
 	descriptionShort = $STR_DZ_MAG_100RND_BetaCMag_DESC;
@@ -42,13 +41,11 @@ class 100Rnd_556x45_BetaCMag: CA_Magazine {
 	};
 };
 
-
 /* STANAG <-> G36 */
 
 class 20Rnd_556x45_Stanag; 
 class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag
 {
-	//model = "\dayz_equip\models\mag30.p3d";
 	displayName = $STR_DZ_MAG_30RND_556x45_STANAG_NAME;
 	descriptionShort = $STR_DZE_MAG_30RND_556x45_STANAG_DESC;
 	
@@ -78,7 +75,6 @@ class 30Rnd_556x45_G36 : 30Rnd_556x45_Stanag
 {
 	displayName = $STR_DZ_MAG_30RND_556x45_G36_NAME;
 	descriptionShort = $STR_DZE_MAG_30RND_556x45_G36_DESC;
-
 	cartridgeName = "556x45";
 	
 	class ItemActions
@@ -106,7 +102,6 @@ class 30Rnd_556x45_StanagSD : 30Rnd_556x45_Stanag
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_30stanagsd_ca.paa";
 	displayName = $STR_DZ_MAG_30RND_556x45_STANAGSD_NAME;	
 	descriptionShort = $STR_DZE_MAG_30RND_556x45_STANAGSD_DESC;
-
 	cartridgeName = "556x45_SD";
 	
 	class ItemActions
@@ -133,8 +128,7 @@ class 30Rnd_556x45_G36SD : 30Rnd_556x45_G36
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_g36sd_ca.paa";
 	displayName = $STR_DZ_MAG_30RND_556x45_G36SD_NAME;
-	descriptionShort = $STR_DZE_MAG_30RND_556x45_G36SD_DESC;
-	
+	descriptionShort = $STR_DZE_MAG_30RND_556x45_G36SD_DESC;	
 	cartridgeName = "556x45_SD";
 	
 	class ItemActions
@@ -163,6 +157,7 @@ class 60Rnd_556x45_Stanag_Taped : 30Rnd_556x45_Stanag {
 	count = 60;
 	picture = "\dayz_epoch_c\icons\magazines\m_stanag_taped.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_stannag_twinmag.p3d";
+	
 	class ItemActions
 	{
 		COMBINE_MAG
@@ -177,6 +172,7 @@ class 60Rnd_556x45_StanagSD_Taped : 30Rnd_556x45_StanagSD {
 	count = 60;
 	picture = "\dayz_epoch_c\icons\magazines\m_stanag_taped_sd.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_stannag_twinmag.p3d";
+	
 	class ItemActions
 	{
 		COMBINE_MAG
@@ -193,8 +189,7 @@ class 30Rnd_556x45_Aug : 30Rnd_556x45_Stanag {
 	
 	class ItemActions
 	{
-		COMBINE_MAG
-		
+		COMBINE_MAG		
 		delete ReloadMag;
 	};	
 };

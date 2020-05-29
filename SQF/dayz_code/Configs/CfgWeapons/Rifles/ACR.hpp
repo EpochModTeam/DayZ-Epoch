@@ -120,7 +120,7 @@ class OpticsModes\
 
 
 class ACR_DZ_BASE: M4A1 {
-	scope = private;
+	scope = 0;
 	ACR_FLASHLIGHT;
 	magazines[] = {"ACR_30Rnd_680x43"};
 	class Library
@@ -179,7 +179,7 @@ class ACR_DZ_BASE: M4A1 {
 };
 
 class ACR_SD_DZ_BASE: M4A1_AIM_SD_camo {
-	scope = private;
+	scope = 0;
 	ACR_FLASHLIGHT;
 	magazines[] = {"ACR_30Rnd_680x43_SD"};
 	fireLightDuration = 0;
@@ -241,7 +241,7 @@ class ACR_SD_DZ_BASE: M4A1_AIM_SD_camo {
 //ACR Woodland
 class ACR_WDL_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_ACR_NAME;	
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600};	
@@ -260,7 +260,7 @@ class ACR_WDL_DZ : ACR_DZ_BASE
 
 class ACR_WDL_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_ACR_SD_NAME;
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600};	
@@ -675,7 +675,7 @@ class ACR_WDL_ACOG_GL_SD_DZ : ACR_WDL_GL_SD_DZ
 //ACR Woodland TWS
 class ACR_WDL_TWS_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_wdl_tws.paa";
 	model = "\fhq_remington\acr\acr_wdl_tws.p3d";
 	displayName = $STR_DZ_WPN_ACR_TWS_NAME;
@@ -730,7 +730,7 @@ class ACR_WDL_TWS_GL_DZ : ACR_WDL_GL_DZ
 
 class ACR_WDL_TWS_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_wdl_tws_sd.paa";
 	model = "\fhq_remington\acr\acr_wdl_tws_sd.p3d";
 	displayName = $STR_DZ_WPN_ACR_TWS_SD_NAME;
@@ -794,7 +794,7 @@ class ACR_WDL_TWS_GL_SD_DZ : ACR_WDL_GL_SD_DZ
 //ACR Woodland NV
 class ACR_WDL_NV_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_DESC;
@@ -810,7 +810,7 @@ class ACR_WDL_NV_DZ : ACR_DZ_BASE
 
 class ACR_WDL_NV_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_SD_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_SD_DESC;
@@ -833,7 +833,7 @@ class ACR_WDL_NV_SD_DZ : ACR_SD_DZ_BASE
 
 class ACR_WDL_NV_GL_DZ : ACR_WDL_GL_DZ
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_GL_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_DESC;
@@ -856,7 +856,7 @@ class ACR_WDL_NV_GL_DZ : ACR_WDL_GL_DZ
 
 class ACR_WDL_NV_GL_SD_DZ : ACR_WDL_GL_SD_DZ
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_GL_SD_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_SD_DESC;
@@ -886,7 +886,7 @@ class ACR_WDL_NV_GL_SD_DZ : ACR_WDL_GL_SD_DZ
 //ACR Black
 class ACR_BL_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_blk_iron.paa";
 	model = "\fhq_remington\acr\acr_blk_iron.p3d";	
 	displayName = $STR_DZ_WPN_ACR_NAME;	
@@ -907,7 +907,7 @@ class ACR_BL_DZ : ACR_DZ_BASE
 
 class ACR_BL_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_blk_iron_sd.paa";
 	model = "\fhq_remington\acr\acr_blk_iron_sd.p3d";	
 	displayName = $STR_DZ_WPN_ACR_SD_NAME;
@@ -1338,7 +1338,7 @@ class ACR_BL_ACOG_GL_SD_DZ : ACR_BL_GL_SD_DZ
 //ACR Black TWS
 class ACR_BL_TWS_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_blk_tws.paa";
 	model = "\fhq_remington\acr\acr_blk_tws.p3d";
 	displayName = $STR_DZ_WPN_ACR_TWS_NAME;
@@ -1393,7 +1393,7 @@ class ACR_BL_TWS_GL_DZ : ACR_BL_GL_DZ
 
 class ACR_BL_TWS_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_blk_tws_sd.paa";
 	model = "\fhq_remington\acr\acr_blk_tws_sd.p3d";
 	displayName = $STR_DZ_WPN_ACR_TWS_SD_NAME;
@@ -1457,7 +1457,7 @@ class ACR_BL_TWS_GL_SD_DZ : ACR_BL_GL_SD_DZ
 //ACR Black NV
 class ACR_BL_NV_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_DESC;
@@ -1473,7 +1473,7 @@ class ACR_BL_NV_DZ : ACR_DZ_BASE
 
 class ACR_BL_NV_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_SD_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_SD_DESC;
@@ -1496,7 +1496,7 @@ class ACR_BL_NV_SD_DZ : ACR_SD_DZ_BASE
 
 class ACR_BL_NV_GL_DZ : ACR_BL_GL_DZ
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_GL_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_DESC;
@@ -1519,7 +1519,7 @@ class ACR_BL_NV_GL_DZ : ACR_BL_GL_DZ
 
 class ACR_BL_NV_GL_SD_DZ : ACR_BL_GL_SD_DZ
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_GL_SD_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_SD_DESC;
@@ -1547,7 +1547,7 @@ class ACR_BL_NV_GL_SD_DZ : ACR_BL_GL_SD_DZ
 //ACR Desert
 class ACR_DES_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_tan_iron.paa";
 	model = "\fhq_remington\acr\acr_tan_iron.p3d";
 	displayName = $STR_DZ_WPN_ACR_NAME;	
@@ -1568,7 +1568,7 @@ class ACR_DES_DZ : ACR_DZ_BASE
 
 class ACR_DES_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_tan_iron_sd.paa";
 	model = "\fhq_remington\acr\acr_tan_iron_sd.p3d";
 	displayName = $STR_DZ_WPN_ACR_SD_NAME;
@@ -1999,7 +1999,7 @@ class ACR_DES_ACOG_GL_SD_DZ : ACR_DES_GL_SD_DZ
 //ACR Desert TWS
 class ACR_DES_TWS_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_tan_tws.paa";
 	model = "\fhq_remington\acr\acr_tan_tws.p3d";
 	displayName = $STR_DZ_WPN_ACR_TWS_NAME;
@@ -2054,7 +2054,7 @@ class ACR_DES_TWS_GL_DZ : ACR_DES_GL_DZ
 
 class ACR_DES_TWS_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_tan_tws_sd.paa";
 	model = "\fhq_remington\acr\acr_tan_tws_sd.p3d";
 	displayName = $STR_DZ_WPN_ACR_TWS_SD_NAME;
@@ -2118,7 +2118,7 @@ class ACR_DES_TWS_GL_SD_DZ : ACR_DES_GL_SD_DZ
 //ACR Desert NV
 class ACR_DES_NV_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_DESC;
@@ -2134,7 +2134,7 @@ class ACR_DES_NV_DZ : ACR_DZ_BASE
 
 class ACR_DES_NV_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_SD_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_SD_DESC;
@@ -2157,7 +2157,7 @@ class ACR_DES_NV_SD_DZ : ACR_SD_DZ_BASE
 
 class ACR_DES_NV_GL_DZ : ACR_DES_GL_DZ
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_GL_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_DESC;
@@ -2180,7 +2180,7 @@ class ACR_DES_NV_GL_DZ : ACR_DES_GL_DZ
 
 class ACR_DES_NV_GL_SD_DZ : ACR_DES_GL_SD_DZ
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_GL_SD_NAME;
 	descriptionShort = $STR_DZ_WPN_ACR_NV_SD_DESC;	
@@ -2209,7 +2209,7 @@ class ACR_DES_NV_GL_SD_DZ : ACR_DES_GL_SD_DZ
 //ACR Snow
 class ACR_SNOW_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_snw_iron.paa";
 	model = "\fhq_remington\acr\acr_snw_iron.p3d";
 	displayName = $STR_DZ_WPN_ACR_NAME;	
@@ -2230,7 +2230,7 @@ class ACR_SNOW_DZ : ACR_DZ_BASE
 
 class ACR_SNOW_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_snw_iron_sd.paa";
 	model = "\fhq_remington\acr\acr_snw_iron_sd.p3d";	
 	displayName = $STR_DZ_WPN_ACR_SD_NAME;
@@ -2661,7 +2661,7 @@ class ACR_SNOW_ACOG_GL_SD_DZ : ACR_SNOW_GL_SD_DZ
 //ACR Snow TWS
 class ACR_SNOW_TWS_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_snw_tws.paa";
 	model = "\fhq_remington\acr\acr_snw_tws.p3d";
 	displayName = $STR_DZ_WPN_ACR_TWS_NAME;
@@ -2716,7 +2716,7 @@ class ACR_SNOW_TWS_GL_DZ : ACR_SNOW_GL_DZ
 
 class ACR_SNOW_TWS_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	picture = "\fhq_remington\acr\ui\i_acr_snw_tws_sd.paa";
 	model = "\fhq_remington\acr\acr_snw_tws_sd.p3d";
 	displayName = $STR_DZ_WPN_ACR_TWS_SD_NAME;
@@ -2780,7 +2780,7 @@ class ACR_SNOW_TWS_GL_SD_DZ : ACR_SNOW_GL_SD_DZ
 //ACR Snow NV
 class ACR_SNOW_NV_DZ : ACR_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_DESC;
@@ -2796,7 +2796,7 @@ class ACR_SNOW_NV_DZ : ACR_DZ_BASE
 
 class ACR_SNOW_NV_SD_DZ : ACR_SD_DZ_BASE
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_SD_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_SD_DESC;
@@ -2819,7 +2819,7 @@ class ACR_SNOW_NV_SD_DZ : ACR_SD_DZ_BASE
 
 class ACR_SNOW_NV_GL_DZ : ACR_SNOW_GL_DZ
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_GL_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_DESC;
@@ -2842,7 +2842,7 @@ class ACR_SNOW_NV_GL_DZ : ACR_SNOW_GL_DZ
 
 class ACR_SNOW_NV_GL_SD_DZ : ACR_SNOW_GL_SD_DZ
 {
-	scope = public;
+	scope = 2;
 	ACR_NV;
 	displayName = $STR_DZ_WPN_ACR_NV_GL_SD_NAME;	
 	descriptionShort = $STR_DZ_WPN_ACR_NV_SD_DESC;

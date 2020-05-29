@@ -1,12 +1,10 @@
 class Attachment_FL : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\z\addons\dayz_communityweapons\attachments\flashlight_rifle\flashlight_rifle.p3d";
-	picture = "\z\addons\dayz_communityweapons\attachments\flashlight_rifle\data\m_flashlight_rifle_ca.paa";
-	
+	picture = "\z\addons\dayz_communityweapons\attachments\flashlight_rifle\data\m_flashlight_rifle_ca.paa";	
 	displayName = $STR_DZ_ATT_FL_RFL_NAME;
 	descriptionShort = $STR_DZ_ATT_FL_RFL_DESC;
 	

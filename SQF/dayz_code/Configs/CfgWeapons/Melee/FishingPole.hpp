@@ -1,12 +1,10 @@
 class MeleeFishingPole : MeleeWeapon
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\z\addons\dayz_communityassets\models\fishing_rod_weaponized.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_fishingpole_CA.paa";
 	displayName = $STR_ITEM_NAME_FISHINGPOLE;
-	descriptionShort = $STR_ITEM_DESC_FISHINGPOLE;
-	
+	descriptionShort = $STR_ITEM_DESC_FISHINGPOLE;	
 	magazines[] = {"Fishing_Swing"};
 	
 	class ItemActions

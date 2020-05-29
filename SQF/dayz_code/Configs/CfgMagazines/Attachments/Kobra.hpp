@@ -1,12 +1,10 @@
 class Attachment_Kobra : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\z\addons\dayz_communityweapons\attachments\kobra\kobra.p3d";
-	picture = "\z\addons\dayz_communityweapons\attachments\kobra\data\m_kobra_ca.paa";
-	
+	picture = "\z\addons\dayz_communityweapons\attachments\kobra\data\m_kobra_ca.paa";	
 	displayName = $STR_DZ_ATT_KOBRA_NAME;
 	descriptionShort = $STR_DZ_ATT_KOBRA_DESC;
 	

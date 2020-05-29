@@ -1,6 +1,6 @@
 class m8_carbine;
 class XM8_DZ: m8_carbine {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_XM8_CARBINE_NAME;
 	descriptionShort = $STR_DSS_XM8;
 	model = "\RH_mgswp\RH_xm8.p3d";

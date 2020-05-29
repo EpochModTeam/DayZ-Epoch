@@ -1,7 +1,7 @@
 class RHIB;
 class RHIB_DZ : RHIB
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_RHIB_M2;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -103,7 +103,7 @@ class RHIB_DZE : RHIB_DZ
 class RHIB2Turret;
 class RHIB2Turret_DZ : RHIB2Turret
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_RHIB_MK19;
 	enablemanualfire = 0;
 	enableGPS = 0;

@@ -3,7 +3,7 @@ class CardboardBox : ReammoBox {
 };
 
 class FoodBox0 : CardboardBox {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DAYZ_OBJ_1;
 	model = "\dayz_equip\models\cardboard_box.p3d";
 	vehicleClass = "DayZ Epoch Crates";
@@ -36,7 +36,7 @@ class FoodBox1 : FoodBox0 {};
 class FoodBox2 : FoodBox0 {};
 
 class MedBox0 : CardboardBox {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DAYZ_OBJ_2;
 	model = "z\addons\dayz_communityassets\models\medical_freezbox.p3d";
 	vehicleClass = "DayZ Epoch Crates";
@@ -65,7 +65,7 @@ class MedBox0 : CardboardBox {
 };
 
 class MedBox1 : CardboardBox {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DAYZ_OBJ_2;
 	model = "z\addons\dayz_communityassets\models\medical_freezbox.p3d";
 	vehicleClass = "DayZ Epoch Crates";
@@ -104,7 +104,7 @@ class MedBox1 : CardboardBox {
 };
 
 class MedBox2 : CardboardBox {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DAYZ_OBJ_2;
 	model = "z\addons\dayz_communityassets\models\medical_freezbox.p3d";
 	vehicleClass = "DayZ Epoch Crates";

@@ -32,8 +32,9 @@ class 20Rnd_9x39_SP5_VSS: CA_Magazine
 };
 
 //Groza-9
-class 20Rnd_9x39_Groza9: CA_Magazine {
-	scope = public;
+class 20Rnd_9x39_Groza9: CA_Magazine 
+{
+	scope = 2;
 	displayName = $STR_DZ_MAG_20RND_Groza9_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_Groza9_DESC;
 	picture = "\RH_aks\inv\m_oc.paa";
@@ -48,7 +49,8 @@ class 20Rnd_9x39_Groza9: CA_Magazine {
 	};
 };
 
-class 20Rnd_9x39_Groza9SD: 20Rnd_9x39_Groza9 {
+class 20Rnd_9x39_Groza9SD: 20Rnd_9x39_Groza9 
+{
 	displayName = $STR_DZ_MAG_20RND_Groza9SD_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_Groza9SD_DESC;
 	picture = "\dayz_epoch_c\icons\magazines\m_oc_sd.paa";

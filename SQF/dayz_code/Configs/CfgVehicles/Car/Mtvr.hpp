@@ -1,6 +1,6 @@
 class MTVR;
 class MTVR_DZE: MTVR {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_MTVR_WOODLAND;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -12,7 +12,7 @@ class MTVR_DZE: MTVR {
 
 class MTVR_DES_EP1;
 class MTVR_DES_EP1_DZE : MTVR_DES_EP1 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_MTVR_DESERT;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -24,7 +24,7 @@ class MTVR_DES_EP1_DZE : MTVR_DES_EP1 {
 
 class MtvrRefuel_DES_EP1;
 class MtvrRefuel_DES_EP1_DZ: MtvrRefuel_DES_EP1 {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName = $STR_VEH_NAME_MTVR_DESERT_REFUEL;
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -41,7 +41,7 @@ class MtvrRefuel_DES_EP1_DZ: MtvrRefuel_DES_EP1 {
 
 class MtvrRefuel;
 class MtvrRefuel_DZ: MtvrRefuel {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName = $STR_VEH_NAME_MTVR_WOODLAND_REFUEL;
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -58,7 +58,7 @@ class MtvrRefuel_DZ: MtvrRefuel {
 
 class MtvrRepair;
 class MtvrRepair_DZE: MtvrRepair {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName = $STR_VEH_NAME_MTVR_AMMO;
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -74,7 +74,7 @@ class MtvrRepair_DZE: MtvrRepair {
 
 class MtvrReammo;
 class MtvrReammo_DZE: MtvrReammo {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName = $STR_VEH_NAME_MTVR_WEAPONS;
 	vehicleClass = "DayZ Epoch Vehicles";

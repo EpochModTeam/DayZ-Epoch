@@ -1,6 +1,6 @@
 class KamazOpen;
 class KamazOpen_DZE : KamazOpen {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_KAMAZ;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -16,7 +16,7 @@ class KamazOpen_DZE : KamazOpen {
 
 class Kamaz;
 class Kamaz_DZE: Kamaz {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_KAMAZ_COVERT;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -91,7 +91,7 @@ class KamazOpen_DZE4: KamazOpen_DZE3 {
 };
 class KamazRefuel;
 class KamazRefuel_DZ: KamazRefuel {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_KAMAZ_REFUEL;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -139,7 +139,7 @@ class KamazRefuel_DZE4: KamazRefuel_DZE3 {
 
 class KamazRepair;
 class KamazRepair_DZE : KamazRepair {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_KAMAZ_AMMO;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -155,7 +155,7 @@ class KamazRepair_DZE : KamazRepair {
 
 class KamazReammo;
 class KamazReammo_DZE : KamazReammo {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_KAMAZ_WEAPONS;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

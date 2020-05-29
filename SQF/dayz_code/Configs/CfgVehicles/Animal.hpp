@@ -24,7 +24,7 @@ class CAAnimalBase: Animal
 };
 
 class Pastor: CAAnimalBase {
-	scope = public;
+	scope = 2;
 	side = 1;
 	model = "\ca\animals2\Dogs\Pastor\Pastor";
 	displayName = "Alsatian";
@@ -45,7 +45,7 @@ class Pastor: CAAnimalBase {
 };
 
 class Fin: CAAnimalBase {
-	scope = public;
+	scope = 2;
 	model = "\ca\animals2\Dogs\Fin\Fin";
 	displayName = "Fin";
 	moves = "CfgMovesDogDZ";
@@ -56,7 +56,7 @@ class Fin: CAAnimalBase {
 
 class Cow: CAAnimalBase
 {
-	scope = private;
+	scope = 0;
 	model = "\ca\animals2\cow\cow";
 	displayName = "$STR_DN_COW";
 	moves = "CfgMovesCow";
@@ -89,7 +89,7 @@ class Cow: CAAnimalBase
 };
 class Cow01: Cow
 {
-	scope = public;
+	scope = 2;
 	accuracy = 1000;
 	model = "\ca\animals2\cow\cow";
 	displayName = "$STR_DN_COW01";
@@ -115,7 +115,7 @@ class Cow01_EP1 : Cow_Base_EP1 {};
 
 class Goat: CAAnimalBase
 {
-	scope = public;
+	scope = 2;
 	model = "\ca\animals2\Goat\Goat";
 	displayName = "$STR_DN_GOAT";
 	moves = "CfgMovesGoat";
@@ -143,7 +143,7 @@ class Goat02_EP1 : Goat01_EP1 {};
 
 class Rabbit: CAAnimalBase
 {
-	scope = public;
+	scope = 2;
 	side = 3;
 	model = "\ca\animals2\rabbit\rabbit";
 	displayName = "$STR_DN_RABBIT";
@@ -177,7 +177,7 @@ class Rabbit: CAAnimalBase
 
 class Sheep: CAAnimalBase
 {
-	scope = public;
+	scope = 2;
 	model = "\ca\animals2\Sheep\Sheep";
 	displayName = "$STR_DN_SHEEP";
 	moves = "CfgMovesSheep";
@@ -206,7 +206,7 @@ class Sheep02_EP1 : Sheep01_EP1 {};
 
 class WildBoar: CAAnimalBase
 {
-	scope = public;
+	scope = 2;
 	model = "\ca\animals2\WildBoar\WildBoar";
 	displayName = "$STR_DN_WILDBOAR";
 	moves = "CfgMovesWildBoar";

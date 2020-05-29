@@ -3,8 +3,7 @@ class 5x_22_LR_17_HMR;
 class 5Rnd_17HMR : 5x_22_LR_17_HMR
 {
 	displayName = $STR_DZ_MAG_5RND_17HMR_NAME;
-	descriptionShort = $STR_DZ_MAG_5RND_17HMR_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_5RND_17HMR_DESC;	
 	model = "\dayz_equip\models\mag5rnd.p3d";
 	
 	class ItemActions
@@ -29,8 +28,7 @@ class 10Rnd_303British : 10x_303
 //KSVK
 class 5Rnd_127x108_KSVK : CA_Magazine
 {
-	displayName = $STR_DZ_MAG_5Rnd_127x108_KSVK_NAME;
-	
+	displayName = $STR_DZ_MAG_5Rnd_127x108_KSVK_NAME;	
 	cartridgeName = "127x108";
 	
 	class ItemActions
@@ -43,8 +41,7 @@ class 5Rnd_127x108_KSVK : CA_Magazine
 class 10Rnd_B_765x17_Ball: CA_Magazine
 {
 	model = "\z\addons\dayz_epoch_w\magazine\dze_sa61_mag.p3d";
-	displayName = "$STR_EP1_DN_10RND_B_765X17_BALL";
-	
+	displayName = "$STR_EP1_DN_10RND_B_765X17_BALL";	
 	cartridgeName = "765x17";
 	
 	class ItemActions

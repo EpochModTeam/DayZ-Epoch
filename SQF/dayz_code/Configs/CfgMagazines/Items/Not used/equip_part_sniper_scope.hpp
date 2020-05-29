@@ -1,5 +1,6 @@
-class equip_part_sniper_scope : CA_Magazine {
-	scope = public;
+class equip_part_sniper_scope : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ATTACHMENT_NAME_Sniper_Scope;
 	descriptionShort = $STR_ATTACHMENT_DESC_Sniper_Scope;

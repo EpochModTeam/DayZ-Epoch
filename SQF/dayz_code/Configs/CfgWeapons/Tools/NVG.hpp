@@ -6,8 +6,9 @@ class NVGoggles_DZE: NVGoggles
 	descriptionShort = "Full Screen Night Vision Goggles";
 };
 
-class ItemNVGBroken_DZE : ItemCore {
-	scope = public;
+class ItemNVGBroken_DZE : ItemCore 
+{
+	scope = 2;
 	displayName = $STR_EQUIP_BROKEN_NV;
 	model = "\dayz_epoch_c\items\nvg\nvg_dzn.p3d";
 	picture = "\dayz_epoch_c\icons\tools\ItemNVGBroken.paa";

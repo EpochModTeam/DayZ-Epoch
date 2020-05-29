@@ -1,6 +1,6 @@
 class 7Rnd_50AE_Deagle: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	type = 16;
 	displayName = $STR_DZ_MAG_7RND_50AE_DESERT_EAGLE_NAME;
 	descriptionShort = $STR_DZ_MAG_7RND_50AE_DESERT_EAGLE_DESC; 	

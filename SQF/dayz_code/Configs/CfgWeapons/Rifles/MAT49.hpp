@@ -1,6 +1,6 @@
 class MAT49_DZ: MP5A5
 {
-	scope = public;
+	scope = 2;
 	model = "\z\addons\dayz_epoch_w\mat49\h4_mat49";
 	displayName = $STR_DZ_WPN_MAT49_NAME;
 	descriptionShort = $STR_DZ_WPN_MAT49_DESC;	

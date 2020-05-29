@@ -45,7 +45,7 @@ class M16A2_Rusty_DZ : M16A2 {
 		scale[] = {1, 1, 0.5};
 		brightness = 0.1;
 	};
-	scope = public;
+	scope = 2;
 	picture = "\ice_apo_weapons\Data\m16_ca.paa";
 	model = "\ice_apo_weapons\M16_proxy";
 	displayName = $STR_DZE_WPN_M16RUSTY_NAME;

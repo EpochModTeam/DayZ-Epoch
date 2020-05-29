@@ -1,6 +1,6 @@
 class BTR90;
 class BTR90_DZ: BTR90 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BTR90;
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -24,7 +24,7 @@ class BTR90_DZ: BTR90 {
 };
 class BTR90_HQ;
 class BTR90_HQ_DZ: BTR90_HQ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BTR90_HQ;
 	vehicleClass = "DayZ Epoch Vehicles";
 

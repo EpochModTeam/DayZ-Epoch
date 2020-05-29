@@ -1,15 +1,17 @@
 class PartGeneric : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;	
+	type = 256;	
 	model = "\dayz_equip\models\genericparts.p3d";
 	picture = "\dayz_equip\textures\equip_genericparts_ca.paa";
 	displayName = $STR_EQUIP_NAME_10;
 	descriptionShort = $STR_EQUIP_DESC_10;
 	
-	class ItemActions {
-		class Crafting {
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_213;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};
@@ -17,7 +19,8 @@ class PartGeneric : CA_Magazine
 			output[] = {{"ItemPole",1}};
 			input[] = {{"PartGeneric",2}};
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_CRAFTING_NAILS;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};
@@ -30,7 +33,7 @@ class PartGeneric : CA_Magazine
 
 class ItemPole: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_METALPOLE;
@@ -90,8 +93,9 @@ class ItemMetalSheet: CA_Magazine
 	descriptionShort = $STR_BLD_desc_ItemMetalSheet;//"Metal Sheeting"
 };
 
-class equip_metal_sheet : CA_Magazine {
-	scope = public;
+class equip_metal_sheet : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_metal_sheet;
 	descriptionShort = $STR_ITEM_DESC_equip_metal_sheet;
@@ -100,8 +104,9 @@ class equip_metal_sheet : CA_Magazine {
 	type = 256;
 };
 
-class equip_metal_sheet_rusted : CA_Magazine {
-	scope = public;
+class equip_metal_sheet_rusted : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_metal_sheet_rusted;
 	descriptionShort = $STR_ITEM_DESC_equip_metal_sheet_rusted;
@@ -121,8 +126,9 @@ class ItemRSJ: CA_Magazine
 	descriptionShort = $STR_BLD_desc_ItemRSJ;//"Steel RSJ Support Beam"
 };
 
-class equip_1inch_metal_pipe : CA_Magazine {
-	scope = public;
+class equip_1inch_metal_pipe : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_1inch_metal_pipe;
 	descriptionShort = $STR_ITEM_DESC_equip_1inch_metal_pipe;
@@ -131,8 +137,9 @@ class equip_1inch_metal_pipe : CA_Magazine {
 	type = 256;
 };
 
-class equip_2inch_metal_pipe : CA_Magazine {
-	scope = public;
+class equip_2inch_metal_pipe : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_2inch_metal_pipe;
 	descriptionShort = $STR_ITEM_DESC_equip_2inch_metal_pipe;
@@ -141,8 +148,9 @@ class equip_2inch_metal_pipe : CA_Magazine {
 	type = 256;
 };
 
-class equip_tent_poles : CA_Magazine {
-	scope = public;
+class equip_tent_poles : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_tent_poles;
 	descriptionShort = $STR_ITEM_DESC_equip_tent_poles;

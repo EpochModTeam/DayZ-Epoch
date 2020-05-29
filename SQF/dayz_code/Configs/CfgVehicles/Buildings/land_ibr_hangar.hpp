@@ -1,7 +1,7 @@
 // Lingor hangars
 class land_ibr_hangar : House {
 	model = "\ibr\ibr_hangars\ibr_hangar";
-	scope = public;
+	scope = 2;
 	vehicleClass = "ibr_hangars";
 	transportFuel = 0;
 	transportRepair = 0;

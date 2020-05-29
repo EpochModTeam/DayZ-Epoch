@@ -1,9 +1,8 @@
 class ItemTrapTripwireCans : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "z\addons\dayz_communityassets\models\trap_tripwire_dropped_can.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_trap_tripwire_can.paa";
 	displayName = $STR_ITEM_NAME_TRIPWIRE_CANS;

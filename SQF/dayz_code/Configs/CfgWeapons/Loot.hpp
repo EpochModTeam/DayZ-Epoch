@@ -1,8 +1,8 @@
 class Loot : Default
 {
-	scope = public;
+	scope = 2;
 	value = 0;
-	type = WeaponNoSlot;
+	type = 0;
 	displayName = "Use";
 	canDrop = false;
 	muzzles[] = {this};

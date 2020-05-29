@@ -1,6 +1,6 @@
 class BAF_Merlin_HC3_D;
 class BAF_Merlin_DZE : BAF_Merlin_HC3_D {
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_VEH_NAME_AW101;
 	vehicleClass = "DayZ Epoch Vehicles";
 	magazines[] = {"120Rnd_CMFlareMagazine"};

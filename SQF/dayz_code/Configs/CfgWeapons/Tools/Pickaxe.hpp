@@ -1,7 +1,6 @@
 class ItemPickaxe : ItemCore
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "z\addons\dayz_communityweapons\models\pickaxe\pickaxe.p3d";
 	picture = "\z\addons\dayz_communityweapons\models\pickaxe\pickaxe.paa";
 	displayName = $STR_EQUIP_NAME_PICKAXE;
@@ -19,13 +18,11 @@ class ItemPickaxe : ItemCore
 
 class ItemPickaxeBroken : ItemCore
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "z\addons\dayz_communityweapons\models\pickaxe\pickaxe.p3d";
 	picture = "\z\addons\dayz_communityweapons\models\pickaxe\pickaxe.paa";
 	displayName = $STR_name_ItemPickaxeBroken;
-	descriptionShort = $STR_desc_ItemPickaxeBroken;
-	
+	descriptionShort = $STR_desc_ItemPickaxeBroken;	
 	fixedTool = "ItemPickaxe";
 	
 	class ItemActions

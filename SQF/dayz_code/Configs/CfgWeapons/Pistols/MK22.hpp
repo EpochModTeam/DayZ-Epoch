@@ -1,6 +1,6 @@
 class MK22_DZ: M9
 {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZ_WPN_MK22_NAME;
 	descriptionShort = $STR_DZ_WPN_MK22_DESC;
 	model = "\RH_de\RH_mk22.p3d";
@@ -30,7 +30,7 @@ class MK22_2_DZ: MK22_DZ
 
 class MK22_SD_DZ: M9SD
 {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZ_WPN_MK22SD_NAME;
 	descriptionShort = $STR_DZ_WPN_MK22SD_DESC;
 	model = "\RH_de\RH_mk22sd.p3d";

@@ -1,6 +1,6 @@
 class Fishing_Boat;
 class Fishing_Boat_DZE: Fishing_Boat {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_FISHING_BOAT;
 	vehicleClass = "DayZ Epoch Vehicles";
 	armor = 10;

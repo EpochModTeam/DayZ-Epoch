@@ -4,7 +4,7 @@ class L110A1_CCO_DZ : BAF_L110A1_Aim
 	picture = "\z\addons\dayz_communityweapons\l110a1\data\w_l110a1_cco_ca.paa";
 	displayName = $STR_DZ_WPN_L110A1_CCO_NAME;
 	irDistance = 0;
-	type = WeaponSlotPrimary;
+	type = 1;
 	magazines[] =
 	{
 		200Rnd_556x45_L110A1,
@@ -64,7 +64,7 @@ class L110A1_DZ : L110A1_CCO_DZ
 };
 
 class BAF_L110A1_Aim_DZE: BAF_L110A1_Aim { //Slightly different scope from L110A1_CCO_DZ, otherwise identical
-	type = WeaponSlotPrimary;
+	type = 1;
 	magazines[] =
 	{
 		200Rnd_556x45_L110A1,

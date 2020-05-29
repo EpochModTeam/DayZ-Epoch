@@ -1,6 +1,6 @@
 class RSASS_BASE: DMR
 {
-	scope = private;
+	scope = 0;
 	htMin = 1;
 	htMax = 420;
 	afMax = 0;
@@ -114,7 +114,7 @@ class RSASS_SD_BASE: RSASS_BASE
 
 class RSASS_DZ: RSASS_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_RSASS_NAME;
 	descriptionShort = $STR_DZ_WPN_RSASS_DESC;	
 	model = "\fhq_remington\rsass\rsass.p3d";
@@ -128,7 +128,7 @@ class RSASS_DZ: RSASS_BASE
 
 class RSASS_TWS_DZ: RSASS_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_RSASS_TWS_NAME;
 	descriptionShort = $STR_DZ_WPN_RSASS_TWS_DESC;		
 	model = "\fhq_remington\rsass\rsass_tws.p3d";
@@ -184,7 +184,7 @@ class RSASS_TWS_DZ: RSASS_BASE
 };
 class RSASS_SD_DZ: RSASS_SD_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_RSASSSD_NAME;
 	descriptionShort = $STR_DZ_WPN_RSASS_SD_DESC;		
 	model = "\fhq_remington\rsass\rsass_sd.p3d";
@@ -198,7 +198,7 @@ class RSASS_SD_DZ: RSASS_SD_BASE
 
 class RSASS_TWS_SD_DZ: RSASS_SD_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_RSASSSD_TWS_NAME;
 	descriptionShort = $STR_DZ_WPN_RSASS_SD_TWS_DESC;		
 	model = "\fhq_remington\rsass\rsass_tws_sd.p3d";

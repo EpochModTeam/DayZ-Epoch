@@ -30,7 +30,7 @@ class MiningItems: NonStrategic{
 };
 
 class Gold_Vein_DZE: MiningItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	model="\z\addons\dayz_epoch\models\gold_vein.p3d";
@@ -51,7 +51,7 @@ class Gold_Vein_DZE: MiningItems {
 	};
 };
 class Silver_Vein_DZE: MiningItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	model="\z\addons\dayz_epoch\models\silver_vein.p3d";
@@ -72,7 +72,7 @@ class Silver_Vein_DZE: MiningItems {
 	};
 };
 class Iron_Vein_DZE: MiningItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	model="\z\addons\dayz_epoch\models\iron_vein.p3d";
@@ -94,19 +94,19 @@ class Iron_Vein_DZE: MiningItems {
 };
 
 class Land_iron_vein_wreck: ruins	{
-	scope = public;
+	scope = 2;
 	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_IRON;
 	vehicleClass = "DayZ Epoch Buildings";
 };
 class Land_silver_vein_wreck: ruins	{
-	scope = public;
+	scope = 2;
 	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_SILVER;
 	vehicleClass = "DayZ Epoch Buildings";
 };
 class Land_gold_vein_wreck: ruins	{
-	scope = public;
+	scope = 2;
 	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_GOLD;
 	vehicleClass = "DayZ Epoch Buildings";

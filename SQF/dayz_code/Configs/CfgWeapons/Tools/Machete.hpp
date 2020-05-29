@@ -1,7 +1,6 @@
 class ItemMachete : ItemCore
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\z\addons\dayz_communityassets\models\machete.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
 	displayName = $STR_EQUIP_NAME_MACHETE;
@@ -27,9 +26,11 @@ class ItemMachete : ItemCore
 	};
 };
 
-class ItemMacheteBroken : ItemMachete
+class ItemMacheteBroken : ItemCore
 {	
+	scope = 2;	
+	model = "\z\addons\dayz_communityassets\models\machete.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
 	displayName = $STR_EQUIP_NAME_MACHETE_BROKEN;	
 	descriptionShort = $STR_EQUIP_DESC_MACHETE_BROKEN;
-	class ItemActions {};
 };

@@ -1,6 +1,6 @@
 class G3_DZ: FNFAL_DZ
 {
-	scope = public;
+	scope = 2;
 	model = "\z\addons\dayz_epoch_w\g3\h4g3.p3d";
 	picture	= "\z\addons\dayz_epoch_w\g3\data\w_g3_ca.paa";
 	displayName	= $STR_DZ_WPN_G3_NAME;

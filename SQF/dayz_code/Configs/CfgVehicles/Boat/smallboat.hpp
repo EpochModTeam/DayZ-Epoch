@@ -1,7 +1,7 @@
 class Smallboat_1;
 class Smallboat_1_DZE: Smallboat_1
 {
-	scope = public;
+	scope = 2;
 	displayName = "$STR_DN_SMALLBOATA";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

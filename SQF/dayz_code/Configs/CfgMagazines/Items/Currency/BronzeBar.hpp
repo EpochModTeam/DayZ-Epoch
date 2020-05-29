@@ -1,5 +1,6 @@
-class ItemBronzeBar: CA_Magazine {
-	scope = public;
+class ItemBronzeBar: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_BRONZE;

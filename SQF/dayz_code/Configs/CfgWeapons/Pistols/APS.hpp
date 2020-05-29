@@ -1,6 +1,6 @@
 class APS_DZ: Makarov
 {
-	scope = public;
+	scope = 2;
 	model = "\RH_aks\RH_aps.p3d";
 	modelOptics = "-";
 	picture = "\RH_aks\inv\aps.paa";
@@ -82,7 +82,7 @@ class APS_DZ: Makarov
 
 class APS_SD_DZ: MakarovSD
 {
-	scope = public;
+	scope = 2;
 	model = "\RH_aks\RH_apssd.p3d";
 	modelOptics = "-";
 	picture = "\RH_aks\inv\apssd.paa";

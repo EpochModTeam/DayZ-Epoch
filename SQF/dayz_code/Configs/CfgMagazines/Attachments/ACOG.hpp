@@ -1,12 +1,10 @@
 class Attachment_ACOG : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\z\addons\dayz_communityweapons\attachments\acog\acog.p3d";
-	picture = "\z\addons\dayz_communityweapons\attachments\acog\data\m_acog_ca.paa";
-	
+	picture = "\z\addons\dayz_communityweapons\attachments\acog\data\m_acog_ca.paa";	
 	displayName = $STR_DZ_ATT_ACOG_NAME;
 	descriptionShort = $STR_DZ_ATT_ACOG_DESC;
 	

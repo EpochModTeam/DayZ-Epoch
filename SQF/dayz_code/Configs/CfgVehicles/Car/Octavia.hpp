@@ -1,5 +1,5 @@
 class Octavia_ACR_DZE: Car {
-	scope = public;
+	scope = 2;
 	model = "\Corepatch\CorePatch_Vehicles\models\Octavia_ACR";
 	displayName = $STR_VEH_NAME_OCTAVIA_WHITE;	
 	icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Octavia_CA.paa";

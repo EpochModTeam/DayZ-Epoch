@@ -1,6 +1,6 @@
 class Tokarew_TT33_DZ: Makarov
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_TT33_NAME;
 	descriptionShort = $STR_DZ_WPN_TT33_DESC;	
 	model = "\RH_de\RH_tt33.p3d";

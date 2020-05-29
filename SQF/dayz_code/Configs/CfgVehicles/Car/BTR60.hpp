@@ -4,7 +4,7 @@ class BTR60_TK_EP1: BRDM2_Base {
 };
 
 class BTR60_TK_EP1_DZ: BTR60_TK_EP1 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BTR60_WOOD;
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -130,7 +130,7 @@ class BTR60_TK_EP1_DZ: BTR60_TK_EP1 {
 };
 
 class BTR60_TK_EP1_DZE: BTR60_TK_EP1_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BTR60_WOOD;
 
 	class Turrets: Turrets
@@ -239,13 +239,13 @@ class BTR60_TK_EP1_DZE: BTR60_TK_EP1_DZ {
 };
 
 class BTR60_Gue_DZ: BTR60_TK_EP1_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BTR60_GREEN;
 	hiddenSelectionsTextures[] = {"\CorePatch\CorePatch_Vehicles\textures\btr60_body_gue_co.paa","\CorePatch\CorePatch_Vehicles\textures\btr60_details_gue_co.paa"};	
 };
 
 class BTR60_Gue_DZE: BTR60_TK_EP1_DZE {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BTR60_GREEN;
 	hiddenSelectionsTextures[] = {"\CorePatch\CorePatch_Vehicles\textures\btr60_body_gue_co.paa","\CorePatch\CorePatch_Vehicles\textures\btr60_details_gue_co.paa"};	
 };

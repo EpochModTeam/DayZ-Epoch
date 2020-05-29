@@ -53,7 +53,7 @@ class Mosin_Base : Rifle
 
 class Mosin_DZ : Mosin_Base
 {
-	scope = public;
+	scope = 2;
 	
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891.paa";
@@ -220,7 +220,7 @@ class Mosin_Belt_MFL_DZ : Mosin_MFL_DZ
 
 class Mosin_PU_DZ : Mosin_Base
 {
-	scope = public;
+	scope = 2;
 	
 	model = "z\addons\dayz_communityweapons\models\mosin_nagant\mosin_1891_scoped_animated";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\1891S.paa";

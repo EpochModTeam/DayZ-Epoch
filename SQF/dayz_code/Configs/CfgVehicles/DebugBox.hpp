@@ -1,7 +1,7 @@
 class DebugBox_DZ: NonStrategic
 {
 	placement = "vertical";
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "\z\addons\dayz_epoch\models\debug_box.p3d";
@@ -14,7 +14,7 @@ class DebugBox_DZ: NonStrategic
 class DebugBoxPlayer_DZ: NonStrategic
 {
 	placement = "vertical";
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "\z\addons\dayz_epoch\models\player_box.p3d";

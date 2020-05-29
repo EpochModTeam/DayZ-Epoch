@@ -1,7 +1,7 @@
 class WA2000_DZ: m107
 {
-	scope = public;
-	type = WeaponSlotPrimary;
+	scope = 2;
+	type = 1;
 	canlock	= 0;
 	displayname = $STR_DZ_WPN_WA2000_NAME;
 	descriptionShort = $STR_DZ_WPN_WA2000_DESC;

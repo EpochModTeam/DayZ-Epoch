@@ -1,6 +1,6 @@
 class Land_NavigLight: House
 	{
-		scope = protected;
+		scope = 1;
 		displayName = "";
 		model = "\ca\buildings\Misc\NavigLight";
 		armor = 50;

@@ -2,7 +2,7 @@ class Land_HouseB_Tenement: House
 	{
 		armor = 180;
 		model = "\Ca\Structures\House\HouseBT\HouseB_Tenement";
-		scope = protected;
+		scope = 1;
 		featureSize = 50;
 		class HitPoints
 		{

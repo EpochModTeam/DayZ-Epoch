@@ -28,7 +28,7 @@ class ModularItems: NonStrategic{
 	};
 };
 class MetalFloor_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,4,0};
@@ -51,7 +51,7 @@ class MetalFloor_DZ: ModularItems {
 	};
 };
 class WoodRamp_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,4,0};
@@ -64,7 +64,7 @@ class WoodRamp_DZ: ModularItems {
 	GhostPreview = "WoodRamp_Preview_DZ";
 };
 class CinderWallHalf_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,2,0};
@@ -90,7 +90,7 @@ class CinderWallHalf_DZ: ModularItems {
 	};
 };
 class CinderWall_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,2,0};
@@ -116,7 +116,7 @@ class CinderWall_DZ: ModularItems {
 };
 
 class CinderWallDoorway_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,2,0};
@@ -142,7 +142,7 @@ class CinderWallDoorway_DZ: ModularItems {
 	};
 };
 class CinderWallSmallDoorway_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,2,0};
@@ -169,7 +169,7 @@ class CinderWallSmallDoorway_DZ: ModularItems {
 };
 
 class WoodFloor_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,4,0};
@@ -194,7 +194,7 @@ class WoodFloor_DZ: ModularItems {
 	};
 };
 class WoodFloorHalf_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,4,0};
@@ -220,7 +220,7 @@ class WoodFloorHalf_DZ: ModularItems {
 	};
 };
 class WoodFloorQuarter_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,4,0};
@@ -247,7 +247,7 @@ class WoodFloorQuarter_DZ: ModularItems {
 };
 
 class WoodLargeWall_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -273,7 +273,7 @@ class WoodLargeWall_DZ: ModularItems {
 };
 
 class WoodLargeWallDoor_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -298,7 +298,7 @@ class WoodLargeWallDoor_DZ: ModularItems {
 	};
 };
 class WoodLargeWallWin_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -323,7 +323,7 @@ class WoodLargeWallWin_DZ: ModularItems {
 };
 
 class WoodSmallWall_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -348,7 +348,7 @@ class WoodSmallWall_DZ: ModularItems {
 	};
 };
 class WoodSmallWallThird_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -373,7 +373,7 @@ class WoodSmallWallThird_DZ: ModularItems {
 	};
 };
 class WoodSmallWallWin_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -397,7 +397,7 @@ class WoodSmallWallWin_DZ: ModularItems {
 	};
 };
 class WoodSmallWallDoor_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -423,7 +423,7 @@ class WoodSmallWallDoor_DZ: ModularItems {
 	};
 };
 class WoodStairs_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -438,7 +438,7 @@ class WoodStairs_DZ: ModularItems {
 	GhostPreview = "WoodStairs_Preview_DZ";
 };
 class WoodLadder_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -454,7 +454,7 @@ class WoodLadder_DZ: ModularItems {
 };
 
 class WoodStairsRails_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -469,7 +469,7 @@ class WoodStairsRails_DZ: ModularItems {
 };
 
 class WoodStairsSans_DZ: ModularItems {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -487,7 +487,7 @@ class WoodStairsSans_DZ: ModularItems {
 
 // Ghost previews
 class CinderWallSmallDoorway_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -499,7 +499,7 @@ class CinderWallSmallDoorway_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class CinderWallDoorway_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -511,7 +511,7 @@ class CinderWallDoorway_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class MetalFloor_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -523,7 +523,7 @@ class MetalFloor_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodRamp_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -536,7 +536,7 @@ class WoodRamp_Preview_DZ: NonStrategic {
 
 };
 class CinderWallHalf_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -548,7 +548,7 @@ class CinderWallHalf_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class CinderWall_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -561,7 +561,7 @@ class CinderWall_Preview_DZ: NonStrategic {
 };
 
 class WoodFloorQuarter_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -573,7 +573,7 @@ class WoodFloorQuarter_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodFloorHalf_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -585,7 +585,7 @@ class WoodFloorHalf_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodSmallWall_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -597,7 +597,7 @@ class WoodSmallWall_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodSmallWallThird_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -609,7 +609,7 @@ class WoodSmallWallThird_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodSmallWallWin_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -621,7 +621,7 @@ class WoodSmallWallWin_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodFloor_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -633,7 +633,7 @@ class WoodFloor_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodSmallWallDoor_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -645,7 +645,7 @@ class WoodSmallWallDoor_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodLargeWall_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -657,7 +657,7 @@ class WoodLargeWall_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodLargeWallDoor_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -669,7 +669,7 @@ class WoodLargeWallDoor_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodLargeWallWin_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -682,7 +682,7 @@ class WoodLargeWallWin_Preview_DZ: NonStrategic {
 };
 
 class WoodStairs_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -694,7 +694,7 @@ class WoodStairs_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodStairsSans_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -707,7 +707,7 @@ class WoodStairsSans_Preview_DZ: NonStrategic {
 };
 
 class WoodLadder_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -719,7 +719,7 @@ class WoodLadder_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class WoodDoor_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -731,7 +731,7 @@ class WoodDoor_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class LargeWoodDoor_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -743,7 +743,7 @@ class LargeWoodDoor_Preview_DZ: NonStrategic {
 	vehicleClass = "DayZ Epoch Buildables";
 };
 class GarageWoodDoor_Preview_DZ: NonStrategic {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0};

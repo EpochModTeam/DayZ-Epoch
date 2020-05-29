@@ -1,6 +1,6 @@
 class BrowningHP_DZ: M9
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_BROWNING_HP_NAME;
 	descriptionShort = $STR_DZ_WPN_BROWNING_HP_DESC;
 	model = "\RH_de\RH_browninghp.p3d";

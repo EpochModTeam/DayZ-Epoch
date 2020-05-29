@@ -1,6 +1,6 @@
 class Volha_1_TK_CIV_EP1;
 class Volha_1_TK_CIV_EP1_DZE: Volha_1_TK_CIV_EP1 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_GAZ_BLUE;
 	vehicleClass = "DayZ Epoch Vehicles";
 	fuelCapacity = 100;
@@ -24,7 +24,7 @@ class Volha_1_TK_CIV_EP1_DZE: Volha_1_TK_CIV_EP1 {
 
 class Volha_2_TK_CIV_EP1;
 class Volha_2_TK_CIV_EP1_DZE: Volha_2_TK_CIV_EP1 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_GAZ_GREY;
 	vehicleClass = "DayZ Epoch Vehicles";
 	fuelCapacity = 100;
@@ -48,7 +48,7 @@ class Volha_2_TK_CIV_EP1_DZE: Volha_2_TK_CIV_EP1 {
 
 class VolhaLimo_TK_CIV_EP1;
 class VolhaLimo_TK_CIV_EP1_DZE: VolhaLimo_TK_CIV_EP1 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_GAZ_BLACK;
 	vehicleClass = "DayZ Epoch Vehicles";
 	fuelCapacity = 100;

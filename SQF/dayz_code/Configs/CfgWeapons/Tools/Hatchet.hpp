@@ -1,7 +1,6 @@
 class ItemHatchet : ItemCore
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\dayz_equip\models\hatchet.p3d";
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
 	displayName = $STR_EQUIP_NAME_HATCHET;
@@ -29,12 +28,10 @@ class ItemHatchet : ItemCore
 
 class ItemHatchetBroken : ItemCore
 {
-	scope = public;
-	
+	scope = 2;	
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
 	displayName = $STR_name_ItemHatchetBroken;
-	descriptionShort = $STR_desc_ItemHatchetBroken;
-	
+	descriptionShort = $STR_desc_ItemHatchetBroken;	
 	fixedTool = "ItemHatchet";
 	
 	class ItemActions

@@ -1,12 +1,10 @@
 class Attachment_Sup556 : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\z\addons\dayz_communityweapons\attachments\suppressor556\suppressor556.p3d";
-	picture = "\z\addons\dayz_communityweapons\attachments\suppressor556\data\m_suppressor556_ca.paa";
-	
+	picture = "\z\addons\dayz_communityweapons\attachments\suppressor556\data\m_suppressor556_ca.paa";	
 	displayName = $STR_DZ_ATT_SUP556_NAME;
 	descriptionShort = $STR_DZ_ATT_SUP556_DESC;
 	

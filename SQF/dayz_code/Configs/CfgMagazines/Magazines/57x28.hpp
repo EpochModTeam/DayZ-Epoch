@@ -1,7 +1,7 @@
 //P90
 class 50Rnd_57x28_P90: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_MAG_50RND_P90_NAME;
 	descriptionShort = $STR_DZ_MAG_50RND_P90_DESC;
 	model = "\RH_smg\mags\mag_p90.p3d";

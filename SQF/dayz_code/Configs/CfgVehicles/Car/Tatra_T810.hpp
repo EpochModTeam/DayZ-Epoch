@@ -1,6 +1,6 @@
 class T810_DZE_Base_ACR: Truck
 {
-	scope = private;
+	scope = 0;
 	mapSize = 8;
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_T810_CA.paa";
 	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_T810_CA.paa";
@@ -341,7 +341,7 @@ class T810_DZE_Base_ACR: Truck
 
 class T810A_PKT_ACR_DZ: T810_DZE_Base_ACR
 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_TATRA_PKT_WOODLAND;
 	model = "\CorePatch\CorePatch_Vehicles\models\T810_vp2_ACR";
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_T810_MG_CA.paa";

@@ -1,7 +1,7 @@
 class MH6J_EP1;
 class MH6J_DZ: MH6J_EP1
 {
-	scope = public;
+	scope = 2;
 	crew = "";
 	enablemanualfire = 0;
 	typicalCargo[] = {};

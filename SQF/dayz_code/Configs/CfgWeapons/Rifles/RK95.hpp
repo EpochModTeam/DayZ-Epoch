@@ -38,7 +38,7 @@ class OpticsModes\
 
 class RK95_DZ: AKM_DZ
 {
-	scope = public;
+	scope = 2;
 	opticsZoomInit = 0.375;
 	model = "\RH_aks\RH_rk95.p3d";
 	picture = "\RH_aks\inv\rk95.paa";

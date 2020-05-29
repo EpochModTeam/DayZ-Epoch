@@ -1,6 +1,6 @@
 class LAV25;
 class LAV25_DZ: LAV25 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_LAV25;
 
 	commanderCanSee = 2+16+32;
@@ -23,7 +23,7 @@ class LAV25_DZ: LAV25 {
 };
 class LAV25_HQ;
 class LAV25_HQ_DZ: LAV25_HQ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_LAV25_HQ;
 
 	commanderCanSee = 2+16+32;

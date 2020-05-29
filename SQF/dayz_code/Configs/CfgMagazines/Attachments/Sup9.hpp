@@ -1,12 +1,10 @@
 class Attachment_Sup9 : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\z\addons\dayz_communityweapons\attachments\suppressor9\suppressor9.p3d";
-	picture = "\z\addons\dayz_communityweapons\attachments\suppressor9\data\m_suppressor9_ca.paa";
-	
+	picture = "\z\addons\dayz_communityweapons\attachments\suppressor9\data\m_suppressor9_ca.paa";	
 	displayName = $STR_DZ_ATT_SUP9_NAME;
 	descriptionShort = $STR_DZ_ATT_SUP9_DESC;
 	

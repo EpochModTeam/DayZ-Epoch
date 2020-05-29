@@ -1,6 +1,6 @@
 class UAZ_CDF;
 class UAZ_CDF_DZE: UAZ_CDF {
-	scope = public;
+	scope = 2;
 	maxspeed = 190;
 	displayName = $STR_VEH_NAME_UAZ_CDF;
 	vehicleClass = "DayZ Epoch Vehicles";	
@@ -27,7 +27,7 @@ class UAZ_CDF_DZE: UAZ_CDF {
 };
 class UAZ_INS;
 class UAZ_INS_DZE: UAZ_INS {
-	scope = public;
+	scope = 2;
 	maxspeed = 190;
 	displayName = $STR_VEH_NAME_UAZ_INS;
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -54,7 +54,7 @@ class UAZ_INS_DZE: UAZ_INS {
 };
 class UAZ_RU;
 class UAZ_RU_DZE: UAZ_RU {
-	scope = public;
+	scope = 2;
 	maxspeed = 190;
 	displayName = $STR_VEH_NAME_UAZ_RU;
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -82,7 +82,7 @@ class UAZ_RU_DZE: UAZ_RU {
 class UAZ_Unarmed_TK_EP1;
 class UAZ_Unarmed_TK_EP1_DZE: UAZ_Unarmed_TK_EP1 {
 	maxspeed = 190;
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_UAZ_TK;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -109,7 +109,7 @@ class UAZ_Unarmed_TK_EP1_DZE: UAZ_Unarmed_TK_EP1 {
 class UAZ_Unarmed_UN_EP1;
 class UAZ_Unarmed_UN_EP1_DZE: UAZ_Unarmed_UN_EP1 {
 	maxspeed = 190;
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_UAZ_UN;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -136,7 +136,7 @@ class UAZ_Unarmed_UN_EP1_DZE: UAZ_Unarmed_UN_EP1 {
 class UAZ_Unarmed_TK_CIV_EP1;
 class UAZ_Unarmed_TK_CIV_EP1_DZE: UAZ_Unarmed_TK_CIV_EP1 {
 	maxspeed = 190;
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_UAZ_CIVIL;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

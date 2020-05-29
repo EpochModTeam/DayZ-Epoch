@@ -1,6 +1,6 @@
 class Offroad_DSHKM_Gue;
 class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_Gue {
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

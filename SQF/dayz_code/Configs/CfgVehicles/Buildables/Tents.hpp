@@ -1,5 +1,5 @@
 class TentStorage_base : DZ_storage_base {	
-	scope = public;
+	scope = 2;
 	model = "\z\addons\dayz_communityassets\models\tent_a.p3d";
 	destrType = DestructTent;
 	displayName = $STR_VEH_NAME_TENT;

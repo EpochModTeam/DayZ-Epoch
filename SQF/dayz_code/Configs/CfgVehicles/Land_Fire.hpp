@@ -4,7 +4,7 @@ class flamable_DZ: House
 	displayName = "";
 	icon = "\ca\misc3\data\Icons\icon_fireplace_ca.paa";
 	mapSize = 0;
-	scope = public;
+	scope = 2;
 	armor=1000;
 	simulation="fire";
 	vehicleClass="Misc";
@@ -40,7 +40,7 @@ class Land_Fire: House
 	displayName = "$STR_MISC_FIRE";
 	icon = "\ca\misc3\data\Icons\icon_fireplace_ca.paa";
 	mapsize = 1.03;
-	scope = public;
+	scope = 2;
 	accuracy=1;
 	armor = 150;
 	simulation="fire";
@@ -148,7 +148,7 @@ class Land_Camp_Fire_DZ : Land_Fire {
 
 class Misc_TyreHeap: Land_Fire
 {
-	scope = public;
+	scope = 2;
 	vehicleClass="Misc";
 	model = "\ca\misc\Misc_TyreHeap";
 	icon="\Ca\Misc3\Data\Icons\icomap_tyreHeap_CA.paa";

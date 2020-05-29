@@ -6,6 +6,7 @@ class ItemKey: ItemCore {
 	keyid = 0;
 	scope = 2;
 	weight = 0.01;
+	
 	class ItemActions
 	{
 		class Toolbelt

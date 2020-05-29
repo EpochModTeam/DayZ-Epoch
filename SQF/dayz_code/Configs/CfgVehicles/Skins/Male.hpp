@@ -12,7 +12,7 @@ class CAManBase: Man //includes all skins except animals
 class Civilian: CAManBase
 {
 	rarityUrban = -1;
-	scope = private;
+	scope = 0;
 	faction = "CIV";
 	genericNames = "CzechMen";
 	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca.paa";
@@ -68,7 +68,7 @@ class Civilian: CAManBase
 };
 
 class Survivor_DZ : Civilian {
-	scope = private;
+	scope = 0;
 	side = TWest;
 	weapons[] = {"Throw", "Put"};
 	magazines[] = {};
@@ -124,13 +124,13 @@ class SoldierHeavy_Base_DZ : Survivor_DZ {
 };
 
 class Survivor1_DZ : Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_CHAR_1;
 	model = "\dayz\objects\proxy_man";
 };
 
 class Survivor2_DZ : Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_CHAR_1;
 	model = "\dayz\characters\man_survivor";
 };
@@ -144,7 +144,7 @@ class Survivor3_DZ : Survivor2_DZ {
 //Bandit1_DZ moved to DZE section below
 
 class Rocket_DZ: SoldierLight_Base_DZ { //BAF_Soldier_Officer_W
-	scope = public;
+	scope = 2;
 	displayName = "Rocket";
 	model = "\ca\characters_d_BAF\BAF_Soldier_Officer_BAF";
 	portrait = "\ca\characters_d_baf\Data\portraits\baf_officer_CA";
@@ -159,7 +159,7 @@ class Rocket_DZ: SoldierLight_Base_DZ { //BAF_Soldier_Officer_W
 };
 
 class Soldier1_DZ: SoldierHeavy_Base_DZ { //BAF_Soldier_W
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_SOLDIER;
 	model = "\ca\characters_d_BAF\BAF_Soldier_1_BAF";
 	portrait = "ca\characters_d_baf\Data\portraits\baf_soldier_CA";
@@ -173,7 +173,7 @@ class Soldier1_DZ: SoldierHeavy_Base_DZ { //BAF_Soldier_W
 };
 
 class Sniper1_DZ: Survivor_DZ { //BAF_Soldier_SniperH_W
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_SKIN_GHILLIE_WDL_NAME;
 	model = "\ca\characters_e\Ghillie\Ghillie_Overall";
 	portrait = "\Ca\characters\data\portraits\comBarHead_common_sniper_ca";
@@ -188,7 +188,7 @@ class Sniper1_DZ: Survivor_DZ { //BAF_Soldier_SniperH_W
 };
 
 class Camo1_DZ: SoldierLight_Base_DZ { //BAF_Soldier_L_W
-	scope = public;
+	scope = 2;
 	displayName = $STR_CHAR_1;
 	model = "\ca\characters_d_BAF\BAF_Soldier_light_BAF";
 	portrait = "ca\characters_d_baf\Data\portraits\baf_soldier_CA";
@@ -203,7 +203,7 @@ class Camo1_DZ: SoldierLight_Base_DZ { //BAF_Soldier_L_W
 };
 
 class INS_Lopotev_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_BOSS;
 	model = "\ca\characters2\OpforIns\Ins_Lopotev";
 	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca";
@@ -215,7 +215,7 @@ class INS_Lopotev_DZ: Survivor_DZ {
 };
 
 class RU_Soldier_Crew_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_CREWMAN;
 	model = "\ca\characters2\Rus\Soldier_Crew";
 	portrait = "\Ca\characters\data\portraits\comBarHead_common_crew_ca";
@@ -227,7 +227,7 @@ class RU_Soldier_Crew_DZ: SoldierLight_Base_DZ {
 };
 
 class TK_Commander_EP1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_GENERAL;
 	model = "\CA\characters_E\TK\Tk_Commander";
 	portrait = "\Ca\characters\data\portraits\comBarHead_ru_soldier_ca";
@@ -235,7 +235,7 @@ class TK_Commander_EP1_DZ: Survivor_DZ {
 };
 
 class TK_Soldier_Sniper_EP1_DZ: Sniper1_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_SKIN_GHILLIE_DES_NAME;
 	model = "\ca\characters_E\Ghillie\Ghillie_Top";
 	portrait = "\Ca\characters\data\portraits\comBarHead_common_sniper_ca";
@@ -249,7 +249,7 @@ class TK_Soldier_Sniper_EP1_DZ: Sniper1_DZ {
 };
 
 class TK_Special_Forces_MG_EP1_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_SMUGGLER;
 	model = "\CA\characters_E\TK\Tk_StormTrooper";
 	portrait = "\Ca\characters\data\portraits\comBarHead_ru_soldier_ca";
@@ -257,7 +257,7 @@ class TK_Special_Forces_MG_EP1_DZ: SoldierLight_Base_DZ {
 };
 
 class INS_Soldier_AR_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = "Cooper";
 	model = "\ca\characters2\OpforIns\Ins_Soldier_1.p3d";
 	portrait = "\Ca\characters\data\portraits\comBarHead_opFor_ca";
@@ -293,7 +293,7 @@ class INS_Worker2_DZ: INS_Soldier_AR_DZ {
 };
 
 class Bandit1_DZ : SoldierLight_Base_DZ { //Normal black PMC vest bandit
-	scope = public;
+	scope = 2;
 	displayName = $STR_CHAR_2;
 	model = "\dayz\characters\man_bandit";
 	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
@@ -311,7 +311,7 @@ class Bandit1_DZ : SoldierLight_Base_DZ { //Normal black PMC vest bandit
 };
 
 class Bandit2_DZ: Bandit1_DZ { //German bright color camo bandit
-	scope = public;
+	scope = 2;
 	displayName = $STR_CHAR_2;
 	weapons[] = {"Throw","Put"};
 	model = "\ca\characters_E\GER\GER_rifleman";
@@ -322,7 +322,7 @@ class Bandit2_DZ: Bandit1_DZ { //German bright color camo bandit
 };
 
 class GUE_Soldier_MG_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_CHAR_2;
 	model = "\ca\characters2\IndepIns\Soldier_MG.p3d";
 	portrait = "\Ca\characters\data\portraits\comBarHead_opFor_ca";
@@ -360,7 +360,7 @@ class GUE_Soldier_2_DZ: GUE_Soldier_MG_DZ {
 };
 
 class RU_Policeman_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_POLICE_OFFICER;
 	model = "\ca\characters2\civil\Policeman\Policeman";
 	class Wounds
@@ -382,13 +382,13 @@ class RU_Policeman2_DZ: RU_Policeman_DZ {
 };
 
 class Pilot_EP1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_PILOT;
 	model = "\Ca\characters_E\Civil\Pilot\pilot";
 };
 
 class Haris_Press_EP1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_JOURNALIST;
 	model = "\ca\characters_E\Civil\Harris\Harris";
 	hiddenSelections[] = {};
@@ -406,13 +406,13 @@ class GUE_Commander_DZ: GUE_Soldier_MG_DZ {
 };
 
 class Functionary1_EP1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_BUSINESSMAN;
 	model = "\Ca\characters_E\Civil\Functionary\Functionary";
 };
 
 class Priest_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_PRIEST;
 	model = "\ca\characters2\civil\Priest\Priest";
 	class Wounds
@@ -423,7 +423,7 @@ class Priest_DZ: Survivor_DZ {
 };
 
 class Rocker1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_Rocker;
 	model = "\ca\characters2\civil\Rocker\Rocker";
 	class Wounds
@@ -448,7 +448,7 @@ class Rocker4_DZ: Rocker1_DZ {
 };
 
 class TK_INS_Warlord_EP1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_TAKISTANIWARLORD;
 	model = "\CA\characters_E\LOC\LOC_soldier02";
 	portrait = "\Ca\characters_E\data\portraits\loc_soldier_CA";
@@ -481,7 +481,7 @@ class TK_INS_Soldier_EP1_DZ: TK_INS_Warlord_EP1_DZ {
 };
 	
 class CZ_Special_Forces_GL_DES_EP1_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_SPECIALFORCES;
 	model = "\CA\characters_E\ACR\acr_soldier_spec1";
 	portrait = "\Ca\characters\data\portraits\comBarHead_bluFor_cdf_ca";
@@ -494,7 +494,7 @@ class CZ_Special_Forces_GL_DES_EP1_DZ: SoldierLight_Base_DZ {
 };
 	
 class Drake_Light_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_DESERTCAMO;
 	model = "\ca\characters_E\US\US_machine_gunner_Light";
 	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";
@@ -506,7 +506,7 @@ class Drake_Light_DZ: SoldierLight_Base_DZ {
 };
 
 class Soldier_Bodyguard_AA12_PMC_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_BODYGUARD;
 	model = "\Ca\Characters_PMC\Dixon\Dixon.p3d";
 	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca.paa";
@@ -550,7 +550,7 @@ class Soldier_TL_PMC_DZ: Soldier_Bodyguard_AA12_PMC_DZ {
 };
 
 class FR_OHara_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_JUNGLECAMO;
 	model = "\ca\characters2\USMC\Ohara";
 	portrait = "\Ca\characters\data\portraits\comBarHead_ohara_ca";
@@ -575,7 +575,7 @@ class CZ_Soldier_Sniper_EP1_DZ: Sniper1_DZ {
 };
 
 class Graves_Light_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_URBANCAMO;
 	model = "\ca\characters_E\Delta\Delta2_Light.p3d";
 	portrait = "\ca\characters_E\data\portraits\Graves_CA.paa";
@@ -584,7 +584,7 @@ class Graves_Light_DZ: SoldierLight_Base_DZ {
 };
 
 class USMC_Soldier_Officer_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_USMCOFFICER;
 	model = "\ca\characters2\USMC\USMC_soldier_Officer";
 	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";
@@ -624,7 +624,7 @@ class USMC_Soldier_Pilot_DZ: USMC_Soldier_MG_DZ {
 };
 
 class FR_TL_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_CAMOTEAMLEADER;
 	model = "\ca\characters2\USMC\FR_CO";
 	portrait = "\Ca\characters\data\portraits\comBarHead_fr_soldier_ca";	
@@ -679,7 +679,7 @@ class FR_Assault_R_DZ: FR_TL_DZ {
 };
 
 class RU_Soldier_DZ: SoldierHeavy_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_RUSOLDIER;
 	portrait = "\Ca\characters\data\portraits\comBarHead_ru_soldier_ca";
 	model = "\ca\characters2\Rus\Soldier";
@@ -710,7 +710,7 @@ class RU_Soldier_Officer_DZ: RU_Soldier_DZ {
 };
 
 class RUS_Soldier1_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_RUCAMO;
 	model = "\ca\characters2\Rus\Specnaz_Back";
 	portrait = "\Ca\characters\data\portraits\comBarHead_ru_spec_ca";
@@ -728,7 +728,7 @@ class RUS_Commander_DZ: RUS_Soldier1_DZ {
 };
 
 class MVD_Soldier_DZ: SoldierHeavy_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_MVDSOLDIER;
 	model = "\ca\characters2\Rus\Vityaz";
 	portrait = "\Ca\characters\data\portraits\comBarHead_ru_mvd_ca";
@@ -759,14 +759,14 @@ class Ins_Soldier_Crew_DZ: INS_Soldier_AR_DZ {
 };
 
 class CDF_Soldier_DZ: SoldierHeavy_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_CDFSOLDIER;
 	portrait = "\Ca\characters\data\portraits\comBarHead_bluFor_cdf_ca";
 	model = "\ca\characters2\Blufor\Soldier";
 };
 
 class Doctor_DZ: Survivor_DZ {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_EPOCH_SKINS_DOCTOR;
 	model = "\ca\characters2\civil\Doctor\Doctor";
 	hiddenSelections[] = {"Camo"};
@@ -794,7 +794,7 @@ class Gardener_DZ: Doctor_DZ {
 };
 
 class Worker1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_WORKER;
 	model = "\ca\characters2\civil\Worker\Worker";
 	hiddenSelections[] = {"Camo"};
@@ -815,7 +815,7 @@ class Worker4_DZ: Worker1_DZ {
 };
 
 class TK_CIV_Takistani01_EP1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_TKCITIZEN;
 	hiddenSelections[] = {"Camo"};
 	model = "\CA\characters_E\civil\Tak_civil01\Tak_civil01";
@@ -874,7 +874,7 @@ class TK_CIV_Takistani06_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
 };
 
 class TK_INS_Soldier_AR_EP1_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_TKSOLDIER;
 	model = "\CA\characters_E\LOC\LOC_soldier05";
 	portrait = "\Ca\characters_E\data\portraits\loc_soldier_CA";
@@ -892,7 +892,7 @@ class TK_INS_Soldier_AR_EP1_DZ: SoldierLight_Base_DZ {
 };
 
 class TK_GUE_Soldier_EP1_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_TKGUESOLDIER;
 	model = "\CA\characters_E\LOC\LOC_soldier01";
 	portrait = "\Ca\characters_E\data\portraits\loc_soldier_CA";
@@ -910,7 +910,7 @@ class TK_GUE_Soldier_EP1_DZ: SoldierLight_Base_DZ {
 };
 
 class CZ_Soldier_SL_DES_EP1_DZ: SoldierHeavy_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_CZSOLDIER;
 	portrait = "\Ca\characters\data\portraits\comBarHead_bluFor_cdf_ca";
 	hiddenSelections[] = {"Camo"};
@@ -918,7 +918,7 @@ class CZ_Soldier_SL_DES_EP1_DZ: SoldierHeavy_Base_DZ {
 };
 
 class US_Soldier_EP1_DZ: SoldierHeavy_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_USSOLDIER;
 	model = "\ca\characters_e\US\US_rifleman";
 	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";
@@ -930,20 +930,20 @@ class US_Soldier_EP1_DZ: SoldierHeavy_Base_DZ {
 };
 
 class UN_CDF_Soldier_Guard_EP1_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_UNCOMMANDER;
 	model = "\ca\characters_e\UN\UN_CDF_Officer";
 	portrait = "\Ca\characters\data\portraits\comBarHead_common_officer_ca";
 };
 
 class UN_CDF_Soldier_EP1_DZ: SoldierHeavy_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_UNSOLDIER;
 	model = "\ca\characters_E\UN\UN_CDF_Soldier";
 };
 
 class GER_Soldier_TL_EP1_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_GERRECON;
 	model = "\ca\characters_E\GER\GER_rifleman_light";
 	portrait = "\Ca\characters\data\portraits\comBarHead_opFor_ca";
@@ -951,7 +951,7 @@ class GER_Soldier_TL_EP1_DZ: SoldierLight_Base_DZ {
 };
 
 class BAF_Soldier_Officer_MTP_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SKINS_BAFOFFICER;
 	portrait = "\ca\characters_d_baf\Data\portraits\baf_officer_CA";
 	model = "\ca\characters_d_BAF\BAF_Soldier_Officer_BAF";
@@ -992,7 +992,7 @@ class FR_Sapper_DZ: FR_TL_DZ {
 };
 
 class CamoWinter_DZ: Survivor_DZ {
-    scope = public;
+    scope = 2;
     displayName = $STR_EPOCH_SKINS_THERMOSUITMAN;
     model = "\nst\ns_dayz\characters\cw\camowinter_dzn.p3d";
 	faceType = "HeadMask1Black";
@@ -1015,13 +1015,13 @@ class Sniper1W_DZ: Sniper1_DZ {
 };
 
 class Nac_Soldier_DZ: SoldierHeavy_Base_DZ {
-	scope = public;
+	scope = 2;
     displayName = $STR_EPOCH_SKINS_NACSOLDIER;
     model = "\nst\ns_fraction\nac\nac_soldier_1";
 };
 
 class gsc_military_helmet_wdl_DZ : SoldierHeavy_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME;
 	model = "\gsc_stalker\gsc_military_helmet_wdl.p3d";
 	class Wounds {
@@ -1068,7 +1068,7 @@ class gsc_military_head_grey_DZ : gsc_military_helmet_wdl_DZ {
 };
 
 class gsc_scientist1_DZ : Survivor_DZ {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME;
 	model = "\gsc_stalker\gsc_eco_suit.p3d";
 	class Wounds {
@@ -1093,13 +1093,13 @@ class gsc_scientist2_head_DZ : gsc_scientist1_DZ {
 };
 
 class gsc_cloth_loner_head_DZ : Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_SKIN_STALKER_ROOKIE_NAME;
 	model = "\gsc_stalker\gsc_cloth_loner_head.p3d";
 };
 
 class gsc_eco_stalker_mask_neutral_DZ : SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_SKIN_STALKER_LONER_MASK_NAME;
 	side = 1;
 	model = "\gsc_stalker\gsc_eco_stalker_mask.p3d";
@@ -1285,7 +1285,7 @@ class GhillieFull_Wood16_DZ: GhillieFull_Wood01_DZ {
 
 //KSK Mod Skins
 class GER_Soldier_EP1_des_DZ: SoldierLight_Base_DZ {	
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME;
 	model = "\ksk_mod\GER_rifleman_des.p3d";
 };
@@ -1304,7 +1304,7 @@ class GER_Soldier_TL_EP1_wdl_DZ: GER_Soldier_EP1_des_DZ {
 
 //Ice Apo Mod Skins
 class Apo_Rifleman_01_DZ: SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME;
 	model = "\ice_apo_resistance\soldier_hood_medium_beard.p3d";
 	picture = "\Ca\characters\data\Ico\i_null_CA.paa";
@@ -1347,7 +1347,7 @@ class Apo_Rifleman_06_DZ : Apo_Rifleman_01_DZ {
 };
 
 class SG_GRU_TL_DZ : SoldierLight_Base_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_SKIN_SG_GRU_DT_TL_NAME;
 	model = "\SG_GRU\Soldier_Gorka_1.p3d";
 	class Wounds {
@@ -1404,7 +1404,7 @@ class SG_GRU_MG_D_DZ : SG_GRU_TL_DZ {
 	displayName = $STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME;
 };
 class CZ_Soldier805_DES_ACR_DZ : SoldierHeavy_Base_DZ {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME;
 	model = "\Ca\Characters_ACR\acr_dst_805";
 	portrait = "\Ca\characters\data\portraits\comBarHead_usmc_soldier_ca";	
@@ -1549,7 +1549,7 @@ class CZ_Soldier_Light_Wdl_ACR_DZ : CZ_Soldier805_DES_ACR_DZ {
 };
 
 class Firefighter1_DZ : Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_FIREFIGHTER_NAME;
 	model = "\kpfs_thw\characters\worker\thw_worker";
 	hiddenSelections[] = {"camo01","hps","glasses"};
@@ -1583,7 +1583,7 @@ class Firefighter5_DZ : Firefighter4_DZ {
 	hiddenSelectionsTextures[] = {"\kpfs_feuerwehr\man\fw_leader_co.paa","\kpfs_feuerwehr\man\fw_helmet_sl_co.paa"};
 };
 class Firefighter_Officer1_DZ : Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_FIREFIGHTER_OFFICER_NAME;
 	model = "\kpfs_thw\characters\officer\thw_officer";
 	class Wounds
@@ -1604,7 +1604,7 @@ class Firefighter_Officer2_DZ : Firefighter_Officer1_DZ {
 };
 
 class Postman1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_POSTMAN_NAME;
 	model = "kpfs_civ\dbp_officer";
 	class Wounds
@@ -1642,7 +1642,7 @@ class Postman4_DZ: Postman1_DZ {
 };
 
 class Hunter_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_HUNTER_NAME;
 	model = "kpfs_civ\hunter";
 	hiddenSelections[] = {};
@@ -1655,7 +1655,7 @@ class Hunter_DZ: Survivor_DZ {
 };
 
 class Civilian1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_CHAR_1;
 	hiddenSelections[] = {"Camo01","Camo02","boonie"};
 	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_dress_co.paa","sra_civilian\civilian\klouboucek_cepice1_co.paa"};
@@ -1723,7 +1723,7 @@ class Civilian14_DZ: Civilian2_DZ {
 	hiddenSelectionsTextures[] = {"sra_civilian\civilian\civil_tshirt_01_star_co.paa","sra_civilian\civilian\klouboucek_cepice3_co.paa"};
 };
 class Prisoner1_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_PRISONER_NAME;
 	hiddenSelections[] = {"Camo01"};
 	hiddenSelectionsTextures[] = {"sra_civilian\prisoner\vezen_labordress_torn1_co.paa"};
@@ -1742,7 +1742,7 @@ class Prisoner3_DZ: Prisoner1_DZ {
 	hiddenSelectionsTextures[] = {"sra_civilian\prisoner\vezen_tshirtdress_torn_co.paa"};
 };
 class Reporter_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_REPORTER_NAME;
 	model = "\sra_civilian\civil_pressmanik";
 	class Wounds
@@ -1753,7 +1753,7 @@ class Reporter_DZ: Survivor_DZ {
 };
 
 class MafiaBoss_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_MAFIABOSS_NAME;
 	model = "\sra_civilian\civil_tvreport";
 	class Wounds
@@ -1764,7 +1764,7 @@ class MafiaBoss_DZ: Survivor_DZ {
 };
 
 class Dealer_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_DRUGDEALER_NAME;
 	model = "\sra_civilian\arms_dealer";
 	class Wounds
@@ -1775,7 +1775,7 @@ class Dealer_DZ: Survivor_DZ {
 };
 
 class BusinessMan_DZ: Survivor_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_BUSINESSMAN_NAME;
 	model = "\sra_civilian\chancellor";
 	class Wounds

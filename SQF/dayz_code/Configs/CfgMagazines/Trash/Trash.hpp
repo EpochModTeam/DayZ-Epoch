@@ -1,12 +1,10 @@
 class ItemSodaEmpty : HandGrenade
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\dayz_equip\models\soda_coke_e.p3d";
 	picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
 	displayName = $STR_EQUIP_NAME_35;
-	descriptionShort = $STR_EQUIP_DESC_35;
-	
+	descriptionShort = $STR_EQUIP_DESC_35;	
 	ammo = "SodaCan";
 	
 	class ItemActions
@@ -16,7 +14,8 @@ class ItemSodaEmpty : HandGrenade
 			text = $STR_ACTIONS_DRINK2;
 			script = ";[_id] spawn player_fillWater;";
 		};
-		class Crafting {
+		class Crafting 
+		{
 			text = $STR_EPOCH_MELT_BARS;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};
@@ -29,13 +28,11 @@ class ItemSodaEmpty : HandGrenade
 	
 class TrashTinCan : HandGrenade
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\dayz_equip\models\trash_tincan.p3d";
 	picture = "\dayz_equip\textures\equip_tincan_ca.paa";
 	displayName = $STR_EQUIP_NAME_33;
-	descriptionShort = $STR_EQUIP_DESC_33;
-	
+	descriptionShort = $STR_EQUIP_DESC_33;	
 	ammo = "TinCan";
 	
 	class ItemActions
@@ -45,7 +42,8 @@ class TrashTinCan : HandGrenade
 			text = $STR_ACTIONS_DRINK2;
 			script = ";[_id] spawn player_fillWater;";
 		};
-		class Crafting {
+		class Crafting 
+		{
 			text = $STR_EPOCH_MELT_BARS;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"fire"};

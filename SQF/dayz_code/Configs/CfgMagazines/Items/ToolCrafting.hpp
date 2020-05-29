@@ -1,8 +1,8 @@
 class equip_lever : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;	
+	type = 256;	
 	picture = "\dayz_equip\textures\equip_lever.paa";
 	model = "\z\addons\dayz_epoch_w\magazine\dze_handle.p3d";
 	descriptionShort = $STR_EQUIP_DESC_LEVER;
@@ -11,7 +11,7 @@ class equip_lever : CA_Magazine
 
 class ItemSledgeHead : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_SLEDGEHAMMERHEAD;
@@ -36,7 +36,7 @@ class ItemSledgeHead : CA_Magazine
 
 class ItemSledgeHandle : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_SLEDGEHAMMERHANDLE;
@@ -61,7 +61,7 @@ class ItemSledgeHandle : CA_Magazine
 
 class equip_Crossbow_Kit : CA_Magazine 
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_CROSSBOW_KIT;
 	descriptionShort = $STR_ITEM_DESC_CROSSBOW_KIT;
@@ -86,7 +86,7 @@ class equip_Crossbow_Kit : CA_Magazine
 
 class equip_crossbow_stock : CA_Magazine 
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_CROSSBOW_STOCK;
 	descriptionShort = $STR_ITEM_DESC_CROSSBOW_STOCK;

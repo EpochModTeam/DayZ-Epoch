@@ -1,6 +1,6 @@
 class M113Ambul_UN_EP1;
 class M113Ambul_UN_EP1_DZ : M113Ambul_UN_EP1 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_M113_AMBULANCE_UN;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -19,14 +19,14 @@ class M113Ambul_UN_EP1_DZ : M113Ambul_UN_EP1 {
 };
 
 class M113Ambul_TK_EP1_DZ : M113Ambul_UN_EP1_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_M113_AMBULANCE_TK;
 	hiddenSelectionsTextures[] = {"\ca\Tracked_E\M113\Data\m113a3_01_TK_co.paa"};
 };
 
 class M113_UN_EP1;
 class M113_UN_EP1_DZ : M113_UN_EP1 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_M113_UN;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -46,7 +46,7 @@ class M113_UN_EP1_DZ : M113_UN_EP1 {
 };
 
 class M113_TK_EP1_DZ : M113_UN_EP1_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_M113_TK;
 	hiddenSelectionsTextures[] = {"\ca\Tracked_E\M113\Data\m113a3_01_TK_co.paa"};	
 };

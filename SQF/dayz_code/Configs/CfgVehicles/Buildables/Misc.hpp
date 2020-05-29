@@ -1,7 +1,7 @@
 // belt buckle - no idea what this is used for
 class Helper_Base_EP1;
 class BeltBuckle_DZE : Helper_Base_EP1 {
-	scope = public;
+	scope = 2;
 	model = "\z\addons\dayz_epoch\models\skull.p3d";
 	displayName = "Belt Buckle";
 	accuracy = 1000;
@@ -12,7 +12,7 @@ class BeltBuckle_DZE : Helper_Base_EP1 {
 // WorkBench_DZ
 class WorkBench_DZ: BuiltItems
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructTree";
 	cost = 100;
 	offset[] = {0,1.5,0};
@@ -31,7 +31,7 @@ class WorkBench_DZ: BuiltItems
 
 class FuelPump_DZ: BuiltItems
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,2,0};
@@ -82,7 +82,7 @@ class Plastic_Pole_EP1_DZ: Sign_1L_Noentry_EP1
 	coefInside = 4;
 	coefInsideHeur = 4;
 
-	scope = public;
+	scope = 2;
 	offset[] = {0,2.5,0.3};
 	displayName = $STR_EPOCH_PLAYER_246;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -95,7 +95,7 @@ class Land_covering_hut_EP1;
 class CanvasHut_DZ: Land_covering_hut_EP1
 {
 	armor = 200;
-	scope = public;
+	scope = 2;
 	offset[] = {0,2.5,1};
 	displayName = $STR_EPOCH_CANVASSUNSHADE;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -104,7 +104,7 @@ class CanvasHut_DZ: Land_covering_hut_EP1
 class Park_bench1;
 class ParkBench_DZ: Park_bench1
 {
-	scope = public;
+	scope = 2;
 	offset[] = {0,1.5,0.5};
 	displayName = $STR_EPOCH_WOODBENCH;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -115,7 +115,7 @@ class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
 {
 	armor = 300;
 	destrType = "DestructNo";
-	scope = public;
+	scope = 2;
 	offset[] = {0,9,0};
 	displayName = $STR_EPOCH_DESERTCAMONET;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -126,7 +126,7 @@ class ForestCamoNet_DZ: Land_CamoNet_EAST
 {
 	armor = 300;
 	destrType = "DestructNo";
-	scope = public;
+	scope = 2;
 	offset[] = {0,9,0};
 	displayName = $STR_EPOCH_FORESTCAMONET;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -137,7 +137,7 @@ class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
 {
 	armor = 300;
 	destrType = "DestructNo";
-	scope = public;
+	scope = 2;
 	offset[] = {0,9,0};
 	displayName = $STR_EPOCH_LARGEDESERTCAMONET;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -148,7 +148,7 @@ class DeerStand_DZ: Land_Misc_deerstand
 {
 	armor = 300;
 	// destrType = "DestructNo";
-	scope = public;
+	scope = 2;
 	offset[] = {0,5,0};
 	displayName = $STR_EPOCH_DEERSTAND;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -159,7 +159,7 @@ class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
 {
 	armor = 300;
 	destrType = "DestructNo";
-	scope = public;
+	scope = 2;
 	offset[] = {0,9,0};
 	displayName = $STR_EPOCH_LARGEFORESTCAMONET;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -170,7 +170,7 @@ class Land_Wall_Gate_Ind1_L;
 class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 {
 	armor = 400;
-	scope = public;
+	scope = 2;
 	offset[] = {0,6,1};
 	displayName = $STR_EPOCH_RUSTYGATE;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -181,7 +181,7 @@ class Fence_corrugated_plate;
 class Fence_corrugated_DZ: Fence_corrugated_plate
 {
 	armor = 600;
-	scope = public;
+	scope = 2;
 	offset[] = {0,3,1};
 	removeoutput[] = {{"ItemCorrugated",1}};
 	displayName = $STR_EPOCH_CORRUGATEDFENCE;
@@ -194,7 +194,7 @@ class StickFence_DZ: Wall_FenW2_6_EP1
 {
 	destrType = "DestructTree";
 	armor = 200;
-	scope = public;
+	scope = 2;
 	offset[] = {0,4.5,0};
 	displayName = $STR_EPOCH_STICKFENCE;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -204,7 +204,7 @@ class ASC_EU_LHVOld;
 class LightPole_DZ: ASC_EU_LHVOld
 {
 	armor = 200;
-	scope = public;
+	scope = 2;
 	offset[] = {0,2.5,0};
 	displayName = $STR_EPOCH_LIGHTPOLE;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -216,7 +216,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 {
 	armor = 100;
 	destrType = "DestructBuilding";
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_SCAFFOLDING;
 	vehicleClass = "DayZ Epoch Buildables";
 	constructioncount = 6;
@@ -234,7 +234,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 
 class Hedgehog_DZ: BuiltItems
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,1.5,0.55};
@@ -252,7 +252,7 @@ class Hedgehog_DZ: BuiltItems
 };
 class MetalPanel_DZ: BuiltItems
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructTree";
 	cost = 100;
 	offset[] = {0,2.5,0.5};
@@ -267,7 +267,7 @@ class MetalPanel_DZ: BuiltItems
 };
 
 class Fort_RazorWire : BuiltItems {
-  scope = public;
+  scope = 2;
   animated = 0;
   vehicleClass = "DayZ Epoch Buildables";
   model = "\ca\misc\Fort_Razorwire";
@@ -284,7 +284,7 @@ class Fort_RazorWire : BuiltItems {
 
 class Sandbag1_DZ: BuiltItems
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "\ca\misc2\BagFenceLong.p3d";
@@ -303,7 +303,7 @@ class Sandbag1_DZ: BuiltItems
 //review some of these settings
 class BagFenceRound_DZ: BuiltItems
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
 	model = "\ca\misc2\BagFenceRound.p3d";
@@ -319,7 +319,7 @@ class BagFenceRound_DZ: BuiltItems
 };
 
 class Land_HBarrier1_DZ : BuiltItems {
-	scope = public;
+	scope = 2;
 	animated = 0;
 	vehicleClass = "DayZ Epoch Buildables";
 	typicalCargo[] = {};
@@ -350,7 +350,7 @@ class Land_HBarrier3_DZ : BuiltItems {
 	mapSize = 3.5;
 	displayName = $STR_EQUIP_NAME_21_3XHBARRIER;
 	GhostPreview = "Land_HBarrier3ePreview";
-	scope = public;
+	scope = 2;
 	animated = 0;
 	vehicleClass = "DayZ Epoch Buildables";
 	typicalCargo[] = {};
@@ -377,7 +377,7 @@ class Land_HBarrier5_DZ:BuiltItems {
 	mapSize = 7;
 	displayName = $STR_EQUIP_NAME_21_5XHBARRIER;
 	GhostPreview = "Land_HBarrier5Preview";
-	scope = public;
+	scope = 2;
 	animated = 0;
 	vehicleClass = "DayZ Epoch Buildables";
 	typicalCargo[] = {};
@@ -399,7 +399,7 @@ class Land_HBarrier5_DZ:BuiltItems {
 	};
 
 class SandNest_DZ : BuiltItems {
-	scope = public;
+	scope = 2;
 	model = "\ca\Misc_E\fortified_nest_small_ep1";
 	displayName = $STR_EQUIP_NAME_21_NEST;
 	expansion = 1;
@@ -427,7 +427,7 @@ class M240Nest_DZ: USMC_WarfareBMGNest_M240
 {
 	destrType = "DestructBuilding";
 	armor = 450;
-	scope = public;
+	scope = 2;
 	offset[] = {0,3.5,0};
 	displayName = $STR_EPOCH_M240NEST;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -440,7 +440,7 @@ class M240Nest_DZ: USMC_WarfareBMGNest_M240
 
 class WoodGate_DZ: BuiltItems
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructTree";
 	//cost = 100;
 	offset[] = {0,1.5,0.5};

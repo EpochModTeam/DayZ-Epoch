@@ -1,7 +1,7 @@
 class AH6J_EP1;
 class AH6J_EP1_DZ: AH6J_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_AH6J;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -30,7 +30,7 @@ class AH6J_EP1_DZ: AH6J_EP1
 
 class AH6J_EP1_DZE: AH6J_EP1_DZ
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_AH6J;
 	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 };
@@ -40,7 +40,7 @@ class AH6X_DZ: AH6X_EP1 {
 	displayname = $STR_VEH_NAME_AH6X;
 	vehicleClass = "DayZ Epoch Vehicles";
 	model = "dayz_vehicles\helicopters\greybird\greybird.p3d";
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};

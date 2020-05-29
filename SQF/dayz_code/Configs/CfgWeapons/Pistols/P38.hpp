@@ -1,6 +1,6 @@
 class P38_DZ: M9
 {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZ_WPN_P38_NAME;
 	descriptionShort = $STR_DZ_WPN_P38_DESC;
 	model = "\RH_de\RH_p38.p3d";

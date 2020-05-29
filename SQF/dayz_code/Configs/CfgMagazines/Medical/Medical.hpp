@@ -4,10 +4,9 @@
 
 class ItemAntibacterialWipe : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotHandGunItem;
-	
+	type = 16;	
 	model = "\z\addons\dayz_communityassets\models\antiseptic.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_antiseptic_ca.paa";
 	displayName = $STR_ITEM_NAME_WIPES;
@@ -25,10 +24,9 @@ class ItemAntibacterialWipe : CA_Magazine
 
 class ItemBandage : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotHandGunItem;
-	
+	type = 16;	
 	model = "\dayz_equip\models\fad.p3d";
 	picture = "\dayz_equip\textures\equip_fad_ca.paa";
 	displayName = $STR_EQUIP_NAME_7;
@@ -56,10 +54,9 @@ class ItemBandage : CA_Magazine
 
 class ItemSepsisBandage : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotHandGunItem;
-	
+	type = 16;	
 	model = "\dayz_equip\models\fad.p3d";
 	picture = "\dayz_equip\textures\equip_fad_ca.paa";
 	displayName = $STR_EQUIP_NAME_SEPSISBANDAGE;
@@ -77,10 +74,9 @@ class ItemSepsisBandage : CA_Magazine
 
 class ItemEpinephrine : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\dayz_equip\models\epi.p3d";
 	picture = "\dayz_equip\textures\equip_epi_ca.paa";
 	displayName = $STR_EQUIP_NAME_14;
@@ -89,10 +85,9 @@ class ItemEpinephrine : CA_Magazine
 
 class ItemMorphine : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\dayz_equip\models\morphine.p3d";
 	picture = "\dayz_equip\textures\equip_morphine_ca.paa";
 	displayName = $STR_EQUIP_NAME_15;
@@ -110,10 +105,9 @@ class ItemMorphine : CA_Magazine
 
 class ItemHeatPack : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\dayz_equip\models\Heat_pack.p3d";
 	picture = "\dayz_equip\textures\equip_heat_pack_ca.paa";
 	displayName = $STR_EQUIP_NAME_42;
@@ -130,7 +124,7 @@ class ItemHeatPack : CA_Magazine
 };
 
 class equip_woodensplint : CA_Magazine {
-	scope = public;
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_WOODENSPLINT;
 	descriptionShort = $STR_ITEM_DESC_WOODENSPLINT;
@@ -138,16 +132,19 @@ class equip_woodensplint : CA_Magazine {
 	picture = "\z\addons\dayz_communityassets\pictures\equip_woodensplint_ca.paa";
 	type = 256;
 	
-	class ItemActions {
-		class Use {
+	class ItemActions 
+	{
+		class Use 
+		{
 			text = $STR_ACTIONS_BRACE_LEG;
 			script = "spawn player_useMeds;";
 		};
 	};
 };
 
-class equip_gauze : CA_Magazine {
-	scope = public;
+class equip_gauze : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_gauze;
 	descriptionShort = $STR_ITEM_DESC_equip_gauze;
@@ -170,8 +167,9 @@ class equip_gauze : CA_Magazine {
 	};	
 };
 
-class equip_gauzepackaged : CA_Magazine {
-	scope = public;
+class equip_gauzepackaged : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_gauzepackaged;
 	descriptionShort = $STR_ITEM_DESC_equip_gauzepackaged;
@@ -194,9 +192,11 @@ class equip_gauzepackaged : CA_Magazine {
 	};	
 };
 
-class equip_herb_box : CA_Magazine {
-	scope = public;
+class equip_herb_box : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
+	type = 256;
 	displayName = $STR_EQUIP_NAME_HERBBOX;
 	descriptionShort = $STR_EQUIP_DESC_HERBBOX;
 	model = "\z\addons\dayz_communityassets\models\herb_box.p3d";

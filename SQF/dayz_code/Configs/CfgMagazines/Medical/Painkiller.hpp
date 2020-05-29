@@ -1,9 +1,8 @@
 class ItemPainkiller : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\dayz_equip\models\med_painkiller_gear.p3d";
 	picture = "\dayz_equip\textures\equip_painkiller_ca.paa";
 	displayName = $STR_EQUIP_NAME_18;
@@ -104,12 +103,11 @@ class ItemPainkiller1 : ItemPainkiller
 
 class ItemPainkillerEmpty : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EQUIP_NAME_PAINKILLER_EMPTY;
 	descriptionShort = $STR_EQUIP_DESC_PAINKILLER_EMPTY;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\dayz_equip\models\med_painkiller_gear.p3d";
 	picture = "\dayz_equip\textures\equip_painkiller_ca.paa";	
 };

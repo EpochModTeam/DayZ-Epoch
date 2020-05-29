@@ -1,6 +1,6 @@
 class Skoda;
 class Skoda_DZE: Skoda {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_SKODA_WHITE;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -31,7 +31,7 @@ class Skoda_DZE: Skoda {
 
 class SkodaBlue;
 class SkodaBlue_DZE: SkodaBlue {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_SKODA_BLUE;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -61,7 +61,7 @@ class SkodaBlue_DZE: SkodaBlue {
 };
 class SkodaRed;
 class SkodaRed_DZE: SkodaRed {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_SKODA_RED;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -92,7 +92,7 @@ class SkodaRed_DZE: SkodaRed {
 
 class SkodaGreen;
 class SkodaGreen_DZE: SkodaGreen {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_SKODA_GREEN;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

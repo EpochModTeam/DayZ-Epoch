@@ -1,5 +1,5 @@
 class Blood_Trail : House {
-	scope = private;
+	scope = 0;
 	displayName = "";
 	accuracy = 0.1;	// accuracy needed to recognize type of this target
 	vehicleClass = "DayZ Epoch Buildings";
@@ -13,7 +13,7 @@ class Blood_Trail : House {
 	placement = "slope";
 };
 class Blood_Trail_DZ : Blood_Trail {
-	scope = public;
+	scope = 2;
 	animated = 0;
 	destrType = "DestructNo";
 	mapSize = 2;

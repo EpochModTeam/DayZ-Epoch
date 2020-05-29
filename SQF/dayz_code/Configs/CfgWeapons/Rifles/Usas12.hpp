@@ -1,6 +1,6 @@
 class USAS12_DZ: Saiga12K
 {
-	scope = public;		
+	scope = 2;		
 	displayName = $STR_DZ_WPN_USAS12_NAME;
 	descriptionShort = $STR_DZ_WPN_USAS12_DESC;
 	model = "\z\addons\dayz_epoch_w\usas12\h4_usas12.p3d";

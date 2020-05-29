@@ -2,8 +2,7 @@ class 20Rnd_762x51_FNFAL : CA_Magazine
 {
 	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_fnfal_mag.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_fnFal_mag.p3d";
-	displayName = $STR_DZ_MAG_20RND_762X51_FNFAL_NAME;
-	
+	displayName = $STR_DZ_MAG_20RND_762X51_FNFAL_NAME;	
 	cartridgeName = "762x51";
 	
 	class ItemActions
@@ -25,8 +24,7 @@ class 20Rnd_762x51_DMR : CA_Magazine
 	model = "\dayz_equip\models\mag20.p3d";
 	picture = "\dayz_epoch_c\icons\magazines\m_us_dmr_ca.paa";
 	displayName = $STR_DZ_MAG_20RND_762X51_DMR_NAME;
-	descriptionShort = $STR_DZ_MAG_20RND_DMR_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_20RND_DMR_DESC;	
 	cartridgeName = "762x51";
 	
 	class ItemActions
@@ -48,8 +46,7 @@ class 20Rnd_762x51_DMRSD : 20Rnd_762x51_DMR
 	displayName = $STR_DZ_MAG_20RND_762X51_DMRSD_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_DMRSD_DESC;
 	picture = "\dayz_epoch_c\icons\magazines\m_us_dmr_ca_sd.paa";
-	ammo = "Rem_762x51_SD";	
-	
+	ammo = "Rem_762x51_SD";		
 	cartridgeName = "762x51_SD";
 	
 	class ItemActions
@@ -63,8 +60,7 @@ class 5Rnd_762x51_M24 : CA_Magazine
 {
 	model = "\dayz_equip\models\mag5rnd.p3d";
 	displayName = $STR_DZ_MAG_5RND_762X51_M24_NAME;
-	descriptionShort = $STR_DZ_MAG_5RND_762x51_M24_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_5RND_762x51_M24_DESC;	
 	cartridgeName = "762x51";
 	
 	class ItemActions
@@ -84,10 +80,9 @@ class 5Rnd_762x51_M24 : CA_Magazine
 class 100Rnd_762x51_M240: CA_Magazine
 {
 	displayName = $STR_DZ_MAG_100RND_762X51_M240_NAME;
-	descriptionShort = $STR_DZ_MAG_100RND_762x51_M240_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_100RND_762x51_M240_DESC;	
 	cartridgeName = "762x51";
-	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
+	type = 256;
 	
 	class ItemActions
 	{
@@ -100,8 +95,7 @@ class 20Rnd_762x51_B_SCAR : CA_Magazine
 	model = "\z\addons\dayz_epoch_w\magazine\dze_mk17_mag.p3d";
 	picture = "\dayz_epoch_c\icons\magazines\m_mk17_ca.paa";
 	displayName = $STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME;
-	descriptionShort = $STR_DZ_MAG_20RND_MK17_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_20RND_MK17_DESC;	
 	cartridgeName = "762x51";
 	
 	class ItemActions
@@ -117,8 +111,7 @@ class 20Rnd_762x51_SB_SCAR : CA_Magazine
 	displayName = $STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_MK17SD_DESC;
 	ammo = "Rem_762x51_SD";	
-	initSpeed = 750;
-	
+	initSpeed = 750;	
 	cartridgeName = "762x51_SD";
 	
 	class ItemActions
@@ -132,8 +125,7 @@ class 10Rnd_762x51_CZ750 : 5Rnd_762x51_M24
 	count = 10;
 	picture = "\Ca\Weapons_ACR\Data\UI\picture_CZ750_mag_CA.paa";
 	displayName = $STR_DZ_MAG_10Rnd_762x51_CZ750_NAME;
-	descriptionShort = $STR_DZ_MAG_10RND_CZ750_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_10RND_CZ750_DESC;	
 	cartridgeName = "762x51";
 	
 	class ItemActions
@@ -145,7 +137,7 @@ class 10Rnd_762x51_CZ750 : 5Rnd_762x51_M24
 
 class 20Rnd_762x51_RSASS: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	initSpeed = 900;
 	picture = "\FHQ_Remington\ammo\ui\i_20rndpmag.paa";
 	model = "\FHQ_Remington\RSASS\magazine.p3d";
@@ -193,7 +185,7 @@ class 20Rnd_762x51_HK417SD: 20Rnd_762x51_HK417
 
 class 6Rnd_762x51_WA2000: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	initSpeed = 900;
 	picture	= "\z\addons\dayz_epoch_w\wa2000\data\m_wa2000_CA.paa";
 	model = "\z\addons\dayz_epoch_w\wa2000\h4_wa2000_mag.p3d";

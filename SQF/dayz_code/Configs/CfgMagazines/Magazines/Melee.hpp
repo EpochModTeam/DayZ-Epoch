@@ -1,13 +1,13 @@
 class Melee_Swing : CA_Magazine
 {
-	type = WeaponNoSlot;
+	type = 0;
 	count = 100000;
 	initSpeed = 100;
 };
 
 class Hatchet_Swing : Melee_Swing
 {
-	scope = public;
+	scope = 2;
 	
 	//TODO: test which one is shown and delete the rest
 	displayName = "Hatchet";
@@ -18,8 +18,7 @@ class Hatchet_Swing : Melee_Swing
 
 class Crowbar_Swing : Melee_Swing
 {
-	scope = public;
-	
+	scope = 2;	
 	displayName = "Crowbar";
 	displayNameMagazine = "Crowbar";
 	shortNameMagazine = "Crowbar";
@@ -28,8 +27,7 @@ class Crowbar_Swing : Melee_Swing
 
 class Machete_Swing : Melee_Swing
 {
-	scope = public;
-	
+	scope = 2;	
 	displayName = "Machete";
 	displayNameMagazine = "Machete";
 	shortNameMagazine = "Machete";
@@ -38,8 +36,7 @@ class Machete_Swing : Melee_Swing
 
 class Fishing_Swing : Melee_Swing
 {
-	scope = public;
-	
+	scope = 2;	
 	displayName = "Fishing";
 	displayNameMagazine = "Fishing";
 	shortNameMagazine = "Fishing";
@@ -55,8 +52,7 @@ class Sledge_Swing : Melee_Swing {
 
 class Bat_Swing : Melee_Swing
 {
-	scope = public;
-	
+	scope = 2;	
 	displayName = "BaseBallBat";
 	displayNameMagazine = "BaseBallBat";
 	shortNameMagazine = "BaseBallBat";
@@ -65,8 +61,7 @@ class Bat_Swing : Melee_Swing
 
 class BatBarbed_Swing : Melee_Swing
 {
-	scope = public;
-	
+	scope = 2;	
 	displayName = "BaseBallBatBarbed";
 	displayNameMagazine = "BaseBallBatBarbed";
 	shortNameMagazine = "BaseBallBatBarbed";
@@ -75,8 +70,7 @@ class BatBarbed_Swing : Melee_Swing
 
 class BatNails_Swing : Melee_Swing
 {
-	scope = public;
-	
+	scope = 2;	
 	displayName = "BaseBallBatNails";
 	displayNameMagazine = "BaseBallBatNails";
 	shortNameMagazine = "BaseBallBatNails";

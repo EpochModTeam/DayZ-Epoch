@@ -19,7 +19,7 @@ class Old_bike_base_EP1 : Bicycle
 
 class Old_bike_TK_CIV_EP1;
 class Old_bike_TK_CIV_EP1_DZE: Old_bike_TK_CIV_EP1 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BIKE_OLD;
 	vehicleClass = "DayZ Epoch Vehicles";	
 	crew = "";
@@ -31,7 +31,7 @@ class Old_bike_TK_CIV_EP1_DZE: Old_bike_TK_CIV_EP1 {
 
 class MMT_Civ;
 class MMT_Civ_DZE: MMT_Civ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BIKE_MOUNTAINBIKE;
 	vehicleClass = "DayZ Epoch Vehicles";	
 	crew = "";

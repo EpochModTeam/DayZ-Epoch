@@ -1,6 +1,6 @@
 class PKM_DZ : PK //Iron sight PKM
 {
-	type = WeaponSlotPrimary;
+	type = 1;
 	
 	model = "z\addons\dayz_communityweapons\pkm\pkm.p3d";
 	displayName = $STR_DZ_WPN_PKM_NAME;
@@ -19,6 +19,7 @@ class PKM_DZ : PK //Iron sight PKM
 	};
 };
 
-class Pecheneg_DZ: Pecheneg { //PKP with long range scope
-	type = WeaponSlotPrimary;
+class Pecheneg_DZ: Pecheneg //PKP with long range scope
+{ 
+	type = 1;
 };

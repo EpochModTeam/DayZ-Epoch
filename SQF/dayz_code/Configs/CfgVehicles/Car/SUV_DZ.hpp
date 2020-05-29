@@ -1,6 +1,6 @@
 class SUV_DZ: SUV_Base_EP1 {
 	crew = "";
-	scope = public;
+	scope = 2;
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -82,7 +82,7 @@ class SUV_DZ: SUV_Base_EP1 {
 class SUV_TK_CIV_EP1_DZE: SUV_Base_EP1 {
 	displayName = $STR_VEH_NAME_SUV_BLACK;
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

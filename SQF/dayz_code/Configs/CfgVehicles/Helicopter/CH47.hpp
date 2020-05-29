@@ -1,7 +1,7 @@
 class CH_47F_EP1;
 class CH_47F_EP1_DZ : CH_47F_EP1 { 
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_VEH_NAME_CH47_GREEN;
 	crew = ""; 
 	typicalCargo[] = {};

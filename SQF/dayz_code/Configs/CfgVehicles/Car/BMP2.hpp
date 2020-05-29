@@ -1,6 +1,6 @@
 class BMP2_HQ_CDF;
 class BMP2_HQ_CDF_DZ: BMP2_HQ_CDF {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BMP2_CDF;
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -24,7 +24,7 @@ class BMP2_HQ_CDF_DZ: BMP2_HQ_CDF {
 };
 
 class BMP2_HQ_CDF_DZE: BMP2_HQ_CDF_DZ {
-	scope = public;
+	scope = 2;
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -36,7 +36,7 @@ class BMP2_HQ_CDF_DZE: BMP2_HQ_CDF_DZ {
 
 class BMP2_HQ_INS;
 class BMP2_HQ_INS_DZ: BMP2_HQ_INS {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BMP2_INS;
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -60,7 +60,7 @@ class BMP2_HQ_INS_DZ: BMP2_HQ_INS {
 };
 
 class BMP2_HQ_INS_DZE: BMP2_HQ_INS_DZ {
-	scope = public;
+	scope = 2;
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -72,7 +72,7 @@ class BMP2_HQ_INS_DZE: BMP2_HQ_INS_DZ {
 
 class BMP2_HQ_TK_EP1;
 class BMP2_HQ_TK_EP1_DZ: BMP2_HQ_TK_EP1 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BMP2_TK;
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -96,7 +96,7 @@ class BMP2_HQ_TK_EP1_DZ: BMP2_HQ_TK_EP1 {
 };
 
 class BMP2_HQ_TK_EP1_DZE: BMP2_HQ_TK_EP1_DZ {
-	scope = public;
+	scope = 2;
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -107,7 +107,7 @@ class BMP2_HQ_TK_EP1_DZE: BMP2_HQ_TK_EP1_DZ {
 };
 class BMP2_Ambul_INS;
 class BMP2_Ambul_INS_DZE: BMP2_Ambul_INS {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BMP2_AMBULANCE_INS;
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -130,7 +130,7 @@ class BMP2_Ambul_INS_DZE: BMP2_Ambul_INS {
 
 class BMP2_Ambul_CDF;
 class BMP2_Ambul_CDF_DZE: BMP2_Ambul_CDF {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_BMP2_AMBULANCE_CDF;
 	vehicleClass = "DayZ Epoch Vehicles";
 

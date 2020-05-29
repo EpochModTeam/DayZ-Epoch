@@ -1,11 +1,3 @@
-/*class FoodCanLongSpratsEmpty : TrashTinCan
-{
-	model = "z\addons\dayz_communityassets\models\can_long_sprat_clean_empty_co.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_can_long_sprat_clean_empty_ca.paa";
-	displayName = $STR_FOOD_NAME_CAN_EMPTY;
-	descriptionShort = $STR_FOOD_DESC_CAN_EMPTY;
-};*/
-
 class FoodCanBeefEmpty : TrashTinCan
 {
 	model = "z\addons\dayz_communityassets\models\can_beef_clean_empty.p3d";

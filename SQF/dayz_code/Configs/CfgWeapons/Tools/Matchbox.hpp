@@ -1,6 +1,6 @@
 class ItemMatchbox_base : ItemCore
 {
-	scope = private;
+	scope = 0;
 	model = "\dayz_equip\models\matchbox_gear.p3d";
 	picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
 	displayName = $STR_EQUIP_NAME_3;
@@ -9,7 +9,7 @@ class ItemMatchbox_base : ItemCore
 
 class ItemMatchboxEmpty : ItemMatchbox_base
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EQUIP_NAME_3_EMPTY;
 	descriptionShort = $STR_EQUIP_DESC_3_EMPTY;
 };
@@ -17,7 +17,7 @@ class ItemMatchboxEmpty : ItemMatchbox_base
 //Loot Spawn Table.
 class ItemMatchbox : ItemMatchbox_base
 {
-	scope = public;	
+	scope = 2;	
 	model = "\dayz_equip\models\matchbox_gear.p3d"; // Some mods override this. We leave this here just to be sure.
 	picture = "\dayz_equip\textures\equip_matchbox_ca.paa";
 	matches = -1;
@@ -25,7 +25,8 @@ class ItemMatchbox : ItemMatchbox_base
 	
 	class ItemActions
 	{
-		class Combine {
+		class Combine 
+		{
 			text = $STR_ANTIBIOTICS_COMBINE;
 			script = "spawn player_combineMatches;";
 		};

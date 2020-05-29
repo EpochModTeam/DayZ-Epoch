@@ -2,10 +2,9 @@ class 100Rnd_762x54_PK : CA_Magazine
 {
 	model = "z\addons\dayz_communityweapons\magazines\pk.p3d";
 	displayName = $STR_DZ_MAG_100RND_762x54_PK_NAME;
-	descriptionShort = $STR_DZ_MAG_100RND_762x54_PK_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_100RND_762x54_PK_DESC;	
 	cartridgeName = "762x54";
-	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
+	type = 256;
 	
 	class ItemActions
 	{
@@ -15,8 +14,7 @@ class 100Rnd_762x54_PK : CA_Magazine
 
 class 50Rnd_762x54_UK59 : 100Rnd_762x54_PK
 {
-	count = 50;
-	
+	count = 50;	
 	model = "z\addons\dayz_communityweapons\magazines\uk59.p3d";
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_uk59_ca.paa";
 	displayName = $STR_DZ_MAG_50RND_762X54_UK59_NAME;
@@ -25,8 +23,7 @@ class 50Rnd_762x54_UK59 : 100Rnd_762x54_PK
 
 class 10Rnd_762x54_SVD : CA_Magazine
 {
-	displayName = $STR_DZ_MAG_10RND_762x54_SVD_NAME;
-	
+	displayName = $STR_DZ_MAG_10RND_762x54_SVD_NAME;	
 	cartridgeName = "762x54";
 	
 	class ItemActions
@@ -41,8 +38,7 @@ class 5Rnd_762x54_Mosin : 10Rnd_762x54_SVD
 	model = "\dayz_equip\models\mag5rnd.p3d";
 	picture = "\z\addons\dayz_communityweapons\models\mosin_nagant\images\ammo.paa";
 	displayName = $STR_DZ_MAG_5RND_762X54_MOSIN_NAME;
-	descriptionShort = $STR_DZ_MAG_5RND_762X54_MOSIN_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_5RND_762X54_MOSIN_DESC;	
 	cartridgeName = "762x54";
 	
 	class ItemActions

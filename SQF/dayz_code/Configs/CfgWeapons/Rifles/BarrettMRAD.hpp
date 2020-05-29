@@ -1,7 +1,7 @@
 class Barrett_MRAD_Iron_DZ: m107
 {
-	scope = public;
-	type = WeaponSlotPrimary;
+	scope = 2;
+	type = 1;
 	canlock	= 0;
 	autoFire = 0;
 	displayname = $STR_DZ_WPN_BARETT_MRAD_IRON_NAME;
@@ -55,8 +55,8 @@ class Barrett_MRAD_CCO_DZ: Barrett_MRAD_Iron_DZ
 
 class Barrett_MRAD_Sniper_DZ: m107
 {	
-	scope = public;
-	type = WeaponSlotPrimary;
+	scope = 2;
+	type = 1;
 	canlock	= 0;
 	autoFire = 0;
 	magazines[] = {10Rnd_86x70_MRAD};

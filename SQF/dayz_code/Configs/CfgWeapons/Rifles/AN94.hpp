@@ -1,6 +1,6 @@
 class AN94_DZ: AK_74
 {
-	scope = public;
+	scope = 2;
 	opticsZoomInit = 0.375;
 	model = "\RH_aks\RH_an94.p3d";
 	picture = "\RH_aks\inv\an94.paa";
@@ -111,7 +111,7 @@ class AN94_DZ: AK_74
 };
 class AN94_GL_DZ: AN94_DZ
 {
-	scope = public;
+	scope = 2;
 	model = "\RH_aks\RH_an94gl.p3d";
 	modelOptics = "-";
 	optics = 1;

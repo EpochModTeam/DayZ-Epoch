@@ -1,6 +1,6 @@
 class Winchester1866_Base : Rifle
 {
-	scope = public;
+	scope = 2;
 	descriptionShort = $STR_DZ_WPN_W1866_DESC;
 	
 	magazines[] = {15Rnd_W1866_Slug};

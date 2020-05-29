@@ -1,7 +1,7 @@
 //Groza-9
 class Groza9_DZ: AKM_DZ
 {
-	scope = public;
+	scope = 2;
 	model = "\RH_aks\RH_oc14.p3d";
 	picture = "\RH_aks\inv\oc14.paa";
 	displayName = $STR_DZ_WPN_Groza9_NAME;
@@ -150,7 +150,7 @@ class Groza9_Sniper_SD_DZ: Groza9_SD_DZ
 //Groza-1
 class Groza1_DZ: AKM_DZ
 {
-	scope = public;
+	scope = 2;
 	model = "\RH_aks\RH_gr1.p3d";
 	picture = "\RH_aks\inv\gr1.paa";
 	displayName = $STR_DZ_WPN_Groza1_NAME;

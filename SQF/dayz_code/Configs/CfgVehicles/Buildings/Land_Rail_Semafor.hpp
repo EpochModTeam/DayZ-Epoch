@@ -1,6 +1,6 @@
 class Land_Rail_Semafor: House
 	{
-		scope = protected;
+		scope = 1;
 		model = "\CA\Structures\Rail\Rail_Misc\rail_Semafor";
 		destrType = "DestructTree";
 		class MarkerLights

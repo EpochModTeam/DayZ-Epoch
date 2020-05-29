@@ -1,6 +1,6 @@
 class outhouse_kit: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_OUTHOUSE;
@@ -22,7 +22,7 @@ class outhouse_kit: CA_Magazine
 
 class wooden_shed_kit: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_NICEWOODSHED;
@@ -44,7 +44,7 @@ class wooden_shed_kit: CA_Magazine
 
 class wooden_shed_kit2: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_NICEWOODSHED2;
@@ -66,7 +66,7 @@ class wooden_shed_kit2: CA_Magazine
 
 class wood_shack_kit: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_WOODSHACK;
@@ -88,7 +88,7 @@ class wood_shack_kit: CA_Magazine
 
 class wood_shack_kit2: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_WOODSHACK2;
@@ -110,7 +110,7 @@ class wood_shack_kit2: CA_Magazine
 
 class storage_shed_kit: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_STORAGESHED;
@@ -132,7 +132,7 @@ class storage_shed_kit: CA_Magazine
 
 class storage_shed_kit2: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_STORAGESHED2;
@@ -154,7 +154,7 @@ class storage_shed_kit2: CA_Magazine
 
 class ItemGunRackKit: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_GUNRACK;
@@ -176,7 +176,7 @@ class ItemGunRackKit: CA_Magazine
 
 class ItemGunRackKit2: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_GUNRACK2;
@@ -199,7 +199,7 @@ class ItemGunRackKit2: CA_Magazine
 
 class ItemWoodCrateKit: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_WOODCRATE;
@@ -221,7 +221,7 @@ class ItemWoodCrateKit: CA_Magazine
 
 class ItemWoodCrateKit2: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_WOODCRATE2;
@@ -243,7 +243,7 @@ class ItemWoodCrateKit2: CA_Magazine
 
 class ItemVault: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_SAFE;
@@ -265,7 +265,7 @@ class ItemVault: CA_Magazine
 
 class ItemLockbox: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_LOCKBOX;
@@ -287,7 +287,7 @@ class ItemLockbox: CA_Magazine
 
 class StashSmall_kit: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_VEH_NAME_STASH;

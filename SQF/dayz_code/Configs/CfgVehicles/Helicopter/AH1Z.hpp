@@ -1,6 +1,6 @@
 class AH1Z;
 class AH1Z_DZ: AH1Z {
-	scope = public; 
+	scope = 2; 
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = ""; 
 	typicalCargo[] = {};

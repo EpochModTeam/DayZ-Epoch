@@ -1,6 +1,6 @@
 class XM2010_BASE: Rifle
 {
-	scope = private;
+	scope = 0;
 	irLaserPos = "laser pos";
 	irLaserEnd = "laser dir";
 	irDistance = 100;
@@ -53,7 +53,7 @@ class XM2010_BASE: Rifle
 
 class XM2010_SD_BASE: Rifle
 {
-	scope = private;
+	scope = 0;
 	irLaserPos = "laser pos";
 	irLaserEnd = "laser dir";
 	irDistance = 100;
@@ -108,7 +108,7 @@ class XM2010_SD_BASE: Rifle
 
 class XM2010_DZ: XM2010_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_XM2010_NAME;
 	descriptionShort = $STR_DZ_WPN_XM2010_DESC;
 	model = "\fhq_remington\XM2010\XM2010.p3d";
@@ -116,7 +116,7 @@ class XM2010_DZ: XM2010_BASE
 };
 class XM2010_SD_DZ: XM2010_SD_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_XM2010SD_NAME;
 	descriptionShort = $STR_DZ_WPN_XM2010_SD_DESC;
 	model = "\fhq_remington\XM2010\XM2010_sd.p3d";
@@ -124,7 +124,7 @@ class XM2010_SD_DZ: XM2010_SD_BASE
 };
 class XM2010_NV_DZ: XM2010_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_XM2010_NV_NAME;
 	descriptionShort = $STR_DZ_WPN_XM2010_NV_DESC;
 	model = "\fhq_remington\XM2010\XM2010_nv.p3d";
@@ -133,7 +133,7 @@ class XM2010_NV_DZ: XM2010_BASE
 };
 class XM2010_NV_SD_DZ: XM2010_SD_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_XM2010SD_NV_NAME;
 	descriptionShort = $STR_DZ_WPN_XM2010_SD_NV_DESC;
 	model = "\fhq_remington\XM2010\XM2010_nv_sd.p3d";
@@ -142,7 +142,7 @@ class XM2010_NV_SD_DZ: XM2010_SD_BASE
 };
 class XM2010_TWS_DZ: XM2010_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_XM2010_TWS_NAME;
 	descriptionShort = $STR_DZ_WPN_XM2010_TWS_DESC;
 	model = "\fhq_remington\XM2010\XM2010_tws.p3d";
@@ -178,7 +178,7 @@ class XM2010_TWS_DZ: XM2010_BASE
 };
 class XM2010_TWS_SD_DZ: XM2010_SD_BASE
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_XM2010SD_TWS_NAME;
 	descriptionShort = $STR_DZ_WPN_XM2010_SD_TWS_DESC;
 	model = "\fhq_remington\XM2010\XM2010_tws_sd.p3d";

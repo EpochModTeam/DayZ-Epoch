@@ -1,6 +1,6 @@
 class HK53A3_DZ: M4A1
 {
-	scope = public;
+	scope = 2;
 	model = "\RH_smg\RH_HK53.p3d";
 	displayName = $STR_DZ_WPN_HK53A3_NAME;
 	UiPicture = "\CA\weapons\data\Ico\i_regular_CA.paa";

@@ -13,7 +13,7 @@ class Land_Ind_FuelStation_Feed_EP1: Strategic
 };
 class FuelStation : Strategic {
   icon = "\Ca\buildings\Icons\i_fuel_CA.paa";
-  scope = private;
+  scope = 0;
   animated = 0;
   armor = 2000;
   displayName = "Fuel station";

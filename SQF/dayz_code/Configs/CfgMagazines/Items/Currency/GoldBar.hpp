@@ -1,5 +1,6 @@
-class ItemGoldBar: CA_Magazine {
-	scope = public;
+class ItemGoldBar: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 100;
 	type = 256;
@@ -7,8 +8,11 @@ class ItemGoldBar: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar1oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_GOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -17,7 +21,8 @@ class ItemGoldBar: CA_Magazine {
 			input[] = {{"ItemGoldBar",2}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_210_9;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -27,8 +32,9 @@ class ItemGoldBar: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar2oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar2oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 200;
 	type = 256;
@@ -36,8 +42,11 @@ class ItemGoldBar2oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar2oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_2OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -46,7 +55,8 @@ class ItemGoldBar2oz: CA_Magazine {
 			input[] = {{"ItemGoldBar2oz",1},{"ItemGoldBar",1}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -55,7 +65,8 @@ class ItemGoldBar2oz: CA_Magazine {
 			input[] = {{"ItemGoldBar2oz",1}};
 
 		};
-		class Crafting2 {
+		class Crafting2 
+		{
 			text = $STR_EPOCH_PLAYER_210_8;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -65,8 +76,9 @@ class ItemGoldBar2oz: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar3oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar3oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 300;
 	type = 256;
@@ -74,8 +86,11 @@ class ItemGoldBar3oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar3oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_3OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -84,7 +99,8 @@ class ItemGoldBar3oz: CA_Magazine {
 			input[] = {{"ItemGoldBar3oz",1},{"ItemGoldBar",1}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -93,7 +109,8 @@ class ItemGoldBar3oz: CA_Magazine {
 			input[] = {{"ItemGoldBar3oz",1}};
 
 		};
-		class Crafting2 {
+		class Crafting2 
+		{
 			text = $STR_EPOCH_PLAYER_210_7;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -101,7 +118,8 @@ class ItemGoldBar3oz: CA_Magazine {
 			output[] = {{"ItemGoldBar10oz",1}};
 			input[] = {{"ItemGoldBar3oz",1},{"ItemGoldBar",7}};
 		};
-		class Crafting3 {
+		class Crafting3 
+		{
 			text = $STR_EPOCH_PLAYER_211;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -111,8 +129,9 @@ class ItemGoldBar3oz: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar4oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar4oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 400;
 	type = 256;
@@ -120,8 +139,11 @@ class ItemGoldBar4oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar4oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_4OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -130,7 +152,8 @@ class ItemGoldBar4oz: CA_Magazine {
 			input[] = {{"ItemGoldBar4oz",1},{"ItemGoldBar",1}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -139,7 +162,8 @@ class ItemGoldBar4oz: CA_Magazine {
 			input[] = {{"ItemGoldBar4oz",1}};
 
 		};
-		class Crafting2 {
+		class Crafting2 
+		{
 			text = $STR_EPOCH_PLAYER_210_6;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -147,7 +171,8 @@ class ItemGoldBar4oz: CA_Magazine {
 			output[] = {{"ItemGoldBar10oz",1}};
 			input[] = {{"ItemGoldBar4oz",1},{"ItemGoldBar",6}};
 		};
-		class Crafting3 {
+		class Crafting3 
+		{
 			text = $STR_EPOCH_PLAYER_211;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -157,8 +182,9 @@ class ItemGoldBar4oz: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar5oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar5oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 500;
 	type = 256;
@@ -166,8 +192,11 @@ class ItemGoldBar5oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar5oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_5OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -176,7 +205,8 @@ class ItemGoldBar5oz: CA_Magazine {
 			input[] = {{"ItemGoldBar5oz",1},{"ItemGoldBar",1}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -185,7 +215,8 @@ class ItemGoldBar5oz: CA_Magazine {
 			input[] = {{"ItemGoldBar5oz",1}};
 
 		};
-		class Crafting2 {
+		class Crafting2 
+		{
 			text = $STR_EPOCH_PLAYER_210_5;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -193,7 +224,8 @@ class ItemGoldBar5oz: CA_Magazine {
 			output[] = {{"ItemGoldBar10oz",1}};
 			input[] = {{"ItemGoldBar5oz",1},{"ItemGoldBar",5}};
 		};
-		class Crafting3 {
+		class Crafting3 
+		{
 			text = $STR_EPOCH_PLAYER_211;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -203,8 +235,9 @@ class ItemGoldBar5oz: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar6oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar6oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 600;
 	type = 256;
@@ -212,8 +245,11 @@ class ItemGoldBar6oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar6oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_6OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -222,7 +258,8 @@ class ItemGoldBar6oz: CA_Magazine {
 			input[] = {{"ItemGoldBar6oz",1},{"ItemGoldBar",1}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -231,7 +268,8 @@ class ItemGoldBar6oz: CA_Magazine {
 			input[] = {{"ItemGoldBar6oz",1}};
 
 		};
-		class Crafting2 {
+		class Crafting2 
+		{
 			text = $STR_EPOCH_PLAYER_210_4;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -239,7 +277,8 @@ class ItemGoldBar6oz: CA_Magazine {
 			output[] = {{"ItemGoldBar10oz",1}};
 			input[] = {{"ItemGoldBar6oz",1},{"ItemGoldBar",4}};
 		};
-		class Crafting3 {
+		class Crafting3 
+		{
 			text = $STR_EPOCH_PLAYER_211;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -249,8 +288,9 @@ class ItemGoldBar6oz: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar7oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar7oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 700;
 	type = 256;
@@ -258,8 +298,11 @@ class ItemGoldBar7oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar7oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_7OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -268,7 +311,8 @@ class ItemGoldBar7oz: CA_Magazine {
 			input[] = {{"ItemGoldBar7oz",1},{"ItemGoldBar",1}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -277,7 +321,8 @@ class ItemGoldBar7oz: CA_Magazine {
 			input[] = {{"ItemGoldBar7oz",1}};
 
 		};
-		class Crafting2 {
+		class Crafting2 
+		{
 			text = $STR_EPOCH_PLAYER_210_3;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -285,7 +330,8 @@ class ItemGoldBar7oz: CA_Magazine {
 			output[] = {{"ItemGoldBar10oz",1}};
 			input[] = {{"ItemGoldBar7oz",1},{"ItemGoldBar",3}};
 		};
-		class Crafting3 {
+		class Crafting3 
+		{
 			text = $STR_EPOCH_PLAYER_211;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -295,8 +341,9 @@ class ItemGoldBar7oz: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar8oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar8oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 800;
 	type = 256;
@@ -304,8 +351,11 @@ class ItemGoldBar8oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar8oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_8OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -314,7 +364,8 @@ class ItemGoldBar8oz: CA_Magazine {
 			input[] = {{"ItemGoldBar8oz",1},{"ItemGoldBar",1}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -323,7 +374,8 @@ class ItemGoldBar8oz: CA_Magazine {
 			input[] = {{"ItemGoldBar8oz",1}};
 
 		};
-		class Crafting2 {
+		class Crafting2 
+		{
 			text = $STR_EPOCH_PLAYER_210_2;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -331,7 +383,8 @@ class ItemGoldBar8oz: CA_Magazine {
 			output[] = {{"ItemGoldBar10oz",1}};
 			input[] = {{"ItemGoldBar8oz",1},{"ItemGoldBar",2}};
 		};
-		class Crafting3 {
+		class Crafting3 
+		{
 			text = $STR_EPOCH_PLAYER_211;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -341,8 +394,9 @@ class ItemGoldBar8oz: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar9oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar9oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 900;
 	type = 256;
@@ -350,8 +404,11 @@ class ItemGoldBar9oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar9oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_9OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_210_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -360,7 +417,8 @@ class ItemGoldBar9oz: CA_Magazine {
 			input[] = {{"ItemGoldBar9oz",1},{"ItemGoldBar",1}};
 
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -369,7 +427,8 @@ class ItemGoldBar9oz: CA_Magazine {
 			input[] = {{"ItemGoldBar9oz",1}};
 
 		};
-		class Crafting3 {
+		class Crafting3 
+		{
 			text = $STR_EPOCH_PLAYER_211;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -379,8 +438,9 @@ class ItemGoldBar9oz: CA_Magazine {
 		};
 	};
 };
-class ItemGoldBar10oz: CA_Magazine {
-	scope = public;
+class ItemGoldBar10oz: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	worth = 1000;
 	type = 256;
@@ -388,17 +448,20 @@ class ItemGoldBar10oz: CA_Magazine {
 	model = "\z\addons\dayz_epoch\models\ItemGoldBar10oz.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_gold_bar_10oz_CA.paa";
 	descriptionShort = $STR_EPOCH_10OZGOLD_DESC;
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_PLAYER_211_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {{"ItemGoldBar9oz",1},{"ItemGoldBar",1}};
 			input[] = {{"ItemGoldBar10oz",1}};
-
 		};
-		class Crafting1 {
+		class Crafting1 
+		{
 			text = $STR_EPOCH_PLAYER_211;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};

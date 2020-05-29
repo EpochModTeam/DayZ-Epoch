@@ -18,7 +18,7 @@ class V3S_Civ_DZE : V3S_Civ {
 	displayname = $STR_VEH_NAME_V3S_CAMO_OPEN;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
-	scope = public;
+	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
@@ -49,7 +49,7 @@ class V3S_Open_TK_EP1_DZE: V3S_Open_TK_EP1 {
 
 class V3S_TK_EP1;
 class V3S_TK_EP1_DZE: V3S_TK_EP1 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_V3S;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -61,7 +61,7 @@ class V3S_TK_EP1_DZE: V3S_TK_EP1 {
 
 class V3S_Reammo_TK_GUE_EP1;
 class V3S_RA_TK_GUE_EP1_DZE: V3S_Reammo_TK_GUE_EP1 {
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	displayname = $STR_VEH_NAME_V3S_REAMMO;
@@ -76,7 +76,7 @@ class V3S_Refuel_TK_GUE_EP1;
 class V3S_Refuel_TK_GUE_EP1_DZ: V3S_Refuel_TK_GUE_EP1 {
 	displayname = $STR_VEH_NAME_V3S_FUEL;
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	transportMaxWeapons = 50;

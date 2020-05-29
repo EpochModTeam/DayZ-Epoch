@@ -1,6 +1,6 @@
 class M21_DZ: M14_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_M21_NAME;
 	descriptionShort = $STR_DZ_WPN_M21_DESC;
 	model = "\RH_m14\RH_m21.p3d";

@@ -1,7 +1,7 @@
 class UAZ_MG_TK_EP1;
 class UAZ_MG_TK_EP1_DZ: UAZ_MG_TK_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_UAZ_DSHKM;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

@@ -5,7 +5,7 @@ class Revolver_DZ : revolver_EP1
 
 class Colt_Anaconda_DZ: Pistol
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_COLT_ANACONDA_NAME;
 	descriptionShort = $STR_DZ_WPN_COLT_ANACONDA_DESC;
 	model = "\RH_de\RH_anac.p3d";

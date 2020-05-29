@@ -20,7 +20,7 @@ class TimeBomb: CA_Magazine
 class Mine: TimeBomb
 {
 	scope = 2;
-	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
+	type = 256; 
 	displayName = $STR_MN_MINE;
 	picture = "\CA\weapons\data\equip\m_AT15_ca.paa";
 	ammo = "Mine";
@@ -32,7 +32,7 @@ class Mine: TimeBomb
 class MineE: TimeBomb
 {
 	scope = 2;
-	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
+	type = 256; 
 	displayName = $STR_MN_MINE;
 	picture = "\CA\weapons\data\equip\m_TM46_ca.paa";
 	ammo = "MineE";
@@ -45,7 +45,7 @@ class PipeBomb: TimeBomb
 	scope = 2;
 	displayName = $STR_DZ_MAG_SATCHEL_NAME; // Singular "Satchel Charge" for death messages "with a x"
 	descriptionShort = $STR_DSS_Pipe_Bomb;
-	type = WeaponSlotItem; // Only takes up one gear slot in Epoch
+	type = 256; 
 	picture = "\CA\weapons\data\equip\m_satchel_CA.paa";
 	model = "\z\addons\dayz_epoch_w\magazine\dze_satchel.p3d";
 	value = 5;
@@ -61,7 +61,7 @@ class PipeBomb: TimeBomb
 
 class ItemC4Charge : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_C4_CHARGE;
@@ -70,16 +70,20 @@ class ItemC4Charge : CA_Magazine
 	picture = "\z\addons\dayz_communityassets\pictures\carbomb.paa";
 };
 
-class ItemCarBomb : CA_Magazine {
-	scope = public;
+class ItemCarBomb : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_ITEM_NAME_equip_carbomb;
 	model = "\ca\weapons\explosive.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\carbomb.paa";
 	descriptionShort = $STR_ITEM_DESC_equip_carbomb;
-	class ItemActions {
-		class Use {
+	
+	class ItemActions 
+	{
+		class Use 
+		{
 			text = $STR_ACTIONS_attach_carbomb;
 			script = "spawn player_attach_bomb;";
 		};

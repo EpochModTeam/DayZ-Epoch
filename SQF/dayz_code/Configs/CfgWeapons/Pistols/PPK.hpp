@@ -1,6 +1,6 @@
 class PPK_DZ: M9
 {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZ_WPN_PPK_NAME;
 	descriptionShort = $STR_DZ_WPN_PPK_DESC;
 	model = "\RH_de\RH_ppk.p3d";

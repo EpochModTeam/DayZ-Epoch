@@ -1,6 +1,6 @@
 class Attachment_SCOPED : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_ATTACHMENT_NAME_SCOPE;
 	descriptionShort = $STR_ATTACHMENT_DESC_SCOPE;
 	count = 1;

@@ -1,14 +1,11 @@
 class MeleeSledge: MeleeWeapon
 {
-	scope = public;
-
+	scope = 2;
 	model = "\z\addons\dayz_epoch\models\sledge_weaponized";
 	picture = "\z\addons\dayz_epoch\pictures\equip_sledge_CA.paa"; // todo icon
 	displayName = $STR_EQUIP_NAME_SledgeHammer;
-	descriptionShort = $STR_EQUIP_SLEDGE_DESC;
-	
-	magazines[] = {"Sledge_Swing"};
-	
+	descriptionShort = $STR_EQUIP_SLEDGE_DESC;	
+	magazines[] = {"Sledge_Swing"};	
 	droppeditem = "ItemSledge";
 	
 	class ItemActions

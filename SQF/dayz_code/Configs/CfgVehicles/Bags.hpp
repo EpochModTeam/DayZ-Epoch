@@ -1,6 +1,6 @@
 class ReammoBox_EP1;	// External class reference
 class Bag_Base_EP1 : ReammoBox_EP1 {
-	scope = private;
+	scope = 0;
 
 	class TransportMagazines {};
 
@@ -156,7 +156,7 @@ class DZ_Backpack_EP1: Bag_Base_EP1
 
 class DZ_LargeGunBag_EP1: Bag_Base_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_PACK_LGB;
 	descriptionShort = $STR_EPOCH_PACK_DESC_LGB;
 	model = "\ca\weapons_e\AmmoBoxes\StaticX.p3d"; 
@@ -172,7 +172,7 @@ class DZ_LargeGunBag_EP1: Bag_Base_EP1
 };
 class DZ_GunBag_EP1: Bag_Base_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_PACK_GB;
 	descriptionShort = $STR_EPOCH_PACK_DESC_GB;
 	model = "\ca\weapons_e\AmmoBoxes\StaticY.p3d"; 
@@ -188,7 +188,7 @@ class DZ_GunBag_EP1: Bag_Base_EP1
 };
 class DZ_CompactPack_EP1: Bag_Base_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_PACK_COMPACT; 
 	descriptionShort = $STR_EPOCH_PACK_DESC_COMPACT;
 	picture = "\ca\weapons_e\data\icons\backpack_RPG_CA.paa"; 
@@ -204,7 +204,7 @@ class DZ_CompactPack_EP1: Bag_Base_EP1
 };
 class DZ_TerminalPack_EP1: Bag_Base_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_PACK_TERMINAL; 
 	descriptionShort = $STR_EPOCH_PACK_DESC_TERMINAL;
 	picture = "\dayz_epoch_c\icons\backpacks\terminalpack.paa"; 

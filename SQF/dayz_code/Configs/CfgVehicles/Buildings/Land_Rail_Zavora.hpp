@@ -1,6 +1,6 @@
 class Land_Rail_Zavora: House
 	{
-		scope = protected;
+		scope = 1;
 		model = "\CA\Structures\Rail\Rail_Misc\rail_Zavora";
 		destrType = "DestructTree";
 		class MarkerLights

@@ -1,6 +1,6 @@
 class MR43_Base : Rifle
 {
-	scope = public;
+	scope = 2;
 	
 	descriptionShort = $STR_DZ_WPN_MR43_DESC;
 	

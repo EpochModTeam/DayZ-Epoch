@@ -3,7 +3,7 @@ class StashSmall_base : DZ_storage_base {
 	icon = "\Ca\misc3\data\Icons\icon_Atent_ca.paa";
 	mapsize = 3;
 	model = "\z\addons\dayz_communityassets\models\stash_small.p3d";
-	scope = public;
+	scope = 2;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 12;
 	transportMaxWeapons = 0;
@@ -57,7 +57,7 @@ class StashMedium_base : DZ_storage_base {
 	icon = "\Ca\misc3\data\Icons\icon_Atent_ca.paa";
 	mapsize = 3;
 	model = "\z\addons\dayz_communityassets\models\dirt_stash_reinforced.p3d";
-	scope = public;
+	scope = 2;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 25;
 	transportMaxWeapons = 1;

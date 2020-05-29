@@ -21,7 +21,7 @@ class OpticsModes\
 
 class SteyrAug_A3_base: Rifle
 {
-	scope = private;
+	scope = 0;
 	displayName = "";
 	descriptionShort = $STR_DZ_WPN_AUGA3_DESC;
 	model = "\MIDF_Weapons\Aug_a3\Aug_a3.p3d";	
@@ -72,7 +72,7 @@ class SteyrAug_A3_base: Rifle
 };
 
 class SteyrAug_A3_Green_DZ: SteyrAug_A3_base {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_AUGA3_NAME;
 	modelOptics = "\MIDF_Weapons\optic\leupold_cqt.p3d";
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_green.paa";
@@ -143,7 +143,7 @@ class SteyrAug_A3_ACOG_Blue_DZ: SteyrAug_A3_ACOG_Green_DZ {
 };
 
 class SteyrAug_A3_Holo_Green_DZ: SteyrAug_A3_base {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_AUGA3_HOLO_NAME;
 	model = "\MIDF_Weapons\Aug_a3\Aug_a3_eotech.p3d";
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_eotech_green.paa";
@@ -173,7 +173,7 @@ class SteyrAug_A3_Holo_Blue_DZ: SteyrAug_A3_Holo_Green_DZ {
 };
 
 class SteyrAug_A3_GL_Green_DZ: SteyrAug_A3_Green_DZ {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_AUGA3_GL_NAME;
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_gl_green.paa";
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_gl.p3d";	
@@ -264,7 +264,7 @@ class SteyrAug_A3_ACOG_GL_Blue_DZ: SteyrAug_A3_ACOG_GL_Green_DZ {
 };
 
 class SteyrAug_A3_Holo_GL_Green_DZ: SteyrAug_A3_base {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_AUGA3_HOLO_GL_NAME;
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_eotech_gl_green.paa";
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_eotech_gl.p3d";

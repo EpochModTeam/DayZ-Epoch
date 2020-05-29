@@ -1,6 +1,6 @@
 class DZ_AmmoBoxRU : ReammoBox
 {
-	scope = public;
+	scope = 2;
 	
 	model = "ca\weapons\ammoboxes\proxy_ruweaponboxlow.p3d";
 	displayName = $STR_DAYZ_OBJ_3;
@@ -9,7 +9,7 @@ class DZ_AmmoBoxRU : ReammoBox
 
 class DZ_ExplosiveBoxRU : ReammoBox
 {
-	scope = public;
+	scope = 2;
 	
 	model = "ca\weapons\ammoboxes\proxy_ruexplosives.p3d";
 	displayName = $STR_DAYZ_OBJ_3;
@@ -18,7 +18,7 @@ class DZ_ExplosiveBoxRU : ReammoBox
 
 class DZ_AmmoBoxUS : ReammoBox
 {
-	scope = public;
+	scope = 2;
 	
 	model = "ca\weapons\ammoboxes\proxy_usbasicammoboxsmall.p3d";
 	displayName = $STR_DAYZ_OBJ_3;
@@ -27,7 +27,7 @@ class DZ_AmmoBoxUS : ReammoBox
 
 class DZ_ExplosivesBoxUS : ReammoBox
 {
-	scope = public;
+	scope = 2;
 	
 	model = "ca\weapons\ammoboxes\proxy_usbasicexplosives.p3d";
 	displayName = $STR_DAYZ_OBJ_3;
@@ -36,7 +36,7 @@ class DZ_ExplosivesBoxUS : ReammoBox
 
 class DZ_CardboardBox : ReammoBox
 {
-	scope = public;
+	scope = 2;
 	
 	model = "dayz_equip\models\cardboard_box.p3d";
 	displayName = $STR_DAYZ_OBJ_4;
@@ -45,7 +45,7 @@ class DZ_CardboardBox : ReammoBox
 
 class DZ_MedBox : ReammoBox
 {
-	scope = public;
+	scope = 2;
 	
 	model = "z\addons\dayz_communityassets\models\medical_freezbox.p3d";
 	displayName = $STR_DAYZ_OBJ_2;
@@ -54,7 +54,7 @@ class DZ_MedBox : ReammoBox
 
 class DZ_AmmoBoxSmallUS : ReammoBox
 {
-	scope = public;
+	scope = 2;
 	
 	model = "\ca\weapons\AmmoBoxes\USBasicAmmo.p3d";
 	displayName = $STR_DAYZ_OBJ_3;

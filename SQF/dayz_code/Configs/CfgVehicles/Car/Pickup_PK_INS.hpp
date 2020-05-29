@@ -1,6 +1,6 @@
 class Pickup_PK_GUE;
 class Pickup_PK_GUE_DZ: Pickup_PK_GUE {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_PICKUP_GUE_PKT;
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -17,7 +17,7 @@ class Pickup_PK_GUE_DZ: Pickup_PK_GUE {
 };
 class Pickup_PK_TK_GUE_EP1;
 class Pickup_PK_TK_GUE_EP1_DZ: Pickup_PK_TK_GUE_EP1 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_PICKUP_TK_PKT;
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -34,7 +34,7 @@ class Pickup_PK_TK_GUE_EP1_DZ: Pickup_PK_TK_GUE_EP1 {
 };
 class Pickup_PK_INS;
 class Pickup_PK_INS_DZ: Pickup_PK_INS {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_PICKUP_INS_PKT;
 	vehicleClass = "DayZ Epoch Vehicles";
 

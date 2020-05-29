@@ -4,7 +4,7 @@ class M249_CCO_DZ : M249
 	picture = "\z\addons\dayz_communityweapons\m249\data\w_m249_cco_ca.paa";
 	displayName = $STR_DZ_WPN_M249_CCO_NAME;
 	
-	type = WeaponSlotPrimary;
+	type = 1;
 	
 	magazines[] = 
 	{
@@ -67,7 +67,7 @@ class M249_Holo_DZ : M249_CCO_DZ
 
 class M249_EP1;
 class M249_EP1_DZ: M249_EP1 { //Iron sight with shorter stock (slightly different look from M249_DZ) can also fire MG36 mags
-	type = WeaponSlotPrimary;
+	type = 1;
 	
 	magazines[] = 
 	{
@@ -84,7 +84,7 @@ class M249_EP1_DZ: M249_EP1 { //Iron sight with shorter stock (slightly differen
 
 class M249_m145_EP1;
 class M249_m145_EP1_DZE: M249_m145_EP1 {
-	type = WeaponSlotPrimary;
+	type = 1;
 	
 	magazines[] = 
 	{

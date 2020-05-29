@@ -1,14 +1,11 @@
 class MeleeMachete: MeleeWeapon
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\z\addons\dayz_communityassets\models\machete_weaponized.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
 	displayName = $STR_EQUIP_NAME_MACHETE;
-	descriptionShort = $STR_EQUIP_DESC_MACHETE;
-	
-	magazines[] = {"Machete_Swing"};
-	
+	descriptionShort = $STR_EQUIP_DESC_MACHETE;	
+	magazines[] = {"Machete_Swing"};	
 	droppeditem = "MeleeMachete";
 	
 	class ItemActions

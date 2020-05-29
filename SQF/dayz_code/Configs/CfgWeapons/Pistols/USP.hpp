@@ -1,6 +1,6 @@
 class USP_DZ : Colt1911
 {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZ_WPN_USP_NAME;
 	descriptionShort = $STR_DZ_WPN_USP_DESC;
 	model = "\RH_de\RH_usp.p3d";

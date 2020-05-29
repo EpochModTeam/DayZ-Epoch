@@ -1,14 +1,11 @@
 class MeleeCrowbar : MeleeWeapon
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\dayz_weapons\models\crowbar_weaponized";
 	picture = "\dayz_weapons\textures\equip_crowbar_CA.paa";
 	displayName = $STR_EQUIP_NAME_CROWBAR;
-	descriptionShort = $STR_EQUIP_DESC_CROWBAR; 
-	
-	magazines[] = {"Crowbar_Swing"};
-	
+	descriptionShort = $STR_EQUIP_DESC_CROWBAR; 	
+	magazines[] = {"Crowbar_Swing"};	
 	droppeditem = "ItemCrowbar";
 	
 	class ItemActions

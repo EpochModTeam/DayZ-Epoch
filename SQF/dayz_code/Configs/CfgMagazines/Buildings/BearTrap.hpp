@@ -1,9 +1,8 @@
 class TrapBear : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\dayz_equip\models\bear_trap_gear.p3d";
 	picture = "\dayz_equip\textures\equip_bear_trap_ca.paa";
 	displayName = $STR_EQUIP_NAME_BEARTRAP;

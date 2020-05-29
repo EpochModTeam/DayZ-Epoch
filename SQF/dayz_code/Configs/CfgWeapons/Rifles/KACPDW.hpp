@@ -1,6 +1,6 @@
 class KAC_PDW_DZ: Rifle
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_KACPDW_NAME;
 	descriptionShort = $STR_DZ_WPN_KACPDW_DESC;
 	model = "\RH_pdw\RH_pdw.p3d";

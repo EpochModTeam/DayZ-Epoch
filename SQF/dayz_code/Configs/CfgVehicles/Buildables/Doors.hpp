@@ -1,6 +1,6 @@
 /* Again your very own basic definition*/
 class DZE_Base_Object : All {
-	scope = private;
+	scope = 0;
 	side = 3;
 	icon = "\ca\data\data\Unknown_object.paa";
 	nameSound = "object";
@@ -68,7 +68,7 @@ class DZE_Base_Object : All {
 
 /* Your very own base class for buildings*/
 class DZE_Housebase : DZE_Base_Object {
-	scope = protected;
+	scope = 1;
 	model = "";
 	icon = "";
 	displayName = "";
@@ -96,7 +96,7 @@ class Land_DZE_WoodDoor_Base: DZE_Housebase {
 	accuracy = 1000;   
 	armor = 2200;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
-	scope = public;							/* Display it in the editor? 1 = No, 2 = Yes */
+	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	class DestructionEffects : DestructionEffects
 	{
@@ -126,7 +126,7 @@ class Land_DZE_WoodDoorLocked_Base: DZE_Housebase {
 	accuracy = 1000;   
 	armor = 2500;						/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
-	scope = public;							/* Display it in the editor? 1 = No, 2 = Yes */
+	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	class DestructionEffects : DestructionEffects
 	{
@@ -154,7 +154,7 @@ class CinderWallDoor_DZ_Base: DZE_Housebase {
 	accuracy = 1000;   
 	armor = 4000;					/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
-	scope = public;							/* Display it in the editor? 1 = No, 2 = Yes */
+	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	maintainBuilding[] = {{"MortarBucket",1}};
 	class DestructionEffects : DestructionEffects
@@ -181,7 +181,7 @@ class CinderWallDoorLocked_DZ_Base: DZE_Housebase {
 	accuracy = 1000;   
 	armor = 4000;					/* "Lifepoints", if you like to call it that way.*/
 	destrType = "DestructBuilding";		/* type of destruction, when armor = 0 */
-	scope = public;							/* Display it in the editor? 1 = No, 2 = Yes */
+	scope = 2;							/* Display it in the editor? 1 = No, 2 = Yes */
 	offset[] = {0,1.5,0};
 	maintainBuilding[] = {{"MortarBucket",1}};
 	lockable = 3;

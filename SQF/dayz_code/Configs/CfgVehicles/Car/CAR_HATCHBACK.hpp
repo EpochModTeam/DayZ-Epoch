@@ -1,6 +1,6 @@
 class car_hatchback;
 class car_hatchback_DZE: car_hatchback {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_HATCHBACK_YELLOW;
 	vehicleClass = "DayZ Epoch Vehicles";
 	maxspeed = 125;

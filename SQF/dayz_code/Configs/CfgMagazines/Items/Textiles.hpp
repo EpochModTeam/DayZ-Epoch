@@ -1,6 +1,6 @@
 class ItemCanvas: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_CANVAS;
@@ -42,7 +42,7 @@ class ItemCanvas: CA_Magazine
 
 class ItemBurlap: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_BURLAP;
@@ -64,8 +64,9 @@ class ItemBurlap: CA_Magazine
 	};
 };
 
-class equip_rag : CA_Magazine {
-	scope = public;
+class equip_rag : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_rag;
 	descriptionShort = $STR_ITEM_DESC_equip_rag;
@@ -88,8 +89,9 @@ class equip_rag : CA_Magazine {
 	};	
 };
 
-class equip_string : CA_Magazine {
-	scope = public;
+class equip_string : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_string;
 	descriptionShort = $STR_ITEM_DESC_equip_string;
@@ -148,8 +150,9 @@ class equip_string : CA_Magazine {
 	};	
 };
 
-class equip_rope : CA_Magazine {
-	scope = public;
+class equip_rope : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_rope;
 	descriptionShort = $STR_ITEM_DESC_equip_rope;

@@ -22,7 +22,7 @@
 
 class Remington870_Base : Rifle
 {
-	scope = public;
+	scope = 2;
 	
 	descriptionShort = $STR_DZ_WPN_R870_DESC;
 	

@@ -1,6 +1,6 @@
 
 class WildZombie_Base : Zed_Base {
-	scope = public;
+	scope = 2;
 	glassesEnabled = 0;
 	vehicleClass = "Zombie";
 	displayName = $STR_ZNAME_INFECTED;

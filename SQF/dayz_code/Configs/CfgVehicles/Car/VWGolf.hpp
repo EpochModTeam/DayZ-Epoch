@@ -1,6 +1,6 @@
 class VWGolf;
 class VWGolf_DZE: VWGolf {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_VWGOLF_RED;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

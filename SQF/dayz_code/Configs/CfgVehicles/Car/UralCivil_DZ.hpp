@@ -1,6 +1,6 @@
 class Ural_INS;
 class Ural_INS_DZE: Ural_INS {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName= $STR_VEH_NAME_URAL_INS;
 	typicalCargo[] = {};
@@ -12,7 +12,7 @@ class Ural_INS_DZE: Ural_INS {
 
 class Ural_CDF;
 class Ural_CDF_DZE: Ural_CDF {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName= $STR_VEH_NAME_URAL_CDF;
 	typicalCargo[] = {};
@@ -24,7 +24,7 @@ class Ural_CDF_DZE: Ural_CDF {
 
 class UralOpen_CDF;
 class UralOpen_CDF_DZE: UralOpen_CDF {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName= $STR_VEH_NAME_URAL_CDF_OPEN;
 	typicalCargo[] = {};
@@ -36,7 +36,7 @@ class UralOpen_CDF_DZE: UralOpen_CDF {
 
 class Ural_TK_CIV_EP1;
 class Ural_TK_CIV_EP1_DZE: Ural_TK_CIV_EP1 {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName= $STR_VEH_NAME_URAL_TK;
 	typicalCargo[] = {};
@@ -48,7 +48,7 @@ class Ural_TK_CIV_EP1_DZE: Ural_TK_CIV_EP1 {
 
 class Ural_UN_EP1;
 class Ural_UN_EP1_DZE: Ural_UN_EP1 {
-	scope = public;
+	scope = 2;
 	crew = "";
 	displayName= $STR_VEH_NAME_URAL_UN;
 	typicalCargo[] = {};
@@ -60,7 +60,7 @@ class Ural_UN_EP1_DZE: Ural_UN_EP1 {
 
 class UralCivil;
 class UralCivil_DZE : UralCivil {
-	scope = public;
+	scope = 2;
 	displayName= $STR_VEH_NAME_URAL_CIVIL;
 	crew = "";
 	typicalCargo[] = {};
@@ -73,7 +73,7 @@ class UralCivil_DZE : UralCivil {
 class UralCivil2;
 class UralCivil2_DZE : UralCivil2 {
 	displayName = $STR_VEH_NAME_URAL_CIVIL_OPEN;
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -85,7 +85,7 @@ class UralCivil2_DZE : UralCivil2 {
 class UralSupply_TK_EP1;
 class UralSupply_TK_EP1_DZE : UralSupply_TK_EP1 {
 	displayName = $STR_VEH_NAME_URAL_CIVIL_OPEN;
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -96,7 +96,7 @@ class UralSupply_TK_EP1_DZE : UralSupply_TK_EP1 {
 
 class UralRefuel_TK_EP1;
 class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_URAL_FUEL;
 	crew = "";
 	typicalCargo[] = {};
@@ -113,7 +113,7 @@ class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
 
 class UralReammo_CDF;
 class UralReammo_CDF_DZE: UralReammo_CDF {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_URAL_WEAPONS;
 	crew = "";
 	typicalCargo[] = {};
@@ -129,7 +129,7 @@ class UralReammo_CDF_DZE: UralReammo_CDF {
 
 class UralRepair_CDF;
 class UralRepair_CDF_DZE: UralRepair_CDF {
-	scope = public;
+	scope = 2;
 	displayName = $STR_VEH_NAME_URAL_AMMO;
 	crew = "";
 	typicalCargo[] = {};

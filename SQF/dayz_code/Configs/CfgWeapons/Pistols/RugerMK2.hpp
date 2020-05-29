@@ -1,6 +1,6 @@
 class Ruger_MK2_DZ: Makarov
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_RUGERMK2_NAME;
 	descriptionShort = $STR_DZ_WPN_RUGERMK2_DESC;	
 	model = "\RH_de\RH_mk2.p3d";

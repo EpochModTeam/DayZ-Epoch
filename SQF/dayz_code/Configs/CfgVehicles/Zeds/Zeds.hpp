@@ -24,14 +24,14 @@ class Citizen1: Citizen {
 	};
 };	
 class Zed_Base : Citizen1 {
-	scope = public;
+	scope = 2;
 	class HitDamage {};
 	armor = 3;
 	agentTasks[] = {};
 	canCarryBackPack = 1;
 };
 class zZombie_Base : Zed_Base {
-	scope = public;
+	scope = 2;
 	glassesEnabled = 0;
 	vehicleClass = "Zombie";
 	displayName = $STR_ZNAME_INFECTED;

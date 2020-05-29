@@ -1,6 +1,6 @@
 class SeaFox;
 class SeaFox_DZE: SeaFox {
-	scope = public;
+	scope = 2;
 	displayname = $STR_DN_SEAFOX;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

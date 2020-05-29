@@ -2,7 +2,7 @@ class Gunrack1;
 class GunRack_DZ: Gunrack1
 {
 	armor = 200;
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_GUNRACK;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxWeapons = 20;
@@ -17,7 +17,7 @@ class GunRack_DZ: Gunrack1
 class GunRack2_DZ: Gunrack1
 {
 	armor = 400;
-	scope = public;
+	scope = 2;
 	displayName = $STR_EPOCH_GUNRACK2;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxWeapons = 40;
@@ -32,7 +32,7 @@ class GunRack2_DZ: Gunrack1
 class Fort_Crate_wood;
 class WoodCrate_DZ: Fort_Crate_wood
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	offset[] = {0,2.5,0.5};
 	armor = 200;
@@ -48,7 +48,7 @@ class WoodCrate_DZ: Fort_Crate_wood
 
 class WoodCrate2_DZ: Fort_Crate_wood
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	offset[] = {0,2.5,0.5};
 	armor = 400;
@@ -66,7 +66,7 @@ class Land_KBud;
 class OutHouse_DZ: Land_KBud
 {
 	armor = 200;
-	scope = public;
+	scope = 2;
 	offset[] = {0,2.5,1};
 	displayName = $STR_EPOCH_OUTHOUSE;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -80,7 +80,7 @@ class Land_Shed_M01;
 class StorageShed_DZ: Land_Shed_M01
 {
 	armor = 1600;
-	scope = public;
+	scope = 2;
 	offset[] = {0,4,1};
 	displayName = $STR_EPOCH_STORAGESHED;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -93,7 +93,7 @@ class StorageShed_DZ: Land_Shed_M01
 class StorageShed2_DZ: Land_Shed_M01
 {
 	armor = 3200;
-	scope = public;
+	scope = 2;
 	offset[] = {0,4,1};
 	displayName = $STR_EPOCH_STORAGESHED2;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -106,7 +106,7 @@ class StorageShed2_DZ: Land_Shed_M01
 class Land_kulna;
 class WoodShack_DZ: Land_kulna
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	offset[] = {0,4,1.3};
 	armor = 800;
@@ -121,7 +121,7 @@ class WoodShack_DZ: Land_kulna
 };
 class WoodShack2_DZ: Land_kulna
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	offset[] = {0,4,1.3};
 	armor = 1600;
@@ -137,7 +137,7 @@ class WoodShack2_DZ: Land_kulna
 class Land_Shed_wooden;
 class Wooden_shed_DZ: Land_Shed_wooden
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	offset[] = {0,5,1};
 	armor = 1000;
@@ -153,7 +153,7 @@ class Wooden_shed_DZ: Land_Shed_wooden
 
 class Wooden_shed2_DZ: Land_Shed_wooden
 {
-	scope = public;
+	scope = 2;
 	destrType = "DestructBuilding";
 	offset[] = {0,5,1};
 	armor = 2000;

@@ -1,6 +1,6 @@
 class GAZ_Vodnik_HMG;
 class GAZ_Vodnik_HMG_DZ : GAZ_Vodnik_HMG {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_VODNIK_BPPU;
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
@@ -86,7 +86,7 @@ class GAZ_Vodnik_HMG_DZE : GAZ_Vodnik_HMG_DZ {
 
 class GAZ_Vodnik;
 class GAZ_Vodnik_DZ : GAZ_Vodnik {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_VODNIK_PKT;
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};

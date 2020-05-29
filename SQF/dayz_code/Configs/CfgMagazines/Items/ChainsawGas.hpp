@@ -1,15 +1,19 @@
 // For Chainsaw
-class ItemMixOil : CA_Magazine {
-	scope = public;
+class ItemMixOil : CA_Magazine 
+{
+	scope = 2;
 	displayName = $STR_EPOCH_CHAINSAW_OIL;
 	model = "\z\addons\dayz_epoch\models\oilmix.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_oilmix_CA.paa";
 	count = 1;
-	type = "256";
+	type = 256;
 	descriptionShort = $STR_EPOCH_CHAINSAW_OIL;
 	sfx = "refuel";
-	class ItemActions {
-		class Crafting {
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_CHAINSAW_MIXGAS_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -20,8 +24,9 @@ class ItemMixOil : CA_Magazine {
 		};
 	};
 };
-class CSGAS : CA_Magazine {
-	scope = public;
+class CSGAS : CA_Magazine 
+{
+	scope = 2;
 	type = VSoft;
 	displayName = $STR_EPOCH_CHAINSAW_GAS;
 	descriptionShort = $STR_EPOCH_CHAINSAW_GAS_DESC;
@@ -61,8 +66,9 @@ class CSGAS : CA_Magazine {
 		hit_wood = "ImpactWood";
 	};
 };
-class ItemJerryMixed: CA_Magazine {
-	scope = public;
+class ItemJerryMixed: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN;
@@ -72,8 +78,10 @@ class ItemJerryMixed: CA_Magazine {
 	sfx = "refuel";
 	containerEmpty = "ItemJerrycanEmpty";
 	
-	class ItemActions {
-		class Crafting {
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -81,14 +89,16 @@ class ItemJerryMixed: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerryMixed4",1}};
 			input[] = {{"ItemJerryMixed",1}};
 		};
-		class Empty	{
+		class Empty	
+		{
 			text = $STR_EQUIP_NAME_13_EMPTY;
 			script = "spawn player_emptyContainer";
 		};
 	};
 };
-class ItemJerryMixed4: CA_Magazine {
-	scope = public;
+class ItemJerryMixed4: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN;
@@ -98,8 +108,10 @@ class ItemJerryMixed4: CA_Magazine {
 	sfx = "refuel";
 	containerEmpty = "ItemJerrycanEmpty";
 	
-	class ItemActions {
-		class Crafting {
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -107,14 +119,16 @@ class ItemJerryMixed4: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerryMixed3",1}};
 			input[] = {{"ItemJerryMixed4",1}};
 		};
-		class Empty	{
+		class Empty	
+		{
 			text = $STR_EQUIP_NAME_13_EMPTY;
 			script = "spawn player_emptyContainer";
 		};		
 	};
 };
-class ItemJerryMixed3: CA_Magazine {
-	scope = public;
+class ItemJerryMixed3: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN;
@@ -124,8 +138,10 @@ class ItemJerryMixed3: CA_Magazine {
 	sfx = "refuel";
 	containerEmpty = "ItemJerrycanEmpty";
 	
-	class ItemActions {
-		class Crafting {
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -133,14 +149,16 @@ class ItemJerryMixed3: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerryMixed2",1}};
 			input[] = {{"ItemJerryMixed3",1}};
 		};
-		class Empty	{
+		class Empty	
+		{
 			text = $STR_EQUIP_NAME_13_EMPTY;
 			script = "spawn player_emptyContainer";
 		};		
 	};
 };
-class ItemJerryMixed2: CA_Magazine {
-	scope = public;
+class ItemJerryMixed2: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN;
@@ -150,8 +168,10 @@ class ItemJerryMixed2: CA_Magazine {
 	sfx = "refuel";
 	containerEmpty = "ItemJerrycanEmpty";
 	
-	class ItemActions {
-		class Crafting {
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -159,14 +179,16 @@ class ItemJerryMixed2: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerryMixed1",1}};
 			input[] = {{"ItemJerryMixed2",1}};
 		};
-		class Empty	{
+		class Empty	
+		{
 			text = $STR_EQUIP_NAME_13_EMPTY;
 			script = "spawn player_emptyContainer";
 		};		
 	};
 };
-class ItemJerryMixed1: CA_Magazine {
-	scope = public;
+class ItemJerryMixed1: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN;
@@ -176,8 +198,10 @@ class ItemJerryMixed1: CA_Magazine {
 	sfx = "refuel";
 	containerEmpty = "ItemJerrycanEmpty";
 	
-	class ItemActions {
-		class Crafting {
+	class ItemActions 
+	{
+		class Crafting 
+		{
 			text = $STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
@@ -185,7 +209,8 @@ class ItemJerryMixed1: CA_Magazine {
 			output[] = {{"CSGAS",1},{"ItemJerrycanEmpty",1}};
 			input[] = {{"ItemJerryMixed1",1}};
 		};
-		class Empty	{
+		class Empty	
+		{
 			text = $STR_EQUIP_NAME_13_EMPTY;
 			script = "spawn player_emptyContainer";
 		};		

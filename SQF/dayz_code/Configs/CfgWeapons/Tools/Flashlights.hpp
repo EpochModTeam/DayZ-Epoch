@@ -1,7 +1,6 @@
 class ItemFlashlight : ItemCore
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\dayz_equip\models\flashlight.p3d";
 	picture = "\dayz_equip\textures\equip_flashlight_ca.paa";
 	displayName = $STR_EQUIP_NAME_5;
@@ -19,17 +18,18 @@ class ItemFlashlight : ItemCore
 	};
 };
 
-class ItemFlashlightBroken : ItemFlashlight
+class ItemFlashlightBroken : ItemCore
 {
+	scope = 2;	
+	model = "\dayz_equip\models\flashlight.p3d";
+	picture = "\dayz_equip\textures\equip_flashlight_ca.paa";	
 	displayName = $STR_EQUIP_NAME_5_BROKEN;
 	descriptionShort = $STR_EQUIP_DESC_5_BROKEN;
-	class ItemActions {};
 };
 
 class MeleeFlashlight : Pistol
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\dayz_equip\models\flashlight.p3d";
 	picture = "\dayz_equip\textures\equip_flashlight_ca.paa";
 	displayName = $STR_EQUIP_NAME_5;
@@ -80,11 +80,13 @@ class ItemFlashlightRed : ItemFlashlight
 	};
 };
 
-class ItemFlashlightRedBroken : ItemFlashlightRed 
+class ItemFlashlightRedBroken : ItemCore 
 {
+	scope = 2;
+	model = "\dayz_equip\models\flashlight_mil.p3d";
+	picture = "\dayz_equip\textures\equip_flashlight_mil_ca.paa";
 	displayName = $STR_EQUIP_NAME_6_BROKEN;	
 	descriptionShort = $STR_EQUIP_DESC_6_BROKEN;
-	class ItemActions {};
 };
 
 class MeleeFlashlightRed : MeleeFlashlight

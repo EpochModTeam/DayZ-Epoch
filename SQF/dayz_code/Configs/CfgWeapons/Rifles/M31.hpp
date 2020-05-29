@@ -1,6 +1,6 @@
 class M31_DZ: MP5A5
 {
-	scope = public;
+	scope = 2;
 	model = "z\addons\dayz_epoch_w\suomi\suomikp31.p3d";
 	displayName = $STR_DZ_WPN_M31_NAME;
 	descriptionShort = $STR_DZ_WPN_M31_DESC;			

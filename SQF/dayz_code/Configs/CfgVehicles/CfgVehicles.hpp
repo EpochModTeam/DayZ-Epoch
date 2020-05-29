@@ -458,7 +458,7 @@ class CfgVehicles
 	
 	//Buildables
 	class DZ_storage_base : Land_A_tent {
-		scope = private;
+		scope = 0;
 		armor = 5;
 		displayname = $STR_VEH_NAME_STASH;
 		icon = "";
@@ -492,7 +492,7 @@ class CfgVehicles
 	#include "WeaponHolder.hpp"	
 	
 	class Plant_Base: WeaponHolder {
-		scope = public;
+		scope = 2;
 		icon = "";
 		mapSize = 0;
 		transportMaxWeapons = 0;
@@ -514,8 +514,8 @@ class CfgVehicles
 	
 	class Land_CncBlock_AntiHack: NonStrategic
 	{
-		scope = public;
-		vehicleClass = "Misc";
+		scope = 2;
+		vehicleClass = "DayZ Epoch Buildings";
 		model = "z\addons\dayz_communityassets\models\CncBlock_D.p3d";
 		Icon = "\Ca\misc3\Data\Icons\icon_cnc_con_barrier_CA.paa";
 		mapSize = 4;

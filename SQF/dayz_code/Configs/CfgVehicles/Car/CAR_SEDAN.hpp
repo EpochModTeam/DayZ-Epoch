@@ -1,6 +1,6 @@
 class car_sedan;
 class car_sedan_DZE : car_sedan {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_SEDAN_WHITE;
 	vehicleClass = "DayZ Epoch Vehicles";
 	maxspeed = 125;

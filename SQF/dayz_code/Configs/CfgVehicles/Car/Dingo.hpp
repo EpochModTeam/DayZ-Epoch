@@ -1,6 +1,6 @@
 class Dingo_DZE_Base_ACR: Car
 {
-	scope = private;
+	scope = 0;
 	displayName = "$STR_ACR_DN_DINGO_MG";
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 100;
@@ -331,7 +331,7 @@ class Dingo_DZE_Base_ACR: Car
 
 class Dingo_WDL_ACR_DZ: Dingo_DZE_Base_ACR
 {
-	scope = public;	
+	scope = 2;	
 	displayname = $STR_VEH_NAME_DINGO_M240_WOODLAND;
 	class AnimationSources: AnimationSources
 	{
@@ -378,7 +378,7 @@ class Dingo_DST_ACR_DZE: Dingo_WDL_ACR_DZE
 
 class Dingo_GL_Wdl_ACR_DZ: Dingo_DZE_Base_ACR
 {
-	scope = public;	
+	scope = 2;	
 	displayname = $STR_VEH_NAME_DINGO_MK19_WOODLAND;
 	model = "\CA\Wheeled_ACR\Dingo\AMT_Dingo2a2";
 	Picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Dingo2_CA.paa";

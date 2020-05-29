@@ -2,7 +2,7 @@
 class ConsumableBase : CA_Magazine
 {
 	count = 1;
-	type = WeaponSlotItem;
+	type = 256;
 	
 	//Amount of blood regenerated
 	bloodRegen = 0;

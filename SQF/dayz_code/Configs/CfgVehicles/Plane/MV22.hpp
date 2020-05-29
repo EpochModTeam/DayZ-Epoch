@@ -1,7 +1,7 @@
 class MV22;
 class MV22_DZ : MV22 { 
 	accuracy = 1000; 
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_VEH_NAME_MV22; 
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = ""; 

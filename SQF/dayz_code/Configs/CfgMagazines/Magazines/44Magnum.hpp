@@ -1,6 +1,6 @@
 class 6Rnd_44Magnum: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	type = 16;
 	displayName = $STR_DZ_MAG_6RND_44MAGNUM_NAME;
 	descriptionShort = $STR_DZ_MAG_6RND_44MAGNUM_DESC;

@@ -1,6 +1,6 @@
 class HMMWV_DZE_Base: Car
 {
-	scope = private;
+	scope = 0;
 	vehicleClass = "DayZ Epoch Vehicles";
 	accuracy = 0.3;
 	side = 1;
@@ -317,7 +317,7 @@ class HMMWV_DZ: HMMWV_DZE_Base {
 	mapsize = 5;
 	model = "ca\wheeled_E\HMMWV\HMMWV";
 	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";	
-	scope = public;
+	scope = 2;
 	side = 2;
 	crew = "";
 	typicalCargo[] = {};
@@ -422,7 +422,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_DZE_Base
 {
 	expansion = 1;
 	side = 1;
-	scope = public;
+	scope = 2;
 	transportSoldier = 4;
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
@@ -684,7 +684,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_DZE_Base
 
 class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_M998A2_SOV_DES_EP1_DZ
 {
-	scope = public;
+	scope = 2;
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -735,7 +735,7 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_DZE_Base
 {
 	expansion = 1;
 	side = 1;
-	scope = public;
+	scope = 2;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
 	displayname = $STR_VEH_NAME_HMMWV_GPK;
 	transportMaxWeapons = 15;
@@ -815,7 +815,7 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_DZE_Base
 };
 
 class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
-	scope = public;
+	scope = 2;
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -926,7 +926,7 @@ class HMMWV_Armored_DZ: HMMWV_DZE_Base {
 	accuracy = 0.32;
 	picture = "\Ca\wheeled\data\ico\HMMWVmk19_CA.paa";
 	Icon = "\Ca\wheeled\data\map_ico\icomap_hmwvmk19_CA.paa";	
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -1019,7 +1019,7 @@ class HMMWV_Armored_DZE: HMMWV_Armored_DZ {
 
 class HMMWV_M2_DZ: HMMWV_DZE_Base {
 	displayname = $STR_VEH_NAME_HMMWV_M2;
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -1063,7 +1063,7 @@ class HMMWV_M2_DZE: HMMWV_M2_DZ {
 };
 
 class HMMWV_M1035_DES_EP1_DZE : HMMWV_DZE_Base {
-	scope = public;
+	scope = 2;
 	model = "\ca\wheeled_e\HMMWV\M1035_transport";
 	displayname = $STR_VEH_NAME_HMMWV_DES;
 	transportSoldier = 3;
@@ -1094,7 +1094,7 @@ class HMMWV_M1035_DES_EP1_DZE : HMMWV_DZE_Base {
 };
 
 class HMMWV_Ambulance_DZE : HMMWV_DZE_Base {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE;
 	model = "\ca\wheeled2\HMMWV\M997A2_Ambulance\M997A2_Ambulance";
 	vehicleClass = "Support";
@@ -1136,7 +1136,7 @@ class HMMWV_DES_EP1_DZE : HMMWV_DZ {
 
 
 class HMMWV_Ambulance_CZ_DES_EP1_DZE : HMMWV_Ambulance_DZE {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE_DES;
 	crew = "";
 	typicalCargo[] = {};

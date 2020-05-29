@@ -1,6 +1,6 @@
 class ItemStone: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_BLD_name_ItemStone;//"Rough Stone"
@@ -22,14 +22,14 @@ class ItemConcreteBlock: CA_Magazine //Construection,indestrial
 
 class CinderBlocks: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_CINDERBLOCKS;
 	model = "\z\addons\dayz_epoch\models\cinder_stack.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\epuip_cinder_blocks_CA.paa";
 	descriptionShort = $STR_EPOCH_CINDERBLOCKS_DESC;
-	weight = 100;
+
 	class ItemActions
 	{
 		class Crafting
@@ -72,22 +72,19 @@ class CinderBlocks: CA_Magazine
 };
 class MortarBucket: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_BUCKETOFMORTAR;
 	model = "\z\addons\dayz_epoch\models\mortar.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_mortar_CA.paa";
 	descriptionShort = $STR_EPOCH_BUCKETOFMORTAR_DESC;
-	weight = 21;
 };
 
 class equip_brick : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
 	model = "\z\addons\dayz_communityassets\models\brick.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_brick.paa";
 	displayName = $STR_ITEM_NAME_equip_brick;

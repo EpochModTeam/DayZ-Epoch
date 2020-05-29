@@ -1,6 +1,6 @@
 class LandRover_CZ_EP1;
 class LandRover_CZ_EP1_DZE: LandRover_CZ_EP1 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_DESERT;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -487,7 +487,7 @@ class BAF_Offroad_W_DZE4: BAF_Offroad_W_DZE3 {
 class LandRover_Special_CZ_EP1;
 class LandRover_Special_CZ_EP1_DZ: LandRover_Special_CZ_EP1
 {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL;
 	vehicleClass = "DayZ Epoch Vehicles";
 	class Turrets;
@@ -644,7 +644,7 @@ class LandRover_Special_CZ_EP1_DZE4: LandRover_Special_CZ_EP1_DZE3 {
 class LandRover_MG_TK_EP1;
 class LandRover_MG_TK_EP1_DZ: LandRover_MG_TK_EP1
 {
-	scope = public;
+	scope = 2;
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};	

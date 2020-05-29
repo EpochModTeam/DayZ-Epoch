@@ -1,6 +1,6 @@
 class DesertEagle_DZ: Colt_Python_DZ
 {
-	scope = public;
+	scope = 2;
 	model = "\z\addons\dayz_epoch_w\deagle\h4_deagle";
 	modelOptics	= "-";
 	picture	= "\z\addons\dayz_epoch_w\deagle\data\w_deagle_CA.paa";

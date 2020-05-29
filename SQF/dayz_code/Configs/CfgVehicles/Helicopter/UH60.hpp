@@ -2,7 +2,7 @@ class MH60S;
 class MH60S_DZ : MH60S {
 	displayName = $STR_VEH_NAME_MH60;
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -96,7 +96,7 @@ class UH60M_EP1;
 class UH60M_EP1_DZ: UH60M_EP1 {
 	displayName = $STR_VEH_NAME_UH60;
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = public;
+	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -187,7 +187,7 @@ class UH60M_MEV_EP1;
 class UH60M_MEV_EP1_DZ : UH60M_MEV_EP1 {
 	displayname = $STR_VEH_NAME_HH60;
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = public; 
+	scope = 2; 
 	crew = ""; 
 	typicalCargo[] = {}; 
 	commanderCanSee = 2+16+32;

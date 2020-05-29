@@ -1,6 +1,6 @@
 class ItemZombieParts: CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_ZOMBIEPARTS;
@@ -9,23 +9,22 @@ class ItemZombieParts: CA_Magazine
 	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_DESC;
 };
 
-class ItemHotwireKit: CA_Magazine {
-	scope = public;
+class ItemHotwireKit: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_HOTWIREKIT;
 	model = "\z\addons\dayz_epoch\models\hotwire.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_hotwire_ca.paa";
 	descriptionShort = $STR_EPOCH_HOTWIREKIT_DESC;
-	weight = 2;
 };
 
 class ItemCards : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "z\addons\dayz_communityassets\models\cards.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_cards_ca.paa";
 	displayName = $STR_ITEM_NAME_CARDS;
@@ -34,10 +33,9 @@ class ItemCards : CA_Magazine
 
 class ItemKosmosSmokes : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\z\addons\dayz_communityassets\models\smokes_kosmos.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_kosmos_ca.paa";
 	displayName = $STR_ITEM_NAME_KOSMOS_SMOKES;
@@ -46,18 +44,18 @@ class ItemKosmosSmokes : CA_Magazine
 
 class ItemKosmosSmokesOpen : CA_Magazine
 {
-	scope = public;
+	scope = 2;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\z\addons\dayz_communityassets\models\smokes_open_k.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_smokes_open_k_ca.paa";
 	displayName = $STR_ITEM_NAME_KOSMOS_SMOKES;
 	descriptionShort = $STR_ITEM_DESC_KOSMOS_SMOKES_OPENED;
 };
 
-class equip_nails : CA_Magazine {
-	scope = public;
+class equip_nails : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_nails;
 	descriptionShort = $STR_ITEM_DESC_equip_nails;
@@ -77,8 +75,9 @@ class ItemScrews: CA_Magazine
 	descriptionShort = $STR_BLD_desc_ItemScrews;//"Box of screws"
 };
 
-class equip_duct_tape : CA_Magazine {
-	scope = public;
+class equip_duct_tape : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_duct_tape;
 	descriptionShort = $STR_ITEM_DESC_equip_duct_tape;
@@ -87,8 +86,9 @@ class equip_duct_tape : CA_Magazine {
 	type = 256;
 };
 
-class equip_feathers : CA_Magazine {
-	scope = public;
+class equip_feathers : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_feathers;
 	descriptionShort = $STR_ITEM_DESC_equip_feathers;
@@ -97,8 +97,9 @@ class equip_feathers : CA_Magazine {
 	type = 256;
 };
 
-class equip_pvc_box : CA_Magazine {
-	scope = public;
+class equip_pvc_box : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_pvc_box;
 	descriptionShort = $STR_ITEM_DESC_equip_pvc_box;
@@ -107,8 +108,9 @@ class equip_pvc_box : CA_Magazine {
 	type = 256;
 };
 
-class equip_hobo_fishing_kit : CA_Magazine {
-	scope = public;
+class equip_hobo_fishing_kit : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = "Hobo Fishing Kit";
 	descriptionShort = "Hobo Fishing Kit, catches dem fishes";
@@ -117,8 +119,9 @@ class equip_hobo_fishing_kit : CA_Magazine {
 	type = 256;
 };
 
-class equip_hose : CA_Magazine {
-	scope = public;
+class equip_hose : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_hose;
 	descriptionShort = $STR_ITEM_DESC_equip_hose;
@@ -127,8 +130,9 @@ class equip_hose : CA_Magazine {
 	type = 256;
 };
 
-class equip_hose_clamp : CA_Magazine {
-	scope = public;
+class equip_hose_clamp : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_hose_clamp;
 	descriptionShort = $STR_ITEM_DESC_equip_hose_clamp;
@@ -137,8 +141,9 @@ class equip_hose_clamp : CA_Magazine {
 	type = 256;
 };
 
-class Item_coni : CA_Magazine {
-	scope = public;
+class Item_coni : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_DESC_equip_con_i;
 	descriptionShort = $STR_ITEM_NAME_equip_con_i;
@@ -147,8 +152,9 @@ class Item_coni : CA_Magazine {
 	type = 256;
 };
 
-class Item_Connector_I : CA_Magazine {
-	scope = public;
+class Item_Connector_I : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_DESC_equip_con_i;
 	descriptionShort = $STR_ITEM_NAME_equip_con_i;
@@ -157,8 +163,9 @@ class Item_Connector_I : CA_Magazine {
 	type = 256;
 };
 
-class Item_Connector_L : CA_Magazine {
-	scope = public;
+class Item_Connector_L : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_DESC_equip_con_l;
 	descriptionShort = $STR_ITEM_NAME_equip_con_l;
@@ -167,8 +174,9 @@ class Item_Connector_L : CA_Magazine {
 	type = 256;
 };
 
-class Item_Connector_T : CA_Magazine {
-	scope = public;
+class Item_Connector_T : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_DESC_equip_con_t;
 	descriptionShort = $STR_ITEM_NAME_equip_con_t;
@@ -177,8 +185,9 @@ class Item_Connector_T : CA_Magazine {
 	type = 256;
 };
 
-class equip_tin_powder : CA_Magazine {
-	scope = public;
+class equip_tin_powder : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = "Tin of Powder";
 	descriptionShort = "Tin of Powder has medicinal qualities";
@@ -187,8 +196,9 @@ class equip_tin_powder : CA_Magazine {
 	type = 256;
 };
 
-class equip_slugsinacan : CA_Magazine {
-	scope = public;
+class equip_slugsinacan : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = "Slugs in a can";
 	descriptionShort = "Slugs in a can";
@@ -198,8 +208,9 @@ class equip_slugsinacan : CA_Magazine {
 };
 
 //No models
-class equip_cable_tie : CA_Magazine {
-	scope = public;
+class equip_cable_tie : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_cable_tie;
 	descriptionShort = $STR_ITEM_DESC_equip_cable_tie;
@@ -207,8 +218,9 @@ class equip_cable_tie : CA_Magazine {
 	type = 256;
 };
 
-class equip_needle : CA_Magazine {
-	scope = public;
+class equip_needle : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_needle;
 	descriptionShort = $STR_ITEM_DESC_equip_needle;
@@ -216,8 +228,9 @@ class equip_needle : CA_Magazine {
 	type = 256;
 };
 
-class equip_laser : CA_Magazine {
-	scope = public;
+class equip_laser : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_laser;
 	descriptionShort = $STR_ITEM_DESC_equip_laser;
@@ -225,8 +238,9 @@ class equip_laser : CA_Magazine {
 	type = 256;
 };
 
-class equip_weapon_rails: CA_Magazine {
-	scope = public;
+class equip_weapon_rails: CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_weapon_rails;
 	descriptionShort = $STR_ITEM_DESC_equip_weapon_rails;
@@ -234,8 +248,9 @@ class equip_weapon_rails: CA_Magazine {
 	type = 256;
 };
 
-class equip_rail_screws : CA_Magazine {
-	scope = public;
+class equip_rail_screws : CA_Magazine 
+{
+	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_rail_screws;
 	descriptionShort = $STR_ITEM_DESC_equip_rail_screws;

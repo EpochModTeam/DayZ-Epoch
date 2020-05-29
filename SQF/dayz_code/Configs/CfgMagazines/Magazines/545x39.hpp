@@ -45,12 +45,10 @@ class 75Rnd_545x39_RPK : CA_Magazine
 	model = "\z\addons\dayz_epoch_w\magazine\dze_RPK_mag.p3d";
 	picture = "\CA\weapons\AK\data\equip\M_RPK_74_CA.paa";
 	displayName = $STR_DZ_MAG_75RND_545X39_RPK_NAME;
-	descriptionShort = $STR_DZ_MAG_75RND_RPK74_DESC;
-	
+	descriptionShort = $STR_DZ_MAG_75RND_RPK74_DESC;	
 	count = 75;
 	tracersEvery = 4;
-	lastRoundsTracer = 4;
-	
+	lastRoundsTracer = 4;	
 	cartridgeName = "545x39";
 	
 	class ItemActions

@@ -1,9 +1,8 @@
 class ItemAntibiotic_base : CA_Magazine
 {
-	scope = private;
+	scope = 0;
 	count = 1;
-	type = WeaponSlotItem;
-	
+	type = 256;	
 	model = "\dayz_equip\models\med_antibiotic_gear.p3d";
 	picture = "\dayz_equip\textures\equip_antibiotics_ca.paa";
 	displayName = $STR_EQUIP_NAME_17;	
@@ -11,7 +10,7 @@ class ItemAntibiotic_base : CA_Magazine
 
 class ItemAntibiotic : ItemAntibiotic_base
 {
-	scope = public;
+	scope = 2;
 	descriptionShort = $STR_EQUIP_DESC_17;
 	
 	class medical
@@ -109,7 +108,7 @@ class ItemAntibiotic1 : ItemAntibiotic
 
 class ItemAntibioticEmpty : ItemAntibiotic_base
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_EMPTY;
 	descriptionShort = $STR_EQUIP_DESC_54;
 };

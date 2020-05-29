@@ -1,13 +1,13 @@
 class Generator_Base: Land_A_tent //Vanilla generator uses SkodaBase but is currently not functional
 {
-	scope = private;
+	scope = 0;
 	model = "\dayz_equip\models\generator_gear.p3d";
 	picture = "\dayz_equip\textures\equip_generator_ca.paa";
 	displayName="Generator";
 };
 class Generator_DZ: Generator_Base
 {
-	scope = public;
+	scope = 2;
 	transportMaxWeapons=0;
 	transportmaxbackpacks = 0;
 	transportMaxMagazines=10;

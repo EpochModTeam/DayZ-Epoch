@@ -1,6 +1,6 @@
 class CTAR21_DZ: M4A1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_CTAR21_NAME;
 	model = "\RH_hk416\RH_ctar21.p3d";
 	picture = "\RH_hk416\inv\ctar21.paa";

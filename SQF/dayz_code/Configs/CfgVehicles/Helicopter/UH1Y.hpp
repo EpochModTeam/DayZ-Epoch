@@ -13,7 +13,7 @@ class UH1_Base: Helicopter {
 	};
 };
 class UH1Y_DZ: UH1_Base {
-	scope = public;
+	scope = 2;
 	displayname = $STR_VEH_NAME_UH1Y;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

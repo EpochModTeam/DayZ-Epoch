@@ -1,10 +1,11 @@
 class ItemToolbox : ItemCore
 {
-	scope = public;
+	scope = 2;
 	model = "\dayz_equip\models\toolbox.p3d";
 	picture = "\dayz_equip\textures\equip_toolbox_ca.paa";
 	displayName = $STR_EQUIP_NAME_2;
 	descriptionShort = $STR_EQUIP_DESC_2;
+	
 	class ItemActions
 	{
 		class RemoveNet
@@ -15,9 +16,11 @@ class ItemToolbox : ItemCore
 	};
 };
 
-class ItemToolboxBroken : ItemToolbox
+class ItemToolboxBroken : ItemCore
 {
+	scope = 2;
+	model = "\dayz_equip\models\toolbox.p3d";
+	picture = "\dayz_equip\textures\equip_toolbox_ca.paa";	
 	displayName = $STR_EQUIP_NAME_2_BROKEN;
 	descriptionShort = $STR_EQUIP_DESC_2_BROKEN;
-	class ItemActions {};
 };

@@ -1,14 +1,11 @@
 class MeleeHatchet : MeleeWeapon
 {
-	scope = public;
-	
+	scope = 2;	
 	model = "\dayz_weapons\models\Hatchet_weaponized";
 	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
 	displayName = $STR_EQUIP_NAME_HATCHET;
-	descriptionShort = $STR_EQUIP_DESC_HATCHET;
-	
-	magazines[] = {"Hatchet_Swing"};
-	
+	descriptionShort = $STR_EQUIP_DESC_HATCHET;	
+	magazines[] = {"Hatchet_Swing"};	
 	droppeditem = "ItemHatchet";
 	
 	class ItemActions

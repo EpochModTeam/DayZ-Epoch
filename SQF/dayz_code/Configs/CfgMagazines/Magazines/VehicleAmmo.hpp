@@ -16,6 +16,7 @@ class 200Rnd_762x51_M240 : 100Rnd_762x51_M240 {
 	displayName = $STR_DZ_MAG_200RND_M240_NAME; 
 	count = 200;
 	descriptionShort = $STR_DZ_MAG_200RND_M240_DESC;
+	
 	class ItemActions
 	{
 		delete CombineMag;
@@ -95,7 +96,7 @@ class 200Rnd_762x54_GPMG: 200Rnd_762x54_PKT
 	ammo = "B_762x51_Ball";
 };
 class 29Rnd_30mm_AGS30 : Vehicle_ammo_base { 
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_DZ_MAG_29RND_AGS30_NAME; 
 	descriptionShort = $STR_DZ_MAG_29RND_AGS30_DESC;
 	model = "\z\addons\dayz_epoch\models\30mm_mag.p3d";
@@ -120,7 +121,7 @@ class 400Rnd_30mm_AGS17: 29Rnd_30mm_AGS30
 };
 
 class 48Rnd_40mm_MK19 : Vehicle_ammo_base { 
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_DZ_MAG_48RND_MK19_NAME; 
 	descriptionShort = $STR_DZ_MAG_48RND_MK19_DESC;
 	model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
@@ -140,7 +141,7 @@ class 32Rnd_40mm_GMG: 48Rnd_40mm_MK19
 
 class 4000Rnd_762x51_M134 : Vehicle_ammo_base { 
 	count = 4000; 
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_DZ_MAG_4000RND_M134_NAME; 
 	descriptionShort = $STR_DZ_MAG_4000RND_M134_DESC;	
 	picture = "\z\addons\dayz_epoch\pictures\equip_m134_mag_ca.paa";
@@ -166,7 +167,7 @@ class 2000Rnd_762x51_L94A1: 2000Rnd_762x51_M134
 };
 
 class 100Rnd_127x99_M2 : Vehicle_ammo_base { 
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_DZ_MAG_100RND_M2_NAME; 
 	descriptionShort = $STR_DZ_MAG_100RND_M2_DESC;
 	model = "\z\addons\dayz_epoch\models\50cal_mag.p3d";
@@ -181,7 +182,7 @@ class 100Rnd_127x99_M2 : Vehicle_ammo_base {
 };
 
 class 50Rnd_127x107_DSHKM : Vehicle_ammo_base { 
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_DZ_MAG_50RND_DSHKM_NAME; 
 	descriptionShort = $STR_DZ_MAG_50RND_DSHKM_DESC;
 	picture = "\z\addons\dayz_epoch\pictures\equip_Dshkm_mag_ca.paa";
@@ -196,7 +197,7 @@ class 50Rnd_127x107_DSHKM : Vehicle_ammo_base {
 };
 
 class 150Rnd_127x107_DSHKM : 50Rnd_127x107_DSHKM { 
-	scope = public; 
+	scope = 2; 
 	displayName = $STR_DZ_MAG_150RND_DSHKM_NAME; 
 	descriptionShort = $STR_DZ_MAG_150RND_DSHKM_DESC;
 	count = 150; 
@@ -267,8 +268,7 @@ class pook_12Rnd_Grenade_Camel: Vehicle_ammo_base
 	maxLeadSpeed = 200;
 	nameSound = "grenade";
 	picture = "\z\addons\dayz_epoch\pictures\equip_40mm_mag_ca.paa";
-	model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";
-	
+	model = "\z\addons\dayz_epoch\models\40mm_mag.p3d";	
 };
 
 //mozzie

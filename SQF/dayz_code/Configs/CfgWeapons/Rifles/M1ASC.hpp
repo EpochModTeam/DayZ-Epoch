@@ -38,7 +38,7 @@ class OpticsModes\
 
 class M1A_SC16_BL_DZ: M14_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_M1ASC16_NAME;
 	descriptionShort = $STR_DZ_WPN_M1ASC16_DESC;
 	reloadMagazineSound[] = {"\RH_m14\Sound\M14_Reload.wss",0.056234,1,20};
@@ -187,7 +187,7 @@ class M1A_SC16_BL_Sniper_DZ: M1A_SC16_BL_DZ
 
 class M1A_SC16_TAN_DZ: M14_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_M1ASC16_NAME;
 	descriptionShort = $STR_DZ_WPN_M1ASC16_DESC;
 	reloadMagazineSound[] = {"\RH_m14\Sound\M14_Reload.wss",0.056234,1,20};
@@ -338,7 +338,7 @@ class M1A_SC16_TAN_Sniper_DZ: M1A_SC16_TAN_DZ
 
 class M1A_SC2_BL_DZ: M14_EP1
 {
-	scope = public;
+	scope = 2;
 	displayName = $STR_DZ_WPN_M1ASC2_NAME;
 	descriptionShort = $STR_DZ_WPN_M1ASC2_DESC;
 	reloadMagazineSound[] = {"\RH_m14\Sound\M14_Reload.wss",0.056234,1,20};

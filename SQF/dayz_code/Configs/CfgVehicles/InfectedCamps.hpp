@@ -1,5 +1,5 @@
 class IC_Fireplace1: House {
-	scope = public;
+	scope = 2;
 	displayname = $str_misc_campfire;
 	model = "\Ca\misc3\Campfire";
 	vehicleClass = "DayZ Epoch Buildings";
@@ -12,7 +12,7 @@ class IC_Tent: House {
 	icon = "\Ca\misc3\data\Icons\icon_Atent_ca.paa";
 	mapsize = 3;
 	model = "\CA\Misc3\A_tent";
-	scope = public;
+	scope = 2;
 	
 	vehicleClass = "DayZ Epoch Buildings";
 	pack = "WeaponHolder_ItemTent";

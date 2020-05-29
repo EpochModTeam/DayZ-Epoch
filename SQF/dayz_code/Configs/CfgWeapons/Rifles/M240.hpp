@@ -3,7 +3,7 @@ class M240_DZ : M240
 	picture = "\z\addons\dayz_communityweapons\m240\data\w_m240_ca.paa";
 	displayName = $STR_DZ_WPN_M240_NAME;
 	
-	type = WeaponSlotPrimary;
+	type = 1;
 	
 	magazines[] = {100Rnd_762x51_M240};
 	
@@ -51,5 +51,5 @@ class M240_Holo_DZ : M240_CCO_DZ
 };
 
 class m240_scoped_EP1_DZE:m240_scoped_EP1 { //has m145 scope
-	type = WeaponSlotPrimary;
+	type = 1;
 };

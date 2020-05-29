@@ -1,6 +1,6 @@
 class P226_DZ: M9
 {
-	scope = public;	
+	scope = 2;	
 	displayName = $STR_DZ_WPN_P226_NAME;
 	descriptionShort = $STR_DZ_WPN_P226_DESC;
 	model = "\RH_de\RH_p226.p3d";
