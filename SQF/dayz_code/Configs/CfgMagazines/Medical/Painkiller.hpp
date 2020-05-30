@@ -109,5 +109,5 @@ class ItemPainkillerEmpty : CA_Magazine
 	count = 1;
 	type = 256;	
 	model = "\dayz_equip\models\med_painkiller_gear.p3d";
-	picture = "\dayz_equip\textures\equip_painkiller_ca.paa";	
+	picture = "\dayz_epoch_c\icons\equipment\ItemPainkillerEmpty.paa";
 };

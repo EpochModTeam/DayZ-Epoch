@@ -42,7 +42,7 @@ class ItemFishingPoleBroken : ItemCore
 {
 	scope = 2;	
 	model = "\z\addons\dayz_communityassets\models\fishing_rod_loot_item.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_fishingpole_CA.paa";	
+	picture = "\dayz_epoch_c\icons\tools\ItemFishingpoleBroken.paa";
 	displayName = $STR_ITEM_NAME_FISHINGPOLEBROKEN;
 	descriptionShort = $STR_ITEM_DESC_FISHINGPOLE_BROKEN;
 };

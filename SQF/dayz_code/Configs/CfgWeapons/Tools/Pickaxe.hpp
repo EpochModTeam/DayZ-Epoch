@@ -20,7 +20,7 @@ class ItemPickaxeBroken : ItemCore
 {
 	scope = 2;	
 	model = "z\addons\dayz_communityweapons\models\pickaxe\pickaxe.p3d";
-	picture = "\z\addons\dayz_communityweapons\models\pickaxe\pickaxe.paa";
+	picture = "\dayz_epoch_c\icons\tools\ItemPickaxeBroken.paa";
 	displayName = $STR_name_ItemPickaxeBroken;
 	descriptionShort = $STR_desc_ItemPickaxeBroken;	
 	fixedTool = "ItemPickaxe";

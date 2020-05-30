@@ -30,7 +30,7 @@ class ItemMacheteBroken : ItemCore
 {	
 	scope = 2;	
 	model = "\z\addons\dayz_communityassets\models\machete.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_machete_CA.paa";
+	picture = "\dayz_epoch_c\icons\tools\ItemMacheteBroken.paa";
 	displayName = $STR_EQUIP_NAME_MACHETE_BROKEN;	
 	descriptionShort = $STR_EQUIP_DESC_MACHETE_BROKEN;
 };

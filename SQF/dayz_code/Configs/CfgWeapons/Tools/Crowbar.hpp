@@ -42,7 +42,7 @@ class ItemCrowbarBent : ItemCore
 {
 	scope = 2;	
 	model = "\dayz_equip\models\crowbar.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_crowbar_CA.paa";
+	picture = "\dayz_epoch_c\icons\tools\ItemCrowbarBroken.paa";
 	displayName = $STR_EQUIP_NAME_CROWBARBENT;
 	descriptionShort = $STR_EQUIP_DESC_CROWBARBENT;
 };

@@ -111,4 +111,5 @@ class ItemAntibioticEmpty : ItemAntibiotic_base
 	scope = 2;
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_EMPTY;
 	descriptionShort = $STR_EQUIP_DESC_54;
+	picture = "\dayz_epoch_c\icons\equipment\ItemAntibioticsEmpty.paa";
 };

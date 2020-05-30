@@ -29,7 +29,8 @@ class ItemHatchet : ItemCore
 class ItemHatchetBroken : ItemCore
 {
 	scope = 2;	
-	picture = "\dayz_equip\textures\equip_hatchet_CA.paa";
+	picture = "\dayz_epoch_c\icons\tools\ItemHatchetBroken.paa";
+	model = "\dayz_equip\models\hatchet.p3d";
 	displayName = $STR_name_ItemHatchetBroken;
 	descriptionShort = $STR_desc_ItemHatchetBroken;	
 	fixedTool = "ItemHatchet";

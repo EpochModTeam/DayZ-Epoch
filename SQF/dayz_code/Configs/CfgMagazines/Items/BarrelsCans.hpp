@@ -36,7 +36,7 @@ class ItemFuelcanEmpty : ItemJerrycanEmpty
 {
 	type = 256;	
 	model = "z\addons\dayz_communityassets\models\fuelcan.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_empty_CA.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemFuelcanEmpty.paa";
 	displayName = $STR_ITEM_NAME_FUELCAN_EMPTY;
 	descriptionShort = $STR_ITEM_DESC_FUELCAN_EMPTY;	
 	fuelQuantity = 0;

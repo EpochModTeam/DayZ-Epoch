@@ -11,5 +11,5 @@ class ItemAPSIBroken_DZE : ItemCore
 	scope = 2;
 	displayName = $STR_EQUIP_APSI_BROKEN;
 	descriptionShort = $STR_EQUIP_APSI_BROKEN_DESC;
-	picture = "\dayz_epoch_c\icons\tools\ItemAPSI.paa";
+	picture = "\dayz_epoch_c\icons\tools\ItemAPSIBroken.paa";
 };

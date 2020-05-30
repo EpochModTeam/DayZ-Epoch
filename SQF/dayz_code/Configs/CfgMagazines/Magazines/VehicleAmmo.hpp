@@ -1,5 +1,5 @@
 class Vehicle_ammo_base: CA_Magazine {
-	scope = private; 
+	scope = 0; 
 	reloadAction = "";
 	maxLeadSpeed = 100;
 	type = 256;

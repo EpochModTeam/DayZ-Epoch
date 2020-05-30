@@ -10,6 +10,7 @@ class ItemMatchbox_base : ItemCore
 class ItemMatchboxEmpty : ItemMatchbox_base
 {
 	scope = 2;
+	picture = "\dayz_epoch_c\icons\tools\ItemMatchesEmpty.paa";
 	displayName = $STR_EQUIP_NAME_3_EMPTY;
 	descriptionShort = $STR_EQUIP_DESC_3_EMPTY;
 };
