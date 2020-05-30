@@ -68,20 +68,92 @@ class ChainSaw: Rifle
 class ChainSawB : ChainSaw {
 	model = "\z\addons\dayz_epoch\models\chainsaw_B.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsawB_CA.paa";
+	displayName = $STR_EPOCH_CHAINSAW_BLUE;
 	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_BLUE;
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_BLUE;
+	};	
 };
 class ChainSawG : ChainSaw {
 	model = "\z\addons\dayz_epoch\models\chainsaw_G.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsawG_CA.paa";
+	displayName = $STR_EPOCH_CHAINSAW_GREEN;
 	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_GREEN;
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_GREEN;
+	};	
 };
 class ChainSawP : ChainSaw {
 	model = "\z\addons\dayz_epoch\models\chainsaw_P.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsawP_CA.paa";
+	displayName = $STR_EPOCH_CHAINSAW_PINK;
 	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_PINK;
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_PINK;
+	};	
 };
 class ChainSawR : ChainSaw {
 	model = "\z\addons\dayz_epoch\models\chainsaw_R.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_chainsawR_CA.paa";
+	displayName = $STR_EPOCH_CHAINSAW_RED;
 	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_RED;
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_RED;
+	};	
+};
+
+class ChainSawBroken : ChainSaw {
+	magazines[] = {};
+	displayName = $STR_EPOCH_CHAINSAW_BROKEN;
+	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_BROKEN;
+	picture = "\dayz_epoch_c\icons\tools\ItemChainsawBroken.paa";
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_BROKEN;
+	};	
+};
+
+class ChainSawBBroken : ChainSawB {
+	magazines[] = {};
+	displayName = $STR_EPOCH_CHAINSAW_BLUE_BROKEN;
+	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_BLUE_BROKEN;
+	picture = "\dayz_epoch_c\icons\tools\ItemChainsawBlueBroken.paa";
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_BLUE_BROKEN;
+	};		
+};
+class ChainSawGBroken : ChainSawG {
+	magazines[] = {};
+	displayName = $STR_EPOCH_CHAINSAW_GREEN_BROKEN;
+	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN;
+	picture = "\dayz_epoch_c\icons\tools\ItemChainsawGreenBroken.paa";
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN;
+	};		
+};
+class ChainSawPBroken : ChainSawP {
+	magazines[] = {};
+	displayName = $STR_EPOCH_CHAINSAW_PINK_BROKEN;
+	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN;
+	picture = "\dayz_epoch_c\icons\tools\ItemChainsawPinkBroken.paa";
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN;
+	};	
+};
+class ChainSawRBroken : ChainSawR {
+	magazines[] = {};
+	displayName = $STR_EPOCH_CHAINSAW_RED_BROKEN;
+	descriptionShort = $STR_EPOCH_DESC_CHAINSAW_RED_BROKEN;
+	picture = "\dayz_epoch_c\icons\tools\ItemChainsawRedBroken.paa";
+	class Library
+	{
+		libTextDesc = $STR_EPOCH_DESC_CHAINSAW_RED_BROKEN;
+	};
 };

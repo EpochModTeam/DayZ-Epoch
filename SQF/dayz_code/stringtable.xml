@@ -17359,7 +17359,7 @@
 			<Czech>Sada obsahující nástroje potřebné k vytvoření klíčů.</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT_BROKEN_DESC">
-			<English>A broken kit to make key that must be repaired.</English>
+			<English>A broken keymakers kit that must be repaired.</English>
 			<German>Ein kaputtes Kit zum Schmelzen und Formen von Schlüsseln, welches repariert werden muss.</German>
 		</Key>		
 		<Key ID="STR_EQUIP_SLEDGE_DESC">
@@ -20690,6 +20690,46 @@
 			<German>Kettensäge</German>
 			<Russian>Бензопила</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_BLUE">
+			<English>Chainsaw</English>
+			<German>Kettensäge</German>
+			<Russian>Бензопила</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_GREEN">
+			<English>Chainsaw</English>
+			<German>Kettensäge</German>
+			<Russian>Бензопила</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_PINK">
+			<English>Chainsaw</English>
+			<German>Kettensäge</German>
+			<Russian>Бензопила</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_RED">
+			<English>Chainsaw</English>
+			<German>Kettensäge</German>
+			<Russian>Бензопила</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_CHAINSAW_BROKEN">
+			<English>Broken Chainsaw</English>
+			<German>Kaputte Kettensäge</German>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_BLUE_BROKEN">
+			<English>Broken Chainsaw</English>
+			<German>Kaputte Kettensäge</German>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_GREEN_BROKEN">
+			<English>Broken Chainsaw</English>
+			<German>Kaputte Kettensäge</German>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_PINK_BROKEN">
+			<English>Broken Chainsaw</English>
+			<German>Kaputte Kettensäge</German>
+		</Key>
+		<Key ID="STR_EPOCH_CHAINSAW_RED_BROKEN">
+			<English>Broken Chainsaw</English>
+			<German>Kaputte Kettensäge</German>
+		</Key>		
 		<Key ID="STR_EPOCH_DESC_CHAINSAW">
 			<English>Hermlite 2 Stroke Chainsaw</English>
 			<German>Hermlite 2 Takt Kettensäge</German>
@@ -20715,6 +20755,26 @@
 			<German>Hermlite 2 Takt Kettensäge (Rot)</German>
 			<Russian>Бензопила "Hermlite" с двухтактным двигателем (красная).</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_BROKEN">
+			<English>Broken Hermlite 2 Stroke Chainsaw</English>
+			<German>Kaputte Hermlite 2 Takt Kettensäge</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_BLUE_BROKEN">
+			<English>Broken Hermlite 2 Stroke Chainsaw (Blue)</English>
+			<German>Kaputte Hermlite 2 Takt Kettensäge (Blau)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN">
+			<English>Broken Hermlite 2 Stroke Chainsaw (Green)</English>
+			<German>Kaputte Hermlite 2 Takt Kettensäge (Grün)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN">
+			<English>Broken Hermlite 2 Stroke Chainsaw (Pink)</English>
+			<German>Kaputte Hermlite 2 Takt Kettensäge (Pink)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_CHAINSAW_RED_BROKEN">
+			<English>Broken Hermlite 2 Stroke Chainsaw (Red)</English>
+			<German>Kaputte Hermlite 2 Takt Kettensäge (Rot)</German>
+		</Key>		
 		<Key ID="STR_EPOCH_CHAINSAW_OIL">
 			<English>2-Stroke Engine Oil</English>
 			<German>2-Takt-Motorenöl</German>
