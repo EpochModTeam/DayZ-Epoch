@@ -53,6 +53,7 @@ if (!isClass(_newWeaponConfig) || {getText(_newWeaponConfig >> _attachment) != _
 
 _weaponInUse = (currentWeapon player == _weapon);
 
+[player,"detach_weap",0,false] call dayz_zombieSpeak;
 call gear_ui_init;
 player playActionNow "Medic";
 

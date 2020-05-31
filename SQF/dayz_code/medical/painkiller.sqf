@@ -29,6 +29,8 @@ if !(isNil "_medsUsed") then {
 		player playActionNow "Gear";
 	};
 
+	[player,"pills",0,false] call dayz_zombieSpeak;
+	
 	if (_unit == player) then {
 		//Self Healing
 		[player,player] call player_medPainkiller;

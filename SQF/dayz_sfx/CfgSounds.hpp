@@ -170,6 +170,16 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\bandage_0.ogg",0.3,1,40};
 		titles[] = {};
 	};
+	class z_bandage_1 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\bandage_1.ogg",0.3,1,40};
+		titles[] = {};
+	};	
+	class z_bandage_2 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\bandage_2.ogg",0.3,1,40};
+		titles[] = {};
+	};	
 	class z_gut_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\action_gut_0.ogg",0.1,1,30};
@@ -746,6 +756,46 @@ class CfgSounds {
 		titles[] = {};
 	};
 	
+	class z_attach_weap_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_attach_0.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_attach_weap_1 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_attach_1.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_detach_weap_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_detach_0.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_detach_weap_1 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\action_detach_1.ogg",1,1,10};
+		titles[] = {};
+	};
+	class z_pills_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\painkiller_0.ogg",1,1,20};
+		titles[] = {};
+	};	
+	class z_pills_1 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\painkiller_1.ogg",1,1,20};
+		titles[] = {};
+	};	
+	class z_pills_2 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\painkiller_2.ogg",1,1,20};
+		titles[] = {};
+	};	
+	class z_pills_3 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\painkiller_3.ogg",1,1,20};
+		titles[] = {};
+	};		
 	class z_radzone1_0 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\geiger_level_0.ogg",1,1,10};

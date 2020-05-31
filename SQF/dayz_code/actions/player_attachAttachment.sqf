@@ -66,6 +66,7 @@ if (!isClass(_config) || {!isText(_config >> _attachment)}) exitWith
 _newWeapon = getText (_config >> _attachment);
 _weaponInUse = (currentWeapon player == _weapon);
 
+[player,"attach_weap",0,false] call dayz_zombieSpeak;
 call gear_ui_init;
 player playActionNow "Medic";
 

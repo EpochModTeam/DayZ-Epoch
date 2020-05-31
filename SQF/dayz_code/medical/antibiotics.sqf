@@ -26,9 +26,8 @@ if !(isNil "_medsUsed") then {
 	//remove option
 	call fnc_usec_medic_removeActions;
 	r_action = false;
-
-	//player removeAction s_player_antiobiotic;
-	//s_player_antiobiotic = -1;
+	
+	[player,"pills",0,false] call dayz_zombieSpeak;
 
 	if (_unit == player) then {
 		//Self Healing
@@ -47,6 +46,5 @@ if !(isNil "_medsUsed") then {
 		_msg = format[localize "str_actions_medical_gave_antibiotics", (name _unit)];
 	};
 };
-
 
 _msg call dayz_rollingMessages;
