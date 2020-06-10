@@ -5,9 +5,9 @@ class NVGoggles: Binocular
 
 class NVGoggles_DZE: NVGoggles
 {
-	displayName = "NVG (Full Screen)";
+	displayName = $STR_EQUIP_NV_FULL;
 	modelOptics = "";
-	descriptionShort = "Full Screen Night Vision Goggles";
+	descriptionShort = $STR_EQUIP_NV_FULL_DESC;
 	model = "\dayz_epoch_c\items\nvg\nvg_dzn.p3d";
 };
 

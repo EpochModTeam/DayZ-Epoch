@@ -25540,7 +25540,15 @@
 		<Key ID="STR_ACTIONS_FIX_GPS">
 			<English>Fix GPS</English>
 			<German>GPS reparieren</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_EQUIP_NV_FULL">
+			<English>NVG (Full Screen)</English>
+			<German>NVG (Vollbild)</German>
+		</Key>	
+		<Key ID="STR_EQUIP_NV_FULL_DESC">
+			<English>Full Screen Night Vision Goggles</English>
+			<German>Vollbild-Nachtsichtgerät</German>
+		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
