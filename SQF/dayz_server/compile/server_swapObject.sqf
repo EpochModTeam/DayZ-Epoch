@@ -1,6 +1,6 @@
-private ["_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer","_clientKey","_exitReason","_playerUID","_weapons","_obj","_magazines","_backpacks"];
+private ["_class","_uid","_charID","_object","_worldspace","_key","_allowed","_obj","_inv","_objectID","_objectUID","_proceed","_activatingplayer","_clientKey","_exitReason","_playerUID","_weapons","_magazines","_backpacks"];
 
-if (count _this < 8) exitWith {diag_log "Server_SwapObject error: Wrong parameter format";};
+if (count _this < 8) exitWith {diag_log format ["Server_SwapObject error: Wrong parameter format from player %1",_this select 5];};
 
 _charID =		_this select 0;
 _object = 		_this select 1;
@@ -38,7 +38,7 @@ if (!isNull(_obj)) then {
 	_proceed = true;
 };
 
-if(isNull(_object)) then {
+if (isNull(_object)) then {
 	_proceed = false;
 };
 
