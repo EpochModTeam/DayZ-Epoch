@@ -14,4 +14,19 @@ class ItemEtoolBroken : ItemCore
 	picture = "\dayz_epoch_c\icons\tools\ItemEtoolBroken.paa";
 	displayName = $STR_EQUIP_NAME_1_BROKEN;
 	descriptionShort = $STR_EQUIP_DESC_1_BROKEN;
+	
+	class ItemActions
+	{
+		class Repair
+		{
+			text = $STR_ACTIONS_FIX_ETOOL;
+			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {};
+			outputweapons[] = {"ItemEtool"};
+			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
+			inputweapons[] = {"ItemEtoolBroken"};
+		};		
+	};		
 };

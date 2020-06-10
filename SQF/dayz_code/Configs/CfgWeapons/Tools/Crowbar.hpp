@@ -45,4 +45,19 @@ class ItemCrowbarBent : ItemCore
 	picture = "\dayz_epoch_c\icons\tools\ItemCrowbarBroken.paa";
 	displayName = $STR_EQUIP_NAME_CROWBARBENT;
 	descriptionShort = $STR_EQUIP_DESC_CROWBARBENT;
+	
+	class ItemActions
+	{
+		class Repair
+		{
+			text = $STR_ACTIONS_FIX_CROWBAR;
+			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {"fire"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {};
+			outputweapons[] = {"ItemCrowbar"};
+			input[] = {{"PartGeneric",1}};
+			inputweapons[] = {"ItemCrowbarBent"};
+		};		
+	};	
 };

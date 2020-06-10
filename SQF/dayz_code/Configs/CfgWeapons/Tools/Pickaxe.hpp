@@ -23,14 +23,19 @@ class ItemPickaxeBroken : ItemCore
 	picture = "\dayz_epoch_c\icons\tools\ItemPickaxeBroken.paa";
 	displayName = $STR_name_ItemPickaxeBroken;
 	descriptionShort = $STR_desc_ItemPickaxeBroken;	
-	fixedTool = "ItemPickaxe";
 	
 	class ItemActions
 	{
 		class Repair
 		{
 			text = $STR_ACTIONS_FIX_PICKAXE;
-			script = "spawn player_fixHatchet;";
-		};
+			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {};
+			outputweapons[] = {"ItemPickaxe"};
+			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
+			inputweapons[] = {"ItemPickaxeBroken"};
+		};		
 	};
 };

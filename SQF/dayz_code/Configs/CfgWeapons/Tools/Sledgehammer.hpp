@@ -33,6 +33,21 @@ class ItemSledgeBroken: ItemCore
 	picture = "\dayz_epoch_c\icons\tools\ItemSledge1Broken.paa";
 	displayName = $STR_name_ItemSledgeHammerBroken;
 	descriptionShort = $STR_desc_ItemSledgeHammerBroken;	
+	
+	class ItemActions
+	{
+		class Repair
+		{
+			text = $STR_ACTIONS_FIX_SLEDGE_HAMMER;
+			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {};
+			outputweapons[] = {"ItemSledge"};
+			input[] = {{"equip_duct_tape",1},{"ItemSledgeHandle",1}};
+			inputweapons[] = {"ItemSledgeBroken"};
+		};		
+	};	
 };
 
 //Vanilla sledge is using a different model.
@@ -53,14 +68,19 @@ class ItemSledgeHammerBroken : ItemCore
 	picture = "\dayz_epoch_c\icons\tools\ItemSledge2Broken.paa";
 	displayName = $STR_name_ItemSledgeHammerBroken;
 	descriptionShort = $STR_desc_ItemSledgeHammerBroken;	
-	fixedTool = "ItemSledgeHammer";
 	
 	class ItemActions
 	{
-		class Toolbelt
+		class Repair
 		{
 			text = $STR_ACTIONS_FIX_SLEDGE_HAMMER;
-			script = "spawn player_fixHatchet;";
-		};
-	};
+			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {};
+			outputweapons[] = {"ItemSledgeHammer"};
+			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
+			inputweapons[] = {"ItemSledgeHammerBroken"};
+		};		
+	};	
 };

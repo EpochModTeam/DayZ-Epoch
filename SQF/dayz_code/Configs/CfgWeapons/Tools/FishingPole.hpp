@@ -45,4 +45,19 @@ class ItemFishingPoleBroken : ItemCore
 	picture = "\dayz_epoch_c\icons\tools\ItemFishingpoleBroken.paa";
 	displayName = $STR_ITEM_NAME_FISHINGPOLEBROKEN;
 	descriptionShort = $STR_ITEM_DESC_FISHINGPOLE_BROKEN;
+	
+	class ItemActions
+	{
+		class Repair
+		{
+			text = $STR_ACTIONS_FIX_FISHINGPOLE;
+			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {};
+			outputweapons[] = {"ItemFishingPole"};
+			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
+			inputweapons[] = {"ItemFishingPoleBroken"};
+		};		
+	};	
 };

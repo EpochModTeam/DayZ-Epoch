@@ -303,6 +303,7 @@ class CfgWeapons
 	
 	#include "Tools\Binocular.hpp"
 	#include "Tools\NVG.hpp"
+	#include "Tools\BinocularVector.hpp"
 	#include "Tools\Chainsaw.hpp"
 	
 	#include "Tools\Map.hpp"

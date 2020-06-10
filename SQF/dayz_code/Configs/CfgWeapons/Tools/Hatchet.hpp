@@ -33,14 +33,19 @@ class ItemHatchetBroken : ItemCore
 	model = "\dayz_equip\models\hatchet.p3d";
 	displayName = $STR_name_ItemHatchetBroken;
 	descriptionShort = $STR_desc_ItemHatchetBroken;	
-	fixedTool = "ItemHatchet";
 	
 	class ItemActions
 	{
 		class Repair
 		{
 			text = $STR_ACTIONS_FIX_HATCHET;
-			script="spawn player_fixHatchet;";
-		};
+			script = ";['Repair','CfgWeapons', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {};
+			outputweapons[] = {"ItemHatchet"};
+			input[] = {{"equip_duct_tape",1},{"equip_lever",1}};
+			inputweapons[] = {"ItemHatchetBroken"};
+		};		
 	};
 };
