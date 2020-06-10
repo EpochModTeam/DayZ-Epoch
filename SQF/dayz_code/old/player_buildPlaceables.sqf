@@ -260,8 +260,8 @@ while {Dayz_constructionContext select 4} do {
 			_sfx = if (_object isKindOf "Land_A_tent") then {"tentunpack"} else {"repair"};
 			
 			// placement is fine, enable "Build" in the menu
-			_actionBuild = player addAction [localize "str_player_build_complete", "\z\addons\dayz_code\actions\object_build.sqf", [_object, _requiredParts , _classname, _text, true, 20, _sfx], 1, true, true, "", "0 != count Dayz_constructionContext"];
-			_actionCancel = player addAction [localize "str_player_build_cancel", "\z\addons\dayz_code\actions\object_build.sqf", [_object, _requiredParts  , _classname, _text, false, 0, "none"], 1, true, true, "", "0 != count Dayz_constructionContext"];
+			_actionBuild = player addAction [localize "str_player_build_complete", "\z\addons\dayz_code\old\object_build.sqf", [_object, _requiredParts , _classname, _text, true, 20, _sfx], 1, true, true, "", "0 != count Dayz_constructionContext"];
+			_actionCancel = player addAction [localize "str_player_build_cancel", "\z\addons\dayz_code\old\object_build.sqf", [_object, _requiredParts  , _classname, _text, false, 0, "none"], 1, true, true, "", "0 != count Dayz_constructionContext"];
 		};
 	} else {
 		if (!_actionBuildHidden) then {

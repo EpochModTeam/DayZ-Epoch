@@ -39,5 +39,5 @@ while {_counter < _amount} do {
 	//[_agent, _position] call zombie_loiter;
 
 	//Start behavior
-	_id = [_position,_agent,player] execFSM "\z\AddOns\dayz_code\system\fn_swarmagent.fsm";
+	_id = [_position,_agent,player] execFSM "\z\AddOns\dayz_code\old\fn_swarmagent.fsm";
 };

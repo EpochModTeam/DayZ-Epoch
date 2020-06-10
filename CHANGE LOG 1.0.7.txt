@@ -121,4 +121,5 @@
 [REMOVED] DayZ Vanilla Crafting - all recipes were moved to Epoch Crafting. (8315d899) @AirwavesMan
 
 [INFO] Synced with DayZMod upstream up to commit fe063a8
+[INFO] Removed functions can be found under "dayz_code\old".
 [INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, Icewindo, Brainbug, lennard91, stagler, SyNcRoNiCzZ, Sam563, Alwarren, Robert Hammer, Marseille77
