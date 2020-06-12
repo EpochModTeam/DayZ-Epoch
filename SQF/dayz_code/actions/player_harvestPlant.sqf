@@ -26,16 +26,15 @@ _findNearestPlant = [];
 
 if (count _findNearestPlant >= 1) then {
 	_plant = _findNearestPlant select 0;
-	
-	// Start chop plant loop
+
 	_isOk = true;
 	_proceed = false;
 	while {_isOk} do {
 		[player,20,true,(getPosATL player)] spawn player_alertZombies;
 		[player,"chopwood",0,false] call dayz_zombieSpeak;
-		
+
 		_finished = ["Medic",1] call fn_loopAction;
-		
+
 		if(!_finished) exitWith {
 			_isOk = false;
 			_proceed = false;
@@ -48,12 +47,10 @@ if (count _findNearestPlant >= 1) then {
 	};
 
 	if (_proceed) then {
-		// Make sure no other players are nearby
-		_playerNear = {isPlayer _x} count (([_plant] call FNC_GetPos) nearEntities ["CAManBase",10]) > 1;
+		_playerNear = {isPlayer _x} count (([_plant] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
 		if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
-		
-		//Remove melee magazines (BIS_fnc_invAdd fix)
-		false call dz_fn_meleeMagazines;
+
+		false call dz_fn_meleeMagazines; //Remove melee magazines (BIS_fnc_invAdd fix)
 		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 		_invResult = false;
 		_i = 0;
@@ -66,11 +63,10 @@ if (count _findNearestPlant >= 1) then {
 		true call dz_fn_meleeMagazines;
 
 		_text = getText (configFile >> "CfgMagazines" >> _itemOut >> "displayName");
-		
-		if(_i != 0) then {
+
+		if (_i != 0) then {
 			if ("" == typeOf _plant) then {
-				// Ask server to setDamage on plant and sync for JIP
-				PVDZ_objgather_Knockdown = [_plant,player];
+				PVDZ_objgather_Knockdown = [_plant,player]; // Ask server to setDamage on plant and sync for JIP
 				publicVariableServer "PVDZ_objgather_Knockdown";
 			} else {
 				deleteVehicle _plant;
@@ -85,4 +81,5 @@ if (count _findNearestPlant >= 1) then {
 } else {
 	localize "str_epoch_player_74" call dayz_rollingMessages;
 };
+
 dayz_actionInProgress = false;

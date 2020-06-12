@@ -39,14 +39,14 @@ _isWreckBuilding = _objType in DZE_isWreckBuilding;
 _isMine = _objType in ["Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gold_vein_wreck"];
 _isModular = _obj isKindOf "ModularItems";
 
-_PlayerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+_PlayerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
 if (_PlayerNear && (_isMine or _objType == "Land_ammo_supply_wreck")) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _limit = 3;
+
 if (DZE_StaticConstructionCount > 0) then {
 	_limit = DZE_StaticConstructionCount;
-}
-else {
+} else {
 	if (isNumber (configFile >> "CfgVehicles" >> _objType >> "constructioncount")) then {
 		_limit = getNumber(configFile >> "CfgVehicles" >> _objType >> "constructioncount");
 	};

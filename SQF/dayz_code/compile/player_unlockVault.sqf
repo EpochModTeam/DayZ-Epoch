@@ -20,9 +20,8 @@ if !(_objType in DZE_LockedStorage) exitWith {
 	dayz_actionInProgress = false;
 };
 
-// Server_handleSafeGear is called unscheduled and exits if the object is null, so two players unlocking at the same time will not work
-_playerNear = _obj call dze_isnearest_player;
-if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_20" call dayz_rollingMessages;};
+_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 if (isNull _obj || !(alive _obj)) exitWith { dayz_actionInProgress = false; };
 
@@ -52,8 +51,8 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 
 	PVDZE_handleSafeGear = [player,_obj,0];
 	publicVariableServer "PVDZE_handleSafeGear";
-	//wait for response from server to verify safe was logged before proceeding
-	waitUntil {!isNil "dze_waiting"};
+
+	waitUntil {!isNil "dze_waiting"}; // wait for response from server to verify safe was logged before proceeding
 
 	format[localize "STR_BLD_UNLOCKED",_text] call dayz_rollingMessages;
 } else {
@@ -71,5 +70,6 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 
 	format [localize "str_epoch_player_19",round(dayz_lastCodeFail - diag_tickTime)] call dayz_rollingMessages;
 };
+
 s_player_unlockvault = -1;
 dayz_actionInProgress = false;

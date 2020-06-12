@@ -36,7 +36,7 @@ _claimedBy = _holder getVariable["claimed","0"];
 if (_claimedBy != _playerID) exitWith { format[localize "str_player_beinglooted",_text] call dayz_rollingMessages; };
 
 if (_classname isKindOf "Bag_Base_EP1") exitWith {
-	_PlayerNear = {isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 10]) > 1;
+	_PlayerNear = {isPlayer _x} count ((getPosATL _holder) nearEntities ["CAManBase", 12]) > 1;
 	if (_PlayerNear) exitWith {localize "str_pickup_limit_4" call dayz_rollingMessages;};
 
 	_hasBag = unitBackpack player;

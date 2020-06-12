@@ -1,8 +1,6 @@
 private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_qty","_string","_isZombie","_humanity","_finished"];
 
-if (dayz_actionInProgress) exitWith {
-	localize "str_player_actionslimit" call dayz_rollingMessages;
-};
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
 _item = _this;
@@ -12,7 +10,7 @@ _hasHarvested = _item getVariable["meatHarvested",false];
 
 _knifeArray = [];
 
-_PlayerNear = {isPlayer _x} count ((getPosATL _item) nearEntities ["CAManBase", 10]) > 1;
+_PlayerNear = {isPlayer _x} count ((getPosATL _item) nearEntities ["CAManBase", 12]) > 1;
 if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages; dayz_actionInProgress = false;};
 
 //Count how many active tools the player has
@@ -34,7 +32,7 @@ if ((count _knifeArray) < 1) exitWith {
 if ((count _knifeArray > 0) and !_hasHarvested) then {
 	//Use sharpest knife player has
 	_activeKnife = _knifeArray select 0; 
-	
+
 	//Get Animal Type
 	_isListed = isClass (configFile >> "CfgSurvival" >> "Meat" >> _type);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
@@ -43,7 +41,7 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 	_sfx = "gut";
 	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
 	[player,_dis,true,(getPosATL player)] call player_alertZombies;
-	
+
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {};
 
@@ -60,12 +58,12 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 	} else {		
 		PVCDZ_obj_GutBody =[_item,_qty];
 		publicVariable "PVCDZ_obj_GutBody";
-		
+
 		//if (!achievement_Gut) then {achievement_Gut = true;};
 	};
-	
+
 	["knives",0.2] call fn_dynamicTool;
-	
+
 	if (_isZombie) then {
 		// Reduce humanity for gutting zeds
 		_humanity = player getVariable ["humanity",0];
@@ -79,4 +77,5 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 	uiSleep 0.02;
 	_string call dayz_rollingMessages;
 };
+
 dayz_actionInProgress = false;

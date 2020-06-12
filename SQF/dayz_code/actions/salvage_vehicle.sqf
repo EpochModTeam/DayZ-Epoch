@@ -4,7 +4,7 @@ private ["_isMotorcycle","_hits","_part","_color","_vehicle","_PlayerNear","_hit
 _vehicle = _this select 3;
 {dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 
-_PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase", 10]) > 1;
+_PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase", 12]) > 1;
 if (_PlayerNear) exitWith {dayz_myCursorTarget = objNull; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 dayz_myCursorTarget = _vehicle;
@@ -82,7 +82,6 @@ if (!_is6WheelType) then {
 } count _hitpoints;
 
 if (count _hitpoints > 0 ) then {
-	// Localized in A2OA\Expansion\dta\languagecore
 	_cancel = dayz_myCursorTarget addAction [localize "str_action_cancel_action", "\z\addons\dayz_code\actions\repair_cancel.sqf","repair", 0, true, false];
 	s_player_repairActions set [count s_player_repairActions,_cancel];
 	s_player_repair_crtl = 1;

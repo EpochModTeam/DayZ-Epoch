@@ -2,41 +2,37 @@ private ["_vehicle","_curFuel","_newFuel","_finished","_location1","_location2",
 "_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText",
 "_availableCansEmpty","_hasHose","_PlayerNear"];
 
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
+
 _vehicle = _this select 3;
 player removeAction s_player_siphonfuel;
 _hasHose = "equip_hose" in magazines player;
 
 if (!_hasHose) exitWith {localize "str_siphon_hose" call dayz_rollingMessages; };
-_PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase", 10]) > 1;
+
+_PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase", 12]) > 1;
 if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
-dayz_actionInProgress = true;
 _abort = false;
-
-// Static vehicle fuel information
 _configVeh = 	configFile >> "cfgVehicles" >> typeOf _vehicle;
 _capacity = 	getNumber(_configVeh >> "fuelCapacity");
 _nameText = 	getText(_configVeh >> "displayName");
 
-// Loop to find containers that can could hold fuel and fill them
 {
 	_configCanEmpty = 	configFile >> "CfgMagazines" >> _x;
-	//diag_log format["Looking for: %1", _x];
-	if(_x in DayZ_fuelCansEmpty) then {		
-		// Get Empty can size
+
+	if (_x in DayZ_fuelCansEmpty) then {
 		_canNameEmpty = _x;
 		_canSizeEmpty = getNumber(_configCanEmpty >> "fuelQuantity");
 		_canTypeEmpty = getText(_configCanEmpty >> "displayName");
 
-		// Get Full can size
 		_canName = getText(_configCanEmpty >> "fullCan");
 		_canSize =	getNumber(configFile >> "cfgMagazines" >> _canName >> "fuelQuantity");
 		
-		// is empty
-		if(_canSizeEmpty == 0) then {			
-			_curFuel = 		((fuel _vehicle) * _capacity);
-			_newFuel = 		(_curFuel - _canSize);
+		if (_canSizeEmpty == 0) then {
+			_curFuel = ((fuel _vehicle) * _capacity);
+			_newFuel = (_curFuel - _canSize);
 
 			// calculate new fuel
 			if (_capacity == 0) then {
@@ -48,8 +44,7 @@ _nameText = 	getText(_configVeh >> "displayName");
 			if (_newFuel > 0) then {
 				format[localize "str_siphon_preparing",_canTypeEmpty] call dayz_rollingMessages;
 				_finished = false;
-				
-				// alert zombies
+
 				[player,20,true,(getPosATL player)] call player_alertZombies;
 
 				if (!dayz_isSwimming) then {
@@ -66,8 +61,8 @@ _nameText = 	getText(_configVeh >> "displayName");
 
 				if (_finished) then {
 					// Get vehicle fuel levels again
-					_curFuel = 		((fuel _vehicle) * _capacity);
-					_newFuel = 		(_curFuel - _canSize);
+					_curFuel = ((fuel _vehicle) * _capacity);
+					_newFuel = (_curFuel - _canSize);
 
 					// calculate minimum needed fuel
 					if (_capacity == 0) then {
@@ -87,37 +82,35 @@ _nameText = 	getText(_configVeh >> "displayName");
 
 							// Play sound
 							[player,"refuel",0,false] call dayz_zombieSpeak;
-							
-							// Add filled can
+
 							player addMagazine _canName;
-							
-							// Added Nutrition-Factor for work
+
 							["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
-					
+
 							format[localize "str_siphon_drained",_nameText,_canSize] call dayz_rollingMessages;
-	
+
 							call fnc_usec_medic_removeActions;
 							r_action = false;
-				
+
 							uiSleep 1;
 						} else {
 							_abort = true;
-						};					
+						};
 					} else {
 						format[localize "str_siphon_notenough",_nameText] call dayz_rollingMessages;
 						_abort = true;
-					};						
+					};
 				} else {
 					localize "str_siphon_canceled" call dayz_rollingMessages;
 					_abort = true;
-				};			
+				};
 			} else {
 				format[localize "str_siphon_notenough",_nameText] call dayz_rollingMessages;
 				_abort = true;
 			};
 		};
 	};
-	if(_abort) exitWith {};
+	if (_abort) exitWith {};
 } forEach magazines player;
 
 dayz_actionInProgress = false;

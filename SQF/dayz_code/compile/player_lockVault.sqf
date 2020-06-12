@@ -17,37 +17,36 @@ _objType = typeOf _obj;
 _lockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "lockedClass");
 _text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
 
-// Silently exit if object no longer exists
-if (isNull _obj) exitWith { dayz_actionInProgress = false; };
+if (isNull _obj) exitWith {dayz_actionInProgress = false;};
 
-// Server_handleSafeGear is called unscheduled and exits if the object is null, so two players locking at the same time will not work
-_playerNear = _obj call dze_isnearest_player;
-if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_11" call dayz_rollingMessages;};
+_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _ComboMatch = (_ownerID == dayz_combination);
 if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
 
-if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith {dayz_actionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call dayz_rollingMessages; };
+if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith {dayz_actionInProgress = false; s_player_lockvault = -1; format[localize "str_epoch_player_115",_text] call dayz_rollingMessages;};
 
 if (!isNull _obj) then {
 	(findDisplay 106) closeDisplay 0; // Close gear
 	dze_waiting = nil;
-	
+
 	[_lockedClass,objNull] call fn_waitForObject;
-	
+
 	if (_lockedClass == "LockboxStorageLocked") then {
 		[player,"lockboxclose",0,false] call dayz_zombieSpeak;
 	} else {
 		[player,"safeclose",0,false] call dayz_zombieSpeak;
 	};
-	
+
 	PVDZE_handleSafeGear = [player,_obj,1];
-	publicVariableServer "PVDZE_handleSafeGear";	
-	//wait for response from server to verify safe was logged and saved before proceeding
-	waitUntil {!isNil "dze_waiting"};
+	publicVariableServer "PVDZE_handleSafeGear";
+
+	waitUntil {!isNil "dze_waiting"}; // wait for response from server to verify safe was logged and saved before proceeding
 
 	format[localize "str_epoch_player_117",_text] call dayz_rollingMessages;
 };
+
 s_player_lockvault = -1;
 dayz_actionInProgress = false;

@@ -1,24 +1,26 @@
 /*
-[_obj] call player_packTent;
+	[_obj] call player_packTent;
 */
+
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_alreadyPacking","_backpacks","_bag","_campItems","_dir","_holder","_magazines","_obj","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons","_finished","_posPlayer","_text"];
+private ["_alreadyPacking","_backpacks","_bag","_campItems","_dir","_holder","_magazines","_obj","_objectID","_objectUID","_ownerID","_packobj","_playerNear","_pos","_weapons","_finished","_posPlayer","_text","_typeOf"];
 
 _obj = _this;
+_typeOf = typeOf _obj;
 _ownerID = _obj getVariable["CharacterID","0"];
 _objectID = _obj getVariable["ObjectID","0"];
 _objectUID = _obj getVariable["ObjectUID","0"];
+
 if (DZE_permanentPlot) then {
 	_ownerID = _obj getVariable["ownerPUID","0"];
 };
 
-// Make sure no other players are nearby
-_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase",10]) > 1;
+_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
-_packobj = getText (configFile >> "CfgVehicles" >> typeOf _obj >> "pack");
+_packobj = getText (configFile >> "CfgVehicles" >> _typeOf >> "pack");
 
 player removeAction s_player_packtent;
 s_player_packtent = -1;
@@ -27,7 +29,7 @@ s_player_packtentinfected = -1;
 
 _campItems = ["IC_DomeTent","IC_Tent"];
 
-if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) then {
+if (_ownerID in [dayz_characterID,dayz_playerUID] || {_typeOf in _campItems}) then {
 	_alreadyPacking = _obj getVariable["packing",0];
 	if (_alreadyPacking == 1) exitWith {localize "str_player_beingpacked" call dayz_rollingMessages;};
 
@@ -38,7 +40,7 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	[player,"tentpack",0,false,20] call dayz_zombieSpeak;
 	[player,20,true,getPosATL player] call player_alertZombies;
 
-	_text = getText (configFile >> "CfgVehicles" >> (typeOf _obj) >> "displayName");
+	_text = getText (configFile >> "CfgVehicles" >> _typeOf >> "displayName");
 	format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
 
 	_finished = ["Medic",1] call fn_loopAction;
@@ -48,11 +50,8 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 	_posPlayer = getPosATL player;
 	_pos set [2,_posPlayer select 2];
 
-	if (_pos select 2 < 0) then {
-		_pos set [2,0];
-	};
+	if (_pos select 2 < 0) then {_pos set [2,0];};
 
-	//place tent (local)
 	_bag = _packobj createVehicle [0,0,0];
 	_bag setDir _dir;
 	_bag setPosATL _pos;
@@ -76,4 +75,5 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] or typeOf _obj in _campItems) 
 } else {
 	localize "str_fail_tent_pack" call dayz_rollingMessages;
 };
+
 dayz_actionInProgress = false;

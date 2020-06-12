@@ -9,8 +9,7 @@ if (vehicle player != player) exitWith {localize "str_player_fail_wear1" call da
 //if (!isNull (unitBackpack player)) exitWith {localize "STR_EPOCH_ACTIONS_9" call dayz_rollingMessages;};
 if ("CSGAS" in (magazines player)) exitWith {localize "STR_EPOCH_ACTIONS_10" call dayz_rollingMessages;};
 
-// Make sure no other players are nearby
-_playerNear = {isPlayer _x} count (([player] call FNC_GetPos) nearEntities ["CAManBase",12]) > 1;
+_playerNear = {isPlayer _x} count (([player] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
 if (_playerNear) exitWith {localize "STR_EPOCH_PLAYER_84" call dayz_rollingMessages;};
 
 if (_this in DZE_RestrictSkins) exitWith {format[localize "str_epoch_player_315",_this] call dayz_rollingMessages;};

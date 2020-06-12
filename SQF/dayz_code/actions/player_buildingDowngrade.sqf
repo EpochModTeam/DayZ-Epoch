@@ -16,7 +16,7 @@ _objectCharacterID = _obj getVariable ["CharacterID","0"];
 
 if (DZE_Lock_Door != _objectCharacterID) exitWith {dayz_actionInProgress = false; s_player_downgrade_build = -1; localize "str_epoch_player_49" call dayz_rollingMessages;};
 
-_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
+_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
 if (_playerNear) exitWith {dayz_actionInProgress = false; s_player_downgrade_build = -1; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _objectID 	= _obj getVariable ["ObjectID","0"];
@@ -65,13 +65,12 @@ if ((count _upgrade) > 0) then {
 	} count _refund;
 	true call dz_fn_meleeMagazines;
 
-	if(_i != 0) then {
-		_location	= _obj getVariable["OEMPos",(getposATL _obj)];
+	if (_i != 0) then {
+		_location	= _obj getVariable["OEMPos",getPosATL _obj];
 
 		_dir = getDir _obj;
 		_vector = [(vectorDir _obj),(vectorUp _obj)];
 
-		// Reset the character ID on locked doors before they inherit the newclassname
 		if (_classname in DZE_DoorsLocked) then {
 			_obj setVariable ["CharacterID",dayz_characterID,true];
 			_objectCharacterID = dayz_characterID;
@@ -87,9 +86,7 @@ if ((count _upgrade) > 0) then {
 
 		format[localize "str_epoch_player_142",_text] call dayz_rollingMessages;
 
-		if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {
-			_object addEventHandler ["HandleDamage",{false}];
-		};
+		if (DZE_GodModeBase && {!(_classname in DZE_GodModeBaseExclude)}) then {_object addEventHandler ["HandleDamage",{false}];};
 
 		if (DZE_permanentPlot) then {
 			_ownerID = _obj getVariable["ownerPUID","0"];
