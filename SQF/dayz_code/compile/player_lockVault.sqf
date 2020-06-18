@@ -19,9 +19,6 @@ _text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
 
 if (isNull _obj) exitWith {dayz_actionInProgress = false;};
 
-_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
-if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
-
 _ownerID = _obj getVariable["CharacterID","0"];
 _ComboMatch = (_ownerID == dayz_combination);
 if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};

@@ -14,7 +14,7 @@ _text = getText (configFile >> "CfgVehicles" >> _typeOf >> "displayName");
 
 if (isNull _obj || !(alive _obj)) exitWith {dayz_actionInProgress = false;};
 
-_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 _ownerID = _obj getVariable["CharacterID","0"];
@@ -30,9 +30,7 @@ if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = fal
 
 if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith {dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
 
-format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
-
-if (!isNull _obj && {alive _obj}) exitWith {s_player_packvault = -1;dayz_actionInProgress = false;};
+if (isNull _obj && {!alive _obj}) exitWith {s_player_packvault = -1;dayz_actionInProgress = false;};
 [player,"tentpack",0,false] call dayz_zombieSpeak;
 
 format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
@@ -42,7 +40,7 @@ if (isNull _obj || !_finished) exitWith {s_player_packvault = -1;dayz_actionInPr
 
 (findDisplay 106) closeDisplay 0; // Close gear
 
-_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 10]) > 1;
 if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 ["Working",0,[3,2,4,0]] call dayz_NutritionSystem;

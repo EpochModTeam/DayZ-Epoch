@@ -15,15 +15,9 @@ s_player_unlockvault = 1;
 _obj = _this;
 _objType = typeOf _obj;
 
-if !(_objType in DZE_LockedStorage) exitWith {
-	s_player_unlockvault = -1;
-	dayz_actionInProgress = false;
-};
+if !(_objType in DZE_LockedStorage) exitWith {s_player_unlockvault = -1;dayz_actionInProgress = false;};
 
-_playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
-if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
-
-if (isNull _obj || !(alive _obj)) exitWith { dayz_actionInProgress = false; };
+if (isNull _obj || !(alive _obj)) exitWith {dayz_actionInProgress = false;};
 
 _unlockedClass = getText (configFile >> "CfgVehicles" >> _objType >> "unlockedClass");
 _text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
@@ -61,6 +55,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 
 	[player,"repair",0,false] call dayz_zombieSpeak;
 	[player,25,true,(getPosATL player)] spawn player_alertZombies;
+
 	if (DZE_lockablesHarderPenalty) then {
 		dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);
 		dayz_UnlockTime = dayz_UnlockTime * 2;
