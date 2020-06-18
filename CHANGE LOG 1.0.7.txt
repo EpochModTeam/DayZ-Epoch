@@ -38,6 +38,8 @@
 [NEW] Add back DayZ Mod stashes. The stash can be build by a rightclick on item canvas. (8304efe9) @AirwavesMan
 [NEW] Storage buildings like gun racks, storage sheds etc. can be upgraded to a version with more gear slots now. (19889a9d) @AirwavesMan
 [NEW] Lumber can be crafted directly from wooden logs now. (ae79f4ce) @AirwavesMan
+[NEW] DayZ Mod fences and gates can be build now with complete upgrade and snap support. (3724a1f3) @AirwavesMan
+[NEW] Take painkillers, antibiotics and attach or detach an attachment has a sound now. (a69948d5) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -75,6 +77,7 @@
 [FIXED] Players were unable to open a few tank versions with their key. (9cc8b5d8) @AirwavesMan
 [FIXED] The epoch versions of the RHIB boats were incorrect. (38a31290) @AirwavesMan
 [FIXED] Players are no longer able to exploit the player_wearClothes function to reset AI targeting. (5c29704) @morgoth0, @Arrakis, @worldwidesorrow.
+[FIXED] Vehicles should no longer explode after a server restart due to buildings loading in late. (99dc7cd7) @Seelenapparat
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
