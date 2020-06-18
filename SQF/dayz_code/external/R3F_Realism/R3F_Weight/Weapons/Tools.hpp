@@ -18,6 +18,26 @@ class ChainsawR
 {	
 	weight = 4.5;
 };
+class ChainSawBroken 
+{ 
+	weight = 4.5;
+};
+class ChainSawBBroken 
+{ 
+	weight = 4.5; 
+};
+class ChainSawGBroken 
+{ 
+	weight = 4.5; 
+};
+class ChainSawPBroken 
+{ 
+	weight = 4.5; 
+};
+class ChainSawRBroken 
+{ 
+	weight = 4.5; 
+};
 class Binocular
 {	
 	weight = 1;
@@ -25,6 +45,14 @@ class Binocular
 class Binocular_Vector
 {	
 	weight = 1;
+};
+class BinocularBroken 
+{ 
+	weight = 1; 
+};
+class Binocular_VectorBroken 
+{
+	weight = 1; 
 };
 class NVGoggles
 {	

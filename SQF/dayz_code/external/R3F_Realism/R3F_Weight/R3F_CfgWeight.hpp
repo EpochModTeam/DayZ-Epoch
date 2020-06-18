@@ -28,6 +28,7 @@ class CfgWeight
 		#include "Magazines\Buildings\BearTrap.hpp"
 		#include "Magazines\Buildings\Camonets.hpp"
 		#include "Magazines\Buildings\ModularBuilding.hpp"
+		#include "Magazines\Buildings\Fences.hpp"
 		#include "Magazines\Buildings\Sandbag.hpp"
 		#include "Magazines\Buildings\Storage.hpp"
 		#include "Magazines\Buildings\Tent.hpp"

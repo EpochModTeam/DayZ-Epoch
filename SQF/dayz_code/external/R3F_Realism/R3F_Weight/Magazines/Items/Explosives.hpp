@@ -26,4 +26,44 @@ class ItemC4Charge
 class ItemCarBomb
 {
 	weight = 0.8;
+};
+
+class PMC_ied_v1 
+{
+	weight = 6; 
+};
+
+class PMC_ied_v2 
+{
+	weight = 6; 
+};
+
+class PMC_ied_v3 
+{
+	weight = 6; 
+};
+
+class PMC_ied_v4 
+{
+	weight = 6; 
+};
+
+class BAF_ied_v1 
+{
+	weight = 6; 
+};
+
+class BAF_ied_v2 
+{
+	weight = 6; 
+};
+
+class BAF_ied_v3 
+{
+	weight = 6; 
+};
+
+class BAF_ied_v4 
+{
+	weight = 6; 
 };	
