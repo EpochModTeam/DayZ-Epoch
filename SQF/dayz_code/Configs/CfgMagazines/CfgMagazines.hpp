@@ -59,6 +59,7 @@ class CfgMagazines
 	#include "Buildings\Camonets.hpp"	
 	#include "Buildings\Sandbag.hpp"
 	#include "Buildings\ModularBuilding.hpp"
+	#include "Buildings\Fences.hpp"
 	#include "Buildings\Storage.hpp"
 	#include "Buildings\Tent.hpp"	
 	#include "Buildings\Misc.hpp"	

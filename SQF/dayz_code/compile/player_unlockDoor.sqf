@@ -4,10 +4,10 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 	Modified for Zupa's DoorManagement.
 */
-private ["_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID"];
-
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID"];
 
 _doorMethod = "";
 _displayCombo = findDisplay 41144;
@@ -41,18 +41,25 @@ if (!isNull dayz_selectedDoor) then {
 
 		if (isNil "dayz_UnlockTime") then {dayz_UnlockTime = 5;};
 		if (DZE_doorManagementHarderPenalty && {((diag_tickTime - dayz_lastCodeFail) + dayz_unlockTime / 2) > 120}) then {dayz_UnlockTime = 5;};
-		
+
 
 		if (DZE_Lock_Door == _objectCharacterID) then {
-			[player,"combo_unlock",0,false] call dayz_zombieSpeak;
-
 			_display closeDisplay 2;
 
-			if (_obj animationPhase "Open_hinge" == 0) then {
-				_obj animate ["Open_hinge", 1];
-			};
-			if (_obj animationPhase "Open_latch" == 0) then {
-				_obj animate ["Open_latch", 1];
+			if !(typeof _obj in ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"]) then {
+				[player,"combo_unlock",0,false] call dayz_zombieSpeak;
+
+				if (_obj animationPhase "Open_hinge" == 0) then {
+					_obj animate ["Open_hinge", 1];
+				};
+				if (_obj animationPhase "Open_latch" == 0) then {
+					_obj animate ["Open_latch", 1];
+				};
+
+				PVDZE_handleSafeGear = [player,_obj,5,if (_doorMethod == "EYE") then {"EYESCAN"} else {DZE_Lock_Door}];
+				publicVariableServer "PVDZE_handleSafeGear";
+			} else {
+				GateMethod = [DZE_Lock_Door,"EYESCAN"] select (_doorMethod == "EYE");
 			};
 
 			if (_doorMethod == "Eye") then {
@@ -60,9 +67,6 @@ if (!isNull dayz_selectedDoor) then {
 			};
 			dayz_UnlockTime = 5;
 			dayz_lastCodeFail = 0;
-
-			PVDZE_handleSafeGear = [player,_obj,5,if (_doorMethod == "EYE") then {"EYESCAN"} else {DZE_Lock_Door}];
-			publicVariableServer "PVDZE_handleSafeGear";
 		} else {
 			PVDZE_handleSafeGear = [player,_obj,6,if (_doorMethod == "EYE") then {"EYESCAN"} else {DZE_Lock_Door}];
 			publicVariableServer "PVDZE_handleSafeGear";

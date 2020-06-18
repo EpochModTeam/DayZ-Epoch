@@ -7,9 +7,40 @@ class ItemStone: CA_Magazine
 	picture = "\z\addons\dayz_buildings\equip\rocks.paa";
 	model = "z\addons\dayz_buildings\models\rocks.p3d";
 	descriptionShort = $STR_BLD_desc_ItemStone;//"Rough Stone"
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_BLD_name_WoodenFence_1_foundation;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"woodfence_foundation_kit",1}};
+			input[] = {{"ItemStone",8},{"MortarBucket",1},{"ItemPlank",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_BLD_name_MetalFence_1_foundation;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"metalfence_foundation_kit",1}};
+			input[] = {{"ItemStone",8},{"MortarBucket",1},{"ItemRSJ",1}};
+		};	
+		class Crafting2
+		{
+			text = $STR_BLD_name_WoodenFence_1_foundation;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"woodfence_gate_foundation_kit",1}};
+			input[] = {{"ItemLog",4}};
+		};		
+	};		
 };
 
-class ItemConcreteBlock: CA_Magazine //Construection,indestrial
+class ItemConcreteBlock: CA_Magazine
 {
 	scope = 2;
 	count = 1;

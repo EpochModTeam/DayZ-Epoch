@@ -15,7 +15,38 @@ class SnapBuilding {
 			"WoodFloorQuarter_DZ",
 			"WoodFloorHalf_DZ",
 			"WoodFloor_DZ",	
-			"MetalFloor_DZ"
+			"MetalFloor_DZ",
+			"WoodenFence_1_frame_DZ",	
+			"WoodenFence_1_foundation_DZ",		
+			"WoodenFence_quaterpanel_DZ",
+			"WoodenFence_halfpanel_DZ",		
+			"WoodenFence_thirdpanel_DZ",	
+			"WoodenFence_1_DZ",
+			"WoodenFence_2_DZ",
+			"WoodenFence_3_DZ",
+			"WoodenFence_4_DZ",
+			"WoodenFence_5_DZ",
+			"WoodenFence_6_DZ",
+			"WoodenFence_7_DZ",
+			"MetalFence_1_foundation_DZ",
+			"MetalFence_1_frame_DZ",	
+			"MetalFence_halfpanel_DZ",
+			"MetalFence_thirdpanel_DZ",
+			"MetalFence_1_DZ",
+			"MetalFence_2_DZ",
+			"MetalFence_3_DZ",
+			"MetalFence_4_DZ",
+			"MetalFence_5_DZ",
+			"MetalFence_6_DZ",
+			"MetalFence_7_DZ",
+			"WoodenGate_foundation_DZ",	
+			"WoodenGate_1_DZ",
+			"WoodenGate_2_DZ",
+			"WoodenGate_3_DZ",
+			"WoodenGate_4_DZ",
+			"MetalFence_ghost_DZ",
+			"WoodenFence_ghost_DZ",
+			"WoodenGate_ghost_DZ"	
 		};
 		radius = 5;
 	};
@@ -123,7 +154,38 @@ class SnapBuilding {
 			"CinderWallDoorSmallLocked_DZ",
 			"CinderWallHalf_DZ",
 			"CinderWallDoorSmall_DZ",
-			"MetalFloor_DZ"
+			"MetalFloor_DZ",
+			"WoodenFence_1_frame_DZ",	
+			"WoodenFence_1_foundation_DZ",		
+			"WoodenFence_quaterpanel_DZ",
+			"WoodenFence_halfpanel_DZ",		
+			"WoodenFence_thirdpanel_DZ",	
+			"WoodenFence_1_DZ",
+			"WoodenFence_2_DZ",
+			"WoodenFence_3_DZ",
+			"WoodenFence_4_DZ",
+			"WoodenFence_5_DZ",
+			"WoodenFence_6_DZ",
+			"WoodenFence_7_DZ",
+			"MetalFence_1_foundation_DZ",
+			"MetalFence_1_frame_DZ",	
+			"MetalFence_halfpanel_DZ",
+			"MetalFence_thirdpanel_DZ",
+			"MetalFence_1_DZ",
+			"MetalFence_2_DZ",
+			"MetalFence_3_DZ",
+			"MetalFence_4_DZ",
+			"MetalFence_5_DZ",
+			"MetalFence_6_DZ",
+			"MetalFence_7_DZ",
+			"WoodenGate_foundation_DZ",	
+			"WoodenGate_1_DZ",
+			"WoodenGate_2_DZ",
+			"WoodenGate_3_DZ",
+			"WoodenGate_4_DZ",
+			"MetalFence_ghost_DZ",
+			"WoodenFence_ghost_DZ",
+			"WoodenGate_ghost_DZ"			
 		};
 		radius = 7;
 	};
@@ -404,4 +466,379 @@ class SnapBuilding {
 		
 	};
 	class VaultStorage: VaultStorageLocked {};
+	
+	class Woodenfence {
+		snapTo[] = {
+			"WoodFloorQuarter_DZ",
+			"WoodFloorHalf_DZ",
+			"WoodFloor_DZ",
+			"WoodStairs_DZ",
+			"WoodStairsSans_DZ",
+			"WoodSmallWallDoor_DZ",
+			"WoodSmallWall_DZ",
+			"WoodSmallWallWin_DZ",
+			"Land_DZE_WoodDoor",
+			"Land_DZE_WoodDoorLocked",
+			"WoodLargeWall_DZ",
+			"Land_DZE_LargeWoodDoor",
+			"WoodLargeWallWin_DZ",
+			"WoodLargeWallDoor_DZ",
+			"Land_DZE_GarageWoodDoor",
+			"Land_DZE_GarageWoodDoorLocked",
+			"Land_DZE_LargeWoodDoorLocked",
+			"WoodSmallWallThird_DZ",
+			"CinderWall_DZ",
+			"CinderWallDoorway_DZ",
+			"CinderWallDoorLocked_DZ",
+			"CinderWallDoor_DZ",
+			"CinderWallSmallDoorway_DZ",
+			"CinderWallDoorSmallLocked_DZ",
+			"CinderWallHalf_DZ",
+			"CinderWallDoorSmall_DZ",
+			"MetalFloor_DZ",
+			"WoodenFence_1_frame_DZ",	
+			"WoodenFence_1_foundation_DZ",		
+			"WoodenFence_quaterpanel_DZ",
+			"WoodenFence_halfpanel_DZ",		
+			"WoodenFence_thirdpanel_DZ",	
+			"WoodenFence_1_DZ",
+			"WoodenFence_2_DZ",
+			"WoodenFence_3_DZ",
+			"WoodenFence_4_DZ",
+			"WoodenFence_5_DZ",
+			"WoodenFence_6_DZ",
+			"WoodenFence_7_DZ",
+			"MetalFence_1_foundation_DZ",
+			"MetalFence_1_frame_DZ",	
+			"MetalFence_halfpanel_DZ",
+			"MetalFence_thirdpanel_DZ",
+			"MetalFence_1_DZ",
+			"MetalFence_2_DZ",
+			"MetalFence_3_DZ",
+			"MetalFence_4_DZ",
+			"MetalFence_5_DZ",
+			"MetalFence_6_DZ",
+			"MetalFence_7_DZ",
+			"WoodenGate_foundation_DZ",	
+			"WoodenGate_1_DZ",
+			"WoodenGate_2_DZ",
+			"WoodenGate_3_DZ",
+			"WoodenGate_4_DZ",
+			"MetalFence_ghost_DZ",
+			"WoodenFence_ghost_DZ",
+			"WoodenGate_ghost_DZ"	
+		};
+		radius = 10;		
+	};
+	class WoodenFence_1_foundation_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class WoodenFence_1_frame_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_quaterpanel_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class WoodenFence_halfpanel_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_thirdpanel_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class WoodenFence_1_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_2_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.68042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_3_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.68042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_4_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_5_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_6_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_7_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenFence_ghost_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class WoodenGate_foundation_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.68042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class WoodenGate_1_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.68042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenGate_2_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.68042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class WoodenGate_3_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.68042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class WoodenGate_4_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class WoodenGate_ghost_DZ: Woodenfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, -0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, -0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.6,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class Metalfence {
+		snapTo[] = {
+			"WoodFloorQuarter_DZ",
+			"WoodFloorHalf_DZ",
+			"WoodFloor_DZ",
+			"WoodStairs_DZ",
+			"WoodStairsSans_DZ",
+			"WoodSmallWallDoor_DZ",
+			"WoodSmallWall_DZ",
+			"WoodSmallWallWin_DZ",
+			"Land_DZE_WoodDoor",
+			"Land_DZE_WoodDoorLocked",
+			"WoodLargeWall_DZ",
+			"Land_DZE_LargeWoodDoor",
+			"WoodLargeWallWin_DZ",
+			"WoodLargeWallDoor_DZ",
+			"Land_DZE_GarageWoodDoor",
+			"Land_DZE_GarageWoodDoorLocked",
+			"Land_DZE_LargeWoodDoorLocked",
+			"WoodSmallWallThird_DZ",
+			"CinderWall_DZ",
+			"CinderWallDoorway_DZ",
+			"CinderWallDoorLocked_DZ",
+			"CinderWallDoor_DZ",
+			"CinderWallSmallDoorway_DZ",
+			"CinderWallDoorSmallLocked_DZ",
+			"CinderWallHalf_DZ",
+			"CinderWallDoorSmall_DZ",
+			"MetalFloor_DZ",
+			"WoodenFence_1_frame_DZ",	
+			"WoodenFence_1_foundation_DZ",		
+			"WoodenFence_quaterpanel_DZ",
+			"WoodenFence_halfpanel_DZ",		
+			"WoodenFence_thirdpanel_DZ",	
+			"WoodenFence_1_DZ",
+			"WoodenFence_2_DZ",
+			"WoodenFence_3_DZ",
+			"WoodenFence_4_DZ",
+			"WoodenFence_5_DZ",
+			"WoodenFence_6_DZ",
+			"WoodenFence_7_DZ",
+			"MetalFence_1_foundation_DZ",
+			"MetalFence_1_frame_DZ",	
+			"MetalFence_halfpanel_DZ",
+			"MetalFence_thirdpanel_DZ",
+			"MetalFence_1_DZ",
+			"MetalFence_2_DZ",
+			"MetalFence_3_DZ",
+			"MetalFence_4_DZ",
+			"MetalFence_5_DZ",
+			"MetalFence_6_DZ",
+			"MetalFence_7_DZ",
+			"WoodenGate_foundation_DZ",	
+			"WoodenGate_1_DZ",
+			"WoodenGate_2_DZ",
+			"WoodenGate_3_DZ",
+			"WoodenGate_4_DZ",
+			"MetalFence_ghost_DZ",
+			"WoodenFence_ghost_DZ",
+			"WoodenGate_ghost_DZ"	
+		};
+		radius = 10;
+	};
+	class MetalFence_1_foundation_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};		
+	class MetalFence_1_frame_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class MetalFence_halfpanel_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class MetalFence_thirdpanel_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.535, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};		
+	class MetalFence_1_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 1.78042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class MetalFence_2_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.68042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class MetalFence_3_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 2.68042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class MetalFence_4_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class MetalFence_5_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class MetalFence_6_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	class MetalFence_7_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};	
+	class MetalFence_ghost_DZ: Metalfence {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.575, 0, 0.95,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0, 0, 3.58042,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
 };

@@ -12,6 +12,7 @@ class Category_50 {
 	class ItemConcreteBlock {type = "trade_items";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class CinderBlocks {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class MortarBucket {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
+	class ItemRSJ {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class ItemFuelBarrelEmpty {type = "trade_items";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
 	class ItemFuelBarrel {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 };

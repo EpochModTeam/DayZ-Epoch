@@ -116,7 +116,7 @@ if ((count _upgrade) > 0) then {
 				_object setVectorDirAndUp _vector;
 				_object setPosATL _location;
 
-				if (_lockable == 3) then {
+				if (_lockable == 3 && {!(_classname in ["WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"])}) then {
 
 					_combination_1 = floor(random 10);
 					_combination_2 = floor(random 10);
@@ -164,7 +164,7 @@ if ((count _upgrade) > 0) then {
 			_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
 			format[localize "STR_EPOCH_ACTIONS_6",_missingQty, _textMissing] call dayz_rollingMessages;
 			systemchat localize "STR_CRAFTING_NEEDED_ITEMS";
-			
+
 			if (count _requirements > 0) then {
 				{
 					_text = getText(configFile >> "CfgMagazines" >> (_x select 0) >> "displayName");

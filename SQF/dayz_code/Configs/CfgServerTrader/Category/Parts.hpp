@@ -52,13 +52,12 @@ class Category_35 {
 	class equip_hose {type = "trade_items";buy[] = {6,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
 	class equip_lever {type = "trade_items";buy[] = {6,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
 	class equip_nails {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
-	class ItemScrews {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
+	class ItemScrews {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class equip_scrapelectronics {type = "trade_items";buy[] = {-4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class equip_floppywire {type = "trade_items";buy[] = {-4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};	
 	class equip_metal_sheet {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class equip_1inch_metal_pipe {type = "trade_items";buy[] = {6,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
-	class equip_2inch_metal_pipe {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};
-	class ItemRSJ {type = "trade_items";buy[] = {8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};
+	class equip_2inch_metal_pipe {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};	
 	class ItemWire {type = "trade_items";buy[] = {6,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
 	class ItemSandbag {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class ItemTankTrap {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};

@@ -7,6 +7,7 @@ Industrial[] =
 	//Items
 	{Loot_MAGAZINE,		2,		MortarBucket},
 	{Loot_MAGAZINE,		6,		CinderBlocks},
+	{Loot_MAGAZINE,		3,		ItemRSJ},
 	{Loot_MAGAZINE,		3,		ItemGenerator},
 	{Loot_MAGAZINE,		1,		fuel_pump_kit},
 	
