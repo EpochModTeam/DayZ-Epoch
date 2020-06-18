@@ -8,183 +8,128 @@ item3[] = {"true",8,218,-75.000000,250.000000,25.000000,300.000000,0.000000,"tru
 item4[] = {"",7,210,-204.000015,271.000000,-195.999985,279.000031,0.000000,""};
 item5[] = {"",7,210,-204.000015,-104.000000,-196.000000,-96.000000,0.000000,""};
 item6[] = {"initialized",4,218,-75.000000,-350.000000,25.000000,-300.000000,0.000000,"initialized"};
-item7[] = {"prepare",2,250,-75.000000,-275.000000,25.000000,-225.000000,0.000000,"prepare"};
-item8[] = {"update_objects",2,4346,-125.000000,75.000000,-25.000000,125.000000,0.000000,"update objects"};
-item9[] = {"Objects_need_upd",4,218,-125.000000,0.000000,-25.000000,50.000000,1.000000,"Objects" \n "need update"};
-item10[] = {"FenceObjects_need",4,218,-25.000000,0.000000,75.000000,50.000000,1.000000,"FenceObjects" \n "need update"};
-item11[] = {"update_objects_1",2,250,-25.000000,75.000000,75.000000,125.000000,0.000000,"update objects"};
+item7[] = {"prepare",2,4346,-75.000000,-275.000000,25.000000,-225.000000,0.000000,"prepare"};
+item8[] = {"update_objects",2,250,-75.220673,77.428261,24.779324,127.428261,0.000000,"update objects"};
+item9[] = {"Objects_need_upd",4,218,-75.220726,-1.214130,24.779320,48.785873,1.000000,"Objects" \n "need update"};
 link0[] = {0,6};
 link1[] = {1,2};
 link2[] = {2,9};
-link3[] = {2,10};
-link4[] = {3,4};
-link5[] = {4,5};
-link6[] = {5,2};
-link7[] = {6,7};
-link8[] = {7,1};
-link9[] = {8,3};
-link10[] = {9,8};
-link11[] = {10,11};
-link12[] = {11,3};
-globals[] = {0.000000,0,0,0,0,640,480,1,15,6316128,1,-520.235962,640.978394,444.212921,-448.684845,779,895,1};
-window[] = {2,-1,-1,-1,-1,803,75,1404,75,3,797};
+link3[] = {3,4};
+link4[] = {4,5};
+link5[] = {5,2};
+link6[] = {6,7};
+link7[] = {7,1};
+link8[] = {8,3};
+link9[] = {9,8};
+globals[] = {0.000000,0,0,0,0,640,480,1,15,6316128,1,-285.818726,406.559204,464.760406,-344.050812,779,910,1};
+window[] = {2,-1,-1,-1,-1,858,130,1459,130,3,797};
 *//*%FSM</HEAD>*/
 class FSM
 {
-        fsmName = "DayZ Server Vehicle Sync";
-        class States
+  fsmName = "DayZ Server Vehicle Sync";
+  class States
+  {
+    /*%FSM<STATE "init">*/
+    class init
+    {
+      name = "init";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "initialized">*/
+        class initialized
         {
-                /*%FSM<STATE "init">*/
-                class init
-                {
-                        name = "init";
-                        itemno = 0;
-                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
-                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-                        class Links
-                        {
-                                /*%FSM<LINK "initialized">*/
-                                class initialized
-                                {
-                                        itemno = 6;
-                                        priority = 0.000000;
-                                        to="prepare";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"!isnil ""bis_fnc_init"""/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                        };
-                };
-                /*%FSM</STATE>*/
-                /*%FSM<STATE "waiting">*/
-                class waiting
-                {
-                        name = "waiting";
-                        itemno = 2;
-                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
-                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-                        class Links
-                        {
-                                /*%FSM<LINK "FenceObjects_need">*/
-                                class FenceObjects_need
-                                {
-                                        itemno = 10;
-                                        priority = 1.000000;
-                                        to="update_objects_1";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"(( (count needUpdate_FenceObjects) > 0) && (diag_tickTime -_lastfenceUpdate> 5) && (!isNil ""sm_done""))"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"_lastfenceUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                                /*%FSM<LINK "Objects_need_upd">*/
-                                class Objects_need_upd
-                                {
-                                        itemno = 9;
-                                        priority = 1.000000;
-                                        to="update_objects";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"(( (count needUpdate_objects) > 0) && (diag_tickTime -_lastVehicleUpdate> 5) && (!isNil ""sm_done""))"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/"_lastNeedUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                        };
-                };
-                /*%FSM</STATE>*/
-                /*%FSM<STATE "prepare">*/
-                class prepare
-                {
-                        name = "prepare";
-                        itemno = 7;
-                        init = /*%FSM<STATEINIT""">*/"diag_log (""CLEANUP: INITIALIZING Vehicle SCRIPT"");" \n
-                         "" \n
-                         "" \n
-                         "_lastVehicleUpdate = diag_tickTime;" \n
-                         "_lastfenceUpdate = diag_tickTime;" \n
-                         "" \n
-                         "" \n
-                         ""/*%FSM</STATEINIT""">*/;
-                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-                        class Links
-                        {
-                                /*%FSM<LINK "true">*/
-                                class true
-                                {
-                                        itemno = 1;
-                                        priority = 0.000000;
-                                        to="waiting";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                        };
-                };
-                /*%FSM</STATE>*/
-                /*%FSM<STATE "update_objects">*/
-                class update_objects
-                {
-                        name = "update_objects";
-                        itemno = 8;
-                        init = /*%FSM<STATEINIT""">*/"if (object_debug) then {" \n
-                         "	diag_log format[""INFO: needUpdate_objects=%1"",needUpdate_objects];" \n
-                         "};" \n
-                         "" \n
-                         "{" \n
-                         "	needUpdate_objects = needUpdate_objects - [_x];" \n
-                         "	[_x,""damage"",true] call server_updateObject;" \n
-                         "} forEach needUpdate_objects;" \n
-                         ""/*%FSM</STATEINIT""">*/;
-                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-                        class Links
-                        {
-                                /*%FSM<LINK "true">*/
-                                class true
-                                {
-                                        itemno = 3;
-                                        priority = 0.000000;
-                                        to="waiting";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                        };
-                };
-                /*%FSM</STATE>*/
-                /*%FSM<STATE "update_objects_1">*/
-                class update_objects_1
-                {
-                        name = "update_objects_1";
-                        itemno = 11;
-                        init = /*%FSM<STATEINIT""">*/"diag_log format[""INFO: needUpdate_FenceObjects=%1"",needUpdate_FenceObjects];" \n
-                         "" \n
-                         "{" \n
-                         "	needUpdate_FenceObjects = needUpdate_FenceObjects - [_x];" \n
-                         "	[_x,""objWallDamage""] call server_updateObject;" \n
-                         "} forEach needUpdate_FenceObjects;" \n
-                         ""/*%FSM</STATEINIT""">*/;
-                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-                        class Links
-                        {
-                                /*%FSM<LINK "true">*/
-                                class true
-                                {
-                                        itemno = 3;
-                                        priority = 0.000000;
-                                        to="waiting";
-                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
-                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-                                };
-                                /*%FSM</LINK>*/
-                        };
-                };
-                /*%FSM</STATE>*/
+          priority = 0.000000;
+          to="prepare";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!isnil ""bis_fnc_init"""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
-        initState="init";
-        finalStates[] =
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "waiting">*/
+    class waiting
+    {
+      name = "waiting";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Objects_need_upd">*/
+        class Objects_need_upd
         {
+          priority = 1.000000;
+          to="update_objects";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(( (count needUpdate_objects) > 0) && (diag_tickTime -_lastVehicleUpdate> 5) && (!isNil ""sm_done""))"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"_lastNeedUpdate = diag_tickTime;"/*%FSM</ACTION""">*/;
         };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "prepare">*/
+    class prepare
+    {
+      name = "prepare";
+      init = /*%FSM<STATEINIT""">*/"diag_log (""CLEANUP: INITIALIZING Vehicle SCRIPT"");" \n
+       "" \n
+       "_lastVehicleUpdate = diag_tickTime;" \n
+       "" \n
+       "" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="waiting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "update_objects">*/
+    class update_objects
+    {
+      name = "update_objects";
+      init = /*%FSM<STATEINIT""">*/"if (object_debug) then {" \n
+       "	diag_log format[""INFO: needUpdate_objects=%1"",needUpdate_objects];" \n
+       "};" \n
+       "" \n
+       "{" \n
+       "	needUpdate_objects = needUpdate_objects - [_x];" \n
+       "	[_x,""damage"",true] call server_updateObject;" \n
+       "} forEach needUpdate_objects;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="waiting";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="init";
+  finalStates[] =
+  {
+  };
 };
 /*%FSM</COMPILE>*/

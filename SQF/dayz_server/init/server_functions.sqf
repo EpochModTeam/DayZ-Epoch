@@ -112,12 +112,6 @@ check_publishobject = {
 		_allowed = true;
 	};
 
-	//Buildings
-	if (_object isKindOf "DZ_buildables") then {
-		_saveObject = "DZ_buildables";
-		_allowed = true;
-	};
-
 	#ifdef OBJECT_DEBUG
 		diag_log format["DEBUG: Object: %1 published by %2 is allowed by %3",_object,_playername,_saveObject];
 	#endif

@@ -9,7 +9,7 @@ private ["_canPickLight","_text","_unlock","_lock","_totalKeys","_temp_keys","_t
 "_player_lockUnlock_crtl","_displayName","_hasIgnitors","_menu","_menu1","_allowTow","_liftHeli","_found","_posL","_posC","_height","_attached",
 "_combi","_findNearestGen","_humanity_logic","_low_high","_cancel","_buy","_buyV","_humanity","_traderMenu","_warn","_typeOfCursorTarget",
 "_isVehicle","_isBicycle","_isDestructable","_isGenerator","_ownerID","_hasBarrel","_hasFuel20","_hasFuel5","_hasEmptyFuelCan",
-"_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_upgradeItems","_isDisallowRefuel","_isDog",
+"_itemsPlayer","_hasToolbox","_hasbottleitem","_isAlive","_isPlant","_istypeTent","_isDisallowRefuel","_isDog",
 "_isModular","_isModularDoor","_isHouse","_isGateOperational","_isGateLockable","_isFence","_isLockableGate","_isUnlocked","_isOpen","_isClosed","_ownerArray","_ownerBuildLock",
 "_ownerPID","_speed","_dog","_vehicle","_inVehicle","_cursorTarget","_primaryWeapon","_currentWeapon","_magazinesPlayer","_onLadder","_canDo",
 "_nearLight","_vehicleOwnerID","_hasHotwireKit","_isPZombie","_dogHandle","_allowedDistance","_id","_upgrade","_weaponsPlayer","_hasCrowbar",
@@ -65,16 +65,6 @@ if (s_player_equip_carry < 0) then {
 		s_player_equip_carry = -1;
 	};
 };
-
-/*if (dayz_onBack != "" /*&& !dayz_onBackActive && !_inVehicle && !_onLadder && !r_player_unconscious) then {
-	if (s_player_equip_carry < 0) then {
-		_text = getText (configFile >> "CfgWeapons" >> dayz_onBack >> "displayName");
-		s_player_equip_carry = player addAction [format[localize "STR_ACTIONS_WEAPON", _text], "\z\addons\dayz_code\actions\player_switchWeapon_action.sqf", nil, 0.5, false, true];
-	};
-} else {
-	player removeAction s_player_equip_carry;
-	s_player_equip_carry = -1;
-};*/
 
 //fishing
 if ((_currentWeapon in Dayz_fishingItems) && {!dayz_fishingInprogress} && {!_inVehicle} && {!dayz_isSwimming}) then {
@@ -238,7 +228,6 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	_text = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
 	_isPlant = _typeOfCursorTarget in Dayz_plants;
 	_istypeTent = (_cursorTarget isKindOf "TentStorage_base") or (_cursorTarget isKindOf "IC_Tent");
-	_upgradeItems = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DesertTentStorage","DesertTentStorage0","DesertTentStorage1","DesertTentStorage2","DesertTentStorage3"];
 	_characterID = _cursorTarget getVariable ["CharacterID","0"];
 
 	if (DZE_permanentPlot) then {
@@ -252,7 +241,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	_isDisallowRefuel = _typeOfCursorTarget in ["M240Nest_DZ","MMT_Civ","MMT_USMC","Old_bike_TK_CIV_EP1","Old_bike_TK_INS_EP1"];
 	_isDog = (_cursorTarget isKindOf "Pastor" || _cursorTarget isKindOf "Fin");
 	_isModular = _cursorTarget isKindOf "ModularItems";
-	_isModularDoor = _typeOfCursorTarget in ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","CinderWallDoor_DZ","CinderWallDoorSmall_DZ"];
+	_isModularDoor = _typeOfCursorTarget in ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","CinderWallDoor_DZ","CinderWallDoorSmall_DZ","WoodenGate_foundation_DZ","WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"];
 	_player_deleteBuild = false;
 	_player_lockUnlock_crtl = false;
 
@@ -496,100 +485,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 			s_player_repair_crtl = -1;
 		};
 	};
-	/* //Vanilla base building currently not used in Epoch
-	// House locking and unlocking
-	_isHouse = _typeOfCursorTarget in ["SurvivorWorkshopAStage5", "SurvivorWorkshopBStage5", "SurvivorWorkshopCStage5"];
-	_isGateOperational = _typeOfCursorTarget in ["WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4","MetalGate_1","MetalGate_2","MetalGate_3","MetalGate_4"];
-	_isGateLockable = _typeOfCursorTarget in ["WoodenGate_1","WoodenGate_2","WoodenGate_3","MetalGate_1","MetalGate_2","MetalGate_3"];
-	_isFence = _typeOfCursorTarget in ["WoodenFence_1","WoodenFence_2","WoodenFence_3","WoodenFence_4","WoodenFence_5","WoodenFence_6","MetalFence_1","MetalFence_2","MetalFence_3","MetalFence_4","MetalFence_5","MetalFence_6","MetalFence_7"];
 
-	//Only the owners can lock the gates
-	_isLockableGate = _typeOfCursorTarget in ["WoodenGate_2","WoodenGate_3","WoodenGate_4","MetalGate_2","MetalGate_3","MetalGate_4"];
-	_isUnlocked = _cursorTarget getVariable ["isOpen","0"] == "1";
-
-	_isActionInProgress = _cursorTarget getVariable ["actionInProgress",false];
-
-	//Allow the gates to be opened when not locked by anyone
-	_isOpen = ((_cursorTarget animationPhase "DoorL") == 1) || ((_cursorTarget animationPhase "DoorR") == 1);
-	_isClosed = ((_cursorTarget animationPhase "DoorL") == 0) || ((_cursorTarget animationPhase "DoorR") == 0);
-
-	//[["ownerArray",["PID"]]]
-	_ownerArray = _cursorTarget getVariable ["ownerArray",["0"]];
-	_ownerBuildLock = _cursorTarget getVariable ["BuildLock",false];
-	_ownerPID = (_ownerArray select 0);
-
-	// open Gate
-	if (_isGateOperational && _isClosed && _isUnlocked) then {
-		if (s_player_openGate < 0) then {
-			s_player_openGate = player addAction [localize "STR_DN_OUT_O_GATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Open"], 1, true, true];
-		};
-	} else {
-		player removeAction s_player_openGate;
-		s_player_openGate = -1;
-	};
-	// Close Gate
-	if (_isGateOperational && _isOpen && _isUnlocked) then {
-		if (s_player_CloseGate < 0) then {
-			s_player_CloseGate = player addAction [localize "STR_DN_OUT_C_GATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Close"], 1, true, true];
-		};
-	} else {
-		player removeAction s_player_CloseGate;
-		s_player_CloseGate = -1;
-	};
-	// Set
-	if ((_isHouse or _isLockableGate) && (_ownerPID == _uid) && !_isUnlocked && _isClosed) then {
-		if (s_player_setCode < 0) then {
-			s_player_setCode = player addAction [localize "STR_BLD_ACTIONS_SETLOCKCODE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Set"], 1, true, true];
-		};
-	} else {
-		player removeAction s_player_setCode;
-		s_player_setCode = -1;
-	};
-	//Lock Build point
-	if ((_isFence or _isGateLockable) && (_ownerPID == _uid) && !_ownerBuildLock) then {
-		if (s_player_BuildLock < 0) then {
-			s_player_BuildLock = player addAction [localize "STR_BLD_ACTIONS_LOCKBUILD", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"BuildLock"], 1, true, true];
-		};
-	} else {
-		player removeAction s_player_BuildLock;
-		s_player_BuildLock = -1;
-	};
-	//UnLock Build point
-	if ((_isFence or _isGateLockable) && (_ownerPID == _uid) && _ownerBuildLock) then {
-		if (s_player_BuildUnLock < 0) then {
-			s_player_BuildUnLock = player addAction [localize "STR_BLD_ACTIONS_UNLOCKBUILD", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"BuildUnLock"], 1, true, true];
-		};
-	} else {
-		player removeAction s_player_BuildUnLock;
-		s_player_BuildUnLock = -1;
-	};
-	// Unlock Gate/House
-	if ((_isHouse or _isLockableGate) && !_isUnlocked && _isClosed) then {
-		if (s_player_unlockhouse < 0) then {
-			s_player_unlockhouse = player addAction [localize "STR_BLD_ACTIONS_UNLOCKGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Unlock"], 1, true, true];
-		};
-	} else {
-		player removeAction s_player_unlockhouse;
-		s_player_unlockhouse = -1;
-	};
-	// Lock Gate/House
-	if ((_isHouse or _isLockableGate) && _isUnlocked && _isClosed) then {
-		if (s_player_lockhouse < 0) then {
-			s_player_lockhouse = player addAction [localize "STR_BLD_ACTIONS_LOCKGATE", "\z\addons\dayz_code\actions\player_operate.sqf",[_cursorTarget,"Lock"], 1, true, true];
-		};
-	} else {
-		player removeAction s_player_lockhouse;
-		s_player_lockhouse = -1;
-	};
-	//Break In
-	if ((_isHouse or _isLockableGate) && (_ownerPID != _uid) && !_isUnlocked && !_isActionInProgress) then {
-		if (s_player_breakinhouse < 0) then {
-			s_player_breakinhouse = player addAction [localize "STR_BLD_ACTIONS_BREAKIN", "\z\addons\dayz_code\actions\player_breakin.sqf",_cursorTarget, 1, true, true];
-		};
-	} else {
-		player removeAction s_player_breakinhouse;
-		s_player_breakinhouse = -1;
-	};*/
 	if ((_typeOfCursorTarget == "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then {
 		_hasAccess = [player, _cursorTarget] call FNC_check_access;
 		_allowed = ((_hasAccess select 0) || {_hasAccess select 2} || {_hasAccess select 3} || {_hasAccess select 4});
@@ -806,7 +702,7 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	};
 
 	// inplace upgrade tool
-	if (((_cursorTarget isKindOf "ModularItems") || (_cursorTarget isKindOf "Land_DZE_WoodDoor_Base") || (_cursorTarget isKindOf "CinderWallDoor_DZ_Base") || (_cursorTarget isKindOf "DZ_storage_base") || (_typeOfCursorTarget in DZE_isNewStorage)) && !(_typeOfCursorTarget in DZE_DisableUpgrade)) then {
+	if (((_cursorTarget isKindOf "ModularItems") || (_cursorTarget isKindOf "Land_DZE_WoodDoor_Base") || (_cursorTarget isKindOf "CinderWallDoor_DZ_Base") || (_cursorTarget isKindOf "DZE_Housebase") || (_cursorTarget isKindOf "DZ_storage_base") || (_typeOfCursorTarget in DZE_isNewStorage)) && !(_typeOfCursorTarget in DZE_DisableUpgrade)) then {
 		if ((s_player_lastTarget select 0) != _cursorTarget) then {
 			if (s_player_upgrade_build > 0) then {
 				player removeAction s_player_upgrade_build;
@@ -1044,23 +940,6 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	s_player_destroytent = -1;
 	// player removeAction s_player_attach_bomb;
 	//  s_player_attach_bomb = -1;
-	/* //Unlock,Lock // Vanilla base building currently not used in Epoch
-	player removeAction s_player_setCode;
-	s_player_setCode = -1;
-	player removeAction s_player_lockhouse;
-	s_player_lockhouse = -1;
-	player removeAction s_player_unlockhouse;
-	s_player_unlockhouse = -1;
-	player removeAction s_player_openGate;
-	s_player_openGate = -1;
-	player removeAction s_player_CloseGate;
-	s_player_CloseGate = -1;
-	player removeAction s_player_breakinhouse;
-	s_player_breakinhouse = -1;
-	player removeAction s_player_BuildUnLock;
-	s_player_BuildUnLock = -1;
-	player removeAction s_player_BuildLock;
-	s_player_BuildLock = -1;*/
 	{player removeAction _x} count s_player_combi;s_player_combi = [];
 	s_player_lastTarget = [objNull,objNull,objNull,objNull,objNull];
 	{player removeAction _x} count s_player_parts;s_player_parts = [];

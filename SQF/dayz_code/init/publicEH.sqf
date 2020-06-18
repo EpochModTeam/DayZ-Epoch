@@ -1,7 +1,6 @@
 // Both client and server
 "PVDZ_hlt_Bleed"		addPublicVariableEventHandler {(_this select 1) spawn fnc_usec_damageBleed};
 "PVCDZ_veh_SH" 			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleDam}; // set damage to vehicle part
-//"PVCDZ_obj_Damage" 		addPublicVariableEventHandler {(_this select 1) call fnc_Obj_FenceHandleDam}; // set damage to object. //Vanilla fences not used in Epoch
 "PVDZ_veh_SF"			addPublicVariableEventHandler {(_this select 1) call fnc_veh_handleRepair}; // repair a part from a vehicle
 "PVCDZ_obj_HideBody"	addPublicVariableEventHandler {hideBody (_this select 1)};
 "PVCDZ_obj_GutBody"		addPublicVariableEventHandler {(_this select 1) spawn local_gutObject};
@@ -78,7 +77,6 @@ if (isServer) then {
 	"PVDZ_plr_SwitchMove"	addPublicVariableEventHandler {((_this select 1) select 0) switchMove ((_this select 1) select 1);}; //Needed to execute switchMove on server machine. rSwitchMove only executes on other clients
 	"PVDZ_obj_Publish"		addPublicVariableEventHandler {(_this select 1) call server_publishObj}; //Used by built items (Epoch and Vanilla)
 	"PVDZ_veh_Save" 		addPublicVariableEventHandler {(_this select 1) call server_updateObject};
-	//"PVDZ_fence_Update"		addPublicVariableEventHandler {(_this select 1) call server_addtoFenceUpdateArray};
 	"PVDZ_plr_Login1"		addPublicVariableEventHandler {_id = (_this select 1) call server_playerLogin};
 	"PVDZ_plr_Login2"		addPublicVariableEventHandler {(_this select 1) call server_playerSetup};
 	"PVDZ_plr_LoginRecord"	addPublicVariableEventHandler {_id = (_this select 1) spawn dayz_recordLogin};
@@ -101,20 +99,6 @@ if (isServer) then {
 	};
 	"PVDZE_PingSend" addPublicVariableEventHandler {PVDZE_PingReceived = 1; (owner (_this select 1)) publicVariableClient "PVDZE_PingReceived";};
 	
-	//Added as part of the maintenance system to allow the server to replace the damaged model with a normal model.
-	/*"PVDZ_object_replace" addPublicVariableEventHandler {
-		_object = _this select 1;
-		_vars = _object getVariable "MaintenanceVars";
-		_ownerArray = _object getVariable ["ownerArray",[]];
-		
-		if (!isNil "_vars" && _object isKindOf "DZ_buildables") then {
-			deleteVehicle _object;
-			_object = createVehicle [(_vars select 0), (_vars select 1), [], 0, if ((_vars select 0) in DayZ_nonCollide) then {"NONE"} else {"CAN_COLLIDE"}];
-			_object setVariable["Maintenance",false,true];
-			_object setVariable["ownerArray", _ownerArray, true];
-		};
-	};*/
-
 	"PVDZ_Server_Simulation" addPublicVariableEventHandler {
 		_agent = (_this select 1) select 0;
 		_control = (_this select 1) select 1;
@@ -180,49 +164,6 @@ if (isServer) then {
 		};
 		*/
 	};
-	
-	//"PVDZ_Server_processSetAccessCode" addPublicVariableEventHandler {(_this select 1) call pvs_processSetAccessCode};
-	
-	//"PVDZ_Server_processCode" addPublicVariableEventHandler {(_this select 1) call pvs_processAccessCode};
-	
-	/*
-	"PVDZ_Server_processSetAccessCode" addPublicVariableEventHandler {
-		private ["_unitSending","_object","_object","_code"];
-		_unitSending = (_this select 1) select 0;
-		_object = (_this select 1) select 1;
-		_code = (_this select 1) select 2;
-		
-		//diag_log format["%1, %2-%3",_unitSending,_object,_code];
-		
-		_ownerID = owner _unitSending;
-		_ownerArray = _object getVariable ["ownerArray",["0"]];
-		
-		if ((_ownerArray select 0) == (getPlayerUID _unitSending)) then {
-			if (_unitSending distance _object < 5) then {
-				_object setVariable ["dayz_padlockCombination",_code,false];
-				
-				PVCDZ_Client_processAccessCode = [_code];
-				_ownerID publicVariableClient "PVCDZ_Client_processAccessCode";
-				
-				[_object,"accessCode",_code] call server_updateObject;
-				
-				_object setVariable ["dayz_padlockHistory", [], true];
-				_object setVariable ["dayz_padlockLockStatus", true,true];
-				
-				diag_log format["INFO: %1, %5 has changed the access code for %2 with %3 at time %4",(name _unitSending),(typeof _object),_code,time,(getPlayerUID _unitSending)];
-			} else {
-				diag_log format["WARNING: %1, %5 is asking to change access code of %2 from a distance of %3 at time %4",(name _unitSending),(typeof _object),(_unit distance _object),time,(getPlayerUID _unitSending)];
-			};
-		} else {
-			diag_log format["WARNING: %1, %2 is trying to set a code for a gate he does not own.",(name _unitSending),(getPlayerUID _unitSending)];
-		};
-	};
-	*/
-	
-	/*"PVDZ_Server_buildLock" addPublicVariableEventHandler {
-		_object = (_this select 1) select 0;
-		[_object,"buildLock"] call server_updateObject;
-	};*/
 };
 
 //Client only
@@ -246,7 +187,7 @@ if (!isDedicated) then {
 	"PVDZ_drg_RaUW"   			addPublicVariableEventHandler {(_this select 1) execVM "\z\addons\dayz_code\medical\load\unload_wounded.sqf"};
 	"PVDZ_obj_Fire"				addPublicVariableEventHandler {(_this select 1) spawn BIS_Effects_Burn};
 	"PVCDZ_plr_Humanity"		addPublicVariableEventHandler {(_this select 1) spawn player_humanityChange};
-	"PVDZE_plr_FriendRQ"	addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {localize "str_epoch_player_2" call dayz_rollingMessages;};};
+	"PVDZE_plr_FriendRQ"		addPublicVariableEventHandler {if (player == ((_this select 1) select 0)) then {localize "str_epoch_player_2" call dayz_rollingMessages;};};
 	
 	//Medical
 	"PVCDZ_hlt_Morphine"		addPublicVariableEventHandler {(_this select 1) call player_medMorphine};
@@ -274,27 +215,6 @@ if (!isDedicated) then {
 		[_unit,_duration] call fnc_usec_damageUnconscious;
 		_unit setVariable ["NORRN_unconscious", true, true];
 	};
-	
-	/*"PVCDZ_Client_processCode" addPublicVariableEventHandler {
-		_object = (_this select 1) select 0;
-		_result = (_this select 1) select 1;
-		_codeGuess = (_this select 1) select 2;
-		
-		if (_result) then {
-			_object setVariable ["dayz_padlockLockStatus", false,true];
-			_object setVariable ["isOpen", "1", true];
-			_object setVariable ["dayz_padlockHistory", [], true];
-			format[localize "STR_BLD_UNLOCKED",typeOf _object] call dayz_rollingMessages;
-		} else {
-			format[localize "STR_BLD_WRONG_COMBO",typeOf _object] call dayz_rollingMessages;
-			_object setVariable ["dayz_padlockHistory", _codeGuess, true];
-		};
-	};*/
-	
-	/*"PVCDZ_Client_processAccessCode" addPublicVariableEventHandler {
-		_codeGuess = (_this select 1) select 0;
-		format[localize "STR_BLD_COMBO_SET",_codeGuess] call dayz_rollingMessages;
-	};*/
 	
 	if (toLower DZE_DeathMsgChat != "none" or DZE_DeathMsgRolling or DZE_DeathMsgDynamicText) then {
 		"PVDZE_deathMessage" addPublicVariableEventHandler {(_this select 1) call dze_deathMessage};

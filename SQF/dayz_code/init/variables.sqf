@@ -107,7 +107,6 @@ if (isServer) then {
 	dayz_traps = [];
 	dead_bodyCleanup = [];
 	needUpdate_objects = [];
-	needUpdate_FenceObjects = [];
 	dayz_choppedTrees = [];
 	dayz_ghostPlayers = [];
 	dayz_activePlayers = [];
@@ -117,9 +116,6 @@ if (isServer) then {
 	PlayerDeaths = [];
 	 
 	//Objects to remove when killed.
-	DayZ_nonCollide = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","StashSmall","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3", "StashMedium4", "DomeTentStorage", "DomeTentStorage0", "DomeTentStorage1", "DomeTentStorage2", "DomeTentStorage3", "DomeTentStorage4", "CamoNet_DZ", "DesertTentStorage", "DesertTentStorage0", "DesertTentStorage1", "DesertTentStorage2", "DomeTentStorage3", "DesertTentStorage4"];
-	DayZ_WoodenFence = ["WoodenFence_1","WoodenFence_2","WoodenFence_3","WoodenFence_4","WoodenFence_5","WoodenFence_6","WoodenFence_7"];
-	DayZ_WoodenGates = ["WoodenGate_1","WoodenGate_2","WoodenGate_3","WoodenGate_4"];
 	DayZ_removableObjects = ["Wire_cat1","Sandbag1_DZ","Hedgehog_DZ","CamoNet_DZ","Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare"];
 
 	// Epoch Additions
@@ -229,14 +225,6 @@ if (!isDedicated) then {
 		s_player_destroytent = -1;
 		//s_player_attach_bomb = -1;
 		//s_player_Drinkfromhands = -1;
-		/*s_player_lockhouse = -1; //Vanilla base building currently not used in Epoch
-		s_player_unlockhouse = -1;
-		s_player_openGate = -1;
-		s_player_CloseGate = -1;
-		s_player_breakinhouse = -1;
-		s_player_setCode = -1;
-		s_player_BuildUnLock = -1;
-		s_player_BuildLock = -1;*/
 		
 		// Epoch Additions
 		s_player_packvault = -1;
