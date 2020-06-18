@@ -30,7 +30,6 @@ class _unit_0
 		POSITION="[752.37463, 3141.2354, -5.6013789]";
 		GROUP="_group_0";
 		TYPE="BAF_Soldier_AA_MTP";
-		INIT="execVM ""testkit\init.sqf""";
 		SKILL="0.60000002";
 		PLAYER="true";
 		PLAYABLE="true";

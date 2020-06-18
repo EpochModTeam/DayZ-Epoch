@@ -15,7 +15,6 @@ if (true) then
 {
   _this = _group_0 createUnit ["BAF_Soldier_AA_MTP", [752.37463, 3141.2354, -5.6013789], [], 0, "CAN_COLLIDE"];
   _unit_0 = _this;
-  _this setVehicleInit "execVM ""testkit\init.sqf""";
   _this setUnitAbility 0.60000002;
   if (true) then {_group_0 selectLeader _this;};
   if (true) then {selectPlayer _this;};
