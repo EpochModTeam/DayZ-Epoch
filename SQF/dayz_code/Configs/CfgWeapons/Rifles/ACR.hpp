@@ -2018,7 +2018,7 @@ class ACR_DES_TWS_DZ : ACR_DZ_BASE
 		class RemoveTWS
 		{
 			text = $STR_ATTACHMENT_RMVE_TWS;
-			script = "; ['Attachment_Tws',_id,'ACR_SNOW_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Tws',_id,'ACR_DES_DZ'] call player_removeAttachment";
 		};
 	};
 };
@@ -2042,7 +2042,7 @@ class ACR_DES_TWS_GL_DZ : ACR_DES_GL_DZ
 		class RemoveTWS
 		{
 			text = $STR_ATTACHMENT_RMVE_TWS;
-			script = "; ['Attachment_Tws',_id,'ACR_SNOW_GL_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Tws',_id,'ACR_DES_GL_DZ'] call player_removeAttachment";
 		};
 		class RemoveGL
 		{
@@ -2072,7 +2072,7 @@ class ACR_DES_TWS_SD_DZ : ACR_SD_DZ_BASE
 		class RemoveTWS
 		{
 			text = $STR_ATTACHMENT_RMVE_TWS;
-			script = "; ['Attachment_Tws',_id,'ACR_SNOW_SD_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Tws',_id,'ACR_DES_SD_DZ'] call player_removeAttachment";
 		};
 		class RemoveSuppressor
 		{
@@ -2100,7 +2100,7 @@ class ACR_DES_TWS_GL_SD_DZ : ACR_DES_GL_SD_DZ
 		class RemoveTWS
 		{
 			text = $STR_ATTACHMENT_RMVE_TWS;
-			script = "; ['Attachment_Tws',_id,'ACR_SNOW_GL_SD_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Tws',_id,'ACR_DES_GL_SD_DZ'] call player_removeAttachment";
 		};
 		class RemoveSuppressor
 		{
