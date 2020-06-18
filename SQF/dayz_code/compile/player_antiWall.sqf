@@ -35,9 +35,12 @@ if ((count _intersectsWith) > 0) then {
 };
 
 if(_activated) then {
-	
+
 	// this method is said to be faster than switch, lets try it.
 	call {
+		PVDZ_sec_atp = format["WARNING: Play3r UID#%1 exited %2 close to a building at position %3 (%4)",(getPlayerUID player), (typeOf _vehicle), (getposATL player), (mapGridPosition (getposATL player))];
+		publicVariableServer "PVDZ_sec_atp";
+
 		if (DZE_AntiWallCounter == DZE_AntiWallLimit) exitWith {
 			localize "str_epoch_player_9" call dayz_rollingMessages;
 			[player,"crushed"] call player_death;
@@ -66,7 +69,7 @@ if(_activated) then {
 		localize "str_epoch_player_9" call dayz_rollingMessages;
 		[player,"crushed"] call player_death;
 	};
-	
+
 } else {
 	DZE_AntiWallCounter = 0;
 };
