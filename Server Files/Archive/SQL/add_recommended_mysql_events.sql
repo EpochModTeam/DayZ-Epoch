@@ -100,6 +100,15 @@ CREATE EVENT `setDamageOnAge` ON SCHEDULE EVERY 1 DAY COMMENT 'This sets damage 
 DELIMITER ;
 
 -- ----------------------------
+-- Event structure for updateStockDaily
+-- ----------------------------
+DROP EVENT IF EXISTS `updateStockDaily`;
+DELIMITER ;;
+CREATE EVENT `updateStockDaily` ON SCHEDULE EVERY 1 DAY COMMENT 'Updates out of stock vendors' DO UPDATE `Traders_DATA` SET qty=10 WHERE qty=0 AND afile<>'trade_any_vehicle' AND afile<>'trade_any_boat'
+;;
+DELIMITER ;
+
+-- ----------------------------
 -- Event structure for UnlockNonKeyVehicles
 -- ----------------------------
 DROP EVENT IF EXISTS `UnlockNonKeyVehicles`;
