@@ -25550,7 +25550,7 @@
 			<German>Vollbild-Nachtsichtgerät</German>
 		</Key>
 		<Key ID="STR_DEATHBOARD_KILLED_AT">
-			<English>Dieded at</English>
+			<English>Died at</English>
 			<German>Gestorben um</German>
 		</Key>			
 		<Key ID="STR_DEATHBOARD_KILLED_BY">
