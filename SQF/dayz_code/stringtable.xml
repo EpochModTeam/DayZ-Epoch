@@ -25548,6 +25548,54 @@
 		<Key ID="STR_EQUIP_NV_FULL_DESC">
 			<English>Full Screen Night Vision Goggles</English>
 			<German>Vollbild-Nachtsichtgerät</German>
+		</Key>
+		<Key ID="STR_DEATHBOARD_KILLED_AT">
+			<English>Dieded at</English>
+			<German>Gestorben um</German>
+		</Key>			
+		<Key ID="STR_DEATHBOARD_KILLED_BY">
+			<English>Was killed by</English>
+			<German>Wurde getötet von</German>
+		</Key>		
+		<Key ID="STR_DEATHBOARD_KILLED_WITH">
+			<English>With</English>
+			<German>Mit</German>
+		</Key>			
+		<Key ID="STR_DEATHBOARD_DISTANCE_OF">
+			<English>At a distance of</English>
+			<German>Aus einer Distanz von</German>
+		</Key>			
+		<Key ID="STR_DEATHBOARD_MESSAGE_1">
+			<English>Death is God's way of telling you not to be such a wise guy.</English>
+			<German>Der Tod ist Gottes Art dir zu sagen, dass du kein so weiser Kerl bist.</German>
+		</Key>			
+		<Key ID="STR_DEATHBOARD_MESSAGE_2">
+			<English>What happens if you get scared half to death, twice?</English>
+			<German>Was passiert, wenn du dich zweimal halb zu Tode erschreckst?</German>
+		</Key>
+		<Key ID="STR_DEATHBOARD_MESSAGE_3">
+			<English>Don't upset me.. I'm running out of places to hide the bodies.</English>
+			<German>Verärgere mich nicht.. ich habe kaum noch einen Ort an dem ich Leichen verstecken kann.</German>
+		</Key>
+		<Key ID="STR_DEATHBOARD_MESSAGE_4">
+			<English>Don't run, you'll just die tired.</English>
+			<German>Renn nicht davon, sonst wirst du müde sterben.</German>
+		</Key>
+		<Key ID="STR_DEATHBOARD_MESSAGE_5">
+			<English>Give me immortality or give me death.</English>
+			<German>Gib mir Unsterblichkeit oder bring mir den Tod!</German>
+		</Key>		
+		<Key ID="STR_DEATHBOARD_MESSAGE_6">
+			<English>I can't live with death; he's always leaving the toilet seat up.</English>
+			<German>Ich kann nicht mit dem Tod leben. Er lässt immer den Toilettensitz oben.</German>
+		</Key>	
+		<Key ID="STR_DEATHBOARD_MESSAGE_7">
+			<English>Why won't you die?!?!</English>
+			<German>Wieso willst du nicht sterben?</German>
+		</Key>			
+		<Key ID="STR_DEATHBOARD_MESSAGE_8">
+			<English>Guns don't kill people; death kills people. It's a proven medical fact.</English>
+			<German>Waffen töten keine Menschen. Der Tod tötet sie. Das ist ein bewiesener medizinischer Fakt.</German>
 		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->

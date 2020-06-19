@@ -28,16 +28,16 @@ EpochDeathBoardLoad = {
 
 EpochDeathBoardClick = {
 	disableSerialization;
-	private ["_i", "_record", "_output", "_record_stxt", "_name", "_image", "_h", "_m", "_format"];
+	private ["_i", "_record", "_output", "_record_stxt", "_name", "_image", "_h", "_m", "_format","_quotes","_boardRecord_Var"];
 	_quotes = [
-		"Death is God's way of telling you not to be such a wise guy.",
-		"What happens if you get scared half to death, twice?",
-		"Don't upset me.. I'm running out of places to hide the bodies.",
-		"Don't run, you'll just die tired.",
-		"Give me immortality or give me death.",
-		"I can't live with death; he's always leaving the toilet seat up.",
-		"Why won't you die?!?!",
-		"Guns don't kill people; death kills people. It's a proven medical fact."
+		"STR_DEATHBOARD_MESSAGE_1",
+		"STR_DEATHBOARD_MESSAGE_2",
+		"STR_DEATHBOARD_MESSAGE_3",
+		"STR_DEATHBOARD_MESSAGE_4",
+		"STR_DEATHBOARD_MESSAGE_5",
+		"STR_DEATHBOARD_MESSAGE_6",
+		"STR_DEATHBOARD_MESSAGE_7",
+		"STR_DEATHBOARD_MESSAGE_8"
 	];
 	_i = _this select 0;
 	if (_i < 0) exitWith {};
@@ -61,23 +61,23 @@ EpochDeathBoardClick = {
 		};
 		_h = ((_record select 4) select 0)+timezoneswitch;
 		_m = (_record select 4) select 1;
-		
-		_record_stxt = format["%1<t size='1' align='left'>Died at %2:%3</t><br /><br />", _record_stxt, (_h call _format), (_m call _format)];
-		
+
+		_record_stxt = format["%1<t size='1' align='left'>%4 %2:%3</t><br /><br />", _record_stxt, (_h call _format), (_m call _format),localize "STR_DEATHBOARD_KILLED_AT"];
+
 		if ((_record select 1) != 'unknown') then {
-			_record_stxt = format["%1<t size='1' align='left'>Was killed by %2</t><br /><br />", _record_stxt, (_record select 1)];
+			_record_stxt = format["%1<t size='1' align='left'>%3 %2</t><br /><br />", _record_stxt, (_record select 1),localize "STR_DEATHBOARD_KILLED_BY"];
 		};
-		
+
 		if ((_record select 2) != 'unknown') then {
 			_name = getText(configFile >> "cfgWeapons" >> (_record select 2) >> "displayName");
 			_image = getText(configFile >> "cfgWeapons" >> (_record select 2) >> "picture");
-			_record_stxt = format["%1<t size='1' align='left'>With a %2<br /><img size='3' image='%3' /></t><br /><br />", _record_stxt, _name, _image];
+			_record_stxt = format["%1<t size='1' align='left'>%4 %2<br /><img size='3' image='%3' /></t><br /><br />", _record_stxt, _name, _image,localize "STR_DEATHBOARD_KILLED_WITH"];
 		};
-		
+
 		if (format["%1", (_record select 3)] != 'unknown') then {
-			_record_stxt = format["%1<t size='1' align='left'>At a distance of %2m</t><br /><br />", _record_stxt, (_record select 3)];
+			_record_stxt = format["%1<t size='1' align='left'>%3 %2m</t><br /><br />", _record_stxt, (_record select 3),localize "STR_DEATHBOARD_DISTANCE_OF"];
 		};
-		_record_stxt = format["%1<t font='Bitstream'>%2</t>", _record_stxt, (_quotes call BIS_fnc_selectRandom)];
+		_record_stxt = format["%1<t font='Bitstream'>%2</t>", _record_stxt,localize (_quotes call BIS_fnc_selectRandom)];
 		call compile format["epoch_death_board_record_%1 = ""%2"";" ,_i , _record_stxt];
 	};
 	if (!isNil "_record_stxt") then {
