@@ -122,7 +122,3 @@ class IR_Strobe_Target
 {
 	weight = 0.4;
 };
-class equip_garlic_bulb 
-{
-	weight = 0.5; 
-};

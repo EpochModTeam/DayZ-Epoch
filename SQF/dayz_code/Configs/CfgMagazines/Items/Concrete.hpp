@@ -121,3 +121,13 @@ class equip_brick : CA_Magazine
 	displayName = $STR_ITEM_NAME_equip_brick;
 	descriptionShort = $STR_ITEM_DESC_equip_brick;
 };
+
+class CementBag: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_CEMENT_BAG;
+	descriptionShort = $STR_ITEM_DESC_CEMENT_BAG;
+	picture = "\dayz_epoch_c\icons\equipment\ItemCementBag.paa";
+    model = "\z\addons\dayz_epoch_w\items\cement_bag.p3d";
+};

@@ -22,3 +22,8 @@ class equip_brick
 {
 	weight = 0.5;
 };
+
+class CementBag
+{
+	weight = 40;
+};

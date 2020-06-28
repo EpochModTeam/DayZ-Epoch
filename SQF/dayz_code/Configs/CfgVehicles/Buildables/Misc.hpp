@@ -396,7 +396,7 @@ class Land_HBarrier5_DZ:BuiltItems {
 	constructioncount = 8;
 	removeoutput[] = {{"ItemSandbagExLarge5x",1}};
 	nounderground = 0;
-	};
+};
 
 class SandNest_DZ : BuiltItems {
 	scope = 2;
@@ -482,3 +482,18 @@ class WoodGate_DZ: BuiltItems
 	};
 };
 
+/*
+class CookTripod_DZ: BuiltItems
+{
+	scope = 2;
+	destrType = "DestructBuilding";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 100;
+	model = "\z\addons\dayz_epoch_w\items\cook_tripod.p3d";
+	vehicleClass = "DayZ Epoch Buildables";
+	nounderground = 0;
+	requireplot = 0;
+	removeoutput[] = {{"cook_tripod_kit",1}};
+};
+*/

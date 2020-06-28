@@ -306,6 +306,10 @@ class ItemNVGBroken_DZE
 {
 	weight = 1;
 };
+class ItemNVGFullBroken_DZE
+{
+	weight = 1;
+};
 class ItemMap_Debug
 {
 	weight = 1;
@@ -465,4 +469,60 @@ class Map_Survivor_DZE
 class ItemKeyKitBroken 
 { 
 	weight = 1; 
+};
+class Cuffs_DZE 
+{ 
+	weight = 0.5; 
+};
+class CuffsBroken_DZE 
+{ 
+	weight = 0.5; 
+};
+class Hammer_DZE 
+{ 
+	weight = 1.8; 
+};
+class HammerBroken_DZE 
+{ 
+	weight = 1.8; 
+};
+class Saw_DZE 
+{ 
+	weight = 0.4; 
+};
+class SawBroken_DZE 
+{ 
+	weight = 0.4; 
+};
+class Smartphone_DZE 
+{ 
+	weight = 0.6; 
+};
+class SmartphoneBroken_DZE 
+{ 
+	weight = 0.6; 
+};
+class Scissors_DZE 
+{ 
+	weight = 0.3; 
+};
+class ScissorsBroken_DZE 
+{ 
+	weight = 0.3; 
+};
+class Screwdriver_DZE 
+{ 
+	weight = 0.8;
+};
+class ScrewdriverBroken_DZE 
+{ 
+	weight = 0.8; 
+};
+class Wrench_DZE 
+{ 
+	weight = 1.7; 
+};
+class WrenchBroken_DZE 
+{ 
+	weight = 1.7; 
 };

@@ -334,6 +334,13 @@ class CfgWeapons
 	#include "Tools\APSI.hpp"
 	#include "Tools\Masks.hpp"
 	#include "Tools\Solder.hpp"
+	#include "Tools\Cuffs.hpp"
+	#include "Tools\Hammer.hpp"
+	#include "Tools\Saw.hpp"
+	#include "Tools\Smartphone.hpp"
+	#include "Tools\Scissors.hpp"
+	#include "Tools\ScrewExtractor.hpp"
+	#include "Tools\Wrench.hpp"
 	
 	#include "Item\ItemKeys.hpp"
 	#include "Item\Documents.hpp"

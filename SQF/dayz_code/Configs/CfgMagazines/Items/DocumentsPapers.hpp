@@ -304,3 +304,204 @@ class ItemARM: CA_Magazine
 		};
 	};
 };
+
+class Blueprint_01: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_01;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_01;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_02: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_02;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_02;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_03: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_03;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_03;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_04: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_04;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_04;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_05: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_05;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_05;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_06: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_06;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_06;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_07: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_07;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_07;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_08: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_08;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_08;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_09: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_09;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_09;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_10: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_10;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_10;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_11: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_11;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_11;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_12: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_12;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_12;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_13: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_13;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_13;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_14: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_14;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_14;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_15: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_15;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_15;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_16: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_16;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_16;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_17: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_17;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_17;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_18: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_18;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_18;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_19: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_19;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_19;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+class Blueprint_20: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_BLUEPRINT_20;
+	descriptionShort = $STR_ITEM_DESC_BLUEPRINT_20;
+	picture = "\dayz_epoch_c\icons\equipment\ItemBlueprint.paa";
+    model = "\z\addons\dayz_epoch_w\items\bluprint_01.p3d";
+};
+
+class PileBooks: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_PILEOFBOOKS;
+	descriptionShort = $STR_ITEM_DESC_PILEOFBOOKS;
+	picture = "\dayz_epoch_c\icons\equipment\ItemPileBooks.paa";
+    model = "\z\addons\dayz_epoch_w\items\books.p3d";
+};
+
+class PileMedBooks: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_PILEOFMEDBOOKS;
+	descriptionShort = $STR_ITEM_DESC_PILEOFMEDBOOKS;
+	picture = "\dayz_epoch_c\icons\equipment\ItemPileMedBooks.paa";
+    model = "\z\addons\dayz_epoch_w\items\books_med.p3d";
+};

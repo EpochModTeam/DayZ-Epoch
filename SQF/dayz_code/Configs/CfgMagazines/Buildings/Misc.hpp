@@ -460,3 +460,28 @@ class ItemScaffoldingKit: CA_Magazine
 		};
 	};
 };
+
+/*
+
+class cook_tripod_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_COOKINGTRIPOD;
+	descriptionShort = $STR_ITEM_DESC_COOKINGTRIPOD;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "CookTripod_DZ";
+		};
+	};    
+};
+
+*/

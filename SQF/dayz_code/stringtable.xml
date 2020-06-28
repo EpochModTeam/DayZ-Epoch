@@ -25290,7 +25290,117 @@
 		<Key ID="STR_EQUIP_BROKEN_BINOCULARVECTOR_DESC">
 			<English>Broken Rangefinder that must be repaired.</English>
 			<German>Ein kaputter Entfernungsmesser, welcher repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_CUFFS">
+			<English>Hand Cuffs</English>
+			<German>Handschellen</German>
+		</Key>	
+		<Key ID="STR_EQUIP_CUFFS_BROKEN">
+			<English>Broken Hand Cuffs</English>
+			<German>Kaputte Handschellen</German>
 		</Key>		
+		<Key ID="STR_EQUIP_CUFFS_DESC">
+			<English>Hand Cuffs used by the police.</English>
+			<German>Handschellen, welche von der Polizei genutzt werden.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_CUFFS_BROKEN_DESC">
+			<English>Broken Hand Cuffs that must be repaired.</English>
+			<German>Kaputte Handschellen, welche repariert werden müssen.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_HAMMER">
+			<English>Hammer</English>
+		</Key>	
+		<Key ID="STR_EQUIP_HAMMER_BROKEN">
+			<English>Broken Hammer</English>
+			<German>Kaputter Hammer</German>
+		</Key>		
+		<Key ID="STR_EQUIP_HAMMER_DESC">
+			<English>A tool to drive nails into wood and metal.</English>
+			<German>Ein Werkzeug zum Einschlagen von Nägeln in Holz oder Metall.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_HAMMER_BROKEN_DESC">
+			<English>Broken Hammer that must be repaired.</English>
+			<German>Ein kaputter Hammer, welcher repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_SAW">
+			<English>Handsaw</English>
+			<German>Handsäge</German>
+		</Key>	
+		<Key ID="STR_EQUIP_SAW_BROKEN">
+			<English>Broken Handsaw</English>
+			<German>Kaputte Handsäge</German>
+		</Key>		
+		<Key ID="STR_EQUIP_SAW_DESC">
+			<English>A tool to tailor wood.</English>
+			<German>Ein Werkzeug, um Holz zu zusägen.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_SAW_BROKEN_DESC">
+			<English>Broken Handsaw that must be repaired.</English>
+			<German>Eine kaputte Handsäge, welche repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_SMARTPHONE">
+			<English>Smartphone</English>
+		</Key>	
+		<Key ID="STR_EQUIP_SMARTPHONE_BROKEN">
+			<English>Broken Smartphone</English>
+			<German>Kaputtes Smartphone</German>
+		</Key>		
+		<Key ID="STR_EQUIP_SMARTPHONE_DESC">
+			<English>A new kind of mobile phone.</English>
+			<German>Eine neue Art von Handy.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_SMARTPHONE_BROKEN_DESC">
+			<English>Broken Smartphone that must be repaired.</English>
+			<German>Ein kaputtes Smartphone, welches repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_SCISSORS">
+			<English>Scissors</English>
+			<German>Schere</German>
+		</Key>	
+		<Key ID="STR_EQUIP_SCISSORS_BROKEN">
+			<English>Broken Scissors</English>
+			<German>Kaputte Schere</German>
+		</Key>		
+		<Key ID="STR_EQUIP_SCISSORS_DESC">
+			<English>A tool to cut various thin materials.</English>
+			<German>Ein Werzeug, um verschiedenste dünne Materialien zu zuschneiden.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_SCISSORS_BROKEN_DESC">
+			<English>Broken Scissors that must be repaired.</English>
+			<German>Eine kaputte Schere, welche repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_SCREWEXTRACTOR">
+			<English>Screwdriver Set</English>
+			<German>Schraubendreher-Set</German>
+		</Key>	
+		<Key ID="STR_EQUIP_SCREWEXTRACTOR_BROKEN">
+			<English>Broken Screwdriver Set</English>
+			<German>Kaputtes Schraubendreher-Set</German>
+		</Key>		
+		<Key ID="STR_EQUIP_SCREWEXTRACTOR_DESC">
+			<English>A tool used for screwing and unscrewing screws.</English>
+			<German>Ein Werzeug, um Schrauben ein- und herauszuschrauben.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_SCREWEXTRACTOR_BROKEN_DESC">
+			<English>Broken Screwdriver Set that must be repaired.</English>
+			<German>Ein kaputtes Schraubendreher-Set, welches repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EQUIP_WRENCH">
+			<English>Wrench</English>
+			<German>Schraubenschlüssel</German>
+		</Key>	
+		<Key ID="STR_EQUIP_WRENCH_BROKEN">
+			<English>Broken Wrench</English>
+			<German>Kaputter Schraubenschlüssel</German>
+		</Key>		
+		<Key ID="STR_EQUIP_WRENCH_DESC">
+			<English>A tool used for screwing and unscrewing screw-nuts.</English>
+			<German>Ein Werzeug zum Anziehen oder Lösen von Muttern.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_WRENCH_BROKEN_DESC">
+			<English>Broken Wrench that must be repaired.</English>
+			<German>Ein kaputter Schraubenschlüssel, welcher repariert werden muss.</German>
+		</Key>			
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE">
 			<English>Disabled:</English>
 			<German>Deaktiviert:</German>
@@ -25541,6 +25651,18 @@
 			<English>Fix GPS</English>
 			<German>GPS reparieren</German>
 		</Key>	
+		<Key ID="STR_ACTIONS_FIX_HAMMER">
+			<English>Fix Hammer</English>
+			<German>Hammer reparieren</German>
+		</Key>	
+		<Key ID="STR_ACTIONS_FIX_SAW">
+			<English>Fix Handsaw</English>
+			<German>Handsäge reparieren</German>
+		</Key>	
+		<Key ID="STR_ACTIONS_FIX_SMARTPHONE">
+			<English>Fix Smartphone</English>
+			<German>Smartphone reparieren</German>
+		</Key>			
 		<Key ID="STR_EQUIP_NV_FULL">
 			<English>NVG (Full Screen)</English>
 			<German>NVG (Vollbild)</German>
@@ -25549,6 +25671,14 @@
 			<English>Full Screen Night Vision Goggles</English>
 			<German>Vollbild-Nachtsichtgerät</German>
 		</Key>
+		<Key ID="STR_EQUIP_BROKEN_NV_FULL">
+			<English>Broken NVG (Full Screen)</English>
+			<German>Kaputtes NVG (Vollbild)</German>
+		</Key>	
+		<Key ID="STR_EQUIP_BROKEN_NV_FULL_DESC">
+			<English>Damaged full screen night vision goggles that probably can be repaired.</English>
+			<German>Ein beschädigtes Vollbild-Nachtsichtgerät, das möglicherweise repariert werden kann.</German>
+		</Key>		
 		<Key ID="STR_DEATHBOARD_KILLED_AT">
 			<English>Died at</English>
 			<German>Gestorben um</German>
@@ -25596,7 +25726,199 @@
 		<Key ID="STR_DEATHBOARD_MESSAGE_8">
 			<English>Guns don't kill people; death kills people. It's a proven medical fact.</English>
 			<German>Waffen töten keine Menschen. Der Tod tötet sie. Das ist ein bewiesener medizinischer Fakt.</German>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_CEMENT_BAG">
+			<English>Cement Bag</English>
+			<German>Zementsack</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_CEMENT_BAG">
+			<English>A big bag filled with cement.</English>
+			<German>Ein großer Sack gefüllt mit Zement.</German>
+		</Key>			
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_01">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_01">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_02">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_02">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
 		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_03">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_03">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_04">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_04">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_05">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_05">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_06">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_06">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_07">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_07">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>			
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_08">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_08">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_09">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_09">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_10">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_10">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_11">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_11">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_12">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_12">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_13">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_13">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_14">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_14">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_15">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_15">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_16">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_16">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_17">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_17">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_18">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_18">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_19">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_19">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>		
+		<Key ID="STR_ITEM_NAME_BLUEPRINT_20">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_BLUEPRINT_20">
+			<English>Blueprint</English>
+			<German>Bauplan</German>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_PILEOFBOOKS">
+			<English>Pile of books</English>
+			<German>Stapel Bücher</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_PILEOFBOOKS">
+			<English>A pile with some different books.</English>
+			<German>Ein Stapel mit unterschiedlichen Büchern.</German>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_PILEOFMEDBOOKS">
+			<English>Pile of medical books</English>
+			<German>Stapel Medizinbücher</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_PILEOFMEDBOOKS">
+			<English>A pile with some different medical books.</English>
+			<German>Ein Stapel mit den verschiedensten Medizinbüchern.</German>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_COOKINGTRIPOD">
+			<English>Cooking tripod</English>
+			<German>Schwenkgrill</German>
+		</Key>	
+		<Key ID="STR_ITEM_DESC_COOKINGTRIPOD">
+			<English>Cooking tripod</English>
+			<German>Schwenkgrill</German>
+		</Key>	
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">

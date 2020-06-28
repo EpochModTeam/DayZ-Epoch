@@ -146,3 +146,7 @@ class FoodCandyMintception
 {
 	weight = 0.2;
 };
+class equip_garlic_bulb 
+{
+	weight = 0.1; 
+};
