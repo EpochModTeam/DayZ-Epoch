@@ -16260,19 +16260,19 @@
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 38&lt;br/&gt;Used in: CRV7 Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 38&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
 		</Key>	
-		<Key ID="STR_DZ_MAG_6RND_CRV7_HEPD_NAME">
-			<English>6Rnd. CRV7 HEPD Hydra</English>
+		<Key ID="STR_DZ_MAG_19RND_CRV7_HEPD_NAME">
+			<English>19Rnd. CRV7 HEPD Hydra</English>
 		</Key> 	  
-		<Key ID="STR_DZ_MAG_6RND_CRV7_HEPD_DESC">
-			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: CRV7 Hydra</English>
-			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+		<Key ID="STR_DZ_MAG_19RND_CRV7_HEPD_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 19&lt;br/&gt;Used in: CRV7 Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 19&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
 		</Key>	
-		<Key ID="STR_DZ_MAG_6RND_CRV7_FAT_NAME">
-			<English>6Rnd. CRV7 FAT Hydra</English>
+		<Key ID="STR_DZ_MAG_19RND_CRV7_FAT_NAME">
+			<English>19Rnd. CRV7 FAT Hydra</English>
 		</Key> 	  
-		<Key ID="STR_DZ_MAG_6RND_CRV7_FAT_DESC">
-			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: CRV7 Hydra</English>
-			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+		<Key ID="STR_DZ_MAG_19RND_CRV7_FAT_DESC">
+			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 19&lt;br/&gt;Used in: CRV7 Hydra</English>
+			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 19&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
 		</Key>			
 		<Key ID="STR_DZ_MAG_40RND_80mm_NAME">
 			<English>40Rnd. 80mm HE</English>

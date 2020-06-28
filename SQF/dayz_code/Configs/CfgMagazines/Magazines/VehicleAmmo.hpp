@@ -49,7 +49,6 @@ class 1200Rnd_20mm_M621: 1200Rnd_762x51_M240
 	descriptionShort = $STR_DZ_MAG_1200RND_M621_DESC;	
 	ammo = "B_20mm_AP";
 	displayNameShort = "HE";
-	count = 400;
 	nameSound = "cannon";
 	tracersEvery = 2;	
 };
@@ -856,6 +855,7 @@ class 8Rnd_AT10_BMP3: Vehicle_ammo_base
 	scope = 2;
 	displayName = $STR_DZ_MAG_8RND_AT5_BMP3_NAME;
 	descriptionShort = $STR_DZ_MAG_8RND_AT5_BMP3_DESC;	
+	count = 8;
 	ammo = "M_AT10_AT";
 	initSpeed = 450;
 	maxLeadSpeed = 100;
@@ -1105,15 +1105,15 @@ class 6Rnd_CRV7_HEPD: 38Rnd_FFAR
 {
 	count = 19;
 	ammo = "M_CRV7_HEPD";
-	displayName = $STR_DZ_MAG_6RND_CRV7_HEPD_NAME;
-	descriptionShort = $STR_DZ_MAG_6RND_CRV7_HEPD_DESC;
+	displayName = $STR_DZ_MAG_19RND_CRV7_HEPD_NAME;
+	descriptionShort = $STR_DZ_MAG_19RND_CRV7_HEPD_DESC;
 };
 class 6Rnd_CRV7_FAT: 38Rnd_FFAR
 {
 	count = 19;
 	ammo = "M_CRV7_FAT";
-	displayName = $STR_DZ_MAG_6RND_CRV7_FAT_NAME;
-	descriptionShort = $STR_DZ_MAG_6RND_CRV7_FAT_DESC;
+	displayName = $STR_DZ_MAG_19RND_CRV7_FAT_NAME;
+	descriptionShort = $STR_DZ_MAG_19RND_CRV7_FAT_DESC;
 };
 class 40Rnd_80mm: Vehicle_ammo_base
 {
