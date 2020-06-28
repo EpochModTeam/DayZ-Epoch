@@ -548,6 +548,7 @@ class HK417_Sniper_SD_DZ: HK417_SD_DZ
 			discreteDistanceInitIndex = 2;
 		};
 	};
+	class ItemActions {};
 };
 
 #undef HK417_M203

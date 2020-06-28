@@ -46,7 +46,7 @@ class MK22_SD_DZ: M9SD
 		class RemoveSuppressor
 		{
 			text = $STR_ATTACHMENT_RMVE_Silencer;
-			script = "; ['Attachment_Sup9',_id,'MK22_SD_DZ'] call player_removeAttachment";
+			script = "; ['Attachment_Sup9',_id,'MK22_DZ'] call player_removeAttachment";
 		};
 	};	
 };

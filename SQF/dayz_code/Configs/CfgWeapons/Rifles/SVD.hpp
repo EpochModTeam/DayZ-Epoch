@@ -77,6 +77,8 @@ class SVD_DZ : SVD_PSO1_DZ
 		Attachment_PSO1 = "SVD_PSO1_DZ";
 		Attachment_NSPU = "SVD_NSPU_DZ";
 	};
+	
+	class ItemActions {};
 };
 
 class SVD_Gh_DZ : SVD_DZ
@@ -167,4 +169,6 @@ class SVD_Gold_DZ : SVD_PSO1_DZ {
 	displayname = $STR_DZ_WPN_SVD_GOLD_NAME;
 	model = "\RH_aks\RH_svdg.p3d";
 	picture = "\RH_aks\inv\svdg.paa";
+	
+	class ItemActions {};
 };

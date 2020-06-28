@@ -81,7 +81,7 @@ class MK14_DZ: M14_EP1
 
 class MK14_CCO_DZ: MK14_DZ
 {
-	displayName = $STR_DZ_WPN_MK14_CCO_SD_NAME;
+	displayName = $STR_DZ_WPN_MK14_CCO_NAME;
 	model = "\RH_mgswp\RH_mk14aim.p3d";
 	picture = "\RH_mgswp\inv\mk14aim.paa";
 	handAnim[] = {"OFP2_ManSkeleton","\RH_mgswp\anim\RH_M4cs.rtm"};
@@ -266,7 +266,7 @@ class MK14_Holo_SD_DZ: MK14_SD_DZ
 
 class MK14_ACOG_SD_DZ: MK14_SD_DZ
 {
-	displayName = $STR_DZ_WPN_MK14_HOLO_SD_NAME;
+	displayName = $STR_DZ_WPN_MK14_ACOG_SD_NAME;
 	descriptionShort = "Suppressed assault rifle<br/>Caliber: 7.62x51mm NATO<br/>Scope power: 4X<br/>Vertical grip";
 	model = "\RH_mgswp\RH_mk14sdacog.p3d";
 	picture = "\RH_mgswp\inv\mk14sdacog.paa";
@@ -309,6 +309,7 @@ class MK14_Sniper_SD_DZ: MK14_SD_DZ
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800};
 	discreteDistanceInitIndex = 2;
+	class ItemActions {};
 };
 
 #undef MK14_ACOG

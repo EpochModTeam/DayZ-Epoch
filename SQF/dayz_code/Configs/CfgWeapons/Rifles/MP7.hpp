@@ -144,7 +144,7 @@ class MP7_FL_DZ: MP7_DZ
 	class Attachments
 	{
 		Attachment_CCO = "MP7_CCO_FL_DZ";
-		Attachment_Holo = "MP7_Holo_DZ";
+		Attachment_Holo = "MP7_Holo_FL_DZ";
 		Attachment_ACOG = "MP7_ACOG_FL_DZ";
 		Attachment_Sup9 = "MP7_SD_FL_DZ";
 	};
@@ -170,7 +170,7 @@ class MP7_MFL_DZ: MP7_DZ
 	class Attachments
 	{
 		Attachment_CCO = "MP7_CCO_MFL_DZ";
-		Attachment_Holo = "MP7_Holo_DZ";
+		Attachment_Holo = "MP7_Holo_MFL_DZ";
 		Attachment_ACOG = "MP7_ACOG_MFL_DZ";
 		Attachment_Sup9 = "MP7_SD_MFL_DZ";
 	};
@@ -466,6 +466,15 @@ class MP7_SD_DZ: MP7_base
 	fireLightIntensity = 0.0;
 	magazines[] = {"40Rnd_46x30_sd_mp7"};
 	descriptionShort = $STR_DZ_WPN_MP7_SD_DESC;
+	
+	class Attachments
+	{
+		Attachment_CCO = "MP7_CCO_SD_DZ";
+		Attachment_Holo = "MP7_Holo_SD_DZ";
+		Attachment_ACOG = "MP7_ACOG_SD_DZ";
+		Attachment_FL_Pist = "MP7_SD_FL_DZ";
+		Attachment_MFL_Pist = "MP7_SD_MFL_DZ";
+	};
 	
 	class ItemActions
 	{

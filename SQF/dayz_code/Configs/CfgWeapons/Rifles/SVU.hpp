@@ -6,4 +6,5 @@ class SVU_PSO1_DZ: SVD_PSO1_DZ {
 	begin1[] = {"\RH_aks\Sound\SVU.wss",1.778279,1,1200};
 	soundBegin[] = {"begin1",1};
 	magazines[] = {"10Rnd_762x54_SVD"};
+	class ItemActions {};
 };
