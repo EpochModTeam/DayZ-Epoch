@@ -42,18 +42,6 @@ class ItemPumpkinPlant: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
 	type = 256;
-	
-	class ItemActions 
-	{
-		class Build 
-		{
-			text = $STR_CRAFT_PLANT_PUMPKIN_PLANT;
-			buildText = $STR_CRAFT_NAME_PUMPKIN_PLANT;
-			script = "spawn player_build;";
-			require[] = {"ItemEtool"};
-			create = "Grave";			// TODO: model for Pumpkin Stage 1
-		};
-	};
 };
 
 class ItemHempSeed: CA_Magazine 
@@ -89,18 +77,6 @@ class ItemHempPlant: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
 	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";
 	type = 256;
-	
-	class ItemActions 
-	{
-		class Build 
-		{
-			text = $STR_CRAFT_PLANT_HEMP_PLANT;
-			buildText = $STR_CRAFT_NAME_HEMP_PLANT;
-			script = "spawn player_build;";
-			require[] = {"ItemEtool"};
-			create = "MAP_c_fern";			// TODO: model for Hemp Stage 1
-		};
-	};
 };
 
 class ItemKiloHemp : CA_Magazine
