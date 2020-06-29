@@ -17693,7 +17693,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_72">
 			<English>Harvest is already in progress.</English>
-			<German>Holzhacken bereits im Gange.</German>
+			<German>Ernten bereits im Gange.</German>
 			<Russian>Уже собирается.</Russian>
 			<Dutch>Je bent al aan het oogsten.</Dutch>
 			<French>La récolte est déjà en cours.</French>
@@ -17701,7 +17701,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_73">
 			<English>Canceled Harvesting.</English>
-			<German>Holzhacken abgebrochen.</German>
+			<German>Ernten abgebrochen.</German>
 			<Russian>Сбор отменён.</Russian>
 			<Dutch>Gestopt met oogsten.</Dutch>
 			<French>Récolte annulée.</French>
@@ -17709,7 +17709,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_74">
 			<English>You must be close to a plant to harvest.</English>
-			<German>Du musst in der Nähe eines Baumes sein, um Holz hacken zu können.</German>
+			<German>Du musst in der Nähe eines Baumes oder einer Pflanze sein, um etwas Abernten zu können.</German>
 			<Russian>Вы должны быть близко к растению, чтобы взять его.</Russian>
 			<Dutch>Je moet in de buurt van een plant zijn om te oogsten.</Dutch>
 			<French>Vous devez être près d'une plante pour la récolter.</French>

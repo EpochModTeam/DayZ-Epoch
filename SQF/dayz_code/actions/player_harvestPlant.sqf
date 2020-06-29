@@ -3,12 +3,14 @@
 	Usage: spawn player_harvestPlant;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_isOk","_i","_objName","_finished","_proceed","_itemOut","_countOut","_plant","_findNearestPlant","_index","_invResult","_text","_playerNear"];
+
+closeDialog 0;
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-call gear_ui_init;
+private ["_isOk","_i","_objName","_finished","_proceed","_itemOut","_countOut","_plant","_findNearestPlant","_index","_invResult","_text","_playerNear"];
+
 _countOut = 0;
 
 _findNearestPlant = [];
