@@ -1,4 +1,4 @@
-private ["_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons","_message","_suppliedCode"];
+private ["_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons","_message","_suppliedCode","_damage"];
 
 _player = _this select 0;
 _obj = _this select 1;
@@ -50,6 +50,7 @@ call {
 		_weapons = _obj getVariable ["WeaponCargo",[]];
 		_magazines = _obj getVariable ["MagazineCargo",[]];
 		_backpacks = _obj getVariable ["BackpackCargo",[]];
+		_damage = damage _obj;
 
 		// Create new unlocked safe, then delete old locked safe
 		_holder = _unlockedClass createVehicle [0,0,0];
@@ -61,6 +62,7 @@ call {
 		_holder setVariable ["ObjectID",_objectID,true];
 		_holder setVariable ["ObjectUID",_objectUID,true];
 		_holder setVariable ["OEMPos",_pos,true];
+		_holder setDamage _damage;
 		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};
 		deleteVehicle _obj;
 
@@ -74,6 +76,7 @@ call {
 		_weapons = getWeaponCargo _obj;
 		_magazines = getMagazineCargo _obj;
 		_backpacks = getBackpackCargo _obj;
+		_damage = damage _obj;
 
 		// Create new locked safe, then delete old unlocked safe
 		_holder = _lockedClass createVehicle [0,0,0];
@@ -85,6 +88,7 @@ call {
 		_holder setVariable ["ObjectID",_objectID,true];
 		_holder setVariable ["ObjectUID",_objectUID,true];
 		_holder setVariable ["OEMPos",_pos,true];
+		_holder setDamage _damage;
 		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};
 		deleteVehicle _obj;
 
