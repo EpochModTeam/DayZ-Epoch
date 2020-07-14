@@ -1,5 +1,3 @@
-disableSerialization;
-
 /**************Variables Compiled on Both Client and Server**************/
 
 Dayz_plants = ["Dayz_Plant1","Dayz_Plant2","Dayz_Plant3"];
@@ -24,79 +22,16 @@ DZE_DoorsLocked = ["Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked
 DZE_isWreckBuilding = ["Land_wreck_cinder","Land_wood_wreck_quarter","Land_wood_wreck_floor","Land_wood_wreck_third","Land_wood_wreck_frame","Land_iron_vein_wreck","Land_silver_vein_wreck","Land_gold_vein_wreck","Land_ammo_supply_wreck"];
 DZE_LockedStorage = ["VaultStorageLocked","LockboxStorageLocked"];
 DZE_isWreck = ["SKODAWreck","HMMWVWreck","UralWreck","datsun01Wreck","hiluxWreck","datsun02Wreck","UAZWreck","Land_Misc_Garb_Heap_EP1","Fort_Barricade_EP1","Rubbish2"];
-DZE_isNewStorage = ["VaultStorage","OutHouse_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","StorageShed_DZ","StorageShed2_DZ","GunRack_DZ","GunRack2_DZ","WoodCrate_DZ","WoodCrate2_DZ"];
-
-if (isNil "dayz_POIs") then {dayz_POIs = true;}; //Enable POI's
-if (isNil "dayz_ForcefullmoonNights") then {dayz_ForcefullmoonNights = false;}; // Forces night time to be full moon.
-if (isNil "dayz_townGenerator") then {dayz_townGenerator = true;}; // Spawn map junk. Currently only compatible with Chernarus. Need to add coordinates for other maps.
-if (isNil "dayz_townGeneratorBlackList") then {dayz_townGeneratorBlackList = [];}; // Town generator will not spawn junk within 150m of these positions.
-if (isNil "infectedWaterHoles") then {infectedWaterHoles = [];}; //Needed for non-cherno maps.
-if (isNil "DZE_GodModeBase") then {DZE_GodModeBase = false;}; // Disables damage handler from base objects so they can't be destroyed.
-if (isNil "dayz_presets") then {dayz_presets = "Vanilla";}; //Replace server individual settings with ranked settings
-
-call { // Custom DayZ preset variables are also located in the mission init file.
-	if (dayz_presets == "Custom") exitWith {
-		if (isNil "dayz_enableGhosting") then {dayz_enableGhosting = false;};
-		if (isNil "dayz_ghostTimer") then {dayz_ghostTimer = 120;};
-		if (isNil "dayz_spawnselection") then {dayz_spawnselection = 0;};
-		if (isNil "dayz_spawncarepkgs_clutterCutter") then {dayz_spawncarepkgs_clutterCutter = 0;};
-		if (isNil "dayz_spawnCrashSite_clutterCutter") then {dayz_spawnCrashSite_clutterCutter = 0;};
-		if (isNil "dayz_spawnInfectedSite_clutterCutter") then {dayz_spawnInfectedSite_clutterCutter = 0;};
-		if (isNil "dayz_bleedingeffect") then {dayz_bleedingeffect = 2;};
-		if (isNil "dayz_temperature_override") then {dayz_temperature_override = true;};
-		if (isNil "dayz_nutritionValuesSystem") then {dayz_nutritionValuesSystem = false;};
-		if (isNil "dayz_classicBloodBagSystem") then {dayz_classicBloodBagSystem = false;};
-		if (isNil "dayz_enableFlies") then {dayz_enableFlies = true;};
-	};
-	if (dayz_presets == "Classic") exitWith {
-		dayz_enableGhosting = false; //Enable disable the ghosting system.
-		dayz_ghostTimer = 120; //Sets how long in seconds a player must be dissconnected before being able to login again.
-		dayz_spawnselection = 0; //Turn on spawn selection 0 = random only spawns, 1 = Spawn choice based on limits
-		dayz_spawncarepkgs_clutterCutter = 0; //0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
-		dayz_bleedingeffect = 2; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_temperature_override = true; // Set to true to disable all temperature changes.
-		dayz_nutritionValuesSystem = false; //Enables nutrition system
-		dayz_classicBloodBagSystem = true; //Enables one type of bloodbag
-		dayz_enableFlies = true;  //Enables flies spawning on death
-	};
-	if (dayz_presets == "Elite") exitWith {
-		dayz_enableGhosting = true; //Enable disable the ghosting system.
-		dayz_ghostTimer = 90; //Sets how long in seconds a player must be dissconnected before being able to login again.
-		dayz_spawnselection = 0; //Turn on spawn selection 0 = random only spawns, 1 = Spawn choice based on limits
-		dayz_spawncarepkgs_clutterCutter = 0; //0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
-		dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_temperature_override = false; // Set to true to disable all temperature changes.
-		dayz_nutritionValuesSystem = true; //Enables nutrition system
-		dayz_classicBloodBagSystem = false; //Enables one type of bloodbag
-		dayz_enableFlies = true; //Enables flies spawning on death
-	};
-		// Default - Vanilla
-		dayz_enableGhosting = true; //Enable disable the ghosting system.
-		dayz_ghostTimer = 60; //Sets how long in seconds a player must be disconnected before being able to login again.
-		dayz_spawnselection = 1; //Turn on spawn selection 0 = random only spawns, 1 = Spawn choice based on limits
-		dayz_spawncarepkgs_clutterCutter = 0; //0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 =  loot hidden in grass, 1 = loot lifted and 2 = no grass
-		dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn... 0: loot hidden in grass, 1: loot lifted, 2: no grass 
-		dayz_bleedingeffect = 3; //1= blood on the ground, 2= partical effect, 3 = both.
-		dayz_temperature_override = false; // Set to true to disable all temperature changes.
-		dayz_nutritionValuesSystem = true; //Enables nutrition system
-		dayz_classicBloodBagSystem = false; //Enables one type of bloodbag
-		dayz_enableFlies = true; //Enables flies spawning on death
-};
 
 respawn_west_original = getMarkerPos "respawn_west"; //Prevent problems caused by cheaters moving respawn_west marker with setMarkerPos or deleteMarker
 
-switch (toLower worldName) do {
-	case "napf";
-	case "ruegen";
-	case "sauerland" : {dayz_minpos = -1000; dayz_maxpos = 26000;};
-	case "tavi" : {dayz_minpos = -26000; dayz_maxpos = 26000;};
-	case "chernarus" : {dayz_minpos = -1; dayz_maxpos = 16000;};
-	case default {dayz_minpos = -20000; dayz_maxpos = 20000;};
+call {
+	if (toLower worldName in ["chernarus","chernarus_winter"]) exitWith {dayz_minpos = -20000; dayz_maxpos = 20000;};
+	if (toLower worldName == "napf") exitWith {dayz_minpos = -1000; dayz_maxpos = 26000;};
+	if (toLower worldName == "tavi") exitWith {dayz_minpos = -26000; dayz_maxpos = 26000;};
+	if (toLower worldName == "ruegen") exitWith {dayz_minpos = -1000; dayz_maxpos = 26000;};
+	if (toLower worldName == "sauerland") exitWith {dayz_minpos = -1000; dayz_maxpos = 26000;};
+	dayz_minpos = -20000; dayz_maxpos = 20000; // Default
 };
 
 /**************Variables Compiled on the Server Only**************/
@@ -120,12 +55,6 @@ if (isServer) then {
 
 	// Epoch Additions
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
-	if (isNil "EpochUseEvents") then {EpochUseEvents = false;};
-	if (isNil "EpochEvents") then {EpochEvents = [];};
-	if (isNil "MaxDynamicDebris") then {MaxDynamicDebris = 100;};
-	if (isNil "MaxVehicleLimit") then {MaxVehicleLimit = 50;};
-	if (isNil "spawnArea") then {spawnArea = 1400;};
-	if (isNil "spawnShoremode") then {spawnShoremode = 1;};
 };
 
 /**************Variables Compiled on Clients Only**************/
@@ -160,8 +89,6 @@ if (!isDedicated) then {
 	r_player_dead = false;
 	r_player_unconscious = false;
 	r_player_infected = false;
-	
-	// Infection from hits
 	r_player_Sepsis = [false, 0];
 	r_player_injured = false;
 	r_player_inpain = false;
@@ -169,15 +96,12 @@ if (!isDedicated) then {
 	r_player_cardiac = false;
 	r_fracture_legs = false;
 	r_fracture_arms = false;
-	r_player_vehicle = player;
 	r_player_blood = 12000;
 	r_player_bloodregen = 0;
 	r_player_bloodgainpersec = 0;
 	r_player_bloodlosspersec = 0;
 	r_player_bloodpersec = 0; //Blood Per Sec (gain - loss)
 	r_player_foodstack = 1;
-	
-	// Player skill
 	r_player_lowblood = false;
 	r_player_timeout = 0;
 	r_player_bloodTotal = r_player_blood;
@@ -223,8 +147,6 @@ if (!isDedicated) then {
 		s_player_fishing_veh = -1;
 		s_player_gather = -1;
 		s_player_destroytent = -1;
-		//s_player_attach_bomb = -1;
-		//s_player_Drinkfromhands = -1;
 		
 		// Epoch Additions
 		s_player_packvault = -1;
@@ -289,11 +211,9 @@ if (!isDedicated) then {
 	s_player_parts = [];
 	s_player_repairActions = [];
 	
-	//actions blockers
+	// General Variables
 	a_player_cooking = false;
 	a_player_boil = false;
-	
-	// General Variables
 	dayz_actionInProgress = false;
 	dayz_DisplayGenderSelect = true;
 	carryClick = false;
@@ -354,12 +274,12 @@ if (!isDedicated) then {
 	DZE_maintainClasses = ["ModularItems","DZE_Housebase","LightPole_DZ","BuiltItems","Generator_DZ","DZ_buildables","Plastic_Pole_EP1_DZ","Fence_corrugated_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","StickFence_DZ","DesertCamoNet_DZ","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ","DeerStand_DZ","Scaffolding_DZ","FireBarrel_DZ","M240Nest_DZ"];
 	DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP1_DZ","V3S_Refuel_TK_GUE_EP1_DZ","MtvrRefuel_DZ","KamazRefuel_DZE1","KamazRefuel_DZE2","KamazRefuel_DZE3","KamazRefuel_DZE4","T810A_ACR_REFUEL_DES_DZE","T810A_ACR_REFUEL_DES_DZE1","T810A_ACR_REFUEL_DES_DZE2","T810A_ACR_REFUEL_DES_DZE3","T810A_ACR_REFUEL_DES_DZE4","T810A_ACR_REFUEL_DZE","T810A_ACR_REFUEL_DZE1","T810A_ACR_REFUEL_DZE2","T810A_ACR_REFUEL_DZE3","T810A_ACR_REFUEL_DZE4"];
 	DZE_HeliAllowToTow = ["hilux1_civil_1_open","HMMWV_Base","Lada_base","Offroad_DSHKM_base","Pickup_PK_base","SkodaBase","tractor","VWGolf","Volha_TK_CIV_Base_EP1","S1203_TK_CIV_EP1","SUV_Base_EP1","ArmoredSUV_Base_PMC","UAZ_Base","LandRover_Base","Ship"];
+	DZE_isNewStorage = ["VaultStorage","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","GunRack_DZ","WoodCrate_DZ"];																															
 	DZE_isDestroyableStorage = ["OutHouse_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","StorageShed_DZ","StorageShed2_DZ","GunRack_DZ","GunRack2_DZ","WoodCrate_DZ","WoodCrate2_DZ"];
 	DZE_tradeVehicle = ["trade_any_vehicle","trade_any_vehicle_free","trade_any_vehicle_old","trade_any_bicycle","trade_any_bicycle_old","trade_any_boat","trade_any_boat_old"];
 	DZE_tradeVehicleKeyless = ["trade_any_bicycle","trade_any_bicycle_old","trade_any_vehicle_free"];
 	DZE_tradeObject = DZE_tradeVehicle + ["trade_backpacks"];
 	DZE_Workshops = ["Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","WorkBench_DZ","WorkBench"];
-	//Needed for trees spawned with createVehicle like POI (typeOf returns class instead of "")
 	dayz_treeTypes = ["","MAP_t_picea1s","MAP_t_picea2s","MAP_t_picea3f","MAP_t_pinusN2s","MAP_t_pinusS2f","MAP_t_populus3s","MAP_t_betula2s","MAP_t_fagus2s","MAP_t_fagus2W","MAP_t_malus1s"];
 	DayZ_DropDrageeObjects = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","Wire_cat1","Sandbag1_DZ","Fence_DZ","Generator_DZ","Hedgehog_DZ","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4","TentStorageDomed","VaultStorageLocked","BagFenceRound_DZ","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ","Land_HBarrier3_DZ","Land_HBarrier5_DZ","Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ","MetalGate_DZ","OutHouse_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","StorageShed_DZ","StorageShed2_DZ","StickFence_DZ","SandNest_DZ","MetalPanel_DZ","WorkBench_DZ","WoodLargeWall_DZ","WoodLargeWallDoor_DZ","WoodLargeWallWin_DZ","WoodSmallWall_DZ","WoodSmallWallWin_DZ","WoodSmallWallDoor_DZ","LockboxStorageLocked","WoodSmallWallThird_DZ","WoodLadder_DZ","Land_DZE_GarageWoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_WoodDoor","Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_WoodDoorLocked","CinderWallHalf_DZ","CinderWall_DZ","CinderWallDoorway_DZ","CinderWallDoor_DZ","CinderWallDoorLocked_DZ","CinderWallSmallDoorway_DZ","CinderWallDoorSmall_DZ","CinderWallDoorSmallLocked_DZ","DesertTentStorage","DesertTentStorage0","DesertTentStorage1","DesertTentStorage2","DesertTentStorage3","DesertTentStorage4","WoodFloorHalf_DZ","WoodFloor_DZ","WoodFloorQuarter_DZ","WoodStairs_DZ","WoodStairsSans_DZ","WoodStairsRails_DZ","MetalFloor_DZ","WoodRamp_DZ","WoodenFence_1_foundation_DZ","WoodenFence_1_frame_DZ","WoodenFence_quaterpanel_DZ","WoodenFence_halfpanel_DZ","WoodenFence_thirdpanel_DZ","WoodenFence_1_DZ","WoodenFence_2_DZ","WoodenFence_3_DZ","WoodenFence_4_DZ","WoodenFence_5_DZ","WoodenFence_6_DZ","MetalFence_1_foundation_DZ","MetalFence_1_frame_DZ","MetalFence_halfpanel_DZ","MetalFence_thirdpanel_DZ","MetalFence_1_DZ","MetalFence_2_DZ","MetalFence_3_DZ","MetalFence_4_DZ","MetalFence_5_DZ","MetalFence_6_DZ","MetalFence_7_DZ","WoodenGate_foundation_DZ","WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"];
 	Dayz_fishingItems = ["MeleeFishingPole"];
@@ -369,10 +289,10 @@ if (!isDedicated) then {
 	dayz_buildingBubbleMonitor = [];
 	
 	//temperature variables
-	dayz_temperatur = 36; //TeeChange
-	dayz_temperaturnormal = 36; //TeeChange
-	dayz_temperaturmax = 42; //TeeChange
-	dayz_temperaturmin = 27; //TeeChange
+	dayz_temperatur = 36;
+	dayz_temperaturnormal = 36;
+	dayz_temperaturmax = 42;
+	dayz_temperaturmin = 27;
 
 	//player special variables
 	dayz_bloodBagHumanity = 300;
@@ -411,66 +331,24 @@ if (!isDedicated) then {
 	dayz_authed = false;
 	dayz_panicCooldown = 0;
 	dayz_areaAffect = 3.5;
-	dayz_monitorPeriod = 0.6; // number of seconds between each player_zombieCheck calls
+	//dayz_monitorPeriod = 0.6; // number of seconds between each player_zombieCheck calls
 	dayz_heartBeat = false;
 	dayz_spawnZombies = 0; // Current local
-	dayz_swarmSpawnZombies = 0;
+	//dayz_swarmSpawnZombies = 0;
 	dayz_CurrentNearByZombies = 0;
 	dayz_currentGlobalZombies = 0; // Current total
-	
-	if(isNil "dayz_maxGlobalZeds") then {
-		dayz_maxGlobalZeds = 1000; // Maximum allowed zeds on the map
-	};
-	if(isNil "dayz_quickSwitch") then {
-		dayz_quickSwitch = false; //Enable quick weapon switch,
-	};
-	if (isNil "dayz_paraSpawn") then {
-		dayz_paraSpawn = false; // Helo jump spawn
-	};
-	if (isNil "DZE_BuildOnRoads") then {
-		DZE_BuildOnRoads = false; // Allow building on roads
-	};
-	if (isNil "DZE_SelfTransfuse") then {
-		DZE_SelfTransfuse = false; // Allow players to give themselves blood transfusions
-	};
-	if (isNil "DZE_selfTransfuse_Values") then {
-		DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount, infection chance, cool-down (seconds)]
-	};
-	if (isNil "DZE_PlotPole") then {
-		DZE_PlotPole = [30,45]; // Plot radius, minimum distance between plots
-	};
-	if (isNil "DZE_BuildingLimit") then {
-		DZE_BuildingLimit = 150; // Maximum allowed objects per plot
-	};
-	if(isNil "dayz_DamageMultiplier") then { 
-		dayz_DamageMultiplier = 1; // Increases the damage to the player by zombie attacks
-	};
-	if(isNil "dayz_infectiouswaterholes") then {
-		dayz_infectiouswaterholes = true; //Enable infected waterholes
-	};
-	if(isNil "dayz_randomMaxFuelAmount") then {
-		dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
-	};
-	if (isNil "DZE_BackpackAntiTheft") then {
-		DZE_BackpackAntiTheft = false; // Prevents accessing backpack gear of non-friendly players in trader cities
-	};
-	if (isNil "DZE_requireplot") then {
-		DZE_requireplot = 1; // Players require a plot to build
-	};
-	if (isNil "DZE_StaticConstructionCount") then {
-		DZE_StaticConstructionCount = 0; // Number of animations required for building an object. Leaving set at zero will default to the construction count in the configs for each object.
-	};
 	
 	DZE_maintainRange = ((DZE_PlotPole select 0)+20); // Default: maintain building objects within plot radius + 20 meters.
 	dayz_maxGlobalAnimals =	50;  // Maximum number of animals allowed on the map simultaneously.
 	dayz_maxGlobalPlants = 500; // Maximum number of plants to be spawned on the map.
-	dayz_maxMaxWeaponHolders = 120; // Maximum number of loot piles that can spawn within 200 meters of a player.
 	dayz_maxLocalZombies = 15; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 	dayz_maxNearByZombies = 30; // max quantity of Z controlled by local gameclient, used by player_spawnCheck. Below this limit we can spawn Z
 	dayz_maxAnimals = 5; // Used to calculate the max number of animals to spawn per player.
 	dayz_animalDistance = 600; // Used to calculate the distance from players that animals should spawn and be deleted.
 
 	// Epoch Additions
+	snow = 0;
+	dayz_inside = false;			 
 	DZE_UI = profileNamespace getVariable ["statusUI",1];
 	dayz_combination = "";
 	keypadCancel = false; //Brute force fix
@@ -530,6 +408,7 @@ if (!isDedicated) then {
 	r_player_nutritionMuilpty = 2;
 
 	// Ammo Routine
+	r_action_cargoDrop = false;					
 	r_player_actions2 = [];
 	r_action2 = false;
 	r_player_lastVehicle = objNull;
