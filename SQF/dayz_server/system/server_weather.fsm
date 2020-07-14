@@ -1,0 +1,472 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, dze_weather">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,250,-40.348839,-141.860458,49.651161,-91.860458,0.000000,"Init"};
+item1[] = {"Winter",4,218,-188.538055,-142.324219,-98.538559,-92.324203,0.000000,"Winter"};
+item2[] = {"Summer",4,218,102.997711,-141.329483,192.997635,-91.329491,0.000000,"Summer"};
+item3[] = {"Initial_Weather",2,250,-188.646942,-61.923744,-98.647324,-11.923735,0.000000,"Initial" \n "Weather" \n "Settings"};
+item4[] = {"Initial_Weather_1",2,250,102.293213,-59.535393,192.293106,-9.535398,0.000000,"Initial" \n "Weather" \n "Settings"};
+item5[] = {"Dynamic",4,218,-329.250580,71.166527,-239.250580,121.166656,0.000000,"Dynamic"};
+item6[] = {"Dynamic",4,218,218.953949,71.415863,308.953918,121.415939,0.000000,"Dynamic"};
+item7[] = {"Wait",2,250,-328.546112,168.298981,-238.546051,218.298904,0.000000,"Wait"};
+item8[] = {"Wait_1",2,250,218.914642,170.498108,308.914825,220.498215,0.000000,"Wait"};
+item9[] = {"Ready",4,218,-328.654816,242.721832,-238.654816,292.721832,0.000000,"Ready"};
+item10[] = {"Static",4,218,-157.608826,11.221905,-67.609406,61.222015,0.000000,"Static"};
+item11[] = {"Static",4,218,75.503952,10.589214,165.503632,60.589310,0.000000,"Static"};
+item12[] = {"Ready",4,218,219.836456,249.480164,309.836395,299.480164,0.000000,"Ready"};
+item13[] = {"End",1,250,-40.321423,10.661306,49.678623,60.661461,0.000000,"End"};
+item14[] = {"Invalid_Option",4,218,-40.038357,-66.470139,49.961643,-16.470152,0.000000,"Invalid" \n "Option"};
+item15[] = {"Set_Weather",2,250,-211.722900,243.535065,-121.722931,293.535065,0.000000,"Set Weather"};
+item16[] = {"Return",8,218,-211.614197,168.298981,-121.614273,218.298737,0.000000,"Return"};
+item17[] = {"Set_Weather_1",2,250,106.104187,248.682190,196.104202,298.682190,0.000000,"Set Weather"};
+item18[] = {"Return",8,218,106.772743,172.461502,196.772736,222.461502,0.000000,"Return"};
+item19[] = {"PV_Delay",2,250,-328.769989,335.746979,-238.769974,385.746979,0.000000,"PV Delay"};
+item20[] = {"Delay",4,218,-212.201813,335.746979,-122.201813,385.746979,0.000000,"Delay"};
+item21[] = {"PV_Delay_1",2,4346,219.507141,333.036072,309.507141,383.036072,0.000000,"PV Delay"};
+item22[] = {"Delay",4,218,107.005257,333.713837,197.005264,383.713837,0.000000,"Delay"};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {0,14};
+link3[] = {1,3};
+link4[] = {2,4};
+link5[] = {3,5};
+link6[] = {3,10};
+link7[] = {4,6};
+link8[] = {4,11};
+link9[] = {5,7};
+link10[] = {6,8};
+link11[] = {7,9};
+link12[] = {8,12};
+link13[] = {9,19};
+link14[] = {10,13};
+link15[] = {11,13};
+link16[] = {12,21};
+link17[] = {14,13};
+link18[] = {15,16};
+link19[] = {16,7};
+link20[] = {17,18};
+link21[] = {18,8};
+link22[] = {19,20};
+link23[] = {20,15};
+link24[] = {21,22};
+link25[] = {22,17};
+globals[] = {0.000000,0,0,0,0,640,480,1,26,6316128,1,-441.001495,496.288025,744.435730,-164.875015,1178,910,1};
+window[] = {2,-1,-1,-1,-1,785,26,1466,26,3,1196};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "dze_weather";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/"_minChangeTime = DZE_WeatherVariables select 0;" \n
+       "_maxChangeTime = DZE_WeatherVariables select 1;" \n
+       "_minFog = DZE_WeatherVariables select 2;" \n
+       "_maxFog = DZE_WeatherVariables select 3;" \n
+       "_minOvercast = DZE_WeatherVariables select 4;" \n
+       "_maxOvercast = DZE_WeatherVariables select 5;" \n
+       "_minRain = DZE_WeatherVariables select 6;" \n
+       "_maxRain = DZE_WeatherVariables select 7;" \n
+       "_minWind = DZE_WeatherVariables select 8;" \n
+       "_maxWind = DZE_WeatherVariables select 9;" \n
+       "_windProb = DZE_WeatherVariables select 10;" \n
+       "_minSnow = DZE_WeatherVariables select 11;" \n
+       "_maxSnow = DZE_WeatherVariables select 12;" \n
+       "_blizzardProb = DZE_WeatherVariables select 13;" \n
+       "_blizzardInterval = DZE_WeatherVariables select 14;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Summer">*/
+        class Summer
+        {
+          priority = 0.000000;
+          to="Initial_Weather_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"DZE_Weather in [1,2]"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Invalid_Option">*/
+        class Invalid_Option
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!(DZE_Weather in [1,2,3,4])"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log ""Weather Error: invalid option for variable DZE_Weather!"";" \n
+           "" \n
+           "DZE_serverWeatherArray = [0, 0, 0, 0, 0, 0, ""none"", false];"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Winter">*/
+        class Winter
+        {
+          priority = 0.000000;
+          to="Initial_Weather";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"DZE_Weather in [3,4]"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Initial_Weather">*/
+    class Initial_Weather
+    {
+      name = "Initial_Weather";
+      init = /*%FSM<STATEINIT""">*/"_fog = (_minFog + random (_maxFog - _minFog));" \n
+       "_overcast = (_minOvercast + random (_maxOvercast - _minOvercast));" \n
+       "_rain = 0;" \n
+       "_snow = 0;" \n
+       "_type = ""NONE"";" \n
+       "_blizzard = false;" \n
+       "" \n
+       "if (_overcast > .70) then {" \n
+       "	_snow = (_minSnow + random (_maxSnow - _minSnow));" \n
+       "	if (_blizzardProb > 0) then {_blizzard = (random 1 <= _blizzardProb);};" \n
+       "};" \n
+       "" \n
+       "_windX = [(_minWind + random (_maxWind - _minWind)),-(_minWind + random (_maxWind - _minWind))] select (random 1 < .50);" \n
+       "_windY = [(_minWind + random (_maxWind - _minWind)),-(_minWind + random (_maxWind - _minWind))] select (random 1 < .50);" \n
+       "" \n
+       "_changeTime = _minChangeTime * 60 + random ((_maxChangeTime - _minChangeTime) * 60);" \n
+       "if (_blizzard && {_blizzardInterval > 0}) then {_changeTime = _blizzardInterval * 60};" \n
+       "" \n
+       "// Populate the server's global array" \n
+       "PVDZE_SetWeather = [_overcast, _fog, _rain, _windX, _windY, _snow, _type, _blizzard];" \n
+       "" \n
+       "// Set weather parameters locally on the server - I'm not sure if this is necessary because weather is not synced in A2OA." \n
+       "0 setRain _rain;" \n
+       "0 setOvercast _overcast;" \n
+       "0 setFog _fog;" \n
+       "setWind [_windX, _windY, true];" \n
+       "" \n
+       "diag_log text format [""Weather Forecast: Overcast: %1, Fog: %2, Rain: %3, WindX: %4, WindY: %5, Snow: %6, Blizzard: %7, Change Time: %8"",_overcast,_fog,_rain,_windX,_windY,_snow,_blizzard,_changeTime];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Static">*/
+        class Static
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"DZE_Weather == 3"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log ""Static Winter Weather Enabled"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Dynamic">*/
+        class Dynamic
+        {
+          priority = 0.000000;
+          to="Wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"DZE_Weather == 4"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log ""Dynamic Winter Weather Starting"";" \n
+           "" \n
+           "_bypassOvercast = _minOvercast == _maxOvercast; // if values are the same then bypass." \n
+           "_bypassFog = _minFog == _maxFog; // if values are the same then bypass."/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Initial_Weather_1">*/
+    class Initial_Weather_1
+    {
+      name = "Initial_Weather_1";
+      init = /*%FSM<STATEINIT""">*/"_fog = (_minFog + random (_maxFog - _minFog));" \n
+       "_overcast = (_minOvercast + random (_maxOvercast - _minOvercast));" \n
+       "_rain = 0;" \n
+       "_snow = 0;" \n
+       "_type = ""NONE"";" \n
+       "_blizzard = false;" \n
+       "" \n
+       "if (_overcast > .70) then {" \n
+       "	_rain = (_minRain + random (_maxRain - _minRain));" \n
+       "};" \n
+       "" \n
+       "_windX = [(_minWind + random (_maxWind - _minWind)),-(_minWind + random (_maxWind - _minWind))] select (random 1 < .50);" \n
+       "_windY = [(_minWind + random (_maxWind - _minWind)),-(_minWind + random (_maxWind - _minWind))] select (random 1 < .50);" \n
+       "" \n
+       "_changeTime = _minChangeTime * 60 + random ((_maxChangeTime - _minChangeTime) * 60);" \n
+       "" \n
+       "// Populate the server's global array" \n
+       "PVDZE_SetWeather = [_overcast, _fog, _rain, _windX, _windY, _snow, _type, _blizzard];" \n
+       "" \n
+       "// Set weather parameters locally on the server - I'm not sure if this is necessary because weather is not synced in A2OA." \n
+       "0 setRain _rain;" \n
+       "0 setOvercast _overcast;" \n
+       "0 setFog _fog;" \n
+       "setWind [_windX, _windY, true];" \n
+       "" \n
+       "diag_log text format [""Weather Forecast: Overcast: %1, Fog: %2, Rain: %3, WindX: %4, WindY: %5, Snow: %6, Blizzard: %7, Change Time: %8"",_overcast,_fog,_rain,_windX,_windY,_snow,_blizzard,_changeTime];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Static">*/
+        class Static
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"DZE_Weather == 1"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log ""Static Summer Weather Enabled"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "Dynamic">*/
+        class Dynamic
+        {
+          priority = 0.000000;
+          to="Wait_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"DZE_Weather == 2" \n
+           ""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"diag_log ""Dynamic Summer Weather Starting"";" \n
+           "" \n
+           "_bypassOvercast = _minOvercast == _maxOvercast; // if values are the same then bypass." \n
+           "_bypassFog = _minFog == _maxFog; // if values are the same then bypass."/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Wait">*/
+    class Wait
+    {
+      name = "Wait";
+      init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Ready">*/
+        class Ready
+        {
+          priority = 0.000000;
+          to="PV_Delay";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _time) > _changeTime"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"DZE_WeatherEndThread = true; // Used to end existing rain, snow, and blizzard threads on the clients." \n
+           "publicVariable ""DZE_WeatherEndThread"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Wait_1">*/
+    class Wait_1
+    {
+      name = "Wait_1";
+      init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Ready">*/
+        class Ready
+        {
+          priority = 0.000000;
+          to="PV_Delay_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _time) > _changeTime"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"DZE_WeatherEndThread = true; // Used to end existing rain, snow, and blizzard threads on the clients." \n
+           "publicVariable ""DZE_WeatherEndThread"";"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "End">*/
+    class End
+    {
+      name = "End";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Set_Weather">*/
+    class Set_Weather
+    {
+      name = "Set_Weather";
+      init = /*%FSM<STATEINIT""">*/"diag_log ""DEBUG Weather: Setting Weather."";" \n
+       "" \n
+       "// Change one type, fog or overcast, per cycle." \n
+       "_type = call {" \n
+       "	if (_bypassFog && !_bypassOvercast) exitWith {""OVERCAST""};" \n
+       "	if (_bypassOvercast && !_bypassFog) exitWith {""FOG""};" \n
+       "	// Select random type of weather to change if no bypass. Make overcast changes 75% of the time." \n
+       "	[""FOG"",""OVERCAST""] select (random 1 < .75);" \n
+       "};" \n
+       "" \n
+       "if (_type == ""FOG"") then {" \n
+       "	_fog = (_minFog + random (_maxFog - _minFog));" \n
+       "};" \n
+       "" \n
+       "if (_type == ""OVERCAST"") then {" \n
+       "	_overcast = (_minOvercast + random (_maxOvercast - _minOvercast));" \n
+       "	if (_overcast > 0.70) then {" \n
+       "		_snow = (_minSnow + random (_maxSnow - _minSnow));" \n
+       "		if (_blizzardProb > 0) then {_blizzard = (random 1 <= _blizzardProb);};" \n
+       "	} else {" \n
+       "		_snow = 0;" \n
+       "		_blizzard = false;" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "// On average every one fourth of weather changes, change wind too" \n
+       "if (random 1 < _windProb) then {" \n
+       "	_windX = [(_minWind + random (_maxWind - _minWind)),-(_minWind + random (_maxWind - _minWind))] select (random 1 < .50);" \n
+       "	_windY = [(_minWind + random (_maxWind - _minWind)),-(_minWind + random (_maxWind - _minWind))] select (random 1 < .50);" \n
+       "};" \n
+       "" \n
+       "_changeTime = _minChangeTime * 60 + random ((_maxChangeTime - _minChangeTime) * 60);" \n
+       "if (_blizzard && {_blizzardInterval > 0}) then {_changeTime = _blizzardInterval * 60};" \n
+       "" \n
+       "// Set weather parameters on all clients" \n
+       "PVDZE_SetWeather = [_overcast, _fog, _rain, _windX, _windY, _snow, _type, _blizzard];" \n
+       "publicVariable ""PVDZE_SetWeather"";" \n
+       "" \n
+       "// Set weather parameters locally on the server - I'm not sure if this is necessary because weather is not synced in A2OA." \n
+       "0 setRain _rain;" \n
+       "0 setOvercast _overcast;" \n
+       "0 setFog _fog;" \n
+       "setWind [_windX, _windY, true];" \n
+       "" \n
+       "diag_log text format [""Weather Forecast: Overcast: %1, Fog: %2, Rain: %3, WindX: %4, WindY: %5, Snow: %6, Blizzard: %7, Change Time: %8"",_overcast,_fog,_rain,_windX,_windY,_snow,_blizzard,_changeTime];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Return">*/
+        class Return
+        {
+          priority = 0.000000;
+          to="Wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Set_Weather_1">*/
+    class Set_Weather_1
+    {
+      name = "Set_Weather_1";
+      init = /*%FSM<STATEINIT""">*/"// Change one type, fog or overcast, per cycle." \n
+       "_type = call {" \n
+       "	if (_bypassFog && !_bypassOvercast) exitWith {""OVERCAST""};" \n
+       "	if (_bypassOvercast && !_bypassFog) exitWith {""FOG""};" \n
+       "	// Select random type of weather to change if no bypass. Make overcast changes 75% of the time." \n
+       "	[""FOG"",""OVERCAST""] select (random 1 < .75);" \n
+       "};" \n
+       "" \n
+       "if (_type == ""FOG"") then {" \n
+       "	_fog = (_minFog + random (_maxFog - _minFog));" \n
+       "};" \n
+       "" \n
+       "if (_type == ""OVERCAST"") then {" \n
+       "	_overcast = (_minOvercast + random (_maxOvercast - _minOvercast));" \n
+       "	if (_overcast > 0.70) then {" \n
+       "		_rain = (_minRain + random (_maxRain - _minRain));" \n
+       "	} else {" \n
+       "		_rain = 0;" \n
+       "	};" \n
+       "};" \n
+       "" \n
+       "// On average every one fourth of weather changes, change wind too" \n
+       "if (random 1 < _windProb) then {" \n
+       "	_windX = [(_minWind + random (_maxWind - _minWind)),-(_minWind + random (_maxWind - _minWind))] select (random 1 < .50);" \n
+       "	_windY = [(_minWind + random (_maxWind - _minWind)),-(_minWind + random (_maxWind - _minWind))] select (random 1 < .50);" \n
+       "};" \n
+       "" \n
+       "_changeTime = _minChangeTime * 60 + random ((_maxChangeTime - _minChangeTime) * 60);" \n
+       "" \n
+       "// Set weather parameters on all clients" \n
+       "PVDZE_SetWeather = [_overcast, _fog, _rain, _windX, _windY, _snow, _type, _blizzard];" \n
+       "publicVariable ""PVDZE_SetWeather"";" \n
+       "" \n
+       "// Set weather parameters locally on the server - I'm not sure if this is necessary because weather is not synced in A2OA." \n
+       "0 setRain _rain;" \n
+       "0 setOvercast _overcast;" \n
+       "0 setFog _fog;" \n
+       "setWind [_windX, _windY, true];" \n
+       "" \n
+       "diag_log text format [""Weather Forecast: Overcast: %1, Fog: %2, Rain: %3, WindX: %4, WindY: %5, Snow: %6, Blizzard: %7, Change Time: %8"",_overcast,_fog,_rain,_windX,_windY,_snow,_blizzard,_changeTime];"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Return">*/
+        class Return
+        {
+          priority = 0.000000;
+          to="Wait_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"true"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "PV_Delay">*/
+    class PV_Delay
+    {
+      name = "PV_Delay";
+      init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;" \n
+       "" \n
+       "// Need to sleep the loop for 5 seconds to ensure that the clients have time to react to the PV"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Set_Weather";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _time) > 5"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "PV_Delay_1">*/
+    class PV_Delay_1
+    {
+      name = "PV_Delay_1";
+      init = /*%FSM<STATEINIT""">*/"_time = diag_tickTime;" \n
+       "" \n
+       "// Need to sleep the loop for 5 seconds to ensure that the clients have time to react to the PV"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Delay">*/
+        class Delay
+        {
+          priority = 0.000000;
+          to="Set_Weather_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(diag_tickTime - _time) > 5"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "End",
+  };
+};
+/*%FSM</COMPILE>*/
