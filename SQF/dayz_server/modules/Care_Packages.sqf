@@ -15,11 +15,14 @@ Author:
 //Number of care packages to spawn
 #define SPAWN_NUM 6
 
+//Parameters for finding a suitable position to spawn the crash site
 #define SEARCH_CENTER getMarkerPos "carepackages"
 #define SEARCH_RADIUS (getMarkerSize "carepackages") select 0
 #define SEARCH_DIST_MIN 30
 #define SEARCH_SLOPE_MAX 1000
 #define SEARCH_BLACKLIST [[[12923,3643],[14275,2601]]]
+
+#define CLUTTER_CUTTER 0 //0 = loot hidden in grass, 1 = loot lifted, 2 = no grass, 3 = debug sphere.
 
 private ["_typeGroup","_position","_type","_class","_vehicle","_lootGroup","_lootNum","_lootPos","_lootVeh","_size"];
 
@@ -50,26 +53,11 @@ for "_i" from 1 to (SPAWN_NUM) do
 		
 		_lootVeh = Loot_Spawn(_x, _lootPos);
 		_lootVeh setVariable ["permaLoot", true];
-				
-		switch (dayz_spawncarepkgs_clutterCutter) do
-		{
-			case 1: //Lift loot up by 5cm
-			{
-				_lootPos set [2, 0.05];
-				_lootVeh setPosATL _lootpos;
-			};
-			
-			case 2: //Clutter cutter
-			{
-				//createVehicle ["ClutterCutter_small_2_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
-				"ClutterCutter_small_2_EP1" createVehicle _lootPos;
-			};
-			
-			case 3: //Debug sphere
-			{
-				//createVehicle ["Sign_sphere100cm_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
-				"Sign_sphere100cm_EP1" createVehicle _lootPos;
-			};
+		
+		call {
+			if (CLUTTER_CUTTER == 1) exitWith {_lootPos set [2, 0.05]; _lootVeh setPosATL _lootpos;};
+			if (CLUTTER_CUTTER == 2) exitWith {"ClutterCutter_small_2_EP1" createVehicle _lootPos;};
+			if (CLUTTER_CUTTER == 3) exitWith {"Sign_sphere100cm_EP1" createVehicle _lootPos;};
 		};
 	} forEach  Loot_Select(_lootGroup, _lootNum);
 };
