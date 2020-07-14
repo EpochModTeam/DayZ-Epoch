@@ -49,6 +49,7 @@ spawn_ammosupply = compile preprocessFileLineNumbers "\z\addons\dayz_server\comp
 spawn_mineveins = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_mineveins.sqf";
 spawn_roadblocks = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_roadblocks.sqf";
 spawn_vehicles = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_vehicles.sqf";
+if (DZE_CargoDrop) then {server_cargoDrop = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_cargoDrop.sqf";};
 
 server_medicalSync = {
 	private ["_player","_array"];
