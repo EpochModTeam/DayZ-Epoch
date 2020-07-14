@@ -55,7 +55,7 @@ dayz_enableFlies = false; // Enable flies on dead bodies (negatively impacts FPS
 DZE_PlayerZed = true; // Enable spawning as a player zombie when players die with infected status
 DZE_GodModeBase = false; // Make player built base objects indestructible
 DZE_SafeZonePosArray = [[[6325,7807,0],100],[[4063,11664,0],100],[[11447,11364,0],100],[[1621.91,7797,0],100],[[12944,12766,0],100],[[12060,12638,0],100]]; // Format is [[[3D POS],RADIUS],[[3D POS],RADIUS]]; Stops loot and zed spawn, salvage and players being killed if their vehicle is destroyed in these zones.
-DZE_Weather = 3; // Options: 1 - Summer Static, 2 - Summer Dynamic, 3 - Winter Static, 4 - Winter Dynamic. If static is selected, the weather settings will be set at server startup and not change. Weather settings can be adjusted with array DZE_WeatherVariables in configVariables.sqf.
+DZE_Weather = 1; // Options: 1 - Summer Static, 2 - Summer Dynamic, 3 - Winter Static, 4 - Winter Dynamic. If static is selected, the weather settings will be set at server startup and not change. Weather settings can be adjusted with array DZE_WeatherVariables in configVariables.sqf.
 
 // Uncomment the lines below to change the default loadout
 //DefaultMagazines = ["HandRoadFlare","ItemBandage","ItemPainkiller","8Rnd_9x18_Makarov","8Rnd_9x18_Makarov"];
