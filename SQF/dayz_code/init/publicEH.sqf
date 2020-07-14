@@ -94,6 +94,7 @@ if (isServer) then {
 	"PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
 	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
 	"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) call server_handleSafeGear};
+	"PVDZE_cargoDrop" 		addPublicVariableEventHandler {(_this select 1) spawn server_cargoDrop};
 	if (dayz_groupSystem) then {
 		"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) spawn server_updateGroup};
 	};
@@ -225,4 +226,5 @@ if (!isDedicated) then {
 		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_flies.sqf";
 	};
 	"PVDZE_PingReceived" addPublicVariableEventHandler {DZE_LastPingResp = diag_tickTime;};
+	"PVDZE_SetWeather" addPublicVariableEventHandler {(_this select 1) call fnc_setWeather;};																					  
 };
