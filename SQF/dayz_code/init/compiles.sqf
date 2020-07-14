@@ -191,9 +191,15 @@ if (!isDedicated) then {
 	MaintainPlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\maintain_area.sqf";
 	FNC_check_access = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_check_access.sqf";
 	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
-	if (DZE_SnowFall) then {
-		dzn_fnc_snowfall = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dzn_snowfall.sqf";
+	
+	// Weather
+	if (DZE_Weather in [3,4]) then {
+		fnc_snowfall = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\snowfall.sqf";
+		fnc_blizzard = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\blizzard.sqf";
+		fnc_breathFog = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\breathFog.sqf";
 	};
+	fnc_setWeather = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\setWeather.sqf";
+	fnc_groundFog = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\groundFog.sqf";
 
 	// Advanced trading default inits for maintaining, Advanced Trading and custom scripts to utilize gem based currency.
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\AdvancedTrading\defaultInit.sqf";
@@ -721,6 +727,7 @@ fnc_fieldOfView = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile
 //object_pickupAction and object_BackpackAction needs to be compiled for server too, since backpacks and weaponholders can be spawned from the server
 object_pickupAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf";
 object_BackpackAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf";
+fnc_deleteAt = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_deleteAt.sqf";
 
 
 if (dayz_townGenerator) then {
