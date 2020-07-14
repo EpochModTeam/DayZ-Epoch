@@ -228,6 +228,9 @@ if (_findIndex > -1) then {
 	dayz_serverClientKeys set [(count dayz_serverClientKeys), [_clientID,_randomKey]];
 };
 
+// Sync weather settings for JIP player
+_clientID publicVariableClient "PVDZE_SetWeather";
+
 PVCDZ_plr_Login2 = [_worldspace,_state,_randomKey];
 _clientID publicVariableClient "PVCDZ_plr_Login2";
 if (dayz_townGenerator) then {
