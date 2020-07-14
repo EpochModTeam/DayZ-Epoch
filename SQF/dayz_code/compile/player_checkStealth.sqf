@@ -119,9 +119,8 @@ if (_speed > 5) then {
 */
 
 //Are they inside a building
-_building = nearestObject [getPosATL (vehicle player), "Building"];
-_isPlayerInside = [(vehicle player),_building] call fnc_isInsideBuilding;
-if (_isPlayerInside) then {
+dayz_inside = [(vehicle player)] call fnc_isInsideBuilding;
+if (dayz_inside) then {
 	_initial = 5;
 };
 
