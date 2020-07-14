@@ -816,4 +816,9 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\geiger_level_3.ogg",1,1,10};
 		titles[] = {};
 	};
+	class blizzard {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\blizzard.ogg",1,1};
+		titles[] = {};
+	};
 };
