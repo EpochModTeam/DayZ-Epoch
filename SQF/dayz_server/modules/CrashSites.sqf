@@ -28,6 +28,8 @@ Modified for DayZ Epoch Event Spawner by JasonTM
 #define LOOT_MIN 5
 #define LOOT_MAX 8
 
+#define CLUTTER_CUTTER 0 //0 = loot hidden in grass, 1 = loot lifted, 2 = no grass, 3 = debug sphere.
+
 private ["_spawnCrashSite","_type","_class","_lootGroup","_position","_vehicle","_lootParams","_dir","_mag","_lootNum","_lootPos","_lootVeh"];
 
 _spawnCrashSite =
@@ -62,28 +64,12 @@ _spawnCrashSite =
 		_lootVeh = Loot_Spawn(_x, _lootPos);
 		_lootVeh setVariable ["permaLoot", true];
 		
-		switch (dayz_spawnCrashSite_clutterCutter) do
-		{
-			case 1: //Lift loot up by 5cm
-			{
-				_lootPos set [2, 0.05];
-				_lootVeh setPosATL _lootpos;
-			};
-			
-			case 2: //Clutter cutter
-			{
-				//createVehicle ["ClutterCutter_small_2_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
-				"ClutterCutter_small_2_EP1" createVehicle _lootPos;
-			};
-			
-			case 3: //Debug sphere
-			{
-				//createVehicle ["Sign_sphere100cm_EP1", _lootPos, [], 0, "CAN_COLLIDE"];
-				"Sign_sphere100cm_EP1" createVehicle _lootPos;
-			};
+		call {
+			if (CLUTTER_CUTTER == 1) exitWith {_lootPos set [2, 0.05]; _lootVeh setPosATL _lootpos;};
+			if (CLUTTER_CUTTER == 2) exitWith {"ClutterCutter_small_2_EP1" createVehicle _lootPos;};
+			if (CLUTTER_CUTTER == 3) exitWith {"Sign_sphere100cm_EP1" createVehicle _lootPos;};
 		};
-	}
-	forEach Loot_Select(_lootGroup, _lootNum);
+	} forEach Loot_Select(_lootGroup, _lootNum);
 };
 
 //Spawn crash sites

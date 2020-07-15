@@ -5,7 +5,6 @@
 
 //Server
 if (isServer) then {
-	// Dynamic Vehicles
 	DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
 	DynamicVehicleDamageHigh = 100; // Max damage random vehicles can spawn with
 	DynamicVehicleFuelLow = 0; // Min fuel random vehicles can spawn with
@@ -14,6 +13,14 @@ if (isServer) then {
 	MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 	DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
 	DZE_MoneyStorageClasses = []; // If using single currency this is an array of object classes players can store coins in.
+	EpochEvents = []; // [year,month,day of month, minutes,name of file - .sqf] If minutes is set to -1, the event will run once immediately after server start.
+	MaxDynamicDebris = 100; // Max number of random road blocks to spawn around the map
+	MaxVehicleLimit = 50; // Max number of random vehicles to spawn around the map
+	spawnArea = 1400; // Distance around markers to find a safe spawn position
+	spawnShoremode = 1; // Random spawn locations  1 = on shores, 0 = inland
+	dayz_POIs = false; //Enable POI's
+	dayz_enableGhosting = false;
+	dayz_ghostTimer = 120;
 };
 
 // Client
@@ -32,12 +39,29 @@ if (!isDedicated) then {
 	DZE_RestrictSkins = []; // Clothes that players are not allowed to wear. i.e. ["Skin_GUE_Soldier_CO_DZ","Skin_GUE_Soldier_2_DZ"] etc.
 	DZE_VanillaUICombatIcon = true; //Display or hide combat UI icon if using DZE_UI = "vanilla"; otherwise it has no affect.
 	timezoneswitch = 0; // Changes murderMenu times with this offset in hours.
-	
+	dayz_maxGlobalZeds = 1000; // Maximum allowed zeds on the map
+	dayz_quickSwitch = false; //Enable quick weapon switch,
+	dayz_paraSpawn = false; // Helo jump spawn
+	DZE_SelfTransfuse = false; // Allow players to give themselves blood transfusions
+	DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount, infection chance, cool-down (seconds)]
+	dayz_DamageMultiplier = 1; // Increases the damage to the player by zombie attacks
+	dayz_infectiouswaterholes = true; //Enable infected waterholes
+	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
+	DZE_BackpackAntiTheft = false; // Prevents accessing backpack gear of non-friendly players in trader cities
+	DZE_StaticConstructionCount = 0; // Number of animations required for building an object. Leaving set at zero will default to the construction count in the configs for each object.
+	dayz_maxMaxWeaponHolders = 120; // Maximum number of loot piles that can spawn within 200 meters of a player.
+	dayz_bleedingeffect = 2; //1 = blood on the ground (negatively impacts FPS), 2 = partical effect, 3 = both
+	dayz_temperature_override = true; // Set to true to disable all temperature changes.
+	dayz_nutritionValuesSystem = false; //true, Enables nutrition system, false, disables nutrition system.
 	
 	// Build restrictions
 	DZE_NoBuildNear = []; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
 	DZE_NoBuildNearDistance = 150; // Distance from blacklisted objects to disallow building near.
 	DZE_BuildHeightLimit = 0; // 0 = No building height limit | >0 = Height limit in meters | Changing this to 30 would limit the maximum built height to 30 meters.
+	DZE_requireplot = 1; // Players require a plot to build
+	DZE_PlotPole = [30,45]; // Plot radius, minimum distance between plots
+	DZE_BuildOnRoads = false; // Allow building on roads
+	DZE_BuildingLimit = 150; // Maximum allowed objects per plot
 	
 	DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
 	DZE_DisabledChannels = [(localize "str_channel_side"),(localize "str_channel_global"),(localize "str_channel_command")]; //List of disabled voice channels. Other channels are: "str_channel_group","str_channel_direct","str_channel_vehicle"
@@ -117,12 +141,19 @@ if (!isDedicated) then {
 };	
 
 // Both
+DZE_CargoDrop = true; // Enable player cargo drops from aircraft.
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
 dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
 DZE_HeliLift = true; // Enable Epoch heli lift system
 DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
 DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
 DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
+dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
+infectedWaterHoles = []; //Needed for non-cherno maps.
+DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed.
+dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
+dayz_classicBloodBagSystem = false; // disable blood types system and use the single classic ItemBloodbag
+dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
 
 // Loot system
 dayz_toolBreaking = false; //Sledgehammer, crowbar and pickaxe have a chance to break when used.
@@ -153,10 +184,31 @@ DZE_doorManagement = true; // Enable Door Management by @DevZupa.
 dayz_groupSystem = false; // Enable group system
 
 // Weather
-DZE_WeatherVariables = [10, 20, 5, 10, 0, 0.2, 0, 0.7, 0, 0.6, 0, 8, 25, 30, 0, false, 0.8, 1, 100]; //See DynamicWeatherEffects.sqf for info on these values.
-DZE_SnowFall = false; //Enables snowfall for Dynamic Weather Effects. Default: false, on all non winter maps. Enabled on all winter maps. _maximumOvercast in DZE_WeatherVariables must be over 0.75. This is set already for all winter maps.
+DZE_Weather = 2; // Options: 1 - Summer Static, 2 - Summer Dynamic, 3 - Winter Static, 4 - Winter Dynamic. If static is selected, the weather settings will be set at server startup and not change. Weather settings can be adjusted with array DZE_WeatherVariables.
 
-
+// The settings in the array below may be adjusted as desired. The default settings are designed to maximize client and server performance.
+// Having several features enabled at once might have adverse effects on client performance. For instance, you could have snowfall, ground fog, and breath fog threads all running at once.
+DZE_WeatherVariables = [
+	15, // Minimum time in minutes for the weather to change. (default value: 15).
+	30, // Maximum time in minutes for the weather to change. (default value: 30).
+	0, // Minimum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0).
+	.2, // Maximum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0.8).
+	0, // Minimum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 0). Note: Rain and snow will not occur when overcast is less than 0.70. 
+	.6, // Maximum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 1).
+	0, // Minimum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
+	.6, // Maximum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
+	0, // Minimum wind strength (default value: 0).
+	3, // Maximum wind strength (default value: 5).
+	.25, // Probability for wind to change when weather changes. (default value: .25).
+	1, // Minimum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
+	1, // Maximum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
+	.2,// Probability for a blizzard to occur when it is snowing. (0 = no blizzards, 1 = blizzard all the time). (default value: .2).
+	10, // Blizzard interval in minutes. Set to zero to have the blizzard run for the whole interval, otherwise you can set a custom time interval for the blizzard.
+	0, // Ground Fog Effects. Options: 0 - no ground fog, 1 - only at evening, night, and early morning, 2 - anytime, 3 - near cities and towns, at late evening, night, and early morning, 4 - near cities and towns, anytime.
+	400, // Distance in meters from player to scan for buildings to spawn ground fog. By default, only the 15 nearest buildings will spawn ground fog.
+	false, // Allow ground fog when it's snowing or raining?
+	2 // Winter Breath Fog Effects. Options: 0 - no breath fog, 1 - anytime, 2 - only when snowing or blizzard. Note: breath fog is only available with winter weather enabled.
+];
 
 /* 
 	Developers:

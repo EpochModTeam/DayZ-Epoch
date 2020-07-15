@@ -157,7 +157,7 @@ if (_endMission) exitwith {
 //Sync chopped trees for JIP player
 {_x setDamage 1} count dayz_choppedTrees;
 
-if (toLower worldName == "chernarus") then {
+if (toLower worldName in ["chernarus","chernarus_winter"]) then {
 	//Destroy glitched map objects which can not be deleted or hidden
 	{(_x select 0) nearestObject (_x select 1) setDamage 1} count [
 		//Clipped benches in barracks hallway

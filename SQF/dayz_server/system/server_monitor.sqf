@@ -394,8 +394,9 @@ if (dayz_townGenerator) then {
 #else
 	object_debug = true;
 #endif
-[] execFSM "\z\addons\dayz_server\system\server_vehicleSync.fsm";
-[] execVM "\z\addons\dayz_server\system\scheduler\sched_init.sqf"; // launch the new task scheduler
+execFSM "\z\addons\dayz_server\system\server_vehicleSync.fsm";
+execVM "\z\addons\dayz_server\system\scheduler\sched_init.sqf"; // launch the new task scheduler
+execFSM "\z\addons\dayz_server\system\server_weather.fsm"; // new weather system for 1.0.7
 
 createCenter civilian;
 

@@ -17,7 +17,7 @@ Missing:
 
 	Shivering Function need improments
 */
-private ["_difference","_isinvehicle","_isinbuilding","_daytime","_height_mod","_temp","_looptime","_vehicle_factor","_moving_factor","_fire_factor","_building_factor","_sun_factor","_water_factor","_rain_factor","_night_factor","_wind_factor","_raining","_sunrise","_fireplaces","_building","_heatpack_factor","_warm_clothes","_stand_factor","_snow_factor","_pPos","_sleepTemperatur","_shivering"];
+private ["_difference","_isinvehicle","_daytime","_height_mod","_temp","_looptime","_vehicle_factor","_moving_factor","_fire_factor","_building_factor","_sun_factor","_water_factor","_rain_factor","_night_factor","_wind_factor","_raining","_sunrise","_fireplaces","_building","_heatpack_factor","_warm_clothes","_stand_factor","_snow_factor","_pPos","_sleepTemperatur","_shivering"];
 _looptime = _this;
 
 //Factors are equal to win/loss of factor*basic value
@@ -45,7 +45,6 @@ _shivering				= 	DZE_TempVars select 13; //Set this to 26 to disabled shivering
 
 _difference = 0;
 //_hasfireffect = false;
-_isinbuilding = false;
 _isinvehicle = false;
 
 _raining = (rain > 0);
@@ -78,25 +77,10 @@ if !(_isinvehicle) then {
 	};
 };
 
-//building
-_building = nearestObject [player, "HouseBase"];
-if (!isNull _building) then {
-	if([player,_building] call fnc_isInsideBuilding) then {
-		//Make sure thate Fire and Building Effect can only appear single Not used at the moment
-		//if(!_hasfireffect && _fire_factor > _building_factor) then {
-			_difference = _difference + _building_factor;
-		//};
-		_isinbuilding = true;
-		dayz_inside = true;
-	} else {
-		dayz_inside = false;
-	};
-} else {
-	dayz_inside = false;
-};
+if (dayz_inside) then {_difference = _difference + _building_factor;};
 
 //sun
-if (daytime > _sunrise && {daytime < (24 - _sunrise)} && {!_raining} && {overcast <= 0.6} && {!_isinbuilding}) then {
+if (daytime > _sunrise && {daytime < (24 - _sunrise)} && {!_raining} && {overcast <= 0.6} && !dayz_inside) then {
 	/*Mathematic Basic
 
 	t = temperature effect
@@ -132,7 +116,8 @@ if (r_player_warming_heatpack select 0) then {
 
 //warm clothes
 if ((typeOf player) in DZE_WarmClothes) then {
-	if (DZE_SnowFall) then {_warm_clothes = _warm_clothes + 14;};
+	//if (DZE_SnowFall) then {_warm_clothes = _warm_clothes + 14;};
+	if (DZE_Weather in [3,4]) then {_warm_clothes = _warm_clothes + 14;};
 	_difference = _difference + _warm_clothes;
 };
 
@@ -150,7 +135,7 @@ if !(_isinvehicle) then {
 	//night
 	if((daytime < _sunrise || daytime > (24 - _sunrise)) ) then {
 		_daytime = if(daytime < 12) then {daytime + 24} else {daytime};
-		if(_isinbuilding) then {
+		if(dayz_inside) then {
 			_difference = _difference - ((((_night_factor * -1) / (_sunrise^2)) * ((_daytime - 24)^2) + _night_factor)) / 2;
 		} else {
 			_difference = _difference - (((_night_factor * -1) / (_sunrise^2)) * ((_daytime - 24)^2) + _night_factor);
@@ -167,7 +152,7 @@ if !(_isinvehicle) then {
 		//diag_log format["height - %1",_difference];
 	};
 
-	if !(_isinbuilding) then {
+	if !(dayz_inside) then {
 		//rain
 		if(_raining) then {
 			_difference = _difference - (rain * _rain_factor);
@@ -187,7 +172,7 @@ if !(_isinvehicle) then {
 			//diag_log format["Standing - %1",_difference];
 		};
 		//Snow fall
-		if (!isNil "snow") then {
+		if (snow > 0) then {
 			_difference = _difference - _snow_factor;
 		};
 	};

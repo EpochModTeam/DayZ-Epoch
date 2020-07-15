@@ -27,8 +27,30 @@ if (_inVehicle) then {
 			(_vehicle turretUnit [0]) action ["moveToCargo",_vehicle,(count assignedCargo _vehicle)];
 		};
 	};
+	
+	// Cargo drop self action
+	if (DZE_CargoDrop && !r_player_unconscious) then {
+		if (_vehicle isKindOf "Air" && {(_assignedRole select 0) == "driver"} && {(([_vehicle] call FNC_GetPos) select 2) > 20}) then {
+			if (!r_action_cargoDrop) then {
+				{
+					if (count (_x select 0) > 0) exitWith { // Each of the inventory arrays has 2 nested arrays [[Class names],[Quantities]], so we want to check the count of class names. Otherwise it will count the two empty arrays for a false positive.
+						_action = _vehicle addAction ["Drop Cargo", "\z\addons\dayz_code\actions\veh_cargoDrop.sqf", _vehicle, 0, false, true];
+						r_player_actions2 set [count r_player_actions2,_action];
+						r_action_cargoDrop = true;
+					};
+				} count [(getWeaponCargo _vehicle), (getMagazineCargo _vehicle), (getBackpackCargo _vehicle)];
+			};
+		} else {
+			if (r_action_cargoDrop) then {
+				call r_player_removeActions2;
+				r_action_cargoDrop = false;
+			};
+		};
+	};
+		
 	if (!r_player_unconscious && !r_action2) then {
 		r_player_lastSeat = _assignedRole;
+		
 		if (_vehicle isKindOf "helicopter" || {_inVehicle && {{(isPlayer _x) && (alive _x)} count (crew _vehicle) > 1}}) then {
 			//allow switch to pilot
 			if (((_assignedRole select 0) != "driver") && {(!alive _driver) || {(_vehicle emptyPositions "Driver") > 0}}) then {
@@ -109,6 +131,7 @@ if (r_player_unconscious) then {
 	r_player_lastVehicle = objNull;
 	r_player_lastSeat = [];
 	r_action_unload = false;
+	r_action_cargoDrop = false;
 };
 
 //Lets make sure the player is looking at the target
