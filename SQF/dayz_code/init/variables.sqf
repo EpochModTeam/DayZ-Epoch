@@ -28,10 +28,8 @@ respawn_west_original = getMarkerPos "respawn_west"; //Prevent problems caused b
 
 call {
 	if (toLower worldName in ["chernarus","chernarus_winter"]) exitWith {dayz_minpos = -20000; dayz_maxpos = 20000;};
-	if (toLower worldName == "napf") exitWith {dayz_minpos = -1000; dayz_maxpos = 26000;};
+	if (toLower worldName in ["napf","ruegen","sauerland"]) exitWith {dayz_minpos = -1000; dayz_maxpos = 26000;};
 	if (toLower worldName == "tavi") exitWith {dayz_minpos = -26000; dayz_maxpos = 26000;};
-	if (toLower worldName == "ruegen") exitWith {dayz_minpos = -1000; dayz_maxpos = 26000;};
-	if (toLower worldName == "sauerland") exitWith {dayz_minpos = -1000; dayz_maxpos = 26000;};
 	dayz_minpos = -20000; dayz_maxpos = 20000; // Default
 };
 
