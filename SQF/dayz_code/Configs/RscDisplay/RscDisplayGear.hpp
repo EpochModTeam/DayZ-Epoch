@@ -932,6 +932,27 @@ class RscDisplayGear
 					colorActive[] = {1,1,1,0.8};
 					action = "0 call dz_fn_switchWeapon";
 				};
+				delete bSmena1;
+				delete Item_attach1_bg;
+				delete Item_attach1;
+				delete Item_attach2_bg;
+				delete Item_attach2;
+				delete odezhka_2_bg;
+				delete odezhka_2;
+				delete odezhka_3_bg;
+				delete odezhka_3;
+				delete odezhka_4_bg;
+				delete odezhka_4;
+				delete odezhka_6_bg;
+				delete odezhka_6;
+				delete odezhka_7_bg;
+				delete odezhka_7;
+				delete odezhka_8_bg;
+				delete odezhka_8;	
+				delete odezhka_5_bg;
+				delete odezhka_5;	
+				delete odezhka_1_bg;
+				delete odezhka_1;				
 			};
 		};
 		

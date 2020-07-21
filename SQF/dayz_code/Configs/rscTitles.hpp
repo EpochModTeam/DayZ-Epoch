@@ -382,6 +382,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 			h = 0.836601;
 			text = "\ca\ui\data\ui_background_mp_pause_ca.paa";
 		};
+		delete ORI_Logo;
 	};
 
 	class controls {
@@ -460,6 +461,8 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 			onButtonClick = "[] spawn player_onPause; call player_forceSave; with uiNameSpace do {RscDMSLoad=-2;};"; // request disconnection from server
 			text = $STR_DISP_INT_ABORT;
 			default = 0;
+			w = 0.3137255;
+			h = 0.1045752;			
 		};
 
 		class ButtonCancel : RscShortcutButton {
@@ -469,7 +472,7 @@ class RscDisplayMPInterrupt : RscStandardDisplay {
 			x = 0.1605;
 			y = 0.8617;
 			text = $STR_DISP_INT_CONTINUE;
-		};
+		};		
 	};
 };
 

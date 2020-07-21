@@ -88,19 +88,22 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 		{
 			idc=1016;
 			y = "(120/100) * SafeZoneH + SafeZoneY";
-		};
+		};		
 	};
 	class controls
 	{
 		class CA_MP_roles_Title : CA_Title {
 			idc = 1001;
 			style = 2;
+			font = "Zeppelin32";
+			sizeEx = 0.050653595;
+			colorText[] = {0.95,0.95,0.95,1};			
 			x = "(02/100)	* SafeZoneW + SafeZoneX";
 			y = "(02/100)	* SafeZoneH + SafeZoneY";
 			w = "(96/100)	* SafeZoneW";
 			h = "(06/100)	* SafeZoneH";
 			colorBackground[] = {49/255, 36/255, 25/255, 173/255};
-			text = $STR_UI_LOBBY;
+			text = $STR_UI_LOBBY;		
 		};
 		class TextIsland: RscText
 		{
@@ -124,8 +127,26 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 		};
 		class CA_B_West: RscActiveText
 		{
-			idc = 104;
+			idc = 104;			
+			x = "(4.15/100)	* SafeZoneW + SafeZoneX";
 			y = "(121/100) * SafeZoneH + SafeZoneY"; //hide
+			w = "(11.7/100)	* SafeZoneW";
+			h = "(7/100)	* SafeZoneH";
+			style = "0x02 + 0x100 + 0x40";
+			type = 11;
+			colorActive[] = {1,1,1,1};
+			colorDisabled[] = {1,1,1,0.15};
+			colorShade[] = {1,1,1,1};
+			colorText[] = {1,1,1,1};
+			pictureWidth = 1;
+			pictureHeight = 1;
+			textHeight = 0.38;
+			sideDisabled = "ca\ui\data\flag_none_ca.paa";
+			sideToggle = "ca\ui\data\flag_side_toggle_ca.paa";
+			color[] = {1,1,1,0.55};
+			text = "$STR_WEST";
+			picture = "\ca\ui\data\flag_bluefor_ca.paa";			
+			
 		};
 		class CA_B_East: CA_B_West
 		{
@@ -145,8 +166,61 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 		class CA_ValueRoles: RscIGUIListBox
 		{
 			idc = 109;
-			style = 16;
+			style = 16;			
+			shadow = 2;
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
 			y = "(120.5/100) * SafeZoneH + SafeZoneY"; //hide
+			w = "(38/100)	* SafeZoneW";
+			h = "(72/100)	* SafeZoneH";
+			color[] = {1,1,1,1};
+			colorSelect[] = {1,1,0,1};
+			colorSelectBackground[] = {0.2,0.2,0.2,1};
+			colorSelectBackground2[] = {0.1,0.1,0.1,1};
+			rowHeight = 0.05;
+			colorText[] = {0.95,0.95,0.95,1};
+			colorPlayer[] = {1,1,0,1};
+			colorAI[] = {1,0,0,1};
+			colorNobody[] = {0.4,0.4,0.4,1};
+			enabledAI = "ca\ui\textures\ai2_on.paa";
+			disabledAI = "ca\ui\textures\ai2_off.paa";		
+		};
+		class TextMission: RscText
+		{
+			idc = 1002;
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(18/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+			text = "$STR_DISP_SRVSETUP_NAME";
+		};
+		class ValueMission: RscText
+		{
+			idc = 101;
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
+			y = "(9.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(40/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+		};
+		class CA_TextDescription: RscText
+		{
+			idc = 1004;
+			x = "(02/100)	* SafeZoneW + SafeZoneX";
+			y = "(12.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(18/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
+			text = "$STR_DISP_SRVSETUP_DESC";
+		};
+		class CA_ValueDescription: RscText
+		{
+			idc = 103;
+			x = "(20/100)	* SafeZoneW + SafeZoneX";
+			y = "(12.5/100)	* SafeZoneH + SafeZoneY";
+			w = "(78/100)	* SafeZoneW";
+			h = "(3/100)	* SafeZoneH";
+			SizeEx = 0.03;
 		};
 		class TextPool: RscText
 		{
@@ -159,8 +233,11 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 		{
 			idc = 114;
 			text = $STR_MP_PLAYERS;
-			x = "(2/100) * SafeZoneW + SafeZoneX"; // to left
-			w = "(96/100) * SafeZoneW"; // wide
+			x = "(2/100) 	* SafeZoneW + SafeZoneX"; // to left
+			y = "(20/100)	* SafeZoneH + SafeZoneY";
+			w = "(96/100) 	* SafeZoneW"; // wide
+			h = "(72/100)	* SafeZoneH";	
+			canDrag = 1;			
 		};
 		class CA_ButtonContinue : RscShortcutButton {
 			idc = 1;
@@ -217,5 +294,7 @@ class RscDisplayMultiplayerSetup: RscStandardDisplay
 			colorBackground[] = {0,0,0,0};
 		};
 		delete CA_B_DSinterface;
+		delete OriginsSurv;
+		delete CA_B_WestOri;		
 	};
 };
