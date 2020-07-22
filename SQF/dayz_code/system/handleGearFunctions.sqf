@@ -207,7 +207,15 @@ HG_itemDescription = {
 
 	if (_inputItem call HG_isBackpack) then {
 		_name = getText(configfile >> "cfgVehicles" >> _inputItem >> "descriptionShort");
-		_return = ( _name);
+		
+		if (_name == "") then {
+			private ["_displayname","_capacity"];
+			
+			_displayname = getText(configfile >> "cfgVehicles" >> _inputItem >> "displayname");
+			_capacity = getNumber(configfile >> "cfgVehicles" >> _inputItem >> "transportMaxMagazines");
+			_name = [_displayname,format[localize "STR_BACKPACK_NO_DESC",_displayname,_capacity]] select (_capacity > 0);
+		};
+		_return = (_name);
 	};
 
 	_return

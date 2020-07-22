@@ -19813,6 +19813,13 @@
 			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 70 liter</Dutch>
 			<French>Grand Fourreau &lt;br/&gt;Taille: 70</French>
 		</Key>
+		<Key ID="STR_BACKPACK_NO_DESC">
+			<English>%1 &lt;br/&gt;Capacity: %2 items</English>
+			<German>%1 &lt;br/&gt;Volumen: %2 Liter</German>
+			<Russian>%1 %2 слотов</Russian>
+			<Dutch>%1 &lt;br/&gt;Inhoud: %2 liter</Dutch>
+			<French>%1 &lt;br/&gt;Taille: %2</French>			
+		</Key>
 		
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
