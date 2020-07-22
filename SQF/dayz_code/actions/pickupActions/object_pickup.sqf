@@ -1,3 +1,4 @@
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 if (player isKindOf "PZombie_VB") exitWith {};
 private ["_array","_type","_classname","_holder","_playerID","_text","_broken","_claimedBy","_config","_isOk","_PlayerNear","_wpn","_ismelee","_hasBag"];
 
