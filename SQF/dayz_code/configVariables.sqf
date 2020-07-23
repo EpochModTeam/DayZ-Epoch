@@ -141,7 +141,6 @@ if (!isDedicated) then {
 };	
 
 // Both
-DZE_CargoDrop = true; // Enable player cargo drops from aircraft.
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
 dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
 DZE_HeliLift = true; // Enable Epoch heli lift system
