@@ -94,7 +94,6 @@ if (isServer) then {
 	"PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};
 	"PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
 	"PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) call server_handleSafeGear};
-	if (DZE_CargoDrop) then {"PVDZE_cargoDrop" addPublicVariableEventHandler {(_this select 1) spawn server_cargoDrop};};
 	if (dayz_groupSystem) then {
 		"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) spawn server_updateGroup};
 	};
