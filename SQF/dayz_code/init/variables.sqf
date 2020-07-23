@@ -405,8 +405,7 @@ if (!isDedicated) then {
 	r_player_Nutrition = 0; // Calories
 	r_player_nutritionMuilpty = 2;
 
-	// Ammo Routine
-	r_action_cargoDrop = false;					
+	// Ammo Routine					
 	r_player_actions2 = [];
 	r_action2 = false;
 	r_player_lastVehicle = objNull;
