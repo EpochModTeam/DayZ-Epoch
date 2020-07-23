@@ -1,3 +1,4 @@
 //new
-1 "" !_DZ$|^Melee|^Item !=Binocular(_Vector)? !=NVGoggles|Winchester1866|MR43|M16A2|Remington870(_lamp)? !=Mosin_Nagant(((_Belt)?(_Scoped)?(_FL)?)|_broken)? !=Crossbow_(Stock|DZ|FL|(CCO|Scoped)(_FL)?) !=""
+1 "" !_DZ$|^Melee|^Item|_DZE$ !=Binocular(_Vector)? !=NVGoggles|Winchester1866|MR43|M16A2|Remington870(_lamp)? !=Mosin_Nagant(((_Belt)?(_Scoped)?(_FL)?)|_broken)? !=Crossbow_(Stock|DZ|FL|(CCO|Scoped)(_FL)?) !="" !=AA12_PMC|RedRyder|revolver_gold_EP1|Sa61_EP1|M24_des_EP1|ChainSaw(|[BGPR])
 1=ItemRadio|ItemMap_Debug|Mk_48_DZ
+1=m107_DZ|Anzio_20_DZ|BAF_AS50_scoped_DZ|M200_CheyTac_DZ|KSVK_DZE|BAF_L85A2_RIS_TWS_DZ
