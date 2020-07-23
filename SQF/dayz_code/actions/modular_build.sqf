@@ -443,42 +443,78 @@ if (_canBuild select 0) then {
 
 					_combinationDisplay = ""; //define new display
 
-					switch (_lockable) do { //generate random combinations depending on item type
+					call { //generate random combinations depending on item type
 
-						case 2: { // 2 lockbox
-							_combination_1 = (floor(random 3)) + 100; // 100=red,101=green,102=blue
-							_combination_2 = floor(random 10);
-							_combination_3 = floor(random 10);
-							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
-							dayz_combination = _combination;
-							if (_combination_1 == 100) then {
-								_combination_1_Display = localize "STR_TEAM_RED";
+						if (_lockable == 2) exitwith { // 2 lockbox
+							dayz_combination = "";
+							dayz_selectedVault = objNull;
+
+							createDialog "KeyPadUI";
+							waitUntil {!dialog};
+
+							_combinationDisplay = dayz_combination call fnc_lockCode;
+							if (keypadCancel || {typeName _combinationDisplay == "SCALAR"}) then {
+								_combination_1 = (floor(random 3)) + 100; // 100=red,101=green,102=blue
+								_combination_2 = floor(random 10);
+								_combination_3 = floor(random 10);
+								_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
+								dayz_combination = _combination;
+								if (_combination_1 == 100) then {
+									_combination_1_Display = localize "STR_TEAM_RED";
+								};
+								if (_combination_1 == 101) then {
+									_combination_1_Display = localize "STR_TEAM_GREEN";
+								};
+								if (_combination_1 == 102) then {
+									_combination_1_Display = localize "STR_TEAM_BLUE";
+								};
+								_combinationDisplay = format["%1%2%3",_combination_1_Display,_combination_2,_combination_3];
+							} else {
+								_combination = dayz_combination;
 							};
-							if (_combination_1 == 101) then {
-								_combination_1_Display = localize "STR_TEAM_GREEN";
-							};
-							if (_combination_1 == 102) then {
-								_combination_1_Display = localize "STR_TEAM_BLUE";
-							};
-							_combinationDisplay = format["%1%2%3",_combination_1_Display,_combination_2,_combination_3];
 						};
 
-						case 3: { // 3 combolock
-							_combination_1 = floor(random 10);
-							_combination_2 = floor(random 10);
-							_combination_3 = floor(random 10);
-							_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
-							DZE_Lock_Door = _combination;
+						if (_lockable == 3) exitwith { // 3 combolock
+							DZE_topCombo = 0;
+							DZE_midCombo = 0;
+							DZE_botCombo = 0;
+							DZE_Lock_Door = "";
+							dayz_selectedDoor = objNull;
+
+							dayz_actionInProgress = false;
+							createDialog "ComboLockUI";
+							waitUntil {!dialog};
+							dayz_actionInProgress = true;
+
+							if (keypadCancel || {parseNumber DZE_Lock_Door == 0}) then {
+								_combination_1 = floor(random 10);
+								_combination_2 = floor(random 10);
+								_combination_3 = floor(random 10);
+								_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
+								DZE_Lock_Door = _combination;
+							} else {
+								_combination = DZE_Lock_Door;
+							};
 							_combinationDisplay = _combination;
 						};
 
-						case 4: { // 4 safe
-							_combination_1 = floor(random 10);
-							_combination_2 = floor(random 10);
-							_combination_3 = floor(random 10);
-							_combination_4 = floor(random 10);
-							_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
-							dayz_combination = _combination;
+						if (_lockable == 4) exitwith { // 4 safe
+							dayz_combination = "";
+							dayz_selectedVault = objNull;
+
+							createDialog "SafeKeyPad";
+							waitUntil {!dialog};
+
+							if (keypadCancel || {(parseNumber dayz_combination) > 9999} || {count (toArray (dayz_combination)) < 4}) then {
+								_combination_1 = floor(random 10);
+								_combination_2 = floor(random 10);
+								_combination_3 = floor(random 10);
+								_combination_4 = floor(random 10);
+								_combination = format["%1%2%3%4",_combination_1,_combination_2,_combination_3,_combination_4];
+								dayz_combination = _combination;
+							} else {
+								_combination = dayz_combination;
+							};
 							_combinationDisplay = _combination;
 						};
 					};

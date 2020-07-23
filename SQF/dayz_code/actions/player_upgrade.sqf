@@ -117,14 +117,25 @@ if ((count _upgrade) > 0) then {
 				_object setPosATL _location;
 
 				if (_lockable == 3 && {!(_classname in ["WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"])}) then {
+					DZE_topCombo = 0;
+					DZE_midCombo = 0;
+					DZE_botCombo = 0;
+					DZE_Lock_Door = "";
+					dayz_selectedDoor = objNull;
 
-					_combination_1 = floor(random 10);
-					_combination_2 = floor(random 10);
-					_combination_3 = floor(random 10);
-					_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
+					createDialog "ComboLockUI";
+					waitUntil {!dialog};
 
+					if (keypadCancel || {parseNumber DZE_Lock_Door == 0}) then {
+						_combination_1 = floor(random 10);
+						_combination_2 = floor(random 10);
+						_combination_3 = floor(random 10);
+						_combination = format["%1%2%3",_combination_1,_combination_2,_combination_3];
+						DZE_Lock_Door = _combination;
+					} else {
+						_combination = DZE_Lock_Door;
+					};
 					_objectCharacterID = _combination;
-					DZE_Lock_Door = _combination;
 
 					format[localize "str_epoch_player_158",_combination,_text] call dayz_rollingMessages;
 					systemChat format[localize "str_epoch_player_158",_combination,_text];

@@ -458,7 +458,7 @@ class ComboLockUI
 			y = 0.762017;
 			w = 0.201064;
 			h = 0.233964;
-			onButtonClick = "keypadCancel = false; if (!isNull dayz_selectedDoor) then {call player_unlockDoor;};";
+			onButtonClick = "keypadCancel = false; if (!isNull dayz_selectedDoor) then {call player_unlockDoor;} else {((ctrlParent (_this select 0)) closeDisplay 2);};";
 		};
 	};
 };

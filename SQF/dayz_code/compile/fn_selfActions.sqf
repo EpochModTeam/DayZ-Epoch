@@ -655,11 +655,16 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 		if (s_player_packvault < 0) then {
 			s_player_packvault = player addAction [format["<t color='#ff0000'>%1</t>",format[localize "STR_EPOCH_ACTIONS_PACK",_text]], "\z\addons\dayz_code\actions\vault_pack.sqf",_cursorTarget, 0, false, true];
 		};
+		if (s_player_changeVaultCode < 0 && (_characterID == dayz_combination || _ownerID == _uid)) then {
+			s_player_changeVaultCode = player addAction [format[localize "STR_CL_CC_CODE_CHANGE",_text], "\z\addons\dayz_code\actions\changeCode.sqf",_cursorTarget, 0, false, true];
+		};
 	} else {
 		player removeAction s_player_packvault;
 		s_player_packvault = -1;
 		player removeAction s_player_lockvault;
 		s_player_lockvault = -1;
+		player removeAction s_player_changeVaultCode;
+		s_player_changeVaultCode = -1;
 	};
 
 	//Player Deaths
@@ -723,23 +728,30 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	};
 
 	// downgrade system
-	if (DZE_Lock_Door == _characterID && {!keypadCancel} && {_cursorTarget isKindOf "Land_DZE_WoodDoorLocked_Base" || _cursorTarget isKindOf "CinderWallDoorLocked_DZ_Base"}) then {
-		if ((s_player_lastTarget select 1) != _cursorTarget) then {
-			if (s_player_downgrade_build > 0) then {
-				player removeAction s_player_downgrade_build;
-				s_player_downgrade_build = -1;
+	if (DZE_Lock_Door == _characterID && !keypadCancel) then {
+		if (_cursorTarget isKindOf "Land_DZE_WoodDoorLocked_Base" || _cursorTarget isKindOf "CinderWallDoorLocked_DZ_Base") then {
+			if ((s_player_lastTarget select 1) != _cursorTarget) then {
+				if (s_player_downgrade_build > 0) then {
+					player removeAction s_player_downgrade_build;
+					s_player_downgrade_build = -1;
+				};
 			};
-		};
-		if (s_player_downgrade_build < 0) then {
-			_hasAccess = [player, _cursorTarget] call FNC_check_access;
-			if ((_hasAccess select 0) || {_hasAccess select 2} || {_hasAccess select 3}) then {
-				s_player_lastTarget set [1,_cursorTarget];
-				s_player_downgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_REMLOCK",_text], "\z\addons\dayz_code\actions\player_buildingDowngrade.sqf",_cursorTarget, -2, false, true];
+			if (s_player_downgrade_build < 0) then {
+				_hasAccess = [player, _cursorTarget] call FNC_check_access;
+				if ((_hasAccess select 0) || {_hasAccess select 2} || {_hasAccess select 3}) then {
+					s_player_lastTarget set [1,_cursorTarget];
+					s_player_downgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_REMLOCK",_text], "\z\addons\dayz_code\actions\player_buildingDowngrade.sqf",_cursorTarget, -2, false, true];
+				};
 			};
+		};		
+		if (s_player_changeDoorCode < 0 && {_typeOfCursorTarget in DZE_DoorsLocked}) then {
+			s_player_changeDoorCode = player addAction [format[localize "STR_CL_CC_CODE_CHANGE",_text], "\z\addons\dayz_code\actions\changeCode.sqf",_cursorTarget, 0, false, true];
 		};
 	} else {
 		player removeAction s_player_downgrade_build;
 		s_player_downgrade_build = -1;
+		player removeAction s_player_changeDoorCode;
+		s_player_changeDoorCode = -1;
 	};
 
 	// inplace maintenance tool
@@ -996,6 +1008,10 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	s_player_manageDoor = -1;
 	player removeAction s_player_hide_body;
 	s_player_hide_body = -1;
+	player removeAction s_player_changeDoorCode;
+	s_player_changeDoorCode = -1;
+	player removeAction s_player_changeVaultCode;
+	s_player_changeVaultCode = -1;
 };
 
 //Dog actions on player self

@@ -197,6 +197,8 @@ if (!isDedicated) then {
 		vectorActions = -1;
 		s_player_manageDoor = -1;
 		s_player_hide_body = -1;
+		s_player_changeDoorCode = -1;
+		s_player_changeVaultCode = -1;
 	};
 	call dayz_resetSelfActions;
 	

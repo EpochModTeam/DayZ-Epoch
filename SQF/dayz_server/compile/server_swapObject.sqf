@@ -83,7 +83,7 @@ if (DZE_GodModeBase && {!(_class in DZE_GodModeBaseExclude)}) then {
 	_object addMPEventHandler ["MPKilled",{_this call vehicle_handleServerKilled;}];
 };
 
-if (count _inv > 0) then {
+if (count _inv > 0 && {_class in ["Wooden_shed2_DZ","WoodShack2_DZ","StorageShed2_DZ","GunRack2_DZ","WoodCrate2_DZ","VaultStorage2Locked","LockboxStorage2Locked","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4""DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4","DesertTentStorage0","DesertTentStorage1","DesertTentStorage2","DesertTentStorage3","DesertTentStorage4","StashSmall1","StashSmall2","StashSmall3","StashSmall4","StashMedium","StashMedium1","StashMedium2","StashMedium3","StashMedium4"]}) then {
 	[_weapons,_magazines,_backpacks,_object] call fn_addCargo;
 };
 
