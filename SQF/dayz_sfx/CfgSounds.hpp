@@ -821,4 +821,9 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\blizzard.ogg",1,1};
 		titles[] = {};
 	};
+	class blizzardLow {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\blizzard.ogg",0.5,1};
+		titles[] = {};
+	};
 };
