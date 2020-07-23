@@ -12,7 +12,7 @@
 [NEW] Add 2 new cargo truck versions. A truck for more items and a truck for more weapons. (02c91007) @AirwavesMan
 [NEW] Add option to give another player an antibacterial wipe. (8c074be) @worldwidesorrow
 [NEW] The Maps Podagorsk and Chernarus Winter are in Epoch included now.
-[NEW] Add snowfall to the game. This is enabled on all winter maps by default and can be changed in the configVariables.sqf/DZE_SnowFall (fff1196e) @AirwavesMan
+[NEW] Add snowfall, snowstorm, ground fog and cold breath to the game. This can be enabled in the configVariables.sqf/DZE_WeatherVariables and DZE_Weather @worldwidesorrow
 [NEW] Add Warm Clothes support. configVariables.sqf/DZE_WarmClothes (4058f596) @AirwavesMan
 [NEW] Add shivering - if the players body temperature is under a certain value the shivering starts. Can be defined and disabled with the last value in the DZE_WeatherVariables array. (4058f596) @AirwavesMan
 [NEW] Players can choose among 5 sets of status icons by pressing the F3 key or selecting in the game options menu. @worldwidesorrow
@@ -40,6 +40,8 @@
 [NEW] Lumber can be crafted directly from wooden logs now. (ae79f4ce) @AirwavesMan
 [NEW] DayZ Mod fences and gates can be build now with complete upgrade and snap support. (3724a1f3) @AirwavesMan
 [NEW] Take painkillers, antibiotics and attach or detach an attachment has a sound now. (a69948d5) @AirwavesMan
+[NEW] The Community Localization Stringtable is part of Epoch now. (04a81c15) @AirwavesMan
+[NEW] Salivals Change Code is part of Epoch now. (5e296fc0) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
