@@ -9,7 +9,7 @@ _isWreck = _this select 3;
 
 if (surfaceIsWater _position) exitWith { diag_log "Zombie_Generate: Location is in Water Abort"; };
 
-if (([_position, 15, 10, 70] call fnc_fieldOfView) || {_isWreck}) then {
+if (([_position, 30, 10, 200] call fnc_fieldOfView) || _isWreck) then {
 
 	if (count _unitTypes == 0) then {
 		_unitTypes = getArray (missionConfigFile >> "CfgLoot" >> "Buildings" >> "Default" >> "zombieClass");
