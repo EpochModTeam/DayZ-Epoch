@@ -1,5 +1,5 @@
 //new
-5 '..*' !^(USEC_|NORRN_|BIS_|hit_) !=(totaldmg|actionSet|agentObjectCamps|armed|banditKills|characterID|claimed|combattimeout|deathType|doLoiter|firedDamage) !=(firedHit|freeTarget|headShots|hitRegistered|humanity|humanKills|lastPos|looted|meatHarvested|messing|myDest) !=(owner|remotetargets|temperature|unconsciousTime|updatePlayer|zombieKills|zombieSpawn) !=(blood(taken|_type)|rh_factor) !^$
+5 '..*' !^(USEC_|NORRN_|BIS_|hit_) !=(actionSet|armed|banditKills|characterID|claimed|combattimeout|deathType|doLoiter|firedDamage) !=(firedHit|headShots|hitRegistered|humanity|humanKills|lastPos|looted|meatHarvested|messing|myDest) !=(owner|remotetargets|temperature|unconsciousTime|zombieKills|zombieSpawn) !=(blood(taken|_type)|rh_factor) !^$
 5 ^USEC_!=USEC_(BloodQty|infected|injured|inPain|isCardiac|isDead|lowBlood|Sepsis)
 5 ^NORRN_ !=NORRN_(unconscious|unit_dragged)
 5 ^bis_ !=bis_greeted(by(evil|languages|people|times)|languages|people|times) !=BIS_noCoreConversations
