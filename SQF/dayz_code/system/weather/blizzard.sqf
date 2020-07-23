@@ -13,7 +13,9 @@ _windY = _windspd * (cos _winddir);
 _windZ = 5 - (random 10);
 snow = 1;
 _t = diag_tickTime;
-playSound "blizzard";
+
+// If the player is inside a building play the low volume version of the blizzard sound effect.
+playsound (["blizzard","blizzardLow"] select dayz_inside);
 
 if !(isNil "DZE_WeatherDebugTime") then {diag_log format ["Blizzard started at %1",(diag_tickTime - DZE_WeatherDebugTime)];};
 
@@ -22,11 +24,12 @@ while {!DZE_WeatherEndThread} do {
 	_vel = velocity vehicle player;
 	_i = 0;
 	
+	if (diag_tickTime - _t >= 10) then {
+		playsound (["blizzard","blizzardLow"] select dayz_inside);
+		_t = diag_tickTime;
+	};
+	
 	if (!dayz_inside) then {
-		if (diag_tickTime - _t >= 10) then {
-			playSound "blizzard"; // Blizzard sound is a 10 second clip.
-			_t = diag_tickTime;
-		};
 		while {_i < 25} do {
 			_dpos = [((_pos select 0) + (25 - (random (2*25))) + ((_vel select 0)*6)) - (_windX),((_pos select 1) + (25 - (random (2*25))) + ((_vel select 1)*6)) - (_windY),((_pos select 2) + 3)];
 			// Snow Particles
