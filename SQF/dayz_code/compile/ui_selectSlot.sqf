@@ -19,8 +19,8 @@ if (_button == 1) then {
 
 	_item = gearSlotData _control;
 	if ( //No right click action
-		(!DZE_SelfTransfuse && _item in ["ItemBloodbag","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"]) or
-		(!dayz_groupSystem && _item == "ItemRadio")
+		(!DZE_SelfTransfuse && {_item in ["ItemBloodbag","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"]}) or
+		(!dayz_groupSystem && {_item == "ItemRadio"})
 	) exitWith {};
 	
 	if (mouseOverCarry) then {
