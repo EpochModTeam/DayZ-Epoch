@@ -25,7 +25,6 @@ server_changeCode = {
 	_objectID = _object getVariable ["ObjectID","0"];
 	_objectUID = _object getVariable ["ObjectUID","0"];
 	_ownerID = _object getVariable ["ownerPUID","0"];
-	//_name = if (alive _player) then {name _player;} else {"unknown player";};
 	_name = ["unknown player",name _player] select (alive _player);
 	_clientID = owner _player;
 	_playerUID = getPlayerUID _player;
