@@ -23,7 +23,8 @@ class 50Rnd_762x54_UK59 : 100Rnd_762x54_PK
 
 class 10Rnd_762x54_SVD : CA_Magazine
 {
-	displayName = $STR_DZ_MAG_10RND_762x54_SVD_NAME;	
+	displayName = $STR_DZ_MAG_10RND_762x54_SVD_NAME;
+	descriptionShort = $STR_DZ_MAG_10RND_SVD_DESC;		
 	cartridgeName = "762x54";
 	
 	class ItemActions
