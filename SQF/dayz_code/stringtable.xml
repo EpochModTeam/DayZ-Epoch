@@ -13607,8 +13607,8 @@
 			<Russian>100п. ПК лента</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_762x54_SVD_NAME">
-			<English>10Rnd. SVD mag.</English>
-			<Russian>10п. СВД маг.</Russian>
+			<English>10Rnd. SVD/SVU mag.</English>
+			<Russian>10п. СВД/СВУ маг.</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_NAME">
@@ -15105,6 +15105,17 @@
 			<German>Typ: Leuchtgeschoss &lt;br/&gt;Schuss: 1 &lt;br/&gt;Verwendet in: GP-25 Granatwerfer</German>
 			<Czech>Typ: světlice &lt;br/&gt;Nábojů: 1 &lt;br/&gt;Pro: granátomet GP-25</Czech>			
         </Key>	
+		<Key ID="STR_DZ_MAG_10RND_SVD_DESC">
+			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: SVD, SVU</English>
+			<French>Calibre: 7.62x54mm&lt;br/&gt;Munitions : 10&lt;br/&gt;Utilisé avec: SVD, SVU</French>
+			<Spanish>Calibre: 7.62x54mm&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: SVD, SVU</Spanish>
+			<Italian>Calibro: 7.62x54mm&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: SVD, SVU</Italian>
+			<Polish>Kaliber: 7.62x54mm&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: SVD, SVU</Polish>
+			<Russian>Патрон: 7.62x54mm &lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: SVD, SVU</Russian>
+			<German>Kaliber: 7.62x54mm&lt;br/&gt;Patronen: 10&lt;br/&gt;Verwendet in: SVD, SVU</German>
+			<Czech>Kalibr: 7.62x54mm&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: SVD, SVU</Czech>
+			<Hungarian>Kaliber: 7.62x54mm&lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: SVD, SVU</Hungarian>
+		</Key>		
 		
 		<!-- **** Vehicle Ammo **** -->
 		
@@ -15221,7 +15232,7 @@
 			<German>Kaliber: 7.62x54mm&lt;br/&gt;Patronen: 200&lt;br/&gt;Verwendet in: PKT</German>
 			<Czech>Kalibr: 7.62x54mm&lt;br/&gt;Nábojů: 200&lt;br/&gt;Pro: PKT</Czech>
 			<Hungarian>Kaliber: 7.62x54mm&lt;br/&gt; Töltények: 200&lt;br/&gt; Hozzá tartozó fegyver: PKT</Hungarian>
-		</Key>		
+		</Key>				
 		<Key ID="STR_DZ_MAG_29RND_AGS30_NAME">
 			<English>29Rnd. AGS-30</English>
 			<Russian>29п. AGS-30</Russian>
@@ -25926,6 +25937,18 @@
 			<English>Cooking tripod</English>
 			<German>Schwenkgrill</German>
 		</Key>	
+		<Key ID="STR_EPOCH_VEHUP_DISTANCE_TOO_FAR">
+			<English>You are too far away to upgrade %1!</English>
+			<German>Du bist zu weit entfernt, um %1 abzugraden!</German>
+		</Key>	
+		<Key ID="STR_EPOCH_VEHUP_NO_UPGRADE_FOR_VEHICLE">
+			<English>There is no %1 upgrade for %2 available!</English>
+			<German>Es ist kein %1 Upgrade für %2 verfügbar!</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_NOT_ALLOWED">
+			<English>The vehicle upgrade for %1 got disabled on this server!</English>
+			<German>Das Fahrzeug-Upgrade für %1 wurde auf diesem Server deaktiviert!</German>
+		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
