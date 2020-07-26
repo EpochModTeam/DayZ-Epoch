@@ -20,7 +20,7 @@ if (_removed == 1) then {
 		player addMagazine "ItemHotwireKit";
 	};
 
-	player setVariable ["humanity",((player getVariable["humanity",0]) - 100),true]; // Player loses humanity for hotwiring a vehicle
+	-100 call player_humanityChange; // Player loses humanity for hotwiring a vehicle
 
 	_vehType = getText (configFile >> "CfgVehicles" >> typeOf _vehicle >> "displayName");
 	if ((random 10) <= 7.5) then {
