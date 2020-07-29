@@ -43,3 +43,13 @@
 	//Wholesaler
 	["Profiteer3",[4802.38,7338.27,0],175.745]	
 ] call server_spawnTraders;
+
+// Bankers
+if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+	[
+		//Raven Rock
+		["Functionary1_EP1_DZ",[1386.9,6941.33,0],93],
+		//Raun
+		["Functionary1_EP1_DZ",[3946.33,886.11,0],261]
+	] call server_spawnTraders;
+};
