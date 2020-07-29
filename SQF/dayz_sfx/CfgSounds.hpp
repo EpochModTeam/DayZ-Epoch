@@ -826,4 +826,19 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\blizzard.ogg",0.5,1};
 		titles[] = {};
 	};
+	class Radio_Message_Sound {
+        name = "";
+        sound[] = {"\dayz_sfx\effects\radio.ogg",0.4,1};
+        titles[] = {};
+    };
+	class IWAC_Message_Sound {
+		name="";
+		sound[] = {"\dayz_sfx\effects\IWACsound.ogg",0.4,1};
+		titles[] = {};
+	};
+	class Switch_On_Off {
+		name="";
+		sound[] = {"\dayz_sfx\effects\switch.ogg",0.5,1};
+		titles[] = {};
+	};
 };
