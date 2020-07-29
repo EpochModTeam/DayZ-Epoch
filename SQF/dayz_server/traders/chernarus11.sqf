@@ -58,3 +58,15 @@
 	//Wholesaler
 	["Profiteer3",[4360,2261,0],196]
 ] call server_spawnTraders;
+
+// Bankers
+if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+	[
+		//Stary
+		["Functionary1_EP1_DZ",[6324.71,7787,0],64],
+		//Bash
+		["Functionary1_EP1_DZ",[4057.35,11662.7,0],47],
+		//Klen
+		["Functionary1_EP1_DZ",[11461,11348.6,0],312]
+	] call server_spawnTraders;
+};
