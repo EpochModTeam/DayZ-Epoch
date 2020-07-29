@@ -26,6 +26,12 @@
 			<Czech>Posbírat %1</Czech>
 			<German>%1 aufsammeln</German>
 		</Key>
+		<Key ID="str_actions_radio_on">
+			<English>Radio is turned on</English>
+		</Key>
+		<Key ID="str_actions_radio_off">
+			<English>Radio is turned off</English>
+		</Key>
 		<Key ID="STR_ACTIONS_LIGHTFIRE">
 			<English>Light fire</English>
 			<Russian>Зажечь огонь</Russian>
@@ -24212,6 +24218,9 @@
 			<German>Das Objekt befindet sich zu weit entfernt vom Ort, wo es begonnen wurde zu bauen (innerhalb %1 Meter).</German>
 			<Russian>Объект расположен слишком далеко (%1 м) от места строительства</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_RADIO_STATE">
+			<English>Power On/Off</English>
+		</Key>
 
 		<!-- DOOR MANAGEMENT BELOW -->
 
@@ -25066,6 +25075,9 @@
 			<English>Wholesale</English>
 			<German>Großhandel</German>
 			<Russian>Оптовая торговля</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_CURRENCY">
+			<English>Currency</English>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
