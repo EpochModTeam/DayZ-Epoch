@@ -42,6 +42,8 @@
 [NEW] Take painkillers, antibiotics and attach or detach an attachment has a sound now. (a69948d5) @AirwavesMan
 [NEW] The Community Localization Stringtable is part of Epoch now. (04a81c15) @AirwavesMan
 [NEW] Salivals Change Code is part of Epoch now. (5e296fc0) @AirwavesMan
+[NEW] ZSC with global banking added. Pull request # 2076. @oiad @worldwidesorrow @DevZupa
+[NEW] Remote messaging with localization added. Pull request # 2076. @oiad @worldwidesorrow @BigEgg17
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
