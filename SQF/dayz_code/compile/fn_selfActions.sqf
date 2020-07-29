@@ -812,6 +812,63 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 		s_player_towing = -1;
 	};
 	*/
+	
+	// ZSC
+	if (Z_singleCurrency) then {
+		if (_isMan && !_isAlive && {!(_cursorTarget isKindOf "Animal")}) then {
+			if (s_player_checkWallet < 0) then {
+				s_player_checkWallet = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_CHECK_WALLET"],"\z\addons\dayz_code\actions\zsc\checkWallet.sqf",_cursorTarget,0,false,true];
+			};
+		} else {
+			player removeAction s_player_checkWallet;
+			s_player_checkWallet = -1;
+		};
+		//if (_typeOfCursorTarget in DZE_MoneyStorageClasses && {!_isLocked} && {!(_typeOfCursorTarget in DZE_LockedStorage)}) then {
+		if (_typeOfCursorTarget in DZE_MoneyStorageClasses && !_isLocked) then {
+			if (s_bank_dialog < 0) then {
+				s_bank_dialog = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_ACCESS_BANK"],"\z\addons\dayz_code\actions\zsc\bankDialog.sqf",_cursorTarget,1,true,true];
+			};
+		} else {
+			player removeAction s_bank_dialog;
+			s_bank_dialog = -1;
+		};
+		if (ZSC_VehicleMoneyStorage) then {
+			if (_isVehicle && !_isMan && !_isLocked && _isAlive) then {
+				if (s_bank_dialog3 < 0) then {
+					s_bank_dialog3 = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_ACCESS_BANK"],"\z\addons\dayz_code\actions\zsc\vehDialog.sqf",_cursorTarget,1,true,true];
+				};
+			} else {
+				player removeAction s_bank_dialog3;
+				s_bank_dialog3 = -1;
+			};
+		};
+		if (_isAlive && {_typeOfCursorTarget in AllPlayers} && {isPlayer _cursorTarget}) then {
+			if (s_givemoney_dialog < 0) then {
+				s_givemoney_dialog = player addAction [format["<t color='#0059FF'>%1</t>",format [localize "STR_CL_ZSC_TRADE_COINS",CurrencyName,name _cursorTarget]],"\z\addons\dayz_code\actions\zsc\givePlayer.sqf",_cursorTarget,3,true,true];
+			};
+		} else {
+			player removeAction s_givemoney_dialog;
+			s_givemoney_dialog = -1;
+		};
+		if (Z_globalBanking) then {
+			if (_isMan && {!(isPlayer _cursorTarget)} && {_typeOfCursorTarget in ZSC_bankTraders}) then {
+				if (s_bank_dialog1 < 0) then {
+					s_bank_dialog1 = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_BANK_TELLER"],"\z\addons\dayz_code\actions\zsc\atmDialog.sqf",_cursorTarget,3,true,true];
+				};
+			} else {
+				player removeAction s_bank_dialog1;
+				s_bank_dialog1 = -1;
+			};
+			if (_typeOfCursorTarget in ZSC_bankObjects) then {
+				if (s_bank_dialog2 < 0) then {
+					s_bank_dialog2 = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_BANK_ATM"],"\z\addons\dayz_code\actions\zsc\atmDialog.sqf",_cursorTarget,3,true,true];
+				};
+			} else {
+				player removeAction s_bank_dialog2;
+				s_bank_dialog2 = -1;
+			};
+		};
+	};
 
 	// All Traders
 	if (_isMan && {!(isPlayer _cursorTarget)} && {_typeOfCursorTarget in serverTraders}) then {
@@ -1012,6 +1069,18 @@ if (!isNull _cursorTarget && {!_inVehicle} && {!_isPZombie} && {player distance 
 	s_player_changeDoorCode = -1;
 	player removeAction s_player_changeVaultCode;
 	s_player_changeVaultCode = -1;
+	player removeAction s_givemoney_dialog;
+	s_givemoney_dialog = -1;
+	player removeAction s_bank_dialog;
+	s_bank_dialog = -1;
+	player removeAction s_bank_dialog1;
+	s_bank_dialog1 = -1;
+	player removeAction s_bank_dialog2;
+	s_bank_dialog2 = -1;
+	player removeAction s_bank_dialog3;
+	s_bank_dialog3 = -1;
+	player removeAction s_player_checkWallet;
+	s_player_checkWallet = -1;
 };
 
 //Dog actions on player self
