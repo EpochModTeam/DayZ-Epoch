@@ -38,7 +38,7 @@ server_changeCode = {
 	_weapons = getWeaponCargo _object;
 	_magazines = getMagazineCargo _object;
 	_backpacks = getBackpackCargo _object;
-	if (Z_singleCurrency) then {_coins = _object getVariable [Z_MoneyVariable,0];};
+	if (Z_singleCurrency) then {_coins = _object getVariable ["cashMoney",0];};
 
 	[_objectID,_objectUID,_object] call server_deleteObjDirect;
 
@@ -58,7 +58,7 @@ server_changeCode = {
 		_worldSpace = [_dir,_pos];
 	};
 
-	if (Z_singleCurrency) then {_holder setVariable [Z_MoneyVariable,_coins,true];};
+	if (Z_singleCurrency) then {_holder setVariable ["cashMoney",_coins,true];};
 
 	_objectUID = _worldSpace call dayz_objectUID2;
 	_holder setVariable ["ObjectUID",_objectUID,true];
