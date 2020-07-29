@@ -61,7 +61,7 @@ _maintain = {
 
 	_enoughMoney = false;
 	_moneyInfo = [false, [], [], [], 0];
-	_wealth = player getVariable[Z_MoneyVariable,0];
+	_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 
 	if (Z_SingleCurrency) then {
 		_enoughMoney = (_wealth >= _amount);
@@ -84,7 +84,7 @@ _maintain = {
 
 			systemChat format[localize "STR_EPOCH_ACTIONS_4",_count];
 			if (Z_SingleCurrency) then {
-				player setVariable[Z_MoneyVariable,(_wealth - _amount),true];
+				player setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth - _amount),true];
 				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS",_count,[_amount] call BIS_fnc_numberText,_itemText];
 			} else {
 				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS",_count,_itemText,""];

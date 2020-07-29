@@ -1170,9 +1170,9 @@ class FSM
                          "r_player_rh = player getVariable [""rh_factor"", false];" \n
                          "" \n
                          "if (Z_SingleCurrency) then {" \n
-                         "	player setVariable [Z_MoneyVariable, _characterCoins, true];" \n
-                         "	player setVariable [Z_globalVariable, _globalCoins, true];" \n
-                         "	player setVariable [Z_BankVariable, _bankCoins, true];" \n
+                         "	player setVariable [""cashMoney"", _characterCoins, true];" \n
+                         "	player setVariable [""globalMoney"", _globalCoins, true];" \n
+                         "	player setVariable [""bankMoney"", _bankCoins, true];" \n
                          "};" \n
                          "dayz_musicH = [] spawn player_music;" \n
                          "dayz_slowCheck = 	[] spawn player_spawn_2;" \n

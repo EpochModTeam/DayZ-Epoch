@@ -1,15 +1,15 @@
 // DayZ Epoch TRADERS for 17
-serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","RU_Citizen4","Profiteer1","Rita_Ensler_EP1","Dr_Hladik_EP1","Worker2","TK_CIV_Worker01_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","RU_WorkWoman5","Doctor","Worker1","TK_CIV_Worker02_EP1","Rocker4","RU_Citizen3","RU_WorkWoman1","Dr_Annie_Baker_EP1","Worker3","RU_Pilot","RU_Villager3","HouseWife1","Profiteer2","Profiteer3"];
+serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","RU_Citizen4","Profiteer1","Rita_Ensler_EP1","Dr_Hladik_EP1","Worker2","TK_CIV_Worker01_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","RU_WorkWoman5","Doctor","Worker1","TK_CIV_Worker02_EP1","Rocker4","RU_Citizen3","RU_WorkWoman1","Dr_Annie_Baker_EP1","Worker3","RU_Pilot","RU_Villager3","HouseWife1","Profiteer2","Profiteer3","Functionary1_EP1_DZ"];
 
 /***************Hero Vendor*********/
 menu_FR_AC = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",1],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",2],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",3],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",4],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",5]],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",1],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",2],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",3],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",4],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",5],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
 	[],
 	"hero"
 ];
 /***************Bandit Vendor*********/
 menu_GUE_Commander = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",6],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",7],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",8],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",9],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",10]],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",6],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",7],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",8],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",9],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",10],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
 	[],
 	"hostile"
 ];
@@ -50,7 +50,7 @@ menu_Dr_Hladik_EP1 = [
 
 /***************Building/Parts*********/
 menu_Worker2 = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
 	[],
 	"neutral"
 ];
@@ -94,7 +94,7 @@ menu_Doctor = [
 
 /***************Building/Parts*********/
 menu_Worker1 = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
 	[],
 	"neutral"
 ];
@@ -137,7 +137,7 @@ menu_Dr_Annie_Baker_EP1 = [
 
 /***************Building/Parts*********/
 menu_Worker3 = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
 	[],
 	"friendly"
 ];
@@ -182,4 +182,11 @@ menu_Profiteer3 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_WHOLESALE",50]],
 	[],
 	"neutral"
+];
+
+/***************Banker*********/
+menu_Functionary1_EP1_DZ = [
+	[[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]],
+    [],
+    "neutral"
 ];

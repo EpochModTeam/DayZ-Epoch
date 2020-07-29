@@ -56,3 +56,15 @@
 	//Wholesaler
 	["Profiteer3",[2446.07,3899.76,0],262.573]	
 ] call server_spawnTraders;
+
+// Bankers
+if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+	[
+		//Seedorf
+		["Functionary1_EP1_DZ",[15488.6,17014.2,0],172],
+		//Oberdorf
+		["Functionary1_EP1_DZ",[13160.8,6624.8,0],134],
+		//Oberberg
+		["Functionary1_EP1_DZ",[24738.5,21748.2,0],62]
+	] call server_spawnTraders;
+};

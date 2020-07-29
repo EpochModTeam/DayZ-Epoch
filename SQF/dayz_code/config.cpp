@@ -130,6 +130,7 @@ class DefaultEventhandlers {
 #include "external\R3F_Realism\R3F_Weight\R3F_CfgWeight.hpp"
 #include "Configs\RscDisplay\doorManagement\doorManagement.hpp"
 #include "Configs\RscDisplay\doorManagement\doorAccess.hpp"
+#include "Configs\RscDisplay\zscDialogs.hpp"
 
 class CfgTasks
 {

@@ -200,7 +200,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		_object setVariable ["ObjectID", _idKey, true];
 		_object setVariable ["OwnerPUID", _ownerPUID, true];
 		if (Z_SingleCurrency && {_type in DZE_MoneyStorageClasses}) then {
-			_object setVariable [Z_MoneyVariable, _storageMoney, true];
+			_object setVariable ["cashMoney", _storageMoney, true];
 		};
 
 		dayz_serverIDMonitor set [count dayz_serverIDMonitor,_idKey];
@@ -339,8 +339,8 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	// prevent immediate hive write when vehicle parts are set up
 	_object setVariable ["lastUpdate",diag_ticktime];
 	_object setVariable ["ObjectID", _idKey, true];
-	if (Z_SingleCurrency && {_type in DZE_MoneyStorageClasses}) then {
-		_object setVariable [Z_MoneyVariable, _storageMoney, true];
+	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage) then {
+		_object setVariable ["cashMoney", _storageMoney, true];
 	};
 
 	dayz_serverIDMonitor set [count dayz_serverIDMonitor,_idKey];

@@ -324,3 +324,20 @@ if (dayz_humanitytarget != _string) then {
 	_targetControl ctrlSetStructuredText (parseText _string);
 	dayz_humanitytarget = _string;
 };
+
+// ZSC
+if (Z_singleCurrency) then {
+	_display = uiNameSpace getVariable "ZSC_Money_Display";
+	_ctrlZSC = _display displayCtrl 4900;
+	_string = "";
+	if (Z_showCurrencyUI) then {
+		_cashAmt = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
+		_string = format ["<t size='0.9'>%1 </t><img size='1.4' align='right' image='\z\addons\dayz_code\gui\zsc\coins.paa'/><br/>",[_cashAmt] call BIS_fnc_numberText];
+	};
+	if (Z_globalBanking && Z_showBankUI) then {
+		_bankAmt = player getVariable ["bankMoney",0];
+		_string = _string + format ["<t size='0.9'>%1 </t><img size='1.4' align='right' image='\z\addons\dayz_code\gui\zsc\bank.paa'/><br/>",[_bankAmt] call BIS_fnc_numberText];
+	};
+	_ctrlZSC ctrlSetStructuredText parseText _string;
+	_ctrlZSC ctrlCommit 0;
+};

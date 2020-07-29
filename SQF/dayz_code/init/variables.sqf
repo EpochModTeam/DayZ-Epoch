@@ -199,6 +199,12 @@ if (!isDedicated) then {
 		s_player_hide_body = -1;
 		s_player_changeDoorCode = -1;
 		s_player_changeVaultCode = -1;
+		s_givemoney_dialog = -1;
+		s_bank_dialog = -1;
+		s_bank_dialog1 = -1;
+		s_bank_dialog2 = -1;
+		s_bank_dialog3 = -1;
+		s_player_checkWallet = -1;
 	};
 	call dayz_resetSelfActions;
 	

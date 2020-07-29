@@ -16,6 +16,7 @@ sched_gui = {
 				"playerStatusGUI_legacy";
 			};
 			3 cutRsc [_ui,"PLAIN",0];
+			if (Z_singleCurrency) then {16 cutRsc ["ZSC_Money_Display","PLAIN"];};
 		} else {
 			[] spawn {uiSleep 2; systemChat (localize "STR_UI_STATUS_ICONS_TOOLTIP");};
 			//This can be removed after friendlies system is removed from player_updateGUI

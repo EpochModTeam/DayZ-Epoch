@@ -58,3 +58,15 @@
 	//Wholesaler
 	["Profiteer3",[13558.3,8684.33,0],184.643]	
 ] call server_spawnTraders;
+
+// Bankers
+if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+	[
+		//Corazol
+		["Functionary1_EP1_DZ",[12552.1,8355.03,0],29],
+		//Bagango
+		["Functionary1_EP1_DZ",[14264.6,12431.2,0],97],
+		//Ixel
+		["Functionary1_EP1_DZ",[17189,13596.6,0],160]
+	] call server_spawnTraders;
+};

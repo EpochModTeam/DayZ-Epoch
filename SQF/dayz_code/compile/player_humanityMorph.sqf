@@ -32,9 +32,9 @@ _friendlies = player getVariable ["friendlies",[]];
 _tagSetting = player getVariable ["DZE_display_name",false];
 
 if (Z_SingleCurrency) then {
-	_coins = player getVariable [Z_moneyVariable,0];
-	_bankCoins = player getVariable [Z_bankVariable,0];
-	_globalCoins = player getVariable [Z_globalVariable,0];
+	_coins = player getVariable ["cashMoney",0];
+	_bankCoins = player getVariable ["bankMoney",0];
+	_globalCoins = player getVariable ["globalMoney",0];
 };
 
 //Switch
@@ -98,9 +98,9 @@ player setVariable ["friendlies",_friendlies,true];
 player setVariable ["DZE_display_name",_tagSetting,true];
 
 if (Z_SingleCurrency) then {
-	player setVariable [Z_moneyVariable,_coins,true];
-	player setVariable [Z_bankVariable,_bankCoins,true];
-	player setVariable [Z_globalVariable,_globalCoins,true];
+	player setVariable ["cashMoney",_coins,true];
+	player setVariable ["bankMoney",_bankCoins,true];
+	player setVariable ["globalMoney",_globalCoins,true];
 };
 
 //PVDZ_serverStoreVar = [player,"Achievements",_achievements];

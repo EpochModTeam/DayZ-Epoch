@@ -46,3 +46,13 @@
 	//Wholesaler
 	["Profiteer3",[7132.36,6479.76,0],88]
 ] call server_spawnTraders;
+
+// Bankers
+if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+	[
+		//Lissabon
+		["Functionary1_EP1_DZ",[4349.68,6725.49,0],179],
+		//Riad
+		["Functionary1_EP1_DZ",[5883.27,3548.17,0],225]
+	] call server_spawnTraders;
+};

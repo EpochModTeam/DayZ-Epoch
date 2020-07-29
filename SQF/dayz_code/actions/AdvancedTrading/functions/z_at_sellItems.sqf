@@ -215,8 +215,8 @@ if (Z_SingleCurrency) then {
 
 if (typeName _money  == "SCALAR") then {
 	if (Z_SingleCurrency) then {
-		_wealth = player getVariable[Z_MoneyVariable,0];
-		player setVariable[Z_MoneyVariable,(_wealth + _money),true];
+		_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
+		player setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth + _money),true];
 		systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_CHANGE",[_money] call BIS_fnc_numberText,CurrencyName];
 	} else {
 		_success = [_money,0,false,0,[],[],false] call Z_returnChange;

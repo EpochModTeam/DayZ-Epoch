@@ -96,7 +96,7 @@ if (Z_SingleCurrency) then {
 _canBuy = [_weaponsToBuy,[_pistolMagsToBuy,_regularMagsToBuy],_backpacksToBuy,_toolsToBuy,_sidearmToBuy,_primaryToBuy,_vehiclesToBuy,_toolClasses,_toolAmounts] call Z_allowBuying;
 if (!_canBuy) exitWith {}; // Keep systemChat reasons for failure in Z_allowBuying for sanity
 
-_wealth = player getVariable[Z_MoneyVariable,0];
+_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 
 _enoughMoney = false;
 
@@ -255,7 +255,7 @@ if (_enoughMoney) then {
 
 	if (_success) then {
 		if (Z_SingleCurrency) then {
-			player setVariable[Z_MoneyVariable,(_wealth - _priceToBuy),true];
+			player setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth - _priceToBuy),true];
 			systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_COINS",[_priceToBuy] call BIS_fnc_numberText,CurrencyName];
 		} else {
 			_tCost = "";

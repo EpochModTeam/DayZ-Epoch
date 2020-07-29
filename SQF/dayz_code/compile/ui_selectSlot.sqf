@@ -19,8 +19,7 @@ if (_button == 1) then {
 
 	_item = gearSlotData _control;
 	if ( //No right click action
-		(!DZE_SelfTransfuse && {_item in ["ItemBloodbag","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"]}) or
-		(!dayz_groupSystem && {_item == "ItemRadio"})
+		(!DZE_SelfTransfuse && {_item in ["ItemBloodbag","wholeBloodBagANEG","wholeBloodBagAPOS","wholeBloodBagBNEG","wholeBloodBagBPOS","wholeBloodBagABNEG","wholeBloodBagABPOS","wholeBloodBagONEG","wholeBloodBagOPOS"]})
 	) exitWith {};
 	
 	if (mouseOverCarry) then {
@@ -40,7 +39,8 @@ if (_button == 1) then {
 	_cfgActions = _conf >> "ItemActions";
 	_numActions = (count _cfgActions);
 	_height = 0;
-
+	if (!dayz_groupSystem && {_item == "ItemRadio"}) then {_numActions = 1;}; // Used to bypass the group action when not enabled.
+	
 	//Populate Menu
 	for "_i" from 0 to (_numActions - 1) do
 	{

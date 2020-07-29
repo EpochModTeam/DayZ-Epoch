@@ -3,6 +3,11 @@ class ItemRadio : ItemCore
 	model = "\nst\ns_dayz\items\radio\radio_dzn.p3d";
 	class ItemActions
 	{
+		class Power
+		{
+			text = $STR_EPOCH_RADIO_STATE;
+			script = "call fnc_radioState;";
+		};
 		class Groups
 		{
 			text = $STR_EPOCH_GROUPS_KEY;

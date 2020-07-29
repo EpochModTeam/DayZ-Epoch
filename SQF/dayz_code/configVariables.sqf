@@ -12,7 +12,6 @@ if (isServer) then {
 	MaxAmmoBoxes = 3; // Max number of random Supply_Crate_DZE filled with vehicle ammo to spawn around the map
 	MaxMineVeins = 50; // Max number of random mine veins to spawn around the map
 	DZE_TRADER_SPAWNMODE = false; // Vehicles purchased at traders will be parachuted in
-	DZE_MoneyStorageClasses = []; // If using single currency this is an array of object classes players can store coins in.
 	EpochEvents = []; // [year,month,day of month, minutes,name of file - .sqf] If minutes is set to -1, the event will run once immediately after server start.
 	MaxDynamicDebris = 100; // Max number of random road blocks to spawn around the map
 	MaxVehicleLimit = 50; // Max number of random vehicles to spawn around the map
@@ -91,7 +90,6 @@ if (!isDedicated) then {
 	DZE_keepVehicleKey = false; // Keep the vehicle key when the vehicle is sold? (Useful on servers with the key changer mod)
 	Z_AllowTakingMoneyFromBackpack = true; // Allow traders to take money from backpacks when buying with default currency.
 	Z_AllowTakingMoneyFromVehicle = true; // Allow traders to take money from vehicles when buying with default currency.
-	CurrencyName = "Coins"; // If using single currency this is the currency display name.
 	
 	// Plot Management and Plot for Life
 	DZE_plotManagementMustBeClose = false; //Players must be within 10m of pole to be added as a plot friend.
@@ -167,11 +165,22 @@ DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the
 DZE_DeathMsgRolling = false; // Display death messages as rolling messages in bottom center of screen.
 
 // ZSC
-Z_SingleCurrency = false; // Does your server use a single currency system?
-Z_moneyVariable = "cashMoney"; // If using single currency this is the variable name used to store player wealth.
-Z_bankVariable = "moneySpecial"; // If using single currency this is the variable name used to store object bank wealth.
-Z_globalVariable = "GlobalMoney"; // If using single currency this is the variable name used to store coins globally.
+Z_SingleCurrency = false; // Enable single currency system.
+Z_globalBanking = false; // Enable global banking system.
+Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.
+Z_persistentMoney = false; // Enabling this stores currency to player_data instead of character_data. Currency transfers to a new character after death. For PVE servers only. Formerly called "GlobalMoney".
 Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
+Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
+Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
+CurrencyName = "Coins"; // If using single currency this is the currency display name.
+ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+ZSC_bankTraders = ["Functionary1_EP1_DZ"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1_DZ)
+ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
+ZSC_maxBankMoney = 500000; // Default limit for bank objects.
+DZE_MoneyStorageClasses = ["VaultStorage","LockboxStorage"]; // If using single currency this is an array of object classes players can store coins in.
+ZSC_VehicleMoneyStorage = true; // Allow players to store money in vehicles. If vehicles are destroyed the money is also destroyed.
+ZSC_defaultStorageMultiplier = 200; // Default magazine count for bank objects that don't have storage slots i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+ZSC_MaxMoneyInStorageMultiplier = 5000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
 
 // Plot Management and Plot for Life
 DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.

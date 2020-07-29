@@ -52,7 +52,7 @@ server_obj_inv = {
 		};
 
 		if (Z_SingleCurrency) then {
-			_coins = _object getVariable [Z_MoneyVariable, -1]; //set to invalid value if getVariable fails to prevent overwriting of coins in DB
+			_coins = _object getVariable ["cashMoney", -1]; //set to invalid value if getVariable fails to prevent overwriting of coins in DB
 			_key = _key + str _coins + ":";
 		};
 

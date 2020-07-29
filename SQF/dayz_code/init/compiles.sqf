@@ -12,6 +12,7 @@ if (!isDedicated) then {
 	
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
+	if (Z_SingleCurrency) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\zsc\zscFunctions.sqf";};
 	
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\handleGearFunctions.sqf";
 	fn_handleGear = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\handleGear.sqf";
@@ -191,6 +192,9 @@ if (!isDedicated) then {
 	MaintainPlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\maintain_area.sqf";
 	FNC_check_access = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_check_access.sqf";
 	fnc_usec_damageHandler = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_damageHandler.sqf";		//Event handler run on damage
+	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
+	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
+	fnc_remoteMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_remoteMessage.sqf";
 	
 	// Weather
 	if (DZE_Weather in [3,4]) then {

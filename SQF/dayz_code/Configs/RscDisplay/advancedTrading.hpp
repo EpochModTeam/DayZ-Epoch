@@ -1,6 +1,8 @@
 class AdvancedTrading
 {
 	idd = 711197;
+	onload = "player setVariable['isBusy',true,true];"; 
+	onUnload = "player setVariable['isBusy',false,true];";
 	class Controls {
 		class RscText_ATBackground1
 		{
