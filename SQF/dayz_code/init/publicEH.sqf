@@ -225,5 +225,6 @@ if (!isDedicated) then {
 		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\client_flies.sqf";
 	};
 	"PVDZE_PingReceived" addPublicVariableEventHandler {DZE_LastPingResp = diag_tickTime;};
-	"PVDZE_SetWeather" addPublicVariableEventHandler {(_this select 1) call fnc_setWeather;};																					  
+	"PVDZE_SetWeather" addPublicVariableEventHandler {(_this select 1) call fnc_setWeather;};
+	"RemoteMessage" addPublicVariableEventHandler {(_this select 1) call fnc_remoteMessage;};	
 };
