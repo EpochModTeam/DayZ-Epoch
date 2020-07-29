@@ -26,3 +26,13 @@
 	//Wholesaler
 	["Profiteer2",[6237.6626, 11939.934,0],90]
 ] call server_spawnTraders;
+
+// Bankers
+if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+	[
+		["Functionary1_EP1_DZ",[4339.7476,4785.6826,4.529953e-006],-124.0745],
+		["Functionary1_EP1_DZ",[4711.7993,8922.0303,-9.5367432e-006],93.216309],
+		["Functionary1_EP1_DZ",[5793.0386,10780.646,-1.9073486e-006],95.136726],
+		["Functionary1_EP1_DZ",[7322.6367,7988.499,-3.8146973e-005],-65.537285]
+	] call server_spawnTraders;
+};
