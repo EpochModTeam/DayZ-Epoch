@@ -1,0 +1,65 @@
+DayZ Epoch Currency Values
+
+Item					Worth
+**Silver Bars**
+ItemSilverBar			1
+ItemSilverBar2oz		2
+ItemSilverBar3oz		3
+ItemSilverBar4oz		4
+ItemSilverBar5oz		5
+ItemSilverBar6oz		6
+ItemSilverBar7oz		7
+ItemSilverBar8oz		8
+ItemSilverBar9oz		9
+ItemSilverBar10oz		10
+
+**Silver Briefcases**
+ItemBriefcaseS10oz		10
+ItemBriefcaseS20oz		20
+ItemBriefcaseS30oz		30
+ItemBriefcaseS40oz		40
+ItemBriefcaseS50oz		50
+ItemBriefcaseS60oz		60
+ItemBriefcaseS70oz		70
+ItemBriefcaseS80oz		80
+ItemBriefcaseS90oz		90
+ItemBriefcaseS100oz		100
+
+**Gold Bars**
+ItemGoldBar				100
+ItemGoldBar2oz			200
+ItemGoldBar3oz			300
+ItemGoldBar4oz			400
+ItemGoldBar5oz			500
+ItemGoldBar6oz			600
+ItemGoldBar7oz			700
+ItemGoldBar8oz			800
+ItemGoldBar9oz			900
+ItemGoldBar10oz			1000
+
+**Gold Briefcases**
+ItemBriefcase10oz		1000
+ItemBriefcase20oz		2000
+ItemBriefcase30oz		3000
+ItemBriefcase40oz		4000
+ItemBriefcase50oz		5000
+ItemBriefcase60oz		6000
+ItemBriefcase70oz		7000
+ItemBriefcase80oz		8000
+ItemBriefcase90oz		9000
+ItemBriefcase100oz		10000
+
+**Gems**
+ItemTopaz				15000
+ItemObsidian			20000
+ItemSapphire			25000
+ItemAmethyst			30000
+ItemEmerald				35000
+ItemCitrine				40000
+ItemRuby				45000
+
+The values of gems are configurable in DZE_GemWorthArray in configVariables.sqf
+Aluminum bars, bronze bars, and copper bars have no assigned worth and are unused in DayZ Epoch.
+Tin bars have no assigned worth, but can be used for making spare keys with the key maker's kit.
+Tin bars can be smelted from 6 empty tin cans at a fire source.
+
