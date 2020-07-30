@@ -342,7 +342,7 @@ class T810_DZE_Base_ACR: Truck
 class T810A_PKT_ACR_DZ: T810_DZE_Base_ACR
 {
 	scope = 2;
-	displayname = $STR_VEH_NAME_TATRA_PKT_WOODLAND;
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WOODLAND";
 	model = "\CorePatch\CorePatch_Vehicles\models\T810_vp2_ACR";
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_T810_MG_CA.paa";
 	class AnimationSources: AnimationSources
@@ -442,25 +442,108 @@ class T810A_PKT_ACR_DZE: T810A_PKT_ACR_DZ
 			};
 		};
 	};
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_PKT_ACR_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_PKT_ACR_DZE1: T810A_PKT_ACR_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WOODLAND+";
+	original = "T810A_PKT_ACR_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_PKT_ACR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810A_PKT_ACR_DZE2: T810A_PKT_ACR_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WOODLAND++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_PKT_ACR_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_PKT_ACR_DZE3: T810A_PKT_ACR_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WOODLAND+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_PKT_ACR_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810A_PKT_ACR_DZE4: T810A_PKT_ACR_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_WOODLAND++++";
+	fuelCapacity = 615;	
 };
 
 class T810A_PKT_DES_ACR_DZ: T810A_PKT_ACR_DZ
 {
-	displayname = $STR_VEH_NAME_TATRA_PKT_DESERT;
+	displayname = "$STR_VEH_NAME_TATRA_PKT_DESERT";
 	hiddenSelections[] = {"camo1","camo2","camo3"};
 	hiddenSelectionsTextures[] = {"Ca\Wheeled_ACR\T810\data\cabin2_des_CO.paa","Ca\Wheeled_ACR\T810\data\bed_desert_co.paa","Ca\Wheeled_ACR\T810\data\undercarriage_des_CO.paa"};	
 };
 
 class T810A_PKT_DES_ACR_DZE: T810A_PKT_ACR_DZE
 {
-	displayname = $STR_VEH_NAME_TATRA_PKT_DESERT;
+	displayname = "$STR_VEH_NAME_TATRA_PKT_DESERT";
 	hiddenSelections[] = {"camo1","camo2","camo3"};
 	hiddenSelectionsTextures[] = {"Ca\Wheeled_ACR\T810\data\cabin2_des_CO.paa","Ca\Wheeled_ACR\T810\data\bed_desert_co.paa","Ca\Wheeled_ACR\T810\data\undercarriage_des_CO.paa"};	
+
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_PKT_DES_ACR_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_PKT_DES_ACR_DZE1: T810A_PKT_DES_ACR_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_DESERT+";
+	original = "T810A_PKT_DES_ACR_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_PKT_DES_ACR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810A_PKT_DES_ACR_DZE2: T810A_PKT_DES_ACR_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_DESERT++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_PKT_DES_ACR_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_PKT_DES_ACR_DZE3: T810A_PKT_DES_ACR_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_DESERT+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_PKT_DES_ACR_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810A_PKT_DES_ACR_DZE4: T810A_PKT_DES_ACR_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_PKT_DESERT++++";
+	fuelCapacity = 615;	
 };
 
 class T810A_ACR_DZE: T810A_PKT_ACR_DZ
 {
-	displayname = $STR_VEH_NAME_TATRA_WOODLAND;
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND";
 	transportSoldier = 12;
 	cargoIsCoDriver[] = {1,1,0};	
 	class Turrets {};
@@ -474,18 +557,116 @@ class T810A_ACR_DZE: T810A_PKT_ACR_DZ
 			initPhase = 0;
 		};
 	};
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_ACR_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"T810A_PKT_ACR_DZE",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DZE1: T810A_ACR_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND+";
+	original = "T810A_ACR_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_ACR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckARM[] = {"T810A_PKT_ACR_DZE1",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DZE2: T810A_ACR_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_ACR_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"T810A_PKT_ACR_DZE2",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DZE3: T810A_ACR_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_ACR_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckARM[] = {"T810A_PKT_ACR_DZE3",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DZE4: T810A_ACR_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND++++";
+	fuelCapacity = 615;	
+	
+	class Upgrades {
+		ItemTruckARM[] = {"T810A_PKT_ACR_DZE4",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
 };	
 
 class T810A_ACR_DES_DZE: T810A_ACR_DZE
 {
-	displayname = $STR_VEH_NAME_TATRA_DESERT;
+	displayname = "$STR_VEH_NAME_TATRA_DESERT";
 	hiddenSelections[] = {"camo1","camo2","camo3","camo6"};
 	hiddenSelectionsTextures[] = {"Ca\Wheeled_ACR\T810\data\cabin_desert_co.paa","Ca\Wheeled_ACR\T810\data\bed_desert_co.paa","Ca\Wheeled_ACR\T810\data\undercarriage_des_CO.paa","Ca\Wheeled_ACR\T810\data\T810_desert_mlod_CO.paa"};
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_ACR_DES_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"T810A_PKT_DES_ACR_DZE",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DES_DZE1: T810A_ACR_DES_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_DESERT+";
+	original = "T810A_ACR_DES_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_ACR_DES_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckARM[] = {"T810A_PKT_DES_ACR_DZE1",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DES_DZE2: T810A_ACR_DES_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_DESERT++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_ACR_DES_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckARM[] = {"T810A_PKT_DES_ACR_DZE2",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DES_DZE3: T810A_ACR_DES_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_DESERT+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_ACR_DES_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckARM[] = {"T810A_PKT_DES_ACR_DZE3",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DES_DZE4: T810A_ACR_DES_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_DESERT++++";
+	fuelCapacity = 615;	
+	
+	class Upgrades {
+		ItemTruckARM[] = {"T810A_PKT_DES_ACR_DZE4",{"ItemToolbox","ItemCrowbar"},{"PKM_DZ"},{{"ItemTruckARM",1},{"PartGeneric",4},{"equip_metal_sheet",2},{"ItemScrews",2}}};
+	};	
 };
 
 class T810A_ACR_OPEN_DZE: T810A_ACR_DZE
 {
-	displayname = $STR_VEH_NAME_TATRA_OPEN_WOODLAND;
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_WOODLAND";
 	class AnimationSources: AnimationSources
 	{
 		class Select_plachta
@@ -495,18 +676,101 @@ class T810A_ACR_OPEN_DZE: T810A_ACR_DZE
 			initPhase = 1;
 		};
 	};
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_ACR_OPEN_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_OPEN_DZE1: T810A_ACR_OPEN_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_WOODLAND+";
+	original = "T810A_ACR_OPEN_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_ACR_OPEN_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810A_ACR_OPEN_DZE2: T810A_ACR_OPEN_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_WOODLAND++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_ACR_OPEN_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_OPEN_DZE3: T810A_ACR_OPEN_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_WOODLAND+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_ACR_OPEN_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810A_ACR_OPEN_DZE4: T810A_ACR_OPEN_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_WOODLAND++++";
+	fuelCapacity = 615;	
 };
 
 class T810A_ACR_DES_OPEN_DZE: T810A_ACR_OPEN_DZE
 {
-	displayname = $STR_VEH_NAME_TATRA_OPEN_DESERT;
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_DESERT";
 	hiddenSelections[] = {"camo1","camo2","camo3","camo6"};
 	hiddenSelectionsTextures[] = {"Ca\Wheeled_ACR\T810\data\cabin_desert_co.paa","Ca\Wheeled_ACR\T810\data\bed_desert_co.paa","Ca\Wheeled_ACR\T810\data\undercarriage_des_CO.paa","Ca\Wheeled_ACR\T810\data\T810_desert_mlod_CO.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_ACR_DES_OPEN_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DES_OPEN_DZE1: T810A_ACR_DES_OPEN_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_DESERT+";
+	original = "T810A_ACR_DES_OPEN_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_ACR_DES_OPEN_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810A_ACR_DES_OPEN_DZE2: T810A_ACR_DES_OPEN_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_DESERT++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_ACR_DES_OPEN_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class T810A_ACR_DES_OPEN_DZE3: T810A_ACR_DES_OPEN_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_DESERT+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_ACR_DES_OPEN_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810A_ACR_DES_OPEN_DZE4: T810A_ACR_DES_OPEN_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_OPEN_DESERT++++";
+	fuelCapacity = 615;	
 };
 
 class T810A_ACR_REFUEL_DZE: T810A_ACR_DZE
 {
-	displayName = $STR_VEH_NAME_TATRA_WOODLAND_REFUEL;
+	displayName = "$STR_VEH_NAME_TATRA_WOODLAND_REFUEL";
 	model = "\Ca\Wheeled_ACR\T810\t810_refuel_acr.p3d";
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_T810refuel_CA.paa";
 	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_T810fuel_CA.paa";
@@ -518,48 +782,292 @@ class T810A_ACR_REFUEL_DZE: T810A_ACR_DZE
 		tex[] = {};
 		mat[] = {"Ca\Wheeled_ACR\T810\data\auta_skla.rvmat","Ca\Wheeled_ACR\T810\data\auta_skla_damage.rvmat","Ca\Wheeled_ACR\T810\data\auta_skla_damage.rvmat","Ca\Wheeled_ACR\T810\data\auta_skla_in.rvmat","Ca\Wheeled_ACR\T810\data\auta_skla_in_damage.rvmat","Ca\Wheeled_ACR\T810\data\auta_skla_in_damage.rvmat","Ca\Wheeled_ACR\T810\data\t810_fueltank.rvmat","Ca\Wheeled_ACR\T810\data\t810_fueltank_damage.rvmat","Ca\Wheeled_ACR\T810\data\t810_fueltank_destruct.rvmat","Ca\Wheeled_ACR\T810\data\cabin.rvmat","Ca\Wheeled_ACR\T810\data\cabin_damage.rvmat","Ca\Wheeled_ACR\T810\data\cabin_destruct.rvmat","Ca\Wheeled_ACR\T810\data\undercarriage.rvmat","Ca\Wheeled_ACR\T810\data\undercarriage_damage.rvmat","Ca\Wheeled_ACR\T810\data\undercarriage_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
 	};	
+	
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_ACR_REFUEL_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+class T810A_ACR_REFUEL_DZE1: T810A_ACR_REFUEL_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND_REFUEL+";
+	original = "T810A_ACR_REFUEL_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_ACR_REFUEL_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+class T810A_ACR_REFUEL_DZE2: T810A_ACR_REFUEL_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND_REFUEL++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_ACR_REFUEL_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+class T810A_ACR_REFUEL_DZE3: T810A_ACR_REFUEL_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND_REFUEL+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_ACR_REFUEL_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
+	};
+};
+class T810A_ACR_REFUEL_DZE4: T810A_ACR_REFUEL_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_WOODLAND_REFUEL+++";
+	fuelCapacity = 20000;
 };
 
 class T810A_ACR_REFUEL_DES_DZE: T810A_ACR_REFUEL_DZE
 {
-	displayName = $STR_VEH_NAME_TATRA_DESERT_REFUEL;
+	displayName = "$STR_VEH_NAME_TATRA_DESERT_REFUEL";
 	hiddenSelections[] = {"camo1","camo2","camo3","camo6"};
 	hiddenSelectionsTextures[] = {"Ca\Wheeled_ACR\T810\data\cabin_desert_co.paa","Ca\Wheeled_ACR\T810\data\t810_fueltank_desert_co.paa","Ca\Wheeled_ACR\T810\data\undercarriage_des_CO.paa","Ca\Wheeled_ACR\T810\data\T810_desert_mlod_CO.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"T810A_ACR_REFUEL_DES_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+class T810A_ACR_REFUEL_DES_DZE1: T810A_ACR_REFUEL_DES_DZE {
+	displayname = "$STR_VEH_NAME_TATRA_DESERT_REFUEL+";
+	original = "T810A_ACR_REFUEL_DES_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810A_ACR_REFUEL_DES_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+class T810A_ACR_REFUEL_DES_DZE2: T810A_ACR_REFUEL_DES_DZE1 {
+	displayname = "$STR_VEH_NAME_TATRA_DESERT_REFUEL++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810A_ACR_REFUEL_DES_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+class T810A_ACR_REFUEL_DES_DZE3: T810A_ACR_REFUEL_DES_DZE2 {
+	displayname = "$STR_VEH_NAME_TATRA_DESERT_REFUEL+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810A_ACR_REFUEL_DES_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
+	};
+};
+class T810A_ACR_REFUEL_DES_DZE4: T810A_ACR_REFUEL_DES_DZE3 {
+	displayname = "$STR_VEH_NAME_TATRA_DESERT_REFUEL+++";
+	fuelCapacity = 20000;
 };
 
 class T810_ACR_REAMMO_DZE: T810A_ACR_DZE
 {
-	displayName = $STR_VEH_NAME_TATRA_WEAPONS_WOODLAND;
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_WOODLAND";
 	model = "\Ca\Wheeled_ACR\T810\t810_reammo_acr.p3d";
 	cargoAction[] = {"Truck_Cargo01"};
 	transportSoldier = 2;
 	transportMaxWeapons = 75;
 	transportMaxMagazines = 100;
 	transportmaxbackpacks = 8;
+	
+	class Upgrades {
+		ItemTruckORP[] = {"T810_ACR_REAMMO_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810_ACR_REAMMO_DZE1 : T810_ACR_REAMMO_DZE {
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_WOODLAND+";
+	original = "T810_ACR_REAMMO_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810_ACR_REAMMO_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810_ACR_REAMMO_DZE2: T810_ACR_REAMMO_DZE1 {
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_WOODLAND++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810_ACR_REAMMO_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810_ACR_REAMMO_DZE3: T810_ACR_REAMMO_DZE2 {
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_WOODLAND+++";
+	transportMaxWeapons = 150;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810_ACR_REAMMO_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810_ACR_REAMMO_DZE4: T810_ACR_REAMMO_DZE3 {
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_WOODLAND++++";
+	fuelCapacity = 615;	
 };
 
 class T810_ACR_REAMMO_DES_DZE: T810_ACR_REAMMO_DZE
 {
-	displayName = $STR_VEH_NAME_TATRA_WEAPONS_DESERT;
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_DESERT";
 	hiddenSelections[] = {"camo1","camo2","camo3","camo6"};
 	hiddenSelectionsTextures[] = {"Ca\Wheeled_ACR\T810\data\cabin_desert_co.paa","Ca\Wheeled_ACR\T810\data\bed_desert_co.paa","Ca\Wheeled_ACR\T810\data\undercarriage_des_CO.paa","Ca\Wheeled_ACR\T810\data\T810_desert_mlod_CO.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"T810_ACR_REAMMO_DES_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810_ACR_REAMMO_DES_DZE1 : T810_ACR_REAMMO_DES_DZE {
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_DESERT+";
+	original = "T810_ACR_REAMMO_DES_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810_ACR_REAMMO_DES_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810_ACR_REAMMO_DES_DZE2: T810_ACR_REAMMO_DES_DZE1 {
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_DESERT++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810_ACR_REAMMO_DES_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810_ACR_REAMMO_DES_DZE3: T810_ACR_REAMMO_DES_DZE2 {
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_DESERT+++";
+	transportMaxWeapons = 150;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810_ACR_REAMMO_DES_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810_ACR_REAMMO_DES_DZE4: T810_ACR_REAMMO_DES_DZE3 {
+	displayName = "$STR_VEH_NAME_TATRA_WEAPONS_DESERT++++";
+	fuelCapacity = 615;	
 };
 
 class T810_ACR_REPAIR_DZE: T810A_ACR_DZE
 {
-	displayName = $STR_VEH_NAME_TATRA_AMMO_WOODLAND;
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_WOODLAND";
 	model = "\Ca\Wheeled_ACR\T810\t810_repair_acr.p3d";
 	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_T810repair_CA.paa";
 	transportSoldier = 2;
 	cargoAction[] = {"Truck_Cargo01"};
 	transportMaxWeapons = 25;
 	transportMaxMagazines = 300;
-	transportmaxbackpacks = 8;
+	transportmaxbackpacks = 8;	
+	
+	class Upgrades {
+		ItemTruckORP[] = {"T810_ACR_REPAIR_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810_ACR_REPAIR_DZE1 : T810_ACR_REPAIR_DZE {
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_WOODLAND+";
+	original = "T810_ACR_REPAIR_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810_ACR_REPAIR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810_ACR_REPAIR_DZE2: T810_ACR_REPAIR_DZE1 {
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_WOODLAND++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810_ACR_REPAIR_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+	};
+};
+
+class T810_ACR_REPAIR_DZE3: T810_ACR_REPAIR_DZE2 {
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_WOODLAND+++";
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 600;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810_ACR_REPAIR_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810_ACR_REPAIR_DZE4: T810_ACR_REPAIR_DZE3 {
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_WOODLAND++++";
+	fuelCapacity = 615;	
 };
 
 class T810_ACR_REPAIR_DES_DZE: T810_ACR_REPAIR_DZE
 {
-	displayName = $STR_VEH_NAME_TATRA_AMMO_DESERT;
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_DESERT";
 	hiddenSelections[] = {"camo1","camo2","camo3","camo6"};
 	hiddenSelectionsTextures[] = {"Ca\Wheeled_ACR\T810\data\cabin_desert_co.paa","Ca\Wheeled_ACR\T810\data\bed_desert_co.paa","Ca\Wheeled_ACR\T810\data\undercarriage_des_CO.paa","Ca\Wheeled_ACR\T810\data\T810_desert_mlod_CO.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"T810_ACR_REPAIR_DES_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class T810_ACR_REPAIR_DES_DZE1 : T810_ACR_REPAIR_DES_DZE {
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_DESERT+";
+	original = "T810_ACR_REPAIR_DES_DZE";
+	maxspeed = 120; //base 106
+	terrainCoef = 1.8;  // base 2.5
+	turnCoef = 3.0;  // base 5
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"T810_ACR_REPAIR_DES_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class T810_ACR_REPAIR_DES_DZE2: T810_ACR_REPAIR_DES_DZE1 {
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_DESERT++";
+	armor = 80;
+	damageResistance = 0.04;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"T810_ACR_REPAIR_DES_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+	};
+};
+
+class T810_ACR_REPAIR_DES_DZE3: T810_ACR_REPAIR_DES_DZE2 {
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_DESERT+++";
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 600;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"T810_ACR_REPAIR_DES_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class T810_ACR_REPAIR_DES_DZE4: T810_ACR_REPAIR_DES_DZE3 {
+	displayName = "$STR_VEH_NAME_TATRA_AMMO_DESERT++++";
+	fuelCapacity = 615;	
 };

@@ -1,7 +1,7 @@
 class KamazOpen;
 class KamazOpen_DZE : KamazOpen {
 	scope = 2;
-	displayName = $STR_VEH_NAME_KAMAZ;
+	displayName = "$STR_VEH_NAME_KAMAZ";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
@@ -10,14 +10,52 @@ class KamazOpen_DZE : KamazOpen {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemORP[] = {"KamazOpen_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemTruckORP[] = {"KamazOpen_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
+};
+
+class KamazOpen_DZE1: KamazOpen_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ+";
+	original = "KamazOpen_DZE";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"KamazOpen_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class KamazOpen_DZE2: KamazOpen_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"KamazOpen_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class KamazOpen_DZE3: KamazOpen_DZE2 {
+	displayName = "$STR_VEH_NAME_KAMAZ+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"KamazOpen_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class KamazOpen_DZE4: KamazOpen_DZE3 {
+	displayName = "$STR_VEH_NAME_KAMAZ++++";
+	fuelCapacity = 615;	
 };
 
 class Kamaz;
 class Kamaz_DZE: Kamaz {
 	scope = 2;
-	displayName = $STR_VEH_NAME_KAMAZ_COVERT;
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
@@ -26,73 +64,51 @@ class Kamaz_DZE: Kamaz {
 	supplyRadius = 2.6;
 	
 	class Upgrades {		
-		ItemORP[] = {"Kamaz_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemTruckORP[] = {"Kamaz_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 
-class KamazOpen_DZE1: KamazOpen_DZE {
-	original = "KamazOpen_DZE";
-	maxspeed = 100; //base 80
-	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
-	
-	class Upgrades {
-		ItemAVE[] = {"KamazOpen_DZE2",{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemTankTrap",4}}};
-	};
-};
 class Kamaz_DZE1: Kamaz_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT+";
 	original = "Kamaz_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
 	turnCoef = 2.0;  // base 3.7
 	
 	class Upgrades {
-		ItemAVE[] = {"Kamaz_DZE2",{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemTankTrap",4}}};
+		ItemTruckAVE[] = {"Kamaz_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
-class KamazOpen_DZE2: KamazOpen_DZE1 {
-	armor = 70; //base 32
-	damageResistance = 0.0255; // base 0.00243
-	
-	class Upgrades {
-		ItemLRK[] = {"KamazOpen_DZE3",{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemTent",2}}};
-	};
-};
+
 class Kamaz_DZE2: Kamaz_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT++";
 	armor = 70; //base 32
 	damageResistance = 0.0255; // base 0.00243
 	class Upgrades {
-		ItemLRK[] = {"Kamaz_DZE3",{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemTent",2}}};
+		ItemTruckLRK[] = {"Kamaz_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
-class KamazOpen_DZE3: KamazOpen_DZE2 {
-	transportMaxWeapons = 75; // Ural Base 50
-	transportMaxMagazines = 300; // Ural Base 200
-	transportmaxbackpacks = 12; // Ural Base 8
-	
-	class Upgrades {
-		ItemTNK[] = {"KamazOpen_DZE4",{},{{"ItemTNK",1},{"PartFueltank",4}}};
-	};
-};
+
 class Kamaz_DZE3: Kamaz_DZE2 {
-	transportMaxWeapons = 75; // Ural Base 50
-	transportMaxMagazines = 300; // Ural Base 200
-	transportmaxbackpacks = 12; // Ural Base 8
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
 	
 	class Upgrades {
-		ItemTNK[] = {"Kamaz_DZE4",{},{{"ItemTNK",1},{"PartFueltank",4}}};
+		ItemTruckTNK[] = {"Kamaz_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
+
 class Kamaz_DZE4: Kamaz_DZE3 {
-	fuelCapacity = 615; // Ural Base 303	
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT++++";
+	fuelCapacity = 615;
 };
-class KamazOpen_DZE4: KamazOpen_DZE3 {
-	fuelCapacity = 615; // Ural Base 303	
-};
+
 class KamazRefuel;
 class KamazRefuel_DZ: KamazRefuel {
 	scope = 2;
-	displayName = $STR_VEH_NAME_KAMAZ_REFUEL;
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
@@ -105,42 +121,50 @@ class KamazRefuel_DZ: KamazRefuel {
 	fuelCapacity = 10400;
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
 	supplyRadius = 2.6;
+	
+	class Upgrades {
+		ItemTruckORP[] = {"KamazRefuel_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
 };
 class KamazRefuel_DZE1: KamazRefuel_DZ {
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL+";
 	original = "KamazRefuel_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
 	turnCoef = 2.0;  // base 3.7
 	
 	class Upgrades {
-		ItemAVE[] = {"KamazRefuel_DZE2",{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemTankTrap",4}}};
+		ItemTruckAVE[] = {"KamazRefuel_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 class KamazRefuel_DZE2: KamazRefuel_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL++";
 	armor = 70; //base 32
 	damageResistance = 0.0255; // base 0.00243
 	
 	class Upgrades {
-		ItemLRK[] = {"KamazRefuel_DZE3",{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemTent",2}}};
+		ItemTruckLRK[] = {"KamazRefuel_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 class KamazRefuel_DZE3: KamazRefuel_DZE2 {
-	transportMaxWeapons = 75; // Ural Base 50
-	transportMaxMagazines = 300; // Ural Base 200
-	transportmaxbackpacks = 12; // Ural Base 8
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
 	
 	class Upgrades {
-		ItemTNK[] = {"KamazRefuel_DZE4",{},{{"ItemTNK",1},{"PartFueltank",4}}};
+		ItemTruckTNK[] = {"KamazRefuel_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
 	};
 };
 class KamazRefuel_DZE4: KamazRefuel_DZE3 {
-	fuelCapacity = 10700; // Increase the total fuel capacity of the Refuel truck by the additional normal sized fuel tank of a Ural.
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL++++";
+	fuelCapacity = 20000;
 };
 
 class KamazRepair;
 class KamazRepair_DZE : KamazRepair {
 	scope = 2;
-	displayName = $STR_VEH_NAME_KAMAZ_AMMO;
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
@@ -151,12 +175,54 @@ class KamazRepair_DZE : KamazRepair {
 	class TransportWeapons{};	
 	supplyRadius = 2.6;
 	transportRepair = 0;
+	
+	class Upgrades {
+		ItemTruckORP[] = {"KamazRepair_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class KamazRepair_DZE1 : KamazRepair_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO+";
+	original = "KamazRepair_DZE";
+	maxspeed = 100;
+	terrainCoef = 1.8;
+	turnCoef = 2.0;
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"KamazRepair_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class KamazRepair_DZE2: KamazRepair_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO++";
+	armor = 70;
+	damageResistance = 0.0255;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"KamazRepair_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+	};
+};
+
+class KamazRepair_DZE3: KamazRepair_DZE2 {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO+++";
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 600;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"KamazRepair_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class KamazRepair_DZE4: KamazRepair_DZE3 {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO++++";
+	fuelCapacity = 615;	
 };
 
 class KamazReammo;
 class KamazReammo_DZE : KamazReammo {
 	scope = 2;
-	displayName = $STR_VEH_NAME_KAMAZ_WEAPONS;
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
@@ -167,4 +233,46 @@ class KamazReammo_DZE : KamazReammo {
 	class TransportWeapons{};	
 	supplyRadius = 2.6;
 	transportAmmo = 0;
+	
+	class Upgrades {
+		ItemTruckORP[] = {"KamazReammo_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class KamazReammo_DZE1 : KamazReammo_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS+";
+	original = "KamazReammo_DZE";
+	maxspeed = 100;
+	terrainCoef = 1.8;
+	turnCoef = 2.0;
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"KamazReammo_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class KamazReammo_DZE2: KamazReammo_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS++";
+	armor = 70;
+	damageResistance = 0.0255;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"KamazReammo_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+	};
+};
+
+class KamazReammo_DZE3: KamazReammo_DZE2 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS+++";
+	transportMaxWeapons = 150;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"KamazReammo_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class KamazReammo_DZE4: KamazReammo_DZE3 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS++++";
+	fuelCapacity = 615;	
 };

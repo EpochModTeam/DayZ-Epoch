@@ -28,10 +28,12 @@
 		</Key>
 		<Key ID="str_actions_radio_on">
 			<English>Radio is turned on</English>
+			<German>Das Funkgerät wurde eingeschaltet.</German>
 		</Key>
 		<Key ID="str_actions_radio_off">
 			<English>Radio is turned off</English>
-		</Key>
+			<German>Das Funkgerät wurde ausgeschaltet.</German>
+		</Key>		
 		<Key ID="STR_ACTIONS_LIGHTFIRE">
 			<English>Light fire</English>
 			<Russian>Зажечь огонь</Russian>
@@ -8474,16 +8476,126 @@
 			<Russian>Камаз открытый (Лесной камуфляж)</Russian>
 			<German>Kamaz offen (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ+">
+			<English>Kamaz open (Woodland)+</English>
+			<Russian>Камаз открытый (Лесной камуфляж)+</Russian>
+			<German>Kamaz offen (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ++">
+			<English>Kamaz open (Woodland)++</English>
+			<Russian>Камаз открытый (Лесной камуфляж)++</Russian>
+			<German>Kamaz offen (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ+++">
+			<English>Kamaz open (Woodland)+++</English>
+			<Russian>Камаз открытый (Лесной камуфляж)+++</Russian>
+			<German>Kamaz offen (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ++++">
+			<English>Kamaz open (Woodland)++++</English>
+			<Russian>Камаз открытый (Лесной камуфляж)++++</Russian>
+			<German>Kamaz offen (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT">
 			<English>Kamaz (Woodland)</English>
 			<Russian>Камаз (Лесной камуфляж)</Russian>
 			<German>Kamaz (Waldtarn)</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL">
-			<English>Kamaz (Fuel)</English>
-			<Russian>Камаз (Заправщик)</Russian>
-			<German>Kamaz (Treibstoff)</German>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT+">
+			<English>Kamaz (Woodland)+</English>
+			<Russian>Камаз (Лесной камуфляж)+</Russian>
+			<German>Kamaz (Waldtarn)+</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT++">
+			<English>Kamaz (Woodland)++</English>
+			<Russian>Камаз (Лесной камуфляж)++</Russian>
+			<German>Kamaz (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT+++">
+			<English>Kamaz (Woodland)+++</English>
+			<Russian>Камаз (Лесной камуфляж)+++</Russian>
+			<German>Kamaz (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT++++">
+			<English>Kamaz (Woodland)++++</English>
+			<Russian>Камаз (Лесной камуфляж)++++</Russian>
+			<German>Kamaz (Waldtarn)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL">
+			<English>Kamaz Fuel (Woodland)</English>
+			<Russian>Камаз Заправщик (Лесной камуфляж)</Russian>
+			<German>Kamaz Treibstoff (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL+">
+			<English>Kamaz Fuel (Woodland)+</English>
+			<Russian>Камаз Заправщик (Лесной камуфляж)+</Russian>
+			<German>Kamaz Treibstoff (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL++">
+			<English>Kamaz Fuel (Woodland)++</English>
+			<Russian>Камаз Заправщик (Лесной камуфляж)++</Russian>
+			<German>Kamaz Treibstoff (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL+++">
+			<English>Kamaz Fuel (Woodland)+++</English>
+			<Russian>Камаз Заправщик (Лесной камуфляж)+++</Russian>
+			<German>Kamaz Treibstoff (Waldtarn)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL++++">
+			<English>Kamaz Fuel (Woodland)++++</English>
+			<Russian>Камаз Заправщик (Лесной камуфляж)++++</Russian>
+			<German>Kamaz Treibstoff (Waldtarn)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO">
+			<English>Kamaz Material Transport (Woodland)</English>
+			<Russian>Kamaz Мат. обеспечение (Лесной камуфляж)</Russian>
+			<German>Kamaz Materialtransport (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO+">
+			<English>Kamaz Material Transport (Woodland)+</English>
+			<Russian>Kamaz Мат. обеспечение (Лесной камуфляж)+</Russian>
+			<German>Kamaz Materialtransport (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO++">
+			<English>Kamaz Material Transport (Woodland)++</English>
+			<Russian>Kamaz Мат. обеспечение (Лесной камуфляж)++</Russian>
+			<German>Kamaz Materialtransport (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO+++">
+			<English>Kamaz Material Transport (Woodland)+++</English>
+			<Russian>Kamaz Мат. обеспечение (Лесной камуфляж)+++</Russian>
+			<German>Kamaz Materialtransport (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO++++">
+			<English>Kamaz Material Transport (Woodland)++++</English>
+			<Russian>Kamaz Мат. обеспечение (Лесной камуфляж)++++</Russian>
+			<German>Kamaz Materialtransport (Waldtarn)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS">
+			<English>Kamaz Weapon Transport (Woodland)</English>
+			<Russian>Kamaz Оружейный (Лесной камуфляж)</Russian>
+			<German>Kamaz Waffentransport (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS+">
+			<English>Kamaz Weapon Transport (Woodland)+</English>
+			<Russian>Kamaz Оружейный (Лесной камуфляж)+</Russian>
+			<German>Kamaz Waffentransport (Waldtarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS++">
+			<English>Kamaz Weapon Transport (Woodland)++</English>
+			<Russian>Kamaz Оружейный (Лесной камуфляж)++</Russian>
+			<German>Kamaz Waffentransport (Waldtarn)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS+++">
+			<English>Kamaz Weapon Transport (Woodland)+++</English>
+			<Russian>Kamaz Оружейный (Лесной камуфляж)+++</Russian>
+			<German>Kamaz Waffentransport (Waldtarn)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS++++">
+			<English>Kamaz Weapon Transport (Woodland)++++</English>
+			<Russian>Kamaz Оружейный (Лесной камуфляж)++++</Russian>
+			<German>Kamaz Waffentransport (Waldtarn)++++</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_LADA_WHITE">
 			<English>Lada (white)</English>
 			<Russian>Лада (белая)</Russian>
@@ -8608,69 +8720,391 @@
 			<Russian>MTVR (Лесной камуфляж)</Russian>
 			<German>MTVR (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND+">
+			<English>MTVR (Woodland)+</English>
+			<Russian>MTVR (Лесной камуфляж)+</Russian>
+			<German>MTVR (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND++">
+			<English>MTVR (Woodland)++</English>
+			<Russian>MTVR (Лесной камуфляж)++</Russian>
+			<German>MTVR (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND+++">
+			<English>MTVR (Woodland)+++</English>
+			<Russian>MTVR (Лесной камуфляж)+++</Russian>
+			<German>MTVR (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND++++">
+			<English>MTVR (Woodland)++++</English>
+			<Russian>MTVR (Лесной камуфляж)++++</Russian>
+			<German>MTVR (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MTVR_DESERT">
 			<English>MTVR (Desert)</English>
 			<Russian>MTVR (Пустынный)</Russian>
 			<German>MTVR (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_DESERT+">
+			<English>MTVR (Desert)+</English>
+			<Russian>MTVR (Пустынный)+</Russian>
+			<German>MTVR (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_DESERT++">
+			<English>MTVR (Desert)++</English>
+			<Russian>MTVR (Пустынный)++</Russian>
+			<German>MTVR (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_DESERT+++">
+			<English>MTVR (Desert)+++</English>
+			<Russian>MTVR (Пустынный)+++</Russian>
+			<German>MTVR (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_DESERT++++">
+			<English>MTVR (Desert)++++</English>
+			<Russian>MTVR (Пустынный)++++</Russian>
+			<German>MTVR (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL">
-			<English>MTVR Woodland (Fuel)</English>
-			<Russian>MTVR Лесной камуфляж (Заправщик)</Russian>
-			<German>MTVR Waldtarn (Treibstoff)</German>
+			<English>MTVR Fuel (Woodland)</English>
+			<Russian>MTVR Заправщик (Лесной камуфляж)</Russian>
+			<German>MTVR Treibstoff (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL+">
+			<English>MTVR Fuel (Woodland)+</English>
+			<Russian>MTVR Заправщик (Лесной камуфляж)+</Russian>
+			<German>MTVR Treibstoff (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL++">
+			<English>MTVR Fuel (Woodland)++</English>
+			<Russian>MTVR Заправщик (Лесной камуфляж)++</Russian>
+			<German>MTVR Treibstoff (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL+++">
+			<English>MTVR Fuel (Woodland)+++</English>
+			<Russian>MTVR Заправщик (Лесной камуфляж)+++</Russian>
+			<German>MTVR Treibstoff (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL++++">
+			<English>MTVR Fuel (Woodland)++++</English>
+			<Russian>MTVR Заправщик (Лесной камуфляж)++++</Russian>
+			<German>MTVR Treibstoff (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL">
-			<English>MTVR Desert (Fuel)</English>
-			<Russian>MTVR Пустынный (Заправщик)</Russian>
-			<German>MTVR Wüstentarn (Treibstoff)</German>
+			<English>MTVR Fuel (Desert)</English>
+			<Russian>MTVR Заправщик (Пустынный)</Russian>
+			<German>MTVR Treibstoff (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL+">
+			<English>MTVR Fuel (Desert)+</English>
+			<Russian>MTVR Заправщик (Пустынный)+</Russian>
+			<German>MTVR Treibstoff (Wüstentarn)+</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL++">
+			<English>MTVR Fuel (Desert)++</English>
+			<Russian>MTVR Заправщик (Пустынный)++</Russian>
+			<German>MTVR Treibstoff (Wüstentarn)++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL+++">
+			<English>MTVR Fuel (Desert)+++</English>
+			<Russian>MTVR Заправщик (Пустынный)+++</Russian>
+			<German>MTVR Treibstoff (Wüstentarn)+++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL++++">
+			<English>MTVR Fuel (Desert)++++</English>
+			<Russian>MTVR Заправщик (Пустынный)++++</Russian>
+			<German>MTVR Treibstoff (Wüstentarn)++++</German>
+		</Key>				
+		<Key ID="STR_VEH_NAME_MTVR_AMMO">
+			<English>MVTR Material Transport (Woodland)</English>
+			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)</Russian>
+			<German>MVTR Materialtransport (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_AMMO+">
+			<English>MVTR Material Transport (Woodland)+</English>
+			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)+</Russian>
+			<German>MVTR Materialtransport (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_AMMO++">
+			<English>MVTR Material Transport (Woodland)++</English>
+			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)++</Russian>
+			<German>MVTR Materialtransport (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_AMMO+++">
+			<English>MVTR Material Transport (Woodland)+++</English>
+			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)+++</Russian>
+			<German>MVTR Materialtransport (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_AMMO++++">
+			<English>MVTR Material Transport (Woodland)++++</English>
+			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)++++</Russian>
+			<German>MVTR Materialtransport (Waldtarn)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MTVR_WEAPONS">
+			<English>MVTR Weapon Transport (Woodland)</English>
+			<Russian>MVTR Оружейный (Лесной камуфляж)</Russian>
+			<German>MVTR Waffentransport (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MTVR_WEAPONS+">
+			<English>MVTR Weapon Transport (Woodland)+</English>
+			<Russian>MVTR Оружейный (Лесной камуфляж)+</Russian>
+			<German>MVTR Waffentransport (Waldtarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MTVR_WEAPONS++">
+			<English>MVTR Weapon Transport (Woodland)++</English>
+			<Russian>MVTR Оружейный (Лесной камуфляж)++</Russian>
+			<German>MVTR Waffentransport (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WEAPONS+++">
+			<English>MVTR Weapon Transport (Woodland)+++</English>
+			<Russian>MVTR Оружейный (Лесной камуфляж)+++</Russian>
+			<German>MVTR Waffentransport (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WEAPONS++++">
+			<English>MVTR Weapon Transport (Woodland)++++</English>
+			<Russian>MVTR Оружейный (Лесной камуфляж)++++</Russian>
+			<German>MVTR Waffentransport (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND">
 			<English>Tatra (Woodland)</English>
 			<German>Tatra (Waldtarn)</German>
 		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND+">
+			<English>Tatra (Woodland)+</English>
+			<German>Tatra (Waldtarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND++">
+			<English>Tatra (Woodland)++</English>
+			<German>Tatra (Waldtarn)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND+++">
+			<English>Tatra (Woodland)+++</English>
+			<German>Tatra (Waldtarn)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND++++">
+			<English>Tatra (Woodland)++++</English>
+			<German>Tatra (Waldtarn)++++</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND">
 			<English>Tatra Open (Woodland)</English>
 			<German>Tatra Offen (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND+">
+			<English>Tatra Open (Woodland)+</English>
+			<German>Tatra Offen (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND++">
+			<English>Tatra Open (Woodland)++</English>
+			<German>Tatra Offen (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND+++">
+			<English>Tatra Open (Woodland)+++</English>
+			<German>Tatra Offen (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND++++">
+			<English>Tatra Open (Woodland)++++</English>
+			<German>Tatra Offen (Waldtarn)++++</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND">
 			<English>Tatra PKT (Woodland)</English>
 			<German>Tatra PKT (Waldtarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND+">
+			<English>Tatra PKT (Woodland)+</English>
+			<German>Tatra PKT (Waldtarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND++">
+			<English>Tatra PKT (Woodland)++</English>
+			<German>Tatra PKT (Waldtarn)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND+++">
+			<English>Tatra PKT (Woodland)+++</English>
+			<German>Tatra PKT (Waldtarn)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND++++">
+			<English>Tatra PKT (Woodland)++++</English>
+			<German>Tatra PKT (Waldtarn)++++</German>
 		</Key>			
 		<Key ID="STR_VEH_NAME_TATRA_DESERT">
 			<English>Tatra (Desert)</English>
 			<German>Tatra (Wüstentarn)</German>
 		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_DESERT+">
+			<English>Tatra (Desert)+</English>
+			<German>Tatra (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_DESERT++">
+			<English>Tatra (Desert)++</English>
+			<German>Tatra (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_DESERT+++">
+			<English>Tatra (Desert)+++</English>
+			<German>Tatra (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_DESERT++++">
+			<English>Tatra (Desert)++++</English>
+			<German>Tatra (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT">
 			<English>Tatra Open (Desert)</English>
 			<German>Tatra Offen (Wüstentarn)</German>
-		</Key>			
+		</Key>		
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT+">
+			<English>Tatra Open (Desert)+</English>
+			<German>Tatra Offen (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT++">
+			<English>Tatra Open (Desert)++</English>
+			<German>Tatra Offen (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT+++">
+			<English>Tatra Open (Desert)+++</English>
+			<German>Tatra Offen (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT++++">
+			<English>Tatra Open (Desert)++++</English>
+			<German>Tatra Offen (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT">
 			<English>Tatra PKT (Desert)</English>
 			<German>Tatra PKT (Wüstentarn)</German>
 		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT+">
+			<English>Tatra PKT (Desert)+</English>
+			<German>Tatra PKT (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT++">
+			<English>Tatra PKT (Desert)++</English>
+			<German>Tatra PKT (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT+++">
+			<English>Tatra PKT (Desert)+++</English>
+			<German>Tatra PKT (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT++++">
+			<English>Tatra PKT (Desert)++++</English>
+			<German>Tatra PKT (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL">
-			<English>Tatra Woodland (Fuel)</English>
-			<German>Tatra Waldtarn (Treibstoff)</German>
+			<English>Tatra Fuel (Woodland)</English>
+			<German>Tatra Treibstoff (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL+">
+			<English>Tatra Fuel (Woodland)+</English>
+			<German>Tatra Treibstoff (Waldtarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL++">
+			<English>Tatra Fuel (Woodland)++</English>
+			<German>Tatra Treibstoff (Waldtarn)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL+++">
+			<English>Tatra Fuel (Woodland)+++</English>
+			<German>Tatra Treibstoff (Waldtarn)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL++++">
+			<English>Tatra Fuel (Woodland)++++</English>
+			<German>Tatra Treibstoff (Waldtarn)++++</German>
+		</Key>	
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL">
-			<English>Tatra Desert (Fuel)</English>
-			<German>Tatra Wüstentarn (Treibstoff)</German>
+			<English>Tatra Fuel (Desert)</English>
+			<German>Tatra Treibstoff (Wüstentarn)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL+">
+			<English>Tatra Fuel (Desert)+</English>
+			<German>Tatra Treibstoff (Wüstentarn)+</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL++">
+			<English>Tatra Fuel (Desert)++</English>
+			<German>Tatra Treibstoff (Wüstentarn)++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL+++">
+			<English>Tatra Fuel (Desert)+++</English>
+			<German>Tatra Treibstoff (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL++++">
+			<English>Tatra Fuel (Desert)++++</English>
+			<German>Tatra Treibstoff (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND">
 			<English>Tatra Material Transport (Woodland)</English>
 			<German>Tatra Materialtransport (Waldtarn)</German>
 		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND+">
+			<English>Tatra Material Transport (Woodland)+</English>
+			<German>Tatra Materialtransport (Waldtarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND++">
+			<English>Tatra Material Transport (Woodland)++</English>
+			<German>Tatra Materialtransport (Waldtarn)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND+++">
+			<English>Tatra Material Transport (Woodland)+++</English>
+			<German>Tatra Materialtransport (Waldtarn)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND++++">
+			<English>Tatra Material Transport (Woodland)++++</English>
+			<German>Tatra Materialtransport (Waldtarn)++++</German>
+		</Key>	
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND">
 			<English>Tatra Weapon Transport (Woodland)</English>
 			<German>Tatra Waffentransport (Waldtarn)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND+">
+			<English>Tatra Weapon Transport (Woodland)+</English>
+			<German>Tatra Waffentransport (Waldtarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND++">
+			<English>Tatra Weapon Transport (Woodland)++</English>
+			<German>Tatra Waffentransport (Waldtarn)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND+++">
+			<English>Tatra Weapon Transport (Woodland)+++</English>
+			<German>Tatra Waffentransport (Waldtarn)+++</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND++++">
+			<English>Tatra Weapon Transport (Woodland)++++</English>
+			<German>Tatra Waffentransport (Waldtarn)++++</German>
 		</Key>			
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT">
 			<English>Tatra Material Transport (Desert)</English>
 			<German>Tatra Materialtransport (Wüstentarn)</German>
 		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT+">
+			<English>Tatra Material Transport (Desert)+</English>
+			<German>Tatra Materialtransport (Wüstentarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT++">
+			<English>Tatra Material Transport (Desert)++</English>
+			<German>Tatra Materialtransport (Wüstentarn)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT+++">
+			<English>Tatra Material Transport (Desert)+++</English>
+			<German>Tatra Materialtransport (Wüstentarn)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT++++">
+			<English>Tatra Material Transport (Desert)++++</English>
+			<German>Tatra Materialtransport (Wüstentarn)++++</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT">
 			<English>Tatra Weapon Transport (Desert)</English>
 			<German>Tatra Waffentransport (Wüstentarn)</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT+">
+			<English>Tatra Weapon Transport (Desert)+</English>
+			<German>Tatra Waffentransport (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT++">
+			<English>Tatra Weapon Transport (Desert)++</English>
+			<German>Tatra Waffentransport (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT+++">
+			<English>Tatra Weapon Transport (Desert)+++</English>
+			<German>Tatra Waffentransport (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT++++">
+			<English>Tatra Weapon Transport (Desert)++++</English>
+			<German>Tatra Waffentransport (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM">
 			<English>Pick-up (DSHKM)</English>
 		</Key>
@@ -8801,90 +9235,306 @@
 		<Key ID="STR_VEH_NAME_URAL_TK">
 			<English>Ural (TK)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_TK+">
+			<English>Ural (TK)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_TK++">
+			<English>Ural (TK)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_TK+++">
+			<English>Ural (TK)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_TK++++">
+			<English>Ural (TK)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_INS">
 			<English>Ural (INS)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_INS+">
+			<English>Ural (INS)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_INS++">
+			<English>Ural (INS)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_INS+++">
+			<English>Ural (INS)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_INS++++">
+			<English>Ural (INS)++++</English>
 		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_CDF">
 			<English>Ural (CDF)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CDF+">
+			<English>Ural (CDF)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CDF++">
+			<English>Ural (CDF)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CDF+++">
+			<English>Ural (CDF)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CDF++++">
+			<English>Ural (CDF)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN">
 			<English>Ural open (CDF)</English>
 			<German>Ural offen (CDF)</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN+">
+			<English>Ural open (CDF)+</English>
+			<German>Ural offen (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN++">
+			<English>Ural open (CDF)++</English>
+			<German>Ural offen (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN+++">
+			<English>Ural open (CDF)+++</English>
+			<German>Ural offen (CDF)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN++++">
+			<English>Ural open (CDF)++++</English>
+			<German>Ural offen (CDF)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_UN">
 			<English>Ural (UN)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_UN+">
+			<English>Ural (UN)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_UN++">
+			<English>Ural (UN)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_UN+++">
+			<English>Ural (UN)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_UN++++">
+			<English>Ural (UN)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_AMMO">
-			<English>Ural (Material Transport)</English>
-			<Russian>Ural (Мат. обеспечение)</Russian>
-			<German>Ural (Materialtransport)</German>
+			<English>Ural Material Transport (Woodland)</English>
+			<Russian>Ural Мат. обеспечение (Лесной камуфляж)</Russian>
+			<German>Ural Materialtransport (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO+">
+			<English>Ural Material Transport (Woodland)+</English>
+			<Russian>Ural Мат. обеспечение (Лесной камуфляж)+</Russian>
+			<German>Ural Materialtransport (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO++">
+			<English>Ural Material Transport (Woodland)++</English>
+			<Russian>Ural Мат. обеспечение (Лесной камуфляж)++</Russian>
+			<German>Ural Materialtransport (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO+++">
+			<English>Ural Material Transport (Woodland)+++</English>
+			<Russian>Ural Мат. обеспечение (Лесной камуфляж)+++</Russian>
+			<German>Ural Materialtransport (Waldtarn)+++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_URAL_AMMO++++">
+			<English>Ural Material Transport (Woodland)++++</English>
+			<Russian>Ural Мат. обеспечение (Лесной камуфляж)++++</Russian>
+			<German>Ural Materialtransport (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS">
-			<English>Ural (Weapon Transport)</English>
-			<Russian>Ural (Оружейный)</Russian>
-			<German>Ural (Waffentransport)</German>
+			<English>Ural Weapon Transport (Woodland)</English>
+			<Russian>Ural Оружейный (Лесной камуфляж)</Russian>
+			<German>Ural Waffentransport (Waldtarn)</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_MTVR_AMMO">
-			<English>MVTR (Material Transport)</English>
-			<Russian>MVTR (Мат. обеспечение)</Russian>
-			<German>MVTR (Materialtransport)</German>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS+">
+			<English>Ural Weapon Transport (Woodland)+</English>
+			<Russian>Ural Оружейный (Лесной камуфляж)+</Russian>
+			<German>Ural Waffentransport (Waldtarn)+</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_MTVR_WEAPONS">
-			<English>MVTR (Weapon Transport)</English>
-			<Russian>MVTR (Оружейный)</Russian>
-			<German>MVTR (Waffentransport)</German>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS++">
+			<English>Ural Weapon Transport (Woodland)++</English>
+			<Russian>Ural Оружейный (Лесной камуфляж)++</Russian>
+			<German>Ural Waffentransport (Waldtarn)++</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_KAMAZ_AMMO">
-			<English>Kamaz (Material Transport)</English>
-			<Russian>Kamaz (Мат. обеспечение)</Russian>
-			<German>Kamaz (Materialtransport)</German>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS+++">
+			<English>Ural Weapon Transport (Woodland)+++</English>
+			<Russian>Ural Оружейный (Лесной камуфляж)+++</Russian>
+			<German>Ural Waffentransport (Waldtarn)+++</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS">
-			<English>Kamaz (Weapon Transport)</English>
-			<Russian>Kamaz (Оружейный)</Russian>
-			<German>Kamaz (Waffentransport)</German>
-		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS++++">
+			<English>Ural Weapon Transport (Woodland)++++</English>
+			<Russian>Ural Оружейный (Лесной камуфляж)++++</Russian>
+			<German>Ural Waffentransport (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_CIVIL">
 			<English>Ural (Civil)</English>
 			<Russian>Ural (Гражданский)</Russian>
 			<German>Ural (Zivil)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CIVIL+">
+			<English>Ural (Civil)+</English>
+			<Russian>Ural (Гражданский)+</Russian>
+			<German>Ural (Zivil)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CIVIL++">
+			<English>Ural (Civil)++</English>
+			<Russian>Ural (Гражданский)++</Russian>
+			<German>Ural (Zivil)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CIVIL+++">
+			<English>Ural (Civil)+++</English>
+			<Russian>Ural (Гражданский)+++</Russian>
+			<German>Ural (Zivil)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CIVIL++++">
+			<English>Ural (Civil)++++</English>
+			<Russian>Ural (Гражданский)++++</Russian>
+			<German>Ural (Zivil)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN">
 			<English>Ural open (Civil)</English>
 			<Russian>Ural открытый (Гражданский)</Russian>
 			<German>Ural offen (Zivil)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN+">
+			<English>Ural open (Civil)+</English>
+			<Russian>Ural открытый (Гражданский)+</Russian>
+			<German>Ural offen (Zivil)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN++">
+			<English>Ural open (Civil)++</English>
+			<Russian>Ural открытый (Гражданский)++</Russian>
+			<German>Ural offen (Zivil)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN+++">
+			<English>Ural open (Civil)+++</English>
+			<Russian>Ural открытый (Гражданский)+++</Russian>
+			<German>Ural offen (Zivil)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN++++">
+			<English>Ural open (Civil)++++</English>
+			<Russian>Ural открытый (Гражданский)++++</Russian>
+			<German>Ural offen (Zivil)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_FUEL">
-			<English>Ural (Fuel)</English>
-			<Russian>Ural (Заправщик)</Russian>
-			<German>Ural (Treibstoff)</German>
+			<English>Ural Fuel (Woodland)</English>
+			<Russian>Ural Заправщик (Лесной камуфляж)</Russian>
+			<German>Ural Treibstoff (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL+">
+			<English>Ural Fuel (Woodland)+</English>
+			<Russian>Ural Заправщик (Лесной камуфляж)+</Russian>
+			<German>Ural Treibstoff (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL++">
+			<English>Ural Fuel (Woodland)++</English>
+			<Russian>Ural Заправщик (Лесной камуфляж)++</Russian>
+			<German>Ural Treibstoff (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL+++">
+			<English>Ural Fuel (Woodland)+++</English>
+			<Russian>Ural Заправщик (Лесной камуфляж)+++</Russian>
+			<German>Ural Treibstoff (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL++++">
+			<English>Ural Fuel (Woodland)++++</English>
+			<Russian>Ural Заправщик (Лесной камуфляж)++++</Russian>
+			<German>Ural Treibstoff (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_V3S_FUEL">
-			<English>V3S (Fuel)</English>
-			<Russian>V3S (Заправщик)</Russian>
-			<German>V3S (Treibstoff)</German>
+			<English>V3S Fuel (Woodland)</English>
+			<Russian>V3S Заправщик (Лесной камуфляж)</Russian>
+			<German>V3S Treibstoff (Waldtarn)</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_V3S_CIVIL">
-			<English>V3S (Civil)</English>
-			<Russian>V3S (Гражданский)</Russian>
-			<German>V3S (Zivil)</German>
+		<Key ID="STR_VEH_NAME_V3S_FUEL+">
+			<English>V3S Fuel (Woodland)+</English>
+			<Russian>V3S Заправщик (Лесной камуфляж)+</Russian>
+			<German>V3S Treibstoff (Waldtarn)+</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_V3S_FUEL++">
+			<English>V3S Fuel (Woodland)++</English>
+			<Russian>V3S Заправщик (Лесной камуфляж)++</Russian>
+			<German>V3S Treibstoff (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_FUEL+++">
+			<English>V3S Fuel (Woodland)+++</English>
+			<Russian>V3S Заправщик (Лесной камуфляж)+++</Russian>
+			<German>V3S Treibstoff (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_FUEL++++">
+			<English>V3S Fuel (Woodland)++++</English>
+			<Russian>V3S Заправщик (Лесной камуфляж)++++</Russian>
+			<German>V3S Treibstoff (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN">
 			<English>V3S open (Civil)</English>
 			<Russian>V3S открытый (Гражданский)</Russian>
 			<German>V3S offen (Zivil)</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_V3S">
-			<English>V3S</English>
+		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN+">
+			<English>V3S open (Civil)+</English>
+			<Russian>V3S открытый (Гражданский)+</Russian>
+			<German>V3S offen (Zivil)+</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN++">
+			<English>V3S open (Civil)++</English>
+			<Russian>V3S открытый (Гражданский)++</Russian>
+			<German>V3S offen (Zivil)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN+++">
+			<English>V3S open (Civil)+++</English>
+			<Russian>V3S открытый (Гражданский)+++</Russian>
+			<German>V3S offen (Zivil)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN++++">
+			<English>V3S open (Civil)++++</English>
+			<Russian>V3S открытый (Гражданский)++++</Russian>
+			<German>V3S offen (Zivil)++++</German>
+		</Key>			
+		<Key ID="STR_VEH_NAME_V3S_WHITE">
+			<English>V3S (White)</English>
+			<German>V3S (Weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_V3S_WHITE+">
+			<English>V3S (White)+</English>
+			<German>V3S (Weiß)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_V3S_WHITE++">
+			<English>V3S (White)++</English>
+			<German>V3S (Weiß)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_V3S_WHITE+++">
+			<English>V3S (White)+++</English>
+			<German>V3S (Weiß)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_V3S_WHITE++++">
+			<English>V3S (White)++++</English>
+			<German>V3S (Weiß)++++</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN">
 			<English>V3S open (Woodland)</English>
 			<Russian>V3S open (Лесной камуфляж)</Russian>
 			<German>V3S offen (Waldtarn)</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_V3S_REAMMO">
-			<English>V3S (Rearm)</English>
-			<German>V3S (Munition)</German>
+		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN+">
+			<English>V3S open (Woodland)+</English>
+			<Russian>V3S open (Лесной камуфляж)+</Russian>
+			<German>V3S offen (Waldtarn)+</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN++">
+			<English>V3S open (Woodland)++</English>
+			<Russian>V3S open (Лесной камуфляж)++</Russian>
+			<German>V3S offen (Waldtarn)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN+++">
+			<English>V3S open (Woodland)+++</English>
+			<Russian>V3S open (Лесной камуфляж)+++</Russian>
+			<German>V3S offen (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN++++">
+			<English>V3S open (Woodland)++++</English>
+			<Russian>V3S open (Лесной камуфляж)++++</Russian>
+			<German>V3S offen (Waldtarn)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_V3S_ARMORED">
+			<English>V3S (Armored)</English>
+			<German>V3S (Gepanzert)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_GAZ_BLUE">
 			<English>GAZ (blue)</English>
@@ -19232,44 +19882,28 @@
 			<Czech>Terénní výkonnost</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_DESC">
-			<English>Offroad performace manual.</English>
-			<German>Offroad-Performance Handbuch</German>
+			<English>Offroad performace manual to increase the offroad speed of a vehicle.</English>
+			<German>Offroad-Performance Handbuch, um die Geschwindigkeit eines Fahrzeug abseits der Straßen zu erhöhen.</German>
 			<Russian>Руководство по улучшению внедорожной эффективности.</Russian>
 			<Dutch>Handleiding over offroad prestaties.</Dutch>
 			<French>Manuel sur les performances tout-terrain.</French>
 			<Czech>Manuál terénní výkonnosti.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE">
-			<English>Vehicle Maintenance</English>
-			<German>Fahrzeugwartung</German>
-			<Russian>Обслуживание транспорта</Russian>
-			<Dutch>Voertuigonderhoud</Dutch>
-			<French>Maintenance du véhicule</French>
-			<Czech>Údržba vozidla</Czech>
+			<English>Vehicle Armor</English>
+			<German>Fahrzeugpanzerung</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_DESC">
-			<English>Vehicle maintenance and engineering manual.</English>
-			<German>Fahrzeug-Wartungshandbuch</German>
-			<Russian>Руководство по тех. обслуживанию транспортных средств и техники.</Russian>
-			<Dutch>Werkplaatshandboek voor voertuigonderhoud en verbetering.</Dutch>
-			<French>Manuel de mécanique et d'entretien du véhicule.</French>
-			<Czech>Manuál údržby vozidel</Czech>
+			<English>Manual to install or upgrade the armor of the vehicle.</English>
+			<German>Handbuch zum Installieren oder Upgraden der Panzerung eines Fahrzeugs.</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK">
-			<English>Luggage Rack</English>
-			<German>Gepäckablage</German>
-			<Russian>Багажник на крыше</Russian>
-			<Dutch>Bagagerek</Dutch>
-			<French>Galerie</French>
-			<Czech>Přihrádka na zavazadla</Czech>
+			<English>Cargo Space</English>
+			<German>Laderaum</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_DESC">
-			<English>Luggage Rack install guide.</English>
-			<German>Installationsanleitung der Gepäckablage</German>
-			<Russian>Руководство по установке багажника на крышу.</Russian>
-			<Dutch>Installatiehandleiding voor het bagagerek.</Dutch>
-			<French>Guide d'installation d'une galerie pour augmenter le stockage du véhicule.</French>
-			<Czech>Návod na instalaci Přihrádky na zavazadla.</Czech>
+			<English>Manual to upgrade the cargo space of a vehicle.</English>
+			<German>Handbuch zum Upgraden des Laderaums eines Fahrzeugs.</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK">
 			<English>Fuel Tank</English>
@@ -19280,16 +19914,16 @@
 			<Czech>Palivová nádrž</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_DESC">
-			<English>Fuel Tank install guide.</English>
-			<German>Installationsanleitung für den Benzintank</German>
+			<English>Install guide for a bigger fuel tank.</English>
+			<German>Installationsanleitung für einen größeren Benzintank</German>
 			<Russian>Руководство по установке топливного бака.</Russian>
 			<Dutch>Installatiehandleiding voor de benzinetank.</Dutch>
 			<French>Guide d'installation du réservoir.</French>
 			<Czech>Návod na instalaci Palivové nádrže.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM">
-			<English>Weapon upgrade</English>
-			<German>Bewaffnung upgraden</German>
+			<English>Weapon Upgrade</English>
+			<German>Bewaffnung-Upgrade</German>
 			<Russian>Установка оружия</Russian>
 			<Czech>Vylepšení zbraně na vozidle</Czech>
 		</Key>
@@ -19298,7 +19932,47 @@
 			<German>Installationsanleitung für die Fahrzeugbewaffnung.</German>
 			<Russian>Руководство по установке оружия.</Russian>
 			<Czech>Návod na instalaci zbraně na vozidlo.</Czech>
-		</Key>,
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_ORP_TRUCK">
+			<English>Truck Offroad Performance</English>
+			<German>LKW-Offroad Performance</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_ORP_TRUCK_DESC">
+			<English>Offroad performace manual to increase the offroad speed of trucks.</English>
+			<German>Offroad-Performance Handbuch, um die Geschwindigkeit von LKWs abseits der Straßen zu erhöhen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_AVE_TRUCK">
+			<English>Truck Armor</English>
+			<German>LKW-Panzerung</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_AVE_TRUCK_DESC">
+			<English>Manual to install or upgrade the armor of trucks.</English>
+			<German>Handbuch zum Installieren oder Upgraden der Panzerung von LKWs.</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_LRK_TRUCK">
+			<English>Truck Cargo Space</English>
+			<German>LKW-Laderaum</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_LRK_TRUCK_DESC">
+			<English>Manual to upgrade the cargo space of a truck.</English>
+			<German>Handbuch zum Upgraden des Laderaums eines LKWs.</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK">
+			<English>Truck Fuel Tank</English>
+			<German>LKW-Benzintank</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK_DESC">
+			<English>Install guide for bigger truck fuel tanks.</English>
+			<German>Installationsanleitung für einen größeren Benzintank bei LKWs.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_VEHUP_ARM_TRUCK">
+			<English>Truck Weapon Upgrade</English>
+			<German>LKW-Bewaffnungs-Upgrade</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_ARM_TRUCK_DESC">
+			<English>Installation instructions for the truck armament.</English>
+			<German>Installationsanleitung für die LKW-Bewaffnung.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_VEHUP_IN_PROGRESS">
 			<English>Vehicle Upgrade in progress, please wait...</English>
 			<German>Fahrzeug-Upgrade im Gange, bitte warte...</German>
@@ -19309,6 +19983,18 @@
 			<Russian>Транспорт успешно улучшен.</Russian>
 			<Czech>Upgrade vozidla byl úspěšný.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_VEHUP_DISTANCE_TOO_FAR">
+			<English>You are too far away to upgrade %1!</English>
+			<German>Du bist zu weit entfernt, um %1 abzugraden!</German>
+		</Key>	
+		<Key ID="STR_EPOCH_VEHUP_NO_UPGRADE_FOR_VEHICLE">
+			<English>There is no %1 upgrade for %2 available!</English>
+			<German>Es ist kein %1 Upgrade für %2 verfügbar!</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_NOT_ALLOWED">
+			<English>The vehicle upgrade for %1 got disabled on this server!</English>
+			<German>Das Fahrzeug-Upgrade für %1 wurde auf diesem Server deaktiviert!</German>
+		</Key>			
 		<Key ID="STR_EPOCH_PACK_LGB">
 			<English>Large Gunbag</English>
 			<German>Große Waffentasche</German>
@@ -24220,6 +24906,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_STATE">
 			<English>Power On/Off</English>
+			<German>An/Aus</German>
 		</Key>
 
 		<!-- DOOR MANAGEMENT BELOW -->
@@ -25078,7 +25765,8 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_CURRENCY">
 			<English>Currency</English>
-		</Key>
+			<German>Währung</German>
+		</Key>		
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
 			<German>%1 %2 für %3 %4 handeln</German>
@@ -25948,18 +26636,6 @@
 		<Key ID="STR_ITEM_DESC_COOKINGTRIPOD">
 			<English>Cooking tripod</English>
 			<German>Schwenkgrill</German>
-		</Key>	
-		<Key ID="STR_EPOCH_VEHUP_DISTANCE_TOO_FAR">
-			<English>You are too far away to upgrade %1!</English>
-			<German>Du bist zu weit entfernt, um %1 abzugraden!</German>
-		</Key>	
-		<Key ID="STR_EPOCH_VEHUP_NO_UPGRADE_FOR_VEHICLE">
-			<English>There is no %1 upgrade for %2 available!</English>
-			<German>Es ist kein %1 Upgrade für %2 verfügbar!</German>
-		</Key>
-		<Key ID="STR_EPOCH_VEHUP_NOT_ALLOWED">
-			<English>The vehicle upgrade for %1 got disabled on this server!</English>
-			<German>Das Fahrzeug-Upgrade für %1 wurde auf diesem Server deaktiviert!</German>
 		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
