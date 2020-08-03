@@ -7,8 +7,21 @@ class ItemAluminumBar: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\aluminum_bar.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_alum_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_ALUMINUM_DESC;
-
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_210_9;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemAluminumBar10oz",1}};
+			input[] = {{"ItemAluminumBar",10}};
+		};
+	};
 };
+
 class ItemAluminumBar10oz: CA_Magazine 
 {
 	scope = 2;

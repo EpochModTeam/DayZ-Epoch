@@ -7,8 +7,21 @@ class ItemTinBar: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\tin_bar.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_tin_bar_CA.paa";
 	descriptionShort = $STR_EPOCH_TIN_DESC;
-
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_210_9;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemTinBar10oz",1}};
+			input[] = {{"ItemTinBar",10}};
+		};
+	};
 };
+
 class ItemTinBar10oz: CA_Magazine 
 {
 	scope = 2;
