@@ -4,16 +4,18 @@ serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","RU_Citizen4","Profit
 
 /***************Hero Vendor*********/
 menu_FR_AC = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",1],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",2],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",3],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",4],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",5],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",1],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",2],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",3],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",4],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",5]],
 	[],
 	"hero"
 ];
+if (Z_singleCurrency) then {(menu_FR_AC select 0) set [count (menu_FR_AC select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
 /***************Bandit Vendor*********/
 menu_GUE_Commander = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",6],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",7],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",8],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",9],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",10],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",6],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",7],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",8],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",9],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",10]],
 	[],
 	"hostile"
 ];
+if (Z_singleCurrency) then {(menu_GUE_Commander select 0) set [count (menu_GUE_Commander select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
 /************************************Stary*************************************/
 /***************Black Market*********/
 menu_GUE_Woodlander2 = [
@@ -52,11 +54,11 @@ menu_Dr_Hladik_EP1 = [
 
 /***************Building/Parts*********/
 menu_Worker2 = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
 	[],
 	"neutral"
 ];
-
+if (Z_singleCurrency) then {(menu_Worker2 select 0) set [count (menu_Worker2 select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
 /***************Vehicles*********/
 menu_TK_CIV_Worker01_EP1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_BIKESATVS",37],[localize "STR_EPOCH_TRADER_CATEGORY_CARS",38],[localize "STR_EPOCH_TRADER_CATEGORY_PICKUPS",39],[localize "STR_EPOCH_TRADER_CATEGORY_UAZS",40],[localize "STR_EPOCH_TRADER_CATEGORY_SUVS",41],[localize "STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS",42],[localize "STR_EPOCH_TRADER_CATEGORY_FUELTRUCKS",43],[localize "STR_EPOCH_TRADER_CATEGORY_MILITARYUNARMED",44],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",45]],
@@ -96,11 +98,11 @@ menu_Doctor = [
 
 /***************Building/Parts*********/
 menu_Worker1 = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
 	[],
 	"neutral"
 ];
-
+if (Z_singleCurrency) then {(menu_Worker1 select 0) set [count (menu_Worker1 select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
 /***************Vehicles*********/
 menu_TK_CIV_Worker02_EP1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_BIKESATVS",37],[localize "STR_EPOCH_TRADER_CATEGORY_CARS",38],[localize "STR_EPOCH_TRADER_CATEGORY_PICKUPS",39],[localize "STR_EPOCH_TRADER_CATEGORY_UAZS",40],[localize "STR_EPOCH_TRADER_CATEGORY_SUVS",41],[localize "STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS",42],[localize "STR_EPOCH_TRADER_CATEGORY_FUELTRUCKS",43],[localize "STR_EPOCH_TRADER_CATEGORY_MILITARYUNARMED",44],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",45]],
@@ -139,11 +141,11 @@ menu_Dr_Annie_Baker_EP1 = [
 
 /***************Building/Parts*********/
 menu_Worker3 = [
-	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36],if (Z_singleCurrency) then {[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]}],
+	[[localize "STR_EPOCH_TRADER_CATEGORY_TOOLS",34],[localize "STR_EPOCH_TRADER_CATEGORY_BUILDINGSUPPLIES",35],[localize "STR_EPOCH_TRADER_CATEGORY_VEHICLEPARTS",36]],
 	[],
 	"friendly"
 ];
-
+if (Z_singleCurrency) then {(menu_Worker3 select 0) set [count (menu_Worker3 select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
 /***************Vehicles*********/
 menu_TK_CIV_Worker01_EP1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_BIKESATVS",37],[localize "STR_EPOCH_TRADER_CATEGORY_CARS",38],[localize "STR_EPOCH_TRADER_CATEGORY_PICKUPS",39],[localize "STR_EPOCH_TRADER_CATEGORY_UAZS",40],[localize "STR_EPOCH_TRADER_CATEGORY_SUVS",41],[localize "STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS",42],[localize "STR_EPOCH_TRADER_CATEGORY_FUELTRUCKS",43],[localize "STR_EPOCH_TRADER_CATEGORY_MILITARYUNARMED",44],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",45]],

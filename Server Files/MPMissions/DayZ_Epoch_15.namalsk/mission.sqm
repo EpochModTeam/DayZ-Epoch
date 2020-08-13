@@ -3,6 +3,7 @@ class Mission
 {
 	addOns[]=
 	{
+		"ns_dayz",
 		"namalsk",
 		"map_eu",
 		"ca_modules_animals",
