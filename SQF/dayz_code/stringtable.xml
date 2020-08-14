@@ -9230,6 +9230,51 @@
 			<Russian>SUV (Армированный)</Russian>
 			<German>SUV (Gepanzert)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_ARMORED+">
+			<English>SUV (Armored)+</English>
+			<Russian>SUV (Армированный)+</Russian>
+			<German>SUV (Gepanzert)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_ARMORED++">
+			<English>SUV (Armored)++</English>
+			<Russian>SUV (Армированный)++</Russian>
+			<German>SUV (Gepanzert)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_ARMORED+++">
+			<English>SUV (Armored)+++</English>
+			<Russian>SUV (Армированный)+++</Russian>
+			<German>SUV (Gepanzert)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_ARMORED++++">
+			<English>SUV (Armored)++++</English>
+			<Russian>SUV (Армированный)++++</Russian>
+			<German>SUV (Gepanzert)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED">
+			<English>SUV PKT (Armored)</English>
+			<Russian>SUV PKT (Армированный)</Russian>
+			<German>SUV PKT (Gepanzert)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED+">
+			<English>SUV PKT (Armored)+</English>
+			<Russian>SUV PKT (Армированный)+</Russian>
+			<German>SUV PKT (Gepanzert)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED++">
+			<English>SUV PKT (Armored)++</English>
+			<Russian>SUV PKT (Армированный)++</Russian>
+			<German>SUV PKT (Gepanzert)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED+++">
+			<English>SUV PKT (Armored)+++</English>
+			<Russian>SUV PKT (Армированный)+++</Russian>
+			<German>SUV PKT (Gepanzert)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED++++">
+			<English>SUV PKT (Armored)++++</English>
+			<Russian>SUV PKT (Армированный)++++</Russian>
+			<German>SUV PKT (Gepanzert)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_CDF">
 			<English>UAZ (CDF)</English>
 		</Key>

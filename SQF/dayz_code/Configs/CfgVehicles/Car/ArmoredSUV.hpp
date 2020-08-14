@@ -287,7 +287,7 @@ class ArmoredSUV_PMC_DZ: ArmoredSUV_DZE_Base_PMC
 	scope = 2;
 	side = 2;
 	faction = "PMC_BAF";
-	displayName = $STR_VEH_NAME_SUV_ARMORED;
+	displayName = "$STR_VEH_NAME_SUV_ARMORED";
 	crew = "";
 	armor = 80;
 	typicalCargo[] = {};
@@ -359,49 +359,52 @@ class ArmoredSUV_PMC_DZE: ArmoredSUV_PMC_DZ
 		{
 			magazines[] = {};
 		};
-	};
+	};	
 	class Upgrades
 	{
-		ItemORP[] = {"ArmoredSUV_PMC_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"ArmoredSUV_PMC_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",4},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
 class ArmoredSUV_PMC_DZE1: ArmoredSUV_PMC_DZE
 {
+	displayName = "$STR_VEH_NAME_SUV_ARMORED+";
 	original = "ArmoredSUV_PMC_DZE";
 	maxSpeed = 270; //increased speed slightly since original is 230
 	brakeDistance = 14;
 	terrainCoef = 1.5;
+	
 	class Upgrades
 	{
-		ItemAVE[] = {"ArmoredSUV_PMC_DZE2",{},{{"ItemAVE",1 },{"PartGeneric",2},{"metal_panel_kit",2},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"ArmoredSUV_PMC_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",10},{"ItemScrews",1}}};
 	};
 };
 
 class ArmoredSUV_PMC_DZE2: ArmoredSUV_PMC_DZE1
 {
-	armor = 350;
+	displayName = "$STR_VEH_NAME_SUV_ARMORED++";
+	armor = 200;
 	class HitPoints: HitPoints
 	{
 		class HitLFWheel: HitLFWheel
 		{
-			armor = 0.3;
+			armor = 0.5;
 		};
 		class HitLBWheel: HitLBWheel
 		{
-			armor = 0.3;
+			armor = 0.5;
 		};
 		class HitRFWheel: HitRFWheel
 		{
-			armor = 0.3;
+			armor = 0.5;
 		};
 		class HitRBWheel: HitRBWheel
 		{
-			armor = 0.3;
+			armor = 0.5;
 		};
 		class HitFuel
 		{
-			armor = 0.28;
+			armor = 0.5;
 			material = -1;
 			name = "palivo";
 			visual = "";
@@ -434,22 +437,148 @@ class ArmoredSUV_PMC_DZE2: ArmoredSUV_PMC_DZE1
 	};
 	class Upgrades
 	{
-		ItemLRK[] = {"ArmoredSUV_PMC_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"ArmoredSUV_PMC_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
 class ArmoredSUV_PMC_DZE3: ArmoredSUV_PMC_DZE2
 {
+	displayName = "$STR_VEH_NAME_SUV_ARMORED+++";
 	transportMaxWeapons = 40; 
 	transportMaxMagazines = 400; 
 	transportmaxbackpacks = 15;
+	
 	class Upgrades
 	{
-		ItemTNK[] = {"ArmoredSUV_PMC_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"ArmoredSUV_PMC_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",6},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
 	};
 };
 
 class ArmoredSUV_PMC_DZE4: ArmoredSUV_PMC_DZE3
 {
+	displayName = "$STR_VEH_NAME_SUV_ARMORED++++";
+	fuelCapacity = 250; 
+};
+
+
+class ArmoredSUV_PKT_DZ: ArmoredSUV_PMC_DZ
+{
+	displayName = "$STR_VEH_NAME_SUV_PKT_ARMORED";
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			weapons[] = {"PKTBC"};
+			magazines[] = {"100Rnd_762x54_PK","100Rnd_762x54_PK","100Rnd_762x54_PK"};
+		};
+	};	
+};
+
+class ArmoredSUV_PKT_DZE: ArmoredSUV_PKT_DZ
+{
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			magazines[] = {};
+		};
+	};	
+	class Upgrades
+	{
+		ItemORP[] = {"ArmoredSUV_PKT_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",4},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class ArmoredSUV_PKT_DZE1: ArmoredSUV_PKT_DZE
+{
+	displayName = "$STR_VEH_NAME_SUV_PKT_ARMORED+";
+	original = "ArmoredSUV_PKT_DZE";
+	maxSpeed = 270; //increased speed slightly since original is 230
+	brakeDistance = 14;
+	terrainCoef = 1.5;
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"ArmoredSUV_PKT_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",10},{"ItemScrews",1}}};
+	};
+};
+
+class ArmoredSUV_PKT_DZE2: ArmoredSUV_PKT_DZE1
+{
+	displayName = "$STR_VEH_NAME_SUV_PKT_ARMORED++";
+	armor = 200;
+	class HitPoints: HitPoints
+	{
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.5;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.5;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.5;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.5;
+		};
+		class HitFuel
+		{
+			armor = 0.5;
+			material = -1;
+			name = "palivo";
+			visual = "";
+			passThrough = 1;
+		};
+		class HitEngine
+		{
+			armor = 1;
+			material = -1;
+			name = "motor";
+			visual = "";
+			passThrough = 1;
+		};
+		class HitGlass1: HitGlass1
+		{
+			armor = 2;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 2;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 2;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 2;
+		};
+	};
+	class Upgrades
+	{
+		ItemLRK[] = {"ArmoredSUV_PKT_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class ArmoredSUV_PKT_DZE3: ArmoredSUV_PKT_DZE2
+{
+	displayName = "$STR_VEH_NAME_SUV_PKT_ARMORED+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 15;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"ArmoredSUV_PKT_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",6},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class ArmoredSUV_PKT_DZE4: ArmoredSUV_PKT_DZE3
+{
+	displayName = "$STR_VEH_NAME_SUV_PKT_ARMORED++++";
 	fuelCapacity = 250; 
 };
