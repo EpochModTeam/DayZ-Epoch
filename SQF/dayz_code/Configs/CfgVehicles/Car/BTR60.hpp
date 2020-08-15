@@ -5,7 +5,7 @@ class BTR60_TK_EP1: BRDM2_Base {
 
 class BTR60_TK_EP1_DZ: BTR60_TK_EP1 {
 	scope = 2;
-	displayName = $STR_VEH_NAME_BTR60_WOOD;
+	displayName = "$STR_VEH_NAME_BTR60_WOOD";
 	vehicleClass = "DayZ Epoch Vehicles";
 
 	commanderCanSee = 2+16+32;
@@ -131,7 +131,6 @@ class BTR60_TK_EP1_DZ: BTR60_TK_EP1 {
 
 class BTR60_TK_EP1_DZE: BTR60_TK_EP1_DZ {
 	scope = 2;
-	displayName = $STR_VEH_NAME_BTR60_WOOD;
 
 	class Turrets: Turrets
 	{
@@ -236,6 +235,48 @@ class BTR60_TK_EP1_DZE: BTR60_TK_EP1_DZ {
 			memoryPointsGetInGunnerDir = "pos commander dir";
 		};
 	};	
+	
+	class Upgrades {
+		ItemTankORP[] = {"BTR60_TK_EP1_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+	};
+};
+
+class BTR60_TK_EP1_DZE1: BTR60_TK_EP1_DZE {
+	displayName = "$STR_VEH_NAME_BTR60_WOOD+";
+	original = "BTR60_TK_EP1_DZE";
+	maxspeed = 120; // base 100
+	terrainCoef = 1; // base 2
+	turnCoef = 2;  // base 4
+	
+	class Upgrades {
+		ItemTankAVE[] = {"BTR60_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+	};
+};
+
+class BTR60_TK_EP1_DZE2: BTR60_TK_EP1_DZE1 {
+	displayName = "$STR_VEH_NAME_BTR60_WOOD++";
+	armor = 200; // base 120
+	damageResistance = 0.037; // base 0.01849
+	
+	class Upgrades {
+		ItemTankLRK[] = {"BTR60_TK_EP1_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BTR60_TK_EP1_DZE3: BTR60_TK_EP1_DZE2 {
+	displayName = "$STR_VEH_NAME_BTR60_WOOD+++";
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 12;
+	
+	class Upgrades {
+		ItemTankTNK[] = {"BTR60_TK_EP1_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+	};
+};
+
+class BTR60_TK_EP1_DZE4: BTR60_TK_EP1_DZE3 {
+	displayName = "$STR_VEH_NAME_BTR60_WOOD++++";
+	fuelCapacity = 200; // base 100	
 };
 
 class BTR60_Gue_DZ: BTR60_TK_EP1_DZ {
@@ -246,6 +287,48 @@ class BTR60_Gue_DZ: BTR60_TK_EP1_DZ {
 
 class BTR60_Gue_DZE: BTR60_TK_EP1_DZE {
 	scope = 2;
-	displayName = $STR_VEH_NAME_BTR60_GREEN;
+	displayName = "$STR_VEH_NAME_BTR60_GREEN";
 	hiddenSelectionsTextures[] = {"\CorePatch\CorePatch_Vehicles\textures\btr60_body_gue_co.paa","\CorePatch\CorePatch_Vehicles\textures\btr60_details_gue_co.paa"};	
+
+	class Upgrades {
+		ItemTankORP[] = {"BTR60_Gue_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankORP",1},{"PartEngine",6},{"PartGeneric",2},{"ItemScrews",2}}};
+	};
+};
+
+class BTR60_Gue_DZE1: BTR60_Gue_DZE {
+	displayName = "$STR_VEH_NAME_BTR60_GREEN+";
+	original = "BTR60_Gue_DZE";
+	maxspeed = 120; // base 100
+	terrainCoef = 1; // base 2
+	turnCoef = 2;  // base 4
+	
+	class Upgrades {
+		ItemTankAVE[] = {"BTR60_Gue_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
+	};
+};
+
+class BTR60_Gue_DZE2: BTR60_Gue_DZE1 {
+	displayName = "$STR_VEH_NAME_BTR60_GREEN++";
+	armor = 200; // base 120
+	damageResistance = 0.037; // base 0.01849
+	
+	class Upgrades {
+		ItemTankLRK[] = {"BTR60_Gue_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BTR60_Gue_DZE3: BTR60_Gue_DZE2 {
+	displayName = "$STR_VEH_NAME_BTR60_GREEN+++";
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 12;
+	
+	class Upgrades {
+		ItemTankTNK[] = {"BTR60_Gue_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankTNK",1},{"PartFueltank",6},{"ItemFuelBarrel",4}}};
+	};
+};
+
+class BTR60_Gue_DZE4: BTR60_Gue_DZE3 {
+	displayName = "$STR_VEH_NAME_BTR60_GREEN++++";
+	fuelCapacity = 200; // base 100	
 };

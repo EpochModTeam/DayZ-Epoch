@@ -8685,9 +8685,33 @@
 		<Key ID="STR_VEH_NAME_LAV25">
 			<English>LAV-25</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_LAV25+">
+			<English>LAV-25+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_LAV25++">
+			<English>LAV-25++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_LAV25+++">
+			<English>LAV-25+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_LAV25++++">
+			<English>LAV-25++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_LAV25_HQ">
 			<English>LAV-25 HQ (M240)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_LAV25_HQ+">
+			<English>LAV-25 HQ (M240)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_LAV25_HQ++">
+			<English>LAV-25 HQ (M240)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_LAV25_HQ+++">
+			<English>LAV-25 HQ (M240)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_LAV25_HQ++++">
+			<English>LAV-25 HQ (M240)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BRDM2_HQ">
 			<English>BRDM-2 HQ</English>
 		</Key>
@@ -8706,36 +8730,176 @@
 			<Russian>M113 UN Скорая</Russian>
 			<German>M113 UN Sanitätsfzg.</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN+">
+			<English>M113 UN Ambulance+</English>
+			<Russian>M113 UN Скорая+</Russian>
+			<German>M113 UN Sanitätsfzg.+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN++">
+			<English>M113 UN Ambulance++</English>
+			<Russian>M113 UN Скорая++</Russian>
+			<German>M113 UN Sanitätsfzg.++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN+++">
+			<English>M113 UN Ambulance+++</English>
+			<Russian>M113 UN Скорая+++</Russian>
+			<German>M113 UN Sanitätsfzg.+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN++++">
+			<English>M113 UN Ambulance++++</English>
+			<Russian>M113 UN Скорая++++</Russian>
+			<German>M113 UN Sanitätsfzg.++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_M113_UN">
 			<English>M113 UN</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_M113_UN+">
+			<English>M113 UN+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_UN++">
+			<English>M113 UN++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_UN+++">
+			<English>M113 UN+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_UN++++">
+			<English>M113 UN++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK">
 			<English>M113 TK Ambulance</English>
 			<Russian>M113 TK Скорая</Russian>
 			<German>M113 TK Sanitätsfzg.</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK+">
+			<English>M113 TK Ambulance+</English>
+			<Russian>M113 TK Скорая+</Russian>
+			<German>M113 TK Sanitätsfzg.+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK++">
+			<English>M113 TK Ambulance++</English>
+			<Russian>M113 TK Скорая++</Russian>
+			<German>M113 TK Sanitätsfzg.++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK+++">
+			<English>M113 TK Ambulance+++</English>
+			<Russian>M113 TK Скорая+++</Russian>
+			<German>M113 TK Sanitätsfzg.+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK++++">
+			<English>M113 TK Ambulance++++</English>
+			<Russian>M113 TK Скорая++++</Russian>
+			<German>M113 TK Sanitätsfzg.++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_M113_TK">
 			<English>M113 TK</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_M113_TK+">
+			<English>M113 TK+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_TK++">
+			<English>M113 TK++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_TK+++">
+			<English>M113 TK+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_M113_TK++++">
+			<English>M113 TK++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BMP2_INS">
 			<English>BMP-2 INS</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_INS+">
+			<English>BMP-2 INS+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_INS++">
+			<English>BMP-2 INS++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_INS+++">
+			<English>BMP-2 INS+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_INS++++">
+			<English>BMP-2 INS++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BMP2_CDF">
 			<English>BMP-2 CDF</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_CDF+">
+			<English>BMP-2 CDF+</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_CDF++">
+			<English>BMP-2 CDF++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_CDF+++">
+			<English>BMP-2 CDF+++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_CDF++++">
+			<English>BMP-2 CDF++++</English>
+		</Key>			
 		<Key ID="STR_VEH_NAME_BMP2_TK">
 			<English>BMP-2 TK</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_TK+">
+			<English>BMP-2 TK+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_TK++">
+			<English>BMP-2 TK++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_TK+++">
+			<English>BMP-2 TK+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_TK++++">
+			<English>BMP-2 TK++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS">
 			<English>BMP-2 INS Ambulance</English>
 			<Russian>BMP-2 INS Скорая</Russian>
 			<German>BMP-2 INS Sanitätsfzg.</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS+">
+			<English>BMP-2 INS Ambulance+</English>
+			<Russian>BMP-2 INS Скорая+</Russian>
+			<German>BMP-2 INS Sanitätsfzg.+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS++">
+			<English>BMP-2 INS Ambulance++</English>
+			<Russian>BMP-2 INS Скорая++</Russian>
+			<German>BMP-2 INS Sanitätsfzg.++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS+++">
+			<English>BMP-2 INS Ambulance+++</English>
+			<Russian>BMP-2 INS Скорая+++</Russian>
+			<German>BMP-2 INS Sanitätsfzg.+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS++++">
+			<English>BMP-2 INS Ambulance++++</English>
+			<Russian>BMP-2 INS Скорая++++</Russian>
+			<German>BMP-2 INS Sanitätsfzg.++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF">
 			<English>BMP-2 CDF Ambulance</English>
 			<Russian>BMP-2 CDF Скорая</Russian>
 			<German>BMP-2 CDF Sanitätsfzg.</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF+">
+			<English>BMP-2 CDF Ambulance+</English>
+			<Russian>BMP-2 CDF Скорая+</Russian>
+			<German>BMP-2 CDF Sanitätsfzg.+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF++">
+			<English>BMP-2 CDF Ambulance++</English>
+			<Russian>BMP-2 CDF Скорая++</Russian>
+			<German>BMP-2 CDF Sanitätsfzg.++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF+++">
+			<English>BMP-2 CDF Ambulance+++</English>
+			<Russian>BMP-2 CDF Скорая+++</Russian>
+			<German>BMP-2 CDF Sanitätsfzg.+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF++++">
+			<English>BMP-2 CDF Ambulance++++</English>
+			<Russian>BMP-2 CDF Скорая++++</Russian>
+			<German>BMP-2 CDF Sanitätsfzg.++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND">
 			<English>MTVR (Woodland)</English>
 			<Russian>MTVR (Лесной камуфляж)</Russian>
@@ -9666,17 +9830,81 @@
 			<Russian>BTR-60 (Лесной камуфляж)</Russian>
 			<German>BTR-60 (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR60_WOOD+">
+			<English>BTR-60 (Woodland)+</English>
+			<Russian>BTR-60 (Лесной камуфляж)+</Russian>
+			<German>BTR-60 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR60_WOOD++">
+			<English>BTR-60 (Woodland)++</English>
+			<Russian>BTR-60 (Лесной камуфляж)++</Russian>
+			<German>BTR-60 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR60_WOOD+++">
+			<English>BTR-60 (Woodland)+++</English>
+			<Russian>BTR-60 (Лесной камуфляж)+++</Russian>
+			<German>BTR-60 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR60_WOOD++++">
+			<English>BTR-60 (Woodland)++++</English>
+			<Russian>BTR-60 (Лесной камуфляж)++++</Russian>
+			<German>BTR-60 (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR60_GREEN">
 			<English>BTR-60 (Green)</English>
 			<Russian>BTR-60 (Зеленый)</Russian>
 			<German>BTR-60 (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR60_GREEN+">
+			<English>BTR-60 (Green)+</English>
+			<Russian>BTR-60 (Зеленый)+</Russian>
+			<German>BTR-60 (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR60_GREEN++">
+			<English>BTR-60 (Green)++</English>
+			<Russian>BTR-60 (Зеленый)++</Russian>
+			<German>BTR-60 (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR60_GREEN+++">
+			<English>BTR-60 (Green)+++</English>
+			<Russian>BTR-60 (Зеленый)+++</Russian>
+			<German>BTR-60 (Grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR60_GREEN++++">
+			<English>BTR-60 (Green)++++</English>
+			<Russian>BTR-60 (Зеленый)++++</Russian>
+			<German>BTR-60 (Grün)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR90">
 			<English>BTR-90</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR90+">
+			<English>BTR-90+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR90++">
+			<English>BTR-90++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR90+++">
+			<English>BTR-90+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR90++++">
+			<English>BTR-90++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR90_HQ">
 			<English>BTR-90 HQ (PKT)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR90_HQ+">
+			<English>BTR-90 HQ (PKT)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR90_HQ++">
+			<English>BTR-90 HQ (PKT)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR90_HQ+++">
+			<English>BTR-90 HQ (PKT)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR90_HQ++++">
+			<English>BTR-90 HQ (PKT)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_VODNIK_PKT">
 			<English>Vodnik (PKT)</English>
 		</Key>
@@ -20231,6 +20459,38 @@
 			<English>Installation instructions for the truck armament.</English>
 			<German>Installationsanleitung für die LKW-Bewaffnung.</German>
 		</Key>
+		<Key ID="STR_EPOCH_VEHUP_ORP_TANK">
+			<English>Tank Performance</English>
+			<German>Panzer-Performance</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_ORP_TANK_DESC">
+			<English>Performace manual to increase the speed of tanks.</English>
+			<German>Performance Handbuch, um die Geschwindigkeit von Panzern zu erhöhen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_AVE_TANK">
+			<English>Tank Armor</English>
+			<German>Panzer-Panzerung</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_AVE_TANK_DESC">
+			<English>Manual to install or upgrade the armor of tanks.</English>
+			<German>Handbuch zum Installieren oder Upgraden der Panzerung von Panzern.</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_LRK_TANK">
+			<English>Tank Cargo Space</English>
+			<German>Panzer-Laderaum</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_LRK_TANK_DESC">
+			<English>Manual to upgrade the cargo space of a tank.</English>
+			<German>Handbuch zum Upgraden des Laderaums eines Panzers.</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_TNK_TANK">
+			<English>Tank Fuel Tank</English>
+			<German>Panzer-Benzintank</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_TNK_TANK_DESC">
+			<English>Install guide for bigger tank fuel tanks.</English>
+			<German>Installationsanleitung für einen größeren Benzintank bei Panzern.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_VEHUP_IN_PROGRESS">
 			<English>Vehicle Upgrade in progress, please wait...</English>
 			<German>Fahrzeug-Upgrade im Gange, bitte warte...</German>
