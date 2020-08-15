@@ -8431,36 +8431,176 @@
 			<Russian>Пикап (оранжевый)</Russian>
 			<German>Pick-up (gelbbraun)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TAN+">
+			<English>Pick-up (tan)+</English>
+			<Russian>Пикап (оранжевый)+</Russian>
+			<German>Pick-up (gelbbraun)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TAN++">
+			<English>Pick-up (tan)++</English>
+			<Russian>Пикап (оранжевый)++</Russian>
+			<German>Pick-up (gelbbraun)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TAN+++">
+			<English>Pick-up (tan)+++</English>
+			<Russian>Пикап (оранжевый)+++</Russian>
+			<German>Pick-up (gelbbraun)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TAN++++">
+			<English>Pick-up (tan)++++</English>
+			<Russian>Пикап (оранжевый)++++</Russian>
+			<German>Pick-up (gelbbraun)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_WHITE">
 			<English>Pick-up (white)</English>
 			<Russian>Пикап (белый)</Russian>
 			<German>Pick-up (weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_WHITE+">
+			<English>Pick-up (white)+</English>
+			<Russian>Пикап (белый)+</Russian>
+			<German>Pick-up (weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_WHITE++">
+			<English>Pick-up (white)++</English>
+			<Russian>Пикап (белый)++</Russian>
+			<German>Pick-up (weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_WHITE+++">
+			<English>Pick-up (white)+++</English>
+			<Russian>Пикап (белый)+++</Russian>
+			<German>Pick-up (weiß)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_WHITE++++">
+			<English>Pick-up (white)++++</English>
+			<Russian>Пикап (белый)++++</Russian>
+			<German>Pick-up (weiß)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED">
 			<English>Pick-up covered (red)</English>
 			<Russian>Пикап накрытый (красный)</Russian>
 			<German>Pick-up abgedeckt (rot)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED+">
+			<English>Pick-up covered (red)+</English>
+			<Russian>Пикап накрытый (красный)+</Russian>
+			<German>Pick-up abgedeckt (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED++">
+			<English>Pick-up covered (red)++</English>
+			<Russian>Пикап накрытый (красный)++</Russian>
+			<German>Pick-up abgedeckt (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED+++">
+			<English>Pick-up covered (red)+++</English>
+			<Russian>Пикап накрытый (красный)+++</Russian>
+			<German>Pick-up abgedeckt (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED++++">
+			<English>Pick-up covered (red)++++</English>
+			<Russian>Пикап накрытый (красный)++++</Russian>
+			<German>Pick-up abgedeckt (rot)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_BLUE">
 			<English>Pick-up (blue)</English>
 			<Russian>Пикап (синий)</Russian>
 			<German>Pick-up (blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_BLUE+">
+			<English>Pick-up (blue)+</English>
+			<Russian>Пикап (синий)+</Russian>
+			<German>Pick-up (blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_BLUE++">
+			<English>Pick-up (blue)++</English>
+			<Russian>Пикап (синий)++</Russian>
+			<German>Pick-up (blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_BLUE+++">
+			<English>Pick-up (blue)+++</English>
+			<Russian>Пикап (синий)+++</Russian>
+			<German>Pick-up (blau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_BLUE++++">
+			<English>Pick-up (blue)++++</English>
+			<Russian>Пикап (синий)++++</Russian>
+			<German>Pick-up (blau)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_GREEN">
 			<English>Pick-up (green)</English>
 			<Russian>Пикап (зеленая)</Russian>
 			<German>Pick-up (grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREEN+">
+			<English>Pick-up (green)+</English>
+			<Russian>Пикап (зеленая)+</Russian>
+			<German>Pick-up (grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREEN++">
+			<English>Pick-up (green)++</English>
+			<Russian>Пикап (зеленая)++</Russian>
+			<German>Pick-up (grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREEN+++">
+			<English>Pick-up (green)+++</English>
+			<Russian>Пикап (зеленая)+++</Russian>
+			<German>Pick-up (grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREEN++++">
+			<English>Pick-up (green)++++</English>
+			<Russian>Пикап (зеленая)++++</Russian>
+			<German>Pick-up (grün)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_GREY">
 			<English>Pick-up (grey)</English>
 			<Russian>Пикап (серый)</Russian>
 			<German>Pick-up (grau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREY+">
+			<English>Pick-up (grey)+</English>
+			<Russian>Пикап (серый)+</Russian>
+			<German>Pick-up (grau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREY++">
+			<English>Pick-up (grey)++</English>
+			<Russian>Пикап (серый)++</Russian>
+			<German>Pick-up (grau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREY+++">
+			<English>Pick-up (grey)+++</English>
+			<Russian>Пикап (серый)+++</Russian>
+			<German>Pick-up (grau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GREY++++">
+			<English>Pick-up (grey)++++</English>
+			<Russian>Пикап (серый)++++</Russian>
+			<German>Pick-up (grau)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN">
 			<English>Pick-up covered (tan)</English>
 			<Russian>Пикап накрытый (оранжевый)</Russian>
 			<German>Pick-up abgedeckt (gelbbraun)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN+">
+			<English>Pick-up covered (tan)+</English>
+			<Russian>Пикап накрытый (оранжевый)+</Russian>
+			<German>Pick-up abgedeckt (gelbbraun)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN++">
+			<English>Pick-up covered (tan)++</English>
+			<Russian>Пикап накрытый (оранжевый)++</Russian>
+			<German>Pick-up abgedeckt (gelbbraun)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN+++">
+			<English>Pick-up covered (tan)+++</English>
+			<Russian>Пикап накрытый (оранжевый)+++</Russian>
+			<German>Pick-up abgedeckt (gelbbraun)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN++++">
+			<English>Pick-up covered (tan)++++</English>
+			<Russian>Пикап накрытый (оранжевый)++++</Russian>
+			<German>Pick-up abgedeckt (gelbbraun)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TRACTOR">
 			<German>Traktor</German>
 			<English>Tractor</English>
@@ -9843,6 +9983,26 @@
 			<Russian>Sedan (белый)</Russian>
 			<German>Sedan (weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SEDAN_WHITE+">
+			<English>Sedan (white)+</English>
+			<Russian>Sedan (белый)+</Russian>
+			<German>Sedan (weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SEDAN_WHITE++">
+			<English>Sedan (white)++</English>
+			<Russian>Sedan (белый)++</Russian>
+			<German>Sedan (weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SEDAN_WHITE+++">
+			<English>Sedan (white)+++</English>
+			<Russian>Sedan (белый)+++</Russian>
+			<German>Sedan (weiß)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SEDAN_WHITE++++">
+			<English>Sedan (white)++++</English>
+			<Russian>Sedan (белый)++++</Russian>
+			<German>Sedan (weiß)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SEDAN_TAXI">
 			<English>Sedan Taxi</English>
 			<Russian>Sedan Такси</Russian>
@@ -9852,11 +10012,51 @@
 			<German>Kombilimousine (gelb)</German>
 			<Russian>Старый хэтчбек (желтый)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_YELLOW+">
+			<English>Old hatchback (yellow)+</English>
+			<German>Kombilimousine (gelb)+</German>
+			<Russian>Старый хэтчбек (желтый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_YELLOW++">
+			<English>Old hatchback (yellow)++</English>
+			<German>Kombilimousine (gelb)++</German>
+			<Russian>Старый хэтчбек (желтый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_YELLOW+++">
+			<English>Old hatchback (yellow)+++</English>
+			<German>Kombilimousine (gelb)+++</German>
+			<Russian>Старый хэтчбек (желтый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_YELLOW++++">
+			<English>Old hatchback (yellow)++++</English>
+			<German>Kombilimousine (gelb)++++</German>
+			<Russian>Старый хэтчбек (желтый)++++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HATCHBACK_RED">
 			<English>Old hatchback (red)</English>
 			<German>Kombilimousine (rot)</German>
 			<Russian>Старый хэтчбек (красный)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_RED+">
+			<English>Old hatchback (red)+</English>
+			<German>Kombilimousine (rot)+</German>
+			<Russian>Старый хэтчбек (красный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_RED++">
+			<English>Old hatchback (red)++</English>
+			<German>Kombilimousine (rot)++</German>
+			<Russian>Старый хэтчбек (красный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_RED+++">
+			<English>Old hatchback (red)+++</English>
+			<German>Kombilimousine (rot)+++</German>
+			<Russian>Старый хэтчбек (красный)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_HATCHBACK_RED++++">
+			<English>Old hatchback (red)++++</English>
+			<German>Kombilimousine (rot)++++</German>
+			<Russian>Старый хэтчбек (красный)++++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR40_DSHKM_GREEN">
 			<English>BTR-40 DSHKM (Green)</English>
 			<Russian>BTR-40 DSHKM (Зеленый)</Russian>
