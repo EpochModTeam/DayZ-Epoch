@@ -8715,16 +8715,68 @@
 		<Key ID="STR_VEH_NAME_BRDM2_HQ">
 			<English>BRDM-2 HQ</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ+">
+			<English>BRDM-2 HQ+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ++">
+			<English>BRDM-2 HQ++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ+++">
+			<English>BRDM-2 HQ+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ++++">
+			<English>BRDM-2 HQ++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BRDM2_TK">
 			<English>BRDM-2 TK</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_TK+">
+			<English>BRDM-2 TK+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_TK++">
+			<English>BRDM-2 TK++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_TK+++">
+			<English>BRDM-2 TK+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_TK++++">
+			<English>BRDM-2 TK++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BRDM2_GUE">
 			<English>BRDM-2 GUE</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_GUE+">
+			<English>BRDM-2 GUE+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_GUE++">
+			<English>BRDM-2 GUE++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_GUE+++">
+			<English>BRDM-2 GUE+++</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_BRDM2_GUE++++">
+			<English>BRDM-2 GUE++++</English>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES">
 			<English>BRDM-2 Desert Camo</English>
 			<German>BRDM-2 Wüstentarn</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_DES+">
+			<English>BRDM-2 Desert Camo+</English>
+			<German>BRDM-2 Wüstentarn+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_DES++">
+			<English>BRDM-2 Desert Camo++</English>
+			<German>BRDM-2 Wüstentarn++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_DES+++">
+			<English>BRDM-2 Desert Camo+++</English>
+			<German>BRDM-2 Wüstentarn+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_DES++++">
+			<English>BRDM-2 Desert Camo++++</English>
+			<German>BRDM-2 Wüstentarn++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN">
 			<English>M113 UN Ambulance</English>
 			<Russian>M113 UN Скорая</Russian>
@@ -9810,21 +9862,101 @@
 			<Russian>BTR-40 DSHKM (Зеленый)</Russian>
 			<German>BTR-40 DSHKM (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_GREEN+">
+			<English>BTR-40 DSHKM (Green)+</English>
+			<Russian>BTR-40 DSHKM (Зеленый)+</Russian>
+			<German>BTR-40 DSHKM (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_GREEN++">
+			<English>BTR-40 DSHKM (Green)++</English>
+			<Russian>BTR-40 DSHKM (Зеленый)++</Russian>
+			<German>BTR-40 DSHKM (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_GREEN+++">
+			<English>BTR-40 DSHKM (Green)+++</English>
+			<Russian>BTR-40 DSHKM (Зеленый)+++</Russian>
+			<German>BTR-40 DSHKM (Grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_GREEN++++">
+			<English>BTR-40 DSHKM (Green)++++</English>
+			<Russian>BTR-40 DSHKM (Зеленый)++++</Russian>
+			<German>BTR-40 DSHKM (Grün)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD">
 			<English>BTR-40 DSHKM (Woodland)</English>
 			<Russian>BTR-40 DSHKM (Лесной камуфляж)</Russian>
 			<German>BTR-40 DSHKM (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD+">
+			<English>BTR-40 DSHKM (Woodland)+</English>
+			<Russian>BTR-40 DSHKM (Лесной камуфляж)+</Russian>
+			<German>BTR-40 DSHKM (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD++">
+			<English>BTR-40 DSHKM (Woodland)++</English>
+			<Russian>BTR-40 DSHKM (Лесной камуфляж)++</Russian>
+			<German>BTR-40 DSHKM (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD+++">
+			<English>BTR-40 DSHKM (Woodland)+++</English>
+			<Russian>BTR-40 DSHKM (Лесной камуфляж)+++</Russian>
+			<German>BTR-40 DSHKM (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD++++">
+			<English>BTR-40 DSHKM (Woodland)++++</English>
+			<Russian>BTR-40 DSHKM (Лесной камуфляж)++++</Russian>
+			<German>BTR-40 DSHKM (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR40_GREEN">
 			<English>BTR-40 (Green)</English>
 			<Russian>BTR-40 (Зеленый)</Russian>
 			<German>BTR-40 (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_GREEN+">
+			<English>BTR-40 (Green)+</English>
+			<Russian>BTR-40 (Зеленый)+</Russian>
+			<German>BTR-40 (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_GREEN++">
+			<English>BTR-40 (Green)++</English>
+			<Russian>BTR-40 (Зеленый)++</Russian>
+			<German>BTR-40 (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_GREEN+++">
+			<English>BTR-40 (Green)+++</English>
+			<Russian>BTR-40 (Зеленый)+++</Russian>
+			<German>BTR-40 (Grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_GREEN++++">
+			<English>BTR-40 (Green)++++</English>
+			<Russian>BTR-40 (Зеленый)++++</Russian>
+			<German>BTR-40 (Grün)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR40_WOOD">
 			<English>BTR-40 (Woodland)</English>
 			<Russian>BTR-40 (Лесной камуфляж)</Russian>
 			<German>BTR-40 (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_WOOD+">
+			<English>BTR-40 (Woodland)+</English>
+			<Russian>BTR-40 (Лесной камуфляж)+</Russian>
+			<German>BTR-40 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_WOOD++">
+			<English>BTR-40 (Woodland)++</English>
+			<Russian>BTR-40 (Лесной камуфляж)++</Russian>
+			<German>BTR-40 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BTR40_WOOD+++">
+			<English>BTR-40 (Woodland)+++</English>
+			<Russian>BTR-40 (Лесной камуфляж)+++</Russian>
+			<German>BTR-40 (Waldtarn)+++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_BTR40_WOOD++++">
+			<English>BTR-40 (Woodland)++++</English>
+			<Russian>BTR-40 (Лесной камуфляж)++++</Russian>
+			<German>BTR-40 (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BTR60_WOOD">
 			<English>BTR-60 (Woodland)</English>
 			<Russian>BTR-60 (Лесной камуфляж)</Russian>
