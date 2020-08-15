@@ -4,8 +4,8 @@ class bulk: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_BULK_NAME;
-	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	model = "\z\addons\dayz_communityassets\models\crate.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_crate.paa";
 	descriptionShort = $STR_EPOCH_BULK_DESC;
 };
 
