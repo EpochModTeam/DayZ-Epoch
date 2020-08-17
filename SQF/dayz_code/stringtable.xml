@@ -10240,9 +10240,58 @@
 		<Key ID="STR_VEH_NAME_VODNIK_PKT">
 			<English>Vodnik (PKT)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_PKT+">
+			<English>Vodnik (PKT)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_PKT++">
+			<English>Vodnik (PKT)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_PKT+++">
+			<English>Vodnik (PKT)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_PKT++++">
+			<English>Vodnik (PKT)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_VODNIK_BPPU">
 			<English>Vodnik (BPPU)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_BPPU+">
+			<English>Vodnik (BPPU)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_BPPU++">
+			<English>Vodnik (BPPU)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_BPPU+++">
+			<English>Vodnik (BPPU)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_BPPU++++">
+			<English>Vodnik (BPPU)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_MEDEVAC">
+			<English>Vodnik (Ambulance)</English>
+			<Russian>Водник (санитарный)</Russian>
+			<German>Vodnik (Sanitätsfzg.)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_MEDEVAC+">
+			<English>Vodnik (Ambulance)+</English>
+			<Russian>Водник (санитарный)+</Russian>
+			<German>Vodnik (Sanitätsfzg.)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_MEDEVAC++">
+			<English>Vodnik (Ambulance)++</English>
+			<Russian>Водник (санитарный)++</Russian>
+			<German>Vodnik (Sanitätsfzg.)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_MEDEVAC+++">
+			<English>Vodnik (Ambulance)+++</English>
+			<Russian>Водник (санитарный)+++</Russian>
+			<German>Vodnik (Sanitätsfzg.)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_VODNIK_MEDEVAC++++">
+			<English>Vodnik (Ambulance)++++</English>
+			<Russian>Водник (санитарный)++++</Russian>
+			<German>Vodnik (Sanitätsfzg.)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT">
 			<English>Jackal L2A1 (Desert Camo)</English>
 			<Russian>Jackal L2A1 (Пустынный камуфляж)</Russian>

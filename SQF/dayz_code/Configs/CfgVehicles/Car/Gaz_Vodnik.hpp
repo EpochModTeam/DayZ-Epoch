@@ -1,7 +1,7 @@
 class GAZ_Vodnik_HMG;
 class GAZ_Vodnik_HMG_DZ : GAZ_Vodnik_HMG {
 	scope = 2;
-	displayname = $STR_VEH_NAME_VODNIK_BPPU;
+	displayname = "$STR_VEH_NAME_VODNIK_BPPU";
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -82,12 +82,62 @@ class GAZ_Vodnik_HMG_DZE : GAZ_Vodnik_HMG_DZ {
 			};
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"GAZ_Vodnik_HMG_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class GAZ_Vodnik_HMG_DZE1: GAZ_Vodnik_HMG_DZE
+{
+	displayName = "$STR_VEH_NAME_VODNIK_BPPU+";
+	original = "GAZ_Vodnik_HMG_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 3; // base 5
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"GAZ_Vodnik_HMG_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class GAZ_Vodnik_HMG_DZE2: GAZ_Vodnik_HMG_DZE1
+{
+	displayName = "$STR_VEH_NAME_VODNIK_BPPU++";
+	armor = 120; // base 100
+	damageResistance = 0.06; // base 0.02972
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"GAZ_Vodnik_HMG_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class GAZ_Vodnik_HMG_DZE3: GAZ_Vodnik_HMG_DZE2
+{
+	displayName = "$STR_VEH_NAME_VODNIK_BPPU+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"GAZ_Vodnik_HMG_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class GAZ_Vodnik_HMG_DZE4: GAZ_Vodnik_HMG_DZE3
+{
+	displayName = "$STR_VEH_NAME_VODNIK_BPPU++++";
+	fuelCapacity = 340; // base 220
 };
 
 class GAZ_Vodnik;
 class GAZ_Vodnik_DZ : GAZ_Vodnik {
 	scope = 2;
-	displayname = $STR_VEH_NAME_VODNIK_PKT;
+	displayname = "$STR_VEH_NAME_VODNIK_PKT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -182,12 +232,62 @@ class GAZ_Vodnik_DZE : GAZ_Vodnik_DZ
 			startEngine = 0;
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"GAZ_Vodnik_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class GAZ_Vodnik_DZE1: GAZ_Vodnik_DZE
+{
+	displayName = "$STR_VEH_NAME_VODNIK_PKT+";
+	original = "GAZ_Vodnik_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 3; // base 5
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"GAZ_Vodnik_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class GAZ_Vodnik_DZE2: GAZ_Vodnik_DZE1
+{
+	displayName = "$STR_VEH_NAME_VODNIK_PKT++";
+	armor = 105; // base 85
+	damageResistance = 0.065; // base 0.032
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"GAZ_Vodnik_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class GAZ_Vodnik_DZE3: GAZ_Vodnik_DZE2
+{
+	displayName = "$STR_VEH_NAME_VODNIK_PKT+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"GAZ_Vodnik_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class GAZ_Vodnik_DZE4: GAZ_Vodnik_DZE3
+{
+	displayName = "$STR_VEH_NAME_VODNIK_PKT++++";
+	fuelCapacity = 340; // base 220
 };
 
 class GAZ_Vodnik_MedEvac;
 class GAZ_Vodnik_MedEvac_DZE : GAZ_Vodnik_MedEvac {
 	crewVulnerable = 1;
-	displayname = "$STR_DN_GAZ_VODNIK_MEDEVAC";
+	displayname = "$STR_VEH_NAME_VODNIK_MEDEVAC";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
@@ -199,4 +299,54 @@ class GAZ_Vodnik_MedEvac_DZE : GAZ_Vodnik_MedEvac {
 	attendant = 0;
 	enableGPS = 0;
 	supplyRadius = 1.8;
+	
+	class Upgrades
+	{
+		ItemORP[] = {"GAZ_Vodnik_MedEvac_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class GAZ_Vodnik_MedEvac_DZE1: GAZ_Vodnik_MedEvac_DZE
+{
+	displayName = "$STR_VEH_NAME_VODNIK_MEDEVAC+";
+	original = "GAZ_Vodnik_MedEvac_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 3; // base 5
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"GAZ_Vodnik_MedEvac_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class GAZ_Vodnik_MedEvac_DZE2: GAZ_Vodnik_MedEvac_DZE1
+{
+	displayName = "$STR_VEH_NAME_VODNIK_MEDEVAC++";
+	armor = 105; // base 85
+	damageResistance = 0.065; // base 0.032
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"GAZ_Vodnik_MedEvac_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class GAZ_Vodnik_MedEvac_DZE3: GAZ_Vodnik_MedEvac_DZE2
+{
+	displayName = "$STR_VEH_NAME_VODNIK_MEDEVAC+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"GAZ_Vodnik_MedEvac_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class GAZ_Vodnik_MedEvac_DZE4: GAZ_Vodnik_MedEvac_DZE3
+{
+	displayName = "$STR_VEH_NAME_VODNIK_MEDEVAC++++";
+	fuelCapacity = 340; // base 220
 };
