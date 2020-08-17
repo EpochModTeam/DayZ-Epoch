@@ -10268,21 +10268,101 @@
 			<Russian>Dingo M240 (Пустынный камуфляж)</Russian>
 			<German>Dingo M240 (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT+">
+			<English>Dingo M240 (Desert Camo)+</English>
+			<Russian>Dingo M240 (Пустынный камуфляж)+</Russian>
+			<German>Dingo M240 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT++">
+			<English>Dingo M240 (Desert Camo)++</English>
+			<Russian>Dingo M240 (Пустынный камуфляж)++</Russian>
+			<German>Dingo M240 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT+++">
+			<English>Dingo M240 (Desert Camo)+++</English>
+			<Russian>Dingo M240 (Пустынный камуфляж)+++</Russian>
+			<German>Dingo M240 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT++++">
+			<English>Dingo M240 (Desert Camo)++++</English>
+			<Russian>Dingo M240 (Пустынный камуфляж)++++</Russian>
+			<German>Dingo M240 (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND">
 			<English>Dingo M240 (Wood Camo)</English>
 			<Russian>Dingo M240 (Лесной камуфляж)</Russian>
 			<German>Dingo M240 (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND+">
+			<English>Dingo M240 (Wood Camo)+</English>
+			<Russian>Dingo M240 (Лесной камуфляж)+</Russian>
+			<German>Dingo M240 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND++">
+			<English>Dingo M240 (Wood Camo)++</English>
+			<Russian>Dingo M240 (Лесной камуфляж)++</Russian>
+			<German>Dingo M240 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND+++">
+			<English>Dingo M240 (Wood Camo)+++</English>
+			<Russian>Dingo M240 (Лесной камуфляж)+++</Russian>
+			<German>Dingo M240 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND++++">
+			<English>Dingo M240 (Wood Camo)++++</English>
+			<Russian>Dingo M240 (Лесной камуфляж)++++</Russian>
+			<German>Dingo M240 (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT">
 			<English>Dingo MK19 (Desert Camo)</English>
 			<Russian>Dingo MK19 (Пустынный камуфляж)</Russian>
 			<German>Dingo MK19 (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT+">
+			<English>Dingo MK19 (Desert Camo)+</English>
+			<Russian>Dingo MK19 (Пустынный камуфляж)+</Russian>
+			<German>Dingo MK19 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT++">
+			<English>Dingo MK19 (Desert Camo)++</English>
+			<Russian>Dingo MK19 (Пустынный камуфляж)++</Russian>
+			<German>Dingo MK19 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT+++">
+			<English>Dingo MK19 (Desert Camo)+++</English>
+			<Russian>Dingo MK19 (Пустынный камуфляж)+++</Russian>
+			<German>Dingo MK19 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT++++">
+			<English>Dingo MK19 (Desert Camo)++++</English>
+			<Russian>Dingo MK19 (Пустынный камуфляж)++++</Russian>
+			<German>Dingo MK19 (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND">
 			<English>Dingo MK19 (Wood Camo)</English>
 			<Russian>Dingo MK19 (Лесной камуфляж)</Russian>
 			<German>Dingo MK19 (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND+">
+			<English>Dingo MK19 (Wood Camo)+</English>
+			<Russian>Dingo MK19 (Лесной камуфляж)+</Russian>
+			<German>Dingo MK19 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND++">
+			<English>Dingo MK19 (Wood Camo)++</English>
+			<Russian>Dingo MK19 (Лесной камуфляж)++</Russian>
+			<German>Dingo MK19 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND+++">
+			<English>Dingo MK19 (Wood Camo)+++</English>
+			<Russian>Dingo MK19 (Лесной камуфляж)+++</Russian>
+			<German>Dingo MK19 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND++++">
+			<English>Dingo MK19 (Wood Camo)++++</English>
+			<Russian>Dingo MK19 (Лесной камуфляж)++++</Russian>
+			<German>Dingo MK19 (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_ATV_BEIGE">
 			<English>ATV (Beige)</English>
 			<German>Quad (Beige)</German>
