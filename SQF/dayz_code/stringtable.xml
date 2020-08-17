@@ -8374,57 +8374,268 @@
 	<Package name="vehicles">
 		<Key ID="STR_VEH_NAME_HMMWV">
 			<English>HMMWV (Woodland)</English>
-			<Russian>Хамви</Russian>
-			<Spanish>Humvee Militar</Spanish>
+			<Russian>Хамви (Лесной камуфляж)</Russian>
 			<German>Humvee (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV+">
+			<English>HMMWV (Woodland)+</English>
+			<Russian>Хамви (Лесной камуфляж)+</Russian>
+			<German>Humvee (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV++">
+			<English>HMMWV (Woodland)++</English>
+			<Russian>Хамви (Лесной камуфляж)++</Russian>
+			<German>Humvee (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV+++">
+			<English>HMMWV (Woodland)+++</English>
+			<Russian>Хамви (Лесной камуфляж)+++</Russian>
+			<German>Humvee (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV++++">
+			<English>HMMWV (Woodland)++++</English>
+			<Russian>Хамви (Лесной камуфляж)++++</Russian>
+			<German>Humvee (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HUMMER">
 			<English>Hummer</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_HUMMER+">
+			<English>Hummer+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HUMMER++">
+			<English>Hummer++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HUMMER+++">
+			<English>Hummer+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HUMMER++++">
+			<English>Hummer++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_SOV">
 			<English>HMMWV SOV (Desert)</English>
 			<Russian>Хамви SOV (Пустынный)</Russian>
 			<German>Humvee SOV (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_SOV+">
+			<English>HMMWV SOV (Desert)+</English>
+			<Russian>Хамви SOV (Пустынный)+</Russian>
+			<German>Humvee SOV (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_SOV++">
+			<English>HMMWV SOV (Desert)++</English>
+			<Russian>Хамви SOV (Пустынный)++</Russian>
+			<German>Humvee SOV (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_SOV+++">
+			<English>HMMWV SOV (Desert)+++</English>
+			<Russian>Хамви SOV (Пустынный)+++</Russian>
+			<German>Humvee SOV (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_SOV++++">
+			<English>HMMWV SOV (Desert)++++</English>
+			<Russian>Хамви SOV (Пустынный)++++</Russian>
+			<German>Humvee SOV (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_GPK">
 			<English>HMMWV GPK (Desert)</English>
 			<Russian>Хамви GPK (Пустынный)</Russian>
 			<German>Humvee GPK (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_GPK+">
+			<English>HMMWV GPK (Desert)+</English>
+			<Russian>Хамви GPK (Пустынный)+</Russian>
+			<German>Humvee GPK (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_GPK++">
+			<English>HMMWV GPK (Desert)++</English>
+			<Russian>Хамви GPK (Пустынный)++</Russian>
+			<German>Humvee GPK (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_GPK+++">
+			<English>HMMWV GPK (Desert)+++</English>
+			<Russian>Хамви GPK (Пустынный)+++</Russian>
+			<German>Humvee GPK (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_GPK++++">
+			<English>HMMWV GPK (Desert)++++</English>
+			<Russian>Хамви GPK (Пустынный)++++</Russian>
+			<German>Humvee GPK (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM">
 			<English>HMMWV DSHKM (Desert)</English>
 			<Russian>Хамви DSHKM (Пустынный)</Russian>
 			<German>Humvee DSHKM (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DSHKM+">
+			<English>HMMWV DSHKM (Desert)+</English>
+			<Russian>Хамви DSHKM (Пустынный)+</Russian>
+			<German>Humvee DSHKM (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DSHKM++">
+			<English>HMMWV DSHKM (Desert)++</English>
+			<Russian>Хамви DSHKM (Пустынный)++</Russian>
+			<German>Humvee DSHKM (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DSHKM+++">
+			<English>HMMWV DSHKM (Desert)+++</English>
+			<Russian>Хамви DSHKM (Пустынный)+++</Russian>
+			<German>Humvee DSHKM (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DSHKM++++">
+			<English>HMMWV DSHKM (Desert)++++</English>
+			<Russian>Хамви DSHKM (Пустынный)++++</Russian>
+			<German>Humvee DSHKM (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30">
 			<English>HMMWV AGS-30 (Desert)</English>
 			<Russian>Хамви AGS-30 (Пустынный)</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AGS30+">
+			<English>HMMWV AGS-30 (Desert)+</English>
+			<Russian>Хамви AGS-30 (Пустынный)+</Russian>
+			<German>Humvee AGS-30 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AGS30++">
+			<English>HMMWV AGS-30 (Desert)++</English>
+			<Russian>Хамви AGS-30 (Пустынный)++</Russian>
+			<German>Humvee AGS-30 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AGS30+++">
+			<English>HMMWV AGS-30 (Desert)+++</English>
+			<Russian>Хамви AGS-30 (Пустынный)+++</Russian>
+			<German>Humvee AGS-30 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AGS30++++">
+			<English>HMMWV AGS-30 (Desert)++++</English>
+			<Russian>Хамви AGS-30 (Пустынный)++++</Russian>
+			<German>Humvee AGS-30 (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED">
 			<English>HMMWV M240 (Woodland)</English>
-			<Russian>Хамви GPK (Лесной камуфляж)</Russian>
+			<Russian>Хамви M240 (Лесной камуфляж)</Russian>
 			<German>Humvee M240 (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED+">
+			<English>HMMWV M240 (Woodland)+</English>
+			<Russian>Хамви M240 (Лесной камуфляж)+</Russian>
+			<German>Humvee M240 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED++">
+			<English>HMMWV M240 (Woodland)++</English>
+			<Russian>Хамви M240 (Лесной камуфляж)++</Russian>
+			<German>Humvee M240 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED+++">
+			<English>HMMWV M240 (Woodland)+++</English>
+			<Russian>Хамви M240 (Лесной камуфляж)+++</Russian>
+			<German>Humvee M240 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED++++">
+			<English>HMMWV M240 (Woodland)++++</English>
+			<Russian>Хамви M240 (Лесной камуфляж)++++</Russian>
+			<German>Humvee M240 (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_M2">
 			<English>HMMWV M2 (Woodland)</English>
 			<Russian>Хамви M2 (Лесной камуфляж)</Russian>
 			<German>Humvee M2 (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_M2+">
+			<English>HMMWV M2 (Woodland)+</English>
+			<Russian>Хамви M2 (Лесной камуфляж)+</Russian>
+			<German>Humvee M2 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_M2++">
+			<English>HMMWV M2 (Woodland)++</English>
+			<Russian>Хамви M2 (Лесной камуфляж)++</Russian>
+			<German>Humvee M2 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_M2+++">
+			<English>HMMWV M2 (Woodland)+++</English>
+			<Russian>Хамви M2 (Лесной камуфляж)+++</Russian>
+			<German>Humvee M2 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_M2++++">
+			<English>HMMWV M2 (Woodland)++++</English>
+			<Russian>Хамви M2 (Лесной камуфляж)++++</Russian>
+			<German>Humvee M2 (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_DES">
 			<English>HMMWV (Desert)</English>
 			<Russian>Хамви (Пустынный)</Russian>
 			<German>Humvee (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES+">
+			<English>HMMWV (Desert)+</English>
+			<Russian>Хамви (Пустынный)+</Russian>
+			<German>Humvee (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES++">
+			<English>HMMWV (Desert)++</English>
+			<Russian>Хамви (Пустынный)++</Russian>
+			<German>Humvee (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES+++">
+			<English>HMMWV (Desert)+++</English>
+			<Russian>Хамви (Пустынный)+++</Russian>
+			<German>Humvee (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES++++">
+			<English>HMMWV (Desert)++++</English>
+			<Russian>Хамви (Пустынный)++++</Russian>
+			<German>Humvee (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE">
 			<English>HMMWV Ambulance (Woodland)</English>
 			<Russian>Хамви Скорая (Лесной камуфляж)</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE+">
+			<English>HMMWV Ambulance (Woodland)+</English>
+			<Russian>Хамви Скорая (Лесной камуфляж)+</Russian>
+			<German>Humvee Sanitätsfzg. (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE++">
+			<English>HMMWV Ambulance (Woodland)++</English>
+			<Russian>Хамви Скорая (Лесной камуфляж)++</Russian>
+			<German>Humvee Sanitätsfzg. (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE+++">
+			<English>HMMWV Ambulance (Woodland)+++</English>
+			<Russian>Хамви Скорая (Лесной камуфляж)+++</Russian>
+			<German>Humvee Sanitätsfzg. (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE++++">
+			<English>HMMWV Ambulance (Woodland)++++</English>
+			<Russian>Хамви Скорая (Лесной камуфляж)++++</Russian>
+			<German>Humvee Sanitätsfzg. (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES">
 			<English>HMMWV Ambulance (Desert)</English>
 			<Russian>Хамви Скорая (Пустынный)</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES+">
+			<English>HMMWV Ambulance (Desert)+</English>
+			<Russian>Хамви Скорая (Пустынный)+</Russian>
+			<German>Humvee Sanitätsfzg. (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES++">
+			<English>HMMWV Ambulance (Desert)++</English>
+			<Russian>Хамви Скорая (Пустынный)++</Russian>
+			<German>Humvee Sanitätsfzg. (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES+++">
+			<English>HMMWV Ambulance (Desert)+++</English>
+			<Russian>Хамви Скорая (Пустынный)+++</Russian>
+			<German>Humvee Sanitätsfzg. (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES++++">
+			<English>HMMWV Ambulance (Desert)++++</English>
+			<Russian>Хамви Скорая (Пустынный)++++</Russian>
+			<German>Humvee Sanitätsfzg. (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TAN">
 			<English>Pick-up (tan)</English>
