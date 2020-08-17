@@ -2,14 +2,14 @@ class BAF_Jackal2_L2A1_D;
 class BAF_Jackal2_L2A1_D_DZ : BAF_Jackal2_L2A1_D 
 {
 	scope = 2;
-	displayname = $STR_VEH_NAME_JACKAL_L2A1_DESERT;
+	displayname = "$STR_VEH_NAME_JACKAL_L2A1_DESERT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};	
 	transportMaxMagazines = 100;
-	transportMaxWeapons = 10;
+	transportMaxWeapons = 15;
 	transportmaxbackpacks = 5;
 	class Turrets;
 	class MainTurret;
@@ -103,12 +103,62 @@ class BAF_Jackal2_L2A1_D_DZE : BAF_Jackal2_L2A1_D_DZ
 			memoryPointsGetInGunnerDir = "pos gunner dir";
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"BAF_Jackal2_L2A1_D_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class BAF_Jackal2_L2A1_D_DZE1: BAF_Jackal2_L2A1_D_DZE 
+{
+	displayName = "$STR_VEH_NAME_JACKAL_L2A1_DESERT+";
+	original = "BAF_Jackal2_L2A1_D_DZE";
+	maxSpeed = 155; // base 150
+	turnCoef = 1; // base 3
+	terrainCoef = 1; //base 3
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"BAF_Jackal2_L2A1_D_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class BAF_Jackal2_L2A1_D_DZE2: BAF_Jackal2_L2A1_D_DZE1
+{
+	displayName = "$STR_VEH_NAME_JACKAL_L2A1_DESERT++";
+	armor = 60; // base 30
+	damageResistance = 0.015; // base 0.00719
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"BAF_Jackal2_L2A1_D_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BAF_Jackal2_L2A1_D_DZE3: BAF_Jackal2_L2A1_D_DZE2
+{
+	displayName = "$STR_VEH_NAME_JACKAL_L2A1_DESERT+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 200; 
+	transportmaxbackpacks = 10;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"BAF_Jackal2_L2A1_D_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class BAF_Jackal2_L2A1_D_DZE4: BAF_Jackal2_L2A1_D_DZE3
+{
+	displayName = "$STR_VEH_NAME_JACKAL_L2A1_DESERT++++";
+	fuelCapacity = 180; // base 100
 };
 
 class BAF_Jackal2_L2A1_W_DZ : BAF_Jackal2_L2A1_D_DZ
 {
 	model = "\CorePatch\CorePatch_Vehicles\models\Jackal_L2A1_W_BAF";
-	displayname = $STR_VEH_NAME_JACKAL_L2A1_WOODLAND;
+	displayname = "$STR_VEH_NAME_JACKAL_L2A1_WOODLAND";
 	class Turrets;
 	class MainTurret;
 	class M420_Turret;
@@ -201,19 +251,69 @@ class BAF_Jackal2_L2A1_W_DZE : BAF_Jackal2_L2A1_W_DZ
 			memoryPointsGetInGunnerDir = "pos gunner dir";
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"BAF_Jackal2_L2A1_W_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class BAF_Jackal2_L2A1_W_DZE1: BAF_Jackal2_L2A1_W_DZE 
+{
+	displayName = "$STR_VEH_NAME_JACKAL_L2A1_WOODLAND+";
+	original = "BAF_Jackal2_L2A1_W_DZE";
+	maxSpeed = 155; // base 150
+	turnCoef = 1; // base 3
+	terrainCoef = 1; //base 3
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"BAF_Jackal2_L2A1_W_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class BAF_Jackal2_L2A1_W_DZE2: BAF_Jackal2_L2A1_W_DZE1
+{
+	displayName = "$STR_VEH_NAME_JACKAL_L2A1_WOODLAND++";
+	armor = 60; // base 30
+	damageResistance = 0.015; // base 0.00719
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"BAF_Jackal2_L2A1_W_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BAF_Jackal2_L2A1_W_DZE3: BAF_Jackal2_L2A1_W_DZE2
+{
+	displayName = "$STR_VEH_NAME_JACKAL_L2A1_WOODLAND+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 200; 
+	transportmaxbackpacks = 10;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"BAF_Jackal2_L2A1_W_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class BAF_Jackal2_L2A1_W_DZE4: BAF_Jackal2_L2A1_W_DZE3
+{
+	displayName = "$STR_VEH_NAME_JACKAL_L2A1_WOODLAND++++";
+	fuelCapacity = 180; // base 100
 };
 
 class BAF_Jackal2_GMG_D;
 class BAF_Jackal2_GMG_D_DZ : BAF_Jackal2_GMG_D
 {
-	displayname = $STR_VEH_NAME_JACKAL_MK19_DESERT;
+	displayname = "$STR_VEH_NAME_JACKAL_MK19_DESERT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};	
 	transportMaxMagazines = 100;
-	transportMaxWeapons = 10;
+	transportMaxWeapons = 15;
 	transportmaxbackpacks = 5;	
 	class Turrets;
 	class MainTurret;
@@ -224,7 +324,7 @@ class BAF_Jackal2_GMG_D_DZ : BAF_Jackal2_GMG_D
 
 class BAF_Jackal2_GMG_D_DZE : BAF_Jackal2_GMG_D_DZ
 {
-	displayname = $STR_VEH_NAME_JACKAL_MK19_DESERT;
+	displayname = "$STR_VEH_NAME_JACKAL_MK19_DESERT";
 	class Turrets: Turrets
 	{
 		class M420_Turret: M420_Turret{
@@ -275,12 +375,62 @@ class BAF_Jackal2_GMG_D_DZE : BAF_Jackal2_GMG_D_DZ
 			};
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"BAF_Jackal2_GMG_D_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class BAF_Jackal2_GMG_D_DZE1: BAF_Jackal2_GMG_D_DZE 
+{
+	displayName = "$STR_VEH_NAME_JACKAL_MK19_DESERT+";
+	original = "BAF_Jackal2_GMG_D_DZE";
+	maxSpeed = 155; // base 150
+	turnCoef = 1; // base 3
+	terrainCoef = 1; //base 3
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"BAF_Jackal2_GMG_D_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class BAF_Jackal2_GMG_D_DZE2: BAF_Jackal2_GMG_D_DZE1
+{
+	displayName = "$STR_VEH_NAME_JACKAL_MK19_DESERT++";
+	armor = 60; // base 30
+	damageResistance = 0.015; // base 0.00719
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"BAF_Jackal2_GMG_D_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BAF_Jackal2_GMG_D_DZE3: BAF_Jackal2_GMG_D_DZE2
+{
+	displayName = "$STR_VEH_NAME_JACKAL_MK19_DESERT+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 200; 
+	transportmaxbackpacks = 10;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"BAF_Jackal2_GMG_D_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class BAF_Jackal2_GMG_D_DZE4: BAF_Jackal2_GMG_D_DZE3
+{
+	displayName = "$STR_VEH_NAME_JACKAL_MK19_DESERT++++";
+	fuelCapacity = 180; // base 100
 };
 
 class BAF_Jackal2_GMG_W_DZ : BAF_Jackal2_GMG_D_DZ
 {
 	model = "\CorePatch\CorePatch_Vehicles\models\Jackal_GMG_W_BAF";
-	displayname = $STR_VEH_NAME_JACKAL_MK19_WOODLAND;
+	displayname = "$STR_VEH_NAME_JACKAL_MK19_WOODLAND";
 	class Turrets;
 	class MainTurret;
 	class M420_Turret;
@@ -339,4 +489,54 @@ class BAF_Jackal2_GMG_W_DZE : BAF_Jackal2_GMG_W_DZ
 			};
 		};
 	};
+		
+	class Upgrades
+	{
+		ItemORP[] = {"BAF_Jackal2_GMG_W_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class BAF_Jackal2_GMG_W_DZE1: BAF_Jackal2_GMG_W_DZE 
+{
+	displayName = "$STR_VEH_NAME_JACKAL_MK19_WOODLAND+";
+	original = "BAF_Jackal2_GMG_W_DZE";
+	maxSpeed = 155; // base 150
+	turnCoef = 1; // base 3
+	terrainCoef = 1; //base 3
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"BAF_Jackal2_GMG_W_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class BAF_Jackal2_GMG_W_DZE2: BAF_Jackal2_GMG_W_DZE1
+{
+	displayName = "$STR_VEH_NAME_JACKAL_MK19_WOODLAND++";
+	armor = 60; // base 30
+	damageResistance = 0.015; // base 0.00719
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"BAF_Jackal2_GMG_W_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BAF_Jackal2_GMG_W_DZE3: BAF_Jackal2_GMG_W_DZE2
+{
+	displayName = "$STR_VEH_NAME_JACKAL_MK19_WOODLAND+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 200; 
+	transportmaxbackpacks = 10;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"BAF_Jackal2_GMG_W_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class BAF_Jackal2_GMG_W_DZE4: BAF_Jackal2_GMG_W_DZE3
+{
+	displayName = "$STR_VEH_NAME_JACKAL_MK19_WOODLAND++++";
+	fuelCapacity = 180; // base 100
 };

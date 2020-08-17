@@ -10508,21 +10508,101 @@
 			<Russian>Jackal L2A1 (Пустынный камуфляж)</Russian>
 			<German>Jackal L2A1 (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT+">
+			<English>Jackal L2A1 (Desert Camo)+</English>
+			<Russian>Jackal L2A1 (Пустынный камуфляж)+</Russian>
+			<German>Jackal L2A1 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT++">
+			<English>Jackal L2A1 (Desert Camo)++</English>
+			<Russian>Jackal L2A1 (Пустынный камуфляж)++</Russian>
+			<German>Jackal L2A1 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT+++">
+			<English>Jackal L2A1 (Desert Camo)+++</English>
+			<Russian>Jackal L2A1 (Пустынный камуфляж)+++</Russian>
+			<German>Jackal L2A1 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT++++">
+			<English>Jackal L2A1 (Desert Camo)++++</English>
+			<Russian>Jackal L2A1 (Пустынный камуфляж)++++</Russian>
+			<German>Jackal L2A1 (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND">
 			<English>Jackal L2A1 (Wood Camo)</English>
 			<Russian>Jackal L2A1 (Лесной камуфляж)</Russian>
 			<German>Jackal L2A1 (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND+">
+			<English>Jackal L2A1 (Wood Camo)+</English>
+			<Russian>Jackal L2A1 (Лесной камуфляж)+</Russian>
+			<German>Jackal L2A1 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND++">
+			<English>Jackal L2A1 (Wood Camo)++</English>
+			<Russian>Jackal L2A1 (Лесной камуфляж)++</Russian>
+			<German>Jackal L2A1 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND+++">
+			<English>Jackal L2A1 (Wood Camo)+++</English>
+			<Russian>Jackal L2A1 (Лесной камуфляж)+++</Russian>
+			<German>Jackal L2A1 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND++++">
+			<English>Jackal L2A1 (Wood Camo)++++</English>
+			<Russian>Jackal L2A1 (Лесной камуфляж)++++</Russian>
+			<German>Jackal L2A1 (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT">
 			<English>Jackal MK19 (Desert Camo)</English>
 			<Russian>Jackal MK19 (Пустынный камуфляж)</Russian>
 			<German>Jackal MK19 (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT+">
+			<English>Jackal MK19 (Desert Camo)+</English>
+			<Russian>Jackal MK19 (Пустынный камуфляж)+</Russian>
+			<German>Jackal MK19 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT++">
+			<English>Jackal MK19 (Desert Camo)++</English>
+			<Russian>Jackal MK19 (Пустынный камуфляж)++</Russian>
+			<German>Jackal MK19 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT+++">
+			<English>Jackal MK19 (Desert Camo)+++</English>
+			<Russian>Jackal MK19 (Пустынный камуфляж)+++</Russian>
+			<German>Jackal MK19 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT++++">
+			<English>Jackal MK19 (Desert Camo)++++</English>
+			<Russian>Jackal MK19 (Пустынный камуфляж)++++</Russian>
+			<German>Jackal MK19 (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND">
 			<English>Jackal MK19 (Wood Camo)</English>
 			<Russian>Jackal MK19 (Лесной камуфляж)</Russian>
 			<German>Jackal MK19 (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND+">
+			<English>Jackal MK19 (Wood Camo)+</English>
+			<Russian>Jackal MK19 (Лесной камуфляж)+</Russian>
+			<German>Jackal MK19 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND++">
+			<English>Jackal MK19 (Wood Camo)++</English>
+			<Russian>Jackal MK19 (Лесной камуфляж)++</Russian>
+			<German>Jackal MK19 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND+++">
+			<English>Jackal MK19 (Wood Camo)+++</English>
+			<Russian>Jackal MK19 (Лесной камуфляж)+++</Russian>
+			<German>Jackal MK19 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND++++">
+			<English>Jackal MK19 (Wood Camo)++++</English>
+			<Russian>Jackal MK19 (Лесной камуфляж)++++</Russian>
+			<German>Jackal MK19 (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT">
 			<English>Dingo M240 (Desert Camo)</English>
 			<Russian>Dingo M240 (Пустынный камуфляж)</Russian>
