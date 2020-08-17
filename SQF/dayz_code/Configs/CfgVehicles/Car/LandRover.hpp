@@ -1,7 +1,7 @@
 class LandRover_CZ_EP1;
 class LandRover_CZ_EP1_DZE: LandRover_CZ_EP1 {
 	scope = 2;
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_DESERT;
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
@@ -24,21 +24,23 @@ class LandRover_CZ_EP1_DZE: LandRover_CZ_EP1 {
 	supplyRadius = 1.2;
 	
 	class Upgrades {
-		ItemORP[] = {"LandRover_CZ_EP1_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"LandRover_CZ_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
 class LandRover_CZ_EP1_DZE1: LandRover_CZ_EP1_DZE {	
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT+";
 	original = "LandRover_CZ_EP1_DZE";
 	maxspeed = 160;
 	terrainCoef = 1.5;
 	
 	class Upgrades {
-		ItemAVE[] = {"LandRover_CZ_EP1_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"LandRover_CZ_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};	
 };
 
 class LandRover_CZ_EP1_DZE2: LandRover_CZ_EP1_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT++";
 	armor = 60;
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
@@ -54,52 +56,40 @@ class LandRover_CZ_EP1_DZE2: LandRover_CZ_EP1_DZE1 {
 		class HitRBWheel: HitRBWheel {
 			armor = 0.65;
 		};
-		class HitFuel {
+		class HitFuel: HitFuel {
 			armor = 1.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine {
+		class HitEngine: HitEngine {
 			armor = 2.5;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1 {
 			armor = 0.25;
 		};
-		class HitGlass2: HitGlass2 {
-			armor = 0.2;
-		};
-		class HitGlass3: HitGlass3 {
-			armor = 0.2;
-		};
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"LandRover_CZ_EP1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"LandRover_CZ_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
 class LandRover_CZ_EP1_DZE3: LandRover_CZ_EP1_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT+++";
 	transportMaxWeapons = 30;
 	transportMaxMagazines = 140;
     transportmaxbackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"LandRover_CZ_EP1_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"LandRover_CZ_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
 class LandRover_CZ_EP1_DZE4: LandRover_CZ_EP1_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT++++";
 	fuelCapacity = 250;
 };
 
 class LandRover_TK_CIV_EP1_DZE: LandRover_CZ_EP1_DZE {
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_RED;
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_RED";
 	hiddenSelections[] = {"Camo1"};
 	hiddenSelectionsTextures[] = {"\ca\wheeled_E\LR\Data\LR_Base_red_CO.paa"};
 	
@@ -115,21 +105,23 @@ class LandRover_TK_CIV_EP1_DZE: LandRover_CZ_EP1_DZE {
 	class HitGlass3;
 	
 	class Upgrades {
-		ItemORP[] = {"LandRover_TK_CIV_EP1_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"LandRover_TK_CIV_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};	
 };
 
 class LandRover_TK_CIV_EP1_DZE1: LandRover_TK_CIV_EP1_DZE {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_RED+";
 	original = "LandRover_TK_CIV_EP1_DZE";
 	maxspeed = 160;
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"LandRover_TK_CIV_EP1_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"LandRover_TK_CIV_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};	
 };
 
 class LandRover_TK_CIV_EP1_DZE2: LandRover_TK_CIV_EP1_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_RED++";
 	armor = 60;
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
@@ -145,56 +137,41 @@ class LandRover_TK_CIV_EP1_DZE2: LandRover_TK_CIV_EP1_DZE1 {
 		class HitRBWheel: HitRBWheel {
 			armor = 0.65;
 		};
-		class HitFuel {
+		class HitFuel: HitFuel {
 			armor = 1.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine {
+		class HitEngine: HitEngine {
 			armor = 2.5;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1 {
 			armor = 0.25;
 		};
-		class HitGlass2: HitGlass2 {
-			armor = 0.2;
-		};
-		class HitGlass3: HitGlass3 {
-			armor = 0.2;
-		};
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"LandRover_TK_CIV_EP1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"LandRover_TK_CIV_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
 class LandRover_TK_CIV_EP1_DZE3: LandRover_TK_CIV_EP1_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_RED+++";
 	transportMaxWeapons = 30;
 	transportMaxMagazines = 140;
     transportmaxbackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"LandRover_TK_CIV_EP1_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"LandRover_TK_CIV_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
 class LandRover_TK_CIV_EP1_DZE4: LandRover_TK_CIV_EP1_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_RED++++";
 	fuelCapacity = 250;
 };
 
 class LandRover_ACR_DZE: LandRover_CZ_EP1_DZE {
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND;
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND";
 	model = "\Ca\Wheeled_ACR\LR\LR_ACR.p3d";
-	class Upgrades {
-		ItemORP[] = {"LandRover_ACR_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
-	};
 	class HitPoints;
 	class HitLFWheel;
 	class HitLBWheel;
@@ -205,19 +182,25 @@ class LandRover_ACR_DZE: LandRover_CZ_EP1_DZE {
 	class HitGlass1;
 	class HitGlass2;
 	class HitGlass3;	
+	
+	class Upgrades {
+		ItemORP[] = {"LandRover_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
 };
 
 class LandRover_ACR_DZE1: LandRover_ACR_DZE {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+";
 	original = "LandRover_ACR_DZE";
 	maxspeed = 160;
 	terrainCoef = 1.5;	
 
 	class Upgrades {
-		ItemAVE[] = {"LandRover_ACR_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"LandRover_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};	
 };
 
 class LandRover_ACR_DZE2: LandRover_ACR_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++";
 	armor = 60;
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
@@ -233,52 +216,40 @@ class LandRover_ACR_DZE2: LandRover_ACR_DZE1 {
 		class HitRBWheel: HitRBWheel {
 			armor = 0.65;
 		};
-		class HitFuel {
+		class HitFuel: HitFuel {
 			armor = 1.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine {
+		class HitEngine: HitEngine {
 			armor = 2.5;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1 {
 			armor = 0.25;
 		};
-		class HitGlass2: HitGlass2 {
-			armor = 0.2;
-		};
-		class HitGlass3: HitGlass3 {
-			armor = 0.2;
-		};
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"LandRover_ACR_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"LandRover_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
 class LandRover_ACR_DZE3: LandRover_ACR_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+++";
 	transportMaxWeapons = 30;
 	transportMaxMagazines = 140;
     transportmaxbackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"LandRover_ACR_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"LandRover_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
 class LandRover_ACR_DZE4: LandRover_ACR_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++++";
 	fuelCapacity = 250;
 };
 
 class LandRover_Ambulance_ACR_DZE: LandRover_ACR_DZE {
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND;
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND";
 	model = "\Ca\Wheeled_ACR\LR\LR_AMB_ACR";
 	hiddenSelections[] = {"camo2"};
 	hiddenSelectionsTextures[] = {"\ca\wheeled_acr\lr\data\lr_amb_ext_co.paa"};
@@ -288,16 +259,144 @@ class LandRover_Ambulance_ACR_DZE: LandRover_ACR_DZE {
 	{
 		tex[] = {};
 		mat[] = {"ca\wheeled_acr\lr\data\lr_amb_ext.rvmat","ca\wheeled_acr\lr\data\lr_amb_ext_damage.rvmat","ca\wheeled_acr\lr\data\lr_amb_ext_destruct.rvmat","ca\wheeled_E\LR\Data\LR_base.rvmat","ca\wheeled_E\LR\Data\LR_base_damage.rvmat","ca\wheeled_E\LR\Data\LR_base_destruct.rvmat","ca\wheeled_E\LR\Data\LR_glass.rvmat","ca\wheeled_E\LR\Data\LR_glass_damage.rvmat","ca\wheeled_E\LR\Data\LR_glass_destruct.rvmat","ca\wheeled_E\LR\Data\LR_Special.rvmat","ca\wheeled_E\LR\Data\LR_Special_damage.rvmat","ca\wheeled_E\LR\Data\LR_Special_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
+	};	
+
+	class Upgrades {
+		ItemORP[] = {"LandRover_Ambulance_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};		
 };
 
+class LandRover_Ambulance_ACR_DZE1: LandRover_Ambulance_ACR_DZE {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND+";
+	original = "LandRover_Ambulance_ACR_DZE";
+	maxspeed = 160;
+	terrainCoef = 1.5;	
+
+	class Upgrades {
+		ItemAVE[] = {"LandRover_Ambulance_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};	
+};
+
+class LandRover_Ambulance_ACR_DZE2: LandRover_Ambulance_ACR_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND++";
+	armor = 60;
+	damageResistance = 0.02099;
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
+			armor = 0.65;
+		};
+		class HitLBWheel: HitLBWheel {
+			armor = 0.65;
+		};
+		class HitRFWheel: HitRFWheel {
+			armor = 0.65;
+		};
+		class HitRBWheel: HitRBWheel {
+			armor = 0.65;
+		};
+		class HitFuel: HitFuel {
+			armor = 1.5;
+		};
+		class HitEngine: HitEngine {
+			armor = 2.5;
+		};
+		class HitGlass1: HitGlass1 {
+			armor = 0.25;
+		};
+	};
+
+	class Upgrades {
+		ItemLRK[] = {"LandRover_Ambulance_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class LandRover_Ambulance_ACR_DZE3: LandRover_Ambulance_ACR_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND+++";
+	transportMaxWeapons = 30;
+	transportMaxMagazines = 140;
+    transportmaxbackpacks = 8;
+
+	class Upgrades {
+		ItemTNK[] = {"LandRover_Ambulance_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+	};
+};
+
+class LandRover_Ambulance_ACR_DZE4: LandRover_Ambulance_ACR_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND++++";
+	fuelCapacity = 250;
+};
+
 class LandRover_Ambulance_Des_ACR_DZE: LandRover_Ambulance_ACR_DZE {
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT;
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT";
 	hiddenSelectionsTextures[] = {"\ca\wheeled_acr\lr\data\lr_amb_ext_desert_co.paa"};
+	
+	class Upgrades {
+		ItemORP[] = {"LandRover_Ambulance_Des_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class LandRover_Ambulance_Des_ACR_DZE1: LandRover_Ambulance_Des_ACR_DZE {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT+";
+	original = "LandRover_Ambulance_Des_ACR_DZE";
+	maxspeed = 160;
+	terrainCoef = 1.5;	
+
+	class Upgrades {
+		ItemAVE[] = {"LandRover_Ambulance_Des_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};	
+};
+
+class LandRover_Ambulance_Des_ACR_DZE2: LandRover_Ambulance_Des_ACR_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT++";
+	armor = 60;
+	damageResistance = 0.02099;
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
+			armor = 0.65;
+		};
+		class HitLBWheel: HitLBWheel {
+			armor = 0.65;
+		};
+		class HitRFWheel: HitRFWheel {
+			armor = 0.65;
+		};
+		class HitRBWheel: HitRBWheel {
+			armor = 0.65;
+		};
+		class HitFuel: HitFuel {
+			armor = 1.5;
+		};
+		class HitEngine: HitEngine {
+			armor = 2.5;
+		};
+		class HitGlass1: HitGlass1 {
+			armor = 0.25;
+		};
+	};
+
+	class Upgrades {
+		ItemLRK[] = {"LandRover_Ambulance_Des_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class LandRover_Ambulance_Des_ACR_DZE3: LandRover_Ambulance_Des_ACR_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT+++";
+	transportMaxWeapons = 30;
+	transportMaxMagazines = 140;
+    transportmaxbackpacks = 8;
+
+	class Upgrades {
+		ItemTNK[] = {"LandRover_Ambulance_Des_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+	};
+};
+
+class LandRover_Ambulance_Des_ACR_DZE4: LandRover_Ambulance_Des_ACR_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT++++";
+	fuelCapacity = 250;
 };
 
 class BAF_Offroad_D_DZE: LandRover_CZ_EP1_DZE {
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_DESERT;
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT";
 	model = "ca\wheeled_d_baf\LR_covered_soft_BAF";
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
@@ -320,21 +419,23 @@ class BAF_Offroad_D_DZE: LandRover_CZ_EP1_DZE {
 		mat[] = {"ca\wheeled_d_baf\Data\LR_base_baf.rvmat","ca\wheeled_d_baf\Data\LR_base_baf_damage.rvmat","ca\wheeled_d_baf\Data\LR_base_baf_destruct.rvmat","ca\wheeled_d_baf\Data\LR_glass_baf.rvmat","ca\wheeled_d_baf\Data\LR_glass_baf_damage.rvmat","ca\wheeled_d_baf\Data\LR_glass_baf_destruct.rvmat","ca\wheeled_d_baf\Data\LR_Special_baf.rvmat","ca\wheeled_d_baf\Data\LR_Special_baf_damage.rvmat","ca\wheeled_d_baf\Data\LR_Special_baf_destruct.rvmat"};
 	};
 	class Upgrades {
-		ItemORP[] = {"BAF_Offroad_D_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"BAF_Offroad_D_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};		
 };
 
-class BAF_Offroad_D_DZE1: BAF_Offroad_D_DZE {	
+class BAF_Offroad_D_DZE1: BAF_Offroad_D_DZE {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT+";	
 	original = "BAF_Offroad_D_DZE";
 	maxspeed = 160;
 	terrainCoef = 1.5;	
 
 	class Upgrades {
-		ItemAVE[] = {"BAF_Offroad_D_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"BAF_Offroad_D_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};	
 };
 
 class BAF_Offroad_D_DZE2: BAF_Offroad_D_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT++";
 	armor = 60;
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
@@ -350,52 +451,40 @@ class BAF_Offroad_D_DZE2: BAF_Offroad_D_DZE1 {
 		class HitRBWheel: HitRBWheel {
 			armor = 0.65;
 		};
-		class HitFuel {
+		class HitFuel: HitFuel {
 			armor = 1.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine {
+		class HitEngine: HitEngine {
 			armor = 2.5;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1 {
 			armor = 0.25;
 		};
-		class HitGlass2: HitGlass2 {
-			armor = 0.2;
-		};
-		class HitGlass3: HitGlass3 {
-			armor = 0.2;
-		};
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"BAF_Offroad_D_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"BAF_Offroad_D_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
 class BAF_Offroad_D_DZE3: BAF_Offroad_D_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT+++";
 	transportMaxWeapons = 30;
 	transportMaxMagazines = 140;
     transportmaxbackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"BAF_Offroad_D_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"BAF_Offroad_D_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
 class BAF_Offroad_D_DZE4: BAF_Offroad_D_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_DESERT++++";
 	fuelCapacity = 250;
 };
 
 class BAF_Offroad_W_DZE: BAF_Offroad_D_DZE {
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND;	
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND";	
 	model = "ca\wheeled_w_baf\LR_covered_soft_W_BAF";
 	
 	class HitPoints;
@@ -410,21 +499,23 @@ class BAF_Offroad_W_DZE: BAF_Offroad_D_DZE {
 	class HitGlass3;	
 	
 	class Upgrades {
-		ItemORP[] = {"BAF_Offroad_W_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"BAF_Offroad_W_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};		
 };
 
 class BAF_Offroad_W_DZE1: BAF_Offroad_W_DZE {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+";
 	original = "BAF_Offroad_W_DZE";
 	maxspeed = 160;
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"BAF_Offroad_W_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"BAF_Offroad_W_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};	
 };
 
 class BAF_Offroad_W_DZE2: BAF_Offroad_W_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++";
 	armor = 60;
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
@@ -440,47 +531,35 @@ class BAF_Offroad_W_DZE2: BAF_Offroad_W_DZE1 {
 		class HitRBWheel: HitRBWheel {
 			armor = 0.65;
 		};
-		class HitFuel {
+		class HitFuel: HitFuel {
 			armor = 1.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine {
+		class HitEngine: HitEngine {
 			armor = 2.5;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1 {
 			armor = 0.25;
 		};
-		class HitGlass2: HitGlass2 {
-			armor = 0.2;
-		};
-		class HitGlass3: HitGlass3 {
-			armor = 0.2;
-		};
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"BAF_Offroad_W_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"BAF_Offroad_W_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
 class BAF_Offroad_W_DZE3: BAF_Offroad_W_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+++";
 	transportMaxWeapons = 30;
 	transportMaxMagazines = 140;
     transportmaxbackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"BAF_Offroad_W_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"BAF_Offroad_W_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
 class BAF_Offroad_W_DZE4: BAF_Offroad_W_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++++";
 	fuelCapacity = 250;
 };
 
@@ -488,7 +567,7 @@ class LandRover_Special_CZ_EP1;
 class LandRover_Special_CZ_EP1_DZ: LandRover_Special_CZ_EP1
 {
 	scope = 2;
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL;
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL";
 	vehicleClass = "DayZ Epoch Vehicles";
 	class Turrets;
 	class MainTurret;
@@ -508,6 +587,7 @@ class LandRover_Special_CZ_EP1_DZ: LandRover_Special_CZ_EP1
 	class HitRBWheel;
 	class HitFuel;
 	class HitEngine;
+	class HitGlass1;
 	supplyRadius = 1.2;	
 };
 
@@ -576,21 +656,23 @@ class LandRover_Special_CZ_EP1_DZE: LandRover_Special_CZ_EP1_DZ
 		};
 	};
 	class Upgrades {
-		ItemORP[] = {"LandRover_Special_CZ_EP1_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"LandRover_Special_CZ_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};		
 };
 
 class LandRover_Special_CZ_EP1_DZE1: LandRover_Special_CZ_EP1_DZE {	
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL+";
 	original = "LandRover_Special_CZ_EP1_DZE";
 	maxspeed = 160;
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"LandRover_Special_CZ_EP1_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"LandRover_Special_CZ_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};	
 };
 
 class LandRover_Special_CZ_EP1_DZE2: LandRover_Special_CZ_EP1_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL++";
 	armor = 60;
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
@@ -606,38 +688,35 @@ class LandRover_Special_CZ_EP1_DZE2: LandRover_Special_CZ_EP1_DZE1 {
 		class HitRBWheel: HitRBWheel {
 			armor = 0.65;
 		};
-		class HitFuel {
+		class HitFuel: HitFuel {
 			armor = 1.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine {
+		class HitEngine: HitEngine {
 			armor = 2.5;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
+		};
+		class HitGlass1: HitGlass1 {
+			armor = 0.25;
 		};
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"LandRover_Special_CZ_EP1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"LandRover_Special_CZ_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
 class LandRover_Special_CZ_EP1_DZE3: LandRover_Special_CZ_EP1_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL+++";
 	transportMaxWeapons = 30;
 	transportMaxMagazines = 140;
     transportmaxbackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"LandRover_Special_CZ_EP1_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"LandRover_Special_CZ_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
 class LandRover_Special_CZ_EP1_DZE4: LandRover_Special_CZ_EP1_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL++++";
 	fuelCapacity = 250;
 };
 
@@ -648,7 +727,7 @@ class LandRover_MG_TK_EP1_DZ: LandRover_MG_TK_EP1
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};	
-	displayname = $STR_VEH_NAME_MILITARY_OFFROAD_M2;
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_M2";
 	vehicleClass = "DayZ Epoch Vehicles";
 	class Turrets;
 	class MainTurret;
@@ -676,21 +755,23 @@ class LandRover_MG_TK_EP1_DZE: LandRover_MG_TK_EP1_DZ
 		};
 	};
 	class Upgrades {
-		ItemORP[] = {"LandRover_MG_TK_EP1_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"LandRover_MG_TK_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
 	};	
 };
 
 class LandRover_MG_TK_EP1_DZE1: LandRover_MG_TK_EP1_DZE {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_M2+";
 	original = "LandRover_MG_TK_EP1_DZE";
 	maxspeed = 160;
 	terrainCoef = 1.5;
 
 	class Upgrades {
-		ItemAVE[] = {"LandRover_MG_TK_EP1_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"LandRover_MG_TK_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
 	};	
 };
 
 class LandRover_MG_TK_EP1_DZE2: LandRover_MG_TK_EP1_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_M2++";
 	armor = 60;
 	damageResistance = 0.02099;
 	class HitPoints: HitPoints {
@@ -706,19 +787,11 @@ class LandRover_MG_TK_EP1_DZE2: LandRover_MG_TK_EP1_DZE1 {
 		class HitRBWheel: HitRBWheel {
 			armor = 0.65;
 		};
-		class HitFuel {
+		class HitFuel: HitFuel {
 			armor = 1.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine {
+		class HitEngine: HitEngine {
 			armor = 2.5;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1 {
 			armor = 0.25;
@@ -726,20 +799,22 @@ class LandRover_MG_TK_EP1_DZE2: LandRover_MG_TK_EP1_DZE1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"LandRover_MG_TK_EP1_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"LandRover_MG_TK_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
 class LandRover_MG_TK_EP1_DZE3: LandRover_MG_TK_EP1_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_M2+++";
 	transportMaxWeapons = 30;
 	transportMaxMagazines = 140;
     transportmaxbackpacks = 8;
 
 	class Upgrades {
-		ItemTNK[] = {"LandRover_MG_TK_EP1_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"LandRover_MG_TK_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
 class LandRover_MG_TK_EP1_DZE4: LandRover_MG_TK_EP1_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_M2++++";
 	fuelCapacity = 250;
 };

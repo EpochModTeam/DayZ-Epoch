@@ -9123,36 +9123,176 @@
 			<Russian>Военный внедорожник (красный)</Russian>
 			<German>Militär Offroad (rot)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED+">
+			<English>Military Offroad (red)+</English>
+			<Russian>Военный внедорожник (красный)+</Russian>
+			<German>Militär Offroad (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED++">
+			<English>Military Offroad (red)++</English>
+			<Russian>Военный внедорожник (красный)++</Russian>
+			<German>Militär Offroad (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED+++">
+			<English>Military Offroad (red)+++</English>
+			<Russian>Военный внедорожник (красный)+++</Russian>
+			<German>Militär Offroad (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED++++">
+			<English>Military Offroad (red)++++</English>
+			<Russian>Военный внедорожник (красный)++++</Russian>
+			<German>Militär Offroad (rot)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT">
 			<English>Military Offroad (Desert)</English>
 			<Russian>Военный внедорожник (Пустынный)</Russian>
 			<German>Militär Offroad (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT+">
+			<English>Military Offroad (Desert)+</English>
+			<Russian>Военный внедорожник (Пустынный)+</Russian>
+			<German>Militär Offroad (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT++">
+			<English>Military Offroad (Desert)++</English>
+			<Russian>Военный внедорожник (Пустынный)++</Russian>
+			<German>Militär Offroad (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT+++">
+			<English>Military Offroad (Desert)+++</English>
+			<Russian>Военный внедорожник (Пустынный)+++</Russian>
+			<German>Militär Offroad (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT++++">
+			<English>Military Offroad (Desert)++++</English>
+			<Russian>Военный внедорожник (Пустынный)++++</Russian>
+			<German>Militär Offroad (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND">
 			<English>Military Offroad (Woodland)</English>
 			<Russian>Военный внедорожник (Лесной камуфляж)</Russian>
 			<German>Militär Offroad (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+">
+			<English>Military Offroad (Woodland)+</English>
+			<Russian>Военный внедорожник (Лесной камуфляж)+</Russian>
+			<German>Militär Offroad (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++">
+			<English>Military Offroad (Woodland)++</English>
+			<Russian>Военный внедорожник (Лесной камуфляж)++</Russian>
+			<German>Militär Offroad (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+++">
+			<English>Military Offroad (Woodland)+++</English>
+			<Russian>Военный внедорожник (Лесной камуфляж)+++</Russian>
+			<German>Militär Offroad (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++++">
+			<English>Military Offroad (Woodland)++++</English>
+			<Russian>Военный внедорожник (Лесной камуфляж)++++</Russian>
+			<German>Militär Offroad (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND">
 			<English>Military Offroad Ambulance (Woodland)</English>
 			<Russian>Военный внедорожник Скорая (Лесной камуфляж)</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND+">
+			<English>Military Offroad Ambulance (Woodland)+</English>
+			<Russian>Военный внедорожник Скорая (Лесной камуфляж)+</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND++">
+			<English>Military Offroad Ambulance (Woodland)++</English>
+			<Russian>Военный внедорожник Скорая (Лесной камуфляж)++</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND+++">
+			<English>Military Offroad Ambulance (Woodland)+++</English>
+			<Russian>Военный внедорожник Скорая (Лесной камуфляж)+++</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND++++">
+			<English>Military Offroad Ambulance (Woodland)++++</English>
+			<Russian>Военный внедорожник Скорая (Лесной камуфляж)++++</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT">
 			<English>Military Offroad Ambulance (Desert)</English>
 			<Russian>Военный внедорожник Скорая (Пустынный)</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT+">
+			<English>Military Offroad Ambulance (Desert)+</English>
+			<Russian>Военный внедорожник Скорая (Пустынный)+</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT++">
+			<English>Military Offroad Ambulance (Desert)++</English>
+			<Russian>Военный внедорожник Скорая (Пустынный)++</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT+++">
+			<English>Military Offroad Ambulance (Desert)+++</English>
+			<Russian>Военный внедорожник Скорая (Пустынный)+++</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT++++">
+			<English>Military Offroad Ambulance (Desert)++++</English>
+			<Russian>Военный внедорожник Скорая (Пустынный)++++</Russian>
+			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL">
 			<English>Military Offroad (AGS-30)</English>
 			<Russian>Военный внедорожник (AGS-30)</Russian>
 			<German>Militär Offroad (AGS-30)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL+">
+			<English>Military Offroad (AGS-30)+</English>
+			<Russian>Военный внедорожник (AGS-30)+</Russian>
+			<German>Militär Offroad (AGS-30)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL++">
+			<English>Military Offroad (AGS-30)++</English>
+			<Russian>Военный внедорожник (AGS-30)++</Russian>
+			<German>Militär Offroad (AGS-30)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL+++">
+			<English>Military Offroad (AGS-30)+++</English>
+			<Russian>Военный внедорожник (AGS-30)+++</Russian>
+			<German>Militär Offroad (AGS-30)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL++++">
+			<English>Military Offroad (AGS-30)++++</English>
+			<Russian>Военный внедорожник (AGS-30)++++</Russian>
+			<German>Militär Offroad (AGS-30)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2">
 			<English>Military Offroad (M2)</English>
 			<Russian>Военный внедорожник (M2)</Russian>
 			<German>Militär Offroad (M2)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2+">
+			<English>Military Offroad (M2)+</English>
+			<Russian>Военный внедорожник (M2)+</Russian>
+			<German>Militär Offroad (M2)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2++">
+			<English>Military Offroad (M2)++</English>
+			<Russian>Военный внедорожник (M2)++</Russian>
+			<German>Militär Offroad (M2)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2+++">
+			<English>Military Offroad (M2)+++</English>
+			<Russian>Военный внедорожник (M2)+++</Russian>
+			<German>Militär Offroad (M2)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_M2++++">
+			<English>Military Offroad (M2)++++</English>
+			<Russian>Военный внедорожник (M2)++++</Russian>
+			<German>Militär Offroad (M2)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_LAV25">
 			<English>LAV-25</English>
 		</Key>
@@ -9859,6 +9999,22 @@
 			<English>Skoda Octavia (white)</English>
 			<German>Skoda Octavia (weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE+">
+			<English>Skoda Octavia (white)+</English>
+			<German>Skoda Octavia (weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE++">
+			<English>Skoda Octavia (white)++</English>
+			<German>Skoda Octavia (weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE+++">
+			<English>Skoda Octavia (white)+++</English>
+			<German>Skoda Octavia (weiß)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE++++">
+			<English>Skoda Octavia (white)++++</English>
+			<German>Skoda Octavia (weiß)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_BLACK">
 			<English>SUV (black)</English>
 			<Russian>SUV (черный)</Russian>
