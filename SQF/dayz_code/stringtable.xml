@@ -8973,31 +8973,151 @@
 			<Russian>Лада (белая)</Russian>
 			<German>Lada (weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_LADA_WHITE+">
+			<English>Lada (white)+</English>
+			<Russian>Лада (белая)+</Russian>
+			<German>Lada (weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_WHITE++">
+			<English>Lada (white)++</English>
+			<Russian>Лада (белая)++</Russian>
+			<German>Lada (weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_WHITE+++">
+			<English>Lada (white)+++</English>
+			<Russian>Лада (белая)+++</Russian>
+			<German>Lada (weiß)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_WHITE++++">
+			<English>Lada (white)++++</English>
+			<Russian>Лада (белая)++++</Russian>
+			<German>Lada (weiß)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_LADA_RED">
 			<English>Lada (red)</English>
 			<Russian>Лада (красная)</Russian>
 			<German>Lada (rot)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_LADA_RED+">
+			<English>Lada (red)+</English>
+			<Russian>Лада (красная)+</Russian>
+			<German>Lada (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_RED++">
+			<English>Lada (red)++</English>
+			<Russian>Лада (красная)++</Russian>
+			<German>Lada (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_RED+++">
+			<English>Lada (red)+++</English>
+			<Russian>Лада (красная)+++</Russian>
+			<German>Lada (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_RED++++">
+			<English>Lada (red)++++</English>
+			<Russian>Лада (красная)++++</Russian>
+			<German>Lada (rot)++++</German>
+		</Key>	
 		<Key ID="STR_VEH_NAME_LADA_POLICE">
 			<English>Lada Police</English>
 			<Russian>Лада Полиция</Russian>
 			<German>Lada Polizei</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_LADA_POLICE+">
+			<English>Lada Police+</English>
+			<Russian>Лада Полиция+</Russian>
+			<German>Lada Polizei+</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_LADA_POLICE++">
+			<English>Lada Police++</English>
+			<Russian>Лада Полиция++</Russian>
+			<German>Lada Polizei++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_POLICE+++">
+			<English>Lada Police+++</English>
+			<Russian>Лада Полиция+++</Russian>
+			<German>Lada Polizei+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_POLICE++++">
+			<English>Lada Police++++</English>
+			<Russian>Лада Полиция++++</Russian>
+			<German>Lada Polizei++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_LADA_GREEN">
 			<English>Lada (green)</English>
 			<Russian>Лада (зеленая)</Russian>
 			<German>Lada (grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_LADA_GREEN+">
+			<English>Lada (green)+</English>
+			<Russian>Лада (зеленая)+</Russian>
+			<German>Lada (grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_GREEN++">
+			<English>Lada (green)++</English>
+			<Russian>Лада (зеленая)++</Russian>
+			<German>Lada (grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_GREEN+++">
+			<English>Lada (green)+++</English>
+			<Russian>Лада (зеленая)+++</Russian>
+			<German>Lada (grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_GREEN++++">
+			<English>Lada (green)++++</English>
+			<Russian>Лада (зеленая)++++</Russian>
+			<German>Lada (grün)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_LADA_HIPPY">
 			<English>Lada (Hippy)</English>
 			<Russian>Лада (Хиппи)</Russian>
 			<German>Lada (Hippie)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_LADA_HIPPY+">
+			<English>Lada (Hippy)+</English>
+			<Russian>Лада (Хиппи)+</Russian>
+			<German>Lada (Hippie)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_HIPPY++">
+			<English>Lada (Hippy)++</English>
+			<Russian>Лада (Хиппи)++</Russian>
+			<German>Lada (Hippie)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_HIPPY+++">
+			<English>Lada (Hippy)+++</English>
+			<Russian>Лада (Хиппи)+++</Russian>
+			<German>Lada (Hippie)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_HIPPY++++">
+			<English>Lada (Hippy)++++</English>
+			<Russian>Лада (Хиппи)++++</Russian>
+			<German>Lada (Hippie)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_LADA_YELLOW">
 			<English>Lada (yellow)</English>
 			<Russian>Лада (желтая)</Russian>
 			<German>Lada (gelb)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_LADA_YELLOW+">
+			<English>Lada (yellow)+</English>
+			<Russian>Лада (желтая)+</Russian>
+			<German>Lada (gelb)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_YELLOW++">
+			<English>Lada (yellow)++</English>
+			<Russian>Лада (желтая)++</Russian>
+			<German>Lada (gelb)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_YELLOW+++">
+			<English>Lada (yellow)+++</English>
+			<Russian>Лада (желтая)+++</Russian>
+			<German>Lada (gelb)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_LADA_YELLOW++++">
+			<English>Lada (yellow)++++</English>
+			<Russian>Лада (желтая)++++</Russian>
+			<German>Lada (gelb)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED">
 			<English>Military Offroad (red)</English>
 			<Russian>Военный внедорожник (красный)</Russian>
