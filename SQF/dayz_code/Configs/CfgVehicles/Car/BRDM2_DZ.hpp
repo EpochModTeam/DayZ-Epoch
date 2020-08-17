@@ -75,7 +75,7 @@ class BRDM2_HQ_TK_GUE_EP1_DZE2: BRDM2_HQ_TK_GUE_EP1_DZE1
 {
 	displayName = "$STR_VEH_NAME_BRDM2_HQ++";
 	armor = 170; // base 120
-	damageResistance = 0.02409; // base 
+	damageResistance = 0.048; // base 0.02409
 	
 	class Upgrades
 	{
@@ -180,7 +180,7 @@ class BRDM2_TK_EP1_DZE2: BRDM2_TK_EP1_DZE1
 {
 	displayName = "$STR_VEH_NAME_BRDM2_TK++";
 	armor = 170; // base 120
-	damageResistance = 0.02409; // base 
+	damageResistance = 0.048; // base 0.02409
 	
 	class Upgrades
 	{
@@ -241,7 +241,7 @@ class BRDM2_TK_GUE_EP1_DZE2: BRDM2_TK_GUE_EP1_DZE1
 {
 	displayName = "$STR_VEH_NAME_BRDM2_GUE++";
 	armor = 170; // base 120
-	damageResistance = 0.02409; // base 
+	damageResistance = 0.048; // base 0.02409
 	
 	class Upgrades
 	{
@@ -302,7 +302,7 @@ class BRDM2_Desert_ACR_DZE2: BRDM2_Desert_ACR_DZE1
 {
 	displayName = "$STR_VEH_NAME_BRDM2_DES++";
 	armor = 170; // base 120
-	damageResistance = 0.02409; // base 
+	damageResistance = 0.048; // base 0.02409
 	
 	class Upgrades
 	{
