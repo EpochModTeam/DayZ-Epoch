@@ -10188,54 +10188,266 @@
 			<Russian>SUV (черный)</Russian>
 			<German>SUV (schwarz)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLACK+">
+			<English>SUV (black)+</English>
+			<Russian>SUV (черный)+</Russian>
+			<German>SUV (schwarz)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLACK++">
+			<English>SUV (black)++</English>
+			<Russian>SUV (черный)++</Russian>
+			<German>SUV (schwarz)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLACK+++">
+			<English>SUV (black)+++</English>
+			<Russian>SUV (черный)+++</Russian>
+			<German>SUV (schwarz)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLACK++++">
+			<English>SUV (black)++++</English>
+			<Russian>SUV (черный)++++</Russian>
+			<German>SUV (schwarz)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_CAMO">
 			<English>SUV (Woodland)</English>
 			<Russian>SUV (Лесной камуфляж)</Russian>
 			<German>SUV (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_CAMO+">
+			<English>SUV (Woodland)+</English>
+			<Russian>SUV (Лесной камуфляж)+</Russian>
+			<German>SUV (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_CAMO++">
+			<English>SUV (Woodland)++</English>
+			<Russian>SUV (Лесной камуфляж)++</Russian>
+			<German>SUV (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_CAMO+++">
+			<English>SUV (Woodland)+++</English>
+			<Russian>SUV (Лесной камуфляж)+++</Russian>
+			<German>SUV (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_CAMO++++">
+			<English>SUV (Woodland)++++</English>
+			<Russian>SUV (Лесной камуфляж)++++</Russian>
+			<German>SUV (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_RED">
 			<English>SUV (red)</English>
 			<Russian>SUV (черный)</Russian>
 			<German>SUV (rot)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_RED+">
+			<English>SUV (red)+</English>
+			<Russian>SUV (черный)+</Russian>
+			<German>SUV (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_RED++">
+			<English>SUV (red)++</English>
+			<Russian>SUV (черный)++</Russian>
+			<German>SUV (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_RED+++">
+			<English>SUV (red)+++</English>
+			<Russian>SUV (черный)+++</Russian>
+			<German>SUV (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_RED++++">
+			<English>SUV (red)++++</English>
+			<Russian>SUV (черный)++++</Russian>
+			<German>SUV (rot)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_GREEN">
 			<English>SUV (green)</English>
 			<Russian>SUV (зеленый)</Russian>
 			<German>SUV (grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_GREEN+">
+			<English>SUV (green)+</English>
+			<Russian>SUV (зеленый)+</Russian>
+			<German>SUV (grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_GREEN++">
+			<English>SUV (green)++</English>
+			<Russian>SUV (зеленый)++</Russian>
+			<German>SUV (grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_GREEN+++">
+			<English>SUV (green)+++</English>
+			<Russian>SUV (зеленый)+++</Russian>
+			<German>SUV (grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_GREEN++++">
+			<English>SUV (green)++++</English>
+			<Russian>SUV (зеленый)++++</Russian>
+			<German>SUV (grün)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_YELLOW">
 			<English>SUV (yellow)</English>
 			<Russian>SUV (желтый)</Russian>
 			<German>SUV (gelb)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_YELLOW+">
+			<English>SUV (yellow)+</English>
+			<Russian>SUV (желтый)+</Russian>
+			<German>SUV (gelb)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_YELLOW++">
+			<English>SUV (yellow)++</English>
+			<Russian>SUV (желтый)++</Russian>
+			<German>SUV (gelb)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_YELLOW+++">
+			<English>SUV (yellow)+++</English>
+			<Russian>SUV (желтый)+++</Russian>
+			<German>SUV (gelb)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_YELLOW++++">
+			<English>SUV (yellow)++++</English>
+			<Russian>SUV (желтый)++++</Russian>
+			<German>SUV (gelb)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_SILVER">
 			<English>SUV (silver)</English>
 			<Russian>SUV (серебристый)</Russian>
 			<German>SUV (silber)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_SILVER+">
+			<English>SUV (silver)+</English>
+			<Russian>SUV (серебристый)+</Russian>
+			<German>SUV (silber)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_SILVER++">
+			<English>SUV (silver)++</English>
+			<Russian>SUV (серебристый)++</Russian>
+			<German>SUV (silber)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_SILVER+++">
+			<English>SUV (silver)+++</English>
+			<Russian>SUV (серебристый)+++</Russian>
+			<German>SUV (silber)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_SILVER++++">
+			<English>SUV (silver)++++</English>
+			<Russian>SUV (серебристый)++++</Russian>
+			<German>SUV (silber)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_PINK">
 			<English>SUV (pink)</English>
 			<Russian>SUV (розовый)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_PINK+">
+			<English>SUV (pink)+</English>
+			<Russian>SUV (розовый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_PINK++">
+			<English>SUV (pink)++</English>
+			<Russian>SUV (розовый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_PINK+++">
+			<English>SUV (pink)+++</English>
+			<Russian>SUV (розовый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_PINK++++">
+			<English>SUV (pink)++++</English>
+			<Russian>SUV (розовый)++++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_BLUE">
 			<English>SUV (blue)</English>
 			<Russian>SUV (синий)</Russian>
 			<German>SUV (blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE+">
+			<English>SUV (blue)+</English>
+			<Russian>SUV (синий)+</Russian>
+			<German>SUV (blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE++">
+			<English>SUV (blue)++</English>
+			<Russian>SUV (синий)++</Russian>
+			<German>SUV (blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE+++">
+			<English>SUV (blue)+++</English>
+			<Russian>SUV (синий)+++</Russian>
+			<German>SUV (blau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE++++">
+			<English>SUV (blue)++++</English>
+			<Russian>SUV (синий)++++</Russian>
+			<German>SUV (blau)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_WHITE">
 			<English>SUV (white)</English>
 			<Russian>SUV (белый)</Russian>
 			<German>SUV (weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_WHITE+">
+			<English>SUV (white)+</English>
+			<Russian>SUV (белый)+</Russian>
+			<German>SUV (weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_WHITE++">
+			<English>SUV (white)++</English>
+			<Russian>SUV (белый)++</Russian>
+			<German>SUV (weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_WHITE+++">
+			<English>SUV (white)+++</English>
+			<Russian>SUV (белый)+++</Russian>
+			<German>SUV (weiß)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_WHITE++++">
+			<English>SUV (white)++++</English>
+			<Russian>SUV (белый)++++</Russian>
+			<German>SUV (weiß)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_ORANGE">
 			<English>SUV (orange)</English>
 			<Russian>SUV (оранжевый)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_ORANGE+">
+			<English>SUV (orange)+</English>
+			<Russian>SUV (оранжевый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_ORANGE++">
+			<English>SUV (orange)++</English>
+			<Russian>SUV (оранжевый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_ORANGE+++">
+			<English>SUV (orange)+++</English>
+			<Russian>SUV (оранжевый)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_ORANGE++++">
+			<English>SUV (orange)++++</English>
+			<Russian>SUV (оранжевый)++++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_GREY">
 			<English>SUV (grey)</English>
 			<Russian>SUV (серый)</Russian>
 			<German>SUV (grau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_GREY+">
+			<English>SUV (grey)+</English>
+			<Russian>SUV (серый)+</Russian>
+			<German>SUV (grau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_GREY++">
+			<English>SUV (grey)++</English>
+			<Russian>SUV (серый)++</Russian>
+			<German>SUV (grau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_GREY+++">
+			<English>SUV (grey)+++</English>
+			<Russian>SUV (серый)+++</Russian>
+			<German>SUV (grau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_GREY++++">
+			<English>SUV (grey)++++</English>
+			<Russian>SUV (серый)++++</Russian>
+			<German>SUV (grau)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SUV_ARMORED">
 			<English>SUV (Armored)</English>
 			<Russian>SUV (Армированный)</Russian>
