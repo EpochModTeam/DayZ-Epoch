@@ -10068,21 +10068,101 @@
 			<Russian>Шкода (белая)</Russian>
 			<German>Skoda (weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_WHITE+">
+			<English>Skoda (white)+</English>
+			<Russian>Шкода (белая)+</Russian>
+			<German>Skoda (weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_WHITE++">
+			<English>Skoda (white)++</English>
+			<Russian>Шкода (белая)++</Russian>
+			<German>Skoda (weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_WHITE+++">
+			<English>Skoda (white)+++</English>
+			<Russian>Шкода (белая)+++</Russian>
+			<German>Skoda (weiß)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_WHITE++++">
+			<English>Skoda (white)++++</English>
+			<Russian>Шкода (белая)++++</Russian>
+			<German>Skoda (weiß)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SKODA_BLUE">
 			<English>Skoda (blue)</English>
 			<Russian>Шкода (синяя)</Russian>
 			<German>Skoda (blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BLUE+">
+			<English>Skoda (blue)+</English>
+			<Russian>Шкода (синяя)+</Russian>
+			<German>Skoda (blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BLUE++">
+			<English>Skoda (blue)++</English>
+			<Russian>Шкода (синяя)++</Russian>
+			<German>Skoda (blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BLUE+++">
+			<English>Skoda (blue)+++</English>
+			<Russian>Шкода (синяя)+++</Russian>
+			<German>Skoda (blau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BLUE++++">
+			<English>Skoda (blue)++++</English>
+			<Russian>Шкода (синяя)++++</Russian>
+			<German>Skoda (blau)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SKODA_RED">
 			<English>Skoda (red)</English>
 			<Russian>Шкода (красная)</Russian>
 			<German>Skoda (rot)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_RED+">
+			<English>Skoda (red)+</English>
+			<Russian>Шкода (красная)+</Russian>
+			<German>Skoda (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_RED++">
+			<English>Skoda (red)++</English>
+			<Russian>Шкода (красная)++</Russian>
+			<German>Skoda (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_RED+++">
+			<English>Skoda (red)+++</English>
+			<Russian>Шкода (красная)+++</Russian>
+			<German>Skoda (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_RED++++">
+			<English>Skoda (red)++++</English>
+			<Russian>Шкода (красная)++++</Russian>
+			<German>Skoda (rot)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SKODA_GREEN">
 			<English>Skoda (green)</English>
 			<Russian>Шкода (зеленая)</Russian>
 			<German>Skoda (grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_GREEN+">
+			<English>Skoda (green)+</English>
+			<Russian>Шкода (зеленая)+</Russian>
+			<German>Skoda (grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_GREEN++">
+			<English>Skoda (green)++</English>
+			<Russian>Шкода (зеленая)++</Russian>
+			<German>Skoda (grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_GREEN+++">
+			<English>Skoda (green)+++</English>
+			<Russian>Шкода (зеленая)+++</Russian>
+			<German>Skoda (grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_GREEN++++">
+			<English>Skoda (green)++++</English>
+			<Russian>Шкода (зеленая)++++</Russian>
+			<German>Skoda (grün)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE">
 			<English>Skoda Octavia (white)</English>
 			<German>Skoda Octavia (weiß)</German>
@@ -10582,6 +10662,22 @@
 			<English>Sedan Taxi</English>
 			<Russian>Sedan Такси</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_SEDAN_TAXI+">
+			<English>Sedan Taxi+</English>
+			<Russian>Sedan Такси+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SEDAN_TAXI++">
+			<English>Sedan Taxi++</English>
+			<Russian>Sedan Такси++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SEDAN_TAXI+++">
+			<English>Sedan Taxi+++</English>
+			<Russian>Sedan Такси+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_SEDAN_TAXI++++">
+			<English>Sedan Taxi++++</English>
+			<Russian>Sedan Такси++++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HATCHBACK_YELLOW">
 			<English>Old hatchback (yellow)</English>
 			<German>Kombilimousine (gelb)</German>

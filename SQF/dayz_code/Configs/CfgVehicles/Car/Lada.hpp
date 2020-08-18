@@ -529,7 +529,7 @@ class GLT_M300_LT_DZE1: GLT_M300_LT_DZE {
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"GLT_M300_LT_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
+		ItemAVE[] = {"GLT_M300_LT_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
