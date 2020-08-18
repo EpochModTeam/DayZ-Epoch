@@ -10018,11 +10018,51 @@
 			<Russian>Шкода фургон (синий)</Russian>
 			<German>Skoda Van (blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BUS+">
+			<English>Skoda Van (blue)+</English>
+			<Russian>Шкода фургон (синий)+</Russian>
+			<German>Skoda Van (blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BUS++">
+			<English>Skoda Van (blue)++</English>
+			<Russian>Шкода фургон (синий)++</Russian>
+			<German>Skoda Van (blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BUS+++">
+			<English>Skoda Van (blue)+++</English>
+			<Russian>Шкода фургон (синий)+++</Russian>
+			<German>Skoda Van (blau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_BUS++++">
+			<English>Skoda Van (blue)++++</English>
+			<Russian>Шкода фургон (синий)++++</Russian>
+			<German>Skoda Van (blau)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE">
 			<English>Skoda Van (Ambulance)</English>
 			<Russian>Шкода фургон (Скорая)</Russian>
 			<German>Skoda Van (Ambulanz)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE+">
+			<English>Skoda Van (Ambulance)+</English>
+			<Russian>Шкода фургон (Скорая)+</Russian>
+			<German>Skoda Van (Ambulanz)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE++">
+			<English>Skoda Van (Ambulance)++</English>
+			<Russian>Шкода фургон (Скорая)++</Russian>
+			<German>Skoda Van (Ambulanz)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE+++">
+			<English>Skoda Van (Ambulance)+++</English>
+			<Russian>Шкода фургон (Скорая)+++</Russian>
+			<German>Skoda Van (Ambulanz)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE++++">
+			<English>Skoda Van (Ambulance)++++</English>
+			<Russian>Шкода фургон (Скорая)++++</Russian>
+			<German>Skoda Van (Ambulanz)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SKODA_WHITE">
 			<English>Skoda (white)</English>
 			<Russian>Шкода (белая)</Russian>
