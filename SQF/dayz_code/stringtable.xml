@@ -10501,26 +10501,118 @@
 		<Key ID="STR_VEH_NAME_UAZ_CDF">
 			<English>UAZ (CDF)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CDF+">
+			<English>UAZ (CDF)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CDF++">
+			<English>UAZ (CDF)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CDF+++">
+			<English>UAZ (CDF)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CDF++++">
+			<English>UAZ (CDF)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_INS">
 			<English>UAZ (INS)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_INS+">
+			<English>UAZ (INS)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_INS++">
+			<English>UAZ (INS)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_INS+++">
+			<English>UAZ (INS)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_INS++++">
+			<English>UAZ (INS)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_RU">
 			<English>UAZ (RU)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_RU+">
+			<English>UAZ (RU)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_RU++">
+			<English>UAZ (RU)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_RU+++">
+			<English>UAZ (RU)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_RU++++">
+			<English>UAZ (RU)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_TK">
 			<English>UAZ (TK)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_TK+">
+			<English>UAZ (TK)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_TK++">
+			<English>UAZ (TK)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_TK+++">
+			<English>UAZ (TK)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_TK++++">
+			<English>UAZ (TK)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_UN">
 			<English>UAZ (UN)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_UN+">
+			<English>UAZ (UN)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_UN++">
+			<English>UAZ (UN)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_UN+++">
+			<English>UAZ (UN)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_UN++++">
+			<English>UAZ (UN)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_CIVIL">
 			<English>UAZ (Civil)</English>
 			<Russian>UAZ (Гражданский)</Russian>
 			<German>UAZ (Zivil)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CIVIL+">
+			<English>UAZ (Civil)+</English>
+			<Russian>UAZ (Гражданский)+</Russian>
+			<German>UAZ (Zivil)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CIVIL++">
+			<English>UAZ (Civil)++</English>
+			<Russian>UAZ (Гражданский)++</Russian>
+			<German>UAZ (Zivil)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CIVIL+++">
+			<English>UAZ (Civil)+++</English>
+			<Russian>UAZ (Гражданский)+++</Russian>
+			<German>UAZ (Zivil)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_CIVIL++++">
+			<English>UAZ (Civil)++++</English>
+			<Russian>UAZ (Гражданский)++++</Russian>
+			<German>UAZ (Zivil)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM">
 			<English>UAZ (DSHKM)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM+">
+			<English>UAZ (DSHKM)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM++">
+			<English>UAZ (DSHKM)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM+++">
+			<English>UAZ (DSHKM)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM++++">
+			<English>UAZ (DSHKM)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_TK">
 			<English>Ural (TK)</English>
 		</Key>
