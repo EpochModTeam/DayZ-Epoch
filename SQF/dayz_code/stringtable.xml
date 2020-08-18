@@ -10922,21 +10922,101 @@
 			<Russian>GAZ (синий)</Russian>
 			<German>GAZ (blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_BLUE+">
+			<English>GAZ (blue)+</English>
+			<Russian>GAZ (синий)+</Russian>
+			<German>GAZ (blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_BLUE++">
+			<English>GAZ (blue)++</English>
+			<Russian>GAZ (синий)++</Russian>
+			<German>GAZ (blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_BLUE+++">
+			<English>GAZ (blue)+++</English>
+			<Russian>GAZ (синий)+++</Russian>
+			<German>GAZ (blau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_BLUE++++">
+			<English>GAZ (blue)++++</English>
+			<Russian>GAZ (синий)++++</Russian>
+			<German>GAZ (blau)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_GAZ_GREY">
 			<English>GAZ (grey)</English>
 			<Russian>GAZ (серый)</Russian>
 			<German>GAZ (grau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_GREY+">
+			<English>GAZ (grey)+</English>
+			<Russian>GAZ (серый)+</Russian>
+			<German>GAZ (grau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_GREY++">
+			<English>GAZ (grey)++</English>
+			<Russian>GAZ (серый)++</Russian>
+			<German>GAZ (grau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_GREY+++">
+			<English>GAZ (grey)+++</English>
+			<Russian>GAZ (серый)+++</Russian>
+			<German>GAZ (grau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_GREY++++">
+			<English>GAZ (grey)++++</English>
+			<Russian>GAZ (серый)++++</Russian>
+			<German>GAZ (grau)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_GAZ_BLACK">
 			<English>GAZ (black)</English>
 			<Russian>GAZ (черный)</Russian>
 			<German>GAZ (schwarz)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_BLACK+">
+			<English>GAZ (black)+</English>
+			<Russian>GAZ (черный)+</Russian>
+			<German>GAZ (schwarz)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_BLACK++">
+			<English>GAZ (black)++</English>
+			<Russian>GAZ (черный)++</Russian>
+			<German>GAZ (schwarz)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_BLACK+++">
+			<English>GAZ (black)+++</English>
+			<Russian>GAZ (черный)+++</Russian>
+			<German>GAZ (schwarz)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_GAZ_BLACK++++">
+			<English>GAZ (black)++++</English>
+			<Russian>GAZ (черный)++++</Russian>
+			<German>GAZ (schwarz)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_VWGOLF_RED">
 			<English>VW Golf (red)</English>
 			<Russian>VW Golf (красный)</Russian>
 			<German>VW Golf (rot)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_VWGOLF_RED+">
+			<English>VW Golf (red)+</English>
+			<Russian>VW Golf (красный)+</Russian>
+			<German>VW Golf (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_VWGOLF_RED++">
+			<English>VW Golf (red)++</English>
+			<Russian>VW Golf (красный)++</Russian>
+			<German>VW Golf (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_VWGOLF_RED+++">
+			<English>VW Golf (red)+++</English>
+			<Russian>VW Golf (красный)+++</Russian>
+			<German>VW Golf (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_VWGOLF_RED++++">
+			<English>VW Golf (red)++++</English>
+			<Russian>VW Golf (красный)++++</Russian>
+			<German>VW Golf (rot)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SEDAN_WHITE">
 			<English>Sedan (white)</English>
 			<Russian>Sedan (белый)</Russian>
