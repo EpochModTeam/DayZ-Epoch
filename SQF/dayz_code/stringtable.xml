@@ -9956,15 +9956,63 @@
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM">
 			<English>Pick-up (DSHKM)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_DSHKM+">
+			<English>Pick-up (DSHKM)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_DSHKM++">
+			<English>Pick-up (DSHKM)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_DSHKM+++">
+			<English>Pick-up (DSHKM)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_DSHKM++++">
+			<English>Pick-up (DSHKM)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT">
 			<English>Pick-up GUE (PKT)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT+">
+			<English>Pick-up GUE (PKT)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT++">
+			<English>Pick-up GUE (PKT)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT+++">
+			<English>Pick-up GUE (PKT)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT++++">
+			<English>Pick-up GUE (PKT)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT">
 			<English>Pick-up INS (PKT)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT+">
+			<English>Pick-up INS (PKT)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT++">
+			<English>Pick-up INS (PKT)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT+++">
+			<English>Pick-up INS (PKT)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT++++">
+			<English>Pick-up INS (PKT)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT">
 			<English>Pick-up TK (PKT)</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT+">
+			<English>Pick-up TK (PKT)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT++">
+			<English>Pick-up TK (PKT)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT+++">
+			<English>Pick-up TK (PKT)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT++++">
+			<English>Pick-up TK (PKT)++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SKODA_BUS">
 			<English>Skoda Van (blue)</English>
 			<Russian>Шкода фургон (синий)</Russian>
