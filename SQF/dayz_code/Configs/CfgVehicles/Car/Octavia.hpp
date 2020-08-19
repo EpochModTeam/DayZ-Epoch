@@ -1,7 +1,7 @@
 class Octavia_ACR_DZE: Car {
 	scope = 2;
 	model = "\Corepatch\CorePatch_Vehicles\models\Octavia_ACR";
-	displayName = $STR_VEH_NAME_OCTAVIA_WHITE;	
+	displayName = "$STR_VEH_NAME_OCTAVIA_WHITE";	
 	icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Octavia_CA.paa";
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Octavia_CA.paa";
 	class Library
@@ -226,21 +226,23 @@ class Octavia_ACR_DZE: Car {
 		};
 	};	
 	class Upgrades {
-		ItemORP[] = {"Octavia_ACR_DZE1",{},{{"ItemORP",1},{"PartEngine",2}}};
+		ItemORP[] = {"Octavia_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
 	};
 };
 
 class Octavia_ACR_DZE1: Octavia_ACR_DZE {
+	displayName = "$STR_VEH_NAME_OCTAVIA_WHITE+";
 	original = "Octavia_ACR_DZE";
 	maxspeed = 220;
 	terrainCoef = 2.5;
 
 	class Upgrades {
-		ItemAVE[] = {"Octavia_ACR_DZE2",{},{{"ItemAVE",1},{"PartGeneric",4},{"ItemTankTrap",2}}};
+		ItemAVE[] = {"Octavia_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"PartGeneric",6},{"ItemScrews",4}}};
 	};
 };
 
 class Octavia_ACR_DZE2: Octavia_ACR_DZE1 {
+	displayName = "$STR_VEH_NAME_OCTAVIA_WHITE++";
 	armor = 50;
 	class HitPoints: HitPoints {
 		class HitLFWheel: HitLFWheel {
@@ -255,19 +257,11 @@ class Octavia_ACR_DZE2: Octavia_ACR_DZE1 {
 		class HitRBWheel: HitRBWheel {
 			armor = 0.6;
 		};
-		class HitFuel {
+		class HitFuel: HitFuel {
 			armor = 0.28;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine {
+		class HitEngine: HitEngine {
 			armor = 1;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1 {
 			armor = 0.1;
@@ -284,20 +278,22 @@ class Octavia_ACR_DZE2: Octavia_ACR_DZE1 {
 	};
 
 	class Upgrades {
-		ItemLRK[] = {"Octavia_ACR_DZE3",{},{{"ItemLRK",1},{"PartGeneric",1},{"ItemTent",1}}};
+		ItemLRK[] = {"Octavia_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
 	};
 };
 
 class Octavia_ACR_DZE3: Octavia_ACR_DZE2 {
+	displayName = "$STR_VEH_NAME_OCTAVIA_WHITE+++";
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 100;
     transportmaxbackpacks = 4;
 
 	class Upgrades {
-		ItemTNK[] = {"Octavia_ACR_DZE4",{},{{"ItemTNK",1},{"PartFueltank",2}}};
+		ItemTNK[] = {"Octavia_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
 	};
 };
 
 class Octavia_ACR_DZE4: Octavia_ACR_DZE3 {
+	displayName = "$STR_VEH_NAME_OCTAVIA_WHITE++++";
 	fuelCapacity = 210;
 };

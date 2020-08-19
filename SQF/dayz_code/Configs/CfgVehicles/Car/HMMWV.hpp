@@ -307,117 +307,6 @@ class HMMWV_DZE_Base: Car
 	class AnimationSources;
 };
 
-class HMMWV_DZ: HMMWV_DZE_Base {	
-	accuracy = 0.32;
-	displayname = $STR_VEH_NAME_HMMWV;
-	hasgunner = 0;
-	hiddenselections[] = {"Camo1"};
-	hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
-	icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
-	mapsize = 5;
-	model = "ca\wheeled_E\HMMWV\HMMWV";
-	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";	
-	scope = 2;
-	side = 2;
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	transportMaxWeapons = 15;
-	transportMaxMagazines = 70;
-	transportmaxbackpacks = 4;
-	class Turrets {};
-	class Damage {
-		mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
-		tex[] = {};
-	};
-};
-
-class Hummer_DZE: HMMWV_DZ {	
-	displayname = $STR_VEH_NAME_HUMMER;
-	hiddenSelections[] = {"camo1","camo2","camo3"};
-	hiddenSelectionsTextures[] = {"\sra_civilian\wheeled\hmmwv\hmmwv_body_co.paa","\sra_civilian\wheeled\hmmwv\hmmwv_hood_co.paa","\sra_civilian\wheeled\hmmwv\hmmwv_regular_co.paa"};
-	icon = "\SRA_civilian\Wheeled\data\icomap_hmwv_CA.paa";
-	model = "\SRA_civilian\Wheeled\HMMWV\hmmwv";
-	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";
-	
-	class HitPoints: HitPoints
-	{
-		class HitBody
-		{
-			armor = 2;
-			material = -1;
-			name = "karoserie";
-			passThrough = 0;
-			visual = "karoserie";
-		};
-		class HitEngine: HitBody
-		{
-			name = "motor";
-			visual = "motor";
-		};
-		class HitFuel: HitBody
-		{
-			armor = 1;
-			name = "palivo";
-			visual = "palivo";
-		};
-		class HitGlass1: HitGlass1
-		{
-			armor = 1;
-			name = "glass1";
-			visual = "glass1";
-			passThrough = 0;
-		};
-		class HitGlass2: HitGlass1
-		{
-			name = "glass2";
-			visual = "glass2";
-		};
-		class HitGlass3: HitGlass1
-		{
-			name = "glass3";
-			visual = "glass3";
-		};
-		class HitGlass4: HitGlass1
-		{
-			name = "glass4";
-			visual = "glass4";
-		};
-		class HitGlass5: HitGlass1
-		{
-			name = "glass5";
-			visual = "glass5";
-		};
-		class HitLFWheel
-		{
-			armor = 0.35;
-			material = -1;
-			name = "levy predni tlumic";
-			passThrough = 0.3;
-			visual = "";
-		};
-		class HitLBWheel: HitLFWheel
-		{
-			name = "levy zadni tlumic";
-		};
-		class HitRFWheel: HitLFWheel
-		{
-			name = "pravy predni tlumic";
-		};
-		class HitRBWheel: HitLFWheel
-		{
-			name = "pravy zadni tlumic";
-		};
-	};	
-
-	class Damage
-	{
-		tex[] = {};
-		mat[] = {"sra_civilian\wheeled\hmmwv\hmmwv_body.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_body_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_body_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in_half_d.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular_destruct.rvmat"};
-	};
-};
-
 class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_DZE_Base
 {
 	expansion = 1;
@@ -428,8 +317,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_DZE_Base
 	transportMaxMagazines = 70;
 	transportmaxbackpacks = 4;
 	model = "\ca\wheeled_e\HMMWV\M998A2_sov";
-	displayname = $STR_VEH_NAME_HMMWV_SOV;
-	armor = 40;
+	displayname = "$STR_VEH_NAME_HMMWV_SOV";
 	damageResistance = 0.00581;
 	threat[] = {1,0.3,0.3};
 	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_sov_CA.paa";
@@ -729,6 +617,100 @@ class HMMWV_M998A2_SOV_DES_EP1_DZE: HMMWV_M998A2_SOV_DES_EP1_DZ
 			LODTurnedIn = 1200;
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_M998A2_SOV_DES_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class HMMWV_M998A2_SOV_DES_EP1_DZE1: HMMWV_M998A2_SOV_DES_EP1_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_SOV+";
+	original = "HMMWV_M998A2_SOV_DES_EP1_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_M998A2_SOV_DES_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_M998A2_SOV_DES_EP1_DZE2: HMMWV_M998A2_SOV_DES_EP1_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_SOV++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_M998A2_SOV_DES_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M998A2_SOV_DES_EP1_DZE3: HMMWV_M998A2_SOV_DES_EP1_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_SOV+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_M998A2_SOV_DES_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_M998A2_SOV_DES_EP1_DZE4: HMMWV_M998A2_SOV_DES_EP1_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_SOV++++";
+	fuelCapacity = 180; // base 100
 };
 
 class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_DZE_Base 
@@ -737,7 +719,7 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_DZE_Base
 	side = 1;
 	scope = 2;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
-	displayname = $STR_VEH_NAME_HMMWV_GPK;
+	displayname = "$STR_VEH_NAME_HMMWV_GPK";
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
 	transportmaxbackpacks = 4;
@@ -823,10 +805,104 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZE: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
 			magazines[] = {};
 		};	
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_M1151_M2_CZ_DES_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M1151_M2_CZ_DES_EP1_DZE1: HMMWV_M1151_M2_CZ_DES_EP1_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_GPK+";
+	original = "HMMWV_M1151_M2_CZ_DES_EP1_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_M1151_M2_CZ_DES_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_M1151_M2_CZ_DES_EP1_DZE2: HMMWV_M1151_M2_CZ_DES_EP1_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_GPK++";
+	armor = 110; // base 80
+	damageResistance = 0.06; // base 0.03099
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_M1151_M2_CZ_DES_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M1151_M2_CZ_DES_EP1_DZE3: HMMWV_M1151_M2_CZ_DES_EP1_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_GPK+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_M1151_M2_CZ_DES_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_M1151_M2_CZ_DES_EP1_DZE4: HMMWV_M1151_M2_CZ_DES_EP1_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_GPK++++";
+	fuelCapacity = 180; // base 100
 };
 
 class HMMWV_M1114_AGS_ACR_DZ: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
-	displayName = $STR_VEH_NAME_HMMWV_AGS30;
+	displayName = "$STR_VEH_NAME_HMMWV_AGS30";
 	model = "\Ca\Wheeled_ACR\HMMWV\M1114_AGS_ACR.p3d";	
 	class Turrets: Turrets
 	{
@@ -876,10 +952,104 @@ class HMMWV_M1114_AGS_ACR_DZE: HMMWV_M1114_AGS_ACR_DZ {
 			magazines[] = {};
 		};
 	};	
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_M1114_AGS_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M1114_AGS_ACR_DZE1: HMMWV_M1114_AGS_ACR_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AGS30+";
+	original = "HMMWV_M1114_AGS_ACR_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_M1114_AGS_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_M1114_AGS_ACR_DZE2: HMMWV_M1114_AGS_ACR_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AGS30++";
+	armor = 110; // base 80
+	damageResistance = 0.06; // base 0.03099
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_M1114_AGS_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M1114_AGS_ACR_DZE3: HMMWV_M1114_AGS_ACR_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AGS30+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_M1114_AGS_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_M1114_AGS_ACR_DZE4: HMMWV_M1114_AGS_ACR_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AGS30++++";
+	fuelCapacity = 180; // base 100
 };
 
 class HMMWV_M1114_DSHKM_ACR_DZ: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
-	displayName = $STR_VEH_NAME_HMMWV_DSHKM;
+	displayName = "$STR_VEH_NAME_HMMWV_DSHKM";
 	model = "\Ca\Wheeled_ACR\HMMWV\M1114_DSK_ACR.p3d";
 	class Turrets: Turrets
 	{
@@ -917,7 +1087,101 @@ class HMMWV_M1114_DSHKM_ACR_DZE: HMMWV_M1114_DSHKM_ACR_DZ {
 		{
 			magazines[] = {};
 		};
-	};		
+	};	
+
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_M1114_DSHKM_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class HMMWV_M1114_DSHKM_ACR_DZE1: HMMWV_M1114_DSHKM_ACR_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DSHKM+";
+	original = "HMMWV_M1114_DSHKM_ACR_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_M1114_DSHKM_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_M1114_DSHKM_ACR_DZE2: HMMWV_M1114_DSHKM_ACR_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DSHKM++";
+	armor = 110; // base 80
+	damageResistance = 0.06; // base 0.03099
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_M1114_DSHKM_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M1114_DSHKM_ACR_DZE3: HMMWV_M1114_DSHKM_ACR_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DSHKM+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_M1114_DSHKM_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_M1114_DSHKM_ACR_DZE4: HMMWV_M1114_DSHKM_ACR_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DSHKM++++";
+	fuelCapacity = 180; // base 100
 };
 
 class HMMWV_Armored_DZ: HMMWV_DZE_Base {
@@ -1015,10 +1279,104 @@ class HMMWV_Armored_DZE: HMMWV_Armored_DZ {
 			magazines[] = {};
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_Armored_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class HMMWV_Armored_DZE1: HMMWV_Armored_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_ARMORED+";
+	original = "HMMWV_Armored_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_Armored_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_Armored_DZE2: HMMWV_Armored_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_ARMORED++";
+	armor = 110; // base 80
+	damageResistance = 0.06; // base 0.03099
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.8;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.8;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.8;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.8;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_Armored_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Armored_DZE3: HMMWV_Armored_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_ARMORED+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_Armored_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_Armored_DZE4: HMMWV_Armored_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_ARMORED++++";
+	fuelCapacity = 180; // base 100
 };
 
 class HMMWV_M2_DZ: HMMWV_DZE_Base {
-	displayname = $STR_VEH_NAME_HMMWV_M2;
+	displayname = "$STR_VEH_NAME_HMMWV_M2";
 	scope = 2;
 	crew = "";
 	typicalCargo[] = {};
@@ -1027,7 +1385,6 @@ class HMMWV_M2_DZ: HMMWV_DZE_Base {
 	transportMaxWeapons = 15;
 	transportMaxMagazines = 70;
 	transportmaxbackpacks = 4;
-	armor = 40;
 	damageResistance = 0.00581;
 	class Turrets; // External class reference
 	class MainTurret; // External class reference	
@@ -1060,12 +1417,106 @@ class HMMWV_M2_DZE: HMMWV_M2_DZ {
 			magazines[] = {};
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_M2_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};		
+};
+
+class HMMWV_M2_DZE1: HMMWV_M2_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_M2+";
+	original = "HMMWV_M2_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_M2_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_M2_DZE2: HMMWV_M2_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_M2++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_M2_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M2_DZE3: HMMWV_M2_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_M2+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_M2_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_M2_DZE4: HMMWV_M2_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_M2++++";
+	fuelCapacity = 180; // base 100
 };
 
 class HMMWV_M1035_DES_EP1_DZE : HMMWV_DZE_Base {
 	scope = 2;
 	model = "\ca\wheeled_e\HMMWV\M1035_transport";
-	displayname = $STR_VEH_NAME_HMMWV_DES;
+	displayname = "$STR_VEH_NAME_HMMWV_DES";
 	transportSoldier = 3;
 	Picture = "\CA\wheeled_e\Data\UI\Picture_hmmwv_transport_CA.paa";
 	Icon = "\CA\wheeled_e\Data\UI\Icon_hmmwv_transport_CA.paa";
@@ -1091,11 +1542,502 @@ class HMMWV_M1035_DES_EP1_DZE : HMMWV_DZE_Base {
 	};
 	HiddenSelections[] = {"camo","camo1","camo2","camo3"};
 	HiddenSelectionsTextures[] = {"ca\wheeled_e\hmmwv\data\hmmwv_body_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_hood_canvas_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_canvas_1_co.paa","ca\wheeled_e\hmmwv\data\hmmwv_canvas_1_co.paa"};
+
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_M1035_DES_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M1035_DES_EP1_DZE1: HMMWV_M1035_DES_EP1_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES+";
+	original = "HMMWV_M1035_DES_EP1_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_M1035_DES_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_M1035_DES_EP1_DZE2: HMMWV_M1035_DES_EP1_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_M1035_DES_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_M1035_DES_EP1_DZE3: HMMWV_M1035_DES_EP1_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_M1035_DES_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_M1035_DES_EP1_DZE4: HMMWV_M1035_DES_EP1_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES++++";
+	fuelCapacity = 180; // base 100
+};
+
+class HMMWV_DZ: HMMWV_DZE_Base {	
+	accuracy = 0.32;
+	displayname = "$STR_VEH_NAME_HMMWV";
+	hasgunner = 0;
+	hiddenselections[] = {"Camo1"};
+	hiddenselectionstextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
+	icon = "\Ca\wheeled\data\map_ico\icomap_hmwv_CA.paa";
+	mapsize = 5;
+	model = "ca\wheeled_E\HMMWV\HMMWV";
+	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";	
+	scope = 2;
+	side = 2;
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;
+	class Turrets {};
+	class Damage {
+		mat[] = {"ca\wheeled\hmmwv\data\hmmwv_details.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_body.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat", "Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat", "ca\wheeled\data\hmmwv_clocks_destruct.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat", "ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"};
+		tex[] = {};
+	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_DZE1: HMMWV_DZ 
+{
+	displayName = "$STR_VEH_NAME_HMMWV+";
+	original = "HMMWV_DZ";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_DZE2: HMMWV_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_DZE3: HMMWV_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_DZE4: HMMWV_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV++++";
+	fuelCapacity = 180; // base 100
+};
+
+class HMMWV_DES_EP1_DZE : HMMWV_DZ {
+	displayname = "$STR_VEH_NAME_HMMWV_DES";
+	hiddenSelections[] = {"Camo1"};
+	hiddenselectionstextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa"};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_DES_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class HMMWV_DES_EP1_DZE1: HMMWV_DES_EP1_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES+";
+	original = "HMMWV_DES_EP1_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_DES_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_DES_EP1_DZE2: HMMWV_DES_EP1_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_DES_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_DES_EP1_DZE3: HMMWV_DES_EP1_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_DES_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_DES_EP1_DZE4: HMMWV_DES_EP1_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES++++";
+	fuelCapacity = 180; // base 100
+};
+
+class Hummer_DZE: HMMWV_DZ {	
+	displayname = "$STR_VEH_NAME_HUMMER";
+	hiddenSelections[] = {"camo1","camo2","camo3"};
+	hiddenSelectionsTextures[] = {"\sra_civilian\wheeled\hmmwv\hmmwv_body_co.paa","\sra_civilian\wheeled\hmmwv\hmmwv_hood_co.paa","\sra_civilian\wheeled\hmmwv\hmmwv_regular_co.paa"};
+	model = "\SRA_civilian\Wheeled\HMMWV\hmmwv";
+	
+	class HitPoints: HitPoints
+	{
+		class HitBody
+		{
+			armor = 2;
+			material = -1;
+			name = "karoserie";
+			passThrough = 0;
+			visual = "karoserie";
+		};
+		class HitEngine: HitBody
+		{
+			name = "motor";
+			visual = "motor";
+		};
+		class HitFuel: HitBody
+		{
+			armor = 1;
+			name = "palivo";
+			visual = "palivo";
+		};
+		class HitGlass1: HitGlass1
+		{
+			armor = 1;
+			name = "glass1";
+			visual = "glass1";
+			passThrough = 0;
+		};
+		class HitGlass2: HitGlass1
+		{
+			name = "glass2";
+			visual = "glass2";
+		};
+		class HitGlass3: HitGlass1
+		{
+			name = "glass3";
+			visual = "glass3";
+		};
+		class HitGlass4: HitGlass1
+		{
+			name = "glass4";
+			visual = "glass4";
+		};
+		class HitGlass5: HitGlass1
+		{
+			name = "glass5";
+			visual = "glass5";
+		};
+		class HitLFWheel
+		{
+			armor = 0.35;
+			material = -1;
+			name = "levy predni tlumic";
+			passThrough = 0.3;
+			visual = "";
+		};
+		class HitLBWheel: HitLFWheel
+		{
+			name = "levy zadni tlumic";
+		};
+		class HitRFWheel: HitLFWheel
+		{
+			name = "pravy predni tlumic";
+		};
+		class HitRBWheel: HitLFWheel
+		{
+			name = "pravy zadni tlumic";
+		};
+	};	
+
+	class Damage
+	{
+		tex[] = {};
+		mat[] = {"sra_civilian\wheeled\hmmwv\hmmwv_body.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_body_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_body_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_clocks_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_glass_in_half_d.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_hood_destruct.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular_damage.rvmat","sra_civilian\wheeled\hmmwv\hmmwv_regular_destruct.rvmat"};
+	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"Hummer_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};		
+};
+
+class Hummer_DZE1: Hummer_DZE 
+{
+	displayName = "$STR_VEH_NAME_HUMMER+";
+	original = "Hummer_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"Hummer_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class Hummer_DZE2: Hummer_DZE1
+{
+	displayName = "$STR_VEH_NAME_HUMMER++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.5;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.5;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.5;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.5;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 2;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 3;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"Hummer_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class Hummer_DZE3: Hummer_DZE2
+{
+	displayName = "$STR_VEH_NAME_HUMMER+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"Hummer_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class Hummer_DZE4: Hummer_DZE3
+{
+	displayName = "$STR_VEH_NAME_HUMMER++++";
+	fuelCapacity = 180; // base 100
 };
 
 class HMMWV_Ambulance_DZE : HMMWV_DZE_Base {
 	scope = 2;
-	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE;
+	displayname = "$STR_VEH_NAME_HMMWV_AMBULANCE";
 	model = "\ca\wheeled2\HMMWV\M997A2_Ambulance\M997A2_Ambulance";
 	vehicleClass = "Support";
 	mapSize = 5;
@@ -1122,27 +2064,199 @@ class HMMWV_Ambulance_DZE : HMMWV_DZE_Base {
 		libTextDesc = "$STR_LIB_HMMWV_Ambulance";
 	};	
 	attendant = 0;
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_Ambulance_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};		
 };
 
-class HMMWV_DES_EP1_DZE : HMMWV_DZ {
-	displayname = $STR_VEH_NAME_HMMWV_DES;
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
-	hiddenSelections[] = {"Camo1"};
-	hiddenselectionstextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa"};
+class HMMWV_Ambulance_DZE1: HMMWV_Ambulance_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE+";
+	original = "HMMWV_Ambulance_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_Ambulance_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
 };
 
+class HMMWV_Ambulance_DZE2: HMMWV_Ambulance_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_Ambulance_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Ambulance_DZE3: HMMWV_Ambulance_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_Ambulance_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_Ambulance_DZE4: HMMWV_Ambulance_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE++++";
+	fuelCapacity = 180; // base 100
+};
 
 class HMMWV_Ambulance_CZ_DES_EP1_DZE : HMMWV_Ambulance_DZE {
-	scope = 2;
-	displayname = $STR_VEH_NAME_HMMWV_AMBULANCE_DES;
-	crew = "";
-	typicalCargo[] = {};
-	class TransportMagazines {};
-	class TransportWeapons {};
+	displayname = "$STR_VEH_NAME_HMMWV_AMBULANCE_DES";
 	hiddenSelections[] = {"Camo1","Camo2"};
 	hiddenselectionstextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa","\ca\wheeled\hmmwv\data\hmmwv_parts_1_ca.paa"};
 	attendant = 0;
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_Ambulance_CZ_DES_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class HMMWV_Ambulance_CZ_DES_EP1_DZE1: HMMWV_Ambulance_CZ_DES_EP1_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE_DES+";
+	original = "HMMWV_Ambulance_CZ_DES_EP1_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_Ambulance_CZ_DES_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_Ambulance_CZ_DES_EP1_DZE2: HMMWV_Ambulance_CZ_DES_EP1_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE_DES++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_Ambulance_CZ_DES_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Ambulance_CZ_DES_EP1_DZE3: HMMWV_Ambulance_CZ_DES_EP1_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE_DES+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_Ambulance_CZ_DES_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_Ambulance_CZ_DES_EP1_DZE4: HMMWV_Ambulance_CZ_DES_EP1_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE_DES++++";
+	fuelCapacity = 180; // base 100
 };

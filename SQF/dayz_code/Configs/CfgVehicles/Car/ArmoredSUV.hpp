@@ -402,21 +402,13 @@ class ArmoredSUV_PMC_DZE2: ArmoredSUV_PMC_DZE1
 		{
 			armor = 0.5;
 		};
-		class HitFuel
+		class HitFuel: HitFuel
 		{
 			armor = 0.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine
+		class HitEngine: HitEngine
 		{
 			armor = 1;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1
 		{
@@ -525,21 +517,13 @@ class ArmoredSUV_PKT_DZE2: ArmoredSUV_PKT_DZE1
 		{
 			armor = 0.5;
 		};
-		class HitFuel
+		class HitFuel: HitFuel
 		{
 			armor = 0.5;
-			material = -1;
-			name = "palivo";
-			visual = "";
-			passThrough = 1;
 		};
-		class HitEngine
+		class HitEngine: HitEngine
 		{
 			armor = 1;
-			material = -1;
-			name = "motor";
-			visual = "";
-			passThrough = 1;
 		};
 		class HitGlass1: HitGlass1
 		{

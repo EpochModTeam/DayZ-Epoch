@@ -332,7 +332,7 @@ class Dingo_DZE_Base_ACR: Car
 class Dingo_WDL_ACR_DZ: Dingo_DZE_Base_ACR
 {
 	scope = 2;	
-	displayname = $STR_VEH_NAME_DINGO_M240_WOODLAND;
+	displayname = "$STR_VEH_NAME_DINGO_M240_WOODLAND";
 	class AnimationSources: AnimationSources
 	{
 		class ReloadAnim
@@ -362,24 +362,124 @@ class Dingo_WDL_ACR_DZE: Dingo_WDL_ACR_DZ
 			magazines[] = {};
 		};	
 	};	
+	
+	class Upgrades
+	{
+		ItemORP[] = {"Dingo_WDL_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class Dingo_WDL_ACR_DZE1: Dingo_WDL_ACR_DZE
+{
+	displayName = "$STR_VEH_NAME_DINGO_M240_WOODLAND+";
+	original = "Dingo_WDL_ACR_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 2; // base 4
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"Dingo_WDL_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class Dingo_WDL_ACR_DZE2: Dingo_WDL_ACR_DZE1
+{
+	displayName = "$STR_VEH_NAME_DINGO_M240_WOODLAND++";
+	armor = 75; // base 40
+	damageResistance = 0.013; // base 0.00562
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"Dingo_WDL_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class Dingo_WDL_ACR_DZE3: Dingo_WDL_ACR_DZE2
+{
+	displayName = "$STR_VEH_NAME_DINGO_M240_WOODLAND+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"Dingo_WDL_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class Dingo_WDL_ACR_DZE4: Dingo_WDL_ACR_DZE3
+{
+	displayName = "$STR_VEH_NAME_DINGO_M240_WOODLAND++++";
+	fuelCapacity = 180; // base 100
 };
 
 class Dingo_DST_ACR_DZ: Dingo_WDL_ACR_DZ
 {
-	displayName = $STR_VEH_NAME_DINGO_M240_DESERT;
+	displayName = "$STR_VEH_NAME_DINGO_M240_DESERT";
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\ACR_karosse_des_co","\ca\wheeled_acr\dingo\data\ACR_DES_a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_DES_co","\ca\wheeled_acr\dingo\data\FLW200_DES_co"};
 };
 
 class Dingo_DST_ACR_DZE: Dingo_WDL_ACR_DZE
 {
-	displayName = $STR_VEH_NAME_DINGO_M240_DESERT;
+	displayName = "$STR_VEH_NAME_DINGO_M240_DESERT";
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\ACR_karosse_des_co","\ca\wheeled_acr\dingo\data\ACR_DES_a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_DES_co","\ca\wheeled_acr\dingo\data\FLW200_DES_co"};
+
+	class Upgrades
+	{
+		ItemORP[] = {"Dingo_DST_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class Dingo_DST_ACR_DZE1: Dingo_DST_ACR_DZE
+{
+	displayName = "$STR_VEH_NAME_DINGO_M240_DESERT+";
+	original = "Dingo_DST_ACR_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 2; // base 4
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"Dingo_DST_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class Dingo_DST_ACR_DZE2: Dingo_DST_ACR_DZE1
+{
+	displayName = "$STR_VEH_NAME_DINGO_M240_DESERT++";
+	armor = 75; // base 40
+	damageResistance = 0.013; // base 0.00562
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"Dingo_DST_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class Dingo_DST_ACR_DZE3: Dingo_DST_ACR_DZE2
+{
+	displayName = "$STR_VEH_NAME_DINGO_M240_DESERT+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"Dingo_DST_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class Dingo_DST_ACR_DZE4: Dingo_DST_ACR_DZE3
+{
+	displayName = "$STR_VEH_NAME_DINGO_M240_DESERT++++";
+	fuelCapacity = 180; // base 100
 };
 
 class Dingo_GL_Wdl_ACR_DZ: Dingo_DZE_Base_ACR
 {
 	scope = 2;	
-	displayname = $STR_VEH_NAME_DINGO_MK19_WOODLAND;
+	displayname = "$STR_VEH_NAME_DINGO_MK19_WOODLAND";
 	model = "\CA\Wheeled_ACR\Dingo\AMT_Dingo2a2";
 	Picture = "\Ca\Wheeled_ACR\Data\UI\Picture_Dingo2_CA.paa";
 
@@ -449,16 +549,116 @@ class Dingo_GL_Wdl_ACR_DZE: Dingo_GL_Wdl_ACR_DZ
 			magazines[] = {};
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"Dingo_GL_Wdl_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};		
+};
+
+class Dingo_GL_Wdl_ACR_DZE1: Dingo_GL_Wdl_ACR_DZE
+{
+	displayName = "$STR_VEH_NAME_DINGO_MK19_WOODLAND+";
+	original = "Dingo_GL_Wdl_ACR_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 2; // base 4
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"Dingo_GL_Wdl_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class Dingo_GL_Wdl_ACR_DZE2: Dingo_GL_Wdl_ACR_DZE1
+{
+	displayName = "$STR_VEH_NAME_DINGO_MK19_WOODLAND++";
+	armor = 75; // base 40
+	damageResistance = 0.013; // base 0.00562
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"Dingo_GL_Wdl_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class Dingo_GL_Wdl_ACR_DZE3: Dingo_GL_Wdl_ACR_DZE2
+{
+	displayName = "$STR_VEH_NAME_DINGO_MK19_WOODLAND+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"Dingo_GL_Wdl_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class Dingo_GL_Wdl_ACR_DZE4: Dingo_GL_Wdl_ACR_DZE3
+{
+	displayName = "$STR_VEH_NAME_DINGO_MK19_WOODLAND++++";
+	fuelCapacity = 180; // base 100
 };
 
 class Dingo_GL_DST_ACR_DZ: Dingo_GL_Wdl_ACR_DZ
 {
-	displayname = $STR_VEH_NAME_DINGO_MK19_DESERT;
+	displayname = "$STR_VEH_NAME_DINGO_MK19_DESERT";
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\ACR_karosse_des_co","\ca\wheeled_acr\dingo\data\ACR_DES_a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_DES_co","\ca\wheeled_acr\dingo\data\FLW200_DES_co"};
 };
 
 class Dingo_GL_DST_ACR_DZE: Dingo_GL_Wdl_ACR_DZE
 {
-	displayname = $STR_VEH_NAME_DINGO_MK19_DESERT;
+	displayname = "$STR_VEH_NAME_DINGO_MK19_DESERT";
 	HiddenSelectionsTextures[] = {"\ca\wheeled_acr\dingo\data\ACR_karosse_des_co","\ca\wheeled_acr\dingo\data\ACR_DES_a_teile_co","\ca\wheeled_acr\dingo\data\FLW100_DES_co","\ca\wheeled_acr\dingo\data\FLW200_DES_co"};
+
+	class Upgrades
+	{
+		ItemORP[] = {"Dingo_GL_DST_ACR_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class Dingo_GL_DST_ACR_DZE1: Dingo_GL_DST_ACR_DZE
+{
+	displayName = "$STR_VEH_NAME_DINGO_MK19_DESERT+";
+	original = "Dingo_GL_DST_ACR_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 2; // base 4
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"Dingo_GL_DST_ACR_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class Dingo_GL_DST_ACR_DZE2: Dingo_GL_DST_ACR_DZE1
+{
+	displayName = "$STR_VEH_NAME_DINGO_MK19_DESERT++";
+	armor = 75; // base 40
+	damageResistance = 0.013; // base 0.00562
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"Dingo_GL_DST_ACR_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class Dingo_GL_DST_ACR_DZE3: Dingo_GL_DST_ACR_DZE2
+{
+	displayName = "$STR_VEH_NAME_DINGO_MK19_DESERT+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"Dingo_GL_DST_ACR_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class Dingo_GL_DST_ACR_DZE4: Dingo_GL_DST_ACR_DZE3
+{
+	displayName = "$STR_VEH_NAME_DINGO_MK19_DESERT++++";
+	fuelCapacity = 180; // base 100
 };
