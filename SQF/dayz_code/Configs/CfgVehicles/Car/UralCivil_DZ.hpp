@@ -52,6 +52,60 @@ class Ural_INS_DZE4: Ural_INS_DZE3 {
 	fuelCapacity = 615;	
 };
 
+class Ural_RUST_DZE: Ural_INS {
+	scope = 2;
+	crew = "";
+	displayName = "$STR_VEH_NAME_URAL_RUST";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ural\ural_kabina_wrecked_co.paa","dayz_epoch_c\skins\ural\ural_plachta_wrecked_co.paa"};
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	vehicleClass = "DayZ Epoch Vehicles";
+	supplyRadius = 2.6;
+
+	class Upgrades {
+		ItemTruckORP[] = {"Ural_RUST_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class Ural_RUST_DZE1: Ural_RUST_DZE {
+	displayName = "$STR_VEH_NAME_URAL_RUST+";
+	original = "Ural_RUST_DZE";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"Ural_RUST_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class Ural_RUST_DZE2: Ural_RUST_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_RUST++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"Ural_RUST_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class Ural_RUST_DZE3: Ural_RUST_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_RUST+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"Ural_RUST_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class Ural_RUST_DZE4: Ural_RUST_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_RUST++++";
+	fuelCapacity = 615;	
+};
+
 class Ural_CDF;
 class Ural_CDF_DZE: Ural_CDF {
 	scope = 2;

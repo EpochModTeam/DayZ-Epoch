@@ -9337,6 +9337,26 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ++++">
 			<English>BRDM-2 HQ++++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST">
+			<English>BRDM-2 HQ (rusty)</English>
+			<German>BRDM-2 HQ (rostig)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST+">
+			<English>BRDM-2 HQ (rusty)+</English>
+			<German>BRDM-2 HQ (rostig)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST++">
+			<English>BRDM-2 HQ (rusty)++</English>
+			<German>BRDM-2 HQ (rostig)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST+++">
+			<English>BRDM-2 HQ (rusty)+++</English>
+			<German>BRDM-2 HQ (rostig)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST++++">
+			<English>BRDM-2 HQ (rusty)++++</English>
+			<German>BRDM-2 HQ (rostig)++++</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_BRDM2_TK">
 			<English>BRDM-2 TK</English>
@@ -9387,7 +9407,27 @@
 		<Key ID="STR_VEH_NAME_BRDM2_DES++++">
 			<English>BRDM-2 Desert Camo++++</English>
 			<German>BRDM-2 Wüstentarn++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_RUST">
+			<English>BRDM-2 rusty</English>
+			<German>BRDM-2 rostig</German>
 		</Key>		
+		<Key ID="STR_VEH_NAME_BRDM2_RUST+">
+			<English>BRDM-2 rusty+</English>
+			<German>BRDM-2 rostig+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_RUST++">
+			<English>BRDM-2 rusty++</English>
+			<German>BRDM-2 rostig++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_RUST+++">
+			<English>BRDM-2 rusty+++</English>
+			<German>BRDM-2 rostig+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_RUST++++">
+			<English>BRDM-2 rusty++++</English>
+			<German>BRDM-2 rostig++++</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN">
 			<English>M113 UN Ambulance</English>
 			<Russian>M113 UN Скорая</Russian>
@@ -9563,6 +9603,14 @@
 			<Russian>BMP-2 CDF Скорая++++</Russian>
 			<German>BMP-2 CDF Sanitätsfzg.++++</German>
 		</Key>		
+		<Key ID="STR_VEH_NAME_BMP2_RUST">
+			<English>BMP-2 (rusty)</English>
+			<German>BMP-2 (rostig)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_T72_RUST">
+			<English>T-72 (rusty)</English>
+			<German>T-72 (rostig)</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND">
 			<English>MTVR (Woodland)</English>
 			<Russian>MTVR (Лесной камуфляж)</Russian>
@@ -10597,6 +10645,26 @@
 			<English>UAZ (Civil)++++</English>
 			<Russian>UAZ (Гражданский)++++</Russian>
 			<German>UAZ (Zivil)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_RUSTY">
+			<English>UAZ (rusty)</English>
+			<German>UAZ (rostig)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_RUSTY+">
+			<English>UAZ (rusty)+</English>
+			<German>UAZ (rostig)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_RUSTY++">
+			<English>UAZ (rusty)++</English>
+			<German>UAZ (rostig)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_RUSTY+++">
+			<English>UAZ (rusty)+++</English>
+			<German>UAZ (rostig)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_RUSTY++++">
+			<English>UAZ (rusty)++++</English>
+			<German>UAZ (rostig)++++</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM">
 			<English>UAZ (DSHKM)</English>
@@ -10612,6 +10680,26 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM++++">
 			<English>UAZ (DSHKM)++++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST">
+			<English>UAZ rusty (DSHKM)</English>
+			<German>UAZ rostig (DSHKM)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST+">
+			<English>UAZ rusty (DSHKM)+</English>
+			<German>UAZ rostig (DSHKM)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST++">
+			<English>UAZ rusty (DSHKM)++</English>
+			<German>UAZ rostig (DSHKM)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST+++">
+			<English>UAZ rusty (DSHKM)+++</English>
+			<German>UAZ rostig (DSHKM)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST++++">
+			<English>UAZ rusty (DSHKM)++++</English>
+			<German>UAZ rostig (DSHKM)++++</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_TK">
 			<English>Ural (TK)</English>
@@ -10643,6 +10731,26 @@
 		<Key ID="STR_VEH_NAME_URAL_INS++++">
 			<English>Ural (INS)++++</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_RUST">
+			<English>Ural (rusty)</English>
+			<German>Ural (rostig)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_RUST+">
+			<English>Ural (rusty)+</English>
+			<German>Ural (rostig)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_RUST++">
+			<English>Ural (rusty)++</English>
+			<German>Ural (rostig)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_RUST+++">
+			<English>Ural (rusty)+++</English>
+			<German>Ural (rostig)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_RUST++++">
+			<English>Ural (rusty)++++</English>
+			<German>Ural (rostig)++++</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_URAL_CDF">
 			<English>Ural (CDF)</English>
 		</Key>
@@ -11703,7 +11811,7 @@
 		<Key ID="STR_VEH_NAME_MI17">
 			<English>Mi-17</English>
 			<Russian>Ми-17</Russian>
-		</Key>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_TK">
 			<English>Mi-17 (TK)</English>
 			<Russian>Ми-17 (TK)</Russian>
@@ -11720,6 +11828,10 @@
 			<English>Mi-17 (UN)</English>
 			<Russian>Ми-17 (UN)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_RUST">
+			<English>Mi-17 (rusty)</English>
+			<German>Mi-17 (rostig)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_CIVIL">
 			<English>Mi-17 (Civilian)</English>
 			<Russian>Ми-17 (Civilian)</Russian>

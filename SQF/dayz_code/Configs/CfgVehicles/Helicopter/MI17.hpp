@@ -428,6 +428,22 @@ class Mi17_BLACK_DZE: Mi17_DZE {
 	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body4_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 };
 
+class Mi17_RUST_DZ: Mi17_CDF_DZ {
+	displayname = "$STR_VEH_NAME_MI17_RUST";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi8_body_crash_co.paa","ca\air\data\mi8_det_g_co.paa","ca\air\data\clear_empty.paa","ca\air\data\mi8_decals_ca.paa"};
+};
+
+class Mi17_RUST_DZE: Mi17_RUST_DZ {
+	class Turrets : Turrets  {
+		class MainTurret : MainTurret  {
+			magazines[] = {};
+		};
+		class BackTurret : BackTurret {
+			magazines[] = {};
+		};
+	};
+};
+
 //Unarmed
 class Mi17_Civilian;
 class Mi17_Civilian_DZ: Mi17_Civilian {

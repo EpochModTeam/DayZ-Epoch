@@ -367,3 +367,9 @@ class BMP2_Ambul_CDF_DZE4: BMP2_Ambul_CDF_DZE3 {
 	displayNameShort = "$STR_VEH_NAME_BMP2_AMBULANCE_CDF++++";
 	fuelCapacity = 1200; // base 700	
 };
+
+class BMP2_INS;
+class BMP2_RUST: BMP2_INS {
+	displayName = "$STR_VEH_NAME_BMP2_RUST";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\bmp\bmp2_01_wrecked_co.paa","\dayz_epoch_c\skins\bmp\bmp2_02_wrecked_co.paa"};
+};
