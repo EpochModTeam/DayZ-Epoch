@@ -383,49 +383,49 @@ class Mi171Sh_CZ_EP1_DZE: Mi171Sh_CZ_EP1_DZ {
 class Mi17_DES_DZ: Mi17_DZ {
 	displayname = $STR_VEH_NAME_MI17_DESERT;
 	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body5_co.paa","dayz_epoch_c\skins\mi17\mi17_det2_co.paa"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body5_co.paa","\dayz_epoch_c\skins\mi17\mi17_det2_co.paa"};
 };
 
 class Mi17_DES_DZE: Mi17_DZE {
 	displayname = $STR_VEH_NAME_MI17_DESERT;
 	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body5_co.paa","dayz_epoch_c\skins\mi17\mi17_det2_co.paa"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body5_co.paa","\dayz_epoch_c\skins\mi17\mi17_det2_co.paa"};
 };
 
 class Mi17_GREEN_DZ: Mi17_DZ {
 	displayname = $STR_VEH_NAME_MI17_GREEN;
 	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body2_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body2_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 };
 
 class Mi17_GREEN_DZE: Mi17_DZE {
 	displayname = $STR_VEH_NAME_MI17_GREEN;
 	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body2_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body2_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 };
 
 class Mi17_BLUE_DZ: Mi17_DZ {
 	displayname = $STR_VEH_NAME_MI17_BLUE;
 	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body3_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body3_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 };
 
 class Mi17_BLUE_DZE: Mi17_DZE {
 	displayname = $STR_VEH_NAME_MI17_BLUE;
 	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body3_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body3_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 };
 
 class Mi17_BLACK_DZ: Mi17_DZ {
 	displayname = $STR_VEH_NAME_MI17_BLACK;
 	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body4_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body4_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 };
 
 class Mi17_BLACK_DZE: Mi17_DZE {
 	displayname = $STR_VEH_NAME_MI17_BLACK;
 	hiddenSelections[] = {"Camo1","Camo2"};
-	hiddenSelectionsTextures[] = {"dayz_epoch_c\skins\mi17\mi17_body4_co.paa","dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body4_co.paa","\dayz_epoch_c\skins\mi17\mi17_det_co.paa"};
 };
 
 class Mi17_RUST_DZ: Mi17_CDF_DZ {
@@ -433,15 +433,19 @@ class Mi17_RUST_DZ: Mi17_CDF_DZ {
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi8_body_crash_co.paa","ca\air\data\mi8_det_g_co.paa","ca\air\data\clear_empty.paa","ca\air\data\mi8_decals_ca.paa"};
 };
 
-class Mi17_RUST_DZE: Mi17_RUST_DZ {
-	class Turrets : Turrets  {
-		class MainTurret : MainTurret  {
-			magazines[] = {};
-		};
-		class BackTurret : BackTurret {
-			magazines[] = {};
-		};
-	};
+class Mi17_RUST_DZE: Mi17_CDF_DZE {
+	displayname = "$STR_VEH_NAME_MI17_RUST";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi8_body_crash_co.paa","ca\air\data\mi8_det_g_co.paa","ca\air\data\clear_empty.paa","ca\air\data\mi8_decals_ca.paa"};
+};
+
+class Mi17_WINTER_DZ: Mi17_TK_EP1_DZ {
+	displayname = "$STR_VEH_NAME_MI17_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body_winter.paa", "\dayz_epoch_c\skins\mi17\mi17_det_winter.paa", "\ca\air\data\clear_empty.paa", "\ca\air\data\mi8_decals_ca.paa"};
+};
+
+class Mi17_WINTER_DZE: Mi17_TK_EP1_DZE {
+	displayname = "$STR_VEH_NAME_MI17_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\mi17\mi17_body_winter.paa", "\dayz_epoch_c\skins\mi17\mi17_det_winter.paa", "\ca\air\data\clear_empty.paa", "\ca\air\data\mi8_decals_ca.paa"};
 };
 
 //Unarmed

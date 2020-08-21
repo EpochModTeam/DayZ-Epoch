@@ -373,3 +373,8 @@ class BMP2_RUST: BMP2_INS {
 	displayName = "$STR_VEH_NAME_BMP2_RUST";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\bmp\bmp2_01_wrecked_co.paa","\dayz_epoch_c\skins\bmp\bmp2_02_wrecked_co.paa"};
 };
+
+class BMP2_WINTER: BMP2_INS {
+	displayName = "$STR_VEH_NAME_BMP2_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\bmp\bmp2_01_winter.paa","\dayz_epoch_c\skins\bmp\bmp2_02_winter.paa"};
+};

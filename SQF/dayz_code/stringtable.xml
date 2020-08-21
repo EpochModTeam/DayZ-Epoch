@@ -9357,7 +9357,22 @@
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST++++">
 			<English>BRDM-2 HQ (rusty)++++</English>
 			<German>BRDM-2 HQ (rostig)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER">
+			<English>BRDM-2 HQ (Winter)</English>
 		</Key>		
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER+">
+			<English>BRDM-2 HQ (Winter)+</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER++">
+			<English>BRDM-2 HQ (Winter)++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER+++">
+			<English>BRDM-2 HQ (Winter)+++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER++++">
+			<English>BRDM-2 HQ (Winter)++++</English>
+		</Key>			
 		<Key ID="STR_VEH_NAME_BRDM2_TK">
 			<English>BRDM-2 TK</English>
 		</Key>
@@ -9427,7 +9442,22 @@
 		<Key ID="STR_VEH_NAME_BRDM2_RUST++++">
 			<English>BRDM-2 rusty++++</English>
 			<German>BRDM-2 rostig++++</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_WINTER">
+			<English>BRDM-2 Winter</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BRDM2_WINTER+">
+			<English>BRDM-2 Winter+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_WINTER++">
+			<English>BRDM-2 Winter++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_WINTER+++">
+			<English>BRDM-2 Winter+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_WINTER++++">
+			<English>BRDM-2 Winter++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN">
 			<English>M113 UN Ambulance</English>
 			<Russian>M113 UN Скорая</Russian>
@@ -9606,6 +9636,9 @@
 		<Key ID="STR_VEH_NAME_BMP2_RUST">
 			<English>BMP-2 (rusty)</English>
 			<German>BMP-2 (rostig)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_WINTER">
+			<English>BMP-2 (Winter)</English>
 		</Key>		
 		<Key ID="STR_VEH_NAME_T72_RUST">
 			<English>T-72 (rusty)</English>
@@ -10495,7 +10528,22 @@
 			<English>SUV (grey)++++</English>
 			<Russian>SUV (серый)++++</Russian>
 			<German>SUV (grau)++++</German>
-		</Key>		
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_WINTER">
+			<English>SUV (Winter)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_WINTER+">
+			<English>SUV (Winter)+</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_WINTER++">
+			<English>SUV (Winter)++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_WINTER+++">
+			<English>SUV (Winter)+++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_SUV_WINTER++++">
+			<English>SUV (Winter)++++</English>
+		</Key>			
 		<Key ID="STR_VEH_NAME_SUV_ARMORED">
 			<English>SUV (Armored)</English>
 			<Russian>SUV (Армированный)</Russian>
@@ -10665,6 +10713,21 @@
 		<Key ID="STR_VEH_NAME_UAZ_RUSTY++++">
 			<English>UAZ (rusty)++++</English>
 			<German>UAZ (rostig)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER">
+			<English>UAZ (Winter)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_WINTER+">
+			<English>UAZ (Winter)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER++">
+			<English>UAZ (Winter)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER+++">
+			<English>UAZ (Winter)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER++++">
+			<English>UAZ (Winter)++++</English>
 		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM">
 			<English>UAZ (DSHKM)</English>
@@ -10700,6 +10763,21 @@
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST++++">
 			<English>UAZ rusty (DSHKM)++++</English>
 			<German>UAZ rostig (DSHKM)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM">
+			<English>UAZ Winter (DSHKM)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM+">
+			<English>UAZ Winter (DSHKM)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM++">
+			<English>UAZ Winter (DSHKM)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM+++">
+			<English>UAZ Winter (DSHKM)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM++++">
+			<English>UAZ Winter (DSHKM)++++</English>
 		</Key>		
 		<Key ID="STR_VEH_NAME_URAL_TK">
 			<English>Ural (TK)</English>
@@ -11831,6 +11909,21 @@
 		<Key ID="STR_VEH_NAME_MI17_RUST">
 			<English>Mi-17 (rusty)</English>
 			<German>Mi-17 (rostig)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MI17_WINTER">
+			<English>Mi-17 (Winter)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MI17_WINTER+">
+			<English>Mi-17 (Winter)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_WINTER++">
+			<English>Mi-17 (Winter)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_WINTER+++">
+			<English>Mi-17 (Winter)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_WINTER++++">
+			<English>Mi-17 (Winter)++++</English>
 		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_CIVIL">
 			<English>Mi-17 (Civilian)</English>
@@ -11938,6 +12031,9 @@
 			<English>UH-1H (SAR)</English>
 			<German>UH-1H (SAR)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_WINTER">
+			<English>UH-1H (Winter)</English>
+		</Key>	
 		<Key ID="STR_VEH_NAME_MH60">
 			<English>MH-60S</English>
 		</Key>
