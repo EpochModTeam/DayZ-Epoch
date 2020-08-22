@@ -655,3 +655,234 @@ class UralRepair_CDF_DZE4: UralRepair_CDF_DZE3 {
 	displayName = "$STR_VEH_NAME_URAL_AMMO++++";
 	fuelCapacity = 615;	
 };
+
+class Ural_WINTER_DZE: Ural_INS_DZE {
+	displayName = "$STR_VEH_NAME_URAL_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ural\ural_winter_co.paa","\dayz_epoch_c\skins\ural\ural_plachta_winter_co.paa"};
+
+	class Upgrades {
+		ItemTruckORP[] = {"Ural_WINTER_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class Ural_WINTER_DZE1: Ural_WINTER_DZE {
+	displayName = "$STR_VEH_NAME_URAL_WINTER+";
+	original = "Ural_WINTER_DZE";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"Ural_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class Ural_WINTER_DZE2: Ural_WINTER_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_WINTER++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"Ural_WINTER_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class Ural_WINTER_DZE3: Ural_WINTER_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_WINTER+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"Ural_WINTER_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class Ural_WINTER_DZE4: Ural_WINTER_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_WINTER++++";
+	fuelCapacity = 615;	
+};
+
+class UralOpen_WINTER_DZE: UralOpen_CDF_DZE {
+	displayName = "$STR_VEH_NAME_URAL_WINTER_OPEN";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ural\ural_winter_co.paa","\dayz_epoch_c\skins\ural\ural_open_winter_co.paa"};
+
+	class Upgrades {
+		ItemTruckORP[] = {"UralOpen_WINTER_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class UralOpen_WINTER_DZE1: UralOpen_WINTER_DZE {
+	displayName = "$STR_VEH_NAME_URAL_WINTER_OPEN+";
+	original = "UralOpen_WINTER_DZE";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"UralOpen_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class UralOpen_WINTER_DZE2: UralOpen_WINTER_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_WINTER_OPEN++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"UralOpen_WINTER_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class UralOpen_WINTER_DZE3: UralOpen_WINTER_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_WINTER_OPEN+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"UralOpen_WINTER_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class UralOpen_WINTER_DZE4: UralOpen_WINTER_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_WINTER_OPEN++++";
+	fuelCapacity = 615;	
+};
+
+class UralRefuel_WINTER_DZ: UralRefuel_TK_EP1_DZ {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ural\ural_winter_co.paa","\dayz_epoch_c\skins\ural\ural_open_winter_co.paa","\dayz_epoch_c\skins\ural\ural_fuel_winter_co.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"UralRefuel_WINTER_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+class UralRefuel_WINTER_DZE1: UralRefuel_WINTER_DZ {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_WINTER+";
+	original = "UralRefuel_WINTER_DZ";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"UralRefuel_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+class UralRefuel_WINTER_DZE2: UralRefuel_WINTER_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_WINTER++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"UralRefuel_WINTER_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+class UralRefuel_WINTER_DZE3: UralRefuel_WINTER_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_WINTER+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"UralRefuel_WINTER_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
+	};
+};
+class UralRefuel_WINTER_DZE4: UralRefuel_WINTER_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_WINTER++++";
+	fuelCapacity = 20000;
+};
+
+class UralReammo_WINTER_DZE: UralReammo_CDF_DZE {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ural\ural_winter_co.paa","\dayz_epoch_c\skins\ural\ural_plachta_winter_co.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"UralReammo_WINTER_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class UralReammo_WINTER_DZE1 : UralReammo_WINTER_DZE {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_WINTER+";
+	original = "UralReammo_WINTER_DZE";
+	maxspeed = 100;
+	terrainCoef = 1.8;
+	turnCoef = 2.0;
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"UralReammo_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class UralReammo_WINTER_DZE2: UralReammo_WINTER_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_WINTER++";
+	armor = 70;
+	damageResistance = 0.0255;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"UralReammo_WINTER_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+	};
+};
+
+class UralReammo_WINTER_DZE3: UralReammo_WINTER_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_WINTER+++";
+	transportMaxWeapons = 150;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"UralReammo_WINTER_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class UralReammo_WINTER_DZE4: UralReammo_WINTER_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_WINTER++++";
+	fuelCapacity = 615;	
+};
+
+class UralRepair_WINTER_DZE: UralRepair_CDF_DZE {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ural\ural_winter_co.paa","\dayz_epoch_c\skins\ural\ural_repair_winter_co.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"UralRepair_WINTER_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class UralRepair_WINTER_DZE1 : UralRepair_WINTER_DZE {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_WINTER+";
+	original = "UralRepair_WINTER_DZE";
+	maxspeed = 100;
+	terrainCoef = 1.8;
+	turnCoef = 2.0;
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"UralRepair_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class UralRepair_WINTER_DZE2: UralRepair_WINTER_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_WINTER++";
+	armor = 70;
+	damageResistance = 0.0255;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"UralRepair_WINTER_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+	};
+};
+
+class UralRepair_WINTER_DZE3: UralRepair_WINTER_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_WINTER+++";
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 600;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"UralRepair_WINTER_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class UralRepair_WINTER_DZE4: UralRepair_WINTER_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_WINTER++++";
+	fuelCapacity = 615;	
+};

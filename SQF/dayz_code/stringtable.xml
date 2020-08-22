@@ -8396,6 +8396,26 @@
 			<English>HMMWV (Woodland)++++</English>
 			<Russian>Хамви (Лесной камуфляж)++++</Russian>
 			<German>Humvee (Waldtarn)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HMMWV_WINTER">
+			<English>HMMWV (Winter)</English>
+			<German>Humvee (Winter)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_WINTER+">
+			<English>HMMWV (Winter)+</English>
+			<German>Humvee (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_WINTER++">
+			<English>HMMWV (Winter)++</English>
+			<German>Humvee (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_WINTER+++">
+			<English>HMMWV (Winter)+++</English>
+			<German>Humvee (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_WINTER++++">
+			<English>HMMWV (Winter)++++</English>
+			<German>Humvee (Winter)++++</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_HUMMER">
 			<English>Hummer</English>
@@ -8461,6 +8481,26 @@
 			<English>HMMWV GPK (Desert)++++</English>
 			<Russian>Хамви GPK (Пустынный)++++</Russian>
 			<German>Humvee GPK (Wüstentarn)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER">
+			<English>HMMWV GPK (Winter)</English>
+			<German>Humvee GPK (Winter)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER+">
+			<English>HMMWV GPK (Winter)+</English>
+			<German>Humvee GPK (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER++">
+			<English>HMMWV GPK (Winter)++</English>
+			<German>Humvee GPK (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER+++">
+			<English>HMMWV GPK (Winter)+++</English>
+			<German>Humvee GPK (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER++++">
+			<English>HMMWV GPK (Winter)++++</English>
+			<German>Humvee GPK (Winter)++++</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM">
 			<English>HMMWV DSHKM (Desert)</English>
@@ -8536,6 +8576,26 @@
 			<English>HMMWV M240 (Woodland)++++</English>
 			<Russian>Хамви M240 (Лесной камуфляж)++++</Russian>
 			<German>Humvee M240 (Waldtarn)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER">
+			<English>HMMWV M240 (Winter)</English>
+			<German>Humvee M240 (Winter)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER+">
+			<English>HMMWV M240 (Winter)+</English>
+			<German>Humvee M240 (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER++">
+			<English>HMMWV M240 (Winter)++</English>
+			<German>Humvee M240 (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER+++">
+			<English>HMMWV M240 (Winter)+++</English>
+			<German>Humvee M240 (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER++++">
+			<English>HMMWV M240 (Winter)++++</English>
+			<German>Humvee M240 (Winter)++++</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_M2">
 			<English>HMMWV M2 (Woodland)</English>
@@ -8968,6 +9028,106 @@
 			<Russian>Kamaz Оружейный (Лесной камуфляж)++++</Russian>
 			<German>Kamaz Waffentransport (Waldtarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WINTER">
+			<English>Kamaz open (Winter)</English>
+			<German>Kamaz offen (Winter)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WINTER+">
+			<English>Kamaz open (Winter)+</English>
+			<German>Kamaz offen (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WINTER++">
+			<English>Kamaz open (Winter)++</English>
+			<German>Kamaz offen (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WINTER+++">
+			<English>Kamaz open (Winter)+++</English>
+			<German>Kamaz offen (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WINTER++++">
+			<English>Kamaz open (Winter)++++</English>
+			<German>Kamaz offen (Winter)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER">
+			<English>Kamaz (Winter)</English>
+			<German>Kamaz (Winter)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER+">
+			<English>Kamaz (Winter)+</English>
+			<German>Kamaz (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER++">
+			<English>Kamaz (Winter)++</English>
+			<German>Kamaz (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER+++">
+			<English>Kamaz (Winter)+++</English>
+			<German>Kamaz (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER++++">
+			<English>Kamaz (Winter)++++</English>
+			<German>Kamaz (Winter)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER">
+			<English>Kamaz Fuel (Winter)</English>
+			<German>Kamaz Treibstoff (Winter)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER+">
+			<English>Kamaz Fuel (Winter)+</English>
+			<German>Kamaz Treibstoff (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER++">
+			<English>Kamaz Fuel (Winter)++</English>
+			<German>Kamaz Treibstoff (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER+++">
+			<English>Kamaz Fuel (Winter)+++</English>
+			<German>Kamaz Treibstoff (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER++++">
+			<English>Kamaz Fuel (Winter)++++</English>
+			<German>Kamaz Treibstoff (Winter)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER">
+			<English>Kamaz Material Transport (Winter)</English>
+			<German>Kamaz Materialtransport (Winter)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER+">
+			<English>Kamaz Material Transport (Winter)+</English>
+			<German>Kamaz Materialtransport (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER++">
+			<English>Kamaz Material Transport (Winter)++</English>
+			<German>Kamaz Materialtransport (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER+++">
+			<English>Kamaz Material Transport (Winter)+++</English>
+			<German>Kamaz Materialtransport (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER++++">
+			<English>Kamaz Material Transport (Winter)++++</English>
+			<German>Kamaz Materialtransport (Winter)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER">
+			<English>Kamaz Weapon Transport (Winter)</English>
+			<German>Kamaz Waffentransport (Winter)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER+">
+			<English>Kamaz Weapon Transport (Winter)+</English>
+			<German>Kamaz Waffentransport (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER++">
+			<English>Kamaz Weapon Transport (Winter)++</English>
+			<German>Kamaz Waffentransport (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER+++">
+			<English>Kamaz Weapon Transport (Winter)+++</English>
+			<German>Kamaz Waffentransport (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER++++">
+			<English>Kamaz Weapon Transport (Winter)++++</English>
+			<German>Kamaz Waffentransport (Winter)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_LADA_WHITE">
 			<English>Lada (white)</English>
 			<Russian>Лада (белая)</Russian>
@@ -9632,6 +9792,26 @@
 			<English>BMP-2 CDF Ambulance++++</English>
 			<Russian>BMP-2 CDF Скорая++++</Russian>
 			<German>BMP-2 CDF Sanitätsfzg.++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER">
+			<English>BMP-2 Winter Ambulance</English>
+			<German>BMP-2 Winter Sanitätsfzg.</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER+">
+			<English>BMP-2 Winter Ambulance+</English>
+			<German>BMP-2 Winter Sanitätsfzg.+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER++">
+			<English>BMP-2 Winter Ambulance++</English>
+			<German>BMP-2 Winter Sanitätsfzg.++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER+++">
+			<English>BMP-2 Winter Ambulance+++</English>
+			<German>BMP-2 Winter Sanitätsfzg.+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER++++">
+			<English>BMP-2 Winter Ambulance++++</English>
+			<German>BMP-2 Winter Sanitätsfzg.++++</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_BMP2_RUST">
 			<English>BMP-2 (rusty)</English>
@@ -9643,7 +9823,10 @@
 		<Key ID="STR_VEH_NAME_T72_RUST">
 			<English>T-72 (rusty)</English>
 			<German>T-72 (rostig)</German>
-		</Key>			
+		</Key>
+		<Key ID="STR_VEH_NAME_T72_WINTER">
+			<English>T-72 (Winter)</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND">
 			<English>MTVR (Woodland)</English>
 			<Russian>MTVR (Лесной камуфляж)</Russian>
@@ -11004,6 +11187,101 @@
 			<Russian>Ural Заправщик (Лесной камуфляж)++++</Russian>
 			<German>Ural Treibstoff (Waldtarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WINTER">
+			<English>Ural (Winter)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_WINTER+">
+			<English>Ural (Winter)+</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_WINTER++">
+			<English>Ural (Winter)++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_WINTER+++">
+			<English>Ural (Winter)+++</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_WINTER++++">
+			<English>Ural (Winter)++++</English>
+		</Key>			
+		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN">
+			<English>Ural open (Winter)</English>
+			<German>Ural offen (Winter)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN+">
+			<English>Ural open (Winter)+</English>
+			<German>Ural offen (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN++">
+			<English>Ural open (Winter)++</English>
+			<German>Ural offen (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN+++">
+			<English>Ural open (Winter)+++</English>
+			<German>Ural offen (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN++++">
+			<English>Ural open (Winter)++++</English>
+			<German>Ural offen (Winter)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER">
+			<English>Ural Fuel (Winter)</English>
+			<German>Ural Treibstoff (Winter)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER+">
+			<English>Ural Fuel (Winter)+</English>
+			<German>Ural Treibstoff (Winter)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER++">
+			<English>Ural Fuel (Winter)++</English>
+			<German>Ural Treibstoff (Winter)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER+++">
+			<English>Ural Fuel (Winter)+++</English>
+			<German>Ural Treibstoff (Winter)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER++++">
+			<English>Ural Fuel (Winter)++++</English>
+			<German>Ural Treibstoff (Winter)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER">
+			<English>Ural Material Transport (Winter)</English>
+			<German>Ural Materialtransport (Winter)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER+">
+			<English>Ural Material Transport (Winter)+</English>
+			<German>Ural Materialtransport (Winter)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER++">
+			<English>Ural Material Transport (Winter)++</English>
+			<German>Ural Materialtransport (Winter)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER+++">
+			<English>Ural Material Transport (Winter)+++</English>
+			<German>Ural Materialtransport (Winter)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER++++">
+			<English>Ural Material Transport (Winter)++++</English>
+			<German>Ural Materialtransport (Winter)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER">
+			<English>Ural Weapon Transport (Winter)</English>
+			<German>Ural Waffentransport (Winter)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER+">
+			<English>Ural Weapon Transport (Winter)+</English>
+			<German>Ural Waffentransport (Winter)+</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER++">
+			<English>Ural Weapon Transport (Winter)++</English>
+			<German>Ural Waffentransport (Winter)++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER+++">
+			<English>Ural Weapon Transport (Winter)+++</English>
+			<German>Ural Waffentransport (Winter)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER++++">
+			<English>Ural Weapon Transport (Winter)++++</English>
+			<German>Ural Waffentransport (Winter)++++</German>
+		</Key>			
 		<Key ID="STR_VEH_NAME_V3S_FUEL">
 			<English>V3S Fuel (Woodland)</English>
 			<Russian>V3S Заправщик (Лесной камуфляж)</Russian>
@@ -11492,7 +11770,7 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_VODNIK_PKT++++">
 			<English>Vodnik (PKT)++++</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_VODNIK_BPPU">
 			<English>Vodnik (BPPU)</English>
 		</Key>
@@ -11532,7 +11810,7 @@
 			<English>Vodnik (Ambulance)++++</English>
 			<Russian>Водник (санитарный)++++</Russian>
 			<German>Vodnik (Sanitätsfzg.)++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT">
 			<English>Jackal L2A1 (Desert Camo)</English>
 			<Russian>Jackal L2A1 (Пустынный камуфляж)</Russian>

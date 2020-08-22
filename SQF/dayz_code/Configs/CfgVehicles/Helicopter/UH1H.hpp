@@ -74,7 +74,7 @@ class UH1H_2_DZE: UH1H_DZE {
 };
 
 class UH1H_CDF_DZ: UH1H_DZ {
-	displayname = "$STR_VEH_NAME_UH1H_CDF"
+	displayname = "$STR_VEH_NAME_UH1H_CDF";
 	hiddenSelections[] = {"Camo1","Camo2","Camo_mlod"};
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\uh1h\uh1d_cdf_co.paa","\dayz_epoch_c\skins\uh1h\uh1d_in_cdf_co.paa","ca\air_E\UH1H\data\default_TKA_co.paa"};	
 };
