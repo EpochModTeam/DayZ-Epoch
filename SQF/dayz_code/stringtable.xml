@@ -26216,6 +26216,13 @@
 			<German>Blaues Tarntop mit brauner Tarnhose.</German>
 			<Russian>Одежда с синим камуфляжным верхом и коричневыми камуфляжными брюками.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_ANGELINA">
+			<English>Angelina</English>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ANGELINA_DESC">
+			<English>Winter camo top with grey camo pants.</English>
+			<German>Winter Tarntop mit grauer Tarnhose.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_SAVANNAH">
 			<English>Savannah</English>
 			<Russian>Саванна</Russian>

@@ -101,6 +101,7 @@ class Category_30 {
 	class Skin_SurvivorWpink_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_SurvivorWurban_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_SurvivorWcombat_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_SurvivorWwinter_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_SurvivorWdesert_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_Survivor2_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_Rocker1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};

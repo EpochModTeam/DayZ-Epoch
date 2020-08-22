@@ -138,6 +138,7 @@ militaryclothes[] = {
 	{Loot_MAGAZINE,	1,	Skin_TK_INS_Soldier_EP1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_TK_INS_Warlord_EP1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_SurvivorWcombat_DZ},
+	{Loot_MAGAZINE,	1,	Skin_SurvivorWwinter_DZ},
 	{Loot_MAGAZINE,	1,	Skin_SurvivorWdesert_DZ},
 	{Loot_MAGAZINE,	1,	Skin_GUE_Soldier_MG_DZ},
 	{Loot_MAGAZINE,	1,	Skin_GUE_Soldier_Crew_DZ},
