@@ -1,6 +1,6 @@
 class MH60S;
 class MH60S_DZ : MH60S {
-	displayName = $STR_VEH_NAME_MH60;
+	displayName = "$STR_VEH_NAME_MH60";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
 	crew = "";
@@ -90,11 +90,48 @@ class MH60S_DZE : MH60S_DZ {
 			memoryPointGunnerOptics = "gunnerview_2";
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"MH60S_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};	
+};
+
+class MH60S_DZE1: MH60S_DZE
+{
+	displayName = "$STR_VEH_NAME_MH60+";
+	original = "MH60S_DZE";
+	armor = 80;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"MH60S_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class MH60S_DZE2: MH60S_DZE1
+{
+	displayName = "$STR_VEH_NAME_MH60++";
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 200;
+	transportMaxBackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"MH60S_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class MH60S_DZE3: MH60S_DZE2
+{
+	displayName = "$STR_VEH_NAME_MH60+++";
+	fuelCapacity = 5800;
 };
 
 class UH60M_EP1;
 class UH60M_EP1_DZ: UH60M_EP1 {
-	displayName = $STR_VEH_NAME_UH60;
+	displayName = "$STR_VEH_NAME_UH60";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
 	crew = "";
@@ -180,12 +217,49 @@ class UH60M_EP1_DZE: UH60M_EP1_DZ {
 			memoryPointGunnerOptics = "gunnerview_2";
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"UH60M_EP1_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};	
+};
+
+class UH60M_EP1_DZE1: UH60M_EP1_DZE
+{
+	displayName = "$STR_VEH_NAME_UH60+";
+	original = "UH60M_EP1_DZE";
+	armor = 80;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"UH60M_EP1_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class UH60M_EP1_DZE2: UH60M_EP1_DZE1
+{
+	displayName = "$STR_VEH_NAME_UH60++";
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 200;
+	transportMaxBackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"UH60M_EP1_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class UH60M_EP1_DZE3: UH60M_EP1_DZE2
+{
+	displayName = "$STR_VEH_NAME_UH60+++";
+	fuelCapacity = 5800;
 };
 
 // Unarmed medevac
 class UH60M_MEV_EP1;
 class UH60M_MEV_EP1_DZ : UH60M_MEV_EP1 {
-	displayname = $STR_VEH_NAME_HH60;
+	displayname = "$STR_VEH_NAME_HH60";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2; 
 	crew = ""; 
@@ -202,4 +276,41 @@ class UH60M_MEV_EP1_DZ : UH60M_MEV_EP1 {
 	attendant = 0;
 	radartype = 0;
 	supplyRadius = 2.6;
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"UH60M_MEV_EP1_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};	
+};
+
+class UH60M_MEV_EP1_DZE1: UH60M_MEV_EP1_DZ
+{
+	displayName = "$STR_VEH_NAME_HH60+";
+	original = "UH60M_MEV_EP1_DZ";
+	armor = 80;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"UH60M_MEV_EP1_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class UH60M_MEV_EP1_DZE2: UH60M_MEV_EP1_DZE1
+{
+	displayName = "$STR_VEH_NAME_HH60++";
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 200;
+	transportMaxBackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"UH60M_MEV_EP1_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class UH60M_MEV_EP1_DZE3: UH60M_MEV_EP1_DZE2
+{
+	displayName = "$STR_VEH_NAME_HH60+++";
+	fuelCapacity = 5800;
 };

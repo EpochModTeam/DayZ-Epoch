@@ -12213,26 +12213,102 @@
 			<English>Mi-17</English>
 			<Russian>Ми-17</Russian>
 		</Key>		
+		<Key ID="STR_VEH_NAME_MI17+">
+			<English>Mi-17+</English>
+			<Russian>Ми-17+</Russian>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MI17++">
+			<English>Mi-17++</English>
+			<Russian>Ми-17++</Russian>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MI17+++">
+			<English>Mi-17+++</English>
+			<Russian>Ми-17+++</Russian>
+		</Key>			
 		<Key ID="STR_VEH_NAME_MI17_TK">
 			<English>Mi-17 (TK)</English>
 			<Russian>Ми-17 (TK)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_TK+">
+			<English>Mi-17 (TK)+</English>
+			<Russian>Ми-17 (TK)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_TK++">
+			<English>Mi-17 (TK)++</English>
+			<Russian>Ми-17 (TK)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_TK+++">
+			<English>Mi-17 (TK)+++</English>
+			<Russian>Ми-17 (TK)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_SH">
 			<English>Mi-171Sh</English>
 			<Russian>Ми-171Sh</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_SH+">
+			<English>Mi-171Sh+</English>
+			<Russian>Ми-171Sh+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_SH++">
+			<English>Mi-171Sh++</English>
+			<Russian>Ми-171Sh++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_SH+++">
+			<English>Mi-171Sh+++</English>
+			<Russian>Ми-171Sh+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_CDF">
 			<English>Mi-17 (CDF)</English>
 			<Russian>Ми-17 (CDF)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_CDF+">
+			<English>Mi-17 (CDF)+</English>
+			<Russian>Ми-17 (CDF)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_CDF++">
+			<English>Mi-17 (CDF)++</English>
+			<Russian>Ми-17 (CDF)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_CDF+++">
+			<English>Mi-17 (CDF)+++</English>
+			<Russian>Ми-17 (CDF)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_UN">
 			<English>Mi-17 (UN)</English>
 			<Russian>Ми-17 (UN)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_UN+">
+			<English>Mi-17 (UN)+</English>
+			<Russian>Ми-17 (UN)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_UN++">
+			<English>Mi-17 (UN)++</English>
+			<Russian>Ми-17 (UN)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_UN+++">
+			<English>Mi-17 (UN)+++</English>
+			<Russian>Ми-17 (UN)+++</Russian>
+		</Key>	
 		<Key ID="STR_VEH_NAME_MI17_RUST">
 			<English>Mi-17 (rusty)</English>
 			<German>Mi-17 (rostig)</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_MI17_RUST+">
+			<English>Mi-17 (rusty)+</English>
+			<German>Mi-17 (rostig)+</German>
 		</Key>	
+		<Key ID="STR_VEH_NAME_MI17_RUST++">
+			<English>Mi-17 (rusty)++</English>
+			<German>Mi-17 (rostig)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_RUST++">
+			<English>Mi-17 (rusty)++</English>
+			<German>Mi-17 (rostig)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_RUST+++">
+			<English>Mi-17 (rusty)+++</English>
+			<German>Mi-17 (rostig)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_WINTER">
 			<English>Mi-17 (Winter)</English>
 		</Key>	
@@ -12245,127 +12321,490 @@
 		<Key ID="STR_VEH_NAME_MI17_WINTER+++">
 			<English>Mi-17 (Winter)+++</English>
 		</Key>
-		<Key ID="STR_VEH_NAME_MI17_WINTER++++">
-			<English>Mi-17 (Winter)++++</English>
-		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_CIVIL">
 			<English>Mi-17 (Civilian)</English>
 			<Russian>Ми-17 (Civilian)</Russian>
 			<German>Mi-17 (Zivil)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_CIVIL+">
+			<English>Mi-17 (Civilian)+</English>
+			<Russian>Ми-17 (Civilian)+</Russian>
+			<German>Mi-17 (Zivil)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_CIVIL++">
+			<English>Mi-17 (Civilian)++</English>
+			<Russian>Ми-17 (Civilian)++</Russian>
+			<German>Mi-17 (Zivil)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_CIVIL+++">
+			<English>Mi-17 (Civilian)+++</English>
+			<Russian>Ми-17 (Civilian)+++</Russian>
+			<German>Mi-17 (Zivil)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF">
 			<English>Mi-17 MedEvac (CDF)</English>
 			<Russian>Ми-17 MedEvac (CDF)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF+">
+			<English>Mi-17 MedEvac (CDF)+</English>
+			<Russian>Ми-17 MedEvac (CDF)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF++">
+			<English>Mi-17 MedEvac (CDF)++</English>
+			<Russian>Ми-17 MedEvac (CDF)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_CDF+++">
+			<English>Mi-17 MedEvac (CDF)+++</English>
+			<Russian>Ми-17 MedEvac (CDF)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS">
 			<English>Mi-17 MedEvac (INS)</English>
 			<Russian>Ми-17 MedEvac (INS)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS+">
+			<English>Mi-17 MedEvac (INS)+</English>
+			<Russian>Ми-17 MedEvac (INS)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS++">
+			<English>Mi-17 MedEvac (INS)++</English>
+			<Russian>Ми-17 MedEvac (INS)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_INS+++">
+			<English>Mi-17 MedEvac (INS)+++</English>
+			<Russian>Ми-17 MedEvac (INS)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU">
 			<English>Mi-17 MedEvac (RU)</English>
 			<Russian>Ми-17 MedEvac (RU)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU+">
+			<English>Mi-17 MedEvac (RU)+</English>
+			<Russian>Ми-17 MedEvac (RU)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU++">
+			<English>Mi-17 MedEvac (RU)++</English>
+			<Russian>Ми-17 MedEvac (RU)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_MEDEVAC_RU+++">
+			<English>Mi-17 MedEvac (RU)+++</English>
+			<Russian>Ми-17 MedEvac (RU)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_DESERT">
 			<English>Mi-17 (Desert)</English>
 			<Russian>Ми-17 (Desert)</Russian>
 			<German>Mi-17 (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_DESERT+">
+			<English>Mi-17 (Desert)+</English>
+			<Russian>Ми-17 (Desert)+</Russian>
+			<German>Mi-17 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_DESERT++">
+			<English>Mi-17 (Desert)++</English>
+			<Russian>Ми-17 (Desert)++</Russian>
+			<German>Mi-17 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_DESERT+++">
+			<English>Mi-17 (Desert)+++</English>
+			<Russian>Ми-17 (Desert)+++</Russian>
+			<German>Mi-17 (Wüstentarn)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_GREEN">
 			<English>Mi-17 (Green)</English>
 			<Russian>Ми-17 (Зеленый)</Russian>
 			<German>Mi-17 (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_GREEN+">
+			<English>Mi-17 (Green)+</English>
+			<Russian>Ми-17 (Зеленый)+</Russian>
+			<German>Mi-17 (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_GREEN++">
+			<English>Mi-17 (Green)++</English>
+			<Russian>Ми-17 (Зеленый)++</Russian>
+			<German>Mi-17 (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_GREEN+++">
+			<English>Mi-17 (Green)+++</English>
+			<Russian>Ми-17 (Зеленый)+++</Russian>
+			<German>Mi-17 (Grün)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_BLUE">
 			<English>Mi-17 (Blue)</English>
 			<Russian>Ми-17 (Синий)</Russian>
 			<German>Mi-17 (Blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_BLUE+">
+			<English>Mi-17 (Blue)+</English>
+			<Russian>Ми-17 (Синий)+</Russian>
+			<German>Mi-17 (Blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_BLUE++">
+			<English>Mi-17 (Blue)++</English>
+			<Russian>Ми-17 (Синий)++</Russian>
+			<German>Mi-17 (Blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_BLUE+++">
+			<English>Mi-17 (Blue)+++</English>
+			<Russian>Ми-17 (Синий)+++</Russian>
+			<German>Mi-17 (Blau)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17_BLACK">
 			<English>Mi-17 (Black)</English>
 			<Russian>Ми-17 (черный)</Russian>
 			<German>Mi-17 (Schwarz)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MI17_BLACK+">
+			<English>Mi-17 (Black)+</English>
+			<Russian>Ми-17 (черный)+</Russian>
+			<German>Mi-17 (Schwarz)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_BLACK++">
+			<English>Mi-17 (Black)++</English>
+			<Russian>Ми-17 (черный)++</Russian>
+			<German>Mi-17 (Schwarz)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MI17_BLACK+++">
+			<English>Mi-17 (Black)+++</English>
+			<Russian>Ми-17 (черный)+++</Russian>
+			<German>Mi-17 (Schwarz)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_CH47_GREEN">
 			<English>CH-47F Chinook (Green)</English>
 			<German>CH-47F Chinook (Grün)</German>
 			<Russian>CH-47F Чинук (Зеленый)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_CH47_GREEN+">
+			<English>CH-47F Chinook (Green)+</English>
+			<German>CH-47F Chinook (Grün)+</German>
+			<Russian>CH-47F Чинук (Зеленый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_GREEN++">
+			<English>CH-47F Chinook (Green)++</English>
+			<German>CH-47F Chinook (Grün)++</German>
+			<Russian>CH-47F Чинук (Зеленый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_GREEN+++">
+			<English>CH-47F Chinook (Green)+++</English>
+			<German>CH-47F Chinook (Grün)+++</German>
+			<Russian>CH-47F Чинук (Зеленый)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_CH47_BLACK">
 			<English>CH-47F Chinook (Black)</English>
 			<German>CH-47F Chinook (Schwarz)</German>
 			<Russian>CH-47F Чинук (черный)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_CH47_BLACK+">
+			<English>CH-47F Chinook (Black)+</English>
+			<German>CH-47F Chinook (Schwarz)+</German>
+			<Russian>CH-47F Чинук (черный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_BLACK++">
+			<English>CH-47F Chinook (Black)++</English>
+			<German>CH-47F Chinook (Schwarz)++</German>
+			<Russian>CH-47F Чинук (черный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_BLACK+++">
+			<English>CH-47F Chinook (Black)+++</English>
+			<German>CH-47F Chinook (Schwarz)+++</German>
+			<Russian>CH-47F Чинук (черный)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_CH47_DESERT">
 			<English>CH-47F Chinook (Desert)</English>
 			<German>CH-47F Chinook (Wüstentarn)</German>
 			<Russian>CH-47F Чинук (Пустынный)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_CH47_DESERT+">
+			<English>CH-47F Chinook (Desert)+</English>
+			<German>CH-47F Chinook (Wüstentarn)+</German>
+			<Russian>CH-47F Чинук (Пустынный)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_DESERT++">
+			<English>CH-47F Chinook (Desert)++</English>
+			<German>CH-47F Chinook (Wüstentarn)++</German>
+			<Russian>CH-47F Чинук (Пустынный)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_DESERT+++">
+			<English>CH-47F Chinook (Desert)+++</English>
+			<German>CH-47F Chinook (Wüstentarn)+++</German>
+			<Russian>CH-47F Чинук (Пустынный)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_CH47_GREY">
 			<English>CH-47F Chinook (Grey)</English>
 			<German>CH-47F Chinook (Grau)</German>
 			<Russian>CH-47F Чинук (серый)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_CH47_GREY+">
+			<English>CH-47F Chinook (Grey)+</English>
+			<German>CH-47F Chinook (Grau)+</German>
+			<Russian>CH-47F Чинук (серый)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_GREY++">
+			<English>CH-47F Chinook (Grey)++</English>
+			<German>CH-47F Chinook (Grau)++</German>
+			<Russian>CH-47F Чинук (серый)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH47_GREY+++">
+			<English>CH-47F Chinook (Grey)+++</English>
+			<German>CH-47F Chinook (Grau)+++</German>
+			<Russian>CH-47F Чинук (серый)+++</Russian>
+		</Key>		
 		<Key ID="STR_VEH_NAME_AW101">
 			<English>AW101 Merlin</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_AW101+">
+			<English>AW101 Merlin+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_AW101++">
+			<English>AW101 Merlin++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_AW101+++">
+			<English>AW101 Merlin+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1Y">
 			<English>UH-1Y Venom</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y+">
+			<English>UH-1Y Venom+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y++">
+			<English>UH-1Y Venom++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y+++">
+			<English>UH-1Y Venom+++</English>
+		</Key>		
+		<Key ID="STR_VEH_NAME_UH1Y_M240">
+			<English>UH-1Y Venom (M240)</English>
+		</Key>	
+		<Key ID="STR_VEH_NAME_UH1Y_M240+">
+			<English>UH-1Y Venom (M240)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y_M240++">
+			<English>UH-1Y Venom (M240)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1Y_M240+++">
+			<English>UH-1Y Venom (M240)+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_KA60">
 			<English>Kamow Ka-60</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_KA60+">
+			<English>Kamow Ka-60+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60++">
+			<English>Kamow Ka-60++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_KA60+++">
+			<English>Kamow Ka-60+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_AW159">
 			<English>AW159 Wildcat</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_AW159+">
+			<English>AW159 Wildcat+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_AW159++">
+			<English>AW159 Wildcat++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_AW159+++">
+			<English>AW159 Wildcat+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_CH53">
 			<English>CH53E Super Stallion</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_CH53+">
+			<English>CH53E Super Stallion+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH53++">
+			<English>CH53E Super Stallion++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CH53+++">
+			<English>CH53E Super Stallion+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_GREEN">
 			<English>UH-1H (Green)</English>
 			<German>UH-1H (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_GREEN+">
+			<English>UH-1H (Green)+</English>
+			<German>UH-1H (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_GREEN++">
+			<English>UH-1H (Green)++</English>
+			<German>UH-1H (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_GREEN+++">
+			<English>UH-1H (Green)+++</English>
+			<German>UH-1H (Grün)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_WOODLAND">
 			<English>UH-1H (Woodland)</English>
 			<Russian>UH-1H (Лесной камуфляж)</Russian>
 			<German>UH-1H (Waldtarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_WOODLAND+">
+			<English>UH-1H (Woodland)+</English>
+			<Russian>UH-1H (Лесной камуфляж)+</Russian>
+			<German>UH-1H (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_WOODLAND++">
+			<English>UH-1H (Woodland)++</English>
+			<Russian>UH-1H (Лесной камуфляж)++</Russian>
+			<German>UH-1H (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_WOODLAND+++">
+			<English>UH-1H (Woodland)+++</English>
+			<Russian>UH-1H (Лесной камуфляж)+++</Russian>
+			<German>UH-1H (Waldtarn)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_DESERT">
 			<English>UH-1H (Desert)</English>
 			<Russian>UH-1H (Пустынный)</Russian>
 			<German>UH-1H (Wüstentarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_DESERT+">
+			<English>UH-1H (Desert)+</English>
+			<Russian>UH-1H (Пустынный)+</Russian>
+			<German>UH-1H (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_DESERT++">
+			<English>UH-1H (Desert)++</English>
+			<Russian>UH-1H (Пустынный)++</Russian>
+			<German>UH-1H (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_DESERT+++">
+			<English>UH-1H (Desert)+++</English>
+			<Russian>UH-1H (Пустынный)+++</Russian>
+			<German>UH-1H (Wüstentarn)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_CDF">
 			<English>UH-1H (CDF)</English>
 			<German>UH-1H (CDF)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_CDF+">
+			<English>UH-1H (CDF)+</English>
+			<German>UH-1H (CDF)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_CDF++">
+			<English>UH-1H (CDF)++</English>
+			<German>UH-1H (CDF)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_CDF+++">
+			<English>UH-1H (CDF)+++</English>
+			<German>UH-1H (CDF)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT">
 			<English>UH-1H (Desert, light)</English>
 			<German>UH-1H (Wüstentarn, hell)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT+">
+			<English>UH-1H (Desert, light)+</English>
+			<German>UH-1H (Wüstentarn, hell)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT++">
+			<English>UH-1H (Desert, light)++</English>
+			<German>UH-1H (Wüstentarn, hell)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT+++">
+			<English>UH-1H (Desert, light)+++</English>
+			<German>UH-1H (Wüstentarn, hell)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_BLACK">
 			<English>UH-1H (Black)</English>
 			<German>UH-1H (Schwarz)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_BLACK+">
+			<English>UH-1H (Black)+</English>
+			<German>UH-1H (Schwarz)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_BLACK++">
+			<English>UH-1H (Black)++</English>
+			<German>UH-1H (Schwarz)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_BLACK+++">
+			<English>UH-1H (Black)+++</English>
+			<German>UH-1H (Schwarz)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_GREY">
 			<English>UH-1H (Grey)</English>
 			<German>UH-1H (Grau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_GREY+">
+			<English>UH-1H (Grey)+</English>
+			<German>UH-1H (Grau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_GREY++">
+			<English>UH-1H (Grey)++</English>
+			<German>UH-1H (Grau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_GREY+++">
+			<English>UH-1H (Grey)+++</English>
+			<German>UH-1H (Grau)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_SAR">
 			<English>UH-1H (SAR)</English>
 			<German>UH-1H (SAR)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_SAR+">
+			<English>UH-1H (SAR)+</English>
+			<German>UH-1H (SAR)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_SAR++">
+			<English>UH-1H (SAR)++</English>
+			<German>UH-1H (SAR)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_SAR+++">
+			<English>UH-1H (SAR)+++</English>
+			<German>UH-1H (SAR)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH1H_WINTER">
 			<English>UH-1H (Winter)</English>
 		</Key>	
+		<Key ID="STR_VEH_NAME_UH1H_WINTER+">
+			<English>UH-1H (Winter)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_WINTER++">
+			<English>UH-1H (Winter)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH1H_WINTER+++">
+			<English>UH-1H (Winter)+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MH60">
 			<English>MH-60S</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_MH60+">
+			<English>MH-60S+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MH60++">
+			<English>MH-60S++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MH60+++">
+			<English>MH-60S+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UH60">
 			<English>UH-60M</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_UH60+">
+			<English>UH-60M+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH60++">
+			<English>UH-60M++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UH60+++">
+			<English>UH-60M+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HH60">
 			<English>HH-60M MedEvac</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_HH60+">
+			<English>HH-60M MedEvac+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HH60++">
+			<English>HH-60M MedEvac++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_HH60+++">
+			<English>HH-60M MedEvac+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MV22">
 			<English>MV-22</English>
 		</Key>
@@ -12377,61 +12816,241 @@
 			<Russian>Bell 47 (Синий\Белый)</Russian>
 			<German>Bell 47 (Blau\Weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV+">
+			<English>Bell 47 (Blue\White)+</English>
+			<Russian>Bell 47 (Синий\Белый)+</Russian>
+			<German>Bell 47 (Blau\Weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV++">
+			<English>Bell 47 (Blue\White)++</English>
+			<Russian>Bell 47 (Синий\Белый)++</Russian>
+			<German>Bell 47 (Blau\Weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV+++">
+			<English>Bell 47 (Blue\White)+++</English>
+			<Russian>Bell 47 (Синий\Белый)+++</Russian>
+			<German>Bell 47 (Blau\Weiß)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_CIV_WHITE">
 			<English>Bell 47 (White)</English>
 			<Russian>Bell 47 (Белый)</Russian>
 			<German>Bell 47 (Weiß)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_WHITE+">
+			<English>Bell 47 (White)+</English>
+			<Russian>Bell 47 (Белый)+</Russian>
+			<German>Bell 47 (Weiß)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_WHITE++">
+			<English>Bell 47 (White)++</English>
+			<Russian>Bell 47 (Белый)++</Russian>
+			<German>Bell 47 (Weiß)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_WHITE+++">
+			<English>Bell 47 (White)+++</English>
+			<Russian>Bell 47 (Белый)+++</Russian>
+			<German>Bell 47 (Weiß)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLUE">
 			<English>Bell 47 (Blue)</English>
 			<Russian>Bell 47 (Синий)</Russian>
 			<German>Bell 47 (Blau)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLUE+">
+			<English>Bell 47 (Blue)+</English>
+			<Russian>Bell 47 (Синий)+</Russian>
+			<German>Bell 47 (Blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLUE++">
+			<English>Bell 47 (Blue)++</English>
+			<Russian>Bell 47 (Синий)++</Russian>
+			<German>Bell 47 (Blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLUE+++">
+			<English>Bell 47 (Blue)+++</English>
+			<Russian>Bell 47 (Синий)+++</Russian>
+			<German>Bell 47 (Blau)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLACK">
 			<English>Bell 47 (Black)</English>
 			<Russian>Bell 47 (Черный)</Russian>
 			<German>Bell 47 (Schwarz)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLACK+">
+			<English>Bell 47 (Black)+</English>
+			<Russian>Bell 47 (Черный)+</Russian>
+			<German>Bell 47 (Schwarz)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLACK++">
+			<English>Bell 47 (Black)++</English>
+			<Russian>Bell 47 (Черный)++</Russian>
+			<German>Bell 47 (Schwarz)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_BLACK+++">
+			<English>Bell 47 (Black)+++</English>
+			<Russian>Bell 47 (Черный)+++</Russian>
+			<German>Bell 47 (Schwarz)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_CIV_YELLOW">
 			<English>Bell 47 (Yellow)</English>
 			<Russian>Bell 47 (Желтый)</Russian>
 			<German>Bell 47 (Gelb)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_YELLOW+">
+			<English>Bell 47 (Yellow)+</English>
+			<Russian>Bell 47 (Желтый)+</Russian>
+			<German>Bell 47 (Gelb)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_YELLOW++">
+			<English>Bell 47 (Yellow)++</English>
+			<Russian>Bell 47 (Желтый)++</Russian>
+			<German>Bell 47 (Gelb)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_CIV_YELLOW+++">
+			<English>Bell 47 (Yellow)+++</English>
+			<Russian>Bell 47 (Желтый)+++</Russian>
+			<German>Bell 47 (Gelb)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC">
 			<English>Bell 47 MedEvac (Olive-green)</English>
 			<Russian>Bell 47 MedEvac (Оливковый)</Russian>
 			<German>Bell 47 SanHS. (Olivgrün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC+">
+			<English>Bell 47 MedEvac (Olive-green)+</English>
+			<Russian>Bell 47 MedEvac (Оливковый)+</Russian>
+			<German>Bell 47 SanHS. (Olivgrün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC++">
+			<English>Bell 47 MedEvac (Olive-green)++</English>
+			<Russian>Bell 47 MedEvac (Оливковый)++</Russian>
+			<German>Bell 47 SanHS. (Olivgrün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC+++">
+			<English>Bell 47 MedEvac (Olive-green)+++</English>
+			<Russian>Bell 47 MedEvac (Оливковый)+++</Russian>
+			<German>Bell 47 SanHS. (Olivgrün)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN">
 			<English>Bell 47 MedEvac (Green)</English>
 			<Russian>Bell 47 MedEvac (Зеленый)</Russian>
 			<German>Bell 47 SanHS. (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN+">
+			<English>Bell 47 MedEvac (Green)+</English>
+			<Russian>Bell 47 MedEvac (Зеленый)+</Russian>
+			<German>Bell 47 SanHS. (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN++">
+			<English>Bell 47 MedEvac (Green)++</English>
+			<Russian>Bell 47 MedEvac (Зеленый)++</Russian>
+			<German>Bell 47 SanHS. (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_GREEN+++">
+			<English>Bell 47 MedEvac (Green)+++</English>
+			<Russian>Bell 47 MedEvac (Зеленый)+++</Russian>
+			<German>Bell 47 SanHS. (Grün)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE">
 			<English>Bell 47 MedEvac (Orange)</English>
 			<Russian>Bell 47 MedEvac (Оранжевый)</Russian>
 			<German>Bell 47 SanHS. (Orange)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE+">
+			<English>Bell 47 MedEvac (Orange)+</English>
+			<Russian>Bell 47 MedEvac (Оранжевый)+</Russian>
+			<German>Bell 47 SanHS. (Orange)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE++">
+			<English>Bell 47 MedEvac (Orange)++</English>
+			<Russian>Bell 47 MedEvac (Оранжевый)++</Russian>
+			<German>Bell 47 SanHS. (Orange)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_MEDEVAC_ORANGE+++">
+			<English>Bell 47 MedEvac (Orange)+++</English>
+			<Russian>Bell 47 MedEvac (Оранжевый)+++</Russian>
+			<German>Bell 47 SanHS. (Orange)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP">
 			<English>Bell 47 Gunship (Olive-green)</English>
 			<Russian>Bell 47 Gunship (Оливковый)</Russian>
 			<German>Bell 47 Gunship (Olivgrün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP+">
+			<English>Bell 47 Gunship (Olive-green)+</English>
+			<Russian>Bell 47 Gunship (Оливковый)+</Russian>
+			<German>Bell 47 Gunship (Olivgrün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP++">
+			<English>Bell 47 Gunship (Olive-green)++</English>
+			<Russian>Bell 47 Gunship (Оливковый)++</Russian>
+			<German>Bell 47 Gunship (Olivgrün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP+++">
+			<English>Bell 47 Gunship (Olive-green)+++</English>
+			<Russian>Bell 47 Gunship (Оливковый)+++</Russian>
+			<German>Bell 47 Gunship (Olivgrün)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP_GREEN">
 			<English>Bell 47 Gunship (Green)</English>
 			<Russian>Bell 47 Gunship (Зеленый)</Russian>
 			<German>Bell 47 Gunship (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP_GREEN+">
+			<English>Bell 47 Gunship (Green)+</English>
+			<Russian>Bell 47 Gunship (Зеленый)+</Russian>
+			<German>Bell 47 Gunship (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP_GREEN++">
+			<English>Bell 47 Gunship (Green)++</English>
+			<Russian>Bell 47 Gunship (Зеленый)++</Russian>
+			<German>Bell 47 Gunship (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_GUNSHIP_GREEN+++">
+			<English>Bell 47 Gunship (Green)+++</English>
+			<Russian>Bell 47 Gunship (Зеленый)+++</Russian>
+			<German>Bell 47 Gunship (Grün)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT">
 			<English>Bell 47 Transport (Olive-green)</English>
 			<Russian>Bell 47 Transport (Оливковый)</Russian>
 			<German>Bell 47 Transport (Olivgrün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT+">
+			<English>Bell 47 Transport (Olive-green)+</English>
+			<Russian>Bell 47 Transport (Оливковый)+</Russian>
+			<German>Bell 47 Transport (Olivgrün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT++">
+			<English>Bell 47 Transport (Olive-green)++</English>
+			<Russian>Bell 47 Transport (Оливковый)++</Russian>
+			<German>Bell 47 Transport (Olivgrün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT+++">
+			<English>Bell 47 Transport (Olive-green)+++</English>
+			<Russian>Bell 47 Transport (Оливковый)+++</Russian>
+			<German>Bell 47 Transport (Olivgrün)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT_GREEN">
 			<English>Bell 47 Transport (Green)</English>
 			<Russian>Bell 47 Transport (Зеленый)</Russian>
 			<German>Bell 47 Transport (Grün)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT_GREEN+">
+			<English>Bell 47 Transport (Green)+</English>
+			<Russian>Bell 47 Transport (Зеленый)+</Russian>
+			<German>Bell 47 Transport (Grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT_GREEN++">
+			<English>Bell 47 Transport (Green)++</English>
+			<Russian>Bell 47 Transport (Зеленый)++</Russian>
+			<German>Bell 47 Transport (Grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_BELLH13_TRANSPORT_GREEN+++">
+			<English>Bell 47 Transport (Green)+++</English>
+			<Russian>Bell 47 Transport (Зеленый)+++</Russian>
+			<German>Bell 47 Transport (Grün)+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI8_WRECK">
 			<English>Mi-8 Wreck</English>
 			<French>Epave de Mi-8</French>

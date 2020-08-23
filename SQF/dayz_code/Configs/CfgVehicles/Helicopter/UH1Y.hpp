@@ -14,7 +14,7 @@ class UH1_Base: Helicopter {
 };
 class UH1Y_DZ: UH1_Base {
 	scope = 2;
-	displayname = $STR_VEH_NAME_UH1Y;
+	displayname = "$STR_VEH_NAME_UH1Y";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
@@ -190,4 +190,114 @@ class UH1Y_DZE: UH1Y_DZ {
 			};
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"UH1Y_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class UH1Y_DZE1: UH1Y_DZE
+{
+	displayName = "$STR_VEH_NAME_UH1Y+";
+	original = "UH1Y_DZE";
+	armor = 70;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"UH1Y_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class UH1Y_DZE2: UH1Y_DZE1
+{
+	displayName = "$STR_VEH_NAME_UH1Y++";
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 60;
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"UH1Y_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class UH1Y_DZE3: UH1Y_DZE2
+{
+	displayName = "$STR_VEH_NAME_UH1Y+++";
+	fuelCapacity = 3000;
+};
+
+class UH1Y_M240_DZ: UH1Y_DZ {
+	displayname = "$STR_VEH_NAME_UH1Y_M240";
+	
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			weapons[] = {"M240BC_veh"};
+			magazines[] = {"100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240"};
+		};
+		class RightDoorGun: RightDoorGun
+		{
+			weapons[] = {"M240BC_veh"};
+			magazines[] = {"100Rnd_762x51_M240","100Rnd_762x51_M240","100Rnd_762x51_M240"};
+		};
+	};
+};
+class UH1Y_M240_DZE: UH1Y_DZE {
+	displayname = "$STR_VEH_NAME_UH1Y_M240";
+	
+	class Turrets : Turrets 
+	{
+		class MainTurret: MainTurret
+		{
+			weapons[] = {"M240BC_veh"};
+			magazines[] = {};
+		};
+		class RightDoorGun: RightDoorGun
+		{
+			weapons[] = {"M240BC_veh"};
+			magazines[] = {};
+		};
+	
+	};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"UH1Y_M240_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class UH1Y_M240_DZE1: UH1Y_M240_DZE
+{
+	displayName = "$STR_VEH_NAME_UH1Y_M240+";
+	original = "UH1Y_M240_DZE";
+	armor = 70;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"UH1Y_M240_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class UH1Y_M240_DZE2: UH1Y_M240_DZE1
+{
+	displayName = "$STR_VEH_NAME_UH1Y_M240++";
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 60;
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"UH1Y_M240_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class UH1Y_M240_DZE3: UH1Y_M240_DZE2
+{
+	displayName = "$STR_VEH_NAME_UH1Y_M240+++";
+	fuelCapacity = 3000;
 };
