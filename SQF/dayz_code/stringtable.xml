@@ -12154,16 +12154,61 @@
 			<Russian>AH6X «Литтл Бёрд»</Russian>
 			<German>AH6X "Little Bird"</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_AH6X+">
+			<English>AH6X Little Bird+</English>
+			<Russian>AH6X «Литтл Бёрд»+</Russian>
+			<German>AH6X "Little Bird"+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH6X++">
+			<English>AH6X Little Bird++</English>
+			<Russian>AH6X «Литтл Бёрд»++</Russian>
+			<German>AH6X "Little Bird"++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH6X+++">
+			<English>AH6X Little Bird+++</English>
+			<Russian>AH6X «Литтл Бёрд»+++</Russian>
+			<German>AH6X "Little Bird"+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MH6J">
 			<English>MH-6J Little Bird</English>
 			<Russian>MH-6J «Литтл Бёрд»</Russian>
 			<German>MH-6J "Little Bird"</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MH6J+">
+			<English>MH-6J Little Bird+</English>
+			<Russian>MH-6J «Литтл Бёрд»+</Russian>
+			<German>MH-6J "Little Bird"+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MH6J++">
+			<English>MH-6J Little Bird++</English>
+			<Russian>MH-6J «Литтл Бёрд»++</Russian>
+			<German>MH-6J "Little Bird"++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MH6J+++">
+			<English>MH-6J Little Bird+++</English>
+			<Russian>MH-6J «Литтл Бёрд»+++</Russian>
+			<German>MH-6J "Little Bird"+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_AH6J">
 			<English>AH6J Little Bird</English>
 			<Russian>AH6J «Литтл Бёрд»</Russian>
 			<German>AH6J "Little Bird"</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_AH6J+">
+			<English>AH6J Little Bird+</English>
+			<Russian>AH6J «Литтл Бёрд»+</Russian>
+			<German>AH6J "Little Bird"+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH6J++">
+			<English>AH6J Little Bird++</English>
+			<Russian>AH6J «Литтл Бёрд»++</Russian>
+			<German>AH6J "Little Bird"++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_AH6J+++">
+			<English>AH6J Little Bird+++</English>
+			<Russian>AH6J «Литтл Бёрд»+++</Russian>
+			<German>AH6J "Little Bird"+++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17">
 			<English>Mi-17</English>
 			<Russian>Ми-17</Russian>
@@ -22450,28 +22495,28 @@
 			<Czech>Terénní výkonnost</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_DESC">
-			<English>Offroad performace manual to increase the offroad speed of a vehicle.</English>
-			<German>Offroad-Performance Handbuch, um die Geschwindigkeit eines Fahrzeug abseits der Straßen zu erhöhen.</German>
-			<Russian>Руководство по улучшению внедорожной эффективности.</Russian>
-			<Dutch>Handleiding over offroad prestaties.</Dutch>
-			<French>Manuel sur les performances tout-terrain.</French>
-			<Czech>Manuál terénní výkonnosti.</Czech>
+			<English>Offroad performace manual to increase the offroad speed of a vehicle.&lt;br/&gt;Upgrade: 1/4</English>
+			<German>Offroad-Performance Handbuch, um die Geschwindigkeit eines Fahrzeugs abseits der Straßen zu erhöhen.&lt;br/&gt;Upgrade: 1/4</German>
+			<Russian>Руководство по улучшению внедорожной эффективности.&lt;br/&gt;Upgrade: 1/4</Russian>
+			<Dutch>Handleiding over offroad prestaties.&lt;br/&gt;Upgrade: 1/4</Dutch>
+			<French>Manuel sur les performances tout-terrain.&lt;br/&gt;Upgrade: 1/4</French>
+			<Czech>Manuál terénní výkonnosti.&lt;br/&gt;Upgrade: 1/4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE">
 			<English>Vehicle Armor</English>
 			<German>Fahrzeugpanzerung</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_DESC">
-			<English>Manual to install or upgrade the armor of the vehicle.</English>
-			<German>Handbuch zum Installieren oder Upgraden der Panzerung eines Fahrzeugs.</German>
+			<English>Manual to install and upgrade the armor of the vehicle.&lt;br/&gt;Upgrade: 2/4</English>
+			<German>Handbuch zum Installieren und Upgraden der Panzerung eines Fahrzeugs.&lt;br/&gt;Upgrade: 2/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK">
 			<English>Cargo Space</English>
 			<German>Laderaum</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_DESC">
-			<English>Manual to upgrade the cargo space of a vehicle.</English>
-			<German>Handbuch zum Upgraden des Laderaums eines Fahrzeugs.</German>
+			<English>Manual to upgrade the cargo space of a vehicle.&lt;br/&gt;Upgrade: 3/4</English>
+			<German>Handbuch zum Upgraden des Laderaums eines Fahrzeugs.&lt;br/&gt;Upgrade: 3/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK">
 			<English>Fuel Tank</English>
@@ -22482,12 +22527,12 @@
 			<Czech>Palivová nádrž</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_DESC">
-			<English>Install guide for a bigger fuel tank.</English>
-			<German>Installationsanleitung für einen größeren Benzintank</German>
-			<Russian>Руководство по установке топливного бака.</Russian>
-			<Dutch>Installatiehandleiding voor de benzinetank.</Dutch>
-			<French>Guide d'installation du réservoir.</French>
-			<Czech>Návod na instalaci Palivové nádrže.</Czech>
+			<English>Install guide for a bigger fuel tank.&lt;br/&gt;Upgrade: 4/4</English>
+			<German>Installationsanleitung für einen größeren Benzintank.&lt;br/&gt;Upgrade: 4/4</German>
+			<Russian>Руководство по установке топливного бака.&lt;br/&gt;Upgrade: 4/4</Russian>
+			<Dutch>Installatiehandleiding voor de benzinetank.&lt;br/&gt;Upgrade: 4/4</Dutch>
+			<French>Guide d'installation du réservoir.&lt;br/&gt;Upgrade: 4/4</French>
+			<Czech>Návod na instalaci Palivové nádrže.&lt;br/&gt;Upgrade: 4/4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM">
 			<English>Weapon Upgrade</English>
@@ -22496,82 +22541,106 @@
 			<Czech>Vylepšení zbraně na vozidle</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_DESC">
-			<English>Installation instructions for the vehicle armament.</English>
-			<German>Installationsanleitung für die Fahrzeugbewaffnung.</German>
-			<Russian>Руководство по установке оружия.</Russian>
-			<Czech>Návod na instalaci zbraně na vozidlo.</Czech>
+			<English>Installation instructions for the vehicle armament.&lt;br/&gt;Additional Upgrade</English>
+			<German>Installationsanleitung für die Fahrzeugbewaffnung.&lt;br/&gt;Zusatz-Upgrade</German>
+			<Russian>Руководство по установке оружия.&lt;br/&gt;Additional Upgrade</Russian>
+			<Czech>Návod na instalaci zbraně na vozidlo.&lt;br/&gt;Additional Upgrade</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TRUCK">
 			<English>Truck Offroad Performance</English>
 			<German>LKW-Offroad Performance</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TRUCK_DESC">
-			<English>Offroad performace manual to increase the offroad speed of trucks.</English>
-			<German>Offroad-Performance Handbuch, um die Geschwindigkeit von LKWs abseits der Straßen zu erhöhen.</German>
+			<English>Offroad performace manual to increase the offroad speed of trucks.&lt;br/&gt;Upgrade: 1/4</English>
+			<German>Offroad-Performance Handbuch, um die Geschwindigkeit von LKWs abseits der Straßen zu erhöhen.&lt;br/&gt;Upgrade: 1/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TRUCK">
 			<English>Truck Armor</English>
 			<German>LKW-Panzerung</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TRUCK_DESC">
-			<English>Manual to install or upgrade the armor of trucks.</English>
-			<German>Handbuch zum Installieren oder Upgraden der Panzerung von LKWs.</German>
+			<English>Manual to install and upgrade the armor of trucks.&lt;br/&gt;Upgrade: 2/4</English>
+			<German>Handbuch zum Installieren und Upgraden der Panzerung von LKWs.&lt;br/&gt;Upgrade: 2/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TRUCK">
 			<English>Truck Cargo Space</English>
 			<German>LKW-Laderaum</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TRUCK_DESC">
-			<English>Manual to upgrade the cargo space of a truck.</English>
-			<German>Handbuch zum Upgraden des Laderaums eines LKWs.</German>
+			<English>Manual to upgrade the cargo space of a truck.&lt;br/&gt;Upgrade: 3/4</English>
+			<German>Handbuch zum Upgraden des Laderaums eines LKWs.&lt;br/&gt;Upgrade: 3/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK">
 			<English>Truck Fuel Tank</English>
 			<German>LKW-Benzintank</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK_DESC">
-			<English>Install guide for bigger truck fuel tanks.</English>
-			<German>Installationsanleitung für einen größeren Benzintank bei LKWs.</German>
+			<English>Install guide for bigger truck fuel tanks.&lt;br/&gt;Upgrade: 4/4</English>
+			<German>Installationsanleitung für einen größeren Benzintank bei LKWs.&lt;br/&gt;Upgrade: 4/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_TRUCK">
 			<English>Truck Weapon Upgrade</English>
 			<German>LKW-Bewaffnungs-Upgrade</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_TRUCK_DESC">
-			<English>Installation instructions for the truck armament.</English>
-			<German>Installationsanleitung für die LKW-Bewaffnung.</German>
+			<English>Installation instructions for the truck armament.&lt;br/&gt;Additional Upgrade</English>
+			<German>Installationsanleitung für die LKW-Bewaffnung.&lt;br/&gt;Zusatz-Upgrade</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TANK">
 			<English>Tank Performance</English>
 			<German>Panzer-Performance</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TANK_DESC">
-			<English>Performace manual to increase the speed of tanks.</English>
-			<German>Performance Handbuch, um die Geschwindigkeit von Panzern zu erhöhen.</German>
+			<English>Performace manual to increase the speed of tanks.&lt;br/&gt;Upgrade: 1/4</English>
+			<German>Performance Handbuch, um die Geschwindigkeit von Panzern zu erhöhen.&lt;br/&gt;Upgrade: 1/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TANK">
 			<English>Tank Armor</English>
 			<German>Panzer-Panzerung</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TANK_DESC">
-			<English>Manual to install or upgrade the armor of tanks.</English>
-			<German>Handbuch zum Installieren oder Upgraden der Panzerung von Panzern.</German>
+			<English>Manual to install and upgrade the armor of tanks.&lt;br/&gt;Upgrade: 2/4</English>
+			<German>Handbuch zum Installieren und Upgraden der Panzerung von Panzern.&lt;br/&gt;Upgrade: 2/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TANK">
 			<English>Tank Cargo Space</English>
 			<German>Panzer-Laderaum</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TANK_DESC">
-			<English>Manual to upgrade the cargo space of a tank.</English>
-			<German>Handbuch zum Upgraden des Laderaums eines Panzers.</German>
+			<English>Manual to upgrade the cargo space of a tank.&lt;br/&gt;Upgrade: 3/4</English>
+			<German>Handbuch zum Upgraden des Laderaums eines Panzers.&lt;br/&gt;Upgrade: 3/4</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TANK">
 			<English>Tank Fuel Tank</English>
 			<German>Panzer-Benzintank</German>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TANK_DESC">
-			<English>Install guide for bigger tank fuel tanks.</English>
-			<German>Installationsanleitung für einen größeren Benzintank bei Panzern.</German>
+			<English>Install guide for bigger tank fuel tanks.&lt;br/&gt;Upgrade: 4/4</English>
+			<German>Installationsanleitung für einen größeren Benzintank bei Panzern.&lt;br/&gt;Upgrade: 4/4</German>
+		</Key>	
+		<Key ID="STR_EPOCH_VEHUP_AVE_HELI">
+			<English>Helicopter Armor</English>
+			<German>Helikopter-Panzerung</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_AVE_HELI_DESC">
+			<English>Manual to install and upgrade the armor of helicopters.&lt;br/&gt;Upgrade: 1/3</English>
+			<German>Handbuch zum Installieren und Upgraden der Panzerung von Helikoptern.&lt;br/&gt;Upgrade: 1/3</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_LRK_HELI">
+			<English>Helicopter Cargo Space</English>
+			<German>Helikopter-Laderaum</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_LRK_HELI_DESC">
+			<English>Manual to upgrade the cargo space of a helicopter.&lt;br/&gt;Upgrade: 2/3</English>
+			<German>Handbuch zum Upgraden des Laderaums eines Helikopters.&lt;br/&gt;Upgrade: 2/3</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_TNK_HELI">
+			<English>Helicopter Fuel Tank</English>
+			<German>Helikopter-Tank</German>
+		</Key>
+		<Key ID="STR_EPOCH_VEHUP_TNK_HELI_DESC">
+			<English>Install guide for bigger helicopter fuel tanks.&lt;br/&gt;Upgrade: 3/3</English>
+			<German>Installationsanleitung für einen größeren Benzintank bei Helikoptern.&lt;br/&gt;Upgrade: 3/3</German>
 		</Key>		
 		<Key ID="STR_EPOCH_VEHUP_IN_PROGRESS">
 			<English>Vehicle Upgrade in progress, please wait...</English>
