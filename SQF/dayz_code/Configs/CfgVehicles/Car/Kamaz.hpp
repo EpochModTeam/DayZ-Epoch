@@ -112,7 +112,6 @@ class KamazRefuel_DZ: KamazRefuel {
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
-	hiddenSelections[] = {};
 	transportMaxWeapons = 50;
 	transportMaxMagazines = 200;
 	transportmaxbackpacks = 8;	
@@ -274,5 +273,239 @@ class KamazReammo_DZE3: KamazReammo_DZE2 {
 
 class KamazReammo_DZE4: KamazReammo_DZE3 {
 	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS++++";
+	fuelCapacity = 615;	
+};
+
+class KamazOpen_Winter_DZE : KamazOpen_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\kamaz\kamaz_kab_winter_co.paa","\dayz_epoch_c\skins\kamaz\kamaz_kuz_winter_co.paa"};
+
+	class Upgrades {
+		ItemTruckORP[] = {"KamazOpen_Winter_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class KamazOpen_Winter_DZE1: KamazOpen_Winter_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_WINTER+";
+	original = "KamazOpen_Winter_DZE";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"KamazOpen_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class KamazOpen_Winter_DZE2: KamazOpen_Winter_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WINTER++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"KamazOpen_Winter_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class KamazOpen_Winter_DZE3: KamazOpen_Winter_DZE2 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WINTER+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"KamazOpen_Winter_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class KamazOpen_Winter_DZE4: KamazOpen_Winter_DZE3 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WINTER++++";
+	fuelCapacity = 615;	
+};
+
+class Kamaz_Winter_DZE: Kamaz_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\kamaz\kamaz_kab_winter_co.paa","\dayz_epoch_c\skins\kamaz\kamaz_kuz_winter_co.paa"};
+	
+	class Upgrades {		
+		ItemTruckORP[] = {"Kamaz_Winter_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class Kamaz_Winter_DZE1: Kamaz_Winter_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT_WINTER+";
+	original = "Kamaz_Winter_DZE";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"Kamaz_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class Kamaz_Winter_DZE2: Kamaz_Winter_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT_WINTER++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	class Upgrades {
+		ItemTruckLRK[] = {"Kamaz_Winter_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class Kamaz_Winter_DZE3: Kamaz_Winter_DZE2 {
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT_WINTER+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"Kamaz_Winter_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class Kamaz_Winter_DZE4: Kamaz_Winter_DZE3 {
+	displayName = "$STR_VEH_NAME_KAMAZ_COVERT_WINTER++++";
+	fuelCapacity = 615;
+};
+
+class KamazRefuel_Winter_DZ: KamazRefuel_DZ {
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\kamaz\kamaz_kab_winter_co.paa","\dayz_epoch_c\skins\kamaz\kamaz_fuel_winter_co.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"KamazRefuel_Winter_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class KamazRefuel_Winter_DZE1: KamazRefuel_Winter_DZ {
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL_WINTER+";
+	original = "KamazRefuel_Winter_DZ";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"KamazRefuel_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class KamazRefuel_Winter_DZE2: KamazRefuel_Winter_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL_WINTER++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"KamazRefuel_Winter_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class KamazRefuel_Winter_DZE3: KamazRefuel_Winter_DZE2 {
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL_WINTER+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"KamazRefuel_Winter_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
+	};
+};
+
+class KamazRefuel_Winter_DZE4: KamazRefuel_Winter_DZE3 {
+	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL_WINTER++++";
+	fuelCapacity = 20000;
+};
+
+class KamazRepair_Winter_DZE : KamazRepair_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\kamaz\kamaz_kab_winter_co.paa","\dayz_epoch_c\skins\kamaz\kamaz_repair_winter_co.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"KamazRepair_Winter_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class KamazRepair_Winter_DZE1 : KamazRepair_Winter_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO_WINTER+";
+	original = "KamazRepair_Winter_DZE";
+	maxspeed = 100;
+	terrainCoef = 1.8;
+	turnCoef = 2.0;
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"KamazRepair_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class KamazRepair_Winter_DZE2: KamazRepair_Winter_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO_WINTER++";
+	armor = 70;
+	damageResistance = 0.0255;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"KamazRepair_Winter_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+	};
+};
+
+class KamazRepair_Winter_DZE3: KamazRepair_Winter_DZE2 {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO_WINTER+++";
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 600;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"KamazRepair_Winter_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class KamazRepair_Winter_DZE4: KamazRepair_Winter_DZE3 {
+	displayName = "$STR_VEH_NAME_KAMAZ_AMMO_WINTER++++";
+	fuelCapacity = 615;	
+};
+
+class KamazReammo_Winter_DZE : KamazReammo_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\kamaz\kamaz_kab_winter_co.paa","\dayz_epoch_c\skins\kamaz\kamaz_kuz_winter_co.paa"};
+	
+	class Upgrades {
+		ItemTruckORP[] = {"KamazReammo_Winter_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class KamazReammo_Winter_DZE1 : KamazReammo_Winter_DZE {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS_WINTER+";
+	original = "KamazReammo_Winter_DZE";
+	maxspeed = 100;
+	terrainCoef = 1.8;
+	turnCoef = 2.0;
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"KamazReammo_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class KamazReammo_Winter_DZE2: KamazReammo_Winter_DZE1 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS_WINTER++";
+	armor = 70;
+	damageResistance = 0.0255;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"KamazReammo_Winter_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+	};
+};
+
+class KamazReammo_Winter_DZE3: KamazReammo_Winter_DZE2 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS_WINTER+++";
+	transportMaxWeapons = 150;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"KamazReammo_Winter_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class KamazReammo_Winter_DZE4: KamazReammo_Winter_DZE3 {
+	displayName = "$STR_VEH_NAME_KAMAZ_WEAPONS_WINTER++++";
 	fuelCapacity = 615;	
 };

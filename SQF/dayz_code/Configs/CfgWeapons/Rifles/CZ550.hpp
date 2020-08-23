@@ -1,8 +1,10 @@
 class CZ550_DZ : Huntingrifle
 {
-	model = "z\addons\dayz_communityweapons\CZ550\CZ550.p3d";
+	//model = "z\addons\dayz_communityweapons\CZ550\CZ550.p3d"; // has currently a shadow problem
+	model = "\ca\weapons2\huntingrifle\huntingrifle";
 	magazines[] = {5Rnd_17HMR};
 
+	/* The normal version of the CZ550 has no correct iron sight
 	//CZ550_SCOPE
 	optics = true;
 	modelOptics = "\ca\weapons\2Dscope_Hunter_12";
@@ -28,4 +30,5 @@ class CZ550_DZ : Huntingrifle
 		};
 	};
 	//CZ550_SCOPE end
+	*/ 
 };

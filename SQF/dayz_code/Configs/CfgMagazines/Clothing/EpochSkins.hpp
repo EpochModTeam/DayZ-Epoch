@@ -201,24 +201,19 @@ class Skin_SurvivorWpink_DZ: SkinBase {
 	sex = "female";
 	playerModel = "SurvivorWpink_DZ";	
 };
-/*
-class Skin_SurvivorWsequisha_DZ: SkinBase {
-	scope = 2;
-	displayName = "Maria (female)";
-	descriptionShort = "Maria Clothes (female)";
-};
-class Skin_SurvivorWsequishaD_DZ: SkinBase {
-	scope = 2;
-	displayName = "Sequisha (female)";
-	descriptionShort = "Sequisha Clothes (female)";
-};
-*/
 class Skin_SurvivorWcombat_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_ALEJANDRIA;
 	descriptionShort = $STR_EPOCH_SKINS_ALEJANDRIA_DESC;
 	sex = "female";
 	playerModel = "SurvivorWcombat_DZ";	
+};
+class Skin_SurvivorWwinter_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_ANGELINA;
+	descriptionShort = $STR_EPOCH_SKINS_ANGELINA_DESC;
+	sex = "female";
+	playerModel = "SurvivorWwinter_DZ";	
 };
 class Skin_SurvivorWdesert_DZ: SkinBase {
 	scope = 2;

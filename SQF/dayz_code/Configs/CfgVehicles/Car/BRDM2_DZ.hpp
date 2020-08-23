@@ -102,10 +102,135 @@ class BRDM2_HQ_TK_GUE_EP1_DZE4: BRDM2_HQ_TK_GUE_EP1_DZE3
 	fuelCapacity = 180; // base 100
 };
 
+class BRDM2_HQ_RUST_DZ: BRDM2_HQ_TK_GUE_EP1_DZ {
+	displayname = "$STR_VEH_NAME_BRDM2_HQ_RUST";	
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\brdm\brdm2_01_wrecked_co.paa","\dayz_epoch_c\skins\brdm\brdm2_02_wrecked_co.paa"};
+};
+
+class BRDM2_HQ_RUST_DZE: BRDM2_HQ_RUST_DZ {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};	
+
+	class Upgrades
+	{
+		ItemORP[] = {"BRDM2_HQ_RUST_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class BRDM2_HQ_RUST_DZE1: BRDM2_HQ_RUST_DZE
+{
+	displayName = "$STR_VEH_NAME_BRDM2_HQ_RUST+";
+	original = "BRDM2_HQ_RUST_DZE";
+	maxSpeed = 115; //base 100
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"BRDM2_HQ_RUST_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class BRDM2_HQ_RUST_DZE2: BRDM2_HQ_RUST_DZE1
+{
+	displayName = "$STR_VEH_NAME_BRDM2_HQ_RUST++";
+	armor = 170; // base 120
+	damageResistance = 0.048; // base 0.02409
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"BRDM2_HQ_RUST_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BRDM2_HQ_RUST_DZE3: BRDM2_HQ_RUST_DZE2
+{
+	displayName = "$STR_VEH_NAME_BRDM2_HQ_RUST+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"BRDM2_HQ_RUST_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class BRDM2_HQ_RUST_DZE4: BRDM2_HQ_RUST_DZE3
+{
+	displayName = "$STR_VEH_NAME_BRDM2_HQ_RUST++++";
+	fuelCapacity = 180; // base 100
+};
+
+class BRDM2_HQ_WINTER_DZ: BRDM2_HQ_TK_GUE_EP1_DZ {
+	displayname = "$STR_VEH_NAME_BRDM2_HQ_WINTER";	
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\brdm\brdm2_01_winter2.paa","\dayz_epoch_c\skins\brdm\brdm2_02_winter2.paa"};
+};
+
+class BRDM2_HQ_WINTER_DZE: BRDM2_HQ_WINTER_DZ {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};	
+
+	class Upgrades
+	{
+		ItemORP[] = {"BRDM2_HQ_WINTER_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class BRDM2_HQ_WINTER_DZE1: BRDM2_HQ_WINTER_DZE
+{
+	displayName = "$STR_VEH_NAME_BRDM2_HQ_WINTER+";
+	original = "BRDM2_HQ_WINTER_DZE";
+	maxSpeed = 115; //base 100
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"BRDM2_HQ_WINTER_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class BRDM2_HQ_WINTER_DZE2: BRDM2_HQ_WINTER_DZE1
+{
+	displayName = "$STR_VEH_NAME_BRDM2_HQ_WINTER++";
+	armor = 170; // base 120
+	damageResistance = 0.048; // base 0.02409
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"BRDM2_HQ_WINTER_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BRDM2_HQ_WINTER_DZE3: BRDM2_HQ_WINTER_DZE2
+{
+	displayName = "$STR_VEH_NAME_BRDM2_HQ_WINTER+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"BRDM2_HQ_WINTER_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class BRDM2_HQ_WINTER_DZE4: BRDM2_HQ_WINTER_DZE3
+{
+	displayName = "$STR_VEH_NAME_BRDM2_HQ_WINTER++++";
+	fuelCapacity = 180; // base 100
+};
+
 class BRDM2_TK_EP1: BRDM2_Base {
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
 };
+
 class BRDM2_TK_EP1_DZ: BRDM2_TK_EP1 {
 	displayname = "$STR_VEH_NAME_BRDM2_TK";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -326,5 +451,126 @@ class BRDM2_Desert_ACR_DZE3: BRDM2_Desert_ACR_DZE2
 class BRDM2_Desert_ACR_DZE4: BRDM2_Desert_ACR_DZE3
 {
 	displayName = "$STR_VEH_NAME_BRDM2_DES++++";
+	fuelCapacity = 180; // base 100
+};
+
+class BRDM2_RUST_DZ: BRDM2_TK_EP1_DZ {
+	displayname = "$STR_VEH_NAME_BRDM2_RUST";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\brdm\brdm2_01_wrecked_co.paa","\dayz_epoch_c\skins\brdm\brdm2_02_wrecked_co.paa"};
+};
+
+class BRDM2_RUST_DZE: BRDM2_RUST_DZ {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};	
+
+	class Upgrades
+	{
+		ItemORP[] = {"BRDM2_RUST_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class BRDM2_RUST_DZE1: BRDM2_RUST_DZE
+{
+	displayName = "$STR_VEH_NAME_BRDM2_RUST+";
+	original = "BRDM2_RUST_DZE";
+	maxSpeed = 115; //base 100
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"BRDM2_RUST_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class BRDM2_RUST_DZE2: BRDM2_RUST_DZE1
+{
+	displayName = "$STR_VEH_NAME_BRDM2_RUST++";
+	armor = 170; // base 120
+	damageResistance = 0.048; // base 0.02409
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"BRDM2_RUST_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BRDM2_RUST_DZE3: BRDM2_RUST_DZE2
+{
+	displayName = "$STR_VEH_NAME_BRDM2_RUST+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"BRDM2_RUST_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class BRDM2_RUST_DZE4: BRDM2_RUST_DZE3
+{
+	displayName = "$STR_VEH_NAME_BRDM2_RUST++++";
+	fuelCapacity = 180; // base 100
+};
+
+class BRDM2_WINTER_DZ: BRDM2_TK_EP1_DZ {
+	displayname = "$STR_VEH_NAME_BRDM2_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\brdm\brdm2_01_winter1.paa","\dayz_epoch_c\skins\brdm\brdm2_02_winter1.paa"};
+};
+
+class BRDM2_WINTER_DZE: BRDM2_TK_EP1_DZE {
+	displayname = "$STR_VEH_NAME_BRDM2_WINTER";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\brdm\brdm2_01_winter1.paa","\dayz_epoch_c\skins\brdm\brdm2_02_winter1.paa"};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"BRDM2_WINTER_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class BRDM2_WINTER_DZE1: BRDM2_WINTER_DZE
+{
+	displayName = "$STR_VEH_NAME_BRDM2_WINTER+";
+	original = "BRDM2_WINTER_DZE";
+	maxSpeed = 115; //base 100
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"BRDM2_WINTER_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class BRDM2_WINTER_DZE2: BRDM2_WINTER_DZE1
+{
+	displayName = "$STR_VEH_NAME_BRDM2_WINTER++";
+	armor = 170; // base 120
+	damageResistance = 0.048; // base 0.02409
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"BRDM2_WINTER_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class BRDM2_WINTER_DZE3: BRDM2_WINTER_DZE2
+{
+	displayName = "$STR_VEH_NAME_BRDM2_WINTER+++";
+	transportMaxWeapons = 40; 
+	transportMaxMagazines = 400; 
+	transportmaxbackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"BRDM2_WINTER_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class BRDM2_WINTER_DZE4: BRDM2_WINTER_DZE3
+{
+	displayName = "$STR_VEH_NAME_BRDM2_WINTER++++";
 	fuelCapacity = 180; // base 100
 };

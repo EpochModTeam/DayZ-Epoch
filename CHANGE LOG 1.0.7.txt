@@ -82,6 +82,7 @@
 [FIXED] The epoch versions of the RHIB boats were incorrect. (38a31290) @AirwavesMan
 [FIXED] Players are no longer able to exploit the player_wearClothes function to reset AI targeting. (5c29704) @morgoth0, @Arrakis, @worldwidesorrow.
 [FIXED] Vehicles should no longer explode after a server restart due to buildings loading in late. (99dc7cd7) @Seelenapparat
+[FIXED] CZ550 shadow bug (c22ae9e5) @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper

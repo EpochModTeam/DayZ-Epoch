@@ -212,15 +212,7 @@ class BanditW1_DZ: SurvivorW2_DZ
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\ca\characters_e\woman\baker\data\baker_co.paa"};
 };
-/*
-class FemaleSoldier1_DZ: SurvivorW2_DZ
-{
-	side = 1;
-	model = "\z\addons\dayz_epoch\models\female_soldier";
-	hiddenSelections[] = {"Camo"};
-	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\female_soldier_body.paa"};
-};
-*/
+
 class BanditW2_DZ: BanditW1_DZ
 {
 	hiddenSelections[] = {"Camo"};
@@ -236,23 +228,15 @@ class SurvivorWpink_DZ: SurvivorW2_DZ
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\GirlyGirl.paa"};
 };
-/*
-class SurvivorWsequisha_DZ: SurvivorW2_DZ
-{
-	model = "\z\addons\dayz_epoch\skins\sequisha\sequisha.p3d";
-	//hiddenSelections[] = {"Camo"};
-	//hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\sequisha_co.paa"};
-};
-class SurvivorWsequishaD_DZ: SurvivorW2_DZ
-{
-	hiddenSelections[] = {"Camo"};
-	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\sequishaD_co.paa"};
-};
-*/
 class SurvivorWcombat_DZ: SurvivorW2_DZ
 {
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\CombatGirl.paa"};
+};
+class SurvivorWwinter_DZ: SurvivorW2_DZ
+{
+	hiddenSelections[] = {"Camo"};
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\female\WinterCombat.paa"};
 };
 class SurvivorWdesert_DZ: SurvivorW2_DZ
 {
@@ -264,7 +248,6 @@ class SurvivorWurban_DZ: SurvivorW2_DZ
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch\textures\UrbanGirl.paa"};
 };
-
 class Tamika_DZ: SurvivorW2_DZ
 {
 	model = "\nst\ns_fraction\ns\ns_tamika.p3d";

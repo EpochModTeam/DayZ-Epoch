@@ -901,6 +901,111 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZE4: HMMWV_M1151_M2_CZ_DES_EP1_DZE3
 	fuelCapacity = 180; // base 100
 };
 
+class HMMWV_GPK_M2_WINTER_DZ: HMMWV_M1151_M2_CZ_DES_EP1_DZ
+{
+	displayname = "$STR_VEH_NAME_HMMWV_GPK_WINTER";
+	HiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\hmmwv\hmmwv_body_canvas_1_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_hood_canvas_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_regular_1_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_gpk_tower_winter_co.paa"};
+};
+
+class HMMWV_GPK_M2_WINTER_DZE: HMMWV_M1151_M2_CZ_DES_EP1_DZE {
+	displayname = "$STR_VEH_NAME_HMMWV_GPK_WINTER";
+	HiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\hmmwv\hmmwv_body_canvas_1_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_hood_canvas_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_regular_1_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_gpk_tower_winter_co.paa"};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_GPK_M2_WINTER_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_GPK_M2_WINTER_DZE1: HMMWV_GPK_M2_WINTER_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_GPK_WINTER+";
+	original = "HMMWV_GPK_M2_WINTER_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_GPK_M2_WINTER_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_GPK_M2_WINTER_DZE2: HMMWV_GPK_M2_WINTER_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_GPK_WINTER++";
+	armor = 110; // base 80
+	damageResistance = 0.06; // base 0.03099
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_GPK_M2_WINTER_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_GPK_M2_WINTER_DZE3: HMMWV_GPK_M2_WINTER_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_GPK_WINTER+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_GPK_M2_WINTER_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_GPK_M2_WINTER_DZE4: HMMWV_GPK_M2_WINTER_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_GPK_WINTER++++";
+	fuelCapacity = 180; // base 100
+};
+
 class HMMWV_M1114_AGS_ACR_DZ: HMMWV_M1151_M2_CZ_DES_EP1_DZ {
 	displayName = "$STR_VEH_NAME_HMMWV_AGS30";
 	model = "\Ca\Wheeled_ACR\HMMWV\M1114_AGS_ACR.p3d";	
@@ -1372,6 +1477,111 @@ class HMMWV_Armored_DZE3: HMMWV_Armored_DZE2
 class HMMWV_Armored_DZE4: HMMWV_Armored_DZE3
 {
 	displayName = "$STR_VEH_NAME_HMMWV_ARMORED++++";
+	fuelCapacity = 180; // base 100
+};
+
+class HMMWV_Winter_Armored_DZ: HMMWV_Armored_DZ 
+{
+	displayname = $STR_VEH_NAME_HMMWV_ARMORED_WINTER;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\hmmwv\hmmwv_body_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_parts_1_winter_ca.paa"};
+};
+
+class HMMWV_Winter_Armored_DZE: HMMWV_Armored_DZE {
+	displayname = $STR_VEH_NAME_HMMWV_ARMORED_WINTER;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\hmmwv\hmmwv_body_winter_co.paa","\dayz_epoch_c\skins\hmmwv\hmmwv_parts_1_winter_ca.paa"};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_Winter_Armored_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class HMMWV_Winter_Armored_DZE1: HMMWV_Winter_Armored_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_ARMORED_WINTER+";
+	original = "HMMWV_Winter_Armored_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_Winter_Armored_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_Winter_Armored_DZE2: HMMWV_Winter_Armored_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_ARMORED_WINTER++";
+	armor = 110; // base 80
+	damageResistance = 0.06; // base 0.03099
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.8;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.8;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.8;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.8;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_Winter_Armored_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_Winter_Armored_DZE3: HMMWV_Winter_Armored_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_ARMORED_WINTER+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_Winter_Armored_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_Winter_Armored_DZE4: HMMWV_Winter_Armored_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_ARMORED_WINTER++++";
 	fuelCapacity = 180; // base 100
 };
 
@@ -1855,6 +2065,105 @@ class HMMWV_DES_EP1_DZE3: HMMWV_DES_EP1_DZE2
 class HMMWV_DES_EP1_DZE4: HMMWV_DES_EP1_DZE3
 {
 	displayName = "$STR_VEH_NAME_HMMWV_DES++++";
+	fuelCapacity = 180; // base 100
+};
+
+class HMMWV_WINTER_DZ: HMMWV_DZ {	
+	displayname = "$STR_VEH_NAME_HMMWV_WINTER";
+	hiddenselectionstextures[] = {"\dayz_epoch_c\skins\hmmwv\hmmwv_body_winter_co.paa"};
+	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_WINTER_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_WINTER_DZE1: HMMWV_WINTER_DZ 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_WINTER+";
+	original = "HMMWV_WINTER_DZ";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_WINTER_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_WINTER_DZE2: HMMWV_WINTER_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_WINTER++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_WINTER_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_WINTER_DZE3: HMMWV_WINTER_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_WINTER+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_WINTER_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_WINTER_DZE4: HMMWV_WINTER_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_WINTER++++";
 	fuelCapacity = 180; // base 100
 };
 
