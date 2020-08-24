@@ -23,7 +23,7 @@ _weapons = weapons player;
 			{if (_x in DayZ_Ignitors) exitWith {_hastoolweapon = true};} count _items;
 		};
 		if (_x == "ChainSaw") exitWith {
-			{if (_x in ["ChainSaw","ChainSawB","ChainSawG","ChainSawG","ChainSawR"]) exitWith {_hastoolweapon = true};} count _weapons;
+			{if (_x in ["ChainSaw","ChainSawB","ChainSawP","ChainSawG","ChainSawR"]) exitWith {_hastoolweapon = true};} count _weapons;
 		};
 		if (_x == "ItemShovel" || _x == "ItemEtool") exitWith {
 			{if (_x in _shovels) exitWith {_hastoolweapon = true};} count _items;
