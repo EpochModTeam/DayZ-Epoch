@@ -1,7 +1,7 @@
 class USEC_ch53_E;
 class CH53_DZE : USEC_ch53_E {
 	scope = 2;
-	displayname = $STR_VEH_NAME_CH53;
+	displayname = "$STR_VEH_NAME_CH53";
 	vehicleClass = "DayZ Epoch Vehicles";
 	destrType = "DestructWreck";
 	weapons[] = {"CMFlareLauncher"};
@@ -73,4 +73,41 @@ class CH53_DZE : USEC_ch53_E {
 			statement = "[this] execvm ""\usec_ch53\scripts\ch53_gearup.sqf""";
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"CH53_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class CH53_DZE1: CH53_DZE
+{
+	displayName = "$STR_VEH_NAME_CH53+";
+	original = "CH53_DZE";
+	armor = 80;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"CH53_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class CH53_DZE2: CH53_DZE1
+{
+	displayName = "$STR_VEH_NAME_CH53++";
+	transportMaxWeapons = 80;
+	transportMaxMagazines = 500;
+	transportmaxbackpacks = 30;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"CH53_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class CH53_DZE3: CH53_DZE2
+{
+	displayName = "$STR_VEH_NAME_CH53+++";
+	fuelCapacity = 8000;
 };

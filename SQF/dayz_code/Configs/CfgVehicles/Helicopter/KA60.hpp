@@ -5,7 +5,7 @@ class Ka60_GL_PMC: Ka60_GL_BASE_PMC {
 };
 
 class Ka60_GL_PMC_DZ: Ka60_GL_PMC {	
-	displayName = $STR_VEH_NAME_KA60;
+	displayName = "$STR_VEH_NAME_KA60";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
 	crew = "";
@@ -133,4 +133,41 @@ class Ka60_GL_PMC_DZE: Ka60_GL_PMC_DZ {
 			magazines[] = {};
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"Ka60_GL_PMC_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};	
+};
+
+class Ka60_GL_PMC_DZE1: Ka60_GL_PMC_DZE
+{
+	displayName = "$STR_VEH_NAME_KA60+";
+	original = "Ka60_GL_PMC_DZE";
+	armor = 70;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"Ka60_GL_PMC_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class Ka60_GL_PMC_DZE2: Ka60_GL_PMC_DZE1
+{
+	displayName = "$STR_VEH_NAME_KA60++";
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 240;
+	transportMaxBackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"Ka60_GL_PMC_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class Ka60_GL_PMC_DZE3: Ka60_GL_PMC_DZE2
+{
+	displayName = "$STR_VEH_NAME_KA60+++";
+	fuelCapacity = 4500;
 };

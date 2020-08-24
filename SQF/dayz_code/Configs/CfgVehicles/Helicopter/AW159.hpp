@@ -3,7 +3,7 @@ class AW159_Lynx_BAF: Helicopter {
 	class MainTurret;
 };
 class AW159_Lynx_BAF_DZ: AW159_Lynx_BAF {
-	displayname = $STR_VEH_NAME_AW159;
+	displayname = "$STR_VEH_NAME_AW159";
 	vehicleClass = "DayZ Epoch Vehicles";
 	weapons[] = {"CMFlareLauncher"};
 	magazines[] = {"120Rnd_CMFlareMagazine"};
@@ -120,4 +120,41 @@ class AW159_Lynx_BAF_DZE: AW159_Lynx_BAF_DZ {
 			magazines[] = {};
 		};
 	};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"AW159_Lynx_BAF_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class AW159_Lynx_BAF_DZE1: AW159_Lynx_BAF_DZE
+{
+	displayName = "$STR_VEH_NAME_AW159+";
+	original = "AW159_Lynx_BAF_DZE";
+	armor = 80;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"AW159_Lynx_BAF_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class AW159_Lynx_BAF_DZE2: AW159_Lynx_BAF_DZE1
+{
+	displayName = "$STR_VEH_NAME_AW159++";
+	transportMaxWeapons = 40;
+	transportMaxMagazines = 240;
+	transportMaxBackpacks = 12;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"AW159_Lynx_BAF_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class AW159_Lynx_BAF_DZE3: AW159_Lynx_BAF_DZE2
+{
+	displayName = "$STR_VEH_NAME_AW159+++";
+	fuelCapacity = 4500;
 };

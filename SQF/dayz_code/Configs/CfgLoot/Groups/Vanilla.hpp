@@ -17,21 +17,22 @@ VanillaSurvival[] =
 
 VanillaConstruction[] =
 {
-//	{Loot_MAGAZINE,		1,		equip_scrapelectronics}, // Unused
 //	{Loot_MAGAZINE,		2,		equip_1inch_metal_pipe}, // Unused
 //	{Loot_MAGAZINE,		2,		equip_2inch_metal_pipe}, // Unused
 //	{Loot_VEHICLE,		2,		WeaponHolder_ItemPickaxeBroken},
-//	{Loot_MAGAZINE,		5,		ItemStone}, // Vanilla base building - foundations
+//	{Loot_MAGAZINE,		5,		ItemStone}, // Epoch(Dayz Mod) fences, does not need to be spawned, can be harvested with pickaxes
 //	{Loot_WEAPON,		1,		ItemDIY_wood}, // Vanilla base building
 //	{Loot_WEAPON,		1,		ItemDIY_Gate} // Vanilla base building
 //	{Loot_MAGAZINE,		9,		equip_metal_sheet_rusted}, // Unused
+	{Loot_MAGAZINE,		1,		equip_scrapelectronics}, // Vehicle upgrade
+	{Loot_MAGAZINE,		1,		equip_floppywire}, // Vehicle upgrade
 	{Loot_VEHICLE,		4,		WeaponHolder_ItemPickaxe}, // Get ItemStone from rocks on the map for fence foundations.
-	{Loot_MAGAZINE,		9,		ItemMetalSheet}, //Used for upgrade storage buildings and metal fences
+	{Loot_MAGAZINE,		9,		ItemMetalSheet}, //Used for upgrade storage buildings and metal fences, vehicle upgrade
 	{Loot_MAGAZINE,		9,		equip_metal_sheet}, //Used for upgrade storage buildings
-	{Loot_MAGAZINE,		4,		ItemScrews}, //Used for upgrade storage buildings
+	{Loot_MAGAZINE,		4,		ItemScrews}, //Used for upgrade storage buildings, vehicle upgrade
 	{Loot_MAGAZINE,		1,		equip_hose}, // Need this to siphon gas with fuel container - very useful
 	{Loot_MAGAZINE,		1,		equip_lever}, // Repair broken handles if dayz_toolBreaking enabled
-	{Loot_MAGAZINE,		1,		ItemPlank}, // Used for upgrade storage buildings - craft a sling
+	{Loot_MAGAZINE,		1,		ItemPlank}, // Used for upgrade storage buildings, craft a sling
 	{Loot_MAGAZINE,		1,		equip_nails}, // Combine with baseball bat, upgrade storage buildings
 	{Loot_MAGAZINE,		1,		equip_brick} // Used to sharpen tools if dayz_knifeDulling enabled
 };

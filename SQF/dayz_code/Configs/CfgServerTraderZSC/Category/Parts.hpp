@@ -30,6 +30,7 @@ class Category_34 {
 	class ItemSledge {type = "trade_weapons";buy[] = {80,"worth"};sell[] = {40,"worth"};};
 	class MeleeSledge {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {40,"worth"};};
 	class ItemKeyKit {type = "trade_weapons";buy[] = {100,"worth"};sell[] = {100,"worth"};};
+	class ItemSolder_DZE {type = "trade_weapons";buy[] = {600,"worth"};sell[] = {300,"worth"};};
 	class ChainSaw {type = "trade_weapons";buy[] = {400,"worth"};sell[] = {100,"worth"};};
 	class ChainSawB {type = "trade_weapons";buy[] = {400,"worth"};sell[] = {100,"worth"};};
 	class ChainSawG {type = "trade_weapons";buy[] = {400,"worth"};sell[] = {100,"worth"};};
@@ -53,8 +54,8 @@ class Category_35 {
 	class equip_lever {type = "trade_items";buy[] = {6,"worth"};sell[] = {3,"worth"};};
 	class equip_nails {type = "trade_items";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class ItemScrews {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
-	class equip_scrapelectronics {type = "trade_items";buy[] = {-1,"worth"};sell[] = {200,"worth"};};
-	class equip_floppywire {type = "trade_items";buy[] = {-1,"worth"};sell[] = {200,"worth"};};	
+	class equip_scrapelectronics {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
+	class equip_floppywire {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};	
 	class equip_metal_sheet {type = "trade_items";buy[] = {20,"worth"};sell[] = {10,"worth"};};
 	class equip_1inch_metal_pipe {type = "trade_items";buy[] = {6,"worth"};sell[] = {3,"worth"};};
 	class equip_2inch_metal_pipe {type = "trade_items";buy[] = {8,"worth"};sell[] = {4,"worth"};};	
