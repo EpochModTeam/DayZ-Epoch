@@ -12301,10 +12301,6 @@
 			<English>Mi-17 (rusty)++</English>
 			<German>Mi-17 (rostig)++</German>
 		</Key>
-		<Key ID="STR_VEH_NAME_MI17_RUST++">
-			<English>Mi-17 (rusty)++</English>
-			<German>Mi-17 (rostig)++</German>
-		</Key>
 		<Key ID="STR_VEH_NAME_MI17_RUST+++">
 			<English>Mi-17 (rusty)+++</English>
 			<German>Mi-17 (rostig)+++</German>
