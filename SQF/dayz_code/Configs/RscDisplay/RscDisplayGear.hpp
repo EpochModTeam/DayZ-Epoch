@@ -934,7 +934,6 @@ class RscDisplayGear
 				};
 				delete bSmena1;
 				delete Item_attach1_bg;
-				delete Item_attach1;
 				delete Item_attach2_bg;
 				delete Item_attach2;
 				delete odezhka_2_bg;

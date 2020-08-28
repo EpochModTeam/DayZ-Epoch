@@ -554,9 +554,9 @@ class 210Rnd_25mm_M242_HEI: Vehicle_ammo_base
 	descriptionShort = $STR_DZ_MAG_210RND_M242HE_DESC;	
 	ammo = "B_25mm_HEI";
 	count = 240;
-	initSpeed = 1040;
+	initSpeed = 1400;
 	maxLeadSpeed = 300;
-	tracersEvery = 4;
+	tracersEvery = 1;
 	lastRoundsTracer = 4;
 	nameSound = "cannon";
 	model = "\z\addons\dayz_epoch\models\50cal_mag.p3d";
@@ -569,7 +569,7 @@ class 210Rnd_25mm_M242_APDS: Vehicle_ammo_base
 	descriptionShort = $STR_DZ_MAG_210RND_M242AP_DESC;	
 	ammo = "B_25mm_APDS";
 	count = 240;
-	initSpeed = 1040;
+	initSpeed = 1400;
 	maxLeadSpeed = 300;
 	tracersEvery = 4;
 	lastRoundsTracer = 4;
@@ -857,7 +857,7 @@ class 8Rnd_AT10_BMP3: Vehicle_ammo_base
 	descriptionShort = $STR_DZ_MAG_8RND_AT5_BMP3_DESC;	
 	count = 8;
 	ammo = "M_AT10_AT";
-	initSpeed = 450;
+	initSpeed = 370;
 	maxLeadSpeed = 100;
 	nameSound = "missiles";
 	sound[] = {"\ca\Weapons\Data\Sound\RocketLauncher_Shot04",3.1622777,1,1300};
@@ -872,7 +872,7 @@ class 5Rnd_AT11_T90: Vehicle_ammo_base
 	descriptionShort = $STR_DZ_MAG_5RND_AT5_T90_DESC;	
 	ammo = "M_AT11_AT";
 	count = 5;
-	initSpeed = 500;
+	initSpeed = 340;
 	maxLeadSpeed = 100;
 	nameSound = "missiles";
 	sound[] = {"\ca\Weapons\Data\Sound\RocketLauncher_Shot04",3.1622777,1,1300};
@@ -888,7 +888,7 @@ class 4Rnd_AT9_Mi24P: Vehicle_ammo_base
 	descriptionShort = $STR_DZ_MAG_4RND_AT9_Mi24P_DESC;	
 	count = 4;
 	ammo = "M_AT9_AT";
-	initSpeed = 0;
+	initSpeed = 55;
 	maxLeadSpeed = 200;
 	sound[] = {"\ca\Weapons\Data\Sound\TOW_2",3.1622777,1,1400};
 	soundHit[] = {"\ca\Weapons\Data\Sound\explosion_large1",15.848933,1,2000};
@@ -910,7 +910,7 @@ class 4Rnd_AT6_Mi24V: Vehicle_ammo_base
 	descriptionShort = $STR_DZ_MAG_4RND_AT6_Mi24V_DESC;	
 	count = 4;
 	ammo = "M_AT6_AT";
-	initSpeed = 0;
+	initSpeed = 55;
 	maxLeadSpeed = 100;
 	sound[] = {"\ca\Weapons\Data\Sound\TOW_2",3.1622777,1,1400};
 	soundHit[] = {"\ca\Weapons\Data\Sound\explosion_large1",15.848933,1,2000};
@@ -925,7 +925,7 @@ class 4Rnd_AT2_Mi24D: Vehicle_ammo_base
 	displayName = $STR_DZ_MAG_4RND_AT2_Mi24D_NAME;
 	descriptionShort = $STR_DZ_MAG_4RND_AT2_Mi24D_DESC;	
 	ammo = "M_AT2_AT";
-	initSpeed = 55.1688;
+	initSpeed = 55;
 	count = 4;
 	maxLeadSpeed = 25;
 	nameSound = "missiles";
@@ -938,7 +938,7 @@ class 6Rnd_AT13: Vehicle_ammo_base
 	displayName = $STR_DZ_MAG_6RND_AT13_NAME;
 	descriptionShort = $STR_DZ_MAG_6RND_AT13_DESC;	
 	ammo = "M_AT13_AT";
-	initSpeed = 55.1688;
+	initSpeed = 80;
 	count = 6;
 	maxLeadSpeed = 10;
 	nameSound = "missiles";
@@ -1062,7 +1062,7 @@ class 14Rnd_FFAR: Vehicle_ammo_base
 	descriptionShort = $STR_DZ_MAG_14RND_FFAR_DESC;	
 	ammo = "R_Hydra_HE";
 	count = 14;
-	initSpeed = 44;
+	initSpeed = 1;
 	maxLeadSpeed = 200;
 	nameSound = "rockets";
 	sound[] = {"\ca\weapons\Data\Sound\rockets\rocketLauncher_Shot21",3.1622777,1};
@@ -1121,7 +1121,7 @@ class 40Rnd_80mm: Vehicle_ammo_base
 	displayName = $STR_DZ_MAG_40RND_80mm_NAME;
 	descriptionShort = $STR_DZ_MAG_40RND_80mm_DESC;	
 	ammo = "R_80mm_HE";
-	initSpeed = 44;
+	initSpeed = 1;
 	maxLeadSpeed = 200;
 	count = 40;
 	nameSound = "rockets";
@@ -1175,7 +1175,7 @@ class 40Rnd_S8T: Vehicle_ammo_base
 	descriptionShort = $STR_DZ_MAG_40RND_S8T_DESC;	
 	ammo = "R_S8T_AT";
 	count = 40;
-	initSpeed = 44;
+	initSpeed = 1;
 	nameSound = "rockets";
 	model = "\z\addons\dayz_epoch\models\30mm_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_30mm_mag_ca.paa";		
@@ -1192,7 +1192,7 @@ class 64Rnd_57mm: Vehicle_ammo_base
 	displayName = $STR_DZ_MAG_64RND_57mm_NAME;
 	descriptionShort = $STR_DZ_MAG_64RND_57mm_DESC;	
 	ammo = "R_57mm_HE";
-	initSpeed = 44;
+	initSpeed = 1;
 	maxLeadSpeed = 200;
 	nameSound = "rockets";
 	sound[] = {"\ca\Weapons\Data\Sound\Rockets\rocketLauncher_Shot21",1.0,1};
@@ -1572,7 +1572,7 @@ class PG15V: Vehicle_ammo_base
 	ammo = "PG15V";
 	tracersEvery = 1;
 	lastRoundsTracer = 1;
-	initSpeed = 665;
+	initSpeed = 435;
 	count = 1;
 	model = "\z\addons\dayz_epoch\models\30mm_mag.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_30mm_mag_ca.paa";	

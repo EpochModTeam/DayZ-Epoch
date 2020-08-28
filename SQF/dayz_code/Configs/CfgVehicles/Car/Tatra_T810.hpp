@@ -402,8 +402,8 @@ class T810A_PKT_ACR_DZE: T810A_PKT_ACR_DZ
 			gunnerAction = "T810gunner";
 			gunnerInAction = "T810gunner";
 			gunnerName = "PKB Gunner";
-			gunnerGetInAction = "GetInHigh";
-			gunnerGetOutAction = "GetOutHigh";
+			getInAction = "GetInMedium";
+			getOutAction = "GetOutMedium";
 			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
 			discreteDistanceInitIndex = 2;			
 			turretInfoType = "RscWeaponZeroing";

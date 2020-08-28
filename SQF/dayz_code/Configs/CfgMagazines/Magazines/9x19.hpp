@@ -65,6 +65,7 @@ class 15Rnd_9x19_M9 : CA_Magazine
 {
 	displayName = $STR_DZ_MAG_15RND_9X19_M9_NAME;
 	descriptionShort = $STR_DZ_MAG_15RND_M9_9x19_DESC;
+	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\15Rnd_9x19_M9.p3d";
 	
 	cartridgeName = "9x19";
 	
@@ -122,6 +123,7 @@ class 15Rnd_9x19_M9SD : 15Rnd_9x19_M9
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_m9sd_ca.paa";
 	displayName = $STR_DZ_MAG_15RND_9X19_M9SD_NAME;
 	descriptionShort = $STR_DZ_MAG_15RND_M9SD_9x19_DESC;
+	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\15Rnd_9x19_M9.p3d";
 	
 	cartridgeName = "9x19_SD";
 	
@@ -148,6 +150,7 @@ class 15Rnd_9x19_M9SD : 15Rnd_9x19_M9
 class 17Rnd_9x19_glock17SD : 15Rnd_9x19_M9SD
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_glock17sd_ca.paa";
+	model = "z\addons\dayz_communityweapons\magazines\g17.p3d";
 	displayName = $STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME;
 	descriptionShort = $STR_DZ_MAG_17RND_G17SD_9x19_DESC;
 	

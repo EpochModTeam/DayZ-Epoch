@@ -1,6 +1,7 @@
 class 30Rnd_545x39_AK : CA_Magazine
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_ak74_ca.paa";
+	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\30Rnd_545x39_AK.p3d";
 	displayName = $STR_DZ_MAG_30RND_545x39_AK_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_AK74_DESC;
 	cartridgeName = "545x39";
@@ -22,6 +23,7 @@ class 60Rnd_545x39_AK_Taped : 30Rnd_545x39_AK {
 class 30Rnd_545x39_AKSD : 30Rnd_545x39_AK
 {
 	picture = "\z\addons\dayz_communityweapons\magazines\data\m_ak74sd_ca.paa";
+	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\30Rnd_545x39_AK.p3d";
 	displayName = $STR_DZ_MAG_30RND_545x39_AKSD_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_AK74SD_DESC;
 	cartridgeName = "545x39_SD";

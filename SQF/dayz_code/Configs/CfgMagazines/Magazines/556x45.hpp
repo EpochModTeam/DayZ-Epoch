@@ -76,6 +76,7 @@ class 30Rnd_556x45_G36 : 30Rnd_556x45_Stanag
 	displayName = $STR_DZ_MAG_30RND_556x45_G36_NAME;
 	descriptionShort = $STR_DZE_MAG_30RND_556x45_G36_DESC;
 	cartridgeName = "556x45";
+	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\30Rnd_556x45_G36.p3d";
 	
 	class ItemActions
 	{
@@ -130,6 +131,7 @@ class 30Rnd_556x45_G36SD : 30Rnd_556x45_G36
 	displayName = $STR_DZ_MAG_30RND_556x45_G36SD_NAME;
 	descriptionShort = $STR_DZE_MAG_30RND_556x45_G36SD_DESC;	
 	cartridgeName = "556x45_SD";
+	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\30Rnd_556x45_G36.p3d";
 	
 	class ItemActions
 	{
