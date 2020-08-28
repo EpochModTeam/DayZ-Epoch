@@ -19423,69 +19423,88 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_230RND_2A42_NAME">
 			<English>230Rnd. 2A42 HE mag.</English>
+			<Russian>230с. 2A42 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_230RND_2A42_DESC">
 			<English>30mm HE&lt;br/&gt;Rounds: 230&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
 			<German>30mm HE&lt;br/&gt;Geschosse: 230&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+			<Russian>30мм Осколочно-фугасный снаряд&lt;br/&gt;Снарядов: 230&lt;br/&gt;Исп. в: 30мм пушка 2A42</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A42_NAME">
 			<English>250Rnd. 2A42 HE mag.</English>
+			<Russian>250с. 2A42 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A42_DESC">
 			<English>30mm HE&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
 			<German>30mm HE&lt;br/&gt;Geschosse: 250&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+			<Russian>30мм Осколочно-фугасный снаряд&lt;br/&gt;Снарядов: 250&lt;br/&gt;Исп. в: 30мм пушка 2A42</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_150RND_2A42_NAME">
 			<English>150Rnd. 2A42 HE mag.</English>
+			<Russian>150с. 2A42 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_150RND_2A42_DESC">
 			<English>30mm HE&lt;br/&gt;Rounds: 150&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
 			<German>30mm HE&lt;br/&gt;Geschosse: 150&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+			<Russian>30мм Осколочно-фугасный снаряд&lt;br/&gt;Снарядов: 150&lt;br/&gt;Исп. в: 30мм пушка 2A42</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_150RND_2A42AP_NAME">
 			<English>150Rnd. 2A42 AP mag.</English>
+			<Russian>150с. 2A42 ББ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_150RND_2A42AP_DESC">
 			<English>30mm AP&lt;br/&gt;Rounds: 150&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
 			<German>30mm AP&lt;br/&gt;Geschosse: 150&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+			<Russian>30мм Бронебойный снаряд&lt;br/&gt;Снарядов: 150&lt;br/&gt;Исп. в: 30мм пушка 2A42</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A42AP_NAME">
 			<English>250Rnd. 2A42 AP mag.</English>
+			<Russian>250с. 2A42 ББ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A42AP_DESC">
 			<English>30mm AP&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
 			<German>30mm AP&lt;br/&gt;Geschosse: 250&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+			<Russian>30мм Бронебойный снаряд&lt;br/&gt;Снарядов: 250&lt;br/&gt;Исп. в: 30мм пушка 2A42</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_230RND_2A42AP_NAME">
 			<English>230Rnd. 2A42 AP mag.</English>
+			<Russian>230с. 2A42 ББ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_230RND_2A42AP_DESC">
 			<English>30mm AP&lt;br/&gt;Rounds: 230&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
 			<German>30mm AP&lt;br/&gt;Geschosse: 230&lt;br/&gt;Verwendet in: 2A42 30-mm-Kanone</German>
+			<Russian>30мм Бронебойный снаряд&lt;br/&gt;Снарядов: 230&lt;br/&gt;Исп. в: 30мм пушка 2A42</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A72AP_NAME">
 			<English>250Rnd. 2A72 AP mag.</English>
+			<Russian>250с. 2A72 ББ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A72AP_DESC">
 			<English>30mm AP&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A72 30mm Cannon</English>
 			<German>30mm AP&lt;br/&gt;Geschosse: 250&lt;br/&gt;Verwendet in: 2A72 30-mm-Kanone</German>
+			<Russian>30мм Бронебойный снаряд&lt;br/&gt;Снарядов: 250&lt;br/&gt;Исп. в: 30мм пушка 2A72</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A72HE_NAME">
 			<English>250Rnd. 2A72 HE mag.</English>
+			<Russian>250с. 2A72 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A72HE_DESC">
 			<English>30mm HE&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A72 30mm Cannon</English>
 			<German>30mm HE&lt;br/&gt;Geschosse: 250&lt;br/&gt;Verwendet in: 2A72 30-mm-Kanone</German>
+			<Russian>30мм Осколочно-фугасный снаряд&lt;br/&gt;Снарядов: 250&lt;br/&gt;Исп. в: 30мм пушка 2A72</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1904RND_2A38MAA_NAME">
 			<English>1904Rnd. 2A38M AA mag.</English>
+			<Russian>1904с. 2A38M ПВ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1904RND_2A38MAA_DESC">
 			<English>30mm AA&lt;br/&gt;Rounds: 1904&lt;br/&gt;Used in: 2A38M 30mm Cannon</English>
 			<German>30mm AA&lt;br/&gt;Geschosse: 1904&lt;br/&gt;Verwendet in: 2A38M 30-mm-Kanone</German>
+			<Russian>30мм Противовоздушный снаряд&lt;br/&gt;Снарядов: 1904&lt;br/&gt;Исп. в: 30мм пушка 2A38M</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1470RND_YAKB_NAME">
 			<English>1470Rnd. YakB mag.</English>
+			<Russian>1470п. ЯкБ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1470RND_YAKB_DESC">
 			<English>Caliber: 12.7x108mm&lt;br/&gt;Rounds: 1470&lt;br/&gt;Used in: YakB</English>
@@ -19493,13 +19512,14 @@
 			<Spanish>Calibre: 12.7x108mm&lt;br/&gt;Cartuchos: 1470&lt;br/&gt;Usado en: YakB</Spanish>
 			<Italian>Calibro: 12.7x108mm&lt;br/&gt;Munizioni: 1470&lt;br/&gt;Usato in: YakB</Italian>
 			<Polish>Kaliber: 12.7x108mm&lt;br/&gt;Naboje: 1470&lt;br/&gt;Uzywany w: YakB</Polish>
-			<Russian>Патрон: 12.7x108mm &lt;br/&gt;Количество: 1470&lt;br/&gt;Исп. в: YakB</Russian>
+			<Russian>Калибр: 12.7x108мм&lt;br/&gt;Количество: 1470&lt;br/&gt;Исп. в: ЯкБ</Russian>
 			<German>Kaliber: 12.7x108mm&lt;br/&gt;Patronen: 1470&lt;br/&gt;Verwendet in: YakB</German>
 			<Czech>Kalibr: 12.7x108mm&lt;br/&gt;Nábojů: 1470&lt;br/&gt;Pro: YakB</Czech>
 			<Hungarian>Kaliber: 12.7x108mm&lt;br/&gt; Töltények: 1470&lt;br/&gt; Hozzá tartozó fegyver: YakB</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_750RND_M197_NAME">
 			<English>750Rnd. M197 mag.</English>
+			<Russian>750п. M197 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_750RND_M197_DESC">
 			<English>Caliber: 20mm&lt;br/&gt;Rounds: 750&lt;br/&gt;Used in: M197</English>
@@ -19507,13 +19527,14 @@
 			<Spanish>Calibre: 20mm&lt;br/&gt;Cartuchos: 750&lt;br/&gt;Usado en: M197</Spanish>
 			<Italian>Calibro: 20mm&lt;br/&gt;Munizioni: 750&lt;br/&gt;Usato in: M197</Italian>
 			<Polish>Kaliber: 20mm&lt;br/&gt;Naboje: 750&lt;br/&gt;Uzywany w: M197</Polish>
-			<Russian>Патрон: 20mm &lt;br/&gt;Количество: 750&lt;br/&gt;Исп. в: M197</Russian>
+			<Russian>Калибр: 20мм&lt;br/&gt;Количество: 750&lt;br/&gt;Исп. в: M197</Russian>
 			<German>Kaliber: 20mm&lt;br/&gt;Patronen: 750&lt;br/&gt;Verwendet in: M197</German>
 			<Czech>Kalibr: 20mm&lt;br/&gt;Nábojů: 750&lt;br/&gt;Pro: M197</Czech>
 			<Hungarian>Kaliber: 20mm&lt;br/&gt; Töltények: 750&lt;br/&gt; Hozzá tartozó fegyver: M197</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2100RND_M168_NAME">
 			<English>2100Rnd. M168 mag.</English>
+			<Russian>2100п. M168 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2100RND_M168_DESC">
 			<English>Caliber: 20mm&lt;br/&gt;Rounds: 2100&lt;br/&gt;Used in: M168</English>
@@ -19521,13 +19542,14 @@
 			<Spanish>Calibre: 20mm&lt;br/&gt;Cartuchos: 2100&lt;br/&gt;Usado en: M168</Spanish>
 			<Italian>Calibro: 20mm&lt;br/&gt;Munizioni: 2100&lt;br/&gt;Usato in: M168</Italian>
 			<Polish>Kaliber: 20mm&lt;br/&gt;Naboje: 2100&lt;br/&gt;Uzywany w: M168</Polish>
-			<Russian>Патрон: 20mm &lt;br/&gt;Количество: 2100&lt;br/&gt;Исп. в: M168</Russian>
+			<Russian>Калибр: 20мм&lt;br/&gt;Количество: 2100&lt;br/&gt;Исп. в: M168</Russian>
 			<German>Kaliber: 20mm&lt;br/&gt;Patronen: 2100&lt;br/&gt;Verwendet in: M168</German>
 			<Czech>Kalibr: 20mm&lt;br/&gt;Nábojů: 2100&lt;br/&gt;Pro: M168</Czech>
 			<Hungarian>Kaliber: 20mm&lt;br/&gt; Töltények: 2100&lt;br/&gt; Hozzá tartozó fegyver: M168</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_AZP85_NAME">
 			<English>2000Rnd. AZP85 mag.</English>
+			<Russian>2000п. АЗП-85 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_AZP85_DESC">
 			<English>Caliber: 23mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: AZP85</English>
@@ -19535,13 +19557,14 @@
 			<Spanish>Calibre: 23mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: AZP85</Spanish>
 			<Italian>Calibro: 23mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: AZP85</Italian>
 			<Polish>Kaliber: 23mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: AZP85</Polish>
-			<Russian>Патрон: 23mm &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: AZP85</Russian>
+			<Russian>Калибр: 23мм&lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: АЗП-85</Russian>
 			<German>Kaliber: 23mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Verwendet in: AZP85</German>
 			<Czech>Kalibr: 23mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: AZP85</Czech>
 			<Hungarian>Kaliber: 23mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: AZP85</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_AZP85_NAME">
 			<English>40Rnd. AZP85 mag.</English>
+			<Russian>40п. АЗП-85 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_AZP85_DESC">
 			<English>Caliber: 23mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: AZP85</English>
@@ -19549,13 +19572,14 @@
 			<Spanish>Calibre: 23mm&lt;br/&gt;Cartuchos: 40&lt;br/&gt;Usado en: AZP85</Spanish>
 			<Italian>Calibro: 23mm&lt;br/&gt;Munizioni: 40&lt;br/&gt;Usato in: AZP85</Italian>
 			<Polish>Kaliber: 23mm&lt;br/&gt;Naboje: 40&lt;br/&gt;Uzywany w: AZP85</Polish>
-			<Russian>Патрон: 23mm &lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: AZP85</Russian>
+			<Russian>Калибр: 23мм&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: АЗП-85</Russian>
 			<German>Kaliber: 23mm&lt;br/&gt;Patronen: 40&lt;br/&gt;Verwendet in: AZP85</German>
 			<Czech>Kalibr: 23mm&lt;br/&gt;Nábojů: 40&lt;br/&gt;Pro: AZP85</Czech>
 			<Hungarian>Kaliber: 23mm&lt;br/&gt; Töltények: 40&lt;br/&gt; Hozzá tartozó fegyver: AZP85</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1000RND_2A14HE_NAME">
 			<English>1000Rnd. 2A14 HE mag.</English>
+			<Russian>1000п. 2A14 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1000RND_2A14HE_DESC">
 			<English>Caliber: 23mm HE&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: 2A14</English>
@@ -19563,13 +19587,14 @@
 			<Spanish>Calibre: 23mm HE&lt;br/&gt;Cartuchos: 1000&lt;br/&gt;Usado en: 2A14</Spanish>
 			<Italian>Calibro: 23mm HE&lt;br/&gt;Munizioni: 1000&lt;br/&gt;Usato in: 2A14</Italian>
 			<Polish>Kaliber: 23mm HE&lt;br/&gt;Naboje: 1000&lt;br/&gt;Uzywany w: 2A14</Polish>
-			<Russian>Патрон: 23mm HE &lt;br/&gt;Количество: 1000&lt;br/&gt;Исп. в: 2A14</Russian>
+			<Russian>Патрон: 23мм Осколочно-фугасный&lt;br/&gt;Количество: 1000&lt;br/&gt;Исп. в: 2A14</Russian>
 			<German>Kaliber: 23mm HE&lt;br/&gt;Patronen: 1000&lt;br/&gt;Verwendet in: 2A14</German>
 			<Czech>Kalibr: 23mm HE&lt;br/&gt;Nábojů: 1000&lt;br/&gt;Pro: 2A14</Czech>
 			<Hungarian>Kaliber: 23mm HE&lt;br/&gt; Töltények: 1000&lt;br/&gt; Hozzá tartozó fegyver: 2A14</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1000RND_2A14AP_NAME">
 			<English>1000Rnd. 2A14 AP mag.</English>
+			<Russian>1000п. 2A14 ББ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1000RND_2A14AP_DESC">
 			<English>Caliber: 23mm AP&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: 2A14</English>
@@ -19577,13 +19602,14 @@
 			<Spanish>Calibre: 23mm AP&lt;br/&gt;Cartuchos: 1000&lt;br/&gt;Usado en: 2A14</Spanish>
 			<Italian>Calibro: 23mm AP&lt;br/&gt;Munizioni: 1000&lt;br/&gt;Usato in: 2A14</Italian>
 			<Polish>Kaliber: 23mm AP&lt;br/&gt;Naboje: 1000&lt;br/&gt;Uzywany w: 2A14</Polish>
-			<Russian>Патрон: 23mm AP &lt;br/&gt;Количество: 1000&lt;br/&gt;Исп. в: 2A14</Russian>
+			<Russian>Патрон: 23мм Бронебойный&lt;br/&gt;Количество: 1000&lt;br/&gt;Исп. в: 2A14</Russian>
 			<German>Kaliber: 23mm AP&lt;br/&gt;Patronen: 1000&lt;br/&gt;Verwendet in: 2A14</German>
 			<Czech>Kalibr: 23mm AP&lt;br/&gt;Nábojů: 1000&lt;br/&gt;Pro: 2A14</Czech>
 			<Hungarian>Kaliber: 23mm AP&lt;br/&gt; Töltények: 1000&lt;br/&gt; Hozzá tartozó fegyver: 2A14</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_520RND_GSh23L_NAME">
 			<English>520Rnd. GSh23L mag.</English>
+			<Russian>520п. ГШ-23Л маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_520RND_GSh23L_DESC">
 			<English>Caliber: 23mm&lt;br/&gt;Rounds: 520&lt;br/&gt;Used in: GSh23L</English>
@@ -19591,13 +19617,14 @@
 			<Spanish>Calibre: 23mm&lt;br/&gt;Cartuchos: 520&lt;br/&gt;Usado en: GSh23L</Spanish>
 			<Italian>Calibro: 23mm&lt;br/&gt;Munizioni: 520&lt;br/&gt;Usato in: GSh23L</Italian>
 			<Polish>Kaliber: 23mm&lt;br/&gt;Naboje: 520&lt;br/&gt;Uzywany w: GSh23L</Polish>
-			<Russian>Патрон: 23mm &lt;br/&gt;Количество: 520&lt;br/&gt;Исп. в: GSh23L</Russian>
+			<Russian>Калибр: 23мм&lt;br/&gt;Количество: 520&lt;br/&gt;Исп. в: ГШ-23Л</Russian>
 			<German>Kaliber: 23mm&lt;br/&gt;Patronen: 520&lt;br/&gt;Verwendet in: GSh23L</German>
 			<Czech>Kalibr: 23mm&lt;br/&gt;Nábojů: 520&lt;br/&gt;Pro: GSh23L</Czech>
 			<Hungarian>Kaliber: 23mm&lt;br/&gt; Töltények: 520&lt;br/&gt; Hozzá tartozó fegyver: GSh23L</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_300RND_GAU12_NAME">
 			<English>300Rnd. GAU12 mag.</English>
+			<Russian>300п. GAU12 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_300RND_GAU12_DESC">
 			<English>Caliber: 25mm HE&lt;br/&gt;Rounds: 300&lt;br/&gt;Used in: GAU12</English>
@@ -19605,13 +19632,14 @@
 			<Spanish>Calibre: 25mm HE&lt;br/&gt;Cartuchos: 300&lt;br/&gt;Usado en: GAU12</Spanish>
 			<Italian>Calibro: 25mm HE&lt;br/&gt;Munizioni: 300&lt;br/&gt;Usato in: GAU12</Italian>
 			<Polish>Kaliber: 25mm HE&lt;br/&gt;Naboje: 300&lt;br/&gt;Uzywany w: GAU12</Polish>
-			<Russian>Патрон: 25mm HE &lt;br/&gt;Количество: 300&lt;br/&gt;Исп. в: GAU12</Russian>
+			<Russian>Патрон: 25мм Осколочно-фугасный&lt;br/&gt;Количество: 300&lt;br/&gt;Исп. в: GAU12</Russian>
 			<German>Kaliber: 25mm HE&lt;br/&gt;Patronen: 300&lt;br/&gt;Verwendet in: GAU12</German>
 			<Czech>Kalibr: 25mm HE&lt;br/&gt;Nábojů: 300&lt;br/&gt;Pro: GAU12</Czech>
 			<Hungarian>Kaliber: 25mm HE&lt;br/&gt; Töltények: 300&lt;br/&gt; Hozzá tartozó fegyver: GAU12</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_M242HE_NAME">
 			<English>210Rnd. M242 HE mag.</English>
+			<Russian>210п. M242 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_M242HE_DESC">
 			<English>Caliber: 25mm HE&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: M242</English>
@@ -19619,13 +19647,14 @@
 			<Spanish>Calibre: 25mm HE&lt;br/&gt;Cartuchos: 210&lt;br/&gt;Usado en: M242</Spanish>
 			<Italian>Calibro: 25mm HE&lt;br/&gt;Munizioni: 210&lt;br/&gt;Usato in: M242</Italian>
 			<Polish>Kaliber: 25mm HE&lt;br/&gt;Naboje: 210&lt;br/&gt;Uzywany w: M242</Polish>
-			<Russian>Патрон: 25mm HE &lt;br/&gt;Количество: 210&lt;br/&gt;Исп. в: M242</Russian>
+			<Russian>Патрон: 25мм Осколочно-фугасный&lt;br/&gt;Количество: 210&lt;br/&gt;Исп. в: M242</Russian>
 			<German>Kaliber: 25mm HE&lt;br/&gt;Patronen: 210&lt;br/&gt;Verwendet in: M242</German>
 			<Czech>Kalibr: 25mm HE&lt;br/&gt;Nábojů: 210&lt;br/&gt;Pro: M242</Czech>
 			<Hungarian>Kaliber: 25mm HE&lt;br/&gt; Töltények: 210&lt;br/&gt; Hozzá tartozó fegyver: M242</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_M242AP_NAME">
 			<English>210Rnd. M242 AP mag.</English>
+			<Russian>210п. M242 ББ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_M242AP_DESC">
 			<English>Caliber: 25mm AP&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: M242</English>
@@ -19633,13 +19662,14 @@
 			<Spanish>Calibre: 25mm AP&lt;br/&gt;Cartuchos: 210&lt;br/&gt;Usado en: M242</Spanish>
 			<Italian>Calibro: 25mm AP&lt;br/&gt;Munizioni: 210&lt;br/&gt;Usato in: M242</Italian>
 			<Polish>Kaliber: 25mm AP&lt;br/&gt;Naboje: 210&lt;br/&gt;Uzywany w: M242</Polish>
-			<Russian>Патрон: 25mm AP &lt;br/&gt;Количество: 210&lt;br/&gt;Исп. в: M242</Russian>
+			<Russian>Патрон: 25мм Бронебойный&lt;br/&gt;Количество: 210&lt;br/&gt;Исп. в: M242</Russian>
 			<German>Kaliber: 25mm AP&lt;br/&gt;Patronen: 210&lt;br/&gt;Verwendet in: M242</German>
 			<Czech>Kalibr: 25mm AP&lt;br/&gt;Nábojů: 210&lt;br/&gt;Pro: M242</Czech>
 			<Hungarian>Kaliber: 25mm AP&lt;br/&gt; Töltények: 210&lt;br/&gt; Hozzá tartozó fegyver: M242</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1350RND_GAU8_NAME">
 			<English>1350Rnd. GAU-8 mag.</English>
+			<Russian>1350п. GAU-8 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1350RND_GAU8_DESC">
 			<English>Caliber: 30mm AP&lt;br/&gt;Rounds: 1350&lt;br/&gt;Used in: GAU-8</English>
@@ -19647,13 +19677,14 @@
 			<Spanish>Calibre: 30mm AP&lt;br/&gt;Cartuchos: 1350&lt;br/&gt;Usado en: GAU-8</Spanish>
 			<Italian>Calibro: 30mm AP&lt;br/&gt;Munizioni: 1350&lt;br/&gt;Usato in: GAU-8</Italian>
 			<Polish>Kaliber: 30mm AP&lt;br/&gt;Naboje: 1350&lt;br/&gt;Uzywany w: GAU-8</Polish>
-			<Russian>Патрон: 30mm AP &lt;br/&gt;Количество: 1350&lt;br/&gt;Исп. в: GAU-8</Russian>
+			<Russian>Патрон: 30мм Бронебойный&lt;br/&gt;Количество: 1350&lt;br/&gt;Исп. в: GAU-8</Russian>
 			<German>Kaliber: 30mm AP&lt;br/&gt;Patronen: 1350&lt;br/&gt;Verwendet in: GAU-8</German>
 			<Czech>Kalibr: 30mm AP&lt;br/&gt;Nábojů: 1350&lt;br/&gt;Pro: GAU-8</Czech>
 			<Hungarian>Kaliber: 30mm AP&lt;br/&gt; Töltények: 1350&lt;br/&gt; Hozzá tartozó fegyver: GAU-8</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_180RND_GSh301_NAME">
 			<English>180Rnd. GSh-301 HE mag.</English>
+			<Russian>180п. ГШ-301 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_180RND_GSh301_DESC">
 			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 180&lt;br/&gt;Used in: GSh-301</English>
@@ -19661,13 +19692,14 @@
 			<Spanish>Calibre: 30mm HE&lt;br/&gt;Cartuchos: 180&lt;br/&gt;Usado en: GSh-301</Spanish>
 			<Italian>Calibro: 30mm HE&lt;br/&gt;Munizioni: 180&lt;br/&gt;Usato in: GSh-301</Italian>
 			<Polish>Kaliber: 30mm HE&lt;br/&gt;Naboje: 180&lt;br/&gt;Uzywany w: GSh-301</Polish>
-			<Russian>Патрон: 30mm HE &lt;br/&gt;Количество: 180&lt;br/&gt;Исп. в: GSh-301</Russian>
+			<Russian>Патрон: 30мм Осколочно-фугасный&lt;br/&gt;Количество: 180&lt;br/&gt;Исп. в: ГШ-301</Russian>
 			<German>Kaliber: 30mm HE&lt;br/&gt;Patronen: 180&lt;br/&gt;Verwendet in: GSh-301</German>
 			<Czech>Kalibr: 30mm HE&lt;br/&gt;Nábojů: 180&lt;br/&gt;Pro: GSh-301</Czech>
 			<Hungarian>Kaliber: 30mm HE&lt;br/&gt; Töltények: 180&lt;br/&gt; Hozzá tartozó fegyver: GSh-301</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_750RND_GSh301_NAME">
 			<English>750Rnd. GSh-301 HE mag.</English>
+			<Russian>750п. ГШ-301 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_750RND_GSh301_DESC">
 			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 750&lt;br/&gt;Used in: GSh-301</English>
@@ -19675,13 +19707,14 @@
 			<Spanish>Calibre: 30mm HE&lt;br/&gt;Cartuchos: 750&lt;br/&gt;Usado en: GSh-301</Spanish>
 			<Italian>Calibro: 30mm HE&lt;br/&gt;Munizioni: 750&lt;br/&gt;Usato in: GSh-301</Italian>
 			<Polish>Kaliber: 30mm HE&lt;br/&gt;Naboje: 750&lt;br/&gt;Uzywany w: GSh-301</Polish>
-			<Russian>Патрон: 30mm HE &lt;br/&gt;Количество: 750&lt;br/&gt;Исп. в: GSh-301</Russian>
+			<Russian>Патрон: 30мм Осколочно-фугасный&lt;br/&gt;Количество: 750&lt;br/&gt;Исп. в: ГШ-301</Russian>
 			<German>Kaliber: 30mm HE&lt;br/&gt;Patronen: 750&lt;br/&gt;Verwendet in: GSh-301</German>
 			<Czech>Kalibr: 30mm HE&lt;br/&gt;Nábojů: 750&lt;br/&gt;Pro: GSh-301</Czech>
 			<Hungarian>Kaliber: 30mm HE&lt;br/&gt; Töltények: 750&lt;br/&gt; Hozzá tartozó fegyver: GSh-301</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119HE_NAME">
 			<English>30Rnd. M119 HE mag.</English>
+			<Russian>30с. M119 ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119HE_DESC">
 			<English>Caliber: 105mm HE&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -19689,13 +19722,14 @@
 			<Spanish>Calibre: 105mm HE&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
 			<Italian>Calibro: 105mm HE&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
 			<Polish>Kaliber: 105mm HE&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
-			<Russian>Патрон: 105mm HE &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<Russian>Снаряд: 105мм Осколочно-фугасный&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
 			<German>Kaliber: 105mm HE&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
 			<Czech>Kalibr: 105mm HE&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
 			<Hungarian>Kaliber: 105mm HE&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119WP_NAME">
 			<English>30Rnd. M119 WP mag.</English>
+			<Russian>30с. M119 БФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119WP_DESC">
 			<English>Caliber: 105mm WP&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -19703,13 +19737,14 @@
 			<Spanish>Calibre: 105mm WP&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
 			<Italian>Calibro: 105mm WP&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
 			<Polish>Kaliber: 105mm WP&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
-			<Russian>Патрон: 105mm WP &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<Russian>Снряд: 105мм с Белым фосфором&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
 			<German>Kaliber: 105mm WP&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
 			<Czech>Kalibr: 105mm WP&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
 			<Hungarian>Kaliber: 105mm WP&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119SADARM_NAME">
 			<English>30Rnd. M119 SADARM mag.</English>
+			<Russian>30с. M119 SADARM маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119SADARM_DESC">
 			<English>Caliber: 105mm SADARM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -19717,13 +19752,14 @@
 			<Spanish>Calibre: 105mm SADARM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
 			<Italian>Calibro: 105mm SADARM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
 			<Polish>Kaliber: 105mm SADARM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
-			<Russian>Патрон: 105mm SADARM &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<Russian>Снаряд: 105мм SADARM&lt;br/&gt;Автоматически попадают в ближайшую вражескую технику в точке удара.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
 			<German>Kaliber: 105mm SADARM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
 			<Czech>Kalibr: 105mm SADARM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
 			<Hungarian>Kaliber: 105mm SADARM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119LASER_NAME">
 			<English>30Rnd. M119 Laser mag.</English>
+			<Russian>30с. M119 Laser маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119LASER_DESC">
 			<English>Caliber: 105mm Laser&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -19731,7 +19767,7 @@
 			<Spanish>Calibre: 105mm Laser&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
 			<Italian>Calibro: 105mm Laser&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
 			<Polish>Kaliber: 105mm Laser&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
-			<Russian>Патрон: 105mm Laser &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<Russian>Снаряд: 105мм Laser с лазерным наведением&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
 			<German>Kaliber: 105mm Laser&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
 			<Czech>Kalibr: 105mm Laser&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
 			<Hungarian>Kaliber: 105mm Laser&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
@@ -19739,6 +19775,7 @@
 		<Key ID="STR_DZ_MAG_30RND_M119SMOKE_NAME">
 			<English>30Rnd. M119 Smoke mag.</English>
 			<German>30Rnd. M119 Rauch mag.</German>
+			<Russian>30с. M119 дым. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119SMOKE_DESC">
 			<English>Caliber: 105mm Smoke&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -19746,13 +19783,14 @@
 			<Spanish>Calibre: 105mm Smoke&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
 			<Italian>Calibro: 105mm Smoke&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
 			<Polish>Kaliber: 105mm Smoke&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
-			<Russian>Патрон: 105mm Smoke &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<Russian>Снаряд: 105мм Дымовой &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
 			<German>Kaliber: 105mm Rauch&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
 			<Czech>Kalibr: 105mm Smoke&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
 			<Hungarian>Kaliber: 105mm Smoke&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119ILLUM_NAME">
 			<English>30Rnd. M119 ILLUM mag.</English>
+			<Russian>30с. M119 осв. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119ILLUM_DESC">
 			<English>Caliber: 105mm ILLUM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -19760,7 +19798,7 @@
 			<Spanish>Calibre: 105mm ILLUM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
 			<Italian>Calibro: 105mm ILLUM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
 			<Polish>Kaliber: 105mm ILLUM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
-			<Russian>Патрон: 105mm ILLUM &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<Russian>Снаряд: 105мм Осветительный &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
 			<German>Kaliber: 105mm ILLUM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
 			<Czech>Kalibr: 105mm ILLUM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
 			<Hungarian>Kaliber: 105mm ILLUM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
