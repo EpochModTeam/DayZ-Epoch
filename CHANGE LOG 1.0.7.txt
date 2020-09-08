@@ -44,6 +44,7 @@
 [NEW] Salivals Change Code is part of Epoch now. (5e296fc0) @AirwavesMan
 [NEW] ZSC with global banking added. Pull request # 2076. @oiad @worldwidesorrow @DevZupa
 [NEW] Remote messaging with localization added. Pull request # 2076. @oiad @worldwidesorrow @BigEgg17
+[NEW] Almost all epoch vehicles can be upgraded now. This includes trucks, helicopters and APCs. @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -122,6 +123,7 @@
 [UPDATED] Relogging with a chainsaw in the backpack will delete the chainsaw gas instead of refilling it. (132e9506) @AirwavesMan
 [UPDATED] The group invite message contains the name of the inviter now. (396d0313) @ch0c @AirwavesMan
 [UPDATED] Harvest wood with a hatchet drops wood piles or wooden logs now. (ae79f4ce) @AirwavesMan
+[UPDATED] The maintain animation is interruptible now. (910ab43a) @AirwavesMan
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
 [REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow
