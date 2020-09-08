@@ -28,7 +28,7 @@ if (_option == 1) then {
 			};
 	} count _objectsInfo;
 	_name = if (alive _player) then { name _player; } else { "Dead Player"; };
-	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3", _name, (count _objectsInfo), (getPosATL _player)];
+	diag_log format ["MAINTAIN AREA BY %1 - %2 Objects at %3, Grid: %4", _name, (count _objectsInfo), (getPosATL _player), mapGridPosition(getPosATL _player)];
 } else {
 	_obj = _objectsInfo select 0;
 	_ID = _objectsInfo select 1;
