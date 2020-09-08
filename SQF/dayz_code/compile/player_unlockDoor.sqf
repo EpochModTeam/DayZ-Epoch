@@ -7,7 +7,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_21" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID"];
+private ["_display","_displayCombo","_displayEye","_doorMethod","_hasAccess","_notNearestPlayer","_obj","_objectCharacterID","_code"];
 
 _doorMethod = "";
 _displayCombo = findDisplay 41144;
@@ -46,6 +46,8 @@ if (!isNull dayz_selectedDoor) then {
 		if (DZE_Lock_Door == _objectCharacterID) then {
 			_display closeDisplay 2;
 
+			_code = [DZE_Lock_Door,format ["%1 - EYESCAN",_objectCharacterID]] select (_doorMethod == "EYE");
+
 			if !(typeof _obj in ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"]) then {
 				[player,"combo_unlock",0,false] call dayz_zombieSpeak;
 
@@ -56,10 +58,10 @@ if (!isNull dayz_selectedDoor) then {
 					_obj animate ["Open_latch", 1];
 				};
 
-				PVDZE_handleSafeGear = [player,_obj,5,if (_doorMethod == "EYE") then {"EYESCAN"} else {DZE_Lock_Door}];
+				PVDZE_handleSafeGear = [player,_obj,5,_code];
 				publicVariableServer "PVDZE_handleSafeGear";
 			} else {
-				GateMethod = [DZE_Lock_Door,"EYESCAN"] select (_doorMethod == "EYE");
+				GateMethod = _code;
 			};
 
 			if (_doorMethod == "Eye") then {

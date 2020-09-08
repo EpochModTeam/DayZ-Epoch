@@ -3,10 +3,10 @@
 	Usage: _obj spawn player_lockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_obj","_ownerID","_text","_playerNear","_ComboMatch","_objType"];
-
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_code","_lockedClass","_obj","_ownerID","_text","_ComboMatch","_objType"];
 
 player removeAction s_player_lockvault;
 s_player_lockvault = 1;
@@ -37,7 +37,9 @@ if (!isNull _obj) then {
 		[player,"safeclose",0,false] call dayz_zombieSpeak;
 	};
 
-	PVDZE_handleSafeGear = [player,_obj,1];
+	_code = [_obj getVariable["CharacterID","0"],dayz_combination] select (_ComboMatch);
+
+	PVDZE_handleSafeGear = [player,_obj,1,_code,dayz_authKey];
 	publicVariableServer "PVDZE_handleSafeGear";
 
 	waitUntil {!isNil "dze_waiting"}; // wait for response from server to verify safe was logged and saved before proceeding

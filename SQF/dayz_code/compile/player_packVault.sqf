@@ -1,11 +1,11 @@
+/*
+	_obj spawn player_packVault;
+*/
+
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-/*
-	[_obj] spawn player_packVault;
-*/
-
-private ["_obj","_ownerID","_objectID","_objectUID","_packedClass","_text","_playerNear","_finished","_ComboMatch","_typeOf"];
+private ["_code","_obj","_ownerID","_objectID","_objectUID","_packedClass","_text","_playerNear","_finished","_ComboMatch","_typeOf"];
 
 _obj = _this;
 _typeOf = typeOf _obj;
@@ -49,7 +49,9 @@ dze_waiting = nil;
 
 [_packedClass,objNull] call fn_waitForObject;
 
-PVDZE_handleSafeGear = [player,_obj,2];
+_code = [_obj getVariable["CharacterID","0"],dayz_combination] select (_ComboMatch);
+
+PVDZE_handleSafeGear = [player,_obj,2,_code,dayz_authKey];
 publicVariableServer "PVDZE_handleSafeGear";
 
 waitUntil {!isNil "dze_waiting"}; // wait for response from server to verify pack was logged and gear added before proceeding

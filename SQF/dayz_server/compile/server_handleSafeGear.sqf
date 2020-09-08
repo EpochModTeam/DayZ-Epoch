@@ -1,4 +1,4 @@
-private ["_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons","_message","_suppliedCode","_damage","_coins","_wealth"];
+private ["_exitReason","_clientKey","_backpacks","_charID","_clientID","_dir","_holder","_lockCode","_lockedClass","_magazines","_name","_obj","_objectID","_objectUID","_ownerID","_packedClass","_player","_playerUID","_pos","_status","_statusText","_type","_unlockedClass","_vector","_weapons","_message","_suppliedCode","_damage","_coins","_wealth"];
 
 _player = _this select 0;
 _obj = _this select 1;
@@ -14,11 +14,10 @@ _objectID = _obj getVariable ["ObjectID","0"];
 _objectUID = _obj getVariable ["ObjectUID","0"];
 _ownerID = _obj getVariable ["ownerPUID","0"];
 _lockCode = _charID;
+_suppliedCode = [_charID,_this select 3] select (count _this > 3);
+_exitReason = "";
 
-if (count _this > 3) then {
-	_suppliedCode = _this select 3;
-	if (_status != 3 && {_status != 6}) then {_lockCode = _suppliedCode;};
-};
+if (_status != 3 && {_status != 6}) then {_lockCode = _suppliedCode;};
 
 // Player may have disconnected or died before message send. Attempt lock/unlock/pack/save procedure anyway
 if (isNull _player) then {diag_log "ERROR: server_handleSafeGear called with Null player object";};
@@ -30,7 +29,7 @@ _statusText = call {
 	if (_status == 0) exitwith {"UNLOCKED"}; // unlock safe/lockbox
 	if (_status == 1) exitwith {"LOCKED"}; // lock safe/lockbox
 	if (_status == 5) exitwith {"UNLOCKED"}; // unlock door
-	if (_status == 4) exitwith {"LOCKED"}; // lock door
+	if (_status == 4) exitwith {_lockCode = _charID; "LOCKED"}; // lock door
 	if (_status == 3) exitwith {"FAILED unlocking"}; // failed unlock safe/lockbox
 	if (_status == 6) exitwith {"FAILED unlocking"}; // failed unlocking door
 	if (_status == 2) exitwith {"PACKED"}; // pack safe/lockbox
@@ -43,6 +42,13 @@ if (isNull _obj) exitWith {
 		_clientID publicVariableClient "dze_waiting";
 	};
 };
+
+if !(_type in DZE_DoorsLocked) then {
+	_clientKey = _this select 4;
+	_exitReason = [_this,_statusText,(getPosATL _obj),_clientKey,_playerUID,_player] call server_verifySender;
+};
+
+if (_exitReason != "") exitWith {diag_log _exitReason};
 
 call {
 	if (_status == 0) exitwith { //Unlocking
@@ -119,7 +125,7 @@ call {
 		if (Z_singleCurrency && {_coins > 0}) then {
 			_wealth = _player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 			_player setVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),_wealth + _coins,true];
-			
+
 			RemoteMessage = ["systemChat",["STR_CL_ZSC_PACK_WARNING",_type,[_coins] call BIS_fnc_numberText,CurrencyName]];
 			(owner _player) publicVariableClient "RemoteMessage";
 		};
@@ -131,14 +137,18 @@ call {
 
 if (_status < 4) then {
 	_type = call {
-		if (_type == "VaultStorageLocked" || {_type == "VaultStorage"}) exitwith {
+		if (_type == "VaultStorageLocked" || _type == "VaultStorage") exitwith {
+			if (_ownerID == _playerUID) then {_lockCode = format["%1 - Owner",_lockCode];};
 			"Safe"
 		};
-		if (_type == "LockboxStorage") exitwith {
-			"LockBox"
-		};
-		if (_type == "LockboxStorageLocked") exitwith {
-			_lockCode = _charID call fnc_lockCode;
+		if (_type == "LockboxStorage" || _type == "LockboxStorageLocked") exitwith {
+			if (_ownerID == _playerUID) then {
+				_lockCode = _charID call fnc_lockCode;
+				_lockCode = format["%1 - Owner",_lockCode];
+			} else {
+				_lockCode = _charID call fnc_lockCode;
+			};
+
 			if (_status == 3) then {_suppliedCode = _suppliedCode call fnc_lockCode;};
 			"LockBox"
 		};
