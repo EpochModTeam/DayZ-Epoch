@@ -26075,8 +26075,8 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_SUCCESS">
 			<English>Success! %1 objects maintained for %2 %3</English>
-			<German>Du hast %1 Objekt(e) erfolgreich saniert für %2 %3.</German>
-			<Russian>Успешно! Обслужено объектов: %1 за %2 %3.</Russian>
+			<German>Du hast %1 Objekt(e) erfolgreich saniert für %2 %3</German>
+			<Russian>Успешно! Обслужено объектов: %1 за %2 %3</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE">
 			<English>Price to force maintain %1 objects: %2 %3</English>

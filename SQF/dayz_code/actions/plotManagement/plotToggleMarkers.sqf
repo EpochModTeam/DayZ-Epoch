@@ -1,20 +1,17 @@
 //Zero Remorse, big thanks to their scripter for this!
-private ["_speed","_density","_model","_thePlot","_center","_radius","_angle","_count","_axis","_obj","_idx","_a","_b"];
+private ["_density","_model","_thePlot","_center","_radius","_angle","_count","_axis","_obj","_idx","_a","_b"];
 
-_speed = 4; // multiplier for speed of sphere rotation/wobble
 _density = 3; // density of markers per ring
 _model = "Sign_sphere100cm_EP1"; // marker model to use on rings
-// Possible ones to use ::	Sign_sphere10cm_EP1  Sign_sphere25cm_EP1  Sign_sphere100cm_EP1 
+// Possible ones to use ::	Sign_sphere10cm_EP1  Sign_sphere25cm_EP1  Sign_sphere100cm_EP1
 
 _thePlot = (([player] call FNC_getPos) nearEntities ["Plastic_Pole_EP1_DZ",15]) select 0;
 _center = getPosASL _thePlot;
 _radius = DZE_PlotPole select 0;
 _obj = false;
-_tmp = -1;
 
 if (!isNil "PP_Marks") then {
 	if (((PP_Marks select 0) distance _thePlot) < 10) then {  _obj = true; };
-	_tmp = (PP_Marks select 0) distance _thePlot;
 	{ deleteVehicle _x; } count PP_Marks;
 	PP_Marks = nil;
 };
@@ -29,7 +26,7 @@ if ((isNil "PP_Marks") && (!_obj)) then {
 	_axis = _obj;
 	_obj setVectorUp [0, 0, 0];
 	PP_Marks set [count PP_Marks, _obj];
-	_angle = 0;	
+	_angle = 0;
 	for "_idx" from 0 to _count do {
 		_a = (_center select 0) + (sin(_angle)*_radius);
 		_b = (_center select 1) + (cos(_angle)*_radius);

@@ -32,7 +32,7 @@ class PlotManagement
 			x = 0.31 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "call PlotPreview;";
+			onButtonClick = "[] spawn PlotPreview;";
 		};
 
 		class RscShortcutButton_7010: ZSC_RscButtonMenu
@@ -42,7 +42,7 @@ class PlotManagement
 			x = 0.41 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "'maintain' call MaintainPlot;";
+			onButtonClick = "'maintain' spawn MaintainPlot;";
 		};
 
 		class RscShortcutButton_7011: ZSC_RscButtonMenu
@@ -52,7 +52,7 @@ class PlotManagement
 			x = 0.51 * safezoneW + safezoneX;
 			y = 0.22 * safezoneH + safezoneY;
 			w = 0.08 * safezoneW;
-			onButtonClick = "'force' call MaintainPlot;";
+			onButtonClick = "'force' spawn MaintainPlot;";
 		};
 
 		class RscText_7012: ZSC_RscText
