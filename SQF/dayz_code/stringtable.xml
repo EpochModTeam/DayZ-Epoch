@@ -30131,6 +30131,79 @@
 			<English>A dog tag from a killed bandit. Perhaps it can be sold at the Hero Trader.</English>
 			<German>Die Hundemarke eines getöteten Banditen. Vielleicht kann die Marke beim Heldenhändler verkauft werden.</German>
 		</Key>	
+		<Key ID="STR_EPOCH_BLOODBAG_INFECTED">
+			<English>Blood Bag (infected)</English>
+			<German>Blutkonserve (infiziert)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_INFECTED_DESC">
+			<English>A blood bag filled with blood that looks strange.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut, welches komisch aussieht.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_BLOODBAG_ZOMBIE">
+			<English>Zombie Blood</English>
+			<German>Zombieblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_ZOMBIE_DESC">
+			<English>A blood bag filled with blood from a zombie.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut eines Zombies.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BLOODBAG_RABBIT">
+			<English>Rabbit Blood</English>
+			<German>Hasenblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_RABBIT_DESC">
+			<English>A blood bag filled with blood from a rabbit.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut eines Hasen.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_BLOODBAG_CHICKEN">
+			<English>Chicken Blood</English>
+			<German>Hühnerblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_CHICKEN_DESC">
+			<English>A blood bag filled with blood from a hen or a cock.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut einer Henne oder eines Hahns.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_DOG">
+			<English>Dog Blood</English>
+			<German>Hundeblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_DOG_DESC">
+			<English>A blood bag filled with blood from a dog.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut eines Hundes.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_COW">
+			<English>Cow Blood</English>
+			<German>Kuhblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_COW_DESC">
+			<English>A blood bag filled with blood from a cow.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut einer Kuh.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_BOAR">
+			<English>Boar Blood</English>
+			<German>Wildschweinblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_BOAR_DESC">
+			<English>A blood bag filled with blood from a boar.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut eines Wildschweins.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_GOAT">
+			<English>Goat Blood</English>
+			<German>Ziegenblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_GOAT_DESC">
+			<English>A blood bag filled with blood from a goat.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut einer Ziege.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_SHEEP">
+			<English>Sheep Blood</English>
+			<German>Schafsblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_SHEEP_DESC">
+			<English>A blood bag filled with blood from a sheep.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut eines Schafes.</German>
+		</Key>		
+		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">

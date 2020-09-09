@@ -221,3 +221,93 @@ class ItemBloodbag: CA_Magazine
 		};
 	};
 };
+
+class ItemBloodbagInfected: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_INFECTED";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_INFECTED_DESC";
+};
+
+class ItemBloodbagZombie: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_ZOMBIE";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_ZOMBIE_DESC";
+};
+
+class ItemBloodbagRabbit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_RABBIT";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_RABBIT_DESC";
+};
+
+class ItemBloodbagChicken: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_CHICKEN";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_CHICKEN_DESC";
+};
+
+class ItemBloodbagDog: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_DOG";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_DOG_DESC";
+};
+
+class ItemBloodbagCow: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_COW";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_COW_DESC";
+};
+
+class ItemBloodbagBoar: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_BOAR";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_BOAR_DESC";
+};
+
+class ItemBloodbagGoat: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_GOAT";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_GOAT_DESC";
+};
+
+class ItemBloodbagSheep: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_SHEEP";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_SHEEP_DESC";
+};
