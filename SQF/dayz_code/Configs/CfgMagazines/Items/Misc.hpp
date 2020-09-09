@@ -1,14 +1,3 @@
-class ItemZombieParts: CA_Magazine
-{
-	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_EPOCH_ZOMBIEPARTS;
-	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
-	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_DESC;
-};
-
 class ItemHotwireKit: CA_Magazine 
 {
 	scope = 2;

@@ -25055,6 +25055,118 @@
 			<German>Zombiefleisch im Sack: Kann beim Medizin-Händler gegen Biofleisch eingetauscht werden.</German>
 			<Russian>Куски плоти в мешке: Обменяйте их на органическое мясо у торговцев медициной.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEAD">
+			<English>Zombie Head</English>
+			<German>Zombiekopf</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEAD_DESC">
+			<English>Zombie Head in a Bag.</English>
+			<German>Zombiekopf in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_LEG">
+			<English>Zombie Leg</English>
+			<German>Zombiebein</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_LEG_DESC">
+			<English>Zombie Leg in a Bag.</English>
+			<German>Zombiebein in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_ARM">
+			<English>Zombie Arm</English>
+			<German>Zombiearm</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_ARM_DESC">
+			<English>Zombie Arm in a Bag.</English>
+			<German>Zombiearm in einem Sack.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_BRAIN">
+			<English>Zombie Brain</English>
+			<German>Zombiegehirn</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_BRAIN_DESC">
+			<English>Zombie Brain in a Bag.</English>
+			<German>Zombiegehirn in einem Sack.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_HAND">
+			<English>Zombie Hand</English>
+			<German>Zombiehand</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_HAND_DESC">
+			<English>Zombie Hand in a Bag.</English>
+			<German>Zombiehand in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_FINGER">
+			<English>Zombie Finger</English>
+			<German>Zombiefinger</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_FINGER_DESC">
+			<English>Zombie Finger in a Bag.</English>
+			<German>Zombiefinger in einem Sack.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_FOOT">
+			<English>Zombie Foot</English>
+			<German>Zombiefuß</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_FOOT_DESC">
+			<English>Zombie Foot in a Bag.</English>
+			<German>Zombiefuß in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_TOE">
+			<English>Zombie Toe</English>
+			<German>Zombiezeh</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_TOE_DESC">
+			<English>Zombie Toe in a Bag.</English>
+			<German>Zombiezeh in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_LIVER">
+			<English>Zombie Liver</English>
+			<German>Zombieleber</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_LIVER_DESC">
+			<English>Zombie Liver in a Bag.</English>
+			<German>Zombieleber in einem Sack.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEART">
+			<English>Zombie Heart</English>
+			<German>Zombieherz</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEART_DESC">
+			<English>Zombie Heart in a Bag.</English>
+			<German>Zombieherz in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_EYES">
+			<English>Zombie Eyes</English>
+			<German>Zombieaugen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_EYES_DESC">
+			<English>Zombie Eyes in a Bag.</English>
+			<German>Zombieaugen in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_TONGUE">
+			<English>Zombie Tongue</English>
+			<German>Zombiezunge</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_TONGUE_DESC">
+			<English>Zombie Tongue in a Bag.</English>
+			<German>Zombiezunge in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_TEETH">
+			<English>Zombie Teeth</English>
+			<German>Zombiezähne</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_TEETH_DESC">
+			<English>Zombie Teeth in a Bag.</English>
+			<German>Zombiezähne in einem Sack.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_SKIN">
+			<English>Zombie Skin</English>
+			<German>Zombiehaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_ZOMBIEPARTS_SKIN_DESC">
+			<English>Zombie Skin in a Bag.</English>
+			<German>Zombiehaut in einem Sack.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
 			<German>Zahlenschloss</German>
