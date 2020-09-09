@@ -5,14 +5,14 @@ serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","RU_Citizen4","Profit
 /***************Hero Vendor*********/
 menu_FR_AC = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",1],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",2],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",3],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",4],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",5]],
-	[],
+	[["","ItemDogTagBandit",1,1,150]],
 	"hero"
 ];
 if (Z_singleCurrency) then {(menu_FR_AC select 0) set [count (menu_FR_AC select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
 /***************Bandit Vendor*********/
 menu_GUE_Commander = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_AIRVEHICLES",6],[localize "STR_EPOCH_TRADER_CATEGORY_GROUNDVEHICLES",7],[localize "STR_EPOCH_TRADER_CATEGORY_WEAPONS",8],[localize "STR_EPOCH_TRADER_CATEGORY_AMMUNITION",9],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",10]],
-	[],
+	[["","ItemDogTagHero",1,1,-150]],
 	"hostile"
 ];
 if (Z_singleCurrency) then {(menu_GUE_Commander select 0) set [count (menu_GUE_Commander select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
@@ -41,14 +41,14 @@ menu_Profiteer1 = [
 /***************General Store*********/
 menu_Rita_Ensler_EP1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_PACKAGEFOOD",27],[localize "STR_EPOCH_TRADER_CATEGORY_COOKMEAT",28],[localize "STR_EPOCH_TRADER_CATEGORY_DRINKS",29],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",30],[localize "STR_EPOCH_TRADER_CATEGORY_BACKPACKS",31],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",32]],
-	[["ItemTinBar","TrashJackDaniels",1,1]],
+	[["ItemTinBar","TrashJackDaniels",1,1,0]],
 	"neutral"
 ];
 
 /***************Medical Supplies*********/
 menu_Dr_Hladik_EP1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_MEDICALSUPPLIES",33]],
-	[["FoodBioMeat","ItemZombieParts",1,1]],
+	[["FoodBioMeat","ItemZombieParts",1,1,20]],
 	"neutral"
 ];
 
@@ -84,14 +84,14 @@ menu_RU_Citizen3 = [
 /***************General Store*********/
 menu_RU_WorkWoman1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_PACKAGEFOOD",27],[localize "STR_EPOCH_TRADER_CATEGORY_COOKMEAT",28],[localize "STR_EPOCH_TRADER_CATEGORY_DRINKS",29],[localize "STR_EPOCH_TRADER_CATEGORY_CLOTHES",30],[localize "STR_EPOCH_TRADER_CATEGORY_BACKPACKS",31],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",32]],
-	[["ItemTinBar","TrashJackDaniels",1,1]],
+	[["ItemTinBar","TrashJackDaniels",1,1,0]],
 	"friendly"
 ];
 
 /***************Medical Supplies*********/
 menu_Dr_Annie_Baker_EP1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_MEDICALSUPPLIES",33]],
-	[["FoodBioMeat","ItemZombieParts",1,1]],
+	[["FoodBioMeat","ItemZombieParts",1,1,20]],
 	"friendly"
 ];
 
