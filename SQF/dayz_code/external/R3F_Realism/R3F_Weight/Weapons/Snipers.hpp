@@ -62,6 +62,14 @@ class DMR_Gh_DZ
 {
 	weight = 8.7;
 };
+class DMR_DZE
+{
+	weight = 8.5;
+};
+class DMR_Gh_DZE
+{
+	weight = 8.7;
+};
 class Huntingrifle
 {
 	weight = 4;

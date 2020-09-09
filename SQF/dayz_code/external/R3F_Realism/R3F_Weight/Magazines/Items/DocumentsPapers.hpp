@@ -71,28 +71,89 @@ class equip_note
 // Vehicle upgrade parts
 class ItemORP
 {
-	weight = 0.1;
+	weight = 0.6;
 };
 
 class ItemAVE
 {
-	weight = 0.1;
+	weight = 0.6;
 };
 
 class ItemLRK
 {
-	weight = 0.1;
+	weight = 0.6;
 };
 
 class ItemTNK
 {
-	weight = 0.1;
+	weight = 0.6;
 };
 
 class ItemARM
 {
-	weight = 0.1;
+	weight = 0.6;
+}; 
+
+class ItemTruckORP
+{
+	weight = 0.6;
 };
+
+class ItemTruckAVE
+{
+	weight = 0.6;
+};
+
+class ItemTruckLRK
+{
+	weight = 0.6;
+};
+
+class ItemTruckTNK
+{
+	weight = 0.6;
+};
+
+class ItemTruckARM
+{
+	weight = 0.6;
+};
+
+class ItemTankORP
+{
+	weight = 0.6;
+};
+
+class ItemTankAVE
+{
+	weight = 0.6;
+};
+
+class ItemTankLRK
+{
+	weight = 0.6;
+};
+
+class ItemTankTNK
+{
+	weight = 0.6;
+};
+
+class ItemHeliAVE
+{
+	weight = 0.6;
+};
+
+class ItemHeliLRK
+{
+	weight = 0.6;
+};
+
+class ItemHeliTNK
+{
+	weight = 0.6;
+};
+
 class Blueprint_01
 {
 	weight = 0.3; 

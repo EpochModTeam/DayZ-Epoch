@@ -1,8 +1,3 @@
-class ItemZombieParts 
-{
-	weight = 5;
-};
-
 class ItemHotwireKit
 {
 	weight = 2;

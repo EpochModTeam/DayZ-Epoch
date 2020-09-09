@@ -182,3 +182,39 @@ class equip_herb_box
 { 
 	weight = 0.8; 
 };
+class ItemBloodbagInfected
+{
+	weight = 0.4;
+};
+class ItemBloodbagZombie
+{
+	weight = 0.4;
+};
+class ItemBloodbagRabbit
+{
+	weight = 0.4;
+};
+class ItemBloodbagChicken
+{
+	weight = 0.4;
+};
+class ItemBloodbagDog
+{
+	weight = 0.4;
+};
+class ItemBloodbagCow
+{
+	weight = 0.4;
+};
+class ItemBloodbagBoar
+{
+	weight = 0.4;
+};
+class ItemBloodbagGoat
+{
+	weight = 0.4;
+};
+class ItemBloodbagSheep
+{
+	weight = 0.4;
+};

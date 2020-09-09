@@ -54,6 +54,7 @@ class CfgWeight
 		#include "Magazines\Items\ChainsawGas.hpp"
 		#include "Magazines\Items\Concrete.hpp"
 		#include "Magazines\Items\DocumentsPapers.hpp"
+		#include "Magazines\Items\DogTags.hpp"
 		#include "Magazines\Items\Electronics.hpp"
 		#include "Magazines\Items\Explosives.hpp"
 		#include "Magazines\Items\Flares.hpp"
@@ -68,6 +69,7 @@ class CfgWeight
 		#include "Magazines\Items\ToolCrafting.hpp"
 		#include "Magazines\Items\VehicleParts.hpp"
 		#include "Magazines\Items\Wood.hpp"
+		#include "Magazines\Items\ZombieParts.hpp"
 		#include "Magazines\Medical.hpp"
 		#include "Magazines\Trash.hpp"	
 		
