@@ -22187,12 +22187,24 @@
 			<Czech>Nenalezen žádný %1 v blízkosti 20 metrů.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_186">
-			<English>Traded %1 %2 for %3 %4</English>
-			<German>Du hast für %3 %4 %1 %2 gehandelt</German>
+			<English>Traded %1 %2 for %3 %4.</English>
+			<German>Du hast für %1 %2 %3 %4 erhalten.</German>
 			<Russian>Продано %1 %2 за %3 %4.</Russian>
-			<Dutch>Je hebt %1 %2 verhandeld voor %3 %4</Dutch>
-			<Czech>Vyobchodováno %1 %2 za %3 %4</Czech>
+			<Dutch>Je hebt %1 %2 verhandeld voor %3 %4.</Dutch>
+			<Czech>Vyobchodováno %1 %2 za %3 %4.</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_186_HUMANITY">
+			<English>Traded %1 %2 for %3 %4 and %5 %6.</English>
+			<German>Du hast für %1 %2 %3 %4 und %5 %6 erhalten.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_PLAYER_186_2">
+			<English>Traded %1 %2.</English>
+			<German>Du hast %1 %2 gehandelt.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLAYER_186_2_HUMANITY">
+			<English>Traded %1 %2 for %3 %4.</English>
+			<German>Du hast %1 %2 gehandelt und %3 %4 erhalten.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_187">
 			<English>Starting trade, stand still to complete trade %1 of %2.</English>
 			<German>Handel gestartet, bewege dich um den Vorgang abzubrechen. (%1 von %2)</German>
@@ -29983,7 +29995,31 @@
 			<English>Cooking tripod</English>
 			<German>Schwenkgrill</German>
 		</Key>
-
+		<Key ID="STR_EPOCH_DOGTAG">
+			<English>Dog Tag</English>
+			<German>Hundemarke</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOGTAG_DESC">
+			<English>A dog tag from a fallen soldier.</English>
+			<German>Die Hundemarke eines gefallenen Soldaten.</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOGTAG_HERO">
+			<English>Hero Dog Tag</English>
+			<German>Hundemarke eines Helden</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOGTAG_HERO_DESC">
+			<English>A dog tag from a killed hero. Perhaps it can be sold at the Bandit Trader.</English>
+			<German>Die Hundemarke eines getöteten Helden. Vielleicht kann die Marke beim Banditenhändler verkauft werden.</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOGTAG_BANDIT">
+			<English>Bandit Dog Tag</English>
+			<German>Hundemarke eines Banditen</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOGTAG_BANDIT_DESC">
+			<English>A dog tag from a killed bandit. Perhaps it can be sold at the Hero Trader.</English>
+			<German>Die Hundemarke eines getöteten Banditen. Vielleicht kann die Marke beim Heldenhändler verkauft werden.</German>
+		</Key>	
+		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
