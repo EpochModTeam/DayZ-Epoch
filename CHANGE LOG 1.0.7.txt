@@ -45,6 +45,8 @@
 [NEW] ZSC with global banking added. Pull request # 2076. @oiad @worldwidesorrow @DevZupa
 [NEW] Remote messaging with localization added. Pull request # 2076. @oiad @worldwidesorrow @BigEgg17
 [NEW] Almost all epoch vehicles can be upgraded now. This includes trucks, helicopters and APCs. @AirwavesMan
+[NEW] New variables DZE_Hero and DZE_Bandit. The variables define the Hero and Bandit humanity. Used for traders and in player_death. (431cbc88, 272a7406) @AirwavesMan
+[NEW] Heroes and Bandits will drop a dog tag on death now which can be traded at the Hero or Bandit Trader for humanity. Thx for the idea @Tecumseh. (431cbc88, 272a7406, 4f106220) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -124,6 +126,7 @@
 [UPDATED] The group invite message contains the name of the inviter now. (396d0313) @ch0c @AirwavesMan
 [UPDATED] Harvest wood with a hatchet drops wood piles or wooden logs now. (ae79f4ce) @AirwavesMan
 [UPDATED] The maintain animation is interruptible now. (910ab43a) @AirwavesMan
+[UPDATED] Trade single items like zombie parts can be modified with an extra humanity value. (4f106220) @AirwavesMan
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
 [REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow
