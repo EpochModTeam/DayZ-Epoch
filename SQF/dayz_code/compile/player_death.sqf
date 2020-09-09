@@ -44,7 +44,7 @@ if (dayz_onBack != "") then {
 };
 
 //Get killer information immediately. Weapon, distance or vehicle can change in seconds.
-_infected = [0, 1] select (r_player_infected && {DZE_PlayerZed});
+_infected = [0, 1] select (r_player_infected && DZE_PlayerZed);
 _sourceName = "unknown";
 _sourceWeapon = "";
 _distance = 0;
@@ -92,6 +92,7 @@ publicVariableServer "PVDZ_plr_Death";
 _body setVariable ["deathType", if (_method == "suicide") then {"shot"} else {_method}, true];
 
 if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) then { //If corpse is a player zombie do not give killer a human or bandit kill
+
 	//Values like humanity which were setVariabled onto player before death remain on corpse.
 	_humankill = false;
 	_humanityHit = 0;
@@ -100,8 +101,8 @@ if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) th
 	_humanitySource = _realSource getVariable ["humanity",0];
 
 	call {
-		if (_humanitySource <= -2000) exitwith {//Killer is Bandit
-			if (_humanityBody <= -2000) exitwith {//Body is Bandit
+		if (_humanitySource <= DZE_Bandit) exitwith {//Killer is Bandit
+			if (_humanityBody <= DZE_Bandit) exitwith {//Body is Bandit
 				_killsV = _realSource getVariable ["banditKills",0];
 				_realSource setVariable ["banditKills",(_killsV + 1),true];
 				_humanityHit = -250;
@@ -111,13 +112,13 @@ if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) th
 			_realSource setVariable ["humanKills",(_kills + 1),true];
 			_humankill = true;
 
-			if (_humanityBody >= 5000) exitwith {//Body is Hero
+			if (_humanityBody >= DZE_Hero) exitwith {//Body is Hero
 				_humanityHit = -1000;
 			};
 			_humanityHit = -500; //Body is Survivor
 		};
-		if (_humanitySource >= 5000) exitwith {//Killer is Hero
-			if (_humanityBody <= -2000) exitwith {//Body is Bandit
+		if (_humanitySource >= DZE_Hero) exitwith {//Killer is Hero
+			if (_humanityBody <= DZE_Bandit) exitwith {//Body is Bandit
 				_killsV = _realSource getVariable ["banditKills",0];
 				_realSource setVariable ["banditKills",(_killsV + 1),true];
 				_humanityHit = 1000;
@@ -127,14 +128,14 @@ if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) th
 			_realSource setVariable ["humanKills",(_kills + 1),true];
 			_humankill = true;
 
-			if (_humanityBody >= 5000) exitwith {//Body is Hero
+			if (_humanityBody >= DZE_Hero) exitwith {//Body is Hero
 				_humanityHit = -1000;
 			};
 			_humanityHit = -500; //Body is Survivor
 		};
 
 		//Killer is Survivor
-		if (_humanityBody <= -2000) exitwith {//Body is Bandit
+		if (_humanityBody <= DZE_Bandit) exitwith {//Body is Bandit
 			_killsV = _realSource getVariable ["banditKills",0];
 			_realSource setVariable ["banditKills",(_killsV + 1),true];
 			_humanityHit = 500;
@@ -144,7 +145,7 @@ if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) th
 		_realSource setVariable ["humanKills",(_kills + 1),true];
 		_humankill = true;
 
-		if (_humanityBody >= 5000) exitwith {//Body is Hero
+		if (_humanityBody >= DZE_Hero) exitwith {//Body is Hero
 			_humanityHit = -500;
 		};
 		_humanityHit = -250; //Body is Survivor
@@ -155,6 +156,11 @@ if (!local _source && {isPlayer _source} && {!(_body isKindOf "PZombie_VB")}) th
 
 	//Setup for study bodys.
 	_body setVariable ["KillingBlow",[_realSource,_humankill],true];
+
+	call {
+		if (_humanityBody >= DZE_Hero) exitwith {_body addMagazine "ItemDogTagHero";};
+		if (_humanityBody <= DZE_Bandit) exitwith {_body addMagazine "ItemDogTagBandit";};
+	};
 };
 
 disableSerialization;

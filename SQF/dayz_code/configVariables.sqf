@@ -137,6 +137,10 @@ if (!isDedicated) then {
 	dayz_markSelf = 0; // Players can see their own position on the map 0=never, 1=always, 2=With GPS only
 	dayz_markBody = 0; // Players can see their corpse position on the map 0=never, 1=always, 2=With GPS only
 	dayz_requireRadio = false; // Require players to have a radio on their toolbelt to create a group, be in a group and receive invites.
+	
+	//Humanity System
+	DZE_Hero = 5000; // Defines the value at how much humanity the player is classed as a hero.
+	DZE_Bandit = -5000; // Defines the value at how much humanity the player is classed as a bandit.
 };	
 
 // Both
