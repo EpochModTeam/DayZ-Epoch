@@ -101,13 +101,9 @@ class DefaultEventhandlers {
 #include "Configs\rscTitles.hpp"
 #include "Configs\CfgWorlds.hpp"
 #include "Configs\CfgMoves.hpp"
-//#include "Configs\RadioProtocol.hpp"
 #include "Configs\CfgVehicles\CfgVehicles.hpp"
 #include "Configs\CfgWeapons\CfgWeapons.hpp"
-#include "Configs\CfgCrafting\CfgCrafting.hpp"
-#include "Configs\CfgConstruction\CfgConstruction.hpp"
 #include "Configs\CfgMagazines\CfgMagazines.hpp"
-//#include "Configs\CfgLoot\CfgLoot.hpp" //Moved to missionConfigFile
 #include "Configs\CfgMarkers.hpp"
 #include "Configs\CfgAmmo.hpp"
 #include "Configs\CfgObjectCompositions.hpp"
@@ -117,11 +113,11 @@ class DefaultEventhandlers {
 #include "Configs\CfgGlasses.hpp"
 #include "Configs\CfgArma.hpp"
 #include "Configs\CfgRecoils.hpp"
-#include "gui\padlock\padlock_ui.hpp"
+//#include "Configs\RadioProtocol.hpp"
+//#include "gui\padlock\padlock_ui.hpp"
 
 //Epoch Additions
 #include "Configs\RscDisplay\safegui.hpp"
-#include "Configs\RscDisplay\tradermenu.hpp"
 #include "Configs\RscDisplay\ZSCdefines.hpp"
 #include "Configs\RscDisplay\advancedTrading.hpp"
 #include "Configs\RscDisplay\plotManagement.hpp"
@@ -131,6 +127,7 @@ class DefaultEventhandlers {
 #include "Configs\RscDisplay\doorManagement\doorManagement.hpp"
 #include "Configs\RscDisplay\doorManagement\doorAccess.hpp"
 #include "Configs\RscDisplay\zscDialogs.hpp"
+//#include "Configs\RscDisplay\tradermenu.hpp"
 
 class CfgTasks
 {
