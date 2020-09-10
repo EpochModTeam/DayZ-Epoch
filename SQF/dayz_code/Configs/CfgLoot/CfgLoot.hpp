@@ -3,8 +3,7 @@
 class CfgLoot
 {
 	class Groups
-	{
-		
+	{		
 		// General groups
 		#include "Groups\Ammo.hpp"
 		#include "Groups\AmmoBox.hpp"
@@ -16,13 +15,13 @@ class CfgLoot
 		#include "Groups\ConsumableItems.hpp"
 		#include "Groups\Fuel.hpp"
 		#include "Groups\Parts.hpp"
-		//DZE
 		#include "Groups\Weapons.hpp"
 		#include "Groups\Clothes.hpp"
 		#include "Groups\Backpacks.hpp"
 		#include "Groups\Wrecks.hpp"
 		#include "Groups\Vanilla.hpp"
 		#include "Groups\Tools.hpp"
+		#include "Groups\Documents.hpp"
 		
 		// Points of interest
 		#include "Groups\CrashSite.hpp"

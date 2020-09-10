@@ -233,5 +233,13 @@ class Category_32 {
 	class ItemAVE {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
 	class ItemLRK {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
 	class ItemTNK {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
+	class ItemTruckORP {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
+	class ItemTruckARM {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
+	class ItemTruckAVE {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
+	class ItemTruckLRK {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
+	class ItemTruckTNK {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};		
+	class ItemHeliAVE {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
+	class ItemHeliLRK {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
+	class ItemHeliTNK {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};	
 	class ItemPlotDeed {type = "trade_items";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
 };

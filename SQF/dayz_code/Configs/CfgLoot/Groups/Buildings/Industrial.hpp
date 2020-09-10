@@ -18,6 +18,7 @@ Industrial[] =
 	{Loot_PILE,			3,		Consumable, 1, 2},
 	{Loot_GROUP,		4,		JerryCan},
 	{Loot_GROUP,		3,		FuelBarrel},
+	{Loot_GROUP,		3,		VehicleDocuments},
 	{Loot_GROUP,		5,		Generic}
 };
 

@@ -233,5 +233,13 @@ class Category_32 {
 	class ItemAVE {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
 	class ItemLRK {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
 	class ItemTNK {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
+	class ItemTruckORP {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
+	class ItemTruckARM {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
+	class ItemTruckAVE {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
+	class ItemTruckLRK {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
+	class ItemTruckTNK {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};		
+	class ItemHeliAVE {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
+	class ItemHeliLRK {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
+	class ItemHeliTNK {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
 	class ItemPlotDeed {type = "trade_items";buy[] = {-1,"ItemSilverBar"};sell[] = {5,"ItemGoldBar"};};
 };

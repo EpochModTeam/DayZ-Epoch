@@ -18,7 +18,7 @@ class ItemDocument: CA_Magazine
 			neednearby[] = {};
 			requiretools[] = {};
 			randomOutput = 1;
-			output[] = {{"ItemLetter",1},{"ItemDocumentRamp",1},{"ItemBook1",1},{"ItemBook2",1},{"ItemBook3",1},{"ItemBook4",1},{"ItemNewspaper",1},{"ItemORP",1},{"ItemAVE",1},{"ItemLRK",1},{"ItemTNK",1},{"ItemPlotDeed",1}};
+			output[] = {{"ItemLetter",1},{"ItemDocumentRamp",1},{"ItemBook1",1},{"ItemBook2",1},{"ItemBook3",1},{"ItemBook4",1},{"ItemNewspaper",1},{"ItemORP",1},{"ItemAVE",1},{"ItemLRK",1},{"ItemTNK",1},{"ItemARM",1},{"ItemTruckORP",1},{"ItemTruckAVE",1},{"ItemTruckLRK",1},{"ItemTruckTNK",1},{"ItemTruckARM",1},{"ItemHeliAVE",1},{"ItemHeliLRK",1},{"ItemHeliTNK",1},{"ItemPlotDeed",1}};
 			input[] = {{"ItemDocument",1}};
 		};
 	};

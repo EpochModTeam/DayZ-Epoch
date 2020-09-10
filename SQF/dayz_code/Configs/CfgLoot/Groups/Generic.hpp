@@ -12,7 +12,7 @@ Generic[] =
 	{Loot_MAGAZINE,		2,		8Rnd_9x18_Makarov},
 	{Loot_MAGAZINE,		2,		7Rnd_45ACP_1911},
 	{Loot_MAGAZINE,		2,		6Rnd_45ACP},
-	{Loot_MAGAZINE,		1,		ItemDocument},
+	{Loot_GROUP,		1,		GenericDocuments},
 	{Loot_GROUP,		1,		FuelCan}
 };
 

@@ -43,9 +43,6 @@ Trash[] =
 	{Loot_MAGAZINE,		2,		TrashTinCan},
 	{Loot_MAGAZINE,		2,		TrashJackDaniels},
 	{Loot_MAGAZINE,		3,		ItemSodaEmpty},
-//	{Loot_MAGAZINE,		1,		equip_string},
-	{Loot_MAGAZINE,		1,		ItemTrashPaper},
-	{Loot_MAGAZINE,		1,		ItemTrashPaperMusic},
 	{Loot_MAGAZINE,		1,		ItemTrashToiletpaper},
 	{Loot_MAGAZINE,		1,		ItemTrashRazor},
 	{Loot_MAGAZINE,		1,		ItemCards}
