@@ -9,6 +9,7 @@ class Barrett_MRAD_Iron_DZ: m107
 	model = "\z\addons\dayz_epoch_w\mrad\h4_mrad.p3d";
 	picture = "\z\addons\dayz_epoch_w\mrad\data\W_mrad_CA.paa";
 	handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons_E\Data\Anim\M107b.rtm"};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\mrad_shot",2.5118864,1,1200};
 	magazines[] = {10Rnd_86x70_MRAD};
 	modelOptics = "-";
 	optics = false;
@@ -64,4 +65,5 @@ class Barrett_MRAD_Sniper_DZ: m107
 	descriptionShort = $STR_DZ_WPN_BARETT_MRAD_DESC;
 	model = "\z\addons\dayz_epoch_w\mrad\h4_mrad.p3d";
 	picture = "\z\addons\dayz_epoch_w\mrad\data\W_mrad_CA.paa";
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\mrad_shot",2.5118864,1,1200};
 };
