@@ -1,4 +1,6 @@
-//fixHatchet old file
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
+
 private ["_tool","_tape","_fixedItem","_config","_dName","_handle","_finished"];
 
 _tool = _this;
@@ -12,18 +14,16 @@ _tape = "equip_duct_tape";
 //Handle
 _handle = "equip_lever";
 
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
-dayz_actionInProgress = true;
-
 call gear_ui_init;
 closeDialog 0;
 
 // Check if the player has the tape
 if ((_tape in magazines player) && (_handle in magazines player) && (_tool in items player)) then {
-	[player,"bandage",0,false] call dayz_zombieSpeak;
+	[player,(getPosATL player),20,"bandage"] spawn fnc_alertZombies;
+
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {};
-	
+
 	// Check again to make sure player didn't drop item
 	if ((_tape in magazines player) && (_handle in magazines player) && (_tool in items player)) then {
 		player removeWeapon _tool;
