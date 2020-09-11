@@ -1639,6 +1639,7 @@ class M4A1_Camo_Holo_GL_DZ: M4A1_HWS_GL_camo {
 
 class M4A1_HWS_GL_SD_Camo;
 class M4A1_Camo_Holo_GL_SD_DZ: M4A1_HWS_GL_SD_Camo {
+	displayName = $STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME;
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
