@@ -38,9 +38,9 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	[_unlockedClass,objNull] call fn_waitForObject;
 
 	if (_unlockedClass == "LockboxStorage") then {
-		[player,"lockboxopen",0,false] call dayz_zombieSpeak;
+		[player,(getPosATL player),20,"lockboxopen"] spawn fnc_alertZombies;
 	} else {
-		[player,"safeopen",0,false] call dayz_zombieSpeak;
+		[player,(getPosATL player),20,"safeopen"] spawn fnc_alertZombies;
 	};
 
 	_code = [_obj getVariable["CharacterID","0"],dayz_combination] select (_ComboMatch);

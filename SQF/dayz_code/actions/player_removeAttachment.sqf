@@ -1,11 +1,11 @@
 /*
 	Attempts to remove an attachment from the player's current primary weapon or sidearm.
-	
+
 	Parameters:
 		string		attachment item classname
 		string		current weapon classname
 		string		resulting weapon classname
-	
+
 	Author:
 		Foxy
 */
@@ -53,7 +53,7 @@ if (!isClass(_newWeaponConfig) || {getText(_newWeaponConfig >> _attachment) != _
 
 _weaponInUse = (currentWeapon player == _weapon);
 
-[player,"detach_weap",0,false] call dayz_zombieSpeak;
+[player,(getPosATL player),10,"detach_weap"] spawn fnc_alertZombies;
 call gear_ui_init;
 player playActionNow "Medic";
 
@@ -69,7 +69,7 @@ player addMagazine _attachment;
 if (_weaponInUse) then
 {
 	_muzzle = (getArray (configFile >> "CfgWeapons" >> _newWeapon >> "muzzles")) select 0;
-	
+
 	if (_muzzle == "this") then
 	{
 		player selectWeapon _newWeapon;

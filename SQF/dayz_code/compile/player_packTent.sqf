@@ -37,8 +37,7 @@ if (_ownerID in [dayz_characterID,dayz_playerUID] || {_typeOf in _campItems}) th
 	_dir = direction _obj;
 	_pos = getPosATL _obj;
 
-	[player,"tentpack",0,false,20] call dayz_zombieSpeak;
-	[player,20,true,getPosATL player] call player_alertZombies;
+	[player,(getPosATL player),20,"tentpack"] spawn fnc_alertZombies;
 
 	_text = getText (configFile >> "CfgVehicles" >> _typeOf >> "displayName");
 	format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;

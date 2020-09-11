@@ -1,8 +1,8 @@
-private ["_time","_vehicle","_removed","_vehType","_finished"];
-_vehicle = _this select 3;
-
 if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_32" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_time","_vehicle","_removed","_vehType","_finished"];
+_vehicle = _this select 3;
 
 {player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 s_player_lockUnlock_crtl = 1;
@@ -12,8 +12,7 @@ s_player_lockUnlockInside_ctrl = 1;
 _removed = ([player,"ItemHotwireKit",1] call BIS_fnc_invRemove);
 
 if (_removed == 1) then {
-	[player,"repair",0,false] call dayz_zombieSpeak;
-	[player,50,true,(getPosATL player)] spawn player_alertZombies;
+	[player,(getPosATL player),40,"repair"] spawn fnc_alertZombies;
 
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {

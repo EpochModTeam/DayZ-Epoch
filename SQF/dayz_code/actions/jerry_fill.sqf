@@ -1,6 +1,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
-private ["_qty","_dis","_sfx","_finished","_qty20","_qty5","_qty210","_magazines","_cursorTarget","_fuelAmount","_fuelNeeded"];
+
+private ["_qty","_finished","_qty20","_qty5","_qty210","_magazines","_cursorTarget","_fuelAmount","_fuelNeeded"];
 
 player removeAction s_player_fillfuel;
 //s_player_fillfuel = -1;
@@ -29,20 +30,17 @@ if (_fuelAmount < _fuelNeeded) then {format[localize "str_fill_notenough",typeOf
 if (_fuelAmount < 5 or (_fuelAmount < 20 && _qty5 == 0) or (_fuelAmount < 210 && (_qty5 == 0 && _qty20 == 0))) exitWith {dayz_actionInProgress = false;};
 
 if (_qty > 0) then {
-	_dis=5;
-	_sfx = "refuel";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-	[player,_dis,true,(getPosATL player)] call player_alertZombies;
-	
+	[player,(getPosATL player),20,"refuel"] spawn fnc_alertZombies;
+
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {};
-	
+
 	// Added Nutrition-Factor for work
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
-	
+
 	for "_x" from 1 to _qty5 do {
 		_fuelAmount = _cursorTarget getVariable "FuelAmount";
-		
+
 		if (_fuelAmount >= 5) then {
 			_fuelAmount = _fuelAmount - 5;
 			_cursorTarget setVariable ["FuelAmount",_fuelAmount,true];
@@ -54,7 +52,7 @@ if (_qty > 0) then {
 	};
 	for "_x" from 1 to _qty20 do {
 		_fuelAmount = _cursorTarget getVariable "FuelAmount";
-		
+
 		if (_fuelAmount >= 20) then {
 			_fuelAmount = _fuelAmount - 20;
 			_cursorTarget setVariable ["FuelAmount",_fuelAmount,true];
@@ -66,7 +64,7 @@ if (_qty > 0) then {
 	};
 	for "_x" from 1 to _qty210 do {
 		_fuelAmount = _cursorTarget getVariable "FuelAmount";
-		
+
 		if (_fuelAmount >= 210) then {
 			_fuelAmount = _fuelAmount - 210;
 			_cursorTarget setVariable ["FuelAmount",_fuelAmount,true];

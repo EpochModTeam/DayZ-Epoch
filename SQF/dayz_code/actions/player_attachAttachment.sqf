@@ -38,7 +38,7 @@ else { _weapon = Player_GetSidearm(); if (isNil "_weapon") then { "" } else { _w
 if (_weapon == "") exitWith
 {
 	closedialog 0;
-	
+
 	localize
 	(
 		if ((_this select 1) == 1)
@@ -54,7 +54,7 @@ _config = configFile >> "CfgWeapons" >> _weapon >> "Attachments";
 if (!isClass(_config) || {!isText(_config >> _attachment)}) exitWith
 {
 	closeDialog 0;
-	
+
 	localize
 	(
 		if ((_this select 1) == 1)
@@ -66,7 +66,7 @@ if (!isClass(_config) || {!isText(_config >> _attachment)}) exitWith
 _newWeapon = getText (_config >> _attachment);
 _weaponInUse = (currentWeapon player == _weapon);
 
-[player,"attach_weap",0,false] call dayz_zombieSpeak;
+[player,(getPosATL player),10,"attach_weap"] spawn fnc_alertZombies;
 call gear_ui_init;
 player playActionNow "Medic";
 
@@ -82,7 +82,7 @@ player addWeapon _newWeapon;
 if (_weaponInUse) then
 {
 	_muzzle = (getArray (configFile >> "CfgWeapons" >> _newWeapon >> "muzzles")) select 0;
-	
+
 	if (_muzzle == "this") then
 	{
 		player selectWeapon _newWeapon;

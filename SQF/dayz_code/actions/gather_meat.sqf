@@ -1,4 +1,4 @@
-private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_dis","_sfx","_qty","_string","_isZombie","_humanity","_finished"];
+private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_qty","_string","_isZombie","_humanity","_finished"];
 
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -31,16 +31,13 @@ if ((count _knifeArray) < 1) exitWith {
 
 if ((count _knifeArray > 0) and !_hasHarvested) then {
 	//Use sharpest knife player has
-	_activeKnife = _knifeArray select 0; 
+	_activeKnife = _knifeArray select 0;
 
 	//Get Animal Type
 	_isListed = isClass (configFile >> "CfgSurvival" >> "Meat" >> _type);
 	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 
-	_dis=10;
-	_sfx = "gut";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+	[player,(getPosATL player),10,"gut"] spawn fnc_alertZombies;
 
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {};
@@ -55,7 +52,7 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 
 	if (local _item) then {
 		[_item,_qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
-	} else {		
+	} else {
 		PVCDZ_obj_GutBody =[_item,_qty];
 		publicVariable "PVCDZ_obj_GutBody";
 

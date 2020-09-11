@@ -1,9 +1,9 @@
-private ["_vehicle","_curFuel","_newFuel","_finished","_location1","_location2","_abort",
-"_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText",
-"_availableCansEmpty","_hasHose","_PlayerNear"];
-
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_vehicle","_curFuel","_newFuel","_finished","_location1","_location2","_abort",
+"_canNameEmpty","_canSizeEmpty","_canTypeEmpty","_canName","_canSize","_configCanEmpty","_configVeh","_capacity","_nameText",
+"_hasHose","_PlayerNear"];
 
 _vehicle = _this select 3;
 player removeAction s_player_siphonfuel;
@@ -29,7 +29,7 @@ _nameText = 	getText(_configVeh >> "displayName");
 
 		_canName = getText(_configCanEmpty >> "fullCan");
 		_canSize =	getNumber(configFile >> "cfgMagazines" >> _canName >> "fuelQuantity");
-		
+
 		if (_canSizeEmpty == 0) then {
 			_curFuel = ((fuel _vehicle) * _capacity);
 			_newFuel = (_curFuel - _canSize);
@@ -44,8 +44,7 @@ _nameText = 	getText(_configVeh >> "displayName");
 			if (_newFuel > 0) then {
 				format[localize "str_siphon_preparing",_canTypeEmpty] call dayz_rollingMessages;
 				_finished = false;
-
-				[player,20,true,(getPosATL player)] call player_alertZombies;
+				[player,(getPosATL player),20,"refuel"] spawn fnc_alertZombies;
 
 				if (!dayz_isSwimming) then {
 					_finished = ["Medic",1] call fn_loopAction;

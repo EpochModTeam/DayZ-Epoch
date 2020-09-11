@@ -2,10 +2,10 @@
 	DayZ Base Building Upgrades
 	Made for DayZ Epoch please ask permission to use/edit/distribute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_ownerID","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems","_finished","_playerNear"];
-
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_48" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_location","_dir","_classname","_text","_object","_objectID","_objectUID","_newclassname","_refund","_obj","_upgrade","_objectCharacterID","_ownerID","_i","_invResult","_itemOut","_countOut","_abortInvAdd","_addedItems","_finished","_playerNear"];
 
 player removeAction s_player_downgrade_build;
 s_player_downgrade_build = 1;
@@ -33,7 +33,7 @@ if ((count _upgrade) > 0) then {
 	_newclassname = _upgrade select 0;
 	_refund = _upgrade select 1;
 
-	[player,20,true,(getPosATL player)] spawn player_alertZombies;
+	[player,(getPosATL player),40,"repair"] spawn fnc_alertZombies;
 
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {};

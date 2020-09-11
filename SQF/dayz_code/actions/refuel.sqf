@@ -1,7 +1,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_dis","_sfx","_array","_cantype",
+private ["_vehicle","_canSize","_configVeh","_capacity","_nameType","_curFuel","_newFuel","_array","_cantype",
 "_emptycan","_finished","_type"];
 
 _array = _this select 3;
@@ -20,10 +20,7 @@ if (fuel _vehicle == 1 || {!(_canType in magazines player)}) exitWith {dayz_acti
 
 player removeAction s_player_fillfuel + _capacity;
 
-_dis=5;
-_sfx = "refuel";
-[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-[player,_dis,true,(getPosATL player)] call player_alertZombies;
+[player,(getPosATL player),25,"refuel"] spawn fnc_alertZombies;
 
 _finished = ["Medic",1] call fn_loopAction;
 

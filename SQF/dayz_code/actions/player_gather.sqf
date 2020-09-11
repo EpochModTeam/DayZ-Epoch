@@ -7,9 +7,9 @@ _originalCount = getNumber (configFile >> "CfgVehicles" >> (typeOf _plant) >> "T
 if !([ [[["equip_comfreyleafs"],[_originalCount]],[[],[]]] , [getMagazineCargo _plant, getWeaponCargo _plant] ] call BIS_fnc_areEqual) then {
 	//diag_log [ [getMagazineCargo _plant, getWeaponCargo _plant], "!=", [[["equip_comfreyleafs"],[_originalCount]],[[],[]]] ];
 	_plant setVariable["Gathering",true]; // avoid multiple call because the fn_selfActions is called in an infinite loop
-	[_this] spawn { // in background to be called after fn_selfActions
-		private ["_mags","_weps","_item","_magcounts","_wepcounts","_dis","_sfx"];
-		_plant = _this select 0;
+	_plant spawn { // in background to be called after fn_selfActions
+		private ["_mags","_weps","_item","_magcounts","_wepcounts","_plant"];
+		_plant = _this;
 		_mags = (getMagazineCargo _plant) select 0;
 		_weps = (getWeaponCargo _plant) select 0;
 		if (count _mags != 0 OR count _weps != 0) then { // if not empty
@@ -24,7 +24,7 @@ if !([ [[["equip_comfreyleafs"],[_originalCount]],[[],[]]] , [getMagazineCargo _
 				_item addWeaponCargoGlobal [_x, _wepcounts select _forEachIndex];
 			} forEach _weps;
 		};
-		
+
 		//remove vehicle, Need to ask server to remove.
 		PVDZ_obj_Delete = [_plant,player];
 		publicVariableServer "PVDZ_obj_Delete";
@@ -32,9 +32,6 @@ if !([ [[["equip_comfreyleafs"],[_originalCount]],[[],[]]] , [getMagazineCargo _
 		deleteVehicle _plant;
 
 		//Make some noise
-		_dis=2;
-		_sfx = "tentpack";
-		[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-		[player,_dis,true,(getPosATL player)] call player_alertZombies;
+		[player,(getPosATL player),2,"tentpack"] spawn fnc_alertZombies;
 	};
 };

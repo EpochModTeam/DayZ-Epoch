@@ -1,3 +1,6 @@
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
+
 private ["_skin","_rnd","_rounded","_itemtocreate","_i","_config","_result","_finished"];
 
 _skin = _this;
@@ -9,11 +12,8 @@ _rounded = round _rnd;
 call gear_ui_init;
 closeDialog 0;
 
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
-dayz_actionInProgress = true;
-
 //Tear the clothes
-[player,"bandage",0,false] call dayz_zombieSpeak;
+[player,(getPosATL player),10,"bandage"] spawn fnc_alertZombies;
 _finished = ["Medic",1] call fn_loopAction;
 if (!_finished) exitWith {
 	dayz_actionInProgress = false;
@@ -44,14 +44,14 @@ switch (_rounded) do {
 false call dz_fn_meleeMagazines;
 _i = 0;
 while {_i < _rounded} do {
-	_i = _i + 1; 
+	_i = _i + 1;
 	_result = [player,_itemtocreate] call BIS_fnc_invAdd;
-	
+
 	if (_rnd < 0.5) then {
 		 [player,"equip_string"] call BIS_fnc_invAdd;
 	};
 	uiSleep 0.03;
-	
+
 	if (!_result) then {
 		systemchat (localize ("str_tear_clothes_noroom"));
 		[_itemtocreate,1,1] call fn_dropItem;

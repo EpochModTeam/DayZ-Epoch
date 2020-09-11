@@ -1,10 +1,11 @@
-if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
-dayz_actionInProgress = true;
 /*
 delete object from db with extra waiting by [VB]AWOL
 parameters: _obj
 */
-private ["_plotcheck","_PlayerNear","_isMine","_obj","_objectID","_objectUID","_finished","_isOk","_proceed","_counter","_limit","_objType","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_isWreckBuilding","_nameVehicle","_isModular","_success","_lootGroupIndex","_output"];
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
+
+private ["_type","_plotcheck","_PlayerNear","_isMine","_obj","_objectID","_objectUID","_finished","_isOk","_proceed","_counter","_limit","_objType","_itemOut","_countOut","_selectedRemoveOutput","_nearestPole","_refundpart","_isWreck","_IsNearPlot","_brokenTool","_removeTool","_isDestructable","_isRemovable","_objOwnerID","_isOwnerOfObj","_preventRefund","_ipos","_item","_isWreckBuilding","_nameVehicle","_isModular","_success","_lootGroupIndex","_output"];
 
 player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
@@ -23,8 +24,8 @@ if (DZE_permanentPlot) then {
 
 if (_obj getVariable ["GeneratorRunning", false]) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_89" call dayz_rollingMessages;};
 
-_objectID 	= _obj getVariable ["ObjectID","0"];
-_objectUID	= _obj getVariable ["ObjectUID","0"];
+_objectID = _obj getVariable ["ObjectID","0"];
+_objectUID = _obj getVariable ["ObjectUID","0"];
 
 _isOk = true;
 _proceed = false;
@@ -93,7 +94,8 @@ while {_isOk} do {
 
 	format[localize "str_epoch_player_163",_nameVehicle,(_counter + 1),_limit] call dayz_rollingMessages;
 
-	[player,"repair",0,false,20] call dayz_zombieSpeak;
+	[player,(getPosATL player),25,"repair"] spawn fnc_alertZombies;
+
 	_finished = ["Medic",1] call fn_loopAction;
 
 	if(!_finished) exitWith {
@@ -176,20 +178,20 @@ if (_proceed && _success) then {
 			_selectedRemoveOutput set [count _selectedRemoveOutput,[_refundpart,1]];
 		} else {
 			if(_isWreckBuilding) then {
-				switch true do {
-					case (_isMine): {
+				call {
+					if (_isMine) exitwith {
 						_lootGroupIndex = dz_loot_groups find _objType;
 						_output = [_lootGroupIndex,3] call dz_fn_loot_select;
 
 						{_selectedRemoveOutput set [count _selectedRemoveOutput, [_x select 1,[_x select 2,_x select 3]]]} forEach _output;
 					};
-					case (_objType == "Land_ammo_supply_wreck"): {
+					if (_objType == "Land_ammo_supply_wreck") exitwith {
 						_lootGroupIndex = dz_loot_groups find _objType;
 						_output = [_lootGroupIndex,5] call dz_fn_loot_select;
 
 						{_selectedRemoveOutput set [count _selectedRemoveOutput, [_x select 1,1,_x select 0]]} forEach _output;
 					};
-					default {_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput")};
+					_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");
 				};
 			} else {
 				if ({_objType in _x} count DZE_modularConfig > 0) then {
@@ -249,10 +251,11 @@ if (_proceed && _success) then {
 					_countOut = round((random (_countOut select 1)) max (_countOut select 0));
 				};
 				if (count _x > 2) then {
-					switch (_x select 2) do {
-						case 2: {_item addWeaponCargoGlobal [_itemOut,_countOut]};
-						case 3: {_item addMagazineCargoGlobal [_itemOut,_countOut]};
-						case 5: {_item addBackpackCargoGlobal [_itemOut,_countOut]}; // Needs to make sure object can handle Backpacks or will dump on the ground.
+					_type = _x select 2;
+					call {
+						if (_type == 2) exitwith {_item addWeaponCargoGlobal [_itemOut,_countOut]};
+						if (_type == 3) exitwith {_item addMagazineCargoGlobal [_itemOut,_countOut]};
+						if (_type == 5) exitwith {_item addBackpackCargoGlobal [_itemOut,_countOut]}; // Needs to make sure object can handle Backpacks or will dump on the ground.
 					};
 				} else {
 					_item addMagazineCargoGlobal [_itemOut,_countOut];

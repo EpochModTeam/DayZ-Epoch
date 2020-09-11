@@ -29,10 +29,7 @@ if !(_hastinitem) exitWith {
 };
 
 if (_qty > 0) then {
-	_dis=10;
-	_sfx = "cook";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+	[player,(getPosATL player),10,"cook"] spawn fnc_alertZombies;
 
 	_finished = ["Medic",1] call fn_loopAction;
 

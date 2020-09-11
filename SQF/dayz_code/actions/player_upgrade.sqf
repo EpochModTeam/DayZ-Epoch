@@ -55,9 +55,11 @@ if ((count _upgrade) > 0) then {
 		} forEach _requirements;
 
 		if (_proceed) then {
-			[player,20,true,(getPosATL player)] spawn player_alertZombies;
+			[player,(getPosATL player),25,"repair"] spawn fnc_alertZombies;
+
 			_finished = ["Medic",1] call fn_loopAction;
 			if (!_finished) exitWith {};
+
 			["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 
 			_temp_removed_array = [];
@@ -105,6 +107,7 @@ if ((count _upgrade) > 0) then {
 			} forEach _requirements;
 
 			if (_tobe_removed_total == _removed_total) then {
+				call player_forceSave;
 				_location	= _obj getVariable["OEMPos",(getposATL _obj)];
 				_dir = getDir _obj;
 				_vector = [(vectorDir _obj),(vectorUp _obj)];

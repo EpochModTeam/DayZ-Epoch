@@ -74,8 +74,7 @@ _maintain = {
 	if (_enoughMoney) then {
 
 		closeDialog 1;
-		[player,"repair",0,false,20] call dayz_zombieSpeak;
-		[player,DZE_maintainRange,true,(getPosATL player)] spawn player_alertZombies;
+		[player,(getPosATL player),DZE_maintainRange,"repair"] spawn fnc_alertZombies;
 
 		_finished = ["Medic",1] call fn_loopAction;
 		if !(_finished) exitWith {};

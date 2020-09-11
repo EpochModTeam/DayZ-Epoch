@@ -1,7 +1,7 @@
-private ["_item","_config","_pos","_onLadder","_create","_finished","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
-
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_56" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_item","_config","_pos","_onLadder","_create","_finished","_num_removed","_text","_haskey","_hastoolweapon","_isNear","_hasTinBar"];
 
 _item = 	_this;
 _config =	configFile >> "cfgWeapons" >> _item;
@@ -26,9 +26,8 @@ call gear_ui_init;
 _hasTinBar = 	"ItemTinBar" in magazines player;
 if (!_hasTinBar) exitWith {dayz_actionInProgress = false; localize "str_epoch_player_59" call dayz_rollingMessages;};
 
-[player,"repair",0,false] call dayz_zombieSpeak;
-[player,50,true,_pos] spawn player_alertZombies;
-			
+[player,(getPosATL player),20,"repair"] spawn fnc_alertZombies;
+
 _finished = ["Medic",1] call fn_loopAction;
 
 if (_finished) then {

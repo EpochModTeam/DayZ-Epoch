@@ -74,8 +74,7 @@ if (!isNull dayz_selectedDoor) then {
 			publicVariableServer "PVDZE_handleSafeGear";
 
 			DZE_Lock_Door = "";
-			[player,"combo_locked",0,false] call dayz_zombieSpeak;
-			[player,20,true,(getPosATL player)] spawn player_alertZombies;
+			[player,(getPosATL player),20,"combo_locked"] spawn fnc_alertZombies;
 
 			if (_doorMethod == "Eye") then {
 				localize "STR_EPOCH_DOORACCESS_FAILURE" call dayz_rollingMessages;

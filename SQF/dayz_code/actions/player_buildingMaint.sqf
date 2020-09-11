@@ -2,10 +2,10 @@
 	DayZ Base Building Maintenance
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_location","_dir","_classname","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_requirements","_obj","_upgrade","_objectCharacterID","_finished"];
-
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_classname","_missing","_proceed","_num_removed","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_requirements","_obj","_upgrade","_finished"];
 
 player removeAction s_player_maint_build;
 s_player_maint_build = 1;
@@ -23,9 +23,6 @@ if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = fal
 
 // Get classname
 _classname = typeOf _obj;
-
-// Find display name
-_text = getText (configFile >> "CfgVehicles" >> _classname >> "displayName");
 
 // Find next maintain
 _upgrade = getArray (configFile >> "CfgVehicles" >> _classname >> "maintainBuilding");
@@ -47,18 +44,18 @@ _proceed = true;
 	if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
 } forEach _requirements;
 
-if (_proceed) then {	
-	[player,20,true,(getPosATL player)] spawn player_alertZombies;
-	
+if (_proceed) then {
+	[player,(getPosATL player),40,"repair"] spawn fnc_alertZombies;
+
 	_finished = ["Medic",1] call fn_loopAction;
 	if (!_finished) exitWith {};
-	
+
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
 	_temp_removed_array = [];
 	_removed_total = 0;
 	_tobe_removed_total = 0;
-	
+
 	{
 		_removed = 0;
 		_itemIn = _x select 0;
@@ -66,7 +63,7 @@ if (_proceed) then {
 		// diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
 		_tobe_removed_total = _tobe_removed_total + _countIn;
 
-		{					
+		{
 			if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
 				_num_removed = ([player,_x] call BIS_fnc_invRemove);
 				_removed = _removed + _num_removed;
@@ -74,7 +71,7 @@ if (_proceed) then {
 				if(_num_removed >= 1) then {
 					_temp_removed_array set [count _temp_removed_array,_x];
 				};
-			};	
+			};
 		} forEach magazines player;
 	} forEach _requirements;
 
@@ -83,9 +80,9 @@ if (_proceed) then {
 		format[localize "STR_EPOCH_ACTIONS_4",1] call dayz_rollingMessages;
 		PVDZE_maintainArea = [player,2,[_obj, _objectID, _objectUID]];
 		publicVariableServer "PVDZE_maintainArea";
-	} else {	
+	} else {
 		{player addMagazine _x;} count _temp_removed_array;
-		format[localize "str_epoch_player_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;	
+		format[localize "str_epoch_player_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
 	};
 } else {
 	_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");

@@ -208,6 +208,18 @@ if (!isDedicated) then {
 	// Advanced trading default inits for maintaining, Advanced Trading and custom scripts to utilize gem based currency.
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\AdvancedTrading\defaultInit.sqf";
 
+	fnc_alertZombies = {
+		private ["_unit","_pos","_dis","_sfx"];
+
+		_unit = _this select 0;
+		_pos = _this select 1;
+		_dis = _this select 2;
+		_sfx = _this select 3;
+
+		[_unit,_sfx,0,false,_dis] spawn dayz_zombieSpeak;
+		[_unit,_dis,true,_pos] spawn player_alertZombies;	
+	};
+
 	dayz_losChance = {
 		private["_agent","_maxDis","_dis","_val","_maxExp","_myExp"];
 		_agent = _this select 0;

@@ -121,8 +121,7 @@ if (_canDo) then {
 			if (_proceed) then {
 				localize "str_epoch_player_62" call dayz_rollingMessages;
 
-				[player,_sfx,0,false] call dayz_zombieSpeak;
-				[player,50,true,(getPosATL player)] spawn player_alertZombies;
+				[player,(getPosATL player),50,_sfx] spawn fnc_alertZombies;
 
 				_finished = ["Medic",1] call fn_loopAction;
 

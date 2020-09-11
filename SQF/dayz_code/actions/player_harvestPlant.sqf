@@ -32,8 +32,7 @@ if (count _findNearestPlant >= 1) then {
 	_isOk = true;
 	_proceed = false;
 	while {_isOk} do {
-		[player,20,true,(getPosATL player)] spawn player_alertZombies;
-		[player,"chopwood",0,false] call dayz_zombieSpeak;
+		[player,(getPosATL player),20,"chopwood"] spawn fnc_alertZombies;
 
 		_finished = ["Medic",1] call fn_loopAction;
 

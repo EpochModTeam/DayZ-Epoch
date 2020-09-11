@@ -1,9 +1,9 @@
 /*
 	Player action for consuming items
-	
+
 	Single parameter:
 		string		item classname
-	
+
 	Author:
 		Foxy
 */
@@ -11,7 +11,7 @@
 #define PILE_SEARCH_RADIUS 2
 #define PILE_PLAYER_OFFSET [0,1,0]
 
-private ["_cfg","_nutrition","_bloodRegen","_infectionChance","_sound","_output","_hungerCount","_thirstCount","_soundDistance"];
+private ["_cfg","_nutrition","_bloodRegen","_infectionChance","_sound","_output","_hungerCount","_thirstCount"];
 
 _cfg = (ConfigFile >> "CfgMagazines" >> _this);
 
@@ -62,21 +62,21 @@ _output = getText (_cfg >> "consumeOutput");
 if (dayz_nutritionValuesSystem) then {
 	_hungerCount = _nutrition select 1;
 	_thirstCount = _nutrition select 2;
-	
+
 	if (_hungerCount > 0) then { dayz_lastMeal =	time; };
 	if (_thirstCount > 0) then { dayz_lastDrink = time; };
-	
+
 	["FoodDrink",_bloodRegen,_nutrition] call dayz_NutritionSystem;
 	r_player_foodstack = r_player_foodstack + 1;
 } else {
 	_hungerCount = _nutrition select 1;
 	_thirstCount = _nutrition select 2;
-	
+
 	if (_hungerCount > 0) then { dayz_hunger = 0; dayz_lastMeal =	time; };
 	if (_thirstCount > 0) then { dayz_thirst = 0; dayz_lastDrink = time; };
-	
+
 	r_player_blood = r_player_blood + _bloodRegen;
-	
+
 	if (r_player_blood > r_player_bloodTotal) then {
 		r_player_blood = r_player_bloodTotal;
 	};
@@ -107,9 +107,8 @@ if (_sound != "") then
 {
 	private ["_soundDistance"];
 	_soundDistance = getNumber (_cfg >> "consumeSoundDistance");
-	
-	[player,_sound,0,false,_soundDistance] call dayz_zombieSpeak;
-	[player,_soundDistance,true,(getPosATL player)] call player_alertZombies;
+
+	[player,(getPosATL player),_soundDistance,_sound] spawn fnc_alertZombies;
 };
 
 //If item has a consumeOutput item defined add that to player

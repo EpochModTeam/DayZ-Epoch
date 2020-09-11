@@ -1,7 +1,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_item","_use","_repair","_waterUsed","_displayName"];
+private ["_item","_use","_repair","_waterUsed","_displayName","_finished"];
 
 //['ItemKnifeBlunt','ItemKnife']
 _item = _this select 0; //Item to be sharpened
@@ -30,6 +30,7 @@ if !("equip_brick" IN magazines player) exitWith {
 	dayz_actionInProgress = false;
 };
 
+[player,(getPosATL player),5,"repair"] spawn fnc_alertZombies;
 _finished = ["Medic",1] call fn_loopAction;
 
 if (!_finished) exitWith {

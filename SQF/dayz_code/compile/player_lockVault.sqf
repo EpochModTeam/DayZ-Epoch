@@ -32,9 +32,9 @@ if (!isNull _obj) then {
 	[_lockedClass,objNull] call fn_waitForObject;
 
 	if (_lockedClass == "LockboxStorageLocked") then {
-		[player,"lockboxclose",0,false] call dayz_zombieSpeak;
+		[player,(getPosATL player),20,"lockboxclose"] spawn fnc_alertZombies;
 	} else {
-		[player,"safeclose",0,false] call dayz_zombieSpeak;
+		[player,(getPosATL player),20,"safeclose"] spawn fnc_alertZombies;
 	};
 
 	_code = [_obj getVariable["CharacterID","0"],dayz_combination] select (_ComboMatch);

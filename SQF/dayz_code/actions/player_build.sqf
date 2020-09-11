@@ -5,7 +5,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_40" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_finished","_dis","_sfx","_tmpbuilt","_onLadder","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_canBuild","_friendsArr","_vector"];
+private ["_location","_pos","_dir","_classname","_item","_cancel","_reason","_finished","_tmpbuilt","_onLadder","_text","_offset","_isOk","_location1","_location2","_counter","_limit","_proceed","_num_removed","_position","_object","_distance","_classnametmp","_ghost","_lockable","_zheightchanged","_rotate","_combination_1","_combination_2","_combination_3","_combination_4","_combination","_combination_1_Display","_combinationDisplay","_zheightdirection","_abort","_isNear","_needNear","_vehicle","_inVehicle","_objHDiff","_isAllowedUnderGround","_canBuild","_friendsArr","_vector"];
 
 _pos = [player] call FNC_GetPos;
 _onLadder = (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
@@ -326,10 +326,7 @@ if (_canBuild select 0) then {
 		while {_isOk} do {
 			format[localize "str_epoch_player_139",_text, (_counter + 1),_limit] call dayz_rollingMessages;
 
-			_dis=20;
-			_sfx = "repair";
-			[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-			[player,_dis,true,(getPosATL player)] spawn player_alertZombies;
+			[player,(getPosATL player),40,"repair"] spawn fnc_alertZombies;
 
 			_finished = ["Medic",1,{player getVariable["combattimeout",0] >= diag_tickTime or DZE_cancelBuilding}] call fn_loopAction;
 

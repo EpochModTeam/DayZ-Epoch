@@ -1,7 +1,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_id","_hits","_array","_vehicle","_part","_hitpoint","_type","_nameType","_namePart","_damage","_selection","_dis","_sfx","_finished"];
+private ["_id","_hits","_array","_vehicle","_part","_hitpoint","_type","_nameType","_namePart","_damage","_selection","_finished"];
 
 _id = _this select 2;
 _array = _this select 3;
@@ -20,10 +20,7 @@ _nameType = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _namePart = getText(configFile >> "cfgMagazines" >> _part >> "displayName");
 
 if ("ItemToolbox" in items player && {_part in magazines player}) then {
-	_dis=20;
-	_sfx = "repair";
-	[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-	[player,_dis,true,(getPosATL player)] call player_alertZombies;
+	[player,(getPosATL player),30,"repair"] spawn fnc_alertZombies;
 
 	_finished = ["Medic",1] call fn_loopAction;
 

@@ -4,8 +4,8 @@ dayz_actionInProgress = true;
 private ["_array","_vehicle","_part","_hitpoint","_type","_isOK","_brokenPart","_finished","_hasToolbox","_nameType","_namePart","_damage","_BreakableParts","_selection","_wpn","_hits","_ismelee"];
 
 _array = 	_this select 3;
-_vehicle = 	_array select 0;
-_part =		_array select 1;
+_vehicle = _array select 0;
+_part = _array select 1;
 _hitpoint = _array select 2;
 _type = typeOf _vehicle;
 _isOK = false;
@@ -22,8 +22,7 @@ s_player_repair_crtl = 1;
 if (_hasToolbox) then {
 	if ([_vehicle] call DZE_SafeZonePosCheck) exitWith {(localize "str_salvage_safezone") call dayz_rollingMessages;};
 
-	[player,"repair",0,false] call dayz_zombieSpeak;
-	[player,50,true,(getPosATL player)] call player_alertZombies;
+	[player,(getPosATL player),50,"repair"] spawn fnc_alertZombies;
 
 	_finished = ["Medic",1] call fn_loopAction;
 

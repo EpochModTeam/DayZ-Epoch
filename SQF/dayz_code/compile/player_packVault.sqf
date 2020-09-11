@@ -31,7 +31,7 @@ if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = fal
 if (!_ComboMatch && (_ownerID != dayz_playerUID)) exitWith {dayz_actionInProgress = false; s_player_packvault = -1; format[localize "str_epoch_player_119",_text] call dayz_rollingMessages;};
 
 if (isNull _obj && {!alive _obj}) exitWith {s_player_packvault = -1;dayz_actionInProgress = false;};
-[player,"tentpack",0,false] call dayz_zombieSpeak;
+[player,(getPosATL player),20,"tentpack"] spawn fnc_alertZombies;
 
 format[localize "str_epoch_player_121",_text] call dayz_rollingMessages;
 
