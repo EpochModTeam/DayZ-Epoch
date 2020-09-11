@@ -263,6 +263,28 @@ class ItemVault: CA_Magazine
 	};
 };
 
+class ItemVault2: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "$STR_EPOCH_SAFE+";
+	model = "\z\addons\dayz_epoch\models\safe_onside.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_safe_ca.paa";
+	descriptionShort = $STR_EPOCH_SAFE_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_230;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "VaultStorage2Locked";
+		};
+	};
+};
+
 class ItemLockbox: CA_Magazine
 {
 	scope = 2;
@@ -281,6 +303,72 @@ class ItemLockbox: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "LockboxStorageLocked";
+		};
+	};
+};
+
+class ItemLockbox2: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "$STR_EPOCH_LOCKBOX+";
+	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
+	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_231;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "LockboxStorage2Locked";
+		};
+	};
+};
+
+class ItemLockboxWinter: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_LOCKBOX;
+	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
+	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_231;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "LockboxStorageWinterLocked";
+		};
+	};
+};
+
+class ItemLockboxWinter2: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "$STR_EPOCH_LOCKBOX+";
+	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
+	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_231;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "LockboxStorageWinter2Locked";
 		};
 	};
 };

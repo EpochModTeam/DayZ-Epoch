@@ -1,19 +1,18 @@
-private ["_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_donotusekey","_result","_outcome","_oid","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_clientKey","_exitReason","_playerUID"];
+private ["_inv","_coins","_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_result","_outcome","_oid","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_clientKey","_exitReason","_playerUID"];
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-if (count _this < 7) exitWith {
+if (count _this < 6) exitWith {
 	diag_log "Server_PublishVehicle3 error: Wrong parameter format";
 	dze_waiting = "fail";
-	(owner (_this select 5)) publicVariableClient "dze_waiting";
+	(owner (_this select 4)) publicVariableClient "dze_waiting";
 };
 
-_object = 		_this select 0;
-_worldspace = 	_this select 1;
-_class = 		_this select 2;
-_donotusekey =	_this select 3;
-_keySelected =  _this select 4;
-_activatingPlayer =  _this select 5;
-_clientKey = _this select 6;
+_object = _this select 0;
+_worldspace = _this select 1;
+_class = _this select 2;
+_keySelected = _this select 3;
+_activatingPlayer = _this select 4;
+_clientKey = _this select 5;
 _playerUID = getPlayerUID _activatingPlayer;
 _characterID = _keySelected;
 
@@ -34,7 +33,7 @@ if (!(isClass(configFile >> "CfgVehicles" >> _class)) || isNull _object) exitWit
 diag_log ("PUBLISH: Attempt " + str(_object));
 #endif
 
-_dir = 		_worldspace select 0;
+_dir = _worldspace select 0;
 _location = _worldspace select 1;
 _uid = _worldspace call dayz_objectUID2;
 
@@ -44,8 +43,8 @@ diag_log ("HIVE: WRITE: "+ str(_key));
 #endif
 
 _key call server_hiveWrite;
-_objectID 	= _object getVariable ["ObjectID","0"];
-_objectUID	= _object getVariable ["ObjectUID","0"];
+_objectID = _object getVariable ["ObjectID","0"];
+_objectUID = _object getVariable ["ObjectUID","0"];
 _location = [_object] call fnc_getPos;
 
 // GET DB ID
@@ -72,12 +71,17 @@ if (_outcome != "PASS") then {
 	_weapons = getWeaponCargo _object;
 	_magazines = getMagazineCargo _object;
 	_backpacks = getBackpackCargo _object;
+	_inv = [_weapons,_magazines,_backpacks];
+
+	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage) then {
+		_coins = _object getVariable ["cashMoney",0];
+	};
 
 	deleteVehicle _object;
 	[_objectID,_objectUID,_object] call server_deleteObjDirect;
 
 	uiSleep 3;
-	
+
 	_newobject = _class createVehicle [0,0,0];
 
 	// switch var to new vehicle at this point.
@@ -97,6 +101,12 @@ if (_outcome != "PASS") then {
 	_object setVectorUp surfaceNormal _location;
 
 	[_weapons,_magazines,_backpacks,_object] call fn_addCargo;
+
+	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage && {_coins > 0}) then {
+		_object setVariable ["cashMoney",_coins,true];
+		_key = format["CHILD:309:%1:",_uid] + str _inv + ":" + str _coins + ":";
+		_key call server_hiveWrite;
+	};
 
 	_object call fnc_veh_ResetEH;
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.

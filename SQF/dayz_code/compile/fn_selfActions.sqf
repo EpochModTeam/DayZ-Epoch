@@ -622,7 +622,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	};
 
 	//Allow owner to unlock vault
-	if (_isClose && !keypadCancel && {(_typeOfCursorTarget in DZE_LockableStorage)  && {_characterID != "0"}}) then {
+	if (_isClose && !keypadCancel && {(_typeOfCursorTarget in DZE_LockedStorage)  && {_characterID != "0"}}) then {
 		if (s_player_unlockvault < 0) then {
 			if (_typeOfCursorTarget in DZE_LockedStorage) then {
 				if ((_characterID == dayz_combination) || {_ownerID == _uid}) then {
@@ -706,17 +706,17 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	};
 
 	// inplace upgrade tool
-	if (((_cursorTarget isKindOf "ModularItems") || (_cursorTarget isKindOf "Land_DZE_WoodDoor_Base") || (_cursorTarget isKindOf "CinderWallDoor_DZ_Base") || (_cursorTarget isKindOf "DZE_Housebase") || (_cursorTarget isKindOf "DZ_storage_base") || (_typeOfCursorTarget in DZE_isNewStorage)) && !(_typeOfCursorTarget in DZE_DisableUpgrade)) then {
+	if (((_cursorTarget isKindOf "ModularItems") || (_cursorTarget isKindOf "Land_DZE_WoodDoor_Base") || (_cursorTarget isKindOf "CinderWallDoor_DZ_Base") || (_cursorTarget isKindOf "DZE_Housebase") || (_cursorTarget isKindOf "DZ_storage_base") || (_typeOfCursorTarget in DZE_UpgradableStorage)) && !(_typeOfCursorTarget in DZE_DisableUpgrade)) then {
 		if ((s_player_lastTarget select 0) != _cursorTarget) then {
 			if (s_player_upgrade_build > 0) then {
 				player removeAction s_player_upgrade_build;
 				s_player_upgrade_build = -1;
 			};
 		};
-		if (s_player_upgrade_build < 0) then {
-			_hasAccess = [player, _cursorTarget] call FNC_check_access;
-			_upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
-			if (((_hasAccess select 0) || {_hasAccess select 2} || {_hasAccess select 3}) && {(count _upgrade) > 0}) then {
+		_upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
+		if ((s_player_upgrade_build < 0) && {(count _upgrade) > 0}) then {
+			_hasAccess = [player, _cursorTarget] call FNC_check_access;			
+			if ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3) || (_typeOfCursorTarget in DZE_UpgradableStorage) || (_typeOfCursorTarget isKindOf "DZ_storage_base")) then {
 				s_player_lastTarget set [0,_cursorTarget];
 				s_player_upgrade_build = player addAction [format[localize "STR_EPOCH_UPGRADE",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true];
 			};
@@ -822,8 +822,8 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 			player removeAction s_player_checkWallet;
 			s_player_checkWallet = -1;
 		};
-		//if (_typeOfCursorTarget in DZE_MoneyStorageClasses && {!_isLocked} && {!(_typeOfCursorTarget in DZE_LockedStorage)}) then {
-		if (!_isLocked && {_typeOfCursorTarget in DZE_MoneyStorageClasses}) then {
+		
+		if (!_isLocked && {_typeOfCursorTarget in DZE_MoneyStorageClasses} && {!(_typeOfCursorTarget in DZE_LockedStorage)}) then {
 			if (s_bank_dialog < 0) then {
 				s_bank_dialog = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_ACCESS_BANK"],"\z\addons\dayz_code\actions\zsc\bankDialog.sqf",_cursorTarget,1,true,true];
 			};

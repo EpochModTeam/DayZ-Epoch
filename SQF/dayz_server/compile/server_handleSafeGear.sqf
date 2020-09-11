@@ -123,10 +123,13 @@ call {
 		_holder addMagazineCargoGlobal [getText(configFile >> "CfgVehicles" >> _packedClass >> "seedItem"),1];
 		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
 		if (Z_singleCurrency && {_coins > 0}) then {
+			private "_displayName";
+		
+			_displayName = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 			_wealth = _player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 			_player setVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),_wealth + _coins,true];
 
-			RemoteMessage = ["systemChat",["STR_CL_ZSC_PACK_WARNING",_type,[_coins] call BIS_fnc_numberText,CurrencyName]];
+			RemoteMessage = ["systemChat",["STR_CL_ZSC_PACK_WARNING",_displayName,[_coins] call BIS_fnc_numberText,CurrencyName]];
 			(owner _player) publicVariableClient "RemoteMessage";
 		};
 
@@ -137,11 +140,11 @@ call {
 
 if (_status < 4) then {
 	_type = call {
-		if (_type == "VaultStorageLocked" || _type == "VaultStorage") exitwith {
+		if (_type in ["VaultStorageLocked","VaultStorage","VaultStorage2Locked","VaultStorage2"]) exitwith {
 			if (_ownerID == _playerUID) then {_lockCode = format["%1 - Owner",_lockCode];};
 			"Safe"
 		};
-		if (_type == "LockboxStorage" || _type == "LockboxStorageLocked") exitwith {
+		if (_type in ["LockboxStorage","LockboxStorageLocked","LockboxStorage2","LockboxStorage2Locked"]) exitwith {
 			if (_ownerID == _playerUID) then {
 				_lockCode = _charID call fnc_lockCode;
 				_lockCode = format["%1 - Owner",_lockCode];

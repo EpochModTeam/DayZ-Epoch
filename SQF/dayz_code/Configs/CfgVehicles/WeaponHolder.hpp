@@ -350,8 +350,32 @@ class WeaponHolder_ItemVault: WeaponHolder {
 	seedItem = "ItemVault";
 };
 
+class WeaponHolder_ItemVault2: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_SAFE+";
+	seedItem = "ItemVault2";
+};
+
 class WeaponHolder_ItemLockbox: WeaponHolder {
 	scope = 1;
 	displayName = $STR_EPOCH_LOCKBOX;
 	seedItem = "ItemLockbox";
+};
+
+class WeaponHolder_ItemLockbox2: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_LOCKBOX+";
+	seedItem = "ItemLockbox2";
+};
+
+class WeaponHolder_ItemLockboWinter: WeaponHolder {
+	scope = 1;
+	displayName = $STR_EPOCH_LOCKBOX;
+	seedItem = "ItemLockboxWinter";
+};
+
+class WeaponHolder_ItemLockboxWinter2: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_LOCKBOX+";
+	seedItem = "ItemLockboxWinter2";
 };

@@ -30,7 +30,7 @@ if (count (crew _vehicle) == 0) then {
 		_upgrade = getArray (configFile >> "CfgVehicles" >> _classname >> "Upgrades" >> _upgrade);
 
 		if (!isNil "_upgrade" && {(count _upgrade) > 0}) then {
-			closeDialog 0;	
+			closeDialog 0;
 			_newclassname = _upgrade select 0;
 			_requirementsTools = _upgrade select 1;
 
@@ -57,10 +57,13 @@ if (count (crew _vehicle) == 0) then {
 				} count _requirementsWeapon;
 
 				if (_proceed) then {
-					[player,20,true,(getPosATL player)] spawn player_alertZombies;
+					[player,(getPosATL player),20,"repair"] spawn fnc_alertZombies;
+
 					_finished = ["Medic",1] call fn_loopAction;
 					if (!_finished) exitWith {};
+
 					if (count (crew _vehicle) > 0) exitWith {format [localize "STR_CL_LOG_FAIL_PLAYER",_displayname] call dayz_rollingMessages;};
+					["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
 
 					_temp_removed_array_mag = [];
 					_temp_removed_array_wep = [];
@@ -107,7 +110,7 @@ if (count (crew _vehicle) == 0) then {
 
 					// all parts removed proceed
 					if (_tobe_removed_total == _removed_total) then {
-
+						call player_forceSave;
 						_objectID = _vehicle getVariable ["ObjectID","0"];
 						_objectUID = _vehicle getVariable ["ObjectUID","0"];
 
@@ -125,7 +128,7 @@ if (count (crew _vehicle) == 0) then {
 							localize "STR_EPOCH_VEHUP_IN_PROGRESS" call dayz_rollingMessages;
 							[_newclassname,objNull] call fn_waitForObject;
 							dze_waiting = nil;
-							PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,true,_objectCharacterID,player,dayz_authKey];
+							PVDZE_veh_Upgrade = [_vehicle,[_dir,_location],_newclassname,_objectCharacterID,player,dayz_authKey];
 							publicVariableServer "PVDZE_veh_Upgrade";
 
 							//Wait for hive to finish spawning vehicle. Prevents dupe via player queuing multiple upgrades.

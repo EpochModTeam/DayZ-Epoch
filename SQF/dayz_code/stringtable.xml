@@ -24455,6 +24455,11 @@
 			<German>Tresor</German>
 			<Russian>Сейф</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SAFE+">
+			<English>Safe +</English>
+			<German>Tresor +</German>
+			<Russian>Сейф +</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_SAFE_DESC">
 			<English>A placeable object that is used for very secure storage. Placing your safe will give you a 4 digit number that is used to open the safe.</English>
 			<German>Ein platzierbares Objekt für eine sichere Aufbewahrung. Der vierstellige Code zum Öffnen wird nach dem Aufstellen angezeigt.</German>
@@ -24465,6 +24470,11 @@
 			<German>Tresor</German>
 			<Russian>Закрытый сейф</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SAFE_LOCKED+">
+			<English>Locked Safe +</English>
+			<German>Tresor +</German>
+			<Russian>Закрытый сейф +</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_TRADER_ENTER">
 			<English>Now entering %1</English>
 			<German>Du betrittst %1</German>
@@ -25481,6 +25491,16 @@
 			<German>Schließkassette</German>
 			<Russian>Запертый ящик</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_LOCKBOX+">
+			<English>Lockbox +</English>
+			<German>Schließkassette +</German>
+			<Russian>Запираемый ящик +</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_LOCKBOX_LOCKED+">
+			<English>Locked Lockbox +</English>
+			<German>Schließkassette +</German>
+			<Russian>Запертый ящик +</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_LOCKBOX_DESC">
 			<English>Semi secure lockbox.</English>
 			<German>Leicht gesicherte Schließkassette. Der Code besteht aus einer Farbe und 2 Ziffern.</German>
@@ -30802,7 +30822,7 @@
 		</Key>
 		<Key ID="STR_CL_ZSC_PACK_WARNING">
 			<English>You packed the %1 while it had %2 %3 in it, it has been transferred to your %3 total.</English>
-			<German>%1 wurde mit %2 %3 eingepackt. Es wurde zu deinen %3 transferiert.</German>
+			<German>Beim Einpacken befanden sich noch %2 %3 in %1. Die %3 wurden dir übertragen.</German>
 			<Russian>Вы сложили %1 пока там имелось %2 %3 внутри, содержимое загрузилось в ваш %3</Russian>
 			<French>Vous avez emballé le %1 alors qu'il contenait %2 %3, il a été transféré au total de vos %3.</French>
 		</Key>
