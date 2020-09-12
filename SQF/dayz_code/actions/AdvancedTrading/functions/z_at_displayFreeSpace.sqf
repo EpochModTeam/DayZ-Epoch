@@ -1,4 +1,4 @@
-private ["_selection","_returnArray","_allowedMags","_allowedWeapons","_allowedBackpacks","_pic","_backpack","_actualMags","_freeSpace","_allowedPrimary","_allowedSidearm","_p"];
+private ["_selection","_returnArray","_allowedMags","_allowedWeapons","_allowedBackpacks","_pic","_backpack","_actualMags","_freeSpace","_allowedPrimary","_allowedSidearm","_p","_nr","_totalBagSlots", "_totalSpace"];
 #include "defines.hpp"
 
 _selection = _this select 0;
@@ -10,21 +10,22 @@ if (_selection == 2) then { //gear
 	// Don't show pistol mag slots as item slots in gear. Player is informed of pistol mag slots count in systemChat.
 	_actualMags = {(getNumber (configFile >> "CfgMagazines" >> _x >> "type") == 256)} count (magazines player); // 256 = WeaponSlotItem (normal magazine)
 	_allowedMags = 12 - _actualMags;
-	
+
 	_p = primaryWeapon player;
 	_allowedPrimary = if (_p != "") then {0} else {1};
 	if (DZE_TwoPrimaries == 2 && dayz_onBack == "") then { _allowedPrimary = _allowedPrimary + 1; };
-	
+
 	_backpack = unitBackpack player;
 	_allowedBackpacks = if (isNull _backpack) then {1} else {0};
 	_allowedSidearm = 1;
 	{
-		switch getNumber (configFile >> "CfgWeapons" >> _x >> "type") do {
-			case 2: {_allowedSidearm = 0;}; //Pistol
-			case 4: {_allowedBackpacks = 0;}; //Launcher
+		_nr = getNumber (configFile >> "CfgWeapons" >> _x >> "type");
+		call {
+			if (_nr == 2) exitwith {_allowedSidearm = 0;}; //Pistol
+			if (_nr == 4) exitwith {_allowedBackpacks = 0;}; //Launcher
 		};
 	} count (weapons player);
-	
+
 	// 12 toolbelt + 1 Binoculars + 1 NVG + 1 Pistol + 1 Primary = 16 (onBack isn't counted in weapons player)
 	//_allowedWeapons = 16 - count(weapons player);
 	// Don't show tool slots as weapon slots in gear. Player is informed of tool slots count in systemChat.
@@ -50,7 +51,7 @@ if (_selection == 1) then { //vehicle
 		_allowedMags = _freeSpace select 1;
 		_allowedWeapons = _freeSpace select 2;
 		_allowedBackpacks = _freeSpace select 3;
-		
+
 		_pic = getText (configFile >> "CfgVehicles" >> (typeOf DZE_myVehicle) >> "picture");
 
 		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText format [
@@ -69,7 +70,7 @@ if (_selection == 0) then { //backpack
 		_freeSpace = [_backpack,0,0,0,0] call Z_calcFreeSpace;
 		_totalSpace = _freeSpace select 0;
 		_totalBagSlots = _freeSpace select 4;
-		
+
 		_pic = getText (configFile >> "CfgVehicles" >> (typeOf _backpack) >> "picture");
 
 		(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_CONTAINERINFO) ctrlSetStructuredText parseText format [

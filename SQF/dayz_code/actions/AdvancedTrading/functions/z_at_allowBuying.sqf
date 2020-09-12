@@ -3,6 +3,7 @@ private ["_selection","_return","_toBuyWeaps","_toBuyTotalMags","_toBuyBags","_t
 ,"_allowedPrimary","_allowedTools","_allowedSidearm","_allowedBackpacks","_toolClasses"
 ,"_duplicate","_quantity","_tool","_totalBagSlots","_pistolMags","_regularMags","_toBuyPistolMags"
 ,"_toBuyRegularMags","_type","_freeSpace","_backpack","_totalSpace","_toolAmounts","_allowedBinocular","_message"
+,"_vehiclesToBuy","_allowedWeapons","_allowedPistolMags","_allowedRegularMags","_typeW"
 ];
 _selection = Z_SellingFrom;
 _return = false;
@@ -28,20 +29,20 @@ if (_vehiclesToBuy > 0) then {
 
 if (_selection == 2) then { //gear
 	_pistolMags = 0;
-	_regularMags = 0;	
+	_regularMags = 0;
 	{
 		_type = getNumber (configFile >> "CfgMagazines" >> _x >> "type");
 		if (_type == 16) then {_pistolMags = _pistolMags + 1;}; // WeaponSlotHandGunItem (pistol ammo slot)
 		if (_type == 256) then {_regularMags = _regularMags + 1;}; // WeaponSlotItem (normal magazine)
 	} count (magazines player);
-	
+
 	_allowedPistolMags = 8 - _pistolMags;
 	_allowedRegularMags = 12 - _regularMags;
 
 	_p = primaryWeapon player;
 	_allowedPrimary = if (_p != "") then {0} else {1};
 	if (DZE_TwoPrimaries == 2 && dayz_onBack == "") then { _allowedPrimary = _allowedPrimary + 1; };
-	
+
 	_b = unitBackpack player;
 	_allowedBackpacks = if (isNull _b) then {1} else {0};
 
@@ -50,15 +51,16 @@ if (_selection == 2) then { //gear
 	_allowedBinocular = 2;
 	_duplicate = false;
 	{
-		switch getNumber (configFile >> "CfgWeapons" >> _x >> "type") do {
-			case 2: {_allowedSidearm = 0;}; //Pistol
-			case 4: {_allowedBackpacks = 0;}; //Launcher
-			case 4096: {_allowedBinocular = _allowedBinocular - 1;}; //Binocular slot
-			case 131072: {_allowedTools = _allowedTools - 1;}; //Toolbelt slot
+		_typeW = getNumber (configFile >> "CfgWeapons" >> _x >> "type");
+		call {
+			if (_typeW == 2) exitwith {_allowedSidearm = 0;}; //Pistol
+			if (_typeW == 4) exitwith {_allowedBackpacks = 0;}; //Launcher
+			if (_typeW == 4096) exitwith {_allowedBinocular = _allowedBinocular - 1;}; //Binocular slot
+			if (_typeW == 131072) exitwith {_allowedTools = _allowedTools - 1;}; //Toolbelt slot
 		};
 		if (_x in _toolClasses) exitWith {_duplicate = true;}; // Forbid purchasing duplicate tools into gear
 	} count (weapons player);
-	
+
 	{
 		_tool = _x;
 		_quantity = {(_tool == _x)} count _toolClasses; // Buying same tool multiple times with 1x quantity
@@ -68,7 +70,7 @@ if (_selection == 2) then { //gear
 			_toolsToBuy = _toolsToBuy - 1; //Not counting binoculars in tool total (12) when buying in gear
 		};
 	} forEach _toolClasses;
-	
+
 	{
 		if (_x > 1) exitWith {_duplicate = true;}; // Buying >1x quantity of a tool
 	} count _toolAmounts;
@@ -80,11 +82,11 @@ if (_selection == 2) then { //gear
 	if (_allowedPrimary >= _primaryToBuy && _allowedSidearm >= _sidearmToBuy && _allowedTools >= _toolsToBuy && !_duplicate && _allowedBinocular > -1) then {
 		_check1 = true;
 	} else {
-		_message = switch (true) do {
-			case (_duplicate): {localize "STR_EPOCH_TRADE_DUPLICATE_TOOL"};
-			case (_allowedBinocular < 0): {localize "STR_EPOCH_TRADE_BINOCULARS_FULL"};
-			case (_allowedTools < _toolsToBuy): {localize "STR_EPOCH_PLAYER_107"};
-			default {format[localize "STR_EPOCH_TRADE_GEAR_FULL",_allowedPrimary,_allowedSidearm,_allowedTools]};
+		_message = call {
+			if (_duplicate) exitWith {localize "STR_EPOCH_TRADE_DUPLICATE_TOOL"};
+			if (_allowedBinocular < 0) exitWith {localize "STR_EPOCH_TRADE_BINOCULARS_FULL"};
+			if (_allowedTools < _toolsToBuy) exitWith {localize "STR_EPOCH_PLAYER_107"};
+			format[localize "STR_EPOCH_TRADE_GEAR_FULL",_allowedPrimary,_allowedSidearm,_allowedTools];
 		};
 		systemChat _message;
 	};
@@ -96,13 +98,13 @@ if (_selection == 2) then { //gear
 	if (_allowedBackpacks >= _toBuyBags) then {
 		_check3 = true;
 	} else {
-		if (_allowedBackpacks == 0) then { 
+		if (_allowedBackpacks == 0) then {
 			systemChat localize "STR_EPOCH_TRADE_HAVE_BACKPACK";
 		} else {
 			systemChat localize "STR_EPOCH_TRADE_ONE_BACKPACK";
 		};
 	};
-	
+
 	if (_check1 && _check2 && _check3) then { _return = true; };
 };
 
@@ -180,7 +182,7 @@ if (_selection == 0) then { //backpack
 			systemChat localize "STR_EPOCH_TRADE_BACKPACK_FULL";
 		};
 	};
-	
+
 	if (_allowedMags >= _toBuyTotalMags) then {
 		_check2 = true;
 	} else {

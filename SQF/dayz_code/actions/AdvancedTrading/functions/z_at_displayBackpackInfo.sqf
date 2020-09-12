@@ -88,4 +88,14 @@ if (Z_SingleCurrency) then {
 	];
 };
 
+if (DZE_R3F_WEIGHT) then {
+	private "_weight";
+
+	_weight = getNumber(configFile >> "CfgWeight" >> "Backpacks" >> _class >> "weight");
+	_formattedText = _formattedText + format [
+		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2 %3</t>"
+		,localize "STR_EPOCH_WEIGHT",_weight,localize "STR_R3F_WEIGHT_English"
+	];
+};
+
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_ITEMINFO) ctrlSetStructuredText parseText _formattedText;

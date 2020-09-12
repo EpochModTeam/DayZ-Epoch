@@ -1,6 +1,6 @@
 // Made for DayZ Epoch by vbawol edited for AdvancedTrading by Zupa
 private ["_return_change","_ItemTopaz","_GemTotal","_GemTotal2","_ItemObsidian","_ItemSapphire",
-"_ItemAmethyst","_ItemEmerald","_ItemCitrine","_ItemRuby","_gem","_value","_total","_briefcase_100oz_a",
+"_ItemAmethyst","_ItemEmerald","_ItemCitrine","_ItemRuby","_gem","_value","_total",
 "_gold_10oz_a","_gold_10oz_b","_briefcase_100oz","_gold_10oz","_gold_1oz_a","_gold_1oz_b","_gold_1oz",
 "_silver_10oz_a","_silver_10oz_b","_silver_10oz","_silver_1oz_a","_silver_1oz_b","_silver_1oz",
 "_successful","_trade_total","_total_currency","_addRegularMag","_justChecking","_moneyAdded",
@@ -51,7 +51,7 @@ if (!Z_Selling) then {
 
 _addRegularMag = {
 	private ["_backpack","_freeBagSpace","_freeSpace","_regularMags","_justChecking","_moneyAdded","_item","_enoughRoom","_regularMagsToBuy","_moneyInGear","_moneyInBackpack","_freeGearSlots"];
-	
+
 	_moneyAdded = _this select 0; // Return change
 	_justChecking = _this select 1;
 	_item = _this select 2;
@@ -64,10 +64,10 @@ _addRegularMag = {
 		_moneyInGear = 0; // All money was removed in Z_payDefault
 		_moneyInBackpack = 0; // All money was removed in Z_payDefault
 	};
-	
+
 	_regularMags = {(getNumber (configFile >> "CfgMagazines" >> _x >> "type") == 256)} count (magazines player); // 256 = WeaponSlotItem (normal magazine)
 	_freeGearSlots = 12 - ((_regularMags + _regularMagsToBuy + _moneyAdded) - _moneyInGear);
-	
+
 	if (_justChecking or _freeGearSlots < 0) then {
 		_freeBagSpace = 0;
 		_backpack = unitBackpack player;
@@ -78,9 +78,9 @@ _addRegularMag = {
 		_enoughRoom = (_freeGearSlots + _freeBagSpace + _moneyInBackpack) >= 0;
 		// Return change into vehicle or on ground is not advised due to potential for theft
 	};
-	
+
 	if (_justChecking) exitWith {_enoughRoom};
-	
+
 	if (_freeGearSlots >= 0) then {
 		player addMagazine _item;
 	} else {
@@ -113,50 +113,50 @@ if (_return_change > 0) then {
 	{
 		_gem = _x;
 		_value = DZE_GemWorthList select _forEachIndex;
-		switch(_gem) do {
-			case 'ItemTopaz': {
+		call {
+			if (_gem == 'ItemTopaz') exitwith {
 				_ItemTopaz = floor(_GemTotal2 / _value);
 				if (_ItemTopaz >= 1) then {
 					_GemTotal = (_value * _ItemTopaz) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			case 'ItemObsidian': {
+			if (_gem == 'ItemObsidian') exitwith {
 				_ItemObsidian = floor(_GemTotal2 / _value);
 				if (_ItemObsidian >= 1) then {
 					_GemTotal = (_value * _ItemObsidian) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			case 'ItemSapphire': {
+			if (_gem == 'ItemSapphire') exitwith {
 				_ItemSapphire = floor(_GemTotal2 / _value);
 				if (_ItemSapphire >= 1) then {
 					_GemTotal = (_value * _ItemSapphire) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			case 'ItemAmethyst': {
+			if (_gem == 'ItemAmethyst') exitwith {
 				_ItemAmethyst = floor(_GemTotal2 / _value);
 				if (_ItemAmethyst >= 1) then {
 					_GemTotal = (_value * _ItemAmethyst) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			case 'ItemEmerald': {
+			if (_gem == 'ItemEmerald') exitwith {
 				_ItemEmerald = floor(_GemTotal2 / _value);
 				if (_ItemEmerald >= 1) then {
 					_GemTotal = (_value * _ItemEmerald) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			case 'ItemCitrine': {
+			if (_gem == 'ItemCitrine') exitwith {
 				_ItemCitrine = floor(_GemTotal2 / _value);
 				if (_ItemCitrine >= 1) then {
 					_GemTotal = (_value * _ItemCitrine) + _GemTotal;
 					_GemTotal2 = _total - _GemTotal;
 				};
 			};
-			case 'ItemRuby': {
+			if (_gem == 'ItemRuby') exitwith {
 				_ItemRuby = floor(_GemTotal2 / _value);
 				if (_ItemRuby >= 1) then {
 					_GemTotal = (_value * _ItemRuby) + _GemTotal;
@@ -254,13 +254,13 @@ if (_return_change > 0) then {
 			if (_justChecking) then { _moneyAdded = _moneyAdded + 1; } else { [1,false,format["ItemSilverBar%1oz",_silver_1oz]] call _addRegularMag; };
 		};
 	};
-	
+
 	if (_justChecking) then {
 		_successful = [_moneyAdded,true,"",_regularMagsToBuy,_moneyInGear,_moneyInBackpack] call _addRegularMag;
 	} else {
 		_successful = true;
 	};
-	
+
 	if (_combine) then {call player_forceSave;};
 };
 

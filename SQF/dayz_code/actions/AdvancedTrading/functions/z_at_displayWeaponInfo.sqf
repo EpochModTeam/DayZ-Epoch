@@ -1,4 +1,4 @@
-private ["_item","_picture","_class","_display","_buyPrice","_sellPrice","_magazines","_magText","_formattedText","_buyCurrency","_sellCurrency","_attachments","_attachText","_config","_text","_attach","_type"];
+private ["_parentClasses","_picBuy","_picSell","_item","_picture","_class","_display","_buyPrice","_sellPrice","_magazines","_magText","_formattedText","_buyCurrency","_sellCurrency","_attachments","_attachText","_config","_text","_attach","_type"];
 #include "defines.hpp"
 
 _item = _this select 0;
@@ -121,6 +121,16 @@ if !("ItemCore" in _parentClasses or "Binocular" in _parentClasses) then {
 		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%3: </t><t color='#ffffff' size='0.7'>%4</t><br />"
 		,localize "STR_EPOCH_ATTACHMENTS",_attachText,localize "STR_EPOCH_MAGS",_magText
+	];
+};
+
+if (DZE_R3F_WEIGHT) then {
+	private "_weight";
+
+	_weight = getNumber(configFile >> "CfgWeight" >> "Weapons" >> _class >> "weight");
+	_formattedText = _formattedText + format [
+		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2 %3</t>"
+		,localize "STR_EPOCH_WEIGHT",_weight,localize "STR_R3F_WEIGHT_English"
 	];
 };
 

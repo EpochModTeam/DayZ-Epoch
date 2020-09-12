@@ -20,50 +20,50 @@ _GemTotal2 = _total;
 {
 	_gem = _x;
 	_value = DZE_GemWorthList select _forEachIndex;
-	switch(_gem) do {
-	case 'ItemTopaz': {
+	call {
+		if (_gem == 'ItemTopaz') exitwith {
 			_ItemTopaz = floor(_GemTotal2 / _value);
 			if (_ItemTopaz >= 1) then {
 				_GemTotal = (_value * _ItemTopaz) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-	case 'ItemObsidian': {
+		if (_gem == 'ItemObsidian') exitwith {
 			_ItemObsidian = floor(_GemTotal2 / _value);
 			if (_ItemObsidian >= 1) then {
 				_GemTotal = (_value * _ItemObsidian) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-	case 'ItemSapphire': {
+		if (_gem == 'ItemSapphire') exitwith {
 			_ItemSapphire = floor(_GemTotal2 / _value);
 			if (_ItemSapphire >= 1) then {
 				_GemTotal = (_value * _ItemSapphire) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-	case 'ItemAmethyst': {
+		if (_gem == 'ItemAmethyst') exitwith {
 			_ItemAmethyst = floor(_GemTotal2 / _value);
 			if (_ItemAmethyst >= 1) then {
 				_GemTotal = (_value * _ItemAmethyst) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-	case 'ItemEmerald': {
+		if (_gem == 'ItemEmerald') exitwith {
 			_ItemEmerald = floor(_GemTotal2 / _value);
 			if (_ItemEmerald >= 1) then {
 				_GemTotal = (_value * _ItemEmerald) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-	case 'ItemCitrine': {
+		if (_gem == 'ItemCitrine') exitwith {
 			_ItemCitrine = floor(_GemTotal2 / _value);
 			if (_ItemCitrine >= 1) then {
 				_GemTotal = (_value * _ItemCitrine) + _GemTotal;
 				_GemTotal2 = _total - _GemTotal;
 			};
 		};
-	case 'ItemRuby': {
+		if (_gem == 'ItemRuby') exitwith {
 			_ItemRuby = floor(_GemTotal2 / _value);
 			if (_ItemRuby >= 1) then {
 				_GemTotal = (_value * _ItemRuby) + _GemTotal;

@@ -7,10 +7,10 @@ _Z_logTrade = {
 	_quantity = _this select 1;
 	_buyOrSell = _this select 2;
 	_price = _this select 3;
-	_container = switch (Z_SellingFrom) do {
-		case 0 : {"backpack"};
-		case 1 : {"vehicle"};
-		case 2 : {"gear"};
+	_container = call {
+		if (Z_SellingFrom == 0) exitwith {"backpack"};
+		if (Z_SellingFrom == 1) exitwith {"vehicle"};
+		if (Z_SellingFrom == 2) exitwith {"gear"};
 	};
 	_price = if (Z_singleCurrency) then {format ["%1 %2",[_price] call BIS_fnc_numberText,CurrencyName]} else {[_price,true,1,1] call Z_calcCurrency};
 
@@ -20,7 +20,7 @@ _Z_logTrade = {
 	} else {
 		diag_log format["%1: Sold %2x %3 from %4 at %5 for %6",localize "STR_EPOCH_PLAYER_289",_quantity,_className,_container,inTraderCity,_price];
 	};
-	
+
 	// Log to server RPT
 	if (DZE_serverLogTrades) then {
 		PVDZE_obj_Trade = [player,0,if (_buyOrSell == "buy") then {0} else {1},_className,inTraderCity,false,_price,_quantity,_container,false];
@@ -48,7 +48,7 @@ for "_i" from 0 to (count _prices)-1 do {
 	_amount = _amounts select _i;
 	_price = _prices select _i;
 	_quantity = {(_className == _x)} count _classNames;
-	
+
 	if (_quantity > 1) then {
 		if !(_className in _queueNames) then {_queueNames set [count _queueNames,_className];};
 		_index = _queueNames find _className;

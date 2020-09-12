@@ -8,7 +8,7 @@
 *
 *	Fills up the sellable list if the item has a valid config.
 **/
-private ["_weaps","_mags","_extraText","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_baseVehicle","_currencyQty","_swap","_swap2","_myVehType"];
+private ["_weaps","_mags","_extraText","_arrayOfTraderCat","_totalPrice","_backUpText","_bags","_baseVehicle","_currencyQty","_swap","_swap2","_myVehType","_processGear","_HasKeyCheck","_vehTrade"];
 #include "defines.hpp"
 
 _weaps = _this select 0;
@@ -37,7 +37,7 @@ _HasKeyCheck = {
 _totalPrice = 0;
 
 _processGear = {
-	private ["_configType","_passedType","_cat","_pic","_text","_sell","_buy","_buyCurrency","_sellCurrency","_worth"];
+	private ["_configType","_passedType","_cat","_pic","_text","_sell","_buy","_buyCurrency","_sellCurrency","_worth","_y","_HasKey","_part"];
 
 	_passedType = _this select 1; //Check for items that have the same magazine and weapon classname (PipeBomb, Stinger, Igla, etc.)
 	{
@@ -65,22 +65,22 @@ _processGear = {
 				_text = "";
 				_configType = getText(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "type");
 				if (_passedType == "find") then {_passedType = _configType;};
-				
+
 				_sell = getArray(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "sell");
 				_buy = getArray(missionConfigFile >> "CfgTraderCategory" >> _cat >> _y >> "buy");
 				if (_swap) then {_y = "ItemBloodbag"};
-				switch (true) do {
-					case (_passedType == "trade_items") :
+				call {
+					if (_passedType == "trade_items") exitwith
 					{
 						_pic = getText (configFile >> 'CfgMagazines' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgMagazines' >> _y >> 'displayName');
 					};
-					case (_passedType == "trade_weapons") :
+					if (_passedType == "trade_weapons") exitwith
 					{
 						_pic = getText (configFile >> 'CfgWeapons' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgWeapons' >> _y >> 'displayName');
 					};
-					case (_passedType in DZE_tradeObject) :
+					if (_passedType in DZE_tradeObject) exitwith
 					{
 						_pic = getText (configFile >> 'CfgVehicles' >> _y >> 'picture');
 						_text = getText (configFile >> 'CfgVehicles' >> _y >> 'displayName');

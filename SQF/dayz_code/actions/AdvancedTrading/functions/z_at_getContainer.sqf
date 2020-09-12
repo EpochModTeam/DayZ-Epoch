@@ -22,8 +22,8 @@ _backpack = unitBackpack player;
 call Z_calcPrice;
 
 if (Z_Selling) then {
-	switch (_lbIndex) do {
-		case 0: { //backpack
+	call {
+		if (_lbIndex == 0) exitwith { //backpack
 			if (!isNull _backpack) then {
 				[localize "STR_EPOCH_TRADE_SELLING_BACKPACK"] call Z_fillTradeTitle;
 				Z_SellingFrom = 0;
@@ -33,7 +33,7 @@ if (Z_Selling) then {
 				(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetStructuredText parseText " ";
 			};
 		};
-		case 1: { //vehicle
+		if (_lbIndex == 1) exitwith { //vehicle
 			_canBuyInVehicle = true call Z_checkCloseVehicle;
 			if (_canBuyInVehicle) then {
 				[localize "STR_EPOCH_TRADE_SELLING_VEHICLE"] call Z_fillTradeTitle;
@@ -44,7 +44,7 @@ if (Z_Selling) then {
 				(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetStructuredText parseText " ";
 			};
 		};
-		case 2: { //gear
+		if (_lbIndex == 2) exitwith { //gear
 			[localize "STR_EPOCH_TRADE_SELLING_GEAR"] call Z_fillTradeTitle;
 			Z_SellingFrom = 2;
 			call Z_getGearItems;
@@ -53,8 +53,8 @@ if (Z_Selling) then {
 } else {
 	ctrlSetText [Z_AT_TRADERLINE2, " "];
 	ctrlSetText [Z_AT_TRADERLINE1, localize "STR_EPOCH_TRADE_SELLING_ALL"];
-	switch (_lbIndex) do {
-		case 0: { //backpack
+	call {
+		if (_lbIndex == 0) exitwith { //backpack
 			if (!isNull _backpack) then {
 				Z_SellingFrom = 0;
 				[localize "STR_EPOCH_TRADE_BUYING_BACKPACK"] call Z_fillTradeTitle;
@@ -64,7 +64,7 @@ if (Z_Selling) then {
 				(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetStructuredText parseText " ";
 			};
 		};
-		case 1: { //vehicle
+		if (_lbIndex == 1) exitwith { //vehicle
 			_canBuyInVehicle = true call Z_checkCloseVehicle;
 			if (_canBuyInVehicle) then {
 				Z_SellingFrom = 1;
@@ -75,7 +75,7 @@ if (Z_Selling) then {
 				(findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_SLOTSDISPLAY) ctrlSetStructuredText parseText " ";
 			};
 		};
-		case 2: { //gear
+		if (_lbIndex == 2) exitwith { //gear
 			Z_SellingFrom = 2;
 			[localize "STR_EPOCH_TRADE_BUYING_GEAR"] call Z_fillTradeTitle;
 			[2] call Z_displayFreeSpace;

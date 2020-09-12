@@ -1,6 +1,6 @@
-private ['_item', '_type','_picture',"_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks"
+private ['_item','_picture',"_class","_display","_transportMaxWeapons","_transportMaxMagazines","_transportmaxBackpacks"
 ,"_buyPrice","_sellPrice","_buyCurrency","_sellCurrency","_formattedText","_fuelCapacity","_maxSpeed","_armor","_seats","_weapons",
-"_weapons2","_config","_wepText","_turret","_text"];
+"_weapons2","_config","_wepText","_turret","_text","_index","_picSell","_picBuy"];
 
 #include "defines.hpp"
 
@@ -208,5 +208,5 @@ if (count _weapons2 > 0) then {
 		localize "STR_EPOCH_WEAPONS",_wepText
 	];
 };
-		
+
 (findDisplay Z_AT_DIALOGWINDOW displayCtrl Z_AT_ITEMINFO) ctrlSetStructuredText parseText _formattedText;

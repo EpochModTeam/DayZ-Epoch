@@ -1,4 +1,4 @@
-private ["_item","_picture","_class","_display","_buyPrice","_sellPrice","_formattedText","_buyCurrency","_sellCurrency","_compatible","_weapon","_attach","_config","_compatibleText","_type","_text","_displayText"];
+private ["_picBuy","_picSell","_item","_picture","_class","_display","_buyPrice","_sellPrice","_formattedText","_buyCurrency","_sellCurrency","_compatible","_weapon","_attach","_config","_compatibleText","_type","_text","_displayText"];
 #include "defines.hpp"
 
 _item = _this select 0;
@@ -114,8 +114,18 @@ if (count _compatible > 0) then {
 
 if (_displayText != "") then {
 	_formattedText = _formattedText + format [
-		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t>"
+		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2</t><br />"
 		,localize "STR_EPOCH_DESCRIPTION",_displayText
+	];
+};
+
+if (DZE_R3F_WEIGHT) then {
+	private "_weight";
+
+	_weight = [getNumber(configFile >> "CfgWeight" >> "Magazines" >> _class >> "weight"),1] select ((configName(inheritsFrom(configFile >> "cfgMagazines" >> _class))) == "SkinBase");
+	_formattedText = _formattedText + format [
+		"<t color='#bcbcbc' size='0.7'>%1: </t><t color='#ffffff' size='0.7'>%2 %3</t>"
+		,localize "STR_EPOCH_WEIGHT",_weight,localize "STR_R3F_WEIGHT_English"
 	];
 };
 

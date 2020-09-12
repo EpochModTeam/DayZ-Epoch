@@ -1,9 +1,9 @@
-private ["_arrayOfTraderCat","_counter","_cat","_cfgtraders","_y","_type","_buy","_sell","_pic","_text","_worth","_buyCurrency","_sellCurrency","_ignore","_categoryNumber","_BcurrencyQty","_ScurrencyQty"];
+private ["_arrayOfTraderCat","_part","_cat","_cfgtraders","_y","_type","_buy","_sell","_pic","_text","_worth","_buyCurrency","_sellCurrency","_ignore","_categoryNumber","_BcurrencyQty","_ScurrencyQty"];
 
 call Z_clearBuyList;
 Z_BuyableArray = [];
 _arrayOfTraderCat = Z_traderData;
-_counter = 0;
+
 {
 	_categoryNumber = _x select 1;
 	if (_categoryNumber == _this) exitWith {

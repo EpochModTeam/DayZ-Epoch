@@ -6,7 +6,7 @@
 	Author:
 	   Zupa 2014-09-30
 	---------------------------------------------------------------------------- */
-private ["_vehInfo","_inCargo","_object","_mags","_weaps","_normalMags","_normalWeaps","_returnVar","_returnMag","_returnWeap","_freeSpace"];
+private ["_vehInfo","_inCargo","_object","_mags","_weaps","_normalMags","_normalWeaps","_returnVar","_returnMag","_returnWeap","_freeSpace","_sell"];
 
 _object = _this select 0;
 _mags = _this select 1;

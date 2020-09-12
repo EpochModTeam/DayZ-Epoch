@@ -1,9 +1,8 @@
-private ["_tempArray","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_success","_bag","_itemsToLog","_tCost","_tSold","_wealth"];
+private ["_sellVehicle","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_bag","_itemsToLog","_tCost","_tSold","_wealth"];
 
 if (count Z_SellArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_SELL_NO_ITEMS"; };
 if (Z_SellingFrom == 1 && (isNull DZE_myVehicle or !local DZE_myVehicle)) exitWith { systemChat localize "STR_EPOCH_PLAYER_245"; };
 
-_tempArray = Z_SellArray;
 closeDialog 2;
 _outcome = [];
 _weaponsArray = [];
@@ -17,7 +16,7 @@ _itemsCheckArray = [];
 _itemsToLog = [[],[],[],"sell"];
 
 _sellVehicle = {
-	private ["_damage","_tireDmg","_tires","_okToSell","_returnInfo","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_vehicle"];
+	private ["_damage","_tireDmg","_tires","_okToSell","_returnInfo","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_vehicle","_sellType"];
 	_vehicle = _this select 0;
 	_sellType = _this select 1;
 	_returnInfo = [];
@@ -66,24 +65,20 @@ _sellVehicle = {
 	_type = _x select 1;
 	_name = _x select 0;
 
-	switch (true) do {
-	case (_type == "trade_items") :
-		{
+	call {
+		if (_type == "trade_items") exitwith {
 			_itemsArray set [count(_itemsArray),_name];
 			_itemsCheckArray set [count(_itemsCheckArray),[_x select 2, _x select 11]];
 		};
-	case (_type == "trade_weapons") :
-		{
+		if (_type == "trade_weapons") exitwith {
 			_weaponsArray set [count(_weaponsArray),_name];
 			_weaponsCheckArray set [count(_weaponsCheckArray),[_x select 2, _x select 11]];
 		};
-	case (_type == "trade_backpacks") :
-		{
+		if (_type == "trade_backpacks") exitwith {
 			_bpArray set [count(_bpArray),_name];
 			_bpCheckArray set [count(_bpCheckArray),[_x select 2, _x select 11]];
 		};
-	case (_type in DZE_tradeVehicle) :
-		{
+		if (_type in DZE_tradeVehicle) exitwith {
 			if (local DZE_myVehicle) then {
 				_VehKey = [DZE_myVehicle, _type] call _sellVehicle;
 				if (count _VehKey > 0) then {
@@ -112,7 +107,7 @@ _itemsToLog set [0,(_itemsArray + _weaponsArray + _bpArray + [typeOf DZE_myVehic
 
 //gear
 if (Z_SellingFrom == 2) then {
-	private ["_localResult", "_vehTraded"];
+	private ["_localResult", "_vehTraded","_bagTraded","_name","_type"];
 	_wA = [];
 	_mA = [];
 	_vehTraded = false;
@@ -185,7 +180,7 @@ if (Z_SingleCurrency) then {
 		_money = _money + ((((_bpCheckArray select _forEachIndex) select 0)) * _x);
 		_itemsToLog set [2, (_itemsToLog select 2) + [((((_bpCheckArray select _forEachIndex) select 0)) * _x)]];
 	} forEach (_outcome select 2);
-	
+
 	if (count _outcome > 3) then {
 		_money = _money + ((_vehCheckArray select 0) select 0);
 		_itemsToLog set [2, (_itemsToLog select 2) + [((_vehCheckArray select 0) select 0)]];
@@ -219,7 +214,7 @@ if (typeName _money  == "SCALAR") then {
 		player setVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),(_wealth + _money),true];
 		systemChat format[localize "STR_EPOCH_TRADE_SUCCESS_CHANGE",[_money] call BIS_fnc_numberText,CurrencyName];
 	} else {
-		_success = [_money,0,false,0,[],[],false] call Z_returnChange;
+		[_money,0,false,0,[],[],false] call Z_returnChange;
 		_tCost = "";
 		_tCost = [_money,true] call z_calcCurrency;
 		if (_tCost != "") then { systemChat format[localize "STR_EPOCH_TRADE_SELL_SUCCESS",_tCost]; };
