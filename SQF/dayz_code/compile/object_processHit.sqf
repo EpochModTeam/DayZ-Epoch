@@ -1,4 +1,5 @@
-private["_break","_ctrlFracture"];
+private ["_unit","_break","_ctrlFracture","_selection","_damage","_strH","_dam","_total","_display"];
+
 _unit = _this select 0;
 _selection = _this select 1;
 _damage = _this select 2;
@@ -17,14 +18,14 @@ if (local _unit) then {
 		_ctrlFracture = _display displayCtrl 1203;
 
 		if ((_selection == "legs") and !r_fracture_legs) then {
-			_id = [] spawn { //do not touch this spawn!
+			[] spawn { //do not touch this spawn!
 				player setHit["legs",1];
 			};
 			r_fracture_legs = true;
 			_break = true;
 		};
 		if ((_selection == "arms") and !r_fracture_arms) then {
-			_id = [] spawn { // do not touch this spawn!
+			[] spawn { // do not touch this spawn!
 				player setHit["hands",1];
 			};
 			r_fracture_arms = true;
