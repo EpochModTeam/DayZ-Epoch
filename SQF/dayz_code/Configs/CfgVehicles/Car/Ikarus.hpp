@@ -23,6 +23,13 @@ class Ikarus_TK_CIV_EP1_DZE: Ikarus_TK_CIV_EP1 {
 class Ikarus_White_DZE: Ikarus_DZE {
 	displayname = $STR_VEH_NAME_IKARUS_WHITE;
 	model = "\sra_civilian\wheeled\bus\bus_city.p3d";
+	driverAction = "CityBus_Driver";
+	nameSound = "bus";
+	cargoAction[] = {"Truck_Cargo03","Truck_Cargo01","Truck_Cargo04","Truck_Cargo01","Truck_Cargo01","Truck_Cargo03","Truck_Cargo01","Truck_Cargo04","Truck_Cargo01","Truck_Cargo02","Truck_Cargo02","Truck_Cargo01"};
+	dammageFull[] = {"\sra_civilian\wheeled\bus\bus_city_glass_ca.paa","\sra_civilian\wheeled\bus\bus_city_glassbr2_ca.paa","\sra_civilian\wheeled\bus\bus_city_glass_ca.paa","\sra_civilian\wheeled\bus\bus_city_glassbr2_ca.paa"};
+	dammageHalf[] = {"\sra_civilian\wheeled\bus\bus_city_glass_ca.paa","\sra_civilian\wheeled\bus\bus_city_glassbr1_ca.paa","\sra_civilian\wheeled\bus\bus_city_glass_ca.paa","\sra_civilian\wheeled\bus\bus_city_glassbr1_ca.paa"};
+	maxSpeed = 80;
+	
 	class AnimationSources
 	{
 		class HitGlass1
