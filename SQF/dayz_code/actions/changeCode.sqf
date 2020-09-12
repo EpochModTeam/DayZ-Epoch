@@ -12,8 +12,8 @@ private ["_backupCode","_badCode","_cursorTarget","_dialog","_dir","_doorFriends
 _cursorTarget = _this select 3;
 _typeOf = typeOf (_cursorTarget);
 
-_isSafe = _typeOf == "VaultStorage";
-_isLockBox = _typeOf == "LockBoxStorage";
+_isSafe = _typeOf in ["VaultStorage","VaultStorage2"];
+_isLockBox = _typeOf in ["LockBoxStorage","LockBoxStorage2","LockBoxStorageWinter","LockBoxStorageWinter2"];
 _isStorage = (_isSafe || _isLockBox);
 _isDoor = _typeOf in DZE_DoorsLocked;
 
@@ -81,7 +81,7 @@ if (_isStorage) then {
 	if (DZE_permanentPlot) then {
 		_ownerID = _cursorTarget getVariable["ownerPUID","0"];
 		_object setVariable ["ownerPUID",_ownerID,true];
-		_doorFriends = _cursorTarget getVariable ["doorfriends",[]];		
+		_doorFriends = _cursorTarget getVariable ["doorfriends",[]];
 		if (isNil "_ownerID" || _ownerID == "0") then {_ownerID = dayz_playerUID;};
 		if (count _doorFriends == 0) then {_doorFriends = [[dayz_playerUID,toArray (name player)]];};
 		_object setVariable ["doorfriends",_doorFriends,true];
