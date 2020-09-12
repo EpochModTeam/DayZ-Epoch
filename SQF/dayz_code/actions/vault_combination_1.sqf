@@ -1,5 +1,3 @@
-private ["_ok"];
-
 if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_21" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
@@ -12,10 +10,10 @@ if (dayz_lastCodeFail > diag_tickTime) exitWith {
 };
 
 if (!isNull dayz_selectedVault) then {
-	if ((typeOf dayz_selectedVault) == "VaultStorageLocked" || (typeOf dayz_selectedVault) == "VaultStorage") then {
-		_ok = createDialog "SafeKeyPad";
+	if ((typeOf dayz_selectedVault) in ["VaultStorageLocked","VaultStorage","VaultStorage2Locked","VaultStorage2"]) then {
+		createDialog "SafeKeyPad";
 	} else {
-		_ok = createDialog "KeypadUI";
+		createDialog "KeypadUI";
 	};
 };
 
