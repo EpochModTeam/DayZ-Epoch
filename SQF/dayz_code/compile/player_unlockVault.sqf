@@ -55,8 +55,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 	PVDZE_handleSafeGear = [player,_obj,3,dayz_combination,dayz_authKey];
 	publicVariableServer "PVDZE_handleSafeGear";
 
-	[player,"repair",0,false] call dayz_zombieSpeak;
-	[player,25,true,(getPosATL player)] spawn player_alertZombies;
+	[player,(getPosATL player),40,"repair"] spawn fnc_alertZombies;
 
 	if (DZE_lockablesHarderPenalty) then {
 		dayz_lastCodeFail = (diag_tickTime + dayz_UnlockTime);

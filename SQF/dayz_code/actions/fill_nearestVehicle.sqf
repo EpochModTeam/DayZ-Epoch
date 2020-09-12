@@ -1,6 +1,7 @@
-private ["_isFuelTruck","_fuelTruckCapacity","_finished","_newFuel","_abort","_newFuelSrc","_canSize","_vehicle","_configVeh","_capacity","_nameText","_fuelTruck","_findNearestVehicle"];
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+
+private ["_isFuelTruck","_fuelTruckCapacity","_finished","_newFuel","_abort","_newFuelSrc","_canSize","_vehicle","_configVeh","_capacity","_nameText","_fuelTruck","_findNearestVehicle"];
 
 _fuelTruck = _this select 3;
 _abort = false;
@@ -33,9 +34,9 @@ if (count _findNearestVehicle >= 1) then {
 	while {true} do {
 		// qty to add per loop
 		_canSize = (_capacity / 10);
-	
+
 		format[localize "str_epoch_player_131",_nameText] call dayz_rollingMessages;
-		[player,20,true,(getPosATL player)] spawn player_alertZombies;
+		[player,(getPosATL player),20,"refuel"] spawn fnc_alertZombies;
 		_finished = ["Medic",1] call fn_loopAction;
 
 		if (!_finished) then {
@@ -58,7 +59,6 @@ if (count _findNearestVehicle >= 1) then {
 						PVDZ_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
 						publicVariableServer "PVDZ_send";
 					};
-					[player,"refuel",0,false] call dayz_zombieSpeak;
 					format[localize "str_epoch_player_132",_nameText,round(_newFuel*100)] call dayz_rollingMessages;
 				} else {
 					_abort = true;
@@ -66,14 +66,13 @@ if (count _findNearestVehicle >= 1) then {
 			} else {
 				//Filling near vehicle at gas station with generator
 				if (_newFuel >= _capacity) then {_newFuel = 1; _abort = true;} else {_newFuel = (_newFuel / _capacity);};
-				
+
 				if (local _vehicle) then {
 					[_vehicle,_newFuel] call local_setFuel;
 				} else {
 					PVDZ_send = [_vehicle,"SetFuel",[_vehicle,_newFuel]];
 					publicVariableServer "PVDZ_send";
 				};
-				[player,"refuel",0,false] call dayz_zombieSpeak;
 				format[localize "str_epoch_player_132",_nameText,round(_newFuel*100)] call dayz_rollingMessages;
 			};
 		};
@@ -81,7 +80,7 @@ if (count _findNearestVehicle >= 1) then {
 		if (_abort) exitWith {
 			["Working",0,[0,1,3,0]] call dayz_NutritionSystem;
 		};
-		uiSleep 1;	
+		uiSleep 1;
 	};
 } else {
 	localize "str_epoch_player_27" call dayz_rollingMessages;

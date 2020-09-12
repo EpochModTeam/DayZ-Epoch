@@ -79,9 +79,6 @@ _nameText = 	getText(_configVeh >> "displayName");
 								publicVariableServer "PVDZ_send";
 							};
 
-							// Play sound
-							[player,"refuel",0,false] call dayz_zombieSpeak;
-
 							player addMagazine _canName;
 
 							["Working",0,[20,40,15,0]] call dayz_NutritionSystem;

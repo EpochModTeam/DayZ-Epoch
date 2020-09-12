@@ -1,7 +1,7 @@
 if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 dayz_actionInProgress = true;
 
-private ["_emptycan","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_randomJerryCan","_fireIntensity","_dis","_sfx","_finished"];
+private ["_emptycan","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_randomJerryCan","_fireIntensity","_finished"];
 
 //Tent Object
 _obj = _this select 3;
@@ -34,10 +34,7 @@ if ((count _matchArray == 0)) exitwith { dayz_actionInProgress = false; systemCh
 player removeAction s_player_destroytent;
 s_player_destroytent = -1;
 
-_dis=20;
-_sfx = "tentpack";
-[player,_sfx,0,false,_dis] call dayz_zombieSpeak;
-[player,_dis,true,(getPosATL player)] call player_alertZombies;
+[player,(getPosATL player),20,"tentpack"] spawn fnc_alertZombies;
 
 _finished = ["Medic",1] call fn_loopAction;
 if (!_finished or (isNull _obj)) exitWith {

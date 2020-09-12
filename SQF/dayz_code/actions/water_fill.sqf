@@ -79,8 +79,7 @@ if (_drinking) then {
 	foreach magazines player;
 
 	if (_filled > 0) then {
-		[player, "fillwater", 0, false, 5] call dayz_zombieSpeak;
-		[player, 5, true, _posATL] call player_alertZombies;
+		[player,(getPosATL player),5,"fillwater"] spawn fnc_alertZombies;
 		format [localize "str_player_01", _filled] call dayz_rollingMessages;
 	} else {
 		localize "str_player_02" call dayz_rollingMessages;
