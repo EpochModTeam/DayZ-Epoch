@@ -832,7 +832,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 			s_bank_dialog = -1;
 		};
 		if (ZSC_VehicleMoneyStorage) then {
-			if (_isVehicle && !_isMan && !_isLocked && _isAlive) then {
+			if (_isVehicle && !_isMan && !_isLocked && _isAlive && !_isBicycle) then {
 				if (s_bank_dialog3 < 0) then {
 					s_bank_dialog3 = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_ACCESS_BANK"],"\z\addons\dayz_code\actions\zsc\vehDialog.sqf",_cursorTarget,1,true,true];
 				};
