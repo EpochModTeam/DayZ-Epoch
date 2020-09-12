@@ -108,7 +108,7 @@ _object enableSimulation false;
 
 dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
-if (Z_SingleCurrency && {(_coins > 0) && {_class in DZE_MoneyStorageClasses}}) then {
+if (Z_SingleCurrency && {(_coins > 0) && {_class in DZE_MoneyStorageClasses}}) then { //Do not use server_updateObject, safes and lockboxes need a different handling
 	_object setVariable ["cashMoney",_coins,true];
 	_key = format["CHILD:309:%1:",_uid] + str _inv + ":" + str _coins + ":";
 	_key call server_hiveWrite;

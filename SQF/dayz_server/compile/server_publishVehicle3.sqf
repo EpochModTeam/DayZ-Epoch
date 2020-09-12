@@ -1,4 +1,7 @@
-private ["_inv","_coins","_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected","_characterID","_result","_outcome","_oid","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks","_clientKey","_exitReason","_playerUID"];
+private ["_coins","_activatingPlayer","_object","_worldspace","_location","_dir","_class","_uid","_key","_keySelected"
+,"_characterID","_result","_outcome","_oid","_objectID","_objectUID","_newobject","_weapons","_magazines","_backpacks"
+,"_clientKey","_exitReason","_playerUID","_isAir","_fuel","_selection","_dam","_hitpoints","_newHitpoints","_damage"
+,"_hit","_inv"];
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 if (count _this < 6) exitWith {
@@ -29,6 +32,33 @@ if (!(isClass(configFile >> "CfgVehicles" >> _class)) || isNull _object) exitWit
 	(owner _activatingPlayer) publicVariableClient "dze_waiting";
 };
 
+_objectID = _object getVariable ["ObjectID","0"];
+_objectUID = _object getVariable ["ObjectUID","0"];
+_location = [_object] call fnc_getPos;
+_fuel = fuel _object;
+_hitpoints = _object call vehicle_getHitpoints;
+_newHitpoints = [];
+_damage = damage _object;
+
+// add items from previous vehicle here
+_weapons = getWeaponCargo _object;
+_magazines = getMagazineCargo _object;
+_backpacks = getBackpackCargo _object;
+_inv = [_weapons,_magazines,_backpacks];
+
+if (Z_SingleCurrency && ZSC_VehicleMoneyStorage) then {
+	_coins = _object getVariable ["cashMoney",0];
+};
+
+{
+	_hit = [_object,_x] call object_getHit;
+	if ((_hit select 0) > 0) then {
+		_newHitpoints set [count _newHitpoints,[(_hit select 1),(_hit select 0)]];
+	} else {
+		_newHitpoints set [count _newHitpoints,[(_hit select 1),0]];
+	};
+} count _hitpoints;
+
 #ifdef OBJECT_DEBUG
 diag_log ("PUBLISH: Attempt " + str(_object));
 #endif
@@ -37,15 +67,12 @@ _dir = _worldspace select 0;
 _location = _worldspace select 1;
 _uid = _worldspace call dayz_objectUID2;
 
-_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, [], [], 1,_uid];
+_key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, _inv, _newHitpoints, _damage,_uid];
 #ifdef OBJECT_DEBUG
 diag_log ("HIVE: WRITE: "+ str(_key));
 #endif
 
 _key call server_hiveWrite;
-_objectID = _object getVariable ["ObjectID","0"];
-_objectUID = _object getVariable ["ObjectUID","0"];
-_location = [_object] call fnc_getPos;
 
 // GET DB ID
 _key = format["CHILD:388:%1:",_uid];
@@ -67,16 +94,6 @@ if (_outcome != "PASS") then {
 	diag_log("CUSTOM: Selected " + str(_oid));
 	#endif
 
-	// add items from previous vehicle here
-	_weapons = getWeaponCargo _object;
-	_magazines = getMagazineCargo _object;
-	_backpacks = getBackpackCargo _object;
-	_inv = [_weapons,_magazines,_backpacks];
-
-	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage) then {
-		_coins = _object getVariable ["cashMoney",0];
-	};
-
 	deleteVehicle _object;
 	[_objectID,_objectUID,_object] call server_deleteObjDirect;
 
@@ -90,6 +107,11 @@ if (_outcome != "PASS") then {
 	_object setVariable ["ObjectID", _oid, true];
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
+
+	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage && {_coins > 0}) then {
+		_object setVariable ["cashMoney",_coins,true];
+	};
+
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
 	clearWeaponCargoGlobal _object;
@@ -102,11 +124,16 @@ if (_outcome != "PASS") then {
 
 	[_weapons,_magazines,_backpacks,_object] call fn_addCargo;
 
-	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage && {_coins > 0}) then {
-		_object setVariable ["cashMoney",_coins,true];
-		_key = format["CHILD:309:%1:",_uid] + str _inv + ":" + str _coins + ":";
-		_key call server_hiveWrite;
-	};
+	_isAir = _object isKindOf "Air";
+	{
+		_selection = _x select 0;
+		_dam = [_x select 1,(_x select 1) min 0.8] select (!_isAir && {_selection in dayZ_explosiveParts});
+		_object setHit [_selection,_dam];
+	} count _newHitpoints;
+
+	_object setFuel _fuel;
+
+	[_object,"all",true] call server_updateObject;
 
 	_object call fnc_veh_ResetEH;
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.
