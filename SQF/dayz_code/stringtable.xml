@@ -30223,7 +30223,10 @@
 			<English>A blood bag filled with blood from a sheep.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Schafes.</German>
 		</Key>		
-		
+		<Key ID="STR_EPOCH_WEIGHT">
+			<English>Weight</English>
+			<German>Gewicht</German>
+		</Key>			
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">

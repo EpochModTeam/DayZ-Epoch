@@ -205,8 +205,8 @@ if (!isDedicated) then {
 	fnc_setWeather = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\setWeather.sqf";
 	fnc_groundFog = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\groundFog.sqf";
 
-	// Advanced trading default inits for maintaining, Advanced Trading and custom scripts to utilize gem based currency.
-	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\AdvancedTrading\defaultInit.sqf";
+	// Compiles of all trading related functions
+	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\AdvancedTrading\compiles.sqf";
 
 	fnc_alertZombies = {
 		private ["_unit","_pos","_dis","_sfx"];
