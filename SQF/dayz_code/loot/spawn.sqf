@@ -45,11 +45,6 @@ call {
 		_vehicle = "WeaponHolder" createVehicle [0,0,0];
 		_vehicle addMagazineCargoGlobal [_item, 1];
 
-		// Fix generator spawning half way in the floor by raising z coordinate by .3 meters.
-		if (_item == "ItemGenerator") then {
-			_pos set [2, ((_pos select 2) + .3)];
-		};
-
 		if (_isWater) then {
 			_vehicle setPos (_pos);
 		} else {

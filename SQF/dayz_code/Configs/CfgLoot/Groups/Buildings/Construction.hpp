@@ -1,6 +1,7 @@
 Construction[] =
 {
 	//Items
+	{Loot_VEHICLE,		3,		WeaponHolder_ItemGenerator},
 	{Loot_MAGAZINE,		1,		ItemComboLock},
 	{Loot_MAGAZINE,		6,		ItemSandbag},
 	{Loot_MAGAZINE,		1,		ItemWire},
@@ -8,7 +9,6 @@ Construction[] =
 	{Loot_MAGAZINE,		2,		equip_hose},
 	{Loot_MAGAZINE,		2,		MortarBucket},
 	{Loot_MAGAZINE,		6,		CinderBlocks},
-	{Loot_MAGAZINE,		3,		ItemGenerator},
 	{Loot_MAGAZINE,		1,		fuel_pump_kit},
 	
 	//Other

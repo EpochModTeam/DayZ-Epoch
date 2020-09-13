@@ -248,7 +248,7 @@ class WeaponHolder_ItemGenerator : WeaponHolderBase {
 	destrType = "DestructNo";
 	
 	class eventHandlers {
-		delete init;
+		init = "[(_this select 0),'cfgMagazines','ItemGenerator'] spawn object_pickupAction";		
 	};
 };
 

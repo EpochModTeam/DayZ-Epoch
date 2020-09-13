@@ -11,7 +11,6 @@ Church[] =
 	{Loot_GROUP,		4,		backpacks},
 	
 	//Items
-//	{Loot_MAGAZINE,		1,		equip_Crossbow_Kit}, //not functional yet
 	{Loot_MAGAZINE,		4,		ItemBookBible},
 	
 	//Groups
