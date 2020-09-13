@@ -75,6 +75,10 @@ if (_isArray) then {
 	mydamage_eh1 = _newUnit AddEventHandler ["HandleDamage", {False}];
 	_newUnit setVariable ["characterID",(_this select 1),true];
 	_newUnit setVariable ["humanity",(_this select 2),true];
+	_newUnit setVariable ["zombieKills",(_this select 3),true];
+	_newUnit setVariable ["headShots",(_this select 4),true];
+	_newUnit setVariable ["humanKills",(_this select 5),true];
+	_newUnit setVariable ["banditKills",(_this select 6),true];
 };
 _newUnit setDir _dir;
 {_newUnit removeMagazine _x;} count magazines _newUnit;

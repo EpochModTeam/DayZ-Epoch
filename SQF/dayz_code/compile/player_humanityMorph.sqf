@@ -37,7 +37,7 @@ if (Z_SingleCurrency) then {
 };
 
 //Switch
-[_model, _charID, _humanity] call player_switchModel; //Already spawned thread, no need to spawn and waitUntil script is done
+[_model, _charID, _humanity, _zombieKills, _headShots, _humanKills, _banditKills] call player_switchModel; //Already spawned thread, no need to spawn and waitUntil script is done
 
 //Login
 
@@ -81,10 +81,10 @@ if (count _medical > 0) then {
 
 //General Stats
 //player setVariable ["humanity",_humanity,true]; //Moved to player_switchModel
-player setVariable ["zombieKills",_zombieKills,true];
-player setVariable ["headShots",_headShots,true];
-player setVariable ["humanKills",_humanKills,true];
-player setVariable ["banditKills",_banditKills,true];
+//player setVariable ["zombieKills",_zombieKills,true]; //Moved to player_switchModel
+//player setVariable ["headShots",_headShots,true]; //Moved to player_switchModel
+//player setVariable ["humanKills",_humanKills,true]; //Moved to player_switchModel
+//player setVariable ["banditKills",_banditKills,true]; //Moved to player_switchModel
 //player setVariable ["characterID",_charID,true]; //Moved to player_switchModel
 player setVariable ["worldspace",_worldspace];
 player setVariable ["combattimeout",_combattimeout,false];
