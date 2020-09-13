@@ -887,7 +887,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 				_humanity_logic = (_humanity < DZE_Hero);
 			};
 			if (_humanity_logic) then {
-				_cancel = player addAction [format[localize "STR_EPOCH_ACTIONS_HUMANITY",_low_high], "\z\addons\dayz_code\actions\trade_cancel.sqf",["na"], 0, true, false];
+				_cancel = player addAction [format[localize "STR_EPOCH_ACTIONS_HUMANITY",_low_high], "","", 0, true, false];
 				s_player_parts set [count s_player_parts,_cancel];
 			} else {
 				private ["_itemName1","_itemName2"];
