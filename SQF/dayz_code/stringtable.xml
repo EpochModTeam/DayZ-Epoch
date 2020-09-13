@@ -30226,7 +30226,50 @@
 		<Key ID="STR_EPOCH_WEIGHT">
 			<English>Weight</English>
 			<German>Gewicht</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_EPOCH_JOURNAL_Name">
+			<English>Name</English>
+		</Key>		
+		<Key ID="STR_EPOCH_JOURNAL_HEALTH">
+			<English>Health</English>
+			<German>Gesundheit</German>
+		</Key>	
+		<Key ID="STR_EPOCH_JOURNAL_SURVIVED">
+			<English>Survived</English>
+			<German>Überlebt</German>
+		</Key>		
+		<Key ID="STR_EPOCH_JOURNAL_DAYS">
+			<English>Day(s)</English>
+			<German>Tag(e)</German>
+		</Key>
+		<Key ID="STR_EPOCH_JOURNAL_HOURS">
+			<English>Hour(s)</English>
+			<German>Stunde(n)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_JOURNAL_MINUTES">
+			<English>Minute(s)</English>
+			<German>Minute(n)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_JOURNAL_SERVER_SETTINGS">
+			<English>Server Settings</English>
+			<German>Servereinstellungen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_JOURNAL_BASE">
+			<English>Indestructible Bases</English>
+			<German>Unzerstörbare Basen</German>
+		</Key>
+		<Key ID="STR_EPOCH_JOURNAL_PLOT">
+			<English>Plot Poles</English>
+			<German>Grundstücksmarkierungen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_JOURNAL_BUILDINGLIMIT">
+			<English>Build Limit</English>
+			<German>Baulimit</German>
+		</Key>	
+		<Key ID="STR_EPOCH_JOURNAL_PVE">
+			<English>PVE Mode</English>
+			<German>PVE-Modus</German>
+		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
