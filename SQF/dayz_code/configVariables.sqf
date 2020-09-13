@@ -20,6 +20,9 @@ if (isServer) then {
 	dayz_POIs = false; //Enable POI's
 	dayz_enableGhosting = false;
 	dayz_ghostTimer = 120;
+	
+	// ZSC
+	Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.
 };
 
 // Client
@@ -138,9 +141,26 @@ if (!isDedicated) then {
 	dayz_markBody = 0; // Players can see their corpse position on the map 0=never, 1=always, 2=With GPS only
 	dayz_requireRadio = false; // Require players to have a radio on their toolbelt to create a group, be in a group and receive invites.
 	
-	//Humanity System
+	// Humanity System
 	DZE_Hero = 5000; // Defines the value at how much humanity the player is classed as a hero.
-	DZE_Bandit = -5000; // Defines the value at how much humanity the player is classed as a bandit.
+	DZE_Bandit = -5000; // Defines the value at how much humanity the player is classed as a bandit.	
+	
+	// ZSC
+	Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
+	Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
+	ZSC_bankTraders = ["Functionary1_EP1_DZ"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1_DZ)
+	ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
+	ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+	ZSC_maxBankMoney = 500000; // Default limit for bank objects.
+	ZSC_defaultStorageMultiplier = 200; // Default magazine count for bank objects that don't have storage slots i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+	ZSC_MaxMoneyInStorageMultiplier = 5000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
+	ZSC_ZombieCoins = [false,[0,1000]]; // First value activate coins on zombies, second value from 0 - 1000 coins on each zombie. Coin for zombies are handled directly in check wallet.
+
+	// Loot system
+	dayz_toolBreaking = false; //Sledgehammer, crowbar and pickaxe have a chance to break when used.
+	dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
+	dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
+	dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
 };	
 
 // Both
@@ -157,12 +177,6 @@ dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random o
 dayz_classicBloodBagSystem = false; // disable blood types system and use the single classic ItemBloodbag
 dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
 
-// Loot system
-dayz_toolBreaking = false; //Sledgehammer, crowbar and pickaxe have a chance to break when used.
-dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
-dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
-dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
-
 // Death Messages
 DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
 DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
@@ -171,20 +185,11 @@ DZE_DeathMsgRolling = false; // Display death messages as rolling messages in bo
 // ZSC
 Z_SingleCurrency = false; // Enable single currency system.
 Z_globalBanking = false; // Enable global banking system.
-Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.
 Z_persistentMoney = false; // Enabling this stores currency to player_data instead of character_data. Currency transfers to a new character after death. For PVE servers only. Formerly called "GlobalMoney".
 Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
-Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
-Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
 CurrencyName = "Coins"; // If using single currency this is the currency display name.
-ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
-ZSC_bankTraders = ["Functionary1_EP1_DZ"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1_DZ)
-ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
-ZSC_maxBankMoney = 500000; // Default limit for bank objects.
 DZE_MoneyStorageClasses = ["VaultStorage","VaultStorage2","VaultStorageLocked","VaultStorage2Locked","LockboxStorageLocked","LockboxStorage2Locked","LockboxStorage","LockboxStorage2","LockboxStorageWinterLocked","LockboxStorageWinter2Locked","LockboxStorageWinter","LockboxStorageWinter2"]; // If using single currency this is an array of object classes players can store coins in. E.g.: ["GunRack_DZ","WoodCrate_DZ"]
 ZSC_VehicleMoneyStorage = true; // Allow players to store money in vehicles. If vehicles are destroyed the money is also destroyed.
-ZSC_defaultStorageMultiplier = 200; // Default magazine count for bank objects that don't have storage slots i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
-ZSC_MaxMoneyInStorageMultiplier = 5000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
 
 // Plot Management and Plot for Life
 DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.

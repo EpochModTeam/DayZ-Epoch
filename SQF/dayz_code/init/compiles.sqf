@@ -694,6 +694,27 @@ if (!isDedicated) then {
 
 		_ret
 	};
+	
+	DZE_PVE_Group_Check = {
+		private ["_player", "_body", "_nameBody", "_ingroup", "_name"];
+
+		_player = _this select 0;
+		_body = _this select 1;
+		_name = name _player;
+		_nameBody = _body getVariable ["bodyName","unknown"];
+		_ingroup = false;
+
+		{
+			if (_nameBody == name _x) exitwith {
+				_ingroup = true;
+			};
+		} count (units group _player);
+
+		if ((_nameBody != "unknown") && !(_name == _nameBody) && !_ingroup) exitwith {
+			true
+		};
+		false
+	};
 
 	DZ_KeyDown_EH = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\keyboard.sqf";
 	dayz_EjectPlayer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_ejectPlayer.sqf";

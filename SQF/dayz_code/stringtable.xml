@@ -30270,6 +30270,10 @@
 			<English>PVE Mode</English>
 			<German>PVE-Modus</German>
 		</Key>		
+		<Key ID="STR_EPOCH_PVE_ACTIVE_CANNOT_CHECK_WALLET">
+			<English>You cannot check the wallet of another player who is not in your group while the PVE Mode is active!</English>
+			<German>Du kannst die Brieftasche eines anderen Spielers, der nicht in deiner Gruppe ist, nicht durchsuchen, solange der PVE Modus aktiv ist.</German>
+		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
