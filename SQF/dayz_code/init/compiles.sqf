@@ -727,7 +727,6 @@ local_zombieDamage = compile preprocessFileLineNumbers "\z\addons\dayz_code\comp
 local_setFuel = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_setFuel.sqf";			//Generated when someone refuels a vehicle
 local_eventKill = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\local_eventKill.sqf";		//Generated when something is killed
 player_humanityChange = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_humanityChange.sqf"; //New
-player_humanityCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_humanityCheck.sqf"; //Old
 player_projectileNear = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_projectileNear.sqf";
 player_bloodCalc = compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\bloodCalc.sqf";
 fn_selectRandomLocation = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_selectRandomLocation.sqf";
@@ -744,7 +743,6 @@ fnc_fieldOfView = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile
 object_pickupAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf";
 object_BackpackAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf";
 fnc_deleteAt = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_deleteAt.sqf";
-
 
 if (dayz_townGenerator) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\psrnd.sqf"; // pseudo random for plantSpanwer

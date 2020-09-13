@@ -25,3 +25,4 @@ Folder for old scripts that are no longer used by epoch. All scripts can still b
 //call compile preprocessFileLineNumbers "\z\addons\dayz_code\old\achievements_init.sqf";
 //fnc_Obj_FenceHandleDam = compile preprocessFileLineNumbers "\z\addons\dayz_code\old\fence_handleDam.sqf";
 //call compile preprocessFileLineNumbers "\z\addons\dayz_code\old\fn_padlock.sqf";
+//player_humanityCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\old\player_humanityCheck.sqf";
