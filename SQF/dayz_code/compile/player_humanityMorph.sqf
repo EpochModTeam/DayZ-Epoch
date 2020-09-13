@@ -1,4 +1,4 @@
-private ["_charID","_newmodel","_old","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_wpnType","_ismelee","_survivalTime","_coins","_bankCoins","_globalCoins"];
+private ["_charID","_model","_old","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_survivalTime","_coins","_bankCoins","_globalCoins","_ConfirmedHumanKills","_ConfirmedBanditKills","_friendlies","_tagSetting"];
 //_playerUID = _this select 0;
 _charID = _this select 1;
 _model = _this select 2;
@@ -22,7 +22,6 @@ _zombieKills = player getVariable ["zombieKills",0];
 _headShots = player getVariable ["headShots",0];
 _humanKills = player getVariable ["humanKills",0];
 _banditKills = player getVariable ["banditKills",0];
-//_achievements = player getVariable ["Achievements",[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];
 _combattimeout = player getVariable["combattimeout",0];
 _inCombat = player getVariable ["inCombat",false];
 _survivalTime = player getVariable ["SurvivalTime",0];
@@ -88,7 +87,6 @@ player setVariable ["humanKills",_humanKills,true];
 player setVariable ["banditKills",_banditKills,true];
 //player setVariable ["characterID",_charID,true]; //Moved to player_switchModel
 player setVariable ["worldspace",_worldspace];
-//player setVariable ["Achievements",_achievements];
 player setVariable ["combattimeout",_combattimeout,false];
 player setVariable ["inCombat",_inCombat,true];
 player setVariable ["SurvivalTime",_survivalTime,false];
@@ -102,9 +100,6 @@ if (Z_SingleCurrency) then {
 	player setVariable ["bankMoney",_bankCoins,true];
 	player setVariable ["globalMoney",_globalCoins,true];
 };
-
-//PVDZ_serverStoreVar = [player,"Achievements",_achievements];
-//publicVariableServer "PVDZ_serverStoreVar";
 
 call dayz_resetSelfActions; //New unit has no self actions yet. Reset variables so actions can be added back.
 dayz_actionInProgress = false; //Allow self actions to run now.
