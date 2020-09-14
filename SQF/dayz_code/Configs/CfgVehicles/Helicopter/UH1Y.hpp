@@ -139,6 +139,7 @@ class UH1Y_DZ: UH1_Base {
 	};
 };
 class UH1Y_DZE: UH1Y_DZ {
+	enableManualFire = 0;
 	class Turrets : Turrets {
 		class MainTurret: MainTurret
 		{

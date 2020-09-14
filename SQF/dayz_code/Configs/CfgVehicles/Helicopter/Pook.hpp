@@ -320,6 +320,7 @@ class pook_transport_DZ: pook_H13_transport
 
 class pook_transport_DZE: pook_transport_DZ
 {	
+	enableManualFire = 0;
 	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
@@ -373,6 +374,7 @@ class pook_transport_CDF_DZ: pook_transport_DZ
 
 class pook_transport_CDF_DZE: pook_transport_CDF_DZ
 {
+	enableManualFire = 0;
 	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {

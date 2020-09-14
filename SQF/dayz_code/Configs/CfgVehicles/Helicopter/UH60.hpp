@@ -154,6 +154,7 @@ class UH60M_EP1_DZ: UH60M_EP1 {
 };
 
 class UH60M_EP1_DZE: UH60M_EP1_DZ {
+	enableManualFire = 0;
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
 			body = "mainTurret";
