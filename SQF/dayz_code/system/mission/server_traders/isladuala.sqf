@@ -1,6 +1,6 @@
 // DayZ Epoch TRADERS for 12
 
-serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","RU_Citizen4","Profiteer1","Rita_Ensler_EP1","Dr_Hladik_EP1","Worker2","TK_CIV_Worker01_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","RU_WorkWoman5","Doctor","Worker1","TK_CIV_Worker02_EP1","Rocker4","RU_Citizen3","RU_WorkWoman1","Dr_Annie_Baker_EP1","Worker3","RU_Pilot","RU_Villager3","HouseWife1","Profiteer2","Profiteer3","Functionary1_EP1_DZ"];
+serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","Villager1","RU_Citizen4","Profiteer1","Rita_Ensler_EP1","Dr_Hladik_EP1","Worker2","TK_CIV_Worker01_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","RU_WorkWoman5","Doctor","Worker1","TK_CIV_Worker02_EP1","Rocker4","RU_Citizen3","RU_WorkWoman1","Dr_Annie_Baker_EP1","Worker3","RU_Pilot","RU_Villager3","HouseWife1","Profiteer2","Profiteer3","Functionary1_EP1_DZ"];
 
 /***************Hero Vendor*********/
 menu_FR_AC = [
@@ -16,7 +16,7 @@ menu_GUE_Commander = [
 	"hostile"
 ];
 if (Z_singleCurrency) then {(menu_GUE_Commander select 0) set [count (menu_GUE_Commander select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
-/***********************************Pinley************************************/
+/***********************************Camara************************************/
 /***************Black Market*********/
 menu_GUE_Woodlander2 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_BLACKMARKET",11]],
@@ -66,7 +66,7 @@ menu_TK_CIV_Worker02_EP1 = [
 	"neutral"
 ];
 /*****************************************************************************/
-/************************************Camara*************************************/
+/************************************Pinley*************************************/
 /***************Weapons*********/
 menu_RU_Citizen4 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_ATTACHMENTS",12],[localize "STR_EPOCH_TRADER_CATEGORY_PISTOLS",13],[localize "STR_EPOCH_TRADER_CATEGORY_SUBMACHINEGUNS",14],[localize "STR_EPOCH_TRADER_CATEGORY_SINGLESHOT",15],[localize "STR_EPOCH_TRADER_CATEGORY_ASSAULTRIFLES",16],[localize "STR_EPOCH_TRADER_CATEGORY_SNIPERRIFLES",17],[localize "STR_EPOCH_TRADER_CATEGORY_LIGHTMACHINEGUNS",18]],
@@ -103,7 +103,7 @@ menu_Worker2 = [
 ];
 if (Z_singleCurrency) then {(menu_Worker2 select 0) set [count (menu_Worker2 select 0), [localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]];};
 /***************Vehicles*********/
-menu_TK_CIV_Worker01_EP1 = [
+menu_Villager1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_BIKESATVS",37],[localize "STR_EPOCH_TRADER_CATEGORY_CARS",38],[localize "STR_EPOCH_TRADER_CATEGORY_PICKUPS",39],[localize "STR_EPOCH_TRADER_CATEGORY_UAZS",40],[localize "STR_EPOCH_TRADER_CATEGORY_SUVS",41],[localize "STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS",42],[localize "STR_EPOCH_TRADER_CATEGORY_FUELTRUCKS",43],[localize "STR_EPOCH_TRADER_CATEGORY_MILITARYUNARMED",44],[localize "STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS",45]],
 	[],
 	"neutral"
