@@ -36,7 +36,7 @@
 [NEW] 2 new AN2 versions with Twin Vickers and M134. (d98834aa) @AirwavesMan
 [NEW] Every vehicle ammunition can be spawned in-game and can be added to the loot tables and traders now. (6e813dc1) @AirwavesMan
 [NEW] Add back DayZ Mod stashes. The stash can be build by a rightclick on item canvas. (8304efe9) @AirwavesMan
-[NEW] Storage buildings like gun racks, storage sheds etc. can be upgraded to a version with more gear slots now. (19889a9d) @AirwavesMan
+[NEW] Storage buildings like gun racks, storage sheds, safes etc. can be upgraded to a version with more gear slots now. (19889a9d) @AirwavesMan
 [NEW] Lumber can be crafted directly from wooden logs now. (ae79f4ce) @AirwavesMan
 [NEW] DayZ Mod fences and gates can be build now with complete upgrade and snap support. (3724a1f3) @AirwavesMan
 [NEW] Take painkillers, antibiotics and attach or detach an attachment has a sound now. (a69948d5) @AirwavesMan
@@ -47,6 +47,8 @@
 [NEW] Almost all epoch vehicles can be upgraded now. This includes trucks, helicopters and APCs. @AirwavesMan
 [NEW] New variables DZE_Hero and DZE_Bandit. The variables define the Hero and Bandit humanity. Used for traders and in player_death. (431cbc88, 272a7406) @AirwavesMan
 [NEW] Heroes and Bandits will drop a dog tag on death now which can be traded at the Hero or Bandit Trader for humanity. Thx for the idea @Tecumseh. (431cbc88, 272a7406, 4f106220) @AirwavesMan
+[NEW] Special handling for floating loot in buildings over water. Use fixWaterPos = 1; in the buildings class that has this problem. (89bca2c9) @AirwavesMan
+[NEW] With activated Weight System, traders show under the item information the weight to the given item. (e5af93b5) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -86,6 +88,9 @@
 [FIXED] Players are no longer able to exploit the player_wearClothes function to reset AI targeting. (5c29704) @morgoth0, @Arrakis, @worldwidesorrow.
 [FIXED] Vehicles should no longer explode after a server restart due to buildings loading in late. (99dc7cd7) @Seelenapparat
 [FIXED] CZ550 shadow bug (c22ae9e5) @AirwavesMan
+[FIXED] Floating loot in buildings over water. (89bca2c9) @AirwavesMan
+[FIXED] Potential kill count doubling after change clothes. (0b26ae12) @Seelenapparat
+[FIXED] Damaged vehicles are not longer completely repaired after a vehicle upgrade. (95d528b8) @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
@@ -127,6 +132,7 @@
 [UPDATED] Harvest wood with a hatchet drops wood piles or wooden logs now. (ae79f4ce) @AirwavesMan
 [UPDATED] The maintain animation is interruptible now. (910ab43a) @AirwavesMan
 [UPDATED] Trade single items like zombie parts can be modified with an extra humanity value. (4f106220) @AirwavesMan
+[UPDATED] The Journal main page got re-worked and has some more information about the server settings now. (ef05eb4e) @AirwavesMan
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
 [REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow
