@@ -5,10 +5,10 @@ Parameters:
 	obj - building to spawn loot at
 	type - classname of building
 	config - building configs (type, loot chance, loot positions. loot refresh timer)
-	
+
 Usage:
 	[building,classname,_config] call building_spawnLoot;
-	
+
 Author:
 	Foxy
 */
@@ -16,7 +16,7 @@ Author:
 #include "\z\addons\dayz_code\util\Vector.hpp"
 #include "\z\addons\dayz_code\loot\Loot.hpp"
 
-private ["_vectorUp","_type","_config","_lootChance","_lootPos","_lootGroup","_worldPos","_existingPile","_loot","_group","_smallGroup"];
+private ["_vectorUp","_obj","_config","_lootChance","_lootPos","_lootGroup","_worldPos","_group","_smallGroup","_type"];
 
 _obj = _this select 0;
 _type = _this select 1;
@@ -44,7 +44,7 @@ if (_group in ["Military","MilitaryIndustrial"]) then {
 	//Get the world position of the spawn position
 	_worldPos = _obj modelToWorld _x;
 	_worldPos set [2, 0 max (_worldPos select 2)];
-	
+
 	//Delete existing lootpiles within 1m of spawn location
 	{
 		deleteVehicle _x;
@@ -52,7 +52,7 @@ if (_group in ["Military","MilitaryIndustrial"]) then {
 	} count (_worldPos nearObjects ["ReammoBox", 1]);
 
 	if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then {
-		Loot_SpawnGroup(_lootGroup, _worldPos);
+		Loot_SpawnGroup(_lootGroup, _worldPos, _type);
 	};
 }
 foreach _lootPos;
@@ -63,13 +63,13 @@ foreach _lootPos;
 
 if (isArray (_config >> "lootPosSmall")) then {
 	_lootPos = getArray (_config >> "lootPosSmall");
-	
+
 	if (!isNil "_smallGroup") then {
 		_lootGroup = Loot_GetGroup(_smallGroup);
 	} else {
 		_lootGroup = Loot_GetGroup((_group) + "Small");
 	};
-	
+
 	if (_lootGroup >= 1) then {
 		_lootPos = [_lootPos,5] call fn_shuffleArray;
 		{
@@ -83,7 +83,7 @@ if (isArray (_config >> "lootPosSmall")) then {
 			} count (_worldPos nearObjects ["ReammoBox", 1]);
 
 			if (_lootChance > random 1 && {dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders}) then {
-				Loot_SpawnGroup(_lootGroup, _worldPos);
+				Loot_SpawnGroup(_lootGroup, _worldPos, _type);
 			};
 		} foreach _lootPos;
 	} else {

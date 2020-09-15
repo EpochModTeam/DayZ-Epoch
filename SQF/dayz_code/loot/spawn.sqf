@@ -23,10 +23,11 @@ Author:
 	#define INCREMENT_WEAPON_HOLDERS dayz_currentWeaponHolders = dayz_currentWeaponHolders + 1;
 #endif
 
-private ["_item","_isWater","_type","_lootInfo","_vehicle","_spawnCount","_magazines"];
+private ["_item","_isWater","_type","_lootInfo","_vehicle","_spawnCount","_magazines","_fixWaterSpawn"];
 
 _lootInfo = _this select 0;
 _pos = _this select 1;
+_class = ["",_this select 2] select (count _this > 2);
 _type = _lootInfo select 0;
 _item = _lootInfo select 1;
 _isWater = surfaceIsWater _pos;
@@ -45,8 +46,13 @@ call {
 		_vehicle = "WeaponHolder" createVehicle [0,0,0];
 		_vehicle addMagazineCargoGlobal [_item, 1];
 
-		if (_isWater) then {
-			_vehicle setPos (_pos);
+		if (_isWater) then {		
+			_fixWaterSpawn = getNumber(missionconfigFile >> "CfgLoot" >> "Buildings" >> _class >> "fixWaterPos");
+			if (_fixWaterSpawn == 1) then {
+				_vehicle setPosASL (_pos);
+			} else {
+				_vehicle setPos (_pos);
+			};			
 		} else {
 			_vehicle setPosATL (_pos);
 		};
@@ -59,8 +65,13 @@ call {
 		_vehicle = "WeaponHolder" createVehicle [0,0,0];
 		_vehicle addWeaponCargoGlobal [_item, 1];
 
-		if (_isWater) then {
-			_vehicle setPos (_pos);
+		if (_isWater) then {		
+			_fixWaterSpawn = getNumber(missionconfigFile >> "CfgLoot" >> "Buildings" >> _class >> "fixWaterPos");
+			if (_fixWaterSpawn == 1) then {
+				_vehicle setPosASL (_pos);
+			} else {
+				_vehicle setPos (_pos);
+			};			
 		} else {
 			_vehicle setPosATL (_pos);
 		};
@@ -82,8 +93,13 @@ call {
 		// Fix floating backpacks by lowering z coordinate by .15 meters.
 		_pos set [2, ((_pos select 2) - .15)];
 
-		if (_isWater) then {
-			_vehicle setPos (_pos);
+		if (_isWater) then {		
+			_fixWaterSpawn = getNumber(missionconfigFile >> "CfgLoot" >> "Buildings" >> _class >> "fixWaterPos");
+			if (_fixWaterSpawn == 1) then {
+				_vehicle setPosASL (_pos);
+			} else {
+				_vehicle setPos (_pos);
+			};			
 		} else {
 			_vehicle setPosATL (_pos);
 		};
@@ -95,11 +111,17 @@ call {
 		_vehicle = "WeaponHolder" createVehicle [0,0,0];
 		Loot_InsertCargo(_vehicle, _item, _spawnCount);
 
-		if (_isWater) then {
-			_vehicle setPos (_pos);
+		if (_isWater) then {		
+			_fixWaterSpawn = getNumber(missionconfigFile >> "CfgLoot" >> "Buildings" >> _class >> "fixWaterPos");
+			if (_fixWaterSpawn == 1) then {
+				_vehicle setPosASL (_pos);
+			} else {
+				_vehicle setPos (_pos);
+			};			
 		} else {
 			_vehicle setPosATL (_pos);
 		};
+		
 		INCREMENT_WEAPON_HOLDERS
 	};
 
@@ -108,8 +130,13 @@ call {
 		_vehicle = _item createVehicle [0,0,0];
 		_vehicle setDir random 360;
 
-		if (_isWater) then {
-			_vehicle setPos (_pos);
+		if (_isWater) then {		
+			_fixWaterSpawn = getNumber(missionconfigFile >> "CfgLoot" >> "Buildings" >> _class >> "fixWaterPos");
+			if (_fixWaterSpawn == 1) then {
+				_vehicle setPosASL (_pos);
+			} else {
+				_vehicle setPos (_pos);
+			};			
 		} else {
 			_vehicle setPosATL (_pos);
 		};
@@ -124,11 +151,17 @@ call {
 		Loot_InsertCargo(_vehicle, _lootInfo select 2, _spawnCount);
 		_vehicle setDir random 360;
 
-		if (_isWater) then {
-			_vehicle setPos (_pos);
+		if (_isWater) then {		
+			_fixWaterSpawn = getNumber(missionconfigFile >> "CfgLoot" >> "Buildings" >> _class >> "fixWaterPos");
+			if (_fixWaterSpawn == 1) then {
+				_vehicle setPosASL (_pos);
+			} else {
+				_vehicle setPos (_pos);
+			};			
 		} else {
 			_vehicle setPosATL (_pos);
 		};
+
 		INCREMENT_WEAPON_HOLDERS
 	};
 
@@ -138,8 +171,13 @@ call {
 		if ((typeName _vehicle) != "OBJECT") exitWith {};
 
 		if (!isNull _vehicle) then {
-			if (_isWater) then {
-				_vehicle setPos (_pos);
+			if (_isWater) then {		
+				_fixWaterSpawn = getNumber(missionconfigFile >> "CfgLoot" >> "Buildings" >> _class >> "fixWaterPos");
+				if (_fixWaterSpawn == 1) then {
+					_vehicle setPosASL (_pos);
+				} else {
+					_vehicle setPos (_pos);
+				};			
 			} else {
 				_vehicle setPosATL (_pos);
 			};

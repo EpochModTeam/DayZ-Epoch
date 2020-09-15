@@ -750,6 +750,7 @@ class Land_A_Crane_02b : Industrial
 {
 	maxRoaming = 0;
 	lootChance = 0.4;
+	fixWaterPos = 1;
 	lootPos[] =
 	{
 		{-3.4707,-0.149414,-6.06299},

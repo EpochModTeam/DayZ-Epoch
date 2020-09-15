@@ -66,6 +66,8 @@ class CfgLoot
 			zombieChance = 0.2;
 			minRoaming = 0;
 			maxRoaming = 2;
+			fixWaterPos = 0; // Add fixWaterPos = 1; to the building class that have floating loot if the building is over water.
+			
 			zombieClass[] =
 			{
 			//	"zZombie_Base",
