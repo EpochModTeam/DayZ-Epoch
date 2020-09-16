@@ -845,7 +845,7 @@ class CfgAmmo
 
 	//Epoch Melee
 	class Chainsaw_Swing_Ammo : Melee {
-		hit = 9;
+		hit = 2;
 		simulation = "shotBullet";
 		minRange = 1;
 		minRangeProbab = 0.8;
@@ -860,7 +860,7 @@ class CfgAmmo
 		soundEngine[] = {"", db-80, 4};
 	};
 	class Sledge_Swing_Ammo : Melee {
-		hit = 12;
+		hit = 4;
 		simulation = "shotBullet";
 		minRange = 1;
 		minRangeProbab = 0.8;
