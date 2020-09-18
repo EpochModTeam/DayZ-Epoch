@@ -51,7 +51,7 @@ for "_i" from 1 to (SPAWN_NUM) do
 		_lootPos = Vector_Add(_position, Vector_Multiply(Vector_FromDir(random 360), _size * 0.6 + random _size));
 		_lootPos set [2, 0];
 		
-		_lootVeh = Loot_Spawn(_x, _lootPos);
+		_lootVeh = Loot_Spawn(_x, _lootPos, "");
 		_lootVeh setVariable ["permaLoot", true];
 		
 		call {

@@ -85,7 +85,7 @@ for "_i" from 1 to (CAMP_NUM) do
 	{
 		_objectPos = [_position, OBJECT_RADIUS_MIN, OBJECT_RADIUS_MAX, 5] call fn_selectRandomLocation;
 		
-		Loot_Spawn(_x, _objectPos);
+		Loot_Spawn(_x, _objectPos, "");
 		
 	} forEach Loot_Select(_objectGroup, round Math_RandomRange(OBJECT_MIN, OBJECT_MAX));
 };

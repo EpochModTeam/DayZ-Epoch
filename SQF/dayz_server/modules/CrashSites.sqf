@@ -61,7 +61,7 @@ _spawnCrashSite =
 		_lootPos = _vehicle modelToWorld _lootPos;
 		_lootPos set [2, 0];
 		
-		_lootVeh = Loot_Spawn(_x, _lootPos);
+		_lootVeh = Loot_Spawn(_x, _lootPos, "");
 		_lootVeh setVariable ["permaLoot", true];
 		
 		call {
