@@ -200,7 +200,7 @@ class Mi17_UN_CDF_EP1_DZE: Mi17_UN_CDF_EP1_DZ	 {
 	
 	class Upgrades
 	{
-		ItemHeliAVE[] = {"Mi17_UN_CDF_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+		ItemHeliAVE[] = {"Mi17_UN_CDF_EP1_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
 	};
 };
 

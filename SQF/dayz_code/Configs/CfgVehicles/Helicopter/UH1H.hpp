@@ -31,7 +31,7 @@ class UH1H_DZ: UH1H_base
 	gunnerCanSee = 2+16+32;
 	driverCanSee = 2+16+32;
 	transportMaxWeapons = 15;
-	transportMaxMagazines = 160;
+	transportMaxMagazines = 80;
 	transportmaxbackpacks = 6;
 	fuelCapacity = 1333;	
 	radartype = 0;
