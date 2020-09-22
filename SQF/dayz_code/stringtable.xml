@@ -3276,7 +3276,7 @@
 			<Spanish>Si bien la creación del fuego te das cuenta de que sólo tiene 5 partidos por jugarse.</Spanish>
 			<French>Lors de la création du feu, vous réalisez que vous avez seulement 5 allumettes.</French>
 			<Czech>Při vytváření oheň si uvědomíte, že máte jen 5 zápasech života.</Czech>
-			<German>Während du die Feuerstelle anlegst, bemerkst du, dass du nur noch fünf Streichhölzer übrig hast.</German>
+			<German>Während du das Feuer anfachst, bemerkst du, dass du nur noch fünf Streichhölzer übrig hast.</German>
 		</Key>
 		<Key ID="str_info_bluntknife">
 			<English>While gutting you realise the knife is getting dull.</English>
@@ -3342,37 +3342,45 @@
 			<French>Boîte d&apos;allumettes (1 reste)</French>
 			<Czech>Krabička zápalek (1 zbývající)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_3_A">
+			<English>Box of safety matches for starting a fire under controlled conditions. 5 Matches left.</English>
+			<Russian>Коробок с пятью спичками.</Russian>
+			<Spanish>5 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
+			<French>5 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
+			<Czech>Zbývá 5 zápalek. Udržujte z dosahu dětí.</Czech>
+			<German>Eine Schachtel Streichhölzer mit 5 übrigen Streichhölzern.</German>
+		</Key>
 		<Key ID="STR_EQUIP_DESC_3_B">
-			<English>4 Matches Left. Box of safety matches for starting a fire under controlled conditions.</English>
+			<English>Box of safety matches for starting a fire under controlled conditions. 4 Matches left.</English>
 			<Russian>Коробок с четырьмя спичками.</Russian>
 			<Spanish>4 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
 			<French>4 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
 			<Czech>Zbývají 4 zápalky. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel mit vier verbleibenden Sicherheitszündhölzern. Von Kindern fernhalten.</German>
+			<German>Eine Schachtel Streichhölzer mit 4 übrigen Streichhölzern.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_3_C">
-			<English>3 Matches Left. Box of safety matches for starting a fire under controlled conditions.</English>
+			<English>Box of safety matches for starting a fire under controlled conditions. 3 Matches left.</English>
 			<Russian>Коробок с тремя спичками.</Russian>
 			<Spanish>3 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
 			<French>3 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
 			<Czech>Zbývají 3 zápalky. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel mit drei verbleibenden Sicherheitszündhölzern. Von Kindern fernhalten.</German>
+			<German>Eine Schachtel Streichhölzer mit 3 übrigen Streichhölzern.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_3_D">
-			<English>2 Matches Left. Box of safety matches for starting a fire under controlled conditions.</English>
+			<English>Box of safety matches for starting a fire under controlled conditions. 2 Matches left.</English>
 			<Russian>Коробок с парой спичек.</Russian>
 			<Spanish>2 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
 			<French>2 allumettes restantes. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
 			<Czech>Zbývají 2 zápalky. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel mit zwei verbleibenden Sicherheitszündhölzern. Von Kindern fernhalten.</German>
+			<German>Eine Schachtel Streichhölzer mit 2 übrigen Streichhölzern.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_3_E">
-			<English>1 Match Left. Box of safety matches for starting a fire under controlled conditions.</English>
+			<English>Box of safety matches for starting a fire under controlled conditions. 1 Match left.</English>
 			<Russian>Одна спичка в коробке.</Russian>
 			<Spanish>1 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
 			<French>1 allumette restante. Boîte d&apos;allumettes de sûreté pour allumer un feu dans des conditions contrôlées.</French>
 			<Czech>Zbývá 1 zápalka. Udržujte z dosahu dětí.</Czech>
-			<German>Eine Schachtel mit einem verbleibenden Sicherheitszündholz. Von Kindern fernhalten.</German>
+			<German>Eine Schachtel Streichhölzer mit 1 übrigen Streichholz.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_3_EMPTY">
 			<English>Empty Box of Matches</English>
@@ -3392,7 +3400,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_3">
 			<English>Box of safety matches for starting a fire under controlled conditions.</English>
-			<German>Eine Schachtel Sicherheitszündhölzer. Von Kindern fernhalten.</German>
+			<German>Eine Schachtel Streichhölzer. Von Kindern fernhalten.</German>
 			<Russian>Коробок спичек используется для разведения огня.</Russian>
 			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
 			<French>Boîte d&apos;allumettes suédoises permettant d&apos;allumer un feu.</French>
@@ -13562,7 +13570,7 @@
 			<Russian>Доски</Russian>
 			<French>Planches</French>
 			<Czech>Prkna</Czech>
-			<German>gesägte Holzplanke</German>
+			<German>Gesägte Holzplanke</German>
 		</Key>
 		<Key ID="STR_BLD_desc_ItemPlank">
 			<English>Saw Planks</English>
@@ -13590,7 +13598,7 @@
 			<Russian>Необработанный камень</Russian>
 			<French>Pierres</French>
 			<Czech>Kameny</Czech>
-			<German>grober Stein</German>
+			<German>Grober Stein</German>
 		</Key>
 		<Key ID="STR_BLD_desc_ItemStone">
 			<English>Rough Stone</English>
@@ -22972,7 +22980,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_276">
 			<English>Craft Fire Barrel</English>
-			<German>Feuerfass herstellen</German>
+			<German>Feuertonne herstellen</German>
 			<Russian>Создать: Источник огня</Russian>
 			<Czech>Vytvořit Hořící sud</Czech>
 		</Key>
@@ -26254,7 +26262,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLOTMANAGEMENT_TITLE">
 			<English>Plot Management</English>
-			<German>Verwalte Grundstücksmarkierung</German>
+			<German>Grundstücksmarkierung</German>
 			<Russian>Управление строительным столбом</Russian>
 		</Key>
 
@@ -31003,7 +31011,7 @@
 	<Package name="VKC">
 		<Key ID="STR_CL_VKC_TITLE">
 			<English>Vehicle Key Changer</English>
-			<German>Fahrzeugschlüssel wechseln</German>
+			<German>Fahrzeugschlüssel ändern</German>
 			<French>Changeur De Clé Vehicule</French>
 			<Russian>Смена ключа</Russian>
 			<Spanish>Cambiar Llaves</Spanish>
@@ -31037,7 +31045,7 @@
 			<Spanish>Cambiar llave</Spanish>
 		</Key>
 		<Key ID="STR_CL_VKC_FAIL_CURSOR">
-			<English>cursorTarget is not a vehicle.</English>
+			<English>Target at cursor is not a vehicle.</English>
 			<German>Du schaust nicht richtig auf das Fahrzeug.</German>
 			<Russian>Цель не является транспортным средством.</Russian>
 			<French>La Cible n'est pas Un Vehicule.</French>
@@ -31095,7 +31103,7 @@
 		<Key ID="STR_CL_VKC_WAIT">
 			<English>Please wait while your vehicle is being prepared.</English>
 			<Russian>Подождите, пока ваша техника будет готова.</Russian>
-			<German>Bitte warte, während dein Fahrzeug vorbereitet wird.</German>
+			<German>Bitte warte, während dein Fahrzeug beansprucht wird.</German>
 			<French>Merci de patienter pendant que le véhicule est préparer.</French>
 			<Spanish>Por favor, espera mientras tu vehículo es preparado</Spanish>
 		</Key>
@@ -31129,7 +31137,7 @@
 		</Key>
 		<Key ID="STR_CL_VKC_CHANGE_ACTION">
 			<English>Change vehicle key</English>
-			<German>Fahrzeugschlüssel wechseln</German>
+			<German>Fahrzeugschlüssel ändern</German>
 			<French>Changer la clé du véhicule</French>
 			<Russian>Сменить ключ</Russian>
 			<Spanish>Cambiar llave del vehículo</Spanish>
