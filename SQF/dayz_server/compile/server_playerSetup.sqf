@@ -1,4 +1,4 @@
-private ["_characterID","_playerObj","_spawnSelection","_inventory","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID","_lastInstance"];
+private ["_IslandMap","_pos","_randomKey","_findIndex","_characterID","_playerObj","_spawnSelection","_inventory","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID","_lastInstance"];
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
@@ -20,10 +20,9 @@ if (_playerID == "") exitWith {
 	diag_log ("SETUP INIT FAILED: Exiting, no player ID: " + str(_playerObj));
 };
 
-private "_dummy";
 _dummy = getPlayerUID _playerObj;
-if (_playerID != _dummy) then { 
-	diag_log format["DEBUG: _playerID miscompare with UID! _playerID:%1",_playerID]; 
+if (_playerID != _dummy) then {
+	diag_log format["DEBUG: _playerID miscompare with UID! _playerID:%1",_playerID];
 	_playerID = _dummy;
 };
 
@@ -43,7 +42,7 @@ while {_doLoop < 5} do {
 	_doLoop = _doLoop + 1;
 };
 
-if (isNull _playerObj or !isPlayer _playerObj) exitWith {
+if (isNull _playerObj || !isPlayer _playerObj) exitWith {
 	diag_log ("SETUP RESULT: Exiting, player object null: " + str(_playerObj));
 };
 
@@ -54,30 +53,22 @@ _medical = _primary select 1;
 _stats = _primary select 2;
 _worldspace = _primary select 4;
 _humanity = _primary select 5;
-_lastInstance =	_primary select 6;
+_lastInstance = _primary select 6;
 _randomSpot = false; //Set position
-
-_statearray = if (count _primary >= 4) then {_primary select 3} else {[""]};
-if (count _statearray == 0) then {_statearray = [""];}; //diag_log ("StateNew: "+str(_statearray));
-if (typeName ((_statearray) select 0) == "STRING") then {_statearray = [_statearray,[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]];};
-_state = (_statearray) select 0; //diag_log ("State: "+str(_state));
-
-_Achievements = (_statearray) select 1;
-if (count _Achievements == 0) then {_Achievements = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];};
-//diag_log ("Achievements: "+str(_Achievements));
+_state = [["",""],_primary select 3 select 0] select (count _primary >= 4);
 //diag_log ("WORLDSPACE: " + str(_worldspace));
 
 if (count _worldspace > 0) then {
 	_position = _worldspace select 1;
 	if (count _position < 3) exitWith {_randomSpot = true;}; //prevent debug world!
-	
+
 	_distance = respawn_west_original distance _position;
 	if (_distance < 2000) then {_randomSpot = true;};
-	
+
 	_distance = [0,0,0] distance _position;
 	if (_distance < 500) then {_randomSpot = true;};
 	//_playerObj setPosATL _position;
-	
+
 	// Came from another server force random spawn
 	if (_lastInstance != dayZ_instance) then {_randomSpot = true;};
 } else {
@@ -139,13 +130,13 @@ if (count _stats > 0) then {
 	_playerObj setVariable ["headShots",(_stats select 1),true];
 	_playerObj setVariable ["humanKills",(_stats select 2),true];
 	_playerObj setVariable ["banditKills",(_stats select 3),true];
-	
+
 	//ConfirmedKills
 	_playerObj setVariable ["ConfirmedHumanKills",(_stats select 2),true];
 	_playerObj setVariable ["ConfirmedBanditKills",(_stats select 3),true];
-	
+
 	_playerObj addScore (_stats select 1);
-	
+
 	//Save Score
 	_score = score _playerObj;
 	_playerObj addScore ((_stats select 0) - _score);
@@ -157,7 +148,7 @@ if (count _stats > 0) then {
 	_playerObj setVariable ["humanKills",0,true];
 	_playerObj setVariable ["banditKills",0,true];
 	_playerObj setVariable ["headShots",0,true];
-	
+
 	//ConfirmedKills
 	_playerObj setVariable ["ConfirmedHumanKills",0,true];
 	_playerObj setVariable ["ConfirmedBanditKills",0,true];
@@ -167,13 +158,14 @@ if (count _stats > 0) then {
 
 if (_randomSpot) then {
 	if (!isDedicated) then {endLoadingScreen;};
-	_IslandMap = (toLower worldName in ["caribou","cmr_ovaron","dayznogova","dingor","dzhg","fallujah","fapovo","fdf_isle1_a","isladuala","lingor","mbg_celle2","namalsk","napf","oring","panthera2","ruegen","sara","sauerland","smd_sahrani_a2","tasmania2010","tavi","trinity","utes"]);
+	_IslandMap = (toLower worldName in ["caribou","cmr_ovaron","dayznogova","dingor","dzhg","fallujah","fapovo","fdf_isle1_a","isladuala","lingor","mbg_celle2","namalsk","napf","oring","panthera2","ruegen","sara","sauerland","smd_sahrani_a2","tasmania2010","tavi","taviana","trinity","utes"]);
 
 	//spawn into random
 	_findSpot = true;
 	_mkr = [];
 	_position = [0,0,0];
-	for [{_j=0},{_j<=100 && _findSpot},{_j=_j+1}] do {
+	_j = 0;
+	while {_findSpot && _j <= 100} do {
 		if (_spawnSelection == 9) then {
 			// random spawn location selected, lets get the marker and spawn in somewhere
 			if (dayz_spawnselection == 1) then {_mkr = getMarkerPos ("spawn" + str(floor(random 6)));} else {_mkr = getMarkerPos ("spawn" + str(floor(random actualSpawnMarkerCount)));};
@@ -190,21 +182,24 @@ if (_randomSpot) then {
 				_pos = +(_position);
 				_isIsland = false; //Can be set to true during the Check
 				// we check over a 809-meter cross line, with an effective interlaced step of 5 meters
-				for [{_w = 0}, {_w != 809}, {_w = ((_w + 17) % 811)}] do {
+				_w = 0;
+				while {_w != 809} do {
 					//if (_w < 17) then { diag_log format[ "%1 loop starts with _w=%2", __FILE__, _w]; };
 					_pos = [((_pos select 0) - _w),((_pos select 1) + _w),(_pos select 2)];
 					if ((surfaceisWater _pos) && !_IslandMap) exitWith {_isIsland = true;};
+					_w = ((_w + 17) % 811);
 				};
 				if (!_isIsland) then {_findSpot = false};
 			};
 		};
 		//diag_log format["%1: pos:%2 _findSpot:%3", __FILE__, _position, _findSpot];
+		_j = _j + 1;
 	};
 	if (_findSpot && !_IslandMap) exitWith {
 		diag_log format["%1: Error, failed to find a suitable spawn spot for player. area:%2",__FILE__, _mkr];
 	};
 	_worldspace = [0,_position];
-	
+
 	//Fresh spawn, clear animationState so anim from last sync does not play on login
 	_state = ["","reset"];
 };
