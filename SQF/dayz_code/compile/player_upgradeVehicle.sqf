@@ -19,7 +19,7 @@ _displayname = getText (configFile >> "CfgVehicles" >> _classname >> "displaynam
 
 if (_classname in DZE_DisableVehicleUpgrade) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_VEHUP_NOT_ALLOWED",_displayname] call dayz_rollingMessages;};
 
-if ((player distance _vehicle) > 6) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_VEHUP_DISTANCE_TOO_FAR",_displayname] call dayz_rollingMessages;};
+if ((player distance _vehicle) > 10) exitWith {dayz_actionInProgress = false; format [localize "STR_EPOCH_VEHUP_DISTANCE_TOO_FAR",_displayname] call dayz_rollingMessages;};
 
 if (count (crew _vehicle) == 0) then {
 	_notNearestPlayer = _vehicle call dze_isnearest_player;
