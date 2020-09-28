@@ -1,6 +1,6 @@
 // DayZ Epoch TRADERS for 11
 
-serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","RU_Citizen4","Profiteer1","Rita_Ensler_EP1","Dr_Hladik_EP1","Worker2","Villager1","TK_CIV_Worker01_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","RU_WorkWoman5","Doctor","Worker1","TK_CIV_Worker02_EP1","Rocker4","RU_Citizen3","RU_WorkWoman1","Dr_Annie_Baker_EP1","Worker3","RU_Pilot","RU_Villager3","HouseWife1","Profiteer2","Profiteer3","Functionary1_EP1_DZ"];
+serverTraders = ["FR_AC","GUE_Commander","GUE_Woodlander2","RU_Citizen4","Profiteer1","Rita_Ensler_EP1","Dr_Hladik_EP1","Worker2","Villager1","TK_CIV_Worker01_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","RU_WorkWoman5","Doctor","Worker1","TK_CIV_Worker02_EP1","Rocker4","RU_Citizen3","RU_WorkWoman1","Dr_Annie_Baker_EP1","Worker3","RU_Pilot","RU_Villager3","HouseWife1","Profiteer2","Profiteer3","Functionary1_EP1"];
 
 /***************Hero Vendor*********/
 menu_FR_AC = [
@@ -189,7 +189,7 @@ menu_Profiteer3 = [
 ];
 
 /***************Banker*********/
-menu_Functionary1_EP1_DZ = [
+menu_Functionary1_EP1 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_CURRENCY",51]],
     [],
     "neutral"

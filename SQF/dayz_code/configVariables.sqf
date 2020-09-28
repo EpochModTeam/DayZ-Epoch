@@ -20,7 +20,7 @@ if (isServer) then {
 	dayz_POIs = false; //Enable POI's
 	dayz_enableGhosting = false;
 	dayz_ghostTimer = 120;
-	
+
 	// ZSC
 	Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.
 };
@@ -30,7 +30,7 @@ if (!isDedicated) then {
 	DZE_defaultSkin = [["Survivor2_DZ","Rocker1_DZ","Rocker2_DZ","Rocker3_DZ","Rocker4_DZ","Priest_DZ","Functionary1_EP1_DZ","Doctor_DZ","Assistant_DZ","Worker1_DZ","Worker3_DZ","Worker4_DZ","TK_CIV_Takistani01_EP1_DZ","TK_CIV_Takistani03_EP1_DZ","TK_CIV_Takistani04_EP1_DZ","TK_CIV_Takistani06_EP1_DZ","Firefighter1_DZ","Firefighter2_DZ","Firefighter3_DZ","Firefighter4_DZ","Firefighter5_DZ","Firefighter_Officer1_DZ","Firefighter_Officer2_DZ","Postman1_DZ","Postman2_DZ","Postman3_DZ","Postman4_DZ","SchoolTeacher_DZ","Gardener_DZ","RU_Policeman2_DZ","Hunter_DZ","Civilian1_DZ","Civilian3_DZ","Civilian5_DZ","Civilian7_DZ","Civilian9_DZ","Civilian11_DZ","Civilian13_DZ","Prisoner1_DZ","Prisoner2_DZ","Prisoner3_DZ","Reporter_DZ","MafiaBoss_DZ","Dealer_DZ","BusinessMan_DZ"],["SurvivorW2_DZ","SurvivorWcombat_DZ","SurvivorWdesert_DZ","SurvivorWurban_DZ","SurvivorWpink_DZ","SurvivorW3_DZ"]]; // Default player skin for fresh spawns, selected randomly DZE_defaultSkin = [["Male skin1","Male skin2"],["Female skin1","Female skin2"]], comment out the whole line to disable this feature.
 	dayz_tameDogs = false; // Allow taming dogs with raw meat. Note dog behavior is experimental and buggy.
 	DZE_WarmClothes = []; //Array of warm clothes, type of player model must be added: E.g. ["MVD_Soldier_DZ","GUE_Soldier_2_DZ"];
-	DZE_TempVars = [7, 15, 4, 4, 2, 6, 8, 3, 2, 0.25, 0.75, 0.5, 12, 33]; //[vehicle, fire, building, moving, sun, heatpack, warm clothes, water, standing, rain, wind, night, snow, shivering] water, standing, rain, wind and night factors have a negative impact on temperature. The greater they are the quicker the player gets cold. To disable shivering set it to 26. 
+	DZE_TempVars = [7, 15, 4, 4, 2, 6, 8, 3, 2, 0.25, 0.75, 0.5, 12, 33]; //[vehicle, fire, building, moving, sun, heatpack, warm clothes, water, standing, rain, wind, night, snow, shivering] water, standing, rain, wind and night factors have a negative impact on temperature. The greater they are the quicker the player gets cold. To disable shivering set it to 26.
 	DZE_TwoPrimaries = 2; // 0 do not allow primary weapon on back. 1 allow primary weapon on back, but not when holding a primary weapon in hand. 2 allow player to hold two primary weapons, one on back and one in their hands.
 	DZE_AntiWallLimit = 3; // Number of activations before player_antiWall kills player for glitching attempt. Lower is stricter, but may result in false positives.
 	DZE_DamageBeforeMaint = 0.09; // Min damage built items must have before they can be maintained
@@ -56,7 +56,7 @@ if (!isDedicated) then {
 	dayz_temperature_override = true; // Set to true to disable all temperature changes.
 	dayz_nutritionValuesSystem = false; //true, Enables nutrition system, false, disables nutrition system.
 	DZE_DisableVehicleUpgrade = []; // List of vehicles that cannot be upgraded with manuals E.g.: ["ArmoredSUV_PMC_DZE","LandRover_CZ_EP1_DZE"]
-	
+
 	// Build restrictions
 	DZE_NoBuildNear = []; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
 	DZE_NoBuildNearDistance = 150; // Distance from blacklisted objects to disallow building near.
@@ -65,7 +65,7 @@ if (!isDedicated) then {
 	DZE_PlotPole = [30,45]; // Plot radius, minimum distance between plots
 	DZE_BuildOnRoads = false; // Allow building on roads
 	DZE_BuildingLimit = 150; // Maximum allowed objects per plot
-	
+
 	DZE_salvageLocked = true; //Enable or disable salvaging of locked vehicles, useful for stopping griefing on locked vehicles.
 	DZE_DisabledChannels = [(localize "str_channel_side"),(localize "str_channel_global"),(localize "str_channel_command")]; //List of disabled voice channels. Other channels are: "str_channel_group","str_channel_direct","str_channel_vehicle"
 	DZE_NutritionDivisor = [1, 1, 1, 1]; //array of DIVISORS that regulate the rate of [calories, thirst, hunger, temperature] use when "working" (keep in mind that temperature raises with actions) - min values 0.1 - Larger values slow the effect, smaller values accelerate it
@@ -73,18 +73,18 @@ if (!isDedicated) then {
 	DZE_lockablesHarderPenalty = true; // Enforce an exponential wait on attempts between unlocking a safe/lockbox from a failed code.
 	DZE_Hide_Body = true; //Enable hide dead bodies. Hiding a dead body removes the corpse marker from the map too. Default = true
 	DZE_PVE_Mode = false; //Disable the PvP damage on the server. If DZE_BackpackAntiTheft = true, the backpack anti theft is active on the whole server. This is just a basic support for PVE Servers. Default = false
-	
+
 	// SafeZone
 	DZE_SafeZoneNoBuildItems = []; // Array of object class names not allowed to be built near the zones in DZE_SafeZonePosArray (see mission\init.sqf). Can be nested arrays for custom distances. i.e ["VaultStorageLocked","LockboxStorageLocked",["Plastic_Pole_EP1_DZ",1300]] etc.
 	DZE_SafeZoneNoBuildDistance = 150; // Distance from zones in DZE_SafeZonePosArray (see mission\init.sqf) to disallow building near.
 	DZE_DeathScreen = true; // True=Use Epoch death screen (Trade city obituaries have been amended) False=Use DayZ death screen (You are dead)
-	
+
 	// HALO Jump
 	DZE_HaloAltitudeMeter = false; // Display altitude and speed on screen while in halo jump.
 	DZE_HaloOpenChuteHeight = 180; // Automatically open chute at specified height. Set to -1 to disable this feature.
 	DZE_HaloSpawnHeight = 2000; // This is the altitude fresh spawn players start at when HALO spawn is enabled.
 	DZE_HaloJump = true; // Enable halo jumping out of air vehicles above 400m
-	
+
 	// Trader Menu
 	DZE_serverLogTrades = true; // Log trades to server RPT (sent with publicVariableServer on every trade)
 	DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
@@ -93,7 +93,7 @@ if (!isDedicated) then {
 	DZE_keepVehicleKey = false; // Keep the vehicle key when the vehicle is sold? (Useful on servers with the key changer mod)
 	Z_AllowTakingMoneyFromBackpack = true; // Allow traders to take money from backpacks when buying with default currency.
 	Z_AllowTakingMoneyFromVehicle = true; // Allow traders to take money from vehicles when buying with default currency.
-	
+
 	// Plot Management and Plot for Life
 	DZE_plotManagementMustBeClose = false; //Players must be within 10m of pole to be added as a plot friend.
 	DZE_PlotManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every pole's management menu and delete or build any buildable with a pole nearby.
@@ -127,7 +127,7 @@ if (!isDedicated) then {
 		For "CinderWallDoor_DZ" you would get 7 cinder blocks, 2 mortar, 3 tank traps and a random number of poles between 1 and 3.
 		The refund amount can be an array where the first param is the minimum and the second is the maximum, it will refund a random amount between them.
 	*/
-	
+
 	// Door Management
 	DZE_doorManagementMustBeClose = false; //Players must be within 10m of door to be added as a door friend.
 	DZE_doorManagementAdmins = []; //Array of admin PlayerUIDs. UIDs in this list are able to access every door's management menu and open it.
@@ -140,15 +140,15 @@ if (!isDedicated) then {
 	dayz_markSelf = 0; // Players can see their own position on the map 0=never, 1=always, 2=With GPS only
 	dayz_markBody = 0; // Players can see their corpse position on the map 0=never, 1=always, 2=With GPS only
 	dayz_requireRadio = false; // Require players to have a radio on their toolbelt to create a group, be in a group and receive invites.
-	
+
 	// Humanity System
 	DZE_Hero = 5000; // Defines the value at how much humanity the player is classed as a hero.
-	DZE_Bandit = -5000; // Defines the value at how much humanity the player is classed as a bandit.	
-	
+	DZE_Bandit = -5000; // Defines the value at how much humanity the player is classed as a bandit.
+
 	// ZSC
 	Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
 	Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
-	ZSC_bankTraders = ["Functionary1_EP1_DZ"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1_DZ)
+	ZSC_bankTraders = ["Functionary1_EP1"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1_DZ)
 	ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
 	ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
 	ZSC_maxBankMoney = 500000; // Default limit for bank objects.
@@ -161,7 +161,7 @@ if (!isDedicated) then {
 	dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
 	dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
 	dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
-};	
+};
 
 // Both
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
@@ -196,7 +196,7 @@ DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for 
 DZE_isRemovable = ["Plastic_Pole_EP1_DZ"]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
 
 // Door Management
-DZE_doorManagement = true; // Enable Door Management by @DevZupa. 
+DZE_doorManagement = true; // Enable Door Management by @DevZupa.
 
 // Group System
 dayz_groupSystem = false; // Enable group system
@@ -211,7 +211,7 @@ DZE_WeatherVariables = [
 	30, // Maximum time in minutes for the weather to change. (default value: 30).
 	0, // Minimum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0).
 	.2, // Maximum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0.8).
-	0, // Minimum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 0). Note: Rain and snow will not occur when overcast is less than 0.70. 
+	0, // Minimum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 0). Note: Rain and snow will not occur when overcast is less than 0.70.
 	.6, // Maximum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 1).
 	0, // Minimum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
 	.6, // Maximum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
@@ -228,12 +228,12 @@ DZE_WeatherVariables = [
 	2 // Winter Breath Fog Effects. Options: 0 - no breath fog, 1 - anytime, 2 - only when snowing or blizzard. Note: breath fog is only available with winter weather enabled.
 ];
 
-/* 
+/*
 	Developers:
-	
+
 	This file's purpose is to slim down init.sqf to only the map specific and most frequently changed variables.
 	It cuts down on the amount of if(isNil)then{}; statements in variables.sqf and makes the mission smaller.
-	
+
 	Variables that are map specific or frequently changed should be included in init.sqf by default
 	with a corresponding if(isNil)then{}; in variables.sqf.
 */
