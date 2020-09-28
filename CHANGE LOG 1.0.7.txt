@@ -92,6 +92,7 @@
 [FIXED] Potential kill count doubling after change clothes. (0b26ae12) @Seelenapparat
 [FIXED] Damaged vehicles are not longer completely repaired after a vehicle upgrade. (95d528b8) @AirwavesMan
 [FIXED] Exorbitant damage from chainsaws and sledgehammers on buildings (118dbfa6) @AirwavesMan
+[FIXED] On spawn players looked always north after a reconnect to the server. (4aad93fe) @TH, @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
