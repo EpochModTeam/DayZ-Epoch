@@ -124,7 +124,7 @@ call {
 		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
 		if (Z_singleCurrency && {_coins > 0}) then {
 			private "_displayName";
-		
+
 			_displayName = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 			_wealth = _player getVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 			_player setVariable [(["cashMoney","globalMoney"] select Z_persistentMoney),_wealth + _coins,true];
@@ -159,9 +159,9 @@ if (_status < 4) then {
 };
 
 if (_statusText == "FAILED unlocking") then {
-	_message = format["%1 (%2) %3 %4 with code: %5 (actual: %8) @%6 %7",_name,_playerUID,_statusText,_type,_suppliedCode,mapGridPosition _pos,_pos,_lockCode];
+	_message = format["%1 (%2) %3 %4 with code: %5 (actual: %8) @%6 %7, ObjectID: %8, ObjectUID: %9",_name,_playerUID,_statusText,_type,_suppliedCode,mapGridPosition _pos,_pos,_lockCode,_objectID,_objectUID];
 } else {
-	_message = format["%1 (%2) %3 %4 with code: %5 @%6 %7",_name,_playerUID,_statusText,_type,_lockCode,mapGridPosition _pos,_pos];
+	_message = format["%1 (%2) %3 %4 with code: %5 @%6 %7, ObjectID: %8, ObjectUID: %9",_name,_playerUID,_statusText,_type,_lockCode,mapGridPosition _pos,_pos,_objectID,_objectUID];
 };
 
 diag_log _message;
