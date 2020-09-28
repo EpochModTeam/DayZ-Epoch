@@ -112,7 +112,7 @@ if (_canBuild select 0) then {
 		_classname = _ghost;
 	};
 
-	_object = createVehicle [_classname, [0,0,0], [], 0, "CAN_COLLIDE"];
+	_object = _classname createVehicle [0,0,0];
 
 	if ((count _offset) <= 0) then {
 		_offset = [0,(abs(((boundingBox _object)select 0) select 1)),0];
@@ -137,7 +137,7 @@ if (_canBuild select 0) then {
 	_reason = "";
 
 	helperDetach = false;
-	_canDo = (!r_drag_sqf && {!r_player_unconscious});
+	_canDo = (!r_drag_sqf && !r_player_unconscious);
 	_position = [_objectHelper] call FNC_GetPos;
 
 	while {_isOk} do {
@@ -361,7 +361,7 @@ if (_canBuild select 0) then {
 
 	if (!_cancel) then {
 		_classname = _classnametmp;
-		_tmpbuilt = createVehicle [_classname, _location, [], 0, "CAN_COLLIDE"];
+		_tmpbuilt = _classname createVehicle _location;
 		_tmpbuilt setdir _dir;
 		_tmpbuilt setVariable["memDir",_dir,true];
 		_location = _position;
@@ -374,10 +374,13 @@ if (_canBuild select 0) then {
 
 		_buildOffset = [0,0,0];
 		_vUp = _vector select 1;
+
+		/*
 		switch (_classname) do {
 			case "MetalFloor_DZ": { _buildOffset = [(_vUp select 0) * .148, (_vUp select 1) * .148,0]; };
 		};
 
+		*/
 		_location = [
 			(_location select 0) - (_buildOffset select 0),
 			(_location select 1) - (_buildOffset select 1),
@@ -492,6 +495,10 @@ if (_canBuild select 0) then {
 							} else {
 								_combination = DZE_Lock_Door;
 							};
+							if (_classname in ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"]) then {
+								GateMethod = DZE_Lock_Door;
+							};
+
 							_combinationDisplay = _combination;
 						};
 
