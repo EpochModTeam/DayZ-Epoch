@@ -30,7 +30,7 @@ class ItemStone: CA_Magazine
 		};	
 		class Crafting2
 		{
-			text = $STR_BLD_name_WoodenFence_1_foundation;
+			text = $STR_BLD_name_WoodenGate_Foundation;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
