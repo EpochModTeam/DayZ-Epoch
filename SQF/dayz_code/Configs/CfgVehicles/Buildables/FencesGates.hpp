@@ -47,7 +47,7 @@ class WoodenGate_1_DZ: DZE_Housebase
 	class UserActions {
 		class Lock_Door
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;			
@@ -57,7 +57,7 @@ class WoodenGate_1_DZ: DZE_Housebase
 		};
 		class Unlock_Door
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;			
@@ -67,7 +67,7 @@ class WoodenGate_1_DZ: DZE_Housebase
 		};		
 		class Unlock_Door_Dialog
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;	
@@ -108,7 +108,7 @@ class WoodenGate_2_DZ: DZE_Housebase
 	class UserActions {
 		class Lock_Door
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;			
@@ -118,7 +118,7 @@ class WoodenGate_2_DZ: DZE_Housebase
 		};
 		class Unlock_Door
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;			
@@ -128,7 +128,7 @@ class WoodenGate_2_DZ: DZE_Housebase
 		};		
 		class Unlock_Door_Dialog
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;	
@@ -169,7 +169,7 @@ class WoodenGate_3_DZ: DZE_Housebase
 	class UserActions {
 		class Lock_Door
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;			
@@ -179,7 +179,7 @@ class WoodenGate_3_DZ: DZE_Housebase
 		};
 		class Unlock_Door
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;			
@@ -189,7 +189,7 @@ class WoodenGate_3_DZ: DZE_Housebase
 		};		
 		class Unlock_Door_Dialog
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;	
@@ -229,7 +229,7 @@ class WoodenGate_4_DZ: DZE_Housebase
 	class UserActions {
 		class Lock_Door
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;			
@@ -239,7 +239,7 @@ class WoodenGate_4_DZ: DZE_Housebase
 		};
 		class Unlock_Door
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;			
@@ -249,7 +249,7 @@ class WoodenGate_4_DZ: DZE_Housebase
 		};		
 		class Unlock_Door_Dialog
 		{
-			radius = 3;
+			radius = 4;
 			position = "Door";
 			onlyForPlayer = 1;
 			priority = 6;	
