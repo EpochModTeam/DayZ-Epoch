@@ -1,4 +1,4 @@
-private ["_IslandMap","_pos","_randomKey","_findIndex","_characterID","_playerObj","_spawnSelection","_inventory","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID","_lastInstance"];
+private ["_dir","_IslandMap","_pos","_randomKey","_findIndex","_characterID","_playerObj","_spawnSelection","_inventory","_playerID","_dummy","_worldspace","_state","_doLoop","_key","_primary","_medical","_stats","_humanity","_randomSpot","_position","_distance","_fractures","_score","_findSpot","_mkr","_j","_isIsland","_w","_clientID","_lastInstance"];
 
 _characterID = _this select 0;
 _playerObj = _this select 1;
@@ -56,9 +56,11 @@ _humanity = _primary select 5;
 _lastInstance = _primary select 6;
 _randomSpot = false; //Set position
 _state = [["",""],_primary select 3 select 0] select (count _primary >= 4);
+_dir = 0;
 //diag_log ("WORLDSPACE: " + str(_worldspace));
 
 if (count _worldspace > 0) then {
+	_dir = _worldspace select 0;
 	_position = _worldspace select 1;
 	if (count _position < 3) exitWith {_randomSpot = true;}; //prevent debug world!
 
@@ -198,7 +200,7 @@ if (_randomSpot) then {
 	if (_findSpot && !_IslandMap) exitWith {
 		diag_log format["%1: Error, failed to find a suitable spawn spot for player. area:%2",__FILE__, _mkr];
 	};
-	_worldspace = [0,_position];
+	_worldspace = [_dir,_position];
 
 	//Fresh spawn, clear animationState so anim from last sync does not play on login
 	_state = ["","reset"];
