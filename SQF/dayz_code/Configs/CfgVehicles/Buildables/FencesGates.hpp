@@ -63,7 +63,7 @@ class WoodenGate_1_DZ: DZE_Housebase
 			priority = 6;			
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "(!keypadCancel && DZE_Lock_Door == (this getvariable['CharacterID','0'])) && (this animationPhase 'DoorR' < 0.3)";
-			statement = "[this,'combo_unlock',0,false] spawn dayz_zombieSpeak;PVDZE_handleSafeGear = [player,this,5,GateMethod];publicVariableServer ""PVDZE_handleSafeGear"";this animate ['DoorR', 1];this animate ['DoorL', 1];GateMethod = nil;";
+			statement = "[this,'combo_unlock',0,false] spawn dayz_zombieSpeak;PVDZE_handleSafeGear = [player,this,5,GateMethod];publicVariableServer ""PVDZE_handleSafeGear"";this animate ['DoorR', 1];this animate ['DoorL', 1];";
 		};		
 		class Unlock_Door_Dialog
 		{
@@ -124,7 +124,7 @@ class WoodenGate_2_DZ: DZE_Housebase
 			priority = 6;			
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "(!keypadCancel && DZE_Lock_Door == (this getvariable['CharacterID','0'])) && (this animationPhase 'DoorR' < 0.3)";
-			statement = "[this,'combo_unlock',0,false] spawn dayz_zombieSpeak;PVDZE_handleSafeGear = [player,this,5,GateMethod];publicVariableServer ""PVDZE_handleSafeGear"";this animate ['DoorR', 1];this animate ['DoorL', 1];GateMethod = nil;";
+			statement = "[this,'combo_unlock',0,false] spawn dayz_zombieSpeak;PVDZE_handleSafeGear = [player,this,5,GateMethod];publicVariableServer ""PVDZE_handleSafeGear"";this animate ['DoorR', 1];this animate ['DoorL', 1];";
 		};		
 		class Unlock_Door_Dialog
 		{
@@ -185,7 +185,7 @@ class WoodenGate_3_DZ: DZE_Housebase
 			priority = 6;			
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "(!keypadCancel && DZE_Lock_Door == (this getvariable['CharacterID','0'])) && (this animationPhase 'DoorR' < 0.3)";
-			statement = "[this,'combo_unlock',0,false] spawn dayz_zombieSpeak;PVDZE_handleSafeGear = [player,this,5,GateMethod];publicVariableServer ""PVDZE_handleSafeGear"";this animate ['DoorR', 1];this animate ['DoorL', 1];GateMethod = nil;";
+			statement = "[this,'combo_unlock',0,false] spawn dayz_zombieSpeak;PVDZE_handleSafeGear = [player,this,5,GateMethod];publicVariableServer ""PVDZE_handleSafeGear"";this animate ['DoorR', 1];this animate ['DoorL', 1];";
 		};		
 		class Unlock_Door_Dialog
 		{
@@ -245,7 +245,7 @@ class WoodenGate_4_DZ: DZE_Housebase
 			priority = 6;			
 			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "(!keypadCancel && DZE_Lock_Door == (this getvariable['CharacterID','0'])) && (this animationPhase 'DoorR' < 0.3)";
-			statement = "[this,'combo_unlock',0,false] spawn dayz_zombieSpeak;PVDZE_handleSafeGear = [player,this,5,GateMethod];publicVariableServer ""PVDZE_handleSafeGear"";this animate ['DoorR', 1];this animate ['DoorL', 1];GateMethod = nil;";
+			statement = "[this,'combo_unlock',0,false] spawn dayz_zombieSpeak;PVDZE_handleSafeGear = [player,this,5,GateMethod];publicVariableServer ""PVDZE_handleSafeGear"";this animate ['DoorR', 1];this animate ['DoorL', 1];";
 		};		
 		class Unlock_Door_Dialog
 		{
