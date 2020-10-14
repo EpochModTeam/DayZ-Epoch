@@ -9,16 +9,15 @@ if (!isDedicated) then {
 	//"filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 	//"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "filmic";		//DayZ Vanilla
 	"filmic" setToneMappingParams [0.4, 0.35, 0.18, 0.1, 0.1, 5, 6, 3.8]; setToneMapping "filmic";
-	
+
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\util\compile.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\loot\init.sqf";
 	if (Z_SingleCurrency) then {call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\zsc\zscFunctions.sqf";};
-	
+
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\system\handleGearFunctions.sqf";
 	fn_handleGear = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\handleGear.sqf";
-	actionMonitor = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\actionMonitor.sqf";
 	object_pickup = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickup.sqf";
-	
+
 	fn_dropItem = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dropItem.sqf";
 	fn_dynamicTool = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_dynamicTool.sqf";
 	fn_exitSwim = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_exitSwim.sqf";
@@ -34,7 +33,7 @@ if (!isDedicated) then {
 	player_temp_calculation = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_temperatur.sqf";		//Temperatur System //TeeChange
 	player_weaponFiredNear = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_weaponFiredNear.sqf";
 	player_spawnCheck = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_spawnCheck.sqf";
-	building_spawnLoot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnLoot.sqf";	
+	building_spawnLoot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnLoot.sqf";
 	building_spawnZombies = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnZombies.sqf";
 	player_fired = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre and audial rating
 	player_packTent = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_packTent.sqf";
@@ -97,7 +96,7 @@ if (!isDedicated) then {
 
 	FNC_find_plots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_find_plots.sqf";
 	player_wearClothes = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
-	player_dropWeapon = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_dropWeapon.sqf";	
+	player_dropWeapon = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_dropWeapon.sqf";
 	player_combineMag = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineMags.sqf";
 	player_combineAntibiotics = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combineAntibiotics.sqf";
 	player_combinePainkiller = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_combinePainkiller.sqf";
@@ -106,10 +105,10 @@ if (!isDedicated) then {
 	player_fillquiver = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_fillQuiver.sqf";
 	call compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_switchWeapon.sqf";
 	player_gather = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_gather.sqf";
-	player_tearClothes = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_tearClothes.sqf";	
+	player_tearClothes = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_tearClothes.sqf";
 	player_sharpen = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_sharpen.sqf";
 	player_butcher = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\gather_meat.sqf";
-	player_pushPlane = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_pushPlane.sqf";	
+	player_pushPlane = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_pushPlane.sqf";
 
 	//ui
 	player_toggleSoundMute = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_toggleSoundMute.sqf";
@@ -195,7 +194,7 @@ if (!isDedicated) then {
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
 	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
 	fnc_remoteMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_remoteMessage.sqf";
-	
+
 	// Weather
 	if (DZE_Weather in [3,4]) then {
 		fnc_snowfall = compile preprocessFileLineNumbers "\z\addons\dayz_code\system\weather\snowfall.sqf";
@@ -217,7 +216,7 @@ if (!isDedicated) then {
 		_sfx = _this select 3;
 
 		[_unit,_sfx,0,false,_dis] spawn dayz_zombieSpeak;
-		[_unit,_dis,true,_pos] spawn player_alertZombies;	
+		[_unit,_dis,true,_pos] spawn player_alertZombies;
 	};
 
 	dayz_losChance = {
@@ -233,7 +232,7 @@ if (!isDedicated) then {
 		_myExp = _myExp * 0.7;
 		_myExp
 	};
-	
+
 	/* This function doesn't appear to be necessary. Leaving it commented out for now - JasonTM.
 	ui_initDisplay = {
 		private ["_ctrlBleed","_ctrlFracture","_display","_control"];
@@ -259,7 +258,7 @@ if (!isDedicated) then {
 		_ctrlDogWaterBorder ctrlShow false;
 		_ctrlDogWater = _display displayCtrl 1702;
 		_ctrlDogWater ctrlShow false
-		
+
 	};
 	*/
 
@@ -694,7 +693,7 @@ if (!isDedicated) then {
 
 		_ret
 	};
-	
+
 	DZE_PVE_Group_Check = {
 		private ["_player", "_body", "_nameBody", "_ingroup", "_name"];
 
@@ -760,9 +759,6 @@ fn_shuffleArray = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile
 zombie_initialize = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_initialize.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\traps\init.sqf";
 fnc_fieldOfView = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_fieldOfView.sqf";
-//object_pickupAction and object_BackpackAction needs to be compiled for server too, since backpacks and weaponholders can be spawned from the server
-object_pickupAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf";
-object_BackpackAction = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf";
 fnc_deleteAt = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_deleteAt.sqf";
 
 if (dayz_townGenerator) then {

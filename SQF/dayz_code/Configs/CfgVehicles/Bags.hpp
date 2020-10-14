@@ -31,7 +31,7 @@ class DZ_Patrol_Pack_EP1: Bag_Base_EP1
 	transportMaxMagazines = 10;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_Patrol_Pack_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_Patrol_Pack_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 
@@ -48,7 +48,7 @@ class DZ_Assault_Pack_EP1: Bag_Base_EP1
 	transportMaxMagazines = 12;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_Assault_Pack_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_Assault_Pack_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 
@@ -65,7 +65,7 @@ class DZ_Czech_Vest_Pouch: Bag_Base_EP1
 	transportmaxweapons = 2;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_Czech_Vest_Pouch'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_Czech_Vest_Pouch'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 
@@ -82,7 +82,7 @@ class DZ_ALICE_Pack_EP1: Bag_Base_EP1
 	transportMaxMagazines = 20;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_ALICE_Pack_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_ALICE_Pack_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 
@@ -99,7 +99,7 @@ class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
 	transportMaxMagazines = 22;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_TK_Assault_Pack_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_TK_Assault_Pack_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 
@@ -116,7 +116,7 @@ class DZ_British_ACU : Bag_Base_EP1
 	transportMaxMagazines = 30;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_British_ACU'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_British_ACU'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 
@@ -133,7 +133,7 @@ class DZ_CivilBackpack_EP1: Bag_Base_EP1
 	transportMaxMagazines = 40;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_CivilBackpack_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_CivilBackpack_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 
@@ -150,7 +150,7 @@ class DZ_Backpack_EP1: Bag_Base_EP1
 	transportMaxMagazines = 50;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_Backpack_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_Backpack_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 
@@ -167,7 +167,7 @@ class DZ_LargeGunBag_EP1: Bag_Base_EP1
 	transportMaxMagazines = 60;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_LargeGunBag_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_LargeGunBag_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class DZ_GunBag_EP1: Bag_Base_EP1
@@ -183,7 +183,7 @@ class DZ_GunBag_EP1: Bag_Base_EP1
 	transportMaxMagazines = 35;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_GunBag_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_GunBag_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class DZ_CompactPack_EP1: Bag_Base_EP1
@@ -199,7 +199,7 @@ class DZ_CompactPack_EP1: Bag_Base_EP1
 	transportMaxMagazines = 25;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_CompactPack_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_CompactPack_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class DZ_TerminalPack_EP1: Bag_Base_EP1
@@ -215,7 +215,7 @@ class DZ_TerminalPack_EP1: Bag_Base_EP1
 	transportMaxMagazines = 15;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','DZ_TerminalPack_EP1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','DZ_TerminalPack_EP1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 
@@ -227,7 +227,7 @@ class Patrol_Pack_DZE1 : DZ_Patrol_Pack_EP1
 	transportMaxWeapons = 2;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','Patrol_Pack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','Patrol_Pack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class Patrol_Pack_DZE2 : Patrol_Pack_DZE1 
@@ -238,7 +238,7 @@ class Patrol_Pack_DZE2 : Patrol_Pack_DZE1
 	transportMaxMagazines = 15;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','Patrol_Pack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','Patrol_Pack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class Czech_Vest_Pouch_DZE1 : DZ_Czech_Vest_Pouch 
@@ -248,7 +248,7 @@ class Czech_Vest_Pouch_DZE1 : DZ_Czech_Vest_Pouch
 	transportMaxWeapons = 2;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','Czech_Vest_Pouch_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','Czech_Vest_Pouch_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class Czech_Vest_Pouch_DZE2 : Czech_Vest_Pouch_DZE1 
@@ -259,7 +259,7 @@ class Czech_Vest_Pouch_DZE2 : Czech_Vest_Pouch_DZE1
 	transportMaxMagazines = 17;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','Czech_Vest_Pouch_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','Czech_Vest_Pouch_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class Assault_Pack_DZE1 : DZ_Assault_Pack_EP1 
@@ -270,7 +270,7 @@ class Assault_Pack_DZE1 : DZ_Assault_Pack_EP1
 	transportMaxMagazines = 15;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','Assault_Pack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','Assault_Pack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class Assault_Pack_DZE2 : Assault_Pack_DZE1 
@@ -281,7 +281,7 @@ class Assault_Pack_DZE2 : Assault_Pack_DZE1
 	transportMaxMagazines = 20;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','Assault_Pack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','Assault_Pack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class TerminalPack_DZE1 : DZ_TerminalPack_EP1 
@@ -292,7 +292,7 @@ class TerminalPack_DZE1 : DZ_TerminalPack_EP1
 	transportMaxMagazines = 17;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','TerminalPack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','TerminalPack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class TerminalPack_DZE2 : TerminalPack_DZE1 
@@ -303,7 +303,7 @@ class TerminalPack_DZE2 : TerminalPack_DZE1
 	transportMaxMagazines = 22;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','TerminalPack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','TerminalPack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class TinyPack_DZE1 : Bag_Base_EP1 
@@ -319,7 +319,7 @@ class TinyPack_DZE1 : Bag_Base_EP1
 	transportMaxMagazines = 18;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','TinyPack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','TinyPack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class TinyPack_DZE2 : TinyPack_DZE1 
@@ -330,7 +330,7 @@ class TinyPack_DZE2 : TinyPack_DZE1
 	transportMaxMagazines = 24;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','TinyPack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','TinyPack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class ALICE_Pack_DZE1 : DZ_ALICE_Pack_EP1 
@@ -340,7 +340,7 @@ class ALICE_Pack_DZE1 : DZ_ALICE_Pack_EP1
 	transportMaxWeapons = 4;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','ALICE_Pack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','ALICE_Pack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class ALICE_Pack_DZE2 : ALICE_Pack_DZE1 
@@ -351,7 +351,7 @@ class ALICE_Pack_DZE2 : ALICE_Pack_DZE1
 	transportMaxMagazines = 25;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','ALICE_Pack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','ALICE_Pack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class TK_Assault_Pack_DZE1 : DZ_TK_Assault_Pack_EP1 
@@ -361,7 +361,7 @@ class TK_Assault_Pack_DZE1 : DZ_TK_Assault_Pack_EP1
 	transportMaxWeapons = 4;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','TK_Assault_Pack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','TK_Assault_Pack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class TK_Assault_Pack_DZE2 : TK_Assault_Pack_DZE1 
@@ -372,7 +372,7 @@ class TK_Assault_Pack_DZE2 : TK_Assault_Pack_DZE1
 	transportMaxMagazines = 27;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','TK_Assault_Pack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','TK_Assault_Pack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CompactPack_DZE1 : DZ_CompactPack_EP1 
@@ -382,7 +382,7 @@ class CompactPack_DZE1 : DZ_CompactPack_EP1
 	transportMaxWeapons = 5;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CompactPack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CompactPack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CompactPack_DZE2 : CompactPack_DZE1 
@@ -393,7 +393,7 @@ class CompactPack_DZE2 : CompactPack_DZE1
 	transportMaxMagazines = 30;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CompactPack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CompactPack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class British_ACU_DZE1 : DZ_British_ACU 
@@ -403,7 +403,7 @@ class British_ACU_DZE1 : DZ_British_ACU
 	transportMaxWeapons = 6;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','British_ACU_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','British_ACU_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class British_ACU_DZE2 : British_ACU_DZE1 
@@ -414,7 +414,7 @@ class British_ACU_DZE2 : British_ACU_DZE1
 	transportMaxMagazines = 35;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','British_ACU_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','British_ACU_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class GunBag_DZE1 : DZ_GunBag_EP1 
@@ -424,7 +424,7 @@ class GunBag_DZE1 : DZ_GunBag_EP1
 	transportMaxWeapons = 7;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','GunBag_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','GunBag_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class GunBag_DZE2 : GunBag_DZE1 
@@ -435,7 +435,7 @@ class GunBag_DZE2 : GunBag_DZE1
 	transportMaxMagazines = 40;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','GunBag_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','GunBag_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class NightPack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
@@ -451,7 +451,7 @@ class NightPack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
 	transportMaxMagazines = 35;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','NightPack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','NightPack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class NightPack_DZE2 : NightPack_DZE1 
@@ -462,7 +462,7 @@ class NightPack_DZE2 : NightPack_DZE1
 	transportMaxMagazines = 40;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','NightPack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','NightPack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class SurvivorPack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
@@ -478,7 +478,7 @@ class SurvivorPack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
 	transportMaxMagazines = 40;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','SurvivorPack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','SurvivorPack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class SurvivorPack_DZE2 : SurvivorPack_DZE1 
@@ -489,7 +489,7 @@ class SurvivorPack_DZE2 : SurvivorPack_DZE1
 	transportMaxMagazines = 45;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','SurvivorPack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','SurvivorPack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_DZE1 : DZ_CivilBackpack_EP1 
@@ -500,7 +500,7 @@ class CzechBackpack_DZE1 : DZ_CivilBackpack_EP1
 	transportMaxMagazines = 45;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_DZE2 : CzechBackpack_DZE1 
@@ -511,7 +511,7 @@ class CzechBackpack_DZE2 : CzechBackpack_DZE1
 	transportMaxMagazines = 50;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_OD_DZE1 : Bag_Base_EP1 		//new LEN mod Czech Pack variants
@@ -527,7 +527,7 @@ class CzechBackpack_OD_DZE1 : Bag_Base_EP1 		//new LEN mod Czech Pack variants
 	transportMaxMagazines = 45;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_OD_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_OD_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_OD_DZE2 : CzechBackpack_OD_DZE1 
@@ -538,7 +538,7 @@ class CzechBackpack_OD_DZE2 : CzechBackpack_OD_DZE1
 	transportMaxMagazines = 50;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_OD_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_OD_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_DES_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -547,7 +547,7 @@ class CzechBackpack_DES_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\02_backpack_des.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_DES_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_DES_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_DES_DZE2 : CzechBackpack_OD_DZE2 
@@ -556,7 +556,7 @@ class CzechBackpack_DES_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\02_backpack_des.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_DES_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_DES_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_3DES_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -565,7 +565,7 @@ class CzechBackpack_3DES_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack
 	picture = "\dayz_epoch_c\icons\backpacks\03_backpack_3ds.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_3DES_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_3DES_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_3DES_DZE2 : CzechBackpack_OD_DZE2 
@@ -574,7 +574,7 @@ class CzechBackpack_3DES_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\03_backpack_3ds.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_3DES_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_3DES_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_WDL_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -583,7 +583,7 @@ class CzechBackpack_WDL_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\04_backpack_wdl.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_WDL_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_WDL_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_WDL_DZE2 : CzechBackpack_OD_DZE2 
@@ -592,7 +592,7 @@ class CzechBackpack_WDL_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\04_backpack_wdl.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_WDL_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_WDL_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_MAR_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -601,7 +601,7 @@ class CzechBackpack_MAR_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\05_backpack_mar.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_MAR_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_MAR_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_MAR_DZE2 : CzechBackpack_OD_DZE2 
@@ -610,7 +610,7 @@ class CzechBackpack_MAR_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\05_backpack_mar.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_MAR_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_MAR_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_DMAR_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -619,7 +619,7 @@ class CzechBackpack_DMAR_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack
 	picture = "\dayz_epoch_c\icons\backpacks\06_backpack_dmr.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_DMAR_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_DMAR_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_DMAR_DZE2 : CzechBackpack_OD_DZE2 
@@ -628,7 +628,7 @@ class CzechBackpack_DMAR_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\06_backpack_dmr.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_DMAR_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_DMAR_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_UCP_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -637,7 +637,7 @@ class CzechBackpack_UCP_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\07_backpack_ucp.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_UCP_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_UCP_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_UCP_DZE2 : CzechBackpack_OD_DZE2 
@@ -646,7 +646,7 @@ class CzechBackpack_UCP_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\07_backpack_ucp.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_UCP_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_UCP_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_6DES_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -655,7 +655,7 @@ class CzechBackpack_6DES_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack
 	picture = "\dayz_epoch_c\icons\backpacks\08_backpack_6ds.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_6DES_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_6DES_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_6DES_DZE2 : CzechBackpack_OD_DZE2 
@@ -664,7 +664,7 @@ class CzechBackpack_6DES_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\08_backpack_6ds.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_6DES_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_6DES_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_TAK_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -673,7 +673,7 @@ class CzechBackpack_TAK_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\09_backpack_tak.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_TAK_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_TAK_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_TAK_DZE2 : CzechBackpack_OD_DZE2 
@@ -682,7 +682,7 @@ class CzechBackpack_TAK_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\09_backpack_tak.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_TAK_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_TAK_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_NVG_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -691,7 +691,7 @@ class CzechBackpack_NVG_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\10_backpack_nvg.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_NVG_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_NVG_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_NVG_DZE2 : CzechBackpack_OD_DZE2
@@ -700,7 +700,7 @@ class CzechBackpack_NVG_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\10_backpack_nvg.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_NVG_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_NVG_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_BLK_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -709,7 +709,7 @@ class CzechBackpack_BLK_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\11_backpack_blk.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_BLK_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_BLK_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_BLK_DZE2 : CzechBackpack_OD_DZE2 
@@ -718,7 +718,7 @@ class CzechBackpack_BLK_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\11_backpack_blk.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_BLK_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_BLK_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_DPM_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -727,7 +727,7 @@ class CzechBackpack_DPM_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\12_backpack_dpm.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_DPM_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_DPM_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_DPM_DZE2 : CzechBackpack_OD_DZE2 
@@ -736,7 +736,7 @@ class CzechBackpack_DPM_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\12_backpack_dpm.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_DPM_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_DPM_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_FIN_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -745,7 +745,7 @@ class CzechBackpack_FIN_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\13_backpack_fin.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_FIN_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_FIN_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_FIN_DZE2 : CzechBackpack_OD_DZE2 
@@ -754,7 +754,7 @@ class CzechBackpack_FIN_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\13_backpack_fin.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_FIN_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_FIN_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_MTC_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -763,7 +763,7 @@ class CzechBackpack_MTC_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\14_backpack_mtc.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_MTC_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_MTC_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_MTC_DZE2 : CzechBackpack_OD_DZE2 
@@ -772,7 +772,7 @@ class CzechBackpack_MTC_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\14_backpack_mtc.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_MTC_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_MTC_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_NOR_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -781,7 +781,7 @@ class CzechBackpack_NOR_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\15_backpack_nor.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_NOR_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_NOR_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_NOR_DZE2 : CzechBackpack_OD_DZE2 
@@ -790,7 +790,7 @@ class CzechBackpack_NOR_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\15_backpack_nor.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_NOR_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_NOR_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_WIN_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -799,7 +799,7 @@ class CzechBackpack_WIN_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\16_backpack_win.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_WIN_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_WIN_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_WIN_DZE2 : CzechBackpack_OD_DZE2 
@@ -808,7 +808,7 @@ class CzechBackpack_WIN_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\16_backpack_win.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_WIN_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_WIN_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_ATC_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -817,7 +817,7 @@ class CzechBackpack_ATC_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\17_backpack_atc.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_ATC_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_ATC_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_ATC_DZE2 : CzechBackpack_OD_DZE2 
@@ -826,7 +826,7 @@ class CzechBackpack_ATC_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\17_backpack_atc.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_ATC_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_ATC_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_MTL_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -835,7 +835,7 @@ class CzechBackpack_MTL_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\18_backpack_mtl.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_MTL_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_MTL_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_MTL_DZE2 : CzechBackpack_OD_DZE2 
@@ -844,7 +844,7 @@ class CzechBackpack_MTL_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\18_backpack_mtl.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_MTL_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_MTL_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CzechBackpack_FTN_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack variants
@@ -853,7 +853,7 @@ class CzechBackpack_FTN_DZE1 : CzechBackpack_OD_DZE1 		//new LEN mod Czech Pack 
 	picture = "\dayz_epoch_c\icons\backpacks\19_backpack_ftn.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_FTN_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_FTN_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CzechBackpack_FTN_DZE2 : CzechBackpack_OD_DZE2 
@@ -862,7 +862,7 @@ class CzechBackpack_FTN_DZE2 : CzechBackpack_OD_DZE2
 	picture = "\dayz_epoch_c\icons\backpacks\19_backpack_ftn.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CzechBackpack_FTN_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_FTN_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class WandererBackpack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
@@ -878,7 +878,7 @@ class WandererBackpack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpa
 	transportMaxMagazines = 50;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','WandererBackpack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','WandererBackpack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class WandererBackpack_DZE2 : WandererBackpack_DZE1 
@@ -889,7 +889,7 @@ class WandererBackpack_DZE2 : WandererBackpack_DZE1
 	transportMaxMagazines = 55;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','WandererBackpack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','WandererBackpack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class LegendBackpack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
@@ -905,7 +905,7 @@ class LegendBackpack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
 	transportMaxMagazines = 55;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','LegendBackpack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','LegendBackpack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class LegendBackpack_DZE2 : LegendBackpack_DZE1 
@@ -916,7 +916,7 @@ class LegendBackpack_DZE2 : LegendBackpack_DZE1
 	transportMaxMagazines = 60;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','LegendBackpack_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','LegendBackpack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CoyoteBackpack_DZE1 : DZ_Backpack_EP1 
@@ -927,7 +927,7 @@ class CoyoteBackpack_DZE1 : DZ_Backpack_EP1
 	transportMaxMagazines = 60;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CoyoteBackpack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CoyoteBackpack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CoyoteBackpack_DZE2 : CoyoteBackpack_DZE1 
@@ -938,7 +938,7 @@ class CoyoteBackpack_DZE2 : CoyoteBackpack_DZE1
 	transportMaxMagazines = 65;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CoyoteBackpack_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CoyoteBackpack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CoyoteBackpackDes_DZE1: CoyoteBackpack_DZE1		//new KSK mod coyote backpack variant
@@ -947,7 +947,7 @@ class CoyoteBackpackDes_DZE1: CoyoteBackpack_DZE1		//new KSK mod coyote backpack
 	picture = "\ksk_mod\backpack_des_ca.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CoyoteBackpackDes_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CoyoteBackpackDes_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CoyoteBackpackDes_DZE2 : CoyoteBackpack_DZE2 
@@ -956,7 +956,7 @@ class CoyoteBackpackDes_DZE2 : CoyoteBackpack_DZE2
 	picture = "\ksk_mod\backpack_des_ca.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CoyoteBackpackDes_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CoyoteBackpackDes_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CoyoteBackpackWdl_DZE1: CoyoteBackpack_DZE1		//new KSK mod coyote backpack variant
@@ -965,7 +965,7 @@ class CoyoteBackpackWdl_DZE1: CoyoteBackpack_DZE1		//new KSK mod coyote backpack
 	picture = "\ksk_mod\backpack_wdl_ca.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CoyoteBackpackWdl_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CoyoteBackpackWdl_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
 class CoyoteBackpackWdl_DZE2 : CoyoteBackpack_DZE2 
@@ -974,7 +974,7 @@ class CoyoteBackpackWdl_DZE2 : CoyoteBackpack_DZE2
 	picture = "\ksk_mod\backpack_wdl_ca.paa";
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','CoyoteBackpackWdl_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','CoyoteBackpackWdl_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class LargeGunBag_DZE1 : DZ_LargeGunBag_EP1 
@@ -985,7 +985,7 @@ class LargeGunBag_DZE1 : DZ_LargeGunBag_EP1
 	transportMaxMagazines = 65;
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','LargeGunBag_DZE1'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','LargeGunBag_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class LargeGunBag_DZE2 : LargeGunBag_DZE1 
@@ -996,6 +996,6 @@ class LargeGunBag_DZE2 : LargeGunBag_DZE1
 	transportMaxMagazines = 70;	
 	class eventHandlers
 	{
-		init="[(_this select 0),'CfgVehicles','LargeGunBag_DZE2'] spawn object_BackpackAction;";
+		init="[(_this select 0),'CfgVehicles','LargeGunBag_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
