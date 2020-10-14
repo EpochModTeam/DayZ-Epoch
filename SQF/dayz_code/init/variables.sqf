@@ -49,7 +49,7 @@ if (isServer) then {
 	allowConnection = false;
 	dayz_serverObjectMonitor = [];
 	PlayerDeaths = [];
-	 
+
 	//Objects to remove when killed.
 	DayZ_removableObjects = ["Wire_cat1","Sandbag1_DZ","Hedgehog_DZ","CamoNet_DZ","Trap_Cans","TrapTripwireFlare","TrapBearTrapSmoke","TrapTripwireGrenade","TrapTripwireSmoke","TrapBearTrapFlare"];
 
@@ -69,7 +69,7 @@ if (!isDedicated) then {
 	Message_1_time = 0;
 	Message_2_time = 0;
 	Message_3_time = 0;
-	
+
 	// Kill Feed
 	death_1 = "";
 	death_2 = "";
@@ -108,7 +108,7 @@ if (!isDedicated) then {
 	r_player_bloodTotal = r_player_blood;
 	r_player_actions = [];
 	r_action_targets = [];
-	
+
 	// Blood test vars
 	r_A_watered = false;
 	r_B_watered = false;
@@ -148,7 +148,7 @@ if (!isDedicated) then {
 		s_player_fishing_veh = -1;
 		s_player_gather = -1;
 		s_player_destroytent = -1;
-		
+
 		// Epoch Additions
 		s_player_packvault = -1;
 		s_player_lockvault = -1;
@@ -171,7 +171,7 @@ if (!isDedicated) then {
 		s_player_barkdog = -1;
 		s_player_warndog = -1;
 		s_player_followdog = -1;
-		s_player_information = -1;	
+		s_player_information = -1;
 		s_player_fuelauto = -1;
 		s_player_fuelauto2 = -1;
 		s_player_fillgen = -1;
@@ -209,7 +209,7 @@ if (!isDedicated) then {
 		s_player_checkWallet = -1;
 	};
 	call dayz_resetSelfActions;
-	
+
 	// These self action variables only need to be set once
 	s_player_toggleSnapSelectPoint = [];
 	s_player_toggleDegrees=[];
@@ -219,7 +219,7 @@ if (!isDedicated) then {
 	s_player_lockUnlockInside = [];
 	s_player_parts = [];
 	s_player_repairActions = [];
-	
+
 	// General Variables
 	a_player_cooking = false;
 	a_player_boil = false;
@@ -258,7 +258,7 @@ if (!isDedicated) then {
 	TimeOutDisplayed = false;
 	playerHumanityCHK = 0;
 	helperDetach = false;
-	
+
 	// Arrays
 	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
 	Dayz_meatraw = ["FoodBeefRaw","FoodMuttonRaw","FoodChickenRaw","FoodRabbitRaw","FoodBaconRaw","FoodGoatRaw","FoodDogRaw","FishRawTrout","FishRawSeaBass","FishRawTuna"];
@@ -291,11 +291,10 @@ if (!isDedicated) then {
 	dayz_treeTypes = ["","MAP_t_picea1s","MAP_t_picea2s","MAP_t_picea3f","MAP_t_pinusN2s","MAP_t_pinusS2f","MAP_t_populus3s","MAP_t_betula2s","MAP_t_fagus2s","MAP_t_fagus2W","MAP_t_malus1s"];
 	DayZ_DropDrageeObjects = ["TentStorage","TentStorage0","TentStorage1","TentStorage2","TentStorage3","TentStorage4","Wire_cat1","Sandbag1_DZ","Fence_DZ","Generator_DZ","Hedgehog_DZ","DomeTentStorage","DomeTentStorage0","DomeTentStorage1","DomeTentStorage2","DomeTentStorage3","DomeTentStorage4","TentStorageDomed","VaultStorageLocked","BagFenceRound_DZ","Fort_RazorWire","WoodGate_DZ","Land_HBarrier1_DZ","Land_HBarrier3_DZ","Land_HBarrier5_DZ","Fence_corrugated_DZ","M240Nest_DZ","ParkBench_DZ","MetalGate_DZ","OutHouse_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","StorageShed_DZ","StorageShed2_DZ","StickFence_DZ","SandNest_DZ","MetalPanel_DZ","WorkBench_DZ","WoodLargeWall_DZ","WoodLargeWallDoor_DZ","WoodLargeWallWin_DZ","WoodSmallWall_DZ","WoodSmallWallWin_DZ","WoodSmallWallDoor_DZ","LockboxStorageLocked","WoodSmallWallThird_DZ","WoodLadder_DZ","Land_DZE_GarageWoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_WoodDoor","Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","Land_DZE_WoodDoorLocked","CinderWallHalf_DZ","CinderWall_DZ","CinderWallDoorway_DZ","CinderWallDoor_DZ","CinderWallDoorLocked_DZ","CinderWallSmallDoorway_DZ","CinderWallDoorSmall_DZ","CinderWallDoorSmallLocked_DZ","DesertTentStorage","DesertTentStorage0","DesertTentStorage1","DesertTentStorage2","DesertTentStorage3","DesertTentStorage4","WoodFloorHalf_DZ","WoodFloor_DZ","WoodFloorQuarter_DZ","WoodStairs_DZ","WoodStairsSans_DZ","WoodStairsRails_DZ","MetalFloor_DZ","WoodRamp_DZ","WoodenFence_1_foundation_DZ","WoodenFence_1_frame_DZ","WoodenFence_quaterpanel_DZ","WoodenFence_halfpanel_DZ","WoodenFence_thirdpanel_DZ","WoodenFence_1_DZ","WoodenFence_2_DZ","WoodenFence_3_DZ","WoodenFence_4_DZ","WoodenFence_5_DZ","WoodenFence_6_DZ","MetalFence_1_foundation_DZ","MetalFence_1_frame_DZ","MetalFence_halfpanel_DZ","MetalFence_thirdpanel_DZ","MetalFence_1_DZ","MetalFence_2_DZ","MetalFence_3_DZ","MetalFence_4_DZ","MetalFence_5_DZ","MetalFence_6_DZ","MetalFence_7_DZ","WoodenGate_foundation_DZ","WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"];
 	Dayz_fishingItems = ["MeleeFishingPole"];
-	dayz_playerAchievements = []; //[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 	snapGizmos = []; // may not need this
 	snapGizmosNearby = []; // may not need this
 	dayz_buildingBubbleMonitor = [];
-	
+
 	//temperature variables
 	dayz_temperatur = 36;
 	dayz_temperaturnormal = 36;
@@ -345,7 +344,7 @@ if (!isDedicated) then {
 	//dayz_swarmSpawnZombies = 0;
 	dayz_CurrentNearByZombies = 0;
 	dayz_currentGlobalZombies = 0; // Current total
-	
+
 	DZE_maintainRange = ((DZE_PlotPole select 0)+20); // Default: maintain building objects within plot radius + 20 meters.
 	dayz_maxGlobalAnimals =	50;  // Maximum number of animals allowed on the map simultaneously.
 	dayz_maxGlobalPlants = 500; // Maximum number of plants to be spawned on the map.
@@ -356,7 +355,7 @@ if (!isDedicated) then {
 
 	// Epoch Additions
 	snow = 0;
-	dayz_inside = false;			 
+	dayz_inside = false;
 	DZE_UI = profileNamespace getVariable ["statusUI",1];
 	dayz_combination = "";
 	keypadCancel = false; //Brute force fix
@@ -392,30 +391,30 @@ if (!isDedicated) then {
 	dayz_lastCodeFail = 0;
 	dayz_lastHumanityChange = diag_tickTime;
 	dayz_canDelete = 350; // Z, further than this distance from its "owner", will be deleted
-	
+
 	// Survival Variables
 	SleepFood = 2160; //minutes (48 hours)
 	SleepWater = 1440; //minutes (24 hours)
-	
+
 	// GUI
 	Dayz_GUI_R = 0.38; // 0.7 .38
 	Dayz_GUI_G = 0.63; // -0.63
 	Dayz_GUI_B = 0.26; // -0.26
-	
+
 	// Heatpack
 	r_player_warming_heatpack = [false, 0];
-	r_player_warming_heatpack_time = 600; 
+	r_player_warming_heatpack_time = 600;
 
 	// Displays temp progress
 	r_player_temp_factor = 0; //to be used for temp(up/down) indicators
 	r_player_temp_min_factor = -0.04; //(lvl3 down arrow)
 	r_player_temp_max_factor = 0.04; //(lvl3 up arrow)
-	 
+
 	// INT Nutrition Info
 	r_player_Nutrition = 0; // Calories
 	r_player_nutritionMuilpty = 2;
 
-	// Ammo Routine					
+	// Ammo Routine
 	r_player_actions2 = [];
 	r_action2 = false;
 	r_player_lastVehicle = objNull;
@@ -429,7 +428,7 @@ if (!isDedicated) then {
 			r_action2 = false;
 		};
 	};
-	
+
 	USEC_woundHit = ["","body","hands","legs","head_hit"]; // limbs hit given by arma engine when fnc_usec_damageHandler is called
 	DAYZ_woundHit = [["body","hands","legs","head_hit"],[0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,2,2,3]];
 	DAYZ_woundHit_ok = [["body","hands","legs"],[0,0,0,0,0,1,1,1,2,2]];

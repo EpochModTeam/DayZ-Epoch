@@ -1,4 +1,4 @@
-private ["_isOK", "_startcombattimer", "_myPos", "_wpnType", "_ismelee","_radsound", "_bloodloss","_NutritionLoss", "_Nutrition","_outsideMap","_lastUpdate","_tempPos","_lowBlood","_start", "_refObj", "_size", "_vel", "_speed","_isPZombie", "_radTimer", "_timer", "_timer30", "_timer150", "_timerMonitor","_hunger","_thirst","_result","_randomSpot","_distance","_mylastPos","_lastTemp","_rnd","_messTimer","_saveTime"];
+private ["_isOK", "_startcombattimer", "_myPos", "_wpnType", "_ismelee","_radsound", "_bloodloss","_NutritionLoss", "_Nutrition","_outsideMap","_lastUpdate","_tempPos","_lowBlood","_refObj", "_size", "_vel", "_speed","_isPZombie", "_radTimer", "_timer", "_timer30", "_timer150", "_hunger","_thirst","_result","_randomSpot","_distance","_mylastPos","_lastTemp","_rnd","_messTimer","_saveTime"];
 disableSerialization;
 
 _messTimer = 0;
@@ -9,7 +9,7 @@ _radTimer = 0;
 _timer = diag_tickTime;
 _timer30 = diag_Ticktime;
 _timer150 = diag_ticktime;
-_timerMonitor = diag_ticktime;
+//_timerMonitor = diag_ticktime;
 
 player setVariable ["temperature",dayz_temperatur,true];
 player setVariable["friendlies",DZE_Friends,true];
@@ -20,7 +20,7 @@ player setVariable["friendlies",DZE_Friends,true];
 //player addWeapon "MeleeHatchet";
 
 while {1 == 1} do {
-	_start = diag_tickTime;
+	//_start = diag_tickTime;
 
 	//Initialize
 	_refObj = vehicle player;
@@ -97,7 +97,7 @@ while {1 == 1} do {
 
 			_outsideMap = ((dayz_myPosition select 0) < dayz_minpos || {(dayz_myPosition select 1) < dayz_minpos} || {(dayz_myPosition select 0) > dayz_maxpos} || {(dayz_myPosition select 1) > dayz_maxpos});
 
-			if (_outsideMap && {!r_player_dead} && {!isNull (findDisplay 46)} && {player distance (getMarkerPos "respawn_west") > 15}) then {
+			if (_outsideMap && {!r_player_dead && (!isNull (findDisplay 46)) && {player distance (getMarkerPos "respawn_west") > 15}}) then {
 				DZE_InRadiationZone = true;
 			};
 			player setVariable["posForceUpdate",true,true];
@@ -148,7 +148,7 @@ while {1 == 1} do {
 	dayz_temperatur = (dayz_temperatur min dayz_temperaturmax) max dayz_temperaturmin;
 
 	//can get nearby infection
-	if (!r_player_infected && {!_isPZombie}) then {
+	if (!r_player_infected && !_isPZombie) then {
 		//	Infectionriskstart
 		if (dayz_temperatur < ((80 / 100) * (dayz_temperaturnormal - dayz_temperaturmin) + dayz_temperaturmin)) then { //TeeChange
 			{
@@ -214,7 +214,7 @@ while {1 == 1} do {
 
 	// Regen some blood if player is well fed and resting
 	// Attention: regen _result must not trigger the "up" arrow of the blood icon
-	if (r_player_blood < r_player_bloodTotal && {dayz_hunger < SleepFood} && {dayz_thirst < SleepWater} && {!r_player_injured} && {!r_player_infected} && {!(r_player_Sepsis select 0)} && {!r_player_unconscious}) then {
+	if (r_player_blood < r_player_bloodTotal && {(dayz_hunger < SleepFood) && (dayz_thirst < SleepWater) && !r_player_injured && !r_player_infected && !(r_player_Sepsis select 0) && !r_player_unconscious}) then {
 		_result = (1-(dayz_hunger + dayz_thirst)/(SleepWater + SleepFood));
 
 		call {
@@ -260,23 +260,18 @@ while {1 == 1} do {
 	if (dayz_unsaved || {(diag_ticktime - dayz_lastSave) > 300}) then {
 		if ((diag_ticktime - dayz_lastSave) > _saveTime) then {
 
-			PVDZ_plr_Save = [player,nil,false,dayz_playerAchievements];
+			PVDZ_plr_Save = [player,nil,false];
 			publicVariableServer "PVDZ_plr_Save";
-
-			//PVDZ_serverStoreVar = [player,"Achievements",dayz_playerAchievements];
-			//publicVariableServer "PVDZ_serverStoreVar";
-			//player setVariable ["Achievements",dayz_playerAchievements,false];
-
 			dayz_unsaved = false;
 			dayz_lastSave = diag_ticktime;
 		};
 	};
 
 	// sort out pickup actions
-	_isOK = (pickupInit && {!canPickup}) || {!pickupInit && {canPickup}};
+	_isOK = (pickupInit && !canPickup) || {!pickupInit && canPickup};
 
 	if (_isOK) then {
-		if (pickupInit && {!canPickup}) then {
+		if (pickupInit && !canPickup) then {
 			canPickup = true;
 			pickupInit = false;
 		};
