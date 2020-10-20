@@ -50,7 +50,7 @@ _arrayOfTraderCat = Z_traderData;
 
 				if (!Z_SingleCurrency) then {
 					_buyCurrency = 	_buy select 1;
-					_sellCurrency = _sell select 1,
+					_sellCurrency = _sell select 1;
 					_part =  (configFile >> "CfgMagazines" >> _buyCurrency);
 					_worth =  getNumber(_part >> "worth");
 					if (_worth == 0) then {
