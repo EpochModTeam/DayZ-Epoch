@@ -93,6 +93,7 @@
 [FIXED] Damaged vehicles are not longer completely repaired after a vehicle upgrade. (95d528b8) @AirwavesMan
 [FIXED] Exorbitant damage from chainsaws and sledgehammers on buildings (118dbfa6) @AirwavesMan
 [FIXED] On spawn players looked always north after a reconnect to the server. (4aad93fe) @TH, @AirwavesMan
+[FIXED] Trees could knocked down on the first hit by a hatchet or chainsaw. (8dc6ef8d) @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
@@ -135,6 +136,7 @@
 [UPDATED] The maintain animation is interruptible now. (910ab43a) @AirwavesMan
 [UPDATED] Trade single items like zombie parts can be modified with an extra humanity value. (4f106220) @AirwavesMan
 [UPDATED] The Journal main page got re-worked and has some more information about the server settings now. (ef05eb4e) @AirwavesMan
+[UPDATED] Harvest wood will bring at least 16 or more wood now. This got added to affect lesser the network traffic. (8dc6ef8d) @AirwavesMan
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
 [REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow
