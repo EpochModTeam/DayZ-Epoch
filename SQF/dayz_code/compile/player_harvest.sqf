@@ -19,7 +19,11 @@ if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
 			// damage must be going down
 			_damage = damage _tree;
 			if (DZE_TEMP_treedmg < _damage) then {
-				if (_damage < 0.99 && {(random 1) > 0.9}) then {
+				if (isNil "DZE_WoodCounter") then {
+					DZE_WoodCounter = 0;
+				};
+				DZE_WoodCounter = DZE_WoodCounter + 1;
+				if (_damage < 0.99 && {(random 1) > 0.9} && {DZE_WoodCounter > 15}) then {
 					if (typeOf _tree == "") then {
 						// Ask server to setDamage on tree and sync for JIP
 						PVDZ_objgather_Knockdown = [_tree,player];
@@ -27,8 +31,10 @@ if (_ammo in ["Hatchet_Swing_Ammo","Chainsaw_Swing_Ammo"]) then {
 					} else {
 						deleteVehicle _tree;
 					};
+					DZE_TEMP_treedmg = 1;
+					DZE_WoodCounter = nil;
 				};
-				_itemOut = [["PartWoodPile","PartWoodPile","ItemLog"] call BIS_fnc_selectRandom,"PartWoodLumber"] select (_ammo == "Chainsaw_Swing_Ammo"); 
+				_itemOut = [["PartWoodPile","PartWoodPile","ItemLog"] call BIS_fnc_selectRandom,"PartWoodLumber"] select (_ammo == "Chainsaw_Swing_Ammo");
 				[_itemOut,1,1] call fn_dropItem;
 
 				[player,60,false,getPosATL player] spawn player_alertZombies;
