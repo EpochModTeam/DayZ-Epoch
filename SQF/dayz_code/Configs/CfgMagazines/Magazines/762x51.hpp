@@ -166,6 +166,7 @@ class 20Rnd_762x51_RSASS_SD: 20Rnd_762x51_RSASS
 class 20Rnd_762x51_HK417: 20Rnd_762x51_RSASS
 {
 	picture = "\dayz_epoch_c\icons\magazines\m_hk417.paa";
+	model = "\z\addons\dayz_epoch_w\magazine\dze_hk417_mag.p3d";
 	displayName = $STR_DZ_MAG_20RND_HK417_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_HK417_DESC;
 	count = 20;
