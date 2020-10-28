@@ -1,15 +1,15 @@
 class ReammoBox_EP1;	// External class reference
-class Bag_Base_EP1 : ReammoBox_EP1 {
+class Bag_Base_EP1 : ReammoBox_EP1 {	
 	scope = 0;
-
 	class TransportMagazines {};
-
 	class TransportWeapons {};
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
 	isbackpack = 1;
+	mapsize = 2;
 	reversed = true;
 	vehicleClass = "Backpacks";
+	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
 
 	class DestructionEffects {};
 
@@ -24,8 +24,6 @@ class DZ_Patrol_Pack_EP1: Bag_Base_EP1
 	displayName = $STR_BACKPACK_NAME_PATROL;
 	descriptionShort = $STR_BACKPACK_DESC_PATROL;
 	picture = "\ca\weapons_e\data\icons\backpack_US_ASSAULT_COYOTE_CA.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us_assault_Coyote.p3d";
 	transportMaxWeapons = 2;
 	transportMaxMagazines = 10;
@@ -41,8 +39,6 @@ class DZ_Assault_Pack_EP1: Bag_Base_EP1
 	displayName = $STR_BACKPACK_NAME_ACU;
 	descriptionShort = $STR_BACKPACK_DESC_ACU;
 	picture = "\ca\weapons_e\data\icons\backpack_US_ASSAULT_CA.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapSize = 2;
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us_assault.p3d";
 	transportMaxWeapons = 2;
 	transportMaxMagazines = 12;
@@ -54,13 +50,11 @@ class DZ_Assault_Pack_EP1: Bag_Base_EP1
 
 class DZ_Czech_Vest_Pouch: Bag_Base_EP1
 {
+	scope = 2;
 	displayname = $STR_BACKPACK_NAME_VEST;
 	descriptionShort = $STR_BACKPACK_DESC_VEST;
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	model = "\ca\weapons_e\AmmoBoxes\backpack_acr_small.p3d";
-	picture = "\ca\weapons_e\data\icons\backpack_ACR_small_CA.paa";
-	scope = 2;
+	picture = "\ca\weapons_e\data\icons\backpack_ACR_small_CA.paa";	
 	transportmaxmagazines = 12;
 	transportmaxweapons = 2;
 	class eventHandlers
@@ -75,8 +69,6 @@ class DZ_ALICE_Pack_EP1: Bag_Base_EP1
 	displayName = $STR_BACKPACK_NAME_ALICE;
 	descriptionShort = $STR_BACKPACK_DESC_ALICE;
 	picture = "\ca\weapons_e\data\icons\backpack_TK_ALICE_CA.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	model = "\ca\weapons_e\AmmoBoxes\backpack_tk_alice.p3d";
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 20;
@@ -91,9 +83,7 @@ class DZ_TK_Assault_Pack_EP1 : Bag_Base_EP1
 	scope = 2;
 	displayName = $STR_BACKPACK_NAME_SURVACU;
 	descriptionShort = $STR_BACKPACK_DESC_SURVACU;
-	mapSize = 2;
 	picture = "\ca\weapons_e\data\icons\backpack_CIVIL_ASSAULT_CA.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	model = "\ca\weapons_e\AmmoBoxes\backpack_civil_assault.p3d";
 	transportMaxWeapons = 4;
 	transportMaxMagazines = 22;
@@ -108,10 +98,8 @@ class DZ_British_ACU : Bag_Base_EP1
 	scope = 2;
 	displayName = $STR_BACKPACK_NAME_BRITISH;
 	descriptionShort = $STR_BACKPACK_DESC_BRITISH;
-	mapSize = 2;
 	model = "\ca\weapons_baf\Backpack_Small_BAF";
 	picture = "\ca\weapons_baf\data\UI\backpack_BAF_CA.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
 	transportMaxWeapons = 6;
 	transportMaxMagazines = 30;
 	class eventHandlers
@@ -126,8 +114,6 @@ class DZ_CivilBackpack_EP1: Bag_Base_EP1
 	displayName = $STR_BACKPACK_NAME_CZECH;
 	descriptionShort = $STR_BACKPACK_DESC_CZECH;
 	picture = "\ca\weapons_e\data\icons\backpack_ACR_CA.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	model = "\ca\weapons_e\AmmoBoxes\backpack_acr.p3d";
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 40;
@@ -143,8 +129,6 @@ class DZ_Backpack_EP1: Bag_Base_EP1
 	displayName = $STR_BACKPACK_NAME_COYOTE;
 	descriptionShort = $STR_BACKPACK_DESC_COYOTE;
 	picture = "\ca\weapons_e\data\icons\backpack_US_CA.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us.p3d";
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
@@ -161,8 +145,6 @@ class DZ_LargeGunBag_EP1: Bag_Base_EP1
 	descriptionShort = $STR_EPOCH_PACK_DESC_LGB;
 	model = "\ca\weapons_e\AmmoBoxes\StaticX.p3d"; 
 	picture = "\ca\weapons_e\data\icons\staticX_CA.paa"; 
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
-	mapsize = 2;
 	transportMaxWeapons = 12;
 	transportMaxMagazines = 60;
 	class eventHandlers
@@ -177,8 +159,6 @@ class DZ_GunBag_EP1: Bag_Base_EP1
 	descriptionShort = $STR_EPOCH_PACK_DESC_GB;
 	model = "\ca\weapons_e\AmmoBoxes\StaticY.p3d"; 
 	picture = "\ca\weapons_e\data\icons\staticY_CA.paa"; 
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
-	mapsize = 2;
 	transportMaxWeapons = 7;
 	transportMaxMagazines = 35;
 	class eventHandlers
@@ -192,8 +172,6 @@ class DZ_CompactPack_EP1: Bag_Base_EP1
 	displayName = $STR_EPOCH_PACK_COMPACT; 
 	descriptionShort = $STR_EPOCH_PACK_DESC_COMPACT;
 	picture = "\ca\weapons_e\data\icons\backpack_RPG_CA.paa"; 
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
-	mapsize = 2; 
 	model = "\ca\weapons_e\AmmoBoxes\backpack_rpg.p3d"; 
 	transportMaxWeapons = 5;
 	transportMaxMagazines = 25;
@@ -208,8 +186,6 @@ class DZ_TerminalPack_EP1: Bag_Base_EP1
 	displayName = $STR_EPOCH_PACK_TERMINAL; 
 	descriptionShort = $STR_EPOCH_PACK_DESC_TERMINAL;
 	picture = "\dayz_epoch_c\icons\backpacks\terminalpack.paa"; 
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa"; 
-	mapSize = 2; 
 	model = "\ca\weapons_e\AmmoBoxes\backpack_us_AUV"; 
 	transportMaxWeapons = 3;
 	transportMaxMagazines = 15;
@@ -239,6 +215,52 @@ class Patrol_Pack_DZE2 : Patrol_Pack_DZE1
 	class eventHandlers
 	{
 		init="[(_this select 0),'CfgVehicles','Patrol_Pack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class GymBag_Camo_DZE1 : Bag_Base_EP1 
+{
+	scope = 2;
+	displayName = $STR_BACKPACK_NAME_GYMBAG_DZE1;
+	descriptionShort = $STR_BACKPACK_DESC_GYMBAG_DZE1;
+	model = "\z\addons\dayz_epoch_u\clothes\dze_gymbag_01"; 
+	picture = "\dayz_epoch_c\icons\backpacks\gymbag_camo.paa";
+	transportMaxMagazines = 10;	
+	transportMaxWeapons = 2;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','GymBag_Camo_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class GymBag_Camo_DZE2 : Bag_Base_EP1 
+{
+	scope = 2;
+	displayName = $STR_BACKPACK_NAME_GYMBAG_DZE2;
+	descriptionShort = $STR_BACKPACK_DESC_GYMBAG_DZE2;
+	model = "\z\addons\dayz_epoch_u\clothes\dze_gymbag_01"; 
+	picture = "\dayz_epoch_c\icons\backpacks\gymbag_camo.paa";
+	transportMaxWeapons = 3;
+	transportMaxMagazines = 15;	
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','GymBag_Camo_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class GymBag_Green_DZE1 : GymBag_Camo_DZE1 
+{
+	model = "\z\addons\dayz_epoch_u\clothes\dze_gymbag_yellow"; 
+	picture = "\dayz_epoch_c\icons\backpacks\gymbag_green.paa";
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','GymBag_Green_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class GymBag_Green_DZE2 : GymBag_Camo_DZE2 
+{
+	model = "\z\addons\dayz_epoch_u\clothes\dze_gymbag_yellow"; 
+	picture = "\dayz_epoch_c\icons\backpacks\gymbag_green.paa";
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','GymBag_Green_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class Czech_Vest_Pouch_DZE1 : DZ_Czech_Vest_Pouch 
@@ -309,12 +331,10 @@ class TerminalPack_DZE2 : TerminalPack_DZE1
 class TinyPack_DZE1 : Bag_Base_EP1 
 {
 	scope = 2;
-	mapsize = 2;
 	displayname = $STR_EPOCH_PACK_TINY_DZE1;
 	descriptionShort = $STR_EPOCH_PACK_DESC_TINY_DZE1;
 	picture = "\Ca\Weapons_ACR\Data\UI\picture_backpack_acr_rpg";
 	model = "\Ca\Characters_ACR\backpack_acr_rpg";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA";
 	transportMaxWeapons = 3;
 	transportMaxMagazines = 18;	
 	class eventHandlers
@@ -373,6 +393,34 @@ class TK_Assault_Pack_DZE2 : TK_Assault_Pack_DZE1
 	class eventHandlers
 	{
 		init="[(_this select 0),'CfgVehicles','TK_Assault_Pack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class School_Bag_DZE1 : Bag_Base_EP1 
+{
+	scope = 2;
+	displayname = $STR_BACKPACK_NAME_SCHOOLBAG_DZE1;
+	descriptionShort = $STR_BACKPACK_DESC_SCHOOLBAG_DZE1;
+	model = "\z\addons\dayz_epoch_u\clothes\dze_canvasbag_01"; 
+	picture = "\dayz_epoch_c\icons\backpacks\schoolbag.paa";
+	transportMaxMagazines = 24;	
+	transportMaxWeapons = 4;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','School_Bag_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class School_Bag_DZE2 : Bag_Base_EP1 
+{
+	scope = 2;
+	displayname = $STR_BACKPACK_NAME_SCHOOLBAG_DZE2;
+	descriptionShort = $STR_BACKPACK_DESC_SCHOOLBAG_DZE2;
+	model = "\z\addons\dayz_epoch_u\clothes\dze_canvasbag_01"; 
+	picture = "\dayz_epoch_c\icons\backpacks\schoolbag.paa";
+	transportMaxWeapons = 6;
+	transportMaxMagazines = 30;	
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','School_Bag_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class CompactPack_DZE1 : DZ_CompactPack_EP1 
@@ -438,6 +486,34 @@ class GunBag_DZE2 : GunBag_DZE1
 		init="[(_this select 0),'CfgVehicles','GunBag_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
+class PartyPack_DZE1 : Bag_Base_EP1 
+{
+	scope = 2;
+	displayname = $STR_EPOCH_PACK_PARTYPACK_DZE1;
+	descriptionShort = $STR_EPOCH_PACK_DESC_PARTYPACK_DZE1;
+	picture = "\dayz_epoch_c\icons\backpacks\partypack.paa";
+	model = "\z\addons\dayz_epoch_u\clothes\dze_canvasbag_02"; 
+	transportMaxMagazines = 36;	
+	transportMaxWeapons = 7;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','PartyPack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class PartyPack_DZE2 : Bag_Base_EP1 
+{
+	scope = 2;
+	displayname = $STR_EPOCH_PACK_PARTYPACK_DZE2;
+	descriptionShort = $STR_EPOCH_PACK_DESC_PARTYPACK_DZE2;
+	picture = "\dayz_epoch_c\icons\backpacks\partypack.paa";
+	model = "\z\addons\dayz_epoch_u\clothes\dze_canvasbag_02"; 
+	transportMaxWeapons = 8;
+	transportMaxMagazines = 42;	
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','PartyPack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
 class NightPack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
 {
 	scope = 2;
@@ -445,8 +521,6 @@ class NightPack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
 	descriptionShort = $STR_BACKPACK_DESC_APO1_DZE1;
 	model = "\ice_apo_resistance\Backpack1.p3d";
 	picture = "\ice_apo_resistance\icons\backpack1_ca.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	transportMaxWeapons = 7;
 	transportMaxMagazines = 35;
 	class eventHandlers
@@ -472,8 +546,6 @@ class SurvivorPack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
 	descriptionShort = $STR_BACKPACK_DESC_APO2_DZE1;
 	model = "\ice_apo_resistance\Backpack4.p3d";
 	picture = "\ice_apo_resistance\icons\backpack4_ca.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 40;
 	class eventHandlers
@@ -514,15 +586,31 @@ class CzechBackpack_DZE2 : CzechBackpack_DZE1
 		init="[(_this select 0),'CfgVehicles','CzechBackpack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
+class CzechBackpack_Camping_DZE1 : DZ_CivilBackpack_EP1 
+{
+	model = "\z\addons\dayz_epoch_u\clothes\dze_survivorpack_01"; 
+	picture = "\dayz_epoch_c\icons\backpacks\20_backpack_camping.paa";
+	transportMaxWeapons = 9;
+	transportMaxMagazines = 45;
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_Camping_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class CzechBackpack_Camping_DZE2 : CzechBackpack_DZE2 
+{
+	model = "\z\addons\dayz_epoch_u\clothes\dze_survivorpack_01"; 
+	picture = "\dayz_epoch_c\icons\backpacks\20_backpack_camping.paa";
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','CzechBackpack_Camping_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
 class CzechBackpack_OD_DZE1 : Bag_Base_EP1 		//new LEN mod Czech Pack variants
 {
 	scope = 2;
 	displayname = $STR_BACKPACK_NAME_CZECH_DZE1;
 	descriptionShort = $STR_BACKPACK_DESC_CZECH_DZE1;
-	model = "\len_backpacks\backpack_odr.p3d";
-	picture = "\dayz_epoch_c\icons\backpacks\01_backpack_odr.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	transportMaxWeapons = 9;
 	transportMaxMagazines = 45;
 	class eventHandlers
@@ -872,8 +960,6 @@ class WandererBackpack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpa
 	descriptionShort = $STR_BACKPACK_DESC_APO3_DZE1;
 	model = "\ice_apo_resistance\Backpack3.p3d";
 	picture = "\ice_apo_resistance\icons\backpack3_ca.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;
 	class eventHandlers
@@ -899,8 +985,6 @@ class LegendBackpack_DZE1 : Bag_Base_EP1 		//new ice apo resistance mod backpack
 	descriptionShort = $STR_BACKPACK_DESC_APO4_DZE1;
 	model = "\ice_apo_resistance\Backpack2.p3d";
 	picture = "\ice_apo_resistance\icons\backpack2_ca.paa";
-	icon = "\ca\weapons_e\data\icons\mapIcon_backpack_CA.paa";
-	mapsize = 2;
 	transportMaxWeapons = 11;
 	transportMaxMagazines = 55;
 	class eventHandlers
@@ -975,6 +1059,24 @@ class CoyoteBackpackWdl_DZE2 : CoyoteBackpack_DZE2
 	class eventHandlers
 	{
 		init="[(_this select 0),'CfgVehicles','CoyoteBackpackWdl_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};	
+};
+class CoyoteBackpack_Camping_DZE1: CoyoteBackpack_DZE1
+{
+	model = "\z\addons\dayz_epoch_u\clothes\dze_survivorpack_02"; 
+	picture = "\dayz_epoch_c\icons\backpacks\coyote_camping.paa";
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','CoyoteBackpack_Camping_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
+	};
+};
+class CoyoteBackpack_Camping_DZE2 : CoyoteBackpack_DZE2 
+{
+	model = "\z\addons\dayz_epoch_u\clothes\dze_survivorpack_02"; 
+	picture = "\dayz_epoch_c\icons\backpacks\coyote_camping.paa";
+	class eventHandlers
+	{
+		init="[(_this select 0),'CfgVehicles','CoyoteBackpack_Camping_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
 class LargeGunBag_DZE1 : DZ_LargeGunBag_EP1 

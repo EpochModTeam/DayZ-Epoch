@@ -166,6 +166,8 @@ class Category_30 {
 //Backpacks
 class Category_31 {
 	/* New Backpacks */
+	class GymBag_Camo_DZE1 {type = "trade_backpacks";buy[] = {8,"worth"};sell[] = {4,"worth"};};
+	class GymBag_Green_DZE1 {type = "trade_backpacks";buy[] = {8,"worth"};sell[] = {4,"worth"};};
 	class Patrol_Pack_DZE1 {type = "trade_backpacks";buy[] = {8,"worth"};sell[] = {4,"worth"};};
 	class Czech_Vest_Pouch_DZE1 {type = "trade_backpacks";buy[] = {10,"worth"};sell[] = {5,"worth"};};
 	class Assault_Pack_DZE1 {type = "trade_backpacks";buy[] = {20,"worth"};sell[] = {10,"worth"};};
@@ -173,12 +175,15 @@ class Category_31 {
 	class TinyPack_DZE1 {type = "trade_backpacks";buy[] = {60,"worth"};sell[] = {30,"worth"};};
 	class ALICE_Pack_DZE1 {type = "trade_backpacks";buy[] = {80,"worth"};sell[] = {40,"worth"};};
 	class TK_Assault_Pack_DZE1 {type = "trade_backpacks";buy[] = {100,"worth"};sell[] = {50,"worth"};};
+	class School_Bag_DZE1 {type = "trade_backpacks";buy[] = {150,"worth"};sell[] = {75,"worth"};};
 	class CompactPack_DZE1 {type = "trade_backpacks";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class British_ACU_DZE1 {type = "trade_backpacks";buy[] = {400,"worth"};sell[] = {200,"worth"};};	
 	class GunBag_DZE1 {type = "trade_backpacks";buy[] = {600,"worth"};sell[] = {300,"worth"};};
+	class PartyPack_DZE1 {type = "trade_backpacks";buy[] = {700,"worth"};sell[] = {350,"worth"};};
 	class NightPack_DZE1 {type = "trade_backpacks";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class SurvivorPack_DZE1 {type = "trade_backpacks";buy[] = {1000,"worth"};sell[] = {500,"worth"};};
-	class CzechBackpack_DZE1 {type = "trade_backpacks";buy[] = {1200,"worth"};sell[] = {600,"worth"};};
+	class CzechBackpack_DZE1 {type = "trade_backpacks";buy[] = {-1200,"worth"};sell[] = {600,"worth"};};
+	class CzechBackpack_Camping_DZE1 {type = "trade_backpacks";buy[] = {1200,"worth"};sell[] = {600,"worth"};};
 	class CzechBackpack_OD_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {600,"worth"};};
 	class CzechBackpack_DES_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {600,"worth"};};
 	class CzechBackpack_3DES_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {600,"worth"};};
@@ -201,6 +206,7 @@ class Category_31 {
 	class WandererBackpack_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {700,"worth"};};
 	class LegendBackpack_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {800,"worth"};};
 	class CoyoteBackpack_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {900,"worth"};};
+	class CoyoteBackpack_Camping_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {900,"worth"};};
 	class CoyoteBackpackDes_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {900,"worth"};};
 	class CoyoteBackpackWdl_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {900,"worth"};};
 	class LargeGunBag_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {1000,"worth"};};

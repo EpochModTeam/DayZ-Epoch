@@ -166,6 +166,8 @@ class Category_30 {
 //Backpacks
 class Category_31 {
 	/* New Backpacks */
+	class GymBag_Camo_DZE1 {type = "trade_backpacks";buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};
+	class GymBag_Green_DZE1 {type = "trade_backpacks";buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};
 	class Patrol_Pack_DZE1 {type = "trade_backpacks";buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};
 	class Czech_Vest_Pouch_DZE1 {type = "trade_backpacks";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
 	class Assault_Pack_DZE1 {type = "trade_backpacks";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
@@ -173,12 +175,15 @@ class Category_31 {
 	class TinyPack_DZE1 {type = "trade_backpacks";buy[] = {6,"ItemSilverBar10oz"};sell[] = {3,"ItemSilverBar10oz"};};
 	class ALICE_Pack_DZE1 {type = "trade_backpacks";buy[] = {8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};
 	class TK_Assault_Pack_DZE1 {type = "trade_backpacks";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
+	class School_Bag_DZE1 {type = "trade_backpacks";buy[] = {1,"ItemGoldBar"};sell[] = {5,"ItemSilverBar10oz"};};
 	class CompactPack_DZE1 {type = "trade_backpacks";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class British_ACU_DZE1 {type = "trade_backpacks";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};	
 	class GunBag_DZE1 {type = "trade_backpacks";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
+	class PartyPack_DZE1 {type = "trade_backpacks";buy[] = {7,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class NightPack_DZE1 {type = "trade_backpacks";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class SurvivorPack_DZE1 {type = "trade_backpacks";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
-	class CzechBackpack_DZE1 {type = "trade_backpacks";buy[] = {12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class CzechBackpack_DZE1 {type = "trade_backpacks";buy[] = {-12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
+	class CzechBackpack_Camping_DZE1 {type = "trade_backpacks";buy[] = {12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
 	class CzechBackpack_OD_DZE1 {type = "trade_backpacks";buy[] = {-12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
 	class CzechBackpack_DES_DZE1 {type = "trade_backpacks";buy[] = {-12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
 	class CzechBackpack_3DES_DZE1 {type = "trade_backpacks";buy[] = {-12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
@@ -201,6 +206,7 @@ class Category_31 {
 	class WandererBackpack_DZE1 {type = "trade_backpacks";buy[] = {-14,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};
 	class LegendBackpack_DZE1 {type = "trade_backpacks";buy[] = {-16,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
 	class CoyoteBackpack_DZE1 {type = "trade_backpacks";buy[] = {-18,"ItemGoldBar"};sell[] = {9,"ItemGoldBar"};};
+	class CoyoteBackpack_Camping_DZE1 {type = "trade_backpacks";buy[] = {-18,"ItemGoldBar"};sell[] = {9,"ItemGoldBar"};};
 	class CoyoteBackpackDes_DZE1 {type = "trade_backpacks";buy[] = {-18,"ItemGoldBar"};sell[] = {9,"ItemGoldBar"};};
 	class CoyoteBackpackWdl_DZE1 {type = "trade_backpacks";buy[] = {-18,"ItemGoldBar"};sell[] = {9,"ItemGoldBar"};};
 	class LargeGunBag_DZE1 {type = "trade_backpacks";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};

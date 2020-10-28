@@ -1,10 +1,16 @@
 backpacks[] = {
-	{Loot_BACKPACK,		5,		Assault_Pack_DZE1},
-	{Loot_BACKPACK,		5,		Czech_Vest_Pouch_DZE1},
-	{Loot_BACKPACK,		4,		Patrol_Pack_DZE1},
+	{Loot_BACKPACK,		8,		GymBag_Camo_DZE1},
+	{Loot_BACKPACK,		8,		GymBag_Green_DZE1},
+	{Loot_BACKPACK,		6,		School_Bag_DZE1},
+	{Loot_BACKPACK,		5,		Assault_Pack_DZE1},	
+	{Loot_BACKPACK,		6,		Czech_Vest_Pouch_DZE1},
+	{Loot_BACKPACK,		6,		Patrol_Pack_DZE1},
 	{Loot_BACKPACK,		4,		TerminalPack_DZE1},
 	{Loot_BACKPACK,		3,		ALICE_Pack_DZE1},
 	{Loot_BACKPACK,		2,		TK_Assault_Pack_DZE1},
+	{Loot_BACKPACK,		2,		PartyPack_DZE1},	
+	{Loot_BACKPACK,		1,		CzechBackpack_Camping_DZE1},	
+	{Loot_BACKPACK,		1,		CoyoteBackpack_Camping_DZE1},	
 	{Loot_BACKPACK,		1,		CompactPack_DZE1}
 };
 

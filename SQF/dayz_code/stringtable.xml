@@ -23453,6 +23453,22 @@
 			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 15 litrů</Czech>
 			<German>Patrol Rucksack von "Coyote". &lt;br/&gt;Volumen: 15 Liter</German>
 		</Key>
+		<Key ID="STR_BACKPACK_NAME_GYMBAG_DZE1">
+			<English>Gym Bag</English>
+			<German>Sportbeutel</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_GYMBAG_DZE1">
+			<English>Gym Bag &lt;br/&gt;Capacity: 10 items</English>
+			<German>Sportbeutel &lt;br/&gt;Volumen: 10 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_GYMBAG_DZE2">
+			<English>Gym Bag+</English>
+			<German>Sportbeutel+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_GYMBAG_DZE2">
+			<English>Gym Bag &lt;br/&gt;Capacity: 15 items</English>
+			<German>Sportbeutel &lt;br/&gt;Volumen: 15 Liter</German>
+		</Key>		
 		<Key ID="STR_BACKPACK_NAME_VEST_DZE1">
 			<English>Czech Vest Pouch</English>
 			<French>Sac tchèque</French>
@@ -23633,6 +23649,22 @@
 			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 27 litrů</Czech>
 			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 27 Liter</German>
 		</Key>
+		<Key ID="STR_BACKPACK_NAME_SCHOOLBAG_DZE1">
+			<English>School Bag</English>
+			<German>Schulrucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_SCHOOLBAG_DZE1">
+			<English>School Bag &lt;br/&gt;Capacity: 24 items</English>
+			<German>Schulrucksack &lt;br/&gt;Volumen: 24 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_SCHOOLBAG_DZE2">
+			<English>School Bag+</English>
+			<German>Schulrucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_SCHOOLBAG_DZE2">
+			<English>School Bag &lt;br/&gt;Capacity: 30 items</English>
+			<German>Schulrucksack &lt;br/&gt;Volumen: 30 Liter</German>
+		</Key>
 		<Key ID="STR_EPOCH_PACK_COMPACT_DZE1">
 			<English>Compact Backpack</English>
 			<German>Compact Rucksack</German>
@@ -23723,6 +23755,22 @@
 			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 40 liter</Dutch>
 			<French>Fourreau&lt;br/&gt;Taille: 40</French>
 		</Key>
+		<Key ID="STR_EPOCH_PACK_PARTYPACK_DZE1">
+			<English>Party Pack</English>
+			<German>Party-Rucksack</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_PARTYPACK_DZE1">
+			<English>Party Pack &lt;br/&gt;Capacity: 36 items</English>
+			<German>Party-Rucksack &lt;br/&gt;Volumen: 36 Liter</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_PARTYPACK_DZE2">
+			<English>Party Pack+</English>
+			<German>Party-Rucksack+</German>
+		</Key>
+		<Key ID="STR_EPOCH_PACK_DESC_PARTYPACK_DZE2">
+			<English>Party Pack &lt;br/&gt;Capacity: 42 items</English>
+			<German>Party-Rucksack &lt;br/&gt;Volumen: 42 Liter</German>
+		</Key>		
 		<Key ID="STR_BACKPACK_NAME_APO1_DZE1">
 			<English>Night Backpack</English>
 			<German>Night Rucksack</German>
