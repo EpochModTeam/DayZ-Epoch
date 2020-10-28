@@ -5,7 +5,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-if (isNull cursorTarget) exitWith {systemChat localize "str_cursorTargetNotFound";};
+if (isNull cursorTarget) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
 
 private ["_backupCode","_badCode","_cursorTarget","_dialog","_dir","_doorFriends","_isDoor","_isLockBox","_isSafe","_isStorage","_location","_lockCode","_object","_ownerID","_typeOf","_vector"];
 
