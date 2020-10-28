@@ -18,9 +18,9 @@
 [NEW] Players can choose among 5 sets of status icons by pressing the F3 key or selecting in the game options menu. @worldwidesorrow
 [NEW] Over 100 new weapons and magazines with attachment support. Like the HK417, Famas, Steyr Aug, G3, MP7 and many more. @AirwavesMan
 [NEW] M110_DZ with double zoom which was removed with the last Arma 2 1.64 patch. (9a531b3) @AirwavesMan
-[NEW] Almost all objects have a model now. E.g. FN Fal mag, M203 Flare, AS50 mag. @Helion4 @AirwavesMan
+[NEW] Almost all objects have a model now. E.g. FN Fal mag, M203 Flare, AS50 mag. @Helion4, @AirwavesMan
 [NEW] Over 130 new male and female skins. @AirwavesMan @Helion4
-[NEW] 5 new backpacks. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
+[NEW] 11 new backpacks. (637358b), (88053499)  @Seelenapparat, @DeVloek, @AirwavesMan, @Helion4
 [NEW] Different backpack skins for the Coyote and the Czech Backpack. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
 [NEW] All backpacks got updated and have 2 new versions now. A regular and an updated version now. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
 [NEW] A fire place can be crafted directly from a wooden log now. (2b8997ec) @AirwavesMan
