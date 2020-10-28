@@ -19,7 +19,7 @@
 [NEW] Over 100 new weapons and magazines with attachment support. Like the HK417, Famas, Steyr Aug, G3, MP7 and many more. @AirwavesMan
 [NEW] M110_DZ with double zoom which was removed with the last Arma 2 1.64 patch. (9a531b3) @AirwavesMan
 [NEW] Almost all objects have a model now. E.g. FN Fal mag, M203 Flare, AS50 mag. @Helion4 @AirwavesMan
-[NEW] Over 120 new skins. @AirwavesMan
+[NEW] Over 130 new male and female skins. @AirwavesMan @Helion4
 [NEW] 5 new backpacks. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
 [NEW] Different backpack skins for the Coyote and the Czech Backpack. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
 [NEW] All backpacks got updated and have 2 new versions now. A regular and an updated version now. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
@@ -49,6 +49,7 @@
 [NEW] Heroes and Bandits will drop a dog tag on death now which can be traded at the Hero or Bandit Trader for humanity. Thx for the idea @Tecumseh. (431cbc88, 272a7406, 4f106220) @AirwavesMan
 [NEW] Special handling for floating loot in buildings over water. Use fixWaterPos = 1; in the buildings class that has this problem. (89bca2c9) @AirwavesMan
 [NEW] With activated Weight System, traders show under the item information the weight to the given item. (e5af93b5) @AirwavesMan
+[NEW] Female players can wear all ghillie suits now. (758be289) @AirwavesMan @Helion4
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -94,6 +95,7 @@
 [FIXED] Exorbitant damage from chainsaws and sledgehammers on buildings (118dbfa6) @AirwavesMan
 [FIXED] On spawn players looked always north after a reconnect to the server. (4aad93fe) @TH, @AirwavesMan
 [FIXED] Trees could knocked down on the first hit by a hatchet or chainsaw. (8dc6ef8d) @AirwavesMan
+[FIXED] Female players had not the correct armor and camouflage set. (758be289) @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
