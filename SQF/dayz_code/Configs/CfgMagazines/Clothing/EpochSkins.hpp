@@ -141,7 +141,7 @@ class Skin_GUE_Soldier_MG_DZ: SkinBase {
 class Skin_GUE_Soldier_Sniper_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_BANDITSNIPER;
-	descriptionShort = $STR_EPOCH_SKINS_BANDITSNIPER_DESC;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
 	sex = "male";
 	playerModel = "GUE_Soldier_Sniper_DZ";	
 };
@@ -281,7 +281,7 @@ class Skin_FR_Rodriguez_DZ: SkinBase {
 class Skin_CZ_Soldier_Sniper_EP1_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_DESERTGHILLIE;
-	descriptionShort = $STR_EPOCH_SKINS_DESERTGHILLIE;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
 	sex = "male";
 	playerModel = "CZ_Soldier_Sniper_EP1_DZ";	
 };
@@ -316,7 +316,7 @@ class Skin_TK_Special_Forces_MG_EP1_DZ: SkinBase {
 class Skin_TK_Soldier_Sniper_EP1_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_DESERTSNIPER;
-	descriptionShort = $STR_EPOCH_SKINS_DESERTSNIPER;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
 	sex = "male";
 	playerModel = "TK_Soldier_Sniper_EP1_DZ";	
 };
@@ -491,28 +491,28 @@ class Skin_Assistant_DZ: SkinBase {
 class Skin_Doctor_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_DOCTOR;
-	descriptionShort = $STR_EPOCH_SKINS_DOCTOR;
+	descriptionShort = $STR_EPOCH_SKINS_DOCTOR_DESC;
 	sex = "male";
 	playerModel = "Doctor_DZ";	
 };
 class Skin_Worker1_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_WORKER1;
-	descriptionShort = $STR_EPOCH_SKINS_WORKER1;
+	descriptionShort = $STR_EPOCH_SKINS_WORKER_DESC;
 	sex = "male";
 	playerModel = "Worker1_DZ";	
 };
 class Skin_Worker3_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_WORKER2;
-	descriptionShort = $STR_EPOCH_SKINS_WORKER2;
+	descriptionShort = $STR_EPOCH_SKINS_WORKER_DESC;
 	sex = "male";
 	playerModel = "Worker3_DZ";	
 };
 class Skin_Worker4_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_WORKER3;
-	descriptionShort = $STR_EPOCH_SKINS_WORKER3;
+	descriptionShort = $STR_EPOCH_SKINS_WORKER_DESC;
 	sex = "male";
 	playerModel = "Worker4_DZ";	
 };
@@ -615,31 +615,31 @@ class Skin_FR_Sapper_DZ: SkinBase {
 	playerModel = "FR_Sapper_DZ";	
 };
 //Namalsk Skins
-class Skin_CamoWinter_DZ: SkinBase {
+class Skin_CamoWinter1_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_CAMOWINTER;
 	descriptionShort = $STR_DZE_EQUIP_CAMOWINTER_DESC;
 	sex = "male";
-	playerModel = "CamoWinter_DZ";	
+	playerModel = "CamoWinter1_DZ";	
 };
-class Skin_CamoWinterW_DZ: SkinBase {
+class Skin_CamoWinter2_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_CAMOWINTERW;
 	descriptionShort = $STR_DZE_EQUIP_CAMOWINTER_DESC;
 	sex = "male";
-	playerModel = "CamoWinterW_DZ";	
+	playerModel = "CamoWinter2_DZ";	
 };
-class Skin_Sniper1W_DZ: SkinBase {
+class Skin_SniperWinter_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_SNIPER1W;
-	descriptionShort = $STR_EPOCH_SKINS_SNIPER1W;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
 	sex = "male";
-	playerModel = "Sniper1W_DZ";	
+	playerModel = "SniperWinter_DZ";	
 };
 class Skin_Nac_Soldier_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_NACSOLDIER;
-	descriptionShort = $STR_EPOCH_SKINS_NACSOLDIER;
+	descriptionShort = $STR_DZE_EQUIP_NACSOLDIER_DESC;
 	sex = "male";
 	playerModel = "Nac_Soldier_DZ";	
 };
@@ -1181,7 +1181,7 @@ class Skin_CZ_Soldier_Spec_Demo_Dst_ACR_DZ : SkinBase {
 class Skin_CZ_Soldier_Sniper_ACR_DZ : SkinBase {
 	scope = 2;
 	displayName = $STR_DZE_EQUIP_ACR_GHILLIE_NAME;
-	descriptionShort = $STR_DZE_EQUIP_ACR_GHILLIE_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE;
 	sex = "male";
 	playerModel = "CZ_Soldier_Sniper_ACR_DZ";	
 };
@@ -1436,4 +1436,391 @@ class Skin_BusinessMan_DZ : SkinBase {
 	descriptionShort = $STR_DZE_SKIN_BUSINESSMAN_NAME;
 	sex = "male";
 	playerModel = "BusinessMan_DZ";	
+};
+// Female ghillies
+class Skin_SniperW_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_GHILLIE;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "SniperW_DZ";	
+};
+class Skin_Sniper1W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_EQUIP_NAME_GHILLIE;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "Sniper1W_DZ";	
+};
+class Skin_SniperBanditW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_BANDITSNIPER;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "SniperBanditW_DZ";	
+};
+class Skin_CZ_Soldier_Sniper_EP1W_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_DESERTGHILLIE;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "CZ_Soldier_Sniper_EP1W_DZ";	
+};
+class Skin_SniperWinterW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_SNIPER1W;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "SniperWinterW_DZ";	
+};
+class Skin_TK_Soldier_Sniper_EP1W_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_DESERTSNIPER;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "TK_Soldier_Sniper_EP1W_DZ";	
+};
+class Skin_CZ_Soldier_Sniper_ACRW_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_ACR_GHILLIE_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "CZ_Soldier_Sniper_ACRW_DZ";	
+};
+class Skin_GhillieFull_Desert01W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Desert01W_DZ";	
+};
+class Skin_GhillieFull_Desert02W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Desert02W_DZ";	
+};
+class Skin_GhillieFull_Desert03W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Desert03W_DZ";	
+};
+class Skin_GhillieFull_Desert04W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Desert04W_DZ";	
+};
+class Skin_GhillieFull_Desert05W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Desert05W_DZ";	
+};
+class Skin_GhillieFull_Desert06W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_6_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Desert06W_DZ";	
+};
+class Skin_GhillieFull_Desert07W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_7_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Desert07W_DZ";	
+};
+class Skin_GhillieFull_Desert08W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_DES_8_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Desert08W_DZ";	
+};
+class Skin_GhillieFull_Snow01W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Snow01W_DZ";	
+};
+class Skin_GhillieFull_Snow02W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Snow02W_DZ";	
+};
+class Skin_GhillieFull_Snow03W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Snow03W_DZ";	
+};
+class Skin_GhillieFull_Snow04W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Snow04W_DZ";	
+};
+class Skin_GhillieFull_Snow05W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Snow05W_DZ";	
+};
+class Skin_GhillieFull_Urban01W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_URB_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Urban01W_DZ";	
+};
+class Skin_GhillieFull_Wood01W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_1_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood01W_DZ";	
+};
+class Skin_GhillieFull_Wood02W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_2_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood02W_DZ";	
+};
+class Skin_GhillieFull_Wood03W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_3_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood03W_DZ";	
+};
+class Skin_GhillieFull_Wood04W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_4_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood04W_DZ";	
+};
+class Skin_GhillieFull_Wood05W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_5_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood05W_DZ";	
+};
+class Skin_GhillieFull_Wood06W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_6_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood06W_DZ";	
+};
+class Skin_GhillieFull_Wood07W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_7_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood07W_DZ";	
+};
+class Skin_GhillieFull_Wood08W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_8_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood08W_DZ";	
+};
+class Skin_GhillieFull_Wood09W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_9_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood09W_DZ";	
+};
+class Skin_GhillieFull_Wood10W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_10_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood10W_DZ";	
+};
+class Skin_GhillieFull_Wood11W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_11_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood11W_DZ";	
+};
+class Skin_GhillieFull_Wood12W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_12_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood12W_DZ";	
+};
+class Skin_GhillieFull_Wood13W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_13_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood13W_DZ";	
+};
+class Skin_GhillieFull_Wood14W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_14_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood14W_DZ";	
+};
+class Skin_GhillieFull_Wood15W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_15_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood15W_DZ";	
+};
+class Skin_GhillieFull_Wood16W_DZ : SkinBase	{
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_GHILLIE_WDL_16_NAME;
+	descriptionShort = $STR_EQUIP_DESC_GHILLIE_FEMALE;
+	sex = "female";
+	playerModel = "GhillieFull_Wood16W_DZ";	
+};
+// Female stalker skins
+class Skin_gsc_military_helmet_wdlW_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "gsc_military_helmet_wdlW_DZ";	
+};
+class Skin_gsc_military_helmet_greyW_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "gsc_military_helmet_greyW_DZ";	
+};
+class Skin_gsc_scientist1W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_FEMALE_DESC;
+	sex = "female";
+	playerModel = "gsc_scientist1W_DZ";	
+};
+class Skin_gsc_scientist2W_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_FEMALE_DESC;
+	sex = "female";
+	playerModel = "gsc_scientist2W_DZ";	
+};
+class Skin_gsc_eco_stalker_mask_neutralW_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_STALKER_LONER_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "gsc_eco_stalker_mask_neutralW_DZ";	
+};
+class Skin_gsc_eco_stalker_mask_fredW_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "gsc_eco_stalker_mask_fredW_DZ";	
+};
+class Skin_gsc_eco_stalker_mask_dutyW_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "gsc_eco_stalker_mask_dutyW_DZ";	
+};
+class Skin_gsc_eco_stalker_mask_camoW_DZ : SkinBase {
+	scope = 2;
+	displayName = $STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "gsc_eco_stalker_mask_camoW_DZ";	
+};
+class Skin_Nac_SoldierW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_NACSOLDIER;
+	descriptionShort = $STR_DZE_EQUIP_NACSOLDIER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "Nac_SoldierW_DZ";	
+};
+class Skin_CamoWinter1W_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_CAMOWINTER;
+	descriptionShort = $STR_DZE_EQUIP_CAMOWINTER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "CamoWinter1W_DZ";	
+};
+class Skin_CamoWinter2W_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_CAMOWINTERW;
+	descriptionShort = $STR_DZE_EQUIP_CAMOWINTER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "CamoWinter2W_DZ";	
+};
+class Skin_DoctorW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_DOCTOR;
+	descriptionShort = $STR_EPOCH_SKINS_DOCTOR_FEMALE_DESC;
+	sex = "female";
+	playerModel = "DoctorW_DZ";	
+};
+class Skin_WorkerW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_WORKER;
+	descriptionShort = $STR_EPOCH_SKINS_WORKER_FEMALE_DESC;
+	sex = "female";
+	playerModel = "WorkerW_DZ";	
+};
+class Skin_PolicemanW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_POLICE_OFFICER;
+	descriptionShort = $STR_EPOCH_SKINS_POLICE_FEMALE_DESC;
+	sex = "female";
+	playerModel = "PolicemanW_DZ";	
+};
+class Skin_PriestW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_JULIA;
+	descriptionShort = $STR_EPOCH_SKINS_JAMES_DESC;
+	sex = "female";
+	playerModel = "PriestW_DZ";	
+};
+class Skin_HookerW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_CHANTAL;
+	descriptionShort = $STR_EPOCH_SKINS_CHANTAL_DESC;
+	sex = "female";
+	playerModel = "HookerW_DZ";	
+};
+class Skin_OperatorW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_URSULA;
+	descriptionShort = $STR_EPOCH_SKINS_URSULA;
+	sex = "female";
+	playerModel = "OperatorW_DZ";	
+};
+class Skin_GunnerW_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_ANN;
+	descriptionShort = $STR_EPOCH_SKINS_ANN;
+	sex = "female";
+	playerModel = "GunnerW_DZ";	
 };

@@ -342,9 +342,9 @@ class CfgVehicles
 	#include "Zeds\WildZeds.hpp" //Wild type zeds
 	#include "Zeds\SwarmZeds.hpp" //Swarm type zeds
 	#include "Zeds\PlayerZeds.hpp" //Player type zeds
-	//Skins
-	#include "Skins\Female.hpp"
+	//Skins	
 	#include "Skins\Male.hpp"
+	#include "Skins\Female.hpp"
 	//Bags
 	#include "Bags.hpp"	// Backpacks
 	//DZAnimal and DZ_Fin

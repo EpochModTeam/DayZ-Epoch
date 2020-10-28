@@ -4861,13 +4861,21 @@
 			<French>Tenue Ghillie</French>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE">
-			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
-			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
-			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
-			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
-			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
-			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
+			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.&lt;br/&gt;Sex: Male</English>
+			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.&lt;br/&gt;Пол: мужской</Russian>
+			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.&lt;br/&gt;Género: Masculino</Spanish>
+			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.&lt;br/&gt;Pohlaví: Mužský</Czech>
+			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.&lt;br/&gt;Sexe: Masculin</French>
+			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.&lt;br/&gt;Geschlecht: Männlich</German>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_GHILLIE_FEMALE">
+			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.&lt;br/&gt;Sex: Female</English>
+			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.&lt;br/&gt;Пол: женский</Russian>
+			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.&lt;br/&gt;Género: Femenino</Spanish>
+			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.&lt;br/&gt;Pohlaví: Žena</Czech>
+			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.&lt;br/&gt;Sexe: Féminin</French>
+			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.&lt;br/&gt;Geschlecht: Weiblich</German>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_CAMO">
 			<English>Camo Clothing</English>
 			<Russian>Камуфляж</Russian>
@@ -26864,16 +26872,26 @@
 			<German>Offiziers Anzug</German>
 			<Russian>Униформа офицера</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER">
+			<English>Police Officer</English>
+			<German>Polizistin</German>
+			<Russian>сотрудника полиции</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER1">
 			<English>Police Officer 1</English>
 			<German>Polizist 1</German>
 			<Russian>сотрудника полиции 1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_DESC">
-			<English>Police Officer Uniform</English>
-			<German>Polizeiuniform</German>
-			<Russian>Униформа сотрудника полиции</Russian>
+			<English>Police Officer Uniform&lt;br/&gt;Sex: Male</English>
+			<German>Polizeiuniform&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Униформа сотрудника полиции&lt;br/&gt;Пол: мужской</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_POLICE_FEMALE_DESC">
+			<English>Police Officer Uniform&lt;br/&gt;Sex: Female</English>
+			<German>Polizeiuniform&lt;br/&gt;Geschlecht: Weiblich</German>
+			<Russian>Униформа сотрудника полиции&lt;br/&gt;Пол: женский</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER2">
 			<English>Police Officer 2</English>
 			<German>Polizist 2</German>
@@ -26941,6 +26959,9 @@
 		<Key ID="STR_EPOCH_SKINS_JAMES">
 			<English>James</English>
 			<Russian>Джеймс</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_JULIA">
+			<English>Julia</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JAMES_DESC">
 			<English>Priest Outfit</English>
@@ -27022,11 +27043,6 @@
 			<English>Bandit Sniper</English>
 			<Russian>Одежда бандитского снайпера</Russian>
 			<German>Banditen Scharfschütze</German>
-		</Key>
-		<Key ID="STR_EPOCH_SKINS_BANDITSNIPER_DESC">
-			<English>Bandit Sniper Outfit</English>
-			<Russian>Бандитская снайперская одежда</Russian>
-			<German>Banditen Scharfschützen Kleidung</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITBAKLAVA">
 			<English>Bandit Baklava</English>
@@ -27131,6 +27147,22 @@
 			<English>Maroon top with grey pants.</English>
 			<German>Kastanienbraunes Top mit grauer Hose.</German>
 			<Russian>Одежда с темно-бордовым верхом и серыми брюками.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CHANTAL">
+			<English>Chantal</English>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_CHANTAL_DESC">
+			<English>Chantal the woman for the fast trip.</English>
+			<German>Chantal, die Frau für die schnelle Sache.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SKINS_URSULA">
+			<English>Operator Ursula</English>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_URSULA">
+			<English>Operator Ursula</English>
+		</Key>	
+		<Key ID="STR_EPOCH_SKINS_ANN">
+			<English>Gunner Ann</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TAKISTANIWARLORD">
 			<English>Takistani Warlord</English>
@@ -27345,12 +27377,28 @@
 		<Key ID="STR_EPOCH_SKINS_DOCTOR">
 			<English>Doctor</English>
 			<Russian>Доктор</Russian>
-			<German>Doktor</German>
+			<German>Arzt</German>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_DOCTOR_DESC">
+			<English>Clothing of a doctor.&lt;br/&gt;Sex: Male</English>
+			<German>Kleidung eines Arztes.&lt;br/&gt;Geschlecht: Männlich</German>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_DOCTOR_FEMALE_DESC">
+			<English>Clothing of a doctor.&lt;br/&gt;Sex: Female</English>
+			<German>Kleidung einer Ärztin.&lt;br/&gt;Geschlecht: Weiblich</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_WORKER">
 			<English>Worker</English>
 			<German>Arbeiter</German>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_WORKER_DESC">
+			<English>Clothing of a worker.&lt;br/&gt;Sex: Male</English>
+			<German>Kleidung eines Arbeiters.&lt;br/&gt;Geschlecht: Männlich</German>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_WORKER_FEMALE_DESC">
+			<English>Clothing of a worker.&lt;br/&gt;Sex: Female</English>
+			<German>Kleidung einer Arbeiterin.&lt;br/&gt;Geschlecht: Weiblich</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_WORKER1">
 			<English>Worker 1</English>
 			<German>Arbeiter 1</German>
@@ -27427,6 +27475,10 @@
 			<English>Man in Thermo Suit</English>
 			<German>Mann in Thermoanzug</German>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_THERMOSUITFEMALE">
+			<English>Woman in Thermo Suit</English>
+			<German>Frau in Thermoanzug</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTER">
 			<English>Thermo Suit (tan)</English>
 			<German>Thermoanzug (braun)</German>
@@ -27436,8 +27488,12 @@
 			<German>Thermoanzug (weiß)</German>
 		</Key>
 	    <Key ID="STR_DZE_EQUIP_CAMOWINTER_DESC">
-			<English>Thermo Suit, which can protect you from a cold and rainy weather.</English>
-			<German>Thermoanzug, der vor kalten und nassen Wetterbedingungen schützen kann.</German>
+			<English>Thermo Suit, which can protect you from a cold and rainy weather.&lt;br/&gt;Sex: Male</English>
+			<German>Thermoanzug, der vor kalten und nassen Wetterbedingungen schützen kann.&lt;br/&gt;Geschlecht: Männlich</German>
+		</Key>
+	    <Key ID="STR_DZE_EQUIP_CAMOWINTER_FEMALE_DESC">
+			<English>Thermo Suit, which can protect you from a cold and rainy weather.&lt;br/&gt;Sex: Female</English>
+			<German>Thermoanzug, der vor kalten und nassen Wetterbedingungen schützen kann.&lt;br/&gt;Geschlecht: Weiblich</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SNIPER1W">
 			<English>Winter Ghillie Suit</English>
@@ -27447,6 +27503,14 @@
 			<English>NAC Soldier</English>
 			<German>NAC-Soldat</German>
 		</Key>
+	    <Key ID="STR_DZE_EQUIP_NACSOLDIER_DESC">
+			<English>NAC Soldier suit&lt;br/&gt;Sex: Male</English>
+			<German>NAC-Soldatenanzug&lt;br/&gt;Geschlecht: Männlich</German>
+		</Key>
+	    <Key ID="STR_DZE_EQUIP_NACSOLDIER_FEMALE_DESC">
+			<English>NAC Soldier suit&lt;br/&gt;Sex: Female</English>
+			<German>NAC-Soldatenanzug&lt;br/&gt;Geschlecht: Weiblich</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_TAMIKA">
 			<English>Tamika</English>
 		</Key>
@@ -27515,9 +27579,13 @@
 			<German>Stalker Mil. (Wald)</German>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
-		 	<English>A pack of special armour that fits an apocalyptic environment.</English>
-		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.</German>
+		 	<English>A pack of special armour that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
+		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
 		 </Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_FEMALE_DESC">
+		 	<English>A pack of special armour that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
+		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
+		 </Key>		 
 		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
@@ -27535,9 +27603,13 @@
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_DESC">
-		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.</English>
-		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.</German>
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
 		 </Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_FEMALE_DESC">
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
+		 </Key>		 
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
 			<English>Scientist (Red rad-suit)</English>
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>
@@ -28131,6 +28203,10 @@
 			<English>Business Man</English>
 			<German>Geschäftsmann</German>
 		</Key>
+		<Key ID="STR_DZE_SKIN_HOOKER_NAME">
+			<English>Hooker</English>
+			<German>Nutte</German>
+		</Key>		
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>

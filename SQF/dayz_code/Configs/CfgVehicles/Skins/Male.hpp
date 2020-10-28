@@ -141,8 +141,6 @@ class Survivor3_DZ : Survivor2_DZ {
 	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa", "ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa", "ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
 };
 
-//Bandit1_DZ moved to DZE section below
-
 class Rocket_DZ: SoldierLight_Base_DZ { //BAF_Soldier_Officer_W
 	scope = 2;
 	displayName = "Rocket";
@@ -991,7 +989,7 @@ class FR_Sapper_DZ: FR_TL_DZ {
 	};	
 };
 
-class CamoWinter_DZ: Survivor_DZ {
+class CamoWinter1_DZ: Survivor_DZ {
     scope = 2;
     displayName = $STR_EPOCH_SKINS_THERMOSUITMAN;
     model = "\nst\ns_dayz\characters\cw\camowinter_dzn.p3d";
@@ -1004,11 +1002,11 @@ class CamoWinter_DZ: Survivor_DZ {
 	};	
 };
 
-class CamoWinterW_DZ: CamoWinter_DZ {
+class CamoWinter2_DZ: CamoWinter1_DZ {
 	model = "\nst\ns_dayz\characters\cw\camowinterw_dzn.p3d";
 };
 
-class Sniper1W_DZ: Sniper1_DZ {
+class SniperWinter_DZ: Sniper1_DZ {
 	displayName = $STR_DZE_SKIN_GHILLIE_SNOW_NAME;
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\nst\ns_dayz\characters\gw\data\ghillie_overall1w_co.paa"};
