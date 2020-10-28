@@ -15,6 +15,8 @@ class CivilianW: CAManBase
 	weaponSlots = "1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072";
 	canHideBodies = false; //fn_selfaction handles hide bodies
 	identityTypes[] = {"Language_W_EN_EP1","Woman"};	
+	backpack = "";
+	canCarryBackPack = 1;	
 	attendant = 0;
 	engineer = 0;
 	canDeactivateMines = 0;	
