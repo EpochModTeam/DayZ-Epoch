@@ -148,7 +148,7 @@ if (!isDedicated) then {
 	// ZSC
 	Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
 	Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
-	ZSC_bankTraders = ["Functionary1_EP1"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1_DZ)
+	ZSC_bankTraders = ["Functionary1_EP1"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1), do not use _DZ classes - they are used as player skins
 	ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
 	ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
 	ZSC_maxBankMoney = 500000; // Default limit for bank objects.
