@@ -9,7 +9,6 @@ class BeltBuckle_DZE : Helper_Base_EP1 {
 	hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(1,0.5,0.5,0.5,ca)"};
 };
 
-// WorkBench_DZ
 class WorkBench_DZ: BuiltItems
 {
 	scope = 2;
@@ -121,6 +120,17 @@ class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"desert_net_kit",1}};
 };
+class WinterCamoNet_DZ: Land_CamoNet_EAST_EP1
+{
+	armor = 300;
+	destrType = "DestructNo";
+	scope = 2;
+	offset[] = {0,9,0};	
+	model = "\z\addons\dayz_epoch_v\props\nets\CamoNet_EAST.p3d";
+	displayName = $STR_EPOCH_WINTERCAMONET;
+	vehicleClass = "DayZ Epoch Buildables";
+	removeoutput[] = {{"winter_net_kit",1}};
+};
 class Land_CamoNet_EAST;
 class ForestCamoNet_DZ: Land_CamoNet_EAST
 {
@@ -131,6 +141,17 @@ class ForestCamoNet_DZ: Land_CamoNet_EAST
 	displayName = $STR_EPOCH_FORESTCAMONET;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"forest_net_kit",1}};
+};
+class WinterLargeCamoNet_DZ: Land_CamoNet_EAST
+{
+	armor = 300;
+	destrType = "DestructNo";
+	scope = 2;
+	offset[] = {0,9,0};
+	model = "\z\addons\dayz_epoch_v\props\nets\CamoNetB_EAST.p3d";
+	displayName = $STR_EPOCH_LARGEWINTERCAMONET;
+	vehicleClass = "Fortifications";
+	removeoutput[] = {{"winter_large_net_kit",1}};
 };
 class Land_CamoNetB_EAST_EP1;
 class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
@@ -143,17 +164,6 @@ class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"desert_large_net_kit",1}};
 };
-class Land_Misc_deerstand;
-class DeerStand_DZ: Land_Misc_deerstand
-{
-	armor = 300;
-	// destrType = "DestructNo";
-	scope = 2;
-	offset[] = {0,5,0};
-	displayName = $STR_EPOCH_DEERSTAND;
-	vehicleClass = "DayZ Epoch Buildables";
-	removeoutput[] = {{"deer_stand_kit",1}};
-};
 class Land_CamoNetB_EAST;
 class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
 {
@@ -165,7 +175,17 @@ class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"forest_large_net_kit",1}};
 };
-
+class Land_Misc_deerstand;
+class DeerStand_DZ: Land_Misc_deerstand
+{
+	armor = 300;
+	// destrType = "DestructNo";
+	scope = 2;
+	offset[] = {0,5,0};
+	displayName = $STR_EPOCH_DEERSTAND;
+	vehicleClass = "DayZ Epoch Buildables";
+	removeoutput[] = {{"deer_stand_kit",1}};
+};
 class Land_Wall_Gate_Ind1_L;
 class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 {
@@ -267,19 +287,19 @@ class MetalPanel_DZ: BuiltItems
 };
 
 class Fort_RazorWire : BuiltItems {
-  scope = 2;
-  animated = 0;
-  vehicleClass = "DayZ Epoch Buildables";
-  model = "\ca\misc\Fort_Razorwire";
-  icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
-  offset[] = {0,1.5,0.5};
-  accuracy = 0.3;
-  mapSize = 5.5;
-  displayName = $STR_EPOCH_WIRE;
-  destrType = "DestructTent";
-  armor = 100;
-  GhostPreview = "Fort_RazorWirePreview";
-  nounderground = 0;
+	scope = 2;
+	animated = 0;
+	vehicleClass = "DayZ Epoch Buildables";
+	model = "\ca\misc\Fort_Razorwire";
+	icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
+	offset[] = {0,1.5,0.5};
+	accuracy = 0.3;
+	mapSize = 5.5;
+	displayName = $STR_EPOCH_WIRE;
+	destrType = "DestructTent";
+	armor = 100;
+	GhostPreview = "Fort_RazorWirePreview";
+	nounderground = 0;
 };
 
 class Sandbag1_DZ: BuiltItems

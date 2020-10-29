@@ -16,8 +16,6 @@ class ItemTent : CA_Magazine
 			script = "spawn player_build;";
 			require[] = {};
 			create = "TentStorage";
-			//Bypass collision test
-			bypassCollision = "true";
 		};
 		class Crafting
 		{
@@ -58,8 +56,6 @@ class ItemDomeTent : CA_Magazine
 			script = "spawn player_build;";
 			require[] = {};
 			create = "DomeTentStorage";
-			//Bypass collision test
-			bypassCollision = "true";
 		};
 		class Crafting1
 		{

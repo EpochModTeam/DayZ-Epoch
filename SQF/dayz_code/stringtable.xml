@@ -25431,6 +25431,14 @@
 			<German>Waldtarnnetz</German>
 			<Russian>Лесная камуфляжная сеть</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WINTERCAMONET">
+			<English>Winter Camo Net</English>
+			<German>Wintertarnnetz</German>
+		</Key>
+		<Key ID="STR_EPOCH_LARGEWINTERCAMONET">
+			<English>Large Winter Camo Net</English>
+			<German>Wintertarnnetz (groß)</German>
+		</Key>		
 		<Key ID="STR_EPOCH_CAMONET_DESC">
 			<English>Camo Netting: A buildable object that can be used to cover objects.</English>
 			<German>Tarnnetz: Ein aufbaubares Objekt, um andere Objekte drunter zu verstecken.</German>
@@ -25536,9 +25544,9 @@
 			<Russian>Лабаз +</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGESHED_DESC">
-			<English>Storage Shed: A large buildable object that is non enterable and holds a lot of items/weapons/backpacks.</English>
-			<German>Lagerschuppen: Ein großes Objekt mit viel Platz für Material, Waffen und Rucksäcke. Nicht begehbar.</German>
-			<Russian>Лабаз: Большая постройка, в которую нельзя войти, но в ней можно хранить много предметов/оружия/рюкзаков.</Russian>
+			<English>Storage Shed: A large buildable object that is enterable and holds a lot of items/weapons/backpacks.</English>
+			<German>Lagerschuppen: Ein großes Objekt mit viel Platz für Material, Waffen und Rucksäcke, begehbar.</German>
+			<Russian>Лабаз: Большая постройка, в который можно ввести, но в ней можно хранить много предметов/оружия/рюкзаков.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SCAFFOLDING">
 			<English>Scaffolding</English>
