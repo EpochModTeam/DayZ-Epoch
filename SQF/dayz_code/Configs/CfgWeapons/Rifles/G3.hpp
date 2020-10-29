@@ -13,7 +13,7 @@ class G3_DZ: FNFAL_DZ
 	reloadMagazineSound[] = {"ca\sounds\weapons\rifles\reload-m16-3",db-25,1,25};
 	distanceZoomMin	= 50;
 	distanceZoomMax	= 50;
-	//handAnim[]={"OFP2_ManSkeleton","\Ca\weapons\data\Anim\HKMP5.rtm"};
+	handAnim[] = {"OFP2_ManSkeleton"};
 	modes[] = {Single, FullAuto};
 	class Single : Mode_SemiAuto
 	{
