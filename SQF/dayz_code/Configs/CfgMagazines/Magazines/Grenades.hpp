@@ -5,7 +5,7 @@ class 1Rnd_HE_M203: CA_Magazine
 	type = 16;
 	displayName = "$STR_DN_HE_M203";
     model = "\z\addons\dayz_epoch_w\magazine\dze_m203_he.p3d";
-	picture = "\z\addons\dayz_epoch_w\magazine\ui\m_m203he_ca.paa";
+	picture = "\Ca\weapons\Data\Equip\m_40mmHP_CA.paa";
 	ammo = "G_40mm_HE";
 	initSpeed = 80;
 	count = 1;
