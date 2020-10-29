@@ -7,7 +7,7 @@ class Barrett_MRAD_Iron_DZ: m107
 	displayname = $STR_DZ_WPN_BARETT_MRAD_IRON_NAME;
 	descriptionShort = $STR_DZ_WPN_BARETT_MRAD_DESC;
 	model = "\z\addons\dayz_epoch_w\mrad\h4_mrad.p3d";
-	picture = "\z\addons\dayz_epoch_w\mrad\data\W_mrad_CA.paa";
+	picture = "\dayz_epoch_c\icons\weapons\W_mrad_CA.paa";
 	handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons_E\Data\Anim\M107b.rtm"};
 	begin1[] = {"\dayz_epoch_c\sounds\weapons\mrad_shot",2.5118864,1,1200};
 	magazines[] = {10Rnd_86x70_MRAD};
@@ -42,6 +42,7 @@ class Barrett_MRAD_CCO_DZ: Barrett_MRAD_Iron_DZ
 {
 	displayname = $STR_DZ_WPN_BARETT_MRAD_CCO_NAME;
 	model = "\z\addons\dayz_epoch_w\mrad\h4_mrad_aim.p3d";
+	picture = "\dayz_epoch_c\icons\weapons\W_mradaim_CA.paa";
 	class Attachments {};
 	
 	class ItemActions
@@ -63,7 +64,7 @@ class Barrett_MRAD_Sniper_DZ: m107
 	magazines[] = {10Rnd_86x70_MRAD};
 	displayname = $STR_DZ_WPN_BARETT_MRAD_SNIPER_NAME;
 	descriptionShort = $STR_DZ_WPN_BARETT_MRAD_DESC;
-	model = "\z\addons\dayz_epoch_w\mrad\h4_mrad.p3d";
-	picture = "\z\addons\dayz_epoch_w\mrad\data\W_mrad_CA.paa";
+	model = "\z\addons\dayz_epoch_w\mrad\h4_mrad_scope.p3d";
+	picture = "\dayz_epoch_c\icons\weapons\W_mradscope_CA.paa";
 	begin1[] = {"\dayz_epoch_c\sounds\weapons\mrad_shot",2.5118864,1,1200};
 };
