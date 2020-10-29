@@ -447,6 +447,7 @@ class CfgVehicles
 	#include "Buildings\Land_Ind_Oil_Pump_EP1_DZE.hpp"	//Oil Pump without sound
 	#include "Buildings\Fuelstations.hpp"
 	#include "Buildings\land_ibr_hangar.hpp" //Works only if Lingor is loaded
+	#include "Buildings\Land_Shed_M01.hpp" // Animated door and interior, made by Helion4
 	
 	#include "Land_Fire.hpp"	
 	#include "WaterSources.hpp"	
