@@ -67,8 +67,12 @@ class Category_35 {
 	class ItemCorrugated {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class plot_pole_kit {type = "trade_items";buy[] = {6,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar10oz"};};
 	class ItemComboLock {type = "trade_items";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
-	class ItemLockbox {type = "trade_items";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};	
+	class ItemLockbox {type = "trade_items";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
+	class ItemLockbox2 {type = "trade_items";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar10oz"};};		
+	class ItemLockboxWinter {type = "trade_items";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
+	class ItemLockboxWinter2 {type = "trade_items";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar10oz"};};
 	class ItemVault {type = "trade_items";buy[] = {1,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};
+	class ItemVault2 {type = "trade_items";buy[] = {-1,"ItemBriefcase100oz"};sell[] = {15,"ItemGoldBar10oz"};};
 	class ItemMixOil {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};
 };
 

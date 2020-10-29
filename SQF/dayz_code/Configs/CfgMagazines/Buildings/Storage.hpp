@@ -292,7 +292,7 @@ class ItemLockbox: CA_Magazine
 	type = 256;
 	displayName = $STR_EPOCH_LOCKBOX;
 	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
+	picture = "\dayz_epoch_c\icons\equipment\equip_lockbox_CA.paa";
 	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
 	
 	class ItemActions
@@ -314,7 +314,7 @@ class ItemLockbox2: CA_Magazine
 	type = 256;
 	displayName = "$STR_EPOCH_LOCKBOX+";
 	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
+	picture = "\dayz_epoch_c\icons\equipment\equip_lockbox_CA.paa";
 	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
 	
 	class ItemActions
@@ -335,8 +335,8 @@ class ItemLockboxWinter: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_LOCKBOX;
-	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
+	model = "\z\addons\dayz_epoch\models\lockbox_w_mag.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\equip_lockbox_w_CA.paa";
 	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
 	
 	class ItemActions
@@ -357,8 +357,8 @@ class ItemLockboxWinter2: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = "$STR_EPOCH_LOCKBOX+";
-	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_lockbox_CA.paa";
+	model = "\z\addons\dayz_epoch\models\lockbox_w_mag.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\equip_lockbox_w_CA.paa";
 	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
 	
 	class ItemActions

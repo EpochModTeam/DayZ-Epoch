@@ -119,7 +119,7 @@ class LockboxStorage2Locked: Land_A_tent {
 class LockboxStorageWinter: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = $STR_EPOCH_LOCKBOX;
-	model = "\z\addons\dayz_epoch\models\lockbox.p3d";
+	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	destrType = "DestructNo";
 	armor = 800;
 	transportMaxMagazines = 50;
@@ -131,7 +131,7 @@ class LockboxStorageWinter: Land_A_tent {
 class LockboxStorageWinterLocked: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = $STR_EPOCH_LOCKBOX_LOCKED;
-	model = "\z\addons\dayz_epoch\models\lockbox.p3d";
+	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	destrType = "DestructNo";
 	armor = 800;
 	transportMaxMagazines = 0;
@@ -148,7 +148,7 @@ class LockboxStorageWinterLocked: Land_A_tent {
 class LockboxStorageWinter2: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = "$STR_EPOCH_LOCKBOX+";
-	model = "\z\addons\dayz_epoch\models\lockbox.p3d";
+	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	destrType = "DestructNo";
 	armor = 1600;
 	transportMaxMagazines = 100;
@@ -160,7 +160,7 @@ class LockboxStorageWinter2: Land_A_tent {
 class LockboxStorageWinter2Locked: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = "$STR_EPOCH_LOCKBOX_LOCKED+";
-	model = "\z\addons\dayz_epoch\models\lockbox.p3d";
+	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	destrType = "DestructNo";
 	armor = 1600;
 	transportMaxMagazines = 0;

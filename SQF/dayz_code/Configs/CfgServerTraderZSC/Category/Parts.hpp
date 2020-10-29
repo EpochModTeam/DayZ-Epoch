@@ -67,8 +67,12 @@ class Category_35 {
 	class ItemCorrugated {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class plot_pole_kit {type = "trade_items";buy[] = {6000,"worth"};sell[] = {6000,"worth"};};
 	class ItemComboLock {type = "trade_items";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
-	class ItemLockbox {type = "trade_items";buy[] = {-100,"worth"};sell[] = {4000,"worth"};};	
+	class ItemLockbox {type = "trade_items";buy[] = {-100,"worth"};sell[] = {4000,"worth"};};
+	class ItemLockbox2 {type = "trade_items";buy[] = {-100,"worth"};sell[] = {6000,"worth"};};
+	class ItemLockboxWinter {type = "trade_items";buy[] = {-100,"worth"};sell[] = {4000,"worth"};};
+	class ItemLockboxWinter2 {type = "trade_items";buy[] = {-100,"worth"};sell[] = {6000,"worth"};};
 	class ItemVault {type = "trade_items";buy[] = {10000,"worth"};sell[] = {10000,"worth"};};
+	class ItemVault2 {type = "trade_items";buy[] = {-10000,"worth"};sell[] = {15000,"worth"};};
 	class ItemMixOil {type = "trade_items";buy[] = {8,"worth"};sell[] = {4,"worth"};};
 };
 

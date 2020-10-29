@@ -368,7 +368,7 @@ class WeaponHolder_ItemLockbox2: WeaponHolder {
 	seedItem = "ItemLockbox2";
 };
 
-class WeaponHolder_ItemLockboWinter: WeaponHolder {
+class WeaponHolder_ItemLockboxWinter: WeaponHolder {
 	scope = 1;
 	displayName = $STR_EPOCH_LOCKBOX;
 	seedItem = "ItemLockboxWinter";
