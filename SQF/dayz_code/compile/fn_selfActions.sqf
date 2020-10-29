@@ -28,6 +28,7 @@ _canPickLight = false;
 _myCharID = player getVariable ["CharacterID","0"];
 _vehicleOwnerID = _vehicle getVariable ["CharacterID","0"];
 _hasHotwireKit = "ItemHotwireKit" in _magazinesPlayer;
+_isZombie = _cursorTarget isKindOf "zZombie_base";
 _isPZombie = player isKindOf "PZombie_VB";
 _isClose = (player distance _cursorTarget < 3);
 _dogHandle = player getVariable ["dogID",0];
@@ -186,10 +187,9 @@ if (_isPZombie) then {
 		s_player_pzombiesvision = player addAction [localize "STR_EPOCH_ACTIONS_NIGHTVIS", "\z\addons\dayz_code\actions\pzombie\pz_vision.sqf", [], 4, false, true, "nightVision", "_this == _target"];
 	};
 	if (!isNull _cursorTarget && _isClose) then {
-		_isZombie = _cursorTarget isKindOf "zZombie_base";
 		_isHarvested = _cursorTarget getVariable["meatHarvested",false];
 		_isMan = _cursorTarget isKindOf "Man"; //includes animals and zombies
-		if (!alive _cursorTarget && {_isMan} && {!_isZombie} && {!_isHarvested}) then {
+		if (!alive _cursorTarget && _isMan && !_isZombie && !_isHarvested) then {
 			if (s_player_pzombiesfeed < 0) then {
 				s_player_pzombiesfeed = player addAction [localize "STR_EPOCH_ACTIONS_FEED", "\z\addons\dayz_code\actions\pzombie\pz_feed.sqf",_cursorTarget, 3, true, false];
 			};
@@ -715,7 +715,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 		};
 		_upgrade = getArray (configFile >> "CfgVehicles" >> (typeOf _cursorTarget) >> "upgradeBuilding");
 		if ((s_player_upgrade_build < 0) && {(count _upgrade) > 0}) then {
-			_hasAccess = [player, _cursorTarget] call FNC_check_access;			
+			_hasAccess = [player, _cursorTarget] call FNC_check_access;
 			if ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3) || (_typeOfCursorTarget in DZE_UpgradableStorage) || (_typeOfCursorTarget isKindOf "DZ_storage_base")) then {
 				s_player_lastTarget set [0,_cursorTarget];
 				s_player_upgrade_build = player addAction [format[localize "STR_EPOCH_UPGRADE",_text], "\z\addons\dayz_code\actions\player_upgrade.sqf",_cursorTarget, -1, false, true];
@@ -814,7 +814,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 
 	// ZSC
 	if (Z_singleCurrency) then {
-		if (_isMan && !_isAlive && {!(_cursorTarget isKindOf "Animal")}) then {
+		if (_isMan && !_isAlive && {(!(_cursorTarget isKindOf "Animal") && !_isZombie) || (_isZombie && ZSC_ZombieCoins select 0)}) then {
 			if (s_player_checkWallet < 0) then {
 				s_player_checkWallet = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_CHECK_WALLET"],"\z\addons\dayz_code\actions\zsc\checkWallet.sqf",_cursorTarget,0,false,true];
 			};
@@ -822,7 +822,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 			player removeAction s_player_checkWallet;
 			s_player_checkWallet = -1;
 		};
-		
+
 		if (!_isLocked && {_typeOfCursorTarget in DZE_MoneyStorageClasses} && {!(_typeOfCursorTarget in DZE_LockedStorage)}) then {
 			if (s_bank_dialog < 0) then {
 				s_bank_dialog = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_ZSC_ACCESS_BANK"],"\z\addons\dayz_code\actions\zsc\bankDialog.sqf",_cursorTarget,1,true,true];
