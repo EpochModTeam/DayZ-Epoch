@@ -76,7 +76,7 @@ class OutHouse_DZ: Land_KBud
 	constructioncount = 2;
 	class transportmagazines {};
 };
-class Land_Shed_M01;
+
 class StorageShed_DZ: Land_Shed_M01
 {
 	armor = 1600;
@@ -87,7 +87,8 @@ class StorageShed_DZ: Land_Shed_M01
 	transportMaxMagazines = 400;
 	transportMaxWeapons = 40;
 	transportMaxBackpacks = 20;
-	constructioncount = 6;
+	constructioncount = 6;	
+	
 	upgradeBuilding[] = {"StorageShed2_DZ",{"ItemToolbox","ItemCrowbar","ItemSledge"},{{"equip_metal_sheet",4},{"ItemMetalSheet",2},{"ItemScrews",2}}};	
 };
 class StorageShed2_DZ: Land_Shed_M01
@@ -97,10 +98,10 @@ class StorageShed2_DZ: Land_Shed_M01
 	offset[] = {0,4,1};
 	displayName = $STR_EPOCH_STORAGESHED2;
 	vehicleClass = "DayZ Epoch Buildables";
-	transportMaxMagazines = 800;
-	transportMaxWeapons = 80;
-	transportMaxBackpacks = 40;
-	constructioncount = 12;
+	transportMaxMagazines = 600;
+	transportMaxWeapons = 60;
+	transportMaxBackpacks = 30;
+	constructioncount = 12;	
 };
 
 class Land_kulna;
@@ -127,7 +128,7 @@ class WoodShack2_DZ: Land_kulna
 	armor = 1600;
 	displayName = $STR_EPOCH_WOODSHACK2;
 	vehicleClass = "DayZ Epoch Buildables";
-	transportMaxMagazines = 200;
+	transportMaxMagazines = 175;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 10;
 	constructioncount = 8;
@@ -159,9 +160,9 @@ class Wooden_shed2_DZ: Land_Shed_wooden
 	armor = 2000;
 	displayName = $STR_EPOCH_NICEWOODSHED2;
 	vehicleClass = "DayZ Epoch Buildables";
-	transportMaxMagazines = 400;
-	transportMaxWeapons = 40;
-	transportMaxBackpacks = 20;
+	transportMaxMagazines = 300;
+	transportMaxWeapons = 30;
+	transportMaxBackpacks = 15;
 	nounderground = 0;
 	constructioncount = 10;
 };
