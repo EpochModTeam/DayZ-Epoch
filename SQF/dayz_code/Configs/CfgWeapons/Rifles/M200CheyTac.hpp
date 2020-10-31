@@ -5,7 +5,7 @@ class M200_CheyTac_DZ: m107
 	canlock	= 0;
 	displayname = $STR_DZ_WPN_M200_CHEYTAC_NAME;
 	descriptionShort = $STR_DZ_WPN_M200_CHEYTAC_DESC;
-	model = "z\addons\dayz_epoch_w\m200\h4_cheytac.p3d";
+	model = "\z\addons\dayz_epoch_w\m200\h4_cheytac.p3d";
 	picture = "\z\addons\dayz_epoch_w\m200\data\w_cheytac_Ca.paa";
 	UiPicture = "\CA\weapons\data\Ico\i_sniper_CA.paa";
 	magazines[] = {5Rnd_408_CheyTac};
@@ -20,9 +20,9 @@ class M200_CheyTac_DZ: m107
 	opticsZoomMax = 0.0553;
 	distanceZoomMax = 200;
 	autoFire = 0;
-	begin1[] = {"ca\sounds\weapons\rifles\m107",2.51189,1,1300};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\m200_shot",2.51189,1,1300};
 	soundBegin[] = {"begin1",1};
-	reloadMagazineSound[] = {"ca\sounds\weapons\rifles\reload-m16-2",0.0316228,1,20};
+	reloadMagazineSound[] = {"\ca\sounds\weapons\rifles\reload-m16-2",0.0316228,1,20};
 	reloadTime = 0.5;
 	dispersion = 0.0005;
 	minRange = 0;
