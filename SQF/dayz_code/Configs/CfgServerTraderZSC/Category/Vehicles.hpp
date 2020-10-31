@@ -127,6 +127,7 @@ class Category_43 {
 
 //Military Unarmed
 class Category_44 {
+	class Jeep_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class LandRover_CZ_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class LandRover_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class LandRover_ACR_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};

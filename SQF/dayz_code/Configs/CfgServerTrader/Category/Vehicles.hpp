@@ -127,6 +127,7 @@ class Category_43 {
 
 //Military Unarmed
 class Category_44 {
+	class Jeep_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class LandRover_CZ_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class LandRover_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class LandRover_ACR_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};

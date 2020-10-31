@@ -388,6 +388,7 @@ class CfgVehicles
 	#include "Car\Tatra_T810.hpp"
 	#include "Car\BMP2.hpp"
 	#include "Car\T72.hpp"
+	#include "Car\Jeep.hpp"
 	//Helicopters
 	#include "Helicopter\MI17.hpp"
 	#include "Helicopter\UH1H.hpp"

@@ -8713,6 +8713,26 @@
 			<Russian>Хамви Скорая (Пустынный)++++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_OLD_JEEP">
+			<English>Old Jeep</English>
+			<German>Alter Jeep</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_OLD_JEEP+">
+			<English>Old Jeep+</English>
+			<German>Alter Jeep+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_OLD_JEEP++">
+			<English>Old Jeep++</English>
+			<German>Alter Jeep++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_OLD_JEEP+++">
+			<English>Old Jeep+++</English>
+			<German>Alter Jeep+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_OLD_JEEP++++">
+			<English>Old Jeep++++</English>
+			<German>Alter Jeep++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_PICKUP_TAN">
 			<English>Pick-up (tan)</English>
 			<Russian>Пикап (оранжевый)</Russian>
