@@ -12225,6 +12225,18 @@
 			<Russian>AH6J «Литтл Бёрд»+++</Russian>
 			<German>AH6J "Little Bird"+++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_BIRD">
+			<English>MTVR Bird</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_BIRD+">
+			<English>MTVR Bird+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_BIRD++">
+			<English>MTVR Bird++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_BIRD+++">
+			<English>MTVR Bird+++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_MI17">
 			<English>Mi-17</English>
 			<Russian>Ми-17</Russian>

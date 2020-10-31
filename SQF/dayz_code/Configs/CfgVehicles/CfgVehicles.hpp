@@ -403,6 +403,7 @@ class CfgVehicles
 	#include "Helicopter\CSJ_GyroAC.hpp"
 	#include "Helicopter\KA60.hpp"
 	#include "Helicopter\AW159.hpp"
+	#include "Helicopter\MTVRBird.hpp"
 	#include "CrashSite.hpp"
 	//Planes
 	#include "Plane\AN2_DZ.hpp"

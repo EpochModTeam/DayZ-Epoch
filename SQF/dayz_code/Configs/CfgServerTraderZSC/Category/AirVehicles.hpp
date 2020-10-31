@@ -23,6 +23,7 @@ class Category_47 {
 	class CSJ_GyroP {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class AH6X_DZ {type = "trade_any_vehicle";buy[] = {6000,"worth"};sell[] = {3000,"worth"};};
 	class MH6J_DZ {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {4000,"worth"};};
+	class MTVR_Bird_DZE {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {4000,"worth"};};
 	class pook_H13_civ_DZE {type = "trade_any_vehicle";buy[] =  {10000,"worth"};sell[] = {6000,"worth"};};
 	class pook_H13_civ_white_DZE {type = "trade_any_vehicle";buy[] =  {10000,"worth"};sell[] = {6000,"worth"};};
 	class pook_H13_civ_slate_DZE {type = "trade_any_vehicle";buy[] =  {10000,"worth"};sell[] = {6000,"worth"};};
