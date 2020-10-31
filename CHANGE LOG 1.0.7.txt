@@ -49,7 +49,10 @@
 [NEW] Heroes and Bandits will drop a dog tag on death now which can be traded at the Hero or Bandit Trader for humanity. Thx for the idea @Tecumseh. (431cbc88, 272a7406, 4f106220) @AirwavesMan
 [NEW] Special handling for floating loot in buildings over water. Use fixWaterPos = 1; in the buildings class that has this problem. (89bca2c9) @AirwavesMan
 [NEW] With activated Weight System, traders show under the item information the weight to the given item. (e5af93b5) @AirwavesMan
-[NEW] Female players can wear all ghillie suits now. (758be289) @AirwavesMan @Helion4
+[NEW] Female players can wear all ghillie suits now. (758be289) @AirwavesMan, @Helion4
+[NEW] Add MTVR Bird helicopter. (8fa93188) @AirwavesMan @Helion4
+[NEW] Add a winter version of the following buildings: Lockbox, Camo Net. (215932d7, 420ad269) @AirwavesMan, @Helion4
+[NEW] Add a winter version of the following vehicles: BMP2, BRDM2, SUV, UAZ, Mi17, UH1H, T72, Ural, Kamaz, HMMWV. (34455948, cb1b34fc) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -96,6 +99,8 @@
 [FIXED] On spawn players looked always north after a reconnect to the server. (4aad93fe) @TH, @AirwavesMan
 [FIXED] Trees could knocked down on the first hit by a hatchet or chainsaw. (8dc6ef8d) @AirwavesMan
 [FIXED] Female players had not the correct armor and camouflage set. (758be289) @AirwavesMan
+[FIXED] Sometimes players got not properly ejected from an exploded Cessna wreck. (0b6df456) @AirwavesMan
+[FIXED] Players were not in combat after shooting from certain helicopters or planes. (e6680aaa) @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
