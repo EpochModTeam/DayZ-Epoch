@@ -20,12 +20,6 @@ class AH6J_EP1_DZ: AH6J_EP1
 	fuelCapacity = 242;
 	supplyRadius = 1.3;
 	radartype = 0;
-	class DefaultEventhandlers;
-	class EventHandlers: DefaultEventhandlers
-	{
-		killed = "_this call BIS_Effects_EH_Killed;";
-		fired = "_this call BIS_Effects_EH_Fired;";
-	};	
 };
 
 class AH6J_EP1_DZE: AH6J_EP1_DZ
@@ -93,13 +87,7 @@ class AH6X_DZ: AH6X_EP1 {
 	fuelCapacity = 242;
 	radartype = 0;
 	supplyRadius = 1.3;
-
 	class Turrets {};
-	class DefaultEventhandlers;
-	class EventHandlers: DefaultEventhandlers
-	{
-		killed = "_this call BIS_Effects_EH_Killed;";
-	};
 	
 	class Upgrades
 	{

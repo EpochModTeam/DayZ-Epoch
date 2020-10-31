@@ -13,11 +13,11 @@ class AH1Z_DZ: AH1Z {
 	supplyRadius = 1.3;
 	
 	class Turrets;
-	class MainTurret;
+	class MainTurret;	
 	
-	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
 	{
+		fired = "_this call BIS_Effects_EH_Fired;";
 		killed = "_this call BIS_Effects_EH_Killed;";
 		engine = "if (_this select 1) then {(_this select 0) animate ['mainrotor_folded',1]; (_this select 0) animate ['mainrotor_unfolded',0]; (_this select 0) animate ['rotorshaft_unfolded',0];} else {_this select 0 setVariable ['engineOffTime',diag_tickTime,false];};"; //Unfold
 	};

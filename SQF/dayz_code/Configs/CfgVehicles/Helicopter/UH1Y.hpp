@@ -83,11 +83,11 @@ class UH1Y_DZ: UH1_Base {
 				};
 			};
 		};
-	};
+	};	
 
-	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
 	{
+		fired = "_this call BIS_Effects_EH_Fired;";
 		killed = "_this call BIS_Effects_EH_Killed;";
 		engine = "if (_this select 1) then {(_this select 0) animate ['mainrotor_folded',1]; (_this select 0) animate ['mainrotor_unfolded',0];} else {_this select 0 setVariable ['engineOffTime',diag_tickTime,false];};"; //Unfold
 	};

@@ -30,9 +30,13 @@ class CH53_DZE : USEC_ch53_E {
 	transportMaxMagazines = 250;
 	transportmaxbackpacks = 15;
 	fuelCapacity = 3849;
-	class eventhandlers {
-		killed = "_this spawn BIS_Effects_EH_Killed;";
-	};
+	
+	class EventHandlers: DefaultEventhandlers
+	{
+		fired = "_this call BIS_Effects_EH_Fired;";
+		killed = "_this call BIS_Effects_EH_Killed;";
+	};	
+
 	class UserActions {
 		class RampOpen {
 			displayName = $STR_EPOCH_OPEN_RAMP;

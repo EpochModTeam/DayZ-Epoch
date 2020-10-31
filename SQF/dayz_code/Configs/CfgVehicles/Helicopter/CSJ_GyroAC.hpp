@@ -116,10 +116,10 @@ class CSJ_GyroP: Plane
 		class PushPlane {ACTION_PUSH;};
 		//class Repair {ACTION_REPAIR; radius = 4;};
 		//class Salvage {ACTION_SALVAGE; radius = 4;};
-	};
-	class DefaultEventhandlers;
-	class EventHandlers: DefaultEventhandlers
+	};	
+	class Eventhandlers: DefaultEventhandlers
 	{
+		fired = "_this call BIS_Effects_EH_Fired;";
 		killed = "_this call BIS_Effects_EH_Killed;";
 	};
 	class Sounds
@@ -228,9 +228,9 @@ class CSJ_GyroC: Helicopter
 		//class Repair {ACTION_REPAIR; radius = 4;};
 		//class Salvage {ACTION_SALVAGE; radius = 4;};
 	};
-	class DefaultEventhandlers;
-	class EventHandlers: DefaultEventhandlers
+	class Eventhandlers: DefaultEventhandlers
 	{
+		fired = "_this call BIS_Effects_EH_Fired;";
 		killed = "_this call BIS_Effects_EH_Killed;";
 	};
 	class Sounds

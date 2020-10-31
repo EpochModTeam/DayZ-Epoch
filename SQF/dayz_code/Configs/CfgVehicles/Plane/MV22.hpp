@@ -15,9 +15,9 @@ class MV22_DZ : MV22 {
 	transportMaxMagazines = 400;
 	transportmaxbackpacks = 10;
 	fuelCapacity = 6513;
-	class DefaultEventhandlers;
 	class EventHandlers: DefaultEventhandlers
 	{
+		fired = "_this call BIS_Effects_EH_Fired;";
 		killed = "_this call BIS_Effects_EH_Killed;";
 		engine = "if (_this select 1) then {{_this select 0 animate [_x,0]} count ['engine_prop_1_1_turn','engine_prop_1_2_turn','engine_prop_1_3_turn','engine_prop_2_1_turn','engine_prop_2_2_turn','engine_prop_2_3_turn','engine_prop_1_1_close','engine_prop_1_3_close','engine_prop_2_1_close','engine_prop_2_2_close','pack_engine_1','pack_engine_2','turn_wing'];} else {_this select 0 setVariable ['engineOffTime',diag_tickTime,false];};"; //Unfold
 	};

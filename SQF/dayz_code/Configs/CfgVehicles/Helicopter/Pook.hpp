@@ -24,11 +24,6 @@ class pook_H13_base_DZE: pook_H13_base
 	hideWeaponsCargo = 0;
 	fuelCapacity = 450;
 	supplyRadius = 1.3;
-	class DefaultEventhandlers;
-	class EventHandlers: DefaultEventhandlers
-	{
-		killed = "_this call BIS_Effects_EH_Killed;";
-	};
 };
 
 class pook_medevac_DZE: pook_H13_base_DZE
@@ -182,13 +177,6 @@ class pook_gunship_DZ:  pook_H13_base_DZE
 	selectionFireAnim = "zasleh";
 	weapons[] = {"pook_M60_dual","pook_H13Grenades","CMFlareLauncher"};
 	magazines[] = {"pook_1300Rnd_762x51_M60","pook_12Rnd_Grenade_Camel","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
-
-	class DefaultEventhandlers;
-	class Eventhandlers: DefaultEventhandlers
-	{
-		killed = "_this call BIS_Effects_EH_Killed;";
-		fired = "_this call BIS_Effects_EH_Fired;";
-	};
 };
 
 class pook_gunship_DZE: pook_gunship_DZ
@@ -309,13 +297,6 @@ class pook_transport_DZ: pook_H13_transport
 	
 	class Turrets; // External class reference
 	class MainTurret; // External class reference
-
-	class DefaultEventhandlers;
-	class Eventhandlers: DefaultEventhandlers
-	{
-		killed = "_this call BIS_Effects_EH_Killed;";
-		fired = "_this call BIS_Effects_EH_Fired;";
-	};
 };
 
 class pook_transport_DZE: pook_transport_DZ
