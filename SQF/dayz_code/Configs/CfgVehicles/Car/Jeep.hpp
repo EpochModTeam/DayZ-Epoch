@@ -3,6 +3,8 @@ class Jeep_base : HMMWV_DZE_Base
 	scope = 0;
 	displayname = "Old Jeep";
 	model = "\z\addons\dayz_epoch_v\vehicles\jeep\h4_jeep";
+	picture = "\dayz_epoch_c\icons\vehicles\jeep.paa";
+	vehicleClass = "DayZ Epoch Vehicles";
 	armor = 25;
 	transportsoldier = 2;
 	transportmaxweapons = 15;
@@ -28,25 +30,25 @@ class Jeep_base : HMMWV_DZE_Base
 		tex[]={};
 		mat[]=
 		{
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_main.rvmat",
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_main_damage.rvmat",
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_main_destruct.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_main.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_main_damage.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_main_destruct.rvmat",
 
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_parts.rvmat",
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_parts_damage.rvmat",
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_parts_destruct.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_parts.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_parts_damage.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_parts_destruct.rvmat",
 
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_dash.rvmat",
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_dash_damage.rvmat",
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_dash_destruct.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_dash.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_dash_damage.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_dash_destruct.rvmat",
 
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_glass.rvmat",
-			"\Ca\wheeled_E\Data\auta_skla_damage.rvmat",
-			"\Ca\wheeled_E\Data\auta_skla_damage.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_glass.rvmat",
+			"Ca\wheeled_E\Data\auta_skla_damage.rvmat",
+			"Ca\wheeled_E\Data\auta_skla_damage.rvmat",
 							
-			"\z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_in_glass.rvmat",
-			"\Ca\wheeled_E\Data\auta_skla_in_damage.rvmat",
-			"\Ca\wheeled_E\Data\auta_skla_in_damage.rvmat"
+			"z\addons\dayz_epoch_v\vehicles\jeep\data\jeep_in_glass.rvmat",
+			"Ca\wheeled_E\Data\auta_skla_in_damage.rvmat",
+			"Ca\wheeled_E\Data\auta_skla_in_damage.rvmat"
 
 		};
 	};
