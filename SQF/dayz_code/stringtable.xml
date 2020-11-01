@@ -11517,6 +11517,31 @@
 			<Russian>VW Golf (красный)++++</Russian>
 			<German>VW Golf (rot)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MINI_COOPER">
+			<English>Mini Cooper (red)</English>
+			<Russian>Mini Cooper (красный)</Russian>
+			<German>Mini Cooper (rot)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MINI_COOPER+">
+			<English>Mini Cooper (red)+</English>
+			<Russian>Mini Cooper (красный)+</Russian>
+			<German>Mini Cooper (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MINI_COOPER++">
+			<English>Mini Cooper (red)++</English>
+			<Russian>Mini Cooper (красный)++</Russian>
+			<German>Mini Cooper (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MINI_COOPER+++">
+			<English>Mini Cooper (red)+++</English>
+			<Russian>Mini Cooper (красный)+++</Russian>
+			<German>Mini Cooper (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MINI_COOPER++++">
+			<English>Mini Cooper (red)++++</English>
+			<Russian>Mini Cooper (красный)++++</Russian>
+			<German>Mini Cooper (rot)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_SEDAN_WHITE">
 			<English>Sedan (white)</English>
 			<Russian>Sedan (белый)</Russian>

@@ -30,6 +30,7 @@ class Category_38 {
 	class Volha_1_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Volha_2_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class VWGolf_DZE {type = "trade_any_vehicle";buy[] = {300,"worth"};sell[] = {200,"worth"};};
+	class Mini_Cooper_DZE {type = "trade_any_vehicle";buy[] = {300,"worth"};sell[] = {200,"worth"};};
 	class car_hatchback_DZE {type = "trade_any_vehicle";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class car_hatchback_red_DZE {type = "trade_any_vehicle";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class car_sedan_DZE {type = "trade_any_vehicle";buy[] = {200,"worth"};sell[] = {100,"worth"};};

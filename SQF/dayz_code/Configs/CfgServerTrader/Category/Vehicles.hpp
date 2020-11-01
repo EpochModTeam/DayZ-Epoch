@@ -30,6 +30,7 @@ class Category_38 {
 	class Volha_1_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Volha_2_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class VWGolf_DZE {type = "trade_any_vehicle";buy[] = {3,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class Mini_Cooper_DZE {type = "trade_any_vehicle";buy[] = {3,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class car_hatchback_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class car_hatchback_red_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class car_sedan_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
