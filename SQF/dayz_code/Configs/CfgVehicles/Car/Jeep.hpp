@@ -17,6 +17,8 @@ class Jeep_base : HMMWV_DZE_Base
 	driveraction = suv_driver_ep1;
 	cargoaction[] = {Skodovka_Cargo01,suv_cargo02_ep1,Skodovka_Cargo01,suv_cargo02_ep1,Skodovka_Cargo01};
 	typicalcargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};	
 	crew = "";
 	class Turrets {};
 	class HitPoints;
