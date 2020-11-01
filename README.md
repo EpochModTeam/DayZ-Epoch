@@ -58,6 +58,7 @@ Included Custom Addons
 * Sahrani Rearmed: Sahrani Civilians by Marseille77 - http://www.armaholic.com/page.php?id=24325
 * Modern Irish Defence Forces - Steyr Aug A3 Pack by SyNcRoNiCzZ - http://www.armaholic.com/page.php?id=9505
 * Standard Vehicles Pack by Marseille77 - https://www.armaholic.com/page.php?id=10730
+* Nissan 350z by CRASHNZ - https://www.armaholic.com/page.php?id=8570
 --------------------------
 Included Custom Islands
 --------------------------

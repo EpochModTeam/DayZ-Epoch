@@ -65,7 +65,7 @@ class Category_40 {
 	class UAZ_Unarmed_UN_EP1_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 };
 
-//SUVs
+//SUVs/Nissans
 class Category_41 {
 	class SUV_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
 	class SUV_Blue {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
@@ -78,6 +78,17 @@ class Category_41 {
 	class SUV_White {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
 	class SUV_Yellow {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
 	class SUV_Camo {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class Nissan_Orange_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Blue_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Mod_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Gold_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Green_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Black_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Pink_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Red_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Ruben_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_V_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class Nissan_Yellow_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 };
 
 //Cargo Trucks

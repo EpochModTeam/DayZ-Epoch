@@ -65,7 +65,7 @@ class Category_40 {
 	class UAZ_Unarmed_UN_EP1_DZE {type = "trade_any_vehicle";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 };
 
-//SUVs
+//SUVs/Nissans
 class Category_41 {
 	class SUV_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class SUV_Blue {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
@@ -78,6 +78,17 @@ class Category_41 {
 	class SUV_White {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class SUV_Yellow {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class SUV_Camo {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class Nissan_Orange_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Blue_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Mod_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Gold_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Green_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Black_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Pink_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Red_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Ruben_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_V_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class Nissan_Yellow_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};	
 };
 
 //Cargo Trucks

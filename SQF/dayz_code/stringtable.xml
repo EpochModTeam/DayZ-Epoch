@@ -10813,6 +10813,251 @@
 			<Russian>SUV PKT (Армированный)++++</Russian>
 			<German>SUV PKT (Gepanzert)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_ORANGE">
+			<English>Nissan 350z (orange)</English>
+			<Russian>Nissan 350z (оранжевый)</Russian>
+			<German>Nissan 350z (orange)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_ORANGE+">
+			<English>Nissan 350z (orange)+</English>
+			<Russian>Nissan 350z (оранжевый)+</Russian>
+			<German>Nissan 350z (orange)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_ORANGE++">
+			<English>Nissan 350z (orange)++</English>
+			<Russian>Nissan 350z (оранжевый)++</Russian>
+			<German>Nissan 350z (orange)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_ORANGE+++">
+			<English>Nissan 350z (orange)+++</English>
+			<Russian>Nissan 350z (оранжевый)+++</Russian>
+			<German>Nissan 350z (orange)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_ORANGE++++">
+			<English>Nissan 350z (orange)++++</English>
+			<Russian>Nissan 350z (оранжевый)++++</Russian>
+			<German>Nissan 350z (orange)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_NISSAN_BLUE">
+			<English>Nissan 350z (blue)</English>
+			<Russian>Nissan 350z (синий)</Russian>
+			<German>Nissan 350z (blau)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_BLUE+">
+			<English>Nissan 350z (blue)+</English>
+			<Russian>Nissan 350z (синий)+</Russian>
+			<German>Nissan 350z (blau)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_BLUE++">
+			<English>Nissan 350z (blue)++</English>
+			<Russian>Nissan 350z (синий)++</Russian>
+			<German>Nissan 350z (blau)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_BLUE+++">
+			<English>Nissan 350z (blue)+++</English>
+			<Russian>Nissan 350z (синий)+++</Russian>
+			<German>Nissan 350z (blau)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_BLUE++++">
+			<English>Nissan 350z (blue)++++</English>
+			<Russian>Nissan 350z (синий)++++</Russian>
+			<German>Nissan 350z (blau)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_NISSAN_MOD">
+			<English>Nissan 350z (mod)</English>
+			<German>Nissan 350z (mod)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_MOD+">
+			<English>Nissan 350z (mod)+</English>
+			<German>Nissan 350z (mod)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_MOD++">
+			<English>Nissan 350z (mod)++</English>
+			<German>Nissan 350z (mod)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_MOD+++">
+			<English>Nissan 350z (mod)+++</English>
+			<German>Nissan 350z (mod)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_MOD++++">
+			<English>Nissan 350z (mod)++++</English>
+			<German>Nissan 350z (mod)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GOLD">
+			<English>Nissan 350z (gold)</English>
+			<German>Nissan 350z (gold)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GOLD+">
+			<English>Nissan 350z (gold)+</English>
+			<German>Nissan 350z (gold)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GOLD++">
+			<English>Nissan 350z (gold)++</English>
+			<German>Nissan 350z (gold)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GOLD+++">
+			<English>Nissan 350z (gold)+++</English>
+			<German>Nissan 350z (gold)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GOLD++++">
+			<English>Nissan 350z (gold)++++</English>
+			<German>Nissan 350z (gold)++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_NISSAN_GREEN">
+			<English>Nissan 350z (green)</English>
+			<Russian>Nissan 350z (зеленый)</Russian>
+			<German>Nissan 350z (grün)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GREEN+">
+			<English>Nissan 350z (green)+</English>
+			<Russian>Nissan 350z (зеленый)+</Russian>
+			<German>Nissan 350z (grün)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GREEN++">
+			<English>Nissan 350z (green)++</English>
+			<Russian>Nissan 350z (зеленый)++</Russian>
+			<German>Nissan 350z (grün)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GREEN+++">
+			<English>Nissan 350z (green)+++</English>
+			<Russian>Nissan 350z (зеленый)+++</Russian>
+			<German>Nissan 350z (grün)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_GREEN++++">
+			<English>Nissan 350z (green)++++</English>
+			<Russian>Nissan 350z (зеленый)++++</Russian>
+			<German>Nissan 350z (grün)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_NISSAN_BLACK">
+			<English>Nissan 350z (black)</English>
+			<Russian>Nissan 350z (черный)</Russian>
+			<German>Nissan 350z (schwarz)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_BLACK+">
+			<English>Nissan 350z (black)+</English>
+			<Russian>Nissan 350z (черный)+</Russian>
+			<German>Nissan 350z (schwarz)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_BLACK++">
+			<English>Nissan 350z (black)++</English>
+			<Russian>Nissan 350z (черный)++</Russian>
+			<German>Nissan 350z (schwarz)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_BLACK+++">
+			<English>Nissan 350z (black)+++</English>
+			<Russian>Nissan 350z (черный)+++</Russian>
+			<German>Nissan 350z (schwarz)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_BLACK++++">
+			<English>Nissan 350z (black)++++</English>
+			<Russian>Nissan 350z (черный)++++</Russian>
+			<German>Nissan 350z (schwarz)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_NISSAN_PINK">
+			<English>Nissan 350z (pink)</English>
+			<Russian>Nissan 350z (розовый)</Russian>
+			<German>Nissan 350z (pink)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_PINK+">
+			<English>Nissan 350z (pink)+</English>
+			<Russian>Nissan 350z (розовый)+</Russian>
+			<German>Nissan 350z (pink)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_PINK++">
+			<English>Nissan 350z (pink)++</English>
+			<Russian>Nissan 350z (розовый)++</Russian>
+			<German>Nissan 350z (pink)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_PINK+++">
+			<English>Nissan 350z (pink)+++</English>
+			<Russian>Nissan 350z (розовый)+++</Russian>
+			<German>Nissan 350z (pink)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_PINK++++">
+			<English>Nissan 350z (pink)++++</English>
+			<Russian>Nissan 350z (розовый)++++</Russian>
+			<German>Nissan 350z (pink)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RED">
+			<English>Nissan 350z (red)</English>
+			<Russian>Nissan 350z (черный)</Russian>
+			<German>Nissan 350z (rot)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RED+">
+			<English>Nissan 350z (red)+</English>
+			<Russian>Nissan 350z (черный)+</Russian>
+			<German>Nissan 350z (rot)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RED++">
+			<English>Nissan 350z (red)++</English>
+			<Russian>Nissan 350z (черный)++</Russian>
+			<German>Nissan 350z (rot)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RED+++">
+			<English>Nissan 350z (red)+++</English>
+			<Russian>Nissan 350z (черный)+++</Russian>
+			<German>Nissan 350z (rot)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RED++++">
+			<English>Nissan 350z (red)++++</English>
+			<Russian>Nissan 350z (черный)++++</Russian>
+			<German>Nissan 350z (rot)++++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_NISSAN_RUBEN">
+			<English>Nissan 350z (ruben)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RUBEN+">
+			<English>Nissan 350z (ruben)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RUBEN++">
+			<English>Nissan 350z (ruben)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RUBEN+++">
+			<English>Nissan 350z (ruben)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_RUBEN++++">
+			<English>Nissan 350z (ruben)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_V">
+			<English>Nissan 350z (V)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_V+">
+			<English>Nissan 350z (V)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_V++">
+			<English>Nissan 350z (V)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_V+++">
+			<English>Nissan 350z (V)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_V++++">
+			<English>Nissan 350z (V)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_YELLOW">
+			<English>Nissan 350z (yellow)</English>
+			<Russian>Nissan 350z (желтый)</Russian>
+			<German>Nissan 350z (gelb)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_YELLOW+">
+			<English>Nissan 350z (yellow)+</English>
+			<Russian>Nissan 350z (желтый)+</Russian>
+			<German>Nissan 350z (gelb)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_YELLOW++">
+			<English>Nissan 350z (yellow)++</English>
+			<Russian>Nissan 350z (желтый)++</Russian>
+			<German>Nissan 350z (gelb)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_YELLOW+++">
+			<English>Nissan 350z (yellow)+++</English>
+			<Russian>Nissan 350z (желтый)+++</Russian>
+			<German>Nissan 350z (gelb)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_NISSAN_YELLOW++++">
+			<English>Nissan 350z (yellow)++++</English>
+			<Russian>Nissan 350z (желтый)++++</Russian>
+			<German>Nissan 350z (gelb)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_UAZ_CDF">
 			<English>UAZ (CDF)</English>
 		</Key>
@@ -29407,8 +29652,8 @@
 			<Russian>УАЗы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_SUVS">
-			<English>SUVs</English>
-			<Russian>СУВы</Russian>
+			<English>SUVs/Nissans</English>
+			<Russian>СУВы/Nissans</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS">
 			<English>Cargo Trucks</English>
