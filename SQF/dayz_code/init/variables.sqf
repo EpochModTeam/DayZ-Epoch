@@ -281,7 +281,7 @@ if (!isDedicated) then {
 	DZE_REPLACE_WEAPONS = [["Crossbow","DMR","M14_EP1","SVD","SVD_CAMO","M4SPR","VSS_vintorez"],["Crossbow_DZ","DMR_DZ","M14_CCO_DZ","SVD_PSO1_DZ","SVD_PSO1_Gh_DZ","M4SPR_DZE","VSS_vintorez_DZE"]];
 	DZE_replaceMagazines = [["vil_20Rnd_762x51_G3"],["vil_20Rnd_762x51_G3"]];
 	DZE_maintainClasses = ["ModularItems","DZE_Housebase","LightPole_DZ","BuiltItems","Generator_DZ","DZ_buildables","Plastic_Pole_EP1_DZ","Fence_corrugated_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","StickFence_DZ","DesertCamoNet_DZ","ForestCamoNet_DZ","WinterCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ","WinterLargeCamoNet_DZ","DeerStand_DZ","Scaffolding_DZ","FireBarrel_DZ","M240Nest_DZ"];
-	DZE_fueltruckarray = ["KamazRefuel_DZ","UralRefuel_TK_EP1_DZ","MtvrRefuel_DES_EP1_DZ","V3S_Refuel_TK_GUE_EP1_DZ","MtvrRefuel_DZ","KamazRefuel_DZE1","KamazRefuel_DZE2","KamazRefuel_DZE3","KamazRefuel_DZE4","T810A_ACR_REFUEL_DES_DZE","T810A_ACR_REFUEL_DES_DZE1","T810A_ACR_REFUEL_DES_DZE2","T810A_ACR_REFUEL_DES_DZE3","T810A_ACR_REFUEL_DES_DZE4","T810A_ACR_REFUEL_DZE","T810A_ACR_REFUEL_DZE1","T810A_ACR_REFUEL_DZE2","T810A_ACR_REFUEL_DZE3","T810A_ACR_REFUEL_DZE4"];
+	DZE_fueltruckarray = ["UralRefuel_TK_EP1_DZ","UralRefuel_TK_EP1_DZE1","UralRefuel_TK_EP1_DZE2","UralRefuel_TK_EP1_DZE3","UralRefuel_TK_EP1_DZE4","MtvrRefuel_DES_EP1_DZ","MtvrRefuel_DES_EP1_DZE1","MtvrRefuel_DES_EP1_DZE2","MtvrRefuel_DES_EP1_DZE3","MtvrRefuel_DES_EP1_DZE4","V3S_Refuel_TK_GUE_EP1_DZ","V3S_Refuel_TK_GUE_EP1_DZE1","V3S_Refuel_TK_GUE_EP1_DZE2","V3S_Refuel_TK_GUE_EP1_DZE3","V3S_Refuel_TK_GUE_EP1_DZE4","MtvrRefuel_DZ","MtvrRefuel_DZE1","MtvrRefuel_DZE2","MtvrRefuel_DZE3","MtvrRefuel_DZE4","KamazRefuel_DZ","KamazRefuel_DZE1","KamazRefuel_DZE2","KamazRefuel_DZE3","KamazRefuel_DZE4","T810A_ACR_REFUEL_DES_DZE","T810A_ACR_REFUEL_DES_DZE1","T810A_ACR_REFUEL_DES_DZE2","T810A_ACR_REFUEL_DES_DZE3","T810A_ACR_REFUEL_DES_DZE4","T810A_ACR_REFUEL_DZE","T810A_ACR_REFUEL_DZE1","T810A_ACR_REFUEL_DZE2","T810A_ACR_REFUEL_DZE3","T810A_ACR_REFUEL_DZE4"];
 	DZE_HeliAllowToTow = ["hilux1_civil_1_open","HMMWV_Base","Lada_base","Offroad_DSHKM_base","Pickup_PK_base","SkodaBase","tractor","VWGolf","Volha_TK_CIV_Base_EP1","S1203_TK_CIV_EP1","SUV_Base_EP1","ArmoredSUV_Base_PMC","UAZ_Base","LandRover_Base","Ship"];
 	DZE_isDestroyableStorage = ["OutHouse_DZ","Wooden_shed_DZ","Wooden_shed2_DZ","WoodShack_DZ","WoodShack2_DZ","StorageShed_DZ","StorageShed2_DZ","GunRack_DZ","GunRack2_DZ","WoodCrate_DZ","WoodCrate2_DZ"];
 	DZE_tradeVehicle = ["trade_any_vehicle","trade_any_vehicle_free","trade_any_vehicle_old","trade_any_bicycle","trade_any_bicycle_old","trade_any_boat","trade_any_boat_old"];
@@ -361,7 +361,7 @@ if (!isDedicated) then {
 	keypadCancel = false; //Brute force fix
 	keyPadReset = {uiSleep 2; keypadCancel = false;};
 	canbuild = true;
-	DZE_HeliAllowTowFrom = ["CH_47F_EP1_DZE","CH_47F_EP1_DZ","CH_47F_BAF","CH_47F_EP1","BAF_Merlin_DZE","CH53_DZE"];
+	DZE_HeliAllowTowFrom = ["CH_47F_EP1_DZE","CH_47F_EP1_DZE1","CH_47F_EP1_DZE2","CH_47F_EP1_DZE3","CH_47F_EP1_DZ","CH_47F_BAF","CH_47F_EP1","BAF_Merlin_DZE","CH53_DZE","CH53_DZE1","CH53_DZE2","CH53_DZE3"];
 	DZE_itemKeys = ["ItemKeyYellow","ItemKeyBlue","ItemKeyRed","ItemKeyGreen","ItemKeyBlack"];
 	DZE_keyColors = ["Green","Red","Blue","Yellow","Black"];
 	s_player_lastTarget = objNull;
