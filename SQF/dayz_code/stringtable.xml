@@ -9734,6 +9734,21 @@
 		<Key ID="STR_VEH_NAME_M113_TK++++">
 			<English>M113 TK++++</English>
 		</Key>
+		<Key ID="STR_VEH_NAME_SCRAP_APC">
+			<English>Scrap APC</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_SCRAP_APC+">
+			<English>Scrap APC+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_SCRAP_APC++">
+			<English>Scrap APC++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_SCRAP_APC+++">
+			<English>Scrap APC+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_SCRAP_APC++++">
+			<English>Scrap APC++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_BMP2_INS">
 			<English>BMP-2 INS</English>
 		</Key>
