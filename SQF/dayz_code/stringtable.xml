@@ -8943,6 +8943,10 @@
 			<German>Bus (Weiß)</German>
 			<Russian>Автобус (белый)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_IKARUS_ARMORED">
+			<English>Armored Bus</English>
+			<German>Gepanzerter Bus</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_KAMAZ">
 			<English>Kamaz open (Woodland)</English>
 			<Russian>Камаз открытый (Лесной камуфляж)</Russian>

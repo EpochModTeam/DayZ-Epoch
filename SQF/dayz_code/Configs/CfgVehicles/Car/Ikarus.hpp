@@ -226,3 +226,33 @@ class Ikarus_White_DZE: Ikarus_DZE {
 		class HitRMWheel: HitLFWheel{};
 	};	
 };
+
+class Ikarus_Armored_DZE: Ikarus_White_DZE
+{
+	model = "z\addons\dayz_epoch_v\vehicles\citybus\dze_citybus";
+	displayName	= $STR_VEH_NAME_IKARUS_ARMORED;
+	maxSpeed = 85;
+	turnCoef = 1.2;
+	armor = 100;
+	transportMaxWeapons = 25;
+	transportMaxMagazines = 120;
+    transportmaxbackpacks = 10;		
+	hiddenselections[] = {"camo1"};
+	hiddenselectionstextures[]= 
+	{
+		"z\addons\dayz_epoch_v\vehicles\citybus\data\citybus_ext_co.paa"		
+	};
+	class Damage
+	{
+		tex[]={};
+		mat[]=
+		{
+			"z\addons\dayz_epoch_v\vehicles\citybus\data\bus_city_ext.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\citybus\data\bus_city_ext.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\citybus\data\bus_city_ext_destruct.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\citybus\data\bus_city_int.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\citybus\data\bus_city_int.rvmat",
+			"z\addons\dayz_epoch_v\vehicles\citybus\data\bus_city_int_destruct.rvmat"
+		};
+	};
+};
