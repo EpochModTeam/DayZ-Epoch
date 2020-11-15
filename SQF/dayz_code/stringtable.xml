@@ -11707,9 +11707,40 @@
 			<German>V3S Offen (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_ARMORED">
-			<English>V3S (Armored)</English>
-			<German>V3S (Gepanzert)</German>
+			<English>V3S Armored</English>
+			<German>V3S Gepanzert</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_V3S_ARMORED+">
+			<English>V3S Armored+</English>
+			<German>V3S Gepanzert+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_ARMORED++">
+			<English>V3S Armored++</English>
+			<German>V3S Gepanzert++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_ARMORED+++">
+			<English>V3S Armored+++</English>
+			<German>V3S Gepanzert+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_ARMORED++++">
+			<English>V3S Armored++++</English>
+			<German>V3S Gepanzert++++</German>
+		</Key>		
+		<Key ID="STR_VEH_NAME_V3S_CAMPER">
+			<English>V3S Camper</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_CAMPER+">
+			<English>V3S Camper+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_CAMPER++">
+			<English>V3S Camper++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_CAMPER+++">
+			<English>V3S Camper+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_V3S_CAMPER++++">
+			<English>V3S Camper++++</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_GAZ_BLUE">
 			<English>GAZ (blue)</English>
 			<Russian>GAZ (синий)</Russian>
