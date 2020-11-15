@@ -103,6 +103,7 @@
 [FIXED] Female players had not the correct armor and camouflage set. (758be289) @AirwavesMan
 [FIXED] Sometimes players got not properly ejected from an exploded Cessna wreck. (0b6df456) @AirwavesMan
 [FIXED] Players were not in combat after shooting from certain helicopters or planes. (e6680aaa) @AirwavesMan
+[FIXED] Often the weapon on back got duped if the player got kicked or logged not out properly. (1697af97) @AirwavesMan
 
 [UPDATED] Spawning of Zombies and Loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
