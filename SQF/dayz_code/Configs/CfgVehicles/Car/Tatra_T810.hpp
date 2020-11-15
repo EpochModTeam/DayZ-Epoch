@@ -776,6 +776,11 @@ class T810A_ACR_REFUEL_DZE: T810A_ACR_DZE
 	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_T810fuel_CA.paa";
 	transportSoldier = 2;
 	cargoAction[] = {"Truck_Cargo01"};
+	
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 5;	
+	
 	fuelCapacity = 10000;
 	class Damage
 	{
@@ -809,9 +814,9 @@ class T810A_ACR_REFUEL_DZE2: T810A_ACR_REFUEL_DZE1 {
 };
 class T810A_ACR_REFUEL_DZE3: T810A_ACR_REFUEL_DZE2 {
 	displayname = "$STR_VEH_NAME_TATRA_WOODLAND_REFUEL+++";
-	transportMaxWeapons = 100;
-	transportMaxMagazines = 400;
-	transportmaxbackpacks = 16;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 10;
 	
 	class Upgrades {
 		ItemTruckTNK[] = {"T810A_ACR_REFUEL_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
@@ -854,9 +859,9 @@ class T810A_ACR_REFUEL_DES_DZE2: T810A_ACR_REFUEL_DES_DZE1 {
 };
 class T810A_ACR_REFUEL_DES_DZE3: T810A_ACR_REFUEL_DES_DZE2 {
 	displayname = "$STR_VEH_NAME_TATRA_DESERT_REFUEL+++";
-	transportMaxWeapons = 100;
-	transportMaxMagazines = 400;
-	transportmaxbackpacks = 16;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 10;
 	
 	class Upgrades {
 		ItemTruckTNK[] = {"T810A_ACR_REFUEL_DES_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};

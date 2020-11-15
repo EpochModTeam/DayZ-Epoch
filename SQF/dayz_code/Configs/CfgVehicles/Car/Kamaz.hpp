@@ -112,9 +112,9 @@ class KamazRefuel_DZ: KamazRefuel {
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};
-	transportMaxWeapons = 50;
-	transportMaxMagazines = 200;
-	transportmaxbackpacks = 8;	
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 5;	
 	class TransportMagazines{};
 	class TransportWeapons{};
 	fuelCapacity = 10400;
@@ -147,9 +147,9 @@ class KamazRefuel_DZE2: KamazRefuel_DZE1 {
 };
 class KamazRefuel_DZE3: KamazRefuel_DZE2 {
 	displayName = "$STR_VEH_NAME_KAMAZ_REFUEL+++";
-	transportMaxWeapons = 100;
-	transportMaxMagazines = 400;
-	transportmaxbackpacks = 16;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 10;
 	
 	class Upgrades {
 		ItemTruckTNK[] = {"KamazRefuel_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};

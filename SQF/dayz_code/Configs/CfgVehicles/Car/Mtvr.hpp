@@ -113,9 +113,9 @@ class MtvrRefuel_DES_EP1_DZ: MtvrRefuel_DES_EP1 {
 	displayName = "$STR_VEH_NAME_MTVR_DESERT_REFUEL";
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
-	transportMaxWeapons = 50;
-	transportMaxMagazines = 200;
-	transportmaxbackpacks = 8;		
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 5;		
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
@@ -148,9 +148,9 @@ class MtvrRefuel_DES_EP1_DZE2: MtvrRefuel_DES_EP1_DZE1 {
 };
 class MtvrRefuel_DES_EP1_DZE3: MtvrRefuel_DES_EP1_DZE2 {
 	displayName = "$STR_VEH_NAME_MTVR_DESERT_REFUEL+++";
-	transportMaxWeapons = 100;
-	transportMaxMagazines = 400;
-	transportmaxbackpacks = 16;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 10;
 	
 	class Upgrades {
 		ItemTruckTNK[] = {"MtvrRefuel_DES_EP1_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
@@ -168,9 +168,9 @@ class MtvrRefuel_DZ: MtvrRefuel {
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_REFUEL";
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
-	transportMaxWeapons = 50;
-	transportMaxMagazines = 200;
-	transportmaxbackpacks = 8;	
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 5;		
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
@@ -203,9 +203,9 @@ class MtvrRefuel_DZE2: MtvrRefuel_DZE1 {
 };
 class MtvrRefuel_DZE3: MtvrRefuel_DZE2 {
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_REFUEL+++";
-	transportMaxWeapons = 100;
-	transportMaxMagazines = 400;
-	transportmaxbackpacks = 16;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 10;
 	
 	class Upgrades {
 		ItemTruckTNK[] = {"MtvrRefuel_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};

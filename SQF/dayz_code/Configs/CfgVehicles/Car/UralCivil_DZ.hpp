@@ -491,9 +491,9 @@ class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
 	displayName = "$STR_VEH_NAME_URAL_FUEL";
 	crew = "";
 	typicalCargo[] = {};
-	transportMaxWeapons = 50;
-	transportMaxMagazines = 200;
-	transportmaxbackpacks = 8;	
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 5;	
 	class TransportMagazines{};
 	class TransportWeapons{};
 	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
@@ -527,9 +527,9 @@ class UralRefuel_TK_EP1_DZE2: UralRefuel_TK_EP1_DZE1 {
 };
 class UralRefuel_TK_EP1_DZE3: UralRefuel_TK_EP1_DZE2 {
 	displayName = "$STR_VEH_NAME_URAL_FUEL+++";
-	transportMaxWeapons = 100;
-	transportMaxMagazines = 400;
-	transportmaxbackpacks = 16;
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 10;	
 	
 	class Upgrades {
 		ItemTruckTNK[] = {"UralRefuel_TK_EP1_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
