@@ -1,6 +1,7 @@
-_Ratio1 = 1;
-_Ratio2 = 2;
-_Ratio3 = 3;
+local _Ratio1 = 1;
+local _Ratio2 = 2;
+local _Ratio3 = 3;
+
 if (MaxVehicleLimit > 300) then {
 	_Ratio1 = round(MaxVehicleLimit * 0.0034);
 	_Ratio2 = round(MaxVehicleLimit * 0.0067);
@@ -21,6 +22,7 @@ AllowedVehiclesList = [
 	["CSJ_GyroC_DZE",_Ratio3],
 	["CSJ_GyroCover",_Ratio3],
 	["CSJ_GyroP",_Ratio3],
+	["MTVR_Bird_DZE",_Ratio2],
 	["datsun1_civil_1_open_DZE",_Ratio3],
 	["datsun1_civil_2_covered_DZE",_Ratio3],
 	["datsun1_civil_3_open_DZE",_Ratio3],
@@ -51,6 +53,7 @@ AllowedVehiclesList = [
 	["Lada2_DZE",_Ratio3],
 	["Lada2_TK_CIV_EP1_DZE",_Ratio3],
 	["LadaLM_DZE",_Ratio3],
+	["Jeep_DZE",_Ratio3],
 	["LandRover_CZ_EP1_DZE",_Ratio3],
 	["LandRover_MG_TK_EP1_DZE",_Ratio1],
 	["LandRover_Special_CZ_EP1_DZE",_Ratio1],
@@ -62,6 +65,8 @@ AllowedVehiclesList = [
 	["MMT_Civ_DZE",(_Ratio3 * 2)],
 	["MtvrRefuel_DES_EP1_DZ",_Ratio1],
 	["MTVR_DES_EP1_DZE",_Ratio3],
+	["MTVR_DZE",_Ratio3],
+	["MTVR_Open_DZE",_Ratio3],
 	["MV22_DZ",_Ratio1],
 	["Offroad_DSHKM_Gue_DZE",_Ratio3],
 	["Old_moto_TK_Civ_EP1_DZE",_Ratio3],
@@ -85,7 +90,7 @@ AllowedVehiclesList = [
 	["SUV_TK_CIV_EP1_DZE",_Ratio1],
 	["SUV_White",_Ratio1],
 	["SUV_Yellow",_Ratio1],
-	["tractor_DZE",_Ratio3],
+	["Tractor_DZE",_Ratio3],
 	["TT650_Civ_DZE",_Ratio3],
 	["TT650_Ins_DZE",_Ratio3],
 	["TT650_TK_CIV_EP1_DZE",_Ratio3],
@@ -97,7 +102,7 @@ AllowedVehiclesList = [
 	["UAZ_Unarmed_TK_EP1_DZE",_Ratio3],
 	["UAZ_Unarmed_UN_EP1_DZE",_Ratio3],
 	["UH1H_DZE",_Ratio2],
-	["UH1Y_DZE",_Ratio2],
+	["UH1Y_DZE",_Ratio1],
 	["UH60M_EP1_DZE",_Ratio1],
 	["UralRefuel_TK_EP1_DZ",_Ratio1],
 	["Ural_CDF_DZE",_Ratio3],
@@ -105,13 +110,15 @@ AllowedVehiclesList = [
 	["Ural_UN_EP1_DZE",_Ratio3],
 	["V3S_Open_TK_CIV_EP1_DZE",_Ratio3],
 	["V3S_Open_TK_EP1_DZE",_Ratio3],
+	["V3S_Camper_DZE",_Ratio3],
 	["V3S_Refuel_TK_GUE_EP1_DZ",_Ratio1],
+	["V3S_RA_TK_GUE_EP1_DZE",_Ratio1],
 	["VolhaLimo_TK_CIV_EP1_DZE",_Ratio3],
 	["Volha_1_TK_CIV_EP1_DZE",_Ratio3],
 	["Volha_2_TK_CIV_EP1_DZE",_Ratio3],
 	["VWGolf_DZE",_Ratio3],
-	
-	// Added for 1.0.7
+	["Mini_Cooper_DZE",_Ratio3],
+	["ScrapAPC_DZE",_Ratio3],
 	["ATV_CIV_CP_DZE",_Ratio1],
 	["ATV_CIV_Grey_CP_DZE",_Ratio1],
 	["ATV_CIV_Red_CP_DZE",_Ratio1],
@@ -185,7 +192,9 @@ AllowedVehiclesList = [
 	["BAF_Jackal2_L2A1_W_DZE",_Ratio1],
 	["BAF_Jackal2_GMG_D_DZE",_Ratio1],
 	["BAF_Jackal2_GMG_W_DZE",_Ratio1],
-	["Hummer_DZE",_Ratio1]
+	["Hummer_DZE",_Ratio1],
+	["Tractor_Armored_DZE",_Ratio1],
+	["Ikarus_Armored_DZE",_Ratio1]
 ];
 
 // There are no good spawn locations for C130 on Namalsk or Caribou Frontier.
@@ -195,7 +204,7 @@ if !(toLower worldName in ["namalsk","caribou"]) then {
 
 if (toLower worldName in ["caribou","chernarus","cmr_ovaron","dayznogova","dingor","dzhg","fallujah","fapovo","fdf_isle1_a","isladuala","lingor","mbg_celle2","namalsk","napf","oring","panthera2","ruegen","sara","sauerland","smd_sahrani_a2","tasmania2010","tavi","trinity","utes"]) then {
 	// water map, add boats
-	
+
 	AllowedVehiclesList = AllowedVehiclesList + [
 		["Fishing_Boat_DZE",_Ratio3],
 		["JetSkiYanahui_Case_Blue",_Ratio1],
@@ -207,8 +216,7 @@ if (toLower worldName in ["caribou","chernarus","cmr_ovaron","dayznogova","dingo
 		["RHIB2Turret_DZE",_Ratio1],
 		["Smallboat_1_DZE",_Ratio3],
 		["Smallboat_2_DZE",_Ratio3],
-		["Zodiac_DZE",_Ratio3],
-		["SeaFox_DZE",_Ratio1]
+		["Zodiac_DZE",_Ratio3]
 	];
 };
 
@@ -229,7 +237,7 @@ call {
 		DZE_Hangar_positions = [[[1949.4359, 3594.7795],180],[[793.6474, 9659.5859],270],[[740.60645, 9729.6523],180],[[4215.5635, 7454.7695],0],[[4141.9292, 7458.936],0]];
 		DZE_Runway_Positions = [[[1906.2429, 3540.8784],180],[[1863.5885, 3541.5037],180],[[2119.3586, 3533.1587],90],[[2356.3647, 3533.0906],90],[[2610.7517, 3528.6604],180],[[2208.2322, 3389.563],0],[[2162.8445, 3388.5747],0],[[728.3725, 9558.4209],270],[[690.87726, 9716.6924],233],[[690.87726, 9716.6924],270],[[742.43134, 9412.1094],270],[[742.31244, 9453.2158],270],[[746.93304, 9279.5293],270],[[684.96716, 8895.043],310],[[703.25922, 8938.5254],310],[[534.59473, 9684.0137],142],[[4847.2583, 7483.0718],0],[[4847.2583, 7483.0718],337],[[4926.7358, 7521.2285],300],[[4866.1216, 7679.3901],220],[[4783.2251, 7689.8706],191],[[4422.0762, 7677.5386],190],[[4259.5239, 7489.2754],0],[[4179.1602, 7478.1289],0],[[4052.2502, 7517.8276],30]];
 	};
-	if (toLower worldName == "tavi") exitWith {
+	if (toLower worldName in ["tavi","taviana"]) exitWith {
 		DZE_Hangar_positions = [[[16779.148, 10230.397],270],[[16778.303, 10280.438],270],[[16780.025, 10330.855],270],[[16781.834, 10380.041],270],[[16780.201, 10430.32],270],[[16782.045, 10480.558],270],[[16774.957, 10530.657],270],[[16779.676, 10580.657],270],[[10351.289, 18383.271],244],[[10327.586, 18427.346],244],[[10305.973, 18472.592],244],[[10283.948, 18518.41],244],[[10258.651, 18567.479],244],[[10234.805, 18616.689],244],[[7779.6982, 7893.582],219],[[7746.2954, 7931.6772],220],[[7705.2095, 7963.9487],220],[[7666.1587, 7995.0244],220],[[7628.3447, 8026.1821],220],[[7588.1636, 8055.9268],220],[[7547.3433, 8089.1045],220],[[7507.02, 8118.4521],220]];
 		DZE_Runway_Positions = [[[16653.684, 11617.686],180],[[16612.551, 11617.791],180],[[16570.965, 11617.984],180],[[16529.477, 11618.151],180],[[16366.49, 11397.132],119],[[16664.465, 11363.812],240],[[16666.48, 11312.685],240],[[16371.202, 10807.039],0],[[16363.222, 10648.133],0],[[16368.655, 11096.011],0],[[10595.511, 17683.322],244],[[10578.067, 17720],244],[[10560.043, 17756.557],244],[[10541.788, 17792.898],244],[[10317.844, 18244.363],155],[[10192.272, 18643.762],244],[[10175.395, 18680.395],244],[[10050.024, 18803.342],210],[[9991.7871, 18794.641],187],[[7792.293, 7816.6943],236],[[7572.9966, 7544.4141],39],[[7449.0269, 7597.1348],77],[[7408.0615, 7634.4272],77],[[7367.7822, 7673.5029],77],[[7073.5825, 7933.1563],308],[[6590.1455, 8270.4609],39],[[6827.6729, 8570.6074],215],[[6866.8408, 8542.7178],218],[[6935.6777, 8489.0615],218],[[6901.3486, 8515.8848],218],[[7120.8623, 8347.0342],218],[[7253.2144, 8233.7725],189],[[7344.647, 8161.6055],218],[[7381.7729, 8133.5376],218],[[7612.292, 7825.8555],270],[[7583.9072, 7875.2861],270]];
 	};
