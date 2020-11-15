@@ -119,6 +119,15 @@ class land_zd_2: Farm // nm shed
 //land_zd_1 in Residential.hpp
 //land_marsh1 in Residential.hpp
 //DZE ADDED BELOW
-class land_shed_m01: Farm {
+class Land_Shed_M01: Farm {
 	zedPos[] = {{0.218262,-1.78369,-0.347349}};
+	lootPos[] = {
+		{-0.441406,-0.128906,-1.11537},
+		{0.564453,-0.0605469,-1.1156}
+	};
+	lootPosSmall[] = {
+		{1.0625,0.82373,-1.10014},
+		{1.05469,-0.599609,-1.12001},
+		{-1.11719,0.884766,-1.14008}
+	};	
 };
