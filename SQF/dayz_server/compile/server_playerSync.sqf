@@ -9,6 +9,7 @@ private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_curr
 
 _character = _this select 0;
 _magazines = _this select 1;
+local _dayz_onBack = _this select 2;
 _characterID = _character getVariable ["characterID","0"];
 _playerUID = getPlayerUID _character;
 _charPos = getPosATL _character;
@@ -58,10 +59,8 @@ _killsB = _statsDiff select 4;
 _charPosLen = count _charPos;
 
 if (!isNil "_magazines") then {
-	if (typeName _magazines == "ARRAY") then {
-		_playerGear = [weapons _character,_magazines select 0,_magazines select 1];
-		_character setVariable["ServerMagArray",_magazines, false];
-	};
+	_playerGear = [weapons _character,_magazines,_dayz_onBack];
+	_character setVariable["ServerMagArray",[_magazines,_dayz_onBack], false];
 } else {
 	//check Magazines everytime they aren't sent by player_forceSave
 	_magTemp = (_lastMagazines select 0);

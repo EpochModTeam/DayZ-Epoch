@@ -240,7 +240,7 @@ while {1 == 1} do {
 			player setVariable ["USEC_lowBlood",true,true];
 		};
 	} else {
-		if (_lowBlood && {!r_player_injured}) then {
+		if (_lowBlood && !r_player_injured) then {
 			player setVariable ["USEC_lowBlood",false,true];
 			r_player_lowblood = false;
 		};
@@ -260,7 +260,7 @@ while {1 == 1} do {
 	if (dayz_unsaved || {(diag_ticktime - dayz_lastSave) > 300}) then {
 		if ((diag_ticktime - dayz_lastSave) > _saveTime) then {
 
-			PVDZ_plr_Save = [player,nil,false];
+			PVDZ_plr_Save = [player,nil,dayz_onBack];
 			publicVariableServer "PVDZ_plr_Save";
 			dayz_unsaved = false;
 			dayz_lastSave = diag_ticktime;
