@@ -114,6 +114,7 @@ class Category_42 {
 	class KamazReammo_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
 	class MTVR_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class MTVR_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class MTVR_Open_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class MtvrRepair_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class MtvrReammo_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class T810A_ACR_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};

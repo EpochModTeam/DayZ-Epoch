@@ -331,3 +331,57 @@ class MtvrReammo_DZE4: MtvrReammo_DZE3 {
 	displayName = "$STR_VEH_NAME_MTVR_WEAPONS++++";
 	fuelCapacity = 615;	
 };
+
+class MTVR_Open_DZE: MTVR {
+	scope = 2;
+	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_OPEN";
+	model = "\z\addons\dayz_epoch_v\vehicles\mtvr\dze_mtvr";
+	vehicleClass = "DayZ Epoch Vehicles";
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	supplyRadius = 2.6;
+
+	class Upgrades {
+		ItemTruckORP[] = {"MTVR_Open_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class MTVR_Open_DZE1: MTVR_Open_DZE {
+	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_OPEN+";
+	original = "MTVR_Open_DZE";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"MTVR_Open_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class MTVR_Open_DZE2: MTVR_Open_DZE1 {
+	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_OPEN++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"MTVR_Open_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class MTVR_Open_DZE3: MTVR_Open_DZE2 {
+	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_OPEN+++";
+	transportMaxWeapons = 100;
+	transportMaxMagazines = 400;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"MTVR_Open_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class MTVR_Open_DZE4: MTVR_Open_DZE3 {
+	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_OPEN++++";
+	fuelCapacity = 615;	
+};

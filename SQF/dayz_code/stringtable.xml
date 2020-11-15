@@ -8948,29 +8948,29 @@
 			<German>Gepanzerter Bus</German>
 		</Key>		
 		<Key ID="STR_VEH_NAME_KAMAZ">
-			<English>Kamaz open (Woodland)</English>
+			<English>Kamaz Open (Woodland)</English>
 			<Russian>Камаз открытый (Лесной камуфляж)</Russian>
-			<German>Kamaz offen (Waldtarn)</German>
+			<German>Kamaz Offen (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ+">
-			<English>Kamaz open (Woodland)+</English>
+			<English>Kamaz Open (Woodland)+</English>
 			<Russian>Камаз открытый (Лесной камуфляж)+</Russian>
-			<German>Kamaz offen (Waldtarn)+</German>
+			<German>Kamaz Offen (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ++">
-			<English>Kamaz open (Woodland)++</English>
+			<English>Kamaz Open (Woodland)++</English>
 			<Russian>Камаз открытый (Лесной камуфляж)++</Russian>
-			<German>Kamaz offen (Waldtarn)++</German>
+			<German>Kamaz Offen (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ+++">
-			<English>Kamaz open (Woodland)+++</English>
+			<English>Kamaz Open (Woodland)+++</English>
 			<Russian>Камаз открытый (Лесной камуфляж)+++</Russian>
-			<German>Kamaz offen (Waldtarn)+++</German>
+			<German>Kamaz Offen (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ++++">
-			<English>Kamaz open (Woodland)++++</English>
+			<English>Kamaz Open (Woodland)++++</English>
 			<Russian>Камаз открытый (Лесной камуфляж)++++</Russian>
-			<German>Kamaz offen (Waldtarn)++++</German>
+			<German>Kamaz Offen (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT">
 			<English>Kamaz (Woodland)</English>
@@ -9073,24 +9073,24 @@
 			<German>Kamaz Waffentransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER">
-			<English>Kamaz open (Winter)</English>
-			<German>Kamaz offen (Winter)</German>
+			<English>Kamaz Open (Winter)</English>
+			<German>Kamaz Offen (Winter)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER+">
-			<English>Kamaz open (Winter)+</English>
-			<German>Kamaz offen (Winter)+</German>
+			<English>Kamaz Open (Winter)+</English>
+			<German>Kamaz Offen (Winter)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER++">
-			<English>Kamaz open (Winter)++</English>
-			<German>Kamaz offen (Winter)++</German>
+			<English>Kamaz Open (Winter)++</English>
+			<German>Kamaz Offen (Winter)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER+++">
-			<English>Kamaz open (Winter)+++</English>
-			<German>Kamaz offen (Winter)+++</German>
+			<English>Kamaz Open (Winter)+++</English>
+			<German>Kamaz Offen (Winter)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER++++">
-			<English>Kamaz open (Winter)++++</English>
-			<German>Kamaz offen (Winter)++++</German>
+			<English>Kamaz Open (Winter)++++</English>
+			<German>Kamaz Offen (Winter)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER">
 			<English>Kamaz (Winter)</English>
@@ -10036,6 +10036,31 @@
 			<Russian>MVTR Оружейный (Лесной камуфляж)++++</Russian>
 			<German>MVTR Waffentransport (Waldtarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN">
+			<English>MTVR Open (Woodland)</English>
+			<Russian>MTVR открытый (Лесной камуфляж)</Russian>
+			<German>MTVR Offen (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN+">
+			<English>MTVR Open (Woodland)+</English>
+			<Russian>MTVR открытый (Лесной камуфляж)+</Russian>
+			<German>MTVR Offen (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN++">
+			<English>MTVR Open (Woodland)++</English>
+			<Russian>MTVR открытый (Лесной камуфляж)++</Russian>
+			<German>MTVR Offen (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN+++">
+			<English>MTVR Open (Woodland)+++</English>
+			<Russian>MTVR открытый (Лесной камуфляж)+++</Russian>
+			<German>MTVR Offen (Waldtarn)+++</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN++++">
+			<English>MTVR Open (Woodland)++++</English>
+			<Russian>MTVR открытый (Лесной камуфляж)++++</Russian>
+			<German>MTVR Offen (Waldtarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND">
 			<English>Tatra (Woodland)</English>
 			<German>Tatra (Waldtarn)</German>
@@ -11332,24 +11357,24 @@
 			<English>Ural (CDF)++++</English>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN">
-			<English>Ural open (CDF)</English>
-			<German>Ural offen (CDF)</German>
+			<English>Ural Open (CDF)</English>
+			<German>Ural Offen (CDF)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN+">
-			<English>Ural open (CDF)+</English>
-			<German>Ural offen (CDF)+</German>
+			<English>Ural Open (CDF)+</English>
+			<German>Ural Offen (CDF)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN++">
-			<English>Ural open (CDF)++</English>
-			<German>Ural offen (CDF)++</German>
+			<English>Ural Open (CDF)++</English>
+			<German>Ural Offen (CDF)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN+++">
-			<English>Ural open (CDF)+++</English>
-			<German>Ural offen (CDF)+++</German>
+			<English>Ural Open (CDF)+++</English>
+			<German>Ural Offen (CDF)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CDF_OPEN++++">
-			<English>Ural open (CDF)++++</English>
-			<German>Ural offen (CDF)++++</German>
+			<English>Ural Open (CDF)++++</English>
+			<German>Ural Offen (CDF)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_UN">
 			<English>Ural (UN)</English>
@@ -11442,29 +11467,29 @@
 			<German>Ural (Zivil)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN">
-			<English>Ural open (Civil)</English>
+			<English>Ural Open (Civil)</English>
 			<Russian>Ural открытый (Гражданский)</Russian>
-			<German>Ural offen (Zivil)</German>
+			<German>Ural Offen (Zivil)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN+">
-			<English>Ural open (Civil)+</English>
+			<English>Ural Open (Civil)+</English>
 			<Russian>Ural открытый (Гражданский)+</Russian>
-			<German>Ural offen (Zivil)+</German>
+			<German>Ural Offen (Zivil)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN++">
-			<English>Ural open (Civil)++</English>
+			<English>Ural Open (Civil)++</English>
 			<Russian>Ural открытый (Гражданский)++</Russian>
-			<German>Ural offen (Zivil)++</German>
+			<German>Ural Offen (Zivil)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN+++">
-			<English>Ural open (Civil)+++</English>
+			<English>Ural Open (Civil)+++</English>
 			<Russian>Ural открытый (Гражданский)+++</Russian>
-			<German>Ural offen (Zivil)+++</German>
+			<German>Ural Offen (Zivil)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CIVIL_OPEN++++">
-			<English>Ural open (Civil)++++</English>
+			<English>Ural Open (Civil)++++</English>
 			<Russian>Ural открытый (Гражданский)++++</Russian>
-			<German>Ural offen (Zivil)++++</German>
+			<German>Ural Offen (Zivil)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL">
 			<English>Ural Fuel (Woodland)</English>
@@ -11507,24 +11532,24 @@
 			<English>Ural (Winter)++++</English>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN">
-			<English>Ural open (Winter)</English>
-			<German>Ural offen (Winter)</German>
+			<English>Ural Open (Winter)</English>
+			<German>Ural Offen (Winter)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN+">
-			<English>Ural open (Winter)+</English>
-			<German>Ural offen (Winter)+</German>
+			<English>Ural Open (Winter)+</English>
+			<German>Ural Offen (Winter)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN++">
-			<English>Ural open (Winter)++</English>
-			<German>Ural offen (Winter)++</German>
+			<English>Ural Open (Winter)++</English>
+			<German>Ural Offen (Winter)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN+++">
-			<English>Ural open (Winter)+++</English>
-			<German>Ural offen (Winter)+++</German>
+			<English>Ural Open (Winter)+++</English>
+			<German>Ural Offen (Winter)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN++++">
-			<English>Ural open (Winter)++++</English>
-			<German>Ural offen (Winter)++++</German>
+			<English>Ural Open (Winter)++++</English>
+			<German>Ural Offen (Winter)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER">
 			<English>Ural Fuel (Winter)</English>
@@ -11612,29 +11637,29 @@
 			<German>V3S Treibstoff (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN">
-			<English>V3S open (Civil)</English>
+			<English>V3S Open (Civil)</English>
 			<Russian>V3S открытый (Гражданский)</Russian>
-			<German>V3S offen (Zivil)</German>
+			<German>V3S Offen (Zivil)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN+">
-			<English>V3S open (Civil)+</English>
+			<English>V3S Open (Civil)+</English>
 			<Russian>V3S открытый (Гражданский)+</Russian>
-			<German>V3S offen (Zivil)+</German>
+			<German>V3S Offen (Zivil)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN++">
-			<English>V3S open (Civil)++</English>
+			<English>V3S Open (Civil)++</English>
 			<Russian>V3S открытый (Гражданский)++</Russian>
-			<German>V3S offen (Zivil)++</German>
+			<German>V3S Offen (Zivil)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN+++">
-			<English>V3S open (Civil)+++</English>
+			<English>V3S Open (Civil)+++</English>
 			<Russian>V3S открытый (Гражданский)+++</Russian>
-			<German>V3S offen (Zivil)+++</German>
+			<German>V3S Offen (Zivil)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN++++">
-			<English>V3S open (Civil)++++</English>
+			<English>V3S Open (Civil)++++</English>
 			<Russian>V3S открытый (Гражданский)++++</Russian>
-			<German>V3S offen (Zivil)++++</German>
+			<German>V3S Offen (Zivil)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_WHITE">
 			<English>V3S (White)</English>
@@ -11657,29 +11682,29 @@
 			<German>V3S (Weiß)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN">
-			<English>V3S open (Woodland)</English>
-			<Russian>V3S open (Лесной камуфляж)</Russian>
-			<German>V3S offen (Waldtarn)</German>
+			<English>V3S Open (Woodland)</English>
+			<Russian>V3S Open (Лесной камуфляж)</Russian>
+			<German>V3S Offen (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN+">
-			<English>V3S open (Woodland)+</English>
-			<Russian>V3S open (Лесной камуфляж)+</Russian>
-			<German>V3S offen (Waldtarn)+</German>
+			<English>V3S Open (Woodland)+</English>
+			<Russian>V3S Open (Лесной камуфляж)+</Russian>
+			<German>V3S Offen (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN++">
-			<English>V3S open (Woodland)++</English>
-			<Russian>V3S open (Лесной камуфляж)++</Russian>
-			<German>V3S offen (Waldtarn)++</German>
+			<English>V3S Open (Woodland)++</English>
+			<Russian>V3S Open (Лесной камуфляж)++</Russian>
+			<German>V3S Offen (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN+++">
-			<English>V3S open (Woodland)+++</English>
-			<Russian>V3S open (Лесной камуфляж)+++</Russian>
-			<German>V3S offen (Waldtarn)+++</German>
+			<English>V3S Open (Woodland)+++</English>
+			<Russian>V3S Open (Лесной камуфляж)+++</Russian>
+			<German>V3S Offen (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN++++">
-			<English>V3S open (Woodland)++++</English>
-			<Russian>V3S open (Лесной камуфляж)++++</Russian>
-			<German>V3S offen (Waldtarn)++++</German>
+			<English>V3S Open (Woodland)++++</English>
+			<Russian>V3S Open (Лесной камуфляж)++++</Russian>
+			<German>V3S Offen (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_ARMORED">
 			<English>V3S (Armored)</English>
