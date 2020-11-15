@@ -18,12 +18,12 @@ _humanity = 0;
 _name = if (alive _character) then {name _character} else {"Dead Player"};
 _inDebug = (respawn_west_original distance _charPos) < 1500;
 
-_exitReason = switch true do {
-	case (isNil "_characterID"): {("ERROR: Cannot Sync Character " + _name + " has nil characterID")}; //Unit is null
-	case (_inDebug): {format["INFO: Cannot Sync Character %1 near respawn_west %2. This is normal when relogging or changing clothes.",_name,_charPos]};
-	case (_characterID == "0"): {("ERROR: Cannot Sync Character " + _name + " has no characterID")};
-	case (_character isKindOf "Animal"): {("ERROR: Cannot Sync Character " + _name + " is an Animal class")};
-	default {"none"};
+_exitReason = call {
+	if (isNil "_characterID") exitwith {("ERROR: Cannot Sync Character " + _name + " has nil characterID")}; //Unit is null
+	if (_inDebug) exitwith {format["INFO: Cannot Sync Character %1 near respawn_west %2. This is normal when relogging or changing clothes.",_name,_charPos]};
+	if (_characterID == "0") exitwith {("ERROR: Cannot Sync Character " + _name + " has no characterID")};
+	if (_character isKindOf "Animal") exitwith {("ERROR: Cannot Sync Character " + _name + " is an Animal class")};
+	"none";
 };
 
 if (_exitReason != "none") exitWith {
@@ -123,11 +123,11 @@ if (_lastTime == -1) then {
 /*
 	Get character state details
 */
-_currentWpn = 	currentMuzzle _character;
+_currentWpn = currentMuzzle _character;
 _currentAnim =	animationState _character;
-_config = 		configFile >> "CfgMovesMaleSdr" >> "States" >> _currentAnim;
-_onLadder =		(getNumber (_config >> "onLadder")) == 1;
-_isTerminal = 	(getNumber (_config >> "terminal")) == 1;
+_config = configFile >> "CfgMovesMaleSdr" >> "States" >> _currentAnim;
+_onLadder = (getNumber (_config >> "onLadder")) == 1;
+_isTerminal = (getNumber (_config >> "terminal")) == 1;
 //_wpnDisabled =	(getNumber (_config >> "disableWeapons")) == 1;
 _currentModel = typeOf _character;
 if (_currentModel == _modelChk) then {
@@ -136,6 +136,12 @@ if (_currentModel == _modelChk) then {
 	_currentModel = str _currentModel;
 	_character setVariable ["model_CHK",typeOf _character];
 };
+
+// If player is in a vehicle, keep its position updated
+if (vehicle _character != _character) then {
+	[vehicle _character, "position"] call server_updateObject;
+};
+
 if (count _this > 4) then { //calling from player_onDisconnect
 	if (_this select 4) then { //combat logged
 		_medical set [1, true]; //set unconcious to true
@@ -144,18 +150,18 @@ if (count _this > 4) then { //calling from player_onDisconnect
 		//_character setVariable ["unconsciousTime",150,true]; // Set knock out timer to 2 minutes 30 seconds
 		//_character setVariable ["USEC_injured",true]; // Set status to bleeding
 		//_character setVariable ["USEC_BloodQty",3000]; // Set blood to 3000
-	};	
+	};
 	if (_isInVehicle) then {
 		//if the player object is inside a vehicle lets eject the player
 		_relocate = ((vehicle _character isKindOf "Air") && (_charPos select 2 > 1.5));
 		_character action ["eject", vehicle _character];
-		
+
 		// Prevent relog in parachute, heli or plane above base exploit to get inside
 		if (_relocate) then {
 			_count = 0;
 			_maxDist = 800;
 			_newPos = [_charPos, 80, _maxDist, 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
-			
+
 			while {_newPos distance _charPos == 0} do {
 				_count = _count + 1;
 				if (_count > 4) exitWith {_newPos = _charPos;}; // Max 4km away fail safe (needs to finish fast so server_playerSync runs below)
@@ -172,7 +178,7 @@ if (_onLadder or _isInVehicle or _isTerminal) then {
 	//If position to be updated, make sure it is at ground level!
 	if ((count _playerPos > 0) && !_isTerminal) then {
 		_charPos set [2,0];
-		_playerPos set [1,_charPos];					
+		_playerPos set [1,_charPos];
 	};
 };
 if (_isInVehicle) then {
@@ -180,18 +186,13 @@ if (_isInVehicle) then {
 } else {
 	if (typeName _currentWpn == "STRING") then {
 		_muzzles = getArray (configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
-		if (count _muzzles > 1) then {_currentWpn = currentMuzzle _character;};	
+		if (count _muzzles > 1) then {_currentWpn = currentMuzzle _character;};
 	} else {
 		//diag_log ("DW_DEBUG: _currentWpn: " + str(_currentWpn));
 		_currentWpn = "";
 	};
 };
 _currentState = [[_currentWpn,_currentAnim,_temp],[]];
-
-// If player is in a vehicle, keep its position updated
-if (vehicle _character != _character) then {
-	[vehicle _character, "position"] call server_updateObject;
-};
 
 //Reset timer
 if (_timeSince > 0) then {
