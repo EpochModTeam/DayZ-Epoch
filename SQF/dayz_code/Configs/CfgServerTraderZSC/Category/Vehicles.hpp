@@ -165,6 +165,8 @@ class Category_45 {
 	class Ikarus_White_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class S1203_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {600,"worth"};sell[] = {300,"worth"};};
 	class S1203_ambulance_EP1_DZE {type = "trade_any_vehicle";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class tractor_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
+	class Tractor_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
 	class TractorOld_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class Tractor_Armored_DZE {type = "trade_any_vehicle";buy[] = {-2000,"worth"};sell[] = {6000,"worth"};};
+	class ScrapAPC_DZE {type = "trade_any_vehicle";buy[] = {6000,"worth"};sell[] = {3000,"worth"};};
 };

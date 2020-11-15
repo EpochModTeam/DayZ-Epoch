@@ -165,6 +165,8 @@ class Category_45 {
 	class Ikarus_White_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class S1203_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class S1203_ambulance_EP1_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
-	class tractor_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
+	class Tractor_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
 	class TractorOld_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class Tractor_Armored_DZE {type = "trade_any_vehicle";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar10oz"};};
+	class ScrapAPC_DZE {type = "trade_any_vehicle";buy[] = {6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 };
