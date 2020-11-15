@@ -24,7 +24,7 @@ class Citizen1: Citizen {
 	};
 };	
 class Zed_Base : Citizen1 {
-	scope = 2;
+	scope = 0;
 	class HitDamage {};
 	armor = 3;
 	agentTasks[] = {};
@@ -180,16 +180,6 @@ class z_villager2 : z_villager1 {
 
 class z_villager3 : z_villager1 {
 	hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_v3_co.paa"};
-};
-
-class z_villagertest : z_villager1 {
-	hiddenSelectionsTextures[] = {"\ca\characters2\civil\villager\data\villager_v3_co.paa"};
-	class Eventhandlers
-	{
-		local = "_z = _this select 0; if (!(_this select 1)) exitWith {}; if (isServer) exitWith { _z call sched_co_deleteVehicle; }; [_z,true] call zombie_initialize;";
-		HandleDamage = "_this call local_zombieDamage;";
-		Killed = "[_this,'zombieKills'] call local_eventKill;";
-	};
 };
 
 class z_priest : zZombie_Base {
