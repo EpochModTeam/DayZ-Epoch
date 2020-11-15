@@ -48,8 +48,8 @@
 if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Raven Rock
-		["Functionary1_EP1_DZ",[1386.9,6941.33,0],93],
+		["Functionary1_EP1",[1386.9,6941.33,0],93],
 		//Raun
-		["Functionary1_EP1_DZ",[3946.33,886.11,0],261]
+		["Functionary1_EP1",[3946.33,886.11,0],261]
 	] call server_spawnTraders;
 };

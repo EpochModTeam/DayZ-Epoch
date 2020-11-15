@@ -59,10 +59,10 @@
 if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Nur
-		["Functionary1_EP1_DZ",[1964.39,12575,0],200],
+		["Functionary1_EP1",[1964.39,12575,0],200],
 		//Garmsar
-		["Functionary1_EP1_DZ",[10857.6,6325.05,0.44],129],
+		["Functionary1_EP1",[10857.6,6325.05,0.44],129],
 		//Khushab
-		["Functionary1_EP1_DZ",[431.039,5574.53,0],84]
+		["Functionary1_EP1",[431.039,5574.53,0],84]
 	] call server_spawnTraders;
 };

@@ -61,10 +61,10 @@
 if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Seedorf
-		["Functionary1_EP1_DZ",[15488.6,17014.2,0],172],
+		["Functionary1_EP1",[15488.6,17014.2,0],172],
 		//Oberdorf
-		["Functionary1_EP1_DZ",[13160.8,6624.8,0],134],
+		["Functionary1_EP1",[13160.8,6624.8,0],134],
 		//Oberberg
-		["Functionary1_EP1_DZ",[24738.5,21748.2,0],62]
+		["Functionary1_EP1",[24738.5,21748.2,0],62]
 	] call server_spawnTraders;
 };

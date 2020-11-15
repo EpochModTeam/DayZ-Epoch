@@ -63,10 +63,10 @@
 if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Camara
-		["Functionary1_EP1_DZ",[2001.31,1196.58,0],342],
+		["Functionary1_EP1",[2001.31,1196.58,0],342],
 		//Nubak
-		["Functionary1_EP1_DZ",[4959.47,5117.99,0],11],
+		["Functionary1_EP1",[4959.47,5117.99,0],11],
 		//Pinley
-		["Functionary1_EP1_DZ",[1286.47,9073.91,0],197]
+		["Functionary1_EP1",[1286.47,9073.91,0],197]
 	] call server_spawnTraders;
 };

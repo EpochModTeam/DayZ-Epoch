@@ -63,10 +63,10 @@
 if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Stary
-		["Functionary1_EP1_DZ",[6324.71,7787,0],64],
+		["Functionary1_EP1",[6324.71,7787,0],64],
 		//Bash
-		["Functionary1_EP1_DZ",[4057.35,11662.7,0],47],
+		["Functionary1_EP1",[4057.35,11662.7,0],47],
 		//Klen
-		["Functionary1_EP1_DZ",[11461,11348.6,0],312]
+		["Functionary1_EP1",[11461,11348.6,0],312]
 	] call server_spawnTraders;
 };

@@ -62,9 +62,9 @@
 // Bankers
 if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
-		["Functionary1_EP1_DZ",[12399.83,5054.3413,0.2],52],
-		["Functionary1_EP1_DZ",[15529.827,13236.555,2.38],164],
-		["Functionary1_EP1_DZ",[8252.4922,15494.612,0.22],24.5],
-		["Functionary1_EP1_DZ",[2123.4653,7806.499,0.28],53]
+		["Functionary1_EP1",[12399.83,5054.3413,0.2],52],
+		["Functionary1_EP1",[15529.827,13236.555,2.38],164],
+		["Functionary1_EP1",[8252.4922,15494.612,0.22],24.5],
+		["Functionary1_EP1",[2123.4653,7806.499,0.28],53]
 	] call server_spawnTraders;
 };

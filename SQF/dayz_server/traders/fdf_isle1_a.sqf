@@ -47,8 +47,8 @@
 if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Jesco
-		["Functionary1_EP1_DZ",[9662.23,10879.8,0],0],
+		["Functionary1_EP1",[9662.23,10879.8,0],0],
 		//Berezniki
-		["Functionary1_EP1_DZ",[7979.71,10577.8,0.1],292]
+		["Functionary1_EP1",[7979.71,10577.8,0.1],292]
 	] call server_spawnTraders;
 };

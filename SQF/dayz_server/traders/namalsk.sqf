@@ -31,10 +31,10 @@
 if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Sebjan
-		["Functionary1_EP1_DZ",[6215.8,9177.55,0],133],
+		["Functionary1_EP1",[6215.8,9177.55,0],133],
 		//Hero
-		["Functionary1_EP1_DZ",[8888.08,10759.4,0],114],
+		["Functionary1_EP1",[8888.08,10759.4,0],114],
 		//Bandit
-		["Functionary1_EP1_DZ",[7268.28,5810.53,0],82]
+		["Functionary1_EP1",[7268.28,5810.53,0],82]
 	] call server_spawnTraders;
 };
