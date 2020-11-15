@@ -8924,6 +8924,10 @@
 			<German>Alter Traktor</German>
 			<Russian>Старый трактор</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_TRACTOR_ARMORED">
+			<English>Armored Tractor</English>
+			<German>Gepanzerter Traktor</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_IKARUS_RED">
 			<English>Bus (Red)</English>
 			<German>Bus (Rot)</German>
