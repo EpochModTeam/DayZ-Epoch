@@ -100,6 +100,22 @@ class Ikarus_White_DZE: Ikarus_DZE {
 		{
 			hitpoint = "HitRBWheel";
 		};
+		class HitLF2Wheel: HitLFWheel
+		{
+			hitpoint = "HitLF2Wheel";
+		};
+		class HitRF2Wheel: HitLFWheel
+		{
+			hitpoint = "HitRF2Wheel";
+		};
+		class HitLMWheel: HitLFWheel
+		{
+			hitpoint = "HitLMWheel";
+		};
+		class HitRMWheel: HitLFWheel
+		{
+			hitpoint = "HitRMWheel";
+		};			
 	};	
 	class Damage
 	{
