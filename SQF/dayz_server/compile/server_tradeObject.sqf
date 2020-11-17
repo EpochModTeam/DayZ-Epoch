@@ -1,26 +1,33 @@
-private ["_player","_playerUID","_name","_traderid","_buyorsell","_data","_result","_key","_outcome","_clientID","_price","_quantity","_container","_return","_classname","_traderCity","_currency","_message"];
+local _player = _this select 0;
+local _traderID = _this select 1;
+local _buyorsell = _this select 2;	//0 > Buy // 1 > Sell
+local _classname = _this select 3;
+local _traderCity = _this select 4;
+local _currency = _this select 5;
+local _price = _this select 6;
 
-_player =		_this select 0;
-_traderID = 	_this select 1;
-_buyorsell = 	_this select 2;	//0 > Buy // 1 > Sell
-_classname =	_this select 3;
-_traderCity = 	_this select 4;
-_currency =		_this select 5;
-_price =		_this select 6;
-
-_clientID = 	owner _player;
-_playerUID = 	getPlayerUID _player;
-_name = 		if (alive _player) then {name _player} else {"Dead Player"};
+local _message = "";
+local _playerUID = getPlayerUID _player;
+local _name = if (alive _player) then {name _player} else {"Dead Player"};
+local _quantity = 1;
+local _container = "gear";
 
 if (count _this > 7) then {
 	_quantity = _this select 7;
-	_container = _this select 8;
-	_return = false;
-} else {
-	_quantity = 1;
-	_container = "gear";
-	_return = true;
+	_container = _this select 8;	
 };
+
+local _checkItems = true; //	Activate this to log all items within the '_watchClasses'. Specify the quantity with '_watchNumber' when the sold items will be logged.
+
+if (_checkItems) then {
+	local _watchClasses = ["ItemBriefcase40oz","ItemBriefcase50oz","ItemBriefcase60oz","ItemBriefcase70oz","ItemBriefcase80oz","ItemBriefcase90oz","ItemBriefcase100oz","ItemTopaz","ItemObsidian","ItemSapphire","ItemAmethyst","ItemEmerald","ItemCitrine","ItemRuby"]; // Items to be logged
+	local _watchNumber = 4; // Minimum number of quantity before logging occurs
+
+	if (_quantity >= _watchNumber && {_className in _watchClasses} && {_buyOrSell == 1}) then {
+		_message = format ["%1 (%2) could be duping! Selling %3x %4",_name,_playerUID,_quantity,_className];
+		diag_log _message;
+	};
+};	
 
 if (typeName _currency  == "STRING") then {_price = format ["%1 %2",_price,_currency];};
 
@@ -31,11 +38,3 @@ if (_buyorsell == 0) then { // Buy
 };
 
 diag_log _message;
-_outcome = "PASS";
-
-if (_return) then {
-	dayzTradeResult = _outcome;
-	if (!isNull _player) then {
-		_clientID publicVariableClient "dayzTradeResult";
-	};
-};
