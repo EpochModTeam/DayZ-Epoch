@@ -307,11 +307,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 			player removeAction s_player_fillfuel5;
 			s_player_fillfuel5 = -1;
 		};
-		/*
-			Vanilla generator is currently not functional.
-			Vanilla generator refuel actions removed for now.
-			Epoch generator fill action is below.
-		*/
+
 		//Allow player to siphon vehicles
 		if (_hasEmptyFuelCan && !_isBicycle && {fuel _cursorTarget > 0}) then {
 			if (s_player_siphonfuel < 0) then {

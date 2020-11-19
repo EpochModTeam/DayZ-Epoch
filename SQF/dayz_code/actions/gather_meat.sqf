@@ -55,8 +55,6 @@ if ((count _knifeArray > 0) and !_hasHarvested) then {
 	} else {
 		PVCDZ_obj_GutBody =[_item,_qty];
 		publicVariable "PVCDZ_obj_GutBody";
-
-		//if (!achievement_Gut) then {achievement_Gut = true;};
 	};
 
 	["knives",0.2] call fn_dynamicTool;

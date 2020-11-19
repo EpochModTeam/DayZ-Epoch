@@ -31,20 +31,7 @@ if (local _animalbody) then {
 		};
 		hideBody _body;
 		
-		//No need to let everyone on the server know.
-		//PVCDZ_obj_HideBody = _body;
-		//publicVariable "PVCDZ_obj_HideBody"; // remote player
-		
-		//Send to server let everyone in 100 meters of the body know its just been hidden.
-		_inRange = _pos nearEntities ["CAManBase",100];
-		{
-			if ((isPlayer _x) && {_x != player}) then {
-				PVDZ_send = [_x,"HideBody",[_body]];
-				publicVariableServer "PVDZ_send";
-			};
-		} count _inRange;
-		
-		uiSleep 5;
+		uiSleep 10;
 		deleteVehicle _body;
 		true
 	};

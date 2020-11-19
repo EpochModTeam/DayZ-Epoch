@@ -61,11 +61,6 @@ call {
 		_owner publicVariableClient "PVCDZ_obj_GutBody";
 	};
 	
-	if (_variable == "HideBody") exitWith {
-		PVCDZ_obj_HideBody = _arraytosend select 0;
-		_owner publicVariableClient "PVCDZ_obj_HideBody";
-	};
-	
 	if (_variable == "Humanity") exitWith {
 		PVCDZ_plr_Humanity = _arraytosend select 0;
 		_owner publicVariableClient "PVCDZ_plr_Humanity";
