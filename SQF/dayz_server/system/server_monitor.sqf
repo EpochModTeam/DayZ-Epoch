@@ -418,45 +418,6 @@ publicVariable "sm_done";
 
 execVM "\z\addons\dayz_server\system\lit_fireplaces.sqf";
 
-"PVDZ_sec_atp" addPublicVariableEventHandler {
-	private ["_y","_unit","_source"];
-
-	_y = _this select 1;
-
-	call {
-		if (typeName _y == "STRING") exitwith { // just some logs from the client
-			diag_log _y;
-		};
-		if (count _y == 2) exitwith { // wrong side
-			diag_log format["P1ayer %1 reports possible 'side' hack. Server may be compromised!",(_y select 1) call fa_plr2Str];
-		};
- 		// player hit
-		_unit = _y select 0;
-		_source = _y select 1;
-		if (!isNull _source) then {
-			diag_log format ["P1ayer %1 hit by %2 %3 from %4 meters in %5 for %6 damage",
-				_unit call fa_plr2Str, if (!isPlayer _source && alive _source) then {"AI"} else {_source call fa_plr2Str}, _y select 2, _y select 3, _y select 4, _y select 5];
-		};
-	};
-};
-
-"PVDZ_objgather_Knockdown" addPublicVariableEventHandler {
-	private ["_tree", "_player", "_dis", "_name", "_uid", "_treeModel"];
-
-	_tree = (_this select 1) select 0;
-	_player = (_this select 1) select 1;
-	_dis = _player distance _tree;
-	_name = if (alive _player) then {name _player} else {"DeadPlayer"};
-	_uid = getPlayerUID _player;
-	_treeModel = _tree call fn_getModelName;
-
-	if (_dis < 30 && {_treeModel in dayz_trees or (_treeModel in dayz_plant)} && {_uid != ""}) then {
-		_tree setDamage 1;
-		dayz_choppedTrees set [count dayz_choppedTrees,_tree];
-		diag_log format["Server setDamage on tree or plant %1 chopped down by %2(%3)",_treeModel,_name,_uid];
-	};
-};
-
 if (_hiveLoaded) then {
 	_serverVehicleCounter spawn {
 		private ["_startTime","_cfgLootFile","_vehLimit"];

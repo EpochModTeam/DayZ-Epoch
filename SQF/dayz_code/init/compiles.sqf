@@ -910,3 +910,57 @@ fnc_lockCode = {
 
 	_code
 };
+
+//	Enable this if your server got nuked on Chernarus or Chernarus Winter.
+/*
+if (toLower worldName in ["chernarus","chernarus_winter"]) then { //need to add building coordinates for other maps
+	{
+		local _fckingcode = {
+			local _building = _this select 0;
+			local _part = _this select 1;
+			local _dmgLvl = 1 min (_this select 2);
+			local _who = _this select 3;
+			local _ammo = _this select 4;			
+			if (_part != 'glass' && _dmgLvl > 0.01) then {
+				if (isServer) then {
+					diag_log ['Log building damage', _this];
+				} else {
+					local _dis = 0;
+					if (isNull _who) then {
+						if (_ammo != "" && _ammo isKindOf "HelicopterExploSmall") then {
+							_who = player;
+							_dist = round (_who distance _building);
+							PVDZ_sec_atp = format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
+								getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist];
+							publicVariableServer "PVDZ_sec_atp";
+						};
+					} else {
+						if (_who == player) then {
+							_dist = round (_who distance _building);
+							PVDZ_sec_atp = format ["UID#%1 d4maged %2 %5 to %3pct with ammo %4 at dist4nce %6m.",
+								getPlayerUID _who, typeOf _building, round (100 * _dmgLvl), _ammo, _part, _dist];
+							publicVariableServer "PVDZ_sec_atp";
+						};
+					};
+				};
+			};
+			if ((!isNull _who) && {(_who distance _building < 150)}) then {_dmgLvl} else {0}
+		};
+		local _building = [_x select 0,_x select 1,0] nearestObject (_x select 2);
+		_building removeAllEventHandlers "handleDamage";
+		_building addEventHandler ["handleDamage", _fckingcode];
+	} forEach [
+		[7069,7727,206458], [6009,7815,203486], [10638,8016,272598], [6553,5598,223435], [6914,11431,141876],
+		[4660,9596,145234], [4788,10257,143923], [11467,7479,276453], [4628,10489,137736], [4551,6395,212964],
+		[3815,8948,132069], [3804,8925,132182], [11957,9120,261904], [12031,9158,261252], [12057,9103,261945],
+		[12227,9518,256625], [12237,9493,262727], [12256,9508,262732], [12275,9479,262631], [3064,7975,172476],
+		[3055,7855,172835], [12742,9593,259691], [11254,12210,236245], [12780,10128,257815], [12805,10089,258268],
+		[12803,10119,258288], [11251,4274,353940], [13100,7177,297715], [7098,2738,966951], [6817,2702,966613],
+		[6379,2791,965644], [6414,2760,965688], [6371,2747,965657], [6386,2735,965658], [6410,2716,965659],
+		[6383,2691,965643], [6899,2561,969372], [6854,2556,969371], [6770,2525,968272], [6901,2484,969736],
+		[6783,2485,968116], [6507,2532,967694], [6835,2388,969223], [6578,2402,968509], [6661,2345,968949],
+		[6679,2302,969332], [2587,5069,188570], [6537,2302,968797], [10424,2562,362226], [10420,2368,363222],
+		[10443,2345,363318], [10481,2358,363308], [10365,2241,363748], [10518,2288,364628], [10457,2256,363454],
+		[10174,1810,366820], [3589,2175,328944]
+	];
+};*/

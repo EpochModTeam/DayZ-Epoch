@@ -53,10 +53,8 @@ spawn_vehicles = compile preprocessFileLineNumbers "\z\addons\dayz_server\compil
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_changeCode.sqf";
 
 server_medicalSync = {
-	private ["_player","_array"];
-
-	_player = _this select 0;
-	_array = _this select 1;
+	local _player = _this select 0;
+	local _array = _this select 1;
 
 	_player setVariable ["USEC_isDead",(_array select 0)]; //0
 	_player setVariable ["NORRN_unconscious",(_array select 1)]; //1
@@ -74,21 +72,9 @@ server_medicalSync = {
 	_player setVariable ["messing",(_array select 13)]; //13
 	_player setVariable ["blood_testdone",(_array select 14)]; //14
 };
-/*
-dayz_Achievements = {
-	_achievementID = (_this select 0) select 0;
-	_player = (_this select 0) select 1;
-	_playerOwnerID = owner _player;
-
-	_achievements = _player getVariable "Achievements";
-	_achievements set [_achievementID,1];
-	_player setVariable ["Achievements",_achievements];
-};
-*/
 
 vehicle_handleServerKilled = {
-	private "_unit";
-	_unit = _this select 0;
+	local _unit = _this select 0;
 
 	[_unit,"killed",false,false,"SERVER",dayz_serverKey] call server_updateObject;
 	_unit removeAllMPEventHandlers "MPKilled";
@@ -99,22 +85,20 @@ vehicle_handleServerKilled = {
 };
 
 check_publishobject = {
-	private ["_saveObject","_allowed","_object","_playername"];
-
-	_object = _this select 0;
-	_playername = _this select 1;
-	_allowed = false;
+	local _object = _this select 0;
+	local _playername = _this select 1;
+	local _allowed = false;	
 
 	#ifdef OBJECT_DEBUG
 		diag_log format["DEBUG: Checking if Object: %1 is allowed, published by %2",_object,_playername];
 	#endif
 
-	if ((typeOf _object) in DayZ_SafeObjects) then {
-		_saveObject = "DayZ_SafeObjects";
+	if ((typeOf _object) in DayZ_SafeObjects) then {		
 		_allowed = true;
 	};
 
 	#ifdef OBJECT_DEBUG
+		local _saveObject = "DayZ_SafeObjects";
 		diag_log format["DEBUG: Object: %1 published by %2 is allowed by %3",_object,_playername,_saveObject];
 	#endif
 
@@ -122,19 +106,17 @@ check_publishobject = {
 };
 
 server_hiveWrite = {
-	private "_data";
 	//diag_log ("ATTEMPT WRITE: " + _this);
-	_data = "HiveExt" callExtension _this;
+	local _data = "HiveExt" callExtension _this;
 	//diag_log ("WRITE: " +str(_data));
 };
 
 server_hiveReadWrite = {
-	private ["_key","_resultArray","_data"];
-	_key = _this;
+	local _key = _this;
 	//diag_log ("ATTEMPT READ/WRITE: " + _key);
-	_data = "HiveExt" callExtension _key;
+	local _data = "HiveExt" callExtension _key;
 	//diag_log ("READ/WRITE: " +str(_data));
-	_resultArray = call compile str formatText["%1", _data];
+	local _resultArray = call compile str formatText["%1", _data];
 	if (isNil "_resultArray") then {_resultArray = "HIVE CONNECTION ERROR";};
 	_resultArray
 };
@@ -142,11 +124,12 @@ server_hiveReadWrite = {
 onPlayerDisconnected "[_uid,_name] call server_onPlayerDisconnect;";
 
 server_getStatsDiff = {
-	private ["_player","_playerUID","_new","_old","_result","_statsArray"];
-	_player = _this select 0;
-	_playerUID = _this select 1;
-	_result = [];
-	_statsArray = missionNamespace getVariable _playerUID;
+	local _player = _this select 0;
+	local _playerUID = _this select 1;
+	local _result = [];
+	local _statsArray = missionNamespace getVariable _playerUID;
+	local _new = 0;
+	local _old = 0;
 
 	if (isNil "_statsArray") exitWith {
 		diag_log format["Server_getStatsDiff error: playerUID %1 not found on server",_playerUID];
@@ -169,84 +152,76 @@ server_getStatsDiff = {
 
 //seems max is 19 digits
 dayz_objectUID2 = {
-    private["_position","_dir","_time" ,"_key"];
-	_dir = _this select 0;
-	_time = round diag_tickTime;
+	local _dir = _this select 0;
+	local _time = round diag_tickTime;
 	if (_time > 99999) then {_time = round(random 99999);}; //prevent overflow if server isn't restarted
-	_key = "";
-	_position = _this select 1;
+	local _key = "";
+	local _position = _this select 1;
 	_key = format["%1%2%3%4", round(_time + abs(_position select 0)), round(_dir), round(abs(_position select 1)), _time];
 	_key;
 };
 
 dayz_recordLogin = {
-	private ["_key","_status","_name"];
-	_key = format["CHILD:103:%1:%2:%3:",_this select 0,_this select 1,_this select 2];
+	local _key = format["CHILD:103:%1:%2:%3:",_this select 0,_this select 1,_this select 2];
 	_key call server_hiveWrite;
 
-	_status = call {
+	local _status = call {
 		if ((_this select 2) == 0) exitwith { "CLIENT LOADED & PLAYING" };
 		if ((_this select 2) == 1) exitwith { "LOGIN PUBLISHING, Location " +(_this select 4) };
 		if ((_this select 2) == 2) exitwith { "LOGGING IN" };
 		if ((_this select 2) == 3) exitwith { "LOGGED OUT, Location " +(_this select 4) };
 	};
 
-	_name = if (typeName (_this select 3) == "ARRAY") then { toString (_this select 3) } else { _this select 3 };
+	local _name = if (typeName (_this select 3) == "ARRAY") then { toString (_this select 3) } else { _this select 3 };
 	diag_log format["INFO - Player: %1(UID:%3/CID:%4) Status: %2",_name,_status,(_this select 0),(_this select 1)];
 };
 
 generate_new_damage = {
-	private "_damage";
-    _damage = ((random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow))+DynamicVehicleDamageLow) / 100;
+    local _damage = ((random(DynamicVehicleDamageHigh-DynamicVehicleDamageLow))+DynamicVehicleDamageLow) / 100;
 	_damage
 };
 
 server_hiveReadWriteLarge = {
-	private["_key","_resultArray","_data"];
-	_key = _this;
-	_data = "HiveExt" callExtension _key;
-	_resultArray = call compile _data;
+	local _key = _this;
+	local _data = "HiveExt" callExtension _key;
+	local _resultArray = call compile _data;
 	_resultArray
 };
 
 // coor2str: convert position to a GPS coordinates
 fa_coor2str = {
-	private["_pos","_res","_nearestCity","_town"];
-
-	_pos = +(_this);
+	local _pos = +(_this);
 	if (count _pos < 1) then {
 		_pos = [0,0];
 	} else {
 		if (count _pos < 2) then { _pos = [_pos select 0,0]; };
 	};
-	_nearestCity = nearestLocations [_pos, ["NameCityCapital","NameCity","NameVillage","NameLocal"],1000];
-	_town = "Wilderness";
+	local _nearestCity = nearestLocations [_pos, ["NameCityCapital","NameCity","NameVillage","NameLocal"],1000];
+	local _town = "Wilderness";
 	if (count _nearestCity > 0) then {_town = text (_nearestCity select 0)};
-	_res = format["%1 [%2]", _town, mapGridPosition _pos];
+	local _res = format["%1 [%2]", _town, mapGridPosition _pos];
 
 	_res
 };
 
 // print player player PID and name. If name unknown then print UID.
 fa_plr2str = {
-	private["_x","_res","_name"];
-	_x = _this;
-	_res = "nobody";
-	if (!isNil "_x") then {
-		_name = _x getVariable ["bodyName", nil];
-		if ((isNil "_name" OR {(_name == "")}) AND ({alive _x})) then { _name = name _x; };
-		if (isNil "_name" OR {(_name == "")}) then { _name = "UID#"+(getPlayerUID _x); };
-		_res = format["PID#%1(%2)", owner _x, _name ];
+	local _y = _this;
+	local _res = "nobody";	
+	if (!isNil "_y") then {
+		local _name = _y getVariable ["bodyName", nil];
+		if ((isNil "_name" OR {(_name == "")}) AND ({alive _y})) then { _name = name _y; };
+		if (isNil "_name" OR {(_name == "")}) then { _name = "UID#"+(getPlayerUID _y); };
+		_res = format["PID#%1(%2)", owner _y, _name ];
 	};
 	_res
 };
 
 array_reduceSize = {
-	private ["_array1","_array","_count","_num"];
-	_array1 = _this select 0;
-	_array = _array1 - ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing","CSGAS"];
-	_count = _this select 1;
-	_num = count _array;
+	local _array1 = _this select 0;
+	local _array = _array1 - ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing","CSGAS"];
+	local _count = _this select 1;
+	local _num = count _array;
 	if (_num > _count) then {
 		_array resize _count;
 	};
@@ -255,4 +230,5 @@ array_reduceSize = {
 
 // Precise base building 1.0.5
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\kk_functions.sqf";
+call compile preprocessFileLineNumbers "\z\addons\dayz_server\eventHandlers\server_eventHandler.sqf";
 #include "mission_check.sqf"
