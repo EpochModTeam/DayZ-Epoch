@@ -212,7 +212,7 @@ fnc_initSnapTutorial = {
 		_bldTxtFinal = "";
 
 		//Delete on init
-		800 cutRsc ["Default", "PLAIN"];
+		17 cutRsc ["Default", "PLAIN"];
 		uiSleep 0.1;
 
 		//Init Tutorial text
@@ -248,7 +248,7 @@ fnc_initSnapTutorial = {
 				30, //number - duration
 				1, // number - fade in time
 				0, // number - delta y
-				800 //number - layer ID
+				17 //number - layer ID
 			] spawn bis_fnc_dynamicText;
 		};
 	};
