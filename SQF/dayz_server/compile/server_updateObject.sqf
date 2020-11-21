@@ -62,14 +62,12 @@ call {
 		[_object,_objectID,_objectUID,_forced,_totalDmg] call server_obj_dam;
 	};
 	if (_type == "killed") exitwith {
-		private ["_playerUID", "_clientKey"];
-
 		if (count _this != 6) exitWith {
 			diag_log "Server_UpdateObject error: wrong parameter format";
 		};
 
-		_playerUID = _this select 4;
-		_clientKey = _this select 5;
+		local _playerUID = _this select 4;
+		local _clientKey = _this select 5;
 		[_object,_objectID,_objectUID,_playerUID,_clientKey,_class] call server_obj_killed;
 	};
 	if (_type == "coins") exitwith {
