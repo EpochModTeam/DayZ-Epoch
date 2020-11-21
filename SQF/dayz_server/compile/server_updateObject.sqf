@@ -1,21 +1,20 @@
 // [_object,_type] spawn server_updateObject;
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
-if (isNil "sm_done") exitWith {};
-private ["_class","_objectID","_objectUID","_isNotOk","_object","_type","_forced","_totalDmg"];
+//if (isNil "sm_done") exitWith {diag_log "sm_done is nil";};
 
-_object = _this select 0;
-if ((isNil "_object") || {isNull _object}) exitWith {diag_log "server_updateObject.sqf _object null or nil, could not update object"};
+local _object = _this select 0;
+if ((isNil "_object") || isNull _object) exitWith {diag_log "server_updateObject.sqf _object null or nil, could not update object"};
 
-_type = _this select 1;
-_forced = if (count _this > 2) then {_this select 2} else {false};
-_totalDmg = if (count _this > 3) then {_this select 3} else {false};
-_isNotOk = false;
-_objectID = "0";
-_objectUID = "0";
+local _type = _this select 1;
+local _forced = if (count _this > 2) then {_this select 2} else {false};
+local _totalDmg = if (count _this > 3) then {_this select 3} else {false};
+local _isNotOk = false;
+local _objectID = "0";
+local _objectUID = "0";
 
 _objectID = _object getVariable ["ObjectID","0"];
 _objectUID = _object getVariable ["ObjectUID","0"];
-_class = typeOf _object;
+local _class = typeOf _object;
 
 if (typeName _objectID != "STRING" || {typeName _objectUID != "STRING"}) then {
 	#ifdef OBJECT_DEBUG
@@ -59,7 +58,7 @@ call {
 	if (_type == "gear") exitwith {
 		[_object,_objectID,_objectUID,_class] call server_obj_inv;
 	};
-	if (_type == "damage" || {_type == "repair"}) exitwith {
+	if (_type == "damage" || _type == "repair") exitwith {
 		[_object,_objectID,_objectUID,_forced,_totalDmg] call server_obj_dam;
 	};
 	if (_type == "killed") exitwith {

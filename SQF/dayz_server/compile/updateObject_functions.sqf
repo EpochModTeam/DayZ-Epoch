@@ -1,18 +1,16 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
 server_obj_pos = {
-	private ["_object","_objectID","_class","_position","_worldspace","_fuel","_key"];
+	local _object = _this select 0;
+	local _objectID = _this select 1;
+	local _class = _this select 2;
 
-	_object = _this select 0;
-	_objectID = _this select 1;
-	_class = _this select 2;
-
-	_position = getPosATL _object;
+	local _position = getPosATL _object;
 	//_worldspace = [round (direction _object),_position];
-	_worldspace = [getDir _object, _position] call AN_fnc_formatWorldspace; // Precise Base Building 1.0.5
-	_fuel = [0, fuel _object] select (_class isKindOf "AllVehicles");
+	local _worldspace = [getDir _object, _position] call AN_fnc_formatWorldspace; // Precise Base Building 1.0.5
+	local _fuel = [0, fuel _object] select (_class isKindOf "AllVehicles");
 
-	_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
+	local _key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
 	_key call server_hiveWrite;
 
 	#ifdef OBJECT_DEBUG
@@ -21,14 +19,12 @@ server_obj_pos = {
 };
 
 server_obj_inv = {
-	private ["_object","_objectID", "_objectUID", "_class","_inventory","_key","_coins","_previous"];
+	local _object = _this select 0;
+	local _objectID = _this select 1;
+	local _objectUID = _this select 2;
+	local _class = _this select 3;
 
-	_object = _this select 0;
-	_objectID = _this select 1;
-	_objectUID = _this select 2;
-	_class = _this select 3;
-
-	_inventory = call {
+	local _inventory = call {
 		if (DZE_permanentPlot && {_class == "Plastic_Pole_EP1_DZ"}) exitwith {
 			_object getVariable ["plotfriends", []] //We're replacing the inventory with UIDs for this item
 		};
@@ -42,8 +38,9 @@ server_obj_inv = {
 	};
 
 
-	_previous = str(_object getVariable["lastInventory",[]]);
+	local _previous = str(_object getVariable["lastInventory",[]]);
 	if (str _inventory != _previous) then {
+		local _key = "";
 		_object setVariable ["lastInventory",_inventory];
 		if (_objectID == "0") then {
 			_key = format["CHILD:309:%1:",_objectUID] + str _inventory + ":";
@@ -52,7 +49,7 @@ server_obj_inv = {
 		};
 
 		if (Z_SingleCurrency) then {
-			_coins = _object getVariable ["cashMoney", -1]; //set to invalid value if getVariable fails to prevent overwriting of coins in DB
+			local _coins = _object getVariable ["cashMoney", -1]; //set to invalid value if getVariable fails to prevent overwriting of coins in DB
 			_key = _key + str _coins + ":";
 		};
 
@@ -66,23 +63,22 @@ server_obj_inv = {
 
 server_obj_dam = {
 	//Allow dmg process
-	private ["_object","_objectID", "_objectUID","_forced","_totalDmg","_recorddmg","_hitpoints","_array","_hit","_key","_damage","_allFixed","_lastUpdate"];
 
-	_object = _this select 0;
-	_objectID = _this select 1;
-	_objectUID = _this select 2;
-	_forced = _this select 3;
-	_totalDmg = _this select 4;
+	local _object = _this select 0;
+	local _objectID = _this select 1;
+	local _objectUID = _this select 2;
+	local _forced = _this select 3;
+	local _totalDmg = _this select 4;
 
-	_recorddmg = false;
-	_hitpoints = _object call vehicle_getHitpoints;
-	_damage = damage _object;
-	_array = [];
-	_allFixed = true;
-	_lastUpdate = _object getVariable ["lastUpdate",diag_tickTime];
+	local _recorddmg = false;
+	local _hitpoints = _object call vehicle_getHitpoints;
+	local _damage = damage _object;
+	local _array = [];
+	local _allFixed = true;
+	local _lastUpdate = _object getVariable ["lastUpdate",diag_tickTime];
 
 	{
-		_hit = [_object,_x] call object_getHit;
+		local _hit = [_object,_x] call object_getHit;
 		if ((_hit select 0) > 0) then {
 
 			_allFixed = false;
@@ -110,13 +106,14 @@ server_obj_dam = {
 	};
 
 	if (_recorddmg) then {
+		local _key = "";
 		if (_objectID == "0") then {
 			_key = format["CHILD:306:%1:",_objectUID] + str _array + ":" + str _damage + ":";
 		} else {
 			_key = format["CHILD:306:%1:",_objectID] + str _array + ":" + str _damage + ":";
 		};
 		#ifdef OBJECT_DEBUG
-		diag_log ("HIVE: WRITE: "+ str(_key));
+			diag_log ("HIVE: WRITE: "+ str(_key));
 		#endif
 
 		_key call server_hiveWrite;
@@ -124,18 +121,17 @@ server_obj_dam = {
 };
 
 server_obj_killed = {
-	private ["_object", "_objectID", "_objectUID", "_class","_clientKey","_exitReason","_index","_key","_playerUID"];
+	local _object = _this select 0;
+	local _objectID = _this select 1;
+	local _objectUID = _this select 2;
+	local _playerUID = _this select 3;
+	local _clientKey = _this select 4;
+	local _class = _this select 5;
+	local _key = "";
 
-	_object = _this select 0;
-	_objectID = _this select 1;
-	_objectUID = _this select 2;
-	_playerUID = _this select 3;
-	_clientKey = _this select 4;
-	_class = _this select 5;
+	local _index = dayz_serverPUIDArray find _playerUID;
 
-	_index = dayz_serverPUIDArray find _playerUID;
-
-	_exitReason = call {
+	local _exitReason = call {
 		//Can't use owner because player may already be dead, can't use distance because player may be far from vehicle wreck
 		if (_clientKey == dayz_serverKey) exitwith {""};
 		if (_index < 0) exitwith {
