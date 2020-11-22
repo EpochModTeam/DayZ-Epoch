@@ -152,6 +152,74 @@ class cinder_garage_kit_locked: CA_Magazine
 	};
 };
 
+class cinder_gate_frame_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERGATEFRAME;
+	descriptionShort = $STR_EPOCH_CINDERGATEFRAME_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderGateFrame_DZ";
+		};
+	};
+};
+
+
+class cinder_gate_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERGATE;
+	descriptionShort = $STR_EPOCH_CINDERGATE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderGate_DZ";
+		};
+	};
+};
+
+class cinder_gate_kit_locked: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERGATELOCKED;
+	descriptionShort = $STR_EPOCH_CINDERGATELOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderGateLocked_DZ";
+		};
+	};
+};
+
+
 class ItemWoodFloor: CA_Magazine 
 {
 	scope = 2;
@@ -388,6 +456,15 @@ class ItemWoodWallThird: CA_Magazine
 			output[] = {{"ItemWoodWall",1}};
 			input[] = {{"ItemWoodWallThird",3}};
 		};
+		class Crafting1 
+		{
+			text = $STR_EPOCH_PLAYER_237_1;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodGateFrame",1}};
+			input[] = {{"ItemWoodWallThird",6}};
+		};		
 	};
 };
 
@@ -700,6 +777,73 @@ class ItemWoodWallWithDoorLgLocked: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_LargeWoodDoorLocked";
+		};
+	};
+};
+
+class ItemWoodGateFrame: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_WOODGATEFRAME;
+	descriptionShort = $STR_EPOCH_WOODGATEFRAME_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "WoodGateFrame_DZ";
+		};
+	};
+};
+
+
+class ItemWoodGate: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_WOODGATE;
+	descriptionShort = $STR_EPOCH_WOODGATE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Land_DZE_WoodGate";
+		};
+	};
+};
+
+class ItemWoodGateLocked: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_WOODGATELOCKED;
+	descriptionShort = $STR_EPOCH_WOODGATELOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Land_DZE_WoodGateLocked";
 		};
 	};
 };

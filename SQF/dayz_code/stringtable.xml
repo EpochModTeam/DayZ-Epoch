@@ -23101,6 +23101,10 @@
 			<Dutch>Creëer houten muur</Dutch>
 			<Czech>Vytvořit Dřevěnou zeď</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_237_1">
+			<English>Craft Wooden Gate Frame</English>
+			<German>Holztorrahmen herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_238">
 			<English>Craft Door</English>
 			<German>Tür herstellen</German>
@@ -23202,13 +23206,17 @@
 			<German>Ganze Wand herstellen</German>
 			<Russian>Создать: все стены</Russian>
 			<Czech>Vytvářet plnou stěnou</Czech>
-		</Key>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<English>Craft Garage Doorway</English>
 			<German>Garagentor herstellen</German>
 			<Russian>Создать: Проём гаража</Russian>
 			<Czech>Vytvořit Garážový vjezd</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_253_1">
+			<English>Craft Cinder Gate Frame</English>
+			<German>Betontorrahmen herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_254">
 			<English>Craft Plywood</English>
 			<German>Sperrholz herstellen</German>
@@ -26829,7 +26837,32 @@
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_LOCKED_DESC">
 			<English>Cinder block wall with locked metal garage doorway.</English>
+			<German>Eine Beton-Garagentür mit einem Zahlenschloss.</German>
 		</Key>
+		<Key ID="STR_EPOCH_CINDERGATEFRAME">
+			<English>Cinder Gate Frame</English>
+			<German>Betontorrahmen</German>
+		</Key>
+		<Key ID="STR_EPOCH_CINDERGATEFRAME_DESC">
+			<English>Cinder Gate Frame constructed out of plywood and lumber.</English>
+			<German>Betontorrahmen bestehend us Beton</German>
+		</Key>			
+		<Key ID="STR_EPOCH_CINDERGATE">
+			<English>Cinder Gate</English>
+			<German>Betontor</German>
+		</Key>
+		<Key ID="STR_EPOCH_CINDERGATE_DESC">
+			<English>Cinder Gate constructed out of plywood and lumber.</English>
+			<German>Betontor bestehend us Beton</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CINDERGATELOCKED">
+			<English>Cinder Gate Locked</English>
+			<German>Betontor (verschlossen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CINDERGATELOCKED_DESC">
+			<English>Cinder Gate with combination lock.</English>
+			<German>Betontor mit Zahlenschloss.</German>
+		</Key>			
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
 			<German>Holzboden/Decke</German>
@@ -26952,9 +26985,33 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED_DESC">
 			<English>Garage door with combination lock.</English>
-			<German>Holzgaragentür (mit Zahlenschloss)</German>
+			<German>Holzgaragentür mit Zahlenschloss.</German>
 			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WOODGATEFRAME">
+			<English>Wooden Gate Frame</English>
+			<German>Holztorrahmen</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOODGATEFRAME_DESC">
+			<English>Wooden Gate Frame constructed out of plywood and lumber.</English>
+			<German>Holztorrahmen bestehend aus Sperr- und Bauholz.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_WOODGATE">
+			<English>Wooden Gate</English>
+			<German>Holztor</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOODGATE_DESC">
+			<English>Wooden Gate constructed out of plywood and lumber.</English>
+			<German>Holztor bestehend aus Sperr- und Bauholz.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_WOODGATELOCKED">
+			<English>Wooden Gate Locked</English>
+			<German>Holztor (verschlossen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOODGATELOCKED_DESC">
+			<English>Wooden Gate with combination lock.</English>
+			<German>Holztor mit Zahlenschloss.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_LARGEWOODWALL">
 			<English>Large Wooden Wall</English>
 			<German>Große Holzwand</German>
@@ -30337,6 +30394,10 @@
 			<English>Craft Nails</English>
 			<German>Nägel herstellen</German>
 		</Key>
+		<Key ID="STR_CRAFTING_CORRUGATEDSHEETS">
+			<English>Craft Corrugated Sheet</English>
+			<German>Wellblech herstellen</German>
+		</Key>		
 		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
 			<English>Needed items:</English>
 			<German>Benötigte Gegenstände:</German>
