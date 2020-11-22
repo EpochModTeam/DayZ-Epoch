@@ -27,6 +27,15 @@ class PartGeneric : CA_Magazine
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"equip_nails",4}};
 			input[] = {{"PartGeneric",2}};
+		};	
+		class Crafting2 
+		{
+			text = $STR_CRAFTING_CORRUGATEDSHEETS;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"ItemMetalSheet",1}};
+			input[] = {{"PartGeneric",3}};
 		};		
 	};
 };
@@ -50,7 +59,7 @@ class ItemPole: CA_Magazine
 			neednearby[] = {"fire"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"ItemCorrugated",1}};
-			input[] = {{"ItemPole",2},{"ItemTankTrap",2},{"PartWoodLumber",2}};
+			input[] = {{"ItemPole",2},{"ItemMetalSheet",2},{"PartWoodLumber",2}};
 		};
 		class Crafting1
 		{
