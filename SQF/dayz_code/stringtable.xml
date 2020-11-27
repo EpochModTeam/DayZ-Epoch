@@ -26541,9 +26541,9 @@
 			<Russian>Вы не можете купить рюкзак в рюкзак.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_IN_BACKPACK">
-			<English>Purchased %1 items into your backpack</English>
-			<German>Du hast %1 Gegenstände in deinen Rucksack gekauft.</German>
-			<Russian>Куплено предметов в рюкзак: %1.</Russian>
+			<English>Purchased %1 items into your %2</English>
+			<German>Du hast %1 Gegenstände in deinen %2 gekauft.</German>
+			<Russian>Куплено предметов в %2: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_IN_VEHICLE">
 			<English>Purchased %1 items into %2</English>
@@ -26556,9 +26556,9 @@
 			<Russian>В ваше сняряжение куплено предметов: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_VEH_IN_BACKPACK">
-			<English>You purchased a %1, the key has been added into your backpack.</English>
-			<German>Du hast ein %1 gekauft, der Schlüssel wurde deinem Rucksack hinzugefügt.</German>
-			<Russian>Вы купили %1, ключ добавлен в рюкзак.</Russian>
+			<English>You purchased a %1, the key has been added into your %2.</English>
+			<German>Du hast ein %1 gekauft, der Schlüssel wurde deinem %2 hinzugefügt.</German>
+			<Russian>Вы купили %1, ключ добавлен в %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_BUY_VEH_IN_VEHICLE">
 			<English>You purchased a %1, the key has been added into your %2.</English>
@@ -26571,12 +26571,12 @@
 			<Russian>Вы купили %1, ключ добавлен на ваш пояс.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_IN_BACKPACK">
-			<English>Sold %1 items from your backpack</English>
-			<German>Du hast %1 Gegenstände aus deinem Rucksack verkauft.</German>
-			<Russian>Продано предметов из рюкзака: %1.</Russian>
+			<English>Sold %1 items from your %2.</English>
+			<German>Du hast %1 Gegenstände aus deinem %2 verkauft.</German>
+			<Russian>Продано предметов из %2: %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELL_IN_VEHICLE">
-			<English>Sold %1 items from %2</English>
+			<English>Sold %1 items from %2.</English>
 			<German>Du hast %1 Gegenstände aus deinem %2 verkauft.</German>
 			<Russian>Продано предметов из %2: %1.</Russian>
 		</Key>

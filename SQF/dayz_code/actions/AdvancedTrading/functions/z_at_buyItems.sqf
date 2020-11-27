@@ -1,7 +1,9 @@
-private ["_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keySelected","_location","_moneyInfo","_wealth","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy","_keyNumber"];
+private ["_buyingArray","_activatingPlayer","_bTotal","_backpack","_backpacksToBuy","_buyVehicle","_buyingType","_canBuy","_count","_dir","_enoughMoney","_hasPrimary","_helipad","_isKeyOK","_item2Add","_itemsToLog","_keySelected","_location","_moneyInfo","_wealth","_parentClasses","_part_out","_pistolMagsToBuy","_priceToBuy","_primaryToBuy","_regularMagsToBuy","_sidearmToBuy","_sign","_success","_tCost","_toolAmounts","_toolClasses","_toolsToBuy","_vehiclesToBuy","_weaponsToBuy","_keyNumber","_vehName","_backpackName"];
 
 if (count Z_BuyingArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_BUY_NO_ITEMS"; };
 
+_buyingArray = Z_BuyingArray;
+Z_BuyingArray = [];
 _pistolMagsToBuy = 0;
 _regularMagsToBuy = 0;
 _weaponsToBuy = 0;
@@ -52,7 +54,7 @@ if (Z_SingleCurrency) then {
 		_itemsToLog set [0, (_itemsToLog select 0) + [_x select 0]];
 		_itemsToLog set [1, (_itemsToLog select 1) + [_x select 9]];
 		_itemsToLog set [2, (_itemsToLog select 2) + [((_x select 9)*(_x select 2))]];
-	} count Z_BuyingArray;
+	} count _buyingArray;
 } else {
 	{
 		if (_x select 1 == "trade_weapons") then {
@@ -90,7 +92,7 @@ if (Z_SingleCurrency) then {
 		_itemsToLog set [0, (_itemsToLog select 0) + [_x select 0]];
 		_itemsToLog set [1, (_itemsToLog select 1) + [_x select 9]];
 		_itemsToLog set [2, (_itemsToLog select 2) + [((_x select 11)*(_x select 2)*(_x select 9))]];
-	} count Z_BuyingArray;
+	} count _buyingArray;
 };
 
 _canBuy = [_weaponsToBuy,[_pistolMagsToBuy,_regularMagsToBuy],_backpacksToBuy,_toolsToBuy,_sidearmToBuy,_primaryToBuy,_vehiclesToBuy,_toolClasses,_toolAmounts] call Z_allowBuying;
@@ -178,11 +180,12 @@ if (_enoughMoney) then {
 				};
 			};
 			_bTotal = _bTotal + (_x select 9);
-		} count Z_BuyingArray;
+		} count _buyingArray;
+		_backpackName = getText(configFile >> "CfgVehicles" >> typeOf _backpack >> "displayname");
 		if (_item2Add != "0") then {
-			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_BACKPACK",(Z_BuyingArray select 0) select 3];
+			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_BACKPACK",(_buyingArray select 0) select 3,_backpackName];
 		} else {
-			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_BACKPACK",_bTotal];
+			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_BACKPACK",_bTotal,_backpackName];
 		};
 	};
 
@@ -204,11 +207,12 @@ if (_enoughMoney) then {
 				};
 			};
 			_bTotal = _bTotal + (_x select 9);
-		} count Z_BuyingArray;
+		} count _buyingArray;
+		_vehName = getText(configFile >> "CfgVehicles" >> typeOf DZE_myVehicle >> "displayname");
 		if (_item2Add != "0") then {
-			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_VEHICLE",(Z_BuyingArray select 0) select 3,typeOf (DZE_myVehicle)];
+			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_VEHICLE",(_buyingArray select 0) select 3,_vehName];
 		} else {
-			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_VEHICLE",_bTotal,typeOf DZE_myVehicle];
+			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_VEHICLE",_bTotal,_vehName];
 		};
 	};
 
@@ -243,9 +247,9 @@ if (_enoughMoney) then {
 				};
 			};
 			_bTotal = _bTotal + (_x select 9);
-		} count Z_BuyingArray;
+		} count _buyingArray;
 		if (_item2Add != "0") then {
-			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_GEAR",(Z_BuyingArray select 0) select 3];
+			systemChat format[localize "STR_EPOCH_TRADE_BUY_VEH_IN_GEAR",(_buyingArray select 0) select 3];
 		} else {
 			systemChat format[localize "STR_EPOCH_TRADE_BUY_IN_GEAR",_bTotal];
 		};

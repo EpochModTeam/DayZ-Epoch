@@ -1,9 +1,11 @@
-private ["_sellVehicle","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_bag","_itemsToLog","_tCost","_tSold","_wealth"];
+private ["_sellArray","_sellVehicle","_outcome","_vehCheckArray","_vehArray","_weaponsArray","_itemsArray","_bpArray","_bpCheckArray","_weaponsCheckArray","_itemsCheckArray","_VehKey","_wA","_mA","_money","_itemData","_bag","_itemsToLog","_tCost","_tSold","_wealth","_backpackName","_vehName"];
 
 if (count Z_SellArray < 1) exitWith { systemChat localize "STR_EPOCH_TRADE_SELL_NO_ITEMS"; };
 if (Z_SellingFrom == 1 && (isNull DZE_myVehicle or !local DZE_myVehicle)) exitWith { systemChat localize "STR_EPOCH_PLAYER_245"; };
 
 closeDialog 2;
+_sellArray = Z_SellArray;
+Z_SellArray = [];
 _outcome = [];
 _weaponsArray = [];
 _itemsArray = [];
@@ -90,17 +92,19 @@ _sellVehicle = {
 			};
 		};
 	};
-} forEach Z_SellArray;
+} forEach _sellArray;
 
 _tSold = _itemsArray + _weaponsArray + _bpArray + _vehArray;
 
 if (Z_SellingFrom == 0) then {
 	_outcome = [unitBackpack player,_itemsArray,_weaponsArray, _vehArray] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
-	systemChat format[localize "STR_EPOCH_TRADE_SELL_IN_BACKPACK",count _tSold];
+	_backpackName = getText(configFile >> "CfgVehicles" >> typeOf (unitBackpack player) >> "displayname");
+	systemChat format[localize "STR_EPOCH_TRADE_SELL_IN_BACKPACK",count _tSold,_backpackName];
 };
 if (Z_SellingFrom == 1) then {
 	_outcome = [DZE_myVehicle,_itemsArray,_weaponsArray,_vehArray] call ZUPA_fnc_removeWeaponsAndMagazinesCargo;
-	systemChat format[localize "STR_EPOCH_TRADE_SELL_IN_VEHICLE",count _tSold,typeOf DZE_myVehicle];
+	_vehName = getText(configFile >> "CfgVehicles" >> typeOf DZE_myVehicle >> "displayname");
+	systemChat format[localize "STR_EPOCH_TRADE_SELL_IN_VEHICLE",count _tSold,_vehName];
 };
 
 _itemsToLog set [0,(_itemsArray + _weaponsArray + _bpArray + [typeOf DZE_myVehicle])];
@@ -150,7 +154,7 @@ if (Z_SellingFrom == 2) then {
 				};
 			};
 		};
-	} forEach Z_SellArray;
+	} forEach _sellArray;
 
 	_outcome set [0,_mA];
 	_outcome set [1,_wA];
