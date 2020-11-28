@@ -48,12 +48,13 @@ class L115A3_Base : Rifle
 class L115A3_DZ : L115A3_Base
 {
 	model = "\ca\weapons_BAF\LRR_scoped_BAF";
-	picture = "\CA\weapons_baf\data\UI\LRR_scoped_ca.paa";  
+	picture = "\dayz_epoch_c\icons\weapons\L115Tan.paa";  
 	displayname = $STR_DZ_WPN_L115A3_NAME;
 };
 
 class L115A3_2_DZ : L115A3_DZ
 {
     model = "\ca\weapons_BAF\LRR_scoped_w_BAF";
+	picture = "\dayz_epoch_c\icons\weapons\L115Green.paa";  
     displayname = $STR_BAF_CFGWEAPONS_BAF_LRR_SCOPED_W0;
 };
