@@ -3,6 +3,8 @@ class ScrapAPC_base : BTR60_TK_EP1_DZE
 	scope = 0;
 	displayname = "Scrap APC";	
 	model = "\z\addons\dayz_epoch_v\vehicles\scrap_apc\scrap_apc";
+	picture = "\dayz_epoch_c\icons\vehicles\ScrapAPC.paa";
+	vehicleClass = "DayZ Epoch Vehicles";
 	armor = 80;
 	damageResistance = 0.032;
 	transportsoldier = 4;

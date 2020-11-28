@@ -336,6 +336,7 @@ class MTVR_Open_DZE: MTVR {
 	scope = 2;
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_OPEN";
 	model = "\z\addons\dayz_epoch_v\vehicles\mtvr\dze_mtvr";
+	picture = "\Ca\wheeled2\data\UI\Picture_MTVR_repair_CA.paa";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	typicalCargo[] = {};

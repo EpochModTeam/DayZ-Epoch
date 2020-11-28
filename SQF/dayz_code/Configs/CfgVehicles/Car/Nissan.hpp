@@ -3,6 +3,8 @@ class Nissan_base: VWGolf
 	scope = 0;
 	displayname = "Nissun 350z";	
 	model = "\z\addons\dayz_epoch_v\vehicles\nissan\nissan350z";
+	picture = "\dayz_epoch_c\icons\vehicles\nissan.paa";
+	vehicleClass = "DayZ Epoch Vehicles";
 	armor = 60;
 	damageResistance = 0.01821;
 	transportsoldier = 1;

@@ -22,7 +22,7 @@ class Ikarus_TK_CIV_EP1_DZE: Ikarus_TK_CIV_EP1 {
 
 class Ikarus_White_DZE: Ikarus_DZE {
 	displayname = $STR_VEH_NAME_IKARUS_WHITE;
-	model = "\sra_civilian\wheeled\bus\bus_city.p3d";
+	model = "\sra_civilian\wheeled\bus\bus_city.p3d";	
 	driverAction = "CityBus_Driver";
 	nameSound = "bus";
 	cargoAction[] = {"Truck_Cargo03","Truck_Cargo01","Truck_Cargo04","Truck_Cargo01","Truck_Cargo01","Truck_Cargo03","Truck_Cargo01","Truck_Cargo04","Truck_Cargo01","Truck_Cargo02","Truck_Cargo02","Truck_Cargo01"};
@@ -246,6 +246,7 @@ class Ikarus_White_DZE: Ikarus_DZE {
 class Ikarus_Armored_DZE: Ikarus_White_DZE
 {
 	model = "z\addons\dayz_epoch_v\vehicles\citybus\dze_citybus";
+	picture = "\dayz_epoch_c\icons\vehicles\ArmoredBus.paa";
 	displayName	= $STR_VEH_NAME_IKARUS_ARMORED;
 	maxSpeed = 85;
 	turnCoef = 1.2;

@@ -56,6 +56,7 @@ class Tractor_Armored_DZE: TractorOld_DZE
 {
 	displayname = $STR_VEH_NAME_TRACTOR_ARMORED;	
 	model = "\z\addons\dayz_epoch_v\vehicles\tractor\dze_tractor";
+	picture = "\dayz_epoch_c\icons\vehicles\ArmoredTractor.paa";
 	armor = 120;
 	maxSpeed = 75;
 	terrainCoef = 0.5;
