@@ -14,8 +14,8 @@ class Jeep_base : HMMWV_DZE_Base
 	maxspeed = 110;
 	terraincoef	= 2.0;
 	weapons[] = {minicarhorn};
-	driveraction = suv_driver_ep1;
-	cargoaction[] = {Skodovka_Cargo01,suv_cargo02_ep1,Skodovka_Cargo01,suv_cargo02_ep1,Skodovka_Cargo01};
+	driveraction = "HMMWV_Driver";
+	cargoaction[] = {"Skodovka_Cargo01","suv_cargo02_ep1","Skodovka_Cargo01","suv_cargo02_ep1","Skodovka_Cargo012"};
 	typicalcargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};	
