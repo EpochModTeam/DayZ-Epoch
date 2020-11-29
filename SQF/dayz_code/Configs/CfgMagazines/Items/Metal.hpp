@@ -133,6 +133,19 @@ class ItemRSJ: CA_Magazine
 	picture = "\z\addons\dayz_buildings\equip\item_rsj.paa";
 	model = "z\addons\dayz_buildings\models\rsj.p3d";
 	descriptionShort = $STR_BLD_desc_ItemRSJ;//"Steel RSJ Support Beam"
+	
+	class ItemActions
+	{	
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_BRIDGE;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			output[] = {{"metal_drawbridge_kit",1}};
+			input[] = {{"ItemRSJ",6},{"metal_floor_kit",2}};
+		};
+	};		
 };
 
 class equip_1inch_metal_pipe : CA_Magazine 

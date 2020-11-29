@@ -26853,7 +26853,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATE_DESC">
 			<English>Cinder Gate constructed out of plywood and lumber.</English>
-			<German>Betontor bestehend us Beton</German>
+			<German>Betontor bestehend aus Beton.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_CINDERGATELOCKED">
 			<English>Cinder Gate Locked</English>
@@ -26862,6 +26862,22 @@
 		<Key ID="STR_EPOCH_CINDERGATELOCKED_DESC">
 			<English>Cinder Gate with combination lock.</English>
 			<German>Betontor mit Zahlenschloss.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_METALDRAWBRIDGE">
+			<English>Metal Drawbridge</English>
+			<German>Stahlzugbrücke</German>
+		</Key>
+		<Key ID="STR_EPOCH_METALDRAWBRIDGE_DESC">
+			<English>Metal Drawbridge constructed out of metal and fire.</English>
+			<German>Stahlzugbrücke bestehend aus Stahl und Feuer.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED">
+			<English>Metal Drawbridge Locked</English>
+			<German>Stahlzugbrücke (verschlossen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED_DESC">
+			<English>Metal Drawbridge with combination lock.</English>
+			<German>Stahlzugbrücke mit Zahlenschloss.</German>
 		</Key>			
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
@@ -30852,6 +30868,26 @@
 		<Key ID="STR_EPOCH_PVE_ACTIVE_CANNOT_CHECK_WALLET">
 			<English>You cannot check the wallet of another player who is not in your group while the PVE Mode is active!</English>
 			<German>Du kannst die Brieftasche eines anderen Spielers, der nicht in deiner Gruppe ist, nicht durchsuchen, solange der PVE Modus aktiv ist.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_LOWER_BRIDGE">
+			<English>Lower Drawbridge</English>
+			<German>Zugbrücke herunterlassen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_RAISE_BRIDGE">
+			<English>Raise Drawbridge</English>
+			<German>Zugbrücke hochziehen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_LOCK_BRIDGE">
+			<English>Lock Drawbridge</English>
+			<German>Zugbrücke abschließen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_UNLOCK_BRIDGE">
+			<English>Unlock Drawbridge</English>
+			<German>Zugbrücke aufschließen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_CRAFT_BRIDGE">
+			<English>Craft Drawbridge</English>
+			<German>Zugbrücke herstellen</German>
 		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->

@@ -486,6 +486,7 @@ class CfgVehicles
 	#include "Buildables\Traps.hpp"	
 	#include "Buildables\Generator.hpp"	
 	#include "Buildables\Doors.hpp"
+	#include "Buildables\Bridges.hpp"
 	#include "Buildables\ModularBuilding.hpp"	
 	#include "Buildables\ModularWrecks.hpp"	
 	#include "Buildables\FencesWood.hpp"

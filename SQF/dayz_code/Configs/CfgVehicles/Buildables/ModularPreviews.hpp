@@ -130,3 +130,8 @@ class CinderGate_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_high_garage\high_steel_garage_frame_ghost.p3d";
 	displayName = "Cinder Gate Preview";
 };
+class Drawbridge_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model="z\addons\dayz_epoch_v\base_building\wood\draw_bridge\wood_draw_bridge_ghost.p3d";
+	displayName = "Metal Drawbridge Preview";
+};

@@ -219,6 +219,50 @@ class cinder_gate_kit_locked: CA_Magazine
 	};
 };
 
+class metal_drawbridge_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_METALDRAWBRIDGE;
+	descriptionShort = $STR_EPOCH_METALDRAWBRIDGE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Metal_Drawbridge_DZ";
+		};
+	};
+};
+
+class metal_drawbridge_kit_locked: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_METALDRAWBRIDGELOCKED;
+	descriptionShort = $STR_EPOCH_METALDRAWBRIDGELOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Metal_DrawbridgeLocked_DZ";
+		};
+	};
+};
+
 
 class ItemWoodFloor: CA_Magazine 
 {
