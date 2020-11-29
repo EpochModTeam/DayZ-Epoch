@@ -340,6 +340,28 @@ class WoodSmallWallDoor_DZ: ModularItems {
 		};
 	};
 };
+
+class WoodTriangleWall_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,1.5,0};
+	model = "\z\addons\dayz_epoch_v\base_building\wood\apex_tri\apex_tri.p3d";
+	armor = 1500;
+	displayName = $STR_EPOCH_TRIANGLE_WOODWALL;
+	GhostPreview = "Wood_Triangle_Wall_Preview_DZ";
+	class DestructionEffects : DestructionEffects 
+	{
+		class Ruin1 
+		{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
+};
+
 class WoodStairs_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,1.5,0};

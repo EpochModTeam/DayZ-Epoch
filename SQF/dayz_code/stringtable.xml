@@ -26896,7 +26896,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILING_DESC">
 			<English>Wooden floor can also be used as a ceiling.</English>
-			<German>Holzboden der auch als Decke genutzt werden kann.</German>
+			<German>Holzboden, welcher auch als Decke genutzt werden kann.</German>
 			<Russian>Деревянный пол, может также использоваться в качестве потолка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRS">
@@ -26924,6 +26924,14 @@
 			<German>Holzleiter</German>
 			<Russian>Деревянная лестница</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL">
+			<English>Triangle Wall</English>
+			<German>Dreieckige Wand</German>
+		</Key>
+		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL_DESC">
+			<English>Triangle wall constructed out of plywood and lumber.</English>
+			<German>Eine dreieckige Holzwand bestehend aus Sperr- und Bauholz.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_WOODWALL">
 			<English>Wooden Wall</English>
 			<German>Holzwand</German>
@@ -26931,7 +26939,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALL_DESC">
 			<English>Wall constructed out of plywood and lumber.</English>
-			<German>Eine Holzwand aus bestehend Sperr- und Bauholz.</German>
+			<German>Eine Holzwand bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Стена, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALLTHIRDPART">
@@ -26941,7 +26949,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALLTHIRDPART_DESC">
 			<English>Third wall constructed out of plywood and lumber.</English>
-			<German>Holzwand (1/3) aus bestehend Sperr- und Bauholz.</German>
+			<German>Holzwand (1/3) bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Треть стены, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHWINDOW">
@@ -30889,6 +30897,10 @@
 			<English>Craft Drawbridge</English>
 			<German>Zugbrücke herstellen</German>
 		</Key>		
+		<Key ID="STR_EPOCH_ACTION_WOODENTRIANGLEWALL">
+			<English>Craft Triangle Wall</English>
+			<German>Dreieckige Wand herstellen</German>
+		</Key>			
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
