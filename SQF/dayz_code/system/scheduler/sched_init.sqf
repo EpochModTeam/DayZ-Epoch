@@ -4,7 +4,7 @@ _base="z\addons\dayz_code\system\scheduler\";
 call compile preprocessFileLineNumbers (_base+"sched_oneachframe.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_throwable.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_animals.sqf");
-call compile preprocessFileLineNumbers (_base+"sched_buriedZeds.sqf");
+//call compile preprocessFileLineNumbers (_base+"sched_buriedZeds.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_gravity.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_newDay.sqf");
 call compile preprocessFileLineNumbers (_base+"sched_spawnCheck.sqf");
@@ -42,8 +42,8 @@ if (count _list == 0) then {
 	 [ 1, 		0.33,	sched_medical, sched_medical_init ],
 	 [ 60, 	   10.44,	sched_animals ],
 	 [ 10, 	    5.44,	sched_medical_slow ],
-	 [ 60, 	   20.44,	sched_newDay ],
-	 [ 1, 		0.51,	sched_buriedZeds, sched_buriedZeds_init ]
+	 [ 60, 	   20.44,	sched_newDay ]
+	 //[ 1, 		0.51,	sched_buriedZeds, sched_buriedZeds_init ]
 	];
 	
 	if (dayz_bleedingeffect != 2) then {
