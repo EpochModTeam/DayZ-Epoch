@@ -26939,7 +26939,15 @@
 		<Key ID="STR_EPOCH_WOODRAIL_DESC">
 			<English>Wood Handrail constructed out of lumber.</English>
 			<German>Ein Holzgeländer bestehend aus Bauholz.</German>
-		</Key>			
+		</Key>
+		<Key ID="STR_EPOCH_WOODPILLAR">
+			<English>Wood Pillar</English>
+			<German>Holzsäule</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOODPILLAR_DESC">
+			<English>Wood Pillar constructed out of lumber.</English>
+			<German>Eine Holzsäule bestehend aus Bauholz.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL">
 			<English>Triangle Wall</English>
 			<German>Dreieckige Wand</German>
@@ -30924,6 +30932,10 @@
 		<Key ID="STR_EPOCH_ACTION_WOODFLOORSTAIRS">
 			<English>Craft Floor Stairs</English>
 			<German>Boden mit Treppe herstellen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_WOODPILLAR">
+			<English>Craft Pillar</English>
+			<German>Säule herstellen</German>
 		</Key>		
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>

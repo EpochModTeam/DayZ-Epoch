@@ -387,7 +387,7 @@ class WoodFloorStairs_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
-	armor = 2000;
+	armor = 1000;
 	displayName = "Wood floor w/Stairs";
 	maintainBuilding[] = {{"PartWoodLumber",4}};
 	GhostPreview = "Wood_Floor_Stairs_Preview_DZ";
@@ -412,6 +412,16 @@ class WoodHandrail_DZ: ModularItems {
 	displayName = $STR_EPOCH_WOODRAIL;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "Wood_Handrail_Preview_DZ";
+};
+
+class WoodPillar_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,0};
+	model = "z\addons\dayz_epoch_v\base_building\wood\pillar\corner_pillar.p3d";
+	armor = 700;
+	displayName = $STR_EPOCH_WOODPILLAR;
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	GhostPreview = "Wood_Pillar_Preview_DZ";
 };
 
 class WoodGateFrame_DZ: ModularItems {

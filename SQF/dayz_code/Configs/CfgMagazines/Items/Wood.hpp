@@ -236,6 +236,15 @@ class PartWoodLumber: CA_Magazine
 			output[] = {{"ItemWoodHandRail",2}};
 			input[] = {{"PartWoodLumber",6},{"equip_nails",1}};
 		};
+		class Crafting2
+		{
+			text = $STR_EPOCH_ACTION_WOODPILLAR;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodPillar",2}};
+			input[] = {{"PartWoodLumber",8},{"equip_nails",1}};
+		};		
 		class Crafting3
 		{
 			text = $STR_EPOCH_PLAYER_257;

@@ -150,3 +150,8 @@ class Wood_Floor_Stairs_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
 	displayName = "Wood floor w/Stairs Preview";
 };
+class Wood_Pillar_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "z\addons\dayz_epoch_v\base_building\wood\pillar\corner_pillar.p3d";
+	displayName = "Wood Pillar Preview";
+};
