@@ -1217,7 +1217,7 @@ class ItemWoodGateFrame: CA_Magazine
 			text = $STR_EPOCH_PLAYER_239_1_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {};
-			requiretools[] = {};
+			requiretools[] = {"ItemToolbox"};
 			output[] = {{"ItemWoodGate",1}};
 			input[] = {{"ItemWoodGateFrame",1},{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}};
 		};

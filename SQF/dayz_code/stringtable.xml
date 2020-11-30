@@ -31021,6 +31021,10 @@
 			<English>Craft Pillar</English>
 			<German>Säule herstellen</German>
 		</Key>		
+		<Key ID="STR_EPOCH_ACTION_METAL_DOORWAY">
+			<English>Craft Doorway</English>
+			<German>Türdurchgang herstellen</German>
+		</Key>			
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>
 			<German>Tor öffnen</German>

@@ -19,8 +19,8 @@ class MetalFloor_DZ: ModularItems {
 
 class DoorFrame_DZ: ModularItems {
 	scope = 2;
-	offset[] = {0,2,0};
-	armor = 3000;
+	offset[] = {0,1.5,0};
+	armor = 1200;
 	model = "\z\addons\dayz_epoch\models\Steel_door_frame_single.p3d";
 	displayName = $STR_EPOCH_DOORWAY;
 	GhostPreview = "DoorFrame_Preview_DZ";	

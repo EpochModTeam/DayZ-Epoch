@@ -37,6 +37,15 @@ class PartGeneric : CA_Magazine
 			output[] = {{"ItemMetalSheet",1}};
 			input[] = {{"PartGeneric",3}};
 		};		
+		class Crafting3 
+		{
+			text = $STR_EPOCH_ACTION_METAL_DOORWAY;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"door_frame_kit",1}};
+			input[] = {{"ItemPole",4},{"ItemTankTrap",4},{"PartGeneric",2}};
+		};		
 	};
 };
 
@@ -88,6 +97,15 @@ class ItemPole: CA_Magazine
 			output[] = {{"ItemScaffoldingKit",1}};
 			input[] = {{"ItemPole",4},{"ItemTankTrap",2},{"PartWoodLumber",4}};
 		};
+		class Crafting4 
+		{
+			text = $STR_EPOCH_ACTION_METAL_DOORWAY;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"door_frame_kit",1}};
+			input[] = {{"ItemPole",4},{"ItemTankTrap",4},{"PartGeneric",2}};
+		};		
 	};
 };
 
