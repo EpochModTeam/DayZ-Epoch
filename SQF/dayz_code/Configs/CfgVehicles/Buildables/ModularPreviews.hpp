@@ -39,7 +39,6 @@ class CinderWall_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch\models\cinder_wall_full_ghost.p3d";
 	displayName = "Cinder Block Wall Preview";
 };
-
 class WoodFloorQuarter_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\quarter_floor_ghost.p3d";
@@ -138,12 +137,12 @@ class Drawbridge_Preview_DZ: DZE_Ghost_Previews {
 class Wood_Triangle_Wall_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\wood\apex_tri\apex_tri.p3d";
-	displayName = "Wood Triangle wall";
+	displayName = "Wood Triangle wall Preview";
 };
 class Wood_Handrail_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\wood\railing\railing.p3d";
-	displayName = "Wood Handrail";
+	displayName = "Wood Handrail Preview";
 };
 class Wood_Floor_Stairs_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
@@ -164,4 +163,9 @@ class CinderGarageOpenTop_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
 	model = "z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\cindergarage_notop_ghost.p3d";
 	displayName = "Cinder Garage open top Preview";
+};
+class DoorFrame_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch\models\Steel_door_frame_single_ghost.p3d";
+	displayName = "Door Frame Preview";
 };

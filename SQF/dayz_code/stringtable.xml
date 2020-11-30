@@ -26813,7 +26813,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
 			<English>Cinder Doorway</English>
-			<German>Beton-Türrahmen</German>
+			<German>Betontürrahmen</German>
 			<Russian>Дверной проём</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_DESC">
@@ -26918,7 +26918,33 @@
 		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED_DESC">
 			<English>Metal Drawbridge with combination lock.</English>
 			<German>Eine Stahlzugbrücke mit einem Zahlenschloss.</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_EPOCH_DOORWAY">
+			<English>Doorway</English>
+			<German>Türdurchgang</German>
+			<Russian>Дверной</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_DOORWAY_DESC">
+			<English>Doorway with metal single access door.</English>
+			<German>Ein Türdurchgang aus Metall.</German>
+			<Russian>Дверной проём в стене.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_DOOR">
+			<English>Door</English>
+			<German>Tür</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOOR_DESC">
+			<English>Single door out of metal.</English>
+			<German>Eine einfache Tür aus Metall.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_DOORLOCKED">
+			<English>Door (locked)</English>
+			<German>Tür (verschlossen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DOOR_LOCKED_DESC">
+			<English>Single door out of metal with a combination lock.</English>
+			<German>Eine einfache Tür aus Metall mit einem Zahlenschloss.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
 			<German>Holzboden/Decke</German>

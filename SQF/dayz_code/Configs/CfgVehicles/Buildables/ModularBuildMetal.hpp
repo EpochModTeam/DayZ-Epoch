@@ -16,3 +16,15 @@ class MetalFloor_DZ: ModularItems {
 		};
 	};
 };
+
+class DoorFrame_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,0};
+	armor = 3000;
+	model = "\z\addons\dayz_epoch\models\Steel_door_frame_single.p3d";
+	displayName = $STR_EPOCH_DOORWAY;
+	GhostPreview = "DoorFrame_Preview_DZ";	
+	maintainBuilding[] = {{"PartGeneric",1}};
+	upgradeBuilding[] = {"Door_DZ",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
+};
+

@@ -107,7 +107,7 @@ class CinderGarageOpenTopFrame_DZ: ModularItems {
 	offset[] = {0,2,0};
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\cindergarage_notop_frame.p3d";
 	armor = 3000;
-	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEDOORWAY;
+	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEFRAME;
 	maintainBuilding[] = {{"MortarBucket",1}};
 	upgradeBuilding[] = {"CinderGarageOpenTop_DZ",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
 	GhostPreview = "CinderGarageOpenTop_Preview_DZ";

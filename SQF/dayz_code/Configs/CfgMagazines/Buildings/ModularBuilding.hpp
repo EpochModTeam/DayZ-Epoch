@@ -1212,6 +1212,15 @@ class ItemWoodGateFrame: CA_Magazine
 			require[] = {"ItemToolbox"};
 			create = "WoodGateFrame_DZ";
 		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239_1_1;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemWoodGate",1}};
+			input[] = {{"ItemWoodGateFrame",1},{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}};
+		};
 	};
 };
 
@@ -1265,6 +1274,90 @@ class ItemWoodGateLocked: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodGateLocked";
+		};
+	};
+};
+
+class door_frame_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_DOORWAY;
+	descriptionShort = $STR_EPOCH_DOORWAY_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "DoorFrame_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_238;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"door_kit",1}};
+			input[] = {{"door_frame_kit",1},{"ItemPole",1},{"ItemTankTrap",1}};
+		};		
+	};
+};
+
+class door_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_DOOR;
+	descriptionShort = $STR_EPOCH_DOOR_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Door_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"door_locked_kit",1}};
+			input[] = {{"door_kit",1},{"ItemComboLock",1}};
+		};
+	};
+};
+
+class door_locked_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_DOORLOCKED;
+	descriptionShort = $STR_EPOCH_DOOR_LOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "DoorLocked_DZ";
 		};
 	};
 };
