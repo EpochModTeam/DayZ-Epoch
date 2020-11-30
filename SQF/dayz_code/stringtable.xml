@@ -26924,6 +26924,14 @@
 			<German>Holzleiter</German>
 			<Russian>Деревянная лестница</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WOODRAIL">
+			<English>Wood Handrail</English>
+			<German>Holzgeländer</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOODRAIL_DESC">
+			<English>Wood Handrail constructed out of lumber.</English>
+			<German>Holzgeländer bestehend aus Bauholz.</German>
+		</Key>			
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL">
 			<English>Triangle Wall</English>
 			<German>Dreieckige Wand</German>
@@ -30900,7 +30908,21 @@
 		<Key ID="STR_EPOCH_ACTION_WOODENTRIANGLEWALL">
 			<English>Craft Triangle Wall</English>
 			<German>Dreieckige Wand herstellen</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_WOODHANDRAIL">
+			<English>Craft Wood Handrail</English>
+			<German>Holzgeländer herstellen</German>
+		</Key>		
+		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
+			<English>Open Gate</English>
+			<German>Tor öffnen</German>
+			<Russian>Открыть ворота</Russian>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_CLOSE_GATE">
+			<English>Close Gate</English>
+			<German>Tor schließen</German>
+			<Russian>Закрыть ворота</Russian>
+		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
@@ -30920,7 +30942,7 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>
+		</Key>		
 	</Package>
 </Project>
 

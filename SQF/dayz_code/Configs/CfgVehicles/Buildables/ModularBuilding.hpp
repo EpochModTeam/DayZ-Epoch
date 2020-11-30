@@ -348,18 +348,7 @@ class WoodTriangleWall_DZ: ModularItems {
 	armor = 1500;
 	displayName = $STR_EPOCH_TRIANGLE_WOODWALL;
 	GhostPreview = "Wood_Triangle_Wall_Preview_DZ";
-	class DestructionEffects : DestructionEffects 
-	{
-		class Ruin1 
-		{
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
+	maintainBuilding[] = {{"PartWoodLumber",1}};
 };
 
 class WoodStairs_DZ: ModularItems {
@@ -402,6 +391,16 @@ class WoodStairsSans_DZ: ModularItems {
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodStairs_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairsSans_Preview_DZ";
+};
+
+class WoodHandrail_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,1.5,0};
+	model = "\z\addons\dayz_epoch_v\base_building\wood\railing\railing.p3d";
+	armor = 300;
+	displayName = $STR_EPOCH_WOODRAIL;
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	GhostPreview = "Wood_Handrail_Preview_DZ";
 };
 
 class WoodGateFrame_DZ: ModularItems {

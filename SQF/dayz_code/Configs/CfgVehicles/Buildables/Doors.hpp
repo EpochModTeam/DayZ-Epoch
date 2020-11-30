@@ -491,7 +491,7 @@ class Land_DZE_WoodGate: Land_DZE_WoodDoor_Base {
 	{			
 		class Open_Door
 		{
-			displayName = $STR_DN_OUT_O_DOOR;
+			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
 			onlyforplayer = true;
 			position = "Door_knopf";
 			radius = 3;
@@ -500,7 +500,7 @@ class Land_DZE_WoodGate: Land_DZE_WoodDoor_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName = $STR_DN_OUT_C_DOOR;
+			displayName = $STR_BLD_ACTIONS_CLOSE_GATE;
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
@@ -538,7 +538,7 @@ class Land_DZE_WoodGateLocked: Land_DZE_WoodDoorLocked_Base {
 	{			
 		class Open_Door
 		{
-			displayName = $STR_DN_OUT_O_DOOR;
+			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
 			onlyforplayer = true;
 			position = "Door_knopf";
 			radius = 3;
@@ -547,25 +547,25 @@ class Land_DZE_WoodGateLocked: Land_DZE_WoodDoorLocked_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName = $STR_DN_OUT_C_DOOR;
+			displayName = $STR_BLD_ACTIONS_CLOSE_GATE;
 			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_LOCK;
+			displayName = $STR_BLD_ACTIONS_LOCKGATE;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
 			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
 		};
@@ -788,7 +788,7 @@ class CinderGate_DZ: CinderWallDoor_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName = $STR_DN_OUT_O_DOOR;
+			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
 			onlyforplayer = true;
 			position = "Door_knopf";
 			radius = 3;
@@ -797,7 +797,7 @@ class CinderGate_DZ: CinderWallDoor_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName = $STR_DN_OUT_C_DOOR;
+			displayName = $STR_BLD_ACTIONS_CLOSE_GATE;
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
@@ -835,7 +835,7 @@ class CinderGateLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName = $STR_DN_OUT_O_DOOR;
+			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
 			onlyforplayer = true;
 			position = "Door_knopf";
 			radius = 3;
@@ -844,25 +844,25 @@ class CinderGateLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		};
 		class Close_Door : Open_Door
 		{
-			displayName = $STR_DN_OUT_C_DOOR;
+			displayName = $STR_BLD_ACTIONS_CLOSE_GATE;
 			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_LOCK;
+			displayName = $STR_BLD_ACTIONS_LOCKGATE;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
 			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			displayName = $STR_BLD_ACTIONS_UNLOCKGATE;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
 		};

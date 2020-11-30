@@ -43,6 +43,15 @@ class ItemLog : CA_Magazine
 			requiretools[] = {"ItemHatchet"};
 			output[] = {{"PartWoodPile",4}};
 			input[] = {{"ItemLog",1}};
+		};	
+		class Crafting3
+		{
+			text = $STR_EPOCH_PLAYER_256;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemHatchet","ItemCrowbar"};
+			output[] = {{"deer_stand_kit",1}};
+			input[] = {{"ItemLog",8},{"ItemPlank",2},{"equip_nails",2}};
 		};		
 	};
 };	
@@ -76,7 +85,16 @@ class ItemPlank : CA_Magazine
 			requiretools[] = {"ItemKnife"};
 			output[] = {{"equip_woodensplint",1}};
 			input[] = {{"ItemPlank",1},{"equip_duct_tape",1},{"equip_string",1}};
-		};			
+		};	
+		class Crafting2
+		{
+			text = $STR_EPOCH_PLAYER_255;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"bulk_empty",1}};
+			input[] = {{"ItemPlank",2},{"PartGeneric",1}};
+		};		
 	};
 };
 
@@ -84,12 +102,12 @@ class PartWoodPile : CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	type = 256;
-	
+	type = 256;	
 	model = "\dayz_equip\models\woodPile.p3d";
 	picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
 	displayName = $STR_EQUIP_NAME_40;
 	descriptionShort = $STR_EQUIP_DESC_40;
+	
 	class ItemActions 
 	{
 		class Build 
@@ -195,7 +213,7 @@ class PartWoodLumber: CA_Magazine
 	type = 256;
 	displayName = $STR_EPOCH_LUMBER;
 	model = "\z\addons\dayz_epoch\models\planks.p3d";
-	picture= "\z\addons\dayz_epoch\pictures\equip_wood_planks_CA.paa";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wood_planks_CA.paa";
 	descriptionShort = $STR_EPOCH_LUMBER_DESC;
 	
 	class ItemActions
@@ -208,27 +226,15 @@ class PartWoodLumber: CA_Magazine
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"PartWoodPlywood",1}};
 			input[] = {{"PartWoodLumber",2}};
-
 		};
 		class Crafting1
 		{
-			text = $STR_EPOCH_PLAYER_255;
+			text = $STR_EPOCH_ACTION_WOODHANDRAIL;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
-			output[] = {{"bulk_empty",1}};
-			input[] = {{"PartWoodLumber",2},{"PartGeneric",1}};
-
-		};
-		class Crafting2
-		{
-			text = $STR_EPOCH_PLAYER_256;
-			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemCrowbar"};
-			output[] = {{"deer_stand_kit",1}};
-			input[] = {{"PartWoodLumber",8},{"PartWoodPile",2},{"equip_nails",2}};
-
+			output[] = {{"ItemWoodHandRail",2}};
+			input[] = {{"PartWoodLumber",6},{"equip_nails",1}};
 		};
 		class Crafting3
 		{
@@ -287,7 +293,7 @@ class PartWoodPlywood: CA_Magazine
 	type = 256;
 	displayName = $STR_EPOCH_PLYWOOD;
 	model = "\z\addons\dayz_epoch\models\plywood.p3d";
-	picture= "\z\addons\dayz_epoch\pictures\equip_plywood_CA.paa";
+	picture = "\z\addons\dayz_epoch\pictures\equip_plywood_CA.paa";
 	descriptionShort = $STR_EPOCH_PLYWOOD_DESC;
 	
 	class ItemActions

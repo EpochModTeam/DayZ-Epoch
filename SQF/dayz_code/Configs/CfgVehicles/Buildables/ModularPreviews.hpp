@@ -140,3 +140,8 @@ class Wood_Triangle_Wall_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\wood\apex_tri\apex_tri.p3d";
 	displayName = "Wood Triangle wall";
 };
+class Wood_Handrail_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\wood\railing\railing.p3d";
+	displayName = "Wood Handrail";
+};
