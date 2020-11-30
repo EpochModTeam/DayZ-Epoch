@@ -361,16 +361,6 @@ class WoodStairs_DZ: ModularItems {
 	upgradeBuilding[] = {"WoodStairsRails_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairs_Preview_DZ";
 };
-class WoodLadder_DZ: ModularItems {
-	scope = 2;
-	offset[] = {0,1.5,0};
-	model = "\z\addons\dayz_epoch\models\wood_ladder.p3d";
-	armor = 300;
-	displayName = $STR_EPOCH_WOODLADDER;
-	maintainBuilding[] = {{"PartWoodLumber",1}};
-	GhostPreview = "WoodLadder_Preview_DZ";
-	ladders[] = {{"start1","end1"}};
-};
 
 class WoodStairsRails_DZ: ModularItems {
 	scope = 2;
@@ -391,6 +381,27 @@ class WoodStairsSans_DZ: ModularItems {
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	upgradeBuilding[] = {"WoodStairs_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairsSans_Preview_DZ";
+};
+
+class WoodFloorStairs_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
+	armor = 2000;
+	displayName = "Wood floor w/Stairs";
+	maintainBuilding[] = {{"PartWoodLumber",4}};
+	GhostPreview = "Wood_Floor_Stairs_Preview_DZ";
+};
+
+class WoodLadder_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,1.5,0};
+	model = "\z\addons\dayz_epoch\models\wood_ladder.p3d";
+	armor = 300;
+	displayName = $STR_EPOCH_WOODLADDER;
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	GhostPreview = "WoodLadder_Preview_DZ";
+	ladders[] = {{"start1","end1"}};
 };
 
 class WoodHandrail_DZ: ModularItems {

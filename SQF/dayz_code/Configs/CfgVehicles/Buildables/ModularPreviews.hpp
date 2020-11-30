@@ -145,3 +145,8 @@ class Wood_Handrail_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\wood\railing\railing.p3d";
 	displayName = "Wood Handrail";
 };
+class Wood_Floor_Stairs_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
+	displayName = "Wood floor w/Stairs Preview";
+};

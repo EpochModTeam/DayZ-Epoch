@@ -26718,7 +26718,6 @@
 			<German>Grundstücksmarkierung</German>
 			<Russian>Управление строительным столбом</Russian>
 		</Key>
-
 		<Key ID="STR_EPOCH_TRADER">
 			<English>Trader</English>
 			<German>Händler</German>
@@ -26816,6 +26815,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_LOCKED_DESC">
 			<English>Cinder block wall with locked metal single access door.</English>
+			<German>Eine Betontür mit einem Zahlenschloss.</German>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
@@ -26844,16 +26844,16 @@
 			<German>Betontorrahmen</German>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATEFRAME_DESC">
-			<English>Cinder Gate Frame constructed out of plywood and lumber.</English>
-			<German>Betontorrahmen bestehend us Beton</German>
+			<English>Cinder Gate Frame constructed out of cinder.</English>
+			<German>Ein Betontorrahmen bestehend aus Beton.</German>
 		</Key>			
 		<Key ID="STR_EPOCH_CINDERGATE">
 			<English>Cinder Gate</English>
 			<German>Betontor</German>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATE_DESC">
-			<English>Cinder Gate constructed out of plywood and lumber.</English>
-			<German>Betontor bestehend aus Beton.</German>
+			<English>Cinder Gate constructed out cinder.</English>
+			<German>Ein Betontor bestehend aus Beton.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_CINDERGATELOCKED">
 			<English>Cinder Gate Locked</English>
@@ -26861,7 +26861,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATELOCKED_DESC">
 			<English>Cinder Gate with combination lock.</English>
-			<German>Betontor mit Zahlenschloss.</German>
+			<German>Ein Betontor mit Zahlenschloss.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_METALDRAWBRIDGE">
 			<English>Metal Drawbridge</English>
@@ -26869,7 +26869,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGE_DESC">
 			<English>Metal Drawbridge constructed out of metal and fire.</English>
-			<German>Stahlzugbrücke bestehend aus Stahl und Feuer.</German>
+			<German>Eine Stahlzugbrücke bestehend aus Stahl und Feuer.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED">
 			<English>Metal Drawbridge Locked</English>
@@ -26877,7 +26877,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED_DESC">
 			<English>Metal Drawbridge with combination lock.</English>
-			<German>Stahlzugbrücke mit Zahlenschloss.</German>
+			<German>Eine Stahlzugbrücke mit einem Zahlenschloss.</German>
 		</Key>			
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
@@ -26896,7 +26896,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILING_DESC">
 			<English>Wooden floor can also be used as a ceiling.</English>
-			<German>Holzboden, welcher auch als Decke genutzt werden kann.</German>
+			<German>Ein Holzboden, welcher auch als Decke genutzt werden kann.</German>
 			<Russian>Деревянный пол, может также использоваться в качестве потолка.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRS">
@@ -26911,7 +26911,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRSWITHSUPPORTS_DESC">
 			<English>Wooden stairs with supports.</English>
-			<German>Holztreppe mit verstärkten Balken.</German>
+			<German>Eine Holztreppe mit verstärkten Balken.</German>
 			<Russian>Деревянные ступеньки с опорами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRSRAILS">
@@ -26919,6 +26919,14 @@
 			<German>Holztreppe mit Geländer</German>
 			<Russian>Деревянные ступеньки с перилами.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WOODFLOORSTAIRS">
+			<English>Wood Floor w/ stairs</English>
+			<German>Holzboden mit Treppe</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOODFLOORSTAIRS_DESC">
+			<English>Wooden floor with stairs constructed out of plywood and lumber.</English>
+			<German>Ein Holzboden mit Treppe bestehend aus Sperr- und Bauholz.</German>
+		</Key>			
 		<Key ID="STR_EPOCH_WOODLADDER">
 			<English>Wooden Ladder</English>
 			<German>Holzleiter</German>
@@ -26930,7 +26938,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAIL_DESC">
 			<English>Wood Handrail constructed out of lumber.</English>
-			<German>Holzgeländer bestehend aus Bauholz.</German>
+			<German>Ein Holzgeländer bestehend aus Bauholz.</German>
 		</Key>			
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL">
 			<English>Triangle Wall</English>
@@ -26957,7 +26965,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALLTHIRDPART_DESC">
 			<English>Third wall constructed out of plywood and lumber.</English>
-			<German>Holzwand (1/3) bestehend aus Sperr- und Bauholz.</German>
+			<German>Eine Holzwand (1/3) bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Треть стены, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHWINDOW">
@@ -26967,7 +26975,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHWINDOW_DESC">
 			<English>Wall with window constructed out of plywood and lumber.</English>
-			<German>Holzwand mit Fenster bestehend aus Sperr- und Bauholz.</German>
+			<German>Eine Holzwand mit Fenster bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Стена с окном, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORWAY">
@@ -26977,7 +26985,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORWAY_DESC">
 			<English>Wall with doorway constructed out of plywood and lumber.</English>
-			<German>Holzwand mit Türgang bestehend aus Sperr- und Bauholz.</German>
+			<German>Eine Holzwand mit einem Türdurchgang bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Стена с дверным проёмом, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOOR">
@@ -26992,12 +27000,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED_DESC">
 			<English>Wall with locked door constructed out of plywood and lumber.</English>
-			<German>Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
+			<German>Eine Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Стена с запертой дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOOR_DESC">
 			<English>Wall with door constructed out of plywood and lumber.</English>
-			<German>Holzwand mit Tür bestehend aus Sperr- und Bauholz.</German>
+			<German>Eine Holzwand mit Tür bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Стена с дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOOR">
@@ -27007,7 +27015,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOOR_DESC">
 			<English>Garage door constructed out of plywood and lumber.</English>
-			<German>Holzgaragentür bestehend aus Sperr- und Bauholz.</German>
+			<German>Eine Holzgaragentür bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Деревянная стена с гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED">
@@ -27017,7 +27025,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED_DESC">
 			<English>Garage door with combination lock.</English>
-			<German>Holzgaragentür mit Zahlenschloss.</German>
+			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
 			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATEFRAME">
@@ -27026,7 +27034,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATEFRAME_DESC">
 			<English>Wooden Gate Frame constructed out of plywood and lumber.</English>
-			<German>Holztorrahmen bestehend aus Sperr- und Bauholz.</German>
+			<German>Ein Holztorrahmen bestehend aus Sperr- und Bauholz.</German>
 		</Key>			
 		<Key ID="STR_EPOCH_WOODGATE">
 			<English>Wooden Gate</English>
@@ -27034,7 +27042,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATE_DESC">
 			<English>Wooden Gate constructed out of plywood and lumber.</English>
-			<German>Holztor bestehend aus Sperr- und Bauholz.</German>
+			<German>Ein Holztor bestehend aus Sperr- und Bauholz.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_WOODGATELOCKED">
 			<English>Wooden Gate Locked</English>
@@ -27042,7 +27050,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATELOCKED_DESC">
 			<English>Wooden Gate with combination lock.</English>
-			<German>Holztor mit Zahlenschloss.</German>
+			<German>Ein Holztor mit Zahlenschloss.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_LARGEWOODWALL">
 			<English>Large Wooden Wall</English>
@@ -27081,7 +27089,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOOR_DESC">
 			<English>Wall with door constructed out of plywood and lumber.</English>
-			<German>Große Holzwand mit Tür bestehend aus Sperr- und Bauholz.</German>
+			<German>Eine große Holzwand mit Tür bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Большая стена с дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED">
@@ -27091,7 +27099,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED_DESC">
 			<English>Wall with combination lock door constructed out of plywood and lumber.</English>
-			<German>Große Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
+			<German>Eine große Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
 			<Russian>Большая стена с закрытой дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_ROUND">
@@ -30912,6 +30920,10 @@
 		<Key ID="STR_EPOCH_ACTION_WOODHANDRAIL">
 			<English>Craft Wood Handrail</English>
 			<German>Holzgeländer herstellen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_WOODFLOORSTAIRS">
+			<English>Craft Floor Stairs</English>
+			<German>Boden mit Treppe herstellen</German>
 		</Key>		
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>

@@ -283,6 +283,37 @@ class ItemWoodFloor: CA_Magazine
 			require[] = {"ItemToolbox"};
 			create = "WoodFloor_DZ";
 		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_WOODFLOORSTAIRS;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodFloorStairs",1}};
+			input[] = {{"ItemWoodStairs",1},{"ItemWoodFloor",1}};
+		};
+	};
+};
+
+class ItemWoodFloorStairs: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_WOODFLOORSTAIRS;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	descriptionShort = $STR_EPOCH_WOODFLOORSTAIRS_DESC;
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "WoodFloorStairs_DZ";
+		};	
 	};
 };
 
@@ -394,6 +425,15 @@ class ItemWoodStairs: CA_Magazine
 			output[] = {{"ItemWoodStairsSupport",1}};
 			input[] = {{"ItemWoodStairs",1},{"PartWoodLumber",2}};
 		};
+		class Crafting1 
+		{
+			text = $STR_EPOCH_ACTION_WOODFLOORSTAIRS;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodFloorStairs",1}};
+			input[] = {{"ItemWoodStairs",1},{"ItemWoodFloor",1}};
+		};		
 	};
 };
 
