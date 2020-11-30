@@ -64,7 +64,7 @@ class full_cinder_wall_kit: CA_Magazine
 	};
 };
 
-class cinder_door_kit: CA_Magazine 
+class cinder_door_frame_kit: CA_Magazine 
 {
 	scope = 2;
 	count = 1;
@@ -82,6 +82,37 @@ class cinder_door_kit: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallSmallDoorway_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_238;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"cinder_door_kit",1}};
+			input[] = {{"cinder_door_frame_kit",1},{"ItemPole",1},{"ItemTankTrap",1}};
+		};		
+	};
+};
+
+class cinder_door_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_BLOCKDOORWAY;
+	descriptionShort = $STR_EPOCH_BLOCKDOORWAY_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderWallDoorSmall_DZ";
 		};
 		class Crafting 
 		{
@@ -114,6 +145,37 @@ class cinder_door_kit_locked: CA_Magazine
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoorSmallLocked_DZ";
 		};
+	};
+};
+
+class cinder_garage_frame_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_BLOCKGARAGEDOORWAY;
+	descriptionShort = $STR_EPOCH_BLOCKGARAGEDOORWAY_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderWallDoorway_DZ";
+		};	
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_240;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"cinder_garage_kit",1}};
+			input[] = {{"cinder_garage_frame_kit",1},{"ItemPole",3},{"ItemTankTrap",3}};
+		};		
 	};
 };
 
@@ -170,6 +232,90 @@ class cinder_garage_kit_locked: CA_Magazine
 	};
 };
 
+class cinder_garage_top_open_frame_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEFRAME;
+	descriptionShort = $STR_EPOCH_CINDEROPENTOPGARAGEFRAME_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderGarageOpenTopFrame_DZ";
+		};	
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_240;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"cinder_garage_top_open_kit",1}};
+			input[] = {{"cinder_garage_top_open_frame_kit",1},{"ItemPole",3},{"ItemTankTrap",3}};
+		};		
+	};
+};
+
+class cinder_garage_top_open_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEDOOR;
+	descriptionShort = $STR_EPOCH_CINDEROPENTOPGARAGEDOOR_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderGarageOpenTop_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"cinder_garage_top_open_kit_locked",1}};
+			input[] = {{"cinder_garage_top_open_kit",1},{"ItemComboLock",1}};
+		};		
+	};
+};
+
+class cinder_garage_top_open_kit_locked: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED;
+	descriptionShort = $STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderGarageOpenTopLocked_DZ";
+		};
+	};
+};
+
 class cinder_gate_frame_kit: CA_Magazine 
 {
 	scope = 2;
@@ -188,6 +334,15 @@ class cinder_gate_frame_kit: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderGateFrame_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239_1_1;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"cinder_gate_kit",1}};
+			input[] = {{"cinder_gate_frame_kit",1},{"equip_metal_sheet",6},{"ItemRSJ",2},{"ItemScrews",2}};
 		};
 	};
 };

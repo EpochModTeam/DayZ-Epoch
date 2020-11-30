@@ -23119,6 +23119,10 @@
 			<Dutch>Creëer afsluitbare deur</Dutch>
 			<Czech>Vytvořit Zamčené dveře</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_239_1_1">
+			<English>Craft Gate</English>
+			<German>Tor herstellen</German>
+		</Key>			
 		<Key ID="STR_EPOCH_PLAYER_239_1">
 			<English>Craft Locked Gate</English>
 			<German>Verschlossenes Tor herstellen</German>
@@ -23224,6 +23228,10 @@
 		<Key ID="STR_EPOCH_PLAYER_253_1">
 			<English>Craft Cinder Gate Frame</English>
 			<German>Betontorrahmen herstellen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLAYER_253_1_1">
+			<English>Craft Cinder Garage Frame w/ no top</English>
+			<German>Betongaragendurchgang (rahmenlos) herstellen</German>
 		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_254">
 			<English>Craft Plywood</English>
@@ -26827,7 +26835,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
-			<German>Beton-Garagentürrahmen</German>
+			<German>Betongaragentürrahmen</German>
 			<Russian>Дверной проём (гаражный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_DESC">
@@ -26837,16 +26845,40 @@
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOOR">
 			<English>Cinder Garage Door</English>
-			<German>Beton-Garagentür</German>
+			<German>Betongaragentür</German>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORLOCKED">
 			<English>Cinder Garage Door (locked)</English>
-			<German>Beton-Garagentür (verschlossen)</German>
+			<German>Betongaragentür (verschlossen)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_LOCKED_DESC">
 			<English>Cinder block wall with locked metal garage doorway.</English>
-			<German>Eine Beton-Garagentür mit einem Zahlenschloss.</German>
+			<German>Eine Betongaragentür mit einem Zahlenschloss.</German>
 		</Key>
+		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEFRAME">
+			<English>Cinder Garage Frame w/ no top</English>
+			<German>Betongaragentürdurchgang (rahmenlos)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEFRAME_DESC">
+			<English>Cinder garage frame constructed out of cinder.</English>
+			<German>Ein Betongaragentürdurchgang bestehend aus Beton.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOOR">
+			<English>Cinder Garage Door w/ no top</English>
+			<German>Betongaragentür (rahmenlos)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOOR_DESC">
+			<English>Cinder garage door constructed out of cinder.</English>
+			<German>Eine Betongaragentür bestehend aus Beton.</German>
+		</Key>
+		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED">
+			<English>Cinder Garage Door Locked w/ no top</English>
+			<German>Betongaragentür (verschlossen, rahmenlos)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED_DESC">
+			<English>Cinder garage door with combination lock.</English>
+			<German>Eine Betongaragentür mit Zahlenschloss.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_CINDERGATEFRAME">
 			<English>Cinder Gate Frame</English>
 			<German>Betontorrahmen</German>
@@ -27043,8 +27075,7 @@
 			<English>Garage door with combination lock.</English>
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
 			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
-		</Key>
-		
+		</Key>		
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR">
 			<English>Wood Garage Door w/ no top</English>
 			<German>Holzgaragentür (rahmenlos)</German>
@@ -27063,7 +27094,6 @@
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
 			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>		
-		
 		<Key ID="STR_EPOCH_WOODGATEFRAME">
 			<English>Wooden Gate Frame</English>
 			<German>Holztorrahmen</German>

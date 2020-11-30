@@ -101,3 +101,26 @@ class CinderGateFrame_DZ: ModularItems {
 		};
 	};
 };
+
+class CinderGarageOpenTopFrame_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,0};
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\cindergarage_notop_frame.p3d";
+	armor = 3000;
+	displayName = $STR_EPOCH_CINDEROPENTOPGARAGEDOORWAY;
+	maintainBuilding[] = {{"MortarBucket",1}};
+	upgradeBuilding[] = {"CinderGarageOpenTop_DZ",{"ItemToolbox"},{{"ItemPole",3},{"ItemTankTrap",3}}};
+	GhostPreview = "CinderGarageOpenTop_Preview_DZ";
+	class DestructionEffects : DestructionEffects 
+	{
+		class Ruin1 
+		{
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
+};
