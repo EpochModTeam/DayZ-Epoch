@@ -83,6 +83,15 @@ class cinder_door_kit: CA_Magazine
 			require[] = {"ItemToolbox"};
 			create = "CinderWallSmallDoorway_DZ";
 		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"cinder_door_kit_locked",1}};
+			input[] = {{"cinder_door_kit",1},{"ItemComboLock",1}};
+		};
 	};
 };
 
@@ -127,6 +136,15 @@ class cinder_garage_kit: CA_Magazine
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoorway_DZ";
 		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"cinder_garage_kit_locked",1}};
+			input[] = {{"cinder_garage_kit",1},{"ItemComboLock",1}};
+		};		
 	};
 };
 
@@ -194,6 +212,15 @@ class cinder_gate_kit: CA_Magazine
 			require[] = {"ItemToolbox"};
 			create = "CinderGate_DZ";
 		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239_1;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"cinder_gate_kit_locked",1}};
+			input[] = {{"cinder_gate_kit",1},{"ItemComboLock",1}};
+		};	
 	};
 };
 
@@ -712,8 +739,8 @@ class ItemWoodWallWithDoor: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox"};
+			neednearby[] = {};
+			requiretools[] = {};
 			output[] = {{"ItemWoodWallWithDoorLocked",1}};
 			input[] = {{"ItemWoodWallWithDoor",1},{"ItemComboLock",1}};
 		};
@@ -763,10 +790,10 @@ class ItemWoodWallGarageDoor: CA_Magazine
 		};
 		class Crafting 
 		{
-			text = $STR_EPOCH_PLAYER_240;
+			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox"};
+			neednearby[] = {};
+			requiretools[] = {};
 			output[] = {{"ItemWoodWallGarageDoorLocked",1}};
 			input[] = {{"ItemWoodWallGarageDoor",1},{"ItemComboLock",1}};
 		};
@@ -791,6 +818,59 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_GarageWoodDoorLocked";
+		};
+	};
+};
+
+class ItemWoodOpenTopGarageDoor: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_WOODOPENTOPGARAGEDOOR;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	descriptionShort = $STR_EPOCH_WOODOPENTOPGARAGEDOOR_DESC;
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Land_DZE_WoodOpenTopGarageDoor";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemWoodOpenTopGarageDoorLocked",1}};
+			input[] = {{"ItemWoodOpenTopGarageDoor",1},{"ItemComboLock",1}};
+		};
+	};
+};
+
+class ItemWoodOpenTopGarageDoorLocked: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	descriptionShort = $STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED_DESC;
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Land_DZE_WoodOpenTopGarageLocked";
 		};
 	};
 };
@@ -840,6 +920,15 @@ class ItemWoodWallLg: CA_Magazine
 			output[] = {{"ItemWoodWallGarageDoor",1}};
 			input[] = {{"ItemWoodWallLg",1},{"PartWoodLumber",2}};
 		};
+		class Crafting3 
+		{
+			text = $STR_EPOCH_PLAYER_240_1;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"ItemWoodOpenTopGarageDoor",1}};
+			input[] = {{"ItemWoodWallLg",1},{"PartWoodLumber",2}};
+		};		
 	};
 };
 
@@ -919,8 +1008,8 @@ class ItemWoodWallWithDoorLg: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox"};
+			neednearby[] = {};
+			requiretools[] = {};
 			output[] = {{"ItemWoodWallWithDoorLgLocked",1}};
 			input[] = {{"ItemWoodWallWithDoorLg",1},{"ItemComboLock",1}};
 		};
@@ -990,6 +1079,15 @@ class ItemWoodGate: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodGate";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239_1;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"ItemWoodGateLocked",1}};
+			input[] = {{"ItemWoodGate",1},{"ItemComboLock",1}};
 		};
 	};
 };

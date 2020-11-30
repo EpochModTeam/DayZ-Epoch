@@ -572,6 +572,111 @@ class Land_DZE_WoodGateLocked: Land_DZE_WoodDoorLocked_Base {
 	};
 };
 
+class Land_DZE_WoodOpenTopGarageDoor: Land_DZE_WoodDoor_Base {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\wood\garage_notop\wood_garage_notop.p3d";
+	displayName = $STR_EPOCH_WOODOPENTOPGARAGEDOOR;
+	GhostPreview = "Wood_GarageOpenTop_Preview_DZ";
+	upgradeBuilding[] = {"Land_DZE_WoodOpenTopGarageLocked",{},{{"ItemComboLock",1}}};
+	class AnimationSources 
+	{
+		class doorl 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};
+		class doorR 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};			
+	};
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName = $STR_DN_OUT_O_DOOR;
+			onlyforplayer = true;
+			position = "Door_knopf";
+			radius = 3;
+			condition = "this animationPhase ""doorl"" < 0.5";
+			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName = $STR_DN_OUT_C_DOOR;
+			condition = "this animationPhase ""doorl"" >= 0.5";
+			statement = "this animate [""doorl"", 0];this animate [""doorR"", 0];";
+		};
+	};
+};
+class Land_DZE_WoodOpenTopGarageLocked: Land_DZE_WoodDoorLocked_Base {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\wood\garage_notop\locked_wood_garage_notop.p3d";
+	displayName = $STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED;
+	GhostPreview = "Wood_GarageOpenTop_Preview_DZ";
+	downgradeBuilding[] = {"Land_DZE_WoodOpenTopGarageDoor",{{"ItemComboLock",1}}};
+	class AnimationSources 
+	{
+		class doorl 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};
+		class doorR 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};			
+		class Open_latch 
+		{
+			source = "user";
+			animPeriod = 1;
+			initPhase = 0; 
+		};
+	};
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName = $STR_DN_OUT_O_DOOR;
+			onlyforplayer = true;
+			position = "Door_knopf";
+			radius = 3;
+			condition = "(this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName = $STR_DN_OUT_C_DOOR;
+			condition = "(this animationPhase ""doorl"" == 1) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "this animate [""doorl"", 0];this animate [""doorR"", 0];";
+		};
+		class Lock_Door : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_LOCK;
+			condition = "(this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
+		};
+		class Unlock_Door : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 0)";
+			statement = "this animate [""Open_latch"", 1];PVDZE_handleSafeGear = [player,this,5,DZE_Lock_Door];publicVariableServer ""PVDZE_handleSafeGear"";";
+		};
+		class Unlock_Door_Dialog : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
+		};
+	};
+};
+
 class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\steel_garage_locked.p3d";

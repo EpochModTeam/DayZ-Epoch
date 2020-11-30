@@ -132,7 +132,7 @@ class CinderGate_Preview_DZ: DZE_Ghost_Previews {
 };
 class Drawbridge_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
-	model = "z\addons\dayz_epoch_v\base_building\wood\draw_bridge\wood_draw_bridge_ghost.p3d";
+	model = "\z\addons\dayz_epoch_v\base_building\wood\draw_bridge\wood_draw_bridge_ghost.p3d";
 	displayName = "Metal Drawbridge Preview";
 };
 class Wood_Triangle_Wall_Preview_DZ: DZE_Ghost_Previews {
@@ -152,6 +152,11 @@ class Wood_Floor_Stairs_Preview_DZ: DZE_Ghost_Previews {
 };
 class Wood_Pillar_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
-	model = "z\addons\dayz_epoch_v\base_building\wood\pillar\corner_pillar.p3d";
+	model = "\z\addons\dayz_epoch_v\base_building\wood\pillar\corner_pillar.p3d";
 	displayName = "Wood Pillar Preview";
+};
+class Wood_GarageOpenTop_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\wood\garage_notop\wood_garage_notop_frame.p3d";
+	displayName = "WoodGarage open top Preview";
 };

@@ -23114,11 +23114,15 @@
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239">
 			<English>Craft Locked Door</English>
-			<German>Geschlossene Tür herstellen</German>
+			<German>Verschlossene Tür herstellen</German>
 			<Russian>Создать: Дверь с замком</Russian>
 			<Dutch>Creëer afsluitbare deur</Dutch>
 			<Czech>Vytvořit Zamčené dveře</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_239_1">
+			<English>Craft Locked Gate</English>
+			<German>Verschlossenes Tor herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_240">
 			<English>Craft Garage Door</English>
 			<German>Garagentor herstellen</German>
@@ -23126,6 +23130,10 @@
 			<Dutch>Creëer garagedeur</Dutch>
 			<Czech>Vytvořit Garážová vrata</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_240_1">
+			<English>Craft Garage Door w/ no top</English>
+			<German>Garagentor (rahmenlos) herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_242">
 			<English>Craft Lumber</English>
 			<German>Bauholz herstellen</German>
@@ -27036,6 +27044,26 @@
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
 			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
+		
+		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR">
+			<English>Wood Garage Door w/ no top</English>
+			<German>Holzgaragentür (rahmenlos)</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR_DESC">
+			<English>Garage door constructed out of plywood and lumber.</English>
+			<German>Eine Holzgaragentür bestehend aus Sperr- und Bauholz.</German>
+			<Russian>Деревянная стена с гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED">
+			<English>Wood Garage Door Locked w/ no top</English>
+			<German>Holzgaragentür (verschlossen, rahmenlos)</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED_DESC">
+			<English>Garage door with combination lock.</English>
+			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
+			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+		</Key>		
+		
 		<Key ID="STR_EPOCH_WOODGATEFRAME">
 			<English>Wooden Gate Frame</English>
 			<German>Holztorrahmen</German>
