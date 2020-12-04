@@ -246,3 +246,53 @@ class CinderGarageOpenTopFrame_DZ: ModularItems {
 		};
 	};
 };
+
+/* Model not finshed
+class HeliNest_DZ: ModularItems {
+	scope = 2;
+	armor = 7000;
+	model = "\z\addons\dayz_epoch_v\base_building\floors\helinest\all_heli_shop.p3d";
+	displayName = "Helinest";
+	GhostPreview = "Helinest_Preview_DZ";
+	class AnimationSources 
+	{
+		class door1 
+		{
+			source = "user";
+			animPeriod = 2;
+			initPhase = 0; 
+		};
+		class door2: door1{};		
+		class door3: door1{};		
+		class door4: door1{};		
+		class door5: door1{};		
+		class door6: door1{};		
+		class door7: door1{};		
+		class door8: door1{};		
+		class door9: door1{};		
+		class door10: door1{};		
+
+	};
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName = $STR_DN_OUT_O_DOOR;
+			onlyforplayer = true;
+			position = "Door_knopf";
+			radius = 3;
+			condition = "(this animationPhase ""door1"" == 0)";
+			statement = "this animate [""door1"", 1];this animate [""door2"", 1];this animate [""door3"", 1];this animate [""door4"", 1];this animate [""door5"", 1];this animate [""door6"", 1];this animate [""door7"", 1];this animate [""door8"", 1];this animate [""door9"", 1]; this animate [""door10"", 1];";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName = $STR_DN_OUT_C_DOOR;
+			condition = "(this animationPhase ""door1"" == 1)";
+//			statement = "this animate [""door1"", 0];this animate [""Open_doorR"", 0];";
+			statement = "this animate [""door1"", 0];this animate [""door2"", 0];this animate [""door3"", 0];this animate [""door4"", 0];this animate [""door5"", 0];this animate [""door6"", 0];this animate [""door7"", 0];this animate [""door8"", 0];this animate [""door9"", 0]; this animate [""door10"", 0];";
+
+		};
+	};
+};
+*/
+

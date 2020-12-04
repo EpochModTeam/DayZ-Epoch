@@ -22924,6 +22924,10 @@
 			<Dutch>Creëer paal</Dutch>
 			<Czech>Vytvořit tyč</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_213_1">
+			<English>Craft Metal Pillar</English>
+			<German>Metallsäule herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_214">
 			<English>Build Corrugated Fence</English>
 			<German>Wellblechzaun aufbauen</German>
@@ -26966,7 +26970,15 @@
 		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED_DESC">
 			<English>Metal Drawbridge with combination lock.</English>
 			<German>Eine Stahlzugbrücke mit einem Zahlenschloss.</German>
-		</Key>	
+		</Key>
+		<Key ID="STR_EPOCH_METALPILLAR">
+			<English>Metal Pillar</English>
+			<German>Metallsäule</German>
+		</Key>
+		<Key ID="STR_EPOCH_METALPILLAR_DESC">
+			<English>Metal Pillar constructed out of metal.</English>
+			<German>Eine Metallsäule bestehend aus Stahl.</German>
+		</Key>			
 		<Key ID="STR_EPOCH_DOORWAY">
 			<English>Doorway</English>
 			<German>Türdurchgang</German>

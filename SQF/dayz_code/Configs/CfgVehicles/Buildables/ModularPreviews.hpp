@@ -179,3 +179,13 @@ class CinderDoorHatch_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinder_door_frame_ghost.p3d";
 	displayName = "Cinder door with hatch Preview";
 };
+class Helinest_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\floors\helinest\all_heli_shop_ghost.p3d";
+	displayName = "Helinest Preview";
+};
+class MetalPillar_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\pillar\metal_cornerpillar.p3d";
+	displayName = "Metal Pillar Preview";
+};

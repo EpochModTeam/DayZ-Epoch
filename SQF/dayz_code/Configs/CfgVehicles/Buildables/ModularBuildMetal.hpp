@@ -28,3 +28,12 @@ class DoorFrame_DZ: ModularItems {
 	upgradeBuilding[] = {"Door_DZ",{"ItemToolbox"},{{"ItemPole",1},{"ItemTankTrap",1}}};
 };
 
+class MetalPillar_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,0};
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\pillar\metal_cornerpillar.p3d";
+	armor = 3400;
+	displayName = $STR_EPOCH_METALPILLAR;
+	maintainBuilding[] = {{"PartGeneric",1}};
+	GhostPreview = "MetalPillar_Preview_DZ";
+};

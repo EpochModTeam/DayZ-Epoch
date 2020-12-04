@@ -118,6 +118,16 @@ class ItemMetalSheet: CA_Magazine
 	picture = "\z\addons\dayz_buildings\equip\item_sheetmetal.paa";
 	model = "z\addons\dayz_buildings\models\sheet_metal.p3d";
 	descriptionShort = $STR_BLD_desc_ItemMetalSheet;//"Metal Sheeting"
+	
+	class Crafting
+	{
+		text = $STR_EPOCH_PLAYER_218;
+		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+		neednearby[] = {"fire"};
+		requiretools[] = {"ItemToolbox","ItemCrowbar"};
+		output[] = {{"ItemCorrugated",1}};
+		input[] = {{"ItemPole",2},{"ItemMetalSheet",2},{"PartWoodLumber",2}};
+	};	
 };
 
 class equip_metal_sheet : CA_Magazine 
@@ -129,6 +139,16 @@ class equip_metal_sheet : CA_Magazine
 	model = "\z\addons\dayz_communityassets\models\metal_sheet_clean.p3d";
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_metal_sheet.paa";
 	type = 256;
+	
+	class Crafting
+	{
+		text = $STR_EPOCH_PLAYER_213_1;
+		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+		neednearby[] = {"fire"};
+		requiretools[] = {"ItemToolbox","ItemCrowbar"};
+		output[] = {{"metal_pillar_kit",2}};
+		input[] = {{"ItemPole",2},{"equip_metal_sheet",4}};
+	};	
 };
 
 class equip_metal_sheet_rusted : CA_Magazine 
