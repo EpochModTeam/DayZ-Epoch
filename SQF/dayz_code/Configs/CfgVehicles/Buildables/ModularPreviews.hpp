@@ -169,3 +169,8 @@ class DoorFrame_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch\models\Steel_door_frame_single_ghost.p3d";
 	displayName = "Door Frame Preview";
 };
+class CinderWallWindow_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_wall_win\h4_cinder_wall_win_ghost.p3d";
+	displayName = "Cinder Wall Window Preview";
+};

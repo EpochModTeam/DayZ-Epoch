@@ -255,7 +255,7 @@ class WoodFloorStairs_DZ: ModularItems {
 	offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
 	armor = 1000;
-	displayName = "Wood floor w/Stairs";
+	displayName = $STR_EPOCH_WOODFLOORSTAIRS;
 	maintainBuilding[] = {{"PartWoodLumber",4}};
 	GhostPreview = "Wood_Floor_Stairs_Preview_DZ";
 };

@@ -23126,6 +23126,14 @@
 		<Key ID="STR_EPOCH_PLAYER_239_1">
 			<English>Craft Locked Gate</English>
 			<German>Verschlossenes Tor herstellen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLAYER_239_1_3">
+			<English>Craft Wall w/ Window</English>
+			<German>Wand mit Fenster herstellen</German>
+		</Key>			
+		<Key ID="STR_EPOCH_PLAYER_239_1_2">
+			<English>Craft Locked Window</English>
+			<German>Verschlossenes Fenster herstellen</German>
 		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_240">
 			<English>Craft Garage Door</English>
@@ -23133,7 +23141,7 @@
 			<Russian>Создать: Дверь гаража</Russian>
 			<Dutch>Creëer garagedeur</Dutch>
 			<Czech>Vytvořit Garážová vrata</Czech>
-		</Key>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_240_1">
 			<English>Craft Garage Door w/ no top</English>
 			<German>Garagentor (rahmenlos) herstellen</German>
@@ -26811,6 +26819,22 @@
 			<German>Eine komplett aufgebaute Betonwand.</German>
 			<Russian>Целая стена из шлакоблоков.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW">
+			<English>Cinder Wall w/ window</English>
+			<German>Betonwand mit Fenster</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_DESC">
+			<English>Cinder Wall with window that can be locked with a combination lock.</English>
+			<German>Eine Betonwand mit Fenster, welches mit einem Zahlenschloss verschlossen werden kann.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED">
+			<English>Cinder Wall w/ window locked</English>
+			<German>Betonwand mit Fenster (verschlossen)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED_DESC">
+			<English>Cinder Wall with window and a combination lock.</English>
+			<German>Eine Betonwand mit Fenster und einem Zahlenschloss.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
 			<English>Cinder Doorway</English>
 			<German>Betontürrahmen</German>
@@ -31024,7 +31048,11 @@
 		<Key ID="STR_EPOCH_ACTION_METAL_DOORWAY">
 			<English>Craft Doorway</English>
 			<German>Türdurchgang herstellen</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_CINDERWALL_WINDOW">
+			<English>Craft Wall w/ window</English>
+			<German>Wand mit Fenster herstellen</German>
+		</Key>		
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>
 			<German>Tor öffnen</German>

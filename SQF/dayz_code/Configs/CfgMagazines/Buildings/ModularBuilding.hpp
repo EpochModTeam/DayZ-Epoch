@@ -64,6 +64,59 @@ class full_cinder_wall_kit: CA_Magazine
 	};
 };
 
+class cinderwall_window_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERBLOCKWALLWINDOW;
+	descriptionShort = $STR_EPOCH_CINDERBLOCKWALLWINDOW_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderWallWindow_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239_1_2;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"cinderwall_window_locked_kit",1}};
+			input[] = {{"cinderwall_window_kit",1},{"ItemComboLock",1}};
+		};
+	};
+};
+
+class cinderwall_window_locked_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED;
+	descriptionShort = $STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderWallWindowLocked_DZ";
+		};
+	};
+};
+
 class cinder_door_frame_kit: CA_Magazine 
 {
 	scope = 2;
@@ -1361,3 +1414,4 @@ class door_locked_kit: CA_Magazine
 		};
 	};
 };
+

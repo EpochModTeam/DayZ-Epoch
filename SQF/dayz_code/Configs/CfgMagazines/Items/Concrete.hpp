@@ -83,35 +83,44 @@ class CinderBlocks: CA_Magazine
 		};	
 		class Crafting2
 		{
-			text = $STR_EPOCH_PLAYER_234;
+			text = $STR_EPOCH_PLAYER_239_1_3;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"cinderwall_window_kit",1}};
+			input[] = {{"CinderBlocks",5},{"MortarBucket",1},{"ItemTankTrap",1},{"ItemPole",1}};
+		};			
+		class Crafting3
+		{
+			text = $STR_EPOCH_PLAYER_234;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"cinder_door_frame_kit",1}};
 			input[] = {{"CinderBlocks",4},{"MortarBucket",1},{"ItemTankTrap",1}};
 		};		
-		class Crafting3
+		class Crafting4
 		{
 			text = $STR_EPOCH_PLAYER_253;
-			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"cinder_garage_frame_kit",1}};
 			input[] = {{"CinderBlocks",3},{"MortarBucket",1},{"ItemTankTrap",1}};
 		};
-		class Crafting4
+		class Crafting5
 		{
 			text = $STR_EPOCH_PLAYER_253_1_1;
-			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"cinder_garage_top_open_frame_kit",1}};
 			input[] = {{"CinderBlocks",4},{"MortarBucket",1}};
 		};		
-		class Crafting5
+		class Crafting6
 		{
 			text = $STR_EPOCH_PLAYER_253_1;
-			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+			script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"cinder_gate_frame_kit",1}};
