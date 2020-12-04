@@ -131,15 +131,6 @@ class metal_panel_kit: CA_Magazine
 			require[] = {"ItemEtool","ItemToolbox"};
 			create = "MetalPanel_DZ";
 		};
-		class Crafting
-		{
-			text = $STR_EPOCH_PLAYER_228;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop","fire"};
-			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
-			output[] = {{"metal_floor_kit",1}};
-			input[] = {{"metal_panel_kit",4}};
-		};
 	};
 };
 

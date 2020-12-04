@@ -23033,6 +23033,20 @@
 			<Dutch>Creëer metalen vloer</Dutch>
 			<Czech>Vytvořit Železnou podlahu</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_228_1">
+			<English>Craft Metal Floor 1/2</English>
+			<German>Metallboden 1/2 herstellen</German>
+			<Russian>Создать: Металлич. пол 1/2</Russian>
+			<Dutch>Creëer metalen vloer 1/2</Dutch>
+			<Czech>Vytvořit Železnou podlahu 1/2</Czech>
+		</Key>	
+		<Key ID="STR_EPOCH_PLAYER_228_2">
+			<English>Craft Metal Floor 1/4</English>
+			<German>Metallboden 1/4 herstellen</German>
+			<Russian>Создать: Металлич. пол 1/4</Russian>
+			<Dutch>Creëer metalen vloer 1/4</Dutch>
+			<Czech>Vytvořit Železnou podlahu 1/4</Czech>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_229">
 			<English>Craft Lg Camo Net</English>
 			<German>Tarnnetz(groß) herstellen</German>
@@ -26807,6 +26821,16 @@
 			<German>Metallboden</German>
 			<Russian>Металлический пол</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_METALFLOORHALF">
+			<English>Metal Floor 1/2</English>
+			<German>Metallboden 1/2</German>
+			<Russian>Металлический пол (1/2)</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_METALFLOORQUARTER">
+			<English>Metal Floor 1/4</English>
+			<German>Metallboden 1/4</German>
+			<Russian>Металлический пол (1/4)</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF">
 			<English>Cinder Wall Half</English>
 			<German>Betonwand (Halb)</German>

@@ -149,6 +149,15 @@ class equip_metal_sheet : CA_Magazine
 		output[] = {{"metal_pillar_kit",2}};
 		input[] = {{"ItemPole",2},{"equip_metal_sheet",4}};
 	};	
+	class Crafting1
+	{
+		text = $STR_EPOCH_PLAYER_228_2;
+		script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+		neednearby[] = {"workshop","fire"};
+		requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+		output[] = {{"metal_floor_quarter_kit",1}};
+		input[] = {{"ItemPole",4},{"equip_metal_sheet",4}};
+	};
 };
 
 class equip_metal_sheet_rusted : CA_Magazine 

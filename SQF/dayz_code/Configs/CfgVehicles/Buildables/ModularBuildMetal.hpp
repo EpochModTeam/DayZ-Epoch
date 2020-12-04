@@ -17,6 +17,24 @@ class MetalFloor_DZ: ModularItems {
 	};
 };
 
+class MetalFloor_Half_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\metal_floor_half.p3d";
+	armor = 2500;
+	displayName = $STR_EPOCH_METALFLOORHALF;
+	GhostPreview = "MetalFloor_Half_Preview_DZ";
+};
+
+class MetalFloor_Quarter_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\metal_floor_quarter.p3d";
+	armor = 2000;
+	displayName = $STR_EPOCH_METALFLOORQUARTER;
+	GhostPreview = "MetalFloor_Quarter_Preview_DZ";
+};
+
 class DoorFrame_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,1.5,0};
