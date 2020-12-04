@@ -144,7 +144,7 @@ class cinder_door_frame_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"cinder_door_kit",1}};
 			input[] = {{"cinder_door_frame_kit",1},{"ItemPole",1},{"ItemTankTrap",1}};
-		};		
+		};			
 	};
 };
 
@@ -153,8 +153,8 @@ class cinder_door_kit: CA_Magazine
 	scope = 2;
 	count = 1;
 	type = 256;
-	displayName = $STR_EPOCH_BLOCKDOORWAY;
-	descriptionShort = $STR_EPOCH_BLOCKDOORWAY_DESC;
+	displayName = $STR_EPOCH_BLOCKDOOR;
+	descriptionShort = $STR_EPOCH_BLOCKDOOR_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
@@ -176,6 +176,15 @@ class cinder_door_kit: CA_Magazine
 			output[] = {{"cinder_door_kit_locked",1}};
 			input[] = {{"cinder_door_kit",1},{"ItemComboLock",1}};
 		};
+		class Crafting1 
+		{
+			text = $STR_EPOCH_PLAYER_238_2;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"cinder_door_hatch_kit",1}};
+			input[] = {{"cinder_door_kit",1}};
+		};		
 	};
 };
 
@@ -197,6 +206,59 @@ class cinder_door_kit_locked: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoorSmallLocked_DZ";
+		};
+	};
+};
+
+class cinder_door_hatch_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_BLOCKDOOR_HATCH;
+	descriptionShort = $STR_EPOCH_BLOCKDOOR_HATCH_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderDoorHatch_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"cinder_door_hatch_kit_locked",1}};
+			input[] = {{"cinder_door_hatch_kit",1},{"ItemComboLock",1}};
+		};
+	};
+};
+
+class cinder_door_hatch_kit_locked: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_BLOCKDOORLOCKED_HATCH;
+	descriptionShort = $STR_EPOCH_BLOCKDOORWAY_HATCH_LOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderDoorHatchLocked_DZ";
 		};
 	};
 };

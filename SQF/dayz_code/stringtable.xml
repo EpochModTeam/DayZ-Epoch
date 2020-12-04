@@ -23112,13 +23112,17 @@
 			<Dutch>Creëer deur</Dutch>
 			<Czech>Vytvořit Dveře</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_238_2">
+			<English>Craft Door with Hatch</English>
+			<German>Tür mit Luke herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_239">
 			<English>Craft Locked Door</English>
 			<German>Verschlossene Tür herstellen</German>
 			<Russian>Создать: Дверь с замком</Russian>
 			<Dutch>Creëer afsluitbare deur</Dutch>
 			<Czech>Vytvořit Zamčené dveře</Czech>
-		</Key>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_239_1_1">
 			<English>Craft Gate</English>
 			<German>Tor herstellen</German>
@@ -26849,14 +26853,34 @@
 			<English>Cinder Door</English>
 			<German>Betontür</German>
 		</Key>
+		<Key ID="STR_EPOCH_BLOCKDOOR_DESC">
+			<English>A Cinder block wall with metal door that can be locked with a combination lock.</English>
+			<German>Eine Betontür, welche mit einem Zahlenschloss verschlossen werden kann.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED">
 			<English>Cinder Door (locked)</English>
 			<German>Betontür (verschlossen)</German>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_LOCKED_DESC">
-			<English>Cinder block wall with locked metal single access door.</English>
+			<English>Cinder block door with a combination lock.</English>
 			<German>Eine Betontür mit einem Zahlenschloss.</German>
 		</Key>
+		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH">
+			<English>Cinder Door w/ Hatch</English>
+			<German>Betontür mit Luke</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH_DESC">
+			<English>A cinder block wall with a hatch and a metal door that can be locked with a combination lock.</English>
+			<German>Eine Betontür mit Luke, welche mit einem Zahlenschloss verschlossen werden kann.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_BLOCKDOORLOCKED_HATCH">
+			<English>Cinder Door w/ Hatch (locked)</English>
+			<German>Betontür mit Luke (verschlossen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOCKDOORWAY_HATCH_LOCKED_DESC">
+			<English>Cinder block door with a hatch and a combination lock.</English>
+			<German>Eine Betontür mit einer Luke und einem Zahlenschloss.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
 			<German>Betongaragentürrahmen</German>

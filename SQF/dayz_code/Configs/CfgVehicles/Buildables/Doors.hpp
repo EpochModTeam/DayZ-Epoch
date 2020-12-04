@@ -1079,6 +1079,111 @@ class CinderGarageOpenTopLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	};
 };
 
+class CinderDoorHatch_DZ: CinderWallDoor_DZ_Base {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinderdoor_hatch.p3d";
+	displayName = $STR_EPOCH_BLOCKDOOR_HATCH;
+	GhostPreview = "CinderDoorHatch_Preview_DZ";
+	upgradeBuilding[] = {"CinderDoorHatchLocked_DZ",{},{{"ItemComboLock",1}}};
+	class AnimationSources 
+	{
+		class Open_door 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};
+		class Open_doorR 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};			
+	};
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName = $STR_DN_OUT_O_DOOR;
+			onlyforplayer = true;
+			position = "Door_knopf";
+			radius = 3;
+			condition = "this animationPhase ""Open_door"" < 0.5";
+			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName = $STR_DN_OUT_C_DOOR;
+			condition = "this animationPhase ""Open_door"" >= 0.5";
+			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
+		};
+	};
+};
+class CinderDoorHatchLocked_DZ: CinderWallDoorLocked_DZ_Base {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinder_door_hatch_locked.p3d";
+	displayName = $STR_EPOCH_BLOCKDOORLOCKED_HATCH;
+	GhostPreview = "CinderDoorHatch_Preview_DZ";
+	downgradeBuilding[] = {"CinderDoorHatch_DZ",{{"ItemComboLock",1}}};
+	class AnimationSources 
+	{
+		class Open_door 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};
+		class Open_doorR 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};			
+		class Open_latch 
+		{
+			source = "user";
+			animPeriod = 1;
+			initPhase = 0; 
+		};
+	};
+	class UserActions
+	{			
+		class Open_Door
+		{
+			displayName = $STR_DN_OUT_O_DOOR;
+			onlyforplayer = true;
+			position = "Door_knopf";
+			radius = 3;
+			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName = $STR_DN_OUT_C_DOOR;
+			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
+		};
+		class Lock_Door : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_LOCK;
+			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
+		};
+		class Unlock_Door : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
+			statement = "this animate [""Open_latch"", 1]";
+		};
+		class Unlock_Door_Dialog : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
+		};
+	};
+};
+
 class Door_DZ: CinderWallDoor_DZ_Base {
 	scope = 2;
 	armor = 1200;
@@ -1175,6 +1280,9 @@ class DoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	};
 	class DestructionEffects {};
 };
+
+
+
 
 /*
 	Vanilla DayZ buildables are defined in \dayz_buildings\configs\
