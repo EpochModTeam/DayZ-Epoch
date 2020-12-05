@@ -14,7 +14,7 @@ class PartGeneric : CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_213;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"fire"};
+			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"ItemPole",1}};
 			input[] = {{"PartGeneric",2}};
@@ -23,7 +23,7 @@ class PartGeneric : CA_Magazine
 		{
 			text = $STR_CRAFTING_NAILS;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"fire"};
+			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"equip_nails",4}};
 			input[] = {{"PartGeneric",2}};
@@ -32,7 +32,7 @@ class PartGeneric : CA_Magazine
 		{
 			text = $STR_CRAFTING_CORRUGATEDSHEETS;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"fire"};
+			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"ItemMetalSheet",1}};
 			input[] = {{"PartGeneric",3}};
@@ -41,7 +41,7 @@ class PartGeneric : CA_Magazine
 		{
 			text = $STR_EPOCH_ACTION_METAL_DOORWAY;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"fire"};
+			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"door_frame_kit",1}};
 			input[] = {{"ItemPole",4},{"ItemTankTrap",4},{"PartGeneric",2}};
@@ -65,7 +65,7 @@ class ItemPole: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_218;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"fire"};
+			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"ItemCorrugated",1}};
 			input[] = {{"ItemPole",2},{"ItemMetalSheet",2},{"PartWoodLumber",2}};
@@ -88,24 +88,24 @@ class ItemPole: CA_Magazine
 			output[] = {{"metal_panel_kit",1}};
 			input[] = {{"ItemPole",4},{"ItemTankTrap",4}};
 		};
-		class Crafting3
-		{
-			text = $STR_EPOCH_PLAYER_305;
-			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemCrowbar"};
-			output[] = {{"ItemScaffoldingKit",1}};
-			input[] = {{"ItemPole",4},{"ItemTankTrap",2},{"PartWoodLumber",4}};
-		};
-		class Crafting4 
+		class Crafting3 
 		{
 			text = $STR_EPOCH_ACTION_METAL_DOORWAY;
-			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"fire"};
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"door_frame_kit",1}};
 			input[] = {{"ItemPole",4},{"ItemTankTrap",4},{"PartGeneric",2}};
 		};		
+		class Crafting4 
+		{
+			text = $STR_EPOCH_ACTION_GLASS_FLOOR;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"glass_floor_kit",1}};
+			input[] = {{"ItemPole",8},{"PartGlass",4}};
+		};			
 	};
 };
 
@@ -123,7 +123,7 @@ class ItemMetalSheet: CA_Magazine
 	{
 		text = $STR_EPOCH_PLAYER_218;
 		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-		neednearby[] = {"fire"};
+		neednearby[] = {"workshop","fire"};
 		requiretools[] = {"ItemToolbox","ItemCrowbar"};
 		output[] = {{"ItemCorrugated",1}};
 		input[] = {{"ItemPole",2},{"ItemMetalSheet",2},{"PartWoodLumber",2}};
@@ -144,7 +144,7 @@ class equip_metal_sheet : CA_Magazine
 	{
 		text = $STR_EPOCH_PLAYER_213_1;
 		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-		neednearby[] = {"fire"};
+		neednearby[] = {"workshop","fire"};
 		requiretools[] = {"ItemToolbox","ItemCrowbar"};
 		output[] = {{"metal_pillar_kit",2}};
 		input[] = {{"ItemPole",2},{"equip_metal_sheet",4}};
@@ -204,6 +204,16 @@ class equip_1inch_metal_pipe : CA_Magazine
 	model = "\z\addons\dayz_communityassets\models\1in_pipe.p3d"; 
 	picture = "\z\addons\dayz_communityassets\pictures\equip_1inch_metal_pipe_ca.paa";
 	type = 256;
+	
+	class Crafting
+	{
+		text = $STR_EPOCH_PLAYER_305;
+		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+		neednearby[] = {"workshop"};
+		requiretools[] = {"ItemToolbox","ItemCrowbar"};
+		output[] = {{"ItemScaffoldingKit",1}};
+		input[] = {{"equip_2inch_metal_pipe",4},{"equip_1inch_metal_pipe",2},{"PartWoodLumber",4}};
+	};	
 };
 
 class equip_2inch_metal_pipe : CA_Magazine 
@@ -215,6 +225,16 @@ class equip_2inch_metal_pipe : CA_Magazine
 	model = "\z\addons\dayz_communityassets\models\2in_pipe.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_2inch_metal_pipe.paa";
 	type = 256;
+	
+	class Crafting
+	{
+		text = $STR_EPOCH_PLAYER_305;
+		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+		neednearby[] = {"workshop"};
+		requiretools[] = {"ItemToolbox","ItemCrowbar"};
+		output[] = {{"ItemScaffoldingKit",1}};
+		input[] = {{"equip_2inch_metal_pipe",4},{"equip_1inch_metal_pipe",2},{"PartWoodLumber",4}};
+	};	
 };
 
 class equip_tent_poles : CA_Magazine 

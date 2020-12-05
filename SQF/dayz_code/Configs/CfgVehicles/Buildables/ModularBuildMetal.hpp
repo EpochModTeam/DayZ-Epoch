@@ -55,3 +55,13 @@ class MetalPillar_DZ: ModularItems {
 	maintainBuilding[] = {{"PartGeneric",1}};
 	GhostPreview = "MetalPillar_Preview_DZ";
 };
+
+class GlassFloor_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\glass_floor.p3d";
+	armor = 2000;
+	displayName = $STR_EPOCH_GLASSFLOOR;
+	maintainBuilding[] = {{"PartGlass",1}};
+	GhostPreview = "GlassFloor_Preview_DZ";
+};

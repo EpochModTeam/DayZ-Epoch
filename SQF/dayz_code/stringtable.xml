@@ -26816,6 +26816,10 @@
 			<French>Des places</French>
 			<Czech>Sedadla</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_GLASSFLOOR">
+			<English>Glass Floor</English>
+			<German>Glasboden</German>
+		</Key>		
 		<Key ID="STR_EPOCH_METALFLOOR">
 			<English>Metal Floor</English>
 			<German>Metallboden</German>
@@ -31109,6 +31113,10 @@
 			<English>Craft Doorway</English>
 			<German>Türdurchgang herstellen</German>
 		</Key>	
+		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR">
+			<English>Craft Glass Floor</English>
+			<German>Glasboden herstellen</German>
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_CINDERWALL_WINDOW">
 			<English>Craft Wall w/ window</English>
 			<German>Wand mit Fenster herstellen</German>

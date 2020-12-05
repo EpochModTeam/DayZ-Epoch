@@ -199,3 +199,8 @@ class MetalFloor_Quarter_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\floors\metal_floor_quarter_ghost.p3d";
 	displayName = "Metal Floor Quarter Preview";
 };
+class GlassFloor_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\floors\glass_floor_ghost.p3d";
+	displayName = "Glass Floor Preview";
+};
