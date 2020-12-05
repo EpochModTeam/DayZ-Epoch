@@ -11,6 +11,7 @@ class VaultStorage: Land_A_tent {
 	lockedClass = "VaultStorageLocked";
 	packedClass = "WeaponHolder_ItemVault";
 };	
+
 class VaultStorageLocked: Land_A_tent {
 	placement = "vertical";
 	vehicleClass = "DayZ Epoch Buildables";
@@ -41,7 +42,8 @@ class VaultStorage2: Land_A_tent {
 	transportMaxBackpacks = 20;
 	lockedClass = "VaultStorage2Locked";
 	packedClass = "WeaponHolder_ItemVault2";
-};	
+};
+	
 class VaultStorage2Locked: Land_A_tent {
 	placement = "vertical";
 	vehicleClass = "DayZ Epoch Buildables";
@@ -59,6 +61,37 @@ class VaultStorage2Locked: Land_A_tent {
 	nounderground = 0;
 };
 
+class TallSafe: Land_A_tent {
+	placement = "vertical";
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = "$STR_EPOCH_SAFE";
+	model = "\z\addons\dayz_epoch_v\props\safe_tall\tallsafe.p3d";
+	destrType = "DestructNo";
+	armor = 2600;
+	transportMaxMagazines = 600;
+	transportMaxWeapons = 75;
+	transportMaxBackpacks = 30;
+	lockedClass = "TallSafeLocked";
+	packedClass = "WeaponHolder_TallSafe";
+};
+	
+class TallSafeLocked: Land_A_tent {
+	placement = "vertical";
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = "$STR_EPOCH_SAFE_LOCKED";
+	model = "\z\addons\dayz_epoch_v\props\safe_tall\tallsafe.p3d";
+	destrType = "DestructNo";
+	armor = 2600;
+	transportMaxMagazines = 0;
+	transportMaxWeapons = 0;
+	transportMaxBackpacks = 0;
+	offset[] = {0,2.5,0};
+	lockable = 4;
+	unlockedClass = "TallSafe";
+	requireplot = 0;
+	nounderground = 0;
+};
+
 class LockboxStorage: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = $STR_EPOCH_LOCKBOX;
@@ -71,6 +104,7 @@ class LockboxStorage: Land_A_tent {
 	lockedClass = "LockboxStorageLocked";
 	packedClass = "WeaponHolder_ItemLockbox";
 };
+
 class LockboxStorageLocked: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = $STR_EPOCH_LOCKBOX_LOCKED;
@@ -100,6 +134,7 @@ class LockboxStorage2: Land_A_tent {
 	lockedClass = "LockboxStorage2Locked";
 	packedClass = "WeaponHolder_ItemLockbox2";
 };
+
 class LockboxStorage2Locked: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = "$STR_EPOCH_LOCKBOX_LOCKED+";
@@ -128,6 +163,7 @@ class LockboxStorageWinter: Land_A_tent {
 	lockedClass = "LockboxStorageWinterLocked";
 	packedClass = "WeaponHolder_ItemLockboxWinter";
 };
+
 class LockboxStorageWinterLocked: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = $STR_EPOCH_LOCKBOX_LOCKED;
@@ -157,6 +193,7 @@ class LockboxStorageWinter2: Land_A_tent {
 	lockedClass = "LockboxStorageWinter2Locked";
 	packedClass = "WeaponHolder_ItemLockboxWinter2";
 };
+
 class LockboxStorageWinter2Locked: Land_A_tent {
 	vehicleClass = "DayZ Epoch Buildables";
 	displayName = "$STR_EPOCH_LOCKBOX_LOCKED+";

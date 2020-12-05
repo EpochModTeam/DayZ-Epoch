@@ -356,6 +356,12 @@ class WeaponHolder_ItemVault2: WeaponHolder {
 	seedItem = "ItemVault2";
 };
 
+class WeaponHolder_TallSafe: WeaponHolder {
+	scope = 1;
+	displayName = $STR_EPOCH_SAFE;
+	seedItem = "ItemTallSafe";
+};
+
 class WeaponHolder_ItemLockbox: WeaponHolder {
 	scope = 1;
 	displayName = $STR_EPOCH_LOCKBOX;

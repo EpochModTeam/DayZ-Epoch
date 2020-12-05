@@ -12,7 +12,7 @@ private ["_backupCode","_badCode","_cursorTarget","_dialog","_dir","_doorFriends
 _cursorTarget = _this select 3;
 _typeOf = typeOf (_cursorTarget);
 
-_isSafe = _typeOf in ["VaultStorage","VaultStorage2"];
+_isSafe = _typeOf in ["VaultStorage","VaultStorage2","TallSafe"];
 _isLockBox = _typeOf in ["LockBoxStorage","LockBoxStorage2","LockBoxStorageWinter","LockBoxStorageWinter2"];
 _isStorage = (_isSafe || _isLockBox);
 _isDoor = _typeOf in DZE_DoorsLocked;

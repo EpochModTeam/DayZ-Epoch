@@ -285,6 +285,28 @@ class ItemVault2: CA_Magazine
 	};
 };
 
+class ItemTallSafe: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_SAFE;
+	model = "\z\addons\dayz_epoch_v\props\safe_tall\tallsafe.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\tallsafe.paa";
+	descriptionShort = $STR_EPOCH_SAFE_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_230;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "TallSafeLocked";
+		};
+	};
+};
+
 class ItemLockbox: CA_Magazine
 {
 	scope = 2;
