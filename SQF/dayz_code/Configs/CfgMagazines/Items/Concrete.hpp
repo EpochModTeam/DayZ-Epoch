@@ -12,31 +12,31 @@ class ItemStone: CA_Magazine
 	{
 		class Crafting
 		{
-			text = $STR_BLD_name_WoodenFence_1_foundation;
+			text = $STR_EPOCH_ACTION_CONCRETE_BLOCK;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemEtool"};
+			output[] = {{"ItemConcreteBlock",1}};
+			input[] = {{"ItemStone",6},{"CementBag",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_BLD_name_WoodenFence_1_foundation;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"woodfence_foundation_kit",1}};
 			input[] = {{"ItemStone",8},{"MortarBucket",1},{"ItemPlank",1}};
 		};
-		class Crafting1
+		class Crafting2
 		{
 			text = $STR_BLD_name_MetalFence_1_foundation;
-			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"metalfence_foundation_kit",1}};
 			input[] = {{"ItemStone",8},{"MortarBucket",1},{"ItemRSJ",1}};
-		};	
-		class Crafting2
-		{
-			text = $STR_BLD_name_WoodenGate_Foundation;
-			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox"};
-			output[] = {{"woodfence_gate_foundation_kit",1}};
-			input[] = {{"ItemLog",4}};
-		};		
+		};				
 	};		
 };
 
@@ -49,6 +49,19 @@ class ItemConcreteBlock: CA_Magazine
 	picture = "\z\addons\dayz_buildings\equip\concreteblock.paa";
 	model = "z\addons\dayz_buildings\models\concreteblock.p3d";
 	descriptionShort = $STR_BLD_desc_ItemConcreteBlock;//"Concrete Block"
+	
+	class ItemActions
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CONCRETE_BUNKER;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"cinder_bunker_kit",1}};
+			input[] = {{"full_cinder_wall_kit",3},{"ItemConcreteBlock",5},{"equip_metal_sheet",3},{"ItemScrews",1}};
+		};
+	};	
 };
 
 class CinderBlocks: CA_Magazine
@@ -157,4 +170,17 @@ class CementBag: CA_Magazine
 	descriptionShort = $STR_ITEM_DESC_CEMENT_BAG;
 	picture = "\dayz_epoch_c\icons\equipment\ItemCementBag.paa";
     model = "\z\addons\dayz_epoch_w\items\cement_bag.p3d";
+
+	class ItemActions
+	{	
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CONCRETE_BLOCK;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemEtool"};
+			output[] = {{"ItemConcreteBlock",1}};
+			input[] = {{"ItemStone",6},{"CementBag",1}};
+		};	
+	};	
 };

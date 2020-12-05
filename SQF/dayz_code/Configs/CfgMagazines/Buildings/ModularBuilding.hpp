@@ -48,7 +48,7 @@ class metal_floor_half_kit: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_METALFLOORHALF;
-	descriptionShort = $STR_EPOCH_METALFLOORHALF
+	descriptionShort = $STR_EPOCH_METALFLOORHALF;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
@@ -618,6 +618,59 @@ class cinder_gate_kit_locked: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderGateLocked_DZ";
+		};
+	};
+};
+
+class cinder_bunker_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERBUNKER;
+	descriptionShort = $STR_EPOCH_CINDERBUNKER_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Concrete_Bunker_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_239_1_2;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"cinder_bunker_kit_locked",1}};
+			input[] = {{"cinder_bunker_kit",1},{"ItemComboLock",1}};
+		};	
+	};
+};
+
+class cinder_bunker_kit_locked: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERBUNKERLOCKED;
+	descriptionShort = $STR_EPOCH_CINDERBUNKER_LOCKED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Concrete_Bunker_Locked_DZ";
 		};
 	};
 };
@@ -1445,7 +1498,6 @@ class ItemWoodGateFrame: CA_Magazine
 	};
 };
 
-
 class ItemWoodGate: CA_Magazine 
 {
 	scope = 2;
@@ -1582,5 +1634,3 @@ class door_locked_kit: CA_Magazine
 		};
 	};
 };
-
-

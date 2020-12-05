@@ -247,6 +247,113 @@ class CinderGarageOpenTopFrame_DZ: ModularItems {
 	};
 };
 
+class Concrete_Bunker_DZ: CinderWallDoor_DZ_Base {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\bunker\bunker_01.p3d";
+	offset[] = {0,4,0};
+	displayName = $STR_EPOCH_CINDERBUNKER;
+	upgradeBuilding[] = {"Concrete_Bunker_Locked_DZ",{},{{"ItemComboLock",1}}};		
+	GhostPreview = "Concrete_Bunker_Preview_DZ";	
+	class AnimationSources 
+	{
+		class raise_all 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};
+		class rollers 
+		{
+			source = "user";
+			animPeriod = 1;
+			initPhase = 0; 
+		};
+	};
+	class UserActions
+	{
+		class Open_Door
+		{
+			displayName = $STR_DN_OUT_O_DOOR;
+			onlyforplayer = true;
+			position = "Door_knopf";
+			radius = 3;
+			condition = "(this animationPhase ""raise_all"" < 0.5)";
+			statement = "this animate [""raise_all"", 1];this animate [""rollers"", 1];";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName = $STR_DN_OUT_C_DOOR;
+			condition = "(this animationPhase ""raise_all"" >= 0.5)";
+			statement = "this animate [""raise_all"", 0];this animate [""rollers"", 0];";
+		};	
+	};
+};
+class Concrete_Bunker_Locked_DZ: CinderWallDoorLocked_DZ_Base {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\bunker\bunker_01_locked.p3d";
+	offset[] = {0,4,0};
+	displayName = $STR_EPOCH_CINDERBUNKERLOCKED;
+	GhostPreview = "Concrete_Bunker_Preview_DZ";
+	downgradeBuilding[] = {"Concrete_Bunker_DZ",{{"ItemComboLock",1}}};
+	class AnimationSources 
+	{
+		class raise_all 
+		{
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};
+		class rollers 
+		{
+			source = "user";
+			animPeriod = 1;
+			initPhase = 0; 
+		};
+		class Open_latch 
+		{
+			source = "user";
+			animPeriod = 1;
+			initPhase = 0; 
+		};		
+	};
+	class UserActions
+	{
+		class Open_Door
+		{
+			displayName = $STR_DN_OUT_O_DOOR;
+			onlyforplayer = true;
+			position = "Door_knopf";
+			radius = 3;
+			condition = "(this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "this animate [""raise_all"", 1];";
+		};
+		class Close_Door : Open_Door
+		{
+			displayName = $STR_DN_OUT_C_DOOR;
+			condition = "(this animationPhase ""raise_all"" == 1) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "this animate [""raise_all"", 0];";
+		};
+		class Lock_Door : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_LOCK;
+			condition = "(this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 1)";
+			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
+		};
+		class Unlock_Door : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 0)";
+			statement = "this animate [""Open_latch"", 1]";
+		};
+		class Unlock_Door_Dialog : Open_Door
+		{
+			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
+			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
+		};		
+	};
+};
+
 /* Model not finshed
 class HeliNest_DZ: ModularItems {
 	scope = 2;

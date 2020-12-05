@@ -26896,7 +26896,23 @@
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_LOCKED_DESC">
 			<English>Cinder block door with a combination lock.</English>
 			<German>Eine Betontür mit einem Zahlenschloss.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CINDERBUNKER">
+			<English>Concrete Bunker</English>
+			<German>Betonbunker</German>
 		</Key>
+		<Key ID="STR_EPOCH_CINDERBUNKER_DESC">
+			<English>A concrete bunker with metal door that can be locked with a combination lock.</English>
+			<German>Ein Betonbunker, welcher mit einem Zahlenschloss verschlossen werden kann.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CINDERBUNKERLOCKED">
+			<English>Concrete Bunker (locked)</English>
+			<German>Betonbunker (verschlossen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_CINDERBUNKER_LOCKED_DESC">
+			<English>Concrete bunker with a combination lock.</English>
+			<German>Ein Betonbunker mit einem Zahlenschloss.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH">
 			<English>Cinder Door w/ Hatch</English>
 			<German>Betontür mit Luke</German>
@@ -31117,6 +31133,14 @@
 			<English>Craft Glass Floor</English>
 			<German>Glasboden herstellen</German>
 		</Key>
+		<Key ID="STR_EPOCH_ACTION_CONCRETE_BLOCK">
+			<English>Craft Concrete Block</English>
+			<German>Betonblock herstellen</German>
+		</Key>			
+		<Key ID="STR_EPOCH_ACTION_CONCRETE_BUNKER">
+			<English>Craft Concrete Bunker</English>
+			<German>Betonbunker herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_ACTION_CINDERWALL_WINDOW">
 			<English>Craft Wall w/ window</English>
 			<German>Wand mit Fenster herstellen</German>

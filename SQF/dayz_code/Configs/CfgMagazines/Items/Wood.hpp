@@ -52,6 +52,15 @@ class ItemLog : CA_Magazine
 			requiretools[] = {"ItemToolbox","ItemHatchet","ItemCrowbar"};
 			output[] = {{"deer_stand_kit",1}};
 			input[] = {{"ItemLog",8},{"ItemPlank",2},{"equip_nails",2}};
+		};	
+		class Crafting4
+		{
+			text = $STR_BLD_name_WoodenGate_Foundation;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"woodfence_gate_foundation_kit",1}};
+			input[] = {{"ItemLog",6}};
 		};		
 	};
 };	

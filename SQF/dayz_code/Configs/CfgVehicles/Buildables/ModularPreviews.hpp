@@ -204,3 +204,8 @@ class GlassFloor_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\floors\glass_floor_ghost.p3d";
 	displayName = "Glass Floor Preview";
 };
+class Concrete_Bunker_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\bunker\bunker_01_ghost.p3d";
+	displayName = "Concrete Bunker Preview";
+};

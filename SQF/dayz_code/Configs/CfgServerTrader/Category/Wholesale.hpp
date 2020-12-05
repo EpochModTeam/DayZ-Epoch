@@ -9,7 +9,8 @@ class Category_50 {
 	class bulk_PartGeneric {type = "trade_items";buy[] = {8,"ItemGoldBar"};sell[] = {8,"ItemGoldBar"};};
 	class PartPlywoodPack {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class PartPlankPack {type = "trade_items";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
-	class ItemConcreteBlock {type = "trade_items";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
+	class ItemConcreteBlock {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
+	class CementBag {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class CinderBlocks {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class MortarBucket {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class ItemRSJ {type = "trade_items";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
