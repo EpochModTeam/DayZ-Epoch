@@ -16,7 +16,7 @@ class WoodenGate_foundation_DZ: DZE_Housebase
 	mapSize = 8;	
 	GhostPreview = "WoodenGate_ghost_DZ";	
 	offset[] = {0,4,2};	
-	upgradeBuilding[] = {"WoodenGate_1_DZ",{"ItemToolbox","ItemHatchet"},{{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
+	upgradeBuilding[] = {"WoodenGate_1_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
 };
 
 class WoodenGate_1_DZ: DZE_Housebase
@@ -28,7 +28,7 @@ class WoodenGate_1_DZ: DZE_Housebase
 	mapSize = 8;	
 	offset[] = {0,4,0};
 	armor = 2000;	
-	upgradeBuilding[] = {"WoodenGate_2_DZ",{"ItemToolbox","ItemHatchet"},{{"ItemPlank",10},{"equip_nails",1}}};
+	upgradeBuilding[] = {"WoodenGate_2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",10},{"equip_nails",1}}};
 	
 	class AnimationSources {
 		class DoorR {
@@ -89,7 +89,7 @@ class WoodenGate_2_DZ: DZE_Housebase
 	mapSize = 8;	
 	offset[] = {0,4,0};
 	armor = 2500;
-	upgradeBuilding[] = {"WoodenGate_3_DZ",{"ItemToolbox","ItemHatchet"},{{"ItemPlank",10},{"equip_nails",1}}};
+	upgradeBuilding[] = {"WoodenGate_3_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",10},{"equip_nails",1}}};
 	
 	class AnimationSources {
 		class DoorR {
@@ -150,7 +150,7 @@ class WoodenGate_3_DZ: DZE_Housebase
 	icon = "\ca\data\data\Unknown_object.paa";	
 	mapSize = 8;	
 	offset[] = {0,4,0};	
-	upgradeBuilding[] = {"WoodenGate_4_DZ",{"ItemToolbox","ItemHatchet"},{{"ItemPlank",10},{"equip_nails",1}}};
+	upgradeBuilding[] = {"WoodenGate_4_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",10},{"equip_nails",1}}};
 	
 	class AnimationSources {
 		class DoorR {

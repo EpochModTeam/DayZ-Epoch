@@ -21,6 +21,8 @@ ToolsBuilding[] =
 	{Loot_MAGAZINE,	2,		ItemSledgeHead},
 	{Loot_TOOL,		3,		ItemKeyKit},
 	{Loot_TOOL,		6,		ItemToolbox},
+	{Loot_TOOL,		4,		Handsaw_DZE},
+	{Loot_TOOL,		4,		Hammer_DZE},
 	{Loot_TOOL,		4,		ItemShovel} 
 };
 

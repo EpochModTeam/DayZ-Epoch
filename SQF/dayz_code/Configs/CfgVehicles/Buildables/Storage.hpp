@@ -11,7 +11,7 @@ class GunRack_DZ: Gunrack1
 	offset[] = {0,2.5,0.5};
 	removeoutput[] = {{"ItemGunRackKit",1}};
 	nounderground = 0;
-	upgradeBuilding[] = {"GunRack2_DZ",{"ItemToolbox"},{{"ItemPlank",4},{"equip_nails",1}}};	
+	upgradeBuilding[] = {"GunRack2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",4},{"equip_nails",1}}};	
 };
 
 class GunRack2_DZ: Gunrack1
@@ -43,7 +43,7 @@ class WoodCrate_DZ: Fort_Crate_wood
 	transportMaxBackpacks = 1;
 	removeoutput[] = {{"ItemWoodCrateKit",1}};
 	nounderground = 0;
-	upgradeBuilding[] = {"WoodCrate2_DZ",{"ItemToolbox"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};	
+	upgradeBuilding[] = {"WoodCrate2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",2},{"ItemPlank",2},{"equip_nails",1}}};	
 };
 
 class WoodCrate2_DZ: Fort_Crate_wood
@@ -118,7 +118,7 @@ class WoodShack_DZ: Land_kulna
 	transportMaxBackpacks = 5;
 	constructioncount = 4;
 	nounderground = 0;
-	upgradeBuilding[] = {"WoodShack2_DZ",{"ItemToolbox"},{{"PartWoodPlywood",4},{"equip_nails",2}}};
+	upgradeBuilding[] = {"WoodShack2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",4},{"equip_nails",2}}};
 };
 class WoodShack2_DZ: Land_kulna
 {
@@ -149,7 +149,7 @@ class Wooden_shed_DZ: Land_Shed_wooden
 	transportMaxBackpacks = 10;
 	nounderground = 0;
 	constructioncount = 5;
-	upgradeBuilding[] = {"Wooden_shed2_DZ",{"ItemToolbox"},{{"PartWoodPlywood",8},{"equip_nails",2}}};
+	upgradeBuilding[] = {"Wooden_shed2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"equip_nails",2}}};
 };
 
 class Wooden_shed2_DZ: Land_Shed_wooden

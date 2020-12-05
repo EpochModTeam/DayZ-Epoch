@@ -20,6 +20,8 @@ class Category_34 {
 	class MeleeHatchet {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1,"worth"};};
 	class ItemKnife {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class ItemToolbox {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
+	class Handsaw_DZE {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
+	class Hammer_DZE {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class ItemCrowbar {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class MeleeCrowbar {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1,"worth"};};
 	class ItemMachete {type = "trade_weapons";buy[] = {2,"worth"};sell[] = {1,"worth"};};

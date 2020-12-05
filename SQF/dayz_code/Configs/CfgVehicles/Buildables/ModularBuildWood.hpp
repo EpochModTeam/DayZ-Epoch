@@ -73,7 +73,7 @@ class WoodLargeWall_DZ: ModularItems {
 	model = "\z\addons\dayz_epoch\models\large_wall.p3d";
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWOODWALL;
-	upgradeBuilding[] = {"WoodLargeWallWin_DZ",{"ItemToolbox"},{{"PartGlass",1}}};
+	upgradeBuilding[] = {"WoodLargeWallWin_DZ",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodLargeWall_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -95,7 +95,7 @@ class WoodLargeWallDoor_DZ: ModularItems {
 	armor = 2200;
 	displayName = $STR_EPOCH_LARGEWALLWITHDOORWAY;
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{"ItemToolbox"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+	upgradeBuilding[] = {"Land_DZE_LargeWoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	GhostPreview = "WoodLargeWallDoor_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {
@@ -135,7 +135,7 @@ class WoodSmallWall_DZ: ModularItems {
 	armor = 2000;
 	displayName = $STR_EPOCH_WOODWALL;
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodSmallWallWin_DZ",{"ItemToolbox"},{{"PartGlass",1}}};
+	upgradeBuilding[] = {"WoodSmallWallWin_DZ",{"ItemToolbox","Handsaw_DZE"},{{"PartGlass",1}}};
 	GhostPreview = "WoodSmallWall_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {
@@ -193,7 +193,7 @@ class WoodSmallWallDoor_DZ: ModularItems {
 	model = "\z\addons\dayz_epoch\models\small_wall_door.p3d";
 	armor = 2000;
 	displayName = $STR_EPOCH_WALLWITHDOORWAY;
-	upgradeBuilding[] = {"Land_DZE_WoodDoor",{"ItemToolbox"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
+	upgradeBuilding[] = {"Land_DZE_WoodDoor",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodPlywood",1},{"PartWoodLumber",1}}};
 	maintainBuilding[] = {{"PartWoodPlywood",1},{"PartWoodLumber",1}};
 	GhostPreview = "WoodSmallWallDoor_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
@@ -225,7 +225,7 @@ class WoodStairs_DZ: ModularItems {
 	armor = 600;
 	displayName = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodStairsRails_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
+	upgradeBuilding[] = {"WoodStairsRails_DZ",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairs_Preview_DZ";
 };
 
@@ -246,7 +246,7 @@ class WoodStairsSans_DZ: ModularItems {
 	armor = 500;
 	displayName = $STR_EPOCH_WOODSTAIRS;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
-	upgradeBuilding[] = {"WoodStairs_DZ",{"ItemToolbox"},{{"PartWoodLumber",2}}};
+	upgradeBuilding[] = {"WoodStairs_DZ",{"ItemToolbox","Handsaw_DZE"},{{"PartWoodLumber",2}}};
 	GhostPreview = "WoodStairsSans_Preview_DZ";
 };
 
@@ -298,7 +298,7 @@ class WoodGateFrame_DZ: ModularItems {
 	armor = 2800;
 	displayName = $STR_EPOCH_WOODGATEFRAME;
 	maintainBuilding[] = {{"PartWoodLumber",4}};
-	upgradeBuilding[] = {"Land_DZE_WoodGate",{"ItemToolbox"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
+	upgradeBuilding[] = {"Land_DZE_WoodGate",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
 	GhostPreview = "WoodGate_Preview_DZ";
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {

@@ -486,11 +486,11 @@ class HammerBroken_DZE
 { 
 	weight = 1.8; 
 };
-class Saw_DZE 
+class Handsaw_DZE 
 { 
 	weight = 0.4; 
 };
-class SawBroken_DZE 
+class HandsawBroken_DZE 
 { 
 	weight = 0.4; 
 };

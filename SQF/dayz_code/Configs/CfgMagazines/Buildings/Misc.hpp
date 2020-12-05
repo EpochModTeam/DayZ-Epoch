@@ -158,7 +158,7 @@ class ItemCorrugated : CA_Magazine
 			text = $STR_EPOCH_PLAYER_215;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"wooden_shed_kit",1}};
 			input[] = {{"ItemCorrugated",2},{"PartWoodPlywood",4},{"PartWoodLumber",4}};
 		};
@@ -167,7 +167,7 @@ class ItemCorrugated : CA_Magazine
 			text = $STR_EPOCH_PLAYER_217;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"outhouse_kit",1}};
 			input[] = {{"ItemCorrugated",1},{"PartWoodPlywood",3},{"PartWoodLumber",3},{"ItemTrashToiletpaper",1}};
 		};
@@ -176,7 +176,7 @@ class ItemCorrugated : CA_Magazine
 			text = $STR_EPOCH_PLAYER_216;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
-			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar","Handsaw_DZE"};
 			output[] = {{"storage_shed_kit",1}};
 			input[] = {{"ItemCorrugated",4},{"PartWoodPlywood",2},{"PartWoodLumber",2}};
 		};
@@ -402,7 +402,7 @@ class sun_shade_kit: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "CanvasHut_DZ";
 		};
 	};
@@ -424,7 +424,7 @@ class park_bench_kit: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "ParkBench_DZ";
 		};
 	};

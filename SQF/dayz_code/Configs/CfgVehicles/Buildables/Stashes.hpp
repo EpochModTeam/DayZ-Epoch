@@ -85,7 +85,7 @@ class StashMedium2 : StashMedium_base {
 	transportMaxMagazines = 75;
 	transportMaxWeapons = 4;
 	transportMaxBackpacks = 0;
-	upgradeBuilding[] = {"StashMedium3",{"ItemToolbox","ItemShovel"},{{"ItemPlank",1},{"equip_nails",2}}};
+	upgradeBuilding[] = {"StashMedium3",{"ItemToolbox","ItemShovel","Hammer_DZE"},{{"ItemPlank",1},{"equip_nails",2}}};
 };
 class StashMedium3 : StashMedium_base {
 	armor = 125;
@@ -93,7 +93,7 @@ class StashMedium3 : StashMedium_base {
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 8;
 	transportMaxBackpacks = 1;
-	upgradeBuilding[] = {"StashMedium4",{"ItemToolbox","ItemShovel"},{{"PartWoodPlywood",1},{"equip_nails",2}}};
+	upgradeBuilding[] = {"StashMedium4",{"ItemToolbox","ItemShovel","Hammer_DZE"},{{"PartWoodPlywood",1},{"equip_nails",2}}};
 };
 class StashMedium4 : StashMedium_base {
 	armor = 150;

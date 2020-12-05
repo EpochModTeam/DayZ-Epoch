@@ -14,7 +14,7 @@ class outhouse_kit: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "OutHouse_DZ";
 		};
 	};
@@ -36,7 +36,7 @@ class wooden_shed_kit: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "Wooden_shed_DZ";
 		};
 	};
@@ -58,7 +58,7 @@ class wooden_shed_kit2: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "Wooden_shed2_DZ";
 		};
 	};
@@ -80,7 +80,7 @@ class wood_shack_kit: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "WoodShack_DZ";
 		};
 	};
@@ -102,7 +102,7 @@ class wood_shack_kit2: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "WoodShack2_DZ";
 		};
 	};
@@ -124,7 +124,7 @@ class storage_shed_kit: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "StorageShed_DZ";
 		};
 	};
@@ -146,7 +146,7 @@ class storage_shed_kit2: CA_Magazine
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {"ItemEtool","ItemToolbox"};
+			require[] = {"ItemToolbox"};
 			create = "StorageShed2_DZ";
 		};
 	};

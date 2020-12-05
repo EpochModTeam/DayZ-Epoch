@@ -1,4 +1,4 @@
-class Saw_DZE: ItemCore
+class Handsaw_DZE: ItemCore
 {
 	scope = 2;
 	displayName = $STR_EQUIP_SAW;
@@ -7,7 +7,7 @@ class Saw_DZE: ItemCore
     model = "\z\addons\dayz_epoch_w\items\handsaw.p3d";
 };
 
-class SawBroken_DZE: ItemCore
+class HandsawBroken_DZE: ItemCore
 {
 	scope = 2;
 	displayName = $STR_EQUIP_SAW_BROKEN;
@@ -24,9 +24,9 @@ class SawBroken_DZE: ItemCore
 			neednearby[] = {};
 			requiretools[] = {};
 			output[] = {};
-			outputweapons[] = {"Saw_DZE"};
+			outputweapons[] = {"Handsaw_DZE"};
 			input[] = {{"PartGeneric",1}};
-			inputweapons[] = {"SawBroken_DZE"};
+			inputweapons[] = {"HandsawBroken_DZE"};
 		};		
 	};
 };

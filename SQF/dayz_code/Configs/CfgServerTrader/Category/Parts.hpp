@@ -20,6 +20,8 @@ class Category_34 {
 	class MeleeHatchet {type = "trade_weapons";buy[] = {-2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class ItemKnife {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class ItemToolbox {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
+	class Handsaw_DZE {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
+	class Hammer_DZE {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class ItemCrowbar {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class MeleeCrowbar {type = "trade_weapons";buy[] = {-2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class ItemMachete {type = "trade_weapons";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
