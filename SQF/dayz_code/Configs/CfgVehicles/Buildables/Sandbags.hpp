@@ -1,0 +1,138 @@
+class Sandbag1_DZ: BuiltItems {
+	scope = 2;
+	destrType = "DestructNo";
+	cost = 100;
+	model = "\ca\misc2\BagFenceLong.p3d";
+	icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
+	offset[] = {0,3,0.5};
+	mapSize = 2;
+	armor = 400;
+	displayName = $STR_BUILT_SANDBAG;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 3;
+	removeoutput[] = {{"ItemSandbag",1}};
+	nounderground = 0;
+	//Remove vanilla dismantle action
+	class UserActions {delete Dismantle;};
+};
+
+class BagFenceRound_DZ: BuiltItems {
+	scope = 2;
+	destrType = "DestructNo";
+	cost = 100;
+	model = "\ca\misc2\BagFenceRound.p3d";
+	icon = "\Ca\misc3\data\Icons\icon_bagFenceRound_ca.paa";
+	offset[] = {0,3,0.5};
+	mapSize = 2;
+	armor = 400;
+	displayName = $STR_EQUIP_NAME_21_ROUND;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 3;
+	removeoutput[] = {{"BagFenceRound_DZ_kit",1}};
+	nounderground = 0;
+};
+
+class Land_HBarrier1_DZ : BuiltItems {
+	scope = 2;
+	animated = 0;
+	vehicleClass = "DayZ Epoch Buildables";
+	typicalCargo[] = {};
+	offset[] = {0,2,0};
+	irTarget = 0;
+	accuracy = 0.3;
+	transportAmmo = 0;
+	transportRepair = 0;
+	transportFuel = 0;
+	destrType = "DestructBuilding";
+	armor = 500;
+	coefInside = 0.5;
+	coefInsideHeur = 0.8;
+	cost = 0;
+	picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
+	model = "\ca\misc2\HBarrier1.p3d";
+	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier1_ca.paa";
+	mapSize = 2;
+	displayName = $STR_EQUIP_NAME_21_HBARRIER;
+	GhostPreview = "Land_HBarrier1Preview";
+	constructioncount = 4;
+	removeoutput[] = {{"ItemSandbagLarge",1}};
+	nounderground = 0;
+};
+
+class Land_HBarrier3_DZ : BuiltItems {
+	model = "\ca\misc2\HBarrier3.p3d";
+	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier3_ca.paa";
+	mapSize = 3.5;
+	displayName = $STR_EQUIP_NAME_21_3XHBARRIER;
+	GhostPreview = "Land_HBarrier3ePreview";
+	scope = 2;
+	animated = 0;
+	vehicleClass = "DayZ Epoch Buildables";
+	typicalCargo[] = {};
+	irTarget = 0;
+	accuracy = 0.3;
+	transportAmmo = 0;
+	transportRepair = 0;
+	transportFuel = 0;
+	destrType = "DestructBuilding";
+	armor = 500;
+	coefInside = 0.5;
+	coefInsideHeur = 0.8;
+	cost = 0;
+	picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
+	offset[] = {0,2.5,0};
+	constructioncount = 8;
+	removeoutput[] = {{"ItemSandbagExLarge",1}};
+	nounderground = 0;
+};
+
+class Land_HBarrier5_DZ:BuiltItems {
+	model = "\ca\misc2\HBarrier5.p3d";
+	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier5_ca.paa";
+	mapSize = 7;
+	displayName = $STR_EQUIP_NAME_21_5XHBARRIER;
+	GhostPreview = "Land_HBarrier5Preview";
+	scope = 2;
+	animated = 0;
+	vehicleClass = "DayZ Epoch Buildables";
+	typicalCargo[] = {};
+	irTarget = 0;
+	accuracy = 0.3;
+	transportAmmo = 0;
+	transportRepair = 0;
+	transportFuel = 0;
+	destrType = "DestructBuilding";
+	armor = 500;
+	coefInside = 0.5;
+	coefInsideHeur = 0.8;
+	cost = 0;
+	picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
+	offset[] = {0,2.5,0};
+	constructioncount = 8;
+	removeoutput[] = {{"ItemSandbagExLarge5x",1}};
+	nounderground = 0;
+};
+
+class SandNest_DZ : BuiltItems {
+	scope = 2;
+	model = "\ca\Misc_E\fortified_nest_small_ep1";
+	displayName = $STR_EQUIP_NAME_21_NEST;
+	expansion = 1;
+	icon = "\Ca\misc3\data\Icons\icon_fortNestSmall_ca.paa";
+	mapSize = 5;
+	armor = 500;
+	irTarget = 0;
+	vehicleClass = "DayZ Epoch Buildables";
+	GhostPreview = "Land_fortified_nest_smallPreview";
+	animated = 0;
+	simulation = "house";
+	accuracy = 0.2;
+	cost = 0;
+	ladders[] = {};
+	TextPlural = "Houses";
+	TextSingular = "House";
+	nameSound = "obj_house";
+	offset[] = {0,3,1};
+	removeoutput[] = {{"sandbag_nest_kit",1}};
+	nounderground = 0;
+};

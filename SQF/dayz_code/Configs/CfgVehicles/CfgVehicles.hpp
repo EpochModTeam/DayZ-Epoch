@@ -492,6 +492,9 @@ class CfgVehicles
 	#include "Buildables\FencesWood.hpp"
 	#include "Buildables\FencesMetal.hpp"		
 	#include "Buildables\FencesGates.hpp"	
+	#include "Buildables\CamoNets.hpp"	
+	#include "Buildables\Sandbags.hpp"	
+	#include "Buildables\Billboards.hpp"	
 	#include "Buildables\Misc.hpp"		
 	
 	//Loot Container
