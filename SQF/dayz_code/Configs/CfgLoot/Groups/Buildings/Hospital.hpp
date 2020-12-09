@@ -11,5 +11,5 @@ HospitalSmall[] =
 	{Loot_MAGAZINE,		1,		equip_gauze},
 	{Loot_MAGAZINE,		1,		equip_gauzepackaged},	
 	{Loot_GROUP,		10,		MedicalLow},
-	{Loot_GROUP,		5,		MedicalHigh},
+	{Loot_GROUP,		5,		MedicalHigh}
 };
