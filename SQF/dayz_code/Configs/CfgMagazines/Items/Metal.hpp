@@ -119,14 +119,17 @@ class ItemMetalSheet: CA_Magazine
 	model = "z\addons\dayz_buildings\models\sheet_metal.p3d";
 	descriptionShort = $STR_BLD_desc_ItemMetalSheet;//"Metal Sheeting"
 	
-	class Crafting
-	{
-		text = $STR_EPOCH_PLAYER_218;
-		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-		neednearby[] = {"workshop","fire"};
-		requiretools[] = {"ItemToolbox","ItemCrowbar"};
-		output[] = {{"ItemCorrugated",1}};
-		input[] = {{"ItemPole",2},{"ItemMetalSheet",2},{"PartWoodLumber",2}};
+	class ItemActions
+	{	
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_218;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"ItemCorrugated",1}};
+			input[] = {{"ItemPole",2},{"ItemMetalSheet",2},{"PartWoodLumber",2}};
+		};	
 	};	
 };
 
@@ -139,24 +142,27 @@ class equip_metal_sheet : CA_Magazine
 	model = "\z\addons\dayz_communityassets\models\metal_sheet_clean.p3d";
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_metal_sheet.paa";
 	type = 256;
-	
-	class Crafting
-	{
-		text = $STR_EPOCH_PLAYER_213_1;
-		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-		neednearby[] = {"workshop","fire"};
-		requiretools[] = {"ItemToolbox","ItemCrowbar"};
-		output[] = {{"metal_pillar_kit",2}};
-		input[] = {{"ItemPole",2},{"equip_metal_sheet",4}};
-	};	
-	class Crafting1
-	{
-		text = $STR_EPOCH_PLAYER_228_2;
-		script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-		neednearby[] = {"workshop","fire"};
-		requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
-		output[] = {{"metal_floor_quarter_kit",1}};
-		input[] = {{"ItemPole",4},{"equip_metal_sheet",4}};
+
+	class ItemActions
+	{		
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_213_1;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"metal_pillar_kit",2}};
+			input[] = {{"ItemPole",2},{"equip_metal_sheet",4}};
+		};	
+		class Crafting1
+		{
+			text = $STR_EPOCH_PLAYER_228_2;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			output[] = {{"metal_floor_quarter_kit",1}};
+			input[] = {{"ItemPole",4},{"equip_metal_sheet",4}};
+		};
 	};
 };
 
@@ -204,15 +210,17 @@ class equip_1inch_metal_pipe : CA_Magazine
 	model = "\z\addons\dayz_communityassets\models\1in_pipe.p3d"; 
 	picture = "\z\addons\dayz_communityassets\pictures\equip_1inch_metal_pipe_ca.paa";
 	type = 256;
-	
-	class Crafting
-	{
-		text = $STR_EPOCH_PLAYER_305;
-		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-		neednearby[] = {"workshop"};
-		requiretools[] = {"ItemToolbox","ItemCrowbar"};
-		output[] = {{"ItemScaffoldingKit",1}};
-		input[] = {{"equip_2inch_metal_pipe",4},{"equip_1inch_metal_pipe",2},{"PartWoodLumber",4}};
+	class ItemActions
+	{		
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_305;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"ItemScaffoldingKit",1}};
+			input[] = {{"equip_2inch_metal_pipe",4},{"equip_1inch_metal_pipe",2},{"PartWoodLumber",4}};
+		};	
 	};	
 };
 
@@ -225,16 +233,19 @@ class equip_2inch_metal_pipe : CA_Magazine
 	model = "\z\addons\dayz_communityassets\models\2in_pipe.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_2inch_metal_pipe.paa";
 	type = 256;
-	
-	class Crafting
-	{
-		text = $STR_EPOCH_PLAYER_305;
-		script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-		neednearby[] = {"workshop"};
-		requiretools[] = {"ItemToolbox","ItemCrowbar"};
-		output[] = {{"ItemScaffoldingKit",1}};
-		input[] = {{"equip_2inch_metal_pipe",4},{"equip_1inch_metal_pipe",2},{"PartWoodLumber",4}};
-	};	
+
+	class ItemActions
+	{		
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_305;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"ItemScaffoldingKit",1}};
+			input[] = {{"equip_2inch_metal_pipe",4},{"equip_1inch_metal_pipe",2},{"PartWoodLumber",4}};
+		};
+	};		
 };
 
 class equip_tent_poles : CA_Magazine 
