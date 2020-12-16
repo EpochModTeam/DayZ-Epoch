@@ -73,6 +73,19 @@ class TallSafe: Land_A_tent {
 	transportMaxBackpacks = 30;
 	lockedClass = "TallSafeLocked";
 	packedClass = "WeaponHolder_TallSafe";
+	
+	class AnimationSources {
+		class Open_door {
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};
+		class Open_doorR {
+			source = "user";
+			animPeriod = 1;
+			initPhase = 0; 
+		};
+	};
 };
 	
 class TallSafeLocked: Land_A_tent {
@@ -90,6 +103,19 @@ class TallSafeLocked: Land_A_tent {
 	unlockedClass = "TallSafe";
 	requireplot = 0;
 	nounderground = 0;
+	
+	class AnimationSources {
+		class Open_door {
+			source = "user";
+			animPeriod = 4;
+			initPhase = 0; 
+		};
+		class Open_doorR {
+			source = "user";
+			animPeriod = 1;
+			initPhase = 0; 
+		};
+	};	
 };
 
 class LockboxStorage: Land_A_tent {
