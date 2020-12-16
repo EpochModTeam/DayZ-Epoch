@@ -42,6 +42,28 @@ class workbench_kit: CA_Magazine
 	};
 };
 
+class advanced_workBench_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_WORKBENCH_ADVANCED;
+	descriptionShort = $STR_EPOCH_WORKBENCH_ADVANCED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Advanced_WorkBench_DZ";
+		};
+	};
+};
+
 // DayZ Mod workbench
 class ItemWorkBench : CA_Magazine
 {
@@ -452,27 +474,25 @@ class ItemScaffoldingKit: CA_Magazine
 	};
 };
 
-/*
-
-class cook_tripod_kit: CA_Magazine
+class office_chair_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	displayName = $STR_ITEM_NAME_COOKINGTRIPOD;
-	descriptionShort = $STR_ITEM_DESC_COOKINGTRIPOD;
+	type = 256;
+	displayName = $STR_EPOCH_WOODBENCH;
+	descriptionShort = $STR_EPOCH_WOODBENCH;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
-	
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
 	class ItemActions
 	{
 		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
-			require[] = {};
-			create = "CookTripod_DZ";
+			require[] = {"ItemToolbox"};
+			create = "ParkBench_DZ";
 		};
-	};    
+	};
 };
 
-*/

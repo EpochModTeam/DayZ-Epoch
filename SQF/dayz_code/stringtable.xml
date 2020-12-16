@@ -23305,6 +23305,10 @@
 			<Russian>Создать: Верстак</Russian>
 			<Czech>Vyrobit Pracovní stůl</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_260_1">
+			<English>Craft Advanced Workbench</English>
+			<German>Verbesserte Werkbank herstellen</German>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_261">
 			<English>Craft Shack</English>
 			<German>Schuppen herstellen</German>
@@ -25806,6 +25810,14 @@
 			<German>Werkbank: Wird für Handwerksarbeiten benötigt.</German>
 			<Russian>Верстак: Используется для создания предметов.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WORKBENCH_ADVANCED">
+			<English>Advanced Workbench</English>
+			<German>Verbesserte Werkbank</German>
+		</Key>
+		<Key ID="STR_EPOCH_WORKBENCH_ADVANCED_DESC">
+			<English>Advanced Workbench with tools for bigger buildings to craft.</English>
+			<German>Verbesserte Werkbank mit Werkzeugen für größere Handwerksarbeiten.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_WOODENRAMP_DESC">
 			<English>Wooden ramp can be used to get air.</English>
 			<German>Eine Holzrampe, die als Sprungschanze verwendet werden kann.</German>
@@ -31154,6 +31166,101 @@
 			<English>Close Gate</English>
 			<German>Tor schließen</German>
 			<Russian>Закрыть ворота</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_STONEOVEN">
+			<English>Stone Oven</English>
+			<German>Steinofen</German>
+		</Key>
+		<Key ID="STR_EPOCH_STONEOVEN_DESC">
+			<English>A small stone oven that can be used for cooking.</English>
+			<German>Ein kleiner Steinofen, welcher zum Kochen benutzt werden kann.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_COMMODE">
+			<English>Commode</English>
+			<German>Kommode</German>
+		</Key>
+		<Key ID="STR_EPOCH_COMMODE_DESC">
+			<English>A small commode that looks nice and can hold a few items.</English>
+			<German>Eine kleine Kommode, welche schön aussieht und in der einige Gegenstände verstaut werden können.</German>
+		</Key>
+		<Key ID="STR_EPOCH_WARDROBE">
+			<English>Wardrobe</English>
+			<German>Kleiderschrank</German>
+		</Key>
+		<Key ID="STR_EPOCH_WARDROBE_DESC">
+			<English>A big wardrobe that can hold a few items.</English>
+			<German>Ein großer Kleiderschrank, in welchem einige Gegenstände verstaut werden können.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_FRIDGE">
+			<English>Fridge</English>
+			<German>Kühlschrank</German>
+		</Key>
+		<Key ID="STR_EPOCH_FRIDGE_DESC">
+			<English>A small fridge that can hold and cold a few items.</English>
+			<German>Ein kleiner Kühlschrank, in welchem einige Gegenstände gekühlt und verstaut werden können.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_WASHINGMACHINE">
+			<English>Washing Machine</English>
+			<German>Waschmaschine</German>
+		</Key>
+		<Key ID="STR_EPOCH_WASHINGMACHINE_DESC">
+			<English>A small washing machine that can wash and hold a few items.</English>
+			<German>Eine kleine Waschmaschine, in welcher gewaschen oder einige Gegenstände gelagert werden können.</German>
+		</Key>
+		<Key ID="STR_EPOCH_SERVERRACK">
+			<English>Server Rack</English>
+			<German>Serverschrank</German>
+		</Key>
+		<Key ID="STR_EPOCH_SERVERRACK_DESC">
+			<English>A big server rack with many active server machines.</English>
+			<German>Ein großer Serverschrankmit vielen aktiven Servern.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ATM">
+			<English>ATM</English>
+			<German>Geldautomat</German>
+		</Key>
+		<Key ID="STR_EPOCH_ATM_DESC">
+			<English>An ATM to deposit and withdraw currency.</English>
+			<German>Ein Geldautomat zum Abheben und Einzahlen einer Währung.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ARMCHAIR">
+			<English>Armchair</English>
+			<German>Sessel</German>
+		</Key>
+		<Key ID="STR_EPOCH_ARMCHAIR_DESC">
+			<English>A comfortable armchair that is a good place to hide some items secretly.</English>
+			<German>Ein gemütlicher Sessel, in welchem gut ein paar Gegenstände versteckt werden können.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SOFA">
+			<English>Sofa</English>
+		</Key>
+		<Key ID="STR_EPOCH_SOFA_DESC">
+			<English>A comfortable sofa that is a good place to hide some items secretly.</English>
+			<German>Ein gemütliches Sofa, in welchem gut ein paar Gegenstände versteckt werden können.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ARCADE">
+			<English>Neo Geo Arcade</English>
+			<German>Neo Geo Spielautomat</German>
+		</Key>
+		<Key ID="STR_EPOCH_ARCADE_DESC">
+			<English>An Neo Geo Arcade to relax a bit.</English>
+			<German>Ein Neo Geo Spielautomat zum Entspannen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_VENDINGMACHINE1">
+			<English>Old Vending-Machine</English>
+			<German>Alter Verkaufsautomat</German>
+		</Key>
+		<Key ID="STR_EPOCH_VENDINGMACHINE1_DESC">
+			<English>An old vending-machine perhaps it still works.</English>
+			<German>Ein alter Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_VENDINGMACHINE2">
+			<English>Vending-Machine</English>
+			<German>Verkaufsautomat</German>
+		</Key>
+		<Key ID="STR_EPOCH_VENDINGMACHINE2_DESC">
+			<English>A vending-machine perhaps it still works.</English>
+			<German>Ein Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
 		</Key>		
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->

@@ -103,6 +103,15 @@ class ItemPlank : CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"bulk_empty",1}};
 			input[] = {{"ItemPlank",2},{"PartGeneric",1}};
+		};	
+		class Crafting3
+		{
+			text = $STR_EPOCH_PLAYER_260_1;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","Handsaw_DZE","Hammer_DZE"};
+			output[] = {{"advanced_workBench_kit",1}};
+			input[] = {{"ItemPlank",4},{"PartWoodPlywood",4},{"equip_nails",2}};
 		};		
 	};
 };
