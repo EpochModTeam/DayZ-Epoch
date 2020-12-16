@@ -31261,7 +31261,46 @@
 		<Key ID="STR_EPOCH_VENDINGMACHINE2_DESC">
 			<English>A vending-machine perhaps it still works.</English>
 			<German>Ein Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_NOTEBOOK">
+			<English>Notebook</English>
 		</Key>		
+		<Key ID="STR_EPOCH_NOTEBOOK_DESC">
+			<English>Notebook</English>
+			<German>Notebook</German>
+		</Key>			
+		<Key ID="STR_EPOCH_WATERPUMP">
+			<English>Water Pump</English>
+			<German>Wasserpumpe</German>
+		</Key>
+		<Key ID="STR_EPOCH_WATERPUMP_DESC">
+			<English>Water Pump</English>
+			<German>Wasserpumpe</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GREENHOUSE">
+			<English>Greenhouse</English>
+			<German>Gewächshaus</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GREENHOUSE_DESC">
+			<English>Greenhouse</English>
+			<German>Gewächshaus</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BED">
+			<English>Bed</English>
+			<German>Bett</German>
+		</Key>		
+		<Key ID="STR_EPOCH_BED_DESC">
+			<English>Bed</English>
+			<German>Bett</German>
+		</Key>	
+		<Key ID="STR_EPOCH_TABLE">
+			<English>Table</English>
+			<German>Tisch</German>
+		</Key>		
+		<Key ID="STR_EPOCH_TABLE_DESC">
+			<English>Table</English>
+			<German>Tisch</German>
+		</Key>			
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">

@@ -48,10 +48,8 @@ class FuelPump_DZ: BuiltItems
 
 class FireBarrel_DZ:Land_Fire_barrel
 {
-	// destrType = "DestructNo";
 	cost = 100;
 	offset[] = {0,2,0.5};
-	//model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
 	displayName = $STR_EPOCH_FIREBARREL;	
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
@@ -60,8 +58,7 @@ class FireBarrel_DZ:Land_Fire_barrel
 	constructioncount = 2;
 	removeoutput[] = {{"ItemFireBarrel_kit",1}};
 	nounderground = 0;
-};
-	
+};	
 	
 class Sign_1L_Noentry_EP1;
 class Plastic_Pole_EP1_DZ: Sign_1L_Noentry_EP1
@@ -99,7 +96,10 @@ class CanvasHut_DZ: Land_covering_hut_EP1
 	displayName = $STR_EPOCH_CANVASSUNSHADE;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"sun_shade_kit",1}};
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
 };
+
 class Park_bench1;
 class ParkBench_DZ: Park_bench1
 {
@@ -109,83 +109,20 @@ class ParkBench_DZ: Park_bench1
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"park_bench_kit",1}};
 };
-class Land_CamoNet_EAST_EP1;
-class DesertCamoNet_DZ: Land_CamoNet_EAST_EP1
-{
-	armor = 300;
-	destrType = "DestructNo";
-	scope = 2;
-	offset[] = {0,9,0};
-	displayName = $STR_EPOCH_DESERTCAMONET;
-	vehicleClass = "DayZ Epoch Buildables";
-	removeoutput[] = {{"desert_net_kit",1}};
-};
-class WinterCamoNet_DZ: Land_CamoNet_EAST_EP1
-{
-	armor = 300;
-	destrType = "DestructNo";
-	scope = 2;
-	offset[] = {0,9,0};	
-	model = "\z\addons\dayz_epoch_v\props\nets\CamoNet_EAST.p3d";
-	displayName = $STR_EPOCH_WINTERCAMONET;
-	vehicleClass = "DayZ Epoch Buildables";
-	removeoutput[] = {{"winter_net_kit",1}};
-};
-class Land_CamoNet_EAST;
-class ForestCamoNet_DZ: Land_CamoNet_EAST
-{
-	armor = 300;
-	destrType = "DestructNo";
-	scope = 2;
-	offset[] = {0,9,0};
-	displayName = $STR_EPOCH_FORESTCAMONET;
-	vehicleClass = "DayZ Epoch Buildables";
-	removeoutput[] = {{"forest_net_kit",1}};
-};
-class WinterLargeCamoNet_DZ: Land_CamoNet_EAST
-{
-	armor = 300;
-	destrType = "DestructNo";
-	scope = 2;
-	offset[] = {0,9,0};
-	model = "\z\addons\dayz_epoch_v\props\nets\CamoNetB_EAST.p3d";
-	displayName = $STR_EPOCH_LARGEWINTERCAMONET;
-	vehicleClass = "Fortifications";
-	removeoutput[] = {{"winter_large_net_kit",1}};
-};
-class Land_CamoNetB_EAST_EP1;
-class DesertLargeCamoNet_DZ: Land_CamoNetB_EAST_EP1
-{
-	armor = 300;
-	destrType = "DestructNo";
-	scope = 2;
-	offset[] = {0,9,0};
-	displayName = $STR_EPOCH_LARGEDESERTCAMONET;
-	vehicleClass = "DayZ Epoch Buildables";
-	removeoutput[] = {{"desert_large_net_kit",1}};
-};
-class Land_CamoNetB_EAST;
-class ForestLargeCamoNet_DZ: Land_CamoNetB_EAST
-{
-	armor = 300;
-	destrType = "DestructNo";
-	scope = 2;
-	offset[] = {0,9,0};
-	displayName = $STR_EPOCH_LARGEFORESTCAMONET;
-	vehicleClass = "DayZ Epoch Buildables";
-	removeoutput[] = {{"forest_large_net_kit",1}};
-};
+
 class Land_Misc_deerstand;
 class DeerStand_DZ: Land_Misc_deerstand
 {
 	armor = 300;
-	// destrType = "DestructNo";
 	scope = 2;
 	offset[] = {0,5,0};
 	displayName = $STR_EPOCH_DEERSTAND;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"deer_stand_kit",1}};
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
 };
+
 class Land_Wall_Gate_Ind1_L;
 class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 {
@@ -230,6 +167,8 @@ class LightPole_DZ: ASC_EU_LHVOld
 	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"ItemLightBulb",1}};
 	removeoutput[] = {{"light_pole_kit",1}};
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
 };
 class Land_Misc_Scaffolding;
 class Scaffolding_DZ: Land_Misc_Scaffolding
@@ -294,151 +233,11 @@ class Fort_RazorWire : BuiltItems {
 	icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
 	offset[] = {0,1.5,0.5};
 	accuracy = 0.3;
-	mapSize = 5.5;
+	mapSize = 3;
 	displayName = $STR_EPOCH_WIRE;
 	destrType = "DestructTent";
 	armor = 100;
 	GhostPreview = "Fort_RazorWirePreview";
-	nounderground = 0;
-};
-
-class Sandbag1_DZ: BuiltItems
-{
-	scope = 2;
-	destrType = "DestructNo";
-	cost = 100;
-	model = "\ca\misc2\BagFenceLong.p3d";
-	icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
-	offset[] = {0,3,0.5};
-	mapSize = 2;
-	armor = 400;
-	displayName = $STR_BUILT_SANDBAG;
-	vehicleClass = "DayZ Epoch Buildables";
-	constructioncount = 3;
-	removeoutput[] = {{"ItemSandbag",1}};
-	nounderground = 0;
-	//Remove vanilla dismantle action
-	class UserActions {delete Dismantle;};
-};
-//review some of these settings
-class BagFenceRound_DZ: BuiltItems
-{
-	scope = 2;
-	destrType = "DestructNo";
-	cost = 100;
-	model = "\ca\misc2\BagFenceRound.p3d";
-	icon = "\Ca\misc3\data\Icons\icon_bagFenceRound_ca.paa";
-	offset[] = {0,3,0.5};
-	mapSize = 2;
-	armor = 400;
-	displayName = $STR_EQUIP_NAME_21_ROUND;
-	vehicleClass = "DayZ Epoch Buildables";
-	constructioncount = 3;
-	removeoutput[] = {{"BagFenceRound_DZ_kit",1}};
-	nounderground = 0;
-};
-
-class Land_HBarrier1_DZ : BuiltItems {
-	scope = 2;
-	animated = 0;
-	vehicleClass = "DayZ Epoch Buildables";
-	typicalCargo[] = {};
-	offset[] = {0,2,0};
-	irTarget = 0;
-	accuracy = 0.3;
-	transportAmmo = 0;
-	transportRepair = 0;
-	transportFuel = 0;
-	destrType = "DestructBuilding";
-	armor = 500;
-	coefInside = 0.5;
-	coefInsideHeur = 0.8;
-	cost = 0;
-	picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
-	model = "\ca\misc2\HBarrier1.p3d";
-	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier1_ca.paa";
-	mapSize = 2;
-	displayName = $STR_EQUIP_NAME_21_HBARRIER;
-	GhostPreview = "Land_HBarrier1Preview";
-	constructioncount = 4;
-	removeoutput[] = {{"ItemSandbagLarge",1}};
-	nounderground = 0;
-};
-class Land_HBarrier3_DZ : BuiltItems {
-	model = "\ca\misc2\HBarrier3.p3d";
-	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier3_ca.paa";
-	mapSize = 3.5;
-	displayName = $STR_EQUIP_NAME_21_3XHBARRIER;
-	GhostPreview = "Land_HBarrier3ePreview";
-	scope = 2;
-	animated = 0;
-	vehicleClass = "DayZ Epoch Buildables";
-	typicalCargo[] = {};
-	irTarget = 0;
-	accuracy = 0.3;
-	transportAmmo = 0;
-	transportRepair = 0;
-	transportFuel = 0;
-	destrType = "DestructBuilding";
-	armor = 500;
-	coefInside = 0.5;
-	coefInsideHeur = 0.8;
-	cost = 0;
-	picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
-	offset[] = {0,2.5,0};
-	constructioncount = 8;
-	removeoutput[] = {{"ItemSandbagExLarge",1}};
-	nounderground = 0;
-};
-
-class Land_HBarrier5_DZ:BuiltItems {
-	model = "\ca\misc2\HBarrier5.p3d";
-	icon = "\Ca\misc2\data\Icons\icon_hescoBarrier5_ca.paa";
-	mapSize = 7;
-	displayName = $STR_EQUIP_NAME_21_5XHBARRIER;
-	GhostPreview = "Land_HBarrier5Preview";
-	scope = 2;
-	animated = 0;
-	vehicleClass = "DayZ Epoch Buildables";
-	typicalCargo[] = {};
-	irTarget = 0;
-	accuracy = 0.3;
-	transportAmmo = 0;
-	transportRepair = 0;
-	transportFuel = 0;
-	destrType = "DestructBuilding";
-	armor = 500;
-	coefInside = 0.5;
-	coefInsideHeur = 0.8;
-	cost = 0;
-	picture = "\CA\ui\data\icon_wf_barriers_ca.paa";
-	offset[] = {0,2.5,0};
-	constructioncount = 8;
-	removeoutput[] = {{"ItemSandbagExLarge5x",1}};
-	nounderground = 0;
-};
-
-class SandNest_DZ : BuiltItems {
-	scope = 2;
-	model = "\ca\Misc_E\fortified_nest_small_ep1";
-	displayName = $STR_EQUIP_NAME_21_NEST;
-	expansion = 1;
-	icon = "\Ca\misc3\data\Icons\icon_fortNestSmall_ca.paa";
-	mapSize = 5;
-	armor = 500;
-	irTarget = 0;
-	vehicleClass = "DayZ Epoch Buildables";
-	GhostPreview = "Land_fortified_nest_smallPreview";
-	animated = 0;
-	simulation = "house";
-	accuracy = 0.2;
-	cost = 0;
-	ladders[] = {};
-	TextPlural = "Houses";
-	TextSingular = "House";
-	nameSound = "obj_house";
-	offset[] = {0,3,1};
-	removeoutput[] = {{"sandbag_nest_kit",1}};
 	nounderground = 0;
 };
 
@@ -462,7 +261,6 @@ class WoodGate_DZ: BuiltItems
 {
 	scope = 2;
 	destrType = "DestructTree";
-	//cost = 100;
 	offset[] = {0,1.5,0.5};
 	model = "\ca\structures\Wall\Gate_wood2_5";
 	icon = "\ca\data\data\Unknown_object.paa";
@@ -502,18 +300,79 @@ class WoodGate_DZ: BuiltItems
 	};
 };
 
-/*
-class CookTripod_DZ: BuiltItems
+class Notebook;
+class Notebook_DZ: Notebook 
 {
 	scope = 2;
-	destrType = "DestructBuilding";
 	icon = "\ca\data\data\Unknown_object.paa";
-	mapSize = 2;
-	armor = 100;
-	model = "\z\addons\dayz_epoch_w\items\cook_tripod.p3d";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_NOTEBOOK;
+	constructioncount = 1;
+	offset[] = {0,2,2};
+	removeoutput[] = {{"notebook_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
-	nounderground = 0;
-	requireplot = 0;
-	removeoutput[] = {{"cook_tripod_kit",1}};
 };
-*/
+
+class Water_Pump_DZ: Land_pumpa 
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_WATERPUMP;
+	constructioncount = 1;
+	offset[] = {0,2,0};
+	removeoutput[] = {{"water_pump_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class MAP_Misc_Greenhouse;
+class Greenhouse_DZ: MAP_Misc_Greenhouse 
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_GREENHOUSE;
+	constructioncount = 1;
+	offset[] = {0,3,2};
+	removeoutput[] = {{"greenhouse_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class MAP_F_postel_panelak2;
+class Bed_DZ: MAP_F_postel_panelak2
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_BED;
+	constructioncount = 1;
+	offset[] = {0,2,0};
+	removeoutput[] = {{"bed_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class MAP_stul_hospoda;
+class Table_DZ: MAP_stul_hospoda
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_TABLE;
+	constructioncount = 1;
+	offset[] = {0,2,0};
+	removeoutput[] = {{"table_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+	
+class Office_Chair_DZ: BuiltItems 
+{
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\storage\office_chair";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = "office chair";
+	constructioncount = 1;
+	offset[] = {0,2,1};
+	removeoutput[] = {{"office_chair_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};	

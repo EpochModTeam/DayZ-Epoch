@@ -490,12 +490,12 @@ class CfgVehicles
 	#include "Buildables\ModularBuild.hpp"	
 	#include "Buildables\ModularWrecks.hpp"	
 	#include "Buildables\FencesWood.hpp"
-	#include "Buildables\FencesMetal.hpp"		
-	#include "Buildables\FencesGates.hpp"	
-	#include "Buildables\CamoNets.hpp"	
-	#include "Buildables\Sandbags.hpp"	
-	#include "Buildables\Billboards.hpp"	
-	#include "Buildables\Misc.hpp"		
+	#include "Buildables\FencesMetal.hpp"
+	#include "Buildables\FencesGates.hpp"
+	#include "Buildables\CamoNets.hpp"
+	#include "Buildables\Sandbags.hpp"
+	#include "Buildables\Billboards.hpp"
+	#include "Buildables\Misc.hpp"
 	
 	//Loot Container
 	#include "LootContainer\AmmoCrates.hpp"

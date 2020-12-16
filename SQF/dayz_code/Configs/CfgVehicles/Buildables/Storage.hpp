@@ -317,7 +317,7 @@ class ATM_DZ: BuiltItems
 	transportMaxWeapons = 5;	
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 4;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2.5,1.5};
 	removeoutput[] = {{"atm_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -394,7 +394,7 @@ class Vendmachine2_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;	
 	constructioncount = 1;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2.5,1.5};
 	transportMaxWeapons = 15;	
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;

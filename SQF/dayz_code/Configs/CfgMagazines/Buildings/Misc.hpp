@@ -474,6 +474,116 @@ class ItemScaffoldingKit: CA_Magazine
 	};
 };
 
+class notebook_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_NOTEBOOK;
+	descriptionShort = $STR_EPOCH_NOTEBOOK_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Notebook_DZ";
+		};
+	};
+};
+
+class water_pump_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_WATERPUMP;
+	descriptionShort = $STR_EPOCH_WATERPUMP_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Water_Pump_DZ";
+		};
+	};
+};
+
+class greenhouse_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_GREENHOUSE;
+	descriptionShort = $STR_EPOCH_GREENHOUSE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Greenhouse_DZ";
+		};
+	};
+};
+
+class bed_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_BED;
+	descriptionShort = $STR_EPOCH_BED_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Bed_DZ";
+		};
+	};
+};
+
+class table_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_TABLE;
+	descriptionShort = $STR_EPOCH_TABLE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Table_DZ";
+		};
+	};
+};
+
 class office_chair_kit: CA_Magazine
 {
 	scope = 2;
@@ -491,7 +601,7 @@ class office_chair_kit: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
-			create = "ParkBench_DZ";
+			create = "Office_Chair_DZ";
 		};
 	};
 };
