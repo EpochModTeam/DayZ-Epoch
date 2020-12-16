@@ -416,3 +416,276 @@ class StashSmall_kit: CA_Magazine
 		};
 	};
 };
+
+class cook_tripod_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_COOKINGTRIPOD;
+	descriptionShort = $STR_ITEM_DESC_COOKINGTRIPOD;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "CookTripod_DZ";
+		};
+	};    
+};
+
+class stoneoven_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_STONEOVEN;
+	descriptionShort = $STR_EPOCH_STONEOVEN_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Stoneoven_DZ";
+		};
+	};    
+};
+
+class commode_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_COMMODE;
+	descriptionShort = $STR_EPOCH_COMMODE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Commode_DZ";
+		};
+	};    
+};
+
+class wardrobe_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_WARDROBE;
+	descriptionShort = $STR_EPOCH_WARDROBE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Wardrobe_DZ";
+		};
+	};    
+};
+
+class fridge_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_FRIDGE;
+	descriptionShort = $STR_EPOCH_FRIDGE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Fridge_DZ";
+		};
+	};    
+};
+
+class washing_machine_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_WASHINGMACHINE;
+	descriptionShort = $STR_EPOCH_WASHINGMACHINE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Washing_Machine_DZ";
+		};
+	};    
+};
+
+class server_rack_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_SERVERRACK;
+	descriptionShort = $STR_EPOCH_SERVERRACK_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Server_Rack_DZ";
+		};
+	};    
+};
+
+class atm_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_ATM;
+	descriptionShort = $STR_EPOCH_ATM_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "ATM_DZ";
+		};
+	};    
+};
+
+class armchair_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_ARMCHAIR;
+	descriptionShort = $STR_EPOCH_ARMCHAIR_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Armchair_DZ";
+		};
+	};    
+};
+
+class sofa_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_SOFA;
+	descriptionShort = $STR_EPOCH_SOFA_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Sofa_DZ";
+		};
+	};    
+};
+
+class arcade_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_COOKINGTRIPOD;
+	descriptionShort = $STR_ITEM_DESC_COOKINGTRIPOD;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Arcade_DZ";
+		};
+	};    
+};
+
+class vendmachine1_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_VENDINGMACHINE1;
+	descriptionShort = $STR_EPOCH_VENDINGMACHINE1_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Vendmachine1_DZ";
+		};
+	};    
+};
+
+class vendmachine2_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_VENDINGMACHINE2;
+	descriptionShort = $STR_EPOCH_VENDINGMACHINE2_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Vendmachine2_DZ";
+		};
+	};    
+};
