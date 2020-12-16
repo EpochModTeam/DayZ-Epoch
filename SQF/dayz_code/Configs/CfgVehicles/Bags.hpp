@@ -586,12 +586,10 @@ class CzechBackpack_DZE2 : CzechBackpack_DZE1
 		init="[(_this select 0),'CfgVehicles','CzechBackpack_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
-class CzechBackpack_Camping_DZE1 : DZ_CivilBackpack_EP1 
+class CzechBackpack_Camping_DZE1 : CzechBackpack_DZE1 
 {
 	model = "\z\addons\dayz_epoch_u\clothes\dze_survivorpack_01"; 
 	picture = "\dayz_epoch_c\icons\backpacks\20_backpack_camping.paa";
-	transportMaxWeapons = 9;
-	transportMaxMagazines = 45;
 	class eventHandlers
 	{
 		init="[(_this select 0),'CfgVehicles','CzechBackpack_Camping_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
@@ -606,24 +604,20 @@ class CzechBackpack_Camping_DZE2 : CzechBackpack_DZE2
 		init="[(_this select 0),'CfgVehicles','CzechBackpack_Camping_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};	
 };
-class CzechBackpack_OD_DZE1 : Bag_Base_EP1 		//new LEN mod Czech Pack variants
+class CzechBackpack_OD_DZE1 : CzechBackpack_DZE1 		//new LEN mod Czech Pack variants
 {
 	scope = 2;
-	displayname = $STR_BACKPACK_NAME_CZECH_DZE1;
-	descriptionShort = $STR_BACKPACK_DESC_CZECH_DZE1;
-	transportMaxWeapons = 9;
-	transportMaxMagazines = 45;
+	model = "\len_backpacks\backpack_odr.p3d";
+	picture = "\dayz_epoch_c\icons\backpacks\01_backpack_odr.paa";
 	class eventHandlers
 	{
 		init="[(_this select 0),'CfgVehicles','CzechBackpack_OD_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
-class CzechBackpack_OD_DZE2 : CzechBackpack_OD_DZE1 
+class CzechBackpack_OD_DZE2 : CzechBackpack_DZE2 
 {
-	displayname = $STR_BACKPACK_NAME_CZECH_DZE2;
-	descriptionShort = $STR_BACKPACK_DESC_CZECH_DZE2;
-	transportMaxWeapons = 10;
-	transportMaxMagazines = 50;	
+	model = "\len_backpacks\backpack_odr.p3d";
+	picture = "\dayz_epoch_c\icons\backpacks\01_backpack_odr.paa";
 	class eventHandlers
 	{
 		init="[(_this select 0),'CfgVehicles','CzechBackpack_OD_DZE2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
