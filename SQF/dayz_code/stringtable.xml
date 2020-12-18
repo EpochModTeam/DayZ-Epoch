@@ -23083,7 +23083,7 @@
 			<Russian>Создать: Деревянный пол</Russian>
 			<Dutch>Creëer houten vloer</Dutch>
 			<Czech>Vytvořit Dřevěnou podlahu</Czech>
-		</Key>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_232a">
 			<English>Craft Wood Floor 1/2</English>
 			<German>Holzboden 1/2 herstellen</German>
@@ -23091,6 +23091,13 @@
 			<Dutch>Creëer houten vloer 1/2</Dutch>
 			<Czech>Vytvořit 1/2 dřevěné podlahy</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_232c">
+			<English>Craft Wood Floor 4x</English>
+			<German>Holzboden 4x herstellen</German>
+			<Russian>Создать: Деревянный пол 4x</Russian>
+			<Dutch>Creëer houten vloer 4x</Dutch>
+			<Czech>Vytvořit 4x Dřevěnou podlahu</Czech>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_233">
 			<English>Craft Stair Supports</English>
 			<German>Treppenstützen herstellen</German>
@@ -27101,6 +27108,11 @@
 			<German>Ein Holzboden, welcher auch als Decke genutzt werden kann.</German>
 			<Russian>Деревянный пол, может также использоваться в качестве потолка.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_FLOORCEILING4x">
+			<English>Floor/Ceiling 4x</English>
+			<German>Holzboden/Decke 4x</German>
+			<Russian>Пол/Потолок 4x</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_WOODSTAIRS">
 			<English>Wooden Stairs</English>
 			<German>Holztreppe</German>

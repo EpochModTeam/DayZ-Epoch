@@ -50,7 +50,7 @@ class WoodFloorQuarter_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch\models\quarter_floor.p3d";
-	armor = 600;
+	armor = 500;
 	displayName = $STR_EPOCH_FLOORCEILINGQUARTER;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	constructioncount = 1;
@@ -65,6 +65,16 @@ class WoodFloorQuarter_DZ: ModularItems {
 			lifeTime = 1;
 		};
 	};
+};
+
+class WoodFloor4x_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,6,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2.p3d";
+	armor = 4000;
+	displayName = $STR_EPOCH_FLOORCEILING4x;
+	maintainBuilding[] = {{"PartWoodLumber",4}};
+	GhostPreview = "WoodFloor4x_Preview_DZ";
 };
 
 class WoodLargeWall_DZ: ModularItems {
