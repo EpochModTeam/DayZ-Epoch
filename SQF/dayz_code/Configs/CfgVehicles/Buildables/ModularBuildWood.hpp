@@ -77,6 +77,16 @@ class WoodFloor4x_DZ: ModularItems {
 	GhostPreview = "WoodFloor4x_Preview_DZ";
 };
 
+class WoodTriangleFloor_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_tri_floor.p3d";
+	armor = 1000;
+	displayName = $STR_EPOCH_FLOORCEILING4x;
+	maintainBuilding[] = {{"PartWoodLumber",2}};
+	GhostPreview = "WoodTriangleFloor_Preview_DZ";
+};
+
 class WoodLargeWall_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,1.5,0};

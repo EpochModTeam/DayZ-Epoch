@@ -897,6 +897,28 @@ class ItemWoodFloorStairs: CA_Magazine
 	};
 };
 
+class ItemTringleWoodFloor: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_TRIANGLE_WOODFLOOR;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	descriptionShort = $STR_EPOCH_TRIANGLE_WOODFLOOR_DESC;
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "WoodTriangleFloor_DZ";
+		};	
+	};
+};
+
 class ItemWoodFloorHalf: CA_Magazine 
 {
 	scope = 2;
@@ -933,6 +955,15 @@ class ItemWoodFloorHalf: CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemTriangleWoodWall",1}};
 			input[] = {{"ItemWoodFloorQuarter",1},{"ItemWoodFloorHalf",1}};
+		};	
+		class Crafting2 
+		{
+			text = $STR_EPOCH_ACTION_WOODENTRIANGLEFLOOR;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
+			output[] = {{"ItemTringleWoodFloor",1}};
+			input[] = {{"ItemWoodFloorQuarter",1},{"ItemWoodFloorHalf",1}};
 		};		
 	};
 };
@@ -963,7 +994,7 @@ class ItemWoodFloorQuarter: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemWoodFloorHalf",1}};
-			input[] = {{"ItemWoodFloorQuarter",2}};
+			input[] = {{"ItemWoodFloorQuarter",1},{"ItemWoodFloorHalf",1}};
 		};
 		class Crafting1 
 		{

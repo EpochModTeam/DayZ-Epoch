@@ -219,3 +219,8 @@ class WoodFloor4x_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2.p3d";
 	displayName = "WoodFloor4x Preview";
 };
+class WoodTriangleFloor_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_tri_floor_ghost.p3d";
+	displayName = "Wood Triangle Floor Preview";
+};

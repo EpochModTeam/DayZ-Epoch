@@ -27169,6 +27169,14 @@
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL_DESC">
 			<English>Triangle wall constructed out of plywood and lumber.</English>
 			<German>Eine dreieckige Holzwand bestehend aus Sperr- und Bauholz.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_TRIANGLE_WOODFLOOR">
+			<English>Triangle Floor</English>
+			<German>Dreieckiger Boden</German>
+		</Key>
+		<Key ID="STR_EPOCH_TRIANGLE_WOODFLOOR_DESC">
+			<English>Triangle floor constructed out of plywood and lumber.</English>
+			<German>Ein dreieckiger Holzboden bestehend aus Sperr- und Bauholz.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_WOODWALL">
 			<English>Wooden Wall</English>
@@ -31156,6 +31164,10 @@
 		<Key ID="STR_EPOCH_ACTION_WOODENTRIANGLEWALL">
 			<English>Craft Triangle Wall</English>
 			<German>Dreieckige Wand herstellen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_WOODENTRIANGLEFLOOR">
+			<English>Craft Triangle Floor</English>
+			<German>Dreieckigen Boden herstellen</German>
 		</Key>	
 		<Key ID="STR_EPOCH_ACTION_WOODHANDRAIL">
 			<English>Craft Wood Handrail</English>
