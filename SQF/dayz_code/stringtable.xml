@@ -23046,6 +23046,13 @@
 			<Russian>Создать: Металлич. пол 1/4</Russian>
 			<Dutch>Creëer metalen vloer 1/4</Dutch>
 			<Czech>Vytvořit Železnou podlahu 1/4</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_228_3">
+			<English>Craft Metal Floor 4x</English>
+			<German>Metallboden 4x herstellen</German>
+			<Russian>Создать: Металлич. пол 4x</Russian>
+			<Dutch>Creëer metalen vloer 4x</Dutch>
+			<Czech>Vytvořit Železnou podlahu 4x</Czech>
 		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_229">
 			<English>Craft Lg Camo Net</English>
@@ -26832,6 +26839,14 @@
 			<English>Glass Floor</English>
 			<German>Glasboden</German>
 		</Key>		
+		<Key ID="STR_EPOCH_GLASSFLOORHALF">
+			<English>Glass Floor 1/2</English>
+			<German>Glasboden 1/2</German>
+		</Key>
+		<Key ID="STR_EPOCH_GLASSFLOORQUARTER">
+			<English>Glass Floor 1/4</English>
+			<German>Glasboden 1/4</German>
+		</Key>		
 		<Key ID="STR_EPOCH_METALFLOOR">
 			<English>Metal Floor</English>
 			<German>Metallboden</German>
@@ -26846,6 +26861,11 @@
 			<English>Metal Floor 1/4</English>
 			<German>Metallboden 1/4</German>
 			<Russian>Металлический пол (1/4)</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_METALFLOOR4x">
+			<English>Metal Floor 4x</English>
+			<German>Metallboden 4x</German>
+			<Russian>Металлический пол 4x</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF">
 			<English>Cinder Wall Half</English>
@@ -31145,6 +31165,14 @@
 			<English>Craft Glass Floor</English>
 			<German>Glasboden herstellen</German>
 		</Key>
+		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR_QUARTER">
+			<English>Craft Glass Floor 1/4</English>
+			<German>Glasboden 1/4 herstellen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR_HALF">
+			<English>Craft Glass Floor 1/2</English>
+			<German>Glasboden 1/2 herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_ACTION_CONCRETE_BLOCK">
 			<English>Craft Concrete Block</English>
 			<German>Betonblock herstellen</German>

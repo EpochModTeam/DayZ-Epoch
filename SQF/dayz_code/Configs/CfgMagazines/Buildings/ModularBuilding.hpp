@@ -20,6 +20,68 @@ class glass_floor_kit: CA_Magazine
 	};
 };
 
+class glass_floor_half_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_GLASSFLOORHALF;
+	descriptionShort = $STR_EPOCH_GLASSFLOORHALF;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "GlassFloor_Half_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_ACTION_GLASS_FLOOR;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"glass_floor_kit",1}};
+			input[] = {{"glass_floor_half_kit",2}};
+		};
+	};
+};
+
+class glass_floor_quarter_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_GLASSFLOORQUARTER;
+	descriptionShort = $STR_EPOCH_GLASSFLOORQUARTER;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "GlassFloor_Quarter_DZ";
+		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_ACTION_GLASS_FLOOR_HALF;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"glass_floor_half_kit",1}};
+			input[] = {{"glass_floor_quarter_kit",2}};
+		};		
+	};
+};
+
 class metal_floor_kit: CA_Magazine 
 {
 	scope = 2;
@@ -39,6 +101,15 @@ class metal_floor_kit: CA_Magazine
 			require[] = {"ItemToolbox"};
 			create = "MetalFloor_DZ";
 		};
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_228_3;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			output[] = {{"metal_floor4x_kit",1}};
+			input[] = {{"metal_floor_kit",4}};
+		};		
 	};
 };
 
@@ -100,6 +171,28 @@ class metal_floor_quarter_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
 			output[] = {{"metal_floor_half_kit",1}};
 			input[] = {{"metal_floor_quarter_kit",2}};
+		};
+	};
+};
+
+class metal_floor4x_kit: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_METALFLOOR4x;
+	descriptionShort = $STR_EPOCH_METALFLOOR4x;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalFloor4x_DZ";
 		};
 	};
 };

@@ -90,6 +90,19 @@ class PartGlass : CA_Magazine
 	picture = "\dayz_equip\textures\equip_carglass_ca.paa";
 	displayName = $STR_EQUIP_NAME_30;
 	descriptionShort = $STR_EQUIP_DESC_30;
+	
+	class ItemActions 
+	{	
+		class Crafting 
+		{
+			text = $STR_EPOCH_ACTION_GLASS_FLOOR_QUARTER;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"glass_floor_quarter_kit",1}};
+			input[] = {{"ItemPole",4},{"PartGlass",4}};
+		};
+	};	
 };
 	
 // PartGeneric can be found under Items\Metal.hpp

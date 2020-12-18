@@ -99,13 +99,22 @@ class ItemPole: CA_Magazine
 		};		
 		class Crafting4 
 		{
-			text = $STR_EPOCH_ACTION_GLASS_FLOOR;
+			text = $STR_EPOCH_ACTION_GLASS_FLOOR_QUARTER;
 			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
-			output[] = {{"glass_floor_kit",1}};
+			output[] = {{"glass_floor_quarter_kit",1}};
 			input[] = {{"ItemPole",8},{"PartGlass",4}};
-		};			
+		};	
+		class Crafting5
+		{
+			text = $STR_EPOCH_PLAYER_228_2;
+			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			output[] = {{"metal_floor_quarter_kit",1}};
+			input[] = {{"ItemPole",4},{"equip_metal_sheet",4}};
+		};		
 	};
 };
 

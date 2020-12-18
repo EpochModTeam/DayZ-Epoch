@@ -21,7 +21,7 @@ class MetalFloor_Half_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\metal_floor_half.p3d";
-	armor = 2500;
+	armor = 3000;
 	displayName = $STR_EPOCH_METALFLOORHALF;
 	GhostPreview = "MetalFloor_Half_Preview_DZ";
 };
@@ -30,9 +30,18 @@ class MetalFloor_Quarter_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\metal_floor_quarter.p3d";
-	armor = 2000;
+	armor = 3000;
 	displayName = $STR_EPOCH_METALFLOORQUARTER;
 	GhostPreview = "MetalFloor_Quarter_Preview_DZ";
+};
+
+class MetalFloor4x_DZ: ModularItems {
+	scope = 2;	
+	offset[] = {0,5,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\metal_floor_2x2.p3d";
+	armor = 3000;
+	displayName = $STR_EPOCH_METALFLOOR4x;	
+	GhostPreview = "MetalFloor4x_Preview_DZ";
 };
 
 class DoorFrame_DZ: ModularItems {
@@ -64,4 +73,22 @@ class GlassFloor_DZ: ModularItems {
 	displayName = $STR_EPOCH_GLASSFLOOR;
 	maintainBuilding[] = {{"PartGlass",1}};
 	GhostPreview = "GlassFloor_Preview_DZ";
+};
+
+class GlassFloor_Half_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\glass_floor_half.p3d";
+	armor = 2000;
+	displayName = $STR_EPOCH_GLASSFLOORHALF;
+	maintainBuilding[] = {{"PartGlass",1}};
+};
+
+class GlassFloor_Quarter_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\glass_floor_quarter.p3d";
+	armor = 2000;
+	displayName = $STR_EPOCH_GLASSFLOORQUARTER;
+	maintainBuilding[] = {{"PartGlass",1}};
 };
