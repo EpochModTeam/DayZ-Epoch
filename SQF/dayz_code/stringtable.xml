@@ -23279,13 +23279,17 @@
 			<German>Halbe Wand herstellen</German>
 			<Russian>Создать: Половина стены</Russian>
 			<Czech>Vytvořit 1/2 zdi</Czech>
-		</Key>
+		</Key>	
 		<Key ID="STR_EPOCH_PLAYER_252_1">
 			<English>Craft Full Wall</English>
 			<German>Ganze Wand herstellen</German>
 			<Russian>Создать: все стены</Russian>
 			<Czech>Vytvářet plnou stěnou</Czech>
-		</Key>		
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_252_2">
+			<English>Craft Half Wall /w gap</English>
+			<German>Halbe Wand mit Lücke herstellen</German>
+		</Key>			
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<English>Craft Garage Doorway</English>
 			<German>Garagentor herstellen</German>
@@ -26902,6 +26906,10 @@
 			<German>Betonwand (Halb)</German>
 			<Russian>Стена из шлакоблоков (1/2)</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF_GAP">
+			<English>Cinder Wall Half w/ gap</English>
+			<German>Betonwand (Halb) mit Lücke</German>
+		</Key>		
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL">
 			<English>Cinder Wall Full</English>
 			<German>Betonwand (Komplett)</German>

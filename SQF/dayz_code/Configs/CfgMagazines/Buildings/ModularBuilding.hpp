@@ -238,6 +238,37 @@ class half_cinder_wall_kit: CA_Magazine
 			require[] = {"ItemToolbox"};
 			create = "CinderWallHalf_DZ";
 		};
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_252_2;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"half_cinder_wall_gap_kit",1}};
+			input[] = {{"half_cinder_wall_kit",1}};
+		};
+	};
+};
+
+class half_cinder_wall_gap_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF_GAP;
+	descriptionShort = $STR_EPOCH_CINDERBLOCKWALL_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CinderWallHalf_Gap_DZ";
+		};
 	};
 };
 

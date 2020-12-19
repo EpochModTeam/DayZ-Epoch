@@ -19,6 +19,27 @@ class CinderWallHalf_DZ: ModularItems {
 	};
 };
 
+class CinderWallHalf_Gap_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,0};
+	model = "\z\addons\dayz_epoch\models\cinder_wall_half2.p3d";
+	armor = 2200;
+	displayName = $STR_EPOCH_CINDERBLOCKWALL_HALF_GAP;
+	upgradeBuilding[] = {"CinderWall_DZ",{"ItemToolbox"},{{"CinderBlocks",4},{"MortarBucket",1}}};
+	maintainBuilding[] = {{"MortarBucket",1}};
+	GhostPreview = "CinderWallHalf_Gap_Preview_DZ";
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wreck_cinder.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
+};
+
 class CinderWall_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,2,0};

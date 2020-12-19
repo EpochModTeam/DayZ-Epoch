@@ -224,3 +224,8 @@ class WoodTriangleFloor_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_tri_floor_ghost.p3d";
 	displayName = "Wood Triangle Floor Preview";
 };
+class CinderWallHalf_Gap_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch\models\cinder_wall_half2_ghost.p3d";
+	displayName = "Cinder Wall Half Gap Preview";
+};
