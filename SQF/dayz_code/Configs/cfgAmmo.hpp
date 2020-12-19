@@ -701,7 +701,7 @@ class CfgAmmo
 		audibleFire = 22;
 		visibleFireTime = 3;
 		cost = 20;
-		airLock = 0;
+		airLock = 1;
 		model = "\ca\Weapons\Data\bullettracer\tracer_red";
 		caliber = 2.07;
 		tracerColor[] = {0,0,0,0};
@@ -711,6 +711,26 @@ class CfgAmmo
 		muzzleEffect = "BIS_Effects_HeavySniper";
 		typicalspeed = 950;
 	};
+	
+	// M200 Chey Tac SD
+	class B_408_CheyTac_SD: BulletBase
+	{
+		hit = 22;
+		indirectHit = 1;
+		indirectHitRange = 0.01;
+		cartridge = "FxCartridge_127";
+		visibleFire = 0.1;
+		audibleFire = 0.1;
+		visibleFireTime = 3;
+		cost = 20;
+		airLock = 1;
+		model = "\ca\Weapons\Data\bullettracer\tracer_red";
+		caliber = 2.07;
+		tracerStartTime = -1;
+		airFriction = -0.0005;
+		muzzleEffect = "BIS_Effects_HeavySniper";
+		typicalspeed = 820;
+	};	
 	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase

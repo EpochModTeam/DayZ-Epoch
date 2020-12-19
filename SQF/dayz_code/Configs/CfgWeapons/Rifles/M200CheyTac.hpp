@@ -35,7 +35,7 @@ class M200_CheyTac_DZ: m107
 	recoilProne = "recoil_single_primary_prone_7outof10";
 	dexterity = 0.45;	
 	hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\addons\dayz_epoch_w\m200\data\dze_m200_co.paa"};
+	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch_w\m200\data\dze_m200_co.paa"};
 	class Library
 	{
 		libTextDesc = "The CheyTac Intervention is an American bolt-action sniper rifle manufactured by CheyTac LLC, which can also be classified as an anti-materiel rifle.<br/> It is fed by a 7-round detachable single-stack magazine containing .408 cartridges and its effective range is around 2500m.";
@@ -64,8 +64,18 @@ class M200_CheyTac_DZ: m107
 			opticsDisablePeripherialVision = 1;
 			cameraDir = "";
 			visionMode[] = {"Normal"};
-			discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1600,1800};
-			discreteDistanceInitIndex = 3;
+			discreteDistance[] = {300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1600,1800};
+			discreteDistanceInitIndex = 1;
 		};
 	};
+};
+
+class M200_CheyTac_SD_DZ: M200_CheyTac_DZ
+{
+	displayname = $STR_DZ_WPN_M200_CHEYTAC_SD_NAME;
+	descriptionShort = $STR_DZ_WPN_M200_CHEYTAC_SD_DESC;
+	model = "\z\addons\dayz_epoch_w\m200\h4_cheytac_sd.p3d";
+	picture = "\z\addons\dayz_epoch_w\m200\data\w_cheytac_Ca.paa";
+	magazines[] = {5Rnd_408_CheyTac_SD};
+	begin1[] = {"\dayz_epoch_c\sounds\weapons\m200sd_shot",2.51189,1,80};
 };

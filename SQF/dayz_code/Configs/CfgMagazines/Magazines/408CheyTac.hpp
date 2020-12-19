@@ -12,3 +12,10 @@ class 5Rnd_408_CheyTac : CA_Magazine {
 		COMBINE_MAG
 	};
 };
+
+class 5Rnd_408_CheyTac_SD : 5Rnd_408_CheyTac {
+	displayName = $STR_DZ_MAG_5RND_408_CHEYTAC_SD_NAME;
+	descriptionShort = $STR_DZ_MAG_5RND_CHEYTAC_SD_DESC;
+	picture	="\dayz_epoch_c\icons\magazines\m_m200.paa";
+	ammo = "B_408_CheyTac_SD";		
+};

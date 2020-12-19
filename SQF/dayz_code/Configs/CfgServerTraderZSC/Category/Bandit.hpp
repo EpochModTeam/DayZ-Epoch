@@ -181,6 +181,7 @@ class Category_8 {
 	class Anzio_20_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {8000,"worth"};};
 	class BAF_AS50_scoped_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {8000,"worth"};};
 	class M200_CheyTac_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {8000,"worth"};};
+	class M200_CheyTac_SD_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {10000,"worth"};};
 	class KSVK_DZE {type = "trade_weapons";buy[] = {10000,"worth"};sell[] = {6000,"worth"};};
 	class BAF_L85A2_RIS_TWS_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {8000,"worth"};};
 };
@@ -207,6 +208,7 @@ class Category_9 {
 	class 5Rnd_127x99_as50_CP {type = "trade_items";buy[] = {-1,"worth"};sell[] = {800,"worth"};};
 	class 5Rnd_127x108_KSVK {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
 	class 5Rnd_408_CheyTac {type = "trade_items";buy[] = {-1,"worth"};sell[] = {800,"worth"};};
+	class 5Rnd_408_CheyTac_SD {type = "trade_items";buy[] = {-1,"worth"};sell[] = {1000,"worth"};};
 	class 200Rnd_556x45_M249 {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
 	class 100Rnd_762x51_M240 {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class 100Rnd_762x54_PK {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};

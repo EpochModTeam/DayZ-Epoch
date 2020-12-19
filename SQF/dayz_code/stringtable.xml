@@ -17621,6 +17621,14 @@
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac</German>
 			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: .408 Chey Tac</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_M200_CHEYTAC_SD_NAME">
+			<English>M200 Chey Tac SD</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_M200_CHEYTAC_SD_DESC">
+			<English>Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac SD</English>
+			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac SD</German>
+			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: .408 Chey Tac SD</Russian>
+		</Key>		
 		<Key ID="STR_DZ_WPN_WA2000_NAME">
 			<English>WA2000</English>
 		</Key>
@@ -19136,6 +19144,21 @@
 			<Polish>Kaliber: .408 Chey Tac &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M200 Chey Tac</Polish>
 			<Hungarian>Kaliber: .408 Chey Tac &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M200 Chey Tac</Hungarian>
         </Key>
+		<Key ID="STR_DZ_MAG_5RND_408_CHEYTAC_SD_NAME">
+			<English>5Rnd. Chey Tac SD mag.</English>
+			<Russian>5п. Chey Tac SD маг.</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_5RND_CHEYTAC_SD_DESC">
+			<German>Kaliber: .408 Chey Tac SD &lt;br/&gt;Patronen: 5 &lt;br/&gt;Verwendet in: M200 Chey Tac SD</German>
+			<English>Caliber: .408 Chey Tac SD &lt;br/&gt;Rounds: 5 &lt;br/&gt;Used in: M200 Chey Tac SD</English>
+			<Italian>Calibro: .408 Chey Tac SD &lt;br/&gt;Munizioni: 5 &lt;br/&gt;Si usa in: M200 Chey Tac SD</Italian>
+			<Spanish>Calibre: .408 Chey Tac SD &lt;br/&gt;Cargas: 5 &lt;br/&gt;Uso: M200 Chey Tac SD</Spanish>
+			<French>Calibre: .408 Chey Tac SD &lt;br/&gt;Munitions: 5 &lt;br/&gt;Utilisé avec: M200 Chey Tac SD</French>
+			<Czech>Kalibr: .408 Chey Tac SD &lt;br/&gt;Nábojů: 5 &lt;br/&gt;Pro: M200 Chey Tac SD</Czech>
+			<Russian>Патрон: .408 Chey Tac SD &lt;br/&gt;Количество: 5 &lt;br/&gt;Используется в: M200 Chey Tac SD</Russian>
+			<Polish>Kaliber: .408 Chey Tac SD &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M200 Chey Tac SD</Polish>
+			<Hungarian>Kaliber: .408 Chey Tac SD &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M200 Chey Tac SD</Hungarian>
+        </Key>		
 		<Key ID="STR_DZ_MAG_6RND_WA2000_NAME">
 			<English>6Rnd. WA2000 mag.</English>
 			<Russian>6п. WA2000 маг.</Russian>
