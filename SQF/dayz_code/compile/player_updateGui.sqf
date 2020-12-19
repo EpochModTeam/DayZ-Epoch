@@ -328,6 +328,7 @@ if (dayz_humanitytarget != _string) then {
 // ZSC
 if (Z_singleCurrency) then {
 	_display = uiNameSpace getVariable "ZSC_Money_Display";
+	if (isNil "_display") exitWith {}; // not ready
 	_ctrlZSC = _display displayCtrl 4900;
 	_string = "";
 	if (Z_showCurrencyUI) then {
