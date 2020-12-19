@@ -541,8 +541,9 @@ class T810A_PKT_DES_ACR_DZE4: T810A_PKT_DES_ACR_DZE3 {
 	fuelCapacity = 615;	
 };
 
-class T810A_ACR_DZE: T810A_PKT_ACR_DZ
+class T810A_ACR_DZE: T810_DZE_Base_ACR
 {
+	scope = 2;
 	displayname = "$STR_VEH_NAME_TATRA_WOODLAND";
 	transportSoldier = 12;
 	cargoIsCoDriver[] = {1,1,0};	
