@@ -25280,6 +25280,18 @@
 			<German>Säckchen Sonnenblumensamen</German>
 			<Russian>Мешочек семечек</Russian>
 		</Key>
+		<Key ID="STR_FOOD_NAME_POTATO">
+			<English>Potato</English>
+			<German>Kartoffel</German>
+		</Key>	
+		<Key ID="STR_FOOD_NAME_POTATO_BAKED">
+			<English>Baked Potato</English>
+			<German>Gebackene Kartoffel</German>
+		</Key>	
+		<Key ID="STR_FOOD_NAME_CARROT">
+			<English>Carrot</English>
+			<German>Karotte</German>
+		</Key>			
 		<Key ID="STR_GEM_NAME_TOPAZ">
 			<English>Topaz</English>
 			<German>Topas</German>

@@ -89,7 +89,7 @@ class FoodRaw : FoodEdible
 	bloodRegen = 200;
 	Nutrition[] = {282,0,0,0};
 	
-	infectionChance = 0.1;
+	infectionChance = 0.7;
 };
 
 //Cooked food base class
@@ -102,6 +102,7 @@ class FoodCooked : FoodEdible
 #include "PackagedFood.hpp"
 #include "Meat.hpp"
 #include "Fish.hpp"
+#include "Plants.hpp"
 
 #include "Soda.hpp"
 #include "WaterBottle.hpp"
