@@ -46,7 +46,9 @@ class Category_35 {
 	class equip_tent_poles {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};	
 	class ItemDesertTent {type = "trade_items";buy[] = {6,"ItemSilverBar10oz"};sell[] = {3,"ItemSilverBar10oz"};};
 	class ItemDomeTent {type = "trade_items";buy[] = {6,"ItemSilverBar10oz"};sell[] = {3,"ItemSilverBar10oz"};};
-	class ItemTent {type = "trade_items";buy[] = {4,"ItemSilverBar10oz"};sell[] = {2,"ItemSilverBar10oz"};};
+	class ItemTent {type = "trade_items";buy[] = {8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};
+	class ItemTentWinter {type = "trade_items";buy[] = {8,"ItemSilverBar10oz"};sell[] = {4,"ItemSilverBar10oz"};};
+	class ItemWinterDomeTent {type = "trade_items";buy[] = {6,"ItemSilverBar10oz"};sell[] = {3,"ItemSilverBar10oz"};};	
 	class ItemLightBulb {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class ItemGenerator {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class equip_brick {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};

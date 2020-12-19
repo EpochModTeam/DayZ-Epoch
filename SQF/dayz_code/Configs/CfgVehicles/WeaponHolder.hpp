@@ -131,6 +131,28 @@ class WeaponHolder_ItemDesertTent : WeaponHolderBase {
 	};
 };
 
+class WeaponHolder_ItemTentWinter : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_VEH_NAME_TENTWINTER;
+	model = "\dayz_equip\proxy\tentbag.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemTentWinter'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+	};
+};
+
+class WeaponHolder_ItemWinterDomeTent : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_VEH_NAME_WINTER_DOME_TENT;
+	model = "\dayz_equip\proxy\tentbag.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemWinterDomeTent'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";
+	};
+};
+
 class WeaponHolder_ItemCrate : WeaponHolderBase {
 	scope = 2;
 	displayName = $STR_ITEM_NAME_equip_crate;

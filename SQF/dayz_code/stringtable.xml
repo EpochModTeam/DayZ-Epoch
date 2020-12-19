@@ -13636,6 +13636,30 @@
 			<Czech>Stan (iglú) +++++</Czech>
 			<German>Igluzelt +++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT">
+			<English>Winter Dome Tent</English>
+			<German>Winterigluzelt</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT1">
+			<English>Winter Dome Tent +</English>
+			<German>Winterigluzelt +</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT2">
+			<English>Winter Dome Tent ++</English>
+			<German>Winterigluzelt ++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT3">
+			<English>Winter Dome Tent +++</English>
+			<German>Winterigluzelt +++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT4">
+			<English>Winter Dome Tent ++++</English>
+			<German>Winterigluzelt ++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT5">
+			<English>Winter Dome Tent +++++</English>
+			<German>Winterigluzelt +++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_TENT">
 			<English>Camping Tent</English>
 			<German>Zelt</German>
@@ -13684,6 +13708,30 @@
 			<Czech>Stan +++++</Czech>
 			<French>Tente de camping +++++</French>
 		</Key>
+		<Key ID="STR_VEH_NAME_TENTWINTER">
+			<English>Winter Camping Tent</English>
+			<German>Winterzelt</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TENTWINTER1">
+			<English>Winter Camping Tent +</English>
+			<German>Winterzelt +</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TENTWINTER2">
+			<English>Winter Camping Tent ++</English>
+			<German>Winterzelt ++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TENTWINTER3">
+			<English>Winter Camping Tent +++</English>
+			<German>Winterzelt +++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TENTWINTER4">
+			<English>Winter Camping Tent ++++</English>
+			<German>Winterzelt ++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_TENTWINTER5">
+			<English>Winter Camping Tent +++++</English>
+			<German>Winterzelt +++++</German>
+		</Key>		
 		<Key ID="STR_BUILT_WIRE1">
 			<English>Wire (CAT1)</English>
 			<Russian>Колючка</Russian>
@@ -23423,6 +23471,10 @@
 			<Russian>Создать: Лесная сеть</Russian>
 			<Czech>Vytvořit Lesní maskovací síť</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_272">
+			<English>Craft Winter Net</English>
+			<German>Winternetz herstellen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_273">
 			<English>Craft H-Barrier</English>
 			<German>H-Barriere herstellen</German>

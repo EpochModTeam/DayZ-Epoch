@@ -46,7 +46,9 @@ class Category_35 {
 	class equip_tent_poles {type = "trade_items";buy[] = {20,"worth"};sell[] = {10,"worth"};};	
 	class ItemDesertTent {type = "trade_items";buy[] = {60,"worth"};sell[] = {30,"worth"};};
 	class ItemDomeTent {type = "trade_items";buy[] = {60,"worth"};sell[] = {30,"worth"};};
-	class ItemTent {type = "trade_items";buy[] = {40,"worth"};sell[] = {20,"worth"};};
+	class ItemTent {type = "trade_items";buy[] = {80,"worth"};sell[] = {40,"worth"};};
+	class ItemTentWinter {type = "trade_items";buy[] = {80,"worth"};sell[] = {40,"worth"};};
+	class ItemWinterDomeTent {type = "trade_items";buy[] = {40,"worth"};sell[] = {20,"worth"};};	
 	class ItemLightBulb {type = "trade_items";buy[] = {20,"worth"};sell[] = {10,"worth"};};
 	class ItemGenerator {type = "trade_items";buy[] = {600,"worth"};sell[] = {300,"worth"};};
 	class equip_brick {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
