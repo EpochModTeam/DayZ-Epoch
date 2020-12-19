@@ -395,6 +395,160 @@ class ItemLockboxWinter2: CA_Magazine
 	};
 };
 
+class ItemVaultBroken: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_SAFE_BROKEN;
+	model = "\z\addons\dayz_epoch\models\safe_onside.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_safe_ca.paa";
+	descriptionShort = $STR_EPOCH_SAFE_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_230;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "VaultStorageBroken";
+		};
+	};
+};
+
+class ItemVault2Broken: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "$STR_EPOCH_SAFE_BROKEN+";
+	model = "\z\addons\dayz_epoch\models\safe_onside.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_safe_ca.paa";
+	descriptionShort = $STR_EPOCH_SAFE_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_230;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "VaultStorageBroken2";
+		};
+	};
+};
+
+class ItemTallSafeBroken: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_SAFE_BROKEN;
+	model = "\z\addons\dayz_epoch_v\props\safe_tall\tallsafe.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\tallsafe.paa";
+	descriptionShort = $STR_EPOCH_SAFE_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_230;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "TallSafeBroken";
+		};
+	};
+};
+
+class ItemLockboxBroken: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_LOCKBOX_BROKEN;
+	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\equip_lockbox_CA.paa";
+	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_231;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "LockboxStorageBroken";
+		};
+	};
+};
+
+class ItemLockbox2Broken: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
+	model = "\z\addons\dayz_epoch\models\lockbox_mag.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\equip_lockbox_CA.paa";
+	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_231;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "LockboxStorage2Broken";
+		};
+	};
+};
+
+class ItemLockboxWinterBroken: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_LOCKBOX_BROKEN;
+	model = "\z\addons\dayz_epoch\models\lockbox_w_mag.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\equip_lockbox_w_CA.paa";
+	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_231;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "LockboxStorageWinterBroken";
+		};
+	};
+};
+
+class ItemLockboxWinter2Broken: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
+	model = "\z\addons\dayz_epoch\models\lockbox_w_mag.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\equip_lockbox_w_CA.paa";
+	descriptionShort = $STR_EPOCH_LOCKBOX_DESC;
+	
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_PLAYER_231;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "LockboxStorageWinter2Broken";
+		};
+	};
+};
+
 class StashSmall_kit: CA_Magazine
 {
 	scope = 2;

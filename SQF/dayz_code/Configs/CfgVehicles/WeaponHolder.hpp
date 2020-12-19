@@ -407,3 +407,45 @@ class WeaponHolder_ItemLockboxWinter2: WeaponHolder {
 	displayName = "$STR_EPOCH_LOCKBOX+";
 	seedItem = "ItemLockboxWinter2";
 };
+
+class WeaponHolder_ItemVaultBroken: WeaponHolder {
+	scope = 1;
+	displayName = $STR_EPOCH_SAFE_BROKEN;
+	seedItem = "ItemVaultBroken";
+};
+
+class WeaponHolder_ItemVaultBroken2: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_SAFE_BROKEN+";
+	seedItem = "ItemVaultBroken2";
+};
+
+class WeaponHolder_ItemTallSafeBroken: WeaponHolder {
+	scope = 1;
+	displayName = $STR_EPOCH_SAFE_BROKEN;
+	seedItem = "ItemTallSafeBroken";
+};
+
+class WeaponHolder_ItemLockboxBroken: WeaponHolder {
+	scope = 1;
+	displayName = $STR_EPOCH_LOCKBOX_BROKEN;
+	seedItem = "ItemLockboxBroken";
+};
+
+class WeaponHolder_ItemLockbox2Broken: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
+	seedItem = "ItemLockbox2Broken";
+};
+
+class WeaponHolder_ItemLockboxWinterBroken: WeaponHolder {
+	scope = 1;
+	displayName = $STR_EPOCH_LOCKBOX_BROKEN;
+	seedItem = "ItemLockboxWinterBroken";
+};
+
+class WeaponHolder_ItemLockboxWinter2Broken: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
+	seedItem = "ItemLockboxWinter2Broken";
+};

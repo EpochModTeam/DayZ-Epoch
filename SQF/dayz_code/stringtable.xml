@@ -25055,6 +25055,14 @@
 			<English>Safe +</English>
 			<German>Tresor +</German>
 			<Russian>Сейф +</Russian>
+		</Key>	
+		<Key ID="STR_EPOCH_SAFE_BROKEN">
+			<English>Broken Safe</English>
+			<German>Aufgebrochener Tresor</German>
+		</Key>
+		<Key ID="STR_EPOCH_SAFE_BROKEN+">
+			<English>Broken Safe +</English>
+			<German>Aufgebrochener Tresor +</German>
 		</Key>		
 		<Key ID="STR_EPOCH_SAFE_DESC">
 			<English>A placeable object that is used for very secure storage. Placing your safe will give you a 4 digit number that is used to open the safe.</English>
@@ -26110,6 +26118,10 @@
 			<German>Schließkassette</German>
 			<Russian>Запираемый ящик</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_LOCKBOX_BROKEN">
+			<English>Broken Lockbox</English>
+			<German>Aufgebrochene Schließkassette</German>
+		</Key>		
 		<Key ID="STR_EPOCH_LOCKBOX_LOCKED">
 			<English>Locked Lockbox</English>
 			<German>Schließkassette</German>
@@ -26120,6 +26132,10 @@
 			<German>Schließkassette +</German>
 			<Russian>Запираемый ящик +</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_LOCKBOX_BROKEN+">
+			<English>Broken Lockbox +</English>
+			<German>Aufgebrochene Schließkassette +</German>
+		</Key>		
 		<Key ID="STR_EPOCH_LOCKBOX_LOCKED+">
 			<English>Locked Lockbox +</English>
 			<German>Schließkassette +</German>
