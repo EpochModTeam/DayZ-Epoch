@@ -20,7 +20,7 @@ weaponsRU[] =
 	{Loot_WEAPON,		4,		SVU_PSO1_DZ},
 	{Loot_WEAPON,		1,		SVD_Gold_DZ},
 	{Loot_WEAPON,		4,		SVD_DZ},
-	{Loot_WEAPON,		4,		VSS_vintorez_DZE},
+	{Loot_WEAPON,		1,		VSS_vintorez_DZE},
 	{Loot_WEAPON,		4,		Groza9_Sniper_DZ},
 	{Loot_WEAPON,		1,		Groza9_Sniper_SD_DZ},
 	{Loot_WEAPON,		4,		Groza1_Sniper_DZ},
@@ -141,8 +141,8 @@ weaponsEU[] =
 	// Sniper Rifles
 	{Loot_WEAPON,		1,		L115A3_DZ}, // Tan Lapua
 	{Loot_WEAPON,		1,		L115A3_2_DZ}, // Green Lapua
-	{Loot_WEAPON,		4,		MK17_Sniper_SD_DZ},
-	{Loot_WEAPON,		4,		MK17_Sniper_DZ},	
+	{Loot_WEAPON,		2,		MK17_Sniper_SD_DZ},
+	{Loot_WEAPON,		2,		MK17_Sniper_DZ},	
 	{Loot_WEAPON,		2,		HK417_Sniper_SD_DZ},
 	{Loot_WEAPON,		2,		HK417_Sniper_DZ},
 	{Loot_WEAPON,		1,		RSASS_DZ},		

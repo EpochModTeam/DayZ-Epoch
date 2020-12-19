@@ -151,6 +151,7 @@ class Category_3 {
 	class MK43_M145_DZ {type = "trade_weapons";buy[] = {5000,"worth"};sell[] = {2000,"worth"};};
 	class m240_scoped_EP1_DZE {type = "trade_weapons";buy[] = {5000,"worth"};sell[] = {2000,"worth"};};
 	class Pecheneg_DZ {type = "trade_weapons";buy[] = {5000,"worth"};sell[] = {2000,"worth"};};
+	class VSS_vintorez_DZE {type = "trade_weapons";buy[] = {10000,"worth"};sell[] = {5000,"worth"};};
 	class WA2000_DZ {type = "trade_weapons";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};	
 	class MK17_Sniper_DZ {type = "trade_weapons";buy[] = {6000,"worth"};sell[] = {3000,"worth"};};
 	class MK17_Sniper_SD_DZ {type = "trade_weapons";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};

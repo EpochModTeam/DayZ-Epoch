@@ -643,8 +643,7 @@ class Category_17 {
 	// desert camo
 	class M24_des_EP1 {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	class M40A3_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
-	class M40A3_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {7,"ItemGoldBar"};};
-	class VSS_vintorez_DZE {type = "trade_weapons";buy[] = {3,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar"};};
+	class M40A3_Gh_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar10oz"};sell[] = {7,"ItemGoldBar"};};	
 	// iron sights
 	class SVD_DZ {type = "trade_weapons";buy[] = {1,"ItemGoldBar10oz"};sell[] = {6,"ItemGoldBar"};};
 	// iron sights and ghillie

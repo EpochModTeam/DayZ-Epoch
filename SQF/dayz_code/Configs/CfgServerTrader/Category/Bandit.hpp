@@ -150,10 +150,11 @@ class Category_8 {
 	class M249_m145_EP1_DZE {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class MK43_M145_DZ {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class m240_scoped_EP1_DZE {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
-	class Pecheneg_DZ {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};	
+	class Pecheneg_DZ {type = "trade_weapons";buy[] = {5,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
+	class VSS_vintorez_DZE {type = "trade_weapons";buy[] = {1,"ItemBriefcase100oz"};sell[] = {5,"ItemGoldBar10oz"};};		
 	class WA2000_DZ {type = "trade_weapons";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};	
 	class MK17_Sniper_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
-	class MK17_Sniper_SD_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class MK17_Sniper_SD_DZ {type = "trade_weapons";buy[] = {-8,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
 	class M110_NV_DZ {type = "trade_weapons";buy[] = {7,"ItemGoldBar10oz"};sell[] = {4,"ItemGoldBar10oz"};};
 	class RSASS_DZ {type = "trade_weapons";buy[] = {6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 	class RSASS_SD_DZ {type = "trade_weapons";buy[] = {-6,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};	
