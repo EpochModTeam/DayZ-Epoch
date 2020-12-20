@@ -207,7 +207,7 @@ class ItemORP: CA_Magazine
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_ORP;
 	model = "\z\addons\dayz_epoch\models\doc_Up1.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup1_ca.paa";
+	picture = "\dayz_epoch_c\icons\documents\car_offroad.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_ORP_DESC;
 	sfx = "document";
 	
@@ -228,7 +228,7 @@ class ItemAVE: CA_Magazine
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_AVE;
 	model = "\z\addons\dayz_epoch\models\doc_Up2.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup2_ca.paa";
+	picture = "\dayz_epoch_c\icons\documents\car_armor.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_AVE_DESC;
 	sfx = "document";
 	
@@ -249,7 +249,7 @@ class ItemLRK: CA_Magazine
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_LRK;
 	model = "\z\addons\dayz_epoch\models\doc_Up3.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup3_ca.paa";
+	picture = "\dayz_epoch_c\icons\documents\car_cargo.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_LRK_DESC;
 	sfx = "document";
 	
@@ -270,7 +270,7 @@ class ItemTNK: CA_Magazine
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_TNK;
 	model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
+	picture = "\dayz_epoch_c\icons\documents\car_fuel.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_TNK_DESC;
 	sfx = "document";
 	
@@ -290,8 +290,8 @@ class ItemARM: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_ARM;
-	model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_car_weps.p3d";
+	picture = "\dayz_epoch_c\icons\documents\car_weapon.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_ARM_DESC;
 	sfx = "document";
 	
@@ -312,8 +312,8 @@ class ItemTruckORP: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_ORP_TRUCK;
-	model = "\z\addons\dayz_epoch\models\doc_Up1.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup1_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_truck1.p3d";
+	picture = "\dayz_epoch_c\icons\documents\truck_offroad.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_ORP_TRUCK_DESC;
 	sfx = "document";
 	
@@ -333,8 +333,8 @@ class ItemTruckAVE: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_AVE_TRUCK;
-	model = "\z\addons\dayz_epoch\models\doc_Up2.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup2_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_truck2.p3d";
+	picture = "\dayz_epoch_c\icons\documents\truck_armor.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_AVE_TRUCK_DESC;
 	sfx = "document";
 	
@@ -354,8 +354,8 @@ class ItemTruckLRK: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_LRK_TRUCK;
-	model = "\z\addons\dayz_epoch\models\doc_Up3.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup3_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_truck3.p3d";
+	picture = "\dayz_epoch_c\icons\documents\truck_cargo.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_LRK_TRUCK_DESC;
 	sfx = "document";
 	
@@ -375,8 +375,8 @@ class ItemTruckTNK: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_TNK_TRUCK;
-	model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_truck4.p3d";
+	picture = "\dayz_epoch_c\icons\documents\truck_fuel.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_TNK_TRUCK_DESC;
 	sfx = "document";
 	
@@ -396,8 +396,8 @@ class ItemTruckARM: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_ARM_TRUCK;
-	model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_truck_weps.p3d";
+	picture = "\dayz_epoch_c\icons\documents\truck_weapon.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_ARM_TRUCK_DESC;
 	sfx = "document";
 	
@@ -417,8 +417,8 @@ class ItemTankORP: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_ORP_TANK;
-	model = "\z\addons\dayz_epoch\models\doc_Up1.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup1_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_bmp1.p3d";
+	picture = "\dayz_epoch_c\icons\documents\bmp_offroad.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_ORP_TANK_DESC;
 	sfx = "document";
 	
@@ -438,8 +438,8 @@ class ItemTankAVE: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_AVE_TANK;
-	model = "\z\addons\dayz_epoch\models\doc_Up2.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup2_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_bmp2.p3d";
+	picture = "\dayz_epoch_c\icons\documents\bmp_armor.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_AVE_TANK_DESC;
 	sfx = "document";
 	
@@ -459,8 +459,8 @@ class ItemTankLRK: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_LRK_TANK;
-	model = "\z\addons\dayz_epoch\models\doc_Up3.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup3_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_bmp3.p3d";
+	picture = "\dayz_epoch_c\icons\documents\bmp_cargo.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_LRK_TANK_DESC;
 	sfx = "document";
 	
@@ -480,8 +480,8 @@ class ItemTankTNK: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_TNK_TANK;
-	model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_bmp4.p3d";
+	picture = "\dayz_epoch_c\icons\documents\bmp_fuel.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_TNK_TANK_DESC;
 	sfx = "document";
 	
@@ -501,8 +501,8 @@ class ItemHeliAVE: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_AVE_HELI;
-	model = "\z\addons\dayz_epoch\models\doc_Up2.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup2_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_heli1.p3d";
+	picture = "\dayz_epoch_c\icons\documents\heli_armor.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_AVE_HELI_DESC;
 	sfx = "document";
 	
@@ -522,8 +522,8 @@ class ItemHeliLRK: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_LRK_HELI;
-	model = "\z\addons\dayz_epoch\models\doc_Up3.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup3_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_heli2.p3d";
+	picture = "\dayz_epoch_c\icons\documents\heli_cargo.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_LRK_HELI_DESC;
 	sfx = "document";
 	
@@ -543,8 +543,8 @@ class ItemHeliTNK: CA_Magazine
 	count = 1;
 	type = 256;
 	displayName = $STR_EPOCH_VEHUP_TNK_HELI;
-	model = "\z\addons\dayz_epoch\models\doc_Up4.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_docup4_ca.paa";
+	model = "\z\addons\dayz_epoch\models\doc_Up_heli3.p3d";
+	picture = "\dayz_epoch_c\icons\documents\heli_fuel.paa";
 	descriptionShort = $STR_EPOCH_VEHUP_TNK_HELI_DESC;
 	sfx = "document";
 	
