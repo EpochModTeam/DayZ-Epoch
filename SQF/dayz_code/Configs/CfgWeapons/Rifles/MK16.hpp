@@ -323,7 +323,9 @@ class MK16_CCO_SD_DZ : MK16_DZ
 	magazines[] =
 	{
 		30Rnd_556x45_StanagSD,
-		30Rnd_556x45_G36SD		
+		30Rnd_556x45_G36SD,
+		60Rnd_556x45_StanagSD_Taped,
+		100Rnd_556x45_BetaCMagSD		
 	};	
 	
 	class Attachments

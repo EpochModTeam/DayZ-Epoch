@@ -68,7 +68,8 @@ class G36C_SD_DZ : G36_C_SD_eotech
 	{
 		30Rnd_556x45_G36SD,
 		30Rnd_556x45_StanagSD,
-		60Rnd_556x45_StanagSD_Taped
+		60Rnd_556x45_StanagSD_Taped,
+		100Rnd_556x45_BetaCMagSD
 	};
 	
 	class Attachments
@@ -248,7 +249,8 @@ class G36C_Camo_Holo_SD_DZ : G36_C_SD_camo
 	{
 		30Rnd_556x45_G36SD,
 		30Rnd_556x45_StanagSD,
-		60Rnd_556x45_StanagSD_Taped
+		60Rnd_556x45_StanagSD_Taped,
+		100Rnd_556x45_BetaCMagSD
 	};	
 };
 

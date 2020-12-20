@@ -410,7 +410,9 @@ class XM8_SD_DZ: XM8_DZ {
 	magazines[] =
 	{	
 		30Rnd_556x45_G36SD,
-		30Rnd_556x45_StanagSD
+		30Rnd_556x45_StanagSD,
+		60Rnd_556x45_StanagSD_Taped,
+		100Rnd_556x45_BetaCMagSD
 	};	
 
 	class FlashLight

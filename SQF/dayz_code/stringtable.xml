@@ -18193,6 +18193,21 @@
 			<Polish>Kaliber: 5.56x45mm &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21, Steyr Aug</Polish>
 			<Hungarian>Kaliber: 5.56x45mm &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36, MG36, M16, M4, M249, MK-12, XM8, Famas, HK416, L85, L86, MK16, PDR, Masada, L110, HK53, CZ805, CTAR21, Steyr Aug</Hungarian>
         </Key>
+			<Key ID="STR_DZ_MAG_100RND_556x45_BetaCMagSD_NAME">
+			<English>100Rnd. Beta C-Mag SD</English>
+			<Russian>100п. Beta C-Mag SD</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_100RND_BetaCMagSD_DESC">
+			<German>Kaliber: 5.56x45mm SD &lt;br/&gt;Patronen: 100 &lt;br/&gt;Verwendet in: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</German>
+			<English>Caliber: 5.56x45mm SD &lt;br/&gt;Rounds: 100 &lt;br/&gt;Used in: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</English>
+			<Italian>Calibro: 5.56x45mm SD &lt;br/&gt;Munizioni: 100 &lt;br/&gt;Si usa in: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Italian>
+			<Spanish>Calibre: 5.56x45mm SD &lt;br/&gt;Cargas: 100 &lt;br/&gt;Uso: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Spanish>
+			<French>Calibre: 5.56x45mm SD &lt;br/&gt;Munitions: 100 &lt;br/&gt;Utilisé avec: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</French>
+			<Czech>Kalibr: 5.56x45mm SD &lt;br/&gt;Nábojů: 100 &lt;br/&gt;Pro: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Czech>
+			<Russian>Патрон: 5.56x45мм SD &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Russian>
+			<Polish>Kaliber: 5.56x45mm SD &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Polish>
+			<Hungarian>Kaliber: 5.56x45mm SD &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Hungarian>
+        </Key>	
 		<Key ID="STR_DZ_MAG_20RND_MK17_DESC">
 			<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK17, M110, CZ 805B</English>
 			<French>Calibre: 7.62x51mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: MK17, M110, CZ 805B</French>

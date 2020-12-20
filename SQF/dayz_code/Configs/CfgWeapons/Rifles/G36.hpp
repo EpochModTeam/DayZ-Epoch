@@ -90,7 +90,8 @@ class G36K_Camo_SD_DZ : G36_C_SD_eotech
 	{
 		30Rnd_556x45_G36SD,
 		30Rnd_556x45_StanagSD,
-		60Rnd_556x45_StanagSD_Taped
+		60Rnd_556x45_StanagSD_Taped,
+		100Rnd_556x45_BetaCMagSD
 	};
 	
 	//G36 Optic

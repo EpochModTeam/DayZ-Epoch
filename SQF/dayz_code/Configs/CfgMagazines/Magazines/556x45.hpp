@@ -41,14 +41,20 @@ class 100Rnd_556x45_BetaCMag: CA_Magazine {
 	};
 };
 
+class 100Rnd_556x45_BetaCMagSD: 100Rnd_556x45_BetaCMag {
+	displayName = $STR_DZ_MAG_100RND_556x45_BetaCMagSD_NAME;
+	descriptionShort = $STR_DZ_MAG_100RND_BetaCMagSD_DESC;
+	cartridgeName = "556x45_SD";
+	ammo = "B_556x45_SD";
+	initSpeed = 360;
+};
 /* STANAG <-> G36 */
 
 class 20Rnd_556x45_Stanag; 
 class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag
 {
 	displayName = $STR_DZ_MAG_30RND_556x45_STANAG_NAME;
-	descriptionShort = $STR_DZE_MAG_30RND_556x45_STANAG_DESC;
-	
+	descriptionShort = $STR_DZE_MAG_30RND_556x45_STANAG_DESC;	
 	cartridgeName = "556x45";
 	
 	class ItemActions
@@ -162,8 +168,7 @@ class 60Rnd_556x45_Stanag_Taped : 30Rnd_556x45_Stanag {
 	
 	class ItemActions
 	{
-		COMBINE_MAG
-		
+		COMBINE_MAG		
 		delete ReloadMag;
 	};	
 };
@@ -177,8 +182,7 @@ class 60Rnd_556x45_StanagSD_Taped : 30Rnd_556x45_StanagSD {
 	
 	class ItemActions
 	{
-		COMBINE_MAG
-		
+		COMBINE_MAG		
 		delete ReloadMag;
 	};	
 };
