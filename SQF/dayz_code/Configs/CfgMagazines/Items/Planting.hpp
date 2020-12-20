@@ -27,7 +27,7 @@ class ItemHempSeed: CA_Magazine
 	displayName = $STR_CRAFT_NAME_HEMP_SEED;
 	descriptionShort = $STR_CRAFT_DESC_HEMP_SEED;
 	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
-	picture = "\z\addons\dayz_epoch\pictures\equip_child2_ca.paa";
+	picture = "\dayz_epoch_c\icons\plants\hempseeds.paa";
 	type = 256;
 	
 	class ItemActions
@@ -117,7 +117,7 @@ class ItemTobaccoLeafs : CA_Magazine
 	displayName = $STR_EPOCH_TOBACCO_LEAF;
 	descriptionShort = $STR_EPOCH_TOBACCO_LEAF_DESC;
 	model = "\z\addons\dayz_communityassets\models\comfrey.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_comfrey_CA.paa";
+	picture = "\dayz_epoch_c\icons\plants\tobaccoleaf.paa";
 	type = 256;
 };
 
