@@ -370,9 +370,139 @@ class Office_Chair_DZ: BuiltItems
 	model = "\z\addons\dayz_epoch_v\base_building\storage\office_chair";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;	
-	displayName = "office chair";
+	displayName = $STR_EPOCH_CHAIR;
 	constructioncount = 1;
 	offset[] = {0,2,1};
 	removeoutput[] = {{"office_chair_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };	
+
+class Land_MBG_Garage_Single_D;
+class Garage_Green_DZ: Land_MBG_Garage_Single_D
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_GARAGE_GREEN;
+	constructioncount = 3;
+	offset[] = {0,6,2};
+	removeoutput[] = {{"garage_green_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class Land_MBG_Garage_Single_A;
+class Garage_White_DZ: Land_MBG_Garage_Single_A
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_GARAGE_WHITE;
+	constructioncount = 3;
+	offset[] = {0,6,2};
+	removeoutput[] = {{"garage_white_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class Land_MBG_Garage_Single_B;
+class Garage_Brown_DZ: Land_MBG_Garage_Single_B
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_GARAGE_BROWN;
+	constructioncount = 3;
+	offset[] = {0,6,2};
+	removeoutput[] = {{"garage_brown_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class Land_MBG_Garage_Single_C;
+class Garage_Grey_DZ: Land_MBG_Garage_Single_C
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_GARAGE_GREY;
+	constructioncount = 3;
+	offset[] = {0,6,2};
+	removeoutput[] = {{"garage_grey_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class HeliHCivil;
+class Helipad_Civil_DZ: HeliHCivil
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_HELIPAD_CIVIL;
+	constructioncount = 1;
+	offset[] = {0,4,0};
+	removeoutput[] = {{"helipad_civil_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class HeliHRescue;
+class Helipad_Rescue_DZ: HeliHRescue
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_HELIPAD_RESCUE;
+	constructioncount = 1;
+	offset[] = {0,4,0};
+	removeoutput[] = {{"helipad_rescue_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class MAP_Heli_H_army;
+class Helipad_Army_DZ: MAP_Heli_H_army
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_HELIPAD_ARMY;
+	constructioncount = 1;
+	offset[] = {0,4,0};
+	removeoutput[] = {{"helipad_army_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class MAP_Heli_H_cross;
+class Helipad_Cross_DZ: MAP_Heli_H_cross
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_HELIPAD_CROSS;
+	constructioncount = 1;
+	offset[] = {0,4,0};
+	removeoutput[] = {{"helipad_cross_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class Sr_border;
+class Helipad_ParkBorder_DZ: Sr_border
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_HELIPAD_PARKBORDER;
+	constructioncount = 1;
+	offset[] = {0,4,0};
+	removeoutput[] = {{"helipad_parkborder_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class Loudspeaker;
+class CCTV_DZ: Loudspeaker
+{
+	scope = 2;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	displayName = $STR_EPOCH_CCTV;
+	constructioncount = 2;
+	offset[] = {0,4,0};
+	removeoutput[] = {{"cctv_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};

@@ -31478,7 +31478,95 @@
 		<Key ID="STR_EPOCH_TABLE_DESC">
 			<English>Table</English>
 			<German>Tisch</German>
-		</Key>			
+		</Key>	
+		<Key ID="STR_EPOCH_CHAIR">
+			<English>Wood Chair</English>
+			<German>Holzhtuhl</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CHAIR_DESC">
+			<English>Wood Chair</English>
+			<German>Holzhtuhl</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GARAGE_GREEN">
+			<English>Garage (green)</English>
+			<German>Garage (grün)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GARAGE_GREEN_DESC">
+			<English>Garage (green)</English>
+			<German>Garage (grün)</German>
+		</Key>
+		<Key ID="STR_EPOCH_GARAGE_WHITE">
+			<English>Garage (white)</English>
+			<German>Garage (weiß)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GARAGE_WHITE_DESC">
+			<English>Garage (white)</English>
+			<German>Garage (weiß)</German>
+		</Key>
+		<Key ID="STR_EPOCH_GARAGE_BROWN">
+			<English>Garage (brown)</English>
+			<German>Garage (braun)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GARAGE_BROWN_DESC">
+			<English>Garage (brown)</English>
+			<German>Garage (braun)</German>
+		</Key>
+		<Key ID="STR_EPOCH_GARAGE_GREY">
+			<English>Garage (grey)</English>
+			<German>Garage (grau)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GARAGE_GREY_DESC">
+			<English>Garage (grey)</English>
+			<German>Garage (grau)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_HELIPAD_CIVIL">
+			<English>Helipad (Civil)</English>
+			<German>Helipad (Zivil)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_HELIPAD_CIVIL_DESC">
+			<English>Helipad (Civil)</English>
+			<German>Helipad (Zivil)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_HELIPAD_RESCUE">
+			<English>Helipad (Rescue)</English>
+			<German>Helipad (Hilfe)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_HELIPAD_RESCUE_DESC">
+			<English>Helipad (Rescue)</English>
+			<German>Helipad (Hilfe)</German>
+		</Key>
+		<Key ID="STR_EPOCH_HELIPAD_ARMY">
+			<English>Helipad (Army)</English>
+			<German>Helipad (Militär)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_HELIPAD_ARMY_DESC">
+			<English>Helipad (Army)</English>
+			<German>Helipad (Militär)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_HELIPAD_CROSS">
+			<English>Helipad (Cross)</English>
+			<German>Helipad (Kreuz)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_HELIPAD_CROSS_DESC">
+			<English>Helipad (Cross)</English>
+			<German>Helipad (Kreuz)</German>
+		</Key>
+		<Key ID="STR_EPOCH_HELIPAD_PARKBORDER">
+			<English>Helipad (Park Border)</English>
+			<German>Helipad (Parkbegrenzung)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_HELIPAD_PARKBORDER_DESC">
+			<English>Helipad (Park Border)</English>
+			<German>Helipad (Parkbegrenzung)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CCTV">
+			<English>CCTV</English>
+			<German>Überwachungskamera</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CCTV_DESC">
+			<English>CCTV</English>
+			<German>Überwachungskamera</German>
+		</Key>		
 		<Key ID="STR_EPOCH_BROKEN_FUELTANK">
 			<English>Broken Fueltank Parts</English>
 			<German>Kaputte Treibstofftankteile</German>
