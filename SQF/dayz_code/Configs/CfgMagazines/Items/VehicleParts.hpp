@@ -104,5 +104,101 @@ class PartGlass : CA_Magazine
 		};
 	};	
 };
+
+class PartFueltankBroken : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;	
+	model = "\dayz_equip\models\fueltank.p3d";
+	picture = "\dayz_epoch_c\icons\vehicleparts\equip_fueltank_broken_ca";
+	displayName = $STR_EPOCH_BROKEN_FUELTANK;
+	descriptionShort = $STR_EPOCH_BROKEN_FUELTANK_DESC;
+	
+	class ItemActions 
+	{
+		class Crafting 
+		{
+			text = $STR_EPOCH_PLAYER_212;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"PartGeneric",1}};
+			input[] = {{"PartFueltankBroken",1}};
+		};
+	};
+};
+	
+class PartWheelBroken : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;	
+	model = "\dayz_equip\models\wheel.p3d";
+	picture = "\dayz_epoch_c\icons\vehicleparts\equip_wheel_broken_ca.paa";
+	displayName = $STR_EPOCH_BROKEN_CARWHEEL;
+	descriptionShort = $STR_EPOCH_BROKEN_CARWHEEL_DESC;
+};
+
+class PartEngineBroken : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;	
+	model = "\dayz_equip\models\engine.p3d";
+	picture = "\dayz_epoch_c\icons\vehicleparts\equip_engine_broken_ca.paa";
+	displayName = $STR_EPOCH_BROKEN_ENGINEPARTS;
+	descriptionShort = $STR_EPOCH_BROKEN_ENGINEPARTS_DESC;
+	
+	class ItemActions 
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_212;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"PartGeneric",2}};
+			input[] = {{"PartEngineBroken",1}};
+		};
+	};
+};
+
+class PartVRotorBroken : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;	
+	model = "\dayz_equip\models\vrotor.p3d";
+	picture = "\dayz_epoch_c\icons\vehicleparts\equip_vrotor_broken_ca.paa";
+	displayName = $STR_EPOCH_BROKEN_ROTOR;
+	descriptionShort = $STR_EPOCH_BROKEN_ROTOR_DESC;
+	
+	class ItemActions 
+	{
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_212;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar"};
+			output[] = {{"PartGeneric",3}};
+			input[] = {{"PartVRotorBroken",1}};
+		};
+	};
+};
+
+class PartGlassBroken : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;	
+	model = "\dayz_equip\models\carglass.p3d";
+	picture = "\dayz_epoch_c\icons\vehicleparts\equip_carglass_broken_CA.paa";
+	displayName = $STR_EPOCH_BROKEN_GLASS;
+	descriptionShort = $STR_EPOCH_BROKEN_GLASS_DESC;	
+};
+
+
 	
 // PartGeneric can be found under Items\Metal.hpp

@@ -25218,8 +25218,8 @@
 			<Russian>Мешок с удобрениями. Используется для улучшения роста растений.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PUMPKIN_SEED">
-			<English>Pumpkin Seed</English>
-			<German>Kürbissamen</German>
+			<English>Bag of Pumpkin Seeds</English>
+			<German>Säckchen Kürbissamen</German>
 			<Russian>Тыквенное семечко</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PUMPKIN_SEED">
@@ -25238,13 +25238,13 @@
 			<Russian>Полностью возделанная тыквенная грядка.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_HEMP_SEED">
-			<English>Hemp Seed</English>
-			<German>Hanfsamen</German>
+			<English>Bag of Hemp Seeds</English>
+			<German>Säckchen Hanfsamen</German>
 			<Russian>Конопляное семечко</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HEMP_SEED">
-			<English>A single hemp seed.</English>
-			<German>Ein einzelner Hanfsamen.</German>
+			<English>A few hemp seed.</English>
+			<German>Ein paar Hanfsamen.</German>
 			<Russian>Одно конопляное семечко пригодное для посева.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
@@ -31464,6 +31464,46 @@
 			<English>Table</English>
 			<German>Tisch</German>
 		</Key>			
+		<Key ID="STR_EPOCH_BROKEN_FUELTANK">
+			<English>Broken Fueltank Parts</English>
+			<German>Kaputte Treibstofftankteile</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_FUELTANK_DESC">
+			<English>Broken Fueltank Parts that must be repaired.</English>
+			<German>Kaputte Treibstofftankteile, welche repariert werden müssen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_CARWHEEL">
+			<English>Broken Car Wheel</English>
+			<German>Kaputter Reifen</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_CARWHEEL_DESC">
+			<English>Broken Car Wheel that must be repaired.</English>
+			<German>Kaputter Reifen, welcher repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_ENGINEPARTS">
+			<English>Broken Engine Parts</English>
+			<German>Kaputte Motorteile</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_ENGINEPARTS_DESC">
+			<English>Broken Engine Parts that must be repaired.</English>
+			<German>Kaputte Motorteile, welche repariert werden müssen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_GLASS">
+			<English>Broken Windscreen Glass</English>
+			<German>Kaputtes Autoglas</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_GLASS_DESC">
+			<English>Broken Windscreen Glass that must be repaired.</English>
+			<German>Kaputtes Autoglas, welches repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_ROTOR">
+			<English>Broken Main Rotor Assembly</English>
+			<German>Kaputtes Hauptrotorteile</German>
+		</Key>
+		<Key ID="STR_EPOCH_BROKEN_ROTOR_DESC">
+			<English>Broken Main Rotor Assembly that must be repaired.</English>
+			<German>Kaputte Hauptrotorteile, welche repariert werden müssen.</German>
+		</Key>
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
