@@ -9,30 +9,6 @@ class ItemFertilizer: CA_Magazine
 	type = 256;
 };
 
-class ItemPumpkinSeed: CA_Magazine 
-{
-	scope = 2;
-	count = 1;
-	displayName = $STR_CRAFT_NAME_PUMPKIN_SEED;
-	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_SEED;
-	model = "\z\addons\dayz_epoch\models\doc_child1.p3d";	// TODO: model + icon
-	picture = "\z\addons\dayz_epoch\pictures\equip_child1_ca.paa";
-	type = 256;
-	
-	class ItemActions 
-	{
-		class Crafting
-		{
-			text = $STR_CRAFT_PUMPKIN_PLANT;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {""};
-			requiretools[] = {"ItemKnife"};
-			output[] = {{"ItemPumpkinPlant",1},{"ItemWaterbottleUnfilled",1}};
-			input[] = {{"ItemPumpkinSeed",1},{"ItemFertilizer",1},{"ItemWaterbottle",1}};
-		};
-	};
-};
-
 class ItemPumpkinPlant: CA_Magazine 
 {
 	scope = 2;

@@ -25223,8 +25223,8 @@
 			<Russian>Тыквенное семечко</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PUMPKIN_SEED">
-			<English>A single pumpkin seed.</English>
-			<German>Ein einzelner Kürbissamen.</German>
+			<English>A few pumpkin seeds.</English>
+			<German>Ein paar Kürbissamen.</German>
 			<Russian>Одно тыквенное семечко пригодное для посева.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PUMPKIN_PLANT">

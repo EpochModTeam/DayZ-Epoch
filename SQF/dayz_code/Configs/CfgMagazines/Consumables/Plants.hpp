@@ -39,6 +39,18 @@ class FoodPumpkin : FoodEdible
 	};
 };
 
+class ItemPumpkinSeed: FoodEdible  
+{
+	scope = 2;
+	count = 1;
+	bloodRegen = 100;
+	displayName = $STR_CRAFT_NAME_PUMPKIN_SEED;
+	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_SEED;
+	model = "z\addons\dayz_communityassets\models\pistachio.p3d";
+	picture = "\dayz_epoch_c\icons\vegatables\pumpkinseeds.paa";
+	type = 256;
+};
+
 class FoodSunFlowerSeed : FoodEdible 
 {
 	scope = 2;
@@ -46,9 +58,8 @@ class FoodSunFlowerSeed : FoodEdible
 	bloodRegen = 100;
 	displayName = $STR_FOOD_NAME_SUNFLOWER;
 	descriptionShort = $STR_FOOD_NAME_SUNFLOWER;
-	weight = 0.1;
-	model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
-	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";	
+	model = "z\addons\dayz_communityassets\models\pistachio.p3d";
+	picture = "\dayz_epoch_c\icons\vegatables\sunflowerseeds.paa";	
 };
 
 class FoodPotatoRaw : FoodRaw 
@@ -57,9 +68,8 @@ class FoodPotatoRaw : FoodRaw
 	count = 1;
 	displayName = $STR_FOOD_NAME_POTATO;
 	descriptionShort = $STR_FOOD_NAME_POTATO;
-	weight = 0.1;
 	model = "\z\addons\dayz_epoch_w\items\veges\dze_potato.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	picture = "\dayz_epoch_c\icons\vegatables\potato.paa";
 	bloodRegen = 0;
 	Nutrition[] = {0,0,0,0};
 	cookOutput = "FoodPotatoBaked";	
@@ -71,9 +81,8 @@ class FoodPotatoBaked : FoodCooked
 	count = 1;
 	displayName = $STR_FOOD_NAME_POTATO_BAKED;
 	descriptionShort = $STR_FOOD_NAME_POTATO_BAKED;
-	weight = 0.1;
 	model = "\z\addons\dayz_epoch_w\items\veges\dze_potato.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	picture = "\dayz_epoch_c\icons\vegatables\potatobaked.paa";
 	bloodRegen = 200;
 	Nutrition[] = {250,0,0,0};
 };
@@ -84,9 +93,8 @@ class FoodCarrot : FoodCooked
 	count = 1;
 	displayName = $STR_FOOD_NAME_CARROT;
 	descriptionShort = $STR_FOOD_NAME_CARROT;
-	weight = 0.1;
 	model = "\z\addons\dayz_epoch_w\items\veges\dze_carrot.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_pistachios_CA.paa";
+	picture = "\dayz_epoch_c\icons\vegatables\carrot.paa";
 	bloodRegen = 150;
 	Nutrition[] = {120,0,0,0};	
 };
