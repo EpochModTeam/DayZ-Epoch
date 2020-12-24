@@ -928,7 +928,7 @@ class ItemWoodFloorStairs: CA_Magazine
 	};
 };
 
-class ItemTringleWoodFloor: CA_Magazine 
+class ItemTriangleWoodFloor: CA_Magazine 
 {
 	scope = 2;
 	count = 1;
@@ -993,7 +993,7 @@ class ItemWoodFloorHalf: CA_Magazine
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
-			output[] = {{"ItemTringleWoodFloor",1}};
+			output[] = {{"ItemTriangleWoodFloor",1}};
 			input[] = {{"ItemWoodFloorQuarter",1},{"ItemWoodFloorHalf",1}};
 		};		
 	};
