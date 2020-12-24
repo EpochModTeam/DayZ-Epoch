@@ -29402,7 +29402,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_DOORACCESS_SCAN">
 			<English>Eye Scan</English>
-			<German>Iris scannnen</German>
+			<German>Iris scannen</German>
 			<Russian>Сканирование глаза</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOORACCESS_MANUAL">
