@@ -29,10 +29,12 @@
 		<Key ID="str_actions_radio_on">
 			<English>Radio is turned on</English>
 			<German>Das Funkgerät wurde eingeschaltet.</German>
+			<Russian>Радио включено</Russian>
 		</Key>
 		<Key ID="str_actions_radio_off">
 			<English>Radio is turned off</English>
 			<German>Das Funkgerät wurde ausgeschaltet.</German>
+			<Russian>Радио выключено</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_LIGHTFIRE">
 			<English>Light fire</English>
@@ -4875,7 +4877,7 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.&lt;br/&gt;Pohlaví: Žena</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.&lt;br/&gt;Sexe: Féminin</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.&lt;br/&gt;Geschlecht: Weiblich</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EQUIP_NAME_CAMO">
 			<English>Camo Clothing</English>
 			<Russian>Камуфляж</Russian>
@@ -7884,7 +7886,7 @@
 		<Key ID="STR_UI_STREAMER_MODE_TOOLTIP">
 			<English>Hide server watermark and rules feed</English>
 			<German>Blendet das Server Wasserzeichen und die Regelliste aus.</German>
-			<Russian>Скрывает логотип сервера и новостную ленту</Russian>
+			<Russian>Скрывает логотип сервера и список правил</Russian>
 		</Key>
 		<Key ID="STR_UI_STATUS_ICONS">
 			<English>Status icons:</English>
@@ -8416,22 +8418,27 @@
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER">
 			<English>HMMWV (Winter)</English>
 			<German>Humvee (Winter)</German>
+			<Russian>HMMWV (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER+">
 			<English>HMMWV (Winter)+</English>
 			<German>Humvee (Winter)+</German>
+			<Russian>HMMWV (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER++">
 			<English>HMMWV (Winter)++</English>
 			<German>Humvee (Winter)++</German>
+			<Russian>HMMWV (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER+++">
 			<English>HMMWV (Winter)+++</English>
 			<German>Humvee (Winter)+++</German>
+			<Russian>HMMWV (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER++++">
 			<English>HMMWV (Winter)++++</English>
 			<German>Humvee (Winter)++++</German>
+			<Russian>HMMWV (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HUMMER">
 			<English>Hummer</English>
@@ -8501,71 +8508,76 @@
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER">
 			<English>HMMWV GPK (Winter)</English>
 			<German>Humvee GPK (Winter)</German>
+			<Russian>HMMWV GPK (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER+">
 			<English>HMMWV GPK (Winter)+</English>
 			<German>Humvee GPK (Winter)+</German>
+			<Russian>HMMWV GPK (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER++">
 			<English>HMMWV GPK (Winter)++</English>
 			<German>Humvee GPK (Winter)++</German>
+			<Russian>HMMWV GPK (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER+++">
 			<English>HMMWV GPK (Winter)+++</English>
 			<German>Humvee GPK (Winter)+++</German>
+			<Russian>HMMWV GPK (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER++++">
 			<English>HMMWV GPK (Winter)++++</English>
 			<German>Humvee GPK (Winter)++++</German>
+			<Russian>HMMWV GPK (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM">
 			<English>HMMWV DSHKM (Desert)</English>
-			<Russian>Хамви DSHKM (Пустынный)</Russian>
+			<Russian>Хамви ДШКМ (Пустынный)</Russian>
 			<German>Humvee DSHKM (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM+">
 			<English>HMMWV DSHKM (Desert)+</English>
-			<Russian>Хамви DSHKM (Пустынный)+</Russian>
+			<Russian>Хамви ДШКМ (Пустынный)+</Russian>
 			<German>Humvee DSHKM (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM++">
 			<English>HMMWV DSHKM (Desert)++</English>
-			<Russian>Хамви DSHKM (Пустынный)++</Russian>
+			<Russian>Хамви ДШКМ (Пустынный)++</Russian>
 			<German>Humvee DSHKM (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM+++">
 			<English>HMMWV DSHKM (Desert)+++</English>
-			<Russian>Хамви DSHKM (Пустынный)+++</Russian>
+			<Russian>Хамви ДШКМ (Пустынный)+++</Russian>
 			<German>Humvee DSHKM (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM++++">
 			<English>HMMWV DSHKM (Desert)++++</English>
-			<Russian>Хамви DSHKM (Пустынный)++++</Russian>
+			<Russian>Хамви ДШКМ (Пустынный)++++</Russian>
 			<German>Humvee DSHKM (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30">
 			<English>HMMWV AGS-30 (Desert)</English>
-			<Russian>Хамви AGS-30 (Пустынный)</Russian>
+			<Russian>Хамви АГС-30 (Пустынный)</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30+">
 			<English>HMMWV AGS-30 (Desert)+</English>
-			<Russian>Хамви AGS-30 (Пустынный)+</Russian>
+			<Russian>Хамви АГС-30 (Пустынный)+</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30++">
 			<English>HMMWV AGS-30 (Desert)++</English>
-			<Russian>Хамви AGS-30 (Пустынный)++</Russian>
+			<Russian>Хамви АГС-30 (Пустынный)++</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30+++">
 			<English>HMMWV AGS-30 (Desert)+++</English>
-			<Russian>Хамви AGS-30 (Пустынный)+++</Russian>
+			<Russian>Хамви АГС-30 (Пустынный)+++</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30++++">
 			<English>HMMWV AGS-30 (Desert)++++</English>
-			<Russian>Хамви AGS-30 (Пустынный)++++</Russian>
+			<Russian>Хамви АГС-30 (Пустынный)++++</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED">
@@ -8596,22 +8608,27 @@
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER">
 			<English>HMMWV M240 (Winter)</English>
 			<German>Humvee M240 (Winter)</German>
+			<Russian>HMMWV M240 (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER+">
 			<English>HMMWV M240 (Winter)+</English>
 			<German>Humvee M240 (Winter)+</German>
+			<Russian>HMMWV M240 (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER++">
 			<English>HMMWV M240 (Winter)++</English>
 			<German>Humvee M240 (Winter)++</German>
+			<Russian>HMMWV M240 (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER+++">
 			<English>HMMWV M240 (Winter)+++</English>
 			<German>Humvee M240 (Winter)+++</German>
+			<Russian>HMMWV M240 (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER++++">
 			<English>HMMWV M240 (Winter)++++</English>
 			<German>Humvee M240 (Winter)++++</German>
+			<Russian>HMMWV M240 (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_M2">
 			<English>HMMWV M2 (Woodland)</English>
@@ -8716,23 +8733,28 @@
 		<Key ID="STR_VEH_NAME_OLD_JEEP">
 			<English>Old Jeep</English>
 			<German>Alter Jeep</German>
+			<Russian>Старый джип</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OLD_JEEP+">
 			<English>Old Jeep+</English>
 			<German>Alter Jeep+</German>
+			<Russian>Старый джип+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OLD_JEEP++">
 			<English>Old Jeep++</English>
 			<German>Alter Jeep++</German>
+			<Russian>Старый джип++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OLD_JEEP+++">
 			<English>Old Jeep+++</English>
 			<German>Alter Jeep+++</German>
+			<Russian>Старый джип+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OLD_JEEP++++">
 			<English>Old Jeep++++</English>
 			<German>Alter Jeep++++</German>
-		</Key>		
+			<Russian>Старый джип++++</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TAN">
 			<English>Pick-up (tan)</English>
 			<Russian>Пикап (оранжевый)</Russian>
@@ -8927,7 +8949,8 @@
 		<Key ID="STR_VEH_NAME_TRACTOR_ARMORED">
 			<English>Armored Tractor</English>
 			<German>Gepanzerter Traktor</German>
-		</Key>		
+			<Russian>Бронированный трактор</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_IKARUS_RED">
 			<English>Bus (Red)</English>
 			<German>Bus (Rot)</German>
@@ -8946,7 +8969,8 @@
 		<Key ID="STR_VEH_NAME_IKARUS_ARMORED">
 			<English>Armored Bus</English>
 			<German>Gepanzerter Bus</German>
-		</Key>		
+			<Russian>Бронированный автобус</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ">
 			<English>Kamaz Open (Woodland)</English>
 			<Russian>Камаз открытый (Лесной камуфляж)</Russian>
@@ -9075,102 +9099,127 @@
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER">
 			<English>Kamaz Open (Winter)</English>
 			<German>Kamaz Offen (Winter)</German>
+			<Russian>Камаз открытый (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER+">
 			<English>Kamaz Open (Winter)+</English>
 			<German>Kamaz Offen (Winter)+</German>
+			<Russian>Камаз открытый (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER++">
 			<English>Kamaz Open (Winter)++</English>
 			<German>Kamaz Offen (Winter)++</German>
+			<Russian>Камаз открытый (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER+++">
 			<English>Kamaz Open (Winter)+++</English>
 			<German>Kamaz Offen (Winter)+++</German>
+			<Russian>Камаз открытый (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER++++">
 			<English>Kamaz Open (Winter)++++</English>
 			<German>Kamaz Offen (Winter)++++</German>
+			<Russian>Камаз открытый (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER">
 			<English>Kamaz (Winter)</English>
 			<German>Kamaz (Winter)</German>
+			<Russian>Камаз (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER+">
 			<English>Kamaz (Winter)+</English>
 			<German>Kamaz (Winter)+</German>
+			<Russian>Камаз (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER++">
 			<English>Kamaz (Winter)++</English>
 			<German>Kamaz (Winter)++</German>
+			<Russian>Камаз (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER+++">
 			<English>Kamaz (Winter)+++</English>
 			<German>Kamaz (Winter)+++</German>
+			<Russian>Камаз (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER++++">
 			<English>Kamaz (Winter)++++</English>
 			<German>Kamaz (Winter)++++</German>
+			<Russian>Камаз (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER">
 			<English>Kamaz Fuel (Winter)</English>
 			<German>Kamaz Treibstoff (Winter)</German>
+			<Russian>Камаз топливозаправщик (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER+">
 			<English>Kamaz Fuel (Winter)+</English>
 			<German>Kamaz Treibstoff (Winter)+</German>
+			<Russian>Камаз топливозаправщик (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER++">
 			<English>Kamaz Fuel (Winter)++</English>
 			<German>Kamaz Treibstoff (Winter)++</German>
+			<Russian>Камаз топливозаправщик (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER+++">
 			<English>Kamaz Fuel (Winter)+++</English>
 			<German>Kamaz Treibstoff (Winter)+++</German>
+			<Russian>Камаз топливозаправщик (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER++++">
 			<English>Kamaz Fuel (Winter)++++</English>
 			<German>Kamaz Treibstoff (Winter)++++</German>
+			<Russian>Камаз топливозаправщик (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER">
 			<English>Kamaz Material Transport (Winter)</English>
 			<German>Kamaz Materialtransport (Winter)</German>
+			<Russian>Камаз матобеспечения (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER+">
 			<English>Kamaz Material Transport (Winter)+</English>
 			<German>Kamaz Materialtransport (Winter)+</German>
+			<Russian>Камаз матобеспечения (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER++">
 			<English>Kamaz Material Transport (Winter)++</English>
 			<German>Kamaz Materialtransport (Winter)++</German>
+			<Russian>Камаз матобеспечения (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER+++">
 			<English>Kamaz Material Transport (Winter)+++</English>
 			<German>Kamaz Materialtransport (Winter)+++</German>
+			<Russian>Камаз матобеспечения (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER++++">
 			<English>Kamaz Material Transport (Winter)++++</English>
 			<German>Kamaz Materialtransport (Winter)++++</German>
+			<Russian>Камаз матобеспечения (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER">
 			<English>Kamaz Weapon Transport (Winter)</English>
 			<German>Kamaz Waffentransport (Winter)</German>
+			<Russian>Камаз оружейный (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER+">
 			<English>Kamaz Weapon Transport (Winter)+</English>
 			<German>Kamaz Waffentransport (Winter)+</German>
+			<Russian>Камаз оружейный (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER++">
 			<English>Kamaz Weapon Transport (Winter)++</English>
 			<German>Kamaz Waffentransport (Winter)++</German>
+			<Russian>Камаз оружейный (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER+++">
 			<English>Kamaz Weapon Transport (Winter)+++</English>
 			<German>Kamaz Waffentransport (Winter)+++</German>
+			<Russian>Камаз оружейный (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER++++">
 			<English>Kamaz Weapon Transport (Winter)++++</English>
 			<German>Kamaz Waffentransport (Winter)++++</German>
+			<Russian>Камаз оружейный (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_WHITE">
 			<English>Lada (white)</English>
@@ -9529,162 +9578,202 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ">
 			<English>BRDM-2 HQ</English>
+			<Russian>БРДМ-2 HQ</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ+">
 			<English>BRDM-2 HQ+</English>
+			<Russian>БРДМ-2 HQ+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ++">
 			<English>BRDM-2 HQ++</English>
+			<Russian>БРДМ-2 HQ++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ+++">
 			<English>BRDM-2 HQ+++</English>
+			<Russian>БРДМ-2 HQ+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ++++">
 			<English>BRDM-2 HQ++++</English>
+			<Russian>БРДМ-2 HQ++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST">
 			<English>BRDM-2 HQ (rusty)</English>
 			<German>BRDM-2 HQ (rostig)</German>
+			<Russian>БРДМ-2 HQ (Ржавый)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST+">
 			<English>BRDM-2 HQ (rusty)+</English>
 			<German>BRDM-2 HQ (rostig)+</German>
+			<Russian>БРДМ-2 HQ (Ржавый)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST++">
 			<English>BRDM-2 HQ (rusty)++</English>
 			<German>BRDM-2 HQ (rostig)++</German>
+			<Russian>БРДМ-2 HQ (Ржавый)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST+++">
 			<English>BRDM-2 HQ (rusty)+++</English>
 			<German>BRDM-2 HQ (rostig)+++</German>
+			<Russian>БРДМ-2 HQ (Ржавый)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST++++">
 			<English>BRDM-2 HQ (rusty)++++</English>
 			<German>BRDM-2 HQ (rostig)++++</German>
+			<Russian>БРДМ-2 HQ (Ржавый)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER">
 			<English>BRDM-2 HQ (Winter)</English>
+			<Russian>БРДМ-2 HQ (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER+">
 			<English>BRDM-2 HQ (Winter)+</English>
+			<Russian>БРДМ-2 HQ (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER++">
 			<English>BRDM-2 HQ (Winter)++</English>
+			<Russian>БРДМ-2 HQ (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER+++">
 			<English>BRDM-2 HQ (Winter)+++</English>
+			<Russian>БРДМ-2 HQ (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER++++">
 			<English>BRDM-2 HQ (Winter)++++</English>
+			<Russian>БРДМ-2 HQ (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_TK">
 			<English>BRDM-2 TK</English>
+			<Russian>БРДМ-2 TK</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_TK+">
 			<English>BRDM-2 TK+</English>
+			<Russian>БРДМ-2 TK+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_TK++">
 			<English>BRDM-2 TK++</English>
+			<Russian>БРДМ-2 TK++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_TK+++">
 			<English>BRDM-2 TK+++</English>
+			<Russian>БРДМ-2 TK+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_TK++++">
 			<English>BRDM-2 TK++++</English>
+			<Russian>БРДМ-2 TK++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_GUE">
 			<English>BRDM-2 GUE</English>
+			<Russian>БРДМ-2 GUE</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_GUE+">
 			<English>BRDM-2 GUE+</English>
+			<Russian>БРДМ-2 GUE+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_GUE++">
 			<English>BRDM-2 GUE++</English>
+			<Russian>БРДМ-2 GUE++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_GUE+++">
 			<English>BRDM-2 GUE+++</English>
+			<Russian>БРДМ-2 GUE+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_GUE++++">
 			<English>BRDM-2 GUE++++</English>
+			<Russian>БРДМ-2 GUE++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES">
 			<English>BRDM-2 Desert Camo</English>
 			<German>BRDM-2 Wüstentarn</German>
+			<Russian>БРДМ-2 Пустынный</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES+">
 			<English>BRDM-2 Desert Camo+</English>
 			<German>BRDM-2 Wüstentarn+</German>
+			<Russian>БРДМ-2 Пустынный+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES++">
 			<English>BRDM-2 Desert Camo++</English>
 			<German>BRDM-2 Wüstentarn++</German>
+			<Russian>БРДМ-2 Пустынный++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES+++">
 			<English>BRDM-2 Desert Camo+++</English>
 			<German>BRDM-2 Wüstentarn+++</German>
+			<Russian>БРДМ-2 Пустынный+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES++++">
 			<English>BRDM-2 Desert Camo++++</English>
 			<German>BRDM-2 Wüstentarn++++</German>
+			<Russian>БРДМ-2 Пустынный++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_RUST">
 			<English>BRDM-2 rusty</English>
 			<German>BRDM-2 rostig</German>
+			<Russian>БРДМ-2 ржавый</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_RUST+">
 			<English>BRDM-2 rusty+</English>
 			<German>BRDM-2 rostig+</German>
+			<Russian>БРДМ-2 ржавый+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_RUST++">
 			<English>BRDM-2 rusty++</English>
 			<German>BRDM-2 rostig++</German>
+			<Russian>БРДМ-2 ржавый++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_RUST+++">
 			<English>BRDM-2 rusty+++</English>
 			<German>BRDM-2 rostig+++</German>
+			<Russian>БРДМ-2 ржавый+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_RUST++++">
 			<English>BRDM-2 rusty++++</English>
 			<German>BRDM-2 rostig++++</German>
+			<Russian>БРДМ-2 ржавый++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER">
 			<English>BRDM-2 Winter</English>
+			<Russian>БРДМ-2 (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER+">
 			<English>BRDM-2 Winter+</English>
+			<Russian>БРДМ-2 (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER++">
 			<English>BRDM-2 Winter++</English>
+			<Russian>БРДМ-2 (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER+++">
 			<English>BRDM-2 Winter+++</English>
+			<Russian>БРДМ-2 (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER++++">
 			<English>BRDM-2 Winter++++</English>
+			<Russian>БРДМ-2 (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN">
 			<English>M113 UN Ambulance</English>
-			<Russian>M113 UN Скорая</Russian>
+			<Russian>M113 UN Санитарный</Russian>
 			<German>M113 UN Sanitätsfzg.</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN+">
 			<English>M113 UN Ambulance+</English>
-			<Russian>M113 UN Скорая+</Russian>
+			<Russian>M113 UN Санитарный+</Russian>
 			<German>M113 UN Sanitätsfzg.+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN++">
 			<English>M113 UN Ambulance++</English>
-			<Russian>M113 UN Скорая++</Russian>
+			<Russian>M113 UN Санитарный++</Russian>
 			<German>M113 UN Sanitätsfzg.++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN+++">
 			<English>M113 UN Ambulance+++</English>
-			<Russian>M113 UN Скорая+++</Russian>
+			<Russian>M113 UN Санитарный+++</Russian>
 			<German>M113 UN Sanitätsfzg.+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN++++">
 			<English>M113 UN Ambulance++++</English>
-			<Russian>M113 UN Скорая++++</Russian>
+			<Russian>M113 UN Санитарный++++</Russian>
 			<German>M113 UN Sanitätsfzg.++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_UN">
@@ -9704,27 +9793,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK">
 			<English>M113 TK Ambulance</English>
-			<Russian>M113 TK Скорая</Russian>
+			<Russian>M113 TK Санитарный</Russian>
 			<German>M113 TK Sanitätsfzg.</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK+">
 			<English>M113 TK Ambulance+</English>
-			<Russian>M113 TK Скорая+</Russian>
+			<Russian>M113 TK Санитарный+</Russian>
 			<German>M113 TK Sanitätsfzg.+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK++">
 			<English>M113 TK Ambulance++</English>
-			<Russian>M113 TK Скорая++</Russian>
+			<Russian>M113 TK Санитарный++</Russian>
 			<German>M113 TK Sanitätsfzg.++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK+++">
 			<English>M113 TK Ambulance+++</English>
-			<Russian>M113 TK Скорая+++</Russian>
+			<Russian>M113 TK Санитарный+++</Russian>
 			<German>M113 TK Sanitätsfzg.+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_TK++++">
 			<English>M113 TK Ambulance++++</English>
-			<Russian>M113 TK Скорая++++</Russian>
+			<Russian>M113 TK Санитарный++++</Russian>
 			<German>M113 TK Sanitätsfzg.++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_TK">
@@ -9756,135 +9845,159 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_SCRAP_APC++++">
 			<English>Scrap APC++++</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_INS">
 			<English>BMP-2 INS</English>
+			<Russian>БМП-2 INS</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_INS+">
 			<English>BMP-2 INS+</English>
+			<Russian>БМП-2 INS+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_INS++">
 			<English>BMP-2 INS++</English>
+			<Russian>БМП-2 INS++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_INS+++">
 			<English>BMP-2 INS+++</English>
+			<Russian>БМП-2 INS+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_INS++++">
 			<English>BMP-2 INS++++</English>
+			<Russian>БМП-2 INS++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_CDF">
 			<English>BMP-2 CDF</English>
+			<Russian>БМП-2 CDF</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_CDF+">
 			<English>BMP-2 CDF+</English>
+			<Russian>БМП-2 CDF+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_CDF++">
 			<English>BMP-2 CDF++</English>
+			<Russian>БМП-2 CDF++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_CDF+++">
 			<English>BMP-2 CDF+++</English>
+			<Russian>БМП-2 CDF+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_CDF++++">
 			<English>BMP-2 CDF++++</English>
+			<Russian>БМП-2 CDF++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_TK">
 			<English>BMP-2 TK</English>
+			<Russian>БМП-2 TK</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_TK+">
 			<English>BMP-2 TK+</English>
+			<Russian>БМП-2 TK+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_TK++">
 			<English>BMP-2 TK++</English>
+			<Russian>БМП-2 TK++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_TK+++">
 			<English>BMP-2 TK+++</English>
+			<Russian>БМП-2 TK+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_TK++++">
 			<English>BMP-2 TK++++</English>
+			<Russian>БМП-2 TK++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS">
 			<English>BMP-2 INS Ambulance</English>
-			<Russian>BMP-2 INS Скорая</Russian>
+			<Russian>БМП-2 INS санитарный</Russian>
 			<German>BMP-2 INS Sanitätsfzg.</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS+">
 			<English>BMP-2 INS Ambulance+</English>
-			<Russian>BMP-2 INS Скорая+</Russian>
+			<Russian>БМП-2 INS санитарный+</Russian>
 			<German>BMP-2 INS Sanitätsfzg.+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS++">
 			<English>BMP-2 INS Ambulance++</English>
-			<Russian>BMP-2 INS Скорая++</Russian>
+			<Russian>БМП-2 INS санитарный++</Russian>
 			<German>BMP-2 INS Sanitätsfzg.++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS+++">
 			<English>BMP-2 INS Ambulance+++</English>
-			<Russian>BMP-2 INS Скорая+++</Russian>
+			<Russian>БМП-2 INS санитарный+++</Russian>
 			<German>BMP-2 INS Sanitätsfzg.+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_INS++++">
 			<English>BMP-2 INS Ambulance++++</English>
-			<Russian>BMP-2 INS Скорая++++</Russian>
+			<Russian>БМП-2 INS санитарный++++</Russian>
 			<German>BMP-2 INS Sanitätsfzg.++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF">
 			<English>BMP-2 CDF Ambulance</English>
-			<Russian>BMP-2 CDF Скорая</Russian>
+			<Russian>БМП-2 CDF санитарный</Russian>
 			<German>BMP-2 CDF Sanitätsfzg.</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF+">
 			<English>BMP-2 CDF Ambulance+</English>
-			<Russian>BMP-2 CDF Скорая+</Russian>
+			<Russian>БМП-2 CDF санитарный+</Russian>
 			<German>BMP-2 CDF Sanitätsfzg.+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF++">
 			<English>BMP-2 CDF Ambulance++</English>
-			<Russian>BMP-2 CDF Скорая++</Russian>
+			<Russian>БМП-2 CDF санитарный++</Russian>
 			<German>BMP-2 CDF Sanitätsfzg.++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF+++">
 			<English>BMP-2 CDF Ambulance+++</English>
-			<Russian>BMP-2 CDF Скорая+++</Russian>
+			<Russian>БМП-2 CDF санитарный+++</Russian>
 			<German>BMP-2 CDF Sanitätsfzg.+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF++++">
 			<English>BMP-2 CDF Ambulance++++</English>
-			<Russian>BMP-2 CDF Скорая++++</Russian>
+			<Russian>БМП-2 CDF санитарный++++</Russian>
 			<German>BMP-2 CDF Sanitätsfzg.++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER">
 			<English>BMP-2 Winter Ambulance</English>
 			<German>BMP-2 Winter Sanitätsfzg.</German>
+			<Russian>БМП-2 санитарный (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER+">
 			<English>BMP-2 Winter Ambulance+</English>
 			<German>BMP-2 Winter Sanitätsfzg.+</German>
+			<Russian>БМП-2 санитарный (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER++">
 			<English>BMP-2 Winter Ambulance++</English>
 			<German>BMP-2 Winter Sanitätsfzg.++</German>
+			<Russian>БМП-2 санитарный (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER+++">
 			<English>BMP-2 Winter Ambulance+++</English>
 			<German>BMP-2 Winter Sanitätsfzg.+++</German>
+			<Russian>БМП-2 санитарный (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER++++">
 			<English>BMP-2 Winter Ambulance++++</English>
 			<German>BMP-2 Winter Sanitätsfzg.++++</German>
+			<Russian>БМП-2 санитарный (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_RUST">
 			<English>BMP-2 (rusty)</English>
 			<German>BMP-2 (rostig)</German>
+			<Russian>БМП-2 (ржавый)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_WINTER">
 			<English>BMP-2 (Winter)</English>
+			<Russian>БМП-2 (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_T72_RUST">
 			<English>T-72 (rusty)</English>
 			<German>T-72 (rostig)</German>
+			<Russian>Т-72 (ржавый)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_T72_WINTER">
 			<English>T-72 (Winter)</English>
+			<Russian>Т-72 (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND">
 			<English>MTVR (Woodland)</English>
@@ -9987,54 +10100,54 @@
 			<German>MTVR Treibstoff (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO">
-			<English>MVTR Material Transport (Woodland)</English>
-			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)</Russian>
-			<German>MVTR Materialtransport (Waldtarn)</German>
+			<English>MTVR Material Transport (Woodland)</English>
+			<Russian>MTVR матобеспечения (Лесной камуфляж)</Russian>
+			<German>MTVR Materialtransport (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO+">
-			<English>MVTR Material Transport (Woodland)+</English>
-			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)+</Russian>
-			<German>MVTR Materialtransport (Waldtarn)+</German>
+			<English>MTVR Material Transport (Woodland)+</English>
+			<Russian>MTVR матобеспечения (Лесной камуфляж)+</Russian>
+			<German>MTVR Materialtransport (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO++">
-			<English>MVTR Material Transport (Woodland)++</English>
-			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)++</Russian>
-			<German>MVTR Materialtransport (Waldtarn)++</German>
+			<English>MTVR Material Transport (Woodland)++</English>
+			<Russian>MTVR матобеспечения (Лесной камуфляж)++</Russian>
+			<German>MTVR Materialtransport (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO+++">
-			<English>MVTR Material Transport (Woodland)+++</English>
-			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)+++</Russian>
-			<German>MVTR Materialtransport (Waldtarn)+++</German>
+			<English>MTVR Material Transport (Woodland)+++</English>
+			<Russian>MTVR матобеспечения (Лесной камуфляж)+++</Russian>
+			<German>MTVR Materialtransport (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO++++">
-			<English>MVTR Material Transport (Woodland)++++</English>
-			<Russian>MVTR Мат. обеспечение (Лесной камуфляж)++++</Russian>
-			<German>MVTR Materialtransport (Waldtarn)++++</German>
+			<English>MTVR Material Transport (Woodland)++++</English>
+			<Russian>MTVR матобеспечения (Лесной камуфляж)++++</Russian>
+			<German>MTVR Materialtransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS">
-			<English>MVTR Weapon Transport (Woodland)</English>
-			<Russian>MVTR Оружейный (Лесной камуфляж)</Russian>
-			<German>MVTR Waffentransport (Waldtarn)</German>
+			<English>MTVR Weapon Transport (Woodland)</English>
+			<Russian>MTVR Оружейный (Лесной камуфляж)</Russian>
+			<German>MTVR Waffentransport (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS+">
-			<English>MVTR Weapon Transport (Woodland)+</English>
-			<Russian>MVTR Оружейный (Лесной камуфляж)+</Russian>
-			<German>MVTR Waffentransport (Waldtarn)+</German>
+			<English>MTVR Weapon Transport (Woodland)+</English>
+			<Russian>MTVR Оружейный (Лесной камуфляж)+</Russian>
+			<German>MTVR Waffentransport (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS++">
-			<English>MVTR Weapon Transport (Woodland)++</English>
-			<Russian>MVTR Оружейный (Лесной камуфляж)++</Russian>
-			<German>MVTR Waffentransport (Waldtarn)++</German>
+			<English>MTVR Weapon Transport (Woodland)++</English>
+			<Russian>MTVR Оружейный (Лесной камуфляж)++</Russian>
+			<German>MTVR Waffentransport (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS+++">
-			<English>MVTR Weapon Transport (Woodland)+++</English>
-			<Russian>MVTR Оружейный (Лесной камуфляж)+++</Russian>
-			<German>MVTR Waffentransport (Waldtarn)+++</German>
+			<English>MTVR Weapon Transport (Woodland)+++</English>
+			<Russian>MTVR Оружейный (Лесной камуфляж)+++</Russian>
+			<German>MTVR Waffentransport (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS++++">
-			<English>MVTR Weapon Transport (Woodland)++++</English>
-			<Russian>MVTR Оружейный (Лесной камуфляж)++++</Russian>
-			<German>MVTR Waffentransport (Waldtarn)++++</German>
+			<English>MTVR Weapon Transport (Woodland)++++</English>
+			<Russian>MTVR Оружейный (Лесной камуфляж)++++</Russian>
+			<German>MTVR Waffentransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN">
 			<English>MTVR Open (Woodland)</English>
@@ -10055,311 +10168,391 @@
 			<English>MTVR Open (Woodland)+++</English>
 			<Russian>MTVR открытый (Лесной камуфляж)+++</Russian>
 			<German>MTVR Offen (Waldtarn)+++</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN++++">
 			<English>MTVR Open (Woodland)++++</English>
 			<Russian>MTVR открытый (Лесной камуфляж)++++</Russian>
 			<German>MTVR Offen (Waldtarn)++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND">
 			<English>Tatra (Woodland)</English>
 			<German>Tatra (Waldtarn)</German>
+			<Russian>Tatra (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND+">
 			<English>Tatra (Woodland)+</English>
 			<German>Tatra (Waldtarn)+</German>
+			<Russian>Tatra (Лесной)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND++">
 			<English>Tatra (Woodland)++</English>
 			<German>Tatra (Waldtarn)++</German>
+			<Russian>Tatra (Лесной)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND+++">
 			<English>Tatra (Woodland)+++</English>
 			<German>Tatra (Waldtarn)+++</German>
+			<Russian>Tatra (Лесной)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND++++">
 			<English>Tatra (Woodland)++++</English>
 			<German>Tatra (Waldtarn)++++</German>
+			<Russian>Tatra (Лесной)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND">
 			<English>Tatra Open (Woodland)</English>
 			<German>Tatra Offen (Waldtarn)</German>
+			<Russian>Tatra открытая (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND+">
 			<English>Tatra Open (Woodland)+</English>
 			<German>Tatra Offen (Waldtarn)+</German>
+			<Russian>Tatra открытая (Лесной)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND++">
 			<English>Tatra Open (Woodland)++</English>
 			<German>Tatra Offen (Waldtarn)++</German>
+			<Russian>Tatra открытая (Лесной)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND+++">
 			<English>Tatra Open (Woodland)+++</English>
 			<German>Tatra Offen (Waldtarn)+++</German>
+			<Russian>Tatra открытая (Лесной)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND++++">
 			<English>Tatra Open (Woodland)++++</English>
 			<German>Tatra Offen (Waldtarn)++++</German>
+			<Russian>Tatra открытая (Лесной)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND">
 			<English>Tatra PKT (Woodland)</English>
 			<German>Tatra PKT (Waldtarn)</German>
+			<Russian>Tatra ПКТ (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND+">
 			<English>Tatra PKT (Woodland)+</English>
 			<German>Tatra PKT (Waldtarn)+</German>
+			<Russian>Tatra ПКТ (Лесной)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND++">
 			<English>Tatra PKT (Woodland)++</English>
 			<German>Tatra PKT (Waldtarn)++</German>
+			<Russian>Tatra ПКТ (Лесной)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND+++">
 			<English>Tatra PKT (Woodland)+++</English>
 			<German>Tatra PKT (Waldtarn)+++</German>
+			<Russian>Tatra ПКТ (Лесной)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND++++">
 			<English>Tatra PKT (Woodland)++++</English>
 			<German>Tatra PKT (Waldtarn)++++</German>
+			<Russian>Tatra ПКТ (Лесной)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT">
 			<English>Tatra (Desert)</English>
 			<German>Tatra (Wüstentarn)</German>
+			<Russian>Tatra (Пустынный)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT+">
 			<English>Tatra (Desert)+</English>
 			<German>Tatra (Wüstentarn)+</German>
+			<Russian>Tatra (Пустынный)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT++">
 			<English>Tatra (Desert)++</English>
 			<German>Tatra (Wüstentarn)++</German>
+			<Russian>Tatra (Пустынный)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT+++">
 			<English>Tatra (Desert)+++</English>
 			<German>Tatra (Wüstentarn)+++</German>
+			<Russian>Tatra (Пустынный)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT++++">
 			<English>Tatra (Desert)++++</English>
 			<German>Tatra (Wüstentarn)++++</German>
+			<Russian>Tatra (Пустынный)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT">
 			<English>Tatra Open (Desert)</English>
 			<German>Tatra Offen (Wüstentarn)</German>
+			<Russian>Tatra открытая (Пустынный)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT+">
 			<English>Tatra Open (Desert)+</English>
 			<German>Tatra Offen (Wüstentarn)+</German>
+			<Russian>Tatra открытая (Пустынный)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT++">
 			<English>Tatra Open (Desert)++</English>
 			<German>Tatra Offen (Wüstentarn)++</German>
+			<Russian>Tatra открытая (Пустынный)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT+++">
 			<English>Tatra Open (Desert)+++</English>
 			<German>Tatra Offen (Wüstentarn)+++</German>
+			<Russian>Tatra открытая (Пустынный)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT++++">
 			<English>Tatra Open (Desert)++++</English>
 			<German>Tatra Offen (Wüstentarn)++++</German>
+			<Russian>Tatra открытая (Пустынный)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT">
 			<English>Tatra PKT (Desert)</English>
 			<German>Tatra PKT (Wüstentarn)</German>
+			<Russian>Tatra ПКТ (Пустынный)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT+">
 			<English>Tatra PKT (Desert)+</English>
 			<German>Tatra PKT (Wüstentarn)+</German>
+			<Russian>Tatra ПКТ (Пустынный)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT++">
 			<English>Tatra PKT (Desert)++</English>
 			<German>Tatra PKT (Wüstentarn)++</German>
+			<Russian>Tatra ПКТ (Пустынный)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT+++">
 			<English>Tatra PKT (Desert)+++</English>
 			<German>Tatra PKT (Wüstentarn)+++</German>
+			<Russian>Tatra ПКТ (Пустынный)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT++++">
 			<English>Tatra PKT (Desert)++++</English>
 			<German>Tatra PKT (Wüstentarn)++++</German>
+			<Russian>Tatra ПКТ (Пустынный)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL">
 			<English>Tatra Fuel (Woodland)</English>
 			<German>Tatra Treibstoff (Waldtarn)</German>
+			<Russian>Tatra заправщик (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL+">
 			<English>Tatra Fuel (Woodland)+</English>
 			<German>Tatra Treibstoff (Waldtarn)+</German>
+			<Russian>Tatra заправщик (Лесной)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL++">
 			<English>Tatra Fuel (Woodland)++</English>
 			<German>Tatra Treibstoff (Waldtarn)++</German>
+			<Russian>Tatra заправщик (Лесной)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL+++">
 			<English>Tatra Fuel (Woodland)+++</English>
 			<German>Tatra Treibstoff (Waldtarn)+++</German>
+			<Russian>Tatra заправщик (Лесной)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL++++">
 			<English>Tatra Fuel (Woodland)++++</English>
 			<German>Tatra Treibstoff (Waldtarn)++++</German>
+			<Russian>Tatra заправщик (Лесной)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL">
 			<English>Tatra Fuel (Desert)</English>
 			<German>Tatra Treibstoff (Wüstentarn)</German>
+			<Russian>Tatra заправщик (Пустынный)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL+">
 			<English>Tatra Fuel (Desert)+</English>
 			<German>Tatra Treibstoff (Wüstentarn)+</German>
+			<Russian>Tatra заправщик (Пустынный)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL++">
 			<English>Tatra Fuel (Desert)++</English>
 			<German>Tatra Treibstoff (Wüstentarn)++</German>
+			<Russian>Tatra заправщик (Пустынный)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL+++">
 			<English>Tatra Fuel (Desert)+++</English>
 			<German>Tatra Treibstoff (Wüstentarn)+++</German>
+			<Russian>Tatra заправщик (Пустынный)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL++++">
 			<English>Tatra Fuel (Desert)++++</English>
 			<German>Tatra Treibstoff (Wüstentarn)++++</German>
+			<Russian>Tatra заправщик (Пустынный)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND">
 			<English>Tatra Material Transport (Woodland)</English>
 			<German>Tatra Materialtransport (Waldtarn)</German>
+			<Russian>Tatra матобеспечения (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND+">
 			<English>Tatra Material Transport (Woodland)+</English>
 			<German>Tatra Materialtransport (Waldtarn)+</German>
+			<Russian>Tatra матобеспечения (Лесной)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND++">
 			<English>Tatra Material Transport (Woodland)++</English>
 			<German>Tatra Materialtransport (Waldtarn)++</German>
+			<Russian>Tatra матобеспечения (Лесной)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND+++">
 			<English>Tatra Material Transport (Woodland)+++</English>
 			<German>Tatra Materialtransport (Waldtarn)+++</German>
+			<Russian>Tatra матобеспечения (Лесной)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND++++">
 			<English>Tatra Material Transport (Woodland)++++</English>
 			<German>Tatra Materialtransport (Waldtarn)++++</German>
+			<Russian>Tatra матобеспечения (Лесной)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND">
 			<English>Tatra Weapon Transport (Woodland)</English>
 			<German>Tatra Waffentransport (Waldtarn)</German>
+			<Russian>Tatra оружейная (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND+">
 			<English>Tatra Weapon Transport (Woodland)+</English>
 			<German>Tatra Waffentransport (Waldtarn)+</German>
+			<Russian>Tatra оружейная (Лесной)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND++">
 			<English>Tatra Weapon Transport (Woodland)++</English>
 			<German>Tatra Waffentransport (Waldtarn)++</German>
+			<Russian>Tatra оружейная (Лесной)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND+++">
 			<English>Tatra Weapon Transport (Woodland)+++</English>
 			<German>Tatra Waffentransport (Waldtarn)+++</German>
+			<Russian>Tatra оружейная (Лесной)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND++++">
 			<English>Tatra Weapon Transport (Woodland)++++</English>
 			<German>Tatra Waffentransport (Waldtarn)++++</German>
+			<Russian>Tatra оружейная (Лесной)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT">
 			<English>Tatra Material Transport (Desert)</English>
 			<German>Tatra Materialtransport (Wüstentarn)</German>
+			<Russian>Tatra матобеспечения (Пустынный)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT+">
 			<English>Tatra Material Transport (Desert)+</English>
 			<German>Tatra Materialtransport (Wüstentarn)+</German>
+			<Russian>Tatra матобеспечения (Пустынный)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT++">
 			<English>Tatra Material Transport (Desert)++</English>
 			<German>Tatra Materialtransport (Wüstentarn)++</German>
+			<Russian>Tatra матобеспечения (Пустынный)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT+++">
 			<English>Tatra Material Transport (Desert)+++</English>
 			<German>Tatra Materialtransport (Wüstentarn)+++</German>
+			<Russian>Tatra матобеспечения (Пустынный)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT++++">
 			<English>Tatra Material Transport (Desert)++++</English>
 			<German>Tatra Materialtransport (Wüstentarn)++++</German>
+			<Russian>Tatra матобеспечения (Пустынный)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT">
 			<English>Tatra Weapon Transport (Desert)</English>
 			<German>Tatra Waffentransport (Wüstentarn)</German>
+			<Russian>Tatra оружейная (Пустынный)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT+">
 			<English>Tatra Weapon Transport (Desert)+</English>
 			<German>Tatra Waffentransport (Wüstentarn)+</German>
+			<Russian>Tatra оружейная (Пустынный)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT++">
 			<English>Tatra Weapon Transport (Desert)++</English>
 			<German>Tatra Waffentransport (Wüstentarn)++</German>
+			<Russian>Tatra оружейная (Пустынный)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT+++">
 			<English>Tatra Weapon Transport (Desert)+++</English>
 			<German>Tatra Waffentransport (Wüstentarn)+++</German>
+			<Russian>Tatra оружейная (Пустынный)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT++++">
 			<English>Tatra Weapon Transport (Desert)++++</English>
 			<German>Tatra Waffentransport (Wüstentarn)++++</German>
+			<Russian>Tatra оружейная (Пустынный)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM">
 			<English>Pick-up (DSHKM)</English>
+			<Russian>Пикап (ДШКМ)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM+">
 			<English>Pick-up (DSHKM)+</English>
+			<Russian>Пикап (ДШКМ)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM++">
 			<English>Pick-up (DSHKM)++</English>
+			<Russian>Пикап (ДШКМ)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM+++">
 			<English>Pick-up (DSHKM)+++</English>
+			<Russian>Пикап (ДШКМ)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM++++">
 			<English>Pick-up (DSHKM)++++</English>
+			<Russian>Пикап (ДШКМ)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT">
 			<English>Pick-up GUE (PKT)</English>
+			<Russian>Пикап GUE (ПКТ)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT+">
 			<English>Pick-up GUE (PKT)+</English>
+			<Russian>Пикап GUE (ПКТ)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT++">
 			<English>Pick-up GUE (PKT)++</English>
+			<Russian>Пикап GUE (ПКТ)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT+++">
 			<English>Pick-up GUE (PKT)+++</English>
+			<Russian>Пикап GUE (ПКТ)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT++++">
 			<English>Pick-up GUE (PKT)++++</English>
+			<Russian>Пикап GUE (ПКТ)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT">
 			<English>Pick-up INS (PKT)</English>
+			<Russian>Пикап INS (ПКТ)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT+">
 			<English>Pick-up INS (PKT)+</English>
+			<Russian>Пикап INS (ПКТ)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT++">
 			<English>Pick-up INS (PKT)++</English>
+			<Russian>Пикап INS (ПКТ)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT+++">
 			<English>Pick-up INS (PKT)+++</English>
+			<Russian>Пикап INS (ПКТ)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_INS_PKT++++">
 			<English>Pick-up INS (PKT)++++</English>
+			<Russian>Пикап INS (ПКТ)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT">
 			<English>Pick-up TK (PKT)</English>
+			<Russian>Пикап TK (ПКТ)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT+">
 			<English>Pick-up TK (PKT)+</English>
+			<Russian>Пикап TK (ПКТ)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT++">
 			<English>Pick-up TK (PKT)++</English>
+			<Russian>Пикап TK (ПКТ)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT+++">
 			<English>Pick-up TK (PKT)+++</English>
+			<Russian>Пикап TK (ПКТ)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TK_PKT++++">
 			<English>Pick-up TK (PKT)++++</English>
+			<Russian>Пикап TK (ПКТ)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS">
 			<English>Skoda Van (blue)</English>
@@ -10514,22 +10707,27 @@
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE">
 			<English>Skoda Octavia (white)</English>
 			<German>Skoda Octavia (weiß)</German>
+			<Russian>Skoda Octavia (Белая)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE+">
 			<English>Skoda Octavia (white)+</English>
 			<German>Skoda Octavia (weiß)+</German>
+			<Russian>Skoda Octavia (Белая)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE++">
 			<English>Skoda Octavia (white)++</English>
 			<German>Skoda Octavia (weiß)++</German>
+			<Russian>Skoda Octavia (Белая)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE+++">
 			<English>Skoda Octavia (white)+++</English>
 			<German>Skoda Octavia (weiß)+++</German>
+			<Russian>Skoda Octavia (Белая)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_OCTAVIA_WHITE++++">
 			<English>Skoda Octavia (white)++++</English>
 			<German>Skoda Octavia (weiß)++++</German>
+			<Russian>Skoda Octavia (Белая)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLACK">
 			<English>SUV (black)</English>
@@ -10583,27 +10781,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED">
 			<English>SUV (red)</English>
-			<Russian>SUV (черный)</Russian>
+			<Russian>SUV (Красный)</Russian>
 			<German>SUV (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED+">
 			<English>SUV (red)+</English>
-			<Russian>SUV (черный)+</Russian>
+			<Russian>SUV (Красный)+</Russian>
 			<German>SUV (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED++">
 			<English>SUV (red)++</English>
-			<Russian>SUV (черный)++</Russian>
+			<Russian>SUV (Красный)++</Russian>
 			<German>SUV (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED+++">
 			<English>SUV (red)+++</English>
-			<Russian>SUV (черный)+++</Russian>
+			<Russian>SUV (Красный)+++</Russian>
 			<German>SUV (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED++++">
 			<English>SUV (red)++++</English>
-			<Russian>SUV (черный)++++</Russian>
+			<Russian>SUV (Красный)++++</Russian>
 			<German>SUV (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREEN">
@@ -10798,67 +10996,72 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER">
 			<English>SUV (Winter)</English>
+			<Russian>SUV (Зимний)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER+">
 			<English>SUV (Winter)+</English>
+			<Russian>SUV (Зимний)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER++">
 			<English>SUV (Winter)++</English>
+			<Russian>SUV (Зимний)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER+++">
 			<English>SUV (Winter)+++</English>
+			<Russian>SUV (Зимний)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER++++">
 			<English>SUV (Winter)++++</English>
+			<Russian>SUV (Зимний)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ARMORED">
 			<English>SUV (Armored)</English>
-			<Russian>SUV (Армированный)</Russian>
+			<Russian>SUV (Бронированный)</Russian>
 			<German>SUV (Gepanzert)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ARMORED+">
 			<English>SUV (Armored)+</English>
-			<Russian>SUV (Армированный)+</Russian>
+			<Russian>SUV (Бронированный)+</Russian>
 			<German>SUV (Gepanzert)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ARMORED++">
 			<English>SUV (Armored)++</English>
-			<Russian>SUV (Армированный)++</Russian>
+			<Russian>SUV (Бронированный)++</Russian>
 			<German>SUV (Gepanzert)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ARMORED+++">
 			<English>SUV (Armored)+++</English>
-			<Russian>SUV (Армированный)+++</Russian>
+			<Russian>SUV (Бронированный)+++</Russian>
 			<German>SUV (Gepanzert)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ARMORED++++">
 			<English>SUV (Armored)++++</English>
-			<Russian>SUV (Армированный)++++</Russian>
+			<Russian>SUV (Бронированный)++++</Russian>
 			<German>SUV (Gepanzert)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED">
 			<English>SUV PKT (Armored)</English>
-			<Russian>SUV PKT (Армированный)</Russian>
+			<Russian>SUV ПКТ (Бронированный)</Russian>
 			<German>SUV PKT (Gepanzert)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED+">
 			<English>SUV PKT (Armored)+</English>
-			<Russian>SUV PKT (Армированный)+</Russian>
+			<Russian>SUV ПКТ (Бронированный)+</Russian>
 			<German>SUV PKT (Gepanzert)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED++">
 			<English>SUV PKT (Armored)++</English>
-			<Russian>SUV PKT (Армированный)++</Russian>
+			<Russian>SUV ПКТ (Бронированный)++</Russian>
 			<German>SUV PKT (Gepanzert)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED+++">
 			<English>SUV PKT (Armored)+++</English>
-			<Russian>SUV PKT (Армированный)+++</Russian>
+			<Russian>SUV ПКТ (Бронированный)+++</Russian>
 			<German>SUV PKT (Gepanzert)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PKT_ARMORED++++">
 			<English>SUV PKT (Armored)++++</English>
-			<Russian>SUV PKT (Армированный)++++</Russian>
+			<Russian>SUV ПКТ (Бронированный)++++</Russian>
 			<German>SUV PKT (Gepanzert)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_ORANGE">
@@ -10885,7 +11088,7 @@
 			<English>Nissan 350z (orange)++++</English>
 			<Russian>Nissan 350z (оранжевый)++++</Russian>
 			<German>Nissan 350z (orange)++++</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLUE">
 			<English>Nissan 350z (blue)</English>
 			<Russian>Nissan 350z (синий)</Russian>
@@ -10910,7 +11113,7 @@
 			<English>Nissan 350z (blue)++++</English>
 			<Russian>Nissan 350z (синий)++++</Russian>
 			<German>Nissan 350z (blau)++++</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_MOD">
 			<English>Nissan 350z (mod)</English>
 			<German>Nissan 350z (mod)</German>
@@ -10950,7 +11153,7 @@
 		<Key ID="STR_VEH_NAME_NISSAN_GOLD++++">
 			<English>Nissan 350z (gold)++++</English>
 			<German>Nissan 350z (gold)++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GREEN">
 			<English>Nissan 350z (green)</English>
 			<Russian>Nissan 350z (зеленый)</Russian>
@@ -10975,7 +11178,7 @@
 			<English>Nissan 350z (green)++++</English>
 			<Russian>Nissan 350z (зеленый)++++</Russian>
 			<German>Nissan 350z (grün)++++</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLACK">
 			<English>Nissan 350z (black)</English>
 			<Russian>Nissan 350z (черный)</Russian>
@@ -11000,7 +11203,7 @@
 			<English>Nissan 350z (black)++++</English>
 			<Russian>Nissan 350z (черный)++++</Russian>
 			<German>Nissan 350z (schwarz)++++</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_PINK">
 			<English>Nissan 350z (pink)</English>
 			<Russian>Nissan 350z (розовый)</Russian>
@@ -11050,7 +11253,7 @@
 			<English>Nissan 350z (red)++++</English>
 			<Russian>Nissan 350z (черный)++++</Russian>
 			<German>Nissan 350z (rot)++++</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RUBEN">
 			<English>Nissan 350z (ruben)</English>
 		</Key>
@@ -11105,7 +11308,7 @@
 			<English>Nissan 350z (yellow)++++</English>
 			<Russian>Nissan 350z (желтый)++++</Russian>
 			<German>Nissan 350z (gelb)++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_CDF">
 			<English>UAZ (CDF)</English>
 		</Key>
@@ -11725,7 +11928,7 @@
 		<Key ID="STR_VEH_NAME_V3S_ARMORED++++">
 			<English>V3S Armored++++</English>
 			<German>V3S Gepanzert++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMPER">
 			<English>V3S Camper</English>
 		</Key>
@@ -11740,7 +11943,7 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMPER++++">
 			<English>V3S Camper++++</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_GAZ_BLUE">
 			<English>GAZ (blue)</English>
 			<Russian>GAZ (синий)</Russian>
@@ -11865,7 +12068,7 @@
 			<English>Mini Cooper (red)++++</English>
 			<Russian>Mini Cooper (красный)++++</Russian>
 			<German>Mini Cooper (rot)++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_SEDAN_WHITE">
 			<English>Sedan (white)</English>
 			<Russian>Sedan (белый)</Russian>
@@ -12605,7 +12808,7 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_BIRD+++">
 			<English>MTVR Bird+++</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_MI17">
 			<English>Mi-17</English>
 			<Russian>Ми-17</Russian>
@@ -13659,7 +13862,7 @@
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT5">
 			<English>Winter Dome Tent +++++</English>
 			<German>Winterigluzelt +++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_TENT">
 			<English>Camping Tent</English>
 			<German>Zelt</German>
@@ -13731,7 +13934,7 @@
 		<Key ID="STR_VEH_NAME_TENTWINTER5">
 			<English>Winter Camping Tent +++++</English>
 			<German>Winterzelt +++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_BUILT_WIRE1">
 			<English>Wire (CAT1)</English>
 			<Russian>Колючка</Russian>
@@ -17676,7 +17879,7 @@
 			<English>Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac SD</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac SD</German>
 			<Russian>Снайперская винтовка &lt;br/&gt;Патрон: .408 Chey Tac SD</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_DZ_WPN_WA2000_NAME">
 			<English>WA2000</English>
 		</Key>
@@ -18207,7 +18410,7 @@
 			<Russian>Патрон: 5.56x45мм SD &lt;br/&gt;Количество: 100 &lt;br/&gt;Используется в: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Russian>
 			<Polish>Kaliber: 5.56x45mm SD &lt;br/&gt;Naboje: 100 &lt;br/&gt;Używane w: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Polish>
 			<Hungarian>Kaliber: 5.56x45mm SD &lt;br/&gt; Töltények: 100 &lt;br/&gt; Hozzá tartozó fegyver: G36 SD, M4 SD, XM8 SD, Famas SD, HK416 SD, Masada SD, MK16 SD, CZ805 SD</Hungarian>
-        </Key>	
+        </Key>
 		<Key ID="STR_DZ_MAG_20RND_MK17_DESC">
 			<English>Caliber: 7.62x51mm NATO&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: MK17, M110, CZ 805B</English>
 			<French>Calibre: 7.62x51mm OTAN&lt;br/&gt;Munitions : 20&lt;br/&gt;Utilisé avec: MK17, M110, CZ 805B</French>
@@ -19221,7 +19424,7 @@
 			<Russian>Патрон: .408 Chey Tac SD &lt;br/&gt;Количество: 5 &lt;br/&gt;Используется в: M200 Chey Tac SD</Russian>
 			<Polish>Kaliber: .408 Chey Tac SD &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M200 Chey Tac SD</Polish>
 			<Hungarian>Kaliber: .408 Chey Tac SD &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M200 Chey Tac SD</Hungarian>
-        </Key>		
+        </Key>
 		<Key ID="STR_DZ_MAG_6RND_WA2000_NAME">
 			<English>6Rnd. WA2000 mag.</English>
 			<Russian>6п. WA2000 маг.</Russian>
@@ -22679,15 +22882,15 @@
 		<Key ID="STR_EPOCH_PLAYER_186_HUMANITY">
 			<English>Traded %1 %2 for %3 %4 and %5 %6.</English>
 			<German>Du hast für %1 %2 %3 %4 und %5 %6 erhalten.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_186_2">
 			<English>Traded %1 %2.</English>
 			<German>Du hast %1 %2 gehandelt.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_186_2_HUMANITY">
 			<English>Traded %1 %2 for %3 %4.</English>
 			<German>Du hast %1 %2 gehandelt und %3 %4 erhalten.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_187">
 			<English>Starting trade, stand still to complete trade %1 of %2.</English>
 			<German>Handel gestartet, bewege dich um den Vorgang abzubrechen. (%1 von %2)</German>
@@ -23013,7 +23216,7 @@
 		<Key ID="STR_EPOCH_PLAYER_213_1">
 			<English>Craft Metal Pillar</English>
 			<German>Metallsäule herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_214">
 			<English>Build Corrugated Fence</English>
 			<German>Wellblechzaun aufbauen</German>
@@ -23125,7 +23328,7 @@
 			<Russian>Создать: Металлич. пол 1/2</Russian>
 			<Dutch>Creëer metalen vloer 1/2</Dutch>
 			<Czech>Vytvořit Železnou podlahu 1/2</Czech>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_228_2">
 			<English>Craft Metal Floor 1/4</English>
 			<German>Metallboden 1/4 herstellen</German>
@@ -23139,7 +23342,7 @@
 			<Russian>Создать: Металлич. пол 4x</Russian>
 			<Dutch>Creëer metalen vloer 4x</Dutch>
 			<Czech>Vytvořit Železnou podlahu 4x</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_229">
 			<English>Craft Lg Camo Net</English>
 			<German>Tarnnetz(groß) herstellen</German>
@@ -23169,7 +23372,7 @@
 			<Russian>Создать: Деревянный пол</Russian>
 			<Dutch>Creëer houten vloer</Dutch>
 			<Czech>Vytvořit Dřevěnou podlahu</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_232a">
 			<English>Craft Wood Floor 1/2</English>
 			<German>Holzboden 1/2 herstellen</German>
@@ -23183,7 +23386,7 @@
 			<Russian>Создать: Деревянный пол 4x</Russian>
 			<Dutch>Creëer houten vloer 4x</Dutch>
 			<Czech>Vytvořit 4x Dřevěnou podlahu</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_233">
 			<English>Craft Stair Supports</English>
 			<German>Treppenstützen herstellen</German>
@@ -23222,7 +23425,7 @@
 		<Key ID="STR_EPOCH_PLAYER_237_1">
 			<English>Craft Wooden Gate Frame</English>
 			<German>Holztorrahmen herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_238">
 			<English>Craft Door</English>
 			<German>Tür herstellen</German>
@@ -23233,41 +23436,41 @@
 		<Key ID="STR_EPOCH_PLAYER_238_2">
 			<English>Craft Door with Hatch</English>
 			<German>Tür mit Luke herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239">
 			<English>Craft Locked Door</English>
 			<German>Verschlossene Tür herstellen</German>
 			<Russian>Создать: Дверь с замком</Russian>
 			<Dutch>Creëer afsluitbare deur</Dutch>
 			<Czech>Vytvořit Zamčené dveře</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239_1_1">
 			<English>Craft Gate</English>
 			<German>Tor herstellen</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239_1">
 			<English>Craft Locked Gate</English>
 			<German>Verschlossenes Tor herstellen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239_1_3">
 			<English>Craft Wall w/ Window</English>
 			<German>Wand mit Fenster herstellen</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239_1_2">
 			<English>Craft Locked Window</English>
 			<German>Verschlossenes Fenster herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_240">
 			<English>Craft Garage Door</English>
 			<German>Garagentor herstellen</German>
 			<Russian>Создать: Дверь гаража</Russian>
 			<Dutch>Creëer garagedeur</Dutch>
 			<Czech>Vytvořit Garážová vrata</Czech>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_240_1">
 			<English>Craft Garage Door w/ no top</English>
 			<German>Garagentor (rahmenlos) herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_242">
 			<English>Craft Lumber</English>
 			<German>Bauholz herstellen</German>
@@ -23342,7 +23545,7 @@
 			<German>Halbe Wand herstellen</German>
 			<Russian>Создать: Половина стены</Russian>
 			<Czech>Vytvořit 1/2 zdi</Czech>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_252_1">
 			<English>Craft Full Wall</English>
 			<German>Ganze Wand herstellen</German>
@@ -23352,7 +23555,7 @@
 		<Key ID="STR_EPOCH_PLAYER_252_2">
 			<English>Craft Half Wall /w gap</English>
 			<German>Halbe Wand mit Lücke herstellen</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<English>Craft Garage Doorway</English>
 			<German>Garagentor herstellen</German>
@@ -23362,11 +23565,11 @@
 		<Key ID="STR_EPOCH_PLAYER_253_1">
 			<English>Craft Cinder Gate Frame</English>
 			<German>Betontorrahmen herstellen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253_1_1">
 			<English>Craft Cinder Garage Frame w/ no top</English>
 			<German>Betongaragendurchgang (rahmenlos) herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_254">
 			<English>Craft Plywood</English>
 			<German>Sperrholz herstellen</German>
@@ -23489,7 +23692,7 @@
 		<Key ID="STR_EPOCH_PLAYER_272">
 			<English>Craft Winter Net</English>
 			<German>Winternetz herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273">
 			<English>Craft H-Barrier</English>
 			<German>H-Barriere herstellen</German>
@@ -24015,7 +24218,7 @@
 		<Key ID="STR_BACKPACK_DESC_GYMBAG_DZE2">
 			<English>Gym Bag &lt;br/&gt;Capacity: 15 items</English>
 			<German>Sportbeutel &lt;br/&gt;Volumen: 15 Liter</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_BACKPACK_NAME_VEST_DZE1">
 			<English>Czech Vest Pouch</English>
 			<French>Sac tchèque</French>
@@ -24317,7 +24520,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_PARTYPACK_DZE2">
 			<English>Party Pack &lt;br/&gt;Capacity: 42 items</English>
 			<German>Party-Rucksack &lt;br/&gt;Volumen: 42 Liter</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_BACKPACK_NAME_APO1_DZE1">
 			<English>Night Backpack</English>
 			<German>Night Rucksack</German>
@@ -25070,7 +25273,7 @@
 			<English>Safe +</English>
 			<German>Tresor +</German>
 			<Russian>Сейф +</Russian>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SAFE_BROKEN">
 			<English>Broken Safe</English>
 			<German>Aufgebrochener Tresor</German>
@@ -25078,7 +25281,7 @@
 		<Key ID="STR_EPOCH_SAFE_BROKEN+">
 			<English>Broken Safe +</English>
 			<German>Aufgebrochener Tresor +</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SAFE_DESC">
 			<English>A placeable object that is used for very secure storage. Placing your safe will give you a 4 digit number that is used to open the safe.</English>
 			<German>Ein platzierbares Objekt für eine sichere Aufbewahrung. Der vierstellige Code zum Öffnen wird nach dem Aufstellen angezeigt.</German>
@@ -25093,7 +25296,7 @@
 			<English>Locked Safe +</English>
 			<German>Tresor +</German>
 			<Russian>Закрытый сейф +</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_TRADER_ENTER">
 			<English>Now entering %1</English>
 			<German>Du betrittst %1</German>
@@ -25306,15 +25509,15 @@
 		<Key ID="STR_FOOD_NAME_POTATO">
 			<English>Potato</English>
 			<German>Kartoffel</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_FOOD_NAME_POTATO_BAKED">
 			<English>Baked Potato</English>
 			<German>Gebackene Kartoffel</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_FOOD_NAME_CARROT">
 			<English>Carrot</English>
 			<German>Karotte</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_GEM_NAME_TOPAZ">
 			<English>Topaz</English>
 			<German>Topas</German>
@@ -25703,7 +25906,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEAD_DESC">
 			<English>Zombie Head in a Bag.</English>
 			<German>Zombiekopf in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_LEG">
 			<English>Zombie Leg</English>
 			<German>Zombiebein</German>
@@ -25711,7 +25914,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_LEG_DESC">
 			<English>Zombie Leg in a Bag.</English>
 			<German>Zombiebein in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_ARM">
 			<English>Zombie Arm</English>
 			<German>Zombiearm</German>
@@ -25719,7 +25922,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_ARM_DESC">
 			<English>Zombie Arm in a Bag.</English>
 			<German>Zombiearm in einem Sack.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_BRAIN">
 			<English>Zombie Brain</English>
 			<German>Zombiegehirn</German>
@@ -25735,7 +25938,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HAND_DESC">
 			<English>Zombie Hand in a Bag.</English>
 			<German>Zombiehand in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_FINGER">
 			<English>Zombie Finger</English>
 			<German>Zombiefinger</German>
@@ -25751,7 +25954,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_FOOT_DESC">
 			<English>Zombie Foot in a Bag.</English>
 			<German>Zombiefuß in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TOE">
 			<English>Zombie Toe</English>
 			<German>Zombiezeh</German>
@@ -25759,7 +25962,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TOE_DESC">
 			<English>Zombie Toe in a Bag.</English>
 			<German>Zombiezeh in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_LIVER">
 			<English>Zombie Liver</English>
 			<German>Zombieleber</German>
@@ -25767,7 +25970,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_LIVER_DESC">
 			<English>Zombie Liver in a Bag.</English>
 			<German>Zombieleber in einem Sack.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEART">
 			<English>Zombie Heart</English>
 			<German>Zombieherz</German>
@@ -25775,7 +25978,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEART_DESC">
 			<English>Zombie Heart in a Bag.</English>
 			<German>Zombieherz in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_EYES">
 			<English>Zombie Eyes</English>
 			<German>Zombieaugen</German>
@@ -25783,7 +25986,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_EYES_DESC">
 			<English>Zombie Eyes in a Bag.</English>
 			<German>Zombieaugen in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TONGUE">
 			<English>Zombie Tongue</English>
 			<German>Zombiezunge</German>
@@ -25791,7 +25994,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TONGUE_DESC">
 			<English>Zombie Tongue in a Bag.</English>
 			<German>Zombiezunge in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TEETH">
 			<English>Zombie Teeth</English>
 			<German>Zombiezähne</German>
@@ -25799,7 +26002,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TEETH_DESC">
 			<English>Zombie Teeth in a Bag.</English>
 			<German>Zombiezähne in einem Sack.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_SKIN">
 			<English>Zombie Skin</English>
 			<German>Zombiehaut</German>
@@ -25807,7 +26010,7 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_SKIN_DESC">
 			<English>Zombie Skin in a Bag.</English>
 			<German>Zombiehaut in einem Sack.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
 			<German>Zahlenschloss</German>
@@ -25945,7 +26148,7 @@
 		<Key ID="STR_EPOCH_WORKBENCH_ADVANCED_DESC">
 			<English>Advanced Workbench with tools for bigger buildings to craft.</English>
 			<German>Verbesserte Werkbank mit Werkzeugen für größere Handwerksarbeiten.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WOODENRAMP_DESC">
 			<English>Wooden ramp can be used to get air.</English>
 			<German>Eine Holzrampe, die als Sprungschanze verwendet werden kann.</German>
@@ -26013,7 +26216,7 @@
 		<Key ID="STR_EPOCH_LARGEWINTERCAMONET">
 			<English>Large Winter Camo Net</English>
 			<German>Wintertarnnetz (groß)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CAMONET_DESC">
 			<English>Camo Netting: A buildable object that can be used to cover objects.</English>
 			<German>Tarnnetz: Ein aufbaubares Objekt, um andere Objekte drunter zu verstecken.</German>
@@ -26136,7 +26339,7 @@
 		<Key ID="STR_EPOCH_LOCKBOX_BROKEN">
 			<English>Broken Lockbox</English>
 			<German>Aufgebrochene Schließkassette</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_LOCKED">
 			<English>Locked Lockbox</English>
 			<German>Schließkassette</German>
@@ -26150,12 +26353,12 @@
 		<Key ID="STR_EPOCH_LOCKBOX_BROKEN+">
 			<English>Broken Lockbox +</English>
 			<German>Aufgebrochene Schließkassette +</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_LOCKED+">
 			<English>Locked Lockbox +</English>
 			<German>Schließkassette +</German>
 			<Russian>Запертый ящик +</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_DESC">
 			<English>Semi secure lockbox.</English>
 			<German>Leicht gesicherte Schließkassette. Der Code besteht aus einer Farbe und 2 Ziffern.</German>
@@ -26967,7 +27170,7 @@
 		<Key ID="STR_EPOCH_GLASSFLOOR">
 			<English>Glass Floor</English>
 			<German>Glasboden</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GLASSFLOORHALF">
 			<English>Glass Floor 1/2</English>
 			<German>Glasboden 1/2</German>
@@ -26975,7 +27178,7 @@
 		<Key ID="STR_EPOCH_GLASSFLOORQUARTER">
 			<English>Glass Floor 1/4</English>
 			<German>Glasboden 1/4</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_METALFLOOR">
 			<English>Metal Floor</English>
 			<German>Metallboden</German>
@@ -26990,12 +27193,12 @@
 			<English>Metal Floor 1/4</English>
 			<German>Metallboden 1/4</German>
 			<Russian>Металлический пол (1/4)</Russian>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_METALFLOOR4x">
 			<English>Metal Floor 4x</English>
 			<German>Metallboden 4x</German>
 			<Russian>Металлический пол 4x</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF">
 			<English>Cinder Wall Half</English>
 			<German>Betonwand (Halb)</German>
@@ -27004,7 +27207,7 @@
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF_GAP">
 			<English>Cinder Wall Half w/ gap</English>
 			<German>Betonwand (Halb) mit Lücke</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL">
 			<English>Cinder Wall Full</English>
 			<German>Betonwand (Komplett)</German>
@@ -27023,19 +27226,19 @@
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW">
 			<English>Cinder Wall w/ window</English>
 			<German>Betonwand mit Fenster</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_DESC">
 			<English>Cinder Wall with window that can be locked with a combination lock.</English>
 			<German>Eine Betonwand mit Fenster, welches mit einem Zahlenschloss verschlossen werden kann.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED">
 			<English>Cinder Wall w/ window locked</English>
 			<German>Betonwand mit Fenster (verschlossen)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED_DESC">
 			<English>Cinder Wall with window and a combination lock.</English>
 			<German>Eine Betonwand mit Fenster und einem Zahlenschloss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
 			<English>Cinder Doorway</English>
 			<German>Betontürrahmen</German>
@@ -27053,7 +27256,7 @@
 		<Key ID="STR_EPOCH_BLOCKDOOR_DESC">
 			<English>A Cinder block wall with metal door that can be locked with a combination lock.</English>
 			<German>Eine Betontür, welche mit einem Zahlenschloss verschlossen werden kann.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED">
 			<English>Cinder Door (locked)</English>
 			<German>Betontür (verschlossen)</German>
@@ -27061,7 +27264,7 @@
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_LOCKED_DESC">
 			<English>Cinder block door with a combination lock.</English>
 			<German>Eine Betontür mit einem Zahlenschloss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKER">
 			<English>Concrete Bunker</English>
 			<German>Betonbunker</German>
@@ -27069,7 +27272,7 @@
 		<Key ID="STR_EPOCH_CINDERBUNKER_DESC">
 			<English>A concrete bunker with metal door that can be locked with a combination lock.</English>
 			<German>Ein Betonbunker, welcher mit einem Zahlenschloss verschlossen werden kann.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKERLOCKED">
 			<English>Concrete Bunker (locked)</English>
 			<German>Betonbunker (verschlossen)</German>
@@ -27077,7 +27280,7 @@
 		<Key ID="STR_EPOCH_CINDERBUNKER_LOCKED_DESC">
 			<English>Concrete bunker with a combination lock.</English>
 			<German>Ein Betonbunker mit einem Zahlenschloss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH">
 			<English>Cinder Door w/ Hatch</English>
 			<German>Betontür mit Luke</German>
@@ -27085,7 +27288,7 @@
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH_DESC">
 			<English>A cinder block wall with a hatch and a metal door that can be locked with a combination lock.</English>
 			<German>Eine Betontür mit Luke, welche mit einem Zahlenschloss verschlossen werden kann.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED_HATCH">
 			<English>Cinder Door w/ Hatch (locked)</English>
 			<German>Betontür mit Luke (verschlossen)</German>
@@ -27093,7 +27296,7 @@
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_HATCH_LOCKED_DESC">
 			<English>Cinder block door with a hatch and a combination lock.</English>
 			<German>Eine Betontür mit einer Luke und einem Zahlenschloss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
 			<German>Betongaragentürrahmen</German>
@@ -27123,7 +27326,7 @@
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEFRAME_DESC">
 			<English>Cinder garage frame constructed out of cinder.</English>
 			<German>Ein Betongaragentürdurchgang bestehend aus Beton.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOOR">
 			<English>Cinder Garage Door w/ no top</English>
 			<German>Betongaragentür (rahmenlos)</German>
@@ -27139,7 +27342,7 @@
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED_DESC">
 			<English>Cinder garage door with combination lock.</English>
 			<German>Eine Betongaragentür mit Zahlenschloss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDERGATEFRAME">
 			<English>Cinder Gate Frame</English>
 			<German>Betontorrahmen</German>
@@ -27147,7 +27350,7 @@
 		<Key ID="STR_EPOCH_CINDERGATEFRAME_DESC">
 			<English>Cinder Gate Frame constructed out of cinder.</English>
 			<German>Ein Betontorrahmen bestehend aus Beton.</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_CINDERGATE">
 			<English>Cinder Gate</English>
 			<German>Betontor</German>
@@ -27155,7 +27358,7 @@
 		<Key ID="STR_EPOCH_CINDERGATE_DESC">
 			<English>Cinder Gate constructed out cinder.</English>
 			<German>Ein Betontor bestehend aus Beton.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CINDERGATELOCKED">
 			<English>Cinder Gate Locked</English>
 			<German>Betontor (verschlossen)</German>
@@ -27163,7 +27366,7 @@
 		<Key ID="STR_EPOCH_CINDERGATELOCKED_DESC">
 			<English>Cinder Gate with combination lock.</English>
 			<German>Ein Betontor mit Zahlenschloss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGE">
 			<English>Metal Drawbridge</English>
 			<German>Stahlzugbrücke</German>
@@ -27171,7 +27374,7 @@
 		<Key ID="STR_EPOCH_METALDRAWBRIDGE_DESC">
 			<English>Metal Drawbridge constructed out of metal and fire.</English>
 			<German>Eine Stahlzugbrücke bestehend aus Stahl und Feuer.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED">
 			<English>Metal Drawbridge Locked</English>
 			<German>Stahlzugbrücke (verschlossen)</German>
@@ -27187,7 +27390,7 @@
 		<Key ID="STR_EPOCH_METALPILLAR_DESC">
 			<English>Metal Pillar constructed out of metal.</English>
 			<German>Eine Metallsäule bestehend aus Stahl.</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_DOORWAY">
 			<English>Doorway</English>
 			<German>Türdurchgang</German>
@@ -27205,7 +27408,7 @@
 		<Key ID="STR_EPOCH_DOOR_DESC">
 			<English>Single door out of metal.</English>
 			<German>Eine einfache Tür aus Metall.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_DOORLOCKED">
 			<English>Door (locked)</English>
 			<German>Tür (verschlossen)</German>
@@ -27213,7 +27416,7 @@
 		<Key ID="STR_EPOCH_DOOR_LOCKED_DESC">
 			<English>Single door out of metal with a combination lock.</English>
 			<German>Eine einfache Tür aus Metall mit einem Zahlenschloss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
 			<German>Holzboden/Decke</German>
@@ -27238,7 +27441,7 @@
 			<English>Floor/Ceiling 4x</English>
 			<German>Holzboden/Decke 4x</German>
 			<Russian>Пол/Потолок 4x</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRS">
 			<English>Wooden Stairs</English>
 			<German>Holztreppe</German>
@@ -27266,7 +27469,7 @@
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS_DESC">
 			<English>Wooden floor with stairs constructed out of plywood and lumber.</English>
 			<German>Ein Holzboden mit Treppe bestehend aus Sperr- und Bauholz.</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_WOODLADDER">
 			<English>Wooden Ladder</English>
 			<German>Holzleiter</German>
@@ -27287,7 +27490,7 @@
 		<Key ID="STR_EPOCH_WOODPILLAR_DESC">
 			<English>Wood Pillar constructed out of lumber.</English>
 			<German>Eine Holzsäule bestehend aus Bauholz.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL">
 			<English>Triangle Wall</English>
 			<German>Dreieckige Wand</German>
@@ -27295,7 +27498,7 @@
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL_DESC">
 			<English>Triangle wall constructed out of plywood and lumber.</English>
 			<German>Eine dreieckige Holzwand bestehend aus Sperr- und Bauholz.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODFLOOR">
 			<English>Triangle Floor</English>
 			<German>Dreieckiger Boden</German>
@@ -27303,7 +27506,7 @@
 		<Key ID="STR_EPOCH_TRIANGLE_WOODFLOOR_DESC">
 			<English>Triangle floor constructed out of plywood and lumber.</English>
 			<German>Ein dreieckiger Holzboden bestehend aus Sperr- und Bauholz.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WOODWALL">
 			<English>Wooden Wall</English>
 			<German>Holzwand</German>
@@ -27383,7 +27586,7 @@
 			<English>Garage door with combination lock.</English>
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
 			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR">
 			<English>Wood Garage Door w/ no top</English>
 			<German>Holzgaragentür (rahmenlos)</German>
@@ -27401,7 +27604,7 @@
 			<English>Garage door with combination lock.</English>
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
 			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WOODGATEFRAME">
 			<English>Wooden Gate Frame</English>
 			<German>Holztorrahmen</German>
@@ -27409,7 +27612,7 @@
 		<Key ID="STR_EPOCH_WOODGATEFRAME_DESC">
 			<English>Wooden Gate Frame constructed out of plywood and lumber.</English>
 			<German>Ein Holztorrahmen bestehend aus Sperr- und Bauholz.</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_WOODGATE">
 			<English>Wooden Gate</English>
 			<German>Holztor</German>
@@ -27417,7 +27620,7 @@
 		<Key ID="STR_EPOCH_WOODGATE_DESC">
 			<English>Wooden Gate constructed out of plywood and lumber.</English>
 			<German>Ein Holztor bestehend aus Sperr- und Bauholz.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WOODGATELOCKED">
 			<English>Wooden Gate Locked</English>
 			<German>Holztor (verschlossen)</German>
@@ -27425,7 +27628,7 @@
 		<Key ID="STR_EPOCH_WOODGATELOCKED_DESC">
 			<English>Wooden Gate with combination lock.</English>
 			<German>Ein Holztor mit Zahlenschloss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_LARGEWOODWALL">
 			<English>Large Wooden Wall</English>
 			<German>Große Holzwand</German>
@@ -27799,7 +28002,7 @@
 			<English>Police Officer Uniform&lt;br/&gt;Sex: Female</English>
 			<German>Polizeiuniform&lt;br/&gt;Geschlecht: Weiblich</German>
 			<Russian>Униформа сотрудника полиции&lt;br/&gt;Пол: женский</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER2">
 			<English>Police Officer 2</English>
 			<German>Polizist 2</German>
@@ -28062,7 +28265,7 @@
 		<Key ID="STR_EPOCH_SKINS_CHANTAL_DESC">
 			<English>Chantal the woman for the fast trip.</English>
 			<German>Chantal, die Frau für die schnelle Sache.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_URSULA">
 			<English>Operator Ursula</English>
 		</Key>
@@ -28291,7 +28494,7 @@
 		<Key ID="STR_EPOCH_SKINS_DOCTOR_FEMALE_DESC">
 			<English>Clothing of a doctor.&lt;br/&gt;Sex: Female</English>
 			<German>Kleidung einer Ärztin.&lt;br/&gt;Geschlecht: Weiblich</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER">
 			<English>Worker</English>
 			<German>Arbeiter</German>
@@ -28303,7 +28506,7 @@
 		<Key ID="STR_EPOCH_SKINS_WORKER_FEMALE_DESC">
 			<English>Clothing of a worker.&lt;br/&gt;Sex: Female</English>
 			<German>Kleidung einer Arbeiterin.&lt;br/&gt;Geschlecht: Weiblich</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER1">
 			<English>Worker 1</English>
 			<German>Arbeiter 1</German>
@@ -28383,7 +28586,7 @@
 		<Key ID="STR_EPOCH_SKINS_THERMOSUITFEMALE">
 			<English>Woman in Thermo Suit</English>
 			<German>Frau in Thermoanzug</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTER">
 			<English>Thermo Suit (tan)</English>
 			<German>Thermoanzug (braun)</German>
@@ -28415,7 +28618,7 @@
 	    <Key ID="STR_DZE_EQUIP_NACSOLDIER_FEMALE_DESC">
 			<English>NAC Soldier suit&lt;br/&gt;Sex: Female</English>
 			<German>NAC-Soldatenanzug&lt;br/&gt;Geschlecht: Weiblich</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_TAMIKA">
 			<English>Tamika</English>
 		</Key>
@@ -28490,7 +28693,7 @@
 		 <Key ID="STR_DZE_EQUIP_STALKER_FEMALE_DESC">
 		 	<English>A pack of special armour that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
 		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
-		 </Key>		 
+		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
@@ -28514,7 +28717,7 @@
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_FEMALE_DESC">
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
-		 </Key>		 
+		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
 			<English>Scientist (Red rad-suit)</English>
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>
@@ -29111,7 +29314,7 @@
 		<Key ID="STR_DZE_SKIN_HOOKER_NAME">
 			<English>Hooker</English>
 			<German>Nutte</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
 			<German>Panzerung</German>
@@ -30811,7 +31014,7 @@
 		<Key ID="STR_CRAFTING_CORRUGATEDSHEETS">
 			<English>Craft Corrugated Sheet</English>
 			<German>Wellblech herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
 			<English>Needed items:</English>
 			<German>Benötigte Gegenstände:</German>
@@ -31143,7 +31346,7 @@
 		<Key ID="STR_EPOCH_DOGTAG_BANDIT_DESC">
 			<English>A dog tag from a killed bandit. Perhaps it can be sold at the Hero Trader.</English>
 			<German>Die Hundemarke eines getöteten Banditen. Vielleicht kann die Marke beim Heldenhändler verkauft werden.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_INFECTED">
 			<English>Blood Bag (infected)</English>
 			<German>Blutkonserve (infiziert)</German>
@@ -31151,7 +31354,7 @@
 		<Key ID="STR_EPOCH_BLOODBAG_INFECTED_DESC">
 			<English>A blood bag filled with blood that looks strange.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut, welches komisch aussieht.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_ZOMBIE">
 			<English>Zombie Blood</English>
 			<German>Zombieblut</German>
@@ -31159,7 +31362,7 @@
 		<Key ID="STR_EPOCH_BLOODBAG_ZOMBIE_DESC">
 			<English>A blood bag filled with blood from a zombie.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Zombies.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_RABBIT">
 			<English>Rabbit Blood</English>
 			<German>Hasenblut</German>
@@ -31167,7 +31370,7 @@
 		<Key ID="STR_EPOCH_BLOODBAG_RABBIT_DESC">
 			<English>A blood bag filled with blood from a rabbit.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Hasen.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_CHICKEN">
 			<English>Chicken Blood</English>
 			<German>Hühnerblut</German>
@@ -31215,22 +31418,22 @@
 		<Key ID="STR_EPOCH_BLOODBAG_SHEEP_DESC">
 			<English>A blood bag filled with blood from a sheep.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Schafes.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WEIGHT">
 			<English>Weight</English>
 			<German>Gewicht</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_Name">
 			<English>Name</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_HEALTH">
 			<English>Health</English>
 			<German>Gesundheit</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_SURVIVED">
 			<English>Survived</English>
 			<German>Überlebt</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_DAYS">
 			<English>Day(s)</English>
 			<German>Tag(e)</German>
@@ -31238,15 +31441,15 @@
 		<Key ID="STR_EPOCH_JOURNAL_HOURS">
 			<English>Hour(s)</English>
 			<German>Stunde(n)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_MINUTES">
 			<English>Minute(s)</English>
 			<German>Minute(n)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_SERVER_SETTINGS">
 			<English>Server Settings</English>
 			<German>Servereinstellungen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_BASE">
 			<English>Indestructible Bases</English>
 			<German>Unzerstörbare Basen</German>
@@ -31254,23 +31457,23 @@
 		<Key ID="STR_EPOCH_JOURNAL_PLOT">
 			<English>Plot Poles</English>
 			<German>Grundstücksmarkierungen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_BUILDINGLIMIT">
 			<English>Build Limit</English>
 			<German>Baulimit</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_PVE">
 			<English>PVE Mode</English>
 			<German>PVE-Modus</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PVE_ACTIVE_CANNOT_CHECK_WALLET">
 			<English>You cannot check the wallet of another player who is not in your group while the PVE Mode is active!</English>
 			<German>Du kannst die Brieftasche eines anderen Spielers, der nicht in deiner Gruppe ist, nicht durchsuchen, solange der PVE Modus aktiv ist.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_LOWER_BRIDGE">
 			<English>Lower Drawbridge</English>
 			<German>Zugbrücke herunterlassen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_RAISE_BRIDGE">
 			<English>Raise Drawbridge</English>
 			<German>Zugbrücke hochziehen</German>
@@ -31278,39 +31481,39 @@
 		<Key ID="STR_EPOCH_ACTION_LOCK_BRIDGE">
 			<English>Lock Drawbridge</English>
 			<German>Zugbrücke abschließen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_UNLOCK_BRIDGE">
 			<English>Unlock Drawbridge</English>
 			<German>Zugbrücke aufschließen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_BRIDGE">
 			<English>Craft Drawbridge</English>
 			<German>Zugbrücke herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODENTRIANGLEWALL">
 			<English>Craft Triangle Wall</English>
 			<German>Dreieckige Wand herstellen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODENTRIANGLEFLOOR">
 			<English>Craft Triangle Floor</English>
 			<German>Dreieckigen Boden herstellen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODHANDRAIL">
 			<English>Craft Wood Handrail</English>
 			<German>Holzgeländer herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODFLOORSTAIRS">
 			<English>Craft Floor Stairs</English>
 			<German>Boden mit Treppe herstellen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODPILLAR">
 			<English>Craft Pillar</English>
 			<German>Säule herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_METAL_DOORWAY">
 			<English>Craft Doorway</English>
 			<German>Türdurchgang herstellen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR">
 			<English>Craft Glass Floor</English>
 			<German>Glasboden herstellen</German>
@@ -31318,23 +31521,23 @@
 		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR_QUARTER">
 			<English>Craft Glass Floor 1/4</English>
 			<German>Glasboden 1/4 herstellen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR_HALF">
 			<English>Craft Glass Floor 1/2</English>
 			<German>Glasboden 1/2 herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_CONCRETE_BLOCK">
 			<English>Craft Concrete Block</English>
 			<German>Betonblock herstellen</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_CONCRETE_BUNKER">
 			<English>Craft Concrete Bunker</English>
 			<German>Betonbunker herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_CINDERWALL_WINDOW">
 			<English>Craft Wall w/ window</English>
 			<German>Wand mit Fenster herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>
 			<German>Tor öffnen</German>
@@ -31344,7 +31547,7 @@
 			<English>Close Gate</English>
 			<German>Tor schließen</German>
 			<Russian>Закрыть ворота</Russian>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_STONEOVEN">
 			<English>Stone Oven</English>
 			<German>Steinofen</German>
@@ -31352,7 +31555,7 @@
 		<Key ID="STR_EPOCH_STONEOVEN_DESC">
 			<English>A small stone oven that can be used for cooking.</English>
 			<German>Ein kleiner Steinofen, welcher zum Kochen benutzt werden kann.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_COMMODE">
 			<English>Commode</English>
 			<German>Kommode</German>
@@ -31368,7 +31571,7 @@
 		<Key ID="STR_EPOCH_WARDROBE_DESC">
 			<English>A big wardrobe that can hold a few items.</English>
 			<German>Ein großer Kleiderschrank, in welchem einige Gegenstände verstaut werden können.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_FRIDGE">
 			<English>Fridge</English>
 			<German>Kühlschrank</German>
@@ -31376,7 +31579,7 @@
 		<Key ID="STR_EPOCH_FRIDGE_DESC">
 			<English>A small fridge that can hold and cold a few items.</English>
 			<German>Ein kleiner Kühlschrank, in welchem einige Gegenstände gekühlt und verstaut werden können.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_WASHINGMACHINE">
 			<English>Washing Machine</English>
 			<German>Waschmaschine</German>
@@ -31392,7 +31595,7 @@
 		<Key ID="STR_EPOCH_SERVERRACK_DESC">
 			<English>A big server rack with many active server machines.</English>
 			<German>Ein großer Serverschrankmit vielen aktiven Servern.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ATM">
 			<English>ATM</English>
 			<German>Geldautomat</German>
@@ -31400,7 +31603,7 @@
 		<Key ID="STR_EPOCH_ATM_DESC">
 			<English>An ATM to deposit and withdraw currency.</English>
 			<German>Ein Geldautomat zum Abheben und Einzahlen einer Währung.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ARMCHAIR">
 			<English>Armchair</English>
 			<German>Sessel</German>
@@ -31408,14 +31611,14 @@
 		<Key ID="STR_EPOCH_ARMCHAIR_DESC">
 			<English>A comfortable armchair that is a good place to hide some items secretly.</English>
 			<German>Ein gemütlicher Sessel, in welchem gut ein paar Gegenstände versteckt werden können.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SOFA">
 			<English>Sofa</English>
 		</Key>
 		<Key ID="STR_EPOCH_SOFA_DESC">
 			<English>A comfortable sofa that is a good place to hide some items secretly.</English>
 			<German>Ein gemütliches Sofa, in welchem gut ein paar Gegenstände versteckt werden können.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ARCADE">
 			<English>Neo Geo Arcade</English>
 			<German>Neo Geo Spielautomat</German>
@@ -31431,7 +31634,7 @@
 		<Key ID="STR_EPOCH_VENDINGMACHINE1_DESC">
 			<English>An old vending-machine perhaps it still works.</English>
 			<German>Ein alter Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_VENDINGMACHINE2">
 			<English>Vending-Machine</English>
 			<German>Verkaufsautomat</German>
@@ -31439,14 +31642,14 @@
 		<Key ID="STR_EPOCH_VENDINGMACHINE2_DESC">
 			<English>A vending-machine perhaps it still works.</English>
 			<German>Ein Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK">
 			<English>Notebook</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK_DESC">
 			<English>Notebook</English>
 			<German>Notebook</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_WATERPUMP">
 			<English>Water Pump</English>
 			<German>Wasserpumpe</German>
@@ -31454,43 +31657,43 @@
 		<Key ID="STR_EPOCH_WATERPUMP_DESC">
 			<English>Water Pump</English>
 			<German>Wasserpumpe</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GREENHOUSE">
 			<English>Greenhouse</English>
 			<German>Gewächshaus</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GREENHOUSE_DESC">
 			<English>Greenhouse</English>
 			<German>Gewächshaus</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_BED">
 			<English>Bed</English>
 			<German>Bett</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BED_DESC">
 			<English>Bed</English>
 			<German>Bett</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_TABLE">
 			<English>Table</English>
 			<German>Tisch</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_TABLE_DESC">
 			<English>Table</English>
 			<German>Tisch</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_CHAIR">
 			<English>Wood Chair</English>
 			<German>Holzhtuhl</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CHAIR_DESC">
 			<English>Wood Chair</English>
 			<German>Holzhtuhl</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GARAGE_GREEN">
 			<English>Garage (green)</English>
 			<German>Garage (grün)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GARAGE_GREEN_DESC">
 			<English>Garage (green)</English>
 			<German>Garage (grün)</German>
@@ -31498,7 +31701,7 @@
 		<Key ID="STR_EPOCH_GARAGE_WHITE">
 			<English>Garage (white)</English>
 			<German>Garage (weiß)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GARAGE_WHITE_DESC">
 			<English>Garage (white)</English>
 			<German>Garage (weiß)</German>
@@ -31506,7 +31709,7 @@
 		<Key ID="STR_EPOCH_GARAGE_BROWN">
 			<English>Garage (brown)</English>
 			<German>Garage (braun)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GARAGE_BROWN_DESC">
 			<English>Garage (brown)</English>
 			<German>Garage (braun)</German>
@@ -31514,23 +31717,23 @@
 		<Key ID="STR_EPOCH_GARAGE_GREY">
 			<English>Garage (grey)</English>
 			<German>Garage (grau)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_GARAGE_GREY_DESC">
 			<English>Garage (grey)</English>
 			<German>Garage (grau)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_CIVIL">
 			<English>Helipad (Civil)</English>
 			<German>Helipad (Zivil)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_CIVIL_DESC">
 			<English>Helipad (Civil)</English>
 			<German>Helipad (Zivil)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_RESCUE">
 			<English>Helipad (Rescue)</English>
 			<German>Helipad (Hilfe)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_RESCUE_DESC">
 			<English>Helipad (Rescue)</English>
 			<German>Helipad (Hilfe)</German>
@@ -31538,15 +31741,15 @@
 		<Key ID="STR_EPOCH_HELIPAD_ARMY">
 			<English>Helipad (Army)</English>
 			<German>Helipad (Militär)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_ARMY_DESC">
 			<English>Helipad (Army)</English>
 			<German>Helipad (Militär)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_CROSS">
 			<English>Helipad (Cross)</English>
 			<German>Helipad (Kreuz)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_CROSS_DESC">
 			<English>Helipad (Cross)</English>
 			<German>Helipad (Kreuz)</German>
@@ -31554,19 +31757,19 @@
 		<Key ID="STR_EPOCH_HELIPAD_PARKBORDER">
 			<English>Helipad (Park Border)</English>
 			<German>Helipad (Parkbegrenzung)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_PARKBORDER_DESC">
 			<English>Helipad (Park Border)</English>
 			<German>Helipad (Parkbegrenzung)</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CCTV">
 			<English>CCTV</English>
 			<German>Überwachungskamera</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CCTV_DESC">
 			<English>CCTV</English>
 			<German>Überwachungskamera</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BROKEN_FUELTANK">
 			<English>Broken Fueltank Parts</English>
 			<German>Kaputte Treibstofftankteile</German>
@@ -31607,7 +31810,7 @@
 			<English>Broken Main Rotor Assembly that must be repaired.</English>
 			<German>Kaputte Hauptrotorteile, welche repariert werden müssen.</German>
 		</Key>
-		
+
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
@@ -31626,7 +31829,7 @@
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>		
+		</Key>
 	</Package>
 </Project>
 
