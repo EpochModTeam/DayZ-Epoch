@@ -21,6 +21,7 @@
 "PVDZE_obj_Trade"		addPublicVariableEventHandler {(_this select 1) spawn server_tradeObj};	//Logs trading
 "PVDZE_plr_DeathB"		addPublicVariableEventHandler {(_this select 1) spawn server_deaths};
 "PVDZE_handleSafeGear" 	addPublicVariableEventHandler {(_this select 1) call server_handleSafeGear};
+"SK_changeCode" 		addPublicVariableEventHandler {(_this select 1) call server_changeCode};
 
 if (dayz_groupSystem) then {
 	"PVDZ_Server_UpdateGroup" addPublicVariableEventHandler {(_this select 1) spawn server_updateGroup};
