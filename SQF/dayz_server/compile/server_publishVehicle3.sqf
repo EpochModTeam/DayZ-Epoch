@@ -64,7 +64,6 @@ diag_log ("PUBLISH: Attempt " + str(_object));
 #endif
 
 _dir = _worldspace select 0;
-_location = _worldspace select 1;
 _uid = _worldspace call dayz_objectUID2;
 
 _key = format["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _class, 0 , _characterID, _worldspace, _inv, _newHitpoints, _damage,_uid];
