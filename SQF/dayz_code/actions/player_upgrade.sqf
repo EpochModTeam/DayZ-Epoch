@@ -5,7 +5,7 @@
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_location","_dir","_classname","_hasAcces","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_ownerID","_qtyBP","_bpMags","_countNew","_bp2Remove","_count","_friendsArr","_vector","_temp_BP_removed_array","_finished","_neededTools"];
+private ["_location","_dir","_classname","_hasAccess","_missing","_text","_proceed","_num_removed","_object","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_newclassname","_requirements","_obj","_upgrade","_lockable","_combination_1","_combination_2","_combination_3","_combination","_objectCharacterID","_ownerID","_qtyBP","_bpMags","_countNew","_bp2Remove","_count","_friendsArr","_vector","_temp_BP_removed_array","_finished","_neededTools"];
 
 player removeAction s_player_upgrade_build;
 s_player_upgrade_build = 1;

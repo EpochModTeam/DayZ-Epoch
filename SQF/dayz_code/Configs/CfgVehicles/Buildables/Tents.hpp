@@ -12,6 +12,7 @@ class TentStorage_base : DZ_storage_base {
 };
 
 class TentStorage : TentStorage_base {
+	model = "\z\addons\dayz_communityassets\models\tent_a.p3d";
 	displayName = $STR_VEH_NAME_TENT;
 	transportMaxMagazines = 130;
 	transportMaxWeapons = 10;

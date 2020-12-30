@@ -144,7 +144,7 @@ if (_status < 4) then {
 			if (_ownerID == _playerUID) then {_lockCode = format["%1 - Owner",_lockCode];};
 			"Safe"
 		};
-		if (_type in ["LockboxStorage","LockboxStorageLocked","LockboxStorage2","LockboxStorage2Locked"]) exitwith {
+		if (_type in ["LockboxStorage","LockboxStorageLocked","LockboxStorage2","LockboxStorage2Locked","LockboxStorageWinterLocked","LockboxStorageWinter2Locked","LockboxStorageWinter","LockboxStorageWinter2"]) exitwith {
 			if (_ownerID == _playerUID) then {
 				_lockCode = _charID call fnc_lockCode;
 				_lockCode = format["%1 - Owner",_lockCode];

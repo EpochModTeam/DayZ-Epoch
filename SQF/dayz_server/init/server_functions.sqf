@@ -47,6 +47,7 @@ server_checkIfTowed = compile preprocessFileLineNumbers "\z\addons\dayz_server\c
 server_handleSafeGear = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_handleSafeGear.sqf";
 server_spawnTraders = compile preprocessFile "\z\addons\dayz_server\compile\server_spawnTraders.sqf";
 server_updateGroup = compile preprocessFileLineNumbers "\z\addons\dayz_code\groups\server_updateGroup.sqf";
+server_changeCode = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_changeCode.sqf";
 
 spawn_ammosupply = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_ammosupply.sqf";
 spawn_mineveins = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_mineveins.sqf";
@@ -54,8 +55,6 @@ spawn_roadblocks = compile preprocessFileLineNumbers "\z\addons\dayz_server\comp
 spawn_vehicles = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_vehicles.sqf";
 
 fnc_veh_setFixServer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_setFixServer.sqf";	//process the hit as a NORMAL damage (useful for persistent vehicles)
-
-call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_changeCode.sqf";
 
 server_medicalSync = {
 	local _player = _this select 0;
