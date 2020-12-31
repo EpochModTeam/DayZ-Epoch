@@ -63,8 +63,7 @@ if !(alive _item) then {
 	dayz_lastMeal =	time;
 	dayz_hunger = 0;
 
-	PVDZ_plr_Save = [player,nil,dayz_onBack];
-	publicVariableServer "PVDZ_plr_Save";
+	call player_regularSave;
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 

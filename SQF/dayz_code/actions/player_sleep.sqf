@@ -115,6 +115,5 @@ player setVariable ["sleeping",false];
 dayz_actionInProgress = false;
 
 //Removed due to player sync returning []
-//PVDZ_plr_Save = [player,nil,true,dayz_playerAchievements];
-//publicVariableServer "PVDZ_plr_Save";
+//call player_regularSave;
 R3F_TIRED_Accumulator = 0;

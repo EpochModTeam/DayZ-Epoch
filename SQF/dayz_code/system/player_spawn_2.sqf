@@ -260,8 +260,7 @@ while {1 == 1} do {
 	if (dayz_unsaved || {(diag_ticktime - dayz_lastSave) > 300}) then {
 		if ((diag_ticktime - dayz_lastSave) > _saveTime) then {
 
-			PVDZ_plr_Save = [player,nil,dayz_onBack];
-			publicVariableServer "PVDZ_plr_Save";
+			call player_regularSave;
 			dayz_unsaved = false;
 			dayz_lastSave = diag_ticktime;
 		};
