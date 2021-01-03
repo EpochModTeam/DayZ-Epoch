@@ -52,9 +52,8 @@ if (_classname isKindOf "Bag_Base_EP1") exitWith {
 
 	waitUntil { !isNull (unitBackpack player) };
 	uiSleep 0.03;
-
-	PVDZ_plr_Save = [player,nil,dayz_onBack];
-	publicVariableServer "PVDZ_plr_Save";
+	
+	call player_regularSave;
 };
 
 _config = (configFile >> _type >> _classname);
