@@ -401,3 +401,19 @@ class Vendmachine2_DZ: BuiltItems
 	removeoutput[] = {{"vendmachine2_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
+
+class StorageCrate_DZ: BuiltItems 
+{
+	scope = 2;
+	model = "z\addons\dayz_buildings\models\item_storage.p3d";
+	displayName = $STR_EPOCH_STORAGECRATE;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	constructioncount = 1;
+	offset[] = {0,2.5,0};
+	transportMaxWeapons = 3;	
+	transportMaxMagazines = 60;
+	transportmaxbackpacks = 1;
+	removeoutput[] = {{"storage_crate_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};

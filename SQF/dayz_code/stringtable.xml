@@ -23798,7 +23798,7 @@
 		<Key ID="STR_EPOCH_PLAYER_260_1">
 			<English>Craft Advanced Workbench</English>
 			<German>Verbesserte Werkbank herstellen</German>
-		</Key>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_261">
 			<English>Craft Shack</English>
 			<German>Schuppen herstellen</German>
@@ -31752,6 +31752,10 @@
 			<English>Craft Wall w/ window</English>
 			<German>Wand mit Fenster herstellen</German>
 		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_STORAGE_CRATE">
+			<English>Craft Storage Crate</English>
+			<German>Lagerkiste herstellen</German>
+		</Key>		
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>
 			<German>Tor öffnen</German>
@@ -31857,6 +31861,14 @@
 			<English>A vending-machine perhaps it still works.</English>
 			<German>Ein Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
 		</Key>
+		<Key ID="STR_EPOCH_STORAGECRATE">
+			<English>Storage Crate</English>
+			<German>Lagerkiste</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGECRATE_DESC">
+			<English>A small wooden storage crate for small bases.</English>
+			<German>Eine kleine Lagerkiste, welche sehr gut für kleine Basen geeignet ist.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_NOTEBOOK">
 			<English>Notebook</English>
 		</Key>
@@ -32024,6 +32036,18 @@
 			<English>Broken Main Rotor Assembly that must be repaired.</English>
 			<German>Kaputte Hauptrotorteile, welche repariert werden müssen.</German>
 		</Key>
+		<Key ID="STR_EPOCH_BONES_GRAVE">
+			<English>Bones Grave</English>
+			<German>Knochengrab</German>
+		</Key>		
+		<Key ID="STR_EPOCH_DEAD_SOLDIER">
+			<English>Dead Soldier</English>
+			<German>Toter Soldat</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PILE_RUBBISH">
+			<English>Garbage heab</English>
+			<German>Müllhaufen</German>
+		</Key>		
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">

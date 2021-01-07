@@ -128,3 +128,13 @@ class DZ_AmmoBoxLongGUE : DZ_AmmoBoxSmallUS
 {	
 	model = "\ca\weapons\AmmoBoxes\SpecialWeapons.p3d";
 };
+
+class ItemStorage;
+class DZ_ItemStorage : ItemStorage
+{
+	displayName = $STR_EPOCH_STORAGECRATE;
+	transportMaxMagazines = 1000;
+	transportMaxWeapons = 1000;
+	transportMaxBackpacks = 20;
+	vehicleClass = "DayZ Epoch Crates";
+};	
