@@ -1,4 +1,3 @@
-
 class Man; //includes animals and zombies
 class CAManBase: Man //includes all skins except animals
 {
@@ -69,13 +68,13 @@ class Civilian: CAManBase
 
 class Survivor_DZ : Civilian {
 	scope = 0;
-	side = TWest;
+	side = 1;
 	weapons[] = {"Throw", "Put"};
 	magazines[] = {};
 	respawnWeapons[] = {"Throw", "Put"};
 	respawnMagazines[] = {};
 	weaponSlots = 1	 + 	4	 + 12*		256	 + 2*	4096	 + 	2	 + 8*	16  + 12*131072;
-	canHideBodies = false; //fn_selfaction handles hide bodie
+	canHideBodies = false; //fn_selfaction handles hide body
 	backpack = "";
 	canCarryBackPack = 1;
 	enableGPS = 1;

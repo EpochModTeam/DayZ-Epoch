@@ -426,6 +426,9 @@ class CfgVehicles
 	#include "Boat\smallboat.hpp"
 	#include "Boat\JetSkiYanahui.hpp"
 	#include "Boat\Seafox.hpp"
+	
+	//Epoch Parachute
+	#include "Parachute.hpp"
 
 	//Includes all Building Stuff
 	//Houses

@@ -22,8 +22,8 @@ if (!([_objPos] call DZE_SafeZonePosCheck)) then {
 	// Walking Zombies
 	for "_i" from 0 to _num do {
 		if ((dayz_spawnZombies < dayz_maxControlledZombies) && {dayz_CurrentNearByZombies < dayz_maxNearByZombies} && {dayz_currentGlobalZombies < dayz_maxGlobalZeds}) then {
-			_position = [_objPos,_minDist,_maxDist,1] call fn_selectRandomLocation;
-			[_position,true,_unitTypes,_isWreck,false] call zombie_generate;
+			//_position = [_objPos,_minDist,_maxDist,1] call fn_selectRandomLocation;
+			[_objPos,true,_unitTypes,_isWreck,false] call zombie_generate;
 		};
 	};
 
