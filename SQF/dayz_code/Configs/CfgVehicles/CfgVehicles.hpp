@@ -461,10 +461,11 @@ class CfgVehicles
 	#include "WaterSources.hpp"	
 	#include "Blood_Trail_DZ.hpp"
 	#include "DebugBox.hpp"
-	#include "Graves.hpp" // GraveDZE and Massgrave
+	#include "Graves.hpp" // GraveDZE, Massgrave, dead bodies
 	#include "Veins.hpp" //Veins and Wrecks
 	#include "SupplyCrate.hpp" //Supply Crate and Wreck
 	#include "InfectedCamps.hpp"		
+	#include "Rubbish.hpp"
 	
 	//Buildables
 	class DZ_storage_base : Land_A_tent {
