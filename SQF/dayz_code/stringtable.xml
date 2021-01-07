@@ -13995,26 +13995,32 @@
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT">
 			<English>Winter Dome Tent</English>
 			<German>Winterigluzelt</German>
+			<Russian>Зимняя палатка-полусфера</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT1">
 			<English>Winter Dome Tent +</English>
 			<German>Winterigluzelt +</German>
+			<Russian>Зимняя палатка-полусфера +</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT2">
 			<English>Winter Dome Tent ++</English>
 			<German>Winterigluzelt ++</German>
+			<Russian>Зимняя палатка-полусфера ++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT3">
 			<English>Winter Dome Tent +++</English>
 			<German>Winterigluzelt +++</German>
+			<Russian>Зимняя палатка-полусфера +++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT4">
 			<English>Winter Dome Tent ++++</English>
 			<German>Winterigluzelt ++++</German>
+			<Russian>Зимняя палатка-полусфера ++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_WINTER_DOME_TENT5">
 			<English>Winter Dome Tent +++++</English>
 			<German>Winterigluzelt +++++</German>
+			<Russian>Зимняя палатка-полусфера +++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENT">
 			<English>Camping Tent</English>
@@ -14067,26 +14073,32 @@
 		<Key ID="STR_VEH_NAME_TENTWINTER">
 			<English>Winter Camping Tent</English>
 			<German>Winterzelt</German>
+			<Russian>Зимняя палатка-домик</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER1">
 			<English>Winter Camping Tent +</English>
 			<German>Winterzelt +</German>
+			<Russian>Зимняя палатка-домик +</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER2">
 			<English>Winter Camping Tent ++</English>
 			<German>Winterzelt ++</German>
+			<Russian>Зимняя палатка-домик ++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER3">
 			<English>Winter Camping Tent +++</English>
 			<German>Winterzelt +++</German>
+			<Russian>Зимняя палатка-домик +++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER4">
 			<English>Winter Camping Tent ++++</English>
 			<German>Winterzelt ++++</German>
+			<Russian>Зимняя палатка-домик ++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TENTWINTER5">
 			<English>Winter Camping Tent +++++</English>
 			<German>Winterzelt +++++</German>
+			<Russian>Зимняя палатка-домик +++++</Russian>
 		</Key>
 		<Key ID="STR_BUILT_WIRE1">
 			<English>Wire (CAT1)</English>
@@ -21532,20 +21544,20 @@
 		<!-- 9mm Suppressor PM -->
 		<Key ID="STR_DZ_ATT_SUP9PM_NAME">
 			<English>[A] 9mm silencer (PM)</English>
-			<Russian>[М] 9мм глуш. (ПМ)</Russian>
+			<Russian>[М] 9мм глушитель (ПМ)</Russian>
 			<Czech>Příslušenství - tlumič pro Makarov</Czech>
 			<German>[E] Makarov Schalldämpfer</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP9PM_DESC">
 			<English>A silencer that can be attached to Makarov.</English>
-			<Russian>ПБС для пистолета Макарова.</Russian>
+			<Russian>Прибор бесшумной стрельбы для пистолета Макарова.</Russian>
 			<Czech>Tlumič, používá se pro vylepšení pistole Makarov.</Czech>
 			<German>Ein Schalldämpfer, welcher an eine Makarov angebracht werden kann.</German>
 		</Key>
 		<!-- 9mm Suppressor Bizon -->
 		<Key ID="STR_DZ_ATT_SUP9BIZON_NAME">
 			<English>[A] 9mm silencer (Bizon)</English>
-			<Russian>[М] 9мм глуш. (Бизон)</Russian>
+			<Russian>[М] 9мм глушитель (Бизон)</Russian>
 			<Czech>Příslušenství - tlumič pro Bizon</Czech>
 			<German>[E] Bizon Schalldämpfer</German>
 		</Key>
@@ -21884,74 +21896,92 @@
 		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_NAME">
 			<English>[A] ANPVS4 Scope</English>
 			<German>[E] ANPVS4 Visier</German>
+			<Russian>[М] Прицел ANPVS4</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_ANPVS4_DESC">
 			<English>ANPVS4 scope</English>
 			<German>Zielfernrohr vom Typ ANPVS4.</German>
+			<Russian>AN/PVS-4 - ночной оптический прицел и прибор ночного видения третьего поколения.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_ANPVS4_RMVE">
 			<English>Remove ANPVS4 scope</English>
 			<German>ANPVS4 entfernen</German>
+			<Russian>Снять прицел ANPVS4</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_DES_NAME">
 			<English>[A] Small camo net. (desert)</English>
 			<German>[E] Kl. Tarnnetz (Wüstentarn)</German>
+			<Russian>[М] Малая маскировочная сеть (Пустынная)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_SNOW_NAME">
 			<English>[A] Small camo net. (snow)</English>
 			<German>[E] Kl. Tarnnetz (Schneetarn)</German>
+			<Russian>[М] Малая маскировочная сеть (Зимняя)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_URB_NAME">
 			<English>[A] Small camo net. (urban)</English>
 			<German>[E] Kl. Tarnnetz (Stadttarn)</German>
+			<Russian>[М] Малая маскировочная сеть (Городская)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_LASER_NAME">
 			<English>[A] Laser Pointer</English>
 			<German>[E] Laserpointer</German>
+			<Russian>[М] Лазерный целеуказатель</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_LASER_DESC">
 			<English>A laser pointer that can be attached to weapons.</English>
 			<German>Ein Laserpointer, der an Waffen angebracht werden kann.</German>
+			<Russian>Лазерный целеуказатель, который можно присоединить к оружию.</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_NSPU_NAME">
 			<English>[A] NSPU scope</English>
 			<German>[E] NSPU-Visier</German>
+			<Russian>[М] Прицел НСПУ</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_NSPU_DESC">
 			<English>NSPU scope</English>
 			<German>Zielfernrohr vom Typ NSPU.</German>
+			<Russian>Ночной Стрелковый Прицел Унифицированный - советский бесподсветный ночной оптический прицел, созданный для прицельной стрельбы из автоматов семейства АК, пулемётов семейства РПК и ПКМ, снайперских винтовок СВД, ручного противотанкового гранатомета РПГ в условиях естественной ночной освещенности.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_NSPU_RMVE">
 			<English>Remove NSPU scope</English>
 			<German>NSPU entfernen</German>
+			<Russian>Снять прицел НСПУ</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_NV_NAME">
 			<English>[A] NV scope</English>
 			<German>[E] NV-Visier</German>
+			<Russian>[М] Ночной прицел</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_NV_DESC">
 			<English>A generic Night vision scope.</English>
 			<German>Generisches Nachtsichvisier.</German>
+			<Russian>Универсальный прицел ночного видения.</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_TWS_NAME">
 			<English>[A] TWS scope</English>
 			<German>[E] TWS-Visier</German>
+			<Russian>[М] Прицел TWS</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_TWS_DESC">
 			<English>A TWS scope.</English>
 			<German>Zielfernrohr vom Typ TWS.</German>
+			<Russian>Тепловизионный прицел.</Russian>
 		</Key>
 		<Key ID="STR_ATTACHMENT_RMVE_TWS">
 			<English>Remove TWS scope</English>
 			<German>TWS entfernen</German>
+			<Russian>Снять прицел TWS</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_45SUP_NAME">
 			<English>[A] .45cal Suppressor</English>
 			<German>[E] .45cal Schalldämpfer</German>
+			<Russian>[М] .45 глушитель</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_45SUP_DESC">
 			<English>A silencer that can be attached to .45 caliber weapons.</English>
 			<German>Ein Schalldämpfer, der an Kaliber .45 Waffen angebracht werden kann.</German>
+			<Russian>Глушитель, который может быт присоединен к оружию .45-го калибра.</Russian>
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
@@ -24090,15 +24120,15 @@
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP">
 			<English>Offroad Performance</English>
-			<Russian>Внедорожная эффективность</Russian>
+			<Russian>Улучшение проходимости (легковые)</Russian>
 			<Dutch>Offroad Prestaties</Dutch>
 			<French>Performances tout-terrain</French>
 			<Czech>Terénní výkonnost</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_DESC">
-			<English>Offroad performace manual to increase the offroad speed of a vehicle.&lt;br/&gt;Upgrade: 1/4</English>
+			<English>Offroad performance manual to increase the offroad speed of a vehicle.&lt;br/&gt;Upgrade: 1/4</English>
 			<German>Offroad-Performance Handbuch, um die Geschwindigkeit eines Fahrzeugs abseits der Straßen zu erhöhen.&lt;br/&gt;Upgrade: 1/4</German>
-			<Russian>Руководство по улучшению внедорожной эффективности.&lt;br/&gt;Upgrade: 1/4</Russian>
+			<Russian>Руководство по улучшению внедорожной эффективности легковых транспортных средств.&lt;br/&gt;Улучшение: 1/4</Russian>
 			<Dutch>Handleiding over offroad prestaties.&lt;br/&gt;Upgrade: 1/4</Dutch>
 			<French>Manuel sur les performances tout-terrain.&lt;br/&gt;Upgrade: 1/4</French>
 			<Czech>Manuál terénní výkonnosti.&lt;br/&gt;Upgrade: 1/4</Czech>
@@ -24106,23 +24136,27 @@
 		<Key ID="STR_EPOCH_VEHUP_AVE">
 			<English>Vehicle Armor</English>
 			<German>Fahrzeugpanzerung</German>
+			<Russian>Улучшение брони (легковые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_DESC">
 			<English>Manual to install and upgrade the armor of the vehicle.&lt;br/&gt;Upgrade: 2/4</English>
 			<German>Handbuch zum Installieren und Upgraden der Panzerung eines Fahrzeugs.&lt;br/&gt;Upgrade: 2/4</German>
+			<Russian>Руководство по установке и улучшению брони легковых транспортных средств.&lt;br/&gt;Улучшение: 2/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK">
 			<English>Cargo Space</English>
 			<German>Laderaum</German>
+			<Russian>Увеличение вместительности (легковые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_DESC">
 			<English>Manual to upgrade the cargo space of a vehicle.&lt;br/&gt;Upgrade: 3/4</English>
 			<German>Handbuch zum Upgraden des Laderaums eines Fahrzeugs.&lt;br/&gt;Upgrade: 3/4</German>
+			<Russian>Руководство по увеличению вместительности легковых транспортных средств.&lt;br/&gt;Улучшение: 3/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK">
 			<English>Fuel Tank</English>
 			<German>Benzintank</German>
-			<Russian>Топливный бак</Russian>
+			<Russian>Улучшение топливного бака (легковые)</Russian>
 			<Dutch>Benzinetank</Dutch>
 			<French>Réservoir</French>
 			<Czech>Palivová nádrž</Czech>
@@ -24130,7 +24164,7 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK_DESC">
 			<English>Install guide for a bigger fuel tank.&lt;br/&gt;Upgrade: 4/4</English>
 			<German>Installationsanleitung für einen größeren Benzintank.&lt;br/&gt;Upgrade: 4/4</German>
-			<Russian>Руководство по установке топливного бака.&lt;br/&gt;Upgrade: 4/4</Russian>
+			<Russian>Руководство по увеличению топливного бака легковых транспортных средств.&lt;br/&gt;Улучшение: 4/4</Russian>
 			<Dutch>Installatiehandleiding voor de benzinetank.&lt;br/&gt;Upgrade: 4/4</Dutch>
 			<French>Guide d'installation du réservoir.&lt;br/&gt;Upgrade: 4/4</French>
 			<Czech>Návod na instalaci Palivové nádrže.&lt;br/&gt;Upgrade: 4/4</Czech>
@@ -24138,114 +24172,139 @@
 		<Key ID="STR_EPOCH_VEHUP_ARM">
 			<English>Weapon Upgrade</English>
 			<German>Bewaffnung-Upgrade</German>
-			<Russian>Установка оружия</Russian>
+			<Russian>Установка оружия (легковые)</Russian>
 			<Czech>Vylepšení zbraně na vozidle</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_DESC">
 			<English>Installation instructions for the vehicle armament.&lt;br/&gt;Additional Upgrade</English>
 			<German>Installationsanleitung für die Fahrzeugbewaffnung.&lt;br/&gt;Zusatz-Upgrade</German>
-			<Russian>Руководство по установке оружия.&lt;br/&gt;Additional Upgrade</Russian>
+			<Russian>Руководство по вооружению легковых транспортных средств.&lt;br/&gt;Дополнительное улучшение</Russian>
 			<Czech>Návod na instalaci zbraně na vozidlo.&lt;br/&gt;Additional Upgrade</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TRUCK">
 			<English>Truck Offroad Performance</English>
 			<German>LKW-Offroad Performance</German>
+			<Russian>Улучшение проходимости (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TRUCK_DESC">
-			<English>Offroad performace manual to increase the offroad speed of trucks.&lt;br/&gt;Upgrade: 1/4</English>
+			<English>Offroad performance manual to increase the offroad speed of trucks.&lt;br/&gt;Upgrade: 1/4</English>
 			<German>Offroad-Performance Handbuch, um die Geschwindigkeit von LKWs abseits der Straßen zu erhöhen.&lt;br/&gt;Upgrade: 1/4</German>
+			<Russian>Руководство по улучшению внедорожной эффективности грузовых автомобилей.&lt;br/&gt;Улучшение: 1/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TRUCK">
 			<English>Truck Armor</English>
 			<German>LKW-Panzerung</German>
+			<Russian>Улучшение брони (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TRUCK_DESC">
 			<English>Manual to install and upgrade the armor of trucks.&lt;br/&gt;Upgrade: 2/4</English>
 			<German>Handbuch zum Installieren und Upgraden der Panzerung von LKWs.&lt;br/&gt;Upgrade: 2/4</German>
+			<Russian>Руководство по установке и улучшению брони грузовых автомобилей.&lt;br/&gt;Улучшение: 2/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TRUCK">
 			<English>Truck Cargo Space</English>
 			<German>LKW-Laderaum</German>
+			<Russian>Увеличение вместительности (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TRUCK_DESC">
 			<English>Manual to upgrade the cargo space of a truck.&lt;br/&gt;Upgrade: 3/4</English>
 			<German>Handbuch zum Upgraden des Laderaums eines LKWs.&lt;br/&gt;Upgrade: 3/4</German>
+			<Russian>Руководство по увеличению вместительности грузовых автомобилей.&lt;br/&gt;Улучшение: 3/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK">
 			<English>Truck Fuel Tank</English>
 			<German>LKW-Benzintank</German>
+			<Russian>Улучшение топливного бака (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK_DESC">
 			<English>Install guide for bigger truck fuel tanks.&lt;br/&gt;Upgrade: 4/4</English>
 			<German>Installationsanleitung für einen größeren Benzintank bei LKWs.&lt;br/&gt;Upgrade: 4/4</German>
+			<Russian>Руководство по увеличению топливного бака грузовых автомобилей.&lt;br/&gt;Улучшение: 4/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_TRUCK">
 			<English>Truck Weapon Upgrade</English>
 			<German>LKW-Bewaffnungs-Upgrade</German>
+			<Russian>Установка оружия (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_TRUCK_DESC">
 			<English>Installation instructions for the truck armament.&lt;br/&gt;Additional Upgrade</English>
 			<German>Installationsanleitung für die LKW-Bewaffnung.&lt;br/&gt;Zusatz-Upgrade</German>
+			<Russian>Руководство по вооружению грузовых автомобилей.&lt;br/&gt;Дополнительное улучшение</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TANK">
 			<English>Tank Performance</English>
 			<German>Panzer-Performance</German>
+			<Russian>Увеличение скорости (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TANK_DESC">
-			<English>Performace manual to increase the speed of tanks.&lt;br/&gt;Upgrade: 1/4</English>
+			<English>Performance manual to increase the speed of tanks.&lt;br/&gt;Upgrade: 1/4</English>
 			<German>Performance Handbuch, um die Geschwindigkeit von Panzern zu erhöhen.&lt;br/&gt;Upgrade: 1/4</German>
+			<Russian>Руководство по увеличению скоростных характеристик танков.&lt;br/&gt;Улучшение: 1/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TANK">
 			<English>Tank Armor</English>
 			<German>Panzer-Panzerung</German>
+			<Russian>Улучшение брони (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TANK_DESC">
 			<English>Manual to install and upgrade the armor of tanks.&lt;br/&gt;Upgrade: 2/4</English>
 			<German>Handbuch zum Installieren und Upgraden der Panzerung von Panzern.&lt;br/&gt;Upgrade: 2/4</German>
+			<Russian>Руководство по усилению брони танков.&lt;br/&gt;Улучшение: 2/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TANK">
 			<English>Tank Cargo Space</English>
 			<German>Panzer-Laderaum</German>
+			<Russian>Увеличение вместительности (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TANK_DESC">
 			<English>Manual to upgrade the cargo space of a tank.&lt;br/&gt;Upgrade: 3/4</English>
 			<German>Handbuch zum Upgraden des Laderaums eines Panzers.&lt;br/&gt;Upgrade: 3/4</German>
+			<Russian>Руководство по увеличению вместительности танков.&lt;br/&gt;Улучшение: 3/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TANK">
 			<English>Tank Fuel Tank</English>
 			<German>Panzer-Benzintank</German>
+			<Russian>Улучшение топливного бака (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TANK_DESC">
 			<English>Install guide for bigger tank fuel tanks.&lt;br/&gt;Upgrade: 4/4</English>
 			<German>Installationsanleitung für einen größeren Benzintank bei Panzern.&lt;br/&gt;Upgrade: 4/4</German>
+			<Russian>Руководство по увеличению топливного бака танков.&lt;br/&gt;Улучшение: 4/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_HELI">
 			<English>Helicopter Armor</English>
 			<German>Helikopter-Panzerung</German>
+			<Russian>Улучшение брони (вертолеты)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_HELI_DESC">
 			<English>Manual to install and upgrade the armor of helicopters.&lt;br/&gt;Upgrade: 1/3</English>
 			<German>Handbuch zum Installieren und Upgraden der Panzerung von Helikoptern.&lt;br/&gt;Upgrade: 1/3</German>
+			<Russian>Руководство по усилению брони вертолетов.&lt;br/&gt;Улучшение: 1/3</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_HELI">
 			<English>Helicopter Cargo Space</English>
 			<German>Helikopter-Laderaum</German>
+			<Russian>Увеличение вместительности (вертолеты)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_HELI_DESC">
 			<English>Manual to upgrade the cargo space of a helicopter.&lt;br/&gt;Upgrade: 2/3</English>
 			<German>Handbuch zum Upgraden des Laderaums eines Helikopters.&lt;br/&gt;Upgrade: 2/3</German>
+			<Russian>Руководство по увеличению вместительности вертолетов.&lt;br/&gt;Улучшение: 2/3</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_HELI">
 			<English>Helicopter Fuel Tank</English>
 			<German>Helikopter-Tank</German>
+			<Russian>Улучшение топливного бака (вертолеты)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_HELI_DESC">
 			<English>Install guide for bigger helicopter fuel tanks.&lt;br/&gt;Upgrade: 3/3</English>
 			<German>Installationsanleitung für einen größeren Benzintank bei Helikoptern.&lt;br/&gt;Upgrade: 3/3</German>
+			<Russian>Руководство по увеличению топливного бака вертолетов.&lt;br/&gt;Улучшение: 3/3</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_IN_PROGRESS">
 			<English>Vehicle Upgrade in progress, please wait...</English>
 			<German>Fahrzeug-Upgrade im Gange, bitte warte...</German>
+			<Russian>Идет улучшение, пожалуйста подождите...</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_SUCCESS">
 			<English>Vehicle Upgrade Successful.</English>
@@ -24256,6 +24315,7 @@
 		<Key ID="STR_EPOCH_VEHUP_DISTANCE_TOO_FAR">
 			<English>You are too far away to upgrade %1!</English>
 			<German>Du bist zu weit entfernt, um %1 abzugraden!</German>
+			<Russian>Вы слишком далеко чтобы улучшить %1!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_NO_UPGRADE_FOR_VEHICLE">
 			<English>There is no %1 upgrade for %2 available!</English>
@@ -24264,6 +24324,7 @@
 		<Key ID="STR_EPOCH_VEHUP_NOT_ALLOWED">
 			<English>The vehicle upgrade for %1 got disabled on this server!</English>
 			<German>Das Fahrzeug-Upgrade für %1 wurde auf diesem Server deaktiviert!</German>
+			<Russian>Улучшения для %1 запрещены на этом сервере!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_LGB">
 			<English>Large Gunbag</English>
