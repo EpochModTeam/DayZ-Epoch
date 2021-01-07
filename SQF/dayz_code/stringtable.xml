@@ -24336,7 +24336,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_LGB">
 			<English>Large Gunbag &lt;br/&gt;Capacity: 60 items</English>
 			<German>Große Waffentasche &lt;br/&gt;Volumen: 60 Liter</German>
-			<Russian>Большая оружейная сумка (60 слотов)</Russian>
+			<Russian>Большая оружейная сумка. &lt;br/&gt;Вместимость: 60 слотов</Russian>
 			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 60 liter</Dutch>
 			<French>Grand Fourreau &lt;br/&gt;Taille: 60</French>
 		</Key>
@@ -24350,7 +24350,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_GB">
 			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
 			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
-			<Russian>Оружейная сумка (35 слотов)</Russian>
+			<Russian>Оружейная сумка. &lt;br/&gt;Вместимость: 35 слотов</Russian>
 			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
 			<French>Fourreau&lt;br/&gt;Taille: 35</French>
 		</Key>
@@ -24364,7 +24364,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_COMPACT">
 			<English>Compact Pack &lt;br/&gt;Capacity: 25 items</English>
 			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
-			<Russian>Компактный рюкзак (25 слотов)</Russian>
+			<Russian>Компактный рюкзак. &lt;br/&gt;Вместимость: 25 слотов</Russian>
 			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
 			<French>Sac Compact &lt;br/&gt;Taille: 25</French>
 		</Key>
@@ -24378,7 +24378,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL">
 			<English>Terminal Pack &lt;br/&gt;Capacity: 15 items</English>
 			<German>Terminal Rucksack &lt;br/&gt;Volumen: 15 Liter</German>
-			<Russian>Вокзальный рюкзак (15 слотов)</Russian>
+			<Russian>Вокзальный рюкзак. &lt;br/&gt;Вместимость: 15 слотов</Russian>
 			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 15 liter</Dutch>
 			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 15</French>
 		</Key>
@@ -24395,7 +24395,7 @@
 		<Key ID="STR_BACKPACK_DESC_PATROL_DZE1">
 			<English>Patrol Backpack &lt;br/&gt;Capacity: 10 items</English>
 			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 10</French>
-			<Russian>Рюкзак на (10 слотов)</Russian>
+			<Russian>Патрульный рюкзак. &lt;br/&gt;Вместимость: 10 слотов</Russian>
 			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;10 litros</Spanish>
 			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 10 litrů</Czech>
 			<German>Patrol Rucksack von "Coyote" &lt;br/&gt;Volumen: 10 Liter</German>
@@ -24412,7 +24412,7 @@
 		<Key ID="STR_BACKPACK_DESC_PATROL_DZE2">
 			<English>Patrol Backpack &lt;br/&gt;Capacity: 15 items</English>
 			<French>Sac de patrouille (coyote) &lt;br/&gt;Taille: 15</French>
-			<Russian>Рюкзак на (15 слотов)</Russian>
+			<Russian>Патрульный рюкзак. &lt;br/&gt;Вместимость: 15 слотов</Russian>
 			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;15 litros</Spanish>
 			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 15 litrů</Czech>
 			<German>Patrol Rucksack von "Coyote". &lt;br/&gt;Volumen: 15 Liter</German>
@@ -24420,18 +24420,22 @@
 		<Key ID="STR_BACKPACK_NAME_GYMBAG_DZE1">
 			<English>Gym Bag</English>
 			<German>Sportbeutel</German>
+			<Russian>Спортивная сумка</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_GYMBAG_DZE1">
 			<English>Gym Bag &lt;br/&gt;Capacity: 10 items</English>
 			<German>Sportbeutel &lt;br/&gt;Volumen: 10 Liter</German>
+			<Russian>Спортивная сумка. &lt;br/&gt;Вместимость: 10 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_GYMBAG_DZE2">
 			<English>Gym Bag+</English>
 			<German>Sportbeutel+</German>
+			<Russian>Спортивная сумка+</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_GYMBAG_DZE2">
 			<English>Gym Bag &lt;br/&gt;Capacity: 15 items</English>
 			<German>Sportbeutel &lt;br/&gt;Volumen: 15 Liter</German>
+			<Russian>Спортивная сумка. &lt;br/&gt;Вместимость: 15 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_VEST_DZE1">
 			<English>Czech Vest Pouch</English>
@@ -24445,7 +24449,7 @@
 		<Key ID="STR_BACKPACK_DESC_VEST_DZE1">
 			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 12 items</English>
 			<French>Sac tchèque &lt;br/&gt;Taille: 12</French>
-			<Russian>Рюкзак на (12 слотов)</Russian>
+			<Russian>Малый чешский рюкзак. &lt;br/&gt;Вместимость: 12 слотов</Russian>
 			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;12 litros</Spanish>
 			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 12 litrů</Czech>
 			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 12 Liter</German>
@@ -24462,7 +24466,7 @@
 		<Key ID="STR_BACKPACK_DESC_VEST_DZE2">
 			<English>Czech Vest Pouch &lt;br/&gt;Capacity: 17 items</English>
 			<French>Sac tchèque &lt;br/&gt;Taille: 17</French>
-			<Russian>Рюкзак на (17 слотов)</Russian>
+			<Russian>Малый чешский рюкзак. &lt;br/&gt;Вместимость: 17 слотов</Russian>
 			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;17 litros</Spanish>
 			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 17 litrů</Czech>
 			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 17 Liter</German>
@@ -24479,7 +24483,7 @@
 		<Key ID="STR_BACKPACK_DESC_ACU_DZE1">
 			<English>Assault Backpack &lt;br/&gt;Capacity: 15 items</English>
 			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 15</French>
-			<Russian>Рюкзак на (15 слотов)</Russian>
+			<Russian>Штурмовой рюкзак. &lt;br/&gt;Вместимость: 15 слотов</Russian>
 			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;15 litros</Spanish>
 			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 15 litrů</Czech>
 			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 15 Liter</German>
@@ -24496,7 +24500,7 @@
 		<Key ID="STR_BACKPACK_DESC_ACU_DZE2">
 			<English>Assault Backpack &lt;br/&gt;Capacity: 20 items</English>
 			<French>Sac d&apos;assault (ACU) &lt;br/&gt;Taille: 20</French>
-			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Russian>Штурмовой рюкзак. &lt;br/&gt;Вместимость: 20 слотов</Russian>
 			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;20 litros</Spanish>
 			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 20 litrů</Czech>
 			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 20 Liter</German>
@@ -24511,7 +24515,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE1">
 			<English>Terminal Backpack &lt;br/&gt;Capacity: 17 items</English>
 			<German>Terminal Rucksack &lt;br/&gt;Volumen: 17 Liter</German>
-			<Russian>Вокзальный рюкзак (17 слотов)</Russian>
+			<Russian>Вокзальный рюкзак. &lt;br/&gt;Вместимость: 17 слотов</Russian>
 			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 17 liter</Dutch>
 			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 17</French>
 		</Key>
@@ -24525,25 +24529,29 @@
 		<Key ID="STR_EPOCH_PACK_DESC_TERMINAL_DZE2">
 			<English>Terminal Backpack &lt;br/&gt;Capacity: 22 items</English>
 			<German>Terminal Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
-			<Russian>Вокзальный рюкзак (22 слотов)</Russian>
+			<Russian>Вокзальный рюкзак. &lt;br/&gt;Вместимость: 22 слота</Russian>
 			<Dutch>Terminal Rugzak &lt;br/&gt;Inhoud: 22 liter</Dutch>
 			<French>Sac à Dos (terminal) &lt;br/&gt;Taille: 22</French>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_TINY_DZE1">
 			<English>Tiny Backpack</English>
 			<German>Tiny Rucksack</German>
+			<Russian>Малый рюкзак</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE1">
 			<English>Tiny Backpack &lt;br/&gt;Capacity: 18 items</English>
 			<German>Tiny Rucksack &lt;br/&gt;Volumen: 18 Liter</German>
+			<Russian>Малый рюкзак. &lt;br/&gt;Вместимость: 18 слотов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_TINY_DZE2">
 			<English>Tiny Backpack+</English>
 			<German>Tiny Rucksack+</German>
+			<Russian>Малый рюкзак+</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_DESC_TINY_DZE2">
 			<English>Tiny Backpack &lt;br/&gt;Capacity: 22 items</English>
 			<German>Tiny Rucksack &lt;br/&gt;Volumen: 22 Liter</German>
+			<Russian>Малый рюкзак. &lt;br/&gt;Вместимость: 22 слота</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_ALICE_DZE1">
 			<English>Alice Backpack</English>
@@ -24557,7 +24565,7 @@
 		<Key ID="STR_BACKPACK_DESC_ALICE_DZE1">
 			<English>Alice Backpack &lt;br/&gt;Capacity: 20 items</English>
 			<French>Sac Alice. &lt;br/&gt;Taille: 20</French>
-			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Russian>Рюкзак ALICE. &lt;br/&gt;Вместимость: 20 слотов</Russian>
 			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;20 litros</Spanish>
 			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 20 litrů</Czech>
 			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 20 Liter</German>
@@ -24574,7 +24582,7 @@
 		<Key ID="STR_BACKPACK_DESC_ALICE_DZE2">
 			<English>Alice Backpack &lt;br/&gt;Capacity: 25 items</English>
 			<French>Sac Alice &lt;br/&gt;Taille: 25</French>
-			<Russian>Рюкзак на (25 слотов)</Russian>
+			<Russian>Рюкзак ALICE. &lt;br/&gt;Вместимость: 25 слотов</Russian>
 			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;25 litros</Spanish>
 			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 25 litrů</Czech>
 			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 25 Liter</German>
@@ -24591,7 +24599,7 @@
 		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE1">
 			<English>Survival Backpack &lt;br/&gt;Capacity: 22 items</English>
 			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
-			<Russian>Рюкзак на (22 слота)</Russian>
+			<Russian>Рюкзак выживания. &lt;br/&gt;Вместимость: 22 слота</Russian>
 			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
 			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
 			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
@@ -24608,7 +24616,7 @@
 		<Key ID="STR_BACKPACK_DESC_SURVACU_DZE2">
 			<English>Survival Backpack &lt;br/&gt;Capacity: 27 items</English>
 			<French>ACU de survie&lt;br/&gt;Taille: 27</French>
-			<Russian>Рюкзак на (27 слота)</Russian>
+			<Russian>Рюкзак выживания. &lt;br/&gt;Вместимость: 27 слотов</Russian>
 			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;27 litros</Spanish>
 			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 27 litrů</Czech>
 			<German>Mittlerer Rucksack mit Waldtarnschema. &lt;br/&gt;Volumen: 27 Liter</German>
@@ -24616,18 +24624,22 @@
 		<Key ID="STR_BACKPACK_NAME_SCHOOLBAG_DZE1">
 			<English>School Bag</English>
 			<German>Schulrucksack</German>
+			<Russian>Школьный рюкзак</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_SCHOOLBAG_DZE1">
 			<English>School Bag &lt;br/&gt;Capacity: 24 items</English>
 			<German>Schulrucksack &lt;br/&gt;Volumen: 24 Liter</German>
+			<Russian>Школьный рюкзак. &lt;br/&gt;Вместимость: 24 слота</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_SCHOOLBAG_DZE2">
 			<English>School Bag+</English>
 			<German>Schulrucksack+</German>
+			<Russian>Школьный рюкзак+</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_SCHOOLBAG_DZE2">
 			<English>School Bag &lt;br/&gt;Capacity: 30 items</English>
 			<German>Schulrucksack &lt;br/&gt;Volumen: 30 Liter</German>
+			<Russian>Школьный рюкзак. &lt;br/&gt;Вместимость: 30 слотов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_COMPACT_DZE1">
 			<English>Compact Backpack</English>
@@ -24639,7 +24651,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE1">
 			<English>Compact Backpack &lt;br/&gt;Capacity: 25 items</English>
 			<German>Compact Rucksack &lt;br/&gt;Volumen: 25 Liter</German>
-			<Russian>Компактный рюкзак (25 слотов)</Russian>
+			<Russian>Компактный рюкзак. &lt;br/&gt;Вместимость: 25 слотов</Russian>
 			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 25 liter</Dutch>
 			<French>Sac Compact &lt;br/&gt;Taille: 25</French>
 		</Key>
@@ -24653,7 +24665,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_COMPACT_DZE2">
 			<English>Compact Backpack &lt;br/&gt;Capacity: 30 items</English>
 			<German>Compact Rucksack &lt;br/&gt;Volumen: 30 Liter</German>
-			<Russian>Компактный рюкзак (30 слотов)</Russian>
+			<Russian>Компактный рюкзак. &lt;br/&gt;Вместимость: 30 слотов</Russian>
 			<Dutch>Compacte Rugzak &lt;br/&gt;Inhoud: 30 liter</Dutch>
 			<French>Sac Compact &lt;br/&gt;Taille: 30</French>
 		</Key>
@@ -24669,7 +24681,7 @@
 		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE1">
 			<English>British Assault Backpack &lt;br/&gt;Capacity: 30 items</English>
 			<French>Sac d&apos;assault britannique &lt;br/&gt;Taille: 30</French>
-			<Russian>Рюкзак на (30 слотов)</Russian>
+			<Russian>Британский рюкзак. &lt;br/&gt;Вместимость: 30 слотов</Russian>
 			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;30 litros</Spanish>
 			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 30 litrů</Czech>
 			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 30 Liter</German>
@@ -24686,7 +24698,7 @@
 		<Key ID="STR_BACKPACK_DESC_BRITISH_DZE2">
 			<English>British Assault Backpack. &lt;br/&gt;Capacity: 35 items</English>
 			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 35</French>
-			<Russian>Рюкзак на (35 слотов)</Russian>
+			<Russian>Британский рюкзак. &lt;br/&gt;Вместимость: 35 слотов</Russian>
 			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;35 litros</Spanish>
 			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 35 litrů</Czech>
 			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 35 Liter</German>
@@ -24701,7 +24713,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE1">
 			<English>Gunbag &lt;br/&gt;Capacity: 35 items</English>
 			<German>Waffentasche &lt;br/&gt;Volumen: 35 Liter</German>
-			<Russian>Оружейная сумка (35 слотов)</Russian>
+			<Russian>Оружейная сумка. &lt;br/&gt;Вместимость: 35 слотов</Russian>
 			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 35 liter</Dutch>
 			<French>Fourreau&lt;br/&gt;Taille: 35</French>
 		</Key>
@@ -24715,7 +24727,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_GB_DZE2">
 			<English>Gunbag &lt;br/&gt;Capacity: 40 items</English>
 			<German>Waffentasche &lt;br/&gt;Volumen: 40 Liter</German>
-			<Russian>Оружейная сумка (40 слотов)</Russian>
+			<Russian>Оружейная сумка. &lt;br/&gt;Вместимость: 40 слотов</Russian>
 			<Dutch>Wapenzak &lt;br/&gt;Inhoud: 40 liter</Dutch>
 			<French>Fourreau&lt;br/&gt;Taille: 40</French>
 		</Key>
@@ -24754,18 +24766,22 @@
 		<Key ID="STR_BACKPACK_NAME_APO2_DZE1">
 			<English>Survivor Backpack</English>
 			<German>Survivor Rucksack</German>
+			<Russian>Рюкзак выжившего</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_APO2_DZE1">
 			<English>Survivor Backpack &lt;br/&gt;Capacity: 40 items</English>
 			<German>Survivor Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
+			<Russian>Рюкзак выжившего. &lt;br/&gt;Вместимость: 40 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_APO2_DZE2">
 			<English>Survivor Backpack+</English>
 			<German>Survivor Rucksack+</German>
+			<Russian>Рюкзак выжившего+</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_APO2_DZE2">
 			<English>Survivor Backpack &lt;br/&gt;Capacity: 45 items</English>
 			<German>Survivor Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+			<Russian>Рюкзак выжившего. &lt;br/&gt;Вместимость: 45 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_CZECH_DZE1">
 			<English>Czech Backpack</English>
@@ -24779,7 +24795,7 @@
 		<Key ID="STR_BACKPACK_DESC_CZECH_DZE1">
 			<English>Czech Backpack &lt;br/&gt;Capacity: 45 items</English>
 			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 45</French>
-			<Russian>Рюкзак на (45 слотов)</Russian>
+			<Russian>Чешский рюкзак. &lt;br/&gt;Вместимость: 45 слотов</Russian>
 			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;45 litros</Spanish>
 			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 45 litrů</Czech>
 			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
@@ -24796,7 +24812,7 @@
 		<Key ID="STR_BACKPACK_DESC_CZECH_DZE2">
 			<English>Czech Backpack &lt;br/&gt;Capacity: 50 items</English>
 			<French>Sac-à-dos tchèque &lt;br/&gt;Taille: 50</French>
-			<Russian>Рюкзак на (50 слотов)</Russian>
+			<Russian>Чешский рюкзак. &lt;br/&gt;Вместимость: 50 слотов</Russian>
 			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
 			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 50 litrů</Czech>
 			<German>Großer tschechischer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
@@ -24804,34 +24820,42 @@
 		<Key ID="STR_BACKPACK_NAME_APO3_DZE1">
 			<English>Wanderer Backpack</English>
 			<German>Wanderer Rucksack</German>
+			<Russian>Рюкзак скитальца</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_APO3_DZE1">
 			<English>Wanderer Backpack &lt;br/&gt;Capacity: 50 items</English>
 			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 50 Liter</German>
+			<Russian>Рюкзак скитальца. &lt;br/&gt;Вместимость: 50 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_APO3_DZE2">
 			<English>Wanderer Backpack+</English>
 			<German>Wanderer Rucksack+</German>
+			<Russian>Рюкзак скитальца+</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_APO3_DZE2">
 			<English>Wanderer Backpack &lt;br/&gt;Capacity: 55 items</English>
 			<German>Wanderer Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
+			<Russian>Рюкзак скитальца. &lt;br/&gt;Вместимость: 55 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_APO4_DZE1">
 			<English>Legend Backpack</English>
 			<German>Legend Rucksack</German>
+			<Russian>Легендарный рюкзак</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_APO4_DZE1">
 			<English>Legend Backpack &lt;br/&gt;Capacity: 55 items</English>
 			<German>Legend Rucksack &lt;br/&gt;Volumen: 55 Liter</German>
+			<Russian>Легендарный рюкзак. &lt;br/&gt;Вместимость: 55 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_APO4_DZE2">
 			<English>Legend Backpack+</English>
 			<German>Legend Rucksack+</German>
+			<Russian>Легендарный рюкзак+</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_APO4_DZE2">
 			<English>Legend Backpack &lt;br/&gt;Capacity: 60 items</English>
 			<German>Legend Rucksack &lt;br/&gt;Volumen: 60 Liter</German>
+			<Russian>Легендарный рюкзак. &lt;br/&gt;Вместимость: 60 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_COYOTE_DZE1">
 			<English>Coyote Backpack</English>
@@ -24845,7 +24869,7 @@
 		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE1">
 			<English>Coyote Backpack &lt;br/&gt;Capacity: 60 items</English>
 			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 60</French>
-			<Russian>Рюкзак на (60 слотов)</Russian>
+			<Russian>Рюкзак Сoyote. &lt;br/&gt;Вместимость: 60 слотов</Russian>
 			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;60 litros</Spanish>
 			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 60 litrů</Czech>
 			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 60 Liter</German>
@@ -24862,7 +24886,7 @@
 		<Key ID="STR_BACKPACK_DESC_COYOTE_DZE2">
 			<English>Coyote Backpack &lt;br/&gt;Capacity: 65 items</English>
 			<French>Sac-à-dos (coyote) &lt;br/&gt;Taille: 65</French>
-			<Russian>Рюкзак на (65 слотов)</Russian>
+			<Russian>Рюкзак Сoyote. &lt;br/&gt;Вместимость: 65 слотов</Russian>
 			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;65 litros</Spanish>
 			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 65 litrů</Czech>
 			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 65 Liter</German>
@@ -24877,7 +24901,7 @@
 		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE1">
 			<English>Large Gunbag &lt;br/&gt;Capacity: 65 items</English>
 			<German>Große Waffentasche &lt;br/&gt;Volumen: 65 Liter</German>
-			<Russian>Большая оружейная сумка (65 слотов)</Russian>
+			<Russian>Большая оружейная сумка. &lt;br/&gt;Вместимость: 65 слотов</Russian>
 			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 65 liter</Dutch>
 			<French>Grand Fourreau &lt;br/&gt;Taille: 65</French>
 		</Key>
@@ -24891,14 +24915,14 @@
 		<Key ID="STR_EPOCH_PACK_DESC_LGB_DZE2">
 			<English>Large Gunbag &lt;br/&gt;Capacity: 70 items</English>
 			<German>Große Waffentasche &lt;br/&gt;Volumen: 70 Liter</German>
-			<Russian>Большая оружейная сумка (70 слотов)</Russian>
+			<Russian>Большая оружейная сумка. &lt;br/&gt;Вместимость: 70 слотов</Russian>
 			<Dutch>Grote Wapenzak &lt;br/&gt;Inhoud: 70 liter</Dutch>
 			<French>Grand Fourreau &lt;br/&gt;Taille: 70</French>
 		</Key>
 		<Key ID="STR_BACKPACK_NO_DESC">
 			<English>%1 &lt;br/&gt;Capacity: %2 items</English>
 			<German>%1 &lt;br/&gt;Volumen: %2 Liter</German>
-			<Russian>%1 %2 слотов</Russian>
+			<Russian>%1. &lt;br/&gt;Вместимость: %2 слотов</Russian>
 			<Dutch>%1 &lt;br/&gt;Inhoud: %2 liter</Dutch>
 			<French>%1 &lt;br/&gt;Taille: %2</French>
 		</Key>
@@ -25237,7 +25261,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_16">
 			<English>Failed, another player is closer than you are.</English>
 			<German>Fehlgeschlagen, ein anderer Spieler ist näher als du es bist.</German>
-			<Russian>Не удалось, другой игрок ближе, чем вы.</Russian>
+			<Russian>Не удалось. Другой игрок ближе, чем вы.</Russian>
 			<French>Échec, un autre joueur est plus proche.</French>
 			<Czech>Chyba, další hráč je blíž, než vy.</Czech>
 		</Key>
@@ -25491,10 +25515,12 @@
 		<Key ID="STR_EPOCH_SAFE_BROKEN">
 			<English>Broken Safe</English>
 			<German>Aufgebrochener Tresor</German>
+			<Russian>Сломанный сейф</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_BROKEN+">
 			<English>Broken Safe +</English>
 			<German>Aufgebrochener Tresor +</German>
+			<Russian>Сломанный сейф +</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SAFE_DESC">
 			<English>A placeable object that is used for very secure storage. Placing your safe will give you a 4 digit number that is used to open the safe.</English>
@@ -25692,10 +25718,12 @@
 		<Key ID="STR_CRAFT_PLANT_HEMP_PLANT">
 			<English>Plant Hemp</English>
 			<German>Hanf anpflanzen</German>
+			<Russian>Посадить коноплю</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_HEMP_PLANT">
 			<English>Craft Hemp Plant</English>
 			<German>Hanfpflanze herstellen</German>
+			<Russian>Создать конопляную грядку</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_PUMPKIN">
 			<English>Pumpkin</English>
@@ -25710,10 +25738,12 @@
 		<Key ID="STR_CRAFT_PLANT_PUMPKIN_PLANT">
 			<English>Plant Pumpkin</English>
 			<German>Kürbis anpflanzen</German>
+			<Russian>Посадить тыкву</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_PUMPKIN_PLANT">
 			<English>Craft Pumpkin Plant</English>
 			<German>Kürbispflanze herstellen</German>
+			<Russian>Создать тыквенную грядку</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_SUNFLOWER">
 			<English>Bag of Sunflower Seeds</English>
@@ -25723,14 +25753,17 @@
 		<Key ID="STR_FOOD_NAME_POTATO">
 			<English>Potato</English>
 			<German>Kartoffel</German>
+			<Russian>Картофель</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_POTATO_BAKED">
 			<English>Baked Potato</English>
 			<German>Gebackene Kartoffel</German>
+			<Russian>Запечёный картофель</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CARROT">
 			<English>Carrot</English>
 			<German>Karotte</German>
+			<Russian>Морковь</Russian>
 		</Key>
 		<Key ID="STR_GEM_NAME_TOPAZ">
 			<English>Topaz</English>
@@ -25832,22 +25865,27 @@
 		<Key ID="STR_EPOCH_CHAINSAW_BROKEN">
 			<English>Broken Chainsaw</English>
 			<German>Kaputte Kettensäge</German>
+			<Russian>Сломанная бензопила</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_BLUE_BROKEN">
 			<English>Broken Chainsaw</English>
 			<German>Kaputte Kettensäge</German>
+			<Russian>Сломанная бензопила</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_GREEN_BROKEN">
 			<English>Broken Chainsaw</English>
 			<German>Kaputte Kettensäge</German>
+			<Russian>Сломанная бензопила</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_PINK_BROKEN">
 			<English>Broken Chainsaw</English>
 			<German>Kaputte Kettensäge</German>
+			<Russian>Сломанная бензопила</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_RED_BROKEN">
 			<English>Broken Chainsaw</English>
 			<German>Kaputte Kettensäge</German>
+			<Russian>Сломанная бензопила</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW">
 			<English>Hermlite 2 Stroke Chainsaw</English>
@@ -25857,42 +25895,47 @@
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_BLUE">
 			<English>Hermlite 2 Stroke Chainsaw (Blue)</English>
 			<German>Hermlite 2 Takt Kettensäge (Blau)</German>
-			<Russian>Бензопила "Hermlite" с двухтактным двигателем (голубая).</Russian>
+			<Russian>Бензопила "Hermlite" с двухтактным двигателем (Голубая).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_GREEN">
 			<English>Hermlite 2 Stroke Chainsaw (Green)</English>
 			<German>Hermlite 2 Takt Kettensäge (Grün)</German>
-			<Russian>Бензопила "Hermlite" с двухтактным двигателем (зеленая).</Russian>
+			<Russian>Бензопила "Hermlite" с двухтактным двигателем (Зеленая).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_PINK">
 			<English>Hermlite 2 Stroke Chainsaw (Pink)</English>
 			<German>Hermlite 2 Takt Kettensäge (Pink)</German>
-			<Russian>Бензопила "Hermlite" с двухтактным двигателем (розовая).</Russian>
+			<Russian>Бензопила "Hermlite" с двухтактным двигателем (Розовая).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_RED">
 			<English>Hermlite 2 Stroke Chainsaw (Red)</English>
 			<German>Hermlite 2 Takt Kettensäge (Rot)</German>
-			<Russian>Бензопила "Hermlite" с двухтактным двигателем (красная).</Russian>
+			<Russian>Бензопила "Hermlite" с двухтактным двигателем (Красная).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_BROKEN">
 			<English>Broken Hermlite 2 Stroke Chainsaw</English>
 			<German>Kaputte Hermlite 2 Takt Kettensäge</German>
+			<Russian>Сломанная бензопила "Hermlite".</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_BLUE_BROKEN">
 			<English>Broken Hermlite 2 Stroke Chainsaw (Blue)</English>
 			<German>Kaputte Hermlite 2 Takt Kettensäge (Blau)</German>
+			<Russian>Сломанная бензопила "Hermlite" (Голубая).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_GREEN_BROKEN">
 			<English>Broken Hermlite 2 Stroke Chainsaw (Green)</English>
 			<German>Kaputte Hermlite 2 Takt Kettensäge (Grün)</German>
+			<Russian>Сломанная бензопила "Hermlite" (Зеленая).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_PINK_BROKEN">
 			<English>Broken Hermlite 2 Stroke Chainsaw (Pink)</English>
 			<German>Kaputte Hermlite 2 Takt Kettensäge (Pink)</German>
+			<Russian>Сломанная бензопила "Hermlite" (Розовая).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESC_CHAINSAW_RED_BROKEN">
 			<English>Broken Hermlite 2 Stroke Chainsaw (Red)</English>
 			<German>Kaputte Hermlite 2 Takt Kettensäge (Rot)</German>
+			<Russian>Сломанная бензопила "Hermlite" (Красная).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_OIL">
 			<English>2-Stroke Engine Oil</English>
@@ -26072,6 +26115,7 @@
 		<Key ID="STR_EPOCH_KILOOFHEMP_DESC">
 			<English>A package of hemp</English>
 			<German>Ein Paket Hanf</German>
+			<Russian>Упаковка с целым килограммом конопли.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CANVAS">
 			<English>Canvas</English>
@@ -26116,114 +26160,142 @@
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEAD">
 			<English>Zombie Head</English>
 			<German>Zombiekopf</German>
+			<Russian>Голова зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEAD_DESC">
 			<English>Zombie Head in a Bag.</English>
 			<German>Zombiekopf in einem Sack.</German>
+			<Russian>Голова зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_LEG">
 			<English>Zombie Leg</English>
 			<German>Zombiebein</German>
+			<Russian>Нога зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_LEG_DESC">
 			<English>Zombie Leg in a Bag.</English>
 			<German>Zombiebein in einem Sack.</German>
+			<Russian>Нога зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_ARM">
 			<English>Zombie Arm</English>
 			<German>Zombiearm</German>
+			<Russian>Рука зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_ARM_DESC">
 			<English>Zombie Arm in a Bag.</English>
 			<German>Zombiearm in einem Sack.</German>
+			<Russian>Рука зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_BRAIN">
 			<English>Zombie Brain</English>
 			<German>Zombiegehirn</German>
+			<Russian>Мозги зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_BRAIN_DESC">
 			<English>Zombie Brain in a Bag.</English>
 			<German>Zombiegehirn in einem Sack.</German>
+			<Russian>Мозги зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HAND">
 			<English>Zombie Hand</English>
 			<German>Zombiehand</German>
+			<Russian>Ладонь зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HAND_DESC">
 			<English>Zombie Hand in a Bag.</English>
 			<German>Zombiehand in einem Sack.</German>
+			<Russian>Ладонь зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_FINGER">
 			<English>Zombie Finger</English>
 			<German>Zombiefinger</German>
+			<Russian>Палец зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_FINGER_DESC">
 			<English>Zombie Finger in a Bag.</English>
 			<German>Zombiefinger in einem Sack.</German>
+			<Russian>Палец зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_FOOT">
 			<English>Zombie Foot</English>
 			<German>Zombiefuß</German>
+			<Russian>Стопа зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_FOOT_DESC">
 			<English>Zombie Foot in a Bag.</English>
 			<German>Zombiefuß in einem Sack.</German>
+			<Russian>Стопа зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TOE">
 			<English>Zombie Toe</English>
 			<German>Zombiezeh</German>
+			<Russian>Палец ноги зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TOE_DESC">
 			<English>Zombie Toe in a Bag.</English>
 			<German>Zombiezeh in einem Sack.</German>
+			<Russian>Палец ноги зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_LIVER">
 			<English>Zombie Liver</English>
 			<German>Zombieleber</German>
+			<Russian>Печень зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_LIVER_DESC">
 			<English>Zombie Liver in a Bag.</English>
 			<German>Zombieleber in einem Sack.</German>
+			<Russian>Печень зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEART">
 			<English>Zombie Heart</English>
 			<German>Zombieherz</German>
+			<Russian>Сердце зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_HEART_DESC">
 			<English>Zombie Heart in a Bag.</English>
 			<German>Zombieherz in einem Sack.</German>
+			<Russian>Сердце зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_EYES">
 			<English>Zombie Eyes</English>
 			<German>Zombieaugen</German>
+			<Russian>Глаза зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_EYES_DESC">
 			<English>Zombie Eyes in a Bag.</English>
 			<German>Zombieaugen in einem Sack.</German>
+			<Russian>Глаза зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TONGUE">
 			<English>Zombie Tongue</English>
 			<German>Zombiezunge</German>
+			<Russian>Язык зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TONGUE_DESC">
 			<English>Zombie Tongue in a Bag.</English>
 			<German>Zombiezunge in einem Sack.</German>
+			<Russian>Язык зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TEETH">
 			<English>Zombie Teeth</English>
 			<German>Zombiezähne</German>
+			<Russian>Зубы зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_TEETH_DESC">
 			<English>Zombie Teeth in a Bag.</English>
 			<German>Zombiezähne in einem Sack.</German>
+			<Russian>Зубы зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_SKIN">
 			<English>Zombie Skin</English>
 			<German>Zombiehaut</German>
+			<Russian>Кожа зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS_SKIN_DESC">
 			<English>Zombie Skin in a Bag.</English>
 			<German>Zombiehaut in einem Sack.</German>
+			<Russian>Кожа зомби в мешке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
@@ -26358,10 +26430,12 @@
 		<Key ID="STR_EPOCH_WORKBENCH_ADVANCED">
 			<English>Advanced Workbench</English>
 			<German>Verbesserte Werkbank</German>
+			<Russian>Улучшенный верстак</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WORKBENCH_ADVANCED_DESC">
 			<English>Advanced Workbench with tools for bigger buildings to craft.</English>
 			<German>Verbesserte Werkbank mit Werkzeugen für größere Handwerksarbeiten.</German>
+			<Russian>Усовершенствованный верстак с инструментами для создания больших зданий.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODENRAMP_DESC">
 			<English>Wooden ramp can be used to get air.</English>
@@ -26426,10 +26500,12 @@
 		<Key ID="STR_EPOCH_WINTERCAMONET">
 			<English>Winter Camo Net</English>
 			<German>Wintertarnnetz</German>
+			<Russian>Зимняя камуфляжная сеть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWINTERCAMONET">
 			<English>Large Winter Camo Net</English>
 			<German>Wintertarnnetz (groß)</German>
+			<Russian>Большая зимняя камуфляжная сеть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CAMONET_DESC">
 			<English>Camo Netting: A buildable object that can be used to cover objects.</English>
@@ -26538,7 +26614,7 @@
 		<Key ID="STR_EPOCH_STORAGESHED_DESC">
 			<English>Storage Shed: A large buildable object that is enterable and holds a lot of items/weapons/backpacks.</English>
 			<German>Lagerschuppen: Ein großes Objekt mit viel Platz für Material, Waffen und Rucksäcke, begehbar.</German>
-			<Russian>Лабаз: Большая постройка, в который можно ввести, но в ней можно хранить много предметов/оружия/рюкзаков.</Russian>
+			<Russian>Лабаз: Большая постройка в которую можно войти и хранить в ней много предметов/оружия/рюкзаков.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SCAFFOLDING">
 			<English>Scaffolding</English>
@@ -26553,6 +26629,7 @@
 		<Key ID="STR_EPOCH_LOCKBOX_BROKEN">
 			<English>Broken Lockbox</English>
 			<German>Aufgebrochene Schließkassette</German>
+			<Russian>Сломанный запираемый ящик</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_LOCKED">
 			<English>Locked Lockbox</English>
@@ -26567,6 +26644,7 @@
 		<Key ID="STR_EPOCH_LOCKBOX_BROKEN+">
 			<English>Broken Lockbox +</English>
 			<German>Aufgebrochene Schließkassette +</German>
+			<Russian>Сломанный запираемый ящик +</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LOCKBOX_LOCKED+">
 			<English>Locked Lockbox +</English>
@@ -26576,7 +26654,7 @@
 		<Key ID="STR_EPOCH_LOCKBOX_DESC">
 			<English>Semi secure lockbox.</English>
 			<German>Leicht gesicherte Schließkassette. Der Code besteht aus einer Farbe und 2 Ziffern.</German>
-			<Russian>Безопасное хранилище.</Russian>
+			<Russian>Небольшое хранилище с кодом, состоящим из цвета и 2 цифр.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LUMBERPACK">
 			<English>Lumber Pack</English>
@@ -26661,182 +26739,182 @@
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ">
 			<English>Water Bottle (1oz)</English>
 			<German>Wasserflasche (100ml)</German>
-			<Russian>Бутылка воды (1 унция)</Russian>
+			<Russian>Бутылка воды (100 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ_DESC">
 			<English>Water Bottle with 1oz of water.</English>
 			<German>Wasserflasche mit 100ml Wasser.</German>
-			<Russian>Бутылка с 1 унцией воды.</Russian>
+			<Russian>Бутылка с 100 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ">
 			<English>Water Bottle (2oz)</English>
 			<German>Wasserflasche (200ml)</German>
-			<Russian>Бутылка воды (2 унции)</Russian>
+			<Russian>Бутылка воды (200 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ_DESC">
 			<English>Water Bottle with 2oz of water.</English>
 			<German>Wasserflasche mit 200ml Wasser.</German>
-			<Russian>Бутылка с 2 унциями воды.</Russian>
+			<Russian>Бутылка с 200 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ">
 			<English>Water Bottle (3oz)</English>
 			<German>Wasserflasche (300ml)</German>
-			<Russian>Бутылка воды (3 унции)</Russian>
+			<Russian>Бутылка воды (300 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ_DESC">
 			<English>Water Bottle with 3oz of water.</English>
 			<German>Wasserflasche mit 300ml Wasser.</German>
-			<Russian>Бутылка с 3 унциями воды.</Russian>
+			<Russian>Бутылка с 300 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ">
 			<English>Water Bottle (4oz)</English>
 			<German>Wasserflasche (400ml)</German>
-			<Russian>Бутылка воды (4 унции)</Russian>
+			<Russian>Бутылка воды (400 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ_DESC">
 			<English>Water Bottle with 4oz of water.</English>
 			<German>Wasserflasche mit 400ml Wasser.</German>
-			<Russian>Бутылка с 4 унциями воды.</Russian>
+			<Russian>Бутылка с 400 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ">
 			<English>Water Bottle (5oz)</English>
 			<German>Wasserflasche (500ml)</German>
-			<Russian>Бутылка воды (5 унций)</Russian>
+			<Russian>Бутылка воды (500 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ_DESC">
 			<English>Water Bottle with 5oz of water.</English>
 			<German>Wasserflasche mit 500ml Wasser.</German>
-			<Russian>Бутылка с 5 унциями воды.</Russian>
+			<Russian>Бутылка с 500 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ">
 			<English>Water Bottle (6oz)</English>
 			<German>Wasserflasche (600ml)</German>
-			<Russian>Бутылка воды (6 унций)</Russian>
+			<Russian>Бутылка воды (600 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ_DESC">
 			<English>Water Bottle with 6oz of water.</English>
 			<German>Wasserflasche mit 600ml Wasser.</German>
-			<Russian>Бутылка с 6 унциями воды.</Russian>
+			<Russian>Бутылка с 600 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ">
 			<English>Water Bottle (7oz)</English>
 			<German>Wasserflasche (700ml)</German>
-			<Russian>Бутылка воды (7 унций)</Russian>
+			<Russian>Бутылка воды (700 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ_DESC">
 			<English>Water Bottle with 7oz of water.</English>
 			<German>Wasserflasche mit 700ml Wasser.</German>
-			<Russian>Бутылка с 7 унциями воды.</Russian>
+			<Russian>Бутылка с 700 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ">
 			<English>Water Bottle (8oz)</English>
 			<German>Wasserflasche (800ml)</German>
-			<Russian>Бутылка воды (8 унций)</Russian>
+			<Russian>Бутылка воды (800 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ_DESC">
 			<English>Water Bottle with 8oz of water.</English>
 			<German>Wasserflasche mit 800ml Wasser.</German>
-			<Russian>Бутылка с 8 унциями воды.</Russian>
+			<Russian>Бутылка с 800 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ">
 			<English>Water Bottle (9oz)</English>
 			<German>Wasserflasche (900ml)</German>
-			<Russian>Бутылка воды (9 унций)</Russian>
+			<Russian>Бутылка воды (900 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ_DESC">
 			<English>Water Bottle with 9oz of water.</English>
 			<German>Wasserflasche mit 900ml Wasser.</German>
-			<Russian>Бутылка с 9 унциями воды.</Russian>
+			<Russian>Бутылка с 900 мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED">
 			<English>Water Bottle (Boiled 1oz)</English>
 			<German>Wasserflasche (Abgek. 100ml)</German>
-			<Russian>Бутылка (чистая вода 1 унция)</Russian>
+			<Russian>Бутылка (чистая вода 100 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED_DESC">
 			<English>Water Bottle with 1oz of boiled water.</English>
 			<German>Wasserflasche mit 100ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 1 унцией чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 100 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED">
 			<English>Water Bottle (Boiled 2oz)</English>
 			<German>Wasserflasche (Abgek. 200ml)</German>
-			<Russian>Бутылка (чистая вода 2 унции)</Russian>
+			<Russian>Бутылка (чистая вода 200 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED_DESC">
 			<English>Water Bottle with 2oz of boiled water.</English>
 			<German>Wasserflasche mit 200ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 2 унциями чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 200 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED">
 			<English>Water Bottle (Boiled 3oz)</English>
 			<German>Wasserflasche (Abgek. 300ml)</German>
-			<Russian>Бутылка (чистая вода 3 унции)</Russian>
+			<Russian>Бутылка (чистая вода 300 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED_DESC">
 			<English>Water Bottle with 3oz of boiled water.</English>
 			<German>Wasserflasche mit 300ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 3 унциями чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 300 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED">
 			<English>Water Bottle (Boiled 4oz)</English>
 			<German>Wasserflasche (Abgek. 400ml)</German>
-			<Russian>Бутылка (чистая вода 4 унции)</Russian>
+			<Russian>Бутылка (чистая вода 400 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED_DESC">
 			<English>Water Bottle with 4oz of boiled water.</English>
 			<German>Wasserflasche mit 400ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 4 унциями чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 400 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED">
 			<English>Water Bottle (Boiled 5oz)</English>
 			<German>Wasserflasche (Abgek. 500ml)</German>
-			<Russian>Бутылка (чистая вода 5 унций)</Russian>
+			<Russian>Бутылка (чистая вода 500 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED_DESC">
 			<English>Water Bottle with 5oz of boiled water.</English>
 			<German>Wasserflasche mit 500ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 5 унциями чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 500 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED">
 			<English>Water Bottle (Boiled 6oz)</English>
 			<German>Wasserflasche (Abgek. 600ml)</German>
-			<Russian>Бутылка (чистая вода 6 унций)</Russian>
+			<Russian>Бутылка (чистая вода 600 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED_DESC">
 			<English>Water Bottle with 6oz of boiled water.</English>
 			<German>Wasserflasche mit 600ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 6 унциями чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 600 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED">
 			<English>Water Bottle (Boiled 7oz)</English>
 			<German>Wasserflasche (Abgek. 700ml)</German>
-			<Russian>Бутылка (чистая вода 7 унций)</Russian>
+			<Russian>Бутылка (чистая вода 700 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED_DESC">
 			<English>Water Bottle with 7oz of boiled water.</English>
 			<German>Wasserflasche mit 700ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 7 унциями чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 700 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED">
 			<English>Water Bottle (Boiled 8oz)</English>
 			<German>Wasserflasche (Abgek. 800ml)</German>
-			<Russian>Бутылка (чистая вода 8 унций)</Russian>
+			<Russian>Бутылка (чистая вода 800 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED_DESC">
 			<English>Water Bottle with 8oz of boiled water.</English>
 			<German>Wasserflasche mit 800ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 8 унциями чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 800 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED">
 			<English>Water Bottle (Boiled 9oz)</English>
 			<German>Wasserflasche (Abgek. 900ml)</German>
-			<Russian>Бутылка (чистая вода 9 унций)</Russian>
+			<Russian>Бутылка (чистая вода 900 мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED_DESC">
 			<English>Water Bottle with 9oz of boiled water.</English>
 			<German>Wasserflasche mit 900ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 9 унциями чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 900 мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE">
 			<English>Briefcase</English>
@@ -27036,7 +27114,7 @@
 		<Key ID="STR_EPOCH_TRADE_SELL_NO_ITEMS">
 			<English>No items in selling list</English>
 			<German>Keine Gegenstände in der Verkaufsliste.</German>
-			<Russian>Нет ничего на продажу</Russian>
+			<Russian>Ничего нет на продажу</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_DETAILS">
 			<English>Details</English>
@@ -27275,6 +27353,7 @@
 		<Key ID="STR_EPOCH_TRADE_CHANGE_OVERFLOW">
 			<English>Some change is hidden in the overflow slots of your gear.</English>
 			<German>Etwas Wechselgeld ist in deinem Inventar verborgen. Reduziere die Gegenstände in deinem Inventar, um das Wechselgeld sichtbar zu machen!</German>
+			<Russian>Некоторые изменения скрыты в вашем инвентаре. Уменьшите количество предметов в инвентаре, чтобы увидеть изменения!</Russian>
 		</Key>
 
 		<!-- PLOT MANAGEMENT BELOW -->
@@ -27384,14 +27463,17 @@
 		<Key ID="STR_EPOCH_GLASSFLOOR">
 			<English>Glass Floor</English>
 			<German>Glasboden</German>
+			<Russian>Стеклянный пол</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GLASSFLOORHALF">
 			<English>Glass Floor 1/2</English>
 			<German>Glasboden 1/2</German>
+			<Russian>Стеклянный пол (1/2)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GLASSFLOORQUARTER">
 			<English>Glass Floor 1/4</English>
 			<German>Glasboden 1/4</German>
+			<Russian>Стеклянный пол (1/4)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALFLOOR">
 			<English>Metal Floor</English>
@@ -27413,6 +27495,7 @@
 			<German>Metallboden 4x</German>
 			<Russian>Металлический пол 4x</Russian>
 		</Key>
+		<!-- Russian translation of cinderblocks needs to be completely reworked -->
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF">
 			<English>Cinder Wall Half</English>
 			<German>Betonwand (Halb)</German>
@@ -27440,18 +27523,22 @@
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW">
 			<English>Cinder Wall w/ window</English>
 			<German>Betonwand mit Fenster</German>
+			<Russian>Стена из шлакоблоков с окном</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_DESC">
 			<English>Cinder Wall with window that can be locked with a combination lock.</English>
 			<German>Eine Betonwand mit Fenster, welches mit einem Zahlenschloss verschlossen werden kann.</German>
+			<Russian>Стена из шлакоблоков с окном, которое можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED">
 			<English>Cinder Wall w/ window locked</English>
 			<German>Betonwand mit Fenster (verschlossen)</German>
+			<Russian>Стена из шлакоблоков с запертым окном</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED_DESC">
 			<English>Cinder Wall with window and a combination lock.</English>
 			<German>Eine Betonwand mit Fenster und einem Zahlenschloss.</German>
+			<Russian>Стена из шлакоблоков с окном, запертым кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
 			<English>Cinder Doorway</English>
@@ -27466,50 +27553,62 @@
 		<Key ID="STR_EPOCH_BLOCKDOOR">
 			<English>Cinder Door</English>
 			<German>Betontür</German>
+			<Russian>Стена из шлакоблоков с дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_DESC">
 			<English>A Cinder block wall with metal door that can be locked with a combination lock.</English>
 			<German>Eine Betontür, welche mit einem Zahlenschloss verschlossen werden kann.</German>
+			<Russian>Стена из шлакоблоков с железной дверью, которую можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED">
 			<English>Cinder Door (locked)</English>
 			<German>Betontür (verschlossen)</German>
+			<Russian>Стена из шлакоблоков с запертой дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_LOCKED_DESC">
 			<English>Cinder block door with a combination lock.</English>
 			<German>Eine Betontür mit einem Zahlenschloss.</German>
+			<Russian>Стена из шлакоблоков с дверью, запертой кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKER">
 			<English>Concrete Bunker</English>
 			<German>Betonbunker</German>
+			<Russian>Бетонный бункер</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKER_DESC">
 			<English>A concrete bunker with metal door that can be locked with a combination lock.</English>
 			<German>Ein Betonbunker, welcher mit einem Zahlenschloss verschlossen werden kann.</German>
+			<Russian>Бетонный бункер с железной дверью, которую можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKERLOCKED">
 			<English>Concrete Bunker (locked)</English>
 			<German>Betonbunker (verschlossen)</German>
+			<Russian>Бетонный бункер (запертый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKER_LOCKED_DESC">
 			<English>Concrete bunker with a combination lock.</English>
 			<German>Ein Betonbunker mit einem Zahlenschloss.</German>
+			<Russian>Бетонный бункер с запертой дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH">
 			<English>Cinder Door w/ Hatch</English>
 			<German>Betontür mit Luke</German>
+			<Russian>Стена из шлакоблоков с люком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH_DESC">
 			<English>A cinder block wall with a hatch and a metal door that can be locked with a combination lock.</English>
 			<German>Eine Betontür mit Luke, welche mit einem Zahlenschloss verschlossen werden kann.</German>
+			<Russian>Стена из шлакоблоков с люком и железной дверью, которую можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED_HATCH">
 			<English>Cinder Door w/ Hatch (locked)</English>
 			<German>Betontür mit Luke (verschlossen)</German>
+			<Russian>Стена из шлакоблоков с люком и дверью (запертый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_HATCH_LOCKED_DESC">
 			<English>Cinder block door with a hatch and a combination lock.</English>
 			<German>Eine Betontür mit einer Luke und einem Zahlenschloss.</German>
+			<Russian>Стена из шлакоблоков с люком и дверью, запертой кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
@@ -27608,7 +27707,7 @@
 		<Key ID="STR_EPOCH_DOORWAY">
 			<English>Doorway</English>
 			<German>Türdurchgang</German>
-			<Russian>Дверной</Russian>
+			<Russian>Дверной проём</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOORWAY_DESC">
 			<English>Doorway with metal single access door.</English>
@@ -27618,6 +27717,7 @@
 		<Key ID="STR_EPOCH_DOOR">
 			<English>Door</English>
 			<German>Tür</German>
+			<Russian>Дверь</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOOR_DESC">
 			<English>Single door out of metal.</English>
@@ -27626,6 +27726,7 @@
 		<Key ID="STR_EPOCH_DOORLOCKED">
 			<English>Door (locked)</English>
 			<German>Tür (verschlossen)</German>
+			<Russian>Дверь (запертая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOOR_LOCKED_DESC">
 			<English>Single door out of metal with a combination lock.</English>
@@ -28804,22 +28905,27 @@
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTER">
 			<English>Thermo Suit (tan)</English>
 			<German>Thermoanzug (braun)</German>
+			<Russian>Термокостюм (оранжевый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTERW">
 			<English>Thermo Suit (white)</English>
 			<German>Thermoanzug (weiß)</German>
+			<Russian>Термокостюм (белый)</Russian>
 		</Key>
 	    <Key ID="STR_DZE_EQUIP_CAMOWINTER_DESC">
 			<English>Thermo Suit, which can protect you from a cold and rainy weather.&lt;br/&gt;Sex: Male</English>
 			<German>Thermoanzug, der vor kalten und nassen Wetterbedingungen schützen kann.&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Термокостюм, который может вас защитить от холодной и дождливой погоды.&lt;br/&gt;Пол: Мужской</Russian>
 		</Key>
 	    <Key ID="STR_DZE_EQUIP_CAMOWINTER_FEMALE_DESC">
 			<English>Thermo Suit, which can protect you from a cold and rainy weather.&lt;br/&gt;Sex: Female</English>
 			<German>Thermoanzug, der vor kalten und nassen Wetterbedingungen schützen kann.&lt;br/&gt;Geschlecht: Weiblich</German>
+			<Russian>Термокостюм, который может вас защитить от холодной и дождливой погоды.&lt;br/&gt;Пол: Женский</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SNIPER1W">
 			<English>Winter Ghillie Suit</English>
 			<German>Winter-Ghillie Anzug</German>
+			<Russian>Зимний маскировочный костюм</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_NACSOLDIER">
 			<English>NAC Soldier</English>
@@ -28871,12 +28977,15 @@
 		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
 			<English>Stalker (Rookie)</English>
 			<German>Stalker (Anfänger)</German>
+			<Russian>Костюм сталкера (Новичок)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
 			<English>Stalker (Loner)</English>
+			<Russian>Костюм сталкера (Одиночка)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_LONER_HEAD_NAME">
 			<English>Stalker (Loner)</English>
+			<Russian>Костюм сталкера (Одиночка)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME">
 			<English>Stalker (Freedom)</English>
@@ -29603,6 +29712,7 @@
 		<Key ID="STR_EPOCH_GROUP_MANAGEMENT">
 			<English>Group Management</English>
 			<German>Gruppen Management</German>
+			<Russian>Управление группой</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_MY_GROUP">
 			<English>My Group</English>
@@ -29803,6 +29913,8 @@
 		<Key ID="STR_EPOCH_RADIO_STATE">
 			<English>Power On/Off</English>
 			<German>An/Aus</German>
+			<Russian>Вкл/Выкл</Russian>
+
 		</Key>
 
 		<!-- DOOR MANAGEMENT BELOW -->
@@ -30167,7 +30279,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_04">
 			<English>Water Bottle PET (Boiled)</English>
-			<Russian>Бутылка для воды ПЭТ (Кипяченная)</Russian>
+			<Russian>Бутылка ПЭТ кипячёной воды</Russian>
 			<German>Wasserflasche PET (Abgekocht)</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_04">
@@ -30277,7 +30389,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZBOILED">
 			<English>Water Bottle PET (Boiled 1oz)</English>
-			<Russian>Бутылка для воды (для кипячения 100мл)</Russian>
+			<Russian>Бутылка кипячёной воды (100мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 100ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZBOILED_DESC">
@@ -30287,7 +30399,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZBOILED">
 			<English>Water Bottle PET (Boiled 2oz)</English>
-			<Russian>Бутылка для воды (для кипячения 200мл)</Russian>
+			<Russian>Бутылка кипячёной воды (200мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 200ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZBOILED_DESC">
@@ -30297,7 +30409,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZBOILED">
 			<English>Water Bottle PET (Boiled 3oz)</English>
-			<Russian>Бутылка для воды (для кипячения 300мл)</Russian>
+			<Russian>Бутылка кипячёной воды (300мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 300ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZBOILED_DESC">
@@ -30307,7 +30419,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZBOILED">
 			<English>Water Bottle PET (Boiled 4oz)</English>
-			<Russian>Бутылка для воды (для кипячения 400мл)</Russian>
+			<Russian>Бутылка кипячёной воды (400мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 400ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZBOILED_DESC">
@@ -30317,7 +30429,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZBOILED">
 			<English>Water Bottle PET (Boiled 5oz)</English>
-			<Russian>Бутылка для воды (для кипячения 500мл)</Russian>
+			<Russian>Бутылка кипячёной воды (500мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 500ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZBOILED_DESC">
@@ -30327,7 +30439,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZBOILED">
 			<English>Water Bottle PET (Boiled 6oz)</English>
-			<Russian>Бутылка для воды (для кипячения 600мл)</Russian>
+			<Russian>Бутылка кипячёной воды (600мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 600ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZBOILED_DESC">
@@ -30337,7 +30449,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZBOILED">
 			<English>Water Bottle PET (Boiled 7oz)</English>
-			<Russian>Бутылка для воды (для кипячения 700мл)</Russian>
+			<Russian>Бутылка кипячёной воды (700мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 700ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZBOILED_DESC">
@@ -30347,7 +30459,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZBOILED">
 			<English>Water Bottle PET (Boiled 8oz)</English>
-			<Russian>Бутылка для воды (для кипячения 800мл)</Russian>
+			<Russian>Бутылка кипячёной воды (800мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 800ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZBOILED_DESC">
@@ -30357,7 +30469,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED">
 			<English>Water Bottle PET (Boiled 9oz)</English>
-			<Russian>Бутылка для воды (для кипячения 900мл)</Russian>
+			<Russian>Бутылка кипячёной воды (900мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 900ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED_DESC">
@@ -30368,74 +30480,86 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_NAME">
 			<English>Paint bucket (generic)</English>
 			<German>Farbeimer (Generisch)</German>
+			<Russian>Ведро с краской</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_DESC">
 			<English>A generic bucket of paint.</English>
 			<German>Ein generischer Farbeimer.</German>
+			<Russian>Ведро с краской.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_BLACK_NAME">
 			<English>Paint bucket (black)</English>
 			<German>Farbeimer (Schwarz)</German>
+			<Russian>Ведро с краской (черная)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_BLACK_DESC">
 			<English>A bucket of black paint.</English>
 			<German>Ein Farbeimer mit schwarzer Farbe.</German>
+			<Russian>Ведро с черной краской.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_WHITE_NAME">
 			<English>Paint bucket (white)</English>
 			<German>Farbeimer (Weiss)</German>
+			<Russian>Ведро с краской (белая)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_WHITE_DESC">
 			<English>A bucket of white paint.</English>
 			<German>Ein Farbeimer mit weisser Farbe.</German>
+			<Russian>Ведро с белой краской.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_BLUE_NAME">
 			<English>Paint bucket (blue)</English>
 			<German>Farbeimer (Blau)</German>
+			<Russian>Ведро с краской (синяя)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_BLUE_DESC">
 			<English>A bucket of blue paint.</English>
 			<German>Ein Farbeimer mit blauer Farbe.</German>
+			<Russian>Ведро с синей краской.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GREEN_NAME">
 			<English>Paint bucket (green)</English>
 			<German>Farbeimer (Grün)</German>
+			<Russian>Ведро с краской (зеленая)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GREEN_DESC">
 			<English>A bucket of green paint.</English>
 			<German>Ein Farbeimer mit grüner Farbe.</German>
+			<Russian>Ведро с зеленой краской.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_RED_NAME">
 			<English>Paint bucket (red)</English>
 			<German>Farbeimer (Rot)</German>
+			<Russian>Ведро с краской (красная)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_RED_DESC">
 			<English>A bucket of red paint.</English>
 			<German>Ein Farbeimer mit roter Farbe.</German>
+			<Russian>Ведро с красной краской.</Russian>
 		</Key>
 
 		<!--dayz mod crash site display names-->
 		<Key ID="STR_EPOCH_CRASHSITE1">
 			<English>Mi-8 Wreck (Military)</English>
-			<Russian>Mi-8 Разбившийся (Военный)</Russian>
+			<Russian>Обломки Ми-8 (Военный)</Russian>
 			<German>Mi-8 Wrack (Militär)</German>
 		</Key>
 		<Key ID="STR_EPOCH_CRASHSITE2">
 			<English>Mi-8 Wreck (Civil)</English>
-			<Russian>Mi-8 Разбившийся (Гражданский)</Russian>
+			<Russian>Обломки Ми-8 (Гражданский)</Russian>
 			<German>Mi-8 Wrack (Zivil)</German>
 		</Key>
 		<Key ID="STR_EPOCH_CRASHSITE3">
 			<English>UH-1Y Wreck</English>
-			<Russian>UH-1Y Разбившийся</Russian>
+			<Russian>Обломки UH-1Y</Russian>
 			<German>UH-1Y Wrack</German>
 		</Key>
 		<Key ID="STR_EPOCH_CRASHSITE4">
 			<English>HC3 Merlin Wreck</English>
-			<Russian>HC3 Merlin Разбившийся</Russian>
+			<Russian>Обломки HC3 Merlin</Russian>
 			<German>HC3 Merlin Wrack</German>
 		</Key>
-		<!-------------------------------------->
+		<!-- ================================ -->
 		<Key ID="STR_POSITION_VEH_FRONT_GUNNER">
 			<English>front gunner</English>
 			<German>Frontschütze</German>
