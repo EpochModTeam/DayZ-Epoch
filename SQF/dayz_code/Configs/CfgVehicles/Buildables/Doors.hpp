@@ -16,7 +16,6 @@ class DZE_Base_Object : All {
 	armor = 2200;
 	destrType = "DestructBuilding";
 	damageResistance = 0.004;
-	// static 
 	reversed = 0;
 	hasDriver = 0;
 	accuracy = 0.1;
@@ -506,6 +505,7 @@ class Land_DZE_WoodGate: Land_DZE_WoodDoor_Base {
 		};
 	};
 };
+
 class Land_DZE_WoodGateLocked: Land_DZE_WoodDoorLocked_Base {
 	scope = 2;
 	armor = 3200;
@@ -612,6 +612,7 @@ class Land_DZE_WoodOpenTopGarageDoor: Land_DZE_WoodDoor_Base {
 		};
 	};
 };
+
 class Land_DZE_WoodOpenTopGarageLocked: Land_DZE_WoodDoorLocked_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\wood\garage_notop\locked_wood_garage_notop.p3d";
@@ -735,7 +736,6 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	};
 };
 
-
 class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";
@@ -770,8 +770,6 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
-
-
 
 class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
@@ -830,7 +828,6 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		};
 	};
 };
-
 
 class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 	scope = 2;
@@ -908,6 +905,7 @@ class CinderGate_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
+
 class CinderGateLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
 	armor = 4600;
@@ -1014,6 +1012,7 @@ class CinderGarageOpenTop_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
+
 class CinderGarageOpenTopLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\locked_cindergarage_notop.p3d";
@@ -1119,6 +1118,7 @@ class CinderDoorHatch_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
+
 class CinderDoorHatchLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinder_door_hatch_locked.p3d";
@@ -1280,9 +1280,6 @@ class DoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	};
 	class DestructionEffects {};
 };
-
-
-
 
 /*
 	Vanilla DayZ buildables are defined in \dayz_buildings\configs\

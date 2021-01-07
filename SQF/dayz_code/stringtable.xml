@@ -31766,6 +31766,38 @@
 			<German>Tor schließen</German>
 			<Russian>Закрыть ворота</Russian>
 		</Key>
+		<Key ID="STR_BLD_ACTIONS_OPEN_WINDOW">
+			<English>Open Window</English>
+			<German>Fenster öffnen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_CLOSE_WINDOW">
+			<English>Close Window</English>
+			<German>Fenster schließen</German>
+		</Key>	
+		<Key ID="STR_BLD_ACTIONS_UNLOCK_WINDOW">
+			<English>Unlock Window</English>
+			<German>Fenster aufschließen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_LOCK_WINDOW">
+			<English>Lock Window</English>
+			<German>Fenster abschließen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_OPEN_BUNKER">
+			<English>Open Shutter</English>
+			<German>Schießscharten öffnen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_CLOSE_BUNKER">
+			<English>Close Shutter</English>
+			<German>Schießscharten schließen</German>
+		</Key>	
+		<Key ID="STR_BLD_ACTIONS_UNLOCK_BUNKER">
+			<English>Unlock Shutter</English>
+			<German>Schießscharten aufschließen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_LOCK_BUNKER">
+			<English>Lock Shutter</English>
+			<German>Schießscharten abschließen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_STONEOVEN">
 			<English>Stone Oven</English>
 			<German>Steinofen</German>
