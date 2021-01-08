@@ -60,6 +60,7 @@
 [NEW] Added over 30 new base building items like a drawbridge, metal and wood gates, glass floors and many more. @AirwavesMan, @Helion4
 [NEW] Added many broken versions of already existing items and tools like Safe, Engine Parts, Wheel, Toolbox and many more. @AirwavesMan
 [NEW] Added lots of new items and tools like Handsaw, Hammer, Cement Bag, Carrot, Potato, Mobile Phone and more. @AirwavesMan, @Helion4
+[NEW] Added snapping support for Storage Sheds, Wood Shacks, Wooden Sheds, Gun Racks and Outhouses. (ca05896f) @AirwavesMan
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -110,7 +111,8 @@
 [FIXED] Often the weapon on back was duped when the player was kicked or didn't log out properly. (1697af97) @AirwavesMan
 [FIXED] Filling mixed gas into a chainsaw now requires a chainsaw. (b0edf3cb) @AirwavesMan
 
-[UPDATED] Spawning of Zombies and loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad @_Lance_
+[UPDATED] All Epoch items and buildable models updated and optimized to affect less the performance. @Helion4
+[UPDATED] Spawning of Zombies and loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad, @_Lance_
 [UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
 [UPDATED] Added night vision mode back to DMR_DZ and M4SPR_DZE after it was removed with the 2018-04-05 A2OA CorePatch (d6cf707) @ebayShopper
 [UPDATED] All M32 grenades now use only one inventory slot. (cc85067) @AirwavesMan
@@ -135,7 +137,7 @@
 [UPDATED] The FN Fal has a full-automatic mode again. (052becb) @AirwavesMan
 [UPDATED] Zombies will no longer get triggered by a chemlight at daytime. (93ba732e) @AirwavesMan
 [UPDATED] All magazines now have the combine option. @AirwavesMan
-[UPDATED] The Humanity system was updated for hotwiring vehicles and killing players. (f68bbda0, d5910357) @AirwavesMan @oiad
+[UPDATED] The Humanity system was updated for hotwiring vehicles and killing players. (f68bbda0, d5910357) @AirwavesMan, @oiad
 [UPDATED] The gear count of many vehicles (helicopters in particular) was updated and increased. (06b788a) @AirwavesMan
 [UPDATED] Sharpening a knife now has an animation. (b7892bfc) @AirwavesMan
 [UPDATED] Added full localization to snap and vector building. (fe1d7fb4) @AirwavesMan
