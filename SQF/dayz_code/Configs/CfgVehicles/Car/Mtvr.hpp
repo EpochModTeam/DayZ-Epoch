@@ -342,6 +342,7 @@ class MTVR_Open_DZE: MTVR {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
+	transportSoldier = 2;
 	supplyRadius = 2.6;
 
 	class Upgrades {
