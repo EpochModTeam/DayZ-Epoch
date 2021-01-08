@@ -410,7 +410,7 @@ class StorageCrate_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;	
 	constructioncount = 1;
-	offset[] = {0,2.5,0};
+	offset[] = {0,2.5,0.3};
 	transportMaxWeapons = 3;	
 	transportMaxMagazines = 60;
 	transportmaxbackpacks = 1;
