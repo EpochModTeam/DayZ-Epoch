@@ -1,22 +1,11 @@
-class Supply_Crate_DZE: MiningItems
-{
+class Supply_Crate_DZE: MiningItems {
 	scope = 2;
-	destrType = "DestructBuilding";
-	cost = 100;
-
-	model="\z\addons\dayz_epoch\models\ammo_supply.p3d";
-	icon = "\ca\data\data\Unknown_object.paa";
-
-	mapSize = 2;
+	model = "\z\addons\dayz_epoch\models\ammo_supply.p3d";
 	armor = 40;
 	displayName = $STR_EPOCH_BULK_NAME;
 
-	vehicleClass = "DayZ Epoch Buildings";
-
-	class DestructionEffects : DestructionEffects
-	{
-		class Ruin1
-		{
+	class DestructionEffects : DestructionEffects {
+		class Ruin1	{
 			simulation = "ruin";
 			type = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
 			position = "";
@@ -31,5 +20,5 @@ class Land_ammo_supply_wreck: ruins	{
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\ammo_supply_wreck.p3d";
 	displayName = $STR_EPOCH_BULK_NAME;
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch Vein/Supply Crate";
 };

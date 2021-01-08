@@ -1,4 +1,9 @@
-class MiningItems: NonStrategic{
+class MiningItems: NonStrategic {
+	destrType = "DestructBuilding";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	vehicleClass = "DayZ Epoch Vein/Supply Crate";
+	
 	class DestructionEffects {
 		class Sound {
 			simulation = "sound";
@@ -31,83 +36,75 @@ class MiningItems: NonStrategic{
 
 class Gold_Vein_DZE: MiningItems {
 	scope = 2;
-	destrType = "DestructBuilding";
-	cost = 100;
-	model="\z\addons\dayz_epoch\models\gold_vein.p3d";
-	icon = "\ca\data\data\Unknown_object.paa";
-	mapSize = 2;
+	model = "\z\addons\dayz_epoch\models\gold_vein.p3d";
 	armor = 70;
-	displayName = "Rock with Gold";
-	vehicleClass = "DayZ Epoch Buildings";
+	displayName = $STR_ORE_VEIN_WRECK_GOLD;
+	
 	class DestructionEffects : DestructionEffects {
 		class Ruin1 {
-		simulation = "ruin";
-		type = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
-		position = "";
-		intensity = 1;
-		interval = 1;
-		lifeTime = 1;
-		};
-	};
-};
-class Silver_Vein_DZE: MiningItems {
-	scope = 2;
-	destrType = "DestructBuilding";
-	cost = 100;
-	model="\z\addons\dayz_epoch\models\silver_vein.p3d";
-	icon = "\ca\data\data\Unknown_object.paa";
-	mapSize = 2;
-	armor = 60;
-	displayName = "Rock with Silver";
-	vehicleClass = "DayZ Epoch Buildings";
-	class DestructionEffects : DestructionEffects {
-		class Ruin1 {
-		simulation = "ruin";
-		type = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
-		position = "";
-		intensity = 1;
-		interval = 1;
-		lifeTime = 1;
-		};
-	};
-};
-class Iron_Vein_DZE: MiningItems {
-	scope = 2;
-	destrType = "DestructBuilding";
-	cost = 100;
-	model="\z\addons\dayz_epoch\models\iron_vein.p3d";
-	icon = "\ca\data\data\Unknown_object.paa";
-	mapSize = 2;
-	armor = 50;
-	displayName = "Rock with Iron";
-	vehicleClass = "DayZ Epoch Buildings";
-	class DestructionEffects : DestructionEffects {
-		class Ruin1 {
-		simulation = "ruin";
-		type = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
-		position = "";
-		intensity = 1;
-		interval = 1;
-		lifeTime = 1;
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
 		};
 	};
 };
 
-class Land_iron_vein_wreck: ruins	{
+class Silver_Vein_DZE: MiningItems {
+	scope = 2;
+	model = "\z\addons\dayz_epoch\models\silver_vein.p3d";
+	armor = 60;
+	displayName = $STR_ORE_VEIN_WRECK_SILVER;
+
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
+};
+
+class Iron_Vein_DZE: MiningItems {
+	scope = 2;
+	model = "\z\addons\dayz_epoch\models\iron_vein.p3d";
+	armor = 50;
+	displayName = $STR_ORE_VEIN_WRECK_IRON;
+
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
+};
+
+class Land_iron_vein_wreck: ruins {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\iron_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_IRON;
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch Vein/Supply Crate";
 };
+
 class Land_silver_vein_wreck: ruins	{
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\silver_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_SILVER;
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch Vein/Supply Crate";
 };
-class Land_gold_vein_wreck: ruins	{
+
+class Land_gold_vein_wreck: ruins {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\gold_vein_wreck.p3d";
 	displayName = $STR_ORE_VEIN_WRECK_GOLD;
-	vehicleClass = "DayZ Epoch Buildings";
+	vehicleClass = "DayZ Epoch Vein/Supply Crate";
 };

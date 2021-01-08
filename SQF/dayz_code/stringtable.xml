@@ -25823,19 +25823,19 @@
 			<Russian>Добывается из камней с помощью кувалды.</Russian>
 		</Key>
 		<Key ID="STR_ORE_VEIN_WRECK_GOLD">
-			<English>gold vein ruins</English>
+			<English>Gold Vein</English>
 			<German>Golderzader</German>
-			<Russian>развалины золотой жилы</Russian>
+			<Russian>золотой жилы</Russian>
 		</Key>
 		<Key ID="STR_ORE_VEIN_WRECK_SILVER">
-			<English>silver vein ruins</English>
+			<English>Silver Vein </English>
 			<German>Silbererzader</German>
-			<Russian>развалины серебряной жилы</Russian>
+			<Russian>серебряной жилы</Russian>
 		</Key>
 		<Key ID="STR_ORE_VEIN_WRECK_IRON">
-			<English>iron vein ruins</English>
+			<English>Iron Vein</English>
 			<German>Eisenerzader</German>
-			<Russian>развалины жилы с железной рудой</Russian>
+			<Russian>жилы с железной рудой</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW">
 			<English>Chainsaw</English>
