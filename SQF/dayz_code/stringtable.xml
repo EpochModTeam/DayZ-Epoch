@@ -32204,6 +32204,22 @@
 			<English>Garbage heab</English>
 			<German>Müllhaufen</German>
 		</Key>		
+		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN">
+			<English>Pumpkin patch</English>
+			<German>Kürbisbeet</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
+			<English>Sunflower patch</English>
+			<German>Sonnenblumenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT">
+			<English>Carrot patch</English>
+			<German>Karottenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
+			<English>Potato patch</English>
+			<German>Kartoffelbeet</German>
+		</Key>		
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">

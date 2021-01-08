@@ -465,7 +465,7 @@ class CfgVehicles
 	#include "Veins.hpp" //Veins and Wrecks
 	#include "SupplyCrate.hpp" //Supply Crate and Wreck
 	#include "InfectedCamps.hpp"		
-	#include "Rubbish.hpp"
+	#include "Rubbish.hpp"	
 	
 	//Buildables
 	class DZ_storage_base : Land_A_tent {
@@ -507,25 +507,9 @@ class CfgVehicles
 	
 	//WeaponHolder	
 	class WeaponHolder;	// External class reference
-	#include "WeaponHolder.hpp"	
-	
-	class Plant_Base: WeaponHolder {
-		scope = 2;
-		icon = "";
-		mapSize = 0;
-		transportMaxWeapons = 0;
-		accuracy = 1000;
-		class DestructionEffects{};
-		favouritezones = "(meadow) * (forest) * (1 - houses) * (1 - sea)";
-		displayName = "$STR_ITEM_NAME_comfrey";
-		class eventHandlers {
-			init="(_this select 0)setVariable['permaLoot',true];";
-		};
-		supplyRadius = 1;
-	};	
-	
-	#include "gathered_plants.hpp"
-	
+	#include "WeaponHolder.hpp"
+	#include "Plants.hpp"	
+
 	//Antihack
 	#include "AntiHack\antihack_logic.hpp"
 	#include "AntiHack\antihack_plants.hpp"
