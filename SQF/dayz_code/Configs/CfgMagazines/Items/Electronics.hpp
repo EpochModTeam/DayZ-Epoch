@@ -4,6 +4,7 @@ class equip_aa_battery : CA_Magazine
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_aa_battery;
 	descriptionShort = $STR_ITEM_DESC_equip_aa_battery;
+	model = "\z\addons\dayz_epoch_w\magazine\dze_aa_battery.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_aa_battery_ca.paa";
 	type = 256;
 };
@@ -14,6 +15,7 @@ class equip_d_battery : CA_Magazine
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_d_battery;
 	descriptionShort = $STR_ITEM_DESC_equip_d_battery;
+	model = "\z\addons\dayz_epoch_w\magazine\dze_d_battery.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_d_battery_ca.paa";
 	type = 256;
 };
