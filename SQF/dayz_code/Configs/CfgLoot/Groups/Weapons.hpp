@@ -70,12 +70,12 @@ weaponsUS[] =
 	
 	// Bolt action rifles and shotguns
 	{Loot_WEAPON,		5,		Remington870_DZ},
-	{Loot_WEAPON,		5,		AA12_PMC},
+	{Loot_WEAPON,		5,		AA12_DZ},
 	
 	// Sniper Rifles
 	{Loot_WEAPON,		5,		M4SPR_DZE},
 	{Loot_WEAPON,		4,		M40A3_DZ},
-	{Loot_WEAPON,		4,		M24_des_EP1},
+	{Loot_WEAPON,		4,		M24_Des_DZ},
 	{Loot_WEAPON,		4,		M24_DZ},	
 	{Loot_WEAPON,		3,		DMR_DZ},
 	{Loot_WEAPON,		3,		MK14_Sniper_DZ},
@@ -253,7 +253,7 @@ pistols[] = { // Residential spawns
 	{Loot_WEAPON,		1,		DesertEagle_DZ},
 	{Loot_WEAPON,		5,		Colt_Revolver_DZ},
 	{Loot_WEAPON,		5,		Revolver_DZ},	
-	{Loot_WEAPON,		1,		revolver_gold_EP1},
+	{Loot_WEAPON,		1,		Revolver_Gold_DZ},
 	{Loot_WEAPON,		2,		Colt_Anaconda_DZ},	
 	{Loot_WEAPON,		1,		Colt_Anaconda_Gold_DZ},	
 	{Loot_WEAPON,		2,		Colt_Bull_DZ},	

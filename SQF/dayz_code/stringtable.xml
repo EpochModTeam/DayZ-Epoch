@@ -2332,8 +2332,8 @@
 			<Czech>Ostrá jehla</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_nails">
-			<English>Nails</English>
-			<German>Nägel</German>
+			<English>Box of nails</English>
+			<German>Schachtel mit Nägeln</German>
 			<Russian>Гвозди</Russian>
 			<Spanish>Clavos</Spanish>
 			<French>Clous</French>
@@ -15348,6 +15348,10 @@
 			<Russian>M24 (Камуфляж)</Russian>
 			<German>M24 Tarn</German>
 		</Key>
+		<Key ID="STR_DZ_WPN_M24_DESERT_NAME">
+			<English>M24 Desert</English>
+			<German>M24 Wüstentarn</German>
+		</Key>		
 		<Key ID="STR_DZ_WPN_M40A3_NAME">
 			<English>M40A3</English>
 		</Key>
@@ -18401,12 +18405,12 @@
 			<Czech>2 patrony Slug</Czech>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_SLUG_DESC">
-			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2 &lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
-			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: M1014, Ремингтон 870, Двустволках</Russian>
-			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
-			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
-			<Czech>Ráže: 12 &lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
-			<German>Kaliber: 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+			<English>Caliber: 12 Slug&lt;br/&gt;Rounds: 2 &lt;br/&gt;Used in: Double-barreled Shotgun</English>
+			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: Двустволках</Russian>
+			<Spanish>Calibre: 12 Slug &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: Escopeta de doble cañon</Spanish>
+			<French>Calibre: 12 Slug&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour:Fusil à 2 coups</French>
+			<Czech>Ráže: 12 Slug&lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: Dvouhlavňová brokovnice</Czech>
+			<German>Kaliber: 12 Slug&lt;br/&gt;Patronen: 2&lt;br/&gt;Verwendet in: Doppelläufige Schrotflinte</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_NAME">
 			<English>2Rnd. 12Cal. Pellets</English>
@@ -18417,12 +18421,12 @@
 			<German>2Rnd. 12Cal. Schrot</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_DESC">
-			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2&lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
+			<English>Caliber: 12 Buckshot &lt;br/&gt;Rounds: 2&lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
 			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: M1014, Ремингтон 870, Двустволках</Russian>
-			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2&lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
-			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
-			<Czech>Ráže: 12&lt;br/&gt;Munice: 2&lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
-			<German>Kaliber 12 Schrotmunition&lt;br/&gt;2&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+			<Spanish>Calibre: 12 Buckshot &lt;br/&gt;Rondas: 2&lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
+			<French>Calibre: 12 Buckshot&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
+			<Czech>Ráže: 12 Buckshot&lt;br/&gt;Munice: 2&lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
+			<German>Kaliber: 12 Schrot&lt;br/&gt;Patronen: 2&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_SLUG_NAME">
 			<English>8Rnd. 12 Cal. Slug</English>
@@ -18437,7 +18441,7 @@
 			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 8 &lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
 			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
 			<Czech>Ráže: 12 &lt;br/&gt;Munice: 8 &lt;br/&gt;Pro: M1014, Remington 870</Czech>
-			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;8 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+			<German>Kaliber: 12 Slug&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_BUCK_NAME">
 			<English>8Rnd. 12Cal. Pellets</English>
@@ -18448,12 +18452,12 @@
 			<German>8Rnd. 12Cal. Schrot</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_BUCK_DESC">
-			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M1014, Remington 870</English>
+			<English>Caliber: 12 Buckshot &lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M1014, Remington 870</English>
 			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 8 &lt;br/&gt;Используется в: M1014, Ремингтон 870</Russian>
-			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 8&lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
-			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
-			<Czech>Ráže: 12&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
-			<German>Kaliber 12 Schrotmunition&lt;br/&gt;8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+			<Spanish>Calibre: 12 Buckshot &lt;br/&gt;Rondas: 8&lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
+			<French>Calibre: 12 Buckshot&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
+			<Czech>Ráže: 12 Buckshot&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
+			<German>Kaliber: 12 Schrot&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
 		</Key>
         <Key ID="STR_DZ_MAG_30RND_MP5_DESC">
 			<German>Kaliber: 9x19mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: MP5, Scorpion Evo 3</German>
@@ -19154,19 +19158,29 @@
 			<Hungarian>Kaliber: 9x39mm &lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS VAL</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME">
-			<English>20Rnd. 12 Cal. Slug.</English>
-			<German>20 Schuss Kal. 12 Flintenlaufgeschoss</German>
-			<Russian>20п. 12к (пуля)</Russian>
+			<English>20Rnd. AA-12 Slug</English>
+			<Russian>20п. AA-12 (пуля)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME">
-			<English>20Rnd. 12 Cal. Pellets.</English>
-			<German>20 Schuss Kal. 12 Schrot</German>
-			<Russian>20п. 12к (дробь)</Russian>
+			<English>20Rnd. AA-12 Pellets</English>
+			<Russian>20п. AA-12 (дробь)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_HE_NAME">
-			<English>20Rnd. 19mm HE.</English>
-			<Russian>20п. 19мм HE</Russian>
+			<English>20Rnd. AA-12 HE.</English>
+			<Russian>20п. AA-12 HE</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20RND_12GAUGE_SLUG_DESC">
+			<English>Caliber: 12 Slug &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: AA-12</English>
+			<German>Kaliber 12 Slug &lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: AA-12</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_12GAUGE_BUCK_DESC">
+			<English>Caliber: 12 Buckshot &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: AA-12</English>
+			<German>Kaliber 12 Schrot &lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: AA-12</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_12GAUGE_HE_DESC">
+			<English>Caliber: 12 HE &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: AA-12</English>
+			<German>Kaliber: 12 HE &lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: AA-12</German>
+		</Key>		
 		<Key ID="STR_DZ_MAG_10Rnd_762x51_CZ750_NAME">
 			<English>10Rnd. CZ 750 mag.</English>
 			<Russian>10п. CZ 750 маг.</Russian>
@@ -32219,6 +32233,18 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP">
+			<English>Hemp plant patch</English>
+			<German>Hanfpflanzenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO">
+			<English>Tobacco plant patch</English>
+			<German>Tabakpflanzenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
+			<English>Tea plant patch</English>
+			<German>Teepflanzenbeet</German>
 		</Key>		
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->

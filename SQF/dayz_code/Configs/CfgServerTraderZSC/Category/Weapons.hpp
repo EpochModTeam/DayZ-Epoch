@@ -641,7 +641,7 @@ class Category_17 {
 	class M24_DZ {type = "trade_weapons";buy[] = {1000,"worth"};sell[] = {600,"worth"};};
 	class M24_Gh_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {700,"worth"};};
 	// desert camo
-	class M24_des_EP1 {type = "trade_weapons";buy[] = {1000,"worth"};sell[] = {600,"worth"};};
+	class M24_Des_DZ {type = "trade_weapons";buy[] = {1000,"worth"};sell[] = {600,"worth"};};
 	class M40A3_DZ {type = "trade_weapons";buy[] = {1000,"worth"};sell[] = {600,"worth"};};
 	class M40A3_Gh_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {700,"worth"};};	
 	// iron sights
