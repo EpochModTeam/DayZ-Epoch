@@ -79,3 +79,18 @@ class Plant_Patch_Potato_DZE : Plant_Patch_Base_DZE {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_POTATO;
 };
+
+class Plant_Patch_Hemp_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayname = $STR_EPOCH_PLANT_PATCH_HEMP;
+};
+
+class Plant_Patch_Tobacco_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayname = $STR_EPOCH_PLANT_PATCH_TOBACCO;
+};
+
+class Plant_Patch_Tea_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayname = $STR_EPOCH_PLANT_PATCH_TEA;
+};
