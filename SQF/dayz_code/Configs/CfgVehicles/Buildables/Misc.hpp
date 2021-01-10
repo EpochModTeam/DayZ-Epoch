@@ -152,7 +152,7 @@ class StickFence_DZ: Wall_FenW2_6_EP1
 	destrType = "DestructTree";
 	armor = 200;
 	scope = 2;
-	offset[] = {0,4.5,0};
+	offset[] = {0,4.5,0.5};
 	displayName = $STR_EPOCH_STICKFENCE;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"stick_fence_kit",1}};
