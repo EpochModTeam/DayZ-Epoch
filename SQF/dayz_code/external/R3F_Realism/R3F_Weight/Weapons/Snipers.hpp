@@ -86,6 +86,10 @@ class KSVK_DZE
 {
 	weight = 12;
 };
+class M24_DES_DZ
+{
+	weight = 7;
+};
 class M24
 {
 	weight = 7;
@@ -366,6 +370,10 @@ class M4SPR_DZE
 class M200_CheyTac_DZ
 {
 	weight = 15.0;
+};
+class M200_CheyTac_SD_DZ
+{
+	weight = 16.0;
 };
 class WA2000_DZ
 {

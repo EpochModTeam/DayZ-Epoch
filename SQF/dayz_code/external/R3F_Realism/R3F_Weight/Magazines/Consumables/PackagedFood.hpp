@@ -150,3 +150,15 @@ class equip_garlic_bulb
 {
 	weight = 0.1; 
 };
+class FoodPotatoRaw
+{
+	weight = 0.25;
+};
+class FoodPotatoBaked
+{
+	weight = 0.25;
+};
+class FoodCarrot
+{
+	weight = 0.25;
+};

@@ -78,6 +78,10 @@ class 5Rnd_408_CheyTac
 {
 	weight = 1.5;
 };
+class 5Rnd_408_CheyTac_SD
+{
+	weight = 1.5;
+};
 class 6Rnd_762x51_WA2000
 {
 	weight = 1.5;

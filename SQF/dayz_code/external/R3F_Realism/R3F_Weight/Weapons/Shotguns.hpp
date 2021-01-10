@@ -106,3 +106,7 @@ class AA12_PMC
 { 	
 	weight = 4.5;
 };
+class AA12_DZ				
+{ 	
+	weight = 4.5;
+};
