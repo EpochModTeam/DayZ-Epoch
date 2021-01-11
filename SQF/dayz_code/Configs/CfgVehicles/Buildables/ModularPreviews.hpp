@@ -136,7 +136,7 @@ class Drawbridge_Preview_DZ: DZE_Ghost_Previews {
 };
 class Wood_Triangle_Wall_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
-	model = "\z\addons\dayz_epoch_v\base_building\wood\apex_tri\apex_tri.p3d";
+	model = "\z\addons\dayz_epoch_v\base_building\wood\apex_tri\apex_tri_ghost.p3d";
 	displayName = "Wood Triangle wall Preview";
 };
 class Wood_Handrail_Preview_DZ: DZE_Ghost_Previews {
@@ -146,7 +146,7 @@ class Wood_Handrail_Preview_DZ: DZE_Ghost_Previews {
 };
 class Wood_Floor_Stairs_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
-	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs_ghost.p3d";
 	displayName = "Wood floor w/Stairs Preview";
 };
 class Wood_Pillar_Preview_DZ: DZE_Ghost_Previews {
@@ -178,11 +178,6 @@ class CinderDoorHatch_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinder_door_frame_ghost.p3d";
 	displayName = "Cinder door with hatch Preview";
-};
-class Helinest_Preview_DZ: DZE_Ghost_Previews {
-	scope = 2;
-	model = "\z\addons\dayz_epoch_v\base_building\floors\helinest\all_heli_shop_ghost.p3d";
-	displayName = "Helinest Preview";
 };
 class MetalPillar_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
@@ -216,7 +211,7 @@ class MetalFloor4x_Preview_DZ: DZE_Ghost_Previews {
 };
 class WoodFloor4x_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
-	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2.p3d";
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2_ghost.p3d";
 	displayName = "WoodFloor4x Preview";
 };
 class WoodTriangleFloor_Preview_DZ: DZE_Ghost_Previews {
@@ -228,4 +223,9 @@ class CinderWallHalf_Gap_Preview_DZ: DZE_Ghost_Previews {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\cinder_wall_half2_ghost.p3d";
 	displayName = "Cinder Wall Half Gap Preview";
+};
+class StorageShed_Preview_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\storage\Shed_M02_ghost.p3d";
+	displayName = "StorageShed Preview";
 };
