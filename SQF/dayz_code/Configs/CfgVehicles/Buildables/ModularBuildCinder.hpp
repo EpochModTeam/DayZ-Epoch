@@ -90,7 +90,7 @@ class CinderWallWindow_DZ: ModularItems {
 		{
 			displayName = $STR_BLD_ACTIONS_OPEN_WINDOW;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
@@ -150,7 +150,7 @@ class CinderWallWindowLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		{
 			displayName = $STR_BLD_ACTIONS_OPEN_WINDOW;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
@@ -296,7 +296,7 @@ class Concrete_Bunker_DZ: CinderWallDoor_DZ_Base {
 		{
 			displayName = $STR_BLD_ACTIONS_OPEN_BUNKER;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""raise_all"" < 0.5)";
 			statement = "this animate [""raise_all"", 1];this animate [""rollers"", 1];";
@@ -343,7 +343,7 @@ class Concrete_Bunker_Locked_DZ: CinderWallDoorLocked_DZ_Base {
 		{
 			displayName = $STR_BLD_ACTIONS_OPEN_BUNKER;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""raise_all"", 1];";
