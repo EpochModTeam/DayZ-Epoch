@@ -145,7 +145,8 @@ class 2Rnd_12Gauge_Buck : 8Rnd_12Gauge_Buck
 class 20Rnd_B_AA12_74Slug : CA_Magazine
 {
 	model = "\z\addons\dayz_epoch_w\magazine\dze_AA12_mag.p3d";
-	displayName = $STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME;	
+	displayName = $STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_12GAUGE_SLUG_DESC;	
 	cartridgeName = "12Gauge_Slug";
 	
 	class ItemActions
@@ -157,7 +158,8 @@ class 20Rnd_B_AA12_74Slug : CA_Magazine
 class 20Rnd_B_AA12_Pellets : CA_Magazine
 {
 	model = "\z\addons\dayz_epoch_w\magazine\dze_AA12_mag.p3d";
-	displayName = $STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME;	
+	displayName = $STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME;
+	descriptionShort = $STR_DZ_MAG_20RND_12GAUGE_BUCK_DESC;	
 	cartridgeName = "12Gauge_Pellets";
 	
 	class ItemActions
@@ -170,6 +172,7 @@ class 20Rnd_B_AA12_HE : CA_Magazine
 {
 	model = "\z\addons\dayz_epoch_w\magazine\dze_AA12_mag.p3d";
 	displayName = $STR_DZ_MAG_20Rnd_B_AA12_HE_NAME;	
+	descriptionShort = $STR_DZ_MAG_20RND_12GAUGE_HE_DESC;	
 	cartridgeName = "19mm_HE";
 	
 	class ItemActions
@@ -201,6 +204,7 @@ class 8Rnd_B_Saiga12_Pellets: CA_Magazine
 	};
 };
 
+//USAS 12 Ammo
 class 20Rnd_B_Usas12_74Slug: 8Rnd_B_Saiga12_74Slug {
 	displayName = $STR_DZ_MAG_20RND_USAS12_SLUG_NAME;
 	descriptionShort = $STR_DZ_MAG_20RND_USAS12_SLUG_DESC;	

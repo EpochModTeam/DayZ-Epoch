@@ -17,7 +17,7 @@ class FoodPumpkin : FoodEdible
 	displayName = $STR_FOOD_NAME_PUMPKIN;
 	descriptionShort = $STR_FOOD_NAME_PUMPKIN;
 	weight = 1;
-	model = "z\addons\dayz_communityassets\models\pistachio.p3d"; // TODO: model + icon
+	model = "\z\addons\dayz_epoch_w\items\veges\pumpkin.p3d";
 	picture = "\dayz_epoch_c\icons\plants\pumpkin.paa";
 	
 	class ItemActions
@@ -46,7 +46,7 @@ class ItemPumpkinSeed: FoodEdible
 	bloodRegen = 100;
 	displayName = $STR_CRAFT_NAME_PUMPKIN_SEED;
 	descriptionShort = $STR_CRAFT_DESC_PUMPKIN_SEED;
-	model = "z\addons\dayz_communityassets\models\pistachio.p3d";
+	model = "\z\addons\dayz_epoch_w\items\veges\seedbag_01.p3d";
 	picture = "\dayz_epoch_c\icons\plants\pumpkinseeds.paa";
 	type = 256;
 };
@@ -58,7 +58,7 @@ class FoodSunFlowerSeed : FoodEdible
 	bloodRegen = 100;
 	displayName = $STR_FOOD_NAME_SUNFLOWER;
 	descriptionShort = $STR_FOOD_NAME_SUNFLOWER;
-	model = "z\addons\dayz_communityassets\models\pistachio.p3d";
+	model = "\z\addons\dayz_epoch_w\items\veges\seedbag_01.p3d";
 	picture = "\dayz_epoch_c\icons\plants\sunflowerseeds.paa";	
 };
 
@@ -81,7 +81,7 @@ class FoodPotatoBaked : FoodCooked
 	count = 1;
 	displayName = $STR_FOOD_NAME_POTATO_BAKED;
 	descriptionShort = $STR_FOOD_NAME_POTATO_BAKED;
-	model = "\z\addons\dayz_epoch_w\items\veges\dze_potato.p3d";
+	model = "\z\addons\dayz_epoch_w\items\veges\dze_potato_baked.p3d";
 	picture = "\dayz_epoch_c\icons\plants\potatobaked.paa";
 	bloodRegen = 200;
 	Nutrition[] = {250,0,0,0};

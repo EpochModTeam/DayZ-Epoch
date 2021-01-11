@@ -1,6 +1,6 @@
 class ItemFertilizer
 {
-	weight = 0.1;
+	weight = 2.5;
 };
 
 class ItemPumpkinSeed
@@ -54,4 +54,12 @@ class FoodPumpkin
 class FoodSunFlowerSeed 
 { 
 	weight = 0.2; 
+};
+class ItemTobaccoSeed
+{
+	weight = 0.1;
+};
+class ItemBlackTeaSeed
+{
+	weight = 0.1;
 };

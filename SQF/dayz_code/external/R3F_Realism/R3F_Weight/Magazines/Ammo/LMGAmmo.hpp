@@ -14,6 +14,10 @@ class 100Rnd_556x45_BetaCMag
 {
 	weight = 5;
 };
+class 100Rnd_556x45_BetaCMagSD
+{
+	weight = 5;
+};
 class 100Rnd_556x45_BetaCMag_airLock 
 { 
 	weight = 5; 

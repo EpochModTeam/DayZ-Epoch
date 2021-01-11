@@ -42,6 +42,22 @@ class Assault_Pack_DZE2
 {
 	weight = 2.4;
 };
+class GymBag_Camo_DZE1
+{
+	weight = 1.7;
+};
+class GymBag_Camo_DZE2
+{
+	weight = 1.9;
+};
+class GymBag_Green_DZE1 
+{
+	weight = 1.7;
+};
+class GymBag_Green_DZE2
+{
+	weight = 1.9;
+};
 class DZ_Czech_Vest_Pouch
 {
 	weight = 2;
@@ -65,6 +81,14 @@ class ALICE_Pack_DZE1
 class ALICE_Pack_DZE2
 {
 	weight = 3.4;
+};
+class School_Bag_DZE1
+{
+	weight = 3;
+};
+class School_Bag_DZE2
+{
+	weight = 3.2;
 };
 class DZ_CompactPack_EP1
 {
@@ -114,6 +138,14 @@ class GunBag_DZE2
 {
 	weight = 4.4;
 };
+class PartyPack_DZE1
+{
+	weight = 3.7;
+};
+class PartyPack_DZE2
+{
+	weight = 3.8;
+};
 class NightPack_DZE1
 {
 	weight = 4.2;
@@ -130,6 +162,22 @@ class SurvivorPack_DZE2
 {
 	weight = 5.4;
 };
+class AirwavesPack_DZE1
+{
+	weight = 4.6;
+};
+class AirwavesPack_DZE2
+{
+	weight = 5.6;
+};
+class CzechBackpack_Camping_DZE1
+{
+	weight = 5.2;
+};
+class CzechBackpack_Camping_DZE2
+{
+	weight = 5.4;
+};
 class  DZ_CivilBackpack_EP1
 {
 	weight = 5;
@@ -142,7 +190,6 @@ class CzechBackpack_DZE2
 {
 	weight = 5.4;
 };
-
 class CzechBackpack_OD_DZE1
 {
 	weight = 5.2;
@@ -320,6 +367,14 @@ class CoyoteBackpackWdl_DZE1
 	weight = 6.2;
 };
 class CoyoteBackpackWdl_DZE2
+{
+	weight = 6.4;
+};
+class CoyoteBackpack_Camping_DZE1
+{
+	weight = 6.2;
+};
+class CoyoteBackpack_Camping_DZE2
 {
 	weight = 6.4;
 };

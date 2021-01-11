@@ -20,12 +20,12 @@ class ItemKosmosSmokesOpen
 
 class equip_nails 
 {
-	weight = 0.01;
+	weight = 0.5;
 };
 
 class ItemScrews
 {
-	weight = 0.01;
+	weight = 0.5;
 };
 
 class equip_duct_tape 
@@ -116,4 +116,28 @@ class equip_rail_screws
 class IR_Strobe_Target
 {
 	weight = 0.4;
+};
+class ItemBucket
+{
+	weight = 1;
+};
+class ItemSuitcase
+{
+	weight = 5;
+};
+class ItemSuitcaseDiamonds
+{
+	weight = 6;
+};
+class ItemSuitcaseBomb
+{
+	weight = 8;
+};
+class ItemPlasicParts
+{
+	weight = 4;
+};
+class ItemCeramicParts
+{
+	weight = 3;
 };

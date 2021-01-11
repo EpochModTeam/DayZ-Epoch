@@ -1,4 +1,10 @@
-class Revolver_DZ : revolver_EP1
+class Revolver_DZ: revolver_EP1
+{
+	magazines[] = {6Rnd_45ACP};
+};
+
+class revolver_gold_EP1;
+class Revolver_Gold_DZ: revolver_gold_EP1
 {
 	magazines[] = {6Rnd_45ACP};
 };

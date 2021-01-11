@@ -130,6 +130,10 @@ class AK_47_S
 {
 	weight = 3;
 };
+class AKS_DZ
+{
+	weight = 3;
+};
 class AKS_GOLD
 {
 	weight = 4.0;

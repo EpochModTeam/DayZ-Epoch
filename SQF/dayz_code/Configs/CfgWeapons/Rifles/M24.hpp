@@ -31,3 +31,11 @@ class M24_Gh_DZ : M24_DZ
 		};
 	};
 };
+
+class M24_des_EP1;
+class M24_DES_DZ : M24_des_EP1
+{
+	displayName = $STR_DZ_WPN_M24_DESERT_NAME;
+	
+	magazines[] = {5Rnd_762x51_M24};
+};

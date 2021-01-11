@@ -88,16 +88,16 @@ class CinderWallWindow_DZ: ModularItems {
 	{			
 		class Open_Door
 		{
-			displayName = $STR_DN_OUT_O_DOOR;
+			displayName = $STR_BLD_ACTIONS_OPEN_WINDOW;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
 		};
 		class Close_Door : Open_Door
 		{
-			displayName = $STR_DN_OUT_C_DOOR;
+			displayName = $STR_BLD_ACTIONS_CLOSE_WINDOW;
 			condition = "this animationPhase ""Open_door"" >= 0.5";
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
@@ -148,34 +148,34 @@ class CinderWallWindowLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	{			
 		class Open_Door
 		{
-			displayName = $STR_DN_OUT_O_DOOR;
+			displayName = $STR_BLD_ACTIONS_OPEN_WINDOW;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
 		};
 		class Close_Door : Open_Door
 		{
-			displayName = $STR_DN_OUT_C_DOOR;
+			displayName = $STR_BLD_ACTIONS_CLOSE_WINDOW;
 			condition = "(this animationPhase ""Open_door"" == 1) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_LOCK;
+			displayName = $STR_BLD_ACTIONS_LOCK_WINDOW;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			displayName = $STR_BLD_ACTIONS_UNLOCK_WINDOW;
 			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 0)";
 			statement = "this animate [""Open_latch"", 1]";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			displayName = $STR_BLD_ACTIONS_UNLOCK_WINDOW;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
 		};
@@ -294,16 +294,16 @@ class Concrete_Bunker_DZ: CinderWallDoor_DZ_Base {
 	{
 		class Open_Door
 		{
-			displayName = $STR_DN_OUT_O_DOOR;
+			displayName = $STR_BLD_ACTIONS_OPEN_BUNKER;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""raise_all"" < 0.5)";
 			statement = "this animate [""raise_all"", 1];this animate [""rollers"", 1];";
 		};
 		class Close_Door : Open_Door
 		{
-			displayName = $STR_DN_OUT_C_DOOR;
+			displayName = $STR_BLD_ACTIONS_CLOSE_BUNKER;
 			condition = "(this animationPhase ""raise_all"" >= 0.5)";
 			statement = "this animate [""raise_all"", 0];this animate [""rollers"", 0];";
 		};	
@@ -341,86 +341,36 @@ class Concrete_Bunker_Locked_DZ: CinderWallDoorLocked_DZ_Base {
 	{
 		class Open_Door
 		{
-			displayName = $STR_DN_OUT_O_DOOR;
+			displayName = $STR_BLD_ACTIONS_OPEN_BUNKER;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""raise_all"", 1];";
 		};
 		class Close_Door : Open_Door
 		{
-			displayName = $STR_DN_OUT_C_DOOR;
+			displayName = $STR_BLD_ACTIONS_CLOSE_BUNKER;
 			condition = "(this animationPhase ""raise_all"" == 1) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""raise_all"", 0];";
 		};
 		class Lock_Door : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_LOCK;
+			displayName = $STR_BLD_ACTIONS_LOCK_BUNKER;
 			condition = "(this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "PVDZE_handleSafeGear = [player,this,4];publicVariableServer ""PVDZE_handleSafeGear"";this animate [""Open_latch"", 0]";
 		};
 		class Unlock_Door : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			displayName = $STR_BLD_ACTIONS_UNLOCK_BUNKER;
 			condition = "(!keypadCancel and DZE_Lock_Door == (this getvariable['CharacterID','0'])) and (this animationPhase ""raise_all"" == 0) and (this animationPhase ""Open_latch"" == 0)";
 			statement = "this animate [""Open_latch"", 1]";
 		};
 		class Unlock_Door_Dialog : Open_Door
 		{
-			displayName = $STR_EPOCH_DOORS_UNLOCK;
+			displayName = $STR_BLD_ACTIONS_UNLOCK_BUNKER;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
 		};		
 	};
 };
-
-/* Model not finshed
-class HeliNest_DZ: ModularItems {
-	scope = 2;
-	armor = 7000;
-	model = "\z\addons\dayz_epoch_v\base_building\floors\helinest\all_heli_shop.p3d";
-	displayName = "Helinest";
-	GhostPreview = "Helinest_Preview_DZ";
-	class AnimationSources 
-	{
-		class door1 
-		{
-			source = "user";
-			animPeriod = 2;
-			initPhase = 0; 
-		};
-		class door2: door1{};		
-		class door3: door1{};		
-		class door4: door1{};		
-		class door5: door1{};		
-		class door6: door1{};		
-		class door7: door1{};		
-		class door8: door1{};		
-		class door9: door1{};		
-		class door10: door1{};		
-
-	};
-	class UserActions
-	{			
-		class Open_Door
-		{
-			displayName = $STR_DN_OUT_O_DOOR;
-			onlyforplayer = true;
-			position = "Door_knopf";
-			radius = 3;
-			condition = "(this animationPhase ""door1"" == 0)";
-			statement = "this animate [""door1"", 1];this animate [""door2"", 1];this animate [""door3"", 1];this animate [""door4"", 1];this animate [""door5"", 1];this animate [""door6"", 1];this animate [""door7"", 1];this animate [""door8"", 1];this animate [""door9"", 1]; this animate [""door10"", 1];";
-		};
-		class Close_Door : Open_Door
-		{
-			displayName = $STR_DN_OUT_C_DOOR;
-			condition = "(this animationPhase ""door1"" == 1)";
-//			statement = "this animate [""door1"", 0];this animate [""Open_doorR"", 0];";
-			statement = "this animate [""door1"", 0];this animate [""door2"", 0];this animate [""door3"", 0];this animate [""door4"", 0];this animate [""door5"", 0];this animate [""door6"", 0];this animate [""door7"", 0];this animate [""door8"", 0];this animate [""door9"", 0]; this animate [""door10"", 0];";
-
-		};
-	};
-};
-*/
-

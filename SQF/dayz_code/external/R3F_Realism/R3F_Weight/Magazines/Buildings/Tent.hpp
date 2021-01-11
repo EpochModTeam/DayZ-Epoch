@@ -10,3 +10,11 @@ class ItemDesertTent
 {
 	weight = 5;
 };
+class ItemTentWinter
+{
+	weight = 4;
+};
+class ItemWinterDomeTent
+{
+	weight = 5;
+};

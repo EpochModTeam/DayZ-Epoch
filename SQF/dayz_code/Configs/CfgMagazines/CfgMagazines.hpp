@@ -53,6 +53,7 @@ class CfgMagazines
 	#include "Items\VehicleParts.hpp" //Vehicle parts		
 	#include "Items\DogTags.hpp"
 	#include "Items\ZombieParts.hpp"
+	#include "Items\AnimalSkin.hpp"
 	#include "Items\Misc.hpp" //Nails, screws, cards, hotwire kit etc.
 	
 	//Building items - all items that can be build and placed in-game

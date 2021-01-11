@@ -88,7 +88,8 @@ class StorageShed_DZ: Land_Shed_M01
 	transportMaxMagazines = 400;
 	transportMaxWeapons = 40;
 	transportMaxBackpacks = 20;
-	constructioncount = 6;	
+	constructioncount = 6;
+	GhostPreview = "StorageShed_Preview_DZ";	
 	
 	upgradeBuilding[] = {"StorageShed2_DZ",{"ItemToolbox","ItemCrowbar","ItemSledge"},{{"equip_metal_sheet",4},{"ItemMetalSheet",2},{"ItemScrews",2}}};	
 };
@@ -102,7 +103,8 @@ class StorageShed2_DZ: Land_Shed_M01
 	transportMaxMagazines = 600;
 	transportMaxWeapons = 60;
 	transportMaxBackpacks = 30;
-	constructioncount = 12;	
+	constructioncount = 12;
+	GhostPreview = "StorageShed_Preview_DZ";	
 };
 
 class Land_kulna;
@@ -399,5 +401,38 @@ class Vendmachine2_DZ: BuiltItems
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;
 	removeoutput[] = {{"vendmachine2_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class StorageCrate_DZ: BuiltItems 
+{
+	scope = 2;
+	model = "z\addons\dayz_buildings\models\item_storage.p3d";
+	displayName = $STR_EPOCH_STORAGECRATE;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	constructioncount = 1;
+	offset[] = {0,2.5,0.3};
+	transportMaxWeapons = 3;	
+	transportMaxMagazines = 60;
+	transportmaxbackpacks = 1;
+	removeoutput[] = {{"storage_crate_kit",1}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
+
+class CamoStorageCrate_DZ: BuiltItems 
+{
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\storage\dze_camo_ammobednaX.p3d";
+	displayName = $STR_EPOCH_CAMO_STORAGE_CRATE;
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;	
+	constructioncount = 3;
+	offset[] = {0,3,0};
+	transportMaxWeapons = 15;	
+	transportMaxMagazines = 55;
+	transportmaxbackpacks = 6;
+	requireplot = 0;
+	removeoutput[] = {{"camo_storage_crate_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };

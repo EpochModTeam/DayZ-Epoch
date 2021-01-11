@@ -16,7 +16,6 @@ class DZE_Base_Object : All {
 	armor = 2200;
 	destrType = "DestructBuilding";
 	damageResistance = 0.004;
-	// static 
 	reversed = 0;
 	hasDriver = 0;
 	accuracy = 0.1;
@@ -209,7 +208,7 @@ class Land_DZE_WoodDoor: Land_DZE_WoodDoor_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1]";
@@ -249,7 +248,7 @@ class Land_DZE_WoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement = "this animate [""Open_door"", 1]";
@@ -301,7 +300,7 @@ class Land_DZE_LargeWoodDoor: Land_DZE_WoodDoor_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1]";
@@ -340,7 +339,7 @@ class Land_DZE_LargeWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement = "this animate [""Open_door"", 1]";
@@ -393,7 +392,7 @@ class Land_DZE_GarageWoodDoor: Land_DZE_WoodDoor_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1]";
@@ -433,7 +432,7 @@ class Land_DZE_GarageWoodDoorLocked: Land_DZE_WoodDoorLocked_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_hinge"" == 1)";
 			statement = "this animate [""Open_door"", 1]";
@@ -493,7 +492,7 @@ class Land_DZE_WoodGate: Land_DZE_WoodDoor_Base {
 		{
 			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
@@ -506,6 +505,7 @@ class Land_DZE_WoodGate: Land_DZE_WoodDoor_Base {
 		};
 	};
 };
+
 class Land_DZE_WoodGateLocked: Land_DZE_WoodDoorLocked_Base {
 	scope = 2;
 	armor = 3200;
@@ -540,7 +540,7 @@ class Land_DZE_WoodGateLocked: Land_DZE_WoodDoorLocked_Base {
 		{
 			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
@@ -599,7 +599,7 @@ class Land_DZE_WoodOpenTopGarageDoor: Land_DZE_WoodDoor_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""doorl"" < 0.5";
 			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
@@ -612,6 +612,7 @@ class Land_DZE_WoodOpenTopGarageDoor: Land_DZE_WoodDoor_Base {
 		};
 	};
 };
+
 class Land_DZE_WoodOpenTopGarageLocked: Land_DZE_WoodDoorLocked_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\wood\garage_notop\locked_wood_garage_notop.p3d";
@@ -645,7 +646,7 @@ class Land_DZE_WoodOpenTopGarageLocked: Land_DZE_WoodDoorLocked_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
@@ -703,7 +704,7 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 1]";
@@ -735,7 +736,6 @@ class CinderWallDoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	};
 };
 
-
 class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\steel_garage_door.p3d";
@@ -757,7 +757,7 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1]";
@@ -770,8 +770,6 @@ class CinderWallDoor_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
-
-
 
 class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
@@ -799,7 +797,7 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 1]";
@@ -831,7 +829,6 @@ class CinderWallDoorSmallLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	};
 };
 
-
 class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch\models\Steel_door.p3d";
@@ -853,7 +850,7 @@ class CinderWallDoorSmall_DZ: CinderWallDoor_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;			
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1]";
@@ -895,7 +892,7 @@ class CinderGate_DZ: CinderWallDoor_DZ_Base {
 		{
 			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
@@ -908,6 +905,7 @@ class CinderGate_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
+
 class CinderGateLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
 	armor = 4600;
@@ -942,7 +940,7 @@ class CinderGateLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		{
 			displayName = $STR_BLD_ACTIONS_OPEN_GATE;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
@@ -1001,7 +999,7 @@ class CinderGarageOpenTop_DZ: CinderWallDoor_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""doorl"" < 0.5";
 			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
@@ -1014,6 +1012,7 @@ class CinderGarageOpenTop_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
+
 class CinderGarageOpenTopLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\CinderGaragenotop\locked_cindergarage_notop.p3d";
@@ -1047,7 +1046,7 @@ class CinderGarageOpenTopLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""doorl"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""doorl"", 1];this animate [""doorR"", 1];";
@@ -1081,7 +1080,7 @@ class CinderGarageOpenTopLocked_DZ: CinderWallDoorLocked_DZ_Base {
 
 class CinderDoorHatch_DZ: CinderWallDoor_DZ_Base {
 	scope = 2;
-	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinderdoor_hatch.p3d";
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinder_door_hatch.p3d";
 	displayName = $STR_EPOCH_BLOCKDOOR_HATCH;
 	GhostPreview = "CinderDoorHatch_Preview_DZ";
 	upgradeBuilding[] = {"CinderDoorHatchLocked_DZ",{},{{"ItemComboLock",1}}};
@@ -1106,7 +1105,7 @@ class CinderDoorHatch_DZ: CinderWallDoor_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
@@ -1119,6 +1118,7 @@ class CinderDoorHatch_DZ: CinderWallDoor_DZ_Base {
 		};
 	};
 };
+
 class CinderDoorHatchLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinder_door_hatch_locked.p3d";
@@ -1152,7 +1152,7 @@ class CinderDoorHatchLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 1];this animate [""Open_doorR"", 1];";
@@ -1206,7 +1206,7 @@ class Door_DZ: CinderWallDoor_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;			
 			condition = "this animationPhase ""Open_door"" < 0.5";
 			statement = "this animate [""Open_door"", 1]";
@@ -1248,7 +1248,7 @@ class DoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 		{
 			displayName = $STR_DN_OUT_O_DOOR;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_door"" == 0) and (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_door"", 1]";
@@ -1280,9 +1280,6 @@ class DoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 	};
 	class DestructionEffects {};
 };
-
-
-
 
 /*
 	Vanilla DayZ buildables are defined in \dayz_buildings\configs\

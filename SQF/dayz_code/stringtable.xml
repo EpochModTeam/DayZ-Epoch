@@ -2187,6 +2187,54 @@
 			<French>Un tas de pièces électroniques</French>
 			<Czech>Relikvie z časů, kdy veřejné mínění bylo utvářeno elektronickými masmédii.</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_graphicscard">
+			<English>Graphics Card</English>
+			<German>Grafikkarte</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_graphicscard">
+			<English>A small graphics card that is still usable.</English>
+			<German>Eine kleine Grafikkarte, welche immer noch benutzt werden kann.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_graphicscard_broken">
+			<English>Graphics Card (broken)</English>
+			<German>Grafikkarte (kaputt)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_graphicscard_broken">
+			<English>A small broken graphics card that must be repaired.</English>
+			<German>Eine kleine kaputte Grafikkarte, welche repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_soundcard">
+			<English>Sound Card</English>
+			<German>Soundkarte</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_soundcard">
+			<English>A small sound card that is still usable.</English>
+			<German>Eine kleine Soundkarte, welche immer noch benutzt werden kann.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_soundcard_broken">
+			<English>Sound Card (broken)</English>
+			<German>Soundkarte (kaputt)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_soundcard_broken">
+			<English>A small broken sound card that must be repaired.</English>
+			<German>Eine kleine kaputte Soundkarte, welche repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_pcicard">
+			<English>PCI Card</English>
+			<German>PCI-Karte</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_pcicard">
+			<English>A small PCI card that is still usable.</English>
+			<German>Eine kleine PCI-Karte, welche immer noch benutzt werden kann.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_pcicard_broken">
+			<English>PCI Card (broken)</English>
+			<German>PCI-Karte (kaputt)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_pcicard_broken">
+			<English>A small broken PCI card that must be repaired.</English>
+			<German>Eine kleine kaputte PCI-Karte, welche repariert werden muss.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_rope">
 			<English>Rope</English>
 			<German>Seil</German>
@@ -2332,8 +2380,8 @@
 			<Czech>Ostrá jehla</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_nails">
-			<English>Nails</English>
-			<German>Nägel</German>
+			<English>Box of nails</English>
+			<German>Schachtel mit Nägeln</German>
 			<Russian>Гвозди</Russian>
 			<Spanish>Clavos</Spanish>
 			<French>Clous</French>
@@ -2441,6 +2489,14 @@
 			<Czech>Kus kabelu, který je dobrém stavu. Předmět lze použít při výrobě.</Czech>
 			<German>Ein Flachbandkabel aus einem alten Computer. Es ist recht gut erhalten.</German>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_satawire">
+			<English>SATA Wire</English>
+			<German>SATA-Kabel</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_satawire">
+			<English>SATA Wire in good condition that can be used in crafting.</English>
+			<German>Ein SATA-Kabel aus einem alten Computer. Es ist gut erhalten.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_crate">
 			<English>Crate</English>
 			<Russian>Ящик</Russian>
@@ -2581,6 +2637,18 @@
 			<French>Une batterie de Type AA</French>
 			<Czech>Baterie typu AA ("tužková").</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_aa_battery_empty">
+			<English>AA Battery (empty)</English>
+			<German>AA-Batterie (leer)</German>
+			<Russian>Батарейка АА (порожний)</Russian>
+			<Spanish>Batería AA (vacía)</Spanish>
+			<French>Pile de type AA (vide)</French>
+			<Czech>AA baterie (prázdný)</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_aa_battery_empty">
+			<English>A size AA battery that must be recarged.</English>
+			<German>Eine Batterie vom Typ R6/AA, welche neu aufgeladen werden muss.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_d_battery">
 			<English>D Battery</English>
 			<German>D-Batterie</German>
@@ -2597,6 +2665,18 @@
 			<French>Une pile de type D</French>
 			<Czech>Baterie typu D ("buřt").</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_d_battery_empty">
+			<English>D Battery (empty)</English>
+			<German>D-Batterie (leer)</German>
+			<Russian>Батарейка D (порожний)</Russian>
+			<Spanish>Batería D (vacía)</Spanish>
+			<French>Pile de type D (vide)</French>
+			<Czech>D baterie (prázdný)</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_d_battery_empty">
+			<English>A size D battery that must be recarged.</English>
+			<German>Eine Batterie vom Typ R20/D, welche neu aufgeladen werden muss.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_2inch_metal_pipe">
 			<English>2 Inch Metal Pipes</English>
 			<German>Metallrohr 5cm</German>
@@ -15348,6 +15428,10 @@
 			<Russian>M24 (Камуфляж)</Russian>
 			<German>M24 Tarn</German>
 		</Key>
+		<Key ID="STR_DZ_WPN_M24_DESERT_NAME">
+			<English>M24 Desert</English>
+			<German>M24 Wüstentarn</German>
+		</Key>		
 		<Key ID="STR_DZ_WPN_M40A3_NAME">
 			<English>M40A3</English>
 		</Key>
@@ -18401,12 +18485,12 @@
 			<Czech>2 patrony Slug</Czech>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_SLUG_DESC">
-			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2 &lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
-			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: M1014, Ремингтон 870, Двустволках</Russian>
-			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
-			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
-			<Czech>Ráže: 12 &lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
-			<German>Kaliber: 12 Flintenlaufgeschoss&lt;br/&gt;2 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+			<English>Caliber: 12 Slug&lt;br/&gt;Rounds: 2 &lt;br/&gt;Used in: Double-barreled Shotgun</English>
+			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: Двустволках</Russian>
+			<Spanish>Calibre: 12 Slug &lt;br/&gt;Rondas: 2 &lt;br/&gt;Usada en: Escopeta de doble cañon</Spanish>
+			<French>Calibre: 12 Slug&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour:Fusil à 2 coups</French>
+			<Czech>Ráže: 12 Slug&lt;br/&gt;Munice: 2 &lt;br/&gt;Pro: Dvouhlavňová brokovnice</Czech>
+			<German>Kaliber: 12 Slug&lt;br/&gt;Patronen: 2&lt;br/&gt;Verwendet in: Doppelläufige Schrotflinte</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_NAME">
 			<English>2Rnd. 12Cal. Pellets</English>
@@ -18417,12 +18501,12 @@
 			<German>2Rnd. 12Cal. Schrot</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_12GAUGE_BUCK_DESC">
-			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 2&lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
+			<English>Caliber: 12 Buckshot &lt;br/&gt;Rounds: 2&lt;br/&gt;Used in: M1014, Remington 870, Double-barreled Shotgun</English>
 			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 2 &lt;br/&gt;Используется в: M1014, Ремингтон 870, Двустволках</Russian>
-			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 2&lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
-			<French>Calibre: 12&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
-			<Czech>Ráže: 12&lt;br/&gt;Munice: 2&lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
-			<German>Kaliber 12 Schrotmunition&lt;br/&gt;2&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
+			<Spanish>Calibre: 12 Buckshot &lt;br/&gt;Rondas: 2&lt;br/&gt;Usada en: M1014, Remington 870, Escopeta de doble cañon</Spanish>
+			<French>Calibre: 12 Buckshot&lt;br/&gt;Munitions: 2&lt;br/&gt;Pour: M1014, Remington 870, Fusil à 2 coups</French>
+			<Czech>Ráže: 12 Buckshot&lt;br/&gt;Munice: 2&lt;br/&gt;Pro: M1014, Remington 870, Dvouhlavňová brokovnice</Czech>
+			<German>Kaliber: 12 Schrot&lt;br/&gt;Patronen: 2&lt;br/&gt;Verwendet in: M1014, Remington 870, Doppelläufige Schrotflinte</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_SLUG_NAME">
 			<English>8Rnd. 12 Cal. Slug</English>
@@ -18437,7 +18521,7 @@
 			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 8 &lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
 			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
 			<Czech>Ráže: 12 &lt;br/&gt;Munice: 8 &lt;br/&gt;Pro: M1014, Remington 870</Czech>
-			<German>Kaliber 12 Flintenlaufgeschoss&lt;br/&gt;8 Schuss&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+			<German>Kaliber: 12 Slug&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_BUCK_NAME">
 			<English>8Rnd. 12Cal. Pellets</English>
@@ -18448,12 +18532,12 @@
 			<German>8Rnd. 12Cal. Schrot</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_12GAUGE_BUCK_DESC">
-			<English>Caliber: 12 gauge &lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M1014, Remington 870</English>
+			<English>Caliber: 12 Buckshot &lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M1014, Remington 870</English>
 			<Russian>Патрон: 12-й калибр &lt;br/&gt;Количество: 8 &lt;br/&gt;Используется в: M1014, Ремингтон 870</Russian>
-			<Spanish>Calibre: 12 gauge &lt;br/&gt;Rondas: 8&lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
-			<French>Calibre: 12&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
-			<Czech>Ráže: 12&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
-			<German>Kaliber 12 Schrotmunition&lt;br/&gt;8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
+			<Spanish>Calibre: 12 Buckshot &lt;br/&gt;Rondas: 8&lt;br/&gt;Usada en: M1014, Remington 870</Spanish>
+			<French>Calibre: 12 Buckshot&lt;br/&gt;Munitions: 8&lt;br/&gt;Pour: M1014, Remington 870</French>
+			<Czech>Ráže: 12 Buckshot&lt;br/&gt;Munice: 8&lt;br/&gt;Pro: M1014, Remington 870</Czech>
+			<German>Kaliber: 12 Schrot&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M1014, Remington 870</German>
 		</Key>
         <Key ID="STR_DZ_MAG_30RND_MP5_DESC">
 			<German>Kaliber: 9x19mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: MP5, Scorpion Evo 3</German>
@@ -19154,19 +19238,29 @@
 			<Hungarian>Kaliber: 9x39mm &lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS VAL</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_74Slug_NAME">
-			<English>20Rnd. 12 Cal. Slug.</English>
-			<German>20 Schuss Kal. 12 Flintenlaufgeschoss</German>
-			<Russian>20п. 12к (пуля)</Russian>
+			<English>20Rnd. AA-12 Slug</English>
+			<Russian>20п. AA-12 (пуля)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_Pellets_NAME">
-			<English>20Rnd. 12 Cal. Pellets.</English>
-			<German>20 Schuss Kal. 12 Schrot</German>
-			<Russian>20п. 12к (дробь)</Russian>
+			<English>20Rnd. AA-12 Pellets</English>
+			<Russian>20п. AA-12 (дробь)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_HE_NAME">
-			<English>20Rnd. 19mm HE.</English>
-			<Russian>20п. 19мм HE</Russian>
+			<English>20Rnd. AA-12 HE.</English>
+			<Russian>20п. AA-12 HE</Russian>
 		</Key>
+		<Key ID="STR_DZ_MAG_20RND_12GAUGE_SLUG_DESC">
+			<English>Caliber: 12 Slug &lt;br/&gt;Rounds: 20 &lt;br/&gt;Used in: AA-12</English>
+			<German>Kaliber 12 Slug &lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: AA-12</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_12GAUGE_BUCK_DESC">
+			<English>Caliber: 12 Buckshot &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: AA-12</English>
+			<German>Kaliber 12 Schrot &lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: AA-12</German>
+		</Key>
+		<Key ID="STR_DZ_MAG_20RND_12GAUGE_HE_DESC">
+			<English>Caliber: 12 HE &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: AA-12</English>
+			<German>Kaliber: 12 HE &lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: AA-12</German>
+		</Key>		
 		<Key ID="STR_DZ_MAG_10Rnd_762x51_CZ750_NAME">
 			<English>10Rnd. CZ 750 mag.</English>
 			<Russian>10п. CZ 750 маг.</Russian>
@@ -23798,7 +23892,7 @@
 		<Key ID="STR_EPOCH_PLAYER_260_1">
 			<English>Craft Advanced Workbench</English>
 			<German>Verbesserte Werkbank herstellen</German>
-		</Key>
+		</Key>		
 		<Key ID="STR_EPOCH_PLAYER_261">
 			<English>Craft Shack</English>
 			<German>Schuppen herstellen</German>
@@ -24109,6 +24203,10 @@
 			<English>%1 used to unlock vehicle.</English>
 			<German>%1 benutzt um Fahrzeug aufzuschließen.</German>
 			<Russian>%1 был использован для разблокировки транспорта.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_332">
+			<English>Pack 6 Sandbags</English>
+			<German>6x Stacheldraht einpacken</German>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
@@ -24926,7 +25024,22 @@
 			<Dutch>%1 &lt;br/&gt;Inhoud: %2 liter</Dutch>
 			<French>%1 &lt;br/&gt;Taille: %2</French>
 		</Key>
-
+		<Key ID="STR_BACKPACK_NAME_AIRWAVES_DZE1">
+			<English>Airwaves Backpack</English>
+			<German>Airwaves Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_AIRWAVES_DZE1">
+			<English>Airwaves Backpack &lt;br/&gt;Capacity: 35 items</English>
+			<German>Airwaves Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_AIRWAVES_DZE2">
+			<English>Airwaves Backpack+</English>
+			<German>Airwaves Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_AIRWAVES_DZE2">
+			<English>Airwaves Backpack &lt;br/&gt;Capacity: 45 items</English>
+			<German>Airwaves Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
 			<German>Fallschirm Sprung</German>
@@ -25425,6 +25538,17 @@
 			<German>Kiste (12x StanagSD)</German>
 			<Russian>Ящик (12x StanagSD)</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG_HALF">
+			<English>6x SandBag</English>
+			<German>6x Sandsack</German>
+			<Russian>Ящик с 6-ю мешками с песком.</Russian>
+			<Czech>6 Pytlů s pískem</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_SANDBAG_HALF">
+			<English>Supply Crate (6x Sandbag)</English>
+			<German>Kiste (6x Sandsack)</German>
+			<Russian>Ящик (6x Мешок с песком)</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
 			<English>12x SandBag</English>
 			<German>12x Sandsack</German>
@@ -25502,6 +25626,423 @@
 			<German>Kiste (6x Metallteile)</German>
 			<Russian>Ящик (6x Металлолом)</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_PipeBomb_FULL">
+			<English>12x Pipe Bomb</English>
+			<German>12x Rohrbombe</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_PipeBomb_FULL">
+			<English>Supply Crate (12x Pipe Bomb)</English>
+			<German>Kiste (12x Rohrbombe)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_PartWheel_FULL">
+			<English>12x Car wheel</English>
+			<German>12x Reifen</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_PartWheel_FULL">
+			<English>Supply Crate (12x Car wheel)</English>
+			<German>Kiste (12x Reifen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_PartGlass_FULL">
+			<English>12x Windscreen glass</English>
+			<German>12x Autoglass</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_PartGlass_FULL">
+			<English>Supply Crate (12x Windscreen glass)</English>
+			<German>Kiste (12x Autoglass)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemScrews_FULL">
+			<English>12x Box of screws</English>
+			<German>12x Schachtel mit Schrauben</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemScrews_FULL">
+			<English>Supply Crate (12x Box of screws)</English>
+			<German>Kiste (12x Schachtel mit Schrauben)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemMixOil_FULL">
+			<English>12x 2-Stroke Engine Oil</English>
+			<German>12x 2-Takt-Motorenöl</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemMixOil_FULL">
+			<English>Supply Crate (12x 2-Stroke Engine Oil)</English>
+			<German>Kiste (12x 2-Takt-Motorenöl)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemLightBulb_FULL">
+			<English>12x Light bulb</English>
+			<German>12x Glühbirne</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemLightBulb_FULL">
+			<English>Supply Crate (12x Light bulb)</English>
+			<German>Kiste (12x Glühbirne)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemKosmosSmokes_FULL">
+			<English>12x Kosmos Smokes</English>
+			<German>12x Kosmos Zigaretten</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemKosmosSmokes_FULL">
+			<English>Supply Crate (12x Kosmos Smokes)</English>
+			<German>Kiste (12x Kosmos Zigaretten)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloTobacco_FULL">
+			<English>12x Kilo of tobacco</English>
+			<German>12x Kilo Tabak</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloTobacco_FULL">
+			<English>Supply Crate (12x Kilo of tobacco)</English>
+			<German>Kiste (12x Kilo Tabak)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloHemp_FULL">
+			<English>12x Kilo of hemp</English>
+			<German>12x Kilo Hanf</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloHemp_FULL">
+			<English>Supply Crate (12x Kilo of hemp)</English>
+			<German>Kiste (12x Kilo Hanf)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloBlackTea_FULL">
+			<English>12x Kilo of black tea</English>
+			<German>12x Kilo Schwarzer Tee</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloBlackTea_FULL">
+			<English>Supply Crate (12x Kilo of black tea)</English>
+			<German>Kiste (12x Kilo Schwarzer Tee)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemHotwireKit_FULL">
+			<English>12x Hotwire kit</English>
+			<German>12x Aufbruchwerkzeug</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemHotwireKit_FULL">
+			<English>Supply Crate (12x Hotwire kit)</English>
+			<German>Kiste (12x Aufbruchwerkzeug)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemFertilizer_FULL">
+			<English>12x Fertilizer</English>
+			<German>12x Dünger</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemFertilizer_FULL">
+			<English>Supply Crate (12x Fertilizer)</English>
+			<German>Kiste (12x Dünger)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemDogTag_FULL">
+			<English>12x Dog Tag</English>
+			<German>12x Hundemarke</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemDogTag_FULL">
+			<English>Supply Crate (12x Dog Tag)</English>
+			<German>Kiste (12x Hundemarke)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemComboLock_FULL">
+			<English>12x Combination lock</English>
+			<German>12x Zahlenschloss</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemComboLock_FULL">
+			<English>Supply Crate (12x Combination lock)</English>
+			<German>Kiste (12x Zahlenschloss)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemC4Charge_FULL">
+			<English>12x C4 Charge</English>
+			<German>12x C4 Ladung</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemC4Charge_FULL">
+			<English>Supply Crate (12x C4 Charge)</English>
+			<German>Kiste (12x C4 Ladung)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_HandRoadFlare_FULL">
+			<English>12x Road flare</English>
+			<German>12x Bengalische Fackel</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_HandRoadFlare_FULL">
+			<English>Supply Crate (12x Road flare)</English>
+			<German>Kiste (12x Bengalische Fackel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_HandChemRed_FULL">
+			<English>12x Chemlight (red)</English>
+			<German>12x Knicklicht (Rot)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_HandChemRed_FULL">
+			<English>Supply Crate (12x Chemlight red)</English>
+			<German>Kiste (12x Knicklicht Rot)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_HandChemGreen_FULL">
+			<English>12x Chemlight (green)</English>
+			<German>12x Knicklicht (Grün)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_HandChemGreen_FULL">
+			<English>Supply Crate (12x Chemlight green)</English>
+			<German>Kiste (12x Knicklicht Grün)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_HandChemBlue_FULL">
+			<English>12x Chemlight (blue)</English>
+			<German>12x Knicklicht (Blau)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_HandChemBlue_FULL">
+			<English>Supply Crate (12x Chemlight blue)</English>
+			<German>Kiste (12x Knicklicht Blau)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodRabbitCooked_FULL">
+			<English>12x Cooked rabbit</English>
+			<German>12x Gebratenes Hasenfleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodRabbitCooked_FULL">
+			<English>Supply Crate (12x rabbit)</English>
+			<German>Kiste (12x Hasenfleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodPumpkin_FULL">
+			<English>12x Pumpkin</English>
+			<German>12x Kürbis</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodPumpkin_FULL">
+			<English>Supply Crate (12x Pumpkin)</English>
+			<German>Kiste (12x Kürbis)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodPotatoRaw_FULL">
+			<English>12x Potato raw</English>
+			<German>12x rohe Kartoffel</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodPotatoRaw_FULL">
+			<English>Supply Crate (12x Potato raw)</English>
+			<German>Kiste (12x rohe Kartoffel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodMuttonCooked_FULL">
+			<English>12x Cooked mutton</English>
+			<German>12x Gebratenes Lammfleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodMuttonCooked_FULL">
+			<English>Supply Crate (12x mutton)</English>
+			<German>Kiste (12x Lammfleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodGoatCooked_FULL">
+			<English>12x Cooked goat</English>
+			<German>12x Gebratenes Ziegenfleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodGoatCooked_FULL">
+			<English>Supply Crate (12x Goat)</English>
+			<German>Kiste (12x Ziegenfleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodDogCooked_FULL">
+			<English>12x Cooked dog</English>
+			<German>12x Gebratenes Hundefleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodDogCooked_FULL">
+			<English>Supply Crate (12x dog)</English>
+			<German>Kiste (12x Hundefleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodChickenCooked_FULL">
+			<English>12x Cooked chicken</English>
+			<German>12x Gebratenes Hühnerfleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodChickenCooked_FULL">
+			<English>Supply Crate (12x chicken)</English>
+			<German>Kiste (12x Hühnerfleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodCarrot_FULL">
+			<English>12x Carrot</English>
+			<German>12x Karotte</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodCarrot_FULL">
+			<English>Supply Crate (12x Carrot)</English>
+			<German>Kiste (12x Karotte)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodBeefCooked_FULL">
+			<English>12x Cooked beef</English>
+			<German>12x Gebratenes Rindersteak</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodBeefCooked_FULL">
+			<English>Supply Crate (12x beef)</English>
+			<German>Kiste (12x Rindersteak)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FishCookedTuna_FULL">
+			<English>12x Cooked tuna</English>
+			<German>12x Gebratener Thunfisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FishCookedTuna_FULL">
+			<English>Supply Crate (12x Tuna)</English>
+			<German>Kiste (12x Thunfisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FishCookedTrout_FULL">
+			<English>12x Cooked steelhead</English>
+			<German>12x Gebratene Stahlkopfforelle</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FishCookedTrout_FULL">
+			<English>Supply Crate (12x Steelhead)</English>
+			<German>Kiste (12x Forelle)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FishCookedSeaBass_FULL">
+			<English>12x Cooked seabass</English>
+			<German>12x Gebratener Wolfsbarsch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FishCookedSeaBass_FULL">
+			<English>Supply Crate (12x Seabass)</English>
+			<German>Kiste (12x Barsch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_string_FULL">
+			<English>12x String</English>
+			<German>12x Schnur</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_string_FULL">
+			<English>Supply Crate (12x String)</English>
+			<German>Kiste (12x Schnur)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_scrapelectronics_FULL">
+			<English>12x Scrap electronics</English>
+			<German>12x Elektronikschrott</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_scrapelectronics_FULL">
+			<English>Supply Crate (12x Scrap electronics)</English>
+			<German>Kiste (12x Elektronikschrott)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_rope_FULL">
+			<English>12x Rope</English>
+			<German>12x Seil</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_rope_FULL">
+			<English>Supply Crate (12x Rope)</English>
+			<German>Kiste (12x Seil)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_rag_FULL">
+			<English>12x Rag</English>
+			<German>12x Lumpen</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_rag_FULL">
+			<English>Supply Crate (12x Rag)</English>
+			<German>Kiste (12x Lumpen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_pvc_box_FULL">
+			<English>12x PVC box</English>
+			<German>12x Plastikschachtel</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_pvc_box_FULL">
+			<English>Supply Crate (12x PVC box)</English>
+			<German>Kiste (12x Plastikschachtel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_nails_FULL">
+			<English>12x Box of nails</English>
+			<German>12x Schachtel mit Nägeln</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_nails_FULL">
+			<English>Supply Crate (12x Box of nails)</English>
+			<German>Kiste (12x Schachtel mit Nägeln)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_garlic_bulb_FULL">
+			<English>12x Garlic bulb</English>
+			<German>12x Knoblauchknolle</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_garlic_bulb_FULL">
+			<English>Supply Crate (12x Garlic bulb)</English>
+			<German>Kiste (12x Knoblauchknolle)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_floppywire_FULL">
+			<English>12x Floppywire</English>
+			<German>12x Flachbandkabel</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_floppywire_FULL">
+			<English>Supply Crate (12x Floppywire)</English>
+			<German>Kiste (12x Flachbandkabel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_feathers_FULL">
+			<English>12x Feathers</English>
+			<German>12x Federn</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_feathers_FULL">
+			<English>Supply Crate (12x Feathers)</English>
+			<German>Kiste (12x Federn)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_duct_tape_FULL">
+			<English>12x Duct Tape</English>
+			<German>12x Klebeband</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_duct_tape_FULL">
+			<English>Supply Crate (12x Duct Tape)</English>
+			<German>Kiste (12x Klebeband)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_d_battery_FULL">
+			<English>12x D battery</English>
+			<German>12x D-Batterien</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_d_battery_FULL">
+			<English>Supply Crate (12x D battery)</English>
+			<German>Kiste (12x D-Batterien)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_aa_battery_FULL">
+			<English>12x AA battery</English>
+			<German>12x AA-Batterien</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_aa_battery_FULL">
+			<English>Supply Crate (12x AA battery)</English>
+			<German>Kiste (12x AA-Batterien)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemAnimalSkin_FULL">
+			<English>12x Animalskin</English>
+			<German>12x Tierhaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemAnimalSkin_FULL">
+			<English>Supply Crate (12x Animalskin)</English>
+			<German>Kiste (12x Tierhaut)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinRabbit_FULL">
+			<English>12x Rabbit skin</English>
+			<German>12x Hasenfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinRabbit_FULL">
+			<English>Supply Crate (12x Rabbit skin)</English>
+			<German>Kiste (12x Hasenfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinCow_FULL">
+			<English>12x Cow skin</English>
+			<German>12x Kuhfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinCow_FULL">
+			<English>Supply Crate (12x Cow skin)</English>
+			<German>Kiste (12x Kuhfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinGoat_FULL">
+			<English>12x Goat skin</English>
+			<German>12x Ziegenfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinGoat_FULL">
+			<English>Supply Crate (12x Goat skin)</English>
+			<German>Kiste (12x Ziegenfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinBoar_FULL">
+			<English>12x Boar skin</English>
+			<German>12x Wildschweinfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinBoar_FULL">
+			<English>Supply Crate (12x Boar skin)</English>
+			<German>Kiste (Wildschweinfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinDog_FULL">
+			<English>12x Dog skin</English>
+			<German>12x Hundefell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinDog_FULL">
+			<English>Supply Crate (12x Dog skin)</English>
+			<German>Kiste (Hundefell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinSheep_FULL">
+			<English>12x Sheep skin</English>
+			<German>12x Schafsfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinSheep_FULL">
+			<English>Supply Crate (12x Sheep skin)</English>
+			<German>Kiste (Schafsfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemWool_FULL">
+			<English>12x Wool</English>
+			<German>12x Wolle</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemWool_FULL">
+			<English>Supply Crate (12x Wool)</English>
+			<German>Kiste (Wolle)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemLeather_FULL">
+			<English>12x Leather</English>
+			<German>12x Leder</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemLeather_FULL">
+			<English>Supply Crate (12x Wool)</English>
+			<German>Kiste (Leder)</German>
+		</Key>
+		
 		<Key ID="STR_EPOCH_SAFE">
 			<English>Safe</English>
 			<German>Tresor</German>
@@ -25701,10 +26242,26 @@
 			<Russian>Конопляное семечко</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HEMP_SEED">
-			<English>A few hemp seed.</English>
+			<English>A few hemp seeds.</English>
 			<German>Ein paar Hanfsamen.</German>
 			<Russian>Одно конопляное семечко пригодное для посева.</Russian>
 		</Key>
+		<Key ID="STR_CRAFT_NAME_TOBACCO_SEED">
+			<English>Bag of Tobacco Seeds</English>
+			<German>Säckchen Tabaksamen</German>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_TOBACCO_SEED">
+			<English>A few tobacco seeds.</English>
+			<German>Ein paar Tabaksamen.</German>
+		</Key>	
+		<Key ID="STR_CRAFT_NAME_BLACK_TEA_SEED">
+			<English>Bag of Black Tea Seeds</English>
+			<German>Säckchen Schwarzer Teesamen</German>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_BLACK_TEA_SEED">
+			<English>A few black tea seeds.</English>
+			<German>Ein paar schwarzer Teesamen.</German>
+		</Key>		
 		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
 			<English>Hemp Plant</English>
 			<German>Hanfpflanze</German>
@@ -25823,19 +26380,19 @@
 			<Russian>Добывается из камней с помощью кувалды.</Russian>
 		</Key>
 		<Key ID="STR_ORE_VEIN_WRECK_GOLD">
-			<English>gold vein ruins</English>
+			<English>Gold Vein</English>
 			<German>Golderzader</German>
-			<Russian>развалины золотой жилы</Russian>
+			<Russian>золотой жилы</Russian>
 		</Key>
 		<Key ID="STR_ORE_VEIN_WRECK_SILVER">
-			<English>silver vein ruins</English>
+			<English>Silver Vein </English>
 			<German>Silbererzader</German>
-			<Russian>развалины серебряной жилы</Russian>
+			<Russian>серебряной жилы</Russian>
 		</Key>
 		<Key ID="STR_ORE_VEIN_WRECK_IRON">
-			<English>iron vein ruins</English>
+			<English>Iron Vein</English>
 			<German>Eisenerzader</German>
-			<Russian>развалины жилы с железной рудой</Russian>
+			<Russian>жилы с железной рудой</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW">
 			<English>Chainsaw</English>
@@ -26147,6 +26704,14 @@
 			<German>Glühbirne: Wird zur Herstellung von Lampen benötigt. Sag nicht, du hättest keine in einer Scheune gefunden.</German>
 			<Russian>Лампочка: Используется в строительстве фонарного столба. Не говорите мне, что вы нашли это не в сарае.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN">
+			<English>Light Bulb (broken)</English>
+			<German>Glühbirne (kaputt)</German>
+		</Key>
+		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN_DESC">
+			<English>A broken lightbulb that is no longer usable.</English>
+			<German>Eine kaputte Glühbirne, welche für nichts mehr zu gebrauchen ist</German>
+		</Key>		
 		<Key ID="STR_EPOCH_ZOMBIEPARTS">
 			<English>Zombie Parts</English>
 			<German>Zombiefleisch</German>
@@ -31876,6 +32441,14 @@
 			<English>Craft Wall w/ window</English>
 			<German>Wand mit Fenster herstellen</German>
 		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_STORAGE_CRATE">
+			<English>Craft Storage Crate</English>
+			<German>Lagerkiste herstellen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_CRAFT_CAMO_STORAGE_CRATE">
+			<English>Craft Camo Storage Crate</English>
+			<German>Tarn-Lagerkiste herstellen</German>
+		</Key>		
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>
 			<German>Tor öffnen</German>
@@ -31886,6 +32459,38 @@
 			<German>Tor schließen</German>
 			<Russian>Закрыть ворота</Russian>
 		</Key>
+		<Key ID="STR_BLD_ACTIONS_OPEN_WINDOW">
+			<English>Open Window</English>
+			<German>Fenster öffnen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_CLOSE_WINDOW">
+			<English>Close Window</English>
+			<German>Fenster schließen</German>
+		</Key>	
+		<Key ID="STR_BLD_ACTIONS_UNLOCK_WINDOW">
+			<English>Unlock Window</English>
+			<German>Fenster aufschließen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_LOCK_WINDOW">
+			<English>Lock Window</English>
+			<German>Fenster abschließen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_OPEN_BUNKER">
+			<English>Open Shutter</English>
+			<German>Schießscharten öffnen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_CLOSE_BUNKER">
+			<English>Close Shutter</English>
+			<German>Schießscharten schließen</German>
+		</Key>	
+		<Key ID="STR_BLD_ACTIONS_UNLOCK_BUNKER">
+			<English>Unlock Shutter</English>
+			<German>Schießscharten aufschließen</German>
+		</Key>
+		<Key ID="STR_BLD_ACTIONS_LOCK_BUNKER">
+			<English>Lock Shutter</English>
+			<German>Schießscharten abschließen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_STONEOVEN">
 			<English>Stone Oven</English>
 			<German>Steinofen</German>
@@ -31981,6 +32586,14 @@
 			<English>A vending-machine perhaps it still works.</English>
 			<German>Ein Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
 		</Key>
+		<Key ID="STR_EPOCH_STORAGECRATE">
+			<English>Storage Crate</English>
+			<German>Lagerkiste</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGECRATE_DESC">
+			<English>A small wooden storage crate for small bases.</English>
+			<German>Eine kleine Lagerkiste, welche sehr gut für kleine Basen geeignet ist.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_NOTEBOOK">
 			<English>Notebook</English>
 		</Key>
@@ -32148,7 +32761,307 @@
 			<English>Broken Main Rotor Assembly that must be repaired.</English>
 			<German>Kaputte Hauptrotorteile, welche repariert werden müssen.</German>
 		</Key>
-
+		<Key ID="STR_EPOCH_BONES_GRAVE">
+			<English>Bones Grave</English>
+			<German>Knochengrab</German>
+		</Key>		
+		<Key ID="STR_EPOCH_DEAD_SOLDIER">
+			<English>Dead Soldier</English>
+			<German>Toter Soldat</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PILE_RUBBISH">
+			<English>Garbage heab</English>
+			<German>Müllhaufen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN">
+			<English>Pumpkin patch</English>
+			<German>Kürbisbeet</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
+			<English>Sunflower patch</English>
+			<German>Sonnenblumenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT">
+			<English>Carrot patch</English>
+			<German>Karottenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
+			<English>Potato patch</English>
+			<German>Kartoffelbeet</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP">
+			<English>Hemp plant patch</English>
+			<German>Hanfpflanzenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO">
+			<English>Tobacco plant patch</English>
+			<German>Tabakpflanzenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
+			<English>Tea plant patch</English>
+			<German>Teepflanzenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ITEM_NOTEBOOK">
+			<English>Notebook</English>
+		</Key>	
+		<Key ID="STR_EPOCH_ITEM_NOTEBOOK_DESC">
+			<English>A notebook in a good condition.</English>
+			<German>Ein Notebook, welches sich in einem guten Zustand befindet.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_NOTEBOOK_BROKEN">
+			<English>Notebook (broken)</English>
+			<German>Notebook (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_NOTEBOOK_BROKEN_DESC">
+			<English>A broken notebook that must be repaired.</English>
+			<German>Ein kaputtes Notebook, welches repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EPOCH_SMALL_TV">
+			<English>TV (small)</English>
+			<German>Fernseher (klein)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SMALL_TV_DESC">
+			<English>A small TV in a good condition.</English>
+			<German>Ein kleiner Fernseher, welcher sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SMALL_TV_BROKEN">
+			<English>TV (small, broken)</English>
+			<German>Fernseher (klein, kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SMALL_TV_BROKEN_DESC">
+			<English>A broken TV that must be repaired.</English>
+			<German>Ein kaputter Fernseher, welcher repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BIG_TV">
+			<English>TV (big)</English>
+			<German>Fernseher (groß)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BIG_TV_DESC">
+			<English>A big TV in a good condition.</English>
+			<German>Ein großer Fernseher, welcher sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BIG_TV_BROKEN">
+			<English>TV (big, broken)</English>
+			<German>Fernseher (groß, kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BIG_TV_BROKEN_DESC">
+			<English>A broken TV that must be repaired.</English>
+			<German>Ein kaputter Fernseher, welcher repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SATELLITE_PHONE">
+			<English>Satellite Phone</English>
+			<German>Satellitentelefon</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SATELLITE_PHONE_DESC">
+			<English>A satellite phone in a good condition.</English>
+			<German>Ein Satellitentelefon, welches sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SATELLITE_PHONE_BROKEN">
+			<English>Satellite Phone (broken)</English>
+			<German>Satellitentelefon (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SATELLITE_PHONE_BROKEN_DESC">
+			<English>A broken satellite phone that must be repaired.</English>
+			<German>Ein kaputtes Satellitentelefon, welches repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PC">
+			<English>PC</English>
+		</Key>	
+		<Key ID="STR_EPOCH_PC_DESC">
+			<English>A PC with monitor in a good condition.</English>
+			<German>Ein PC mit Monitor, welcher sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PC_BROKEN">
+			<English>PC (broken)</English>
+			<German>PC (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PC_BROKEN_DESC">
+			<English>A broken PC that must be repaired.</English>
+			<German>Ein kaputter PC, welcher repariert werden muss.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_DESKTOP_RADIO">
+			<English>Desktop Radio</English>
+			<German>Stationsfunkgerät</German>
+		</Key>	
+		<Key ID="STR_EPOCH_DESKTOP_RADIO_DESC">
+			<English>A desktop radio in a good condition.</English>
+			<German>Ein Stationsfunkgerät, welches sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_DESKTOP_RADIO_BROKEN">
+			<English>Desktop Radio (broken)</English>
+			<German>Stationsfunkgerät (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_DESKTOP_RADIO_BROKEN_DESC">
+			<English>A broken desktop radio that must be repaired.</English>
+			<German>Ein kaputtes Stationsfunkgerät, welches repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EPOCH_RADIO_MUSIC1">
+			<English>Radio</English>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC1_DESC">
+			<English>A radio in a good condition.</English>
+			<German>Ein Radio, welches sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC1_BROKEN">
+			<English>Radio (broken)</English>
+			<German>Radio (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC1_BROKEN_DESC">
+			<English>A broken radio that must be repaired.</English>
+			<German>Ein kaputtes Radio, welches repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC2">
+			<English>Radio</English>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC2_DESC">
+			<English>A radio in a good condition.</English>
+			<German>Ein Radio, welches sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC2_BROKEN">
+			<English>Radio (broken)</English>
+			<German>Radio (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC2_BROKEN_DESC">
+			<English>A broken radio that must be repaired.</English>
+			<German>Ein kaputtes Radio, welches repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_METAL_BUCKET">
+			<English>Bucket</English>
+			<German>Eimer</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS">
+			<English>Suitcase with Diamonds</English>
+			<German>Koffer mit Diamanten</German>
+		</Key>
+		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS_DESC">
+			<English>A suitcase with many small diamonds.</English>
+			<German>Ein Koffer mit vielen kleinen Diamanten.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_SUITCASE_BOMB">
+			<English>Suitcase Bomb</English>
+			<German>Kofferbombe</German>
+		</Key>
+		<Key ID="STR_EPOCH_SUITCASE_BOMB_DESC">
+			<English>A suitcase with a bomb inside.</English>
+			<German>Ein Koffer mit einer Bombe im Inneren.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT">
+			<English>Rabbit Skin</English>
+			<German>Hasenfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT_DESC">
+			<English>A packet of rabbit skin.</English>
+			<German>Ein Paket Hasenfell.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW">
+			<English>Cow Skin</English>
+			<German>Kuhfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW_DESC">
+			<English>A packet of cow skin.</English>
+			<German>Ein Paket Kuhfell.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT">
+			<English>Goat Skin</English>
+			<German>Ziegenfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT_DESC">
+			<English>A packet of goat skin.</English>
+			<German>Ein Paket Ziegenfell.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR">
+			<English>Boar Skin</English>
+			<German>Wildschweinfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR_DESC">
+			<English>A packet of boar skin.</English>
+			<German>Ein Paket Wildschweinfell.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG">
+			<English>Dog Skin</English>
+			<German>Hundefell</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG_DESC">
+			<English>A packet of dog skin.</English>
+			<German>Ein Paket Hundefell.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP">
+			<English>Sheep Skin</English>
+			<German>Schafsfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP_DESC">
+			<English>A packet of sheep skin.</English>
+			<German>Ein Paket Schafsfell.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_WOOL">
+			<English>Wool</English>
+			<German>Wolle</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOOL_DESC">
+			<English>A packet of wool.</English>
+			<German>Ein Paket Wolle.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN">
+			<English>Animal Skin</English>
+			<German>Tierfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_DESC">
+			<English>A packet of animal skin.</English>
+			<German>Ein Paket Tierfell.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_LEATHER">
+			<English>Leather</English>
+			<German>Leder</German>
+		</Key>
+		<Key ID="STR_EPOCH_LEATHER_DESC">
+			<English>A packet of leather.</English>
+			<German>Ein Paket Leder.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLASTIC_PARTS">
+			<English>Plastic Parts</English>
+			<German>Plastikteile</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
+			<English>A crate of plastic parts.</English>
+			<German>Eine Kiste mit Plastikteilen.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_CERAMIC_PARTS">
+			<English>Ceramic Parts</English>
+			<German>Keramikteile</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
+			<English>A crate of ceramic parts.</English>
+			<German>Eine Kiste mit Keramikteile.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN">
+			<English>Slugs in a can</English>
+		</Key>
+		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN_DESC">
+			<English>Slugs in a can</English>
+		</Key>	
+		<Key ID="STR_EPOCH_TIN_OF_POWDER">
+			<English>Tin of Powder</English>
+		</Key>
+		<Key ID="STR_EPOCH_TIN_OF_POWDER_DESC">
+			<English>Tin of Powder has medicinal qualities</English>
+			<German>Zinnpulver in medizinscher Qualität.</German>
+		</Key>
+		<Key ID="STR_EPOCH_HOBO_FISHING_KIT">
+			<English>Hobo Fishing Kit</English>
+		</Key>
+		<Key ID="STR_EPOCH_HOBO_FISHING_KIT_DESC">
+			<English>Hobo Fishing Kit, catches dem fishes</English>
+			<German>Hobo Fishing Kit fängt die Fische.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_CAMO_STORAGE_CRATE">
+			<English>Camo Storage Crate</English>
+			<German>Tarn-Lagerkiste</German>
+		</Key>
+		<Key ID="STR_EPOCH_CAMO_STORAGE_CRATE_DESC">
+			<English>A storage crate with a green camo net.</English>
+			<German>Eine Lagerkiste mit einem grünen Tarnetz.</German>
+		</Key>	
+		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>

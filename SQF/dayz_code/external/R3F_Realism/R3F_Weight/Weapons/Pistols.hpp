@@ -28,7 +28,11 @@ class Revolver_DZ
 };
 class revolver_gold_EP1
 {
-	weight = 1;
+	weight = 2;
+};
+class Revolver_Gold_DZ
+{
+	weight = 2;
 };
 class Colt1911
 {

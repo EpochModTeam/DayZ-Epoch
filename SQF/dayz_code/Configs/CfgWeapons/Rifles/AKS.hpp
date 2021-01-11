@@ -9,3 +9,9 @@ class AKS_Silver_DZ: AKM_DZ {
 	model = "\RH_aks\RH_aks47s.p3d";
 	picture = "\RH_aks\inv\aks47s.paa";
 };
+
+class AK_47_S;
+class AKS_DZ: AK_47_S {
+	modes[] = {"Single","FullAuto"};
+	magazines[] = {30Rnd_762x39_AK47,30Rnd_762x39_SA58,60Rnd_762x39_AK47_Taped};
+};

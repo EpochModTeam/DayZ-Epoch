@@ -3,9 +3,9 @@ class Category_11 {
 	class MeleeBaseballbatBarbed {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class MeleeBaseballbatNails {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class Saiga12K_DZ {type = "trade_weapons";buy[] = {300,"worth"};sell[] = {100,"worth"};};
-	class AA12_PMC {type = "trade_weapons";buy[] = {800,"worth"};sell[] = {500,"worth"};};		
+	class AA12_DZ {type = "trade_weapons";buy[] = {800,"worth"};sell[] = {500,"worth"};};		
 	class USAS12_DZ {type = "trade_weapons";buy[] = {700,"worth"};sell[] = {400,"worth"};};	
-	class revolver_gold_EP1 {type = "trade_weapons";buy[] = {5000,"worth"};sell[] = {2000,"worth"};};
+	class Revolver_Gold_DZ {type = "trade_weapons";buy[] = {5000,"worth"};sell[] = {2000,"worth"};};
 	class Colt_Anaconda_Gold_DZ {type = "trade_weapons";buy[] = {9000,"worth"};sell[] = {5000,"worth"};};
 	class SVD_Gold_DZ {type = "trade_weapons";buy[] = {10000,"worth"};sell[] = {5000,"worth"};};	
 	class AKS_GOLD {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {4000,"worth"};};	

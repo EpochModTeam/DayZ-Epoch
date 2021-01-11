@@ -14,3 +14,11 @@ class forest_net_kit
 {
 	weight = 25;
 };
+class winter_net_kit
+{
+	weight = 25;
+};
+class winter_large_net_kit
+{
+	weight = 50;
+};

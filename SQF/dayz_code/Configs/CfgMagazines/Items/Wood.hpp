@@ -112,7 +112,25 @@ class ItemPlank : CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE","Hammer_DZE"};
 			output[] = {{"advanced_workBench_kit",1}};
 			input[] = {{"ItemPlank",4},{"PartWoodPlywood",4},{"equip_nails",2}};
-		};		
+		};
+		class Crafting4
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_STORAGE_CRATE;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","Handsaw_DZE","Hammer_DZE"};
+			output[] = {{"storage_crate_kit",1}};
+			input[] = {{"ItemPlank",6},{"equip_nails",1}};
+		};	
+		class Crafting5
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CAMO_STORAGE_CRATE;
+			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","Handsaw_DZE","Hammer_DZE"};
+			output[] = {{"camo_storage_crate_kit",1}};
+			input[] = {{"ItemPlank",2},{"PartWoodLumber",6},{"forest_net_kit",1},{"equip_nails",1}};
+		};			
 	};
 };
 

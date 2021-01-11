@@ -351,6 +351,193 @@ class WeaponHolder_PartGlass : WeaponHolderBase {
 	};
 };
 
+class WeaponHolder_ItemNotebook : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_ITEM_NOTEBOOK;
+	model = "\CA\misc2\notebook\notebook.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemNotebook'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemNotebookBroken : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_NOTEBOOK_BROKEN;
+	model = "\CA\misc2\notebook\notebook.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemNotebookBroken'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemSmallTV : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SMALL_TV;
+	model = "\CA\misc2\smallTV\smallTV.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemSmallTV'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemSmallTVBroken : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SMALL_TV_BROKEN;
+	model = "\CA\misc2\smallTV\smallTV.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemSmallTVBroken'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemBigTV : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_BIG_TV;
+	model = "\CA\Structures\Furniture\Eletrical_appliances\tv_a\tv_a.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemBigTV'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemBigTVBroken : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_BIG_TV_BROKEN;
+	model = "\CA\Structures\Furniture\Eletrical_appliances\tv_a\tv_a.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemBigTVBroken'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemSatelitePhone : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SATELLITE_PHONE;
+	model = "\CA\misc3\satelitePhone\satellitePhone.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemSatelitePhone'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemSatelitePhoneBroken : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SATELLITE_PHONE_BROKEN;
+	model = "\CA\misc3\satelitePhone\satellitePhone.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemSatelitePhoneBroken'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemPC : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_PC;
+	model = "\CA\Structures\Furniture\Eletrical_appliances\pc\pc.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemPC'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemPCBroken: WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_PC_BROKEN;
+	model = "\CA\Structures\Furniture\Eletrical_appliances\pc\pc.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemPCBroken'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemDesktopRadio : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_DESKTOP_RADIO;
+	model = "\CA\misc\mutt_vysilacka.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemDesktopRadio'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemDesktopRadioBroken : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_DESKTOP_RADIO_BROKEN;
+	model = "\CA\misc\mutt_vysilacka.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemDesktopRadioBroken'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemMusicRadio1 : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_RADIO_MUSIC1;
+	model = "\CA\misc\radio.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemMusicRadio1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemMusicRadio1Broken : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_RADIO_MUSIC1_BROKEN;
+	model = "\CA\misc\radio.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemMusicRadio1Broken'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemMusicRadio2 : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_RADIO_MUSIC2;
+	model = "\CA\Structures\Furniture\Eletrical_appliances\radio_b\radio_b.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemMusicRadio2'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemMusicRadio2Broken : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_RADIO_MUSIC2_BROKEN;
+	model = "\CA\Structures\Furniture\Eletrical_appliances\radio_b\radio_b.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemMusicRadio2Broken'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
+class WeaponHolder_ItemBucket : WeaponHolderBase {
+	scope = 2;
+	displayName = $STR_EPOCH_METAL_BUCKET;
+	model = "\CA\Structures\Furniture\Decoration\bucket\bucket.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemBucket'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+
 class WeaponHolder_ItemJerrycan : WeaponHolderBase {
 	scope = 2;
 	displayName = $STR_EQUIP_NAME_19;
