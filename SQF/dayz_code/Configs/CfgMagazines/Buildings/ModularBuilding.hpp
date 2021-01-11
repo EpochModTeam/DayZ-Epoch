@@ -1025,7 +1025,7 @@ class ItemWoodFloorQuarter: CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemWoodFloorHalf",1}};
-			input[] = {{"ItemWoodFloorQuarter",1},{"ItemWoodFloorHalf",1}};
+			input[] = {{"ItemWoodFloorQuarter",2}};
 		};
 		class Crafting1 
 		{
