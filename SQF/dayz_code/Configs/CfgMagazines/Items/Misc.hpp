@@ -101,8 +101,8 @@ class equip_hobo_fishing_kit : CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	displayName = "Hobo Fishing Kit";
-	descriptionShort = "Hobo Fishing Kit, catches dem fishes";
+	displayName = $STR_EPOCH_HOBO_FISHING_KIT;
+	descriptionShort = $STR_EPOCH_HOBO_FISHING_KIT_DESC;
 	model = "\z\addons\dayz_communityassets\models\hobofishingkit.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_hobofishingkit_ca.paa";
 	type = 256;
@@ -178,8 +178,8 @@ class equip_tin_powder : CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	displayName = "Tin of Powder";
-	descriptionShort = "Tin of Powder has medicinal qualities";
+	displayName = $STR_EPOCH_TIN_OF_POWDER;
+	descriptionShort = $STR_EPOCH_TIN_OF_POWDER_DESC;
 	model = "\z\addons\dayz_communityassets\models\tin_powder.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_tin_powder_co.paa";
 	type = 256;
@@ -189,8 +189,8 @@ class equip_slugsinacan : CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	displayName = "Slugs in a can";
-	descriptionShort = "Slugs in a can";
+	displayName = $STR_EPOCH_SLUGS_IN_A_CAN;
+	descriptionShort = $STR_EPOCH_SLUGS_IN_A_CAN_DESC;
 	model = "\z\addons\dayz_communityassets\models\slugsinacan.p3d";
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
 	type = 256;
@@ -235,6 +235,28 @@ class ItemSuitcaseBomb : CA_Magazine
 	count = 1;
 	displayName = $STR_EPOCH_SUITCASE_BOMB;
 	descriptionShort = $STR_EPOCH_SUITCASE_BOMB_DESC;
+	model = "\CA\misc3\briefcase";
+	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	type = 256;
+};
+
+class ItemPlasicParts : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_PLASTIC_PARTS;
+	descriptionShort = $STR_EPOCH_PLASTIC_PARTS_DESC;
+	model = "\CA\misc3\briefcase";
+	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	type = 256;
+};
+
+class ItemCeramicParts : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_CERAMIC_PARTS;
+	descriptionShort = $STR_EPOCH_PLASTIC_PARTS_DESC;
 	model = "\CA\misc3\briefcase";
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
 	type = 256;
