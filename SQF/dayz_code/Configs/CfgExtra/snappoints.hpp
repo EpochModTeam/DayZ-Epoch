@@ -214,7 +214,7 @@ class SnapBuilding {
 			{0,-2.32,0.130,$STR_EPOCH_ACTION_SNAP_BACK},
 			{0,2.32,0.130,$STR_EPOCH_ACTION_SNAP_FRONT},
 			{-2.494,0,0.130,$STR_EPOCH_ACTION_SNAP_LEFT},
-			{2.494,0,0.130,$STR_EPOCH_ACTION_SNAP_RIGHT}
+			{2.47,0,0.130,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 		radius = 10;
 	};
@@ -379,16 +379,7 @@ class SnapBuilding {
 		radius = 12;
 	};
 	
-	class MetalFloor_Preview_DZ: FloorsWallsStairs {
-		points[] = {
-			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{0, -2.63,-0.135,$STR_EPOCH_ACTION_SNAP_BACK},
-			{0, 2.63,-0.135,$STR_EPOCH_ACTION_SNAP_FRONT},
-			{-2.63,0,-0.135,$STR_EPOCH_ACTION_SNAP_LEFT},
-			{2.63,0,-0.135,$STR_EPOCH_ACTION_SNAP_RIGHT}
-		};
-		radius = 12;		
-	};
+	class MetalFloor_Preview_DZ: MetalFloor_DZ {};
 	
 	class MetalFloor_Quarter_DZ: FloorsWallsStairs {
 		points[] = {
@@ -424,6 +415,8 @@ class SnapBuilding {
 		};
 		radius = 12;
 	};
+	
+	class GlassFloor_Preview_DZ: GlassFloor_DZ {};
 	
 	class GlassFloor_Quarter_DZ: FloorsWallsStairs {
 		points[] = {
