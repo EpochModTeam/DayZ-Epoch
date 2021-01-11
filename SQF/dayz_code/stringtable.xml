@@ -32947,51 +32947,51 @@
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT">
 			<English>Rabbit Skin</English>
-			<German>Hasenhaut</German>
+			<German>Hasenfell</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT_DESC">
 			<English>A packet of rabbit skin.</English>
-			<German>Ein Paket Hasenhaut.</German>
+			<German>Ein Paket Hasenfell.</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW">
 			<English>Cow Skin</English>
-			<German>Kuhhaut</German>
+			<German>Kuhfell</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW_DESC">
 			<English>A packet of cow skin.</English>
-			<German>Ein Paket Kuhhaut.</German>
+			<German>Ein Paket Kuhfell.</German>
 		</Key>	
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT">
 			<English>Goat Skin</English>
-			<German>Ziegenhaut</German>
+			<German>Ziegenfell</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT_DESC">
 			<English>A packet of goat skin.</English>
-			<German>Ein Paket Ziegenhaut.</German>
+			<German>Ein Paket Ziegenfell.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR">
 			<English>Boar Skin</English>
-			<German>Wildschweinhaut</German>
+			<German>Wildschweinfell</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR_DESC">
 			<English>A packet of boar skin.</English>
-			<German>Ein Paket Wildschweinhaut.</German>
+			<German>Ein Paket Wildschweinfell.</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG">
 			<English>Dog Skin</English>
-			<German>Hundehaut</German>
+			<German>Hundefell</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG_DESC">
 			<English>A packet of dog skin.</English>
-			<German>Ein Paket Hundehaut.</German>
+			<German>Ein Paket Hundefell.</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP">
 			<English>Sheep Skin</English>
-			<German>Schafshaut</German>
+			<German>Schafsfell</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP_DESC">
 			<English>A packet of sheep skin.</English>
-			<German>Ein Paket Schafshaut.</German>
+			<German>Ein Paket Schafsfell.</German>
 		</Key>	
 		<Key ID="STR_EPOCH_WOOL">
 			<English>Wool</English>
@@ -33003,11 +33003,11 @@
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN">
 			<English>Animal Skin</English>
-			<German>Tierhaut</German>
+			<German>Tierfell</German>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DESC">
 			<English>A packet of animal skin.</English>
-			<German>Ein Paket Tierhaut.</German>
+			<German>Ein Paket Tierfell.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_LEATHER">
 			<English>Leather</English>
