@@ -126,7 +126,7 @@ class ItemDesertTent : CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	type = ;	
+	type = 256;		
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	displayName = $STR_VEH_NAME_DESERT_TENT;
