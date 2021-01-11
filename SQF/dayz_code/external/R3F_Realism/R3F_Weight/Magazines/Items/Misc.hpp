@@ -20,12 +20,12 @@ class ItemKosmosSmokesOpen
 
 class equip_nails 
 {
-	weight = 0.01;
+	weight = 0.5;
 };
 
 class ItemScrews
 {
-	weight = 0.01;
+	weight = 0.5;
 };
 
 class equip_duct_tape 

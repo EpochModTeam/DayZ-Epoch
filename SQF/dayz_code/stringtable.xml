@@ -24204,6 +24204,10 @@
 			<German>%1 benutzt um Fahrzeug aufzuschließen.</German>
 			<Russian>%1 был использован для разблокировки транспорта.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLAYER_332">
+			<English>Pack 6 Sandbags</English>
+			<German>6x Stacheldraht einpacken</German>
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
 			<German>Fahrzeug upgraden</German>
@@ -25534,6 +25538,17 @@
 			<German>Kiste (12x StanagSD)</German>
 			<Russian>Ящик (12x StanagSD)</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG_HALF">
+			<English>6x SandBag</English>
+			<German>6x Sandsack</German>
+			<Russian>Ящик с 6-ю мешками с песком.</Russian>
+			<Czech>6 Pytlů s pískem</Czech>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_SANDBAG_HALF">
+			<English>Supply Crate (6x Sandbag)</English>
+			<German>Kiste (6x Sandsack)</German>
+			<Russian>Ящик (6x Мешок с песком)</Russian>
+		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SANDBAG">
 			<English>12x SandBag</English>
 			<German>12x Sandsack</German>
@@ -25954,6 +25969,78 @@
 		<Key ID="STR_EPOCH_BULK_DISP_equip_aa_battery_FULL">
 			<English>Supply Crate (12x AA battery)</English>
 			<German>Kiste (12x AA-Batterien)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemAnimalSkin_FULL">
+			<English>12x Animalskin</English>
+			<German>12x Tierhaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemAnimalSkin_FULL">
+			<English>Supply Crate (12x Animalskin)</English>
+			<German>Kiste (12x Tierhaut)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinRabbit_FULL">
+			<English>12x Rabbit skin</English>
+			<German>12x Hasenfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinRabbit_FULL">
+			<English>Supply Crate (12x Rabbit skin)</English>
+			<German>Kiste (12x Hasenfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinCow_FULL">
+			<English>12x Cow skin</English>
+			<German>12x Kuhfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinCow_FULL">
+			<English>Supply Crate (12x Cow skin)</English>
+			<German>Kiste (12x Kuhfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinGoat_FULL">
+			<English>12x Goat skin</English>
+			<German>12x Ziegenfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinGoat_FULL">
+			<English>Supply Crate (12x Goat skin)</English>
+			<German>Kiste (12x Ziegenfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinBoar_FULL">
+			<English>12x Boar skin</English>
+			<German>12x Wildschweinfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinBoar_FULL">
+			<English>Supply Crate (12x Boar skin)</English>
+			<German>Kiste (Wildschweinfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinDog_FULL">
+			<English>12x Dog skin</English>
+			<German>12x Hundefell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinDog_FULL">
+			<English>Supply Crate (12x Dog skin)</English>
+			<German>Kiste (Hundefell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinSheep_FULL">
+			<English>12x Sheep skin</English>
+			<German>12x Schafsfell</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinSheep_FULL">
+			<English>Supply Crate (12x Sheep skin)</English>
+			<German>Kiste (Schafsfell)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemWool_FULL">
+			<English>12x Wool</English>
+			<German>12x Wolle</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemWool_FULL">
+			<English>Supply Crate (12x Wool)</English>
+			<German>Kiste (Wolle)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemLeather_FULL">
+			<English>12x Leather</English>
+			<German>12x Leder</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemLeather_FULL">
+			<English>Supply Crate (12x Wool)</English>
+			<German>Kiste (Leder)</German>
 		</Key>
 		
 		<Key ID="STR_EPOCH_SAFE">

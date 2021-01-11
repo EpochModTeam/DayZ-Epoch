@@ -34,7 +34,6 @@ class bulk_empty: bulk
 			output[] = {{"bulk_ItemSodaPepsi",1}};
 			input[] = {{"bulk_empty",1},{"ItemSodaPepsi",6}};
 		};
-
 		class Crafting2 
 		{
 			text = $STR_EPOCH_PLAYER_223;
@@ -70,6 +69,15 @@ class bulk_empty: bulk
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"bulk_FoodbaconCooked",1}};
 			input[] = {{"bulk_empty",1},{"FoodbaconCooked",6}};
+		};
+		class Crafting6 
+		{
+			text = $STR_EPOCH_PLAYER_332;
+			script = ";['Crafting6','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"bulk_ItemSandbagHalf",1}};
+			input[] = {{"bulk_empty",1},{"ItemSandbag",6}};
 		};
 	};
 };
@@ -414,7 +422,6 @@ class bulk_ItemSandbag: bulk
 		};
 	};
 };
-
 class bulk_ItemTankTrapHalf: bulk 
 {
 	displayName = $STR_EPOCH_BULK_DISP_TANKTRAP_HALF;
@@ -454,7 +461,6 @@ class bulk_ItemTankTrap: bulk
 		};
 	};
 };
-
 class bulk_ItemWireHalf: bulk 
 {
 	displayName = $STR_EPOCH_BULK_DISP_WIREKIT_HALF;
@@ -494,7 +500,6 @@ class bulk_ItemWire: bulk
 		};
 	};
 };
-
 class bulk_PartGenericHalf: bulk 
 {
 	displayName = $STR_EPOCH_BULK_DISP_GENERIC_HALF;
@@ -955,6 +960,134 @@ class bulk_ItemKiloTobaccoFull: bulk {
 			text = $STR_EPOCH_ACTIONS_OPEN;
 			script = "spawn player_loadCrate;";
 			output[] = {"ItemKiloTobacco",12,"magazine"};
+		};
+	};
+};
+
+//Animal Craftables
+class bulk_ItemAnimalSkinFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemAnimalSkin_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemAnimalSkin_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemAnimalSkin",12,"magazine"};
+		};
+	};
+};
+class bulk_ItemSkinRabbitFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemSkinRabbit_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemSkinRabbit_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemSkinRabbit",12,"magazine"};
+		};
+	};
+};
+class bulk_ItemSkinCowFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemSkinCow_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemSkinCow_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemSkinCow",12,"magazine"};
+		};
+	};
+};
+class bulk_ItemSkinGoatFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemSkinGoat_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemSkinGoat_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemSkinGoat",12,"magazine"};
+		};
+	};
+};
+class bulk_ItemSkinBoarFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemSkinBoar_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemSkinBoar_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemSkinBoar",12,"magazine"};
+		};
+	};
+};
+class bulk_ItemSkinDogFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemSkinDog_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemSkinDog_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemSkinDog",12,"magazine"};
+		};
+	};
+};
+class bulk_ItemSkinSheepFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemSkinSheep_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemSkinSheep_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemSkinSheep",12,"magazine"};
+		};
+	};
+};
+class bulk_ItemWoolFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemWool_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemWool_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemWool",12,"magazine"};
+		};
+	};
+};
+class bulk_ItemLeatherFull: bulk {
+	displayName = $STR_EPOCH_BULK_DISP_ItemLeather_FULL;
+	descriptionshort = $STR_EPOCH_BULK_DESC_ItemLeather_FULL;
+
+	class ItemActions 
+	{
+		class CreateMags 
+		{
+			text = $STR_EPOCH_ACTIONS_OPEN;
+			script = "spawn player_loadCrate;";
+			output[] = {"ItemLeather",12,"magazine"};
 		};
 	};
 };

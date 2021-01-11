@@ -1,6 +1,6 @@
 class ItemFertilizer
 {
-	weight = 0.1;
+	weight = 2.5;
 };
 
 class ItemPumpkinSeed
