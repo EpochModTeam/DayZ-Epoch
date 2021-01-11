@@ -26,7 +26,7 @@ class ItemHempSeed: CA_Magazine
 	count = 1;
 	displayName = $STR_CRAFT_NAME_HEMP_SEED;
 	descriptionShort = $STR_CRAFT_DESC_HEMP_SEED;
-	model = "\z\addons\dayz_epoch\models\doc_child2.p3d";	// TODO: model + icon
+	model = "\z\addons\dayz_epoch_w\items\veges\seedbag_01.p3d";
 	picture = "\dayz_epoch_c\icons\plants\hempseeds.paa";
 	type = 256;
 	
@@ -95,7 +95,18 @@ class ItemKiloTobacco : CA_Magazine
 	displayName = $STR_EPOCH_KILOTOBACCO;
 	descriptionShort = $STR_EPOCH_KILOTOBACCO_DESC;
 	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
+	picture = "\dayz_epoch_c\icons\plants\equip_kilotobacco_CA.paa";
+	type = 256;
+};
+
+class ItemTobaccoSeed: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_CRAFT_NAME_TOBACCO_SEED;
+	descriptionShort = $STR_CRAFT_DESC_TOBACCO_SEED;
+	model = "\z\addons\dayz_epoch_w\items\veges\seedbag_01.p3d";
+	picture = "\dayz_epoch_c\icons\plants\tobaccoseeds.paa";
 	type = 256;
 };
 
@@ -106,8 +117,19 @@ class ItemKiloBlackTea : CA_Magazine
 	displayName = $STR_EPOCH_KILOBLACKTEA;
 	descriptionShort = $STR_EPOCH_KILOBLACKTEA_DESC;
 	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_kilohemp_CA.paa";
+	picture = "\dayz_epoch_c\icons\plants\equip_kilotea_CA.paa";
 	type = 256;	
+};
+
+class ItemBlackTeaSeed: CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_CRAFT_NAME_BLACK_TEA_SEED;
+	descriptionShort = $STR_CRAFT_DESC_BLACK_TEA_SEED;
+	model = "\z\addons\dayz_epoch_w\items\veges\seedbag_01.p3d";
+	picture = "\dayz_epoch_c\icons\plants\blackteaseeds.paa";
+	type = 256;
 };
 
 class ItemTobaccoLeafs : CA_Magazine
