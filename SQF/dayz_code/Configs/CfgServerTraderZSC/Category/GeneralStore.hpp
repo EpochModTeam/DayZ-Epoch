@@ -182,6 +182,7 @@ class Category_31 {
 	class PartyPack_DZE1 {type = "trade_backpacks";buy[] = {700,"worth"};sell[] = {350,"worth"};};
 	class NightPack_DZE1 {type = "trade_backpacks";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class SurvivorPack_DZE1 {type = "trade_backpacks";buy[] = {1000,"worth"};sell[] = {500,"worth"};};
+	class AirwavesPack_DZE1 {type = "trade_backpacks";buy[] = {1200,"worth"};sell[] = {600,"worth"};};
 	class CzechBackpack_DZE1 {type = "trade_backpacks";buy[] = {-1200,"worth"};sell[] = {600,"worth"};};
 	class CzechBackpack_Camping_DZE1 {type = "trade_backpacks";buy[] = {1200,"worth"};sell[] = {600,"worth"};};
 	class CzechBackpack_OD_DZE1 {type = "trade_backpacks";buy[] = {-1,"worth"};sell[] = {600,"worth"};};

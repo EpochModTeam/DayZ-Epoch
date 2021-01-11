@@ -182,6 +182,7 @@ class Category_31 {
 	class PartyPack_DZE1 {type = "trade_backpacks";buy[] = {7,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class NightPack_DZE1 {type = "trade_backpacks";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class SurvivorPack_DZE1 {type = "trade_backpacks";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
+	class AirwavesPack_DZE1 {type = "trade_backpacks";buy[] = {12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
 	class CzechBackpack_DZE1 {type = "trade_backpacks";buy[] = {-12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
 	class CzechBackpack_Camping_DZE1 {type = "trade_backpacks";buy[] = {12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};
 	class CzechBackpack_OD_DZE1 {type = "trade_backpacks";buy[] = {-12,"ItemGoldBar"};sell[] = {6,"ItemGoldBar"};};

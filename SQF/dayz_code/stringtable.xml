@@ -25020,7 +25020,22 @@
 			<Dutch>%1 &lt;br/&gt;Inhoud: %2 liter</Dutch>
 			<French>%1 &lt;br/&gt;Taille: %2</French>
 		</Key>
-
+		<Key ID="STR_BACKPACK_NAME_AIRWAVES_DZE1">
+			<English>Airwaves Backpack</English>
+			<German>Airwaves Rucksack</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_AIRWAVES_DZE1">
+			<English>Airwaves Backpack &lt;br/&gt;Capacity: 35 items</English>
+			<German>Airwaves Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
+		</Key>
+		<Key ID="STR_BACKPACK_NAME_AIRWAVES_DZE2">
+			<English>Airwaves Backpack+</English>
+			<German>Airwaves Rucksack+</German>
+		</Key>
+		<Key ID="STR_BACKPACK_DESC_AIRWAVES_DZE2">
+			<English>Airwaves Backpack &lt;br/&gt;Capacity: 45 items</English>
+			<German>Airwaves Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
 			<German>Fallschirm Sprung</German>
@@ -32342,6 +32357,10 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_STORAGE_CRATE">
 			<English>Craft Storage Crate</English>
 			<German>Lagerkiste herstellen</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ACTION_CRAFT_CAMO_STORAGE_CRATE">
+			<English>Craft Camo Storage Crate</English>
+			<German>Tarn-Lagerkiste herstellen</German>
 		</Key>		
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>
@@ -32839,6 +32858,122 @@
 			<English>A suitcase with a bomb inside.</English>
 			<German>Ein Koffer mit einer Bombe im Inneren.</German>
 		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT">
+			<English>Rabbit Skin</English>
+			<German>Hasenhaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT_DESC">
+			<English>A packet of rabbit skin.</English>
+			<German>Ein Paket Hasenhaut.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW">
+			<English>Cow Skin</English>
+			<German>Kuhhaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW_DESC">
+			<English>A packet of cow skin.</English>
+			<German>Ein Paket Kuhhaut.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT">
+			<English>Goat Skin</English>
+			<German>Ziegenhaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT_DESC">
+			<English>A packet of goat skin.</English>
+			<German>Ein Paket Ziegenhaut.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR">
+			<English>Boar Skin</English>
+			<German>Wildschweinhaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR_DESC">
+			<English>A packet of boar skin.</English>
+			<German>Ein Paket Wildschweinhaut.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG">
+			<English>Dog Skin</English>
+			<German>Hundehaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG_DESC">
+			<English>A packet of dog skin.</English>
+			<German>Ein Paket Hundehaut.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP">
+			<English>Sheep Skin</English>
+			<German>Schafshaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP_DESC">
+			<English>A packet of sheep skin.</English>
+			<German>Ein Paket Schafshaut.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_WOOL">
+			<English>Wool</English>
+			<German>Wolle</German>
+		</Key>
+		<Key ID="STR_EPOCH_WOOL_DESC">
+			<English>A packet of wool.</English>
+			<German>Ein Paket Wolle.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN">
+			<English>Animal Skin</English>
+			<German>Tierhaut</German>
+		</Key>
+		<Key ID="STR_EPOCH_ANIMAL_SKIN_DESC">
+			<English>A packet of animal skin.</English>
+			<German>Ein Paket Tierhaut.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_LEATHER">
+			<English>Leather</English>
+			<German>Leder</German>
+		</Key>
+		<Key ID="STR_EPOCH_LEATHER_DESC">
+			<English>A packet of leather.</English>
+			<German>Ein Paket Leder.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLASTIC_PARTS">
+			<English>Plastic Parts</English>
+			<German>Plastikteile</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
+			<English>A crate of plastic parts.</English>
+			<German>Eine Kiste mit Plastikteilen.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_CERAMIC_PARTS">
+			<English>Ceramic Parts</English>
+			<German>Keramikteile</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
+			<English>A crate of ceramic parts.</English>
+			<German>Eine Kiste mit Keramikteile.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN">
+			<English>Slugs in a can</English>
+		</Key>
+		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN_DESC">
+			<English>Slugs in a can</English>
+		</Key>	
+		<Key ID="STR_EPOCH_TIN_OF_POWDER">
+			<English>Tin of Powder</English>
+		</Key>
+		<Key ID="STR_EPOCH_TIN_OF_POWDER_DESC">
+			<English>Tin of Powder has medicinal qualities</English>
+			<German>Zinnpulver in medizinscher Qualität.</German>
+		</Key>
+		<Key ID="STR_EPOCH_HOBO_FISHING_KIT">
+			<English>Hobo Fishing Kit</English>
+		</Key>
+		<Key ID="STR_EPOCH_HOBO_FISHING_KIT_DESC">
+			<English>Hobo Fishing Kit, catches dem fishes</English>
+			<German>Hobo Fishing Kit fängt die Fische.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_CAMO_STORAGE_CRATE">
+			<English>Camo Storage Crate</English>
+			<German>Tarn-Lagerkiste</German>
+		</Key>
+		<Key ID="STR_EPOCH_CAMO_STORAGE_CRATE_DESC">
+			<English>A storage crate with a green camo net.</English>
+			<German>Eine Lagerkiste mit einem grünen Tarnetz.</German>
+		</Key>	
 		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
