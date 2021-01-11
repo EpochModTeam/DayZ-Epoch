@@ -29,19 +29,6 @@ class ItemHempSeed: CA_Magazine
 	model = "\z\addons\dayz_epoch_w\items\veges\seedbag_01.p3d";
 	picture = "\dayz_epoch_c\icons\plants\hempseeds.paa";
 	type = 256;
-	
-	class ItemActions
-	{
-		class Crafting
-		{
-			text = $STR_CRAFT_HEMP_PLANT;
-			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {""};
-			requiretools[] = {"ItemKnife"};
-			output[] = {{"ItemHempPlant",1},{"ItemWaterbottleUnfilled",1}};
-			input[] = {{"ItemHempSeed",1},{"ItemFertilizer",1},{"ItemWaterbottle",1}};
-		};
-	};
 };
 
 class ItemHempPlant: CA_Magazine 
