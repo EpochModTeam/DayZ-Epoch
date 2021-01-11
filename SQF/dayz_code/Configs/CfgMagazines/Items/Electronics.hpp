@@ -53,7 +53,7 @@ class equip_floppywire : CA_Magazine
 	type = 256;
 };
 
-class equip_sataywire : CA_Magazine 
+class equip_satawire : CA_Magazine 
 {
 	scope = 2;
 	count = 1;
