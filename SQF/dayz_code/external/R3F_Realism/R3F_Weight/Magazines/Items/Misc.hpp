@@ -117,3 +117,27 @@ class IR_Strobe_Target
 {
 	weight = 0.4;
 };
+class ItemBucket
+{
+	weight = 1;
+};
+class ItemSuitcase
+{
+	weight = 5;
+};
+class ItemSuitcaseDiamonds
+{
+	weight = 6;
+};
+class ItemSuitcaseBomb
+{
+	weight = 8;
+};
+class ItemPlasicParts
+{
+	weight = 4;
+};
+class ItemCeramicParts
+{
+	weight = 3;
+};

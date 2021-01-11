@@ -162,3 +162,7 @@ class advanced_workBench_kit
 {
 	weight = 35;
 };
+class camo_storage_crate_kit
+{
+	weight = 21;
+};

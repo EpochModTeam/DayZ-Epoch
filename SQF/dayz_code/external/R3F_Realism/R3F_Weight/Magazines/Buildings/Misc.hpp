@@ -96,7 +96,7 @@ class ItemScaffoldingKit
 
 class notebook_kit
 {
-	weight = 2;
+	weight = 3;
 };
 class water_pump_kit
 {
