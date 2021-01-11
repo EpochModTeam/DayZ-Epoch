@@ -2218,7 +2218,7 @@
 		<Key ID="STR_ITEM_DESC_equip_soundcard_broken">
 			<English>A small broken sound card that must be repaired.</English>
 			<German>Eine kleine kaputte Soundkarte, welche repariert werden muss.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_ITEM_NAME_equip_pcicard">
 			<English>PCI Card</English>
 			<German>PCI-Karte</German>
@@ -2234,7 +2234,7 @@
 		<Key ID="STR_ITEM_DESC_equip_pcicard_broken">
 			<English>A small broken PCI card that must be repaired.</English>
 			<German>Eine kleine kaputte PCI-Karte, welche repariert werden muss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_ITEM_NAME_equip_rope">
 			<English>Rope</English>
 			<German>Seil</German>
@@ -2496,7 +2496,7 @@
 		<Key ID="STR_ITEM_DESC_equip_satawire">
 			<English>SATA Wire in good condition that can be used in crafting.</English>
 			<German>Ein SATA-Kabel aus einem alten Computer. Es ist gut erhalten.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_ITEM_NAME_equip_crate">
 			<English>Crate</English>
 			<Russian>Ящик</Russian>
@@ -2648,7 +2648,7 @@
 		<Key ID="STR_ITEM_DESC_equip_aa_battery_empty">
 			<English>A size AA battery that must be recarged.</English>
 			<German>Eine Batterie vom Typ R6/AA, welche neu aufgeladen werden muss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_ITEM_NAME_equip_d_battery">
 			<English>D Battery</English>
 			<German>D-Batterie</German>
@@ -2676,7 +2676,7 @@
 		<Key ID="STR_ITEM_DESC_equip_d_battery_empty">
 			<English>A size D battery that must be recarged.</English>
 			<German>Eine Batterie vom Typ R20/D, welche neu aufgeladen werden muss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_ITEM_NAME_equip_2inch_metal_pipe">
 			<English>2 Inch Metal Pipes</English>
 			<German>Metallrohr 5cm</German>
@@ -15431,7 +15431,7 @@
 		<Key ID="STR_DZ_WPN_M24_DESERT_NAME">
 			<English>M24 Desert</English>
 			<German>M24 Wüstentarn</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_DZ_WPN_M40A3_NAME">
 			<English>M40A3</English>
 		</Key>
@@ -19260,7 +19260,7 @@
 		<Key ID="STR_DZ_MAG_20RND_12GAUGE_HE_DESC">
 			<English>Caliber: 12 HE &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: AA-12</English>
 			<German>Kaliber: 12 HE &lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: AA-12</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_DZ_MAG_10Rnd_762x51_CZ750_NAME">
 			<English>10Rnd. CZ 750 mag.</English>
 			<Russian>10п. CZ 750 маг.</Russian>
@@ -23892,7 +23892,7 @@
 		<Key ID="STR_EPOCH_PLAYER_260_1">
 			<English>Craft Advanced Workbench</English>
 			<German>Verbesserte Werkbank herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLAYER_261">
 			<English>Craft Shack</English>
 			<German>Schuppen herstellen</German>
@@ -26042,7 +26042,7 @@
 			<English>Supply Crate (12x Wool)</English>
 			<German>Kiste (Leder)</German>
 		</Key>
-		
+
 		<Key ID="STR_EPOCH_SAFE">
 			<English>Safe</English>
 			<German>Tresor</German>
@@ -26253,7 +26253,7 @@
 		<Key ID="STR_CRAFT_DESC_TOBACCO_SEED">
 			<English>A few tobacco seeds.</English>
 			<German>Ein paar Tabaksamen.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_CRAFT_NAME_BLACK_TEA_SEED">
 			<English>Bag of Black Tea Seeds</English>
 			<German>Säckchen Schwarzer Teesamen</German>
@@ -26261,7 +26261,7 @@
 		<Key ID="STR_CRAFT_DESC_BLACK_TEA_SEED">
 			<English>A few black tea seeds.</English>
 			<German>Ein paar schwarzer Teesamen.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
 			<English>Hemp Plant</English>
 			<German>Hanfpflanze</German>
@@ -26711,7 +26711,7 @@
 		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN_DESC">
 			<English>A broken lightbulb that is no longer usable.</English>
 			<German>Eine kaputte Glühbirne, welche für nichts mehr zu gebrauchen ist</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS">
 			<English>Zombie Parts</English>
 			<German>Zombiefleisch</German>
@@ -31264,6 +31264,7 @@
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_MISCELLANEOUS">
 			<English>Miscellaneous</English>
 			<German>Sonstiges</German>
+			<Russian>Разное</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_MEDICALSUPPLIES">
 			<English>Medical Supplies</English>
@@ -31306,7 +31307,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_SUVS">
 			<English>SUVs/Nissans</English>
-			<Russian>СУВы/Nissans</Russian>
+			<Russian>СУВы/Ниссаны</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_CARGOTRUCKS">
 			<English>Cargo Trucks</English>
@@ -31326,7 +31327,7 @@
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_HELICOPTER">
 			<English>Helicopter</English>
 			<German>Helikopter</German>
-			<Russian>вертолёты</Russian>
+			<Russian>Вертолёты</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_AIRPLANES">
 			<English>Airplanes</English>
@@ -31351,6 +31352,7 @@
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_CURRENCY">
 			<English>Currency</English>
 			<German>Währung</German>
+			<Russian>Валюта</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
@@ -31449,7 +31451,7 @@
 		</Key>
 		<Key ID="str_actions_medical_04_sepsis">
 			<English>Give Sepsis Bandage</English>
-			<Russian>Дать сепсис бинты</Russian>
+			<Russian>Дать обеззараживающий бинт</Russian>
 			<German>Sepsisbandage legen</German>
 		</Key>
 		<Key ID="str_actions_unload_fail">
@@ -31464,269 +31466,335 @@
 		</Key>
 		<Key ID="str_actions_medical_04_wipes">
 			<English>Clean Wounds</English>
-			<Russian>Чистые раны</Russian>
+			<Russian>Промыть раны</Russian>
 			<German>Wunden säubern</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_STASH_SMALL_DESC">
 			<English>A small stash on the ground to store some items.</English>
 			<German>Ein kleines Versteck in der Erde, um Gegenstände zu verstauen.</German>
+			<Russian>Небольшой тайник на земле для хранения каких-либо вещей.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CRAFT_SMALL_STASH">
 			<English>Craft Small Stash</English>
 			<German>Kleine Lagergrube herstellen</German>
+			<Russian>Создать маленький тайник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SOLDER">
 			<English>Portable Solder</English>
 			<German>Tragbarer Lötkolben</German>
+			<Russian>Паяльник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SOLDER_BROKEN">
 			<English>Broken Portable Solder</English>
 			<German>Kaputter Tragbarer Lötkolben</German>
+			<Russian>Сломанный паяльник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SOLDER_DESC">
 			<English>Soldering tool used for repairing broken equipment and items.</English>
 			<German>Ein tragbarer Lötkolben, um beschädigte Gegenstände und Ausrüstung zu reparieren.</German>
+			<Russian>Паяльник используется для ремонта соманного оборудования и предметов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SOLDER_BROKEN_DESC">
 			<English>Broken soldering tool that must be reparied.</English>
 			<German>Ein kaputter tragbarer Lötkolben, welcher repariert werden muss.</German>
+			<Russian>Сломанный паяльник, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_RADIO">
 			<English>Broken Radio</English>
 			<German>Beschädigtes Funkgerät</German>
+			<Russian>Сломанная рация</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_RADIO_DESC">
 			<English>A damaged radio that probably can be repaired.</English>
 			<German>Ein beschädigtes Funkgerät, das möglicherweise repariert werden kann.</German>
+			<Russian>Поврежденная рация, которую, вероятно, можно отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_NV">
 			<English>Broken Night Vision Goggles</English>
 			<German>Beschädigtes Nachtsichtgerät</German>
+			<Russian>Сломанный ПНВ</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_NV_DESC">
 			<English>Damaged night vision goggles that probably can be repaired.</English>
 			<German>Ein beschädigtes Nachtsichtgerät, das möglicherweise repariert werden kann.</German>
+			<Russian>Поврежденный ПНВ, который, вероятно, можно отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_GPS">
 			<English>Broken GPS</English>
 			<German>Beschädigtes GPS</German>
+			<Russian>Сломанный GPS</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_GPS_DESC">
 			<English>Damaged GPS that probably can be repaired.</English>
 			<German>Ein beschädigtes GPS, das möglicherweise repariert werden kann.</German>
+			<Russian>Поврежденный GPS, который, вероятно, можно отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_PILOT_MASK">
 			<English>Pilot Mask</English>
 			<German>Pilotenmaske</German>
+			<Russian>Маска пилота</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_PILOT_MASK_BROKEN">
 			<English>Broken Pilot Mask</English>
 			<German>Kaputte Pilotenmaske</German>
+			<Russian>Сломанная маска пилота</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_PILOT_MASK_DESC">
 			<English>A wearable pilot mask.</English>
 			<German>Eine tragbare Pilotenmaske.</German>
+			<Russian>Маска пилота, которую можно одеть</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_PILOT_MASK_BROKEN_DESC">
 			<English>A wearable pilot mask that must be repaired.</English>
 			<German>Eine tragbare Pilotenmaske, welche repariert werden muss.</German>
+			<Russian>Маска пилота, которую необходимо отремонтировать и одеть.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_GAS_MASK1">
 			<English>Gas Mask 4A1</English>
 			<German>Gasmaske 4A1</German>
+			<Russian>Противогаз 4A1</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_GAS_MASK1_BROKEN">
 			<English>Broken Gas Mask 4A1</English>
 			<German>Kaputte Gasmaske 4A1</German>
+			<Russian>Сломанный противогаз 4A1</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_GAS_MASK1_DESC">
 			<English>Gas Mask 4A1 used by civilians.</English>
 			<German>Gasmaske 4A1 für die Zivilbevölkerung.</German>
+			<Russian>Противогаз 4A1, используемый гражданскими лицами.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_GAS_MASK1_BROKEN_DESC">
 			<English>A broken Gas Mask 4A1 that must be repaired.</English>
 			<German>Eine kaputte Gasmaske 4A1, welche repariert werden muss.</German>
+			<Russian>Противогаз 4A1, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_GAS_MASK2">
 			<English>Gas Mask S10 NBC</English>
 			<German>Gasmaske S10 NBC</German>
+			<Russian>Противогаз S10 NBC</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_GAS_MASK2_BROKEN">
 			<English>Broken Gas Mask S10 NBC</English>
 			<German>Kaputte Gasmaske S10 NBC</German>
+			<Russian>Сломанный противогаз S10 NBC</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_GAS_MASK2_DESC">
 			<English>Gas Mask S10 NBC used by the military.</English>
 			<German>Gasmaske S10 NBC für das Militär.</German>
+			<Russian>Противогаз S10 NBC, используемый военными.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_GAS_MASK2_BROKEN_DESC">
 			<English>A broken Gas Mask S10 NBC that must be repaired.</English>
 			<German>Eine kaputte Gasmaske S10 NBC, welche repariert werden muss.</German>
+			<Russian>Противогаз S10 NBC, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_APSI">
 			<English>APSI</English>
+			<Russian>Пси-шлем</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_APSI_BROKEN">
 			<English>Broken APSI</English>
 			<English>Beschädigtes APSI</English>
+			<Russian>Сломанный пси-шлем</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_APSI_DESC">
 			<English>APSI (Anti PSI) device, which full purpose is yet unknown.</English>
 			<German>APSI (Anti PSI) Emitter, dessen vollständige Funktion noch unbekannt ist.</German>
+			<Russian>Пси-шлем (APSI) - устройство, полное назначение которого пока неизвестно.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_APSI_BROKEN_DESC">
 			<English>Broken APSI (Anti PSI) device, that must be repaired.</English>
 			<German>Kaputter APSI (Anti PSI) Emitter, welcher repariert werden muss.</German>
+			<Russian>Сломанный пси-шлем (APSI) - устройство, которое необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_BINOCULAR">
 			<English>Broken Binocular</English>
 			<German>Kaputtes Fernglas</German>
+			<Russian>Сломанный бинокль</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_BINOCULAR_DESC">
 			<English>Broken Binocular that must be repaired.</English>
 			<German>Ein kaputtes Fernglas, welches repariert werden muss.</German>
+			<Russian>Сломанный бинокль, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_BINOCULARVECTOR">
 			<English>Broken Rangefinder</English>
 			<German>Kaputter Entfernungsmesser</German>
+			<Russian>Сломанный дальномер</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_BINOCULARVECTOR_DESC">
 			<English>Broken Rangefinder that must be repaired.</English>
 			<German>Ein kaputter Entfernungsmesser, welcher repariert werden muss.</German>
+			<Russian>Сломанный дальномер, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_CUFFS">
 			<English>Hand Cuffs</English>
 			<German>Handschellen</German>
+			<Russian>Наручники</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_CUFFS_BROKEN">
 			<English>Broken Hand Cuffs</English>
 			<German>Kaputte Handschellen</German>
+			<Russian>Сломанные наручники</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_CUFFS_DESC">
 			<English>Hand Cuffs used by the police.</English>
 			<German>Handschellen, welche von der Polizei genutzt werden.</German>
+			<Russian>Наручники. Используются полицией.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_CUFFS_BROKEN_DESC">
 			<English>Broken Hand Cuffs that must be repaired.</English>
 			<German>Kaputte Handschellen, welche repariert werden müssen.</German>
+			<Russian>Сломанные наручники, которые необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_HAMMER">
 			<English>Hammer</English>
+			<Russian>Молоток</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_HAMMER_BROKEN">
 			<English>Broken Hammer</English>
 			<German>Kaputter Hammer</German>
+			<Russian>Сломанный молоток</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_HAMMER_DESC">
 			<English>A tool to drive nails into wood and metal.</English>
 			<German>Ein Werkzeug zum Einschlagen von Nägeln in Holz oder Metall.</German>
+			<Russian>Инструмент для забивания гвоздей.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_HAMMER_BROKEN_DESC">
 			<English>Broken Hammer that must be repaired.</English>
 			<German>Ein kaputter Hammer, welcher repariert werden muss.</German>
+			<Russian>Сломанный молоток, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SAW">
 			<English>Handsaw</English>
 			<German>Handsäge</German>
+			<Russian>Ручная пила</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SAW_BROKEN">
 			<English>Broken Handsaw</English>
 			<German>Kaputte Handsäge</German>
+			<Russian>Сломанная ручная пила</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SAW_DESC">
 			<English>A tool to tailor wood.</English>
 			<German>Ein Werkzeug, um Holz zu zusägen.</German>
+			<Russian>Инструмент для распила дерева.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SAW_BROKEN_DESC">
 			<English>Broken Handsaw that must be repaired.</English>
 			<German>Eine kaputte Handsäge, welche repariert werden muss.</German>
+			<Russian>Сломанная ручная пила, которую необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SMARTPHONE">
 			<English>Smartphone</English>
+			<Russian>Смартфон</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SMARTPHONE_BROKEN">
 			<English>Broken Smartphone</English>
 			<German>Kaputtes Smartphone</German>
+			<Russian>Сломанный смартфон</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SMARTPHONE_DESC">
 			<English>A new kind of mobile phone.</English>
 			<German>Eine neue Art von Handy.</German>
+			<Russian>Новый вид мобильного телефона.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SMARTPHONE_BROKEN_DESC">
 			<English>Broken Smartphone that must be repaired.</English>
 			<German>Ein kaputtes Smartphone, welches repariert werden muss.</German>
+			<Russian>Сломанный смартфон, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCISSORS">
 			<English>Scissors</English>
 			<German>Schere</German>
+			<Russian>Ножницы</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCISSORS_BROKEN">
 			<English>Broken Scissors</English>
 			<German>Kaputte Schere</German>
+			<Russian>Сломанные ножницы</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCISSORS_DESC">
 			<English>A tool to cut various thin materials.</English>
 			<German>Ein Werzeug, um verschiedenste dünne Materialien zu zuschneiden.</German>
+			<Russian>Инструмент для разрезания различных тонких материалов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCISSORS_BROKEN_DESC">
 			<English>Broken Scissors that must be repaired.</English>
 			<German>Eine kaputte Schere, welche repariert werden muss.</German>
+			<Russian>Сломанные ножницы, которые необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCREWEXTRACTOR">
 			<English>Screwdriver Set</English>
 			<German>Schraubendreher-Set</German>
+			<Russian>Набор отвёрток</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCREWEXTRACTOR_BROKEN">
 			<English>Broken Screwdriver Set</English>
 			<German>Kaputtes Schraubendreher-Set</German>
+			<Russian>Сломанный набор отвёрток</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCREWEXTRACTOR_DESC">
 			<English>A tool used for screwing and unscrewing screws.</English>
 			<German>Ein Werzeug, um Schrauben ein- und herauszuschrauben.</German>
+			<Russian>Инструмент для закручивания и откручивания шурупов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SCREWEXTRACTOR_BROKEN_DESC">
 			<English>Broken Screwdriver Set that must be repaired.</English>
 			<German>Ein kaputtes Schraubendreher-Set, welches repariert werden muss.</German>
+			<Russian>Сломанный набор отвёрток, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_WRENCH">
 			<English>Wrench</English>
 			<German>Schraubenschlüssel</German>
+			<Russian>Гаечный ключ</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_WRENCH_BROKEN">
 			<English>Broken Wrench</English>
 			<German>Kaputter Schraubenschlüssel</German>
+			<Russian>Сломанный гаечный ключ</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_WRENCH_DESC">
 			<English>A tool used for screwing and unscrewing screw-nuts.</English>
 			<German>Ein Werzeug zum Anziehen oder Lösen von Muttern.</German>
+			<Russian>Инструмент для закручивания и откручивания гаек.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_WRENCH_BROKEN_DESC">
 			<English>Broken Wrench that must be repaired.</English>
 			<German>Ein kaputter Schraubenschlüssel, welcher repariert werden muss.</German>
+			<Russian>Сломанный гаечный ключ, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE">
 			<English>Disabled:</English>
 			<German>Deaktiviert:</German>
+			<Russian>Деактивировано:</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE_MSG">
 			<English>Use action menu to enable.</English>
 			<German>Benutzte das Scrollmenü zum Aktivieren.</German>
+			<Russian>Используйте прокрутку для активации.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ENABLE">
 			<English>Enabled:</English>
 			<German>Aktiviert:</German>
+			<Russian>Активировано:</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ENABLE_MSG">
 			<English>Use action menu to disable.</English>
 			<German>Benutzte das Scrollmenü zum Deaktivieren.</German>
+			<Russian>Используйте прокрутку для деактивации.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_AUTO_DETECT">
 			<English>Automatic snap point detection.</English>
 			<German>Das Snapping findet automatisch den nächsten Snap-Punkt.</German>
+			<Russian>Автоматическое определение точек привязки.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_MANUAL_DETECT">
 			<English>Select your preferred snap point.</English>
 			<German>Wähle selbstständig den nächsten Snap-Punkt.</German>
+			<Russian>Выберите необходимую точку привязки.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_PGUPPGDOWN">
 			<English>[PgUP / PgDOWN]</English>
@@ -31735,6 +31803,7 @@
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_PGUPPGDOWN_MSG">
 			<English>Adjust height of object by 10cm.</English>
 			<German>Passt die Höhe des Objektes um 10cm an.</German>
+			<Russian>Настройка высоты (10 см).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ALT_PGUPPGDOWN">
 			<English>[Alt] + [PgUP / PgDOWN]</English>
@@ -31743,6 +31812,7 @@
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ALT_PGUPPGDOWN_MSG">
 			<English>Adjust height of object by 1m.</English>
 			<German>Passt die Höhe des Objektes um 1m an.</German>
+			<Russian>Настройка высоты (1 м).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_CTRL_PGUPPGDOWN">
 			<English>[Ctrl] + [PgUP / PgDOWN]</English>
@@ -31751,18 +31821,22 @@
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_CTRL_PGUPPGDOWN_MSG">
 			<English>Adjust height of object by 1cm.</English>
 			<German>Passt die Höhe des Objektes um 1cm an.</German>
+			<Russian>Настройка высоты (1 см).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ROTATE180_MSG">
 			<English>Rotate object 180 degrees while holding.</English>
 			<German>Dreht das Objekt um 180 Grad.</German>
+			<Russian>Вращение на 180 градусов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ROTATE45_MSG">
 			<English>Rotate object 45 degrees while holding.</English>
 			<German>Dreht das Objekt um 45 Grad.</German>
+			<Russian>Вращение на 45 градусов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_DROP_MSG">
 			<English>Drop / Pick up object.</English>
 			<German>Objekt feststellen / aufnehmen.</German>
+			<Russian>Бросить / Поднять.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_SNAP_MSG">
 			<English>Drop / Pick up object.</English>
@@ -31771,34 +31845,42 @@
 		<Key ID="STR_EPOCH_ACTION_SNAP_ON">
 			<English>ON</English>
 			<German>AN</German>
+			<Russian>ВКЛ</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_OFF">
 			<English>OFF</English>
 			<German>AUS</German>
+			<Russian>ВЫКЛ</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_POINT_MANUAL">
 			<English>Manual</English>
 			<German>Manuell</German>
+			<!-- <Russian>В ручную</Russian> -->
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_POINT">
 			<English>Snap Points:</English>
 			<German>Snap-Punkte:</German>
+			<Russian>Точки привязки:</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_SELECT">
 			<English>Select:</English>
 			<German>Auswahl:</German>
+			<Russian>Выбрать:</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT">
 			<English>Right</English>
 			<German>Rechts</German>
+			<Russian>Вправо</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT">
 			<English>Left</English>
 			<German>Links</German>
+			<Russian>Влево</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_PIVOT">
 			<English>Pivot</English>
 			<German>Mittelpunkt</German>
+			<Russian>Фокус</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_BACK">
 			<English>Back</English>
@@ -31839,6 +31921,7 @@
 		<Key ID="STR_EPOCH_VECTORS_RESET">
 			<English>Reset</English>
 			<German>Zurücksetzen</German>
+			<Russian>Сбросить</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VECTORS_CLOSE">
 			<English>CLOSE</English>
@@ -31851,9 +31934,11 @@
 		<Key ID="STR_EPOCH_VECTORS_DEGREES">
 			<English>DEGREES:</English>
 			<German>Grad:</German>
+			<Russian>УГЛЫ:</Russian>
 		</Key>
 		<Key ID="STR_UI_STATUS_VANILLA">
 			<English>Vanilla</English>
+			<Russian>Обычный</Russian>
 		</Key>
 		<Key ID="STR_UI_STATUS_EPOCH">
 			<English>Epoch</English>
@@ -31861,18 +31946,22 @@
 		<Key ID="STR_UI_STATUS_DARK">
 			<English>Dark</English>
 			<German>Dunkel</German>
+			<Russian>Тёмный</Russian>
 		</Key>
 		<Key ID="STR_UI_STATUS_WB">
 			<English>White Borders</English>
 			<German>Weiße Umrandung</German>
+			<Russian>Белая обводка</Russian>
 		</Key>
 		<Key ID="STR_UI_STATUS_GB">
 			<English>Green Borders</English>
 			<German>Grüne Umrandung</German>
+			<Russian>Зелёная обводка</Russian>
 		</Key>
 		<Key ID="str_player_fail_wear4">
 			<English>You cannot change clothes when you are being targeted by NPCs!</English>
 			<German>Du kannst deine Kleidung nicht wechseln, wenn du dich in einem Gefecht mit NPCs befindest!</German>
+			<Russian>Вы не можете переодеться, пока в вас целится NPC!</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_CROSSBOW_STOCK">
 			<English>Crossbow Stock</English>
@@ -32444,11 +32533,11 @@
 		<Key ID="STR_EPOCH_ACTION_CRAFT_STORAGE_CRATE">
 			<English>Craft Storage Crate</English>
 			<German>Lagerkiste herstellen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_CAMO_STORAGE_CRATE">
 			<English>Craft Camo Storage Crate</English>
 			<German>Tarn-Lagerkiste herstellen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>
 			<German>Tor öffnen</German>
@@ -32466,7 +32555,7 @@
 		<Key ID="STR_BLD_ACTIONS_CLOSE_WINDOW">
 			<English>Close Window</English>
 			<German>Fenster schließen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCK_WINDOW">
 			<English>Unlock Window</English>
 			<German>Fenster aufschließen</German>
@@ -32482,7 +32571,7 @@
 		<Key ID="STR_BLD_ACTIONS_CLOSE_BUNKER">
 			<English>Close Shutter</English>
 			<German>Schießscharten schließen</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCK_BUNKER">
 			<English>Unlock Shutter</English>
 			<German>Schießscharten aufschließen</German>
@@ -32490,7 +32579,7 @@
 		<Key ID="STR_BLD_ACTIONS_LOCK_BUNKER">
 			<English>Lock Shutter</English>
 			<German>Schießscharten abschließen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_STONEOVEN">
 			<English>Stone Oven</English>
 			<German>Steinofen</German>
@@ -32593,7 +32682,7 @@
 		<Key ID="STR_EPOCH_STORAGECRATE_DESC">
 			<English>A small wooden storage crate for small bases.</English>
 			<German>Eine kleine Lagerkiste, welche sehr gut für kleine Basen geeignet ist.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK">
 			<English>Notebook</English>
 		</Key>
@@ -32764,15 +32853,15 @@
 		<Key ID="STR_EPOCH_BONES_GRAVE">
 			<English>Bones Grave</English>
 			<German>Knochengrab</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_DEAD_SOLDIER">
 			<English>Dead Soldier</English>
 			<German>Toter Soldat</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PILE_RUBBISH">
 			<English>Garbage heab</English>
 			<German>Müllhaufen</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN">
 			<English>Pumpkin patch</English>
 			<German>Kürbisbeet</German>
@@ -32780,11 +32869,11 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
 			<English>Sunflower patch</English>
 			<German>Sonnenblumenbeet</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT">
 			<English>Carrot patch</English>
 			<German>Karottenbeet</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
@@ -32792,26 +32881,26 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP">
 			<English>Hemp plant patch</English>
 			<German>Hanfpflanzenbeet</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO">
 			<English>Tobacco plant patch</English>
 			<German>Tabakpflanzenbeet</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ITEM_NOTEBOOK">
 			<English>Notebook</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ITEM_NOTEBOOK_DESC">
 			<English>A notebook in a good condition.</English>
 			<German>Ein Notebook, welches sich in einem guten Zustand befindet.</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK_BROKEN">
 			<English>Notebook (broken)</English>
 			<German>Notebook (kaputt)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK_BROKEN_DESC">
 			<English>A broken notebook that must be repaired.</English>
 			<German>Ein kaputtes Notebook, welches repariert werden muss.</German>
@@ -32819,116 +32908,116 @@
 		<Key ID="STR_EPOCH_SMALL_TV">
 			<English>TV (small)</English>
 			<German>Fernseher (klein)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SMALL_TV_DESC">
 			<English>A small TV in a good condition.</English>
 			<German>Ein kleiner Fernseher, welcher sich in einem guten Zustand befindet.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SMALL_TV_BROKEN">
 			<English>TV (small, broken)</English>
 			<German>Fernseher (klein, kaputt)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SMALL_TV_BROKEN_DESC">
 			<English>A broken TV that must be repaired.</English>
 			<German>Ein kaputter Fernseher, welcher repariert werden muss.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_BIG_TV">
 			<English>TV (big)</English>
 			<German>Fernseher (groß)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_BIG_TV_DESC">
 			<English>A big TV in a good condition.</English>
 			<German>Ein großer Fernseher, welcher sich in einem guten Zustand befindet.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_BIG_TV_BROKEN">
 			<English>TV (big, broken)</English>
 			<German>Fernseher (groß, kaputt)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_BIG_TV_BROKEN_DESC">
 			<English>A broken TV that must be repaired.</English>
 			<German>Ein kaputter Fernseher, welcher repariert werden muss.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SATELLITE_PHONE">
 			<English>Satellite Phone</English>
 			<German>Satellitentelefon</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SATELLITE_PHONE_DESC">
 			<English>A satellite phone in a good condition.</English>
 			<German>Ein Satellitentelefon, welches sich in einem guten Zustand befindet.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SATELLITE_PHONE_BROKEN">
 			<English>Satellite Phone (broken)</English>
 			<German>Satellitentelefon (kaputt)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SATELLITE_PHONE_BROKEN_DESC">
 			<English>A broken satellite phone that must be repaired.</English>
 			<German>Ein kaputtes Satellitentelefon, welches repariert werden muss.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PC">
 			<English>PC</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PC_DESC">
 			<English>A PC with monitor in a good condition.</English>
 			<German>Ein PC mit Monitor, welcher sich in einem guten Zustand befindet.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PC_BROKEN">
 			<English>PC (broken)</English>
 			<German>PC (kaputt)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_PC_BROKEN_DESC">
 			<English>A broken PC that must be repaired.</English>
 			<German>Ein kaputter PC, welcher repariert werden muss.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_DESKTOP_RADIO">
 			<English>Desktop Radio</English>
 			<German>Stationsfunkgerät</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_DESKTOP_RADIO_DESC">
 			<English>A desktop radio in a good condition.</English>
 			<German>Ein Stationsfunkgerät, welches sich in einem guten Zustand befindet.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_DESKTOP_RADIO_BROKEN">
 			<English>Desktop Radio (broken)</English>
 			<German>Stationsfunkgerät (kaputt)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_DESKTOP_RADIO_BROKEN_DESC">
 			<English>A broken desktop radio that must be repaired.</English>
 			<German>Ein kaputtes Stationsfunkgerät, welches repariert werden muss.</German>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC1">
 			<English>Radio</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC1_DESC">
 			<English>A radio in a good condition.</English>
 			<German>Ein Radio, welches sich in einem guten Zustand befindet.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC1_BROKEN">
 			<English>Radio (broken)</English>
 			<German>Radio (kaputt)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC1_BROKEN_DESC">
 			<English>A broken radio that must be repaired.</English>
 			<German>Ein kaputtes Radio, welches repariert werden muss.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC2">
 			<English>Radio</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC2_DESC">
 			<English>A radio in a good condition.</English>
 			<German>Ein Radio, welches sich in einem guten Zustand befindet.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC2_BROKEN">
 			<English>Radio (broken)</English>
 			<German>Radio (kaputt)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC2_BROKEN_DESC">
 			<English>A broken radio that must be repaired.</English>
 			<German>Ein kaputtes Radio, welches repariert werden muss.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_METAL_BUCKET">
 			<English>Bucket</English>
 			<German>Eimer</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS">
 			<English>Suitcase with Diamonds</English>
 			<German>Koffer mit Diamanten</German>
@@ -32936,7 +33025,7 @@
 		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS_DESC">
 			<English>A suitcase with many small diamonds.</English>
 			<German>Ein Koffer mit vielen kleinen Diamanten.</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_BOMB">
 			<English>Suitcase Bomb</English>
 			<German>Kofferbombe</German>
@@ -32960,7 +33049,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW_DESC">
 			<English>A packet of cow skin.</English>
 			<German>Ein Paket Kuhfell.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT">
 			<English>Goat Skin</English>
 			<German>Ziegenfell</German>
@@ -32968,7 +33057,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT_DESC">
 			<English>A packet of goat skin.</English>
 			<German>Ein Paket Ziegenfell.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR">
 			<English>Boar Skin</English>
 			<German>Wildschweinfell</German>
@@ -32992,7 +33081,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP_DESC">
 			<English>A packet of sheep skin.</English>
 			<German>Ein Paket Schafsfell.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_WOOL">
 			<English>Wool</English>
 			<German>Wolle</German>
@@ -33008,7 +33097,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DESC">
 			<English>A packet of animal skin.</English>
 			<German>Ein Paket Tierfell.</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_LEATHER">
 			<English>Leather</English>
 			<German>Leder</German>
@@ -33024,7 +33113,7 @@
 		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
 			<English>A crate of plastic parts.</English>
 			<German>Eine Kiste mit Plastikteilen.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_CERAMIC_PARTS">
 			<English>Ceramic Parts</English>
 			<German>Keramikteile</German>
@@ -33032,13 +33121,13 @@
 		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
 			<English>A crate of ceramic parts.</English>
 			<German>Eine Kiste mit Keramikteile.</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN">
 			<English>Slugs in a can</English>
 		</Key>
 		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN_DESC">
 			<English>Slugs in a can</English>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_TIN_OF_POWDER">
 			<English>Tin of Powder</English>
 		</Key>
@@ -33052,7 +33141,7 @@
 		<Key ID="STR_EPOCH_HOBO_FISHING_KIT_DESC">
 			<English>Hobo Fishing Kit, catches dem fishes</English>
 			<German>Hobo Fishing Kit fängt die Fische.</German>
-		</Key>			
+		</Key>
 		<Key ID="STR_EPOCH_CAMO_STORAGE_CRATE">
 			<English>Camo Storage Crate</English>
 			<German>Tarn-Lagerkiste</German>
@@ -33060,8 +33149,8 @@
 		<Key ID="STR_EPOCH_CAMO_STORAGE_CRATE_DESC">
 			<English>A storage crate with a green camo net.</English>
 			<German>Eine Lagerkiste mit einem grünen Tarnetz.</German>
-		</Key>	
-		
+		</Key>
+
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
