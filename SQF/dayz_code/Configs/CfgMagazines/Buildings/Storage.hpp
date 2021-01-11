@@ -865,3 +865,25 @@ class storage_crate_kit: CA_Magazine
 		};
 	};
 };
+
+class camo_storage_crate_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_CAMO_STORAGE_CRATE;
+	descriptionShort = $STR_EPOCH_CAMO_STORAGE_CRATE_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "CamoStorageCrate_DZ";
+		};
+	};
+};
