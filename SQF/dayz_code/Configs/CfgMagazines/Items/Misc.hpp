@@ -207,7 +207,7 @@ class ItemBucket : CA_Magazine
 	type = 256;
 };
 
-class ItemSuicase : CA_Magazine 
+class ItemSuitcase : CA_Magazine 
 {
 	scope = 2;
 	count = 1;
@@ -218,7 +218,7 @@ class ItemSuicase : CA_Magazine
 	type = 256;
 };
 
-class ItemSuicaseDiamonds : CA_Magazine 
+class ItemSuitcaseDiamonds : CA_Magazine 
 {
 	scope = 2;
 	count = 1;
@@ -229,7 +229,7 @@ class ItemSuicaseDiamonds : CA_Magazine
 	type = 256;
 };
 
-class ItemSuicaseBomb : CA_Magazine 
+class ItemSuitcaseBomb : CA_Magazine 
 {
 	scope = 2;
 	count = 1;
