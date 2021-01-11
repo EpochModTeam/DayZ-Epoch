@@ -196,6 +196,50 @@ class equip_slugsinacan : CA_Magazine
 	type = 256;
 };
 
+class ItemBucket : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_METAL_BUCKET;
+	descriptionShort = $STR_EPOCH_METAL_BUCKET;
+	model = "\CA\Structures\Furniture\Decoration\bucket\bucket.p3d";
+	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	type = 256;
+};
+
+class ItemSuicase : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_DN_SUITCASE";
+	descriptionShort = "$STR_DN_SUITCASE";
+	model = "\CA\misc3\briefcase";
+	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	type = 256;
+};
+
+class ItemSuicaseDiamonds : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_SUITCASE_DIAMONDS;
+	descriptionShort = $STR_EPOCH_SUITCASE_DIAMONDS_DESC;
+	model = "\CA\misc3\briefcase";
+	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	type = 256;
+};
+
+class ItemSuicaseBomb : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_EPOCH_SUITCASE_BOMB;
+	descriptionShort = $STR_EPOCH_SUITCASE_BOMB_DESC;
+	model = "\CA\misc3\briefcase";
+	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	type = 256;
+};
+
 //No models
 class equip_cable_tie : CA_Magazine 
 {

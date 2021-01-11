@@ -2187,6 +2187,54 @@
 			<French>Un tas de pièces électroniques</French>
 			<Czech>Relikvie z časů, kdy veřejné mínění bylo utvářeno elektronickými masmédii.</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_graphicscard">
+			<English>Graphics Card</English>
+			<German>Grafikkarte</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_graphicscard">
+			<English>A small graphics card that is still usable.</English>
+			<German>Eine kleine Grafikkarte, welche immer noch benutzt werden kann.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_graphicscard_broken">
+			<English>Graphics Card (broken)</English>
+			<German>Grafikkarte (kaputt)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_graphicscard_broken">
+			<English>A small broken graphics card that must be repaired.</English>
+			<German>Eine kleine kaputte Grafikkarte, welche repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_soundcard">
+			<English>Sound Card</English>
+			<German>Soundkarte</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_soundcard">
+			<English>A small sound card that is still usable.</English>
+			<German>Eine kleine Soundkarte, welche immer noch benutzt werden kann.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_soundcard_broken">
+			<English>Sound Card (broken)</English>
+			<German>Soundkarte (kaputt)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_soundcard_broken">
+			<English>A small broken sound card that must be repaired.</English>
+			<German>Eine kleine kaputte Soundkarte, welche repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_ITEM_NAME_equip_pcicard">
+			<English>PCI Card</English>
+			<German>PCI-Karte</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_pcicard">
+			<English>A small PCI card that is still usable.</English>
+			<German>Eine kleine PCI-Karte, welche immer noch benutzt werden kann.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_equip_pcicard_broken">
+			<English>PCI Card (broken)</English>
+			<German>PCI-Karte (kaputt)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_pcicard_broken">
+			<English>A small broken PCI card that must be repaired.</English>
+			<German>Eine kleine kaputte PCI-Karte, welche repariert werden muss.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_rope">
 			<English>Rope</English>
 			<German>Seil</German>
@@ -2441,6 +2489,14 @@
 			<Czech>Kus kabelu, který je dobrém stavu. Předmět lze použít při výrobě.</Czech>
 			<German>Ein Flachbandkabel aus einem alten Computer. Es ist recht gut erhalten.</German>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_satawire">
+			<English>SATA Wire</English>
+			<German>SATA-Kabel</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_satawire">
+			<English>SATA Wire in good condition that can be used in crafting.</English>
+			<German>Ein SATA-Kabel aus einem alten Computer. Es ist gut erhalten.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_crate">
 			<English>Crate</English>
 			<Russian>Ящик</Russian>
@@ -2581,6 +2637,18 @@
 			<French>Une batterie de Type AA</French>
 			<Czech>Baterie typu AA ("tužková").</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_aa_battery_empty">
+			<English>AA Battery (empty)</English>
+			<German>AA-Batterie (leer)</German>
+			<Russian>Батарейка АА (порожний)</Russian>
+			<Spanish>Batería AA (vacía)</Spanish>
+			<French>Pile de type AA (vide)</French>
+			<Czech>AA baterie (prázdný)</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_aa_battery_empty">
+			<English>A size AA battery that must be recarged.</English>
+			<German>Eine Batterie vom Typ R6/AA, welche neu aufgeladen werden muss.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_d_battery">
 			<English>D Battery</English>
 			<German>D-Batterie</German>
@@ -2597,6 +2665,18 @@
 			<French>Une pile de type D</French>
 			<Czech>Baterie typu D ("buřt").</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_equip_d_battery_empty">
+			<English>D Battery (empty)</English>
+			<German>D-Batterie (leer)</German>
+			<Russian>Батарейка D (порожний)</Russian>
+			<Spanish>Batería D (vacía)</Spanish>
+			<French>Pile de type D (vide)</French>
+			<Czech>D baterie (prázdný)</Czech>
+		</Key>
+		<Key ID="STR_ITEM_DESC_equip_d_battery_empty">
+			<English>A size D battery that must be recarged.</English>
+			<German>Eine Batterie vom Typ R20/D, welche neu aufgeladen werden muss.</German>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_equip_2inch_metal_pipe">
 			<English>2 Inch Metal Pipes</English>
 			<German>Metallrohr 5cm</German>
@@ -25516,6 +25596,351 @@
 			<German>Kiste (6x Metallteile)</German>
 			<Russian>Ящик (6x Металлолом)</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_PipeBomb_FULL">
+			<English>12x Pipe Bomb</English>
+			<German>12x Rohrbombe</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_PipeBomb_FULL">
+			<English>Supply Crate (12x Pipe Bomb)</English>
+			<German>Kiste (12x Rohrbombe)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_PartWheel_FULL">
+			<English>12x Car wheel</English>
+			<German>12x Reifen</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_PartWheel_FULL">
+			<English>Supply Crate (12x Car wheel)</English>
+			<German>Kiste (12x Reifen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_PartGlass_FULL">
+			<English>12x Windscreen glass</English>
+			<German>12x Autoglass</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_PartGlass_FULL">
+			<English>Supply Crate (12x Windscreen glass)</English>
+			<German>Kiste (12x Autoglass)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemScrews_FULL">
+			<English>12x Box of screws</English>
+			<German>12x Schachtel mit Schrauben</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemScrews_FULL">
+			<English>Supply Crate (12x Box of screws)</English>
+			<German>Kiste (12x Schachtel mit Schrauben)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemMixOil_FULL">
+			<English>12x 2-Stroke Engine Oil</English>
+			<German>12x 2-Takt-Motorenöl</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemMixOil_FULL">
+			<English>Supply Crate (12x 2-Stroke Engine Oil)</English>
+			<German>Kiste (12x 2-Takt-Motorenöl)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemLightBulb_FULL">
+			<English>12x Light bulb</English>
+			<German>12x Glühbirne</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemLightBulb_FULL">
+			<English>Supply Crate (12x Light bulb)</English>
+			<German>Kiste (12x Glühbirne)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemKosmosSmokes_FULL">
+			<English>12x Kosmos Smokes</English>
+			<German>12x Kosmos Zigaretten</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemKosmosSmokes_FULL">
+			<English>Supply Crate (12x Kosmos Smokes)</English>
+			<German>Kiste (12x Kosmos Zigaretten)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloTobacco_FULL">
+			<English>12x Kilo of tobacco</English>
+			<German>12x Kilo Tabak</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloTobacco_FULL">
+			<English>Supply Crate (12x Kilo of tobacco)</English>
+			<German>Kiste (12x Kilo Tabak)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloHemp_FULL">
+			<English>12x Kilo of hemp</English>
+			<German>12x Kilo Hanf</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloHemp_FULL">
+			<English>Supply Crate (12x Kilo of hemp)</English>
+			<German>Kiste (12x Kilo Hanf)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloBlackTea_FULL">
+			<English>12x Kilo of black tea</English>
+			<German>12x Kilo Schwarzer Tee</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloBlackTea_FULL">
+			<English>Supply Crate (12x Kilo of black tea)</English>
+			<German>Kiste (12x Kilo Schwarzer Tee)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemHotwireKit_FULL">
+			<English>12x Hotwire kit</English>
+			<German>12x Aufbruchwerkzeug</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemHotwireKit_FULL">
+			<English>Supply Crate (12x Hotwire kit)</English>
+			<German>Kiste (12x Aufbruchwerkzeug)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemFertilizer_FULL">
+			<English>12x Fertilizer</English>
+			<German>12x Dünger</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemFertilizer_FULL">
+			<English>Supply Crate (12x Fertilizer)</English>
+			<German>Kiste (12x Dünger)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemDogTag_FULL">
+			<English>12x Dog Tag</English>
+			<German>12x Hundemarke</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemDogTag_FULL">
+			<English>Supply Crate (12x Dog Tag)</English>
+			<German>Kiste (12x Hundemarke)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemComboLock_FULL">
+			<English>12x Combination lock</English>
+			<German>12x Zahlenschloss</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemComboLock_FULL">
+			<English>Supply Crate (12x Combination lock)</English>
+			<German>Kiste (12x Zahlenschloss)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_ItemC4Charge_FULL">
+			<English>12x C4 Charge</English>
+			<German>12x C4 Ladung</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_ItemC4Charge_FULL">
+			<English>Supply Crate (12x C4 Charge)</English>
+			<German>Kiste (12x C4 Ladung)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_HandRoadFlare_FULL">
+			<English>12x Road flare</English>
+			<German>12x Bengalische Fackel</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_HandRoadFlare_FULL">
+			<English>Supply Crate (12x Road flare)</English>
+			<German>Kiste (12x Bengalische Fackel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_HandChemRed_FULL">
+			<English>12x Chemlight (red)</English>
+			<German>12x Knicklicht (Rot)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_HandChemRed_FULL">
+			<English>Supply Crate (12x Chemlight red)</English>
+			<German>Kiste (12x Knicklicht Rot)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_HandChemGreen_FULL">
+			<English>12x Chemlight (green)</English>
+			<German>12x Knicklicht (Grün)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_HandChemGreen_FULL">
+			<English>Supply Crate (12x Chemlight green)</English>
+			<German>Kiste (12x Knicklicht Grün)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_HandChemBlue_FULL">
+			<English>12x Chemlight (blue)</English>
+			<German>12x Knicklicht (Blau)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_HandChemBlue_FULL">
+			<English>Supply Crate (12x Chemlight blue)</English>
+			<German>Kiste (12x Knicklicht Blau)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodRabbitCooked_FULL">
+			<English>12x Cooked rabbit</English>
+			<German>12x Gebratenes Hasenfleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodRabbitCooked_FULL">
+			<English>Supply Crate (12x rabbit)</English>
+			<German>Kiste (12x Hasenfleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodPumpkin_FULL">
+			<English>12x Pumpkin</English>
+			<German>12x Kürbis</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodPumpkin_FULL">
+			<English>Supply Crate (12x Pumpkin)</English>
+			<German>Kiste (12x Kürbis)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodPotatoRaw_FULL">
+			<English>12x Potato raw</English>
+			<German>12x rohe Kartoffel</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodPotatoRaw_FULL">
+			<English>Supply Crate (12x Potato raw)</English>
+			<German>Kiste (12x rohe Kartoffel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodMuttonCooked_FULL">
+			<English>12x Cooked mutton</English>
+			<German>12x Gebratenes Lammfleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodMuttonCooked_FULL">
+			<English>Supply Crate (12x mutton)</English>
+			<German>Kiste (12x Lammfleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodGoatCooked_FULL">
+			<English>12x Cooked goat</English>
+			<German>12x Gebratenes Ziegenfleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodGoatCooked_FULL">
+			<English>Supply Crate (12x Goat)</English>
+			<German>Kiste (12x Ziegenfleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodDogCooked_FULL">
+			<English>12x Cooked dog</English>
+			<German>12x Gebratenes Hundefleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodDogCooked_FULL">
+			<English>Supply Crate (12x dog)</English>
+			<German>Kiste (12x Hundefleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodChickenCooked_FULL">
+			<English>12x Cooked chicken</English>
+			<German>12x Gebratenes Hühnerfleisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodChickenCooked_FULL">
+			<English>Supply Crate (12x chicken)</English>
+			<German>Kiste (12x Hühnerfleisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodCarrot_FULL">
+			<English>12x Carrot</English>
+			<German>12x Karotte</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodCarrot_FULL">
+			<English>Supply Crate (12x Carrot)</English>
+			<German>Kiste (12x Karotte)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FoodBeefCooked_FULL">
+			<English>12x Cooked beef</English>
+			<German>12x Gebratenes Rindersteak</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FoodBeefCooked_FULL">
+			<English>Supply Crate (12x beef)</English>
+			<German>Kiste (12x Rindersteak)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FishCookedTuna_FULL">
+			<English>12x Cooked tuna</English>
+			<German>12x Gebratener Thunfisch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FishCookedTuna_FULL">
+			<English>Supply Crate (12x Tuna)</English>
+			<German>Kiste (12x Thunfisch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FishCookedTrout_FULL">
+			<English>12x Cooked steelhead</English>
+			<German>12x Gebratene Stahlkopfforelle</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FishCookedTrout_FULL">
+			<English>Supply Crate (12x Steelhead)</English>
+			<German>Kiste (12x Forelle)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_FishCookedSeaBass_FULL">
+			<English>12x Cooked seabass</English>
+			<German>12x Gebratener Wolfsbarsch</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_FishCookedSeaBass_FULL">
+			<English>Supply Crate (12x Seabass)</English>
+			<German>Kiste (12x Barsch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_string_FULL">
+			<English>12x String</English>
+			<German>12x Schnur</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_string_FULL">
+			<English>Supply Crate (12x String)</English>
+			<German>Kiste (12x Schnur)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_scrapelectronics_FULL">
+			<English>12x Scrap electronics</English>
+			<German>12x Elektronikschrott</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_scrapelectronics_FULL">
+			<English>Supply Crate (12x Scrap electronics)</English>
+			<German>Kiste (12x Elektronikschrott)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_rope_FULL">
+			<English>12x Rope</English>
+			<German>12x Seil</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_rope_FULL">
+			<English>Supply Crate (12x Rope)</English>
+			<German>Kiste (12x Seil)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_rag_FULL">
+			<English>12x Rag</English>
+			<German>12x Lumpen</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_rag_FULL">
+			<English>Supply Crate (12x Rag)</English>
+			<German>Kiste (12x Lumpen)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_pvc_box_FULL">
+			<English>12x PVC box</English>
+			<German>12x Plastikschachtel</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_pvc_box_FULL">
+			<English>Supply Crate (12x PVC box)</English>
+			<German>Kiste (12x Plastikschachtel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_nails_FULL">
+			<English>12x Box of nails</English>
+			<German>12x Schachtel mit Nägeln</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_nails_FULL">
+			<English>Supply Crate (12x Box of nails)</English>
+			<German>Kiste (12x Schachtel mit Nägeln)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_garlic_bulb_FULL">
+			<English>12x Garlic bulb</English>
+			<German>12x Knoblauchknolle</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_garlic_bulb_FULL">
+			<English>Supply Crate (12x Garlic bulb)</English>
+			<German>Kiste (12x Knoblauchknolle)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_floppywire_FULL">
+			<English>12x Floppywire</English>
+			<German>12x Flachbandkabel</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_floppywire_FULL">
+			<English>Supply Crate (12x Floppywire)</English>
+			<German>Kiste (12x Flachbandkabel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_feathers_FULL">
+			<English>12x Feathers</English>
+			<German>12x Federn</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_feathers_FULL">
+			<English>Supply Crate (12x Feathers)</English>
+			<German>Kiste (12x Federn)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_duct_tape_FULL">
+			<English>12x Duct Tape</English>
+			<German>12x Klebeband</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_duct_tape_FULL">
+			<English>Supply Crate (12x Duct Tape)</English>
+			<German>Kiste (12x Klebeband)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_d_battery_FULL">
+			<English>12x D battery</English>
+			<German>12x D-Batterien</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_d_battery_FULL">
+			<English>Supply Crate (12x D battery)</English>
+			<German>Kiste (12x D-Batterien)</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DESC_equip_aa_battery_FULL">
+			<English>12x AA battery</English>
+			<German>12x AA-Batterien</German>
+		</Key>
+		<Key ID="STR_EPOCH_BULK_DISP_equip_aa_battery_FULL">
+			<English>Supply Crate (12x AA battery)</English>
+			<German>Kiste (12x AA-Batterien)</German>
+		</Key>
+		
 		<Key ID="STR_EPOCH_SAFE">
 			<English>Safe</English>
 			<German>Tresor</German>
@@ -25715,10 +26140,26 @@
 			<Russian>Конопляное семечко</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HEMP_SEED">
-			<English>A few hemp seed.</English>
+			<English>A few hemp seeds.</English>
 			<German>Ein paar Hanfsamen.</German>
 			<Russian>Одно конопляное семечко пригодное для посева.</Russian>
 		</Key>
+		<Key ID="STR_CRAFT_NAME_TOBACCO_SEED">
+			<English>Bag of Tobacco Seeds</English>
+			<German>Säckchen Tabaksamen</German>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_TOBACCO_SEED">
+			<English>A few tobacco seeds.</English>
+			<German>Ein paar Tabaksamen.</German>
+		</Key>	
+		<Key ID="STR_CRAFT_NAME_BLACK_TEA_SEED">
+			<English>Bag of Black Tea Seeds</English>
+			<German>Säckchen Schwarzer Teesamen</German>
+		</Key>
+		<Key ID="STR_CRAFT_DESC_BLACK_TEA_SEED">
+			<English>A few black tea seeds.</English>
+			<German>Ein paar schwarzer Teesamen.</German>
+		</Key>		
 		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
 			<English>Hemp Plant</English>
 			<German>Hanfpflanze</German>
@@ -26161,6 +26602,14 @@
 			<German>Glühbirne: Wird zur Herstellung von Lampen benötigt. Sag nicht, du hättest keine in einer Scheune gefunden.</German>
 			<Russian>Лампочка: Используется в строительстве фонарного столба. Не говорите мне, что вы нашли это не в сарае.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN">
+			<English>Light Bulb (broken)</English>
+			<German>Glühbirne (kaputt)</German>
+		</Key>
+		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN_DESC">
+			<English>A broken lightbulb that is no longer usable.</English>
+			<German>Eine kaputte Glühbirne, welche für nichts mehr zu gebrauchen ist</German>
+		</Key>		
 		<Key ID="STR_EPOCH_ZOMBIEPARTS">
 			<English>Zombie Parts</English>
 			<German>Zombiefleisch</German>
@@ -32245,8 +32694,152 @@
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
+		</Key>	
+		<Key ID="STR_EPOCH_ITEM_NOTEBOOK">
+			<English>Notebook</English>
+		</Key>	
+		<Key ID="STR_EPOCH_ITEM_NOTEBOOK_DESC">
+			<English>A notebook in a good condition.</English>
+			<German>Ein Notebook, welches sich in einem guten Zustand befindet.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_NOTEBOOK_BROKEN">
+			<English>Notebook (broken)</English>
+			<German>Notebook (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_NOTEBOOK_BROKEN_DESC">
+			<English>A broken notebook that must be repaired.</English>
+			<German>Ein kaputtes Notebook, welches repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EPOCH_SMALL_TV">
+			<English>TV (small)</English>
+			<German>Fernseher (klein)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SMALL_TV_DESC">
+			<English>A small TV in a good condition.</English>
+			<German>Ein kleiner Fernseher, welcher sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SMALL_TV_BROKEN">
+			<English>TV (small, broken)</English>
+			<German>Fernseher (klein, kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SMALL_TV_BROKEN_DESC">
+			<English>A broken TV that must be repaired.</English>
+			<German>Ein kaputter Fernseher, welcher repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BIG_TV">
+			<English>TV (big)</English>
+			<German>Fernseher (groß)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BIG_TV_DESC">
+			<English>A big TV in a good condition.</English>
+			<German>Ein großer Fernseher, welcher sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BIG_TV_BROKEN">
+			<English>TV (big, broken)</English>
+			<German>Fernseher (groß, kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BIG_TV_BROKEN_DESC">
+			<English>A broken TV that must be repaired.</English>
+			<German>Ein kaputter Fernseher, welcher repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SATELLITE_PHONE">
+			<English>Satellite Phone</English>
+			<German>Satellitentelefon</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SATELLITE_PHONE_DESC">
+			<English>A satellite phone in a good condition.</English>
+			<German>Ein Satellitentelefon, welches sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SATELLITE_PHONE_BROKEN">
+			<English>Satellite Phone (broken)</English>
+			<German>Satellitentelefon (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SATELLITE_PHONE_BROKEN_DESC">
+			<English>A broken satellite phone that must be repaired.</English>
+			<German>Ein kaputtes Satellitentelefon, welches repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PC">
+			<English>PC</English>
+		</Key>	
+		<Key ID="STR_EPOCH_PC_DESC">
+			<English>A PC with monitor in a good condition.</English>
+			<German>Ein PC mit Monitor, welcher sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PC_BROKEN">
+			<English>PC (broken)</English>
+			<German>PC (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PC_BROKEN_DESC">
+			<English>A broken PC that must be repaired.</English>
+			<German>Ein kaputter PC, welcher repariert werden muss.</German>
 		</Key>		
-
+		<Key ID="STR_EPOCH_DESKTOP_RADIO">
+			<English>Desktop Radio</English>
+			<German>Stationsfunkgerät</German>
+		</Key>	
+		<Key ID="STR_EPOCH_DESKTOP_RADIO_DESC">
+			<English>A desktop radio in a good condition.</English>
+			<German>Ein Stationsfunkgerät, welches sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_DESKTOP_RADIO_BROKEN">
+			<English>Desktop Radio (broken)</English>
+			<German>Stationsfunkgerät (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_DESKTOP_RADIO_BROKEN_DESC">
+			<English>A broken desktop radio that must be repaired.</English>
+			<German>Ein kaputtes Stationsfunkgerät, welches repariert werden muss.</German>
+		</Key>
+		<Key ID="STR_EPOCH_RADIO_MUSIC1">
+			<English>Radio</English>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC1_DESC">
+			<English>A radio in a good condition.</English>
+			<German>Ein Radio, welches sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC1_BROKEN">
+			<English>Radio (broken)</English>
+			<German>Radio (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC1_BROKEN_DESC">
+			<English>A broken radio that must be repaired.</English>
+			<German>Ein kaputtes Radio, welches repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC2">
+			<English>Radio</English>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC2_DESC">
+			<English>A radio in a good condition.</English>
+			<German>Ein Radio, welches sich in einem guten Zustand befindet.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC2_BROKEN">
+			<English>Radio (broken)</English>
+			<German>Radio (kaputt)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_RADIO_MUSIC2_BROKEN_DESC">
+			<English>A broken radio that must be repaired.</English>
+			<German>Ein kaputtes Radio, welches repariert werden muss.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_METAL_BUCKET">
+			<English>Bucket</English>
+			<German>Eimer</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS">
+			<English>Suitcase with Diamonds</English>
+			<German>Koffer mit Diamanten</German>
+		</Key>
+		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS_DESC">
+			<English>A suitcase with many small diamonds.</English>
+			<German>Ein Koffer mit vielen kleinen Diamanten.</German>
+		</Key>			
+		<Key ID="STR_EPOCH_SUITCASE_BOMB">
+			<English>Suitcase Bomb</English>
+			<German>Kofferbombe</German>
+		</Key>
+		<Key ID="STR_EPOCH_SUITCASE_BOMB_DESC">
+			<English>A suitcase with a bomb inside.</English>
+			<German>Ein Koffer mit einer Bombe im Inneren.</German>
+		</Key>
+		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
