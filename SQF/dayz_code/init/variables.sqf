@@ -250,7 +250,6 @@ if (!isDedicated) then {
 	dayz_fishingInprogress = false;
 	NORRN_dropAction = -1;
 	dayz_dodge = false;
-	Dayz_constructionContext = [];
 	Dayz_freefall = [ time, 0, 0.1 ];
 	dayz_getoutTime = 0;
 	dayz_hitByTime = 0;
