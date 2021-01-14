@@ -42,6 +42,16 @@ class MetalFloor4x_DZ: ModularItems {
 	armor = 6000;
 	displayName = $STR_EPOCH_METALFLOOR4x;	
 	GhostPreview = "MetalFloor4x_Preview_DZ";
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch_v\base_building\floors\metal_floor_2x2_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
 };
 
 class DoorFrame_DZ: ModularItems {
