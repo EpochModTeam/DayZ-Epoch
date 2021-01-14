@@ -6,14 +6,12 @@ sched_security_init = {
 };
 
 sched_security = {
-	private ["_netid","_timeTrickCount","_idTrickCount","_time","_otime","_pid", "_quit", "_list"];
-
-	_netid = _this select 0;
-	_otime = _this select 1;
-	_idTrickCount = _this select 2;
-	_timeTrickCount = _this select 3;
-	_grp = _this select 4;
-	_time = time;
+	local _netid = _this select 0;
+	local _otime = _this select 1;
+	local _idTrickCount = _this select 2;
+	local _timeTrickCount = _this select 3;
+	local _grp = _this select 4;
+	local _time = time;
 
 	if (typeName player != "OBJECT") then {
 		PVDZ_sec_atp = format["WARNING typename error for play3r UID#%1", getPlayerUID player];
@@ -38,7 +36,7 @@ sched_security = {
 		};
 	};
 
-	_pid = netid player;
+	local _pid = netid player;
 	_idTrickCount = _idTrickCount * 0.8;
 	if (_pid != _netid) then {
 		_idTrickCount = _idTrickCount +1;
@@ -50,13 +48,13 @@ sched_security = {
 
 	if (isNull _grp) then { _grp = group ((entities 'FunctionsManager') select 0); };
 	if (!isNull _grp) then {
-		_list = units _grp;
+		local _list = units _grp;
 		if (count _list > 1) then {
-			_quit = false;
+			local _quit = false;
 			for "_i" from 2 to (count _list)-1 do {
-			    _u = (_list select _i);
+			    local _u = (_list select _i);
 			    if (!isNull _u) then {
-			        _pos = getPosATL _u;
+			        local _pos = getPosATL _u;
 			        PVDZ_sec_atp = format ["From play3r UID#%1: illegal gr0up m3mber %2 at %3,%4... Server may be compromised!", getPlayerUID player, typeOf _u, _pos select 0, _pos select 1];
 			        publicVariableServer "PVDZ_sec_atp";
 			        deleteVehicle _u;

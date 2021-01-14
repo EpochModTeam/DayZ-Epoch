@@ -10,8 +10,7 @@ sched_onEachFrame_init = {
 };
 
 sched_onEachFrame = {
-	private ["_ret"];
-	_ret = (1==0);
+	local _ret = (1==0);
 
 	if (diag_fpsmin < 10) then {
 		sched_ef_lowFPSctr = sched_ef_lowFPSctr +1;		

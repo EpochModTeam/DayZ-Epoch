@@ -4,13 +4,11 @@ sched_gui_init = { [false] };
 
 sched_gui = {
 	HIDE_FSM_VARS
-	private [ "_array", "_initDone", "_ui"];
+	local _initDone = _this select 0;
 
-	_initDone = _this select 0;
-
-	if ((!_initDone and !isNil 'Dayz_loginCompleted') and {(Dayz_loginCompleted)}) then {
+	if (!_initDone && !isNil 'Dayz_loginCompleted' && {Dayz_loginCompleted}) then {
 		if !(DZE_UI == 0) then {
-			_ui = call {
+			local _ui = call {
 				if (DZE_UI == 1) exitWith {"playerStatusGUI"};
 				if (DZE_UI == 2) exitWith {"playerStatusGUI_epoch"};
 				"playerStatusGUI_legacy";
@@ -28,7 +26,7 @@ sched_gui = {
 	//	diag_log [ diag_Ticktime, __FILE__, "waiting", _initDone,Dayz_loginCompleted];
 	//};
 	if (_initDone) then {
-		_array = player call world_surfaceNoise;
+		local _array = player call world_surfaceNoise;
 		dayz_surfaceNoise = _array select 1;
 		dayz_surfaceType = _array select 0;
 		call player_checkStealth;

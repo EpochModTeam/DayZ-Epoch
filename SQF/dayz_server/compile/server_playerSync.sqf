@@ -1,25 +1,18 @@
 #include "\z\addons\dayz_server\compile\server_toggle_debug.hpp"
 
-private ["_distanceFoot","_playerPos","_lastPos","_playerGear","_medical","_currentModel","_currentAnim",
-"_currentWpn","_muzzles","_array","_coins","_key","_globalCoins","_bankCoins","_playerBackp","_exitReason",
-"_backpack","_kills","_killsB","_killsH","_headShots","_humanity","_lastTime","_timeGross","_timeSince",
-"_timeLeft","_config","_onLadder","_isTerminal","_modelChk","_temp","_currentState","_character",
-"_magazines","_characterID","_charPos","_isInVehicle","_name","_inDebug","_newPos","_count","_maxDist","_relocate","_playerUID","_statsDiff"];
-//[player,array]
-
-_character = _this select 0;
-_magazines = _this select 1;
+local _character = _this select 0;
+local _magazines = _this select 1;
 local _dayz_onBack = _this select 2;
-_characterID = _character getVariable ["characterID","0"];
-_playerUID = getPlayerUID _character;
-_charPos = getPosATL _character;
-_isInVehicle = vehicle _character != _character;
-_timeSince = 0;
-_humanity = 0;
-_name = if (alive _character) then {name _character} else {"Dead Player"};
-_inDebug = (respawn_west_original distance _charPos) < 1500;
+local _characterID = _character getVariable ["characterID","0"];
+local _playerUID = getPlayerUID _character;
+local _charPos = getPosATL _character;
+local _isInVehicle = vehicle _character != _character;
+local _timeSince = 0;
+local _humanity = 0;
+local _name = if (alive _character) then {name _character} else {"Dead Player"};
+local _inDebug = (respawn_west_original distance _charPos) < 1500;
 
-_exitReason = call {
+local _exitReason = call {
 	if (isNil "_characterID") exitwith {("ERROR: Cannot Sync Character " + _name + " has nil characterID")}; //Unit is null
 	if (_inDebug) exitwith {format["INFO: Cannot Sync Character %1 near respawn_west %2. This is normal when relogging or changing clothes.",_name,_charPos]};
 	if (_characterID == "0") exitwith {("ERROR: Cannot Sync Character " + _name + " has no characterID")};
@@ -32,31 +25,32 @@ if (_exitReason != "none") exitWith {
 };
 
 //Check for player initiated updates
-_playerPos =	[];
-_playerGear =	[];
-_playerBackp =	[];
-_medical =		[];
-_distanceFoot =	0;
+local _playerPos = [];
+local _playerGear =	[];
+local _playerBackp = [];
+local _medical = [];
+local _distanceFoot = 0;
 
 //all getVariable immediately
-_globalCoins = _character getVariable ["globalMoney", -1];
-_bankCoins = _character getVariable ["bankMoney", -1];
-_coins = _character getVariable ["cashMoney", -1]; //should getting coins fail set the variable to an invalid value to prevent overwritting the in the DB
-_lastPos = _character getVariable ["lastPos",_charPos];
-_usec_Dead = _character getVariable ["USEC_isDead",false];
-_lastTime = _character getVariable ["lastTime",-1];
-_modelChk = 	_character getVariable ["model_CHK",""];
-_temp = round (_character getVariable ["temperature",100]);
-_lastMagazines = _character getVariable ["ServerMagArray",[[],""]];
+local _globalCoins = _character getVariable ["globalMoney", -1];
+local _bankCoins = _character getVariable ["bankMoney", -1];
+local _coins = _character getVariable ["cashMoney", -1]; //should getting coins fail set the variable to an invalid value to prevent overwritting the in the DB
+local _lastPos = _character getVariable ["lastPos",_charPos];
+local _usec_Dead = _character getVariable ["USEC_isDead",false];
+local _lastTime = _character getVariable ["lastTime",-1];
+local _modelChk = _character getVariable ["model_CHK",""];
+local _temp = round (_character getVariable ["temperature",100]);
+local _lastMagazines = _character getVariable ["ServerMagArray",[[],""]];
 //Get difference between current stats and stats at last sync
-_statsDiff = [_character,_playerUID] call server_getStatsDiff;
+local _statsDiff = [_character,_playerUID] call server_getStatsDiff;
 _humanity = _statsDiff select 0;
-_kills = _statsDiff select 1;
-_headShots = _statsDiff select 2;
-_killsH = _statsDiff select 3;
-_killsB = _statsDiff select 4;
+local _kills = _statsDiff select 1;
+local _headShots = _statsDiff select 2;
+local _killsH = _statsDiff select 3;
+local _killsB = _statsDiff select 4;
 
-_charPosLen = count _charPos;
+local _charPosLen = count _charPos;
+local _magTemp = [];
 
 if (!isNil "_magazines") then {
 	_playerGear = [weapons _character,_magazines,_dayz_onBack];
@@ -67,13 +61,13 @@ if (!isNil "_magazines") then {
 	if (count _magTemp > 0) then {
 		_magazines = [(magazines _character),20] call array_reduceSize;
 		{
-			_class = _x;
+			local _class = _x;
 			if (typeName _x == "ARRAY") then {
 				_class = _x select 0;
 			};
 			if (_class in _magazines) then {
-				_MatchedCount = {_compare = if (typeName _x == "ARRAY") then {_x select 0;} else {_x}; _compare == _class} count _magTemp;
-				_CountedActual = {_x == _class} count _magazines;
+				local _MatchedCount = {_compare = if (typeName _x == "ARRAY") then {_x select 0;} else {_x}; _compare == _class} count _magTemp;
+				local _CountedActual = {_x == _class} count _magazines;
 				if (_MatchedCount > _CountedActual) then {
 					_magTemp set [_forEachIndex, "0"];
 				};
@@ -100,7 +94,7 @@ if !((_charPos select 0 == 0) && (_charPos select 1 == 0)) then {
 };
 
 //Check player backpack each time sync runs
-_backpack = unitBackpack _character;
+local _backpack = unitBackpack _character;
 _playerBackp = [typeOf _backpack,getWeaponCargo _backpack,getMagazineCargo _backpack];
 
 if (!_usec_Dead) then {
@@ -112,23 +106,24 @@ _character addScore _kills;
 	Assess how much time has passed, for recording total time on server
 	Note "lastTime" is -1 after clothes change
 */
+local _timeLeft = 0;
 if (_lastTime == -1) then {
 	_character setVariable ["lastTime",diag_tickTime,false];
 } else {
-	_timeGross = (diag_tickTime - _lastTime);
+	local _timeGross = (diag_tickTime - _lastTime);
 	_timeSince = floor (_timeGross / 60);
 	_timeLeft = (_timeGross - (_timeSince * 60));
 };
 /*
 	Get character state details
 */
-_currentWpn = currentMuzzle _character;
-_currentAnim =	animationState _character;
-_config = configFile >> "CfgMovesMaleSdr" >> "States" >> _currentAnim;
-_onLadder = (getNumber (_config >> "onLadder")) == 1;
-_isTerminal = (getNumber (_config >> "terminal")) == 1;
+local _currentWpn = currentMuzzle _character;
+local _currentAnim = animationState _character;
+local _config = configFile >> "CfgMovesMaleSdr" >> "States" >> _currentAnim;
+local _onLadder = (getNumber (_config >> "onLadder")) == 1;
+local _isTerminal = (getNumber (_config >> "terminal")) == 1;
 //_wpnDisabled =	(getNumber (_config >> "disableWeapons")) == 1;
-_currentModel = typeOf _character;
+local _currentModel = typeOf _character;
 if (_currentModel == _modelChk) then {
 	_currentModel = "";
 } else {
@@ -152,14 +147,14 @@ if (count _this > 4) then { //calling from player_onDisconnect
 	};
 	if (_isInVehicle) then {
 		//if the player object is inside a vehicle lets eject the player
-		_relocate = ((vehicle _character isKindOf "Air") && (_charPos select 2 > 1.5));
+		local _relocate = ((vehicle _character isKindOf "Air") && (_charPos select 2 > 1.5));
 		_character action ["eject", vehicle _character];
 
 		// Prevent relog in parachute, heli or plane above base exploit to get inside
 		if (_relocate) then {
-			_count = 0;
-			_maxDist = 800;
-			_newPos = [_charPos, 80, _maxDist, 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
+			local _count = 0;
+			local _maxDist = 800;
+			local _newPos = [_charPos, 80, _maxDist, 10, 1, 0, 0, [], [_charPos,_charPos]] call BIS_fnc_findSafePos;
 
 			while {_newPos distance _charPos == 0} do {
 				_count = _count + 1;
@@ -168,7 +163,7 @@ if (count _this > 4) then { //calling from player_onDisconnect
 			};
 			_newPos set [2,0]; //findSafePos only returns two elements
 			_charPos = _newPos;
-			diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos.",_name,_playerUID];
+			diag_log format["%1(%2) logged out in air vehicle. Relocated to safePos %3 - %4.",_name,_playerUID,mapGridPosition _charPos,_charPos];
 		};
 	};
 };
@@ -184,14 +179,14 @@ if (_isInVehicle) then {
 	_currentWpn = "";
 } else {
 	if (typeName _currentWpn == "STRING") then {
-		_muzzles = getArray (configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
+		local _muzzles = getArray (configFile >> "cfgWeapons" >> _currentWpn >> "muzzles");
 		if (count _muzzles > 1) then {_currentWpn = currentMuzzle _character;};
 	} else {
 		//diag_log ("DW_DEBUG: _currentWpn: " + str(_currentWpn));
 		_currentWpn = "";
 	};
 };
-_currentState = [[_currentWpn,_currentAnim,_temp],[]];
+local _currentState = [[_currentWpn,_currentAnim,_temp],[]];
 
 //Reset timer
 if (_timeSince > 0) then {
@@ -203,7 +198,7 @@ if (_timeSince > 0) then {
 	Low priority code below this point where _character object is no longer needed and may be Null.
 */
 if (count _playerPos > 0) then {
-	_array = [];
+	local _array = [];
 	{
 		if (_x > dayz_minpos && _x < dayz_maxpos) then {_array set [count _array,_x];};
 	} forEach (_playerPos select 1);
@@ -211,7 +206,7 @@ if (count _playerPos > 0) then {
 };
 
 //Wait for HIVE to be free and send request
-_key = if (Z_SingleCurrency) then {
+local _key = if (Z_SingleCurrency) then {
 	str formatText["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:%17:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity,_coins]
 } else {
 	str formatText["CHILD:201:%1:%2:%3:%4:%5:%6:%7:%8:%9:%10:%11:%12:%13:%14:%15:%16:",_characterID,_playerPos,_playerGear,_playerBackp,_medical,false,false,_kills,_headShots,_distanceFoot,_timeSince,_currentState,_killsH,_killsB,_currentModel,_humanity]

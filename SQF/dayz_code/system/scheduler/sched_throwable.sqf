@@ -12,10 +12,8 @@ sched_throwable_init = {
 };
 
 sched_throwable = {
-	private ["_stance","_cur_muzz","_type", "_x"];
-	
 	if ((!isNil "player") and {(!isNull player)}) then {
-		_cur_muzz = currentMuzzle player;
+		local _cur_muzz = currentMuzzle player;
 		if (((!isNil "_cur_muzz") and {(_cur_muzz != "")}) AND {(0 == getNumber(configFile >> "CfgWeapons" >> _cur_muzz >> "type"))}) then {
 			if (sched_throwable_prevmuzz != _cur_muzz) then {
 				sched_throwable_prevmuzz = currentMuzzle player;
@@ -26,9 +24,9 @@ sched_throwable = {
 			};
 		};
 		if (abs(sched_throwable_time-diag_tickTime)<2) then {
-			_stance = toArray (animationState player);
+			local _stance = toArray (animationState player);
 			_stance = if ((!isNil "_stance") and {(count _stance>17)}) then {toString [_stance select 17]} else {""};
-			_type = 4096;
+			local _type = 4096;
 			switch _stance do {
 				case "p": { _type = 2; };
 				case "r": { _type = 1; };
