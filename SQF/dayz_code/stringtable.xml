@@ -14401,6 +14401,14 @@
 			<German>Infizierter Drogenhändler</German>
 			<Russian>Инфицированный Драгдилер</Russian>
 		</Key>
+		<Key ID="STR_ZNAME_BANDIT">
+			<English>Infected Bandit</English>
+			<German>Infizierter Bandit</German>
+		</Key>
+		<Key ID="STR_ZNAME_HERO">
+			<English>Infected Hero</English>
+			<German>Infizierter Held</German>
+		</Key>		
 	</Package>
 	<Package name="construction">
 		<Key ID="STR_BLD_name_ItemWorkBench">
