@@ -134,12 +134,6 @@ class Survivor2_DZ : Survivor_DZ {
 	model = "\dayz\characters\man_survivor";
 };
 
-class Survivor3_DZ : Survivor2_DZ {
-	model = "\dayz\characters\man_hero";
-	HiddenSelections[] = {"camo1", "camo2", "camo3"};
-	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa", "ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa", "ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
-};
-
 class Rocket_DZ: SoldierLight_Base_DZ { //BAF_Soldier_Officer_W
 	scope = 2;
 	displayName = "Rocket";
@@ -296,10 +290,7 @@ class Bandit1_DZ : SoldierLight_Base_DZ { //Normal black PMC vest bandit
 	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
 	HiddenSelections[] = {"camo"};
 	HiddenSelectionsTextures[] = {"ca\characters_pmc\frost\data\frost_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\Frost\Data\Frost_1_co.paa"",""\Ca\Characters_PMC\Frost\Data\Frost_2_co.paa"",""\Ca\Characters_PMC\Frost\Data\Frost_3_co.paa""] select floor random 3];";
-	};
+	
 	class Wounds
 	{
 		tex[] = {};
@@ -308,14 +299,20 @@ class Bandit1_DZ : SoldierLight_Base_DZ { //Normal black PMC vest bandit
 };
 
 class Bandit2_DZ: Bandit1_DZ { //German bright color camo bandit
-	scope = 2;
-	displayName = $STR_CHAR_2;
-	weapons[] = {"Throw","Put"};
 	model = "\ca\characters_E\GER\GER_rifleman";
-	portrait = "\Ca\characters_E\data\portraits\ger_soldier_CA";
-	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\dayz\textures\clothes\bandit_tex1_co.paa"};
-	class EventHandlers {};
+};
+
+class Bandit3_DZ: Bandit1_DZ {
+	hiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Frost\Data\Frost_1_co.paa"};
+};
+
+class Bandit4_DZ: Bandit1_DZ {
+	hiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Frost\Data\Frost_2_co.paa"};
+};
+
+class Bandit5_DZ: Bandit1_DZ {
+	hiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Frost\Data\Frost_3_co.paa"};
 };
 
 class GUE_Soldier_MG_DZ: SoldierLight_Base_DZ {
@@ -456,10 +453,6 @@ class TK_INS_Warlord_EP1_DZ: Survivor_DZ {
 	};
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_opfor02_1_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\LOC\Data\LOC_opfor02_1_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor02_2_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor02_3_co.paa""] select floor random 3]";
-	};
 };
 
 class TK_INS_Soldier_EP1_DZ: TK_INS_Warlord_EP1_DZ {
@@ -471,10 +464,16 @@ class TK_INS_Soldier_EP1_DZ: TK_INS_Warlord_EP1_DZ {
 		mat[] = {"CA\characters_E\LOC\Data\LOC_soldier01.rvmat","CA\characters_E\LOC\Data\W1_LOC_soldier01.rvmat","CA\characters_E\LOC\Data\W2_LOC_soldier01.rvmat"};
 	};	
 	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_opfor01_1_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\LOC\Data\LOC_opfor01_1_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor01_2_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor01_3_co.paa""] select floor random 3]";
-	};
+};
+
+class TK_INS_Soldier_EP2_DZ: TK_INS_Soldier_EP1_DZ {
+	displayName = $STR_EPOCH_SKINS_TAKISTANISOLDIER;
+	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_opfor01_2_co.paa"};
+};
+
+class TK_INS_Soldier_EP3_DZ: TK_INS_Soldier_EP1_DZ {
+	displayName = $STR_EPOCH_SKINS_TAKISTANISOLDIER;
+	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_opfor01_3_co.paa"};
 };
 	
 class CZ_Special_Forces_GL_DES_EP1_DZ: SoldierLight_Base_DZ {
@@ -508,11 +507,7 @@ class Soldier_Bodyguard_AA12_PMC_DZ: SoldierLight_Base_DZ {
 	model = "\Ca\Characters_PMC\Dixon\Dixon.p3d";
 	portrait = "\Ca\characters\data\portraits\comBarHead_civ_man_ca.paa";
 	HiddenSelections[] = {"camo1","camo2","camo3"};
-	HiddenSelectionsTextures[] = {"ca\characters_E\Civil\Harris\Data\european-man_01_co.paa","ca\characters_pmc\dixon\data\dix_co.paa","ca\characters_E\Delta\Data\DO_Equip_CO.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""ca\characters_pmc\dixon\data\european-man_02_co.paa"",""ca\characters_pmc\dixon\data\european-man_03_co.paa"",""ca\characters_pmc\dixon\data\european-man_04_co.paa"",""ca\characters_pmc\dixon\data\european-man_05_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [1,[""Ca\Characters_PMC\Dixon\Data\Dix_1_CO.paa"",""Ca\Characters_PMC\Dixon\Data\Dix_2_CO.paa"",""Ca\Characters_PMC\Dixon\Data\Dix_3_CO.paa"",""Ca\Characters_PMC\Dixon\Data\Dix_4_CO.paa"",""Ca\Characters_PMC\Dixon\Data\Dix_4_CO.paa""] select floor random 5]";
-	};
+	HiddenSelectionsTextures[] = {"ca\characters_pmc\dixon\data\european-man_03_co.paa","ca\characters_pmc\dixon\data\dix_co.paa","ca\characters_E\Delta\Data\DO_Equip_CO.paa"};
 	class Wounds
 	{
 		tex[] = {};
@@ -521,13 +516,9 @@ class Soldier_Bodyguard_AA12_PMC_DZ: SoldierLight_Base_DZ {
 };
 
 class Soldier_Sniper_PMC_DZ: Soldier_Bodyguard_AA12_PMC_DZ {
-	displayName = $STR_EPOCH_SKINS_MARKSMAN;
+	displayName = $STR_EPOCH_SKINS_HERO;
 	model = "\dayz\characters\man_hero";
 	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa","ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa","ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
-	class EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\PMC_soldier\Data\bauer_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_3_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_4_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\bauer_5_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [1,[""ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_1_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_2_co.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_3_co.paa""] select floor random 4]; (_this select 0) setObjectTexture [2,[""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_CO.paa"",""\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa""] select floor random 2]";
-	};
 };
 
 class Soldier_TL_PMC_DZ: Soldier_Bodyguard_AA12_PMC_DZ {
@@ -535,10 +526,6 @@ class Soldier_TL_PMC_DZ: Soldier_Bodyguard_AA12_PMC_DZ {
 	model = "\Ca\Characters_PMC\Gracenko\Gracenko.p3d";
 	HiddenSelections[] = {"camo"};
 	HiddenSelectionsTextures[] = {"ca\characters_pmc\gracenko\data\gracenko_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\Ca\Characters_PMC\Gracenko\Data\Gracenko_1_co.paa"",""\Ca\Characters_PMC\Gracenko\Data\Gracenko_2_co.paa"",""\Ca\Characters_PMC\Gracenko\Data\Gracenko_3_co.paa"",""\Ca\Characters_PMC\Gracenko\Data\Gracenko_4_co.paa""] select floor random 4];";
-	};
 	class Wounds
 	{
 		tex[] = {};
@@ -822,10 +809,6 @@ class TK_CIV_Takistani01_EP1_DZ: Survivor_DZ {
 		mat[] = {"CA\characters_E\civil\Tak_civil01\Data\Tak_civil01.rvmat","CA\characters_E\civil\Tak_civil01\Data\W1_Tak_civil01.rvmat","CA\characters_E\civil\Tak_civil01\Data\W2_Tak_civil01.rvmat"};
 	};
 	hiddenSelectionsTextures[] = {"\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_1_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_1_co.paa"",""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_2_co.paa"",""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_3_co.paa"",""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_4_co.paa"",""\CA\characters_E\civil\Tak_civil01\Data\Tak_civil01_5_co.paa""] select floor random 5]";
-	};	
 };
 
 class TK_CIV_Takistani03_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
@@ -836,10 +819,6 @@ class TK_CIV_Takistani03_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
 		mat[] = {"CA\characters_E\civil\Tak_civil03\Data\Tak_civil03.rvmat","CA\characters_E\civil\Tak_civil03\Data\W1_Tak_civil03.rvmat","CA\characters_E\civil\Tak_civil03\Data\W2_Tak_civil03.rvmat"};
 	};
 	hiddenSelectionsTextures[] = {"\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_1_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_1_co.paa"",""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_2_co.paa"",""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_3_co.paa"",""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_4_co.paa"",""\CA\characters_E\civil\Tak_civil03\Data\Tak_civil03_5_co.paa""] select floor random 5]";
-	};
 };
 
 class TK_CIV_Takistani04_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
@@ -850,10 +829,6 @@ class TK_CIV_Takistani04_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
 		mat[] = {"CA\characters_E\civil\Tak_civil04\Data\Tak_civil04.rvmat","CA\characters_E\civil\Tak_civil04\Data\W1_Tak_civil04.rvmat","CA\characters_E\civil\Tak_civil04\Data\W2_Tak_civil04.rvmat"};
 	};
 	hiddenSelectionsTextures[] = {"\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_1_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_1_co.paa"",""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_2_co.paa"",""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_3_co.paa"",""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_4_co.paa"",""\CA\characters_E\civil\Tak_civil04\Data\Tak_civil04_5_co.paa""] select floor random 5]";
-	};
 };
 
 class TK_CIV_Takistani06_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
@@ -864,10 +839,6 @@ class TK_CIV_Takistani06_EP1_DZ: TK_CIV_Takistani01_EP1_DZ {
 		mat[] = {"CA\characters_E\civil\Tak_civil06\Data\Tak_civil06.rvmat","CA\characters_E\civil\Tak_civil06\Data\W1_Tak_civil06.rvmat","CA\characters_E\civil\Tak_civil06\Data\W2_Tak_civil06.rvmat"};
 	};
 	hiddenSelectionsTextures[] = {"\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_1_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_1_co.paa"",""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_2_co.paa"",""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_3_co.paa"",""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_4_co.paa"",""\CA\characters_E\civil\Tak_civil06\Data\Tak_civil06_5_co.paa""] select floor random 5]";
-	};
 };
 
 class TK_INS_Soldier_AR_EP1_DZ: SoldierLight_Base_DZ {
@@ -882,10 +853,6 @@ class TK_INS_Soldier_AR_EP1_DZ: SoldierLight_Base_DZ {
 	};
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_opfor05_1_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\LOC\Data\LOC_opfor05_1_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor05_2_co.paa"",""\CA\characters_E\LOC\Data\LOC_opfor05_3_co.paa""] select floor random 3]";
-	};
 };
 
 class TK_GUE_Soldier_EP1_DZ: SoldierLight_Base_DZ {
@@ -900,10 +867,6 @@ class TK_GUE_Soldier_EP1_DZ: SoldierLight_Base_DZ {
 	};
 	hiddenSelections[] = {"Camo"};
 	hiddenSelectionsTextures[] = {"\CA\characters_E\LOC\Data\LOC_ind01_1_co.paa"};
-	class EventHandlers: EventHandlers
-	{
-		init = "(_this select 0) setObjectTexture [0,[""\CA\characters_E\LOC\Data\LOC_ind01_1_co.paa"",""\CA\characters_E\LOC\Data\LOC_ind01_2_co.paa"",""\CA\characters_E\LOC\Data\LOC_ind01_3_co.paa""] select floor random 3]";
-	};
 };
 
 class CZ_Soldier_SL_DES_EP1_DZ: SoldierHeavy_Base_DZ {

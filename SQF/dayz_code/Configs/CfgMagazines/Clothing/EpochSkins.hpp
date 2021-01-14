@@ -119,8 +119,8 @@ class Skin_Rocker4_DZ: SkinBase {
 };
 class Skin_Bandit1_DZ: SkinBase {
 	scope = 2;
-	displayName = $STR_EPOCH_SKINS_BANDITOUTFIT;
-	descriptionShort = $STR_EPOCH_SKINS_BANDITOUTFIT;
+	displayName = $STR_EPOCH_SKINS_BANDITOUTFIT1;
+	descriptionShort = $STR_EPOCH_SKINS_BANDITOUTFIT1;
 	sex = "male";
 	playerModel = "Bandit1_DZ";	
 };
@@ -130,6 +130,27 @@ class Skin_Bandit2_DZ: SkinBase {
 	descriptionShort = $STR_EPOCH_SKINS_BANDITCAMO_DESC;
 	sex = "male";
 	playerModel = "Bandit2_DZ";	
+};
+class Skin_Bandit3_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_BANDITOUTFIT2;
+	descriptionShort = $STR_EPOCH_SKINS_BANDITOUTFIT2;
+	sex = "male";
+	playerModel = "Bandit3_DZ";	
+};
+class Skin_Bandit4_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_BANDITOUTFIT3;
+	descriptionShort = $STR_EPOCH_SKINS_BANDITOUTFIT3;
+	sex = "male";
+	playerModel = "Bandit4_DZ";	
+};
+class Skin_Bandit5_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_BANDITOUTFIT4;
+	descriptionShort = $STR_EPOCH_SKINS_BANDITOUTFIT4;
+	sex = "male";
+	playerModel = "Bandit5_DZ";	
 };
 class Skin_GUE_Soldier_MG_DZ: SkinBase {
 	scope = 2;
@@ -238,10 +259,24 @@ class Skin_TK_INS_Warlord_EP1_DZ: SkinBase {
 };
 class Skin_TK_INS_Soldier_EP1_DZ: SkinBase {
 	scope = 2;
-	displayName = $STR_EPOCH_SKINS_TAKISTANISOLDIER;
-	descriptionShort = $STR_EPOCH_SKINS_TAKISTANISOLDIER;
+	displayName = $STR_EPOCH_SKINS_TAKISTANISOLDIER1;
+	descriptionShort = $STR_EPOCH_SKINS_TAKISTANISOLDIER1;
 	sex = "male";
 	playerModel = "TK_INS_Soldier_EP1_DZ";	
+};
+class Skin_TK_INS_Soldier_EP2_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_TAKISTANISOLDIER2;
+	descriptionShort = $STR_EPOCH_SKINS_TAKISTANISOLDIER2;
+	sex = "male";
+	playerModel = "TK_INS_Soldier_EP2_DZ";	
+};
+class Skin_TK_INS_Soldier_EP3_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_TAKISTANISOLDIER3;
+	descriptionShort = $STR_EPOCH_SKINS_TAKISTANISOLDIER3;
+	sex = "male";
+	playerModel = "TK_INS_Soldier_EP3_DZ";	
 };
 class Skin_CZ_Special_Forces_GL_DES_EP1_DZ: SkinBase {
 	scope = 2;
@@ -294,8 +329,8 @@ class Skin_Graves_Light_DZ: SkinBase {
 };
 class Skin_Soldier_Sniper_PMC_DZ: SkinBase {
 	scope = 2;
-	displayName = $STR_EPOCH_SKINS_MARKSMAN;
-	descriptionShort = $STR_EPOCH_SKINS_MARKSMAN;
+	displayName = $STR_EPOCH_SKINS_HERO;
+	descriptionShort = $STR_EPOCH_SKINS_HERO;
 	sex = "male";
 	playerModel = "Soldier_Sniper_PMC_DZ";	
 };
