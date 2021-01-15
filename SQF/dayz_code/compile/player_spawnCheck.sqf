@@ -1,11 +1,10 @@
-private ["_zeds","_isWreck","_looted","_zombied","_doNothing","_spawnZedRadius","_serverTime","_age","_position","_radius","_inVehicle","_Controlledzeddivided","_nearby","_type","_config","_canSpawn","_dis","_checkLoot","_islocal","_bPos","_zombiesNum","_vehicle"];
-_age = -1;
-_position = [player] call fnc_getPos;
-_radius = 200; // distance from player to perform checks.
-_spawnZedRadius = 20;
+local _age = -1;
+local _position = [player] call fnc_getPos;
+local _radius = 200; // distance from player to perform checks.
+local _spawnZedRadius = 20;
 
 // Current zombies
-_zeds = entities "zZombie_Base";
+local _zeds = entities "zZombie_Base";
 dayz_currentGlobalZombies = count _zeds;
 dayz_spawnZombies = 0;
 dayz_CurrentNearByZombies = 0;
@@ -23,12 +22,12 @@ dayz_maxControlledZombies = dayz_maxLocalZombies;  // This variable is also used
 dayz_currentWeaponHolders = count (_position nearObjects ["ReammoBox",_radius]);
 
 // In vehicle check
-_vehicle = vehicle player;
-_inVehicle = (_vehicle != player);
+local _vehicle = vehicle player;
+local _inVehicle = (_vehicle != player);
+local _doNothing = false;
 
-_doNothing = false;
 if (_inVehicle) then {
-    _Controlledzeddivided = 0;
+    local _Controlledzeddivided = 0;
     //exit if too fast
     if ((speed _vehicle) > 25) exitwith {_doNothing = true;};
 
@@ -96,27 +95,28 @@ if (_doNothing) exitWith {};
 
 // nearObjects is faster than nearestObjects when sorting by distance isn't needed
 // "Building" includes House and all of its child classes (Crashsite, IC_Fireplace1, IC_Tent, etc.)
-_nearby = _position nearObjects ["Building",_radius];
+local _nearby = _position nearObjects ["Building",_radius];
 dayz_spawnZombies = dayz_spawnZombies max floor(dayz_maxControlledZombies*.8);
 if (dayz_spawnZombies > 0) then { _spawnZedRadius = _spawnZedRadius * 3;};
 
 //Spawn Zeds & loot in buildings
-_serverTime = serverTime; // Get the current time once per cycle.
+local _serverTime = serverTime; // Get the current time once per cycle.
 {
-    _type = typeOf _x;
-    _config = missionConfigFile >> "CfgLoot" >> "Buildings" >> _type;
-    _canSpawn = isClass (_config);
+    local _type = typeOf _x;
+    local _config = missionConfigFile >> "CfgLoot" >> "Buildings" >> _type;
+    local _canSpawn = isClass (_config);
 
     if (_canSpawn) then {
-	    _dis = _x distance player;
-		_islocal = _x getVariable ["", false]; // object created locally via TownGenerator.
+	    local _dis = _x distance player;
+		local _islocal = _x getVariable ["", false]; // object created locally via TownGenerator.
 
 		//Loot
 		if (dayz_currentWeaponHolders < dayz_maxMaxWeaponHolders) then { // Check this first
-			_checkLoot = (count (getArray (_config >> "lootPos"))) > 0;
-			if ((_dis < 125) && {_dis > 15} && {!_inVehicle} && {_checkLoot}) then {
-				_looted = (_x getVariable ["looted",_serverTime]);
-				_age = _serverTime - _looted; // if age is zero then the building hasn't been looted before.
+			local _checkLoot = (count (getArray (_config >> "lootPos"))) > 0;
+			if (!_inVehicle && {(_dis < 125) && (_dis > 15) && _checkLoot}) then {
+				local _looted = (_x getVariable ["looted",_serverTime]);
+				local _age = _serverTime - _looted; // if age is zero then the building hasn't been looted before.
+				
 				if ((_age == 0) || {_age > getNumber(_config >> "lootRefreshTimer")}) then {
 					_x setVariable ["looted",_serverTime,!_islocal];
 					[_x,_type,_config] call building_spawnLoot;
@@ -127,12 +127,14 @@ _serverTime = serverTime; // Get the current time once per cycle.
     //Zeds
 		if (getNumber(_config >> "zombieChance") > 0) then {
 			if (_dis > _spawnZedRadius) then {
-				_zombied = (_x getVariable ["zombieSpawn",_serverTime]);
-				_age = _serverTime - _zombied;
+				local _zombied = (_x getVariable ["zombieSpawn",_serverTime]);
+				local _age = _serverTime - _zombied;
 				if ((_age == 0) || {_age > 300}) then {
 					//Make sure crash sites always spawn Zeds
-					_isWreck = _x isKindOf "CrashSite";
-					_bPos = getPosATL _x;
+					local _isWreck = _x isKindOf "CrashSite";
+					local _bPos = getPosATL _x;
+					local _zombiesNum = 0;
+					
 					if (!_isWreck) then {
 						if ((dayz_spawnZombies < dayz_maxControlledZombies) && {dayz_CurrentNearByZombies < dayz_maxNearByZombies} && {dayz_currentGlobalZombies < dayz_maxGlobalZeds}) then {
 							_zombiesNum = count (_bPos nearEntities ["zZombie_Base",(((sizeOf _type) * 2) + 10)]);

@@ -26,6 +26,27 @@ class WoodFloor_DZ: ModularItems {
 		};
 	};
 };
+
+class WoodFloorStairs_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5,-2.5};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
+	armor = 1000;
+	displayName = $STR_EPOCH_WOODFLOORSTAIRS;
+	maintainBuilding[] = {{"PartWoodLumber",4}};
+	GhostPreview = "Wood_Floor_Stairs_Preview_DZ";
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_floor.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};	
+};
+
 class WoodFloorHalf_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,4,0};
@@ -46,6 +67,7 @@ class WoodFloorHalf_DZ: ModularItems {
 		};
 	};
 };
+
 class WoodFloorQuarter_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,4,0};
@@ -84,7 +106,7 @@ class WoodTriangleFloor_DZ: ModularItems {
 	armor = 1000;
 	displayName = $STR_EPOCH_FLOORCEILING4x;
 	maintainBuilding[] = {{"PartWoodLumber",2}};
-	GhostPreview = "WoodTriangleFloor_Preview_DZ";
+	GhostPreview = "WoodTriangleFloor_Preview_DZ";	
 };
 
 class WoodLargeWall_DZ: ModularItems {
@@ -128,6 +150,7 @@ class WoodLargeWallDoor_DZ: ModularItems {
 		};
 	};
 };
+
 class WoodLargeWallWin_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,1.5,0};
@@ -168,6 +191,7 @@ class WoodSmallWall_DZ: ModularItems {
 		};
 	};
 };
+
 class WoodSmallWallThird_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,1.5,0};
@@ -188,6 +212,7 @@ class WoodSmallWallThird_DZ: ModularItems {
 		};
 	};
 };
+
 class WoodSmallWallWin_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,1.5,0};
@@ -207,6 +232,7 @@ class WoodSmallWallWin_DZ: ModularItems {
 		};
 	};
 };
+
 class WoodSmallWallDoor_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,1.5,0};
@@ -236,6 +262,37 @@ class WoodTriangleWall_DZ: ModularItems {
 	displayName = $STR_EPOCH_TRIANGLE_WOODWALL;
 	GhostPreview = "Wood_Triangle_Wall_Preview_DZ";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};	
+};
+
+class WoodGateFrame_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3,0};
+	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage_frame.p3d";
+	armor = 2800;
+	displayName = $STR_EPOCH_WOODGATEFRAME;
+	maintainBuilding[] = {{"PartWoodLumber",4}};
+	upgradeBuilding[] = {"Land_DZE_WoodGate",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
+	GhostPreview = "WoodGate_Preview_DZ";
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
 };
 
 class WoodStairs_DZ: ModularItems {
@@ -270,16 +327,6 @@ class WoodStairsSans_DZ: ModularItems {
 	GhostPreview = "WoodStairsSans_Preview_DZ";
 };
 
-class WoodFloorStairs_DZ: ModularItems {
-	scope = 2;
-	offset[] = {0,5,-2.5};
-	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
-	armor = 1000;
-	displayName = $STR_EPOCH_WOODFLOORSTAIRS;
-	maintainBuilding[] = {{"PartWoodLumber",4}};
-	GhostPreview = "Wood_Floor_Stairs_Preview_DZ";
-};
-
 class WoodLadder_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,1.5,0};
@@ -309,25 +356,4 @@ class WoodPillar_DZ: ModularItems {
 	displayName = $STR_EPOCH_WOODPILLAR;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "Wood_Pillar_Preview_DZ";
-};
-
-class WoodGateFrame_DZ: ModularItems {
-	scope = 2;
-	offset[] = {0,3,0};
-	model = "\z\addons\dayz_epoch_v\base_building\wood\high_wood_garage\high_wood_garage_frame.p3d";
-	armor = 2800;
-	displayName = $STR_EPOCH_WOODGATEFRAME;
-	maintainBuilding[] = {{"PartWoodLumber",4}};
-	upgradeBuilding[] = {"Land_DZE_WoodGate",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"PartWoodLumber",2},{"equip_nails",1}}};
-	GhostPreview = "WoodGate_Preview_DZ";
-	class DestructionEffects : DestructionEffects {
-		class Ruin1 {
-			simulation = "ruin";
-			type = "\z\addons\dayz_epoch\models\wood_wreck_frame.p3d";
-			position = "";
-			intensity = 1;
-			interval = 1;
-			lifeTime = 1;
-		};
-	};
 };

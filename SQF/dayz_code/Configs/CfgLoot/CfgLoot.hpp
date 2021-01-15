@@ -57,6 +57,8 @@ class CfgLoot
 		#include "Groups\Zombies\Apo.hpp" //DZE
 		#include "Groups\Zombies\DrugDealer.hpp" //DZE
 		#include "Groups\Zombies\Prisoner.hpp" //DZE
+		#include "Groups\Zombies\Hero.hpp" //DZE
+		#include "Groups\Zombies\Bandit.hpp" //DZE
 	};
 	
 	class Buildings

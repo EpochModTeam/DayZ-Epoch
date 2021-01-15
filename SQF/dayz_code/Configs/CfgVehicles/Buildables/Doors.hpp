@@ -504,6 +504,16 @@ class Land_DZE_WoodGate: Land_DZE_WoodDoor_Base {
 			statement = "this animate [""Open_door"", 0];this animate [""Open_doorR"", 0];";
 		};
 	};
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
 };
 
 class Land_DZE_WoodGateLocked: Land_DZE_WoodDoorLocked_Base {
@@ -570,6 +580,16 @@ class Land_DZE_WoodGateLocked: Land_DZE_WoodDoorLocked_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
 		};
 	};
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
 };
 
 class Land_DZE_WoodOpenTopGarageDoor: Land_DZE_WoodDoor_Base {
@@ -609,6 +629,16 @@ class Land_DZE_WoodOpenTopGarageDoor: Land_DZE_WoodDoor_Base {
 			displayName = $STR_DN_OUT_C_DOOR;
 			condition = "this animationPhase ""doorl"" >= 0.5";
 			statement = "this animate [""doorl"", 0];this animate [""doorR"", 0];";
+		};
+	};
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
 		};
 	};
 };
@@ -674,6 +704,16 @@ class Land_DZE_WoodOpenTopGarageLocked: Land_DZE_WoodDoorLocked_Base {
 			displayName = $STR_EPOCH_DOORS_UNLOCK;
 			condition = "!keypadCancel and DZE_Lock_Door != (this getvariable['CharacterID','0'])";
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
+		};
+	};
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch\models\wood_wreck_third.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
 		};
 	};
 };
@@ -1218,7 +1258,32 @@ class Door_DZ: CinderWallDoor_DZ_Base {
 			statement = "this animate [""Open_door"", 0]";
 		};
 	};	
-	class DestructionEffects {};
+	class DestructionEffects {
+		class Sound {
+			simulation = "sound";
+			type = "DestrHouse";
+			position = "destructionEffect1";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 0.05;
+		};
+		class DestroyPhase1 {
+			simulation = "destroy";
+			type = "DelayedDestruction";
+			lifeTime = 2.5;
+			position = "";
+			intensity = 1;
+			interval = 1;
+		};
+		class DamageAround1 {
+			simulation = "damageAround";
+			type = "DamageAroundHouse";
+			position = "";
+			intensity = 0.1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
 };
 
 class DoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
@@ -1278,7 +1343,32 @@ class DoorLocked_DZ: CinderWallDoorLocked_DZ_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
 		};
 	};
-	class DestructionEffects {};
+	class DestructionEffects {
+		class Sound {
+			simulation = "sound";
+			type = "DestrHouse";
+			position = "destructionEffect1";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 0.05;
+		};
+		class DestroyPhase1 {
+			simulation = "destroy";
+			type = "DelayedDestruction";
+			lifeTime = 2.5;
+			position = "";
+			intensity = 1;
+			interval = 1;
+		};
+		class DamageAround1 {
+			simulation = "damageAround";
+			type = "DamageAroundHouse";
+			position = "";
+			intensity = 0.1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};
 };
 
 /*

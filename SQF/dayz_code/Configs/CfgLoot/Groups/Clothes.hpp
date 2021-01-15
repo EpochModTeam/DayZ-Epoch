@@ -1,6 +1,9 @@
 clothes[] = {
 	{Loot_MAGAZINE,	1,	Skin_Bandit1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Bandit2_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Bandit3_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Bandit4_DZ},
+	{Loot_MAGAZINE,	1,	Skin_Bandit5_DZ},
 	{Loot_MAGAZINE,	1,	Skin_BanditW1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_BanditW2_DZ},
 	{Loot_MAGAZINE,	1,	Skin_SurvivorWcombat_DZ},
@@ -211,6 +214,8 @@ militaryclothes[] = {
 	{Loot_MAGAZINE,	1,	Skin_Ins_Soldier_GL_DZ},
 	{Loot_MAGAZINE,	1,	Skin_GUE_Commander_DZ},
 	{Loot_MAGAZINE,	1,	Skin_TK_INS_Soldier_EP1_DZ},
+	{Loot_MAGAZINE,	1,	Skin_TK_INS_Soldier_EP2_DZ},
+	{Loot_MAGAZINE,	1,	Skin_TK_INS_Soldier_EP3_DZ},
 	{Loot_MAGAZINE,	1,	Skin_TK_INS_Warlord_EP1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_GUE_Soldier_MG_DZ},
 	{Loot_MAGAZINE,	1,	Skin_GUE_Soldier_Crew_DZ},

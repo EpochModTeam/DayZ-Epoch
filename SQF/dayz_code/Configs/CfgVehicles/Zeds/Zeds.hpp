@@ -1424,18 +1424,34 @@ class z_soldier_baf_w_soldier_w : z_soldier_baf_w_soldier {
 	hiddenSelectionsTextures[] = {"\ca\characters_W_baf\data\camo_dpm_co.paa","\ca\characters_W_baf\data\armour_dpm_co.paa","\ca\characters_W_baf\data\equip_dpm_co.paa"};
 };
 
-class z_soldier_pmc_soldier : z_soldier {
+class z_bodyguard1 : z_soldier {
 	displayName = $STR_ZNAME_BODYGUARD;
 	zombieLoot = ZombieBodyguard;
-	model = "\Ca\Characters_PMC\PMC_soldier\PMC_soldier.p3d";
+	model = "\Ca\Characters_PMC\Asano\Asano.p3d";
 	HiddenSelections[] = {"camo1","camo2","camo3"};
-	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa","ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa","ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
-	
+	HiddenSelectionsTextures[] = {"ca\characters_pmc\asano\data\tex1_co.paa","ca\characters_pmc\pmc_soldier\data\headgear_co.paa","ca\characters_pmc\asano\data\tex2_co.paa"};
+
 	class Wounds
 	{
 		tex[] = {};
-		mat[] = {"Ca\Characters_PMC\PMC_soldier\Data\acr_equip.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w1_acr_equip.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w2_acr_equip.rvmat","Ca\Characters_PMC\PMC_soldier\Data\Bauer.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w1_Bauer.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w2_Bauer.rvmat","Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w1_Bauer_Gear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w2_Bauer_Gear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\HeadGear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w1_HeadGear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w2_HeadGear.rvmat"};
+		mat[] = {"Ca\Characters_PMC\Asano\Data\tex1.rvmat","Ca\Characters_PMC\Asano\Data\w1_tex1.rvmat","Ca\Characters_PMC\Asano\Data\w2_tex1.rvmat","Ca\Characters_PMC\Asano\Data\tex2.rvmat","Ca\Characters_PMC\Asano\Data\w1_tex2.rvmat","Ca\Characters_PMC\Asano\Data\w2_tex2.rvmat"};
 	};
+};
+
+class z_bodyguard2 : z_bodyguard1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Asano\Data\tex1_1_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa","ca\characters_pmc\asano\data\tex2_1_co.paa"};
+};
+class z_bodyguard3 : z_bodyguard1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Asano\Data\tex1_2_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa","ca\characters_pmc\asano\data\tex2_co.paa"};
+};
+class z_bodyguard4 : z_bodyguard1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Asano\Data\tex1_3_co.paa","\ca\characters_pmc\pmc_soldier\data\headgear_co.paa","ca\characters_pmc\asano\data\tex2_1_co.paa"};
+};
+class z_bodyguard5 : z_bodyguard1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Asano\Data\tex1_4_co.paa","\ca\characters_pmc\pmc_soldier\data\headgear_co.paa","ca\characters_pmc\asano\data\tex2_co.paa"};
+};
+class z_bodyguard6 : z_bodyguard1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Asano\Data\tex1_5_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa","ca\characters_pmc\asano\data\tex2_co.paa"};
 };
 
 class z_soldier_pmc_engineer : z_soldier {
@@ -1973,4 +1989,59 @@ class z_dealer : zZombie_Base {
 		tex[] = {};
 		mat[] = {"ca\characters\heads\male\defaulthead\data\hhl.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds.rvmat","ca\characters\heads\male\defaulthead\data\hhl_wounds2.rvmat","sra_civilian\dealer\suit_bodysnake.rvmat","sra_civilian\dealer\suit_bodysnake_wound1.rvmat","sra_civilian\dealer\suit_bodysnake_wound2.rvmat"};
 	};
+};
+
+class z_bandit1 : zZombie_Base {
+	displayName = $STR_ZNAME_BANDIT;
+	zombieLoot = ZombieBandit;
+	model = "\dayz\characters\man_bandit";
+	HiddenSelections[] = {"camo"};
+	HiddenSelectionsTextures[] = {"ca\characters_pmc\frost\data\frost_co.paa"};
+	
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\Characters_PMC\Frost\Data\frost.rvmat","Ca\Characters_PMC\Frost\Data\w1_frost.rvmat","Ca\Characters_PMC\Frost\Data\w2_frost.rvmat"};
+	};	
+};
+class z_bandit2 : z_bandit1 {
+	model = "\ca\characters_E\GER\GER_rifleman";
+	hiddenSelectionsTextures[] = {"\dayz\textures\clothes\bandit_tex1_co.paa"};
+};
+
+class z_bandit3 : z_bandit1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Frost\Data\Frost_1_co.paa"};	
+};
+class z_bandit4 : z_bandit1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Frost\Data\Frost_2_co.paa"};	
+};
+class z_bandit5 : z_bandit1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\Frost\Data\Frost_3_co.paa"};	
+};
+
+class z_hero1 : zZombie_Base {
+	displayName = $STR_ZNAME_HERO;
+	zombieLoot = ZombieHero;
+	model = "\Ca\Characters_PMC\PMC_soldier\PMC_soldier.p3d";
+	HiddenSelections[] = {"camo1","camo2","camo3"};
+	HiddenSelectionsTextures[] = {"ca\characters_pmc\pmc_soldier\data\bauer_co.paa","ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa","ca\characters_pmc\pmc_soldier\data\headgear_co.paa"};
+
+	class Wounds
+	{
+		tex[] = {};
+		mat[] = {"Ca\Characters_PMC\PMC_soldier\Data\acr_equip.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w1_acr_equip.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w2_acr_equip.rvmat","Ca\Characters_PMC\PMC_soldier\Data\Bauer.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w1_Bauer.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w2_Bauer.rvmat","Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w1_Bauer_Gear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w2_Bauer_Gear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\HeadGear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w1_HeadGear.rvmat","Ca\Characters_PMC\PMC_soldier\Data\w2_HeadGear.rvmat"};
+	};	
+};
+
+class z_hero2 : z_hero1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\PMC_soldier\Data\bauer_2_co.paa","\ca\characters_pmc\pmc_soldier\data\bauer_gear_co.paa"};	
+};
+class z_hero3 : z_hero1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\PMC_soldier\Data\bauer_3_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_1_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_1_CO.paa"};	
+};
+class z_hero4 : z_hero1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\PMC_soldier\Data\bauer_4_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_2_co.paa"};	
+};
+class z_hero5 : z_hero1 {
+	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\PMC_soldier\Data\bauer_5_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_3_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_CO.paa"};	
 };

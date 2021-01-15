@@ -11,14 +11,11 @@ sched_antiTP_init = {
 };
 
 sched_antiTP = {
-	private ["_lastpos","_lastheight","_lasttime","_lastVehicle","_debug","_curpos","_distance","_curtime","_difftime",
-		"_curheight","_speed","_topSpeed","_terrainHeight","_safetyVehicle","_curPos"];
-
-	_lastpos = _this select 1;
-	_lastheight = _this select 2;
-	_lasttime = _this select 3;
-	_lastVehicle = _this select 4;
-	_debug = _this select 5;
+	local _lastpos = _this select 1;
+	local _lastheight = _this select 2;
+	local _lasttime = _this select 3;
+	local _lastVehicle = _this select 4;
+	local _debug = _this select 5;
 
 	if (typeName player == "OBJECT" && {(player in playableUnits) && (alive player)}) then {
 		if (count _lastpos != 3) then {
@@ -27,22 +24,22 @@ sched_antiTP = {
 			_lasttime = diag_ticktime;
 			_lastVehicle = vehicle player;
 		};
-		_curpos = getPosATL (vehicle player);
-		_distance = _lastpos distance _curpos;
-		_curtime = diag_ticktime;
-		_difftime = _curtime - _lasttime;
+		local _curpos = getPosATL (vehicle player);
+		local _distance = _lastpos distance _curpos;
+		local _curtime = diag_ticktime;
+		local _difftime = _curtime - _lasttime;
 
 		if ((_distance > 10) OR {(_difftime > 1)}) then {
-			_curheight = (ATLtoASL _curpos) select 2;
-			_speed = _distance / _difftime;
-			_topSpeed = 10;
+			local _curheight = (ATLtoASL _curpos) select 2;
+			local _speed = _distance / _difftime;
+			local _topSpeed = 10;
 
 			if (vehicle player != player) then {
 				_topSpeed = (getNumber (configFile >> "CfgVehicles" >> typeOf (vehicle player) >> "maxSpeed")) min 500;
 			};
 
-			_terrainHeight = getTerrainHeightASL [_curpos select 0, _curpos select 1];
-			_safetyVehicle = vehicle player;
+			local _terrainHeight = getTerrainHeightASL [_curpos select 0, _curpos select 1];
+			local _safetyVehicle = vehicle player;
 
 			if (_lastVehicle == vehicle player) then {
 				if ((_speed > _topSpeed) && (alive player) && ((driver (vehicle player) == player) or (isNull (driver (vehicle player)))) && (_debug distance _lastpos > 3000) && !((vehicle player == player) && (_curheight < _lastheight) && ((_curheight - _terrainHeight) > 1))) then {

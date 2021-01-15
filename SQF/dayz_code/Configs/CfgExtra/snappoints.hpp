@@ -15,9 +15,11 @@ class SnapBuilding {
 			"WoodFloorQuarter_DZ",
 			"WoodFloorHalf_DZ",
 			"WoodFloor_DZ",
+			"WoodTriangleFloor_DZ",
 			"WoodFloorStairs_DZ",
 			"WoodStairs_DZ",
 			"WoodStairsSans_DZ",
+			"WoodStairsRails_DZ",
 			"WoodSmallWallDoor_DZ",
 			"WoodSmallWall_DZ",
 			"WoodSmallWallWin_DZ",
@@ -27,6 +29,7 @@ class SnapBuilding {
 			"Land_DZE_LargeWoodDoor",
 			"WoodLargeWallWin_DZ",
 			"WoodLargeWallDoor_DZ",
+			"WoodTriangleWall_DZ",
 			"Land_DZE_GarageWoodDoor",
 			"Land_DZE_GarageWoodDoorLocked",
 			"Land_DZE_LargeWoodDoorLocked",
@@ -219,6 +222,20 @@ class SnapBuilding {
 		radius = 10;
 	};
 	class WoodFloor_DZ: WoodFloor_Preview_DZ {};
+	
+	class WoodTriangleFloor_DZ: FloorsWallsStairs {
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{0,-1.3,0.130,$STR_EPOCH_ACTION_SNAP_BACK},
+			{0,1.3,0.130,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{-1.3,0,0.130,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{1.3,0,0.130,$STR_EPOCH_ACTION_SNAP_RIGHT}
+		};
+		radius = 10;
+	};	
+	
+	class WoodTriangleFloor_Preview_DZ: WoodTriangleFloor_DZ {};
+	
 	class WoodFloorStairs_DZ: FloorsWallsStairs {
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
@@ -228,21 +245,22 @@ class SnapBuilding {
 			{2.48,0,3.14,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};		
 	};
-	class Wood_Floor_Stairs_Preview_DZ: WoodFloorStairs_DZ {};
+	class Wood_Floor_Stairs_Preview_DZ: WoodFloorStairs_DZ {};	
 	
 	class Stairs_DZE: FloorsWallsStairs {
 		points[] = {
-			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{1.56055,-0.78,1.5,$STR_EPOCH_ACTION_SNAP_BACK},
-			{1.56055,0.78,1.5,$STR_EPOCH_ACTION_SNAP_FRONT},
-			{1.73926,0.05,2.9,$STR_EPOCH_ACTION_SNAP_TOP},
-			{-1.73926,0.05,0,$STR_EPOCH_ACTION_SNAP_BOTTOM}
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_BOTTOM},
+			{0,3.65,3,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{0,1.8,0,$STR_EPOCH_ACTION_SNAP_BOTTOM},
+			{-0.81,1.8,1.5,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{0.78,1.8,1.5,$STR_EPOCH_ACTION_SNAP_RIGHT}			
 		};
 	};
 	class WoodStairs_DZ: Stairs_DZE {};
 	class WoodStairs_Preview_DZ: Stairs_DZE {};
 	class WoodStairsSans_Preview_DZ: Stairs_DZE {};
 	class WoodStairsSans_DZ: Stairs_DZE {};
+	class WoodStairsRails_DZ: Stairs_DZE {};
 
 	class WoodSmall_DZE: FloorsWallsStairs { // Small wood walls
 		points[] = {
@@ -285,6 +303,18 @@ class SnapBuilding {
 			{0,0,1.17,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
+	
+	class WoodTriangleWall_DZ: FloorsWallsStairs {
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{0,0,2.62,$STR_EPOCH_ACTION_SNAP_TOP},
+			{-1.12,0,1.5,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{1.12,0,1.5,$STR_EPOCH_ACTION_SNAP_RIGHT}
+		};
+		radius = 10;
+	};	
+	
+	class Wood_Triangle_Wall_Preview_DZ: WoodTriangleFloor_DZ {};
 	
 	class WoodSmallWallThird_DZ: WoodSmallWallThird_Preview_DZ{};
 	class WoodLargeWall_DZ: WoodLarge_DZE {};

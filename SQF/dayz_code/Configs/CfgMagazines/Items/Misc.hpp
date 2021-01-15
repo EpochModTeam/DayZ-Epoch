@@ -240,7 +240,7 @@ class ItemSuitcaseBomb : CA_Magazine
 	type = 256;
 };
 
-class ItemPlasicParts : CA_Magazine 
+class ItemPlasticParts : CA_Magazine 
 {
 	scope = 2;
 	count = 1;

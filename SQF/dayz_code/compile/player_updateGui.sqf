@@ -1,10 +1,9 @@
-private ["_combatVal","_ctrlCombatBorder","_ctrlCombat","_uiNumber","_bloodText","_blood","_bloodType","_rhFactor","_thirstLvl","_foodLvl","_tempImg","_tempText","_visual","_audible","_id","_rID","_color","_string","_humanity","_size","_friendlies","_rfriendlies","_rfriendlyTo","_distance","_targetControl","_flash","_foodVal","_thirstVal","_tempVal","_display","_ctrlBloodOuter","_ctrlFoodBorder","_ctrlThirstBorder","_ctrlTempBorder","_ctrlBlood","_ctrlBloodType","_ctrlBleed","_bloodVal","_ctrlFood","_ctrlThirst","_ctrlTemp","_ctrlEar","_ctrlEye","_ctrlFracture","_ctrlMuteBackground","_ctrlMuteIcon","_thirst","_food","_temp","_bloodLvl","_tempLvl","_bloodTestdone","_humanityTarget"];
 disableSerialization;
 
-_display = uiNamespace getVariable 'DAYZ_GUI_display';
+local _display = uiNamespace getVariable 'DAYZ_GUI_display';
 if (isNil "_display") exitWith {}; // not ready
 
-_flash = {
+local _flash = {
     if (ctrlShown _this) then {
         _this ctrlShow false;
     } else {
@@ -12,11 +11,20 @@ _flash = {
     };
 };
 
-_foodVal = 1 - (dayz_hunger / SleepFood);
-_thirstVal = 1 - (dayz_thirst / SleepWater);
-_tempVal = 1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));  // Normalise to [0,1]
-_bloodVal = r_player_blood / r_player_bloodTotal;
-_combatVal = if (player getVariable["combattimeout",0] >= diag_tickTime) then {0} else {1};
+local _foodVal = 1 - (dayz_hunger / SleepFood);
+local _thirstVal = 1 - (dayz_thirst / SleepWater);
+local _tempVal = 1 - ((dayz_temperatur - dayz_temperaturmin)/(dayz_temperaturmax - dayz_temperaturmin));  // Normalise to [0,1]
+local _bloodVal = r_player_blood / r_player_bloodTotal;
+local _combatVal = if (player getVariable["combattimeout",0] >= diag_tickTime) then {0} else {1};
+local _ctrlBloodOuter = 0;
+local _ctrlFoodBorder = 0;
+local _ctrlThirstBorder = 0;
+local _ctrlTempBorder = 0;
+local _ctrlCombatBorder = 0;
+local _ctrlCombatBG = 0;
+local _ctrlCombat = 0;
+local _ctrlEar = 0;
+local _ctrlEye = 0;
 
 if (DZE_UI in [1,3,4]) then { // White borders
 	_ctrlBloodOuter = _display displayCtrl 1200;
@@ -57,14 +65,14 @@ if (DZE_UI in [1,3]) then {
 	_ctrlEye = _display displayCtrl 1309;
 };
 
-_ctrlBlood = _display displayCtrl 1300;
-_ctrlBleed = _display displayCtrl 1303;
-_ctrlFood = _display displayCtrl 1301;
-_ctrlThirst = _display displayCtrl 1302;
-_ctrlTemp = _display displayCtrl 1306;
-_ctrlFracture = _display displayCtrl 1203;
-_ctrlMuteBackground = _display displayCtrl 1904;
-_ctrlMuteIcon = _display displayCtrl 1204;
+local _ctrlBlood = _display displayCtrl 1300;
+local _ctrlBleed = _display displayCtrl 1303;
+local _ctrlFood = _display displayCtrl 1301;
+local _ctrlThirst = _display displayCtrl 1302;
+local _ctrlTemp = _display displayCtrl 1306;
+local _ctrlFracture = _display displayCtrl 1203;
+local _ctrlMuteBackground = _display displayCtrl 1904;
+local _ctrlMuteIcon = _display displayCtrl 1204;
 
 if (dayz_soundMuted) then {
 	_ctrlMuteBackground ctrlShow true;
@@ -88,16 +96,16 @@ if (DZE_UI == 3) then { // Dark
 	_ctrlThirst ctrlSetTextColor [(Dayz_GUI_R + (0.3 * (1-_thirstVal))),(Dayz_GUI_G * _thirstVal),(Dayz_GUI_B * _thirstVal), 1];
 };
 
-_blood = "";
-_thirst = "";
-_food = "";
-_temp = "";
-_visualtext = "";
-_audibletext = "";
-_bloodLvl = 6 min (0 max (round((r_player_blood / 2) / 1000 + 0.49)));
-_thirstLvl = round(_thirstVal / 0.25);
-_foodLvl = round(_foodVal / 0.25);
-_tempLvl = round(dayz_temperatur);
+local _blood = "";
+local _thirst = "";
+local _food = "";
+local _temp = "";
+local _visualtext = "";
+local _audibletext = "";
+local _bloodLvl = 6 min (0 max (round((r_player_blood / 2) / 1000 + 0.49)));
+local _thirstLvl = round(_thirstVal / 0.25);
+local _foodLvl = round(_foodVal / 0.25);
+local _tempLvl = round(dayz_temperatur);
 
 /* //Debugging Stuff would be usefull
 diag_log format["DEBUG: bloodlvl: %1 r_player_blood: %2 bloodval: %3",_bloodLvl, r_player_blood, _bloodVal];
@@ -108,7 +116,7 @@ diag_log format["DEBUG: templvl: %1 dayz_temperatur: %2 tempval: %3",_tempLvl, d
 
 if (DZE_UI == 1) then { // Vanilla
 	//  Blood Regen & BloodLoss:
-	_uiNumber = call {
+	local _uiNumber = call {
 		if (r_player_bloodpersec <= -50) exitWith {-3};
 		if ((r_player_bloodpersec <= -25) && {r_player_bloodpersec > -50}) exitWith {-2};
 		if ((r_player_bloodpersec < 0) && {r_player_bloodpersec > -25}) exitWith {-1};
@@ -118,7 +126,7 @@ if (DZE_UI == 1) then { // Vanilla
 		0;
 	};
 
-	_bloodText = "\z\addons\dayz_code\gui\status\status_blood_border";
+	local _bloodText = "\z\addons\dayz_code\gui\status\status_blood_border";
 
 	if (r_player_infected) then {
 		_bloodText = call {
@@ -136,7 +144,7 @@ if (DZE_UI == 1) then { // Vanilla
 
 	_ctrlBloodOuter ctrlSetText _bloodText;
 	
-	_tempText = "\z\addons\dayz_code\gui\status\status_temp_border";
+	local _tempText = "\z\addons\dayz_code\gui\status\status_temp_border";
 	
 	_tempText = call {
 		if (r_player_temp_factor <= r_player_temp_min_factor) exitWith {_tempText + "_down3_ca.paa"};
@@ -150,16 +158,16 @@ if (DZE_UI == 1) then { // Vanilla
 
 	_ctrlTempBorder ctrlSetText _tempText;
 	
-	_bloodTestdone = player getVariable ["blood_testdone", false];
+	local _bloodTestdone = player getVariable ["blood_testdone", false];
 	if (_bloodTestdone) then {
-		_bloodType = player getVariable ["blood_type", "O"];
-		_rhFactor = if (player getVariable ["rh_factor", false]) then { "pos" } else { "neg" };
+		local _bloodType = player getVariable ["blood_type", "O"];
+		local _rhFactor = if (player getVariable ["rh_factor", false]) then { "pos" } else { "neg" };
 		_ctrlBloodType = _display displayCtrl 1310;
 		_ctrlBloodType ctrlSetText ("\z\addons\dayz_code\gui\status\status_blood_type_"+_bloodType+"_"+_rhFactor+"_ca.paa");
 	};
 };
 
-_path = if (DZE_UI == 1) then {"\z\addons\dayz_code\gui\status\"} else {"\z\addons\dayz_code\gui\status_epoch\"};
+local _path = if (DZE_UI == 1) then {"\z\addons\dayz_code\gui\status\"} else {"\z\addons\dayz_code\gui\status_epoch\"};
 
 if (_bloodLvl <= 0) then {
 	_blood = _path + "status_blood_inside_1_ca.paa";
@@ -176,7 +184,7 @@ if (_foodLvl < 0) then { _foodLvl = 0 };
 _food = _path + "status_food_inside_" + str(_foodLvl) + "_ca.paa";
 _ctrlFood ctrlSetText _food;
 
-_tempImg = call {
+local _tempImg = call {
 	if (_tempLvl >= 36) exitWith {4};
 	if (_tempLvl > 33 && {_tempLvl < 36}) exitWith {3};
 	if (_tempLvl >= 30 && {_tempLvl <= 33}) exitWith {2};
@@ -185,6 +193,8 @@ _tempImg = call {
 };
 _temp = _path + "status_temp_" + str(_tempImg) + "_ca.paa";
 _ctrlTemp ctrlSetText _temp;
+local _visual = 0;
+local _audible = 0;
 
 if (DZE_UI in [1,3]) then {
 	_visual = (dayz_disVisual / 185) min 1;
@@ -205,7 +215,7 @@ if (DZE_UI in [1,3]) then {
 };
 
 // Fracture/Broken Legs
-if !(canStand player) then { //&& !(ctrlShown _ctrlFracture) makes icon flash non-stop until leg is fixed
+if !(canStand player) then {
     _ctrlFracture ctrlShow true;
 } else {
     _ctrlFracture ctrlShow false;
@@ -263,18 +273,21 @@ if (r_player_injured) then {
 /*
 Opt-in tag system with friend tagging
 */
-_string = "";
-_humanityTarget = cursorTarget;
+local _string = "";
+local _humanityTarget = cursorTarget;
 if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTarget}) then {
 
-	_distance = player distance _humanityTarget;
+	local _distance = player distance _humanityTarget;
 
 	if (_distance < DZE_HumanityTargetDistance) then {
 		
-		_size = (1-(floor(_distance/5)*0.1)) max 0.1;
+		local _size = (1-(floor(_distance/5)*0.1)) max 0.1;
 
 		// Display name if player opt-in or if friend
-		_friendlies = player getVariable ["friendlies", []];
+		local _friendlies = player getVariable ["friendlies", []];
+		local _id = "";
+		local _rID = "";
+		
 		if (DZE_permanentPlot) then {
 			_id = dayz_playerUID;
 			_rID = getPlayerUID _humanityTarget;
@@ -282,8 +295,9 @@ if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTar
 			_id = dayz_characterID;
 			_rID = _humanityTarget getVariable ["CharacterID","0"];
 		};
-		_rfriendlies = _humanityTarget getVariable ["friendlies", []];
-		_rfriendlyTo = _humanityTarget getVariable ["friendlyTo", []];
+		local _rfriendlies = _humanityTarget getVariable ["friendlies", []];
+		local _rfriendlyTo = _humanityTarget getVariable ["friendlyTo", []];
+		local _color = "";
 
 		if ((_rID in _friendlies) && {_id in _rfriendlies}) then {
 
@@ -301,7 +315,7 @@ if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTar
 		} else {
 
 			// Humanity checks
-			_humanity = _humanityTarget getVariable ["humanity",0];
+			local _humanity = _humanityTarget getVariable ["humanity",0];
 
 			_color = "color='#ffffff'";
 			if(_humanity < -5000) then {
@@ -320,7 +334,7 @@ if (!isNull _humanityTarget && {isPlayer _humanityTarget} && {alive _humanityTar
 
 // update gui if changed
 if (dayz_humanitytarget != _string) then {
-	_targetControl = _display displayCtrl 1199;
+	local _targetControl = _display displayCtrl 1199;
 	_targetControl ctrlSetStructuredText (parseText _string);
 	dayz_humanitytarget = _string;
 };
@@ -329,14 +343,14 @@ if (dayz_humanitytarget != _string) then {
 if (Z_singleCurrency) then {
 	_display = uiNameSpace getVariable "ZSC_Money_Display";
 	if (isNil "_display") exitWith {}; // not ready
-	_ctrlZSC = _display displayCtrl 4900;
+	local _ctrlZSC = _display displayCtrl 4900;
 	_string = "";
 	if (Z_showCurrencyUI) then {
-		_cashAmt = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
+		local _cashAmt = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 		_string = format ["<t size='0.9'>%1 </t><img size='1.4' align='right' image='\z\addons\dayz_code\gui\zsc\coins.paa'/><br/>",[_cashAmt] call BIS_fnc_numberText];
 	};
 	if (Z_globalBanking && Z_showBankUI) then {
-		_bankAmt = player getVariable ["bankMoney",0];
+		local _bankAmt = player getVariable ["bankMoney",0];
 		_string = _string + format ["<t size='0.9'>%1 </t><img size='1.4' align='right' image='\z\addons\dayz_code\gui\zsc\bank.paa'/><br/>",[_bankAmt] call BIS_fnc_numberText];
 	};
 	_ctrlZSC ctrlSetStructuredText parseText _string;

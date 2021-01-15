@@ -223,6 +223,9 @@ class Category_10 {
 	class Skin_CamoWinter2W_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};	
 	class Skin_Bandit1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_Bandit2_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_Bandit3_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_Bandit4_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_Bandit5_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_BanditW1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_BanditW2_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_GUE_Commander_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
@@ -237,6 +240,8 @@ class Category_10 {
 	class Skin_GUE_Soldier_Crew_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_Ins_Soldier_GL_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_TK_INS_Soldier_EP1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_TK_INS_Soldier_EP2_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_TK_INS_Soldier_EP3_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_TK_INS_Warlord_EP1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_RU_Soldier_Crew_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_TK_INS_Soldier_AR_EP1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};

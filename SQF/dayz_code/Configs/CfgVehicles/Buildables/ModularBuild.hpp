@@ -34,6 +34,7 @@ class ModularItems: NonStrategic {
 	};
 };
 
+#include "ModularWrecks.hpp"	
 #include "ModularBuildMetal.hpp"
 #include "ModularBuildCinder.hpp"
 #include "ModularBuildWood.hpp"
