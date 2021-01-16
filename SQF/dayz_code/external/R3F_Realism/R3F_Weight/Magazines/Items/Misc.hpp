@@ -133,7 +133,7 @@ class ItemSuitcaseBomb
 {
 	weight = 8;
 };
-class ItemPlasicParts
+class ItemPlasticParts
 {
 	weight = 4;
 };

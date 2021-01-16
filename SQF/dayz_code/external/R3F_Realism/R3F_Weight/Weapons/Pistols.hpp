@@ -254,3 +254,15 @@ class DesertEagle_DZ
 { 	
 	weight = 3.0;
 };
+class DesertEagle_Gold_DZ
+{
+	weight = 5;
+};
+class DesertEagle_Silver_DZ
+{
+	weight = 4;
+};
+class DesertEagle_Modern_DZ
+{
+	weight = 3.2;
+};
