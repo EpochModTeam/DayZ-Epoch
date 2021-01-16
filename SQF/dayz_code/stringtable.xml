@@ -14408,7 +14408,7 @@
 		<Key ID="STR_ZNAME_HERO">
 			<English>Infected Hero</English>
 			<German>Infizierter Held</German>
-		</Key>		
+		</Key>
 	</Package>
 	<Package name="construction">
 		<Key ID="STR_BLD_name_ItemWorkBench">
@@ -29032,7 +29032,7 @@
 			<English>Bandit Outfit 4</English>
 			<Russian>Бандитская одежда 4</Russian>
 			<German>Banditen Kleidung 4</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITCAMO">
 			<English>Bandit Camo</English>
 			<Russian>Бандитский камуфляж</Russian>
@@ -29184,7 +29184,7 @@
 			<English>Takistani Soldier</English>
 			<German>Takistan Soldat</German>
 			<Russian>Такистанский солдат</Russian>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_SKINS_TAKISTANISOLDIER1">
 			<English>Takistani Soldier 1</English>
 			<German>Takistan Soldat 1</German>
@@ -31872,6 +31872,7 @@
 		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_SNAP_MSG">
 			<English>Snap / Pick up object.</English>
 			<German>Objekt snappen / aufnehmen.</German>
+			<Russian>Прикрепить / Открепить.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_ON">
 			<English>ON</English>
@@ -31997,114 +31998,142 @@
 		<Key ID="STR_ITEM_NAME_CROSSBOW_STOCK">
 			<English>Crossbow Stock</English>
 			<German>Armbrustschaft</German>
+			<Russian>Ложа арбалета</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_CROSSBOW_STOCK">
 			<English>You require a Crossbow String kit to craft this weapon.</English>
 			<German>Zum Herstellen einer Armbrust wird ein Armbrust-Selbstbau-Kit benötigt.</German>
+			<Russian>Необходима Тетива арбалета чтобы создать это оружие.</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_CROSSBOW">
 			<English>Craft Crossbow</English>
 			<German>Armbrust herstellen</German>
+			<Russian>Создать арбалет</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_NAILEDBASEBALLBAT">
 			<English>Craft Nailed Baseball Bat</English>
 			<German>Nagelkeule herstellen</German>
+			<Russian>Создать бейсбольную биту с гвоздями</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_BASEBALLBATBARBED">
 			<English>Craft Baseball Bat Barbed</English>
 			<German>Stacheldrahtkeule herstellen</German>
+			<Russian>Создать бейсбольную биту с колючкой</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_HERBALDRINK">
 			<English>Mix Herbal Drink</English>
 			<German>Kräutertrunk mixen</German>
+			<Russian>Приготовить травяной напиток</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_SEPSISBANDAGE">
 			<English>Craft Sepsis Bandage</English>
 			<German>Sepsisbandage herstellen</German>
+			<Russian>Создать обеззараживающий бинт</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_PACKAGEGAUZE">
 			<English>Unpack Gauze Packaged</English>
 			<German>Mullbindenpackung entpacken</German>
+			<Russian>Вскрыть упаковку марли</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_SPLINT">
 			<English>Craft Wooden Splint</English>
 			<German>Holzschiene herstellen</German>
+			<Russian>Создать деревянную шину</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_NAILS">
 			<English>Craft Nails</English>
 			<German>Nägel herstellen</German>
+			<Russian>Создать гвозди</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_CORRUGATEDSHEETS">
 			<English>Craft Corrugated Sheet</English>
 			<German>Wellblech herstellen</German>
+			<Russian>Создать гофрированный лист</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
 			<English>Needed items:</English>
 			<German>Benötigte Gegenstände:</German>
+			<Russian>Необходимые предметы:</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_NEEDED_TOOLS_SHOVEL_ETOOL">
 			<English>%1 or %2</English>
 			<German>%1 oder %2</German>
+			<Russian>%1 или %2</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_SHOVEL">
 			<English>Fix Shovel</English>
 			<German>Schaufel reparieren</German>
+			<Russian>Починить лопату</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_CROWBAR">
 			<English>Fix Crowbar</English>
 			<German>Brechstange reparieren</German>
+			<Russian>Починить ломик</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_ETOOL">
 			<English>Fix Entrenching Tool</English>
 			<German>Klappspaten reparieren</German>
+			<Russian>Починить сапёрную лопатку</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_FISHINGPOLE">
 			<English>Fix Fishing Pole</English>
 			<German>Angel reparieren</German>
+			<Russian>Починить удочку</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_NIGHTVISION">
 			<English>Fix Nightvision</English>
 			<German>Nachtsichtgerät reparieren</German>
+			<Russian>Починить ПНВ</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_BIONCULARVECTOR">
 			<English>Fix Rangefinder</English>
 			<German>Entfernungsmesser reparieren</German>
+			<Russian>Починить дальномер</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_RADIO">
 			<English>Fix Radio</English>
 			<German>Funkgerät reparieren</German>
+			<Russian>Починить рацию</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_GPS">
 			<English>Fix GPS</English>
 			<German>GPS reparieren</German>
+			<Russian>Починить GPS</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_HAMMER">
 			<English>Fix Hammer</English>
 			<German>Hammer reparieren</German>
+			<Russian>Починить молоток</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_SAW">
 			<English>Fix Handsaw</English>
 			<German>Handsäge reparieren</German>
+			<Russian>Починить пилу</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_FIX_SMARTPHONE">
 			<English>Fix Smartphone</English>
 			<German>Smartphone reparieren</German>
+			<Russian>Починить смартфон</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NV_FULL">
 			<English>NVG (Full Screen)</English>
 			<German>NVG (Vollbild)</German>
+			<Russian>ПНВ (Полноэкранный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NV_FULL_DESC">
 			<English>Full Screen Night Vision Goggles</English>
 			<German>Vollbild-Nachtsichtgerät</German>
+			<Russian>Полноэкранный прибор ночного видения.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_NV_FULL">
 			<English>Broken NVG (Full Screen)</English>
 			<German>Kaputtes NVG (Vollbild)</German>
+			<Russian>Сломанный ПНВ (Полноэкранный)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_BROKEN_NV_FULL_DESC">
 			<English>Damaged full screen night vision goggles that probably can be repaired.</English>
 			<German>Ein beschädigtes Vollbild-Nachtsichtgerät, das möglicherweise repariert werden kann.</German>
+			<Russian>Поврежденный полноэкранный ПНВ, который, вероятно, можно отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_KILLED_AT">
 			<English>Died at</English>
@@ -32157,341 +32186,426 @@
 		<Key ID="STR_ITEM_NAME_CEMENT_BAG">
 			<English>Cement Bag</English>
 			<German>Zementsack</German>
+			<Russian>Мешок цемента</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_CEMENT_BAG">
 			<English>A big bag filled with cement.</English>
 			<German>Ein großer Sack gefüllt mit Zement.</German>
+			<Russian>Большой мешок наполненный цементом.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_01">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_01">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_02">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_02">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_03">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_03">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_04">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_04">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_05">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_05">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_06">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_06">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_07">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_07">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_08">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_08">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_09">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_09">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_10">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_10">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_11">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_11">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_12">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_12">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_13">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_13">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_14">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_14">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_15">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_15">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_16">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_16">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_17">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_17">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_18">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_18">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_19">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_19">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_BLUEPRINT_20">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_BLUEPRINT_20">
 			<English>Blueprint</English>
 			<German>Bauplan</German>
+			<Russian>Чертёж</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_PILEOFBOOKS">
 			<English>Pile of books</English>
 			<German>Stapel Bücher</German>
+			<Russian>Стопка книг</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_PILEOFBOOKS">
 			<English>A pile with some different books.</English>
 			<German>Ein Stapel mit unterschiedlichen Büchern.</German>
+			<Russian>Стопка разных книг.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_PILEOFMEDBOOKS">
 			<English>Pile of medical books</English>
 			<German>Stapel Medizinbücher</German>
+			<Russian>Стопка медицинских книг</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_PILEOFMEDBOOKS">
 			<English>A pile with some different medical books.</English>
 			<German>Ein Stapel mit den verschiedensten Medizinbüchern.</German>
+			<Russian>Стопка разных книг по медицине.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_COOKINGTRIPOD">
 			<English>Cooking tripod</English>
 			<German>Schwenkgrill</German>
+			<Russian>Тренога</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_COOKINGTRIPOD">
 			<English>Cooking tripod</English>
 			<German>Schwenkgrill</German>
+			<Russian>Тренога для приготовления пищи над костром.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOGTAG">
 			<English>Dog Tag</English>
 			<German>Hundemarke</German>
+			<Russian>Жетон</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOGTAG_DESC">
 			<English>A dog tag from a fallen soldier.</English>
 			<German>Die Hundemarke eines gefallenen Soldaten.</German>
+			<Russian>Жетон погибшего солдата.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOGTAG_HERO">
 			<English>Hero Dog Tag</English>
 			<German>Hundemarke eines Helden</German>
+			<Russian>Жетон героя</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOGTAG_HERO_DESC">
 			<English>A dog tag from a killed hero. Perhaps it can be sold at the Bandit Trader.</English>
 			<German>Die Hundemarke eines getöteten Helden. Vielleicht kann die Marke beim Banditenhändler verkauft werden.</German>
+			<Russian>Жетон убитого героя. Возможно, его можно будет продать бандитскому торговцу.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOGTAG_BANDIT">
 			<English>Bandit Dog Tag</English>
 			<German>Hundemarke eines Banditen</German>
+			<Russian>Жетон бандита</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOGTAG_BANDIT_DESC">
 			<English>A dog tag from a killed bandit. Perhaps it can be sold at the Hero Trader.</English>
 			<German>Die Hundemarke eines getöteten Banditen. Vielleicht kann die Marke beim Heldenhändler verkauft werden.</German>
+			<Russian>Жетон убитого бандита. Возможно, его можно будет продать геройскому торговцу.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_INFECTED">
 			<English>Blood Bag (infected)</English>
 			<German>Blutkonserve (infiziert)</German>
+			<Russian>Пакет крови (заражённой)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_INFECTED_DESC">
 			<English>A blood bag filled with blood that looks strange.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut, welches komisch aussieht.</German>
+			<Russian>Пакет, наполненный кровью. Выглядит подозрительно.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_ZOMBIE">
 			<English>Zombie Blood</English>
 			<German>Zombieblut</German>
+			<Russian>Кровь зомби</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_ZOMBIE_DESC">
 			<English>A blood bag filled with blood from a zombie.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Zombies.</German>
+			<Russian>Пакет, наполненный кровью зомби.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_RABBIT">
 			<English>Rabbit Blood</English>
 			<German>Hasenblut</German>
+			<Russian>Кровь кролика</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_RABBIT_DESC">
 			<English>A blood bag filled with blood from a rabbit.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Hasen.</German>
+			<Russian>Пакет, наполненный кровью кролика.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_CHICKEN">
 			<English>Chicken Blood</English>
 			<German>Hühnerblut</German>
+			<Russian>Кровь куриная</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_CHICKEN_DESC">
 			<English>A blood bag filled with blood from a hen or a cock.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut einer Henne oder eines Hahns.</German>
+			<Russian>Пакет, наполненный куриной кровью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_DOG">
 			<English>Dog Blood</English>
 			<German>Hundeblut</German>
+			<Russian>Кровь собаки</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_DOG_DESC">
 			<English>A blood bag filled with blood from a dog.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Hundes.</German>
+			<Russian>Пакет, наполненный кровью собаки.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_COW">
 			<English>Cow Blood</English>
 			<German>Kuhblut</German>
+			<Russian>Кровь коровы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_COW_DESC">
 			<English>A blood bag filled with blood from a cow.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut einer Kuh.</German>
+			<Russian>Пакет, наполненный коровьей кровью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_BOAR">
 			<English>Boar Blood</English>
 			<German>Wildschweinblut</German>
+			<Russian>Кровь кабана</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_BOAR_DESC">
 			<English>A blood bag filled with blood from a boar.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Wildschweins.</German>
+			<Russian>Пакет, наполненный кровью кабана.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_GOAT">
 			<English>Goat Blood</English>
 			<German>Ziegenblut</German>
+			<Russian>Кровь козы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_GOAT_DESC">
 			<English>A blood bag filled with blood from a goat.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut einer Ziege.</German>
+			<Russian>Пакет, наполненный козлиной кровью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_SHEEP">
 			<English>Sheep Blood</English>
 			<German>Schafsblut</German>
+			<Russian>Кровь овцы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_SHEEP_DESC">
 			<English>A blood bag filled with blood from a sheep.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Schafes.</German>
+			<Russian>Пакет, наполненный овечьей кровью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WEIGHT">
 			<English>Weight</English>
 			<German>Gewicht</German>
+			<Russian>Вес</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_Name">
 			<English>Name</English>
+			<Russian>Имя</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_HEALTH">
 			<English>Health</English>
 			<German>Gesundheit</German>
+			<Russian>Здоровье</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_SURVIVED">
 			<English>Survived</English>
 			<German>Überlebt</German>
+			<Russian>Прожито</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_DAYS">
 			<English>Day(s)</English>
 			<German>Tag(e)</German>
+			<Russian>д.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_HOURS">
 			<English>Hour(s)</English>
 			<German>Stunde(n)</German>
+			<Russian>ч.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_MINUTES">
 			<English>Minute(s)</English>
 			<German>Minute(n)</German>
+			<Russian>м.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_SERVER_SETTINGS">
 			<English>Server Settings</English>
 			<German>Servereinstellungen</German>
+			<Russian>Настройки сервера</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_BASE">
 			<English>Indestructible Bases</English>
 			<German>Unzerstörbare Basen</German>
+			<Russian>Неразрушаемые базы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_PLOT">
 			<English>Plot Poles</English>
 			<German>Grundstücksmarkierungen</German>
+			<Russian>Строительные столбы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_BUILDINGLIMIT">
 			<English>Build Limit</English>
 			<German>Baulimit</German>
+			<Russian>Ограничение строительства</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_JOURNAL_PVE">
 			<English>PVE Mode</English>
 			<German>PVE-Modus</German>
+			<Russian>Режим PVE</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PVE_ACTIVE_CANNOT_CHECK_WALLET">
 			<English>You cannot check the wallet of another player who is not in your group while the PVE Mode is active!</English>
 			<German>Du kannst die Brieftasche eines anderen Spielers, der nicht in deiner Gruppe ist, nicht durchsuchen, solange der PVE Modus aktiv ist.</German>
+			<Russian>В PVE-режиме вы не можете проверять кошельки других игроков, не состоящих в вашей группе!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_LOWER_BRIDGE">
 			<English>Lower Drawbridge</English>
@@ -32614,460 +32728,576 @@
 		<Key ID="STR_EPOCH_STONEOVEN">
 			<English>Stone Oven</English>
 			<German>Steinofen</German>
+			<Russian>Каменная печь</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STONEOVEN_DESC">
 			<English>A small stone oven that can be used for cooking.</English>
 			<German>Ein kleiner Steinofen, welcher zum Kochen benutzt werden kann.</German>
+			<Russian>Небольшая каменная печь, которую можно использовать для приготовления пищи.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COMMODE">
 			<English>Commode</English>
 			<German>Kommode</German>
+			<Russian>Комод</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COMMODE_DESC">
 			<English>A small commode that looks nice and can hold a few items.</English>
 			<German>Eine kleine Kommode, welche schön aussieht und in der einige Gegenstände verstaut werden können.</German>
+			<Russian>Небольшой комод, который неплохо выглядит и в котором можно хранить несколько предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WARDROBE">
 			<English>Wardrobe</English>
 			<German>Kleiderschrank</German>
+			<Russian>Гардероб</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WARDROBE_DESC">
 			<English>A big wardrobe that can hold a few items.</English>
 			<German>Ein großer Kleiderschrank, in welchem einige Gegenstände verstaut werden können.</German>
+			<Russian>Большой гардероб, в котором можно хранить несколько предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FRIDGE">
 			<English>Fridge</English>
 			<German>Kühlschrank</German>
+			<Russian>Холодильник</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FRIDGE_DESC">
 			<English>A small fridge that can hold and cold a few items.</English>
 			<German>Ein kleiner Kühlschrank, in welchem einige Gegenstände gekühlt und verstaut werden können.</German>
+			<Russian>Небольшой холодильник, в котором можно хранить и охлаждать несколько предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WASHINGMACHINE">
 			<English>Washing Machine</English>
 			<German>Waschmaschine</German>
+			<Russian>Стиральная машина</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WASHINGMACHINE_DESC">
 			<English>A small washing machine that can wash and hold a few items.</English>
 			<German>Eine kleine Waschmaschine, in welcher gewaschen oder einige Gegenstände gelagert werden können.</German>
+			<Russian>Стиральная машина, которая стирает и в которой можно хранить несколько предметов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SERVERRACK">
 			<English>Server Rack</English>
 			<German>Serverschrank</German>
+			<Russian>Серверная стойка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SERVERRACK_DESC">
 			<English>A big server rack with many active server machines.</English>
 			<German>Ein großer Serverschrankmit vielen aktiven Servern.</German>
+			<Russian>Большая серверная стойка с рабочими серверами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ATM">
 			<English>ATM</English>
 			<German>Geldautomat</German>
+			<Russian>Банкомат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ATM_DESC">
 			<English>An ATM to deposit and withdraw currency.</English>
 			<German>Ein Geldautomat zum Abheben und Einzahlen einer Währung.</German>
+			<Russian>Банкомат для снятия и хранения денег.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ARMCHAIR">
 			<English>Armchair</English>
 			<German>Sessel</German>
+			<Russian>Кресло</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ARMCHAIR_DESC">
 			<English>A comfortable armchair that is a good place to hide some items secretly.</English>
 			<German>Ein gemütlicher Sessel, in welchem gut ein paar Gegenstände versteckt werden können.</German>
+			<Russian>Удобное кресло, хорошее место для тайника.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SOFA">
 			<English>Sofa</English>
+			<Russian>Диван</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SOFA_DESC">
 			<English>A comfortable sofa that is a good place to hide some items secretly.</English>
 			<German>Ein gemütliches Sofa, in welchem gut ein paar Gegenstände versteckt werden können.</German>
+			<Russian>Удобный диван, хорошее место для тайника.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ARCADE">
 			<English>Neo Geo Arcade</English>
 			<German>Neo Geo Spielautomat</German>
+			<Russian>Игровой автомат Neo Geo</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ARCADE_DESC">
 			<English>An Neo Geo Arcade to relax a bit.</English>
 			<German>Ein Neo Geo Spielautomat zum Entspannen.</German>
+			<Russian>Игровой автомат Neo Geo, можно немного расслабиться.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VENDINGMACHINE1">
 			<English>Old Vending-Machine</English>
 			<German>Alter Verkaufsautomat</German>
+			<Russian>Старый торговый автомат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VENDINGMACHINE1_DESC">
 			<English>An old vending-machine perhaps it still works.</English>
 			<German>Ein alter Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
+			<Russian>Старый торговый автомат, возможно еще работает.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VENDINGMACHINE2">
 			<English>Vending-Machine</English>
 			<German>Verkaufsautomat</German>
+			<Russian>Торговый автомат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VENDINGMACHINE2_DESC">
 			<English>A vending-machine perhaps it still works.</English>
 			<German>Ein Verkaufsautomat, welcher vielleicht noch funktioniert.</German>
+			<Russian>Торговый автомат, возможно еще работает.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGECRATE">
 			<English>Storage Crate</English>
 			<German>Lagerkiste</German>
+			<Russian>Ящик для хранения</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STORAGECRATE_DESC">
 			<English>A small wooden storage crate for small bases.</English>
 			<German>Eine kleine Lagerkiste, welche sehr gut für kleine Basen geeignet ist.</German>
+			<Russian>Небольшой деревянный ящик для хранения, который очень подходит для небольших баз.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK">
 			<English>Notebook</English>
+			<Russian>Ноутбук</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK_DESC">
 			<English>Notebook</English>
 			<German>Notebook</German>
+			<Russian>Ноутбук.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERPUMP">
 			<English>Water Pump</English>
 			<German>Wasserpumpe</German>
+			<Russian>Водяной насос</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERPUMP_DESC">
 			<English>Water Pump</English>
 			<German>Wasserpumpe</German>
+			<Russian>Водяной насос.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GREENHOUSE">
 			<English>Greenhouse</English>
 			<German>Gewächshaus</German>
+			<Russian>Теплица</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GREENHOUSE_DESC">
 			<English>Greenhouse</English>
 			<German>Gewächshaus</German>
+			<Russian>Теплица.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BED">
 			<English>Bed</English>
 			<German>Bett</German>
+			<Russian>Кровать</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BED_DESC">
 			<English>Bed</English>
 			<German>Bett</German>
+			<Russian>Кровать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TABLE">
 			<English>Table</English>
 			<German>Tisch</German>
+			<Russian>Стол</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TABLE_DESC">
 			<English>Table</English>
 			<German>Tisch</German>
+			<Russian>Стол.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAIR">
 			<English>Wood Chair</English>
 			<German>Holzhtuhl</German>
+			<Russian>Деревянный стул</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAIR_DESC">
 			<English>Wood Chair</English>
 			<German>Holzhtuhl</German>
+			<Russian>Деревянный стул.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_GREEN">
 			<English>Garage (green)</English>
 			<German>Garage (grün)</German>
+			<Russian>Гараж (зелёный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_GREEN_DESC">
 			<English>Garage (green)</English>
 			<German>Garage (grün)</German>
+			<Russian>Зелёный гараж.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_WHITE">
 			<English>Garage (white)</English>
 			<German>Garage (weiß)</German>
+			<Russian>Гараж (белый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_WHITE_DESC">
 			<English>Garage (white)</English>
 			<German>Garage (weiß)</German>
+			<Russian>Белый гараж.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_BROWN">
 			<English>Garage (brown)</English>
 			<German>Garage (braun)</German>
+			<Russian>Гараж (коричневый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_BROWN_DESC">
 			<English>Garage (brown)</English>
 			<German>Garage (braun)</German>
+			<Russian>Коричневый гараж.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_GREY">
 			<English>Garage (grey)</English>
 			<German>Garage (grau)</German>
+			<Russian>Гараж (серый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_GREY_DESC">
 			<English>Garage (grey)</English>
 			<German>Garage (grau)</German>
+			<Russian>Серый гараж.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_CIVIL">
 			<English>Helipad (Civil)</English>
 			<German>Helipad (Zivil)</German>
+			<Russian>Вертолётная площадка (Гражданская)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_CIVIL_DESC">
 			<English>Helipad (Civil)</English>
 			<German>Helipad (Zivil)</German>
+			<Russian>Вертолётная площадка (Гражданская).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_RESCUE">
 			<English>Helipad (Rescue)</English>
 			<German>Helipad (Hilfe)</German>
+			<Russian>Вертолётная площадка (Спасательная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_RESCUE_DESC">
 			<English>Helipad (Rescue)</English>
 			<German>Helipad (Hilfe)</German>
+			<Russian>Вертолётная площадка (Спасательная).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_ARMY">
 			<English>Helipad (Army)</English>
 			<German>Helipad (Militär)</German>
+			<Russian>Вертолётная площадка (Военная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_ARMY_DESC">
 			<English>Helipad (Army)</English>
 			<German>Helipad (Militär)</German>
+			<Russian>Вертолётная площадка (Военная).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_CROSS">
 			<English>Helipad (Cross)</English>
 			<German>Helipad (Kreuz)</German>
+			<Russian>Вертолётная площадка (Крест)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_CROSS_DESC">
 			<English>Helipad (Cross)</English>
 			<German>Helipad (Kreuz)</German>
+			<Russian>Вертолётная площадка (Крест).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_PARKBORDER">
 			<English>Helipad (Park Border)</English>
 			<German>Helipad (Parkbegrenzung)</German>
+			<Russian>Вертолётная площадка (Разметка)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HELIPAD_PARKBORDER_DESC">
 			<English>Helipad (Park Border)</English>
 			<German>Helipad (Parkbegrenzung)</German>
+			<Russian>Вертолётная площадка (Разметка).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CCTV">
 			<English>CCTV</English>
 			<German>Überwachungskamera</German>
+			<Russian>Видеокамера</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CCTV_DESC">
 			<English>CCTV</English>
 			<German>Überwachungskamera</German>
+			<Russian>Видеокамера.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_FUELTANK">
 			<English>Broken Fueltank Parts</English>
 			<German>Kaputte Treibstofftankteile</German>
+			<Russian>Сломанные части топливного бака</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_FUELTANK_DESC">
 			<English>Broken Fueltank Parts that must be repaired.</English>
 			<German>Kaputte Treibstofftankteile, welche repariert werden müssen.</German>
+			<Russian>Сломанные части топливного бака, которые необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_CARWHEEL">
 			<English>Broken Car Wheel</English>
 			<German>Kaputter Reifen</German>
+			<Russian>Сломанное колесо</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_CARWHEEL_DESC">
 			<English>Broken Car Wheel that must be repaired.</English>
 			<German>Kaputter Reifen, welcher repariert werden muss.</German>
+			<Russian>Сломанное колесо, которое необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_ENGINEPARTS">
 			<English>Broken Engine Parts</English>
 			<German>Kaputte Motorteile</German>
+			<Russian>Сломанные части двигателя</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_ENGINEPARTS_DESC">
 			<English>Broken Engine Parts that must be repaired.</English>
 			<German>Kaputte Motorteile, welche repariert werden müssen.</German>
+			<Russian>Сломанные части двигателя, которые необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_GLASS">
 			<English>Broken Windscreen Glass</English>
 			<German>Kaputtes Autoglas</German>
+			<Russian>Сломанное автомобильное стекло</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_GLASS_DESC">
 			<English>Broken Windscreen Glass that must be repaired.</English>
 			<German>Kaputtes Autoglas, welches repariert werden muss.</German>
+			<Russian>Сломанное автомобильное стекло, которое необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_ROTOR">
 			<English>Broken Main Rotor Assembly</English>
 			<German>Kaputtes Hauptrotorteile</German>
+			<Russian>Сломанные части ротора</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_ROTOR_DESC">
 			<English>Broken Main Rotor Assembly that must be repaired.</English>
 			<German>Kaputte Hauptrotorteile, welche repariert werden müssen.</German>
+			<Russian>Сломанные части ротора, которые необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BONES_GRAVE">
 			<English>Bones Grave</English>
 			<German>Knochengrab</German>
+			<Russian>Могила с костями</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DEAD_SOLDIER">
 			<English>Dead Soldier</English>
 			<German>Toter Soldat</German>
+			<Russian>Мёртвый солдат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PILE_RUBBISH">
 			<English>Garbage heab</English>
 			<German>Müllhaufen</German>
+			<Russian>Мусорная куча</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN">
 			<English>Pumpkin patch</English>
 			<German>Kürbisbeet</German>
+			<Russian>Тыквенный участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_SUNFLOWER">
 			<English>Sunflower patch</English>
 			<German>Sonnenblumenbeet</German>
+			<Russian>Подсолнуховый участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_CARROT">
 			<English>Carrot patch</English>
 			<German>Karottenbeet</German>
+			<Russian>Морковный участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_POTATO">
 			<English>Potato patch</English>
 			<German>Kartoffelbeet</German>
+			<Russian>Картофельный участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_HEMP">
 			<English>Hemp plant patch</English>
 			<German>Hanfpflanzenbeet</German>
+			<Russian>Конопляный участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TOBACCO">
 			<English>Tobacco plant patch</English>
 			<German>Tabakpflanzenbeet</German>
+			<Russian>Табачный участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLANT_PATCH_TEA">
 			<English>Tea plant patch</English>
 			<German>Teepflanzenbeet</German>
+			<Russian>Чайный участок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ITEM_NOTEBOOK">
 			<English>Notebook</English>
+			<Russian>Ноутбук</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ITEM_NOTEBOOK_DESC">
 			<English>A notebook in a good condition.</English>
 			<German>Ein Notebook, welches sich in einem guten Zustand befindet.</German>
+			<Russian>Ноутбук в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK_BROKEN">
 			<English>Notebook (broken)</English>
 			<German>Notebook (kaputt)</German>
+			<Russian>Сломанный ноутбук</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_NOTEBOOK_BROKEN_DESC">
 			<English>A broken notebook that must be repaired.</English>
 			<German>Ein kaputtes Notebook, welches repariert werden muss.</German>
+			<Russian>Сломанный ноутбук, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SMALL_TV">
 			<English>TV (small)</English>
 			<German>Fernseher (klein)</German>
+			<Russian>Маленький телевизор</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SMALL_TV_DESC">
 			<English>A small TV in a good condition.</English>
 			<German>Ein kleiner Fernseher, welcher sich in einem guten Zustand befindet.</German>
+			<Russian>Маленький телевизор в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SMALL_TV_BROKEN">
 			<English>TV (small, broken)</English>
 			<German>Fernseher (klein, kaputt)</German>
+			<Russian>Сломанный маленький телевизор</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SMALL_TV_BROKEN_DESC">
 			<English>A broken TV that must be repaired.</English>
 			<German>Ein kaputter Fernseher, welcher repariert werden muss.</German>
+			<Russian>Сломанный телевизор, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BIG_TV">
 			<English>TV (big)</English>
 			<German>Fernseher (groß)</German>
+			<Russian>Большой телевизор</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BIG_TV_DESC">
 			<English>A big TV in a good condition.</English>
 			<German>Ein großer Fernseher, welcher sich in einem guten Zustand befindet.</German>
+			<Russian>Большой телевизор в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BIG_TV_BROKEN">
 			<English>TV (big, broken)</English>
 			<German>Fernseher (groß, kaputt)</German>
+			<Russian>Сломанный большой телевизор</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BIG_TV_BROKEN_DESC">
 			<English>A broken TV that must be repaired.</English>
 			<German>Ein kaputter Fernseher, welcher repariert werden muss.</German>
+			<Russian>Сломанный телевизор, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SATELLITE_PHONE">
 			<English>Satellite Phone</English>
 			<German>Satellitentelefon</German>
+			<Russian>Спутниковый телефон</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SATELLITE_PHONE_DESC">
 			<English>A satellite phone in a good condition.</English>
 			<German>Ein Satellitentelefon, welches sich in einem guten Zustand befindet.</German>
+			<Russian>Спутниковый телефон в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SATELLITE_PHONE_BROKEN">
 			<English>Satellite Phone (broken)</English>
 			<German>Satellitentelefon (kaputt)</German>
+			<Russian>Сломанный спутниковый телефон</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SATELLITE_PHONE_BROKEN_DESC">
 			<English>A broken satellite phone that must be repaired.</English>
 			<German>Ein kaputtes Satellitentelefon, welches repariert werden muss.</German>
+			<Russian>Сломанный спутниковый телефон, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PC">
 			<English>PC</English>
+			<Russian>Компьютер</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PC_DESC">
 			<English>A PC with monitor in a good condition.</English>
 			<German>Ein PC mit Monitor, welcher sich in einem guten Zustand befindet.</German>
+			<Russian>Компьютер с монитором в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PC_BROKEN">
 			<English>PC (broken)</English>
 			<German>PC (kaputt)</German>
+			<Russian>Сломанный компьютер</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PC_BROKEN_DESC">
 			<English>A broken PC that must be repaired.</English>
 			<German>Ein kaputter PC, welcher repariert werden muss.</German>
+			<Russian>Сломанный компьютер, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESKTOP_RADIO">
 			<English>Desktop Radio</English>
 			<German>Stationsfunkgerät</German>
+			<Russian>Настольное радио</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESKTOP_RADIO_DESC">
 			<English>A desktop radio in a good condition.</English>
 			<German>Ein Stationsfunkgerät, welches sich in einem guten Zustand befindet.</German>
+			<Russian>Настольное радио в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESKTOP_RADIO_BROKEN">
 			<English>Desktop Radio (broken)</English>
 			<German>Stationsfunkgerät (kaputt)</German>
+			<Russian>Сломанное настольное радио</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DESKTOP_RADIO_BROKEN_DESC">
 			<English>A broken desktop radio that must be repaired.</English>
 			<German>Ein kaputtes Stationsfunkgerät, welches repariert werden muss.</German>
+			<Russian>Сломанное настольное радио, которое необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC1">
 			<English>Radio</English>
+			<Russian>Радио</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC1_DESC">
 			<English>A radio in a good condition.</English>
 			<German>Ein Radio, welches sich in einem guten Zustand befindet.</German>
+			<Russian>Радио в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC1_BROKEN">
 			<English>Radio (broken)</English>
 			<German>Radio (kaputt)</German>
+			<Russian>Сломанное радио</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC1_BROKEN_DESC">
 			<English>A broken radio that must be repaired.</English>
 			<German>Ein kaputtes Radio, welches repariert werden muss.</German>
+			<Russian>Сломанное радио, которое необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC2">
 			<English>Radio</English>
+			<Russian>Радио</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC2_DESC">
 			<English>A radio in a good condition.</English>
 			<German>Ein Radio, welches sich in einem guten Zustand befindet.</German>
+			<Russian>Радио в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC2_BROKEN">
 			<English>Radio (broken)</English>
 			<German>Radio (kaputt)</German>
+			<Russian>Сломанное радио</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RADIO_MUSIC2_BROKEN_DESC">
 			<English>A broken radio that must be repaired.</English>
 			<German>Ein kaputtes Radio, welches repariert werden muss.</German>
+			<Russian>Сломанное радио, которое необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METAL_BUCKET">
 			<English>Bucket</English>
 			<German>Eimer</German>
+			<Russian>Ведро</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS">
 			<English>Suitcase with Diamonds</English>
 			<German>Koffer mit Diamanten</German>
+			<Russian>Чемоданчик с брильянтами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS_DESC">
 			<English>A suitcase with many small diamonds.</English>
 			<German>Ein Koffer mit vielen kleinen Diamanten.</German>
+			<Russian>Чемоданчик с кучкой маленьких брильянтов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_BOMB">
 			<English>Suitcase Bomb</English>
 			<German>Kofferbombe</German>
+			<Russian>Чемоданчик с бомбой</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_BOMB_DESC">
 			<English>A suitcase with a bomb inside.</English>
 			<German>Ein Koffer mit einer Bombe im Inneren.</German>
+			<Russian>Чемоданчик с бомбой внутри.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT">
 			<English>Rabbit Skin</English>
 			<German>Hasenfell</German>
+			<Russian>Кроличья шкура</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT_DESC">
 			<English>A packet of rabbit skin.</English>
@@ -33076,6 +33306,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW">
 			<English>Cow Skin</English>
 			<German>Kuhfell</German>
+			<Russian>Коровья шкура</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW_DESC">
 			<English>A packet of cow skin.</English>
@@ -33084,6 +33315,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT">
 			<English>Goat Skin</English>
 			<German>Ziegenfell</German>
+			<Russian>Козья шкура</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT_DESC">
 			<English>A packet of goat skin.</English>
@@ -33092,6 +33324,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR">
 			<English>Boar Skin</English>
 			<German>Wildschweinfell</German>
+			<Russian>Кабанья шкура</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR_DESC">
 			<English>A packet of boar skin.</English>
@@ -33100,6 +33333,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG">
 			<English>Dog Skin</English>
 			<German>Hundefell</German>
+			<Russian>Собачья шкура</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG_DESC">
 			<English>A packet of dog skin.</English>
@@ -33108,6 +33342,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP">
 			<English>Sheep Skin</English>
 			<German>Schafsfell</German>
+			<Russian>Овечья шкура</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP_DESC">
 			<English>A packet of sheep skin.</English>
@@ -33116,6 +33351,7 @@
 		<Key ID="STR_EPOCH_WOOL">
 			<English>Wool</English>
 			<German>Wolle</German>
+			<Russian>Шерсть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOOL_DESC">
 			<English>A packet of wool.</English>
@@ -33124,6 +33360,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN">
 			<English>Animal Skin</English>
 			<German>Tierfell</German>
+			<Russian>Шкура животного</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DESC">
 			<English>A packet of animal skin.</English>
@@ -33132,6 +33369,7 @@
 		<Key ID="STR_EPOCH_LEATHER">
 			<English>Leather</English>
 			<German>Leder</German>
+			<Russian>Кожа</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LEATHER_DESC">
 			<English>A packet of leather.</English>
@@ -33140,46 +33378,58 @@
 		<Key ID="STR_EPOCH_PLASTIC_PARTS">
 			<English>Plastic Parts</English>
 			<German>Plastikteile</German>
+			<Russian>Пластиковые части</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
 			<English>A crate of plastic parts.</English>
 			<German>Eine Kiste mit Plastikteilen.</German>
+			<Russian>Ящик с пластиковыми частями.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CERAMIC_PARTS">
 			<English>Ceramic Parts</English>
 			<German>Keramikteile</German>
+			<Russian>Керамические части</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
 			<English>A crate of ceramic parts.</English>
 			<German>Eine Kiste mit Keramikteile.</German>
+			<Russian>Ящик с керамическими частями.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN">
 			<English>Slugs in a can</English>
+			<Russian>Пули в банке</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN_DESC">
 			<English>Slugs in a can</English>
+			<Russian>Пули в банке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TIN_OF_POWDER">
 			<English>Tin of Powder</English>
+			<Russian>Жестянка с порошком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TIN_OF_POWDER_DESC">
 			<English>Tin of Powder has medicinal qualities</English>
 			<German>Zinnpulver in medizinscher Qualität.</German>
+			<Russian>Порошок в жестяной банке, обладает лечебными свойствами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HOBO_FISHING_KIT">
 			<English>Hobo Fishing Kit</English>
+			<Russian>Рыболовный набор Hobo</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_HOBO_FISHING_KIT_DESC">
 			<English>Hobo Fishing Kit, catches dem fishes</English>
 			<German>Hobo Fishing Kit fängt die Fische.</German>
+			<Russian>Рыболовный набор Hobo, выловит всё!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CAMO_STORAGE_CRATE">
 			<English>Camo Storage Crate</English>
 			<German>Tarn-Lagerkiste</German>
+			<Russian>Ящик для хранения замаскированный</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CAMO_STORAGE_CRATE_DESC">
 			<English>A storage crate with a green camo net.</English>
 			<German>Eine Lagerkiste mit einem grünen Tarnetz.</German>
+			<Russian>Ящик для хранения с зелёной камуфляжной сетью.</Russian>
 		</Key>
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
