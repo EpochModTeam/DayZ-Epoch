@@ -523,7 +523,7 @@ class RscTitles
 				idc = 1200;
 				text = "\z\addons\dayz_code\gui\status_epoch\status_blood_border_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.86 * safezoneH + safezoneY;//2
+				y = 0.79 * safezoneH + safezoneY;//2
 				w = 0.06;
 				h = 0.08;
 			};
@@ -532,7 +532,7 @@ class RscTitles
 				idc = 1201;
 				text = "\z\addons\dayz_code\gui\status_epoch\status_food_border_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.93 * safezoneH + safezoneY; //1
+				y = 0.86 * safezoneH + safezoneY; //1
 				w = 0.06;
 				h = 0.08;
 			};
@@ -541,7 +541,7 @@ class RscTitles
 				idc = 1202;
 				text = "\z\addons\dayz_code\gui\status_epoch\status_thirst_border_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.79 * safezoneH + safezoneY; //3
+				y = 0.93 * safezoneH + safezoneY; //3
 				w = 0.06;
 				h = 0.08;
 			};
@@ -599,7 +599,7 @@ class RscTitles
 				idc = 1300;
 				//text = "\z\addons\dayz_code\gui\status_epoch\status_blood_inside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.86 * safezoneH + safezoneY;
+				y = 0.79 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
 			};
@@ -608,7 +608,7 @@ class RscTitles
 				idc = 1301;
 				//text = "\z\addons\dayz_code\gui\status_epoch\status_food_inside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.93 * safezoneH + safezoneY;
+				y = 0.86 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
 			};
@@ -617,7 +617,7 @@ class RscTitles
 				idc = 1302;
 				//text = "\z\addons\dayz_code\gui\status_epoch\status_thirst_inside_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.79 * safezoneH + safezoneY;
+				y = 0.93 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
 			};
@@ -626,7 +626,7 @@ class RscTitles
 				idc = 1303;
 				text = "\z\addons\dayz_code\gui\status_epoch\status_bleeding_ca.paa";
 				x = 0.955313 * safezoneW + safezoneX;
-				y = 0.86 * safezoneH + safezoneY;
+				y = 0.79 * safezoneH + safezoneY;
 				w = 0.06;
 				h = 0.08;
 				colorText[] = {1,1,1,0.5};
