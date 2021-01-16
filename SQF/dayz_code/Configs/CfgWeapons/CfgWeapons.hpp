@@ -37,6 +37,7 @@ class CfgWeapons
 	#include "Rifles\AKS.hpp"	
 	#include "Rifles\RK95.hpp"
 	#include "Rifles\Groza.hpp"
+	#include "Rifles\SCARAK.hpp"
 	
 	#include "Rifles\RPK.hpp"
 	

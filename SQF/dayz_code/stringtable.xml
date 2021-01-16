@@ -18050,7 +18050,26 @@
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 			<Russian>Бесшумная снайперская винтовка &lt;br/&gt;Патрон: 7.62x51mm</Russian>
 		</Key>
-
+		
+		<!-- SCAR-H AK -->
+		<Key ID="STR_DZ_WPN_SCARAK_NAME">
+			<English>SCAR-H AK</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SCARAK_CCO_NAME">
+			<English>SCAR-H AK CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SCARAK_HOLO_NAME">
+			<English>SCAR-H AK Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SCARAK_ACOG_NAME">
+			<English>SCAR-H AK ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SCARAK_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm</German>
+			<Russian>Штурмовая винтовка &lt;br/&gt;Патрон: 7.62x39mm</Russian>
+		</Key>
+		
 		<!-- XM8 -->
 		<Key ID="STR_DZ_WPN_XM8_CARBINE_NAME">
 			<English>XM8 Carbine</English>
@@ -18232,6 +18251,16 @@
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_NAME">
 			<English>Desert Eagle</English>
 		</Key>
+		<Key ID="STR_DZ_WPN_DESERT_EAGLE_GOLD_NAME">
+			<English>Desert Eagle Gold</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_DESERT_EAGLE_SILVER_NAME">
+			<English>Desert Eagle Silver</English>
+			<German>Desert Eagle Silber</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_DESERT_EAGLE_MODERN_NAME">
+			<English>Desert Eagle Modern</English>
+		</Key>		
         <Key ID="STR_DZ_WPN_DESERT_EAGLE_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .50 AE</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .50 AE</German>
@@ -18328,9 +18357,9 @@
 			<Russian>60п. АК-47М маг.</Russian>
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_762X39_AK47_DESC">
-			<English>Caliber: 7.62x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
-			<German>Kaliber: 7.62x39mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK</German>
-			<Russian>Калибр: 7.62x39mm &lt;br/&gt;Патронов: 60 &lt;br/&gt;2 магазина соединенные изолентой. &lt;br/&gt;Используются в: AK-47M, SA-58, РПК</Russian>
+			<English>Caliber: 7.62x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-47M, SA-58, RPK, SCAR-H AK</English>
+			<German>Kaliber: 7.62x39mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK, SCAR-H AK</German>
+			<Russian>Калибр: 7.62x39mm &lt;br/&gt;Патронов: 60 &lt;br/&gt;2 магазина соединенные изолентой. &lt;br/&gt;Используются в: AK-47M, SA-58, РПК, SCAR-H AK</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_762X39_SA58_NAME">
 			<English>30Rnd. SA-58 mag.</English>
@@ -19544,26 +19573,26 @@
 			<Hungarian>Kaliber: 7.62x39mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: RK-95 SD</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_AK47M_DESC">
-			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
-			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: AK-47M, SA-58, RPK</French>
-			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, SA-58, RPK</Spanish>
-			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, SA-58, RPK</Italian>
-			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, SA-58, RPK</Polish>
-			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, SA-58, RPK</Russian>
-			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK</German>
-			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK</Czech>
-			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK</Hungarian>
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: AK-47M, SA-58, RPK, SCAR-H AK</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: AK-47M, SA-58, RPK, SCAR-H AK</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, SA-58, RPK, SCAR-H AK</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, SA-58, RPK, SCAR-H AK</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, SA-58, RPK, SCAR-H AK</Polish>
+			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, SA-58, RPK, SCAR-H AK</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK, SCAR-H AK</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK, SCAR-H AK</Czech>
+			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK, SCAR-H AK</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_SA58_DESC">
-			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
-			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: AK-47M, SA-58, RPK</French>
-			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, SA-58, RPK</Spanish>
-			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, SA-58, RPK</Italian>
-			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, SA-58, RPK</Polish>
-			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, SA-58, RPK</Russian>
-			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK</German>
-			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK</Czech>
-			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK</Hungarian>
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: SA-58, AK-47M, RPK, SCAR-H AK</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: SA-58, AK-47M, RPK, SCAR-H AK</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: SA-58, AK-47M, RPK, SCAR-H AK</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: SA-58, AK-47M, RPK, SCAR-H AK</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: SA-58, AK-47M, RPK, SCAR-H AK</Polish>
+			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: SA-58, AK-47M, RPK, SCAR-H AK</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: SA-58, AK-47M, RPK, SCAR-H AK</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: SA-58, AK-47M, SA-58, RPK, SCAR-H AK</Czech>
+			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: SA-58, AK-47M, RPK, SCAR-H AK</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_Groza9_NAME">
 			<English>20Rnd. Groza-9 mag.</English>

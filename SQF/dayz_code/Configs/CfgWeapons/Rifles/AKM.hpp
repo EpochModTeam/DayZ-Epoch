@@ -7,6 +7,9 @@ class AKM_DZ : AK_47_M
 	magazines[] = {30Rnd_762x39_AK47,30Rnd_762x39_SA58,60Rnd_762x39_AK47_Taped};
 	modes[] = {"Single","FullAuto"};
 	
+	class Single;
+	class FullAuto;
+	
 	//iron sight zeroing
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
