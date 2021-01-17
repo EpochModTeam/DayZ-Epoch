@@ -157,14 +157,6 @@ if (DZE_UI == 1) then { // Vanilla
 	};
 
 	_ctrlTempBorder ctrlSetText _tempText;
-	
-	local _bloodTestdone = player getVariable ["blood_testdone", false];
-	if (_bloodTestdone) then {
-		local _bloodType = player getVariable ["blood_type", "O"];
-		local _rhFactor = if (player getVariable ["rh_factor", false]) then { "pos" } else { "neg" };
-		_ctrlBloodType = _display displayCtrl 1310;
-		_ctrlBloodType ctrlSetText ("\z\addons\dayz_code\gui\status\status_blood_type_"+_bloodType+"_"+_rhFactor+"_ca.paa");
-	};
 };
 
 local _path = if (DZE_UI == 1) then {"\z\addons\dayz_code\gui\status\"} else {"\z\addons\dayz_code\gui\status_epoch\"};
@@ -212,6 +204,19 @@ if (DZE_UI in [1,3]) then {
 	_audible = (round((dayz_disAudial / 50) * 4)) min 5;
 	if (_audible > 0) then {_audibletext = "\z\addons\dayz_code\gui\status_epoch\val_" + str(_audible) + "_ca.paa"};
 	_ctrlEar ctrlSetText _audibletext;
+};
+
+if !(dayz_classicBloodBagSystem) then {
+	local _bloodTestdone = player getVariable ["blood_testdone", false];
+	if (_bloodTestdone) then {
+		local _bloodType = player getVariable ["blood_type", "O"];
+		local _rhFactor = if (player getVariable ["rh_factor", false]) then { "pos" } else { "neg" };
+		_ctrlBloodType = _display displayCtrl 1310;
+		if (DZE_UI == 3) then {
+			_ctrlBloodType ctrlSetTextColor [1,1,1,1];
+		};	
+		_ctrlBloodType ctrlSetText ("\z\addons\dayz_code\gui\status\status_blood_type_"+_bloodType+"_"+_rhFactor+"_ca.paa");
+	};
 };
 
 // Fracture/Broken Legs

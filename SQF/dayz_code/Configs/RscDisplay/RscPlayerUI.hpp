@@ -501,6 +501,15 @@ class RscTitles
 				w = 0.075;
 				h = 0.10;
 			};
+			class RscPicture_1310: RscPictureGUI
+			{
+				idc = 1310;
+				// blood type
+				x = 0.955313 * safezoneW + safezoneX;
+				y = 0.79 * safezoneH + safezoneY;
+				w = 0.075;
+				h = 0.10;
+			};			
 		};
 	};
 	class playerStatusGUI_legacy {
@@ -682,6 +691,15 @@ class RscTitles
 				//text = "\z\addons\dayz_code\gui\status\val_5_ca.paa";
 				x = 0.929813 * safezoneW + safezoneX;
 				y = 0.37 * safezoneH + safezoneY;
+				w = 0.075;
+				h = 0.10;
+			};
+			class RscPicture_1310: RscPictureGUI
+			{
+				idc = 1310;
+				// blood type
+				x = 0.951613 * safezoneW + safezoneX;
+				y = 0.79 * safezoneH + safezoneY;
 				w = 0.075;
 				h = 0.10;
 			};
