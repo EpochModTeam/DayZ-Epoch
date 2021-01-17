@@ -64,3 +64,10 @@ class Land_metal_floor_2x2_wreck: ruins {
 	removeoutput[] = {{"ItemPole",{0,4}},{"equip_metal_sheet",{0,4}}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
+class Land_wood_floor_2x2_wreck: ruins {
+	scope = 2;
+	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2_wreck.p3d";
+	displayName = $STR_METAL_FLOOR_WRECK;
+	removeoutput[] = {{"PartWoodPlywood",{0,4}},{"PartWoodLumber",{0,4}}};
+	vehicleClass = "DayZ Epoch Buildables";
+};
