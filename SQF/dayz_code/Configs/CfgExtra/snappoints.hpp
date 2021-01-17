@@ -314,7 +314,7 @@ class SnapBuilding {
 		radius = 10;
 	};	
 	
-	class Wood_Triangle_Wall_Preview_DZ: WoodTriangleFloor_DZ {};
+	class Wood_Triangle_Wall_Preview_DZ: WoodTriangleWall_DZ {};
 	
 	class WoodSmallWallThird_DZ: WoodSmallWallThird_Preview_DZ{};
 	class WoodLargeWall_DZ: WoodLarge_DZE {};
@@ -459,6 +459,8 @@ class SnapBuilding {
 		radius = 10;
 	};
 	
+	class GlassFloor_Quarter_Preview_DZ: GlassFloor_Quarter_DZ {};
+	
 	class GlassFloor_Half_DZ: FloorsWallsStairs {
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
@@ -470,6 +472,8 @@ class SnapBuilding {
 		radius = 12;
 	};
 	
+	class GlassFloor_Half_Preview_DZ: GlassFloor_Half_DZ {};
+	
 	class Metal_Drawbridge_DZ: FloorsWallsStairs {
 		radius = 10;
 		points[] = {
@@ -478,7 +482,7 @@ class SnapBuilding {
 			{2.46,0,1.685,$STR_EPOCH_ACTION_SNAP_RIGHT},
 			{0,0,6.05,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
-	};
+	};	
 	
 	class Drawbridge_Preview_DZ: Metal_Drawbridge_DZ {};
 	class Metal_DrawbridgeLocked_DZ: Metal_Drawbridge_DZ {};
@@ -671,14 +675,14 @@ class SnapBuilding {
 		radius = 20;
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{0,-5.27,0.130,$STR_EPOCH_ACTION_SNAP_BACK},
-			{0,5.27,0.130,$STR_EPOCH_ACTION_SNAP_FRONT},
-			{-5.27,0,0.130,$STR_EPOCH_ACTION_SNAP_LEFT},
-			{5.27,0,0.130,$STR_EPOCH_ACTION_SNAP_RIGHT}
+			{0,-5.27,0,$STR_EPOCH_ACTION_SNAP_BACK},
+			{0,5.27,0,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{-5.27,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{5.27,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	
-	class MetalFloor4x_Preview_DZ: WoodFloor4x_DZ {};
+	class MetalFloor4x_Preview_DZ: MetalFloor4x_DZ {};
 	
 	//Non essential Items that only snap to themselves, do whitelist inheritance if you want these to snap
 	class WoodCrate_DZ {
