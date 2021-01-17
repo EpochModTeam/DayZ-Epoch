@@ -24,7 +24,7 @@ class Metal_Drawbridge_DZ: CinderWallDoor_DZ_Base
 		{
 			displayName = $STR_EPOCH_ACTION_LOWER_BRIDGE;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "this animationPhase ""Open_inner"" < 0.5";
 			statement = "this animate [""Open_inner"", 1];this animate [""Open_outer"", 1];";
@@ -98,7 +98,7 @@ class Metal_DrawbridgeLocked_DZ: CinderWallDoorLocked_DZ_Base
 		{
 			displayName = $STR_EPOCH_ACTION_LOWER_BRIDGE;
 			onlyforplayer = true;
-			position = "Door_knopf";
+			position = "action";
 			radius = 3;
 			condition = "(this animationPhase ""Open_inner"" == 0) && (this animationPhase ""Open_latch"" == 1)";
 			statement = "this animate [""Open_inner"", 1];this animate [""Open_outer"", 1];";
