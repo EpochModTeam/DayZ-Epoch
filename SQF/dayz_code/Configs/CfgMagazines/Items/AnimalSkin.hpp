@@ -72,7 +72,7 @@ class ItemWool: CA_Magazine
 	displayName = $STR_EPOCH_WOOL;
 	descriptionShort = $STR_EPOCH_WOOL_DESC;
 	model = "\z\addons\dayz_epoch\models\canvas.p3d";
-	picture = "\dayz_epoch_c\icons\equipment\ItemGenericSkin.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemWool.paa";
 };
 
 class ItemAnimalSkin: CA_Magazine
