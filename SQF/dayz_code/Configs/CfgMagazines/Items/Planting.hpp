@@ -81,7 +81,7 @@ class ItemKiloTobacco : CA_Magazine
 	count = 1;
 	displayName = $STR_EPOCH_KILOTOBACCO;
 	descriptionShort = $STR_EPOCH_KILOTOBACCO_DESC;
-	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
+	model = "z\addons\dayz_epoch\models\kilotobacco.p3d";
 	picture = "\dayz_epoch_c\icons\plants\equip_kilotobacco_CA.paa";
 	type = 256;
 };
@@ -103,7 +103,7 @@ class ItemKiloBlackTea : CA_Magazine
 	count = 1;
 	displayName = $STR_EPOCH_KILOBLACKTEA;
 	descriptionShort = $STR_EPOCH_KILOBLACKTEA_DESC;
-	model = "z\addons\dayz_epoch\models\kilohemp.p3d";
+	model = "z\addons\dayz_epoch\models\kilotea.p3d";
 	picture = "\dayz_epoch_c\icons\plants\equip_kilotea_CA.paa";
 	type = 256;	
 };
