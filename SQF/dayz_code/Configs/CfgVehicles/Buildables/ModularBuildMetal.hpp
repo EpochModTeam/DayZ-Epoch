@@ -92,6 +92,7 @@ class GlassFloor_Half_DZ: ModularItems {
 	armor = 2000;
 	displayName = $STR_EPOCH_GLASSFLOORHALF;
 	maintainBuilding[] = {{"PartGlass",1}};
+	GhostPreview = "GlassFloor_Half_Preview_DZ";
 };
 
 class GlassFloor_Quarter_DZ: ModularItems {
@@ -101,4 +102,5 @@ class GlassFloor_Quarter_DZ: ModularItems {
 	armor = 2000;
 	displayName = $STR_EPOCH_GLASSFLOORQUARTER;
 	maintainBuilding[] = {{"PartGlass",1}};
+	GhostPreview = "GlassFloor_Quarter_Preview_DZ";
 };
