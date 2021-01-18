@@ -11621,20 +11621,25 @@
 		</Key>
 		<Key ID="str_veh_name_uaz_ags_RUST">
 			<English>UAZ rusty (AGS-30)</English>
+			<German>UAZ rostig (AGS-30)</German>
 		</Key>
 		<Key ID="str_veh_name_uaz_ags_RUST+">
 			<English>UAZ rusty (AGS-30)+</English>
+			<German>UAZ rostig (AGS-30)+</German>
 		</Key>
 		<Key ID="str_veh_name_uaz_ags_RUST++">
 			<English>UAZ rusty (AGS-30)++</English>
+			<German>UAZ rostig (AGS-30)++</German>
 		</Key>
 		<Key ID="str_veh_name_uaz_ags_RUST+++">
 			<English>UAZ rusty (AGS-30)+++</English>
+			<German>UAZ rostig (AGS-30)+++</German>
 		</Key>
-			<English>UAZ rusty (AGS-)++++</English>
+			<English>UAZ rusty (AGS-30)++++</English>
+			<German>UAZ rostig (AGS-30)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS">
-			<English>UAZ Winter (AGS-30)</English>
+			<English>UAZ Winter (AGS-30)</English>			
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS+">
 			<English>UAZ Winter (AGS-30)+</English>
@@ -11665,18 +11670,23 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST">
 			<English>UAZ rusty (SPG-9)</English>
+			<German>UAZ rostig (SPG-9)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST+">
 			<English>UAZ rusty (SPG-9)+</English>
+			<German>UAZ rostig (SPG-9)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST++">
 			<English>UAZ rusty (SPG-9)++</English>
+			<German>UAZ rostig (SPG-9)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST+++">
 			<English>UAZ rusty (SPG-9)+++</English>
+			<German>UAZ rostig (SPG-9)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST++++">
 			<English>UAZ rusty (SPG-9)++++</English>
+			<German>UAZ rostig (SPG-9)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG">
 			<English>UAZ Winter (SPG-9)</English>
