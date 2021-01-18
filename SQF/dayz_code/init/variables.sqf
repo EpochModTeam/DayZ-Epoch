@@ -260,8 +260,8 @@ if (!isDedicated) then {
 
 	// Arrays
 	voice_actions = ["voiceOverNet","PushToTalk","PushToTalkAll","PushToTalkCommand","PushToTalkDirect","PushToTalkGroup","PushToTalkSide","PushToTalkVehicle"];
-	Dayz_meatraw = ["FoodBeefRaw","FoodMuttonRaw","FoodChickenRaw","FoodRabbitRaw","FoodBaconRaw","FoodGoatRaw","FoodDogRaw","FishRawTrout","FishRawSeaBass","FishRawTuna"];
-	Dayz_meatcooked = ["FoodBeefCooked","FoodMuttonCooked","FoodChickenCooked","FoodRabbitCooked","FoodBaconCooked","FoodGoatCooked","FoodDogCooked","FishCookedTrout","FishCookedSeaBass","FishCookedTuna"];
+	Dayz_meatraw = ["FoodBeefRaw","FoodMuttonRaw","FoodChickenRaw","FoodRabbitRaw","FoodBaconRaw","FoodGoatRaw","FoodDogRaw","FishRawTrout","FishRawSeaBass","FishRawTuna","FoodPotatoRaw"];
+	Dayz_meatcooked = ["FoodBeefCooked","FoodMuttonCooked","FoodChickenCooked","FoodRabbitCooked","FoodBaconCooked","FoodGoatCooked","FoodDogCooked","FishCookedTrout","FishCookedSeaBass","FishCookedTuna","FoodPotatoBaked"];
 	boil_tin_cans = ["TrashTinCan","FoodCanGriffEmpty","FoodCanBadguyEmpty","FoodCanBoneboyEmpty","FoodCanCornEmpty","FoodCanCurgonEmpty","FoodCanDemonEmpty","FoodCanFraggleosEmpty","FoodCanHerpyEmpty","FoodCanDerpyEmpty","FoodCanOrlokEmpty","FoodCanPowellEmpty","FoodCanTylersEmpty","FoodCanUnlabeledEmpty","FoodCanRusUnlabeledEmpty","FoodCanRusStewEmpty","FoodCanRusPorkEmpty","FoodCanRusPeasEmpty","FoodCanRusMilkEmpty","FoodCanRusCornEmpty","ItemSodaEmpty","ItemSodaClaysEmpty","ItemSodaDrwasteEmpty","ItemSodaFrankaEmpty","ItemSodaGrapeDrinkEmpty","ItemSodaLemonadeEmpty","ItemSodaLirikEmpty","ItemSodaLvgEmpty","ItemSodaMtngreenEmpty","ItemSodaMzlyEmpty","ItemSodaPeppsyEmpty","ItemSodaR4z0rEmpty","ItemSodaRabbitEmpty","ItemSodaRocketFuelEmpty","ItemSodaSacriteEmpty","ItemSodaSherbetEmpty","ItemSodaSmashtEmpty","FoodCanPotatoesEmpty","FoodCanBeefEmpty"];
 	MeleeWeapons = ["MeleeHatchet","MeleeCrowbar","MeleeMachete","MeleeBaseball","MeleeBaseBallBat","MeleeBaseBallBatBarbed","MeleeBaseBallBatNails","MeleeFishingPole","MeleeSledge"];
 	MeleeMagazines = ["Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing"];
