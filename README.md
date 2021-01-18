@@ -155,6 +155,7 @@ GitHub Contributors
 * worldwidesorrow - https://github.com/worldwidesorrow
 * RedLink-kam - https://github.com/RedLink-kam
 * Helion4 - https://github.com/Helion4
+* Schalldampfer - https://github.com/Schalldampfer
 
 --------------------------
 Special thanks
