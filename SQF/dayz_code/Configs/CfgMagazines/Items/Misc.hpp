@@ -246,8 +246,8 @@ class ItemPlasticParts : CA_Magazine
 	count = 1;
 	displayName = $STR_EPOCH_PLASTIC_PARTS;
 	descriptionShort = $STR_EPOCH_PLASTIC_PARTS_DESC;
-	model = "\CA\misc3\briefcase";
-	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	model = "\z\addons\dayz_communityassets\models\crate.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_crate.paa";
 	type = 256;
 };
 
@@ -256,9 +256,9 @@ class ItemCeramicParts : CA_Magazine
 	scope = 2;
 	count = 1;
 	displayName = $STR_EPOCH_CERAMIC_PARTS;
-	descriptionShort = $STR_EPOCH_PLASTIC_PARTS_DESC;
-	model = "\CA\misc3\briefcase";
-	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	descriptionShort = $STR_EPOCH_CERAMIC_PARTS_DESC;
+	model = "\z\addons\dayz_communityassets\models\crate.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_crate.paa";
 	type = 256;
 };
 
