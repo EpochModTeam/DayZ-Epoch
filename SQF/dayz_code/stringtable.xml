@@ -14033,6 +14033,17 @@
 			<Russian>Cessna C185U (Камуфляж)</Russian>
 			<German>Cessna C185U (Tarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_ROCKETS">
+			<English>Cessna C185T (Rockets)</English>
+			<German>Cessna C185T (Raketen)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_M60">
+			<English>Cessna C185T (Twin M60)</English>
+			<German>Cessna C185T (Zwillings-M60)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_CESSNA_AMPHIBIAN">
+			<English>Cessna C185F (Amphibian)</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_STASH">
 			<English>Stash</English>
 			<French>Planque</French>
