@@ -11604,6 +11604,95 @@
 			<English>UAZ Winter (DSHKM)++++</English>
 			<Russian>UAZ Зимний (ДШКМ)++++</Russian>
 		</Key>
+		<Key ID="str_veh_name_uaz_ags">
+			<English>UAZ (AGS-30)</English>
+		</Key>
+		<Key ID="str_veh_name_uaz_ags+">
+			<English>UAZ (AGS-30)+</English>
+		</Key>
+		<Key ID="str_veh_name_uaz_ags++">
+			<English>UAZ (AGS-30)++</English>
+		</Key>
+		<Key ID="str_veh_name_uaz_ags+++">
+			<English>UAZ (AGS-30)+++</English>
+		</Key>
+		<Key ID="str_veh_name_uaz_ags++++">
+			<English>UAZ (AGS-30)++++</English>
+		</Key>
+		<Key ID="str_veh_name_uaz_ags_RUST">
+			<English>UAZ rusty (AGS-30)</English>
+		</Key>
+		<Key ID="str_veh_name_uaz_ags_RUST+">
+			<English>UAZ rusty (AGS-30)+</English>
+		</Key>
+		<Key ID="str_veh_name_uaz_ags_RUST++">
+			<English>UAZ rusty (AGS-30)++</English>
+		</Key>
+		<Key ID="str_veh_name_uaz_ags_RUST+++">
+			<English>UAZ rusty (AGS-30)+++</English>
+		</Key>
+			<English>UAZ rusty (AGS-)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS">
+			<English>UAZ Winter (AGS-30)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS+">
+			<English>UAZ Winter (AGS-30)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS++">
+			<English>UAZ Winter (AGS-30)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS+++">
+			<English>UAZ Winter (AGS-30)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS++++">
+			<English>UAZ Winter (AGS-30)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG">
+			<English>UAZ (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG+">
+			<English>UAZ (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG++">
+			<English>UAZ (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG+++">
+			<English>UAZ (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG++++">
+			<English>UAZ (SPG-9)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST">
+			<English>UAZ rusty (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST+">
+			<English>UAZ rusty (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST++">
+			<English>UAZ rusty (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST+++">
+			<English>UAZ rusty (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST++++">
+			<English>UAZ rusty (SPG-9)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG">
+			<English>UAZ Winter (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG+">
+			<English>UAZ Winter (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG++">
+			<English>UAZ Winter (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG+++">
+			<English>UAZ Winter (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG++++">
+			<English>UAZ Winter (SPG-9)++++</English>
+		</Key>
 		<Key ID="STR_VEH_NAME_URAL_TK">
 			<English>Ural (TK)</English>
 		</Key>
