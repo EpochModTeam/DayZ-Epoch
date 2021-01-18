@@ -648,6 +648,8 @@ class CfgVehicles
 	#include "Car\S1203.hpp"
 	#include "Car\Tractor.hpp"
 	#include "Car\UAZ_MG.hpp"
+	#include "Car\UAZ_AGS.hpp"
+	#include "Car\UAZ_SPG.hpp"
 	#include "Car\Volha.hpp"
 	#include "Car\VWGolf.hpp"
 	#include "Car\Skoda.hpp"
