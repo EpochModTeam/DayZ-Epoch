@@ -11579,25 +11579,65 @@
 			<English>UAZ (Winter)++++</English>
 			<Russian>UAZ (Зимний)++++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM">
-			<English>UAZ (DSHKM)</English>
-			<Russian>UAZ (ДШКМ)</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK">
+			<English>UAZ TK (DSHKM)</English>
+			<Russian>UAZ TK (ДШКМ)</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM+">
-			<English>UAZ (DSHKM)+</English>
-			<Russian>UAZ (ДШКМ)+</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK+">
+			<English>UAZ TK (DSHKM)+</English>
+			<Russian>UAZ TK (ДШКМ)+</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM++">
-			<English>UAZ (DSHKM)++</English>
-			<Russian>UAZ (ДШКМ)++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK++">
+			<English>UAZ TK (DSHKM)++</English>
+			<Russian>UAZ TK (ДШКМ)++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM+++">
-			<English>UAZ (DSHKM)+++</English>
-			<Russian>UAZ (ДШКМ)+++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK+++">
+			<English>UAZ TK (DSHKM)+++</English>
+			<Russian>UAZ TK (ДШКМ)+++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM++++">
-			<English>UAZ (DSHKM)++++</English>
-			<Russian>UAZ (ДШКМ)++++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK++++">
+			<English>UAZ TK (DSHKM)++++</English>
+			<Russian>UAZ TK (ДШКМ)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF">
+			<English>UAZ CDF (DSHKM)</English>
+			<Russian>UAZ CDF (ДШКМ)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF+">
+			<English>UAZ CDF (DSHKM)+</English>
+			<Russian>UAZ CDF (ДШКМ)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF++">
+			<English>UAZ CDF (DSHKM)++</English>
+			<Russian>UAZ CDF (ДШКМ)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF+++">
+			<English>UAZ CDF (DSHKM)+++</English>
+			<Russian>UAZ CDF (ДШКМ)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF++++">
+			<English>UAZ CDF (DSHKM)++++</English>
+			<Russian>UAZ CDF (ДШКМ)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS">
+			<English>UAZ INS (DSHKM)</English>
+			<Russian>UAZ INS (ДШКМ)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS+">
+			<English>UAZ INS (DSHKM)+</English>
+			<Russian>UAZ INS (ДШКМ)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS++">
+			<English>UAZ INS (DSHKM)++</English>
+			<Russian>UAZ INS (ДШКМ)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS+++">
+			<English>UAZ INS (DSHKM)+++</English>
+			<Russian>UAZ INS (ДШКМ)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS++++">
+			<English>UAZ INS (DSHKM)++++</English>
+			<Russian>UAZ INS (ДШКМ)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST">
 			<English>UAZ rusty (DSHKM)</English>
