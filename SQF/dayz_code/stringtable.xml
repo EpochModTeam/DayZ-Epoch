@@ -33570,7 +33570,39 @@
 			<German>Eine Lagerkiste mit einem grünen Tarnetz.</German>
 			<Russian>Ящик для хранения с зелёной камуфляжной сетью.</Russian>
 		</Key>
-
+		<Key ID="STR_EPOCH_COW_ZOMBIE">
+			<English>Zombified Cow</English>
+			<German>Zombifizierte Kuh</German>
+		</Key>
+		<Key ID="STR_EPOCH_GOAT_ZOMBIE">
+			<English>Zombified Goat</English>
+			<German>Zombifizierte Ziege</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SHEEP_ZOMBIE">
+			<English>Zombified Sheep</English>
+			<German>Zombifiziertes Schaf</German>
+		</Key>	
+		<Key ID="STR_EPOCH_DOG_ZOMBIE">
+			<English>Zombified Dog</English>
+			<German>Zombifizierter Hund</German>
+		</Key>		
+		<Key ID="STR_EPOCH_RABBIT_ZOMBIE">
+			<English>Zombified Rabbit</English>
+			<German>Zombifizierter Hase</German>
+		</Key>		
+		<Key ID="STR_EPOCH_BOAR_ZOMBIE">
+			<English>Zombified Boar</English>
+			<German>Zombifiziertes Wildschwein</German>
+		</Key>
+		<Key ID="STR_EPOCH_COCK_ZOMBIE">
+			<English>Zombified Cock</English>
+			<German>Zombifizierter Hahn</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CHICKEN_ZOMBIE">
+			<English>Zombified Chicken</English>
+			<German>Zombifiziertes Huhn</German>
+		</Key>
+		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
