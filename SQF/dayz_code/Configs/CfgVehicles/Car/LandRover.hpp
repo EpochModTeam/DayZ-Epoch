@@ -818,3 +818,102 @@ class LandRover_MG_TK_EP1_DZE4: LandRover_MG_TK_EP1_DZE3 {
 	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_M2++++";
 	fuelCapacity = 250;
 };
+
+class LandRover_SPG9_TK_EP1;
+class LandRover_SPG9_TK_EP1_DZ: LandRover_SPG9_TK_EP1
+{
+	scope = 2;
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};	
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPG9";
+	vehicleClass = "DayZ Epoch Vehicles";
+	class Turrets;
+	class MainTurret;
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+    transportmaxbackpacks = 4;
+	class HitPoints;
+	class HitLFWheel;
+	class HitLBWheel;
+	class HitRFWheel;
+	class HitRBWheel;
+	class HitFuel;
+	class HitEngine;
+	class HitGlass1;
+	supplyRadius = 1.2;
+};
+
+class LandRover_SPG9_TK_EP1_DZE: LandRover_SPG9_TK_EP1_DZ
+{
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			magazines[] = {};
+		};
+	};
+	class Upgrades {
+		ItemORP[] = {"LandRover_SPG9_TK_EP1_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};	
+};
+
+class LandRover_SPG9_TK_EP1_DZE1: LandRover_SPG9_TK_EP1_DZE {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPG9+";
+	original = "LandRover_SPG9_TK_EP1_DZE";
+	maxspeed = 160;
+	terrainCoef = 1.5;
+
+	class Upgrades {
+		ItemAVE[] = {"LandRover_SPG9_TK_EP1_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};	
+};
+
+class LandRover_SPG9_TK_EP1_DZE2: LandRover_SPG9_TK_EP1_DZE1 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPG9++";
+	armor = 60;
+	damageResistance = 0.02099;
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
+			armor = 0.65;
+		};
+		class HitLBWheel: HitLBWheel {
+			armor = 0.65;
+		};
+		class HitRFWheel: HitRFWheel {
+			armor = 0.65;
+		};
+		class HitRBWheel: HitRBWheel {
+			armor = 0.65;
+		};
+		class HitFuel: HitFuel {
+			armor = 1.5;
+		};
+		class HitEngine: HitEngine {
+			armor = 2.5;
+		};
+		class HitGlass1: HitGlass1 {
+			armor = 0.25;
+		};
+	};
+
+	class Upgrades {
+		ItemLRK[] = {"LandRover_SPG9_TK_EP1_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class LandRover_SPG9_TK_EP1_DZE3: LandRover_SPG9_TK_EP1_DZE2 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPG9+++";
+	transportMaxWeapons = 30;
+	transportMaxMagazines = 140;
+    transportmaxbackpacks = 8;
+
+	class Upgrades {
+		ItemTNK[] = {"LandRover_SPG9_TK_EP1_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+	};
+};
+
+class LandRover_SPG9_TK_EP1_DZE4: LandRover_SPG9_TK_EP1_DZE3 {
+	displayname = "$STR_VEH_NAME_MILITARY_OFFROAD_SPG9++++";
+	fuelCapacity = 250;
+};

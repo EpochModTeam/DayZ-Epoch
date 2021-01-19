@@ -9626,6 +9626,31 @@
 			<Russian>Военный внедорожник (M2)++++</Russian>
 			<German>Militär Offroad (M2)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9">
+			<English>Military Offroad (SPG-9)</English>
+			<Russian>Военный внедорожник (СПГ-9)</Russian>
+			<German>Militär Offroad (SPG-9)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9+">
+			<English>Military Offroad (SPG-9)+</English>
+			<Russian>Военный внедорожник (СПГ-9)+</Russian>
+			<German>Militär Offroad (SPG-9)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9++">
+			<English>Military Offroad (SPG-9)++</English>
+			<Russian>Военный внедорожник (СПГ-9)++</Russian>
+			<German>Militär Offroad (SPG-9)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9+++">
+			<English>Military Offroad (SPG-9)+++</English>
+			<Russian>Военный внедорожник (СПГ-9)+++</Russian>
+			<German>Militär Offroad (SPG-9)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9++++">
+			<English>Military Offroad (SPG-9)++++</English>
+			<Russian>Военный внедорожник (СПГ-9)++++</Russian>
+			<German>Militär Offroad (SPG-9)++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_LAV25">
 			<English>LAV-25</English>
 		</Key>
@@ -11579,25 +11604,65 @@
 			<English>UAZ (Winter)++++</English>
 			<Russian>UAZ (Зимний)++++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM">
-			<English>UAZ (DSHKM)</English>
-			<Russian>UAZ (ДШКМ)</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK">
+			<English>UAZ TK (DSHKM)</English>
+			<Russian>UAZ TK (ДШКМ)</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM+">
-			<English>UAZ (DSHKM)+</English>
-			<Russian>UAZ (ДШКМ)+</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK+">
+			<English>UAZ TK (DSHKM)+</English>
+			<Russian>UAZ TK (ДШКМ)+</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM++">
-			<English>UAZ (DSHKM)++</English>
-			<Russian>UAZ (ДШКМ)++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK++">
+			<English>UAZ TK (DSHKM)++</English>
+			<Russian>UAZ TK (ДШКМ)++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM+++">
-			<English>UAZ (DSHKM)+++</English>
-			<Russian>UAZ (ДШКМ)+++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK+++">
+			<English>UAZ TK (DSHKM)+++</English>
+			<Russian>UAZ TK (ДШКМ)+++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM++++">
-			<English>UAZ (DSHKM)++++</English>
-			<Russian>UAZ (ДШКМ)++++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK++++">
+			<English>UAZ TK (DSHKM)++++</English>
+			<Russian>UAZ TK (ДШКМ)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF">
+			<English>UAZ CDF (DSHKM)</English>
+			<Russian>UAZ CDF (ДШКМ)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF+">
+			<English>UAZ CDF (DSHKM)+</English>
+			<Russian>UAZ CDF (ДШКМ)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF++">
+			<English>UAZ CDF (DSHKM)++</English>
+			<Russian>UAZ CDF (ДШКМ)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF+++">
+			<English>UAZ CDF (DSHKM)+++</English>
+			<Russian>UAZ CDF (ДШКМ)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF++++">
+			<English>UAZ CDF (DSHKM)++++</English>
+			<Russian>UAZ CDF (ДШКМ)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS">
+			<English>UAZ INS (DSHKM)</English>
+			<Russian>UAZ INS (ДШКМ)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS+">
+			<English>UAZ INS (DSHKM)+</English>
+			<Russian>UAZ INS (ДШКМ)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS++">
+			<English>UAZ INS (DSHKM)++</English>
+			<Russian>UAZ INS (ДШКМ)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS+++">
+			<English>UAZ INS (DSHKM)+++</English>
+			<Russian>UAZ INS (ДШКМ)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS++++">
+			<English>UAZ INS (DSHKM)++++</English>
+			<Russian>UAZ INS (ДШКМ)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST">
 			<English>UAZ rusty (DSHKM)</English>
@@ -11644,20 +11709,85 @@
 			<English>UAZ Winter (DSHKM)++++</English>
 			<Russian>UAZ Зимний (ДШКМ)++++</Russian>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags">
-			<English>UAZ (AGS-30)</English>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU">
+			<English>UAZ RU (AGS-30)</English>
+			<Russian>UAZ RU (АГС-30)</Russian>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags+">
-			<English>UAZ (AGS-30)+</English>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU+">
+			<English>UAZ RU (AGS-30)+</English>
+			<Russian>UAZ RU (АГС-30)+</Russian>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags++">
-			<English>UAZ (AGS-30)++</English>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU++">
+			<English>UAZ RU (AGS-30)++</English>
+			<Russian>UAZ RU (АГС-30)++</Russian>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags+++">
-			<English>UAZ (AGS-30)+++</English>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU+++">
+			<English>UAZ RU (AGS-30)+++</English>
+			<Russian>UAZ RU (АГС-30)+++</Russian>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags++++">
-			<English>UAZ (AGS-30)++++</English>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU++++">
+			<English>UAZ RU (AGS-30)++++</English>
+			<Russian>UAZ RU (АГС-30)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF">
+			<English>UAZ CDF (AGS-30)</English>
+			<Russian>UAZ CDF (АГС-30)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF+">
+			<English>UAZ CDF (AGS-30)+</English>
+			<Russian>UAZ CDF (АГС-30)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF++">
+			<English>UAZ CDF (AGS-30)++</English>
+			<Russian>UAZ CDF (АГС-30)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF+++">
+			<English>UAZ CDF (AGS-30)+++</English>
+			<Russian>UAZ CDF (АГС-30)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF++++">
+			<English>UAZ CDF (AGS-30)++++</English>
+			<Russian>UAZ CDF (АГС-30)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS">
+			<English>UAZ INS (AGS-30)</English>
+			<Russian>UAZ INS (АГС-30)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS+">
+			<English>UAZ INS (AGS-30)+</English>
+			<Russian>UAZ INS (АГС-30)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS++">
+			<English>UAZ INS (AGS-30)++</English>
+			<Russian>UAZ INS (АГС-30)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS+++">
+			<English>UAZ INS (AGS-30)+++</English>
+			<Russian>UAZ INS (АГС-30)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS++++">
+			<English>UAZ INS (AGS-30)++++</English>
+			<Russian>UAZ INS (АГС-30)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK">
+			<English>UAZ TK (AGS-30)</English>
+			<Russian>UAZ TK (АГС-30)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK+">
+			<English>UAZ TK (AGS-30)+</English>
+			<Russian>UAZ TK (АГС-30)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK++">
+			<English>UAZ TK (AGS-30)++</English>
+			<Russian>UAZ TK (АГС-30)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK+++">
+			<English>UAZ TK (AGS-30)+++</English>
+			<Russian>UAZ TK (АГС-30)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK++++">
+			<English>UAZ TK (AGS-30)++++</English>
+			<Russian>UAZ TK (АГС-30)++++</Russian>
 		</Key>
 		<Key ID="str_veh_name_uaz_ags_RUST">
 			<English>UAZ rusty (AGS-30)</English>
