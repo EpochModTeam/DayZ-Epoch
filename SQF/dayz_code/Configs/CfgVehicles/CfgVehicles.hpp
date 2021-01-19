@@ -660,6 +660,7 @@ class CfgVehicles
 	#include "Car\SUV_DZ.hpp"
 	#include "Car\Pickup_PK_INS.hpp"
 	#include "Car\Offroad_DSHKM_INS.hpp"
+	#include "Car\Offroad_SPG9.hpp"
 	#include "Car\UralCivil_DZ.hpp"
 	#include "Car\BRDM2_DZ.hpp"
 	#include "Car\Jackal.hpp"

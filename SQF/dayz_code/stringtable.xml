@@ -10574,6 +10574,46 @@
 			<English>Pick-up (DSHKM)++++</English>
 			<Russian>Пикап (ДШКМ)++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9">
+			<English>Pick-up GUE (SPG-9)</English>
+			<Russian>Пикап GUE (СПГ-9)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9+">
+			<English>Pick-up GUE (SPG-9)+</English>
+			<Russian>Пикап GUE (СПГ-9)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9++">
+			<English>Pick-up GUE (SPG-9)++</English>
+			<Russian>Пикап GUE (СПГ-9)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9+++">
+			<English>Pick-up GUE (SPG-9)+++</English>
+			<Russian>Пикап GUE (СПГ-9)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9++++">
+			<English>Pick-up GUE (SPG-9)++++</English>
+			<Russian>Пикап GUE (СПГ-9)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9">
+			<English>Pick-up TK (SPG-9)</English>
+			<Russian>Пикап TK (СПГ-9)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9+">
+			<English>Pick-up TK (SPG-9)+</English>
+			<Russian>Пикап TK (СПГ-9)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9++">
+			<English>Pick-up TK (SPG-9)++</English>
+			<Russian>Пикап TK (СПГ-9)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9+++">
+			<English>Pick-up TK (SPG-9)+++</English>
+			<Russian>Пикап TK (СПГ-9)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9++++">
+			<English>Pick-up TK (SPG-9)++++</English>
+			<Russian>Пикап TK (СПГ-9)++++</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT">
 			<English>Pick-up GUE (PKT)</English>
 			<Russian>Пикап GUE (ПКТ)</Russian>
