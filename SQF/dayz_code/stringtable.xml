@@ -9626,6 +9626,31 @@
 			<Russian>Военный внедорожник (M2)++++</Russian>
 			<German>Militär Offroad (M2)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9">
+			<English>Military Offroad (SPG-9)</English>
+			<Russian>Военный внедорожник (СПГ-9)</Russian>
+			<German>Militär Offroad (SPG-9)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9+">
+			<English>Military Offroad (SPG-9)+</English>
+			<Russian>Военный внедорожник (СПГ-9)+</Russian>
+			<German>Militär Offroad (SPG-9)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9++">
+			<English>Military Offroad (SPG-9)++</English>
+			<Russian>Военный внедорожник (СПГ-9)++</Russian>
+			<German>Militär Offroad (SPG-9)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9+++">
+			<English>Military Offroad (SPG-9)+++</English>
+			<Russian>Военный внедорожник (СПГ-9)+++</Russian>
+			<German>Militär Offroad (SPG-9)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9++++">
+			<English>Military Offroad (SPG-9)++++</English>
+			<Russian>Военный внедорожник (СПГ-9)++++</Russian>
+			<German>Militär Offroad (SPG-9)++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_LAV25">
 			<English>LAV-25</English>
 		</Key>
