@@ -23374,9 +23374,9 @@
 			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_136">
-			<English>Unable to build, %1 nearby.</English>
-			<German>Es ist nicht möglich %1 hier aufzubauen.</German>
-			<Russian>Здесь нельзя поставить %1.</Russian>
+			<English>You are not allow to build here a %1 is nearby.</English>
+			<German>Du kannst hier nicht bauen. Ein %1 ist in der Nähe.</German>
+			<Russian>Вам запрещено строить здесь, %1 рядом.</Russian>
 			<Dutch>Bouwen niet mogelijk %1 in de buurt.</Dutch>
 			<French>Impossible de construire, %1 est trop proche.</French>
 			<Czech>Nemůžete postavit %1 poblíž.</Czech>
