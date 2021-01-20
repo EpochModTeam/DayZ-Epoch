@@ -11823,20 +11823,50 @@
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS++++">
 			<English>UAZ Winter (AGS-30)++++</English>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_SPG">
-			<English>UAZ (SPG-9)</English>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS">
+			<English>UAZ INS (SPG-9)</English>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_SPG+">
-			<English>UAZ (SPG-9)+</English>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS+">
+			<English>UAZ INS (SPG-9)+</English>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_SPG++">
-			<English>UAZ (SPG-9)++</English>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS++">
+			<English>UAZ INS (SPG-9)++</English>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_SPG+++">
-			<English>UAZ (SPG-9)+++</English>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS+++">
+			<English>UAZ INS (SPG-9)+++</English>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_SPG++++">
-			<English>UAZ (SPG-9)++++</English>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS++++">
+			<English>UAZ INS (SPG-9)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF">
+			<English>UAZ CDF (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF+">
+			<English>UAZ CDF (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF++">
+			<English>UAZ CDF (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF+++">
+			<English>UAZ CDF (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF++++">
+			<English>UAZ CDF (SPG-9)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK">
+			<English>UAZ TK (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK+">
+			<English>UAZ TK (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK++">
+			<English>UAZ TK (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK+++">
+			<English>UAZ TK (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK++++">
+			<English>UAZ TK (SPG-9)++++</English>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST">
 			<English>UAZ rusty (SPG-9)</English>
