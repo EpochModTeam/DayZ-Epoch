@@ -9701,6 +9701,26 @@
 			<English>BRDM-2 HQ++++</English>
 			<Russian>БРДМ-2 HQ++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF">
+			<English>BRDM-2 HQ (CDF)</English>
+			<Russian>БРДМ-2 HQ (CDF)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF+">
+			<English>BRDM-2 HQ (CDF)+</English>
+			<Russian>БРДМ-2 HQ (CDF)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF++">
+			<English>BRDM-2 HQ (CDF)++</English>
+			<Russian>БРДМ-2 HQ (CDF)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF+++">
+			<English>BRDM-2 HQ (CDF)+++</English>
+			<Russian>БРДМ-2 HQ (CDF)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF++++">
+			<English>BRDM-2 HQ (CDF)++++</English>
+			<Russian>БРДМ-2 HQ (CDF)++++</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST">
 			<English>BRDM-2 HQ (rusty)</English>
 			<German>BRDM-2 HQ (rostig)</German>
@@ -9785,6 +9805,26 @@
 		<Key ID="STR_VEH_NAME_BRDM2_GUE++++">
 			<English>BRDM-2 GUE++++</English>
 			<Russian>БРДМ-2 GUE++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF">
+			<English>BRDM-2 CDF</English>
+			<Russian>БРДМ-2 CDF</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF+">
+			<English>BRDM-2 CDF+</English>
+			<Russian>БРДМ-2 CDF+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF++">
+			<English>BRDM-2 CDF++</English>
+			<Russian>БРДМ-2 CDF++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF+++">
+			<English>BRDM-2 CDF+++</English>
+			<Russian>БРДМ-2 CDF+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF++++">
+			<English>BRDM-2 CDF++++</English>
+			<Russian>БРДМ-2 CDF++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES">
 			<English>BRDM-2 Desert Camo</English>
@@ -11998,6 +12038,31 @@
 			<German>Ural Offen (CDF)++++</German>
 			<Russian>Ural Открытый (CDF)++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF">
+			<English>Ural Fuel (CDF)</English>
+			<German>Ural Treibstoff (CDF)</German>
+			<Russian>Ural Заправщик (CDF)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF+">
+			<English>Ural Fuel (CDF)+</English>
+			<German>Ural Treibstoff (CDF)+</German>
+			<Russian>Ural Заправщик (CDF)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF++">
+			<English>Ural Fuel (CDF)++</English>
+			<German>Ural Treibstoff (CDF)++</German>
+			<Russian>Ural Заправщик (CDF)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF+++">
+			<English>Ural Fuel (CDF)+++</English>
+			<German>Ural Treibstoff (CDF)+++</German>
+			<Russian>Ural Заправщик (CDF)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF++++">
+			<English>Ural Fuel (CDF)++++</English>
+			<German>Ural Treibstoff (CDF)++++</German>
+			<Russian>Ural Заправщик (CDF)++++</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_URAL_UN">
 			<English>Ural (UN)</English>
 		</Key>
@@ -12062,6 +12127,56 @@
 			<English>Ural Weapon Transport (Woodland)++++</English>
 			<Russian>Ural Оружейный (Лесной)++++</Russian>
 			<German>Ural Waffentransport (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS">
+			<English>Ural Material Transport (INS)</English>
+			<Russian>Ural матобеспечения (INS)</Russian>
+			<German>Ural Materialtransport (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS+">
+			<English>Ural Material Transport (INS)+</English>
+			<Russian>Ural матобеспечения (INS)+</Russian>
+			<German>Ural Materialtransport (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS++">
+			<English>Ural Material Transport (INS)++</English>
+			<Russian>Ural матобеспечения (INS)++</Russian>
+			<German>Ural Materialtransport (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS+++">
+			<English>Ural Material Transport (INS)+++</English>
+			<Russian>Ural матобеспечения (INS)+++</Russian>
+			<German>Ural Materialtransport (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS++++">
+			<English>Ural Material Transport (INS)++++</English>
+			<Russian>Ural матобеспечения (INS)++++</Russian>
+			<German>Ural Materialtransport (INS)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS">
+			<English>Ural Weapon Transport (INS)</English>
+			<Russian>Ural Оружейный (INS)</Russian>
+			<German>Ural Waffentransport (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS+">
+			<English>Ural Weapon Transport (INS)+</English>
+			<Russian>Ural Оружейный (INS)+</Russian>
+			<German>Ural Waffentransport (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS++">
+			<English>Ural Weapon Transport (INS)++</English>
+			<Russian>Ural Оружейный (INS)++</Russian>
+			<German>Ural Waffentransport (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS+++">
+			<English>Ural Weapon Transport (INS)+++</English>
+			<Russian>Ural Оружейный (INS)+++</Russian>
+			<German>Ural Waffentransport (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS++++">
+			<English>Ural Weapon Transport (INS)++++</English>
+			<Russian>Ural Оружейный (INS)++++</Russian>
+			<German>Ural Waffentransport (INS)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CIVIL">
 			<English>Ural (Civil)</English>
@@ -12137,6 +12252,31 @@
 			<English>Ural Fuel (Woodland)++++</English>
 			<Russian>Ural Заправщик (Лесной)++++</Russian>
 			<German>Ural Treibstoff (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS">
+			<English>Ural Fuel (INS)</English>
+			<German>Ural Treibstoff (INS)</German>
+			<Russian>Ural Заправщик (INS)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS+">
+			<English>Ural Fuel (INS)+</English>
+			<German>Ural Treibstoff (INS)+</German>
+			<Russian>Ural Заправщик (INS)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS++">
+			<English>Ural Fuel (INS)++</English>
+			<German>Ural Treibstoff (INS)++</German>
+			<Russian>Ural Заправщик (INS)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS+++">
+			<English>Ural Fuel (INS)+++</English>
+			<German>Ural Treibstoff (INS)+++</German>
+			<Russian>Ural Заправщик (INS)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS++++">
+			<English>Ural Fuel (INS)++++</English>
+			<German>Ural Treibstoff (INS)++++</German>
+			<Russian>Ural Заправщик (INS)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER">
 			<English>Ural (Winter)</English>
