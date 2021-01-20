@@ -8735,6 +8735,56 @@
 			<Russian>Хамви M2 (Лесной камуфляж)++++</Russian>
 			<German>Humvee M2 (Waldtarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19">
+			<English>HMMWV MK19 (Woodland)</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)</Russian>
+			<German>Humvee MK19 (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19+">
+			<English>HMMWV MK19 (Woodland)+</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)+</Russian>
+			<German>Humvee MK19 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19++">
+			<English>HMMWV MK19 (Woodland)++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)++</Russian>
+			<German>Humvee MK19 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19+++">
+			<English>HMMWV MK19 (Woodland)+++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)+++</Russian>
+			<German>Humvee MK19 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19++++">
+			<English>HMMWV MK19 (Woodland)++++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)++++</Russian>
+			<German>Humvee MK19 (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19">
+			<English>HMMWV MK19 (Desert)</English>
+			<Russian>Хамви MK19 (Пустынный)</Russian>
+			<German>Humvee MK19 (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19+">
+			<English>HMMWV MK19 (Desert)+</English>
+			<Russian>Хамви MK19 (Пустынный)+</Russian>
+			<German>Humvee MK19 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19++">
+			<English>HMMWV MK19 (Desert)++</English>
+			<Russian>Хамви MK19 (Пустынный)++</Russian>
+			<German>Humvee MK19 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19+++">
+			<English>HMMWV MK19 (Desert)+++</English>
+			<Russian>Хамви MK19 (Пустынный)+++</Russian>
+			<German>Humvee MK19 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19++++">
+			<English>HMMWV MK19 (Desert)++++</English>
+			<Russian>Хамви MK19 (Пустынный)++++</Russian>
+			<German>Humvee MK19 (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_DES">
 			<English>HMMWV (Desert)</English>
 			<Russian>Хамви (Пустынный)</Russian>
@@ -11829,22 +11879,23 @@
 			<English>UAZ TK (AGS-30)++++</English>
 			<Russian>UAZ TK (АГС-30)++++</Russian>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags_RUST">
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST">
 			<English>UAZ rusty (AGS-30)</English>
 			<German>UAZ rostig (AGS-30)</German>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags_RUST+">
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST+">
 			<English>UAZ rusty (AGS-30)+</English>
 			<German>UAZ rostig (AGS-30)+</German>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags_RUST++">
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST++">
 			<English>UAZ rusty (AGS-30)++</English>
 			<German>UAZ rostig (AGS-30)++</German>
 		</Key>
-		<Key ID="str_veh_name_uaz_ags_RUST+++">
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST+++">
 			<English>UAZ rusty (AGS-30)+++</English>
 			<German>UAZ rostig (AGS-30)+++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST++++">
 			<English>UAZ rusty (AGS-30)++++</English>
 			<German>UAZ rostig (AGS-30)++++</German>
 		</Key>
@@ -23374,7 +23425,7 @@
 			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_136">
-			<English>You are not allow to build here a %1 is nearby.</English>
+			<English>You are not allowed to build here a %1 is nearby.</English>
 			<German>Du kannst hier nicht bauen. Ein %1 ist in der Nähe.</German>
 			<Russian>Вам запрещено строить здесь, %1 рядом.</Russian>
 			<Dutch>Bouwen niet mogelijk %1 in de buurt.</Dutch>
