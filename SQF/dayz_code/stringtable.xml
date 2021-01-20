@@ -9701,6 +9701,26 @@
 			<English>BRDM-2 HQ++++</English>
 			<Russian>БРДМ-2 HQ++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF">
+			<English>BRDM-2 HQ (CDF)</English>
+			<Russian>БРДМ-2 HQ (CDF)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF+">
+			<English>BRDM-2 HQ (CDF)+</English>
+			<Russian>БРДМ-2 HQ (CDF)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF++">
+			<English>BRDM-2 HQ (CDF)++</English>
+			<Russian>БРДМ-2 HQ (CDF)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF+++">
+			<English>BRDM-2 HQ (CDF)+++</English>
+			<Russian>БРДМ-2 HQ (CDF)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF++++">
+			<English>BRDM-2 HQ (CDF)++++</English>
+			<Russian>БРДМ-2 HQ (CDF)++++</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST">
 			<English>BRDM-2 HQ (rusty)</English>
 			<German>BRDM-2 HQ (rostig)</German>
@@ -9785,6 +9805,26 @@
 		<Key ID="STR_VEH_NAME_BRDM2_GUE++++">
 			<English>BRDM-2 GUE++++</English>
 			<Russian>БРДМ-2 GUE++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF">
+			<English>BRDM-2 CDF</English>
+			<Russian>БРДМ-2 CDF</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF+">
+			<English>BRDM-2 CDF+</English>
+			<Russian>БРДМ-2 CDF+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF++">
+			<English>BRDM-2 CDF++</English>
+			<Russian>БРДМ-2 CDF++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF+++">
+			<English>BRDM-2 CDF+++</English>
+			<Russian>БРДМ-2 CDF+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF++++">
+			<English>BRDM-2 CDF++++</English>
+			<Russian>БРДМ-2 CDF++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES">
 			<English>BRDM-2 Desert Camo</English>
