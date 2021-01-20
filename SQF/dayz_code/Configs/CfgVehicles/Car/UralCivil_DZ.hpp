@@ -711,6 +711,177 @@ class UralRepair_CDF_DZE4: UralRepair_CDF_DZE3 {
 	fuelCapacity = 615;	
 };
 
+class UralRefuel_INS;
+class UralRefuel_INS_DZ: UralRefuel_INS {
+	scope = 2;
+	displayName = "$STR_VEH_NAME_URAL_FUEL_INS";
+	crew = "";
+	typicalCargo[] = {};
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 5;	
+	class TransportMagazines{};
+	class TransportWeapons{};
+	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
+	fuelCapacity = 10000;
+	vehicleClass = "DayZ Epoch Vehicles";
+	supplyRadius = 2.6;
+	
+	class Upgrades {
+		ItemTruckORP[] = {"UralRefuel_INS_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+class UralRefuel_INS_DZE1: UralRefuel_INS_DZ {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_INS+";
+	original = "UralRefuel_INS_DZ";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"UralRefuel_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+class UralRefuel_INS_DZE2: UralRefuel_INS_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_INS++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"UralRefuel_INS_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+class UralRefuel_INS_DZE3: UralRefuel_INS_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_INS+++";
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 10;	
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"UralRefuel_INS_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
+	};
+};
+class UralRefuel_INS_DZE4: UralRefuel_INS_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_INS++++";
+	fuelCapacity = 20000;
+};
+
+class UralReammo_INS;
+class UralReammo_INS_DZE: UralReammo_INS {
+	scope = 2;
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_INS";
+	crew = "";
+	typicalCargo[] = {};
+	transportMaxWeapons = 75;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 8;
+	class TransportMagazines{};
+	class TransportWeapons{};
+	transportAmmo = 0;
+	vehicleClass = "DayZ Epoch Vehicles";
+	supplyRadius = 2.6;
+	
+	class Upgrades {
+		ItemTruckORP[] = {"UralReammo_INS_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class UralReammo_INS_DZE1 : UralReammo_INS_DZE {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_INS+";
+	original = "UralReammo_INS_DZE";
+	maxspeed = 100;
+	terrainCoef = 1.8;
+	turnCoef = 2.0;
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"UralReammo_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class UralReammo_INS_DZE2: UralReammo_INS_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_INS++";
+	armor = 70;
+	damageResistance = 0.0255;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"UralReammo_INS_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",6},{"ItemScrews",2}}};
+	};
+};
+
+class UralReammo_INS_DZE3: UralReammo_INS_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_INS+++";
+	transportMaxWeapons = 150;
+	transportMaxMagazines = 200;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"UralReammo_INS_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class UralReammo_INS_DZE4: UralReammo_INS_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_WEAPONS_INS++++";
+	fuelCapacity = 615;	
+};
+
+class UralRepair_INS;
+class UralRepair_INS_DZE: UralRepair_INS {
+	scope = 2;
+	displayName = "$STR_VEH_NAME_URAL_AMMO_INS";
+	crew = "";
+	typicalCargo[] = {};
+	transportMaxWeapons = 25;
+	transportMaxMagazines = 300;
+	transportmaxbackpacks = 8;
+	class TransportMagazines{};
+	class TransportWeapons{};
+	transportRepair = 0;
+	vehicleClass = "DayZ Epoch Vehicles";
+	supplyRadius = 2.6;
+	
+	class Upgrades {
+		ItemTruckORP[] = {"UralRepair_INS_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+
+class UralRepair_INS_DZE1 : UralRepair_INS_DZE {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_INS+";
+	original = "UralRepair_INS_DZE";
+	maxspeed = 100;
+	terrainCoef = 1.8;
+	turnCoef = 2.0;
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"UralRepair_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+
+class UralRepair_INS_DZE2: UralRepair_INS_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_INS++";
+	armor = 70;
+	damageResistance = 0.0255;
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"UralRepair_INS_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",6},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+	};
+};
+
+class UralRepair_INS_DZE3: UralRepair_INS_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_INS+++";
+	transportMaxWeapons = 50;
+	transportMaxMagazines = 600;
+	transportmaxbackpacks = 16;
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"UralRepair_INS_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+	};
+};
+
+class UralRepair_INS_DZE4: UralRepair_INS_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_AMMO_INS++++";
+	fuelCapacity = 615;	
+};
+
 class Ural_WINTER_DZE: Ural_INS_DZE {
 	displayName = "$STR_VEH_NAME_URAL_WINTER";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ural\ural_winter_co.paa","\dayz_epoch_c\skins\ural\ural_plachta_winter_co.paa"};

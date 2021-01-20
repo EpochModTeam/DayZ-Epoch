@@ -12128,6 +12128,56 @@
 			<Russian>Ural Оружейный (Лесной)++++</Russian>
 			<German>Ural Waffentransport (Waldtarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS">
+			<English>Ural Material Transport (INS)</English>
+			<Russian>Ural матобеспечения (INS)</Russian>
+			<German>Ural Materialtransport (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS+">
+			<English>Ural Material Transport (INS)+</English>
+			<Russian>Ural матобеспечения (INS)+</Russian>
+			<German>Ural Materialtransport (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS++">
+			<English>Ural Material Transport (INS)++</English>
+			<Russian>Ural матобеспечения (INS)++</Russian>
+			<German>Ural Materialtransport (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS+++">
+			<English>Ural Material Transport (INS)+++</English>
+			<Russian>Ural матобеспечения (INS)+++</Russian>
+			<German>Ural Materialtransport (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS++++">
+			<English>Ural Material Transport (INS)++++</English>
+			<Russian>Ural матобеспечения (INS)++++</Russian>
+			<German>Ural Materialtransport (INS)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS">
+			<English>Ural Weapon Transport (INS)</English>
+			<Russian>Ural Оружейный (INS)</Russian>
+			<German>Ural Waffentransport (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS+">
+			<English>Ural Weapon Transport (INS)+</English>
+			<Russian>Ural Оружейный (INS)+</Russian>
+			<German>Ural Waffentransport (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS++">
+			<English>Ural Weapon Transport (INS)++</English>
+			<Russian>Ural Оружейный (INS)++</Russian>
+			<German>Ural Waffentransport (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS+++">
+			<English>Ural Weapon Transport (INS)+++</English>
+			<Russian>Ural Оружейный (INS)+++</Russian>
+			<German>Ural Waffentransport (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS++++">
+			<English>Ural Weapon Transport (INS)++++</English>
+			<Russian>Ural Оружейный (INS)++++</Russian>
+			<German>Ural Waffentransport (INS)++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CIVIL">
 			<English>Ural (Civil)</English>
 			<Russian>Ural (Гражданский)</Russian>
@@ -12202,6 +12252,31 @@
 			<English>Ural Fuel (Woodland)++++</English>
 			<Russian>Ural Заправщик (Лесной)++++</Russian>
 			<German>Ural Treibstoff (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS">
+			<English>Ural Fuel (INS)</English>
+			<German>Ural Treibstoff (INS)</German>
+			<Russian>Ural Заправщик (INS)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS+">
+			<English>Ural Fuel (INS)+</English>
+			<German>Ural Treibstoff (INS)+</German>
+			<Russian>Ural Заправщик (INS)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS++">
+			<English>Ural Fuel (INS)++</English>
+			<German>Ural Treibstoff (INS)++</German>
+			<Russian>Ural Заправщик (INS)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS+++">
+			<English>Ural Fuel (INS)+++</English>
+			<German>Ural Treibstoff (INS)+++</German>
+			<Russian>Ural Заправщик (INS)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS++++">
+			<English>Ural Fuel (INS)++++</English>
+			<German>Ural Treibstoff (INS)++++</German>
+			<Russian>Ural Заправщик (INS)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER">
 			<English>Ural (Winter)</English>
