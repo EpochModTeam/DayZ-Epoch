@@ -22,7 +22,7 @@ class PDR_DZ: M4A1
 		soundBegin[] = {"begin1",1};
 		reloadTime = 0.09;
 		recoil = "recoil_single_primary_3outof10";
-		recoilProne = "recoil_single_primary_prone_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		dispersion = 0.0025;
 		minRange = 2;
 		minRangeProbab = 0.1;
@@ -37,7 +37,7 @@ class PDR_DZ: M4A1
 		soundBegin[] = {"begin1",1};
 		reloadTime = 0.09;
 		recoil = "recoil_auto_primary_3outof10";
-		recoilProne = "recoil_auto_primary_prone_3outof10";
+		recoilProne = "recoil_auto_primary_prone_2outof10";
 		dispersion = 0.004;
 		minRange = 2;
 		minRangeProbab = 0.1;

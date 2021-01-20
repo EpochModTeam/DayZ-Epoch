@@ -57,6 +57,8 @@ class RK95_DZ: AKM_DZ
 	class Single: Mode_SemiAuto
 	{
 		begin1[] = {"\RH_aks\sound\rk95.wss",1.778279,1,1000};
+		recoil = "recoil_single_primary_5outof10";
+		recoilProne = "recoil_single_primary_prone_4outof10";
 		soundBegin[] = {"begin1",1};
 		multiplier = 1;
 		burst = 1;
@@ -84,6 +86,8 @@ class RK95_DZ: AKM_DZ
 	{
 		begin1[] = {"\RH_aks\sound\rk95.wss",1.778279,1,1000};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_5outof10";
+		recoilProne = "recoil_single_primary_prone_4outof10";
 		soundContinuous = 0;
 		multiplier = 1;
 		burst = 1;

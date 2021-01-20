@@ -196,7 +196,7 @@ class MK14_SD_DZ: M14_EP1
 		maxRange = 200;
 		midRange = 80;
 		recoil = "recoil_auto_primary_5outof10";
-		recoilProne = "recoil_auto_primary_prone_5outof10";
+		recoilProne = "recoil_auto_primary_prone_4outof10";
 	};	
 	
 	class Attachments

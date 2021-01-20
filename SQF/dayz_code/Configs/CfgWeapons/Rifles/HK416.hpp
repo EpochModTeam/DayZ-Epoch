@@ -55,6 +55,8 @@ class HK416_DZ : M4A1
 	{
 		begin1[] = {"\RH_hk416\sound\hk416.wss",1.778279,1,800};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_3outof10";
+		recoilProne = "recoil_single_primary_prone_3outof10";
 		reloadtime = 0.071;
 		dispersion = 0.0025;
 		minRange = 2;
@@ -68,6 +70,8 @@ class HK416_DZ : M4A1
 	{
 		begin1[] = {"\RH_hk416\sound\hk416.wss",1.778279,1,800};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_3outof10";
+		recoilProne = "recoil_single_primary_prone_3outof10";
 		reloadtime = 0.071;
 		dispersion = 0.0025;
 		minRange = 2;
@@ -110,6 +114,8 @@ class HK416_SD_DZ : M4A1_AIM_SD_camo
 	{
 		begin1[] = {"\RH_hk416\sound\hk416sd.wss",1.0,1,80};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		reloadtime = 0.071;
 		dispersion = 0.0025;
 		minRange = 2;
@@ -123,6 +129,8 @@ class HK416_SD_DZ : M4A1_AIM_SD_camo
 	{
 		begin1[] = {"\RH_hk416\sound\hk416sd.wss",1.0,1,80};
 		soundBegin[] = {"begin1",1};
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		reloadtime = 0.071;
 		dispersion = 0.0025;
 		minRange = 2;

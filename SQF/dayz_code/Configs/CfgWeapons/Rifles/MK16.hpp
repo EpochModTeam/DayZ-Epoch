@@ -75,8 +75,8 @@ class MK16_DZ : M4A1
 		soundBegin[] = {"begin1",1};
 		dispersion = 0.0025;
 		reloadtime = 0.096;
-		recoil = "recoil_single_primary_4outof10";
-		recoilProne = "recoil_single_primary_prone_3outof10";
+		recoil = "recoil_single_primary_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		aiRateOfFire = 1;
 		aiRateOfFireDistance = 300;
 		minRange = 0;
@@ -93,7 +93,7 @@ class MK16_DZ : M4A1
 		dispersion = 0.0025;
 		reloadtime = 0.096;
 		recoil = "recoil_single_primary_4outof10";
-		recoilProne = "recoil_single_primary_prone_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		aiRateOfFire = 0.2;
 		aiRateOfFireDistance = 50;
 		minRange = 0;

@@ -25,8 +25,8 @@ class Sten_MK_DZ: MP5A5
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		ffCount = 1;
-		recoil = "recoil_auto_primary_1outof10";
-		recoilProne = "recoil_auto_primary_prone_1outof10";
+		recoil = "recoil_auto_primary_2outof10";
+		recoilProne = "recoil_auto_primary_prone_2outof10";
 		aiRateOfFire = 0.001;
 		dispersion = 0.003; //0.007;
 		minRange = 0;
