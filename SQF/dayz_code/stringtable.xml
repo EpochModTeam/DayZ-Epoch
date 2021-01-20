@@ -8735,6 +8735,31 @@
 			<Russian>Хамви M2 (Лесной камуфляж)++++</Russian>
 			<German>Humvee M2 (Waldtarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19">
+			<English>HMMWV MK19 (Woodland)</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)</Russian>
+			<German>Humvee MK19 (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19+">
+			<English>HMMWV MK19 (Woodland)+</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)+</Russian>
+			<German>Humvee MK19 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19++">
+			<English>HMMWV MK19 (Woodland)++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)++</Russian>
+			<German>Humvee MK19 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19+++">
+			<English>HMMWV MK19 (Woodland)+++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)+++</Russian>
+			<German>Humvee MK19 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19++++">
+			<English>HMMWV MK19 (Woodland)++++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)++++</Russian>
+			<German>Humvee MK19 (Waldtarn)++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES">
 			<English>HMMWV (Desert)</English>
 			<Russian>Хамви (Пустынный)</Russian>
