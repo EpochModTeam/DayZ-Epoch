@@ -540,6 +540,61 @@ class UralRefuel_TK_EP1_DZE4: UralRefuel_TK_EP1_DZE3 {
 	fuelCapacity = 20000;
 };
 
+class UralRefuel_CDF;
+class UralRefuel_CDF_DZ: UralRefuel_CDF {
+	scope = 2;
+	displayName = "$STR_VEH_NAME_URAL_FUEL_CDF";
+	crew = "";
+	typicalCargo[] = {};
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 50;
+	transportmaxbackpacks = 5;	
+	class TransportMagazines{};
+	class TransportWeapons{};
+	transportFuel = 0; //Required to disable A2 built in auto refuel for fuel trucks
+	fuelCapacity = 10000;
+	vehicleClass = "DayZ Epoch Vehicles";
+	supplyRadius = 2.6;
+	
+	class Upgrades {
+		ItemTruckORP[] = {"UralRefuel_CDF_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+	};
+};
+class UralRefuel_CDF_DZE1: UralRefuel_CDF_DZ {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_CDF+";
+	original = "UralRefuel_CDF_DZ";
+	maxspeed = 100; //base 80
+	terrainCoef = 1.8;  // base 2.0
+	turnCoef = 2.0;  // base 3.7
+	
+	class Upgrades {
+		ItemTruckAVE[] = {"UralRefuel_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+	};
+};
+class UralRefuel_CDF_DZE2: UralRefuel_CDF_DZE1 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_CDF++";
+	armor = 70; //base 32
+	damageResistance = 0.0255; // base 0.00243
+	
+	class Upgrades {
+		ItemTruckLRK[] = {"UralRefuel_CDF_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+class UralRefuel_CDF_DZE3: UralRefuel_CDF_DZE2 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_CDF+++";
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 100;
+	transportmaxbackpacks = 10;	
+	
+	class Upgrades {
+		ItemTruckTNK[] = {"UralRefuel_CDF_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",2},{"PartFueltank",2},{"ItemFuelBarrel",6}}};
+	};
+};
+class UralRefuel_CDF_DZE4: UralRefuel_CDF_DZE3 {
+	displayName = "$STR_VEH_NAME_URAL_FUEL_CDF++++";
+	fuelCapacity = 20000;
+};
+
 class UralReammo_CDF;
 class UralReammo_CDF_DZE: UralReammo_CDF {
 	scope = 2;

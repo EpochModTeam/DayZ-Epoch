@@ -12038,6 +12038,31 @@
 			<German>Ural Offen (CDF)++++</German>
 			<Russian>Ural Открытый (CDF)++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF">
+			<English>Ural Fuel (CDF)</English>
+			<German>Ural Treibstoff (CDF)</German>
+			<Russian>Ural Заправщик (CDF)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF+">
+			<English>Ural Fuel (CDF)+</English>
+			<German>Ural Treibstoff (CDF)+</German>
+			<Russian>Ural Заправщик (CDF)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF++">
+			<English>Ural Fuel (CDF)++</English>
+			<German>Ural Treibstoff (CDF)++</German>
+			<Russian>Ural Заправщик (CDF)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF+++">
+			<English>Ural Fuel (CDF)+++</English>
+			<German>Ural Treibstoff (CDF)+++</German>
+			<Russian>Ural Заправщик (CDF)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF++++">
+			<English>Ural Fuel (CDF)++++</English>
+			<German>Ural Treibstoff (CDF)++++</German>
+			<Russian>Ural Заправщик (CDF)++++</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_URAL_UN">
 			<English>Ural (UN)</English>
 		</Key>
