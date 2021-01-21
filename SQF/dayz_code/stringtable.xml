@@ -643,7 +643,7 @@
 		<Key ID="str_actions_repair_01">
 			<!-- Remove - Part (50%) -->
 			<English>Remove%1 (%2)</English>
-			<Russian>Демонтировать%1 (%2)</Russian>
+			<Russian>Демонтировать %1 (%2)</Russian>
 			<Spanish>Remover%1 (%2)</Spanish>
 			<Czech>Odstranit%1 (%2)</Czech>
 			<French>Supprimer%1 (%2)</French>
@@ -653,7 +653,7 @@
 			<!-- Repair - Part (50%) -->
 			<English>Repair%1 (%2)</English>
 			<German>Repariere %1 (%2)</German>
-			<Russian>Отремонтировать%1 (%2)</Russian>
+			<Russian>Отремонтировать %1 (%2)</Russian>
 			<Spanish>Reparar%1 (%2)</Spanish>
 			<French>Réparer%1 (%2)</French>
 			<Czech>Opravit%1 (%2)</Czech>
@@ -808,7 +808,7 @@
 		<Key ID="str_actions_medical_dropbody">
 			<English>Drop body</English>
 			<German>Körper ablegen</German>
-			<Russian>Отпустить тело</Russian>
+			<Russian>Опустить тело</Russian>
 			<Spanish>Soltar cuerpo</Spanish>
 			<French>Lâcher le corps</French>
 			<Czech>Odložit tělo</Czech>
@@ -839,7 +839,7 @@
 		<Key ID="str_actions_delete">
 			<English>Destroy %1</English>
 			<German>%1 entfernen</German>
-			<Russian>Уничтожить %1</Russian>
+			<Russian>Разобрать %1</Russian>
 			<French>Détruire %1</French>
 			<Czech>Zničit %1</Czech>
 		</Key>
@@ -1161,7 +1161,7 @@
 		</Key>
 		<Key ID="str_fishing_nibble">
 			<English>Nibble... Nibble...</English>
-			<Russian>Ждем... Ждееееееееем..</Russian>
+			<Russian>Ждем... Ждееееееееем...</Russian>
 			<Spanish>Pica... Pica...</Spanish>
 			<Czech>Bere... Nebere...</Czech>
 			<French>Ça mord</French>
@@ -1203,7 +1203,7 @@
 		</Key>
 		<Key ID="str_fishing_cast">
 			<English>You cast the line over %1 Yards.</English>
-			<Russian>Вы забросили удочку на %1 ярдов.</Russian>
+			<Russian>Вы забросили удочку на %1 метров.</Russian>
 			<Spanish>Lanzaste la tanza cerca de %1 metros.</Spanish>
 			<Czech>Nahodili jste %1 metrů.</Czech>
 			<French>Vous lancez votre ligne à %1 mètres.</French>
@@ -1246,7 +1246,7 @@
 		<Key ID="str_siphon_preparing">
 			<!-- %1 empty jerrycan name -->
 			<English>Preparing to siphon, stand still to fill %1.</English>
-			<Russian>Готовимся слить топливо. Не дергайтесь, чтобы наполнить %1.</Russian>
+			<Russian>Готовимся слить топливо. Не двигайтесь, чтобы наполнить %1.</Russian>
 			<Spanish>Preparando el sifón, quedate quieto para llenar el %1.</Spanish>
 			<Czech>Začíná přečerpávání. Stůjte klidně, abyste naplnili %1.</Czech>
 			<French>Prêt pour le siphonnage, ne bougez plus pour remplir le %1.</French>
@@ -1614,7 +1614,7 @@
 		</Key>
 		<Key ID="str_cannotCombine">
 			<English>You have only one %1, there&apos;s nothing to combine.</English>
-			<Russian>У вас только один (%1), Нечего переснаряжать.</Russian>
+			<Russian>У вас только один (%1), нечего переснаряжать.</Russian>
 			<French>Vous avez seulement 1 %1, Il n&apos;y a rien à arranger.</French>
 			<Czech>Ve vašem inventáři je %1 pouze jednou. Není co zkombinovat.</Czech>
 			<German>Du hast nicht genügend %1. Es gibt nichts zu kombinieren.</German>
@@ -2078,7 +2078,7 @@
 		<Key ID="STR_ITEM_NAME_equip_tent_poles">
 			<English>Tent Poles</English>
 			<German>Zeltstangen</German>
-			<Russian>Pаспорок</Russian>
+			<Russian>Pаспорки</Russian>
 			<Spanish>Varilla Metálica</Spanish>
 			<French>Perche métallique</French>
 			<Czech>Stanové tyče</Czech>
@@ -2640,7 +2640,7 @@
 		<Key ID="STR_ITEM_NAME_equip_aa_battery_empty">
 			<English>AA Battery (empty)</English>
 			<German>AA-Batterie (leer)</German>
-			<Russian>Батарейка АА (порожний)</Russian>
+			<Russian>Батарейка АА (разряжена)</Russian>
 			<Spanish>Batería AA (vacía)</Spanish>
 			<French>Pile de type AA (vide)</French>
 			<Czech>AA baterie (prázdný)</Czech>
@@ -2668,7 +2668,7 @@
 		<Key ID="STR_ITEM_NAME_equip_d_battery_empty">
 			<English>D Battery (empty)</English>
 			<German>D-Batterie (leer)</German>
-			<Russian>Батарейка D (порожний)</Russian>
+			<Russian>Батарейка D (разряжена)</Russian>
 			<Spanish>Batería D (vacía)</Spanish>
 			<French>Pile de type D (vide)</French>
 			<Czech>D baterie (prázdný)</Czech>
@@ -3298,7 +3298,7 @@
 		<Key ID="STR_EQUIP_DESC_1_BROKEN">
 			<English>Broken collapsible spade that must be repaired.</English>
 			<German>Ein kaputter Klappspaten, welcher repariert werden muss.</German>
-			<Russian>Сломанная саперная лопатка, которую нужно починить.</Russian>
+			<Russian>Сломанная саперная лопатка, которую необходимо починить.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_1b">
 			<English>Shovel</English>
@@ -3350,7 +3350,7 @@
 		<Key ID="STR_EQUIP_DESC_2_BROKEN">
 			<English>A broken toolbox that must be repaired.</English>
 			<German>Ein kaputter Werkzeugkasten, welcher repariert werden muss.</German>
-			<Russian>Сломанный набор инструментов, который нужно починить.</Russian>
+			<Russian>Сломанный набор инструментов, который необходимо починить.</Russian>
 		</Key>
 		<Key ID="str_info_limitedbox">
 			<English>While creating the fire you realise you only have 5 matches left.</English>
@@ -3387,7 +3387,7 @@
 		<Key ID="STR_EQUIP_NAME_MATCHES_5">
 			<English>Box of Matches (5 left)</English>
 			<German>Streichhölzer (5 übrig)</German>
-			<Russian>Коробок спичек (5 izquierda)</Russian>
+			<Russian>Коробок спичек (5 шт.)</Russian>
 			<Spanish>Caja de Fósforos (5 restante)</Spanish>
 			<French>Boîte d&apos;allumettes (5 reste)</French>
 			<Czech>Krabička zápalek (5 zbývající)</Czech>
@@ -3395,7 +3395,7 @@
 		<Key ID="STR_EQUIP_NAME_MATCHES_4">
 			<English>Box of Matches (4 left)</English>
 			<German>Streichhölzer (4 übrig)</German>
-			<Russian>Коробок спичек (4 izquierda)</Russian>
+			<Russian>Коробок спичек (4 шт.)</Russian>
 			<Spanish>Caja de Fósforos (4 restante)</Spanish>
 			<French>Boîte d&apos;allumettes (4 reste)</French>
 			<Czech>Krabička zápalek (4 zbývající)</Czech>
@@ -3403,7 +3403,7 @@
 		<Key ID="STR_EQUIP_NAME_MATCHES_3">
 			<English>Box of Matches (3 left)</English>
 			<German>Streichhölzer (3 übrig)</German>
-			<Russian>Коробок спичек (3 izquierda)</Russian>
+			<Russian>Коробок спичек (3 шт.)</Russian>
 			<Spanish>Caja de Fósforos (3 restante)</Spanish>
 			<French>Boîte d&apos;allumettes (3 reste)</French>
 			<Czech>Krabička zápalek (3 zbývající)</Czech>
@@ -3411,7 +3411,7 @@
 		<Key ID="STR_EQUIP_NAME_MATCHES_2">
 			<English>Box of Matches (2 left)</English>
 			<German>Streichhölzer (2 übrig)</German>
-			<Russian>Коробок спичек (2 izquierda)</Russian>
+			<Russian>Коробок спичек (2 шт.)</Russian>
 			<Spanish>Caja de Fósforos (2 restante)</Spanish>
 			<French>Boîte d&apos;allumettes (2 reste)</French>
 			<Czech>Krabička zápalek (2 zbývající)</Czech>
@@ -3419,7 +3419,7 @@
 		<Key ID="STR_EQUIP_NAME_MATCHES_1">
 			<English>Box of Matches (1 left)</English>
 			<German>Streichhölzer (1 übrig)</German>
-			<Russian>Коробок спичек (1 izquierda)</Russian>
+			<Russian>Коробок спичек (1 шт.)</Russian>
 			<Spanish>Caja de Fósforos (1 restante)</Spanish>
 			<French>Boîte d&apos;allumettes (1 reste)</French>
 			<Czech>Krabička zápalek (1 zbývající)</Czech>
@@ -3558,7 +3558,7 @@
 		<Key ID="STR_EQUIP_DESC_5_BROKEN">
 			<English>A broken Battery-powered Flashlight that must be repaired.</English>
 			<German>Eine kaputte batteriebetriebene Taschenlampe, welche repariert werden muss.</German>
-			<Russian>Сломанный фонарик на батарейках, который нужно починить.</Russian>
+			<Russian>Сломанный фонарик на батарейках, который необходимо починить.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_6">
 			<English>Flashlight (Military)</English>
@@ -3584,7 +3584,7 @@
 		<Key ID="STR_EQUIP_DESC_6_BROKEN">
 			<English>A broken military Red-light that must be repaired.</English>
 			<German>Eine kaputte militärische, batteriebetriebene Rotlichtlampe, welche repariert werden muss.</German>
-			<Russian>Сломанный армейский фонарик на батарейках, который нужно починить.</Russian>
+			<Russian>Сломанный армейский фонарик на батарейках, который необходимо починить.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_7">
 			<English>Bandage</English>
@@ -3794,7 +3794,7 @@
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_6">
 			<English>Antibiotics (6 left)</English>
 			<German>Antibiotikum (6 übrig)</German>
-			<Russian>Антибиотики (6 izquierda)</Russian>
+			<Russian>Антибиотики (6 таблеток)</Russian>
 			<Spanish>Antibióticos (6 restante)</Spanish>
 			<French>Antibiotiques (6 reste)</French>
 			<Czech>Antibiotika (6 zbývající)</Czech>
@@ -3802,7 +3802,7 @@
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_5">
 			<English>Antibiotics (5 left)</English>
 			<German>Antibiotikum (5 übrig)</German>
-			<Russian>Антибиотики (5 izquierda)</Russian>
+			<Russian>Антибиотики (5 таблеток)</Russian>
 			<Spanish>Antibióticos (5 restante)</Spanish>
 			<French>Antibiotiques (5 reste)</French>
 			<Czech>Antibiotika (5 zbývající)</Czech>
@@ -3810,7 +3810,7 @@
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_4">
 			<English>Antibiotics (4 left)</English>
 			<German>Antibiotikum (4 übrig)</German>
-			<Russian>Антибиотики (4 izquierda)</Russian>
+			<Russian>Антибиотики (4 таблетки)</Russian>
 			<Spanish>Antibióticos (4 restante)</Spanish>
 			<French>Antibiotiques (4 reste)</French>
 			<Czech>Antibiotika (4 zbývající)</Czech>
@@ -3818,7 +3818,7 @@
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_3">
 			<English>Antibiotics (3 left)</English>
 			<German>Antibiotikum (3 übrig)</German>
-			<Russian>Антибиотики (3 izquierda)</Russian>
+			<Russian>Антибиотики (3 таблетки)</Russian>
 			<Spanish>Antibióticos (3 restante)</Spanish>
 			<French>Antibiotiques (3 reste)</French>
 			<Czech>Antibiotika (3 zbývající)</Czech>
@@ -3826,7 +3826,7 @@
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_2">
 			<English>Antibiotics (2 left)</English>
 			<German>Antibiotikum (2 übrig)</German>
-			<Russian>Антибиотики (2 izquierda)</Russian>
+			<Russian>Антибиотики (2 таблетки)</Russian>
 			<Spanish>Antibióticos (2 restante)</Spanish>
 			<French>Antibiotiques (2 reste)</French>
 			<Czech>Antibiotika (2 zbývající)</Czech>
@@ -3834,7 +3834,7 @@
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_1">
 			<English>Antibiotics (1 left)</English>
 			<German>Antibiotikum (1 übrig)</German>
-			<Russian>Антибиотики (1 izquierda)</Russian>
+			<Russian>Антибиотики (1 таблетка)</Russian>
 			<Spanish>Antibióticos (1 restante)</Spanish>
 			<French>Antibiotiques (1 reste)</French>
 			<Czech>Antibiotika (1 zbývající)</Czech>
@@ -3842,7 +3842,7 @@
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_EMPTY">
 			<English>Antibiotics (empty)</English>
 			<German>Antibiotikum (leer)</German>
-			<Russian>Антибиотики (пустой)</Russian>
+			<Russian>Антибиотики (пусто)</Russian>
 			<Spanish>Antibióticos (vacio)</Spanish>
 			<French>Antibiotiques (vide)</French>
 			<Czech>Antibiotika (prázdný)</Czech>
@@ -3919,7 +3919,7 @@
 		<Key ID="STR_EQUIP_NAME_PAINKILLER_6">
 			<English>Painkillers (6 left)</English>
 			<German>Schmerzmittel (6 übrig)</German>
-			<Russian>Болеутоляющее (6 izquierda)</Russian>
+			<Russian>Болеутоляющее (6 таблеток)</Russian>
 			<Spanish>Analgésicos (6 restante)</Spanish>
 			<French>Antalgiques (6 reste)</French>
 			<Czech>Prášky proti bolesti (6 zbývající)</Czech>
@@ -3927,7 +3927,7 @@
 		<Key ID="STR_EQUIP_NAME_PAINKILLER_5">
 			<English>Painkillers (5 left)</English>
 			<German>Schmerzmittel (5 übrig)</German>
-			<Russian>Болеутоляющее (5 izquierda)</Russian>
+			<Russian>Болеутоляющее (5 таблеток)</Russian>
 			<Spanish>Analgésicos (5 restante)</Spanish>
 			<French>Antalgiques (5 reste)</French>
 			<Czech>Prášky proti bolesti (5 zbývající)</Czech>
@@ -3935,7 +3935,7 @@
 		<Key ID="STR_EQUIP_NAME_PAINKILLER_4">
 			<English>Painkillers (4 left)</English>
 			<German>Schmerzmittel (4 übrig)</German>
-			<Russian>Болеутоляющее (4 izquierda)</Russian>
+			<Russian>Болеутоляющее (4 таблетки)</Russian>
 			<Spanish>Analgésicos (4 restante)</Spanish>
 			<French>Antalgiques (4 reste)</French>
 			<Czech>Prášky proti bolesti (4 zbývající)</Czech>
@@ -3943,7 +3943,7 @@
 		<Key ID="STR_EQUIP_NAME_PAINKILLER_3">
 			<English>Painkillers (3 left)</English>
 			<German>Schmerzmittel (3 übrig)</German>
-			<Russian>Болеутоляющее (3 izquierda)</Russian>
+			<Russian>Болеутоляющее (3 таблетки)</Russian>
 			<Spanish>Analgésicos (3 restante)</Spanish>
 			<French>Antalgiques (3 reste)</French>
 			<Czech>Prášky proti bolesti (3 zbývající)</Czech>
@@ -3951,7 +3951,7 @@
 		<Key ID="STR_EQUIP_NAME_PAINKILLER_2">
 			<English>Painkillers (2 left)</English>
 			<German>Schmerzmittel (2 übrig)</German>
-			<Russian>Болеутоляющее (2 izquierda)</Russian>
+			<Russian>Болеутоляющее (2 таблетки)</Russian>
 			<Spanish>Analgésicos (2 restante)</Spanish>
 			<French>Antalgiques (2 reste)</French>
 			<Czech>Prášky proti bolesti (2 zbývající)</Czech>
@@ -3959,7 +3959,7 @@
 		<Key ID="STR_EQUIP_NAME_PAINKILLER_1">
 			<English>Painkillers (1 left)</English>
 			<German>Schmerzmittel (1 übrig)</German>
-			<Russian>Болеутоляющее (1 izquierda)</Russian>
+			<Russian>Болеутоляющее (1 таблетка)</Russian>
 			<Spanish>Analgésicos (1 restante)</Spanish>
 			<French>Antalgiques (1 reste)</French>
 			<Czech>Prášky proti bolesti (1 zbývající)</Czech>
@@ -3967,14 +3967,14 @@
 		<Key ID="STR_EQUIP_NAME_PAINKILLER_EMPTY">
 			<English>Painkillers (empty)</English>
 			<German>Schmerzmittel (leer)</German>
-			<Russian>Болеутоляющее (пустой)</Russian>
+			<Russian>Болеутоляющее (пусто)</Russian>
 			<Spanish>Analgésicos (vacio)</Spanish>
 			<French>Antalgiques (vide)</French>
 			<Czech>Prášky proti bolesti (prázdný)</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_PAINKILLER_EMPTY">
 			<English>Empty box of Painkillers.</English>
-			<Russian>Пустая коробка азитромицина.</Russian>
+			<Russian>Пустая коробка болеутоляющего.</Russian>
 			<German>Leere Schachtel Schmerzmittel.</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_18">
@@ -3988,7 +3988,7 @@
 		<Key ID="STR_EQUIP_DESC_PAINKILLER_6">
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (6 left)</English>
 			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (6 übrig)</German>
-			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (6 izquierda)</Russian>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. Осталось 6 таблеток.</Russian>
 			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (6 restante)</Spanish>
 			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (6 reste)</French>
 			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (6 zbývající)</Czech>
@@ -3996,7 +3996,7 @@
 		<Key ID="STR_EQUIP_DESC_PAINKILLER_5">
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (5 left)</English>
 			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (5 übrig)</German>
-			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (5 izquierda)</Russian>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. Осталось 5 таблеток.</Russian>
 			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (5 restante)</Spanish>
 			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (5 reste)</French>
 			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (5 zbývající)</Czech>
@@ -4004,7 +4004,7 @@
 		<Key ID="STR_EQUIP_DESC_PAINKILLER_4">
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (4 left)</English>
 			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (4 übrig)</German>
-			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (4 izquierda)</Russian>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. Осталось 4 таблетки.</Russian>
 			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (4 restante)</Spanish>
 			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (4 reste)</French>
 			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (4 zbývající)</Czech>
@@ -4012,7 +4012,7 @@
 		<Key ID="STR_EQUIP_DESC_PAINKILLER_3">
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (3 left)</English>
 			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (3 übrig)</German>
-			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (3 izquierda)</Russian>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. Осталось 3 таблетки.</Russian>
 			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (3 restante)</Spanish>
 			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (3 reste)</French>
 			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (3 zbývající)</Czech>
@@ -4020,7 +4020,7 @@
 		<Key ID="STR_EQUIP_DESC_PAINKILLER_2">
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (2 left)</English>
 			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (2 übrig)</German>
-			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (2 izquierda)</Russian>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. Осталось 2 таблетки.</Russian>
 			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (2 restante)</Spanish>
 			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (2 reste)</French>
 			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (2 zbývající)</Czech>
@@ -4028,7 +4028,7 @@
 		<Key ID="STR_EQUIP_DESC_PAINKILLER_1">
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds. (1 left)</English>
 			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden. (1 übrig)</German>
-			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. (1 izquierda)</Russian>
+			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений. Осталась 1 таблетка.</Russian>
 			<Spanish>Un analgésico moderado adecuado para uso regular de alivio del dolor y la inflamación causada por heridas moderadas. (1 restante)</Spanish>
 			<French>Un antidouleur léger permettant de soulager les petites blessures de tous les jours. (1 reste)</French>
 			<Czech>Klasické prášky proti bolesti pro běžné používání proti aktuální bolesti, například migréně. (1 zbývající)</Czech>
@@ -4043,7 +4043,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_SEPSISBANDAGE">
 			<English>Joint Services standard first aid dressing. Used to stop bleeding of wounds and cure Sepsis.</English>
-			<Russian>Универсальное средство оказания первой помощи. Используется для остановки кровотечения и лечения сепсиса.</Russian>
+			<Russian>Универсальное средство оказания первой помощи. Используется для остановки кровотечения и лечения заражения.</Russian>
 			<Spanish>Vendaje de primeros auxilios usado para detener el sangrado de heridas y curar la septicemia.</Spanish>
 			<Czech>Používá se pro zastavení krvácení a prevenci otravy krve (sepse).</Czech>
 			<French>Pansement de premier secours. Utilisé pour stopper une hémorragie et soigner une septicémie.</French>
@@ -4217,7 +4217,7 @@
 		<Key ID="STR_EQUIP_DESC_35">
 			<English>A aluminum can that once contained a tasty carbonated beverage, and now contains nothing.</English>
 			<German>Eine Aluminiumdose, in der einmal ein köstliches kohlensäurehaltiges Getränk war.</German>
-			<Russian>Алюминиевая банка, которая однажды содержала вкусный газированный напиток и теперь пуста.</Russian>
+			<Russian>Алюминиевая банка, которая когда-то содержала вкусный газированный напиток, но теперь пуста.</Russian>
 			<Spanish>Una lata de aluminio que contenía una deliciosa bebida carbonatada y ahora no contiene nada.</Spanish>
 			<French>Une canette en alu, qui jadis a contenu du soda.</French>
 			<Czech>Kdysi tato hliníková plechovka obsahovala chutný sycený nápoj. Teď v ní nic není.</Czech>
@@ -6382,7 +6382,7 @@
 		<Key ID="STR_BACKPACK_DESC_PATROL">
 			<English>Patrol Pack (coyote). &lt;br/&gt;Capacity: 10 items</English>
 			<French>Sac de patrouille (coyote). &lt;br/&gt;Taille: 10</French>
-			<Russian>Рюкзак на (10 слотов)</Russian>
+			<Russian>Вместимость: 10 слотов</Russian>
 			<Spanish>Mochila de patrullaje de tamaño pequeño: &lt;br/&gt;10 litros</Spanish>
 			<Czech>Malý batůžek na kratší výlety. &lt;br/&gt;Objem: 10 litrů</Czech>
 			<German>Einfacher Trekkingrucksack von "Coyote". &lt;br/&gt;Volumen: 10 Liter</German>
@@ -6399,7 +6399,7 @@
 		<Key ID="STR_BACKPACK_DESC_ACU">
 			<English>Assault Pack (ACU). &lt;br/&gt;Capacity: 12 items</English>
 			<French>Sac d&apos;assault (ACU). &lt;br/&gt;Taille: 12</French>
-			<Russian>Рюкзак на (12 слотов)</Russian>
+			<Russian>Вместимость: 12 слотов</Russian>
 			<Spanish>Mochila de asalto de tamaño intermedio. &lt;br/&gt;12 litros</Spanish>
 			<Czech>Klasický batoh americké armády. &lt;br/&gt;Objem: 12 litrů</Czech>
 			<German>Kleiner taktischer Rucksack mit ACU-Tarnschema. &lt;br/&gt;Volumen: 12 Liter</German>
@@ -6416,7 +6416,7 @@
 		<Key ID="STR_BACKPACK_DESC_VEST">
 			<English>Czech Vest Pouch. &lt;br/&gt;Capacity: 12 items</English>
 			<French>Sac tchèque. &lt;br/&gt;Taille: 12</French>
-			<Russian>Рюкзак на (12 слотов)</Russian>
+			<Russian>Вместимость: 12 слотов</Russian>
 			<Spanish>Bolsa en forma de chaleco de pequeño tamaño y poca visibilidad. &lt;br/&gt;12 litros</Spanish>
 			<Czech>Česká vesta, která unese jen pár věcí. &lt;br/&gt;Objem: 12 litrů</Czech>
 			<German>Kleiner Rucksack des tschechischen Militärs, der eng am Rücken anliegt. &lt;br/&gt;Volumen: 12 Liter</German>
@@ -6433,7 +6433,7 @@
 		<Key ID="STR_BACKPACK_DESC_ALICE">
 			<English>Alice pack. &lt;br/&gt;Capacity: 20 items</English>
 			<French>Sac Alice. &lt;br/&gt;Taille: 20</French>
-			<Russian>Рюкзак на (20 слотов)</Russian>
+			<Russian>Вместимость: 20 слотов</Russian>
 			<Spanish>Mochila Alice de tamaño medio. &lt;br/&gt;20 litros</Spanish>
 			<Czech>Jeden z nejlepších vojenských batohů, který byl kdy vyroben. &lt;br/&gt;Objem: 20 litrů</Czech>
 			<German>Mittlerer Trekkingrucksack von "Alice". &lt;br/&gt;Volumen: 20 Liter</German>
@@ -6450,7 +6450,7 @@
 		<Key ID="STR_BACKPACK_DESC_SURVACU">
 			<English>Survival ACU. &lt;br/&gt;Capacity: 22 items</English>
 			<French>ACU de survie&lt;br/&gt;Taille: 22</French>
-			<Russian>Рюкзак на (22 слота)</Russian>
+			<Russian>Вместимость: 22 слота</Russian>
 			<Spanish>Mochila de supervivencia de tamaño medio. &lt;br/&gt;22 litros</Spanish>
 			<Czech>Větší batoh z obchodu Přežiju s.r.o. &lt;br/&gt;Objem: 22 litrů</Czech>
 			<German>Mittlerer Kampfrucksack mit Woodland-Tarnschema. &lt;br/&gt;Volumen: 22 Liter</German>
@@ -6467,7 +6467,7 @@
 		<Key ID="STR_BACKPACK_DESC_BRITISH">
 			<English>British Assault Pack. &lt;br/&gt;Capacity: 30 items</English>
 			<French>Sac d&apos;assault britannique. &lt;br/&gt;Taille: 30</French>
-			<Russian>Рюкзак на (30 слотов)</Russian>
+			<Russian>Вместимость: 30 слотов</Russian>
 			<Spanish>Mochila de asalto británica de tamaño medio. &lt;br/&gt;30 litros</Spanish>
 			<Czech>Moderní a stylový batoh britské armády. &lt;br/&gt;Objem: 30 litrů</Czech>
 			<German>Großer Kampfrucksack der britischen Streitkräfte. &lt;br/&gt;Volumen: 30 Liter</German>
@@ -6484,7 +6484,7 @@
 		<Key ID="STR_BACKPACK_DESC_CZECH">
 			<English>Czech Backpack. &lt;br/&gt;Capacity: 40 items</English>
 			<French>Sac-à-dos tchèque. &lt;br/&gt;Taille: 40</French>
-			<Russian>Рюкзак на (40 слотов)</Russian>
+			<Russian>Вместимость: 40 слотов</Russian>
 			<Spanish>Mochila checa de gran tamaño y difícil de ocultar. &lt;br/&gt;40 litros</Spanish>
 			<Czech>Vojenská krosna pro nošení nejen českých věcí. &lt;br/&gt;Objem: 40 litrů</Czech>
 			<German>Großer tschechischer Trekkingrucksack. &lt;br/&gt;Volumen: 40 Liter</German>
@@ -6501,7 +6501,7 @@
 		<Key ID="STR_BACKPACK_DESC_COYOTE">
 			<English>Backpack (coyote). &lt;br/&gt;Capacity: 50 items</English>
 			<French>Sac-à-dos (coyote). &lt;br/&gt;Taille: 50</French>
-			<Russian>Рюкзак на (50 слотов)</Russian>
+			<Russian>Вместимость: 50 слотов</Russian>
 			<Spanish>Mochila coyote de gran tamaño y difícil de ocultar. &lt;br/&gt;50 litros</Spanish>
 			<Czech>Batoh větších rozměrů, který je schopen unést kromě zásob i zbraně. &lt;br/&gt;Objem: 50 litrů</Czech>
 			<German>Großer Kampfrucksack von "Coyote". &lt;br/&gt;Volumen: 50 Liter</German>
@@ -6516,7 +6516,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_WIPES">
 			<English>Antibacterial Wipe</English>
-			<Russian>Антибактериальные салфетки</Russian>
+			<Russian>Антибактериальные салфетки.</Russian>
 			<Spanish>Gasa estéril con plata antibacteriana</Spanish>
 			<French>Lingette antibactérienne</French>
 			<Czech>Antibakteriální ubrousky</Czech>
@@ -6548,7 +6548,7 @@
 		<Key ID="STR_ITEM_DESC_FISHINGPOLE_BROKEN">
 			<English>A broken fishing pole that must be repaired.</English>
 			<German>Eine kaputte Angelrute, welche repariert werden muss.</German>
-			<Russian>Сломанная удочка, которую нужно починить.</Russian>
+			<Russian>Сломанная удочка, которую необходимо починить.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_CAMONET">
 			<English>CamoNet</English>
@@ -6884,7 +6884,7 @@
 		<Key ID="str_player_01">
 			<English>You have filled %1 bottles with water</English>
 			<German>Du hast %1 Flasche(n) mit Wasser aufgefüllt.</German>
-			<Russian>Наполнено водой бутылок: %1</Russian>
+			<Russian>Наполнено бутылок: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste vodou %1 láhve.</Czech>
@@ -6924,7 +6924,7 @@
 		<Key ID="str_player_05">
 			<English>%1 has been filled with %2 litres of fuel</English>
 			<German>%1 wurde mit %2 Litern Treibstoff betankt.</German>
-			<Russian>В %1 было залито %2 литров топлива.</Russian>
+			<Russian>В %1 было залито %2л топлива.</Russian>
 			<Spanish>El %1 fue cargado con %2 litros de combustible.</Spanish>
 			<French>%1 a été rempli avec %2 litres de carburant.</French>
 			<Czech>Do %1 bylo doplněno %2 litrů paliva.</Czech>
@@ -6941,7 +6941,7 @@
 		<Key ID="str_player_09">
 			<English>You have filled %1 jerrycans with fuel</English>
 			<German>Du hast %1 Kanister mit Treibstoff gefüllt.</German>
-			<Russian>Наполнено топливом канистр: %1</Russian>
+			<Russian>Наполнено канистр: %1</Russian>
 			<Spanish>Llenaste %2 bidones con combustible</Spanish>
 			<French>Vous avez rempli %1 jerrican(s) avec du carburant.</French>
 			<Czech>Naplnili jste palivem %1 kanystry.</Czech>
@@ -7013,7 +7013,7 @@
 		<Key ID="str_player_creating_character">
 			<English>Server responded, creating character</English>
 			<German>Der Server hat geantwortet, dein Charakter wird erstellt</German>
-			<Russian>Получен ответ от сервера. Идет создание персонажа</Russian>
+			<Russian>Получен ответ от сервера, идет создание персонажа</Russian>
 			<Spanish>El servidor respondió, creando personaje</Spanish>
 			<French>Réponse du serveur, création du personnage</French>
 			<Czech>Spojení navázáno, vytvářím postavu</Czech>
@@ -7134,7 +7134,7 @@
 		<Key ID="str_player_20">
 			<English>You must be near a water source such as a pond, well or watering hole to refill your water bottles.</English>
 			<German>Du musst dich in der Nähe einer Wasserquelle befinden, um Wasserflaschen zu füllen. Halte Ausschau nach einem Teich oder Brunnen!</German>
-			<Russian>Вы должны находиться возле водоема или источника воды, чтобы наполнить свои фляги.</Russian>
+			<Russian>Чтобы наполнить фляги, вы должны находиться около водоема или источника воды.</Russian>
 			<Spanish>Necesitas estar cerca de una fuente de agua como un pozo para rellenar tu cantimplora</Spanish>
 			<French>Vous devez être à côté d&apos;une source comme un plan d&apos;eau ou un puits pour remplir vos Bouteilles.</French>
 			<Czech>Pro naplnění láhve na vodu je nutné být poblíž studny nebo rybníka.</Czech>
@@ -7367,7 +7367,7 @@
 		<Key ID="str_player_beinglooted">
 			<English>%1 is already being looted by someone else.</English>
 			<German>%1 wird bereits von jemand anderem geplündert.</German>
-			<Russian>(%1) уже кто-то обыскивает.</Russian>
+			<Russian>%1 уже кто-то обыскивает.</Russian>
 			<Spanish>%1 ya fue saqueado por alguien más.</Spanish>
 			<French>%1 est déjà en train d&apos;être pillé par quelqu&apos;un d&apos;autre.</French>
 			<Czech>%1 už je vybírán někým jiným.</Czech>
@@ -12086,18 +12086,23 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMPER">
 			<English>V3S Camper</English>
+			<Russian>V3S (Рама)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMPER+">
 			<English>V3S Camper+</English>
+			<Russian>V3S (Рама)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMPER++">
 			<English>V3S Camper++</English>
+			<Russian>V3S (Рама)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMPER+++">
 			<English>V3S Camper+++</English>
+			<Russian>V3S (Рама)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMPER++++">
 			<English>V3S Camper++++</English>
+			<Russian>V3S (Рама)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_GAZ_BLUE">
 			<English>GAZ (blue)</English>
@@ -17533,7 +17538,7 @@
 			<Spanish>Metralleta  &lt;br/&gt;Calibre: 5.7x28mm</Spanish>
 			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 5.7x28mm</French>
 			<Czech>Samopal &lt;br/&gt;Kalibr: 5.7x28mm</Czech>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Патрон: 5.7x28mm</Russian>
+			<Russian>Пистолет-пулемет&lt;br/&gt;Патрон: 5.7x28mm</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 5.7x28mm</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm</Hungarian>
         </Key>
@@ -17544,7 +17549,7 @@
 			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 5.7x28mm SD</Spanish>
 			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 5.7x28mm SD</French>
 			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 5.7x28mm SD</Czech>
-			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Патрон: 5.7x28mm SD</Russian>
+			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Патрон: 5.7x28mm SD</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 5.7x28mm SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm SD</Hungarian>
         </Key>
@@ -19769,7 +19774,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_70RND_9x19mm_M31_NAME">
 			<English>70Rnd. Suomi M-31 mag.</English>
-			<Russian>70п. Suomi M-31 маг.</Russian>
+			<Russian>70п. Suomi M-31 барабан.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_70RND_9x19mm_M31_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 70&lt;br/&gt;Used in: Suomi M-31</English>
@@ -21683,7 +21688,7 @@
 		<!-- 5.7mm Suppressor ACR-->
 		<Key ID="STR_DZ_ATT_SUP57_NAME">
 			<English>[A] 5.7mm Suppressor</English>
-			<Russian>[М] 5.7vмм глушитель</Russian>
+			<Russian>[М] 5.7мм глушитель</Russian>
 			<German>[E] 5.7mm Schalldämpfer</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP57_DESC">
@@ -21792,7 +21797,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_DESC">
 			<English>Advanced Combat Optical Gunsight&lt;br/&gt;Manufactured by American Trijicon Inc.</English>
-			<Russian>Армейский оптический прицел для ведения огня из стрелкового оружия на среднюю дальность&lt;br/&gt;Произведен американской компанией Trijicon Inc.</Russian>
+			<Russian>Армейский оптический прицел для ведения огня на среднюю дальность&lt;br/&gt;Произведен американской компанией Trijicon Inc.</Russian>
 			<German>Advanced Combat Optical Gunsight&lt;br/&gt;Hergestellt von American Trijicon Inc.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_RMVE">
@@ -21809,7 +21814,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_DESC">
 			<English>Red dot collimator sight&lt;br/&gt;Manufactured in Izhevsk Russia.</English>
-			<Russian>Электронный коллиматорный прицел&lt;br/&gt;Произведен росийской компанией ОАО «Ижевский мотозавод „Аксион-холдинг“».</Russian>
+			<Russian>Электронный коллиматорный прицел&lt;br/&gt;Произведен росcийской компанией ОАО «Ижевский мотозавод 'Аксион-холдинг'».</Russian>
 			<German>Rotpunkt Kollimator Sicht&lt;br/&gt;Hergestellt in Izhevsk Russland.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_RMVE">
@@ -22090,7 +22095,7 @@
 		<Key ID="STR_EPOCH_REMOVE">
 			<English>Remove %1</English>
 			<German>%1 abbauen</German>
-			<Russian>Уничтожить %1</Russian>
+			<Russian>Убрать %1</Russian>
 			<French>Détruire %1</French>
 			<Czech>Zničit %1</Czech>
 		</Key>
@@ -24161,7 +24166,7 @@
 		<Key ID="STR_EPOCH_PLAYER_313">
 			<English>%1 is already in your inventory. Adding to backpack!</English>
 			<German>%1 ist bereits in deinem Inventar. Hinzufügen zum Rucksack!</German>
-			<Russian>%1 уже в вашем инвентаре. Перемещено в рюкзак!</Russian>
+			<Russian>%1 уже есть в вашем инвентаре. Перемещено в рюкзак!</Russian>
 			<Dutch>%1 is al in je inventaris. Toevoegen aan rugzak!</Dutch>
 			<French>%1 est déjà dans votre inventaire. Ajout d'un sac à dos!</French>
 			<Czech>%1 je již ve vašem inventáři. Přidání do batoh!</Czech>
@@ -24840,34 +24845,42 @@
 		<Key ID="STR_EPOCH_PACK_PARTYPACK_DZE1">
 			<English>Party Pack</English>
 			<German>Party-Rucksack</German>
+			<Russian>Яркий рюкзак</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_DESC_PARTYPACK_DZE1">
 			<English>Party Pack &lt;br/&gt;Capacity: 36 items</English>
 			<German>Party-Rucksack &lt;br/&gt;Volumen: 36 Liter</German>
-		</Key>
+			<Russian>Яркий рюкзак&lt;br/&gt;Вместимость: 36 слотов</Russian>
+	</Key>
 		<Key ID="STR_EPOCH_PACK_PARTYPACK_DZE2">
 			<English>Party Pack+</English>
 			<German>Party-Rucksack+</German>
+			<Russian>Яркий рюкзак+</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PACK_DESC_PARTYPACK_DZE2">
 			<English>Party Pack &lt;br/&gt;Capacity: 42 items</English>
 			<German>Party-Rucksack &lt;br/&gt;Volumen: 42 Liter</German>
+			<Russian>Яркий рюкзак&lt;br/&gt;Вместимость: 42 слота</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_APO1_DZE1">
 			<English>Night Backpack</English>
 			<German>Night Rucksack</German>
+			<Russian>Тёмный рюкзак</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_APO1_DZE1">
 			<English>Night Backpack &lt;br/&gt;Capacity: 35 items</English>
 			<German>Night Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
+			<Russian>Тёмный рюкзак&lt;br/&gt;Вместимость: 35 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_APO1_DZE2">
 			<English>Night Backpack+</English>
 			<German>Night Rucksack+</German>
+			<Russian>Тёмный рюкзак+</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_APO1_DZE2">
 			<English>Night Backpack &lt;br/&gt;Capacity: 40 items</English>
 			<German>Night Rucksack &lt;br/&gt;Volumen: 40 Liter</German>
+			<Russian>Тёмный рюкзак&lt;br/&gt;Вместимость: 40 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_APO2_DZE1">
 			<English>Survivor Backpack</English>
@@ -25035,18 +25048,22 @@
 		<Key ID="STR_BACKPACK_NAME_AIRWAVES_DZE1">
 			<English>Airwaves Backpack</English>
 			<German>Airwaves Rucksack</German>
+			<Russian>Рюкзак Airwaves</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_AIRWAVES_DZE1">
 			<English>Airwaves Backpack &lt;br/&gt;Capacity: 35 items</English>
 			<German>Airwaves Rucksack &lt;br/&gt;Volumen: 35 Liter</German>
+			<Russian>Рюкзак Airwaves. &lt;br/&gt;Вместимость: 35 слотов</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_NAME_AIRWAVES_DZE2">
 			<English>Airwaves Backpack+</English>
 			<German>Airwaves Rucksack+</German>
+			<Russian>Рюкзак Airwaves+</Russian>
 		</Key>
 		<Key ID="STR_BACKPACK_DESC_AIRWAVES_DZE2">
 			<English>Airwaves Backpack &lt;br/&gt;Capacity: 45 items</English>
 			<German>Airwaves Rucksack &lt;br/&gt;Volumen: 45 Liter</German>
+			<Russian>Рюкзак Airwaves. &lt;br/&gt;Вместимость: 45 слотов</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_HALO">
 			<English>HALO Jump</English>
@@ -26227,12 +26244,12 @@
 		<Key ID="STR_CRAFT_NAME_PUMPKIN_SEED">
 			<English>Bag of Pumpkin Seeds</English>
 			<German>Säckchen Kürbissamen</German>
-			<Russian>Тыквенное семечко</Russian>
+			<Russian>Семена тыквы</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PUMPKIN_SEED">
 			<English>A few pumpkin seeds.</English>
 			<German>Ein paar Kürbissamen.</German>
-			<Russian>Одно тыквенное семечко пригодное для посева.</Russian>
+			<Russian>Семена тыквы, пригодные для посева.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_PUMPKIN_PLANT">
 			<English>Pumpkin Plant</English>
@@ -26247,12 +26264,12 @@
 		<Key ID="STR_CRAFT_NAME_HEMP_SEED">
 			<English>Bag of Hemp Seeds</English>
 			<German>Säckchen Hanfsamen</German>
-			<Russian>Конопляное семечко</Russian>
+			<Russian>Семена конопли</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HEMP_SEED">
 			<English>A few hemp seeds.</English>
 			<German>Ein paar Hanfsamen.</German>
-			<Russian>Одно конопляное семечко пригодное для посева.</Russian>
+			<Russian>Семена конопли, пригодные для посева.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_TOBACCO_SEED">
 			<English>Bag of Tobacco Seeds</English>
@@ -26313,7 +26330,7 @@
 		<Key ID="STR_FOOD_NAME_SUNFLOWER">
 			<English>Bag of Sunflower Seeds</English>
 			<German>Säckchen Sonnenblumensamen</German>
-			<Russian>Мешочек семечек</Russian>
+			<Russian>Семена подсолнуха</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_POTATO">
 			<English>Potato</English>
@@ -27312,182 +27329,182 @@
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ">
 			<English>Water Bottle (1oz)</English>
 			<German>Wasserflasche (100ml)</German>
-			<Russian>Бутылка воды (100 мл)</Russian>
+			<Russian>Бутылка воды (100мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZ_DESC">
 			<English>Water Bottle with 1oz of water.</English>
 			<German>Wasserflasche mit 100ml Wasser.</German>
-			<Russian>Бутылка с 100 мл воды.</Russian>
+			<Russian>Бутылка с 100мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ">
 			<English>Water Bottle (2oz)</English>
 			<German>Wasserflasche (200ml)</German>
-			<Russian>Бутылка воды (200 мл)</Russian>
+			<Russian>Бутылка воды (200мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZ_DESC">
 			<English>Water Bottle with 2oz of water.</English>
 			<German>Wasserflasche mit 200ml Wasser.</German>
-			<Russian>Бутылка с 200 мл воды.</Russian>
+			<Russian>Бутылка с 200мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ">
 			<English>Water Bottle (3oz)</English>
 			<German>Wasserflasche (300ml)</German>
-			<Russian>Бутылка воды (300 мл)</Russian>
+			<Russian>Бутылка воды (300мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZ_DESC">
 			<English>Water Bottle with 3oz of water.</English>
 			<German>Wasserflasche mit 300ml Wasser.</German>
-			<Russian>Бутылка с 300 мл воды.</Russian>
+			<Russian>Бутылка с 300мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ">
 			<English>Water Bottle (4oz)</English>
 			<German>Wasserflasche (400ml)</German>
-			<Russian>Бутылка воды (400 мл)</Russian>
+			<Russian>Бутылка воды (400мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZ_DESC">
 			<English>Water Bottle with 4oz of water.</English>
 			<German>Wasserflasche mit 400ml Wasser.</German>
-			<Russian>Бутылка с 400 мл воды.</Russian>
+			<Russian>Бутылка с 400мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ">
 			<English>Water Bottle (5oz)</English>
 			<German>Wasserflasche (500ml)</German>
-			<Russian>Бутылка воды (500 мл)</Russian>
+			<Russian>Бутылка воды (500мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZ_DESC">
 			<English>Water Bottle with 5oz of water.</English>
 			<German>Wasserflasche mit 500ml Wasser.</German>
-			<Russian>Бутылка с 500 мл воды.</Russian>
+			<Russian>Бутылка с 500мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ">
 			<English>Water Bottle (6oz)</English>
 			<German>Wasserflasche (600ml)</German>
-			<Russian>Бутылка воды (600 мл)</Russian>
+			<Russian>Бутылка воды (600мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZ_DESC">
 			<English>Water Bottle with 6oz of water.</English>
 			<German>Wasserflasche mit 600ml Wasser.</German>
-			<Russian>Бутылка с 600 мл воды.</Russian>
+			<Russian>Бутылка с 600мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ">
 			<English>Water Bottle (7oz)</English>
 			<German>Wasserflasche (700ml)</German>
-			<Russian>Бутылка воды (700 мл)</Russian>
+			<Russian>Бутылка воды (700мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZ_DESC">
 			<English>Water Bottle with 7oz of water.</English>
 			<German>Wasserflasche mit 700ml Wasser.</German>
-			<Russian>Бутылка с 700 мл воды.</Russian>
+			<Russian>Бутылка с 700мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ">
 			<English>Water Bottle (8oz)</English>
 			<German>Wasserflasche (800ml)</German>
-			<Russian>Бутылка воды (800 мл)</Russian>
+			<Russian>Бутылка воды (800мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZ_DESC">
 			<English>Water Bottle with 8oz of water.</English>
 			<German>Wasserflasche mit 800ml Wasser.</German>
-			<Russian>Бутылка с 800 мл воды.</Russian>
+			<Russian>Бутылка с 800мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ">
 			<English>Water Bottle (9oz)</English>
 			<German>Wasserflasche (900ml)</German>
-			<Russian>Бутылка воды (900 мл)</Russian>
+			<Russian>Бутылка воды (900мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZ_DESC">
 			<English>Water Bottle with 9oz of water.</English>
 			<German>Wasserflasche mit 900ml Wasser.</German>
-			<Russian>Бутылка с 900 мл воды.</Russian>
+			<Russian>Бутылка с 900мл воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED">
 			<English>Water Bottle (Boiled 1oz)</English>
 			<German>Wasserflasche (Abgek. 100ml)</German>
-			<Russian>Бутылка (чистая вода 100 мл)</Russian>
+			<Russian>Бутылка (чистая вода 100мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE1OZBOILED_DESC">
 			<English>Water Bottle with 1oz of boiled water.</English>
 			<German>Wasserflasche mit 100ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 100 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 100мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED">
 			<English>Water Bottle (Boiled 2oz)</English>
 			<German>Wasserflasche (Abgek. 200ml)</German>
-			<Russian>Бутылка (чистая вода 200 мл)</Russian>
+			<Russian>Бутылка (чистая вода 200мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE2OZBOILED_DESC">
 			<English>Water Bottle with 2oz of boiled water.</English>
 			<German>Wasserflasche mit 200ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 200 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 200мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED">
 			<English>Water Bottle (Boiled 3oz)</English>
 			<German>Wasserflasche (Abgek. 300ml)</German>
-			<Russian>Бутылка (чистая вода 300 мл)</Russian>
+			<Russian>Бутылка (чистая вода 300мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE3OZBOILED_DESC">
 			<English>Water Bottle with 3oz of boiled water.</English>
 			<German>Wasserflasche mit 300ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 300 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 300мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED">
 			<English>Water Bottle (Boiled 4oz)</English>
 			<German>Wasserflasche (Abgek. 400ml)</German>
-			<Russian>Бутылка (чистая вода 400 мл)</Russian>
+			<Russian>Бутылка (чистая вода 400мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE4OZBOILED_DESC">
 			<English>Water Bottle with 4oz of boiled water.</English>
 			<German>Wasserflasche mit 400ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 400 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 400мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED">
 			<English>Water Bottle (Boiled 5oz)</English>
 			<German>Wasserflasche (Abgek. 500ml)</German>
-			<Russian>Бутылка (чистая вода 500 мл)</Russian>
+			<Russian>Бутылка (чистая вода 500мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE5OZBOILED_DESC">
 			<English>Water Bottle with 5oz of boiled water.</English>
 			<German>Wasserflasche mit 500ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 500 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 500мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED">
 			<English>Water Bottle (Boiled 6oz)</English>
 			<German>Wasserflasche (Abgek. 600ml)</German>
-			<Russian>Бутылка (чистая вода 600 мл)</Russian>
+			<Russian>Бутылка (чистая вода 600мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE6OZBOILED_DESC">
 			<English>Water Bottle with 6oz of boiled water.</English>
 			<German>Wasserflasche mit 600ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 600 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 600мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED">
 			<English>Water Bottle (Boiled 7oz)</English>
 			<German>Wasserflasche (Abgek. 700ml)</German>
-			<Russian>Бутылка (чистая вода 700 мл)</Russian>
+			<Russian>Бутылка (чистая вода 700мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE7OZBOILED_DESC">
 			<English>Water Bottle with 7oz of boiled water.</English>
 			<German>Wasserflasche mit 700ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 700 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 700мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED">
 			<English>Water Bottle (Boiled 8oz)</English>
 			<German>Wasserflasche (Abgek. 800ml)</German>
-			<Russian>Бутылка (чистая вода 800 мл)</Russian>
+			<Russian>Бутылка (чистая вода 800мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE8OZBOILED_DESC">
 			<English>Water Bottle with 8oz of boiled water.</English>
 			<German>Wasserflasche mit 800ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 800 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 800мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED">
 			<English>Water Bottle (Boiled 9oz)</English>
 			<German>Wasserflasche (Abgek. 900ml)</German>
-			<Russian>Бутылка (чистая вода 900 мл)</Russian>
+			<Russian>Бутылка (чистая вода 900мл)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WATERBOTTLE9OZBOILED_DESC">
 			<English>Water Bottle with 9oz of boiled water.</English>
 			<German>Wasserflasche mit 900ml abgekochtem Wasser.</German>
-			<Russian>Бутылка с 900 мл чистой кипяченой воды.</Russian>
+			<Russian>Бутылка с 900мл чистой кипяченой воды.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BRIEFCASE">
 			<English>Briefcase</English>
@@ -30834,12 +30851,12 @@
 		<Key ID="STR_EPOCH_TOBACCO_LEAF">
 			<English>Tobacco Leaf</English>
 			<German>Tabakblatt</German>
-			<Russian>Лист табака</Russian>
+			<Russian>Листья табака</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TOBACCO_LEAF_DESC">
 			<English>Leaf of a tobacco plant</English>
 			<German>Blatt einer Tabakpflanze</German>
-			<Russian>Лист табака с табачной плантации</Russian>
+			<Russian>Листья табака с табачной плантации.</Russian>
 		</Key>
 
 		<!--PET waterbottles -->
@@ -30850,7 +30867,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_01">
 			<English>A PET bottle of water that is empty. It might be useful to fill it with water again.</English>
-			<Russian>ПЭТ бутылка с водой, которая пуста. Может быть полезно снова наполнить его водой.</Russian>
+			<Russian>Пустая пластиковая бутылка. Может быть полезно снова наполнить его водой.</Russian>
 			<German>Eine leere Plastik-Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_02">
@@ -30860,27 +30877,27 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_02">
 			<English>Broken PET Water Bottle that might be repairable.</English>
-			<Russian>Сломанная ПЭТ-бутылка для воды, которую можно починить.</Russian>
+			<Russian>Сломанная пластиковая бутылка для воды, которую можно починить.</Russian>
 			<German>Eine undichte Plastik-Wasserflasche, die repariert werden kann.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_03">
 			<English>Water Bottle PET</English>
-			<Russian>Бутылка для воды ПЭТ</Russian>
+			<Russian>Бутылка ПЭТ с водой </Russian>
 			<German>Wasserflasche PET</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_03">
 			<English>A PET bottle of water that has been filled and can be consumed.</English>
-			<Russian>ПЭТ бутылка воды, которая была наполнена и может быть употреблена.</Russian>
+			<Russian>Пластиковая бутылка с водой. Можно употребить.</Russian>
 			<German>Eine Plastik-Wasserflasche, gefüllt mit nicht abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_04">
 			<English>Water Bottle PET (Boiled)</English>
-			<Russian>Бутылка ПЭТ кипячёной воды</Russian>
+			<Russian>Бутылка ПЭТ с кипячёной водой</Russian>
 			<German>Wasserflasche PET (Abgekocht)</German>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_WBPET_04">
 			<English>A PET bottle of boiled water that has been filled and can be consumed.</English>
-			<Russian>ПЭТ бутылка кипяченой воды, которая была заполнена и может быть употреблена.</Russian>
+			<Russian>Пластиковая бутылка с кипячёной водой. Можно употребить.</Russian>
 			<German>Eine Plastik-Wasserflasche gefüllt mit abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_WBPET_05">
@@ -30895,182 +30912,182 @@
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZ">
 			<English>Water Bottle PET (1oz)</English>
-			<Russian>Бутылка для воды ПЭТ (100мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (100мл)</Russian>
 			<German>Wasserflasche PET (100ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZ_DESC">
 			<English>Water Bottle PET with 1oz of water.</English>
-			<Russian>Бутылка воды со 100мл воды</Russian>
+			<Russian>Пластиковая бутылка со 100мл воды.</Russian>
 			<German>Wasserflasche PET mit 100ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZ">
 			<English>Water Bottle PET (2oz)</English>
-			<Russian>Бутылка для воды (200мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (200мл)</Russian>
 			<German>Wasserflasche PET (200ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZ_DESC">
 			<English>Water Bottle PET with 2oz of water.</English>
-			<Russian>Бутылка воды с 200мл воды</Russian>
+			<Russian>Пластиковая бутылка с 200мл воды.</Russian>
 			<German>Wasserflasche PET mit 200ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZ">
 			<English>Water Bottle PET (3oz)</English>
-			<Russian>Бутылка для воды (300мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (300мл)</Russian>
 			<German>Wasserflasche PET (300ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZ_DESC">
 			<English>Water Bottle PET with 3oz of water.</English>
-			<Russian>Бутылка воды с 300мл воды</Russian>
+			<Russian>Пластиковая бутылка с 300мл воды.</Russian>
 			<German>Wasserflasche PET mit 300ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZ">
 			<English>Water Bottle PET (4oz)</English>
-			<Russian>Бутылка для воды (400мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (400мл)</Russian>
 			<German>Wasserflasche PET (400ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZ_DESC">
 			<English>Water Bottle PET with 4oz of water.</English>
-			<Russian>Бутылка воды с 400мл воды</Russian>
+			<Russian>Пластиковая бутылка с 400мл воды.</Russian>
 			<German>Wasserflasche PET mit 400ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZ">
 			<English>Water Bottle PET (5oz)</English>
-			<Russian>Бутылка для воды (500мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (500мл)</Russian>
 			<German>Wasserflasche PET (500ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZ_DESC">
 			<English>Water Bottle PET with 5oz of water.</English>
-			<Russian>Бутылка воды с 500мл воды</Russian>
+			<Russian>Пластиковая бутылка с 500мл воды.</Russian>
 			<German>Wasserflasche PET mit 500ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZ">
 			<English>Water Bottle PET (6oz)</English>
-			<Russian>Бутылка для воды (600мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (600мл)</Russian>
 			<German>Wasserflasche PET (600ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZ_DESC">
 			<English>Water Bottle PET with 6oz of water.</English>
-			<Russian>Бутылка воды с 600мл воды</Russian>
+			<Russian>Пластиковая бутылка с 600мл воды.</Russian>
 			<German>Wasserflasche PET mit 600ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZ">
 			<English>Water Bottle PET (7oz)</English>
-			<Russian>Бутылка для воды (700мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (700мл)</Russian>
 			<German>Wasserflasche PET (700ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZ_DESC">
 			<English>Water Bottle PET with 7oz of water.</English>
-			<Russian>Бутылка воды с 700мл воды</Russian>
+			<Russian>Пластиковая бутылка с 700мл воды.</Russian>
 			<German>Wasserflasche PET mit 700ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZ">
 			<English>Water Bottle PET (8oz)</English>
-			<Russian>Бутылка для воды (800мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (800мл)</Russian>
 			<German>Wasserflasche PET (800ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZ_DESC">
 			<English>Water Bottle PET with 8oz of water.</English>
-			<Russian>Бутылка воды с 800мл воды</Russian>
+			<Russian>Пластиковая бутылка с 800мл воды.</Russian>
 			<German>Wasserflasche PET mit 800ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZ">
 			<English>Water Bottle PET (9oz)</English>
-			<Russian>Бутылка для воды (900мл)</Russian>
+			<Russian>Бутылка ПЭТ с водой (900мл)</Russian>
 			<German>Wasserflasche PET (900ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZ_DESC">
 			<English>Water Bottle PET with 9oz of water.</English>
-			<Russian>Бутылка воды с 900мл воды</Russian>
+			<Russian>Пластиковая бутылка с 900мл воды.</Russian>
 			<German>Wasserflasche PET mit 900ml Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZBOILED">
 			<English>Water Bottle PET (Boiled 1oz)</English>
-			<Russian>Бутылка кипячёной воды (100мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (100мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 100ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE1OZBOILED_DESC">
 			<English>Water Bottle PET with 1oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды со 100мл воды</Russian>
+			<Russian>Бутылка со 100мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 100ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZBOILED">
 			<English>Water Bottle PET (Boiled 2oz)</English>
-			<Russian>Бутылка кипячёной воды (200мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (200мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 200ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE2OZBOILED_DESC">
 			<English>Water Bottle PET with 2oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды с 200мл воды</Russian>
+			<Russian>Бутылка с 200мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 200ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZBOILED">
 			<English>Water Bottle PET (Boiled 3oz)</English>
-			<Russian>Бутылка кипячёной воды (300мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (300мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 300ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE3OZBOILED_DESC">
 			<English>Water Bottle PET with 3oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды с 300мл воды</Russian>
+			<Russian>Бутылка с 300мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 300ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZBOILED">
 			<English>Water Bottle PET (Boiled 4oz)</English>
-			<Russian>Бутылка кипячёной воды (400мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (400мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 400ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE4OZBOILED_DESC">
 			<English>Water Bottle PET with 4oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды с 400мл воды</Russian>
+			<Russian>Бутылка с 400мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 400ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZBOILED">
 			<English>Water Bottle PET (Boiled 5oz)</English>
-			<Russian>Бутылка кипячёной воды (500мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (500мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 500ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE5OZBOILED_DESC">
 			<English>Water Bottle PET with 5oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды с 500мл воды</Russian>
+			<Russian>Бутылка с 500мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 500ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZBOILED">
 			<English>Water Bottle PET (Boiled 6oz)</English>
-			<Russian>Бутылка кипячёной воды (600мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (600мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 600ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE6OZBOILED_DESC">
 			<English>Water Bottle PET with 6oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды с 600мл воды</Russian>
+			<Russian>Бутылка с 600мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 600ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZBOILED">
 			<English>Water Bottle PET (Boiled 7oz)</English>
-			<Russian>Бутылка кипячёной воды (700мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (700мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 700ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE7OZBOILED_DESC">
 			<English>Water Bottle PET with 7oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды с 700мл воды</Russian>
+			<Russian>Бутылка с 700мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 700ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZBOILED">
 			<English>Water Bottle PET (Boiled 8oz)</English>
-			<Russian>Бутылка кипячёной воды (800мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (800мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 800ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE8OZBOILED_DESC">
 			<English>Water Bottle PET with 8oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды с 800мл воды</Russian>
+			<Russian>Бутылка с 800мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 800ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED">
 			<English>Water Bottle PET (Boiled 9oz)</English>
-			<Russian>Бутылка кипячёной воды (900мл)</Russian>
+			<Russian>Бутылка ПЭТ с чистой водой (900мл)</Russian>
 			<German>Wasserflasche PET (Abgek. 900ml)</German>
 		</Key>
 		<Key ID="STR_EPOCH_PET_WATERBOTTLE9OZBOILED_DESC">
 			<English>Water Bottle PET with 9oz of boiled water.</English>
-			<Russian>Бутылка кипяченой воды с 900мл воды</Russian>
+			<Russian>Бутылка с 900мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 900ml abgekochtem Wasser.</German>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_NAME">
@@ -32456,7 +32473,7 @@
 		<Key ID="STR_EPOCH_BLOODBAG_INFECTED">
 			<English>Blood Bag (infected)</English>
 			<German>Blutkonserve (infiziert)</German>
-			<Russian>Пакет крови (заражённой)</Russian>
+			<Russian>Пакет заражённой крови</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_INFECTED_DESC">
 			<English>A blood bag filled with blood that looks strange.</English>
@@ -33816,7 +33833,7 @@
 		<Key ID="STR_CL_ZSC_NO_COINS">
 			<English>%1 has no %2</English>
 			<German>%1 besitzt keine %2.</German>
-			<Russian>Вы не нашли %2. Умершего звали %1.</Russian>
+			<Russian>Вы ничего не нашли. Умершего звали %1.</Russian>
 			<French>%1 n'a pas %2</French>
 			<Spanish>%1 no tiene %2</Spanish>
 		</Key>
@@ -33928,7 +33945,7 @@
 		<Key ID="STR_CL_ZSC_YOU">
 			<English>You</English>
 			<German>Du</German>
-			<Russian>Вы</Russian>
+			<Russian>У вас</Russian>
 			<French>Vous</French>
 			<Spanish>Tu</Spanish>
 		</Key>
