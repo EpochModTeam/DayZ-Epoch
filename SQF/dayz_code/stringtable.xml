@@ -2000,7 +2000,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_con_i">
 			<English>Connector i</English>
-			<Russian>I коннектор</Russian>
+			<Russian>I-коннектор</Russian>
 			<Czech>I-spojka</Czech>
 			<French>Connecteur i</French>
 			<German>I-Steckverbindung</German>
@@ -2015,7 +2015,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_con_l">
 			<English>Connector L</English>
-			<Russian>L коннектор</Russian>
+			<Russian>L-коннектор</Russian>
 			<Czech>L-spojka</Czech>
 			<French>Connecteur L</French>
 			<German>L-Steckverbindung</German>
@@ -2030,7 +2030,7 @@
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_con_t">
 			<English>Connector T</English>
-			<Russian>T коннектор</Russian>
+			<Russian>T-коннектор</Russian>
 			<Czech>T-spojka</Czech>
 			<French>Connecteur T</French>
 			<German>T-Steckverbindung</German>
@@ -2190,55 +2190,67 @@
 		<Key ID="STR_ITEM_NAME_equip_graphicscard">
 			<English>Graphics Card</English>
 			<German>Grafikkarte</German>
+			<Russian>Видеокарта</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_graphicscard">
 			<English>A small graphics card that is still usable.</English>
 			<German>Eine kleine Grafikkarte, welche immer noch benutzt werden kann.</German>
+			<Russian>Маленькая видеокарта, которую все ещё можно использовать.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_graphicscard_broken">
 			<English>Graphics Card (broken)</English>
 			<German>Grafikkarte (kaputt)</German>
+			<Russian>Сломанная видеокарта</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_graphicscard_broken">
 			<English>A small broken graphics card that must be repaired.</English>
 			<German>Eine kleine kaputte Grafikkarte, welche repariert werden muss.</German>
+			<Russian>Небольшая сломанная видеокарта, которую необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_soundcard">
 			<English>Sound Card</English>
 			<German>Soundkarte</German>
+			<Russian>Звуковая карта</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_soundcard">
 			<English>A small sound card that is still usable.</English>
 			<German>Eine kleine Soundkarte, welche immer noch benutzt werden kann.</German>
+			<Russian>Маленькая звуковая карта, которую все ещё можно использовать.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_soundcard_broken">
 			<English>Sound Card (broken)</English>
 			<German>Soundkarte (kaputt)</German>
+			<Russian>Сломанная звуковая карта</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_soundcard_broken">
 			<English>A small broken sound card that must be repaired.</English>
 			<German>Eine kleine kaputte Soundkarte, welche repariert werden muss.</German>
+			<Russian>Небольшая сломанная звуковая карта, которую необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_pcicard">
 			<English>PCI Card</English>
 			<German>PCI-Karte</German>
+			<Russian>PCI-карта</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_pcicard">
 			<English>A small PCI card that is still usable.</English>
 			<German>Eine kleine PCI-Karte, welche immer noch benutzt werden kann.</German>
+			<Russian>Небольшая карта для разъёма PCI, которую все ещё можно использовать.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_pcicard_broken">
 			<English>PCI Card (broken)</English>
 			<German>PCI-Karte (kaputt)</German>
+			<Russian>Сломанная PCI-карта</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_pcicard_broken">
 			<English>A small broken PCI card that must be repaired.</English>
 			<German>Eine kleine kaputte PCI-Karte, welche repariert werden muss.</German>
+			<Russian>Небольшая сломанная карта для разъёма PCI, которую необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_rope">
 			<English>Rope</English>
 			<German>Seil</German>
-			<Russian>Веревка</Russian>
+			<Russian>Верёвка</Russian>
 			<Spanish>Cuerda</Spanish>
 			<French>Corde</French>
 			<Czech>Lano</Czech>
@@ -2246,7 +2258,7 @@
 		<Key ID="STR_ITEM_DESC_equip_rope">
 			<English>Some rope</English>
 			<German>Ein kurzes Seil</German>
-			<Russian>Прочная веревка.</Russian>
+			<Russian>Какая-то веревка.</Russian>
 			<Spanish>Alguna cuerda</Spanish>
 			<French>Une corde</French>
 			<Czech>Kotouč lana. Je libo se oběsit a ukončit tohle trápení?</Czech>
@@ -2262,7 +2274,7 @@
 		<Key ID="STR_ITEM_DESC_equip_rag">
 			<English>Some old rags</English>
 			<German>Einige Lumpen aus zerrissener Kleidung.</German>
-			<Russian>Старые тряпки.</Russian>
+			<Russian>Старая тряпка.</Russian>
 			<Spanish>Algún viejo trapo</Spanish>
 			<French>Un morceau de tissu</French>
 			<Czech>Nějaké staré hadry</Czech>
@@ -2492,10 +2504,12 @@
 		<Key ID="STR_ITEM_NAME_equip_satawire">
 			<English>SATA Wire</English>
 			<German>SATA-Kabel</German>
+			<Russian>Шлейф SATA</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_satawire">
 			<English>SATA Wire in good condition that can be used in crafting.</English>
 			<German>Ein SATA-Kabel aus einem alten Computer. Es ist gut erhalten.</German>
+			<Russian>Шлейф SATA в хорошем состоянии, может пригодиться в мастерской.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_crate">
 			<English>Crate</English>
@@ -2614,7 +2628,7 @@
 		<Key ID="STR_ITEM_DESC_equip_carbomb">
 			<English>Can be attached to a vehicle's engine and then automatically explode when the next player enters the driver's seat!</English>
 			<German>Kann an einem Fahrzeugmotor angebracht werden. Die Bombe explodiert automatisch, wenn sich ein Spieler auf den Fahrersitz setzt.</German>
-			<Russian>Может быть прикреплена к двигателю транспортного средства, затем автоматически взрывается, когда игрок садится на место водителя!</Russian>
+			<Russian>Крепится к двигателю транспортного средства, затем автоматически взрывается, когда игрок садится на место водителя!</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_attach_carbomb">
 			<English>Attach Car Bomb</English>
@@ -2648,6 +2662,7 @@
 		<Key ID="STR_ITEM_DESC_equip_aa_battery_empty">
 			<English>A size AA battery that must be recarged.</English>
 			<German>Eine Batterie vom Typ R6/AA, welche neu aufgeladen werden muss.</German>
+			<Russian>Батарейка АА, которую необходимо зарядить.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_d_battery">
 			<English>D Battery</English>
@@ -2676,11 +2691,12 @@
 		<Key ID="STR_ITEM_DESC_equip_d_battery_empty">
 			<English>A size D battery that must be recarged.</English>
 			<German>Eine Batterie vom Typ R20/D, welche neu aufgeladen werden muss.</German>
+			<Russian>Батарейка АА, которую необходимо зарядить.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_2inch_metal_pipe">
 			<English>2 Inch Metal Pipes</English>
 			<German>Metallrohr 5cm</German>
-			<Russian>Двухдюймовые трубки</Russian>
+			<Russian>Двухдюймовые трубы</Russian>
 			<Spanish>Tubería de metal de 2"</Spanish>
 			<French>Des tubes de métal de 5 cm</French>
 			<Czech>Dvoupalcová kovová trubka</Czech>
@@ -2688,7 +2704,7 @@
 		<Key ID="STR_ITEM_DESC_equip_2inch_metal_pipe">
 			<English>Metal pipes 2 inches in diameter</English>
 			<German>Ein Metallrohr mit ca. 5cm Durchmesser.</German>
-			<Russian>Двухдюймовые металлические трубки.</Russian>
+			<Russian>Двухдюймовые металлические трубы.</Russian>
 			<Spanish>Una tubería de metal de 2" de diámetro</Spanish>
 			<French>Des tubes en métal de 5 cm de diamètre</French>
 			<Czech>Kovová trubka o průměru dva palce.</Czech>
@@ -2696,7 +2712,7 @@
 		<Key ID="STR_ITEM_NAME_equip_1inch_metal_pipe">
 			<English>1 Inch Metal Pipes</English>
 			<German>Metallrohr 2.5cm</German>
-			<Russian>Дюймовые трубки</Russian>
+			<Russian>Дюймовые трубы</Russian>
 			<Spanish>Una tubería de metal de 1"</Spanish>
 			<French>Des tubes de métal de 2.5 cm</French>
 			<Czech>Jednopalcová kovová trubka</Czech>
@@ -2704,7 +2720,7 @@
 		<Key ID="STR_ITEM_DESC_equip_1inch_metal_pipe">
 			<English>Metal pipes 1 inch in diameter</English>
 			<German>Ein Metallrohr mit ca. 2.5cm Durchmesser.</German>
-			<Russian>Дюймовые металлические трубки.</Russian>
+			<Russian>Дюймовые металлические трубы.</Russian>
 			<Spanish>Una tubería de metal de 1" de diámetro</Spanish>
 			<French>Des tubes en métal de 2.5 cm de diamètre</French>
 			<Czech>Kovová trubka o průměru jeden palec.</Czech>
@@ -2765,7 +2781,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Bandage">
 			<English>Blueprint to create a Bandage. Required - 2 Rags, 2 gauze, 1 string. Tools Needed: ToolBox</English>
-			<Russian>Инструкция по созданию бинтов. Нужно: пара тряпок, пара марль, шнур и ящик с инструментами.</Russian>
+			<Russian>Инструкция по созданию бинтов.&lt;br/&gt;Нужно: пара тряпок, пара марль, шнур и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear Vendaje. Requerido: 2 trapos, 2 gasas, 1 hilo y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;un Pansement. Requis : 2 Tissus, 2 Gazes, 1 Fil + Boîte à outils</French>
 			<Czech>Návod pro vyrobení obvazu. Potřeba: 2x hadr, 2x gáza, 1x provázek a sada nástrojů</Czech>
@@ -2782,7 +2798,7 @@
 		<Key ID="STR_CRAFT_DESC_SEPSISBandage">
 			<English>Blueprint to create a sepsis cure and bandage. Required - 3 rags, 2 gauze, 1 string, 2 comfrey leaves.</English>
 			<Spanish>Plano para crear un vendaje que combate la septicemia. Requerido: - 3 trapos, 2 gasas, 1 cuerda, 2 hojas de consuelda.</Spanish>
-			<Russian>Инструкция по созданию антисептических бинтов. Нужно: три тряпки, пара марль, шнур и пара листков живокоста.</Russian>
+			<Russian>Инструкция по созданию антисептических бинтов.&lt;br/&gt;Нужно: три тряпки, пара марль, шнур и пара листков живокоста.</Russian>
 			<Czech>Návod pro vyrobení antiseptického obvazu. Potřeba: 3x hadr, 2x gáza, 1x provázek, 2x listy kostivalu.</Czech>
 			<French>Plan de fabrication d&apos;un pansement antiseptique. Requis: 3 tissus, 2 gazes, 1 ficelle, 2 consoudes.</French>
 			<German>Blaupause für eine antiseptische Bandage. Gebraucht werden: 3x Lumpen, 2x Mullbinden, 1x Schnur, 2x Beinwellblätter.</German>
@@ -2797,7 +2813,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Compass">
 			<English>Crafted Compass - Reg razor, water bottle, scrap metal. Tools Needed: ToolBox</English>
-			<Russian>Инструкция по созданию самодельного компаса - бритва, бутылка с водой, металлолом и ящик с инструментами.</Russian>
+			<Russian>Инструкция по созданию самодельного компаса.&lt;br/&gt;Нужно: бритва, бутылка с водой, металлолом и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear Brújula. Requerido: 1 maquinita de afeitar, 1 botella de agua, 1 chatarra y Caja de Herramientas</Spanish>
 			<Czech>Návod pro vyrobení kompasu. Potřeba: 1x břitva, 1x láhev na vodu, 1x kovový šrot a sada nástrojů.</Czech>
 			<French>Plan de fabrication d&apos;une Boussole. Requis : 1 rasoir, bouteille, bout de métal + Boîte à outils</French>
@@ -2813,7 +2829,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_HerbalDrink">
 			<English>Blueprint to create a Herbal Drink. Required - 1 Water bottle boiled and one herb box.</English>
-			<Russian>Рецепт приготовления травяного напитка. Требуется: бутылка чистой воды и коробка трав.</Russian>
+			<Russian>Рецепт приготовления травяного напитка.&lt;br/&gt;Требуется: бутылка чистой воды и коробка трав.</Russian>
 			<Spanish>Blueprint para crear una bebida a base de plantas. Requerido - 1 Botella de agua hervida y una caja de hierbas.</Spanish>
 			<French>Blueprint pour créer une boisson à base de plantes. Required - 1 bouteille d'eau bouillie et une boîte d'herbe.</French>
 			<Czech>Blueprint vytvořit Herbal drink. Povinné - 1 láhev vody vařené a jedna bylina box.</Czech>
@@ -2830,7 +2846,7 @@
 		<Key ID="STR_CRAFT_DESC_BaseBallBatBarbed">
 			<English>Blueprint to create a baseball bat with Barbed Wire. Required - 1 Pack of Nails, 1 Wire Fence, 1 Baseballbat Tools - ToolBox</English>
 			<German>Blaupause für eine Stacheldrahtkeule. Gebraucht werden: 1x Baseballschläger, 1x Nägel, 1x Stacheldraht, Werkzeugkasten.</German>
-			<Russian>Инструкция по сборке биты с колючкой. Нужно: коробка гвоздей, колючка, бита и ящик с нструментами.</Russian>
+			<Russian>Инструкция по сборке биты с колючкой.&lt;br/&gt;Нужно: коробка гвоздей, колючка, бита и ящик с нструментами.</Russian>
 			<Spanish>Plano para crear una Bate de Béisbol con Alambre de Púas. Requerido: 1 caja de clavos, 1 alambre de púas, 1 bate de béisbol y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;une Batte de baseball barbelée. Requis : 1 boîtes de clous, 1 Barbelés, 1 batte de baseball + Boîte à outils</French>
 			<Czech>Návod pro vyrobení baseballové pálky s ostnatým drátem. Potřeba: 1x krabička s hřebíky, 1x ostnatý drát, 1x baseballová pálka a sada nástrojů</Czech>
@@ -2846,7 +2862,7 @@
 		<Key ID="STR_CRAFT_DESC_NailedBaseballBat">
 			<English>Blueprint to create a baseball bat with nails. Required - 2 Packs of Nails, 1 Baseballbat Tools. - ToolBox</English>
 			<German>Blaupause für eine Nagelkeule. Gebraucht werden: 1x Baseballschläger, 2x Nägel, Werkzeugkasten.</German>
-			<Russian>Инструкция по сборке биты с гвоздями. Нужно: пара коробок с гвоздями, бита и ящик с инструментами.</Russian>
+			<Russian>Инструкция по сборке биты с гвоздями.&lt;br/&gt;Нужно: пара коробок с гвоздями, бита и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear Bate de Béisbol con Clavos. Requerido: 2 cajas de clavos, 1 bate de béisbol y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;une Batte de baseball cloutée. Requis : 2 boîtes de clous, 1 batte de baseball + Boîte à outils</French>
 			<Czech>Návod pro vyrobení baseballové pálky s hřebíky. Potřeba: 2x krabička s hřebíky, 1x baseballová pálka a sada nástrojů.</Czech>
@@ -2861,7 +2877,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PipeBomb">
 			<English>Blueprint to create a PipeBomb. Required - 1 1inch Metal Pipe, 1 2inch Metal Pipe, 1 metal sheet, 1 fuse, 1 pipecap. - ToolBox</English>
-			<Russian>Инструкция по сборке самодельной бомбы. Нужно: дюймовая труба, двухдюймовая труба, лист металла, фитиль, заглушка и ящик с инструментами.</Russian>
+			<Russian>Инструкция по сборке самодельной бомбы.&lt;br/&gt;Нужно: дюймовая труба, двухдюймовая труба, лист металла, фитиль, заглушка и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear una Bomba Casera. Requerido: 1 tubo metálico de 1", 1 tubo metálico de 2", 1 lámina metálica, 1 mecha, 1 tapón y Caja de Herramientas</Spanish>
 			<Czech>Návod pro vyrobení nálože. Potřeba: 1x jednopalcová kovová trubka, 1x dvoupalcová trubka, 1x plech, 1x knot, 1x zátka a sada nástrojů</Czech>
 			<French>Plan de fabrication d&apos;une bombe télécommandée. Requis : 1 tuyau métallique de 2,5cm, 1 tuyau métallique de 5cm, 1 plaque de métal, 1 mèche, 1 bouchon + Boîte à outils</French>
@@ -2877,7 +2893,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_PSO">
 			<English>Blueprint to create an PSO Scope. Required - 2 2inch Metal Pipe, 1 Binocular_Vector, 1 Hose Clamp. Tools - ToolBox</English>
-			<Russian>Инструкция по сборке прицела ПСО. Нужно: пара духдюймовых труб, дальномер, кольцевой зажим и ящик с инструментами.</Russian>
+			<Russian>Инструкция по сборке прицела ПСО.&lt;br/&gt;Нужно: пара духдюймовых труб, дальномер, кольцевой зажим и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear una Mira PSO. Requerido: 2 tuberias de metal de 2", 1 prismático vectorial, 1 abrazadera metálica y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;une lunette pour PSO. Requis : 2 tuyaux de 5cm, 1 Jumelle, 1 collier de fixation + Boîte à outils</French>
 			<Czech>Návod pro vyrobení zaměřovače PSO. Potřeba: 2x dvouplacová kovová trubka, 1x dalekohled, 1x objímka a sada nástrojů.</Czech>
@@ -2893,7 +2909,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_ACG">
 			<English>Blueprint to create an ACOG Scope. Required - 2 2inch Metal Pipe, 2 Metal Sheet, 1 Hose Clamp. Tools - ToolBox</English>
-			<Russian>Инструкция по сборке прицела ACOG. Нужно: пара духдюймовых труб, пара листов металла, кольцевой зажим и ящик с инструментами.</Russian>
+			<Russian>Инструкция по сборке прицела ACOG.&lt;br/&gt;Нужно: пара духдюймовых труб, пара листов металла, кольцевой зажим и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear una Mira ACG. Requerido: 2 tuberias de metal de 2", 2 láminas de metal, 1 abrazadera metálica y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;une lunette pour ACG. Requis : 2 tuyaux de 5cm, 2 plaques de métal, 1 collier de fixation + Boîte à outils</French>
 			<Czech>Návod pro vyrobení zaměřovače ACOG. Potřeba: 2x dvoupalcová kovová trubka, 2x plech, 1x objímka a sada nástrojů</Czech>
@@ -2909,7 +2925,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_AIM">
 			<English>Blueprint to create an Aimpoint Red-Dot optic. Required - 1 1inch Metal Pipe, 1 scrap electronics, 1 D type battery, 1 Cable Tie. Tools - ToolBox</English>
-			<Russian>Инструкция по сборке прицела AIM. Нужно: дюймовая труба, радиодетали, батарейка типа D, стяжка и ящик с инструментами.</Russian>
+			<Russian>Инструкция по сборке прицела AIM.&lt;br/&gt;Нужно: дюймовая труба, радиодетали, батарейка типа D, стяжка и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear una Mira AIM. Requerido: 2 tuberias de metal de 2", 1 prismático vectorial, 1 abrazadera plástica y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;une lunette laser. Requis : 1 tuyau de 2.5cm, 1 pièces électroniques, 1 pile de type D, 1 serre-câble + Boîte à outils</French>
 			<Czech>Návod pro vyrobení CCO zaměřovače. Potřeba: 1x jednopalcová kovová trubka, 1x zbytek elektroniky, 1x D baterie, 1x objímka a sada nástrojů</Czech>
@@ -2925,7 +2941,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_CAMO">
 			<English>Blueprint to create an CAMO Pattern. Required - 1 Rag, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
-			<Russian>Инструкция по камуфлированию оружия. Нужно: тряпка, тюбик краски, стяжка и ящик с инструментами.</Russian>
+			<Russian>Инструкция по камуфлированию оружия.&lt;br/&gt;Нужно: тряпка, тюбик краски, стяжка и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear un Patrón de Camuflaje. Requerido: 2 trapos, 1 lata de pintura, 1 abrazadera plástica y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;un motif camouflage. Requis : 1 Tissu, 1 pot de peinture, 1 serre-câble + Boîte à outils</French>
 			<Czech>Návod pro vyrobení maskovacího potisku. Potřeba: 1x hadr, 1x barva, 1x provázek a sada nástrojů</Czech>
@@ -2941,7 +2957,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_KOBRA">
 			<English>Blueprint to create an KOBRA Scope. Required - 1 Metal Sheet, 1 Paint Pot, 1 Cable Tie. Tools - ToolBox</English>
-			<Russian>Инструкция по сборке прицела "Кобра". Нужно: лист металла, тюбик краски, стяжка и ящик с инструментами.</Russian>
+			<Russian>Инструкция по сборке прицела "Кобра".&lt;br/&gt;Нужно: лист металла, тюбик краски, стяжка и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear una Mira KOBRA. Requerido: 1 lámina de metal, 1 lata de pintura, 1 abrazadera plástica y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;une lunette pour KOBRA. Requis : 1 Plaque de métal, 1 pot de peinture, 1 serre-câble + Boîte à outils</French>
 			<Czech>Návod pro vyrobení zaměřovače KOBRA. Potřeba: 1x plech, 1x barva, 1x drátky a sada nástrojů</Czech>
@@ -2949,7 +2965,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_NAME_GL">
 			<English>Grenade Launcher Attachment</English>
-			<Russian>Подствольный гранатомет</Russian>
+			<Russian>Подствольный гранатомёт</Russian>
 			<Spanish>Lanzador de Granadas</Spanish>
 			<French>Fixation lance-grenade</French>
 			<Czech>Granátomet</Czech>
@@ -2957,7 +2973,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_GL">
 			<English>Blueprint to create a 40mm Grenade Launcher. Required - 2 Metal Sheet, 1 2 inch metal pipe, 1 Hose Clamp. Tools - ToolBox</English>
-			<Russian>Инструкция по сборке подствольного гранатомета. Нужно: пара листов металла, двухдюймовая труба, кольцевой зажим и ящик с инструментами.</Russian>
+			<Russian>Инструкция по сборке подствольного гранатомёта.&lt;br/&gt;Нужно: пара листов металла, двухдюймовая труба, кольцевой зажим и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear una Lanzador de Granadas. Requerido: 2 láminas de metal, 1 tubería de metal de 2", 1 abrazadera de manguera y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;une fixation lance-grenade. Requis : 2 Plaques de métal, 1 Tuyau de 5cm, 1 collier de serrage + Boîte à outils</French>
 			<Czech>Návod pro vyrobení podvěsného granátometu. Potřeba: 2x plech, 1x dvoupalcová kovová trubka, 1x objímka a sada nástrojů</Czech>
@@ -3164,7 +3180,7 @@
 		</Key>
 		<Key ID="STR_ATTACHMENT_DESC_CCO_RED">
 			<English>CCO RedDot Attachment</English>
-			<Russian>Прицел CCO</Russian>
+			<Russian>Прицел CCO - оптический прицел для стрельбы на короткие дистанции.</Russian>
 			<Czech>Kolimátor Close Combat Optics, používá se pro vylepšení zbraní.</Czech>
 			<German>Close Combat Optics, Rotpunktvisier amerikanischer Bauart.</German>
 		</Key>
@@ -3207,7 +3223,7 @@
 
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_M9">
 			<English>[A] Silencer (M9)</English>
-			<Russian>[М] 9мм глуш. (М9)</Russian>
+			<Russian>[М] 9мм глушитель (М9)</Russian>
 			<Czech>Příslušenství - tlumič pro M9</Czech>
 			<German>[E] M9 Schalldämpfer</German>
 		</Key>
@@ -3219,7 +3235,7 @@
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_M4">
 			<English>[A] Silencer (M4A1)</English>
-			<Russian>[М] ПБС (M4А1)</Russian>
+			<Russian>[М] Глушитель (M4А1)</Russian>
 			<Czech>Příslušenství - tlumič pro M4A1</Czech>
 			<German>[E] M4A1 Schalldämpfer</German>
 		</Key>
@@ -3232,7 +3248,7 @@
 
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_SCAR">
 			<English>[A] Silencer (SCAR)</English>
-			<Russian>[М] ПБС (SCAR)</Russian>
+			<Russian>[М] Глушитель (SCAR)</Russian>
 			<Czech>Příslušenství - tlumič pro SCAR</Czech>
 			<German>[E] SCAR Schalldämpfer</German>
 		</Key>
@@ -3244,7 +3260,7 @@
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_SILENCER_MP5">
 			<English>[A] Silencer (MP5)</English>
-			<Russian>[М] 9мм глуш. (MP5)</Russian>
+			<Russian>[М] 9мм глушитель (MP5)</Russian>
 			<Czech>Příslušenství - tlumič pro MP5</Czech>
 			<German>[E] MP5 Schalldämpfer</German>
 		</Key>
@@ -3277,7 +3293,7 @@
 		<Key ID="STR_EQUIP_NAME_1">
 			<English>Entrenching Tool</English>
 			<German>Klappspaten</German>
-			<Russian>Саперная лопатка</Russian>
+			<Russian>Сапёрная лопатка</Russian>
 			<Spanish>Pala Militar</Spanish>
 			<French>Outil de tranchée</French>
 			<Czech>Polní lopatka</Czech>
@@ -3285,12 +3301,12 @@
 		<Key ID="STR_EQUIP_NAME_1_BROKEN">
 			<English>Broken Entrenching Tool</English>
 			<German>Kaputter Klappspaten</German>
-			<Russian>Сломанная Саперная лопатка</Russian>
+			<Russian>Сломанная сапёрная лопатка</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_1">
 			<English>Collapsible spade used together with the engineering backpack to create field defences.</English>
 			<German>Ein Klappspaten, welcher beim Verschanzen und für viele Bautätigkeiten benötigt wird.</German>
-			<Russian>Саперная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
+			<Russian>Сапёрная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
 			<Spanish>Una pala plegable usada para crear defensas en el campo.</Spanish>
 			<French>Une pelle démontable permettant de construire des éléments de défense.</French>
 			<Czech>Polní lopatka se používá při stavbě obranných postavení. Pokud jste SpecNaz, umíte s ní zabít.</Czech>
@@ -3298,7 +3314,7 @@
 		<Key ID="STR_EQUIP_DESC_1_BROKEN">
 			<English>Broken collapsible spade that must be repaired.</English>
 			<German>Ein kaputter Klappspaten, welcher repariert werden muss.</German>
-			<Russian>Сломанная саперная лопатка, которую необходимо починить.</Russian>
+			<Russian>Сломанная сапёрная лопатка, которую необходимо починить.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_1b">
 			<English>Shovel</English>
@@ -3324,7 +3340,7 @@
 		<Key ID="STR_EQUIP_DESC_1b_BROKEN">
 			<English>Too much force has broken this Shovel. Hopefully you find something to repair it.</English>
 			<German>Rohe Kraft hat diese Schaufel zerstört. Hoffentlich findest du etwas zum Reparieren.</German>
-			<Russian>Слишком много сил было приложено к этой лопате. Возможно вы найдете что-нибудь, чтобы её починить.</Russian>
+			<Russian>Слишком много сил было приложено к этой лопате. Возможно вы найдёте что-нибудь, чтобы её починить.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_2">
 			<English>Toolbox</English>
@@ -3342,7 +3358,7 @@
 		<Key ID="STR_EQUIP_DESC_2">
 			<English>Toolbox that can be used for repairing damaged vehicles and equipment.</English>
 			<German>Eine Kiste mit Werkzeugen, welche zum Reparieren beschädigter Fahrzeuge und Ausrüstung verwendet werden können.</German>
-			<Russian>Набор инструментов используется для ремонта поврежденной техники и снаряжения, а также установки укреплений.</Russian>
+			<Russian>Набор инструментов используется для ремонта повреждённой техники и снаряжения, а также установки укреплений.</Russian>
 			<Spanish>La caja de herramientas puede ser usada para reparar vehículos y equipamiento dañado.</Spanish>
 			<French>Boîte à outils servant à réparer le matériel et les véhicules.</French>
 			<Czech>Sada nástrojů se používá pro opravy poškozených vozidel a vybavení.</Czech>
@@ -3530,7 +3546,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_4_E">
 			<English>Your Knife appears to be too blunt. (Maybe 1 uses Left).</English>
-			<Russian>Похоже, нож тупится. Можно воспользоваться еще разок.</Russian>
+			<Russian>Похоже, нож тупится. Можно воспользоваться ещё разок.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak jednou.</Czech>
 			<German>Dein Messer ist so gut wie stumpf. (Vielleicht noch 1 Anwendung möglich)</German>
 		</Key>
@@ -3597,7 +3613,7 @@
 		<Key ID="STR_EQUIP_DESC_7">
 			<English>Joint Services standard first aid dressing. Used to stop bleeding of wounds.</English>
 			<German>Militärisches Verbandszeug, NATO-Standard. Wird zum Stillen von blutenden Wunden verwendet.</German>
-			<Russian>Армейская упаковка бинтов. Используется для перевязки ран.</Russian>
+			<Russian>Упаковка армейских бинтов. Используются для перевязки ран.</Russian>
 			<Spanish>Vendaje de primeros auxilios. Usado para detener el sangrado de heridas.</Spanish>
 			<French>Pansement de premier secours, norme OTAN. Utilisé pour stopper une hémorragie.</French>
 			<Czech>Obvaz podle standartů NATO. Slouží pro zastavení krvácení.</Czech>
@@ -3693,7 +3709,7 @@
 		<Key ID="STR_EQUIP_DESC_32">
 			<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in helicopters.</English>
 			<German>Hydrauliksysteme für einen Helikopter, welche zum Reparieren kaputter Rotorwellen in Helikoptern verwendet werden können.</German>
-			<Russian>Набор запчастей для починки лопастей винтов и вала главного ротора для вертолета.</Russian>
+			<Russian>Набор запчастей для починки лопастей винтов и вала главного ротора для вертолёта.</Russian>
 			<Spanish>Eje hidráulico del rotor de un helicoptero.</Spanish>
 			<French>Colonne de rotor d&apos;hélicoptère. Permet de réparer un hélicoptère qui a un de ses rotors cassé.</French>
 			<Czech>Hlavní rotor pro vrtulníky. Lze použít při opravě rotoru libovolného vrtulníku.</Czech>
@@ -3746,7 +3762,7 @@
 		<Key ID="STR_EQUIP_DESC_14">
 			<English>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</English>
 			<German>Epinephrin-Autoinjektor zur intramuskulären Injektion bei Bewusstlosigkeit.</German>
-			<Russian>Инъекция адреналина для приведения в чувства людей без сознания.</Russian>
+			<Russian>Инъекция адреналина для приведения в чувство людей без сознания.</Russian>
 			<Spanish>Epinefrina Autoinyectable. Inyección intramuscular para revivir a alguien inconciente.</Spanish>
 			<French>Adrénaline en auto-injection intra-musculaire "Epipen". Permet de se remettre d&apos;une perte de conscience.</French>
 			<Czech>Injekce adrenalinu (epinefrinu). Používá se pro probrání osoby z bezvědomí.</Czech>
@@ -4121,7 +4137,7 @@
 		<Key ID="STR_EQUIP_DESC_26">
 			<English>Canned baked beans used for sustainment. Lasts well over five years if stored correctly.</English>
 			<German>Eine Dose gebackener Bohnen, welche bei richtiger Lagerung weit über fünf Jahre haltbar sind.</German>
-			<Russian>Банка вареных бобов в соусе. Срок хранения до 5 лет.</Russian>
+			<Russian>Банка варёных бобов в соусе. Срок хранения до 5 лет.</Russian>
 			<Spanish>Lata de frijoles cocinados al horno.</Spanish>
 			<French>Boîte d&apos;haricots pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Baked Beans v rajčatové omáčce jsou nejoblíbenější variantou této značky. Při správném skladování vydrží i 5 let.</Czech>
@@ -4281,7 +4297,7 @@
 		<Key ID="STR_EQUIP_DESC_40">
 			<English>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</English>
 			<German>Ein kleiner Stapel frisch gehacktes Holz, welches unter anderem dazu verwendet werden kann, ein Feuer zu machen.</German>
-			<Russian>Кучка дров, идеально подойдет, чтобы развести костер.</Russian>
+			<Russian>Кучка дров, идеально подойдёт, чтобы развести костёр.</Russian>
 			<Spanish>Una pequeña pila de leña recien cortada que puede ser usada para crear una fogata y varias otras cosas.</Spanish>
 			<French>Un peu de bois qui permet de préparer du feu, entre autre.</French>
 			<Czech>Hromádka čerstvě nasekaného dřeva, které může být použito pro vyrobení ohniště a další různé věci.</Czech>
@@ -4602,7 +4618,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_HATCHET">
 			<English>A single-handed striking tool with a sharp blade used to cut and split wood.</English>
-			<Russian>Топор отлично подойдет для рубки дров.</Russian>
+			<Russian>Топор отлично подойдёт для рубки дров.</Russian>
 			<Spanish>Una herramienta con una hoja afilada para golpear y cortar madera.</Spanish>
 			<Czech>Jednoruční sekera vhodná pro sekání do dřeva a do zombie.</Czech>
 			<French>Un outil à une main à lame éffilée utilisé pour couper du bois.</French>
@@ -4684,10 +4700,11 @@
 		<Key ID="STR_EQUIP_NAME_MACHETE_BROKEN">
 			<English>Broken Machete</English>
 			<German>Kaputte Machete</German>
+			<Russian>Сломанное мачете</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_MACHETE">
 			<English>An agricultural tool turned into a weapon, the Machete may be less versatile than the common hatchet, but it packs a punch.</English>
-			<Russian>Сельскохозяйственный инструмент, превращенный в оружие. Не такой универсальный, как топор, но весьма мощный.</Russian>
+			<Russian>Сельскохозяйственный инструмент, превращённый в оружие. Не такой универсальный, как топор, но весьма мощный.</Russian>
 			<Spanish>Una herramienta agrícola transformada en un arma. El machete puede ser menos versátil que un hacha común pero pega con fürza.</Spanish>
 			<Czech>Původně zbraň pro zahradničení. Nemá tolik využití jako sekera, ale proti zombie poslouží stejně dobře.</Czech>
 			<French>Un outil agricole qui peut être utilisé comme une arme. La machette est moins versatile que la hache mais plus tranchante.</French>
@@ -4696,6 +4713,7 @@
 		<Key ID="STR_EQUIP_DESC_MACHETE_BROKEN">
 			<English>Broken machete that must be reparied.</English>
 			<German>Eine kaputte Machete, welche repariert werden muss.</German>
+			<Russian>Сломанное мачете, которое необходимо починить.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BASEBALLBAT">
 			<English>Baseball Bat</English>
@@ -4761,7 +4779,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A2GL">
 			<English>Assault rifle with grenade launcher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка с гранатометом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
+			<Russian>Штурмовая винтовка с гранатомётом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
 			<Spanish>Rifle de asalto con lanzador de granadas &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
 			<French>Fusil d&apos;assault américain avec lance-grenades &lt;br/&gt;Calibre: 5.56x45mm OTAN, Grenade 40mm</French>
 			<Czech>Útočná puška s podvěsným granátometem &lt;br/&gt;Kalibr: 5.56x45mm NATO, granát 40mm</Czech>
@@ -4794,7 +4812,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A4_M203_ACOG">
 			<English>Assault rifle with grenade luncher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка с гранатометом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
+			<Russian>Штурмовая винтовка с гранатомётом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
 			<Spanish>Rifle de asalto con lanzador de granadas &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
 			<French>Fusil d&apos;assault à viseur optique avancé et lance-grenades &lt;br/&gt;Calibre: 5.56x45mm OTAN, grenade 40mm</French>
 			<Czech>Útočná puška s podvěsným granátometem a zaměřovačem ACOG &lt;br/&gt;Kalibr: 5.56x45mm NATO, granát 40mm</Czech>
@@ -4805,7 +4823,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_M16A4GL">
 			<English>Assault rifle with grenade luncher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка с гранатометом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
+			<Russian>Штурмовая винтовка с гранатомётом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
 			<Spanish>Rifle de asalto con lanzador de granadas &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
 			<French>Fusil d&apos;assault américain avec lance-grenades &lt;br/&gt;Calibre: 5.56x45mm OTAN, grenade 40mm</French>
 			<Czech>Útočná puška s podvěsným granátometem &lt;br/&gt;Kalibr: 5.56x45mm NATO, granát 40mm</Czech>
@@ -5073,7 +5091,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_NAME_1">
 			<English>Mutton Raw</English>
 			<German>Rohes Hammelfleisch</German>
-			<Russian>Ягнятина</Russian>
+			<Russian>Баранина</Russian>
 			<Spanish>Cordero Crudo</Spanish>
 			<French>Agneau Cru</French>
 			<Czech>Syrové jehněčí</Czech>
@@ -5081,7 +5099,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">
 			<English>Lamb Meat to be used for sustenance, should be cooked prior to safe eating.</English>
 			<German>Ein Stück rohes Hammelfleisch, welches vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Ягнятина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
+			<Russian>Баранина. Будет вкуснее и безопаснее, если её приготовить.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<French>La Viande d&apos;agneau peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
 			<Czech>Tento kus jehněčího byl měl být nejprve opečen.</Czech>
@@ -5145,7 +5163,7 @@
 		<Key ID="STR_FOOD_EQUIP_CODE_DESC_6">
 			<English>Beef to be used for sustenance, should be cooked prior to safe eating.</English>
 			<German>Ein Stück rohes Rindfleisch, welches vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Говядина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
+			<Russian>Говядина. Будет вкуснее и безопаснее, если её приготовить.</Russian>
 			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<French>Le Boeuf Cru peut être consommé mais devrait être cuit avant de le manger.</French>
 			<Czech>Tento hovězí steak byl měl být nejprve opečen.</Czech>
@@ -5161,7 +5179,7 @@
 		<Key ID="STR_FOOD_EQUIP_GOAT_RAW">
 			<English>Goat Meat to be used for sustenance, should be cooked prior to safe eating.</English>
 			<German>Ein Stück rohes Ziegenfleisch, welches vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Ягнятина. Будет вкуснее и безопаснее, если ее приготовить.</Russian>
+			<Russian>Ягнятина. Будет вкуснее и безопаснее, если её приготовить.</Russian>
 			<Spanish>Carne de Cabra Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
 			<French>La viande de chèvre crue peut être consommée mais devrait être cuite avant de le manger.</French>
 			<Czech>Tento kus kozího masa byl měl být nejprve opečen.</Czech>
@@ -5185,7 +5203,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_1">
 			<English>Cooked Mutton</English>
 			<German>Gebratenes Lammfleisch</German>
-			<Russian>Жареная ягнятина</Russian>
+			<Russian>Жареная баранина</Russian>
 			<Spanish>Cordero Cocinado</Spanish>
 			<French>Agneau Cuit</French>
 			<Czech>Opečené jehněčí</Czech>
@@ -5193,7 +5211,7 @@
 		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_1">
 			<English>Lamb Meat to be used for sustenance.</English>
 			<German>Ein Stück Lammfleisch, welches über Feuer gut durchgebraten wurde.</German>
-			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
+			<Russian>Жареная баранина, готовая к употреблению.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
 			<French>La Viande d&apos;agneau peut être consommée.</French>
 			<Czech>Opečené jehněčí může být snězeno, abyste přežili.</Czech>
@@ -5343,7 +5361,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_TROUT_COOKED">
 			<English>Steelhead (cooked)</English>
-			<Russian>Форель (жареная)</Russian>
+			<Russian>Жареная форель</Russian>
 			<Spanish>Trucha (cocinada)</Spanish>
 			<Czech>Pstruh (opečený)</Czech>
 			<French>Brochet (cuit)</French>
@@ -5351,7 +5369,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_TUNA_COOKED">
 			<English>Tuna (cooked)</English>
-			<Russian>Тунец (жареный)</Russian>
+			<Russian>Жареный тунец</Russian>
 			<Spanish>Atún (cocinado)</Spanish>
 			<Czech>Tuňák (opečený)</Czech>
 			<French>Thon (cuit)</French>
@@ -5359,7 +5377,7 @@
 		</Key>
 		<Key ID="STR_FOOD_NAME_SEABASS_COOKED">
 			<English>Seabass (cooked)</English>
-			<Russian>Окунь (жареный)</Russian>
+			<Russian>Жареный окунь</Russian>
 			<Spanish>Lubina (cocinada)</Spanish>
 			<Czech>Mořčák (opečený)</Czech>
 			<French>Bar (cuit)</French>
@@ -8784,7 +8802,7 @@
 			<English>HMMWV MK19 (Desert)++++</English>
 			<Russian>Хамви MK19 (Пустынный)++++</Russian>
 			<German>Humvee MK19 (Wüstentarn)++++</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES">
 			<English>HMMWV (Desert)</English>
 			<Russian>Хамви (Пустынный)</Russian>
@@ -11900,7 +11918,7 @@
 			<German>UAZ rostig (AGS-30)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS">
-			<English>UAZ Winter (AGS-30)</English>			
+			<English>UAZ Winter (AGS-30)</English>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS+">
 			<English>UAZ Winter (AGS-30)+</English>
@@ -14446,10 +14464,10 @@
 		<Key ID="STR_VEH_NAME_CESSNA_M60">
 			<English>Cessna C185T (Twin M60)</English>
 			<German>Cessna C185T (Zwillings-M60)</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_VEH_NAME_CESSNA_AMPHIBIAN">
 			<English>Cessna C185F (Amphibian)</English>
-		</Key>		
+		</Key>
 		<Key ID="STR_VEH_NAME_STASH">
 			<English>Stash</English>
 			<French>Planque</French>
@@ -18556,7 +18574,7 @@
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 			<Russian>Бесшумная снайперская винтовка &lt;br/&gt;Патрон: 7.62x51mm</Russian>
 		</Key>
-		
+
 		<!-- SCAR-H AK -->
 		<Key ID="STR_DZ_WPN_SCARAK_NAME">
 			<English>SCAR-H AK</English>
@@ -18575,7 +18593,7 @@
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm</German>
 			<Russian>Штурмовая винтовка &lt;br/&gt;Патрон: 7.62x39mm</Russian>
 		</Key>
-		
+
 		<!-- XM8 -->
 		<Key ID="STR_DZ_WPN_XM8_CARBINE_NAME">
 			<English>XM8 Carbine</English>
@@ -18763,10 +18781,10 @@
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_SILVER_NAME">
 			<English>Desert Eagle Silver</English>
 			<German>Desert Eagle Silber</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_MODERN_NAME">
 			<English>Desert Eagle Modern</English>
-		</Key>		
+		</Key>
         <Key ID="STR_DZ_WPN_DESERT_EAGLE_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .50 AE</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .50 AE</German>
@@ -33985,19 +34003,19 @@
 		<Key ID="STR_EPOCH_GOAT_ZOMBIE">
 			<English>Zombified Goat</English>
 			<German>Zombifizierte Ziege</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_SHEEP_ZOMBIE">
 			<English>Zombified Sheep</English>
 			<German>Zombifiziertes Schaf</German>
-		</Key>	
+		</Key>
 		<Key ID="STR_EPOCH_DOG_ZOMBIE">
 			<English>Zombified Dog</English>
 			<German>Zombifizierter Hund</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_RABBIT_ZOMBIE">
 			<English>Zombified Rabbit</English>
 			<German>Zombifizierter Hase</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_BOAR_ZOMBIE">
 			<English>Zombified Boar</English>
 			<German>Zombifiziertes Wildschwein</German>
@@ -34005,12 +34023,12 @@
 		<Key ID="STR_EPOCH_COCK_ZOMBIE">
 			<English>Zombified Cock</English>
 			<German>Zombifizierter Hahn</German>
-		</Key>		
+		</Key>
 		<Key ID="STR_EPOCH_CHICKEN_ZOMBIE">
 			<English>Zombified Chicken</English>
 			<German>Zombifiziertes Huhn</German>
 		</Key>
-		
+
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
