@@ -8735,6 +8735,56 @@
 			<Russian>Хамви M2 (Лесной камуфляж)++++</Russian>
 			<German>Humvee M2 (Waldtarn)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19">
+			<English>HMMWV MK19 (Woodland)</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)</Russian>
+			<German>Humvee MK19 (Waldtarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19+">
+			<English>HMMWV MK19 (Woodland)+</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)+</Russian>
+			<German>Humvee MK19 (Waldtarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19++">
+			<English>HMMWV MK19 (Woodland)++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)++</Russian>
+			<German>Humvee MK19 (Waldtarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19+++">
+			<English>HMMWV MK19 (Woodland)+++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)+++</Russian>
+			<German>Humvee MK19 (Waldtarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_MK19++++">
+			<English>HMMWV MK19 (Woodland)++++</English>
+			<Russian>Хамви MK19 (Лесной камуфляж)++++</Russian>
+			<German>Humvee MK19 (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19">
+			<English>HMMWV MK19 (Desert)</English>
+			<Russian>Хамви MK19 (Пустынный)</Russian>
+			<German>Humvee MK19 (Wüstentarn)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19+">
+			<English>HMMWV MK19 (Desert)+</English>
+			<Russian>Хамви MK19 (Пустынный)+</Russian>
+			<German>Humvee MK19 (Wüstentarn)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19++">
+			<English>HMMWV MK19 (Desert)++</English>
+			<Russian>Хамви MK19 (Пустынный)++</Russian>
+			<German>Humvee MK19 (Wüstentarn)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19+++">
+			<English>HMMWV MK19 (Desert)+++</English>
+			<Russian>Хамви MK19 (Пустынный)+++</Russian>
+			<German>Humvee MK19 (Wüstentarn)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19++++">
+			<English>HMMWV MK19 (Desert)++++</English>
+			<Russian>Хамви MK19 (Пустынный)++++</Russian>
+			<German>Humvee MK19 (Wüstentarn)++++</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_HMMWV_DES">
 			<English>HMMWV (Desert)</English>
 			<Russian>Хамви (Пустынный)</Russian>
@@ -9626,6 +9676,31 @@
 			<Russian>Военный внедорожник (M2)++++</Russian>
 			<German>Militär Offroad (M2)++++</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9">
+			<English>Military Offroad (SPG-9)</English>
+			<Russian>Военный внедорожник (СПГ-9)</Russian>
+			<German>Militär Offroad (SPG-9)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9+">
+			<English>Military Offroad (SPG-9)+</English>
+			<Russian>Военный внедорожник (СПГ-9)+</Russian>
+			<German>Militär Offroad (SPG-9)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9++">
+			<English>Military Offroad (SPG-9)++</English>
+			<Russian>Военный внедорожник (СПГ-9)++</Russian>
+			<German>Militär Offroad (SPG-9)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9+++">
+			<English>Military Offroad (SPG-9)+++</English>
+			<Russian>Военный внедорожник (СПГ-9)+++</Russian>
+			<German>Militär Offroad (SPG-9)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPG9++++">
+			<English>Military Offroad (SPG-9)++++</English>
+			<Russian>Военный внедорожник (СПГ-9)++++</Russian>
+			<German>Militär Offroad (SPG-9)++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_LAV25">
 			<English>LAV-25</English>
 		</Key>
@@ -9675,6 +9750,26 @@
 		<Key ID="STR_VEH_NAME_BRDM2_HQ++++">
 			<English>BRDM-2 HQ++++</English>
 			<Russian>БРДМ-2 HQ++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF">
+			<English>BRDM-2 HQ (CDF)</English>
+			<Russian>БРДМ-2 HQ (CDF)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF+">
+			<English>BRDM-2 HQ (CDF)+</English>
+			<Russian>БРДМ-2 HQ (CDF)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF++">
+			<English>BRDM-2 HQ (CDF)++</English>
+			<Russian>БРДМ-2 HQ (CDF)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF+++">
+			<English>BRDM-2 HQ (CDF)+++</English>
+			<Russian>БРДМ-2 HQ (CDF)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_HQ_CDF++++">
+			<English>BRDM-2 HQ (CDF)++++</English>
+			<Russian>БРДМ-2 HQ (CDF)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_RUST">
 			<English>BRDM-2 HQ (rusty)</English>
@@ -9760,6 +9855,26 @@
 		<Key ID="STR_VEH_NAME_BRDM2_GUE++++">
 			<English>BRDM-2 GUE++++</English>
 			<Russian>БРДМ-2 GUE++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF">
+			<English>BRDM-2 CDF</English>
+			<Russian>БРДМ-2 CDF</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF+">
+			<English>BRDM-2 CDF+</English>
+			<Russian>БРДМ-2 CDF+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF++">
+			<English>BRDM-2 CDF++</English>
+			<Russian>БРДМ-2 CDF++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF+++">
+			<English>BRDM-2 CDF+++</English>
+			<Russian>БРДМ-2 CDF+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_BRDM2_CDF++++">
+			<English>BRDM-2 CDF++++</English>
+			<Russian>БРДМ-2 CDF++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES">
 			<English>BRDM-2 Desert Camo</English>
@@ -10573,6 +10688,46 @@
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM++++">
 			<English>Pick-up (DSHKM)++++</English>
 			<Russian>Пикап (ДШКМ)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9">
+			<English>Pick-up GUE (SPG-9)</English>
+			<Russian>Пикап GUE (СПГ-9)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9+">
+			<English>Pick-up GUE (SPG-9)+</English>
+			<Russian>Пикап GUE (СПГ-9)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9++">
+			<English>Pick-up GUE (SPG-9)++</English>
+			<Russian>Пикап GUE (СПГ-9)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9+++">
+			<English>Pick-up GUE (SPG-9)+++</English>
+			<Russian>Пикап GUE (СПГ-9)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_GUE_SPG9++++">
+			<English>Pick-up GUE (SPG-9)++++</English>
+			<Russian>Пикап GUE (СПГ-9)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9">
+			<English>Pick-up TK (SPG-9)</English>
+			<Russian>Пикап TK (СПГ-9)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9+">
+			<English>Pick-up TK (SPG-9)+</English>
+			<Russian>Пикап TK (СПГ-9)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9++">
+			<English>Pick-up TK (SPG-9)++</English>
+			<Russian>Пикап TK (СПГ-9)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9+++">
+			<English>Pick-up TK (SPG-9)+++</English>
+			<Russian>Пикап TK (СПГ-9)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_PICKUP_TK_GUE_SPG9++++">
+			<English>Pick-up TK (SPG-9)++++</English>
+			<Russian>Пикап TK (СПГ-9)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GUE_PKT">
 			<English>Pick-up GUE (PKT)</English>
@@ -11539,25 +11694,65 @@
 			<English>UAZ (Winter)++++</English>
 			<Russian>UAZ (Зимний)++++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM">
-			<English>UAZ (DSHKM)</English>
-			<Russian>UAZ (ДШКМ)</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK">
+			<English>UAZ TK (DSHKM)</English>
+			<Russian>UAZ TK (ДШКМ)</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM+">
-			<English>UAZ (DSHKM)+</English>
-			<Russian>UAZ (ДШКМ)+</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK+">
+			<English>UAZ TK (DSHKM)+</English>
+			<Russian>UAZ TK (ДШКМ)+</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM++">
-			<English>UAZ (DSHKM)++</English>
-			<Russian>UAZ (ДШКМ)++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK++">
+			<English>UAZ TK (DSHKM)++</English>
+			<Russian>UAZ TK (ДШКМ)++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM+++">
-			<English>UAZ (DSHKM)+++</English>
-			<Russian>UAZ (ДШКМ)+++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK+++">
+			<English>UAZ TK (DSHKM)+++</English>
+			<Russian>UAZ TK (ДШКМ)+++</Russian>
 		</Key>
-		<Key ID="STR_VEH_NAME_UAZ_DSHKM++++">
-			<English>UAZ (DSHKM)++++</English>
-			<Russian>UAZ (ДШКМ)++++</Russian>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK++++">
+			<English>UAZ TK (DSHKM)++++</English>
+			<Russian>UAZ TK (ДШКМ)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF">
+			<English>UAZ CDF (DSHKM)</English>
+			<Russian>UAZ CDF (ДШКМ)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF+">
+			<English>UAZ CDF (DSHKM)+</English>
+			<Russian>UAZ CDF (ДШКМ)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF++">
+			<English>UAZ CDF (DSHKM)++</English>
+			<Russian>UAZ CDF (ДШКМ)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF+++">
+			<English>UAZ CDF (DSHKM)+++</English>
+			<Russian>UAZ CDF (ДШКМ)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_CDF++++">
+			<English>UAZ CDF (DSHKM)++++</English>
+			<Russian>UAZ CDF (ДШКМ)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS">
+			<English>UAZ INS (DSHKM)</English>
+			<Russian>UAZ INS (ДШКМ)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS+">
+			<English>UAZ INS (DSHKM)+</English>
+			<Russian>UAZ INS (ДШКМ)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS++">
+			<English>UAZ INS (DSHKM)++</English>
+			<Russian>UAZ INS (ДШКМ)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS+++">
+			<English>UAZ INS (DSHKM)+++</English>
+			<Russian>UAZ INS (ДШКМ)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_DSHKM_INS++++">
+			<English>UAZ INS (DSHKM)++++</English>
+			<Russian>UAZ INS (ДШКМ)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM_RUST">
 			<English>UAZ rusty (DSHKM)</English>
@@ -11603,6 +11798,201 @@
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM++++">
 			<English>UAZ Winter (DSHKM)++++</English>
 			<Russian>UAZ Зимний (ДШКМ)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU">
+			<English>UAZ RU (AGS-30)</English>
+			<Russian>UAZ RU (АГС-30)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU+">
+			<English>UAZ RU (AGS-30)+</English>
+			<Russian>UAZ RU (АГС-30)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU++">
+			<English>UAZ RU (AGS-30)++</English>
+			<Russian>UAZ RU (АГС-30)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU+++">
+			<English>UAZ RU (AGS-30)+++</English>
+			<Russian>UAZ RU (АГС-30)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RU++++">
+			<English>UAZ RU (AGS-30)++++</English>
+			<Russian>UAZ RU (АГС-30)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF">
+			<English>UAZ CDF (AGS-30)</English>
+			<Russian>UAZ CDF (АГС-30)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF+">
+			<English>UAZ CDF (AGS-30)+</English>
+			<Russian>UAZ CDF (АГС-30)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF++">
+			<English>UAZ CDF (AGS-30)++</English>
+			<Russian>UAZ CDF (АГС-30)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF+++">
+			<English>UAZ CDF (AGS-30)+++</English>
+			<Russian>UAZ CDF (АГС-30)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_CDF++++">
+			<English>UAZ CDF (AGS-30)++++</English>
+			<Russian>UAZ CDF (АГС-30)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS">
+			<English>UAZ INS (AGS-30)</English>
+			<Russian>UAZ INS (АГС-30)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS+">
+			<English>UAZ INS (AGS-30)+</English>
+			<Russian>UAZ INS (АГС-30)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS++">
+			<English>UAZ INS (AGS-30)++</English>
+			<Russian>UAZ INS (АГС-30)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS+++">
+			<English>UAZ INS (AGS-30)+++</English>
+			<Russian>UAZ INS (АГС-30)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_INS++++">
+			<English>UAZ INS (AGS-30)++++</English>
+			<Russian>UAZ INS (АГС-30)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK">
+			<English>UAZ TK (AGS-30)</English>
+			<Russian>UAZ TK (АГС-30)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK+">
+			<English>UAZ TK (AGS-30)+</English>
+			<Russian>UAZ TK (АГС-30)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK++">
+			<English>UAZ TK (AGS-30)++</English>
+			<Russian>UAZ TK (АГС-30)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK+++">
+			<English>UAZ TK (AGS-30)+++</English>
+			<Russian>UAZ TK (АГС-30)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_TK++++">
+			<English>UAZ TK (AGS-30)++++</English>
+			<Russian>UAZ TK (АГС-30)++++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST">
+			<English>UAZ rusty (AGS-30)</English>
+			<German>UAZ rostig (AGS-30)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST+">
+			<English>UAZ rusty (AGS-30)+</English>
+			<German>UAZ rostig (AGS-30)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST++">
+			<English>UAZ rusty (AGS-30)++</English>
+			<German>UAZ rostig (AGS-30)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST+++">
+			<English>UAZ rusty (AGS-30)+++</English>
+			<German>UAZ rostig (AGS-30)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_AGS_RUST++++">
+			<English>UAZ rusty (AGS-30)++++</English>
+			<German>UAZ rostig (AGS-30)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS">
+			<English>UAZ Winter (AGS-30)</English>			
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS+">
+			<English>UAZ Winter (AGS-30)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS++">
+			<English>UAZ Winter (AGS-30)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS+++">
+			<English>UAZ Winter (AGS-30)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS++++">
+			<English>UAZ Winter (AGS-30)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS">
+			<English>UAZ INS (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS+">
+			<English>UAZ INS (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS++">
+			<English>UAZ INS (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS+++">
+			<English>UAZ INS (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_INS++++">
+			<English>UAZ INS (SPG-9)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF">
+			<English>UAZ CDF (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF+">
+			<English>UAZ CDF (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF++">
+			<English>UAZ CDF (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF+++">
+			<English>UAZ CDF (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_CDF++++">
+			<English>UAZ CDF (SPG-9)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK">
+			<English>UAZ TK (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK+">
+			<English>UAZ TK (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK++">
+			<English>UAZ TK (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK+++">
+			<English>UAZ TK (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_TK++++">
+			<English>UAZ TK (SPG-9)++++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST">
+			<English>UAZ rusty (SPG-9)</English>
+			<German>UAZ rostig (SPG-9)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST+">
+			<English>UAZ rusty (SPG-9)+</English>
+			<German>UAZ rostig (SPG-9)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST++">
+			<English>UAZ rusty (SPG-9)++</English>
+			<German>UAZ rostig (SPG-9)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST+++">
+			<English>UAZ rusty (SPG-9)+++</English>
+			<German>UAZ rostig (SPG-9)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_SPG_RUST++++">
+			<English>UAZ rusty (SPG-9)++++</English>
+			<German>UAZ rostig (SPG-9)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG">
+			<English>UAZ Winter (SPG-9)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG+">
+			<English>UAZ Winter (SPG-9)+</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG++">
+			<English>UAZ Winter (SPG-9)++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG+++">
+			<English>UAZ Winter (SPG-9)+++</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG++++">
+			<English>UAZ Winter (SPG-9)++++</English>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_TK">
 			<English>Ural (TK)</English>
@@ -11699,6 +12089,31 @@
 			<German>Ural Offen (CDF)++++</German>
 			<Russian>Ural Открытый (CDF)++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF">
+			<English>Ural Fuel (CDF)</English>
+			<German>Ural Treibstoff (CDF)</German>
+			<Russian>Ural Заправщик (CDF)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF+">
+			<English>Ural Fuel (CDF)+</English>
+			<German>Ural Treibstoff (CDF)+</German>
+			<Russian>Ural Заправщик (CDF)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF++">
+			<English>Ural Fuel (CDF)++</English>
+			<German>Ural Treibstoff (CDF)++</German>
+			<Russian>Ural Заправщик (CDF)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF+++">
+			<English>Ural Fuel (CDF)+++</English>
+			<German>Ural Treibstoff (CDF)+++</German>
+			<Russian>Ural Заправщик (CDF)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_CDF++++">
+			<English>Ural Fuel (CDF)++++</English>
+			<German>Ural Treibstoff (CDF)++++</German>
+			<Russian>Ural Заправщик (CDF)++++</Russian>
+		</Key>
 		<Key ID="STR_VEH_NAME_URAL_UN">
 			<English>Ural (UN)</English>
 		</Key>
@@ -11763,6 +12178,56 @@
 			<English>Ural Weapon Transport (Woodland)++++</English>
 			<Russian>Ural Оружейный (Лесной)++++</Russian>
 			<German>Ural Waffentransport (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS">
+			<English>Ural Material Transport (INS)</English>
+			<Russian>Ural матобеспечения (INS)</Russian>
+			<German>Ural Materialtransport (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS+">
+			<English>Ural Material Transport (INS)+</English>
+			<Russian>Ural матобеспечения (INS)+</Russian>
+			<German>Ural Materialtransport (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS++">
+			<English>Ural Material Transport (INS)++</English>
+			<Russian>Ural матобеспечения (INS)++</Russian>
+			<German>Ural Materialtransport (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS+++">
+			<English>Ural Material Transport (INS)+++</English>
+			<Russian>Ural матобеспечения (INS)+++</Russian>
+			<German>Ural Materialtransport (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_AMMO_INS++++">
+			<English>Ural Material Transport (INS)++++</English>
+			<Russian>Ural матобеспечения (INS)++++</Russian>
+			<German>Ural Materialtransport (INS)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS">
+			<English>Ural Weapon Transport (INS)</English>
+			<Russian>Ural Оружейный (INS)</Russian>
+			<German>Ural Waffentransport (INS)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS+">
+			<English>Ural Weapon Transport (INS)+</English>
+			<Russian>Ural Оружейный (INS)+</Russian>
+			<German>Ural Waffentransport (INS)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS++">
+			<English>Ural Weapon Transport (INS)++</English>
+			<Russian>Ural Оружейный (INS)++</Russian>
+			<German>Ural Waffentransport (INS)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS+++">
+			<English>Ural Weapon Transport (INS)+++</English>
+			<Russian>Ural Оружейный (INS)+++</Russian>
+			<German>Ural Waffentransport (INS)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_WEAPONS_INS++++">
+			<English>Ural Weapon Transport (INS)++++</English>
+			<Russian>Ural Оружейный (INS)++++</Russian>
+			<German>Ural Waffentransport (INS)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_CIVIL">
 			<English>Ural (Civil)</English>
@@ -11838,6 +12303,31 @@
 			<English>Ural Fuel (Woodland)++++</English>
 			<Russian>Ural Заправщик (Лесной)++++</Russian>
 			<German>Ural Treibstoff (Waldtarn)++++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS">
+			<English>Ural Fuel (INS)</English>
+			<German>Ural Treibstoff (INS)</German>
+			<Russian>Ural Заправщик (INS)</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS+">
+			<English>Ural Fuel (INS)+</English>
+			<German>Ural Treibstoff (INS)+</German>
+			<Russian>Ural Заправщик (INS)+</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS++">
+			<English>Ural Fuel (INS)++</English>
+			<German>Ural Treibstoff (INS)++</German>
+			<Russian>Ural Заправщик (INS)++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS+++">
+			<English>Ural Fuel (INS)+++</English>
+			<German>Ural Treibstoff (INS)+++</German>
+			<Russian>Ural Заправщик (INS)+++</Russian>
+		</Key>
+		<Key ID="STR_VEH_NAME_URAL_FUEL_INS++++">
+			<English>Ural Fuel (INS)++++</English>
+			<German>Ural Treibstoff (INS)++++</German>
+			<Russian>Ural Заправщик (INS)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER">
 			<English>Ural (Winter)</English>
@@ -13949,6 +14439,17 @@
 			<Russian>Cessna C185U (Камуфляж)</Russian>
 			<German>Cessna C185U (Tarn)</German>
 		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_ROCKETS">
+			<English>Cessna C185T (Rockets)</English>
+			<German>Cessna C185T (Raketen)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_CESSNA_M60">
+			<English>Cessna C185T (Twin M60)</English>
+			<German>Cessna C185T (Zwillings-M60)</German>
+		</Key>	
+		<Key ID="STR_VEH_NAME_CESSNA_AMPHIBIAN">
+			<English>Cessna C185F (Amphibian)</English>
+		</Key>		
 		<Key ID="STR_VEH_NAME_STASH">
 			<English>Stash</English>
 			<French>Planque</French>
@@ -18055,7 +18556,26 @@
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 			<Russian>Бесшумная снайперская винтовка &lt;br/&gt;Патрон: 7.62x51mm</Russian>
 		</Key>
-
+		
+		<!-- SCAR-H AK -->
+		<Key ID="STR_DZ_WPN_SCARAK_NAME">
+			<English>SCAR-H AK</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SCARAK_CCO_NAME">
+			<English>SCAR-H AK CCO</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SCARAK_HOLO_NAME">
+			<English>SCAR-H AK Holo</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SCARAK_ACOG_NAME">
+			<English>SCAR-H AK ACOG</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_SCARAK_DESC">
+			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm</English>
+			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm</German>
+			<Russian>Штурмовая винтовка &lt;br/&gt;Патрон: 7.62x39mm</Russian>
+		</Key>
+		
 		<!-- XM8 -->
 		<Key ID="STR_DZ_WPN_XM8_CARBINE_NAME">
 			<English>XM8 Carbine</English>
@@ -18237,6 +18757,16 @@
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_NAME">
 			<English>Desert Eagle</English>
 		</Key>
+		<Key ID="STR_DZ_WPN_DESERT_EAGLE_GOLD_NAME">
+			<English>Desert Eagle Gold</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_DESERT_EAGLE_SILVER_NAME">
+			<English>Desert Eagle Silver</English>
+			<German>Desert Eagle Silber</German>
+		</Key>	
+		<Key ID="STR_DZ_WPN_DESERT_EAGLE_MODERN_NAME">
+			<English>Desert Eagle Modern</English>
+		</Key>		
         <Key ID="STR_DZ_WPN_DESERT_EAGLE_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .50 AE</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .50 AE</German>
@@ -18333,9 +18863,9 @@
 			<Russian>60п. АК-47М маг.</Russian>
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_762X39_AK47_DESC">
-			<English>Caliber: 7.62x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
-			<German>Kaliber: 7.62x39mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK</German>
-			<Russian>Калибр: 7.62x39mm &lt;br/&gt;Патронов: 60 &lt;br/&gt;2 магазина соединенные изолентой. &lt;br/&gt;Используются в: AK-47M, SA-58, РПК</Russian>
+			<English>Caliber: 7.62x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-47M, SA-58, RPK, SCAR-H AK</English>
+			<German>Kaliber: 7.62x39mm &lt;br/&gt;Patronen: 60, zusammengeklebt &lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK, SCAR-H AK</German>
+			<Russian>Калибр: 7.62x39mm &lt;br/&gt;Патронов: 60 &lt;br/&gt;2 магазина соединенные изолентой. &lt;br/&gt;Используются в: AK-47M, SA-58, РПК, SCAR-H AK</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_762X39_SA58_NAME">
 			<English>30Rnd. SA-58 mag.</English>
@@ -19549,26 +20079,26 @@
 			<Hungarian>Kaliber: 7.62x39mm SD &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: RK-95 SD</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_AK47M_DESC">
-			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
-			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: AK-47M, SA-58, RPK</French>
-			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, SA-58, RPK</Spanish>
-			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, SA-58, RPK</Italian>
-			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, SA-58, RPK</Polish>
-			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, SA-58, RPK</Russian>
-			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK</German>
-			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK</Czech>
-			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK</Hungarian>
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: AK-47M, SA-58, RPK, SCAR-H AK</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: AK-47M, SA-58, RPK, SCAR-H AK</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, SA-58, RPK, SCAR-H AK</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, SA-58, RPK, SCAR-H AK</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, SA-58, RPK, SCAR-H AK</Polish>
+			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, SA-58, RPK, SCAR-H AK</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK, SCAR-H AK</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK, SCAR-H AK</Czech>
+			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK, SCAR-H AK</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_SA58_DESC">
-			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: AK-47M, SA-58, RPK</English>
-			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: AK-47M, SA-58, RPK</French>
-			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: AK-47M, SA-58, RPK</Spanish>
-			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: AK-47M, SA-58, RPK</Italian>
-			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: AK-47M, SA-58, RPK</Polish>
-			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: AK-47M, SA-58, RPK</Russian>
-			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: AK-47M, SA-58, RPK</German>
-			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: AK-47M, SA-58, RPK</Czech>
-			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: AK-47M, SA-58, RPK</Hungarian>
+			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: SA-58, AK-47M, RPK, SCAR-H AK</English>
+			<French>Calibre: 7.62x39mm&lt;br/&gt;Munitions : 30&lt;br/&gt;Utilisé avec: SA-58, AK-47M, RPK, SCAR-H AK</French>
+			<Spanish>Calibre: 7.62x39mm&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: SA-58, AK-47M, RPK, SCAR-H AK</Spanish>
+			<Italian>Calibro: 7.62x39mm&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: SA-58, AK-47M, RPK, SCAR-H AK</Italian>
+			<Polish>Kaliber: 7.62x39mm&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: SA-58, AK-47M, RPK, SCAR-H AK</Polish>
+			<Russian>Патрон: 7.62x39мм &lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: SA-58, AK-47M, RPK, SCAR-H AK</Russian>
+			<German>Kaliber: 7.62x39mm&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: SA-58, AK-47M, RPK, SCAR-H AK</German>
+			<Czech>Kalibr: 7.62x39mm&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: SA-58, AK-47M, SA-58, RPK, SCAR-H AK</Czech>
+			<Hungarian>Kaliber: 7.62x39mm &lt;br/&gt; Töltények: 30 &lt;br/&gt; Hozzá tartozó fegyver: SA-58, AK-47M, RPK, SCAR-H AK</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_Groza9_NAME">
 			<English>20Rnd. Groza-9 mag.</English>
@@ -22900,9 +23430,9 @@
 			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_136">
-			<English>Unable to build, %1 nearby.</English>
-			<German>Es ist nicht möglich %1 hier aufzubauen.</German>
-			<Russian>Здесь нельзя поставить %1.</Russian>
+			<English>You are not allowed to build here a %1 is nearby.</English>
+			<German>Du kannst hier nicht bauen. Ein %1 ist in der Nähe.</German>
+			<Russian>Вам запрещено строить здесь, %1 рядом.</Russian>
 			<Dutch>Bouwen niet mogelijk %1 in de buurt.</Dutch>
 			<French>Impossible de construire, %1 est trop proche.</French>
 			<Czech>Nemůžete postavit %1 poblíž.</Czech>
@@ -33407,7 +33937,7 @@
 			<German>Keramikteile</German>
 			<Russian>Керамические части</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_PLASTIC_PARTS_DESC">
+		<Key ID="STR_EPOCH_CERAMIC_PARTS_DESC">
 			<English>A crate of ceramic parts.</English>
 			<German>Eine Kiste mit Keramikteile.</German>
 			<Russian>Ящик с керамическими частями.</Russian>
@@ -33448,7 +33978,39 @@
 			<German>Eine Lagerkiste mit einem grünen Tarnetz.</German>
 			<Russian>Ящик для хранения с зелёной камуфляжной сетью.</Russian>
 		</Key>
-
+		<Key ID="STR_EPOCH_COW_ZOMBIE">
+			<English>Zombified Cow</English>
+			<German>Zombifizierte Kuh</German>
+		</Key>
+		<Key ID="STR_EPOCH_GOAT_ZOMBIE">
+			<English>Zombified Goat</English>
+			<German>Zombifizierte Ziege</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SHEEP_ZOMBIE">
+			<English>Zombified Sheep</English>
+			<German>Zombifiziertes Schaf</German>
+		</Key>	
+		<Key ID="STR_EPOCH_DOG_ZOMBIE">
+			<English>Zombified Dog</English>
+			<German>Zombifizierter Hund</German>
+		</Key>		
+		<Key ID="STR_EPOCH_RABBIT_ZOMBIE">
+			<English>Zombified Rabbit</English>
+			<German>Zombifizierter Hase</German>
+		</Key>		
+		<Key ID="STR_EPOCH_BOAR_ZOMBIE">
+			<English>Zombified Boar</English>
+			<German>Zombifiziertes Wildschwein</German>
+		</Key>
+		<Key ID="STR_EPOCH_COCK_ZOMBIE">
+			<English>Zombified Cock</English>
+			<German>Zombifizierter Hahn</German>
+		</Key>		
+		<Key ID="STR_EPOCH_CHICKEN_ZOMBIE">
+			<English>Zombified Chicken</English>
+			<German>Zombifiziertes Huhn</German>
+		</Key>
+		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>

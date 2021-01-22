@@ -6,7 +6,7 @@ class M200_CheyTac_DZ: m107
 	displayname = $STR_DZ_WPN_M200_CHEYTAC_NAME;
 	descriptionShort = $STR_DZ_WPN_M200_CHEYTAC_DESC;
 	model = "\z\addons\dayz_epoch_w\m200\h4_cheytac.p3d";
-	picture = "\z\addons\dayz_epoch_w\m200\data\w_cheytac_Ca.paa";
+	picture = "\dayz_epoch_c\icons\weapons\icon_m200.paa";
 	UiPicture = "\CA\weapons\data\Ico\i_sniper_CA.paa";
 	magazines[] = {5Rnd_408_CheyTac};
 	handAnim[] = {"OFP2_ManSkeleton","\Ca\weapons_E\Data\Anim\M107b.rtm"};
@@ -75,7 +75,7 @@ class M200_CheyTac_SD_DZ: M200_CheyTac_DZ
 	displayname = $STR_DZ_WPN_M200_CHEYTAC_SD_NAME;
 	descriptionShort = $STR_DZ_WPN_M200_CHEYTAC_SD_DESC;
 	model = "\z\addons\dayz_epoch_w\m200\h4_cheytac_sd.p3d";
-	picture = "\z\addons\dayz_epoch_w\m200\data\w_cheytac_Ca.paa";
+	picture = "\dayz_epoch_c\icons\weapons\icon_m200sd.paa";
 	magazines[] = {5Rnd_408_CheyTac_SD};
 	begin1[] = {"\dayz_epoch_c\sounds\weapons\m200sd_shot",2.51189,1,80};
 };

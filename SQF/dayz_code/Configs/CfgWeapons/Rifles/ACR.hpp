@@ -147,6 +147,8 @@ class ACR_DZ_BASE: M4A1 {
 		begin1[] = {"fhq_remington\ACR\sfx\acr_single.ogg",1.77828,1,1000};
 		begin2[] = {"fhq_remington\ACR\sfx\acr_single.ogg",1.77828,1,1000};
 		soundBegin[] = {"begin1",0.5,"begin2",0.5};
+		recoil = "recoil_auto_primary_3outof10";
+		recoilProne = "recoil_auto_primary_prone_3outof10";
 		reloadTime = 0.09;
 		dispersion = 0.00175;
 		minRange = 2;
@@ -161,8 +163,8 @@ class ACR_DZ_BASE: M4A1 {
 		begin1[] = {"fhq_remington\ACR\sfx\acr_auto.ogg",1.77828,1,1000};
 		begin2[] = {"fhq_remington\ACR\sfx\acr_auto.ogg",1.77828,1,1000};
 		soundBegin[] = {"begin1",0.5,"begin2",0.5};
-		recoil = "recoil_auto_primary_2outof10";
-		recoilProne = "recoil_auto_primary_prone_2outof10";
+		recoil = "recoil_auto_primary_3outof10";
+		recoilProne = "recoil_auto_primary_prone_3outof10";
 		minRange = 0;
 		minRangeProbab = 0.3;
 		midRange = 40;

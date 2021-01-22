@@ -48,14 +48,24 @@ BEGIN
 	WHERE
 		`Object_DATA`.`CharacterID` <> 0
 		AND `Object_DATA`.`CharacterID` <= 12500
-		AND `Object_DATA`.`Classname` NOT LIKE 'Tent%'
+		AND `Object_DATA`.`Classname` NOT LIKE '%Tent%'
 		AND `Object_DATA`.`Classname` NOT LIKE '%Locked'
 		AND `Object_DATA`.`Classname` NOT LIKE 'Land\_%' -- added escape character so LandRover vehicles are not ignored
 		AND `Object_DATA`.`Classname` NOT LIKE 'Cinder%'
 		AND `Object_DATA`.`Classname` NOT LIKE 'Wood%'
 		AND `Object_DATA`.`Classname` NOT LIKE 'Metal%'
 		AND `Object_DATA`.`Classname` NOT LIKE '%Storage%'
-		AND `Object_DATA`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'DesertLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
+		AND `Object_DATA`.`Classname` NOT LIKE '%CamoNet_DZ'
+		AND `Object_DATA`.`Classname` NOT LIKE 'Concrete%'
+		AND `Object_DATA`.`Classname` NOT LIKE 'Glass%'
+		AND `Object_DATA`.`Classname` NOT LIKE 'Stash%'
+		AND `Object_DATA`.`Classname` NOT LIKE 'Door%'
+		AND `Object_DATA`.`Classname` NOT LIKE 'Garage%'
+		AND `Object_DATA`.`Classname` NOT LIKE 'Helipad%'
+		AND `Object_DATA`.`Classname` NOT LIKE '%Bench%'
+		AND `Object_DATA`.`Classname` NOT LIKE 'Vendmachine%'
+		AND `Object_DATA`.`Classname` NOT LIKE '%Trap%'
+		AND `Object_DATA`.`Classname` NOT IN ('Arcade_DZ','Sofa_DZ','Armchair_DZ','ATM_DZ','Server_Rack_DZ','Washing_Machine_DZ','Fridge_DZ','Wardrobe_DZ','Commode_DZ','Stoneoven_DZ','CookTripod_DZ','CCTV_DZ','Office_Chair_DZ','Table_DZ','Bed_DZ','Water_Pump_DZ','Water_Pump_DZ','Notebook_DZ','Scaffolding_DZ','OutHouse_DZ','Sandbag1_DZ', 'FireBarrel_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
 		AND FindVehicleKeysCount(Object_DATA.CharacterID) = 0;
 
 	RETURN ROW_COUNT();
@@ -95,7 +105,7 @@ DELIMITER ;
 -- ----------------------------
 DROP EVENT IF EXISTS `setDamageOnAge`;
 DELIMITER ;;
-CREATE EVENT `setDamageOnAge` ON SCHEDULE EVERY 1 DAY COMMENT 'This sets damage on a wall so that it can be maintained' DO UPDATE `Object_DATA` SET `Damage`=0.1 WHERE `ObjectUID` <> 0 AND `CharacterID` <> 0 AND `Datestamp` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 3 DAY) AND ( (`Inventory` IS NULL) OR (`Inventory` = '[]') OR (`Classname` IN ('Land_DZE_GarageWoodDoorLocked','Land_DZE_LargeWoodDoorLocked','Land_DZE_WoodDoorLocked','CinderWallDoorLocked_DZ','CinderWallDoorSmallLocked_DZ','Plastic_Pole_EP1_DZ')) )
+CREATE EVENT `setDamageOnAge` ON SCHEDULE EVERY 1 DAY COMMENT 'This sets damage on a wall so that it can be maintained' DO UPDATE `Object_DATA` SET `Damage`=0.1 WHERE `ObjectUID` <> 0 AND `CharacterID` <> 0 AND `Datestamp` < DATE_SUB(CURRENT_TIMESTAMP, INTERVAL 3 DAY) AND ( (`Inventory` IS NULL) OR (`Inventory` = '[]') OR (`Classname` IN ('Land_DZE_GarageWoodDoorLocked','Land_DZE_LargeWoodDoorLocked','Land_DZE_WoodDoorLocked','CinderWallDoorLocked_DZ','CinderWallDoorSmallLocked_DZ','WoodenGate_1_DZ','WoodenGate_2_DZ','WoodenGate_3_DZ','WoodenGate_4_DZ','Land_DZE_WoodGateLocked','CinderGateLocked_DZ','Metal_DrawbridgeLocked_DZ','Land_DZE_WoodOpenTopGarageLocked','CinderGarageOpenTopLocked_DZ','DoorLocked_DZ','CinderWallWindowLocked_DZ','CinderDoorHatchLocked_DZ','Concrete_Bunker_Locked_DZ','CinderWallWindowLocked_DZ','Plastic_Pole_EP1_DZ')) )
 ;;
 DELIMITER ;
 
@@ -111,14 +121,24 @@ CREATE EVENT `UnlockNonKeyVehicles` ON SCHEDULE EVERY 1 DAY DO UPDATE
 		WHERE
 			`Object_DATA`.`CharacterID` <> 0
 			AND `Object_DATA`.`CharacterID` <= 12500
-			AND `Object_DATA`.`Classname` NOT LIKE 'Tent%'
+			AND `Object_DATA`.`Classname` NOT LIKE '%Tent%'
 			AND `Object_DATA`.`Classname` NOT LIKE '%Locked'
 			AND `Object_DATA`.`Classname` NOT LIKE 'Land\_%' -- added escape character so LandRover vehicles are not ignored
 			AND `Object_DATA`.`Classname` NOT LIKE 'Cinder%'
 			AND `Object_DATA`.`Classname` NOT LIKE 'Wood%'
 			AND `Object_DATA`.`Classname` NOT LIKE 'Metal%'
 			AND `Object_DATA`.`Classname` NOT LIKE '%Storage%'
-			AND `Object_DATA`.`Classname` NOT IN ('OutHouse_DZ', 'GunRack_DZ', 'WorkBench_DZ', 'Sandbag1_DZ', 'FireBarrel_DZ', 'DesertCamoNet_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'ForestLargeCamoNet_DZ', 'DesertLargeCamoNet_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'ForestCamoNet_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
+			AND `Object_DATA`.`Classname` NOT LIKE '%CamoNet_DZ'
+			AND `Object_DATA`.`Classname` NOT LIKE 'Concrete%'
+			AND `Object_DATA`.`Classname` NOT LIKE 'Glass%'
+			AND `Object_DATA`.`Classname` NOT LIKE 'Stash%'
+			AND `Object_DATA`.`Classname` NOT LIKE 'Door%'
+			AND `Object_DATA`.`Classname` NOT LIKE 'Garage%'
+			AND `Object_DATA`.`Classname` NOT LIKE 'Helipad%'
+			AND `Object_DATA`.`Classname` NOT LIKE '%Bench%'
+			AND `Object_DATA`.`Classname` NOT LIKE 'Vendmachine%'
+			AND `Object_DATA`.`Classname` NOT LIKE '%Trap%'
+			AND `Object_DATA`.`Classname` NOT IN ('Arcade_DZ','Sofa_DZ','Armchair_DZ','ATM_DZ','Server_Rack_DZ','Washing_Machine_DZ','Fridge_DZ','Wardrobe_DZ','Commode_DZ','Stoneoven_DZ','CookTripod_DZ','CCTV_DZ','Office_Chair_DZ','Table_DZ','Bed_DZ','Water_Pump_DZ','Water_Pump_DZ','Notebook_DZ','Scaffolding_DZ','OutHouse_DZ','Sandbag1_DZ', 'FireBarrel_DZ', 'StickFence_DZ', 'LightPole_DZ', 'DeerStand_DZ', 'Plastic_Pole_EP1_DZ', 'Hedgehog_DZ', 'FuelPump_DZ', 'Fort_RazorWire', 'SandNest_DZ', 'Fence_corrugated_DZ', 'CanvasHut_DZ', 'Generator_DZ', 'BagFenceRound_DZ')
 			AND FindVehicleKeysCount(Object_DATA.CharacterID) = 0
 ;;
 DELIMITER ;

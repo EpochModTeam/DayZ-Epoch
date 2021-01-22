@@ -570,7 +570,7 @@ class AirwavesPack_DZE1 : Bag_Base_EP1
 	displayname = $STR_BACKPACK_NAME_AIRWAVES_DZE1;
 	descriptionShort = $STR_BACKPACK_DESC_AIRWAVES_DZE1;
 	model = "\z\addons\dayz_epoch_u\clothes\dze_wavesbag_01.p3d";
-	picture = "\ice_apo_resistance\icons\backpack4_ca.paa";
+	picture = "\dayz_epoch_c\icons\backpacks\airwavespack.paa";
 	transportMaxWeapons = 7;
 	transportMaxMagazines = 35;
 	class eventHandlers
@@ -578,13 +578,11 @@ class AirwavesPack_DZE1 : Bag_Base_EP1
 		init="[(_this select 0),'CfgVehicles','AirwavesPack_DZE1'] execVM '\z\addons\dayz_code\actions\pickupActions\object_BackpackAction.sqf';";
 	};
 };
-class AirwavesPack_DZE2 : Bag_Base_EP1
+class AirwavesPack_DZE2 : AirwavesPack_DZE1
 {
 	scope = 2;
 	displayname = $STR_BACKPACK_NAME_AIRWAVES_DZE2;
 	descriptionShort = $STR_BACKPACK_DESC_AIRWAVES_DZE2;
-	model = "\z\addons\dayz_epoch_u\clothes\dze_wavesbag_01.p3d";
-	picture = "\ice_apo_resistance\icons\backpack4_ca.paa";
 	transportMaxWeapons = 9;
 	transportMaxMagazines = 45;
 	class eventHandlers

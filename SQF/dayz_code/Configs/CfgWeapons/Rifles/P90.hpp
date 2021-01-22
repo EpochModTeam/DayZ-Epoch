@@ -14,7 +14,7 @@ class P90_DZ: MP5_DZ
 		begin1[] = {"\RH_smg\sound\p90s.wss",1.778279,1,900};
 		soundBegin[] = {"begin1",1};
 		reloadTime = 0.07;
-		recoil = "recoil_single_primary_2outof10";
+		recoil = "recoil_single_primary_3outof10";
 		recoilProne = "recoil_single_primary_prone_2outof10";
 		dispersion = 0.003;
 		minRange = 2;
@@ -34,8 +34,8 @@ class P90_DZ: MP5_DZ
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		ffCount = 1;
-		recoil = "recoil_auto_primary_1outof10";
-		recoilProne = "recoil_auto_primary_prone_1outof10";
+		recoil = "recoil_auto_primary_3outof10";
+		recoilProne = "recoil_auto_primary_prone_2outof10";
 		dispersion = 0.003;
 		minRange = 0;
 		minRangeProbab = 0.2;
@@ -144,8 +144,8 @@ class P90_SD_DZ: MP5_SD_DZ
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		ffCount = 1;
-		recoil = "recoil_auto_primary_1outof10";
-		recoilProne = "recoil_auto_primary_prone_1outof10";
+		recoil = "recoil_auto_primary_2outof10";
+		recoilProne = "recoil_auto_primary_prone_2outof10";
 		dispersion = 0.003;
 		minRange = 0;
 		minRangeProbab = 0.2;

@@ -2274,3 +2274,23 @@ class G3_DZ
 {
 	weight = 6.1;
 };
+class SCAR_H_AK_DZ
+{
+	weight = 4.5;
+};
+class SCAR_H_AK_CCO_DZ
+{
+	weight = 4.6;
+};
+class SCAR_H_B_AK_CCO_DZ
+{
+	weight = 4.6;
+};
+class SCAR_H_AK_HOLO_DZ
+{
+	weight = 4.6;
+};
+class SCAR_H_AK_ACOG_DZ
+{
+	weight = 4.7;
+};

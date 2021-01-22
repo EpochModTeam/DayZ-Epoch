@@ -46,7 +46,7 @@ class FuelPump_DZ: BuiltItems
 	nounderground = 0;
 };
 
-class FireBarrel_DZ:Land_Fire_barrel
+class FireBarrel_DZ: Land_Fire_barrel
 {
 	cost = 100;
 	offset[] = {0,2,0.5};

@@ -12,7 +12,7 @@ class TMP_DZ: MP5A5
 		begin1[] = {"\RH_smg\sound\tmp.wss",1.778279,1,900};
 		soundBegin[] = {"begin1",1};
 		reloadTime = 0.07;
-		recoil = "recoil_single_primary_1outof10";
+		recoil = "recoil_single_primary_2outof10";
 		recoilProne = "recoil_single_primary_prone_1outof10";
 		dispersion = 0.003;
 		minRange = 2;
@@ -32,7 +32,7 @@ class TMP_DZ: MP5A5
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		ffCount = 1;
-		recoil = "recoil_auto_primary_1outof10";
+		recoil = "recoil_auto_primary_2outof10";
 		recoilProne = "recoil_auto_primary_prone_1outof10";
 		dispersion = 0.003;
 		minRange = 0;
@@ -107,7 +107,7 @@ class TMP_SD_DZ: MP5SD
 		begin1[] = {"\RH_smg\sound\tmpsd.wss",1.778279,1,50};
 		soundBegin[] = {"begin1",1};
 		reloadTime = 0.07;
-		recoil = "recoil_single_primary_1outof10";
+		recoil = "recoil_single_primary_2outof10";
 		recoilProne = "recoil_single_primary_prone_1outof10";
 		dispersion = 0.003;
 		minRange = 2;
@@ -127,7 +127,7 @@ class TMP_SD_DZ: MP5SD
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		ffCount = 1;
-		recoil = "recoil_auto_primary_1outof10";
+		recoil = "recoil_auto_primary_2outof10";
 		recoilProne = "recoil_auto_primary_prone_1outof10";
 		dispersion = 0.003;
 		minRange = 0;

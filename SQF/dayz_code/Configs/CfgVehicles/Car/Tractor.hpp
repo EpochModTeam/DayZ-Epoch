@@ -98,4 +98,5 @@ class Tractor_Armored_DZE: TractorOld_DZE
 			
 		};
 	};
+	class nvgmarkers {};
 };

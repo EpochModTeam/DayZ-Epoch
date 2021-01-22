@@ -97,6 +97,16 @@ class WoodFloor4x_DZ: ModularItems {
 	displayName = $STR_EPOCH_FLOORCEILING4x;
 	maintainBuilding[] = {{"PartWoodLumber",4}};
 	GhostPreview = "WoodFloor4x_Preview_DZ";
+	class DestructionEffects : DestructionEffects {
+		class Ruin1 {
+			simulation = "ruin";
+			type = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_2x2_wreck.p3d";
+			position = "";
+			intensity = 1;
+			interval = 1;
+			lifeTime = 1;
+		};
+	};	
 };
 
 class WoodTriangleFloor_DZ: ModularItems {
@@ -104,7 +114,7 @@ class WoodTriangleFloor_DZ: ModularItems {
 	offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_tri_floor.p3d";
 	armor = 1000;
-	displayName = $STR_EPOCH_FLOORCEILING4x;
+	displayName = $STR_EPOCH_TRIANGLE_WOODFLOOR;
 	maintainBuilding[] = {{"PartWoodLumber",2}};
 	GhostPreview = "WoodTriangleFloor_Preview_DZ";	
 };

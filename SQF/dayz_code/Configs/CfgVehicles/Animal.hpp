@@ -54,6 +54,13 @@ class Fin: CAAnimalBase {
 	fsmFormation = "";
 };
 
+class Dog_Zombie1: Pastor {
+	displayName = $STR_EPOCH_DOG_ZOMBIE;
+};
+class Dog_Zombie2: Fin {
+	displayName = $STR_EPOCH_DOG_ZOMBIE;
+};
+
 class Cow: CAAnimalBase
 {
 	scope = 0;
@@ -110,6 +117,16 @@ class Cow04: Cow01
 	displayName = "$STR_DN_COW04";
 	hiddenSelectionsTextures[] = {"ca\animals2\cow\data\cow4_co.PAA"};
 };
+class Cow_Zombie1: Cow01
+{
+	displayName = $STR_EPOCH_COW_ZOMBIE;
+	hiddenSelectionsTextures[] = {"ca\animals2\cow\data\cow4_co.PAA"};
+};
+class Cow_Zombie2: Cow_Zombie1
+{
+	hiddenSelectionsTextures[] = {"ca\animals2\cow\data\cow4_co.PAA"};
+};
+
 class Cow_Base_EP1 : Cow {};
 class Cow01_EP1 : Cow_Base_EP1 {};
 
@@ -140,6 +157,11 @@ class Goat: CAAnimalBase
 class Goat_Base_EP1 : Goat {};
 class Goat01_EP1 : Goat_Base_EP1 {};
 class Goat02_EP1 : Goat01_EP1 {};
+
+class Goat_Zombie1 : Goat01_EP1 {
+	displayName = $STR_EPOCH_GOAT_ZOMBIE;
+};
+class Goat_Zombie2 : Goat_Zombie1 {};
 
 class Rabbit: CAAnimalBase
 {
@@ -175,6 +197,10 @@ class Rabbit: CAAnimalBase
 	};
 };
 
+class Rabbit_Zombie : Rabbit {
+	displayName = $STR_EPOCH_RABBIT_ZOMBIE;
+};
+
 class Sheep: CAAnimalBase
 {
 	scope = 2;
@@ -203,6 +229,10 @@ class Sheep: CAAnimalBase
 class Sheep_Base_EP1 : Sheep {};
 class Sheep01_EP1 : Sheep_Base_EP1 {};
 class Sheep02_EP1 : Sheep01_EP1 {};
+class Sheep_Zombie1 : Sheep01_EP1 {
+	displayName = $STR_EPOCH_SHEEP_ZOMBIE;
+};
+class Sheep_Zombie2 : Sheep_Zombie1 {};
 
 class WildBoar: CAAnimalBase
 {
@@ -223,6 +253,16 @@ class WildBoar: CAAnimalBase
 		_sound3 = "";
 	};
 };
+class WildBoar_Zombie : WildBoar {
+	displayName = $STR_EPOCH_BOAR_ZOMBIE;
+};
 
 class Hen : CAAnimalBase {};
+class Hen_Zombie : Hen {
+	displayName = $STR_EPOCH_CHICKEN_ZOMBIE;
+};
+
 class Cock : Hen {};
+class Cock_Zombie : Cock {
+	displayName = $STR_EPOCH_COCK_ZOMBIE;
+};

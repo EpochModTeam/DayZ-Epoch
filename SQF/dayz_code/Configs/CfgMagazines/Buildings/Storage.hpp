@@ -785,8 +785,8 @@ class arcade_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	displayName = $STR_ITEM_NAME_COOKINGTRIPOD;
-	descriptionShort = $STR_ITEM_DESC_COOKINGTRIPOD;
+	displayName = $STR_EPOCH_ARCADE;
+	descriptionShort = $STR_EPOCH_ARCADE_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";	
 	

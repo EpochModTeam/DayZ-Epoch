@@ -353,7 +353,7 @@ class XM8_SAW_DZ: m8_SAW {
 	class FullAuto: Mode_FullAuto
 	{
 		recoil = "recoil_auto_machinegun_5outof10";
-		recoilProne = "recoil_auto_machinegun_prone_5outof10";
+		recoilProne = "recoil_auto_machinegun_prone_4outof10";
 		dispersion = 0.002;
 		begin1[] = {"\RH_mgswp\sound\xm8",1.77828,1,1100};
 		soundBegin[] = {"begin1",1};

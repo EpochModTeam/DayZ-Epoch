@@ -1723,6 +1723,319 @@ class HMMWV_M2_DZE4: HMMWV_M2_DZE3
 	fuelCapacity = 180; // base 100
 };
 
+class HMMWV_MK19_DZ: HMMWV_DZE_Base {
+	displayname = "$STR_VEH_NAME_HMMWV_MK19";
+	scope = 2;
+	model = "\ca\Wheeled\HMMWVmk19";
+	picture = "\Ca\wheeled\data\ico\HMMWVmk19_CA.paa";
+	Icon = "\Ca\wheeled\data\map_ico\icomap_hmwvmk19_CA.paa";
+	crew = "";
+	typicalCargo[] = {};
+	class TransportMagazines {};
+	class TransportWeapons {};
+	transportMaxWeapons = 15;
+	transportMaxMagazines = 70;
+	transportmaxbackpacks = 4;
+	damageResistance = 0.00581;
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			turretInfoType = "RscWeaponRangeZeroing";
+			discreteDistanceInitIndex = 4;
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
+			weapons[]=
+			{
+				"MK19BC"
+			};
+			magazines[]=
+			{
+				"48Rnd_40mm_MK19",
+				"48Rnd_40mm_MK19",
+				"48Rnd_40mm_MK19",
+				"48Rnd_40mm_MK19"
+			};
+			soundServo[]=
+			{
+				"\Ca\sounds\Vehicles\Servos\turret-1",
+				0.0099999998,
+				1,
+				10
+			};
+			gunnerAction="HMMWV_Gunner02";
+			class GunFire: WeaponCloudsMGun
+			{
+				interval=0.0099999998;
+			};
+		};
+	};
+	accuracy = 0.32;
+	class AnimationSources: AnimationSources
+	{
+		class ReloadAnim
+		{
+			weapon = "MK19BC";
+		};
+		class ReloadMagazine
+		{
+			weapon = "MK19BC";
+		};
+		class Revolving
+		{
+			weapon = "MK19BC";
+		};
+		class belt_rotation
+		{
+			source="reload";
+			weapon = "MK19BC";
+		};
+	};
+	class Damage
+	{
+		tex[]={};
+		mat[]=
+		{
+			"ca\wheeled\hmmwv\data\hmmwv_details.rvmat",
+			"Ca\wheeled\HMMWV\data\hmmwv_details_damage.rvmat",
+			"Ca\wheeled\HMMWV\data\hmmwv_details_destruct.rvmat",
+			"ca\wheeled\hmmwv\data\hmmwv_body.rvmat",
+			"Ca\wheeled\HMMWV\data\hmmwv_body_damage.rvmat",
+			"Ca\wheeled\HMMWV\data\hmmwv_body_destruct.rvmat",
+			"ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat",
+			"ca\wheeled\hmmwv\data\hmmwv_clocks.rvmat",
+			"ca\wheeled\data\hmmwv_clocks_destruct.rvmat",
+			"ca\weapons\data\mk19.rvmat",
+			"ca\weapons\data\mk19.rvmat",
+			"ca\weapons\data\mk19_destruct.rvmat",
+			"ca\wheeled\HMMWV\data\hmmwv_glass.rvmat",
+			"ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat",
+			"ca\wheeled\HMMWV\data\hmmwv_glass_Half_D.rvmat",
+			"ca\wheeled\HMMWV\data\hmmwv_glass_in.rvmat",
+			"ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat",
+			"ca\wheeled\HMMWV\data\hmmwv_glass_in_Half_D.rvmat"
+		};
+	};
+	hiddenSelections[] = {"Camo1"};
+	hiddenSelectionsTextures[] = {"\ca\wheeled\hmmwv\data\hmmwv_body_co.paa"};
+};
+
+class HMMWV_MK19_DZE: HMMWV_MK19_DZ {
+	class Turrets: Turrets {
+		class MainTurret: MainTurret {
+			magazines[] = {};
+		};
+	};
+
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_MK19_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_MK19_DZE1: HMMWV_MK19_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_MK19+";
+	original = "HMMWV_MK19_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_MK19_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_MK19_DZE2: HMMWV_MK19_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_MK19++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_MK19_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_MK19_DZE3: HMMWV_MK19_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_MK19+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_MK19_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_MK19_DZE4: HMMWV_MK19_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_MK19++++";
+	fuelCapacity = 180; // base 100
+};
+
+class HMMWV_DES_MK19_DZ: HMMWV_MK19_DZ {
+	displayname = "$STR_VEH_NAME_HMMWV_DES_MK19";
+	hiddenSelectionsTextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa"};
+	
+	class Damage
+	{
+		tex[] = {};
+		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_2.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_2_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_2_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_details.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_details_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_details_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_in_BASE.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
+	};
+};
+
+class HMMWV_DES_MK19_DZE: HMMWV_MK19_DZE {
+	displayname = "$STR_VEH_NAME_HMMWV_DES_MK19";
+	hiddenSelectionsTextures[] = {"\CA\wheeled_E\HMMWV\Data\HMMWV_body_US_CO.paa"};
+	
+	class Damage
+	{
+		tex[] = {};
+		mat[] = {"Ca\wheeled_E\HMMWV\data\hmmwv_body_2.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_2_damage.rvmat","Ca\wheeled_E\HMMWV\data\hmmwv_body_2_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_details.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_details_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_details_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_destruct.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_in_BASE.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_damage.rvmat","Ca\wheeled_E\HMMWV\Data\hmmwv_glass_destruct.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default.rvmat","Ca\Ca_E\data\default_destruct.rvmat"};
+	};	
+	class Upgrades
+	{
+		ItemORP[] = {"HMMWV_DES_MK19_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",2},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_DES_MK19_DZE1: HMMWV_DES_MK19_DZE 
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES_MK19+";
+	original = "HMMWV_DES_MK19_DZE";
+	maxSpeed = 115; // base 100
+	turnCoef = 1; // base 2
+	terrainCoef = 1; //base 2
+	
+	class Upgrades
+	{
+		ItemAVE[] = {"HMMWV_DES_MK19_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1 },{"equip_metal_sheet",6},{"ItemScrews",4}}};
+	};
+};
+
+class HMMWV_DES_MK19_DZE2: HMMWV_DES_MK19_DZE1
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES_MK19++";
+	armor = 75; // base 40
+	damageResistance = 0.015; // base 0.00581
+	
+	class HitPoints: HitPoints
+	{
+		class HitGlass1: HitGlass1
+		{
+			armor = 1.5;
+		};
+		class HitGlass2: HitGlass2
+		{
+			armor = 1.5;
+		};
+		class HitGlass3: HitGlass3
+		{
+			armor = 1.5;
+		};
+		class HitGlass4: HitGlass4
+		{
+			armor = 1.5;
+		};
+		class HitLFWheel: HitLFWheel
+		{
+			armor = 0.25;
+		};
+		class HitLBWheel: HitLBWheel
+		{
+			armor = 0.25;
+		};
+		class HitRFWheel: HitRFWheel
+		{
+			armor = 0.25;
+		};
+		class HitRBWheel: HitRBWheel
+		{
+			armor = 0.25;
+		};
+		class HitFuel: HitFuel
+		{
+			armor = 0.5;
+		};
+		class HitEngine: HitEngine
+		{
+			armor = 1;
+		};
+	};	
+	
+	class Upgrades
+	{
+		ItemLRK[] = {"HMMWV_DES_MK19_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+	};
+};
+
+class HMMWV_DES_MK19_DZE3: HMMWV_DES_MK19_DZE2
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES_MK19+++";
+	transportMaxWeapons = 30; 
+	transportMaxMagazines = 140; 
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemTNK[] = {"HMMWV_DES_MK19_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",4},{"PartFueltank",2},{"ItemFuelBarrel",1}}};
+	};
+};
+
+class HMMWV_DES_MK19_DZE4: HMMWV_DES_MK19_DZE3
+{
+	displayName = "$STR_VEH_NAME_HMMWV_DES_MK19++++";
+	fuelCapacity = 180; // base 100
+};
+
 class HMMWV_M1035_DES_EP1_DZE : HMMWV_DZE_Base {
 	scope = 2;
 	model = "\ca\wheeled_e\HMMWV\M1035_transport";
