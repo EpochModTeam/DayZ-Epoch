@@ -188,10 +188,10 @@ class Mission
 		items=17;
 		class Item0
 		{
-			position[]={10788,0,8680};
+			position[]={11100,0,9300};
 			name="center";
 			type="Empty";
-			a=3500;b=3500;
+			a=4000;b=4000;
 		};
 		class Item1
 		{
