@@ -293,6 +293,7 @@ if (!isDedicated) then {
 	Dayz_fishingItems = ["MeleeFishingPole"];
 	snapGizmos = []; // may not need this
 	snapGizmosNearby = []; // may not need this
+	DZE_CLICK_ACTIONS = [];
 
 	//temperature variables
 	dayz_temperatur = 36;

@@ -12,7 +12,7 @@ if (_button == 1) then {
 		localize "str_player_actionslimit" call dayz_rollingMessages;
 	};
 
-	private ["_conf","_name","_compile","_height","_item"];
+	private ["_conf","_name","_compile","_height","_item","_isKey"];
 	_group = _parent displayCtrl 6902;
 
 	_pos = ctrlPosition _group;
@@ -69,6 +69,33 @@ if (_button == 1) then {
 		_menu ctrlSetText format[_type,_name];
 		_menu ctrlSetEventHandler ["ButtonClick",_compile];
 	};
+
+	_isKey = ((["ItemKey",_item] call fnc_inString) && (_item != "ItemKeyKit"));
+
+	{
+		private["_classname","_text","_execute","_condition","_option"];
+		_classname   = _x select 0;
+		_text        = _x select 1;
+		_execute     = _x select 2;
+		_condition   = _x select 3;
+		if (count _this > 4) then {_option = _x select 4};
+
+		// if the clicked item matches, then assign the script call and display text
+		if ((_item == _classname || (_isKey && (_className == "ItemKey"))) && (call compile _condition)) then {
+			_menu = _parent displayCtrl (1600 + _numActions);
+			_menu ctrlShow true;
+			_height = _height + (0.025 * safezoneH);
+			uiNamespace setVariable ['uiControl', _control];
+			_menu ctrlSetText _text;
+			if (_isKey && (_className == "ItemKey")) then {
+				_menu ctrlSetEventHandler ["ButtonClick",format ["[%1,%2] %3",str _item,_option,_execute]];
+			} else {
+				_menu ctrlSetEventHandler ["ButtonClick",_execute];
+			};
+			_numActions = _numActions + 1;
+		};
+	} forEach DZE_CLICK_ACTIONS;
+
 	_pos set [3,_height];
 
 	//hint format["Obj: %1 \nHeight: %2\nPos: %3",_item,_height,_grpPos];
