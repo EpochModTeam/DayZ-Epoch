@@ -748,6 +748,7 @@ class SnapBuilding {
 	};
 	
 	class StorageShed2_DZ: StorageShed_DZ {};
+	class StorageShed_Preview_DZ: StorageShed_DZ {};
 	
 	class WoodShack_DZ {
 		snapTo[] = {
