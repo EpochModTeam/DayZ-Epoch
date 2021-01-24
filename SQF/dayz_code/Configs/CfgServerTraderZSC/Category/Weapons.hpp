@@ -440,7 +440,7 @@ class Category_16 {
 	class Groza9_Sniper_SD_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {2000,"worth"};};
 	class VAL_DZ {type = "trade_weapons";buy[] = {3000,"worth"};sell[] = {1000,"worth"};};
 	class VAL_Kobra_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1000,"worth"};};
-	class VAL_POS1_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1000,"worth"};};
+	class VAL_PSO1_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {1000,"worth"};};
 	class AKS74U_DZ {type = "trade_weapons";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class AKS74U_Kobra_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {300,"worth"};};
 	class AKS74U_SD_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {400,"worth"};};

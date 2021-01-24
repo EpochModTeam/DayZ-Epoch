@@ -440,7 +440,7 @@ class Category_16 {
 	class Groza9_Sniper_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {2,"ItemGoldBar10oz"};};
 	class VAL_DZ {type = "trade_weapons";buy[] = {3,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class VAL_Kobra_DZ {type = "trade_weapons";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
-	class VAL_POS1_DZ {type = "trade_weapons";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class VAL_PSO1_DZ {type = "trade_weapons";buy[] = {-2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class AKS74U_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class AKS74U_Kobra_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class AKS74U_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
