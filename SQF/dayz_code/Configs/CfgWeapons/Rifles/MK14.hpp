@@ -94,6 +94,11 @@ class MK14_CCO_DZ: MK14_DZ
 			script = "; ['Attachment_CCO',_id,'MK14_DZ'] call player_removeAttachment";
 		};
 	};
+	
+	class Attachments
+	{
+		Attachment_Sup762 = "MK14_CCO_SD_DZ";
+	};
 };
 
 class MK14_Holo_DZ: MK14_DZ
@@ -160,6 +165,8 @@ class MK14_Sniper_DZ: MK14_DZ
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800};
 	discreteDistanceInitIndex = 2;
+	
+	class Attachments {};
 };
 
 class MK14_SD_DZ: M14_EP1
@@ -309,6 +316,8 @@ class MK14_Sniper_SD_DZ: MK14_SD_DZ
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800};
 	discreteDistanceInitIndex = 2;
+	
+	class Attachments {};
 	class ItemActions {};
 };
 
