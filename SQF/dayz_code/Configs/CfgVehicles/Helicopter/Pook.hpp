@@ -175,7 +175,7 @@ class pook_gunship_DZ:  pook_H13_base_DZE
 	memoryPointLRocket = "Rocket_1";
 	memoryPointRRocket = "Rocket_2";
 	selectionFireAnim = "zasleh";
-	weapons[] = {"pook_M60_dual","pook_H13Grenades","CMFlareLauncher"};
+	weapons[] = {"pook_M60_dual_DZ","pook_H13Grenades","CMFlareLauncher"};
 	magazines[] = {"pook_1300Rnd_762x51_M60","pook_12Rnd_Grenade_Camel","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 };
 
@@ -269,7 +269,10 @@ class pook_gunship_CDF_DZE3: pook_gunship_CDF_DZE2
 	fuelCapacity = 1000;
 };
 
-class pook_H13_transport;
+class pook_H13_transport: pook_H13_base {
+	class Turrets; // External class reference
+	class MainTurret; // External class reference	
+};
 class pook_transport_DZ: pook_H13_transport
 {
 	scope = 2;
@@ -295,8 +298,14 @@ class pook_transport_DZ: pook_H13_transport
 	weapons[] = {"pook_H13Grenades","CMFlareLauncher"};
 	magazines[] = {"pook_12Rnd_Grenade_Camel","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
 	
-	class Turrets; // External class reference
-	class MainTurret; // External class reference
+	class Turrets: Turrets
+	{
+		class MainTurret: MainTurret
+		{
+			weapons[] = {"pook_M60_side_DZ","pook_H13Grenades"};
+			//magazines[] = {"pook_250Rnd_762x51","pook_250Rnd_762x51","pook_250Rnd_762x51","pook_250Rnd_762x51","pook_250Rnd_762x51","pook_12Rnd_Grenade_Camel"};
+		};
+	};	
 };
 
 class pook_transport_DZE: pook_transport_DZ
@@ -614,5 +623,102 @@ class pook_H13_civ_yellow_DZE2: pook_H13_civ_yellow_DZE1
 class pook_H13_civ_yellow_DZE3: pook_H13_civ_yellow_DZE2
 {
 	displayName = "$STR_VEH_NAME_BELLH13_CIV_YELLOW+++";
+	fuelCapacity = 1000;
+};
+
+class pook_gunship_m134_DZ:  pook_gunship_DZ
+{
+	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP";
+	weapons[] = {"pook_M60_dual_m134_DZ","pook_H13Grenades","CMFlareLauncher"};
+	magazines[] = {"2000Rnd_762x51_M134","pook_12Rnd_Grenade_Camel","60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
+};
+
+class pook_gunship_m134_DZE: pook_gunship_m134_DZ
+{
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"pook_gunship_m134_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class pook_gunship_m134_DZE1: pook_gunship_m134_DZE
+{
+	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP+";
+	original = "pook_gunship_m134_DZE";
+	armor = 60;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"pook_gunship_m134_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class pook_gunship_m134_DZE2: pook_gunship_m134_DZE1
+{
+	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP++";
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 80;
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"pook_gunship_m134_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class pook_gunship_m134_DZE3: pook_gunship_m134_DZE2
+{
+	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP+++";
+	fuelCapacity = 1000;
+};
+
+class pook_gunship_CDF_m134_DZ: pook_gunship_m134_DZ
+{
+	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP_GREEN";
+	hiddenSelectionsTextures[] = {"\CA\air\Data\mi8_body_g_cdf_co.paa","ca\air\data\clear_empty.paa","ca\air\data\clear_empty.paa"};
+};
+
+class pook_gunship_CDF_m134_DZE: pook_gunship_CDF_m134_DZ
+{
+	magazines[] = {"60Rnd_CMFlareMagazine","60Rnd_CMFlareMagazine"};
+	
+	class Upgrades
+	{
+		ItemHeliAVE[] = {"pook_gunship_CDF_m134_DZE1",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliAVE",1},{"equip_metal_sheet",5},{"ItemScrews",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class pook_gunship_CDF_m134_DZE1: pook_gunship_CDF_m134_DZE
+{
+	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP_GREEN+";
+	original = "pook_gunship_CDF_m134_DZE";
+	armor = 60;
+	damageResistance = 0.02078;
+	
+	class Upgrades
+	{
+		ItemHeliLRK[] = {"pook_gunship_CDF_m134_DZE2",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliLRK",1},{"PartGeneric",2},{"ItemScrews",1},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemTinBar",1},{"equip_scrapelectronics",2},{"equip_floppywire",2}}};
+	};
+};
+
+class pook_gunship_CDF_m134_DZE2: pook_gunship_CDF_m134_DZE1
+{
+	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP_GREEN++";
+	transportMaxWeapons = 20;
+	transportMaxMagazines = 80;
+	transportmaxbackpacks = 8;
+	
+	class Upgrades
+	{
+		ItemHeliTNK[] = {"pook_gunship_CDF_m134_DZE3",{"ItemToolbox","ItemSolder_DZE"},{},{{"ItemHeliTNK",1},{"PartFueltank",2},{"PartGeneric",2},{"ItemFuelBarrel",1},{"ItemTinBar",1},{"equip_scrapelectronics",1},{"equip_floppywire",1}}};
+	};
+};
+
+class pook_gunship_CDF_m134_DZE3: pook_gunship_CDF_m134_DZE2
+{
+	displayName = "$STR_VEH_NAME_BELLH13_GUNSHIP_GREEN+++";
 	fuelCapacity = 1000;
 };

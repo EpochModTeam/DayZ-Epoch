@@ -18892,7 +18892,23 @@
 			<German>Revolver &lt;br/&gt;Kaliber: .45 ACP</German>
 			<Russian>Револьвер &lt;br/&gt;Патрон: .45 ACP</Russian>
 		</Key>
-
+		
+		<Key ID="STR_DZ_WPN_SA61_NAME">
+			<English>Sa-61 Škorpión</English>
+		</Key>
+		
+		<Key ID="STR_DZ_WPN_SIDE_M60_NAME">
+			<English>M60</English>
+		</Key>		
+		<Key ID="STR_DZ_WPN_DUAL_M60_NAME">
+			<English>Twin M60</English>
+			<German>Zwillings-M60</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_DUAL_M134_NAME">
+			<English>Twin M134</English>
+			<German>Zwillings-M134</German>
+		</Key>
+		
 		<!-- **** MAGAZINES **** -->
 
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
@@ -20750,45 +20766,45 @@
 			<Russian>2000п. M134</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_M134_DESC">
-			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: M134, Twin M60</English>
-			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 2000&lt;br/&gt;Utilisé avec: M134, Twin M60</French>
-			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: M134, Twin M60</Spanish>
-			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: M134, Twin M60</Italian>
-			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: M134, Twin M60</Polish>
-			<Russian>Патрон: 7.62x51мм &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: M134, Twin M60</Russian>
-			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Verwendet in: M134, Twin M60</German>
-			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: M134, Twin M60</Czech>
-			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: M134, Twin M60</Hungarian>
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: M134, Twin M134</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 2000&lt;br/&gt;Utilisé avec: M134, Twin M134</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: M134, Twin M134</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: M134, Twin M134</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: M134, Twin M134</Polish>
+			<Russian>Патрон: 7.62x51мм &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: M134, Twin M134</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Verwendet in: M134, Zwillings-M134</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: M134, Twin M134</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: M134, Twin M134</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4000RND_M134_NAME">
 			<English>4000Rnd. M134</English>
 			<Russian>4000п. M134</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4000RND_M134_DESC">
-			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 4000&lt;br/&gt;Used in: M134</English>
-			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 4000&lt;br/&gt;Utilisé avec: M134</French>
-			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 4000&lt;br/&gt;Usado en: M134</Spanish>
-			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 4000&lt;br/&gt;Usato in: M134</Italian>
-			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 4000&lt;br/&gt;Uzywany w: M134</Polish>
-			<Russian>Патрон: 7.62x51мм &lt;br/&gt;Количество: 4000&lt;br/&gt;Исп. в: M134</Russian>
-			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 4000&lt;br/&gt;Verwendet in: M134</German>
-			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 4000&lt;br/&gt;Pro: M134</Czech>
-			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 4000&lt;br/&gt; Hozzá tartozó fegyver: M134</Hungarian>
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 4000&lt;br/&gt;Used in: M134, Twin M134</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 4000&lt;br/&gt;Utilisé avec: M134, Twin M134</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 4000&lt;br/&gt;Usado en: M134, Twin M134</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 4000&lt;br/&gt;Usato in: M134, Twin M134</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 4000&lt;br/&gt;Uzywany w: M134, Twin M134</Polish>
+			<Russian>Патрон: 7.62x51мм &lt;br/&gt;Количество: 4000&lt;br/&gt;Исп. в: M134, Twin M134</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 4000&lt;br/&gt;Verwendet in: M134, Zwillings-M134</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 4000&lt;br/&gt;Pro: M134, Twin M134</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 4000&lt;br/&gt; Hozzá tartozó fegyver: M134, Twin M134</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_L94A1_NAME">
 			<English>2000Rnd. L94A1</English>
 			<Russian>2000п. L94A1</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_L94A1_DESC">
-			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: L94A1, Twin M60</English>
-			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 2000&lt;br/&gt;Utilisé avec: L94A1, Twin M60</French>
-			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: L94A1, Twin M60</Spanish>
-			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: L94A1, Twin M60</Italian>
-			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: L94A1, Twin M60</Polish>
-			<Russian>Патрон: 7.62x51мм &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: L94A1, Twin M60</Russian>
-			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Verwendet in: L94A1, Twin M60</German>
-			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: L94A1, Twin M60</Czech>
-			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: L94A1, Twin M60</Hungarian>
+			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: L94A1</English>
+			<French>Calibre: 7.62x51mm&lt;br/&gt;Munitions : 2000&lt;br/&gt;Utilisé avec: L94A1</French>
+			<Spanish>Calibre: 7.62x51mm&lt;br/&gt;Cartuchos: 2000&lt;br/&gt;Usado en: L94A1</Spanish>
+			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 2000&lt;br/&gt;Usato in: L94A1</Italian>
+			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 2000&lt;br/&gt;Uzywany w: L94A1</Polish>
+			<Russian>Патрон: 7.62x51мм &lt;br/&gt;Количество: 2000&lt;br/&gt;Исп. в: L94A1</Russian>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 2000&lt;br/&gt;Verwendet in: L94A1</German>
+			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 2000&lt;br/&gt;Pro: L94A1</Czech>
+			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 2000&lt;br/&gt; Hozzá tartozó fegyver: L94A1</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_100RND_M2_NAME">
 			<English>100Rnd. M2</English>
@@ -20876,7 +20892,7 @@
 			<Italian>Calibro: 7.62x51mm&lt;br/&gt;Munizioni: 1300&lt;br/&gt;Usato in: Twin M60</Italian>
 			<Polish>Kaliber: 7.62x51mm&lt;br/&gt;Naboje: 1300&lt;br/&gt;Uzywany w: Twin M60</Polish>
 			<Russian>Патрон: 7.62x51мм &lt;br/&gt;Количество: 1300&lt;br/&gt;Исп. в: Twin M60</Russian>
-			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 1300&lt;br/&gt;Verwendet in: Twin M60</German>
+			<German>Kaliber: 7.62x51mm&lt;br/&gt;Patronen: 1300&lt;br/&gt;Verwendet in: Zwillings-M60</German>
 			<Czech>Kalibr: 7.62x51mm&lt;br/&gt;Nábojů: 1300&lt;br/&gt;Pro: Twin M60</Czech>
 			<Hungarian>Kaliber: 7.62x51mm&lt;br/&gt; Töltények: 1300&lt;br/&gt; Hozzá tartozó fegyver: Twin M60</Hungarian>
 		</Key>
