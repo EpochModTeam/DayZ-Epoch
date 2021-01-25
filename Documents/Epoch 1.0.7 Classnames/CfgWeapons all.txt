@@ -964,6 +964,7 @@ DesertEagle_DZ
 DesertEagle_Gold_DZ
 DesertEagle_Silver_DZ
 DesertEagle_Modern_DZ
+Sa61_DZ
 MeleeHatchet
 MeleeCrowbar
 MeleeMachete

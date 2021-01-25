@@ -245,7 +245,8 @@ class CfgWeapons
 	class UZI_SD_EP1;
 	#include "Pistols\PDW.hpp"
 	#include "Pistols\TEC9.hpp"
-	#include "Pistols\MAC10.hpp"	
+	#include "Pistols\MAC10.hpp"
+	#include "Pistols\SA61.hpp"		
 	
 	class revolver_EP1;	
 	#include "Pistols\Revolver.hpp"

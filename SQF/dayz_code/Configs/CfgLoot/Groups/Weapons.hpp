@@ -214,7 +214,8 @@ weaponsCZ[] =
 	{Loot_WEAPON,		2,		CZ75P_DZ},
 	{Loot_WEAPON,		2,		CZ75D_DZ},
 	{Loot_WEAPON,		2,		CZ75SP_DZ},
-	{Loot_WEAPON,		1,		CZ75SP_SD_DZ},
+	{Loot_WEAPON,		1,		CZ75SP_SD_DZ},	
+	{Loot_WEAPON,		5,		Sa61_DZ},
 	
 	// Bolt action rifles and shotguns
 	{Loot_WEAPON,		5,		USAS12_DZ},

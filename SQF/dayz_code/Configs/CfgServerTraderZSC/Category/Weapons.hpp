@@ -84,7 +84,7 @@ class Category_13 {
 
 //Submachine Guns
 class Category_14 {
-	class Sa61_EP1 {type = "trade_weapons";buy[] = {100,"worth"};sell[] = {50,"worth"};};
+	class Sa61_DZ {type = "trade_weapons";buy[] = {100,"worth"};sell[] = {50,"worth"};};
 	class Mac10_DZ {type = "trade_weapons";buy[] = {100,"worth"};sell[] = {50,"worth"};};		
 	class TEC9_DZ {type = "trade_weapons";buy[] = {100,"worth"};sell[] = {50,"worth"};};	
 	class PDW_DZ {type = "trade_weapons";buy[] = {400,"worth"};sell[] = {200,"worth"};};
