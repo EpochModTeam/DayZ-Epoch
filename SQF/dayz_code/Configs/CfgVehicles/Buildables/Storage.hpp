@@ -82,7 +82,7 @@ class StorageShed_DZ: Land_Shed_M01
 	armor = 1600;
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\storage\Shed_M02.p3d";
-	offset[] = {0,4,1};
+	offset[] = {0,4,0};
 	displayName = $STR_EPOCH_STORAGESHED;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 400;
@@ -97,7 +97,7 @@ class StorageShed2_DZ: Land_Shed_M01
 {
 	armor = 3200;
 	scope = 2;
-	offset[] = {0,4,1};
+	offset[] = {0,4,0};
 	displayName = $STR_EPOCH_STORAGESHED2;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 600;
