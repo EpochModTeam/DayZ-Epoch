@@ -192,10 +192,10 @@ class SnapBuilding {
 	class WoodFloorQuarter_Preview_DZ: FloorsWallsStairs {
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{0,-1.2,0.130,$STR_EPOCH_ACTION_SNAP_BACK},
-			{0,1.11,0.130,$STR_EPOCH_ACTION_SNAP_FRONT},
-			{-1.2,0,0.130,$STR_EPOCH_ACTION_SNAP_LEFT},
-			{1.3,0,0.130,$STR_EPOCH_ACTION_SNAP_RIGHT}
+			{0,-1.2,0.107,$STR_EPOCH_ACTION_SNAP_BACK},
+			{0,1.11,0.107,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{-1.2,0,0.107,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{1.3,0,0.107,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	class WoodFloorQuarter_DZ: WoodFloorQuarter_Preview_DZ {};	
@@ -203,10 +203,10 @@ class SnapBuilding {
 	class WoodFloorHalf_Preview_DZ: FloorsWallsStairs {
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{0,-2.33,0.130,$STR_EPOCH_ACTION_SNAP_BACK},
-			{0,2.33,0.130,$STR_EPOCH_ACTION_SNAP_FRONT},
-			{-1.18,0,0.130,$STR_EPOCH_ACTION_SNAP_LEFT},
-			{1.32,0,0.130,$STR_EPOCH_ACTION_SNAP_RIGHT}
+			{0,-2.33,0.107,$STR_EPOCH_ACTION_SNAP_BACK},
+			{0,2.33,0.107,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{-1.18,0,0.107,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{1.32,0,0.107,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 	};
 	class WoodFloorHalf_DZ: WoodFloorHalf_Preview_DZ {};
@@ -226,10 +226,10 @@ class SnapBuilding {
 	class WoodTriangleFloor_DZ: FloorsWallsStairs {
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{0,-1.3,0.130,$STR_EPOCH_ACTION_SNAP_BACK},
-			{0,1.3,0.130,$STR_EPOCH_ACTION_SNAP_FRONT},
-			{-1.258,0.027,0.130,$STR_EPOCH_ACTION_SNAP_LEFT},
-			{1.258,0.027,0.130,$STR_EPOCH_ACTION_SNAP_RIGHT}
+			{0,-1.3,0.092,$STR_EPOCH_ACTION_SNAP_BACK},
+			{0,1.3,0.092,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{-1.258,0.027,0.092,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{1.258,0.027,0.092,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};
 		radius = 10;
 	};	
