@@ -88,6 +88,7 @@ class VAL_PSO1_DZ: VAL_DZ
 	opticsZoomMax = 0.071945;
 	distanceZoomMin = 110;
 	distanceZoomMax = 110;
+	class Attachments {};
 	
 	class ItemActions
 	{

@@ -517,6 +517,8 @@ class HK417_Sniper_DZ: HK417_DZ
 			discreteDistanceInitIndex = 2;
 		};
 	};
+	
+	class Attachments {};
 };
 
 class HK417_Sniper_SD_DZ: HK417_SD_DZ
@@ -549,6 +551,7 @@ class HK417_Sniper_SD_DZ: HK417_SD_DZ
 		};
 	};
 	class ItemActions {};
+	class Attachments {};
 };
 
 #undef HK417_M203

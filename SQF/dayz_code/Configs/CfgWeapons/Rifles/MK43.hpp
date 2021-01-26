@@ -92,6 +92,8 @@ class MK43_Holo_DZ: Mk43_DZ
 	irLaserPos = "laser pos";
 	irLaserEnd = "laser dir";
 	
+	class Attachments {};
+	
 	class ItemActions
 	{
 		class RemoveHolo
@@ -148,6 +150,8 @@ class MK43_ACOG_DZ: Mk43_DZ
 			cameraDir = "";
 		};
 	};
+	
+	class Attachments {};
 	
 	class ItemActions
 	{

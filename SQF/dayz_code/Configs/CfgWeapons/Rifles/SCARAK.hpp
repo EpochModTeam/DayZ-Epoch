@@ -62,6 +62,7 @@ class SCAR_H_AK_CCO_DZ: SCAR_H_AK_DZ
 	irDistance = 150;
 	dexterity = "3.75/(3.6+ 0.2+ (0.4)*1.2+ 0.1) + 0.5 + 0.1*(1)";
 	weaponInfoType = "RscWeaponEmpty";
+	class Attachments {};
 	
 	class ItemActions
 	{
