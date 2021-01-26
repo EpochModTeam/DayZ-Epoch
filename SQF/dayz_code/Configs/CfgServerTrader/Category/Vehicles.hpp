@@ -102,7 +102,9 @@ class Category_42 {
 	class UralCivil2_DZE {type = "trade_any_vehicle";buy[] = {1,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class UralSupply_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
 	class UralReammo_CDF_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
-	class UralRepair_CDF_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
+	class UralReammo_INS_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class UralRepair_CDF_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class UralRepair_INS_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
 	class V3S_Open_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class V3S_Open_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class V3S_Civ_DZE {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
@@ -131,6 +133,8 @@ class Category_42 {
 //Fuel Trucks
 class Category_43 {
 	class UralRefuel_TK_EP1_DZ {type = "trade_any_vehicle";buy[] = {7,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
+	class UralRefuel_INS_DZE {type = "trade_any_vehicle";buy[] = {7,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
+	class UralRefuel_CDF_DZE {type = "trade_any_vehicle";buy[] = {7,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 	class V3S_Refuel_TK_GUE_EP1_DZ {type = "trade_any_vehicle";buy[] = {7,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 	class KamazRefuel_DZ {type = "trade_any_vehicle";buy[] = {7,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};
 	class MtvrRefuel_DES_EP1_DZ {type = "trade_any_vehicle";buy[] = {7,"ItemGoldBar10oz"};sell[] = {3,"ItemGoldBar10oz"};};

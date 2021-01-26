@@ -16,9 +16,7 @@ class ItemWaterBottle : FoodDrink
 	
 	class ItemActions : ItemActions
 	{
-		class Consume : Consume
-		{
-		};
+		class Consume : Consume	{};
 		
 		class Empty
 		{
@@ -47,6 +45,11 @@ class ItemWaterBottleBoiled : ItemWaterBottle
 	
 	class ItemActions
 	{
+		class Consume
+		{
+			text = $STR_ACTIONS_DRINK2;
+			script = "spawn player_consume";
+		};
 		class Crafting
 		{
 			text = $STR_CRAFTING_HERBALDRINK;

@@ -541,7 +541,7 @@ class UralRefuel_TK_EP1_DZE4: UralRefuel_TK_EP1_DZE3 {
 };
 
 class UralRefuel_CDF;
-class UralRefuel_CDF_DZ: UralRefuel_CDF {
+class UralRefuel_CDF_DZE: UralRefuel_CDF {
 	scope = 2;
 	displayName = "$STR_VEH_NAME_URAL_FUEL_CDF";
 	crew = "";
@@ -560,9 +560,9 @@ class UralRefuel_CDF_DZ: UralRefuel_CDF {
 		ItemTruckORP[] = {"UralRefuel_CDF_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
-class UralRefuel_CDF_DZE1: UralRefuel_CDF_DZ {
+class UralRefuel_CDF_DZE1: UralRefuel_CDF_DZE {
 	displayName = "$STR_VEH_NAME_URAL_FUEL_CDF+";
-	original = "UralRefuel_CDF_DZ";
+	original = "UralRefuel_CDF_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
 	turnCoef = 2.0;  // base 3.7
@@ -712,7 +712,7 @@ class UralRepair_CDF_DZE4: UralRepair_CDF_DZE3 {
 };
 
 class UralRefuel_INS;
-class UralRefuel_INS_DZ: UralRefuel_INS {
+class UralRefuel_INS_DZE: UralRefuel_INS {
 	scope = 2;
 	displayName = "$STR_VEH_NAME_URAL_FUEL_INS";
 	crew = "";
@@ -731,9 +731,9 @@ class UralRefuel_INS_DZ: UralRefuel_INS {
 		ItemTruckORP[] = {"UralRefuel_INS_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
-class UralRefuel_INS_DZE1: UralRefuel_INS_DZ {
+class UralRefuel_INS_DZE1: UralRefuel_INS_DZE {
 	displayName = "$STR_VEH_NAME_URAL_FUEL_INS+";
-	original = "UralRefuel_INS_DZ";
+	original = "UralRefuel_INS_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
 	turnCoef = 2.0;  // base 3.7
