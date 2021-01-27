@@ -16057,6 +16057,7 @@
 		<Key ID="STR_DZ_WPN_M24_DESERT_NAME">
 			<English>M24 Desert</English>
 			<German>M24 Wüstentarn</German>
+			<Russian>M24 (Пустынный)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M40A3_NAME">
 			<English>M40A3</English>
@@ -16090,10 +16091,12 @@
 		<Key ID="STR_DZ_WPN_L85A2_FL_NAME">
 			<English>L85A2 FL</English>
 			<German>L85A2 TL</German>
+			<Russian>L85A2 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_MFL_NAME">
 			<English>L85A2 MFL</English>
 			<German>L85A2 MTL</German>
+			<Russian>L85A2 ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_SD_NAME">
 			<English>L85A2 SD</English>
@@ -16102,12 +16105,12 @@
 		<Key ID="STR_DZ_WPN_L85A2_SD_FL_NAME">
 			<English>L85A2 SD FL</English>
 			<German>L85A2 SD TL</German>
-			<Russian>L85A2 ПБС FL</Russian>
+			<Russian>L85A2 ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_SD_MFL_NAME">
 			<English>L85A2 SD MFL</English>
 			<German>L85A2 SD MTL</German>
-			<Russian>L85A2 ПБС MFL</Russian>
+			<Russian>L85A2 ПБС ВФ</Russian>
 		</Key>
 
 		<!-- L85A2 CCO-->
@@ -16117,12 +16120,12 @@
 		<Key ID="STR_DZ_WPN_L85A2_CCO_FL_NAME">
 			<English>L85A2 CCO FL</English>
 			<German>L85A2 CCO TL</German>
-			<Russian>L85A2 CCO FL</Russian>
+			<Russian>L85A2 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_CCO_MFL_NAME">
 			<English>L85A2 CCO MFL</English>
 			<German>L85A2 CCO MTL</German>
-			<Russian>L85A2 CCO MFL</Russian>
+			<Russian>L85A2 CCO ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_NAME">
 			<English>L85A2 CCO SD</English>
@@ -16131,12 +16134,12 @@
 		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_FL_NAME">
 			<English>L85A2 CCO SD FL</English>
 			<German>L85A2 CCO SD TL</German>
-			<Russian>L85A2 CCO ПБС FL</Russian>
+			<Russian>L85A2 CCO ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_CCO_SD_MFL_NAME">
 			<English>L85A2 CCO SD MFL</English>
 			<German>L85A2 CCO SD MTL</German>
-			<Russian>L85A2 CCO ПБС MFL</Russian>
+			<Russian>L85A2 CCO ПБС ВФ</Russian>
 		</Key>
 		<!-- L85A2 Holo -->
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_NAME">
@@ -16145,10 +16148,12 @@
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_FL_NAME">
 			<English>L85A2 Holo FL</English>
 			<German>L85A2 Holo TL</German>
+			<Russian>L85A2 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_MFL_NAME">
 			<English>L85A2 Holo MFL</English>
 			<German>L85A2 Holo MTL</German>
+			<Russian>L85A2 Holo ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_NAME">
 			<English>L85A2 Holo SD</English>
@@ -16157,12 +16162,12 @@
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_FL_NAME">
 			<English>L85A2 Holo SD FL</English>
 			<German>L85A2 Holo SD TL</German>
-			<Russian>L85A2 Holo ПБС FL</Russian>
+			<Russian>L85A2 Holo ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_HOLO_SD_MFL_NAME">
 			<English>L85A2 Holo SD MFL</English>
 			<German>L85A2 Holo SD MTL</German>
-			<Russian>L85A2 Holo ПБС MFL</Russian>
+			<Russian>L85A2 Holo ПБС ВФ</Russian>
 		</Key>
 		<!-- L85A2 ACOG -->
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_NAME">
@@ -16171,10 +16176,12 @@
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_FL_NAME">
 			<English>L85A2 ACOG FL</English>
 			<German>L85A2 ACOG TL</German>
+			<Russian>L85A2 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_MFL_NAME">
 			<English>L85A2 ACOG MFL</English>
 			<German>L85A2 ACOG MTL</German>
+			<Russian>L85A2 ACOG ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_NAME">
 			<English>L85A2 ACOG SD</English>
@@ -16183,12 +16190,12 @@
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_FL_NAME">
 			<English>L85A2 ACOG SD FL</English>
 			<German>L85A2 ACOG SD TL</German>
-			<Russian>L85A2 ACOG ПБС FL</Russian>
+			<Russian>L85A2 ACOG ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_L85A2_ACOG_SD_MFL_NAME">
 			<English>L85A2 ACOG SD MFL</English>
 			<German>L85A2 ACOG SD MTL</German>
-			<Russian>L85A2 ACOG ПБС MFL</Russian>
+			<Russian>L85A2 ACOG ПБС ВФ</Russian>
 		</Key>
 
 		<!-- M4A1 -->
@@ -16198,10 +16205,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_FL_NAME">
 			<English>M4A1 FL</English>
 			<German>M4A1 TL</German>
+			<Russian>M4A1 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_MFL_NAME">
 			<English>M4A1 MFL</English>
 			<German>M4A1 MTL</German>
+			<Russian>M4A1 ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_SD_NAME">
 			<English>M4A1 SD</English>
@@ -16210,12 +16219,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_SD_FL_NAME">
 			<English>M4A1 SD FL</English>
 			<German>M4A1 SD TL</German>
-			<Russian>M4A1 ПБС FL</Russian>
+			<Russian>M4A1 ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_SD_MFL_NAME">
 			<English>M4A1 SD MFL</English>
 			<German>M4A1 SD MTL</German>
-			<Russian>M4A1 ПБС MFL</Russian>
+			<Russian>M4A1 ПБС ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_NAME">
 			<English>M4A1 M203</English>
@@ -16223,10 +16232,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_FL_NAME">
 			<English>M4A1 M203 FL</English>
 			<German>M4A1 M203 TL</German>
+			<Russian>M4A1 M203 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_MFL_NAME">
 			<English>M4A1 M203 MFL</English>
 			<German>M4A1 M203 MTL</German>
+			<Russian>M4A1 M203 ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_SD_NAME">
 			<English>M4A1 M203 SD</English>
@@ -16235,12 +16246,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_SD_FL_NAME">
 			<English>M4A1 M203 SD FL</English>
 			<German>M4A1 M203 SD TL</German>
-			<Russian>M4A1 M203 ПБС FL</Russian>
+			<Russian>M4A1 M203 ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_SD_MFL_NAME">
 			<English>M4A1 M203 SD MFL</English>
 			<German>M4A1 M203 SD MTL</German>
-			<Russian>M4A1 M203 ПБС MFL</Russian>
+			<Russian>M4A1 M203 ПБС ВФ</Russian>
 		</Key>
 		<!-- M4A1 CCO-->
 		<Key ID="STR_DZ_WPN_M4A1_CCO_NAME">
@@ -16249,10 +16260,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_CCO_FL_NAME">
 			<English>M4A1 CCO FL</English>
 			<German>M4A1 CCO TL</German>
+			<Russian>M4A1 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_MFL_NAME">
 			<English>M4A1 CCO MFL</English>
 			<German>M4A1 CCO MTL</German>
+			<Russian>M4A1 CCO ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_NAME">
 			<English>M4A1 CCO SD</English>
@@ -16261,12 +16274,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_FL_NAME">
 			<English>M4A1 CCO SD FL</English>
 			<German>M4A1 CCO SD TL</German>
-			<Russian>M4A1 CCO ПБС FL</Russian>
+			<Russian>M4A1 CCO ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_CCO_SD_MFL_NAME">
 			<English>M4A1 CCO SD MFL</English>
 			<German>M4A1 CCO SD MTL</German>
-			<Russian>M4A1 CCO ПБС MFL</Russian>
+			<Russian>M4A1 CCO ПБС ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_NAME">
 			<English>M4A1 M203 CCO</English>
@@ -16274,10 +16287,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_FL_NAME">
 			<English>M4A1 M203 CCO FL</English>
 			<German>M4A1 M203 CCO TL</German>
+			<Russian>M4A1 M203 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_MFL_NAME">
 			<English>M4A1 M203 CCO MFL</English>
 			<German>M4A1 M203 CCO MTL</German>
+			<Russian>M4A1 M203 CCO ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_NAME">
 			<English>M4A1 M203 CCO SD</English>
@@ -16286,12 +16301,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_FL_NAME">
 			<English>M4A1 M203 CCO SD FL</English>
 			<German>M4A1 M203 CCO SD TL</German>
-			<Russian>M4A1 M203 CCO ПБС FL</Russian>
+			<Russian>M4A1 M203 CCO ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_CCO_SD_MFL_NAME">
 			<English>M4A1 M203 CCO SD MFL</English>
 			<German>M4A1 M203 CCO SD MTL</German>
-			<Russian>M4A1 M203 CCO ПБС MFL</Russian>
+			<Russian>M4A1 M203 CCO ПБС ВФ</Russian>
 		</Key>
 		<!-- M4A1 Holo -->
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_NAME">
@@ -16300,10 +16315,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_FL_NAME">
 			<English>M4A1 Holo FL</English>
 			<German>M4A1 Holo TL</German>
+			<Russian>M4A1 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_MFL_NAME">
 			<English>M4A1 Holo MFL</English>
 			<German>M4A1 Holo MTL</German>
+			<Russian>M4A1 Holo ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_NAME">
 			<English>M4A1 Holo SD</English>
@@ -16312,12 +16329,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_FL_NAME">
 			<English>M4A1 Holo SD FL</English>
 			<German>M4A1 Holo SD TL</German>
-			<Russian>M4A1 Holo ПБС FL</Russian>
+			<Russian>M4A1 Holo ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_HOLO_SD_MFL_NAME">
 			<English>M4A1 Holo SD MFL</English>
 			<German>M4A1 Holo SD MTL</German>
-			<Russian>M4A1 Holo ПБС MFL</Russian>
+			<Russian>M4A1 Holo ПБС ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_NAME">
 			<English>M4A1 M203 Holo</English>
@@ -16325,10 +16342,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_FL_NAME">
 			<English>M4A1 M203 Holo FL</English>
 			<German>M4A1 M203 Holo TL</German>
+			<Russian>M4A1 M203 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_MFL_NAME">
 			<English>M4A1 M203 Holo MFL</English>
 			<German>M4A1 M203 Holo MTL</German>
+			<Russian>M4A1 M203 Holo ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_NAME">
 			<English>M4A1 M203 Holo SD</English>
@@ -16337,12 +16356,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_FL_NAME">
 			<English>M4A1 M203 Holo SD FL</English>
 			<German>M4A1 M203 Holo SD TL</German>
-			<Russian>M4A1 M203 Holo ПБС FL</Russian>
+			<Russian>M4A1 M203 Holo ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_HOLO_SD_MFL_NAME">
 			<English>M4A1 M203 Holo SD MFL</English>
 			<German>M4A1 M203 Holo SD MTL</German>
-			<Russian>M4A1 M203 Holo ПБС MFL</Russian>
+			<Russian>M4A1 M203 Holo ПБС ВФ</Russian>
 		</Key>
 		<!-- M4A1 ACOG -->
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_NAME">
@@ -16351,11 +16370,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_FL_NAME">
 			<English>M4A1 ACOG FL</English>
 			<German>M4A1 ACOG TL</German>
+			<Russian>M4A1 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_MFL_NAME">
 			<English>M4A1 ACOG MFL</English>
 			<German>M4A1 ACOG MTL</German>
-			<Russian>M4A1 ACOG MFL</Russian>
+			<Russian>M4A1 ACOG ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_NAME">
 			<English>M4A1 ACOG SD</English>
@@ -16364,11 +16384,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_FL_NAME">
 			<English>M4A1 ACOG SD FL</English>
 			<German>M4A1 ACOG SD TL</German>
+			<Russian>M4A1 ACOG ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_ACOG_SD_MFL_NAME">
 			<English>M4A1 ACOG SD MFL</English>
 			<German>M4A1 ACOG SD MTL</German>
-			<Russian>M4A1 ACOG ПБС MFL</Russian>
+			<Russian>M4A1 ACOG ПБС ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_NAME">
 			<English>M4A1 M203 ACOG</English>
@@ -16376,10 +16397,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_FL_NAME">
 			<English>M4A1 M203 ACOG FL</English>
 			<German>M4A1 M203 ACOG TL</German>
+			<Russian>M4A1 M203 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_MFL_NAME">
 			<English>M4A1 M203 ACOG MFL</English>
 			<German>M4A1 M203 ACOG MTL</German>
+			<Russian>M4A1 M203 ACOG ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_NAME">
 			<English>M4A1 M203 ACOG SD</English>
@@ -16388,12 +16411,12 @@
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_FL_NAME">
 			<English>M4A1 M203 ACOG SD FL</English>
 			<German>M4A1 M203 ACOG SD TL</German>
-			<Russian>M4A1 M203 ACOG ПБС FL</Russian>
+			<Russian>M4A1 M203 ACOG ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M4A1_GL_ACOG_SD_MFL_NAME">
 			<English>M4A1 M203 ACOG SD MFL</English>
 			<German>M4A1 M203 ACOG SD MTL</German>
-			<Russian>M4A1 M203 ACOG ПБС MFL</Russian>
+			<Russian>M4A1 M203 ACOG ПБС ВФ</Russian>
 		</Key>
 
 		<!-- M16A4 -->
@@ -16403,10 +16426,12 @@
 		<Key ID="STR_DZ_WPN_M16A4_FL">
 			<English>M16A4 FL</English>
 			<German>M16A4 TL</German>
+			<Russian>M16A4 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_MFL">
 			<English>M16A4 MFL</English>
 			<German>M16A4 MTL</German>
+			<Russian>M16A4 ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_CCO">
 			<English>M16A4 CCO</English>
@@ -16414,10 +16439,12 @@
 		<Key ID="STR_DZ_WPN_M16A4_CCO_FL">
 			<English>M16A4 CCO FL</English>
 			<German>M16A4 CCO TL</German>
+			<Russian>M16A4 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_CCO_MFL">
 			<English>M16A4 CCO MFL</English>
 			<German>M16A4 CCO MTL</German>
+			<Russian>M16A4 CCO ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_HOLO">
 			<English>M16A4 Holo</English>
@@ -16425,10 +16452,12 @@
 		<Key ID="STR_DZ_WPN_M16A4_HOLO_FL">
 			<English>M16A4 Holo FL</English>
 			<German>M16A4 Holo TL</German>
+			<Russian>M16A4 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_HOLO_MFL">
 			<English>M16A4 Holo MFL</English>
 			<German>M16A4 Holo MTL</German>
+			<Russian>M16A4 Holo ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_NAME">
 			<English>M16A4 ACOG</English>
@@ -16436,10 +16465,12 @@
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_FL_NAME">
 			<English>M16A4 ACOG FL</English>
 			<German>M16A4 ACOG TL</German>
+			<Russian>M16A4 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_ACOG_MFL_NAME">
 			<English>M16A4 ACOG MFL</English>
 			<German>M16A4 ACOG MTL</German>
+			<Russian>M16A4 ACOG ВФ</Russian>
 		</Key>
 
 		<!-- M203 -->
@@ -16449,10 +16480,12 @@
 		<Key ID="STR_DZ_WPN_M16A4_GL_FL">
 			<English>M16A4 M203 FL</English>
 			<German>M16A4 M203 TL</German>
+			<Russian>M16A4 M203 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_MFL">
 			<English>M16A4 M203 MFL</English>
 			<German>M16A4 M203 MTL</German>
+			<Russian>M16A4 M203 ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO">
 			<English>M16A4 M203 CCO</English>
@@ -16460,10 +16493,12 @@
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO_FL">
 			<English>M16A4 M203 CCO FL</English>
 			<German>M16A4 M203 CCO TL</German>
+			<Russian>M16A4 M203 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_CCO_MFL">
 			<English>M16A4 M203 CCO MFL</English>
 			<German>M16A4 M203 CCO MTL</German>
+			<Russian>M16A4 M203 CCO ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO">
 			<English>M16A4 M203 Holo</English>
@@ -16471,10 +16506,12 @@
 		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO_FL">
 			<English>M16A4 M203 Holo FL</English>
 			<German>M16A4 M203 Holo TL</German>
+			<Russian>M16A4 M203 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_HOLO_MFL">
 			<English>M16A4 M203 Holo MFL</English>
 			<German>M16A4 M203 Holo MTL</German>
+			<Russian>M16A4 M203 Holo ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_NAME">
 			<English>M16A4 M203 ACOG</English>
@@ -16482,10 +16519,12 @@
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_FL_NAME">
 			<English>M16A4 M203 ACOG FL</English>
 			<German>M16A4 M203 ACOG TL</German>
+			<Russian>M16A4 M203 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M16A4_GL_ACOG_MFL_NAME">
 			<English>M16A4 M203 ACOG MFL</English>
 			<German>M16A4 M203 ACOG MTL</German>
+			<Russian>M16A4 M203 ACOG ВФ</Russian>
 		</Key>
 
 		<!-- FN FAL -->
@@ -16605,7 +16644,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_RPK_DESC">
 			<English>Light machine gun&lt;br/&gt;Caliber: 7.62x39mm</English>
-			<Russian>Легкий пулемет&lt;br/&gt;Калибр: 7.62x39мм</Russian>
+			<Russian>Лёгкий пулемет&lt;br/&gt;Калибр: 7.62x39мм</Russian>
 			<German>Leichtes Maschinengewehr&lt;br/&gt;Kaliber: 7.62x39mm</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_RPK_KOBRA_NAME">
@@ -16623,17 +16662,17 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_RIS_NAME">
 			<English>SA-58 RIS</English>
-			<Russian>SA-58 РСИ </Russian>
+			<Russian>SA-58 РСИ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_RIS_FL_NAME">
 			<English>SA-58 RIS FL</English>
 			<German>SA-58 RIS TL</German>
-			<Russian>SA-58 РСИ FL</Russian>
+			<Russian>SA-58 РСИ Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_RIS_MFL_NAME">
 			<English>SA-58 RIS MFL</English>
 			<German>SA-58 RIS MTL</German>
-			<Russian>SA-58 РСИ MFL</Russian>
+			<Russian>SA-58 РСИ ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_CCO_NAME">
 			<English>SA-58 CCO</English>
@@ -16641,12 +16680,12 @@
 		<Key ID="STR_DZ_WPN_SA58_CCO_FL_NAME">
 			<English>SA-58 CCO FL</English>
 			<German>SA-58 CCO TL</German>
-			<Russian>SA-58 CCO FL</Russian>
+			<Russian>SA-58 CCO Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_CCO_MFL_NAME">
 			<English>SA-58 CCO MFL</English>
 			<German>SA-58 CCO MTL</German>
-			<Russian>SA-58 CCO MFL</Russian>
+			<Russian>SA-58 CCO ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_HOLO_NAME">
 			<English>SA-58 Holo</English>
@@ -16654,12 +16693,12 @@
 		<Key ID="STR_DZ_WPN_SA58_HOLO_FL_NAME">
 			<English>SA-58 Holo FL</English>
 			<German>SA-58 Holo TL</German>
-			<Russian>SA-58 Holo FL</Russian>
+			<Russian>SA-58 Holo Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_HOLO_MFL_NAME">
 			<English>SA-58 Holo MFL</English>
 			<German>SA-58 Holo MTL</German>
-			<Russian>SA-58 Holo MFL</Russian>
+			<Russian>SA-58 Holo ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_ACOG_NAME">
 			<English>SA-58 ACOG</English>
@@ -16667,12 +16706,12 @@
 		<Key ID="STR_DZ_WPN_SA58_ACOG_FL_NAME">
 			<English>SA-58 ACOG FL</English>
 			<German>SA-58 ACOG TL</German>
-			<Russian>SA-58 ACOG FL</Russian>
+			<Russian>SA-58 ACOG Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SA58_ACOG_MFL_NAME">
 			<English>SA-58 ACOG MFL</English>
 			<German>SA-58 ACOG MTL</German>
-			<Russian>SA-58 ACOG MFL</Russian>
+			<Russian>SA-58 ACOG ВФ</Russian>
 		</Key>
 
 		<!-- G36C -->
@@ -16707,31 +16746,33 @@
 		<Key ID="STR_DZ_WPN_G36C_CAMO_NAME">
 			<English>G36C Camo</English>
 			<German>G36C Tarn</German>
+			<Russian>G36C (Камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36C_CAMO_HOLO_SD_NAME">
 			<English>G36C Camo Holo SD</English>
 			<German>G36C Tarn Holo SD</German>
+			<Russian>G36C Holo ПБС (Камуфляж)</Russian>
 		</Key>
 
 		<!-- G36 -->
 		<Key ID="STR_DZ_WPN_G36A_CAMO_NAME">
 			<English>G36A Camo</English>
-			<Russian>G36A (камуфляж)</Russian>
+			<Russian>G36A (Камуфляж)</Russian>
 			<German>G36A Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36A_CAMO_SD_NAME">
 			<English>G36A Camo SD</English>
-			<Russian>G36A ПБС (камуфляж)</Russian>
+			<Russian>G36A ПБС (Камуфляж)</Russian>
 			<German>G36A Tarn SD</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36K_CAMO_NAME">
 			<English>G36K Camo</English>
-			<Russian>G36K (камуфляж)</Russian>
+			<Russian>G36K (Камуфляж)</Russian>
 			<German>G36K Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_G36K_CAMO_SD_NAME">
 			<English>G36K Camo SD</English>
-			<Russian>G36K ПБС (камуфляж)</Russian>
+			<Russian>G36K ПБС (Камуфляж)</Russian>
 			<German>G36K Tarn SD</German>
 		</Key>
 
@@ -16783,12 +16824,12 @@
 		<Key ID="STR_DZ_WPN_G17_FL_NAME">
 			<English>G17 FL</English>
 			<German>G17 TL</German>
-			<Russian>G17 FL</Russian>
+			<Russian>G17 Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_MFL_NAME">
 			<English>G17 MFL</English>
 			<German>G17 MTL</German>
-			<Russian>G17 MFL</Russian>
+			<Russian>G17 ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_SD_NAME">
 			<English>G17 SD</English>
@@ -16797,12 +16838,12 @@
 		<Key ID="STR_DZ_WPN_G17_SD_FL_NAME">
 			<English>G17 SD FL</English>
 			<German>G17 SD TL</German>
-			<Russian>G17 ПБС FL</Russian>
+			<Russian>G17 ПБС Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_G17_SD_MFL_NAME">
 			<English>G17 SD MFL</English>
 			<German>G17 SD MTL</German>
-			<Russian>G17 ПБС MFL</Russian>
+			<Russian>G17 ПБС ВФ</Russian>
 		</Key>
 
 		<!-- PM -->
@@ -16877,7 +16918,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_R870_MFL_NAME">
 			<English>Remington 870 MFL</English>
-			<Russian>Ремингтон 870 вФ</Russian>
+			<Russian>Ремингтон 870 ВФ</Russian>
 			<German>Remington 870 mit militärischer Taschenlampe</German>
 			<Spanish>Remington 870 (Linterna)</Spanish>
 			<French>Remington 870 (+Torche)</French>
@@ -16922,7 +16963,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_W1866_DESC">
 			<English>Winchester Model 1866 – was originally chambered for the rimfire .44 Henry. Nicknamed the "Yellow Boy" because of its receiver of a bronze/brass alloy.</English>
-			<Russian>Винчестер модели 1866 был приспособлен под патрон .44 Henry. Его называли "Yellow Boy" из-за цвета бронзово-медного сплава приемника.</Russian>
+			<Russian>Винчестер модели 1866 был приспособлен под патрон .44 Henry. Его называли "Yellow Boy" из-за цвета бронзово-медного сплава приёмника.</Russian>
 			<German>Das Winchester Modell 1866 wurde ursprünglich für Rimfire .44 Henry gebaut. Die Winchester wird auch "Yellow Boy" genannt, da die Legierung des Verschlusskastens aus Bronze und Messing bestehen.</German>
 		</Key>
 
@@ -16960,7 +17001,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_UK59_DESC">
 			<English>Chernarussian medium machine gun&lt;br/&gt;Caliber: 7.62x54mm</English>
-			<Russian>Чернарусский средний пулемет&lt;br/&gt;Калибр: 7.62x54мм</Russian>
+			<Russian>Чернарусский средний пулемёт&lt;br/&gt;Калибр: 7.62x54мм</Russian>
 			<German>Cherna-russisches mittleres Maschinengewehr&lt;br/&gt;Kaliber: 7.62x54mm</German>
 		</Key>
 
@@ -16971,7 +17012,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_SVD_GH_NAME">
 			<English>SVD Camo</English>
-			<Russian>СВД (камуфляж)</Russian>
+			<Russian>СВД (Камуфляж)</Russian>
 			<German>SVD Tarn</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_SVD_PSO1_NAME">
@@ -16980,12 +17021,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_SVD_PSO1_GH_NAME">
 			<English>SVD PSO-1 Camo</English>
-			<Russian>СВД ПСО-1 (камуфляж)</Russian>
+			<Russian>СВД ПСО-1 (Камуфляж)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_SVD_PSO1_DES_NAME">
 			<English>SVD PSO-1 Desert</English>
 			<German>SVD PSO-1 Wüstentarn</German>
-			<Russian>СВД ПСО-1 (пустынный)</Russian>
+			<Russian>СВД ПСО-1 (Пустынный)</Russian>
 		</Key>
 
 		<!-- Mosin -->
@@ -17001,7 +17042,7 @@
 		<Key ID="STR_DZ_WPN_MOSIN_MFL_NAME">
 			<English>Mosin Nagant MFL</English>
 			<German>Mosin Nagant TL</German>
-			<Russian>Винтовка Мосина вФ</Russian>
+			<Russian>Винтовка Мосина ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_NAME">
 			<English>Mosin Nagant Belt</English>
@@ -17016,7 +17057,7 @@
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_MFL_NAME">
 			<English>Mosin Nagant Belt MFL</English>
 			<German>Mosin Nagant Gurt MTL</German>
-			<Russian>Винтовка Мосина с Ремнем вФ</Russian>
+			<Russian>Винтовка Мосина с Ремнем ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_NAME">
 			<English>Mosin Nagant PU</English>
@@ -17030,7 +17071,7 @@
 		<Key ID="STR_DZ_WPN_MOSIN_PU_MFL_NAME">
 			<English>Mosin Nagant PU MFL</English>
 			<German>Mosin Nagant PU MTL</German>
-			<Russian>Винтовка Мосина ПР вФ</Russian>
+			<Russian>Винтовка Мосина ПР ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_NAME">
 			<English>Mosin Nagant PU Belt</English>
@@ -17045,11 +17086,11 @@
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_MFL_NAME">
 			<English>Mosin Nagant PU Belt MFL</English>
 			<German>Mosin Nagant PU Gurt MTL</German>
-			<Russian>Винтовка Мосина ПР с Ремнем вФ</Russian>
+			<Russian>Винтовка Мосина ПР с Ремнем ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_DESC">
 			<English>Bolt-action military rifle developed by the Imperial Russian Army in 1891.&lt;br/&gt;Caliber: 7.62x54mmR</English>
-			<Russian>Магазинная винтовка, принятая на вооружение Русской Императорской армии ВС России в 1891 году.</Russian>
+			<Russian>Магазинная винтовка, принятая на вооружение Русской Императорской армии в 1891 году.&lt;br/&gt;Калибр: 7.62x54ммR</Russian>
 			<German>Kammerverschluss Militär Gewehr entwickelt von der Imperialen Russischen Armee 1891.&lt;br/&gt;Kaliber: 7.62x54mmR</German>
 		</Key>
 
@@ -17066,7 +17107,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_MFL_NAME">
 			<English>Crossbow MFL</English>
-			<Russian>Арбалет вФ</Russian>
+			<Russian>Арбалет ВФ</Russian>
 			<German>Armbrust MTL</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_NAME">
@@ -17081,7 +17122,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_CCO_MFL_NAME">
 			<English>Crossbow CCO MFL</English>
-			<Russian>Арбалет CCO вФ</Russian>
+			<Russian>Арбалет CCO ВФ</Russian>
 			<German>Armbrust CCO MTL</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_NAME">
@@ -17096,7 +17137,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_CROSSBOW_SCOPE_MFL_NAME">
 			<English>Crossbow Scoped MFL</English>
-			<Russian>Арбалет ПР вФ</Russian>
+			<Russian>Арбалет ПР ВФ</Russian>
 			<German>Armbrust mit Zielfernrohr MTL</German>
 		</Key>
 
@@ -17132,11 +17173,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ75SP_SD_NAME">
 			<English>CZ 75SP SD</English>
+			<Russian>CZ 75SP ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ75_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19mm</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: 9x19mm</Russian>
 		</Key>
 
 		<!-- Scorpion Evo 3 -->
@@ -17148,6 +17190,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_SC_EVO3_CCO_SD_NAME">
 			<English>Scorpion Evo 3 CCO SD</English>
+			<Russian>Scorpion Evo 3 CCO ПБС</Russian>
 		</Key>
         <Key ID="STR_DZ_WPN_SC_EVO3_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
@@ -17156,7 +17199,7 @@
 			<Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm</Spanish>
 			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm</French>
 			<Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: 9x19мм</Russian>
+			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 9x19мм</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm </Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
         </Key>
@@ -17167,7 +17210,7 @@
 			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 9x19mm</Spanish>
 			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 9x19mm</French>
 			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Калибр: 9х19мм</Russian>
+			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 9х19мм</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
         </Key>
@@ -17178,30 +17221,33 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805A1_GL_NAME">
 			<English>CZ 805A1 ACOG GL</English>
+			<Russian>CZ 805A1 ACOG ПГ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805A2_NAME">
 			<English>CZ 805A2</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805A2_SD_NAME">
 			<English>CZ 805A2 CCO SD</English>
+			<Russian>CZ 805A2 CCO ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805B_NAME">
 			<English>CZ 805B1 ACOG GL</English>
+			<Russian>CZ 805B1 ACOG ПГ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805A_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 5.56x45mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 5.56x45mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805A_SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 5.56x45mm</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 5.56x45mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805B_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 
 		<!-- Rusty Weapons -->
@@ -17264,7 +17310,7 @@
 		<Key ID="STR_DZ_WPN_MP7_MFL_NAME">
 			<English>MP7 MFL</English>
 			<German>MP7 MTL</German>
-			<Russian>MP7 вФ</Russian>
+			<Russian>MP7 ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MP7_SD_NAME">
 			<English>MP7 SD</English>
@@ -17278,7 +17324,7 @@
 		<Key ID="STR_DZ_WPN_MP7_SD_MFL_NAME">
 			<English>MP7 SD MFL</English>
 			<German>MP7 SD MTL</German>
-			<Russian>MP7 ПБС вФ</Russian>
+			<Russian>MP7 ПБС ВФ</Russian>
 		</Key>
 		<!-- MP7 CCO-->
 		<Key ID="STR_DZ_WPN_MP7_CCO_NAME">
@@ -17292,7 +17338,7 @@
 		<Key ID="STR_DZ_WPN_MP7_CCO_MFL_NAME">
 			<English>MP7 CCO MFL</English>
 			<German>MP7 CCO MTL</German>
-			<Russian>MP7 CCO вФ</Russian>
+			<Russian>MP7 CCO ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MP7_CCO_SD_NAME">
 			<English>MP7 CCO SD</English>
@@ -17306,7 +17352,7 @@
 		<Key ID="STR_DZ_WPN_MP7_CCO_SD_MFL_NAME">
 			<English>MP7 CCO SD MFL</English>
 			<German>MP7 CCO SD MTL</German>
-			<Russian>MP7 CCO ПБС вФ</Russian>
+			<Russian>MP7 CCO ПБС ВФ</Russian>
 		</Key>
 		<!-- MP7 Holo -->
 		<Key ID="STR_DZ_WPN_MP7_HOLO_NAME">
@@ -17320,7 +17366,7 @@
 		<Key ID="STR_DZ_WPN_MP7_HOLO_MFL_NAME">
 			<English>MP7 Holo MFL</English>
 			<German>MP7 Holo MTL</German>
-			<Russian>MP7 Holo вФ</Russian>
+			<Russian>MP7 Holo ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MP7_HOLO_SD_NAME">
 			<English>MP7 Holo SD</English>
@@ -17334,7 +17380,7 @@
 		<Key ID="STR_DZ_WPN_MP7_HOLO_SD_MFL_NAME">
 			<English>MP7 Holo SD MFL</English>
 			<German>MP7 Holo SD MTL</German>
-			<Russian>MP7 Holo ПБС вФ</Russian>
+			<Russian>MP7 Holo ПБС ВФ</Russian>
 		</Key>
 		<!-- MP7 ACOG -->
 		<Key ID="STR_DZ_WPN_MP7_ACOG_NAME">
@@ -17348,7 +17394,7 @@
 		<Key ID="STR_DZ_WPN_MP7_ACOG_MFL_NAME">
 			<English>MP7 ACOG MFL</English>
 			<German>MP7 ACOG MTL</German>
-			<Russian>MP7 ACOG вФ</Russian>
+			<Russian>MP7 ACOG ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MP7_ACOG_SD_NAME">
 			<English>MP7 ACOG SD</English>
@@ -17362,7 +17408,7 @@
 		<Key ID="STR_DZ_WPN_MP7_ACOG_SD_MFL_NAME">
 			<English>MP7 ACOG SD MFL</English>
 			<German>MP7 ACOG SD MTL</German>
-			<Russian>MP7 ACOG ПБС вФ</Russian>
+			<Russian>MP7 ACOG ПБС ВФ</Russian>
 		</Key>
         <Key ID="STR_DZ_WPN_MP7_DESC">
 			<German>Maschinenpistole &lt;br/&gt;Kaliber: 4.6x30mm</German>
@@ -17371,7 +17417,7 @@
 			<Spanish>Metralleta  &lt;br/&gt;Calibre: 4.6x30mm</Spanish>
 			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 4.6x30mm</French>
 			<Czech>Samopal &lt;br/&gt;Kalibr: 4.6x30mm</Czech>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: 4.6x30мм</Russian>
+			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 4.6x30мм</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 4.6x30mm</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm</Hungarian>
         </Key>
@@ -17382,7 +17428,7 @@
 			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 4.6x30mm SD</Spanish>
 			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 4.6x30mm SD</French>
 			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 4.6x30mm SD</Czech>
-			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Калибр: 4.6x30мм SD</Russian>
+			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 4.6x30мм глуш.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 4.6x30mm SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 4.6x30mm SD</Hungarian>
         </Key>
@@ -17398,12 +17444,12 @@
 		<Key ID="STR_DZ_WPN_P99_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 10x22mm</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 10x22mm</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 10x22mm</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: 10x22mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_P99SD_DESC">
 			<English>Silenced Semi-automatic Pistol &lt;br/&gt;Caliber: 10x22mm SD</English>
 			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: 10x22mm SD</German>
-			<Russian>Бесшумный полуавтоматический пистолет &lt;br/&gt;Калибр: 10x22mm SD</Russian>
+			<Russian>Бесшумный полуавтоматический пистолет&lt;br/&gt;Калибр: 10x22mm глуш.</Russian>
 		</Key>
 
 		<!-- Famas -->
@@ -17433,32 +17479,32 @@
 		<Key ID="STR_DZ_WPN_ACR_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 6.80x43mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 6.80x43mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 6.80x43mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 6.80x43mm</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 6.80x43mm</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 6.80x43mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_NV_DESC">
 			<English>Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
 			<German>Sturmgewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Штурмовая винтовка с прибором ночного видения. &lt;br/&gt;Калибр: 6.80x43mm</Russian>
+			<Russian>Штурмовая винтовка с прибором ночного видения.&lt;br/&gt;Калибр: 6.80x43mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_NV_SD_DESC">
 			<English>Silenced Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
 			<German>Schallgedämpftes Sturmgewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Бесшумная штурмовая винтовка с прибором ночного видения. &lt;br/&gt;Калибр: 6.80x43mm</Russian>
+			<Russian>Бесшумная штурмовая винтовка с прибором ночного видения.&lt;br/&gt;Калибр: 6.80x43mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_TWS_DESC">
 			<English>Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
 			<German>Sturmgewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Штурмовая винтовка с тепловым прицелом. &lt;br/&gt;Калибр: 6.80x43mm</Russian>
+			<Russian>Штурмовая винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 6.80x43mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_TWS_SD_DESC">
 			<English>Silenced Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
 			<German>Schallgedämpftes Sturmgewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Бесшумная штурмовая винтовка с тепловым прицелом. &lt;br/&gt;Калибр: 6.80x43mm</Russian>
+			<Russian>Бесшумная штурмовая винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 6.80x43mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_NAME">
 			<English>ACR</English>
@@ -17560,12 +17606,12 @@
 		<Key ID="STR_DZ_WPN_RSASS_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RSASS_SD_DESC">
 			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Бесшумная снайперская винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RSASS_TWS_NAME">
 			<English>R11 RSASS TWS</English>
@@ -17578,12 +17624,12 @@
 		<Key ID="STR_DZ_WPN_RSASS_TWS_DESC">
 			<English>Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Снайперская винтовка с тепловым прицелом. &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RSASS_SD_TWS_DESC">
 			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Бесшумная снайперская винтовка с тепловым прицелом. &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 
 		<!-- MSR -->
@@ -17597,12 +17643,12 @@
 		<Key ID="STR_DZ_WPN_MSR_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: .338</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: .338</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_SD_DESC">
 			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .338</English>
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Бесшумная снайперская винтовка &lt;br/&gt;Калибр: .338</Russian>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_TWS_NAME">
 			<English>MSR TWS</English>
@@ -17615,12 +17661,12 @@
 		<Key ID="STR_DZ_WPN_MSR_TWS_DESC">
 			<English>Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .338</English>
 			<German>Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Снайперская винтовка с тепловым прицелом. &lt;br/&gt;Калибр: .338</Russian>
+			<Russian>Снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_SD_TWS_DESC">
 			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .338</English>
 			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Бесшумная снайперская винтовка с тепловым прицелом. &lt;br/&gt;Калибр: .338</Russian>
+			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_NV_NAME">
 			<English>MSR NV</English>
@@ -17633,12 +17679,12 @@
 		<Key ID="STR_DZ_WPN_MSR_NV_DESC">
 			<English>Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .338</English>
 			<German>Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Снайперская винтовка с прибором ночного видения. &lt;br/&gt;Калибр: .338</Russian>
+			<Russian>Снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_SD_NV_DESC">
 			<English>Silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .338</English>
 			<German>Schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Бесшумная снайперская винтовка с прибором ночного видения. &lt;br/&gt;Калибр: .338</Russian>
+			<Russian>Бесшумная снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 
 		<!-- XM2010 -->
@@ -17652,12 +17698,12 @@
 		<Key ID="STR_DZ_WPN_XM2010_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: .300</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: .300</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_SD_DESC">
 			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .300</English>
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Бесшумная снайперская винтовка &lt;br/&gt;Калибр: .300</Russian>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_TWS_NAME">
 			<English>XM2010 TWS</English>
@@ -17670,12 +17716,12 @@
 		<Key ID="STR_DZ_WPN_XM2010_TWS_DESC">
 			<English>Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .300</English>
 			<German>Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Снайперская винтовка с тепловым прицелом. &lt;br/&gt;Калибр: .300</Russian>
+			<Russian>Снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_SD_TWS_DESC">
 			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .300</English>
 			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Бесшумная снайперская винтовка с тепловым прицелом. &lt;br/&gt;Калибр: .300</Russian>
+			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_NV_NAME">
 			<English>XM2010 NV</English>
@@ -17688,12 +17734,12 @@
 		<Key ID="STR_DZ_WPN_XM2010_NV_DESC">
 			<English>Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .300</English>
 			<German>Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Снайперская винтовка с прибором ночного видения. &lt;br/&gt;Калибр: .300</Russian>
+			<Russian>Снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_SD_NV_DESC">
 			<English>Silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .300</English>
 			<German>Schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Бесшумная снайперская винтовка с прибором ночного видения. &lt;br/&gt;Калибр: .300</Russian>
+			<Russian>Бесшумная снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 
 		<!-- KAC PDW -->
@@ -17712,7 +17758,7 @@
 		<Key ID="STR_DZ_WPN_KACPDW_DESC">
 			<English>Short barrel rifle &lt;br/&gt;Caliber: 6x35mm</English>
 			<German>Kurzlaufgewehr &lt;br/&gt;Kaliber: 6x35mm</German>
-			<Russian>Малогабаритная штурмовая винтовка &lt;br/&gt;Калибр: 6x35mm</Russian>
+			<Russian>Малогабаритная штурмовая винтовка&lt;br/&gt;Калибр: 6x35mm</Russian>
 		</Key>
 
 		<!-- M1A SOCOM -->
@@ -17755,12 +17801,12 @@
 		<Key ID="STR_DZ_WPN_M1ASC16_DESC">
 			<English>Semi-automatic rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Halbautomatisches Gewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Полуавтоматическая винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Полуавтоматическая винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M1ASC2_DESC">
 			<English>Semi-automatic rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Halbautomatisches Gewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Полуавтоматическая винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Полуавтоматическая винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M21_NAME">
 			<English>M21 SWS</English>
@@ -17775,12 +17821,12 @@
 		<Key ID="STR_DZ_WPN_M21_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M21SD_DESC">
 			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
-			<Russian>Бесшумная снайперская винтовка &lt;br/&gt;Калибр: 7.62x51mm ПБС</Russian>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: 7.62x51mm глуш.</Russian>
 		</Key>
 
 		<!-- Colts -->
@@ -17819,7 +17865,7 @@
 		<Key ID="STR_DZ_WPN_BROWNING_HP_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
 		</Key>
 
 		<!-- SIG Sauer P226 -->
@@ -17829,7 +17875,7 @@
 		<Key ID="STR_DZ_WPN_P226_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
 		</Key>
 
 		<!-- Walther P38 -->
@@ -17839,7 +17885,7 @@
 		<Key ID="STR_DZ_WPN_P38_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
 		</Key>
 
 		<!-- Walther PPK -->
@@ -17849,7 +17895,7 @@
 		<Key ID="STR_DZ_WPN_PPK_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .380 ACP</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .380 ACP</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: .380 ACP</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: .380 ACP</Russian>
 		</Key>
 
 		<!-- Mk 22 Mod 0 -->
@@ -17859,7 +17905,7 @@
 		<Key ID="STR_DZ_WPN_MK22_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK22SD_NAME">
 			<English>Mk 22 Mod 0 SD</English>
@@ -17868,7 +17914,7 @@
 		<Key ID="STR_DZ_WPN_MK22SD_DESC">
 			<English>Silenced semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum SD</English>
 			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum SD</German>
-			<Russian>Бесшумный полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19mm Parabellum ПБС</Russian>
+			<Russian>Бесшумный полуавтоматический пистолет&lt;br/&gt;Калибр: 9x19mm Parabellum глуш.</Russian>
 		</Key>
 
 		<!-- USP -->
@@ -17878,7 +17924,7 @@
 		<Key ID="STR_DZ_WPN_USP_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .45 ACP</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: .45 ACP</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: .45 ACP</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_USPSD_NAME">
 			<English>USP SD</English>
@@ -17887,7 +17933,7 @@
 		<Key ID="STR_DZ_WPN_USPSD_DESC">
 			<English>Silenced semi-automatic Pistol &lt;br/&gt;Caliber: .45 ACP SD</English>
 			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
-			<Russian>Бесшумный полуавтоматический пистолет &lt;br/&gt;Калибр: .45 ACP ПБС</Russian>
+			<Russian>Бесшумный полуавтоматический пистолет&lt;br/&gt;Калибр: .45 ACP глуш.</Russian>
 		</Key>
 
 		<!-- Kimber 1911 -->
@@ -17897,7 +17943,7 @@
 		<Key ID="STR_DZ_WPN_KIMBER1911_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .45 ACP</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: .45 ACP</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: .45 ACP</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_KIMBER1911SD_NAME">
 			<English>Kimber M1911 SD</English>
@@ -17906,7 +17952,7 @@
 		<Key ID="STR_DZ_WPN_KIMBER1911SD_DESC">
 			<English>Silenced semi-automatic Pistol &lt;br/&gt;Caliber: .45 ACP SD</English>
 			<German>Schallgedämpfte halbautomatische Pistole &lt;br/&gt;Kaliber: .45 ACP SD</German>
-			<Russian>Бесшумный полуавтоматический пистолет &lt;br/&gt;Калибр: .45 ACP ПБС</Russian>
+			<Russian>Бесшумный полуавтоматический пистолет&lt;br/&gt;Калибр: .45 ACP глуш.</Russian>
 		</Key>
 
 		<!-- Tokarew TT-33 -->
@@ -17917,7 +17963,7 @@
 		<Key ID="STR_DZ_WPN_TT33_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 7.62x25mm</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: 7.62x25mm</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 7.62x25mm</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: 7.62x25mm</Russian>
 		</Key>
 
 		<!-- Ruger MK2 -->
@@ -17927,7 +17973,7 @@
 		<Key ID="STR_DZ_WPN_RUGERMK2_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .22</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .22</German>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: .22</Russian>
+			<Russian>Полуавтоматический пистолет&lt;br/&gt;Калибр: .22</Russian>
 		</Key>
 
 		<!-- M93R -->
@@ -17937,7 +17983,7 @@
 		<Key ID="STR_DZ_WPN_M93R_DESC">
 			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
-			<Russian>Автоматический пистолет &lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
+			<Russian>Автоматический пистолет&lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
 		</Key>
 
 		<!-- Glock 18 -->
@@ -17947,7 +17993,7 @@
 		<Key ID="STR_DZ_WPN_G18_DESC">
 			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
-			<Russian>Автоматический пистолет &lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
+			<Russian>Автоматический пистолет&lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
 		</Key>
 
 		<!-- Tec-9 -->
@@ -17957,7 +18003,7 @@
 		<Key ID="STR_DZ_WPN_TEC9_DESC">
 			<English>Automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>
 			<German>Automatische Pistole &lt;br/&gt;Kaliber: 9x19mm Parabellum</German>
-			<Russian>Автоматический пистолет &lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
+			<Russian>Автоматический пистолет&lt;br/&gt;Калибр: 9x19mm Parabellum</Russian>
 		</Key>
 
 		<!-- Anzio 20mm -->
@@ -17978,7 +18024,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_MG36_CAMO_NAME">
 			<English>MG36 Camo</English>
-			<Russian>MG36 (камуфляж)</Russian>
+			<Russian>MG36 (Камуфляж)</Russian>
 			<German>MG36 Tarn</German>
 		</Key>
 
@@ -18033,7 +18079,7 @@
 			<Spanish>Metralleta  &lt;br/&gt;Calibre: .45 ACP</Spanish>
 			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: .45 ACP</French>
 			<Czech>Samopal &lt;br/&gt;Kalibr: .45 ACP</Czech>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: .45 ACP</Russian>
+			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: .45 ACP</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
         </Key>
@@ -18044,7 +18090,7 @@
 			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: .45 ACP SD</Spanish>
 			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: .45 ACP SD</French>
 			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: .45 ACP SD</Czech>
-			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Калибр: .45 ACP SD</Russian>
+			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: .45 ACP глуш.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
         </Key>
@@ -18106,7 +18152,7 @@
 			<Spanish>Metralleta  &lt;br/&gt;Calibre: .45 ACP</Spanish>
 			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: .45 ACP</French>
 			<Czech>Samopal &lt;br/&gt;Kalibr: .45 ACP</Czech>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: .45 ACP</Russian>
+			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: .45 ACP</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: .45 ACP</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: .45 ACP</Hungarian>
         </Key>
@@ -18117,7 +18163,7 @@
 			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: .45 ACP SD</Spanish>
 			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: .45 ACP SD</French>
 			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: .45 ACP SD</Czech>
-			<Russian>Пистолет-пулемет с ПБС  &lt;br/&gt;Калибр: .45 ACP SD</Russian>
+			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: .45 ACP глуш.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: .45 ACP SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: .45 ACP SD</Hungarian>
         </Key>
@@ -18162,7 +18208,7 @@
 			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 5.7x28mm SD</Spanish>
 			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 5.7x28mm SD</French>
 			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 5.7x28mm SD</Czech>
-			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 5.7x28mm SD</Russian>
+			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 5.7x28mm глуш.</Russian>
 			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 5.7x28mm SD </Polish>
 			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 5.7x28mm SD</Hungarian>
         </Key>
@@ -18382,12 +18428,12 @@
 		<Key ID="STR_DZ_WPN_APSSD_DESC">
 			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x18mm SD</English>
 			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x18mm SD</German>
-			<Russian>Бесшумный автоматический пистолет &lt;br/&gt;Калибр: 9x18mm ПБС</Russian>
+			<Russian>Бесшумный автоматический пистолет&lt;br/&gt;Калибр: 9x18мм глуш.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_APS_DESC">
 			<English>Selective-fire machine Pistol &lt;br/&gt;Caliber: 9x18mm</English>
 			<German>Reihenfeuerpistole &lt;br/&gt;Kaliber: 9x18mm</German>
-			<Russian>Автоматический пистолет &lt;br/&gt;Калибр: 9x18mm</Russian>
+			<Russian>Автоматический пистолет&lt;br/&gt;Калибр: 9x18мм</Russian>
 		</Key>
 
 		<!-- RK95 -->
@@ -18415,7 +18461,7 @@
 		<Key ID="STR_DZ_WPN_RK95_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm SD</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm SD</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 7.62x39mm ПБС</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 7.62x39mm глуш.</Russian>
 		</Key>
 
 		<!-- Groza9 -->
@@ -18446,12 +18492,12 @@
 		<Key ID="STR_DZ_WPN_Groza9_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 9x39mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 9x39mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 9x39mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_Groza9SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 9x39mm SD</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm SD</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 9x39mm ПБС</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 9x39mm глуш.</Russian>
 		</Key>
 
 		<!-- Groza1 -->
@@ -18474,12 +18520,12 @@
 		<Key ID="STR_DZ_WPN_Groza1_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7.62x39mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 7.62x39mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_Groza1SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm SD</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm SD</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 7.62x39mm ПБС</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 7.62x39mm глуш.</Russian>
 		</Key>
 
 		<!-- AS VAL -->
@@ -18498,7 +18544,7 @@
 		<Key ID="STR_DZ_WPN_ASVAL_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 9x39mm</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 9x39mm</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 9x39mm</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 9x39mm</Russian>
 		</Key>
 
 		<!-- MK14 -->
@@ -18540,7 +18586,7 @@
 		<Key ID="STR_DZ_WPN_MK14SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 
 		<!-- MK16 -->
@@ -18595,12 +18641,12 @@
 		<Key ID="STR_DZ_WPN_MK16_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 5.56x45mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 5.56x45mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK16SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm SD</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm SD</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 5.56x45mm ПБС</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 5.56x45mm глуш.</Russian>
 		</Key>
 
 		<!-- MK17 -->
@@ -18651,22 +18697,22 @@
 		<Key ID="STR_DZ_WPN_MK17_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK17SD_DESC">
 			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
 			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
-			<Russian>Бесшумная штурмовая винтовка &lt;br/&gt;Калибр: 7.62x51mm ПБС</Russian>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51mm дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK17_SNIPER_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK17SD_SNIPER_DESC">
 			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Бесшумная снайперская винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 
 		<!-- SCAR-H AK -->
@@ -18685,7 +18731,7 @@
 		<Key ID="STR_DZ_WPN_SCARAK_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x39mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x39mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7.62x39mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 7.62x39mm</Russian>
 		</Key>
 
 		<!-- XM8 -->
@@ -18717,7 +18763,7 @@
 		<Key ID="STR_DZ_WPN_M110_NV_DESC">
 			<English>Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Снайперская винтовка с прибором ночного видения. &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 
 		<!-- Mk43 -->
@@ -18756,7 +18802,7 @@
 		<Key ID="STR_DZ_WPN_AUGA3_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 5.56x45mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 5.56x45mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M200_CHEYTAC_NAME">
 			<English>M200 Chey Tac</English>
@@ -18764,15 +18810,16 @@
 		<Key ID="STR_DZ_WPN_M200_CHEYTAC_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac</German>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: .408 Chey Tac</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: .408 Chey Tac</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M200_CHEYTAC_SD_NAME">
 			<English>M200 Chey Tac SD</English>
+			<Russian>M200 Chey Tac ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M200_CHEYTAC_SD_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac SD</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac SD</German>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: .408 Chey Tac SD</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: .408 Chey Tac дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_WA2000_NAME">
 			<English>WA2000</English>
@@ -18780,7 +18827,7 @@
 		<Key ID="STR_DZ_WPN_WA2000_DESC">
 			<English>Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_BARETT_MRAD_IRON_NAME">
 			<English>Barrett MRAD</English>
@@ -18793,7 +18840,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_BARETT_MRAD_DESC">
 			<English>Sniper rifle &lt;br/&gt;Caliber: .338 Lapua Magnum</English>
-			<Russian>Снайперская винтовка &lt;br/&gt;Калибр: .338 Lapua Magnum</Russian>
+			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: .338 Lapua Magnum</Russian>
 			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .338 Lapua Magnum</German>
 		</Key>
 
@@ -18808,7 +18855,7 @@
 			<Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm Parabellum</Spanish>
 			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm Parabellum</French>
 			<Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm Parabellum</Czech>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
+			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
         </Key>
@@ -18820,7 +18867,7 @@
         <Key ID="STR_DZ_WPN_G3_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 7.62x51mm</Russian>
+			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51mm</Russian>
 		</Key>
 
 		<!-- MAT 49 -->
@@ -18834,7 +18881,7 @@
 			<Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm Parabellum</Spanish>
 			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm Parabellum</French>
 			<Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm Parabellum</Czech>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
+			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
         </Key>
@@ -18850,7 +18897,7 @@
 			<Spanish>Metralleta  &lt;br/&gt;Calibre: 9x19mm Parabellum</Spanish>
 			<French>Pistolet-mitrailleur &lt;br/&gt;Calibre: 9x19mm Parabellum</French>
 			<Czech>Samopal &lt;br/&gt;Kalibr: 9x19mm Parabellum</Czech>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
+			<Russian>Пистолет-пулемет&lt;br/&gt;Калибр: 9x19мм Parabellum</Russian>
 			<Polish>Pistolet maszynowy  &lt;br/&gt;Kaliber: 9x19mm Parabellum</Polish>
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm Parabellum</Hungarian>
         </Key>
@@ -18862,7 +18909,7 @@
         <Key ID="STR_DZ_WPN_USAS12_DESC">
 			<English>Automatic Shotgun &lt;br/&gt;Caliber: Caliber 12</English>
 			<German>Selbstladeschrotflinte &lt;br/&gt;Kaliber: Kaliber 12</German>
-			<Russian>Автоматический дробовик &lt;br/&gt;Калибр: 12к</Russian>
+			<Russian>Автоматический дробовик&lt;br/&gt;Калибр: 12к</Russian>
       </Key>
 
 		<!-- Desert Eagle -->
@@ -18871,10 +18918,12 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_GOLD_NAME">
 			<English>Desert Eagle Gold</English>
+			<Russian>Desert Eagle Золотой</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_SILVER_NAME">
 			<English>Desert Eagle Silver</English>
 			<German>Desert Eagle Silber</German>
+			<Russian>Desert Eagle Серебряный</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_DESERT_EAGLE_MODERN_NAME">
 			<English>Desert Eagle Modern</English>
@@ -18882,7 +18931,7 @@
         <Key ID="STR_DZ_WPN_DESERT_EAGLE_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: .50 AE</English>
 			<German>Halbautomatische Pistole &lt;br/&gt;Kaliber: .50 AE</German>
-			<Russian>Полувтоматический пистолет &lt;br/&gt;Калибр: .50 AE</Russian>
+			<Russian>Полувтоматический пистолет&lt;br/&gt;Калибр: .50 AE</Russian>
       </Key>
 
 		<!-- Colt Revolver -->
@@ -18892,11 +18941,12 @@
         <Key ID="STR_DZ_WPN_COLT_REVOLVER_DESC">
 			<English>Revolver &lt;br/&gt;Caliber: .45 ACP</English>
 			<German>Revolver &lt;br/&gt;Kaliber: .45 ACP</German>
-			<Russian>Револьвер &lt;br/&gt;Калибр: .45 ACP</Russian>
+			<Russian>Револьвер&lt;br/&gt;Калибр: .45 ACP</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_WPN_SA61_NAME">
 			<English>Sa-61 Škorpión</English>
+			<Russian>Sa-61 Скорпион</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_WPN_SIDE_M60_NAME">
@@ -18905,10 +18955,12 @@
 		<Key ID="STR_DZ_WPN_DUAL_M60_NAME">
 			<English>Twin M60</English>
 			<German>Zwillings-M60</German>
+			<Russian>M60 сдвоенный</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_DUAL_M134_NAME">
 			<English>Twin M134</English>
 			<German>Zwillings-M134</German>
+			<Russian>M134 сдвоенный</Russian>
 		</Key>
 
 		<!-- **** MAGAZINES **** -->
@@ -20345,7 +20397,7 @@
         </Key>
 		<Key ID="STR_DZ_MAG_5RND_408_CHEYTAC_SD_NAME">
 			<English>5Rnd. Chey Tac SD mag.</English>
-			<Russian>5п. Chey Tac SD маг.</Russian>
+			<Russian>5п. Chey Tac дозвук. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_CHEYTAC_SD_DESC">
 			<German>Kaliber: .408 Chey Tac SD &lt;br/&gt;Patronen: 5 &lt;br/&gt;Verwendet in: M200 Chey Tac SD</German>
@@ -20354,7 +20406,7 @@
 			<Spanish>Calibre: .408 Chey Tac SD &lt;br/&gt;Cargas: 5 &lt;br/&gt;Uso: M200 Chey Tac SD</Spanish>
 			<French>Calibre: .408 Chey Tac SD &lt;br/&gt;Munitions: 5 &lt;br/&gt;Utilisé avec: M200 Chey Tac SD</French>
 			<Czech>Kalibr: .408 Chey Tac SD &lt;br/&gt;Nábojů: 5 &lt;br/&gt;Pro: M200 Chey Tac SD</Czech>
-			<Russian>Калибр: .408 Chey Tac SD &lt;br/&gt;Количество: 5 &lt;br/&gt;Используется в: M200 Chey Tac SD</Russian>
+			<Russian>Калибр: .408 Chey Tac дозвук.&lt;br/&gt;Количество: 5&lt;br/&gt;Используется в: M200 Chey Tac ПБС</Russian>
 			<Polish>Kaliber: .408 Chey Tac SD &lt;br/&gt;Naboje: 5 &lt;br/&gt;Używane w: M200 Chey Tac SD</Polish>
 			<Hungarian>Kaliber: .408 Chey Tac SD &lt;br/&gt; Töltények: 5 &lt;br/&gt; Hozzá tartozó fegyver: M200 Chey Tac SD</Hungarian>
         </Key>
