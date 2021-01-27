@@ -121,6 +121,14 @@ class SteyrAug_A3_ACOG_Green_DZ: SteyrAug_A3_Green_DZ {
 	{
 		Attachment_M203 = "SteyrAug_A3_ACOG_GL_Green_DZ";
 	};	
+	class ItemActions
+	{
+		class RemoveACOG
+		{
+			text = $STR_DZ_ATT_ACOG_RMVE;
+			script = "; ['Attachment_ACOG',_id,'SteyrAug_A3_Green_DZ'] call player_removeAttachment";
+		};
+	};	
 };
 
 class SteyrAug_A3_ACOG_Black_DZ: SteyrAug_A3_ACOG_Green_DZ {
@@ -131,6 +139,14 @@ class SteyrAug_A3_ACOG_Black_DZ: SteyrAug_A3_ACOG_Green_DZ {
 	{
 		Attachment_M203 = "SteyrAug_A3_ACOG_GL_Black_DZ";
 	};
+	class ItemActions
+	{
+		class RemoveACOG
+		{
+			text = $STR_DZ_ATT_ACOG_RMVE;
+			script = "; ['Attachment_ACOG',_id,'SteyrAug_A3_Black_DZ'] call player_removeAttachment";
+		};
+	};	
 };
 class SteyrAug_A3_ACOG_Blue_DZ: SteyrAug_A3_ACOG_Green_DZ {
 	model = "\MIDF_Weapons\Aug_a3\Aug_a3_acog_blue.p3d";
@@ -140,6 +156,14 @@ class SteyrAug_A3_ACOG_Blue_DZ: SteyrAug_A3_ACOG_Green_DZ {
 	{
 		Attachment_M203 = "SteyrAug_A3_ACOG_GL_Blue_DZ";
 	};
+	class ItemActions
+	{
+		class RemoveACOG
+		{
+			text = $STR_DZ_ATT_ACOG_RMVE;
+			script = "; ['Attachment_ACOG',_id,'SteyrAug_A3_Blue_DZ'] call player_removeAttachment";
+		};
+	};	
 };
 
 class SteyrAug_A3_Holo_Green_DZ: SteyrAug_A3_base {
@@ -151,7 +175,15 @@ class SteyrAug_A3_Holo_Green_DZ: SteyrAug_A3_base {
 	class Attachments
 	{
 		Attachment_M203 = "SteyrAug_A3_Holo_GL_Green_DZ";
-	};		
+	};	
+	class ItemActions
+	{
+		class RemoveHolo
+		{
+			text = $STR_DZ_ATT_HOLO_RMVE;
+			script = "; ['Attachment_Holo',_id,'SteyrAug_A3_Green_DZ'] call player_removeAttachment";
+		};
+	};	
 };
 class SteyrAug_A3_Holo_Black_DZ: SteyrAug_A3_Holo_Green_DZ {
 	model = "\MIDF_Weapons\Aug_a3\Aug_a3_eotech_black.p3d";
@@ -160,6 +192,14 @@ class SteyrAug_A3_Holo_Black_DZ: SteyrAug_A3_Holo_Green_DZ {
 	class Attachments
 	{
 		Attachment_M203 = "SteyrAug_A3_Holo_GL_Black_DZ";
+	};
+	class ItemActions
+	{
+		class RemoveHolo
+		{
+			text = $STR_DZ_ATT_HOLO_RMVE;
+			script = "; ['Attachment_Holo',_id,'SteyrAug_A3_Black_DZ'] call player_removeAttachment";
+		};
 	};	
 };
 class SteyrAug_A3_Holo_Blue_DZ: SteyrAug_A3_Holo_Green_DZ {
@@ -169,6 +209,14 @@ class SteyrAug_A3_Holo_Blue_DZ: SteyrAug_A3_Holo_Green_DZ {
 	class Attachments
 	{
 		Attachment_M203 = "SteyrAug_A3_Holo_GL_Blue_DZ";
+	};	
+	class ItemActions
+	{
+		class RemoveHolo
+		{
+			text = $STR_DZ_ATT_HOLO_RMVE;
+			script = "; ['Attachment_Holo',_id,'SteyrAug_A3_Blue_DZ'] call player_removeAttachment";
+		};
 	};	
 };
 
@@ -234,6 +282,11 @@ class SteyrAug_A3_ACOG_GL_Green_DZ: SteyrAug_A3_ACOG_Green_DZ {
 			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'SteyrAug_A3_ACOG_Green_DZ'] call player_removeAttachment";
 		};
+		class RemoveACOG
+		{
+			text = $STR_DZ_ATT_ACOG_RMVE;
+			script = "; ['Attachment_ACOG',_id,'SteyrAug_A3_GL_Green_DZ'] call player_removeAttachment";
+		};		
 	};		
 };
 class SteyrAug_A3_ACOG_GL_Black_DZ: SteyrAug_A3_ACOG_GL_Green_DZ {
@@ -246,6 +299,11 @@ class SteyrAug_A3_ACOG_GL_Black_DZ: SteyrAug_A3_ACOG_GL_Green_DZ {
 		{
 			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'SteyrAug_A3_ACOG_Black_DZ'] call player_removeAttachment";
+		};
+		class RemoveACOG
+		{
+			text = $STR_DZ_ATT_ACOG_RMVE;
+			script = "; ['Attachment_ACOG',_id,'SteyrAug_A3_GL_Black_DZ'] call player_removeAttachment";
 		};
 	};	
 };
@@ -260,6 +318,11 @@ class SteyrAug_A3_ACOG_GL_Blue_DZ: SteyrAug_A3_ACOG_GL_Green_DZ {
 			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'SteyrAug_A3_ACOG_Blue_DZ'] call player_removeAttachment";
 		};
+		class RemoveACOG
+		{
+			text = $STR_DZ_ATT_ACOG_RMVE;
+			script = "; ['Attachment_ACOG',_id,'SteyrAug_A3_GL_Blue_DZ'] call player_removeAttachment";
+		};
 	};	
 };
 
@@ -270,6 +333,7 @@ class SteyrAug_A3_Holo_GL_Green_DZ: SteyrAug_A3_base {
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_eotech_gl.p3d";
 	muzzles[] = {this, M203Muzzle};
 	handAnim[] = {"OFP2_ManSkeleton","\MIDF_Weapons\data\anim\A3_GL.rtm"};
+	class Attachments {};
 	
 	class ItemActions
 	{
@@ -278,9 +342,14 @@ class SteyrAug_A3_Holo_GL_Green_DZ: SteyrAug_A3_base {
 			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'SteyrAug_A3_Holo_Green_DZ'] call player_removeAttachment";
 		};
+		class RemoveHolo
+		{
+			text = $STR_DZ_ATT_HOLO_RMVE;
+			script = "; ['Attachment_Holo',_id,'SteyrAug_A3_GL_Green_DZ'] call player_removeAttachment";
+		};
 	};		
 };
-class SteyrAug_A3_Holo_GL_Black_DZ: SteyrAug_A3_Holo_Green_DZ {
+class SteyrAug_A3_Holo_GL_Black_DZ: SteyrAug_A3_Holo_GL_Green_DZ {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_eotech_gl_black.paa";
 	model = "\MIDF_Weapons\Aug_a3\aug_a3_eotech_gl_black.p3d";
 	
@@ -291,11 +360,16 @@ class SteyrAug_A3_Holo_GL_Black_DZ: SteyrAug_A3_Holo_Green_DZ {
 			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'SteyrAug_A3_Holo_Black_DZ'] call player_removeAttachment";
 		};
+		class RemoveHolo
+		{
+			text = $STR_DZ_ATT_HOLO_RMVE;
+			script = "; ['Attachment_Holo',_id,'SteyrAug_A3_GL_Black_DZ'] call player_removeAttachment";
+		};
 	};		
 };
-class SteyrAug_A3_Holo_GL_Blue_DZ: SteyrAug_A3_Holo_Green_DZ {
+class SteyrAug_A3_Holo_GL_Blue_DZ: SteyrAug_A3_Holo_GL_Green_DZ {
 	picture = "\MIDF_Weapons\Aug_a3\pictures\aug_a3_eotech_gl_blue.paa";
-	model = "\MIDF_Weapons\Aug_a3\aug_a3_eotech_gl_blue.p3d";
+	model = "\MIDF_Weapons\Aug_a3\aug_a3_eotech_gl_blue.p3d";	
 	
 	class ItemActions
 	{
@@ -303,6 +377,11 @@ class SteyrAug_A3_Holo_GL_Blue_DZ: SteyrAug_A3_Holo_Green_DZ {
 		{
 			text = $STR_DZ_ATT_M203_RMVE;
 			script = "; ['Attachment_M203',_id,'SteyrAug_A3_Holo_Blue_DZ'] call player_removeAttachment";
+		};
+		class RemoveHolo
+		{
+			text = $STR_DZ_ATT_HOLO_RMVE;
+			script = "; ['Attachment_Holo',_id,'SteyrAug_A3_GL_Blue_DZ'] call player_removeAttachment";
 		};
 	};	
 };

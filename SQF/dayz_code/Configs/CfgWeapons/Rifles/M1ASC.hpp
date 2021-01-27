@@ -183,6 +183,7 @@ class M1A_SC16_BL_Sniper_DZ: M1A_SC16_BL_DZ
 	distanceZoomMin = 329;
 	distanceZoomMax = 329;
 	optics = 1;
+	class Attachments {};
 };
 
 class M1A_SC16_TAN_DZ: M14_EP1
@@ -334,6 +335,7 @@ class M1A_SC16_TAN_Sniper_DZ: M1A_SC16_TAN_DZ
 	distanceZoomMin = 329;
 	distanceZoomMax = 329;
 	optics = 1;
+	class Attachments {};
 };
 
 class M1A_SC2_BL_DZ: M14_EP1
@@ -483,6 +485,7 @@ class M1A_SC2_BL_Sniper_DZ: M1A_SC2_BL_DZ
 	distanceZoomMin = 329;
 	distanceZoomMax = 329;
 	optics = 1;
+	class Attachments {};
 };
 
 #undef M1A_ACOG
