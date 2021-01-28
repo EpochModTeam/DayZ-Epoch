@@ -13,7 +13,7 @@
 1=(SmallSecondary|HelicopterExplo(Small|Big)) // log explosions (optional)
 1=(PipeBomb|Grenade(_|HandTimed)(West|East)) // log grenades (optional)
 5 (_ied|_CRV7|_MEEWS|B_|_YakB|_acr|MASH_) !="R_MEEWS_HEAT" !=z_soldier_acr_rifle[12] !=CZ_(Soldier_(805|Crew|Officer|Recon|Spec([123]|_Demo)|Sniper|Light)(|_Wdl|_Dst)|Soldier805_DES)_ACR_DZ
-1 "Land_" !="Land_coneLight" !=Land_(HBarrier1|HBarrier3|HBarrier5|Fire)_DZ !=Land_(fortified_nest_small|HBarrier1|HBarrier3e|HBarrier5)Preview !=Land_DZE_(WoodDoor|LargeWoodDoor|GarageWoodDoor|WoodDoorLocked|LargeWoodDoorLocked|GarageWoodDoorLocked|WoodGate|WoodGateLocked|WoodOpenTopGarageDoor|WoodOpenTopGarageLocked)
+5 "Land_" !="Land_coneLight" !=Land_(HBarrier1|HBarrier3|HBarrier5|Fire)_DZ !=Land_(fortified_nest_small|HBarrier1|HBarrier3e|HBarrier5)Preview !=Land_DZE_(WoodDoor|LargeWoodDoor|GarageWoodDoor|WoodDoorLocked|LargeWoodDoorLocked|GarageWoodDoorLocked|WoodGate|WoodGateLocked|WoodOpenTopGarageDoor|WoodOpenTopGarageLocked)
 5 "Nest_" !="M240Nest_DZ" !="SandNest_DZ" !="Land_fortified_nest_smallPreview" !="WarfareBMGNest_Preview"
 5 "Fort_" !="Fort_RazorWire" !="Fort_RazorWirePreview"
 5 (BasicWeapons|SpecialWeapons|_uav)
