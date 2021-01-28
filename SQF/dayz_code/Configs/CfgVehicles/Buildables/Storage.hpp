@@ -91,6 +91,28 @@ class StorageShed_DZ: Land_Shed_M01
 	constructioncount = 6;
 	GhostPreview = "StorageShed_Preview_DZ";	
 	
+	class UserActions
+	{
+		class CloseDoor
+		{
+			position = "";
+			displayName = $STR_DN_OUT_C_DOOR;
+			radius = 4;
+			onlyForPlayer = 1;
+			condition = "this animationPhase 'open' == 1";
+			statement = "this animate ['open', 0];";
+		};
+		class OpenDoor
+		{
+			position = "";
+			displayName = $STR_DN_OUT_O_DOOR;
+			radius = 4;
+			onlyForPlayer = 1;
+			condition = "this animationPhase 'open' == 0";
+			statement = "this animate ['open', 1];";
+		};
+	};
+	
 	upgradeBuilding[] = {"StorageShed2_DZ",{"ItemToolbox","ItemCrowbar","ItemSledge"},{{"equip_metal_sheet",4},{"ItemMetalSheet",2},{"ItemScrews",2}}};	
 };
 class StorageShed2_DZ: Land_Shed_M01
@@ -105,6 +127,28 @@ class StorageShed2_DZ: Land_Shed_M01
 	transportMaxBackpacks = 30;
 	constructioncount = 12;
 	GhostPreview = "StorageShed_Preview_DZ";	
+	
+	class UserActions
+	{
+		class CloseDoor
+		{
+			position = "";
+			displayName = $STR_DN_OUT_C_DOOR;
+			radius = 4;
+			onlyForPlayer = 1;
+			condition = "this animationPhase 'open' == 1";
+			statement = "this animate ['open', 0];";
+		};
+		class OpenDoor
+		{
+			position = "";
+			displayName = $STR_DN_OUT_O_DOOR;
+			radius = 4;
+			onlyForPlayer = 1;
+			condition = "this animationPhase 'open' == 0";
+			statement = "this animate ['open', 1];";
+		};
+	};	
 };
 
 class Land_kulna;
