@@ -1,5 +1,5 @@
 //new
-1 "" !="VaultStorageLocked" !="LockboxStorageLocked" !="Hedgehog_DZ" !="Sandbag1_DZ" !="Fort_RazorWire" !="WoodGate_DZ" !="Land_HBarrier1_DZ"
+1 "" !"VaultStorageLocked" !"LockboxStorageLocked" !"Generator_DZ" !"Hedgehog_DZ" !"Sandbag1_DZ" !"Fort_RazorWirePreview" !"WoodGate_DZ" !"Land_HBarrier1_DZ" !"TallSafeLocked" !"LockboxStorageWinterLocked" !"LockboxStorage2Locked" !"LockboxStorageWinter2Locked" !"VaultStorage2Locked" !"Server_Rack" !"Sign_sphere10cm_EP1"
 5 "Ikarus"
 5 "UH1H_DZE"
 5 "Mi17_Civilian_DZ"
@@ -17,5 +17,6 @@
 5 "MTVR_DES_EP1"
 5 "V3S_Civ"
 5 "Parachute"
-5 "VaultStorage" !"VaultStorageLocked"
-5 "LockboxStorage" !"LockboxStorageLocked"
+5 "VaultStorage" !"VaultStorageLocked" !"VaultStorage2Locked"
+5 "LockboxStorage" !"LockboxStorageLocked" !"LockboxStorageWinterLocked" !"LockboxStorage2Locked" !"LockboxStorageWinter2Locked"
+5 "TallSafe" !"TallSafeLocked"
