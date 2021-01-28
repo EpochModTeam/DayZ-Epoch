@@ -258,7 +258,7 @@
 5 player_zombiecheck
 5 r_player_removeactions2
 5 PVDZ_
-1 server_ !"\"server_rack_kit\""
+5 server_ !"\"server_rack_kit\""
 5 stream_locationcheck
 5 stream_locationdel
 5 stream_locationfill
