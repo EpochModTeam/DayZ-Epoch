@@ -105,7 +105,9 @@ class SnapBuilding {
 			"Door_DZ",
 			"DoorLocked_DZ",
 			"WoodFloor4x_DZ",
-			"MetalFloor4x_DZ"			
+			"MetalFloor4x_DZ",
+			"MetalPillar_DZ",
+			"WoodPillar_DZ"			
 		};
 		radius = 5;
 	};
@@ -684,6 +686,28 @@ class SnapBuilding {
 	
 	class MetalFloor4x_Preview_DZ: MetalFloor4x_DZ {};
 	
+	class WoodPillar_DZ: FloorsWallsStairs {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-0.2,0,1.5,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{0.2,0,1.5,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0,0,3.05,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	
+	class Wood_Pillar_Preview_DZ: WoodPillar_DZ {};
+	
+	class MetalPillar_DZ: FloorsWallsStairs {	
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{-0.19,0,1.685,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{0.19,0,1.685,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0,0,3.05,$STR_EPOCH_ACTION_SNAP_TOP}
+		};
+	};
+	
+	class MetalPillar_Preview_DZ: MetalPillar_DZ {};
+	
 	//Non essential Items that only snap to themselves, do whitelist inheritance if you want these to snap
 	class WoodCrate_DZ {
 		snapTo[] = {
@@ -739,10 +763,10 @@ class SnapBuilding {
 		radius = 10;
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{0,-1.1,0,$STR_EPOCH_ACTION_SNAP_BACK},
-			{0,1.2,0,$STR_EPOCH_ACTION_SNAP_FRONT},
-			{-1.7,0,0,$STR_EPOCH_ACTION_SNAP_LEFT},
-			{1.7,0,0,$STR_EPOCH_ACTION_SNAP_RIGHT},
+			{0,-1.35,1.5,$STR_EPOCH_ACTION_SNAP_BACK},
+			{0,1.2,1.5,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{-2,0,1.5,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{1.57,0,1.5,$STR_EPOCH_ACTION_SNAP_RIGHT},
 			{0,0,2,$STR_EPOCH_ACTION_SNAP_TOP}
 		};
 	};
@@ -834,13 +858,15 @@ class SnapBuilding {
 			"VaultStorage2",
 			"VaultStorage2Locked",
 			"VaultStorageBroken",
-			"VaultStorageBroken2"
-			
+			"VaultStorageBroken2",
+			"TallSafe",
+			"TallSafeLocked",
+			"TallSafeBroken"			
 		};
 		radius = 5;
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{0,0.284,0.615,$STR_EPOCH_ACTION_SNAP_BACK},
+			{0,0.284,0.615,$STR_EPOCH_ACTION_SNAP_FRONT},
 			{0,0,1.23,$STR_EPOCH_ACTION_SNAP_TOP},
 			{-0.362,0,0.615,$STR_EPOCH_ACTION_SNAP_LEFT},
 			{0.362,0,0.615,$STR_EPOCH_ACTION_SNAP_RIGHT}
@@ -851,5 +877,18 @@ class SnapBuilding {
 	class VaultStorage2: VaultStorageLocked {};
 	class VaultStorage2Locked: VaultStorageLocked {};
 	class VaultStorageBroken: VaultStorageLocked {};
-	class VaultStorageBroken2: VaultStorageLocked {};	
+	class VaultStorageBroken2: VaultStorageLocked {};
+
+	class TallSafeLocked: VaultStorageLocked {
+		points[] = {
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
+			{0,0.35,0.615,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{0,0,2,$STR_EPOCH_ACTION_SNAP_TOP},
+			{-0.42,0,0.615,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{0.42,0,0.615,$STR_EPOCH_ACTION_SNAP_RIGHT}
+		};		
+	};
+	
+	class TallSafe: TallSafeLocked {};
+	class TallSafeBroken: TallSafeLocked {};	
 };
