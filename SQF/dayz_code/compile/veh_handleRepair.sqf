@@ -34,11 +34,11 @@ if (local _unit) then {
 	_unit setHit [_selection, 0];
 	_log = format["%1. setH!t[%2,0]", _log, _selection];
 	if (!isServer) then {
-		PVDZ_veh_Save = [_unit, "repair"];
+		PVDZ_veh_Save = [_unit, "repair",true];
 		publicVariableServer "PVDZ_veh_Save";
 		_log = _log + ". Requesting server hive write";
 	} else {
-		[_unit, "repair"] call server_updateObject;
+		[_unit, "repair",true] call server_updateObject;
 		_log = _log + ". Writing to hive";
 	};
 }
