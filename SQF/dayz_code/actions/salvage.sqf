@@ -52,7 +52,7 @@ if (_hasToolbox) then {
 				/*if ((_hitpoint == "HitEngine") or (_hitpoint == "HitFuel")) then {
 					[_vehicle, _selection, 0.89] call fnc_veh_handleDam;
 				} else {*/
-					[_vehicle, _selection, 1] call fnc_veh_handleDam;
+					[_vehicle, _selection, 1, objNull, objNull, objNull, true] call fnc_veh_handleDam;
 				//};
 				_vehicle call fnc_veh_ResetEH;
 				_vehicle setvelocity [0,0,1];

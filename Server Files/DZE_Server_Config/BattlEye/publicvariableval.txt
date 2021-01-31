@@ -6,14 +6,14 @@
 5 \+ !e\+0
 5 (commandRadio|directSay|globalRadio|groupRadio|sideRadio|vehicleRadio)
 1 "wrong side" // group hack, ban the first in a row
-1 "(init|set|add|action|all|attach|ATL|ASL|eye|exec|group|unit|clear|create|menu|ctrl|display|text|hint|drop)" !"\"(SetFuel|dayzSetDate|titleText|(|with )MeleeBaseball(|Bat(|Barbed|Nails))|StashSmall|smallboat_[12])\"" !"_Ball " !Attachement !Attachment_ !aslo !ghillie_overall.p3d
+1 "\"\w*?(init|set|add|action|all|attach|ATL|ASL|eye|exec|group|unit|clear|create|menu|ctrl|display|text|hint|drop)\w*?\"" !"\"(SetFuel|dayzSetDate|titleText|(|with )MeleeBaseball(|Bat(|Barbed|Nails))|StashSmall|smallboat_[12])\""
 1 "(entit|exit|able|find|fuel|join|frame|move|team|throw)" !"\"(switchmove|ItemFuelcan(|Empty)|PartFueltank|SetFuel|z_refuel_0|ItemSodaRocketFuel|cable_tie)\"" !Zombie(Feed|StandingAttack)
 1 "\"say\"" !"say\",\[\"z_"
 1 "\"titleText\""
 1 "draw"
 1 "delete"
 1 "copy"
-1 "switch" !="\"switchmove\"" !="\"remExField\" = \[,<NULL-object>,\"switchmove\",\"ActsPercMrunSlowWrflDf_FlipFlopPara\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpsnonwnondnon_zevl\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpslowwrfldnon_gear\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady03\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady02\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady03\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aswmpercmstpsnonwnondnon\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpslowwrfldnon_player_idlesteady04\"\]" !"REMOTE,\"switchmove\",\"amovpknlmstpsraswrfldnon\"\]" !"\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpsnonwnondnon\"\]" !"REMOTE,\"switchmove\",\"aovrpercmstpsraswrfldf\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswrfldnon_idlesteady02\"\]" !"REMOTE,\"switchmove\",\"\"\]" !"REMOTE,\"switchmove\",\"AmovPpneMstpSnonWnonDnon_healed\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady02\"\]" !"\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpslowwrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpercmrunsnonwnondf\"\]" !"REMOTE,\"switchmove\",\"amovpknlmstpsraswrfldnon_gear\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswrfldnon_aiming02\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswrfldnon_aiming01\"\]" !"REMOTE,\"switchmove\",\"amovpercmrunsraswrfldf\"\]" !"REMOTE,\"switchmove\",\"amovpercmstpsraswrfldnon_gear\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady02\"\]" !"REMOTE,\"switchmove\",\"amovppnemstpsraswrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpercmstpslowwrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpknlmstpsraswrfldnon_amovppnemstpsraswrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpknlmstpsraswrfldnon_ainvpknlmstpslaywrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpercmrunsraswrfldfl\"\]" !"REMOTE,\"switchmove\",\"amovpercmrunslowwrfldf_amovppnemstpsraswrfldnon\"\]"
+1 "switch" !="\"switchmove\"" !="\"remExField\" = \[,<NULL-object>,\"switchmove\",\"ActsPercMrunSlowWrflDf_FlipFlopPara\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpsnonwnondnon_zevl\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpslowwrfldnon_gear\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady03\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady02\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady03\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aswmpercmstpsnonwnondnon\"\]" !="\[<NULL-object>,<NULL-object>,\"switchmove\",\"aidlpercmstpslowwrfldnon_player_idlesteady04\"\]" !"REMOTE,\"switchmove\",\"amovpknlmstpsraswrfldnon\"\]" !"\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpsnonwnondnon\"\]" !"REMOTE,\"switchmove\",\"aovrpercmstpsraswrfldf\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswrfldnon_idlesteady02\"\]" !"REMOTE,\"switchmove\",\"\"\]" !"REMOTE,\"switchmove\",\"AmovPpneMstpSnonWnonDnon_healed\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswpstdnon_player_idlesteady02\"\]" !"\[<NULL-object>,<NULL-object>,\"switchmove\",\"amovpercmstpslowwrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpercmrunsnonwnondf\"\]" !"REMOTE,\"switchmove\",\"amovpknlmstpsraswrfldnon_gear\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswrfldnon_aiming02\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswrfldnon_aiming01\"\]" !"REMOTE,\"switchmove\",\"amovpercmrunsraswrfldf\"\]" !"REMOTE,\"switchmove\",\"amovpercmstpsraswrfldnon_gear\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady02\"\]" !"REMOTE,\"switchmove\",\"amovppnemstpsraswrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpercmstpslowwrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpknlmstpsraswrfldnon_amovppnemstpsraswrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpknlmstpsraswrfldnon_ainvpknlmstpslaywrfldnon\"\]" !"REMOTE,\"switchmove\",\"amovpercmrunsraswrfldfl\"\]" !"REMOTE,\"switchmove\",\"amovpercmrunslowwrfldf_amovppnemstpsraswrfldnon\"\]" !"REMOTE,\"switchmove\",\"aidlpknlmstpsraswpstdnon_player_idlesteady01\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady03\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsraswrfldnon_idlesteady04\"\]" !"REMOTE,\"switchmove\",\"aidlpknlmstpsraswpstdnon_player_idlesteady02\"\]" !"REMOTE,\"switchmove\",\"amovpercmstpsraswpstdnon_gear\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady04\"\]" !"REMOTE,\"switchmove\",\"aidlpercmstpsnonwnondnon_player_idlesteady01\"\]" !"REMOTE,\"switchmove\",\"aidlpknlmstpsraswpstdnon_player_idlesteady03\"\]" !"REMOTE,\"switchmove\",\"amovppnemstpsnonwnondnon\"\]"
 1 "icon"
 1 "marker"
 1 "server"
@@ -23,7 +23,7 @@
 1 "chat"
 1 "fade"
 5 "mission"
-1 "kb" !="FoodCanFrankBeans" !="\"FoodCanFrankBeans\"" !"kbTell" !"kbReact"
+1 "kb" !"FoodCanFrankBeans" !"kbTell" !"kbReact" !"kbud\.p3d" !"\"ItemLockbox\"" !"\"ItemLockboxWinter\""
 1 "side"
 1 "show"
 1 "task" !"taskHint"
@@ -258,7 +258,7 @@
 5 player_zombiecheck
 5 r_player_removeactions2
 5 PVDZ_
-5 server_
+5 server !"\"server_rack_kit\""
 5 stream_locationcheck
 5 stream_locationdel
 5 stream_locationfill

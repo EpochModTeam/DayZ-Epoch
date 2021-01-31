@@ -38,18 +38,18 @@ class Remington870_Base : Rifle
 	
 	distanceZoomMin = 100;
 	distanceZoomMax = 100;
-	
+
 	modes[] = {"Single"};
 	
 	class Single : Mode_SemiAuto
 	{
 		dispersion = 0.003;
-		soundContinuous = 0;
-		reloadTime = 0.5;
-		reloadMagazineSound[] = {"\ca\sounds\weapons\rifles\M1014-reload", 0.316228, 1, 20};
-		begin1[] = {"dayz_weapons\sounds\shotgun_0", 1.77828, 1, 1000};
-		begin2[] = {"dayz_weapons\sounds\shotgun_1", 1.77828, 1, 1000};
-		soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
+		soundContinuous = 0;	
+		reloadTime = 0.5;		
+		begin1[] = {"\dayz_epoch_c\sounds\weapons\shotgun_0", 1.77828, 1, 1000};
+		begin2[] = {"\dayz_epoch_c\sounds\weapons\shotgun_1", 1.77828, 1, 1000};
+		begin3[] = {"\dayz_epoch_c\sounds\weapons\shotgun_2", 1.77828, 1, 1000};
+		soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.33};
 		drySound[] = {"ca\sounds\weapons\rifles\dry", 0.01, 1, 10};
 		recoil = "recoil_single_primary_9outof10";
 		recoilProne = "recoil_single_primary_prone_8outof10";

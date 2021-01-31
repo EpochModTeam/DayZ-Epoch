@@ -31,7 +31,7 @@ class Land_Shed_M01: House {
 		{
 			position = "";
 			displayName = $STR_DN_OUT_C_DOOR;
-			radius = 2;
+			radius = 3;
 			onlyForPlayer = 0;
 			condition = "this animationPhase 'open' == 1";
 			statement = "this animate ['open', 0];";
@@ -40,7 +40,7 @@ class Land_Shed_M01: House {
 		{
 			position = "";
 			displayName = $STR_DN_OUT_O_DOOR;
-			radius = 2;
+			radius = 3;
 			onlyForPlayer = 0;
 			condition = "this animationPhase 'open' == 0";
 			statement = "this animate ['open', 1];";
