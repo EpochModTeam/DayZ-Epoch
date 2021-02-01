@@ -17204,15 +17204,15 @@
 			<Hungarian>Géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
         </Key>
         <Key ID="STR_DZ_WPN_SC_EVO3_SD_DESC">
-			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm</German>
-			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 9x19mm</English>
-			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 9x19mm</Italian>
-			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 9x19mm</Spanish>
-			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 9x19mm</French>
-			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 9х19мм</Russian>
-			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm </Polish>
-			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm</Hungarian>
+			<German>Schallgedämpfte Maschinenpistole &lt;br/&gt;Kaliber: 9x19mm SD</German>
+			<English>Silenced submachine gun  &lt;br/&gt;Caliber: 9x19mm SD</English>
+			<Italian>Fucile mitragliatore con silenziatore &lt;br/&gt;Calibro: 9x19mm SD</Italian>
+			<Spanish>Metralleta con silenciador  &lt;br/&gt;Calibre: 9x19mm SD</Spanish>
+			<French>Pistolet-mitrailleur à silencieux  &lt;br/&gt;Calibre: 9x19mm SD</French>
+			<Czech>Samopal s tlumičem &lt;br/&gt;Kalibr: 9x19mm SD</Czech>
+			<Russian>Пистолет-пулемет с ПБС&lt;br/&gt;Калибр: 9х19мм дозвук.</Russian>
+			<Polish>Pistolet maszynowy z tłumikiem  &lt;br/&gt;Kaliber: 9x19mm SD</Polish>
+			<Hungarian>Hangtompítós géppisztoly &lt;br/&gt; Kaliber: 9x19mm SD</Hungarian>
         </Key>
 
 		<!-- CZ 805 -->
@@ -17240,9 +17240,9 @@
 			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 5.56x45мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805A_SD_DESC">
-			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm</English>
-			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm</German>
-			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 5.56x45мм</Russian>
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 5.56x45mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 5.56x45mm SD</German>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 5.56x45мм дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805B_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
@@ -17482,9 +17482,9 @@
 			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 6.80x43мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_SD_DESC">
-			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 6.80x43mm</English>
-			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 6.80x43мм</Russian>
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 6.80x43mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 6.80x43mm SD</German>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 6.80x43мм дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_NV_DESC">
 			<English>Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
@@ -17492,9 +17492,9 @@
 			<Russian>Штурмовая винтовка с прибором ночного видения.&lt;br/&gt;Калибр: 6.80x43мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_NV_SD_DESC">
-			<English>Silenced Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
-			<German>Schallgedämpftes Sturmgewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Бесшумная штурмовая винтовка с прибором ночного видения.&lt;br/&gt;Калибр: 6.80x43мм</Russian>
+			<English>Silenced Assault Rifle with a night vision scope. &lt;br/&gt;Caliber: 6.80x43mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: 6.80x43mm SD</German>
+			<Russian>Бесшумная штурмовая винтовка с прибором ночного видения.&lt;br/&gt;Калибр: 6.80x43мм дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_TWS_DESC">
 			<English>Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
@@ -17502,9 +17502,9 @@
 			<Russian>Штурмовая винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 6.80x43мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_TWS_SD_DESC">
-			<English>Silenced Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm</English>
-			<German>Schallgedämpftes Sturmgewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 6.80x43mm</German>
-			<Russian>Бесшумная штурмовая винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 6.80x43мм</Russian>
+			<English>Silenced Assault Rifle with a TWS scope. &lt;br/&gt;Caliber: 6.80x43mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 6.80x43mm SD</German>
+			<Russian>Бесшумная штурмовая винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 6.80x43мм дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_ACR_NAME">
 			<English>ACR</English>
@@ -17609,9 +17609,9 @@
 			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: 7.62x51мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RSASS_SD_DESC">
-			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
-			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: 7.62x51мм</Russian>
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: 7.62x51мм дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RSASS_TWS_NAME">
 			<English>R11 RSASS TWS</English>
@@ -17627,9 +17627,9 @@
 			<Russian>Снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 7.62x51мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_RSASS_SD_TWS_DESC">
-			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: 7.62x51mm</English>
-			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 7.62x51мм</Russian>
+			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: 7.62x51mm SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
+			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: 7.62x51мм дозвук.</Russian>
 		</Key>
 
 		<!-- MSR -->
@@ -17646,9 +17646,9 @@
 			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_SD_DESC">
-			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .338</English>
-			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: .338</Russian>
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .338 SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .338 SD</German>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: .338 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_TWS_NAME">
 			<English>MSR TWS</English>
@@ -17664,9 +17664,9 @@
 			<Russian>Снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_SD_TWS_DESC">
-			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .338</English>
-			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .338</Russian>
+			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .338 SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .338 SD</German>
+			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .338 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_NV_NAME">
 			<English>MSR NV</English>
@@ -17682,9 +17682,9 @@
 			<Russian>Снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .338</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MSR_SD_NV_DESC">
-			<English>Silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .338</English>
-			<German>Schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .338</German>
-			<Russian>Бесшумная снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .338</Russian>
+			<English>Silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .338 SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .338 SD</German>
+			<Russian>Бесшумная снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .338 дозвук.</Russian>
 		</Key>
 
 		<!-- XM2010 -->
@@ -17701,9 +17701,9 @@
 			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_SD_DESC">
-			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .300</English>
-			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: .300</Russian>
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .300 SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .300 SD</German>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: .300 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_TWS_NAME">
 			<English>XM2010 TWS</English>
@@ -17719,9 +17719,9 @@
 			<Russian>Снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_SD_TWS_DESC">
-			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .300</English>
-			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .300</Russian>
+			<English>Silenced Sniper Rifle with a TWS scope. &lt;br/&gt;Caliber: .300 SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem wärmesuchenden Visier. &lt;br/&gt;Kaliber: .300 SD</German>
+			<Russian>Бесшумная снайперская винтовка с тепловым прицелом.&lt;br/&gt;Калибр: .300 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_NV_NAME">
 			<English>XM2010 NV</English>
@@ -17737,9 +17737,9 @@
 			<Russian>Снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .300</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_SD_NV_DESC">
-			<English>Silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .300</English>
-			<German>Schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .300</German>
-			<Russian>Бесшумная снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .300</Russian>
+			<English>Silenced Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .300 SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr mit einem Nachtsichtvisier. &lt;br/&gt;Kaliber: .300 SD</German>
+			<Russian>Бесшумная снайперская винтовка с прибором ночного видения.&lt;br/&gt;Калибр: .300 дозвук.</Russian>
 		</Key>
 
 		<!-- KAC PDW -->
@@ -18584,9 +18584,9 @@
 			<Russian>MK 14 Sniper ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK14SD_DESC">
-			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
-			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51мм</Russian>
+			<English>Silenced Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
+			<German>Schallgedämpftes Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
+			<Russian>Бесшумная штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51мм дозвук.</Russian>
 		</Key>
 
 		<!-- MK16 -->
@@ -18710,9 +18710,9 @@
 			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: 7.62x51мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MK17SD_SNIPER_DESC">
-			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
-			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
-			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: 7.62x51мм</Russian>
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: 7.62x51mm SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: 7.62x51mm SD</German>
+			<Russian>Бесшумная снайперская винтовка&lt;br/&gt;Калибр: 7.62x51мм дозвук.</Russian>
 		</Key>
 
 		<!-- SCAR-H AK -->
