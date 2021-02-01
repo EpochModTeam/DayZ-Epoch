@@ -18817,9 +18817,9 @@
 			<Russian>M200 Chey Tac ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M200_CHEYTAC_SD_DESC">
-			<English>Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac SD</English>
-			<German>Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac SD</German>
-			<Russian>Снайперская винтовка&lt;br/&gt;Калибр: .408 Chey Tac дозвук.</Russian>
+			<English>Silenced Sniper Rifle &lt;br/&gt;Caliber: .408 Chey Tac SD</English>
+			<German>Schallgedämpftes Scharfschützengewehr &lt;br/&gt;Kaliber: .408 Chey Tac SD</German>
+			<Russian>Бесшумная Снайперская винтовка&lt;br/&gt;Калибр: .408 Chey Tac дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_WA2000_NAME">
 			<English>WA2000</English>
