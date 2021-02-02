@@ -529,8 +529,8 @@ class cinder_garage_kit: CA_Magazine
 	scope = 2;
 	count = 1;
 	type = 256;
-	displayName = $STR_EPOCH_BLOCKGARAGEDOORWAY;
-	descriptionShort = $STR_EPOCH_BLOCKGARAGEDOORWAY_DESC;
+	displayName = $STR_EPOCH_BLOCKGARAGEDOOR;
+	descriptionShort = $STR_EPOCH_BLOCKGARAGEDOOR_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
@@ -541,7 +541,7 @@ class cinder_garage_kit: CA_Magazine
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
-			create = "CinderWallDoorway_DZ";
+			create = "CinderWallDoor_DZ";
 		};
 		class Crafting 
 		{
