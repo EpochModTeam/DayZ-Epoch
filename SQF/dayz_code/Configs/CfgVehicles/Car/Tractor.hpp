@@ -6,7 +6,10 @@ class Tractor_DZE: Tractor {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	
+	class HitPoints;
+	class HitFuel;
+	class HitEngine;
+
 	class Reflectors
 	{
 		class Left
@@ -19,9 +22,16 @@ class Tractor_DZE: Tractor {
 			selection = "L svetlo";
 			size = 1;
 			brightness = 0.5;
-			angle = 120;
+			angle = 90;
 		};
-	};	
+		class Right: Left
+		{
+			position = "P svetlo";
+			direction = "konec P svetla";
+			hitpoint = "P svetlo";
+			selection = "P svetlo";
+		};
+	};
 };
 
 class tractorOld;
@@ -32,9 +42,6 @@ class TractorOld_DZE: tractorOld {
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
-	class HitPoints;
-	class HitFuel;
-	class HitEngine;
 	class Reflectors
 	{
 		class Left
@@ -47,12 +54,12 @@ class TractorOld_DZE: tractorOld {
 			selection = "L svetlo";
 			size = 1;
 			brightness = 0.5;
-			angle = 120;
+			angle = 90;
 		};
 	};
 };
 
-class Tractor_Armored_DZE: TractorOld_DZE
+class Tractor_Armored_DZE: Tractor_DZE
 {
 	displayname = $STR_VEH_NAME_TRACTOR_ARMORED;	
 	model = "\z\addons\dayz_epoch_v\vehicles\tractor\dze_tractor";
