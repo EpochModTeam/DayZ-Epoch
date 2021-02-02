@@ -203,7 +203,7 @@ class ItemBucket : CA_Magazine
 	displayName = $STR_EPOCH_METAL_BUCKET;
 	descriptionShort = $STR_EPOCH_METAL_BUCKET;
 	model = "\CA\Structures\Furniture\Decoration\bucket\bucket.p3d";
-	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	picture = "\dayz_epoch_c\icons\equipment\Bucket.paa";
 	type = 256;
 };
 
@@ -214,7 +214,7 @@ class ItemSuitcase : CA_Magazine
 	displayName = "$STR_DN_SUITCASE";
 	descriptionShort = "$STR_DN_SUITCASE";
 	model = "\CA\misc3\briefcase";
-	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	picture = "\dayz_epoch_c\icons\equipment\Suitcase.paa";
 	type = 256;
 };
 
@@ -225,7 +225,7 @@ class ItemSuitcaseDiamonds : CA_Magazine
 	displayName = $STR_EPOCH_SUITCASE_DIAMONDS;
 	descriptionShort = $STR_EPOCH_SUITCASE_DIAMONDS_DESC;
 	model = "\CA\misc3\briefcase";
-	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	picture = "\dayz_epoch_c\icons\equipment\Suitcase.paa";
 	type = 256;
 };
 
@@ -236,7 +236,7 @@ class ItemSuitcaseBomb : CA_Magazine
 	displayName = $STR_EPOCH_SUITCASE_BOMB;
 	descriptionShort = $STR_EPOCH_SUITCASE_BOMB_DESC;
 	model = "\CA\misc3\briefcase";
-	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_sluginacan.paa";
+	picture = "\dayz_epoch_c\icons\equipment\Suitcase.paa";
 	type = 256;
 };
 
@@ -247,7 +247,7 @@ class ItemPlasticParts : CA_Magazine
 	displayName = $STR_EPOCH_PLASTIC_PARTS;
 	descriptionShort = $STR_EPOCH_PLASTIC_PARTS_DESC;
 	model = "\z\addons\dayz_communityassets\models\crate.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_crate.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemPlasticParts.paa";
 	type = 256;
 };
 
@@ -258,7 +258,7 @@ class ItemCeramicParts : CA_Magazine
 	displayName = $STR_EPOCH_CERAMIC_PARTS;
 	descriptionShort = $STR_EPOCH_CERAMIC_PARTS_DESC;
 	model = "\z\addons\dayz_communityassets\models\crate.p3d";
-	picture = "\z\addons\dayz_communityassets\pictures\equip_crate.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemCeramicParts.paa";
 	type = 256;
 };
 
