@@ -29701,6 +29701,11 @@
 			<German>Priester Kleidung</German>
 			<Russian>Ряса священника</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_JULIA_DESC">
+			<English>Priest Outfit</English>
+			<German>Priester Kleidung</German>
+			<Russian>Ряса священника</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_PRIEST">
 			<English>Priest</English>
 			<German>Priester</German>
@@ -29900,9 +29905,37 @@
 			<English>Chantal</English>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CHANTAL_DESC">
-			<English>Chantal the woman for the fast trip.</English>
-			<German>Chantal, die Frau für die schnelle Sache.</German>
+			<English>Chantal - the woman for the fast trip.</English>
+			<German>Chantal - die Frau für die schnelle Sache.</German>
 		</Key>
+		<Key ID="STR_EPOCH_SKINS_SALLY">
+			<English>Sally</English>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_SALLY_DESC">
+			<English>Sally - is good at math and you know why.</English>
+			<German>Sally - ist gut in Mathe und du weißt genau wieso.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_SKINS_GINA">
+			<English>Gina</English>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_GINA_DESC">
+			<English>Gina - the wildest woman you have ever met.</English>
+			<German>Gina - die wildeste Frau, die du jemals getroffen hast.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_SKINS_ANGEL">
+			<English>Angel</English>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_ANGEL_DESC">
+			<English>Angel - you know she is not an angel but you do not care.</English>
+			<German>Angel - du weißt, dass sie kein Engel ist, aber das ist dir egal.</German>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_KANDY">
+			<English>Kandy</English>
+		</Key>
+		<Key ID="STR_EPOCH_SKINS_KANDY_DESC">
+			<English>Kandy - what is sweeter than Candy, yeah it is Kandy.</English>
+			<German>Kandy - was ist süßer als Zucker, es ist Kandy.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_SKINS_URSULA">
 			<English>Operator Ursula</English>
 		</Key>

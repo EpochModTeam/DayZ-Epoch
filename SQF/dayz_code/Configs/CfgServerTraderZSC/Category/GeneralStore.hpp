@@ -104,7 +104,11 @@ class Category_30 {
 	class Skin_WorkerW_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_PolicemanW_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_PriestW_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
-	class Skin_HookerW_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};		
+	class Skin_HookerW1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};	
+	class Skin_HookerW2_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_HookerW3_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_HookerW4_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_HookerW5_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};	
 	class Skin_Functionary1_EP1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_Haris_Press_EP1_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_Priest_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};

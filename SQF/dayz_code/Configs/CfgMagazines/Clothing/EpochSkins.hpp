@@ -1834,16 +1834,44 @@ class Skin_PolicemanW_DZ: SkinBase {
 class Skin_PriestW_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_JULIA;
-	descriptionShort = $STR_EPOCH_SKINS_JAMES_DESC;
+	descriptionShort = $STR_EPOCH_SKINS_JULIA_DESC;
 	sex = "female";
 	playerModel = "PriestW_DZ";	
 };
-class Skin_HookerW_DZ: SkinBase {
+class Skin_HookerW1_DZ: SkinBase {
 	scope = 2;
 	displayName = $STR_EPOCH_SKINS_CHANTAL;
 	descriptionShort = $STR_EPOCH_SKINS_CHANTAL_DESC;
 	sex = "female";
-	playerModel = "HookerW_DZ";	
+	playerModel = "HookerW1_DZ";	
+};
+class Skin_HookerW2_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_GINA;
+	descriptionShort = $STR_EPOCH_SKINS_GINA_DESC;
+	sex = "female";
+	playerModel = "HookerW2_DZ";	
+};
+class Skin_HookerW3_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_SALLY;
+	descriptionShort = $STR_EPOCH_SKINS_SALLY_DESC;
+	sex = "female";
+	playerModel = "HookerW3_DZ";	
+};
+class Skin_HookerW4_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_ANGEL;
+	descriptionShort = $STR_EPOCH_SKINS_ANGEL_DESC;
+	sex = "female";
+	playerModel = "HookerW4_DZ";	
+};
+class Skin_HookerW5_DZ: SkinBase {
+	scope = 2;
+	displayName = $STR_EPOCH_SKINS_KANDY;
+	descriptionShort = $STR_EPOCH_SKINS_KANDY_DESC;
+	sex = "female";
+	playerModel = "HookerW5_DZ";	
 };
 class Skin_OperatorW_DZ: SkinBase {
 	scope = 2;
