@@ -6,7 +6,7 @@ class ItemSkinRabbit: CA_Magazine
 	displayName = $STR_EPOCH_ANIMAL_SKIN_RABBIT;
 	descriptionShort = $STR_EPOCH_ANIMAL_SKIN_RABBIT_DESC;
 	model = "\z\addons\dayz_epoch\models\leather.p3d";
-	picture = "\dayz_epoch_c\icons\equipment\ItemGenericSkin.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemRabbitSkin.paa";
 };
 
 class ItemSkinCow: CA_Magazine
@@ -17,7 +17,7 @@ class ItemSkinCow: CA_Magazine
 	displayName = $STR_EPOCH_ANIMAL_SKIN_COW;
 	descriptionShort = $STR_EPOCH_ANIMAL_SKIN_COW_DESC;
 	model = "\z\addons\dayz_epoch\models\leather.p3d";
-	picture = "\dayz_epoch_c\icons\equipment\ItemGenericSkin.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemCowSkin.paa";
 };
 
 class ItemSkinGoat: CA_Magazine
@@ -28,7 +28,7 @@ class ItemSkinGoat: CA_Magazine
 	displayName = $STR_EPOCH_ANIMAL_SKIN_GOAT;
 	descriptionShort = $STR_EPOCH_ANIMAL_SKIN_GOAT_DESC;
 	model = "\z\addons\dayz_epoch\models\leather.p3d";
-	picture = "\dayz_epoch_c\icons\equipment\ItemGenericSkin.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemGoatSkin.paa";
 };
 
 class ItemSkinBoar: CA_Magazine
@@ -39,7 +39,7 @@ class ItemSkinBoar: CA_Magazine
 	displayName = $STR_EPOCH_ANIMAL_SKIN_BOAR;
 	descriptionShort = $STR_EPOCH_ANIMAL_SKIN_BOAR_DESC;
 	model = "\z\addons\dayz_epoch\models\leather.p3d";
-	picture = "\dayz_epoch_c\icons\equipment\ItemGenericSkin.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemBoarSkin.paa";
 };
 
 class ItemSkinDog: CA_Magazine
@@ -50,7 +50,7 @@ class ItemSkinDog: CA_Magazine
 	displayName = $STR_EPOCH_ANIMAL_SKIN_DOG;
 	descriptionShort = $STR_EPOCH_ANIMAL_SKIN_DOG_DESC;
 	model = "\z\addons\dayz_epoch\models\leather.p3d";
-	picture = "\dayz_epoch_c\icons\equipment\ItemGenericSkin.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemDogSkin.paa";
 };
 
 class ItemSkinSheep: CA_Magazine
@@ -61,7 +61,7 @@ class ItemSkinSheep: CA_Magazine
 	displayName = $STR_EPOCH_ANIMAL_SKIN_SHEEP;
 	descriptionShort = $STR_EPOCH_ANIMAL_SKIN_SHEEP_DESC;
 	model = "\z\addons\dayz_epoch\models\leather.p3d";
-	picture = "\dayz_epoch_c\icons\equipment\ItemGenericSkin.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemSheepSkin.paa";
 };
 
 class ItemWool: CA_Magazine
@@ -83,7 +83,7 @@ class ItemAnimalSkin: CA_Magazine
 	displayName = $STR_EPOCH_ANIMAL_SKIN;
 	descriptionShort = $STR_EPOCH_ANIMAL_SKIN_DESC;
 	model = "\z\addons\dayz_epoch\models\leather.p3d";
-	picture = "\dayz_epoch_c\icons\equipment\ItemGenericSkin.paa";
+	picture = "\dayz_epoch_c\icons\equipment\ItemAnimalSkin.paa";
 };
 
 class ItemLeather: CA_Magazine
