@@ -255,11 +255,33 @@ class PriestW_DZ: CivilianW
 	displayName = $STR_EPOCH_SKINS_PRIEST;
 	model = "z\addons\dayz_epoch_u\clothes\dze_F_priest";
 };
-class HookerW_DZ: CivilianW
+class HookerW1_DZ: CivilianW
 {
 	scope = 2;
 	displayName = $STR_DZE_SKIN_HOOKER_NAME;
 	model = "z\addons\dayz_epoch_u\clothes\dze_f_hooker";
+	hiddenSelections[] = {"camo1"};
+	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch_u\clothes\data\hooker1_co.paa"};
+};
+class HookerW2_DZ: HookerW1_DZ
+{
+	displayName = $STR_DZE_SKIN_HOOKER_NAME;
+	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch_u\clothes\data\hooker2_co.paa"};
+};
+class HookerW3_DZ: HookerW1_DZ
+{
+	displayName = $STR_DZE_SKIN_HOOKER_NAME;
+	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch_u\clothes\data\hooker3_co.paa"};
+};
+class HookerW4_DZ: HookerW1_DZ
+{
+	displayName = $STR_DZE_SKIN_HOOKER_NAME;
+	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch_u\clothes\data\hooker4_co.paa"};
+};
+class HookerW5_DZ: HookerW1_DZ
+{
+	displayName = $STR_DZE_SKIN_HOOKER_NAME;
+	hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch_u\clothes\data\hooker5_co.paa"};
 };
 class SniperW_DZ: CivilianW
 {

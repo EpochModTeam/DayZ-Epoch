@@ -6,8 +6,8 @@
 5 \+ !e\+0
 5 (commandRadio|directSay|globalRadio|groupRadio|sideRadio|vehicleRadio)
 1 "wrong side" // group hack, ban the first in a row
-1 "\"\w*?(init|set|add|action|all|attach|ATL|ASL|eye|exec|group|unit|clear|create|menu|ctrl|display|text|hint|drop)\w*?\"" !"\"(SetFuel|dayzSetDate|titleText|(|with )MeleeBaseball(|Bat(|Barbed|Nails))|StashSmall|smallboat_[12])\""
-1 "(entit|exit|able|find|fuel|join|frame|move|team|throw)" !"\"(switchmove|ItemFuelcan(|Empty)|PartFueltank|SetFuel|z_refuel_0|ItemSodaRocketFuel|cable_tie)\"" !Zombie(Feed|StandingAttack)
+1 "\"\w*?(init|set|add|action|all|attach|ATL|ASL|eye|exec|group|unit|clear|create|menu|ctrl|display|text|hint|drop)\w*?\"" !"\"(SetFuel|dayzSetDate|titleText|(|with )MeleeBaseball(|Bat(|Barbed|Nails))|StashSmall|smallboat_[12])\"" !Attachment_ !fall
+1 "(entit|exit|able|find|fuel|join|frame|move|team|throw)" !"\"(switchmove|ItemFuelcan(|Empty)|ItemFuelBarrel(|Empty)|PartFueltank|SetFuel|z_refuel_0|ItemSodaRocketFuel|cable_tie)\"" !Zombie(Feed|StandingAttack) !mtvr_fuel\.p3d
 1 "\"say\"" !"say\",\[\"z_"
 1 "\"titleText\""
 1 "draw"

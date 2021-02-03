@@ -184,7 +184,7 @@ class ItemNotebook: CA_Magazine
 	displayName = $STR_EPOCH_ITEM_NOTEBOOK;
 	descriptionShort = $STR_EPOCH_ITEM_NOTEBOOK_DESC;
 	model = "\CA\misc2\notebook\notebook.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\Notebook.paa";
 };
 
 class ItemNotebookBroken: CA_Magazine
@@ -195,7 +195,7 @@ class ItemNotebookBroken: CA_Magazine
 	displayName = $STR_EPOCH_NOTEBOOK_BROKEN;
 	descriptionShort = $STR_EPOCH_NOTEBOOK_BROKEN_DESC;
 	model = "\CA\misc2\notebook\notebook.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\NotebookBroken.paa";
 };
 
 class ItemSmallTV: CA_Magazine
@@ -206,7 +206,7 @@ class ItemSmallTV: CA_Magazine
 	displayName = $STR_EPOCH_SMALL_TV;
 	descriptionShort = $STR_EPOCH_SMALL_TV_DESC;
 	model = "\CA\misc2\smallTV\smallTV.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\SmallTV.paa";
 };
 
 class ItemSmallTVBroken: CA_Magazine
@@ -217,7 +217,7 @@ class ItemSmallTVBroken: CA_Magazine
 	displayName = $STR_EPOCH_SMALL_TV_BROKEN;
 	descriptionShort = $STR_EPOCH_SMALL_TV_BROKEN_DESC;
 	model = "\CA\misc2\smallTV\smallTV.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\SmallTVBroken.paa";
 };
 
 class ItemBigTV: CA_Magazine
@@ -228,7 +228,7 @@ class ItemBigTV: CA_Magazine
 	displayName = $STR_EPOCH_BIG_TV;
 	descriptionShort = $STR_EPOCH_BIG_TV_DESC;
 	model = "\CA\Structures\Furniture\Eletrical_appliances\tv_a\tv_a.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\BigTV.paa";
 };
 
 class ItemBigTVBroken: CA_Magazine
@@ -239,7 +239,7 @@ class ItemBigTVBroken: CA_Magazine
 	displayName = $STR_EPOCH_BIG_TV_BROKEN;
 	descriptionShort = $STR_EPOCH_BIG_TV_BROKEN_DESC;
 	model = "\CA\Structures\Furniture\Eletrical_appliances\tv_a\tv_a.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\BigTVBroken.paa";
 };
 
 class ItemSatelitePhone: CA_Magazine
@@ -250,7 +250,7 @@ class ItemSatelitePhone: CA_Magazine
 	displayName = $STR_EPOCH_SATELLITE_PHONE;
 	descriptionShort = $STR_EPOCH_SATELLITE_PHONE_DESC;
 	model = "\CA\misc3\satelitePhone\satellitePhone.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\SatPhone.paa";
 };
 
 class ItemSatelitePhoneBroken: CA_Magazine
@@ -261,7 +261,7 @@ class ItemSatelitePhoneBroken: CA_Magazine
 	displayName = $STR_EPOCH_SATELLITE_PHONE_BROKEN;
 	descriptionShort = $STR_EPOCH_SATELLITE_PHONE_BROKEN_DESC;
 	model = "\CA\misc3\satelitePhone\satellitePhone.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\SatPhoneBroken.paa";
 };
 
 class ItemPC: CA_Magazine
@@ -272,7 +272,7 @@ class ItemPC: CA_Magazine
 	displayName = $STR_EPOCH_PC;
 	descriptionShort = $STR_EPOCH_PC_DESC;
 	model = "\CA\Structures\Furniture\Eletrical_appliances\pc\pc.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\PC.paa";
 };
 
 class ItemPCBroken: CA_Magazine
@@ -283,7 +283,7 @@ class ItemPCBroken: CA_Magazine
 	displayName = $STR_EPOCH_PC_BROKEN;
 	descriptionShort = $STR_EPOCH_PC_BROKEN_DESC;
 	model = "\CA\Structures\Furniture\Eletrical_appliances\pc\pc.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\PCBroken.paa";
 };
 
 class ItemDesktopRadio: CA_Magazine
@@ -294,7 +294,7 @@ class ItemDesktopRadio: CA_Magazine
 	displayName = $STR_EPOCH_DESKTOP_RADIO;
 	descriptionShort = $STR_EPOCH_DESKTOP_RADIO_DESC;
 	model = "\CA\misc\mutt_vysilacka.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\DesktopRadio.paa";
 };
 
 class ItemDesktopRadioBroken: CA_Magazine
@@ -305,7 +305,7 @@ class ItemDesktopRadioBroken: CA_Magazine
 	displayName = $STR_EPOCH_DESKTOP_RADIO_BROKEN;
 	descriptionShort = $STR_EPOCH_DESKTOP_RADIO_BROKEN_DESC;
 	model = "\CA\misc\mutt_vysilacka.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\DesktopRadioBroken.paa";
 };
 
 class ItemMusicRadio1: CA_Magazine
@@ -316,7 +316,7 @@ class ItemMusicRadio1: CA_Magazine
 	displayName = $STR_EPOCH_RADIO_MUSIC1;
 	descriptionShort = $STR_EPOCH_RADIO_MUSIC1_DESC;
 	model = "\CA\misc\radio.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\MusicRadio1.paa";
 };
 
 class ItemMusicRadio1Broken: CA_Magazine
@@ -327,7 +327,7 @@ class ItemMusicRadio1Broken: CA_Magazine
 	displayName = $STR_EPOCH_RADIO_MUSIC1_BROKEN;
 	descriptionShort = $STR_EPOCH_RADIO_MUSIC1_BROKEN_DESC;
 	model = "\CA\misc\radio.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\MusicRadio1Broken.paa";
 };
 
 class ItemMusicRadio2: CA_Magazine
@@ -338,7 +338,7 @@ class ItemMusicRadio2: CA_Magazine
 	displayName = $STR_EPOCH_RADIO_MUSIC2;
 	descriptionShort = $STR_EPOCH_RADIO_MUSIC2_DESC;
 	model = "\CA\Structures\Furniture\Eletrical_appliances\radio_b\radio_b.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\MusicRadio2.paa";
 };
 
 class ItemMusicRadio2Broken: CA_Magazine
@@ -349,5 +349,5 @@ class ItemMusicRadio2Broken: CA_Magazine
 	displayName = $STR_EPOCH_RADIO_MUSIC2_BROKEN;
 	descriptionShort = $STR_EPOCH_RADIO_MUSIC2_BROKEN_DESC;
 	model = "\CA\Structures\Furniture\Eletrical_appliances\radio_b\radio_b.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	picture = "\dayz_epoch_c\icons\equipment\MusicRadio2Broken.paa";
 };

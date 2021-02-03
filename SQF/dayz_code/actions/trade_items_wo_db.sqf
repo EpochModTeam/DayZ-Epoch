@@ -8,7 +8,7 @@ _part_out = _vars select 0;
 _part_in = _vars select 1;
 _qty_out = _vars select 2;
 _qty_in = _vars select 3;
-_humanityGain = [0,_vars select 4] select (count _this > 4);
+_humanityGain = [0,_vars select 4] select (count _vars > 4);
 _textPartIn = getText (configFile >> "CfgMagazines" >> _part_in >> "displayName");
 _textPartOut = getText (configFile >> "CfgMagazines" >> _part_out >> "displayName");
 
