@@ -47,7 +47,7 @@ class RscTitles
 			class RscPicture_1201: RscPictureGUI
 			{
 				idc = 1400;
-				text = "\z\addons\dayz_code\gui\stats_kills_human_ca.paa";
+				text = "";
 				x = 0.044687 * safezoneW + safezoneX;
 				y = 0.934779 * safezoneH + safezoneY;
 				w = 0.06;

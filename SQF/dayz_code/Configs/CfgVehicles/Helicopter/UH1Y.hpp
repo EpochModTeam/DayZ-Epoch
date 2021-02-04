@@ -139,18 +139,21 @@ class UH1Y_DZ: UH1_Base {
 	};
 };
 class UH1Y_DZE: UH1Y_DZ {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	enableManualFire = 0;
 	class Turrets : Turrets {
 		class MainTurret: MainTurret
 		{
 			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			magazines[] = {};
+			gunnerCompartments = "Compartment3";
 		};
 		class RightDoorGun: RightDoorGun
 		{
 			//gunnerOpticsModel = "\ca\Weapons\optika_empty";
 			visionMode[] = {"Normal","NVG"};
 			magazines[] = {};
+			gunnerCompartments = "Compartment3";
 		};
 		class CoPilotObs: CoPilotObs
 		{

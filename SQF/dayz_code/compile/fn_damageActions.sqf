@@ -30,7 +30,7 @@ if (_inVehicle) then {
 		r_player_lastSeat = _assignedRole;
 		local _action = [];
 		
-		if (_vehicle isKindOf "helicopter" || {_inVehicle && {{(isPlayer _x) && (alive _x)} count (crew _vehicle) > 1}}) then {
+		if ((_vehicle isKindOf "helicopter") || {_inVehicle && {{(isPlayer _x) && (alive _x)} count (crew _vehicle) > 1}}) then {
 			//allow switch to pilot
 			if (((_assignedRole select 0) != "driver") && {(!alive _driver) || {(_vehicle emptyPositions "Driver") > 0}}) then {
 				if (_vehicle isKindOf "helicopter") then {
@@ -42,23 +42,25 @@ if (_inVehicle) then {
 				r_action2 = true;
 			};
 			//allow switch to cargo
-			if (((_assignedRole select 0) != "cargo") && {(_vehicle emptyPositions "Cargo") > 0}) then {
-				_action = _vehicle addAction [localize "str_actions_helibackseat", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToCargo",_driver], 0, false, true];
-				r_player_actions2 set [count r_player_actions2,_action];
-				r_action2 = true;
-			};
-			//allow switch to gunner
-			if (((_assignedRole select 0) != "Turret") && {(_vehicle emptyPositions "Gunner") > 0}) then {
-				_action = _vehicle addAction [localize "str_actions_heligunnerseat", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToTurret",_driver], 0, false, true];
-				r_player_actions2 set [count r_player_actions2,_action];
-				r_action2 = true;
-			};
-			//allow switch to commander
-			if (((assignedCommander _vehicle) != player) && {(_vehicle emptyPositions "Commander") > 0}) then {
-				_action = _vehicle addAction[localize "STR_EPOCH_PLAYER_311", "\z\addons\dayz_code\actions\veh_seatActions.sqf", ["MoveToTurret", _driver], 0, false, true];
-				r_player_actions2 set [count r_player_actions2,_action];
-				r_action2 = true;
-			};
+			if !(_vehicle isKindOf "helicopter") then {
+				if (((_assignedRole select 0) != "cargo") && {(_vehicle emptyPositions "Cargo") > 0}) then {
+					_action = _vehicle addAction [localize "str_actions_helibackseat", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToCargo",_driver], 0, false, true];
+					r_player_actions2 set [count r_player_actions2,_action];
+					r_action2 = true;
+				};
+				//allow switch to gunner
+				if ((_assignedRole select 0) != "Turret" && {(_vehicle emptyPositions "Gunner") > 0}) then {
+					_action = _vehicle addAction [localize "str_actions_heligunnerseat", "\z\addons\dayz_code\actions\veh_seatActions.sqf",["MoveToTurret",_driver], 0, false, true];
+					r_player_actions2 set [count r_player_actions2,_action];
+					r_action2 = true;
+				};
+				//allow switch to commander
+				if (((assignedCommander _vehicle) != player) && {(_vehicle emptyPositions "Commander") > 0}) then {
+					_action = _vehicle addAction[localize "STR_EPOCH_PLAYER_311", "\z\addons\dayz_code\actions\veh_seatActions.sqf", ["MoveToTurret", _driver], 0, false, true];
+					r_player_actions2 set [count r_player_actions2,_action];
+					r_action2 = true;
+				};
+			};	
 		};
 		if ((count _assignedRole) > 1 || {(_assignedRole select 0) == "driver"}) then {
 			local _turret = [-1];

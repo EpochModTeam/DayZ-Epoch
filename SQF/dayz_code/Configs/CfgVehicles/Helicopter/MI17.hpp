@@ -39,11 +39,14 @@ class Mi17_DZ: Mi17_base	 {
 	};
 };
 class Mi17_DZE: Mi17_DZ	 {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 		class BackTurret : BackTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 	};
@@ -113,12 +116,15 @@ class Mi17_TK_EP1_DZ: Mi17_base  {
 		};
 	};
 };
-class Mi17_TK_EP1_DZE: Mi17_TK_EP1_DZ	 {
+class Mi17_TK_EP1_DZE: Mi17_TK_EP1_DZ {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 		class BackTurret : BackTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 	};
@@ -188,12 +194,15 @@ class Mi17_UN_CDF_EP1_DZ: Mi17_base  {
 		};
 	};
 };
-class Mi17_UN_CDF_EP1_DZE: Mi17_UN_CDF_EP1_DZ	 {
+class Mi17_UN_CDF_EP1_DZE: Mi17_UN_CDF_EP1_DZ {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 		class BackTurret : BackTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 	};
@@ -264,11 +273,14 @@ class Mi17_CDF_DZ: Mi17_base {
 	};
 };
 class Mi17_CDF_DZE: Mi17_CDF_DZ	 {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets : Turrets  {
 		class MainTurret : MainTurret  {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 		class BackTurret : BackTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 	};
@@ -469,8 +481,10 @@ class Mi171Sh_CZ_EP1_DZ: Mi17_base {
 };
 
 class Mi171Sh_CZ_EP1_DZE: Mi171Sh_CZ_EP1_DZ {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets : Turrets {
 		class LeftTurret : MainTurret {
+			gunnerCompartments = "compartment3";
 			proxyIndex = 2;
 			commanding = -1;
 			primaryGunner = 0;
@@ -484,6 +498,7 @@ class Mi171Sh_CZ_EP1_DZE: Mi171Sh_CZ_EP1_DZ {
 		};
 		
 		class BackTurret : BackTurret {
+			gunnerCompartments = "compartment3";
 			gunnerName = $STR_POSITION_REARGUNNER;
 			primaryGunner = 1;
 			commanding = -3;
@@ -500,6 +515,7 @@ class Mi171Sh_CZ_EP1_DZE: Mi171Sh_CZ_EP1_DZ {
 		};
 		
 		class RightTurret : MainTurret {
+			gunnerCompartments = "compartment3";
 			proxyIndex = 1;
 			gunnerName = $STR_POSITION_CREWCHIEF;
 			body = "Turret_3";

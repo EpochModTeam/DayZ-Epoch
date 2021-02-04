@@ -113,7 +113,7 @@ class GNT_C185T_DZE: GNT_C185T_DZ
 class GNT_C185T_TwinM60_DZ: GNT_C185T_DZ
 {
 	displayname = $STR_VEH_NAME_CESSNA_M60;
-	weapons[] = {"pook_M60_dual"};
+	weapons[] = {"pook_M60_dual_DZ"};
 	magazines[] = {"pook_1300Rnd_762x51_M60"};
 };
 
