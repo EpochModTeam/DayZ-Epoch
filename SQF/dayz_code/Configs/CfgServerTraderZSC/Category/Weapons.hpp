@@ -153,7 +153,7 @@ class Category_14 {
 
 //Single-shot/Shotguns
 class Category_15 {
-	class Crossbow_DZ {type = "trade_weapons";buy[] = {10,"worth"};sell[] = {5,"ItemSilverBar"};};
+	class Crossbow_DZ {type = "trade_weapons";buy[] = {10,"worth"};sell[] = {5,"worth"};};
 	class Crossbow_CCO_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {200,"worth"};};
 	class Crossbow_FL_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {100,"worth"};};
 	class Crossbow_MFL_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {200,"worth"};};
@@ -162,8 +162,8 @@ class Category_15 {
 	class Crossbow_Scope_FL_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {400,"worth"};};
 	class Crossbow_CCO_MFL_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {400,"worth"};};
 	class Crossbow_Scope_MFL_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {500,"worth"};};
-	class RedRyder {type = "trade_weapons";buy[] = {10,"worth"};sell[] = {5,"ItemSilverBar"};};
-	class MR43_DZ {type = "trade_weapons";buy[] = {10,"worth"};sell[] = {8,"ItemSilverBar"};};
+	class RedRyder {type = "trade_weapons";buy[] = {10,"worth"};sell[] = {5,"worth"};};
+	class MR43_DZ {type = "trade_weapons";buy[] = {10,"worth"};sell[] = {5,"worth"};};
 	class Winchester1866_DZ {type = "trade_weapons";buy[] = {20,"worth"};sell[] = {10,"worth"};};
 	class M1014_DZ {type = "trade_weapons";buy[] = {300,"worth"};sell[] = {200,"worth"};};
 	class M1014_CCO_DZ {type = "trade_weapons";buy[] = {-1,"worth"};sell[] = {400,"worth"};};
