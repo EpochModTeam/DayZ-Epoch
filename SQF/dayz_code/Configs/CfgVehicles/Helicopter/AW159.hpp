@@ -113,10 +113,12 @@ class AW159_Lynx_BAF_DZ: AW159_Lynx_BAF {
 };
 
 class AW159_Lynx_BAF_DZE: AW159_Lynx_BAF_DZ {	
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
 		{
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 	};

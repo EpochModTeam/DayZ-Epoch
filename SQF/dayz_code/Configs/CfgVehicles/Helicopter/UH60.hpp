@@ -28,11 +28,12 @@ class MH60S_DZ : MH60S {
 };
 
 class MH60S_DZE : MH60S_DZ {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
 			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
 			discreteDistanceInitIndex = 2;
-			gunnerCompartments = "Compartment1";
+			gunnerCompartments = "compartment3";
 			initElev = 5;
 			initTurn = 80;			
 			body = "mainTurret";
@@ -69,6 +70,7 @@ class MH60S_DZE : MH60S_DZ {
 		};
 
 		class RightDoorGun : MainTurret {
+			gunnerCompartments = "compartment3";
 			body = "Turret_2";
 			gun = "Gun_2";
 			animationSourceBody = "Turret_2";
@@ -154,6 +156,7 @@ class UH60M_EP1_DZ: UH60M_EP1 {
 };
 
 class UH60M_EP1_DZE: UH60M_EP1_DZ {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	enableManualFire = 0;
 	class Turrets: Turrets {
 		class MainTurret: MainTurret {
@@ -191,7 +194,7 @@ class UH60M_EP1_DZE: UH60M_EP1_DZ {
 				minFov = 0.25;
 				maxFov = 1.1;
 			};
-			gunnerCompartments = "Compartment2";
+			gunnerCompartments = "compartment3";
 		};
 		class RightDoorGun: MainTurret {
 			body = "Turret_2";
@@ -216,6 +219,7 @@ class UH60M_EP1_DZE: UH60M_EP1_DZ {
 			primaryGunner = 0;
 			memoryPointGun = "machinegun_1";
 			memoryPointGunnerOptics = "gunnerview_2";
+			gunnerCompartments = "compartment3";
 		};
 	};
 	

@@ -51,11 +51,14 @@ class UH1H_DZ: UH1H_base
 };
 
 class UH1H_DZE: UH1H_DZ {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets : Turrets {
 		class MainTurret : MainTurret {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 		class LeftDoorGun : LeftDoorGun {
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 	};

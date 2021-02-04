@@ -25,6 +25,7 @@ class CH_47F_EP1_DZ : CH_47F_EP1 {
 
 class CH_47F_EP1_DZE: CH_47F_EP1_DZ
 {
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
@@ -64,7 +65,7 @@ class CH_47F_EP1_DZE: CH_47F_EP1_DZ
 				minFov = 0.25;
 				maxFov = 1.1;
 			};
-			gunnerCompartments = "Compartment1";
+			gunnerCompartments = "Compartment3";
 			memoryPointsGetInGunner = "pos gunner";
 			memoryPointsGetInGunnerDir = "pos gunner dir";
 		};

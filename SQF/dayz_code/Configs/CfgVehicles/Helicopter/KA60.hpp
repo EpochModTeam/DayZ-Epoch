@@ -126,10 +126,12 @@ class Ka60_GL_PMC_DZ: Ka60_GL_PMC {
 };
 
 class Ka60_GL_PMC_DZE: Ka60_GL_PMC_DZ {	
+	cargoCompartments[] = {"Compartment1","Compartment2","Compartment3"};
 	class Turrets: Turrets
 	{
 		class MainTurret: MainTurret
 		{
+			gunnerCompartments = "compartment3";
 			magazines[] = {};
 		};
 	};
