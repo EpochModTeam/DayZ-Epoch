@@ -48,4 +48,5 @@ class G3_DZ: FNFAL_DZ
 		maxRange = 15;
 		maxRangeProbab = 0.05;
 	};
+	class Attachments {};	
 };
