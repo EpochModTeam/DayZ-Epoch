@@ -14,6 +14,8 @@ if (time - dayz_lastTransfusion > 120) then {dayz_bloodBagHumanity = 300;}; //Re
 
 _badBag = false;
 _wholeBag = false;
+//Unconscious timeout for receiving unit	
+_duration = [2,3] select ((_unit getVariable ["USEC_BloodQty",0]) <= 4000);
 
 if (!dayz_classicBloodBagSystem) then {
 	_bloodType = _unit getVariable ["blood_type", ""]; //Get receiving units blood type
@@ -24,9 +26,7 @@ if (!dayz_classicBloodBagSystem) then {
 
 	//End if the player does not have a transfusion kit
 	//if (!_hasTransfusionKit) exitWith { localize "str_actions_medical_transfusion_failed_transfusionkit" call dayz_rollingMessages; };
-
-	//Unconscious timeout for receiving unit
-	_duration = [2,3] select (_unit getVariable ["USEC_BloodQty", 0]);
+	
 	_bloodBagArrayNeeded = ["bloodBagONEG"];
 
 	if (_bloodTestdone) then { // if the recipient does not know his blood type, only O- can apply
