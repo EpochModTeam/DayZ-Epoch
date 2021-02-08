@@ -7,4 +7,5 @@ class SVU_PSO1_DZ: SVD_PSO1_DZ {
 	soundBegin[] = {"begin1",1};
 	magazines[] = {"10Rnd_762x54_SVD"};
 	class ItemActions {};
+	class Attachments {};
 };

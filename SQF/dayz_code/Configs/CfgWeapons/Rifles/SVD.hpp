@@ -163,6 +163,8 @@ class SVD_NSPU_DZ : SVD_PSO1_DZ {
 			script = "; ['Attachment_NSPU',_id,'SVD_DZ'] call player_removeAttachment";
 		};
 	};
+	
+	class Attachments {};
 };
 
 class SVD_Gold_DZ : SVD_PSO1_DZ {
@@ -171,4 +173,5 @@ class SVD_Gold_DZ : SVD_PSO1_DZ {
 	picture = "\RH_aks\inv\svdg.paa";
 	
 	class ItemActions {};
+	class Attachments {};
 };

@@ -52,7 +52,7 @@ fnc_initSnapPoints = {
 
 	snapGizmos = [];
 	{
-		_objectSnapGizmo = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0];
+		_objectSnapGizmo = "Sign_sphere10cm_EP1" createVehicle [0,0,0];
 		_objectSnapGizmo setobjecttexture [0,"#(argb,8,8,3)color(0.04,0.84,0.92,0.3,ca)"];
 		_objectSnapGizmo attachTo [_object,[_x select 0,_x select 1,_x select 2]];
 		snapGizmos set [count snapGizmos,_objectSnapGizmo];
@@ -76,7 +76,7 @@ fnc_initSnapPointsNearby = {
 		_pointsNearby = getArray (configFile >> "SnapBuilding" >> (typeOf _x) >> "points");
 
 		{
-			_objectSnapGizmo = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0];
+			_objectSnapGizmo = "Sign_sphere10cm_EP1" createVehicle [0,0,0];
 			_objectSnapGizmo setobjecttexture [0,"#(argb,8,8,3)color(0.04,0.84,0.92,0.3,ca)"];
 			_objectSnapGizmo setDir (_nearbyObject getVariable["memDir",0]);
 			_posNearby = _nearbyObject modelToWorld [_x select 0,_x select 1,_x select 2];

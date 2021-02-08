@@ -241,10 +241,10 @@ class SnapBuilding {
 	class WoodFloorStairs_DZ: FloorsWallsStairs {
 		points[] = {
 			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
-			{0,-2.32,3.14,$STR_EPOCH_ACTION_SNAP_BACK},
-			{0,2.32,3.14,$STR_EPOCH_ACTION_SNAP_FRONT},
-			{-2.54,0,3.14,$STR_EPOCH_ACTION_SNAP_LEFT},
-			{2.48,0,3.14,$STR_EPOCH_ACTION_SNAP_RIGHT}
+			{0,-2.32,3.114,$STR_EPOCH_ACTION_SNAP_BACK},
+			{0,2.32,3.114,$STR_EPOCH_ACTION_SNAP_FRONT},
+			{-2.52,0,3.114,$STR_EPOCH_ACTION_SNAP_LEFT},
+			{2.46,0,3.114,$STR_EPOCH_ACTION_SNAP_RIGHT}
 		};		
 	};
 	class Wood_Floor_Stairs_Preview_DZ: WoodFloorStairs_DZ {};	

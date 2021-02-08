@@ -4850,10 +4850,10 @@
 		<Key ID="STR_EQUIP_DESC_M9SD">
 			<English>Suppressed semi-automatic pistol &lt;br/&gt;Caliber: 9x19mm SD</English>
 			<Russian>Полуавтоматический пистолет с глушителем&lt;br/&gt;Калибр: 9x19мм дозвук.</Russian>
-			<Spanish>Pistola silenciada semi-automática&lt;br/&gt;Calibre: 9x19mm</Spanish>
-			<French>Pistolet semi-automatique italien avec silencieux &lt;br/&gt;Calibre: 9x19mm</French>
-			<Czech>Poloautomatická pistole s tlumičem &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Beretta 92, Militärversion mit Schalldämpfer&lt;br/&gt;Kaliber: 9 x 19 mm</German>
+			<Spanish>Pistola silenciada semi-automática&lt;br/&gt;Calibre: 9x19mm SD</Spanish>
+			<French>Pistolet semi-automatique italien avec silencieux &lt;br/&gt;Calibre: 9x19mm SD</French>
+			<Czech>Poloautomatická pistole s tlumičem &lt;br/&gt;Kalibr: 9x19mm SD</Czech>
+			<German>Halbautomatische Pistole vom Typ Beretta 92, Militärversion mit Schalldämpfer&lt;br/&gt;Kaliber: 9x19mm SD</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_M1911">
 			<English>Colt M1911</English>
@@ -4888,10 +4888,10 @@
 		<Key ID="STR_EQUIP_DESC_Makarov_SD">
 			<English>Suppressed semi-automatic pistol &lt;br/&gt;Caliber: 9x18mm SD</English>
 			<Russian>Полуавтоматический пистолет с глушителем&lt;br/&gt;Калибр: 9x18мм дозвук.</Russian>
-			<Spanish>Pistola silenciada semi-automática &lt;br/&gt;Calibre: 9x18mm</Spanish>
-			<French>Pistolet semi-automatique russe avec silencieux &lt;br/&gt;Calibre: 9x18mm</French>
+			<Spanish>Pistola silenciada semi-automática &lt;br/&gt;Calibre: 9x18mm SD</Spanish>
+			<French>Pistolet semi-automatique russe avec silencieux &lt;br/&gt;Calibre: 9x18mm SD</French>
 			<Czech>Ruská poloautomatická pistole s tlumičem &lt;br/&gt;Kalibr: 9x18mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Makarow mit Schalldämpfer (Typ PB)&lt;br/&gt;Kaliber: 9 x 18 mm Makarow</German>
+			<German>Halbautomatische Pistole vom Typ Makarow mit Schalldämpfer (Typ PB)&lt;br/&gt;Kaliber: 9x18mm SD</German>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_PDW">
 			<English>PDW</English>
@@ -20172,12 +20172,12 @@
 			<Hungarian>Kaliber: 5.7x28mm SD&lt;br/&gt; Töltények: 50 &lt;br/&gt; Hozzá tartozó fegyver: P90 SD</Hungarian>
         </Key>
 		<Key ID="STR_DZ_MAG_20RND_HK417_NAME">
-			<English>30Rnd. HK417 mag.</English>
-			<Russian>30п. HK417 маг.</Russian>
+			<English>20Rnd. HK417 mag.</English>
+			<Russian>20п. HK417 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_HK417SD_NAME">
-			<English>30Rnd. HK417 SD mag.</English>
-			<Russian>30п. HK417 дозвук. маг.</Russian>
+			<English>20Rnd. HK417 SD mag.</English>
+			<Russian>20п. HK417 дозвук. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_HK417_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: HK417</English>
