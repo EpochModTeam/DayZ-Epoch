@@ -19924,7 +19924,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_5Rnd_127x108_KSVK_NAME">
 			<English>5Rnd. KSVK mag.</English>
-			<Russian>5п. KSVK маг.</Russian>
+			<Russian>5п. КСВК маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5Rnd_86x70_L115A1_NAME">
 			<English>5Rnd. L115 mag.</English>
@@ -19932,11 +19932,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME">
 			<English>20Rnd. VSS/VAL mag.</English>
-			<Russian>20п. VSS/VAL маг.</Russian>
+			<Russian>20п. ВСС/ВАЛ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME">
 			<English>10Rnd. VSS/VAL mag.</English>
-			<Russian>10п. VSS/VAL маг.</Russian>
+			<Russian>10п. ВСС/ВАЛ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_939_VSSVAL_DESC">
 			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: VSS Vintorez, AS VAL</English>
@@ -19944,7 +19944,7 @@
 			<Spanish>Calibre: 9x39mm&lt;br/&gt;Cartuchos: 20&lt;br/&gt;Usado en: VSS Vintorez, AS VAL</Spanish>
 			<Italian>Calibro: 9x39mm&lt;br/&gt;Munizioni: 20&lt;br/&gt;Usato in: VSS Vintorez, AS VAL</Italian>
 			<Polish>Kaliber: 9x39mm&lt;br/&gt;Naboje: 20&lt;br/&gt;Uzywany w: VSS Vintorez, AS VAL</Polish>
-			<Russian>Калибр: 9x39мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: VSS Vintorez, AS VAL</Russian>
+			<Russian>Калибр: 9x39мм&lt;br/&gt;Количество: 20&lt;br/&gt;Исп. в: ВСС Винторез, АС Вал</Russian>
 			<German>Kaliber: 9x39mm&lt;br/&gt;Patronen: 20&lt;br/&gt;Verwendet in: VSS Vintorez, AS VAL</German>
 			<Czech>Kalibr: 9x39mm&lt;br/&gt;Nábojů: 20&lt;br/&gt;Pro: VSS Vintorez, AS VAL</Czech>
 			<Hungarian>Kaliber: 9x39mm &lt;br/&gt; Töltények: 20&lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS VAL</Hungarian>
@@ -19955,7 +19955,7 @@
 			<Spanish>Calibre: 9x39mm&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: VSS Vintorez, AS VAL</Spanish>
 			<Italian>Calibro: 9x39mm&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: VSS Vintorez, AS VAL</Italian>
 			<Polish>Kaliber: 9x39mm&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: VSS Vintorez, AS VAL</Polish>
-			<Russian>Калибр: 9x39мм&lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: VSS Vintorez, AS VAL</Russian>
+			<Russian>Калибр: 9x39мм&lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: ВСС Винторез, АС Вал</Russian>
 			<German>Kaliber: 9x39mm&lt;br/&gt;Patronen: 10&lt;br/&gt;Verwendet in: VSS Vintorez, AS VAL</German>
 			<Czech>Kalibr: 9x39mm&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: VSS Vintorez, AS VAL</Czech>
 			<Hungarian>Kaliber: 9x39mm &lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: VSS Vintorez, AS VAL</Hungarian>
@@ -20502,7 +20502,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_USAS12_SLUG_NAME">
 			<English>20Rnd. USAS-12 Slug</English>
-			<Russian>20п. USAS-12 Slug</Russian>
+			<Russian>20п. USAS-12 пуля</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_USAS12_SLUG_DESC">
 			<English>Caliber: Caliber 12 Slug &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: USAS-12</English>
@@ -21423,7 +21423,7 @@
 			<Spanish>Calibre: 105mm SADARM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: M119</Spanish>
 			<Italian>Calibro: 105mm SADARM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: M119</Italian>
 			<Polish>Kaliber: 105mm SADARM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: M119</Polish>
-			<Russian>Калибр: 105мм Самоприцеливающийся&lt;br/&gt;Автоматически попадают в ближайшую вражескую технику в точке удара.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
+			<Russian>Калибр: 105мм Самонаводящийся&lt;br/&gt;Автоматически наводится на ближайшую вражескую технику в точке удара.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: M119</Russian>
 			<German>Kaliber: 105mm SADARM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: M119</German>
 			<Czech>Kalibr: 105mm SADARM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: M119</Czech>
 			<Hungarian>Kaliber: 105mm SADARM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: M119</Hungarian>
@@ -21544,13 +21544,14 @@
 			<Spanish>Calibre: 122mm SADARM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
 			<Italian>Calibro: 122mm SADARM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
 			<Polish>Kaliber: 122mm SADARM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
-			<Russian>Калибр: 122мм Самоприцеливающийся&lt;br/&gt;Автоматически попадают в ближайшую вражескую технику в точке удара.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Д-30</Russian>
+			<Russian>Калибр: 122мм Самонаводящийся&lt;br/&gt;Автоматически наводится на ближайшую вражескую технику в точке удара.&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Д-30</Russian>
 			<German>Kaliber: 122mm SADARM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
 			<Czech>Kalibr: 122mm SADARM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
 			<Hungarian>Kaliber: 122mm SADARM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30LASER_NAME">
 			<English>30Rnd. D-30 Laser mag.</English>
+			<Russian>30п. Д-30 Laser маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30LASER_DESC">
 			<English>Caliber: 122mm Laser&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21558,7 +21559,7 @@
 			<Spanish>Calibre: 122mm Laser&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
 			<Italian>Calibro: 122mm Laser&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
 			<Polish>Kaliber: 122mm Laser&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
-			<Russian>Калибр: 122мм Laser&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<Russian>Калибр: 122мм с лазерным наведением&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Д-30</Russian>
 			<German>Kaliber: 122mm Laser&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
 			<Czech>Kalibr: 122mm Laser&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
 			<Hungarian>Kaliber: 122mm Laser&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
@@ -21566,6 +21567,7 @@
 		<Key ID="STR_DZ_MAG_30RND_D30SMOKE_NAME">
 			<English>30Rnd. D-30 Smoke mag.</English>
 			<German>30Rnd. D-30 Rauch mag.</German>
+			<Russian>30п. Д-30 дым. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30SMOKE_DESC">
 			<English>Caliber: 122mm Smoke&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21573,13 +21575,14 @@
 			<Spanish>Calibre: 122mm Smoke&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
 			<Italian>Calibro: 122mm Smoke&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
 			<Polish>Kaliber: 122mm Smoke&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
-			<Russian>Калибр: 122мм Smoke&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<Russian>Калибр: 122мм Дымовой&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Д-30</Russian>
 			<German>Kaliber: 122mm Rauch&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
 			<Czech>Kalibr: 122mm Smoke&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
 			<Hungarian>Kaliber: 122mm Smoke&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30ILLUM_NAME">
 			<English>30Rnd. D-30 ILLUM mag.</English>
+			<Russian>30п. Д-30 осв. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30ILLUM_DESC">
 			<English>Caliber: 122mm ILLUM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21587,7 +21590,7 @@
 			<Spanish>Calibre: 122mm ILLUM&lt;br/&gt;Cartuchos: 30&lt;br/&gt;Usado en: D-30</Spanish>
 			<Italian>Calibro: 122mm ILLUM&lt;br/&gt;Munizioni: 30&lt;br/&gt;Usato in: D-30</Italian>
 			<Polish>Kaliber: 122mm ILLUM&lt;br/&gt;Naboje: 30&lt;br/&gt;Uzywany w: D-30</Polish>
-			<Russian>Калибр: 122мм ILLUM&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: D-30</Russian>
+			<Russian>Калибр: 122мм Осветительный&lt;br/&gt;Количество: 30&lt;br/&gt;Исп. в: Д-30</Russian>
 			<German>Kaliber: 122mm ILLUM&lt;br/&gt;Patronen: 30&lt;br/&gt;Verwendet in: D-30</German>
 			<Czech>Kalibr: 122mm ILLUM&lt;br/&gt;Nábojů: 30&lt;br/&gt;Pro: D-30</Czech>
 			<Hungarian>Kaliber: 122mm ILLUM&lt;br/&gt; Töltények: 30&lt;br/&gt; Hozzá tartozó fegyver: D-30</Hungarian>
@@ -21624,6 +21627,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_23RND_T72SABOT_NAME">
 			<English>23Rnd. T72 SABOT mag.</English>
+			<Russian>23п. T72 SABOT маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_23RND_T72SABOT_DESC">
 			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 23&lt;br/&gt;Used in: T72</English>
@@ -21631,13 +21635,14 @@
 			<Spanish>Calibre: 125mm SABOT&lt;br/&gt;Cartuchos: 23&lt;br/&gt;Usado en: T72</Spanish>
 			<Italian>Calibro: 125mm SABOT&lt;br/&gt;Munizioni: 23&lt;br/&gt;Usato in: T72</Italian>
 			<Polish>Kaliber: 125mm SABOT&lt;br/&gt;Naboje: 23&lt;br/&gt;Uzywany w: T72</Polish>
-			<Russian>Калибр: 125мм SABOT&lt;br/&gt;Количество: 23&lt;br/&gt;Исп. в: T72</Russian>
+			<Russian>Калибр: 125мм с отделяющимся поддоном&lt;br/&gt;Количество: 23&lt;br/&gt;Исп. в: T72</Russian>
 			<German>Kaliber: 125mm SABOT&lt;br/&gt;Patronen: 23&lt;br/&gt;Verwendet in: T72</German>
 			<Czech>Kalibr: 125mm SABOT&lt;br/&gt;Nábojů: 23&lt;br/&gt;Pro: T72</Czech>
 			<Hungarian>Kaliber: 125mm SABOT&lt;br/&gt; Töltények: 23&lt;br/&gt; Hozzá tartozó fegyver: T72</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_22RND_IMISABOT_NAME">
 			<English>22Rnd. IMI SABOT mag.</English>
+			<Russian>22п. IMI SABOT маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_22RND_IMISABOT_DESC">
 			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 22&lt;br/&gt;Used in: IMI</English>
@@ -21645,13 +21650,14 @@
 			<Spanish>Calibre: 125mm SABOT&lt;br/&gt;Cartuchos: 22&lt;br/&gt;Usado en: IMI</Spanish>
 			<Italian>Calibro: 125mm SABOT&lt;br/&gt;Munizioni: 22&lt;br/&gt;Usato in: IMI</Italian>
 			<Polish>Kaliber: 125mm SABOT&lt;br/&gt;Naboje: 22&lt;br/&gt;Uzywany w: IMI</Polish>
-			<Russian>Калибр: 125мм SABOT&lt;br/&gt;Количество: 22&lt;br/&gt;Исп. в: IMI</Russian>
+			<Russian>Калибр: 125мм с отделяющимся поддоном&lt;br/&gt;Количество: 22&lt;br/&gt;Исп. в: IMI</Russian>
 			<German>Kaliber: 125mm SABOT&lt;br/&gt;Patronen: 22&lt;br/&gt;Verwendet in: IMI</German>
 			<Czech>Kalibr: 125mm SABOT&lt;br/&gt;Nábojů: 22&lt;br/&gt;Pro: IMI</Czech>
 			<Hungarian>Kaliber: 125mm SABOT&lt;br/&gt; Töltények: 22&lt;br/&gt; Hozzá tartozó fegyver: IMI</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_T72SABOT_NAME">
 			<English>15Rnd. T72 SABOT mag.</English>
+			<Russian>15п. T72 SABOT маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_T72SABOT_DESC">
 			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: T72</English>
@@ -21659,14 +21665,14 @@
 			<Spanish>Calibre: 125mm SABOT&lt;br/&gt;Cartuchos: 15&lt;br/&gt;Usado en: T72</Spanish>
 			<Italian>Calibro: 125mm SABOT&lt;br/&gt;Munizioni: 15&lt;br/&gt;Usato in: T72</Italian>
 			<Polish>Kaliber: 125mm SABOT&lt;br/&gt;Naboje: 15&lt;br/&gt;Uzywany w: T72</Polish>
-			<Russian>Калибр: 125мм SABOT&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: T72</Russian>
+			<Russian>Калибр: 125мм с отделяющимся поддоном&lt;br/&gt;Количество: 15&lt;br/&gt;Исп. в: T72</Russian>
 			<German>Kaliber: 125mm SABOT&lt;br/&gt;Patronen: 15&lt;br/&gt;Verwendet in: T72</German>
 			<Czech>Kalibr: 125mm SABOT&lt;br/&gt;Nábojů: 15&lt;br/&gt;Pro: T72</Czech>
 			<Hungarian>Kaliber: 125mm SABOT&lt;br/&gt; Töltények: 15&lt;br/&gt; Hozzá tartozó fegyver: T72</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_85mmHE_NAME">
 			<English>33Rnd. 85mm HE mag.</English>
-			<Russian>33п. 85мм ОФ маг.</Rissian>
+			<Russian>33п. 85мм ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_85mmHE_DESC">
 			<English>Caliber: 85mm HE&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: 85mm Cannon</English>
@@ -21681,6 +21687,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_85mmAP_NAME">
 			<English>10Rnd. 85mm AP mag.</English>
+			<Russian>10п. 85мм ББ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_85mmAP_DESC">
 			<English>Caliber: 85mm AP&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: 85mm Cannon</English>
@@ -21688,426 +21695,545 @@
 			<Spanish>Calibre: 85mm AP&lt;br/&gt;Cartuchos: 10&lt;br/&gt;Usado en: 85mm Cannon</Spanish>
 			<Italian>Calibro: 85mm AP&lt;br/&gt;Munizioni: 10&lt;br/&gt;Usato in: 85mm Cannon</Italian>
 			<Polish>Kaliber: 85mm AP&lt;br/&gt;Naboje: 10&lt;br/&gt;Uzywany w: 85mm Cannon</Polish>
-			<Russian>Калибр: 85мм AP&lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: 85мм Cannon</Russian>
+			<Russian>Калибр: 85мм Бронебойный&lt;br/&gt;Количество: 10&lt;br/&gt;Исп. в: 85мм пушке</Russian>
 			<German>Kaliber: 85mm AP&lt;br/&gt;Patronen: 10&lt;br/&gt;Verwendet in: 85mm Kanone</German>
 			<Czech>Kalibr: 85mm AP&lt;br/&gt;Nábojů: 10&lt;br/&gt;Pro: 85mm Cannon</Czech>
 			<Hungarian>Kaliber: 85mm AP&lt;br/&gt; Töltények: 10&lt;br/&gt; Hozzá tartozó fegyver: 85mm Cannon</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT5_BMP2_NAME">
 			<English>8Rnd. AT5 BMP-2</English>
+			<Russian>8п. БМП-2 ПТ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT5_BMP2_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT5 BMP-2</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: AT5 BMP-2</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: БМП-2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_AT5_BRDM2_NAME">
 			<English>5Rnd. AT5 BRDM-2</English>
+			<Russian>5п. БРДМ-2 ПТ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_AT5_BRDM2_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 5&lt;br/&gt;Used in: AT5 BRDM-2</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 5&lt;br/&gt;Verwendet in: AT5 BRDM-2</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: БРДМ-2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT5_BMP3_NAME">
 			<English>8Rnd. AT5 BMP-3</English>
+			<Russian>8п. БМП-3 ПТ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT5_BMP3_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT5 BMP-3</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: AT5 BMP-3</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: БМП-3</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_AT5_T90_NAME">
 			<English>5Rnd. AT5 T90</English>
+			<Russian>5п. T90 ПТ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_AT5_T90_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 5&lt;br/&gt;Used in: AT5 T90</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 5&lt;br/&gt;Verwendet in: AT5 T90</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в: T90</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT9_Mi24P_NAME">
 			<English>4Rnd. AT9 Mi-24P</English>
+			<Russian>4п. Ми-24П ПТ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT9_Mi24P_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT9 Mi-24P</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AT9 Mi-24P</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: Ми-24П</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT9_Mi24V_NAME">
 			<English>8Rnd. AT9 Mi-24V</English>
+			<Russian>8п. Ми-24В ПТ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT9_Mi24V_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT9 Mi-24V</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: AT9 Mi-24V</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Ми-24В</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT6_Mi24V_NAME">
 			<English>4Rnd. AT6 Mi-24V</English>
+			<Russian>4п. Ми-24В ПТ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT6_Mi24V_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT6 Mi-24V</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AT6 Mi-24V</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: Ми-24В</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT2_Mi24D_NAME">
 			<English>4Rnd. AT2 Mi-24D</English>
+			<Russian>4п. Ми-24Д ПТ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT2_Mi24D_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT2 Mi-24D</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AT2 Mi-24D</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: Ми-24Д</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_AT13_NAME">
 			<English>6Rnd. AT13</English>
+			<Russian>6п. AT13</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_AT13_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: AT13</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: AT13</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: AT13</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_TOW_NAME">
 			<English>6Rnd. TOW</English>
+			<Russian>6п. TOW</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_TOW_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: TOW</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: TOW</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: TOW</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_TOW_NAME">
 			<English>2Rnd. TOW</English>
+			<Russian>2п. TOW</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_TOW_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: TOW</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: TOW</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: TOW</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_ATGM_NAME">
 			<English>2Rnd. ATGM</English>
+			<Russian>2п. ATGM</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_ATGM_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: ATGM Spike</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: ATGM Spike</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: ATGM Spike</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_Bolide_NAME">
 			<English>1Rnd. Bolide</English>
+			<Russian>1п. Bolide</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_Bolide_DESC">
 			<English>Anti Air Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: RBS-70</English>
 			<German>Flugabwehrrakete&lt;br/&gt;Raketen: 1&lt;br/&gt;Verwendet in: RBS-70</German>
+			<Russian>Зенитная управляемая ракета&lt;br/&gt;Количество: 1&lt;br/&gt;Исп. в: RBS-70</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_TOW2_NAME">
 			<English>6Rnd. TOW-2</English>
+			<Russian>6п. TOW-2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_TOW2_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: TOW-2</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: TOW-2</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: TOW-2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_TOW2_NAME">
 			<English>2Rnd. TOW-2</English>
+			<Russian>2п. TOW-2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_TOW2_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: TOW-2</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: TOW-2</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: TOW-2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_HELLFIRE_NAME">
 			<English>8Rnd. Hellfire</English>
+			<Russian>8п. Hellfire</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_HELLFIRE_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Hellfire</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: Hellfire</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Hellfire</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_HELLFIRE_NAME">
 			<English>4Rnd. Hellfire</English>
+			<Russian>4п. Hellfire</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_HELLFIRE_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Hellfire</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: Hellfire</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: Hellfire</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_Vikhr_KA52_NAME">
 			<English>12Rnd. Vikhr Ka-52</English>
+			<Russian>12п. Вихрь Ka-52</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_Vikhr_KA52_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: Vikhr Ka-52</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 12&lt;br/&gt;Verwendet in: Vikhr Ka-52</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 12&lt;br/&gt;Исп. в: Вихрь Ka-52</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Sidewinder_AV8B_NAME">
 			<English>4Rnd. Sidewinder AV-8B</English>
+			<Russian>4п. Sidewinder AV-8B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Sidewinder_AV8B_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Sidewinder AV-8B</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: Sidewinder AV-8B</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: Sidewinder AV-8B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_Sidewinder_AH64_NAME">
 			<English>8Rnd. Sidewinder AH64</English>
+			<Russian>8п. Sidewinder AH64</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_Sidewinder_AH64_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Sidewinder AH64</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: Sidewinder AH64</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Sidewinder AH64</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_F35_NAME">
 			<English>2Rnd. Sidewinder F35B</English>
+			<Russian>2п. Sidewinder F35B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_F35_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Sidewinder F35B</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: Sidewinder F35B</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: Sidewinder F35B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_AH1Z_NAME">
 			<English>2Rnd. Sidewinder AH-1Z</English>
+			<Russian>2п. Sidewinder AH-1Z</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_AH1Z_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Sidewinder AH-1Z</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: Sidewinder AH-1Z</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: Sidewinder AH-1Z</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_14RND_FFAR_NAME">
 			<English>14Rnd. FFAR Hydra</English>
+			<Russian>14п. FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_14RND_FFAR_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 14&lt;br/&gt;Used in: FFAR Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 14&lt;br/&gt;Verwendet in: FFAR Hydra</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 14&lt;br/&gt;Исп. в: FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_28RND_FFAR_NAME">
 			<English>28Rnd. FFAR Hydra</English>
+			<Russian>28п. FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_28RND_FFAR_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 28&lt;br/&gt;Used in: FFAR Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 28&lt;br/&gt;Verwendet in: FFAR Hydra</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 28&lt;br/&gt;Исп. в: FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_38RND_FFAR_NAME">
 			<English>38Rnd. FFAR Hydra</English>
+			<Russian>38п. FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_38RND_FFAR_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 38&lt;br/&gt;Used in: FFAR Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 38&lt;br/&gt;Verwendet in: FFAR Hydra</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 38&lt;br/&gt;Исп. в: FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_FFAR_NAME">
 			<English>12Rnd. FFAR Hydra</English>
+			<Russian>12п. FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_FFAR_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: FFAR Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 12&lt;br/&gt;Verwendet in: FFAR Hydra</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 12&lt;br/&gt;Исп. в: FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_CRV7_NAME">
 			<English>12Rnd. CRV7 Hydra</English>
+			<Russian>12п. CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_CRV7_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: CRV7 Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 12&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 12&lt;br/&gt;Исп. в: CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_38RND_CRV7_NAME">
 			<English>38Rnd. CRV7 Hydra</English>
+			<Russian>38п. CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_38RND_CRV7_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 38&lt;br/&gt;Used in: CRV7 Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 38&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 38&lt;br/&gt;Исп. в: CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_19RND_CRV7_HEPD_NAME">
 			<English>19Rnd. CRV7 HEPD Hydra</English>
+			<Russian>19п. CRV7 Hydra ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_19RND_CRV7_HEPD_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 19&lt;br/&gt;Used in: CRV7 Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 19&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 19&lt;br/&gt;Исп. в: CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_19RND_CRV7_FAT_NAME">
 			<English>19Rnd. CRV7 FAT Hydra</English>
+			<Russian>19п. CRV7 Hydra ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_19RND_CRV7_FAT_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 19&lt;br/&gt;Used in: CRV7 Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 19&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
+			<Russian>Бронебойная противотанковая ракета со стреловидными поражающими элементами&lt;br/&gt;Количество: 19&lt;br/&gt;Исп. в: CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_80mm_NAME">
 			<English>40Rnd. 80mm HE</English>
+			<Russian>40п. 80мм ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_80mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 80mm Launcher</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: 80mm-Raketenwerfer</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: 80мм пусковых установках</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_80RND_80mm_NAME">
 			<English>80Rnd. 80mm HE</English>
+			<Russian>80п. 80мм ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_80RND_80mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 80&lt;br/&gt;Used in: 80mm Launcher</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 80&lt;br/&gt;Verwendet in: 80mm-Raketenwerfer</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 80&lt;br/&gt;Исп. в: 80мм пусковых установках</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_GRAD_NAME">
 			<English>40Rnd. GRAD</English>
+			<Russian>40п. Град</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_GRAD_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: BM-21 Grad</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: BM-21 Grad</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: БМ-21 "Град"</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_RM70_NAME">
 			<English>40Rnd. RM-70</English>
+			<Russian>40п. RM-70</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_RM70_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: RM-70</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: RM-70</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: RM-70</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_MLRS_NAME">
 			<English>12Rnd. MLRS</English>
+			<Russian>12п. MLRS</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_MLRS_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: M270 MLRS</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 12&lt;br/&gt;Verwendet in: M270 MLRS</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 12&lt;br/&gt;Исп. в: M270 MLRS</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_S8T_NAME">
 			<English>40Rnd. S8T</English>
+			<Russian>40п. S8T</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_S8T_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 80mm Launcher</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: 80mm-Raketenwerfer</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: 80мм пусковых установках</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_80RND_S8T_NAME">
 			<English>80Rnd. S8T</English>
+			<Russian>80п. S8T</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_80RND_S8T_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 80&lt;br/&gt;Used in: 80mm Launcher</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 80&lt;br/&gt;Verwendet in: 80mm-Raketenwerfer</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 80&lt;br/&gt;Исп. в: 80мм пусковых установках</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_64RND_57mm_NAME">
 			<English>64Rnd. 57mm</English>
+			<Russian>64п. 57мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_64RND_57mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 64&lt;br/&gt;Used in: 57mm Launcher</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 64&lt;br/&gt;Verwendet in: 57mm-Raketenwerfer</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 64&lt;br/&gt;Исп. в: 57мм пусковых установках</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_14RND_57mm_NAME">
 			<English>14Rnd. 57mm</English>
+			<Russian>14п. 57мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_14RND_57mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 14&lt;br/&gt;Used in: 57mm Launcher</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 14&lt;br/&gt;Verwendet in: 57mm-Raketenwerfer</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 14&lt;br/&gt;Исп. в: 57мм пусковых установках</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_128RND_57mm_NAME">
 			<English>128Rnd. 57mm</English>
+			<Russian>128п. 57мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_128RND_57mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 128&lt;br/&gt;Used in: 57mm Launcher</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 128&lt;br/&gt;Verwendet in: 57mm-Raketenwerfer</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 128&lt;br/&gt;Исп. в: 57мм пусковых установках</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_192RND_57mm_NAME">
 			<English>192Rnd. 57mm</English>
+			<Russian>192п. 57мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_192RND_57mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 192&lt;br/&gt;Used in: 57mm Launcher</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 192&lt;br/&gt;Verwendet in: 57mm-Raketenwerfer</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 192&lt;br/&gt;Исп. в: 57мм пусковых установках</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_GBU12_NAME">
 			<English>6Rnd. GBU-12</English>
+			<Russian>6п. GBU-12</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_GBU12_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: AV-8B</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: AV-8B</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: AV-8B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_GBU12_NAME">
 			<English>2Rnd. GBU-12</English>
+			<Russian>2п. GBU-12</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_GBU12_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: AV-8B</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: AV-8B</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: AV-8B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_GBU12_NAME">
 			<English>4Rnd. GBU-12</English>
+			<Russian>4п. GBU-12</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_GBU12_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AV-8B</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AV-8B</German>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: AV-8B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_FAB_NAME">
 			<English>2Rnd. FAB 250</English>
+			<Russian>2п. ФАБ-250</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_FAB_DESC">
 			<English>Unguided bomb&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: FAB 250</English>
 			<German>Freifallbombe&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: FAB 250</German>
+			<Russian>Фугасная авиабомба&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_FAB_NAME">
 			<English>4Rnd. FAB 250</English>
+			<Russian>4п. ФАБ-250</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_FAB_DESC">
 			<English>Unguided bomb&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: FAB 250</English>
 			<German>Freifallbombe&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: FAB 250</German>
+			<Russian>Фугасная авиабомба&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_Mk82_NAME">
 			<English>6Rnd. Mk82</English>
+			<Russian>6п. Mk82</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_Mk82_DESC">
 			<English>Unguided bomb&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: Mk82</English>
 			<German>Freifallbombe&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: Mk82</German>
+			<Russian>Неуправляемая авиабомба&lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_3RND_Mk82_NAME">
 			<English>3Rnd. Mk82</English>
+			<Russian>3п. Mk82</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_3RND_Mk82_DESC">
 			<English>Unguided bomb&lt;br/&gt;Rockets: 3&lt;br/&gt;Used in: Mk82</English>
 			<German>Freifallbombe&lt;br/&gt;Raketen: 3&lt;br/&gt;Verwendet in: Mk82</German>
+			<Russian>Неуправляемая авиабомба&lt;br/&gt;Количество: 3&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_R73_NAME">
 			<English>4Rnd. R-73</English>
+			<Russian>4п. Р-73</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_R73_DESC">
 			<English>Air-to-Air Missile&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: R-73</English>
 			<German>Luft-Luft-Rakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: R-73</German>
+			<Russian>Ракета воздух-воздух&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_R73_NAME">
 			<English>2Rnd. R-73</English>
+			<Russian>2п. Р-73</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_R73_DESC">
 			<English>Air-to-Air Missile&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: R-73</English>
 			<German>Luft-Luft-Rakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: R-73</German>
+			<Russian>Ракета воздух-воздух&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Ch29_NAME">
 			<English>4Rnd. Ch-29</English>
+			<Russian>4п. Х-29</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Ch29_DESC">
-			<English>Air-to-ground missile &lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Ch-29</English>
+			<English>Air-to-ground missile&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Ch-29</English>
 			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: Ch-29</German>
+			<Russian>Ракета воздух-земля&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_Ch29_NAME">
 			<English>6Rnd. Ch-29</English>
+			<Russian>6п. Х-29</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_Ch29_DESC">
-			<English>Air-to-ground missile &lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: Ch-29</English>
+			<English>Air-to-ground missile&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: Ch-29</English>
 			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 6&lt;br/&gt;Verwendet in: Ch-29</German>
+			<Russian>Ракета воздух-земля&lt;br/&gt;Количество: 6&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_Ch29_NAME">
 			<English>8Rnd. Ch-29</English>
+			<Russian>8п. Х-29</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_Ch29_DESC">
-			<English>Air-to-ground missile &lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Ch-29</English>
+			<English>Air-to-ground missile&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Ch-29</English>
 			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: Ch-29</German>
+			<Russian>Ракета воздух-земля&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: авиации</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_Maverick_NAME">
 			<English>2Rnd. Maverick</English>
+			<Russian>2п. Maverick</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_Maverick_DESC">
 			<English>Air-to-ground missile &lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: A-10</English>
 			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: A-10</German>
+			<Russian>Ракета воздух-земля&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: A-10</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Maverick_NAME">
 			<English>4Rnd. Maverick</English>
+			<Russian>4п. Maverick</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Maverick_DESC">
 			<English>Air-to-ground missile &lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: L-159</English>
 			<German>Luft-Boden-Rakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: L-159</German>
+			<Russian>Ракета воздух-земля&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: L-159</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_9M311_NAME">
 			<English>8Rnd. 9M311</English>
+			<Russian>8п. 9М311</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_9M311_DESC">
 			<English>Anti air missile &lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: 2S6 Tunguska</English>
 			<German>Flugabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: 2S6 Tunguska</German>
+			<Russian>Зенитная ракета&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: 2С6 "Тунгуска"</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_STINGER_NAME">
 			<English>8Rnd. Stinger</English>
+			<Russian>8п. Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_STINGER_DESC">
 			<English>Anti Air Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Stinger</English>
 			<German>Luftabwehrrakete&lt;br/&gt;Raketen: 8&lt;br/&gt;Verwendet in: Stinger</German>
+			<Russian>Зенитная ракета&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_STINGER_NAME">
 			<English>4Rnd. Stinger</English>
+			<Russian>4п. Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_STINGER_DESC">
 			<English>Anti Air Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Stinger</English>
 			<German>Luftabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: Stinger</German>
+			<Russian>Зенитная ракета&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_STINGER_NAME">
 			<English>2Rnd. Stinger</English>
+			<Russian>2п. Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_STINGER_DESC">
 			<English>Anti Air Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Stinger</English>
 			<German>Luftabwehrrakete&lt;br/&gt;Raketen: 2&lt;br/&gt;Verwendet in: Stinger</German>
+			<Russian>Зенитная ракета&lt;br/&gt;Количество: 2&lt;br/&gt;Исп. в: Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_21RND_T55HEAT_NAME">
 			<English>21Rnd. HEAT T55 mag.</English>
+			<Russian>21п. T55 кумул. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_21RND_T55HEAT_DESC">
 			<English>Caliber: 100mm HEAT&lt;br/&gt;Rounds: 21&lt;br/&gt;Used in: T55</English>
@@ -22115,7 +22241,7 @@
 			<Spanish>Calibre: 100mm HEAT&lt;br/&gt;Cartuchos: 21&lt;br/&gt;Usado en: T55</Spanish>
 			<Italian>Calibro: 100mm HEAT&lt;br/&gt;Munizioni: 21&lt;br/&gt;Usato in: T55</Italian>
 			<Polish>Kaliber: 100mm HEAT&lt;br/&gt;Naboje: 21&lt;br/&gt;Uzywany w: T55</Polish>
-			<Russian>Калибр: 100мм HEAT&lt;br/&gt;Количество: 21&lt;br/&gt;Исп. в: T55</Russian>
+			<Russian>Калибр: 100мм Кумулятивный&lt;br/&gt;Количество: 21&lt;br/&gt;Исп. в: T55</Russian>
 			<German>Kaliber: 100mm HEAT&lt;br/&gt;Patronen: 21&lt;br/&gt;Verwendet in: T55</German>
 			<Czech>Kalibr: 100mm HEAT&lt;br/&gt;Nábojů: 21&lt;br/&gt;Pro: T55</Czech>
 			<Hungarian>Kaliber: 100mm HEAT&lt;br/&gt; Töltények: 21&lt;br/&gt; Hozzá tartozó fegyver: T55</Hungarian>
@@ -22167,6 +22293,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_M252ILLUM_NAME">
 			<English>8Rnd. M252 ILLUM mag.</English>
+			<Russian>8п. M252 осв. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_M252ILLUM_DESC">
 			<English>Caliber: 81mm ILLUM&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M252</English>
@@ -22174,7 +22301,7 @@
 			<Spanish>Calibre: 81mm ILLUM&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: M252</Spanish>
 			<Italian>Calibro: 81mm ILLUM&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: M252</Italian>
 			<Polish>Kaliber: 81mm ILLUM&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: M252</Polish>
-			<Russian>Калибр: 81мм ILLUM&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: M252</Russian>
+			<Russian>Калибр: 81мм Осветительный&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: M252</Russian>
 			<German>Kaliber: 81mm ILLUM&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: M252</German>
 			<Czech>Kalibr: 81mm ILLUM&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: M252</Czech>
 			<Hungarian>Kaliber: 81mm ILLUM&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: M252</Hungarian>
@@ -22196,7 +22323,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14WP_NAME">
 			<English>8Rnd. 2B14 WP mag.</English>
-			<Russian>8п. 2B14 БФ маг.</Russian>
+			<Russian>8п. 2Б14 БФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14WP_DESC">
 			<English>Caliber: 82mm WP&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: 2B14</English>
@@ -22204,13 +22331,14 @@
 			<Spanish>Calibre: 82mm WP&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: 2B14</Spanish>
 			<Italian>Calibro: 82mm WP&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: 2B14</Italian>
 			<Polish>Kaliber: 82mm WP&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: 2B14</Polish>
-			<Russian>Калибр: 82мм с белым фосфором&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: 2B14</Russian>
+			<Russian>Калибр: 82мм с белым фосфором&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: 2Б14</Russian>
 			<German>Kaliber: 82mm WP&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: 2B14</German>
 			<Czech>Kalibr: 82mm WP&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: 2B14</Czech>
 			<Hungarian>Kaliber: 82mm WP&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: 2B14</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14ILLUM_NAME">
 			<English>8Rnd. 2B14 ILLUM mag.</English>
+			<Russian>8п. 2Б14 осв. маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14ILLUM_DESC">
 			<English>Caliber: 82mm ILLUM&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: 2B14</English>
@@ -22218,7 +22346,7 @@
 			<Spanish>Calibre: 82mm ILLUM&lt;br/&gt;Cartuchos: 8&lt;br/&gt;Usado en: 2B14</Spanish>
 			<Italian>Calibro: 82mm ILLUM&lt;br/&gt;Munizioni: 8&lt;br/&gt;Usato in: 2B14</Italian>
 			<Polish>Kaliber: 82mm ILLUM&lt;br/&gt;Naboje: 8&lt;br/&gt;Uzywany w: 2B14</Polish>
-			<Russian>Калибр: 82мм ILLUM&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: 2B14</Russian>
+			<Russian>Калибр: 82мм Осветительный&lt;br/&gt;Количество: 8&lt;br/&gt;Исп. в: 2Б14</Russian>
 			<German>Kaliber: 82mm ILLUM&lt;br/&gt;Patronen: 8&lt;br/&gt;Verwendet in: 2B14</German>
 			<Czech>Kalibr: 82mm ILLUM&lt;br/&gt;Nábojů: 8&lt;br/&gt;Pro: 2B14</Czech>
 			<Hungarian>Kaliber: 82mm ILLUM&lt;br/&gt; Töltények: 8&lt;br/&gt; Hozzá tartozó fegyver: 2B14</Hungarian>
@@ -22240,6 +22368,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_FV510SABOT_NAME">
 			<English>200Rnd. FV510 SABOT mag.</English>
+			<Russian>200п. FV510 SABOT маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_FV510SABOT_DESC">
 			<English>Caliber: 40mm SABOT&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: FV510</English>
@@ -22247,13 +22376,14 @@
 			<Spanish>Calibre: 40mm SABOT&lt;br/&gt;Cartuchos: 200&lt;br/&gt;Usado en: FV510</Spanish>
 			<Italian>Calibro: 40mm SABOT&lt;br/&gt;Munizioni: 200&lt;br/&gt;Usato in: FV510</Italian>
 			<Polish>Kaliber: 40mm SABOT&lt;br/&gt;Naboje: 200&lt;br/&gt;Uzywany w: FV510</Polish>
-			<Russian>Калибр: 40мм SABOT&lt;br/&gt;Количество: 200&lt;br/&gt;Исп. в: FV510</Russian>
+			<Russian>Калибр: 40мм с отделяющимся поддоном&lt;br/&gt;Количество: 200&lt;br/&gt;Исп. в: FV510</Russian>
 			<German>Kaliber: 40mm SABOT&lt;br/&gt;Patronen: 200&lt;br/&gt;Verwendet in: FV510</German>
 			<Czech>Kalibr: 40mm SABOT&lt;br/&gt;Nábojů: 200&lt;br/&gt;Pro: FV510</Czech>
 			<Hungarian>Kaliber: 40mm SABOT&lt;br/&gt; Töltények: 200&lt;br/&gt; Hozzá tartozó fegyver: FV510</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_ZPL_20_NAME">
 			<English>210Rnd. ZPL-20 mag.</English>
+			<Russian>210п. ZPL-20 mag.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_ZPL_20_DESC">
 			<English>Caliber: 20mm&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: ZPL-20</English>
@@ -22268,7 +22398,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_140RND_ATKMK44_NAME">
 			<English>140Rnd. HE ATK MK44 mag.</English>
-			<English>140п. ОФ ATK MK44 маг.</English>
+			<Russian>140п. ОФ ATK MK44 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_140RND_ATKMK44_DESC">
 			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 140&lt;br/&gt;Used in: ATK MK44</English>
@@ -22283,6 +22413,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_60RND_ATKMK44_NAME">
 			<English>60Rnd. AP ATK MK44 mag.</English>
+			<Russian>60п. ББ ATK MK44 маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_60RND_ATKMK44_DESC">
 			<English>Caliber: 30mm AP&lt;br/&gt;Rounds: 60&lt;br/&gt;Used in: ATK MK44</English>
@@ -22290,42 +22421,50 @@
 			<Spanish>Calibre: 30mm AP&lt;br/&gt;Cartuchos: 60&lt;br/&gt;Usado en: ATK MK44</Spanish>
 			<Italian>Calibro: 30mm AP&lt;br/&gt;Munizioni: 60&lt;br/&gt;Usato in: ATK MK44</Italian>
 			<Polish>Kaliber: 30mm AP&lt;br/&gt;Naboje: 60&lt;br/&gt;Uzywany w: ATK MK44</Polish>
-			<Russian>Калибр: 30мм AP&lt;br/&gt;Количество: 60&lt;br/&gt;Исп. в: ATK MK44</Russian>
+			<Russian>Калибр: 30мм Бронебойный&lt;br/&gt;Количество: 60&lt;br/&gt;Исп. в: ATK MK44</Russian>
 			<German>Kaliber: 30mm AP&lt;br/&gt;Patronen: 60&lt;br/&gt;Verwendet in: ATK MK44</German>
 			<Czech>Kalibr: 30mm AP&lt;br/&gt;Nábojů: 60&lt;br/&gt;Pro: ATK MK44</Czech>
 			<Hungarian>Kaliber: 30mm AP&lt;br/&gt; Töltények: 60&lt;br/&gt; Hozzá tartozó fegyver: ATK MK44</Hungarian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_PG15V_NAME">
 			<English>1Rnd. PG15V HE</English>
+			<Russian>1п. ПГ-15В</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_PG15V_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: 2A28 Grom</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 1&lt;br/&gt;Verwendet in: 2A28 Grom</German>
+			<Russian>Кумулятивная противотанковая граната&lt;br/&gt;Количество: 1&lt;br/&gt;Исп. в: 2А28 "Гром"</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_PG15V_NAME">
 			<English>40Rnd. PG15V HE</English>
+			<Russian>40п. ПГ-15В</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_PG15V_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 2A28 Grom</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: 2A28 Grom</German>
+			<Russian>Кумулятивная противотанковая граната&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: 2А28 "Гром"</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_AT3_NAME">
 			<English>1Rnd. AT-3 Sagger</English>
+			<Russian>1п. AT-3 Sagger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_AT3_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: AT-3</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 1&lt;br/&gt;Verwendet in: AT-3</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 1&lt;br/&gt;Исп. в: AT-3</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT3_NAME">
 			<English>4Rnd. AT-3 Sagger</English>
+			<Russian>4п. AT-3 Sagger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT3_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT-3</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 4&lt;br/&gt;Verwendet in: AT-3</German>
+			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 4&lt;br/&gt;Исп. в: AT-3</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_400RND_M621_NAME">
 			<English>400Rnd. 20mm HE mag.</English>
-			<English>400п. 20мм ОФ маг.</English>
+			<Russian>400п. 20мм ОФ маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_400RND_M621_DESC">
 			<English>Caliber: 20mm HE&lt;br/&gt;Rounds: 400&lt;br/&gt;Used in: 20mm Cannon M621</English>
@@ -22340,6 +22479,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1200RND_M789_NAME">
 			<English>1200Rnd. 30x113mm mag.</English>
+			<Russian>1200п. 30x113мм маг.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1200RND_M789_DESC">
 			<English>Caliber: 30x113mm&lt;br/&gt;Rounds: 1200&lt;br/&gt;Used in: AH-64</English>
@@ -22543,7 +22683,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_DESC">
 			<English>Red dot collimator sight&lt;br/&gt;Manufactured in Izhevsk Russia.</English>
-			<Russian>Электронный коллиматорный прицел&lt;br/&gt;Произведен росcийской компанией ОАО «Ижевский мотозавод "Аксион-холдинг"».</Russian>
+			<Russian>Электронный коллиматорный прицел&lt;br/&gt;Производитель: ОАО «Ижевский мотозавод Аксион-холдинг».</Russian>
 			<German>Rotpunkt Kollimator Sicht&lt;br/&gt;Hergestellt in Izhevsk Russland.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_KOBRA_RMVE">
@@ -22708,7 +22848,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_BELT_RMVE">
 			<English>Remove belt</English>
-			<Russian>Снять патр.</Russian>
+			<Russian>Снять патронташ</Russian>
 			<German>Entferne Patronenhalter</German>
 		</Key>
 
@@ -22725,7 +22865,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_RIS_RMVE">
 			<English>Remove RIS</English>
-			<Russian>Снять RIS</Russian>
+			<Russian>Снять РСИ</Russian>
 			<German>Entferne RIS</German>
 		</Key>
 		<!--new attachments-->
@@ -22747,17 +22887,17 @@
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_DES_NAME">
 			<English>[A] Small camo net. (desert)</English>
 			<German>[E] Kl. Tarnnetz (Wüstentarn)</German>
-			<Russian>[М] Малая маскировочная сеть (Пустынная)</Russian>
+			<Russian>[М] Малая масксеть (Пустынная)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_SNOW_NAME">
 			<English>[A] Small camo net. (snow)</English>
 			<German>[E] Kl. Tarnnetz (Schneetarn)</German>
-			<Russian>[М] Малая маскировочная сеть (Зимняя)</Russian>
+			<Russian>[М] Малая масксеть (Зимняя)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_URB_NAME">
 			<English>[A] Small camo net. (urban)</English>
 			<German>[E] Kl. Tarnnetz (Stadttarn)</German>
-			<Russian>[М] Малая маскировочная сеть (Городская)</Russian>
+			<Russian>[М] Малая масксеть (Городская)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_LASER_NAME">
 			<English>[A] Laser Pointer</English>
@@ -24444,6 +24584,7 @@
 		<Key ID="STR_EPOCH_PLAYER_237_1">
 			<English>Craft Wooden Gate Frame</English>
 			<German>Holztorrahmen herstellen</German>
+			<Russian>Создать деревянный проём ворот</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_238">
 			<English>Craft Door</English>
@@ -24455,6 +24596,7 @@
 		<Key ID="STR_EPOCH_PLAYER_238_2">
 			<English>Craft Door with Hatch</English>
 			<German>Tür mit Luke herstellen</German>
+			<Russian>Создать: Дверь с люком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239">
 			<English>Craft Locked Door</English>
@@ -24568,7 +24710,7 @@
 		<Key ID="STR_EPOCH_PLAYER_252_1">
 			<English>Craft Full Wall</English>
 			<German>Ganze Wand herstellen</German>
-			<Russian>Создать: все стены</Russian>
+			<Russian>Создать: Стена</Russian>
 			<Czech>Vytvářet plnou stěnou</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_252_2">
@@ -24711,6 +24853,7 @@
 		<Key ID="STR_EPOCH_PLAYER_272">
 			<English>Craft Winter Net</English>
 			<German>Winternetz herstellen</German>
+			<Russian>Создать: Зимняя сеть</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_273">
 			<English>Craft H-Barrier</English>
@@ -24758,7 +24901,7 @@
 		<Key ID="STR_EPOCH_PLAYER_276">
 			<English>Craft Fire Barrel</English>
 			<German>Feuertonne herstellen</German>
-			<Russian>Создать: Источник огня</Russian>
+			<Russian>Создать: Бочка с костром</Russian>
 			<Czech>Vytvořit Hořící sud</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_277">
@@ -32807,12 +32950,12 @@
 		<Key ID="STR_CRAFTING_NAILEDBASEBALLBAT">
 			<English>Craft Nailed Baseball Bat</English>
 			<German>Nagelkeule herstellen</German>
-			<Russian>Создать бейсбольную биту с гвоздями</Russian>
+			<Russian>Создать биту с гвоздями</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_BASEBALLBATBARBED">
 			<English>Craft Baseball Bat Barbed</English>
 			<German>Stacheldrahtkeule herstellen</German>
-			<Russian>Создать бейсбольную биту с колючкой</Russian>
+			<Russian>Создать биту с колючкой</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_HERBALDRINK">
 			<English>Mix Herbal Drink</English>
@@ -32822,7 +32965,7 @@
 		<Key ID="STR_CRAFTING_SEPSISBANDAGE">
 			<English>Craft Sepsis Bandage</English>
 			<German>Sepsisbandage herstellen</German>
-			<Russian>Создать обеззараживающий бинт</Russian>
+			<Russian>Создать обеззараж. бинт</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_PACKAGEGAUZE">
 			<English>Unpack Gauze Packaged</English>
@@ -32842,7 +32985,7 @@
 		<Key ID="STR_CRAFTING_CORRUGATEDSHEETS">
 			<English>Craft Corrugated Sheet</English>
 			<German>Wellblech herstellen</German>
-			<Russian>Создать гофрированный лист</Russian>
+			<Russian>Создать гофрир. лист</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
 			<English>Needed items:</English>
