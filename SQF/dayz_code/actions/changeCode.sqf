@@ -13,7 +13,7 @@ _cursorTarget = _this select 3;
 _typeOf = typeOf (_cursorTarget);
 
 _isSafe = _typeOf in ["VaultStorage","VaultStorage2","TallSafe"];
-_isLockBox = _typeOf in ["LockBoxStorage","LockBoxStorage2","LockBoxStorageWinter","LockBoxStorageWinter2"];
+_isLockBox = _typeOf in ["LockboxStorage","LockboxStorage2","LockboxStorageWinter","LockboxStorageWinter2"];
 _isStorage = (_isSafe || _isLockBox);
 _isDoor = _typeOf in DZE_DoorsLocked;
 
