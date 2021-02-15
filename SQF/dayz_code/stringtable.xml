@@ -22514,7 +22514,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP9_DESC">
 			<English>9mm Sound suppressor</English>
-			<Russian>ПБС для калибра 9мм</Russian>
+			<Russian>Прибор бесшумной стрельбы для калибра 9мм</Russian>
 			<German>9mm Schalldämpfer</German>
 		</Key>
 		<!-- 9mm Suppressor PM -->
@@ -22551,7 +22551,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP10_DESC">
 			<English>10mm Sound suppressor</English>
-			<Russian>ПБС для калибра 10мм</Russian>
+			<Russian>Прибор бесшумной стрельбы для калибра 10мм</Russian>
 			<German>10mm Schalldämpfer</German>
 		</Key>
 		<!-- 5.7mm Suppressor ACR-->
@@ -22562,7 +22562,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP57_DESC">
 			<English>5.7mm Sound suppressor</English>
-			<Russian>ПБС для калибра 5.7мм</Russian>
+			<Russian>Прибор бесшумной стрельбы для калибра 5.7мм</Russian>
 			<German>5.7mm Schalldämpfer</German>
 		</Key>
 		<!-- 6.8mm Suppressor ACR-->
@@ -22573,7 +22573,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP68_DESC">
 			<English>6.80mm Sound suppressor</English>
-			<Russian>ПБС для калибра 6.80мм</Russian>
+			<Russian>Прибор бесшумной стрельбы для калибра 6.80мм</Russian>
 			<German>6.80mm Schalldämpfer</German>
 		</Key>
 		<!-- 5.56mm Suppressor -->
@@ -22584,7 +22584,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP556_DESC">
 			<English>5.56mm Sound suppressor</English>
-			<Russian>ПБС для калибра 5.56мм</Russian>
+			<Russian>Прибор бесшумной стрельбы для калибра 5.56мм</Russian>
 			<German>5.56mm Schalldämpfer</German>
 		</Key>
 
@@ -22596,7 +22596,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP545_DESC">
 			<English>5.45mm Sound suppressor</English>
-			<Russian>ПБС для калибра 5.45мм</Russian>
+			<Russian>Прибор бесшумной стрельбы для калибра 5.45мм</Russian>
 			<German>5.45mm Schalldämpfer</German>
 		</Key>
 
@@ -22608,7 +22608,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP762_DESC">
 			<English>7.62mm Sound suppressor</English>
-			<Russian>ПБС для калибра 7.62мм</Russian>
+			<Russian>Прибор бесшумной стрельбы для калибра 7.62мм</Russian>
 			<German>7.62mm Schalldämpfer</German>
 		</Key>
 
@@ -22620,7 +22620,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_SUP393_DESC">
 			<English>9x39mm Sound suppressor</English>
-			<Russian>ПБС для калибра 9x39мм</Russian>
+			<Russian>Прибор бесшумной стрельбы для калибра 9x39мм</Russian>
 			<German>9x39mm Schalldämpfer</German>
 		</Key>
 
@@ -22632,7 +22632,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_CCO_DESC">
 			<English>CompM2 Close Combat Optic&lt;br/&gt;Manufactured by Swedish Aimpoint AB.</English>
-			<Russian>Aimpoint CompM2 — компактный прицел для стрелкового оружия&lt;br/&gt;Произведен шведской компанией Aimpoint AB.</Russian>
+			<Russian>Aimpoint CompM2 — компактный прицел для стрелкового оружия&lt;br/&gt;Произведён шведской компанией Aimpoint AB.</Russian>
 			<German>CompM2 Close Combat Optic&lt;br/&gt;Hergestellt von Swedish Aimpoint AB.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_CCO_RMVE">
@@ -22649,7 +22649,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_HOLO_DESC">
 			<English>Holographic Weapon Sight&lt;br/&gt;Manufactured by American EOTech Inc.</English>
-			<Russian>Голографический прицел для стрелкового оружия&lt;br/&gt;Произведен американской компанией EOTech Inc.</Russian>
+			<Russian>Голографический прицел для стрелкового оружия&lt;br/&gt;Произведён американской компанией EOTech Inc.</Russian>
 			<German>Holografisches Waffenvisier&lt;br/&gt;Hergestellt von American EOTech Inc.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_HOLO_RMVE">
@@ -22666,7 +22666,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_DESC">
 			<English>Advanced Combat Optical Gunsight&lt;br/&gt;Manufactured by American Trijicon Inc.</English>
-			<Russian>Армейский оптический прицел для ведения огня на среднюю дальность&lt;br/&gt;Произведен американской компанией Trijicon Inc.</Russian>
+			<Russian>Армейский оптический прицел для ведения огня на среднюю дальность&lt;br/&gt;Произведён американской компанией Trijicon Inc.</Russian>
 			<German>Advanced Combat Optical Gunsight&lt;br/&gt;Hergestellt von American Trijicon Inc.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACOG_RMVE">
@@ -22768,7 +22768,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_MFL_RFL_DESC">
 			<English>Rail-attachable military rifle flashlight</English>
-			<Russian>Военный фонарь для установки на основное оружие.</Russian>
+			<Russian>Фонарь для установки на основное оружие с красным светофильтром.</Russian>
 			<German>Militärischer Taschenlampenaufsatz für Gewehre</German>
 		</Key>
 
@@ -22797,7 +22797,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_MFL_PST_DESC">
 			<English>Rail-attachable military pistol flashlight</English>
-			<Russian>Военный фонарь для установки на пистолеты.</Russian>
+			<Russian>Фонарь для установки на пистолеты с красным светофильтром.</Russian>
 			<German>Militärischer Taschenlampenaufsatz für Pistolen</German>
 		</Key>
 
@@ -22826,7 +22826,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_PU_DESC">
 			<English>Standard issue Soviet sniper scope during World War II.&lt;br/&gt;Magnification: 3.5x</English>
-			<Russian>Советский оптический прицел, изначально созданный в 1940 году&lt;br/&gt;Кратность: 3.5х22</Russian>
+			<Russian>Советский оптический прицел, изначально созданный в 1940 году.&lt;br/&gt;Кратность: 3.5х22</Russian>
 			<German>Standard Zielfernrohr der sowjetischen Scharfschützen im Zweiten Weltkrieg.&lt;br/&gt;Vergrößerung: 3.5x</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_PU_RMVE">
@@ -22843,7 +22843,7 @@
 		</Key>
 		<Key ID="STR_DZ_ATT_BELT_DESC">
 			<English>Holds cartridges for easier access. Can be attached to the stock of a rifle.</English>
-			<Russian>Обеспечивает хранение и быстрый доступ к магазинам. Может быть прикреплен к прикладу.</Russian>
+			<Russian>Обеспечивает хранение и быстрый доступ к магазинам. Может быть прикреплён к прикладу.</Russian>
 			<German>Für den schnelleren Zugriff auf Munition beim Nachladen. Kann an den Gewehrkolben abgebracht werden.</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_BELT_RMVE">
@@ -22887,17 +22887,17 @@
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_DES_NAME">
 			<English>[A] Small camo net. (desert)</English>
 			<German>[E] Kl. Tarnnetz (Wüstentarn)</German>
-			<Russian>[М] Малая масксеть (Пустынная)</Russian>
+			<Russian>[М] Малая масксеть (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_SNOW_NAME">
 			<English>[A] Small camo net. (snow)</English>
 			<German>[E] Kl. Tarnnetz (Schneetarn)</German>
-			<Russian>[М] Малая масксеть (Зимняя)</Russian>
+			<Russian>[М] Малая масксеть (Зима)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_GHIL_URB_NAME">
 			<English>[A] Small camo net. (urban)</English>
 			<German>[E] Kl. Tarnnetz (Stadttarn)</German>
-			<Russian>[М] Малая масксеть (Городская)</Russian>
+			<Russian>[М] Малая масксеть (Город)</Russian>
 		</Key>
 		<Key ID="STR_DZE_ATTACHMENT_LASER_NAME">
 			<English>[A] Laser Pointer</English>
@@ -22917,7 +22917,7 @@
 		<Key ID="STR_DZE_ATTACHMENT_NSPU_DESC">
 			<English>NSPU scope</English>
 			<German>Zielfernrohr vom Typ NSPU.</German>
-			<Russian>Ночной Стрелковый Прицел Унифицированный - советский бесподсветный ночной оптический прицел, созданный для прицельной стрельбы из автоматов семейства АК, пулемётов семейства РПК и ПКМ, снайперских винтовок СВД, ручного противотанкового гранатомета РПГ в условиях естественной ночной освещенности.</Russian>
+			<Russian>Ночной Стрелковый Прицел Унифицированный - советский бесподсветный ночной оптический прицел, созданный для прицельной стрельбы из АК, РПК и ПКМ, СВД, РПГ в условиях естественной ночной освещённости.</Russian>
 		</Key>
 		<Key ID="STR_DZ_ATT_NSPU_RMVE">
 			<English>Remove NSPU scope</English>
@@ -22957,14 +22957,14 @@
 		<Key ID="STR_DZE_ATTACHMENT_45SUP_DESC">
 			<English>A silencer that can be attached to .45 caliber weapons.</English>
 			<German>Ein Schalldämpfer, der an Kaliber .45 Waffen angebracht werden kann.</German>
-			<Russian>Глушитель, который может быт присоединен к оружию .45-го калибра.</Russian>
+			<Russian>Глушитель, который может быть присоединён к оружию .45-го калибра.</Russian>
 		</Key>
 	</Package>
 	<Package name="dayz_epoch">
 		<Key ID="STR_EPOCH_REMOVE">
 			<English>Remove %1</English>
 			<German>%1 abbauen</German>
-			<Russian>Убрать %1</Russian>
+			<Russian>Разобрать %1</Russian>
 			<French>Détruire %1</French>
 			<Czech>Zničit %1</Czech>
 		</Key>
@@ -22993,7 +22993,7 @@
 		<Key ID="str_success_gutted_zombie">
 			<English>%1 has been gutted, zombie parts are now on the carcass.</English>
 			<German>%1 wurde ausgenommen. Du kannst das Fleisch nun aus der Leiche nehmen.</German>
-			<Russian>Вы разделали: %1, куски плоти лежат на трупе.</Russian>
+			<Russian>Вы разделали: %1.&lt;br/&gt;Куски плоти лежат на трупе.</Russian>
 			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa.</Spanish>
 			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
 			<Czech>%1 byl zničený, zombie díly jsou nyní na kostru.</Czech>
@@ -23143,6 +23143,7 @@
 		<Key ID="STR_EQUIP_KEYKIT_BROKEN">
 			<English>Broken Keymakers kit</English>
 			<German>Kaputtes Schlüsselmacher Kit</German>
+			<Russian>Сломанный набор для создания ключей</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_KEYKIT_DESC">
 			<English>Kit including the tools required to smelt, mold and shape keys.</English>
@@ -23156,6 +23157,7 @@
 		<Key ID="STR_EQUIP_KEYKIT_BROKEN_DESC">
 			<English>A broken keymakers kit that must be repaired.</English>
 			<German>Ein kaputtes Kit zum Schmelzen und Formen von Schlüsseln, welches repariert werden muss.</German>
+			<Russian>Сломанный набор для создания ключей, который необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SLEDGE_DESC">
 			<English>A tool with a large, flat head attached to a handle. The head is typically made of metal. The sledgehammer can apply more force than other hammers.</English>
@@ -23168,7 +23170,7 @@
 		<Key ID="STR_EPOCH_PLAYER_2">
 			<English>Another player wants to tag you as friendly. To accept, tag player as friendly.</English>
 			<German>Ein anderer Spieler möchte dich als Freund markieren. Um dies zu akzeptieren, markiere den Spieler ebenfalls als Freund.</German>
-			<Russian>Игрок хочет отметить вас как друга. Чтобы принять, отметьте его как друга.</Russian>
+			<Russian>Игрок хочет отметить вас как друга. Чтобы принять, тоже отметьте его как друга.</Russian>
 			<Dutch>Een speler wil je als bevriend te markeren. Om te accepteren, markeer de speler als bevriend.</Dutch>
 			<French>Un joueur veut vous marquer comme amical(e). Pour accepter, marquez ce joueur comme amical(e).</French>
 			<Czech>Jiný hráč si vás chce označit jako přítele. K příjmutí, označte hráče jako přítele.</Czech>
@@ -23200,7 +23202,7 @@
 		<Key ID="STR_EPOCH_PLAYER_11">
 			<English>You cannot lock while another player is nearby.</English>
 			<German>Abschließen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
-			<Russian>Нельзя закрывать, когда другой игрок находится поблизости.</Russian>
+			<Russian>Нельзя закрывать, когда поблизости находится другой игрок.</Russian>
 			<Dutch>Kan niet op slot zetten met een andere speler in de buurt.</Dutch>
 			<French>Impossible de verrouiller lorsque d'autres joueurs sont proches.</French>
 			<Czech>Nelze zamknout, když je poblíž jiný hráč.</Czech>
@@ -23208,7 +23210,7 @@
 		<Key ID="STR_EPOCH_PLAYER_12">
 			<English>You cannot abort while in a trader area!</English>
 			<German>Du darfst dich nicht im Händler-Bereich ausloggen!</German>
-			<Russian>В торговой зоне нельзя выходить из игры!</Russian>
+			<Russian>Нельзя выходить из игры в торговой зоне!</Russian>
 			<Dutch>Kan niet uitloggen in een handel gebied.</Dutch>
 			<French>Impossible d'interrompre dans un marché!</French>
 			<Czech>Nelze se odpojit, když jste v trader area!</Czech>
@@ -23216,7 +23218,7 @@
 		<Key ID="STR_EPOCH_PLAYER_16">
 			<English>You cannot pack while another player is nearby.</English>
 			<German>Packen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
-			<Russian>Нельзя упаковывать, когда другой игрок рядом.</Russian>
+			<Russian>Нельзя упаковывать, когда рядом другой игрок.</Russian>
 			<Dutch>Kan niet inpakken met een andere speler in de buurt</Dutch>
 			<French>Impossible d'empaqueter lorsque d'autres joueurs sont proches.</French>
 			<Czech>Nelze zabalit, jestliže je jiný hráč poblíž.</Czech>
@@ -23240,12 +23242,12 @@
 		<Key ID="STR_EPOCH_PLAYER_19_WAIT">
 			<English>You must wait another %1 seconds before you can enter another code.</English>
 			<German>Du musst weitere %1 Sekunden warten, bevor du einen anderen Code eingeben kannst.</German>
-			<Russian>Прежде чем ввести другой код, вы должны подождать %1 сек.</Russian>
+			<Russian>Вы должны подождать %1 сек., прежде чем ввести другой код.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_20">
 			<English>Cannot unlock while another player is nearby.</English>
 			<German>Aufschließen nicht möglich, während ein anderer Spieler in der Nähe ist.</German>
-			<Russian>Нельзя открывать, когда другой игрок рядом.</Russian>
+			<Russian>Нельзя открывать, когда рядом другой игрок.</Russian>
 			<Dutch>Kan niet van slot afhalen met een andere speler in de buurt.</Dutch>
 			<French>Impossible de déverrouiller lorsque d'autres joueurs sont proches.</French>
 			<Czech>Nelze odemknout, pokud jsou poblíž jiní hráči.</Czech>
@@ -23261,7 +23263,7 @@
 		<Key ID="STR_EPOCH_PLAYER_25">
 			<English>Preparing to fuel and start generator, move to cancel.</English>
 			<German>Betanken und Starten des Generators, bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Подготовка к заправке и запуску генератора, двигайтесь для отмены.</Russian>
+			<Russian>Подготовка к заправке и запуску генератора. Двигайтесь для отмены.</Russian>
 			<Dutch>De generator wordt zo volgetankt en gestart, beweeg om te annuleren.</Dutch>
 			<French>Remplissage du réservoir et démarrage du générateur, bougez pour annuler.</French>
 			<Czech>Doplňování paliva a startování generátoru, pro zrušení se pohněte.</Czech>
@@ -23269,7 +23271,7 @@
 		<Key ID="STR_EPOCH_PLAYER_26">
 			<English>Canceled.</English>
 			<German>Abgebrochen.</German>
-			<Russian>Отмена.</Russian>
+			<Russian>Отменено.</Russian>
 			<Dutch>Ge-annuleerd.</Dutch>
 			<French>Annulé</French>
 			<Czech>Zrušeno.</Czech>
@@ -23277,7 +23279,7 @@
 		<Key ID="STR_EPOCH_PLAYER_27">
 			<English>No Vehicles Nearby.</English>
 			<German>Keine Fahrzeuge in der Nähe.</German>
-			<Russian>Нет транспорта поблизости.</Russian>
+			<Russian>Поблизости нет транспорта.</Russian>
 			<Dutch>Geen voertuigen in de buurt.</Dutch>
 			<French>Aucun véhicule aux alentours.</French>
 			<Czech>Poblíž nejsou žádná vozidla.</Czech>
@@ -23285,7 +23287,7 @@
 		<Key ID="STR_EPOCH_PLAYER_28">
 			<English>Generator has been started.</English>
 			<German>Generator wurde gestartet.</German>
-			<Russian>Генератор был запущен.</Russian>
+			<Russian>Генератор запущен.</Russian>
 			<Dutch>De generator is gestart.</Dutch>
 			<French>Le générateur a été démarré.</French>
 			<Czech>Generátor byl nastartován.</Czech>
@@ -23314,7 +23316,7 @@
 		<Key ID="STR_EPOCH_PLAYER_36">
 			<English>No recent Deaths.</English>
 			<German>Keine aktuellen Todesfälle.</German>
-			<Russian>Нет последних смертей.</Russian>
+			<Russian>Список смертей пуст.</Russian>
 			<Dutch>Niet recent doodgegaan.</Dutch>
 			<French>Pas de décès récents.</French>
 			<Czech>Žádné nedávné úmrtí.</Czech>
@@ -23338,7 +23340,7 @@
 		<Key ID="STR_EPOCH_PLAYER_41">
 			<English>You cannot build. There are too many objects within %1m.</English>
 			<German>Bau nicht möglich, zu viele Objekte innerhalb von %1m.</German>
-			<Russian>Нельзя построить, слишком много объектов в пределах %1м.</Russian>
+			<Russian>Нельзя построить, в пределах %1м слишком много объектов.</Russian>
 			<Dutch>Kan niet bouwen, teveel objecten binnen %1.</Dutch>
 			<French>Impossible de construire, il y a trop d'objets à moins de %1m.</French>
 			<Czech>Nelze postavit, v okruhu %1m je přiliš mnoho předmětů.</Czech>
@@ -23362,7 +23364,7 @@
 		<Key ID="STR_EPOCH_PLAYER_44">
 			<English>You cannot build a plot pole within %1m of an existing plot.</English>
 			<German>Eine Grundstücksmarkierung kann nicht innerhalb %1m von einem bestehenden Grundstück erbaut werden.</German>
-			<Russian>Нельзя построить столб в пределах %1м от существующего столба.</Russian>
+			<Russian>Нельзя строить ещё один столб в пределах %1м от существующего столба.</Russian>
 			<Dutch>Kan bouw-paal niet bouwen op minder als %1m afstand van een bestaand bouwterrein.</Dutch>
 			<French>Impossible de construire un panneau de propriété privée à moins de %1m d'un autre panneau du genre.</French>
 			<Czech>Nelze postavit hraniční značku ve vzdálenosti %1 metrů od jiné značky.</Czech>
@@ -23442,7 +23444,7 @@
 		<Key ID="STR_EPOCH_PLAYER_57">
 			<English>You need a Keymakers kit to make a copy of a key.</English>
 			<German>Du benötigst ein Schlüsselmacher Kit, um Kopien eines Schlüssels anfertigen zu können.</German>
-			<Russian>Нужен комплект для создания ключей, чтобы сделать копию ключа.</Russian>
+			<Russian>Чтобы сделать копию ключа, нужен Набор для создания ключей.</Russian>
 			<Dutch>Je hebt een sleutelmakers-set nodig om een sleutel te kopieren.</Dutch>
 			<French>Le kit Keymakers est requis pour faire un double d'une clé.</French>
 			<Czech>Potřebujete Sadu klíčů, abyste mohli vytvořit kopii klíče</Czech>
@@ -23505,7 +23507,7 @@
 		<Key ID="STR_EPOCH_PLAYER_74">
 			<English>You must be close to a plant to harvest.</English>
 			<German>Du musst in der Nähe eines Baumes oder einer Pflanze sein, um etwas Abernten zu können.</German>
-			<Russian>Вы должны быть близко к растению, чтобы взять его.</Russian>
+			<Russian>Чтобы взять растение, надо быть ближе к нему.</Russian>
 			<Dutch>Je moet in de buurt van een plant zijn om te oogsten.</Dutch>
 			<French>Vous devez être près d'une plante pour la récolter.</French>
 			<Czech>Musíte být blízko plodiny, abyste ji mohli sklidit.</Czech>
@@ -23569,7 +23571,7 @@
 		<Key ID="STR_EPOCH_PLAYER_84">
 			<English>You cannot change clothes when another player is nearby.</English>
 			<German>Du kannst deine Kleidung nicht wechseln, wenn ein anderer Spieler in der Nähe ist.</German>
-			<Russian>Нельзя переодеваться, когда другой игрок рядом.</Russian>
+			<Russian>Нельзя переодеваться, когда рядом другой игрок.</Russian>
 			<Dutch>Je kunt je niet omkleden als er een andere speler in de buurt is.</Dutch>
 			<French>Impossible de changer de vêtements près d'un autre joueur.</French>
 			<Czech>Nemůžete si změnit oblečení, když je poblíž další hráč.</Czech>
@@ -23577,7 +23579,7 @@
 		<Key ID="STR_EPOCH_PLAYER_86">
 			<English>You cannot wear a skin of the opposite sex.</English>
 			<German>Du kannst nicht die Kleidung vom anderen Geschlecht tragen.</German>
-			<Russian>Вы не можете одеть одежду противоположного пола.</Russian>
+			<Russian>Вы не можете надеть одежду противоположного пола.</Russian>
 			<Dutch>Je kunt je niet omkleden naar kleding van het andere geslacht.</Dutch>
 			<French>Vous ne pouvez pas porter les vêtements du sexe opposé.</French>
 			<Czech>Nemůžete nosit oblečení opačného pohlaví.</Czech>
@@ -23617,7 +23619,7 @@
 		<Key ID="STR_EPOCH_PLAYER_100">
 			<English>Preparing to stop generator, move to cancel.</English>
 			<German>Generator wird abgeschaltet, bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Подготовка к остановке генератора, двигайтесь для отмены.</Russian>
+			<Russian>Подготовка к остановке генератора.&lt;br/&gt;Двигайтесь для отмены.</Russian>
 			<Dutch>Het uitschakellen van de generator word voorbereid, beweeg om te annuleren.</Dutch>
 			<French>Préparation de l'arrêt du générateur, déplacez vous pour annuler.</French>
 			<Czech>Příprava na vypnutí generátoru, pohněte se pro zrušení.</Czech>
@@ -23649,7 +23651,7 @@
 		<Key ID="STR_EPOCH_PLAYER_104">
 			<English>Cannot trade while another player is nearby.</English>
 			<German>Kein Handeln möglich, während ein anderer Spieler in der Nähe ist.</German>
-			<Russian>Нельзя заключать сделку, когда другой игрок находится поблизости.</Russian>
+			<Russian>Нельзя заключить сделку, когда поблизости другой игрок.</Russian>
 			<Dutch>Je kunt niet handellen met een andere speler in de buurt.</Dutch>
 			<French>Impossible d'effectuer la transaction lorsque d'autres joueurs sont proches.</French>
 			<Czech>Nelze obchodovat, dokud je jiný hráč poblíž.</Czech>
@@ -23657,7 +23659,7 @@
 		<Key ID="STR_EPOCH_PLAYER_105">
 			<English>Starting trade, stand still to complete trade.</English>
 			<German>Handel gestartet, bewege dich nicht um den Handel abzuschließen.</German>
-			<Russian>Торговля началась, стойте на месте, чтобы завершить сделку.</Russian>
+			<Russian>Торговля началась. Стойте на месте, чтобы завершить сделку.</Russian>
 			<Dutch>Bezig met handellen, blijf stilstaan om af te ronden.</Dutch>
 			<French>Transaction démarré, restez immobile pour achever la transaction.</French>
 			<Czech>Transakce probíhá, stůjte na místě pro dokončení obchodu.</Czech>
@@ -23673,7 +23675,7 @@
 		<Key ID="STR_EPOCH_PLAYER_107">
 			<English>You do not have enough room on your toolbelt.</English>
 			<German>Du hast nicht genug Platz an deinem Gürtel.</German>
-			<Russian>У вас не достаточно места на вашем поясе.</Russian>
+			<Russian>У вас на поясе недостаточно места.</Russian>
 			<Dutch>Je gereedschapsriem zit vol.</Dutch>
 			<French>Vous n'avez pas assez de place dans votre ceinture.</French>
 			<Czech>Nemáte dostatek místa na Vašem opasku na nářadí.</Czech>
@@ -23689,7 +23691,8 @@
 		<Key ID="STR_EPOCH_PLAYER_117">
 			<English>Your %1 has been locked</English>
 			<German>Dein %1 wurde abgeschlossen.</German>
-			<Russian>Ваш %1 закрыт.</Russian>
+			<!-- <Russian>Ваш %1 закрыт</Russian> -->
+			<Russian>Заперто</Russian>
 			<Dutch>Je %1 staat nu op slot</Dutch>
 			<French>Votre %1 a été verrouillé</French>
 			<Czech>Vaše %1 bylo zamčeno</Czech>
@@ -23713,7 +23716,7 @@
 		<Key ID="STR_EPOCH_PLAYER_121">
 			<English>Packing %1, move from this position to cancel within 5 seconds.</English>
 			<German>%1 wird gepackt. Bewege dich in den nächsten 5 Sekunden um den Vorgang abzubrechen.</German>
-			<Russian>Упаковывание %1, сдвиньтесь с этой позиции в течение 5 секунд для отмены.</Russian>
+			<Russian>Упаковывание: %1. Для отмены сдвиньтесь с этой позиции в течение 5 секунд.</Russian>
 			<Dutch>Bezig met inpakken van %1, beweeg binnen 5 seconden om te annuleren.</Dutch>
 			<French>Emballage de %1, déplacez vous pour annuler dans moins de 5 secondes.</French>
 			<Czech>Balení %1. Pro zrušení se do 5 sekund pohněte.</Czech>
@@ -23721,7 +23724,8 @@
 		<Key ID="STR_EPOCH_PLAYER_122">
 			<English>Packing %1 canceled.</English>
 			<German>Packen des %1 wurde abgebrochen.</German>
-			<Russian>Упаковывание %1 отменено.</Russian>
+			<!-- <Russian>Упаковывание %1 отменено.</Russian> -->
+			<Russian>Отменено.</Russian>
 			<Dutch>Het inpakken van %1 is gestopt.</Dutch>
 			<French>Emballage annulé.</French>
 			<Czech>Balení %1 zrušeno.</Czech>
@@ -23729,7 +23733,8 @@
 		<Key ID="STR_EPOCH_PLAYER_123">
 			<English>Your %1 has been packed</English>
 			<German>Dein %1 wurde gepackt.</German>
-			<Russian>Ваш %1 упакован.</Russian>
+			<!-- <Russian>Ваш %1 упакован.</Russian> -->
+			<Russian>Упаковано.</Russian>
 			<Dutch>Je %1 is ingepakt.</Dutch>
 			<French>Votre %1 a été emballé(e).</French>
 			<Czech>Vaše %1 bylo/y zabalen/y/o.</Czech>
@@ -23779,7 +23784,7 @@
 		<Key ID="STR_EPOCH_PLAYER_137">
 			<English>Missing tool %1</English>
 			<German>Fehlendes Werkzeug: %1</German>
-			<Russian>Отсутствует инструмент %1</Russian>
+			<Russian>Отсутствует инструмент: %1</Russian>
 			<Spanish>Missing tool %1</Spanish>
 			<Dutch>Ontbrekend gereedschap: %1</Dutch>
 			<French>L'outil %1 est nécessaire</French>
@@ -23788,7 +23793,7 @@
 		<Key ID="STR_EPOCH_PLAYER_138">
 			<English>Placing %1, move to cancel.</English>
 			<German>Platzieren von %1, bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Размещение %1, двигайтесь для отмены.</Russian>
+			<Russian>Размещение: %1. Двигайтесь для отмены.</Russian>
 			<Dutch>Bezig met het plaatsen van %1, beweeg om te annuleren</Dutch>
 			<French>Placement de %1, déplacez vous pour annuler.</French>
 			<Czech>Umístění %1, přesuňte se pro zrušení.</Czech>
@@ -23796,7 +23801,7 @@
 		<Key ID="STR_EPOCH_PLAYER_139">
 			<English>Constructing %1 stage %2 of %3, move to cancel.</English>
 			<German>Konstruieren von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Строительство %1, стадия %2 из %3, двигайтесь для отмены.</Russian>
+			<Russian>Строительство: %1.&lt;br/&gt;Стадия %2 / %3, двигайтесь для отмены.</Russian>
 			<Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
 			<French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
 			<Czech>Stavím %1 fáze %2 z %3, pohněte se pro zrušení.</Czech>
@@ -23804,7 +23809,7 @@
 		<Key ID="STR_EPOCH_PLAYER_140">
 			<English>You have setup your %2. The combination is %1</English>
 			<German>Du hast erfolgreich ein(e) %2 aufgebaut. Die Kombination lautet: %1</German>
-			<Russian>Вы установили свой %2. Комбинация %1</Russian>
+			<Russian>Вы установили: %2. Комбинация %1.</Russian>
 			<Dutch>Je hebt je %2 geplaatst. De combinatie is %1</Dutch>
 			<French>Vous avez installé votre %2. La combinaison est %1</French>
 			<Czech>Nastavil jste Vaši %2. Kombinace je %1</Czech>
@@ -23893,42 +23898,42 @@
 		<Key ID="STR_EPOCH_PLAYER_158">
 			<English>You have upgraded %2. The combination is: %1</English>
 			<German>Du hast %2 geupgradet. Die Kombination lautet: %1</German>
-			<Russian>Вы улучшили %2. Комбинация %1</Russian>
+			<Russian>Вы улучшили: %2. Комбинация %1.</Russian>
 			<Dutch>Je hebt een %2 geupgrade. De combinatie is %1</Dutch>
 			<Czech>Upgradnuli jste %2. Kombinace je %1</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_159">
 			<English>You have upgraded %1.</English>
 			<German>Du hast %1 geupgradet.</German>
-			<Russian>Вы улучшили %1.</Russian>
+			<Russian>Вы улучшили: %1.</Russian>
 			<Dutch>Je hebt %1 geupgrade.</Dutch>
 			<Czech>Upgranuli jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_162">
 			<English>Starting de-construction of %1.</English>
 			<German>Starte Abbau von %1.</German>
-			<Russian>Начат разбор %1.</Russian>
+			<Russian>Начата разборка: %1.</Russian>
 			<Dutch>Bezig met het slopen van %1.</Dutch>
 			<Czech>Začínám rozebírání %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_163">
 			<English>De-constructing %1, stage %2 of %3 walk away at anytime to cancel.</English>
 			<German>Abbau von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Разбор %1, стадия %2 из %3 уходите в любое время для отмены.</Russian>
+			<Russian>Разборка: %1.&lt;br/&gt;Стадия %2 / %3, уходите в любое время для отмены.</Russian>
 			<Dutch>Sloop van %1 bezig (%2 van %3) loop weg om te annuleren.</Dutch>
 			<Czech>Rozebírání %1, fáze %2 z %3. Kdykoliv se pohněte pro zrušení.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_164">
 			<English>%1 broke, cannot remove %2.</English>
 			<German>%1 wurde zerstört. %2 kann nicht mehr entfernt werden.</German>
-			<Russian>%1 сломан, нельзя убрать %2.</Russian>
+			<Russian>%1 сломан, нельзя разобрать %2.</Russian>
 			<Dutch>%1 is kapot gegaan. kan %2 niet verwijderen.</Dutch>
 			<Czech>%1 se rozbil. Nelze odstranit %2.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_165">
 			<English>De-constructing %1.</English>
 			<German>Abbau von %1.</German>
-			<Russian>Разбор %1.</Russian>
+			<Russian>Разобрано.</Russian>
 			<Dutch>%1 aan het slopen.</Dutch>
 			<Czech>Rozebírání %1.</Czech>
 		</Key>
@@ -24041,19 +24046,22 @@
 		<Key ID="STR_EPOCH_PLAYER_186_HUMANITY">
 			<English>Traded %1 %2 for %3 %4 and %5 %6.</English>
 			<German>Du hast für %1 %2 %3 %4 und %5 %6 erhalten.</German>
+			<Russian>Продано %1 %2 за %3 %4 и %5 %6.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_186_2">
 			<English>Traded %1 %2.</English>
 			<German>Du hast %1 %2 gehandelt.</German>
+			<Russian>Продано %1 %2.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_186_2_HUMANITY">
 			<English>Traded %1 %2 for %3 %4.</English>
 			<German>Du hast %1 %2 gehandelt und %3 %4 erhalten.</German>
+			<Russian>Продано %1 %2 за %3 %4.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_187">
 			<English>Starting trade, stand still to complete trade %1 of %2.</English>
 			<German>Handel gestartet, bewege dich um den Vorgang abzubrechen. (%1 von %2)</German>
-			<Russian>Торговля началась, стойте на месте, чтобы завершить сделку %1 из %2.</Russian>
+			<Russian>Торговля началась. Стойте на месте, чтобы завершить сделку %1 из %2.</Russian>
 			<Dutch>Handel gestart, sta stil om te voltooien. (%1 van %2)</Dutch>
 			<Czech>Začínám obchod, stůjte na místě pro dokončení obchodu %1 z %2.</Czech>
 		</Key>
@@ -24428,7 +24436,7 @@
 		<Key ID="STR_EPOCH_PLAYER_221">
 			<English>Pack 6 Coke</English>
 			<German>6 Coke einpacken</German>
-			<Russian>Запаковать: Кока-кола(6)</Russian>
+			<Russian>Запаковать: Кока-кола (6)</Russian>
 			<Dutch>Verpak 6 cola</Dutch>
 			<Czech>Zabalit 6 Coca-Col</Czech>
 		</Key>
@@ -24608,18 +24616,22 @@
 		<Key ID="STR_EPOCH_PLAYER_239_1_1">
 			<English>Craft Gate</English>
 			<German>Tor herstellen</German>
+			<Russian>Создать: Ворота</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239_1">
 			<English>Craft Locked Gate</English>
 			<German>Verschlossenes Tor herstellen</German>
+			<Russian>Создать: Ворота с замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239_1_3">
 			<English>Craft Wall w/ Window</English>
 			<German>Wand mit Fenster herstellen</German>
+			<Russian>Создать: Стена с окном</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_239_1_2">
 			<English>Craft Locked Window</English>
 			<German>Verschlossenes Fenster herstellen</German>
+			<Russian>Создать: Закрытое окно</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_240">
 			<English>Craft Garage Door</English>
@@ -24663,7 +24675,7 @@
 		<Key ID="STR_EPOCH_PLAYER_246">
 			<English>Plot Pole</English>
 			<German>Grundstücksmarkierung</German>
-			<Russian>Столб</Russian>
+			<Russian>Строительный столб</Russian>
 			<Czech>Pozemková značka</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_247">
@@ -24714,8 +24726,9 @@
 			<Czech>Vytvářet plnou stěnou</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_252_2">
-			<English>Craft Half Wall /w gap</English>
+			<English>Craft Half Wall w/ gap</English>
 			<German>Halbe Wand mit Lücke herstellen</German>
+			<Russian>Создать: Половина стены с щелью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<English>Craft Garage Doorway</English>
@@ -24726,10 +24739,12 @@
 		<Key ID="STR_EPOCH_PLAYER_253_1">
 			<English>Craft Cinder Gate Frame</English>
 			<German>Betontorrahmen herstellen</German>
+			<Russian>Создать: Рама бет. ворот</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253_1_1">
 			<English>Craft Cinder Garage Frame w/ no top</English>
 			<German>Betongaragendurchgang (rahmenlos) herstellen</German>
+			<Russian>Создать: Рама бет. ворот без верха</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_254">
 			<English>Craft Plywood</English>
@@ -24776,6 +24791,7 @@
 		<Key ID="STR_EPOCH_PLAYER_260_1">
 			<English>Craft Advanced Workbench</English>
 			<German>Verbesserte Werkbank herstellen</German>
+			<Russian>Создать: Улучшенный верстак</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_261">
 			<English>Craft Shack</English>
@@ -24810,13 +24826,13 @@
 		<Key ID="STR_EPOCH_PLAYER_266">
 			<English>Craft Silver Bar</English>
 			<German>Silberbarren herstellen</German>
-			<Russian>Уложить в серебряный слиток</Russian>
+			<Russian>Создать серебряный слиток</Russian>
 			<Czech>Vytvořit Stříbrnou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
 			<English>Craft Gold Bar</English>
 			<German>Goldbarren herstellen</German>
-			<Russian>Уложить в золотой слиток</Russian>
+			<Russian>Создать золотой слиток</Russian>
 			<!-- <Dutch>Stapel bar van Goud</Dutch> -->
 			<Czech>Vytvořit Zlatou cihlu</Czech>
 		</Key>
@@ -24889,7 +24905,7 @@
 		<Key ID="STR_EPOCH_PLAYER_274">
 			<English>Craft Sandbag Nest</English>
 			<German>Sandsack-Nest herstellen</German>
-			<Russian>Создать: Гнездо из мешков</Russian>
+			<Russian>Создать: Укрепление</Russian>
 			<Czech>Vytvořit Pískovou bariéru</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_275">
@@ -25054,7 +25070,7 @@
 		<Key ID="STR_EPOCH_PLAYER_316">
 			<English>You may only access friends or group members gear in this area.</English>
 			<German>Du kannst hier nur auf das Inventar von Freunden oder Gruppenmitgliedern zugreifen.</German>
-			<Russian>Вы можете открывать рюкзаки только друзей в этой области.</Russian>
+			<Russian>В этой области вы можете открывать рюкзаки только у друзей.</Russian>
 			<Spanish>Sólo se puede acceder engranaje amigos en esta área.</Spanish>
 			<Dutch>U mag alleen toegang tot versnelling vrienden 'op dit gebied.</Dutch>
 			<French>Vous ne pouvez accéder à des engins de vos amis dans ce domaine.</French>
@@ -25087,11 +25103,12 @@
 		<Key ID="STR_EPOCH_PLAYER_331">
 			<English>%1 used to unlock vehicle.</English>
 			<German>%1 benutzt um Fahrzeug aufzuschließen.</German>
-			<Russian>%1 был использован для разблокировки транспорта.</Russian>
+			<Russian>Для разблокировки транспорта был использован %1.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_332">
 			<English>Pack 6 Sandbags</English>
 			<German>6x Stacheldraht einpacken</German>
+			<Russian>Запаковать 6 мешков с песком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_UPGRADEV">
 			<English>Upgrade Vehicle</English>
@@ -25103,7 +25120,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP">
 			<English>Offroad Performance</English>
-			<Russian>Улучшение проходимости (легковые)</Russian>
+			<Russian>Проходимость (легковые)</Russian>
 			<Dutch>Offroad Prestaties</Dutch>
 			<French>Performances tout-terrain</French>
 			<Czech>Terénní výkonnost</Czech>
@@ -25119,7 +25136,7 @@
 		<Key ID="STR_EPOCH_VEHUP_AVE">
 			<English>Vehicle Armor</English>
 			<German>Fahrzeugpanzerung</German>
-			<Russian>Улучшение брони (легковые)</Russian>
+			<Russian>Броня (легковые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_DESC">
 			<English>Manual to install and upgrade the armor of the vehicle.&lt;br/&gt;Upgrade: 2/4</English>
@@ -25129,7 +25146,7 @@
 		<Key ID="STR_EPOCH_VEHUP_LRK">
 			<English>Cargo Space</English>
 			<German>Laderaum</German>
-			<Russian>Увеличение вместительности (легковые)</Russian>
+			<Russian>Вместительность (легковые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_DESC">
 			<English>Manual to upgrade the cargo space of a vehicle.&lt;br/&gt;Upgrade: 3/4</English>
@@ -25139,7 +25156,7 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK">
 			<English>Fuel Tank</English>
 			<German>Benzintank</German>
-			<Russian>Улучшение топливного бака (легковые)</Russian>
+			<Russian>Топливный бак (легковые)</Russian>
 			<Dutch>Benzinetank</Dutch>
 			<French>Réservoir</French>
 			<Czech>Palivová nádrž</Czech>
@@ -25147,7 +25164,7 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK_DESC">
 			<English>Install guide for a bigger fuel tank.&lt;br/&gt;Upgrade: 4/4</English>
 			<German>Installationsanleitung für einen größeren Benzintank.&lt;br/&gt;Upgrade: 4/4</German>
-			<Russian>Руководство по увеличению топливного бака легковых транспортных средств.&lt;br/&gt;Улучшение: 4/4</Russian>
+			<Russian>Руководство по увеличению ёмкости топливного бака легковых транспортных средств.&lt;br/&gt;Улучшение: 4/4</Russian>
 			<Dutch>Installatiehandleiding voor de benzinetank.&lt;br/&gt;Upgrade: 4/4</Dutch>
 			<French>Guide d'installation du réservoir.&lt;br/&gt;Upgrade: 4/4</French>
 			<Czech>Návod na instalaci Palivové nádrže.&lt;br/&gt;Upgrade: 4/4</Czech>
@@ -25155,19 +25172,19 @@
 		<Key ID="STR_EPOCH_VEHUP_ARM">
 			<English>Weapon Upgrade</English>
 			<German>Bewaffnung-Upgrade</German>
-			<Russian>Установка оружия (легковые)</Russian>
+			<Russian>Вооружение (легковые)</Russian>
 			<Czech>Vylepšení zbraně na vozidle</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_DESC">
 			<English>Installation instructions for the vehicle armament.&lt;br/&gt;Additional Upgrade</English>
 			<German>Installationsanleitung für die Fahrzeugbewaffnung.&lt;br/&gt;Zusatz-Upgrade</German>
-			<Russian>Руководство по вооружению легковых транспортных средств.&lt;br/&gt;Дополнительное улучшение</Russian>
+			<Russian>Руководство по установке оружия на легковые транспортные средства.&lt;br/&gt;Дополнительное улучшение.</Russian>
 			<Czech>Návod na instalaci zbraně na vozidlo.&lt;br/&gt;Additional Upgrade</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TRUCK">
 			<English>Truck Offroad Performance</English>
 			<German>LKW-Offroad Performance</German>
-			<Russian>Улучшение проходимости (грузовые)</Russian>
+			<Russian>Проходимость (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TRUCK_DESC">
 			<English>Offroad performance manual to increase the offroad speed of trucks.&lt;br/&gt;Upgrade: 1/4</English>
@@ -25177,7 +25194,7 @@
 		<Key ID="STR_EPOCH_VEHUP_AVE_TRUCK">
 			<English>Truck Armor</English>
 			<German>LKW-Panzerung</German>
-			<Russian>Улучшение брони (грузовые)</Russian>
+			<Russian>Броня (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TRUCK_DESC">
 			<English>Manual to install and upgrade the armor of trucks.&lt;br/&gt;Upgrade: 2/4</English>
@@ -25187,7 +25204,7 @@
 		<Key ID="STR_EPOCH_VEHUP_LRK_TRUCK">
 			<English>Truck Cargo Space</English>
 			<German>LKW-Laderaum</German>
-			<Russian>Увеличение вместительности (грузовые)</Russian>
+			<Russian>Вместительность (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TRUCK_DESC">
 			<English>Manual to upgrade the cargo space of a truck.&lt;br/&gt;Upgrade: 3/4</English>
@@ -25197,27 +25214,27 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK">
 			<English>Truck Fuel Tank</English>
 			<German>LKW-Benzintank</German>
-			<Russian>Улучшение топливного бака (грузовые)</Russian>
+			<Russian>Топливный бак (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK_DESC">
 			<English>Install guide for bigger truck fuel tanks.&lt;br/&gt;Upgrade: 4/4</English>
 			<German>Installationsanleitung für einen größeren Benzintank bei LKWs.&lt;br/&gt;Upgrade: 4/4</German>
-			<Russian>Руководство по увеличению топливного бака грузовых автомобилей.&lt;br/&gt;Улучшение: 4/4</Russian>
+			<Russian>Руководство по увеличению ёмкости топливного бака грузовых автомобилей.&lt;br/&gt;Улучшение: 4/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_TRUCK">
 			<English>Truck Weapon Upgrade</English>
 			<German>LKW-Bewaffnungs-Upgrade</German>
-			<Russian>Установка оружия (грузовые)</Russian>
+			<Russian>Вооружение (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ARM_TRUCK_DESC">
 			<English>Installation instructions for the truck armament.&lt;br/&gt;Additional Upgrade</English>
 			<German>Installationsanleitung für die LKW-Bewaffnung.&lt;br/&gt;Zusatz-Upgrade</German>
-			<Russian>Руководство по вооружению грузовых автомобилей.&lt;br/&gt;Дополнительное улучшение</Russian>
+			<Russian>Руководство по установке оружия на грузовые автомобили.&lt;br/&gt;Дополнительное улучшение.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TANK">
 			<English>Tank Performance</English>
 			<German>Panzer-Performance</German>
-			<Russian>Увеличение скорости (танки)</Russian>
+			<Russian>Скорость (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_ORP_TANK_DESC">
 			<English>Performance manual to increase the speed of tanks.&lt;br/&gt;Upgrade: 1/4</English>
@@ -25227,7 +25244,7 @@
 		<Key ID="STR_EPOCH_VEHUP_AVE_TANK">
 			<English>Tank Armor</English>
 			<German>Panzer-Panzerung</German>
-			<Russian>Улучшение брони (танки)</Russian>
+			<Russian>Броня (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_TANK_DESC">
 			<English>Manual to install and upgrade the armor of tanks.&lt;br/&gt;Upgrade: 2/4</English>
@@ -25237,7 +25254,7 @@
 		<Key ID="STR_EPOCH_VEHUP_LRK_TANK">
 			<English>Tank Cargo Space</English>
 			<German>Panzer-Laderaum</German>
-			<Russian>Увеличение вместительности (танки)</Russian>
+			<Russian>Вместительность (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_TANK_DESC">
 			<English>Manual to upgrade the cargo space of a tank.&lt;br/&gt;Upgrade: 3/4</English>
@@ -25247,17 +25264,17 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK_TANK">
 			<English>Tank Fuel Tank</English>
 			<German>Panzer-Benzintank</German>
-			<Russian>Улучшение топливного бака (танки)</Russian>
+			<Russian>Топливный бак (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TANK_DESC">
 			<English>Install guide for bigger tank fuel tanks.&lt;br/&gt;Upgrade: 4/4</English>
 			<German>Installationsanleitung für einen größeren Benzintank bei Panzern.&lt;br/&gt;Upgrade: 4/4</German>
-			<Russian>Руководство по увеличению топливного бака танков.&lt;br/&gt;Улучшение: 4/4</Russian>
+			<Russian>Руководство по увеличению ёмкости топливного бака танков.&lt;br/&gt;Улучшение: 4/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_HELI">
 			<English>Helicopter Armor</English>
 			<German>Helikopter-Panzerung</German>
-			<Russian>Улучшение брони (вертолеты)</Russian>
+			<Russian>Броня (вертолеты)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_AVE_HELI_DESC">
 			<English>Manual to install and upgrade the armor of helicopters.&lt;br/&gt;Upgrade: 1/3</English>
@@ -25267,7 +25284,7 @@
 		<Key ID="STR_EPOCH_VEHUP_LRK_HELI">
 			<English>Helicopter Cargo Space</English>
 			<German>Helikopter-Laderaum</German>
-			<Russian>Увеличение вместительности (вертолеты)</Russian>
+			<Russian>Вместительность (вертолеты)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_LRK_HELI_DESC">
 			<English>Manual to upgrade the cargo space of a helicopter.&lt;br/&gt;Upgrade: 2/3</English>
@@ -25277,12 +25294,12 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK_HELI">
 			<English>Helicopter Fuel Tank</English>
 			<German>Helikopter-Tank</German>
-			<Russian>Улучшение топливного бака (вертолеты)</Russian>
+			<Russian>Топливный бак (вертолеты)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_HELI_DESC">
 			<English>Install guide for bigger helicopter fuel tanks.&lt;br/&gt;Upgrade: 3/3</English>
 			<German>Installationsanleitung für einen größeren Benzintank bei Helikoptern.&lt;br/&gt;Upgrade: 3/3</German>
-			<Russian>Руководство по увеличению топливного бака вертолетов.&lt;br/&gt;Улучшение: 3/3</Russian>
+			<Russian>Руководство по увеличению ёмкости топливного бака вертолетов.&lt;br/&gt;Улучшение: 3/3</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_IN_PROGRESS">
 			<English>Vehicle Upgrade in progress, please wait...</English>
@@ -25303,6 +25320,7 @@
 		<Key ID="STR_EPOCH_VEHUP_NO_UPGRADE_FOR_VEHICLE">
 			<English>There is no %1 upgrade for %2 available!</English>
 			<German>Es ist kein %1 Upgrade für %2 verfügbar!</German>
+			<Russian>%2: Данное улучшение (%1) невозможно!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_NOT_ALLOWED">
 			<English>The vehicle upgrade for %1 got disabled on this server!</English>
@@ -26228,7 +26246,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_6">
 			<English>Missing %1 more of %2</English>
 			<German>Dir fehlt/fehlen %1 %2</German>
-			<Russian>Не хватает %2 (В количестве: %1)</Russian>
+			<Russian>Не хватает %2 (%1 шт.)</Russian>
 			<Dutch>Je hebt nog %1 extra %2 nodig.</Dutch>
 			<French>Il manque %1 %2</French>
 			<Czech>Chybí %1x %2</Czech>
@@ -26325,13 +26343,13 @@
 		<Key ID="STR_EPOCH_BULK_DESC_EMPTY">
 			<English>Empty Supply Crate</English>
 			<German>Leere Versorgungskiste</German>
-			<Russian>Пустой ящик.</Russian>
+			<Russian>Пустой ящик для припасов.</Russian>
 			<Czech>Prázdná bedna</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_EMPTY">
 			<English>Supply Crate (Empty)</English>
 			<German>Kiste (Leer)</German>
-			<Russian>Пустой ящик для припасов</Russian>
+			<Russian>Пустой ящик</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_SODACOKE_HALF">
 			<English>6x Soda (Coke)</English>
@@ -26386,7 +26404,7 @@
 		<Key ID="STR_EPOCH_BULK_DISP_BACON_HALF">
 			<English>Supply Crate (6x Bacon)</English>
 			<German>Kiste (6x Speck)</German>
-			<Russian>Ящик (Бекон 6шт.)</Russian>
+			<Russian>Ящик (6x Бекон)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_BACON_FULL">
 			<English>12x Bacon</English>
@@ -26397,7 +26415,7 @@
 		<Key ID="STR_EPOCH_BULK_DISP_BACON_FULL">
 			<English>Supply Crate (12x Bacon)</English>
 			<German>Kiste (12x Speck)</German>
-			<Russian>Ящик (Бекон 12шт.)</Russian>
+			<Russian>Ящик (12x Бекон)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_G17">
 			<English>12x 17Rnd 9x19 Glock17</English>
@@ -26488,7 +26506,7 @@
 		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_FULL">
 			<English>Supply Crate (12x Wire Kit)</English>
 			<German>Kiste (12x Stacheldraht)</German>
-			<Russian>Ящик (12x Колючая проволока)</Russian>
+			<Russian>Ящик (12x Колючка)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_WIREKIT_HALF">
 			<English>6x Wire Kit</English>
@@ -26499,7 +26517,7 @@
 		<Key ID="STR_EPOCH_BULK_DISP_WIREKIT_HALF">
 			<English>Supply Crate (6x Wire Kit)</English>
 			<German>Kiste (6x Stacheldraht)</German>
-			<Russian>Ящик (6x Колючая проволока)</Russian>
+			<Russian>Ящик (6x Колючка)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_GENERIC_FULL">
 			<English>12x Scrap Metal</English>
@@ -26526,34 +26544,42 @@
 		<Key ID="STR_EPOCH_BULK_DESC_PipeBomb_FULL">
 			<English>12x Pipe Bomb</English>
 			<German>12x Rohrbombe</German>
+			<Russian>Ящик с бомбами (12шт).</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_PipeBomb_FULL">
 			<English>Supply Crate (12x Pipe Bomb)</English>
 			<German>Kiste (12x Rohrbombe)</German>
+			<Russian>Ящик (12x Металлолом)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_PartWheel_FULL">
 			<English>12x Car wheel</English>
 			<German>12x Reifen</German>
+			<Russian>Ящик с 12-ю новенькими автомобильными колёсами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_PartWheel_FULL">
 			<English>Supply Crate (12x Car wheel)</English>
 			<German>Kiste (12x Reifen)</German>
+			<Russian>Ящик (12x Колесо)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_PartGlass_FULL">
 			<English>12x Windscreen glass</English>
 			<German>12x Autoglass</German>
+			<Russian>Ящик с 12-ю новенькими автомобильными стёклами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_PartGlass_FULL">
 			<English>Supply Crate (12x Windscreen glass)</English>
 			<German>Kiste (12x Autoglass)</German>
+			<Russian>Ящик (12x Автостекло)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemScrews_FULL">
 			<English>12x Box of screws</English>
 			<German>12x Schachtel mit Schrauben</German>
+			<Russian>Ящик с 12-ю коробками шурупов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemScrews_FULL">
 			<English>Supply Crate (12x Box of screws)</English>
 			<German>Kiste (12x Schachtel mit Schrauben)</German>
+			<Russian>Ящик (12x Коробка шурупов)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemMixOil_FULL">
 			<English>12x 2-Stroke Engine Oil</English>
@@ -35894,7 +35920,7 @@
 			<English>Change %1 code</English>
 			<German>%1 Code ändern</German>
 			<French>Changer le code de %1</French>
-			<Russian>Изменить %1 код</Russian>
+			<Russian>Изменить код</Russian>
 			<Spanish>Cambiar el código de %1</Spanish>
 		</Key>
 	</Package>
