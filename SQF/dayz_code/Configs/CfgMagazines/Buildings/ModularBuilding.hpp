@@ -1190,8 +1190,8 @@ class ItemWoodWall: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_234;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop","Handsaw_DZE"};
-			requiretools[] = {"ItemToolbox"};
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemWoodWallDoor",1}};
 			input[] = {{"ItemWoodWall",1}};
 		};
@@ -1199,8 +1199,8 @@ class ItemWoodWall: CA_Magazine
 		{
 			text = $STR_EPOCH_PLAYER_235;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
-			neednearby[] = {"workshop","Handsaw_DZE"};
-			requiretools[] = {"ItemToolbox"};
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemWoodWallWindow",1}};
 			input[] = {{"ItemWoodWall",1},{"PartGlass",1}};
 		};
