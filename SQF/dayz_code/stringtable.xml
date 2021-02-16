@@ -2781,7 +2781,7 @@
 		</Key>
 		<Key ID="STR_CRAFT_DESC_Bandage">
 			<English>Blueprint to create a Bandage. Required - 2 Rags, 2 gauze, 1 string. Tools Needed: ToolBox</English>
-			<Russian>Инструкция по созданию бинтов.&lt;br/&gt;Нужно: пара тряпок, пара марль, шнур и ящик с инструментами.</Russian>
+			<Russian>Инструкция по созданию бинтов.&lt;br/&gt;Нужно: пара тряпок, пара марль, нитки и ящик с инструментами.</Russian>
 			<Spanish>Plano para crear Vendaje. Requerido: 2 trapos, 2 gasas, 1 hilo y Caja de Herramientas</Spanish>
 			<French>Plan de fabrication d&apos;un Pansement. Requis : 2 Tissus, 2 Gazes, 1 Fil + Boîte à outils</French>
 			<Czech>Návod pro vyrobení obvazu. Potřeba: 2x hadr, 2x gáza, 1x provázek a sada nástrojů</Czech>
@@ -2798,7 +2798,7 @@
 		<Key ID="STR_CRAFT_DESC_SEPSISBandage">
 			<English>Blueprint to create a sepsis cure and bandage. Required - 3 rags, 2 gauze, 1 string, 2 comfrey leaves.</English>
 			<Spanish>Plano para crear un vendaje que combate la septicemia. Requerido: - 3 trapos, 2 gasas, 1 cuerda, 2 hojas de consuelda.</Spanish>
-			<Russian>Инструкция по созданию антисептических бинтов.&lt;br/&gt;Нужно: три тряпки, пара марль, шнур и пара листков живокоста.</Russian>
+			<Russian>Инструкция по созданию антисептических бинтов.&lt;br/&gt;Нужно: три тряпки, пара марль, нитки и пара листков живокоста.</Russian>
 			<Czech>Návod pro vyrobení antiseptického obvazu. Potřeba: 3x hadr, 2x gáza, 1x provázek, 2x listy kostivalu.</Czech>
 			<French>Plan de fabrication d&apos;un pansement antiseptique. Requis: 3 tissus, 2 gazes, 1 ficelle, 2 consoudes.</French>
 			<German>Blaupause für eine antiseptische Bandage. Gebraucht werden: 3x Lumpen, 2x Mullbinden, 1x Schnur, 2x Beinwellblätter.</German>
@@ -15066,14 +15066,14 @@
 		</Key>
 		<Key ID="STR_BLD_craft_ItemLog">
 			<English>Wooden Plank</English>
-			<Russian>Доска</Russian>
+			<Russian>Создать: Доска</Russian>
 			<French>Couper en planches</French>
 			<Czech>Rozštípat</Czech>
 			<German>Holzplanke</German>
 		</Key>
 		<Key ID="STR_BLD_craft_equip_rope">
 			<English>String</English>
-			<Russian>Шнурок</Russian>
+			<Russian>Создать: Нитки</Russian>
 			<German>Schnur</German>
 		</Key>
 		<Key ID="STR_BLD_name_ItemPlank">
@@ -23849,7 +23849,7 @@
 		<Key ID="STR_EPOCH_PLAYER_149">
 			<English>Crafting needs a %1 within %2 meters</English>
 			<German>Zur Herstellung wird ein(e) %1 innerhalb von %2 Meter(n) benötigt.</German>
-			<Russian>Для создания требуется %1 вблизи %2 метров</Russian>
+			<Russian>Для создания требуется %1 вблизи %2м</Russian>
 			<Dutch>Hiervoor heb je een %1 nodig binnen %2 meter</Dutch>
 			<Czech>Výroba potřebuje %1 v rámci %2 metrů</Czech>
 		</Key>
@@ -24383,11 +24383,12 @@
 		<Key ID="STR_EPOCH_PLAYER_213_1">
 			<English>Craft Metal Pillar</English>
 			<German>Metallsäule herstellen</German>
+			<Russian>Создать: Металл. столб</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_214">
 			<English>Build Corrugated Fence</English>
 			<German>Wellblechzaun aufbauen</German>
-			<Russian>Установить: Гофрированный забор</Russian>
+			<Russian>Установить: Гофрир. забор</Russian>
 			<Dutch>Bouw Ribbelplaten hek</Dutch>
 			<Czech>Postavit Zvlněný plot</Czech>
 		</Key>
@@ -24429,7 +24430,7 @@
 		<Key ID="STR_EPOCH_PLAYER_220">
 			<English>Craft Metal Panel</English>
 			<German>Metallwand herstellen</German>
-			<Russian>Создать: Металлич. панель</Russian>
+			<Russian>Создать: Металл. панель</Russian>
 			<Dutch>Ceëer metalen paneel</Dutch>
 			<Czech>Vyrobit Železný panel</Czech>
 		</Key>
@@ -24485,28 +24486,28 @@
 		<Key ID="STR_EPOCH_PLAYER_228">
 			<English>Craft Metal Floor</English>
 			<German>Metallboden herstellen</German>
-			<Russian>Создать: Металлич. пол</Russian>
+			<Russian>Создать: Металл. пол</Russian>
 			<Dutch>Creëer metalen vloer</Dutch>
 			<Czech>Vytvořit Železnou podlahu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_228_1">
 			<English>Craft Metal Floor 1/2</English>
 			<German>Metallboden 1/2 herstellen</German>
-			<Russian>Создать: Металлич. пол 1/2</Russian>
+			<Russian>Создать: Металл. пол 1/2</Russian>
 			<Dutch>Creëer metalen vloer 1/2</Dutch>
 			<Czech>Vytvořit Železnou podlahu 1/2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_228_2">
 			<English>Craft Metal Floor 1/4</English>
 			<German>Metallboden 1/4 herstellen</German>
-			<Russian>Создать: Металлич. пол 1/4</Russian>
+			<Russian>Создать: Металл. пол 1/4</Russian>
 			<Dutch>Creëer metalen vloer 1/4</Dutch>
 			<Czech>Vytvořit Železnou podlahu 1/4</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_228_3">
 			<English>Craft Metal Floor 4x</English>
 			<German>Metallboden 4x herstellen</German>
-			<Russian>Создать: Металлич. пол 4x</Russian>
+			<Russian>Создать: Металл. пол 4x</Russian>
 			<Dutch>Creëer metalen vloer 4x</Dutch>
 			<Czech>Vytvořit Železnou podlahu 4x</Czech>
 		</Key>
@@ -24557,7 +24558,7 @@
 		<Key ID="STR_EPOCH_PLAYER_233">
 			<English>Craft Stair Supports</English>
 			<German>Treppenstützen herstellen</German>
-			<Russian>Создать лестничные опоры</Russian>
+			<Russian>Создать: Лестнич. опоры</Russian>
 			<Dutch>Creëer trapsteunen</Dutch>
 			<Czech>Vytvořit Podpěry schodů</Czech>
 		</Key>
@@ -24592,7 +24593,7 @@
 		<Key ID="STR_EPOCH_PLAYER_237_1">
 			<English>Craft Wooden Gate Frame</English>
 			<German>Holztorrahmen herstellen</German>
-			<Russian>Создать деревянный проём ворот</Russian>
+			<Russian>Создать: Дерев. проём ворот</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_238">
 			<English>Craft Door</English>
@@ -24643,6 +24644,7 @@
 		<Key ID="STR_EPOCH_PLAYER_240_1">
 			<English>Craft Garage Door w/ no top</English>
 			<German>Garagentor (rahmenlos) herstellen</German>
+			<Russian>Создать: Дверь гаража без верха</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_242">
 			<English>Craft Lumber</English>
@@ -24728,7 +24730,7 @@
 		<Key ID="STR_EPOCH_PLAYER_252_2">
 			<English>Craft Half Wall w/ gap</English>
 			<German>Halbe Wand mit Lücke herstellen</German>
-			<Russian>Создать: Половина стены с щелью</Russian>
+			<Russian>Создать: Полстены с щелью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<English>Craft Garage Doorway</English>
@@ -24767,19 +24769,19 @@
 		<Key ID="STR_EPOCH_PLAYER_257">
 			<English>Craft Wood Stairs</English>
 			<German>Holztreppe herstellen</German>
-			<Russian>Создать: Деревянные ступеньки</Russian>
+			<Russian>Создать: Дерев. ступеньки</Russian>
 			<Czech>Vytvořit Dřevěné schody</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_258">
 			<English>Craft Wood Ladder</English>
 			<German>Holzleiter herstellen</German>
-			<Russian>Создать: Деревянная лестница</Russian>
+			<Russian>Создать: Дерев. лестница</Russian>
 			<Czech>Vytvořit Dřevěné schody</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_259">
 			<English>Craft Lumber Pack</English>
 			<German>Bauholzpaket herstellen</German>
-			<Russian>Создать: Упаковка пиломатериалов</Russian>
+			<Russian>Создать: Уп-ка пиломат-лов</Russian>
 			<Czech>Vytvořit Balík dřeva</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_260">
@@ -24791,7 +24793,7 @@
 		<Key ID="STR_EPOCH_PLAYER_260_1">
 			<English>Craft Advanced Workbench</English>
 			<German>Verbesserte Werkbank herstellen</German>
-			<Russian>Создать: Улучшенный верстак</Russian>
+			<Russian>Создать: Улучш. верстак</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_261">
 			<English>Craft Shack</English>
@@ -24826,13 +24828,13 @@
 		<Key ID="STR_EPOCH_PLAYER_266">
 			<English>Craft Silver Bar</English>
 			<German>Silberbarren herstellen</German>
-			<Russian>Создать серебряный слиток</Russian>
+			<Russian>Создать: Серебр. слиток</Russian>
 			<Czech>Vytvořit Stříbrnou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
 			<English>Craft Gold Bar</English>
 			<German>Goldbarren herstellen</German>
-			<Russian>Создать золотой слиток</Russian>
+			<Russian>Создать: Золотой слиток</Russian>
 			<!-- <Dutch>Stapel bar van Goud</Dutch> -->
 			<Czech>Vytvořit Zlatou cihlu</Czech>
 		</Key>
@@ -25038,7 +25040,7 @@
 		<Key ID="STR_EPOCH_PLAYER_308">
 			<English>To driver's seat</English>
 			<Spanish>Para el asiento del conductor</Spanish>
-			<Russian>На сиденье водителя</Russian>
+			<Russian>На место водителя</Russian>
 			<French>Pour le siège du conducteur</French>
 			<Czech>Chcete-li sedadla řidiče</Czech>
 			<German>Zum Fahrersitz</German>
@@ -26239,7 +26241,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_4">
 			<English>You have maintained %1 building parts.</English>
 			<German>%1 Bauteile saniert.</German>
-			<Russian>Вы обслужили %1 построек.</Russian>
+			<Russian>Количество обслуженных частей: %1.</Russian>
 			<French>Vous avez maintenu %1 construction(s).</French>
 			<Czech>Opravil jsi %1 částí budov.</Czech>
 		</Key>
@@ -26584,386 +26586,482 @@
 		<Key ID="STR_EPOCH_BULK_DESC_ItemMixOil_FULL">
 			<English>12x 2-Stroke Engine Oil</English>
 			<German>12x 2-Takt-Motorenöl</German>
+			<Russian>Ящик с 12-ю канистрами масла для бензопил.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemMixOil_FULL">
 			<English>Supply Crate (12x 2-Stroke Engine Oil)</English>
 			<German>Kiste (12x 2-Takt-Motorenöl)</German>
+			<Russian>Ящик (12x Масло для бензопилы)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemLightBulb_FULL">
 			<English>12x Light bulb</English>
 			<German>12x Glühbirne</German>
+			<Russian>Ящик с 12-ю лампочками.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemLightBulb_FULL">
 			<English>Supply Crate (12x Light bulb)</English>
 			<German>Kiste (12x Glühbirne)</German>
+			<Russian>Ящик (12x Лампочка)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemKosmosSmokes_FULL">
 			<English>12x Kosmos Smokes</English>
 			<German>12x Kosmos Zigaretten</German>
+			<Russian>Ящик с 12-ю пачками сигарет "Космос".</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemKosmosSmokes_FULL">
 			<English>Supply Crate (12x Kosmos Smokes)</English>
 			<German>Kiste (12x Kosmos Zigaretten)</German>
+			<Russian>Ящик (12x Сигареты "Космос")</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloTobacco_FULL">
 			<English>12x Kilo of tobacco</English>
 			<German>12x Kilo Tabak</German>
+			<Russian>Ящик с 12-ю килограммовыми упаковками табака.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloTobacco_FULL">
 			<English>Supply Crate (12x Kilo of tobacco)</English>
 			<German>Kiste (12x Kilo Tabak)</German>
+			<Russian>Ящик (12x Махорка)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloHemp_FULL">
 			<English>12x Kilo of hemp</English>
 			<German>12x Kilo Hanf</German>
+			<Russian>Ящик с 12-ю килограммовыми упаковками марихуаны.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloHemp_FULL">
 			<English>Supply Crate (12x Kilo of hemp)</English>
 			<German>Kiste (12x Kilo Hanf)</German>
+			<Russian>Ящик (12x Марихуана)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemKiloBlackTea_FULL">
 			<English>12x Kilo of black tea</English>
 			<German>12x Kilo Schwarzer Tee</German>
+			<Russian>Ящик с 12-ю килограммовыми упаковками чая.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemKiloBlackTea_FULL">
 			<English>Supply Crate (12x Kilo of black tea)</English>
 			<German>Kiste (12x Kilo Schwarzer Tee)</German>
+			<Russian>Ящик (12x Чёрный чай)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemHotwireKit_FULL">
 			<English>12x Hotwire kit</English>
 			<German>12x Aufbruchwerkzeug</German>
+			<Russian>Ящик с 12-ю наборами для угона.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemHotwireKit_FULL">
 			<English>Supply Crate (12x Hotwire kit)</English>
 			<German>Kiste (12x Aufbruchwerkzeug)</German>
+			<Russian>Ящик (12x Набор для угона)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemFertilizer_FULL">
 			<English>12x Fertilizer</English>
 			<German>12x Dünger</German>
+			<Russian>Ящик с 12-ю мешками удобрений.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemFertilizer_FULL">
 			<English>Supply Crate (12x Fertilizer)</English>
 			<German>Kiste (12x Dünger)</German>
+			<Russian>Ящик (12x Мешок удобрений)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemDogTag_FULL">
 			<English>12x Dog Tag</English>
 			<German>12x Hundemarke</German>
+			<Russian>Ящик с 12-ю жетонами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemDogTag_FULL">
 			<English>Supply Crate (12x Dog Tag)</English>
 			<German>Kiste (12x Hundemarke)</German>
+			<Russian>Ящик (12x Жетон)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemComboLock_FULL">
 			<English>12x Combination lock</English>
 			<German>12x Zahlenschloss</German>
+			<Russian>Ящик с 12-ю кодовыми замками.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemComboLock_FULL">
 			<English>Supply Crate (12x Combination lock)</English>
 			<German>Kiste (12x Zahlenschloss)</German>
+			<Russian>Ящик (12x Кодовый замок)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemC4Charge_FULL">
 			<English>12x C4 Charge</English>
 			<German>12x C4 Ladung</German>
+			<Russian>Ящик с 12-ю взрывчатками C4.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemC4Charge_FULL">
 			<English>Supply Crate (12x C4 Charge)</English>
 			<German>Kiste (12x C4 Ladung)</German>
+			<Russian>Ящик (12x Взрывчатка C4)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_HandRoadFlare_FULL">
 			<English>12x Road flare</English>
 			<German>12x Bengalische Fackel</German>
+			<Russian>Ящик с 12-ю фаерами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_HandRoadFlare_FULL">
 			<English>Supply Crate (12x Road flare)</English>
 			<German>Kiste (12x Bengalische Fackel)</German>
+			<Russian>Ящик (12x Фаер)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_HandChemRed_FULL">
 			<English>12x Chemlight (red)</English>
 			<German>12x Knicklicht (Rot)</German>
+			<Russian>Ящик с 12-ю красными химическими источниками света.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_HandChemRed_FULL">
 			<English>Supply Crate (12x Chemlight red)</English>
 			<German>Kiste (12x Knicklicht Rot)</German>
+			<Russian>Ящик (12x Химсвет (Красный))</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_HandChemGreen_FULL">
 			<English>12x Chemlight (green)</English>
 			<German>12x Knicklicht (Grün)</German>
+			<Russian>Ящик с 12-ю зелёными химическими источниками света.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_HandChemGreen_FULL">
 			<English>Supply Crate (12x Chemlight green)</English>
 			<German>Kiste (12x Knicklicht Grün)</German>
+			<Russian>Ящик (12x Химсвет (Зелёный))</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_HandChemBlue_FULL">
 			<English>12x Chemlight (blue)</English>
 			<German>12x Knicklicht (Blau)</German>
+			<Russian>Ящик с 12-ю синими химическими источниками света.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_HandChemBlue_FULL">
 			<English>Supply Crate (12x Chemlight blue)</English>
 			<German>Kiste (12x Knicklicht Blau)</German>
+			<Russian>Ящик (12x Химсвет (Синий))</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodRabbitCooked_FULL">
 			<English>12x Cooked rabbit</English>
 			<German>12x Gebratenes Hasenfleisch</German>
+			<Russian>Ящик с 12-ю кусками жареного кролика.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodRabbitCooked_FULL">
 			<English>Supply Crate (12x rabbit)</English>
 			<German>Kiste (12x Hasenfleisch)</German>
+			<Russian>Ящик (12x Жареный кролик)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodPumpkin_FULL">
 			<English>12x Pumpkin</English>
 			<German>12x Kürbis</German>
+			<Russian>Ящик с 12-ю тыквами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodPumpkin_FULL">
 			<English>Supply Crate (12x Pumpkin)</English>
 			<German>Kiste (12x Kürbis)</German>
+			<Russian>Ящик (12x Тыква)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodPotatoRaw_FULL">
 			<English>12x Potato raw</English>
 			<German>12x rohe Kartoffel</German>
+			<Russian>Ящик с 12-ю картофелинами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodPotatoRaw_FULL">
 			<English>Supply Crate (12x Potato raw)</English>
 			<German>Kiste (12x rohe Kartoffel)</German>
+			<Russian>Ящик (12x Картофель)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodMuttonCooked_FULL">
 			<English>12x Cooked mutton</English>
 			<German>12x Gebratenes Lammfleisch</German>
+			<Russian>Ящик с 12-ю кусками жареной баранины.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodMuttonCooked_FULL">
 			<English>Supply Crate (12x mutton)</English>
 			<German>Kiste (12x Lammfleisch)</German>
+			<Russian>Ящик (12x Баранина)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodGoatCooked_FULL">
 			<English>12x Cooked goat</English>
 			<German>12x Gebratenes Ziegenfleisch</German>
+			<Russian>Ящик с 12-ю кусками жареной ягнятины.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodGoatCooked_FULL">
 			<English>Supply Crate (12x Goat)</English>
 			<German>Kiste (12x Ziegenfleisch)</German>
+			<Russian>Ящик (12x Ягнятина)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodDogCooked_FULL">
 			<English>12x Cooked dog</English>
 			<German>12x Gebratenes Hundefleisch</German>
+			<Russian>Ящик с 12-ю кусками жареной собачатины.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodDogCooked_FULL">
 			<English>Supply Crate (12x dog)</English>
 			<German>Kiste (12x Hundefleisch)</German>
+			<Russian>Ящик (12x Собачатина)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodChickenCooked_FULL">
 			<English>12x Cooked chicken</English>
 			<German>12x Gebratenes Hühnerfleisch</German>
+			<Russian>Ящик с 12-ю кусками жареных куриных окорочков.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodChickenCooked_FULL">
 			<English>Supply Crate (12x chicken)</English>
 			<German>Kiste (12x Hühnerfleisch)</German>
+			<Russian>Ящик (12x Курятина)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodCarrot_FULL">
 			<English>12x Carrot</English>
 			<German>12x Karotte</German>
+			<Russian>Ящик с 12-ю морковками.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodCarrot_FULL">
 			<English>Supply Crate (12x Carrot)</English>
 			<German>Kiste (12x Karotte)</German>
+			<Russian>Ящик (12x Морковь)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FoodBeefCooked_FULL">
 			<English>12x Cooked beef</English>
 			<German>12x Gebratenes Rindersteak</German>
+			<Russian>Ящик с 12-ю кусками жареной говядины.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FoodBeefCooked_FULL">
 			<English>Supply Crate (12x beef)</English>
 			<German>Kiste (12x Rindersteak)</German>
+			<Russian>Ящик (12x Говядина)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FishCookedTuna_FULL">
 			<English>12x Cooked tuna</English>
 			<German>12x Gebratener Thunfisch</German>
+			<Russian>Ящик с 12-ю кусками жареного тунца.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FishCookedTuna_FULL">
 			<English>Supply Crate (12x Tuna)</English>
 			<German>Kiste (12x Thunfisch)</German>
+			<Russian>Ящик (12x Тунец)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FishCookedTrout_FULL">
 			<English>12x Cooked steelhead</English>
 			<German>12x Gebratene Stahlkopfforelle</German>
+			<Russian>Ящик с 12-ю кусками жареной форели.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FishCookedTrout_FULL">
 			<English>Supply Crate (12x Steelhead)</English>
 			<German>Kiste (12x Forelle)</German>
+			<Russian>Ящик (12x Форель)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_FishCookedSeaBass_FULL">
 			<English>12x Cooked seabass</English>
 			<German>12x Gebratener Wolfsbarsch</German>
+			<Russian>Ящик с 12-ю кусками жареного окуня.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_FishCookedSeaBass_FULL">
 			<English>Supply Crate (12x Seabass)</English>
 			<German>Kiste (12x Barsch)</German>
+			<Russian>Ящик (12x Окунь)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_string_FULL">
 			<English>12x String</English>
 			<German>12x Schnur</German>
+			<Russian>Ящик с 12-ю мотками ниток.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_string_FULL">
 			<English>Supply Crate (12x String)</English>
 			<German>Kiste (12x Schnur)</German>
+			<Russian>Ящик (12x Нитки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_scrapelectronics_FULL">
 			<English>12x Scrap electronics</English>
 			<German>12x Elektronikschrott</German>
+			<Russian>Ящик с 12-ю кучками радиодеталей.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_scrapelectronics_FULL">
 			<English>Supply Crate (12x Scrap electronics)</English>
 			<German>Kiste (12x Elektronikschrott)</German>
+			<Russian>Ящик (12x Радиодетали)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_rope_FULL">
 			<English>12x Rope</English>
 			<German>12x Seil</German>
+			<Russian>Ящик с 12-ю верёвками.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_rope_FULL">
 			<English>Supply Crate (12x Rope)</English>
 			<German>Kiste (12x Seil)</German>
+			<Russian>Ящик (12x Верёвка)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_rag_FULL">
 			<English>12x Rag</English>
 			<German>12x Lumpen</German>
+			<Russian>Ящик с 12-ю старыми тряпками.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_rag_FULL">
 			<English>Supply Crate (12x Rag)</English>
 			<German>Kiste (12x Lumpen)</German>
+			<Russian>Ящик (12x Тряпка)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_pvc_box_FULL">
 			<English>12x PVC box</English>
 			<German>12x Plastikschachtel</German>
+			<Russian>Ящик с 12-ю пластиковыми коробками.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_pvc_box_FULL">
 			<English>Supply Crate (12x PVC box)</English>
 			<German>Kiste (12x Plastikschachtel)</German>
+			<Russian>Ящик (12x Коробка из ПВХ)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_nails_FULL">
 			<English>12x Box of nails</English>
 			<German>12x Schachtel mit Nägeln</German>
+			<Russian>Ящик с 12-ю коробками гвоздей.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_nails_FULL">
 			<English>Supply Crate (12x Box of nails)</English>
 			<German>Kiste (12x Schachtel mit Nägeln)</German>
+			<Russian>Ящик (12x Гвозди)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_garlic_bulb_FULL">
 			<English>12x Garlic bulb</English>
 			<German>12x Knoblauchknolle</German>
+			<Russian>Ящик с 12-ю головками чеснока.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_garlic_bulb_FULL">
 			<English>Supply Crate (12x Garlic bulb)</English>
 			<German>Kiste (12x Knoblauchknolle)</German>
+			<Russian>Ящик (12x Чеснок)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_floppywire_FULL">
 			<English>12x Floppywire</English>
 			<German>12x Flachbandkabel</German>
+			<Russian>Ящик с 12-ю шлейфами для дисководов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_floppywire_FULL">
 			<English>Supply Crate (12x Floppywire)</English>
 			<German>Kiste (12x Flachbandkabel)</German>
+			<Russian>Ящик (12x Шлейф)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_feathers_FULL">
 			<English>12x Feathers</English>
 			<German>12x Federn</German>
+			<Russian>Ящик с 12-ю перьями.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_feathers_FULL">
 			<English>Supply Crate (12x Feathers)</English>
 			<German>Kiste (12x Federn)</German>
+			<Russian>Ящик (12x Перья)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_duct_tape_FULL">
 			<English>12x Duct Tape</English>
 			<German>12x Klebeband</German>
+			<Russian>Ящик с 12-ю рулонами скотча.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_duct_tape_FULL">
 			<English>Supply Crate (12x Duct Tape)</English>
 			<German>Kiste (12x Klebeband)</German>
+			<Russian>Ящик (12x Скотч)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_d_battery_FULL">
 			<English>12x D battery</English>
 			<German>12x D-Batterien</German>
+			<Russian>Ящик с 12-ю батарейками типа D.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_d_battery_FULL">
 			<English>Supply Crate (12x D battery)</English>
 			<German>Kiste (12x D-Batterien)</German>
+			<Russian>Ящик (12x Батарейка D)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_equip_aa_battery_FULL">
 			<English>12x AA battery</English>
 			<German>12x AA-Batterien</German>
+			<Russian>Ящик с 12-ю батарейками типа AA.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_equip_aa_battery_FULL">
 			<English>Supply Crate (12x AA battery)</English>
 			<German>Kiste (12x AA-Batterien)</German>
+			<Russian>Ящик (12x Батарейка AA)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemAnimalSkin_FULL">
 			<English>12x Animalskin</English>
 			<German>12x Tierhaut</German>
+			<Russian>Ящик с 12-ю шкурами животного.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemAnimalSkin_FULL">
 			<English>Supply Crate (12x Animalskin)</English>
 			<German>Kiste (12x Tierhaut)</German>
+			<Russian>Ящик (12x Шкура животного)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinRabbit_FULL">
 			<English>12x Rabbit skin</English>
 			<German>12x Hasenfell</German>
+			<Russian>Ящик с 12-ю кроличьими шкурами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinRabbit_FULL">
 			<English>Supply Crate (12x Rabbit skin)</English>
 			<German>Kiste (12x Hasenfell)</German>
+			<Russian>Ящик (12x Кроличья шкура)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinCow_FULL">
 			<English>12x Cow skin</English>
 			<German>12x Kuhfell</German>
+			<Russian>Ящик с 12-ю коровьими шкурами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinCow_FULL">
 			<English>Supply Crate (12x Cow skin)</English>
 			<German>Kiste (12x Kuhfell)</German>
+			<Russian>Ящик (12x Коровья шкура)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinGoat_FULL">
 			<English>12x Goat skin</English>
 			<German>12x Ziegenfell</German>
+			<Russian>Ящик с 12-ю козьими шкурами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinGoat_FULL">
 			<English>Supply Crate (12x Goat skin)</English>
 			<German>Kiste (12x Ziegenfell)</German>
+			<Russian>Ящик (12x Козья шкура)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinBoar_FULL">
 			<English>12x Boar skin</English>
 			<German>12x Wildschweinfell</German>
+			<Russian>Ящик с 12-ю кабаньими шкурами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinBoar_FULL">
 			<English>Supply Crate (12x Boar skin)</English>
 			<German>Kiste (Wildschweinfell)</German>
+			<Russian>Ящик (12x Кабанья шкура)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinDog_FULL">
 			<English>12x Dog skin</English>
 			<German>12x Hundefell</German>
+			<Russian>Ящик с 12-ю собячьими шкурами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinDog_FULL">
 			<English>Supply Crate (12x Dog skin)</English>
 			<German>Kiste (Hundefell)</German>
+			<Russian>Ящик (12x Собачья шкура)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemSkinSheep_FULL">
 			<English>12x Sheep skin</English>
 			<German>12x Schafsfell</German>
+			<Russian>Ящик с 12-ю овечьими шкурами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemSkinSheep_FULL">
 			<English>Supply Crate (12x Sheep skin)</English>
 			<German>Kiste (Schafsfell)</German>
+			<Russian>Ящик (12x Овечья шкура)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemWool_FULL">
 			<English>12x Wool</English>
 			<German>12x Wolle</German>
+			<Russian>Ящик с 12-ю мотками шерсти.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemWool_FULL">
 			<English>Supply Crate (12x Wool)</English>
 			<German>Kiste (Wolle)</German>
+			<Russian>Ящик (12x Шерсть)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DESC_ItemLeather_FULL">
 			<English>12x Leather</English>
 			<German>12x Leder</German>
+			<Russian>Ящик с 12-ю кусками кожи.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BULK_DISP_ItemLeather_FULL">
-			<English>Supply Crate (12x Wool)</English>
+			<English>Supply Crate (12x Leather)</English>
 			<German>Kiste (Leder)</German>
+			<Russian>Ящик (12x Кожа)</Russian>
 		</Key>
 
 		<Key ID="STR_EPOCH_SAFE">
