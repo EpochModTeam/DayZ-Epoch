@@ -15000,12 +15000,12 @@
 		<Key ID="STR_ZNAME_PRISONER">
 			<English>Infected Prisoner</English>
 			<German>Infizierter Häftling</German>
-			<Russian>Инфицированный заключенный</Russian>
+			<Russian>Инфицированный заключённый</Russian>
 		</Key>
 		<Key ID="STR_ZNAME_REPORTER">
 			<English>Infected Reporter</English>
 			<German>Infizierter Reporter</German>
-			<Russian>Инфицированный репортер</Russian>
+			<Russian>Инфицированный репортёр</Russian>
 		</Key>
 		<Key ID="STR_ZNAME_MAFIABOSS">
 			<English>Infected Mafia Boss</English>
@@ -15015,7 +15015,7 @@
 		<Key ID="STR_ZNAME_DRUGDEALER">
 			<English>Infected Drug Dealer</English>
 			<German>Infizierter Drogenhändler</German>
-			<Russian>Инфицированный драгдилер</Russian>
+			<Russian>Инфицированный наркоторговец</Russian>
 		</Key>
 		<Key ID="STR_ZNAME_BANDIT">
 			<English>Infected Bandit</English>
@@ -27114,7 +27114,7 @@
 		<Key ID="STR_R3F_WEIGHT_InGearBox">
 			<English>Weight carried : %1 lb</English>
 			<German>Getragenes Gewicht : %1 kg</German>
-			<Russian>Переносимый вес : %1 Кг</Russian>
+			<Russian>Переносимый вес : %1 кг</Russian>
 			<Spanish>Weight carried : %1 Kg</Spanish>
 			<Dutch>Dragend gewicht : %1 Kg</Dutch>
 			<French>Poids transporté : %1 Kg</French>
@@ -27123,7 +27123,7 @@
 		<Key ID="STR_R3F_WEIGHT_English">
 			<English>lb</English>
 			<German>kg</German>
-			<Russian>Кг</Russian>
+			<Russian>кг</Russian>
 			<Spanish>Kg</Spanish>
 			<Dutch>Kg</Dutch>
 			<French>Kg</French>
@@ -27270,18 +27270,22 @@
 		<Key ID="STR_CRAFT_NAME_TOBACCO_SEED">
 			<English>Bag of Tobacco Seeds</English>
 			<German>Säckchen Tabaksamen</German>
+			<Russian>Семена табака</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_TOBACCO_SEED">
 			<English>A few tobacco seeds.</English>
 			<German>Ein paar Tabaksamen.</German>
+			<Russian>Семена табака, пригодные для посева.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_BLACK_TEA_SEED">
 			<English>Bag of Black Tea Seeds</English>
 			<German>Säckchen Schwarzer Teesamen</German>
+			<Russian>Семена чая</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_DESC_BLACK_TEA_SEED">
 			<English>A few black tea seeds.</English>
 			<German>Ein paar schwarzer Teesamen.</German>
+			<Russian>Семена чая, пригодные для посева.</Russian>
 		</Key>
 		<Key ID="STR_CRAFT_NAME_HEMP_PLANT">
 			<English>Hemp Plant</English>
@@ -27403,17 +27407,17 @@
 		<Key ID="STR_ORE_VEIN_WRECK_GOLD">
 			<English>Gold Vein</English>
 			<German>Golderzader</German>
-			<Russian>золотой жилы</Russian>
+			<Russian>Золотая жила</Russian>
 		</Key>
 		<Key ID="STR_ORE_VEIN_WRECK_SILVER">
-			<English>Silver Vein </English>
+			<English>Silver Vein</English>
 			<German>Silbererzader</German>
-			<Russian>серебряной жилы</Russian>
+			<Russian>Серебряная жила</Russian>
 		</Key>
 		<Key ID="STR_ORE_VEIN_WRECK_IRON">
 			<English>Iron Vein</English>
 			<German>Eisenerzader</German>
-			<Russian>жилы с железной рудой</Russian>
+			<Russian>Жила с железной рудой</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW">
 			<English>Chainsaw</English>
@@ -27608,7 +27612,7 @@
 		<Key ID="STR_EPOCH_PLOTDEED_ACTION">
 			<English>Craft Plot Pole</English>
 			<German>Grundstücksmarkierung herstellen</German>
-			<Russian>Создать: Строительный столб</Russian>
+			<Russian>Создать: Строит. столб</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED_DESC">
 			<English>Deed to a plot of land, similar to a plot pole.</English>
@@ -27728,10 +27732,12 @@
 		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN">
 			<English>Light Bulb (broken)</English>
 			<German>Glühbirne (kaputt)</German>
+			<Russian>Лампочка (Сломанная)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN_DESC">
 			<English>A broken lightbulb that is no longer usable.</English>
 			<German>Eine kaputte Glühbirne, welche für nichts mehr zu gebrauchen ist</German>
+			<Russian>Сломанная лампочка, которая теперь бесполезна.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ZOMBIEPARTS">
 			<English>Zombie Parts</English>
@@ -27926,12 +27932,12 @@
 		<Key ID="STR_EPOCH_GUNRACKKIT_DESC">
 			<English>A Gun Rack for 20 weapons.</English>
 			<German>Ein Waffenregal für 20 Waffen.</German>
-			<Russian>Полка, на которую можно повесить до 20 оружия.</Russian>
+			<Russian>Полка, на которую можно повесить до 20 единиц оружия.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GUNRACKKIT_DESC2">
 			<English>A Gun Rack for 40 weapons.</English>
 			<German>Ein Waffenregal für 40 Waffen.</German>
-			<Russian>Полка, на которую можно повесить до 40 оружия.</Russian>
+			<Russian>Полка, на которую можно повесить до 40 единиц оружия.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODCRATE">
 			<English>Wooden Crate</English>
@@ -28650,7 +28656,7 @@
 		<Key ID="STR_EPOCH_TRADE_NOT_SELLING">
 			<English>This trader does not sell this item</English>
 			<German>Dieser Händler verkauft diesen Gegenstand nicht.</German>
-			<Russian>Торговец не продает этот предмет</Russian>
+			<Russian>Торговец не продаёт этот предмет</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_SELLING_GEAR">
 			<English>Selling from your gear.</English>
@@ -28763,7 +28769,7 @@
 		<Key ID="STR_EPOCH_TRADE_MAGS_FULL">
 			<English>You can only buy %1 regular magazines and %2 sidearm magazines into your gear.</English>
 			<German>Du kannst nur %1 primär(e) Magazin(e) und %2 sekundär(e) Magazin(e) in deine Ausrüstung kaufen.</German>
-			<Russian>Вы можете купить предметов в снаряжение: %1.</Russian>
+			<Russian>Вы можете купить %1 магазин(а,ов) для основного оружия, и %2 для дополнительного.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_VEHICLE_WEPS">
 			<English>You can only buy %1 weapons into your vehicle.</English>
@@ -28898,7 +28904,7 @@
 		<Key ID="STR_EPOCH_TRADE_BINOCULARS_FULL">
 			<English>Cannot buy: Not enough empty binocular slots in your gear!</English>
 			<German>Kauf nicht möglich: Du hast nicht genügend freie Fernglasplätze in deiner Ausrüstung!</German>
-			<Russian>Не хватает свободного места!</Russian>
+			<Russian>Не хватает свободного места в слоте для бинокля!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRADE_NEED_COINS">
 			<English>You need %1 %2 to buy all these items.</English>
@@ -29090,6 +29096,7 @@
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF_GAP">
 			<English>Cinder Wall Half w/ gap</English>
 			<German>Betonwand (Halb) mit Lücke</German>
+			<Russian>Стена из шлакоблоков (1/2) с щелью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL">
 			<English>Cinder Wall Full</English>
@@ -29370,10 +29377,12 @@
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS">
 			<English>Wood Floor w/ stairs</English>
 			<German>Holzboden mit Treppe</German>
+			<Russian>Деревянный пол с лестницей</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS_DESC">
 			<English>Wooden floor with stairs constructed out of plywood and lumber.</English>
 			<German>Ein Holzboden mit Treppe bestehend aus Sperr- und Bauholz.</German>
+			<Russian>Деревянный пол с лестницей из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODLADDER">
 			<English>Wooden Ladder</English>
@@ -29383,34 +29392,42 @@
 		<Key ID="STR_EPOCH_WOODRAIL">
 			<English>Wood Handrail</English>
 			<German>Holzgeländer</German>
+			<Russian>Деревянный поручень</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAIL_DESC">
 			<English>Wood Handrail constructed out of lumber.</English>
 			<German>Ein Holzgeländer bestehend aus Bauholz.</German>
+			<Russian>Деревянный поручень из пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODPILLAR">
 			<English>Wood Pillar</English>
 			<German>Holzsäule</German>
+			<Russian>Деревянная опора</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODPILLAR_DESC">
 			<English>Wood Pillar constructed out of lumber.</English>
 			<German>Eine Holzsäule bestehend aus Bauholz.</German>
+			<Russian>Деревянная опора из пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL">
 			<English>Triangle Wall</English>
 			<German>Dreieckige Wand</German>
+			<Russian>Треугольная стена</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODWALL_DESC">
 			<English>Triangle wall constructed out of plywood and lumber.</English>
 			<German>Eine dreieckige Holzwand bestehend aus Sperr- und Bauholz.</German>
+			<Russian>Треугольная стена из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODFLOOR">
 			<English>Triangle Floor</English>
 			<German>Dreieckiger Boden</German>
+			<Russian>Треугольный пол</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TRIANGLE_WOODFLOOR_DESC">
 			<English>Triangle floor constructed out of plywood and lumber.</English>
 			<German>Ein dreieckiger Holzboden bestehend aus Sperr- und Bauholz.</German>
+			<Russian>Треугольный пол из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALL">
 			<English>Wooden Wall</English>
@@ -29495,6 +29512,7 @@
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR">
 			<English>Wood Garage Door w/ no top</English>
 			<German>Holzgaragentür (rahmenlos)</German>
+			<Russian>Деревянная стена с гаражной дверью без верха</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR_DESC">
 			<English>Garage door constructed out of plywood and lumber.</English>
@@ -29504,6 +29522,7 @@
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED">
 			<English>Wood Garage Door Locked w/ no top</English>
 			<German>Holzgaragentür (verschlossen, rahmenlos)</German>
+			<Russian>Деревянная стена с запертой гаражной дверью без верха</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED_DESC">
 			<English>Garage door with combination lock.</English>
@@ -29891,27 +29910,27 @@
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER">
 			<English>Police Officer</English>
 			<German>Polizistin</German>
-			<Russian>сотрудника полиции</Russian>
+			<Russian>Офицер полиции</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER1">
 			<English>Police Officer 1</English>
 			<German>Polizist 1</German>
-			<Russian>сотрудника полиции 1</Russian>
+			<Russian>Офицер полиции 1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_DESC">
 			<English>Police Officer Uniform&lt;br/&gt;Sex: Male</English>
 			<German>Polizeiuniform&lt;br/&gt;Geschlecht: Männlich</German>
-			<Russian>Униформа сотрудника полиции&lt;br/&gt;Пол: мужской</Russian>
+			<Russian>Униформа офицера полиции&lt;br/&gt;Пол: мужской</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_FEMALE_DESC">
 			<English>Police Officer Uniform&lt;br/&gt;Sex: Female</English>
 			<German>Polizeiuniform&lt;br/&gt;Geschlecht: Weiblich</German>
-			<Russian>Униформа сотрудника полиции&lt;br/&gt;Пол: женский</Russian>
+			<Russian>Униформа офицера полиции&lt;br/&gt;Пол: женский</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER2">
 			<English>Police Officer 2</English>
 			<German>Polizist 2</German>
-			<Russian>сотрудника полиции 2</Russian>
+			<Russian>Офицер полиции 2</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ETHAN">
 			<English>Ethan</English>
@@ -29925,7 +29944,7 @@
 		<Key ID="STR_EPOCH_SKINS_PILOT">
 			<English>Pilot</English>
 			<German>Pilot</German>
-			<Russian>пилота</Russian>
+			<Russian>Пилот</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_HARRY">
 			<English>Harry</English>
@@ -29938,6 +29957,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JOURNALIST">
 			<English>Journalist</English>
+			<Russian>Униформа журналиста</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TERRORISTUNIFORM">
 			<English>Terrorist Uniform</English>
@@ -29947,7 +29967,7 @@
 		<Key ID="STR_EPOCH_SKINS_TERRORIST">
 			<English>Terrorist</English>
 			<German>Terrorist</German>
-			<Russian>террориста</Russian>
+			<Russian>Террорист</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_REBELUNIFORM">
 			<English>Rebel Uniform</English>
@@ -29957,7 +29977,7 @@
 		<Key ID="STR_EPOCH_SKINS_REBEL">
 			<English>Rebel</English>
 			<German>Rebell</German>
-			<Russian>повстанцев</Russian>
+			<Russian>Повстанец</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DONALD">
 			<English>Donald</English>
@@ -29971,6 +29991,7 @@
 		<Key ID="STR_EPOCH_SKINS_BUSINESSMAN">
 			<English>Business Man</English>
 			<German>Geschäftsmann</German>
+			<Russian>Бизнесмен</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JAMES">
 			<English>James</English>
@@ -29978,6 +29999,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JULIA">
 			<English>Julia</English>
+			<Russian>Джулия</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_JAMES_DESC">
 			<English>Priest Outfit</English>
@@ -29992,21 +30014,21 @@
 		<Key ID="STR_EPOCH_SKINS_PRIEST">
 			<English>Priest</English>
 			<German>Priester</German>
-			<Russian>Ряса</Russian>
+			<Russian>Священник</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DUANE">
 			<English>Duane</English>
 			<Russian>Дуэйн</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_Rocker">
-			<English>Rocker </English>
+			<English>Rocker</English>
 			<German>Rocker</German>
 			<Russian>Рокер</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DUANE_DESC">
 			<English>Rocker (black)</English>
 			<German>Rocker (schwarz)</German>
-			<Russian>Рокер (Чёрный цвет)</Russian>
+			<Russian>Рокер (Чёрный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ROD">
 			<English>Rod</English>
@@ -30015,7 +30037,7 @@
 		<Key ID="STR_EPOCH_SKINS_ROD_DESC">
 			<English>Rocker (brown)</English>
 			<German>Rocker (braun)</German>
-			<Russian>Рокер (Коричневый цвет)</Russian>
+			<Russian>Рокер (Коричневый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_VAN">
 			<English>Van</English>
@@ -30024,7 +30046,7 @@
 		<Key ID="STR_EPOCH_SKINS_VAN_DESC">
 			<English>Rocker (blue)</English>
 			<German>Rocker (blau)</German>
-			<Russian>Рокер (Синий цвет)</Russian>
+			<Russian>Рокер (Синий)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BRUCE">
 			<English>Bruce</English>
@@ -30033,7 +30055,7 @@
 		<Key ID="STR_EPOCH_SKINS_BRUCE_DESC">
 			<English>Rocker (green)</English>
 			<German>Rocker (grün)</German>
-			<Russian>Рокер (Зелёный цвет)</Russian>
+			<Russian>Рокер (Зелёный)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITOUTFIT1">
 			<English>Bandit Outfit 1</English>
@@ -30095,7 +30117,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITMASK_DESC">
 			<English>Bandit Mask Outfit</English>
-			<Russian>Бандитская Балаклава</Russian>
+			<Russian>Бандитская Маска</Russian>
 			<German>Banditen Kleidung mit Maske</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITHAT">
@@ -30109,6 +30131,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITANNIE">
 			<English>Bandit Annie</English>
+			<Russian>Бандитка Энни</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITANNIE_DESC">
 			<English>Bandit wrap blue top with brown pants.</English>
@@ -30117,6 +30140,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITJANE">
 			<English>Bandit Jane</English>
+			<Russian>Бандитка Джейн</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BANDITJANE_DESC">
 			<English>Bandit wrap grey top with brown camo pants.</English>
@@ -30161,10 +30185,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ANGELINA">
 			<English>Angelina</English>
+			<Russian>Анджелина</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ANGELINA_DESC">
 			<English>Winter camo top with grey camo pants.</English>
 			<German>Winter Tarntop mit grauer Tarnhose.</German>
+			<Russian>Зимняя одежда с камуфляжным верхом и серыми камуфляжными брюками.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SAVANNAH">
 			<English>Savannah</English>
@@ -30186,44 +30212,56 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CHANTAL">
 			<English>Chantal</English>
+			<Russian>Шанталь</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CHANTAL_DESC">
 			<English>Chantal - the woman for the fast trip.</English>
 			<German>Chantal - die Frau für die schnelle Sache.</German>
+			<Russian>Шанталь - женщина для быстрой поездки.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SALLY">
 			<English>Sally</English>
+			<Russian>Салли</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_SALLY_DESC">
 			<English>Sally - is good at math and you know why.</English>
 			<German>Sally - ist gut in Mathe und du weißt genau wieso.</German>
+			<Russian>Салли - хороша в математике, и вы знаете почему.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GINA">
 			<English>Gina</English>
+			<Russian>Джина</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GINA_DESC">
 			<English>Gina - the wildest woman you have ever met.</English>
 			<German>Gina - die wildeste Frau, die du jemals getroffen hast.</German>
+			<Russian>Джина - самая дикая женщина, которую вы когда-либо встречали.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ANGEL">
 			<English>Angel</English>
+			<Russian>Энджел</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ANGEL_DESC">
 			<English>Angel - you know she is not an angel but you do not care.</English>
 			<German>Angel - du weißt, dass sie kein Engel ist, aber das ist dir egal.</German>
+			<Russian>Энджел - вы знаете, что она не ангел, но вам всё равно.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_KANDY">
 			<English>Kandy</English>
+			<Russian>Кэнди</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_KANDY_DESC">
 			<English>Kandy - what is sweeter than Candy, yeah it is Kandy.</English>
 			<German>Kandy - was ist süßer als Zucker, es ist Kandy.</German>
+			<Russian>Кэнди - что слаще леденца, да, это Кэнди.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_URSULA">
 			<English>Operator Ursula</English>
+			<Russian>Оператор Урсула</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ANN">
 			<English>Gunner Ann</English>
+			<Russian>Стрелок Энн</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TAKISTANIWARLORD">
 			<English>Takistani Warlord</English>
@@ -30292,6 +30330,7 @@
 		<Key ID="STR_EPOCH_SKINS_HERO">
 			<English>Hero</English>
 			<German>Held</German>
+			<Russian>Герой</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TEAMLEADER">
 			<English>Team Leader</English>
@@ -30316,7 +30355,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CREWMAN">
 			<English>Crewman</English>
-			<Russian>Член команды</Russian>
+			<Russian>Член экипажа</Russian>
 			<German>Besatzungsmitglied</German>
 			<Italian>Membro equipaggio</Italian>
 			<Spanish>Miembro de la tripulación</Spanish>
@@ -30328,9 +30367,11 @@
 		<Key ID="STR_EPOCH_SKINS_SOLDIER">
 			<English>Soldier</English>
 			<German>Soldat</German>
+			<Russian>Солдат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GENERAL">
 			<English>General</English>
+			<Russian>Генерал</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BOSS">
 			<English>Boss</English>
@@ -30392,22 +30433,22 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUSOLDIER">
 			<English>RU Soldier</English>
-			<Russian>Камуфляж Русского Солдата</Russian>
+			<Russian>Камуфляж Солдата РФ</Russian>
 			<German>RU Soldat</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUOFFICER">
 			<English>RU Officer</English>
-			<Russian>Камуфляж Русского Офицера</Russian>
+			<Russian>Камуфляж Офицера РФ</Russian>
 			<German>RU Offizier</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCAMO">
 			<English>RU Camo</English>
-			<Russian>Российский Камуфляж</Russian>
+			<Russian>Камуфляж РФ</Russian>
 			<German>RU Tarn</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCOMMANDER">
 			<English>RU Commander</English>
-			<Russian>Камуфляж Русского Коммандующего</Russian>
+			<Russian>Командующий РФ</Russian>
 			<German>RU Kommandant</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MVDSOLDIER">
@@ -30423,25 +30464,31 @@
 		<Key ID="STR_EPOCH_SKINS_INSCOMMANDER">
 			<English>Ins Commander</English>
 			<German>Ins Kommandant</German>
+			<Russian>Командир Повстанцев</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_INSCREWMAN">
 			<English>Ins Crewman</English>
 			<German>Ins Besatzungsmitglied</German>
+			<Russian>Член экипажа Повстанцев</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CDFSOLDIER">
 			<English>CDF Soldier</English>
 			<German>CDF Soldat</German>
+			<Russian>Солдат ЧСО</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_ASSISTANT">
 			<English>Assistant</English>
+			<Russian>Ассистент</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TEACHER">
 			<English>Teacher</English>
 			<German>Lehrer</German>
+			<Russian>Учитель</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GARDENER">
 			<English>Gardener</English>
 			<German>Gärtner</German>
+			<Russian>Садовник</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DOCTOR">
 			<English>Doctor</English>
@@ -30451,102 +30498,127 @@
 		<Key ID="STR_EPOCH_SKINS_DOCTOR_DESC">
 			<English>Clothing of a doctor.&lt;br/&gt;Sex: Male</English>
 			<German>Kleidung eines Arztes.&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Одежда доктора.&lt;br/&gt;Пол: Мужской</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_DOCTOR_FEMALE_DESC">
 			<English>Clothing of a doctor.&lt;br/&gt;Sex: Female</English>
 			<German>Kleidung einer Ärztin.&lt;br/&gt;Geschlecht: Weiblich</German>
+			<Russian>Одежда доктора.&lt;br/&gt;Пол: Женский</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER">
 			<English>Worker</English>
 			<German>Arbeiter</German>
+			<Russian>Рабочий</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER_DESC">
 			<English>Clothing of a worker.&lt;br/&gt;Sex: Male</English>
 			<German>Kleidung eines Arbeiters.&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Одежда рабочего.&lt;br/&gt;Пол: Мужской</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER_FEMALE_DESC">
 			<English>Clothing of a worker.&lt;br/&gt;Sex: Female</English>
 			<German>Kleidung einer Arbeiterin.&lt;br/&gt;Geschlecht: Weiblich</German>
+			<Russian>Одежда рабочего.&lt;br/&gt;Пол: Женский</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER1">
 			<English>Worker 1</English>
 			<German>Arbeiter 1</German>
+			<Russian>Рабочий 1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER2">
 			<English>Worker 2</English>
 			<German>Arbeiter 2</German>
+			<Russian>Рабочий 2</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_WORKER3">
 			<English>Worker 3</English>
 			<German>Arbeiter 3</German>
+			<Russian>Рабочий 3</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN">
 			<English>TK Citizen</English>
 			<German>TK Bürger</German>
+			<Russian>Гражданин Такистана</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN1">
 			<English>TK Citizen 1</English>
 			<German>TK Bürger 1</German>
+			<Russian>Гражданин Такистана 1</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN2">
 			<English>TK Citizen 2</English>
 			<German>TK Bürger 2</German>
+			<Russian>Гражданин Такистана 2</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN3">
 			<English>TK Citizen 3</English>
 			<German>TK Bürger 3</German>
+			<Russian>Гражданин Такистана 3</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKCITIZEN4">
 			<English>TK Citizen 4</English>
 			<German>TK Bürger 4</German>
+			<Russian>Гражданин Такистана 4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKSOLDIER">
 			<English>TK Soldier</English>
 			<German>TK Soldat</German>
+			<Russian>Солдат Такистана</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TKGUESOLDIER">
 			<English>TK GUE Soldier</English>
 			<German>TK GUE Soldat</German>
+			<Russian>Партизан Такистана</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CZSOLDIER">
 			<English>CZ Soldier</English>
 			<German>CZ Soldat</German>
+			<Russian>Чешский солдат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_USSOLDIER">
 			<English>US Soldier</English>
 			<German>US Soldat</German>
+			<Russian>Американский солдат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_UNSOLDIER">
 			<English>UN Soldier</English>
-			<German>US Soldat</German>
+			<German>UN Soldat</German>
+			<Russian>Солдат ООН</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_UNCOMMANDER">
 			<English>UN Commander</English>
 			<German>UN Kommandant</German>
+			<Russian>Командующий ООН</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_GERRECON">
 			<English>GER Recon</English>
 			<German>GER Aufklärer</German>
+			<Russian>Германский разведчик</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFOFFICER">
 			<English>BAF Officer</English>
 			<German>BAF Offizier</German>
+			<Russian>Британский офицер</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFSOLDIER">
 			<English>BAF Soldier</English>
 			<German>BAF Soldat</German>
+			<Russian>Британский солдат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_FRSAPPER">
 			<English>Camo Sapper</English>
 			<German>Tarn Pionier</German>
+			<Russian>Сапёр</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_THERMOSUITMAN">
 			<English>Man in Thermo Suit</English>
 			<German>Mann in Thermoanzug</German>
+			<Russian>Мужчина в термокостюме</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_THERMOSUITFEMALE">
 			<English>Woman in Thermo Suit</English>
 			<German>Frau in Thermoanzug</German>
+			<Russian>Женщина в термокостюме</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTER">
 			<English>Thermo Suit (tan)</English>
@@ -30587,269 +30659,336 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TAMIKA">
 			<English>Tamika</English>
+			<Russian>Тамика</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
+			<Russian>Военсталкер (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
+			<Russian>Военсталкер (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME">
 			<English>Stalker Mil. (urban)</English>
 			<German>Stalker Mil. (Urban)</German>
+			<Russian>Военсталкер (Городской)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME">
 			<English>Stalker Mil. (urban)</English>
 			<German>Stalker Mil. (Urban)</German>
+			<Russian>Военсталкер (Городской)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME">
 			<English>Scientist (Red rad-suit)</English>
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+			<Russian>Учёный (Красн. рад. костюм)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_HEAD_NAME">
 			<English>Scientist (Red rad-suit)</English>
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+			<Russian>Учёный (Красн. рад. костюм)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_MASK_NAME">
 			<English>Scientist (Yellow rad-suit)</English>
 			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+			<Russian>Учёный (Жёлт. рад. костюм)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST2_HEAD_NAME">
 			<English>Scientist (Yellow rad-suit)</English>
 			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+			<Russian>Учёный (Жёлт. рад. костюм)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
 			<English>Stalker (Rookie)</English>
 			<German>Stalker (Anfänger)</German>
-			<Russian>Костюм сталкера (Новичок)</Russian>
+			<Russian>Сталкер (Новичок)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
 			<English>Stalker (Loner)</English>
-			<Russian>Костюм сталкера (Одиночка)</Russian>
+			<Russian>Сталкер (Одиночка)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_LONER_HEAD_NAME">
 			<English>Stalker (Loner)</English>
-			<Russian>Костюм сталкера (Одиночка)</Russian>
+			<Russian>Сталкер (Одиночка)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_MASK_NAME">
 			<English>Stalker (Freedom)</English>
+			<Russian>Сталкер (Свобода)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_FREEDOM_HEAD_NAME">
 			<English>Stalker (Freedom)</English>
+			<Russian>Сталкер (Свобода)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_DUTY_MASK_NAME">
 			<English>Stalker (Duty)</English>
+			<Russian>Сталкер (Долг)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_DUTY_HEAD_NAME">
 			<English>Stalker (Duty)</English>
+			<Russian>Сталкер (Долг)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_MASK_NAME">
 			<English>Stalker (Monolith)</English>
+			<Russian>Сталкер (Монолит)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_MONOLITH_HEAD_NAME">
 			<English>Stalker (Monolith)</English>
+			<Russian>Сталкер (Монолит)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
+			<Russian>Военсталкер (Лесной)</Russian>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
 		 	<English>A pack of special armour that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
 		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Комплект специальной брони, подходящей для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_FEMALE_DESC">
 		 	<English>A pack of special armour that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
 		 	<German>Eine Spezialpanzerung, die gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
+			<Russian>Комплект специальной брони, подходящей для апокалиптического окружения.&lt;br/&gt;Пол: Женский</Russian>
 		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
+			<Russian>Военсталкер (Лесной)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME">
 			<English>Stalker Mil. (urban)</English>
 			<German>Stalker Mil. (Urban)</German>
+			<Russian>Военсталкер (Городской)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME">
 			<English>Stalker Mil. (urban)</English>
 			<German>Stalker Mil. (Urban)</German>
+			<Russian>Военсталкер (Городской)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME">
 			<English>Scientist (Red rad-suit)</English>
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+			<Russian>Учёный (Красн. рад. костюм)</Russian>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_DESC">
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_FEMALE_DESC">
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
+			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Женский</Russian>
 		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
 			<English>Scientist (Red rad-suit)</English>
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>
+			<Russian>Учёный (Красн. рад. костюм)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME">
 			<English>Scientist (Yellow rad-suit)</English>
 			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+			<Russian>Учёный (Жёлт. рад. костюм)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME">
 			<English>Scientist (Yellow rad-suit)</English>
 			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
+			<Russian>Учёный (Жёлт. рад. костюм)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_NAME">
 			<English>Stalker (Rookie)</English>
 			<German>Stalker (Anfänger)</German>
+			<Russian>Сталкер (Новичок)</Russian>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
 		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
 		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
+			<Russian>Комплект поношенной одежды, подходящей для апокалиптического окружения.</Russian>
 		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
 			<English>Stalker (Loner)</English>
+			<Russian>Сталкер (Одиночка)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_LONER_HEAD_NAME">
 			<English>Stalker (Loner)</English>
+			<Russian>Сталкер (Одиночка)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_MASK_NAME">
 			<English>Stalker (Freedom)</English>
+			<Russian>Сталкер (Свобода)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_FREEDOM_HEAD_NAME">
 			<English>Stalker (Freedom)</English>
+			<Russian>Сталкер (Свобода)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_MASK_NAME">
 			<English>Stalker (Duty)</English>
+			<Russian>Сталкер (Долг)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_DUTY_HEAD_NAME">
 			<English>Stalker (Duty)</English>
+			<Russian>Сталкер (Долг)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_MASK_NAME">
 			<English>Stalker (Monolith)</English>
+			<Russian>Сталкер (Монолит)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_MONOLITH_HEAD_NAME">
 			<English>Stalker (Monolith)</English>
+			<Russian>Сталкер (Монолит)</Russian>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_1_NAME">
 		 	<English>Ghillie Suit (Desert 1)</English>
 		 	<German>Ghillie-Anzug (Wüste 1)</German>
+			<Russian>Маскировочный костюм (Пустыня 1)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_2_NAME">
 		 	<English>Ghillie Suit (Desert 2)</English>
 		 	<German>Ghillie-Anzug (Wüste 2)</German>
+			<Russian>Маскировочный костюм (Пустыня 2)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_3_NAME">
 		 	<English>Ghillie Suit (Desert 3)</English>
 		 	<German>Ghillie-Anzug (Wüste 3)</German>
+			<Russian>Маскировочный костюм (Пустыня 3)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_4_NAME">
 		 	<English>Ghillie Suit (Desert 4)</English>
 		 	<German>Ghillie-Anzug (Wüste 4)</German>
+			<Russian>Маскировочный костюм (Пустыня 4)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_5_NAME">
 		 	<English>Ghillie Suit (Desert 5)</English>
 		 	<German>Ghillie-Anzug (Wüste 5)</German>
+			<Russian>Маскировочный костюм (Пустыня 5)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_6_NAME">
 		 	<English>Ghillie Suit (Desert 6)</English>
 		 	<German>Ghillie-Anzug (Wüste 6)</German>
+			<Russian>Маскировочный костюм (Пустыня 6)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_7_NAME">
 		 	<English>Ghillie Suit (Desert 7)</English>
 		 	<German>Ghillie-Anzug (Wüste 7)</German>
+			<Russian>Маскировочный костюм (Пустыня 7)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_8_NAME">
 		 	<English>Ghillie Suit (Desert 8)</English>
 		 	<German>Ghillie-Anzug (Wüste 8)</German>
+			<Russian>Маскировочный костюм (Пустыня 8)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME">
 		 	<English>Ghillie Suit (Snow 1)</English>
 		 	<German>Ghillie-Anzug (Schnee 1)</German>
+			<Russian>Маскировочный костюм (Снег 1)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME">
 		 	<English>Ghillie Suit (Snow 2)</English>
 		 	<German>Ghillie-Anzug (Schnee 2)</German>
+			<Russian>Маскировочный костюм (Снег 2)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME">
 		 	<English>Ghillie Suit (Snow 3)</English>
 		 	<German>Ghillie-Anzug (Schnee 3)</German>
+			<Russian>Маскировочный костюм (Снег 3)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME">
 		 	<English>Ghillie Suit (Snow 4)</English>
 		 	<German>Ghillie-Anzug (Schnee 4)</German>
+			<Russian>Маскировочный костюм (Снег 4)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME">
 		 	<English>Ghillie Suit (Snow 5)</English>
 		 	<German>Ghillie-Anzug (Schnee 5)</German>
+			<Russian>Маскировочный костюм (Снег 5)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_URB_1_NAME">
 		 	<English>Ghillie Suit (Urban 1)</English>
 		 	<German>Ghillie-Anzug (Urban 1)</German>
+			<Russian>Маскировочный костюм (Город 1)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_1_NAME">
 		 	<English>Ghillie Suit (Wood 1)</English>
 		 	<German>Ghillie-Anzug (Wald 1)</German>
+			<Russian>Маскировочный костюм (Лес 1)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_2_NAME">
 		 	<English>Ghillie Suit (Wood 2)</English>
 		 	<German>Ghillie-Anzug (Wald 2)</German>
+			<Russian>Маскировочный костюм (Лес 2)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_3_NAME">
 		 	<English>Ghillie Suit (Wood 3)</English>
 		 	<German>Ghillie-Anzug (Wald 3)</German>
+			<Russian>Маскировочный костюм (Лес 3)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_4_NAME">
 		 	<English>Ghillie Suit (Wood 4)</English>
 		 	<German>Ghillie-Anzug (Wald 4)</German>
+			<Russian>Маскировочный костюм (Лес 4)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_5_NAME">
 		 	<English>Ghillie Suit (Wood 5)</English>
 		 	<German>Ghillie-Anzug (Wald 5)</German>
+			<Russian>Маскировочный костюм (Лес 5)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_6_NAME">
 		 	<English>Ghillie Suit (Wood 6)</English>
 		 	<German>Ghillie-Anzug (Wald 6)</German>
+			<Russian>Маскировочный костюм (Лес 6)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_7_NAME">
 		 	<English>Ghillie Suit (Wood 7)</English>
 		 	<German>Ghillie-Anzug (Wald 7)</German>
+			<Russian>Маскировочный костюм (Лес 7)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_8_NAME">
 		 	<English>Ghillie Suit (Wood 8)</English>
 		 	<German>Ghillie-Anzug (Wald 8)</German>
+			<Russian>Маскировочный костюм (Лес 8)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_9_NAME">
 		 	<English>Ghillie Suit (Wood 9)</English>
 		 	<German>Ghillie-Anzug (Wald 9)</German>
+			<Russian>Маскировочный костюм (Лес 9)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_10_NAME">
 		 	<English>Ghillie Suit (Wood 10)</English>
 		 	<German>Ghillie-Anzug (Wald 10)</German>
+			<Russian>Маскировочный костюм (Лес 10)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_11_NAME">
 		 	<English>Ghillie Suit (Wood 11)</English>
 		 	<German>Ghillie-Anzug (Wald 11)</German>
+			<Russian>Маскировочный костюм (Лес 11)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_12_NAME">
 		 	<English>Ghillie Suit (Wood 12)</English>
 		 	<German>Ghillie-Anzug (Wald 12)</German>
+			<Russian>Маскировочный костюм (Лес 12)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_13_NAME">
 		 	<English>Ghillie Suit (Wood 13)</English>
 		 	<German>Ghillie-Anzug (Wald 13)</German>
+			<Russian>Маскировочный костюм (Лес 13)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_14_NAME">
 		 	<English>Ghillie Suit (Wood 14)</English>
 		 	<German>Ghillie-Anzug (Wald 14)</German>
+			<Russian>Маскировочный костюм (Лес 14)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_15_NAME">
 		 	<English>Ghillie Suit (Wood 15)</English>
 		 	<German>Ghillie-Anzug (Wald 15)</German>
+			<Russian>Маскировочный костюм (Лес 15)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_16_NAME">
 		 	<English>Ghillie Suit (Wood 16)</English>
 		 	<German>Ghillie-Anzug (Wald 16)</German>
+			<Russian>Маскировочный костюм (Лес 16)</Russian>
 		 </Key>
 		<Key ID="STR_DZE_SKIN_GHILLIE_DES_NAME">
 			<English>Sniper (Desert)</English>
@@ -31106,18 +31245,22 @@
 		<Key ID="STR_DZE_EQUIP_FIREFIGHTER_NAME">
 			<English>Firefighter</English>
 			<German>Feuerwehrmann</German>
+			<Russian>Пожарный</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_FIREFIGHTER_OFFICER_NAME">
 			<English>Firefighter Officer</English>
 			<German>Feuerwehroffizier</German>
+			<Russian>Пожарный офицер</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_POSTMAN_NAME">
 			<English>Postman</English>
 			<German>Postbote</German>
+			<Russian>Почтальон</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_HUNTER_NAME">
 			<English>Hunter</English>
 			<German>Jäger</German>
+			<Russian>Охотник</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_POLICE_OFFICER">
 			<English>Police Officer</English>
@@ -31127,162 +31270,203 @@
 		<Key ID="STR_DZE_EQUIP_PRISONER_NAME">
 			<English>Prisoner</English>
 			<German>Häftling</German>
+			<Russian>Заключённый</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_REPORTER_NAME">
 			<English>Reporter</English>
+			<Russian>Репортёр</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_MAFIABOSS_NAME">
 			<English>Mafia Boss</English>
+			<Russian>Мафиози</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_DRUGDEALER_NAME">
 			<English>Drug Dealer</English>
 			<German>Drogenhändler</German>
+			<Russian>Наркоторговец</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_BUSINESSMAN_NAME">
 			<English>Business Man</English>
 			<German>Geschäftsmann</German>
+			<Russian>Бизнесмен</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER1_NAME">
 			<English>Firefighter 1</English>
 			<German>Feuerwehrmann 1</German>
+			<Russian>Пожарный 1</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER2_NAME">
 			<English>Firefighter 2</English>
 			<German>Feuerwehrmann 2</German>
+			<Russian>Пожарный 2</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER3_NAME">
 			<English>Firefighter 3</English>
 			<German>Feuerwehrmann 3</German>
+			<Russian>Пожарный 3</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER4_NAME">
 			<English>Firefighter 4</English>
 			<German>Feuerwehrmann 4</German>
+			<Russian>Пожарный 4</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER5_NAME">
 			<English>Firefighter 5</English>
 			<German>Feuerwehrmann 5</German>
+			<Russian>Пожарный 5</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER_OFFICER1_NAME">
 			<English>Firefighter Officer 1</English>
 			<German>Feuerwehroffizier 1</German>
+			<Russian>Пожарный офицер 1</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_FIREFIGHTER_OFFICER2_NAME">
 			<English>Firefighter Officer 2</English>
 			<German>Feuerwehroffizier 2</German>
+			<Russian>Пожарный офицер 2</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_POSTMAN1_NAME">
 			<English>Postman 1</English>
 			<German>Postbote 1</German>
+			<Russian>Почтальон 1</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_POSTMAN2_NAME">
 			<English>Postman 2</English>
 			<German>Postbote 2</German>
+			<Russian>Почтальон 2</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_POSTMAN3_NAME">
 			<English>Postman 3</English>
 			<German>Postbote 3</German>
+			<Russian>Почтальон 3</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_POSTMAN4_NAME">
 			<English>Postman 4</English>
 			<German>Postbote 4</German>
+			<Russian>Почтальон 4</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_TEACHER_NAME">
 			<English>Teacher</English>
 			<German>Lehrer</German>
+			<Russian>Учитель</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_GARDENER_NAME">
 			<English>Gardener</English>
 			<German>Gärtner</German>
+			<Russian>Садовник</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_HUNTER_NAME">
 			<English>Hunter</English>
 			<German>Jäger</German>
+			<Russian>Охотник</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN1_NAME">
 			<English>Civilian 1</English>
 			<German>Zivilist 1</German>
+			<Russian>Гражданская одежда 1</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN2_NAME">
 			<English>Civilian 2</English>
 			<German>Zivilist 2</German>
+			<Russian>Гражданская одежда 2</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN3_NAME">
 			<English>Civilian 3</English>
 			<German>Zivilist 3</German>
+			<Russian>Гражданская одежда 3</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN4_NAME">
 			<English>Civilian 4</English>
 			<German>Zivilist 4</German>
+			<Russian>Гражданская одежда 4</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN5_NAME">
 			<English>Civilian 5</English>
 			<German>Zivilist 5</German>
+			<Russian>Гражданская одежда 5</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN6_NAME">
 			<English>Civilian 6</English>
 			<German>Zivilist 6</German>
+			<Russian>Гражданская одежда 6</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN7_NAME">
 			<English>Civilian 7</English>
 			<German>Zivilist 7</German>
+			<Russian>Гражданская одежда 7</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN8_NAME">
 			<English>Civilian 8</English>
 			<German>Zivilist 8</German>
+			<Russian>Гражданская одежда 8</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN9_NAME">
 			<English>Civilian 9</English>
 			<German>Zivilist 9</German>
+			<Russian>Гражданская одежда 9</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN10_NAME">
 			<English>Civilian 10</English>
 			<German>Zivilist 10</German>
+			<Russian>Гражданская одежда 10</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN11_NAME">
 			<English>Civilian 11</English>
 			<German>Zivilist 11</German>
+			<Russian>Гражданская одежда 11</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN12_NAME">
 			<English>Civilian 12</English>
 			<German>Zivilist 12</German>
+			<Russian>Гражданская одежда 12</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN13_NAME">
 			<English>Civilian 13</English>
 			<German>Zivilist 13</German>
+			<Russian>Гражданская одежда 13</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_CIVILIAN14_NAME">
 			<English>Civilian 14</English>
 			<German>Zivilist 14</German>
+			<Russian>Гражданская одежда 14</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_PRISONER1_NAME">
 			<English>Prisoner 1</English>
 			<German>Häftling 1</German>
+			<Russian>Заключённый 1</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_PRISONER2_NAME">
 			<English>Prisoner 2</English>
 			<German>Häftling 2</German>
+			<Russian>Заключённый 2</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_PRISONER3_NAME">
 			<English>Prisoner 3</English>
 			<German>Häftling 3</German>
+			<Russian>Заключённый 3</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_REPORTER_NAME">
 			<English>Reporter</English>
+			<Russian>Репортёр</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_MAFIABOSS_NAME">
 			<English>Mafia Boss</English>
+			<Russian>Мафиози</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_DRUGDEALER_NAME">
 			<English>Drug Dealer</English>
 			<German>Drogenhändler</German>
+			<Russian>Наркоторговец</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_BUSINESSMAN_NAME">
 			<English>Business Man</English>
 			<German>Geschäftsmann</German>
+			<Russian>Бизнесмен</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_HOOKER_NAME">
 			<English>Hooker</English>
 			<German>Nutte</German>
+			<Russian>Проститутка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ARMOR">
 			<English>Armor</English>
@@ -31319,7 +31503,7 @@
 			<Spanish>Velocidad</Spanish>
 			<French>Vitesse</French>
 			<Czech>Rychlost</Czech>
-			<Russian>скорость</Russian>
+			<Russian>Скорость</Russian>
 			<Polish>Szybkość</Polish>
 			<Hungarian>Sebesség</Hungarian>
 		</Key>
@@ -31517,7 +31701,7 @@
 			<Italian>Fuoco (acceso)</Italian>
 			<Hungarian>Tűz (égő)</Hungarian>
 			<Polish>Ogień</Polish>
-			<Russian>Огонь (подожженный)</Russian>
+			<Russian>Огонь (горит)</Russian>
 			<German>Feuer (angezündet)</German>
 			<Czech>Ohniště (hořící)</Czech>
 		</Key>
@@ -31879,7 +32063,7 @@
 		<Key ID="STR_EPOCH_KILOBLACKTEA_DESC">
 			<English>A package of black tea</English>
 			<German>Ein Paket Schwarzer Tee</German>
-			<Russian>Килограммовая упаковка вкусного черного чая</Russian>
+			<Russian>Килограммовая упаковка вкусного чёрного чая</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_TOBACCO_LEAF">
 			<English>Tobacco Leaf</English>
@@ -32136,17 +32320,17 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_BLACK_NAME">
 			<English>Paint bucket (black)</English>
 			<German>Farbeimer (Schwarz)</German>
-			<Russian>Ведро с краской (черная)</Russian>
+			<Russian>Ведро с краской (Чёрная)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_BLACK_DESC">
 			<English>A bucket of black paint.</English>
 			<German>Ein Farbeimer mit schwarzer Farbe.</German>
-			<Russian>Ведро с черной краской.</Russian>
+			<Russian>Ведро с чёрной краской.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_WHITE_NAME">
 			<English>Paint bucket (white)</English>
 			<German>Farbeimer (Weiss)</German>
-			<Russian>Ведро с краской (белая)</Russian>
+			<Russian>Ведро с краской (Белая)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_WHITE_DESC">
 			<English>A bucket of white paint.</English>
@@ -32156,7 +32340,7 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_BLUE_NAME">
 			<English>Paint bucket (blue)</English>
 			<German>Farbeimer (Blau)</German>
-			<Russian>Ведро с краской (синяя)</Russian>
+			<Russian>Ведро с краской (Синяя)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_BLUE_DESC">
 			<English>A bucket of blue paint.</English>
@@ -32166,17 +32350,17 @@
 		<Key ID="STR_DZE_EQUIP_PAINT_GREEN_NAME">
 			<English>Paint bucket (green)</English>
 			<German>Farbeimer (Grün)</German>
-			<Russian>Ведро с краской (зеленая)</Russian>
+			<Russian>Ведро с краской (Зелёная)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GREEN_DESC">
 			<English>A bucket of green paint.</English>
 			<German>Ein Farbeimer mit grüner Farbe.</German>
-			<Russian>Ведро с зеленой краской.</Russian>
+			<Russian>Ведро с зелёной краской.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_RED_NAME">
 			<English>Paint bucket (red)</English>
 			<German>Farbeimer (Rot)</German>
-			<Russian>Ведро с краской (красная)</Russian>
+			<Russian>Ведро с краской (Красная)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_RED_DESC">
 			<English>A bucket of red paint.</English>
@@ -33215,34 +33399,42 @@
 		<Key ID="STR_DEATHBOARD_MESSAGE_1">
 			<English>Death is God's way of telling you not to be such a wise guy.</English>
 			<German>Der Tod ist Gottes Art dir zu sagen, dass du kein so weiser Kerl bist.</German>
+			<Russian>Смерть - это способ Бога сказать тебе, чтобы ты не был таким умником.</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_MESSAGE_2">
 			<English>What happens if you get scared half to death, twice?</English>
 			<German>Was passiert, wenn du dich zweimal halb zu Tode erschreckst?</German>
+			<Russian>Что произошло, что вы напуганы до полусмерти? Дважды?</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_MESSAGE_3">
 			<English>Don't upset me.. I'm running out of places to hide the bodies.</English>
 			<German>Verärgere mich nicht.. ich habe kaum noch einen Ort an dem ich Leichen verstecken kann.</German>
+			<Russian>Не расстраивай меня... Мне некуда спрятать тела.</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_MESSAGE_4">
 			<English>Don't run, you'll just die tired.</English>
 			<German>Renn nicht davon, sonst wirst du müde sterben.</German>
+			<Russian>Не беги, а то умрешь усталым.</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_MESSAGE_5">
 			<English>Give me immortality or give me death.</English>
 			<German>Gib mir Unsterblichkeit oder bring mir den Tod!</German>
+			<Russian>Дай мне бессмертие или дай мне смерть.</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_MESSAGE_6">
 			<English>I can't live with death; he's always leaving the toilet seat up.</English>
 			<German>Ich kann nicht mit dem Tod leben. Er lässt immer den Toilettensitz oben.</German>
+			<Russian>Я не могу жить со смертью; она всегда оставляет сиденье унитаза поднятым.</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_MESSAGE_7">
 			<English>Why won't you die?!?!</English>
 			<German>Wieso willst du nicht sterben?</German>
+			<Russian>Почему ты не умрешь?!?!</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_MESSAGE_8">
 			<English>Guns don't kill people; death kills people. It's a proven medical fact.</English>
 			<German>Waffen töten keine Menschen. Der Tod tötet sie. Das ist ein bewiesener medizinischer Fakt.</German>
+			<Russian>Оружие не убивает людей. Смерть убивает людей. Это доказанный медицинский факт.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_CEMENT_BAG">
 			<English>Cement Bag</English>
