@@ -100,7 +100,7 @@ class PartGlass : CA_Magazine
 			neednearby[] = {"workshop"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"glass_floor_quarter_kit",1}};
-			input[] = {{"ItemPole",4},{"PartGlass",4}};
+			input[] = {{"ItemPole",8},{"PartGlass",4}};
 		};
 	};	
 };

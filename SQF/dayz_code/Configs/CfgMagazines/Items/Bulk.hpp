@@ -403,7 +403,7 @@ class bulk_ItemSandbagHalf: bulk
 			neednearby[] = {};
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"bulk_ItemSandbag",1}};
-			input[] = {{"bulk_ItemSandbag",1},{"ItemSandbag",6}};
+			input[] = {{"bulk_ItemSandbagHalf",1},{"ItemSandbag",6}};
 		};
 	};
 };
