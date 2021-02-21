@@ -33863,78 +33863,97 @@
 		<Key ID="STR_EPOCH_ACTION_LOWER_BRIDGE">
 			<English>Lower Drawbridge</English>
 			<German>Zugbrücke herunterlassen</German>
+			<Russian>Опустить мост</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_RAISE_BRIDGE">
 			<English>Raise Drawbridge</English>
 			<German>Zugbrücke hochziehen</German>
+			<Russian>Поднять мост</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_LOCK_BRIDGE">
 			<English>Lock Drawbridge</English>
 			<German>Zugbrücke abschließen</German>
+			<Russian>Закрыть мост</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_UNLOCK_BRIDGE">
 			<English>Unlock Drawbridge</English>
 			<German>Zugbrücke aufschließen</German>
+			<Russian>Открыть мост</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_BRIDGE">
 			<English>Craft Drawbridge</English>
 			<German>Zugbrücke herstellen</German>
+			<Russian>Создать: Подъёмный мост</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODENTRIANGLEWALL">
 			<English>Craft Triangle Wall</English>
 			<German>Dreieckige Wand herstellen</German>
+			<Russian>Создать: Треугольная стена</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODENTRIANGLEFLOOR">
 			<English>Craft Triangle Floor</English>
 			<German>Dreieckigen Boden herstellen</German>
+			<Russian>Создать: Треугольный пол</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODHANDRAIL">
 			<English>Craft Wood Handrail</English>
 			<German>Holzgeländer herstellen</German>
+			<Russian>Создать: Деревянные перила</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODFLOORSTAIRS">
 			<English>Craft Floor Stairs</English>
 			<German>Boden mit Treppe herstellen</German>
+			<Russian>Создать: Пол с лестницей</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_WOODPILLAR">
 			<English>Craft Pillar</English>
 			<German>Säule herstellen</German>
+			<Russian>Создать: Опора</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_METAL_DOORWAY">
 			<English>Craft Doorway</English>
 			<German>Türdurchgang herstellen</German>
+			<Russian>Создать: Дверной проём</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR">
 			<English>Craft Glass Floor</English>
 			<German>Glasboden herstellen</German>
+			<Russian>Создать: Стеклянный пол</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR_QUARTER">
 			<English>Craft Glass Floor 1/4</English>
 			<German>Glasboden 1/4 herstellen</German>
+			<Russian>Создать: Стеклянный пол 1/4</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_GLASS_FLOOR_HALF">
 			<English>Craft Glass Floor 1/2</English>
 			<German>Glasboden 1/2 herstellen</German>
+			<Russian>Создать: Стеклянный пол 1/2</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CONCRETE_BLOCK">
 			<English>Craft Concrete Block</English>
 			<German>Betonblock herstellen</German>
+			<Russian>Создать: Бетонный блок</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CONCRETE_BUNKER">
 			<English>Craft Concrete Bunker</English>
 			<German>Betonbunker herstellen</German>
+			<Russian>Создать: Бетонный бункер</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CINDERWALL_WINDOW">
 			<English>Craft Wall w/ window</English>
 			<German>Wand mit Fenster herstellen</German>
+			<Russian>Создать: Стена с окном</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_STORAGE_CRATE">
 			<English>Craft Storage Crate</English>
 			<German>Lagerkiste herstellen</German>
+			<Russian>Создать: Ящик для хранения</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_CAMO_STORAGE_CRATE">
 			<English>Craft Camo Storage Crate</English>
 			<German>Tarn-Lagerkiste herstellen</German>
+			<Russian>Создать: Ящик для хранения (камуфл.)</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_OPEN_GATE">
 			<English>Open Gate</English>
@@ -33949,34 +33968,42 @@
 		<Key ID="STR_BLD_ACTIONS_OPEN_WINDOW">
 			<English>Open Window</English>
 			<German>Fenster öffnen</German>
+			<Russian>Открыть окно</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_CLOSE_WINDOW">
 			<English>Close Window</English>
 			<German>Fenster schließen</German>
+			<Russian>Закрыть окно</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCK_WINDOW">
 			<English>Unlock Window</English>
 			<German>Fenster aufschließen</German>
+			<Russian>Отпереть окно</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_LOCK_WINDOW">
 			<English>Lock Window</English>
 			<German>Fenster abschließen</German>
+			<Russian>Запереть окно</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_OPEN_BUNKER">
 			<English>Open Shutter</English>
 			<German>Schießscharten öffnen</German>
+			<Russian>Открыть ставни</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_CLOSE_BUNKER">
 			<English>Close Shutter</English>
 			<German>Schießscharten schließen</German>
+			<Russian>Закрыть ставни</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_UNLOCK_BUNKER">
 			<English>Unlock Shutter</English>
 			<German>Schießscharten aufschließen</German>
+			<Russian>Отпереть ставни</Russian>
 		</Key>
 		<Key ID="STR_BLD_ACTIONS_LOCK_BUNKER">
 			<English>Lock Shutter</English>
 			<German>Schießscharten abschließen</German>
+			<Russian>Запереть ставни</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_STONEOVEN">
 			<English>Stone Oven</English>
@@ -34555,6 +34582,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_RABBIT_DESC">
 			<English>A packet of rabbit skin.</English>
 			<German>Ein Paket Hasenfell.</German>
+			<Russian>Упаковка с кроличьей шкурой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW">
 			<English>Cow Skin</English>
@@ -34564,6 +34592,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_COW_DESC">
 			<English>A packet of cow skin.</English>
 			<German>Ein Paket Kuhfell.</German>
+			<Russian>Упаковка с коровьей шкурой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT">
 			<English>Goat Skin</English>
@@ -34573,6 +34602,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_GOAT_DESC">
 			<English>A packet of goat skin.</English>
 			<German>Ein Paket Ziegenfell.</German>
+			<Russian>Упаковка с козьей шкурой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR">
 			<English>Boar Skin</English>
@@ -34582,6 +34612,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_BOAR_DESC">
 			<English>A packet of boar skin.</English>
 			<German>Ein Paket Wildschweinfell.</German>
+			<Russian>Упаковка с кабаньей шкурой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG">
 			<English>Dog Skin</English>
@@ -34591,6 +34622,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DOG_DESC">
 			<English>A packet of dog skin.</English>
 			<German>Ein Paket Hundefell.</German>
+			<Russian>Упаковка с собачьей шкурой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP">
 			<English>Sheep Skin</English>
@@ -34600,6 +34632,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_SHEEP_DESC">
 			<English>A packet of sheep skin.</English>
 			<German>Ein Paket Schafsfell.</German>
+			<Russian>Упаковка с овечьей шкурой.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOOL">
 			<English>Wool</English>
@@ -34609,6 +34642,7 @@
 		<Key ID="STR_EPOCH_WOOL_DESC">
 			<English>A packet of wool.</English>
 			<German>Ein Paket Wolle.</German>
+			<Russian>Упаковка с шерстью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ANIMAL_SKIN">
 			<English>Animal Skin</English>
@@ -34618,6 +34652,7 @@
 		<Key ID="STR_EPOCH_ANIMAL_SKIN_DESC">
 			<English>A packet of animal skin.</English>
 			<German>Ein Paket Tierfell.</German>
+			<Russian>Упаковка со шкурой животного.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LEATHER">
 			<English>Leather</English>
@@ -34627,6 +34662,7 @@
 		<Key ID="STR_EPOCH_LEATHER_DESC">
 			<English>A packet of leather.</English>
 			<German>Ein Paket Leder.</German>
+			<Russian>Упаковка с кожей.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLASTIC_PARTS">
 			<English>Plastic Parts</English>
@@ -34687,34 +34723,42 @@
 		<Key ID="STR_EPOCH_COW_ZOMBIE">
 			<English>Zombified Cow</English>
 			<German>Zombifizierte Kuh</German>
+			<Russian>Зомбированная корова</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GOAT_ZOMBIE">
 			<English>Zombified Goat</English>
 			<German>Zombifizierte Ziege</German>
+			<Russian>Зомбированная коза</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SHEEP_ZOMBIE">
 			<English>Zombified Sheep</English>
 			<German>Zombifiziertes Schaf</German>
+			<Russian>Зомбированная овца</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOG_ZOMBIE">
 			<English>Zombified Dog</English>
 			<German>Zombifizierter Hund</German>
+			<Russian>Зомбированная собака</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_RABBIT_ZOMBIE">
 			<English>Zombified Rabbit</English>
 			<German>Zombifizierter Hase</German>
+			<Russian>Зомбированный кролик</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BOAR_ZOMBIE">
 			<English>Zombified Boar</English>
 			<German>Zombifiziertes Wildschwein</German>
+			<Russian>Зомбированный кабан</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_COCK_ZOMBIE">
 			<English>Zombified Cock</English>
 			<German>Zombifizierter Hahn</German>
+			<Russian>Зомбированный петух</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHICKEN_ZOMBIE">
 			<English>Zombified Chicken</English>
 			<German>Zombifiziertes Huhn</German>
+			<Russian>Зомбированная курица</Russian>
 		</Key>
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
@@ -36092,7 +36136,7 @@
 			<English>You have deployed a lockable %1, the key is: %2</English>
 			<German>Du hast %1 (abschließbar) gebaut, der Schlüssel ist: %2</German>
 			<French>Vous avez déployer un %1 vérrouillable, la clé est: %2</French>
-			<Russian>Вы скрафтили запираемый %1, ключ: %2.</Russian>
+			<Russian>Вы создали запираемый %1, ключ: %2.</Russian>
 			<Spanish>Has desplegado un/a %1 con cerradura, la llave es: %2</Spanish>
 		</Key>
 	</Package>
@@ -36101,34 +36145,42 @@
 		<Key ID="STR_CL_PS_VIEW_SET">
 			<English>View distance set to: %1m</English>
 			<German>Sichtweite setzen auf: %1m</German>
+			<Russian>Дальность прорисовки: %1м</Russian>
 		</Key>
 		<Key ID="STR_CL_PS_VIEW_FPS">
 			<English>Warning: The higher the view distance the lower your FPS will be.</English>
 			<German>Warnung: Höhere Sichtweiten können die FPS beeinflussen!</German>
+			<Russian>Внимание! Большая дальность прорисовки снижает FPS!</Russian>
 		</Key>
 		<Key ID="STR_CL_PS_GRASS_TOGGLED">
 			<English>Grass toggled: %1</English>
 			<German>Gras: %1</German>
+			<Russian>Трава: %1</Russian>
 		</Key>
 		<Key ID="STR_CL_PS_ENVIRONMENT_TOGGLED">
 			<English>Environment sounds turned: %1</English>
 			<German>Umgebungsgeräusche: %1</German>
+			<Russian>Звуки окружения: %1</Russian>
 		</Key>
 		<Key ID="STR_CL_PS_VIEW_DISTANCE">
 			<English>View Distance:</English>
 			<German>Sichtweite:</German>
+			<Russian>Дальность прорисовки:</Russian>
 		</Key>
 		<Key ID="STR_CL_PS_VIEW">
 			<English>Click on one of the distance options below</English>
 			<German>Klicke auf eine der untenstehenden Distanzoptionen</German>
+			<Russian>Выберите из списка ниже</Russian>
 		</Key>
 		<Key ID="STR_CL_PS_ENVIRONMENT">
 			<English>Environment sounds: %1</English>
 			<German>Umgebungsgeräusche: %1</German>
+			<Russian>Звуки окружения: %1</Russian>
 		</Key>
 		<Key ID="STR_CL_PS_GRASS">
 			<English>Toggle grass: %1</English>
 			<German>Gras: %1</German>
+			<Russian>Трава: %1</Russian>
 		</Key>
 	</Package>
 
@@ -37481,7 +37533,7 @@
 			<English>IKEA truck lost its Cargo!</English>
 			<German>Ein Ikea-Truck hat seine Materialien verloren!</German>
 			<French>Un camion IKEA a perdu son chargement!</French>
-			<Russian>Грузовик ИКЕЯ потерял свой груз!</Russian>
+			<Russian>Грузовик IKEA потерял свой груз!</Russian>
 			<Spanish>Un camión de IKEA perdió su carga!</Spanish>
 		</Key>
 		<Key ID="STR_CL_ESE_TREASURE_TITLE">
@@ -37676,12 +37728,12 @@
 	<Package name="EvacChopper">
 		<Key ID="STR_CL_EC_NAME">
 			<English>Evac-Chopper</English>
-			<Russian>Эвакуационный-Вертолет</Russian>
+			<Russian>Эвакуационный вертолет</Russian>
 			<German>Evak-Heli</German>
 		</Key>
 		<Key ID="STR_CL_EC_CLEAR">
 			<English>Clearing Evac-Chopper, Move to Cancel.</English>
-			<Russian>Эвак-вертолет очищен, переносим в отмену.</Russian>
+			<Russian>Эвакуационный вертолет очищается, двигайтесь для отмены.</Russian>
 			<German>Evak-Heli wird geräumt, zum Abbrechen bewegen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_EXISTS">
@@ -37696,12 +37748,12 @@
 		</Key>
 		<Key ID="STR_CL_EC_MINIMUM_DISTANCE">
 			<English>You must be at least %1 meters away to call your %2.</English>
-			<Russian>Вы должны быть на расстоянии не менее %1 метров, чтобы вызвать %2.</Russian>
+			<Russian>Вы должны быть на расстоянии не менее %1 м, чтобы вызвать %2.</Russian>
 			<German>Du musst mindestens %1 Meter weit weg sein, um deine(n) %2 zu rufen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_COUNTDOWN">
 			<English>%1 gets called in %2s - Move to Cancel!</English>
-			<Russian>%1 вызывается в %2s - перейти к отмене!.</Russian>
+			<Russian>%1 вызывается в %2 - двигайтесь для отмены!</Russian>
 			<German>%1 wird in %2s gerufen - Zum Abbrechen bewegen!</German>
 		</Key>
 		<Key ID="STR_CL_EC_UNABLETOEVAC">
@@ -37731,12 +37783,12 @@
 		</Key>
 		<Key ID="STR_CL_EC_NEED_COINS">
 			<English>You need %1 %2 to set your %3.</English>
-			<Russian>Вам нужно %1 %2 для установки %3</Russian>
+			<Russian>Вам нужно %1 %2 для установки %3.</Russian>
 			<German>Du benötigst %1 %2 um deine(n) %3 zu setzen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_NEED_BRIEFCASES">
 			<English>You need %1 to set your %2.</English>
-			<Russian>Вам нужно %1 для установки %2</Russian>
+			<Russian>Вам нужно %1 для установки %2.</Russian>
 			<German>Du benötigst %1 um deine(n) %2 zu setzen.</German>
 		</Key>
 	</Package>
@@ -37745,320 +37797,400 @@
 		<Key ID="STR_CL_DZMS_AN2_TITLE">
 			<English>AN2 Supply Drop</English>
 			<German>AN2 Versorgungsabwurf</German>
+			<Russian>АН-2 с припасами</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AN2_START">
 			<English>An AN2 with Supplies is flying in!</English>
 			<German>Eine AN2 mit Vorräten ist auf dem Weg zur markierten Position!</German>
+			<Russian>АН-2 с припасами движется к отмеченной позиции!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AN2_DEST">
 			<English>The AN2 has crashed, the supplies are destroyed!</English>
 			<German>Die AN2 ist abgestürzt und alle Vorräte wurden zerstört!</German>
+			<Russian>АН-2 разбился, припасы уничтожены!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AN2_CLOSE">
 			<English>The AN2 is only 1200m out from the drop point!</English>
 			<German>Die AN2 ist nur noch 1200m vom Abwurfpunkt entfernt!</German>
+			<Russian>АН-2 в 1200м от точки выброса!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AN2_DROP">
 			<English>The AN2 has reached the location and dropped the cargo!</English>
 			<German>Die AN2 hat den Abwurfpunkt erreicht und die Vorräte abgeworfen!</German>
+			<Russian>АН-2 успешно сбросил ящик с припасами!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AN2_FAIL">
 			<English>The AN2 Supply Drop timed out!</English>
 			<German>Die Mission 'AN2 Versorgungsabwurf' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'АН-2 с припасами' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AN2_WIN">
 			<English>The AN2 Supply Drop has been secured!</English>
 			<German>Der AN2 Versorgungsabwurf wurde gesichert!</German>
+			<Russian>Миссия 'АН-2 с припасами' успешно завершена!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_APC_TITLE">
 			<English>APCs</English>
+			<Russian>Броневики</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_APC_START">
 			<English>Soldiers are guarding 3 APCs!</English>
 			<German>Soldaten bewachen 3 APCs!</German>
+			<Russian>Военные охраняют 3 броневика!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_APC_WIN">
 			<English>The APCs have been secured!</English>
 			<German>Die APCs wurden gesichert!</German>
+			<Russian>Броневики захвачены!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_APC_FAIL">
 			<English>The APCs Mission timed out!</English>
 			<German>Die Mission 'APCs' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Броневики' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AV_TITLE">
 			<English>Armed Vehicles</English>
 			<German>Bewaffnete Fahrzeuge</German>
+			<Russian>Вооружённая техника</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AV_START">
 			<English>Two Armed Vehicles are being guarded!</English>
 			<German>Zwei bewaffnete Fahrzeuge werden bewacht!</German>
+			<Russian>Охраняются два вооружёных транспорта!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AV_WIN">
 			<English>The Armed Vehicles have been secured!</English>
 			<German>Die bewaffneten Fahrzeuge wurden gesichert!</German>
+			<Russian>Вооружённая техника захвачена!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_AV_FAIL">
 			<English>The guarded Armed Vehicles timed out!</English>
 			<German>Die Mission 'Bewaffnete Fahrzeuge' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Вооружённая техника' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_C130_TITLE">
 			<English>C130 Crash</English>
 			<German>C130 Absturz</German>
+			<Russian>Крушение C130</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_C130_START">
 			<English>A C130 Carrying Supplies has crashed!</English>
 			<German>Eine C130 mit Materialien ist abgestürzt!</German>
+			<Russian>Доставлявший припасы C130 потерпел крушение!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_C130_WIN">
 			<English>The C130 Crash Site has been secured!</English>
 			<German>Der C130 Absturz wurde gesichert!</German>
+			<Russian>Место крушения C130 было захвачено!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_C130_FAIL">
 			<English>The C130 Crash Site timed out!</English>
 			<German>Die Mission 'C130 Absturz' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Крушение C130' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_CONST_TITLE">
 			<English>Construction Site</English>
 			<German>Baustelle</German>
+			<Russian>Стройка</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_CONST_START">
 			<English>A construction operation has been located!</English>
 			<German>Auf einer Baustelle wurden verdächtige Aktivitäten gesichtet!</German>
+			<Russian>Обнаружена строительная площадка!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_CONST_WIN">
 			<English>The Construction Site has been secured!</English>
 			<German>Die Baustelle wurde gesichert!</German>
+			<Russian>Стройка захвачена!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_CONST_FAIL">
 			<English>The Construction Site timed out!</English>
 			<German>Die Mission 'Baustelle' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Стройка' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_FB_TITLE">
 			<English>Firebase</English>
 			<German>Angriffsbasis</German>
+			<Russian>Военная база</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_FB_START">
 			<English>A Firebase is being constructed!</English>
 			<German>Eine Angriffsbasis wird derzeit aufgebaut!</German>
+			<Russian>Обнаружено строительство военной базы!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_FB_WIN">
 			<English>The Firebase has been secured!</English>
 			<German>die Angriffsbasis wurde gesichert!</German>
+			<Russian>Военная база захвачена!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_FB_FAIL">
 			<English>The Firebase timed out!</English>
 			<German>Die Mission 'Angriffsbasis' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Военная база' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_GS_TITLE">
 			<English>General Store</English>
 			<German>Gemischtwarenladen</German>
+			<Russian>Универмаг</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_GS_START">
 			<English>The General Store is open for business!</English>
 			<German>Ein Gemischtwarenladen hat geöffnet!</German>
+			<Russian>Универмаг открыт для бизнеса!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_GS_WIN">
 			<English>The General Store staff has been killed!</English>
 			<German>Der Gemischtwarenladen wurde ausgeräumt!</German>
+			<Russian>Весь персонал универмага уничтожен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_GS_FAIL">
 			<English>The General Store timed out!</English>
 			<German>Die Mission 'Gemischtwarenladen' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Универмаг' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HC_TITLE">
 			<English>Helicopter Crash</English>
 			<German>Helikopter-Absturz</German>
+			<Russian>Крушение вертолёта</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HC_START">
 			<English>A Helicopter has crashed!</English>
 			<German>Ein Helikopter ist abgestürzt!</German>
+			<Russian>Вертолёт потерпел крушение!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HC_WIN">
 			<English>The Helicopter Crash has been secured!</English>
 			<German>Der Helikopter-Absturz wurde gesichert!</German>
+			<Russian>Место крушения вертолёта захвачено!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HC_FAIL">
 			<English>The Helicopter Crash timed out!</English>
 			<German>Die Mission 'Helikopter-Absturz' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Крушение вертолёта' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HL_TITLE">
 			<English>Helicopter Landing</English>
 			<German>Helikopter-Landung</German>
+			<Russian>Вынужденная посадка</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HL_START">
 			<English>A Supply Helicopter has been forced to land!</English>
 			<German>Ein Helikopter mit Vorräten wurde zur Landung gezwungen!</German>
+			<Russian>Вертолёт с припасами совершил вынужденную посадку!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HL_WIN">
 			<English>The Helicopter has been secured!</English>
 			<German>Der Helikopter wurde gesichert!</German>
+			<Russian>Вертолёт захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HL_FAIL">
 			<English>The Helicopter got away.</English>
 			<German>Die Mission 'Helikopter-Landung' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Вертолёт улетел!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HUM_TITLE">
 			<English>Humvee Crash</English>
+			<Russian>Разбитый Хамви</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HUM_START">
 			<English>A Humvee has crashed!</English>
 			<German>Ein Humvee ist gecrasht!</German>
+			<Russian>Хамви попал в ДТП!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HUM_WIN">
 			<English>The Humvee has been secured!</English>
 			<German>Der gecrashte Humvee wurde gesichert!</German>
+			<Russian>Хамви был захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_HUM_FAIL">
 			<English>The Crashed Humvee timed out!</English>
 			<German>Die Mission 'Humvee Crash' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Разбитый Хамви' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MCACHE_TITLE">
 			<English>Medical Cache</English>
 			<German>Medizinisches Versteck</German>
+			<Russian>Медицинский склад</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MCACHE_START">
 			<English>A Medical Cache has been located!</English>
 			<German>Ein medizinisches Versteck wurde lokalisiert!</German>
+			<Russian>Обнаружен медицинский склад!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MCACHE_WIN">
 			<English>The Medical Cache has been secured!</English>
 			<German>Das medizinische Versteck wurde gesichert!</German>
+			<Russian>Медицинский склад захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MCACHE_FAIL">
 			<English>The Medical Cache timed out!</English>
 			<German>Die Mission 'Medizinisches Versteck' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Медицинский склад' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MCAMP_TITLE">
 			<English>Medical Camp</English>
 			<German>Medizinisches Camp</German>
+			<Russian>Медицинский лагерь</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MCAMP_START">
 			<English>A Medical Camp is treating patients!</English>
 			<German>Ein medizinisches Camp behandelt Patienten!</German>
+			<Russian>Медицинский лагерь принимает пациентов!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MCAMP_WIN">
 			<English>The Medical Camp has been secured!</English>
 			<German>Das medizinische Camp wurde gesichert!</German>
+			<Russian>Медицинский лагерь захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MCAMP_FAIL">
 			<English>The Medical Camp timed out!</English>
 			<German>Die Mission 'Medizinisches Camp' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Медицинский лагерь' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MOP_TITLE">
 			<English>Medical Outpost</English>
 			<German>Medizinischer Außenposten</German>
+			<Russian>Медицинский аванпост</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MOP_START">
 			<English>A Medical Outpost is resupplying the area!</English>
 			<German>Ein medizinischer Außenposten beliefert die Umgebung!</German>
+			<Russian>Медицинский аванпост пополняет запасы!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MOP_WIN">
 			<English>The Medical Outpost has been secured!</English>
 			<German>Der medizinische Außenposten wurde gesichert!</German>
+			<Russian>Медицинский аванпост захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_MOP_FAIL">
 			<English>The Medical Outpost timed out!</English>
 			<German>Die Mission 'Medizinischer Außenposten' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Медицинский аванпост' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_WCACHE_TITLE">
 			<English>Weapons Cache</English>
 			<German>Waffenversteck</German>
+			<Russian>Тайник с оружием</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_WCACHE_START">
 			<English>A Weapons Cache has been overrun!</English>
 			<German>Ein Waffenversteck wurde überrannt!</German>
+			<Russian>Тайник с оружием был переполнен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_WCACHE_WIN">
 			<English>The Weapons Cache has been secured!</English>
 			<German>Das Waffenversteck wurde gesichert!</German>
+			<Russian>Тайник с оружием захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_WCACHE_FAIL">
 			<English>The Weapons Cache timed out!</English>
 			<German>Die Mission 'Waffenversteck' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Тайник с оружием' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_PS_TITLE">
 			<English>Patrol Squad</English>
 			<German>Patrouille</German>
+			<Russian>Патруль</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_PS_START">
 			<English>A Patrol Squad has been spotted!</English>
 			<German>Eine Patrouille wurde gesichtet!</German>
+			<Russian>Обнаружен патруль!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_PS_WIN">
 			<English>The Squad has been wiped out!</English>
 			<German>Die Patrouille wurde ausgeschaltet!</German>
+			<Russian>Патруль уничтожен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_PS_FAIL">
 			<English>The Squad finished their patrol.</English>
 			<German>Die Mission 'Patrouille' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Патруль' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_STASH_TITLE">
 			<English>Stash House</English>
 			<German>Verstecktes Lagerhaus</German>
+			<Russian>Склад</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_STASH_START">
 			<English>A Weapon Stash House has been located!</English>
 			<German>Ein verstecktes Lagerhaus mit Waffen wurde lokalisiert!</German>
+			<Russian>Был обнаружен тайный склад с оружием!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_STASH_WIN">
 			<English>The Stash House has been secured!</English>
 			<German>Das versteckte Lagerhaus wurde gesichert!</German>
+			<Russian>Склад захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_STASH_FAIL">
 			<English>The Stash House timed out!</English>
 			<German>Die Mission 'Verstecktes Lagerhaus' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Склад' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_URAL_TITLE">
 			<English>Ural Ambush</English>
 			<German>Ural Hinterhalt</German>
+			<Russian>Засада</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_URAL_START">
 			<English>A Ural Carrying Supplies has been ambushed!</English>
 			<German>Ein Ural mit Vorräten ist in einen Hinterhalt geraten!</German>
+			<Russian>Перевозящий припасы Урал попал в засаду!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_URAL_WIN">
 			<English>The Ural Supplies have been secured!</English>
 			<German>Der Ural und die Vorräte wurden gesichert!</German>
+			<Russian>Урал захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_URAL_FAIL">
 			<English>The Ural Ambush timed out!</English>
 			<German>Die Mission 'Ural Hinterhalt' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Засада' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_WT_TITLE">
 			<English>Weapons Truck</English>
 			<German>Waffen LKW</German>
+			<Russian>Грузовик с оружием</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_WT_START">
 			<English>A Weapons Truck has crashed!</English>
 			<German>Ein LKW mit Waffen hatten einen Unfall!</German>
+			<Russian>Грузовик с оружием попал в ДТП!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_WT_WIN">
 			<English>Weapons Truck has been secured!</English>
 			<German>Der LKW und die Waffen wurden gesichert!</German>
+			<Russian>Грузовик с оружием захвачен!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_WT_FAIL">
 			<English>The Weapons Truck timed out!</English>
 			<German>Die Mission 'Waffen LKW' wurde durch ein Zeitlimit beendet!</German>
+			<Russian>Время миссии 'Грузовик с оружием' истекло!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_VEH1">
 			<English>Vehicle Saved. Key is in the gear!</English>
 			<German>Das Fahrzeug wurde gespeichert und der Schlüssel befindet sich in deiner Ausrüstung!</German>
+			<Russian>Транспорт сохранён. Ключ в инвентаре!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_VEH2">
 			<English>Vehicle Saved!</English>
 			<German>Fahrzeug gespeichert!</German>
+			<Russian>Транспорт сохранён!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_VEH3">
 			<English>Drive this vehicle to a safe location! It will save when you get out.</English>
 			<German>Fahre das Fahrzeug zu einer sicheren Position. Beim Ausstieg wird das Fahrzeug gespeichert!</German>
+			<Russian>Перегоните автомобиль в безопасное место! Он будет сохранён, когда вы выйдете из него.</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_VEH4">
 			<English>Vehicle Location Saved! Gear left in the vehicle will be deleted at restart!</English>
 			<German>Fahrzeugposition gespeichert, die verbleibende Ausrüstung im Fahrzeug wird bei Server-Neustart gelöscht!</German>
+			<Russian>Местоположение автомобиля сохранено! Всё содержимое в нём будет удалено после рестарта!</Russian>
 		</Key>
 		<Key ID="STR_CL_DZMS_VEH5">
 			<English>Warning: This vehicle will disappear on server restart!</English>
 			<German>Warnung: Dieses Fahrzeug wird bei Server-Neustart gelöscht!</German>
+			<Russian>Внимание! Этот транспорт будет удалён после рестарта!</Russian>
 		</Key>
 	</Package>
 </Project>
