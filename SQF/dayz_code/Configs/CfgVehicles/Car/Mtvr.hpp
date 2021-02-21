@@ -19,7 +19,7 @@ class MTVR_DZE1: MTVR_DZE {
 	original = "MTVR_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 7.0;  // base 5.0
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"MTVR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -73,7 +73,7 @@ class MTVR_DES_EP1_DZE1: MTVR_DES_EP1_DZE {
 	original = "MTVR_DES_EP1_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 7.0;  // base 5.0
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"MTVR_DES_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -131,7 +131,7 @@ class MtvrRefuel_DES_EP1_DZE1: MtvrRefuel_DES_EP1_DZ {
 	original = "MtvrRefuel_DES_EP1_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 7.0;  // base 5.0
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"MtvrRefuel_DES_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -186,7 +186,7 @@ class MtvrRefuel_DZE1: MtvrRefuel_DZ {
 	original = "MtvrRefuel_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 7.0;  // base 5.0
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"MtvrRefuel_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -241,7 +241,7 @@ class MtvrRepair_DZE1 : MtvrRepair_DZE {
 	original = "MtvrRepair_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 7.0;  // base 5.0
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"MtvrRepair_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -299,7 +299,7 @@ class MtvrReammo_DZE1 : MtvrReammo_DZE {
 	original = "MtvrReammo_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 7.0;  // base 5.0
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"MtvrReammo_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -355,7 +355,7 @@ class MTVR_Open_DZE1: MTVR_Open_DZE {
 	original = "MTVR_Open_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 7.0;  // base 5.0
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"MTVR_Open_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};

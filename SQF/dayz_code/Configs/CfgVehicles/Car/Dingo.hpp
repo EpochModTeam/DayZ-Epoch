@@ -374,7 +374,7 @@ class Dingo_WDL_ACR_DZE1: Dingo_WDL_ACR_DZE
 	displayName = "$STR_VEH_NAME_DINGO_M240_WOODLAND+";
 	original = "Dingo_WDL_ACR_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 2; // base 4
+	turnCoef = 5;  // base 4
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -436,7 +436,7 @@ class Dingo_DST_ACR_DZE1: Dingo_DST_ACR_DZE
 	displayName = "$STR_VEH_NAME_DINGO_M240_DESERT+";
 	original = "Dingo_DST_ACR_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 2; // base 4
+	turnCoef = 5;  // base 4
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -561,7 +561,7 @@ class Dingo_GL_Wdl_ACR_DZE1: Dingo_GL_Wdl_ACR_DZE
 	displayName = "$STR_VEH_NAME_DINGO_MK19_WOODLAND+";
 	original = "Dingo_GL_Wdl_ACR_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 2; // base 4
+	turnCoef = 5;  // base 4
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -623,7 +623,7 @@ class Dingo_GL_DST_ACR_DZE1: Dingo_GL_DST_ACR_DZE
 	displayName = "$STR_VEH_NAME_DINGO_MK19_DESERT+";
 	original = "Dingo_GL_DST_ACR_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 2; // base 4
+	turnCoef = 5;  // base 4
 	terrainCoef = 1; //base 2
 	
 	class Upgrades

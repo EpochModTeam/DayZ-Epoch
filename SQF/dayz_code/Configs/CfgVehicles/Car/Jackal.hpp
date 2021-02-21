@@ -115,7 +115,7 @@ class BAF_Jackal2_L2A1_D_DZE1: BAF_Jackal2_L2A1_D_DZE
 	displayName = "$STR_VEH_NAME_JACKAL_L2A1_DESERT+";
 	original = "BAF_Jackal2_L2A1_D_DZE";
 	maxSpeed = 155; // base 150
-	turnCoef = 1; // base 3
+	turnCoef = 4; // base 3
 	terrainCoef = 1; //base 3
 	
 	class Upgrades
@@ -263,7 +263,7 @@ class BAF_Jackal2_L2A1_W_DZE1: BAF_Jackal2_L2A1_W_DZE
 	displayName = "$STR_VEH_NAME_JACKAL_L2A1_WOODLAND+";
 	original = "BAF_Jackal2_L2A1_W_DZE";
 	maxSpeed = 155; // base 150
-	turnCoef = 1; // base 3
+	turnCoef = 4; // base 3
 	terrainCoef = 1; //base 3
 	
 	class Upgrades
@@ -387,7 +387,7 @@ class BAF_Jackal2_GMG_D_DZE1: BAF_Jackal2_GMG_D_DZE
 	displayName = "$STR_VEH_NAME_JACKAL_MK19_DESERT+";
 	original = "BAF_Jackal2_GMG_D_DZE";
 	maxSpeed = 155; // base 150
-	turnCoef = 1; // base 3
+	turnCoef = 4; // base 3
 	terrainCoef = 1; //base 3
 	
 	class Upgrades
@@ -501,7 +501,7 @@ class BAF_Jackal2_GMG_W_DZE1: BAF_Jackal2_GMG_W_DZE
 	displayName = "$STR_VEH_NAME_JACKAL_MK19_WOODLAND+";
 	original = "BAF_Jackal2_GMG_W_DZE";
 	maxSpeed = 155; // base 150
-	turnCoef = 1; // base 3
+	turnCoef = 4; // base 3
 	terrainCoef = 1; //base 3
 	
 	class Upgrades

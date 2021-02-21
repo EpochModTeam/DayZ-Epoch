@@ -629,7 +629,7 @@ class HMMWV_M998A2_SOV_DES_EP1_DZE1: HMMWV_M998A2_SOV_DES_EP1_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_SOV+";
 	original = "HMMWV_M998A2_SOV_DES_EP1_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -817,7 +817,7 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZE1: HMMWV_M1151_M2_CZ_DES_EP1_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_GPK+";
 	original = "HMMWV_M1151_M2_CZ_DES_EP1_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -922,7 +922,7 @@ class HMMWV_GPK_M2_WINTER_DZE1: HMMWV_GPK_M2_WINTER_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_GPK_WINTER+";
 	original = "HMMWV_GPK_M2_WINTER_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -1069,7 +1069,7 @@ class HMMWV_M1114_AGS_ACR_DZE1: HMMWV_M1114_AGS_ACR_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_AGS30+";
 	original = "HMMWV_M1114_AGS_ACR_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -1205,7 +1205,7 @@ class HMMWV_M1114_DSHKM_ACR_DZE1: HMMWV_M1114_DSHKM_ACR_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_DSHKM+";
 	original = "HMMWV_M1114_DSHKM_ACR_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -1396,7 +1396,7 @@ class HMMWV_Armored_DZE1: HMMWV_Armored_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_ARMORED+";
 	original = "HMMWV_Armored_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -1501,7 +1501,7 @@ class HMMWV_Winter_Armored_DZE1: HMMWV_Winter_Armored_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_ARMORED_WINTER+";
 	original = "HMMWV_Winter_Armored_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -1639,7 +1639,7 @@ class HMMWV_M2_DZE1: HMMWV_M2_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_M2+";
 	original = "HMMWV_M2_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -1837,7 +1837,7 @@ class HMMWV_MK19_DZE1: HMMWV_MK19_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_MK19+";
 	original = "HMMWV_MK19_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -1952,7 +1952,7 @@ class HMMWV_DES_MK19_DZE1: HMMWV_DES_MK19_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_DES_MK19+";
 	original = "HMMWV_DES_MK19_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -2077,7 +2077,7 @@ class HMMWV_M1035_DES_EP1_DZE1: HMMWV_M1035_DES_EP1_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_DES+";
 	original = "HMMWV_M1035_DES_EP1_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -2197,7 +2197,7 @@ class HMMWV_DZE1: HMMWV_DZ
 	displayName = "$STR_VEH_NAME_HMMWV+";
 	original = "HMMWV_DZ";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -2297,7 +2297,7 @@ class HMMWV_DES_EP1_DZE1: HMMWV_DES_EP1_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_DES+";
 	original = "HMMWV_DES_EP1_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -2396,7 +2396,7 @@ class HMMWV_WINTER_DZE1: HMMWV_WINTER_DZ
 	displayName = "$STR_VEH_NAME_HMMWV_WINTER+";
 	original = "HMMWV_WINTER_DZ";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -2573,7 +2573,7 @@ class Hummer_DZE1: Hummer_DZE
 	displayName = "$STR_VEH_NAME_HUMMER+";
 	original = "Hummer_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -2698,7 +2698,7 @@ class HMMWV_Ambulance_DZE1: HMMWV_Ambulance_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE+";
 	original = "HMMWV_Ambulance_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -2799,7 +2799,7 @@ class HMMWV_Ambulance_CZ_DES_EP1_DZE1: HMMWV_Ambulance_CZ_DES_EP1_DZE
 	displayName = "$STR_VEH_NAME_HMMWV_AMBULANCE_DES+";
 	original = "HMMWV_Ambulance_CZ_DES_EP1_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 1; // base 2
+	turnCoef = 3; // base 2
 	terrainCoef = 1; //base 2
 	
 	class Upgrades

@@ -19,7 +19,7 @@ class Ural_INS_DZE1: Ural_INS_DZE {
 	original = "Ural_INS_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"Ural_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -73,7 +73,7 @@ class Ural_RUST_DZE1: Ural_RUST_DZE {
 	original = "Ural_RUST_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"Ural_RUST_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -127,7 +127,7 @@ class URAL_CDF_DZE1: URAL_CDF_DZE {
 	original = "URAL_CDF_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"URAL_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -181,7 +181,7 @@ class UralOpen_CDF_DZE1: UralOpen_CDF_DZE {
 	original = "UralOpen_CDF_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralOpen_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -235,7 +235,7 @@ class Ural_TK_CIV_EP1_DZE1: Ural_TK_CIV_EP1_DZE {
 	original = "Ural_TK_CIV_EP1_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"Ural_TK_CIV_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -289,7 +289,7 @@ class Ural_UN_EP1_DZE1: Ural_UN_EP1_DZE {
 	original = "Ural_UN_EP1_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"Ural_UN_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -343,7 +343,7 @@ class UralCivil_DZE1: UralCivil_DZE {
 	original = "UralCivil_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralCivil_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -398,7 +398,7 @@ class UralCivil2_DZE1: UralCivil2_DZE {
 	original = "UralCivil2_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralCivil2_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -452,7 +452,7 @@ class UralSupply_TK_EP1_DZE1: UralSupply_TK_EP1_DZE {
 	original = "UralSupply_TK_EP1_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralSupply_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -510,7 +510,7 @@ class UralRefuel_TK_EP1_DZE1: UralRefuel_TK_EP1_DZ {
 	original = "UralRefuel_TK_EP1_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralRefuel_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -565,7 +565,7 @@ class UralRefuel_CDF_DZE1: UralRefuel_CDF_DZE {
 	original = "UralRefuel_CDF_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralRefuel_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -620,7 +620,7 @@ class UralReammo_CDF_DZE1 : UralReammo_CDF_DZE {
 	original = "UralReammo_CDF_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralReammo_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -678,7 +678,7 @@ class UralRepair_CDF_DZE1 : UralRepair_CDF_DZE {
 	original = "UralRepair_CDF_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralRepair_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -736,7 +736,7 @@ class UralRefuel_INS_DZE1: UralRefuel_INS_DZE {
 	original = "UralRefuel_INS_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralRefuel_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -791,7 +791,7 @@ class UralReammo_INS_DZE1 : UralReammo_INS_DZE {
 	original = "UralReammo_INS_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralReammo_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -849,7 +849,7 @@ class UralRepair_INS_DZE1 : UralRepair_INS_DZE {
 	original = "UralRepair_INS_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralRepair_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -896,7 +896,7 @@ class Ural_WINTER_DZE1: Ural_WINTER_DZE {
 	original = "Ural_WINTER_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"Ural_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -943,7 +943,7 @@ class UralOpen_WINTER_DZE1: UralOpen_WINTER_DZE {
 	original = "UralOpen_WINTER_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralOpen_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -989,7 +989,7 @@ class UralRefuel_WINTER_DZE1: UralRefuel_WINTER_DZ {
 	original = "UralRefuel_WINTER_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralRefuel_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -1033,7 +1033,7 @@ class UralReammo_WINTER_DZE1 : UralReammo_WINTER_DZE {
 	original = "UralReammo_WINTER_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralReammo_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -1080,7 +1080,7 @@ class UralRepair_WINTER_DZE1 : UralRepair_WINTER_DZE {
 	original = "UralRepair_WINTER_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"UralRepair_WINTER_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};

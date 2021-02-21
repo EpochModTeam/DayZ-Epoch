@@ -230,7 +230,7 @@ class ScrapAPC_DZE1: ScrapAPC_DZE {
 	displayName = "$STR_VEH_NAME_SCRAP_APC+";
 	original = "ScrapAPC_DZE";
 	maxspeed = 95; // base 60
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.5;  // base 1
 	terraincoef	= 1.2; // base 2.8
 	
 	class Upgrades {

@@ -35,7 +35,7 @@ class V3S_Civ_DZE1: V3S_Civ_DZE {
 	original = "V3S_Civ_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"V3S_Civ_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -88,7 +88,7 @@ class V3S_Open_TK_CIV_EP1_DZE1: V3S_Open_TK_CIV_EP1_DZE {
 	original = "V3S_Open_TK_CIV_EP1_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"V3S_Open_TK_CIV_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -141,7 +141,7 @@ class V3S_Open_TK_EP1_DZE1: V3S_Open_TK_EP1_DZE {
 	original = "V3S_Open_TK_EP1_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"V3S_Open_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -195,7 +195,7 @@ class V3S_TK_EP1_DZE1: V3S_TK_EP1_DZE {
 	original = "V3S_TK_EP1_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"V3S_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -253,7 +253,7 @@ class V3S_Refuel_TK_GUE_EP1_DZE1: V3S_Refuel_TK_GUE_EP1_DZ {
 	original = "V3S_Refuel_TK_GUE_EP1_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"V3S_Refuel_TK_GUE_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -307,7 +307,7 @@ class V3S_RA_TK_GUE_EP1_DZE1: V3S_RA_TK_GUE_EP1_DZE {
 	original = "V3S_RA_TK_GUE_EP1_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"V3S_RA_TK_GUE_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"equip_metal_sheet",8},{"ItemScrews",3}}};
@@ -362,7 +362,7 @@ class V3S_Camper_DZE1: V3S_Camper_DZE {
 	original = "V3S_Camper_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"V3S_Camper_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
