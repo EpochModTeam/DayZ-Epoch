@@ -42,7 +42,7 @@ class BMP2_HQ_CDF_DZE1: BMP2_HQ_CDF_DZE {
 	displayName = "$STR_VEH_NAME_BMP2_CDF+";
 	original = "BMP2_HQ_CDF_DZE";
 	maxspeed = 90; // base 65
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.0;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BMP2_HQ_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -119,7 +119,7 @@ class BMP2_HQ_INS_DZE1: BMP2_HQ_INS_DZE {
 	displayName = "$STR_VEH_NAME_BMP2_INS+";
 	original = "BMP2_HQ_INS_DZE";
 	maxspeed = 90; // base 65
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.0;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BMP2_HQ_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -196,7 +196,7 @@ class BMP2_HQ_TK_EP1_DZE1: BMP2_HQ_TK_EP1_DZE {
 	displayName = "$STR_VEH_NAME_BMP2_TK+";
 	original = "BMP2_HQ_TK_EP1_DZE";
 	maxspeed = 90; // base 65
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.0;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BMP2_HQ_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -262,7 +262,7 @@ class BMP2_Ambul_INS_DZE1: BMP2_Ambul_INS_DZE {
 	displayNameShort = "$STR_VEH_NAME_BMP2_AMBULANCE_INS+";
 	original = "BMP2_Ambul_INS_DZE";
 	maxspeed = 90; // base 65
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.0;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BMP2_Ambul_INS_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -331,7 +331,7 @@ class BMP2_Ambul_CDF_DZE1: BMP2_Ambul_CDF_DZE {
 	displayNameShort = "$STR_VEH_NAME_BMP2_AMBULANCE_CDF+";
 	original = "BMP2_Ambul_CDF_DZE";
 	maxspeed = 90; // base 65
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.0;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BMP2_Ambul_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -382,7 +382,7 @@ class BMP2_Ambul_Winter_DZE1: BMP2_Ambul_Winter_DZE {
 	displayNameShort = "$STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER+";
 	original = "BMP2_Ambul_Winter_DZE";
 	maxspeed = 90; // base 65
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.0;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BMP2_Ambul_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};

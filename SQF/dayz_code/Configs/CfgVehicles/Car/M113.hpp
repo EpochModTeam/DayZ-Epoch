@@ -26,7 +26,7 @@ class M113Ambul_UN_EP1_DZE1: M113Ambul_UN_EP1_DZ {
 	displayName = "$STR_VEH_NAME_M113_AMBULANCE_UN+";
 	original = "M113Ambul_UN_EP1_DZ";
 	maxspeed = 90; // base 66
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.5;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"M113Ambul_UN_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -73,7 +73,7 @@ class M113Ambul_TK_EP1_DZE1: M113Ambul_TK_EP1_DZ {
 	displayName = "$STR_VEH_NAME_M113_AMBULANCE_TK+";
 	original = "M113Ambul_TK_EP1_DZ";
 	maxspeed = 90; // base 66
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.5;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"M113Ambul_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -143,7 +143,7 @@ class M113_UN_EP1_DZE1: M113_UN_EP1_DZE {
 	displayName = "$STR_VEH_NAME_M113_UN+";
 	original = "M113_UN_EP1_DZE";
 	maxspeed = 90; // base 66
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.5;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"M113_UN_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -198,7 +198,7 @@ class M113_TK_EP1_DZE1: M113_TK_EP1_DZE {
 	displayName = "$STR_VEH_NAME_M113_TK+";
 	original = "M113_TK_EP1_DZE";
 	maxspeed = 90; // base 66
-	turnCoef = 0.5;  // base 1
+	turnCoef = 2.5;  // base 1
 	
 	class Upgrades {
 		ItemTankAVE[] = {"M113_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};

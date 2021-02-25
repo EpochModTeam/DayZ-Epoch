@@ -41,7 +41,7 @@ class BTR90_DZE1: BTR90_DZE {
 	original = "BTR90_DZE";
 	maxspeed = 120; // base 100
 	terrainCoef = 0.5; // base 1.5
-	turnCoef = 2;  // base 4
+	turnCoef = 6;  // base 4
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BTR90_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -120,7 +120,7 @@ class BTR90_HQ_DZE1: BTR90_HQ_DZE {
 	original = "BTR90_HQ_DZE";
 	maxspeed = 120; // base 100
 	terrainCoef = 0.5; // base 1.5
-	turnCoef = 2;  // base 4
+	turnCoef = 6;  // base 4
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BTR90_HQ_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};

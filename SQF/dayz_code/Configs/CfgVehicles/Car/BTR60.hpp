@@ -246,7 +246,7 @@ class BTR60_TK_EP1_DZE1: BTR60_TK_EP1_DZE {
 	original = "BTR60_TK_EP1_DZE";
 	maxspeed = 120; // base 100
 	terrainCoef = 1; // base 2
-	turnCoef = 2;  // base 4
+	turnCoef = 6;  // base 4
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BTR60_TK_EP1_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -300,7 +300,7 @@ class BTR60_Gue_DZE1: BTR60_Gue_DZE {
 	original = "BTR60_Gue_DZE";
 	maxspeed = 120; // base 100
 	terrainCoef = 1; // base 2
-	turnCoef = 2;  // base 4
+	turnCoef = 6;  // base 4
 	
 	class Upgrades {
 		ItemTankAVE[] = {"BTR60_Gue_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};

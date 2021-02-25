@@ -19,7 +19,7 @@ class KamazOpen_DZE1: KamazOpen_DZE {
 	original = "KamazOpen_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"KamazOpen_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -73,7 +73,7 @@ class Kamaz_DZE1: Kamaz_DZE {
 	original = "Kamaz_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"Kamaz_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -130,7 +130,7 @@ class KamazRefuel_DZE1: KamazRefuel_DZ {
 	original = "KamazRefuel_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"KamazRefuel_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -185,7 +185,7 @@ class KamazRepair_DZE1 : KamazRepair_DZE {
 	original = "KamazRepair_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"KamazRepair_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -243,7 +243,7 @@ class KamazReammo_DZE1 : KamazReammo_DZE {
 	original = "KamazReammo_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"KamazReammo_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -290,7 +290,7 @@ class KamazOpen_Winter_DZE1: KamazOpen_Winter_DZE {
 	original = "KamazOpen_Winter_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"KamazOpen_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -337,7 +337,7 @@ class Kamaz_Winter_DZE1: Kamaz_Winter_DZE {
 	original = "Kamaz_Winter_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"Kamaz_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -383,7 +383,7 @@ class KamazRefuel_Winter_DZE1: KamazRefuel_Winter_DZ {
 	original = "KamazRefuel_Winter_DZ";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
-	turnCoef = 2.0;  // base 3.7
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"KamazRefuel_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -430,7 +430,7 @@ class KamazRepair_Winter_DZE1 : KamazRepair_Winter_DZE {
 	original = "KamazRepair_Winter_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"KamazRepair_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -477,7 +477,7 @@ class KamazReammo_Winter_DZE1 : KamazReammo_Winter_DZE {
 	original = "KamazReammo_Winter_DZE";
 	maxspeed = 100;
 	terrainCoef = 1.8;
-	turnCoef = 2.0;
+	turnCoef = 5.0;  // base 3.7
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"KamazReammo_Winter_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};

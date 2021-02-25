@@ -17217,11 +17217,11 @@
 
 		<!-- CZ 805 -->
 		<Key ID="STR_DZ_WPN_CZ_805A1_NAME">
-			<English>CZ 805A1 ACOG</English>
+			<English>CZ 805A1 CCO</English>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805A1_GL_NAME">
-			<English>CZ 805A1 ACOG GL</English>
-			<Russian>CZ 805A1 ACOG ПГ</Russian>
+			<English>CZ 805A1 CCO GL</English>
+			<Russian>CZ 805A1 CCO ПГ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_CZ_805A2_NAME">
 			<English>CZ 805A2</English>

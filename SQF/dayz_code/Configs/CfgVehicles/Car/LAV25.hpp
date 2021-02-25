@@ -39,7 +39,7 @@ class LAV25_DZE1: LAV25_DZE {
 	original = "LAV25_DZE";
 	maxspeed = 120; // base 100
 	terrainCoef = 0.5; // base 1.5
-	turnCoef = 2;  // base 4
+	turnCoef = 5;  // base 4
 	
 	class Upgrades {
 		ItemTankAVE[] = {"LAV25_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};
@@ -112,7 +112,7 @@ class LAV25_HQ_DZE1: LAV25_HQ_DZE {
 	original = "LAV25_HQ_DZE";
 	maxspeed = 120; // base 100
 	terrainCoef = 0.5; // base 1.5
-	turnCoef = 2;  // base 4
+	turnCoef = 5;  // base 4
 	
 	class Upgrades {
 		ItemTankAVE[] = {"LAV25_HQ_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTankAVE",1},{"equip_metal_sheet",8},{"ItemScrews",2}}};

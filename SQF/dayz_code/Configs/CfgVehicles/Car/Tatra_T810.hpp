@@ -452,7 +452,7 @@ class T810A_PKT_ACR_DZE1: T810A_PKT_ACR_DZE {
 	original = "T810A_PKT_ACR_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810A_PKT_ACR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -508,7 +508,7 @@ class T810A_PKT_DES_ACR_DZE1: T810A_PKT_DES_ACR_DZE {
 	original = "T810A_PKT_DES_ACR_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810A_PKT_DES_ACR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -569,7 +569,7 @@ class T810A_ACR_DZE1: T810A_ACR_DZE {
 	original = "T810A_ACR_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810A_ACR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -625,7 +625,7 @@ class T810A_ACR_DES_DZE1: T810A_ACR_DES_DZE {
 	original = "T810A_ACR_DES_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810A_ACR_DES_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -687,7 +687,7 @@ class T810A_ACR_OPEN_DZE1: T810A_ACR_OPEN_DZE {
 	original = "T810A_ACR_OPEN_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810A_ACR_OPEN_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -736,7 +736,7 @@ class T810A_ACR_DES_OPEN_DZE1: T810A_ACR_DES_OPEN_DZE {
 	original = "T810A_ACR_DES_OPEN_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810A_ACR_DES_OPEN_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -798,7 +798,7 @@ class T810A_ACR_REFUEL_DZE1: T810A_ACR_REFUEL_DZE {
 	original = "T810A_ACR_REFUEL_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810A_ACR_REFUEL_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -843,7 +843,7 @@ class T810A_ACR_REFUEL_DES_DZE1: T810A_ACR_REFUEL_DES_DZE {
 	original = "T810A_ACR_REFUEL_DES_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810A_ACR_REFUEL_DES_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -893,7 +893,7 @@ class T810_ACR_REAMMO_DZE1 : T810_ACR_REAMMO_DZE {
 	original = "T810_ACR_REAMMO_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810_ACR_REAMMO_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -942,7 +942,7 @@ class T810_ACR_REAMMO_DES_DZE1 : T810_ACR_REAMMO_DES_DZE {
 	original = "T810_ACR_REAMMO_DES_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810_ACR_REAMMO_DES_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -996,7 +996,7 @@ class T810_ACR_REPAIR_DZE1 : T810_ACR_REPAIR_DZE {
 	original = "T810_ACR_REPAIR_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810_ACR_REPAIR_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
@@ -1045,7 +1045,7 @@ class T810_ACR_REPAIR_DES_DZE1 : T810_ACR_REPAIR_DES_DZE {
 	original = "T810_ACR_REPAIR_DES_DZE";
 	maxspeed = 120; //base 106
 	terrainCoef = 1.8;  // base 2.5
-	turnCoef = 3.0;  // base 5
+	turnCoef = 6.0;  // base 5
 	
 	class Upgrades {
 		ItemTruckAVE[] = {"T810_ACR_REPAIR_DES_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};

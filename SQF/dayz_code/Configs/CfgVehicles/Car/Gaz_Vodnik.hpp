@@ -94,7 +94,7 @@ class GAZ_Vodnik_HMG_DZE1: GAZ_Vodnik_HMG_DZE
 	displayName = "$STR_VEH_NAME_VODNIK_BPPU+";
 	original = "GAZ_Vodnik_HMG_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 3; // base 5
+	turnCoef = 7; // base 5
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -244,7 +244,7 @@ class GAZ_Vodnik_DZE1: GAZ_Vodnik_DZE
 	displayName = "$STR_VEH_NAME_VODNIK_PKT+";
 	original = "GAZ_Vodnik_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 3; // base 5
+	turnCoef = 7; // base 5
 	terrainCoef = 1; //base 2
 	
 	class Upgrades
@@ -311,7 +311,7 @@ class GAZ_Vodnik_MedEvac_DZE1: GAZ_Vodnik_MedEvac_DZE
 	displayName = "$STR_VEH_NAME_VODNIK_MEDEVAC+";
 	original = "GAZ_Vodnik_MedEvac_DZE";
 	maxSpeed = 115; // base 100
-	turnCoef = 3; // base 5
+	turnCoef = 7; // base 5
 	terrainCoef = 1; //base 2
 	
 	class Upgrades

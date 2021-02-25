@@ -172,7 +172,7 @@ class ItemLightBulbBroken: CA_Magazine
 	type = 256;
 	displayName = $STR_EPOCH_LIGHTBULB_BROKEN;
 	model = "\z\addons\dayz_epoch\models\bulb.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_bulb_CA.paa";
+	picture = "\dayz_epoch_c\icons\equipment\LightBulbBroken.paa";
 	descriptionShort = $STR_EPOCH_LIGHTBULB_BROKEN_DESC;
 };
 

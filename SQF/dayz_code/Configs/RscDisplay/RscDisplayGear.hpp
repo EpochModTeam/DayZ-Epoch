@@ -385,81 +385,139 @@ class RscDisplayGear
 				{
 					idc = 1600;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1601 : RscButtonActionMenu
 				{
 					idc = 1601;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0.025 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1602 : RscButtonActionMenu
 				{
 					idc = 1602;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0.05 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1603 : RscButtonActionMenu
 				{
 					idc = 1603;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0.075 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1604 : RscButtonActionMenu
 				{
 					idc = 1604;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0.1 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1605 : RscButtonActionMenu
 				{
 					idc = 1605;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0.125 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1606 : RscButtonActionMenu
 				{
 					idc = 1606;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0.15 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1607 : RscButtonActionMenu
 				{
 					idc = 1607;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0.175 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1608 : RscButtonActionMenu
 				{
 					idc = 1608;
 					text = "";
-					x = 0;
+					x = 0.175 * safezoneX;
 					y = 0.2 * safezoneH;
+					w = 0.25 * safezoneW;
 				};
 				
 				class RscButton_1609 : RscButtonActionMenu
 				{
 					idc = 1609;
 					text = "";
-					x = 0;
-					y = 0.225 * safezoneH;
+					x = 0.175 * safezoneX;
+					y = 0.225 * safezoneH;	
+					w = 0.25 * safezoneW;					
 				};
+				class RscButton_1610 : RscButtonActionMenu
+				{
+					idc = 1610;
+					text = "";
+					x = 0.175 * safezoneX;
+					y = 0.250 * safezoneH;	
+					w = 0.25 * safezoneW;					
+				};
+				class RscButton_1611 : RscButtonActionMenu
+				{
+					idc = 1611;
+					text = "";
+					x = 0.175 * safezoneX;
+					y = 0.275 * safezoneH;	
+					w = 0.25 * safezoneW;					
+				};	
+				class RscButton_1612 : RscButtonActionMenu
+				{
+					idc = 1612;
+					text = "";
+					x = 0.175 * safezoneX;
+					y = 0.3 * safezoneH;	
+					w = 0.25 * safezoneW;					
+				};
+				class RscButton_1613 : RscButtonActionMenu
+				{
+					idc = 1613;
+					text = "";
+					x = 0.175 * safezoneX;
+					y = 0.325 * safezoneH;	
+					w = 0.25 * safezoneW;					
+				};
+				class RscButton_1614 : RscButtonActionMenu
+				{
+					idc = 1614;
+					text = "";
+					x = 0.175 * safezoneX;
+					y = 0.350 * safezoneH;	
+					w = 0.25 * safezoneW;					
+				};
+				class RscButton_1615 : RscButtonActionMenu
+				{
+					idc = 1615;
+					text = "";
+					x = 0.175 * safezoneX;
+					y = 0.375 * safezoneH;	
+					w = 0.25 * safezoneW;					
+				};				
 			};
 		};
 		
