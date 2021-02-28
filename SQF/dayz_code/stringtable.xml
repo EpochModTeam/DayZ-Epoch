@@ -707,7 +707,7 @@
 		</Key>
 		<Key ID="str_actions_exitBlocked">
 			<English>Unable to exit vehicle, too close to buildables objects</English>
-			<Russian>Невозможно выйти из транспорта, слишком близко от постройки</Russian>
+			<Russian>Невозможно выйти из транспорта, слишком близко к постройке</Russian>
 			<German>Aussteigen nicht möglich! Bauobjekte blockieren den Weg.</German>
 		</Key>
 		<Key ID="str_actions_addammo">
@@ -2078,7 +2078,7 @@
 		<Key ID="STR_ITEM_NAME_equip_tent_poles">
 			<English>Tent Poles</English>
 			<German>Zeltstangen</German>
-			<Russian>Pаспорки</Russian>
+			<Russian>Распорки</Russian>
 			<Spanish>Varilla Metálica</Spanish>
 			<French>Perche métallique</French>
 			<Czech>Stanové tyče</Czech>
@@ -14974,7 +14974,7 @@
 		</Key>
 		<Key ID="STR_ZNAME_ASSISTANT">
 			<English>Infected Assistant</English>
-			<Russian>Инфицированный помошник</Russian>
+			<Russian>Инфицированный помощник</Russian>
 			<German>Infizierter Assistant</German>
 		</Key>
 		<Key ID="STR_ZNAME_BODYGUARD">
@@ -24632,7 +24632,7 @@
 		<Key ID="STR_EPOCH_PLAYER_239_1_2">
 			<English>Craft Locked Window</English>
 			<German>Verschlossenes Fenster herstellen</German>
-			<Russian>Создать: Закрытое окно</Russian>
+			<Russian>Создать: Окно с замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_240">
 			<English>Craft Garage Door</English>
@@ -24919,7 +24919,7 @@
 		<Key ID="STR_EPOCH_PLAYER_276">
 			<English>Craft Fire Barrel</English>
 			<German>Feuertonne herstellen</German>
-			<Russian>Создать: Бочка с костром</Russian>
+			<Russian>Создать: Бочка с дровами</Russian>
 			<Czech>Vytvořit Hořící sud</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_277">
@@ -25158,7 +25158,7 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK">
 			<English>Fuel Tank</English>
 			<German>Benzintank</German>
-			<Russian>Топливный бак (легковые)</Russian>
+			<Russian>Бензобак (легковые)</Russian>
 			<Dutch>Benzinetank</Dutch>
 			<French>Réservoir</French>
 			<Czech>Palivová nádrž</Czech>
@@ -25216,7 +25216,7 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK">
 			<English>Truck Fuel Tank</English>
 			<German>LKW-Benzintank</German>
-			<Russian>Топливный бак (грузовые)</Russian>
+			<Russian>Бензобак (грузовые)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TRUCK_DESC">
 			<English>Install guide for bigger truck fuel tanks.&lt;br/&gt;Upgrade: 4/4</English>
@@ -25266,7 +25266,7 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK_TANK">
 			<English>Tank Fuel Tank</English>
 			<German>Panzer-Benzintank</German>
-			<Russian>Топливный бак (танки)</Russian>
+			<Russian>Бензобак (танки)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_TANK_DESC">
 			<English>Install guide for bigger tank fuel tanks.&lt;br/&gt;Upgrade: 4/4</English>
@@ -25296,7 +25296,7 @@
 		<Key ID="STR_EPOCH_VEHUP_TNK_HELI">
 			<English>Helicopter Fuel Tank</English>
 			<German>Helikopter-Tank</German>
-			<Russian>Топливный бак (вертолеты)</Russian>
+			<Russian>Бензобак (вертолеты)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_VEHUP_TNK_HELI_DESC">
 			<English>Install guide for bigger helicopter fuel tanks.&lt;br/&gt;Upgrade: 3/3</English>
@@ -27527,67 +27527,67 @@
 		<Key ID="STR_EPOCH_CHAINSAW_MIXGAS_ACTION">
 			<English>Mix Chainsaw Gas</English>
 			<German>2-Takt-Benzin mischen</German>
-			<Russian>Смешать бензин</Russian>
+			<Russian>Создать: Топливо для бензопилы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_GAS">
 			<English>Gas</English>
 			<German>2-Takt-Benzin</German>
-			<Russian>Бензин</Russian>
+			<Russian>Топливо для бензопилы</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_GAS_DESC">
 			<English>Gas for Chainsaw</English>
 			<German>2-Takt-Benzin für die Kettensäge.</German>
-			<Russian>Топливо для бензопилы</Russian>
+			<Russian>Топливо для двухтактных двигателей бензопил.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN">
 			<English>Full Mixed Gas Can</English>
 			<German>Voller 2-Takt-Benzin Kanister</German>
-			<Russian>Полная канистра бензина</Russian>
+			<Russian>Топливо для бензопилы (20л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN_DESC">
 			<English>20 liters of Mixed Gas.</English>
 			<German>20 Liter 2-Takt-Benzin.</German>
-			<Russian>20 литров бензина.</Russian>
+			<Russian>20 литров смешанного топлива для бензопилы.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN">
 			<English>Mixed Gas 16L</English>
 			<German>2-Takt-Benzin 16l</German>
-			<Russian>Канистра бензина (16л)</Russian>
+			<Russian>Топливо для бензопилы (16л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN_DESC">
 			<English>16 liters of Mixed Gas.</English>
 			<German>16 Liter 2-Takt-Benzin.</German>
-			<Russian>16 литров бензина.</Russian>
+			<Russian>16 литров смешанного топлива для бензопилы.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN">
 			<English>Mixed Gas 12L</English>
 			<German>2-Takt-Benzin 12l</German>
-			<Russian>Канистра бензина (12л)</Russian>
+			<Russian>Топливо для бензопилы (12л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN_DESC">
 			<English>12 liters of Mixed Gas.</English>
 			<German>12 Liter 2-Takt-Benzin.</German>
-			<Russian>12 литров бензина.</Russian>
+			<Russian>12 литров смешанного топлива для бензопилы.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN">
 			<English>Mixed Gas 8L</English>
 			<German>2-Takt-Benzin 8l</German>
-			<Russian>Канистра бензина (8л)</Russian>
+			<Russian>Топливо для бензопилы (8л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN_DESC">
 			<English>8 liters of Mixed Gas.</English>
 			<German>8 Liter 2-Takt-Benzin.</German>
-			<Russian>8 литров бензина.</Russian>
+			<Russian>8 литров смешанного топлива для бензопилы.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN">
 			<English>Mixed Gas 4L</English>
 			<German>2-Takt-Benzin 4l</German>
-			<Russian>Канистра бензина (4л)</Russian>
+			<Russian>Топливо для бензопилы (4л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN_DESC">
 			<English>4 liters of Mixed Gas.</English>
 			<German>4 Liter 2-Takt-Benzin.</German>
-			<Russian>4 литра бензина.</Russian>
+			<Russian>4 литра смешанного топлива для бензопилы.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS_CAN_ACTION">
 			<English>Fill Chainsaw</English>
@@ -27732,7 +27732,7 @@
 		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN">
 			<English>Light Bulb (broken)</English>
 			<German>Glühbirne (kaputt)</German>
-			<Russian>Лампочка (Сломанная)</Russian>
+			<Russian>Сломанная лампочка</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LIGHTBULB_BROKEN_DESC">
 			<English>A broken lightbulb that is no longer usable.</English>
@@ -27967,12 +27967,12 @@
 		<Key ID="STR_EPOCH_EMPTYOILBARREL">
 			<English>Oil Barrel (Empty)</English>
 			<German>Leeres Ölfass</German>
-			<Russian>Бочка нефти (Пустая)</Russian>
+			<Russian>Пустая бочка нефти</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYOILBARREL_DESC">
 			<English>210 litres of oil per barrel. (Empty)</English>
 			<German>Leeres 210 Liter Ölfass.</German>
-			<Russian>210-и литровая пустая бочка нефти.</Russian>
+			<Russian>210-литровая пустая бочка нефти.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FUELBARREL">
 			<English>Fuel Barrel</English>
@@ -27992,7 +27992,7 @@
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL_DESC">
 			<English>210 litres of fuel per barrel. (Empty)</English>
 			<German>Leeres 210 Liter Kraftstofffass.</German>
-			<Russian>210-и литровая пустая бочка для топлива.</Russian>
+			<Russian>210-литровая пустая бочка для топлива.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FIREBARRELKIT">
 			<English>Fire Barrel Kit</English>
@@ -28002,12 +28002,12 @@
 		<Key ID="STR_EPOCH_FIREBARREL">
 			<English>Fire Barrel</English>
 			<German>Feuertonne</German>
-			<Russian>Бочка (Источник огня)</Russian>
+			<Russian>Бочка с дровами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FIREBARRELKIT_DESC">
 			<English>Fire Barrel</English>
 			<German>Eine brennende Feuertonne, die wesentlich länger als ein einfaches Lagerfeuer brennt.</German>
-			<Russian>Бочка, которую можно поджечь и использовать в качестве источника огня.</Russian>
+			<Russian>Бочка с дровами, которую можно поджечь и использовать в качестве источника огня.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WORKBENCH">
 			<English>Workbench</English>
@@ -29606,12 +29606,12 @@
 		<Key ID="STR_EQUIP_NAME_21_ROUND">
 			<English>Sandbag Fence (Round)</English>
 			<German>Sandsack(rund)</German>
-			<Russian>Ограждение из мешков с песком (круг)</Russian>
+			<Russian>Ограждение из мешков (круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_NEST">
 			<English>Sandbag Nest</English>
 			<German>Sandsacknest</German>
-			<Russian>Укрепление из мешков с песком</Russian>
+			<Russian>Укрепление из мешков</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_21_NEST">
 			<English>A buildable fortification object, can be removed.</English>
@@ -31701,7 +31701,7 @@
 			<Italian>Fuoco (acceso)</Italian>
 			<Hungarian>Tűz (égő)</Hungarian>
 			<Polish>Ogień</Polish>
-			<Russian>Огонь (горит)</Russian>
+			<Russian>Горящий костёр</Russian>
 			<German>Feuer (angezündet)</German>
 			<Czech>Ohniště (hořící)</Czech>
 		</Key>
@@ -32023,7 +32023,7 @@
 		<Key ID="STR_EPOCH_EMPTYMETHYLAMINEBARREL">
 			<English>Methylamine Barrel (Empty)</English>
 			<German>Leeres Methylaminfass</German>
-			<Russian>Бочка метиламина (Пустая)</Russian>
+			<Russian>Пустая бочка метиламина</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METHYLAMINEBARREL_DESC">
 			<English>210 litres of Methylamine per barrel.</English>
@@ -32935,12 +32935,12 @@
 		<Key ID="STR_EQUIP_SAW">
 			<English>Handsaw</English>
 			<German>Handsäge</German>
-			<Russian>Ручная пила</Russian>
+			<Russian>Ножовка</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SAW_BROKEN">
 			<English>Broken Handsaw</English>
 			<German>Kaputte Handsäge</German>
-			<Russian>Сломанная ручная пила</Russian>
+			<Russian>Сломанная ножовка</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SAW_DESC">
 			<English>A tool to tailor wood.</English>
@@ -32950,7 +32950,7 @@
 		<Key ID="STR_EQUIP_SAW_BROKEN_DESC">
 			<English>Broken Handsaw that must be repaired.</English>
 			<German>Eine kaputte Handsäge, welche repariert werden muss.</German>
-			<Russian>Сломанная ручная пила, которую необходимо отремонтировать.</Russian>
+			<Russian>Сломанная ножовка, которую необходимо отремонтировать.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SMARTPHONE">
 			<English>Smartphone</English>
@@ -34296,7 +34296,7 @@
 		<Key ID="STR_EPOCH_BROKEN_FUELTANK">
 			<English>Broken Fueltank Parts</English>
 			<German>Kaputte Treibstofftankteile</German>
-			<Russian>Сломанные части топливного бака</Russian>
+			<Russian>Сломанные части бензобака</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_FUELTANK_DESC">
 			<English>Broken Fueltank Parts that must be repaired.</English>
@@ -34336,7 +34336,7 @@
 		<Key ID="STR_EPOCH_BROKEN_ROTOR">
 			<English>Broken Main Rotor Assembly</English>
 			<German>Kaputtes Hauptrotorteile</German>
-			<Russian>Сломанные части ротора</Russian>
+			<Russian>Сломанный ротор</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BROKEN_ROTOR_DESC">
 			<English>Broken Main Rotor Assembly that must be repaired.</English>
