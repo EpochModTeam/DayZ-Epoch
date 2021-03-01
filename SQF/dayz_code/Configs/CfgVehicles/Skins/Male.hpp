@@ -132,6 +132,8 @@ class Survivor2_DZ : Survivor_DZ {
 	scope = 2;
 	displayName = $STR_CHAR_1;
 	model = "\dayz\characters\man_survivor";
+	hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\z\addons\dayz_epoch_u\clothes\male\Data\frost_1_co.paa"};
 };
 
 class Rocket_DZ: SoldierLight_Base_DZ { //BAF_Soldier_Officer_W
