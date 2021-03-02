@@ -1052,7 +1052,7 @@
 		<Key ID="STR_ACTIONS_BUILD">
 			<English>Build %1</English>
 			<German>%1 bauen</German>
-			<Russian>Установить %1</Russian>
+			<Russian>Установить: %1</Russian>
 			<Spanish>Construir %1</Spanish>
 			<French>Construire %1</French>
 			<Czech>Postavit %1</Czech>
@@ -1276,12 +1276,12 @@
 		<Key ID="str_fill_notenough">
 			<English>%1 does not have enough fuel to fill all containers. Estimated %2 litres left (You needed %3 litres)</English>
 			<German>%1 hat nicht genug Kraftstoff, um alle Kraftstoffbehälter zu füllen. Es sind noch ungefähr %2 Liter übrig. (Du brauchst %3 Liter)</German>
-			<Russian>%1 не имеет достаточного количества топлива для заполнения всех контейнеров. Осталось около %2л. (Вам нужно %3л)</Russian>
+			<Russian>Не достаточно топлива для заполнения всех контейнеров. Осталось около %2л. (Вам нужно %3л)</Russian>
 		</Key>
 		<Key ID="str_fill_success">
 			<English>You have filled %1 fuel container(s) with fuel. %2 has an estimated %3 litres of fuel left.</English>
 			<German>%1 Kraftstoffbehälter wurde(n) erfolgreich mit Kraftstoff befüllt. %2 hat noch ungefähr %3 Liter Kraftstoff übrig.</German>
-			<Russian>Заполнено контейнеров: %1. В %2 осталось примерно %3л топлива.</Russian>
+			<Russian>Заполнено контейнеров: %1. Осталось примерно %3л топлива.</Russian>
 		</Key>
 		<Key ID="str_siphon_canceled">
 			<English>Canceled siphon</English>
@@ -4962,7 +4962,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE">
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.&lt;br/&gt;Sex: Male</English>
-			<Russian>Маскировочный халат типа "леший". Можно распаковать и надеть.&lt;br/&gt;Пол: мужской</Russian>
+			<Russian>Маскировочный халат типа "леший". Можно распаковать и надеть.&lt;br/&gt;Пол: Мужской</Russian>
 			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.&lt;br/&gt;Género: Masculino</Spanish>
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.&lt;br/&gt;Pohlaví: Mužský</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.&lt;br/&gt;Sexe: Masculin</French>
@@ -4970,7 +4970,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_DESC_GHILLIE_FEMALE">
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.&lt;br/&gt;Sex: Female</English>
-			<Russian>Маскировочный халат типа "леший". Можно распаковать и надеть.&lt;br/&gt;Пол: женский</Russian>
+			<Russian>Маскировочный халат типа "леший". Можно распаковать и надеть.&lt;br/&gt;Пол: Женский</Russian>
 			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.&lt;br/&gt;Género: Femenino</Spanish>
 			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.&lt;br/&gt;Pohlaví: Žena</Czech>
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.&lt;br/&gt;Sexe: Féminin</French>
@@ -15246,7 +15246,7 @@
 		</Key>
 		<Key ID="STR_BLD_name_WeaponHolder_ItemConcreteBlock">
 			<English>Concrete Blocks</English>
-			<Russian>Бетонный блок</Russian>
+			<Russian>Бетонные блоки</Russian>
 			<French>Parpaing</French>
 			<Czech>Betonové bloky</Czech>
 			<German>Betonblock</German>
@@ -17148,7 +17148,7 @@
 		<Key ID="STR_DZ_WPN_M107_DESC">
 			<English>Anti-materiel sniper rifle&lt;br/&gt;Caliber: 12.7x99mm</English>
 			<German>Panzerbrechendes Scharfschützengewehr &lt;br/&gt;Kaliber: 12.7x99mm</German>
-			<Russian>Крупнокалиберная полуавтоматическая снайперская винтовка Баррет М107&lt;br/&gt;Калибр: 12.7x99мм НАТО</Russian>
+			<Russian>Крупнокалиберная снайперская винтовка Баррет М107&lt;br/&gt;Калибр: 12.7x99мм НАТО</Russian>
 		</Key>
 
 		<!-- CZ750 -->
@@ -22497,12 +22497,12 @@
 
 		<Key ID="STR_DZ_ATT_ACT_TO_PRIMARY">
 			<English>Attach to primary</English>
-			<Russian>Установить на осн.</Russian>
+			<Russian>Установить на осн. оружие</Russian>
 			<German>An Primärwaffe anbringen</German>
 		</Key>
 		<Key ID="STR_DZ_ATT_ACT_TO_SECONDARY">
 			<English>Attach to secondary</English>
-			<Russian>Установить на доп.</Russian>
+			<Russian>Установить на доп. оружие</Russian>
 			<German>An Sekundärwaffe anbringen</German>
 		</Key>
 
@@ -22993,7 +22993,7 @@
 		<Key ID="str_success_gutted_zombie">
 			<English>%1 has been gutted, zombie parts are now on the carcass.</English>
 			<German>%1 wurde ausgenommen. Du kannst das Fleisch nun aus der Leiche nehmen.</German>
-			<Russian>Вы разделали: %1.&lt;br/&gt;Куски плоти лежат на трупе.</Russian>
+			<Russian>Вы разделали: %1. Куски плоти лежат на трупе.</Russian>
 			<Spanish>%1 ha sido destripado, piezas de zombies están ahora en la carcasa.</Spanish>
 			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
 			<Czech>%1 byl zničený, zombie díly jsou nyní na kostru.</Czech>
@@ -23619,7 +23619,7 @@
 		<Key ID="STR_EPOCH_PLAYER_100">
 			<English>Preparing to stop generator, move to cancel.</English>
 			<German>Generator wird abgeschaltet, bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Подготовка к остановке генератора.&lt;br/&gt;Двигайтесь для отмены.</Russian>
+			<Russian>Подготовка к остановке генератора. Двигайтесь для отмены.</Russian>
 			<Dutch>Het uitschakellen van de generator word voorbereid, beweeg om te annuleren.</Dutch>
 			<French>Préparation de l'arrêt du générateur, déplacez vous pour annuler.</French>
 			<Czech>Příprava na vypnutí generátoru, pohněte se pro zrušení.</Czech>
@@ -23724,7 +23724,6 @@
 		<Key ID="STR_EPOCH_PLAYER_122">
 			<English>Packing %1 canceled.</English>
 			<German>Packen des %1 wurde abgebrochen.</German>
-			<!-- <Russian>Упаковывание %1 отменено.</Russian> -->
 			<Russian>Отменено.</Russian>
 			<Dutch>Het inpakken van %1 is gestopt.</Dutch>
 			<French>Emballage annulé.</French>
@@ -23733,7 +23732,6 @@
 		<Key ID="STR_EPOCH_PLAYER_123">
 			<English>Your %1 has been packed</English>
 			<German>Dein %1 wurde gepackt.</German>
-			<!-- <Russian>Ваш %1 упакован.</Russian> -->
 			<Russian>Упаковано.</Russian>
 			<Dutch>Je %1 is ingepakt.</Dutch>
 			<French>Votre %1 a été emballé(e).</French>
@@ -23801,7 +23799,7 @@
 		<Key ID="STR_EPOCH_PLAYER_139">
 			<English>Constructing %1 stage %2 of %3, move to cancel.</English>
 			<German>Konstruieren von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Строительство: %1.&lt;br/&gt;Стадия %2 / %3, двигайтесь для отмены.</Russian>
+			<Russian>Строительство: %1, стадия %2 / %3. Двигайтесь для отмены.</Russian>
 			<Dutch>Bezig met de bouw van %1 (stap %2 van %3), beweeg om te annuleren</Dutch>
 			<French>Construction de %1 (étape %2 sur %3), déplacez vous pour annuler.</French>
 			<Czech>Stavím %1 fáze %2 z %3, pohněte se pro zrušení.</Czech>
@@ -23825,7 +23823,7 @@
 		<Key ID="STR_EPOCH_PLAYER_142">
 			<English>You have downgraded %1.</English>
 			<German>Du hast %1 gedowngradet.</German>
-			<Russian>Вы понизили %1.</Russian>
+			<Russian>Понижено: %1.</Russian>
 			<Dutch>Je hebt %1 gedowngrade.</Dutch>
 			<French>Vous avez dégradé %1.</French>
 			<Czech>Downgradnuli jste %1.</Czech>
@@ -23919,7 +23917,7 @@
 		<Key ID="STR_EPOCH_PLAYER_163">
 			<English>De-constructing %1, stage %2 of %3 walk away at anytime to cancel.</English>
 			<German>Abbau von %1, Stufe %2 von %3. Bewege dich um den Vorgang abzubrechen.</German>
-			<Russian>Разборка: %1.&lt;br/&gt;Стадия %2 / %3, уходите в любое время для отмены.</Russian>
+			<Russian>Разборка: %1, стадия %2 / %3. Двигайтесь для отмены.</Russian>
 			<Dutch>Sloop van %1 bezig (%2 van %3) loop weg om te annuleren.</Dutch>
 			<Czech>Rozebírání %1, fáze %2 z %3. Kdykoliv se pohněte pro zrušení.</Czech>
 		</Key>
@@ -24075,7 +24073,7 @@
 		<Key ID="STR_EPOCH_PLAYER_189">
 			<English>Craft Ramp</English>
 			<German>Rampe herstellen</German>
-			<Russian>Создать: Наклонная плоскость</Russian>
+			<Russian>Создать: Рампа</Russian>
 			<Dutch>Maak schans</Dutch>
 			<Czech>Vytvořit Rampu</Czech>
 		</Key>
@@ -24593,7 +24591,7 @@
 		<Key ID="STR_EPOCH_PLAYER_237_1">
 			<English>Craft Wooden Gate Frame</English>
 			<German>Holztorrahmen herstellen</German>
-			<Russian>Создать: Дерев. проём ворот</Russian>
+			<Russian>Создать: Проём ворот</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_238">
 			<English>Craft Door</English>
@@ -24735,18 +24733,18 @@
 		<Key ID="STR_EPOCH_PLAYER_253">
 			<English>Craft Garage Doorway</English>
 			<German>Garagentor herstellen</German>
-			<Russian>Создать: Проём гаража</Russian>
+			<Russian>Создать: Проём гараж. двери</Russian>
 			<Czech>Vytvořit Garážový vjezd</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253_1">
 			<English>Craft Cinder Gate Frame</English>
 			<German>Betontorrahmen herstellen</German>
-			<Russian>Создать: Рама бет. ворот</Russian>
+			<Russian>Создать: Бет. стена с б/проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_253_1_1">
 			<English>Craft Cinder Garage Frame w/ no top</English>
 			<German>Betongaragendurchgang (rahmenlos) herstellen</German>
-			<Russian>Создать: Рама бет. ворот без верха</Russian>
+			<Russian>Создать: Бет. стена б/в с гар. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_254">
 			<English>Craft Plywood</English>
@@ -24828,7 +24826,7 @@
 		<Key ID="STR_EPOCH_PLAYER_266">
 			<English>Craft Silver Bar</English>
 			<German>Silberbarren herstellen</German>
-			<Russian>Создать: Серебр. слиток</Russian>
+			<Russian>Создать: Серебряный слиток</Russian>
 			<Czech>Vytvořit Stříbrnou cihlu</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_267">
@@ -26043,7 +26041,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_UNLOCK">
 			<English>Unlock %1</English>
 			<German>%1 aufschließen</German>
-			<Russian>Открыть %1</Russian>
+			<Russian>Отпереть %1</Russian>
 			<Dutch>Haal van Slot %1</Dutch>
 			<French>Déverrouiller</French>
 			<Czech>Odemknout %1</Czech>
@@ -26051,7 +26049,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_HOTWIRE">
 			<English>Hotwire %1</English>
 			<German>%1 kurzschließen</German>
-			<Russian>Угнать %1</Russian>
+			<Russian>Взломать %1</Russian>
 			<French>Démarrer avec les fils %1</French>
 			<Czech>Pokusit se Dostat do Vozidla %1</Czech>
 		</Key>
@@ -26066,7 +26064,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_LOCK">
 			<English>Lock %1</English>
 			<German>%1 abschließen</German>
-			<Russian>Закрыть %1</Russian>
+			<Russian>Запереть %1</Russian>
 			<Dutch>Zet op Slot %1</Dutch>
 			<French>Verrouiller %1</French>
 			<Czech>Zamknout %1</Czech>
@@ -27542,7 +27540,7 @@
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN">
 			<English>Full Mixed Gas Can</English>
 			<German>Voller 2-Takt-Benzin Kanister</German>
-			<Russian>Топливо для бензопилы (20л)</Russian>
+			<Russian>Топл. для бензопилы (20л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS20L_CAN_DESC">
 			<English>20 liters of Mixed Gas.</English>
@@ -27552,7 +27550,7 @@
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN">
 			<English>Mixed Gas 16L</English>
 			<German>2-Takt-Benzin 16l</German>
-			<Russian>Топливо для бензопилы (16л)</Russian>
+			<Russian>Топл. для бензопилы (16л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS16L_CAN_DESC">
 			<English>16 liters of Mixed Gas.</English>
@@ -27562,7 +27560,7 @@
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN">
 			<English>Mixed Gas 12L</English>
 			<German>2-Takt-Benzin 12l</German>
-			<Russian>Топливо для бензопилы (12л)</Russian>
+			<Russian>Топл. для бензопилы (12л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS12L_CAN_DESC">
 			<English>12 liters of Mixed Gas.</English>
@@ -27572,7 +27570,7 @@
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN">
 			<English>Mixed Gas 8L</English>
 			<German>2-Takt-Benzin 8l</German>
-			<Russian>Топливо для бензопилы (8л)</Russian>
+			<Russian>Топл. для бензопилы (8л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS8L_CAN_DESC">
 			<English>8 liters of Mixed Gas.</English>
@@ -27582,7 +27580,7 @@
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN">
 			<English>Mixed Gas 4L</English>
 			<German>2-Takt-Benzin 4l</German>
-			<Russian>Топливо для бензопилы (4л)</Russian>
+			<Russian>Топл. для бензопилы (4л)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAINSAW_MIXEDGAS4L_CAN_DESC">
 			<English>4 liters of Mixed Gas.</English>
@@ -27612,7 +27610,7 @@
 		<Key ID="STR_EPOCH_PLOTDEED_ACTION">
 			<English>Craft Plot Pole</English>
 			<German>Grundstücksmarkierung herstellen</German>
-			<Russian>Создать: Строит. столб</Russian>
+			<Russian>Создать: Строительный столб</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_PLOTDEED_DESC">
 			<English>Deed to a plot of land, similar to a plot pole.</English>
@@ -29087,81 +29085,80 @@
 			<German>Metallboden 4x</German>
 			<Russian>Металлический пол 4x</Russian>
 		</Key>
-		<!-- Russian translation of cinderblocks needs to be completely reworked -->
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF">
 			<English>Cinder Wall Half</English>
 			<German>Betonwand (Halb)</German>
-			<Russian>Стена из шлакоблоков (1/2)</Russian>
+			<Russian>Бет. стена (1/2)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_HALF_GAP">
 			<English>Cinder Wall Half w/ gap</English>
 			<German>Betonwand (Halb) mit Lücke</German>
-			<Russian>Стена из шлакоблоков (1/2) с щелью</Russian>
+			<Russian>Бет. стена (1/2) с щелью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL">
 			<English>Cinder Wall Full</English>
 			<German>Betonwand (Komplett)</German>
-			<Russian>Стена из шлакоблоков (целая)</Russian>
+			<Russian>Бет. стена</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALL_DESC">
 			<English>Half height cinder block wall.</English>
 			<German>Eine Betonwand, welche nur zur Hälfte aufgebaut wurde.</German>
-			<Russian>Половина стены из шлакоблоков.</Russian>
+			<Russian>Бетонная стена, построенная только наполовину.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FULLCINDERBLOCKWALL_DESC">
 			<English>Full height cinder block wall.</English>
 			<German>Eine komplett aufgebaute Betonwand.</German>
-			<Russian>Целая стена из шлакоблоков.</Russian>
+			<Russian>Полностью построенная бетонная стена.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW">
 			<English>Cinder Wall w/ window</English>
 			<German>Betonwand mit Fenster</German>
-			<Russian>Стена из шлакоблоков с окном</Russian>
+			<Russian>Бет. стена с окном</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_DESC">
 			<English>Cinder Wall with window that can be locked with a combination lock.</English>
 			<German>Eine Betonwand mit Fenster, welches mit einem Zahlenschloss verschlossen werden kann.</German>
-			<Russian>Стена из шлакоблоков с окном, которое можно запереть кодовым замком.</Russian>
+			<Russian>Бетонная стена с окном, которое можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED">
 			<English>Cinder Wall w/ window locked</English>
 			<German>Betonwand mit Fenster (verschlossen)</German>
-			<Russian>Стена из шлакоблоков с запертым окном</Russian>
+			<Russian>Бет. стена с окном с замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBLOCKWALLWINDOW_LOCKED_DESC">
 			<English>Cinder Wall with window and a combination lock.</English>
 			<German>Eine Betonwand mit Fenster und einem Zahlenschloss.</German>
-			<Russian>Стена из шлакоблоков с окном, запертым кодовым замком.</Russian>
+			<Russian>Бетонная стена с окном, запертым кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY">
 			<English>Cinder Doorway</English>
 			<German>Betontürrahmen</German>
-			<Russian>Дверной проём</Russian>
+			<Russian>Бет. стена с дв. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_DESC">
 			<English>Cinder block wall with metal single access door.</English>
 			<German>Ein Türdurchgang aus Beton.</German>
-			<Russian>Дверной проём в стене из шлакоблоков.</Russian>
+			<Russian>Дверной проём в бетонной стене.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR">
 			<English>Cinder Door</English>
 			<German>Betontür</German>
-			<Russian>Стена из шлакоблоков с дверью</Russian>
+			<Russian>Бет. стена с дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_DESC">
 			<English>A Cinder block wall with metal door that can be locked with a combination lock.</English>
 			<German>Eine Betontür, welche mit einem Zahlenschloss verschlossen werden kann.</German>
-			<Russian>Стена из шлакоблоков с железной дверью, которую можно запереть кодовым замком.</Russian>
+			<Russian>Бетонная стена с железной дверью, которую можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED">
 			<English>Cinder Door (locked)</English>
 			<German>Betontür (verschlossen)</German>
-			<Russian>Стена из шлакоблоков с запертой дверью</Russian>
+			<Russian>Бет. стена с дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_LOCKED_DESC">
 			<English>Cinder block door with a combination lock.</English>
 			<German>Eine Betontür mit einem Zahlenschloss.</German>
-			<Russian>Стена из шлакоблоков с дверью, запертой кодовым замком.</Russian>
+			<Russian>Бетонная стена с железной дверью, запертой кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKER">
 			<English>Concrete Bunker</English>
@@ -29171,135 +29168,157 @@
 		<Key ID="STR_EPOCH_CINDERBUNKER_DESC">
 			<English>A concrete bunker with metal door that can be locked with a combination lock.</English>
 			<German>Ein Betonbunker, welcher mit einem Zahlenschloss verschlossen werden kann.</German>
-			<Russian>Бетонный бункер с железной дверью, которую можно запереть кодовым замком.</Russian>
+			<Russian>Бетонный бункер с железными ставнями на окнах, которые можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKERLOCKED">
 			<English>Concrete Bunker (locked)</English>
 			<German>Betonbunker (verschlossen)</German>
-			<Russian>Бетонный бункер (запертый)</Russian>
+			<Russian>Бетонный бункер с замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERBUNKER_LOCKED_DESC">
 			<English>Concrete bunker with a combination lock.</English>
 			<German>Ein Betonbunker mit einem Zahlenschloss.</German>
-			<Russian>Бетонный бункер с запертой дверью.</Russian>
+			<Russian>Бетонный бункер с запираемыми железными ставнями на окнах.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH">
 			<English>Cinder Door w/ Hatch</English>
 			<German>Betontür mit Luke</German>
-			<Russian>Стена из шлакоблоков с люком</Russian>
+			<Russian>Бет. стена с дв. с люком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOOR_HATCH_DESC">
 			<English>A cinder block wall with a hatch and a metal door that can be locked with a combination lock.</English>
 			<German>Eine Betontür mit Luke, welche mit einem Zahlenschloss verschlossen werden kann.</German>
-			<Russian>Стена из шлакоблоков с люком и железной дверью, которую можно запереть кодовым замком.</Russian>
+			<Russian>Бетонная стена с железной дверью и смотровым окном, которую можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORLOCKED_HATCH">
 			<English>Cinder Door w/ Hatch (locked)</English>
 			<German>Betontür mit Luke (verschlossen)</German>
-			<Russian>Стена из шлакоблоков с люком и дверью (запертый)</Russian>
+			<Russian>Бет. стена с дв., люком, замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKDOORWAY_HATCH_LOCKED_DESC">
 			<English>Cinder block door with a hatch and a combination lock.</English>
 			<German>Eine Betontür mit einer Luke und einem Zahlenschloss.</German>
-			<Russian>Стена из шлакоблоков с люком и дверью, запертой кодовым замком.</Russian>
+			<Russian>Бетонная стена с железной дверью и смотровым окном, запертой кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY">
 			<English>Cinder Garage Doorway</English>
 			<German>Betongaragentürrahmen</German>
-			<Russian>Дверной проём (гаражный)</Russian>
+			<Russian>Бет. стена с гар. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_DESC">
 			<English>Cinder block wall with metal garage doorway.</English>
 			<German>Ein Garagentürrahmen aus Beton.</German>
-			<Russian>Гаражный дверной проём в стене из шлакоблоков.</Russian>
+			<Russian>Бетонная стена с гаражным дверным проёмом.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOOR">
 			<English>Cinder Garage Door</English>
 			<German>Betongaragentür</German>
+			<Russian>Бет. стена с гар. дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOOR_DESC">
 			<English>Cinder garage door constructed out of cinder.</English>
 			<German>Eine Betongaragentür bestehend aus Beton.</German>
+			<Russian>Бетонная стена с железной гаражной дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORLOCKED">
 			<English>Cinder Garage Door (locked)</English>
 			<German>Betongaragentür (verschlossen)</German>
+			<Russian>Бет. стена с гар. дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOCKGARAGEDOORWAY_LOCKED_DESC">
 			<English>Cinder block wall with locked metal garage doorway.</English>
 			<German>Eine Betongaragentür mit einem Zahlenschloss.</German>
+			<Russian>Бетонная стена с железной гаражной дверью, запертой кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEFRAME">
 			<English>Cinder Garage Frame w/ no top</English>
 			<German>Betongaragentürdurchgang (rahmenlos)</German>
+			<Russian>Бет. стена б/в с гар. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEFRAME_DESC">
 			<English>Cinder garage frame constructed out of cinder.</English>
 			<German>Ein Betongaragentürdurchgang bestehend aus Beton.</German>
+			<Russian>Бетонная стена с открытым верхом и гаражным дверным проёмом.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOOR">
 			<English>Cinder Garage Door w/ no top</English>
 			<German>Betongaragentür (rahmenlos)</German>
+			<Russian>Бет. стена б/в с гар. дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOOR_DESC">
 			<English>Cinder garage door constructed out of cinder.</English>
 			<German>Eine Betongaragentür bestehend aus Beton.</German>
+			<Russian>Бетонная стена с открытым верхом и железной гаражной дверью.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED">
 			<English>Cinder Garage Door Locked w/ no top</English>
 			<German>Betongaragentür (verschlossen, rahmenlos)</German>
+			<Russian>Бет. стена б/в с гар. дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDEROPENTOPGARAGEDOORLOCKED_DESC">
 			<English>Cinder garage door with combination lock.</English>
 			<German>Eine Betongaragentür mit Zahlenschloss.</German>
+			<Russian>Бетонная стена с открытым верхом и железной гаражной дверью, запертой кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATEFRAME">
 			<English>Cinder Gate Frame</English>
 			<German>Betontorrahmen</German>
+			<Russian>Бет. стена с б/проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATEFRAME_DESC">
 			<English>Cinder Gate Frame constructed out of cinder.</English>
 			<German>Ein Betontorrahmen bestehend aus Beton.</German>
+			<Russian>Бетонная стена с проёмом для больших гаражных ворот.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATE">
 			<English>Cinder Gate</English>
 			<German>Betontor</German>
+			<Russian>Бет. стена с воротами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATE_DESC">
 			<English>Cinder Gate constructed out cinder.</English>
 			<German>Ein Betontor bestehend aus Beton.</German>
+			<Russian>Бетонная стена с большими гаражными воротами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATELOCKED">
 			<English>Cinder Gate Locked</English>
 			<German>Betontor (verschlossen)</German>
+			<Russian>Бет. стена с воротами и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CINDERGATELOCKED_DESC">
 			<English>Cinder Gate with combination lock.</English>
 			<German>Ein Betontor mit Zahlenschloss.</German>
+			<Russian>Бетонная стена с большими гаражными воротами, запертыми кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGE">
 			<English>Metal Drawbridge</English>
 			<German>Stahlzugbrücke</German>
+			<Russian>Подъёмный мост</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGE_DESC">
 			<English>Metal Drawbridge constructed out of metal and fire.</English>
 			<German>Eine Stahlzugbrücke bestehend aus Stahl und Feuer.</German>
+			<Russian>Железный подъёмный мост, который можно запереть кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED">
 			<English>Metal Drawbridge Locked</English>
 			<German>Stahlzugbrücke (verschlossen)</German>
+			<Russian>Подъёмный мост с замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALDRAWBRIDGELOCKED_DESC">
 			<English>Metal Drawbridge with combination lock.</English>
 			<German>Eine Stahlzugbrücke mit einem Zahlenschloss.</German>
+			<Russian>Железный подъёмный мост, запертый кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALPILLAR">
 			<English>Metal Pillar</English>
 			<German>Metallsäule</German>
+			<Russian>Металлический столб</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METALPILLAR_DESC">
 			<English>Metal Pillar constructed out of metal.</English>
 			<German>Eine Metallsäule bestehend aus Stahl.</German>
+			<Russian>Металлический столб.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOORWAY">
 			<English>Doorway</English>
@@ -29309,25 +29328,27 @@
 		<Key ID="STR_EPOCH_DOORWAY_DESC">
 			<English>Doorway with metal single access door.</English>
 			<German>Ein Türdurchgang aus Metall.</German>
-			<Russian>Дверной проём в стене.</Russian>
+			<Russian>Дверной проём.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOOR">
 			<English>Door</English>
 			<German>Tür</German>
-			<Russian>Дверь</Russian>
+			<Russian>Железная дверь</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOOR_DESC">
 			<English>Single door out of metal.</English>
 			<German>Eine einfache Tür aus Metall.</German>
+			<Russian>Железная дверь.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOORLOCKED">
 			<English>Door (locked)</English>
 			<German>Tür (verschlossen)</German>
-			<Russian>Дверь (запертая)</Russian>
+			<Russian>Железная дверь с замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_DOOR_LOCKED_DESC">
 			<English>Single door out of metal with a combination lock.</English>
 			<German>Eine einfache Tür aus Metall mit einem Zahlenschloss.</German>
+			<Russian>Железная дверь, запертая кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_FLOORCEILING">
 			<English>Floor/Ceiling</English>
@@ -29357,12 +29378,12 @@
 		<Key ID="STR_EPOCH_WOODSTAIRS">
 			<English>Wooden Stairs</English>
 			<German>Holztreppe</German>
-			<Russian>Деревянные ступеньки</Russian>
+			<Russian>Дер. ступеньки</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRSWITHSUPPORTS">
 			<English>Wooden Stairs w/ supports</English>
 			<German>Holztreppe (verstärkt)</German>
-			<Russian>Деревянные ступеньки с опорами</Russian>
+			<Russian>Дер. ступеньки с опорами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODSTAIRSWITHSUPPORTS_DESC">
 			<English>Wooden stairs with supports.</English>
@@ -29372,12 +29393,12 @@
 		<Key ID="STR_EPOCH_WOODSTAIRSRAILS">
 			<English>Wood Stairs Rail</English>
 			<German>Holztreppe mit Geländer</German>
-			<Russian>Деревянные ступеньки с перилами.</Russian>
+			<Russian>Дер. ступеньки с перилами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS">
 			<English>Wood Floor w/ stairs</English>
 			<German>Holzboden mit Treppe</German>
-			<Russian>Деревянный пол с лестницей</Russian>
+			<Russian>Дер. пол с лестницей</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS_DESC">
 			<English>Wooden floor with stairs constructed out of plywood and lumber.</English>
@@ -29387,12 +29408,12 @@
 		<Key ID="STR_EPOCH_WOODLADDER">
 			<English>Wooden Ladder</English>
 			<German>Holzleiter</German>
-			<Russian>Деревянная лестница</Russian>
+			<Russian>Дер. лестница</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAIL">
 			<English>Wood Handrail</English>
 			<German>Holzgeländer</German>
-			<Russian>Деревянный поручень</Russian>
+			<Russian>Дер. поручень</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODRAIL_DESC">
 			<English>Wood Handrail constructed out of lumber.</English>
@@ -29402,7 +29423,7 @@
 		<Key ID="STR_EPOCH_WOODPILLAR">
 			<English>Wood Pillar</English>
 			<German>Holzsäule</German>
-			<Russian>Деревянная опора</Russian>
+			<Russian>Дер. опора</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODPILLAR_DESC">
 			<English>Wood Pillar constructed out of lumber.</English>
@@ -29432,7 +29453,7 @@
 		<Key ID="STR_EPOCH_WOODWALL">
 			<English>Wooden Wall</English>
 			<German>Holzwand</German>
-			<Russian>Деревянная стена</Russian>
+			<Russian>Дер. стена</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALL_DESC">
 			<English>Wall constructed out of plywood and lumber.</English>
@@ -29442,7 +29463,7 @@
 		<Key ID="STR_EPOCH_WOODWALLTHIRDPART">
 			<English>Wooden Wall 1/3</English>
 			<German>Holzwand (1/3)</German>
-			<Russian>Деревянная стена (1/3)</Russian>
+			<Russian>Дер. стена (1/3)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODWALLTHIRDPART_DESC">
 			<English>Third wall constructed out of plywood and lumber.</English>
@@ -29452,7 +29473,7 @@
 		<Key ID="STR_EPOCH_WALLWITHWINDOW">
 			<English>Wall w/ Window</English>
 			<German>Holzwand (Fenster)</German>
-			<Russian>Деревянная стена с окном</Russian>
+			<Russian>Дер. стена с окном</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHWINDOW_DESC">
 			<English>Wall with window constructed out of plywood and lumber.</English>
@@ -29462,7 +29483,7 @@
 		<Key ID="STR_EPOCH_WALLWITHDOORWAY">
 			<English>Wall w/ Doorway</English>
 			<German>Holzwand (Türrahmen)</German>
-			<Russian>Деревянная стена с дверным проёмом</Russian>
+			<Russian>Дер. стена с дв. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORWAY_DESC">
 			<English>Wall with doorway constructed out of plywood and lumber.</English>
@@ -29472,17 +29493,17 @@
 		<Key ID="STR_EPOCH_WALLWITHDOOR">
 			<English>Wall w/ Door</English>
 			<German>Holzwand (Tür)</German>
-			<Russian>Деревянная стена с дверью</Russian>
+			<Russian>Дер. стена с дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED">
 			<English>Wall w/ Door Locked</English>
 			<German>Holzwand (Tür verschlossen)</German>
-			<Russian>Деревянная стена с запертой дверью</Russian>
+			<Russian>Дер. стена с дв. с замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOORLOCKED_DESC">
 			<English>Wall with locked door constructed out of plywood and lumber.</English>
 			<German>Eine Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Стена с запертой дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Стена с запираемой дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WALLWITHDOOR_DESC">
 			<English>Wall with door constructed out of plywood and lumber.</English>
@@ -29492,7 +29513,7 @@
 		<Key ID="STR_EPOCH_WOODGARAGEDOOR">
 			<English>Wooden Garage Door</English>
 			<German>Holzgaragentür</German>
-			<Russian>Деревянная стена с гаражной дверью</Russian>
+			<Russian>Дер. стена с гар. дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOOR_DESC">
 			<English>Garage door constructed out of plywood and lumber.</English>
@@ -29502,56 +29523,62 @@
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED">
 			<English>Wooden Garage Door Locked</English>
 			<German>Holzgaragentür (verschlossen)</German>
-			<Russian>Деревянная стена с запертой гаражной дверью</Russian>
+			<Russian>Дер. стена с гар. дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGARAGEDOORLOCKED_DESC">
 			<English>Garage door with combination lock.</English>
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
-			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с запираемой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR">
 			<English>Wood Garage Door w/ no top</English>
 			<German>Holzgaragentür (rahmenlos)</German>
-			<Russian>Деревянная стена с гаражной дверью без верха</Russian>
+			<Russian>Дер. стена б/в с гар. дверью</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOOR_DESC">
 			<English>Garage door constructed out of plywood and lumber.</English>
 			<German>Eine Holzgaragentür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Деревянная стена с гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с открытым верхом и гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED">
 			<English>Wood Garage Door Locked w/ no top</English>
 			<German>Holzgaragentür (verschlossen, rahmenlos)</German>
-			<Russian>Деревянная стена с запертой гаражной дверью без верха</Russian>
+			<Russian>Дер. стена б/в с гар. дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED_DESC">
 			<English>Garage door with combination lock.</English>
 			<German>Eine Holzgaragentür mit Zahlenschloss.</German>
-			<Russian>Деревянная стена с запертой гаражной дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Деревянная стена с открытым верхом и гаражной дверью, запертой кодовым замком, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATEFRAME">
 			<English>Wooden Gate Frame</English>
 			<German>Holztorrahmen</German>
+			<Russian>Дер. стена с б/проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATEFRAME_DESC">
 			<English>Wooden Gate Frame constructed out of plywood and lumber.</English>
 			<German>Ein Holztorrahmen bestehend aus Sperr- und Bauholz.</German>
+			<Russian>Деревянная стена с проёмом для больших гаражных ворот.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATE">
 			<English>Wooden Gate</English>
 			<German>Holztor</German>
+			<Russian>Дер. стена с воротами</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATE_DESC">
 			<English>Wooden Gate constructed out of plywood and lumber.</English>
 			<German>Ein Holztor bestehend aus Sperr- und Bauholz.</German>
+			<Russian>Деревянная стена с большими гаражными воротами.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATELOCKED">
 			<English>Wooden Gate Locked</English>
 			<German>Holztor (verschlossen)</German>
+			<Russian>Дер. стена с воротами и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WOODGATELOCKED_DESC">
 			<English>Wooden Gate with combination lock.</English>
 			<German>Ein Holztor mit Zahlenschloss.</German>
+			<Russian>Деревянная стена с большими гаражными воротами, запертыми кодовым замком.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWOODWALL">
 			<English>Large Wooden Wall</English>
@@ -29576,7 +29603,7 @@
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORWAY">
 			<English>Large Wall w/ Doorway</English>
 			<German>Große Holzwand (Türrahmen)</German>
-			<Russian>Большая стена с дверным проёмом</Russian>
+			<Russian>Большая стена с дв. проёмом</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORWAY_DESC">
 			<English>Large wall with doorway constructed out of plywood and lumber.</English>
@@ -29596,12 +29623,12 @@
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED">
 			<English>Large Wall w/ Door Locked</English>
 			<German>Große Holzwand (Tür verschlossen)</German>
-			<Russian>Большая стена с закрытой дверью</Russian>
+			<Russian>Большая стена с дв. и замком</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_LARGEWALLWITHDOORLOCKED_DESC">
 			<English>Wall with combination lock door constructed out of plywood and lumber.</English>
 			<German>Eine große Holzwand mit verschlossener Tür bestehend aus Sperr- und Bauholz.</German>
-			<Russian>Большая стена с закрытой дверью, изготовленная из фанеры и пиломатериалов.</Russian>
+			<Russian>Большая стена с дверью и кодовым замком, изготовленная из фанеры и пиломатериалов.</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_ROUND">
 			<English>Sandbag Fence (Round)</English>
@@ -29920,12 +29947,12 @@
 		<Key ID="STR_EPOCH_SKINS_POLICE_DESC">
 			<English>Police Officer Uniform&lt;br/&gt;Sex: Male</English>
 			<German>Polizeiuniform&lt;br/&gt;Geschlecht: Männlich</German>
-			<Russian>Униформа офицера полиции&lt;br/&gt;Пол: мужской</Russian>
+			<Russian>Униформа офицера полиции&lt;br/&gt;Пол: Мужской</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_FEMALE_DESC">
 			<English>Police Officer Uniform&lt;br/&gt;Sex: Female</English>
 			<German>Polizeiuniform&lt;br/&gt;Geschlecht: Weiblich</German>
-			<Russian>Униформа офицера полиции&lt;br/&gt;Пол: женский</Russian>
+			<Russian>Униформа офицера полиции&lt;br/&gt;Пол: Женский</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_POLICE_OFFICER2">
 			<English>Police Officer 2</English>
@@ -30355,7 +30382,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CREWMAN">
 			<English>Crewman</English>
-			<Russian>Член экипажа</Russian>
+			<Russian>Механик</Russian>
 			<German>Besatzungsmitglied</German>
 			<Italian>Membro equipaggio</Italian>
 			<Spanish>Miembro de la tripulación</Spanish>
@@ -30414,7 +30441,7 @@
 		<Key ID="STR_EPOCH_SKINS_CAMOTEAMLEADER">
 			<English>Camo Teamleader</English>
 			<German>Tarn Anführer</German>
-			<Russian>Камуфляж (Лидер группы)</Russian>
+			<Russian>Камуфляж (Командир)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMORECON">
 			<English>Camo Recon</English>
@@ -30424,36 +30451,36 @@
 		<Key ID="STR_EPOCH_SKINS_CAMOMARKSMAN">
 			<English>Camo Marksman</English>
 			<German>Tarn Scharfschütze</German>
-			<Russian>Камуфляж (Меткий стрелок)</Russian>
+			<Russian>Камуфляж (Снайпер)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOASSAULT">
 			<English>Camo Assault</English>
 			<German>Tarn Angriff</German>
-			<Russian>Камуфляж (Штурмовик)</Russian>
+			<Russian>Камуфляж (Стрелок)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUSOLDIER">
 			<English>RU Soldier</English>
-			<Russian>Камуфляж Солдата РФ</Russian>
+			<Russian>ВС РФ, Солдат</Russian>
 			<German>RU Soldat</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUOFFICER">
 			<English>RU Officer</English>
-			<Russian>Камуфляж Офицера РФ</Russian>
+			<Russian>ВС РФ, Офицер</Russian>
 			<German>RU Offizier</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCAMO">
 			<English>RU Camo</English>
-			<Russian>Камуфляж РФ</Russian>
+			<Russian>ВС РФ, Разведчик</Russian>
 			<German>RU Tarn</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_RUCOMMANDER">
 			<English>RU Commander</English>
-			<Russian>Командующий РФ</Russian>
+			<Russian>ВС РФ, Начальник</Russian>
 			<German>RU Kommandant</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_MVDSOLDIER">
 			<English>MVD Soldier</English>
-			<Russian>Камуфляж МВД</Russian>
+			<Russian>МВД, Солдат</Russian>
 			<German>MVD Soldat</German>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TERRORISTCAMO">
@@ -30469,7 +30496,7 @@
 		<Key ID="STR_EPOCH_SKINS_INSCREWMAN">
 			<English>Ins Crewman</English>
 			<German>Ins Besatzungsmitglied</German>
-			<Russian>Член экипажа Повстанцев</Russian>
+			<Russian>Механик Повстанцев</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CDFSOLDIER">
 			<English>CDF Soldier</English>
@@ -30593,7 +30620,7 @@
 		<Key ID="STR_EPOCH_SKINS_GERRECON">
 			<English>GER Recon</English>
 			<German>GER Aufklärer</German>
-			<Russian>Германский разведчик</Russian>
+			<Russian>Немецкий разведчик</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_BAFOFFICER">
 			<English>BAF Officer</English>
@@ -30643,19 +30670,22 @@
 		<Key ID="STR_EPOCH_SKINS_SNIPER1W">
 			<English>Winter Ghillie Suit</English>
 			<German>Winter-Ghillie Anzug</German>
-			<Russian>Зимний маскировочный костюм</Russian>
+			<Russian>Маскхалат (Зима)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_NACSOLDIER">
 			<English>NAC Soldier</English>
 			<German>NAC-Soldat</German>
+			<Russian>Солдат NAC</Russian>
 		</Key>
 	    <Key ID="STR_DZE_EQUIP_NACSOLDIER_DESC">
 			<English>NAC Soldier suit&lt;br/&gt;Sex: Male</English>
 			<German>NAC-Soldatenanzug&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Солдат NAC.&lt;br/&gt;Пол: Мужской</Russian>
 		</Key>
 	    <Key ID="STR_DZE_EQUIP_NACSOLDIER_FEMALE_DESC">
 			<English>NAC Soldier suit&lt;br/&gt;Sex: Female</English>
 			<German>NAC-Soldatenanzug&lt;br/&gt;Geschlecht: Weiblich</German>
+			<Russian>Солдат NAC.&lt;br/&gt;Пол: Женский</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_TAMIKA">
 			<English>Tamika</English>
@@ -30843,404 +30873,467 @@
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_1_NAME">
 		 	<English>Ghillie Suit (Desert 1)</English>
 		 	<German>Ghillie-Anzug (Wüste 1)</German>
-			<Russian>Маскировочный костюм (Пустыня 1)</Russian>
+			<Russian>Маскхалат (Пустыня 1)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_2_NAME">
 		 	<English>Ghillie Suit (Desert 2)</English>
 		 	<German>Ghillie-Anzug (Wüste 2)</German>
-			<Russian>Маскировочный костюм (Пустыня 2)</Russian>
+			<Russian>Маскхалат (Пустыня 2)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_3_NAME">
 		 	<English>Ghillie Suit (Desert 3)</English>
 		 	<German>Ghillie-Anzug (Wüste 3)</German>
-			<Russian>Маскировочный костюм (Пустыня 3)</Russian>
+			<Russian>Маскхалат (Пустыня 3)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_4_NAME">
 		 	<English>Ghillie Suit (Desert 4)</English>
 		 	<German>Ghillie-Anzug (Wüste 4)</German>
-			<Russian>Маскировочный костюм (Пустыня 4)</Russian>
+			<Russian>Маскхалат (Пустыня 4)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_5_NAME">
 		 	<English>Ghillie Suit (Desert 5)</English>
 		 	<German>Ghillie-Anzug (Wüste 5)</German>
-			<Russian>Маскировочный костюм (Пустыня 5)</Russian>
+			<Russian>Маскхалат (Пустыня 5)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_6_NAME">
 		 	<English>Ghillie Suit (Desert 6)</English>
 		 	<German>Ghillie-Anzug (Wüste 6)</German>
-			<Russian>Маскировочный костюм (Пустыня 6)</Russian>
+			<Russian>Маскхалат (Пустыня 6)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_7_NAME">
 		 	<English>Ghillie Suit (Desert 7)</English>
 		 	<German>Ghillie-Anzug (Wüste 7)</German>
-			<Russian>Маскировочный костюм (Пустыня 7)</Russian>
+			<Russian>Маскхалат (Пустыня 7)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_DES_8_NAME">
 		 	<English>Ghillie Suit (Desert 8)</English>
 		 	<German>Ghillie-Anzug (Wüste 8)</German>
-			<Russian>Маскировочный костюм (Пустыня 8)</Russian>
+			<Russian>Маскхалат (Пустыня 8)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_1_NAME">
 		 	<English>Ghillie Suit (Snow 1)</English>
 		 	<German>Ghillie-Anzug (Schnee 1)</German>
-			<Russian>Маскировочный костюм (Снег 1)</Russian>
+			<Russian>Маскхалат (Снег 1)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_2_NAME">
 		 	<English>Ghillie Suit (Snow 2)</English>
 		 	<German>Ghillie-Anzug (Schnee 2)</German>
-			<Russian>Маскировочный костюм (Снег 2)</Russian>
+			<Russian>Маскхалат (Снег 2)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_3_NAME">
 		 	<English>Ghillie Suit (Snow 3)</English>
 		 	<German>Ghillie-Anzug (Schnee 3)</German>
-			<Russian>Маскировочный костюм (Снег 3)</Russian>
+			<Russian>Маскхалат (Снег 3)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_4_NAME">
 		 	<English>Ghillie Suit (Snow 4)</English>
 		 	<German>Ghillie-Anzug (Schnee 4)</German>
-			<Russian>Маскировочный костюм (Снег 4)</Russian>
+			<Russian>Маскхалат (Снег 4)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_SNOW_5_NAME">
 		 	<English>Ghillie Suit (Snow 5)</English>
 		 	<German>Ghillie-Anzug (Schnee 5)</German>
-			<Russian>Маскировочный костюм (Снег 5)</Russian>
+			<Russian>Маскхалат (Снег 5)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_URB_1_NAME">
 		 	<English>Ghillie Suit (Urban 1)</English>
 		 	<German>Ghillie-Anzug (Urban 1)</German>
-			<Russian>Маскировочный костюм (Город 1)</Russian>
+			<Russian>Маскхалат (Город 1)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_1_NAME">
 		 	<English>Ghillie Suit (Wood 1)</English>
 		 	<German>Ghillie-Anzug (Wald 1)</German>
-			<Russian>Маскировочный костюм (Лес 1)</Russian>
+			<Russian>Маскхалат (Лес 1)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_2_NAME">
 		 	<English>Ghillie Suit (Wood 2)</English>
 		 	<German>Ghillie-Anzug (Wald 2)</German>
-			<Russian>Маскировочный костюм (Лес 2)</Russian>
+			<Russian>Маскхалат (Лес 2)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_3_NAME">
 		 	<English>Ghillie Suit (Wood 3)</English>
 		 	<German>Ghillie-Anzug (Wald 3)</German>
-			<Russian>Маскировочный костюм (Лес 3)</Russian>
+			<Russian>Маскхалат (Лес 3)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_4_NAME">
 		 	<English>Ghillie Suit (Wood 4)</English>
 		 	<German>Ghillie-Anzug (Wald 4)</German>
-			<Russian>Маскировочный костюм (Лес 4)</Russian>
+			<Russian>Маскхалат (Лес 4)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_5_NAME">
 		 	<English>Ghillie Suit (Wood 5)</English>
 		 	<German>Ghillie-Anzug (Wald 5)</German>
-			<Russian>Маскировочный костюм (Лес 5)</Russian>
+			<Russian>Маскхалат (Лес 5)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_6_NAME">
 		 	<English>Ghillie Suit (Wood 6)</English>
 		 	<German>Ghillie-Anzug (Wald 6)</German>
-			<Russian>Маскировочный костюм (Лес 6)</Russian>
+			<Russian>Маскхалат (Лес 6)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_7_NAME">
 		 	<English>Ghillie Suit (Wood 7)</English>
 		 	<German>Ghillie-Anzug (Wald 7)</German>
-			<Russian>Маскировочный костюм (Лес 7)</Russian>
+			<Russian>Маскхалат (Лес 7)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_8_NAME">
 		 	<English>Ghillie Suit (Wood 8)</English>
 		 	<German>Ghillie-Anzug (Wald 8)</German>
-			<Russian>Маскировочный костюм (Лес 8)</Russian>
+			<Russian>Маскхалат (Лес 8)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_9_NAME">
 		 	<English>Ghillie Suit (Wood 9)</English>
 		 	<German>Ghillie-Anzug (Wald 9)</German>
-			<Russian>Маскировочный костюм (Лес 9)</Russian>
+			<Russian>Маскхалат (Лес 9)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_10_NAME">
 		 	<English>Ghillie Suit (Wood 10)</English>
 		 	<German>Ghillie-Anzug (Wald 10)</German>
-			<Russian>Маскировочный костюм (Лес 10)</Russian>
+			<Russian>Маскхалат (Лес 10)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_11_NAME">
 		 	<English>Ghillie Suit (Wood 11)</English>
 		 	<German>Ghillie-Anzug (Wald 11)</German>
-			<Russian>Маскировочный костюм (Лес 11)</Russian>
+			<Russian>Маскхалат (Лес 11)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_12_NAME">
 		 	<English>Ghillie Suit (Wood 12)</English>
 		 	<German>Ghillie-Anzug (Wald 12)</German>
-			<Russian>Маскировочный костюм (Лес 12)</Russian>
+			<Russian>Маскхалат (Лес 12)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_13_NAME">
 		 	<English>Ghillie Suit (Wood 13)</English>
 		 	<German>Ghillie-Anzug (Wald 13)</German>
-			<Russian>Маскировочный костюм (Лес 13)</Russian>
+			<Russian>Маскхалат (Лес 13)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_14_NAME">
 		 	<English>Ghillie Suit (Wood 14)</English>
 		 	<German>Ghillie-Anzug (Wald 14)</German>
-			<Russian>Маскировочный костюм (Лес 14)</Russian>
+			<Russian>Маскхалат (Лес 14)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_15_NAME">
 		 	<English>Ghillie Suit (Wood 15)</English>
 		 	<German>Ghillie-Anzug (Wald 15)</German>
-			<Russian>Маскировочный костюм (Лес 15)</Russian>
+			<Russian>Маскхалат (Лес 15)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GHILLIE_WDL_16_NAME">
 		 	<English>Ghillie Suit (Wood 16)</English>
 		 	<German>Ghillie-Anzug (Wald 16)</German>
-			<Russian>Маскировочный костюм (Лес 16)</Russian>
+			<Russian>Маскхалат (Лес 16)</Russian>
 		 </Key>
 		<Key ID="STR_DZE_SKIN_GHILLIE_DES_NAME">
 			<English>Sniper (Desert)</English>
 			<German>Scharfschütze (Wüste)</German>
+			<Russian>Снайпер (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_GHILLIE_SNOW_NAME">
 			<English>Sniper (Snow)</English>
 			<German>Scharfschütze (Schnee)</German>
+			<Russian>Снайпер (Снег)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_GHILLIE_URB_NAME">
 			<English>Sniper (Urban)</English>
 			<German>Scharfschütze (Urban)</German>
+			<Russian>Снайпер (Город)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_GHILLIE_WDL_NAME">
 			<English>Sniper (Woodland)</English>
 			<German>Scharfschütze (Wald)</German>
+			<Russian>Снайпер (Лес)</Russian>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_NAME">
 		 	<English>German Rifleman (Desert)</English>
 		 	<German>Dt. Schütze (Wüstentarn)</German>
+			<Russian>Немецкий стрелок (Пустыня)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_DES_DESC">
 		 	<English>German Rifleman (Desert)</English>
 		 	<German>Dt. Schütze (Wüstentarn)</German>
+			<Russian>Форма солдата ВС ФРГ в пустынной расцветке.</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_NAME">
 		 	<English>German Teamleader (Desert)</English>
 		 	<German>Dt. Truppführer (Wüstentarn)</German>
+			<Russian>Немецкий командир (Пустыня)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GER_TL_DES_DESC">
 		 	<English>German Teamleader (Desert)</English>
 		 	<German>Dt. Truppführer (Wüstentarn)</German>
+			<Russian>Форма командира ВС ФРГ в пустынной расцветке.</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_NAME">
 		 	<English>German Rifleman (woodland)</English>
 		 	<German>Dt. Schütze (Waldtarn)</German>
+			<Russian>Немецкий стрелок (Лес)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GER_SOLDIER_WDL_DESC">
 		 	<English>German Rifleman (woodland)</English>
 		 	<German>Dt. Schütze (Waldtarn)</German>
+			<Russian>Форма солдата ВС ФРГ в лесной расцветке.</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_NAME">
 		 	<English>German Teamleader (woodland)</English>
 		 	<German>Dt. Truppführer (Waldtarn)</German>
+			<Russian>Немецкий командир (Лес)</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_GER_TL_WDL_DESC">
 		 	<English>German Teamleader (woodland)</English>
 		 	<German>Dt. Truppführer (Waldtarn)</German>
+			<Russian>Форма командира ВС ФРГ в лесной расцветке.</Russian>
 		 </Key>
 		<Key ID="STR_DZE_SKIN_KSK_DES_RIFLEMAN_NAME">
 			<English>GER Rifleman (desert)</English>
 			<German>Dt. Schütze (Wüstentarn)</German>
+			<Russian>Немецкий стрелок (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_KSK_DES_TL_NAME">
 			<English>GER Teamleader (desert)</English>
 			<German>Dt. Truppführer (Wüstentarn)</German>
+			<Russian>Немецкий командир (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_KSK_WDL_RIFLEMAN_NAME">
 			<English>GER Rifleman (woodland)</English>
 			<German>Dt. Schütze (Waldtarn)</German>
+			<Russian>Немецкий стрелок (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_KSK_WDL_TL_NAME">
 			<English>GER Teamleader (woodland)</English>
 			<German>Dt. Truppführer (Waldtarn)</German>
+			<Russian>Немецкий командир (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_ICE_APO_RIFLEMAN_NAME">
 			<English>Apocalyptic Rifleman</English>
 			<German>Apokalyptischer Schütze</German>
+			<Russian>Солдат апокалипсиса</Russian>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_1_NAME">
 		 	<English>Apo. Rifleman 1</English>
 		 	<German>Apo. Schütze 1</German>
+			<Russian>Солдат апокалипсиса 1</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_DESC">
 		 	<English>A pack of run down clothings that fits an apocalyptic environment.</English>
 		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
+			<Russian>Пакет с потрепанной одеждой, подходящей для апокалиптической обстановки.</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_2_NAME">
 		 	<English>Apo. Rifleman 2</English>
 		 	<German>Apo. Schütze 2</German>
+			<Russian>Солдат апокалипсиса 2</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_3_NAME">
 		 	<English>Apo. Rifleman 3</English>
 		 	<German>Apo. Schütze 3</German>
+			<Russian>Солдат апокалипсиса 3</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_4_NAME">
 		 	<English>Apo. Rifleman 4</English>
 		 	<German>Apo. Schütze 4</German>
+			<Russian>Солдат апокалипсиса 4</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_5_NAME">
 		 	<English>Apo. Rifleman 5</English>
 		 	<German>Apo. Schütze 5</German>
+			<Russian>Солдат апокалипсиса 5</Russian>
 		 </Key>
 		 <Key ID="STR_DZE_EQUIP_APO_RIFLEMAN_6_NAME">
 		 	<English>Apo. Rifleman 6</English>
 		 	<German>Apo. Schütze 6</German>
+			<Russian>Солдат апокалипсиса 6</Russian>
 		 </Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_DT_TL_NAME">
 			<English>Spetsnaz Teamleader (Dark Tan)</English>
 			<German>Speznas Truppführer (Braun)</German>
+			<Russian>ГРУ, командир (Тёмный)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SCOUT_NAME">
 			<English>Spetsnaz Scout (Dark Tan)</English>
 			<German>Speznas Späher (Braun)</German>
+			<Russian>ГРУ, разведчик (Тёмный)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SNIPER_NAME">
 			<English>Spetsnaz Sniper (Dark Tan)</English>
 			<German>Speznas Heckenschütze (Braun)</German>
+			<Russian>ГРУ, снайпер (Тёмный)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_DT_SPOTTER_NAME">
 			<English>Spetsnaz Spotter (Dark Tan)</English>
 			<German>Speznas Aufklärer (Braun)</German>
+			<Russian>ГРУ, наблюдатель (Тёмный)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_TL_NAME">
 			<English>Spetsnaz Teamleader (Camo)</English>
 			<German>Speznas Truppführer (Flecktarn)</German>
+			<Russian>ГРУ, командир (Камо)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_SCOUT_NAME">
 			<English>Spetsnaz Scout (Camo)</English>
 			<German>Speznas Späher (Flecktarn)</German>
+			<Russian>ГРУ, разведчик (Камо)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_MEDIC_NAME">
 			<English>Spetsnaz Medic (Camo)</English>
 			<German>Speznas Feldarzt (Flecktarn)</German>
+			<Russian>ГРУ, медик (Камо)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_FLT_RIFLEMAN_NAME">
 			<English>Spetsnaz Rifleman (Camo)</English>
 			<German>Speznas Schütze (Flecktarn)</German>
+			<Russian>ГРУ, стрелок (Камо)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_TL_NAME">
 			<English>Spetsnaz Teamleader (Woodland)</English>
 			<German>Speznas Truppführer (Waldtarn)</German>
+			<Russian>ГРУ, командир (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_SCOUT_NAME">
 			<English>Spetsnaz Scout (Woodland)</English>
 			<German>Speznas Späher (Waldtarn)</German>
+			<Russian>ГРУ, разведчик (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MARKSMAN_NAME">
 			<English>Spetsnaz Marksman (Woodland)</English>
 			<German>Speznas Scharfschütze (Waldtarn)</German>
+			<Russian>ГРУ, снайпер (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MEDIC_NAME">
 			<English>Spetsnaz Medic (Woodland)</English>
 			<German>Speznas Feldarzt (Waldtarn)</German>
+			<Russian>ГРУ, медик (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_OPERATOR_NAME">
 			<English>Spetsnaz Operator (Woodland)</English>
 			<German>Speznas Operator (Waldtarn)</German>
+			<Russian>ГРУ, связист (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_SG_GRU_WDL_MGSOLDIER_NAME">
 			<English>Spetsnaz MG Soldier (Woodland)</English>
 			<German>Speznas MG Schütze (Waldtarn)</German>
+			<Russian>ГРУ, стрелок (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_TL_NAME">
 			<English>Spetsnaz Teamleader (Dark Tan)</English>
 			<German>Speznas Truppführer (Braun)</German>
+			<Russian>ГРУ, командир (Тёмный)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_TL_W_NAME">
 			<English>Spetsnaz Teamleader (Camo)</English>
 			<German>Speznas Truppführer (Flecktarn)</German>
+			<Russian>ГРУ, командир (Камо)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC">
 			<English>Special Spetsnaz clothings.</English>
 			<German>Spezielle Speznas Militärkleidung.</German>
+			<Russian>Форма военнослужащих Спецназа ГРУ.</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME">
 			<English>Spetsnaz Scout (Dark Tan)</English>
 			<German>Speznas Späher (Braun)</German>
+			<Russian>ГРУ, разведчик (Тёмный)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME">
 			<English>Spetsnaz Sniper (Dark Tan)</English>
 			<German>Speznas Heckenschütze (Braun)</German>
+			<Russian>ГРУ, снайпер (Тёмный)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME">
 			<English>Spetsnaz Spotter (Dark Tan)</English>
 			<German>Speznas Aufklärer (Braun)</German>
+			<Russian>ГРУ, наблюдатель (Тёмный)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME">
 			<English>Spetsnaz Scout (Camo)</English>
 			<German>Speznas Späher (Flecktarn)</German>
+			<Russian>ГРУ, разведчик (Камо)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME">
 			<English>Spetsnaz Rifleman (Camo)</English>
 			<German>Speznas Schütze (Flecktarn)</German>
+			<Russian>ГРУ, стрелок (Камо)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME">
 			<English>Spetsnaz Teamleader (Woodland)</English>
 			<German>Speznas Truppführer (Waldtarn)</German>
+			<Russian>ГРУ, командир (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME">
 			<English>Spetsnaz Scout (Woodland)</English>
 			<German>Speznas Späher (Waldtarn)</German>
+			<Russian>ГРУ, разведчик (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME">
-			<English>Spez. Marksman (Woodland)</English>
+			<English>Spetsnaz Marksman (Woodland)</English>
 			<German>Speznas Scharfschütze (Waldtarn)</German>
+			<Russian>ГРУ, снайпер (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME">
 			<English>Spetsnaz Medic (Woodland)</English>
 			<German>Speznas Feldarzt (Waldtarn)</German>
+			<Russian>ГРУ, медик (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME">
 			<English>Spetsnaz Operator (Woodland)</English>
 			<German>Speznas Operator (Waldtarn)</German>
+			<Russian>ГРУ, связист (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME">
 			<English>Spetsnaz MG Soldier (Woodland)</English>
 			<German>Speznas MG Schütze (Waldtarn)</German>
+			<Russian>ГРУ, стрелок (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_WDL_SOLDIER_NAME">
 			<English>ACR Soldier (Woodland)</English>
 			<German>ACR Soldat (Waldtarn)</German>
+			<Russian>Чешский солдат (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_DES_SOLDIER_NAME">
 			<English>ACR Soldier (Desert)</English>
 			<German>ACR Soldat (Wüstentarn)</German>
+			<Russian>Чешский солдат (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_CREW_NAME">
 			<English>ACR Crewman</English>
 			<German>ACR Besatzungsmitglied</German>
+			<Russian>Чешский механик</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_OFFICER_NAME">
 			<English>ACR Officer</English>
 			<German>ACR Offizier</German>
+			<Russian>Чешский офицер</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_SPFORCE_NAME">
 			<English>ACR Special Forces</English>
 			<German>ACR Spezialeinheit</German>
+			<Russian>Чешский спецназ</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_RECON_NAME">
 			<English>ACR Recon</English>
 			<German>ACR Aufklärer</German>
+			<Russian>Чешский разведчик</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_ASSAULT_NAME">
 			<English>ACR Assault Unit</English>
 			<German>ACR Angriffseinheit</German>
+			<Russian>Чешский стрелок</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_SAPPER_NAME">
 			<English>ACR Sapper</English>
 			<German>ACR Pionier</German>
+			<Russian>Чешский сапёр</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_HEAVYSOLDIER_NAME">
 			<English>ACR Heavy Soldier</English>
 			<German>ACR Schwerer Soldat</German>
+			<Russian>Чешский тяжёлый солдат</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_GHILLIE_NAME">
 			<English>ACR Ghillie Suit</English>
 			<German>ACR Ghillie-Anzug</German>
+			<Russian>Чешский снайпер</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_ACR_LIGHT_SOLDIER_NAME">
 			<English>ACR Soldier Shirt</English>
 			<German>ACR Soldat T-Shirt</German>
+			<Russian>Чешский лёгкий солдат</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_FIREFIGHTER_NAME">
 			<English>Firefighter</English>
@@ -32716,7 +32809,7 @@
 		</Key>
 		<Key ID="str_actions_medical_04_sepsis">
 			<English>Give Sepsis Bandage</English>
-			<Russian>Дать обеззараживающий бинт</Russian>
+			<Russian>Дать антисептический бинт</Russian>
 			<German>Sepsisbandage legen</German>
 		</Key>
 		<Key ID="str_actions_unload_fail">
@@ -32742,7 +32835,7 @@
 		<Key ID="STR_EPOCH_CRAFT_SMALL_STASH">
 			<English>Craft Small Stash</English>
 			<German>Kleine Lagergrube herstellen</German>
-			<Russian>Создать маленький тайник</Russian>
+			<Russian>Создать: Маленький тайник</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_SOLDER">
 			<English>Portable Solder</English>
@@ -33253,17 +33346,17 @@
 		<Key ID="STR_CRAFTING_CROSSBOW">
 			<English>Craft Crossbow</English>
 			<German>Armbrust herstellen</German>
-			<Russian>Создать арбалет</Russian>
+			<Russian>Создать: Арбалет</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_NAILEDBASEBALLBAT">
 			<English>Craft Nailed Baseball Bat</English>
 			<German>Nagelkeule herstellen</German>
-			<Russian>Создать биту с гвоздями</Russian>
+			<Russian>Создать: Бита с гвоздями</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_BASEBALLBATBARBED">
 			<English>Craft Baseball Bat Barbed</English>
 			<German>Stacheldrahtkeule herstellen</German>
-			<Russian>Создать биту с колючкой</Russian>
+			<Russian>Создать: Бита с колючкой</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_HERBALDRINK">
 			<English>Mix Herbal Drink</English>
@@ -33273,7 +33366,7 @@
 		<Key ID="STR_CRAFTING_SEPSISBANDAGE">
 			<English>Craft Sepsis Bandage</English>
 			<German>Sepsisbandage herstellen</German>
-			<Russian>Создать обеззараж. бинт</Russian>
+			<Russian>Создать: Антисепт. бинт</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_PACKAGEGAUZE">
 			<English>Unpack Gauze Packaged</English>
@@ -33283,17 +33376,17 @@
 		<Key ID="STR_CRAFTING_SPLINT">
 			<English>Craft Wooden Splint</English>
 			<German>Holzschiene herstellen</German>
-			<Russian>Создать деревянную шину</Russian>
+			<Russian>Создать: Деревянная шина</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_NAILS">
 			<English>Craft Nails</English>
 			<German>Nägel herstellen</German>
-			<Russian>Создать гвозди</Russian>
+			<Russian>Создать: Гвозди</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_CORRUGATEDSHEETS">
 			<English>Craft Corrugated Sheet</English>
 			<German>Wellblech herstellen</German>
-			<Russian>Создать гофрир. лист</Russian>
+			<Russian>Создать: Гофрир. лист</Russian>
 		</Key>
 		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
 			<English>Needed items:</English>
@@ -33873,12 +33966,12 @@
 		<Key ID="STR_EPOCH_ACTION_LOCK_BRIDGE">
 			<English>Lock Drawbridge</English>
 			<German>Zugbrücke abschließen</German>
-			<Russian>Закрыть мост</Russian>
+			<Russian>Запереть мост</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_UNLOCK_BRIDGE">
 			<English>Unlock Drawbridge</English>
 			<German>Zugbrücke aufschließen</German>
-			<Russian>Открыть мост</Russian>
+			<Russian>Отпереть мост</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_CRAFT_BRIDGE">
 			<English>Craft Drawbridge</English>
@@ -34770,7 +34863,7 @@
 		<Key ID="STR_EQUIP_NAME_43">
 		 	<English>Winter Ghillie Suit</English>
 		 	<German>Winter-Ghillie-Anzug</German>
-		  	<Russian>Зимний маскировочный костюм</Russian>
+		  	<Russian>Маскхалат (Зима)</Russian>
 		 </Key>
        		 <Key ID="STR_EQUIP_DESC_43">
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
