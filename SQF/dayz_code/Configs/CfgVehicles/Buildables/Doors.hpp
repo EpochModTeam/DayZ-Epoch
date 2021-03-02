@@ -1120,7 +1120,7 @@ class CinderGarageOpenTopLocked_DZ: CinderWallDoorLocked_DZ_Base {
 
 class CinderDoorHatch_DZ: CinderWallDoor_DZ_Base {
 	scope = 2;
-	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinder_door_hatch.p3d";
+	model = "\z\addons\dayz_epoch_v\base_building\cinder\cinder_door_window\cinderdoor_hatch.p3d";
 	displayName = $STR_EPOCH_BLOCKDOOR_HATCH;
 	GhostPreview = "CinderDoorHatch_Preview_DZ";
 	upgradeBuilding[] = {"CinderDoorHatchLocked_DZ",{},{{"ItemComboLock",1}}};

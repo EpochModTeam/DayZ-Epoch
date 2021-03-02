@@ -287,7 +287,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 		};
 		dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object]; //Monitor the object
 	};
-} count _myArray;
+} foreach _myArray;
 
 //spawn vehicles
 {
@@ -379,7 +379,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	_object enableSimulation true;
 	_object setVelocity [0,0,1];
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object]; //Monitor the object
-} count _VehicleQueue;
+} foreach _VehicleQueue;
 
 diag_log ("HIVE: Streamed " + str((count _myArray) -_vQty) + " Objects and " + str(_vQty) + " Vehicles.");
 

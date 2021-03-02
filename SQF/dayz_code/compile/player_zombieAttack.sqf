@@ -117,20 +117,22 @@ _zPos = getPosASL _unit;
 // compute damage for vehicle and/or the player
 if (_isVehicle) then {
 	if ((_unit distance player) < (3.3 * 2)) then {
-		_hpList = 	_vehicle call vehicle_getHitpoints;
-		_hp = 		_hpList call BIS_fnc_selectRandom;
-		_wound = 	getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
-		_damage = 	random 0.08;
-		_chance =	round(random 12);
+		_chance = round(random 12);
 		
 		if ((_chance % 4) == 0) then {
-			_openVehicles = ["ATV_Base_EP1", "Motorcycle", "Bicycle"];
+			_openVehicles = ["ATV_Base_EP1", "Motorcycle", "Bicycle", "CSJ_GyroP", "CSJ_GyroC"];
 			{
 				if (_vehicle isKindOf _x) exitWith {
 					player action ["eject", _vehicle];
 				};
 			} count _openVehicles;
 		};
+		
+		_hpList = _vehicle call vehicle_getHitpoints;
+		if (count _hpList < 1) exitwith {};
+		_hp = _hpList call BIS_fnc_selectRandom;
+		_wound = getText(configFile >> "cfgVehicles" >> (typeOf _vehicle) >> "HitPoints" >> _hp >> "name");
+		_damage = random 0.08;
 		
 		if (_wound in [ "glass1",  "glass2",  "glass3",  "glass4",  "glass5",  "glass6" ]) then {
 			_dam = _vehicle getHit _wound;
