@@ -37493,7 +37493,7 @@
 			<English>AutoClaim: If you want to claim %1, then do not leave the mission area for %2 seconds!</English>
 			<German>AutoClaim: Wenn du %1 beanspruchen willst, bleib für %2 Sekunden im Missionsbereich!</German>
 			<French>Réclamation Automatique: Si vous voulez réclamer %1, vous ne devez pas quitter la zone de mission avant %2 secondes!</French>
-			<Russian>AutoClaim: Если вы хотите претендовать на 1%, то не покидайте зону миссии в течении 2% сек.!</Russian>
+			<Russian>AutoClaim: Если вы хотите претендовать на %1, то не покидайте зону миссии в течении %2 сек.!</Russian>
 			<Spanish>Reclamar: Si quieres reclamar %1, entonces no dejes el area de la misión por %2 segundos!</Spanish>
 		</Key>
 		<Key ID="STR_CL_AUTOCLAIM_NOCLAIM">
@@ -37844,7 +37844,7 @@
 		</Key>
 		<Key ID="STR_CL_EC_COUNTDOWN">
 			<English>%1 gets called in %2s - Move to Cancel!</English>
-			<Russian>%1 вызывается в %2 - двигайтесь для отмены!</Russian>
+			<Russian>%1 вылетает через %2 сек. Двигайтесь для отмены!</Russian>
 			<German>%1 wird in %2s gerufen - Zum Abbrechen bewegen!</German>
 		</Key>
 		<Key ID="STR_CL_EC_UNABLETOEVAC">
@@ -37864,7 +37864,7 @@
 		</Key>
 		<Key ID="STR_CL_EC_DISABLED">
 			<English>!!! DISABLED !!!</English>
-			<Russian>!!! ОТКЛЮЧЕН !!!</Russian>
+			<Russian>!!! ПОВРЕЖДЁН !!!</Russian>
 			<German>!!! VERHINDERT !!!</German>
 		</Key>
 		<Key ID="STR_CL_EC_ARRIVED">
