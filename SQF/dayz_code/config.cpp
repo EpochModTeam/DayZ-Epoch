@@ -114,6 +114,7 @@ class DefaultEventhandlers {
 #include "Configs\CfgGlasses.hpp"
 #include "Configs\CfgArma.hpp"
 #include "Configs\CfgRecoils.hpp"
+#include "Configs\CfgParticles.hpp"
 //#include "Configs\RadioProtocol.hpp"
 //#include "gui\padlock\padlock_ui.hpp"
 

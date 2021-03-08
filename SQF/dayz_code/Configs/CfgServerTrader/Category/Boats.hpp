@@ -8,6 +8,7 @@ class Category_48 {
 
 //Unarmed Boats
 class Category_49 {
+	class Submarine_DZE {type = "trade_any_boat";buy[] = {2,"ItemBriefcase100oz"};sell[] = {1,"ItemBriefcase100oz"};};	
 	class Smallboat_1_DZE {type = "trade_any_boat";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class Smallboat_2_DZE {type = "trade_any_boat";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};	
 	class Fishing_Boat_DZE {type = "trade_any_boat";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
