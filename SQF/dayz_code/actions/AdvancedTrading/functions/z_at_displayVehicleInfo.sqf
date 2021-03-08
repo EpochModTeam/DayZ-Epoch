@@ -117,7 +117,7 @@ if (Z_SingleCurrency) then {
 		"<img image='%1' size='3' /><br />" +
 		"<t color='#bcbcbc' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-		"<t color='#bcbcbc' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 %7</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%13: </t><t color='#ffffff' size='0.7'>%6 %27</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%14: </t><t color='#ffffff' size='0.7'><img image='%15'/> %8 <img image='%16'/> %9 <img image='%26'/> %4</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%17: </t><t color='#ffffff' size='0.7'>%18  </t><t color='#bcbcbc' size='0.7'>%24: </t><t color='#ffffff' size='0.7'>%25</t><br />" + // Armor / Seats
@@ -127,7 +127,7 @@ if (Z_SingleCurrency) then {
 		_class,
 		_transportmaxBackpacks,
 		if (_sellPrice >= 0) then {[_sellPrice] call BIS_fnc_numberText;} else {"";},
-		if (_buyPrice >= 0) then {[_buyPrice] call BIS_fnc_numberText;} else {"";},
+		if (_buyPrice >= 0) then {[_buyPrice] call BIS_fnc_numberText;} else {localize "STR_EPOCH_TRADE_UNBUYABLE";},
 		CurrencyName,
 		_transportMaxWeapons,
 		_transportMaxMagazines,
@@ -147,7 +147,8 @@ if (Z_SingleCurrency) then {
 		_maxSpeed,
 		localize "STR_EPOCH_SEATS",
 		_seats,
-		"\z\addons\dayz_code\gui\gear\gear_ui_slots_backpacks_white.paa"
+		"\z\addons\dayz_code\gui\gear\gear_ui_slots_backpacks_white.paa",
+		if (_buyPrice >= 0) then {CurrencyName} else {""}
 	];
 } else {
 	_picSell = "";
@@ -159,6 +160,8 @@ if (Z_SingleCurrency) then {
 	if (_buyPrice >= 0) then {
 		_picBuy = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'picture');
 		_buyCurrency = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'displayName');
+	} else {
+		_buyCurrency = "";
 	};
 
 	_formattedText = format [
@@ -175,7 +178,7 @@ if (Z_SingleCurrency) then {
 		_class,
 		_transportmaxBackpacks,
 		if (_sellPrice >= 0) then {_sellPrice} else {"";},
-		if (_buyPrice >= 0) then {_buyPrice} else {"";},
+		if (_buyPrice >= 0) then {_buyPrice} else {localize "STR_EPOCH_TRADE_UNBUYABLE";},
 		_buyCurrency,
 		_transportMaxWeapons,
 		_transportMaxMagazines,

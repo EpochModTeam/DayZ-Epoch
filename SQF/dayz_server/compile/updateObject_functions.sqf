@@ -88,8 +88,8 @@ server_obj_dam = {
 			_array set [count _array,[(_hit select 1),0]];
 		};
 	} count _hitpoints;
-
-	if (_allFixed && {!_totalDmg}) then {_object setDamage 0;};
+	
+	if (_allFixed && !_totalDmg) then {_object setDamage 0;};
 
 	if (_forced) then {
 		if (_object in needUpdate_objects) then {needUpdate_objects = needUpdate_objects - [_object];};

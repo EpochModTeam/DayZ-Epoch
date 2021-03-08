@@ -3,6 +3,7 @@
 local _character = _this select 0;
 local _magazines = _this select 1;
 local _dayz_onBack = _this select 2;
+local _weapons = _this select 3; 
 local _characterID = _character getVariable ["characterID","0"];
 local _playerUID = getPlayerUID _character;
 local _charPos = getPosATL _character;
@@ -53,7 +54,7 @@ local _charPosLen = count _charPos;
 local _magTemp = [];
 
 if (!isNil "_magazines") then {
-	_playerGear = [weapons _character,_magazines,_dayz_onBack];
+	_playerGear = [_weapons,_magazines,_dayz_onBack];
 	_character setVariable["ServerMagArray",[_magazines,_dayz_onBack], false];
 } else {
 	//check Magazines everytime they aren't sent by player_forceSave
@@ -78,7 +79,7 @@ if (!isNil "_magazines") then {
 		_magazines = _magTemp - ["0"];
 		_magazines = [_magazines, (_lastMagazines select 1)];
 		_character setVariable["ServerMagArray",_magazines, false];
-		_playerGear = [weapons _character,_magazines select 0,_magazines select 1];
+		_playerGear = [_weapons,_magazines select 0,_magazines select 1];
 	};
 };
 

@@ -707,6 +707,7 @@ class CfgVehicles
 	#include "Boat\smallboat.hpp"
 	#include "Boat\JetSkiYanahui.hpp"
 	#include "Boat\Seafox.hpp"
+	#include "Boat\Submarine.hpp"
 	
 	//Epoch Parachute
 	#include "Parachute.hpp"

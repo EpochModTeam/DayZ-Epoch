@@ -216,7 +216,8 @@ if (toLower worldName in ["caribou","chernarus","cmr_ovaron","dayznogova","dingo
 		["RHIB2Turret_DZE",_Ratio1],
 		["Smallboat_1_DZE",_Ratio3],
 		["Smallboat_2_DZE",_Ratio3],
-		["Zodiac_DZE",_Ratio3]
+		["Zodiac_DZE",_Ratio3],
+		["Submarine_DZE",_Ratio3]
 	];
 };
 
