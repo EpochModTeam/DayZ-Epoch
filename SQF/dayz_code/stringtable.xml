@@ -13471,6 +13471,11 @@
 			<German>Motorrad M1030 (Grün)</German>
 			<Russian>Мотоцикл M1030 (Зелёный)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUBMARINE">
+			<English>Submarine</English>
+			<German>U-Boot</German>
+			<Russian>Подводная лодка</Russian>
+		</Key>			
 		<Key ID="STR_VEH_NAME_RHIB_M2">
 			<English>RHIB (M2)</English>
 			<Russian>НЛЖК (M2)</Russian>
@@ -13478,7 +13483,7 @@
 		<Key ID="STR_VEH_NAME_RHIB_MK19">
 			<English>RHIB (MK 19)</English>
 			<Russian>НЛЖК (MK 19)</Russian>
-		</Key>
+		</Key>	
 		<Key ID="STR_VEH_NAME_PBX">
 			<English>PBX Rubber Boat</English>
 			<Russian>Моторная лодка ПВХ</Russian>
@@ -28943,6 +28948,11 @@
 			<German>Etwas Wechselgeld ist in deinem Inventar verborgen. Reduziere die Gegenstände in deinem Inventar, um das Wechselgeld sichtbar zu machen!</German>
 			<Russian>Некоторые изменения скрыты в вашем инвентаре. Уменьшите количество предметов в инвентаре, чтобы увидеть изменения!</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADE_UNBUYABLE">
+			<English>Unbuyable</English>
+			<German>Nicht kaufbar</German>
+			<Russian>Невозможно купить</Russian>
+		</Key>		
 
 		<!-- PLOT MANAGEMENT BELOW -->
 

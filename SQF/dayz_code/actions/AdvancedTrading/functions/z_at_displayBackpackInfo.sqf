@@ -32,23 +32,23 @@ if (Z_SingleCurrency) then {
 		"<img image='%1'  size='3'  align='center'/><br />" +
 		"<t color='#bcbcbc' size='0.7'>%9: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-		"<t color='#bcbcbc' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%6 %4</t><br />" +
-		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%12: </t><t color='#ffffff' size='0.7'>%6 %7</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%5 %4</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%14: </t><t color='#ffffff' size='0.7'><img image='%13'/> %8</t><br />",
 		_picture,
 		_display,
 		_class,
 		CurrencyName,
 		if (_sellPrice >= 0) then {[_sellPrice] call BIS_fnc_numberText;} else {"";},
-		if (_buyPrice >= 0) then {[_buyPrice] call BIS_fnc_numberText;} else {"";},
-		CurrencyName,
+		if (_buyPrice >= 0) then {[_buyPrice] call BIS_fnc_numberText;} else {localize "STR_EPOCH_TRADE_UNBUYABLE";},
+		if (_buyPrice >= 0) then {CurrencyName} else {""},
 		_transportMaxMagazines,
 		localize "STR_EPOCH_NAME",
 		localize "STR_EPOCH_CLASS",
 		localize "STR_EPOCH_PLAYER_292",
 		localize "STR_EPOCH_PLAYER_291",
 		"\z\addons\dayz_code\gui\gear\gear_ui_slots_items_white.paa",
-		localize "STR_EPOCH_CARGO_SPACE"
+		localize "STR_EPOCH_CARGO_SPACE"	
 	];
 } else {
 	_picSell = "";
@@ -60,6 +60,8 @@ if (Z_SingleCurrency) then {
 	if (_buyPrice >= 0) then {
 		_picBuy = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'picture');
 		_buyCurrency = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'displayName');
+	} else {
+		_buyCurrency = "";
 	};
 
 	_formattedText = format [
@@ -74,7 +76,7 @@ if (Z_SingleCurrency) then {
 		_class,
 		_buyCurrency,
 		if (_sellPrice >= 0) then {_sellPrice} else {"";},
-		if (_buyPrice >= 0) then {_buyPrice} else {"";},
+		if (_buyPrice >= 0) then {_buyPrice} else {localize "STR_EPOCH_TRADE_UNBUYABLE";},
 		_sellCurrency,
 		_transportMaxMagazines,
 		localize "STR_EPOCH_NAME",

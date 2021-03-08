@@ -66,19 +66,20 @@ if (Z_SingleCurrency) then {
 		"<img image='%1' size='3'  align='center' /><br />" +
 		"<t color='#bcbcbc' size='0.7'>%8: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%9: </t><t color='#ffffff' size='0.7'>%3</t><br />" +
-		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%6 %7</t><br />" +
+		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%6 %12</t><br />" +
 		"<t color='#bcbcbc' size='0.7'>%10: </t><t color='#ffffff' size='0.7'>%5 %7</t><br />",
 		_picture,
 		_display,
 		_class,
 		_magText,
 		if (_sellPrice >= 0) then {[_sellPrice] call BIS_fnc_numberText;} else {"";},
-		if (_buyPrice >= 0) then {[_buyPrice] call BIS_fnc_numberText;} else {"";},
+		if (_buyPrice >= 0) then {[_buyPrice] call BIS_fnc_numberText;} else {localize "STR_EPOCH_TRADE_UNBUYABLE";},
 		CurrencyName,
 		localize "STR_EPOCH_NAME",
 		localize "STR_EPOCH_CLASS",
 		localize "STR_EPOCH_PLAYER_292",
-		localize "STR_EPOCH_PLAYER_291"
+		localize "STR_EPOCH_PLAYER_291",
+		if (_buyPrice >= 0) then {CurrencyName} else {""}
 	];
 } else {
 	_picSell = "";
@@ -90,7 +91,10 @@ if (Z_SingleCurrency) then {
 	if (_buyPrice >= 0) then {
 		_picBuy = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'picture');
 		_buyCurrency = getText (configFile >> 'CfgMagazines' >> _buyCurrency >> 'displayName');
+	} else {
+		_buyCurrency = "";
 	};
+	
 	_formattedText = format [
 		"<img image='%1' size='3'  align='center' /><br />" +
 		"<t color='#bcbcbc' size='0.7'>%11: </t><t color='#ffffff' size='0.7'>%2</t><br />" +
@@ -102,7 +106,7 @@ if (Z_SingleCurrency) then {
 		_class,
 		_magText,
 		if (_sellPrice >= 0) then {_sellPrice} else {"";},
-		if (_buyPrice >= 0) then {_buyPrice} else {"";},
+		if (_buyPrice >= 0) then {_buyPrice} else {localize "STR_EPOCH_TRADE_UNBUYABLE";},
 		_sellCurrency,
 		_buyCurrency,
 		_picSell,
