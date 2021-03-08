@@ -4357,18 +4357,18 @@
 		</Key>
 		<Key ID="STR_MAG_CONV_45ACP_Revolver">
 			<English>Combine for Revolver</English>
-			<Russian>в обойму рев.</Russian>
+			<Russian>Переснарядить для Револьвера</Russian>
 			<German>In Revolver-Trommel umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_45ACP_M1911">
 			<English>Combine for M1911</English>
-			<Russian>в M1911 маг.</Russian>
+			<Russian>Переснарядить для M1911</Russian>
 			<German>In M1911-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_G17_M9">
 			<English>Combine for M9</English>
 			<Spanish>Combinar a M9</Spanish>
-			<Russian>в M9 маг.</Russian>
+			<Russian>Переснарядить для M9</Russian>
 			<Czech>Vytvořit M9 zásobník</Czech>
 			<French>Assembler pour un M9</French>
 			<German>In M9-Magazin umladen</German>
@@ -4376,45 +4376,45 @@
 		<Key ID="STR_MAG_CONV_M9_G17">
 			<English>Combine for G17</English>
 			<Spanish>Combinar a G17</Spanish>
-			<Russian>в G17 маг.</Russian>
+			<Russian>Переснарядить для G17</Russian>
 			<Czech>Vytvořit G17 zásobník</Czech>
 			<French>Assembler pour un G17</French>
 			<German>In G17-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_M24_DMR">
 			<English>Combine to DMR</English>
-			<Russian>в DMR маг.</Russian>
+			<Russian>Переснарядить для DMR</Russian>
 			<German>In DMR-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_SPLIT_4X5M24">
 			<English>Split into 4x5 (M24)</English>
-			<Russian>Разд. на 4х5 (М24)</Russian>
+			<Russian>Разделить на 4 по 5п. М24</Russian>
 			<German>In 4x5 (M24) aufteilen</German>
 		</Key>
 
 		<Key ID="STR_MAG_CONV_G36_STANAG">
 			<English>Combine to STANAG</English>
-			<Russian>в STANAG маг.</Russian>
+			<Russian>Переснарядить в STANAG</Russian>
 			<German>In STANAG-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_STANAG_G36">
 			<English>Combine for G36</English>
-			<Russian>в G36 маг.</Russian>
+			<Russian>Переснарядить для G36</Russian>
 			<German>In G36-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_AK47_SA58">
 			<English>Combine for SA-58</English>
-			<Russian>в SA-58 маг.</Russian>
+			<Russian>Переснарядить для SA-58</Russian>
 			<German>In Sa-58-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_CONV_SA58_AK47">
 			<English>Combine for AK-47</English>
-			<Russian>в AK-47 маг.</Russian>
+			<Russian>Переснарядить для AK-47</Russian>
 			<German>In AK-47-Magazin umladen</German>
 		</Key>
 		<Key ID="STR_MAG_COMBINE_2X4IN8">
 			<English>Combine to 8 rnd.</English>
-			<Russian>Собрать в 8 п.</Russian>
+			<Russian>Переснарядить в 8п.</Russian>
 			<Spanish>Combinar a 8 rondas</Spanish>
 			<French>Assembler en 8 balles</French>
 			<Czech>Zkombinovat do 8 nábojů</Czech>
@@ -4422,7 +4422,7 @@
 		</Key>
 		<Key ID="STR_MAG_SPLIT_8TO2X4">
 			<English>Split into 4x2 rnd</English>
-			<Russian>Разд. на 4x2 п.</Russian>
+			<Russian>Разделить на 4 по 2п.</Russian>
 			<German>In 4x2 Schuss aufteilen</German>
 		</Key>
 		<Key ID="STR_MAG_NAME_4">
@@ -8342,7 +8342,7 @@
 			<!-- %1 flashlight name (Night) -->
 			<English>I&apos;ve got a %1 which is perfect for seeing in this dark. I guess other survivors can see me flashing it about though. Not sure if that&apos;s a good thing or not given the circumstances.</English>
 			<German>Meine %1 ist perfekt, um in dieser Dunkelheit zu sehen. Wahrscheinlich sehen mich andere Überlebende, während ich so herumleuchte. Ich bin mir noch nicht sicher, ob das unter diesen Umständen gut oder schlecht ist.</German>
-			<Russian>У меня есть %1 - прекрасно помогает видеть в этой темноте. Однако другие выжившие смогут заметить без проблем. Не уверен, что это хорошо в текущих обстоятельствах.</Russian>
+			<Russian>У меня есть %1 - прекрасно помогает видеть в этой темноте. Однако и другие выжившие смогут заметить без проблем. Не уверен, что это хорошо в текущих обстоятельствах.</Russian>
 			<Spanish>Tengo una %1 que es perfecta para ver en la oscuridad. Sin embargo supongo que otros supervivientes puedan verme iluminar con ella. No estoy seguro si es una buena idea o no dadas las circunstancias.</Spanish>
 			<French>J&apos;ai une %1 qui est super pour voir dans le noir. Mais les autres survivants doivent me voir l&apos;utiliser. Pas sûr que cela soit un bonne idée étant données les circonstances</French>
 			<Czech>Mám %1, což mi ulehčí život ve tmě. Hádám ale, že jakmile ji zapnu, uvidí mě i ostatní. Musím popřemýšlet, zda to za to riziko stojí.</Czech>
@@ -17032,61 +17032,61 @@
 		<!-- Mosin -->
 		<Key ID="STR_DZ_WPN_MOSIN_NAME">
 			<English>Mosin Nagant</English>
-			<Russian>Винтовка Мосина</Russian>
+			<Russian>Мосинка</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_FL_NAME">
 			<English>Mosin Nagant FL</English>
 			<German>Mosin Nagant TL</German>
-			<Russian>Винтовка Мосина Ф</Russian>
+			<Russian>Мосинка Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_MFL_NAME">
 			<English>Mosin Nagant MFL</English>
 			<German>Mosin Nagant TL</German>
-			<Russian>Винтовка Мосина ВФ</Russian>
+			<Russian>Мосинка ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_NAME">
 			<English>Mosin Nagant Belt</English>
 			<German>Mosin Nagant Gurt</German>
-			<Russian>Винтовка Мосина с Ремнем</Russian>
+			<Russian>Мосинка с патр-шем</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_FL_NAME">
 			<English>Mosin Nagant Belt FL</English>
 			<German>Mosin Nagant Gurt TL</German>
-			<Russian>Винтовка Мосина с Ремнем Ф</Russian>
+			<Russian>Мосинка с патр-шем Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_BELT_MFL_NAME">
 			<English>Mosin Nagant Belt MFL</English>
 			<German>Mosin Nagant Gurt MTL</German>
-			<Russian>Винтовка Мосина с Ремнем ВФ</Russian>
+			<Russian>Мосинка с патр-шем ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_NAME">
 			<English>Mosin Nagant PU</English>
-			<Russian>Винтовка Мосина ПУ</Russian>
+			<Russian>Мосинка ПР</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_FL_NAME">
 			<English>Mosin Nagant PU FL</English>
 			<German>Mosin Nagant PU TL</German>
-			<Russian>Винтовка Мосина ПР Ф</Russian>
+			<Russian>Мосинка ПР Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_MFL_NAME">
 			<English>Mosin Nagant PU MFL</English>
 			<German>Mosin Nagant PU MTL</German>
-			<Russian>Винтовка Мосина ПР ВФ</Russian>
+			<Russian>Мосинка ПР ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_NAME">
 			<English>Mosin Nagant PU Belt</English>
 			<German>Mosin Nagant PU Gurt</German>
-			<Russian>Винтовка Мосина ПР с Ремнем</Russian>
+			<Russian>Мосинка ПР с патр-шем</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_FL_NAME">
 			<English>Mosin Nagant PU Belt FL</English>
 			<German>Mosin Nagant PU Gurt TL</German>
-			<Russian>Винтовка Мосина ПР с Ремнем Ф</Russian>
+			<Russian>Мосинка ПР с патр-шем Ф</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_PU_BELT_MFL_NAME">
 			<English>Mosin Nagant PU Belt MFL</English>
 			<German>Mosin Nagant PU Gurt MTL</German>
-			<Russian>Винтовка Мосина ПР с Ремнем ВФ</Russian>
+			<Russian>Мосинка ПР с патр-шем ВФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_MOSIN_DESC">
 			<English>Bolt-action military rifle developed by the Imperial Russian Army in 1891.&lt;br/&gt;Caliber: 7.62x54mmR</English>
@@ -18019,12 +18019,11 @@
 		<!-- MG36 -->
 		<Key ID="STR_DZ_WPN_MG36_NAME">
 			<English>MG36</English>
-			<Russian>MG36</Russian>
 			<German>MG36</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_MG36_CAMO_NAME">
 			<English>MG36 Camo</English>
-			<Russian>MG36 (Камуфляж)</Russian>
+			<Russian>MG36 (кмфл)</Russian>
 			<German>MG36 Tarn</German>
 		</Key>
 
@@ -18967,57 +18966,57 @@
 
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17SD_NAME">
 			<English>17Rnd. G17 SD mag.</English>
-			<Russian>17п. G17 дозвук. маг.</Russian>
+			<Russian>17п. G17 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_17RND_9X19_GLOCK17_NAME">
 			<English>17Rnd. G17 mag.</English>
-			<Russian>17п. G17 маг.</Russian>
+			<Russian>17п. G17</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_9X19_M9SD_NAME">
 			<English>15Rnd. M9 SD mag.</English>
-			<Russian>15п. M9 дозвук. маг.</Russian>
+			<Russian>15п. M9 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_9X19_M9_NAME">
 			<English>15Rnd. M9 mag.</English>
-			<Russian>15п. M9 маг.</Russian>
+			<Russian>15п. M9</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_9X19_UZISD_NAME">
 			<English>30Rnd. PDW SD mag.</English>
-			<Russian>30п. PDW дозвук. маг.</Russian>
+			<Russian>30п. PDW дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_9X19_UZI_NAME">
 			<English>30Rnd. PDW mag.</English>
-			<Russian>30п. PDW маг.</Russian>
+			<Russian>30п. PDW</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_9X19_MP5SD_NAME">
 			<English>30Rnd. MP5 SD mag.</English>
-			<Russian>30п. MP5 дозвук. маг.</Russian>
+			<Russian>30п. MP5 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_9X19_MP5_NAME">
 			<English>30Rnd. MP5 mag.</English>
-			<Russian>30п. MP5 маг.</Russian>
+			<Russian>30п. MP5</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_64RND_9X19_BIZONSD_NAME">
 			<English>64Rnd. Bizon SD mag.</English>
-			<Russian>64п. Бизон дозвук. маг.</Russian>
+			<Russian>64п. Бизон дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_64RND_9X19_BIZON_NAME">
 			<English>64Rnd. Bizon mag.</English>
-			<Russian>64п. Бизон маг.</Russian>
+			<Russian>64п. Бизон</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_8RND_9X18_PMSD_NAME">
 			<English>8Rnd. PM SD mag.</English>
-			<Russian>8п. ПМ дозвук. маг.</Russian>
+			<Russian>8п. ПМ дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_9X18_PM_NAME">
 			<English>8Rnd. PM mag.</English>
-			<Russian>8п. ПМ маг.</Russian>
+			<Russian>8п. ПМ</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_7RND_45ACP_1911_NAME">
 			<English>7Rnd. 1911 mag.</English>
-			<Russian>7п. 1911 маг.</Russian>
+			<Russian>7п. 1911</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_45ACP_NAME">
 			<English>6Rnd. Revolver ammo</English>
@@ -19027,20 +19026,20 @@
 
 		<Key ID="STR_DZ_MAG_30RND_545x39_AKSD_NAME">
 			<English>30Rnd. AK-74 SD mag.</English>
-			<Russian>30п. AK-74 дозвук. маг.</Russian>
+			<Russian>30п. AK-74 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_545x39_AK_NAME">
 			<English>30Rnd. AK-74 mag.</English>
-			<Russian>30п. АК-74 маг.</Russian>
+			<Russian>30п. АК-74</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_30RND_762X39_AK47_NAME">
 			<English>30Rnd. AK-47M mag.</English>
-			<Russian>30п. АК-47М маг.</Russian>
+			<Russian>30п. АК-47М</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_60RND_762X39_AK47_NAME">
 			<English>60Rnd. AK-47M mag.</English>
-			<Russian>60п. АК-47М маг.</Russian>
+			<Russian>60п. АК-47М</Russian>
 		</Key>
 		<Key ID="STR_DZE_MAG_60RND_762X39_AK47_DESC">
 			<English>Caliber: 7.62x39mm &lt;br/&gt;Rounds: 60, duct-taped &lt;br/&gt;Used in: AK-47M, SA-58, RPK, SCAR-H AK</English>
@@ -19049,54 +19048,54 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_762X39_SA58_NAME">
 			<English>30Rnd. SA-58 mag.</English>
-			<Russian>30п. SA-58 маг.</Russian>
+			<Russian>30п. SA-58</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_556x45_G36SD_NAME">
 			<English>30Rnd. G36 SD mag.</English>
-			<Russian>30п. G36 дозвук. маг.</Russian>
+			<Russian>30п. G36 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_556x45_G36_NAME">
 			<English>30Rnd. G36 mag.</English>
-			<Russian>30п. G36 маг.</Russian>
+			<Russian>30п. G36</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_556x45_STANAGSD_NAME">
 			<English>30Rnd. STANAG SD mag.</English>
-			<Russian>30п. STANAG дозвук. маг.</Russian>
+			<Russian>30п. STANAG дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_556x45_STANAG_NAME">
 			<English>30Rnd. STANAG mag.</English>
-			<Russian>30п. STANAG маг.</Russian>
+			<Russian>30п. STANAG</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_20RND_762X51_FNFAL_NAME">
 			<English>20Rnd. FN FAL mag.</English>
-			<Russian>20п. FN FAL маг.</Russian>
+			<Russian>20п. FN FAL</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_762X51_DMR_NAME">
 			<English>20Rnd. DMR mag.</English>
-			<Russian>20п. DMR маг.</Russian>
+			<Russian>20п. DMR</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_762X51_DMRSD_NAME">
 			<English>20Rnd. DMR SD mag.</English>
-			<Russian>20п. DMR дозвук. маг.</Russian>
+			<Russian>20п. DMR дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_762X51_M24_NAME">
 			<English>5Rnd. M24/M40 mag.</English>
-			<Russian>5п. M24/M40 маг.</Russian>
+			<Russian>5п. M24/M40</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_100RND_762X51_M240_NAME">
 			<English>100Rnd. M240 belt</English>
 			<German>100Rnd. M240 Gurt</German>
-			<Russian>100п. M240 лента</Russian>
+			<Russian>100п. M240</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_100RND_762x54_PK_NAME">
 			<English>100Rnd. PK belt</English>
 			<German>100Rnd. PK Gurt</German>
-			<Russian>100п. ПК лента</Russian>
+			<Russian>100п. ПК</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_762x54_SVD_NAME">
 			<English>10Rnd. SVD/SVU mag.</English>
-			<Russian>10п. СВД/СВУ маг.</Russian>
+			<Russian>10п. СВД/СВУ</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_BOLT_TRQ_NAME">
@@ -19124,7 +19123,7 @@
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_NAME">
 			<English>50Rnd. UK-59 belt</English>
 			<German>50Rnd. UK-59 Gurt</German>
-			<Russian>50п. UK-59 лента</Russian>
+			<Russian>50п. UK-59</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_50RND_762X54_UK59_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 50&lt;br/&gt;Used in: UK-59</English>
@@ -19135,7 +19134,7 @@
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_NAME">
 			<English>75Rnd. RPK drum mag.</English>
 			<German>75Rnd. RPK Trommelmagazin</German>
-			<Russian>75п. РПК барабан</Russian>
+			<Russian>75п. РПК</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_75RND_762X39_RPK_DESC">
 			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 75&lt;br/&gt;Used in: RPK</English>
@@ -19146,36 +19145,36 @@
 		<Key ID="STR_DZ_MAG_75RND_545X39_RPK_NAME">
 			<English>75Rnd. RPK-74 drum mag.</English>
 			<German>75Rnd. RPK-74 Trommelmagazin</German>
-			<Russian>75п. РПК-74 барабан</Russian>
+			<Russian>75п. РПК-74</Russian>
 		</Key>
 
 		<Key ID="STR_DZ_MAG_100RND_556X45_M249_NAME">
 			<English>100Rnd. M249 belt</English>
 			<German>100Rnd. M249 Gurt</German>
-			<Russian>100п. M249 лента</Russian>
+			<Russian>100п. M249</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_556X45_M249_NAME">
 			<English>200Rnd. M249 belt</English>
 			<German>200Rnd. M249 Gurt</German>
-			<Russian>200п. M249 лента</Russian>
+			<Russian>200п. M249</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_556X45_L110_NAME">
 			<English>200Rnd. L110 belt</English>
 			<German>200Rnd. L110 Gurt</German>
-			<Russian>200п. L110 лента</Russian>
+			<Russian>200п. L110</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_NAME">
 			<English>5Rnd. Mosin Nagant mag.</English>
-			<Russian>5п. для Винтовки Мосина</Russian>
+			<Russian>5п. для Мосинки</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_762X54_MOSIN_DESC">
 			<English>Caliber: 7.62x54mmR&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: Mosin Nagant</English>
-			<Russian>Калибр: 7.62x54ммR&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в Винтовке Мосина</Russian>
+			<Russian>Калибр: 7.62x54ммR&lt;br/&gt;Количество: 5&lt;br/&gt;Исп. в Мосинке</Russian>
 			<German>Kaliber: 7.62x54mmR&lt;br/&gt;Patronen: 5&lt;br/&gt;Verwendet in: Mosin Nagant</German>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_17HMR_NAME">
 			<English>5Rnd. CZ 550 mag.</English>
-			<Russian>5п. CZ 550 маг.</Russian>
+			<Russian>5п. CZ 550</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_17HMR_DESC">
 			<English>Caliber: 9.3x62mm&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: CZ 550</English>
@@ -19184,7 +19183,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_303BRITISH_NAME">
 			<English>10Rnd. Lee Enfield mag.</English>
-			<Russian>10п. SMLE Мк III маг.</Russian>
+			<Russian>10п. SMLE Мк III</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_W1866_NAME">
 			<English>15Rnd. 1866 ammo</English>
@@ -19407,11 +19406,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_MP7_NAME">
 			<English>40Rnd. MP7 mag.</English>
-			<Russian>40п. MP7 маг.</Russian>
+			<Russian>40п. MP7</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_MP7SD_NAME">
 			<English>40Rnd. MP7 SD mag.</English>
-			<Russian>40п. MP7 дозвук. маг.</Russian>
+			<Russian>40п. MP7 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_MP7_DESC">
 			<English>Caliber: 4.6x30mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: MP7</English>
@@ -19437,11 +19436,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_P99_NAME">
 			<English>15Rnd. P99 mag.</English>
-			<Russian>15п. P99 маг.</Russian>
+			<Russian>15п. P99</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_P99SD_NAME">
 			<English>15Rnd. P99 SD mag.</English>
-			<Russian>15п. P99 дозвук. маг.</Russian>
+			<Russian>15п. P99 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_P99_DESC">
 			<English>Caliber: 10x22mm&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: P99</English>
@@ -19467,11 +19466,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_ACR_NAME">
 			<English>30Rnd. ACR mag.</English>
-			<Russian>30п. ACR маг.</Russian>
+			<Russian>30п. ACR</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_ACRSD_NAME">
 			<English>30Rnd. ACR SD mag.</English>
-			<Russian>30п. ACR дозвук. маг.</Russian>
+			<Russian>30п. ACR дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_ACR_DESC">
 			<English>Caliber: 6.80x43mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: ACR</English>
@@ -19497,11 +19496,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_RSASS_NAME">
 			<English>20Rnd. RSASS mag.</English>
-			<Russian>20п. RSASS маг.</Russian>
+			<Russian>20п. RSASS</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_RSASSSD_NAME">
 			<English>20Rnd. RSASS SD mag.</English>
-			<Russian>20п. RSASS дозвук. маг.</Russian>
+			<Russian>20п. RSASS дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_RSASS_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: RSASS</English>
@@ -19527,11 +19526,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_MSR_NAME">
 			<English>7Rnd. MSR mag.</English>
-			<Russian>7п. MSR маг.</Russian>
+			<Russian>7п. MSR</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_MSRSD_NAME">
 			<English>7Rnd. MSR SD mag.</English>
-			<Russian>7п. MSR дозвук. маг.</Russian>
+			<Russian>7п. MSR дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_MSR_DESC">
 			<English>Caliber: .338&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: MSR</English>
@@ -19557,11 +19556,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_XM2010_NAME">
 			<English>5Rnd. XM2010 mag.</English>
-			<Russian>5п. XM2010 маг.</Russian>
+			<Russian>5п. XM2010</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_XM2010SD_NAME">
 			<English>5Rnd. XM2010 SD mag.</English>
-			<Russian>5п. XM2010 дозвук. маг.</Russian>
+			<Russian>5п. XM2010 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_XM2010_DESC">
 			<English>Caliber: .300&lt;br/&gt;Rounds: 5&lt;br/&gt;Used in: XM2010</English>
@@ -19587,7 +19586,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_KACPDW_NAME">
 			<English>30Rnd. KAC PDW mag.</English>
-			<Russian>30п. KAC PDW маг.</Russian>
+			<Russian>30п. KAC PDW</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_KACPDW_DESC">
 			<English>Caliber: 6x35mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: KAC PDW</English>
@@ -19632,7 +19631,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_13RND_9x19_BHP_NAME">
 			<English>13Rnd. Browning mag.</English>
-			<Russian>13п. Browning маг.</Russian>
+			<Russian>13п. Browning</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_13RND_BHP_9x19_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 13&lt;br/&gt;Used in: FN Browning HP</English>
@@ -19647,7 +19646,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_9x19_P226_NAME">
 			<English>15Rnd. P226 mag.</English>
-			<Russian>15п. P226 маг.</Russian>
+			<Russian>15п. P226</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_P226_9x19_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: SIG Sauer P226</English>
@@ -19662,7 +19661,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_9x19_P38_NAME">
 			<English>8Rnd. P38 mag.</English>
-			<Russian>8п. P38 маг.</Russian>
+			<Russian>8п. P38</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_P38_9x19_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Walther P38</English>
@@ -19677,7 +19676,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_9x17_PPK_NAME">
 			<English>7Rnd. PPK mag.</English>
-			<Russian>7п. PPK маг.</Russian>
+			<Russian>7п. PPK</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_PPK_9x17_DESC">
 			<English>Caliber: .380 ACP&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Walther PPK</English>
@@ -19692,7 +19691,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_9x19_MK22_NAME">
 			<English>8Rnd. MK 22 mag.</English>
-			<Russian>8п. MK 22 маг.</Russian>
+			<Russian>8п. MK 22</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_MK22_9x19_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Mk 22 Mod 0</English>
@@ -19707,7 +19706,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_9x19_MK22SD_NAME">
 			<English>8Rnd. MK 22 SD mag.</English>
-			<Russian>8п. MK 22 дозвук. маг.</Russian>
+			<Russian>8п. MK 22 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_MK22SD_9x19_DESC">
 			<English>Caliber: 9x19mm Parabellum SD&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Mk 22 Mod 0 SD</English>
@@ -19722,7 +19721,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_45ACP_USP_NAME">
 			<English>15Rnd. USP mag.</English>
-			<Russian>15п. USP маг.</Russian>
+			<Russian>15п. USP</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_USP_45ACP_DESC">
 			<English>Caliber: .45 ACP&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: USP</English>
@@ -19737,7 +19736,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_45ACP_USPSD_NAME">
 			<English>15Rnd. USP SD mag.</English>
-			<Russian>15п. USP дозвук. маг.</Russian>
+			<Russian>15п. USP дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_USPSD_45ACP_DESC">
 			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: USP SD</English>
@@ -19763,7 +19762,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_45ACP_KIMBER1911SD_NAME">
 			<English>7Rnd. M1911 SD mag.</English>
-			<Russian>7п. M1911 дозвук. маг.</Russian>
+			<Russian>7п. M1911 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_KIMBER1911SD_45ACP_DESC">
 			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Kimber M1911 SD</English>
@@ -19778,7 +19777,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_762x25_TT33_NAME">
 			<English>8Rnd. TT-33 mag.</English>
-			<Russian>8п. TT-33 маг.</Russian>
+			<Russian>8п. TT-33</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_TT33_762x25_DESC">
 			<English>Caliber: 7.62x25mm&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: Tokarew TT-33</English>
@@ -19793,7 +19792,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_C22_RUGERMK2_NAME">
 			<English>10Rnd. Ruger MK2 mag.</English>
-			<Russian>10п. Ruger MK2 маг.</Russian>
+			<Russian>10п. Ruger MK2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_RUGERMK2_C22_DESC">
 			<English>Caliber: .22 lfB&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: Ruger MK2</English>
@@ -19808,7 +19807,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_9x19mm_M93R_NAME">
 			<English>20Rnd. M93R mag.</English>
-			<Russian>20п. M93R маг.</Russian>
+			<Russian>20п. M93R</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_9x19mm_M93R_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: M93R</English>
@@ -19823,7 +19822,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_9x19mm_G18_NAME">
 			<English>33Rnd. G18 mag.</English>
-			<Russian>33п. G18 маг.</Russian>
+			<Russian>33п. G18</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_9x19mm_G18_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: G18</English>
@@ -19838,7 +19837,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_32RND_9x19mm_TEC9_NAME">
 			<English>32Rnd. Tec-9 mag.</English>
-			<Russian>32п. Tec-9 маг.</Russian>
+			<Russian>32п. Tec-9</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_32RND_9x19mm_TEC9_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Tec-9</English>
@@ -19897,15 +19896,15 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_762x51_B_SCAR_NAME">
 			<English>20Rnd. SCAR mag.</English>
-			<Russian>20п. SCAR маг.</Russian>
+			<Russian>20п. SCAR</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_762x51_SB_SCAR_NAME">
 			<English>20Rnd. SCAR SD mag.</English>
-			<Russian>20п. SCAR дозвук. маг.</Russian>
+			<Russian>20п. SCAR дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10Rnd_127x99_M107_NAME">
 			<English>10Rnd. M107 mag.</English>
-			<Russian>10п. M107 маг.</Russian>
+			<Russian>10п. M107</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_127x99_M107_DESC">
 			<English>Caliber: 12.7x99mm NATO&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: M107, AS50</English>
@@ -19920,23 +19919,23 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_5Rnd_127x99_AS50_NAME">
 			<English>5Rnd. AS50 mag.</English>
-			<Russian>5п. AS50 маг.</Russian>
+			<Russian>5п. AS50</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5Rnd_127x108_KSVK_NAME">
 			<English>5Rnd. KSVK mag.</English>
-			<Russian>5п. КСВК маг.</Russian>
+			<Russian>5п. КСВК</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5Rnd_86x70_L115A1_NAME">
 			<English>5Rnd. L115 mag.</English>
-			<Russian>5п. L115 маг.</Russian>
+			<Russian>5п. L115</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_9x39_SP5_VSS_NAME">
 			<English>20Rnd. VSS/VAL mag.</English>
-			<Russian>20п. ВСС/ВАЛ маг.</Russian>
+			<Russian>20п. ВСС/ВАЛ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10Rnd_9x39_SP5_VSS_NAME">
 			<English>10Rnd. VSS/VAL mag.</English>
-			<Russian>10п. ВСС/ВАЛ маг.</Russian>
+			<Russian>10п. ВСС/ВАЛ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_939_VSSVAL_DESC">
 			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: VSS Vintorez, AS VAL</English>
@@ -19969,7 +19968,7 @@
 			<Russian>20п. AA-12 (дробь)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20Rnd_B_AA12_HE_NAME">
-			<English>20Rnd. AA-12 HE.</English>
+			<English>20Rnd. AA-12 HE</English>
 			<Russian>20п. AA-12 (фугас)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_12GAUGE_SLUG_DESC">
@@ -19989,15 +19988,15 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_10Rnd_762x51_CZ750_NAME">
 			<English>10Rnd. CZ 750 mag.</English>
-			<Russian>10п. CZ 750 маг.</Russian>
+			<Russian>10п. CZ 750</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_18Rnd_9x19_CZ75_NAME">
 			<English>18Rnd. CZ 75 mag.</English>
-			<Russian>18п. CZ 75 маг.</Russian>
+			<Russian>18п. CZ 75</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_18Rnd_9x19_SD_CZ75_NAME">
 			<English>18Rnd. CZ 75 SD mag.</English>
-			<Russian>18п. CZ 75 дозвук. маг.</Russian>
+			<Russian>18п. CZ 75 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_CZ750_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: CZ 750</English>
@@ -20016,7 +20015,7 @@
 		</Key>
 	  <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_NAME">
 			<English>3Rnd. Anzio 20mm mag.</English>
-			<Russian>3п. Anzio 20мм маг.</Russian>
+			<Russian>3п. Anzio 20мм</Russian>
 	  </Key>
       <Key ID="STR_DZ_MAG_3RND_20x102mm_ANZIO_DESC">
 			<English>Caliber: 20x102mm&lt;br/&gt;Rounds: 3&lt;br/&gt;Used in: Anzio 20mm</English>
@@ -20031,7 +20030,7 @@
       </Key>
 		<Key ID="STR_DZ_MAG_33RND_45ACP_KRISS_NAME">
 			<English>33Rnd. KRISS mag.</English>
-			<Russian>33п. KRISS маг.</Russian>
+			<Russian>33п. KRISS</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_KRISS_45ACP_DESC">
 			<English>Caliber: .45 ACP&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: KRISS</English>
@@ -20046,7 +20045,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_45ACP_KRISSSD_NAME">
 			<English>33Rnd. KRISS SD mag.</English>
-			<Russian>33п. KRISS дозвук. маг.</Russian>
+			<Russian>33п. KRISS дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_KRISSSD_45ACP_DESC">
 			<English>Caliber: .45 ACP SD&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: KRISS SD</English>
@@ -20083,11 +20082,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_9X19_TMPSD_NAME">
 			<English>30Rnd. TMP SD mag.</English>
-			<Russian>30п. TMP дозвук. маг.</Russian>
+			<Russian>30п. TMP дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_9X19_TMP_NAME">
 			<English>30Rnd. TMP mag.</English>
-			<Russian>30п. TMP маг.</Russian>
+			<Russian>30п. TMP</Russian>
 		</Key>
         <Key ID="STR_DZ_MAG_30RND_TMP_DESC">
 			<German>Kaliber: 9x19mm Parabellum &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: Steyr TMP</German>
@@ -20113,11 +20112,11 @@
         </Key>
 		<Key ID="STR_DZ_MAG_25RND_45_UMP_NAME">
 			<English>25Rnd. UMP mag.</English>
-			<Russian>25п. UMP маг.</Russian>
+			<Russian>25п. UMP</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_25RND_45_UMPSD_NAME">
 			<English>25Rnd. UMP SD mag.</English>
-			<Russian>25п. UMP дозвук. маг.</Russian>
+			<Russian>25п. UMP дозвук.</Russian>
 		</Key>
         <Key ID="STR_DZ_MAG_25RND_UMP_DESC">
 			<German>Kaliber: .45 ACP &lt;br/&gt;Patronen: 25 &lt;br/&gt;Verwendet in: UMP</German>
@@ -20143,11 +20142,11 @@
         </Key>
 		<Key ID="STR_DZ_MAG_50RND_P90_NAME">
 			<English>50Rnd. P90 mag.</English>
-			<Russian>50п. P90 маг.</Russian>
+			<Russian>50п. P90</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_50RND_P90SD_NAME">
 			<English>50Rnd. P90 SD mag.</English>
-			<Russian>50п. P90 дозвук. маг.</Russian>
+			<Russian>50п. P90 дозвук.</Russian>
 		</Key>
         <Key ID="STR_DZ_MAG_50RND_P90_DESC">
 			<German>Kaliber: 5.7x28mm &lt;br/&gt;Patronen: 50 &lt;br/&gt;Verwendet in: P90</German>
@@ -20173,11 +20172,11 @@
         </Key>
 		<Key ID="STR_DZ_MAG_20RND_HK417_NAME">
 			<English>20Rnd. HK417 mag.</English>
-			<Russian>20п. HK417 маг.</Russian>
+			<Russian>20п. HK417</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_HK417SD_NAME">
 			<English>20Rnd. HK417 SD mag.</English>
-			<Russian>20п. HK417 дозвук. маг.</Russian>
+			<Russian>20п. HK417 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_HK417_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: HK417</English>
@@ -20203,11 +20202,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_APS_NAME">
 			<English>20Rnd. APS mag.</English>
-			<Russian>20п. АПС маг.</Russian>
+			<Russian>20п. АПС</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_APSSD_NAME">
 			<English>20Rnd. APS SD mag.</English>
-			<Russian>20п. АПС дозвук. маг.</Russian>
+			<Russian>20п. АПС дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_APS_DESC">
 			<English>Caliber: 9x18mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: APS</English>
@@ -20233,7 +20232,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_RK95_NAME">
 			<English>30Rnd. RK-95 mag.</English>
-			<Russian>30п. RK-95 маг.</Russian>
+			<Russian>30п. RK-95</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_RK95_DESC">
 			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: RK-95</English>
@@ -20248,7 +20247,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_RK95SD_NAME">
 			<English>30Rnd. RK-95 SD mag.</English>
-			<Russian>30п. RK-95 дозвук. маг.</Russian>
+			<Russian>30п. RK-95 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_RK95SD_DESC">
 			<English>Caliber: 7.62x39mm SD&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: RK-95 SD</English>
@@ -20285,11 +20284,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_Groza9_NAME">
 			<English>20Rnd. Groza-9 mag.</English>
-			<Russian>20п. Гроза-9 маг.</Russian>
+			<Russian>20п. Гроза-9</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_Groza9SD_NAME">
 			<English>20Rnd. Groza-9 SD mag.</English>
-			<Russian>20п. Гроза-9 дозвук. маг.</Russian>
+			<Russian>20п. Гроза-9 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_Groza9_DESC">
 			<English>Caliber: 9x39mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: Groza-9</English>
@@ -20315,11 +20314,11 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_Groza1_NAME">
 			<English>30Rnd. Groza-1 mag.</English>
-			<Russian>30п. Гроза-1 маг.</Russian>
+			<Russian>30п. Гроза-1</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_Groza1SD_NAME">
 			<English>30Rnd. Groza-1 SD mag.</English>
-			<Russian>30п. Гроза-1 дозвук. маг.</Russian>
+			<Russian>30п. Гроза-1 дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_Groza1_DESC">
 			<English>Caliber: 7.62x39mm&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: Groza-1</English>
@@ -20367,7 +20366,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_556x45_AUG_NAME">
 			<English>30Rnd. Steyr Aug mag.</English>
-			<Russian>30п. Steyr Aug маг.</Russian>
+			<Russian>30п. Steyr Aug</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_AUG_DESC">
 			<German>Kaliber: 5.56x45mm &lt;br/&gt;Patronen: 30 &lt;br/&gt;Verwendet in: Steyr Aug A3</German>
@@ -20382,7 +20381,7 @@
         </Key>
 		<Key ID="STR_DZ_MAG_5RND_408_CHEYTAC_NAME">
 			<English>5Rnd. Chey Tac mag.</English>
-			<Russian>5п. Chey Tac маг.</Russian>
+			<Russian>5п. Chey Tac</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_CHEYTAC_DESC">
 			<German>Kaliber: .408 Chey Tac &lt;br/&gt;Patronen: 5 &lt;br/&gt;Verwendet in: M200 Chey Tac</German>
@@ -20397,7 +20396,7 @@
         </Key>
 		<Key ID="STR_DZ_MAG_5RND_408_CHEYTAC_SD_NAME">
 			<English>5Rnd. Chey Tac SD mag.</English>
-			<Russian>5п. Chey Tac дозвук. маг.</Russian>
+			<Russian>5п. Chey Tac дозвук.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_CHEYTAC_SD_DESC">
 			<German>Kaliber: .408 Chey Tac SD &lt;br/&gt;Patronen: 5 &lt;br/&gt;Verwendet in: M200 Chey Tac SD</German>
@@ -20412,7 +20411,7 @@
         </Key>
 		<Key ID="STR_DZ_MAG_6RND_WA2000_NAME">
 			<English>6Rnd. WA2000 mag.</English>
-			<Russian>6п. WA2000 маг.</Russian>
+			<Russian>6п. WA2000</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_WA2000_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 6&lt;br/&gt;Used in: WA2000</English>
@@ -20427,7 +20426,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_BARRETT_MRAD_NAME">
 			<English>10Rnd. MRAD mag.</English>
-			<Russian>10п. MRAD маг.</Russian>
+			<Russian>10п. MRAD</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_BARRETT_MRAD_DESC">
 			<English>Caliber: .338&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: Barrett MRAD</English>
@@ -20442,7 +20441,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_32RND_9x19mm_STEN_NAME">
 			<English>32Rnd. Sten MK mag.</English>
-			<Russian>32п. Sten MK маг.</Russian>
+			<Russian>32п. Sten MK</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_32RND_9x19mm_STEN_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: Sten MK</English>
@@ -20457,7 +20456,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_G3_NAME">
 			<English>20Rnd. G3 mag.</English>
-			<Russian>20п. G3 маг.</Russian>
+			<Russian>20п. G3</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_G3_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: G3</English>
@@ -20472,7 +20471,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_32RND_9x19mm_MAT49_NAME">
 			<English>32Rnd. MAT-49 mag.</English>
-			<Russian>32п. MAT-49 маг.</Russian>
+			<Russian>32п. MAT-49</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_32RND_9x19mm_MAT49_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 32&lt;br/&gt;Used in: MAT-49</English>
@@ -20487,7 +20486,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_70RND_9x19mm_M31_NAME">
 			<English>70Rnd. Suomi M-31 mag.</English>
-			<Russian>70п. Suomi M-31 барабан.</Russian>
+			<Russian>70п. Suomi M-31</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_70RND_9x19mm_M31_DESC">
 			<English>Caliber: 9x19mm Parabellum&lt;br/&gt;Rounds: 70&lt;br/&gt;Used in: Suomi M-31</English>
@@ -20502,7 +20501,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_USAS12_SLUG_NAME">
 			<English>20Rnd. USAS-12 Slug</English>
-			<Russian>20п. USAS-12 пуля</Russian>
+			<Russian>20п. USAS-12 (пуля)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_USAS12_SLUG_DESC">
 			<English>Caliber: Caliber 12 Slug &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: USAS-12</English>
@@ -20518,7 +20517,7 @@
 		<Key ID="STR_DZ_MAG_20RND_USAS12_PELLETS_NAME">
 			<English>20Rnd. USAS-12 Pellets</English>
 			<German>20Rnd. USAS-12 Schrot</German>
-			<Russian>20п. USAS-12 дробь</Russian>
+			<Russian>20п. USAS-12 (дробь)</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_USAS12_PELLETS_DESC">
 			<English>Caliber: Caliber 12 Pellets &lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: USAS-12</English>
@@ -20533,7 +20532,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_50AE_DESERT_EAGLE_NAME">
 			<English>7Rnd. .50 AE mag.</English>
-			<Russian>7п. .50 AE маг.</Russian>
+			<Russian>7п. .50 AE</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_7RND_50AE_DESERT_EAGLE_DESC">
 			<English>Caliber: .50 AE&lt;br/&gt;Rounds: 7&lt;br/&gt;Used in: Desert Eagle</English>
@@ -20661,7 +20660,7 @@
 
 		<Key ID="STR_DZ_MAG_6RND_M32_HELI_NAME">
 			<English>6Rnd. HE M32 Heli</English>
-			<Russian>6п. M32 Heli ОФ</Russian>
+			<Russian>6г. M32 Heli ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_M32_HELI_DESC">
 			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 6&lt;br/&gt;Used in: M32 Heli</English>
@@ -20670,7 +20669,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_M240_NAME">
 			<English>200Rnd. M240 mag.</English>
-			<Russian>200п. M240 маг.</Russian>
+			<Russian>200п. M240</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_M240_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: Jackal L2A1, Jackal MK19</English>
@@ -20679,7 +20678,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1200RND_M240_NAME">
 			<English>1200Rnd. M240 mag.</English>
-			<Russian>1200п. M240 маг.</Russian>
+			<Russian>1200п. M240</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1200RND_M240_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 1200&lt;br/&gt;Used in: M240</English>
@@ -20694,7 +20693,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_460RND_M240_NAME">
 			<English>460Rnd. Pandur II mag.</English>
-			<Russian>460п. Pandur II маг.</Russian>
+			<Russian>460п. Pandur II</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_460RND_M240_DESC">
 			<English>Caliber: 7.62x51mm&lt;br/&gt;Rounds: 460&lt;br/&gt;Used in: Pandur II</English>
@@ -20709,7 +20708,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1200RND_M621_NAME">
 			<English>1200Rnd. M621 mag.</English>
-			<Russian>1200п. M621 маг.</Russian>
+			<Russian>1200с. M621</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1200RND_M621_DESC">
 			<English>Caliber: 20mm&lt;br/&gt;Rounds: 1200&lt;br/&gt;Used in: M621</English>
@@ -20724,7 +20723,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1500RND_PKT_NAME">
 			<English>1500Rnd. PKT mag.</English>
-			<Russian>1500п. ПКТ маг.</Russian>
+			<Russian>1500п. ПКТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1500RND_PKT_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 1500&lt;br/&gt;Used in: PKT</English>
@@ -20739,7 +20738,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_PKT_NAME">
 			<English>2000Rnd. PKT mag.</English>
-			<Russian>2000п. ПКТ маг.</Russian>
+			<Russian>2000п. ПКТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_PKT_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: PKT</English>
@@ -20754,7 +20753,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_PKT_NAME">
 			<English>250Rnd. PKT T90 mag.</English>
-			<Russian>250п. ПКТ T90 маг.</Russian>
+			<Russian>250п. ПКТ T90</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_PKT_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: PKT T90</English>
@@ -20769,7 +20768,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_PKT_NAME">
 			<English>200Rnd. PKT mag.</English>
-			<Russian>200п. ПКТ маг.</Russian>
+			<Russian>200п. ПКТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_PKT_DESC">
 			<English>Caliber: 7.62x54mm&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: PKT</English>
@@ -20784,7 +20783,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_29RND_AGS30_NAME">
 			<English>29Rnd. AGS-30</English>
-			<Russian>29п. АГС-30</Russian>
+			<Russian>29г. АГС-30</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_29RND_AGS30_DESC">
 			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 29&lt;br/&gt;Used in: AGS-30, AGS-17</English>
@@ -20793,7 +20792,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_29RND_AGS30_HELI_NAME">
 			<English>29Rnd. AGS-30 Heli</English>
-			<Russian>29п. АГС-30 Heli</Russian>
+			<Russian>29г. АГС-30 Heli</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_29RND_AGS30_HELI_DESC">
 			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 29&lt;br/&gt;Used in: AGS-30 Heli</English>
@@ -20802,7 +20801,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_400RND_AGS17_NAME">
 			<English>400Rnd. AGS-17</English>
-			<Russian>400п. АГС-17</Russian>
+			<Russian>400г. АГС-17</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_400RND_AGS17_DESC">
 			<English>Caliber: 30mm HE &lt;br/&gt;Grenades: 400&lt;br/&gt;Used in: AGS-17</English>
@@ -20811,7 +20810,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_48RND_MK19_NAME">
 			<English>48Rnd. MK 19</English>
-			<Russian>48п. MK 19</Russian>
+			<Russian>48г. MK 19</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_48RND_MK19_DESC">
 			<English>Caliber: 40mm HE &lt;br/&gt;Grenades: 48&lt;br/&gt;Used in: MK 19</English>
@@ -20971,7 +20970,7 @@
 		<Key ID="STR_DZ_MAG_12RND_POOKGRENADE_NAME">
 			<English>12Rnd. Pook Grenade</English>
 			<German>12Rnd. Pook Granate</German>
-			<Russian>12п. Pook Grenade</Russian>
+			<Russian>12г. Pook Grenade</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_POOKGRENADE_DESC">
 			<English>HE Grenade &lt;br/&gt;Grenades: 12&lt;br/&gt;Used in: Pook</English>
@@ -20981,7 +20980,7 @@
 		<Key ID="STR_DZ_MAG_6RND_CAMELGRENADE_NAME">
 			<English>6Rnd. Camel Grenade</English>
 			<German>6Rnd. Camel Granate</German>
-			<Russian>6п. Camel Grenade</Russian>
+			<Russian>6г. Camel Grenade</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_CAMELGRENADE_DESC">
 			<English>HE Grenade &lt;br/&gt;Grenades: 6&lt;br/&gt;Used in: Camel</English>
@@ -20991,7 +20990,7 @@
 		<Key ID="STR_DZ_MAG_3RND_MOZZIEGRENADE_NAME">
 			<English>3Rnd. Pook Grenade</English>
 			<German>3Rnd. Pook Granate</German>
-			<Russian>3п. Pook Grenade</Russian>
+			<Russian>3г. Pook Grenade</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_3RND_MOZZIEGRENADE_DESC">
 			<English>HE Grenade &lt;br/&gt;Grenades: 3&lt;br/&gt;Used in: Mozzie</English>
@@ -21016,7 +21015,7 @@
 		<Key ID="STR_DZ_MAG_60RND_DECOYFLARES_NAME">
 			<English>60Rnd. Decoy Flare</English>
 			<German>60Rnd. IR-Täuschkörper</German>
-			<Russian>60п. Тепловые ловушки</Russian>
+			<Russian>60з. Тепловые ловушки</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_60RND_DECOYFLARES_DESC">
 			<English>Decoy Flare &lt;br/&gt;Flares: 60&lt;br/&gt;Used in: Flare Launcher</English>
@@ -21026,7 +21025,7 @@
 		<Key ID="STR_DZ_MAG_120RND_DECOYFLARES_NAME">
 			<English>120Rnd. Decoy Flare</English>
 			<German>120Rnd. IR-Täuschkörper</German>
-			<Russian>120п. Тепловые ловушки</Russian>
+			<Russian>120з. Тепловые ловушки</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_120RND_DECOYFLARES_DESC">
 			<English>Decoy Flare &lt;br/&gt;Flares: 120&lt;br/&gt;Used in: Flare Launcher</English>
@@ -21036,7 +21035,7 @@
 		<Key ID="STR_DZ_MAG_240RND_DECOYFLARES_NAME">
 			<English>240Rnd. Decoy Flare</English>
 			<German>240Rnd. IR-Täuschkörper</German>
-			<Russian>240п. Тепловые ловушки</Russian>
+			<Russian>240з. Тепловые ловушки</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_240RND_DECOYFLARES_DESC">
 			<English>Decoy Flare &lt;br/&gt;Flares: 240&lt;br/&gt;Used in: Flare Launcher</English>
@@ -21046,7 +21045,7 @@
 		<Key ID="STR_DZ_MAG_60RND_CHAFFFLARES_NAME">
 			<English>60Rnd. Chaff Flare</English>
 			<German>60Rnd. Radartäuschkörper</German>
-			<Russian>60п. Радиолокационные ловушки</Russian>
+			<Russian>60з. Радиолокационные ловушки</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_60RND_CHAFFFLARES_DESC">
 			<English>Chaff Flare &lt;br/&gt;Flares: 60&lt;br/&gt;Used in: Flare Launcher</English>
@@ -21056,7 +21055,7 @@
 		<Key ID="STR_DZ_MAG_120RND_CHAFFFLARES_NAME">
 			<English>120Rnd. Chaff Flare</English>
 			<German>120Rnd. Radartäuschkörper</German>
-			<Russian>120п. Радиолокационные ловушки</Russian>
+			<Russian>120з. Радиолокационные ловушки</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_120RND_CHAFFFLARES_DESC">
 			<English>Chaff Flare &lt;br/&gt;Flares: 120&lt;br/&gt;Used in: Flare Launcher</English>
@@ -21066,7 +21065,7 @@
 		<Key ID="STR_DZ_MAG_240RND_CHAFFFLARES_NAME">
 			<English>240Rnd. Chaff Flare</English>
 			<German>240Rnd. Radartäuschkörper</German>
-			<Russian>240п. Радиолокационные ловушки</Russian>
+			<Russian>240з. Радиолокационные ловушки</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_240RND_CHAFFFLARES_DESC">
 			<English>Chaff Flare &lt;br/&gt;Flares: 240&lt;br/&gt;Used in: Flare Launcher</English>
@@ -21076,7 +21075,7 @@
 		<Key ID="STR_DZ_MAG_2RND_SMOKEGRENADES_NAME">
 			<English>2Rnd. Smoke Grenades</English>
 			<German>2Rnd. Nebelgranaten</German>
-			<Russian>2п. Дымовые гранаты</Russian>
+			<Russian>2г. Дымовые гранаты</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_SMOKEGRENADES_DESC">
 			<English>Defense Smoke Grenades &lt;br/&gt;Smoke Grenades: 2&lt;br/&gt;Used in: Smoke Launcher</English>
@@ -21085,7 +21084,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_500RND_KPVT_NAME">
 			<English>500Rnd. KPVT mag.</English>
-			<Russian>500п. КПВТ маг.</Russian>
+			<Russian>500п. КПВТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_500RND_KPVT_DESC">
 			<English>KPVT &lt;br/&gt;Rounds: 500&lt;br/&gt;Used in: KPVT</English>
@@ -21094,7 +21093,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_230RND_2A42_NAME">
 			<English>230Rnd. 2A42 HE mag.</English>
-			<Russian>230п. 2A42 ОФ маг.</Russian>
+			<Russian>230с. 2A42 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_230RND_2A42_DESC">
 			<English>30mm HE&lt;br/&gt;Rounds: 230&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
@@ -21103,7 +21102,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A42_NAME">
 			<English>250Rnd. 2A42 HE mag.</English>
-			<Russian>250п. 2A42 ОФ маг.</Russian>
+			<Russian>250с. 2A42 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A42_DESC">
 			<English>30mm HE&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
@@ -21112,7 +21111,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_150RND_2A42_NAME">
 			<English>150Rnd. 2A42 HE mag.</English>
-			<Russian>150п. 2A42 ОФ маг.</Russian>
+			<Russian>150с. 2A42 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_150RND_2A42_DESC">
 			<English>30mm HE&lt;br/&gt;Rounds: 150&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
@@ -21121,7 +21120,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_150RND_2A42AP_NAME">
 			<English>150Rnd. 2A42 AP mag.</English>
-			<Russian>150п. 2A42 ББ маг.</Russian>
+			<Russian>150с. 2A42 ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_150RND_2A42AP_DESC">
 			<English>30mm AP&lt;br/&gt;Rounds: 150&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
@@ -21130,7 +21129,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A42AP_NAME">
 			<English>250Rnd. 2A42 AP mag.</English>
-			<Russian>250п. 2A42 ББ маг.</Russian>
+			<Russian>250с. 2A42 ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A42AP_DESC">
 			<English>30mm AP&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
@@ -21139,7 +21138,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_230RND_2A42AP_NAME">
 			<English>230Rnd. 2A42 AP mag.</English>
-			<Russian>230п. 2A42 ББ маг.</Russian>
+			<Russian>230с. 2A42 ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_230RND_2A42AP_DESC">
 			<English>30mm AP&lt;br/&gt;Rounds: 230&lt;br/&gt;Used in: 2A42 30mm Cannon</English>
@@ -21148,7 +21147,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A72AP_NAME">
 			<English>250Rnd. 2A72 AP mag.</English>
-			<Russian>250п. 2A72 ББ маг.</Russian>
+			<Russian>250с. 2A72 ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A72AP_DESC">
 			<English>30mm AP&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A72 30mm Cannon</English>
@@ -21157,7 +21156,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A72HE_NAME">
 			<English>250Rnd. 2A72 HE mag.</English>
-			<Russian>250п. 2A72 ОФ маг.</Russian>
+			<Russian>250с. 2A72 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_250RND_2A72HE_DESC">
 			<English>30mm HE&lt;br/&gt;Rounds: 250&lt;br/&gt;Used in: 2A72 30mm Cannon</English>
@@ -21166,7 +21165,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1904RND_2A38MAA_NAME">
 			<English>1904Rnd. 2A38M AA mag.</English>
-			<Russian>1904п. 2A38M ПВ маг.</Russian>
+			<Russian>1904с. 2A38M ПВ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1904RND_2A38MAA_DESC">
 			<English>30mm AA&lt;br/&gt;Rounds: 1904&lt;br/&gt;Used in: 2A38M 30mm Cannon</English>
@@ -21175,7 +21174,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1470RND_YAKB_NAME">
 			<English>1470Rnd. YakB mag.</English>
-			<Russian>1470п. ЯкБ маг.</Russian>
+			<Russian>1470п. ЯкБ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1470RND_YAKB_DESC">
 			<English>Caliber: 12.7x108mm&lt;br/&gt;Rounds: 1470&lt;br/&gt;Used in: YakB</English>
@@ -21190,7 +21189,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_750RND_M197_NAME">
 			<English>750Rnd. M197 mag.</English>
-			<Russian>750п. M197 маг.</Russian>
+			<Russian>750с. M197</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_750RND_M197_DESC">
 			<English>Caliber: 20mm&lt;br/&gt;Rounds: 750&lt;br/&gt;Used in: M197</English>
@@ -21205,7 +21204,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2100RND_M168_NAME">
 			<English>2100Rnd. M168 mag.</English>
-			<Russian>2100п. M168 маг.</Russian>
+			<Russian>2100с. M168</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2100RND_M168_DESC">
 			<English>Caliber: 20mm&lt;br/&gt;Rounds: 2100&lt;br/&gt;Used in: M168</English>
@@ -21220,7 +21219,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_AZP85_NAME">
 			<English>2000Rnd. AZP85 mag.</English>
-			<Russian>2000п. АЗП-85 маг.</Russian>
+			<Russian>2000с. АЗП-85</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2000RND_AZP85_DESC">
 			<English>Caliber: 23mm&lt;br/&gt;Rounds: 2000&lt;br/&gt;Used in: AZP85</English>
@@ -21235,7 +21234,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_AZP85_NAME">
 			<English>40Rnd. AZP85 mag.</English>
-			<Russian>40п. АЗП-85 маг.</Russian>
+			<Russian>40с. АЗП-85</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_AZP85_DESC">
 			<English>Caliber: 23mm&lt;br/&gt;Rounds: 40&lt;br/&gt;Used in: AZP85</English>
@@ -21250,7 +21249,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1000RND_2A14HE_NAME">
 			<English>1000Rnd. 2A14 HE mag.</English>
-			<Russian>1000п. 2A14 ОФ маг.</Russian>
+			<Russian>1000с. 2A14 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1000RND_2A14HE_DESC">
 			<English>Caliber: 23mm HE&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: 2A14</English>
@@ -21265,7 +21264,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1000RND_2A14AP_NAME">
 			<English>1000Rnd. 2A14 AP mag.</English>
-			<Russian>1000п. 2A14 ББ маг.</Russian>
+			<Russian>1000с. 2A14 ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1000RND_2A14AP_DESC">
 			<English>Caliber: 23mm AP&lt;br/&gt;Rounds: 1000&lt;br/&gt;Used in: 2A14</English>
@@ -21280,7 +21279,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_520RND_GSh23L_NAME">
 			<English>520Rnd. GSh23L mag.</English>
-			<Russian>520п. ГШ-23Л маг.</Russian>
+			<Russian>520с. ГШ-23Л</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_520RND_GSh23L_DESC">
 			<English>Caliber: 23mm&lt;br/&gt;Rounds: 520&lt;br/&gt;Used in: GSh23L</English>
@@ -21295,7 +21294,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_300RND_GAU12_NAME">
 			<English>300Rnd. GAU12 mag.</English>
-			<Russian>300п. GAU12 маг.</Russian>
+			<Russian>300с. GAU12</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_300RND_GAU12_DESC">
 			<English>Caliber: 25mm HE&lt;br/&gt;Rounds: 300&lt;br/&gt;Used in: GAU12</English>
@@ -21310,7 +21309,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_M242HE_NAME">
 			<English>210Rnd. M242 HE mag.</English>
-			<Russian>210п. M242 ОФ маг.</Russian>
+			<Russian>210с. M242 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_M242HE_DESC">
 			<English>Caliber: 25mm HE&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: M242</English>
@@ -21325,7 +21324,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_M242AP_NAME">
 			<English>210Rnd. M242 AP mag.</English>
-			<Russian>210п. M242 ББ маг.</Russian>
+			<Russian>210с. M242 ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_M242AP_DESC">
 			<English>Caliber: 25mm AP&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: M242</English>
@@ -21340,7 +21339,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1350RND_GAU8_NAME">
 			<English>1350Rnd. GAU-8 mag.</English>
-			<Russian>1350п. GAU-8 маг.</Russian>
+			<Russian>1350с. GAU-8</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1350RND_GAU8_DESC">
 			<English>Caliber: 30mm AP&lt;br/&gt;Rounds: 1350&lt;br/&gt;Used in: GAU-8</English>
@@ -21355,7 +21354,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_180RND_GSh301_NAME">
 			<English>180Rnd. GSh-301 HE mag.</English>
-			<Russian>180п. ГШ-301 ОФ маг.</Russian>
+			<Russian>180с. ГШ-301 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_180RND_GSh301_DESC">
 			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 180&lt;br/&gt;Used in: GSh-301</English>
@@ -21370,7 +21369,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_750RND_GSh301_NAME">
 			<English>750Rnd. GSh-301 HE mag.</English>
-			<Russian>750п. ГШ-301 ОФ маг.</Russian>
+			<Russian>750с. ГШ-301 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_750RND_GSh301_DESC">
 			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 750&lt;br/&gt;Used in: GSh-301</English>
@@ -21385,7 +21384,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119HE_NAME">
 			<English>30Rnd. M119 HE mag.</English>
-			<Russian>30п. M119 ОФ маг.</Russian>
+			<Russian>30с. M119 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119HE_DESC">
 			<English>Caliber: 105mm HE&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -21400,7 +21399,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119WP_NAME">
 			<English>30Rnd. M119 WP mag.</English>
-			<Russian>30п. M119 БФ маг.</Russian>
+			<Russian>30с. M119 БФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119WP_DESC">
 			<English>Caliber: 105mm WP&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -21415,7 +21414,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119SADARM_NAME">
 			<English>30Rnd. M119 SADARM mag.</English>
-			<Russian>30п. M119 SADARM маг.</Russian>
+			<Russian>30с. M119 SADARM</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119SADARM_DESC">
 			<English>Caliber: 105mm SADARM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -21430,7 +21429,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119LASER_NAME">
 			<English>30Rnd. M119 Laser mag.</English>
-			<Russian>30п. M119 Laser маг.</Russian>
+			<Russian>30с. M119 Laser</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119LASER_DESC">
 			<English>Caliber: 105mm Laser&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -21446,7 +21445,7 @@
 		<Key ID="STR_DZ_MAG_30RND_M119SMOKE_NAME">
 			<English>30Rnd. M119 Smoke mag.</English>
 			<German>30Rnd. M119 Rauch mag.</German>
-			<Russian>30п. M119 дым. маг.</Russian>
+			<Russian>30с. M119 дым.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119SMOKE_DESC">
 			<English>Caliber: 105mm Smoke&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -21461,7 +21460,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119ILLUM_NAME">
 			<English>30Rnd. M119 ILLUM mag.</English>
-			<Russian>30п. M119 осв. маг.</Russian>
+			<Russian>30с. M119 осв.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_M119ILLUM_DESC">
 			<English>Caliber: 105mm ILLUM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: M119</English>
@@ -21476,7 +21475,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_M1A2HE_NAME">
 			<English>20Rnd. M1A2 HE mag.</English>
-			<Russian>20п. M1A2 ОФ маг.</Russian>
+			<Russian>20с. M1A2 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_M1A2HE_DESC">
 			<English>Caliber: 120mm HE&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: M1A2</English>
@@ -21491,7 +21490,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_M1A2SABOT_NAME">
 			<English>20Rnd. M1A2 SABOT mag.</English>
-			<Russian>20п. M1A2 SABOT маг.</Russian>
+			<Russian>20с. M1A2 SABOT</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_20RND_M1A2SABOT_DESC">
 			<English>Caliber: 120mm SABOT&lt;br/&gt;Rounds: 20&lt;br/&gt;Used in: M1A2</English>
@@ -21506,7 +21505,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30HE_NAME">
 			<English>30Rnd. D-30 HE mag.</English>
-			<Russian>30п. Д-30 ОФ маг.</Russian>
+			<Russian>30с. Д-30 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30HE_DESC">
 			<English>Caliber: 122mm HE&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21521,7 +21520,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30WP_NAME">
 			<English>30Rnd. D-30 WP mag.</English>
-			<Russian>30п. Д-30 БФ маг.</Russian>
+			<Russian>30с. Д-30 БФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30WP_DESC">
 			<English>Caliber: 122mm WP&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21536,7 +21535,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30SADARM_NAME">
 			<English>30Rnd. D-30 SADARM mag.</English>
-			<Russian>30п. Д-30 SADARM маг.</Russian>
+			<Russian>30с. Д-30 SADARM</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30SADARM_DESC">
 			<English>Caliber: 122mm SADARM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21551,7 +21550,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30LASER_NAME">
 			<English>30Rnd. D-30 Laser mag.</English>
-			<Russian>30п. Д-30 Laser маг.</Russian>
+			<Russian>30с. Д-30 Laser</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30LASER_DESC">
 			<English>Caliber: 122mm Laser&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21567,7 +21566,7 @@
 		<Key ID="STR_DZ_MAG_30RND_D30SMOKE_NAME">
 			<English>30Rnd. D-30 Smoke mag.</English>
 			<German>30Rnd. D-30 Rauch mag.</German>
-			<Russian>30п. Д-30 дым. маг.</Russian>
+			<Russian>30с. Д-30 дым.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30SMOKE_DESC">
 			<English>Caliber: 122mm Smoke&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21582,7 +21581,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30ILLUM_NAME">
 			<English>30Rnd. D-30 ILLUM mag.</English>
-			<Russian>30п. Д-30 осв. маг.</Russian>
+			<Russian>30с. Д-30 осв.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_30RND_D30ILLUM_DESC">
 			<English>Caliber: 122mm ILLUM&lt;br/&gt;Rounds: 30&lt;br/&gt;Used in: D-30</English>
@@ -21597,7 +21596,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_22RND_T72HE_NAME">
 			<English>22Rnd. T72 HE mag.</English>
-			<Russian>22п. Т72 ОФ маг.</Russian>
+			<Russian>22с. Т72 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_22RND_T72HE_DESC">
 			<English>Caliber: 125mm HE&lt;br/&gt;Rounds: 22&lt;br/&gt;Used in: T72</English>
@@ -21612,7 +21611,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_22RND_2A70HE_NAME">
 			<English>22Rnd. 2A70 HE mag.</English>
-			<Russian>22п. 2A70 ОФ маг.</Russian>
+			<Russian>22с. 2A70 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_22RND_2A70HE_DESC">
 			<English>Caliber: 100mm HE&lt;br/&gt;Rounds: 22&lt;br/&gt;Used in: 2A70</English>
@@ -21627,7 +21626,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_23RND_T72SABOT_NAME">
 			<English>23Rnd. T72 SABOT mag.</English>
-			<Russian>23п. T72 SABOT маг.</Russian>
+			<Russian>23с. T72 SABOT</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_23RND_T72SABOT_DESC">
 			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 23&lt;br/&gt;Used in: T72</English>
@@ -21642,7 +21641,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_22RND_IMISABOT_NAME">
 			<English>22Rnd. IMI SABOT mag.</English>
-			<Russian>22п. IMI SABOT маг.</Russian>
+			<Russian>22с. IMI SABOT</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_22RND_IMISABOT_DESC">
 			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 22&lt;br/&gt;Used in: IMI</English>
@@ -21657,7 +21656,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_T72SABOT_NAME">
 			<English>15Rnd. T72 SABOT mag.</English>
-			<Russian>15п. T72 SABOT маг.</Russian>
+			<Russian>15с. T72 SABOT</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_15RND_T72SABOT_DESC">
 			<English>Caliber: 125mm SABOT&lt;br/&gt;Rounds: 15&lt;br/&gt;Used in: T72</English>
@@ -21672,7 +21671,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_85mmHE_NAME">
 			<English>33Rnd. 85mm HE mag.</English>
-			<Russian>33п. 85мм ОФ маг.</Russian>
+			<Russian>33с. 85мм ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_33RND_85mmHE_DESC">
 			<English>Caliber: 85mm HE&lt;br/&gt;Rounds: 33&lt;br/&gt;Used in: 85mm Cannon</English>
@@ -21687,7 +21686,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_85mmAP_NAME">
 			<English>10Rnd. 85mm AP mag.</English>
-			<Russian>10п. 85мм ББ маг.</Russian>
+			<Russian>10с. 85мм ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_10RND_85mmAP_DESC">
 			<English>Caliber: 85mm AP&lt;br/&gt;Rounds: 10&lt;br/&gt;Used in: 85mm Cannon</English>
@@ -21702,7 +21701,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT5_BMP2_NAME">
 			<English>8Rnd. AT5 BMP-2</English>
-			<Russian>8п. БМП-2 ПТ маг.</Russian>
+			<Russian>8р. БМП-2 ПТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT5_BMP2_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT5 BMP-2</English>
@@ -21711,7 +21710,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_AT5_BRDM2_NAME">
 			<English>5Rnd. AT5 BRDM-2</English>
-			<Russian>5п. БРДМ-2 ПТ маг.</Russian>
+			<Russian>5р. БРДМ-2 ПТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_AT5_BRDM2_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 5&lt;br/&gt;Used in: AT5 BRDM-2</English>
@@ -21720,7 +21719,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT5_BMP3_NAME">
 			<English>8Rnd. AT5 BMP-3</English>
-			<Russian>8п. БМП-3 ПТ маг.</Russian>
+			<Russian>8р. БМП-3 ПТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT5_BMP3_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT5 BMP-3</English>
@@ -21729,7 +21728,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_AT5_T90_NAME">
 			<English>5Rnd. AT5 T90</English>
-			<Russian>5п. T90 ПТ маг.</Russian>
+			<Russian>5р. T90 ПТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_5RND_AT5_T90_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 5&lt;br/&gt;Used in: AT5 T90</English>
@@ -21738,7 +21737,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT9_Mi24P_NAME">
 			<English>4Rnd. AT9 Mi-24P</English>
-			<Russian>4п. Ми-24П ПТ маг.</Russian>
+			<Russian>4р. Ми-24П ПТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT9_Mi24P_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT9 Mi-24P</English>
@@ -21747,7 +21746,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT9_Mi24V_NAME">
 			<English>8Rnd. AT9 Mi-24V</English>
-			<Russian>8п. Ми-24В ПТ маг.</Russian>
+			<Russian>8р. Ми-24В ПТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_AT9_Mi24V_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: AT9 Mi-24V</English>
@@ -21756,7 +21755,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT6_Mi24V_NAME">
 			<English>4Rnd. AT6 Mi-24V</English>
-			<Russian>4п. Ми-24В ПТ маг.</Russian>
+			<Russian>4р. Ми-24В ПТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT6_Mi24V_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT6 Mi-24V</English>
@@ -21765,7 +21764,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT2_Mi24D_NAME">
 			<English>4Rnd. AT2 Mi-24D</English>
-			<Russian>4п. Ми-24Д ПТ маг.</Russian>
+			<Russian>4р. Ми-24Д ПТ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT2_Mi24D_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT2 Mi-24D</English>
@@ -21774,7 +21773,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_AT13_NAME">
 			<English>6Rnd. AT13</English>
-			<Russian>6п. AT13</Russian>
+			<Russian>6р. AT13</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_AT13_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: AT13</English>
@@ -21783,7 +21782,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_TOW_NAME">
 			<English>6Rnd. TOW</English>
-			<Russian>6п. TOW</Russian>
+			<Russian>6р. TOW</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_TOW_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: TOW</English>
@@ -21792,7 +21791,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_TOW_NAME">
 			<English>2Rnd. TOW</English>
-			<Russian>2п. TOW</Russian>
+			<Russian>2р. TOW</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_TOW_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: TOW</English>
@@ -21801,7 +21800,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_ATGM_NAME">
 			<English>2Rnd. ATGM</English>
-			<Russian>2п. ATGM</Russian>
+			<Russian>2р. ATGM</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_ATGM_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: ATGM Spike</English>
@@ -21810,7 +21809,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_Bolide_NAME">
 			<English>1Rnd. Bolide</English>
-			<Russian>1п. Bolide</Russian>
+			<Russian>1р. Bolide</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_Bolide_DESC">
 			<English>Anti Air Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: RBS-70</English>
@@ -21819,7 +21818,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_TOW2_NAME">
 			<English>6Rnd. TOW-2</English>
-			<Russian>6п. TOW-2</Russian>
+			<Russian>6р. TOW-2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_TOW2_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: TOW-2</English>
@@ -21828,7 +21827,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_TOW2_NAME">
 			<English>2Rnd. TOW-2</English>
-			<Russian>2п. TOW-2</Russian>
+			<Russian>2р. TOW-2</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_TOW2_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: TOW-2</English>
@@ -21837,7 +21836,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_HELLFIRE_NAME">
 			<English>8Rnd. Hellfire</English>
-			<Russian>8п. Hellfire</Russian>
+			<Russian>8р. Hellfire</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_HELLFIRE_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Hellfire</English>
@@ -21846,7 +21845,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_HELLFIRE_NAME">
 			<English>4Rnd. Hellfire</English>
-			<Russian>4п. Hellfire</Russian>
+			<Russian>4р. Hellfire</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_HELLFIRE_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Hellfire</English>
@@ -21855,7 +21854,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_Vikhr_KA52_NAME">
 			<English>12Rnd. Vikhr Ka-52</English>
-			<Russian>12п. Вихрь Ka-52</Russian>
+			<Russian>12р. Вихрь Ka-52</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_Vikhr_KA52_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: Vikhr Ka-52</English>
@@ -21864,7 +21863,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Sidewinder_AV8B_NAME">
 			<English>4Rnd. Sidewinder AV-8B</English>
-			<Russian>4п. Sidewinder AV-8B</Russian>
+			<Russian>4р. Sidewinder AV-8B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Sidewinder_AV8B_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Sidewinder AV-8B</English>
@@ -21873,7 +21872,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_Sidewinder_AH64_NAME">
 			<English>8Rnd. Sidewinder AH64</English>
-			<Russian>8п. Sidewinder AH64</Russian>
+			<Russian>8р. Sidewinder AH64</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_Sidewinder_AH64_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Sidewinder AH64</English>
@@ -21882,7 +21881,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_F35_NAME">
 			<English>2Rnd. Sidewinder F35B</English>
-			<Russian>2п. Sidewinder F35B</Russian>
+			<Russian>2р. Sidewinder F35B</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_F35_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Sidewinder F35B</English>
@@ -21891,7 +21890,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_AH1Z_NAME">
 			<English>2Rnd. Sidewinder AH-1Z</English>
-			<Russian>2п. Sidewinder AH-1Z</Russian>
+			<Russian>2р. Sidewinder AH-1Z</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_AH1Z_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Sidewinder AH-1Z</English>
@@ -21900,7 +21899,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_14RND_FFAR_NAME">
 			<English>14Rnd. FFAR Hydra</English>
-			<Russian>14п. FFAR Hydra</Russian>
+			<Russian>14р. FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_14RND_FFAR_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 14&lt;br/&gt;Used in: FFAR Hydra</English>
@@ -21909,7 +21908,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_28RND_FFAR_NAME">
 			<English>28Rnd. FFAR Hydra</English>
-			<Russian>28п. FFAR Hydra</Russian>
+			<Russian>28р. FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_28RND_FFAR_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 28&lt;br/&gt;Used in: FFAR Hydra</English>
@@ -21918,7 +21917,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_38RND_FFAR_NAME">
 			<English>38Rnd. FFAR Hydra</English>
-			<Russian>38п. FFAR Hydra</Russian>
+			<Russian>38р. FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_38RND_FFAR_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 38&lt;br/&gt;Used in: FFAR Hydra</English>
@@ -21927,7 +21926,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_FFAR_NAME">
 			<English>12Rnd. FFAR Hydra</English>
-			<Russian>12п. FFAR Hydra</Russian>
+			<Russian>12р. FFAR Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_FFAR_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: FFAR Hydra</English>
@@ -21936,7 +21935,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_CRV7_NAME">
 			<English>12Rnd. CRV7 Hydra</English>
-			<Russian>12п. CRV7 Hydra</Russian>
+			<Russian>12р. CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_CRV7_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: CRV7 Hydra</English>
@@ -21945,7 +21944,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_38RND_CRV7_NAME">
 			<English>38Rnd. CRV7 Hydra</English>
-			<Russian>38п. CRV7 Hydra</Russian>
+			<Russian>38р. CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_38RND_CRV7_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 38&lt;br/&gt;Used in: CRV7 Hydra</English>
@@ -21954,16 +21953,16 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_19RND_CRV7_HEPD_NAME">
 			<English>19Rnd. CRV7 HEPD Hydra</English>
-			<Russian>19п. CRV7 Hydra ОФ</Russian>
+			<Russian>19р. CRV7 Hydra ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_19RND_CRV7_HEPD_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 19&lt;br/&gt;Used in: CRV7 Hydra</English>
 			<German>Panzerabwehrrakete&lt;br/&gt;Raketen: 19&lt;br/&gt;Verwendet in: CRV7 Hydra</German>
-			<Russian>Противотанковая ракета&lt;br/&gt;Количество: 19&lt;br/&gt;Исп. в: CRV7 Hydra</Russian>
+			<Russian>Осколочно-фугасная ракета&lt;br/&gt;Количество: 19&lt;br/&gt;Исп. в: CRV7 Hydra</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_19RND_CRV7_FAT_NAME">
 			<English>19Rnd. CRV7 FAT Hydra</English>
-			<Russian>19п. CRV7 Hydra ББ</Russian>
+			<Russian>19р. CRV7 Hydra ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_19RND_CRV7_FAT_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 19&lt;br/&gt;Used in: CRV7 Hydra</English>
@@ -21972,7 +21971,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_80mm_NAME">
 			<English>40Rnd. 80mm HE</English>
-			<Russian>40п. 80мм ОФ</Russian>
+			<Russian>40р. 80мм ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_80mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 80mm Launcher</English>
@@ -21981,7 +21980,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_80RND_80mm_NAME">
 			<English>80Rnd. 80mm HE</English>
-			<Russian>80п. 80мм ОФ</Russian>
+			<Russian>80р. 80мм ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_80RND_80mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 80&lt;br/&gt;Used in: 80mm Launcher</English>
@@ -21990,7 +21989,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_GRAD_NAME">
 			<English>40Rnd. GRAD</English>
-			<Russian>40п. Град</Russian>
+			<Russian>40р. Град</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_GRAD_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: BM-21 Grad</English>
@@ -21999,7 +21998,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_RM70_NAME">
 			<English>40Rnd. RM-70</English>
-			<Russian>40п. RM-70</Russian>
+			<Russian>40р. RM-70</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_RM70_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: RM-70</English>
@@ -22008,7 +22007,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_MLRS_NAME">
 			<English>12Rnd. MLRS</English>
-			<Russian>12п. MLRS</Russian>
+			<Russian>12р. MLRS</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_12RND_MLRS_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 12&lt;br/&gt;Used in: M270 MLRS</English>
@@ -22017,7 +22016,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_S8T_NAME">
 			<English>40Rnd. S8T</English>
-			<Russian>40п. S8T</Russian>
+			<Russian>40р. S8T</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_S8T_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 80mm Launcher</English>
@@ -22026,7 +22025,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_80RND_S8T_NAME">
 			<English>80Rnd. S8T</English>
-			<Russian>80п. S8T</Russian>
+			<Russian>80р. S8T</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_80RND_S8T_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 80&lt;br/&gt;Used in: 80mm Launcher</English>
@@ -22035,7 +22034,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_64RND_57mm_NAME">
 			<English>64Rnd. 57mm</English>
-			<Russian>64п. 57мм</Russian>
+			<Russian>64р. 57мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_64RND_57mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 64&lt;br/&gt;Used in: 57mm Launcher</English>
@@ -22044,7 +22043,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_14RND_57mm_NAME">
 			<English>14Rnd. 57mm</English>
-			<Russian>14п. 57мм</Russian>
+			<Russian>14р. 57мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_14RND_57mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 14&lt;br/&gt;Used in: 57mm Launcher</English>
@@ -22053,7 +22052,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_128RND_57mm_NAME">
 			<English>128Rnd. 57mm</English>
-			<Russian>128п. 57мм</Russian>
+			<Russian>128р. 57мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_128RND_57mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 128&lt;br/&gt;Used in: 57mm Launcher</English>
@@ -22062,7 +22061,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_192RND_57mm_NAME">
 			<English>192Rnd. 57mm</English>
-			<Russian>192п. 57мм</Russian>
+			<Russian>192р. 57мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_192RND_57mm_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 192&lt;br/&gt;Used in: 57mm Launcher</English>
@@ -22071,7 +22070,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_GBU12_NAME">
 			<English>6Rnd. GBU-12</English>
-			<Russian>6п. GBU-12</Russian>
+			<Russian>6р. GBU-12</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_GBU12_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: AV-8B</English>
@@ -22080,7 +22079,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_GBU12_NAME">
 			<English>2Rnd. GBU-12</English>
-			<Russian>2п. GBU-12</Russian>
+			<Russian>2р. GBU-12</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_GBU12_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: AV-8B</English>
@@ -22089,7 +22088,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_GBU12_NAME">
 			<English>4Rnd. GBU-12</English>
-			<Russian>4п. GBU-12</Russian>
+			<Russian>4р. GBU-12</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_GBU12_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AV-8B</English>
@@ -22098,7 +22097,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_FAB_NAME">
 			<English>2Rnd. FAB 250</English>
-			<Russian>2п. ФАБ-250</Russian>
+			<Russian>2шт. ФАБ-250</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_FAB_DESC">
 			<English>Unguided bomb&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: FAB 250</English>
@@ -22107,7 +22106,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_FAB_NAME">
 			<English>4Rnd. FAB 250</English>
-			<Russian>4п. ФАБ-250</Russian>
+			<Russian>4шт. ФАБ-250</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_FAB_DESC">
 			<English>Unguided bomb&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: FAB 250</English>
@@ -22116,7 +22115,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_Mk82_NAME">
 			<English>6Rnd. Mk82</English>
-			<Russian>6п. Mk82</Russian>
+			<Russian>6шт. Mk82</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_Mk82_DESC">
 			<English>Unguided bomb&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: Mk82</English>
@@ -22125,7 +22124,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_3RND_Mk82_NAME">
 			<English>3Rnd. Mk82</English>
-			<Russian>3п. Mk82</Russian>
+			<Russian>3шт. Mk82</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_3RND_Mk82_DESC">
 			<English>Unguided bomb&lt;br/&gt;Rockets: 3&lt;br/&gt;Used in: Mk82</English>
@@ -22134,7 +22133,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_R73_NAME">
 			<English>4Rnd. R-73</English>
-			<Russian>4п. Р-73</Russian>
+			<Russian>4р. Р-73</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_R73_DESC">
 			<English>Air-to-Air Missile&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: R-73</English>
@@ -22143,7 +22142,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_R73_NAME">
 			<English>2Rnd. R-73</English>
-			<Russian>2п. Р-73</Russian>
+			<Russian>2р. Р-73</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_R73_DESC">
 			<English>Air-to-Air Missile&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: R-73</English>
@@ -22152,7 +22151,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Ch29_NAME">
 			<English>4Rnd. Ch-29</English>
-			<Russian>4п. Х-29</Russian>
+			<Russian>4р. Х-29</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Ch29_DESC">
 			<English>Air-to-ground missile&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Ch-29</English>
@@ -22161,7 +22160,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_Ch29_NAME">
 			<English>6Rnd. Ch-29</English>
-			<Russian>6п. Х-29</Russian>
+			<Russian>6р. Х-29</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_6RND_Ch29_DESC">
 			<English>Air-to-ground missile&lt;br/&gt;Rockets: 6&lt;br/&gt;Used in: Ch-29</English>
@@ -22170,7 +22169,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_Ch29_NAME">
 			<English>8Rnd. Ch-29</English>
-			<Russian>8п. Х-29</Russian>
+			<Russian>8р. Х-29</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_Ch29_DESC">
 			<English>Air-to-ground missile&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Ch-29</English>
@@ -22179,7 +22178,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_Maverick_NAME">
 			<English>2Rnd. Maverick</English>
-			<Russian>2п. Maverick</Russian>
+			<Russian>2р. Maverick</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_Maverick_DESC">
 			<English>Air-to-ground missile &lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: A-10</English>
@@ -22188,7 +22187,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Maverick_NAME">
 			<English>4Rnd. Maverick</English>
-			<Russian>4п. Maverick</Russian>
+			<Russian>4р. Maverick</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_Maverick_DESC">
 			<English>Air-to-ground missile &lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: L-159</English>
@@ -22197,7 +22196,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_9M311_NAME">
 			<English>8Rnd. 9M311</English>
-			<Russian>8п. 9М311</Russian>
+			<Russian>8р. 9М311</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_9M311_DESC">
 			<English>Anti air missile &lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: 2S6 Tunguska</English>
@@ -22206,7 +22205,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_STINGER_NAME">
 			<English>8Rnd. Stinger</English>
-			<Russian>8п. Stinger</Russian>
+			<Russian>8р. Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_STINGER_DESC">
 			<English>Anti Air Rocket&lt;br/&gt;Rockets: 8&lt;br/&gt;Used in: Stinger</English>
@@ -22215,7 +22214,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_STINGER_NAME">
 			<English>4Rnd. Stinger</English>
-			<Russian>4п. Stinger</Russian>
+			<Russian>4р. Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_STINGER_DESC">
 			<English>Anti Air Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: Stinger</English>
@@ -22224,7 +22223,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_STINGER_NAME">
 			<English>2Rnd. Stinger</English>
-			<Russian>2п. Stinger</Russian>
+			<Russian>2р. Stinger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_2RND_STINGER_DESC">
 			<English>Anti Air Rocket&lt;br/&gt;Rockets: 2&lt;br/&gt;Used in: Stinger</English>
@@ -22233,7 +22232,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_21RND_T55HEAT_NAME">
 			<English>21Rnd. HEAT T55 mag.</English>
-			<Russian>21п. T55 кумул. маг.</Russian>
+			<Russian>21с. T55 кумул.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_21RND_T55HEAT_DESC">
 			<English>Caliber: 100mm HEAT&lt;br/&gt;Rounds: 21&lt;br/&gt;Used in: T55</English>
@@ -22248,7 +22247,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_24RND_M120HE_NAME">
 			<English>24Rnd. M120 HE mag.</English>
-			<Russian>24п. M120 ОФ маг.</Russian>
+			<Russian>24м. M120 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_24RND_M120HE_DESC">
 			<English>Caliber: 120mm HE&lt;br/&gt;Rounds: 24&lt;br/&gt;Used in: M120</English>
@@ -22263,7 +22262,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_M252HE_NAME">
 			<English>8Rnd. M252 HE mag.</English>
-			<Russian>8п. M252 ОФ маг.</Russian>
+			<Russian>8м. M252 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_M252HE_DESC">
 			<English>Caliber: 81mm HE&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M252</English>
@@ -22278,7 +22277,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_M252WP_NAME">
 			<English>8Rnd. M252 WP mag.</English>
-			<Russian>8п. M252 БФ маг.</Russian>
+			<Russian>8м. M252 БФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_M252WP_DESC">
 			<English>Caliber: 81mm WP&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M252</English>
@@ -22293,7 +22292,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_M252ILLUM_NAME">
 			<English>8Rnd. M252 ILLUM mag.</English>
-			<Russian>8п. M252 осв. маг.</Russian>
+			<Russian>8м. M252 осв.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_M252ILLUM_DESC">
 			<English>Caliber: 81mm ILLUM&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: M252</English>
@@ -22308,7 +22307,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14HE_NAME">
 			<English>8Rnd. 2B14 HE mag.</English>
-			<Russian>8п. 2Б14 ОФ маг.</Russian>
+			<Russian>8м. 2Б14 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14HE_DESC">
 			<English>Caliber: 82mm HE&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: 2B14</English>
@@ -22323,7 +22322,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14WP_NAME">
 			<English>8Rnd. 2B14 WP mag.</English>
-			<Russian>8п. 2Б14 БФ маг.</Russian>
+			<Russian>8м. 2Б14 БФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14WP_DESC">
 			<English>Caliber: 82mm WP&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: 2B14</English>
@@ -22338,7 +22337,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14ILLUM_NAME">
 			<English>8Rnd. 2B14 ILLUM mag.</English>
-			<Russian>8п. 2Б14 осв. маг.</Russian>
+			<Russian>8м. 2Б14 осв.</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_8RND_2B14ILLUM_DESC">
 			<English>Caliber: 82mm ILLUM&lt;br/&gt;Rounds: 8&lt;br/&gt;Used in: 2B14</English>
@@ -22353,7 +22352,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_FV510HE_NAME">
 			<English>200Rnd. FV510 HE mag.</English>
-			<Russian>200п. FV510 ОФ маг.</Russian>
+			<Russian>200с. FV510 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_FV510HE_DESC">
 			<English>Caliber: 40mm HE&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: FV510</English>
@@ -22368,7 +22367,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_FV510SABOT_NAME">
 			<English>200Rnd. FV510 SABOT mag.</English>
-			<Russian>200п. FV510 SABOT маг.</Russian>
+			<Russian>200с. FV510 SABOT</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_200RND_FV510SABOT_DESC">
 			<English>Caliber: 40mm SABOT&lt;br/&gt;Rounds: 200&lt;br/&gt;Used in: FV510</English>
@@ -22383,7 +22382,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_ZPL_20_NAME">
 			<English>210Rnd. ZPL-20 mag.</English>
-			<Russian>210п. ZPL-20 mag.</Russian>
+			<Russian>210с. ZPL-20</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_210RND_ZPL_20_DESC">
 			<English>Caliber: 20mm&lt;br/&gt;Rounds: 210&lt;br/&gt;Used in: ZPL-20</English>
@@ -22398,7 +22397,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_140RND_ATKMK44_NAME">
 			<English>140Rnd. HE ATK MK44 mag.</English>
-			<Russian>140п. ОФ ATK MK44 маг.</Russian>
+			<Russian>140с. ATK MK44 ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_140RND_ATKMK44_DESC">
 			<English>Caliber: 30mm HE&lt;br/&gt;Rounds: 140&lt;br/&gt;Used in: ATK MK44</English>
@@ -22413,7 +22412,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_60RND_ATKMK44_NAME">
 			<English>60Rnd. AP ATK MK44 mag.</English>
-			<Russian>60п. ББ ATK MK44 маг.</Russian>
+			<Russian>60с. ATK MK44 ББ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_60RND_ATKMK44_DESC">
 			<English>Caliber: 30mm AP&lt;br/&gt;Rounds: 60&lt;br/&gt;Used in: ATK MK44</English>
@@ -22428,25 +22427,25 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_PG15V_NAME">
 			<English>1Rnd. PG15V HE</English>
-			<Russian>1п. ПГ-15В</Russian>
+			<Russian>1р. ПГ-15В</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_PG15V_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: 2A28 Grom</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 1&lt;br/&gt;Verwendet in: 2A28 Grom</German>
-			<Russian>Кумулятивная противотанковая граната&lt;br/&gt;Количество: 1&lt;br/&gt;Исп. в: 2А28 "Гром"</Russian>
+			<Russian>Кумулятивная противотанковая ракета&lt;br/&gt;Количество: 1&lt;br/&gt;Исп. в: 2А28 "Гром"</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_PG15V_NAME">
 			<English>40Rnd. PG15V HE</English>
-			<Russian>40п. ПГ-15В</Russian>
+			<Russian>40р. ПГ-15В</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_40RND_PG15V_DESC">
 			<English>HE Rocket&lt;br/&gt;Rockets: 40&lt;br/&gt;Used in: 2A28 Grom</English>
 			<German>HE-Rakete&lt;br/&gt;Raketen: 40&lt;br/&gt;Verwendet in: 2A28 Grom</German>
-			<Russian>Кумулятивная противотанковая граната&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: 2А28 "Гром"</Russian>
+			<Russian>Кумулятивная противотанковая ракета&lt;br/&gt;Количество: 40&lt;br/&gt;Исп. в: 2А28 "Гром"</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_AT3_NAME">
 			<English>1Rnd. AT-3 Sagger</English>
-			<Russian>1п. AT-3 Sagger</Russian>
+			<Russian>1р. AT-3 Sagger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1RND_AT3_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 1&lt;br/&gt;Used in: AT-3</English>
@@ -22455,7 +22454,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT3_NAME">
 			<English>4Rnd. AT-3 Sagger</English>
-			<Russian>4п. AT-3 Sagger</Russian>
+			<Russian>4р. AT-3 Sagger</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_4RND_AT3_DESC">
 			<English>Anti Tank Rocket&lt;br/&gt;Rockets: 4&lt;br/&gt;Used in: AT-3</English>
@@ -22464,7 +22463,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_400RND_M621_NAME">
 			<English>400Rnd. 20mm HE mag.</English>
-			<Russian>400п. 20мм ОФ маг.</Russian>
+			<Russian>400с. 20мм ОФ</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_400RND_M621_DESC">
 			<English>Caliber: 20mm HE&lt;br/&gt;Rounds: 400&lt;br/&gt;Used in: 20mm Cannon M621</English>
@@ -22479,7 +22478,7 @@
 		</Key>
 		<Key ID="STR_DZ_MAG_1200RND_M789_NAME">
 			<English>1200Rnd. 30x113mm mag.</English>
-			<Russian>1200п. 30x113мм маг.</Russian>
+			<Russian>1200с. 30x113мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_1200RND_M789_DESC">
 			<English>Caliber: 30x113mm&lt;br/&gt;Rounds: 1200&lt;br/&gt;Used in: AH-64</English>
@@ -23691,7 +23690,6 @@
 		<Key ID="STR_EPOCH_PLAYER_117">
 			<English>Your %1 has been locked</English>
 			<German>Dein %1 wurde abgeschlossen.</German>
-			<!-- <Russian>Ваш %1 закрыт</Russian> -->
 			<Russian>Заперто</Russian>
 			<Dutch>Je %1 staat nu op slot</Dutch>
 			<French>Votre %1 a été verrouillé</French>
@@ -23766,7 +23764,7 @@
 		<Key ID="STR_EPOCH_PLAYER_135">
 			<English>This item needs a %1 within %2 meters</English>
 			<German>Dieses Gebäude benötitgt ein(e) %1 innerhalb von %2 Metern.</German>
-			<Russian>Этому строению требуется %1 в пределах %2м.</Russian>
+			<Russian>Требуется %1 в пределах %2м.</Russian>
 			<Dutch>Dit gebouw heeft een %1 binnen %2 meter nodig.</Dutch>
 			<French>Ce bâtiment nécessite un %1 à moins de %2 mètres</French>
 			<Czech>Tato budova potřebuje %1 v rámci %2.</Czech>
@@ -36124,21 +36122,21 @@
 			<English>You need a %1 to build %2!</English>
 			<German>Du benötigst %1 um %2 zu bauen!</German>
 			<French>Il vous faut %1 pour construire %2!</French>
-			<Russian>Вам нужно %1 чтобы скрафтить %2!</Russian>
+			<Russian>Вам нужно %1 чтобы создать %2!</Russian>
 			<Spanish>Necesitas %1 para construir %2!</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_FAIL_NOW">
 			<English>You can't build a %1 right now.</English>
 			<German>Du kannst %1 gerade nicht bauen.</German>
 			<French>Vous ne pouvez pas construire %1 maintenant.</French>
-			<Russian>Вы не можете скрафтить %1 сейчас.</Russian>
+			<Russian>Вы не можете сейчас создать %1.</Russian>
 			<Spanish>No puedes construir un/a %1 ahora.</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_FAIL_BUILDING">
 			<English>You are already building something!</English>
 			<German>Du baust bereits etwas!</German>
 			<French>Vous etes déja en train de construire quelque chose!</French>
-			<Russian>Вы уже что-то крафтите!</Russian>
+			<Russian>Вы уже что-то создаёте!</Russian>
 			<Spanish>Ya estás construyendo algo!</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_FAIL_PACKING">
@@ -36152,14 +36150,14 @@
 			<English>Deploying Failed!</English>
 			<German>Bauen fehlgeschlagen!</German>
 			<French>Le deployement a échouer!</French>
-			<Russian>Крафт не удался!</Russian>
+			<Russian>Создание не удалос!</Russian>
 			<Spanish>Falló la acción!</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_DEPLOY_OK">
 			<English>You've built a %1!</English>
 			<German>Du hast %1 gebaut!</German>
 			<French>Vous avez construit un/une %1!</French>
-			<Russian>Вы скрафтили %1!</Russian>
+			<Russian>Вы создали %1!</Russian>
 			<Spanish>Has construido un/a %1!</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_DEPLOY_PERM_NO">
@@ -36187,14 +36185,14 @@
 			<English>Deploy %1</English>
 			<German>%1 bauen</German>
 			<French>Déployer %1</French>
-			<Russian>Скрафтить %1</Russian>
+			<Russian>Создать %1</Russian>
 			<Spanish>Desplegar %1</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_PACK_FAIL">
 			<English>You can't pack your %1 right now.</English>
 			<German>Du kannst %1 gerade nicht demontieren.</German>
 			<French>Vous ne pouvez pas emballer %1 maintenant.</French>
-			<Russian>Вы не можете упаковать %1 сейчас.</Russian>
+			<Russian>Вы не можете сейчас упаковать %1.</Russian>
 			<Spanish>No puedes empacar tu %1 en este momento</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_PACK_COMBAT">
@@ -36208,7 +36206,7 @@
 			<English>Your %1 must be under %2 percent damage to pack!</English>
 			<German>Dein %1 muss zur Demontage weniger als %2 Prozent Schaden haben.</German>
 			<French>Votre %1 doit etre en dessous de %2 pourcent de domages pour etre emballer.</French>
-			<Russian>Ваш %1 должен иметь менее %2 урона для упакования!</Russian>
+			<Russian>Ваш %1 должен иметь менее %2 процентов урона!</Russian>
 			<Spanish>Tu %1 debe estar por debajo de %2 de daño para ser empacado!</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_PACK_INUSE">
@@ -36229,7 +36227,7 @@
 			<English>You have deployed a lockable %1, the key is: %2</English>
 			<German>Du hast %1 (abschließbar) gebaut, der Schlüssel ist: %2</German>
 			<French>Vous avez déployer un %1 vérrouillable, la clé est: %2</French>
-			<Russian>Вы создали запираемый %1, ключ: %2.</Russian>
+			<Russian>Вы создали %1, ключ: %2.</Russian>
 			<Spanish>Has desplegado un/a %1 con cerradura, la llave es: %2</Spanish>
 		</Key>
 	</Package>
@@ -36915,7 +36913,7 @@
 			<English>Heroes set up a radio tower!</English>
 			<German>Helden haben einen Funkturm errichtet!</German>
 			<French>Des Heros on mis en place une tour radio!</French>
-			<Russian>Герои основали радиовышку!</Russian>
+			<Russian>Герои построили радиовышку!</Russian>
 			<Spanish>Los héroes han instalado una torre de radio!</Spanish>
 		</Key>
 		<Key ID="STR_CL_BANDIT_RADIOTOWER_WIN">
@@ -37210,7 +37208,7 @@
 			<English>Survivors have secured the armed chopper.</English>
 			<German>Überlebende haben den bewaffneten Helikopter erobert.</German>
 			<French>Les survivant on sécuriser l'helico armé.</French>
-			<Russian>Выжившие захватили вооруженный вертолет.</Russian>
+			<Russian>Выжившие захватили вертолет с оружием.</Russian>
 			<Spanish>Los sobrevivientes han asegurado el helicóptero armado.</Spanish>
 		</Key>
 		<Key ID="STR_CL_HERO_MILCHOPPER_FAIL">
@@ -37413,7 +37411,7 @@
 			<English>Bandits set up a radio tower!</English>
 			<German>Banditen haben einen Funkturm errichtet!</German>
 			<French>Des bandits on mis en place une tour radio!</French>
-			<Russian>Бандиты основали радиовышку.</Russian>
+			<Russian>Бандиты построили радиовышку.</Russian>
 			<Spanish>Los bandidos instalaron una Torre de Radio!</Spanish>
 		</Key>
 		<Key ID="STR_CL_HERO_RADIO_WIN">
@@ -37489,13 +37487,13 @@
 		<Key ID="STR_CL_PATROL_DISABLED">
 			<English>The %1 Patrol has become disabled!</English>
 			<German>Die Patroullie %1 wurde ausgeschalten!</German>
-			<Russian>Патруль %1 выключен!</Russian>	<!-- ??? -->
+			<Russian>Патрульный транспорт выведен из строя!</Russian>
 		</Key>
 		<Key ID="STR_CL_AUTOCLAIM_ANNOUNCE">
 			<English>AutoClaim: If you want to claim %1, then do not leave the mission area for %2 seconds!</English>
 			<German>AutoClaim: Wenn du %1 beanspruchen willst, bleib für %2 Sekunden im Missionsbereich!</German>
 			<French>Réclamation Automatique: Si vous voulez réclamer %1, vous ne devez pas quitter la zone de mission avant %2 secondes!</French>
-			<Russian>AutoClaim: Если вы хотите претендовать на 1%, то не покидайте зону миссии в течении 2% секунд!</Russian>
+			<Russian>AutoClaim: Если вы хотите претендовать на %1, то не покидайте зону миссии в течении %2 сек.!</Russian>
 			<Spanish>Reclamar: Si quieres reclamar %1, entonces no dejes el area de la misión por %2 segundos!</Spanish>
 		</Key>
 		<Key ID="STR_CL_AUTOCLAIM_NOCLAIM">
@@ -37509,7 +37507,7 @@
 			<English>You have left the mission area! You have %1 seconds to return!</English>
 			<German>Du hast den Missionsbereich verlassen! Du hast %1 um zurückzukehren!</German>
 			<French>Vous quitter la zone de mission! Vous avez %1  secondes pour revenir!</French>
-			<Russian>Вы покинули зону миссии! У вас есть %1 секунд чтобы вернуться!</Russian>
+			<Russian>Вы покинули зону миссии! У вас есть %1 сек. чтобы вернуться!</Russian>
 			<Spanish>Has dejado el área de la misión! Tienes %1 segundos para volver!</Spanish>
 		</Key>
 		<Key ID="STR_CL_AUTOCLAIM_RECLAIM">
@@ -37821,12 +37819,12 @@
 	<Package name="EvacChopper">
 		<Key ID="STR_CL_EC_NAME">
 			<English>Evac-Chopper</English>
-			<Russian>Эвакуационный вертолет</Russian>
+			<Russian>Эвакуационный вертолёт</Russian>
 			<German>Evak-Heli</German>
 		</Key>
 		<Key ID="STR_CL_EC_CLEAR">
 			<English>Clearing Evac-Chopper, Move to Cancel.</English>
-			<Russian>Эвакуационный вертолет очищается, двигайтесь для отмены.</Russian>
+			<Russian>Площадка убирается. Двигайтесь для отмены.</Russian>
 			<German>Evak-Heli wird geräumt, zum Abbrechen bewegen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_EXISTS">
@@ -37841,22 +37839,22 @@
 		</Key>
 		<Key ID="STR_CL_EC_MINIMUM_DISTANCE">
 			<English>You must be at least %1 meters away to call your %2.</English>
-			<Russian>Вы должны быть на расстоянии не менее %1 м, чтобы вызвать %2.</Russian>
+			<Russian>Вы должны быть на расстоянии не менее %1м, чтобы вызвать %2.</Russian>
 			<German>Du musst mindestens %1 Meter weit weg sein, um deine(n) %2 zu rufen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_COUNTDOWN">
 			<English>%1 gets called in %2s - Move to Cancel!</English>
-			<Russian>%1 вызывается в %2 - двигайтесь для отмены!</Russian>
+			<Russian>%1 вылетает через %2 сек. Двигайтесь для отмены!</Russian>
 			<German>%1 wird in %2s gerufen - Zum Abbrechen bewegen!</German>
 		</Key>
 		<Key ID="STR_CL_EC_UNABLETOEVAC">
 			<English>The chopper is unable to fly to you.</English>
-			<Russian>Вертолет не может прилететь к вам.</Russian>
+			<Russian>Вертолёт не может прилететь к вам.</Russian>
 			<German>Der Heli kann nicht zu dir fliegen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_MARKER">
 			<English>Check the map for your disabled %1 marker.</English>
-			<Russian>Проверьте карту на наличие выключенного %1 маркера.</Russian>
+			<Russian>Проверьте карту на наличие маркера.</Russian>
 			<German>Guck auf die Karte um deine(n) %1 Marker zu sehen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_CRASHED">
@@ -37866,7 +37864,7 @@
 		</Key>
 		<Key ID="STR_CL_EC_DISABLED">
 			<English>!!! DISABLED !!!</English>
-			<Russian>!!! ОТКЛЮЧЕН !!!</Russian>
+			<Russian>!!! ПОВРЕЖДЁН !!!</Russian>
 			<German>!!! VERHINDERT !!!</German>
 		</Key>
 		<Key ID="STR_CL_EC_ARRIVED">
@@ -37876,12 +37874,12 @@
 		</Key>
 		<Key ID="STR_CL_EC_NEED_COINS">
 			<English>You need %1 %2 to set your %3.</English>
-			<Russian>Вам нужно %1 %2 для установки %3.</Russian>
+			<Russian>Вам нужно %1 %2.</Russian>
 			<German>Du benötigst %1 %2 um deine(n) %3 zu setzen.</German>
 		</Key>
 		<Key ID="STR_CL_EC_NEED_BRIEFCASES">
 			<English>You need %1 to set your %2.</English>
-			<Russian>Вам нужно %1 для установки %2.</Russian>
+			<Russian>Вам нужно %1.</Russian>
 			<German>Du benötigst %1 um deine(n) %2 zu setzen.</German>
 		</Key>
 	</Package>
