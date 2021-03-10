@@ -35798,21 +35798,21 @@
 			<English>%1 of %2 rearmed</English>
 			<German>%1 von %2 aufmunitioniert</German>
 			<French>%1 de %2 Réparé</French>
-			<Russian>%1 из %2 перезаряжен</Russian>
+			<Russian>%2 перезаряжен (%1)</Russian>
 			<Spanish>%1 de %2 recargado</Spanish>
 		</Key>
 		<Key ID="STR_CL_SP_FAIL_COINS">
 			<English>You need %1 %2 to %3 your %4.</English>
 			<German>Du benötigst %1 %2 um %4 zu %3.</German>
 			<French>Il vous faut %1 %2 pour %3 votre %4</French>
-			<Russian>Вам необходимо %1 %2 для %3 вашего %4.</Russian>
+			<Russian>Вам необходимо %1 %2.</Russian>
 			<Spanish>Necesitas %1 %2 para %3 tu %4</Spanish>
 		</Key>
 		<Key ID="STR_CL_SP_FAIL_BRIEFCASES">
 			<English>You need %1 to %2 your %3.</English>
 			<German>Du benötigst %1 um %3 zu %2.</German>
 			<French>Il vous faut %1 pour %3 votre %3</French>
-			<Russian>Вам необходимо %1 для %2 вашего %3.</Russian>
+			<Russian>Вам необходимо %1.</Russian>
 			<Spanish>Necesitas %1 para %2 tu %3</Spanish>
 		</Key>
 	</Package>
