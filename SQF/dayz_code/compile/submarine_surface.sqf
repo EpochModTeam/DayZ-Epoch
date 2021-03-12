@@ -2,7 +2,7 @@ local _vehicle = _this select 0;
 local _unit = _this select 2;
 local _driver = driver _vehicle;
 
-if (!(isNull _driver) && {_driver != _unit}) exitwith {};
+if ((_unit != player) || {!(isNull _driver) && {_driver != _unit}}) exitwith {};
 
 while {_vehicle isKindOf "Submarine_DZE_base"} do {
 	local _pos = getposATL _vehicle;
