@@ -6910,7 +6910,7 @@
 		<Key ID="str_player_boiledwater">
 			<English>You have boiled %1 bottles of water.</English>
 			<German>Du hast %1 Flasche(n) mit Wasser abgekocht.</German>
-			<Russian>Наполнено чистой кипячёной водой бутылок: %1</Russian>
+			<Russian>Наполнено бутылок кипячёной водой: %1</Russian>
 			<Spanish>Llenaste %1 cantimplora(s) con agua</Spanish>
 			<French>Vous avez rempli %1 Bouteille(s) avec de l&apos;eau.</French>
 			<Czech>Naplnili jste převařenou vodou %1 láhve.</Czech>
@@ -8490,53 +8490,53 @@
 	<Package name="vehicles">
 		<Key ID="STR_VEH_NAME_HMMWV">
 			<English>HMMWV (Woodland)</English>
-			<Russian>Хамви (Лесной)</Russian>
+			<Russian>Хамви (Лес)</Russian>
 			<German>Humvee (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV+">
 			<English>HMMWV (Woodland)+</English>
-			<Russian>Хамви (Лесной)+</Russian>
+			<Russian>Хамви (Лес)+</Russian>
 			<German>Humvee (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV++">
 			<English>HMMWV (Woodland)++</English>
-			<Russian>Хамви (Лесной)++</Russian>
+			<Russian>Хамви (Лес)++</Russian>
 			<German>Humvee (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV+++">
 			<English>HMMWV (Woodland)+++</English>
-			<Russian>Хамви (Лесной)+++</Russian>
+			<Russian>Хамви (Лес)+++</Russian>
 			<German>Humvee (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV++++">
 			<English>HMMWV (Woodland)++++</English>
-			<Russian>Хамви (Лесной)++++</Russian>
+			<Russian>Хамви (Лес)++++</Russian>
 			<German>Humvee (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER">
 			<English>HMMWV (Winter)</English>
 			<German>Humvee (Winter)</German>
-			<Russian>HMMWV (Зимний)</Russian>
+			<Russian>HMMWV (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER+">
 			<English>HMMWV (Winter)+</English>
 			<German>Humvee (Winter)+</German>
-			<Russian>HMMWV (Зимний)+</Russian>
+			<Russian>HMMWV (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER++">
 			<English>HMMWV (Winter)++</English>
 			<German>Humvee (Winter)++</German>
-			<Russian>HMMWV (Зимний)++</Russian>
+			<Russian>HMMWV (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER+++">
 			<English>HMMWV (Winter)+++</English>
 			<German>Humvee (Winter)+++</German>
-			<Russian>HMMWV (Зимний)+++</Russian>
+			<Russian>HMMWV (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_WINTER++++">
 			<English>HMMWV (Winter)++++</English>
 			<German>Humvee (Winter)++++</German>
-			<Russian>HMMWV (Зимний)++++</Russian>
+			<Russian>HMMWV (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HUMMER">
 			<English>Hummer</English>
@@ -8555,327 +8555,327 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_SOV">
 			<English>HMMWV SOV (Desert)</English>
-			<Russian>Хамви SOV (Пустынный)</Russian>
+			<Russian>Хамви SOV (Пустыня)</Russian>
 			<German>Humvee SOV (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_SOV+">
 			<English>HMMWV SOV (Desert)+</English>
-			<Russian>Хамви SOV (Пустынный)+</Russian>
+			<Russian>Хамви SOV (Пустыня)+</Russian>
 			<German>Humvee SOV (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_SOV++">
 			<English>HMMWV SOV (Desert)++</English>
-			<Russian>Хамви SOV (Пустынный)++</Russian>
+			<Russian>Хамви SOV (Пустыня)++</Russian>
 			<German>Humvee SOV (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_SOV+++">
 			<English>HMMWV SOV (Desert)+++</English>
-			<Russian>Хамви SOV (Пустынный)+++</Russian>
+			<Russian>Хамви SOV (Пустыня)+++</Russian>
 			<German>Humvee SOV (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_SOV++++">
 			<English>HMMWV SOV (Desert)++++</English>
-			<Russian>Хамви SOV (Пустынный)++++</Russian>
+			<Russian>Хамви SOV (Пустыня)++++</Russian>
 			<German>Humvee SOV (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK">
 			<English>HMMWV GPK (Desert)</English>
-			<Russian>Хамви GPK (Пустынный)</Russian>
+			<Russian>Хамви GPK (Пустыня)</Russian>
 			<German>Humvee GPK (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK+">
 			<English>HMMWV GPK (Desert)+</English>
-			<Russian>Хамви GPK (Пустынный)+</Russian>
+			<Russian>Хамви GPK (Пустыня)+</Russian>
 			<German>Humvee GPK (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK++">
 			<English>HMMWV GPK (Desert)++</English>
-			<Russian>Хамви GPK (Пустынный)++</Russian>
+			<Russian>Хамви GPK (Пустыня)++</Russian>
 			<German>Humvee GPK (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK+++">
 			<English>HMMWV GPK (Desert)+++</English>
-			<Russian>Хамви GPK (Пустынный)+++</Russian>
+			<Russian>Хамви GPK (Пустыня)+++</Russian>
 			<German>Humvee GPK (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK++++">
 			<English>HMMWV GPK (Desert)++++</English>
-			<Russian>Хамви GPK (Пустынный)++++</Russian>
+			<Russian>Хамви GPK (Пустыня)++++</Russian>
 			<German>Humvee GPK (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER">
 			<English>HMMWV GPK (Winter)</English>
 			<German>Humvee GPK (Winter)</German>
-			<Russian>HMMWV GPK (Зимний)</Russian>
+			<Russian>HMMWV GPK (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER+">
 			<English>HMMWV GPK (Winter)+</English>
 			<German>Humvee GPK (Winter)+</German>
-			<Russian>HMMWV GPK (Зимний)+</Russian>
+			<Russian>HMMWV GPK (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER++">
 			<English>HMMWV GPK (Winter)++</English>
 			<German>Humvee GPK (Winter)++</German>
-			<Russian>HMMWV GPK (Зимний)++</Russian>
+			<Russian>HMMWV GPK (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER+++">
 			<English>HMMWV GPK (Winter)+++</English>
 			<German>Humvee GPK (Winter)+++</German>
-			<Russian>HMMWV GPK (Зимний)+++</Russian>
+			<Russian>HMMWV GPK (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_GPK_WINTER++++">
 			<English>HMMWV GPK (Winter)++++</English>
 			<German>Humvee GPK (Winter)++++</German>
-			<Russian>HMMWV GPK (Зимний)++++</Russian>
+			<Russian>HMMWV GPK (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM">
 			<English>HMMWV DSHKM (Desert)</English>
-			<Russian>Хамви ДШКМ (Пустынный)</Russian>
+			<Russian>Хамви ДШКМ (Пустыня)</Russian>
 			<German>Humvee DSHKM (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM+">
 			<English>HMMWV DSHKM (Desert)+</English>
-			<Russian>Хамви ДШКМ (Пустынный)+</Russian>
+			<Russian>Хамви ДШКМ (Пустыня)+</Russian>
 			<German>Humvee DSHKM (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM++">
 			<English>HMMWV DSHKM (Desert)++</English>
-			<Russian>Хамви ДШКМ (Пустынный)++</Russian>
+			<Russian>Хамви ДШКМ (Пустыня)++</Russian>
 			<German>Humvee DSHKM (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM+++">
 			<English>HMMWV DSHKM (Desert)+++</English>
-			<Russian>Хамви ДШКМ (Пустынный)+++</Russian>
+			<Russian>Хамви ДШКМ (Пустыня)+++</Russian>
 			<German>Humvee DSHKM (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DSHKM++++">
 			<English>HMMWV DSHKM (Desert)++++</English>
-			<Russian>Хамви ДШКМ (Пустынный)++++</Russian>
+			<Russian>Хамви ДШКМ (Пустыня)++++</Russian>
 			<German>Humvee DSHKM (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30">
 			<English>HMMWV AGS-30 (Desert)</English>
-			<Russian>Хамви АГС-30 (Пустынный)</Russian>
+			<Russian>Хамви АГС-30 (Пустыня)</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30+">
 			<English>HMMWV AGS-30 (Desert)+</English>
-			<Russian>Хамви АГС-30 (Пустынный)+</Russian>
+			<Russian>Хамви АГС-30 (Пустыня)+</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30++">
 			<English>HMMWV AGS-30 (Desert)++</English>
-			<Russian>Хамви АГС-30 (Пустынный)++</Russian>
+			<Russian>Хамви АГС-30 (Пустыня)++</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30+++">
 			<English>HMMWV AGS-30 (Desert)+++</English>
-			<Russian>Хамви АГС-30 (Пустынный)+++</Russian>
+			<Russian>Хамви АГС-30 (Пустыня)+++</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AGS30++++">
 			<English>HMMWV AGS-30 (Desert)++++</English>
-			<Russian>Хамви АГС-30 (Пустынный)++++</Russian>
+			<Russian>Хамви АГС-30 (Пустыня)++++</Russian>
 			<German>Humvee AGS-30 (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED">
 			<English>HMMWV M240 (Woodland)</English>
-			<Russian>Хамви M240 (Лесной)</Russian>
+			<Russian>Хамви M240 (Лес)</Russian>
 			<German>Humvee M240 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED+">
 			<English>HMMWV M240 (Woodland)+</English>
-			<Russian>Хамви M240 (Лесной)+</Russian>
+			<Russian>Хамви M240 (Лес)+</Russian>
 			<German>Humvee M240 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED++">
 			<English>HMMWV M240 (Woodland)++</English>
-			<Russian>Хамви M240 (Лесной)++</Russian>
+			<Russian>Хамви M240 (Лес)++</Russian>
 			<German>Humvee M240 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED+++">
 			<English>HMMWV M240 (Woodland)+++</English>
-			<Russian>Хамви M240 (Лесной)+++</Russian>
+			<Russian>Хамви M240 (Лес)+++</Russian>
 			<German>Humvee M240 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED++++">
 			<English>HMMWV M240 (Woodland)++++</English>
-			<Russian>Хамви M240 (Лесной)++++</Russian>
+			<Russian>Хамви M240 (Лес)++++</Russian>
 			<German>Humvee M240 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER">
 			<English>HMMWV M240 (Winter)</English>
 			<German>Humvee M240 (Winter)</German>
-			<Russian>HMMWV M240 (Зимний)</Russian>
+			<Russian>HMMWV M240 (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER+">
 			<English>HMMWV M240 (Winter)+</English>
 			<German>Humvee M240 (Winter)+</German>
-			<Russian>HMMWV M240 (Зимний)+</Russian>
+			<Russian>HMMWV M240 (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER++">
 			<English>HMMWV M240 (Winter)++</English>
 			<German>Humvee M240 (Winter)++</German>
-			<Russian>HMMWV M240 (Зимний)++</Russian>
+			<Russian>HMMWV M240 (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER+++">
 			<English>HMMWV M240 (Winter)+++</English>
 			<German>Humvee M240 (Winter)+++</German>
-			<Russian>HMMWV M240 (Зимний)+++</Russian>
+			<Russian>HMMWV M240 (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_ARMORED_WINTER++++">
 			<English>HMMWV M240 (Winter)++++</English>
 			<German>Humvee M240 (Winter)++++</German>
-			<Russian>HMMWV M240 (Зимний)++++</Russian>
+			<Russian>HMMWV M240 (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_M2">
 			<English>HMMWV M2 (Woodland)</English>
-			<Russian>Хамви M2 (Лесной)</Russian>
+			<Russian>Хамви M2 (Лес)</Russian>
 			<German>Humvee M2 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_M2+">
 			<English>HMMWV M2 (Woodland)+</English>
-			<Russian>Хамви M2 (Лесной)+</Russian>
+			<Russian>Хамви M2 (Лес)+</Russian>
 			<German>Humvee M2 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_M2++">
 			<English>HMMWV M2 (Woodland)++</English>
-			<Russian>Хамви M2 (Лесной)++</Russian>
+			<Russian>Хамви M2 (Лес)++</Russian>
 			<German>Humvee M2 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_M2+++">
 			<English>HMMWV M2 (Woodland)+++</English>
-			<Russian>Хамви M2 (Лесной)+++</Russian>
+			<Russian>Хамви M2 (Лес)+++</Russian>
 			<German>Humvee M2 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_M2++++">
 			<English>HMMWV M2 (Woodland)++++</English>
-			<Russian>Хамви M2 (Лесной)++++</Russian>
+			<Russian>Хамви M2 (Лес)++++</Russian>
 			<German>Humvee M2 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_MK19">
 			<English>HMMWV MK19 (Woodland)</English>
-			<Russian>Хамви MK19 (Лесной)</Russian>
+			<Russian>Хамви MK19 (Лес)</Russian>
 			<German>Humvee MK19 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_MK19+">
 			<English>HMMWV MK19 (Woodland)+</English>
-			<Russian>Хамви MK19 (Лесной)+</Russian>
+			<Russian>Хамви MK19 (Лес)+</Russian>
 			<German>Humvee MK19 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_MK19++">
 			<English>HMMWV MK19 (Woodland)++</English>
-			<Russian>Хамви MK19 (Лесной)++</Russian>
+			<Russian>Хамви MK19 (Лес)++</Russian>
 			<German>Humvee MK19 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_MK19+++">
 			<English>HMMWV MK19 (Woodland)+++</English>
-			<Russian>Хамви MK19 (Лесной)+++</Russian>
+			<Russian>Хамви MK19 (Лес)+++</Russian>
 			<German>Humvee MK19 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_MK19++++">
 			<English>HMMWV MK19 (Woodland)++++</English>
-			<Russian>Хамви MK19 (Лесной)++++</Russian>
+			<Russian>Хамви MK19 (Лес)++++</Russian>
 			<German>Humvee MK19 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19">
 			<English>HMMWV MK19 (Desert)</English>
-			<Russian>Хамви MK19 (Пустынный)</Russian>
+			<Russian>Хамви MK19 (Пустыня)</Russian>
 			<German>Humvee MK19 (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19+">
 			<English>HMMWV MK19 (Desert)+</English>
-			<Russian>Хамви MK19 (Пустынный)+</Russian>
+			<Russian>Хамви MK19 (Пустыня)+</Russian>
 			<German>Humvee MK19 (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19++">
 			<English>HMMWV MK19 (Desert)++</English>
-			<Russian>Хамви MK19 (Пустынный)++</Russian>
+			<Russian>Хамви MK19 (Пустыня)++</Russian>
 			<German>Humvee MK19 (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19+++">
 			<English>HMMWV MK19 (Desert)+++</English>
-			<Russian>Хамви MK19 (Пустынный)+++</Russian>
+			<Russian>Хамви MK19 (Пустыня)+++</Russian>
 			<German>Humvee MK19 (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES_MK19++++">
 			<English>HMMWV MK19 (Desert)++++</English>
-			<Russian>Хамви MK19 (Пустынный)++++</Russian>
+			<Russian>Хамви MK19 (Пустыня)++++</Russian>
 			<German>Humvee MK19 (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES">
 			<English>HMMWV (Desert)</English>
-			<Russian>Хамви (Пустынный)</Russian>
+			<Russian>Хамви (Пустыня)</Russian>
 			<German>Humvee (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES+">
 			<English>HMMWV (Desert)+</English>
-			<Russian>Хамви (Пустынный)+</Russian>
+			<Russian>Хамви (Пустыня)+</Russian>
 			<German>Humvee (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES++">
 			<English>HMMWV (Desert)++</English>
-			<Russian>Хамви (Пустынный)++</Russian>
+			<Russian>Хамви (Пустыня)++</Russian>
 			<German>Humvee (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES+++">
 			<English>HMMWV (Desert)+++</English>
-			<Russian>Хамви (Пустынный)+++</Russian>
+			<Russian>Хамви (Пустыня)+++</Russian>
 			<German>Humvee (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_DES++++">
 			<English>HMMWV (Desert)++++</English>
-			<Russian>Хамви (Пустынный)++++</Russian>
+			<Russian>Хамви (Пустыня)++++</Russian>
 			<German>Humvee (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE">
 			<English>HMMWV Ambulance (Woodland)</English>
-			<Russian>Хамви Скорая (Лесной)</Russian>
+			<Russian>Хамви Скорая (Лес)</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE+">
 			<English>HMMWV Ambulance (Woodland)+</English>
-			<Russian>Хамви Скорая (Лесной)+</Russian>
+			<Russian>Хамви Скорая (Лес)+</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE++">
 			<English>HMMWV Ambulance (Woodland)++</English>
-			<Russian>Хамви Скорая (Лесной)++</Russian>
+			<Russian>Хамви Скорая (Лес)++</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE+++">
 			<English>HMMWV Ambulance (Woodland)+++</English>
-			<Russian>Хамви Скорая (Лесной)+++</Russian>
+			<Russian>Хамви Скорая (Лес)+++</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE++++">
 			<English>HMMWV Ambulance (Woodland)++++</English>
-			<Russian>Хамви Скорая (Лесной)++++</Russian>
+			<Russian>Хамви Скорая (Лес)++++</Russian>
 			<German>Humvee Sanitätsfzg. (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES">
 			<English>HMMWV Ambulance (Desert)</English>
-			<Russian>Хамви Скорая (Пустынный)</Russian>
+			<Russian>Хамви Скорая (Пустыня)</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES+">
 			<English>HMMWV Ambulance (Desert)+</English>
-			<Russian>Хамви Скорая (Пустынный)+</Russian>
+			<Russian>Хамви Скорая (Пустыня)+</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES++">
 			<English>HMMWV Ambulance (Desert)++</English>
-			<Russian>Хамви Скорая (Пустынный)++</Russian>
+			<Russian>Хамви Скорая (Пустыня)++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES+++">
 			<English>HMMWV Ambulance (Desert)+++</English>
-			<Russian>Хамви Скорая (Пустынный)+++</Russian>
+			<Russian>Хамви Скорая (Пустыня)+++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_HMMWV_AMBULANCE_DES++++">
 			<English>HMMWV Ambulance (Desert)++++</English>
-			<Russian>Хамви Скорая (Пустынный)++++</Russian>
+			<Russian>Хамви Скорая (Пустыня)++++</Russian>
 			<German>Humvee Sanitätsfzg. (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_OLD_JEEP">
@@ -8905,177 +8905,177 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TAN">
 			<English>Pick-up (tan)</English>
-			<Russian>Пикап (оранжевый)</Russian>
+			<Russian>Пикап (Оранжевый)</Russian>
 			<German>Pick-up (gelbbraun)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TAN+">
 			<English>Pick-up (tan)+</English>
-			<Russian>Пикап (оранжевый)+</Russian>
+			<Russian>Пикап (Оранжевый)+</Russian>
 			<German>Pick-up (gelbbraun)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TAN++">
 			<English>Pick-up (tan)++</English>
-			<Russian>Пикап (оранжевый)++</Russian>
+			<Russian>Пикап (Оранжевый)++</Russian>
 			<German>Pick-up (gelbbraun)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TAN+++">
 			<English>Pick-up (tan)+++</English>
-			<Russian>Пикап (оранжевый)+++</Russian>
+			<Russian>Пикап (Оранжевый)+++</Russian>
 			<German>Pick-up (gelbbraun)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_TAN++++">
 			<English>Pick-up (tan)++++</English>
-			<Russian>Пикап (оранжевый)++++</Russian>
+			<Russian>Пикап (Оранжевый)++++</Russian>
 			<German>Pick-up (gelbbraun)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_WHITE">
 			<English>Pick-up (white)</English>
-			<Russian>Пикап (белый)</Russian>
+			<Russian>Пикап (Белый)</Russian>
 			<German>Pick-up (weiß)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_WHITE+">
 			<English>Pick-up (white)+</English>
-			<Russian>Пикап (белый)+</Russian>
+			<Russian>Пикап (Белый)+</Russian>
 			<German>Pick-up (weiß)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_WHITE++">
 			<English>Pick-up (white)++</English>
-			<Russian>Пикап (белый)++</Russian>
+			<Russian>Пикап (Белый)++</Russian>
 			<German>Pick-up (weiß)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_WHITE+++">
 			<English>Pick-up (white)+++</English>
-			<Russian>Пикап (белый)+++</Russian>
+			<Russian>Пикап (Белый)+++</Russian>
 			<German>Pick-up (weiß)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_WHITE++++">
 			<English>Pick-up (white)++++</English>
-			<Russian>Пикап (белый)++++</Russian>
+			<Russian>Пикап (Белый)++++</Russian>
 			<German>Pick-up (weiß)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED">
 			<English>Pick-up covered (red)</English>
-			<Russian>Пикап крытый (красный)</Russian>
+			<Russian>Пикап крытый (Красный)</Russian>
 			<German>Pick-up abgedeckt (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED+">
 			<English>Pick-up covered (red)+</English>
-			<Russian>Пикап крытый (красный)+</Russian>
+			<Russian>Пикап крытый (Красный)+</Russian>
 			<German>Pick-up abgedeckt (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED++">
 			<English>Pick-up covered (red)++</English>
-			<Russian>Пикап крытый (красный)++</Russian>
+			<Russian>Пикап крытый (Красный)++</Russian>
 			<German>Pick-up abgedeckt (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED+++">
 			<English>Pick-up covered (red)+++</English>
-			<Russian>Пикап крытый (красный)+++</Russian>
+			<Russian>Пикап крытый (Красный)+++</Russian>
 			<German>Pick-up abgedeckt (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_RED++++">
 			<English>Pick-up covered (red)++++</English>
-			<Russian>Пикап крытый (красный)++++</Russian>
+			<Russian>Пикап крытый (Красный)++++</Russian>
 			<German>Pick-up abgedeckt (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_BLUE">
 			<English>Pick-up (blue)</English>
-			<Russian>Пикап (синий)</Russian>
+			<Russian>Пикап (Синий)</Russian>
 			<German>Pick-up (blau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_BLUE+">
 			<English>Pick-up (blue)+</English>
-			<Russian>Пикап (синий)+</Russian>
+			<Russian>Пикап (Синий)+</Russian>
 			<German>Pick-up (blau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_BLUE++">
 			<English>Pick-up (blue)++</English>
-			<Russian>Пикап (синий)++</Russian>
+			<Russian>Пикап (Синий)++</Russian>
 			<German>Pick-up (blau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_BLUE+++">
 			<English>Pick-up (blue)+++</English>
-			<Russian>Пикап (синий)+++</Russian>
+			<Russian>Пикап (Синий)+++</Russian>
 			<German>Pick-up (blau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_BLUE++++">
 			<English>Pick-up (blue)++++</English>
-			<Russian>Пикап (синий)++++</Russian>
+			<Russian>Пикап (Синий)++++</Russian>
 			<German>Pick-up (blau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREEN">
 			<English>Pick-up (green)</English>
-			<Russian>Пикап (зелёный)</Russian>
+			<Russian>Пикап (Зелёный)</Russian>
 			<German>Pick-up (grün)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREEN+">
 			<English>Pick-up (green)+</English>
-			<Russian>Пикап (зелёный)+</Russian>
+			<Russian>Пикап (Зелёный)+</Russian>
 			<German>Pick-up (grün)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREEN++">
 			<English>Pick-up (green)++</English>
-			<Russian>Пикап (зелёный)++</Russian>
+			<Russian>Пикап (Зелёный)++</Russian>
 			<German>Pick-up (grün)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREEN+++">
 			<English>Pick-up (green)+++</English>
-			<Russian>Пикап (зелёный)+++</Russian>
+			<Russian>Пикап (Зелёный)+++</Russian>
 			<German>Pick-up (grün)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREEN++++">
 			<English>Pick-up (green)++++</English>
-			<Russian>Пикап (зелёный)++++</Russian>
+			<Russian>Пикап (Зелёный)++++</Russian>
 			<German>Pick-up (grün)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREY">
 			<English>Pick-up (grey)</English>
-			<Russian>Пикап (серый)</Russian>
+			<Russian>Пикап (Серый)</Russian>
 			<German>Pick-up (grau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREY+">
 			<English>Pick-up (grey)+</English>
-			<Russian>Пикап (серый)+</Russian>
+			<Russian>Пикап (Серый)+</Russian>
 			<German>Pick-up (grau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREY++">
 			<English>Pick-up (grey)++</English>
-			<Russian>Пикап (серый)++</Russian>
+			<Russian>Пикап (Серый)++</Russian>
 			<German>Pick-up (grau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREY+++">
 			<English>Pick-up (grey)+++</English>
-			<Russian>Пикап (серый)+++</Russian>
+			<Russian>Пикап (Серый)+++</Russian>
 			<German>Pick-up (grau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_GREY++++">
 			<English>Pick-up (grey)++++</English>
-			<Russian>Пикап (серый)++++</Russian>
+			<Russian>Пикап (Серый)++++</Russian>
 			<German>Pick-up (grau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN">
 			<English>Pick-up covered (tan)</English>
-			<Russian>Пикап крытый (оранжевый)</Russian>
+			<Russian>Пикап крытый (Оранжевый)</Russian>
 			<German>Pick-up abgedeckt (gelbbraun)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN+">
 			<English>Pick-up covered (tan)+</English>
-			<Russian>Пикап крытый (оранжевый)+</Russian>
+			<Russian>Пикап крытый (Оранжевый)+</Russian>
 			<German>Pick-up abgedeckt (gelbbraun)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN++">
 			<English>Pick-up covered (tan)++</English>
-			<Russian>Пикап крытый (оранжевый)++</Russian>
+			<Russian>Пикап крытый (Оранжевый)++</Russian>
 			<German>Pick-up abgedeckt (gelbbraun)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN+++">
 			<English>Pick-up covered (tan)+++</English>
-			<Russian>Пикап крытый (оранжевый)+++</Russian>
+			<Russian>Пикап крытый (Оранжевый)+++</Russian>
 			<German>Pick-up abgedeckt (gelbbraun)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_COVERED_TAN++++">
 			<English>Pick-up covered (tan)++++</English>
-			<Russian>Пикап крытый (оранжевый)++++</Russian>
+			<Russian>Пикап крытый (Оранжевый)++++</Russian>
 			<German>Pick-up abgedeckt (gelbbraun)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_TRACTOR">
@@ -9102,17 +9102,17 @@
 		<Key ID="STR_VEH_NAME_IKARUS_RED">
 			<English>Bus (Red)</English>
 			<German>Bus (Rot)</German>
-			<Russian>Автобус (красный)</Russian>
+			<Russian>Автобус (Красный)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_IKARUS_BLUE">
 			<English>Bus (Blue)</English>
 			<German>Bus (Blau)</German>
-			<Russian>Автобус (синий)</Russian>
+			<Russian>Автобус (Синий)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_IKARUS_WHITE">
 			<English>Bus (White)</English>
 			<German>Bus (Weiß)</German>
-			<Russian>Автобус (белый)</Russian>
+			<Russian>Автобус (Белый)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_IKARUS_ARMORED">
 			<English>Armored Bus</English>
@@ -9121,253 +9121,253 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ">
 			<English>Kamaz Open (Woodland)</English>
-			<Russian>Камаз Открытый (Лесной)</Russian>
+			<Russian>Камаз Открытый (Лес)</Russian>
 			<German>Kamaz Offen (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ+">
 			<English>Kamaz Open (Woodland)+</English>
-			<Russian>Камаз Открытый (Лесной)+</Russian>
+			<Russian>Камаз Открытый (Лес)+</Russian>
 			<German>Kamaz Offen (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ++">
 			<English>Kamaz Open (Woodland)++</English>
-			<Russian>Камаз Открытый (Лесной)++</Russian>
+			<Russian>Камаз Открытый (Лес)++</Russian>
 			<German>Kamaz Offen (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ+++">
 			<English>Kamaz Open (Woodland)+++</English>
-			<Russian>Камаз Открытый (Лесной)+++</Russian>
+			<Russian>Камаз Открытый (Лес)+++</Russian>
 			<German>Kamaz Offen (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ++++">
 			<English>Kamaz Open (Woodland)++++</English>
-			<Russian>Камаз Открытый (Лесной)++++</Russian>
+			<Russian>Камаз Открытый (Лес)++++</Russian>
 			<German>Kamaz Offen (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT">
 			<English>Kamaz (Woodland)</English>
-			<Russian>Камаз (Лесной)</Russian>
+			<Russian>Камаз (Лес)</Russian>
 			<German>Kamaz (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT+">
 			<English>Kamaz (Woodland)+</English>
-			<Russian>Камаз (Лесной)+</Russian>
+			<Russian>Камаз (Лес)+</Russian>
 			<German>Kamaz (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT++">
 			<English>Kamaz (Woodland)++</English>
-			<Russian>Камаз (Лесной)++</Russian>
+			<Russian>Камаз (Лес)++</Russian>
 			<German>Kamaz (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT+++">
 			<English>Kamaz (Woodland)+++</English>
-			<Russian>Камаз (Лесной)+++</Russian>
+			<Russian>Камаз (Лес)+++</Russian>
 			<German>Kamaz (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT++++">
 			<English>Kamaz (Woodland)++++</English>
-			<Russian>Камаз (Лесной)++++</Russian>
+			<Russian>Камаз (Лес)++++</Russian>
 			<German>Kamaz (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL">
 			<English>Kamaz Fuel (Woodland)</English>
-			<Russian>Камаз Заправщик (Лесной)</Russian>
+			<Russian>Камаз Заправщик (Лес)</Russian>
 			<German>Kamaz Treibstoff (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL+">
 			<English>Kamaz Fuel (Woodland)+</English>
-			<Russian>Камаз Заправщик (Лесной)+</Russian>
+			<Russian>Камаз Заправщик (Лес)+</Russian>
 			<German>Kamaz Treibstoff (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL++">
 			<English>Kamaz Fuel (Woodland)++</English>
-			<Russian>Камаз Заправщик (Лесной)++</Russian>
+			<Russian>Камаз Заправщик (Лес)++</Russian>
 			<German>Kamaz Treibstoff (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL+++">
 			<English>Kamaz Fuel (Woodland)+++</English>
-			<Russian>Камаз Заправщик (Лесной)+++</Russian>
+			<Russian>Камаз Заправщик (Лес)+++</Russian>
 			<German>Kamaz Treibstoff (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL++++">
 			<English>Kamaz Fuel (Woodland)++++</English>
-			<Russian>Камаз Заправщик (Лесной)++++</Russian>
+			<Russian>Камаз Заправщик (Лес)++++</Russian>
 			<German>Kamaz Treibstoff (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO">
 			<English>Kamaz Material Transport (Woodland)</English>
-			<Russian>Камаз Матобеспечения (Лесной)</Russian>
+			<Russian>Камаз Матобеспечения (Лес)</Russian>
 			<German>Kamaz Materialtransport (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO+">
 			<English>Kamaz Material Transport (Woodland)+</English>
-			<Russian>Камаз Матобеспечения (Лесной)+</Russian>
+			<Russian>Камаз Матобеспечения (Лес)+</Russian>
 			<German>Kamaz Materialtransport (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO++">
 			<English>Kamaz Material Transport (Woodland)++</English>
-			<Russian>Камаз Матобеспечения (Лесной)++</Russian>
+			<Russian>Камаз Матобеспечения (Лес)++</Russian>
 			<German>Kamaz Materialtransport (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO+++">
 			<English>Kamaz Material Transport (Woodland)+++</English>
-			<Russian>Камаз Матобеспечения (Лесной)+++</Russian>
+			<Russian>Камаз Матобеспечения (Лес)+++</Russian>
 			<German>Kamaz Materialtransport (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO++++">
 			<English>Kamaz Material Transport (Woodland)++++</English>
-			<Russian>Камаз Матобеспечения (Лесной)++++</Russian>
+			<Russian>Камаз Матобеспечения (Лес)++++</Russian>
 			<German>Kamaz Materialtransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS">
 			<English>Kamaz Weapon Transport (Woodland)</English>
-			<Russian>Камаз Оружейный (Лесной)</Russian>
+			<Russian>Камаз Оружейный (Лес)</Russian>
 			<German>Kamaz Waffentransport (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS+">
 			<English>Kamaz Weapon Transport (Woodland)+</English>
-			<Russian>Камаз Оружейный (Лесной)+</Russian>
+			<Russian>Камаз Оружейный (Лес)+</Russian>
 			<German>Kamaz Waffentransport (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS++">
 			<English>Kamaz Weapon Transport (Woodland)++</English>
-			<Russian>Камаз Оружейный (Лесной)++</Russian>
+			<Russian>Камаз Оружейный (Лес)++</Russian>
 			<German>Kamaz Waffentransport (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS+++">
 			<English>Kamaz Weapon Transport (Woodland)+++</English>
-			<Russian>Камаз Оружейный (Лесной)+++</Russian>
+			<Russian>Камаз Оружейный (Лес)+++</Russian>
 			<German>Kamaz Waffentransport (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS++++">
 			<English>Kamaz Weapon Transport (Woodland)++++</English>
-			<Russian>Камаз Оружейный (Лесной)++++</Russian>
+			<Russian>Камаз Оружейный (Лес)++++</Russian>
 			<German>Kamaz Waffentransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER">
 			<English>Kamaz Open (Winter)</English>
 			<German>Kamaz Offen (Winter)</German>
-			<Russian>Камаз Открытый (Зимний)</Russian>
+			<Russian>Камаз Открытый (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER+">
 			<English>Kamaz Open (Winter)+</English>
 			<German>Kamaz Offen (Winter)+</German>
-			<Russian>Камаз Открытый (Зимний)+</Russian>
+			<Russian>Камаз Открытый (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER++">
 			<English>Kamaz Open (Winter)++</English>
 			<German>Kamaz Offen (Winter)++</German>
-			<Russian>Камаз Открытый (Зимний)++</Russian>
+			<Russian>Камаз Открытый (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER+++">
 			<English>Kamaz Open (Winter)+++</English>
 			<German>Kamaz Offen (Winter)+++</German>
-			<Russian>Камаз Открытый (Зимний)+++</Russian>
+			<Russian>Камаз Открытый (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WINTER++++">
 			<English>Kamaz Open (Winter)++++</English>
 			<German>Kamaz Offen (Winter)++++</German>
-			<Russian>Камаз Открытый (Зимний)++++</Russian>
+			<Russian>Камаз Открытый (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER">
 			<English>Kamaz (Winter)</English>
 			<German>Kamaz (Winter)</German>
-			<Russian>Камаз (Зимний)</Russian>
+			<Russian>Камаз (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER+">
 			<English>Kamaz (Winter)+</English>
 			<German>Kamaz (Winter)+</German>
-			<Russian>Камаз (Зимний)+</Russian>
+			<Russian>Камаз (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER++">
 			<English>Kamaz (Winter)++</English>
 			<German>Kamaz (Winter)++</German>
-			<Russian>Камаз (Зимний)++</Russian>
+			<Russian>Камаз (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER+++">
 			<English>Kamaz (Winter)+++</English>
 			<German>Kamaz (Winter)+++</German>
-			<Russian>Камаз (Зимний)+++</Russian>
+			<Russian>Камаз (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_COVERT_WINTER++++">
 			<English>Kamaz (Winter)++++</English>
 			<German>Kamaz (Winter)++++</German>
-			<Russian>Камаз (Зимний)++++</Russian>
+			<Russian>Камаз (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER">
 			<English>Kamaz Fuel (Winter)</English>
 			<German>Kamaz Treibstoff (Winter)</German>
-			<Russian>Камаз Заправщик (Зимний)</Russian>
+			<Russian>Камаз Заправщик (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER+">
 			<English>Kamaz Fuel (Winter)+</English>
 			<German>Kamaz Treibstoff (Winter)+</German>
-			<Russian>Камаз Заправщик (Зимний)+</Russian>
+			<Russian>Камаз Заправщик (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER++">
 			<English>Kamaz Fuel (Winter)++</English>
 			<German>Kamaz Treibstoff (Winter)++</German>
-			<Russian>Камаз Заправщик (Зимний)++</Russian>
+			<Russian>Камаз Заправщик (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER+++">
 			<English>Kamaz Fuel (Winter)+++</English>
 			<German>Kamaz Treibstoff (Winter)+++</German>
-			<Russian>Камаз Заправщик (Зимний)+++</Russian>
+			<Russian>Камаз Заправщик (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_REFUEL_WINTER++++">
 			<English>Kamaz Fuel (Winter)++++</English>
 			<German>Kamaz Treibstoff (Winter)++++</German>
-			<Russian>Камаз Заправщик (Зимний)++++</Russian>
+			<Russian>Камаз Заправщик (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER">
 			<English>Kamaz Material Transport (Winter)</English>
 			<German>Kamaz Materialtransport (Winter)</German>
-			<Russian>Камаз Матобеспечения (Зимний)</Russian>
+			<Russian>Камаз Матобеспечения (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER+">
 			<English>Kamaz Material Transport (Winter)+</English>
 			<German>Kamaz Materialtransport (Winter)+</German>
-			<Russian>Камаз Матобеспечения (Зимний)+</Russian>
+			<Russian>Камаз Матобеспечения (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER++">
 			<English>Kamaz Material Transport (Winter)++</English>
 			<German>Kamaz Materialtransport (Winter)++</German>
-			<Russian>Камаз Матобеспечения (Зимний)++</Russian>
+			<Russian>Камаз Матобеспечения (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER+++">
 			<English>Kamaz Material Transport (Winter)+++</English>
 			<German>Kamaz Materialtransport (Winter)+++</German>
-			<Russian>Камаз Матобеспечения (Зимний)+++</Russian>
+			<Russian>Камаз Матобеспечения (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_AMMO_WINTER++++">
 			<English>Kamaz Material Transport (Winter)++++</English>
 			<German>Kamaz Materialtransport (Winter)++++</German>
-			<Russian>Камаз Матобеспечения (Зимний)++++</Russian>
+			<Russian>Камаз Матобеспечения (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER">
 			<English>Kamaz Weapon Transport (Winter)</English>
 			<German>Kamaz Waffentransport (Winter)</German>
-			<Russian>Камаз Оружейный (Зимний)</Russian>
+			<Russian>Камаз Оружейный (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER+">
 			<English>Kamaz Weapon Transport (Winter)+</English>
 			<German>Kamaz Waffentransport (Winter)+</German>
-			<Russian>Камаз Оружейный (Зимний)+</Russian>
+			<Russian>Камаз Оружейный (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER++">
 			<English>Kamaz Weapon Transport (Winter)++</English>
 			<German>Kamaz Waffentransport (Winter)++</German>
-			<Russian>Камаз Оружейный (Зимний)++</Russian>
+			<Russian>Камаз Оружейный (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER+++">
 			<English>Kamaz Weapon Transport (Winter)+++</English>
 			<German>Kamaz Waffentransport (Winter)+++</German>
-			<Russian>Камаз Оружейный (Зимний)+++</Russian>
+			<Russian>Камаз Оружейный (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_KAMAZ_WEAPONS_WINTER++++">
 			<English>Kamaz Weapon Transport (Winter)++++</English>
 			<German>Kamaz Waffentransport (Winter)++++</German>
-			<Russian>Камаз Оружейный (Зимний)++++</Russian>
+			<Russian>Камаз Оружейный (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_LADA_WHITE">
 			<English>Lada (white)</English>
@@ -9521,127 +9521,127 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED">
 			<English>Military Offroad (red)</English>
-			<Russian>Военный внедорожник (красный)</Russian>
+			<Russian>Военный внедорожник (Красный)</Russian>
 			<German>Militär Offroad (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED+">
 			<English>Military Offroad (red)+</English>
-			<Russian>Военный внедорожник (красный)+</Russian>
+			<Russian>Военный внедорожник (Красный)+</Russian>
 			<German>Militär Offroad (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED++">
 			<English>Military Offroad (red)++</English>
-			<Russian>Военный внедорожник (красный)++</Russian>
+			<Russian>Военный внедорожник (Красный)++</Russian>
 			<German>Militär Offroad (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED+++">
 			<English>Military Offroad (red)+++</English>
-			<Russian>Военный внедорожник (красный)+++</Russian>
+			<Russian>Военный внедорожник (Красный)+++</Russian>
 			<German>Militär Offroad (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_RED++++">
 			<English>Military Offroad (red)++++</English>
-			<Russian>Военный внедорожник (красный)++++</Russian>
+			<Russian>Военный внедорожник (Красный)++++</Russian>
 			<German>Militär Offroad (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT">
 			<English>Military Offroad (Desert)</English>
-			<Russian>Военный внедорожник (Пустынный)</Russian>
+			<Russian>Военный внедорожник (Пустыня)</Russian>
 			<German>Militär Offroad (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT+">
 			<English>Military Offroad (Desert)+</English>
-			<Russian>Военный внедорожник (Пустынный)+</Russian>
+			<Russian>Военный внедорожник (Пустыня)+</Russian>
 			<German>Militär Offroad (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT++">
 			<English>Military Offroad (Desert)++</English>
-			<Russian>Военный внедорожник (Пустынный)++</Russian>
+			<Russian>Военный внедорожник (Пустыня)++</Russian>
 			<German>Militär Offroad (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT+++">
 			<English>Military Offroad (Desert)+++</English>
-			<Russian>Военный внедорожник (Пустынный)+++</Russian>
+			<Russian>Военный внедорожник (Пустыня)+++</Russian>
 			<German>Militär Offroad (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_DESERT++++">
 			<English>Military Offroad (Desert)++++</English>
-			<Russian>Военный внедорожник (Пустынный)++++</Russian>
+			<Russian>Военный внедорожник (Пустыня)++++</Russian>
 			<German>Militär Offroad (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND">
 			<English>Military Offroad (Woodland)</English>
-			<Russian>Военный внедорожник (Лесной)</Russian>
+			<Russian>Военный внедорожник (Лес)</Russian>
 			<German>Militär Offroad (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+">
 			<English>Military Offroad (Woodland)+</English>
-			<Russian>Военный внедорожник (Лесной)+</Russian>
+			<Russian>Военный внедорожник (Лес)+</Russian>
 			<German>Militär Offroad (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++">
 			<English>Military Offroad (Woodland)++</English>
-			<Russian>Военный внедорожник (Лесной)++</Russian>
+			<Russian>Военный внедорожник (Лес)++</Russian>
 			<German>Militär Offroad (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND+++">
 			<English>Military Offroad (Woodland)+++</English>
-			<Russian>Военный внедорожник (Лесной)+++</Russian>
+			<Russian>Военный внедорожник (Лес)+++</Russian>
 			<German>Militär Offroad (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_WOODLAND++++">
 			<English>Military Offroad (Woodland)++++</English>
-			<Russian>Военный внедорожник (Лесной)++++</Russian>
+			<Russian>Военный внедорожник (Лес)++++</Russian>
 			<German>Militär Offroad (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND">
 			<English>Military Offroad Ambulance (Woodland)</English>
-			<Russian>Военный внедорожник Скорая (Лесной)</Russian>
+			<Russian>Военный внедорожник Скорая (Лес)</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND+">
 			<English>Military Offroad Ambulance (Woodland)+</English>
-			<Russian>Военный внедорожник Скорая (Лесной)+</Russian>
+			<Russian>Военный внедорожник Скорая (Лес)+</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND++">
 			<English>Military Offroad Ambulance (Woodland)++</English>
-			<Russian>Военный внедорожник Скорая (Лесной)++</Russian>
+			<Russian>Военный внедорожник Скорая (Лес)++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND+++">
 			<English>Military Offroad Ambulance (Woodland)+++</English>
-			<Russian>Военный внедорожник Скорая (Лесной)+++</Russian>
+			<Russian>Военный внедорожник Скорая (Лес)+++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_WOODLAND++++">
 			<English>Military Offroad Ambulance (Woodland)++++</English>
-			<Russian>Военный внедорожник Скорая (Лесной)++++</Russian>
+			<Russian>Военный внедорожник Скорая (Лес)++++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT">
 			<English>Military Offroad Ambulance (Desert)</English>
-			<Russian>Военный внедорожник Скорая (Пустынный)</Russian>
+			<Russian>Военный внедорожник Скорая (Пустыня)</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT+">
 			<English>Military Offroad Ambulance (Desert)+</English>
-			<Russian>Военный внедорожник Скорая (Пустынный)+</Russian>
+			<Russian>Военный внедорожник Скорая (Пустыня)+</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT++">
 			<English>Military Offroad Ambulance (Desert)++</English>
-			<Russian>Военный внедорожник Скорая (Пустынный)++</Russian>
+			<Russian>Военный внедорожник Скорая (Пустыня)++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT+++">
 			<English>Military Offroad Ambulance (Desert)+++</English>
-			<Russian>Военный внедорожник Скорая (Пустынный)+++</Russian>
+			<Russian>Военный внедорожник Скорая (Пустыня)+++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_MEDIC_DESERT++++">
 			<English>Military Offroad Ambulance (Desert)++++</English>
-			<Russian>Военный внедорожник Скорая (Пустынный)++++</Russian>
+			<Russian>Военный внедорожник Скорая (Пустыня)++++</Russian>
 			<German>Militär Offroad Sanitätsfzg. (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MILITARY_OFFROAD_SPECIAL">
@@ -9816,23 +9816,23 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER">
 			<English>BRDM-2 HQ (Winter)</English>
-			<Russian>БРДМ-2 КШ (Зимний)</Russian>
+			<Russian>БРДМ-2 КШ (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER+">
 			<English>BRDM-2 HQ (Winter)+</English>
-			<Russian>БРДМ-2 КШ (Зимний)+</Russian>
+			<Russian>БРДМ-2 КШ (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER++">
 			<English>BRDM-2 HQ (Winter)++</English>
-			<Russian>БРДМ-2 КШ (Зимний)++</Russian>
+			<Russian>БРДМ-2 КШ (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER+++">
 			<English>BRDM-2 HQ (Winter)+++</English>
-			<Russian>БРДМ-2 КШ (Зимний)+++</Russian>
+			<Russian>БРДМ-2 КШ (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_HQ_WINTER++++">
 			<English>BRDM-2 HQ (Winter)++++</English>
-			<Russian>БРДМ-2 КШ (Зимний)++++</Russian>
+			<Russian>БРДМ-2 КШ (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_TK">
 			<English>BRDM-2 TK</English>
@@ -9897,27 +9897,27 @@
 		<Key ID="STR_VEH_NAME_BRDM2_DES">
 			<English>BRDM-2 Desert Camo</English>
 			<German>BRDM-2 Wüstentarn</German>
-			<Russian>БРДМ-2 (Пустынный)</Russian>
+			<Russian>БРДМ-2 (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES+">
 			<English>BRDM-2 Desert Camo+</English>
 			<German>BRDM-2 Wüstentarn+</German>
-			<Russian>БРДМ-2 (Пустынный)+</Russian>
+			<Russian>БРДМ-2 (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES++">
 			<English>BRDM-2 Desert Camo++</English>
 			<German>BRDM-2 Wüstentarn++</German>
-			<Russian>БРДМ-2 (Пустынный)++</Russian>
+			<Russian>БРДМ-2 (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES+++">
 			<English>BRDM-2 Desert Camo+++</English>
 			<German>BRDM-2 Wüstentarn+++</German>
-			<Russian>БРДМ-2 (Пустынный)+++</Russian>
+			<Russian>БРДМ-2 (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_DES++++">
 			<English>BRDM-2 Desert Camo++++</English>
 			<German>BRDM-2 Wüstentarn++++</German>
-			<Russian>БРДМ-2 (Пустынный)++++</Russian>
+			<Russian>БРДМ-2 (Пустыня)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_RUST">
 			<English>BRDM-2 rusty</English>
@@ -9946,23 +9946,23 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER">
 			<English>BRDM-2 Winter</English>
-			<Russian>БРДМ-2 (Зимний)</Russian>
+			<Russian>БРДМ-2 (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER+">
 			<English>BRDM-2 Winter+</English>
-			<Russian>БРДМ-2 (Зимний)+</Russian>
+			<Russian>БРДМ-2 (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER++">
 			<English>BRDM-2 Winter++</English>
-			<Russian>БРДМ-2 (Зимний)++</Russian>
+			<Russian>БРДМ-2 (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER+++">
 			<English>BRDM-2 Winter+++</English>
-			<Russian>БРДМ-2 (Зимний)+++</Russian>
+			<Russian>БРДМ-2 (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BRDM2_WINTER++++">
 			<English>BRDM-2 Winter++++</English>
-			<Russian>БРДМ-2 (Зимний)++++</Russian>
+			<Russian>БРДМ-2 (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_M113_AMBULANCE_UN">
 			<English>M113 UN Ambulance</English>
@@ -10172,27 +10172,27 @@
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER">
 			<English>BMP-2 Winter Ambulance</English>
 			<German>BMP-2 Winter Sanitätsfzg.</German>
-			<Russian>БМП-2 Санитарный (Зимний)</Russian>
+			<Russian>БМП-2 Санитарный (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER+">
 			<English>BMP-2 Winter Ambulance+</English>
 			<German>BMP-2 Winter Sanitätsfzg.+</German>
-			<Russian>БМП-2 Санитарный (Зимний)+</Russian>
+			<Russian>БМП-2 Санитарный (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER++">
 			<English>BMP-2 Winter Ambulance++</English>
 			<German>BMP-2 Winter Sanitätsfzg.++</German>
-			<Russian>БМП-2 Санитарный (Зимний)++</Russian>
+			<Russian>БМП-2 Санитарный (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER+++">
 			<English>BMP-2 Winter Ambulance+++</English>
 			<German>BMP-2 Winter Sanitätsfzg.+++</German>
-			<Russian>БМП-2 Санитарный (Зимний)+++</Russian>
+			<Russian>БМП-2 Санитарный (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_AMBULANCE_CDF_WINTER++++">
 			<English>BMP-2 Winter Ambulance++++</English>
 			<German>BMP-2 Winter Sanitätsfzg.++++</German>
-			<Russian>БМП-2 Санитарный (Зимний)++++</Russian>
+			<Russian>БМП-2 Санитарный (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_RUST">
 			<English>BMP-2 (rusty)</English>
@@ -10201,7 +10201,7 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_BMP2_WINTER">
 			<English>BMP-2 (Winter)</English>
-			<Russian>БМП-2 (Зимний)</Russian>
+			<Russian>БМП-2 (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_T72_RUST">
 			<English>T-72 (rusty)</English>
@@ -10210,482 +10210,482 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_T72_WINTER">
 			<English>T-72 (Winter)</English>
-			<Russian>Т-72 (Зимний)</Russian>
+			<Russian>Т-72 (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND">
 			<English>MTVR (Woodland)</English>
-			<Russian>MTVR (Лесной)</Russian>
+			<Russian>MTVR (Лес)</Russian>
 			<German>MTVR (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND+">
 			<English>MTVR (Woodland)+</English>
-			<Russian>MTVR (Лесной)+</Russian>
+			<Russian>MTVR (Лес)+</Russian>
 			<German>MTVR (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND++">
 			<English>MTVR (Woodland)++</English>
-			<Russian>MTVR (Лесной)++</Russian>
+			<Russian>MTVR (Лес)++</Russian>
 			<German>MTVR (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND+++">
 			<English>MTVR (Woodland)+++</English>
-			<Russian>MTVR (Лесной)+++</Russian>
+			<Russian>MTVR (Лес)+++</Russian>
 			<German>MTVR (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND++++">
 			<English>MTVR (Woodland)++++</English>
-			<Russian>MTVR (Лесной)++++</Russian>
+			<Russian>MTVR (Лес)++++</Russian>
 			<German>MTVR (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT">
 			<English>MTVR (Desert)</English>
-			<Russian>MTVR (Пустынный)</Russian>
+			<Russian>MTVR (Пустыня)</Russian>
 			<German>MTVR (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT+">
 			<English>MTVR (Desert)+</English>
-			<Russian>MTVR (Пустынный)+</Russian>
+			<Russian>MTVR (Пустыня)+</Russian>
 			<German>MTVR (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT++">
 			<English>MTVR (Desert)++</English>
-			<Russian>MTVR (Пустынный)++</Russian>
+			<Russian>MTVR (Пустыня)++</Russian>
 			<German>MTVR (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT+++">
 			<English>MTVR (Desert)+++</English>
-			<Russian>MTVR (Пустынный)+++</Russian>
+			<Russian>MTVR (Пустыня)+++</Russian>
 			<German>MTVR (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT++++">
 			<English>MTVR (Desert)++++</English>
-			<Russian>MTVR (Пустынный)++++</Russian>
+			<Russian>MTVR (Пустыня)++++</Russian>
 			<German>MTVR (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL">
 			<English>MTVR Fuel (Woodland)</English>
-			<Russian>MTVR Заправщик (Лесной)</Russian>
+			<Russian>MTVR Заправщик (Лес)</Russian>
 			<German>MTVR Treibstoff (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL+">
 			<English>MTVR Fuel (Woodland)+</English>
-			<Russian>MTVR Заправщик (Лесной)+</Russian>
+			<Russian>MTVR Заправщик (Лес)+</Russian>
 			<German>MTVR Treibstoff (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL++">
 			<English>MTVR Fuel (Woodland)++</English>
-			<Russian>MTVR Заправщик (Лесной)++</Russian>
+			<Russian>MTVR Заправщик (Лес)++</Russian>
 			<German>MTVR Treibstoff (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL+++">
 			<English>MTVR Fuel (Woodland)+++</English>
-			<Russian>MTVR Заправщик (Лесной)+++</Russian>
+			<Russian>MTVR Заправщик (Лес)+++</Russian>
 			<German>MTVR Treibstoff (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_REFUEL++++">
 			<English>MTVR Fuel (Woodland)++++</English>
-			<Russian>MTVR Заправщик (Лесной)++++</Russian>
+			<Russian>MTVR Заправщик (Лес)++++</Russian>
 			<German>MTVR Treibstoff (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL">
 			<English>MTVR Fuel (Desert)</English>
-			<Russian>MTVR Заправщик (Пустынный)</Russian>
+			<Russian>MTVR Заправщик (Пустыня)</Russian>
 			<German>MTVR Treibstoff (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL+">
 			<English>MTVR Fuel (Desert)+</English>
-			<Russian>MTVR Заправщик (Пустынный)+</Russian>
+			<Russian>MTVR Заправщик (Пустыня)+</Russian>
 			<German>MTVR Treibstoff (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL++">
 			<English>MTVR Fuel (Desert)++</English>
-			<Russian>MTVR Заправщик (Пустынный)++</Russian>
+			<Russian>MTVR Заправщик (Пустыня)++</Russian>
 			<German>MTVR Treibstoff (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL+++">
 			<English>MTVR Fuel (Desert)+++</English>
-			<Russian>MTVR Заправщик (Пустынный)+++</Russian>
+			<Russian>MTVR Заправщик (Пустыня)+++</Russian>
 			<German>MTVR Treibstoff (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_DESERT_REFUEL++++">
 			<English>MTVR Fuel (Desert)++++</English>
-			<Russian>MTVR Заправщик (Пустынный)++++</Russian>
+			<Russian>MTVR Заправщик (Пустыня)++++</Russian>
 			<German>MTVR Treibstoff (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO">
 			<English>MTVR Material Transport (Woodland)</English>
-			<Russian>MTVR Матобеспечения (Лесной)</Russian>
+			<Russian>MTVR Матобеспечения (Лес)</Russian>
 			<German>MTVR Materialtransport (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO+">
 			<English>MTVR Material Transport (Woodland)+</English>
-			<Russian>MTVR Матобеспечения (Лесной)+</Russian>
+			<Russian>MTVR Матобеспечения (Лес)+</Russian>
 			<German>MTVR Materialtransport (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO++">
 			<English>MTVR Material Transport (Woodland)++</English>
-			<Russian>MTVR Матобеспечения (Лесной)++</Russian>
+			<Russian>MTVR Матобеспечения (Лес)++</Russian>
 			<German>MTVR Materialtransport (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO+++">
 			<English>MTVR Material Transport (Woodland)+++</English>
-			<Russian>MTVR Матобеспечения (Лесной)+++</Russian>
+			<Russian>MTVR Матобеспечения (Лес)+++</Russian>
 			<German>MTVR Materialtransport (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_AMMO++++">
 			<English>MTVR Material Transport (Woodland)++++</English>
-			<Russian>MTVR Матобеспечения (Лесной)++++</Russian>
+			<Russian>MTVR Матобеспечения (Лес)++++</Russian>
 			<German>MTVR Materialtransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS">
 			<English>MTVR Weapon Transport (Woodland)</English>
-			<Russian>MTVR Оружейный (Лесной)</Russian>
+			<Russian>MTVR Оружейный (Лес)</Russian>
 			<German>MTVR Waffentransport (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS+">
 			<English>MTVR Weapon Transport (Woodland)+</English>
-			<Russian>MTVR Оружейный (Лесной)+</Russian>
+			<Russian>MTVR Оружейный (Лес)+</Russian>
 			<German>MTVR Waffentransport (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS++">
 			<English>MTVR Weapon Transport (Woodland)++</English>
-			<Russian>MTVR Оружейный (Лесной)++</Russian>
+			<Russian>MTVR Оружейный (Лес)++</Russian>
 			<German>MTVR Waffentransport (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS+++">
 			<English>MTVR Weapon Transport (Woodland)+++</English>
-			<Russian>MTVR Оружейный (Лесной)+++</Russian>
+			<Russian>MTVR Оружейный (Лес)+++</Russian>
 			<German>MTVR Waffentransport (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WEAPONS++++">
 			<English>MTVR Weapon Transport (Woodland)++++</English>
-			<Russian>MTVR Оружейный (Лесной)++++</Russian>
+			<Russian>MTVR Оружейный (Лес)++++</Russian>
 			<German>MTVR Waffentransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN">
 			<English>MTVR Open (Woodland)</English>
-			<Russian>MTVR Открытый (Лесной)</Russian>
+			<Russian>MTVR Открытый (Лес)</Russian>
 			<German>MTVR Offen (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN+">
 			<English>MTVR Open (Woodland)+</English>
-			<Russian>MTVR Открытый (Лесной)+</Russian>
+			<Russian>MTVR Открытый (Лес)+</Russian>
 			<German>MTVR Offen (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN++">
 			<English>MTVR Open (Woodland)++</English>
-			<Russian>MTVR Открытый (Лесной)++</Russian>
+			<Russian>MTVR Открытый (Лес)++</Russian>
 			<German>MTVR Offen (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN+++">
 			<English>MTVR Open (Woodland)+++</English>
-			<Russian>MTVR Открытый (Лесной)+++</Russian>
+			<Russian>MTVR Открытый (Лес)+++</Russian>
 			<German>MTVR Offen (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MTVR_WOODLAND_OPEN++++">
 			<English>MTVR Open (Woodland)++++</English>
-			<Russian>MTVR Открытый (Лесной)++++</Russian>
+			<Russian>MTVR Открытый (Лес)++++</Russian>
 			<German>MTVR Offen (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND">
 			<English>Tatra (Woodland)</English>
 			<German>Tatra (Waldtarn)</German>
-			<Russian>Tatra (Лесной)</Russian>
+			<Russian>Tatra (Лес)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND+">
 			<English>Tatra (Woodland)+</English>
 			<German>Tatra (Waldtarn)+</German>
-			<Russian>Tatra (Лесной)+</Russian>
+			<Russian>Tatra (Лес)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND++">
 			<English>Tatra (Woodland)++</English>
 			<German>Tatra (Waldtarn)++</German>
-			<Russian>Tatra (Лесной)++</Russian>
+			<Russian>Tatra (Лес)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND+++">
 			<English>Tatra (Woodland)+++</English>
 			<German>Tatra (Waldtarn)+++</German>
-			<Russian>Tatra (Лесной)+++</Russian>
+			<Russian>Tatra (Лес)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND++++">
 			<English>Tatra (Woodland)++++</English>
 			<German>Tatra (Waldtarn)++++</German>
-			<Russian>Tatra (Лесной)++++</Russian>
+			<Russian>Tatra (Лес)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND">
 			<English>Tatra Open (Woodland)</English>
 			<German>Tatra Offen (Waldtarn)</German>
-			<Russian>Tatra Открытая (Лесной)</Russian>
+			<Russian>Tatra Открытая (Лес)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND+">
 			<English>Tatra Open (Woodland)+</English>
 			<German>Tatra Offen (Waldtarn)+</German>
-			<Russian>Tatra Открытая (Лесной)+</Russian>
+			<Russian>Tatra Открытая (Лес)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND++">
 			<English>Tatra Open (Woodland)++</English>
 			<German>Tatra Offen (Waldtarn)++</German>
-			<Russian>Tatra Открытая (Лесной)++</Russian>
+			<Russian>Tatra Открытая (Лес)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND+++">
 			<English>Tatra Open (Woodland)+++</English>
 			<German>Tatra Offen (Waldtarn)+++</German>
-			<Russian>Tatra Открытая (Лесной)+++</Russian>
+			<Russian>Tatra Открытая (Лес)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_WOODLAND++++">
 			<English>Tatra Open (Woodland)++++</English>
 			<German>Tatra Offen (Waldtarn)++++</German>
-			<Russian>Tatra Открытая (Лесной)++++</Russian>
+			<Russian>Tatra Открытая (Лес)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND">
 			<English>Tatra PKT (Woodland)</English>
 			<German>Tatra PKT (Waldtarn)</German>
-			<Russian>Tatra ПКТ (Лесной)</Russian>
+			<Russian>Tatra ПКТ (Лес)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND+">
 			<English>Tatra PKT (Woodland)+</English>
 			<German>Tatra PKT (Waldtarn)+</German>
-			<Russian>Tatra ПКТ (Лесной)+</Russian>
+			<Russian>Tatra ПКТ (Лес)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND++">
 			<English>Tatra PKT (Woodland)++</English>
 			<German>Tatra PKT (Waldtarn)++</German>
-			<Russian>Tatra ПКТ (Лесной)++</Russian>
+			<Russian>Tatra ПКТ (Лес)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND+++">
 			<English>Tatra PKT (Woodland)+++</English>
 			<German>Tatra PKT (Waldtarn)+++</German>
-			<Russian>Tatra ПКТ (Лесной)+++</Russian>
+			<Russian>Tatra ПКТ (Лес)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_WOODLAND++++">
 			<English>Tatra PKT (Woodland)++++</English>
 			<German>Tatra PKT (Waldtarn)++++</German>
-			<Russian>Tatra ПКТ (Лесной)++++</Russian>
+			<Russian>Tatra ПКТ (Лес)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT">
 			<English>Tatra (Desert)</English>
 			<German>Tatra (Wüstentarn)</German>
-			<Russian>Tatra (Пустынный)</Russian>
+			<Russian>Tatra (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT+">
 			<English>Tatra (Desert)+</English>
 			<German>Tatra (Wüstentarn)+</German>
-			<Russian>Tatra (Пустынный)+</Russian>
+			<Russian>Tatra (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT++">
 			<English>Tatra (Desert)++</English>
 			<German>Tatra (Wüstentarn)++</German>
-			<Russian>Tatra (Пустынный)++</Russian>
+			<Russian>Tatra (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT+++">
 			<English>Tatra (Desert)+++</English>
 			<German>Tatra (Wüstentarn)+++</German>
-			<Russian>Tatra (Пустынный)+++</Russian>
+			<Russian>Tatra (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT++++">
 			<English>Tatra (Desert)++++</English>
 			<German>Tatra (Wüstentarn)++++</German>
-			<Russian>Tatra (Пустынный)++++</Russian>
+			<Russian>Tatra (Пустыня)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT">
 			<English>Tatra Open (Desert)</English>
 			<German>Tatra Offen (Wüstentarn)</German>
-			<Russian>Tatra Открытая (Пустынный)</Russian>
+			<Russian>Tatra Открытая (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT+">
 			<English>Tatra Open (Desert)+</English>
 			<German>Tatra Offen (Wüstentarn)+</German>
-			<Russian>Tatra Открытая (Пустынный)+</Russian>
+			<Russian>Tatra Открытая (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT++">
 			<English>Tatra Open (Desert)++</English>
 			<German>Tatra Offen (Wüstentarn)++</German>
-			<Russian>Tatra Открытая (Пустынный)++</Russian>
+			<Russian>Tatra Открытая (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT+++">
 			<English>Tatra Open (Desert)+++</English>
 			<German>Tatra Offen (Wüstentarn)+++</German>
-			<Russian>Tatra Открытая (Пустынный)+++</Russian>
+			<Russian>Tatra Открытая (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_OPEN_DESERT++++">
 			<English>Tatra Open (Desert)++++</English>
 			<German>Tatra Offen (Wüstentarn)++++</German>
-			<Russian>Tatra Открытая (Пустынный)++++</Russian>
+			<Russian>Tatra Открытая (Пустыня)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT">
 			<English>Tatra PKT (Desert)</English>
 			<German>Tatra PKT (Wüstentarn)</German>
-			<Russian>Tatra ПКТ (Пустынный)</Russian>
+			<Russian>Tatra ПКТ (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT+">
 			<English>Tatra PKT (Desert)+</English>
 			<German>Tatra PKT (Wüstentarn)+</German>
-			<Russian>Tatra ПКТ (Пустынный)+</Russian>
+			<Russian>Tatra ПКТ (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT++">
 			<English>Tatra PKT (Desert)++</English>
 			<German>Tatra PKT (Wüstentarn)++</German>
-			<Russian>Tatra ПКТ (Пустынный)++</Russian>
+			<Russian>Tatra ПКТ (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT+++">
 			<English>Tatra PKT (Desert)+++</English>
 			<German>Tatra PKT (Wüstentarn)+++</German>
-			<Russian>Tatra ПКТ (Пустынный)+++</Russian>
+			<Russian>Tatra ПКТ (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_PKT_DESERT++++">
 			<English>Tatra PKT (Desert)++++</English>
 			<German>Tatra PKT (Wüstentarn)++++</German>
-			<Russian>Tatra ПКТ (Пустынный)++++</Russian>
+			<Russian>Tatra ПКТ (Пустыня)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL">
 			<English>Tatra Fuel (Woodland)</English>
 			<German>Tatra Treibstoff (Waldtarn)</German>
-			<Russian>Tatra Заправщик (Лесной)</Russian>
+			<Russian>Tatra Заправщик (Лес)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL+">
 			<English>Tatra Fuel (Woodland)+</English>
 			<German>Tatra Treibstoff (Waldtarn)+</German>
-			<Russian>Tatra Заправщик (Лесной)+</Russian>
+			<Russian>Tatra Заправщик (Лес)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL++">
 			<English>Tatra Fuel (Woodland)++</English>
 			<German>Tatra Treibstoff (Waldtarn)++</German>
-			<Russian>Tatra Заправщик (Лесной)++</Russian>
+			<Russian>Tatra Заправщик (Лес)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL+++">
 			<English>Tatra Fuel (Woodland)+++</English>
 			<German>Tatra Treibstoff (Waldtarn)+++</German>
-			<Russian>Tatra Заправщик (Лесной)+++</Russian>
+			<Russian>Tatra Заправщик (Лес)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WOODLAND_REFUEL++++">
 			<English>Tatra Fuel (Woodland)++++</English>
 			<German>Tatra Treibstoff (Waldtarn)++++</German>
-			<Russian>Tatra Заправщик (Лесной)++++</Russian>
+			<Russian>Tatra Заправщик (Лес)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL">
 			<English>Tatra Fuel (Desert)</English>
 			<German>Tatra Treibstoff (Wüstentarn)</German>
-			<Russian>Tatra Заправщик (Пустынный)</Russian>
+			<Russian>Tatra Заправщик (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL+">
 			<English>Tatra Fuel (Desert)+</English>
 			<German>Tatra Treibstoff (Wüstentarn)+</German>
-			<Russian>Tatra Заправщик (Пустынный)+</Russian>
+			<Russian>Tatra Заправщик (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL++">
 			<English>Tatra Fuel (Desert)++</English>
 			<German>Tatra Treibstoff (Wüstentarn)++</German>
-			<Russian>Tatra Заправщик (Пустынный)++</Russian>
+			<Russian>Tatra Заправщик (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL+++">
 			<English>Tatra Fuel (Desert)+++</English>
 			<German>Tatra Treibstoff (Wüstentarn)+++</German>
-			<Russian>Tatra Заправщик (Пустынный)+++</Russian>
+			<Russian>Tatra Заправщик (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_DESERT_REFUEL++++">
 			<English>Tatra Fuel (Desert)++++</English>
 			<German>Tatra Treibstoff (Wüstentarn)++++</German>
-			<Russian>Tatra Заправщик (Пустынный)++++</Russian>
+			<Russian>Tatra Заправщик (Пустыня)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND">
 			<English>Tatra Material Transport (Woodland)</English>
 			<German>Tatra Materialtransport (Waldtarn)</German>
-			<Russian>Tatra Матобеспечения (Лесной)</Russian>
+			<Russian>Tatra Матобеспечения (Лес)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND+">
 			<English>Tatra Material Transport (Woodland)+</English>
 			<German>Tatra Materialtransport (Waldtarn)+</German>
-			<Russian>Tatra Матобеспечения (Лесной)+</Russian>
+			<Russian>Tatra Матобеспечения (Лес)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND++">
 			<English>Tatra Material Transport (Woodland)++</English>
 			<German>Tatra Materialtransport (Waldtarn)++</German>
-			<Russian>Tatra Матобеспечения (Лесной)++</Russian>
+			<Russian>Tatra Матобеспечения (Лес)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND+++">
 			<English>Tatra Material Transport (Woodland)+++</English>
 			<German>Tatra Materialtransport (Waldtarn)+++</German>
-			<Russian>Tatra Матобеспечения (Лесной)+++</Russian>
+			<Russian>Tatra Матобеспечения (Лес)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_WOODLAND++++">
 			<English>Tatra Material Transport (Woodland)++++</English>
 			<German>Tatra Materialtransport (Waldtarn)++++</German>
-			<Russian>Tatra Матобеспечения (Лесной)++++</Russian>
+			<Russian>Tatra Матобеспечения (Лес)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND">
 			<English>Tatra Weapon Transport (Woodland)</English>
 			<German>Tatra Waffentransport (Waldtarn)</German>
-			<Russian>Tatra Оружейная (Лесной)</Russian>
+			<Russian>Tatra Оружейная (Лес)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND+">
 			<English>Tatra Weapon Transport (Woodland)+</English>
 			<German>Tatra Waffentransport (Waldtarn)+</German>
-			<Russian>Tatra Оружейная (Лесной)+</Russian>
+			<Russian>Tatra Оружейная (Лес)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND++">
 			<English>Tatra Weapon Transport (Woodland)++</English>
 			<German>Tatra Waffentransport (Waldtarn)++</German>
-			<Russian>Tatra Оружейная (Лесной)++</Russian>
+			<Russian>Tatra Оружейная (Лес)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND+++">
 			<English>Tatra Weapon Transport (Woodland)+++</English>
 			<German>Tatra Waffentransport (Waldtarn)+++</German>
-			<Russian>Tatra Оружейная (Лесной)+++</Russian>
+			<Russian>Tatra Оружейная (Лес)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_WOODLAND++++">
 			<English>Tatra Weapon Transport (Woodland)++++</English>
 			<German>Tatra Waffentransport (Waldtarn)++++</German>
-			<Russian>Tatra Оружейная (Лесной)++++</Russian>
+			<Russian>Tatra Оружейная (Лес)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT">
 			<English>Tatra Material Transport (Desert)</English>
 			<German>Tatra Materialtransport (Wüstentarn)</German>
-			<Russian>Tatra Матобеспечения (Пустынный)</Russian>
+			<Russian>Tatra Матобеспечения (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT+">
 			<English>Tatra Material Transport (Desert)+</English>
 			<German>Tatra Materialtransport (Wüstentarn)+</German>
-			<Russian>Tatra Матобеспечения (Пустынный)+</Russian>
+			<Russian>Tatra Матобеспечения (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT++">
 			<English>Tatra Material Transport (Desert)++</English>
 			<German>Tatra Materialtransport (Wüstentarn)++</German>
-			<Russian>Tatra Матобеспечения (Пустынный)++</Russian>
+			<Russian>Tatra Матобеспечения (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT+++">
 			<English>Tatra Material Transport (Desert)+++</English>
 			<German>Tatra Materialtransport (Wüstentarn)+++</German>
-			<Russian>Tatra Матобеспечения (Пустынный)+++</Russian>
+			<Russian>Tatra Матобеспечения (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_AMMO_DESERT++++">
 			<English>Tatra Material Transport (Desert)++++</English>
 			<German>Tatra Materialtransport (Wüstentarn)++++</German>
-			<Russian>Tatra Матобеспечения (Пустынный)++++</Russian>
+			<Russian>Tatra Матобеспечения (Пустыня)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT">
 			<English>Tatra Weapon Transport (Desert)</English>
 			<German>Tatra Waffentransport (Wüstentarn)</German>
-			<Russian>Tatra Оружейная (Пустынный)</Russian>
+			<Russian>Tatra Оружейная (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT+">
 			<English>Tatra Weapon Transport (Desert)+</English>
 			<German>Tatra Waffentransport (Wüstentarn)+</German>
-			<Russian>Tatra Оружейная (Пустынный)+</Russian>
+			<Russian>Tatra Оружейная (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT++">
 			<English>Tatra Weapon Transport (Desert)++</English>
 			<German>Tatra Waffentransport (Wüstentarn)++</German>
-			<Russian>Tatra Оружейная (Пустынный)++</Russian>
+			<Russian>Tatra Оружейная (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT+++">
 			<English>Tatra Weapon Transport (Desert)+++</English>
 			<German>Tatra Waffentransport (Wüstentarn)+++</German>
-			<Russian>Tatra Оружейная (Пустынный)+++</Russian>
+			<Russian>Tatra Оружейная (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_TATRA_WEAPONS_DESERT++++">
 			<English>Tatra Weapon Transport (Desert)++++</English>
 			<German>Tatra Waffentransport (Wüstentarn)++++</German>
-			<Russian>Tatra Оружейная (Пустынный)++++</Russian>
+			<Russian>Tatra Оружейная (Пустыня)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_PICKUP_DSHKM">
 			<English>Pick-up (DSHKM)</English>
@@ -10809,27 +10809,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS">
 			<English>Skoda Van (blue)</English>
-			<Russian>Шкода фургон (синий)</Russian>
+			<Russian>Шкода фургон (Синий)</Russian>
 			<German>Skoda Van (blau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS+">
 			<English>Skoda Van (blue)+</English>
-			<Russian>Шкода фургон (синий)+</Russian>
+			<Russian>Шкода фургон (Синий)+</Russian>
 			<German>Skoda Van (blau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS++">
 			<English>Skoda Van (blue)++</English>
-			<Russian>Шкода фургон (синий)++</Russian>
+			<Russian>Шкода фургон (Синий)++</Russian>
 			<German>Skoda Van (blau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS+++">
 			<English>Skoda Van (blue)+++</English>
-			<Russian>Шкода фургон (синий)+++</Russian>
+			<Russian>Шкода фургон (Синий)+++</Russian>
 			<German>Skoda Van (blau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_BUS++++">
 			<English>Skoda Van (blue)++++</English>
-			<Russian>Шкода фургон (синий)++++</Russian>
+			<Russian>Шкода фургон (Синий)++++</Russian>
 			<German>Skoda Van (blau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SKODA_AMBULANCE">
@@ -10984,288 +10984,288 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLACK">
 			<English>SUV (black)</English>
-			<Russian>SUV (чёрный)</Russian>
+			<Russian>SUV (Чёрный)</Russian>
 			<German>SUV (schwarz)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLACK+">
 			<English>SUV (black)+</English>
-			<Russian>SUV (чёрный)+</Russian>
+			<Russian>SUV (Чёрный)+</Russian>
 			<German>SUV (schwarz)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLACK++">
 			<English>SUV (black)++</English>
-			<Russian>SUV (чёрный)++</Russian>
+			<Russian>SUV (Чёрный)++</Russian>
 			<German>SUV (schwarz)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLACK+++">
 			<English>SUV (black)+++</English>
-			<Russian>SUV (чёрный)+++</Russian>
+			<Russian>SUV (Чёрный)+++</Russian>
 			<German>SUV (schwarz)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLACK++++">
 			<English>SUV (black)++++</English>
-			<Russian>SUV (чёрный)++++</Russian>
+			<Russian>SUV (Чёрный)++++</Russian>
 			<German>SUV (schwarz)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_CAMO">
 			<English>SUV (Woodland)</English>
-			<Russian>SUV (Лесной)</Russian>
+			<Russian>SUV (Лес)</Russian>
 			<German>SUV (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_CAMO+">
 			<English>SUV (Woodland)+</English>
-			<Russian>SUV (Лесной)+</Russian>
+			<Russian>SUV (Лес)+</Russian>
 			<German>SUV (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_CAMO++">
 			<English>SUV (Woodland)++</English>
-			<Russian>SUV (Лесной)++</Russian>
+			<Russian>SUV (Лес)++</Russian>
 			<German>SUV (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_CAMO+++">
 			<English>SUV (Woodland)+++</English>
-			<Russian>SUV (Лесной)+++</Russian>
+			<Russian>SUV (Лес)+++</Russian>
 			<German>SUV (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_CAMO++++">
 			<English>SUV (Woodland)++++</English>
-			<Russian>SUV (Лесной)++++</Russian>
+			<Russian>SUV (Лес)++++</Russian>
 			<German>SUV (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED">
 			<English>SUV (red)</English>
-			<Russian>SUV (красный)</Russian>
+			<Russian>SUV (Красный)</Russian>
 			<German>SUV (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED+">
 			<English>SUV (red)+</English>
-			<Russian>SUV (красный)+</Russian>
+			<Russian>SUV (Красный)+</Russian>
 			<German>SUV (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED++">
 			<English>SUV (red)++</English>
-			<Russian>SUV (красный)++</Russian>
+			<Russian>SUV (Красный)++</Russian>
 			<German>SUV (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED+++">
 			<English>SUV (red)+++</English>
-			<Russian>SUV (красный)+++</Russian>
+			<Russian>SUV (Красный)+++</Russian>
 			<German>SUV (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_RED++++">
 			<English>SUV (red)++++</English>
-			<Russian>SUV (красный)++++</Russian>
+			<Russian>SUV (Красный)++++</Russian>
 			<German>SUV (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREEN">
 			<English>SUV (green)</English>
-			<Russian>SUV (зелёный)</Russian>
+			<Russian>SUV (Зелёный)</Russian>
 			<German>SUV (grün)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREEN+">
 			<English>SUV (green)+</English>
-			<Russian>SUV (зелёный)+</Russian>
+			<Russian>SUV (Зелёный)+</Russian>
 			<German>SUV (grün)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREEN++">
 			<English>SUV (green)++</English>
-			<Russian>SUV (зелёный)++</Russian>
+			<Russian>SUV (Зелёный)++</Russian>
 			<German>SUV (grün)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREEN+++">
 			<English>SUV (green)+++</English>
-			<Russian>SUV (зелёный)+++</Russian>
+			<Russian>SUV (Зелёный)+++</Russian>
 			<German>SUV (grün)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREEN++++">
 			<English>SUV (green)++++</English>
-			<Russian>SUV (зелёный)++++</Russian>
+			<Russian>SUV (Зелёный)++++</Russian>
 			<German>SUV (grün)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_YELLOW">
 			<English>SUV (yellow)</English>
-			<Russian>SUV (жёлтый)</Russian>
+			<Russian>SUV (Жёлтый)</Russian>
 			<German>SUV (gelb)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_YELLOW+">
 			<English>SUV (yellow)+</English>
-			<Russian>SUV (жёлтый)+</Russian>
+			<Russian>SUV (Жёлтый)+</Russian>
 			<German>SUV (gelb)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_YELLOW++">
 			<English>SUV (yellow)++</English>
-			<Russian>SUV (жёлтый)++</Russian>
+			<Russian>SUV (Жёлтый)++</Russian>
 			<German>SUV (gelb)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_YELLOW+++">
 			<English>SUV (yellow)+++</English>
-			<Russian>SUV (жёлтый)+++</Russian>
+			<Russian>SUV (Жёлтый)+++</Russian>
 			<German>SUV (gelb)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_YELLOW++++">
 			<English>SUV (yellow)++++</English>
-			<Russian>SUV (жёлтый)++++</Russian>
+			<Russian>SUV (Жёлтый)++++</Russian>
 			<German>SUV (gelb)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_SILVER">
 			<English>SUV (silver)</English>
-			<Russian>SUV (серебристый)</Russian>
+			<Russian>SUV (Серебристый)</Russian>
 			<German>SUV (silber)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_SILVER+">
 			<English>SUV (silver)+</English>
-			<Russian>SUV (серебристый)+</Russian>
+			<Russian>SUV (Серебристый)+</Russian>
 			<German>SUV (silber)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_SILVER++">
 			<English>SUV (silver)++</English>
-			<Russian>SUV (серебристый)++</Russian>
+			<Russian>SUV (Серебристый)++</Russian>
 			<German>SUV (silber)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_SILVER+++">
 			<English>SUV (silver)+++</English>
-			<Russian>SUV (серебристый)+++</Russian>
+			<Russian>SUV (Серебристый)+++</Russian>
 			<German>SUV (silber)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_SILVER++++">
 			<English>SUV (silver)++++</English>
-			<Russian>SUV (серебристый)++++</Russian>
+			<Russian>SUV (Серебристый)++++</Russian>
 			<German>SUV (silber)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PINK">
 			<English>SUV (pink)</English>
-			<Russian>SUV (розовый)</Russian>
+			<Russian>SUV (Розовый)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PINK+">
 			<English>SUV (pink)+</English>
-			<Russian>SUV (розовый)+</Russian>
+			<Russian>SUV (Розовый)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PINK++">
 			<English>SUV (pink)++</English>
-			<Russian>SUV (розовый)++</Russian>
+			<Russian>SUV (Розовый)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PINK+++">
 			<English>SUV (pink)+++</English>
-			<Russian>SUV (розовый)+++</Russian>
+			<Russian>SUV (Розовый)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_PINK++++">
 			<English>SUV (pink)++++</English>
-			<Russian>SUV (розовый)++++</Russian>
+			<Russian>SUV (Розовый)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE">
 			<English>SUV (blue)</English>
-			<Russian>SUV (синий)</Russian>
+			<Russian>SUV (Синий)</Russian>
 			<German>SUV (blau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE+">
 			<English>SUV (blue)+</English>
-			<Russian>SUV (синий)+</Russian>
+			<Russian>SUV (Синий)+</Russian>
 			<German>SUV (blau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE++">
 			<English>SUV (blue)++</English>
-			<Russian>SUV (синий)++</Russian>
+			<Russian>SUV (Синий)++</Russian>
 			<German>SUV (blau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE+++">
 			<English>SUV (blue)+++</English>
-			<Russian>SUV (синий)+++</Russian>
+			<Russian>SUV (Синий)+++</Russian>
 			<German>SUV (blau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_BLUE++++">
 			<English>SUV (blue)++++</English>
-			<Russian>SUV (синий)++++</Russian>
+			<Russian>SUV (Синий)++++</Russian>
 			<German>SUV (blau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WHITE">
 			<English>SUV (white)</English>
-			<Russian>SUV (белый)</Russian>
+			<Russian>SUV (Белый)</Russian>
 			<German>SUV (weiß)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WHITE+">
 			<English>SUV (white)+</English>
-			<Russian>SUV (белый)+</Russian>
+			<Russian>SUV (Белый)+</Russian>
 			<German>SUV (weiß)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WHITE++">
 			<English>SUV (white)++</English>
-			<Russian>SUV (белый)++</Russian>
+			<Russian>SUV (Белый)++</Russian>
 			<German>SUV (weiß)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WHITE+++">
 			<English>SUV (white)+++</English>
-			<Russian>SUV (белый)+++</Russian>
+			<Russian>SUV (Белый)+++</Russian>
 			<German>SUV (weiß)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WHITE++++">
 			<English>SUV (white)++++</English>
-			<Russian>SUV (белый)++++</Russian>
+			<Russian>SUV (Белый)++++</Russian>
 			<German>SUV (weiß)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ORANGE">
 			<English>SUV (orange)</English>
-			<Russian>SUV (оранжевый)</Russian>
+			<Russian>SUV (Оранжевый)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ORANGE+">
 			<English>SUV (orange)+</English>
-			<Russian>SUV (оранжевый)+</Russian>
+			<Russian>SUV (Оранжевый)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ORANGE++">
 			<English>SUV (orange)++</English>
-			<Russian>SUV (оранжевый)++</Russian>
+			<Russian>SUV (Оранжевый)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ORANGE+++">
 			<English>SUV (orange)+++</English>
-			<Russian>SUV (оранжевый)+++</Russian>
+			<Russian>SUV (Оранжевый)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ORANGE++++">
 			<English>SUV (orange)++++</English>
-			<Russian>SUV (оранжевый)++++</Russian>
+			<Russian>SUV (Оранжевый)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREY">
 			<English>SUV (grey)</English>
-			<Russian>SUV (серый)</Russian>
+			<Russian>SUV (Серый)</Russian>
 			<German>SUV (grau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREY+">
 			<English>SUV (grey)+</English>
-			<Russian>SUV (серый)+</Russian>
+			<Russian>SUV (Серый)+</Russian>
 			<German>SUV (grau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREY++">
 			<English>SUV (grey)++</English>
-			<Russian>SUV (серый)++</Russian>
+			<Russian>SUV (Серый)++</Russian>
 			<German>SUV (grau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREY+++">
 			<English>SUV (grey)+++</English>
-			<Russian>SUV (серый)+++</Russian>
+			<Russian>SUV (Серый)+++</Russian>
 			<German>SUV (grau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_GREY++++">
 			<English>SUV (grey)++++</English>
-			<Russian>SUV (серый)++++</Russian>
+			<Russian>SUV (Серый)++++</Russian>
 			<German>SUV (grau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER">
 			<English>SUV (Winter)</English>
-			<Russian>SUV (Зимний)</Russian>
+			<Russian>SUV (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER+">
 			<English>SUV (Winter)+</English>
-			<Russian>SUV (Зимний)+</Russian>
+			<Russian>SUV (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER++">
 			<English>SUV (Winter)++</English>
-			<Russian>SUV (Зимний)++</Russian>
+			<Russian>SUV (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER+++">
 			<English>SUV (Winter)+++</English>
-			<Russian>SUV (Зимний)+++</Russian>
+			<Russian>SUV (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_WINTER++++">
 			<English>SUV (Winter)++++</English>
-			<Russian>SUV (Зимний)++++</Russian>
+			<Russian>SUV (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ARMORED">
 			<English>SUV (Armored)</English>
@@ -11319,52 +11319,52 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_ORANGE">
 			<English>Nissan 350z (orange)</English>
-			<Russian>Nissan 350z (оранжевый)</Russian>
+			<Russian>Nissan 350z (Оранжевый)</Russian>
 			<German>Nissan 350z (orange)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_ORANGE+">
 			<English>Nissan 350z (orange)+</English>
-			<Russian>Nissan 350z (оранжевый)+</Russian>
+			<Russian>Nissan 350z (Оранжевый)+</Russian>
 			<German>Nissan 350z (orange)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_ORANGE++">
 			<English>Nissan 350z (orange)++</English>
-			<Russian>Nissan 350z (оранжевый)++</Russian>
+			<Russian>Nissan 350z (Оранжевый)++</Russian>
 			<German>Nissan 350z (orange)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_ORANGE+++">
 			<English>Nissan 350z (orange)+++</English>
-			<Russian>Nissan 350z (оранжевый)+++</Russian>
+			<Russian>Nissan 350z (Оранжевый)+++</Russian>
 			<German>Nissan 350z (orange)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_ORANGE++++">
 			<English>Nissan 350z (orange)++++</English>
-			<Russian>Nissan 350z (оранжевый)++++</Russian>
+			<Russian>Nissan 350z (Оранжевый)++++</Russian>
 			<German>Nissan 350z (orange)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLUE">
 			<English>Nissan 350z (blue)</English>
-			<Russian>Nissan 350z (синий)</Russian>
+			<Russian>Nissan 350z (Синий)</Russian>
 			<German>Nissan 350z (blau)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLUE+">
 			<English>Nissan 350z (blue)+</English>
-			<Russian>Nissan 350z (синий)+</Russian>
+			<Russian>Nissan 350z (Синий)+</Russian>
 			<German>Nissan 350z (blau)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLUE++">
 			<English>Nissan 350z (blue)++</English>
-			<Russian>Nissan 350z (синий)++</Russian>
+			<Russian>Nissan 350z (Синий)++</Russian>
 			<German>Nissan 350z (blau)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLUE+++">
 			<English>Nissan 350z (blue)+++</English>
-			<Russian>Nissan 350z (синий)+++</Russian>
+			<Russian>Nissan 350z (Синий)+++</Russian>
 			<German>Nissan 350z (blau)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLUE++++">
 			<English>Nissan 350z (blue)++++</English>
-			<Russian>Nissan 350z (синий)++++</Russian>
+			<Russian>Nissan 350z (Синий)++++</Russian>
 			<German>Nissan 350z (blau)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_MOD">
@@ -11390,147 +11390,147 @@
 		<Key ID="STR_VEH_NAME_NISSAN_GOLD">
 			<English>Nissan 350z (gold)</English>
 			<German>Nissan 350z (gold)</German>
-			<Russian>Nissan 350z (золотой)</Russian>
+			<Russian>Nissan 350z (Золотой)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GOLD+">
 			<English>Nissan 350z (gold)+</English>
 			<German>Nissan 350z (gold)+</German>
-			<Russian>Nissan 350z (золотой)+</Russian>
+			<Russian>Nissan 350z (Золотой)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GOLD++">
 			<English>Nissan 350z (gold)++</English>
 			<German>Nissan 350z (gold)++</German>
-			<Russian>Nissan 350z (золотой)++</Russian>
+			<Russian>Nissan 350z (Золотой)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GOLD+++">
 			<English>Nissan 350z (gold)+++</English>
 			<German>Nissan 350z (gold)+++</German>
-			<Russian>Nissan 350z (золотой)+++</Russian>
+			<Russian>Nissan 350z (Золотой)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GOLD++++">
 			<English>Nissan 350z (gold)++++</English>
 			<German>Nissan 350z (gold)++++</German>
-			<Russian>Nissan 350z (золотой)++++</Russian>
+			<Russian>Nissan 350z (Золотой)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GREEN">
 			<English>Nissan 350z (green)</English>
-			<Russian>Nissan 350z (зелёный)</Russian>
+			<Russian>Nissan 350z (Зелёный)</Russian>
 			<German>Nissan 350z (grün)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GREEN+">
 			<English>Nissan 350z (green)+</English>
-			<Russian>Nissan 350z (зелёный)+</Russian>
+			<Russian>Nissan 350z (Зелёный)+</Russian>
 			<German>Nissan 350z (grün)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GREEN++">
 			<English>Nissan 350z (green)++</English>
-			<Russian>Nissan 350z (зелёный)++</Russian>
+			<Russian>Nissan 350z (Зелёный)++</Russian>
 			<German>Nissan 350z (grün)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GREEN+++">
 			<English>Nissan 350z (green)+++</English>
-			<Russian>Nissan 350z (зелёный)+++</Russian>
+			<Russian>Nissan 350z (Зелёный)+++</Russian>
 			<German>Nissan 350z (grün)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_GREEN++++">
 			<English>Nissan 350z (green)++++</English>
-			<Russian>Nissan 350z (зелёный)++++</Russian>
+			<Russian>Nissan 350z (Зелёный)++++</Russian>
 			<German>Nissan 350z (grün)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLACK">
 			<English>Nissan 350z (black)</English>
-			<Russian>Nissan 350z (чёрный)</Russian>
+			<Russian>Nissan 350z (Чёрный)</Russian>
 			<German>Nissan 350z (schwarz)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLACK+">
 			<English>Nissan 350z (black)+</English>
-			<Russian>Nissan 350z (чёрный)+</Russian>
+			<Russian>Nissan 350z (Чёрный)+</Russian>
 			<German>Nissan 350z (schwarz)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLACK++">
 			<English>Nissan 350z (black)++</English>
-			<Russian>Nissan 350z (чёрный)++</Russian>
+			<Russian>Nissan 350z (Чёрный)++</Russian>
 			<German>Nissan 350z (schwarz)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLACK+++">
 			<English>Nissan 350z (black)+++</English>
-			<Russian>Nissan 350z (чёрный)+++</Russian>
+			<Russian>Nissan 350z (Чёрный)+++</Russian>
 			<German>Nissan 350z (schwarz)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_BLACK++++">
 			<English>Nissan 350z (black)++++</English>
-			<Russian>Nissan 350z (чёрный)++++</Russian>
+			<Russian>Nissan 350z (Чёрный)++++</Russian>
 			<German>Nissan 350z (schwarz)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_PINK">
 			<English>Nissan 350z (pink)</English>
-			<Russian>Nissan 350z (розовый)</Russian>
+			<Russian>Nissan 350z (Розовый)</Russian>
 			<German>Nissan 350z (pink)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_PINK+">
 			<English>Nissan 350z (pink)+</English>
-			<Russian>Nissan 350z (розовый)+</Russian>
+			<Russian>Nissan 350z (Розовый)+</Russian>
 			<German>Nissan 350z (pink)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_PINK++">
 			<English>Nissan 350z (pink)++</English>
-			<Russian>Nissan 350z (розовый)++</Russian>
+			<Russian>Nissan 350z (Розовый)++</Russian>
 			<German>Nissan 350z (pink)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_PINK+++">
 			<English>Nissan 350z (pink)+++</English>
-			<Russian>Nissan 350z (розовый)+++</Russian>
+			<Russian>Nissan 350z (Розовый)+++</Russian>
 			<German>Nissan 350z (pink)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_PINK++++">
 			<English>Nissan 350z (pink)++++</English>
-			<Russian>Nissan 350z (розовый)++++</Russian>
+			<Russian>Nissan 350z (Розовый)++++</Russian>
 			<German>Nissan 350z (pink)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RED">
 			<English>Nissan 350z (red)</English>
-			<Russian>Nissan 350z (красный)</Russian>
+			<Russian>Nissan 350z (Красный)</Russian>
 			<German>Nissan 350z (rot)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RED+">
 			<English>Nissan 350z (red)+</English>
-			<Russian>Nissan 350z (красный)+</Russian>
+			<Russian>Nissan 350z (Красный)+</Russian>
 			<German>Nissan 350z (rot)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RED++">
 			<English>Nissan 350z (red)++</English>
-			<Russian>Nissan 350z (красный)++</Russian>
+			<Russian>Nissan 350z (Красный)++</Russian>
 			<German>Nissan 350z (rot)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RED+++">
 			<English>Nissan 350z (red)+++</English>
-			<Russian>Nissan 350z (красный)+++</Russian>
+			<Russian>Nissan 350z (Красный)+++</Russian>
 			<German>Nissan 350z (rot)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RED++++">
 			<English>Nissan 350z (red)++++</English>
-			<Russian>Nissan 350z (красный)++++</Russian>
+			<Russian>Nissan 350z (Красный)++++</Russian>
 			<German>Nissan 350z (rot)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RUBEN">
 			<English>Nissan 350z (ruben)</English>
-			<Russian>Nissan 350z (рубин)</Russian>
+			<Russian>Nissan 350z (Рубин)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RUBEN+">
 			<English>Nissan 350z (ruben)+</English>
-			<Russian>Nissan 350z (рубин)+</Russian>
+			<Russian>Nissan 350z (Рубин)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RUBEN++">
 			<English>Nissan 350z (ruben)++</English>
-			<Russian>Nissan 350z (рубин)++</Russian>
+			<Russian>Nissan 350z (Рубин)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RUBEN+++">
 			<English>Nissan 350z (ruben)+++</English>
-			<Russian>Nissan 350z (рубин)+++</Russian>
+			<Russian>Nissan 350z (Рубин)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_RUBEN++++">
 			<English>Nissan 350z (ruben)++++</English>
-			<Russian>Nissan 350z (рубин)++++</Russian>
+			<Russian>Nissan 350z (Рубин)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_V">
 			<English>Nissan 350z (V)</English>
@@ -11549,27 +11549,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_YELLOW">
 			<English>Nissan 350z (yellow)</English>
-			<Russian>Nissan 350z (жёлтый)</Russian>
+			<Russian>Nissan 350z (Жёлтый)</Russian>
 			<German>Nissan 350z (gelb)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_YELLOW+">
 			<English>Nissan 350z (yellow)+</English>
-			<Russian>Nissan 350z (жёлтый)+</Russian>
+			<Russian>Nissan 350z (Жёлтый)+</Russian>
 			<German>Nissan 350z (gelb)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_YELLOW++">
 			<English>Nissan 350z (yellow)++</English>
-			<Russian>Nissan 350z (жёлтый)++</Russian>
+			<Russian>Nissan 350z (Жёлтый)++</Russian>
 			<German>Nissan 350z (gelb)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_YELLOW+++">
 			<English>Nissan 350z (yellow)+++</English>
-			<Russian>Nissan 350z (жёлтый)+++</Russian>
+			<Russian>Nissan 350z (Жёлтый)+++</Russian>
 			<German>Nissan 350z (gelb)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_NISSAN_YELLOW++++">
 			<English>Nissan 350z (yellow)++++</English>
-			<Russian>Nissan 350z (жёлтый)++++</Russian>
+			<Russian>Nissan 350z (Жёлтый)++++</Russian>
 			<German>Nissan 350z (gelb)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_CDF">
@@ -11724,23 +11724,23 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER">
 			<English>UAZ (Winter)</English>
-			<Russian>УАЗ (Зимний)</Russian>
+			<Russian>УАЗ (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER+">
 			<English>UAZ (Winter)+</English>
-			<Russian>УАЗ (Зимний)+</Russian>
+			<Russian>УАЗ (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER++">
 			<English>UAZ (Winter)++</English>
-			<Russian>УАЗ (Зимний)++</Russian>
+			<Russian>УАЗ (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER+++">
 			<English>UAZ (Winter)+++</English>
-			<Russian>УАЗ (Зимний)+++</Russian>
+			<Russian>УАЗ (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER++++">
 			<English>UAZ (Winter)++++</English>
-			<Russian>УАЗ (Зимний)++++</Russian>
+			<Russian>УАЗ (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_DSHKM_TK">
 			<English>UAZ TK (DSHKM)</English>
@@ -11829,23 +11829,23 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM">
 			<English>UAZ Winter (DSHKM)</English>
-			<Russian>УАЗ Зимний (ДШКМ)</Russian>
+			<Russian>УАЗ Зима (ДШКМ)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM+">
 			<English>UAZ Winter (DSHKM)+</English>
-			<Russian>УАЗ Зимний (ДШКМ)+</Russian>
+			<Russian>УАЗ Зима (ДШКМ)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM++">
 			<English>UAZ Winter (DSHKM)++</English>
-			<Russian>УАЗ Зимний (ДШКМ)++</Russian>
+			<Russian>УАЗ Зима (ДШКМ)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM+++">
 			<English>UAZ Winter (DSHKM)+++</English>
-			<Russian>УАЗ Зимний (ДШКМ)+++</Russian>
+			<Russian>УАЗ Зима (ДШКМ)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_DSHKM++++">
 			<English>UAZ Winter (DSHKM)++++</English>
-			<Russian>УАЗ Зимний (ДШКМ)++++</Russian>
+			<Russian>УАЗ Зима (ДШКМ)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_AGS_RU">
 			<English>UAZ RU (AGS-30)</English>
@@ -11954,23 +11954,23 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS">
 			<English>UAZ Winter (AGS-30)</English>
-			<Russian>УАЗ Зимний (АГС-30)</Russian>
+			<Russian>УАЗ Зима (АГС-30)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS+">
 			<English>UAZ Winter (AGS-30)+</English>
-			<Russian>УАЗ Зимний (АГС-30)+</Russian>
+			<Russian>УАЗ Зима (АГС-30)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS++">
 			<English>UAZ Winter (AGS-30)++</English>
-			<Russian>УАЗ Зимний (АГС-30)++</Russian>
+			<Russian>УАЗ Зима (АГС-30)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS+++">
 			<English>UAZ Winter (AGS-30)+++</English>
-			<Russian>УАЗ Зимний (АГС-30)+++</Russian>
+			<Russian>УАЗ Зима (АГС-30)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_AGS++++">
 			<English>UAZ Winter (AGS-30)++++</English>
-			<Russian>УАЗ Зимний (АГС-30)++++</Russian>
+			<Russian>УАЗ Зима (АГС-30)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_SPG_INS">
 			<English>UAZ INS (SPG-9)</English>
@@ -12059,23 +12059,23 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG">
 			<English>UAZ Winter (SPG-9)</English>
-			<Russian>УАЗ Зимний (СПГ-9)</Russian>
+			<Russian>УАЗ Зима (СПГ-9)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG+">
 			<English>UAZ Winter (SPG-9)+</English>
-			<Russian>УАЗ Зимний (СПГ-9)+</Russian>
+			<Russian>УАЗ Зима (СПГ-9)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG++">
 			<English>UAZ Winter (SPG-9)++</English>
-			<Russian>УАЗ Зимний (СПГ-9)++</Russian>
+			<Russian>УАЗ Зима (СПГ-9)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG+++">
 			<English>UAZ Winter (SPG-9)+++</English>
-			<Russian>УАЗ Зимний (СПГ-9)+++</Russian>
+			<Russian>УАЗ Зима (СПГ-9)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UAZ_WINTER_SPG++++">
 			<English>UAZ Winter (SPG-9)++++</English>
-			<Russian>УАЗ Зимний (СПГ-9)++++</Russian>
+			<Russian>УАЗ Зима (СПГ-9)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_TK">
 			<English>Ural (TK)</English>
@@ -12234,52 +12234,52 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO">
 			<English>Ural Material Transport (Woodland)</English>
-			<Russian>Урал Матобеспечения (Лесной)</Russian>
+			<Russian>Урал Матобеспечения (Лес)</Russian>
 			<German>Ural Materialtransport (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO+">
 			<English>Ural Material Transport (Woodland)+</English>
-			<Russian>Урал Матобеспечения (Лесной)+</Russian>
+			<Russian>Урал Матобеспечения (Лес)+</Russian>
 			<German>Ural Materialtransport (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO++">
 			<English>Ural Material Transport (Woodland)++</English>
-			<Russian>Урал Матобеспечения (Лесной)++</Russian>
+			<Russian>Урал Матобеспечения (Лес)++</Russian>
 			<German>Ural Materialtransport (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO+++">
 			<English>Ural Material Transport (Woodland)+++</English>
-			<Russian>Урал Матобеспечения (Лесной)+++</Russian>
+			<Russian>Урал Матобеспечения (Лес)+++</Russian>
 			<German>Ural Materialtransport (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO++++">
 			<English>Ural Material Transport (Woodland)++++</English>
-			<Russian>Урал Матобеспечения (Лесной)++++</Russian>
+			<Russian>Урал Матобеспечения (Лес)++++</Russian>
 			<German>Ural Materialtransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS">
 			<English>Ural Weapon Transport (Woodland)</English>
-			<Russian>Урал Оружейный (Лесной)</Russian>
+			<Russian>Урал Оружейный (Лес)</Russian>
 			<German>Ural Waffentransport (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS+">
 			<English>Ural Weapon Transport (Woodland)+</English>
-			<Russian>Урал Оружейный (Лесной)+</Russian>
+			<Russian>Урал Оружейный (Лес)+</Russian>
 			<German>Ural Waffentransport (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS++">
 			<English>Ural Weapon Transport (Woodland)++</English>
-			<Russian>Урал Оружейный (Лесной)++</Russian>
+			<Russian>Урал Оружейный (Лес)++</Russian>
 			<German>Ural Waffentransport (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS+++">
 			<English>Ural Weapon Transport (Woodland)+++</English>
-			<Russian>Урал Оружейный (Лесной)+++</Russian>
+			<Russian>Урал Оружейный (Лес)+++</Russian>
 			<German>Ural Waffentransport (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS++++">
 			<English>Ural Weapon Transport (Woodland)++++</English>
-			<Russian>Урал Оружейный (Лесной)++++</Russian>
+			<Russian>Урал Оружейный (Лес)++++</Russian>
 			<German>Ural Waffentransport (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO_INS">
@@ -12384,27 +12384,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL">
 			<English>Ural Fuel (Woodland)</English>
-			<Russian>Урал Заправщик (Лесной)</Russian>
+			<Russian>Урал Заправщик (Лес)</Russian>
 			<German>Ural Treibstoff (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL+">
 			<English>Ural Fuel (Woodland)+</English>
-			<Russian>Урал Заправщик (Лесной)+</Russian>
+			<Russian>Урал Заправщик (Лес)+</Russian>
 			<German>Ural Treibstoff (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL++">
 			<English>Ural Fuel (Woodland)++</English>
-			<Russian>Урал Заправщик (Лесной)++</Russian>
+			<Russian>Урал Заправщик (Лес)++</Russian>
 			<German>Ural Treibstoff (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL+++">
 			<English>Ural Fuel (Woodland)+++</English>
-			<Russian>Урал Заправщик (Лесной)+++</Russian>
+			<Russian>Урал Заправщик (Лес)+++</Russian>
 			<German>Ural Treibstoff (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL++++">
 			<English>Ural Fuel (Woodland)++++</English>
-			<Russian>Урал Заправщик (Лесной)++++</Russian>
+			<Russian>Урал Заправщик (Лес)++++</Russian>
 			<German>Ural Treibstoff (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL_INS">
@@ -12434,147 +12434,147 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER">
 			<English>Ural (Winter)</English>
-			<Russian>Урал (Зимний)</Russian>
+			<Russian>Урал (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER+">
 			<English>Ural (Winter)+</English>
-			<Russian>Урал (Зимний)+</Russian>
+			<Russian>Урал (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER++">
 			<English>Ural (Winter)++</English>
-			<Russian>Урал (Зимний)++</Russian>
+			<Russian>Урал (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER+++">
 			<English>Ural (Winter)+++</English>
-			<Russian>Урал (Зимний)+++</Russian>
+			<Russian>Урал (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER++++">
 			<English>Ural (Winter)++++</English>
-			<Russian>Урал (Зимний)++++</Russian>
+			<Russian>Урал (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN">
 			<English>Ural Open (Winter)</English>
 			<German>Ural Offen (Winter)</German>
-			<Russian>Урал Открытый (Зимний)</Russian>
+			<Russian>Урал Открытый (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN+">
 			<English>Ural Open (Winter)+</English>
 			<German>Ural Offen (Winter)+</German>
-			<Russian>Урал Открытый (Зимний)+</Russian>
+			<Russian>Урал Открытый (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN++">
 			<English>Ural Open (Winter)++</English>
 			<German>Ural Offen (Winter)++</German>
-			<Russian>Урал Открытый (Зимний)++</Russian>
+			<Russian>Урал Открытый (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN+++">
 			<English>Ural Open (Winter)+++</English>
 			<German>Ural Offen (Winter)+++</German>
-			<Russian>Урал Открытый (Зимний)+++</Russian>
+			<Russian>Урал Открытый (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WINTER_OPEN++++">
 			<English>Ural Open (Winter)++++</English>
 			<German>Ural Offen (Winter)++++</German>
-			<Russian>Урал Открытый (Зимний)++++</Russian>
+			<Russian>Урал Открытый (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER">
 			<English>Ural Fuel (Winter)</English>
 			<German>Ural Treibstoff (Winter)</German>
-			<Russian>Урал Заправщик (Зимний)</Russian>
+			<Russian>Урал Заправщик (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER+">
 			<English>Ural Fuel (Winter)+</English>
 			<German>Ural Treibstoff (Winter)+</German>
-			<Russian>Урал Заправщик (Зимний)+</Russian>
+			<Russian>Урал Заправщик (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER++">
 			<English>Ural Fuel (Winter)++</English>
 			<German>Ural Treibstoff (Winter)++</German>
-			<Russian>Урал Заправщик (Зимний)++</Russian>
+			<Russian>Урал Заправщик (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER+++">
 			<English>Ural Fuel (Winter)+++</English>
 			<German>Ural Treibstoff (Winter)+++</German>
-			<Russian>Урал Заправщик (Зимний)+++</Russian>
+			<Russian>Урал Заправщик (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_FUEL_WINTER++++">
 			<English>Ural Fuel (Winter)++++</English>
 			<German>Ural Treibstoff (Winter)++++</German>
-			<Russian>Урал Заправщик (Зимний)++++</Russian>
+			<Russian>Урал Заправщик (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER">
 			<English>Ural Material Transport (Winter)</English>
 			<German>Ural Materialtransport (Winter)</German>
-			<Russian>Урал Матобеспечения (Зимний)</Russian>
+			<Russian>Урал Матобеспечения (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER+">
 			<English>Ural Material Transport (Winter)+</English>
 			<German>Ural Materialtransport (Winter)+</German>
-			<Russian>Урал Матобеспечения (Зимний)+</Russian>
+			<Russian>Урал Матобеспечения (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER++">
 			<English>Ural Material Transport (Winter)++</English>
 			<German>Ural Materialtransport (Winter)++</German>
-			<Russian>Урал Матобеспечения (Зимний)++</Russian>
+			<Russian>Урал Матобеспечения (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER+++">
 			<English>Ural Material Transport (Winter)+++</English>
 			<German>Ural Materialtransport (Winter)+++</German>
-			<Russian>Урал Матобеспечения (Зимний)+++</Russian>
+			<Russian>Урал Матобеспечения (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_AMMO_WINTER++++">
 			<English>Ural Material Transport (Winter)++++</English>
 			<German>Ural Materialtransport (Winter)++++</German>
-			<Russian>Урал Матобеспечения (Зимний)++++</Russian>
+			<Russian>Урал Матобеспечения (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER">
 			<English>Ural Weapon Transport (Winter)</English>
 			<German>Ural Waffentransport (Winter)</German>
-			<Russian>Урал Оружейный (Зимний)</Russian>
+			<Russian>Урал Оружейный (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER+">
 			<English>Ural Weapon Transport (Winter)+</English>
 			<German>Ural Waffentransport (Winter)+</German>
-			<Russian>Урал Оружейный (Зимний)+</Russian>
+			<Russian>Урал Оружейный (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER++">
 			<English>Ural Weapon Transport (Winter)++</English>
 			<German>Ural Waffentransport (Winter)++</German>
-			<Russian>Урал Оружейный (Зимний)++</Russian>
+			<Russian>Урал Оружейный (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER+++">
 			<English>Ural Weapon Transport (Winter)+++</English>
 			<German>Ural Waffentransport (Winter)+++</German>
-			<Russian>Урал Оружейный (Зимний)+++</Russian>
+			<Russian>Урал Оружейный (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_URAL_WEAPONS_WINTER++++">
 			<English>Ural Weapon Transport (Winter)++++</English>
 			<German>Ural Waffentransport (Winter)++++</German>
-			<Russian>Урал Оружейный (Зимний)++++</Russian>
+			<Russian>Урал Оружейный (Зима)++++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_FUEL">
 			<English>V3S Fuel (Woodland)</English>
-			<Russian>V3S Заправщик (Лесной)</Russian>
+			<Russian>V3S Заправщик (Лес)</Russian>
 			<German>V3S Treibstoff (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_FUEL+">
 			<English>V3S Fuel (Woodland)+</English>
-			<Russian>V3S Заправщик (Лесной)+</Russian>
+			<Russian>V3S Заправщик (Лес)+</Russian>
 			<German>V3S Treibstoff (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_FUEL++">
 			<English>V3S Fuel (Woodland)++</English>
-			<Russian>V3S Заправщик (Лесной)++</Russian>
+			<Russian>V3S Заправщик (Лес)++</Russian>
 			<German>V3S Treibstoff (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_FUEL+++">
 			<English>V3S Fuel (Woodland)+++</English>
-			<Russian>V3S Заправщик (Лесной)+++</Russian>
+			<Russian>V3S Заправщик (Лес)+++</Russian>
 			<German>V3S Treibstoff (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_FUEL++++">
 			<English>V3S Fuel (Woodland)++++</English>
-			<Russian>V3S Заправщик (Лесной)++++</Russian>
+			<Russian>V3S Заправщик (Лес)++++</Russian>
 			<German>V3S Treibstoff (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CIVIL_OPEN">
@@ -12629,27 +12629,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN">
 			<English>V3S Open (Woodland)</English>
-			<Russian>V3S Открытый (Лесной)</Russian>
+			<Russian>V3S Открытый (Лес)</Russian>
 			<German>V3S Offen (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN+">
 			<English>V3S Open (Woodland)+</English>
-			<Russian>V3S Открытый (Лесной)+</Russian>
+			<Russian>V3S Открытый (Лес)+</Russian>
 			<German>V3S Offen (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN++">
 			<English>V3S Open (Woodland)++</English>
-			<Russian>V3S Открытый (Лесной)++</Russian>
+			<Russian>V3S Открытый (Лес)++</Russian>
 			<German>V3S Offen (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN+++">
 			<English>V3S Open (Woodland)+++</English>
-			<Russian>V3S Открытый (Лесной)+++</Russian>
+			<Russian>V3S Открытый (Лес)+++</Russian>
 			<German>V3S Offen (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_CAMO_OPEN++++">
 			<English>V3S Open (Woodland)++++</English>
-			<Russian>V3S Открытый (Лесной)++++</Russian>
+			<Russian>V3S Открытый (Лес)++++</Russian>
 			<German>V3S Offen (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_V3S_ARMORED">
@@ -12944,27 +12944,27 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD">
 			<English>BTR-40 DSHKM (Woodland)</English>
-			<Russian>БТР-40 ДШКМ (Лесной)</Russian>
+			<Russian>БТР-40 ДШКМ (Лес)</Russian>
 			<German>BTR-40 DSHKM (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD+">
 			<English>BTR-40 DSHKM (Woodland)+</English>
-			<Russian>БТР-40 ДШКМ (Лесной)+</Russian>
+			<Russian>БТР-40 ДШКМ (Лес)+</Russian>
 			<German>BTR-40 DSHKM (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD++">
 			<English>BTR-40 DSHKM (Woodland)++</English>
-			<Russian>БТР-40 ДШКМ (Лесной)++</Russian>
+			<Russian>БТР-40 ДШКМ (Лес)++</Russian>
 			<German>BTR-40 DSHKM (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD+++">
 			<English>BTR-40 DSHKM (Woodland)+++</English>
-			<Russian>БТР-40 ДШКМ (Лесной)+++</Russian>
+			<Russian>БТР-40 ДШКМ (Лес)+++</Russian>
 			<German>BTR-40 DSHKM (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_DSHKM_WOOD++++">
 			<English>BTR-40 DSHKM (Woodland)++++</English>
-			<Russian>БТР-40 ДШКМ (Лесной)++++</Russian>
+			<Russian>БТР-40 ДШКМ (Лес)++++</Russian>
 			<German>BTR-40 DSHKM (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_GREEN">
@@ -12994,52 +12994,52 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_WOOD">
 			<English>BTR-40 (Woodland)</English>
-			<Russian>БТР-40 (Лесной)</Russian>
+			<Russian>БТР-40 (Лес)</Russian>
 			<German>BTR-40 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_WOOD+">
 			<English>BTR-40 (Woodland)+</English>
-			<Russian>БТР-40 (Лесной)+</Russian>
+			<Russian>БТР-40 (Лес)+</Russian>
 			<German>BTR-40 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_WOOD++">
 			<English>BTR-40 (Woodland)++</English>
-			<Russian>БТР-40 (Лесной)++</Russian>
+			<Russian>БТР-40 (Лес)++</Russian>
 			<German>BTR-40 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_WOOD+++">
 			<English>BTR-40 (Woodland)+++</English>
-			<Russian>БТР-40 (Лесной)+++</Russian>
+			<Russian>БТР-40 (Лес)+++</Russian>
 			<German>BTR-40 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR40_WOOD++++">
 			<English>BTR-40 (Woodland)++++</English>
-			<Russian>БТР-40 (Лесной)++++</Russian>
+			<Russian>БТР-40 (Лес)++++</Russian>
 			<German>BTR-40 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR60_WOOD">
 			<English>BTR-60 (Woodland)</English>
-			<Russian>БТР-60 (Лесной)</Russian>
+			<Russian>БТР-60 (Лес)</Russian>
 			<German>BTR-60 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR60_WOOD+">
 			<English>BTR-60 (Woodland)+</English>
-			<Russian>БТР-60 (Лесной)+</Russian>
+			<Russian>БТР-60 (Лес)+</Russian>
 			<German>BTR-60 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR60_WOOD++">
 			<English>BTR-60 (Woodland)++</English>
-			<Russian>БТР-60 (Лесной)++</Russian>
+			<Russian>БТР-60 (Лес)++</Russian>
 			<German>BTR-60 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR60_WOOD+++">
 			<English>BTR-60 (Woodland)+++</English>
-			<Russian>БТР-60 (Лесной)+++</Russian>
+			<Russian>БТР-60 (Лес)+++</Russian>
 			<German>BTR-60 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR60_WOOD++++">
 			<English>BTR-60 (Woodland)++++</English>
-			<Russian>БТР-60 (Лесной)++++</Russian>
+			<Russian>БТР-60 (Лес)++++</Russian>
 			<German>BTR-60 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_BTR60_GREEN">
@@ -13174,202 +13174,202 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT">
 			<English>Jackal L2A1 (Desert Camo)</English>
-			<Russian>Jackal L2A1 (Пустынный)</Russian>
+			<Russian>Jackal L2A1 (Пустыня)</Russian>
 			<German>Jackal L2A1 (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT+">
 			<English>Jackal L2A1 (Desert Camo)+</English>
-			<Russian>Jackal L2A1 (Пустынный)+</Russian>
+			<Russian>Jackal L2A1 (Пустыня)+</Russian>
 			<German>Jackal L2A1 (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT++">
 			<English>Jackal L2A1 (Desert Camo)++</English>
-			<Russian>Jackal L2A1 (Пустынный)++</Russian>
+			<Russian>Jackal L2A1 (Пустыня)++</Russian>
 			<German>Jackal L2A1 (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT+++">
 			<English>Jackal L2A1 (Desert Camo)+++</English>
-			<Russian>Jackal L2A1 (Пустынный)+++</Russian>
+			<Russian>Jackal L2A1 (Пустыня)+++</Russian>
 			<German>Jackal L2A1 (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_DESERT++++">
 			<English>Jackal L2A1 (Desert Camo)++++</English>
-			<Russian>Jackal L2A1 (Пустынный)++++</Russian>
+			<Russian>Jackal L2A1 (Пустыня)++++</Russian>
 			<German>Jackal L2A1 (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND">
 			<English>Jackal L2A1 (Wood Camo)</English>
-			<Russian>Jackal L2A1 (Лесной)</Russian>
+			<Russian>Jackal L2A1 (Лес)</Russian>
 			<German>Jackal L2A1 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND+">
 			<English>Jackal L2A1 (Wood Camo)+</English>
-			<Russian>Jackal L2A1 (Лесной)+</Russian>
+			<Russian>Jackal L2A1 (Лес)+</Russian>
 			<German>Jackal L2A1 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND++">
 			<English>Jackal L2A1 (Wood Camo)++</English>
-			<Russian>Jackal L2A1 (Лесной)++</Russian>
+			<Russian>Jackal L2A1 (Лес)++</Russian>
 			<German>Jackal L2A1 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND+++">
 			<English>Jackal L2A1 (Wood Camo)+++</English>
-			<Russian>Jackal L2A1 (Лесной)+++</Russian>
+			<Russian>Jackal L2A1 (Лес)+++</Russian>
 			<German>Jackal L2A1 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_L2A1_WOODLAND++++">
 			<English>Jackal L2A1 (Wood Camo)++++</English>
-			<Russian>Jackal L2A1 (Лесной)++++</Russian>
+			<Russian>Jackal L2A1 (Лес)++++</Russian>
 			<German>Jackal L2A1 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT">
 			<English>Jackal MK19 (Desert Camo)</English>
-			<Russian>Jackal MK19 (Пустынный)</Russian>
+			<Russian>Jackal MK19 (Пустыня)</Russian>
 			<German>Jackal MK19 (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT+">
 			<English>Jackal MK19 (Desert Camo)+</English>
-			<Russian>Jackal MK19 (Пустынный)+</Russian>
+			<Russian>Jackal MK19 (Пустыня)+</Russian>
 			<German>Jackal MK19 (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT++">
 			<English>Jackal MK19 (Desert Camo)++</English>
-			<Russian>Jackal MK19 (Пустынный)++</Russian>
+			<Russian>Jackal MK19 (Пустыня)++</Russian>
 			<German>Jackal MK19 (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT+++">
 			<English>Jackal MK19 (Desert Camo)+++</English>
-			<Russian>Jackal MK19 (Пустынный)+++</Russian>
+			<Russian>Jackal MK19 (Пустыня)+++</Russian>
 			<German>Jackal MK19 (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_DESERT++++">
 			<English>Jackal MK19 (Desert Camo)++++</English>
-			<Russian>Jackal MK19 (Пустынный)++++</Russian>
+			<Russian>Jackal MK19 (Пустыня)++++</Russian>
 			<German>Jackal MK19 (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND">
 			<English>Jackal MK19 (Wood Camo)</English>
-			<Russian>Jackal MK19 (Лесной)</Russian>
+			<Russian>Jackal MK19 (Лес)</Russian>
 			<German>Jackal MK19 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND+">
 			<English>Jackal MK19 (Wood Camo)+</English>
-			<Russian>Jackal MK19 (Лесной)+</Russian>
+			<Russian>Jackal MK19 (Лес)+</Russian>
 			<German>Jackal MK19 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND++">
 			<English>Jackal MK19 (Wood Camo)++</English>
-			<Russian>Jackal MK19 (Лесной)++</Russian>
+			<Russian>Jackal MK19 (Лес)++</Russian>
 			<German>Jackal MK19 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND+++">
 			<English>Jackal MK19 (Wood Camo)+++</English>
-			<Russian>Jackal MK19 (Лесной)+++</Russian>
+			<Russian>Jackal MK19 (Лес)+++</Russian>
 			<German>Jackal MK19 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_JACKAL_MK19_WOODLAND++++">
 			<English>Jackal MK19 (Wood Camo)++++</English>
-			<Russian>Jackal MK19 (Лесной)++++</Russian>
+			<Russian>Jackal MK19 (Лес)++++</Russian>
 			<German>Jackal MK19 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT">
 			<English>Dingo M240 (Desert Camo)</English>
-			<Russian>Dingo M240 (Пустынный)</Russian>
+			<Russian>Dingo M240 (Пустыня)</Russian>
 			<German>Dingo M240 (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT+">
 			<English>Dingo M240 (Desert Camo)+</English>
-			<Russian>Dingo M240 (Пустынный)+</Russian>
+			<Russian>Dingo M240 (Пустыня)+</Russian>
 			<German>Dingo M240 (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT++">
 			<English>Dingo M240 (Desert Camo)++</English>
-			<Russian>Dingo M240 (Пустынный)++</Russian>
+			<Russian>Dingo M240 (Пустыня)++</Russian>
 			<German>Dingo M240 (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT+++">
 			<English>Dingo M240 (Desert Camo)+++</English>
-			<Russian>Dingo M240 (Пустынный)+++</Russian>
+			<Russian>Dingo M240 (Пустыня)+++</Russian>
 			<German>Dingo M240 (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_DESERT++++">
 			<English>Dingo M240 (Desert Camo)++++</English>
-			<Russian>Dingo M240 (Пустынный)++++</Russian>
+			<Russian>Dingo M240 (Пустыня)++++</Russian>
 			<German>Dingo M240 (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND">
 			<English>Dingo M240 (Wood Camo)</English>
-			<Russian>Dingo M240 (Лесной)</Russian>
+			<Russian>Dingo M240 (Лес)</Russian>
 			<German>Dingo M240 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND+">
 			<English>Dingo M240 (Wood Camo)+</English>
-			<Russian>Dingo M240 (Лесной)+</Russian>
+			<Russian>Dingo M240 (Лес)+</Russian>
 			<German>Dingo M240 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND++">
 			<English>Dingo M240 (Wood Camo)++</English>
-			<Russian>Dingo M240 (Лесной)++</Russian>
+			<Russian>Dingo M240 (Лес)++</Russian>
 			<German>Dingo M240 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND+++">
 			<English>Dingo M240 (Wood Camo)+++</English>
-			<Russian>Dingo M240 (Лесной)+++</Russian>
+			<Russian>Dingo M240 (Лес)+++</Russian>
 			<German>Dingo M240 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_M240_WOODLAND++++">
 			<English>Dingo M240 (Wood Camo)++++</English>
-			<Russian>Dingo M240 (Лесной)++++</Russian>
+			<Russian>Dingo M240 (Лес)++++</Russian>
 			<German>Dingo M240 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT">
 			<English>Dingo MK19 (Desert Camo)</English>
-			<Russian>Dingo MK19 (Пустынный)</Russian>
+			<Russian>Dingo MK19 (Пустыня)</Russian>
 			<German>Dingo MK19 (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT+">
 			<English>Dingo MK19 (Desert Camo)+</English>
-			<Russian>Dingo MK19 (Пустынный)+</Russian>
+			<Russian>Dingo MK19 (Пустыня)+</Russian>
 			<German>Dingo MK19 (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT++">
 			<English>Dingo MK19 (Desert Camo)++</English>
-			<Russian>Dingo MK19 (Пустынный)++</Russian>
+			<Russian>Dingo MK19 (Пустыня)++</Russian>
 			<German>Dingo MK19 (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT+++">
 			<English>Dingo MK19 (Desert Camo)+++</English>
-			<Russian>Dingo MK19 (Пустынный)+++</Russian>
+			<Russian>Dingo MK19 (Пустыня)+++</Russian>
 			<German>Dingo MK19 (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_DESERT++++">
 			<English>Dingo MK19 (Desert Camo)++++</English>
-			<Russian>Dingo MK19 (Пустынный)++++</Russian>
+			<Russian>Dingo MK19 (Пустыня)++++</Russian>
 			<German>Dingo MK19 (Wüstentarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND">
 			<English>Dingo MK19 (Wood Camo)</English>
-			<Russian>Dingo MK19 (Лесной)</Russian>
+			<Russian>Dingo MK19 (Лес)</Russian>
 			<German>Dingo MK19 (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND+">
 			<English>Dingo MK19 (Wood Camo)+</English>
-			<Russian>Dingo MK19 (Лесной)+</Russian>
+			<Russian>Dingo MK19 (Лес)+</Russian>
 			<German>Dingo MK19 (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND++">
 			<English>Dingo MK19 (Wood Camo)++</English>
-			<Russian>Dingo MK19 (Лесной)++</Russian>
+			<Russian>Dingo MK19 (Лес)++</Russian>
 			<German>Dingo MK19 (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND+++">
 			<English>Dingo MK19 (Wood Camo)+++</English>
-			<Russian>Dingo MK19 (Лесной)+++</Russian>
+			<Russian>Dingo MK19 (Лес)+++</Russian>
 			<German>Dingo MK19 (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_DINGO_MK19_WOODLAND++++">
 			<English>Dingo MK19 (Wood Camo)++++</English>
-			<Russian>Dingo MK19 (Лесной)++++</Russian>
+			<Russian>Dingo MK19 (Лес)++++</Russian>
 			<German>Dingo MK19 (Waldtarn)++++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_ATV_BEIGE">
@@ -13709,19 +13709,19 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_WINTER">
 			<English>Mi-17 (Winter)</English>
-			<Russian>Ми-17 (Зимний)</Russian>
+			<Russian>Ми-17 (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_WINTER+">
 			<English>Mi-17 (Winter)+</English>
-			<Russian>Ми-17 (Зимний)+</Russian>
+			<Russian>Ми-17 (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_WINTER++">
 			<English>Mi-17 (Winter)++</English>
-			<Russian>Ми-17 (Зимний)++</Russian>
+			<Russian>Ми-17 (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_WINTER+++">
 			<English>Mi-17 (Winter)+++</English>
-			<Russian>Ми-17 (Зимний)+++</Russian>
+			<Russian>Ми-17 (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_CIVIL">
 			<English>Mi-17 (Civilian)</English>
@@ -13793,22 +13793,22 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_DESERT">
 			<English>Mi-17 (Desert)</English>
-			<Russian>Ми-17 (Пустынный)</Russian>
+			<Russian>Ми-17 (Пустыня)</Russian>
 			<German>Mi-17 (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_DESERT+">
 			<English>Mi-17 (Desert)+</English>
-			<Russian>Ми-17 (Пустынный)+</Russian>
+			<Russian>Ми-17 (Пустыня)+</Russian>
 			<German>Mi-17 (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_DESERT++">
 			<English>Mi-17 (Desert)++</English>
-			<Russian>Ми-17 (Пустынный)++</Russian>
+			<Russian>Ми-17 (Пустыня)++</Russian>
 			<German>Mi-17 (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_DESERT+++">
 			<English>Mi-17 (Desert)+++</English>
-			<Russian>Ми-17 (Пустынный)+++</Russian>
+			<Russian>Ми-17 (Пустыня)+++</Russian>
 			<German>Mi-17 (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_MI17_GREEN">
@@ -13914,22 +13914,22 @@
 		<Key ID="STR_VEH_NAME_CH47_DESERT">
 			<English>CH-47F Chinook (Desert)</English>
 			<German>CH-47F Chinook (Wüstentarn)</German>
-			<Russian>CH-47F Чинук (Пустынный)</Russian>
+			<Russian>CH-47F Чинук (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_CH47_DESERT+">
 			<English>CH-47F Chinook (Desert)+</English>
 			<German>CH-47F Chinook (Wüstentarn)+</German>
-			<Russian>CH-47F Чинук (Пустынный)+</Russian>
+			<Russian>CH-47F Чинук (Пустыня)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_CH47_DESERT++">
 			<English>CH-47F Chinook (Desert)++</English>
 			<German>CH-47F Chinook (Wüstentarn)++</German>
-			<Russian>CH-47F Чинук (Пустынный)++</Russian>
+			<Russian>CH-47F Чинук (Пустыня)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_CH47_DESERT+++">
 			<English>CH-47F Chinook (Desert)+++</English>
 			<German>CH-47F Chinook (Wüstentarn)+++</German>
-			<Russian>CH-47F Чинук (Пустынный)+++</Russian>
+			<Russian>CH-47F Чинук (Пустыня)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_CH47_GREY">
 			<English>CH-47F Chinook (Grey)</English>
@@ -14049,42 +14049,42 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_WOODLAND">
 			<English>UH-1H (Woodland)</English>
-			<Russian>UH-1H (Лесной)</Russian>
+			<Russian>UH-1H (Лес)</Russian>
 			<German>UH-1H (Waldtarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_WOODLAND+">
 			<English>UH-1H (Woodland)+</English>
-			<Russian>UH-1H (Лесной)+</Russian>
+			<Russian>UH-1H (Лес)+</Russian>
 			<German>UH-1H (Waldtarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_WOODLAND++">
 			<English>UH-1H (Woodland)++</English>
-			<Russian>UH-1H (Лесной)++</Russian>
+			<Russian>UH-1H (Лес)++</Russian>
 			<German>UH-1H (Waldtarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_WOODLAND+++">
 			<English>UH-1H (Woodland)+++</English>
-			<Russian>UH-1H (Лесной)+++</Russian>
+			<Russian>UH-1H (Лес)+++</Russian>
 			<German>UH-1H (Waldtarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_DESERT">
 			<English>UH-1H (Desert)</English>
-			<Russian>UH-1H (Пустынный)</Russian>
+			<Russian>UH-1H (Пустыня)</Russian>
 			<German>UH-1H (Wüstentarn)</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_DESERT+">
 			<English>UH-1H (Desert)+</English>
-			<Russian>UH-1H (Пустынный)+</Russian>
+			<Russian>UH-1H (Пустыня)+</Russian>
 			<German>UH-1H (Wüstentarn)+</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_DESERT++">
 			<English>UH-1H (Desert)++</English>
-			<Russian>UH-1H (Пустынный)++</Russian>
+			<Russian>UH-1H (Пустыня)++</Russian>
 			<German>UH-1H (Wüstentarn)++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_DESERT+++">
 			<English>UH-1H (Desert)+++</English>
-			<Russian>UH-1H (Пустынный)+++</Russian>
+			<Russian>UH-1H (Пустыня)+++</Russian>
 			<German>UH-1H (Wüstentarn)+++</German>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_CDF">
@@ -14106,22 +14106,22 @@
 		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT">
 			<English>UH-1H (Desert, light)</English>
 			<German>UH-1H (Wüstentarn, hell)</German>
-			<Russian>UH-1H (Пустынный светлый)</Russian>
+			<Russian>UH-1H (Пустыня, светлый)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT+">
 			<English>UH-1H (Desert, light)+</English>
 			<German>UH-1H (Wüstentarn, hell)+</German>
-			<Russian>UH-1H (Пустынный светлый)+</Russian>
+			<Russian>UH-1H (Пустыня, светлый)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT++">
 			<English>UH-1H (Desert, light)++</English>
 			<German>UH-1H (Wüstentarn, hell)++</German>
-			<Russian>UH-1H (Пустынный светлый)++</Russian>
+			<Russian>UH-1H (Пустыня, светлый)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_DESERT_LIGHT+++">
 			<English>UH-1H (Desert, light)+++</English>
 			<German>UH-1H (Wüstentarn, hell)+++</German>
-			<Russian>UH-1H (Пустынный светлый)+++</Russian>
+			<Russian>UH-1H (Пустыня, светлый)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_BLACK">
 			<English>UH-1H (Black)</English>
@@ -14185,19 +14185,19 @@
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_WINTER">
 			<English>UH-1H (Winter)</English>
-			<Russian>UH-1H (Зимний)</Russian>
+			<Russian>UH-1H (Зима)</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_WINTER+">
 			<English>UH-1H (Winter)+</English>
-			<Russian>UH-1H (Зимний)+</Russian>
+			<Russian>UH-1H (Зима)+</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_WINTER++">
 			<English>UH-1H (Winter)++</English>
-			<Russian>UH-1H (Зимний)++</Russian>
+			<Russian>UH-1H (Зима)++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_UH1H_WINTER+++">
 			<English>UH-1H (Winter)+++</English>
-			<Russian>UH-1H (Зимний)+++</Russian>
+			<Russian>UH-1H (Зима)+++</Russian>
 		</Key>
 		<Key ID="STR_VEH_NAME_MH60">
 			<English>MH-60S</English>
@@ -16062,7 +16062,7 @@
 		<Key ID="STR_DZ_WPN_M24_DESERT_NAME">
 			<English>M24 Desert</English>
 			<German>M24 Wüstentarn</German>
-			<Russian>M24 (Пустынный)</Russian>
+			<Russian>M24 (Пустыня)</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_M40A3_NAME">
 			<English>M40A3</English>
@@ -17031,7 +17031,7 @@
 		<Key ID="STR_DZ_WPN_SVD_PSO1_DES_NAME">
 			<English>SVD PSO-1 Desert</English>
 			<German>SVD PSO-1 Wüstentarn</German>
-			<Russian>СВД ПСО-1 (Пустынный)</Russian>
+			<Russian>СВД ПСО-1 (Пустыня)</Russian>
 		</Key>
 
 		<!-- Mosin -->
@@ -17730,11 +17730,11 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_NV_NAME">
 			<English>XM2010 NV</English>
-			<English>XM2010 ПНВ</English>
+			<Russian>XM2010 ПНВ</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010SD_NV_NAME">
 			<English>XM2010 NV SD</English>
-			<English>XM2010 ПНВ ПБС</English>
+			<Russian>XM2010 ПНВ ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_XM2010_NV_DESC">
 			<English>Sniper Rifle with a night vision scope. &lt;br/&gt;Caliber: .300</English>
@@ -30355,7 +30355,7 @@
 		<Key ID="STR_EPOCH_SKINS_DESERTGHILLIE">
 			<English>Desert Ghillie</English>
 			<German>Wüsten Ghillie</German>
-			<Russian>Пустынный гилли</Russian>
+			<Russian>Пустынный маскхалат</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_URBANCAMO">
 			<English>Urban Camo</English>
@@ -30658,12 +30658,12 @@
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTER">
 			<English>Thermo Suit (tan)</English>
 			<German>Thermoanzug (braun)</German>
-			<Russian>Термокостюм (оранжевый)</Russian>
+			<Russian>Термокостюм (Оранжевый)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_SKINS_CAMOWINTERW">
 			<English>Thermo Suit (white)</English>
 			<German>Thermoanzug (weiß)</German>
-			<Russian>Термокостюм (белый)</Russian>
+			<Russian>Термокостюм (Белый)</Russian>
 		</Key>
 	    <Key ID="STR_DZE_EQUIP_CAMOWINTER_DESC">
 			<English>Thermo Suit, which can protect you from a cold and rainy weather.&lt;br/&gt;Sex: Male</English>
@@ -30702,22 +30702,22 @@
 		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_MASK_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
-			<Russian>Военсталкер (Лесной)</Russian>
+			<Russian>Военсталкер (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_WDL_MIL_HEAD_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
-			<Russian>Военсталкер (Лесной)</Russian>
+			<Russian>Военсталкер (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_MASK_NAME">
 			<English>Stalker Mil. (urban)</English>
 			<German>Stalker Mil. (Urban)</German>
-			<Russian>Военсталкер (Городской)</Russian>
+			<Russian>Военсталкер (Город)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_URB_MIL_HEAD_NAME">
 			<English>Stalker Mil. (urban)</English>
 			<German>Stalker Mil. (Urban)</German>
-			<Russian>Военсталкер (Городской)</Russian>
+			<Russian>Военсталкер (Город)</Russian>
 		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_SCIENTIST1_MASK_NAME">
 			<English>Scientist (Red rad-suit)</English>
@@ -30779,7 +30779,7 @@
 		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_MASK_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
-			<Russian>Военсталкер (Лесной)</Russian>
+			<Russian>Военсталкер (Лес)</Russian>
 		</Key>
 		 <Key ID="STR_DZE_EQUIP_STALKER_DESC">
 		 	<English>A pack of special armour that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
@@ -30794,17 +30794,17 @@
 		<Key ID="STR_DZE_EQUIP_STALKER_WDL_MIL_HEAD_NAME">
 			<English>Stalker Mil. (woodland)</English>
 			<German>Stalker Mil. (Wald)</German>
-			<Russian>Военсталкер (Лесной)</Russian>
+			<Russian>Военсталкер (Лес)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_MASK_NAME">
 			<English>Stalker Mil. (urban)</English>
 			<German>Stalker Mil. (Urban)</German>
-			<Russian>Военсталкер (Городской)</Russian>
+			<Russian>Военсталкер (Город)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_URB_MIL_HEAD_NAME">
 			<English>Stalker Mil. (urban)</English>
 			<German>Stalker Mil. (Urban)</German>
-			<Russian>Военсталкер (Городской)</Russian>
+			<Russian>Военсталкер (Город)</Russian>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_MASK_NAME">
 			<English>Scientist (Red rad-suit)</English>
@@ -35798,21 +35798,21 @@
 			<English>%1 of %2 rearmed</English>
 			<German>%1 von %2 aufmunitioniert</German>
 			<French>%1 de %2 Réparé</French>
-			<Russian>%1 из %2 перезаряжен</Russian>
+			<Russian>%2 перезаряжен (%1)</Russian>
 			<Spanish>%1 de %2 recargado</Spanish>
 		</Key>
 		<Key ID="STR_CL_SP_FAIL_COINS">
 			<English>You need %1 %2 to %3 your %4.</English>
 			<German>Du benötigst %1 %2 um %4 zu %3.</German>
 			<French>Il vous faut %1 %2 pour %3 votre %4</French>
-			<Russian>Вам необходимо %1 %2 для %3 вашего %4.</Russian>
+			<Russian>Вам необходимо %1 %2.</Russian>
 			<Spanish>Necesitas %1 %2 para %3 tu %4</Spanish>
 		</Key>
 		<Key ID="STR_CL_SP_FAIL_BRIEFCASES">
 			<English>You need %1 to %2 your %3.</English>
 			<German>Du benötigst %1 um %3 zu %2.</German>
 			<French>Il vous faut %1 pour %3 votre %3</French>
-			<Russian>Вам необходимо %1 для %2 вашего %3.</Russian>
+			<Russian>Вам необходимо %1.</Russian>
 			<Spanish>Necesitas %1 para %2 tu %3</Spanish>
 		</Key>
 	</Package>
