@@ -15,20 +15,21 @@ class Submarine_DZE_base: Submarine
 	mapSize = 6;
 	vehicleClass = "DayZ Epoch Vehicles";
 //vehicle characteristics
-	maxSpeed = 125;
+	maxSpeed = 60;
 	brakeDistance = 20;
-	armor = 20;
+	armor = 40;
 	damageResistance = 0.00318;
 	crewVulnerable = 1;
 	castDriverShadow = 0;
 	castCargoShadow = 0;
 	supplyRadius = 5;
+	fuelCapacity = 150;
 	hasGunner = 0;
 	enableManualFire = 0;
 	weapons[] = {};
 	magazines[] = {};
 	precision = 10;
-	enableGPS = false;
+	enableGPS = 0;
 	memoryPointsGetInDriver 	= "pos driver";
 	memoryPointsGetInDriverDir 	= "pos driver dir";
 	memoryPointsGetInCargo 		= "pos cargo";

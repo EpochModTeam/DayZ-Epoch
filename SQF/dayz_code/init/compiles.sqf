@@ -51,6 +51,7 @@ if (!isDedicated) then {
 	player_regularSave = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_regularSave.sqf";
 	player_forceSave = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_forceSave.sqf";
 	vehicle_getOut = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\vehicle_getOut.sqf";
+	submarine_surface = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\submarine_surface.sqf";
 
 	//Objects
 	object_setpitchbank = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_setpitchbank.sqf";
