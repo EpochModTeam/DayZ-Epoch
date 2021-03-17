@@ -279,7 +279,7 @@ class V3S_Refuel_TK_GUE_EP1_DZE3: V3S_Refuel_TK_GUE_EP1_DZE2 {
 	};
 };
 class V3S_Refuel_TK_GUE_EP1_DZE4: V3S_Refuel_TK_GUE_EP1_DZE3 {
-	displayname = "$STR_VEH_NAME_V3S_FUEL+++";
+	displayname = "$STR_VEH_NAME_V3S_FUEL++++";
 	fuelCapacity = 20000;
 };
 
