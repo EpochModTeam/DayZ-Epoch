@@ -10,10 +10,17 @@ if ((count _position) == 2) then {
 	
 	_spawnveh = ["Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Iron_Vein_DZE","Silver_Vein_DZE","Silver_Vein_DZE","Silver_Vein_DZE","Gold_Vein_DZE","Gold_Vein_DZE"] call BIS_fnc_selectRandom;	
 	//diag_log("DEBUG: Spawning a crashed " + _spawnveh + " with " + _spawnloot + " at " + str(_position));
-	//_veh = createVehicle [_spawnveh,_position, [], 0, "CAN_COLLIDE"];
+
 	_veh = _spawnveh createVehicle [0,0,0];
 	_veh enableSimulation false;
 	_veh setDir round(random 360);
 	_veh setPos _position;
 	_veh setVariable ["ObjectID","1",true];
+	_veh addEventHandler ["HandleDamage",{
+		local _damage = _this select 2;
+		if ((_this select 4) == "Sledge_Swing_Ammo") then {			
+			_damage = _damage*1.2;			
+		};
+		_damage
+	} ];
 };

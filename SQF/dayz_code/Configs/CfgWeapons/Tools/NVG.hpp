@@ -56,7 +56,7 @@ class ItemNVGFullBroken_DZE : Default
 			output[] = {};
 			outputweapons[] = {"NVGoggles_DZE"};
 			input[] = {{"equip_floppywire",1},{"equip_scrapelectronics",1}};
-			inputweapons[] = {"ItemNVGBroken_DZE"};
+			inputweapons[] = {"ItemNVGFullBroken_DZE"};
 		};		
 	};	
 };

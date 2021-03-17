@@ -36,11 +36,20 @@ class PartGeneric : CA_Magazine
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"ItemMetalSheet",1}};
 			input[] = {{"PartGeneric",3}};
-		};		
+		};
 		class Crafting3 
 		{
-			text = $STR_EPOCH_ACTION_METAL_DOORWAY;
+			text = $STR_CRAFTING_METALSHEET;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			output[] = {{"equip_metal_sheet",1}};
+			input[] = {{"PartGeneric",2},{"ItemTankTrap",2}};
+		};		
+		class Crafting4 
+		{
+			text = $STR_EPOCH_ACTION_METAL_DOORWAY;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"door_frame_kit",1}};
