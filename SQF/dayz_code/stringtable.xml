@@ -33396,6 +33396,10 @@
 			<German>Wellblech herstellen</German>
 			<Russian>Создать: Гофрир. лист</Russian>
 		</Key>
+		<Key ID="STR_CRAFTING_METALSHEET">
+			<English>Craft Sheet Metal</English>
+			<German>Metallplatte herstellen</German>
+		</Key>		
 		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
 			<English>Needed items:</English>
 			<German>Benötigte Gegenstände:</German>
