@@ -33399,6 +33399,7 @@
 		<Key ID="STR_CRAFTING_METALSHEET">
 			<English>Craft Sheet Metal</English>
 			<German>Metallplatte herstellen</German>
+			<Russian>Создать: Лист металла</Russian>
 		</Key>		
 		<Key ID="STR_CRAFTING_NEEDED_ITEMS">
 			<English>Needed items:</English>
