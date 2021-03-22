@@ -96,7 +96,7 @@ _silver_1oz = (_silver_1oz_a - _silver_1oz_b);
 	if (!isNil {call compile format["_%1",_x]} && {(call compile format["_%1",_x]) > 0}) then {
 		if (_noIMG) then {
 			_pic = if (_localize) then {getText (configFile >> 'CfgMagazines' >> _x >> 'displayName')} else {_x};
-			_array set [count _array, format["%1 %2",(call compile format["_%1",_x]),_pic]];
+			_array set [count _array, format["%1x %2",(call compile format["_%1",_x]),_pic]];
 		} else {
 			_pic = getText (configFile >> 'CfgMagazines' >> _x >> 'picture');
 			_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",(call compile format["_%1",_x]),_pic, _string,_fontSize];
@@ -106,11 +106,11 @@ _silver_1oz = (_silver_1oz_a - _silver_1oz_b);
 
 if (_noIMG) then {
 	if (_briefcase_100oz >= 2) then {
-		_array set [count _array, format["%1 %2s",_briefcase_100oz,if (_localize) then {localize "STR_EPOCH_BRIEFCASE"} else {"Briefcase"}]];
+		_array set [count _array, format["%1x %2s",_briefcase_100oz,if (_localize) then {localize "STR_EPOCH_BRIEFCASE"} else {"Briefcase"}]];
 	};
 
 	if (_briefcase_100oz == 1) then {
-		_array set [count _array, format["%1 %2",_briefcase_100oz,if (_localize) then {localize "STR_EPOCH_BRIEFCASE"} else {"Briefcase"}]];
+		_array set [count _array, format["%1x %2",_briefcase_100oz,if (_localize) then {localize "STR_EPOCH_BRIEFCASE"} else {"Briefcase"}]];
 	};
 } else {
 	if (_briefcase_100oz > 0) then {
@@ -121,7 +121,7 @@ if (_noIMG) then {
 
 if (_gold_10oz > 0) then {
 	if (_noIMG) then {
-		_array set [count _array, format["%1 %2",_gold_10oz,if (_localize) then {localize "STR_EPOCH_10OZGOLD"} else {"10oz Gold"}]];
+		_array set [count _array, format["%1x %2",_gold_10oz,if (_localize) then {localize "STR_EPOCH_10OZGOLD"} else {"10oz Gold"}]];
 	} else {
 		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemGoldBar10oz' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_gold_10oz,_pic, _string,_fontSize];
@@ -129,7 +129,7 @@ if (_gold_10oz > 0) then {
 };
 if (_gold_1oz > 0) then {
 	if (_noIMG) then {
-		_array set [count _array, format["%1 %2",_gold_1oz,if (_localize) then {localize "STR_EPOCH_GOLD"} else {"Gold"}]];
+		_array set [count _array, format["%1x %2",_gold_1oz,if (_localize) then {localize "STR_EPOCH_GOLD"} else {"Gold"}]];
 	} else {
 		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemGoldBar' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_gold_1oz,_pic, _string,_fontSize];
@@ -137,7 +137,7 @@ if (_gold_1oz > 0) then {
 };
 if (_silver_10oz > 0) then {
 	if (_noIMG) then {
-		_array set [count _array, format["%1 %2",_silver_10oz,if (_localize) then {localize "STR_EPOCH_10OZSILVER"} else {"10oz Silver"}]];
+		_array set [count _array, format["%1x %2",_silver_10oz,if (_localize) then {localize "STR_EPOCH_10OZSILVER"} else {"10oz Silver"}]];
 	} else {
 		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemSilverBar10oz' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_silver_10oz,_pic, _string,_fontSize];
@@ -145,7 +145,7 @@ if (_silver_10oz > 0) then {
 };
 if (_silver_1oz > 0) then {
 	if (_noIMG) then {
-		_array set [count _array, format["%1 %2",_silver_1oz,if (_localize) then {localize "STR_EPOCH_SILVER"} else {"Silver"}]];
+		_array set [count _array, format["%1x %2",_silver_1oz,if (_localize) then {localize "STR_EPOCH_SILVER"} else {"Silver"}]];
 	} else {
 		_pic = getText (configFile >> 'CfgMagazines' >> 'ItemSilverBar' >> 'picture');
 		_string = format["%3<t size='%4'>%1x</t><img image='%2'/>",_silver_1oz,_pic, _string,_fontSize];
@@ -157,11 +157,7 @@ if (_noIMG) then {
 		if (_forEachIndex == 0) then {
 			_string = _x;
 		} else {
-			if (_forEachIndex == ((count _array) - 1)) then {
-				_string = _string + " and " + _x;
-			} else {
-				_string = _string + ", " + _x;
-			};
+			_string = _string + ", " + _x;
 		};
 	} forEach _array;
 };
