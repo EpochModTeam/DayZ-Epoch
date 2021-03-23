@@ -153,7 +153,6 @@
 [UPDATED] The Journal main page was reworked and has some more information about the server settings now. (ef05eb4e) @AirwavesMan
 [UPDATED] Harvesting wood will yield at least 16 or more wood. This was added in order to decrease network traffic. (8dc6ef8d) @AirwavesMan
 [UPDATED] Increased cargo count of Refuel Trucks. (4667f20b) @AirwavesMan
-[UPDATED] The parachute has a new model. (cc4ee5b2) @AirwavesMan, @Helion4
 [UPDATED] Cinder buildings and metal floors have a new texture. @Helion4
 [UPDATED] Highly increased infection chance if the player eats uncooked meat or fish. (29b6a26) @AirwavesMan
 [UPDATED] Crafting wooden buildings now requires a handsaw and a hammer. (247f5dc6) @AirwavesMan
