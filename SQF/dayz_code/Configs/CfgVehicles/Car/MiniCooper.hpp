@@ -4,7 +4,7 @@ class Mini_Cooper_base: epoch_car
 	displayname = "Mini Cooper";
 	model = "\z\addons\dayz_epoch_v\vehicles\mini\dze_cooper_s";
 	picture = "\dayz_epoch_c\icons\vehicles\minicooper.paa";
-	transportsoldier = 2;
+	transportsoldier = 1;
 	fuelCapacity = 100;
 	class HitPoints;
 	class HitLFWheel;

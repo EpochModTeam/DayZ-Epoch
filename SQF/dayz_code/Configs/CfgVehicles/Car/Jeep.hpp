@@ -5,7 +5,7 @@ class Jeep_base: epoch_car
 	model = "\z\addons\dayz_epoch_v\vehicles\jeep\h4_jeep";
 	picture = "\dayz_epoch_c\icons\vehicles\jeep.paa";
 	armor = 25;
-	transportsoldier = 2;
+	transportsoldier = 1;
 	transportmaxweapons = 15;
 	transportmaxmagazines = 50;
 	transportmaxbackpacks = 5;

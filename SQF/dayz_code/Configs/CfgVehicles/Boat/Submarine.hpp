@@ -52,7 +52,7 @@ class Submarine_DZE_base: Submarine
 //crew
 	getInAction 		= GetInLow;
 	getOutAction 		= GetOutLow;
-	transportSoldier 	= 3;
+	transportSoldier 	= 2;
 	typicalCargo[]		= {RU_Soldier,RU_Soldier_AR,RU_Soldier_AR};
 	driverAction 		= PBX_Driver;
 	cargoAction[] 		= {Truck_Cargo04,Truck_Cargo01,Truck_Cargo01};
@@ -132,7 +132,7 @@ class Submarine_DZE_base: Submarine
 		{
 			armor = 0.85;
 			material = -1;
-			name = "telo";
+			name = "karoserie";
 			visual = "zbytek";
 			passThrough = 1;
 		};
