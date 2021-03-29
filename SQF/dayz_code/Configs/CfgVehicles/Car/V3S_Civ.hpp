@@ -347,6 +347,7 @@ class V3S_Camper_DZE : V3S_RA_TK_GUE_EP1_DZE {
 	displayname = "$STR_VEH_NAME_V3S_CAMPER";
 	armor = 40;
 	damageResistance = 0.00231;
+	transportsoldier = 1;
 	
 	transportMaxWeapons = 10;
 	transportMaxMagazines = 50;

@@ -256,7 +256,14 @@ class Ikarus_Armored_DZE: epoch_car
 	transportMaxMagazines = 120;
     transportmaxbackpacks = 10;		
 	transportSoldier = 12;
-	hiddenselections[] = {"camo1"};
+	driverAction = CityBus_Driver;
+	cargoAction[] =
+	{
+		Truck_Cargo03,Truck_Cargo01,Truck_Cargo04,Truck_Cargo01,Truck_Cargo01,
+		Truck_Cargo03,Truck_Cargo01,Truck_Cargo04,Truck_Cargo01,Truck_Cargo02,
+		Truck_Cargo02,Truck_Cargo01
+	};	
+	hiddenselections[] = {"camo1"};	
 	hiddenselectionstextures[]= 
 	{
 		"z\addons\dayz_epoch_v\vehicles\citybus\data\citybus_ext_co.paa"		

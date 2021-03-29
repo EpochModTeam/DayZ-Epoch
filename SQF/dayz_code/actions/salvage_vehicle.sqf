@@ -2,15 +2,15 @@ private ["_isMotorcycle","_hits","_part","_color","_vehicle","_PlayerNear","_hit
 "_6WheelTypeArray","_NoGlassArray","_RemovedPartsArray","_damage","_cmpt","_configVeh","_damagePercent","_string","_handle","_cancel","_type"];
 
 _vehicle = _this select 3;
+dayz_myCursorTarget = _vehicle;
+{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 
 _PlayerNear = {isPlayer _x} count ((getPosATL _vehicle) nearEntities ["CAManBase", 12]) > 1;
 if (_PlayerNear) exitWith {dayz_myCursorTarget = objNull; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
-dayz_myCursorTarget = _vehicle;
 _hitpoints = _vehicle call vehicle_getHitpoints;
 
 if (count _hitpoints < 1) exitwith {};
-{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 
 _type = typeOf _vehicle;
 _isMotorcycle = _vehicle isKindOf "Motorcycle";

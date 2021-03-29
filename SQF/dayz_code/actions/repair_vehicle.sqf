@@ -2,11 +2,11 @@ private ["_part","_cancel","_color","_string","_handle","_damage","_cmpt","_vehi
 
 _vehicle = _this select 3;
 dayz_myCursorTarget = _vehicle;
+{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 
 _hitpoints = _vehicle call vehicle_getHitpoints;
 
 if (count _hitpoints < 1) exitwith {};
-{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 
 {
 	_hitpoint = _x;
