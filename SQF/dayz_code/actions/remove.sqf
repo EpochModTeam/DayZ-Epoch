@@ -11,6 +11,9 @@ player removeAction s_player_deleteBuild;
 s_player_deleteBuild = 1;
 
 _obj = _this select 3;
+
+if (isNull _obj) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
+
 _objOwnerID = "0";
 _isOwnerOfObj = false;
 
