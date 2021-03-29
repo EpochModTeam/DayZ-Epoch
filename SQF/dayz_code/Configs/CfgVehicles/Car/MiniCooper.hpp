@@ -20,7 +20,7 @@ class Mini_Cooper_base: epoch_car
 	maxspeed = 110;
 	weapons[] = {"SportCarHorn"};
 	driverAction = "Golf_Driver";
-	cargoaction[] = {"Hatchback_Cargo01","suv_cargo02_ep1","Hatchback_Cargo01","suv_cargo02_ep1","Hatchback_Cargo01"};
+	cargoaction[] = {"Hatchback_Cargo01"};
 	typicalcargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};	

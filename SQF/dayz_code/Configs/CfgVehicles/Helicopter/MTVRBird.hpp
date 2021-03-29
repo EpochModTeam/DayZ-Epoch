@@ -19,7 +19,7 @@ class MTVR_Bird_base: Helicopter
 	damageResistance = 0.01039;	
 	cost = 100000;
 	transportSoldier = 1;
-	cargoAction[] = {"Truck_Cargo01"};
+	cargoAction[] = {"UH1Y_Cargo01"};
 	transportAmmo = 0;
 	supplyRadius = 2.5;	
 	driverAction = "AH6j_Pilot_EP1";

@@ -14,7 +14,7 @@ class Jeep_base: epoch_car
 	terraincoef	= 2.0;
 	weapons[] = {minicarhorn};
 	driveraction = "HMMWV_Driver";
-	cargoaction[] = {"Skodovka_Cargo01","suv_cargo02_ep1","Skodovka_Cargo01","suv_cargo02_ep1","Skodovka_Cargo012"};
+	cargoaction[] = {"Skodovka_Cargo01"};
 	//class HitPoints;
 	hiddenselectionstextures[]= 
 	{
