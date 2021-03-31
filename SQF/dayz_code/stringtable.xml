@@ -33489,18 +33489,22 @@
 		<Key ID="STR_DEATHBOARD_KILLED_AT">
 			<English>Died at</English>
 			<German>Gestorben um</German>
+			<Russian>Умер в</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_KILLED_BY">
 			<English>Was killed by</English>
 			<German>Wurde getötet von</German>
+			<Russian>Убит</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_KILLED_WITH">
 			<English>With</English>
 			<German>Mit</German>
+			<Russian>Из</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_DISTANCE_OF">
 			<English>At a distance of</English>
 			<German>Aus einer Distanz von</German>
+			<Russian>С расстояния</Russian>
 		</Key>
 		<Key ID="STR_DEATHBOARD_MESSAGE_1">
 			<English>Death is God's way of telling you not to be such a wise guy.</English>
