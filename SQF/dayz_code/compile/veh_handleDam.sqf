@@ -20,7 +20,7 @@ _unit = _this select 0;
 _selection = _this select 1;
 _total = _this select 2;
 _totalDmg = if (_selection != "") then {false} else {true};
-_force = [false,true] select (count _this > 6); // Needed to force update salavage
+_force = [false,true] select (count _this > 6); // Needed to force update salvage
 
 if (_total >= 0.98) then {
     _total = 1.0;

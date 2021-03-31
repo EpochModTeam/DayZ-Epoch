@@ -14,7 +14,6 @@ class Submarine_DZE_base: Submarine
 	Icon = "\Ca\water\Data\map_ico\icomap_rubber_CA.paa";
 	mapSize = 6;
 	vehicleClass = "DayZ Epoch Vehicles";
-//vehicle characteristics
 	maxSpeed = 60;
 	brakeDistance = 20;
 	armor = 40;
@@ -41,8 +40,6 @@ class Submarine_DZE_base: Submarine
 	rightEngineEffect = "subspray";
 	destrType = DestructWreck;
 	class DestructionEffects;
-	//driverForceOptics = 1;
-	//driverOpticsModel = "\ca\Tracked\optika_M1A1_commander";
 	
 //based on fishing boat
 	transportMaxMagazines 	= 500;
@@ -56,7 +53,6 @@ class Submarine_DZE_base: Submarine
 	typicalCargo[]		= {RU_Soldier,RU_Soldier_AR,RU_Soldier_AR};
 	driverAction 		= PBX_Driver;
 	cargoAction[] 		= {Truck_Cargo04,Truck_Cargo01,Truck_Cargo01};
-//		FB_Cargo01,FB_Cargo02,FB_Cargo03,FB_Cargo03,FB_Cargo03,FB_Cargo03,FB_Cargo04
 	cargoGetInAction[] 	= {"GetInLow"};
 	cargoGetOutAction[] 	= {"GetOutLow"};
 	extCameraPosition[] 	= {0,4.0,-14.0};
@@ -105,46 +101,35 @@ class Submarine_DZE_base: Submarine
 			condition = "(player == (driver this)) && {(this animationphase ""dive"" > 0.5)}";
 			statement = "this animate [""dive"", 0];";
 		};
-		/*
-		class periscope_up
-		{
-			displayName = "Periscope Up";
-			displayNameDefault = "";
-			onlyforplayer = true;
-			position = "zamerny";
-			radius = 3;
-			priority = 99;
-			condition = "(player == driver this) && (this animationphase ""peri_trans"" < 0.5)";
-			statement = "this animate [""peri_trans"", 1]";
-		};
-		class periscope_down : periscope_up
-		{
-			displayName = "Periscope Down";
-			condition = "(player == driver this) && (this animationphase ""peri_trans"" > 0.5)";
-			statement = "this animate [""peri_trans"", 0];";
-		};
-		*/
 	};
 //damage
 	class HitPoints: HitPoints
-	{
-		class HitHull
-		{
-			armor = 0.85;
-			material = -1;
-			name = "karoserie";
-			visual = "zbytek";
-			passThrough = 1;
-		};
-		class HitEngine 
-		{
-			armor = 1.2;
-			material = 60;
-			name = "motor";
-			visual = "zbytek";
-			passThrough	= 1;
-		};
-	};
+    {
+        class HitBody
+        {
+            armor = 0.85;
+            material = -1;
+            name = "karoserie";
+            visual = "zbytek";
+            passThrough = 1;
+        };
+        class HitEngine 
+        {
+            armor = 1.2;
+            material = 60;
+            name = "motor";
+            visual = "zbytek";
+            passThrough = 1;
+        };
+        class HitFuel 
+        {
+            armor=0.3;
+            material = -1;
+            name="palivo";
+            visual=""; // no visible fuel tank destruction effects
+            passThrough =0.5;
+        };
+    };
 	class Damage
 	{
 		tex[] = {};
@@ -240,34 +225,6 @@ class Submarine_DZE_base: Submarine
 			selection = "light";
 			size = 1.0;
 			brightness = 5.0;
-		};
-	};
-//blinkers
-	class MarkerLights
-	{
-		class RedStill
-		{
-			name = "red_light";
-			color[] = {1.0, 0.1, 0.1, 1};
-			ambient[] = {0.1, 0.01, 0.01, 1};
-			brightness = 0.01;
-			blinking = false;
-		};
-		class GreenStill
-		{
-			name = "green_light";
-			color[] = {0.1, 1.0, 0.1, 1};
-			ambient[] = {0.01, 0.1, 0.01, 1};
-			brightness = 0.01;
-			blinking = false;
-		};
-		class WhiteStill
-		{
-			name = "white_light";
-			color[] = {1.0, 1.0, 1.0, 1};
-			ambient[] = {0.1, 0.1, 0.1, 1};
-			brightness = 0.01;
-			blinking = false;
 		};
 	};
 };
