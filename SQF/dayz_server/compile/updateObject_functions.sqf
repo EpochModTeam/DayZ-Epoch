@@ -89,7 +89,7 @@ server_obj_dam = {
 		};
 	} count _hitpoints;
 	
-	if (_allFixed && !_totalDmg) then {_object setDamage 0;};
+	if (_allFixed && !_totalDmg && _forced) then {_object setDamage 0;};
 
 	if (_forced) then {
 		if (_object in needUpdate_objects) then {needUpdate_objects = needUpdate_objects - [_object];};
