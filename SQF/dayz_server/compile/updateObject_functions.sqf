@@ -101,6 +101,7 @@ server_obj_dam = {
 				//diag_log format["DEBUG: Monitoring: %1",_object];
 				needUpdate_objects set [count needUpdate_objects, _object];
 				_recorddmg = true;
+				_object setVariable ["lastUpdate",diag_ticktime];
 			};
 		};
 	};

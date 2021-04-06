@@ -44,8 +44,6 @@ if (_isNotOk) exitWith {
 	//deleteVehicle _object;
 };
 
-_object setVariable ["lastUpdate",diag_ticktime,true];
-
 call {
 	if (_type == "all") exitwith {
 		[_object,_objectID,_class] call server_obj_pos;
