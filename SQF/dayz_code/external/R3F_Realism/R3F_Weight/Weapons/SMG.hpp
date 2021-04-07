@@ -50,6 +50,10 @@ class Sa61_EP1
 {
 	weight = 1.3;
 };
+class Sa61_DZ
+{
+	weight = 1.3;
+};
 class Mac10_DZ
 {
 	weight = 1.0;
