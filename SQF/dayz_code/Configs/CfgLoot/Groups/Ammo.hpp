@@ -212,7 +212,7 @@ AmmoEU[] =
 	
 	//Sniper rifle
 	{Loot_MAGAZINE,		3,		5Rnd_86x70_L115A1},
-	{Loot_MAGAZINE,		1,		5Rnd_127x99_as50_CP},
+	{Loot_MAGAZINE,		1,		5Rnd_127x99_as50},
 	{Loot_MAGAZINE,		1,		20Rnd_762x51_RSASS},
 	{Loot_MAGAZINE,		1,		10Rnd_86x70_MRAD},
 	

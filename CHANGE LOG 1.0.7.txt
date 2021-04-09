@@ -61,6 +61,7 @@
 [NEW] Added many broken versions of already existing items and tools like Safe, Engine Parts, Wheel, Toolbox and many more. @AirwavesMan
 [NEW] Added lots of new items and tools like Handsaw, Hammer, Cement Bag, Carrot, Potato, Mobile Phone and more. @AirwavesMan, @Helion4
 [NEW] Added snapping support for Storage Sheds, Wood Shacks, Wooden Sheds, Gun Racks and Outhouses. (ca05896f) @AirwavesMan
+[NEW] Added Submarine (c316d20) @AirwavesMan, @Helion4 
 
 [FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
 [FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
@@ -156,6 +157,7 @@
 [UPDATED] Cinder buildings and metal floors have a new texture. @Helion4
 [UPDATED] Highly increased infection chance if the player eats uncooked meat or fish. (29b6a26) @AirwavesMan
 [UPDATED] Crafting wooden buildings now requires a handsaw and a hammer. (247f5dc6) @AirwavesMan
+[UPDATED] Full Russian Localization @RedLink-kam, @dreamforceinc
 
 [REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
 [REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow

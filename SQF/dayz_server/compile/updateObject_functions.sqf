@@ -89,7 +89,7 @@ server_obj_dam = {
 		};
 	} count _hitpoints;
 	
-	if (_allFixed && !_totalDmg) then {_object setDamage 0;};
+	if (_allFixed && !_totalDmg && _forced) then {_object setDamage 0;};
 
 	if (_forced) then {
 		if (_object in needUpdate_objects) then {needUpdate_objects = needUpdate_objects - [_object];};
@@ -101,6 +101,7 @@ server_obj_dam = {
 				//diag_log format["DEBUG: Monitoring: %1",_object];
 				needUpdate_objects set [count needUpdate_objects, _object];
 				_recorddmg = true;
+				_object setVariable ["lastUpdate",diag_ticktime];
 			};
 		};
 	};

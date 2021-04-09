@@ -130,7 +130,7 @@ CrashSiteEUPile[] =
 	{Loot_GROUP,		5,		ToolsMilitary},
 	{Loot_MAGAZINE,		10,		FoodMRE},
 	{Loot_GROUP,		15,		AmmoEU},
-	{Loot_MAGAZINE,		3,		5Rnd_127x99_as50_CP},
+	{Loot_MAGAZINE,		3,		5Rnd_127x99_as50},
 	{Loot_MAGAZINE,		3,		6Rnd_762x51_WA2000},
 	{Loot_GROUP,		10,		MedicalLow}
 };

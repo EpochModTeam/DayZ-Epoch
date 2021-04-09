@@ -46,8 +46,7 @@ if (!isDedicated) then {
 	dayz_paraSpawn = false; // Helo jump spawn
 	DZE_SelfTransfuse = false; // Allow players to give themselves blood transfusions
 	DZE_selfTransfuse_Values = [12000,15,120]; // [blood amount, infection chance, cool-down (seconds)]
-	dayz_DamageMultiplier = 1; // Increases the damage to the player by zombie attacks
-	dayz_infectiouswaterholes = true; //Enable infected waterholes
+	dayz_DamageMultiplier = 1; // Increases the damage to the player by zombie attacks	
 	dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
 	DZE_BackpackAntiTheft = false; // Prevents accessing backpack gear of non-friendly players in trader cities
 	DZE_StaticConstructionCount = 0; // Number of animations required for building an object. Leaving set at zero will default to the construction count in the configs for each object.
@@ -164,6 +163,7 @@ if (!isDedicated) then {
 };
 
 // Both
+dayz_infectiouswaterholes = true; //Enable infected waterholes
 dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
 dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
 DZE_HeliLift = true; // Enable Epoch heli lift system
