@@ -95,7 +95,9 @@ sched_lootpiles = {
 				//diag_log format ["%1: lootpiles foreach loot to del from:%2 to:%3 old:%4 total:%5", __FILE__, sched_lp_var1, _imax, sched_lp_delqty, sched_lp_lootTotal ];
 				for "_i" from sched_lp_var1 to _imax-1 do {
 					_x = sched_lp_list select _i;
-					deleteVehicle _x;
+					if (!isNull _x) then {
+						deleteVehicle _x;
+					};	
 				};
 				sched_lp_var1 = _imax;
 				if (_imax == sched_lp_delqty) then {
