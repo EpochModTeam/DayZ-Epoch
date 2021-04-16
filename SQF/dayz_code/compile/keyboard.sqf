@@ -20,7 +20,7 @@ if (isNil "keyboard_keys") then {
 	};
 	local _dze_q = {
 		if (!_ctrlState && !_altState) then {DZE_Q = true;};
-		if (!_ctrlState && {_altState}) then {DZE_Q_alt = true;};
+		if (!_ctrlState && _altState) then {DZE_Q_alt = true;};
 		if (_ctrlState && !_altState) then {DZE_Q_ctrl = true;};
 	};
 	local _dze_z = {
