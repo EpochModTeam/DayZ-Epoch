@@ -53,7 +53,7 @@ if (_classname isKindOf "Bag_Base_EP1") exitWith {
 	waitUntil { !isNull (unitBackpack player) };
 	uiSleep 0.03;
 	
-	call player_regularSave;
+	call player_forceSave;
 };
 
 _config = (configFile >> _type >> _classname);

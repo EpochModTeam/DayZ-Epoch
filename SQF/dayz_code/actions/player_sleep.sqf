@@ -115,5 +115,5 @@ player setVariable ["sleeping",false];
 dayz_actionInProgress = false;
 
 //Removed due to player sync returning []
-//call player_regularSave;
+//call player_forceSave;
 R3F_TIRED_Accumulator = 0;

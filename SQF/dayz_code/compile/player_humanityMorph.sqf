@@ -1,5 +1,5 @@
 private ["_charID","_model","_old","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_survivalTime","_coins","_bankCoins","_globalCoins","_ConfirmedHumanKills","_ConfirmedBanditKills","_friendlies","_tagSetting"];
-//_playerUID = _this select 0;
+closeDialog 0;
 _charID = _this select 1;
 _model = _this select 2;
 
@@ -13,7 +13,6 @@ _old removeAllEventHandlers "Fired";
 _old allowDamage false;
 _old AddEventHandler ["HandleDamage", {False}];
 
-dayz_unsaved = true;
 //Logout
 _humanity = player getVariable ["humanity",0];
 _medical = player call player_sumMedical;
