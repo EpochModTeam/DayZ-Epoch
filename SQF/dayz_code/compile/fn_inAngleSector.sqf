@@ -15,7 +15,7 @@
 // Revision History:
 // 09/01/08 0.1 - First cut VBS2
 //------------------
-private["_r","_dir1"];
+private["_small","_large","_xpos","_ypos","_dir2","_dir3"];
 
 _r = false;
 
