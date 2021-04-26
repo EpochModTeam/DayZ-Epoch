@@ -32961,7 +32961,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_APSI_BROKEN">
 			<English>Broken APSI</English>
-			<English>Beschädigtes APSI</English>
+			<German>Beschädigtes APSI</German>
 			<Russian>Сломанный пси-шлем</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_APSI_DESC">
