@@ -1,0 +1,3 @@
+[FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @AirwavesMan
+[FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
+[FIXED] Open a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a) @AirwavesMan
