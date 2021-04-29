@@ -46,10 +46,6 @@ class m107_DZ
 {
 	weight = 14;
 };
-class M4SPR
-{
-	weight = 6.8;
-};
 class DMR
 {
 	weight = 8.5;
@@ -363,7 +359,15 @@ class m107_SKN
 {
 	weight = 14.0;
 };
+class M4SPR
+{
+	weight = 6.8;
+};
 class M4SPR_DZE
+{
+	weight = 6.8;
+};
+class M4SPR_DZ
 {
 	weight = 6.8;
 };
