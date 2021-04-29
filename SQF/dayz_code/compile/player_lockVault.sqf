@@ -31,7 +31,7 @@ if (!isNull _obj) then {
 
 	[_lockedClass,objNull] call fn_waitForObject;
 
-	if (_lockedClass == "LockboxStorageLocked") then {
+	if (_objType in DZE_LockboxesUnlocked) then {
 		[player,(getPosATL player),20,"lockboxclose"] spawn fnc_alertZombies;
 	} else {
 		[player,(getPosATL player),20,"safeclose"] spawn fnc_alertZombies;
