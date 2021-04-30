@@ -63,7 +63,7 @@ if !(alive _item) then {
 	dayz_lastMeal =	time;
 	dayz_hunger = 0;
 
-	call player_regularSave;
+	call player_forceSave;
 
 	[player,"eat",0,false] call dayz_zombieSpeak;
 

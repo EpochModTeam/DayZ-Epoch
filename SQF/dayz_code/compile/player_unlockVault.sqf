@@ -37,7 +37,7 @@ if (_ComboMatch || (_ownerID == dayz_playerUID)) then {
 
 	[_unlockedClass,objNull] call fn_waitForObject;
 
-	if (_unlockedClass == "LockboxStorage") then {
+	if (_unlockedClass in DZE_LockboxesUnlocked) then {
 		[player,(getPosATL player),20,"lockboxopen"] spawn fnc_alertZombies;
 	} else {
 		[player,(getPosATL player),20,"safeopen"] spawn fnc_alertZombies;

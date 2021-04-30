@@ -1,5 +1,5 @@
-private ["_isMotorcycle","_hits","_part","_color","_vehicle","_PlayerNear","_hitpoints","_is6WheelType","_hitpoint",
-"_6WheelTypeArray","_NoGlassArray","_RemovedPartsArray","_damage","_cmpt","_configVeh","_damagePercent","_string","_handle","_cancel","_type"];
+private ["_hits","_part","_color","_vehicle","_PlayerNear","_hitpoints","_hitpoint",
+"_RemovedPartsArray","_damage","_cmpt","_configVeh","_damagePercent","_string","_handle","_cancel","_type"];
 
 _vehicle = _this select 3;
 dayz_myCursorTarget = _vehicle;
@@ -13,34 +13,7 @@ _hitpoints = _vehicle call vehicle_getHitpoints;
 if (count _hitpoints < 1) exitwith {};
 
 _type = typeOf _vehicle;
-_isMotorcycle = _vehicle isKindOf "Motorcycle";
-_is6WheelType = false;
-
-{
-	if (_type isKindOf _x) exitWith {
-		_is6WheelType = true;
-	};
-} count ["Kamaz_Base","MTVR","Ural_Base","Ural_Base_withTurret","V3S_Base","T810_DZE_Base_ACR"];
-
-_6WheelTypeArray = ["HitLMWheel","HitRMWheel"];
-_NoGlassArray = ["HitGlass1","HitGlass2","HitGlass3","HitGlass4","HitGlass5","HitGlass6","HitLGlass","HitRGlass"];
 _RemovedPartsArray = ["motor","HitLF2Wheel","HitRF2Wheel","HitBody","HitMissiles","HitHull","HitVRotor","HitFuel","HitEngine"];
-
-if (!_is6WheelType) then {
-	if ((_vehicle isKindOf "ATV_Base_EP1") || _isMotorcycle) then {
-		_hitpoints = _hitpoints - _NoGlassArray;
-
-		if (_isMotorcycle) then {
-			_hitpoints = _hitpoints - ["HitEngine","HitFuel"];
-		};
-	};
-
-	if (_vehicle isKindOf "tractor") then {
-		_hitpoints = _hitpoints - ["motor","HitLFWheel","HitRFWheel","HitLBWheel","HitRBWheel","HitLF2Wheel","HitRF2Wheel","HitLMWheel","HitRMWheel"];
-	};
-
-	_hitpoints = _hitpoints - _6WheelTypeArray;
-};
 
 {
 	_hitpoint = _x;

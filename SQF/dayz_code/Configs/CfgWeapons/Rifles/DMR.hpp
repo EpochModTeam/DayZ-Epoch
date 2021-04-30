@@ -1,9 +1,9 @@
-class DMR_DZ : DMR
+class DMR_DZ : DMR // Works with NVG
 {
 	displayName = $STR_DZ_WPN_DMR_NAME;
 	
 	//A2OA DMR does not allow NVG after 2018-04-05 CorePatch
-	visionMode[] = {"Normal", "NVG"};
+	visionMode[] = {};
 	
 	class Attachments
 	{
