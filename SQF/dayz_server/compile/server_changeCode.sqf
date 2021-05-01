@@ -40,7 +40,7 @@ if (Z_singleCurrency) then {_coins = _object getVariable ["cashMoney",0];};
 [_objectID,_objectUID,_object] call server_deleteObjDirect;
 
 _holder = _lockedClass createVehicle [0,0,0];
-_holder setDir _dir;
+//_holder setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 _holder setVariable ["memDir",_dir,true];
 _holder setVectorDirAndUp _vector;
 _holder setPosATL _pos;
