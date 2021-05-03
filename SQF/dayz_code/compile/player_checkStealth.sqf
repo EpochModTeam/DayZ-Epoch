@@ -1,4 +1,4 @@
-private ["_scalePose","_scaleMvmt","_scaleLight","_initial"];
+private["_vel","_speed","_pos","_isPZombie","_anim","_anim4","_scaleSound","_nearFlare","_scaler","_nearLight","_nearFire","_building","_isPlayerInside","_audial"];
 _vel = velocity (vehicle player);
 _speed = (_vel distance [0,0,0]);
 _pos = getPosATL player;
