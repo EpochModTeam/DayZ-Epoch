@@ -19,28 +19,31 @@ _cfg = (ConfigFile >> "CfgMagazines" >> _this);
 if (!isClass(_cfg)) exitWith
 {
 	diag_log format ["DAYZ ERROR: Invalid magazine classname given to player_emptyContainer: %1", _this];
+	dayz_actionInProgress=false;
 };
 
 //class isn't a consumable
 if (!isText(_cfg >> "containerEmpty")) exitWith
 {
 	diag_log format ["DAYZ ERROR: Non-emptiable item classname given to player_emptyContainer: %1", _this];
+	dayz_actionInProgress=false;
 };
 
 //player is on a ladder
 if ((getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1) exitWith
 {
 	(localize "str_player_21") call dayz_rollingMessages;
+	dayz_actionInProgress=false;
 };
 
 //player doesn't have the consumable item
-if (!(_this in magazines player)) exitWith { localize "str_misplaced_container" call dayz_rollingMessages; };
+if (!(_this in magazines player)) exitWith { localize "str_misplaced_container" call dayz_rollingMessages; dayz_actionInProgress=false;};
 
 [player,(getPosATL player),5,"refuel"] spawn fnc_alertZombies;
 player playActionNow "PutDown";
 
 //Remove container
-player removeMagazine _this;
+if!([[_this,1]]call player_checkAndRemoveItems)exitWith{"Error, item missing"call dayz_rollingMessages;dayz_actionInProgress=false;};
 player addMagazine getText (_cfg >> "containerEmpty");
 
 //update gear ui or close if the player is in a vehicle
