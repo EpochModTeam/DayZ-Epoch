@@ -2,7 +2,7 @@
         Created exclusively for ArmA2:OA - DayZMod.
         Please request permission to use/alter/distribute from project leader (R4Z0R49) AND the author (facoptere@gmail.com)
 */
-private [];
+private ["_unit","_type"];
 //_start = diag_tickTime;
 
 _unit = _this select 0;
