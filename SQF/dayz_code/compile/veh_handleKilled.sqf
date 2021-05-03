@@ -1,4 +1,4 @@
-_unit = _this select 0;
+local _unit = _this select 0;
 //_killer = _this select 1;
 
 // ask server to set global damage to 1, save to the hive
