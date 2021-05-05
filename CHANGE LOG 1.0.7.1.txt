@@ -1,4 +1,7 @@
-[FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @AirwavesMan
+[FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
-[FIXED] MK12 SPR and DMR had always night vision optics even when the player had no NVG. (6f7a17ca) @AirwavesMan
+[FIXED] MK12 SPR and DMR had always night vision optics even when the player had no NVG. (6f7a17ca) @Voltan, @AirwavesMan
+[FIXED] DayZ Mod gates could not be removed. (2bbb126a) @Aschalder, @AirwavesMan
+[FIXED] The AK74 taped magazine could not be used with the AN94. (31c4a0a7) @Schalldampfer, @AirwavesMan
+[FIXED] Dupe with player_emptyContainer and dayz_actionInProgress bug. (44c94541) @F507DMT, @AirwavesMan
