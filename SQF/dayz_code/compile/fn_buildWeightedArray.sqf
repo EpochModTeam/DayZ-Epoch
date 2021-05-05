@@ -18,9 +18,9 @@ scriptName "Functions\arrays\fn_selectRandomWeighted.sqf";
 	[*] Algorithm is inefficient?
 */
 
-private["_weighted"];
+private["_weights","_weighted","_weight"];
 
-_array = _this select 0;
+// _array = _this select 0;
 _weights = _this select 1;
 
 /*
@@ -34,7 +34,6 @@ if ((count _array) > (count _weights)) exitWith {debugLog "Log: [selectRandomWei
 _weighted = [];
 for "_i" from 0 to ((count _weights) - 1) do
 {
-	private ["_weight"];
 	_weight = _weights select _i;
 
 	//Ensure the weight is a Number.
