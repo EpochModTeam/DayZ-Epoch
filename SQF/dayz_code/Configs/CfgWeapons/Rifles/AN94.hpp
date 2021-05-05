@@ -11,7 +11,12 @@ class AN94_DZ: AK_74
 	dexterity = 1.7;
 	displayName = $STR_DZ_WPN_AN94_NAME;
 	reloadMagazineSound[] = {"\RH_aks\sound\an94_reload.wss",0.056234,1,20};
-	magazines[] = {"30Rnd_545x39_AK","75Rnd_545x39_RPK"};
+	magazines[] =
+	{
+		30Rnd_545x39_AK,
+		60Rnd_545x39_AK_Taped,
+		75Rnd_545x39_RPK
+	};
 	modes[] = {"Single","Burst","Fullauto"};
 	class Single: Mode_SemiAuto
 	{
