@@ -78,6 +78,7 @@ class WoodenGate_1_DZ: DZE_Housebase
 	};
 
 	lockable = 3;
+	removeoutput[] = {{"ItemComboLock",1}};
 };
 
 class WoodenGate_2_DZ: DZE_Housebase
@@ -139,6 +140,7 @@ class WoodenGate_2_DZ: DZE_Housebase
 	};
 	
 	lockable = 3;
+	removeoutput[] = {{"ItemComboLock",1}};
 };
 
 class WoodenGate_3_DZ: DZE_Housebase
@@ -200,6 +202,7 @@ class WoodenGate_3_DZ: DZE_Housebase
 	};
 	
 	lockable = 3;
+	removeoutput[] = {{"ItemComboLock",1}};
 };
 
 class WoodenGate_4_DZ: DZE_Housebase
@@ -260,4 +263,5 @@ class WoodenGate_4_DZ: DZE_Housebase
 	};
 	
 	lockable = 3;
+	removeoutput[] = {{"ItemComboLock",1}};
 };

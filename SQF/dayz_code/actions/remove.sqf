@@ -33,7 +33,7 @@ _objectUID = _obj getVariable ["ObjectUID","0"];
 _isOk = true;
 _proceed = false;
 _objType = typeOf _obj;
-if (_objType in DZE_DoorsLocked) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
+if (_objType in DZE_DoorsLocked && !(_objType in ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"])) exitWith {dayz_actionInProgress = false; localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;};
 
 // Chance to break tools
 _isDestructable = _obj isKindOf "BuiltItems";
@@ -77,7 +77,7 @@ _nameVehicle = getText(configFile >> "CfgVehicles" >> _objType >> "displayName")
 format[localize "str_epoch_player_162",_nameVehicle] call dayz_rollingMessages;
 
 if (_isModular && {_objType in _x} count DZE_modularConfig == 0) then {
-     localize "STR_EPOCH_ACTIONS_21" call dayz_rollingMessages;
+    localize "STR_EPOCH_ACTIONS_21" call dayz_rollingMessages;
 };
 
 // Alert zombies once.
