@@ -30739,11 +30739,6 @@
 			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
 			<Russian>Учёный (Жёлт. рад. костюм)</Russian>
 		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
-			<English>Stalker (Rookie)</English>
-			<German>Stalker (Anfänger)</German>
-			<Russian>Сталкер (Новичок)</Russian>
-		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
 			<English>Stalker (Loner)</English>
 			<Russian>Сталкер (Одиночка)</Russian>
@@ -30836,16 +30831,6 @@
 			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
 			<Russian>Учёный (Жёлт. рад. костюм)</Russian>
 		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_NAME">
-			<English>Stalker (Rookie)</English>
-			<German>Stalker (Anfänger)</German>
-			<Russian>Сталкер (Новичок)</Russian>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
-		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
-		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
-			<Russian>Комплект поношенной одежды, подходящей для апокалиптического окружения.</Russian>
-		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
 			<English>Stalker (Loner)</English>
 			<Russian>Сталкер (Одиночка)</Russian>

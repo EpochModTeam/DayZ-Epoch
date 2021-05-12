@@ -169,7 +169,6 @@ stalkerclothes[] = {
 	{Loot_MAGAZINE,	1,	Skin_gsc_scientist2_DZ},
 	{Loot_MAGAZINE,	1,	Skin_gsc_scientist2W_DZ},
 	{Loot_MAGAZINE,	1,	Skin_gsc_scientist2_head_DZ},
-	//{Loot_MAGAZINE,	1,	Skin_gsc_cloth_loner_head_DZ}, has some rpt errors, it is up to server admins to add it, skin still works
 	{Loot_MAGAZINE,	1,	Skin_gsc_eco_stalker_mask_neutral_DZ},
 	{Loot_MAGAZINE,	1,	Skin_gsc_eco_stalker_mask_neutralW_DZ},
 	{Loot_MAGAZINE,	1,	Skin_gsc_eco_stalker_head_neutral_DZ},

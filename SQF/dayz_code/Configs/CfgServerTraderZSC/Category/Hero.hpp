@@ -354,7 +354,6 @@ class Category_5 {
 	class Skin_gsc_scientist2_DZ {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};	
 	class Skin_gsc_scientist2W_DZ {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};	
 	class Skin_gsc_scientist2_head_DZ {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};	
-	class Skin_gsc_cloth_loner_head_DZ {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};	
 	class Skin_gsc_eco_stalker_mask_neutral_DZ {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};	
 	class Skin_gsc_eco_stalker_mask_neutralW_DZ {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};	
 	class Skin_gsc_eco_stalker_head_neutral_DZ {type = "trade_items";buy[] = {-1,"worth"};sell[] = {100,"worth"};};	

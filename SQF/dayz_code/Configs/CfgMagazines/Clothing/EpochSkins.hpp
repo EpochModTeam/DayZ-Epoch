@@ -742,13 +742,6 @@ class Skin_gsc_scientist2_head_DZ : SkinBase {
 	sex = "male";
 	playerModel = "gsc_scientist2_head_DZ";	
 };
-class Skin_gsc_cloth_loner_head_DZ : SkinBase {
-	scope = 2;
-	displayName = $STR_DZE_EQUIP_STALKER_ROOKIE_NAME;
-	descriptionShort = $STR_DZE_EQUIP_STALKER_ROOKIE_DESC;
-	sex = "male";
-	playerModel = "gsc_cloth_loner_head_DZ";	
-};
 class Skin_gsc_eco_stalker_mask_neutral_DZ : SkinBase {
 	scope = 2;
 	displayName = $STR_DZE_EQUIP_STALKER_LONER_MASK_NAME;
