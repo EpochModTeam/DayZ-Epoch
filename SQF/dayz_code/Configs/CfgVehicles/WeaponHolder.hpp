@@ -70,7 +70,7 @@ class WeaponHolder_MeleeMachete: WeaponHolderBase
 };
 class WeaponHolder_ItemJerrycanEmpty : WeaponHolderBase {
 	scope = 2;
-	displayName = "$STR_EQUIP_NAME_39";
+	displayName = $STR_ITEM_NAME_JERRYCAN_EMPTY;
 	model = "\dayz_equip\proxy\jerrycan_side.p3d";
 	destrType = "DestructNo";
 	
@@ -221,7 +221,7 @@ class WeaponHolder_M4A1 : WeaponHolderBase {
 
 class WeaponHolder_ItemTent : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_20;
+	displayName = $STR_EQUIP_NAME_CAMPING_TENT;
 	model = "\dayz_equip\proxy\tentbag.p3d";
 	destrType = "DestructNo";
 	
@@ -232,7 +232,7 @@ class WeaponHolder_ItemTent : WeaponHolderBase {
 
 class WeaponHolder_ItemFlashlight : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_5;
+	displayName = $STR_EQUIP_NAME_FLASHLIGHT;
 	model = "\dayz_equip\proxy\flashlight.p3d";
 	destrType = "DestructNo";
 	
@@ -243,7 +243,7 @@ class WeaponHolder_ItemFlashlight : WeaponHolderBase {
 
 class WeaponHolder_ItemFlashlightRed : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_6;
+	displayName = $STR_EQUIP_NAME_FLASHLIGHT_MILITARY;
 	model = "\dayz_equip\proxy\flashlight_mil.p3d";
 	destrType = "DestructNo";
 	
@@ -254,7 +254,7 @@ class WeaponHolder_ItemFlashlightRed : WeaponHolderBase {
 
 class WeaponHolder_ItemWaterbottle : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_12;
+	displayName = $STR_EQUIP_NAME_WATER_BOTTLE;
 	model = "\dayz_equip\proxy\waterbottle.p3d";
 	destrType = "DestructNo";
 	
@@ -276,7 +276,7 @@ class WeaponHolder_ItemGenerator : WeaponHolderBase {
 
 class WeaponHolder_ItemToolbox : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_2;
+	displayName = $STR_EQUIP_NAME_TOOLBOX;
 	model = "\dayz_equip\proxy\toolbox.p3d";
 	destrType = "DestructNo";
 	
@@ -287,7 +287,7 @@ class WeaponHolder_ItemToolbox : WeaponHolderBase {
 
 class WeaponHolder_PartFueltank : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_8;
+	displayName = $STR_EQUIP_NAME_FUELTANK;
 	model = "\dayz_equip\proxy\fueltank.p3d";
 	destrType = "DestructNo";
 	
@@ -298,7 +298,7 @@ class WeaponHolder_PartFueltank : WeaponHolderBase {
 
 class WeaponHolder_PartWheel : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_9;
+	displayName = $STR_EQUIP_NAME_CAR_WHEEL;
 	model = "\dayz_equip\proxy\wheel.p3d";
 	destrType = "DestructNo";
 	
@@ -309,7 +309,7 @@ class WeaponHolder_PartWheel : WeaponHolderBase {
 
 class WeaponHolder_PartGeneric : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_10;
+	displayName = $STR_EQUIP_NAME_SCRAP_METAL;
 	model = "\dayz_equip\proxy\genericparts.p3d";
 	destrType = "DestructNo";
 	
@@ -320,7 +320,7 @@ class WeaponHolder_PartGeneric : WeaponHolderBase {
 
 class WeaponHolder_PartVRotor : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_32;
+	displayName = $STR_EQUIP_NAME_MAIN_ROTOR;
 	model = "\dayz_equip\proxy\vrotor.p3d";
 	destrType = "DestructNo";
 	
@@ -331,7 +331,7 @@ class WeaponHolder_PartVRotor : WeaponHolderBase {
 
 class WeaponHolder_PartEngine : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_11;
+	displayName = $STR_EQUIP_NAME_ENGINE;
 	model = "\dayz_equip\proxy\engine.p3d";
 	destrType = "DestructNo";
 	
@@ -342,7 +342,7 @@ class WeaponHolder_PartEngine : WeaponHolderBase {
 
 class WeaponHolder_PartGlass : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_30;
+	displayName = $STR_EQUIP_NAME_WINDSCREEN_GLASS;
 	model = "\dayz_equip\proxy\carglass.p3d";
 	destrType = "DestructNo";
 	
@@ -540,7 +540,7 @@ class WeaponHolder_ItemBucket : WeaponHolderBase {
 
 class WeaponHolder_ItemJerrycan : WeaponHolderBase {
 	scope = 2;
-	displayName = $STR_EQUIP_NAME_19;
+	displayName = $STR_ITEM_NAME_JERRYCAN;
 	model = "\dayz_equip\proxy\jerrycan.p3d";
 	destrType = "DestructNo";
 	

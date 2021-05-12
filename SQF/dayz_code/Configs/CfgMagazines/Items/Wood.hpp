@@ -37,7 +37,7 @@ class ItemLog : CA_Magazine
 		};
 		class Crafting2
 		{
-			text = $STR_EQUIP_NAME_40;//"Wood Piles"
+			text = $STR_EQUIP_NAME_WOOD_PILE;//"Wood Piles"
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {}; 
 			requiretools[] = {"ItemHatchet"};
@@ -79,7 +79,7 @@ class ItemPlank : CA_Magazine
 	{
 		class Crafting
 		{
-			text = $STR_EQUIP_NAME_40;//"Wood Piles"
+			text = $STR_EQUIP_NAME_WOOD_PILE;//"Wood Piles"
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {}; 
 			requiretools[] = {"ItemHatchet"};
@@ -141,8 +141,8 @@ class PartWoodPile : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\woodPile.p3d";
 	picture = "\dayz_equip\textures\equip_woodPile_ca.paa";
-	displayName = $STR_EQUIP_NAME_40;
-	descriptionShort = $STR_EQUIP_DESC_40;
+	displayName = $STR_EQUIP_NAME_WOOD_PILE;
+	descriptionShort = $STR_EQUIP_DESC_WOOD_PILE;
 	
 	class ItemActions 
 	{

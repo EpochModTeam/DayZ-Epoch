@@ -162,6 +162,10 @@ class ItemHatchetBroken
 {
 	weight = 1;
 };
+class ItemHatchetBlunt  
+{
+	weight = 1;
+};
 class ItemCrowbar  
 {
 	weight = 1;
@@ -197,6 +201,10 @@ class Item1Matchbox
 class ItemMatchboxEmpty  
 {
 	weight = 0.001;
+};
+class ItemMatchboxWet  
+{
+	weight = 0.009;
 };
 class ItemToolbox   
 {

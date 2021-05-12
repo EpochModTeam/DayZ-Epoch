@@ -3,8 +3,8 @@ class ItemSodaEmpty : HandGrenade
 	scope = 2;	
 	model = "\dayz_equip\models\soda_coke_e.p3d";
 	picture = "\dayz_equip\textures\equip_soda_empty_ca.paa";
-	displayName = $STR_EQUIP_NAME_35;
-	descriptionShort = $STR_EQUIP_DESC_35;	
+	displayName = $STR_EQUIP_NAME_EMPTY_SODA_CAN;
+	descriptionShort = $STR_EQUIP_DESC_EMPTY_SODA_CAN;	
 	ammo = "SodaCan";
 	
 	class ItemActions
@@ -31,8 +31,8 @@ class TrashTinCan : HandGrenade
 	scope = 2;	
 	model = "\dayz_equip\models\trash_tincan.p3d";
 	picture = "\dayz_equip\textures\equip_tincan_ca.paa";
-	displayName = $STR_EQUIP_NAME_33;
-	descriptionShort = $STR_EQUIP_DESC_33;	
+	displayName = $STR_EQUIP_NAME_EMPTY_TIN_CAN;
+	descriptionShort = $STR_EQUIP_DESC_EMPTY_TIN_CAN;	
 	ammo = "TinCan";
 	
 	class ItemActions

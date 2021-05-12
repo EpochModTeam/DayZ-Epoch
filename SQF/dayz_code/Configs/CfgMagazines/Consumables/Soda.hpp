@@ -3,8 +3,8 @@ class ItemSodaCoke : ItemSoda
 	scope = 2;	
 	model = "\dayz_equip\models\soda_coke.p3d";
 	picture = "\dayz_equip\textures\equip_soda_coke_ca.paa";
-	displayName = $STR_EQUIP_NAME_36a;
-	descriptionShort = $STR_EQUIP_DESC_36;	
+	displayName = $STR_EQUIP_NAME_SODA_CAN_COKE;
+	descriptionShort = $STR_EQUIP_DESC_SODA_CAN;	
 	Nutrition[] = {90,0,300,0};
 };
 
@@ -13,8 +13,8 @@ class ItemSodaPepsi : ItemSoda
 	scope = 2;	
 	model = "\dayz_equip\models\soda_pepsi.p3d";
 	picture = "\dayz_equip\textures\equip_soda_pepsi_ca.paa";
-	displayName = $STR_EQUIP_NAME_36b;
-	descriptionShort = $STR_EQUIP_DESC_36;	
+	displayName = $STR_EQUIP_NAME_SODA_CAN_PEPSI;
+	descriptionShort = $STR_EQUIP_DESC_SODA_CAN;	
 	Nutrition[] = {90,0,300,0};
 };
 
@@ -23,8 +23,8 @@ class ItemSodaMdew : ItemSoda
 	scope = 2;	
 	model = "\dayz_equip\models\soda_mdew.p3d";
 	picture = "\dayz_equip\textures\equip_soda_mdew_ca.paa";
-	displayName = $STR_EQUIP_NAME_37;
-	descriptionShort = $STR_EQUIP_NAME_37;	
+	displayName = $STR_EQUIP_NAME_MOUNTAIN_DEW;
+	descriptionShort = $STR_EQUIP_DESC_MOUNTAIN_DEW;	
 	Nutrition[] = {90,0,400,0};
 };
 
@@ -110,12 +110,11 @@ class ItemSodaLemonade : ItemSoda
 
 class ItemSodaLirik : ItemSoda
 {
-	scope = 2;
-	
+	scope = 2;	
 	model = "z\addons\dayz_communityassets\models\soda_lirik_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_lirik_clean_full_ca.paa";
-	displayName = $STR_EQUIP_NAME_36a;
-	descriptionShort = $STR_EQUIP_DESC_36;	
+	displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7;
+	descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_7;	
 	Nutrition[] = {90,0,300,0};	
 	consumeOutput = "ItemSodaLirikEmpty";
 };
@@ -147,8 +146,8 @@ class ItemSodaPeppsy : ItemSoda
 	scope = 2;	
 	model = "z\addons\dayz_communityassets\models\soda_peppsy_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_soda_peppsy_clean_full_ca.paa";
-	displayName = $STR_EQUIP_NAME_36b;
-	descriptionShort = $STR_EQUIP_DESC_36;	
+	displayName = $STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10;
+	descriptionShort = $STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10;	
 	Nutrition[] = {90,0,300,0};	
 	consumeOutput = "ItemSodaPeppsyEmpty";
 };

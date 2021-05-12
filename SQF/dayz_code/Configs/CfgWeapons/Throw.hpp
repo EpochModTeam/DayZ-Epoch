@@ -60,7 +60,7 @@ class Throw : GrenadeLauncher
 	
 	class ChemLightMuzzle : ThrowMuzzle
 	{
-		displayName = $STR_MAG_ACTION_5;
+		displayName = $STR_MAG_ACTION_CHEMLIGHT;
 		magazines[] = {"HandChemGreen", "HandChemRed", "HandChemBlue"};
 	};
 	

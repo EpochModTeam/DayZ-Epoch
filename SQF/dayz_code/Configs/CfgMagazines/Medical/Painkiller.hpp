@@ -5,8 +5,8 @@ class ItemPainkiller : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\med_painkiller_gear.p3d";
 	picture = "\dayz_equip\textures\equip_painkiller_ca.paa";
-	displayName = $STR_EQUIP_NAME_18;
-	descriptionShort = $STR_EQUIP_DESC_18;
+	displayName = $STR_EQUIP_NAME_PAINKILLER;
+	descriptionShort = $STR_EQUIP_DESC_PAINKILLER;
 	
 	class medical
 	{

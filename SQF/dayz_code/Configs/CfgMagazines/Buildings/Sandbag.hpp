@@ -5,8 +5,8 @@ class ItemSandbag : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\sandbags.p3d";
 	picture = "\dayz_equip\textures\equip_sandbag_ca.paa";
-	displayName = $STR_EQUIP_NAME_21;
-	descriptionShort = $STR_EQUIP_DESC_21;
+	displayName = $STR_EQUIP_NAME_SANDBAGS;
+	descriptionShort = $STR_EQUIP_DESC_SANDBAGS;
 	
 	class ItemActions
 	{

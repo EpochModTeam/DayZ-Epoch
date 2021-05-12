@@ -388,8 +388,8 @@ class FoodCanBakedBeans : FoodPackaged
 	scope = 2;	
 	model = "\dayz_equip\models\food_bbtin.p3d";
 	picture = "\dayz_equip\textures\equip_bbtin_ca.paa";
-	displayName = $STR_EQUIP_NAME_26;
-	descriptionShort = $STR_EQUIP_DESC_26;	
+	displayName = $STR_EQUIP_NAME_BAKED_BEANS;
+	descriptionShort = $STR_EQUIP_DESC_BAKED_BEANS;	
 	bloodRegen = 100;
 	Nutrition[] = {0,400,320,0};	
 	consumeOutput = "FoodCanUnlabeledEmpty";
@@ -400,8 +400,8 @@ class FoodCanSardines : FoodPackaged
 	scope = 2;	
 	model = "\dayz_equip\models\food_sardinestin.p3d";
 	picture = "\dayz_equip\textures\equip_Sardinestin_ca.paa";
-	displayName = $STR_EQUIP_NAME_27;
-	descriptionShort = $STR_EQUIP_DESC_27;	
+	displayName = $STR_EQUIP_NAME_SARDINES;
+	descriptionShort = $STR_EQUIP_DESC_SARDINES;	
 	bloodRegen = 100;
 	Nutrition[] = {0,450,320,0};	
 	consumeOutput = "FoodCanUnlabeledEmpty";
@@ -412,8 +412,8 @@ class FoodCanFrankBeans : FoodPackaged
 	scope = 2;	
 	model = "\dayz_equip\models\food_fbtin.p3d";
 	picture = "\dayz_equip\textures\equip_fbtin_ca.paa";
-	displayName = $STR_EQUIP_NAME_28;
-	descriptionShort = $STR_EQUIP_DESC_28;	
+	displayName = $STR_EQUIP_NAME_FRANK_BEANS;
+	descriptionShort = $STR_EQUIP_DESC_FRANK_BEANS;	
 	bloodRegen = 100;
 	Nutrition[] = {0,450,320,0};	
 	consumeOutput = "FoodCanUnlabeledEmpty";
@@ -424,8 +424,8 @@ class FoodCanPasta : FoodPackaged
 	scope = 2;	
 	model = "\dayz_equip\models\food_pastatin.p3d";
 	picture = "\dayz_equip\textures\equip_pastatin_ca.paa";
-	displayName = $STR_EQUIP_NAME_29;
-	descriptionShort = $STR_EQUIP_DESC_29;	
+	displayName = $STR_EQUIP_NAME_PASTA;
+	descriptionShort = $STR_EQUIP_DESC_PASTA;	
 	bloodRegen = 100;
 	Nutrition[] = {0,500,0,0};	
 	consumeOutput = "FoodCanUnlabeledEmpty";

@@ -5,8 +5,8 @@ class PartGeneric : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\genericparts.p3d";
 	picture = "\dayz_equip\textures\equip_genericparts_ca.paa";
-	displayName = $STR_EQUIP_NAME_10;
-	descriptionShort = $STR_EQUIP_DESC_10;
+	displayName = $STR_EQUIP_NAME_SCRAP_METAL;
+	descriptionShort = $STR_EQUIP_DESC_SCRAP_METAL;
 	
 	class ItemActions 
 	{
