@@ -1,3 +1,4 @@
+[ADDED] Blunt hatchet and wet box of matches. (69408ab3) @AirwavesMan
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -5,3 +6,6 @@
 [FIXED] DayZ Mod gates could not be removed. (2bbb126a) @Aschalder, @AirwavesMan
 [FIXED] The AK74 taped magazine could not be used with the AN94. (31c4a0a7) @Schalldampfer, @AirwavesMan
 [FIXED] Dupe with player_emptyContainer and dayz_actionInProgress bug. (44c94541) @F507DMT, @AirwavesMan
+[FIXED] Remove the iron sight view from the RK95 ACOG since it does not work. (ee259c4a) @IsGoose, @AirwavesMan
+[FIXED] Some building wrecks could not be removed. (b43279cd) @Seelenapparat, @AirwavesMan
+[REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @Seelenapparat, @AirwavesMan
