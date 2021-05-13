@@ -1032,11 +1032,15 @@
 			<Russian>Починить топор</Russian>
 			<German>Beil reparieren</German>
 		</Key>
-		<Key ID="STR_ACTIONS_FIX_KNIFE">
+		<Key ID="STR_ACTIONS_SHARPEN_HATCHET">
+			<English>Sharpen Hatchet</English>
+			<German>Beil schleifen</German>
+		</Key>
+		<Key ID="STR_ACTIONS_SHARPEN_KNIFE">
 			<English>Sharpen Knife</English>
 			<Russian>Заточить нож</Russian>
 			<German>Messer schleifen</German>
-		</Key>
+		</Key>		
 		<Key ID="STR_ACTIONS_FIX_PICKAXE">
 			<English>Fix Pickaxe</English>
 			<Russian>Починить кирку</Russian>
@@ -1858,114 +1862,6 @@
 			<Czech>Pro údržbu budovy schází %1.</Czech>
 			<German>%1 fehlt, um das Objekt zu warten.</German>
 		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_M16A4">
-			<English>Attach to M16A4</English>
-			<Russian>Установить на M16A4</Russian>
-			<Czech>Připevnit k M16A4</Czech>
-			<German>An M16A4 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_M16A2">
-			<English>Attach to M16A2</English>
-			<Russian>Установить на M16A2</Russian>
-			<Czech>Připevnit k M16A2</Czech>
-			<German>An M16A2 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_SA58">
-			<English>Attach to Sa-58</English>
-			<Russian>Установить на Sa-58</Russian>
-			<Czech>Připevnit k Sa-58</Czech>
-			<German>An Sa-58 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_M4">
-			<English>Attach to M4A1</English>
-			<Russian>Установить на M4A1</Russian>
-			<Czech>Připevnit k M4A1</Czech>
-			<German>An M4A1 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_BELT">
-			<English>Attach belt</English>
-			<Russian>Закрепить патронташ</Russian>
-			<Czech>Připevnit pás</Czech>
-			<German>Gurt anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_CCO">
-			<English>Attach CCO</English>
-			<Russian>Установить CCO</Russian>
-			<Czech>Připevnit CCO</Czech>
-			<German>CCO anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_CROSSBOW">
-			<English>Attach to Crossbow</English>
-			<Russian>Установить на арбалет</Russian>
-			<Czech>Připevnit ke kuši</Czech>
-			<German>An Armbrust anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_FL">
-			<English>Attach flashlight</English>
-			<Russian>Установить фонарь</Russian>
-			<Czech>Připevnit baterku</Czech>
-			<German>Taschenlampe anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_AK74">
-			<English>Attach to AK-74</English>
-			<Russian>Установить на AK-74</Russian>
-			<Czech>Připevnit k AK-74</Czech>
-			<German>An AK-74 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_L85A2">
-			<English>Attach to L85A2</English>
-			<Russian>Установить на L85A2</Russian>
-			<Czech>Připevnit k L85A2</Czech>
-			<German>An L85A2 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_M8">
-			<English>Attach to M8</English>
-			<Russian>Установить на M8</Russian>
-			<Czech>Připevnit k M8</Czech>
-			<German>An M8 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_SCAR">
-			<English>Attach to SCAR</English>
-			<Russian>Установить на SCAR</Russian>
-			<Czech>Připevnit k SCAR</Czech>
-			<German>An SCAR anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_SCOPE">
-			<English>Attach Scope</English>
-			<Russian>Установить прицел</Russian>
-			<Czech>Připevnit puškohled</Czech>
-			<German>Zielfernrohr anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_MAKAROV">
-			<English>Attach to Makarov</English>
-			<Russian>Установить на Макаров</Russian>
-			<Czech>Připevnit k Makarov</Czech>
-			<German>An Makarov anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_M9">
-			<English>Attach to M9</English>
-			<Russian>Установить на M9</Russian>
-			<Czech>Připevnit k M9</Czech>
-			<German>An M9 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_BIZON">
-			<English>Attach to Bizon</English>
-			<Russian>Установить на Бизон</Russian>
-			<Czech>Připevnit k Bizon</Czech>
-			<German>An Bizon anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_MP5">
-			<English>Attach to MP5</English>
-			<Russian>Установить на MP5</Russian>
-			<Czech>Připevnit k MP5</Czech>
-			<German>An MP5 anbringen</German>
-		</Key>
-		<Key ID="STR_ACTIONS_ATTACH_M14">
-			<English>Attach to M14</English>
-			<Russian>Установить на M14</Russian>
-			<Czech>Připevnit k M14</Czech>
-			<German>An M14 anbringen</German>
-		</Key>
 		<Key ID="STR_ACTIONS_BRACE_LEG">
 			<English>Brace Leg</English>
 			<Russian>Зафиксировать ногу</Russian>
@@ -2573,17 +2469,17 @@
 			<German>Einige steril verpackte Mullbinden.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_equip_empty_barrel">
-			<English>Empty Barrel</English>
-			<German>Leeres Fass</German>
-			<Russian>Ствол</Russian>
-			<Spanish>Barril Vacío</Spanish>
-			<French>Tonneau vide</French>
-			<Czech>Prázdný barel</Czech>
+			<English>Barrel (empty)</English>
+			<German>Fass (leer)</German>
+			<Russian>бочка (пустая)</Russian>
+			<Spanish>Barril (vacío)</Spanish>
+			<French>Tonneau (vide)</French>
+			<Czech>Barel (prázdný)</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_equip_empty_barrel">
 			<English>A barrel that has been emptied of its content</English>
 			<German>Ein Fass, welches bereits geleert wurde.</German>
-			<Russian>Ствол без обвеса.</Russian>
+			<Russian>бочка без обвеса.</Russian>
 			<Spanish>Un barril que su contenido fue descargado</Spanish>
 			<French>Un tonneau vidé de son contenu</French>
 			<Czech>Sud, který někdo vyprázdnil.</Czech>
@@ -3011,154 +2907,10 @@
 			<French>Du fil</French>
 			<Czech>Kratší provázek</Czech>
 		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_ACG_M16">
-			<English>[A] ACOG (M16)</English>
-			<Russian>[М] ACOG (M16)</Russian>
-			<Spanish>ACG (Accesorio)</Spanish>
-			<French>ACG (Fixation)</French>
-			<Czech>Příslušenství - ACOG pro M16</Czech>
-			<German>ACOG-Zielfernrohr</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_ACG_M16">
-			<English>ACOG attachment that can be attached to M16A4.</English>
-			<Russian>ACOG - стандартный оптический прицел для стрельбы на среднюю дальность.</Russian>
-			<Spanish>Mira ACG (Accesorio)</Spanish>
-			<French>ACG (Fixation)</French>
-			<Czech>Advanced Combat Optics Gunsight, používá se pro vylepšení M16A4.</Czech>
-			<German>Advanced Combat Optics Gunsight, ein Zielfernrohr amerikanischer Bauart.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_ACG_SA58">
-			<English>[A] ACOG (Sa-58)</English>
-			<Russian>[М] ACOG (Sa-58)</Russian>
-			<Spanish>ACG (Accesorio)</Spanish>
-			<French>ACG (Fixation)</French>
-			<Czech>Příslušenství - ACOG pro Sa-58</Czech>
-			<German>ACOG-Zielfernrohr</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_ACG_SA58">
-			<English>ACOG attachment that can be attached to Sa-58.</English>
-			<Russian>ACOG - стандартный оптический прицел для стрельбы на среднюю дальность.</Russian>
-			<Spanish>Mira ACG (Accesorio)</Spanish>
-			<French>ACG (Fixation)</French>
-			<Czech>Advanced Combat Optics Gunsight, používá se pro vylepšení Sa-58.</Czech>
-			<German>Advanced Combat Optics Gunsight, ein Zielfernrohr amerikanischer Bauart.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_Silencer">
-			<English>[A] Suppressor</English>
-			<Russian>[М] Глушитель</Russian>
-			<Spanish>Silenciador (Accesorio)</Spanish>
-			<French>Silencieux (Fixation)</French>
-			<Czech>Příslušenství - Tlumič</Czech>
-			<German>Schalldämpfer</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_Silencer">
-			<English>Suppressor Attachment</English>
-			<Russian>Приспособление для бесшумной стрельбы.</Russian>
-			<Spanish>Silenciador (Accesorio)</Spanish>
-			<French>Silencieux (Fixation)</French>
-			<Czech>Tlumič pro střelné zbraně, používá se pro jejich vylepšení.</Czech>
-			<German>Ein Schalldämpfer für Schusswaffen.</German>
-		</Key>
 		<Key ID="STR_ATTACHMENT_RMVE_Silencer">
 			<English>Remove Suppressor</English>
 			<Russian>Снять глушитель</Russian>
 			<German>Schalldämpfer entfernen</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_Pso">
-			<English>[A] PSO</English>
-			<Russian>[М] ПСО</Russian>
-			<Spanish>PSO (Accesorio)</Spanish>
-			<French>PSO (Fixation)</French>
-			<Czech>Příslušenství - PSO</Czech>
-			<German>PSO-Zielfernrohr</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_Pso">
-			<English>PSO ATTACHMENT</English>
-			<Russian>ПСО-1 (Прицел снайперский оптический) — один из основных прицелов советского и российского снайперского вооружения.</Russian>
-			<Spanish>Mira PSO (Accesorio)</Spanish>
-			<French>PSO (Fixation)</French>
-			<Czech>Ruský zaměřovač PSO-1, používá se pro vylepšení zbraní.</Czech>
-			<German>Ein russisches Zielfernrohr vom Typ PSO-1.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_Kobra">
-			<English>[A] KOBRA</English>
-			<Russian>[М] Кобра</Russian>
-			<Spanish>KOBRA (Accesorio)</Spanish>
-			<French>KOBRA (Fixation)</French>
-			<Czech>Příslušenství - KOBRA</Czech>
-			<German>KOBRA Rotpunktvisier</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_Kobra">
-			<English>Can be mounted on the AK 74.</English>
-			<Russian>Электронно-коллиматорный прицел «Кобра».</Russian>
-			<Spanish>Mira KOBRA (Accesorio)</Spanish>
-			<French>KOBRA (Fixation)</French>
-			<Czech>Ruský zaměřovač KOBRA, používá se pro vylepšení AK-74.</Czech>
-			<German>Russisches Rotpunktvisier vom Typ KOBRA.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_GL">
-			<English>[A] GL</English>
-			<Russian>[М] Подствольник</Russian>
-			<Spanish>GL (Accesorio)</Spanish>
-			<French>GL (Fixation)</French>
-			<Czech>Příslušenství - granátomet</Czech>
-			<German>GL-Visier</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_GL">
-			<English>A grenade launcher to upgrade your weapons.</English>
-			<Russian>Подствольный гранатомёт — гранатомёт, выполненный в виде дополнительного узла, устанавливаемого на ручное оружие, обычно — на автомат.</Russian>
-			<Spanish>Lanzador de Granadas (Accesorio)</Spanish>
-			<French>GL (Fixation)</French>
-			<Czech>Podvěsný granátomet, používá se pro vylepšení zbraní.</Czech>
-			<German>Russiches Grünpunktvisier.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_CAMO_M4">
-			<English>[A] Camo (M4)</English>
-			<Russian>[М] Камуфляж (M4)</Russian>
-			<Spanish>Camuflaje (Accesorio)</Spanish>
-			<French>Camouflage (Fixation)</French>
-			<Czech>Příslušenství - kamufláž pro M4</Czech>
-			<German>Tarnmaterial</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_CAMO_M4">
-			<English>Camo paint for M4A1 with AIM.</English>
-			<Russian>Камуфляж для M4A1 с ССО.</Russian>
-			<Spanish>Camuflaje para armas (Accesorio)</Spanish>
-			<French>Camouflage (Fixation)</French>
-			<Czech>Používá se pro vylepšení M4A1 s CCO.</Czech>
-			<German>Material zur Tarnung einer M4A1 mit AIM.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_AIM_M4A1">
-			<English>[A] AIM (M4)</English>
-			<Russian>[М] AIM (M4)</Russian>
-			<Spanish>AIM (Accesorio)</Spanish>
-			<French>AIM (Fixation)</French>
-			<Czech>Příslušenství - CCO pro M4</Czech>
-			<German>CCO Rotpunktvisier</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_AIM_M4A1">
-			<English>AIM attachment that can be attached to M4A1.</English>
-			<Russian>Прицел AIM для M4.</Russian>
-			<Spanish>Mira AIM (Accesorio)</Spanish>
-			<French>AIM (Fixation)</French>
-			<Czech>Kolimátor Close Combat Optics, používá se pro vylepšení M4A1.</Czech>
-			<German>Close Combat Optics (CCO), Rotpunktvisier amerikanischer Bauart für die M4.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_AIM_SA58">
-			<English>[A] AIM (Sa-58)</English>
-			<Russian>[М] AIM (Sa-58)</Russian>
-			<Spanish>AIM (Accesorio)</Spanish>
-			<French>AIM (Fixation)</French>
-			<Czech>Příslušenství - CCO pro Sa-58</Czech>
-			<German>CCO Rotpunktvisier</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_AIM_SA58">
-			<English>AIM attachment that can be attached to Sa-58.</English>
-			<Russian>Прицел AIM для Sa-58.</Russian>
-			<Spanish>Mira AIM (Accesorio)</Spanish>
-			<French>AIM (Fixation)</French>
-			<Czech>Kolimátor Close Combat Optics, používá se pro vylepšení Sa-58.</Czech>
-			<German>Close Combat Optics, Rotpunktvisier amerikanischer Bauart für die Sa-58.</German>
 		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_BELT">
 			<English>[A] Ammo belt</English>
@@ -3172,42 +2924,6 @@
 			<Czech>Nábojový pás, používá se pro vylepšení zbraní.</Czech>
 			<German>Munitionsgürtel für schnelleres Nachladen.</German>
 		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_CCO_RED">
-			<English>[A] CCO RedDot</English>
-			<Russian>[М] CCO</Russian>
-			<Czech>Příslušenství - CCO</Czech>
-			<German>[E] CCO Rotpunktvisier</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_CCO_RED">
-			<English>CCO RedDot Attachment</English>
-			<Russian>Прицел CCO - оптический прицел для стрельбы на короткие дистанции.</Russian>
-			<Czech>Kolimátor Close Combat Optics, používá se pro vylepšení zbraní.</Czech>
-			<German>Close Combat Optics, Rotpunktvisier amerikanischer Bauart.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_CCO_RED_CROSSBOW">
-			<English>[A] Crossbow CCO</English>
-			<Russian>[М] CCO (арбалет)</Russian>
-			<Czech>Příslušenství - CCO pro kuši</Czech>
-			<German>[E] Armbrust CCO Rotpunktvisier</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_CCO_RED_CROSSBOW">
-			<English>Fits a Compound Crossbow.</English>
-			<Russian>CCO прицел для арбалета.</Russian>
-			<Czech>Kolimátor Close Combat Optics, používá se pro vylepšení kuše.</Czech>
-			<German>CCO Rotpunktvisier für eine Armbrust.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_FL">
-			<English>[A] Flashlight</English>
-			<Russian>[М] Фонарик</Russian>
-			<Czech>Příslušenství - baterka</Czech>
-			<German>[E] Taschenlampen-Erweiterung</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_FL">
-			<English>FlashLight Attachment.</English>
-			<Russian>Фонарик на оружие.</Russian>
-			<Czech>Baterka, používá se pro vylepšení zbraní.</Czech>
-			<German>Taschenlampen-Erweiterung für Schusswaffen.</German>
-		</Key>
 		<Key ID="STR_ATTACHMENT_NAME_SCOPE">
 			<English>[A] Scoped Sight</English>
 			<Russian>[М] Прицел</Russian>
@@ -3220,68 +2936,6 @@
 			<Czech>Puškohled, používá se pro vylepšení zbraní.</Czech>
 			<German>Zielfernrohr-Erweiterung für Schusswaffen.</German>
 		</Key>
-
-		<Key ID="STR_ATTACHMENT_NAME_SILENCER_M9">
-			<English>[A] Silencer (M9)</English>
-			<Russian>[М] 9мм глушитель (М9)</Russian>
-			<Czech>Příslušenství - tlumič pro M9</Czech>
-			<German>[E] M9 Schalldämpfer</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_SILENCER_M9">
-			<English>A silencer that can be attached to M9.</English>
-			<Russian>Прибор бесшумной стрельбы для М9.</Russian>
-			<Czech>Tlumič, používá se pro vylepšení pistole M9.</Czech>
-			<German>Ein Schalldämpfer, der an eine M9 angebracht werden kann.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_SILENCER_M4">
-			<English>[A] Silencer (M4A1)</English>
-			<Russian>[М] Глушитель (M4А1)</Russian>
-			<Czech>Příslušenství - tlumič pro M4A1</Czech>
-			<German>[E] M4A1 Schalldämpfer</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_SILENCER_M4">
-			<English>A silencer that can be attached to an M4A1 that already has AIM and camo.</English>
-			<Russian>Прибор бесшумной стрельбы для M4A1.</Russian>
-			<Czech>Tlumič, používá se pro vylepšení M4A1, jež již má CCO a kamufláž.</Czech>
-			<German>Ein Schalldämpfer, der an eine M4A1 angebracht werden kann.</German>
-		</Key>
-
-		<Key ID="STR_ATTACHMENT_NAME_SILENCER_SCAR">
-			<English>[A] Silencer (SCAR)</English>
-			<Russian>[М] Глушитель (SCAR)</Russian>
-			<Czech>Příslušenství - tlumič pro SCAR</Czech>
-			<German>[E] SCAR Schalldämpfer</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_SILENCER_SCAR">
-			<English>A silencer that can be attached to SCAR CQC.</English>
-			<Russian>Прибор бесшумной стрельбы для SCAR CQC.</Russian>
-			<Czech>Tlumič, používá se pro vylepšení SCAR CQC.</Czech>
-			<German>Ein Schalldämpfer, der an eine SCAR CQC angebracht werden kann.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_SILENCER_MP5">
-			<English>[A] Silencer (MP5)</English>
-			<Russian>[М] 9мм глушитель (MP5)</Russian>
-			<Czech>Příslušenství - tlumič pro MP5</Czech>
-			<German>[E] MP5 Schalldämpfer</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_SILENCER_MP5">
-			<English>A silencer that can be attached to MP5A5.</English>
-			<Russian>Прибор бесшумной стрельбы для MP5A5.</Russian>
-			<Czech>Tlumič, používá se pro vylepšení samopalu MP5A5.</Czech>
-			<German>Ein Schalldämpfer, der an eine MP5A5 angebracht werden kann.</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_NAME_SCOPE_M14">
-			<English>[A] Scope (M14)</English>
-			<Russian>[М] Прицел (M14)</Russian>
-			<Czech>Příslušenství - dalekohled pro M14</Czech>
-			<German>[E] M14 Zielfernrohr</German>
-		</Key>
-		<Key ID="STR_ATTACHMENT_DESC_SCOPE_M14">
-			<English>A sniper scope that can be attached to M14 AIM.</English>
-			<Russian>Прицел, который можно установить на M14.</Russian>
-			<Czech>Puškohled, používá se pro vylepšení pušky M14 AIM.</Czech>
-			<German>Ein Scharfschützen-Zielfernrohr für die M14 AIM.</German>
-		</Key>
 		<Key ID="STR_CREATE_STASH">
 			<English>Create Stash</English>
 			<German>Lagergrube ausheben</German>
@@ -3290,7 +2944,7 @@
 			<French>Créer une planque</French>
 			<Czech>Postavit skrýš</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_1">
+		<Key ID="STR_EQUIP_NAME_ETOOL">
 			<English>Entrenching Tool</English>
 			<German>Klappspaten</German>
 			<Russian>Сапёрная лопатка</Russian>
@@ -3298,12 +2952,12 @@
 			<French>Outil de tranchée</French>
 			<Czech>Polní lopatka</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_1_BROKEN">
+		<Key ID="STR_EQUIP_NAME_ETOOL_BROKEN">
 			<English>Broken Entrenching Tool</English>
 			<German>Kaputter Klappspaten</German>
 			<Russian>Сломанная сапёрная лопатка</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_1">
+		<Key ID="STR_EQUIP_DESC_ETOOL">
 			<English>Collapsible spade used together with the engineering backpack to create field defences.</English>
 			<German>Ein Klappspaten, welcher beim Verschanzen und für viele Bautätigkeiten benötigt wird.</German>
 			<Russian>Сапёрная лопатка используется вместе с инженерным ранцем для создания оборонительных сооружений.</Russian>
@@ -3311,12 +2965,12 @@
 			<French>Une pelle démontable permettant de construire des éléments de défense.</French>
 			<Czech>Polní lopatka se používá při stavbě obranných postavení. Pokud jste SpecNaz, umíte s ní zabít.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_1_BROKEN">
+		<Key ID="STR_EQUIP_DESC_ETOOL_BROKEN">
 			<English>Broken collapsible spade that must be repaired.</English>
 			<German>Ein kaputter Klappspaten, welcher repariert werden muss.</German>
 			<Russian>Сломанная сапёрная лопатка, которую необходимо починить.</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_1b">
+		<Key ID="STR_EQUIP_NAME_SHOVEL">
 			<English>Shovel</English>
 			<German>Schaufel</German>
 			<Russian>Лопата</Russian>
@@ -3324,7 +2978,7 @@
 			<French>Pelle</French>
 			<Czech>Lopata</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_1b">
+		<Key ID="STR_EQUIP_DESC_SHOVEL">
 			<English>A shovel is a tool for digging, lifting, and moving bulk materials.</English>
 			<German>Eine Schaufel, mit welcher man Löcher graben kann.</German>
 			<Russian>Лопата — ручной инструмент для работы (копание, расчистка, перенос) с грунтом.</Russian>
@@ -3332,17 +2986,17 @@
 			<French>Oui une pelle c&apos;est fait pour creuser.</French>
 			<Czech>Lopata se používá hlavně pro kopání děr.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_1b_BROKEN">
+		<Key ID="STR_EQUIP_NAME_SHOVEL_BROKEN">
 			<English>Broken Shovel</English>
 			<German>Kaputte Schaufel</German>
 			<Russian>Сломанная лопата</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_1b_BROKEN">
+		<Key ID="STR_EQUIP_DESC_SHOVEL_BROKEN">
 			<English>Too much force has broken this Shovel. Hopefully you find something to repair it.</English>
 			<German>Rohe Kraft hat diese Schaufel zerstört. Hoffentlich findest du etwas zum Reparieren.</German>
 			<Russian>Слишком много сил было приложено к этой лопате. Возможно вы найдёте что-нибудь, чтобы её починить.</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_2">
+		<Key ID="STR_EQUIP_NAME_TOOLBOX">
 			<English>Toolbox</English>
 			<German>Werkzeugkasten</German>
 			<Russian>Набор инструментов</Russian>
@@ -3350,12 +3004,12 @@
 			<French>Boîte à outils</French>
 			<Czech>Sada nástrojů</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_2_BROKEN">
+		<Key ID="STR_EQUIP_NAME_TOOLBOX_BROKEN">
 			<English>Broken Toolbox</English>
 			<German>Kaputter Werkzeugkasten</German>
 			<Russian>Сломанный набор инструментов</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_2">
+		<Key ID="STR_EQUIP_DESC_TOOLBOX">
 			<English>Toolbox that can be used for repairing damaged vehicles and equipment.</English>
 			<German>Eine Kiste mit Werkzeugen, welche zum Reparieren beschädigter Fahrzeuge und Ausrüstung verwendet werden können.</German>
 			<Russian>Набор инструментов используется для ремонта повреждённой техники и снаряжения, а также установки укреплений.</Russian>
@@ -3363,7 +3017,7 @@
 			<French>Boîte à outils servant à réparer le matériel et les véhicules.</French>
 			<Czech>Sada nástrojů se používá pro opravy poškozených vozidel a vybavení.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_2_BROKEN">
+		<Key ID="STR_EQUIP_DESC_TOOLBOX_BROKEN">
 			<English>A broken toolbox that must be repaired.</English>
 			<German>Ein kaputter Werkzeugkasten, welcher repariert werden muss.</German>
 			<Russian>Сломанный набор инструментов, который необходимо починить.</Russian>
@@ -3392,7 +3046,7 @@
 			<French>Il me semble qu&apos;il manque un kit de transfusion.</French>
 			<Czech>Zdá se, že chybí transfúzní souprava.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_3">
+		<Key ID="STR_EQUIP_NAME_MATCHES">
 			<English>Box of Matches</English>
 			<German>Streichhölzer</German>
 			<Russian>Коробок спичек</Russian>
@@ -3440,7 +3094,15 @@
 			<French>Boîte d&apos;allumettes (1 reste)</French>
 			<Czech>Krabička zápalek (1 zbývající)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_3_A">
+		<Key ID="STR_EQUIP_DESC_MATCHES">
+			<English>Box of safety matches for starting a fire under controlled conditions.</English>
+			<German>Eine Schachtel Streichhölzer. Von Kindern fernhalten.</German>
+			<Russian>Коробок спичек используется для разведения огня.</Russian>
+			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
+			<French>Boîte d&apos;allumettes suédoises permettant d&apos;allumer un feu.</French>
+			<Czech>Balíček bezpečnostních zápalek pro zapálení ohně. Udržujte z dosahu dětí.</Czech>
+		</Key>		
+		<Key ID="STR_EQUIP_DESC_MATCHES_5">
 			<English>Box of safety matches for starting a fire under controlled conditions. 5 Matches left.</English>
 			<Russian>Коробок с пятью спичками.</Russian>
 			<Spanish>5 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
@@ -3448,7 +3110,7 @@
 			<Czech>Zbývá 5 zápalek. Udržujte z dosahu dětí.</Czech>
 			<German>Eine Schachtel Streichhölzer mit 5 übrigen Streichhölzern.</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_3_B">
+		<Key ID="STR_EQUIP_DESC_MATCHES_4">
 			<English>Box of safety matches for starting a fire under controlled conditions. 4 Matches left.</English>
 			<Russian>Коробок с четырьмя спичками.</Russian>
 			<Spanish>4 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
@@ -3456,7 +3118,7 @@
 			<Czech>Zbývají 4 zápalky. Udržujte z dosahu dětí.</Czech>
 			<German>Eine Schachtel Streichhölzer mit 4 übrigen Streichhölzern.</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_3_C">
+		<Key ID="STR_EQUIP_DESC_MATCHES_3">
 			<English>Box of safety matches for starting a fire under controlled conditions. 3 Matches left.</English>
 			<Russian>Коробок с тремя спичками.</Russian>
 			<Spanish>3 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
@@ -3464,7 +3126,7 @@
 			<Czech>Zbývají 3 zápalky. Udržujte z dosahu dětí.</Czech>
 			<German>Eine Schachtel Streichhölzer mit 3 übrigen Streichhölzern.</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_3_D">
+		<Key ID="STR_EQUIP_DESC_MATCHES_2">
 			<English>Box of safety matches for starting a fire under controlled conditions. 2 Matches left.</English>
 			<Russian>Коробок с парой спичек.</Russian>
 			<Spanish>2 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
@@ -3472,7 +3134,7 @@
 			<Czech>Zbývají 2 zápalky. Udržujte z dosahu dětí.</Czech>
 			<German>Eine Schachtel Streichhölzer mit 2 übrigen Streichhölzern.</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_3_E">
+		<Key ID="STR_EQUIP_DESC_MATCHES_1">
 			<English>Box of safety matches for starting a fire under controlled conditions. 1 Match left.</English>
 			<Russian>Одна спичка в коробке.</Russian>
 			<Spanish>1 Partidos de Izquierda. Caja de seguridad de juegos compatibles para iniciar un incendio en condiciones controladas.</Spanish>
@@ -3480,15 +3142,15 @@
 			<Czech>Zbývá 1 zápalka. Udržujte z dosahu dětí.</Czech>
 			<German>Eine Schachtel Streichhölzer mit 1 übrigen Streichholz.</German>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_3_EMPTY">
-			<English>Empty Box of Matches</English>
-			<German>Leere Schachtel Streichhölzer</German>
+		<Key ID="STR_EQUIP_NAME_MATCHES_EMPTY">
+			<English>Box of Matches (empty)</English>
+			<German>Schachtel Streichhölzer (leer)</German>
 			<Russian>Пустой коробок спичек</Russian>
 			<Czech>Prázdná krabička zápalek</Czech>
 			<Spanish>Caja vacía de Resultados</Spanish>
 			<French>Boîte d&apos;allumettes vide</French>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_3_EMPTY">
+		<Key ID="STR_EQUIP_DESC_MATCHES_EMPTY">
 			<English>Empty Box of safety matches.</English>
 			<German>Eine Schachtel Streichhölzer. Sie ist bereits leer.</German>
 			<Russian>Абсолютно пустой коробок спичек. Выбрасывайте!</Russian>
@@ -3496,15 +3158,23 @@
 			<Spanish>Caja vacía de Resultados</Spanish>
 			<French>Boîte d&apos;allumettes vide</French>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_3">
-			<English>Box of safety matches for starting a fire under controlled conditions.</English>
-			<German>Eine Schachtel Streichhölzer. Von Kindern fernhalten.</German>
-			<Russian>Коробок спичек используется для разведения огня.</Russian>
-			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
-			<French>Boîte d&apos;allumettes suédoises permettant d&apos;allumer un feu.</French>
-			<Czech>Balíček bezpečnostních zápalek pro zapálení ohně. Udržujte z dosahu dětí.</Czech>
+		<Key ID="STR_EQUIP_NAME_MATCHES_WET">
+			<English>Box of Matches (wet)</English>
+			<German>Streichholzschachtel (nass)</German>
+			<Russian>Коробка промокших спичек</Russian>
+			<Spanish>Caja de Fósforos Mojada</Spanish>
+			<French>Boîte d&apos;Allumettes mouillées</French>
+			<Czech>Krabička mokrých zápalek</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_4">
+		<Key ID="STR_EQUIP_DESC_MATCHES_WET">
+			<English>Box of wet matches.</English>
+			<German>Eine Schachtel Sicherheitszündhölzer. Die Schachtel ist nass geworden und unbrauchbar.</German>
+			<Russian>Коробка промокших спичек.</Russian>
+			<Spanish>Caja de fósforos mojada.</Spanish>
+			<French>Boîte d&apos;Allumettes mouillées.</French>
+			<Czech>Krabička plná mokrých zápalek.</Czech>
+		</Key>		
+		<Key ID="STR_EQUIP_NAME_KNIFE">
 			<English>Hunting Knife</English>
 			<German>Jagdmesser</German>
 			<Russian>Охотничий нож</Russian>
@@ -3512,7 +3182,7 @@
 			<French>Couteau de chasseur</French>
 			<Czech>Lovecký nůž</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_4">
+		<Key ID="STR_EQUIP_DESC_KNIFE">
 			<English>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</English>
 			<German>Ein Jadgmesser, welches zum Ausnehmen von erlegtem Wild verwendet werden kann.</German>
 			<Russian>Нож можно использовать для разделки туш животных.</Russian>
@@ -3520,37 +3190,53 @@
 			<French>Un couteau servant à dépecer le gibier.</French>
 			<Czech>Nůž, který se používá pro kuchání zvířat.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_4_A">
+		<Key ID="STR_EQUIP_DESC_KNIFE_5">
 			<English>Your knife appears to be too blunt. (Maybe 5 uses left).</English>
 			<Russian>Похоже, нож тупится. Осталось 5 использований.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak pětkrát.</Czech>
-			<German>Dein Messer scheint stumpf zu werden. (Vielleicht noch 5 Anwendungen möglich)</German>
+			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 5 Anwendungen möglich)</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_4_B">
+		<Key ID="STR_EQUIP_DESC_KNIFE_4">
 			<English>Your knife appears to be too blunt. (Maybe 4 uses Left).</English>
 			<Russian>Похоже, нож тупится. Осталось 4 использования.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak čtyřikrát.</Czech>
-			<German>Dein Messer scheint stumpf zu werden. (Vielleicht noch 4 Anwendungen möglich)</German>
+			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 4 Anwendungen möglich)</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_4_C">
+		<Key ID="STR_EQUIP_DESC_KNIFE_3">
 			<English>Your knife appears to be too blunt. (Maybe 3 uses Left).</English>
 			<Russian>Похоже, нож тупится. Осталось 3 использования.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak třikrát.</Czech>
-			<German>Dein Messer scheint stumpf zu werden. (Vielleicht noch 3 Anwendungen möglich)</German>
+			<German>Dein Jagdmesser scheint stumpf zu werden. (Vielleicht noch 3 Anwendungen möglich)</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_4_D">
+		<Key ID="STR_EQUIP_DESC_KNIFE_2">
 			<English>Your knife appears to be too blunt. (Maybe 2 uses Left).</English>
 			<Russian>Похоже, нож тупится. Осталось пара использований.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak dvakrát.</Czech>
-			<German>Dein Messer ist fast stumpf. (Vielleicht noch 2 Anwendungen möglich)</German>
+			<German>Dein Jagdmesser ist fast stumpf. (Vielleicht noch 2 Anwendungen möglich)</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_4_E">
+		<Key ID="STR_EQUIP_DESC_KNIFE_1">
 			<English>Your Knife appears to be too blunt. (Maybe 1 uses Left).</English>
 			<Russian>Похоже, нож тупится. Можно воспользоваться ещё разок.</Russian>
 			<Czech>Tento nůž je tupý. Půjde ho použít ještě asi tak jednou.</Czech>
-			<German>Dein Messer ist so gut wie stumpf. (Vielleicht noch 1 Anwendung möglich)</German>
+			<German>Dein Jagdmesser ist so gut wie stumpf. (Vielleicht noch 1 Anwendung möglich)</German>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_5">
+		<Key ID="STR_EQUIP_NAME_KNIFE_DULL">
+			<English>Hunting Knife (dull)</English>
+			<German>Jagdmesser (stumpf)</German>
+			<Russian>Затупившийся нож</Russian>
+			<Spanish>Cuchillo Desafilado</Spanish>
+			<French>Couteau émoussé</French>
+			<Czech>Tupý nůž</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_KNIFE_DULL">
+			<English>Your Knife appears to be too dull.</English>
+			<German>Dein Jagdmesser ist durch häufigen Gebrauch stumpf geworden.</German>
+			<Russian>Ваш нож слишком туп, чтобы его использовать.</Russian>
+			<Spanish>Tu cuchillo parece estar muy desafilado.</Spanish>
+			<French>Votre couteau semble trop émoussé</French>
+			<Czech>Vypadá to, že tento nůž je příliš tupý.</Czech>
+		</Key>		
+		<Key ID="STR_EQUIP_NAME_FLASHLIGHT">
 			<English>Flashlight</English>
 			<German>Taschenlampe</German>
 			<Russian>Фонарик</Russian>
@@ -3558,12 +3244,12 @@
 			<French>Lampe torche</French>
 			<Czech>Baterka</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_5_BROKEN">
+		<Key ID="STR_EQUIP_NAME_FLASHLIGHT_BROKEN">
 			<English>Broken Flashlight</English>
 			<German>Kaputte Taschenlampe</German>
 			<Russian>Сломанный фонарик</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_5">
+		<Key ID="STR_EQUIP_DESC_FLASHLIGHT">
 			<English>Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>
 			<German>Batteriebetriebene Taschenlampe, benötigte Batterien: 2x R20/D</German>
 			<Russian>Фонарик питается двумя батарейками типа D.</Russian>
@@ -3571,12 +3257,12 @@
 			<French>Lampe torche à piles.&lt;br/&gt;Piles: 2 x Type D</French>
 			<Czech>Klasická baterka na baterie&lt;br/&gt;Baterie: 2xD</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_5_BROKEN">
+		<Key ID="STR_EQUIP_DESC_FLASHLIGHT_BROKEN">
 			<English>A broken Battery-powered Flashlight that must be repaired.</English>
 			<German>Eine kaputte batteriebetriebene Taschenlampe, welche repariert werden muss.</German>
 			<Russian>Сломанный фонарик на батарейках, который необходимо починить.</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_6">
+		<Key ID="STR_EQUIP_NAME_FLASHLIGHT_MILITARY">
 			<English>Flashlight (Military)</English>
 			<German>Militärtaschenlampe</German>
 			<Russian>Армейский фонарик</Russian>
@@ -3584,12 +3270,12 @@
 			<French>Lampe torche (Mil.)</French>
 			<Czech>Baterka (Vojenská)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_6_BROKEN">
+		<Key ID="STR_EQUIP_NAME_FLASHLIGHT_MILITARY_BROKEN">
 			<English>Broken Flashlight (Military)</English>
 			<German>Kaputte Militärtaschenlampe</German>
 			<Russian>Сломанный армейский фонарик</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_6">
+		<Key ID="STR_EQUIP_DESC_FLASHLIGHT_MILITARY">
 			<English>Military Red-light Battery-powered Flashlight&lt;br/&gt;Batteries: 2 x D-size</English>
 			<German>Militärische, batteriebetriebene Rotlichtlampe, benötigte Batterien: 2x R20/D</German>
 			<Russian>Армейский фонарик светит красным светом и питается двумя батарейками типа D.</Russian>
@@ -3597,12 +3283,12 @@
 			<French>Lampe torche militaire à piles, lumière rouge.&lt;br/&gt;Piles: 2 x Type D</French>
 			<Czech>Vojenská baterka s červeným světlem na baterie&lt;br/&gt;Baterie: 2xD</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_6_BROKEN">
+		<Key ID="STR_EQUIP_DESC_FLASHLIGHT_MILITARY_BROKEN">
 			<English>A broken military Red-light that must be repaired.</English>
 			<German>Eine kaputte militärische, batteriebetriebene Rotlichtlampe, welche repariert werden muss.</German>
 			<Russian>Сломанный армейский фонарик на батарейках, который необходимо починить.</Russian>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_7">
+		<Key ID="STR_EQUIP_NAME_BANDAGE">
 			<English>Bandage</English>
 			<German>Verbandszeug</German>
 			<Russian>Бинт</Russian>
@@ -3610,7 +3296,7 @@
 			<French>Pansement</French>
 			<Czech>Obvaz</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_7">
+		<Key ID="STR_EQUIP_DESC_BANDAGE">
 			<English>Joint Services standard first aid dressing. Used to stop bleeding of wounds.</English>
 			<German>Militärisches Verbandszeug, NATO-Standard. Wird zum Stillen von blutenden Wunden verwendet.</German>
 			<Russian>Упаковка армейских бинтов. Используются для перевязки ран.</Russian>
@@ -3618,7 +3304,7 @@
 			<French>Pansement de premier secours, norme OTAN. Utilisé pour stopper une hémorragie.</French>
 			<Czech>Obvaz podle standartů NATO. Slouží pro zastavení krvácení.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_8">
+		<Key ID="STR_EQUIP_NAME_FUELTANK">
 			<English>Fueltank Parts</English>
 			<German>Treibstofftankteile</German>
 			<Russian>Бензобак</Russian>
@@ -3626,7 +3312,7 @@
 			<French>Réservoir</French>
 			<Czech>Palivová nádrž</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_8">
+		<Key ID="STR_EQUIP_DESC_FUELTANK">
 			<English>An old fueltank that could be used to repair a vehicle with a broken one.</English>
 			<German>Ein alter Treibstofftank, mit dem eventuell der kaputte Tank eines Fahrzeugs repariert werden könnte.</German>
 			<Russian>Бензобак, запчасти из которого можно использовать для ремонта техники.</Russian>
@@ -3634,7 +3320,7 @@
 			<French>Un réservoir d&apos;occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Náhradní díly pro opravu palivové nádrže u vašeho vozidla.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_9">
+		<Key ID="STR_EQUIP_NAME_CAR_WHEEL">
 			<English>Car Wheel</English>
 			<German>Reifen</German>
 			<Russian>Колесо</Russian>
@@ -3642,7 +3328,7 @@
 			<French>Roue</French>
 			<Czech>Kolo auta</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_9">
+		<Key ID="STR_EQUIP_DESC_CAR_WHEEL">
 			<English>An old Car Wheel that could be used to repair a vehicle with a broken one.</English>
 			<German>Ein alter Reifen, welcher eventuell den kaputten Reifen eines Fahrzeugs ersetzen könnte.</German>
 			<Russian>Колесо, которое можно использовать для починки одного колеса на автомобиле.</Russian>
@@ -3650,7 +3336,7 @@
 			<French>Une roue d&apos;occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Staré kolo, které se hodí, pokud jste zrovna píchli.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_10">
+		<Key ID="STR_EQUIP_NAME_SCRAP_METAL">
 			<English>Scrap Metal</English>
 			<German>Metallteile</German>
 			<Russian>Металлолом</Russian>
@@ -3658,7 +3344,7 @@
 			<French>Bouts de métal</French>
 			<Czech>Kovový šrot</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_10">
+		<Key ID="STR_EQUIP_DESC_SCRAP_METAL">
 			<English>Scrap metal and assorted mechanical spares. Useful for repairing vehicles and equipment.</English>
 			<German>Metallteile und verschiedene mechanische Ersatzteile. Sie können nützlich beim Reparieren von Fahrzeugen und Ausrüstung sein.</German>
 			<Russian>Металлолом, используемый для починки оборудования или корпуса техники.</Russian>
@@ -3666,7 +3352,7 @@
 			<French>Divers bouts de métal pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Různé kovové a mechanické díly. Užitečné pro opravu libovolného vozidla.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_11">
+		<Key ID="STR_EQUIP_NAME_ENGINE">
 			<English>Engine Parts</English>
 			<German>Motorteile</German>
 			<Russian>Двигатель</Russian>
@@ -3674,7 +3360,7 @@
 			<French>Bloc moteur</French>
 			<Czech>Díly motoru</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_11">
+		<Key ID="STR_EQUIP_DESC_ENGINE">
 			<English>Engine components with oil and lubricant. Everything you would need to repair an engine.</English>
 			<German>Motorteile mit Öl und Schmiere. Alles, was man zum Reparieren eines Motors braucht ist dabei.</German>
 			<Russian>Двигатель, запчасти из которого используются для ремонта двигателей в технике.</Russian>
@@ -3682,7 +3368,7 @@
 			<French>Un moteur ainsi que de l&apos;huile et du lubrifiant. Tout le nécessaire pour changer un moteur.</French>
 			<Czech>Náhraní díly motoru včetně oleje. Vše, co je potřeba k tomu, aby váš motor zase běžel jako hodinky.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_30">
+		<Key ID="STR_EQUIP_NAME_WINDSCREEN_GLASS">
 			<English>Windscreen Glass</English>
 			<German>Autoglas</German>
 			<Russian>Автомобильное стекло</Russian>
@@ -3690,7 +3376,7 @@
 			<French>Vitre</French>
 			<Czech>Autosklo</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_30">
+		<Key ID="STR_EQUIP_DESC_WINDSCREEN_GLASS">
 			<English>Brand new auto glass. Could be used to repair glass on a vehicle.</English>
 			<German>Gut erhaltenes Autoglas, welches zum Reparieren von Fahrzeugscheiben verwendet werden kann.</German>
 			<Russian>Новое автомобильное стекло в упаковке. Его можно установить на технику.</Russian>
@@ -3698,7 +3384,7 @@
 			<French>Vitre neuve. Permet de réparer un véhicule.</French>
 			<Czech>Zcela nové autosklo. Lze použít pro opravu vozidla.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_32">
+		<Key ID="STR_EQUIP_NAME_MAIN_ROTOR">
 			<English>Main Rotor Assembly</English>
 			<German>Hauptrotorteile</German>
 			<Russian>Ротор несущего винта</Russian>
@@ -3706,7 +3392,7 @@
 			<French>Rotor d&apos;hélico</French>
 			<Czech>Hlavní rotor</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_32">
+		<Key ID="STR_EQUIP_DESC_MAIN_ROTOR">
 			<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in helicopters.</English>
 			<German>Hydrauliksysteme für einen Helikopter, welche zum Reparieren kaputter Rotorwellen in Helikoptern verwendet werden können.</German>
 			<Russian>Набор запчастей для починки лопастей винтов и вала главного ротора для вертолёта.</Russian>
@@ -3714,7 +3400,7 @@
 			<French>Colonne de rotor d&apos;hélicoptère. Permet de réparer un hélicoptère qui a un de ses rotors cassé.</French>
 			<Czech>Hlavní rotor pro vrtulníky. Lze použít při opravě rotoru libovolného vrtulníku.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_12">
+		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE">
 			<English>Water Bottle</English>
 			<German>Wasserflasche</German>
 			<Russian>Бутылка (вода)</Russian>
@@ -3722,7 +3408,7 @@
 			<French>Bouteille</French>
 			<Czech>Láhev s vodou</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_12">
+		<Key ID="STR_EQUIP_DESC_WATER_BOTTLE">
 			<English>A bottle of water that has been filled and can be consumed.</English>
 			<German>Eine Flasche gefüllt mit Trinkwasser.</German>
 			<Russian>Наполненная водой пластиковая бутылка. Вода сомнительного качества.</Russian>
@@ -3730,7 +3416,7 @@
 			<French>Bouteille (pleine)</French>
 			<Czech>Plná láhev vody, kterou lze vypít.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_13">
+		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE_EMPTY">
 			<English>Water Bottle (Empty)</English>
 			<German>Wasserflasche (Leer)</German>
 			<Russian>Бутылка (пустая)</Russian>
@@ -3743,7 +3429,7 @@
 			<Russian>Опустошить</Russian>
 			<German>Ausleeren</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_13">
+		<Key ID="STR_EQUIP_DESC_WATER_BOTTLE_EMPTY">
 			<English>A bottle of water that is empty. It might be useful to fill it with water again.</English>
 			<German>Eine leere Wasserflasche. Sie könnte nützlich sein, um sie wieder mit Wasser zu füllen.</German>
 			<Russian>Пустая бутылка, которую можно наполнить водой.</Russian>
@@ -3751,7 +3437,7 @@
 			<French>Une Bouteille vide. Il serait bien de la remplir à nouveau.</French>
 			<Czech>Prázdná láhev na vodu. Může být znovu naplněna.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_14">
+		<Key ID="STR_EQUIP_NAME_EPI_PEN">
 			<English>Epi-Pen</English>
 			<German>Epinephrin-Autoinjektor</German>
 			<Russian>Адреналин</Russian>
@@ -3759,7 +3445,7 @@
 			<French>Adrénaline</French>
 			<Czech>Adrenalin</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_14">
+		<Key ID="STR_EQUIP_DESC_EPI_PEN">
 			<English>Epinephrine Autoinjector. Used for intramuscular injection to revive unconscious casualties.</English>
 			<German>Epinephrin-Autoinjektor zur intramuskulären Injektion bei Bewusstlosigkeit.</German>
 			<Russian>Инъекция адреналина для приведения в чувство людей без сознания.</Russian>
@@ -3767,7 +3453,7 @@
 			<French>Adrénaline en auto-injection intra-musculaire "Epipen". Permet de se remettre d&apos;une perte de conscience.</French>
 			<Czech>Injekce adrenalinu (epinefrinu). Používá se pro probrání osoby z bezvědomí.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_15">
+		<Key ID="STR_EQUIP_NAME_MORPHINE">
 			<English>Morphine Auto-Injector</English>
 			<German>Morphin-Autoinjektor</German>
 			<Russian>Морфий</Russian>
@@ -3775,7 +3461,7 @@
 			<French>Morphine</French>
 			<Czech>Morfium</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_15">
+		<Key ID="STR_EQUIP_DESC_MORPHINE">
 			<English>Morphine Autoinjector. Used for intramuscular injection to manage severe pain such as those from fractures.</English>
 			<German>Morphin-Autoinjektor zur intramuskulären Injektion bei extremen Schmerzen, etwa von Knochenbrüchen.</German>
 			<Russian>Морфий используется для местного обезболивания при переломах.</Russian>
@@ -3783,7 +3469,7 @@
 			<French>Morphine en auto-injection intra-musculaire. Permet de traiter les douleurs aiguees, comme les fractures.</French>
 			<Czech>Injekce morfia, kterou lze použít proti silné bolesti jako jsou např. zlomené kosti. Pozor na závislost.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_16">
+		<Key ID="STR_EQUIP_NAME_BLOOD_BAG">
 			<English>Blood Bag</English>
 			<German>Blutkonserve</German>
 			<Russian>Пакет крови</Russian>
@@ -3791,7 +3477,7 @@
 			<French>Poche de sang</French>
 			<Czech>Krevní vak</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_16">
+		<Key ID="STR_EQUIP_DESC_BLOOD_BAG">
 			<English>Bag of blood used for administering a Blood transfusion.</English>
 			<German>Eine Blutkonserve für eine Bluttransfusion.</German>
 			<Russian>Пакет крови используется для переливания при кровопотерях.</Russian>
@@ -3799,7 +3485,7 @@
 			<French>Sang permettant de transfuser un co-équipier.</French>
 			<Czech>Krevní vak, který se používá pro krevní transfúzi.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_17">
+		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS">
 			<English>Antibiotics</English>
 			<German>Antibiotikum</German>
 			<Russian>Антибиотики</Russian>
@@ -3807,6 +3493,14 @@
 			<French>Antibiotiques</French>
 			<Czech>Antibiotika</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_ANTIBIOTICS">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</English>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird.</German>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций.</Russian>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales.</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes.</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi.</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_6">
 			<English>Antibiotics (6 left)</English>
 			<German>Antibiotikum (6 übrig)</German>
@@ -3815,6 +3509,14 @@
 			<French>Antibiotiques (6 reste)</French>
 			<Czech>Antibiotika (6 zbývající)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_ANTIBIOTICS_6">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 6 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 6 таблеток.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (6 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (6 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (6 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (6 zbývající)</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_5">
 			<English>Antibiotics (5 left)</English>
 			<German>Antibiotikum (5 übrig)</German>
@@ -3823,6 +3525,14 @@
 			<French>Antibiotiques (5 reste)</French>
 			<Czech>Antibiotika (5 zbývající)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_ANTIBIOTICS_5">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 5 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 5 таблеток.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (5 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (5 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (5 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (5 zbývající)</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_4">
 			<English>Antibiotics (4 left)</English>
 			<German>Antibiotikum (4 übrig)</German>
@@ -3831,6 +3541,14 @@
 			<French>Antibiotiques (4 reste)</French>
 			<Czech>Antibiotika (4 zbývající)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_ANTIBIOTICS_4">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 4 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 4 таблетки.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (4 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (4 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (4 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (4 zbývající)</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_3">
 			<English>Antibiotics (3 left)</English>
 			<German>Antibiotikum (3 übrig)</German>
@@ -3839,6 +3557,14 @@
 			<French>Antibiotiques (3 reste)</French>
 			<Czech>Antibiotika (3 zbývající)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_ANTIBIOTICS_3">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 3 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 3 таблетки.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (3 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (3 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (3 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (3 zbývající)</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_2">
 			<English>Antibiotics (2 left)</English>
 			<German>Antibiotikum (2 übrig)</German>
@@ -3847,6 +3573,14 @@
 			<French>Antibiotiques (2 reste)</French>
 			<Czech>Antibiotika (2 zbývající)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_ANTIBIOTICS_2">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 2 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 2 таблетки.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (2 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (2 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (2 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (2 zbývající)</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_1">
 			<English>Antibiotics (1 left)</English>
 			<German>Antibiotikum (1 übrig)</German>
@@ -3855,6 +3589,14 @@
 			<French>Antibiotiques (1 reste)</French>
 			<Czech>Antibiotika (1 zbývající)</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_DESC_ANTIBIOTICS_1">
+			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 1 Remaining.</English>
+			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталась 1 таблетка.</Russian>
+			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (1 übrig)</German>
+			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (1 restante)</Spanish>
+			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (1 reste)</French>
+			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (1 zbývající)</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_ANTIBIOTICS_EMPTY">
 			<English>Antibiotics (empty)</English>
 			<German>Antibiotikum (leer)</German>
@@ -3863,68 +3605,12 @@
 			<French>Antibiotiques (vide)</French>
 			<Czech>Antibiotika (prázdný)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_17">
-			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections.</English>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird.</German>
-			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций.</Russian>
-			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales.</Spanish>
-			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes.</French>
-			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_48">
-			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 6 Remaining.</English>
-			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 6 таблеток.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (6 übrig)</German>
-			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (6 restante)</Spanish>
-			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (6 reste)</French>
-			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (6 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_49">
-			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 5 Remaining.</English>
-			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 5 таблеток.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (5 übrig)</German>
-			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (5 restante)</Spanish>
-			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (5 reste)</French>
-			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (5 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_50">
-			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 4 Remaining.</English>
-			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 4 таблетки.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (4 übrig)</German>
-			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (4 restante)</Spanish>
-			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (4 reste)</French>
-			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (4 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_51">
-			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 3 Remaining.</English>
-			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 3 таблетки.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (3 übrig)</German>
-			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (3 restante)</Spanish>
-			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (3 reste)</French>
-			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (3 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_52">
-			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 2 Remaining.</English>
-			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталось 2 таблетки.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (2 übrig)</German>
-			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (2 restante)</Spanish>
-			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (2 reste)</French>
-			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (2 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_53">
-			<English>Azithromycin is a broad spectrum antibiotic used to treat or prevent certain bacterial infections. 1 Remaining.</English>
-			<Russian>Азитромицин это многоцелевой антибиотик, использующийся для лечения бактериальных инфекций. Осталась 1 таблетка.</Russian>
-			<German>Azithromycin ist ein Breitbandantibiotikum, das zur Behandlung verschiedener bakterieller Infektionen verwendet wird. (1 übrig)</German>
-			<Spanish>La azitromicina es un antibiótico de amplio espectro usado para tratar o prevenir ciertas infecciones bacteriales. (1 restante)</Spanish>
-			<French>L&apos;azithromycine est un antibiotique à large spectre permettant le traitement des infections bactériennes. (1 reste)</French>
-			<Czech>Azithromycin je širokospektré antibiotikum používané k léčbě nebo prevenci před infekcí či bakteriemi. (1 zbývající)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_54">
+		<Key ID="STR_EQUIP_DESC_ANTIBIOTICS_EMPTY">
 			<English>Empty box of Azithromycin.</English>
 			<Russian>Пустая коробка азитромицина.</Russian>
 			<German>Leere Schachtel Azithromycin</German>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_18">
+		<Key ID="STR_EQUIP_NAME_PAINKILLER">
 			<English>Painkillers</English>
 			<German>Schmerzmittel</German>
 			<Russian>Болеутоляющее</Russian>
@@ -3993,7 +3679,7 @@
 			<Russian>Пустая коробка болеутоляющего.</Russian>
 			<German>Leere Schachtel Schmerzmittel.</German>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_18">
+		<Key ID="STR_EQUIP_DESC_PAINKILLER">
 			<English>A moderate painkiller suitable for regular use of relief of pain and inflammation caused by moderate wounds.</English>
 			<German>Ein Schmerzmittel zum Stillen von Schmerzen und Entzündungen durch mittelschwere Wunden.</German>
 			<Russian>Слабое болеутоляющее отлично подходит для подавления боли от небольших ранений.</Russian>
@@ -4078,55 +3764,7 @@
 			<Czech>Krabice plná nejrůznějších léčivých rostlin. Sen každé babky kořenářky.</Czech>
 			<German>Eine Schachtel mit medizinischen Kräutern. Es wird Tage gedauert haben sie zu sammeln.</German>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_19">
-			<English>Jerry Can</English>
-			<German>Kanister</German>
-			<Russian>Канистра</Russian>
-			<Spanish>Bidón</Spanish>
-			<French>Jerrican</French>
-			<Czech>Kanystr</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_19">
-			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
-			<German>Ein 20-Liter-Kanister, welcher zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
-			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
-			<Spanish>Bidón de 20 litros que puede ser usado para recargar combustible en los vehículos.</Spanish>
-			<French>Jerrican de 20 litres pour faire le plein des véhicules.</French>
-			<Czech>Kanystr o objemu 20 litrů. Může být použit pro tankování vozidel a jako palivo pro generátory.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_47">
-			<English>Raw Meat</English>
-			<German>Rohes Fleisch</German>
-			<Russian>Сырое мясо</Russian>
-			<Spanish>Carne Cruda</Spanish>
-			<French>Viande crue</French>
-			<Czech>Syrové maso</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_47">
-			<English>Meat Steak cut from an animal to be used for sustenance, must be cooked prior to eating.</English>
-			<German>Ein Stück rohes Fleisch, welches vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Вырезка сырого мяса, снятого с разделанного животного. Приготовление на огне обязательно.</Russian>
-			<Spanish>Currasco de carne cortado de un animal para ser usado para sobrevivir, debería ser cocinado antes de comer.</Spanish>
-			<French>Viande crue pouvant servir de repas, qui cependant devrait être cuite préalablement.</French>
-			<Czech>Syrové maso vykuchané ze zvířete. Před konzumací by mělo být upečeno.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_25">
-			<English>Cooked Meat</English>
-			<German>Gebratenes Fleisch</German>
-			<Russian>Жареное мясо</Russian>
-			<Spanish>Carne Cocinada</Spanish>
-			<French>Viande cuite</French>
-			<Czech>Upečené maso</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_25">
-			<English>Meat Steak that has been cooked at a fireplace and can be consumed for sustenance.</English>
-			<German>Ein Stück Fleisch, welches über Feuer gut durchgebraten wurde.</German>
-			<Russian>Кусок жареного на огне мяса.</Russian>
-			<Spanish>Currasco de carne que fue cocinado en una fogata y puede ser consumido.</Spanish>
-			<French>Viande cuite au feu de bois. En manger vous fera reprendre des forces.</French>
-			<Czech>Toto maso bylo upečeno a může být konzumováno.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_26">
+		<Key ID="STR_EQUIP_NAME_BAKED_BEANS">
 			<English>Can (Baked Beans)</English>
 			<German>Dose (Gebackene Bohnen)</German>
 			<Russian>Банка (Бобы)</Russian>
@@ -4134,7 +3772,7 @@
 			<French>Conserve (Haricots)</French>
 			<Czech>Plechovka (Baked Beans)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_26">
+		<Key ID="STR_EQUIP_DESC_BAKED_BEANS">
 			<English>Canned baked beans used for sustainment. Lasts well over five years if stored correctly.</English>
 			<German>Eine Dose gebackener Bohnen, welche bei richtiger Lagerung weit über fünf Jahre haltbar sind.</German>
 			<Russian>Банка варёных бобов в соусе. Срок хранения до 5 лет.</Russian>
@@ -4142,7 +3780,7 @@
 			<French>Boîte d&apos;haricots pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Baked Beans v rajčatové omáčce jsou nejoblíbenější variantou této značky. Při správném skladování vydrží i 5 let.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_27">
+		<Key ID="STR_EQUIP_NAME_SARDINES">
 			<English>Can (Sardines)</English>
 			<German>Dose (Sardinen)</German>
 			<Russian>Банка (Сардины)</Russian>
@@ -4150,7 +3788,7 @@
 			<French>Conserve (Sardines)</French>
 			<Czech>Plechovka (Sardinky)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_27">
+		<Key ID="STR_EQUIP_DESC_SARDINES">
 			<English>Canned sardines used for sustenance. Lasts well over five years if stored correctly.</English>
 			<German>Eine Dose Sardinen, welche bei richtiger Lagerung weit über fünf Jahre haltbar sind.</German>
 			<Russian>Банка консервированных сардин. Срок хранения до 5 лет.</Russian>
@@ -4158,7 +3796,7 @@
 			<French>Boîte de sardines, pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Konzervované sardinky. Při správném skladování vydrží i pět let.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_28">
+		<Key ID="STR_EQUIP_NAME_FRANK_BEANS">
 			<English>Can (Frank and Beans)</English>
 			<German>Dose (Bohnen und Würste)</German>
 			<Russian>Банка (Фасоль с мясом)</Russian>
@@ -4166,7 +3804,7 @@
 			<French>Conserve (William Saurien)</French>
 			<Czech>Plechovka (Frank and Beans)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_28">
+		<Key ID="STR_EQUIP_DESC_FRANK_BEANS">
 			<English>Canned Beans and Sausages used for sustenance. Lasts well over five years if stored correctly.</English>
 			<German>Eine Dose Bohnen mit Würstchen, welche bei richtiger Lagerung weit über fünf Jahre haltbar sind.</German>
 			<Russian>Банка консервированной фасоли с мясом. Срок хранения до 5 лет.</Russian>
@@ -4174,7 +3812,7 @@
 			<French>Une boîte d&apos;haricots et saussisses en sauce. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Fazole s párky v plechovce. Při správném skladování vydrží i pět let.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_29">
+		<Key ID="STR_EQUIP_NAME_PASTA">
 			<English>Can (Pasta)</English>
 			<German>Dose (Nudeln)</German>
 			<Russian>Банка (Лапша)</Russian>
@@ -4182,7 +3820,7 @@
 			<French>Conserve (Pâtes)</French>
 			<Czech>Plechovka (Těstoviny)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_29">
+		<Key ID="STR_EQUIP_DESC_PASTA">
 			<English>Canned Macaroni used for sustenance. Lasts well over five years if stored correctly.</English>
 			<German>Eine Dose Nudeln, welche bei richtiger Lagerung weit über fünf Jahre haltbar sind.</German>
 			<Russian>Банка лапши в соусе. Срок хранения до 5 лет.</Russian>
@@ -4190,7 +3828,7 @@
 			<French>Macaroni en boîte, pour un repas. Peut se conserver 5 ans stocké dans un endroit approprié.</French>
 			<Czech>Konzerva plná makarónů. Při správném skladování vydrží i pět let.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_33">
+		<Key ID="STR_EQUIP_NAME_EMPTY_TIN_CAN">
 			<English>Empty Tin Can</English>
 			<German>Leere Blechdose</German>
 			<Russian>Пустая консервная банка</Russian>
@@ -4198,7 +3836,7 @@
 			<French>Boîte vide</French>
 			<Czech>Prázdná plechovka na jídlo</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_33">
+		<Key ID="STR_EQUIP_DESC_EMPTY_TIN_CAN">
 			<English>An empty tin can that no longer contains any food, or anything usable.</English>
 			<German>Eine leere Blechdose. Leider ist nichts Essbares mehr drin, ist aber vielleicht anderweitig nützlich.</German>
 			<Russian>Пустая консервная банка. Совершенно пуста и бесполезна.</Russian>
@@ -4206,7 +3844,7 @@
 			<French>Boîte de conserve vide, dont la seule utilité est de faire éventuellement diversion.</French>
 			<Czech>Kdysi tato plechovka obsahovala jídlo, teď je prázdná.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_34">
+		<Key ID="STR_EQUIP_NAME_EMPTY_WHISKEY_BOTTLE">
 			<English>Empty Whiskey Bottle</English>
 			<German>Leere Whiskeyflasche</German>
 			<Russian>Пустая бутылка (Виски)</Russian>
@@ -4214,7 +3852,7 @@
 			<French>Bouteille de Whisky vide</French>
 			<Czech>Prádná flaška od whiskey</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_34">
+		<Key ID="STR_EQUIP_DESC_EMPTY_WHISKEY_BOTTLE">
 			<English>A cracked empty whiskey bottle that no longer contains anything.</English>
 			<German>Eine leere Whiskeyflasche. Sie ist leider undicht.</German>
 			<Russian>Разбитая бутылка виски, в которой ничего не осталось.</Russian>
@@ -4222,7 +3860,7 @@
 			<French>Une bouteille fêlée, sans son précieux brevage.</French>
 			<Czech>Popraskaná láhev od whisky, která už neobsahuje ani kapku.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_35">
+		<Key ID="STR_EQUIP_NAME_EMPTY_SODA_CAN">
 			<English>Empty Soda Can</English>
 			<German>Leere Getränkedose</German>
 			<Russian>Пустая банка газировки</Russian>
@@ -4230,7 +3868,7 @@
 			<French>Canette vide</French>
 			<Czech>Prázdná plechovka na pití</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_35">
+		<Key ID="STR_EQUIP_DESC_EMPTY_SODA_CAN">
 			<English>A aluminum can that once contained a tasty carbonated beverage, and now contains nothing.</English>
 			<German>Eine Aluminiumdose, in der einmal ein köstliches kohlensäurehaltiges Getränk war.</German>
 			<Russian>Алюминиевая банка, которая когда-то содержала вкусный газированный напиток, но теперь пуста.</Russian>
@@ -4238,7 +3876,7 @@
 			<French>Une canette en alu, qui jadis a contenu du soda.</French>
 			<Czech>Kdysi tato hliníková plechovka obsahovala chutný sycený nápoj. Teď v ní nic není.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_36a">
+		<Key ID="STR_EQUIP_NAME_SODA_CAN_COKE">
 			<English>Soda Can (Coke)</English>
 			<German>Dose (Coke)</German>
 			<Russian>Газировка (Кола)</Russian>
@@ -4246,7 +3884,7 @@
 			<French>Canette (Coca)</French>
 			<Czech>Plechovka (Kola)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_36b">
+		<Key ID="STR_EQUIP_NAME_SODA_CAN_PEPSI">
 			<English>Soda Can (Pepsi)</English>
 			<German>Dose (Pepsi)</German>
 			<Russian>Газировка (Пепси)</Russian>
@@ -4254,7 +3892,7 @@
 			<French>Canette (Pepsi)</French>
 			<Czech>Plechovka (Pepsi)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_36">
+		<Key ID="STR_EQUIP_DESC_SODA_CAN">
 			<English>An aluminum can containing a tasty carbonated beverage full of sugar, artificial flavors, and preservatives.</English>
 			<German>Eine Alumniumdose, voll mit einem köstlichen kohlensäurehaltigen Getränk voller Zucker, künstlicher Aromen und Konservierungsmitteln.</German>
 			<Russian>Алюминиевая банка с вкусным газированным напитком с сахаром, искусственными ароматизаторами и консервантами.</Russian>
@@ -4262,7 +3900,7 @@
 			<French>Une canette en alu, contenant un breuvage goutu composé de sucre, d&apos;arômes artificiels et de conservateurs.</French>
 			<Czech>Hliníková plechovka, která obsahuje chutný sycený nápoj plný cukru, umělých příchutí a konzervačních látek.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_37">
+		<Key ID="STR_EQUIP_NAME_MOUNTAIN_DEW">
 			<English>Soda Can (Mountain Dew)</English>
 			<German>Dose (Mountain Dew)</German>
 			<Russian>Газировка (Маунтин Дью)</Russian>
@@ -4270,23 +3908,11 @@
 			<French>Canette (Mountain Dew)</French>
 			<Czech>Plechovka (Mountain Dew)</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_39">
-			<English>Jerry Can (Empty)</English>
-			<German>Leerer Kanister</German>
-			<Russian>Канистра (пустая)</Russian>
-			<Spanish>Bidón (Vacío)</Spanish>
-			<French>Jerrican (vide)</French>
-			<Czech>Kanystr (Prázdný)</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_39">
-			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>
-			<German>Ein leerer 20-Liter-Kanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
-			<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
-			<Spanish>Un bidón de 20 litros vacío que puede ser llenado en estaciones de servicio.</Spanish>
-			<French>Un Jerrican de 20 litres, vide. Peut être rempli en siphonnant les cuves à fioul de stations-service.</French>
-			<Czech>Prázdný dvacetilitrový kanystr, který může být naplněn u benzínových stanic nebo aut.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_40">
+		<Key ID="STR_EQUIP_DESC_MOUNTAIN_DEW">
+			<English>A Mountain Dew soda can. It is pretty rare these days. Better to keep it for later.</English>
+			<German>Eine Mountain Dew Dose. Sehr selten in diesen Tagen. Besser für später aufheben.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_NAME_WOOD_PILE">
 			<English>Wood Pile</English>
 			<German>Holzstapel</German>
 			<Russian>Поленья</Russian>
@@ -4294,7 +3920,7 @@
 			<French>Tas de bois</French>
 			<Czech>Hromádka dřeva</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_40">
+		<Key ID="STR_EQUIP_DESC_WOOD_PILE">
 			<English>A small pile of freshly chopped wood that can be used for making a fireplace and various other things.</English>
 			<German>Ein kleiner Stapel frisch gehacktes Holz, welches unter anderem dazu verwendet werden kann, ein Feuer zu machen.</German>
 			<Russian>Кучка дров, идеально подойдёт, чтобы развести костёр.</Russian>
@@ -4302,7 +3928,7 @@
 			<French>Un peu de bois qui permet de préparer du feu, entre autre.</French>
 			<Czech>Hromádka čerstvě nasekaného dřeva, které může být použito pro vyrobení ohniště a další různé věci.</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_42">
+		<Key ID="STR_EQUIP_NAME_HEAT_PACK">
 			<English>Heatpack</English>
 			<German>Wärmekissen</German>
 			<Russian>Хим-грелка</Russian>
@@ -4310,7 +3936,7 @@
 			<French>Chaufferette</French>
 			<Czech>Zahřívací sáček</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_42">
+		<Key ID="STR_EQUIP_DESC_HEAT_PACK">
 			<English>A heating pad that heats when you start the crystallisation process. Used to provide warmth to your body.</English>
 			<German>Ein Wärmekissen. Wird das Metallplättchen im Gel geknickt, kristallisiert der Inhalt und erzeugt Wärme. Nützlich in kalten Umgebungen.</German>
 			<Russian>Химическая грелка. Используется для согревания вашего тела.</Russian>
@@ -4425,7 +4051,7 @@
 			<Russian>Разделить на 4 по 2п.</Russian>
 			<German>In 4x2 Schuss aufteilen</German>
 		</Key>
-		<Key ID="STR_MAG_NAME_4">
+		<Key ID="STR_MAG_NAME_ROAD_FLARE">
 			<English>Road Flare</English>
 			<German>Bengalische Fackel</German>
 			<Russian>Сигнальный фаер</Russian>
@@ -4433,7 +4059,7 @@
 			<French>Fusée éclairante</French>
 			<Czech>Světlice</Czech>
 		</Key>
-		<Key ID="STR_MAG_DESC_4">
+		<Key ID="STR_MAG_DESC_ROAD_FLARE">
 			<English>Hand operated flare commonly found in roadside emergency kits. Will burn for approximately five minutes.</English>
 			<German>Eine Bengalische Fackel, welche häufig in Erste-Hilfe-Kästen von Fahrzeugen zu finden ist. Die Leuchdauer beträgt etwa 5 Minuten.</German>
 			<Russian>Гражданский сигнальный фаер, который обычно используют спасатели. Горит около пяти минут.</Russian>
@@ -4441,7 +4067,7 @@
 			<French>Fusée de détresse que l&apos;on trouve dans les trousses de secours. Eclaire pendant 5 minutes environs.</French>
 			<Czech>Ruční světlice, kterou lze často najít v pohotovostních balíčcích. Hoří přibližně pět minut.</Czech>
 		</Key>
-		<Key ID="STR_MAG_NAME_5">
+		<Key ID="STR_MAG_NAME_CHEMLIGHT_GREEN">
 			<English>Chemlight (Green)</English>
 			<German>Knicklicht (Grün)</German>
 			<Russian>Химсвет (Зеленый)</Russian>
@@ -4449,14 +4075,14 @@
 			<French>Bâton lumineux (vert)</French>
 			<Czech>Chemické světlo (zelené)</Czech>
 		</Key>
-		<Key ID="STR_MAG_ACTION_5">
+		<Key ID="STR_MAG_ACTION_CHEMLIGHT">
 			<English>Chemlight</English>
 			<German>Knicklicht</German>
 			<Russian>Химсвет</Russian>
 			<French>Bâton lumineux</French>
 			<Czech>Chemické světlo</Czech>
 		</Key>
-		<Key ID="STR_MAG_DESC_5">
+		<Key ID="STR_MAG_DESC_CHEMLIGHT">
 			<English>Chemical Lightstick providing 60 minutes illumination within a small area when activated and thrown. Available in assorted colors.</English>
 			<German>Ein chemisches Knicklicht, welches für etwa 60 Minuten Licht spendet, nachdem es geknickt und geworfen wurde. In verschiedenen Farben verfügbar.</German>
 			<Russian>Химический источник света, освещающий небольшую область на период до 60 минут после броска. Бывает разных цветов.</Russian>
@@ -4464,7 +4090,7 @@
 			<French>Un bâton produisant une lumière fluorescente pendant 60 minutes sur un périmètre restreint. Existe de plusieurs couleurs.</French>
 			<Czech>Chemické světlo, které poskytuje po aktivaci 60 minutové osvětlení v malém prostoru. K dispozici v různých barvách.</Czech>
 		</Key>
-		<Key ID="STR_MAG_NAME_6">
+		<Key ID="STR_MAG_NAME_CHEMLIGHT_RED">
 			<English>Chemlight (Red)</English>
 			<German>Knicklicht (Rot)</German>
 			<Russian>Химсвет (Красный)</Russian>
@@ -4472,7 +4098,7 @@
 			<French>Bâton lumineux (rouge)</French>
 			<Czech>Chemické světlo (červené)</Czech>
 		</Key>
-		<Key ID="STR_MAG_NAME_7">
+		<Key ID="STR_MAG_NAME_CHEMLIGHT_BLUE">
 			<English>Chemlight (Blue)</English>
 			<German>Knicklicht (Blau)</German>
 			<Russian>Химсвет (Синий)</Russian>
@@ -4488,7 +4114,7 @@
 			<French>Survivant</French>
 			<Czech>Přeživší</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_20">
+		<Key ID="STR_EQUIP_NAME_CAMPING_TENT">
 			<English>Camping Tent</English>
 			<German>Zelt</German>
 			<Russian>Палатка-домик</Russian>
@@ -4496,7 +4122,7 @@
 			<Czech>Stan</Czech>
 			<French>Tente de camping</French>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_20">
+		<Key ID="STR_EQUIP_DESC_CAMPING_TENT">
 			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
 			<German>Ein kleines Zelt aus Militärbeständen, welches aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
 			<Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
@@ -4504,7 +4130,7 @@
 			<Czech>Stan může být postaven a poskytnout uložný prostor.</Czech>
 			<French>Une tente de camping qui peut être montée, permettant un espace de stockage étendu à l&apos;abri des autres.</French>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_21">
+		<Key ID="STR_EQUIP_NAME_SANDBAGS">
 			<English>Sandbags</English>
 			<German>Sandsäcke</German>
 			<Russian>Мешки с песком</Russian>
@@ -4512,7 +4138,7 @@
 			<Czech>Pytle na písek</Czech>
 			<French>Sacs de sable</French>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_21">
+		<Key ID="STR_EQUIP_DESC_SANDBAGS">
 			<English>Sacks made of hessian that can be filled with sand or soil and used for military fortification.</English>
 			<German>Jutesäcke, die mit Sand oder Erde gefüllt für Befestigungen verwendet werden können.</German>
 			<Russian>Мешки с песком для создания оборонительных сооружений.</Russian>
@@ -4520,7 +4146,7 @@
 			<Czech>Jutové pytle, lze naplnit pískem nebo zeminou a použít je pro postavení opevnění.</Czech>
 			<French>Des sacs de jute qui peuvent être remplis de sable et utilisés pour des fortifications militaires.</French>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_22">
+		<Key ID="STR_EQUIP_NAME_TANK_TRAP">
 			<English>Tank Trap Kit</English>
 			<German>Panzersperre</German>
 			<Russian>Противотанковый ёж</Russian>
@@ -4528,7 +4154,7 @@
 			<Czech>Tankový zátaras</Czech>
 			<French>Obstacle anti Tank</French>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_22">
+		<Key ID="STR_EQUIP_DESC_TANK_TRAP">
 			<English>Metal materials that can be used by an engineer to construct a Tank Trap.</English>
 			<German>Schwere Metallteile, die zu einer wirksamen Panzersperre verbunden wurden, um schwere Fahrzeuge, wie zum Beispiel Panzer aufzuhalten.</German>
 			<Russian>Металлические детали, из которых собирается противотанковый ёж.</Russian>
@@ -4536,7 +4162,7 @@
 			<Czech>Kovový materiál, který může být použit pro postavení zátarasu.</Czech>
 			<French>Des pièces de métal utilisées par le génie militaire pour construire un obstacle anti-tank.</French>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_23">
+		<Key ID="STR_EQUIP_NAME_WIRE_FENCE">
 			<English>Wire Fencing Kit</English>
 			<German>Stacheldraht</German>
 			<Russian>Колючая проволока</Russian>
@@ -4544,29 +4170,13 @@
 			<Czech>Ostnatý drát</Czech>
 			<French>Kit de barbelés</French>
 		</Key>
-		<Key ID="STR_EQUIP_DESC_23">
+		<Key ID="STR_EQUIP_DESC_WIRE_FENCE">
 			<English>Razor wire in large coils which can be expanded like a concertina with steel pickets to form military wire obstacles.</English>
 			<German>Eine Rolle gewickelter Stacheldraht, aus der ein wirkungsvolles Stacheldrahthindernis errichtet werden kann.</German>
 			<Russian>Катушка острой колючей проволоки для сооружения заграждений.</Russian>
 			<Spanish>Una bobina de alambre de púas muy afilado que puede ser expandir como un acordeón para formar obstáculos militares.</Spanish>
 			<Czech>Lze postavit kdekoliv na rovné ploše. Slouží jako plot, přes který nelze přeskočit.</Czech>
 			<French>Du fil de fer tranchant comme un rasoir et bardé de pointes métalliques, utilisé comme obstacle barbelé militaire.</French>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_24">
-			<English>Camping Tent</English>
-			<German>Zelt</German>
-			<Russian>Палатка-домик</Russian>
-			<Spanish>Carpa</Spanish>
-			<Czech>Stan</Czech>
-			<French>Tente de camping</French>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_24">
-			<English>A camping tent that can be pitched, allowing you extended storage safe from others.</English>
-			<German>Ein kleines Zelt aus Militärbeständen, welches aufgeschlagen werden kann und sicheren Lagerplatz bietet.</German>
-			<Russian>Палатку можно развернуть и использовать как безопасное хранилище ваших вещей.</Russian>
-			<Spanish>Una carpa que puede ser asentada permitiendo almacenar objetos.</Spanish>
-			<Czech>Stan může být postaven a poskytnout uložný prostor.</Czech>
-			<French>Une tente de camping qui peut être montée, permettant un espace de stockage étendu à l&apos;abri des autres.</French>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_BEARTRAP">
 			<English>Bear Trap</English>
@@ -4763,171 +4373,6 @@
 			<French>Objet destiné à un fameux sport US, ce club de bois est bardé de barbelés</French>
 			<German>Dieser Baseballschläger wurde mit Stacheldraht umwickelt. Baseball lässt sich damit nicht mehr spielen.</German>
 		</Key>
-		<Key ID="STR_EQUIP_NAME_M16A2">
-			<English>M16A2</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M16A2">
-			<English>Assault rifle &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
-			<Spanish>Rifle de asalto &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
-			<Czech>Útočná puška &lt;br/&gt;Kalibr: 5.56x45mm NATO</Czech>
-			<French>Fusil d&apos;assault américain &lt;br/&gt;Calibre: 5.56x45mm OTAN</French>
-			<German>Amerikanisches Sturmgewehr&lt;br/&gt;Kaliber: 5.56 x 45 mm NATO (STANAG 4172)</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_M16A2GL">
-			<English>M16A2 M203</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M16A2GL">
-			<English>Assault rifle with grenade launcher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка с гранатомётом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
-			<Spanish>Rifle de asalto con lanzador de granadas &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
-			<French>Fusil d&apos;assault américain avec lance-grenades &lt;br/&gt;Calibre: 5.56x45mm OTAN, Grenade 40mm</French>
-			<Czech>Útočná puška s podvěsným granátometem &lt;br/&gt;Kalibr: 5.56x45mm NATO, granát 40mm</Czech>
-			<German>Amerikanisches Sturmgewehr mit Unterlaufgranatwerfer&lt;br/&gt;Kaliber: 5.56 x 45 mm NATO (STANAG 4172), Granaten: 40 mm</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_M16A4">
-			<English>M16A4</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M16A4">
-			<English>Assault rifle &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
-			<Spanish>Rifle de asalto &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
-			<French>Fusil d&apos;assault américain &lt;br/&gt;Calibre: 5.56x45mm OTAN</French>
-			<Czech>Útočná puška &lt;br/&gt;Kalibr: 5.56x45mm NATO</Czech>
-			<German>Amerikanisches Sturmgewehr&lt;br/&gt;Kaliber: 5.56 x 45 mm NATO (STANAG 4172)</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_M16A4_ACOG">
-			<English>M16A4 ACOG</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M16A4_ACOG">
-			<English>Assault rifle &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
-			<Spanish>Rifle de asalto &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
-			<French>Fusil d&apos;assault américain à viseur optique avancé &lt;br/&gt;Calibre: 5.56x45mm OTAN</French>
-			<Czech>Útočná puška s ACOG zaměřovačem &lt;br/&gt;Kalibr: 5.56x45mm NATO</Czech>
-			<German>Amerikanisches Sturmgewehr mit ACOG-Zielfernrohr&lt;br/&gt;Kaliber: 5.56 x 45 mm NATO (STANAG 4172)</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_M16A4_M203_ACOG">
-			<English>M16A4 M203 ACOG</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M16A4_M203_ACOG">
-			<English>Assault rifle with grenade luncher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка с гранатомётом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
-			<Spanish>Rifle de asalto con lanzador de granadas &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
-			<French>Fusil d&apos;assault à viseur optique avancé et lance-grenades &lt;br/&gt;Calibre: 5.56x45mm OTAN, grenade 40mm</French>
-			<Czech>Útočná puška s podvěsným granátometem a zaměřovačem ACOG &lt;br/&gt;Kalibr: 5.56x45mm NATO, granát 40mm</Czech>
-			<German>Amerikanisches Sturmgewehr mit Unterlaufgranatwerfer und ACOG-Zielfernrohr&lt;br/&gt;Kaliber: 5.56 x 45 mm NATO (STANAG 4172), Granaten: 40 mm</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_M16A4GL">
-			<English>M16A4 M203</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M16A4GL">
-			<English>Assault rifle with grenade luncher &lt;br/&gt;Caliber: 5.56x45mm NATO</English>
-			<Russian>Штурмовая винтовка с гранатомётом &lt;br/&gt;Калибр: 5.56x45мм НАТО</Russian>
-			<Spanish>Rifle de asalto con lanzador de granadas &lt;br/&gt;Calibre: 5.56x45mm NATO</Spanish>
-			<French>Fusil d&apos;assault américain avec lance-grenades &lt;br/&gt;Calibre: 5.56x45mm OTAN, grenade 40mm</French>
-			<Czech>Útočná puška s podvěsným granátometem &lt;br/&gt;Kalibr: 5.56x45mm NATO, granát 40mm</Czech>
-			<German>Amerikanisches Sturmgewehr mit Unterlaufgranatwerfer&lt;br/&gt;Kaliber: 5.56 x 45 mm NATO (STANAG 4172), Granaten: 40 mm</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_M9">
-			<English>M9</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M9">
-			<English>Semi-automatic pistol &lt;br/&gt;Caliber: 9x19mm</English>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19мм</Russian>
-			<Spanish>Pistola semi-automática &lt;br/&gt;Calibre: 9x19mm</Spanish>
-			<French>Pistolet semi-automatique italien &lt;br/&gt;Calibre: 9x19mm</French>
-			<Czech>Poloautomatická pistole &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Beretta 92, Militärversion&lt;br/&gt;Kaliber: 9 x 19 mm</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_M9SD">
-			<English>M9 SD</English>
-			<Russian>M9 с глушителем</Russian>
-			<Spanish>M9 Silenciada</Spanish>
-			<French>M9 Silenciada</French>
-			<Czech>M9 s tlumičem</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M9SD">
-			<English>Suppressed semi-automatic pistol &lt;br/&gt;Caliber: 9x19mm SD</English>
-			<Russian>Полуавтоматический пистолет с глушителем&lt;br/&gt;Калибр: 9x19мм дозвук.</Russian>
-			<Spanish>Pistola silenciada semi-automática&lt;br/&gt;Calibre: 9x19mm SD</Spanish>
-			<French>Pistolet semi-automatique italien avec silencieux &lt;br/&gt;Calibre: 9x19mm SD</French>
-			<Czech>Poloautomatická pistole s tlumičem &lt;br/&gt;Kalibr: 9x19mm SD</Czech>
-			<German>Halbautomatische Pistole vom Typ Beretta 92, Militärversion mit Schalldämpfer&lt;br/&gt;Kaliber: 9x19mm SD</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_M1911">
-			<English>Colt M1911</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_M1911">
-			<English>Semi-automatic pistol &lt;br/&gt;Caliber: .45 ACP</English>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: .45 ACP</Russian>
-			<Spanish>Pistola semi-automática &lt;br/&gt;Calibre: .45 ACP</Spanish>
-			<French>Pistolet semi-automatique américain &lt;br/&gt;Calibre: .45 ACP</French>
-			<Czech>Poloautomatická pistole &lt;br/&gt;Kalibr: .45 ACP</Czech>
-			<German>Halbautomatische Pistole vom Typ Colt M1911&lt;br/&gt;Kaliber: .45 ACP</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_Makarov_PM">
-			<English>Makarov</English>
-			<Russian>ПМ</Russian>
-			<German>Makarow</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_Makarov_PM">
-			<English>Semi-automatic pistol &lt;br/&gt;Caliber: 9x18mm</English>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x18мм</Russian>
-			<Spanish>Pistola semi-automática &lt;br/&gt;Calibre: 9x18mm</Spanish>
-			<French>Pistolet semi-automatique russe &lt;br/&gt;Calibre: 9x18mm</French>
-			<Czech>Ruská poloautomatická pistole &lt;br/&gt;Kalibr: 9x18mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Makarow&lt;br/&gt;Kaliber: 9 x 18 mm Makarow</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_Makarov_SD">
-			<English>Makarov SD</English>
-			<Russian>ПМ с глушителем</Russian>
-			<Czech>Makarov s tlumičem</Czech>
-			<German>Makarow SD</German>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_Makarov_SD">
-			<English>Suppressed semi-automatic pistol &lt;br/&gt;Caliber: 9x18mm SD</English>
-			<Russian>Полуавтоматический пистолет с глушителем&lt;br/&gt;Калибр: 9x18мм дозвук.</Russian>
-			<Spanish>Pistola silenciada semi-automática &lt;br/&gt;Calibre: 9x18mm SD</Spanish>
-			<French>Pistolet semi-automatique russe avec silencieux &lt;br/&gt;Calibre: 9x18mm SD</French>
-			<Czech>Ruská poloautomatická pistole s tlumičem &lt;br/&gt;Kalibr: 9x18mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Makarow mit Schalldämpfer (Typ PB)&lt;br/&gt;Kaliber: 9x18mm SD</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_PDW">
-			<English>PDW</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_PDW">
-			<English>Submachine gun &lt;br/&gt;Caliber: 9x19mm</English>
-			<Russian>Пистолет-пулемет &lt;br/&gt;Калибр: 9x19мм</Russian>
-			<Spanish>Ametralladora &lt;br/&gt;Calibre: 9x19mm</Spanish>
-			<French>Mitrailleuse&lt;br/&gt;Calibre: 9x19mm</French>
-			<Czech>Personal Defense Weapon, samopal &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<German>Leichte Maschinenpistole (Personal Defense Weapon)&lt;br/&gt;Kaliber 9 x 19 mm</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_Revolver">
-			<English>Revolver</English>
-			<Russian>Револьвер</Russian>
-			<Spanish>Revólver</Spanish>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_Revolver">
-			<English>Revolver &lt;br/&gt;Caliber: .45 ACP</English>
-			<Russian>Шестизарядный револьвер &lt;br/&gt;Калибр: .45 ACP</Russian>
-			<Spanish>Revólver &lt;br/&gt;Calibre: .45 ACP</Spanish>
-			<French>Revolver à 6 coups&lt;br/&gt;Calibre: .45 ACP</French>
-			<Czech>Revolver &lt;br/&gt;Kalibr: .45 ACP</Czech>
-			<German>Trommelrevolver mit sechs Schuss&lt;br/&gt;Kaliber .45 ACP</German>
-		</Key>
-		<Key ID="STR_EQUIP_NAME_G17">
-			<English>G17</English>
-		</Key>
-		<Key ID="STR_EQUIP_DESC_G17">
-			<English>Semi-automatic pistol&lt;br/&gt;Caliber: 9x19mm</English>
-			<Russian>Полуавтоматический пистолет &lt;br/&gt;Калибр: 9x19мм</Russian>
-			<Spanish>Pistola semi-automática &lt;br/&gt;Calibre: 9x19mm</Spanish>
-			<French>Pistolet semi-automatique autrichien &lt;br/&gt;Calibre: 9x19mm</French>
-			<Czech>Poloautomatická pistole Glock 17 &lt;br/&gt;Kalibr: 9x19mm</Czech>
-			<German>Halbautomatische Pistole vom Typ Glock 17&lt;br/&gt;Kaliber: 9 x 19 mm</German>
-		</Key>
 		<Key ID="STR_EQUIP_NAME_CLOTHES">
 			<English>Clothes</English>
 			<Russian>Одежда</Russian>
@@ -5024,23 +4469,7 @@
 			<French>Un uniforme de soldat de l&apos;Armée Britannique. Peut être porté.</French>
 			<German>Ein Feldanzug der British Armed Forces mit Splitterschutzhelm und Koppelgeschirr.</German>
 		</Key>
-		<Key ID="STR_EQUIP_CODE_NAME_3">
-			<English>Box of Wet Matches</English>
-			<German>Feuchte Streichholzschachtel</German>
-			<Russian>Коробка промокших спичек</Russian>
-			<Spanish>Caja de Fósforos Mojada</Spanish>
-			<French>Boîte d&apos;Allumettes mouillées</French>
-			<Czech>Krabička mokrých zápalek</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_CODE_DESC_3">
-			<English>Box of wet matches.</English>
-			<German>Eine Schachtel Sicherheitszündhölzer. Die Schachtel ist nass geworden und unbrauchbar.</German>
-			<Russian>Коробка промокших спичек.</Russian>
-			<Spanish>Caja de fósforos mojada.</Spanish>
-			<French>Boîte d&apos;Allumettes mouillées.</French>
-			<Czech>Krabička plná mokrých zápalek.</Czech>
-		</Key>
-		<Key ID="STR_EQUIP_CODE_NAME_41">
+		<Key ID="STR_EQUIP_NAME_HATCHET_DULL">
 			<English>Dull Hatchet</English>
 			<German>Stumpfes Beil</German>
 			<Russian>Затупившийся топор</Russian>
@@ -5048,7 +4477,7 @@
 			<French>Hache émoussée</French>
 			<Czech>Tupá sekera</Czech>
 		</Key>
-		<Key ID="STR_EQUIP_CODE_DESC_41">
+		<Key ID="STR_EQUIP_DESC_HATCHET_DULL">
 			<English>Your Hatchet appears to be too dull to be used.</English>
 			<German>Dein Beil ist durch häufigen Gebrauch stumpf geworden.</German>
 			<Russian>Ваш топор слишком туп, чтобы его использовать.</Russian>
@@ -5072,111 +4501,15 @@
 			<French>Votre couteau semble trop émoussé</French>
 			<Czech>Vypadá to, že tento nůž je příliš tupý.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_NAME_0">
-			<English>Raw Meat</English>
-			<German>Rohes Fleisch</German>
-			<Russian>Сырое мясо</Russian>
-			<Spanish>Carne Cruda</Spanish>
-			<French>Viande crue</French>
-			<Czech>Syrové maso</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_DESC_0">
-			<English>Raw Meat to be used for sustenance, should be cooked prior to safe eating.</English>
-			<German>Ein Stück rohes Fleisch, welches vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Сырое мясо. Будет вкуснее и безопаснее, если его приготовить.</Russian>
-			<Spanish>Carne Cruda que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<French>La Viande Crue peut être consommée mais devrait être cuite pour la manger en toute sécurité.</French>
-			<Czech>Bezpečnější bude syrové maso nejprve opéct.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_NAME_1">
-			<English>Mutton Raw</English>
-			<German>Rohes Hammelfleisch</German>
-			<Russian>Баранина</Russian>
-			<Spanish>Cordero Crudo</Spanish>
-			<French>Agneau Cru</French>
-			<Czech>Syrové jehněčí</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_DESC_1">
-			<English>Lamb Meat to be used for sustenance, should be cooked prior to safe eating.</English>
-			<German>Ein Stück rohes Hammelfleisch, welches vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Баранина. Будет вкуснее и безопаснее, если её приготовить.</Russian>
-			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<French>La Viande d&apos;agneau peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
-			<Czech>Tento kus jehněčího byl měl být nejprve opečen.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_NAME_2">
-			<English>Raw Chicken Leg</English>
-			<German>Rohe Hühnchenkeule</German>
-			<Russian>Куриный окорочок</Russian>
-			<Spanish>Pata de Pollo Cruda</Spanish>
-			<French>Poulet cru</French>
-			<Czech>Syrové kuřecí</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_DESC_2">
-			<English>Chicken Leg to be used for sustenance, should be cooked prior to safe eating.</English>
-			<German>Eine rohe Hühnchenkeule, welche vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Сырой куриный окорочок. Будет вкуснее и безопаснее, если его приготовить.</Russian>
-			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<French>La Cuisse de Poulet crue peut être consommée mais devrait être cuite avant de pouvoir la manger.</French>
-			<Czech>Toto kuřecí stehno byl mělo být nejprve opečeno.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_NAME_3">
-			<English>Rabbit Raw</English>
-			<German>Rohes Kaninchen</German>
-			<Russian>Кролик</Russian>
-			<Spanish>Conejo Crudo</Spanish>
-			<French>Lapin cru</French>
-			<Czech>Syrové králičí</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_DESC_3">
-			<English>Rabbit to be used for sustenance, should be cooked prior to safe eating.</English>
-			<German>Ein Stück rohes Kaninchenfleisch, welches vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Кролик. Будет вкуснее и безопаснее, если его приготовить.</Russian>
-			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<French>Le Lapin cru peut être consommé mais devrait être cuit avant de le manger.</French>
-			<Czech>Tento kus králičího byl měl být nejprve opečen.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_NAME_4">
-			<English>Raw Bacon</English>
-			<German>Roher Speck</German>
-			<Russian>Бекон</Russian>
-			<Spanish>Panceta Cruda</Spanish>
-			<French>Bacon cru</French>
-			<Czech>Syrová slanina</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_DESC_4">
-			<English>Bacon to be used for sustenance, should be cooked prior to safe eating.</English>
-			<German>Roher Speck, welcher vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Бекон. Будет вкуснее и безопаснее, если его приготовить.</Russian>
-			<Spanish>Panceta que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<French>Le Bacon cru peut être consommé mais devrait être cuit avant de le manger.</French>
-			<Czech>Tento kus slaniny byl měl být nejprve opečen.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_NAME_6">
-			<English>Raw Beef</English>
-			<German>Rohes Rindfleisch</German>
-			<Russian>Говядина</Russian>
-			<Spanish>Churrasco Crudo</Spanish>
-			<French>Boeuf Cru</French>
-			<Czech>Syrové hovězí</Czech>
-		</Key>
-		<Key ID="STR_FOOD_EQUIP_CODE_DESC_6">
-			<English>Beef to be used for sustenance, should be cooked prior to safe eating.</English>
-			<German>Ein Stück rohes Rindfleisch, welches vor dem Verzehr gebraten werden sollte.</German>
-			<Russian>Говядина. Будет вкуснее и безопаснее, если её приготовить.</Russian>
-			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
-			<French>Le Boeuf Cru peut être consommé mais devrait être cuit avant de le manger.</French>
-			<Czech>Tento hovězí steak byl měl být nejprve opečen.</Czech>
-		</Key>
-		<Key ID="STR_FOOD_NAME_GOAT_RAW">
-			<English>Raw Goat</English>
-			<German>Rohes Ziegenfleisch</German>
+		<Key ID="STR_EQUIP_FOOD_NAME_GOAT_RAW">
+			<English>Goat Meat (raw)</English>
+			<German>Ziegenfleisch (roh)</German>
 			<Russian>Ягнятина</Russian>
 			<Spanish>Cabra Cruda</Spanish>
 			<French>Viande de chèvre crue</French>
 			<Czech>Syrové kozí</Czech>
 		</Key>
-		<Key ID="STR_FOOD_EQUIP_GOAT_RAW">
+		<Key ID="STR_EQUIP_FOOD_DESC_GOAT_RAW">
 			<English>Goat Meat to be used for sustenance, should be cooked prior to safe eating.</English>
 			<German>Ein Stück rohes Ziegenfleisch, welches vor dem Verzehr gebraten werden sollte.</German>
 			<Russian>Ягнятина. Будет вкуснее и безопаснее, если её приготовить.</Russian>
@@ -5184,110 +4517,174 @@
 			<French>La viande de chèvre crue peut être consommée mais devrait être cuite avant de le manger.</French>
 			<Czech>Tento kus kozího masa byl měl být nejprve opečen.</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_0">
-			<English>Cooked Meat</English>
-			<German>Gebratenes Fleisch</German>
-			<Russian>Жареное мясо</Russian>
-			<Spanish>Carne Cocinada</Spanish>
-			<French>Viande cuite</French>
-			<Czech>Opečené maso</Czech>
+		<Key ID="STR_EQUIP_FOOD_NAME_GOAT_COOKED">
+			<English>Goat Meat (cooked)</English>
+			<German>Ziegenfleisch (gebraten)</German>
+			<Russian>Жареная ягнятина</Russian>
+			<Spanish>Cabra a la Parrilla</Spanish>
+			<French>Chèvre grillée</French>
+			<Czech>Opečené kozí</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_0">
-			<English>Cooked Meat to be used for sustenance.</English>
-			<German>Ein Stück Fleisch, welches über Feuer gut durchgebraten wurde.</German>
-			<Russian>Жареное мясо, готовое к употреблению.</Russian>
-			<Spanish>Carne Cocinada que se utilizará para sobrevivir.</Spanish>
-			<French>La Viande Cuite peut être consommée.</French>
-			<Czech>Opečené maso může být snězeno, abyste přežili.</Czech>
+		<Key ID="STR_EQUIP_FOOD_DESC_GOAT_COOKED">
+			<English>Goat Meat to be used for sustenance.</English>
+			<German>Ein Stück Ziegenfleisch, welches über Feuer gut durchgebraten wurde.</German>
+			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
+			<Spanish>Cabra a la Parrilla que se utilizará para sobrevivir.</Spanish>
+			<French>La Chèvre grillée peut être consommée.</French>
+			<Czech>Kozí maso, které lze sníst, aby jste přežili.</Czech>
+		</Key>		
+		<Key ID="STR_EQUIP_FOOD_NAME_MUTTON_RAW">
+			<English>Mutton Meat (raw)</English>
+			<German>Hammelfleisch (roh)</German>
+			<Russian>Баранина</Russian>
+			<Spanish>Cordero Crudo</Spanish>
+			<French>Agneau Cru</French>
+			<Czech>Syrové jehněčí</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_1">
-			<English>Cooked Mutton</English>
-			<German>Gebratenes Lammfleisch</German>
+		<Key ID="STR_EQUIP_FOOD_DESC_MUTTON_RAW">
+			<English>Lamb Meat to be used for sustenance, should be cooked prior to safe eating.</English>
+			<German>Ein Stück rohes Hammelfleisch, welches vor dem Verzehr gebraten werden sollte.</German>
+			<Russian>Баранина. Будет вкуснее и безопаснее, если её приготовить.</Russian>
+			<Spanish>Carne de Cordero que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
+			<French>La Viande d&apos;agneau peut être consommée mais doit être cuite avant de pouvoir la manger.</French>
+			<Czech>Tento kus jehněčího byl měl být nejprve opečen.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_NAME_MUTTON_COOKED">
+			<English>Mutton Meat (cooked)</English>
+			<German>Hammelfleisch (gebraten)</German>
 			<Russian>Жареная баранина</Russian>
 			<Spanish>Cordero Cocinado</Spanish>
 			<French>Agneau Cuit</French>
 			<Czech>Opečené jehněčí</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_1">
+		<Key ID="STR_EQUIP_FOOD_DESC_MUTTON_COOKED">
 			<English>Lamb Meat to be used for sustenance.</English>
-			<German>Ein Stück Lammfleisch, welches über Feuer gut durchgebraten wurde.</German>
+			<German>Ein Stück Hammelfleisch, welches über Feuer gut durchgebraten wurde.</German>
 			<Russian>Жареная баранина, готовая к употреблению.</Russian>
 			<Spanish>Carne de Cordero que se utilizará para sobrevivir.</Spanish>
 			<French>La Viande d&apos;agneau peut être consommée.</French>
 			<Czech>Opečené jehněčí může být snězeno, abyste přežili.</Czech>
+		</Key>		
+		<Key ID="STR_EQUIP_FOOD_NAME_CHICKEN_RAW">
+			<English>Chicken Leg (raw)</English>
+			<German>Hühnchenkeule (roh)</German>
+			<Russian>Куриный окорочок</Russian>
+			<Spanish>Pata de Pollo Cruda</Spanish>
+			<French>Poulet cru</French>
+			<Czech>Syrové kuřecí</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_2">
-			<English>Chicken Leg</English>
-			<German>Gebratene Hühnchenkeule</German>
+		<Key ID="STR_EQUIP_FOOD_DESC_CHICKEN_RAW">
+			<English>Chicken Leg to be used for sustenance, should be cooked prior to safe eating.</English>
+			<German>Eine rohe Hühnchenkeule, welche vor dem Verzehr gebraten werden sollte.</German>
+			<Russian>Сырой куриный окорочок. Будет вкуснее и безопаснее, если его приготовить.</Russian>
+			<Spanish>Pata de Pollo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
+			<French>La Cuisse de Poulet crue peut être consommée mais devrait être cuite avant de pouvoir la manger.</French>
+			<Czech>Toto kuřecí stehno byl mělo být nejprve opečeno.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_NAME_CHICKEN_COOKED">
+			<English>Chicken Leg (cooked)</English>
+			<German>Hühnchenkeule (gebraten)</German>
 			<Russian>Жареный куриный окорочок</Russian>
 			<Spanish>Pata de Pollo</Spanish>
 			<French>Poulet grillé</French>
 			<Czech>Opečené kuřecí</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_2">
+		<Key ID="STR_EQUIP_FOOD_DESC_CHICKEN_COOKED">
 			<English>Chicken Leg to be used for sustenance.</English>
 			<German>Eine Hühnchenkeule, welche über Feuer gut durchgebraten wurde.</German>
 			<Russian>Жареный куриный окорочок, готовый к употреблению.</Russian>
 			<Spanish>Pata de Pollo que se utilizará para sobrevivir.</Spanish>
 			<French>La cuisse de poulet peut être consommée.</French>
 			<Czech>Kuřecí stehno může být snědeno, abyste přežili.</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_FOOD_NAME_BACON_RAW">
+			<English>Bacon (raw)</English>
+			<German>Speck (roh)</German>
+			<Russian>Бекон</Russian>
+			<Spanish>Panceta Cruda</Spanish>
+			<French>Bacon cru</French>
+			<Czech>Syrová slanina</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_3">
-			<English>Rabbit</English>
-			<German>Gebratenes Kaninchen</German>
-			<Russian>Жареный кролик</Russian>
-			<Spanish>Conejo</Spanish>
-			<French>Lapin cuit</French>
-			<Czech>Opečené králičí</Czech>
-		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_3">
-			<English>Rabbit to be used for sustenance.</English>
-			<German>Ein Stück Kaninchenfleisch, welches über Feuer gut durchgebraten wurde.</German>
-			<Russian>Жареный кролик, готовый к употреблению.</Russian>
-			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
-			<French>Le Lapin peut être consommé.</French>
-			<Czech>Králík může být sněden, abyste přežili.</Czech>
-		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_4">
-			<English>Bacon</English>
-			<German>Gebratener Speck</German>
+		<Key ID="STR_EQUIP_FOOD_DESC_BACON_RAW">
+			<English>Bacon to be used for sustenance, should be cooked prior to safe eating.</English>
+			<German>Roher Speck, welcher vor dem Verzehr gebraten werden sollte.</German>
+			<Russian>Бекон. Будет вкуснее и безопаснее, если его приготовить.</Russian>
+			<Spanish>Panceta que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
+			<French>Le Bacon cru peut être consommé mais devrait être cuit avant de le manger.</French>
+			<Czech>Tento kus slaniny byl měl být nejprve opečen.</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_FOOD_NAME_BACON_COOKED">
+			<English>Bacon (cooked)</English>
+			<German>Speck (gebraten)</German>
 			<Russian>Готовый бекон</Russian>
 			<Spanish>Panceta</Spanish>
 			<Czech>Opečená slanina</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_4">
+		<Key ID="STR_EQUIP_FOOD_DESC_BACON_COOKED">
 			<English>Bacon to be used for sustenance.</English>
 			<German>Über Feuer knusprig gebratener Speck. Passt hervorragend zu gebackenen Bohnen.</German>
 			<Russian>Бекон, готовый к употреблению.</Russian>
 			<Spanish>Panceta que se utilizará para sobrevivir.</Spanish>
 			<French>Le Bacon peut être consommé.</French>
 			<Czech>Slanina může být snědena, abyste přežili.</Czech>
+		</Key>		
+		<Key ID="STR_EQUIP_FOOD_NAME_RABBIT_RAW">
+			<English>Rabbit Leg (raw)</English>
+			<German>Kaninchenkeule (roh)</German>
+			<Russian>Кролик</Russian>
+			<Spanish>Conejo Crudo</Spanish>
+			<French>Lapin cru</French>
+			<Czech>Syrové králičí</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_5">
-			<English>Angel Cookies</English>
-			<German>Engelskekse</German>
-			<Russian>Печеньки!</Russian>
-			<Spanish>Galletitas de Ángel</Spanish>
-			<French>Cookies d&apos;Ange</French>
-			<Czech>Sušenky Angel</Czech>
+		<Key ID="STR_EQUIP_FOOD_DESC_RABBIT_RAW">
+			<English>Rabbit leg to be used for sustenance, should be cooked prior to safe eating.</English>
+			<German>Eine rohe Kaninchenkeule, welche vor dem Verzehr gebraten werden sollte.</German>
+			<Russian>Кролик. Будет вкуснее и безопаснее, если его приготовить.</Russian>
+			<Spanish>Conejo que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
+			<French>Le Lapin cru peut être consommé mais devrait être cuit avant de le manger.</French>
+			<Czech>Tento kus králičího byl měl být nejprve opečen.</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_5">
-			<English>Angel Cookies to boost your moral up!</English>
-			<German>Engelskekse, um die Moral zu heben!</German>
-			<Russian>Печенюшки для поднятия настроения!</Russian>
-			<Spanish>Galletitas de Ángel que levantan tu moral</Spanish>
-			<French>Cookies d&apos;Ange pour remonter votre moral!</French>
-			<Czech>Sušenky Angel vylepší vaši náladu!</Czech>
+		<Key ID="STR_EQUIP_FOOD_NAME_RABBIT_COOKED">
+			<English>Rabbit Leg (cooked)</English>
+			<German>Kaninchenkeule (gebraten)</German>
+			<Russian>Жареный кролик</Russian>
+			<Spanish>Conejo</Spanish>
+			<French>Lapin cuit</French>
+			<Czech>Opečené králičí</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_NAME_6">
-			<English>Beefsteak</English>
-			<German>Gebratenes Rindersteak</German>
+		<Key ID="STR_EQUIP_FOOD_DESC_RABBIT_COOKED">
+			<English>Rabbit to be used for sustenance.</English>
+			<German>Eine Kaninchenkeule, welche über Feuer gut durchgebraten wurde.</German>
+			<Russian>Жареный кролик, готовый к употреблению.</Russian>
+			<Spanish>Conejo que se utilizará para sobrevivir.</Spanish>
+			<French>Le Lapin peut être consommé.</French>
+			<Czech>Králík může být sněden, abyste přežili.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_NAME_BEEF_RAW">
+			<English>Beefsteak (raw)</English>
+			<German>Rindersteak (roh)</German>
+			<Russian>Говядина</Russian>
+			<Spanish>Churrasco Crudo</Spanish>
+			<French>Boeuf Cru</French>
+			<Czech>Syrové hovězí</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_DESC_BEEF_RAW">
+			<English>Beefsteak to be used for sustenance, should be cooked prior to safe eating.</English>
+			<German>Ein Stück rohes Rindersteak, welches vor dem Verzehr gebraten werden sollte.</German>
+			<Russian>Говядина. Будет вкуснее и безопаснее, если её приготовить.</Russian>
+			<Spanish>Currasco que se utilizará para sobrevivir, debería cocinarse primero.</Spanish>
+			<French>Le Boeuf Cru peut être consommé mais devrait être cuit avant de le manger.</French>
+			<Czech>Tento hovězí steak byl měl být nejprve opečen.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_FOOD_NAME_BEEF_COOKED">
+			<English>Beefsteak (cooked)</English>
+			<German>Rindersteak (gebraten)</German>
 			<Russian>Бифштекс</Russian>
 			<Spanish>Churrasco</Spanish>
 			<French>Bifteck</French>
 			<Czech>Opečené hovězí</Czech>
 		</Key>
-		<Key ID="STR_FOODCOOKED_EQUIP_CODE_DESC_6">
+		<Key ID="STR_EQUIP_FOOD_DESC_BEEF_COOKED">
 			<English>Beefsteak to be used for sustenance.</English>
 			<German>Ein Rindersteak, welches über Feuer gebraten wurde.</German>
 			<Russian>Бифштекс, готовый к употреблению.</Russian>
@@ -5295,45 +4692,52 @@
 			<French>Le Bifteck peut être consommé.</French>
 			<Czech>Biftek může být sněden, abyste přežili.</Czech>
 		</Key>
-		<Key ID="STR_FOOD_NAME_GOAT_COOKED">
-			<English>Grilled Goat</English>
-			<German>Gegrilltes Ziegenfleisch</German>
-			<Russian>Жареная ягнятина</Russian>
-			<Spanish>Cabra a la Parrilla</Spanish>
-			<French>Chèvre grillée</French>
-			<Czech>Opečené kozí</Czech>
+		<Key ID="STR_EQUIP_FOOD_NAME_DOG_RAW">
+			<English>Dog Meat (raw)</English>
+			<German>Hundefleisch (roh)</German>
+			<Russian>Сырое мясо собаки</Russian>
+			<Spanish>La carne de perro en bruto</Spanish>
+			<French>Nourriture pour chien</French>
 		</Key>
-		<Key ID="STR_FOOD_EQUIP_GOAT_COOKED">
-			<English>Goat Meat to be used for sustenance.</English>
-			<German>Ein Stück Ziegenfleisch, welches über Feuer gut durchgebraten wurde.</German>
-			<Russian>Жареная ягнятина, готовая к употреблению.</Russian>
-			<Spanish>Cabra a la Parrilla que se utilizará para sobrevivir.</Spanish>
-			<French>La Chèvre grillée peut être consommée.</French>
-			<Czech>Kozí maso, které lze sníst, aby jste přežili.</Czech>
+		<Key ID="STR_EQUIP_FOOD_DESC_DOG_RAW">
+			<English>Dog Meat to be used for sustenance, should be cooked prior to safe eating.</English>
+			<German>Ein Stück Hundefleisch, welches vor dem Verzehr gebraten werden sollte.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_FOOD_NAME_DOG_COOKED">
+			<English>Dog Meat (cooked)</English>
+			<German>Hundefleisch (gebraten)</German>
+			<Russian>Приготовленное мясо собаки</Russian>
+			<Spanish>Carne cocinada perro</Spanish>
+			<French>Cuit viande de chien</French>
+			<Czech>Vařené maso Dog</Czech>
+		</Key>	
+		<Key ID="STR_EQUIP_FOOD_DESC_DOG_COOKED">
+			<English>Dog Meat to be used for sustenance.</English>
+			<German>Ein Stück Hundefleisch, welches über Feuer gebraten wurde.</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_TROUT_RAW">
-			<English>Steelhead</English>
+			<English>Steelhead (raw)</English>
 			<Russian>Форель</Russian>
 			<Spanish>Trucha</Spanish>
 			<Czech>Pstruh</Czech>
 			<French>Brochet</French>
-			<German>Stahlkopfforelle</German>
+			<German>Stahlkopfforelle (roh)</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_TUNA_RAW">
-			<English>Tuna</English>
+			<English>Tuna (raw)</English>
 			<Russian>Тунец</Russian>
 			<Spanish>Atún</Spanish>
 			<Czech>Tuňák</Czech>
 			<French>Thon</French>
-			<German>Thunfisch</German>
+			<German>Thunfisch (roh)</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_SEABASS_RAW">
-			<English>Seabass</English>
+			<English>Seabass (raw)</English>
 			<Russian>Окунь</Russian>
 			<Spanish>Lubina</Spanish>
 			<Czech>Mořčák</Czech>
 			<French>Bar</French>
-			<German>Wolfsbarsch</German>
+			<German>Wolfsbarsch (roh)</German>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_TROUT_RAW">
 			<English>Raw Steelhead worth 200 Blood Regen.</English>
@@ -5365,7 +4769,7 @@
 			<Spanish>Trucha (cocinada)</Spanish>
 			<Czech>Pstruh (opečený)</Czech>
 			<French>Brochet (cuit)</French>
-			<German>Gebratene Stahlkopfforelle</German>
+			<German>Stahlkopfforelle (gebraten)</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_TUNA_COOKED">
 			<English>Tuna (cooked)</English>
@@ -5373,7 +4777,7 @@
 			<Spanish>Atún (cocinado)</Spanish>
 			<Czech>Tuňák (opečený)</Czech>
 			<French>Thon (cuit)</French>
-			<German>Gebratener Thunfisch</German>
+			<German>Thunfisch (gebraten)</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_SEABASS_COOKED">
 			<English>Seabass (cooked)</English>
@@ -5381,7 +4785,7 @@
 			<Spanish>Lubina (cocinada)</Spanish>
 			<Czech>Mořčák (opečený)</Czech>
 			<French>Bar (cuit)</French>
-			<German>Gebratener Wolfsbarsch</German>
+			<German>Wolfsbarsch (gebraten)</German>
 		</Key>
 		<Key ID="STR_FOOD_EQUIP_TROUT_COOKED">
 			<English>Cooked Steelhead worth 1000 Blood Regen.</English>
@@ -5575,11 +4979,11 @@
 			<Czech>Čistá a ještě neotevřená plechovka limonády Mikhail Made. Vytvořeno Mikhailem.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_7">
-			<English>Soda (Cola)</English>
+			<English>Soda (Lirikola)</English>
 			<German>Dose (Lirikola)</German>
-			<Russian>Газировка (Кола)</Russian>
-			<Spanish>Fernet con Coca</Spanish>
-			<Czech>Nápoj (Kola)</Czech>
+			<Russian>Газировка (Lirikola)</Russian>
+			<Spanish>Fernet Lirikola</Spanish>
+			<Czech>Nápoj (Lirikola)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_7">
 			<English>A clean, unopened can of Lirikola. An o7 brand.</English>
@@ -5621,11 +5025,11 @@
 			<Czech>Čistá a ještě neotevřená plechovka sody mZLY yZLY.</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_NAME_10">
-			<English>Soda (Cola)</English>
+			<English>Soda (Peppsy Cola)</English>
 			<German>Dose (Peppsy Cola)</German>
-			<Russian>Газировка (Кола)</Russian>
-			<Spanish>Gaseosa (Cola)</Spanish>
-			<Czech>Nápoj (Kola)</Czech>
+			<Russian>Газировка (Peppsy Кола)</Russian>
+			<Spanish>Gaseosa (Peppsy Cola)</Spanish>
+			<Czech>Nápoj (Peppsy Kola)</Czech>
 		</Key>
 		<Key ID="STR_ITEMSODA_FULL_CLEAN_CODE_DESC_10">
 			<English>A clean, unopened can of Peppsy soda.</English>
@@ -6325,12 +5729,12 @@
 			<German>Eine offene Packung Kosmos Zigaretten.</German>
 		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN">
-			<English>Fuelcan (5L)</English>
-			<German>Benzinkanister (5L)</German>
-			<Russian>Канистра (5л)</Russian>
-			<Spanish>Bidón Chico (5L)</Spanish>
-			<French>Bidon de carburant (5L)</French>
-			<Czech>Kanystr (5L)</Czech>
+			<English>Fuelcan 5L</English>
+			<German>Benzinkanister 5L</German>
+			<Russian>Канистра 5л</Russian>
+			<Spanish>Bidón Chico 5L</Spanish>
+			<French>Bidon de carburant 5L</French>
+			<Czech>Kanystr 5L</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN">
 			<English>A small 5-liter can for gasoline.</English>
@@ -6340,13 +5744,13 @@
 			<French>Un petit bidon de carburant.</French>
 			<Czech>Menší kanystr s palivem.</Czech>
 		</Key>
-		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">
-			<English>Empty Fuelcan (5L)</English>
-			<German>Leerer Benzinkanister (5L)</German>
-			<Russian>Пустая канистра (5л)</Russian>
-			<Spanish>Bidón Chico Vacío (5L)</Spanish>
-			<French>Bidon vide (5L)</French>
-			<Czech>Kanystr (5L) (Prázdný)</Czech>
+		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">			
+			<English>Fuelcan 5L (empty)</English>
+			<German>Benzinkanister 5L (leer)</German>
+			<Russian>Канистра 5л (пустая)</Russian>
+			<Spanish>Bidón Chico 5L (vacío)</Spanish>
+			<French>Bidon 5L (vide)</French>
+			<Czech>Kanystr 5L (prázdný)</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_FUELCAN_EMPTY">
 			<English>A small can for gasoline.</English>
@@ -6357,33 +5761,33 @@
 			<Czech>Menší kanystr na palivo, momentálně prázdný.</Czech>
 		</Key>
 		<Key ID="STR_ITEM_NAME_JERRYCAN">
-			<English>Jerry Can (20L)</English>
-			<Spanish>Bidón (20L)</Spanish>
-			<German>Benzinkanister (20L)</German>
-			<Russian>Канистра (20л)</Russian>
-			<French>Jerrican (20L)</French>
-			<Czech>Kanystr (20L)</Czech>
+			<English>Jerry Can 20L</English>
+			<Spanish>Bidón 20L</Spanish>
+			<German>Benzinkanister 20L</German>
+			<Russian>Канистра 20л</Russian>
+			<French>Jerrican 20L</French>
+			<Czech>Kanystr 20L</Czech>
 		</Key>
 		<Key ID="STR_ITEM_DESC_JERRYCAN">
 			<English>20 litre Jerry Can that can be used for refueling vehicles and powering generators.</English>
 			<Spanish>Un bidón de combustible de 20 litros para recargar vehículos y generadores.</Spanish>
-			<German>Ein 20-Liter-Kanister, welcher zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
+			<German>Ein 20-Liter-Benzinkanister, welcher zum Betanken von Fahrzeugen und Generatoren verwendet werden kann.</German>
 			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
 			<French>Un jerrican de 20 litres qui peut être utilisé pour réaprovisionner les véhicules et générateurs de courant.</French>
 			<Czech>Dvacetilitrový kanistr, který se dá použít k dotankování vozidel a generátorů.</Czech>
-		</Key>
+		</Key>		
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
-			<English>Empty Jerry Can (20L)</English>
-			<Spanish>Bidón Vacío (20L)</Spanish>
-			<German>Leerer Benzinkanister (20L)</German>
-			<Russian>Пустая канистра (20л)</Russian>
-			<French>Jerrican vide (20L)</French>
-			<Czech>Prázdný kanystr (20L)</Czech>
-		</Key>
+			<English>Jerry Can 20L (empty)</English>
+			<German>Benzinkanister 20L (leer)</German>
+			<Russian>Канистра 20л (пустая)</Russian>
+			<Spanish>Bidón 20L (vacío)</Spanish>
+			<French>Jerrican 20L (vide)</French>
+			<Czech>Kanystr 20L (prázdný)</Czech>
+		</Key>		
 		<Key ID="STR_ITEM_DESC_JERRYCAN_EMPTY">
 			<English>An empty 20 litre Jerry Can that can be filled from cars or petrol stations.</English>
 			<Spanish>Un bidón de combustible vacío de 20 litros que puede ser recargado estaciones de servicio.</Spanish>
-			<German>Ein leerer 20-Liter-Kanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
+			<German>Ein leerer 20-Liter-Benzinkanister, der an Fahrzeugen oder Tankstellen aufgefüllt werden kann.</German>
 			<Russian>Пустая 20-ти литровая канистра, которая может быть наполнена топливом, слитым из машины или заправочной станции.</Russian>
 			<French>Un jerrican vide de 20L qui peut être rempli à partir de véhicules ou de staions servives.</French>
 			<Czech>Prázdný dvacetilitrový kanystr, který může být naplněn u benzínek nebo odstavených aut.</Czech>
@@ -27203,21 +26607,7 @@
 			<Czech>Stan (iglú) Poušť +++++</Czech>
 			<German>Wüsten-Igluzelt +++++</German>
 		</Key>
-		<Key ID="STR_FOOD_NAME_DOG_RAW">
-			<English>Raw Dog Meat</English>
-			<German>Rohes Hundefleisch</German>
-			<Russian>Сырое мясо собаки</Russian>
-			<Spanish>La carne de perro en bruto</Spanish>
-			<French>Nourriture pour chien</French>
-		</Key>
-		<Key ID="STR_FOOD_NAME_DOG_COOKED">
-			<English>Cooked Dog Meat</English>
-			<German>Gekochtes Hundefleisch</German>
-			<Russian>Приготовленное мясо собаки</Russian>
-			<Spanish>Carne cocinada perro</Spanish>
-			<French>Cuit viande de chien</French>
-			<Czech>Vařené maso Dog</Czech>
-		</Key>
+
 		<Key ID="STR_FOOD_NAME_BIOMEAT">
 			<English>Bio Meat</English>
 			<German>Biofleisch</German>
@@ -27966,12 +27356,12 @@
 			<Russian>210 литров нефти в бочке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYOILBARREL">
-			<English>Oil Barrel (Empty)</English>
-			<German>Leeres Ölfass</German>
-			<Russian>Пустая бочка нефти</Russian>
+			<English>Oil Barrel (empty)</English>
+			<German>Ölfass (leer)</German>
+			<Russian>бочка нефти (пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYOILBARREL_DESC">
-			<English>210 litres of oil per barrel. (Empty)</English>
+			<English>Empty 210 litre oil barrel.</English>
 			<German>Leeres 210 Liter Ölfass.</German>
 			<Russian>210-литровая пустая бочка нефти.</Russian>
 		</Key>
@@ -27986,12 +27376,12 @@
 			<Russian>210 литров топлива в бочке.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL">
-			<English>Fuel Barrel (Empty)</English>
-			<German>Leeres Fass (210L)</German>
-			<Russian>Пустая бочка</Russian>
+			<English>Fuel Barrel (empty)</English>
+			<German>Kraftstofffass (leer)</German>
+			<Russian>бочка (пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL_DESC">
-			<English>210 litres of fuel per barrel. (Empty)</English>
+			<English>Empty 210 litre fuel barrel.</English>
 			<German>Leeres 210 Liter Kraftstofffass.</German>
 			<Russian>210-литровая пустая бочка для топлива.</Russian>
 		</Key>
@@ -30739,11 +30129,6 @@
 			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
 			<Russian>Учёный (Жёлт. рад. костюм)</Russian>
 		</Key>
-		<Key ID="STR_DZE_SKIN_STALKER_ROOKIE_NAME">
-			<English>Stalker (Rookie)</English>
-			<German>Stalker (Anfänger)</German>
-			<Russian>Сталкер (Новичок)</Russian>
-		</Key>
 		<Key ID="STR_DZE_SKIN_STALKER_LONER_MASK_NAME">
 			<English>Stalker (Loner)</English>
 			<Russian>Сталкер (Одиночка)</Russian>
@@ -30836,16 +30221,6 @@
 			<German>Wissenschaftler (Gelber Rad-Anzug)</German>
 			<Russian>Учёный (Жёлт. рад. костюм)</Russian>
 		</Key>
-		<Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_NAME">
-			<English>Stalker (Rookie)</English>
-			<German>Stalker (Anfänger)</German>
-			<Russian>Сталкер (Новичок)</Russian>
-		</Key>
-		 <Key ID="STR_DZE_EQUIP_STALKER_ROOKIE_DESC">
-		 	<English>A pack of wornout clothings that fits an apocalyptic environment.</English>
-		 	<German>Heruntergekommene Klamotten, die gut in eine apokalyptische Umgebung passen würden.</German>
-			<Russian>Комплект поношенной одежды, подходящей для апокалиптического окружения.</Russian>
-		 </Key>
 		<Key ID="STR_DZE_EQUIP_STALKER_LONER_MASK_NAME">
 			<English>Stalker (Loner)</English>
 			<Russian>Сталкер (Одиночка)</Russian>
@@ -32122,9 +31497,9 @@
 			<Russian>Бочка метиламина</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYMETHYLAMINEBARREL">
-			<English>Methylamine Barrel (Empty)</English>
-			<German>Leeres Methylaminfass</German>
-			<Russian>Пустая бочка метиламина</Russian>
+			<English>Methylamine Barrel (empty)</English>
+			<German>Methylaminfass (leer)</German>
+			<Russian>бочка метиламина (пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METHYLAMINEBARREL_DESC">
 			<English>210 litres of Methylamine per barrel.</English>
@@ -32132,7 +31507,7 @@
 			<Russian>210-литровая бочка метиламина.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYMETHYLAMINEBARREL_DESC">
-			<English>210 litres of Methylamine per barrel. (Empty)</English>
+			<English>Empty 210 litre Methylamine barrel.</English>
 			<German>Leeres 210 Liter Methylaminfass.</German>
 			<Russian>210-литровая пустая бочка метиламина.</Russian>
 		</Key>

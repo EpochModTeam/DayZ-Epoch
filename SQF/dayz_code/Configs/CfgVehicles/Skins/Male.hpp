@@ -1054,12 +1054,6 @@ class gsc_scientist2_head_DZ : gsc_scientist1_DZ {
 	model = "\gsc_stalker\gsc_eco_suit2_head.p3d";
 };
 
-class gsc_cloth_loner_head_DZ : Survivor_DZ {
-	scope = 2;
-	displayName = $STR_DZE_SKIN_STALKER_ROOKIE_NAME;
-	model = "\gsc_stalker\gsc_cloth_loner_head.p3d";
-};
-
 class gsc_eco_stalker_mask_neutral_DZ : SoldierLight_Base_DZ {
 	scope = 2;
 	displayName = $STR_DZE_SKIN_STALKER_LONER_MASK_NAME;

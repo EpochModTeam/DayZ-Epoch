@@ -61,7 +61,7 @@ call {
 
 		// Create new unlocked safe, then delete old locked safe
 		_holder = _unlockedClass createVehicle [0,0,0];
-		_holder setDir _dir;
+		//_holder setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 		_holder setVariable ["memDir",_dir,true];
 		_holder setVectorDirAndUp _vector;
 		_holder setPosATL _pos;
@@ -89,7 +89,7 @@ call {
 
 		// Create new locked safe, then delete old unlocked safe
 		_holder = _lockedClass createVehicle [0,0,0];
-		_holder setDir _dir;
+		//_holder setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 		_holder setVariable ["memDir",_dir,true];
 		_holder setVectorDirAndUp _vector;
 		_holder setPosATL _pos;

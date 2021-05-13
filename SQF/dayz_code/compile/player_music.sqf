@@ -1,3 +1,4 @@
+private["_num","_sound","_length","_pause"];
 while {!r_player_dead} do {
 	_num = round(random 37);
 	_sound = "z_suspense_" + str(_num);

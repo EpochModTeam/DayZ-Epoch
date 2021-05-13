@@ -3,8 +3,8 @@ class ItemEtool : ItemCore
 	scope = 2;
 	model = "\dayz_equip\models\etool.p3d";
 	picture = "\dayz_equip\textures\equip_etool_ca.paa";
-	displayName = $STR_EQUIP_NAME_1;
-	descriptionShort = $STR_EQUIP_DESC_1;	
+	displayName = $STR_EQUIP_NAME_ETOOL;
+	descriptionShort = $STR_EQUIP_DESC_ETOOL;	
 };
 
 class ItemEtoolBroken : ItemCore
@@ -12,8 +12,8 @@ class ItemEtoolBroken : ItemCore
 	scope = 2;
 	model = "\dayz_equip\models\etool.p3d";
 	picture = "\dayz_epoch_c\icons\tools\ItemEtoolBroken.paa";
-	displayName = $STR_EQUIP_NAME_1_BROKEN;
-	descriptionShort = $STR_EQUIP_DESC_1_BROKEN;
+	displayName = $STR_EQUIP_NAME_ETOOL_BROKEN;
+	descriptionShort = $STR_EQUIP_DESC_ETOOL_BROKEN;
 	
 	class ItemActions
 	{

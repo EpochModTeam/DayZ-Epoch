@@ -49,3 +49,21 @@ class ItemHatchetBroken : ItemCore
 		};		
 	};
 };
+
+class ItemHatchetBlunt : ItemCore
+{
+	scope = 2;	
+	picture = "\dayz_epoch_c\icons\tools\ItemHatchetBroken.paa";
+	model = "\dayz_equip\models\hatchet.p3d";
+	displayName = $STR_EQUIP_NAME_HATCHET_DULL;
+	descriptionShort = $STR_EQUIP_DESC_HATCHET_DULL;	
+	
+	class ItemActions
+	{
+		class SharpenHatchet
+		{
+			text = $STR_ACTIONS_SHARPEN_HATCHET;
+			script = "; ['ItemHatchetBlunt','ItemHatchet'] spawn player_sharpen;";
+		};		
+	};
+};

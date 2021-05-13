@@ -183,14 +183,16 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 			};
 		};
 
-		_object = _type createVehicle [0,0,0]; //more than 2x faster than createvehicle array
-		_object setDir _dir;
-		_object setPosATL _pos;
+		_object = _type createVehicle [0,0,0]; //more than 2x faster than createvehicle array				
 		_object setDamage _damage;
+		
 		if (_vecExists) then {
 			_object setVectorDirAndUp _vector;
+		} else {
+			_object setDir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 		};
 		_object enableSimulation false;
+		_object setPosATL _pos;
 
 		_doorLocked = _type in DZE_DoorsLocked;
 		_isPlot = _type == "Plastic_Pole_EP1_DZ";

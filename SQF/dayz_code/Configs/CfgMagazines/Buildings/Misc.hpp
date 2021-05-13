@@ -212,8 +212,8 @@ class ItemWire : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\Fence_wire_kit.p3d";
 	picture = "\dayz_equip\textures\equip_fencewire_kit_CA.paa";
-	displayName = $STR_EQUIP_NAME_23;
-	descriptionShort = $STR_EQUIP_DESC_23;
+	displayName = $STR_EQUIP_NAME_WIRE_FENCE;
+	descriptionShort = $STR_EQUIP_DESC_WIRE_FENCE;
 
 	class ItemActions
 	{
@@ -236,8 +236,8 @@ class ItemTankTrap : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\tank_trap_kit.p3d";
 	picture = "\dayz_equip\textures\equip_tanktrap_kit_CA.paa";
-	displayName = $STR_EQUIP_NAME_22;
-	descriptionShort = $STR_EQUIP_DESC_22;
+	displayName = $STR_EQUIP_NAME_TANK_TRAP;
+	descriptionShort = $STR_EQUIP_DESC_TANK_TRAP;
 
 	class ItemActions
 	{

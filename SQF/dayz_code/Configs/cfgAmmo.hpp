@@ -820,7 +820,7 @@ class CfgAmmo
 	
 	class ChemLight : LitObject
 	{
-		displayName = $STR_MAG_ACTION_5;
+		displayName = $STR_MAG_ACTION_CHEMLIGHT;
 		simulation = "shotShell";
 		simulationStep = 5;
 		soundFly[] = {"", 0, 0};

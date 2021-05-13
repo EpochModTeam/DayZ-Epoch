@@ -1,4 +1,4 @@
-private "_idc";
+private["_inventory","_wpns","_mags","_item","_val","_idc"];
 _inventory = _this;
 if (count _inventory > 0) then {
 	_wpns = _inventory select 0;

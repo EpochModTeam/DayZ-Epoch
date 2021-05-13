@@ -5,8 +5,8 @@ class PartFueltank : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\fueltank.p3d";
 	picture = "\dayz_equip\textures\equip_fueltank_ca.paa";
-	displayName = $STR_EQUIP_NAME_8;
-	descriptionShort = $STR_EQUIP_DESC_8;
+	displayName = $STR_EQUIP_NAME_FUELTANK;
+	descriptionShort = $STR_EQUIP_DESC_FUELTANK;
 	
 	class ItemActions 
 	{
@@ -29,8 +29,8 @@ class PartWheel : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\wheel.p3d";
 	picture = "\dayz_equip\textures\equip_wheel_ca.paa";
-	displayName = $STR_EQUIP_NAME_9;
-	descriptionShort = $STR_EQUIP_DESC_9;
+	displayName = $STR_EQUIP_NAME_CAR_WHEEL;
+	descriptionShort = $STR_EQUIP_DESC_CAR_WHEEL;
 };
 
 class PartEngine : CA_Magazine
@@ -40,8 +40,8 @@ class PartEngine : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\engine.p3d";
 	picture = "\dayz_equip\textures\equip_engine_ca.paa";
-	displayName = $STR_EQUIP_NAME_11;
-	descriptionShort = $STR_EQUIP_DESC_11;
+	displayName = $STR_EQUIP_NAME_ENGINE;
+	descriptionShort = $STR_EQUIP_DESC_ENGINE;
 	
 	class ItemActions 
 	{
@@ -64,8 +64,8 @@ class PartVRotor : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\vrotor.p3d";
 	picture = "\dayz_equip\textures\equip_vrotor_ca.paa";
-	displayName = $STR_EQUIP_NAME_32;
-	descriptionShort = $STR_EQUIP_DESC_32;
+	displayName = $STR_EQUIP_NAME_MAIN_ROTOR;
+	descriptionShort = $STR_EQUIP_DESC_MAIN_ROTOR;
 	
 	class ItemActions 
 	{
@@ -88,8 +88,8 @@ class PartGlass : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\carglass.p3d";
 	picture = "\dayz_equip\textures\equip_carglass_ca.paa";
-	displayName = $STR_EQUIP_NAME_30;
-	descriptionShort = $STR_EQUIP_DESC_30;
+	displayName = $STR_EQUIP_NAME_WINDSCREEN_GLASS;
+	descriptionShort = $STR_EQUIP_DESC_WINDSCREEN_GLASS;
 	
 	class ItemActions 
 	{	

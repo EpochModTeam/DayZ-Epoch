@@ -5,8 +5,8 @@ class ItemTent : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
-	displayName = $STR_EQUIP_NAME_20;
-	descriptionShort = $STR_EQUIP_DESC_20;
+	displayName = $STR_EQUIP_NAME_CAMPING_TENT;
+	descriptionShort = $STR_EQUIP_DESC_CAMPING_TENT;
 	
 	class ItemActions
 	{
@@ -37,7 +37,7 @@ class ItemTentWinter : CA_Magazine
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	displayName = $STR_VEH_NAME_TENTWINTER;
-	descriptionShort = $STR_EQUIP_DESC_20;
+	descriptionShort = $STR_EQUIP_DESC_CAMPING_TENT;
 	
 	class ItemActions
 	{
@@ -68,7 +68,7 @@ class ItemDomeTent : CA_Magazine
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	displayName = $STR_VEH_NAME_DOME_TENT;
-	descriptionShort = $STR_EQUIP_DESC_20;
+	descriptionShort = $STR_EQUIP_DESC_CAMPING_TENT;
 
 	class ItemActions
 	{
@@ -99,7 +99,7 @@ class ItemWinterDomeTent : CA_Magazine
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	displayName = $STR_VEH_NAME_WINTER_DOME_TENT;
-	descriptionShort = $STR_EQUIP_DESC_20;
+	descriptionShort = $STR_EQUIP_DESC_CAMPING_TENT;
 	
 	class ItemActions
 	{
@@ -130,7 +130,7 @@ class ItemDesertTent : CA_Magazine
 	model = "\dayz_equip\models\tentbag_gear.p3d";
 	picture = "\dayz_equip\textures\equip_tentbag_ca.paa";
 	displayName = $STR_VEH_NAME_DESERT_TENT;
-	descriptionShort = $STR_EQUIP_DESC_20;
+	descriptionShort = $STR_EQUIP_DESC_CAMPING_TENT;
 
 	class ItemActions
 	{

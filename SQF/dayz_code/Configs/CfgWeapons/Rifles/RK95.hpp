@@ -17,23 +17,6 @@ class OpticsModes\
 		opticsPPEffects[] = {"OpticsCHAbera3","OpticsBlur3"};\
 		cameraDir = "";\
 	};\
-	\
-	class Iron\
-	{\
-		opticsID = 2;\
-		useModelOptics = false;\
-		opticsFlare = false;\
-		opticsDisablePeripherialVision = false;\
-		opticsZoomMin = 0.25;\
-		opticsZoomMax = 1.1;\
-		opticsZoomInit = 0.5;\
-		distanceZoomMin = 100;\
-		distanceZoomMax = 100;\
-		memoryPointCamera = "eye";\
-		visionMode[] = {};\
-		opticsPPEffects[] = {};\
-		cameraDir = "";\
-	};\
 }
 
 class RK95_DZ: AKM_DZ

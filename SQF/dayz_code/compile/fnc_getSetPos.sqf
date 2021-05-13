@@ -1,5 +1,5 @@
 //DO NOT USE IF YOU NEED ANGLE COMPENSATION!!!!
-private "_pos";
+private["_params","_thingy","_isATL","_pos"];
 
 _params = count _this;
 _thingy = _this select 0;

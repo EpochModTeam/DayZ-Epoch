@@ -3,8 +3,8 @@ class TrashJackDaniels : HandGrenade
 	scope = 2;	
 	model = "\dayz_equip\models\bottle_jd.p3d";
 	picture = "\dayz_equip\textures\equip_bottle_jd_ca.paa";
-	displayName = $STR_EQUIP_NAME_34;
-	descriptionShort = $STR_EQUIP_DESC_34;	
+	displayName = $STR_EQUIP_NAME_EMPTY_WHISKEY_BOTTLE;
+	descriptionShort = $STR_EQUIP_DESC_EMPTY_WHISKEY_BOTTLE;	
 	ammo = "JackDaniels";
 };
 

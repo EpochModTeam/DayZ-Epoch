@@ -1,4 +1,5 @@
-private["_location","_minDistance","_maxDistance","_minobjectDistance","_X","_Y","_index"];
+private["_position","_minDistance","_maxDistance","_minobjectDistance","_X","_Y","_location","_index","_PosX","_PosY","_isFlat"];
+
 
 _position = _this select 0;
 _minDistance = _this select 1;

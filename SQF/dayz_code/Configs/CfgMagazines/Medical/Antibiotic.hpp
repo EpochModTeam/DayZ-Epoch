@@ -5,13 +5,13 @@ class ItemAntibiotic_base : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\med_antibiotic_gear.p3d";
 	picture = "\dayz_equip\textures\equip_antibiotics_ca.paa";
-	displayName = $STR_EQUIP_NAME_17;	
+	displayName = $STR_EQUIP_NAME_ANTIBIOTICS;	
 };
 
 class ItemAntibiotic : ItemAntibiotic_base
 {
 	scope = 2;
-	descriptionShort = $STR_EQUIP_DESC_17;
+	descriptionShort = $STR_EQUIP_DESC_ANTIBIOTICS;
 	
 	class medical
 	{
@@ -37,7 +37,7 @@ class ItemAntibiotic : ItemAntibiotic_base
 class ItemAntibiotic6 : ItemAntibiotic
 {
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_6;
-	descriptionShort = $STR_EQUIP_DESC_48;
+	descriptionShort = $STR_EQUIP_DESC_ANTIBIOTICS_6;
 	
 	class medical
 	{
@@ -49,7 +49,7 @@ class ItemAntibiotic6 : ItemAntibiotic
 class ItemAntibiotic5 : ItemAntibiotic
 {
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_5;
-	descriptionShort = $STR_EQUIP_DESC_49;
+	descriptionShort = $STR_EQUIP_DESC_ANTIBIOTICS_5;
 	
 	class medical
 	{
@@ -61,7 +61,7 @@ class ItemAntibiotic5 : ItemAntibiotic
 class ItemAntibiotic4 : ItemAntibiotic
 {
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_4;
-	descriptionShort = $STR_EQUIP_DESC_50;
+	descriptionShort = $STR_EQUIP_DESC_ANTIBIOTICS_4;
 	
 	class medical
 	{
@@ -73,7 +73,7 @@ class ItemAntibiotic4 : ItemAntibiotic
 class ItemAntibiotic3 : ItemAntibiotic
 {
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_3;
-	descriptionShort = $STR_EQUIP_DESC_51;
+	descriptionShort = $STR_EQUIP_DESC_ANTIBIOTICS_3;
 	
 	class medical
 	{
@@ -85,7 +85,7 @@ class ItemAntibiotic3 : ItemAntibiotic
 class ItemAntibiotic2 : ItemAntibiotic
 {
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_2;
-	descriptionShort = $STR_EQUIP_DESC_52;
+	descriptionShort = $STR_EQUIP_DESC_ANTIBIOTICS_2;
 	
 	class medical
 	{
@@ -97,7 +97,7 @@ class ItemAntibiotic2 : ItemAntibiotic
 class ItemAntibiotic1 : ItemAntibiotic
 {
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_1;
-	descriptionShort = $STR_EQUIP_DESC_53;
+	descriptionShort = $STR_EQUIP_DESC_ANTIBIOTICS_1;
 	
 	class medical
 	{
@@ -110,6 +110,6 @@ class ItemAntibioticEmpty : ItemAntibiotic_base
 {
 	scope = 2;
 	displayName = $STR_EQUIP_NAME_ANTIBIOTICS_EMPTY;
-	descriptionShort = $STR_EQUIP_DESC_54;
+	descriptionShort = $STR_EQUIP_DESC_ANTIBIOTICS_EMPTY;
 	picture = "\dayz_epoch_c\icons\equipment\ItemAntibioticsEmpty.paa";
 };

@@ -29,8 +29,8 @@ class ItemBandage : CA_Magazine
 	type = 16;	
 	model = "\dayz_equip\models\fad.p3d";
 	picture = "\dayz_equip\textures\equip_fad_ca.paa";
-	displayName = $STR_EQUIP_NAME_7;
-	descriptionShort = $STR_EQUIP_DESC_7;
+	displayName = $STR_EQUIP_NAME_BANDAGE;
+	descriptionShort = $STR_EQUIP_DESC_BANDAGE;
 	
 	class ItemActions
 	{
@@ -79,8 +79,8 @@ class ItemEpinephrine : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\epi.p3d";
 	picture = "\dayz_equip\textures\equip_epi_ca.paa";
-	displayName = $STR_EQUIP_NAME_14;
-	descriptionShort = $STR_EQUIP_DESC_14;
+	displayName = $STR_EQUIP_NAME_EPI_PEN;
+	descriptionShort = $STR_EQUIP_DESC_EPI_PEN;
 };
 
 class ItemMorphine : CA_Magazine
@@ -90,8 +90,8 @@ class ItemMorphine : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\morphine.p3d";
 	picture = "\dayz_equip\textures\equip_morphine_ca.paa";
-	displayName = $STR_EQUIP_NAME_15;
-	descriptionShort = $STR_EQUIP_DESC_15;
+	displayName = $STR_EQUIP_NAME_MORPHINE;
+	descriptionShort = $STR_EQUIP_DESC_MORPHINE;
 	
 	class ItemActions
 	{
@@ -110,8 +110,8 @@ class ItemHeatPack : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\Heat_pack.p3d";
 	picture = "\dayz_equip\textures\equip_heat_pack_ca.paa";
-	displayName = $STR_EQUIP_NAME_42;
-	descriptionShort = $STR_EQUIP_DESC_42;
+	displayName = $STR_EQUIP_NAME_HEAT_PACK;
+	descriptionShort = $STR_EQUIP_DESC_HEAT_PACK;
 	
 	class ItemActions
 	{

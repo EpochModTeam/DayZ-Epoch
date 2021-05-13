@@ -207,10 +207,10 @@ class ItemBloodbag: CA_Magazine
 	scope = 2;
 	count = 1;
 	type = 256;
-	displayName = "$STR_EQUIP_NAME_16";
+	displayName = $STR_EQUIP_NAME_BLOOD_BAG;
 	model = "\dayz_equip\models\bloodbag.p3d";
 	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
-	descriptionShort = "$STR_EQUIP_DESC_16";
+	descriptionShort = $STR_EQUIP_DESC_BLOOD_BAG;
 	
 	class ItemActions 
 	{

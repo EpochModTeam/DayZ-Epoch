@@ -3,8 +3,8 @@ class ItemWaterBottle : FoodDrink
 	scope = 2;	
 	model = "\dayz_equip\models\waterbottle_gear.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_waterbottle10oz_ca.paa";
-	displayName = $STR_EQUIP_NAME_12;
-	descriptionShort = $STR_EQUIP_DESC_12;
+	displayName = $STR_EQUIP_NAME_WATER_BOTTLE;
+	descriptionShort = $STR_EQUIP_DESC_WATER_BOTTLE;
 	
 	Nutrition[] = {0,0,1000,0};
 	
@@ -81,8 +81,8 @@ class ItemWaterBottleUnfilled : CA_Magazine
 	type = 256;	
 	model = "\dayz_equip\models\waterbottle_gear.p3d";
 	picture = "\dayz_equip\textures\equip_waterbottle_empty_ca.paa";
-	displayName = $STR_EQUIP_NAME_13;
-	descriptionShort = $STR_EQUIP_DESC_13;	
+	displayName = $STR_EQUIP_NAME_WATER_BOTTLE_EMPTY;
+	descriptionShort = $STR_EQUIP_DESC_WATER_BOTTLE_EMPTY;	
 	containerWater = "ItemWaterBottle";
 	containerWaterSafe = "ItemWaterBottleSafe";
 	containerWaterInfected = "ItemWaterBottleInfected";

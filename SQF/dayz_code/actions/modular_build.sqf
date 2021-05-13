@@ -362,7 +362,7 @@ if (_canBuild select 0) then {
 	if (!_cancel) then {
 		_classname = _classnametmp;
 		_tmpbuilt = _classname createVehicle _location;
-		_tmpbuilt setdir _dir;
+		//_tmpbuilt setdir _dir; // setdir is incompatible with setVectorDirAndUp and should not be used together on the same object https://community.bistudio.com/wiki/setVectorDirAndUp
 		_tmpbuilt setVariable["memDir",_dir,true];
 		_location = _position;
 
