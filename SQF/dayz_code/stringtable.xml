@@ -1035,6 +1035,7 @@
 		<Key ID="STR_ACTIONS_SHARPEN_HATCHET">
 			<English>Sharpen Hatchet</English>
 			<German>Beil schleifen</German>
+			<Russian>Заточить топор</Russian>
 		</Key>
 		<Key ID="STR_ACTIONS_SHARPEN_KNIFE">
 			<English>Sharpen Knife</English>
@@ -2471,7 +2472,7 @@
 		<Key ID="STR_ITEM_NAME_equip_empty_barrel">
 			<English>Barrel (empty)</English>
 			<German>Fass (leer)</German>
-			<Russian>бочка (пустая)</Russian>
+			<Russian>Бочка (пустая)</Russian>
 			<Spanish>Barril (vacío)</Spanish>
 			<French>Tonneau (vide)</French>
 			<Czech>Barel (prázdný)</Czech>
@@ -2479,7 +2480,7 @@
 		<Key ID="STR_ITEM_DESC_equip_empty_barrel">
 			<English>A barrel that has been emptied of its content</English>
 			<German>Ein Fass, welches bereits geleert wurde.</German>
-			<Russian>бочка без обвеса.</Russian>
+			<Russian>Пустая бочка без содержимого.</Russian>
 			<Spanish>Un barril que su contenido fue descargado</Spanish>
 			<French>Un tonneau vidé de son contenu</French>
 			<Czech>Sud, který někdo vyprázdnil.</Czech>
@@ -3145,7 +3146,7 @@
 		<Key ID="STR_EQUIP_NAME_MATCHES_EMPTY">
 			<English>Box of Matches (empty)</English>
 			<German>Schachtel Streichhölzer (leer)</German>
-			<Russian>Пустой коробок спичек</Russian>
+			<Russian>Коробок спичек (пустой)</Russian>
 			<Czech>Prázdná krabička zápalek</Czech>
 			<Spanish>Caja vacía de Resultados</Spanish>
 			<French>Boîte d&apos;allumettes vide</French>
@@ -3161,7 +3162,7 @@
 		<Key ID="STR_EQUIP_NAME_MATCHES_WET">
 			<English>Box of Matches (wet)</English>
 			<German>Streichholzschachtel (nass)</German>
-			<Russian>Коробка промокших спичек</Russian>
+			<Russian>Коробок спичек (мокрый)</Russian>
 			<Spanish>Caja de Fósforos Mojada</Spanish>
 			<French>Boîte d&apos;Allumettes mouillées</French>
 			<Czech>Krabička mokrých zápalek</Czech>
@@ -3169,7 +3170,7 @@
 		<Key ID="STR_EQUIP_DESC_MATCHES_WET">
 			<English>Box of wet matches.</English>
 			<German>Eine Schachtel Sicherheitszündhölzer. Die Schachtel ist nass geworden und unbrauchbar.</German>
-			<Russian>Коробка промокших спичек.</Russian>
+			<Russian>Коробок промокших спичек не пригодных для использования.</Russian>
 			<Spanish>Caja de fósforos mojada.</Spanish>
 			<French>Boîte d&apos;Allumettes mouillées.</French>
 			<Czech>Krabička plná mokrých zápalek.</Czech>
@@ -3223,7 +3224,7 @@
 		<Key ID="STR_EQUIP_NAME_KNIFE_DULL">
 			<English>Hunting Knife (dull)</English>
 			<German>Jagdmesser (stumpf)</German>
-			<Russian>Затупившийся нож</Russian>
+			<Russian>Охотничий нож (тупой)</Russian>
 			<Spanish>Cuchillo Desafilado</Spanish>
 			<French>Couteau émoussé</French>
 			<Czech>Tupý nůž</Czech>
@@ -3911,6 +3912,7 @@
 		<Key ID="STR_EQUIP_DESC_MOUNTAIN_DEW">
 			<English>A Mountain Dew soda can. It is pretty rare these days. Better to keep it for later.</English>
 			<German>Eine Mountain Dew Dose. Sehr selten in diesen Tagen. Besser für später aufheben.</German>
+			<Russian>Банка газировки Mountain Dew. Довольно редкая в наши дни. Лучше оставить на потом.</Russian>
 		</Key>		
 		<Key ID="STR_EQUIP_NAME_WOOD_PILE">
 			<English>Wood Pile</English>
@@ -4695,18 +4697,19 @@
 		<Key ID="STR_EQUIP_FOOD_NAME_DOG_RAW">
 			<English>Dog Meat (raw)</English>
 			<German>Hundefleisch (roh)</German>
-			<Russian>Сырое мясо собаки</Russian>
+			<Russian>Собачатина</Russian>
 			<Spanish>La carne de perro en bruto</Spanish>
 			<French>Nourriture pour chien</French>
 		</Key>
 		<Key ID="STR_EQUIP_FOOD_DESC_DOG_RAW">
 			<English>Dog Meat to be used for sustenance, should be cooked prior to safe eating.</English>
 			<German>Ein Stück Hundefleisch, welches vor dem Verzehr gebraten werden sollte.</German>
+			<Russian>Сырое мясо собаки. Будет вкуснее и безопаснее, если его приготовить.</Russian>
 		</Key>		
 		<Key ID="STR_EQUIP_FOOD_NAME_DOG_COOKED">
 			<English>Dog Meat (cooked)</English>
 			<German>Hundefleisch (gebraten)</German>
-			<Russian>Приготовленное мясо собаки</Russian>
+			<Russian>Жареная собачатина</Russian>
 			<Spanish>Carne cocinada perro</Spanish>
 			<French>Cuit viande de chien</French>
 			<Czech>Vařené maso Dog</Czech>
@@ -4714,6 +4717,7 @@
 		<Key ID="STR_EQUIP_FOOD_DESC_DOG_COOKED">
 			<English>Dog Meat to be used for sustenance.</English>
 			<German>Ein Stück Hundefleisch, welches über Feuer gebraten wurde.</German>
+			<Russian>Приготовленное мясо собаки, готовое к употреблению.</Russian>
 		</Key>
 		<Key ID="STR_FOOD_NAME_TROUT_RAW">
 			<English>Steelhead (raw)</English>
@@ -27358,7 +27362,7 @@
 		<Key ID="STR_EPOCH_EMPTYOILBARREL">
 			<English>Oil Barrel (empty)</English>
 			<German>Ölfass (leer)</German>
-			<Russian>бочка нефти (пустая)</Russian>
+			<Russian>Бочка нефти (пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYOILBARREL_DESC">
 			<English>Empty 210 litre oil barrel.</English>
@@ -27378,7 +27382,7 @@
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL">
 			<English>Fuel Barrel (empty)</English>
 			<German>Kraftstofffass (leer)</German>
-			<Russian>бочка (пустая)</Russian>
+			<Russian>Бочка топлива (пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL_DESC">
 			<English>Empty 210 litre fuel barrel.</English>
@@ -31499,7 +31503,7 @@
 		<Key ID="STR_EPOCH_EMPTYMETHYLAMINEBARREL">
 			<English>Methylamine Barrel (empty)</English>
 			<German>Methylaminfass (leer)</German>
-			<Russian>бочка метиламина (пустая)</Russian>
+			<Russian>Бочка метиламина (пустая)</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_METHYLAMINEBARREL_DESC">
 			<English>210 litres of Methylamine per barrel.</English>
