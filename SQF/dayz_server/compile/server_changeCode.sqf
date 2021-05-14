@@ -2,7 +2,7 @@
 	changeCode - Safe, Lockbox and Door code changing script by salival (https://github.com/oiad)
 */
 
-private ["_backpacks","_charID","_characterID","_clientID","_coins","_dir","_holder","_inventory","_key","_lockedClass","_magazines","_message","_name","_object","_objectID","_objectUID","_ownerID","_ownerPUID","_player","_playerUID","_pos","_typeOf","_vector","_weapons","_worldSpace","_clientKey","_exitReason"];
+private ["_isZSC","_backpacks","_charID","_characterID","_clientID","_coins","_dir","_holder","_inventory","_key","_lockedClass","_magazines","_message","_name","_object","_objectID","_objectUID","_ownerID","_ownerPUID","_player","_playerUID","_pos","_typeOf","_vector","_weapons","_worldSpace","_clientKey","_exitReason"];
 
 if (count _this < 4) exitWith {diag_log "server_changeCode error: Improper parameter format";};
 
@@ -35,7 +35,11 @@ if (_exitReason != "") exitWith {diag_log _exitReason};
 _weapons = getWeaponCargo _object;
 _magazines = getMagazineCargo _object;
 _backpacks = getBackpackCargo _object;
-if (Z_singleCurrency) then {_coins = _object getVariable ["cashMoney",0];};
+_isZSC = false;
+if (Z_singleCurrency) then {
+	_isZSC = _typeOf in DZE_MoneyStorageClasses && _lockedClass in DZE_MoneyStorageClasses;
+};	
+if (_isZSC) then {_coins = _object getVariable ["cashMoney",0];};
 
 [_objectID,_objectUID,_object] call server_deleteObjDirect;
 
@@ -55,7 +59,7 @@ if (DZE_permanentPlot) then {
 	_worldSpace = [_dir,_pos];
 };
 
-if (Z_singleCurrency) then {_holder setVariable ["cashMoney",_coins,true];};
+if (_isZSC) then {_holder setVariable ["cashMoney",_coins,true];};
 
 _objectUID = _worldSpace call dayz_objectUID2;
 _holder setVariable ["ObjectUID",_objectUID,true];
@@ -69,7 +73,7 @@ _holder setVariable ["BackpackCargo",_backpacks,false];
 
 [_characterID,_holder,_worldSpace,_inventory,_player,_clientKey] call server_publishObj;
 
-if (Z_singleCurrency) then {
+if (_isZSC) then {
 	_key = format["CHILD:309:%1:",_objectUID] + str _inventory + ":" + str _coins + ":";
 	_key call server_hiveWrite;
 };
