@@ -126,7 +126,7 @@ call {
 		_holder setPosATL _pos;
 		_holder addMagazineCargoGlobal [getText(configFile >> "CfgVehicles" >> _packedClass >> "seedItem"),1];
 		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
-		if (_isZSC && {{_packedClass in DZE_MoneyStorageClasses} && {_coins > 0}}) then {
+		if (_isZSC && {_packedClass in DZE_MoneyStorageClasses && {_coins > 0}}) then {
 			private "_displayName";
 
 			_displayName = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
