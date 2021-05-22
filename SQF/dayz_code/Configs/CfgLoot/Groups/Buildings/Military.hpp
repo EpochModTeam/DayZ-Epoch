@@ -173,7 +173,7 @@ MilitaryCZ[] =
 
 MilitarySmallCZ[] =
 {
-	{Loot_WEAPON,		6,		Sa61_EP1},
+	{Loot_WEAPON,		6,		Sa61_DZ},
 	{Loot_WEAPON,		3,		CZ75P_DZ},
 	{Loot_WEAPON,		3,		CZ75D_DZ},
 	{Loot_WEAPON,		3,		CZ75SP_DZ},
