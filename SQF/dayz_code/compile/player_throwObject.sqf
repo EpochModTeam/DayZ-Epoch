@@ -21,13 +21,14 @@ while {_doWait} do {
 
 _distance = parseNumber format["%1",(getArray (configFile >> "CfgAmmo" >> _ammo >> "soundHit") select 3)];
 
-if (_ammo isKindOf "ChemLight" && {daytime > 18 || daytime < 7}) exitwith {
-	_distance = 10;
-	[_unit,_distance,false,_endPos] call player_alertZombies;
+if (_ammo isKindOf "ChemLight") exitwith {
+	if ((daytime > (24 - dayz_sunRise)) || (daytime < dayz_sunRise)) then {	
+		[_unit,10,false,_endPos] call player_alertZombies;
+	};
 };
 
 if (_ammo isKindOf "RoadFlare") then {
-	_distance = [60,30] select ((daytime < (24 - dayz_sunRise)) && {daytime > dayz_sunRise})
+	_distance = [60,30] select ((daytime < (24 - dayz_sunRise)) && {daytime > dayz_sunRise});
 };
 
 [_unit,_distance,false,_endPos] call player_alertZombies;
