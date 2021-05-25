@@ -34254,21 +34254,6 @@
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
 		</Key>
-
-		<!--Namalsk compatibility-->
-		<Key ID="STR_EQUIP_NAME_43">
-		 	<English>Winter Ghillie Suit</English>
-		 	<German>Winter-Ghillie-Anzug</German>
-		  	<Russian>Маскхалат (Зима)</Russian>
-		 </Key>
-       		 <Key ID="STR_EQUIP_DESC_43">
-			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.</English>
-			<Russian>Маскировочный халат типа «леший». Можно распаковать и надеть.</Russian>
-			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.</Spanish>
-			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.</Czech>
-			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.</French>
-			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.</German>
-		</Key>
 	</Package>
 </Project>
 
