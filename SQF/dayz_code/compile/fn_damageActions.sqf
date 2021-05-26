@@ -20,7 +20,7 @@ if (_inVehicle) then {
 	local _driver = driver (vehicle player);
 	if (str (_assignedRole) != str (r_player_lastSeat)) then {
 		call r_player_removeActions2;
-		if (_vehicle isKindOf "ArmoredSUV_Base_PMC" && {_vehicle animationPhase "HideGun_01" != 0} && {_vehicle emptyPositions "Gunner" == 0}) then {
+		if (_vehicle isKindOf "ArmoredSUV_DZE_Base_PMC" && {_vehicle animationPhase "HideGun_01" != 0} && {_vehicle emptyPositions "Gunner" == 0}) then {
 			//If player enters gunner's seat while hatch is closed then move them out
 			(_vehicle turretUnit [0]) action ["moveToCargo",_vehicle,(count assignedCargo _vehicle)];
 		};
