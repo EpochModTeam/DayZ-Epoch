@@ -35533,7 +35533,7 @@
 			<English>Deploying Failed!</English>
 			<German>Bauen fehlgeschlagen!</German>
 			<French>Le deployement a échouer!</French>
-			<Russian>Создание не удалос!</Russian>
+			<Russian>Создание не удалось!</Russian>
 			<Spanish>Falló la acción!</Spanish>
 		</Key>
 		<Key ID="STR_CL_DA_DEPLOY_OK">
@@ -35612,6 +35612,14 @@
 			<French>Vous avez déployer un %1 vérrouillable, la clé est: %2</French>
 			<Russian>Вы создали %1, ключ: %2.</Russian>
 			<Spanish>Has desplegado un/a %1 con cerradura, la llave es: %2</Spanish>
+		</Key>
+		<Key ID="STR_CL_DA_PACK_INTERRUPTED">
+			<English>Packing %1 interrupted!</English>
+			<Russian>Разборка прервана!</Russian>
+		</Key>
+		<Key ID="STR_CL_DA_PACKED">
+			<English>You have packed your %1 back into your %2.</English>
+			<Russian>Вы разобрали %1 обратно в %2.</Russian>
 		</Key>
 	</Package>
 
