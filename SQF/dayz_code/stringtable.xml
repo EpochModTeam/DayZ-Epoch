@@ -35323,21 +35323,21 @@
 			<English>Garage Door Opener</English>
 			<German>Garagentor-Öffner</German>
 			<French>Ouverture porte de garage</French>
-			<Russian>Гаражная дверь открыта</Russian>
+			<Russian>Открыть/Закрыть гаражную дверь</Russian>
 			<Spanish>Abridor de Garage</Spanish>
 		</Key>
 		<Key ID="STR_CL_GDO_DOOR_OPEN">
 			<English>Opening door</English>
 			<German>Tor öffnen</German>
 			<French>Ouvrir Porte</French>
-			<Russian>Открыть дверь</Russian>
+			<Russian>Дверь открыта</Russian>
 			<Spanish>Abriendo puerta</Spanish>
 		</Key>
 		<Key ID="STR_CL_GDO_DOOR_CLOSE">
 			<English>Closing Door</English>
 			<German>Tor schließen</German>
 			<French>Fermé Porte</French>
-			<Russian>Закрыть дверь</Russian>
+			<Russian>Дверь закрыта</Russian>
 			<Spanish>Cerrando puerta</Spanish>
 		</Key>
 	</Package>
