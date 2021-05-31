@@ -251,7 +251,7 @@ class SnapBuilding {
 	
 	class Stairs_DZE: FloorsWallsStairs {
 		points[] = {
-			{0,0,0,$STR_EPOCH_ACTION_SNAP_BOTTOM},
+			{0,0,0,$STR_EPOCH_ACTION_SNAP_PIVOT},
 			{0,3.65,3,$STR_EPOCH_ACTION_SNAP_FRONT},
 			{0,1.8,0,$STR_EPOCH_ACTION_SNAP_BOTTOM},
 			{-0.81,1.8,1.5,$STR_EPOCH_ACTION_SNAP_LEFT},
