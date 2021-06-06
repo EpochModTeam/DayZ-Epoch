@@ -1,11 +1,10 @@
-private ["_charID","_model","_old","_humanity","_medical","_worldspace","_zombieKills","_headShots","_humanKills","_combattimeout","_inCombat","_banditKills","_fractures","_survivalTime","_coins","_bankCoins","_globalCoins","_ConfirmedHumanKills","_ConfirmedBanditKills","_friendlies","_tagSetting"];
 closeDialog 0;
-_charID = _this select 1;
-_model = _this select 2;
+local _charID = _this select 1;
+local _model = _this select 2;
 
 if (typeOf player == _model) exitWith {};
 
-_old = player;
+local _old = player;
 _old removeAllEventHandlers "FiredNear";
 _old removeAllEventHandlers "HandleDamage";
 _old removeAllEventHandlers "Killed";
@@ -14,20 +13,24 @@ _old allowDamage false;
 _old AddEventHandler ["HandleDamage", {False}];
 
 //Logout
-_humanity = player getVariable ["humanity",0];
-_medical = player call player_sumMedical;
-_worldspace = [round(direction player),getPosATL player];
-_zombieKills = player getVariable ["zombieKills",0];
-_headShots = player getVariable ["headShots",0];
-_humanKills = player getVariable ["humanKills",0];
-_banditKills = player getVariable ["banditKills",0];
-_combattimeout = player getVariable["combattimeout",0];
-_inCombat = player getVariable ["inCombat",false];
-_survivalTime = player getVariable ["SurvivalTime",0];
-_ConfirmedHumanKills = player getVariable ["ConfirmedHumanKills",0];
-_ConfirmedBanditKills = player getVariable ["ConfirmedBanditKills",0];
-_friendlies = player getVariable ["friendlies",[]];
-_tagSetting = player getVariable ["DZE_display_name",false];
+local _humanity = player getVariable ["humanity",0];
+local _medical = player call player_sumMedical;
+local _worldspace = [round(direction player),getPosATL player];
+local _zombieKills = player getVariable ["zombieKills",0];
+local _headShots = player getVariable ["headShots",0];
+local _humanKills = player getVariable ["humanKills",0];
+local _banditKills = player getVariable ["banditKills",0];
+local _combattimeout = player getVariable["combattimeout",0];
+local _inCombat = player getVariable ["inCombat",false];
+local _survivalTime = player getVariable ["SurvivalTime",0];
+local _ConfirmedHumanKills = player getVariable ["ConfirmedHumanKills",0];
+local _ConfirmedBanditKills = player getVariable ["ConfirmedBanditKills",0];
+local _friendlies = player getVariable ["friendlies",[]];
+local _tagSetting = player getVariable ["DZE_display_name",false];
+local _radiostate = player getVariable ["radiostate",false];
+local _coins = 0;
+local _bankCoins = 0;
+local _globalCoins = 0;
 
 if (Z_SingleCurrency) then {
 	_coins = player getVariable ["cashMoney",0];
@@ -65,7 +68,7 @@ if (count _medical > 0) then {
 	} forEach (_medical select 8);
 
 	//Add fractures
-	_fractures = _medical select 9;
+	local _fractures = _medical select 9;
 //	player setVariable ["hit_legs",(_fractures select 0),true];
 //	player setVariable ["hit_hands",(_fractures select 1),true];
 	[player,"legs",(_fractures select 0)] call object_setHit;
@@ -93,6 +96,7 @@ player setVariable ["ConfirmedHumanKills",_ConfirmedHumanKills,true];
 player setVariable ["ConfirmedBanditKills",_ConfirmedBanditKills,true];
 player setVariable ["friendlies",_friendlies,true];
 player setVariable ["DZE_display_name",_tagSetting,true];
+player setVariable ["radiostate",_radiostate];
 
 if (Z_SingleCurrency) then {
 	player setVariable ["cashMoney",_coins,true];
