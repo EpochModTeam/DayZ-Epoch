@@ -206,7 +206,6 @@ class HK416_GL_SD_DZ : HK416_SD_DZ
 	{
 		Attachment_CCO = "HK416_GL_CCO_SD_DZ";
 		Attachment_Holo = "HK416_GL_Holo_SD_DZ";
-		Attachment_ACOG = "HK416_GL_ACOG_SD_DZ";
 	};
 	
 	class ItemActions
