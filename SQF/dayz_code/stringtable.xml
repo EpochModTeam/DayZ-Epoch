@@ -1279,9 +1279,9 @@
 			<Dutch>Deze %1 heeft niet voldoende brandstof.</Dutch>
 		</Key>
 		<Key ID="str_fill_notenough">
-			<English>%1 does not have enough fuel to fill all containers. Estimated %2 litres left (You needed %3 litres)</English>
-			<German>%1 hat nicht genug Kraftstoff, um alle Kraftstoffbehälter zu füllen. Es sind noch ungefähr %2 Liter übrig. (Du brauchst %3 Liter)</German>
-			<Russian>Не достаточно топлива для заполнения всех контейнеров. Осталось около %2л. (Вам нужно %3л)</Russian>
+			<English>The fuel tank does not have enough fuel to fill all containers. Estimated %1 litres left (You needed %2 litres)</English>
+			<German>Der Treibstofftank hat nicht genug Kraftstoff, um alle Kraftstoffbehälter zu füllen. Es sind noch ungefähr %1 Liter übrig. (Du brauchst %2 Liter)</German>
+			<Russian>Не достаточно топлива для заполнения всех контейнеров. Осталось около %1л. (Вам нужно %2л)</Russian>
 		</Key>
 		<Key ID="str_fill_success">
 			<English>You have filled %1 fuel container(s) with fuel. %2 has an estimated %3 litres of fuel left.</English>

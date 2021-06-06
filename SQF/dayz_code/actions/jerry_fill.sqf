@@ -24,7 +24,7 @@ _qty = _qty5 + _qty20 + _qty210;
 _fuelNeeded = (_qty5 * 5) + (_qty20 * 20) + (_qty210 * 210);
 
 //Inform if there is not enough to fill all containers in inventory, then proceed to fill available containers
-if (_fuelAmount < _fuelNeeded) then {format[localize "str_fill_notenough",typeOf _cursorTarget,_fuelAmount,_fuelNeeded] call dayz_rollingMessages;};
+if (_fuelAmount < _fuelNeeded) then {format[localize "str_fill_notenough",_fuelAmount,_fuelNeeded] call dayz_rollingMessages;};
 
 //If there is not enough to fill any of their cans then exit
 if (_fuelAmount < 5 or (_fuelAmount < 20 && _qty5 == 0) or (_fuelAmount < 210 && (_qty5 == 0 && _qty20 == 0))) exitWith {dayz_actionInProgress = false;};
