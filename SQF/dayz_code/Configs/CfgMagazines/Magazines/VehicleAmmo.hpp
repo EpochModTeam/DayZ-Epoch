@@ -900,7 +900,7 @@ class 4Rnd_AT9_Mi24P: Vehicle_ammo_base
 class 8Rnd_AT9_Mi24V: 4Rnd_AT9_Mi24P
 {
 	displayName = $STR_DZ_MAG_8RND_AT9_Mi24V_NAME;
-	descriptionShort = $STR_DZ_MAG_4RND_AT9_Mi24V_DESC;		
+	descriptionShort = $STR_DZ_MAG_8RND_AT9_Mi24V_DESC;		
 	count = 8;
 };
 class 4Rnd_AT6_Mi24V: Vehicle_ammo_base
