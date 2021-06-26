@@ -18396,6 +18396,15 @@
 			<German>Zwillings-M134</German>
 			<Russian>M134 сдвоенный</Russian>
 		</Key>
+		
+		<!-- Red Ryder BB Gun -->
+		<Key ID="STR_DZ_WPN_RED_RYDER_NAME">
+			<English>Red Ryder BB</English>
+		</Key>
+        <Key ID="STR_DZ_WPN_RED_RYDER_DESC">
+			<English>Red Ryder BB&lt;br/&gt;Caliber: 4.5mm BBs</English>
+			<German>Red Ryder BB&lt;br/&gt;Kaliber: 4.5mm BBs</German>
+		</Key>		
 
 		<!-- **** MAGAZINES **** -->
 
@@ -21926,6 +21935,22 @@
 			<Czech>Kalibr: 30x113mm&lt;br/&gt;Nábojů: 1200&lt;br/&gt;Pro: AH-64</Czech>
 			<Hungarian>Kaliber: 30x113mm&lt;br/&gt; Töltények: 1200&lt;br/&gt; Hozzá tartozó fegyver: AH-64</Hungarian>
 		</Key>
+		
+		<Key ID="STR_DZ_MAG_350RND_BB_GUN_NAME">
+			<English>350Rnd. 4.5mm mag.</English>
+			<Russian>350с. 4.5мм</Russian>
+		</Key>
+		<Key ID="STR_DZ_MAG_350RND_BB_GUN_DESC">
+			<English>Caliber: 4.5mm&lt;br/&gt;Rounds: 350&lt;br/&gt;Used in: Red Ryder BB</English>
+			<French>Calibre: 4.5mm&lt;br/&gt;Munitions : 350&lt;br/&gt;Utilisé avec: Red Ryder BB</French>
+			<Spanish>Calibre: 4.5mm&lt;br/&gt;Cartuchos: 350&lt;br/&gt;Usado en: Red Ryder BB</Spanish>
+			<Italian>Calibro: 4.5mm&lt;br/&gt;Munizioni: 350&lt;br/&gt;Usato in: Red Ryder BB</Italian>
+			<Polish>Kaliber: 4.5mm&lt;br/&gt;Naboje: 350&lt;br/&gt;Uzywany w: Red Ryder BB</Polish>
+			<Russian>Калибр: 4.5мм&lt;br/&gt;Количество: 350&lt;br/&gt;Исп. в: Red Ryder BB</Russian>
+			<German>Kaliber: 4.5mm&lt;br/&gt;Patronen: 350&lt;br/&gt;Verwendet in: Red Ryder BB</German>
+			<Czech>Kalibr: 4.5mm&lt;br/&gt;Nábojů: 350&lt;br/&gt;Pro: Red Ryder BB</Czech>
+			<Hungarian>Kaliber: 4.5mm&lt;br/&gt; Töltények: 350&lt;br/&gt; Hozzá tartozó fegyver: Red Ryder BB</Hungarian>
+		</Key>		
 
 		<!-- **** ATTACHMENTS **** -->
 

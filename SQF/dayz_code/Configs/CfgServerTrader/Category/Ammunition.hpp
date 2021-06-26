@@ -60,7 +60,7 @@ class Category_20 {
 class Category_21 {
 	class 1Rnd_Bolt_Tranquilizer {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class 12Rnd_Quiver_Wood {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
-	class 350Rnd_BB_Magazine {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
+	class 350Rnd_BB_GUN {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class 2Rnd_12Gauge_Buck {type = "trade_items";buy[] = {1,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class 2Rnd_12Gauge_Slug {type = "trade_items";buy[] = {1,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class 8Rnd_12Gauge_Slug {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {4,"ItemSilverBar"};};

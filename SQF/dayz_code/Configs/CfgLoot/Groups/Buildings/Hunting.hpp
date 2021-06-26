@@ -4,7 +4,6 @@ Hunting[] =
 	{Loot_GROUP,		10,		shotgunsingleshot},
 	{Loot_GROUP,		1,		Chainsaws},
 	{Loot_WEAPON,		1,		DMR_Gh_DZ},
-	{Loot_WEAPON,		1,		RedRyder},
 	
 	//Tools
 	{Loot_GROUP,		5,		ToolsSurvival},
@@ -14,7 +13,7 @@ Hunting[] =
 	{Loot_MAGAZINE,		2,		FoodNutmix},
 	{Loot_MAGAZINE,		1,		ItemDocument},
 	{Loot_MAGAZINE,		1,		ItemMixOil},
-	{Loot_MAGAZINE,		1,		350Rnd_BB_Magazine},
+	{Loot_MAGAZINE,		1,		350Rnd_BB_GUN},
 	
 	//Backpacks
 	{Loot_GROUP,		5,		backpacks},

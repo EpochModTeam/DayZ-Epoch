@@ -269,7 +269,7 @@ shotgunsingleshot[] = { // Residential Spawns
 	{Loot_WEAPON,		2,		LeeEnfield_DZ},
 	{Loot_WEAPON,		3,		MR43_DZ},
 	{Loot_WEAPON,		3,		Crossbow_DZ},
-	{Loot_WEAPON,		3,		RedRyder},
+	{Loot_WEAPON,		3,		RedRyder_DZ},
 	{Loot_WEAPON,		1,		CZ550_DZ},
 	{Loot_WEAPON,		1,		Mosin_DZ}
 };

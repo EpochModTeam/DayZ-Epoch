@@ -162,7 +162,7 @@ class Category_15 {
 	class Crossbow_Scope_FL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class Crossbow_CCO_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};
 	class Crossbow_Scope_MFL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};
-	class RedRyder {type = "trade_weapons";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
+	class RedRyder_DZ {type = "trade_weapons";buy[] = {1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
 	class MR43_DZ {type = "trade_weapons";buy[] = {1,"ItemSilverBar10oz"};sell[] = {8,"ItemSilverBar"};};
 	class Winchester1866_DZ {type = "trade_weapons";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	class M1014_DZ {type = "trade_weapons";buy[] = {3,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};

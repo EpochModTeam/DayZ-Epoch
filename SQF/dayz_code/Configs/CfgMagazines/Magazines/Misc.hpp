@@ -54,3 +54,16 @@ class 20Rnd_B_765x17_Ball: 10Rnd_B_765x17_Ball
 {
 	displayName = "$STR_EP1_DN_20RND_B_765X17_BALL";	
 };
+
+//Red Ryder
+class 350Rnd_BB_Magazine;
+class 350Rnd_BB_GUN: 350Rnd_BB_Magazine
+{
+	displayName = $STR_DZ_MAG_350RND_BB_GUN_NAME;	
+	descriptionShort = $STR_DZ_MAG_350RND_BB_GUN_DESC;	
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};	
+};

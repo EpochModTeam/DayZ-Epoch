@@ -78,6 +78,10 @@ class RedRyder
 {
 	weight = 1;
 };
+class RedRyder_DZ
+{
+	weight = 1;
+};
 class Saiga12K
 {
 	weight = 3.5;
