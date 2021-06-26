@@ -2294,3 +2294,23 @@ class SCAR_H_AK_ACOG_DZ
 {
 	weight = 4.7;
 };
+class AKS74_DZ
+{
+	weight = 2.7;
+};
+class AKS74_Kobra_DZ
+{
+	weight = 3;
+};
+class AKS74_PSO1_DZ
+{
+	weight = 3.6;
+};
+class AKS74_NSPU_DZ
+{
+	weight = 3.5;
+};
+class AKS74_TWS_DZ
+{
+	weight = 3.5;
+};

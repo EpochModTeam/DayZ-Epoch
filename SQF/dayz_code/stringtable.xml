@@ -16003,6 +16003,28 @@
 			<English>AK-74 GP-25 PSO-1 SD</English>
 			<Russian>АК-74 ГП-25 ПСО-1 ПБС</Russian>
 		</Key>
+		
+		<!-- AKS74 -->
+		<Key ID="STR_DZ_WPN_AKS74_NAME">
+			<English>AKS-74</English>
+			<Russian>АКС-74</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AKS74_KOBRA_NAME">
+			<English>AKS-74 Kobra</English>
+			<Russian>АКС-74 Кобра</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AKS74_PSO1_NAME">
+			<English>AKS-74 PSO-1</English>
+			<Russian>АКС-74 ПСО-1</Russian>
+		</Key>	
+		<Key ID="STR_DZ_WPN_AKS74_NSPU_NAME">
+			<English>AKS-74 NSPU</English>
+			<Russian>АКС-74 НСПУ</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_AKS74_TWS_NAME">
+			<English>AKS-74 TWS</English>
+			<Russian>АКС-74 TWS</Russian>
+		</Key>		
 
 		<!-- AKS74U -->
 		<Key ID="STR_DZ_WPN_AKS74U_NAME">

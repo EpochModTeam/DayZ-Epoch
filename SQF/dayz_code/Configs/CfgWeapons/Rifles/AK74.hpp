@@ -528,3 +528,121 @@ class AK74_GL_PSO1_SD_DZ : AK74_GL_Kobra_SD_DZ
 		};
 	};
 };
+
+class AKS_74;
+class AKS74_DZ: AKS_74 {
+	displayName = $STR_DZ_WPN_AKS74_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
+	
+	magazines[] =
+	{
+		30Rnd_545x39_AK,
+		60Rnd_545x39_AK_Taped,
+		75Rnd_545x39_RPK
+	};
+	class Attachments
+	{
+		Attachment_Kobra = "AKS74_Kobra_DZ";
+		Attachment_PSO1 = "AKS74_PSO1_DZ";
+		Attachment_NSPU = "AKS74_NSPU_DZ";
+		Attachment_Tws = "AKS74_TWS_DZ";
+	};
+	
+	class ItemActions {};
+};
+
+class AKS_74_kobra;
+class AKS74_Kobra_DZ: AKS_74_kobra {
+	displayName = $STR_DZ_WPN_AKS74_KOBRA_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
+	
+	magazines[] =
+	{
+		30Rnd_545x39_AK,
+		60Rnd_545x39_AK_Taped,
+		75Rnd_545x39_RPK
+	};	
+	
+	class Attachments {};
+	
+	class ItemActions
+	{
+		class RemoveKobra
+		{
+			text = $STR_DZ_ATT_KOBRA_RMVE;
+			script = "; ['Attachment_Kobra',_id,'AKS74_DZ'] call player_removeAttachment";
+		};
+	};	
+};
+
+class AKS_74_pso;
+class AKS74_PSO1_DZ: AKS_74_pso {
+	displayName = $STR_DZ_WPN_AKS74_PSO1_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
+	
+	magazines[] =
+	{
+		30Rnd_545x39_AK,
+		60Rnd_545x39_AK_Taped,
+		75Rnd_545x39_RPK
+	};
+
+	class Attachments {};
+	
+	class ItemActions
+	{
+		class RemovePSO1
+		{
+			text = $STR_DZ_ATT_PSO1_RMVE;
+			script = "; ['Attachment_PSO1',_id,'AKS74_DZ'] call player_removeAttachment";
+		};
+	};	
+};
+
+class AKS_74_NSPU;
+class AKS74_NSPU_DZ: AKS_74_NSPU {
+	displayName = $STR_DZ_WPN_AKS74_NSPU_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
+	
+	magazines[] =
+	{
+		30Rnd_545x39_AK,
+		60Rnd_545x39_AK_Taped,
+		75Rnd_545x39_RPK
+	};
+
+	class Attachments {};
+	
+	class ItemActions
+	{
+		class RemoveNSPU
+		{
+			text = $STR_DZ_ATT_NSPU_RMVE;
+			script = "; ['Attachment_NSPU',_id,'AKS74_DZ'] call player_removeAttachment";
+		};
+	};	
+};
+
+class AKS_74_GOSHAWK;
+class AKS74_TWS_DZ: AKS_74_GOSHAWK {
+	displayName = $STR_DZ_WPN_AKS74_TWS_NAME;
+	modes[] = {"Single","Burst","FullAuto"};
+	
+	magazines[] =
+	{
+		30Rnd_545x39_AK,
+		60Rnd_545x39_AK_Taped,
+		75Rnd_545x39_RPK
+	};
+	
+	class Attachments {};
+	
+	class ItemActions
+	{
+		class RemoveNSPU
+		{
+			text = $STR_ATTACHMENT_RMVE_TWS;
+			script = "; ['Attachment_Tws',_id,'AKS74_DZ'] call player_removeAttachment";
+		};
+	};	
+};
