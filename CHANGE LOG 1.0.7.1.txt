@@ -1,4 +1,6 @@
 [ADDED] Blunt hatchet and wet box of matches. (69408ab3) @AirwavesMan
+[ADDED] AKS-74, AKS-74 Kobra, AKS-74 PSO1, AKS-74 NSPU and AKS-74 TWS with full attachment support. (db1ed4c0) @AirwavesMan
+[UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -8,4 +10,14 @@
 [FIXED] Dupe with player_emptyContainer and dayz_actionInProgress bug. (44c94541) @F507DMT, @AirwavesMan
 [FIXED] Remove the iron sight view from the RK95 ACOG since it does not work. (ee259c4a) @IsGoose, @AirwavesMan
 [FIXED] Some building wrecks could not be removed. (b43279cd) @Seelenapparat, @AirwavesMan
+[FIXED] Wrong name of the PIVOT snappoint of all wooden stairs. (f24a8193) @AirwavesMan
+[FIXED] ArmoredSUV gunner glitch. (aeafb3b3) @TheFirstNoob, @AirwavesMan
+[FIXED] Upgrading Dome Tent and Camping Tent+++ did not work. (c245e6d3) @TheFirstNoob, @AirwavesMan
+[FIXED] Zombies got still triggert by chemlights at daytime. (2cf5a523) @AirwavesMan
+[FIXED] 4x Wood Floor wreck had the wrong name. (2e415136)  @looter809, @AirwavesMan
+[FIXED] Hive error when storage coins. (fd2214c7)  @AirwavesMan
+[FIXED] Missing description for 9x39mm sound suppressor. (908825f4) @iben, @AirwavesMan
+[FIXED] Wrong description for 8x AT9Mi24V vehicle ammo. (908825f4) @iben, @AirwavesMan
+[FIXED] Radio state variable got resetted after changing clothes. (6becd3d8) @AirwavesMan
+[FIXED] Missing side and faction entry for many epoch vehicles (4ba6fa32) @iben, @AirwavesMan
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @Seelenapparat, @AirwavesMan
