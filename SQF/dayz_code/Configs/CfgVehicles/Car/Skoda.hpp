@@ -1,6 +1,7 @@
 class Skoda;
 class Skoda_DZE: Skoda {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_SKODA_WHITE";
 	displayNameShort = "$STR_VEH_NAME_SKODA_WHITE";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -105,7 +106,8 @@ class Skoda_DZE4: Skoda_DZE3 {
 
 class SkodaBlue;
 class SkodaBlue_DZE: SkodaBlue {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_SKODA_BLUE";
 	displayNameShort = "$STR_VEH_NAME_SKODA_BLUE";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -210,7 +212,8 @@ class SkodaBlue_DZE4: SkodaBlue_DZE3 {
 
 class SkodaRed;
 class SkodaRed_DZE: SkodaRed {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_SKODA_RED";
 	displayNameShort = "$STR_VEH_NAME_SKODA_RED";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -314,7 +317,8 @@ class SkodaRed_DZE4: SkodaRed_DZE3 {
 
 class SkodaGreen;
 class SkodaGreen_DZE: SkodaGreen {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_SKODA_GREEN";
 	displayNameShort = "$STR_VEH_NAME_SKODA_GREEN";
 	vehicleClass = "DayZ Epoch Vehicles";

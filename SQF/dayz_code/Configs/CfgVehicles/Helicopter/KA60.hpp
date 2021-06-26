@@ -7,7 +7,8 @@ class Ka60_GL_PMC: Ka60_GL_BASE_PMC {
 class Ka60_GL_PMC_DZ: Ka60_GL_PMC {	
 	displayName = "$STR_VEH_NAME_KA60";
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	radartype = 0;

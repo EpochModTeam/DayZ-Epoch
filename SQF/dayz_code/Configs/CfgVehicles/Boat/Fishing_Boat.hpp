@@ -1,6 +1,7 @@
 class Fishing_Boat;
 class Fishing_Boat_DZE: Fishing_Boat {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = $STR_VEH_NAME_FISHING_BOAT;
 	vehicleClass = "DayZ Epoch Vehicles";
 	armor = 10;

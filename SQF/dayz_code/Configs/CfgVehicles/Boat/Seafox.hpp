@@ -1,6 +1,7 @@
 class SeaFox;
 class SeaFox_DZE: SeaFox {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = $STR_DN_SEAFOX;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

@@ -1,7 +1,8 @@
 class MV22;
 class MV22_DZ : MV22 { 
 	accuracy = 1000; 
-	scope = 2; 
+	side = 1;
+	faction = "USMC";
 	displayName = $STR_VEH_NAME_MV22; 
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = ""; 

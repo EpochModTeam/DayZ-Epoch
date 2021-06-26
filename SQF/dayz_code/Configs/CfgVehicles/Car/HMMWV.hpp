@@ -310,7 +310,6 @@ class HMMWV_DZE_Base: Car
 class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_DZE_Base
 {
 	expansion = 1;
-	side = 1;
 	scope = 2;
 	transportSoldier = 4;
 	transportMaxWeapons = 15;
@@ -556,7 +555,6 @@ class HMMWV_M998A2_SOV_DES_EP1_DZ: HMMWV_DZE_Base
 			weapon = "M240_veh";
 		};
 	};
-	faction = "BIS_US";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -716,7 +714,6 @@ class HMMWV_M998A2_SOV_DES_EP1_DZE4: HMMWV_M998A2_SOV_DES_EP1_DZE3
 class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_DZE_Base 
 {
 	expansion = 1;
-	side = 1;
 	scope = 2;
 	model = "\ca\wheeled_e\HMMWV\m1151_m2_gpk";
 	displayname = "$STR_VEH_NAME_HMMWV_GPK";
@@ -735,7 +732,6 @@ class HMMWV_M1151_M2_CZ_DES_EP1_DZ: HMMWV_DZE_Base
 	};
 	driverAction = "HMMWV_Driver_EP1";
 	cargoAction[] = {"HMMWV_Cargo_EP1","HMMWV_Cargo01_EP1","HMMWV_Cargo02_EP1"};
-	faction = "BIS_US";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -2172,7 +2168,6 @@ class HMMWV_DZ: HMMWV_DZE_Base {
 	model = "ca\wheeled_E\HMMWV\HMMWV";
 	picture = "\Ca\wheeled\data\ico\HMMWV_CA.paa";	
 	scope = 2;
-	side = 2;
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

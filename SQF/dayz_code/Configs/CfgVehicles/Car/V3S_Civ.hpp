@@ -19,7 +19,8 @@ class V3S_Civ_DZE : V3S_Civ {
 	vehicleClass = "DayZ Epoch Vehicles";
 	picture = "\CA\wheeled_e\data\UI\Picture_V3S_open_CA.paa";
 	crew = "";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	typicalCargo[] = {};
 	class TransportMagazines {};
 	class TransportWeapons {};
@@ -70,6 +71,8 @@ class V3S_Civ_DZE4: V3S_Civ_DZE3 {
 
 class V3S_Open_TK_CIV_EP1;
 class V3S_Open_TK_CIV_EP1_DZE: V3S_Open_TK_CIV_EP1 {
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_V3S_CIVIL_OPEN";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -123,6 +126,8 @@ class V3S_Open_TK_CIV_EP1_DZE4: V3S_Open_TK_CIV_EP1_DZE3 {
 
 class V3S_Open_TK_EP1;
 class V3S_Open_TK_EP1_DZE: V3S_Open_TK_EP1 {
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_V3S_CAMO_OPEN";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -176,7 +181,8 @@ class V3S_Open_TK_EP1_DZE4: V3S_Open_TK_EP1_DZE3 {
 
 class V3S_TK_EP1;
 class V3S_TK_EP1_DZE: V3S_TK_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_V3S_WHITE";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -232,7 +238,8 @@ class V3S_Refuel_TK_GUE_EP1;
 class V3S_Refuel_TK_GUE_EP1_DZ: V3S_Refuel_TK_GUE_EP1 {
 	displayname = "$STR_VEH_NAME_V3S_FUEL";
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	transportMaxWeapons = 10;
@@ -285,7 +292,8 @@ class V3S_Refuel_TK_GUE_EP1_DZE4: V3S_Refuel_TK_GUE_EP1_DZE3 {
 
 class V3S_Reammo_TK_GUE_EP1;
 class V3S_RA_TK_GUE_EP1_DZE: V3S_Reammo_TK_GUE_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	displayname = "$STR_VEH_NAME_V3S_ARMORED";

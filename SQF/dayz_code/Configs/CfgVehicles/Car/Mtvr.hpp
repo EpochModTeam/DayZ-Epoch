@@ -1,6 +1,7 @@
 class MTVR;
 class MTVR_DZE: MTVR {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -54,7 +55,8 @@ class MTVR_DZE4: MTVR_DZE3 {
 
 class MTVR_DES_EP1;
 class MTVR_DES_EP1_DZE : MTVR_DES_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_MTVR_DESERT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -108,7 +110,8 @@ class MTVR_DES_EP1_DZE4: MTVR_DES_EP1_DZE3 {
 
 class MtvrRefuel_DES_EP1;
 class MtvrRefuel_DES_EP1_DZ: MtvrRefuel_DES_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_MTVR_DESERT_REFUEL";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -163,7 +166,8 @@ class MtvrRefuel_DES_EP1_DZE4: MtvrRefuel_DES_EP1_DZE3 {
 
 class MtvrRefuel;
 class MtvrRefuel_DZ: MtvrRefuel {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_REFUEL";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -218,7 +222,8 @@ class MtvrRefuel_DZE4: MtvrRefuel_DZE3 {
 
 class MtvrRepair;
 class MtvrRepair_DZE: MtvrRepair {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_MTVR_AMMO";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -276,7 +281,8 @@ class MtvrRepair_DZE4: MtvrRepair_DZE3 {
 
 class MtvrReammo;
 class MtvrReammo_DZE: MtvrReammo {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_MTVR_WEAPONS";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -333,7 +339,8 @@ class MtvrReammo_DZE4: MtvrReammo_DZE3 {
 };
 
 class MTVR_Open_DZE: MTVR {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_MTVR_WOODLAND_OPEN";
 	model = "\z\addons\dayz_epoch_v\vehicles\mtvr\dze_mtvr";
 	picture = "\Ca\wheeled2\data\UI\Picture_MTVR_repair_CA.paa";

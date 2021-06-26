@@ -1,4 +1,3 @@
-
 class MTVR_Bird_base: Helicopter
 {
 	scope = 0;
@@ -9,10 +8,10 @@ class MTVR_Bird_base: Helicopter
 	icon = "\ca\air_e\data\UI\Icon_ah6j_CA.paa";	
 	vehicleClass = "DayZ Epoch Vehicles";
 	mapSize = 8;
-	side = 3;
 	maxSpeed = 135;
 	nameSound = "chopper";
-	faction = "CIV";
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	accuracy = 0.3;
 	armor = 35;

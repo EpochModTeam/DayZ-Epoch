@@ -1,6 +1,7 @@
 class BTR90;
 class BTR90_DZ: BTR90 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BTR90";
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -76,7 +77,8 @@ class BTR90_DZE4: BTR90_DZE3 {
 
 class BTR90_HQ;
 class BTR90_HQ_DZ: BTR90_HQ {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BTR90_HQ";
 	vehicleClass = "DayZ Epoch Vehicles";
 

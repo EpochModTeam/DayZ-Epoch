@@ -258,6 +258,8 @@ class CSJ_GyroC_DZ: CSJ_GyroC
 	transportMaxMagazines = 3;
 	transportMaxWeapons = 1;
 	fuelCapacity = 200;
+	side = 1;
+	faction = "USMC";
 };
 
 class CSJ_GyroC_DZE: CSJ_GyroC_DZ

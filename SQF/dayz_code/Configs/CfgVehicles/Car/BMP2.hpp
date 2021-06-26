@@ -1,6 +1,7 @@
 class BMP2_HQ_CDF;
 class BMP2_HQ_CDF_DZ: BMP2_HQ_CDF {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_CDF";
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -77,7 +78,8 @@ class BMP2_HQ_CDF_DZE4: BMP2_HQ_CDF_DZE3 {
 
 class BMP2_HQ_INS;
 class BMP2_HQ_INS_DZ: BMP2_HQ_INS {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_INS";
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -154,7 +156,8 @@ class BMP2_HQ_INS_DZE4: BMP2_HQ_INS_DZE3 {
 
 class BMP2_HQ_TK_EP1;
 class BMP2_HQ_TK_EP1_DZ: BMP2_HQ_TK_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_TK";	
 	vehicleClass = "DayZ Epoch Vehicles";
 
@@ -231,7 +234,8 @@ class BMP2_HQ_TK_EP1_DZE4: BMP2_HQ_TK_EP1_DZE3 {
 
 class BMP2_Ambul_INS;
 class BMP2_Ambul_INS_DZE: BMP2_Ambul_INS {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_AMBULANCE_INS";
 	displayNameShort = "$STR_VEH_NAME_BMP2_AMBULANCE_INS";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -300,7 +304,8 @@ class BMP2_Ambul_INS_DZE4: BMP2_Ambul_INS_DZE3 {
 
 class BMP2_Ambul_CDF;
 class BMP2_Ambul_CDF_DZE: BMP2_Ambul_CDF {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_AMBULANCE_CDF";
 	displayNameShort = "$STR_VEH_NAME_BMP2_AMBULANCE_CDF";
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -420,6 +425,8 @@ class BMP2_Ambul_Winter_DZE4: BMP2_Ambul_Winter_DZE3 {
 
 class BMP2_INS;
 class BMP2_RUST: BMP2_INS {
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_BMP2_RUST";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\bmp\bmp2_01_wrecked_co.paa","\dayz_epoch_c\skins\bmp\bmp2_02_wrecked_co.paa"};
 };

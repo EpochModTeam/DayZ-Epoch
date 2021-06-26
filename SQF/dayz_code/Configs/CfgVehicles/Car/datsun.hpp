@@ -1,5 +1,7 @@
 class datsun1_civil_1_open;
 class datsun1_civil_1_open_DZE: datsun1_civil_1_open {
+	side = 1;
+	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_PICKUP_BLUE";
 	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;
@@ -212,6 +214,8 @@ class datsun1_green_open_DZE4: datsun1_green_open_DZE3 {
 
 class datsun1_civil_2_covered;
 class datsun1_civil_2_covered_DZE: datsun1_civil_2_covered {
+	side = 1;
+	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_PICKUP_COVERED_TAN";
 	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;
@@ -419,6 +423,8 @@ class datsun1_red_covered_DZE4: datsun1_red_covered_DZE3 {
 
 class datsun1_civil_3_open;
 class datsun1_civil_3_open_DZE: datsun1_civil_3_open {
+	side = 1;
+	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_PICKUP_GREY";
 	vehicleClass = "DayZ Epoch Vehicles";
 	terrainCoef = 2.5;

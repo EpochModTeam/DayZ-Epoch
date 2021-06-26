@@ -14,6 +14,8 @@ class UH1_Base: Helicopter {
 };
 class UH1Y_DZ: UH1_Base {
 	scope = 2;
+	side = 1;
+	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_UH1Y";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

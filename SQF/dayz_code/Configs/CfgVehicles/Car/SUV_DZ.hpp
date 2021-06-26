@@ -1,6 +1,8 @@
 class SUV_DZ: SUV_Base_EP1 {
 	crew = "";
 	scope = 2;
+	side = 1;
+	faction = "USMC";	
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -83,6 +85,8 @@ class SUV_TK_CIV_EP1_DZE: SUV_Base_EP1 {
 	displayName = "$STR_VEH_NAME_SUV_BLACK";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
+	side = 1;
+	faction = "USMC";	
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

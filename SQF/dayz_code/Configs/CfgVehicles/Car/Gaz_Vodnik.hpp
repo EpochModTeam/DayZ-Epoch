@@ -1,6 +1,7 @@
 class GAZ_Vodnik_HMG;
 class GAZ_Vodnik_HMG_DZ : GAZ_Vodnik_HMG {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_VODNIK_BPPU";
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
@@ -136,7 +137,8 @@ class GAZ_Vodnik_HMG_DZE4: GAZ_Vodnik_HMG_DZE3
 
 class GAZ_Vodnik;
 class GAZ_Vodnik_DZ : GAZ_Vodnik {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_VODNIK_PKT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	typicalCargo[] = {};
@@ -286,6 +288,8 @@ class GAZ_Vodnik_DZE4: GAZ_Vodnik_DZE3
 
 class GAZ_Vodnik_MedEvac;
 class GAZ_Vodnik_MedEvac_DZE : GAZ_Vodnik_MedEvac {
+	side = 1;
+	faction = "USMC";	
 	crewVulnerable = 1;
 	displayname = "$STR_VEH_NAME_VODNIK_MEDEVAC";
 	vehicleClass = "DayZ Epoch Vehicles";

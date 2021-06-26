@@ -1,6 +1,7 @@
 class UAZ_CDF;
 class UAZ_CDF_DZE: UAZ_CDF {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_CDF";
 	vehicleClass = "DayZ Epoch Vehicles";	
 	crew = "";
@@ -96,7 +97,8 @@ class UAZ_CDF_DZE4: UAZ_CDF_DZE3 {
 
 class UAZ_INS;
 class UAZ_INS_DZE: UAZ_INS {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_INS";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -192,7 +194,8 @@ class UAZ_INS_DZE4: UAZ_INS_DZE3 {
 
 class UAZ_RU;
 class UAZ_RU_DZE: UAZ_RU {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_RU";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -288,7 +291,8 @@ class UAZ_RU_DZE4: UAZ_RU_DZE3 {
 
 class UAZ_Unarmed_TK_EP1;
 class UAZ_Unarmed_TK_EP1_DZE: UAZ_Unarmed_TK_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_TK";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -384,7 +388,8 @@ class UAZ_Unarmed_TK_EP1_DZE4: UAZ_Unarmed_TK_EP1_DZE3 {
 
 class UAZ_Unarmed_UN_EP1;
 class UAZ_Unarmed_UN_EP1_DZE: UAZ_Unarmed_UN_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_UN";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -480,7 +485,8 @@ class UAZ_Unarmed_UN_EP1_DZE4: UAZ_Unarmed_UN_EP1_DZE3 {
 
 class UAZ_Unarmed_TK_CIV_EP1;
 class UAZ_Unarmed_TK_CIV_EP1_DZE: UAZ_Unarmed_TK_CIV_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_CIVIL";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -575,7 +581,8 @@ class UAZ_Unarmed_TK_CIV_EP1_DZE4: UAZ_Unarmed_TK_CIV_EP1_DZE3 {
 };
 
 class UAZ_Rust_DZE: UAZ_Unarmed_TK_CIV_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_RUSTY";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\uaz\uaz_main_wrecked_co.paa"};
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -671,7 +678,8 @@ class UAZ_Rust_DZE4: UAZ_Rust_DZE3 {
 };
 
 class UAZ_WINTER_DZE: UAZ_Unarmed_TK_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_WINTER";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\uaz\uaz_winter.paa"};
 	vehicleClass = "DayZ Epoch Vehicles";

@@ -22,6 +22,8 @@ class AW159_Lynx_BAF_DZ: AW159_Lynx_BAF {
 	fuelCapacity = 2200;
 	supplyRadius = 2.6;
 	armor = 30;
+	side = 1;
+	faction = "USMC";
 	
 	class Turrets: Turrets
 	{

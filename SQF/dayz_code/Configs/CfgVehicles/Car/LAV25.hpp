@@ -1,6 +1,7 @@
 class LAV25;
 class LAV25_DZ: LAV25 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = $STR_VEH_NAME_LAV25;
 
 	commanderCanSee = 2+16+32;
@@ -74,7 +75,8 @@ class LAV25_DZE4: LAV25_DZE3 {
 
 class LAV25_HQ;
 class LAV25_HQ_DZ: LAV25_HQ {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_LAV25_HQ";
 
 	commanderCanSee = 2+16+32;

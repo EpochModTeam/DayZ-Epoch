@@ -1,6 +1,8 @@
 class Dingo_DZE_Base_ACR: Car
 {
 	scope = 0;
+	side = 1;
+	faction = "USMC";	
 	displayName = "$STR_ACR_DN_DINGO_MG";
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 100;

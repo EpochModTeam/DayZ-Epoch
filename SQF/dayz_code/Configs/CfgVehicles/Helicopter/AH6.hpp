@@ -1,7 +1,8 @@
 class AH6J_EP1;
 class AH6J_EP1_DZ: AH6J_EP1
 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_AH6J";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -71,7 +72,8 @@ class AH6X_DZ: AH6X_EP1 {
 	displayname = "$STR_VEH_NAME_AH6X";
 	vehicleClass = "DayZ Epoch Vehicles";
 	model = "dayz_vehicles\helicopters\greybird\greybird.p3d";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};

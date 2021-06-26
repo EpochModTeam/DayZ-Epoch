@@ -1,7 +1,8 @@
 class BAF_Jackal2_L2A1_D;
 class BAF_Jackal2_L2A1_D_DZ : BAF_Jackal2_L2A1_D 
 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_JACKAL_L2A1_DESERT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -306,6 +307,8 @@ class BAF_Jackal2_L2A1_W_DZE4: BAF_Jackal2_L2A1_W_DZE3
 class BAF_Jackal2_GMG_D;
 class BAF_Jackal2_GMG_D_DZ : BAF_Jackal2_GMG_D
 {
+	side = 1;
+	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_JACKAL_MK19_DESERT";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

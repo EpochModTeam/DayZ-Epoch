@@ -1,6 +1,8 @@
 class T810_DZE_Base_ACR: Truck
 {
 	scope = 0;
+	side = 1;
+	faction = "USMC";	
 	mapSize = 8;
 	picture = "\Ca\Wheeled_ACR\Data\UI\Picture_T810_CA.paa";
 	Icon = "\Ca\Wheeled_ACR\Data\UI\Icon_T810_CA.paa";

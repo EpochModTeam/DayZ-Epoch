@@ -1,7 +1,7 @@
 class Smallboat_1;
-class Smallboat_1_DZE: Smallboat_1
-{
-	scope = 2;
+class Smallboat_1_DZE: Smallboat_1{
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_DN_SMALLBOATA";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

@@ -2,6 +2,8 @@ class pook_H13_base;
 class pook_H13_base_DZE: pook_H13_base
 {
 	scope = 0;
+	side = 1;
+	faction = "USMC";	
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
 	enablemanualfire = 0;

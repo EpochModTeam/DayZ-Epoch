@@ -6,8 +6,9 @@ class Submarine: ship
 	class ViewPilot;
 };
 
-class Submarine_DZE_base: Submarine
-{
+class Submarine_DZE_base: Submarine {
+	side = 1;
+	faction = "USMC";	
 	displayName	= "Submarine";
 	model = "\z\addons\dayz_epoch_v\vehicles\sub\epoch_sub_01.p3d";
 	picture	= "\ca\water\data\ico\pbx_CA.paa";

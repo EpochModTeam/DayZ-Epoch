@@ -1,6 +1,7 @@
 class PBX;
 class PBX_DZE: PBX {
-	scope = 2;	
+	side = 1;
+	faction = "USMC";	
 	displayname = $STR_VEH_NAME_PBX;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -16,7 +17,8 @@ class PBX_DZE: PBX {
 
 class Zodiac;
 class Zodiac_DZE: Zodiac {
-	scope = 2;	
+	side = 1;
+	faction = "USMC";	
 	displayname = $STR_VEH_NAME_CRRC;
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

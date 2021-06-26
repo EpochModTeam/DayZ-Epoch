@@ -1,6 +1,7 @@
 class Offroad_DSHKM_Gue;
 class Offroad_DSHKM_Gue_DZ: Offroad_DSHKM_Gue {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

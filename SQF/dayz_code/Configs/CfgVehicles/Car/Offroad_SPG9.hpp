@@ -1,6 +1,7 @@
 class Offroad_SPG9_Gue;
 class Offroad_SPG9_Gue_DZ: Offroad_SPG9_Gue {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};
@@ -115,7 +116,8 @@ class Offroad_SPG9_Gue_DZE4: Offroad_SPG9_Gue_DZE3
 
 class Offroad_SPG9_TK_GUE_EP1;
 class Offroad_SPG9_TK_GUE_EP1_DZ: Offroad_SPG9_TK_GUE_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines {};

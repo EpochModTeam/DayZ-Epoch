@@ -1,6 +1,8 @@
 class ArmoredSUV_DZE_Base_PMC: Car
 {
 	scope = 0;
+	side = 1;
+	faction = "USMC";	
 	brakeDistance = 19;
 	vehicleClass = "DayZ Epoch Vehicles";
 	htMin = 60;
@@ -285,8 +287,6 @@ class ArmoredSUV_DZE_Base_PMC: Car
 class ArmoredSUV_PMC_DZ: ArmoredSUV_DZE_Base_PMC
 {
 	scope = 2;
-	side = 2;
-	faction = "PMC_BAF";
 	displayName = "$STR_VEH_NAME_SUV_ARMORED";
 	crew = "";
 	armor = 80;

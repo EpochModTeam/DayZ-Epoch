@@ -1,7 +1,8 @@
 class UAZ_MG_TK_EP1;
 class UAZ_MG_TK_EP1_DZ: UAZ_MG_TK_EP1
 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_DSHKM_TK";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -111,7 +112,8 @@ class UAZ_MG_TK_EP1_DZE4: UAZ_MG_TK_EP1_DZE3 {
 class UAZ_MG_CDF;
 class UAZ_MG_CDF_DZ: UAZ_MG_CDF
 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_DSHKM_CDF";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -221,7 +223,8 @@ class UAZ_MG_CDF_DZE4: UAZ_MG_CDF_DZE3 {
 class UAZ_MG_INS;
 class UAZ_MG_INS_DZ: UAZ_MG_INS
 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_DSHKM_INS";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -330,7 +333,8 @@ class UAZ_MG_INS_DZE4: UAZ_MG_INS_DZE3 {
 
 class UAZ_MG_RUST_EP1_DZ: UAZ_MG_TK_EP1
 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_DSHKM_RUST";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\uaz\uaz_main_wrecked_co.paa","\ca\wheeled\data\uaz_mount_002_co.paa"};
 	vehicleClass = "DayZ Epoch Vehicles";
@@ -440,7 +444,8 @@ class UAZ_MG_RUST_EP1_DZE4: UAZ_MG_RUST_EP1_DZE3 {
 
 class UAZ_MG_WINTER_DZ: UAZ_MG_TK_EP1
 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_UAZ_WINTER_DSHKM";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\uaz\uaz_winter.paa","\ca\wheeled\data\uaz_mount_002_co.paa"};
 	vehicleClass = "DayZ Epoch Vehicles";

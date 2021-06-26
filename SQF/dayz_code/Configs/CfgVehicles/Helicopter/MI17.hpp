@@ -15,6 +15,8 @@ class Mi17_DZ: Mi17_base	 {
 	displayname = $STR_VEH_NAME_MI17;
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
@@ -93,6 +95,8 @@ class Mi17_TK_EP1_DZ: Mi17_base  {
 	displayname = "$STR_VEH_NAME_MI17_TK";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -171,6 +175,8 @@ class Mi17_UN_CDF_EP1_DZ: Mi17_base  {
 	displayname = "$STR_VEH_NAME_MI17_UN";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -249,6 +255,8 @@ class Mi17_CDF_DZ: Mi17_base {
 	displayname = "$STR_VEH_NAME_MI17_CDF";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -327,6 +335,8 @@ class Mi171Sh_CZ_EP1_DZ: Mi17_base {
 	displayname = "$STR_VEH_NAME_MI17_SH";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -876,7 +886,8 @@ class Mi17_Civilian;
 class Mi17_Civilian_DZ: Mi17_Civilian {
 	displayname = "$STR_VEH_NAME_MI17_CIVIL";
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -934,7 +945,8 @@ class Mi17_medevac_CDF;
 class Mi17_medevac_CDF_DZ: Mi17_medevac_CDF {
 	displayname = "$STR_VEH_NAME_MI17_MEDEVAC_CDF";
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -991,7 +1003,8 @@ class Mi17_medevac_Ins;
 class Mi17_medevac_Ins_DZ: Mi17_medevac_Ins {
 	displayname = "$STR_VEH_NAME_MI17_MEDEVAC_INS";
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -1048,7 +1061,8 @@ class Mi17_medevac_RU;
 class Mi17_medevac_RU_DZ: Mi17_medevac_RU {
 	displayname = "$STR_VEH_NAME_MI17_MEDEVAC_RU";
 	vehicleClass = "DayZ Epoch Vehicles";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};

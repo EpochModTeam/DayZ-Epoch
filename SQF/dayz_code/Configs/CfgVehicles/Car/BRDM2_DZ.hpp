@@ -5,7 +5,8 @@ class BRDM2_HQ_TK_GUE_EP1: BRDM2_HQ_Base {
 };
 
 class BRDM2_HQ_TK_GUE_EP1_DZ: BRDM2_HQ_TK_GUE_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_BRDM2_HQ";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -298,6 +299,8 @@ class BRDM2_TK_EP1: BRDM2_Base {
 };
 
 class BRDM2_TK_EP1_DZ: BRDM2_TK_EP1 {
+	side = 1;
+	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_BRDM2_TK";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

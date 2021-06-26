@@ -1,7 +1,8 @@
 class MH6J_EP1;
 class MH6J_DZ: MH6J_EP1
 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	enablemanualfire = 0;
 	typicalCargo[] = {};

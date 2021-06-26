@@ -1,6 +1,7 @@
 class VWGolf;
 class VWGolf_DZE: VWGolf {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_VWGOLF_RED";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

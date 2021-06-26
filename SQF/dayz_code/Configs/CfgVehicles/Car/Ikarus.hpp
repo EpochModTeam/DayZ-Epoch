@@ -1,5 +1,7 @@
 class Ikarus;
 class Ikarus_DZE: Ikarus {
+	side = 1;
+	faction = "USMC";
 	vehicleClass = "DayZ Epoch Vehicles";
 	displayname = $STR_VEH_NAME_IKARUS_BLUE;
 	crew = "";
@@ -11,6 +13,8 @@ class Ikarus_DZE: Ikarus {
 
 class Ikarus_TK_CIV_EP1;
 class Ikarus_TK_CIV_EP1_DZE: Ikarus_TK_CIV_EP1 {
+	side = 1;
+	faction = "USMC";
 	vehicleClass = "DayZ Epoch Vehicles";
 	displayname = $STR_VEH_NAME_IKARUS_RED;
 	crew = "";
@@ -21,6 +25,8 @@ class Ikarus_TK_CIV_EP1_DZE: Ikarus_TK_CIV_EP1 {
 };
 
 class Ikarus_White_DZE: Ikarus_DZE {
+	side = 1;
+	faction = "USMC";
 	displayname = $STR_VEH_NAME_IKARUS_WHITE;
 	model = "\sra_civilian\wheeled\bus\bus_city.p3d";	
 	driverAction = "CityBus_Driver";

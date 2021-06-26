@@ -1,5 +1,7 @@
 class Octavia_ACR_DZE: Car {
 	scope = 2;
+	side = 1;
+	faction = "USMC";	
 	model = "\Corepatch\CorePatch_Vehicles\models\Octavia_ACR";
 	displayName = "$STR_VEH_NAME_OCTAVIA_WHITE";	
 	icon = "\Ca\Wheeled_ACR\Data\UI\Icon_Octavia_CA.paa";

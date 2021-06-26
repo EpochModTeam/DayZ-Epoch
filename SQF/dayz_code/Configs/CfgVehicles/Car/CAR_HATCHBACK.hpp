@@ -1,6 +1,7 @@
 class car_hatchback;
 class car_hatchback_DZE: car_hatchback {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_HATCHBACK_YELLOW";
 	vehicleClass = "DayZ Epoch Vehicles";
 	maxspeed = 125;

@@ -19,6 +19,8 @@ class UH1H_DZ: UH1H_base
 	displayname = "$STR_VEH_NAME_UH1H_GREEN";
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
+	side = 1;
+	faction = "USMC";	
 	crew = "";
 	model = "dayz_vehicles\helicopters\huey\huey.p3d";
 	typicalCargo[] = {};

@@ -1,6 +1,7 @@
 class car_sedan;
 class car_sedan_DZE : car_sedan {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_SEDAN_WHITE";
 	vehicleClass = "DayZ Epoch Vehicles";
 	maxspeed = 125;
@@ -106,6 +107,8 @@ class car_sedan_DZE4: car_sedan_DZE3 {
 
 class GLT_M300_ST;
 class GLT_M300_ST_DZE : GLT_M300_ST {
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_SEDAN_TAXI";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";

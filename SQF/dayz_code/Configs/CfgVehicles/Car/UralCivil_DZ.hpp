@@ -1,6 +1,7 @@
 class Ural_INS;
 class Ural_INS_DZE: Ural_INS {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_URAL_INS";
 	typicalCargo[] = {};
@@ -53,7 +54,8 @@ class Ural_INS_DZE4: Ural_INS_DZE3 {
 };
 
 class Ural_RUST_DZE: Ural_INS {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_URAL_RUST";
 	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\ural\ural_kabina_wrecked_co.paa","dayz_epoch_c\skins\ural\ural_plachta_wrecked_co.paa"};
@@ -108,7 +110,8 @@ class Ural_RUST_DZE4: Ural_RUST_DZE3 {
 
 class Ural_CDF;
 class Ural_CDF_DZE: Ural_CDF {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_URAL_CDF";
 	typicalCargo[] = {};
@@ -162,7 +165,8 @@ class URAL_CDF_DZE4: URAL_CDF_DZE3 {
 
 class UralOpen_CDF;
 class UralOpen_CDF_DZE: UralOpen_CDF {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_URAL_CDF_OPEN";
 	typicalCargo[] = {};
@@ -216,7 +220,8 @@ class UralOpen_CDF_DZE4: UralOpen_CDF_DZE3 {
 
 class Ural_TK_CIV_EP1;
 class Ural_TK_CIV_EP1_DZE: Ural_TK_CIV_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_URAL_TK";
 	typicalCargo[] = {};
@@ -270,7 +275,8 @@ class Ural_TK_CIV_EP1_DZE4: Ural_TK_CIV_EP1_DZE3 {
 
 class Ural_UN_EP1;
 class Ural_UN_EP1_DZE: Ural_UN_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	displayName = "$STR_VEH_NAME_URAL_UN";
 	typicalCargo[] = {};
@@ -324,7 +330,8 @@ class Ural_UN_EP1_DZE4: Ural_UN_EP1_DZE3 {
 
 class UralCivil;
 class UralCivil_DZE : UralCivil {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_URAL_CIVIL";
 	crew = "";
 	typicalCargo[] = {};
@@ -380,7 +387,8 @@ class UralCivil2;
 class UralCivil2_DZE : UralCivil2 {
 	displayName = "$STR_VEH_NAME_URAL_CIVIL_OPEN";
 	picture = "\Ca\wheeled\data\ico\Ural_Open_CA.paa";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -434,7 +442,8 @@ class UralCivil2_DZE4: UralCivil2_DZE3 {
 class UralSupply_TK_EP1;
 class UralSupply_TK_EP1_DZE : UralSupply_TK_EP1 {
 	displayName = "$STR_VEH_NAME_URAL_CIVIL_OPEN";
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};
@@ -487,7 +496,8 @@ class UralSupply_TK_EP1_DZE4: UralSupply_TK_EP1_DZE3 {
 
 class UralRefuel_TK_EP1;
 class UralRefuel_TK_EP1_DZ: UralRefuel_TK_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_URAL_FUEL";
 	crew = "";
 	typicalCargo[] = {};
@@ -542,7 +552,8 @@ class UralRefuel_TK_EP1_DZE4: UralRefuel_TK_EP1_DZE3 {
 
 class UralRefuel_CDF;
 class UralRefuel_CDF_DZE: UralRefuel_CDF {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_URAL_FUEL_CDF";
 	crew = "";
 	typicalCargo[] = {};
@@ -597,7 +608,8 @@ class UralRefuel_CDF_DZE4: UralRefuel_CDF_DZE3 {
 
 class UralReammo_CDF;
 class UralReammo_CDF_DZE: UralReammo_CDF {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_URAL_WEAPONS";
 	crew = "";
 	typicalCargo[] = {};
@@ -655,7 +667,8 @@ class UralReammo_CDF_DZE4: UralReammo_CDF_DZE3 {
 
 class UralRepair_CDF;
 class UralRepair_CDF_DZE: UralRepair_CDF {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_URAL_AMMO";
 	crew = "";
 	typicalCargo[] = {};
@@ -713,7 +726,8 @@ class UralRepair_CDF_DZE4: UralRepair_CDF_DZE3 {
 
 class UralRefuel_INS;
 class UralRefuel_INS_DZE: UralRefuel_INS {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_URAL_FUEL_INS";
 	crew = "";
 	typicalCargo[] = {};
@@ -768,7 +782,8 @@ class UralRefuel_INS_DZE4: UralRefuel_INS_DZE3 {
 
 class UralReammo_INS;
 class UralReammo_INS_DZE: UralReammo_INS {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_URAL_WEAPONS_INS";
 	crew = "";
 	typicalCargo[] = {};
@@ -826,7 +841,8 @@ class UralReammo_INS_DZE4: UralReammo_INS_DZE3 {
 
 class UralRepair_INS;
 class UralRepair_INS_DZE: UralRepair_INS {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayName = "$STR_VEH_NAME_URAL_AMMO_INS";
 	crew = "";
 	typicalCargo[] = {};

@@ -4,7 +4,8 @@ class AN2_DZ: An2_Base_EP1
 	displayname = $STR_VEH_NAME_AN2_GREEN;
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
-	side = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	hiddenSelections[] = {};
@@ -64,7 +65,8 @@ class An2_2_TK_CIV_EP1_DZ : An2_2_TK_CIV_EP1
 	displayname = $STR_VEH_NAME_AN2_WHITEGREEN;
 	vehicleClass = "DayZ Epoch Vehicles";
 	scope = 2;
-	side = 2;
+	side = 1;
+	faction = "USMC";
 	crew = "";
 	typicalCargo[] = {};
 	class TransportMagazines{};

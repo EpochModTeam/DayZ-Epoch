@@ -1,6 +1,7 @@
 class Lada1;
 class Lada1_DZE: Lada1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_LADA_WHITE";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -99,7 +100,8 @@ class Lada1_DZE4: Lada1_DZE3 {
 
 class Lada2;
 class Lada2_DZE: Lada2 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_LADA_RED";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -198,7 +200,8 @@ class Lada2_DZE4: Lada2_DZE3 {
 
 class LadaLM;
 class LadaLM_DZE: LadaLM {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_LADA_POLICE";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -297,7 +300,8 @@ class LadaLM_DZE4: LadaLM_DZE3 {
 
 class Lada1_TK_CIV_EP1;
 class Lada1_TK_CIV_EP1_DZE: Lada1_TK_CIV_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_LADA_GREEN";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -396,7 +400,8 @@ class Lada1_TK_CIV_EP1_DZE4: Lada1_TK_CIV_EP1_DZE3 {
 
 class Lada2_TK_CIV_EP1;
 class Lada2_TK_CIV_EP1_DZE: Lada2_TK_CIV_EP1 {
-	scope = 2;
+	side = 1;
+	faction = "USMC";
 	displayname = "$STR_VEH_NAME_LADA_HIPPY";
 	vehicleClass = "DayZ Epoch Vehicles";
 	crew = "";
@@ -495,6 +500,8 @@ class Lada2_TK_CIV_EP1_DZE4: Lada2_TK_CIV_EP1_DZE3 {
 
 class GLT_M300_LT;
 class GLT_M300_LT_DZE : GLT_M300_LT {
+	side = 1;
+	faction = "USMC";	
 	displayname = "$STR_VEH_NAME_LADA_YELLOW";
 	vehicleClass = "DayZ Epoch Vehicles";	
 	crew = "";
