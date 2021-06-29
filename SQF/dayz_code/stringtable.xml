@@ -16023,7 +16023,7 @@
 		</Key>
 		<Key ID="STR_DZ_WPN_AKS74_TWS_NAME">
 			<English>AKS-74 TWS</English>
-			<Russian>АКС-74 TWS</Russian>
+			<Russian>АКС-74 ТП</Russian>
 		</Key>		
 
 		<!-- AKS74U -->
@@ -21938,7 +21938,7 @@
 		
 		<Key ID="STR_DZ_MAG_350RND_BB_GUN_NAME">
 			<English>350Rnd. 4.5mm mag.</English>
-			<Russian>350с. 4.5мм</Russian>
+			<Russian>350п. 4.5мм</Russian>
 		</Key>
 		<Key ID="STR_DZ_MAG_350RND_BB_GUN_DESC">
 			<English>Caliber: 4.5mm&lt;br/&gt;Rounds: 350&lt;br/&gt;Used in: Red Ryder BB</English>
