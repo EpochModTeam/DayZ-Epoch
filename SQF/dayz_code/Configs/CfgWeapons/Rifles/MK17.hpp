@@ -432,66 +432,62 @@ class MK17_Sniper_DZ: SCAR_H_LNG_Sniper {
 class SCAR_H_LNG_Sniper_SD;
 class MK17_Sniper_SD_DZ: SCAR_H_LNG_Sniper_SD {
 	descriptionShort = $STR_DZ_WPN_MK17SD_SNIPER_DESC;
-	modes[] = {"SCAR_H_SD_Single","SCAR_H_SD_FullAuto"};
+	modelOptics = "\Ca\weapons_E\SCAR\TacMil_optic_8x.p3d";
+	opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};	
+	modes[] = {"SCAR_H_SD_Single", "SCAR_H_SD_FullAuto"};
 	weaponInfoType = "RscWeaponZeroing";
-	class OpticsModes
-	{
-		class StepScope
-		{
+	class OpticsModes {
+		class StepScope {
 			opticsID = 1;
 			useModelOptics = 1;
-			opticsPPEffects[] = {"OpticsCHAbera1","OpticsBlur1"};
-			opticsZoomInit = 0.227272727;
-			opticsZoomMax = 0.227272727;
-			opticsZoomMin = 0.0623;
+			opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
 			memoryPointCamera = "eye";
 			opticsFlare = 1;
 			opticsDisablePeripherialVision = 1;
-			distanceZoomMin = 100;
-			distanceZoomMax = 100;
 			cameraDir = "";
 			visionMode[] = {"Normal"};
-			discreteDistance[] = {50,100,200,300,400,500,600,700,800};
-			discreteDistanceInitIndex = 1;
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+			discreteDistanceInitIndex = 2;
+			distanceZoomMax = 120;
+			distanceZoomMin = 400;
+			opticsZoomInit = 0.1;
+			opticsZoomMax = 0.1;
+			opticsZoomMin = 0.03125;
 		};
-	};	
-	
-	class SCAR_H_SD_Single: Mode_SemiAuto
-	{
+	};
+	class SCAR_H_SD_Single : Mode_SemiAuto {
 		begin1[] = {"\RH_mgswp\sound\scarh_sd",1.0,1,75};
 		soundBegin[] = {"begin1",1};
-		dispersion = 0.0015;
-		reloadTime = 0.1;
+		dispersion = 0.00045;
 		recoil = "recoil_single_primary_3outof10";
 		recoilProne = "recoil_single_primary_prone_2outof10";
 		minRange = 2;
+		minRangeProbab = 0.3;
+		midRange = 500;
+		midRangeProbab = 0.7;
+		maxRange = 1000;
+		maxRangeProbab = 0.05;
+		aiRateOfFireDistance = 600;
+	};
+	class SCAR_H_SD_FullAuto : Mode_FullAuto {
+		begin1[] = {"\RH_mgswp\sound\scarh_sd",1.0,1,75};
+		soundBegin[] = {"begin1",1};
+		dispersion = 0.00045;
+		recoil = "recoil_single_primary_2outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
+		minRange = 0;
 		minRangeProbab = 0.1;
 		midRange = 250;
 		midRangeProbab = 0.7;
-		maxRange = 350;
-		maxRangeProbab = 0.5;
-		aiRateOfFireDistance = 350;
+		maxRange = 600;
+		maxRangeProbab = 0.05;
 	};
-	class SCAR_H_SD_FullAuto: Mode_FullAuto
-	{
-		begin1[] = {"\RH_mgswp\sound\scarh_sd",1.0,1,75};
-		soundBegin[] = {"begin1",1};
-		end1[] = {"\ca\sounds_E\weapons_E\SCAR\SCAR_SD_single1",2.5118864,1,50};
-		end2[] = {"\ca\sounds_E\weapons_E\SCAR\SCAR_SD_single2",2.5118864,1,50};
-		soundEnd[] = {"end1",0.5,"end2",0.5};
-		dispersion = 0.004;
-		reloadTime = 0.1;
-		recoil = "recoil_single_primary_2outof10";
-		recoilProne = "recoil_single_primary_prone_2outof10";
-		minRange = 2;
-		minRangeProbab = 0.1;
-		midRange = 50;
-		midRangeProbab = 0.58;
-		maxRange = 100;
-		maxRangeProbab = 0.04;
-	};	
+	distanceZoomMax = 120;
+	distanceZoomMin = 400;
+	opticsZoomInit = 0.1;
+	opticsZoomMax = 0.1;
+	opticsZoomMin = 0.03125;	
 };
-
 
 #undef MK17_ACOG
 #undef MK17_Laser

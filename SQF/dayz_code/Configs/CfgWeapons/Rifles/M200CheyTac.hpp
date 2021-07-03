@@ -27,9 +27,9 @@ class M200_CheyTac_DZ: m107
 	dispersion = 0.0005;
 	minRange = 0;
 	minRangeProbab = 0.1;
-	midRange = 1200;
+	midRange = 1600;
 	midRangeProbab = 0.7;
-	maxRange = 1800;
+	maxRange = 2400;
 	maxRangeProbab = 0.05;
 	recoil = "recoil_single_primary_9outof10";
 	recoilProne = "recoil_single_primary_prone_7outof10";

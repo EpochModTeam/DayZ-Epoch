@@ -29,7 +29,7 @@ class WA2000_DZ: m107
 	minRangeProbab = 0.1;
 	midRange = 1200;
 	midRangeProbab = 0.7;
-	maxRange = 1800;
+	maxRange = 1400;
 	maxRangeProbab = 0.05;
 	recoil = "recoil_single_primary_8outof10";
 	recoilProne = "recoil_single_primary_prone_7outof10";

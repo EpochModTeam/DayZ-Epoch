@@ -19,9 +19,9 @@ class XM2010_BASE: Rifle
 	reloadMagazineSound[] = {"ca\sounds\weapons\rifles\reload-m16-3",0.1,1,20};
 	minRange = 0;
 	minRangeProbab = 0.1;
-	midRange = 500;
+	midRange = 800;
 	midRangeProbab = 0.7;
-	maxRange = 1000;
+	maxRange = 1600;
 	maxRangeProbab = 0.05;
 	dispersion = 0.00012;
 	magazines[] = {"5Rnd_762x67_XM2010"};
@@ -74,9 +74,9 @@ class XM2010_SD_BASE: Rifle
 	reloadMagazineSound[] = {"ca\sounds\weapons\rifles\reload-m16-3",0.1,1,20};
 	minRange = 0;
 	minRangeProbab = 0.1;
-	midRange = 500;
+	midRange = 800;
 	midRangeProbab = 0.7;
-	maxRange = 1000;
+	maxRange = 1600;
 	maxRangeProbab = 0.05;
 	dispersion = 0.00012;
 	magazines[] = {"5Rnd_762x67_XM2010_SD"};

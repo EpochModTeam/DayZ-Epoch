@@ -64,6 +64,27 @@ class Groza9_Sniper_DZ: Groza9_DZ
 	distanceZoomMin = 182;
 	distanceZoomMax = 182;
 	
+	class Single: Single
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 800;
+		maxRangeProbab = 0.05;
+	};
+	class FullAuto: FullAuto
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 800;
+		maxRangeProbab = 0.05;
+	};	
+	
 	class Attachments {};
 };
 
@@ -144,6 +165,27 @@ class Groza9_Sniper_SD_DZ: Groza9_SD_DZ
 	distanceZoomMin = 182;
 	distanceZoomMax = 182;
 	
+	class Single: Single
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 800;
+		maxRangeProbab = 0.05;
+	};
+	class FullAuto: FullAuto
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 800;
+		maxRangeProbab = 0.05;
+	};	
+	
 	class ItemActions {};
 };
 
@@ -212,6 +254,27 @@ class Groza1_Sniper_DZ: Groza1_DZ
 	opticsDisablePeripherialVision = "true";
 	distanceZoomMin = 228;
 	distanceZoomMax = 228;
+	
+	class Single: Single
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 800;
+		maxRangeProbab = 0.05;
+	};
+	class FullAuto: FullAuto
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 800;
+		maxRangeProbab = 0.05;
+	};	
 	
 	class Attachments {};
 };
@@ -283,6 +346,27 @@ class Groza1_Sniper_SD_DZ: Groza1_SD_DZ
 	opticsDisablePeripherialVision = "true";
 	distanceZoomMin = 182;
 	distanceZoomMax = 182;
+	
+	class Single: Single
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 500;
+		midRangeProbab = 0.7;
+		maxRange = 900;
+		maxRangeProbab = 0.05;
+	};
+	class FullAuto: FullAuto
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 500;
+		midRangeProbab = 0.7;
+		maxRange = 900;
+		maxRangeProbab = 0.05;
+	};
 	
 	class ItemActions {};
 };

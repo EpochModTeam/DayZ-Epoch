@@ -518,6 +518,27 @@ class HK417_Sniper_DZ: HK417_DZ
 		};
 	};
 	
+	class Single: Single
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 600;
+		midRangeProbab = 0.7;
+		maxRange = 1200;
+		maxRangeProbab = 0.05;
+	};
+	class FullAuto: FullAuto
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 600;
+		maxRangeProbab = 0.05;
+	};	
+	
 	class Attachments {};
 };
 
@@ -550,6 +571,27 @@ class HK417_Sniper_SD_DZ: HK417_SD_DZ
 			discreteDistanceInitIndex = 2;
 		};
 	};
+	class Single: Single
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 600;
+		midRangeProbab = 0.7;
+		maxRange = 1200;
+		maxRangeProbab = 0.05;
+	};
+	class FullAuto: FullAuto
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 600;
+		maxRangeProbab = 0.05;
+	};	
+	
 	class ItemActions {};
 	class Attachments {};
 };

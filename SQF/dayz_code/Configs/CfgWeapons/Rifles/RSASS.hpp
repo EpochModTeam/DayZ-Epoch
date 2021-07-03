@@ -94,21 +94,10 @@ class RSASS_BASE: DMR
 class RSASS_SD_BASE: RSASS_BASE
 {
 	magazines[] = {"20Rnd_762x51_RSASS_SD"};
-	class Single: Mode_SemiAuto
+	class Single: Single
 	{
 		begin1[] = {"\dayz_epoch_c\sounds\weapons\rsass_sd_shot",2.51189,1,50};
 		soundBegin[] = {"begin1",1};
-		dispersion = 0.0015;
-		reloadTime = 0.1;
-		recoil = "recoil_single_primary_3outof10";
-		recoilProne = "recoil_single_primary_prone_2outof10";
-		minRange = 2;
-		minRangeProbab = 0.1;
-		midRange = 250;
-		midRangeProbab = 0.7;
-		maxRange = 500;
-		maxRangeProbab = 0.5;
-		aiRateOfFireDistance = 500;
 	};
 };
 

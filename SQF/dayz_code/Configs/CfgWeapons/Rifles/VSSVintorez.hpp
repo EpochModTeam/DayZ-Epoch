@@ -1,28 +1,27 @@
 class VSS_vintorez;
 class VSS_vintorez_DZE: VSS_vintorez
 {
+	modelOptics = "\ca\weapons\optika_snpiere";
+	opticsPPEffects[] = {"OpticsCHAbera3", "OpticsBlur3"};
 	class OpticsModes
 	{		
-		class Scope
+		class Scope 
 		{
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800};
+			discreteDistanceInitIndex = 2;
 			cameraDir = "";
-			distanceZoomMax = 200;
-			distanceZoomMin = 200;
+			distanceZoomMax = 300;
+			distanceZoomMin = 300;
 			memoryPointCamera = "opticView";
 			opticsDisablePeripherialVision = 1;
 			opticsFlare = 1;
 			opticsID = 1;
-			opticsPPEffects[] = {
-				"OpticsCHAbera2",
-				"OpticsBlur3"
-			};
+			opticsPPEffects[] = {"OpticsCHAbera3", "OpticsBlur3"};
 			opticsZoomInit = 0.0623;
 			opticsZoomMax = 0.0623;
 			opticsZoomMin = 0.0623;
 			useModelOptics = 1;
 			visionMode[] = {"Normal"};
-			discreteDistance[] = {100, 150, 200, 250, 300, 350, 400, 500, 600, 700, 800};
-			discreteDistanceInitIndex = 2;
 		};
 		class Ironsights: Scope
 		{
@@ -44,34 +43,34 @@ class VSS_vintorez_DZE: VSS_vintorez
 	};	
 	class Single: Mode_SemiAuto
 	{
-		dispersion = 0.0018;
+		dispersion = 0.00045;
 		soundContinuous = 0;
 		reloadTime = 0.1;
 		recoil = "recoil_single_primary_4outof10";
-		recoilProne = "recoil_single_primary_prone_4outof10";
+		recoilProne = "recoil_single_primary_prone_3outof10";
 		begin1[] = {"\dayz_epoch_c\sounds\weapons\vss_shot",1.0,1,50};
 		soundBegin[] = {"begin1",1};
-		minRange = 2;
+		minRange = 0;
 		minRangeProbab = 0.1;
-		midRange = 250;
+		midRange = 500;
 		midRangeProbab = 0.7;
-		maxRange = 500;
+		maxRange = 1000;
 		maxRangeProbab = 0.05;
 	};
 	class Full: Mode_FullAuto
 	{
-		dispersion = 0.0018;
+		dispersion = 0.00045;
 		soundContinuous = 0;
 		reloadTime = 0.08;
-		recoil = "recoil_auto_primary_3outof10";
+		recoil = "recoil_auto_primary_4outof10";
 		recoilProne = "recoil_auto_primary_prone_3outof10";
 		begin1[] = {"\dayz_epoch_c\sounds\weapons\vss_shot",1.0,1,50};
 		soundBegin[] = {"begin1",1};
 		minRange = 0;
 		minRangeProbab = 0.1;
-		midRange = 60;
+		midRange = 500;
 		midRangeProbab = 0.7;
-		maxRange = 100;
+		maxRange = 1000;
 		maxRangeProbab = 0.05;
 	};	
 	

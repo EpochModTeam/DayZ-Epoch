@@ -59,7 +59,7 @@ class M1A_SC16_BL_DZ: M14_EP1
 		dispersion = 7.125e-005;
 		reloadTime = 0.1;
 		recoil = "recoil_single_primary_3outof10";
-		recoilProne = "recoil_single_primary_prone_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		aiRateOfFire = 0.6;
 		aiRateOfFireDistance = 550;
 		minRange = 2;
@@ -183,6 +183,17 @@ class M1A_SC16_BL_Sniper_DZ: M1A_SC16_BL_DZ
 	distanceZoomMin = 329;
 	distanceZoomMax = 329;
 	optics = 1;
+	
+	class Single: Single
+	{
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 500;
+		midRangeProbab = 0.7;
+		maxRange = 1000;
+		maxRangeProbab = 0.05;
+	};	
+	
 	class Attachments {};
 };
 
@@ -209,7 +220,7 @@ class M1A_SC16_TAN_DZ: M14_EP1
 		dispersion = 7.125e-005;
 		reloadTime = 0.1;
 		recoil = "recoil_single_primary_3outof10";
-		recoilProne = "recoil_single_primary_prone_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		aiRateOfFire = 0.6;
 		aiRateOfFireDistance = 550;
 		minRange = 2;
@@ -335,6 +346,17 @@ class M1A_SC16_TAN_Sniper_DZ: M1A_SC16_TAN_DZ
 	distanceZoomMin = 329;
 	distanceZoomMax = 329;
 	optics = 1;
+	
+	class Single: Single
+	{
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 500;
+		midRangeProbab = 0.7;
+		maxRange = 1000;
+		maxRangeProbab = 0.05;
+	};	
+	
 	class Attachments {};
 };
 
@@ -360,7 +382,7 @@ class M1A_SC2_BL_DZ: M14_EP1
 		dispersion = 7.125e-005;
 		reloadTime = 0.1;
 		recoil = "recoil_single_primary_3outof10";
-		recoilProne = "recoil_single_primary_prone_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		aiRateOfFire = 0.6;
 		aiRateOfFireDistance = 550;
 		minRange = 2;
@@ -485,6 +507,17 @@ class M1A_SC2_BL_Sniper_DZ: M1A_SC2_BL_DZ
 	distanceZoomMin = 329;
 	distanceZoomMax = 329;
 	optics = 1;
+
+	class Single: Single
+	{
+		minRange = 2;
+		minRangeProbab = 0.1;
+		midRange = 500;
+		midRangeProbab = 0.7;
+		maxRange = 1000;
+		maxRangeProbab = 0.05;
+	};	
+	
 	class Attachments {};
 };
 

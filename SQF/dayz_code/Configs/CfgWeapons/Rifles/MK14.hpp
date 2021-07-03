@@ -51,7 +51,7 @@ class MK14_DZ: M14_EP1
 		soundBegin[] = {"begin1",1};
 		dispersion = 0.00045;
 		recoil = "recoil_single_primary_3outof10";
-		recoilProne = "recoil_single_primary_prone_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		minRange = 0;
 		minRangeProbab = 0.3;
 		midRange = 150;
@@ -67,7 +67,7 @@ class MK14_DZ: M14_EP1
 		maxRange = 200;
 		midRange = 80;
 		recoil = "recoil_auto_primary_5outof10";
-		recoilProne = "recoil_auto_primary_prone_5outof10";
+		recoilProne = "recoil_auto_primary_prone_4outof10";
 	};	
 	
 	class Attachments
@@ -166,6 +166,27 @@ class MK14_Sniper_DZ: MK14_DZ
 	discreteDistance[] = {100,200,300,400,500,600,700,800};
 	discreteDistanceInitIndex = 2;
 	
+	class Single: Single
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 500;
+		midRangeProbab = 0.7;
+		maxRange = 1000;
+		maxRangeProbab = 0.05;
+	};
+	class FullAuto: FullAuto
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 600;
+		maxRangeProbab = 0.05;
+	};		
+	
 	class Attachments {};
 };
 
@@ -185,7 +206,7 @@ class MK14_SD_DZ: M14_EP1
 		soundBegin[] = {"begin1",1};
 		dispersion = 0.00045;
 		recoil = "recoil_single_primary_3outof10";
-		recoilProne = "recoil_single_primary_prone_3outof10";
+		recoilProne = "recoil_single_primary_prone_2outof10";
 		minRange = 0;
 		minRangeProbab = 0.3;
 		midRange = 150;
@@ -316,6 +337,27 @@ class MK14_Sniper_SD_DZ: MK14_SD_DZ
 	weaponInfoType = "RscWeaponZeroing";
 	discreteDistance[] = {100,200,300,400,500,600,700,800};
 	discreteDistanceInitIndex = 2;
+	
+	class Single: Single
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 500;
+		midRangeProbab = 0.7;
+		maxRange = 1000;
+		maxRangeProbab = 0.05;
+	};
+	class FullAuto: FullAuto
+	{
+		dispersion = 0.00025;
+		minRange = 0;
+		minRangeProbab = 0.3;
+		midRange = 400;
+		midRangeProbab = 0.7;
+		maxRange = 600;
+		maxRangeProbab = 0.05;
+	};
 	
 	class Attachments {};
 	class ItemActions {};

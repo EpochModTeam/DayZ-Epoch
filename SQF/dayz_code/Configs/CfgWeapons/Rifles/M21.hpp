@@ -31,9 +31,9 @@ class M21_DZ: M14_EP1
 		aiRateOfFireDistance = 550;
 		minRange = 2;
 		minRangeProbab = 0.1;
-		midRange = 400;
+		midRange = 500;
 		midRangeProbab = 0.7;
-		maxRange = 650;
+		maxRange = 1000;
 		maxRangeProbab = 0.05;
 	};		
 };
@@ -66,7 +66,7 @@ class M21A5_SD_DZ: M21A5_DZ
 	picture = "\RH_mgswp\inv\mk21a5sd.paa";
 	magazines[] = {20Rnd_762x51_DMRSD};	
 	
-	class Single: Mode_SemiAuto
+	class Single: Single
 	{
 		begin1[] = {"\RH_mgswp\sound\m14sd",1.0,1,200};
 		soundBegin[] = {"begin1",1};
