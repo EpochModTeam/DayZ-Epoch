@@ -33721,12 +33721,12 @@
 		</Key>
 		<Key ID="STR_EPOCH_CHAIR">
 			<English>Wood Chair</English>
-			<German>Holzhtuhl</German>
+			<German>Holzstuhl</German>
 			<Russian>Деревянный стул</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_CHAIR_DESC">
 			<English>Wood Chair</English>
-			<German>Holzhtuhl</German>
+			<German>Holzstuhl</German>
 			<Russian>Деревянный стул.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GARAGE_GREEN">
