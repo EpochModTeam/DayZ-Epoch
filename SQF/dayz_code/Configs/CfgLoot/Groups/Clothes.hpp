@@ -84,7 +84,7 @@ ghilliesuits[] = {
 	{Loot_MAGAZINE,	1,	Skin_SniperW_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Sniper1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_Sniper1W_DZ},	
-	{Loot_MAGAZINE,	1,	SniperBanditW_DZ},
+	{Loot_MAGAZINE,	1,	Skin_SniperBanditW_DZ},
 	{Loot_MAGAZINE,	1,	Skin_GUE_Soldier_Sniper_DZ},
 	{Loot_MAGAZINE,	1,	Skin_CZ_Soldier_Sniper_EP1_DZ},
 	{Loot_MAGAZINE,	1,	Skin_CZ_Soldier_Sniper_EP1W_DZ},
