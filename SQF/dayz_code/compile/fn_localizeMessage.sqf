@@ -15,8 +15,10 @@ if (_type in _multiArray) then {
 		_index = _forEachIndex;
 		if (typeName _x == "ARRAY") then {
 			{
-				if (["STR_",_x] call fnc_inString) then {
-					(_message select _index) set [_forEachIndex, localize _x];
+				if (typeName _x == "STRING") then {
+					if (["STR_",_x] call fnc_inString) then {
+						(_message select _index) set [_forEachIndex, localize _x];
+					};
 				};
 			} forEach _x;
 			_message set [_index, format _x];
