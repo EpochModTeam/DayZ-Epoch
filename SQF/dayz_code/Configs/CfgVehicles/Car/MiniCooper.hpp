@@ -227,7 +227,8 @@ class Mini_Cooper_base: epoch_car
 class Mini_Cooper_DZE: Mini_Cooper_base
 {
 	scope = 2;
-	displayname = "$STR_VEH_NAME_MINI_COOPER";	
+	displayname = "$STR_VEH_NAME_MINI_COOPER";
+	terrainCoef = 5;
 	
 	class Upgrades {
 		ItemORP[] = {"Mini_Cooper_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
