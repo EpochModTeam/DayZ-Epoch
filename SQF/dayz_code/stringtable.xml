@@ -16200,6 +16200,9 @@
 			<Russian>G36A ПБС (Камуфляж)</Russian>
 			<German>G36A Tarn SD</German>
 		</Key>
+		<Key ID="STR_DZ_WPN_G36A_NAME">
+			<English>G36A</English>
+		</Key>		
 		<Key ID="STR_DZ_WPN_G36K_CAMO_NAME">
 			<English>G36K Camo</English>
 			<Russian>G36K (Камуфляж)</Russian>
@@ -16210,6 +16213,9 @@
 			<Russian>G36K ПБС (Камуфляж)</Russian>
 			<German>G36K Tarn SD</German>
 		</Key>
+		<Key ID="STR_DZ_WPN_G36K_NAME">
+			<English>G36K</English>
+		</Key>		
 
 		<!-- MP5 -->
 		<Key ID="STR_DZ_WPN_MP5_NAME">

@@ -167,6 +167,14 @@ class G36K_Camo_SD_DZ : G36_C_SD_eotech
 	};
 };
 
+class G36K_DZ : G36K_Camo_DZ
+{
+    model = "\ca\weapons\G36\G36_K";
+    picture = "\ca\weapons\G36\Data\Equip\w_g36k_ca.paa";
+	displayName = $STR_DZ_WPN_G36K_NAME;	
+	class Attachments {};
+};
+
 class G36A_Camo_DZ : G36K_Camo_DZ
 {
 	model = "z\addons\dayz_communityweapons\g36\g36a_camo.p3d";
@@ -210,4 +218,12 @@ class G36A_Camo_SD_DZ : G36K_Camo_SD_DZ
 			script = "; ['Attachment_Sup556',_id,'G36A_Camo_DZ'] call player_removeAttachment";
 		};
 	};
+};
+
+class G36A_DZ : G36A_Camo_DZ
+{
+    model = "\ca\weapons\G36\G36";
+    picture = "\ca\weapons\G36\Data\Equip\w_g36_ca.paa";
+	displayName = $STR_DZ_WPN_G36A_NAME;	
+	class Attachments {};
 };

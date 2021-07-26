@@ -394,11 +394,19 @@ class G36A_Camo_DZ
 {
 	weight = 3.6;
 };
+class G36A_DZ
+{
+	weight = 3.6;
+};
 class G36C_Camo_DZ
 {
 	weight = 2.8;
 };
 class G36K
+{
+	weight = 3;
+};
+class G36K_DZ
 {
 	weight = 3;
 };
