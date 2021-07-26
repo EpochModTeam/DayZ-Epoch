@@ -1,5 +1,7 @@
 [ADDED] Blunt hatchet and wet box of matches. (69408ab3) @AirwavesMan
 [ADDED] AKS-74, AKS-74 Kobra, AKS-74 PSO1, AKS-74 NSPU and AKS-74 TWS with full attachment support. (db1ed4c0) @AirwavesMan
+[ADDED] Red Ryder BB gun and magazine as Epoch version. (597e6086) @AirwavesMan
+[ADDED] G36A and G36K as Epoch version. (e0a00512) @AirwavesMan
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
@@ -20,4 +22,5 @@
 [FIXED] Wrong description for 8x AT9Mi24V vehicle ammo. (908825f4) @iben, @AirwavesMan
 [FIXED] Radio state variable got resetted after changing clothes. (6becd3d8) @AirwavesMan
 [FIXED] Missing side and faction entry for many epoch vehicles (4ba6fa32) @iben, @AirwavesMan
+[FIXED] Missing terrainCoef for the Mini Cooper. (53d92ba3) @DeVloek, @AirwavesMan
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @Seelenapparat, @AirwavesMan
