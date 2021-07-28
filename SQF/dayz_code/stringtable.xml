@@ -32703,39 +32703,51 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_CENTER">
 			<English>Back Center</English>
+			<German>Hinten Mitte</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_LEFT">
 			<English>Back Left</English>
+			<German>Hinten Links</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_RIGHT">
 			<English>Back Right</English>
+			<German>Hinten Rechts</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_CENTER">
 			<English>Front Center</English>
+			<German>Vorne Mitte</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_LEFT">
 			<English>Front Left</English>
+			<German>Vorne Links</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_RIGHT">
 			<English>Front Right</English>
+			<German>Vorne Rechts</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_CENTER">
 			<English>Left Center</English>
+			<German>Linke Mitte</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_BACK">
 			<English>Left Back</English>
+			<German>Links Hinten</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_FRONT">
 			<English>Left Front</English>
+			<German>Links Vorne</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_CENTER">
 			<English>Right Center</English>
+			<German>Rechte Mitte</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_BACK">
 			<English>Right Back</English>
+			<German>Rechts Hinten</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_FRONT">
 			<English>Right Front</English>
+			<German>Rechts Vorne</German>
 		</Key>
 		<Key ID="STR_EPOCH_ACTION_VECTORS">
 			<English>Vectors:</English>
