@@ -32701,6 +32701,42 @@
 			<German>Spitze</German>
 			<Russian>Верхняя</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_CENTER">
+			<English>Back Center</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_LEFT">
+			<English>Back Left</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_RIGHT">
+			<English>Back Right</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_CENTER">
+			<English>Front Center</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_LEFT">
+			<English>Front Left</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_RIGHT">
+			<English>Front Right</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_CENTER">
+			<English>Left Center</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_BACK">
+			<English>Left Back</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_LEFT_FRONT">
+			<English>Left Front</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_CENTER">
+			<English>Right Center</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_BACK">
+			<English>Right Back</English>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_RIGHT_FRONT">
+			<English>Right Front</English>
+		</Key>
 		<Key ID="STR_EPOCH_ACTION_VECTORS">
 			<English>Vectors:</English>
 			<German>Vektoren:</German>
