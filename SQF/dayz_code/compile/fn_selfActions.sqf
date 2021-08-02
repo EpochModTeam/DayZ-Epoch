@@ -616,7 +616,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	};
 
 	//Allow owner to unlock vault
-	if (_isClose && !keypadCancel && {(_typeOfCursorTarget in DZE_LockedStorage)  && {_characterID != "0"}}) then {
+	if (_isClose && !keypadCancel && {(_typeOfCursorTarget in (DZE_LockedStorage + DZE_UnLockedStorage)) && {_characterID != "0"}}) then {
 		if (s_player_unlockvault < 0) then {
 			local _combi = [];
 			if (_typeOfCursorTarget in DZE_LockedStorage) then {
