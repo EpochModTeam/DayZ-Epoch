@@ -198,6 +198,11 @@ if (!isDedicated) then {
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
 	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
 	fnc_remoteMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_remoteMessage.sqf";
+	
+	if (DZE_Remote_Vehicle) then {
+		remoteVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remoteVehicle\remoteVehicle.sqf";
+		rv_vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remoteVehicle\vehicleInfo.sqf";
+	};	
 
 	// Weather
 	if (DZE_Weather in [3,4]) then {

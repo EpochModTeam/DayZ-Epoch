@@ -179,6 +179,18 @@ if (!isDedicated) then {
 		["ItemGPS",localize "STR_CL_CA_RANGE_DOWN","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE - 100) max 1000; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call dayz_rollingMessages;","true"]
 	*/
 	];	
+	
+	DZE_Remote_Vehicle = false;	//	Enable/Disable the Remote Vehicle options like ejecting players from a vehicle or lock/unlock the vehicle from the distance just by the key.
+	
+	if (DZE_Remote_Vehicle) then {
+		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
+			["ItemKey",localize "STR_CL_RV_CA_EJECT","spawn remoteVehicle;","true",1],
+			["ItemKey",localize "STR_CL_RV_CA_ENGINE","spawn remoteVehicle;","true",2],
+			["ItemKey",localize "STR_CL_RV_CA_UNLOCK","spawn remoteVehicle;","true",3],
+			["ItemKey",localize "STR_CL_RV_CA_LOCK","spawn remoteVehicle;","true",4],
+			["ItemKey",localize "STR_CL_RV_CA_LIGHTS","spawn remoteVehicle;","true",5]		
+		];
+	};	
 };
 
 // Both
