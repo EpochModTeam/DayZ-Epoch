@@ -41,7 +41,6 @@ if (isServer) then {
 	dayz_serverPUIDArray = [];
 	dayz_serverClientKeys = [];
 	dayz_traps = [];
-	dead_bodyCleanup = [];
 	needUpdate_objects = [];
 	dayz_choppedTrees = [];
 	dayz_ghostPlayers = [];
