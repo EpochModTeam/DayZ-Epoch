@@ -112,7 +112,12 @@ if (!isDedicated) then {
 	//ui
 	player_toggleSoundMute = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_toggleSoundMute.sqf";
 	player_toggleStreamerMode = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_toggleStreamerMode.sqf";
-	player_selectSlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";
+	if (!isNil "DZE_CLICK_ACTIONS" && {count DZE_CLICK_ACTIONS > 0}) then {
+		player_selectSlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\Rightclicks\ui_selectSlot_addon.sqf";
+	} else {
+		player_selectSlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\Rightclicks\ui_selectSlot_vanilla.sqf";
+		DZE_CLICK_ACTIONS = nil;
+	};	
 	player_selectWeapon = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_selectWeapon.sqf";
 	player_markMap = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_markMap.sqf";
 	player_gearSet = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_gearSet.sqf";
