@@ -9,4 +9,9 @@ class 7Rnd_50AE_Deagle: CA_Magazine
 	ammo = "B_357mag_Ball";
 	count = 7;
 	initSpeed = 400;
+	
+	class ItemActions
+	{
+		COMBINE_MAG
+	};	
 };
