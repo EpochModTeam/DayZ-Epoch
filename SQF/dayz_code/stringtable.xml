@@ -22468,6 +22468,7 @@
 		</Key>
 		<Key ID="str_success_gutted_mutant">
 			<English>You have carved the heart of the %1 from it's chest.</English>
+			<German>Du hast das Herz des %1 aus seiner Brust herausgeschnitten.</German>
 		</Key>						  
 		<Key ID="str_actions_tamedog">
 			<English>Tame Dog</English>
@@ -25549,6 +25550,7 @@
 		</Key>
 		<Key ID="STR_EPOCH_ACTIONS_GUTBLOOD">
 			<English>Butcher Bloodsucker</English>
+			<German>Bloodsucker ausnehmen</German>
 		</Key>						   
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
 			<English>Open %1</English>
@@ -27348,9 +27350,11 @@
 		</Key>
 		<Key ID="STR_MUTANT_HEART">
 			<English>Mutant Heart</English>
+			<German>Mutantenherz</German>
 		</Key>
 		<Key ID="STR_MUTANT_HEART_DESC">
-			<English>Mutant heart</English>
+			<English>The heart of a mutant. It is probably worth a lot.</English>
+			<German>Das Herz eines Mutanten. Es ist möglicherweise viel wert.</German>
 		</Key>				 
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
