@@ -191,6 +191,14 @@ if (!isDedicated) then {
 			["ItemKey",localize "STR_CL_RV_CA_LIGHTS","spawn remoteVehicle;","true",5]		
 		];
 	};	
+	
+	DZE_LocateVehicle = true;	//	Enable/Disable the option to locate a vehicle from a key in the inventory with a rightclick on the GPS.
+	
+	if (DZE_LocateVehicle) then {
+		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
+			["ItemGPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
+		];
+	};	
 };
 
 // Both

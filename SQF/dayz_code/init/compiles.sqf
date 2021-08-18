@@ -202,6 +202,10 @@ if (!isDedicated) then {
 	if (DZE_Remote_Vehicle) then {
 		remoteVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remoteVehicle\remoteVehicle.sqf";
 		rv_vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remoteVehicle\vehicleInfo.sqf";
+	};
+
+	if (DZE_LocateVehicle) then {
+		locateVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\locateVehicle.sqf";
 	};	
 
 	// Weather
