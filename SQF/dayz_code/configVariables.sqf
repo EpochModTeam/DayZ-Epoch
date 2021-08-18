@@ -332,6 +332,16 @@ if (!isDedicated) then {
 			];
 		};
 	};
+	
+	// Bloodsuckers
+	DZE_Bloodsuckers = false; // Enable bloodsucker spawning.
+	DZE_BloodsuckerChance = .15; // Chance that a building will spawn a bloodsucker. Default .15 (15%)
+	DZE_BloodsuckerBuildings = ["Land_Hlidac_budka","Land_Mil_Guardhouse","Land_Mil_Barracks","Land_Mil_House","Land_Mil_Barracks_i","CrashSite_RU","CrashSite_US","CrashSite_EU","CrashSite_UN"]; // Bloodsuckers will spawn near these building classes.
+	DZE_BloodsuckersMaxGlobal = 15; // Maximum number of bloodsuckers allowed on the map at one time.
+	DZE_BloodsuckersMaxNear = 3; // Maximum number of bloodsuckers allowed in any 200 meter area.
+	DZE_BloodsuckersMaxLocal = 2; // Maximum number of bloodsuckers that can spawn per client.
+	DZE_BloodsuckerScreenEffect = true; // On screen slash marks when the bloodsuckers attack.
+	DZE_BloodsuckerDeleteNearTrader = true; // Deletes bloodsuckers when near trader cities.
 };
 
 // Both

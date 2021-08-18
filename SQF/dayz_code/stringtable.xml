@@ -14281,6 +14281,9 @@
 			<French>Infecté</French>
 			<Czech>Infikovaný</Czech>
 		</Key>
+		<Key ID="STR_ZNAME_BLOODSUCKER">
+			<English>Bloodsucker</English>
+		</Key>						  
 		<Key ID="STR_ZNAME_INFECTEDVIRAL">
 			<English>Viral Infected</English>
 			<Spanish>Infectado Viral</Spanish>
@@ -22463,6 +22466,9 @@
 			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
 			<Czech>%1 byl zničený, zombie díly jsou nyní na kostru.</Czech>
 		</Key>
+		<Key ID="str_success_gutted_mutant">
+			<English>You have carved the heart of the %1 from it's chest.</English>
+		</Key>						  
 		<Key ID="str_actions_tamedog">
 			<English>Tame Dog</English>
 			<German>Hund zähmen</German>
@@ -25541,6 +25547,9 @@
 			<French>Dépecer le zombie</French>
 			<Czech>Vykuchat Zombie</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_ACTIONS_GUTBLOOD">
+			<English>Butcher Bloodsucker</English>
+		</Key>						   
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
 			<English>Open %1</English>
 			<German>%1 öffnen</German>
@@ -27337,6 +27346,12 @@
 			<German>Zombiehaut in einem Sack.</German>
 			<Russian>Кожа зомби в мешке.</Russian>
 		</Key>
+		<Key ID="STR_MUTANT_HEART">
+			<English>Mutant Heart</English>
+		</Key>
+		<Key ID="STR_MUTANT_HEART_DESC">
+			<English>Bloodsuckers will not attack a player that keeps one in their inventory.</English>
+		</Key>				 
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
 			<German>Zahlenschloss</German>

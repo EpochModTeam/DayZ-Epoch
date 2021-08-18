@@ -622,6 +622,7 @@ class CfgVehicles
 	#include "Zeds\WildZeds.hpp" //Wild type zeds
 	#include "Zeds\SwarmZeds.hpp" //Swarm type zeds
 	#include "Zeds\PlayerZeds.hpp" //Player type zeds
+	#include "Zeds\Bloodsuckers.hpp" //NS Bloodsuckers
 	//Skins	
 	#include "Skins\Male.hpp"
 	#include "Skins\Female.hpp"
