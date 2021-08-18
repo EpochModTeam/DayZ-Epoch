@@ -206,6 +206,124 @@ if (!isDedicated) then {
 			["ItemGPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
 		];
 	};	
+	
+	// Service Points for Refuel, Repair and Rearm
+	DZE_Service_Points = false;
+	
+	if (DZE_Service_Points) then {
+		// Valid vehicle config classes as an example: "Air", "AllVehicles", "All", "APC", "Bicycle", "Car", "Helicopter", "Land", "Motorcycle", "Plane", "Ship", "Tank"
+		DZE_SP_Classes = ["Map_A_FuelStation_Feed","Land_A_FuelStation_Feed","FuelPump_DZ"]; // service point classes, You can also use dayz_fuelpumparray by its self for all the default fuel pumps.
+		DZE_SP_MaxDistance = 50; // maximum distance from a service point for the options to be shown
+		
+		// Refuel Settings
+		DZE_SP_Refuel_Enable = true; // enable or disable the refuel option
+		if (DZE_SP_Refuel_Enable) then {
+			DZE_SP_Refuel_Costs = [
+				//["Ship",localize "str_temp_param_disabled"], // All vehicles are disabled to refuel.
+				["Land",localize "strwffree"], // All vehicles are free to refuel.
+				["Air",1000] //1000 worth is 1 10oz gold for all air vehicles
+			];
+			DZE_SP_Refuel_UpdateInterval = 1; // update interval (in seconds)
+			DZE_SP_Refuel_Amount = 0.05; // amount of fuel to add with every update (in percent)
+		};
+		
+		
+		// Repair Settings
+		DZE_SP_Repair_Enable = true; // enable or disable the repair option
+		if (DZE_SP_Repair_Enable) then {
+			DZE_SP_Repair_RepairTime = 2; // time needed to repair each damaged part (in seconds)
+			DZE_SP_Repair_Costs = [
+				["Air",4000], // 4000 worth is 4 10oz gold.
+				["AllVehicles",2000] // 2000 worth is 2 10oz gold for all other vehicles
+			];
+		};
+		
+		// Rearm Settings
+		DZE_SP_Rearm_Enable = true; // enable or disable the rearm option
+		if (DZE_SP_Rearm_Enable) then {
+			DZE_SP_Rearm_Defaultcost = 10000; // Default cost to rearm a weapon. (10000 worth == 1 briefcase)
+			DZE_SP_Rearm_MagazineCount = 2; // amount of magazines to be added to the vehicle weapon
+			DZE_SP_Rearm_Ignore = [(localize "str_dn_horn"),(localize "str_dn_laser_designator")]; // Array of weapon display names that are ignored in the rearm listing.
+			/*
+				DZE_SP_Rearm_Costs is an array based on the AMMO type. I.e M240, MK19, PKM, PKT, M134 etc. 
+				You can disable certain ammo types from being able to be rearmed by making the price disabled text
+				example: ["M134",localize "str_temp_param_disabled"]
+			*/			
+			DZE_SP_Rearm_Costs = [
+				[(localize "str_mn_40rnd_grad"),localize "str_temp_param_disabled"], // BM-21 Grad is disabled (ammo is broken)
+				[(localize "str_dn_flarelauncher"),2000], // Flares
+				[(localize "str_ep1_dn_smokelauncher"),2000], // Smokes
+				[(localize "str_dn_pk"),5000], // PKM
+				[(localize "str_dn_pkt"),5000], // PKT
+				[(localize "str_sn_m134"),5000], // M134
+				[(localize "str_dn_ags30"),5000], // AGS-30
+				[(localize "str_dn_dshkm"),5000], // DSHKM
+				[(localize "str_DN_VIKHR_CCP"),5000], // Vikhr 9A4172
+				[(localize "str_baf_baf_l94a10"),5000], // L94A1 Chain Gun
+				[(localize "str_baf_crv70"),5000], // CRV7
+				[(localize "str_baf_ctws0"),5000], // CTWS
+				[(localize "str_baf_m621_manual0"),5000], // M621
+				[(localize "str_dn_2a38m"),5000], // 2A38M Gun
+				[(localize "str_dn_2a42"),5000], // 2A42
+				[(localize "str_dn_2a46m"),5000], // 2A46M Cannon
+				[(localize "str_dn_2a46m_rocket"),5000], // 9M119M Refleks rocket
+				[(localize "str_dn_2a70"),5000], // 2A70 100mm
+				[(localize "str_dn_2a70_rocket"),5000], // 9M117M1 Arkan
+				[(localize "str_dn_2a72"),5000], // 2A72 30mm
+				[(localize "str_dn_80mmlauncher_burst"),5000], // S-8
+				[(localize "str_dn_9m311laucher"),5000], // Tunguska 9M311
+				[(localize "str_dn_ags17"),5000], // AGS-17
+				[(localize "str_dn_d81"),5000], // D-81
+				[(localize "str_dn_dt_veh"),5000], // DT
+				[(localize "str_dn_hellfire"),5000], // AGM-114 Hellfire
+				[(localize "str_dn_kord"),5000], // KORD
+				[(localize "str_dn_m197"),5000], // M197
+				[(localize "str_dn_m240"),5000], // M240
+				[(localize "str_dn_m242"),5000], // M242
+				[(localize "str_dn_m256"),5000], // M256
+				[(localize "str_dn_sidewinderlaucher"),5000], // AIM-9L Sidewinder
+				[(localize "str_dn_zis_s_53"),5000], // ZiS-S-53
+				[(localize "str_ep1_dn_57mmlauncher"),5000], // S-5
+				[(localize "str_ep1_dn_azp85"),5000], // AZP-23
+				[(localize "str_ep1_dn_ffarlauncher"),5000], // Hydra
+				[(localize "str_ep1_dn_m2"),5000], // M2 Machinegun
+				[(localize "str_ep1_dn_m230"),5000], // M230
+				[(localize "str_ep1_dn_m32_ep1"),5000], // M32
+				[(localize "str_ep1_dn_mk19"),5000], // Mk19
+				[(localize "str_ep1_dn_yakb"),5000], // Yak-B
+				[(localize "str_mn_at2_mi24d"),5000], // Falanga 3M11
+				[(localize "str_mn_at5_bmp2"),5000], // Konkurs 9M113
+				[(localize "str_mn_stinger"),5000], // FIM-92F Stinger
+				[(localize "str_mn_12rnd_mlrs"),5000], // MLRS
+				[(localize "str_baf_baf_l2a10"),5000], // L111A1
+				[(localize "STR_DN_D10_CCP"),5000], // D-10
+				[(localize "str_dn_tow"),5000], // M220 TOW
+				[(localize "str_dn_zu23"),5000], // ZU-23
+				[(localize "str_dn_kpvt"),5000], // KPVT
+				[(localize "str_dn_m3p"),5000], // M3P
+				[(localize "str_dn_spg9"),5000], // SPG-9
+				[(localize "str_dn_gau8"),5000], // GAU-8
+				[(localize "str_dn_maverick"),5000], // AGM-65 Maverick
+				[(localize "str_dn_gbu12"),5000], // GBU-12
+				[(localize "str_dn_gau12"),5000], // GAU-12
+				[(localize "STR_DN_KH29_CCP"),5000], // Kh-29L
+				[(localize "str_dn_r73"),5000], // R-73
+				[(localize "str_mn_fab250"),5000], // FAB-250
+				[(localize "str_dn_gsh301"),5000], // GSh-301
+				[(localize "str_mn_23mm_gsh23l"),5000], // GSh-23L
+				[(localize "str_sn_grenade"),5000], // Grenade
+				[(localize "str_mn_at9_mi24p"),5000], // Ataka-V 9M120
+				[(localize "str_mn_at6_mi24v"),5000], // Shturm 9K114
+
+				["SGMT",5000], // SGMT no localization available
+				["M68",5000], // M68 no localization available
+				["GAU-22",5000], // GAU-22 no localization available
+				["GSh-30",5000], // GSh-30 no localization available
+				["M60",5000], // M60 no localization available
+				["GSh-30K",5000] // GSh-30K no localization available			
+			];
+		};
+	};
 };
 
 // Both

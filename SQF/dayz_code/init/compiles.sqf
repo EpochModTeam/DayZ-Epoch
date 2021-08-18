@@ -207,6 +207,10 @@ if (!isDedicated) then {
 	if (DZE_LocateVehicle) then {
 		locateVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\locateVehicle.sqf";
 	};	
+	
+	if (DZE_Service_Points) then {
+		execVM "\z\addons\dayz_code\actions\servicePoints\init.sqf";
+	};
 
 	// Weather
 	if (DZE_Weather in [3,4]) then {
