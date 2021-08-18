@@ -97,7 +97,7 @@ sched_corpses = {
 						if (_onoff == 1) then {
 							_sound = createSoundSource["Sound_Flies",getPosATL _x,[],0];
 							_sound attachTo [_x];
-							_x setVariable ["sched_co_fliesSource", _sound];
+							_x setVariable ["sched_co_fliesSource", _sound,[false,true] select (DZE_Bury_Body || DZE_Butcher_Body)];
 							//diag_log "create sound";
 						};
 						// broadcast flies status for everyone periodically, to update visible swarm

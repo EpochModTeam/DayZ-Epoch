@@ -3,6 +3,80 @@
 // To change a variable copy paste it in the mission init.sqf below the #include line.
 // Standard DayZ variables are found in dayz_code\init\variables.sqf.
 
+// Both
+dayz_infectiouswaterholes = true; //Enable infected waterholes
+dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
+dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
+DZE_HeliLift = true; // Enable Epoch heli lift system
+DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
+DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
+DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
+dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
+infectedWaterHoles = []; //Needed for non-cherno maps.
+DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed.
+dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
+dayz_classicBloodBagSystem = false; // disable blood types system and use the single classic ItemBloodbag
+dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
+
+// Death Messages
+DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
+DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
+DZE_DeathMsgRolling = false; // Display death messages as rolling messages in bottom center of screen.
+
+// ZSC
+Z_SingleCurrency = false; // Enable single currency system.
+
+if (Z_SingleCurrency) then {
+	Z_globalBanking = false; // Enable global banking system.
+	Z_persistentMoney = false; // Enabling this stores currency to player_data instead of character_data. Currency transfers to a new character after death. For PVE servers only. Formerly called "GlobalMoney".
+	CurrencyName = "Coins"; // If using single currency this is the currency display name.
+	DZE_MoneyStorageClasses = ["VaultStorage","VaultStorage2","VaultStorageLocked","VaultStorage2Locked","LockboxStorageLocked","LockboxStorage2Locked","LockboxStorage","LockboxStorage2","LockboxStorageWinterLocked","LockboxStorageWinter2Locked","LockboxStorageWinter","LockboxStorageWinter2","TallSafe","TallSafeLocked"]; // If using single currency this is an array of object classes players can store coins in. E.g.: ["GunRack_DZ","WoodCrate_DZ"]
+	ZSC_VehicleMoneyStorage = true; // Allow players to store money in vehicles. If vehicles are destroyed the money is also destroyed.
+};
+
+Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
+
+// Plot Management and Plot for Life
+DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
+DZE_isRemovable = ["Plastic_Pole_EP1_DZ"]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
+
+// Door Management
+DZE_doorManagement = true; // Enable Door Management by @DevZupa.
+
+// Group System
+dayz_groupSystem = false; // Enable group system
+
+// Bury and Butcher Bodies
+DZE_Bury_Body = false; // Enable Bury Bodies
+DZE_Butcher_Body = false; // Enable Butcher Bodies
+
+// Weather
+DZE_Weather = 2; // Options: 1 - Summer Static, 2 - Summer Dynamic, 3 - Winter Static, 4 - Winter Dynamic. If static is selected, the weather settings will be set at server startup and not change. Weather settings can be adjusted with array DZE_WeatherVariables.
+
+// The settings in the array below may be adjusted as desired. The default settings are designed to maximize client and server performance.
+// Having several features enabled at once might have adverse effects on client performance. For instance, you could have snowfall, ground fog, and breath fog threads all running at once.
+DZE_WeatherVariables = [
+	15, // Minimum time in minutes for the weather to change. (default value: 15).
+	30, // Maximum time in minutes for the weather to change. (default value: 30).
+	0, // Minimum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0).
+	.2, // Maximum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0.8).
+	0, // Minimum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 0). Note: Rain and snow will not occur when overcast is less than 0.70.
+	.6, // Maximum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 1).
+	0, // Minimum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
+	.6, // Maximum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
+	0, // Minimum wind strength (default value: 0).
+	3, // Maximum wind strength (default value: 5).
+	.25, // Probability for wind to change when weather changes. (default value: .25).
+	1, // Minimum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
+	1, // Maximum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
+	.2,// Probability for a blizzard to occur when it is snowing. (0 = no blizzards, 1 = blizzard all the time). (default value: .2).
+	10, // Blizzard interval in minutes. Set to zero to have the blizzard run for the whole interval, otherwise you can set a custom time interval for the blizzard.
+	0, // Ground Fog Effects. Options: 0 - no ground fog, 1 - only at evening, night, and early morning, 2 - anytime, 3 - near cities and towns, at late evening, night, and early morning, 4 - near cities and towns, anytime.
+	400, // Distance in meters from player to scan for buildings to spawn ground fog. By default, only the 15 nearest buildings will spawn ground fog.
+	false, // Allow ground fog when it's snowing or raining?
+	2 // Winter Breath Fog Effects. Options: 0 - no breath fog, 1 - anytime, 2 - only when snowing or blizzard. Note: breath fog is only available with winter weather enabled.
+];
+
 //Server
 if (isServer) then {
 	DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
@@ -148,21 +222,30 @@ if (!isDedicated) then {
 	DZE_Bandit = -5000; // Defines the value at how much humanity the player is classed as a bandit.
 
 	// ZSC
-	Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
-	Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
-	ZSC_bankTraders = ["Functionary1_EP1"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1), do not use _DZ classes - they are used as player skins
-	ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
-	ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
-	ZSC_maxBankMoney = 500000; // Default limit for bank objects.
-	ZSC_defaultStorageMultiplier = 200; // Default magazine count for bank objects that don't have storage slots i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
-	ZSC_MaxMoneyInStorageMultiplier = 5000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
-	ZSC_ZombieCoins = [false,[0,1000]]; // First value activate coins on zombies, second value from 0 - 1000 coins on each zombie. Coin for zombies are handled directly in check wallet.
+	if (Z_SingleCurrency) then {		
+		Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
+		Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
+		ZSC_bankTraders = ["Functionary1_EP1"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1), do not use _DZ classes - they are used as player skins
+		ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
+		ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+		ZSC_maxBankMoney = 500000; // Default limit for bank objects.
+		ZSC_defaultStorageMultiplier = 200; // Default magazine count for bank objects that don't have storage slots i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+		ZSC_MaxMoneyInStorageMultiplier = 5000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
+		ZSC_ZombieCoins = [false,[0,1000]]; // First value activate coins on zombies, second value from 0 - 1000 coins on each zombie. Coin for zombies are handled directly in check wallet.
+	};
 
 	// Loot system
 	dayz_toolBreaking = false; //Sledgehammer, crowbar and pickaxe have a chance to break when used.
 	dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
 	dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
 	dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
+	
+	if (DZE_Bury_Body) then {
+		DZE_Bury_Body_Value = 30;// Amount of humanity to gain for burying a body.
+	};
+	if (DZE_Butcher_Body) then {
+		DZE_Butcher_Body_Value = -30;// Amount of humanity to lose for butchering a body.
+	};
 	
 	// Take Clothes
 	DZE_Take_Clothes = false;	// Allows to take the clothing from dead players and AIs	
@@ -205,6 +288,19 @@ if (!isDedicated) then {
 		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
 			["ItemGPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
 		];
+	};
+	
+	// Bloodsuckers	
+	DZE_Bloodsuckers = false; // Enable bloodsucker spawning.
+	
+	if (DZE_Bloodsuckers) then {
+		DZE_BloodsuckerChance = .15; // Chance that a building will spawn a bloodsucker. Default .15 (15%)
+		DZE_BloodsuckerBuildings = ["Land_Hlidac_budka","Land_Mil_Guardhouse","Land_Mil_Barracks","Land_Mil_House","Land_Mil_Barracks_i","CrashSite_RU","CrashSite_US","CrashSite_EU","CrashSite_UN"]; // Bloodsuckers will spawn near these building classes.
+		DZE_BloodsuckersMaxGlobal = 15; // Maximum number of bloodsuckers allowed on the map at one time.
+		DZE_BloodsuckersMaxNear = 3; // Maximum number of bloodsuckers allowed in any 200 meter area.
+		DZE_BloodsuckersMaxLocal = 2; // Maximum number of bloodsuckers that can spawn per client.
+		DZE_BloodsuckerScreenEffect = true; // On screen slash marks when the bloodsuckers attack.
+		DZE_BloodsuckerDeleteNearTrader = true; // Deletes bloodsuckers when near trader cities.
 	};
 
 	// Garage Door Opener
@@ -332,83 +428,7 @@ if (!isDedicated) then {
 			];
 		};
 	};
-	
-	// Bloodsuckers
-	DZE_Bloodsuckers = false; // Enable bloodsucker spawning.
-	DZE_BloodsuckerChance = .15; // Chance that a building will spawn a bloodsucker. Default .15 (15%)
-	DZE_BloodsuckerBuildings = ["Land_Hlidac_budka","Land_Mil_Guardhouse","Land_Mil_Barracks","Land_Mil_House","Land_Mil_Barracks_i","CrashSite_RU","CrashSite_US","CrashSite_EU","CrashSite_UN"]; // Bloodsuckers will spawn near these building classes.
-	DZE_BloodsuckersMaxGlobal = 15; // Maximum number of bloodsuckers allowed on the map at one time.
-	DZE_BloodsuckersMaxNear = 3; // Maximum number of bloodsuckers allowed in any 200 meter area.
-	DZE_BloodsuckersMaxLocal = 2; // Maximum number of bloodsuckers that can spawn per client.
-	DZE_BloodsuckerScreenEffect = true; // On screen slash marks when the bloodsuckers attack.
-	DZE_BloodsuckerDeleteNearTrader = true; // Deletes bloodsuckers when near trader cities.
 };
-
-// Both
-dayz_infectiouswaterholes = true; //Enable infected waterholes
-dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
-dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
-DZE_HeliLift = true; // Enable Epoch heli lift system
-DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
-DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
-DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
-dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
-infectedWaterHoles = []; //Needed for non-cherno maps.
-DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed.
-dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
-dayz_classicBloodBagSystem = false; // disable blood types system and use the single classic ItemBloodbag
-dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
-
-// Death Messages
-DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
-DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
-DZE_DeathMsgRolling = false; // Display death messages as rolling messages in bottom center of screen.
-
-// ZSC
-Z_SingleCurrency = false; // Enable single currency system.
-Z_globalBanking = false; // Enable global banking system.
-Z_persistentMoney = false; // Enabling this stores currency to player_data instead of character_data. Currency transfers to a new character after death. For PVE servers only. Formerly called "GlobalMoney".
-Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
-CurrencyName = "Coins"; // If using single currency this is the currency display name.
-DZE_MoneyStorageClasses = ["VaultStorage","VaultStorage2","VaultStorageLocked","VaultStorage2Locked","LockboxStorageLocked","LockboxStorage2Locked","LockboxStorage","LockboxStorage2","LockboxStorageWinterLocked","LockboxStorageWinter2Locked","LockboxStorageWinter","LockboxStorageWinter2","TallSafe","TallSafeLocked"]; // If using single currency this is an array of object classes players can store coins in. E.g.: ["GunRack_DZ","WoodCrate_DZ"]
-ZSC_VehicleMoneyStorage = true; // Allow players to store money in vehicles. If vehicles are destroyed the money is also destroyed.
-
-// Plot Management and Plot for Life
-DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
-DZE_isRemovable = ["Plastic_Pole_EP1_DZ"]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
-
-// Door Management
-DZE_doorManagement = true; // Enable Door Management by @DevZupa.
-
-// Group System
-dayz_groupSystem = false; // Enable group system
-
-// Weather
-DZE_Weather = 2; // Options: 1 - Summer Static, 2 - Summer Dynamic, 3 - Winter Static, 4 - Winter Dynamic. If static is selected, the weather settings will be set at server startup and not change. Weather settings can be adjusted with array DZE_WeatherVariables.
-
-// The settings in the array below may be adjusted as desired. The default settings are designed to maximize client and server performance.
-// Having several features enabled at once might have adverse effects on client performance. For instance, you could have snowfall, ground fog, and breath fog threads all running at once.
-DZE_WeatherVariables = [
-	15, // Minimum time in minutes for the weather to change. (default value: 15).
-	30, // Maximum time in minutes for the weather to change. (default value: 30).
-	0, // Minimum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0).
-	.2, // Maximum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0.8).
-	0, // Minimum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 0). Note: Rain and snow will not occur when overcast is less than 0.70.
-	.6, // Maximum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 1).
-	0, // Minimum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
-	.6, // Maximum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
-	0, // Minimum wind strength (default value: 0).
-	3, // Maximum wind strength (default value: 5).
-	.25, // Probability for wind to change when weather changes. (default value: .25).
-	1, // Minimum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
-	1, // Maximum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
-	.2,// Probability for a blizzard to occur when it is snowing. (0 = no blizzards, 1 = blizzard all the time). (default value: .2).
-	10, // Blizzard interval in minutes. Set to zero to have the blizzard run for the whole interval, otherwise you can set a custom time interval for the blizzard.
-	0, // Ground Fog Effects. Options: 0 - no ground fog, 1 - only at evening, night, and early morning, 2 - anytime, 3 - near cities and towns, at late evening, night, and early morning, 4 - near cities and towns, anytime.
-	400, // Distance in meters from player to scan for buildings to spawn ground fog. By default, only the 15 nearest buildings will spawn ground fog.
-	false, // Allow ground fog when it's snowing or raining?
-	2 // Winter Breath Fog Effects. Options: 0 - no breath fog, 1 - anytime, 2 - only when snowing or blizzard. Note: breath fog is only available with winter weather enabled.
-];
 
 /*
 	Developers:

@@ -808,16 +808,41 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	} else {
 		player removeAction s_player_fillgen;
 		s_player_fillgen = -1;
-	};	
-	
-	if (DZE_Take_Clothes) then {
-		if (_isMan && !_isAlive && !_isZombie && {!(_cursorTarget isKindOf "Animal")} && {!(_cursorTarget getVariable["clothesTaken",false])} && {_typeOfCursorTarget in AllPlayers} && {!(_typeOfCursorTarget in DZE_Disable_Take_Clothes)}) then {
-			if (s_player_clothes < 0) then {
-				s_player_clothes = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_TC_TAKE_CLOTHES"],"\z\addons\dayz_code\actions\takeClothes.sqf",_cursorTarget,0, false,true];
+	};
+
+	if (!_isAlive && _isMan && !_isZombie && {!(_cursorTarget isKindOf "Animal")}) then {	
+		if (DZE_Take_Clothes) then {
+			if (!(_cursorTarget getVariable["clothesTaken",false]) && {_typeOfCursorTarget in AllPlayers} && {!(_typeOfCursorTarget in DZE_Disable_Take_Clothes)}) then {
+				if (s_player_clothes < 0) then {
+					s_player_clothes = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_TC_TAKE_CLOTHES"],"\z\addons\dayz_code\actions\takeClothes.sqf",_cursorTarget,0, false,true];
+				};
+			} else {
+				player removeAction s_player_clothes;
+				s_player_clothes = -1;
 			};
-		} else {
-			player removeAction s_player_clothes;
-			s_player_clothes = -1;
+		};
+
+		if (DZE_Bury_Body) then {
+			local _hasShovel = ("ItemEtool" in _itemsPlayer || "ItemShovel" in _itemsPlayer);
+			if (_hasShovel && !(_cursorTarget getVariable ["bodyButchered",false])) then {
+				if (s_player_bury_human < 0) then {
+					s_player_bury_human = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_BA_BURY"],"\z\addons\dayz_code\actions\buryActions.sqf",[_cursorTarget,"bury"],0,false,true];
+				};
+			} else {
+				player removeAction s_player_bury_human;
+				s_player_bury_human = -1;
+			};
+		};
+		
+		if (DZE_Butcher_Body) then {
+			if (({_x in ["ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1"]} count _itemsPlayer > 0) && !(_cursorTarget getVariable ["bodyButchered",false])) then {
+				if (s_player_butcher_human < 0) then {
+					s_player_butcher_human = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_BA_BUTCHER"],"\z\addons\dayz_code\actions\buryActions.sqf",[_cursorTarget,"butcher"],0,false,true];
+				};
+			} else {
+				player removeAction s_player_butcher_human;
+				s_player_butcher_human = -1;
+			};
 		};
 	};		
 
@@ -1095,6 +1120,10 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	s_player_checkWallet = -1;
 	player removeAction s_player_clothes;
 	s_player_clothes = -1;
+	player removeAction s_player_bury_human;
+	s_player_bury_human = -1;
+	player removeAction s_player_butcher_human;
+	s_player_butcher_human = -1;	
 };
 
 //Dog actions on player self

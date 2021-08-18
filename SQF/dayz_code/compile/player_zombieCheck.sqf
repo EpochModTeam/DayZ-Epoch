@@ -11,7 +11,7 @@ local _cantSee = false;
 
 {
 	local _isZombie = _x isKindOf "zZombie_base";
-	local _isMutant = typeOf _x == "z_bloodsucker";
+	local _isMutant = (DZE_Bloodsuckers && {typeOf _x == "z_bloodsucker"});
 	local _forcedSpeed = if ((_speedMin != _speedMax) && {(_speedMin > 0) && (_speedMax > 0)}) then {((random (DZE_ZombieSpeed select 1)) max (DZE_ZombieSpeed select 0));} else {getNumber (configFile >> "CfgVehicles" >> (typeOf _x) >> "forcedSpeed");};
 	local _dist = _x distance _refObj;
 	local _chance = 1; //0 / dayz_monitorPeriod; // Z verbosity
@@ -131,7 +131,7 @@ local _cantSee = false;
 		};
 	};
 	
-	if (_isMutant && DZE_BloodsuckerDeleteNearTrader && isInTraderCity) then {deleteVehicle _x}; // Delete bloodsucker if the player is in a trader city
+	if (_isMutant && {DZE_BloodsuckerDeleteNearTrader && isInTraderCity}) then {deleteVehicle _x}; // Delete bloodsucker if the player is in a trader city
 } forEach ((getPosATL _refObj) nearEntities ["Zed_Base",100]);
 
 if (_attacked) then {

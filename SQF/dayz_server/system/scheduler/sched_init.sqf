@@ -1,4 +1,4 @@
-#define PATH "z\addons\dayz_server\system\scheduler\"
+#define PATH "\z\addons\dayz_server\system\scheduler\"
 
 call compile preprocessFileLineNumbers (PATH+"sched_corpses.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_lootpiles.sqf");
@@ -6,8 +6,11 @@ call compile preprocessFileLineNumbers (PATH+"sched_sync.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_safetyVehicle.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_event.sqf");
 call compile preprocessFileLineNumbers (PATH+"sched_traps.sqf");
+if (DZE_Bury_Body || DZE_Butcher_Body) then {
+	call compile preprocessFileLineNumbers (PATH+"sched_lootCrates.sqf");
+};
 
-[
+local _list = [
 	// period	offset	code <-> ctx				init code ->ctx
 	 [ 60,		0,		sched_event,				sched_event_init ],
 	 [ 60,	 	224,	sched_corpses ],
@@ -17,17 +20,12 @@ call compile preprocessFileLineNumbers (PATH+"sched_traps.sqf");
 	 [ 120,		48,		sched_safetyVehicle ],
 	 [ 360,		480,	sched_fps ],
 	 [ 30,		60,		sched_traps,				sched_traps_init ]
-] execFSM ("z\addons\dayz_code\system\scheduler\scheduler.fsm");
+];
+
+if (DZE_Bury_Body || DZE_Butcher_Body) then {
+	_list set [count _list, [ 60,	 	240,	sched_lootCrates ]];
+};	 
+
+_list execFSM ("\z\addons\dayz_code\system\scheduler\scheduler.fsm"); 
 
 //diag_log [ __FILE__, "Scheduler started"];
-
-
-
-
-/*
-// (see ViralZeds.hpp -> zombie_agent.fsm -> zombie_findOwner.sqf), called when a zombie becomes "local" to the server after the player disconnected
-zombie_findOwner = {
-	(_this select 0) call fa_deleteVehicle;
-};
-*/
-
