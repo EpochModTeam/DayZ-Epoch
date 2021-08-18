@@ -214,6 +214,8 @@ class CfgWeapons
 	#include "Rifles\WA2000.hpp"	
 	#include "Rifles\BarrettMRAD.hpp"	
 	
+	#include "Rifles\RedRyder.hpp"
+	
 	/* PISTOLS */
 	
 	class M9;
