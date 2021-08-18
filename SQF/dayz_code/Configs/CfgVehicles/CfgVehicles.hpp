@@ -230,6 +230,8 @@ class CfgVehicles
 	class epoch_car: Car
 	{
 		vehicleClass = "DayZ Epoch Vehicles";
+		side = 1;
+		faction = "USMC";
 		selectionBackLights = "brzdove svetlo";
 		selectionBrakeLights = "zadni svetlo";
 		crew = "";
