@@ -60,7 +60,7 @@
 ] call server_spawnTraders;
 
 // Bankers
-if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+if (Z_singleCurrency && {Z_globalBanking && Z_globalBankingTraders}) then {
 	[
 		//Stary
 		["Functionary1_EP1",[6324.71,7787,0],64],

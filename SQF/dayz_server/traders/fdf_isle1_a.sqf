@@ -44,7 +44,7 @@
 ] call server_spawnTraders;
 
 // Bankers
-if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+if (Z_singleCurrency && {Z_globalBanking && Z_globalBankingTraders}) then {
 	[
 		//Jesco
 		["Functionary1_EP1",[9662.23,10879.8,0],0],

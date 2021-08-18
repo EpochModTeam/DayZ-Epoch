@@ -45,7 +45,7 @@
 ] call server_spawnTraders;
 
 // Bankers
-if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+if (Z_singleCurrency && {Z_globalBanking && Z_globalBankingTraders}) then {
 	[
 		//Raven Rock
 		["Functionary1_EP1",[1386.9,6941.33,0],93],

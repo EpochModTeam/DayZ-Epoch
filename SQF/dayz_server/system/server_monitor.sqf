@@ -341,7 +341,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	// prevent immediate hive write when vehicle parts are set up
 	_object setVariable ["lastUpdate",diag_ticktime];
 	_object setVariable ["ObjectID", _idKey, true];
-	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage) then {
+	if (Z_SingleCurrency && {ZSC_VehicleMoneyStorage}) then {
 		_object setVariable ["cashMoney", _storageMoney, true];
 	};
 

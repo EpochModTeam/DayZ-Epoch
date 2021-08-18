@@ -60,7 +60,7 @@
 ] call server_spawnTraders;
 
 // Bankers
-if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+if (Z_singleCurrency && {Z_globalBanking && Z_globalBankingTraders}) then {
 	[
 		["Functionary1_EP1",[3020.2061,5945.2783,0.23],0],
 		["Functionary1_EP1",[4140.2051,1505.2682,2.3],55],
