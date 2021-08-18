@@ -16,7 +16,8 @@ local _target = objNull;
 local _scandist = 200;
 
 {
-	if !(_x hasWeapon "ItemMutantHeart") then {
+	local _skip = (DZE_MutantHeartProtect && {_x hasWeapon "ItemMutantHeart"});
+	if (!_skip) then {
 		local _dist = _x distance _mutant;
 		if (_dist < _scandist) then {
 			_target = _x;

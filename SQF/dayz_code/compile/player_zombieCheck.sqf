@@ -60,7 +60,8 @@ local _cantSee = false;
 						if (_isZombie) then {
 							[_x, "zombie"] spawn player_zombieAttack;
 						} else {
-							if (!(_refObj hasWeapon "ItemMutantHeart") && !_inVehicle) then {
+							local _noAttack = (DZE_MutantHeartProtect && {_refObj hasWeapon "ItemMutantHeart"});
+							if (!_noAttack && !_inVehicle) then {
 								_x spawn player_mutantAttack;
 							};
 						};

@@ -301,6 +301,7 @@ if (!isDedicated) then {
 		DZE_BloodsuckersMaxLocal = 2; // Maximum number of bloodsuckers that can spawn per client.
 		DZE_BloodsuckerScreenEffect = true; // On screen slash marks when the bloodsuckers attack.
 		DZE_BloodsuckerDeleteNearTrader = true; // Deletes bloodsuckers when near trader cities.
+		DZE_MutantHeartProtect = true; // Disables targeting and attack if the player has a mutant heart in inventory.
 	};
 
 	// Garage Door Opener
