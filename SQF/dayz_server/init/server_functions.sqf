@@ -58,6 +58,10 @@ spawn_mineveins = compile preprocessFileLineNumbers "\z\addons\dayz_server\compi
 spawn_roadblocks = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_roadblocks.sqf";
 spawn_vehicles = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\spawn_vehicles.sqf";
 
+if (DZE_Virtual_Garage) then {
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\garage\init.sqf";
+};
+
 fnc_veh_setFixServer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_setFixServer.sqf";	//process the hit as a NORMAL damage (useful for persistent vehicles)
 
 server_medicalSync = {

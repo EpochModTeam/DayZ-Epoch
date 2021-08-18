@@ -32171,6 +32171,10 @@
 			<German>Währung</German>
 			<Russian>Валюта</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_TRADER_CATEGORY_HELI_PADS">
+			<English>Heli Pads</English>
+			<German>Helipads</German>
+		</Key>		
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
 			<German>%1 %2 für %3 %4 handeln</German>

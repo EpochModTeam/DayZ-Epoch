@@ -212,6 +212,29 @@ if (!isDedicated) then {
 		vkc_vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\vkc\vehicleInfo.sqf";
 	};
 	
+	if (DZE_Virtual_Garage) then {
+		player_getVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_getVehicle.sqf";
+		player_removePad = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_removePad.sqf";
+		player_storeVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_storeVehicle.sqf";
+		Player_MaintainVG = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_MaintainVG.sqf";
+		vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\vehicleInfo.sqf";
+		vg_maintainSetText = {
+			disableSerialization;
+			waituntil {!isNull (findDisplay 2800)};
+			_vgDisplCtl = (findDisplay 2800) displayCtrl 2854;
+			if (vg_maintainCost > 0) then {
+				_itemText = if (Z_SingleCurrency) then {CurrencyName} else {[vg_maintainCost,true] call z_calcCurrency};
+				if (Z_SingleCurrency) then {
+					_vgDisplCtl ctrlSetText format["%1 (%2 %3)",localize "STR_CL_VG_MAINTAIN_GARAGE",vg_maintainCost,_itemText];
+				} else {
+					_vgDisplCtl ctrlSetText format["%1 (%2)",localize "STR_CL_VG_MAINTAIN_GARAGE",_itemText];
+				};
+			} else {
+				_vgDisplCtl ctrlSetText format["%1 (%2)",localize "STR_CL_VG_MAINTAIN_GARAGE",localize "strwffree"];
+			};
+		};
+	};
+	
 	if (DZE_Service_Points) then {
 		execVM "\z\addons\dayz_code\actions\servicePoints\init.sqf";
 	};

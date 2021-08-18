@@ -869,7 +869,24 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 				s_player_butcher_human = -1;
 			};
 		};
-	};		
+	};
+	
+	if (DZE_Virtual_Garage) then {
+		if (_typeOfCursorTarget in vg_List) then {
+			if (s_garage_dialog < 0) then {
+				local _hasAccess = [player,_cursorTarget] call FNC_check_access;
+				local _plotCheck = [player, false] call FNC_find_plots;
+				local _isNearPlot = ((_plotCheck select 1) > 0);
+
+				if ((_isNearPlot && ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3) || (_hasAccess select 4))) || !_isNearPlot) then {
+					s_garage_dialog = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_VG_VIRTUAL_GARAGE"],"\z\addons\dayz_code\actions\virtualGarage\virtualGarage.sqf",_cursorTarget,3,false,true];
+				};
+			};
+		} else {
+			player removeAction s_garage_dialog;
+			s_garage_dialog = -1;
+		};
+	};
 
 	// ZSC
 	if (Z_singleCurrency) then {
@@ -1153,6 +1170,8 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	s_player_copyToKey = -1;
 	player removeAction s_player_claimVehicle;
 	s_player_claimVehicle = -1;	
+	player removeAction s_garage_dialog;
+	s_garage_dialog = -1;	
 };
 
 //Dog actions on player self

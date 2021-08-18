@@ -213,7 +213,8 @@ if (!isDedicated) then {
 		s_player_bury_human = -1;
 		s_player_butcher_human = -1;
 		s_player_copyToKey = -1;
-		s_player_claimVehicle = -1;		
+		s_player_claimVehicle = -1;	
+		s_garage_dialog = -1;
 	};
 	call dayz_resetSelfActions;
 
