@@ -205,7 +205,15 @@ if (!isDedicated) then {
 		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
 			["ItemGPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
 		];
-	};	
+	};
+
+	// Garage Door Opener
+	DZE_GarageDoor_Opener = false;	// Enables the option to open Garage Doors from the inside of a vehicle.
+	
+	if (DZE_GarageDoor_Opener) then {
+		DZE_GarageDoors = ["CinderWallDoorLocked_DZ","Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ","Land_DZE_WoodGateLocked","CinderGateLocked_DZ","Land_DZE_WoodOpenTopGarageLocked","CinderGarageOpenTopLocked_DZ"];	//	Array of Garage Doors that can be opened.
+		DZE_GarageDoor_Radius = 30; //	Radius from where the Garage Doors can be opened. Higher values may negatively impact the performance
+	};
 	
 	// Service Points for Refuel, Repair and Rearm
 	DZE_Service_Points = false;

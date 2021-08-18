@@ -208,6 +208,8 @@ if (!isDedicated) then {
 		s_bank_dialog3 = -1;
 		s_player_checkWallet = -1;
 		s_player_clothes = -1;
+		s_player_gdoor_opener = [];
+		s_player_gdoor_opener_ctrl = -1;		
 	};
 	call dayz_resetSelfActions;
 

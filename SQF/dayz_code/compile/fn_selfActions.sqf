@@ -128,9 +128,28 @@ if (_inVehicle) then {
 		{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
 		s_player_lockUnlockInside_ctrl = -1;
 	};
+
+	//Allows to open garage doors from the vehicle, but may negatively impact performance	
+	if (DZE_GarageDoor_Opener) then {	
+		local _doors = nearestObjects [DZE_myVehicle, DZE_GarageDoors, DZE_GarageDoor_Radius];
+
+		if (count _doors > 0 && {driver DZE_myVehicle == player}) then {
+			local _hasAccess = [player,_doors select 0] call FNC_check_access;
+			if (s_player_gdoor_opener_ctrl < 0 && ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3) || (_hasAccess select 4))) then {
+				local _door = DZE_myVehicle addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_GDO_GARAGE"],"\z\addons\dayz_code\actions\garageDoorOpener.sqf",_doors select 0, 1, false, true];
+				s_player_gdoor_opener set [count s_player_gdoor_opener,_door];
+				s_player_gdoor_opener_ctrl = 1;
+			};
+		} else {
+			{DZE_myVehicle removeAction _x} count s_player_gdoor_opener;s_player_gdoor_opener = [];
+			s_player_gdoor_opener_ctrl = -1;
+		};
+	};
 } else {
 	{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
 	s_player_lockUnlockInside_ctrl = -1;
+	{DZE_myVehicle removeAction _x} count s_player_gdoor_opener;s_player_gdoor_opener = [];
+	s_player_gdoor_opener_ctrl = -1;
 };
 
 if (DZE_HeliLift) then {
@@ -1075,7 +1094,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	player removeAction s_player_checkWallet;
 	s_player_checkWallet = -1;
 	player removeAction s_player_clothes;
-	s_player_clothes = -1;	
+	s_player_clothes = -1;
 };
 
 //Dog actions on player self
