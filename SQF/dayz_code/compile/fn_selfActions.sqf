@@ -789,23 +789,18 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	} else {
 		player removeAction s_player_fillgen;
 		s_player_fillgen = -1;
-	};
-
-	//Towing with tow truck
-	/*
-	if(_typeOfCursorTarget == "TOW_DZE") then {
-		if (s_player_towing < 0) then {
-			if(!(_cursorTarget getVariable ["DZEinTow", false])) then {
-				s_player_towing = player addAction [localize "STR_EPOCH_ACTIONS_ATTACH" "\z\addons\dayz_code\actions\tow_AttachStraps.sqf",_cursorTarget, 0, false, true];
-			} else {
-				s_player_towing = player addAction [localize "STR_EPOCH_ACTIONS_DETACH", "\z\addons\dayz_code\actions\tow_DetachStraps.sqf",_cursorTarget, 0, false, true];
+	};	
+	
+	if (DZE_Take_Clothes) then {
+		if (_isMan && !_isAlive && !_isZombie && {!(_cursorTarget isKindOf "Animal")} && {!(_cursorTarget getVariable["clothesTaken",false])} && {_typeOfCursorTarget in AllPlayers} && {!(_typeOfCursorTarget in DZE_Disable_Take_Clothes)}) then {
+			if (s_player_clothes < 0) then {
+				s_player_clothes = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_TC_TAKE_CLOTHES"],"\z\addons\dayz_code\actions\takeClothes.sqf",_cursorTarget,0, false,true];
 			};
+		} else {
+			player removeAction s_player_clothes;
+			s_player_clothes = -1;
 		};
-	} else {
-		player removeAction s_player_towing;
-		s_player_towing = -1;
-	};
-	*/
+	};		
 
 	// ZSC
 	if (Z_singleCurrency) then {
@@ -1079,6 +1074,8 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	s_bank_dialog3 = -1;
 	player removeAction s_player_checkWallet;
 	s_player_checkWallet = -1;
+	player removeAction s_player_clothes;
+	s_player_clothes = -1;	
 };
 
 //Dog actions on player self

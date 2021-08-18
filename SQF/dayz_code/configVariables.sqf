@@ -161,6 +161,10 @@ if (!isDedicated) then {
 	dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
 	dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
 	
+	// Take Clothes
+	DZE_Take_Clothes = false;	// Allows to take the clothing from dead players and AIs	
+	DZE_Disable_Take_Clothes = []; // Enter the skins you do not want to be allowed to be recovered from dead bodies. E.g.: DZE_Disable_Take_Clothes = ["Doctor_DZ","Assistant_DZ","Worker1_DZ"];
+	
 	/*
 		DZE_CLICK_ACTIONS
 		This is where you register your right-click actions
@@ -192,7 +196,7 @@ if (!isDedicated) then {
 		];
 	};	
 	
-	DZE_LocateVehicle = true;	//	Enable/Disable the option to locate a vehicle from a key in the inventory with a rightclick on the GPS.
+	DZE_LocateVehicle = false;	//	Enable/Disable the option to locate a vehicle from a key in the inventory with a rightclick on the GPS.
 	
 	if (DZE_LocateVehicle) then {
 		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [

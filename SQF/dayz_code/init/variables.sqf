@@ -207,6 +207,7 @@ if (!isDedicated) then {
 		s_bank_dialog2 = -1;
 		s_bank_dialog3 = -1;
 		s_player_checkWallet = -1;
+		s_player_clothes = -1;
 	};
 	call dayz_resetSelfActions;
 
