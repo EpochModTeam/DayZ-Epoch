@@ -23,6 +23,9 @@ if (isServer) then {
 
 	// ZSC
 	Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.
+	
+	// Safe Zone Relocating
+	DZE_SafeZone_Relocate = false; //Enables relocating of vehicles left in Safe Zones over a server restart.
 };
 
 // Client

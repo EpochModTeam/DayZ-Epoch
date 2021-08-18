@@ -466,4 +466,7 @@ if (_hiveLoaded) then {
 		//Update gear last after all dynamic vehicles are created to save random loot to database (low priority)
 		{[_x,"gear"] call server_updateObject} count _vehiclesToUpdate;
 	};
+	if (DZE_SafeZone_Relocate) then {
+		execVM "\z\addons\dayz_server\system\safeZoneRelocate.sqf";
+	};	
 };
