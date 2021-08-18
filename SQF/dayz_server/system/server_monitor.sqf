@@ -102,7 +102,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	_damage = _x select 8;
 	_storageMoney = _x select 9;
 
-	if ((_type isKindOf "AllVehicles")) then {
+	if ((_type isKindOf "AllVehicles") && !(_type isKindOf "StaticWeapon")) then {
 		_VehicleQueue set [_vQty,_x];
 		_vQty = _vQty + 1;
 	} else {
