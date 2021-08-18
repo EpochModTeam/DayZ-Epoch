@@ -36,6 +36,9 @@ if (Z_SingleCurrency) then {
 
 Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
 
+// Vehicle Key Changer
+DZE_VehicleKey_Changer = true; // Enable Vehicle Key Changer. Create or change the key for a vehicle.
+
 // Plot Management and Plot for Life
 DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
 DZE_isRemovable = ["Plastic_Pole_EP1_DZ"]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
@@ -100,6 +103,11 @@ if (isServer) then {
 	
 	// Safe Zone Relocating
 	DZE_SafeZone_Relocate = false; //Enables relocating of vehicles left in Safe Zones over a server restart.
+	
+	if (DZE_VehicleKey_Changer) then {
+		vkc_clearAmmo = true; // Clear the ammo of vehicles after they have been rekeyed/claimed? (stops users getting a free rearm)
+		vkc_disableThermal = [""]; // Array of vehicle config classes as well as vehicle classnames to disable thermal on when being spawned. i.e: ["All","Land","Air","Ship","StaticWeapon","AH1Z","MTVR"];	
+	};
 };
 
 // Client
@@ -240,6 +248,7 @@ if (!isDedicated) then {
 	dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
 	dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
 	
+	// Bury and Butcher Bodies
 	if (DZE_Bury_Body) then {
 		DZE_Bury_Body_Value = 30;// Amount of humanity to gain for burying a body.
 	};
@@ -288,6 +297,11 @@ if (!isDedicated) then {
 		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
 			["ItemGPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
 		];
+	};
+	
+	if (DZE_VehicleKey_Changer) then {
+		vkc_claimPrice = 1000; // Amount in worth for claiming a vehicle. See the top of this script for an explanation.
+		vkc_changePrice = 5000; // Amount in worth for changing the key for a vehicle. See the top of this script for an explanation.
 	};
 	
 	// Bloodsuckers	

@@ -234,6 +234,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	local _weaponsPlayer = weapons player;
 	local _hasCrowbar = "ItemCrowbar" in _itemsPlayer || "MeleeCrowbar" in _weaponsPlayer || dayz_onBack == "MeleeCrowbar";
 	local _hasToolbox = "ItemToolbox" in _itemsPlayer;
+	local _hasKeymakerskit = "ItemKeyKit" in _itemsPlayer;
 	local _isAlive = alive _cursorTarget;
 	local _text = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
 	local _isPlant = _typeOfCursorTarget in Dayz_plants;
@@ -568,11 +569,12 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 
 	// Allow Owner to lock and unlock vehicle
 	if (_player_lockUnlock_crtl) then {
+		local _totalKeys = call epoch_tempKeys;
+		local _temp_keys = _totalKeys select 0;
+		local _temp_keys_names = _totalKeys select 1;
+		local _hasKey = _characterID in _temp_keys;
+		
 		if (s_player_lockUnlock_crtl < 0) then {
-			local _totalKeys = call epoch_tempKeys;
-			local _temp_keys = _totalKeys select 0;
-			local _temp_keys_names = _totalKeys select 1;
-			local _hasKey = _characterID in _temp_keys;
 			local _oldOwner = (_characterID == _uid);
 			local _unlock = [];
 			
@@ -598,9 +600,18 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 				};
 			};
 		};
+		if (DZE_VehicleKey_Changer) then {
+			if (s_player_copyToKey < 0) then {
+				if ((_hasKeymakerskit && _hasKey && !_isLocked && {(count _temp_keys) > 1}) || {_cursorTarget getVariable ["hotwired",false]}) then {
+					s_player_copyToKey = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_VKC_CHANGE_ACTION"],"\z\addons\dayz_code\actions\vkc\vehicleKeyChanger.sqf",[_cursorTarget,_characterID,if (_cursorTarget getVariable ["hotwired",false]) then {"claim"} else {"change"}],5,false,true];
+				};
+			};
+		};		
 	} else {
 		{player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 		s_player_lockUnlock_crtl = -1;
+		player removeAction s_player_copyToKey;
+		s_player_copyToKey = -1;
 	};
 
 	if (DZE_Hide_Body && {_isMan && !_isAlive}) then {
@@ -808,6 +819,20 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	} else {
 		player removeAction s_player_fillgen;
 		s_player_fillgen = -1;
+	};
+	
+	if (DZE_VehicleKey_Changer) then {
+		if (_hasKeymakerskit && _isVehicle && !_isMan && _isAlive && {_characterID == "0"}) then {
+			if (s_player_claimVehicle < 0) then {
+				_totalKeys = call epoch_tempKeys;
+				if (count (_totalKeys select 0) > 0) then {
+					s_player_claimVehicle = player addAction [format["<t color='#0059FF'>%1</t>",format[localize "STR_CL_VKC_CLAIM_ACTION",_text]],"\z\addons\dayz_code\actions\vkc\vehicleKeyChanger.sqf",[_cursorTarget,_characterID,"claim"],5,false,true];
+				};
+			};
+		} else {
+			player removeAction s_player_claimVehicle;
+			s_player_claimVehicle = -1;
+		};
 	};
 
 	if (!_isAlive && _isMan && !_isZombie && {!(_cursorTarget isKindOf "Animal")}) then {	
@@ -1123,7 +1148,11 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	player removeAction s_player_bury_human;
 	s_player_bury_human = -1;
 	player removeAction s_player_butcher_human;
-	s_player_butcher_human = -1;	
+	s_player_butcher_human = -1;
+	player removeAction s_player_copyToKey;
+	s_player_copyToKey = -1;
+	player removeAction s_player_claimVehicle;
+	s_player_claimVehicle = -1;	
 };
 
 //Dog actions on player self

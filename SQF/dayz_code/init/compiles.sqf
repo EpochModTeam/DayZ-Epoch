@@ -208,6 +208,10 @@ if (!isDedicated) then {
 		locateVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\locateVehicle.sqf";
 	};	
 	
+	if (DZE_VehicleKey_Changer) then {
+		vkc_vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\vkc\vehicleInfo.sqf";
+	};
+	
 	if (DZE_Service_Points) then {
 		execVM "\z\addons\dayz_code\actions\servicePoints\init.sqf";
 	};
@@ -217,7 +221,7 @@ if (!isDedicated) then {
 		player_mutantAttack = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_mutantAttack.sqf";
 		mutant_generate = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_generate.sqf";
 		mutant_findTarget = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_findTarget.sqf";
-	};
+	};	
 
 	// Weather
 	if (DZE_Weather in [3,4]) then {

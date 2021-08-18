@@ -130,6 +130,7 @@ class DefaultEventhandlers {
 #include "Configs\RscDisplay\doorManagement\doorAccess.hpp"
 #include "Configs\RscDisplay\zscDialogs.hpp"
 #include "Configs\RscDisplay\remoteVehicle.hpp"
+#include "Configs\RscDisplay\vehicleKeyChanger.hpp"
 //#include "Configs\RscDisplay\tradermenu.hpp"
 
 class CfgTasks
