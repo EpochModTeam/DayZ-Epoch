@@ -1,11 +1,10 @@
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
+dayz_actionInProgress = true;
 
 local _body = _this;
-
-if (_body getVariable["meatHarvested",false]) exitWith {}; // Exit the script if the meat has already been harvested.
-if ({isPlayer _x} count ((getPosATL _body) nearEntities ["CAManBase", 12]) > 1) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages;}; // Exit the script if another player is near to prevent duping.
-
-dayz_actionInProgress = true;
+if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
+if (_body getVariable["meatHarvested",false]) exitWith {dayz_actionInProgress = false;}; // Exit the script if the meat has already been harvested.
+if ({isPlayer _x} count ((getPosATL _body) nearEntities ["CAManBase", 12]) > 1) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call dayz_rollingMessages;}; // Exit the script if another player is near to prevent duping.
 
 local _type = typeOf _body;
 local _isZombie = _type isKindOf "zZombie_base";
