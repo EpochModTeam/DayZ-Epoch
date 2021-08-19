@@ -135,6 +135,7 @@ if (Z_SellingFrom == 2) then {
 				if (_type == "trade_weapons") then {_name = configFile >> "CfgWeapons" >> _name;};
 				if (_x select 0 == dayz_onBack) then {
 					dayz_onBack = ""; // Remove from back
+					player setVariable ["dayz_onBack",dayz_onBack,true];
 					_localResult = 1;
 				} else {
 					_localResult = [player,_name,1] call BIS_fnc_invRemove; // Use config for BIS_fnc_invRemove
