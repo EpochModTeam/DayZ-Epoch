@@ -14283,6 +14283,7 @@
 		</Key>
 		<Key ID="STR_ZNAME_BLOODSUCKER">
 			<English>Bloodsucker</English>
+			<Russian>Кровосос</Russian>
 		</Key>						  
 		<Key ID="STR_ZNAME_INFECTEDVIRAL">
 			<English>Viral Infected</English>
@@ -22469,6 +22470,7 @@
 		<Key ID="str_success_gutted_mutant">
 			<English>You have carved the heart of the %1 from it's chest.</English>
 			<German>Du hast das Herz des %1 aus seiner Brust herausgeschnitten.</German>
+			<Russian>Вы вырезали сердце %1 из его тела.</Russian>
 		</Key>						  
 		<Key ID="str_actions_tamedog">
 			<English>Tame Dog</English>
@@ -25551,6 +25553,7 @@
 		<Key ID="STR_EPOCH_ACTIONS_GUTBLOOD">
 			<English>Butcher Bloodsucker</English>
 			<German>Bloodsucker ausnehmen</German>
+			<Russian>Разделать Кровососа</Russian>
 		</Key>						   
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
 			<English>Open %1</English>
@@ -27351,10 +27354,12 @@
 		<Key ID="STR_MUTANT_HEART">
 			<English>Mutant Heart</English>
 			<German>Mutantenherz</German>
+			<Russian>Сердце мутанта</Russian>
 		</Key>
 		<Key ID="STR_MUTANT_HEART_DESC">
 			<English>The heart of a mutant. It is probably worth a lot.</English>
 			<German>Das Herz eines Mutanten. Es ist möglicherweise viel wert.</German>
+			<Russian>Сердце мутанта. Это, наверное, многого стоит.</Russian>
 		</Key>				 
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
@@ -32174,6 +32179,7 @@
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_HELI_PADS">
 			<English>Heli Pads</English>
 			<German>Helipads</German>
+			<Russian>Вертолётные площадки</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
