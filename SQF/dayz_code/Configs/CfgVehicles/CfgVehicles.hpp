@@ -781,6 +781,7 @@ class CfgVehicles
 	#include "Buildables\Sandbags.hpp"
 	#include "Buildables\Billboards.hpp"
 	#include "Buildables\Misc.hpp"
+	#include "Buildables\StaticWeapons.hpp"
 	
 	//Loot Container
 	#include "LootContainer\AmmoCrates.hpp"

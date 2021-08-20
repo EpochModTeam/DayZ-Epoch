@@ -692,4 +692,11 @@ class IRStrobe
 {
 	weight = 2; 
 };
-
+class 200Rnd_40mmHE_FV510
+{
+	weight = 20;
+};
+class 200Rnd_40mmSABOT_FV510
+{
+	weight = 20;
+};
