@@ -1,0 +1,169 @@
+[NEW] Time between unlocking safes/lockboxes after a failed code will be exponentially higher, see configVariables.sqf\DZE_lockablesHarderPenalty (c3cbca1) @oiad
+[NEW] Added over 200 new zombie models with loot groups and strings for Server Admins to use. (2e15009) @AirwavesMan
+[NEW] Zombie can wear backpacks. (096fc13) @AirwavesMan
+[NEW] Hide Body can be edited and toggled. Enabled by default, configVariables.sqf/DZE_Hide_Body (c0e9fe6) @AirwavesMan
+[NEW] Added 6 AK-107 versions with attachment support. (82485ea) @AirwavesMan
+[NEW] Added new waterbottles from DayZ Mod. Icons made by @DeVloek. Fully functional with all actions. @AirwavesMan
+[NEW] All fuel containers can be emptied. (276615a8) @AirwavesMan
+[NEW] Different boxes of matches can be combined. (bc75ad8) @AirwavesMan
+[NEW] Added a basic support for PVE Servers. This disables the PVP damage on the server. Disabled by default, configVariables.sqf/DZE_PVE_Mode (e7dbc5dd) @AirwavesMan
+[NEW] Dedicated sounds for opening and closing vaults. (c001c38, 9c83ef2, 61258c9, 76721e3) @worldwidesorrow
+[NEW] Added the option for vectorUp on spawned objects in fnc_spawnObjects. (bf9dc49) @worldwidesorrow
+[NEW] Added 2 new cargo truck versions. A truck with more items slots and a truck with more weapons slots. (02c91007) @AirwavesMan
+[NEW] Added an option to give another player an antibacterial wipe. (8c074be) @worldwidesorrow
+[NEW] The maps Podagorsk and Chernarus Winter are now part of Epoch.
+[NEW] Added snow fall, snow storm, ground fog and cold breath to the game. This can be enabled in the configVariables.sqf/DZE_WeatherVariables and DZE_Weather @worldwidesorrow
+[NEW] Added warm clothes support. configVariables.sqf/DZE_WarmClothes (4058f596) @AirwavesMan
+[NEW] Added shivering - if the players body temperature is under a certain value the shivering starts. Can be defined and disabled with the last value in the DZE_WeatherVariables array. (4058f596) @AirwavesMan
+[NEW] Players can choose among 5 sets of status icons by pressing the F3 key or selecting in the game options menu. @worldwidesorrow
+[NEW] Added over 100 new weapons and magazines with attachment support, eg. HK417, Famas, Steyr Aug, G3, MP7 and many more. @AirwavesMan
+[NEW] Added M110_DZ with double zoom which was removed with the last Arma 2 1.64 patch. (9a531b3) @AirwavesMan
+[NEW] Almost all items have a world model now, eg. FN Fal mag, M203 Flare, AS50 mag. @Helion4, @AirwavesMan
+[NEW] Added over 130 new male and female skins. @AirwavesMan @Helion4
+[NEW] Added 11 new backpacks. (637358b, 88053499)  @Seelenapparat, @DeVloek, @AirwavesMan, @Helion4
+[NEW] Added different backpack skins for the Coyote and the Czech Backpack. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
+[NEW] All backpacks got updated and have 2 versions, a regular and an upgraded version. (637358b) @Seelenapparat, @DeVloek, @AirwavesMan
+[NEW] Fireplaces can be crafted directly from a wooden log. (2b8997ec) @AirwavesMan
+[NEW] New sounds for M9, M1911, SVD, VSS Vintorez, PDW, PDW SD, Winchester 1866, Saiga 12k, Anzio. @AirwavesMan
+[NEW] All vehicles/buildings are grouped under special vehicle categories in the editor with the indicator: 'DayZ Epoch', @AirwavesMan
+[NEW] Painkiller packages can have 0 to 6 pills and can also be combined, similar to antibiotics. (b4b8860c) @AirwavesMan
+[NEW] New helicopter skins for CH-47, Mi-17, UH-1H. (43337b6a, c47821ee) @AirwavesMan
+[NEW] Added KA60 and AW159 Epoch versions with PKT and M240. (8de9858b) @AirwavesMan
+[NEW] Added Land_Ind_Oil_Pump_EP1_DZE, a version without the pumping sound. (8557f559) @seelenapparat
+[NEW] Added a proper display name for heli crashes. (ba31c67b) @seelenapparat
+[NEW] Players can craft a firebarrel kit from empty methylamin/oil barrels. (b4b93562) @AirwavesMan
+[NEW] Enabled DZE_defaultSkin by default. (9842279d) @AirwavesMan
+[NEW] Added 2 new AN2 versions with Twin Vickers and M134. (d98834aa) @AirwavesMan
+[NEW] Every vehicle ammunition can now be spawned in-game and was added to the loot tables and traders. (6e813dc1) @AirwavesMan
+[NEW] Reintroduced DayZ Mod stashes. Build the stash by right-clicking the canvas item. (8304efe9) @AirwavesMan
+[NEW] Storage buildings like gun racks, storage sheds, safes etc. can be upgraded to a version with more gear slots. (19889a9d) @AirwavesMan
+[NEW] Lumber can be crafted directly from wooden logs. (ae79f4ce) @AirwavesMan
+[NEW] Added DayZ Mod fences and gates with upgrade and snap support. (3724a1f3) @AirwavesMan
+[NEW] Added sounds for taking painkillers/antibiotics and attaching/detaching a weapon attachment. (a69948d5) @AirwavesMan
+[NEW] The community localization stringtable is now part of Epoch. (04a81c15) @AirwavesMan
+[NEW] Salival's Change Code script is now part of Epoch. (5e296fc0) @AirwavesMan
+[NEW] Added ZSC with global banking. Pull request # 2076. @oiad, @worldwidesorrow, @DevZupa
+[NEW] Added remote messaging with localization. Pull request # 2076. @oiad, @worldwidesorrow, @BigEgg17
+[NEW] Almost all epoch vehicles can now be upgraded. This includes trucks, helicopters and APCs. @AirwavesMan
+[NEW] Added vehicle upgrade manuals for trucks, helicopters and APCs. @AirwavesMan, @DeVloek, @Helion4
+[NEW] Added new variables DZE_Hero and DZE_Bandit. The variables define the Hero and Bandit humanity. Used for traders and in player_death. (431cbc88, 272a7406) @AirwavesMan
+[NEW] Heroes and Bandits will drop a dog tag on death which can be traded at the Hero or Bandit trader for humanity. Thx for the idea @Tecumseh. (431cbc88, 272a7406, 4f106220) @AirwavesMan
+[NEW] Special handling for floating loot in buildings over water. Use fixWaterPos = 1; in the building class that has this problem. (89bca2c9) @AirwavesMan
+[NEW] With activated weight system, traders will show the item's weight under item information. (e5af93b5) @AirwavesMan
+[NEW] Female players can now wear all ghillie suits. (758be289) @AirwavesMan, @Helion4
+[NEW] Added MTVR Bird helicopter. (8fa93188) @AirwavesMan, @Helion4
+[NEW] Added a winter version of the following objects: Lockbox, Camo Net, Tent, Dome Tent. (215932d7, 420ad269, 83012eb1) @AirwavesMan, @Helion4
+[NEW] Added a winter version of the following vehicles: BMP2, BRDM2, SUV, UAZ, Mi17, UH1H, T72, Ural, Kamaz, HMMWV. (34455948, cb1b34fc) @AirwavesMan
+[NEW] Added Mini Cooper, old Jeep, 11 Nissan 350z versions, VS3 Camper, MTVR Open, Scrap APC, armored Tractor and armored Bus. (a1e5fca7, db36bb48, 1ce3f92b, 0dc00d97, d0f647c0, 34c2c716, f8d8a686, 8feed62b) @AirwavesMan, @Helion4
+[NEW] Added interior to storage sheds and those on the map can now spawn loot. (ad8ca464, 35135c75) @AirwavesMan, @Helion4
+[NEW] Added a few new female skins. (758be289) @AirwavesMan, @Helion4
+[NEW] Added over 30 new base building items like a drawbridge, metal and wood gates, glass floors and many more. @AirwavesMan, @Helion4
+[NEW] Added many broken versions of already existing items and tools like Safe, Engine Parts, Wheel, Toolbox and many more. @AirwavesMan
+[NEW] Added lots of new items and tools like Handsaw, Hammer, Cement Bag, Carrot, Potato, Mobile Phone and more. @AirwavesMan, @Helion4
+[NEW] Added snapping support for Storage Sheds, Wood Shacks, Wooden Sheds, Gun Racks and Outhouses. (ca05896f) @AirwavesMan
+[NEW] Added Submarine (c316d20) @AirwavesMan, @Helion4 
+
+[FIXED] Some more occurrences of zero_building interiors misaligned or at the wrong terrain height (eaaedf2, 048caa5) @ebayShopper
+[FIXED] Player could switch into gunner's seat of ArmoredSUV while the hatch was being closed (e89eebc) #2009 @TheFirstNoob
+[FIXED] POI fires were still spawning when POI was off and town generator was on (2855997) @ebayShopper
+[FIXED] Combo locks could be duplicated by two players removing them at the same time (564e3da) @shu, @oiad
+[FIXED] Bush b_corylus.p3d allowed chopping down for wood like a tree (42e519a) @ebayShopper
+[FIXED] Player could shoot during unconscious wake up animation (634a01a) @ebayShopper
+[FIXED] Rare publicVariable value restrictions for AuthKey due to RNG with basic Latin characters (d48c907) @oiad, @AirwavesMan
+[FIXED] Freeze when iterating through CfgWeapons in A2OA 1.64 due to conflict with ItemKeys in dayz_epoch_b.pbo #2010 @S-fly
+[FIXED] 45Rnd_545x39_RPK error after it was removed with the 2018-04-05 A2OA CorePatch (d249227) @ebayShopper
+[FIXED] Disabled Arma's automatic vehicle refuel, repair and rearm at WarfareBVehicleServicePoint buildings (2c4f06c) @dihan48
+[FIXED] DistanceFoot database stat was incorrect. (be777dd) @dihan48
+[FIXED] Vehicles jumping into the air after flipping. (096fc13) @AirwavesMan
+[FIXED] Crafting wooden arrows from wood piles and razors was not possible. (d4b46e4) @AirwavesMan
+[FIXED] Top snap point for half cinder wall was incorrect. (8f10a36) @ndavalos, @AirwavesMan
+[FIXED] The RPK-74 magazine could not be used with some AK-74 versions. (82485ea) @AirwavesMan
+[FIXED] Multiple vehicle upgrades were not possible. (ac884f2, a430f79, c24504a) @F507DMT 
+[FIXED] Inventory dupe if on water. (a052ba7, baf92eb) @F507DMT 
+[FIXED] The pickaxe and the broken pickaxe spawned in the ground on loot spawn. (a09bb81a) @AirwavesMan
+[FIXED] Floating loot from remove, pack and fn_dropItem. (1268f55) @AirwavesMan
+[FIXED] Giving water to dogs did not work with all waterbottles. (915cf72) @AirwavesMan
+[FIXED] Backpacks had no descriptions. (f1d5038) @AirwavesMan
+[FIXED] Potential dupe on lag with Advanced Trading. (0617a77, 5f44161) @oiad, @AirwavesMan, @loooooool(TEMA)
+[FIXED] Invisible backseat bug on LAV-HQ DZ and DZE version. (5c3f2162) @AirwavesMan
+[FIXED] The fuel capacity of the MH-6J Little Bird, Mi17 Civilian, UH60M was incorrect. (862cf39a, f0e08f22, fc9cb679) @AirwavesMan
+[FIXED] AIs could attack traders. (f0ac4afc) @AirwavesMan
+[FIXED] RHIB_DZ floating gunner position. (38a31290) @AirwavesMan
+[FIXED] The carry and drag functions have been fixed. (bcc5b63) @worldwidesorrow
+[FIXED] Bug on switching weapons. @worldwidesorrow
+[FIXED] Backpacks and keys were not counted within the weight system. (838e4a06, 49446122) @Damian6666 @AirwavesMan
+[FIXED] Biomeat had no infection chance. (b52325c9) @AirwavesMan
+[FIXED] Parachute speed bug by pressing certain keys. (2a41d122) @ch0c
+[FIXED] Loading screen progress bar did not work since the last Arma 2 1.64 patch. (21e5cfae) @IsGoose
+[FIXED] Players were unable to open a few tank versions with their key. (9cc8b5d8) @AirwavesMan
+[FIXED] The epoch versions of the RHIB boats were incorrect. (38a31290) @AirwavesMan
+[FIXED] Players are no longer able to exploit the player_wearClothes function to reset AI targeting. (5c29704) @morgoth0, @Arrakis, @worldwidesorrow.
+[FIXED] Vehicles should no longer explode after a server restart due to buildings loading in late. (99dc7cd7) @Seelenapparat
+[FIXED] CZ550 shadow bug (c22ae9e5) @AirwavesMan
+[FIXED] Floating loot in buildings over water. (89bca2c9) @AirwavesMan
+[FIXED] Potential kill count doubling after change clothes. (0b26ae12) @Seelenapparat
+[FIXED] Damaged vehicles will no longer repair after a vehicle upgrade. (95d528b8) @AirwavesMan
+[FIXED] Exorbitant damage from chainsaws and sledgehammers on buildings (118dbfa6) @AirwavesMan
+[FIXED] Players always looked north on spawn. (4aad93fe) @TH, @AirwavesMan
+[FIXED] Trees could be knocked down on the first hit by a hatchet or chainsaw. (8dc6ef8d) @AirwavesMan
+[FIXED] Female players had not the correct armor and camouflage set. (758be289) @AirwavesMan
+[FIXED] Sometimes players were not properly ejected from an exploded Cessna wreck. (0b6df456) @AirwavesMan
+[FIXED] Players were not in combat after shooting from certain helicopters or planes. (e6680aaa) @AirwavesMan
+[FIXED] Often the weapon on back was duped when the player was kicked or didn't log out properly. (1697af97) @AirwavesMan
+[FIXED] Filling mixed gas into a chainsaw now requires a chainsaw. (b0edf3cb) @AirwavesMan
+
+[UPDATED] All Epoch items and buildable models updated and optimized to affect less the performance. @Helion4
+[UPDATED] Spawning of Zombies and loot in Safe Zones can now be toggled, disabled by default, see configVariables.sqf/DZE_SafeZoneZombieLoot (6248add, 141b25e) @oiad, @_Lance_
+[UPDATED] Added notification when status icons are disabled. (e04f0fc) @ebayShopper
+[UPDATED] Added night vision mode back to DMR_DZ and M4SPR_DZE after it was removed with the 2018-04-05 A2OA CorePatch (d6cf707) @ebayShopper
+[UPDATED] All M32 grenades now use only one inventory slot. (cc85067) @AirwavesMan
+[UPDATED] The Czech Vest Pouch can now carry one weapon. This was changed to be more intuitive and to avoid disappearing weapons. (f7ea9cb) @AirwavesMan
+[UPDATED] Old/unused variables removed from variables.sqf. Entire file reorganized. (4accdee) @worldwidesorrow
+[UPDATED] Functions fnc_usec_damageHandler, dayz_inflame_showMenu, dayz_inflame_showMenu_other, DZ_KeyDown_EH, dayz_EjectPlayer compiled on client only - compiles.sqf. (7613e3a) @worldwidesorrow
+[UPDATED] Many unused trader cities were moved into a new folder called 'Archive'. Those files will no longer be updated. (6699d8d7) @AirwavesMan
+[UPDATED] All vehicle names updated and localizations added. (e36e3cc4) @AirwavesMan
+[UPDATED] The gunner optics angle of the BRDM-2 HQ was adjusted to have a better usage. (9ab576fa) @AirwavesMan
+[UPDATED] Moved FPS logging and server event spawner to the server scheduler (0a264b9) @worldwidesorrow
+[UPDATED] Vanilla events adjusted and moved to the server modules folder. The events are now spawned by the scheduler. (0a264b9) @worldwidesorrow
+[UPDATED] Rebuilt trader files and overhauled trader cities. (92700e8a) @AirwavesMan
+[UPDATED] Server side security added for higher risk PVDZ_send usage. (40dcf6f) @worldwidesorrow
+[UPDATED] New strings added to the string table for medical functions. (2a145bf) @worldwidesorrow
+[UPDATED] Medical functions revised. Old/unused medical functions moved to archive. @worldwidesorrow
+[UPDATED] Separate actions added for typed blood bags. Variable dayz_classicBloodBagSystem used to bypass unnecessary code. (a4c0638) @worldwidesorrow
+[UPDATED] All vehicles updated and many bugs fixed. Now there is a DZ and DZE class for every armed Epoch vehicle. @AirwavesMan
+[UPDATED] All silenced weapons can only be used with SD ammo, and all non-silenced weapons can only be used with regular (non-SD) ammo. (6f4b1706) @AirwavesMan
+[UPDATED] Increased bullet speed for the MK17 SD and Vintorez ammo. (1e69f357) @AirwavesMan
+[UPDATED] MK17 Sniper SD and Vintorez DZ and DZE versions have a higher zeroing. (3895cf9c) @AirwavesMan
+[UPDATED] AK74 and AKM start with the semi-automatic firemode instead of full-automatic. (9aeceebb, becfee04) @AirwavesMan
+[UPDATED] The FN Fal has a full-automatic mode again. (052becb) @AirwavesMan
+[UPDATED] Zombies will no longer get triggered by a chemlight at daytime. (93ba732e) @AirwavesMan
+[UPDATED] All magazines now have the combine option. @AirwavesMan
+[UPDATED] The Humanity system was updated for hotwiring vehicles and killing players. (f68bbda0, d5910357) @AirwavesMan, @oiad
+[UPDATED] The gear count of many vehicles (helicopters in particular) was updated and increased. (06b788a) @AirwavesMan
+[UPDATED] Sharpening a knife now has an animation. (b7892bfc) @AirwavesMan
+[UPDATED] Added full localization to snap and vector building. (fe1d7fb4) @AirwavesMan
+[UPDATED] Added the correct icon for the Terminal Backpack. (1a411660) @AirwavesMan, @DeVloek
+[UPDATED] Crafting a tent requires 2x equip_tent_poles instead of 2x ItemPole. (73289a69) @AirwavesMan
+[UPDATED] Crafting a firebarrel kit no longer requires matches. (b4b93562) @nadal28 @AirwavesMan
+[UPDATED] Crafting shows all required items now. (8315d899) @AirwavesMan
+[UPDATED] Relogging with a chainsaw in the backpack will delete the chainsaw gas instead of refilling it. (132e9506) @AirwavesMan
+[UPDATED] The group invite message now contains the name of the inviter. (396d0313) @ch0c, @AirwavesMan
+[UPDATED] Harvesting wood with a hatchet can now drop both wood piles and wooden logs. (ae79f4ce) @AirwavesMan
+[UPDATED] The maintain animation is interruptible now. (910ab43a) @AirwavesMan
+[UPDATED] Trading single items can be configured to change the player's humanity value. (4f106220) @AirwavesMan
+[UPDATED] The Journal main page was reworked and has some more information about the server settings now. (ef05eb4e) @AirwavesMan
+[UPDATED] Harvesting wood will yield at least 16 or more wood. This was added in order to decrease network traffic. (8dc6ef8d) @AirwavesMan
+[UPDATED] Increased cargo count of Refuel Trucks. (4667f20b) @AirwavesMan
+[UPDATED] Cinder buildings and metal floors have a new texture. @Helion4
+[UPDATED] Highly increased infection chance if the player eats uncooked meat or fish. (29b6a26) @AirwavesMan
+[UPDATED] Crafting wooden buildings now requires a handsaw and a hammer. (247f5dc6) @AirwavesMan
+[UPDATED] Full Russian Localization @RedLink-kam, @dreamforceinc
+
+[REMOVED] Epoch 1.0.7 does not support Database Traders any longer. All server admins with DB Traders have to switch to the config traders now. (49378f62) @AirwavesMan
+[REMOVED] NORRN_loadVcl, posForceUpdate, and medForceUpdate removed from setvariable.txt (47f07a8) @worldwidesorrow
+[REMOVED] PVDZ_drg_RaDrag, PVDZ_drg_RaLW, PVDZ_drg_RLact and PVDZ_Unconscious removed from publicvariable.txt. They have been replaced with PVDZ_send. (2d03fb9) @worldwidesorrow
+[REMOVED] DayZ Vanilla Crafting - all recipes were moved to Epoch Crafting. (8315d899) @AirwavesMan
+
+[INFO] Synced with DayZMod upstream up to commit fe063a8
+[INFO] Removed functions can be found under "dayz_code\old".
+[INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, Icewindo, Brainbug, lennard91, stagler, SyNcRoNiCzZ, Sam563, Alwarren, Robert Hammer, Marseille77

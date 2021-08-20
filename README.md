@@ -30,7 +30,7 @@ Included Custom Addons
 * USEC CH53 by Rocket
 * Anzio 20mm Rifle by WillRobinson
 * RedRyder BB Gun by WillRobinson
-* Namalsk Addons by SumrakDZN
+* Namalsk Addons and Bloodsucker by SumrakDZN
 * Stalker Units by Icewindo
 * Post Apocalypse Units by Icewindo
 * Ghillie Suits by Brainbug

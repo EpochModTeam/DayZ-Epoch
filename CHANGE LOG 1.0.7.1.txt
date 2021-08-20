@@ -14,7 +14,7 @@
 [ADDED] Toggleable Bury and Butcher Bodies by Salival. (be7898aa) @AirwavesMan
 [ADDED] Toggleable Vehicle Key Changer by Salival. (e6eb9419) @AirwavesMan
 [ADDED] Toggleable Virtual Garage by Salival. (30f15326) @AirwavesMan
-[ADDED] Fully functional Bloodsuckers. Can be activated in the configVariables.sqf. (05118343) @worldwidesorrow
+[ADDED] Fully functional Namalsk Bloodsuckers by SumrakDZN. Can be activated in the configVariables.sqf. (05118343) @worldwidesorrow
 [ADDED] G3A3 with attachment support. (a3a4cf90) @AirwavesMan
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Snappoints got improved. (f68e92d5) @worldwidesorrow
@@ -40,4 +40,7 @@
 [FIXED] Missing terrainCoef for the Mini Cooper. (53d92ba3) @DeVloek, @AirwavesMan
 [FIXED] Weapon dupe on gear syncing. (9852778b) @F507DMT, @AirwavesMan
 [FIXED] 200Rnd 40mm FV510 HE and Sabot magazines could not be used. (c10a436c) @Schalldampfer, @AirwavesMan
+[FIXED] Client RPT Spam 'Strange convex component288 in warehouse\models\warehouse.p3d:geometry' @helion4
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @Seelenapparat, @AirwavesMan
+
+[INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ
