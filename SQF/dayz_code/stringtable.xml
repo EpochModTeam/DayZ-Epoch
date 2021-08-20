@@ -18306,13 +18306,31 @@
 
 		<!-- G3 -->
 		<Key ID="STR_DZ_WPN_G3_NAME">
-			<English>G3</English>
+			<English>G3A1</English>
 		</Key>
         <Key ID="STR_DZ_WPN_G3_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51мм</Russian>
 		</Key>
+		<Key ID="STR_DZ_WPN_G3A3_NAME">
+			<English>G3A3</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_G3A3_CCO_NAME">
+			<English>G3A3 CCO</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_G3A3_HOLO_NAME">
+			<English>G3A3 Holo</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_G3A3_ACOG_NAME">
+			<English>G3A3 ACOG</English>
+		</Key>	
+		<Key ID="STR_DZ_WPN_G3_SG1_NAME">
+			<English>G3 SG1</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_G3_SG1_BIPOD_NAME">
+			<English>G3 SG1 Bipod</English>
+		</Key>		
 
 		<!-- MAT 49 -->
 		<Key ID="STR_DZ_WPN_MAT49_NAME">

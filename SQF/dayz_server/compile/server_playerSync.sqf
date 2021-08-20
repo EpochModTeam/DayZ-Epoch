@@ -67,7 +67,7 @@ if (!isNil "_magazines") then {
 				_class = _x select 0;
 			};
 			if (_class in _magazines) then {
-				local _MatchedCount = {_compare = if (typeName _x == "ARRAY") then {_x select 0;} else {_x}; _compare == _class} count _magTemp;
+				local _MatchedCount = {local _compare = if (typeName _x == "ARRAY") then {_x select 0;} else {_x}; _compare == _class} count _magTemp;
 				local _CountedActual = {_x == _class} count _magazines;
 				if (_MatchedCount > _CountedActual) then {
 					_magTemp set [_forEachIndex, "0"];
