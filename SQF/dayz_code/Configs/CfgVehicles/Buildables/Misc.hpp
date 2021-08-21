@@ -317,7 +317,7 @@ class Greenhouse_DZ: MAP_Misc_Greenhouse
 	mapSize = 2;	
 	displayName = $STR_EPOCH_GREENHOUSE;
 	constructioncount = 1;
-	offset[] = {0,3,2};
+	offset[] = {0,5,1.4};
 	removeoutput[] = {{"greenhouse_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
