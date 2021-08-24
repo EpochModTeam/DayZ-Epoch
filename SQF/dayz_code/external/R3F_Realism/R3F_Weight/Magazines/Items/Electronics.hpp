@@ -1,7 +1,7 @@
 class equip_aa_battery
 {
 	weight = 0.01;
-};;
+};
 
 class equip_d_battery
 {
