@@ -34374,7 +34374,7 @@
 			<English>Gun parts (Unknown)</English>
 			<German>Waffenteile (Unbekannt)</German>
 		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_UNKNOWN">
+		<Key ID="STR_EPOCH_WEAPON_PARTS_UNKNOWN_DESC">
 			<English>A pile of unknown gun parts in a good condition.</English>
 			<German>Ein Haufen unbekannter Waffenteile, in einem guten Zustand.</German>
 		</Key>		
