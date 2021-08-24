@@ -128,9 +128,28 @@ if (_inVehicle) then {
 		{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
 		s_player_lockUnlockInside_ctrl = -1;
 	};
+
+	//Allows to open garage doors from the vehicle, but may negatively impact performance	
+	if (DZE_GarageDoor_Opener) then {	
+		local _doors = nearestObjects [DZE_myVehicle, DZE_GarageDoors, DZE_GarageDoor_Radius];
+
+		if (count _doors > 0 && {driver DZE_myVehicle == player}) then {
+			local _hasAccess = [player,_doors select 0] call FNC_check_access;
+			if (s_player_gdoor_opener_ctrl < 0 && ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3) || (_hasAccess select 4))) then {
+				local _door = DZE_myVehicle addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_GDO_GARAGE"],"\z\addons\dayz_code\actions\garageDoorOpener.sqf",_doors select 0, 1, false, true];
+				s_player_gdoor_opener set [count s_player_gdoor_opener,_door];
+				s_player_gdoor_opener_ctrl = 1;
+			};
+		} else {
+			{DZE_myVehicle removeAction _x} count s_player_gdoor_opener;s_player_gdoor_opener = [];
+			s_player_gdoor_opener_ctrl = -1;
+		};
+	};
 } else {
 	{DZE_myVehicle removeAction _x} count s_player_lockUnlockInside;s_player_lockUnlockInside = [];
 	s_player_lockUnlockInside_ctrl = -1;
+	{DZE_myVehicle removeAction _x} count s_player_gdoor_opener;s_player_gdoor_opener = [];
+	s_player_gdoor_opener_ctrl = -1;
 };
 
 if (DZE_HeliLift) then {
@@ -215,6 +234,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	local _weaponsPlayer = weapons player;
 	local _hasCrowbar = "ItemCrowbar" in _itemsPlayer || "MeleeCrowbar" in _weaponsPlayer || dayz_onBack == "MeleeCrowbar";
 	local _hasToolbox = "ItemToolbox" in _itemsPlayer;
+	local _hasKeymakerskit = "ItemKeyKit" in _itemsPlayer;
 	local _isAlive = alive _cursorTarget;
 	local _text = getText (configFile >> "CfgVehicles" >> _typeOfCursorTarget >> "displayName");
 	local _isPlant = _typeOfCursorTarget in Dayz_plants;
@@ -549,11 +569,12 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 
 	// Allow Owner to lock and unlock vehicle
 	if (_player_lockUnlock_crtl) then {
+		local _totalKeys = call epoch_tempKeys;
+		local _temp_keys = _totalKeys select 0;
+		local _temp_keys_names = _totalKeys select 1;
+		local _hasKey = _characterID in _temp_keys;
+		
 		if (s_player_lockUnlock_crtl < 0) then {
-			local _totalKeys = call epoch_tempKeys;
-			local _temp_keys = _totalKeys select 0;
-			local _temp_keys_names = _totalKeys select 1;
-			local _hasKey = _characterID in _temp_keys;
 			local _oldOwner = (_characterID == _uid);
 			local _unlock = [];
 			
@@ -579,9 +600,18 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 				};
 			};
 		};
+		if (DZE_VehicleKey_Changer) then {
+			if (s_player_copyToKey < 0) then {
+				if ((_hasKeymakerskit && _hasKey && !_isLocked && {(count _temp_keys) > 1}) || {_cursorTarget getVariable ["hotwired",false]}) then {
+					s_player_copyToKey = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_VKC_CHANGE_ACTION"],"\z\addons\dayz_code\actions\vkc\vehicleKeyChanger.sqf",[_cursorTarget,_characterID,if (_cursorTarget getVariable ["hotwired",false]) then {"claim"} else {"change"}],5,false,true];
+				};
+			};
+		};		
 	} else {
 		{player removeAction _x} count s_player_lockunlock;s_player_lockunlock = [];
 		s_player_lockUnlock_crtl = -1;
+		player removeAction s_player_copyToKey;
+		s_player_copyToKey = -1;
 	};
 
 	if (DZE_Hide_Body && {_isMan && !_isAlive}) then {
@@ -616,7 +646,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	};
 
 	//Allow owner to unlock vault
-	if (_isClose && !keypadCancel && {(_typeOfCursorTarget in DZE_LockedStorage)  && {_characterID != "0"}}) then {
+	if (_isClose && !keypadCancel && {(_typeOfCursorTarget in (DZE_LockedStorage + DZE_UnLockedStorage)) && {_characterID != "0"}}) then {
 		if (s_player_unlockvault < 0) then {
 			local _combi = [];
 			if (_typeOfCursorTarget in DZE_LockedStorage) then {
@@ -790,22 +820,73 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 		player removeAction s_player_fillgen;
 		s_player_fillgen = -1;
 	};
+	
+	if (DZE_VehicleKey_Changer) then {
+		if (_hasKeymakerskit && _isVehicle && !_isMan && _isAlive && {_characterID == "0"}) then {
+			if (s_player_claimVehicle < 0) then {
+				_totalKeys = call epoch_tempKeys;
+				if (count (_totalKeys select 0) > 0) then {
+					s_player_claimVehicle = player addAction [format["<t color='#0059FF'>%1</t>",format[localize "STR_CL_VKC_CLAIM_ACTION",_text]],"\z\addons\dayz_code\actions\vkc\vehicleKeyChanger.sqf",[_cursorTarget,_characterID,"claim"],5,false,true];
+				};
+			};
+		} else {
+			player removeAction s_player_claimVehicle;
+			s_player_claimVehicle = -1;
+		};
+	};
 
-	//Towing with tow truck
-	/*
-	if(_typeOfCursorTarget == "TOW_DZE") then {
-		if (s_player_towing < 0) then {
-			if(!(_cursorTarget getVariable ["DZEinTow", false])) then {
-				s_player_towing = player addAction [localize "STR_EPOCH_ACTIONS_ATTACH" "\z\addons\dayz_code\actions\tow_AttachStraps.sqf",_cursorTarget, 0, false, true];
+	if (!_isAlive && _isMan && !_isZombie && {!(_cursorTarget isKindOf "Animal")}) then {	
+		if (DZE_Take_Clothes) then {
+			if (!(_cursorTarget getVariable["clothesTaken",false]) && {_typeOfCursorTarget in AllPlayers} && {!(_typeOfCursorTarget in DZE_Disable_Take_Clothes)}) then {
+				if (s_player_clothes < 0) then {
+					s_player_clothes = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_TC_TAKE_CLOTHES"],"\z\addons\dayz_code\actions\takeClothes.sqf",_cursorTarget,0, false,true];
+				};
 			} else {
-				s_player_towing = player addAction [localize "STR_EPOCH_ACTIONS_DETACH", "\z\addons\dayz_code\actions\tow_DetachStraps.sqf",_cursorTarget, 0, false, true];
+				player removeAction s_player_clothes;
+				s_player_clothes = -1;
 			};
 		};
-	} else {
-		player removeAction s_player_towing;
-		s_player_towing = -1;
+
+		if (DZE_Bury_Body) then {
+			local _hasShovel = ("ItemEtool" in _itemsPlayer || "ItemShovel" in _itemsPlayer);
+			if (_hasShovel && !(_cursorTarget getVariable ["bodyButchered",false])) then {
+				if (s_player_bury_human < 0) then {
+					s_player_bury_human = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_BA_BURY"],"\z\addons\dayz_code\actions\buryActions.sqf",[_cursorTarget,"bury"],0,false,true];
+				};
+			} else {
+				player removeAction s_player_bury_human;
+				s_player_bury_human = -1;
+			};
+		};
+		
+		if (DZE_Butcher_Body) then {
+			if (({_x in ["ItemKnife","ItemKnife5","ItemKnife4","ItemKnife3","ItemKnife2","ItemKnife1"]} count _itemsPlayer > 0) && !(_cursorTarget getVariable ["bodyButchered",false])) then {
+				if (s_player_butcher_human < 0) then {
+					s_player_butcher_human = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_BA_BUTCHER"],"\z\addons\dayz_code\actions\buryActions.sqf",[_cursorTarget,"butcher"],0,false,true];
+				};
+			} else {
+				player removeAction s_player_butcher_human;
+				s_player_butcher_human = -1;
+			};
+		};
 	};
-	*/
+	
+	if (DZE_Virtual_Garage) then {
+		if (_typeOfCursorTarget in vg_List) then {
+			if (s_garage_dialog < 0) then {
+				local _hasAccess = [player,_cursorTarget] call FNC_check_access;
+				local _plotCheck = [player, false] call FNC_find_plots;
+				local _isNearPlot = ((_plotCheck select 1) > 0);
+
+				if ((_isNearPlot && ((_hasAccess select 0) || (_hasAccess select 2) || (_hasAccess select 3) || (_hasAccess select 4))) || !_isNearPlot) then {
+					s_garage_dialog = player addAction [format["<t color='#0059FF'>%1</t>",localize "STR_CL_VG_VIRTUAL_GARAGE"],"\z\addons\dayz_code\actions\virtualGarage\virtualGarage.sqf",_cursorTarget,3,false,true];
+				};
+			};
+		} else {
+			player removeAction s_garage_dialog;
+			s_garage_dialog = -1;
+		};
+	};
 
 	// ZSC
 	if (Z_singleCurrency) then {
@@ -1079,6 +1160,18 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 	s_bank_dialog3 = -1;
 	player removeAction s_player_checkWallet;
 	s_player_checkWallet = -1;
+	player removeAction s_player_clothes;
+	s_player_clothes = -1;
+	player removeAction s_player_bury_human;
+	s_player_bury_human = -1;
+	player removeAction s_player_butcher_human;
+	s_player_butcher_human = -1;
+	player removeAction s_player_copyToKey;
+	s_player_copyToKey = -1;
+	player removeAction s_player_claimVehicle;
+	s_player_claimVehicle = -1;	
+	player removeAction s_garage_dialog;
+	s_garage_dialog = -1;	
 };
 
 //Dog actions on player self

@@ -1,11 +1,11 @@
+if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+dayz_actionInProgress = true;
+
 private ["_mineChance","_breaking","_counter","_rocks","_findNearestRock","_objName","_countOut","_isOk","_proceed","_finished","_itemOut","_weapons"];
 
 _item = _this;
 call gear_ui_init;
 closeDialog 1;
-
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
-dayz_actionInProgress = true;
 
 // allowed rocks list move this later
 _rocks = ["r2_boulder1.p3d","r2_boulder2.p3d","r2_rock1.p3d","r2_rock2.p3d","r2_rocktower.p3d","r2_rockwall.p3d","r2_stone.p3d"];
@@ -37,7 +37,7 @@ if (!isNull _findNearestRock) then {
 		_weapons set [count _weapons,dayz_onBack];
 
 		//Make sure player did not drop pickaxe
-        if (!_finished or !("MeleePickaxe" in _weapons or ("ItemPickaxe" in _weapons))) exitWith {
+        if (!_finished || !("ItemPickaxe" in _weapons)) exitWith {
             _isOk = false;
             _proceed = false;
         };
@@ -48,18 +48,9 @@ if (!isNull _findNearestRock) then {
             _breaking = false;
 			if (dayz_toolBreaking && _mineChance) then {
                 _breaking = true;
-                if ("MeleePickaxe" in weapons player) then {
-                    player removeWeapon "MeleePickaxe";
-                } else {
-                    if ("ItemPickaxe" in weapons player) then {
-                        player removeWeapon "ItemPickaxe";
-                    } else {
-                        if (dayz_onBack == "MeleePickaxe") then {
-                            dayz_onBack = "";
-							if (!isNull findDisplay 106) then {findDisplay 106 displayCtrl 1209 ctrlSetText "";};
-                        };
-                    };
-                };
+				if ("ItemPickaxe" in weapons player) then {
+					player removeWeapon "ItemPickaxe";
+				};
                 if (!("ItemPickaxeBroken" in weapons player)) then {
                     player addWeapon "ItemPickaxeBroken";
                 };

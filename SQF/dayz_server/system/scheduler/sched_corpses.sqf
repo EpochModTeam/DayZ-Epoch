@@ -36,7 +36,7 @@ sched_corpses = {
 	_addFlies = 0;
 	{
 		if (local _x && {_x isKindOf "CAManBase"}) then {
-			if (_x isKindOf "zZombie_Base") then {
+			if (_x isKindOf "zZombie_Base" || {typeOf _x == "z_bloodsucker"}) then {
 				_x call sched_co_deleteVehicle;
 				_delQtyZ = _delQtyZ + 1;
 			} else {
@@ -97,7 +97,7 @@ sched_corpses = {
 						if (_onoff == 1) then {
 							_sound = createSoundSource["Sound_Flies",getPosATL _x,[],0];
 							_sound attachTo [_x];
-							_x setVariable ["sched_co_fliesSource", _sound];
+							_x setVariable ["sched_co_fliesSource", _sound,[false,true] select (DZE_Bury_Body || DZE_Butcher_Body)];
 							//diag_log "create sound";
 						};
 						// broadcast flies status for everyone periodically, to update visible swarm

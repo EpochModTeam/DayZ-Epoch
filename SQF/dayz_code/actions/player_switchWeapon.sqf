@@ -151,6 +151,8 @@ dz_fn_switchWeapon_swap = {
 		dayz_onBack = [primaryWeapon player,player removeWeapon primaryWeapon player,player addWeapon dayz_onBack] select 0;
 	};
 
+	player setVariable ["dayz_onBack",dayz_onBack,true];
+
 	if (_this) then {
 		player selectWeapon primaryWeapon player;
 		if (IS_MELEE(primaryWeapon player)) then {

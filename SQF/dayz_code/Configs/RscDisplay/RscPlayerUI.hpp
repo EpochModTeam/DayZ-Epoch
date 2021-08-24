@@ -931,4 +931,24 @@ class RscTitles
 			};
 		};
 	};
+	class mutant_attack
+	{
+		idd=-1;
+		movingEnable=0;
+		duration=1;
+		fadein=0;
+		name="Skrabanec";
+		controls[]=
+		{
+			"skrabanec"
+		};
+		class skrabanec: RscPicture
+		{
+			x=0;
+			y=0;
+			w=1;
+			h=1;
+			text="\nst\textures\skrabanec.paa";
+		};
+	};
 };

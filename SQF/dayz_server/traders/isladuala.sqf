@@ -60,7 +60,7 @@
 ] call server_spawnTraders;
 
 // Bankers
-if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
+if (Z_singleCurrency && {Z_globalBanking && Z_globalBankingTraders}) then {
 	[
 		//Camara
 		["Functionary1_EP1",[2001.31,1196.58,0],342],
