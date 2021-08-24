@@ -157,7 +157,7 @@ class ItemWeaponPartsRifle
 {
 	weight = 7;
 };
-class ItemWeaponPartsSniperRilfe
+class ItemWeaponPartsSniperRifle
 {
 	weight = 7.5;
 };

@@ -147,3 +147,13 @@ class ItemZombieskin: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_zparts_CA.paa";
 	descriptionShort = $STR_EPOCH_ZOMBIEPARTS_SKIN_DESC;
 };
+
+class ItemMutantHeartMag: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_MUTANT_HEART;
+	picture = "\nst\ns_mutants\blood\heart_icon_ca.paa";
+	descriptionShort = $STR_MUTANT_HEART_DESC;
+	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
+};

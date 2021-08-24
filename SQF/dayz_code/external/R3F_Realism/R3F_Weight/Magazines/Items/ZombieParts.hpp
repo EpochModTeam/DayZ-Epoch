@@ -72,3 +72,8 @@ class ItemZombieskin
 {
 	weight = 3;
 };
+
+class ItemMutantHeartMag
+{
+	weight = 4;
+};

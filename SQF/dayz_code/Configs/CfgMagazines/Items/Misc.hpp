@@ -306,7 +306,7 @@ class ItemWeaponPartsRifle : CA_Magazine
 	type = 256;
 };
 
-class ItemWeaponPartsSniperRilfe : CA_Magazine 
+class ItemWeaponPartsSniperRifle : CA_Magazine 
 {
 	scope = 2;
 	count = 1;

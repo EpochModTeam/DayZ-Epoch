@@ -534,3 +534,7 @@ class WrenchBroken_DZE
 { 
 	weight = 1.7; 
 };
+class ItemMutantHeart
+{
+	weight = 4;
+};
