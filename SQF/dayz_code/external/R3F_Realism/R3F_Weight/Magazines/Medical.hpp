@@ -140,31 +140,31 @@ class emptyBloodBag
 };
 class ItemPainkiller6 
 { 
-	weight = 0.6; 
+	weight = 0.08; 
 };
 class ItemPainkiller5 
 { 
-	weight = 0.5; 
+	weight = 0.06; 
 };
 class ItemPainkiller4 
 { 
-	weight = 0.4; 
+	weight = 0.04; 
 };
 class ItemPainkiller3 
 { 
-	weight = 0.3; 
+	weight = 0.02; 
 };
 class ItemPainkiller2 
 { 
-	weight = 0.2; 
+	weight = 0.009; 
 };
 class ItemPainkiller1 
 { 
-	weight = 0.1; 
+	weight = 0.005; 
 };
 class ItemPainkillerEmpty 
 { 
-	weight = 0.0; 
+	weight = 0.002; 
 };
 class equip_woodensplint 
 { 
