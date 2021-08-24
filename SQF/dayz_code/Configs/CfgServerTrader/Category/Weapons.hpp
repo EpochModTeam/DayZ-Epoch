@@ -459,10 +459,10 @@ class Category_16 {
 	class AK74_GL_PSO1_SD_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {1,"ItemGoldBar10oz"};};
 	class AK107_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class AK107_Kobra_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
-	class AK107_PSO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};
+	class AK107_PSO1_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};
 	class AK107_GL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};	
 	class AK107_GL_Kobra_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {5,"ItemGoldBar"};};
-	class AK107_GL_PSO_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};	
+	class AK107_GL_PSO1_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {7,"ItemGoldBar"};};	
 	class AN94_DZ {type = "trade_weapons";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class AN94_GL_DZ {type = "trade_weapons";buy[] = {-1,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class SCAR_H_AK_DZ {type = "trade_weapons";buy[] = {8,"ItemGoldBar"};sell[] = {4,"ItemGoldBar"};};

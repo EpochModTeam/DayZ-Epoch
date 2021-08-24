@@ -21,22 +21,6 @@ dayz_maxControlledZombies = dayz_maxLocalZombies;  // This variable is also used
 // Current loot spawns
 dayz_currentWeaponHolders = count (_position nearObjects ["ReammoBox",_radius]);
 
-// Current bloodsuckers
-if (DZE_Bloodsuckers) then {
-	local _bloodsuckers = entities "z_bloodsucker";
-	dayz_currentGlobalBloodsuckers = count _bloodsuckers;
-	dayz_CurrentNearBloodsuckers = 0;
-	dayz_spawnBloodsuckers = 0;
-	{
-		if ((_x distance _position) < _radius && {alive _x}) then {
-			if (local _x) then {
-				dayz_spawnBloodsuckers = dayz_spawnBloodsuckers + 1;
-			};
-			dayz_CurrentNearBloodsuckers = dayz_CurrentNearBloodsuckers + 1;
-		};
-	} count _bloodsuckers;
-};
-
 // In vehicle check
 local _vehicle = vehicle player;
 local _inVehicle = (_vehicle != player);

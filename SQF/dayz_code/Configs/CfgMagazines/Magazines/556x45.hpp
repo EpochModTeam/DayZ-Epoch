@@ -50,14 +50,7 @@ class 100Rnd_556x45_BetaCMagSD: 100Rnd_556x45_BetaCMag {
 };
 /* STANAG <-> G36 */
 
-class 20Rnd_556x45_Stanag : CA_Magazine 
-{
-	class ItemActions
-	{
-		COMBINE_MAG
-	};
-}; 
-
+class 20Rnd_556x45_Stanag; 
 class 30Rnd_556x45_Stanag : 20Rnd_556x45_Stanag
 {
 	displayName = $STR_DZ_MAG_30RND_556x45_STANAG_NAME;

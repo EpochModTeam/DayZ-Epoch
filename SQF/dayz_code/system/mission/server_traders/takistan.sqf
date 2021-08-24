@@ -167,16 +167,12 @@ menu_Profiteer2 = [
 	"neutral"
 ];
 
-if (DZE_Virtual_Garage) then {(menu_Profiteer2 select 0) set [count (menu_Profiteer2 select 0), [localize "STR_EPOCH_TRADER_CATEGORY_HELI_PADS",52]];};
-
 /***************Wholesaler*********/
 menu_Profiteer3 = [
 	[[localize "STR_EPOCH_TRADER_CATEGORY_WHOLESALE",50]],
 	[],
 	"neutral"
 ];
-
-if (DZE_Virtual_Garage) then {(menu_Profiteer3 select 0) set [count (menu_Profiteer3 select 0), [localize "STR_EPOCH_TRADER_CATEGORY_HELI_PADS",52]];};
 
 /***************Banker*********/
 menu_Functionary1_EP1 = [

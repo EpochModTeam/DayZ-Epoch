@@ -110,7 +110,7 @@ while {_isOk} do {
             } else {
                 call gear_ui_init;
                 //Remove melee magazines (BIS_fnc_invAdd fix) 
-                false call dz_fn_meleeMagazines;
+                {player removeMagazines _x} forEach MeleeMagazines;
                 _result = [player,_itemOut] call BIS_fnc_invAdd;
                 if (_result) then {
                     //Let the player know what he caught

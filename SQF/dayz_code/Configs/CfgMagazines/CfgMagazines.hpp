@@ -65,6 +65,5 @@ class CfgMagazines
 	#include "Buildings\Fences.hpp"
 	#include "Buildings\Storage.hpp"
 	#include "Buildings\Tent.hpp"	
-	#include "Buildings\Misc.hpp"
-	#include "Buildings\StaticWeapons.hpp"
+	#include "Buildings\Misc.hpp"	
 };

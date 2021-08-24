@@ -239,7 +239,7 @@ _playerObj setVariable ["lastTime",diag_ticktime];
 
 //set server-side inventory variable to monitor player gear
 if (count _inventory > 2) then {
-	_playerObj setVariable["ServerMagArray",_inventory select 1, false];
+	_playerObj setVariable["ServerMagArray",[_inventory select 1,_inventory select 2,_inventory select 0], false];
 };
 
 //Record Player Login/LogOut

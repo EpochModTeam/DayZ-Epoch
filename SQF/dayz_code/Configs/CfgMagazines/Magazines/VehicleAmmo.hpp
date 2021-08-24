@@ -1484,7 +1484,7 @@ class 8Rnd_82mmILLUM_2B14: 8Rnd_82mmHE_2B14
 };
 class 200Rnd_40mmHE_FV510: Vehicle_ammo_base
 {
-	scope = 2;
+	scope = 1;
 	displayName = $STR_DZ_MAG_200RND_FV510HE_NAME;
 	descriptionShort = $STR_DZ_MAG_200RND_FV510HE_DESC;	
 	ammo = "Sh_40_HE";

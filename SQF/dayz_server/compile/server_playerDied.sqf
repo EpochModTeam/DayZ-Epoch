@@ -86,3 +86,4 @@ if (_playerName != "unknown" || {_sourceName != "unknown"}) then {
 
 _newObject setDamage 1;
 _newObject setOwner 0;
+//dead_bodyCleanup set [count dead_bodyCleanup,_newObject];

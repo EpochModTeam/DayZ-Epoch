@@ -41,11 +41,4 @@ if (!([_objPos] call DZE_SafeZonePosCheck)) then {
 			};
 		} forEach _positions;
 	};
-	
-	// Bloodsuckers
-	if (DZE_Bloodsuckers) then {
-		if ((dayz_spawnBloodsuckers < DZE_BloodsuckersMaxLocal) && {dayz_CurrentNearBloodsuckers < DZE_BloodsuckersMaxNear} && {dayz_currentGlobalBloodsuckers < DZE_BloodsuckersMaxGlobal} && {_type in DZE_BloodsuckerBuildings} && {(random 1) < DZE_BloodsuckerChance}) then {
-			_objPos call mutant_generate;
-		};
-	};
 };

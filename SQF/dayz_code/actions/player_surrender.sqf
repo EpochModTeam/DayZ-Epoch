@@ -32,7 +32,6 @@ if (_canDo && !DZE_Surrender && !(player isKindOf  "PZombie_VB")) then {
 		if (dayz_onBack != "") then {
 			[dayz_onBack,2,1] call fn_dropItem;
 			dayz_onBack = ""; // Remove from back
-			player setVariable ["dayz_onBack",dayz_onBack,true];
 			if (!isNull findDisplay 106) then {findDisplay 106 displayCtrl 1209 ctrlSetText "";};
 		};
 		call player_forceSave;

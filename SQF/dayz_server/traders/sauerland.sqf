@@ -58,7 +58,7 @@
 ] call server_spawnTraders;
 
 // Bankers
-if (Z_singleCurrency && {Z_globalBanking && Z_globalBankingTraders}) then {
+if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Seedorf
 		["Functionary1_EP1",[15488.6,17014.2,0],172],

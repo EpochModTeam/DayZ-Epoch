@@ -102,7 +102,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	_damage = _x select 8;
 	_storageMoney = _x select 9;
 
-	if ((_type isKindOf "AllVehicles") && !(_type isKindOf "StaticWeapon")) then {
+	if ((_type isKindOf "AllVehicles")) then {
 		_VehicleQueue set [_vQty,_x];
 		_vQty = _vQty + 1;
 	} else {
@@ -341,7 +341,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	// prevent immediate hive write when vehicle parts are set up
 	_object setVariable ["lastUpdate",diag_ticktime];
 	_object setVariable ["ObjectID", _idKey, true];
-	if (Z_SingleCurrency && {ZSC_VehicleMoneyStorage}) then {
+	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage) then {
 		_object setVariable ["cashMoney", _storageMoney, true];
 	};
 
@@ -466,7 +466,4 @@ if (_hiveLoaded) then {
 		//Update gear last after all dynamic vehicles are created to save random loot to database (low priority)
 		{[_x,"gear"] call server_updateObject} count _vehiclesToUpdate;
 	};
-	if (DZE_SafeZone_Relocate) then {
-		execVM "\z\addons\dayz_server\system\safeZoneRelocate.sqf";
-	};	
 };

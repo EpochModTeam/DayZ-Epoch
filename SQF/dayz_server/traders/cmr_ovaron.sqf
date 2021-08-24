@@ -48,7 +48,7 @@
 ] call server_spawnTraders;
 
 // Bankers
-if (Z_singleCurrency && {Z_globalBanking && Z_globalBankingTraders}) then {
+if (Z_singleCurrency && Z_globalBanking && Z_globalBankingTraders) then {
 	[
 		//Lissabon
 		["Functionary1_EP1",[4349.68,6725.49,0],179],

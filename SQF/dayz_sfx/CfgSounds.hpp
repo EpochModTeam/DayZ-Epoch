@@ -9,6 +9,11 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\effects\chopwood.ogg", 0.1, 1, 50};
 		titles[] = {};
 	};
+	class z_minestone_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\minestone.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
 	class heartbeat_1 {
 		name = "";
 		sound[] = {"\dayz_sfx\effects\heartbeat_1",0.8,1,30};
@@ -834,71 +839,6 @@ class CfgSounds {
 	class Switch_On_Off {
 		name="";
 		sound[] = {"\dayz_sfx\effects\switch.ogg",0.5,1};
-		titles[] = {};
-	};
-	class z_bloodatt0_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\attack_0.ogg",0.177828,1};
-		titles[] = {};
-	};
-	class z_bloodatt1_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\attack_1.ogg",0.177828,1};
-		titles[] = {};
-	};
-	class z_bloodatt2_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\attack_2.ogg",0.177828,1};
-		titles[] = {};
-	};
-	class z_bloodatt3_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\attack_3.ogg",0.177828,1};
-		titles[] = {};
-	};
-	class z_bloodgrowl0_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\distant_growl_0.ogg",0.25118899,1};
-		titles[] = {};
-	};
-	class z_bloodgrowl1_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\distant_growl_1.ogg",0.25118899,1};
-		titles[] = {};
-	};
-	class z_bloodgrowl2_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\distant_growl_2.ogg",0.25118899,1};
-		titles[] = {};
-	};
-	class z_bloodgrowl3_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\distant_growl_3.ogg",0.25118899,1};
-		titles[] = {};
-	};
-	class z_bloodgrowl4_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\distant_growl_4.ogg",0.25118899,1};
-		titles[] = {};
-	};
-	class z_bloodforest1_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\forest_hidden_1.ogg",0.25118899,1};
-		titles[] = {};
-	};
-	class z_bloodforest2_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\forest_hidden_2.ogg",0.25118899,1};
-		titles[] = {};
-	};
-	class z_bloodforest3_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\forest_hidden_3.ogg",0.25118899,1};
-		titles[] = {};
-	};
-	class z_bloodforest4_0 {
-		name = "";
-		sound[] = {"\dayz_sfx\bloodsucker\forest_hidden_4.ogg",0.25118899,1};
 		titles[] = {};
 	};
 };

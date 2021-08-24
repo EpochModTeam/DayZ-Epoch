@@ -38,7 +38,6 @@ call gear_ui_init;
 
 if (_item == dayz_onBack && carryClick) then {
 	dayz_onBack = "";
-	player setVariable ["dayz_onBack",dayz_onBack,true];
 	carryClick = false;
 	((findDisplay 106) displayCtrl 1209) ctrlSetText "";
 	_removed = true;

@@ -1,27 +1,27 @@
+private ["_item","_type","_hasHarvested","_knifeArray","_PlayerNear","_isListed","_activeKnife","_text","_qty","_string","_isZombie","_humanity","_finished"];
+
 if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-local _body = _this;
-if (isNull _body) exitWith {dayz_actionInProgress = false; systemChat localize "str_cursorTargetNotFound";};
-if (_body getVariable["meatHarvested",false]) exitWith {dayz_actionInProgress = false;}; // Exit the script if the meat has already been harvested.
-if ({isPlayer _x} count ((getPosATL _body) nearEntities ["CAManBase", 12]) > 1) exitWith {dayz_actionInProgress = false;localize "str_pickup_limit_5" call dayz_rollingMessages;}; // Exit the script if another player is near to prevent duping.
+_item = _this;
+_type = typeOf _item;
+_isZombie = _type isKindOf "zZombie_base";
+_hasHarvested = _item getVariable["meatHarvested",false];
 
-local _type = typeOf _body;
-local _isZombie = _type isKindOf "zZombie_base";
-local _isMutant = _type == "z_bloodsucker";
-local _knives = [];
-local _string = "";
+_knifeArray = [];
 
-// Count how many knives the player has
+_PlayerNear = {isPlayer _x} count ((getPosATL _item) nearEntities ["CAManBase", 12]) > 1;
+if (_PlayerNear) exitWith {localize "str_pickup_limit_5" call dayz_rollingMessages; dayz_actionInProgress = false;};
+
+//Count how many active tools the player has
 {
-	if (_x in items player) then {
-		_knives set [count _knives, _x];
+	if (_x IN items player) then {
+		_knifeArray set [count _knifeArray, _x];
 	};
 } count Dayz_Gutting;
 
-// Exit the script if the player doesn't have a knife
-if ((count _knives) < 1) exitWith {
-	if (_isZombie || _isMutant) then {
+if ((count _knifeArray) < 1) exitWith {
+	if (_isZombie) then {
 		format[localize "str_missing_to_do_this",localize "STR_EQUIP_NAME_4"] call dayz_rollingMessages;
 	} else {
 		localize "str_cannotgut" call dayz_rollingMessages;
@@ -29,48 +29,48 @@ if ((count _knives) < 1) exitWith {
 	dayz_actionInProgress = false;
 };
 
-[player,(getPosATL player),10,"gut"] spawn fnc_alertZombies;
+if ((count _knifeArray > 0) and !_hasHarvested) then {
+	//Use sharpest knife player has
+	_activeKnife = _knifeArray select 0;
 
-local _finished = ["Medic",1] call fn_loopAction;
-if (!_finished) exitWith {dayz_actionInProgress = false;};
+	//Get Animal Type
+	_isListed = isClass (configFile >> "CfgSurvival" >> "Meat" >> _type);
+	_text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
 
-// Added Nutrition-Factor for work
-["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
+	[player,(getPosATL player),10,"gut"] spawn fnc_alertZombies;
 
-//Get Animal Type
-local _isListed = isClass (configFile >> "CfgSurvival" >> "Meat" >> _type);
-local _text = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
+	_finished = ["Medic",1] call fn_loopAction;
+	if (!_finished) exitWith {};
 
-_body setVariable ["meatHarvested",true,true];
-local _qty = if (_isListed) then {getNumber (configFile >> "CfgSurvival" >> "Meat" >> _type >> "yield")} else {2};
-if ((_knives select 0) == "ItemKnifeBlunt") then {_qty = round(_qty / 2);};
+	// Added Nutrition-Factor for work
+	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-if (local _body) then {
-	[_body,_qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
-} else {
-	PVCDZ_obj_GutBody =[_body,_qty];
-	publicVariable "PVCDZ_obj_GutBody";
-};
+	_item setVariable ["meatHarvested",true,true];
 
-["knives",0.2] call fn_dynamicTool;
+	_qty = if (_isListed) then {getNumber (configFile >> "CfgSurvival" >> "Meat" >> _type >> "yield")} else {2};
+	if (_activeKnife == "ItemKnifeBlunt") then { _qty = round(_qty / 2); };
 
-call {
-	if (_isZombie) exitWith {
+	if (local _item) then {
+		[_item,_qty] spawn local_gutObject; //leave as spawn (sleeping in loops will work but can freeze the script)
+	} else {
+		PVCDZ_obj_GutBody =[_item,_qty];
+		publicVariable "PVCDZ_obj_GutBody";
+	};
+
+	["knives",0.2] call fn_dynamicTool;
+
+	if (_isZombie) then {
 		// Reduce humanity for gutting zeds
-		local _humanity = player getVariable ["humanity",0];
-		player setVariable ["humanity",(_humanity - 10),true];
+		_humanity = player getVariable ["humanity",0];
+		_humanity = _humanity - 10;
+		player setVariable ["humanity",_humanity,true];
 		_string = format[localize "str_success_gutted_zombie",_text]; //%1 has been gutted, zombie parts are now on the carcass
+	} else {
+		_string = format[localize "str_success_gutted_animal",_text,_qty];
 	};
-	
-	if (_isMutant) exitWith {
-		_string = format[localize "str_success_gutted_mutant",_text];
-	};
-	
-	_string = format[localize "str_success_gutted_animal",_text,_qty]; // default is gut animal
+	closeDialog 0;
+	uiSleep 0.02;
+	_string call dayz_rollingMessages;
 };
-
-closeDialog 0;
-uiSleep 0.02;
-_string call dayz_rollingMessages;
 
 dayz_actionInProgress = false;

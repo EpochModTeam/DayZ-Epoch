@@ -3,86 +3,6 @@
 // To change a variable copy paste it in the mission init.sqf below the #include line.
 // Standard DayZ variables are found in dayz_code\init\variables.sqf.
 
-// Both
-dayz_infectiouswaterholes = true; //Enable infected waterholes
-dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
-dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
-DZE_HeliLift = true; // Enable Epoch heli lift system
-DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
-DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
-DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
-dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
-infectedWaterHoles = []; //Needed for non-cherno maps.
-DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed.
-dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
-dayz_classicBloodBagSystem = false; // disable blood types system and use the single classic ItemBloodbag
-dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
-
-// Death Messages
-DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
-DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
-DZE_DeathMsgRolling = false; // Display death messages as rolling messages in bottom center of screen.
-
-// ZSC
-Z_SingleCurrency = false; // Enable single currency system.
-
-if (Z_SingleCurrency) then {
-	Z_globalBanking = false; // Enable global banking system.
-	Z_persistentMoney = false; // Enabling this stores currency to player_data instead of character_data. Currency transfers to a new character after death. For PVE servers only. Formerly called "GlobalMoney".
-	CurrencyName = "Coins"; // If using single currency this is the currency display name.
-	DZE_MoneyStorageClasses = ["VaultStorage","VaultStorage2","VaultStorageLocked","VaultStorage2Locked","LockboxStorageLocked","LockboxStorage2Locked","LockboxStorage","LockboxStorage2","LockboxStorageWinterLocked","LockboxStorageWinter2Locked","LockboxStorageWinter","LockboxStorageWinter2","TallSafe","TallSafeLocked"]; // If using single currency this is an array of object classes players can store coins in. E.g.: ["GunRack_DZ","WoodCrate_DZ"]
-	ZSC_VehicleMoneyStorage = true; // Allow players to store money in vehicles. If vehicles are destroyed the money is also destroyed.
-};
-
-Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
-
-// Vehicle Key Changer
-DZE_VehicleKey_Changer = false; // Enable Vehicle Key Changer. Create or change the key for a vehicle.
-
-// Virtual Garage
-DZE_Virtual_Garage = false; // Enable the Virtual Garage to store vehicles.
-
-// Plot Management and Plot for Life
-DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
-DZE_isRemovable = ["Plastic_Pole_EP1_DZ"]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
-
-// Door Management
-DZE_doorManagement = true; // Enable Door Management by @DevZupa.
-
-// Group System
-dayz_groupSystem = false; // Enable group system
-
-// Bury and Butcher Bodies
-DZE_Bury_Body = false; // Enable Bury Bodies
-DZE_Butcher_Body = false; // Enable Butcher Bodies
-
-// Weather
-DZE_Weather = 2; // Options: 1 - Summer Static, 2 - Summer Dynamic, 3 - Winter Static, 4 - Winter Dynamic. If static is selected, the weather settings will be set at server startup and not change. Weather settings can be adjusted with array DZE_WeatherVariables.
-
-// The settings in the array below may be adjusted as desired. The default settings are designed to maximize client and server performance.
-// Having several features enabled at once might have adverse effects on client performance. For instance, you could have snowfall, ground fog, and breath fog threads all running at once.
-DZE_WeatherVariables = [
-	15, // Minimum time in minutes for the weather to change. (default value: 15).
-	30, // Maximum time in minutes for the weather to change. (default value: 30).
-	0, // Minimum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0).
-	.2, // Maximum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0.8).
-	0, // Minimum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 0). Note: Rain and snow will not occur when overcast is less than 0.70.
-	.6, // Maximum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 1).
-	0, // Minimum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
-	.6, // Maximum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
-	0, // Minimum wind strength (default value: 0).
-	3, // Maximum wind strength (default value: 5).
-	.25, // Probability for wind to change when weather changes. (default value: .25).
-	1, // Minimum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
-	1, // Maximum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
-	.2,// Probability for a blizzard to occur when it is snowing. (0 = no blizzards, 1 = blizzard all the time). (default value: .2).
-	10, // Blizzard interval in minutes. Set to zero to have the blizzard run for the whole interval, otherwise you can set a custom time interval for the blizzard.
-	0, // Ground Fog Effects. Options: 0 - no ground fog, 1 - only at evening, night, and early morning, 2 - anytime, 3 - near cities and towns, at late evening, night, and early morning, 4 - near cities and towns, anytime.
-	400, // Distance in meters from player to scan for buildings to spawn ground fog. By default, only the 15 nearest buildings will spawn ground fog.
-	false, // Allow ground fog when it's snowing or raining?
-	2 // Winter Breath Fog Effects. Options: 0 - no breath fog, 1 - anytime, 2 - only when snowing or blizzard. Note: breath fog is only available with winter weather enabled.
-];
-
 //Server
 if (isServer) then {
 	DynamicVehicleDamageLow = 0; // Min damage random vehicles can spawn with
@@ -103,20 +23,6 @@ if (isServer) then {
 
 	// ZSC
 	Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.
-	
-	// Safe Zone Relocating
-	DZE_SafeZone_Relocate = false; //Enables relocating of vehicles left in Safe Zones over a server restart.
-	
-	if (DZE_VehicleKey_Changer) then {
-		vkc_clearAmmo = true; // Clear the ammo of vehicles after they have been rekeyed/claimed? (stops users getting a free rearm)
-		vkc_disableThermal = [""]; // Array of vehicle config classes as well as vehicle classnames to disable thermal on when being spawned. i.e: ["All","Land","Air","Ship","StaticWeapon","AH1Z","MTVR"];	
-	};	
-	
-	if (DZE_Virtual_Garage) then {
-		vg_clearAmmo = true; // Clear the ammo of vehicles spawned during the same restart they are stored? (stops users storing a vehicle for a free rearm)
-		vg_disableThermal = []; // Array of vehicle config classes as well as vehicle classnames to disable thermal on when being spawned. i.e: ["All","Land","Air","Ship","StaticWeapon","AH1Z","MTVR"];
-		vg_sortColumn = 0; //0 or an out of range value sorts by the default column 'DisplayName', otherwise 1 = 'DateStored', 2 = 'id', 3 = 'Name' (of storing player), 4 = 'DateMaintained'
-	};
 };
 
 // Client
@@ -239,252 +145,88 @@ if (!isDedicated) then {
 	DZE_Bandit = -5000; // Defines the value at how much humanity the player is classed as a bandit.
 
 	// ZSC
-	if (Z_SingleCurrency) then {		
-		Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
-		Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
-		ZSC_bankTraders = ["Functionary1_EP1"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1), do not use _DZ classes - they are used as player skins
-		ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
-		ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
-		ZSC_maxBankMoney = 500000; // Default limit for bank objects.
-		ZSC_defaultStorageMultiplier = 200; // Default magazine count for bank objects that don't have storage slots i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
-		ZSC_MaxMoneyInStorageMultiplier = 5000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
-		ZSC_ZombieCoins = [false,[0,1000]]; // First value activate coins on zombies, second value from 0 - 1000 coins on each zombie. Coin for zombies are handled directly in check wallet.
-	};
+	Z_showCurrencyUI = true; // Show the currency icon on the screen when Z_SingleCurrency is enabled.
+	Z_showBankUI = true; // Show the banking icon on the screen when Z_globalBanking is enabled.
+	ZSC_bankTraders = ["Functionary1_EP1"]; // Array of trader classnames that are available for banking (i.e Functionary1_EP1), do not use _DZ classes - they are used as player skins
+	ZSC_limitOnBank = true; // Have a limit on the bank? (i.e true or false) limits the global banking to the number below.
+	ZSC_bankObjects = [""]; // Array of objects that are available for banking i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+	ZSC_maxBankMoney = 500000; // Default limit for bank objects.
+	ZSC_defaultStorageMultiplier = 200; // Default magazine count for bank objects that don't have storage slots i.e: ["Suitcase","Info_Board_EP1","Laptop_EP1","SatPhone"]
+	ZSC_MaxMoneyInStorageMultiplier = 5000; // Multiplier for how much money a bank object can hold, example: 200 magazine slots in the object (or the default value above ^^) multiplied by the 5000 multiplier is 1 million coin storage. (200 * 5000 = 1,000,000 coins)
+	ZSC_ZombieCoins = [false,[0,1000]]; // First value activate coins on zombies, second value from 0 - 1000 coins on each zombie. Coin for zombies are handled directly in check wallet.
 
 	// Loot system
 	dayz_toolBreaking = false; //Sledgehammer, crowbar and pickaxe have a chance to break when used.
 	dayz_knifeDulling = false; // Enable knife dulling. Knives need to be sharpened after so many uses.
 	dayz_matchboxCount = false; // Enable match stick count. After five uses matches run out and must be replaced.
 	dayz_waterBottleBreaking = false; // Water bottles have a chance to break when boiling and require duct tape to fix
-	
-	// Bury and Butcher Bodies
-	if (DZE_Bury_Body) then {
-		DZE_Bury_Body_Value = 30;// Amount of humanity to gain for burying a body.
-	};
-	if (DZE_Butcher_Body) then {
-		DZE_Butcher_Body_Value = -30;// Amount of humanity to lose for butchering a body.
-	};
-	
-	// Take Clothes
-	DZE_Take_Clothes = false;	// Allows to take the clothing from dead players and AIs	
-	DZE_Disable_Take_Clothes = []; // Enter the skins you do not want to be allowed to be recovered from dead bodies. E.g.: DZE_Disable_Take_Clothes = ["Doctor_DZ","Assistant_DZ","Worker1_DZ"];
-	
-	/*
-		DZE_CLICK_ACTIONS
-		This is where you register your right-click actions
-		FORMAT -- (no comma after last array entry)
-		[_classname,_text,_execute,_condition],
-		PARAMETERS
-		_classname  : the name of the class to click on (example = "ItemBloodbag")
-		_text       : the text for the option that is displayed when right clicking on the item (example = "Self Transfuse")
-		_execute    : compiled code to execute when the option is selected (example = "execVM 'my\scripts\self_transfuse.sqf';")
-		_condition  : compiled code evaluated to determine whether or not the option is displayed (example = {true})
-	*/
-
-	DZE_CLICK_ACTIONS = [		
-	/*	["ItemGPS",localize "STR_CL_CA_SCAN_NEARBY","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_ZOMBIE_COUNT = count ((position player) nearEntities ['zZombie_Base',CA_GPS_RANGE]); CA_MAN_COUNT = count ((position player) nearEntities ['CAManBase',CA_GPS_RANGE]); format[localize 'STR_CL_CA_SCAN',CA_GPS_RANGE,CA_MAN_COUNT - CA_ZOMBIE_COUNT,count ((position player) nearEntities ['zZombie_Base',CA_GPS_RANGE]),count ((position player) nearEntities ['allVehicles',CA_GPS_RANGE]) - CA_MAN_COUNT] call dayz_rollingMessages;","true"],
-		["ItemGPS",localize "STR_CL_CA_RANGE_UP","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE + 100) min 2500; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call dayz_rollingMessages;","true"],
-		["ItemGPS",localize "STR_CL_CA_RANGE_DOWN","if(isNil 'CA_GPS_RANGE') then {CA_GPS_RANGE = 1500;};CA_GPS_RANGE = (CA_GPS_RANGE - 100) max 1000; format[localize 'STR_CL_CA_RANGE_GPS',CA_GPS_RANGE] call dayz_rollingMessages;","true"]
-	*/
-	];	
-	
-	DZE_Remote_Vehicle = false;	//	Enable/Disable the Remote Vehicle options like ejecting players from a vehicle or lock/unlock the vehicle from the distance just by the key.
-	
-	if (DZE_Remote_Vehicle) then {
-		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
-			["ItemKey",localize "STR_CL_RV_CA_EJECT","spawn remoteVehicle;","true",1],
-			["ItemKey",localize "STR_CL_RV_CA_ENGINE","spawn remoteVehicle;","true",2],
-			["ItemKey",localize "STR_CL_RV_CA_UNLOCK","spawn remoteVehicle;","true",3],
-			["ItemKey",localize "STR_CL_RV_CA_LOCK","spawn remoteVehicle;","true",4],
-			["ItemKey",localize "STR_CL_RV_CA_LIGHTS","spawn remoteVehicle;","true",5]		
-		];
-	};	
-	
-	DZE_LocateVehicle = false;	//	Enable/Disable the option to locate a vehicle from a key in the inventory with a rightclick on the GPS.
-	
-	if (DZE_LocateVehicle) then {
-		DZE_CLICK_ACTIONS = DZE_CLICK_ACTIONS + [
-			["ItemGPS",localize "STR_CL_LV_LOCATE_VEHICLES","[] spawn locateVehicle;","true"]
-		];
-	};
-	
-	if (DZE_VehicleKey_Changer) then {
-		vkc_claimPrice = 1000; // Amount in worth for claiming a vehicle. See the top of this script for an explanation.
-		vkc_changePrice = 5000; // Amount in worth for changing the key for a vehicle. See the top of this script for an explanation.
-	};
-	
-	if (DZE_Virtual_Garage) then {
-		vg_list = ["Plastic_Pole_EP1_DZ"]; // List of objects/traders that are allowed to interact with virtual garage. i.e: ["Plastic_Pole_EP1_DZ","Worker2"];
-		vg_blackListed = []; // Array of vehicle config classes as well as vehicle classnames that are blacklisted from being stored, i.e ["All","Land","Air","Ship","StaticWeapon","AH1Z","MTVR"]
-		vg_heliPads = ["Helipad_Civil_DZ","Helipad_Rescue_DZ","Helipad_Army_DZ","Helipad_Cross_DZ","Helipad_ParkBorder_DZ"]; // Array of heli pad classnames
-		vg_store_keyless_vehicles = false;	// Allow storing of keyless vehicle (map or mission spawned)
-		vg_removeKey = true; // Remove the key from the players inventory after storing vehicle?
-		vg_requireKey = true; // Require the player to have the key when storing a locked vehicle.
-		vg_storeWithGear = true; // Allow storing vehicles with gear?
-		vg_tiedToPole = true; // Tie the virtual garage to a local plot pole? If no plot pole is present (i.e a communal garage at a trader etc) the players UID will be used.
-		vg_pricePer = 100; // Price in worth to store a vehicle per gear item, use 0 if you want it to be free.
-		vg_maintainCost = 10000; //cost is 1000 per 10oz gold, gem cost is as defined in DZE_GemWorthArray; if you use ZSC then this is an amount of coins. This is a flate rate for all vehicles in the garage/per player depending on vg_tiedToPole
-		vg_price = [["Land",500],["Air",500],["Ship",500]];
-		/*
-			vg_price can be an array of vehicle config classes as well as vehicle classnames, you need to put these in order of what you prefer to get checked first.
-			Price is in worth for briefcases or coins for gold based servers (10,000 worth is considered 1 briefcase, 100,000 coins is considered 1 briefcase)
-
-			i.e:
-			vg_price = [["Land",500],["Air",300],["Ship",100]];
-			vg_price = [["350z_red",200],["Land",500],["AH1Z",1000],["Air",300],["Ship",100]];
-		*/
-		vg_limit = [["Land",5],["Air",5],["Ship",5]];
-		/*
-			vg_limit can be an array of vehicle config classes and classnames to narrow down what players can store or it can be a numerical value for a total limit.
-			These can be classnames as well as config classnames, you need to put these in order of what you prefer to get checked first.
-
-			i.e:
-			vg_limit = [["Land",5],["Air",3],["Ship",1]];
-			vg_limit = [["350z_red",2],["Land",5],["AH1Z",1],["Air",3],["Ship",1]];
-			vg_limit = 5;
-		*/
-	};
-	
-	// Bloodsuckers	
-	DZE_Bloodsuckers = false; // Enable bloodsucker spawning.
-	
-	if (DZE_Bloodsuckers) then {
-		DZE_BloodsuckerChance = .15; // Chance that a building will spawn a bloodsucker. Default .15 (15%)
-		DZE_BloodsuckerBuildings = ["Land_Hlidac_budka","Land_Mil_Guardhouse","Land_Mil_Barracks","Land_Mil_House","Land_Mil_Barracks_i","CrashSite_RU","CrashSite_US","CrashSite_EU","CrashSite_UN"]; // Bloodsuckers will spawn near these building classes.
-		DZE_BloodsuckersMaxGlobal = 15; // Maximum number of bloodsuckers allowed on the map at one time.
-		DZE_BloodsuckersMaxNear = 3; // Maximum number of bloodsuckers allowed in any 200 meter area.
-		DZE_BloodsuckersMaxLocal = 2; // Maximum number of bloodsuckers that can spawn per client.
-		DZE_BloodsuckerScreenEffect = true; // On screen slash marks when the bloodsuckers attack.
-		DZE_BloodsuckerDeleteNearTrader = true; // Deletes bloodsuckers when near trader cities.
-		DZE_MutantHeartProtect = true; // Disables targeting and attack if the player has a mutant heart in inventory.
-	};
-
-	// Garage Door Opener
-	DZE_GarageDoor_Opener = false;	// Enables the option to open Garage Doors from the inside of a vehicle.
-	
-	if (DZE_GarageDoor_Opener) then {
-		DZE_GarageDoors = ["CinderWallDoorLocked_DZ","Land_DZE_GarageWoodDoorLocked","Land_DZE_LargeWoodDoorLocked","WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ","Land_DZE_WoodGateLocked","CinderGateLocked_DZ","Land_DZE_WoodOpenTopGarageLocked","CinderGarageOpenTopLocked_DZ"];	//	Array of Garage Doors that can be opened.
-		DZE_GarageDoor_Radius = 30; //	Radius from where the Garage Doors can be opened. Higher values may negatively impact the performance
-	};
-	
-	// Service Points for Refuel, Repair and Rearm
-	DZE_Service_Points = false;
-	
-	if (DZE_Service_Points) then {
-		// Valid vehicle config classes as an example: "Air", "AllVehicles", "All", "APC", "Bicycle", "Car", "Helicopter", "Land", "Motorcycle", "Plane", "Ship", "Tank"
-		DZE_SP_Classes = ["Map_A_FuelStation_Feed","Land_A_FuelStation_Feed","FuelPump_DZ"]; // service point classes, You can also use dayz_fuelpumparray by its self for all the default fuel pumps.
-		DZE_SP_MaxDistance = 50; // maximum distance from a service point for the options to be shown
-		
-		// Refuel Settings
-		DZE_SP_Refuel_Enable = true; // enable or disable the refuel option
-		if (DZE_SP_Refuel_Enable) then {
-			DZE_SP_Refuel_Costs = [
-				//["Ship",localize "str_temp_param_disabled"], // All vehicles are disabled to refuel.
-				["Land",localize "strwffree"], // All vehicles are free to refuel.
-				["Air",1000] //1000 worth is 1 10oz gold for all air vehicles
-			];
-			DZE_SP_Refuel_UpdateInterval = 1; // update interval (in seconds)
-			DZE_SP_Refuel_Amount = 0.05; // amount of fuel to add with every update (in percent)
-		};
-		
-		
-		// Repair Settings
-		DZE_SP_Repair_Enable = true; // enable or disable the repair option
-		if (DZE_SP_Repair_Enable) then {
-			DZE_SP_Repair_RepairTime = 2; // time needed to repair each damaged part (in seconds)
-			DZE_SP_Repair_Costs = [
-				["Air",4000], // 4000 worth is 4 10oz gold.
-				["AllVehicles",2000] // 2000 worth is 2 10oz gold for all other vehicles
-			];
-		};
-		
-		// Rearm Settings
-		DZE_SP_Rearm_Enable = true; // enable or disable the rearm option
-		if (DZE_SP_Rearm_Enable) then {
-			DZE_SP_Rearm_Defaultcost = 10000; // Default cost to rearm a weapon. (10000 worth == 1 briefcase)
-			DZE_SP_Rearm_MagazineCount = 2; // amount of magazines to be added to the vehicle weapon
-			DZE_SP_Rearm_Ignore = [(localize "str_dn_horn"),(localize "str_dn_laser_designator")]; // Array of weapon display names that are ignored in the rearm listing.
-			/*
-				DZE_SP_Rearm_Costs is an array based on the AMMO type. I.e M240, MK19, PKM, PKT, M134 etc. 
-				You can disable certain ammo types from being able to be rearmed by making the price disabled text
-				example: ["M134",localize "str_temp_param_disabled"]
-			*/			
-			DZE_SP_Rearm_Costs = [
-				[(localize "str_mn_40rnd_grad"),localize "str_temp_param_disabled"], // BM-21 Grad is disabled (ammo is broken)
-				[(localize "str_dn_flarelauncher"),2000], // Flares
-				[(localize "str_ep1_dn_smokelauncher"),2000], // Smokes
-				[(localize "str_dn_pk"),5000], // PKM
-				[(localize "str_dn_pkt"),5000], // PKT
-				[(localize "str_sn_m134"),5000], // M134
-				[(localize "str_dn_ags30"),5000], // AGS-30
-				[(localize "str_dn_dshkm"),5000], // DSHKM
-				[(localize "str_DN_VIKHR_CCP"),5000], // Vikhr 9A4172
-				[(localize "str_baf_baf_l94a10"),5000], // L94A1 Chain Gun
-				[(localize "str_baf_crv70"),5000], // CRV7
-				[(localize "str_baf_ctws0"),5000], // CTWS
-				[(localize "str_baf_m621_manual0"),5000], // M621
-				[(localize "str_dn_2a38m"),5000], // 2A38M Gun
-				[(localize "str_dn_2a42"),5000], // 2A42
-				[(localize "str_dn_2a46m"),5000], // 2A46M Cannon
-				[(localize "str_dn_2a46m_rocket"),5000], // 9M119M Refleks rocket
-				[(localize "str_dn_2a70"),5000], // 2A70 100mm
-				[(localize "str_dn_2a70_rocket"),5000], // 9M117M1 Arkan
-				[(localize "str_dn_2a72"),5000], // 2A72 30mm
-				[(localize "str_dn_80mmlauncher_burst"),5000], // S-8
-				[(localize "str_dn_9m311laucher"),5000], // Tunguska 9M311
-				[(localize "str_dn_ags17"),5000], // AGS-17
-				[(localize "str_dn_d81"),5000], // D-81
-				[(localize "str_dn_dt_veh"),5000], // DT
-				[(localize "str_dn_hellfire"),5000], // AGM-114 Hellfire
-				[(localize "str_dn_kord"),5000], // KORD
-				[(localize "str_dn_m197"),5000], // M197
-				[(localize "str_dn_m240"),5000], // M240
-				[(localize "str_dn_m242"),5000], // M242
-				[(localize "str_dn_m256"),5000], // M256
-				[(localize "str_dn_sidewinderlaucher"),5000], // AIM-9L Sidewinder
-				[(localize "str_dn_zis_s_53"),5000], // ZiS-S-53
-				[(localize "str_ep1_dn_57mmlauncher"),5000], // S-5
-				[(localize "str_ep1_dn_azp85"),5000], // AZP-23
-				[(localize "str_ep1_dn_ffarlauncher"),5000], // Hydra
-				[(localize "str_ep1_dn_m2"),5000], // M2 Machinegun
-				[(localize "str_ep1_dn_m230"),5000], // M230
-				[(localize "str_ep1_dn_m32_ep1"),5000], // M32
-				[(localize "str_ep1_dn_mk19"),5000], // Mk19
-				[(localize "str_ep1_dn_yakb"),5000], // Yak-B
-				[(localize "str_mn_at2_mi24d"),5000], // Falanga 3M11
-				[(localize "str_mn_at5_bmp2"),5000], // Konkurs 9M113
-				[(localize "str_mn_stinger"),5000], // FIM-92F Stinger
-				[(localize "str_mn_12rnd_mlrs"),5000], // MLRS
-				[(localize "str_baf_baf_l2a10"),5000], // L111A1
-				[(localize "STR_DN_D10_CCP"),5000], // D-10
-				[(localize "str_dn_tow"),5000], // M220 TOW
-				[(localize "str_dn_zu23"),5000], // ZU-23
-				[(localize "str_dn_kpvt"),5000], // KPVT
-				[(localize "str_dn_m3p"),5000], // M3P
-				[(localize "str_dn_spg9"),5000], // SPG-9
-				[(localize "str_dn_gau8"),5000], // GAU-8
-				[(localize "str_dn_maverick"),5000], // AGM-65 Maverick
-				[(localize "str_dn_gbu12"),5000], // GBU-12
-				[(localize "str_dn_gau12"),5000], // GAU-12
-				[(localize "STR_DN_KH29_CCP"),5000], // Kh-29L
-				[(localize "str_dn_r73"),5000], // R-73
-				[(localize "str_mn_fab250"),5000], // FAB-250
-				[(localize "str_dn_gsh301"),5000], // GSh-301
-				[(localize "str_mn_23mm_gsh23l"),5000], // GSh-23L
-				[(localize "str_sn_grenade"),5000], // Grenade
-				[(localize "str_mn_at9_mi24p"),5000], // Ataka-V 9M120
-				[(localize "str_mn_at6_mi24v"),5000], // Shturm 9K114
-
-				["SGMT",5000], // SGMT no localization available
-				["M68",5000], // M68 no localization available
-				["GAU-22",5000], // GAU-22 no localization available
-				["GSh-30",5000], // GSh-30 no localization available
-				["M60",5000], // M60 no localization available
-				["GSh-30K",5000] // GSh-30K no localization available			
-			];
-		};
-	};
 };
+
+// Both
+dayz_infectiouswaterholes = true; //Enable infected waterholes
+dayz_townGenerator = false; // Spawn vanilla map junk instead of Epoch DynamicDebris. Currently only compatible with Chernarus. Also enables comfrey plant spawner which negatively impacts performance.
+dayz_townGeneratorBlackList = []; // If townGenerator is enabled it will not spawn junk within 150m of these positions. Example for Chernarus traders: [[4053,11668,0],[11463,11349,0],[6344,7806,0],[1606,7803,0],[12944,12766,0],[5075,9733,0],[12060,12638,0]]
+DZE_HeliLift = true; // Enable Epoch heli lift system
+DZE_GodModeBaseExclude = []; //Array of object class names excluded from the god mode bases feature
+DZE_NoVehicleExplosions = false; //Disable vehicle explosions to prevent damage to objects by ramming. Doesn't work with amphibious pook which should not be used due to FPS issues.
+DZE_SafeZoneZombieLoot = false;  // Enable spawning of Zombies and loot in positions listed in DZE_SafeZonePosArray?
+dayz_ForcefullmoonNights = false; // Forces night time to be full moon.
+infectedWaterHoles = []; //Needed for non-cherno maps.
+DZE_GodModeBase = false; // Disables damage handler from base objects so they can't be destroyed.
+dayz_spawnselection = 0; //(Chernarus only) Turn on spawn selection 0 = random only spawns, 1 = spawn choice based on limits
+dayz_classicBloodBagSystem = false; // disable blood types system and use the single classic ItemBloodbag
+dayz_enableFlies = true; // Enable flies on dead bodies (negatively impacts FPS).
+
+// Death Messages
+DZE_DeathMsgChat = "none"; //"none","global","side","system" Display death messages in selected chat channel.
+DZE_DeathMsgDynamicText = false; // Display death messages as dynamicText in the top left with weapon icons.
+DZE_DeathMsgRolling = false; // Display death messages as rolling messages in bottom center of screen.
+
+// ZSC
+Z_SingleCurrency = false; // Enable single currency system.
+Z_globalBanking = false; // Enable global banking system.
+Z_persistentMoney = false; // Enabling this stores currency to player_data instead of character_data. Currency transfers to a new character after death. For PVE servers only. Formerly called "GlobalMoney".
+Z_VehicleDistance = 40; // Max distance a vehicle can be sold or accessed from at a trader.
+CurrencyName = "Coins"; // If using single currency this is the currency display name.
+DZE_MoneyStorageClasses = ["VaultStorage","VaultStorage2","VaultStorageLocked","VaultStorage2Locked","LockboxStorageLocked","LockboxStorage2Locked","LockboxStorage","LockboxStorage2","LockboxStorageWinterLocked","LockboxStorageWinter2Locked","LockboxStorageWinter","LockboxStorageWinter2","TallSafe","TallSafeLocked"]; // If using single currency this is an array of object classes players can store coins in. E.g.: ["GunRack_DZ","WoodCrate_DZ"]
+ZSC_VehicleMoneyStorage = true; // Allow players to store money in vehicles. If vehicles are destroyed the money is also destroyed.
+
+// Plot Management and Plot for Life
+DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
+DZE_isRemovable = ["Plastic_Pole_EP1_DZ"]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
+
+// Door Management
+DZE_doorManagement = true; // Enable Door Management by @DevZupa.
+
+// Group System
+dayz_groupSystem = false; // Enable group system
+
+// Weather
+DZE_Weather = 2; // Options: 1 - Summer Static, 2 - Summer Dynamic, 3 - Winter Static, 4 - Winter Dynamic. If static is selected, the weather settings will be set at server startup and not change. Weather settings can be adjusted with array DZE_WeatherVariables.
+
+// The settings in the array below may be adjusted as desired. The default settings are designed to maximize client and server performance.
+// Having several features enabled at once might have adverse effects on client performance. For instance, you could have snowfall, ground fog, and breath fog threads all running at once.
+DZE_WeatherVariables = [
+	15, // Minimum time in minutes for the weather to change. (default value: 15).
+	30, // Maximum time in minutes for the weather to change. (default value: 30).
+	0, // Minimum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0).
+	.2, // Maximum fog intensity (0 = no fog, 1 = maximum fog). (default value: 0.8).
+	0, // Minimum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 0). Note: Rain and snow will not occur when overcast is less than 0.70.
+	.6, // Maximum overcast intensity (0 = clear sky, 1 = completely overcast). (default value: 1).
+	0, // Minimum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
+	.6, // Maximum rain intensity (0 = no rain, 1 = maximum rain). Overcast needs to be at least 70% for it to rain.
+	0, // Minimum wind strength (default value: 0).
+	3, // Maximum wind strength (default value: 5).
+	.25, // Probability for wind to change when weather changes. (default value: .25).
+	1, // Minimum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
+	1, // Maximum snow intensity (0 = no snow, 1 = maximum snow). Overcast needs to be at least 75% for it to snow.
+	.2,// Probability for a blizzard to occur when it is snowing. (0 = no blizzards, 1 = blizzard all the time). (default value: .2).
+	10, // Blizzard interval in minutes. Set to zero to have the blizzard run for the whole interval, otherwise you can set a custom time interval for the blizzard.
+	0, // Ground Fog Effects. Options: 0 - no ground fog, 1 - only at evening, night, and early morning, 2 - anytime, 3 - near cities and towns, at late evening, night, and early morning, 4 - near cities and towns, anytime.
+	400, // Distance in meters from player to scan for buildings to spawn ground fog. By default, only the 15 nearest buildings will spawn ground fog.
+	false, // Allow ground fog when it's snowing or raining?
+	2 // Winter Breath Fog Effects. Options: 0 - no breath fog, 1 - anytime, 2 - only when snowing or blizzard. Note: breath fog is only available with winter weather enabled.
+];
 
 /*
 	Developers:

@@ -1,43 +1,38 @@
-local _body = _this select 0;
-local _qty = _this select 1;
-local _rawfoodtype = "";
-local _bodyType = typeOf _body;
-local _time = diag_tickTime;
+private ["_amount","_animalbody","_rawfoodtype","_qty"];
 
-call {
-	if (_body isKindOf "zZombie_base") exitWith {
-		_qty = 1;
-		_rawfoodtype = "ItemZombieParts";
-	};
-	
-	if (_bodyType == "z_bloodsucker") exitWith {
-		_qty = 1;
-		_rawfoodtype = "ItemMutantHeart"; // toolbelt item
-	};
-	// default is animal
-	_rawfoodtype = getText (configFile >> "CfgSurvival" >> "Meat" >> _bodyType >> "rawfoodtype");
+_animalbody = _this select 0;
+_qty = _this select 1;
+
+if (_animalbody isKindOf "zZombie_base") then {
+	_qty = 1;
+	_rawfoodtype = "ItemZombieParts";
+} else {
+	_rawfoodtype = getText (configFile >> "CfgSurvival" >> "Meat" >> typeOf _animalbody >> "rawfoodtype");
 };
 
-if (local _body) then {
+if (local _animalbody) then {
 	for "_i" from 1 to _qty do {
-		if (_rawfoodtype == "ItemMutantHeart") then {
-			_body addWeapon _rawfoodtype;
-		} else {
-			_body addMagazine _rawfoodtype;
-		};
+		_animalbody addMagazine _rawfoodtype;
 	};
 		
-	if (_bodyType in ["Cock","Hen"]) then {
-		local _amount = (floor (random 4)) + 2;
+	if (typeOf _animalbody in ["Cock","Hen"]) then {
+		_amount = (floor (random 4)) + 2;
 		for "_x" from 1 to _amount do {
-			_body addMagazine "equip_feathers";
+			_animalbody addMagazine "equip_feathers";
 		};
 	};	
 
-	while {((count magazines _body > 0) || (count weapons _body > 0)) && (diag_tickTime - _time < 300)} do {
-		uiSleep 5;
+	[time, _animalbody] spawn {
+		_timer = _this select 0;
+		_body = _this select 1;
+        _pos = getPosATL _body;
+		while {(count magazines _body > 0) && (time - _timer < 300)} do {
+			uiSleep 5;
+		};
+		hideBody _body;
+		
+		uiSleep 10;
+		deleteVehicle _body;
+		true
 	};
-	hideBody _body;
-	uiSleep 10;
-	deleteVehicle _body;
 };

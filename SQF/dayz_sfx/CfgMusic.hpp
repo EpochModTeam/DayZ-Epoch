@@ -10,6 +10,12 @@ class CfgMusic
 		name = "DayZTrackDeath";
 		sound[] = {"\dayz_sfx\tracks\track_death_1.ogg", db+0, 1.0};
 	};
+	class dayz_track_intro_1
+	{
+		name = "DayZTrackIntro";
+		sound[] = {"\dayz_sfx\tracks\track_intro_1.ogg", db+0, 1.0};
+		duration = ;
+	};
 	class z_suspense_0
 	{
 		name = "";

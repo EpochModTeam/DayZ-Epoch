@@ -46,7 +46,7 @@ _magazines = getMagazineCargo _object;
 _backpacks = getBackpackCargo _object;
 _inv = [_weapons,_magazines,_backpacks];
 
-if (Z_SingleCurrency && {ZSC_VehicleMoneyStorage}) then {
+if (Z_SingleCurrency && ZSC_VehicleMoneyStorage) then {
 	_coins = _object getVariable ["cashMoney",0];
 };
 
@@ -107,7 +107,7 @@ if (_outcome != "PASS") then {
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 
-	if (Z_SingleCurrency && {ZSC_VehicleMoneyStorage && (_coins > 0)}) then {
+	if (Z_SingleCurrency && ZSC_VehicleMoneyStorage && {_coins > 0}) then {
 		_object setVariable ["cashMoney",_coins,true];
 	};
 

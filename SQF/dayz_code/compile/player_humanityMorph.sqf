@@ -28,7 +28,6 @@ local _ConfirmedBanditKills = player getVariable ["ConfirmedBanditKills",0];
 local _friendlies = player getVariable ["friendlies",[]];
 local _tagSetting = player getVariable ["DZE_display_name",false];
 local _radiostate = player getVariable ["radiostate",false];
-local _dayz_onBack = player getVariable ["dayz_onBack",""];
 local _coins = 0;
 local _bankCoins = 0;
 local _globalCoins = 0;
@@ -98,7 +97,6 @@ player setVariable ["ConfirmedBanditKills",_ConfirmedBanditKills,true];
 player setVariable ["friendlies",_friendlies,true];
 player setVariable ["DZE_display_name",_tagSetting,true];
 player setVariable ["radiostate",_radiostate];
-player setVariable ["dayz_onBack",_dayz_onBack,true];
 
 if (Z_SingleCurrency) then {
 	player setVariable ["cashMoney",_coins,true];

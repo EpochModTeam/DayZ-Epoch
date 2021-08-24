@@ -14281,10 +14281,6 @@
 			<French>Infecté</French>
 			<Czech>Infikovaný</Czech>
 		</Key>
-		<Key ID="STR_ZNAME_BLOODSUCKER">
-			<English>Bloodsucker</English>
-			<Russian>Кровосос</Russian>
-		</Key>						  
 		<Key ID="STR_ZNAME_INFECTEDVIRAL">
 			<English>Viral Infected</English>
 			<Spanish>Infectado Viral</Spanish>
@@ -18306,31 +18302,13 @@
 
 		<!-- G3 -->
 		<Key ID="STR_DZ_WPN_G3_NAME">
-			<English>G3A1</English>
+			<English>G3</English>
 		</Key>
         <Key ID="STR_DZ_WPN_G3_DESC">
 			<English>Assault Rifle &lt;br/&gt;Caliber: 7.62x51mm</English>
 			<German>Sturmgewehr &lt;br/&gt;Kaliber: 7.62x51mm</German>
 			<Russian>Штурмовая винтовка&lt;br/&gt;Калибр: 7.62x51мм</Russian>
 		</Key>
-		<Key ID="STR_DZ_WPN_G3A3_NAME">
-			<English>G3A3</English>
-		</Key>
-		<Key ID="STR_DZ_WPN_G3A3_CCO_NAME">
-			<English>G3A3 CCO</English>
-		</Key>	
-		<Key ID="STR_DZ_WPN_G3A3_HOLO_NAME">
-			<English>G3A3 Holo</English>
-		</Key>	
-		<Key ID="STR_DZ_WPN_G3A3_ACOG_NAME">
-			<English>G3A3 ACOG</English>
-		</Key>	
-		<Key ID="STR_DZ_WPN_G3_SG1_NAME">
-			<English>G3 SG1</English>
-		</Key>
-		<Key ID="STR_DZ_WPN_G3_SG1_BIPOD_NAME">
-			<English>G3 SG1 Bipod</English>
-		</Key>		
 
 		<!-- MAT 49 -->
 		<Key ID="STR_DZ_WPN_MAT49_NAME">
@@ -22485,11 +22463,6 @@
 			<French>%1 a été vidé, les pièces de zombies sont maintenant sur la carcasse.</French>
 			<Czech>%1 byl zničený, zombie díly jsou nyní na kostru.</Czech>
 		</Key>
-		<Key ID="str_success_gutted_mutant">
-			<English>You have carved the heart of the %1 from it's chest.</English>
-			<German>Du hast das Herz des %1 aus seiner Brust herausgeschnitten.</German>
-			<Russian>Вы вырезали сердце %1 из его тела.</Russian>
-		</Key>						  
 		<Key ID="str_actions_tamedog">
 			<English>Tame Dog</English>
 			<German>Hund zähmen</German>
@@ -25568,11 +25541,6 @@
 			<French>Dépecer le zombie</French>
 			<Czech>Vykuchat Zombie</Czech>
 		</Key>
-		<Key ID="STR_EPOCH_ACTIONS_GUTBLOOD">
-			<English>Butcher Bloodsucker</English>
-			<German>Bloodsucker ausnehmen</German>
-			<Russian>Разделать Кровососа</Russian>
-		</Key>						   
 		<Key ID="STR_EPOCH_ACTIONS_OPEN">
 			<English>Open %1</English>
 			<German>%1 öffnen</German>
@@ -27369,16 +27337,6 @@
 			<German>Zombiehaut in einem Sack.</German>
 			<Russian>Кожа зомби в мешке.</Russian>
 		</Key>
-		<Key ID="STR_MUTANT_HEART">
-			<English>Mutant Heart</English>
-			<German>Mutantenherz</German>
-			<Russian>Сердце мутанта</Russian>
-		</Key>
-		<Key ID="STR_MUTANT_HEART_DESC">
-			<English>The heart of a mutant. It is probably worth a lot.</English>
-			<German>Das Herz eines Mutanten. Es ist möglicherweise viel wert.</German>
-			<Russian>Сердце мутанта. Это, наверное, многого стоит.</Russian>
-		</Key>				 
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
 			<German>Zahlenschloss</German>
@@ -32194,11 +32152,6 @@
 			<German>Währung</German>
 			<Russian>Валюта</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_TRADER_CATEGORY_HELI_PADS">
-			<English>Heli Pads</English>
-			<German>Helipads</German>
-			<Russian>Вертолётные площадки</Russian>
-		</Key>		
 		<Key ID="STR_EPOCH_TRADER_CATEGORY_TRADE_ITEMS">
 			<English>Trade %1 %2 for %3 %4</English>
 			<German>%1 %2 für %3 %4 handeln</German>
@@ -34321,119 +34274,6 @@
 			<German>Eine Kiste mit Keramikteile.</German>
 			<Russian>Ящик с керамическими частями.</Russian>
 		</Key>
-		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_PISTOL">
-			<English>Gun parts (Pistol)</English>
-			<German>Waffenteile (Pistole)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_PISTOL_DESC">
-			<English>A pile of pistol gun parts.</English>
-			<German>Ein Haufen Waffenteile einer Pistole.</German>
-		</Key>
-		<Key ID="STR_EPOCH_WEAPON_PARTS_SMG">
-			<English>Gun parts (SMG)</English>
-			<German>Waffenteile (SMG)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_SMG_DESC">
-			<English>A pile of smg gun parts.</English>
-			<German>Ein Haufen Waffenteile einer Maschinenpistole.</German>
-		</Key>	
-		<Key ID="STR_EPOCH_WEAPON_PARTS_SHOTGUN">
-			<English>Gun parts (Shotgun)</English>
-			<German>Waffenteile (Schrotflinte)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_SHOTGUN_DESC">
-			<English>A pile of shotgun gun parts.</English>
-			<German>Ein Haufen Waffenteile einer Schrotflinte.</German>
-		</Key>
-		<Key ID="STR_EPOCH_WEAPON_PARTS_RIFLE">
-			<English>Gun parts (Rifle)</English>
-			<German>Waffenteile (Gewehr)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_RIFLE_DESC">
-			<English>A pile of rifle gun parts.</English>
-			<German>Ein Haufen Waffenteile eines Gewehrs.</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_SNIPERRIFLE">
-			<English>Gun parts (Sniper Rifle)</English>
-			<German>Waffenteile (Scharfschützengewehr)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_SNIPERRIFLE_DESC">
-			<English>A pile of sniper rifle gun parts.</English>
-			<German>Ein Haufen Waffenteile eines Scharfschützengewehrs.</German>
-		</Key>
-		<Key ID="STR_EPOCH_WEAPON_PARTS_MG">
-			<English>Gun parts (MG)</English>
-			<German>Waffenteile (MG)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_MG_DESC">
-			<English>A pile of mg gun parts.</English>
-			<German>Ein Haufen Waffenteile eines Maschinengewehrs.</German>
-		</Key>
-		<Key ID="STR_EPOCH_WEAPON_PARTS_UNKNOWN">
-			<English>Gun parts (Unknown)</English>
-			<German>Waffenteile (Unbekannt)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_UNKNOWN">
-			<English>A pile of unknown gun parts in a good condition.</English>
-			<German>Ein Haufen unbekannter Waffenteile, in einem guten Zustand.</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_BAD">
-			<English>Gun parts (Bad)</English>
-			<German>Waffenteile (Schlecht)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_BAD_DESC">
-			<English>A pile of old gun parts in a bad condition.</English>
-			<German>Ein Haufen alter Waffenteile in einem schlechten Zustand.</German>
-		</Key>
-		<Key ID="STR_EPOCH_WEAPON_PARTS_NORMAL">
-			<English>Gun parts (Average)</English>
-			<German>Waffenteile (Normal)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_NORMAL_DESC">
-			<English>A pile of gun parts in an average condition.</English>
-			<German>Ein Haufen Waffenteile in einem durchschnittlichen Zustand.</German>
-		</Key>	
-		<Key ID="STR_EPOCH_WEAPON_PARTS_GOOD">
-			<English>Gun parts (Good)</English>
-			<German>Waffenteile (Gut)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_GOOD_DESC">
-			<English>A pile of gun parts in a good condition.</English>
-			<German>Ein Haufen Waffenteile, in einem guten Zustand.</German>
-		</Key>
-		<Key ID="STR_EPOCH_WEAPON_PARTS_EXCELLENT">
-			<English>Gun parts (Excellent)</English>
-			<German>Waffenteile (Exzellent)</German>
-		</Key>		
-		<Key ID="STR_EPOCH_WEAPON_PARTS_EXCELLENT_DESC">
-			<English>A pile of gun parts in an excellent condition.</English>
-			<German>Ein Haufen Waffenteile, in einem exzellenten Zustand.</German>
-		</Key>
-		<Key ID="STR_EPOCH_GUN_POWDER_SMALL">
-			<English>Gun Powder (Small)</English>
-			<German>Schießpulver (Klein)</German>
-		</Key>
-		<Key ID="STR_EPOCH_GUN_POWDER_SMALL_DESC">
-			<English>A small can with gun powder. Used for crafting ammunation.</English>
-			<German>Eine kleine Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
-		</Key>
-		<Key ID="STR_EPOCH_GUN_POWDER">
-			<English>Gun Powder</English>
-			<German>Schießpulver</German>
-		</Key>
-		<Key ID="STR_EPOCH_GUN_POWDER_DESC">
-			<English>A can with gun powder. Used for crafting ammunation.</English>
-			<German>Eine Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
-		</Key>
-		<Key ID="STR_EPOCH_GUN_POWDER_BIG">
-			<English>Gun Powder (Big)</English>
-			<German>Schießpulver (Groß)</German>
-		</Key>
-		<Key ID="STR_EPOCH_GUN_POWDER_BIG_DESC">
-			<English>A big can with gun powder. Used for crafting ammunation.</English>
-			<German>Eine große Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
-		</Key>		
 		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN">
 			<English>Slugs in a can</English>
 			<Russian>Пули в банке</Russian>

@@ -15,5 +15,5 @@
 
 local _magazineArray = (magazines player) - ["CSGAS","Hatchet_Swing","Crowbar_Swing","Machete_Swing","Bat_Swing","BatBarbed_Swing","BatNails_Swing","Fishing_Swing","Sledge_Swing"];
 
-PVDZ_plr_Save = [player,_magazineArray];
+PVDZ_plr_Save = [player,_magazineArray,dayz_onBack,weapons player];
 publicVariableServer "PVDZ_plr_Save";

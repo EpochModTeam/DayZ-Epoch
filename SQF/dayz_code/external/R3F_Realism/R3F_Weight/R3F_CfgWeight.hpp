@@ -34,7 +34,6 @@ class CfgWeight
 		#include "Magazines\Buildings\Tent.hpp"
 		#include "Magazines\Buildings\Misc.hpp"
 		#include "Magazines\Buildings\TripWire.hpp"
-		#include "Magazines\Buildings\StaticWeapons.hpp"
 		
 		#include "Magazines\Consumables\Fish.hpp"
 		#include "Magazines\Consumables\Meat.hpp"
