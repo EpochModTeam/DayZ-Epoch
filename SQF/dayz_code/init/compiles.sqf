@@ -112,7 +112,12 @@ if (!isDedicated) then {
 	//ui
 	player_toggleSoundMute = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_toggleSoundMute.sqf";
 	player_toggleStreamerMode = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_toggleStreamerMode.sqf";
-	player_selectSlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\ui_selectSlot.sqf";
+	if (!isNil "DZE_CLICK_ACTIONS" && {count DZE_CLICK_ACTIONS > 0}) then {
+		player_selectSlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\Rightclicks\ui_selectSlot_addon.sqf";
+	} else {
+		player_selectSlot = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\Rightclicks\ui_selectSlot_vanilla.sqf";
+		DZE_CLICK_ACTIONS = nil;
+	};	
 	player_selectWeapon = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_selectWeapon.sqf";
 	player_markMap = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_markMap.sqf";
 	player_gearSet = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_gearSet.sqf";
@@ -193,6 +198,53 @@ if (!isDedicated) then {
 	fnc_radioState = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\radioState.sqf"; // Toggle radio on and off
 	fnc_localizeMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_localizeMessage.sqf";
 	fnc_remoteMessage = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_remoteMessage.sqf";
+	
+	if (DZE_Remote_Vehicle) then {
+		remoteVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remoteVehicle\remoteVehicle.sqf";
+		rv_vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remoteVehicle\vehicleInfo.sqf";
+	};
+
+	if (DZE_LocateVehicle) then {
+		locateVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\locateVehicle.sqf";
+	};	
+	
+	if (DZE_VehicleKey_Changer) then {
+		vkc_vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\vkc\vehicleInfo.sqf";
+	};
+	
+	if (DZE_Virtual_Garage) then {
+		player_getVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_getVehicle.sqf";
+		player_removePad = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_removePad.sqf";
+		player_storeVehicle = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_storeVehicle.sqf";
+		Player_MaintainVG = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\player_MaintainVG.sqf";
+		vehicleInfo = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\virtualGarage\vehicleInfo.sqf";
+		vg_maintainSetText = {
+			disableSerialization;
+			waituntil {!isNull (findDisplay 2800)};
+			_vgDisplCtl = (findDisplay 2800) displayCtrl 2854;
+			if (vg_maintainCost > 0) then {
+				_itemText = if (Z_SingleCurrency) then {CurrencyName} else {[vg_maintainCost,true] call z_calcCurrency};
+				if (Z_SingleCurrency) then {
+					_vgDisplCtl ctrlSetText format["%1 (%2 %3)",localize "STR_CL_VG_MAINTAIN_GARAGE",vg_maintainCost,_itemText];
+				} else {
+					_vgDisplCtl ctrlSetText format["%1 (%2)",localize "STR_CL_VG_MAINTAIN_GARAGE",_itemText];
+				};
+			} else {
+				_vgDisplCtl ctrlSetText format["%1 (%2)",localize "STR_CL_VG_MAINTAIN_GARAGE",localize "strwffree"];
+			};
+		};
+	};
+	
+	if (DZE_Service_Points) then {
+		execVM "\z\addons\dayz_code\actions\servicePoints\init.sqf";
+	};
+	
+	// Bloodsuckers
+	if (DZE_Bloodsuckers) then {
+		player_mutantAttack = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_mutantAttack.sqf";
+		mutant_generate = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_generate.sqf";
+		mutant_findTarget = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_findTarget.sqf";
+	};	
 
 	// Weather
 	if (DZE_Weather in [3,4]) then {

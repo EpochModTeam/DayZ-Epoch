@@ -2282,6 +2282,30 @@ class G3_DZ
 {
 	weight = 6.1;
 };
+class G3A3_DZ  
+{
+	weight = 6.1;
+};
+class G3A3_CCO_DZ  
+{
+	weight = 6.2;
+};
+class G3A3_Holo_DZ  
+{
+	weight = 6.2;
+};
+class G3A3_ACOG_DZ  
+{
+	weight = 6.3;
+};
+class G3_SG1_DZ  
+{
+	weight = 6.5;
+};
+class G3_SG1_Bipod_DZ  
+{
+	weight = 6.7;
+};
 class SCAR_H_AK_DZ
 {
 	weight = 4.5;

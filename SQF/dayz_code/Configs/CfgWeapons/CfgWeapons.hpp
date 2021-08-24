@@ -346,9 +346,10 @@ class CfgWeapons
 	#include "Tools\Scissors.hpp"
 	#include "Tools\ScrewExtractor.hpp"
 	#include "Tools\Wrench.hpp"
+	#include "Tools\MutantHeart.hpp"
 	
 	#include "Item\ItemKeys.hpp"
 	#include "Item\Documents.hpp"
 	
-	#include "VehicleWeapons.hpp"	
+	#include "VehicleWeapons.hpp"
 };

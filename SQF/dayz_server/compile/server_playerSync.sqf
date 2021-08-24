@@ -2,8 +2,7 @@
 
 local _character = _this select 0;
 local _magazines = _this select 1;
-local _dayz_onBack = _this select 2;
-local _weaponsPlayer = _this select 3; 
+local _dayz_onBack = _character getVariable ["dayz_onBack",""];
 local _characterID = _character getVariable ["characterID","0"];
 local _playerUID = getPlayerUID _character;
 local _charPos = getPosATL _character;
@@ -41,7 +40,7 @@ local _usec_Dead = _character getVariable ["USEC_isDead",false];
 local _lastTime = _character getVariable ["lastTime",-1];
 local _modelChk = _character getVariable ["model_CHK",""];
 local _temp = round (_character getVariable ["temperature",100]);
-local _lastMagazines = _character getVariable ["ServerMagArray",[[],"",[]]];
+local _lastMagazines = _character getVariable ["ServerMagArray",[]];
 //Get difference between current stats and stats at last sync
 local _statsDiff = [_character,_playerUID] call server_getStatsDiff;
 _humanity = _statsDiff select 0;
@@ -54,17 +53,12 @@ local _charPosLen = count _charPos;
 local _magTemp = [];
 
 if (!isNil "_magazines") then {
-	_playerGear = [_weaponsPlayer,_magazines,_dayz_onBack];
-	_character setVariable["ServerMagArray",[_magazines,_dayz_onBack,_weaponsPlayer], false];
+	_playerGear = [weapons _character,_magazines,_dayz_onBack];
+	_character setVariable["ServerMagArray",_magazines, false];
 } else {
 	//check Magazines everytime they aren't sent by player_forceSave
-	_magTemp = (_lastMagazines select 0);
-	if (isNil "_dayz_onBack") then {	
-		_dayz_onBack = _lastMagazines select 1; 
-	};	
-	if (isNil "_weaponsPlayer") then {	
-		_weaponsPlayer = _lastMagazines select 2; 
-	};
+	_magTemp = _lastMagazines;
+
 	if (count _magTemp > 0) then {
 		_magazines = [(magazines _character),20] call array_reduceSize;
 		{
@@ -73,7 +67,7 @@ if (!isNil "_magazines") then {
 				_class = _x select 0;
 			};
 			if (_class in _magazines) then {
-				local _MatchedCount = {_compare = if (typeName _x == "ARRAY") then {_x select 0;} else {_x}; _compare == _class} count _magTemp;
+				local _MatchedCount = {local _compare = if (typeName _x == "ARRAY") then {_x select 0;} else {_x}; _compare == _class} count _magTemp;
 				local _CountedActual = {_x == _class} count _magazines;
 				if (_MatchedCount > _CountedActual) then {
 					_magTemp set [_forEachIndex, "0"];
@@ -81,16 +75,15 @@ if (!isNil "_magazines") then {
 			} else {
 				_magTemp set [_forEachIndex, "0"];
 			};
-		} forEach (_lastMagazines select 0);
+		} forEach _lastMagazines;
 		_magazines = _magTemp - ["0"];
-		_magazines = [_magazines,_dayz_onBack,_weaponsPlayer];
 		_character setVariable["ServerMagArray",_magazines, false];
-		_playerGear = [_magazines select 2,_magazines select 0,_magazines select 1];
+		_playerGear = [weapons _character,_magazines,_dayz_onBack];
 	} else {
-		_magazines = [_magTemp,_dayz_onBack,_weaponsPlayer];
+		_magazines = _magTemp;
 	};
 	_character setVariable["ServerMagArray",_magazines, false];
-	_playerGear = [_magazines select 2,_magazines select 0,_magazines select 1];
+	_playerGear = [weapons _character,_magazines,_dayz_onBack];
 };
 
 //Check if update is requested

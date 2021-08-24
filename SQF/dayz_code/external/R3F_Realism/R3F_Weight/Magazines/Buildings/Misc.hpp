@@ -64,11 +64,6 @@ class deer_stand_kit
 	weight = 25;
 };
 
-class m240_nest_kit
-{
-	weight = 125;
-};
-
 class rusty_gate_kit
 {
 	weight = 80;

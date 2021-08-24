@@ -241,22 +241,6 @@ class Fort_RazorWire : BuiltItems {
 	nounderground = 0;
 };
 
-class USMC_WarfareBMGNest_M240;
-class M240Nest_DZ: USMC_WarfareBMGNest_M240
-{
-	destrType = "DestructBuilding";
-	armor = 450;
-	scope = 2;
-	offset[] = {0,3.5,0};
-	displayName = $STR_EPOCH_M240NEST;
-	vehicleClass = "DayZ Epoch Buildables";
-	transportMaxMagazines = 25;
-	transportMaxWeapons = 4;
-	transportMaxBackpacks = 1;
-	constructioncount = 10;
-	removeoutput[] = {{"m240_nest_kit",1}};
-};
-
 class WoodGate_DZ: BuiltItems
 {
 	scope = 2;
@@ -333,7 +317,7 @@ class Greenhouse_DZ: MAP_Misc_Greenhouse
 	mapSize = 2;	
 	displayName = $STR_EPOCH_GREENHOUSE;
 	constructioncount = 1;
-	offset[] = {0,3,2};
+	offset[] = {0,5,1.4};
 	removeoutput[] = {{"greenhouse_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };

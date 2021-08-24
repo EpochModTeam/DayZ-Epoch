@@ -137,6 +137,7 @@ if (_brokenTool) then {
 		} else {
 			if (dayz_onBack == "MeleeCrowbar") then {
 				dayz_onBack = ""; // Remove
+				player setVariable ["dayz_onBack",dayz_onBack,true];
 				_success = true;
 				if (!isNull (findDisplay 106)) then {((findDisplay 106) displayCtrl 1209) ctrlSetText "";};
 			};

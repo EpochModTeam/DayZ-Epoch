@@ -2,7 +2,22 @@
 [ADDED] AKS-74, AKS-74 Kobra, AKS-74 PSO1, AKS-74 NSPU and AKS-74 TWS with full attachment support. (db1ed4c0) @AirwavesMan
 [ADDED] Red Ryder BB gun and magazine as Epoch version. (597e6086) @AirwavesMan
 [ADDED] G36A and G36K as Epoch version. (e0a00512) @AirwavesMan
+[ADDED] More snappoints for the 4x metal floors. (f68e92d5) @worldwidesorrow
+[ADDED] Right click menu made by Mudzereli and updated by Salival. (c4919d65) @AirwavesMan
+[ADDED] Missing Combine Magazine option for the Desert Eagle and the 20Rnd Stanag magazine. (858f418a) @seelenapparat, @AirwavesMan
+[ADDED] Toggleable Remote Vehicle by Salival. (a9500b4e) @AirwavesMan
+[ADDED] Toggleable Locate Vehicle by Salival. (152ec42d) @AirwavesMan
+[ADDED] Toggleable Take Clothes  by Salival. (1113b579) @AirwavesMan
+[ADDED] Toggleable Safe Zone Relocate by Salival. (cc005a97) @AirwavesMan
+[ADDED] Toggleable Vehicle Service Point by Salival. (343128bb) @AirwavesMan
+[ADDED] Toggleable Garage Door Opener by Salival. (b3871aa3) @AirwavesMan
+[ADDED] Toggleable Bury and Butcher Bodies by Salival. (be7898aa) @AirwavesMan
+[ADDED] Toggleable Vehicle Key Changer by Salival. (e6eb9419) @AirwavesMan
+[ADDED] Toggleable Virtual Garage by Salival. (30f15326) @AirwavesMan
+[ADDED] Fully functional Namalsk Bloodsuckers by SumrakDZN. Can be activated in the configVariables.sqf. (05118343) @worldwidesorrow
+[ADDED] G3A3 with attachment support. (a3a4cf90) @AirwavesMan
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
+[UPDATED] Snappoints got improved. (f68e92d5) @worldwidesorrow
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -10,7 +25,7 @@
 [FIXED] DayZ Mod gates could not be removed. (2bbb126a) @Aschalder, @AirwavesMan
 [FIXED] The AK74 taped magazine could not be used with the AN94. (31c4a0a7) @Schalldampfer, @AirwavesMan
 [FIXED] Dupe with player_emptyContainer and dayz_actionInProgress bug. (44c94541) @F507DMT, @AirwavesMan
-[FIXED] Remove the iron sight view from the RK95 ACOG since it does not work. (ee259c4a) @IsGoose, @AirwavesMan
+[FIXED] Remove the iron sight view from the RK95 ACOG, SVD Gold and SVU since it does not work. (ee259c4a, ad3c38e4) @IsGoose, @AirwavesMan
 [FIXED] Some building wrecks could not be removed. (b43279cd) @Seelenapparat, @AirwavesMan
 [FIXED] Wrong name of the PIVOT snappoint of all wooden stairs. (f24a8193) @AirwavesMan
 [FIXED] ArmoredSUV gunner glitch. (aeafb3b3) @TheFirstNoob, @AirwavesMan
@@ -23,4 +38,9 @@
 [FIXED] Radio state variable got resetted after changing clothes. (6becd3d8) @AirwavesMan
 [FIXED] Missing side and faction entry for many epoch vehicles (4ba6fa32) @iben, @AirwavesMan
 [FIXED] Missing terrainCoef for the Mini Cooper. (53d92ba3) @DeVloek, @AirwavesMan
+[FIXED] Weapon dupe on gear syncing. (9852778b) @F507DMT, @AirwavesMan
+[FIXED] 200Rnd 40mm FV510 HE and Sabot magazines could not be used. (c10a436c) @Schalldampfer, @AirwavesMan
+[FIXED] Client RPT Spam 'Strange convex component288 in warehouse\models\warehouse.p3d:geometry' @helion4
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @Seelenapparat, @AirwavesMan
+
+[INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ

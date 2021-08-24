@@ -172,6 +172,26 @@ class SVD_Gold_DZ : SVD_PSO1_DZ {
 	model = "\RH_aks\RH_svdg.p3d";
 	picture = "\RH_aks\inv\svdg.paa";
 	
+	class OpticsModes {
+		class Scope {
+			discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+			discreteDistanceInitIndex = 2;
+			cameraDir = "";
+			distanceZoomMax = 300;
+			distanceZoomMin = 300;
+			memoryPointCamera = "opticView";
+			opticsDisablePeripherialVision = 1;
+			opticsFlare = 1;
+			opticsID = 1;
+			opticsPPEffects[] = {"OpticsCHAbera3", "OpticsBlur3"};
+			opticsZoomInit = 0.0623;
+			opticsZoomMax = 0.0623;
+			opticsZoomMin = 0.0623;
+			useModelOptics = 1;
+			visionMode[] = {"Normal"};
+		};
+	};	
+	
 	class ItemActions {};
 	class Attachments {};
 };

@@ -17,3 +17,11 @@ class Category_50 {
 	class ItemFuelBarrelEmpty {type = "trade_items";buy[] = {100,"worth"};sell[] = {50,"worth"};};
 	class ItemFuelBarrel {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 };
+
+class Category_52 {
+	class helipad_civil_kit {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class helipad_rescue_kit {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class helipad_army_kit {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class helipad_cross_kit {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class helipad_parkborder_kit {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+};
