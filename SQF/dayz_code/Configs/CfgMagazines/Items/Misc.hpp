@@ -332,7 +332,7 @@ class ItemWeaponPartsUnknown : CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	displayName = $STR_EPOCH_WEAPON_PARTS_UNKNOWN_MG;
+	displayName = $STR_EPOCH_WEAPON_PARTS_UNKNOWN;
 	descriptionShort = $STR_EPOCH_WEAPON_PARTS_UNKNOWN_DESC;
 	model = "\z\addons\dayz_communityassets\models\crate.p3d";
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_part_somegeneric.paa";
