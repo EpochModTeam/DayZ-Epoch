@@ -22,7 +22,7 @@ local _string = "";
 // Exit the script if the player doesn't have a knife
 if ((count _knives) < 1) exitWith {
 	if (_isZombie || _isMutant) then {
-		format[localize "str_missing_to_do_this",localize "STR_EQUIP_NAME_4"] call dayz_rollingMessages;
+		format[localize "str_missing_to_do_this",localize "STR_EQUIP_NAME_KNIFE"] call dayz_rollingMessages;
 	} else {
 		localize "str_cannotgut" call dayz_rollingMessages;
 	};
