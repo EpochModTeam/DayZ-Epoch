@@ -153,7 +153,7 @@ class ItemMutantHeartMag: CA_Magazine
 	scope = 2;
 	count = 1;
 	displayName = $STR_MUTANT_HEART;
-	picture = "\nst\ns_mutants\blood\heart_icon_ca.paa";
+	picture = "\dayz_epoch_c\icons\tools\heart_icon_ca.paa";
 	descriptionShort = $STR_MUTANT_HEART_DESC;
 	model = "\z\addons\dayz_epoch\models\zombie_parts_bag_v2.p3d";
 };
