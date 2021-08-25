@@ -30436,11 +30436,31 @@
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
 			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
 		 </Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_HEAD_DESC">
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
+		 </Key>		 
+		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_DESC">
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
+		 </Key>	
+		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_DESC">
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Male</English>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Männlich</German>
+			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Мужской</Russian>
+		 </Key>		 
 		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST_FEMALE_DESC">
 		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
 		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
 			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Женский</Russian>
 		 </Key>
+		 <Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST2_FEMALE_DESC">
+		 	<English>A pack of a special rad-suit that fits an apocalyptic environment.&lt;br/&gt;Sex: Female</English>
+		 	<German>Ein spezieller Rad-Anzug, der gut in eine apokalyptische Umgebung passen würden.&lt;br/&gt;Geschlecht: Weiblich</German>
+			<Russian>Специальный противорадиационный костюм, подходящий для апокалиптического окружения.&lt;br/&gt;Пол: Женский</Russian>
+		 </Key>		 
 		<Key ID="STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME">
 			<English>Scientist (Red rad-suit)</English>
 			<German>Wissenschaftler (Roter Rad-Anzug)</German>

@@ -724,21 +724,21 @@ class Skin_gsc_scientist1_DZ : SkinBase {
 class Skin_gsc_scientist1_head_DZ : SkinBase {
 	scope = 2;
 	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST1_HEAD_NAME;
-	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_HEAD_DESC;
 	sex = "male";
 	playerModel = "gsc_scientist1_head_DZ";	
 };
 class Skin_gsc_scientist2_DZ : SkinBase {
 	scope = 2;
 	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME;
-	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST2_DESC;
 	sex = "male";
 	playerModel = "gsc_scientist2_DZ";	
 };
 class Skin_gsc_scientist2_head_DZ : SkinBase {
 	scope = 2;
 	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_NAME;
-	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_DESC;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST2_HEAD_DESC;
 	sex = "male";
 	playerModel = "gsc_scientist2_head_DZ";	
 };
@@ -1750,7 +1750,7 @@ class Skin_gsc_scientist1W_DZ : SkinBase {
 class Skin_gsc_scientist2W_DZ : SkinBase {
 	scope = 2;
 	displayName = $STR_DZE_EQUIP_STALKER_SCIENTIST2_MASK_NAME;
-	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST_FEMALE_DESC;
+	descriptionShort = $STR_DZE_EQUIP_STALKER_SCIENTIST2_FEMALE_DESC;
 	sex = "female";
 	playerModel = "gsc_scientist2W_DZ";	
 };
