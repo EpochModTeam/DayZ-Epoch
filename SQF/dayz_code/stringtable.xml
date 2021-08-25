@@ -2987,6 +2987,22 @@
 			<French>Oui une pelle c&apos;est fait pour creuser.</French>
 			<Czech>Lopata se používá hlavně pro kopání děr.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_1">
+			<English>Shovel</English>
+			<German>Schaufel</German>
+			<Russian>Лопата</Russian>
+			<Spanish>Pala</Spanish>
+			<French>Pelle</French>
+			<Czech>Lopata</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_1">
+			<English>A shovel is a tool for digging, lifting, and moving bulk materials.</English>
+			<German>Eine Schaufel, mit welcher man Löcher graben kann.</German>
+			<Russian>Лопата — ручной инструмент для работы (копание, расчистка, перенос) с грунтом.</Russian>
+			<Spanish>Una pala es una herramienta usada para cavar.</Spanish>
+			<French>Oui une pelle c&apos;est fait pour creuser.</French>
+			<Czech>Lopata se používá hlavně pro kopání děr.</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_SHOVEL_BROKEN">
 			<English>Broken Shovel</English>
 			<German>Kaputte Schaufel</German>
@@ -3055,6 +3071,14 @@
 			<French>Boîte d&apos;allumettes</French>
 			<Czech>Krabička zápalek</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_3">
+			<English>Box of Matches</English>
+			<German>Streichhölzer</German>
+			<Russian>Коробок спичек</Russian>
+			<Spanish>Caja de Fósforos</Spanish>
+			<French>Boîte d&apos;allumettes</French>
+			<Czech>Krabička zápalek</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_MATCHES_5">
 			<English>Box of Matches (5 left)</English>
 			<German>Streichhölzer (5 übrig)</German>
@@ -3096,6 +3120,14 @@
 			<Czech>Krabička zápalek (1 zbývající)</Czech>
 		</Key>
 		<Key ID="STR_EQUIP_DESC_MATCHES">
+			<English>Box of safety matches for starting a fire under controlled conditions.</English>
+			<German>Eine Schachtel Streichhölzer. Von Kindern fernhalten.</German>
+			<Russian>Коробок спичек используется для разведения огня.</Russian>
+			<Spanish>Una caja de fósforos de seguridad para iniciar fuego bajo condiciones controladas.</Spanish>
+			<French>Boîte d&apos;allumettes suédoises permettant d&apos;allumer un feu.</French>
+			<Czech>Balíček bezpečnostních zápalek pro zapálení ohně. Udržujte z dosahu dětí.</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_3">
 			<English>Box of safety matches for starting a fire under controlled conditions.</English>
 			<German>Eine Schachtel Streichhölzer. Von Kindern fernhalten.</German>
 			<Russian>Коробок спичек используется для разведения огня.</Russian>
@@ -3191,6 +3223,22 @@
 			<French>Un couteau servant à dépecer le gibier.</French>
 			<Czech>Nůž, který se používá pro kuchání zvířat.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_4">
+			<English>Hunting Knife</English>
+			<German>Jagdmesser</German>
+			<Russian>Охотничий нож</Russian>
+			<Spanish>Cuchillo de Caza</Spanish>
+			<French>Couteau de chasseur</French>
+			<Czech>Lovecký nůž</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_4">
+			<English>A knife used during hunting for preparing the game to be used as food by cutting up the meat.</English>
+			<German>Ein Jadgmesser, welches zum Ausnehmen von erlegtem Wild verwendet werden kann.</German>
+			<Russian>Нож можно использовать для разделки туш животных.</Russian>
+			<Spanish>Un cuchillo usado para preparar la carne de caza para ser guardada.</Spanish>
+			<French>Un couteau servant à dépecer le gibier.</French>
+			<Czech>Nůž, který se používá pro kuchání zvířat.</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_DESC_KNIFE_5">
 			<English>Your knife appears to be too blunt. (Maybe 5 uses left).</English>
 			<Russian>Похоже, нож тупится. Осталось 5 использований.</Russian>
@@ -3321,6 +3369,22 @@
 			<French>Un réservoir d&apos;occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Náhradní díly pro opravu palivové nádrže u vašeho vozidla.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_8">
+			<English>Fueltank Parts</English>
+			<German>Treibstofftankteile</German>
+			<Russian>Бензобак</Russian>
+			<Spanish>Tanque de Combustible</Spanish>
+			<French>Réservoir</French>
+			<Czech>Palivová nádrž</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_8">
+			<English>An old fueltank that could be used to repair a vehicle with a broken one.</English>
+			<German>Ein alter Treibstofftank, mit dem eventuell der kaputte Tank eines Fahrzeugs repariert werden könnte.</German>
+			<Russian>Бензобак, запчасти из которого можно использовать для ремонта техники.</Russian>
+			<Spanish>Un viejo tanque de combustible que puede ser usado para reparar un vehículo que lo tenga roto.</Spanish>
+			<French>Un réservoir d&apos;occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
+			<Czech>Náhradní díly pro opravu palivové nádrže u vašeho vozidla.</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_CAR_WHEEL">
 			<English>Car Wheel</English>
 			<German>Reifen</German>
@@ -3337,6 +3401,22 @@
 			<French>Une roue d&apos;occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
 			<Czech>Staré kolo, které se hodí, pokud jste zrovna píchli.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_9">
+			<English>Car Wheel</English>
+			<German>Reifen</German>
+			<Russian>Колесо</Russian>
+			<Spanish>Rueda</Spanish>
+			<French>Roue</French>
+			<Czech>Kolo auta</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_9">
+			<English>An old Car Wheel that could be used to repair a vehicle with a broken one.</English>
+			<German>Ein alter Reifen, welcher eventuell den kaputten Reifen eines Fahrzeugs ersetzen könnte.</German>
+			<Russian>Колесо, которое можно использовать для починки одного колеса на автомобиле.</Russian>
+			<Spanish>Una vieja rueda que puede ser usada para reparar un vehículo.</Spanish>
+			<French>Une roue d&apos;occasion pouvant servir de pièce de rechange pour un réparer un véhicule.</French>
+			<Czech>Staré kolo, které se hodí, pokud jste zrovna píchli.</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_SCRAP_METAL">
 			<English>Scrap Metal</English>
 			<German>Metallteile</German>
@@ -3369,6 +3449,22 @@
 			<French>Un moteur ainsi que de l&apos;huile et du lubrifiant. Tout le nécessaire pour changer un moteur.</French>
 			<Czech>Náhraní díly motoru včetně oleje. Vše, co je potřeba k tomu, aby váš motor zase běžel jako hodinky.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_11">
+			<English>Engine Parts</English>
+			<German>Motorteile</German>
+			<Russian>Двигатель</Russian>
+			<Spanish>Partes de Motor</Spanish>
+			<French>Bloc moteur</French>
+			<Czech>Díly motoru</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_11">
+			<English>Engine components with oil and lubricant. Everything you would need to repair an engine.</English>
+			<German>Motorteile mit Öl und Schmiere. Alles, was man zum Reparieren eines Motors braucht ist dabei.</German>
+			<Russian>Двигатель, запчасти из которого используются для ремонта двигателей в технике.</Russian>
+			<Spanish>Componentes de motor con lubricante. Todo lo necesario para reparar un motor.</Spanish>
+			<French>Un moteur ainsi que de l&apos;huile et du lubrifiant. Tout le nécessaire pour changer un moteur.</French>
+			<Czech>Náhraní díly motoru včetně oleje. Vše, co je potřeba k tomu, aby váš motor zase běžel jako hodinky.</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_WINDSCREEN_GLASS">
 			<English>Windscreen Glass</English>
 			<German>Autoglas</German>
@@ -3401,6 +3497,22 @@
 			<French>Colonne de rotor d&apos;hélicoptère. Permet de réparer un hélicoptère qui a un de ses rotors cassé.</French>
 			<Czech>Hlavní rotor pro vrtulníky. Lze použít při opravě rotoru libovolného vrtulníku.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_32">
+			<English>Main Rotor Assembly</English>
+			<German>Hauptrotorteile</German>
+			<Russian>Ротор несущего винта</Russian>
+			<Spanish>Rotor Principal</Spanish>
+			<French>Rotor d&apos;hélico</French>
+			<Czech>Hlavní rotor</Czech>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_32">
+			<English>Rotor Shaft Hydraulics for a helicopter. Can be used to replace broken rotor shafts in helicopters.</English>
+			<German>Hydrauliksysteme für einen Helikopter, welche zum Reparieren kaputter Rotorwellen in Helikoptern verwendet werden können.</German>
+			<Russian>Набор запчастей для починки лопастей винтов и вала главного ротора для вертолёта.</Russian>
+			<Spanish>Eje hidráulico del rotor de un helicoptero.</Spanish>
+			<French>Colonne de rotor d&apos;hélicoptère. Permet de réparer un hélicoptère qui a un de ses rotors cassé.</French>
+			<Czech>Hlavní rotor pro vrtulníky. Lze použít při opravě rotoru libovolného vrtulníku.</Czech>
+		</Key>		
 		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE">
 			<English>Water Bottle</English>
 			<German>Wasserflasche</German>
@@ -4132,6 +4244,14 @@
 			<Czech>Stan může být postaven a poskytnout uložný prostor.</Czech>
 			<French>Une tente de camping qui peut être montée, permettant un espace de stockage étendu à l&apos;abri des autres.</French>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_20">
+			<English>Camping Tent</English>
+			<German>Zelt</German>
+			<Russian>Палатка-домик</Russian>
+			<Spanish>Carpa</Spanish>
+			<Czech>Stan</Czech>
+			<French>Tente de camping</French>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_SANDBAGS">
 			<English>Sandbags</English>
 			<German>Sandsäcke</German>
@@ -4415,6 +4535,22 @@
 			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.&lt;br/&gt;Sexe: Masculin</French>
 			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.&lt;br/&gt;Geschlecht: Männlich</German>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_43">
+			<English>Ghillie Suit</English>
+			<German>Ghillie-Anzug</German>
+			<Russian>Маскхалат</Russian>
+			<Spanish>Camuflaje "Guillie"</Spanish>
+			<Czech>Hejkal</Czech>
+			<French>Tenue Ghillie</French>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_43">
+			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.&lt;br/&gt;Sex: Male</English>
+			<Russian>Маскировочный халат типа "леший". Можно распаковать и надеть.&lt;br/&gt;Пол: Мужской</Russian>
+			<Spanish>Un tipo de traje camuflado diseñado para parecerse a un denso follaje. Puede ser desembalado y usado.&lt;br/&gt;Género: Masculino</Spanish>
+			<Czech>Maskovací oblečení vytvořeno speciálně pro použítí v lesních oblestech. Lze rozbalit a obléknout.&lt;br/&gt;Pohlaví: Mužský</Czech>
+			<French>Une tenue de camouflage spécialement étudiée pour se fondre dans la végétation. Peut être porté.&lt;br/&gt;Sexe: Masculin</French>
+			<German>Schwere Tarnkleidung, die dichtes Unterholz simuliert. Kann ausgepackt und getragen werden.&lt;br/&gt;Geschlecht: Männlich</German>
+		</Key>		
 		<Key ID="STR_EQUIP_DESC_GHILLIE_FEMALE">
 			<English>A type of camouflage clothing designed to resemble heavy foliage. Can be unpacked and worn.&lt;br/&gt;Sex: Female</English>
 			<Russian>Маскировочный халат типа "леший". Можно распаковать и надеть.&lt;br/&gt;Пол: Женский</Russian>
