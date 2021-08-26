@@ -1,19 +1,18 @@
-//[unit, selectionName, damage, source, projectile]
+//[unit, killer]
 //will only run when local to the created object
 //record any key hits to the required selection
-private["_killer"];
 
-_array = _this select 0;
-_zed = _array select 0;
-_killer = _array select 1;
-_type = _this select 1;
+local _array = _this select 0;
+local _zed = _array select 0;
+local _killer = _array select 1;
+local _type = _this select 1;
 
-if (local _zed) then {
-	_kills = _killer getVariable[_type,0];
+if (local _zed && isPlayer _killer) then {
+	local _kills = _killer getVariable[_type,0];
 	_killer setVariable[_type,(_kills + 1),true];
 
 	//increase players humanity when zed killed
-	_humanity = _killer getVariable["humanity",0];
-	_humanity = _humanity + 5;
+	local _humanity = _killer getVariable["humanity",0];
+	_humanity = _humanity + DZE_ZombieHumanity;
 	_killer setVariable["humanity",_humanity,true];
 };
