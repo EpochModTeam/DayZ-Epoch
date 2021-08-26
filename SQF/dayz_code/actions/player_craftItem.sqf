@@ -165,7 +165,7 @@ if (_canDo) then {
 									//diag_log format["debug remove: %1 of: %2", _configParent, _x];
 									if ((_x == "ItemWaterbottle") || (_configParent == "ItemWaterbottle")) then {
 										_waterLevel = floor((getNumber(configFile >> "CfgMagazines" >> _x >> "wateroz")) - 1);
-										if (_x in ["ItemWaterbottle9ozBoiled","ItemWaterbottle8ozBoiled","ItemWaterbottle7ozBoiled","ItemWaterbottle6ozBoiled","ItemWaterbottle5ozBoiled","ItemWaterbottle4ozBoiled","ItemWaterbottle3ozBoiled","ItemWaterbottle2ozBoiled","ItemWaterBottleBoiled","ItemPlasticWaterbottle9ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterBottleBoiled"]) then {
+										if (_x in ["ItemWaterbottle9ozBoiled","ItemWaterbottle8ozBoiled","ItemWaterbottle7ozBoiled","ItemWaterbottle6ozBoiled","ItemWaterbottle5ozBoiled","ItemWaterbottle4ozBoiled","ItemWaterbottle3ozBoiled","ItemWaterbottle2ozBoiled","ItemWaterbottle1ozBoiled","ItemWaterBottleBoiled","ItemPlasticWaterbottle9ozBoiled","ItemPlasticWaterbottle8ozBoiled","ItemPlasticWaterbottle7ozBoiled","ItemPlasticWaterbottle6ozBoiled","ItemPlasticWaterbottle5ozBoiled","ItemPlasticWaterbottle4ozBoiled","ItemPlasticWaterbottle3ozBoiled","ItemPlasticWaterbottle2ozBoiled","ItemPlasticWaterbottle1ozBoiled","ItemPlasticWaterBottleBoiled"]) then {
 											_boiled = true;
 										};
 									};
