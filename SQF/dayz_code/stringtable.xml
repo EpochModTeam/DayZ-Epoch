@@ -27505,16 +27505,124 @@
 			<German>Zombiehaut in einem Sack.</German>
 			<Russian>Кожа зомби в мешке.</Russian>
 		</Key>
-		<Key ID="STR_MUTANT_HEART">
+		<Key ID="STR_EPOCH_MUTANTPARTS_HEART">
 			<English>Mutant Heart</English>
 			<German>Mutantenherz</German>
 			<Russian>Сердце мутанта</Russian>
-		</Key>
-		<Key ID="STR_MUTANT_HEART_DESC">
+		</Key>		
+		<Key ID="STR_EPOCH_MUTANTPARTS_HEART_DESC">
 			<English>The heart of a mutant. It is probably worth a lot.</English>
 			<German>Das Herz eines Mutanten. Es ist möglicherweise viel wert.</German>
 			<Russian>Сердце мутанта. Это, наверное, многого стоит.</Russian>
-		</Key>				 
+		</Key>	
+		<Key ID="STR_EPOCH_MUTANTPARTS_HEAD">
+			<English>Mutant Head</English>
+			<German>Mutantenkopf</German>
+			<Russian>Голова мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_HEAD_DESC">
+			<English>Mutant Head in a Bag.</English>
+			<German>Mutantenkopf in einem Sack.</German>
+			<Russian>Голова мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_LEG">
+			<English>Mutant Leg</English>
+			<German>Mutantenbein</German>
+			<Russian>Нога мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_LEG_DESC">
+			<English>Mutant Leg in a Bag.</English>
+			<German>Mutantenbein in einem Sack.</German>
+			<Russian>Нога мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_ARM">
+			<English>Mutant Arm</English>
+			<German>Mutantenarm</German>
+			<Russian>Рука мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_ARM_DESC">
+			<English>Mutant Arm in a Bag.</English>
+			<German>Mutantenarm in einem Sack.</German>
+			<Russian>Рука мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_BRAIN">
+			<English>Mutant Brain</English>
+			<German>Mutantengehirn</German>
+			<Russian>Мозги мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_BRAIN_DESC">
+			<English>Mutant Brain in a Bag.</English>
+			<German>Mutantengehirn in einem Sack.</German>
+			<Russian>Мозги мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_CLAW">
+			<English>Mutant Claw</English>
+			<German>Mutantenkralle</German>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_CLAW_DESC">
+			<English>Mutant Claw in a Bag.</English>
+			<German>Mutantenkralle in einem Sack.</German>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_FOOT">
+			<English>Mutant Foot</English>
+			<German>Mutantenfuß</German>
+			<Russian>Стопа мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_FOOT_DESC">
+			<English>Mutant Foot in a Bag.</English>
+			<German>Mutantenfuß in einem Sack.</German>
+			<Russian>Стопа мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_LIVER">
+			<English>Mutant Liver</English>
+			<German>Mutantenleber</German>
+			<Russian>Печень мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_LIVER_DESC">
+			<English>Mutant Liver in a Bag.</English>
+			<German>Mutantenleber in einem Sack.</German>
+			<Russian>Печень мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_EYES">
+			<English>Mutant Eyes</English>
+			<German>Mutantenaugen</German>
+			<Russian>Глаза мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_EYES_DESC">
+			<English>Mutant Eyes in a Bag.</English>
+			<German>Mutantenaugen in einem Sack.</German>
+			<Russian>Глаза мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_TONGUE">
+			<English>Mutant Tongue</English>
+			<German>Mutantenzunge</German>
+			<Russian>Язык мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_TONGUE_DESC">
+			<English>Mutant Tongue in a Bag.</English>
+			<German>Mutantenzunge in einem Sack.</German>
+			<Russian>Язык мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_TEETH">
+			<English>Mutant Teeth</English>
+			<German>Mutantenzähne</German>
+			<Russian>Зубы мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_TEETH_DESC">
+			<English>Mutant Teeth in a Bag.</English>
+			<German>Mutantenzähne in einem Sack.</German>
+			<Russian>Зубы мутанта в мешке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_SKIN">
+			<English>Mutant Skin</English>
+			<German>Mutantenhaut</German>
+			<Russian>Кожа мутанта</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_MUTANTPARTS_SKIN_DESC">
+			<English>Mutant Skin in a Bag.</English>
+			<German>Mutantenhaut in einem Sack.</German>
+			<Russian>Кожа мутанта в мешке.</Russian>
+		</Key>		
 		<Key ID="STR_EPOCH_COMBINATIONLOCK">
 			<English>Combination Lock</English>
 			<German>Zahlenschloss</German>

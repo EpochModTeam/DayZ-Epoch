@@ -77,3 +77,47 @@ class ItemMutantHeartMag
 {
 	weight = 4;
 };
+class ItemMutantHead
+{
+	weight = 8;
+};
+class ItemMutantLeg
+{
+	weight = 6.5;
+};
+class ItemMutantArm
+{
+	weight = 3;
+};
+class ItemMutantBrain
+{
+	weight = 3.5;
+};
+class ItemMutantClaw
+{
+	weight = 2.7;
+};
+class ItemMutantFoot
+{
+	weight = 5;
+};
+class ItemMutantLiver
+{
+	weight = 4;
+};
+class ItemMutantEyes
+{
+	weight = 0.6;
+};
+class ItemMutantTongue
+{
+	weight = 0.2;
+};
+class ItemMutantTeeth
+{
+	weight = 0.1;
+};
+class ItemMutantSkin
+{
+	weight = 4;
+};
