@@ -16,6 +16,9 @@
 [ADDED] Toggleable Virtual Garage by Salival. (30f15326) @AirwavesMan
 [ADDED] Fully functional Namalsk Bloodsuckers by SumrakDZN. Can be activated in the configVariables.sqf. (05118343) @worldwidesorrow
 [ADDED] G3A3 with attachment support. (a3a4cf90) @AirwavesMan
+[ADDED] All different types of Arma 2 Static Weapons are as Epoch Version available and can be build from the inventory. (8bc484cb) @AirwavesMan
+[ADDED] Weapon parts and gun powder for server admins to add. (6dbc6646) @AirwavesMan
+[ADDED] Customizable zombie humanity for server admins. Change DZE_ZombieHumanity in the configVariables.sqf (1a8d45e1) @AirwavesMan
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Snappoints got improved. (f68e92d5) @worldwidesorrow
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
@@ -41,6 +44,10 @@
 [FIXED] Weapon dupe on gear syncing. (9852778b) @F507DMT, @AirwavesMan
 [FIXED] 200Rnd 40mm FV510 HE and Sabot magazines could not be used. (c10a436c) @Schalldampfer, @AirwavesMan
 [FIXED] Client RPT Spam 'Strange convex component288 in warehouse\models\warehouse.p3d:geometry' @helion4
+[FIXED] Greenhouse offset so players getting not pushed back. (5885bb31) @Kitty, @AirwavesMan
+[FIXED] Pitch for female cough sounds. (96f1d40a) @seelenapparat
+[FIXED] Painkiller weight was too high. (c801365a) @seelenapparat
+[FIXED] Humanity gain from zombies that did not die from a player. (1a8d45e1) @AirwavesMan
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @Seelenapparat, @AirwavesMan
 
 [INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ
