@@ -244,6 +244,8 @@ if (!isDedicated) then {
 		player_mutantAttack = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_mutantAttack.sqf";
 		mutant_generate = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_generate.sqf";
 		mutant_findTarget = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_findTarget.sqf";
+		mutant_damageHandler  = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_damageHandler.sqf";
+		mutant_eventKill  = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_eventKill.sqf";
 	};	
 
 	// Weather

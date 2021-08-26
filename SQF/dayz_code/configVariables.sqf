@@ -163,6 +163,7 @@ if (!isDedicated) then {
 	DZE_DisabledChannels = [(localize "str_channel_side"),(localize "str_channel_global"),(localize "str_channel_command")]; //List of disabled voice channels. Other channels are: "str_channel_group","str_channel_direct","str_channel_vehicle"
 	DZE_NutritionDivisor = [1, 1, 1, 1]; //array of DIVISORS that regulate the rate of [calories, thirst, hunger, temperature] use when "working" (keep in mind that temperature raises with actions) - min values 0.1 - Larger values slow the effect, smaller values accelerate it
 	DZE_ZombieSpeed = [0,0]; //Default agro speed is 6 per zombie config, set array elements 0 and 1 the same for non-variable speed, set to 0 to disable. array format = [min, max];  Ex: [2, 6]; results in a range of speed between 2 and 6 (2 is the old DZE_slowZombies hard-coded speed)
+	DZE_ZombieHumanity = 5;
 	DZE_lockablesHarderPenalty = true; // Enforce an exponential wait on attempts between unlocking a safe/lockbox from a failed code.
 	DZE_Hide_Body = true; //Enable hide dead bodies. Hiding a dead body removes the corpse marker from the map too. Default = true
 	DZE_PVE_Mode = false; //Disable the PvP damage on the server. If DZE_BackpackAntiTheft = true, the backpack anti theft is active on the whole server. This is just a basic support for PVE Servers. Default = false
@@ -357,6 +358,7 @@ if (!isDedicated) then {
 		DZE_BloodsuckerScreenEffect = true; // On screen slash marks when the bloodsuckers attack.
 		DZE_BloodsuckerDeleteNearTrader = true; // Deletes bloodsuckers when near trader cities.
 		DZE_MutantHeartProtect = true; // Disables targeting and attack if the player has a mutant heart in inventory.
+		DZE_MutantHumanity = 20;
 	};
 
 	// Garage Door Opener

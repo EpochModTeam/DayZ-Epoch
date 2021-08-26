@@ -8,7 +8,6 @@ class z_bloodsucker : Zed_Base {
 	//hiddenSelectionsTextures[] = {};
 	fsmDanger = "";
 	fsmFormation = "";
-	//zombieLoot = "bloodsucker";
 	moves = "CfgMovesBloodsucker";
 	isMan = false;
 	weapons[] = {};
@@ -20,15 +19,15 @@ class z_bloodsucker : Zed_Base {
 	languages[] = {};
 	armor = 46;
 	damageScale = 250;
-	sepsisChance = 0;
-	BleedChance = 10; // Maybe this should be higher
+	sepsisChance = 20;
+	BleedChance = 35;
 	forcedSpeed = 6; // Left here to prevent errors in player_zombieCheck
 
 	class Eventhandlers {
 		init = "[(_this select 0)] execFSM ""\z\AddOns\dayz_code\system\mutant_agent.fsm""";
 		local = "_z = _this select 0; if (!(_this select 1)) exitWith {}; if (isServer) exitWith { _z call sched_co_deleteVehicle; }; [_z,true] execFSM '\z\AddOns\dayz_code\system\mutant_agent.fsm';";
-		//HandleDamage = "_this call local_zombieDamage;";
-		//Killed = "[_this,'zombieKills'] call local_eventKill;";
+		HandleDamage = "_this call mutant_damageHandler;";
+		Killed = "_this call mutant_eventKill;";
 	};
 	
 	class UserActions
