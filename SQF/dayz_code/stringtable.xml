@@ -14420,7 +14420,35 @@
 		<Key ID="STR_ZNAME_BLOODSUCKER">
 			<English>Bloodsucker</English>
 			<Russian>Кровосос</Russian>
-		</Key>						  
+		</Key>
+		<Key ID="STR_ZNAME_BLOODSUCKER2">
+			<English>Bloodsucker</English>
+			<Russian>Кровосос</Russian>
+		</Key>
+		<Key ID="STR_ZNAME_BLOODSUCKER3">
+			<English>Bloodsucker</English>
+			<Russian>Кровосос</Russian>
+		</Key>
+		<Key ID="STR_ZNAME_BLOODSUCKER4">
+			<English>Bloodsucker</English>
+			<Russian>Кровосос</Russian>
+		</Key>
+		<Key ID="STR_ZNAME_BLOODSUCKER5">
+			<English>Bloodsucker</English>
+			<Russian>Кровосос</Russian>
+		</Key>
+		<Key ID="STR_ZNAME_BLOODSUCKER6">
+			<English>Bloodsucker</English>
+			<Russian>Кровосос</Russian>
+		</Key>
+		<Key ID="STR_ZNAME_BLOODSUCKER7">
+			<English>Bloodsucker</English>
+			<Russian>Кровосос</Russian>
+		</Key>
+		<Key ID="STR_ZNAME_BLOODSUCKER8">
+			<English>Bloodsucker</English>
+			<Russian>Кровосос</Russian>
+		</Key>		
 		<Key ID="STR_ZNAME_INFECTEDVIRAL">
 			<English>Viral Infected</English>
 			<Spanish>Infectado Viral</Spanish>

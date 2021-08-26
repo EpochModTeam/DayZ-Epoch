@@ -24,7 +24,7 @@ local _cantSee = false;
 	if (_isMutant) then {
 		if (_dist <= 5) then {
 			local _skin = _x getVariable ["mutantSkin", "act_krovosos_new1"]; // Set textures locally on each client to prevent issues with RESec
-			_x setObjectTexture [0, format["\nst\ns_mutants\blood\%1.paa",_skin]];
+			_x setObjectTexture [0, format["\dayz_epoch_c\skins\bloodsucker\%1.paa",_skin]];
 		} else {
 			_x setObjectTexture [0, ""];
 			local _sound = ["bloodgrowl0","bloodgrowl2","bloodgrowl3","bloodgrowl4","bloodforest1","bloodforest2","bloodforest3","bloodforest4"] call BIS_fnc_selectRandom;

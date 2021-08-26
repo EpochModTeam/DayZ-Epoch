@@ -207,7 +207,7 @@ class FSM
            "_entityTime = diag_tickTime;" \n
            "" \n
            "// Select skin" \n
-           "_skin = [""act_krovosos_new1"",""act_krovosos_3"",""act_krovosos_2""] call BIS_fnc_selectRandom;" \n
+           "_skin = [""act_krovosos_new1"",""act_krovosos_8"",""act_krovosos_7"",""act_krovosos_6"",""act_krovosos_5"",""act_krovosos_4"",""act_krovosos_3"",""act_krovosos_2""] call BIS_fnc_selectRandom;" \n
            "_agent setVariable [""mutantSkin"",_skin, false];" \n
            "" \n
            "// Announce presence" \n

@@ -131,3 +131,31 @@ class z_bloodsucker : Zed_Base {
 		};
 	};
 };
+
+class z_bloodsucker2: z_bloodsucker {
+	displayName = $STR_ZNAME_BLOODSUCKER2;
+};
+
+class z_bloodsucker3: z_bloodsucker {
+	displayName = $STR_ZNAME_BLOODSUCKER3;
+};
+
+class z_bloodsucker4: z_bloodsucker {
+	displayName = $STR_ZNAME_BLOODSUCKER4;
+};
+
+class z_bloodsucker5: z_bloodsucker {
+	displayName = $STR_ZNAME_BLOODSUCKER5;
+};
+
+class z_bloodsucker6: z_bloodsucker {
+	displayName = $STR_ZNAME_BLOODSUCKER6;
+};
+
+class z_bloodsucker7: z_bloodsucker {
+	displayName = $STR_ZNAME_BLOODSUCKER7;
+};
+
+class z_bloodsucker8: z_bloodsucker {
+	displayName = $STR_ZNAME_BLOODSUCKER8;
+};
