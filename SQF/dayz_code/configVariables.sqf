@@ -52,6 +52,9 @@ DZE_doorManagement = true; // Enable Door Management by @DevZupa.
 // Group System
 dayz_groupSystem = false; // Enable group system
 
+// Bloodsuckers	
+DZE_Bloodsuckers = false; // Enable bloodsucker spawning.
+
 // Bury and Butcher Bodies
 DZE_Bury_Body = false; // Enable Bury Bodies
 DZE_Butcher_Body = false; // Enable Butcher Bodies
@@ -346,9 +349,7 @@ if (!isDedicated) then {
 		*/
 	};
 	
-	// Bloodsuckers	
-	DZE_Bloodsuckers = false; // Enable bloodsucker spawning.
-	
+	// Bloodsuckers		
 	if (DZE_Bloodsuckers) then {
 		DZE_BloodsuckerChance = .15; // Chance that a building will spawn a bloodsucker. Default .15 (15%)
 		DZE_BloodsuckerBuildings = ["Land_Hlidac_budka","Land_Mil_Guardhouse","Land_Mil_Barracks","Land_Mil_House","Land_Mil_Barracks_i","CrashSite_RU","CrashSite_US","CrashSite_EU","CrashSite_UN"]; // Bloodsuckers will spawn near these building classes.

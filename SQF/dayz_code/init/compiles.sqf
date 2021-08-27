@@ -810,6 +810,9 @@ fnc_Obj_FenceHandleDam = {}; //Needed for vanilla fences to prevent rpt errors
 object_roadFlare = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_roadFlare.sqf";
 fn_shuffleArray = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_shuffleArray.sqf";
 zombie_initialize = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\zombie_initialize.sqf";
+if (DZE_Bloodsuckers) then {
+	mutant_initialize = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\mutant_initialize.sqf";
+};	
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\traps\init.sqf";
 fnc_fieldOfView = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_fieldOfView.sqf";
 fnc_deleteAt = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_deleteAt.sqf";

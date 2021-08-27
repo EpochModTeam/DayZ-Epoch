@@ -24,8 +24,8 @@ class z_bloodsucker : Zed_Base {
 	forcedSpeed = 6; // Left here to prevent errors in player_zombieCheck
 
 	class Eventhandlers {
-		init = "[(_this select 0)] execFSM ""\z\AddOns\dayz_code\system\mutant_agent.fsm""";
-		local = "_z = _this select 0; if (!(_this select 1)) exitWith {}; if (isServer) exitWith { _z call sched_co_deleteVehicle; }; [_z,true] execFSM '\z\AddOns\dayz_code\system\mutant_agent.fsm';";
+		init = "_this call mutant_initialize;";
+		local = "_z = _this select 0; if (!(_this select 1)) exitWith {}; if (isServer) exitWith { _z call sched_co_deleteVehicle; }; [_z,true] call mutant_initialize;";
 		HandleDamage = "_this call mutant_damageHandler;";
 		Killed = "_this call mutant_eventKill;";
 	};
