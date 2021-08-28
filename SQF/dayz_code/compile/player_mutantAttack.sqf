@@ -32,7 +32,7 @@ local _nearPlayer = false;
 } count playableUnits;
 
 // Select a random attack sound
-_sound = ["bloodatt0","bloodatt1","bloodatt2","bloodatt3"] call BIS_fnc_selectRandom;
+local _sound = ["bloodatt0","bloodatt1","bloodatt2","bloodatt3"] call BIS_fnc_selectRandom;
 
 // Broadcast hit noise and animation if a player is near
 if (_nearPlayer) then {
