@@ -33655,6 +33655,14 @@
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Zombies.</German>
 			<Russian>Пакет, наполненный кровью зомби.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_MUTANT">
+			<English>Mutant Blood</English>
+			<German>Mutantenblut</German>
+		</Key>
+		<Key ID="STR_EPOCH_BLOODBAG_MUTANT_DESC">
+			<English>A blood bag filled with blood from a mutant.</English>
+			<German>Eine Blutkonserve gefüllt mit dem Blut eines Mutanten.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_BLOODBAG_RABBIT">
 			<English>Rabbit Blood</English>
 			<German>Hasenblut</German>

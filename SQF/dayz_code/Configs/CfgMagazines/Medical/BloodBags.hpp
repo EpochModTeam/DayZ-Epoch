@@ -242,6 +242,16 @@ class ItemBloodbagZombie: CA_Magazine
 	descriptionShort = "$STR_EPOCH_BLOODBAG_ZOMBIE_DESC";
 };
 
+class ItemBloodbagMutant: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = "$STR_EPOCH_BLOODBAG_MUTANT";
+	model = "\dayz_equip\models\bloodbag.p3d";
+	picture = "\dayz_equip\textures\equip_bloodbag_ca.paa";
+	descriptionShort = "$STR_EPOCH_BLOODBAG_MUTANT_DESC";
+};
+
 class ItemBloodbagRabbit: CA_Magazine
 {
 	scope = 2;

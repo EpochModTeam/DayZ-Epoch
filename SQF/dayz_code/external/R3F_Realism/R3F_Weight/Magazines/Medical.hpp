@@ -190,6 +190,10 @@ class ItemBloodbagZombie
 {
 	weight = 0.4;
 };
+class ItemBloodbagMutant
+{
+	weight = 0.6;
+};
 class ItemBloodbagRabbit
 {
 	weight = 0.4;
