@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DZE Bloodsucker Agent">*/
+/*%FSM<COMPILE "E:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, DZE Bloodsucker Agent">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-400.000000,-250.000000,-300.000000,-200.000000,0.000000,"init"};
@@ -34,7 +34,7 @@ item29[] = {"",7,210,221.000000,96.000008,229.000000,103.999977,0.000000,""};
 item30[] = {"Time_Check",4,218,425.000000,125.000000,525.000000,175.000000,0.000000,"Time" \n "Check"};
 item31[] = {"",7,210,346.000000,-79.000000,354.000000,-71.000000,0.000000,""};
 item32[] = {"",7,210,221.000000,-79.000000,229.000000,-71.000000,0.000000,""};
-item33[] = {"too_long",4,4314,-425.000000,725.000000,-325.000000,775.000000,0.000000,"too long"};
+item33[] = {"too_long",4,218,-425.000000,725.000000,-325.000000,775.000000,0.000000,"too long"};
 item34[] = {"",7,210,-229.000000,746.000000,-221.000000,754.000000,0.000000,""};
 item35[] = {"",7,210,-479.000000,746.000000,-471.000000,754.000000,0.000000,""};
 item36[] = {"Reset_Targeting",2,250,-525.000000,325.000000,-425.000000,375.000000,0.000000,"Reset" \n "Targeting"};
@@ -48,7 +48,7 @@ item43[] = {"TimeCheck",4,218,-150.000000,275.000000,-50.000000,325.000000,2.000
 item44[] = {"No_Agent",4,218,25.000000,450.000000,125.000000,500.000000,5.000000,"No Agent"};
 item45[] = {"",7,210,221.000015,546.000061,229.000000,553.999939,0.000000,""};
 item46[] = {"",7,210,-29.000042,545.999939,-20.999958,554.000061,0.000000,""};
-item47[] = {"Ready",4,218,-400.000000,-125.000000,-300.000000,-75.000000,0.000000,"Ready"};
+item47[] = {"Ready",4,4314,-400.000000,-125.000000,-300.000000,-75.000000,0.000000,"Ready"};
 item48[] = {"Loiter",2,250,-400.000000,25.000000,-300.000000,75.000000,0.000000,"Loiter"};
 item49[] = {"Time_Check",4,218,-275.000000,50.000000,-175.000000,100.000000,0.000000,"Time" \n "Check"};
 item50[] = {"MoveCompleted_",4,218,-525.000000,50.000000,-425.000000,100.000000,3.000000,"MoveCompleted "};
@@ -151,8 +151,8 @@ link81[] = {61,62};
 link82[] = {62,7};
 link83[] = {63,55};
 link84[] = {64,1};
-globals[] = {25.000000,1,0,0,0,640,480,1,193,6316128,1,-736.296082,268.705750,907.675354,265.884705,1425,910,1};
-window[] = {2,-1,-1,-1,-1,883,182,1390,182,3,1443};
+globals[] = {25.000000,1,0,0,0,640,480,1,193,6316128,1,-1193.257202,482.412689,820.253479,-249.823410,1425,910,1};
+window[] = {2,-1,-1,-1,-1,909,208,1416,208,3,1443};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -208,7 +208,8 @@ class FSM
            "" \n
            "// Select skin" \n
            "_skin = [""act_krovosos_new1"",""act_krovosos_8"",""act_krovosos_7"",""act_krovosos_6"",""act_krovosos_5"",""act_krovosos_4"",""act_krovosos_3"",""act_krovosos_2""] call BIS_fnc_selectRandom;" \n
-           "_agent setVariable [""mutantSkin"",_skin, false];" \n
+           "_agent setVariable [""mutantSkin"",_skin,true];" \n
+           "[nil,nil,rSETOBJECTTEXTURE,_agent,0,""""] call RE;" \n
            "" \n
            "// Announce presence" \n
            "[_agent,""bloodgrowl1"",0,false] call dayz_zombieSpeak;"/*%FSM</ACTION""">*/;
@@ -252,6 +253,12 @@ class FSM
        "if ((_agroCheck % 8) == 0) then {" \n
        "	_agroCheck = 0;" \n
        "	_cantSee = [_target,_agent] call dayz_losCheck;" \n
+       "};" \n
+       "" \n
+       "_sound = [""bloodgrowl0"",""bloodgrowl2"",""bloodgrowl3"",""bloodgrowl4"",""bloodforest1"",""bloodforest2"",""bloodforest3"",""bloodforest4""] call BIS_fnc_selectRandom;" \n
+       "[_agent,_sound,5,false] call dayz_zombieSpeak;" \n
+       "if (alive _agent) then {" \n
+       "	[nil,nil,rSETOBJECTTEXTURE,_agent,0,""""] call RE;" \n
        "};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -653,8 +660,7 @@ class FSM
       name = "Attacking_Wait";
       init = /*%FSM<STATEINIT""">*/"_targetPos = _target modelToWorld [0,-1,0];" \n
        "" \n
-       "_timeN = diag_tickTime;" \n
-       ""/*%FSM</STATEINIT""">*/;
+       "_timeN = diag_tickTime;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

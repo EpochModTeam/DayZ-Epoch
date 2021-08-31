@@ -21,17 +21,6 @@ local _cantSee = false;
 	local _remotetargets = _x getVariable ["remotetargets",[]];
 	local _targets = _localtargets + _remotetargets;
 	
-	if (_isMutant) then {
-		if (_dist <= 5) then {
-			local _skin = _x getVariable ["mutantSkin", "act_krovosos_new1"]; // Set textures locally on each client to prevent issues with RESec
-			_x setObjectTexture [0, format["\dayz_epoch_c\skins\bloodsucker\%1.paa",_skin]];
-		} else {
-			_x setObjectTexture [0, ""];
-			local _sound = ["bloodgrowl0","bloodgrowl2","bloodgrowl3","bloodgrowl4","bloodforest1","bloodforest2","bloodforest3","bloodforest4"] call BIS_fnc_selectRandom;
-			[_x,_sound,(_chance + 4),false] call dayz_zombieSpeak;
-		};
-	};
-	
 	if (_isZombie) then {
 		if (_x distance _refObj >= (dayz_areaAffect*2)) then {
 			if (speed _x < 4) then {
@@ -46,7 +35,7 @@ local _cantSee = false;
 	if (_refObj in _targets) then {
 		if (_isZombie) then {_x setVariable ["speedLimit", 0, false];};		
 
-		if (_dist <= 3) then {
+		if (_dist <= 3.6) then {
 			//Force AI to Stand
 			_x setUnitPos "UP";
 			if !(animationState _x == "ZombieFeed") then {
@@ -63,6 +52,9 @@ local _cantSee = false;
 							local _noAttack = (DZE_MutantHeartProtect && {_refObj hasWeapon "ItemMutantHeart"});
 							if (!_noAttack && !_inVehicle) then {
 								_x spawn player_mutantAttack;
+								local _skin = _x getVariable ["mutantSkin", "act_krovosos_new1"]; // Set textures locally on each client to prevent issues with RESec
+								local _texture = format["\dayz_epoch_c\skins\bloodsucker\%1.paa",_skin];
+								[nil,nil,rSETOBJECTTEXTURE,_x,0,_texture] call RE;
 							};
 						};
 						_x setVariable ["lastAttack", diag_tickTime];

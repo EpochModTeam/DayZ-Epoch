@@ -8,9 +8,7 @@ local _mutant = _array select 0;
 [nil, _mutant, rSWITCHMOVE, ""] call RE;
 local _skin = _mutant getVariable ["mutantSkin", "act_krovosos_new1"];
 local _texture = format["\dayz_epoch_c\skins\bloodsucker\%1.paa",_skin];
-
-_mutant setVehicleInit "this setObjectTexture [0,_texture];";
-processInitCommands;
+[nil,nil,rSETOBJECTTEXTURE,_mutant,0,_texture] call RE;
 
 local _killer = _array select 1;
 

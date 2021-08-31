@@ -9,14 +9,14 @@
 "hideObject", "hint", "hintC", "kbAddTopic", "kbreact", "kbRemoveTopic", "kbtell", "land", "move", "moveIn", \
 "playAction", "playActionnow", "playmovenow", "playMusic", "playsound", "removeAction", \
 "removeAllWeapons", "setCaptive", "setCurrentTask", "setCurrentTaskArrays", "setDate", "setDir", "setGroupID", \
-"setMarkerPosLocal", "setObjectTexture", "setSimpleTaskDescription", "setTaskState", "setWPdesc", "setWPtype", \
+"setMarkerPosLocal", "setSimpleTaskDescription", "setTaskState", "setWPdesc", "setWPtype", \
 "showCommandingMenu", "sideChat", "sideRadio", "skiptime", "spawn", "switchAction", "switchCamera", "taskHint", \
 "titleCut", "Hangender"]
 #endif
 
 // Allowed commands
 #ifndef TRACED_LIB
-#define TRACED_LIB [ "execVM", "JIPexec", "JIPrequest", "say", "playmove", "switchmove", "titleText" ]
+#define TRACED_LIB [ "execVM", "JIPexec", "JIPrequest", "say", "playmove", "switchmove", "titleText","setObjectTexture" ]
 // uncomment following line to log all incoming allowed RE
 #define RESEC_VERBOSE
 #endif
