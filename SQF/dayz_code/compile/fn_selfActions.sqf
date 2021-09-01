@@ -5,6 +5,9 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- [] call fnc_usec_selfActions;
 ************************************************************/
 
+if (isNil "DZE_prevTarget") then {DZE_prevTarget = objNull};
+if (isNil "DZE_prevDistance") then {DZE_prevDistance = 0};
+
 local _vehicle = vehicle player;
 local _inVehicle = (_vehicle != player);
 local _cursorTarget = cursorTarget;
@@ -217,8 +220,10 @@ if (_isPZombie) then {
 
 // Increase distance only if AIR, SHIP or TANK
 local _allowedDistance = [4, 8] select ((_cursorTarget isKindOf "Air") || {_cursorTarget isKindOf "Ship"} || {_cursorTarget isKindOf "Tank"});
+local _distance = floor((player distance _cursorTarget) * 100) / 100;	// round to 2 decimal places
+local _noChange = ((_cursorTarget == DZE_prevTarget) && (_distance == DZE_prevDistance));
 
-if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player distance _cursorTarget < _allowedDistance}) then {
+if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo && {_distance <= _allowedDistance}) then {
 	local _typeOfCursorTarget = typeOf _cursorTarget;
 	local _isVehicle = _cursorTarget isKindOf "AllVehicles";
 	local _isBicycle = _cursorTarget isKindOf "Bicycle";
@@ -1044,6 +1049,7 @@ if (!isNull _cursorTarget && {!_inVehicle && !_isPZombie && _canDo && player dis
 		};
 	};
 } else {
+	DZE_prevDistance = _distance;
 	//Engineering
 	player removeAction s_player_plot_boundary;
 	s_player_plot_boundary = -1;
@@ -1202,5 +1208,6 @@ if (_dogHandle > 0) then {
 	s_player_calldog = -1;
 };
 
+DZE_prevTarget = _cursorTarget;
 //Monitor
 player setVariable ["selfActions", diag_ticktime, false];
