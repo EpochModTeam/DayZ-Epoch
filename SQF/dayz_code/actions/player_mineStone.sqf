@@ -30,7 +30,7 @@ if (!isNull _findNearestRock) then {
 	_mineChance = dayz_HarvestingChance call fn_chance;
 
     while {_isOk} do {
-        [player,(getPosATL player),20,"minestone"] spawn fnc_alertZombies;
+        //[player,(getPosATL player),20,"minestone"] spawn fnc_alertZombies;
 
         _finished = ["Medic",1] call fn_loopAction;
 		_weapons = weapons player;
