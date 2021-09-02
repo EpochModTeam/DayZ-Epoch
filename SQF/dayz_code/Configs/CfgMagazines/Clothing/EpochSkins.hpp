@@ -1094,52 +1094,88 @@ class Skin_SG_GRU_TL_DZ : SkinBase {
 	sex = "male";
 	playerModel = "SG_GRU_TL_DZ";	
 };
-class Skin_SG_GRU_Scout_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Scout_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SCOUT_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Scout_DZ";	
 };
-class Skin_SG_GRU_Sniper_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Sniper_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SNIPER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Sniper_DZ";	
 };
-class Skin_SG_GRU_Spotter_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Spotter_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_DT_SPOTTER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Spotter_DZ";	
 };
-class Skin_SG_GRU_TL_W_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_TL_W_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_TL_W_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_TL_W_DZ";	
 };
-class Skin_SG_GRU_Scout_W_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Scout_W_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_FLT_SCOUT_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Scout_W_DZ";	
 };
-class Skin_SG_GRU_Assaultman_W_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Assaultman_W_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_FLT_RIFLEMAN_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Assaultman_W_DZ";	
 };
-class Skin_SG_GRU_Medic_W_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Medic_W_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MEDIC_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Medic_W_DZ";	
 };
-class Skin_SG_GRU_TL_D_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_TL_D_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_TL_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_TL_D_DZ";	
 };
-class Skin_SG_GRU_Scout_D_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Scout_D_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_SCOUT_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Scout_D_DZ";	
 };
-class Skin_SG_GRU_Marksman_D_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Marksman_D_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MARKSMAN_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Marksman_D_DZ";	
 };
-class Skin_SG_GRU_Operator_D_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_Operator_D_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_OPERATOR_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_Operator_D_DZ";	
 };
-class Skin_SG_GRU_MG_D_DZ : Skin_SG_GRU_TL_DZ {
+class Skin_SG_GRU_MG_D_DZ : SkinBase {
+	scope = 2;
 	displayName = $STR_DZE_EQUIP_SG_GRU_WDL_MGSOLDIER_NAME;
+	descriptionShort = $STR_DZE_EQUIP_SG_GRU_SPEZNAZ_DESC;
+	sex = "male";
 	playerModel = "SG_GRU_MG_D_DZ";	
 };
 //ACR Skins
