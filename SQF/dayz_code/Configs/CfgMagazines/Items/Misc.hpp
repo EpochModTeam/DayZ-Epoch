@@ -466,3 +466,36 @@ class equip_rail_screws : CA_Magazine
 	picture = "\z\addons\dayz_communityassets\CraftingPlaceholders\equip_part_somegeneric.paa";
 	type = 256;
 };
+
+class ItemBackpackUpgrade_1 : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_ItemBackpackUpgrade_1;
+	descriptionShort = $STR_ITEM_DESC_ItemBackpackUpgrade_1;
+	model = "\ca\weapons\mag_univ.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\ItemBackpackUpgrade.paa";
+	type = 256;
+};
+
+class ItemBackpackUpgrade_2 : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_ItemBackpackUpgrade_2;
+	descriptionShort = $STR_ITEM_DESC_ItemBackpackUpgrade_2;
+	model = "\ca\weapons\mag_univ.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\ItemBackpackUpgrade.paa";
+	type = 256;
+};
+
+class ItemBackpackUpgrade_3 : CA_Magazine 
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_ItemBackpackUpgrade_3;
+	descriptionShort = $STR_ITEM_DESC_ItemBackpackUpgrade_3;
+	model = "\ca\weapons\mag_univ.p3d";
+	picture = "\dayz_epoch_c\icons\equipment\ItemBackpackUpgrade.paa";
+	type = 256;
+};

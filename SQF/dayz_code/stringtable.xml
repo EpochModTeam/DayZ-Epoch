@@ -34715,7 +34715,7 @@
 			<German>Schießpulver (Klein)</German>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_SMALL_DESC">
-			<English>A small can with gun powder. Used for crafting ammunation.</English>
+			<English>A small can with gun powder. Used for crafting ammunition.</English>
 			<German>Eine kleine Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER">
@@ -34723,7 +34723,7 @@
 			<German>Schießpulver</German>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_DESC">
-			<English>A can with gun powder. Used for crafting ammunation.</English>
+			<English>A can with gun powder. Used for crafting ammunition.</English>
 			<German>Eine Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_BIG">
@@ -34731,8 +34731,32 @@
 			<German>Schießpulver (Groß)</German>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_BIG_DESC">
-			<English>A big can with gun powder. Used for crafting ammunation.</English>
+			<English>A big can with gun powder. Used for crafting ammunition.</English>
 			<German>Eine große Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemBackpackUpgrade_1">
+			<English>Backpack Upgrade (small)</English>
+			<German>Rucksackerweiterung (klein)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemBackpackUpgrade_1">
+			<English>A bag that is used to increase the volume of a backpack.</English>
+			<German>Eine Tasche, die dazu verwendet wird, das Volumen eines Rucksacks zu vergrössern.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemBackpackUpgrade_2">
+			<English>Backpack Upgrade (medium)</English>
+			<German>Rucksackerweiterung (mittel)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemBackpackUpgrade_2">
+			<English>A bag that is used to increase the volume of a backpack.</English>
+			<German>Eine Tasche, die dazu verwendet wird, das Volumen eines Rucksacks zu vergrössern.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_ItemBackpackUpgrade_3">
+			<English>Backpack Upgrade (large)</English>
+			<German>Rucksackerweiterung (gross)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_ItemBackpackUpgrade_3">
+			<English>A bag that is used to increase the volume of a backpack.</English>
+			<German>Eine Tasche, die dazu verwendet wird, das Volumen eines Rucksacks zu vergrössern.</German>
 		</Key>		
 		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN">
 			<English>Slugs in a can</English>
