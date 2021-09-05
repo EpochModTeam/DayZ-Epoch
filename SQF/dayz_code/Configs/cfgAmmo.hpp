@@ -435,7 +435,7 @@ class CfgAmmo
 		tracerScale = 1.1;
 		tracerStartTime = 0.05;
 		tracerEndTime = 1;
-		typicalSpeed = 420;
+		typicalSpeed = 470;
 	};	
 	
 	//RSASS
@@ -730,7 +730,7 @@ class CfgAmmo
 		airFriction = -0.0005;
 		muzzleEffect = "BIS_Effects_HeavySniper";
 		typicalspeed = 820;
-	};	
+	};
 	
 	//mosin nagant
 	/*class Mosin_762 : BulletBase

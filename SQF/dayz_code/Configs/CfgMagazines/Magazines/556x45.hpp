@@ -46,7 +46,7 @@ class 100Rnd_556x45_BetaCMagSD: 100Rnd_556x45_BetaCMag {
 	descriptionShort = $STR_DZ_MAG_100RND_BetaCMagSD_DESC;
 	cartridgeName = "556x45_SD";
 	ammo = "B_556x45_SD";
-	initSpeed = 360;
+	initSpeed = 470;
 };
 /* STANAG <-> G36 */
 
@@ -117,6 +117,7 @@ class 30Rnd_556x45_StanagSD : 30Rnd_556x45_Stanag
 	displayName = $STR_DZ_MAG_30RND_556x45_STANAGSD_NAME;	
 	descriptionShort = $STR_DZE_MAG_30RND_556x45_STANAGSD_DESC;
 	cartridgeName = "556x45_SD";
+	initSpeed = 470;
 	
 	class ItemActions
 	{
@@ -145,6 +146,7 @@ class 30Rnd_556x45_G36SD : 30Rnd_556x45_G36
 	descriptionShort = $STR_DZE_MAG_30RND_556x45_G36SD_DESC;	
 	cartridgeName = "556x45_SD";
 	model = "\ca\CommunityConfigurationProject_E\Gameplay_ActualModelsOfWeaponMagazinesVisibleOnTheGround\p3d\30Rnd_556x45_G36.p3d";
+	initSpeed = 470;
 	
 	class ItemActions
 	{

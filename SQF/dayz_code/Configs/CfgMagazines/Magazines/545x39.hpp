@@ -27,6 +27,7 @@ class 30Rnd_545x39_AKSD : 30Rnd_545x39_AK
 	displayName = $STR_DZ_MAG_30RND_545x39_AKSD_NAME;
 	descriptionShort = $STR_DZ_MAG_30RND_AK74SD_DESC;
 	cartridgeName = "545x39_SD";
+	initSpeed = 470;
 	
 	class ItemActions
 	{
@@ -40,6 +41,7 @@ class 60Rnd_545x39_AKSD_Taped : 30Rnd_545x39_AKSD {
 	count = 60;
 	picture = "\dayz_epoch_c\icons\magazines\m_ak74_taped_sd.paa";
     model = "\z\addons\dayz_epoch_w\magazine\dze_ak47_twinmag.p3d";
+	initSpeed = 470;
 };
 
 class 75Rnd_545x39_RPK : CA_Magazine
