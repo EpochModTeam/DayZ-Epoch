@@ -115,8 +115,8 @@ class SCAR_H_AK_ACOG_DZ: SCAR_H_AK_CCO_DZ
 			visionMode[] = {"Normal"};
 			opticsFlare = 1;
 			opticsDisablePeripherialVision = 1;
-			distanceZoomMin = 189;
-			distanceZoomMax = 189;
+			distanceZoomMin = 300;
+			distanceZoomMax = 300;
 			cameraDir = "";
 			opticsZoomMin = "0.28778/4";
 			opticsZoomMax = "0.28778/4";
@@ -136,6 +136,8 @@ class SCAR_H_AK_ACOG_DZ: SCAR_H_AK_CCO_DZ
 			opticsZoomMin = 0.33333;
 			opticsZoomMax = 1;
 			opticsZoomInit = "0.33333*2";
+			distanceZoomMin = 100;
+			distanceZoomMax = 100;			
 			discretefov[] = {};
 			discreteInitIndex = 0;
 		};
