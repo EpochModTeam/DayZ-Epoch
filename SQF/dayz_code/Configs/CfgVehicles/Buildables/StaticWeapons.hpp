@@ -4,13 +4,14 @@ class M240Nest_DZ: USMC_WarfareBMGNest_M240
 	destrType = "DestructBuilding";
 	armor = 450;
 	scope = 2;
-	offset[] = {0,3.5,0};
+	offset[] = {0,4,1.6};
 	displayName = $STR_EPOCH_M240NEST;	
 	transportMaxMagazines = 25;
 	transportMaxWeapons = 4;
 	transportMaxBackpacks = 1;
 	constructioncount = 10;
 	vehicleClass = "DayZ Epoch Static Weapons";
+	GhostPreview = "M240Nest_DZ";
 	removeoutput[] = {{"m240_nest_kit",1}};
 };
 
