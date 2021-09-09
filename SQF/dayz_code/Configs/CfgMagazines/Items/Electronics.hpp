@@ -25,7 +25,7 @@ class equip_d_battery : CA_Magazine
 	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_d_battery;
-	descriptionShort = $STR_ITEM_DESC_equip_d_battery_empty;
+	descriptionShort = $STR_ITEM_DESC_equip_d_battery;	
 	model = "\z\addons\dayz_epoch_w\magazine\dze_d_battery.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_d_battery_ca.paa";
 	type = 256;
@@ -36,7 +36,7 @@ class equip_d_battery_empty : CA_Magazine
 	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_equip_d_battery_empty;
-	descriptionShort = $STR_ITEM_DESC_equip_d_battery;
+	descriptionShort = $STR_ITEM_DESC_equip_d_battery_empty;	
 	model = "\z\addons\dayz_epoch_w\magazine\dze_d_battery.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_d_battery_ca.paa";
 	type = 256;
