@@ -220,12 +220,13 @@ if (_isPZombie) then {
 
 // Increase distance only if AIR, SHIP or TANK
 local _allowedDistance = [4, 8] select ((_cursorTarget isKindOf "Air") || {_cursorTarget isKindOf "Ship"} || {_cursorTarget isKindOf "Tank"});
-local _distance = floor((player distance _cursorTarget) * 100) / 100;	// round to 2 decimal places
+local _distance = floor((player distance _cursorTarget) * 100) / 100;		// truncate to 2 decimal places for stationary objects
+local _isVehicle = _cursorTarget isKindOf "AllVehicles";
+if (_isVehicle) then {_distance = floor(player distance _cursorTarget)};	// truncate to 0 decimal places for jittery vehicles
 local _noChange = ((_cursorTarget == DZE_prevTarget) && (_distance == DZE_prevDistance));
 
-if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo && {_distance <= _allowedDistance}) then {
+if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo && (_distance <= _allowedDistance)) then {
 	local _typeOfCursorTarget = typeOf _cursorTarget;
-	local _isVehicle = _cursorTarget isKindOf "AllVehicles";
 	local _isBicycle = _cursorTarget isKindOf "Bicycle";
 	local _isDestructable = _cursorTarget isKindOf "BuiltItems";
 	local _isGenerator = _typeOfCursorTarget == "Generator_DZ";
