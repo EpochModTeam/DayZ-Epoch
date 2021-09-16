@@ -29164,6 +29164,10 @@
 			<German>Holztreppe mit Geländer</German>
 			<Russian>Дер. ступеньки с перилами</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_WOODSTAIRSRAILS_DESC">
+			<English>Wooden stairs with supports and rails.</English>
+			<German>Eine Holztreppe mit verstärkten Balken und Geländer.</German>
+		</Key>		
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS">
 			<English>Wood Floor w/ stairs</English>
 			<German>Holzboden mit Treppe</German>
