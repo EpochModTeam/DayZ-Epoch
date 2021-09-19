@@ -176,6 +176,8 @@ if (!isDedicated) then {
 	player_unlockDoor = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	player_unlockVault = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockVault.sqf";
 	player_upgradeVehicle =	compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_upgradeVehicle.sqf";
+	fn_displayHelpers	= compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_displayHelpers.sqf";
+	
 	if (DZE_permanentPlot) then {
 		PlotGetFriends = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotGetFriends.sqf";
 		PlotNearbyHumans = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\plotManagement\plotNearbyHumans.sqf";

@@ -34838,6 +34838,27 @@
 			<German>Zombifiziertes Huhn</German>
 			<Russian>Зомбированная курица</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_DECONSTRUCT">
+			<English>Deconstruct %1</English>
+			<Russian>Деконструировать %1</Russian>
+			<Spanish>Deconstruir %1</Spanish>
+			<Czech>Dekonstruovat %1</Czech>
+			<French>Déconstruire %1</French>
+			<German>%1 abbauen</German>
+			<Dutch>Deconstrueren %1</Dutch>
+		</Key>
+		<Key ID="STR_EPOCH_BUILD_MOVE_TOO_FAR">
+			<English>You moved too far!</English>
+			<German>Du hast dich zu weit weg bewegt!</German>
+		</Key>
+		<Key ID="STR_EPOCH_BUILD_OBJ_MOVE_TOO_FAR">
+			<English>Object moved too far!</English>
+			<German>Objekt zu weit weg!</German>
+		</Key>
+		<Key ID="STR_EPOCH_BUILD_MOVE_TOO_FAST">
+			<English>You moved too fast!</English>
+			<German>Du hast dich zu schnell bewegt!</German>
+		</Key>		
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
