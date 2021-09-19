@@ -13,20 +13,24 @@ if (isNil "keyboard_keys") then {
 		DZE_cancelBuilding = true;
 		call dayz_EjectPlayer;
 		_handled = false;
+		if (!isNil "DZE_buildItem") then {_handled = true;}; // ESC to cancel build
 		if (r_player_dead) then {_handled = true;}; // Disable ESC after death
     };
-	local _dze_f = {
+	local _dze_f = {		
 		if (!_ctrlState && !_altState) then {DZE_F = true;};
+		if (!isNil "DZE_buildItem") then {_handled = true;}; // hold/release object while base building without altering weapon firing mode
 	};
-	local _dze_q = {
-		if (!_ctrlState && !_altState) then {DZE_Q = true;};
+	local _dze_q = {		
+		if (!_ctrlState && !_altState) then {DZE_Q = true;};		
 		if (!_ctrlState && _altState) then {DZE_Q_alt = true;};
 		if (_ctrlState && !_altState) then {DZE_Q_ctrl = true;};
+		if (!isNil "DZE_buildItem") then {_handled = true;}; // raise object while base building without altering weapon zeroing
 	};
 	local _dze_z = {
 		if (!_ctrlState && !_altState) then {DZE_Z = true;};
 		if (!_ctrlState && _altState) then {DZE_Z_alt = true;};
 		if (_ctrlState && !_altState) then {DZE_Z_ctrl = true;};
+		if (!isNil "DZE_buildItem") then {_handled = true;}; // lower object while base building without altering weapon zeroing
 	};
 	local _autoRun = {
 		if (!dayz_autoRun) then {
