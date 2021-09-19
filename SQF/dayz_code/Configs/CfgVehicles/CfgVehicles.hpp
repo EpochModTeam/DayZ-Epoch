@@ -762,7 +762,7 @@ class CfgVehicles
 		constructioncount = 1;
 		requireplot = 0;
 		nounderground = 0;
-		offset[] = {0,3,1};
+		offset[] = {0,3,0};
 	};
 	
 	#include "Buildables\Stashes.hpp"

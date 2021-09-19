@@ -8,7 +8,7 @@ class GunRack_DZ: Gunrack1
 	transportMaxWeapons = 20;
 	transportMaxMagazines = 10;
 	transportMaxBackpacks = 0;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"ItemGunRackKit",1}};
 	nounderground = 0;
 	upgradeBuilding[] = {"GunRack2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",4},{"equip_nails",1}}};	
@@ -23,7 +23,7 @@ class GunRack2_DZ: Gunrack1
 	transportMaxWeapons = 40;
 	transportMaxMagazines = 20;
 	transportMaxBackpacks = 0;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"ItemGunRackKit2",1}};
 	nounderground = 0;
 	constructioncount = 2;
@@ -34,7 +34,7 @@ class WoodCrate_DZ: Fort_Crate_wood
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	armor = 200;
 	displayName = $STR_EPOCH_WOODCRATE;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -50,7 +50,7 @@ class WoodCrate2_DZ: Fort_Crate_wood
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	armor = 400;
 	displayName = $STR_EPOCH_WOODCRATE2;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -67,7 +67,7 @@ class OutHouse_DZ: Land_KBud
 {
 	armor = 200;
 	scope = 2;
-	offset[] = {0,2.5,1};
+	offset[] = {0,2,0};
 	displayName = $STR_EPOCH_OUTHOUSE;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 4;
@@ -157,7 +157,7 @@ class WoodShack_DZ: Land_kulna
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,4,1.3};
+	offset[] = {0,4,0};
 	armor = 800;
 	displayName = $STR_EPOCH_WOODSHACK;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -172,7 +172,7 @@ class WoodShack2_DZ: Land_kulna
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,4,1.3};
+	offset[] = {0,4,0};
 	armor = 1600;
 	displayName = $STR_EPOCH_WOODSHACK2;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -188,7 +188,7 @@ class Wooden_shed_DZ: Land_Shed_wooden
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,5,1};
+	offset[] = {0,5,0};
 	armor = 1000;
 	displayName = $STR_EPOCH_NICEWOODSHED;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -204,7 +204,7 @@ class Wooden_shed2_DZ: Land_Shed_wooden
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,5,1};
+	offset[] = {0,5,0};
 	armor = 2000;
 	displayName = $STR_EPOCH_NICEWOODSHED2;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -284,7 +284,7 @@ class Commode_DZ: BuiltItems
 	transportMaxWeapons = 5;	
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 3;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"commode_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -300,7 +300,7 @@ class Wardrobe_DZ: BuiltItems
 	transportMaxWeapons = 5;	
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 3;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"wardrobe_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };	
@@ -316,7 +316,7 @@ class Fridge_DZ: BuiltItems
 	transportMaxWeapons = 7;	
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 3;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"fridge_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -332,7 +332,7 @@ class Washing_Machine_DZ: BuiltItems
 	transportMaxWeapons = 2;	
 	transportMaxMagazines = 15;
 	transportmaxbackpacks = 3;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"washing_machine_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };	
@@ -348,7 +348,7 @@ class Server_Rack_DZ: BuiltItems
 	transportMaxWeapons = 15;	
 	transportMaxMagazines = 25;
 	transportmaxbackpacks = 1;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"server_rack_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };	
@@ -364,7 +364,7 @@ class ATM_DZ: BuiltItems
 	transportMaxWeapons = 5;	
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 4;
-	offset[] = {0,2.5,1.5};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"atm_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -428,7 +428,7 @@ class Vendmachine1_DZ: BuiltItems
 	transportMaxWeapons = 15;	
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;
-	offset[] = {0,2.5,0};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"vendmachine1_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -441,7 +441,7 @@ class Vendmachine2_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;	
 	constructioncount = 1;
-	offset[] = {0,2.5,1.5};
+	offset[] = {0,2,0};
 	transportMaxWeapons = 15;	
 	transportMaxMagazines = 45;
 	transportmaxbackpacks = 5;
@@ -457,7 +457,7 @@ class StorageCrate_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;	
 	constructioncount = 1;
-	offset[] = {0,2.5,0.3};
+	offset[] = {0,2,-0.05};
 	transportMaxWeapons = 3;	
 	transportMaxMagazines = 60;
 	transportmaxbackpacks = 1;
@@ -473,7 +473,7 @@ class CamoStorageCrate_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;	
 	constructioncount = 3;
-	offset[] = {0,3,0};
+	offset[] = {0,2,-0.15};
 	transportMaxWeapons = 15;	
 	transportMaxMagazines = 55;
 	transportmaxbackpacks = 6;

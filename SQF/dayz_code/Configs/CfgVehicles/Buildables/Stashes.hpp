@@ -9,6 +9,7 @@ class StashSmall_base : DZ_storage_base {
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;
 	upgradeBuilding[] = {};
+	offset[] = {0,2,0};
 };
 
 class StashSmall : StashSmall_base {

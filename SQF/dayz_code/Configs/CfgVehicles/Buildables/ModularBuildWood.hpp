@@ -29,7 +29,7 @@ class WoodFloor_DZ: ModularItems {
 
 class WoodFloorStairs_DZ: ModularItems {
 	scope = 2;
-	offset[] = {0,5,-2.5};
+	offset[] = {0,5,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
 	armor = 1000;
 	displayName = $STR_EPOCH_WOODFLOORSTAIRS;

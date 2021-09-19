@@ -4,7 +4,7 @@ class Sandbag1_DZ: BuiltItems {
 	cost = 100;
 	model = "\ca\misc2\BagFenceLong.p3d";
 	icon = "\Ca\misc3\data\Icons\icon_fortBagFenceLong_ca.paa";
-	offset[] = {0,3,0.5};
+	offset[] = {0,3,0};
 	mapSize = 2;
 	armor = 400;
 	displayName = $STR_BUILT_SANDBAG;
@@ -22,7 +22,7 @@ class BagFenceRound_DZ: BuiltItems {
 	cost = 100;
 	model = "\ca\misc2\BagFenceRound.p3d";
 	icon = "\Ca\misc3\data\Icons\icon_bagFenceRound_ca.paa";
-	offset[] = {0,3,0.5};
+	offset[] = {0,3,0};
 	mapSize = 2;
 	armor = 400;
 	displayName = $STR_EQUIP_NAME_21_ROUND;
@@ -132,7 +132,7 @@ class SandNest_DZ : BuiltItems {
 	TextPlural = "Houses";
 	TextSingular = "House";
 	nameSound = "obj_house";
-	offset[] = {0,3,1};
+	offset[] = {0,3,0};
 	removeoutput[] = {{"sandbag_nest_kit",1}};
 	nounderground = 0;
 };

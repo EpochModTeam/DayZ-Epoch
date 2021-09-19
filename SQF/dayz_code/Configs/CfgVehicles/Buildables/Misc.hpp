@@ -49,7 +49,7 @@ class FuelPump_DZ: BuiltItems
 class FireBarrel_DZ: Land_Fire_barrel
 {
 	cost = 100;
-	offset[] = {0,2,0.5};
+	offset[] = {0,1.5,0};
 	displayName = $STR_EPOCH_FIREBARREL;	
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
@@ -79,7 +79,7 @@ class Plastic_Pole_EP1_DZ: Sign_1L_Noentry_EP1
 	coefInsideHeur = 4;
 
 	scope = 2;
-	offset[] = {0,2.5,0.3};
+	offset[] = {0,1.5,0};
 	displayName = $STR_EPOCH_PLAYER_246;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"plot_pole_kit",1}};
@@ -92,7 +92,7 @@ class CanvasHut_DZ: Land_covering_hut_EP1
 {
 	armor = 200;
 	scope = 2;
-	offset[] = {0,2.5,1};
+	offset[] = {0,2.5,0};
 	displayName = $STR_EPOCH_CANVASSUNSHADE;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"sun_shade_kit",1}};
@@ -104,7 +104,7 @@ class Park_bench1;
 class ParkBench_DZ: Park_bench1
 {
 	scope = 2;
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,0};
 	displayName = $STR_EPOCH_WOODBENCH;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"park_bench_kit",1}};
@@ -121,6 +121,7 @@ class DeerStand_DZ: Land_Misc_deerstand
 	removeoutput[] = {{"deer_stand_kit",1}};
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;	
+	nounderground = 0;
 };
 
 class Land_Wall_Gate_Ind1_L;
@@ -128,7 +129,7 @@ class MetalGate_DZ: Land_Wall_Gate_Ind1_L
 {
 	armor = 400;
 	scope = 2;
-	offset[] = {0,6,1};
+	offset[] = {2,3,0};
 	displayName = $STR_EPOCH_RUSTYGATE;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"rusty_gate_kit",1}};
@@ -139,7 +140,7 @@ class Fence_corrugated_DZ: Fence_corrugated_plate
 {
 	armor = 600;
 	scope = 2;
-	offset[] = {0,3,1};
+	offset[] = {0,3,-0.1};
 	removeoutput[] = {{"ItemCorrugated",1}};
 	displayName = $STR_EPOCH_CORRUGATEDFENCE;
 	vehicleClass = "DayZ Epoch Buildables";
@@ -152,7 +153,7 @@ class StickFence_DZ: Wall_FenW2_6_EP1
 	destrType = "DestructTree";
 	armor = 200;
 	scope = 2;
-	offset[] = {0,4.5,0.5};
+	offset[] = {0,4.5,0};
 	displayName = $STR_EPOCH_STICKFENCE;
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"stick_fence_kit",1}};
@@ -186,7 +187,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 	transportRepair = 0;
 	transportFuel = 0;
 	typicalCargo[] = {};
-	offset[] = {0,9,3};
+	offset[] = {0,9,0};
 	cost = 0;
 	removeoutput[] = {{"ItemScaffoldingKit",1}};
 };
@@ -196,7 +197,7 @@ class Hedgehog_DZ: BuiltItems
 	scope = 2;
 	destrType = "DestructNo";
 	cost = 100;
-	offset[] = {0,1.5,0.55};
+	offset[] = {0,1.5,0};
 	model = "\ca\misc\jezek_kov";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
@@ -214,7 +215,7 @@ class MetalPanel_DZ: BuiltItems
 	scope = 2;
 	destrType = "DestructTree";
 	cost = 100;
-	offset[] = {0,2.5,0.5};
+	offset[] = {0,2.5,0};
 	model = "\ca\structures\wall\wall_indcnc2_3.p3d";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
@@ -231,7 +232,7 @@ class Fort_RazorWire : BuiltItems {
 	vehicleClass = "DayZ Epoch Buildables";
 	model = "\ca\misc\Fort_Razorwire";
 	icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,0};
 	accuracy = 0.3;
 	mapSize = 3;
 	displayName = $STR_EPOCH_WIRE;
@@ -245,7 +246,7 @@ class WoodGate_DZ: BuiltItems
 {
 	scope = 2;
 	destrType = "DestructTree";
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,0};
 	model = "\ca\structures\Wall\Gate_wood2_5";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
@@ -292,7 +293,7 @@ class Notebook_DZ: Notebook
 	mapSize = 2;	
 	displayName = $STR_EPOCH_NOTEBOOK;
 	constructioncount = 1;
-	offset[] = {0,2,2};
+	offset[] = {0,2,1};
 	removeoutput[] = {{"notebook_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -317,7 +318,7 @@ class Greenhouse_DZ: MAP_Misc_Greenhouse
 	mapSize = 2;	
 	displayName = $STR_EPOCH_GREENHOUSE;
 	constructioncount = 1;
-	offset[] = {0,5,1.4};
+	offset[] = {0,5,0};
 	removeoutput[] = {{"greenhouse_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -356,7 +357,7 @@ class Office_Chair_DZ: BuiltItems
 	mapSize = 2;	
 	displayName = $STR_EPOCH_CHAIR;
 	constructioncount = 1;
-	offset[] = {0,2,1};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"office_chair_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };	
@@ -369,7 +370,7 @@ class Garage_Green_DZ: Land_MBG_Garage_Single_D
 	mapSize = 2;	
 	displayName = $STR_EPOCH_GARAGE_GREEN;
 	constructioncount = 3;
-	offset[] = {0,6,2};
+	offset[] = {0,6,0};
 	removeoutput[] = {{"garage_green_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -382,7 +383,7 @@ class Garage_White_DZ: Land_MBG_Garage_Single_A
 	mapSize = 2;	
 	displayName = $STR_EPOCH_GARAGE_WHITE;
 	constructioncount = 3;
-	offset[] = {0,6,2};
+	offset[] = {0,6,0};
 	removeoutput[] = {{"garage_white_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -395,7 +396,7 @@ class Garage_Brown_DZ: Land_MBG_Garage_Single_B
 	mapSize = 2;	
 	displayName = $STR_EPOCH_GARAGE_BROWN;
 	constructioncount = 3;
-	offset[] = {0,6,2};
+	offset[] = {0,6,0};
 	removeoutput[] = {{"garage_brown_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -408,7 +409,7 @@ class Garage_Grey_DZ: Land_MBG_Garage_Single_C
 	mapSize = 2;	
 	displayName = $STR_EPOCH_GARAGE_GREY;
 	constructioncount = 3;
-	offset[] = {0,6,2};
+	offset[] = {0,6,0};
 	removeoutput[] = {{"garage_grey_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };

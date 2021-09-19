@@ -140,7 +140,7 @@ class LockboxStorageLocked: Land_A_tent {
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,-0.1};
 	lockable = 2;
 	unlockedClass = "LockboxStorage";
 	nounderground = 0;
@@ -170,7 +170,7 @@ class LockboxStorage2Locked: Land_A_tent {
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,-0.1};
 	lockable = 2;
 	unlockedClass = "LockboxStorage2";
 	nounderground = 0;
@@ -199,7 +199,7 @@ class LockboxStorageWinterLocked: Land_A_tent {
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,-0.1};
 	lockable = 2;
 	unlockedClass = "LockboxStorageWinter";
 	nounderground = 0;
@@ -229,7 +229,7 @@ class LockboxStorageWinter2Locked: Land_A_tent {
 	transportMaxMagazines = 0;
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,-0.1};
 	lockable = 2;
 	unlockedClass = "LockboxStorageWinter2";
 	nounderground = 0;
@@ -298,7 +298,7 @@ class LockboxStorageBroken: Land_A_tent {
 	displayName = $STR_EPOCH_LOCKBOX_BROKEN;
 	model = "\z\addons\dayz_epoch\models\lockbox.p3d";
 	destrType = "DestructNo";
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,-0.1};
 	armor = 800;
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 20;
@@ -311,7 +311,7 @@ class LockboxStorage2Broken: Land_A_tent {
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
 	model = "\z\addons\dayz_epoch\models\lockbox.p3d";
 	destrType = "DestructNo";
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,-0.1};
 	armor = 1600;
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 40;
@@ -324,7 +324,7 @@ class LockboxStorageWinterBroken: Land_A_tent {
 	displayName = $STR_EPOCH_LOCKBOX_BROKEN;
 	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	destrType = "DestructNo";
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,-0.1};
 	armor = 800;
 	transportMaxMagazines = 50;
 	transportMaxWeapons = 20;
@@ -337,7 +337,7 @@ class LockboxStorageWinter2Broken: Land_A_tent {
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
 	model = "\z\addons\dayz_epoch\models\lockbox_w.p3d";
 	destrType = "DestructNo";
-	offset[] = {0,1.5,0.5};
+	offset[] = {0,1.5,-0.1};
 	armor = 1600;
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 40;

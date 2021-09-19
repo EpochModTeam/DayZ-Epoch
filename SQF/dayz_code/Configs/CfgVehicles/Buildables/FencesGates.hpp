@@ -15,7 +15,7 @@ class WoodenGate_foundation_DZ: DZE_Housebase
 	icon = "\ca\data\data\Unknown_object.paa";	
 	mapSize = 8;	
 	GhostPreview = "WoodenGate_ghost_DZ";	
-	offset[] = {0,4,2};	
+	offset[] = {0,4,0};
 	upgradeBuilding[] = {"WoodenGate_1_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"ItemPlank",8},{"equip_nails",1},{"ItemComboLock",1}}};
 };
 

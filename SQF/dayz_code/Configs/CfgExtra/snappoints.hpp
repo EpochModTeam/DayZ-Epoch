@@ -513,7 +513,7 @@ class SnapBuilding {
 	class Concrete_Bunker_Preview_DZ: Concrete_Bunker_DZ {};
 	
 	class MetalGate_DZ: FloorsWallsStairs {
-		radius = 5;
+		radius = 10;
 		points[] = {
 			{-2,0,0.3,$STR_EPOCH_ACTION_SNAP_PIVOT},
 			{-4.1,0,0.3,$STR_EPOCH_ACTION_SNAP_LEFT},
