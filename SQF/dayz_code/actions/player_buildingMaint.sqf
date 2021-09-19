@@ -1,92 +1,119 @@
-/*
-	DayZ Base Building Maintenance
-	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
-*/
-if (dayz_actionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	DayZ Base Building Maintenance
+//	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
+//
+//	Upgraded by:	Victor the Cleaner
+//	Date:		August 2021
+//
+//	- Now includes helper spheres for improved player experience
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+if (dayz_actionInProgress) exitWith {localize "str_epoch_player_52" call dayz_rollingMessages;};	// Upgrade is already in progress.
 dayz_actionInProgress = true;
-
-private ["_classname","_missing","_proceed","_num_removed","_missingQty","_itemIn","_countIn","_qty","_removed","_removed_total","_tobe_removed_total","_objectID","_objectUID","_temp_removed_array","_textMissing","_requirements","_obj","_upgrade","_finished"];
 
 player removeAction s_player_maint_build;
 s_player_maint_build = 1;
 
-// get cursortarget from addaction
-_obj = _this select 3;
+local _obj = _this select 3;
 
-// Find objectID
-_objectID 	= _obj getVariable ["ObjectID","0"];
+local _objectID		= _obj getVariable ["ObjectID","0"];
+local _objectUID	= _obj getVariable ["ObjectUID","0"];
 
-// Find objectUID
-_objectUID	= _obj getVariable ["ObjectUID","0"];
-
-if (_objectID == "0" && _objectUID == "0") exitWith {dayz_actionInProgress = false; s_player_maint_build = -1; localize "str_epoch_player_50" call dayz_rollingMessages;};
-
-// Get classname
-_classname = typeOf _obj;
-
-// Find next maintain
-_upgrade = getArray (configFile >> "CfgVehicles" >> _classname >> "maintainBuilding");
-
-if ((count _upgrade) > 0) then {
-	_requirements = _upgrade;
-} else {
-	_requirements = [["PartGeneric",1]];
+if (_objectID == "0" && _objectUID == "0") exitWith {
+	dayz_actionInProgress = false;
+	s_player_maint_build = -1;
+	localize "str_epoch_player_50" call dayz_rollingMessages;		// Not setup yet.
 };
 
-_missingQty = 0;
-_missing = "";
+local _classname = typeOf _obj;
 
-_proceed = true;
+// Find next maintain
+local _upgrade		= getArray (configFile >> "CfgVehicles" >> _classname >> "maintainBuilding");
+local _requirements	= [];
+
+if (count _upgrade > 0) then {
+	_requirements = _upgrade;
+} else {
+	_requirements = [["PartGeneric", 1]];
+};
+
+local _missingQty	= 0;
+local _missing		= "";
+local _proceed		= true;
+
 {
-	_itemIn = _x select 0;
-	_countIn = _x select 1;
-	_qty = { (_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn) } count magazines player;
-	if(_qty < _countIn) exitWith { _missing = _itemIn; _missingQty = (_countIn - _qty); _proceed = false; };
+	local _itemIn	= _x select 0;
+	local _countIn	= _x select 1;
+
+	local _qty = {(_x == _itemIn) || (configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)} count magazines player;
+
+	if (_qty < _countIn) exitWith {
+		_missing	= _itemIn;
+		_missingQty	= _countIn - _qty;
+		_proceed	= false;
+	};
 } forEach _requirements;
 
 if (_proceed) then {
-	[player,(getPosATL player),40,"repair"] spawn fnc_alertZombies;
 
-	_finished = ["Medic",1] call fn_loopAction;
+	[_obj] call fn_displayHelpers;						// create helpers
+
+	[player, (getPosATL player), 40, "repair"] spawn fnc_alertZombies;	// make noise
+
+	local _finished = ["Medic", 1] call fn_loopAction;			// animation
+
+	[] call fn_displayHelpers;						// delete helpers
+
 	if (!_finished) exitWith {};
 
 	["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-	_temp_removed_array = [];
-	_removed_total = 0;
-	_tobe_removed_total = 0;
+	local _temp_removed_array	= [];
+	local _removed_total		= 0;
+	local _tobe_removed_total	= 0;
 
 	{
-		_removed = 0;
-		_itemIn = _x select 0;
-		_countIn = _x select 1;
+		local _removed	= 0;
+		local _itemIn	= _x select 0;
+		local _countIn	= _x select 1;
+
 		// diag_log format["Recipe Finish: %1 %2", _itemIn,_countIn];
+
 		_tobe_removed_total = _tobe_removed_total + _countIn;
 
 		{
-			if( (_removed < _countIn) && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
-				_num_removed = ([player,_x] call BIS_fnc_invRemove);
-				_removed = _removed + _num_removed;
-				_removed_total = _removed_total + _num_removed;
-				if(_num_removed >= 1) then {
-					_temp_removed_array set [count _temp_removed_array,_x];
+			if (_removed < _countIn && ((_x == _itemIn) || configName(inheritsFrom(configFile >> "cfgMagazines" >> _x)) == _itemIn)) then {
+
+				local _num_removed = ([player, _x] call BIS_fnc_invRemove);
+				_removed	= _removed + _num_removed;
+				_removed_total	= _removed_total + _num_removed;
+
+				if (_num_removed > 0) then {
+					_temp_removed_array set [count _temp_removed_array, _x];
 				};
 			};
+
 		} forEach magazines player;
+
 	} forEach _requirements;
 
 	// all parts removed proceed
 	if (_tobe_removed_total == _removed_total) then {
-		format[localize "STR_EPOCH_ACTIONS_4",1] call dayz_rollingMessages;
-		PVDZE_maintainArea = [player,2,[_obj, _objectID, _objectUID]];
+
+		format[localize "STR_EPOCH_ACTIONS_4" ,1] call dayz_rollingMessages;					// You have maintained %1 building parts.
+
+		PVDZE_maintainArea = [player, 2, [_obj, _objectID, _objectUID]];
 		publicVariableServer "PVDZE_maintainArea";
+
 	} else {
+
 		{player addMagazine _x;} count _temp_removed_array;
-		format[localize "str_epoch_player_145",_removed_total,_tobe_removed_total] call dayz_rollingMessages;
+		format[localize "str_epoch_player_145", _removed_total, _tobe_removed_total] call dayz_rollingMessages;	// Missing Parts after first check Item: %1 / %2
 	};
 } else {
-	_textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
-	format[localize "STR_EPOCH_ACTIONS_6",_missingQty, _textMissing] call dayz_rollingMessages;
+	local _textMissing = getText(configFile >> "CfgMagazines" >> _missing >> "displayName");
+	format[localize "STR_EPOCH_ACTIONS_6", _missingQty, _textMissing] call dayz_rollingMessages;			// Missing %1 more of %2
 };
 
 dayz_actionInProgress = false;
