@@ -19,8 +19,23 @@
 [ADDED] All different types of Arma 2 Static Weapons are as Epoch Version available and can be build from the inventory. (8bc484cb) @AirwavesMan
 [ADDED] Weapon parts and gun powder for server admins to add. (6dbc6646) @AirwavesMan
 [ADDED] Customizable zombie humanity for server admins. Change DZE_ZombieHumanity in the configVariables.sqf (1a8d45e1) @AirwavesMan
+[ADDED] Backpack upgrade items for admins to use. (e151f22c4) @seelenapparat
+[ADDED] Wood Stairs with rails as item. (5feb96318) @Victor-the-Cleaner
+[ADDED] Colored helpers to modular objects when deconstruct, remove, upgrade, downgrade, maintain or pack. (58c4a4d1f) @Victor-the-Cleaner
+[ADDED] New deconstruct scroll option. If DZE_refundModular is enabled it refunds all modular objects. Changes can be made in the configVariables.sqf. (58c4a4d1f) @Victor-the-Cleaner
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Snappoints got improved. (f68e92d5) @worldwidesorrow
+[UPDATED] Replace M240 Nest ghost preview with the actual game object as preview. (ff05cb9cb) @ZzBombardierzZ, @AirwavesMan
+[UPDATED] Players may no longer build objects outside the plot radius. (bb968698e) @Victor-the-Cleaner
+[UPDATED] Players may now cancel the build by fast movement, i.e. running, or fast walking on steep terrain. (bb968698e) @Victor-the-Cleaner
+[UPDATED] Crouch-walking or slow-walking will not cancel building. (bb968698e) @Victor-the-Cleaner
+[UPDATED] The player will auto-crouch when clicking "build" to prevent accidental cancelling. (bb968698e) @Victor-the-Cleaner
+[UPDATED] Pressing ESC while building will cancel without opening the Arma exit menu. (2a3b89564) @Victor-the-Cleaner
+[UPDATED] Pressing F while building will hold or release the object without altering the weapon firing mode. (2a3b89564) @Victor-the-Cleaner
+[UPDATED] Pressing PgUp or PgDn while building will raise or lower the object without altering the weapon zeroing. (2a3b89564) @Victor-the-Cleaner
+[UPDATED] If a lit fire barrel is removed, the flame will now be extinguished. (58c4a4d1f) @Victor-the-Cleaner
+[UPDATED] If a plot pole is removed, the plot boundary helpers will now be deleted too. (58c4a4d1f) @Victor-the-Cleaner
+[UPDATED] Removed non-lockable storage objects will now refund their contents. (58c4a4d1f) @Victor-the-Cleaner
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -48,6 +63,11 @@
 [FIXED] Pitch for female cough sounds. (96f1d40a) @seelenapparat
 [FIXED] Painkiller weight was too high. (c801365a) @seelenapparat
 [FIXED] Humanity gain from zombies that did not die from a player. (1a8d45e1) @AirwavesMan
-[REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @Seelenapparat, @AirwavesMan
+[FIXED] Often the wrong cursortarget got selected when multiple cursortargets were next to each other. (2f1edcaa4) @Victor-the-Cleaner
+[FIXED] Missing 1oz waterbottles while crafting that leads to a wrong refunded item. (147b0fe5c) @seelenapparat
+[FIXED] SD weapons with Stanag and AK ammo and an PSO or ACOG scope were inaccurate at a smaller distance. (4f7f052a5) @AirwavesMan
+[FIXED] Wrong ACOG zeroing of the Scar AK. (0f51c62dc) @AirwavesMan
+[FIXED] Wrong battery descriptions. (1ec971e83) @AirwavesMan
+[REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @seelenapparat, @AirwavesMan
 
 [INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ
