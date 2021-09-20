@@ -36,6 +36,7 @@
 [UPDATED] If a lit fire barrel is removed, the flame will now be extinguished. (58c4a4d1f) @Victor-the-Cleaner
 [UPDATED] If a plot pole is removed, the plot boundary helpers will now be deleted too. (58c4a4d1f) @Victor-the-Cleaner
 [UPDATED] Removed non-lockable storage objects will now refund their contents. (58c4a4d1f) @Victor-the-Cleaner
+[UPDATED] The way how the DZE_modularConfig variable works has changed. More in the configVariables.sqf. (58c4a4d1f) @Victor-the-Cleaner
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -69,5 +70,6 @@
 [FIXED] Wrong ACOG zeroing of the Scar AK. (0f51c62dc) @AirwavesMan
 [FIXED] Wrong battery descriptions. (1ec971e83) @AirwavesMan
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @seelenapparat, @AirwavesMan
+[REMOVED] DZE_permanentPlot variable and checks. (5aba5d7dd, 9ecdb21dd) @AirwavesMan
 
 [INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ

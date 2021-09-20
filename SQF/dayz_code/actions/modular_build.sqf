@@ -132,7 +132,7 @@ if (_canBuild) then {
 	local _objectHelperPos	= [];
 	local _walk		= "amovpercmwlk";	// animation state substrings
 	local _run		= "amovpercmrun";
-	local _sprint		= "amovpercmspr";
+	local _sprint	= "meva";
 
 	helperDetach		= false;
 	local _isOk		= true;
