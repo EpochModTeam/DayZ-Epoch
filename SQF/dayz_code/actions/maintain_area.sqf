@@ -157,11 +157,7 @@ call {
 
 		if (_count == 0) then {
 			_message1 = localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_NONE";
-			if (DZE_permanentPlot) then {
-				_line1 ctrlSetText _message1;
-			} else {
-				_message1 call dayz_rollingMessages;
-			};
+			_line1 ctrlSetText _message1;
 		} else {
 			_requirements = _count call _req;
 
@@ -170,11 +166,7 @@ call {
 			} else {
 				_message1 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_PRICE", _count,_requirements select 1,""];
 			};
-			if (DZE_permanentPlot) then {
-				_line1 ctrlSetText _message1;
-			} else {
-				_message1 call dayz_rollingMessages;
-			};
+			_line1 ctrlSetText _message1;
 		};
 		_requirements = count _objects call _req;
 		if (Z_SingleCurrency) then {
@@ -183,11 +175,7 @@ call {
 			_message2 = format [localize "STR_EPOCH_PLOTMANAGEMENT_MAINTAIN_FORCE",count _objects,_requirements select 1,""];
 		};
 		if (_count != count _objects) then {
-			if (DZE_permanentPlot) then {
-				_line2 ctrlSetText _message2;
-			} else {
-				_message2 call dayz_rollingMessages;
-			};
+			_line2 ctrlSetText _message2;
 		};
 	};
 };
