@@ -236,7 +236,7 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 					{_object addBackpackCargoGlobal [_x, _backpackqty select _foreachindex];} foreach _backpackcargo;
 				};
 			} else {
-				if (DZE_permanentPlot && _isPlot) then {
+				if (_isPlot) then {
 					_object setVariable ["plotfriends", _inventory, true];
 				};
 				if (DZE_doorManagement && _doorLocked) then {

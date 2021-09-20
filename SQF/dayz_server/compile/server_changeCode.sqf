@@ -51,13 +51,10 @@ _holder setPosATL _pos;
 _holder setVariable ["CharacterID",_characterID,true];
 _holder setVariable ["OEMPos",_pos,true];
 
-if (DZE_permanentPlot) then {
-	_ownerPUID = if (_charID == "0000" || _charID == "10000") then {_playerUID} else {_ownerID};
-	_worldSpace = [_dir,_pos,_ownerPUID,_vector];
-	_holder setVariable ["ownerPUID",_ownerPUID,true];
-} else {
-	_worldSpace = [_dir,_pos];
-};
+_ownerPUID = if (_charID == "0000" || _charID == "10000") then {_playerUID} else {_ownerID};
+_worldSpace = [_dir,_pos,_ownerPUID,_vector];
+_holder setVariable ["ownerPUID",_ownerPUID,true];
+
 
 if (_isZSC) then {_holder setVariable ["cashMoney",_coins,true];};
 

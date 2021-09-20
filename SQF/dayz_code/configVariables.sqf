@@ -43,7 +43,6 @@ DZE_VehicleKey_Changer = false; // Enable Vehicle Key Changer. Create or change 
 DZE_Virtual_Garage = false; // Enable the Virtual Garage to store vehicles.
 
 // Plot Management and Plot for Life
-DZE_permanentPlot = true; // Plot ownership saves after death. Enables Plot for Life by @RimBlock and Plot Management by @DevZupa.
 DZE_isRemovable = ["Plastic_Pole_EP1_DZ"]; //Items that can be removed with a crowbar with no ownership or access required. To forbid base take overs remove plot pole from this list and add it to DZE_restrictRemoval. It is not necessary to add wrecks or items that inherit from 'BuiltItems' to this list.
 
 // Door Management

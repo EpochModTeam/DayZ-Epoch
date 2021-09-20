@@ -210,31 +210,25 @@ if ((count _upgrade) > 0) then {
 					_object setDamage _damageNew;
 				};
 
-				if (DZE_permanentPlot) then {
+				local _ownerID = _obj getVariable["ownerPUID","0"];
 
-					local _ownerID = _obj getVariable["ownerPUID","0"];
+				if (_ownerID == "0") then {
+					_ownerID = dayz_playerUID;	// APFL is on but UID is 0 so we will claim it to record the ownership.
+				};
 
-					if (_ownerID == "0") then {
-						_ownerID = dayz_playerUID;	// APFL is on but UID is 0 so we will claim it to record the ownership.
-					};
+				_object setVariable ["ownerPUID", _ownerID, true];
 
-					_object setVariable ["ownerPUID", _ownerID, true];
+				if (_lockable == 3) then {
 
-					if (_lockable == 3) then {
+					local _friendsArr = [[dayz_playerUID, toArray (name player)]];
+					_object setVariable ["doorfriends", _friendsArr, true];
 
-						local _friendsArr = [[dayz_playerUID, toArray (name player)]];
-						_object setVariable ["doorfriends", _friendsArr, true];
-
-						PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _location, _ownerID, _vector], _classname, _obj, player, _friendsArr, dayz_authKey];
-					} else {
-						PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _location, _ownerID, _vector], _classname, _obj, player, [], dayz_authKey];
-					};
+					PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _location, _ownerID, _vector], _classname, _obj, player, _friendsArr, dayz_authKey];
 				} else {
-					PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _location, _vector], _classname, _obj, player, [], dayz_authKey];
+					PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _location, _ownerID, _vector], _classname, _obj, player, [], dayz_authKey];
 				};
 
 				publicVariableServer "PVDZE_obj_Swap";
-
 				player reveal _object;
 
 			} else {

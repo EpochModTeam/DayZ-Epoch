@@ -32,7 +32,7 @@ if ((vehicle player) == player) then {
 		};
 		if (DZE_BackpackAntiTheft) then {
 			_friendlyTo = player getvariable ["friendlyTo",[]];
-			_rID = if (DZE_permanentPlot) then { getPlayerUID _cTarget } else { _cTarget getVariable ["CharacterID","0"] };
+			_rID = getPlayerUID _cTarget;
 			if ((isInTraderCity || {DZE_PVE_Mode} || {!canbuild}) && {alive _cTarget} && {isPlayer _cTarget} && {!(_rID in _friendlyTo) && !(_cTarget in (units group player))} && {(player distance _cTarget) < 12}) then {
 				localize "STR_EPOCH_PLAYER_316" call dayz_rollingMessages;
 				_display closeDisplay 2;

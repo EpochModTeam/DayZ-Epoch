@@ -436,17 +436,14 @@ if (_canBuild select 0) then {
 					};
 
 					_tmpbuilt setVariable ["CharacterID",_combination,true];
-					if (DZE_permanentPlot) then {
-						_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
-						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
-						if (_lockable == 3) then {
-							_friendsArr = [[dayz_playerUID,toArray (name player)]];
-							_tmpbuilt setVariable ["doorfriends", _friendsArr, true];
-							PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,dayz_playerUID,_vector],_friendsArr,player,dayz_authKey];
-						};
-					} else {
-						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location],[],player,dayz_authKey];
+					_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
+					PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
+					if (_lockable == 3) then {
+						_friendsArr = [[dayz_playerUID,toArray (name player)]];
+						_tmpbuilt setVariable ["doorfriends", _friendsArr, true];
+						PVDZ_obj_Publish = [_combination,_tmpbuilt,[_dir,_location,dayz_playerUID,_vector],_friendsArr,player,dayz_authKey];
 					};
+
 					publicVariableServer "PVDZ_obj_Publish";
 
 					[format[localize "str_epoch_player_140",_combinationDisplay,_text],1] call dayz_rollingMessages;
@@ -459,17 +456,13 @@ if (_canBuild select 0) then {
 						[_tmpbuilt,true] call dayz_inflame;
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						if (DZE_permanentPlot) then {
-							_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
-							if (_canBuild select 1) then {
-								_friendsArr = [[dayz_playerUID,toArray (name player)]];
-								_tmpbuilt setVariable ["plotfriends", _friendsArr, true];
-								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],_friendsArr,player,dayz_authKey];
-							} else {
-								PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
-							};
+						_tmpbuilt setVariable ["ownerPUID",dayz_playerUID,true];
+						if (_canBuild select 1) then {
+							_friendsArr = [[dayz_playerUID,toArray (name player)]];
+							_tmpbuilt setVariable ["plotfriends", _friendsArr, true];
+							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],_friendsArr,player,dayz_authKey];
 						} else {
-							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location],[],player,dayz_authKey];
+							PVDZ_obj_Publish = [dayz_characterID,_tmpbuilt,[_dir,_location,dayz_playerUID],[],player,dayz_authKey];
 						};
 						publicVariableServer "PVDZ_obj_Publish";
 					};

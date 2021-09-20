@@ -15,13 +15,9 @@ dayz_actionInProgress = true;
 
 local _obj	= _this;
 local _objType	= typeOf _obj;
-local _ownerID	= _obj getVariable["CharacterID","0"];
 local _objectID	= _obj getVariable["ObjectID","0"];
 local _objectUID = _obj getVariable["ObjectUID","0"];
-
-if (DZE_permanentPlot) then {
-	_ownerID = _obj getVariable["ownerPUID","0"];
-};
+local _ownerID = _obj getVariable["ownerPUID","0"];
 
 local _playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
 if (_playerNear) exitWith {
@@ -36,7 +32,7 @@ s_player_packtent = -1;
 player removeAction s_player_packtentinfected;
 s_player_packtentinfected = -1;
 
-if (_ownerID in [dayz_characterID, dayz_playerUID] || {_objType in ["IC_DomeTent","IC_Tent"]}) then {	// if player is the owner, or infected camp items
+if ((_ownerID == dayz_playerUID) || {_objType in ["IC_DomeTent","IC_Tent"]}) then {	// if player is the owner, or infected camp items
 
 	local _alreadyPacking = _obj getVariable["packing", 0];
 

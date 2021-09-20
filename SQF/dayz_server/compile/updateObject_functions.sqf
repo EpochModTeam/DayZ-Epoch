@@ -25,7 +25,7 @@ server_obj_inv = {
 	local _class = _this select 3;
 
 	local _inventory = call {
-		if (DZE_permanentPlot && {_class == "Plastic_Pole_EP1_DZ"}) exitwith {
+		if (_class == "Plastic_Pole_EP1_DZ") exitwith {
 			_object getVariable ["plotfriends", []] //We're replacing the inventory with UIDs for this item
 		};
 		if (DZE_doorManagement && {_class in DZE_DoorsLocked}) exitwith {

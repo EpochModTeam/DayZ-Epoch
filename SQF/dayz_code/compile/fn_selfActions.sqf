@@ -246,18 +246,9 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	local _isPlant = _typeOfCursorTarget in Dayz_plants;
 	local _istypeTent = (_cursorTarget isKindOf "TentStorage_base") or (_cursorTarget isKindOf "IC_Tent");
 	local _characterID = _cursorTarget getVariable ["CharacterID","0"];
-	local _id = "";
-	local _ownerID = "";
-	local _hasAccess = [];	
-
-	if (DZE_permanentPlot) then {
-		_id = _uid;
-		_ownerID = _cursorTarget getVariable ["ownerPUID","0"];
-	} else {
-		_id = _myCharID;
-		_ownerID = _characterID;
-	};
-
+	local _id = _uid;
+	local _ownerID = _cursorTarget getVariable ["ownerPUID","0"];
+	local _hasAccess = [];
 	local _isDog = (_cursorTarget isKindOf "Pastor" || _cursorTarget isKindOf "Fin");
 	local _isModular = (_cursorTarget isKindOf "ModularItems" || {_typeOfCursorTarget in DZE_modularDoors});
 	local _hasDeconstructAccess = false;
@@ -521,16 +512,8 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 	if ((_typeOfCursorTarget == "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then {
 		_hasAccess = [player, _cursorTarget] call FNC_check_access;
 		local _allowed = ((_hasAccess select 0) || _hasAccess select 2 || _hasAccess select 3 || _hasAccess select 4);
-		if (DZE_permanentPlot) then {
-			if (s_player_plotManagement < 0 && _allowed) then {
-				s_player_plotManagement = player addAction [format["<t color='#b3e6ff'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
-			};
-		} else {
-			if (s_player_maintain_area < 0) then {
-				s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", "maintain", 5, false];
-				s_player_maintain_area_force = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_FORCE_MAINTAREA"], "\z\addons\dayz_code\actions\maintain_area.sqf", "force", 5, false];
-				s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "\z\addons\dayz_code\actions\maintain_area.sqf", "preview", 5, false];
-			};
+		if (s_player_plotManagement < 0 && _allowed) then {
+			s_player_plotManagement = player addAction [format["<t color='#b3e6ff'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
 		};
 		if (s_player_plot_boundary < 0 && {_allowed || (_hasAccess select 1)}) then {
 			s_player_plot_boundary = player addAction [localize "STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY", "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf", "", 1, false];

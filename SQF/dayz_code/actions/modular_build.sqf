@@ -530,19 +530,11 @@ if (_canBuild) then {
 			_ownerID = _nearestPole getVariable["CharacterID","0"];
 
 			if (dayz_characterID != _ownerID) then {					// not the owner
-
-				if (DZE_permanentPlot) then {
-					_buildcheck	= [player, _nearestPole] call FNC_check_access;
-					_isowner	= _buildcheck select 0;
-					_isfriendly	= ((_buildcheck select 1) || (_buildcheck select 3));
-					if (!_isowner && !_isfriendly) then {
-						_cancel = true;
-					};
-				} else {
-					_friendlies = player getVariable ["friendlyTo",[]];
-					if !(_ownerID in _friendlies) then {
-						_cancel = true;
-					};
+				_buildcheck	= [player, _nearestPole] call FNC_check_access;
+				_isowner	= _buildcheck select 0;
+				_isfriendly	= ((_buildcheck select 1) || (_buildcheck select 3));
+				if (!_isowner && !_isfriendly) then {
+					_cancel = true;
 				};
 				if (_cancel) then {
 					_reason = localize "STR_EPOCH_PLAYER_134";	// You do not have access to build on this plot.
@@ -804,23 +796,17 @@ if (_canBuild) then {
 					_tmpbuilt setVariable ["CharacterID", _combination, true];	// set combination as a character ID
 
 					// call publish precompiled function with given args and send public variable to server to save item to database
-					if (DZE_permanentPlot) then {
 
-						_tmpbuilt setVariable ["ownerPUID", dayz_playerUID, true];
+					_tmpbuilt setVariable ["ownerPUID", dayz_playerUID, true];
 
-						PVDZ_obj_Publish = [_combination, _tmpbuilt, [_dir, _position, dayz_playerUID, _vector], [], player, dayz_authKey];
+					PVDZ_obj_Publish = [_combination, _tmpbuilt, [_dir, _position, dayz_playerUID, _vector], [], player, dayz_authKey];
 
-						if (_lockable == 3) then {
+					if (_lockable == 3) then {
+						_friendsArr = [[dayz_playerUID, toArray (name player)]];
+						_tmpbuilt setVariable ["doorfriends", _friendsArr, true];
 
-							_friendsArr = [[dayz_playerUID, toArray (name player)]];
-							_tmpbuilt setVariable ["doorfriends", _friendsArr, true];
-
-							PVDZ_obj_Publish = [_combination, _tmpbuilt, [_dir, _position, dayz_playerUID, _vector], _friendsArr, player, dayz_authKey];
-						};
-					} else {
-						PVDZ_obj_Publish = [_combination, _tmpbuilt, [_dir, _position, _vector], [], player, dayz_authKey];
+						PVDZ_obj_Publish = [_combination, _tmpbuilt, [_dir, _position, dayz_playerUID, _vector], _friendsArr, player, dayz_authKey];
 					};
-
 					publicVariableServer "PVDZ_obj_Publish";
 
 					[format[localize "str_epoch_player_140", _combinationDisplay, _text], 1] call dayz_rollingMessages; // display new combination
@@ -836,23 +822,17 @@ if (_canBuild) then {
 						[_tmpbuilt, true] call dayz_inflame;
 						_tmpbuilt spawn player_fireMonitor;
 					} else {
-						if (DZE_permanentPlot) then {
+						_tmpbuilt setVariable ["ownerPUID", dayz_playerUID, true];
 
-							_tmpbuilt setVariable ["ownerPUID", dayz_playerUID, true];
+						if (_isPole) then {
 
-							if (_isPole) then {
+							_friendsArr = [[dayz_playerUID, toArray (name player)]];
+							_tmpbuilt setVariable ["plotfriends", _friendsArr, true];
 
-								_friendsArr = [[dayz_playerUID, toArray (name player)]];
-								_tmpbuilt setVariable ["plotfriends", _friendsArr, true];
-
-								PVDZ_obj_Publish = [dayz_characterID, _tmpbuilt, [_dir, _position, dayz_playerUID, _vector], _friendsArr, player, dayz_authKey];
-							} else {
-								PVDZ_obj_Publish = [dayz_characterID, _tmpbuilt, [_dir, _position, dayz_playerUID, _vector], [], player, dayz_authKey];
-							};
+							PVDZ_obj_Publish = [dayz_characterID, _tmpbuilt, [_dir, _position, dayz_playerUID, _vector], _friendsArr, player, dayz_authKey];
 						} else {
-							PVDZ_obj_Publish = [dayz_characterID, _tmpbuilt, [_dir, _position, _vector], [], player, dayz_authKey];
+							PVDZ_obj_Publish = [dayz_characterID, _tmpbuilt, [_dir, _position, dayz_playerUID, _vector], [], player, dayz_authKey];
 						};
-
 						publicVariableServer "PVDZ_obj_Publish";
 					};
 				};

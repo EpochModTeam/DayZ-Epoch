@@ -70,14 +70,8 @@ _targetType = if(typeOf _target in DZE_DoorsLocked) then { "DOOR"; } else { "GEN
 // and check if player is owner of target object
 _playerUID = getPlayerUID _player;
 _characterID = player getVariable ["CharacterID","0"];
-if (DZE_permanentPlot) then {
-	_targetOwnerUID = if (isPlayer _target) then { getPlayerUID _target } else { _target getVariable ["ownerPUID","0"] };
-	_isOwner = (_playerUID == _targetOwnerUID);
-} else {
-	_targetOwnerUID = _target getVariable ["characterID","0"];
-	_isOwner = (_characterID == _targetOwnerUID);
-};
-
+_targetOwnerUID = if (isPlayer _target) then { getPlayerUID _target } else { _target getVariable ["ownerPUID","0"] };
+_isOwner = (_playerUID == _targetOwnerUID);
 
 // determine _players friends (tagged)
 // and check if owner of _target is tagged friendly
@@ -92,14 +86,8 @@ _nearestPlot = _plotcheck select 2;
 if(_isNearPlot) then {
 	// determine plot owner
 	// and check if player is owner of plot
-	if (DZE_permanentPlot) then {
-		_plotOwnerUID = _nearestPlot getVariable ["ownerPUID","0"];
-		_isPlotOwner = (_playerUID == _plotOwnerUID);
-	} else {
-		_plotOwnerUID = _nearestPlot getVariable ["characterID","0"];
-		_isPlotOwner = (_characterID == _plotOwnerUID);
-	};
-	
+	_plotOwnerUID = _nearestPlot getVariable ["ownerPUID","0"];
+	_isPlotOwner = (_playerUID == _plotOwnerUID);
 	
 	// determine plot friends
 	// and check if player is one of them

@@ -71,11 +71,6 @@ s_player_maint_build	= 1;
 local _objOwnerID	= _obj getVariable["ownerPUID","0"];
 local _isOwnerOfObj	= (_objOwnerID == dayz_playerUID);
 
-if (!DZE_permanentPlot) then {
-	_objOwnerID	= _obj getVariable["CharacterID","0"];
-	_isOwnerOfObj	= (_objOwnerID == dayz_characterID);
-};
-
 local _objectID		= _obj getVariable ["ObjectID","0"];
 local _objectUID	= _obj getVariable ["ObjectUID","0"];
 local _hasNoID		= (_objectID == "0" && _objectUID == "0");

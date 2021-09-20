@@ -121,18 +121,11 @@ if (_isNearPlot > 0) then {
 	if (dayz_characterID == _ownerID) then {
 		_canBuild = true;
 	} else {
-		if (DZE_permanentPlot) then {
-			local _accessCheck	= [player, _nearestPole] call FNC_check_access;
-			local _isowner		= _accessCheck select 0;
-			local _isfriendly	= ((_accessCheck select 1) || (_accessCheck select 3));
-			if (_isowner || _isfriendly) then {
-				_canBuild = true;
-			};
-		} else {
-			local _friendlies = player getVariable ["friendlyTo",[]];
-			if (_ownerID in _friendlies) then {
-				_canBuild = true;
-			};
+		local _accessCheck	= [player, _nearestPole] call FNC_check_access;
+		local _isowner		= _accessCheck select 0;
+		local _isfriendly	= ((_accessCheck select 1) || (_accessCheck select 3));
+		if (_isowner || _isfriendly) then {
+			_canBuild = true;
 		};
 	};
 };

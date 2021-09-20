@@ -77,18 +77,13 @@ if (_isStorage) then {
 	_object setVectorDirAndUp _vector;
 	_object setPosATL _location;
 	_object setVariable ["memDir",_dir,true];
-
-	if (DZE_permanentPlot) then {
-		_ownerID = _cursorTarget getVariable["ownerPUID","0"];
-		_object setVariable ["ownerPUID",_ownerID,true];
-		_doorFriends = _cursorTarget getVariable ["doorfriends",[]];
-		if (isNil "_ownerID" || _ownerID == "0") then {_ownerID = dayz_playerUID;};
-		if (count _doorFriends == 0) then {_doorFriends = [[dayz_playerUID,toArray (name player)]];};
-		_object setVariable ["doorfriends",_doorFriends,true];
-		PVDZE_obj_Swap = [DZE_Lock_Door,_object,[_dir,_location,_ownerID,_vector],_typeOf,_cursorTarget,player,_doorFriends,dayz_authKey];
-	} else {
-		PVDZE_obj_Swap = [DZE_Lock_Door,_object,[_dir,_location,_vector],_typeOf,_cursorTarget,player,[],dayz_authKey];
-	};
+	_ownerID = _cursorTarget getVariable["ownerPUID","0"];
+	_object setVariable ["ownerPUID",_ownerID,true];
+	_doorFriends = _cursorTarget getVariable ["doorfriends",[]];
+	if (isNil "_ownerID" || _ownerID == "0") then {_ownerID = dayz_playerUID;};
+	if (count _doorFriends == 0) then {_doorFriends = [[dayz_playerUID,toArray (name player)]];};
+	_object setVariable ["doorfriends",_doorFriends,true];
+	PVDZE_obj_Swap = [DZE_Lock_Door,_object,[_dir,_location,_ownerID,_vector],_typeOf,_cursorTarget,player,_doorFriends,dayz_authKey];
 
 	publicVariableServer "PVDZE_obj_Swap";
 };

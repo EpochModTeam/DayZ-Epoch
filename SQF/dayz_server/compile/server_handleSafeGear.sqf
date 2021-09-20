@@ -74,7 +74,7 @@ call {
 		_holder setVariable ["ObjectUID",_objectUID,true];
 		_holder setVariable ["OEMPos",_pos,true];
 		_holder setDamage _damage;
-		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};
+		_holder setVariable ["ownerPUID",_ownerID,true];
 		if (_isZSC && {_unlockedClass in DZE_MoneyStorageClasses}) then {_holder setVariable ["cashMoney",_coins,true];};
 		deleteVehicle _obj;
 
@@ -102,7 +102,7 @@ call {
 		_holder setVariable ["ObjectUID",_objectUID,true];
 		_holder setVariable ["OEMPos",_pos,true];
 		_holder setDamage _damage;
-		if (DZE_permanentPlot) then {_holder setVariable ["ownerPUID",_ownerID,true];};
+		_holder setVariable ["ownerPUID",_ownerID,true];
 		if (_isZSC && {_lockedClass in DZE_MoneyStorageClasses}) then {_holder setVariable ["cashMoney",_coins,true];};
 		deleteVehicle _obj;
 

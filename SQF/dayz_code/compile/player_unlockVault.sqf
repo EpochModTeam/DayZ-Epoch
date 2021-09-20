@@ -24,7 +24,7 @@ _text = getText (configFile >> "CfgVehicles" >> _objType >> "displayName");
 
 _ownerID = _obj getVariable["CharacterID","0"];
 _ComboMatch = (_ownerID == dayz_combination);
-if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
+_ownerID = _obj getVariable["ownerPUID","0"];
 
 if (isNil "dayz_UnlockTime") then {dayz_UnlockTime = 5;};
 if (DZE_lockablesHarderPenalty && {((diag_tickTime - dayz_lastCodeFail) + dayz_unlockTime / 2) > 120}) then {dayz_UnlockTime = 5;};

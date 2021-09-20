@@ -135,16 +135,9 @@ if (count _upgrade > 0) then {
 			_object setDamage _damageNew;
 		};
 
-		if (DZE_permanentPlot) then {
-
-			local _ownerID = _obj getVariable["ownerPUID", "0"];
-			_object setVariable ["ownerPUID", _ownerID, true];
-
-			PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _position, dayz_playerUID, _vector], _classname, _obj, player, [], dayz_authKey];
-		} else {
-			PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _position, _vector], _classname, _obj, player, [], dayz_authKey];
-		};
-
+		local _ownerID = _obj getVariable["ownerPUID", "0"];
+		_object setVariable ["ownerPUID", _ownerID, true];
+		PVDZE_obj_Swap = [_objectCharacterID, _object, [_dir, _position, dayz_playerUID, _vector], _classname, _obj, player, [], dayz_authKey];
 		publicVariableServer "PVDZE_obj_Swap";
 		player reveal _object;
 

@@ -106,18 +106,14 @@ _maintain = {
 			_message1 = format[localize "STR_EPOCH_PLOTMANAGEMENT_OBJECTS_MAINTAINED_FAILED",_count,_itemText,""];
 		};
 
-		if (DZE_permanentPlot) then {
-			disableSerialization;
+		disableSerialization;
 
-			_plotDialog = findDisplay 711194;
-			_line1 = _plotDialog displayCtrl 7012;
-			_line2 = _plotDialog displayCtrl 7013;
-			_message2 = " ";
-			_line1 ctrlSetText _message1;
-			_line2 ctrlSetText _message2;
-		} else {
-			_message1 call dayz_rollingMessages;
-		};
+		_plotDialog = findDisplay 711194;
+		_line1 = _plotDialog displayCtrl 7012;
+		_line2 = _plotDialog displayCtrl 7013;
+		_message2 = " ";
+		_line1 ctrlSetText _message1;
+		_line2 ctrlSetText _message2;
 	};
 };
 

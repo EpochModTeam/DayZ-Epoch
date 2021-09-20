@@ -29,8 +29,7 @@ local _ownerID		= _obj getVariable["CharacterID","0"];
 local _objectID		= _obj getVariable["ObjectID","0"];
 local _objectUID	= _obj getVariable["ObjectUID","0"];
 local _ComboMatch	= (_ownerID == dayz_combination);
-
-if (DZE_permanentPlot) then {_ownerID = _obj getVariable["ownerPUID","0"];};
+_ownerID = _obj getVariable["ownerPUID","0"];
 
 if (_objectID == "0" && _objectUID == "0") exitWith {
 	dayz_actionInProgress = false;
