@@ -155,16 +155,8 @@
 	class z_new_worker4 : z_new_worker_base {
 		hiddenSelectionsTextures[] = {"z\addons\dayz_communityassets\zeds\overall\Overall_4_co.paa"};
 	};
-	/*
-	class z_policeman;
-	class z_new_policeman : z_policeman {
-		hiddenSelectionsTextures[] = {"\z\addons\dayz_communityassets\zeds\villager\villager_co.paa"};
+	class z_new_garbageman : z_new_worker_base {
+		displayName = $STR_ZNAME_GARBAGEMAN;
+		zombieLoot = ZombieCivilianViral;
+		hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\male\garbageman.paa"};
 	};
-	class z_new_policeman : z_policeman {
-		hiddenSelectionsTextures[] = {"\z\addons\dayz_communityassets\zeds\policeman\policeman_co.paa"};
-		
-		class Eventhandlers {
-			init = "(_this select 0) setObjectTexture [0, '\z\addons\dayz_communityassets\zeds\policeman\policeman_co.paa'];";
-        };
-	};
-	*/

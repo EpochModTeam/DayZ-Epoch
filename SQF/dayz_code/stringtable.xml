@@ -14608,6 +14608,14 @@
 			<German>Infizierter Held</German>
 			<Russian>Инфицированный герой</Russian>
 		</Key>
+		<Key ID="STR_ZNAME_PARAMEDIC">
+			<English>Infected Paramedic</English>
+			<German>Infizierter Sanitäter</German>
+		</Key>
+		<Key ID="STR_ZNAME_GARBAGEMAN">
+			<English>Viral Infected Garbage Man</English>
+			<German>Viral Infizierter Müllmann</German>
+		</Key>		
 	</Package>
 	<Package name="construction">
 		<Key ID="STR_BLD_name_ItemWorkBench">

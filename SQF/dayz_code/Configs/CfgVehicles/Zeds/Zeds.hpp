@@ -2045,3 +2045,9 @@ class z_hero4 : z_hero1 {
 class z_hero5 : z_hero1 {
 	HiddenSelectionsTextures[] = {"\Ca\Characters_PMC\PMC_soldier\Data\bauer_5_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\Bauer_Gear_3_co.paa","\Ca\Characters_PMC\PMC_soldier\Data\HeadGear_CO.paa"};	
 };
+
+class z_paramedic : z_firefighter1 { 
+	displayName = $STR_ZNAME_PARAMEDIC;
+	zombieLoot = ZombieDoctor;
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\male\paramedic.paa"};
+};

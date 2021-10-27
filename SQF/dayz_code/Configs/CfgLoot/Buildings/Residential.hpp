@@ -35,6 +35,7 @@ class Residential : Default
 		"z_firefighter3",
 		"z_firefighter4",
 		"z_firefighter5",
+		"z_paramedic",
 		"z_postman1",
 		"z_postman2",
 		"z_postman3",
@@ -54,7 +55,8 @@ class Residential : Default
 		"z_prisoner3",
 		"z_mafiaboss",
 		"z_dealer",
-		"z_suit6"			
+		"z_suit6",
+		"z_new_garbageman"
 	};
 	lootChance = 0.5;
 	lootGroup = Residential;

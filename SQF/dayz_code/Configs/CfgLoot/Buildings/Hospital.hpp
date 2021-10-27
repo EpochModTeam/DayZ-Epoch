@@ -3,7 +3,7 @@ class Hospital : Default
 	zombieChance = 0.4;
 	minRoaming = 2;
 	maxRoaming = 4;
-	zombieClass[] = {"z_doctor","z_doctor","z_doctor"};
+	zombieClass[] = {"z_doctor","z_doctor","z_doctor","z_paramedic"};
 	lootChance = 0.4;
 	lootGroup = Hospital;
 };
