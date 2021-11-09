@@ -1308,6 +1308,11 @@ UralSupply_TK_EP1_DZE1
 UralSupply_TK_EP1_DZE2
 UralSupply_TK_EP1_DZE3
 UralSupply_TK_EP1_DZE4
+UralRefuel_CDF_DZE
+UralRefuel_CDF_DZE1
+UralRefuel_CDF_DZE2
+UralRefuel_CDF_DZE3
+UralRefuel_CDF_DZE4
 UralRefuel_INS_DZE
 UralRefuel_INS_DZE1
 UralRefuel_INS_DZE2
