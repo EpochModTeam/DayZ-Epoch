@@ -57,7 +57,7 @@ if (isServer) then {
 
 	// Epoch Additions
 	DZE_safeVehicle = ["ParachuteWest","ParachuteC"];
-	DZE_isLockedStorageUpgrade = ["VaultStorage2Locked","LockboxStorage2Locked","LockboxStorage2WinterLocked"];
+	DZE_isLockedStorageUpgrade = ["VaultStorage2Locked","LockboxStorage2Locked","LockboxStorageWinter2Locked"];
 };
 
 /**************Variables Compiled on Clients Only**************/
