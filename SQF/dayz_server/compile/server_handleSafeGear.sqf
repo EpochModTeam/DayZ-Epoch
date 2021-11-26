@@ -118,7 +118,7 @@ call {
 		_weapons = getWeaponCargo _obj;
 		_magazines = getMagazineCargo _obj;
 		_backpacks = getBackpackCargo _obj;
-		if (_isZSC && {_packedClass in DZE_MoneyStorageClasses}) then {_coins = _obj getVariable ["cashMoney",0];};
+		if (_isZSC) then {_coins = _obj getVariable ["cashMoney",0];};
 
 		_holder = _packedClass createVehicle [0,0,0];
 		deleteVehicle _obj;
@@ -126,7 +126,7 @@ call {
 		_holder setPosATL _pos;
 		_holder addMagazineCargoGlobal [getText(configFile >> "CfgVehicles" >> _packedClass >> "seedItem"),1];
 		[_weapons,_magazines,_backpacks,_holder] call fn_addCargo;
-		if (_isZSC && {_packedClass in DZE_MoneyStorageClasses && {_coins > 0}}) then {
+		if (_isZSC && {_coins > 0}) then {
 			private "_displayName";
 
 			_displayName = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
