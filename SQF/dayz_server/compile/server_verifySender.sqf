@@ -20,7 +20,7 @@ _exitReason = call {
 	//If object or player is null distance returns 9999+
 	//If object or player was moved with setPos on client, position takes a second to update on server
 	//Coordinates can be used in place of object
-	if (_objPos distance _player > (Z_VehicleDistance + 10)) exitwith {
+	if (_objPos distance getPosATL _player > (Z_VehicleDistance + 10)) exitwith {
 		format["%1 error: Verification failed, player is too far from object. Distance: %2m/%3m limit PV ARRAY: %4",_function,round (_objPos distance _player),Z_VehicleDistance + 10,_params]
 	}; 
 	if (_index < 0) exitwith {
