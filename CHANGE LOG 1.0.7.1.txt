@@ -23,6 +23,11 @@
 [ADDED] Wood Stairs with rails as item. (5feb96318) @Victor-the-Cleaner
 [ADDED] Colored helpers to modular objects when deconstruct, remove, upgrade, downgrade, maintain or pack. (58c4a4d1f) @Victor-the-Cleaner
 [ADDED] New deconstruct scroll option. If DZE_refundModular is enabled it refunds all modular objects. Changes can be made in the configVariables.sqf. (58c4a4d1f) @Victor-the-Cleaner
+[ADDED] BigEgg's Restrict Building mod is part of Epoch now. (db4a417f3) @Victor-the-Cleaner 
+[ADDED] New DZE_buildOnWater config variable to allow building in or over sea water. (adc17d4ec) @Victor-the-Cleaner 
+[ADDED] New base building hotkeys (c4a2e1b88) @Victor-the-Cleaner 
+[ADDED] 23 New base building items: Heavy Bag Fence, Heavy Bag Fence (Corner), Heavy Bag Fence (Round),Sandbag Cube (5x Curved), Sandbag Nest (Large), Warfare Barrier 5x, Warfare Barrier 10x, Warfare Barrier 10x (Tall), Wire Fencing, Barbed Gate (Fortified), Footbridge (Simple), Footbridge (Wooden), Windbreak, Concrete Barrier, Concrete Barrier (Striped), Concrete Wall, Concrete Pipe, Dragon's Teeth, Dragon's Teeth (Large), Metal Container (Red, White, Green), Metal Container 2x (Red). (d744d995e) @Victor-the-Cleaner 
+[ADDED] Garbage Man and Paramedic as zombies. (9dde58abb) @DeVloek, @AirwavesMan
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Snappoints got improved. (f68e92d5) @worldwidesorrow
 [UPDATED] Replace M240 Nest ghost preview with the actual game object as preview. (ff05cb9cb) @ZzBombardierzZ, @AirwavesMan
@@ -37,6 +42,14 @@
 [UPDATED] If a plot pole is removed, the plot boundary helpers will now be deleted too. (58c4a4d1f) @Victor-the-Cleaner
 [UPDATED] Removed non-lockable storage objects will now refund their contents. (58c4a4d1f) @Victor-the-Cleaner
 [UPDATED] The way how the DZE_modularConfig variable works has changed. More in the configVariables.sqf. (58c4a4d1f) @Victor-the-Cleaner
+[UPDATED] Snapping point helpers are now local again for improved network performance. (16361e546) @Victor-the-Cleaner
+[UPDATED] Many more objects may now be snapped to other objects. (abbedc7dd) @Victor-the-Cleaner
+[UPDATED] All buildable objects are now measured from their model center to the plot pole center when checking distance. (adc17d4ec) @Victor-the-Cleaner
+[UPDATED] Snapping points overhaul for improved precision and consistency. (abbedc7dd) @Victor-the-Cleaner
+[UPDATED] Plot boundary markers now position correctly over water, and will not display underwater or below ground. (c2b3e817b) @Victor-the-Cleaner
+[UPDATED] Fireplaces can no longer be placed underground. (d744d995e) @Victor-the-Cleaner
+[UPDATED] Steel Beams can now be crafted into 6 x Scrap Metal. (d744d995e) @Victor-the-Cleaner
+[UPDATED] Rusty Sheet Metal can now be crafted into Sheet Metal. (d744d995e) @Victor-the-Cleaner
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -69,7 +82,21 @@
 [FIXED] SD weapons with Stanag and AK ammo and an PSO or ACOG scope were inaccurate at a smaller distance. (4f7f052a5) @AirwavesMan
 [FIXED] Wrong ACOG zeroing of the Scar AK. (0f51c62dc) @AirwavesMan
 [FIXED] Wrong battery descriptions. (1ec971e83) @AirwavesMan
+[FIXED] Prevent objects flipping over when pitched +/-90 degrees then released. (16361e546) @Victor-the-Cleaner
+[FIXED] Prevent certain vectored objects from erroneously changing position after building. (16361e546) @Victor-the-Cleaner
+[FIXED] Sometimes object positions were not correctly saved to the database. (adc17d4ec) @Victor-the-Cleaner
+[FIXED] Vectored objects rotated sometimes incorrectly when snapping was enabled. (16361e546) @Victor-the-Cleaner
+[FIXED] Snapping points and other helpers were not positioned correctly in or over water. (16361e546) @Victor-the-Cleaner
+[FIXED] A collision check while building now prevents the player from being knocked across the map. (adc17d4ec) @Victor-the-Cleaner
+[FIXED] Sometimes Snapping did not correctly detected the nearest point between all base objects in range and all available points on the current object. (16361e546) @Victor-the-Cleaner
+[FIXED] No unload config error from RscStandardDisplay class. (608af0743) @iben
+[FIXED] Visual glitch on loading screen. (608af0743) @iben
+[FIXED] Upgrading a winter lockbox leaded into a wiped lockbox inventory. (31fef08e7) @AirwavesMan
+[FIXED] Safe coins refund when packing (9f8af554d) @Luka
 [REMOVED] gsc_cloth_loner_head_DZ model and Skin_gsc_cloth_loner_head_DZ due to model issues. (b1e77a39) @seelenapparat, @AirwavesMan
 [REMOVED] DZE_permanentPlot variable and checks. (5aba5d7dd, 9ecdb21dd) @AirwavesMan
+[REMOVED] Ghost previews for Razor Wire, Sandbag Nest, and HBarrier Cubes due to inaccurate geometry. (d744d995e) @Victor-the-Cleaner
+[REMOVED] DZE_modularBuild variable. (16361e546) @Victor-the-Cleaner
+
 
 [INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ
