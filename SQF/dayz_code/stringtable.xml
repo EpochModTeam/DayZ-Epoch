@@ -23052,12 +23052,12 @@
 			<Czech>Stavba zrušena.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_47">
-			<English>Canceled construction of %1, %2.</English>
-			<German>Bau von %1, %2 abgebrochen.</German>
-			<Russian>Отменено строительство %1, %2.</Russian>
-			<Dutch>Gestopt met het bouwen van %1, %2.</Dutch>
-			<French>La construction de %1, %2 est annulée.</French>
-			<Czech>Stavba %1, %2 byla zrušena.</Czech>
+			<English>Canceled construction of %1.&lt;br/&gt;%2</English>
+			<German>Bau von %1 abgebrochen.&lt;br/&gt;%2</German>
+			<Russian>Отменено строительство %1.&lt;br/&gt;%2</Russian>
+			<Dutch>Gestopt met het bouwen van %1.&lt;br/&gt;%2</Dutch>
+			<French>La construction de %1 est annulée.&lt;br/&gt;%2</French>
+			<Czech>Stavba %1 byla zrušena.&lt;br/&gt;%2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_48">
 			<English>Downgrade is already in progress.</English>
@@ -29416,7 +29416,7 @@
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_ROUND">
 			<English>Sandbag Fence (Round)</English>
-			<German>Sandsack(rund)</German>
+			<German>Sandsack (rund)</German>
 			<Russian>Ограждение из мешков (круг)</Russian>
 		</Key>
 		<Key ID="STR_EQUIP_NAME_21_NEST">
@@ -32918,83 +32918,149 @@
 			<German>Ein kaputter Schraubenschlüssel, welcher repariert werden muss.</German>
 			<Russian>Сломанный гаечный ключ, который необходимо отремонтировать.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE">
-			<English>Disabled:</English>
-			<German>Deaktiviert:</German>
-			<Russian>Деактивировано:</Russian>
+		<Key ID="STR_EPOCH_ACTION_SNAP_POINT_AUTO">
+			<English>Auto</English>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_DISABLE_MSG">
-			<English>Use action menu to enable.</English>
-			<German>Benutzte das Scrollmenü zum Aktivieren.</German>
-			<Russian>Используйте прокрутку для активации.</Russian>
+		<Key ID="STR_EPOCH_TUT_DISABLED">
+			<English>Disabled</English>
+			<German>Deaktiviert</German>
+			<Russian>Деактивировано</Russian>			
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ENABLE">
-			<English>Enabled:</English>
-			<German>Aktiviert:</German>
-			<Russian>Активировано:</Russian>
+		<Key ID="STR_EPOCH_TUT_SNAPPING">
+			<English>Snapping</English>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ENABLE_MSG">
-			<English>Use action menu to disable.</English>
-			<German>Benutzte das Scrollmenü zum Deaktivieren.</German>
-			<Russian>Используйте прокрутку для деактивации.</Russian>
+		<Key ID="STR_EPOCH_TUT_DISTANCE">
+			<English>Distance from plot</English>
+			<German>Distanz zur Grundstückmarkierung</German>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_AUTO_DETECT">
-			<English>Automatic snap point detection.</English>
-			<German>Das Snapping findet automatisch den nächsten Snap-Punkt.</German>
-			<Russian>Автоматическое определение точек привязки.</Russian>
+		<Key ID="STR_EPOCH_TUT_RADIUS">
+			<English>Radius</English>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_MANUAL_DETECT">
-			<English>Select your preferred snap point.</English>
-			<German>Wähle selbstständig den nächsten Snap-Punkt.</German>
-			<Russian>Выберите необходимую точку привязки.</Russian>
+		<Key ID="STR_EPOCH_TUT_PITCH">
+			<English>Pitch</English>
+			<German>Vorneigen </German>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_PGUPPGDOWN">
-			<English>[PgUP / PgDOWN]</English>
-			<German>[Bild Auf / Bild Ab].</German>
+		<Key ID="STR_EPOCH_TUT_BANK">
+			<English>Bank</English>
+			<German>Zurückneigen</German>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_PGUPPGDOWN_MSG">
-			<English>Adjust height of object by 10cm.</English>
-			<German>Passt die Höhe des Objektes um 10cm an.</German>
-			<Russian>Настройка высоты (10 см).</Russian>
+		<Key ID="STR_EPOCH_TUT_ROTATE">
+			<English>Rotate</English>
+			<German>Rotieren</German>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ALT_PGUPPGDOWN">
-			<English>[Alt] + [PgUP / PgDOWN]</English>
-			<German>[Alt] + [Bild Auf / Bild Ab].</German>
+		<Key ID="STR_EPOCH_TUT_DEGREES">
+			<English>Degrees</English>
+			<German>Grad</German>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ALT_PGUPPGDOWN_MSG">
-			<English>Adjust height of object by 1m.</English>
-			<German>Passt die Höhe des Objektes um 1m an.</German>
-			<Russian>Настройка высоты (1 м).</Russian>
+		<Key ID="STR_EPOCH_TUT_KEY_TAB">
+			<English>Tab</English>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_CTRL_PGUPPGDOWN">
-			<English>[Ctrl] + [PgUP / PgDOWN]</English>
-			<German>[Strg] + [Bild Auf / Bild Ab].</German>
+		<Key ID="STR_EPOCH_TUT_KEY_SHIFT">
+			<English>Shift</English>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_CTRL_PGUPPGDOWN_MSG">
-			<English>Adjust height of object by 1cm.</English>
+		<Key ID="STR_EPOCH_TUT_KEY_PGUP">
+			<English>PgUp</English>
+			<German>Bild Auf</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_KEY_PGDN">
+			<English>PgDn</English>
+			<German>Bild Ab</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_KEY_CTRL">
+			<English>Ctrl</English>
+			<German>Strg</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_KEY_ALT">
+			<English>Alt</English>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_KEY_ARROWS">
+			<English>Arrow Keys</English>
+			<German>Pfeiltasten</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_KEY_ESC">
+			<English>Esc</English>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_KEY_BACKSPACE">
+			<English>Backspace</English>
+			<German>Rücktaste</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_KEY_SPACEBAR">
+			<English>Space Bar</English>
+			<German>Leertaste</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_SNAP_NEXT_PREV">
+			<English>Snap Next / Prev Object</English>
+			<German>Snap Nächstes / Vorheriges Objekt</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_HEIGHT1">
+			<English>Adjust height by 1cm</English>
 			<German>Passt die Höhe des Objektes um 1cm an.</German>
 			<Russian>Настройка высоты (1 см).</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ROTATE180_MSG">
-			<English>Rotate object 180 degrees while holding.</English>
-			<German>Dreht das Objekt um 180 Grad.</German>
-			<Russian>Вращение на 180 градусов.</Russian>
+		<Key ID="STR_EPOCH_TUT_HEIGHT10">
+			<English>Adjust height by 10cm</English>
+			<German>Passt die Höhe des Objektes um 10cm an.</German>
+			<Russian>Настройка высоты (10 см).</Russian>			
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_ROTATE45_MSG">
-			<English>Rotate object 45 degrees while holding.</English>
-			<German>Dreht das Objekt um 45 Grad.</German>
-			<Russian>Вращение на 45 градусов.</Russian>
+		<Key ID="STR_EPOCH_TUT_HEIGHT100">
+			<English>Adjust height by 1m</English>
+			<German>Passt die Höhe des Objektes um 1m an.</German>
+			<Russian>Настройка высоты (100 см).</Russian>			
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_DROP_MSG">
-			<English>Drop / Pick up object.</English>
-			<German>Objekt feststellen / aufnehmen.</German>
+		<Key ID="STR_EPOCH_TUT_ADJ_DEGREES">
+			<English>Adjust Degrees</English>
+			<German>Grad anpassen</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_LOCAL">
+			<English>Local Mode</English>
+			<German>Lokaler Modus</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_LOCAL_ON">
+			<English>ON</English>
+			<German>AN</German>
+			<Russian>ВКЛ</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_LOCAL_OFF">
+			<English>OFF</English>
+			<German>AUS</German>
+			<Russian>ВЫКЛ</Russian>			
+		</Key>
+		<Key ID="STR_EPOCH_TUT_TERRAIN">
+			<English>Terrain Align</English>
+			<German>Bodenausrichtung</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_BOUNDARY">
+			<English>Plot Boundary</English>
+			<German>Grundstücksgrenze</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_RELEASE_HOLD">
+			<English>Release / Hold</English>
+			<German>Objekt feststellen / aufnehmen</German>
 			<Russian>Бросить / Поднять.</Russian>
 		</Key>
-		<Key ID="STR_EPOCH_SNAP_TUTORIAL_F_SNAP_MSG">
-			<English>Snap / Pick up object.</English>
-			<German>Objekt snappen / aufnehmen.</German>
-			<Russian>Прикрепить / Открепить.</Russian>
+		<Key ID="STR_EPOCH_TUT_HIDE_PANEL">
+			<English>Hide Panel</English>
+			<German>Snap-Info ausschalten</German>
 		</Key>
+		<Key ID="STR_EPOCH_TUT_CANCEL">
+			<English>Cancel</English>
+			<German>Abbrechen</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_RESET">
+			<English>Reset</English>
+			<German>Zurücksetzen</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_BUILD">
+			<English>Build</English>
+			<German>Bauen</German>
+		</Key>
+		<Key ID="STR_EPOCH_TUT_ADJ_DEGREES_KEYS">
+			<English>[-] [=] </English>
+			<German>[ß] [´] </German>
+		</Key>	
+		<Key ID="STR_EPOCH_BUILD_UI_SNAP">
+			<English>Snap</English>
+		</Key>		
 		<Key ID="STR_EPOCH_ACTION_SNAP_ON">
 			<English>ON</English>
 			<German>AN</German>
@@ -33067,6 +33133,14 @@
 			<English>Back Right</English>
 			<German>Hinten Rechts</German>
 		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_BACK_TOP">
+			<English>Back Top</English>
+			<German>Hinten Oben</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_TOP">
+			<English>Front Top</English>
+			<German>Vorne Oben</German>
+		</Key>		
 		<Key ID="STR_EPOCH_ACTION_SNAP_FRONT_CENTER">
 			<English>Front Center</English>
 			<German>Vorne Mitte</German>
@@ -33147,7 +33221,7 @@
 			<English>DEGREES:</English>
 			<German>Grad:</German>
 			<Russian>УГЛЫ:</Russian>
-		</Key>
+		</Key>		
 		<Key ID="STR_UI_STATUS_VANILLA">
 			<English>Vanilla</English>
 			<Russian>Обычный</Russian>
@@ -34908,7 +34982,401 @@
 			<English>You moved too fast!</English>
 			<German>Du hast dich zu schnell bewegt!</German>
 			<Russian>Вы ушли слишком быстро!</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_COLLISION_01">
+			<English>You let go of the %1.</English>
+			<German>Du hast dich zu schnell bewegt!</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_01">
+			<English>%1 cannot be placed %2.</English>
+			<German>%1 kann nicht %2 platziert werden.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_02">
+			<English>below ground</English>
+			<German>unter der Erde</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_NO_UGROUND_03">
+			<English>below sea level</English>
+			<German>unter Wasser</German>
+		</Key>
+		<Key ID="STR_EPOCH_BUILD_FAIL_WATER">
+			<English>You are not allowed to build over sea water.</English>
+			<German>Du kannst nicht auf dem Wasser bauen!</German>
+		</Key>
+		<Key ID="STR_EPOCH_BEWARE_RISING_TIDE">
+			<English>&lt;br/&gt;** Beware! This location may be flooded during high tide. **</English>
+			<German>&lt;br/&gt;** Vorsicht! Diese Position kann bei Flut unter Wasser stehen. **</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLAYER_RES_ZONE">
+			<English>You cannot build within %1m of %2.&lt;br/&gt;Current distance: %3 meters.</English>
+			<German>Du kannst nicht innerhalb von %1m zu %2.&lt;br/&gt;Derzeitige Distanz: %3 Meter.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_RES_BUILDING">
+			<English>You cannot build within %1m of a %2.</English>
+			<German>Du kannst nicht innerhalb von %1m zu %2 bauen.</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLAYER_HBF">
+			<English>Craft Heavy Bag Fence</English>
+			<German>Schweren Sandsackzaun herstellen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_HBF">
+			<English>Heavy Bag Fence</English>
+			<German>Schwerer Sandsackzaun</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_HBF">
+			<English>Heavy Bag Fence: A buildable object that is used for fortification purposes.</English>
+			<German>Schwerer Sandsackzaun: Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_HBF_CORNER">
+			<English>Craft Heavy Bag Fence (Corner)</English>
+			<German>Schwerer Sandsackzaun (Ecke) herstellen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_HBF_CORNER">
+			<English>Heavy Bag Fence (Corner)</English>
+			<German>Schwerer Sandsackzaun (Ecke)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_HBF_CORNER">
+			<English>Heavy Bag Fence (Corner): A buildable object that is used for fortification purposes.</English>
+			<German>Schwerer Sandsackzaun (Ecke): Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_HBF_ROUND">
+			<English>Craft Heavy Bag Fence (Round)</English>
+			<German>Schwerer Sandsackzaun (Rund) herstellen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_HBF_ROUND">
+			<English>Heavy Bag Fence (Round)</English>
+			<German>Schwerer Sandsackzaun (Rund)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_HBF_ROUND">
+			<English>Heavy Bag Fence (Round): A buildable object that is used for fortification purposes.</English>
+			<German>Schwerer Sandsackzaun (Rund): Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_WBARRIER5">
+			<English>Craft Warfare Barrier 5x</English>
+			<German>Verteidigungsbarriere 5x herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_WBARRIER5_2">
+			<English>Build Warfare Barrier 5x</English>
+			<German>Verteidigungsbarriere 5x bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBARRIER5">
+			<English>Warfare Barrier 5x</English>
+			<German>Verteidigungsbarriere 5x</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBARRIER5">
+			<English>Warfare Barrier 5x: A buildable object that is used for fortification purposes.</English>
+			<German>Verteidigungsbarriere 5x: Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_WBARRIER10">
+			<English>Craft Warfare Barrier 10x</English>
+			<German>Verteidigungsbarriere 10x herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_WBARRIER10_2">
+			<English>Build Warfare Barrier 10x </English>
+			<German>Verteidigungsbarriere 10x  bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBARRIER10">
+			<English>Warfare Barrier 10x</English>
+			<German>Verteidigungsbarriere 10x</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBARRIER10">
+			<English>Warfare Barrier 10x: A buildable object that is used for fortification purposes.</English>
+			<German>Verteidigungsbarriere 10x: Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_WBARRIER10TALL">
+			<English>Craft Warfare Barrier 10x (Tall)</English>
+			<German>Verteidigungsbarriere 10x (Groß) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_WBARRIER10TALL_2">
+			<English>Build Warfare Barrier 10x (Tall)</English>
+			<German>Verteidigungsbarriere 10x (Groß) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBARRIER10TALL">
+			<English>Warfare Barrier 10x (Tall)</English>
+			<German>Verteidigungsbarriere 10x (Groß)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBARRIER10TALL">
+			<English>Warfare Barrier 10x (Tall): A buildable object that is used for fortification purposes.</English>
+			<German>Verteidigungsbarriere 10x (Groß): Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_HBARRIER5CURVED">
+			<English>Craft Sandbag Cube (5x H-barrier curved)</English>
+			<German>Sandsack (5x H-Barriere Gebogen) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_HBARRIER5CURVED_2">
+			<English>Build Sandbag Cube (5x H-barrier curved)</English>
+			<German>Sandsack (5x H-Barriere Gebogen) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_HBARRIER5CURVED">
+			<English>Sandbag Cube (5x H-barrier curved)</English>
+			<German>Sandsack (5x H-Barriere Gebogen)</German>
+			<Russian>Мешки с песком (5x H-barrier curved)</Russian>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_HBARRIER5CURVED">
+			<English>Hesco barrier: A buildable object that is used for fortification purposes.</English>
+			<German>Hesco Barriere(Schanzkorb): Ein Objekt, das zum Ausbau und zur Befestigung von Basen dient.</German>
+			<Russian>H-barrier: Большие кубические мешки наполненные песком.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_LARGENEST">
+			<English>Craft Large Sandbag Nest</English>
+			<German>Großes Sandsacknest herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_LARGENEST_2">
+			<English>Build Large Sandbag Nest</English>
+			<German>Großes Sandsacknest bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_LARGENEST">
+			<English>Sandbag Nest (Large)</English>
+			<German>Sandsacknest (Groß)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_LARGENEST">
+			<English>Sandbag Nest (Large): A buildable object that is used for fortification purposes.</English>
+			<German>Sandsacknest (Groß): Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_ACTION_CRAFT_FORT_WIRE">
+			<English>Craft Fortified Razor Wire</English>
+			<German>Befestigten Stacheldraht herstellen</German>
+		</Key>
+		<Key ID="STR_ACTION_BUILD_FORT_WIRE">
+			<English>Build Fortified Razor Wire</English>
+			<German>Befestigten Stacheldraht bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_FORT_WIRE">
+			<English>Wire Fencing (Fortified)</English>
+			<German>Stacheldraht (Befestigt)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_FORT_WIRE">
+			<English>Tank traps combined with razor wire to form military obstacles.</English>
+			<German>Panzerfallen kombiniert mit Stacheldraht.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_SIMPLE_FOOTBRIDGE">
+			<English>Craft Simple Footbridge</English>
+			<German>Fußgängerbrücke herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_SIMPLE_FOOTBRIDGE">
+			<English>Build Simple Footbridge</English>
+			<German>Fußgängerbrücke (Einfach) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE">
+			<English>Footbridge (Simple)</English>
+			<German>Fußgängerbrücke (Einfach)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_SIMPLE_FOOTBRIDGE">
+			<English>These three planks make a simple but reliable footbridge.</English>
+			<German>Drei Holzbalken, die eine einfache Fußgängerbrücke ergeben.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_WOODEN_FOOTBRIDGE">
+			<English>Craft Wooden Footbridge</English>
+			<German>Fußgängerbrücke (Holz) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_WOODEN_FOOTBRIDGE">
+			<English>Build Wooden Footbridge</English>
+			<German>Fußgängerbrücke (Holz) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WOODEN_FOOTBRIDGE">
+			<English>Footbridge (Wooden)</English>
+			<German>Fußgängerbrücke (Holz)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WOODEN_FOOTBRIDGE">
+			<English>A solid wooden footbridge used in base building.</English>
+			<German>Drei Holzbalken, die eine soldie Fußgängerbrücke ergeben.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_CNC_BARRIER">
+			<English>Craft Concrete Barrier</English>
+			<German>Betonbarriere herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_CNC_BARRIER">
+			<English>Build Concrete Barrier</English>
+			<German>Betonbarriere bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CNC_BARRIER">
+			<English>Concrete Barrier</English>
+			<German>Betonbarriere</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CNC_BARRIER">
+			<English>Designed for highway traffic, these cement dividers serve to protect from vehicular impact.</English>
+			<German>Eine Betonbarriere zum Schutz vor Fahrzeugen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_CNC_BARRIER_STRIPED">
+			<English>Craft Striped Concrete Barrier</English>
+			<German>Betonbarriere (Gestreift) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_CNC_BARRIER_STRIPED">
+			<English>Build Striped Concrete Barrier</English>
+			<German>Betonbarriere (Gestreift) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CNC_BARRIER_STRIPED">
+			<English>Concrete Barrier (Striped)</English>
+			<German>Betonbarriere (Gestreift)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CNC_BARRIER_STRIPED">
+			<English>Designed for perimeter security, these cement dividers serve to protect from vehicular impact.</English>
+			<German>Eine Betonbarriere zum Schutz vor Fahrzeugen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_CONCRETE_WALL">
+			<English>Craft Concrete Wall</English>
+			<German>Betonwand herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_CONCRETE_WALL">
+			<English>Build Concrete Wall</English>
+			<German>Betonwand bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CONCRETE_WALL">
+			<English>Concrete Wall</English>
+			<German>Betonwand</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CONCRETE_WALL">
+			<English>A cast-in-place concrete wall used in base building.</English>
+			<German>Betonwand: Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_CONCRETE_PIPE">
+			<English>Craft Concrete Pipe</English>
+			<German>Betonröhre herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_CONCRETE_PIPE">
+			<English>Build Concrete Pipe</English>
+			<German>Betonröhre bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CONCRETE_PIPE">
+			<English>Concrete Pipe</English>
+			<German>Betonröhre</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CONCRETE_PIPE">
+			<English>A cast-in-place concrete pipe used in base building.</English>
+			<German>Betonröhre: Zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_DRAGONTEETH">
+			<English>Craft Dragon's Teeth</English>
+			<German>Drachenzähne herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_DRAGONTEETH">
+			<English>Build Dragon's Teeth</English>
+			<German>Drachenzähne bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_DRAGONTEETH">
+			<English>Dragon's Teeth</English>
+			<German>Drachenzähne</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_DRAGONTEETH">
+			<English>Square pyramidal fortifications of reinforced concrete used to impede the movement of tanks and mechanised infantry.</English>
+			<German>Drachenzähne aus Beton zum Befestigen von Stellungen und zum Schutz vor Fahrzeugen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_DRAGONTEETH_BIG">
+			<English>Craft Large Dragon's Teeth</English>
+			<German>Drachenzähne (Groß) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_DRAGONTEETH_BIG">
+			<English>Build Large Dragon's Teeth</English>
+			<German>Drachenzähne (Groß) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_DRAGONTEETH_BIG">
+			<English>Dragon's Teeth (Large)</English>
+			<German>Drachenzähne (Groß)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_DRAGONTEETH_BIG">
+			<English>Large pyramidal fortifications of reinforced concrete used to impede the movement of tanks and mechanised infantry.</English>
+			<German>Große Drachenzähne aus Beton zum Befestigen von Stellungen und zum Schutz vor Fahrzeugen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_WOODEN_PALLET">
+			<English>Craft Wooden Pallet</English>
+			<German>Holzpallete herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_WINDBREAK">
+			<English>Craft Windbreak</English>
+			<German>Windbrecher herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_WINDBREAK">
+			<English>Build Windbreak</English>
+			<German>Windbrecher bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WINDBREAK">
+			<English>Windbreak</English>
+			<German>Windschutz</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WINDBREAK">
+			<English>Windbreaks reduce wind speeds over areas such as open fields, industrial stockpiles, and dusty industrial operations.</English>
+			<German>Ein Windschutz verringert die Windwirkung in Gebieten wie offene Felder, Industriehalden und staubigen Industriebetrieben.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_BARBED_GATE">
+			<English>Craft Barbed Gate</English>
+			<German>Stacheldrahttor herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_BARBED_GATE">
+			<English>Build Barbed Gate</English>
+			<German>Stacheldrahttor bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_BARBED_GATE">
+			<English>Barbed Gate</English>
+			<German>Stacheldrahttor</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_BARBED_GATE">
+			<English>A barbed metal gate to allow the passage of persons, vehicles and farm implements.</English>
+			<German>Ein Stacheldrahttor zum Befestigen von Stellungen.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A">
+			<English>Craft Metal Container (Red)</English>
+			<German>Metallcontainer (Red) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1A">
+			<English>Build Metal Container (Red)</English>
+			<German>Metallcontainer (Red) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1A">
+			<English>Metal Container (Red)</English>
+			<German>Metallcontainer (Red)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1A">
+			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
+			<German>Ein Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1B">
+			<English>Craft Metal Container (Green)</English>
+			<German>Metallcontainer (Grün) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1B">
+			<English>Build Metal Container (Green)</English>
+			<German>Metallcontainer (Grün) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1B">
+			<English>Metal Container (Green)</English>
+			<German>Metallcontainer (Grün)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1B">
+			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
+			<German>Ein Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
 		</Key>		
+		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G">
+			<English>Craft Metal Container (White)</English>
+			<German>Metallcontainer (Weiß) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1G">
+			<English>Build Metal Container (White)</English>
+			<German>Metallcontainer (Weiß) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_1G">
+			<English>Metal Container (White)</English>
+			<German>Metallcontainer (Weiß)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_1G">
+			<English>A metal container with strength suitable to withstand shipment, storage, and handling.</English>
+			<German>Ein Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
+		</Key>		
+		<Key ID="STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_2D">
+			<English>Craft Metal Container 2x (Red)</English>
+			<German>Metallcontainer 2x (Rot) herstellen</German>
+		</Key>
+		<Key ID="STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_2D">
+			<English>Build Metal Container 2x (Red)</English>
+			<German>Metallcontainer 2x (Rot) bauen</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_METAL_CONTAINER_2D">
+			<English>Metal Container 2x (Red)</English>
+			<German>Metallcontainer 2x (Rot)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_METAL_CONTAINER_2D">
+			<English>Stacked metal containers with strength suitable to withstand shipment, storage, and handling.</English>
+			<German>Ein gestapelter Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
+		</Key>	
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
