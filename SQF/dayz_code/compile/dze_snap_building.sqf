@@ -51,7 +51,7 @@ _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_CTRL" + _hpsp					+ localize "STR
 _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_ALT"  + _hpsp					+ localize "STR_EPOCH_TUT_HEIGHT100"		+ _NL;
 _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_ARROWS" + _BRW					+ _strPitch + " / " + _strBank			+ _NL;
 _HK = _HK + _ORA + "[Q] [E] "									+ _WHT + _strRotate				+ _NL;
-_HK = _HK + _ORA + "[-] [=] "									+ _WHT + localize "STR_EPOCH_TUT_ADJ_DEGREES"	+ _NL;
+_HK = _HK + _ORA + localize STR_EPOCH_TUT_ADJ_DEGREES_KEYS					+ _WHT + localize "STR_EPOCH_TUT_ADJ_DEGREES"	+ _NL;
 _HK = _HK + _spacing;
 _HK = _HK + _ORA + "[L] "									+ _WHT + localize "STR_EPOCH_TUT_LOCAL" + " [%1"+ _NL;
 _HK = _HK + _ORA + "[T] "									+ _VEC + localize "STR_EPOCH_TUT_TERRAIN"	+ _NL;
