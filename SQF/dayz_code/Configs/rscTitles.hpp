@@ -23,6 +23,7 @@ class RscXListBox;
 class RscShortcutButton;
 class RscHTML;
 class RscDisplayEmpty;
+class RscDisplayLoadMission;
 
 #include "CfgPlayerStats\defines.hpp"
 #include "CfgPlayerStats\p_cover.hpp"
@@ -160,6 +161,10 @@ class RscDisplayLoading
 				{
 					text = "z\addons\dayz_code\gui\loadingscreen.paa";
 				};
+				class HintBackground: RscText
+                {
+                    text = "";
+                };
 			};
 		};
 	};
@@ -169,7 +174,7 @@ class RscCompass : RscObject {
 	scale = 0.64;
 };
 
-class RscDisplayStart
+class RscDisplayStart: RscStandardDisplay
 {
 	class controls
 	{
@@ -177,6 +182,10 @@ class RscDisplayStart
 		{
 			text = "z\addons\dayz_code\gui\loadingscreen.paa";
 		};
+        class HintBackground: RscText
+        {
+            text = "";
+        };		
 	};
 };
 class RscDisplayGetReady;
@@ -786,7 +795,7 @@ class bloodTest
 #include "RscDisplay\includes.hpp"
 
 //Override BIS Loadscreen
-class RscDisplayLoadCustom
+class RscDisplayLoadCustom: RscDisplayLoadMission
 {
 	idd = -1;
 	onLoad = "uiNamespace setVariable ['BIS_loadingScreen',_this select 0];";
