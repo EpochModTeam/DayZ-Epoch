@@ -29177,6 +29177,7 @@
 		<Key ID="STR_EPOCH_WOODSTAIRSRAILS_DESC">
 			<English>Wooden stairs with supports and rails.</English>
 			<German>Eine Holztreppe mit verstärkten Balken und Geländer.</German>
+			<Russian>Деревянные ступеньки с опорами и перилами.</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WOODFLOORSTAIRS">
 			<English>Wood Floor w/ stairs</English>
@@ -33672,10 +33673,12 @@
 		<Key ID="STR_EPOCH_BLOODBAG_MUTANT">
 			<English>Mutant Blood</English>
 			<German>Mutantenblut</German>
+			<Russian>Кровь мутанта</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BLOODBAG_MUTANT_DESC">
 			<English>A blood bag filled with blood from a mutant.</English>
 			<German>Eine Blutkonserve gefüllt mit dem Blut eines Mutanten.</German>
+			<Russian>Пакет, наполненный кровью мутанта.</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_BLOODBAG_RABBIT">
 			<English>Rabbit Blood</English>
@@ -34639,138 +34642,172 @@
 		<Key ID="STR_EPOCH_WEAPON_PARTS_PISTOL">
 			<English>Gun parts (Pistol)</English>
 			<German>Waffenteile (Pistole)</German>
+			<Russian>Части пистолета</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_PISTOL_DESC">
 			<English>A pile of pistol gun parts.</English>
 			<German>Ein Haufen Waffenteile einer Pistole.</German>
+			<Russian>Кучка деталей для пистолета.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SMG">
 			<English>Gun parts (SMG)</English>
 			<German>Waffenteile (SMG)</German>
+			<Russian>Части пистолета-пулемёта</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SMG_DESC">
 			<English>A pile of smg gun parts.</English>
 			<German>Ein Haufen Waffenteile einer Maschinenpistole.</German>
+			<Russian>Кучка деталей для пистолета-пулемёта.</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SHOTGUN">
 			<English>Gun parts (Shotgun)</English>
 			<German>Waffenteile (Schrotflinte)</German>
+			<Russian>Части дробовика</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SHOTGUN_DESC">
 			<English>A pile of shotgun gun parts.</English>
 			<German>Ein Haufen Waffenteile einer Schrotflinte.</German>
+			<Russian>Кучка деталей для дробовика.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_RIFLE">
 			<English>Gun parts (Rifle)</English>
 			<German>Waffenteile (Gewehr)</German>
+			<Russian>Части винтовки</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_RIFLE_DESC">
 			<English>A pile of rifle gun parts.</English>
 			<German>Ein Haufen Waffenteile eines Gewehrs.</German>
+			<Russian>Кучка деталей для винтовки.</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SNIPERRIFLE">
 			<English>Gun parts (Sniper Rifle)</English>
 			<German>Waffenteile (Scharfschützengewehr)</German>
+			<Russian>Части снайперской винтовки</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_SNIPERRIFLE_DESC">
 			<English>A pile of sniper rifle gun parts.</English>
 			<German>Ein Haufen Waffenteile eines Scharfschützengewehrs.</German>
+			<Russian>Кучка деталей для снайперской винтовки.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_MG">
 			<English>Gun parts (MG)</English>
 			<German>Waffenteile (MG)</German>
+			<Russian>Части пулемёта</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_MG_DESC">
 			<English>A pile of mg gun parts.</English>
 			<German>Ein Haufen Waffenteile eines Maschinengewehrs.</German>
+			<Russian>Кучка деталей для пулемёта.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_UNKNOWN">
 			<English>Gun parts (Unknown)</English>
 			<German>Waffenteile (Unbekannt)</German>
+			<Russian>Части неизвестного оружия</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_UNKNOWN_DESC">
 			<English>A pile of unknown gun parts in a good condition.</English>
 			<German>Ein Haufen unbekannter Waffenteile, in einem guten Zustand.</German>
+			<Russian>Кучка деталей для какого-то оружия в хорошем состоянии.</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_BAD">
 			<English>Gun parts (Bad)</English>
 			<German>Waffenteile (Schlecht)</German>
+			<Russian>Части оружия (испорчены)</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_BAD_DESC">
 			<English>A pile of old gun parts in a bad condition.</English>
 			<German>Ein Haufen alter Waffenteile in einem schlechten Zustand.</German>
+			<Russian>Кучка деталей оружия в плохом состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_NORMAL">
 			<English>Gun parts (Average)</English>
 			<German>Waffenteile (Normal)</German>
+			<Russian>Части оружия (средние)</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_NORMAL_DESC">
 			<English>A pile of gun parts in an average condition.</English>
 			<German>Ein Haufen Waffenteile in einem durchschnittlichen Zustand.</German>
+			<Russian>Кучка деталей оружия в среднем состоянии.</Russian>
 		</Key>	
 		<Key ID="STR_EPOCH_WEAPON_PARTS_GOOD">
 			<English>Gun parts (Good)</English>
 			<German>Waffenteile (Gut)</German>
+			<Russian>Части оружия (хорошие)</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_GOOD_DESC">
 			<English>A pile of gun parts in a good condition.</English>
 			<German>Ein Haufen Waffenteile, in einem guten Zustand.</German>
+			<Russian>Кучка деталей оружия в хорошем состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_WEAPON_PARTS_EXCELLENT">
 			<English>Gun parts (Excellent)</English>
 			<German>Waffenteile (Exzellent)</German>
+			<Russian>Части оружия (отличные)</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_WEAPON_PARTS_EXCELLENT_DESC">
 			<English>A pile of gun parts in an excellent condition.</English>
 			<German>Ein Haufen Waffenteile, in einem exzellenten Zustand.</German>
+			<Russian>Кучка деталей оружия в отличном состоянии.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_SMALL">
 			<English>Gun Powder (Small)</English>
 			<German>Schießpulver (Klein)</German>
+			<Russian>Порох в маленькой банке</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_SMALL_DESC">
 			<English>A small can with gun powder. Used for crafting ammunition.</English>
 			<German>Eine kleine Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
+			<Russian>Небольшая банка с порохом. Используется для создания боеприпасов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER">
 			<English>Gun Powder</English>
 			<German>Schießpulver</German>
+			<Russian>Порох</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_DESC">
 			<English>A can with gun powder. Used for crafting ammunition.</English>
 			<German>Eine Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
+			<Russian>Банка с порохом. Используется для создания боеприпасов.</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_BIG">
 			<English>Gun Powder (Big)</English>
 			<German>Schießpulver (Groß)</German>
+			<Russian>Порох в большой банке</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_GUN_POWDER_BIG_DESC">
 			<English>A big can with gun powder. Used for crafting ammunition.</English>
 			<German>Eine große Dose mit Schießpulver, welche für die Herstellung von Munition genutzt werden kann.</German>
+			<Russian>Большая банка с порохом. Используется для создания боеприпасов.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_ItemBackpackUpgrade_1">
 			<English>Backpack Upgrade (small)</English>
 			<German>Rucksackerweiterung (klein)</German>
+			<Russian>Расширение рюкзака (малое)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_ItemBackpackUpgrade_1">
 			<English>A bag that is used to increase the volume of a backpack.</English>
 			<German>Eine Tasche, die dazu verwendet wird, das Volumen eines Rucksacks zu vergrössern.</German>
+			<Russian>Сумка, которая используется для увеличения объёма рюкзака.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_ItemBackpackUpgrade_2">
 			<English>Backpack Upgrade (medium)</English>
 			<German>Rucksackerweiterung (mittel)</German>
+			<Russian>Расширение рюкзака (среднее)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_ItemBackpackUpgrade_2">
 			<English>A bag that is used to increase the volume of a backpack.</English>
 			<German>Eine Tasche, die dazu verwendet wird, das Volumen eines Rucksacks zu vergrössern.</German>
+			<Russian>Сумка, которая используется для увеличения объёма рюкзака.</Russian>
 		</Key>
 		<Key ID="STR_ITEM_NAME_ItemBackpackUpgrade_3">
 			<English>Backpack Upgrade (large)</English>
 			<German>Rucksackerweiterung (gross)</German>
+			<Russian>Расширение рюкзака (большое)</Russian>
 		</Key>
 		<Key ID="STR_ITEM_DESC_ItemBackpackUpgrade_3">
 			<English>A bag that is used to increase the volume of a backpack.</English>
 			<German>Eine Tasche, die dazu verwendet wird, das Volumen eines Rucksacks zu vergrössern.</German>
+			<Russian>Сумка, которая используется для увеличения объёма рюкзака.</Russian>
 		</Key>		
 		<Key ID="STR_EPOCH_SLUGS_IN_A_CAN">
 			<English>Slugs in a can</English>
@@ -34860,14 +34897,17 @@
 		<Key ID="STR_EPOCH_BUILD_MOVE_TOO_FAR">
 			<English>You moved too far!</English>
 			<German>Du hast dich zu weit weg bewegt!</German>
+			<Russian>Вы ушли слишком далеко!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_OBJ_MOVE_TOO_FAR">
 			<English>Object moved too far!</English>
 			<German>Objekt zu weit weg!</German>
+			<Russian>Объект перемещён слишком далеко!</Russian>
 		</Key>
 		<Key ID="STR_EPOCH_BUILD_MOVE_TOO_FAST">
 			<English>You moved too fast!</English>
 			<German>Du hast dich zu schnell bewegt!</German>
+			<Russian>Вы ушли слишком быстро!</Russian>
 		</Key>		
 
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
