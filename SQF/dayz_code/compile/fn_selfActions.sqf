@@ -5,9 +5,6 @@ scriptName "Functions\misc\fn_selfActions.sqf";
 	- [] call fnc_usec_selfActions;
 ************************************************************/
 
-if (isNil "DZE_prevTarget") then {DZE_prevTarget = objNull};
-if (isNil "DZE_prevDistance") then {DZE_prevDistance = 0};
-
 local _vehicle = vehicle player;
 local _inVehicle = (_vehicle != player);
 local _cursorTarget = cursorTarget;
@@ -516,7 +513,7 @@ if (!isNull _cursorTarget && _noChange && !_inVehicle && !_isPZombie && _canDo &
 			s_player_plotManagement = player addAction [format["<t color='#b3e6ff'>%1</t>",localize "STR_EPOCH_ACTIONS_MANAGEPLOT"], "\z\addons\dayz_code\actions\plotManagement\initPlotManagement.sqf", [], 5, false];
 		};
 		if (s_player_plot_boundary < 0 && {_allowed || (_hasAccess select 1)}) then {
-			s_player_plot_boundary = player addAction [localize "STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY", "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf", "", 1, false];
+			s_player_plot_boundary = player addAction [localize "STR_EPOCH_PLOTMANAGEMENT_SHOW_BOUNDARY", "\z\addons\dayz_code\actions\plotManagement\plotToggleMarkers.sqf", _cursorTarget, 1, false];
 		};
 	} else {
 		player removeAction s_player_plotManagement;
