@@ -908,3 +908,406 @@ class cctv_kit: CA_Magazine
 		};
 	};
 };
+
+class concrete_barrier_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_CNC_BARRIER;
+	descriptionShort = $STR_EQUIP_DESC_CNC_BARRIER;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_CNC_BARRIER;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ConcreteBarrier_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CNC_BARRIER_STRIPED;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"concrete_barrier_striped_kit",1}};
+			input[] = {{"concrete_barrier_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CONCRETE_WALL;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"concrete_wall_kit",1}};
+			input[] = {{"concrete_barrier_kit",5},{"CementBag",2}};
+		};
+		class Crafting2
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CONCRETE_PIPE;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"concrete_pipe_kit",1}};
+			input[] = {{"concrete_barrier_kit",6},{"CementBag",2}};
+		};
+	};
+};
+
+class concrete_barrier_striped_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_CNC_BARRIER_STRIPED;
+	descriptionShort = $STR_EQUIP_DESC_CNC_BARRIER_STRIPED;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_CNC_BARRIER_STRIPED;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ConcreteBarrierStriped_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CNC_BARRIER;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"concrete_barrier_kit",1}};
+			input[] = {{"concrete_barrier_striped_kit",1}};
+		};
+	};
+};
+
+class concrete_wall_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_CONCRETE_WALL;
+	descriptionShort = $STR_EQUIP_DESC_CONCRETE_WALL;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_CONCRETE_WALL;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ConcreteWall_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_DRAGONTEETH;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"dragonteeth_kit",1}};
+			input[] = {{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}};
+		};
+	};
+};
+
+class concrete_pipe_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_CONCRETE_PIPE;
+	descriptionShort = $STR_EQUIP_DESC_CONCRETE_PIPE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_CONCRETE_PIPE;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ConcretePipe_DZ";
+		};
+	};
+};
+
+class dragonteeth_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_DRAGONTEETH;
+	descriptionShort = $STR_EQUIP_DESC_DRAGONTEETH;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_DRAGONTEETH;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "DragonTeeth_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_DRAGONTEETH_BIG;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"dragonteeth_big_kit",1}};
+			input[] = {{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}};
+		};
+	};
+};
+
+class dragonteeth_big_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_DRAGONTEETH_BIG;
+	descriptionShort = $STR_EQUIP_DESC_DRAGONTEETH_BIG;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_DRAGONTEETH_BIG;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "DragonTeethBig_DZ";
+		};
+	};
+};
+
+class simple_footbridge_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE;
+	descriptionShort = $STR_EQUIP_DESC_SIMPLE_FOOTBRIDGE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_SIMPLE_FOOTBRIDGE;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "SimpleFootbridge_DZ";
+		};
+	};
+};
+
+class wooden_footbridge_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_WOODEN_FOOTBRIDGE;
+	descriptionShort = $STR_EQUIP_DESC_WOODEN_FOOTBRIDGE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_WOODEN_FOOTBRIDGE;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "WoodenFootbridge_DZ";
+		};
+	};
+};
+
+class windbreak_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_WINDBREAK;
+	descriptionShort = $STR_EQUIP_DESC_WINDBREAK;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_WINDBREAK;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Windbreak_DZ";
+		};
+	};
+};
+
+class metal_container_1a_kit: CA_Magazine	// red
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1A;
+	descriptionShort = $STR_EQUIP_DESC_METAL_CONTAINER_1A;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1A;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalContainer1A_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1B;	// craft green
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1b_kit",1}};
+			input[] = {{"metal_container_1a_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G;	// craft white
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1g_kit",1}};
+			input[] = {{"metal_container_1a_kit",1}};
+		};
+		class Crafting2
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_2D;	// craft 2x red
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"metal_container_2d_kit",1}};
+			input[] = {{"metal_container_1a_kit",2}};
+		};
+	};
+};
+
+class metal_container_1b_kit: CA_Magazine	// green
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1B;
+	descriptionShort = $STR_EQUIP_DESC_METAL_CONTAINER_1B;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1B;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalContainer1B_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A;	// craft red
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1a_kit",1}};
+			input[] = {{"metal_container_1b_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G;	// craft white
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1g_kit",1}};
+			input[] = {{"metal_container_1b_kit",1}};
+		};
+	};
+};
+
+class metal_container_1g_kit: CA_Magazine	// white
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1G;
+	descriptionShort = $STR_EQUIP_DESC_METAL_CONTAINER_1G;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1G;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalContainer1G_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A;	// craft red
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1a_kit",1}};
+			input[] = {{"metal_container_1g_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1B;	// craft green
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1b_kit",1}};
+			input[] = {{"metal_container_1g_kit",1}};
+		};
+	};
+};
+
+class metal_container_2d_kit: CA_Magazine	// 2x red
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_2D;
+	descriptionShort = $STR_EQUIP_DESC_METAL_CONTAINER_2D;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_2D;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalContainer2D_DZ";
+		};
+	};
+};

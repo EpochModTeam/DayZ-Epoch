@@ -251,6 +251,47 @@ class FortifiedWire_DZ : ModularItems {
 	nounderground = 0;
 };
 
+class BarbedGate_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "ca\misc2\BarbGate.p3d";
+	armor = 3000;
+	displayName = $STR_EQUIP_NAME_BARBED_GATE;
+	destrType = "DestructBuilding";
+	maintainBuilding[] = {{"ItemWire",1}};
+	constructioncount = 2;
+
+	class AnimationSources
+	{
+		class Door01 {
+		  source = "User";
+		  animPeriod = 1;
+		  initPhase = 0;
+		};
+	};
+	class UserActions
+	{
+		class CloseDoor
+		{
+			position = "";
+			displayName = "Close Door";
+			radius = 1.5;
+			onlyForPlayer = 0;
+			condition = "this animationPhase 'Door01' == 1";
+			statement = "this animate ['Door01', 0];";
+		};
+		class OpenDoor
+		{
+			position = "";
+			displayName = "Open Door";
+			radius = 1.5;
+			onlyForPlayer = 0;
+			condition = "this animationPhase 'Door01' == 0";
+			statement = "this animate ['Door01', 1];";
+		};
+	};
+};
+
 class WoodGate_DZ: BuiltItems
 {
 	scope = 2;
@@ -292,6 +333,155 @@ class WoodGate_DZ: BuiltItems
 			statement = "this animate ['DoorR', 1];";
 		};
 	};
+};
+
+class ConcreteBarrier_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,-0.05};
+	model = "\ca\misc3\CncBlock.p3d";
+	armor = 4000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_CNC_BARRIER;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 1;
+	nounderground = 0;
+};
+
+class ConcreteBarrierStriped_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,-0.05};
+	model = "\ca\misc3\CncBlock_stripes.p3d";
+	armor = 4000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_CNC_BARRIER_STRIPED;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 1;
+	nounderground = 0;
+};
+
+class ConcreteWall_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3,0};
+	model = "\ca\mp_armory\misc\concrete_wall\concrete_wall.p3d";
+	armor = 10000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_CONCRETE_WALL;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 3;
+};
+
+class ConcretePipe_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3,0};
+	model = "\ca\structures_e\misc\misc_construction\misc_concpipeline_ep1.p3d";
+	armor = 10000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_CONCRETE_PIPE;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 3;
+};
+
+class DragonTeeth_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5.5,0};
+	model = "\ca\misc3\dragonTeeth\dragonTeeth.p3d";
+	armor = 10000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_DRAGONTEETH;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 3;
+};
+
+class DragonTeethBig_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5.5,0};
+	model = "\ca\misc3\dragonTeeth\dragonTeethBig.p3d";
+	armor = 10000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_DRAGONTEETH_BIG;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 3;
+};
+class SimpleFootbridge_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0.05};
+	useModelCenter = 1;
+	model = "mbg_killhouses\m\MBG_Woodplanks.p3d";
+	armor = 200;
+	nounderground = 0;
+	displayName = $STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE;
+	maintainBuilding[] = {{"ItemPlank",1}};
+};
+
+class WoodenFootbridge_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3.5,0};
+	useModelCenter = 1;
+	model = "ca\misc_acr\scaffoldingsmall\misc_crossing0st.p3d";
+	armor = 200;
+	nounderground = 0;
+	displayName = $STR_EQUIP_NAME_WOODEN_FOOTBRIDGE;
+	maintainBuilding[] = {{"ItemPlank",1}};
+};
+
+class Windbreak_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3,-0.1};
+	model = "ca\structures\Misc\Misc_WindBreak\Misc_WindBreak.p3d";
+	armor = 1000;
+	nounderground = 0;
+	displayName = $STR_EQUIP_NAME_WINDBREAK;
+	maintainBuilding[] = {{"ItemPlank",1}};
+};
+
+class MetalContainer1A_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5,0};
+	model = "ca\buildings2\Misc_Cargo\Misc_Cargo1A.p3d";	// red
+	armor = 20000;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1A;
+	destrType = "DestructBuilding";
+	maintainBuilding[] = {{"equip_metal_sheet",2}};
+	constructioncount = 3;
+};
+
+class MetalContainer1B_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5,0};
+	model = "ca\buildings2\Misc_Cargo\Misc_Cargo1B.p3d";	// green
+	armor = 20000;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1B;
+	destrType = "DestructBuilding";
+	maintainBuilding[] = {{"equip_metal_sheet",2}};
+	constructioncount = 3;
+};
+
+class MetalContainer1G_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5,0};
+	model = "ca\buildings2\Misc_Cargo\Misc_Cargo1G.p3d";	// white
+	armor = 20000;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1G;
+	destrType = "DestructBuilding";
+	maintainBuilding[] = {{"equip_metal_sheet",2}};
+	constructioncount = 3;
+};
+
+class MetalContainer2D_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5,0};
+	model = "ca\buildings2\Misc_Cargo\Misc_Cargo2D.p3d";	// 2x red
+	armor = 40000;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_2D;
+	destrType = "DestructBuilding";
+	maintainBuilding[] = {{"equip_metal_sheet",4}};
+	constructioncount = 5;
 };
 
 class Notebook;

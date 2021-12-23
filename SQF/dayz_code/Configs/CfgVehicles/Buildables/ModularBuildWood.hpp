@@ -367,37 +367,3 @@ class WoodPillar_DZ: ModularItems {
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "Wood_Pillar_Preview_DZ";
 };
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-class SimpleFootbridge_DZ: ModularItems {
-	scope = 2;
-	offset[] = {0,4,0.05};
-	useModelCenter = 1;
-	model = "mbg_killhouses\m\MBG_Woodplanks.p3d";
-	armor = 200;
-	nounderground = 0;
-	displayName = $STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE;
-	maintainBuilding[] = {{"ItemPlank",1}};
-};
-
-class WoodenFootbridge_DZ: ModularItems {
-	scope = 2;
-	offset[] = {0,3.5,0};
-	useModelCenter = 1;
-	model = "ca\misc_acr\scaffoldingsmall\misc_crossing0st.p3d";
-	armor = 200;
-	nounderground = 0;
-	displayName = $STR_EQUIP_NAME_WOODEN_FOOTBRIDGE;
-	maintainBuilding[] = {{"ItemPlank",1}};
-};
-
-class Windbreak_DZ: ModularItems {
-	scope = 2;
-	offset[] = {0,3,-0.1};
-	model = "ca\structures\Misc\Misc_WindBreak\Misc_WindBreak.p3d";
-	armor = 1000;
-	nounderground = 0;
-	displayName = $STR_EQUIP_NAME_WINDBREAK;
-	maintainBuilding[] = {{"ItemPlank",1}};
-};

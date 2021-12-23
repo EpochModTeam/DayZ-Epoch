@@ -207,7 +207,7 @@ class equip_metal_sheet_rusted: CA_Magazine
 	{
 		class Crafting
 		{
-			text = $STR_EPOCH_ACTION_CRAFT_METAL_SHEET;
+			text = $STR_CRAFTING_METALSHEET;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
 			neednearby[] = {"workshop","fire"};
 			requiretools[] = {"ItemToolbox","ItemSledge"};
