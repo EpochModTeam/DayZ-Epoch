@@ -514,7 +514,7 @@ if (_proceed && _success) then {
 					call {
 						if (_type == 2) exitWith {_item addWeaponCargoGlobal   [_itemOut, _countOut]};
 						if (_type == 3) exitWith {_item addMagazineCargoGlobal [_itemOut, _countOut]};
-						if (_type == 5) exitWith {	//_item addBackpackCargoGlobal [_itemOut, _countOut]; // Needs to make sure object can handle Backpacks or will dump on the ground.
+						if (_type == 5) exitWith {
 
 							for "_i" from 1 to _countOut do {
 

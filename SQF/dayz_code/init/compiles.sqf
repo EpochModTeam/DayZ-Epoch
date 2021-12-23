@@ -83,15 +83,12 @@ if (!isDedicated) then {
 	player_removeAttachment = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_removeAttachment.sqf";
 	player_fillWater = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\water_fill.sqf";
 	player_mineStone = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_mineStone.sqf";
-	if (DZE_modularBuild) then {
-		player_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\modular_build.sqf";
-		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\snap_functions.sqf";
-		snap_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
-		call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\vector_functions.sqf";
-		build_vectors = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\build_vectors.sqf";
-	} else {
-		player_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
-	};
+	player_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\modular_build.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\snap_functions.sqf";
+	snap_build = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\snap_build.sqf";
+	call compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\vector_functions.sqf";
+	build_vectors = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\BuildVectors\build_vectors.sqf";
+	dze_snap_building = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\dze_snap_building.sqf";
 
 	FNC_find_plots = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\fn_find_plots.sqf";
 	player_wearClothes = compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_wearClothes.sqf";
