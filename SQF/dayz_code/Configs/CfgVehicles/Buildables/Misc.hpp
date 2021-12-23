@@ -9,12 +9,12 @@ class BeltBuckle_DZE : Helper_Base_EP1 {
 	hiddenSelectionsTextures[] = {"#(argb,8,8,3)color(1,0.5,0.5,0.5,ca)"};
 };
 
-class WorkBench_DZ: BuiltItems
+class WorkBench_DZ: ModularItems
 {
 	scope = 2;
 	destrType = "DestructTree";
 	cost = 100;
-	offset[] = {0,1.5,0};
+	offset[] = {0,1.5,-0.05};
 	model = "\z\addons\dayz_epoch\models\workbench.p3d";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
@@ -23,7 +23,6 @@ class WorkBench_DZ: BuiltItems
 	vehicleClass = "DayZ Epoch Buildables";
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	constructioncount = 1;
-	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
 	requireplot = 0;
 	nounderground = 0;
 };
@@ -120,7 +119,7 @@ class DeerStand_DZ: Land_Misc_deerstand
 	vehicleClass = "DayZ Epoch Buildables";
 	removeoutput[] = {{"deer_stand_kit",1}};
 	icon = "\ca\data\data\Unknown_object.paa";
-	mapSize = 2;	
+	mapSize = 2;
 	nounderground = 0;
 };
 
@@ -144,7 +143,6 @@ class Fence_corrugated_DZ: Fence_corrugated_plate
 	removeoutput[] = {{"ItemCorrugated",1}};
 	displayName = $STR_EPOCH_CORRUGATEDFENCE;
 	vehicleClass = "DayZ Epoch Buildables";
-	nounderground = 0;
 };
 
 class Wall_FenW2_6_EP1;
@@ -187,7 +185,7 @@ class Scaffolding_DZ: Land_Misc_Scaffolding
 	transportRepair = 0;
 	transportFuel = 0;
 	typicalCargo[] = {};
-	offset[] = {0,9,0};
+	offset[] = {0,10.5,0};
 	cost = 0;
 	removeoutput[] = {{"ItemScaffoldingKit",1}};
 };
@@ -228,17 +226,28 @@ class MetalPanel_DZ: BuiltItems
 
 class Fort_RazorWire : BuiltItems {
 	scope = 2;
-	animated = 0;
 	vehicleClass = "DayZ Epoch Buildables";
 	model = "\ca\misc\Fort_Razorwire";
 	icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
-	offset[] = {0,1.5,0};
-	accuracy = 0.3;
+	offset[] = {0,5,-0.05};
 	mapSize = 3;
 	displayName = $STR_EPOCH_WIRE;
 	destrType = "DestructTent";
-	armor = 100;
-	GhostPreview = "Fort_RazorWirePreview";
+	armor = 500;
+	nounderground = 0;
+	removeoutput[] = {{"ItemWire",1}};
+};
+
+class FortifiedWire_DZ : ModularItems {
+	scope = 2;
+	vehicleClass = "DayZ Epoch Buildables";
+	model = "\ca\misc\Barbedwire";
+	icon = "\Ca\misc\data\icons\I_drutkolczasty_CA.paa";
+	offset[] = {0,4,-0.05};
+	mapSize = 3;
+	displayName = $STR_EQUIP_NAME_FORT_WIRE;
+	destrType = "DestructTent";
+	armor = 750;
 	nounderground = 0;
 };
 
@@ -293,7 +302,8 @@ class Notebook_DZ: Notebook
 	mapSize = 2;	
 	displayName = $STR_EPOCH_NOTEBOOK;
 	constructioncount = 1;
-	offset[] = {0,2,1};
+	offset[] = {0,2,0};
+	nounderground = 0;
 	removeoutput[] = {{"notebook_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };

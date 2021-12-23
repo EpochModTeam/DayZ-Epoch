@@ -309,6 +309,7 @@ class Concrete_Bunker_DZ: CinderWallDoor_DZ_Base {
 		};	
 	};
 };
+
 class Concrete_Bunker_Locked_DZ: CinderWallDoorLocked_DZ_Base {
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\cinder\bunker\bunker_01_locked.p3d";
@@ -373,4 +374,80 @@ class Concrete_Bunker_Locked_DZ: CinderWallDoorLocked_DZ_Base {
 			statement = "dayz_selectedDoor = this;DZE_topCombo = 0;DZE_midCombo = 0;DZE_botCombo = 0;if(DZE_doorManagement) then {createdialog ""DoorAccess"";} else {createdialog ""ComboLockUI"";};";
 		};		
 	};
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+class ConcreteBarrier_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,-0.05};
+	model = "\ca\misc3\CncBlock.p3d";
+	armor = 4000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_CNC_BARRIER;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 1;
+	nounderground = 0;
+};
+
+class ConcreteBarrierStriped_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,2,-0.05};
+	model = "\ca\misc3\CncBlock_stripes.p3d";
+	armor = 4000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_CNC_BARRIER_STRIPED;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 1;
+	nounderground = 0;
+};
+
+class ConcreteWall_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3,0};
+	model = "\ca\mp_armory\misc\concrete_wall\concrete_wall.p3d";
+	armor = 10000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_CONCRETE_WALL;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 3;
+};
+
+class ConcretePipe_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3,0};
+	model = "\ca\structures_e\misc\misc_construction\misc_concpipeline_ep1.p3d";
+	armor = 10000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_CONCRETE_PIPE;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 3;
+};
+
+class DragonTeeth_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5.5,0};
+	model = "\ca\misc3\dragonTeeth\dragonTeeth.p3d";
+	armor = 10000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_DRAGONTEETH;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 3;
+};
+
+class DragonTeethBig_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,5.5,0};
+	model = "\ca\misc3\dragonTeeth\dragonTeethBig.p3d";
+	armor = 10000;
+	vehicleClass = "DayZ Epoch Buildables";
+	displayName = $STR_EQUIP_NAME_DRAGONTEETH_BIG;
+	maintainBuilding[] = {{"CementBag",1}};
+	destrType = "DestructBuilding";
+	constructioncount = 3;
 };

@@ -29,7 +29,7 @@ class WoodFloor_DZ: ModularItems {
 
 class WoodFloorStairs_DZ: ModularItems {
 	scope = 2;
-	offset[] = {0,5,0};
+	offset[] = {0,4,0};
 	model = "\z\addons\dayz_epoch_v\base_building\floors\wood_floor_stairs.p3d";
 	armor = 1000;
 	displayName = $STR_EPOCH_WOODFLOORSTAIRS;
@@ -70,7 +70,7 @@ class WoodFloorHalf_DZ: ModularItems {
 
 class WoodFloorQuarter_DZ: ModularItems {
 	scope = 2;
-	offset[] = {0,4,0};
+	offset[] = {0,2.5,0};
 	model = "\z\addons\dayz_epoch\models\quarter_floor.p3d";
 	armor = 500;
 	displayName = $STR_EPOCH_FLOORCEILINGQUARTER;
@@ -266,7 +266,7 @@ class WoodSmallWallDoor_DZ: ModularItems {
 
 class WoodTriangleWall_DZ: ModularItems {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	offset[] = {0,3.5,0};
 	model = "\z\addons\dayz_epoch_v\base_building\wood\apex_tri\apex_tri.p3d";
 	armor = 1500;
 	displayName = $STR_EPOCH_TRIANGLE_WOODWALL;
@@ -350,7 +350,7 @@ class WoodLadder_DZ: ModularItems {
 
 class WoodHandrail_DZ: ModularItems {
 	scope = 2;
-	offset[] = {0,1.5,0};
+	offset[] = {0,2,0};
 	model = "\z\addons\dayz_epoch_v\base_building\wood\railing\railing.p3d";
 	armor = 300;
 	displayName = $STR_EPOCH_WOODRAIL;
@@ -361,9 +361,43 @@ class WoodHandrail_DZ: ModularItems {
 class WoodPillar_DZ: ModularItems {
 	scope = 2;
 	offset[] = {0,2,0};
-	model = "z\addons\dayz_epoch_v\base_building\wood\pillar\corner_pillar.p3d";
+	model = "\z\addons\dayz_epoch_v\base_building\wood\pillar\corner_pillar.p3d";
 	armor = 700;
 	displayName = $STR_EPOCH_WOODPILLAR;
 	maintainBuilding[] = {{"PartWoodLumber",1}};
 	GhostPreview = "Wood_Pillar_Preview_DZ";
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+class SimpleFootbridge_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0.05};
+	useModelCenter = 1;
+	model = "mbg_killhouses\m\MBG_Woodplanks.p3d";
+	armor = 200;
+	nounderground = 0;
+	displayName = $STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE;
+	maintainBuilding[] = {{"ItemPlank",1}};
+};
+
+class WoodenFootbridge_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3.5,0};
+	useModelCenter = 1;
+	model = "ca\misc_acr\scaffoldingsmall\misc_crossing0st.p3d";
+	armor = 200;
+	nounderground = 0;
+	displayName = $STR_EQUIP_NAME_WOODEN_FOOTBRIDGE;
+	maintainBuilding[] = {{"ItemPlank",1}};
+};
+
+class Windbreak_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,3,-0.1};
+	model = "ca\structures\Misc\Misc_WindBreak\Misc_WindBreak.p3d";
+	armor = 1000;
+	nounderground = 0;
+	displayName = $STR_EQUIP_NAME_WINDBREAK;
+	maintainBuilding[] = {{"ItemPlank",1}};
 };

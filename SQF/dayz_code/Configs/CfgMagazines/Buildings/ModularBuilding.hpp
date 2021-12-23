@@ -1,4 +1,4 @@
-class glass_floor_kit: CA_Magazine 
+class glass_floor_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -8,9 +8,9 @@ class glass_floor_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -20,7 +20,7 @@ class glass_floor_kit: CA_Magazine
 	};
 };
 
-class glass_floor_half_kit: CA_Magazine 
+class glass_floor_half_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -30,16 +30,16 @@ class glass_floor_half_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "GlassFloor_Half_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_ACTION_GLASS_FLOOR;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -51,7 +51,7 @@ class glass_floor_half_kit: CA_Magazine
 	};
 };
 
-class glass_floor_quarter_kit: CA_Magazine 
+class glass_floor_quarter_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -61,16 +61,16 @@ class glass_floor_quarter_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "GlassFloor_Quarter_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_ACTION_GLASS_FLOOR_HALF;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -78,11 +78,11 @@ class glass_floor_quarter_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"glass_floor_half_kit",1}};
 			input[] = {{"glass_floor_quarter_kit",2}};
-		};		
+		};
 	};
 };
 
-class metal_floor_kit: CA_Magazine 
+class metal_floor_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -92,9 +92,9 @@ class metal_floor_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -109,11 +109,11 @@ class metal_floor_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
 			output[] = {{"metal_floor4x_kit",1}};
 			input[] = {{"metal_floor_kit",4}};
-		};		
+		};
 	};
 };
 
-class metal_floor_half_kit: CA_Magazine 
+class metal_floor_half_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -123,9 +123,9 @@ class metal_floor_half_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -141,10 +141,19 @@ class metal_floor_half_kit: CA_Magazine
 			output[] = {{"metal_floor_kit",1}};
 			input[] = {{"metal_floor_half_kit",2}};
 		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A;	// red
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			output[] = {{"metal_container_1a_kit",1}};
+			input[] = {{"metal_floor_half_kit",4},{"metal_floor_quarter_kit",2},{"ItemTankTrap",2}};
+		};
 	};
 };
 
-class metal_floor_quarter_kit: CA_Magazine 
+class metal_floor_quarter_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -154,9 +163,9 @@ class metal_floor_quarter_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -172,10 +181,19 @@ class metal_floor_quarter_kit: CA_Magazine
 			output[] = {{"metal_floor_half_kit",1}};
 			input[] = {{"metal_floor_quarter_kit",2}};
 		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A;	// red
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop","fire"};
+			requiretools[] = {"ItemToolbox","ItemCrowbar","ItemSledge"};
+			output[] = {{"metal_container_1a_kit",1}};
+			input[] = {{"metal_floor_half_kit",4},{"metal_floor_quarter_kit",2},{"ItemTankTrap",2}};
+		};
 	};
 };
 
-class metal_floor4x_kit: CA_Magazine 
+class metal_floor4x_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -185,9 +203,9 @@ class metal_floor4x_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -197,7 +215,7 @@ class metal_floor4x_kit: CA_Magazine
 	};
 };
 
-class metal_pillar_kit: CA_Magazine 
+class metal_pillar_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -207,9 +225,9 @@ class metal_pillar_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -229,16 +247,16 @@ class half_cinder_wall_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallHalf_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_252_2;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -246,6 +264,15 @@ class half_cinder_wall_kit: CA_Magazine
 			requiretools[] = {};
 			output[] = {{"half_cinder_wall_gap_kit",1}};
 			input[] = {{"half_cinder_wall_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_PLAYER_252_1;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"full_cinder_wall_kit",1}};
+			input[] = {{"half_cinder_wall_kit",1},{"CinderBlocks",4},{"MortarBucket",1}};
 		};
 	};
 };
@@ -260,19 +287,28 @@ class half_cinder_wall_gap_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallHalf_Gap_DZ";
 		};
+		class Crafting
+		{
+			text = $STR_EPOCH_PLAYER_252;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"half_cinder_wall_kit",1}};
+			input[] = {{"half_cinder_wall_gap_kit",1}};
+		};
 	};
 };
 
-class full_cinder_wall_kit: CA_Magazine 
+class full_cinder_wall_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -282,9 +318,9 @@ class full_cinder_wall_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -294,7 +330,7 @@ class full_cinder_wall_kit: CA_Magazine
 	};
 };
 
-class cinderwall_window_kit: CA_Magazine 
+class cinderwall_window_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -304,16 +340,16 @@ class cinderwall_window_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallWindow_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239_1_2;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -325,7 +361,7 @@ class cinderwall_window_kit: CA_Magazine
 	};
 };
 
-class cinderwall_window_locked_kit: CA_Magazine 
+class cinderwall_window_locked_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -335,9 +371,9 @@ class cinderwall_window_locked_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -347,7 +383,7 @@ class cinderwall_window_locked_kit: CA_Magazine
 	};
 };
 
-class cinder_door_frame_kit: CA_Magazine 
+class cinder_door_frame_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -357,16 +393,16 @@ class cinder_door_frame_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallSmallDoorway_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_238;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -374,11 +410,11 @@ class cinder_door_frame_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"cinder_door_kit",1}};
 			input[] = {{"cinder_door_frame_kit",1},{"ItemPole",1},{"ItemTankTrap",1}};
-		};			
+		};
 	};
 };
 
-class cinder_door_kit: CA_Magazine 
+class cinder_door_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -388,16 +424,16 @@ class cinder_door_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoorSmall_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -406,7 +442,7 @@ class cinder_door_kit: CA_Magazine
 			output[] = {{"cinder_door_kit_locked",1}};
 			input[] = {{"cinder_door_kit",1},{"ItemComboLock",1}};
 		};
-		class Crafting1 
+		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_238_2;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
@@ -414,11 +450,11 @@ class cinder_door_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox","ItemCrowbar"};
 			output[] = {{"cinder_door_hatch_kit",1}};
 			input[] = {{"cinder_door_kit",1}};
-		};		
+		};
 	};
 };
 
-class cinder_door_kit_locked: CA_Magazine 
+class cinder_door_kit_locked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -428,9 +464,9 @@ class cinder_door_kit_locked: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -450,16 +486,16 @@ class cinder_door_hatch_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderDoorHatch_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -471,7 +507,7 @@ class cinder_door_hatch_kit: CA_Magazine
 	};
 };
 
-class cinder_door_hatch_kit_locked: CA_Magazine 
+class cinder_door_hatch_kit_locked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -481,9 +517,9 @@ class cinder_door_hatch_kit_locked: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -493,7 +529,7 @@ class cinder_door_hatch_kit_locked: CA_Magazine
 	};
 };
 
-class cinder_garage_frame_kit: CA_Magazine 
+class cinder_garage_frame_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -503,16 +539,16 @@ class cinder_garage_frame_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoorway_DZ";
-		};	
-		class Crafting 
+		};
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_240;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -520,11 +556,11 @@ class cinder_garage_frame_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"cinder_garage_kit",1}};
 			input[] = {{"cinder_garage_frame_kit",1},{"ItemPole",3},{"ItemTankTrap",3}};
-		};		
+		};
 	};
 };
 
-class cinder_garage_kit: CA_Magazine 
+class cinder_garage_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -534,16 +570,16 @@ class cinder_garage_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderWallDoor_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -551,11 +587,11 @@ class cinder_garage_kit: CA_Magazine
 			requiretools[] = {};
 			output[] = {{"cinder_garage_kit_locked",1}};
 			input[] = {{"cinder_garage_kit",1},{"ItemComboLock",1}};
-		};		
+		};
 	};
 };
 
-class cinder_garage_kit_locked: CA_Magazine 
+class cinder_garage_kit_locked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -565,9 +601,9 @@ class cinder_garage_kit_locked: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -577,7 +613,7 @@ class cinder_garage_kit_locked: CA_Magazine
 	};
 };
 
-class cinder_garage_top_open_frame_kit: CA_Magazine 
+class cinder_garage_top_open_frame_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -587,16 +623,16 @@ class cinder_garage_top_open_frame_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderGarageOpenTopFrame_DZ";
-		};	
-		class Crafting 
+		};
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_240;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -604,11 +640,11 @@ class cinder_garage_top_open_frame_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"cinder_garage_top_open_kit",1}};
 			input[] = {{"cinder_garage_top_open_frame_kit",1},{"ItemPole",3},{"ItemTankTrap",3}};
-		};		
+		};
 	};
 };
 
-class cinder_garage_top_open_kit: CA_Magazine 
+class cinder_garage_top_open_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -618,16 +654,16 @@ class cinder_garage_top_open_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderGarageOpenTop_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -635,11 +671,11 @@ class cinder_garage_top_open_kit: CA_Magazine
 			requiretools[] = {};
 			output[] = {{"cinder_garage_top_open_kit_locked",1}};
 			input[] = {{"cinder_garage_top_open_kit",1},{"ItemComboLock",1}};
-		};		
+		};
 	};
 };
 
-class cinder_garage_top_open_kit_locked: CA_Magazine 
+class cinder_garage_top_open_kit_locked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -649,9 +685,9 @@ class cinder_garage_top_open_kit_locked: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -661,7 +697,7 @@ class cinder_garage_top_open_kit_locked: CA_Magazine
 	};
 };
 
-class cinder_gate_frame_kit: CA_Magazine 
+class cinder_gate_frame_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -671,16 +707,16 @@ class cinder_gate_frame_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderGateFrame_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239_1_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -693,7 +729,7 @@ class cinder_gate_frame_kit: CA_Magazine
 };
 
 
-class cinder_gate_kit: CA_Magazine 
+class cinder_gate_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -703,16 +739,16 @@ class cinder_gate_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "CinderGate_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -720,11 +756,11 @@ class cinder_gate_kit: CA_Magazine
 			requiretools[] = {};
 			output[] = {{"cinder_gate_kit_locked",1}};
 			input[] = {{"cinder_gate_kit",1},{"ItemComboLock",1}};
-		};	
+		};
 	};
 };
 
-class cinder_gate_kit_locked: CA_Magazine 
+class cinder_gate_kit_locked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -734,9 +770,9 @@ class cinder_gate_kit_locked: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -746,7 +782,7 @@ class cinder_gate_kit_locked: CA_Magazine
 	};
 };
 
-class cinder_bunker_kit: CA_Magazine 
+class cinder_bunker_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -756,16 +792,16 @@ class cinder_bunker_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Concrete_Bunker_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239_1_2;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -773,11 +809,11 @@ class cinder_bunker_kit: CA_Magazine
 			requiretools[] = {};
 			output[] = {{"cinder_bunker_kit_locked",1}};
 			input[] = {{"cinder_bunker_kit",1},{"ItemComboLock",1}};
-		};	
+		};
 	};
 };
 
-class cinder_bunker_kit_locked: CA_Magazine 
+class cinder_bunker_kit_locked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -787,9 +823,9 @@ class cinder_bunker_kit_locked: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -799,7 +835,193 @@ class cinder_bunker_kit_locked: CA_Magazine
 	};
 };
 
-class metal_drawbridge_kit: CA_Magazine 
+class concrete_barrier_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_CNC_BARRIER;
+	descriptionShort = $STR_EQUIP_DESC_CNC_BARRIER;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_CNC_BARRIER;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ConcreteBarrier_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CNC_BARRIER_STRIPED;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"concrete_barrier_striped_kit",1}};
+			input[] = {{"concrete_barrier_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CONCRETE_WALL;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"concrete_wall_kit",1}};
+			input[] = {{"concrete_barrier_kit",5},{"CementBag",2}};
+		};
+		class Crafting2
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CONCRETE_PIPE;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"concrete_pipe_kit",1}};
+			input[] = {{"concrete_barrier_kit",6},{"CementBag",2}};
+		};
+	};
+};
+
+class concrete_barrier_striped_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_CNC_BARRIER_STRIPED;
+	descriptionShort = $STR_EQUIP_DESC_CNC_BARRIER_STRIPED;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_CNC_BARRIER_STRIPED;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ConcreteBarrierStriped_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CNC_BARRIER;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"concrete_barrier_kit",1}};
+			input[] = {{"concrete_barrier_striped_kit",1}};
+		};
+	};
+};
+
+class concrete_wall_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_CONCRETE_WALL;
+	descriptionShort = $STR_EQUIP_DESC_CONCRETE_WALL;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_CONCRETE_WALL;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ConcreteWall_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_DRAGONTEETH;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"dragonteeth_kit",1}};
+			input[] = {{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}};
+		};
+	};
+};
+
+class concrete_pipe_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_CONCRETE_PIPE;
+	descriptionShort = $STR_EQUIP_DESC_CONCRETE_PIPE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_CONCRETE_PIPE;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ConcretePipe_DZ";
+		};
+	};
+};
+
+class dragonteeth_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_DRAGONTEETH;
+	descriptionShort = $STR_EQUIP_DESC_DRAGONTEETH;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_DRAGONTEETH;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "DragonTeeth_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_DRAGONTEETH_BIG;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"dragonteeth_big_kit",1}};
+			input[] = {{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}};
+		};
+	};
+};
+
+class dragonteeth_big_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_DRAGONTEETH_BIG;
+	descriptionShort = $STR_EQUIP_DESC_DRAGONTEETH_BIG;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_DRAGONTEETH_BIG;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "DragonTeethBig_DZ";
+		};
+	};
+};
+
+class metal_drawbridge_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -809,9 +1031,9 @@ class metal_drawbridge_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -821,7 +1043,7 @@ class metal_drawbridge_kit: CA_Magazine
 	};
 };
 
-class metal_drawbridge_kit_locked: CA_Magazine 
+class metal_drawbridge_kit_locked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -831,9 +1053,9 @@ class metal_drawbridge_kit_locked: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -844,7 +1066,7 @@ class metal_drawbridge_kit_locked: CA_Magazine
 };
 
 
-class ItemWoodFloor: CA_Magazine 
+class ItemWoodFloor: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -854,9 +1076,9 @@ class ItemWoodFloor: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_FLOORCEILING_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -880,11 +1102,11 @@ class ItemWoodFloor: CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemWoodFloor4x",1}};
 			input[] = {{"ItemWoodFloor",4}};
-		};		
+		};
 	};
 };
 
-class ItemWoodFloor4x: CA_Magazine 
+class ItemWoodFloor4x: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -894,19 +1116,19 @@ class ItemWoodFloor4x: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_FLOORCEILING_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloor4x_DZ";
-		};		
+		};
 	};
 };
 
-class ItemWoodFloorStairs: CA_Magazine 
+class ItemWoodFloorStairs: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -916,19 +1138,19 @@ class ItemWoodFloorStairs: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODFLOORSTAIRS_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloorStairs_DZ";
-		};	
+		};
 	};
 };
 
-class ItemTriangleWoodFloor: CA_Magazine 
+class ItemTriangleWoodFloor: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -938,19 +1160,19 @@ class ItemTriangleWoodFloor: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_TRIANGLE_WOODFLOOR_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodTriangleFloor_DZ";
-		};	
+		};
 	};
 };
 
-class ItemWoodFloorHalf: CA_Magazine 
+class ItemWoodFloorHalf: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -960,16 +1182,16 @@ class ItemWoodFloorHalf: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_FLOORCEILING_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloorHalf_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_232;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -978,7 +1200,7 @@ class ItemWoodFloorHalf: CA_Magazine
 			output[] = {{"ItemWoodFloor",1}};
 			input[] = {{"ItemWoodFloorHalf",2}};
 		};
-		class Crafting1 
+		class Crafting1
 		{
 			text = $STR_EPOCH_ACTION_WOODENTRIANGLEWALL;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
@@ -986,8 +1208,8 @@ class ItemWoodFloorHalf: CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemTriangleWoodWall",1}};
 			input[] = {{"ItemWoodFloorQuarter",1},{"ItemWoodFloorHalf",1}};
-		};	
-		class Crafting2 
+		};
+		class Crafting2
 		{
 			text = $STR_EPOCH_ACTION_WOODENTRIANGLEFLOOR;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
@@ -995,11 +1217,11 @@ class ItemWoodFloorHalf: CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemTriangleWoodFloor",1}};
 			input[] = {{"ItemWoodFloorQuarter",1},{"ItemWoodFloorHalf",1}};
-		};		
+		};
 	};
 };
 
-class ItemWoodFloorQuarter: CA_Magazine 
+class ItemWoodFloorQuarter: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1009,16 +1231,16 @@ class ItemWoodFloorQuarter: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_FLOORCEILING_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodFloorQuarter_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_232a;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1027,7 +1249,7 @@ class ItemWoodFloorQuarter: CA_Magazine
 			output[] = {{"ItemWoodFloorHalf",1}};
 			input[] = {{"ItemWoodFloorQuarter",2}};
 		};
-		class Crafting1 
+		class Crafting1
 		{
 			text = $STR_EPOCH_ACTION_WOODENTRIANGLEWALL;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
@@ -1035,11 +1257,11 @@ class ItemWoodFloorQuarter: CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemTriangleWoodWall",1}};
 			input[] = {{"ItemWoodFloorQuarter",1},{"ItemWoodFloorHalf",1}};
-		};		
+		};
 	};
 };
 
-class ItemWoodStairs: CA_Magazine 
+class ItemWoodStairs: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1049,16 +1271,16 @@ class ItemWoodStairs: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODSTAIRS;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodStairsSans_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_233;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1067,7 +1289,7 @@ class ItemWoodStairs: CA_Magazine
 			output[] = {{"ItemWoodStairsSupport",1}};
 			input[] = {{"ItemWoodStairs",1},{"PartWoodLumber",2}};
 		};
-		class Crafting1 
+		class Crafting1
 		{
 			text = $STR_EPOCH_ACTION_WOODFLOORSTAIRS;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
@@ -1075,11 +1297,11 @@ class ItemWoodStairs: CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemWoodFloorStairs",1}};
 			input[] = {{"ItemWoodStairs",1},{"ItemWoodFloor",1}};
-		};		
+		};
 	};
 };
 
-class ItemWoodStairsSupport: CA_Magazine 
+class ItemWoodStairsSupport: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1089,9 +1311,9 @@ class ItemWoodStairsSupport: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODSTAIRSWITHSUPPORTS_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1101,7 +1323,7 @@ class ItemWoodStairsSupport: CA_Magazine
 	};
 };
 
-class ItemWoodStairsRails: CA_Magazine 
+class ItemWoodStairsRails: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1111,9 +1333,9 @@ class ItemWoodStairsRails: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODSTAIRSRAILS_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1123,7 +1345,7 @@ class ItemWoodStairsRails: CA_Magazine
 	};
 };
 
-class ItemWoodLadder: CA_Magazine 
+class ItemWoodLadder: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1133,9 +1355,9 @@ class ItemWoodLadder: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODLADDER;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1145,7 +1367,7 @@ class ItemWoodLadder: CA_Magazine
 	};
 };
 
-class ItemWoodHandRail: CA_Magazine 
+class ItemWoodHandRail: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1155,9 +1377,9 @@ class ItemWoodHandRail: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODRAIL_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1167,7 +1389,7 @@ class ItemWoodHandRail: CA_Magazine
 	};
 };
 
-class ItemWoodPillar: CA_Magazine 
+class ItemWoodPillar: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1177,9 +1399,9 @@ class ItemWoodPillar: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODPILLAR_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1189,7 +1411,7 @@ class ItemWoodPillar: CA_Magazine
 	};
 };
 
-class ItemWoodWall: CA_Magazine 
+class ItemWoodWall: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1199,16 +1421,16 @@ class ItemWoodWall: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODWALL_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWall_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_234;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1217,7 +1439,7 @@ class ItemWoodWall: CA_Magazine
 			output[] = {{"ItemWoodWallDoor",1}};
 			input[] = {{"ItemWoodWall",1}};
 		};
-		class Crafting1 
+		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_235;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
@@ -1226,7 +1448,7 @@ class ItemWoodWall: CA_Magazine
 			output[] = {{"ItemWoodWallWindow",1}};
 			input[] = {{"ItemWoodWall",1},{"PartGlass",1}};
 		};
-		class Crafting2 
+		class Crafting2
 		{
 			text = $STR_EPOCH_PLAYER_236;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
@@ -1238,7 +1460,7 @@ class ItemWoodWall: CA_Magazine
 	};
 };
 
-class ItemTriangleWoodWall: CA_Magazine 
+class ItemTriangleWoodWall: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1247,10 +1469,10 @@ class ItemTriangleWoodWall: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_TRIANGLE_WOODWALL_DESC;
-	
-	class ItemActions 
+
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1260,7 +1482,7 @@ class ItemTriangleWoodWall: CA_Magazine
 	};
 };
 
-class ItemWoodWallThird: CA_Magazine 
+class ItemWoodWallThird: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1270,16 +1492,16 @@ class ItemWoodWallThird: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODWALLTHIRDPART_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWallThird_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_237;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1288,7 +1510,7 @@ class ItemWoodWallThird: CA_Magazine
 			output[] = {{"ItemWoodWall",1}};
 			input[] = {{"ItemWoodWallThird",3}};
 		};
-		class Crafting1 
+		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_237_1;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
@@ -1296,11 +1518,11 @@ class ItemWoodWallThird: CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemWoodGateFrame",1}};
 			input[] = {{"ItemWoodWallThird",6}};
-		};		
+		};
 	};
 };
 
-class ItemWoodWallWindow: CA_Magazine 
+class ItemWoodWallWindow: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1310,9 +1532,9 @@ class ItemWoodWallWindow: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WALLWITHWINDOW_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1322,7 +1544,7 @@ class ItemWoodWallWindow: CA_Magazine
 	};
 };
 
-class ItemWoodWallDoor: CA_Magazine 
+class ItemWoodWallDoor: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1332,16 +1554,16 @@ class ItemWoodWallDoor: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WALLWITHDOORWAY_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodSmallWallDoor_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_238;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1353,7 +1575,7 @@ class ItemWoodWallDoor: CA_Magazine
 	};
 };
 
-class ItemWoodWallWithDoor: CA_Magazine 
+class ItemWoodWallWithDoor: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1363,16 +1585,16 @@ class ItemWoodWallWithDoor: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WALLWITHDOOR_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodDoor";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1384,7 +1606,7 @@ class ItemWoodWallWithDoor: CA_Magazine
 	};
 };
 
-class ItemWoodWallWithDoorLocked: CA_Magazine 
+class ItemWoodWallWithDoorLocked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1394,9 +1616,9 @@ class ItemWoodWallWithDoorLocked: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WALLWITHDOORLOCKED_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1406,7 +1628,7 @@ class ItemWoodWallWithDoorLocked: CA_Magazine
 	};
 };
 
-class ItemWoodWallGarageDoor: CA_Magazine 
+class ItemWoodWallGarageDoor: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1416,16 +1638,16 @@ class ItemWoodWallGarageDoor: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODGARAGEDOOR_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_GarageWoodDoor";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1437,7 +1659,7 @@ class ItemWoodWallGarageDoor: CA_Magazine
 	};
 };
 
-class ItemWoodWallGarageDoorLocked: CA_Magazine 
+class ItemWoodWallGarageDoorLocked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1447,9 +1669,9 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODGARAGEDOORLOCKED_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1459,7 +1681,7 @@ class ItemWoodWallGarageDoorLocked: CA_Magazine
 	};
 };
 
-class ItemWoodOpenTopGarageDoor: CA_Magazine 
+class ItemWoodOpenTopGarageDoor: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1469,16 +1691,16 @@ class ItemWoodOpenTopGarageDoor: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODOPENTOPGARAGEDOOR_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodOpenTopGarageDoor";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1490,7 +1712,7 @@ class ItemWoodOpenTopGarageDoor: CA_Magazine
 	};
 };
 
-class ItemWoodOpenTopGarageDoorLocked: CA_Magazine 
+class ItemWoodOpenTopGarageDoorLocked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1500,9 +1722,9 @@ class ItemWoodOpenTopGarageDoorLocked: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_WOODOPENTOPGARAGEDOORLOCKED_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1512,7 +1734,7 @@ class ItemWoodOpenTopGarageDoorLocked: CA_Magazine
 	};
 };
 
-class ItemWoodWallLg: CA_Magazine 
+class ItemWoodWallLg: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1522,9 +1744,9 @@ class ItemWoodWallLg: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_LARGEWOODWALL_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1539,7 +1761,7 @@ class ItemWoodWallLg: CA_Magazine
 			output[] = {{"ItemWoodWallDoorLg",1}};
 			input[] = {{"ItemWoodWallLg",1}};
 		};
-		class Crafting1 
+		class Crafting1
 		{
 			text = $STR_EPOCH_PLAYER_235;
 			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
@@ -1548,7 +1770,7 @@ class ItemWoodWallLg: CA_Magazine
 			output[] = {{"ItemWoodWallWindowLg",1}};
 			input[] = {{"ItemWoodWallLg",1},{"PartGlass",1}};
 		};
-		class Crafting2 
+		class Crafting2
 		{
 			text = $STR_EPOCH_PLAYER_240;
 			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
@@ -1557,7 +1779,7 @@ class ItemWoodWallLg: CA_Magazine
 			output[] = {{"ItemWoodWallGarageDoor",1}};
 			input[] = {{"ItemWoodWallLg",1},{"PartWoodLumber",2}};
 		};
-		class Crafting3 
+		class Crafting3
 		{
 			text = $STR_EPOCH_PLAYER_240_1;
 			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
@@ -1565,11 +1787,11 @@ class ItemWoodWallLg: CA_Magazine
 			requiretools[] = {"ItemToolbox","Handsaw_DZE"};
 			output[] = {{"ItemWoodOpenTopGarageDoor",1}};
 			input[] = {{"ItemWoodWallLg",1},{"PartWoodLumber",2}};
-		};		
+		};
 	};
 };
 
-class ItemWoodWallWindowLg: CA_Magazine 
+class ItemWoodWallWindowLg: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1579,9 +1801,9 @@ class ItemWoodWallWindowLg: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_LARGEWALLWITHWINDOW_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1591,7 +1813,7 @@ class ItemWoodWallWindowLg: CA_Magazine
 	};
 };
 
-class ItemWoodWallDoorLg: CA_Magazine 
+class ItemWoodWallDoorLg: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1601,16 +1823,16 @@ class ItemWoodWallDoorLg: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_LARGEWALLWITHDOORWAY_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodLargeWallDoor_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_238;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1622,7 +1844,7 @@ class ItemWoodWallDoorLg: CA_Magazine
 	};
 };
 
-class ItemWoodWallWithDoorLg: CA_Magazine 
+class ItemWoodWallWithDoorLg: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1632,16 +1854,16 @@ class ItemWoodWallWithDoorLg: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_LARGEWALLWITHDOOR_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_LargeWoodDoor";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1653,7 +1875,7 @@ class ItemWoodWallWithDoorLg: CA_Magazine
 	};
 };
 
-class ItemWoodWallWithDoorLgLocked: CA_Magazine 
+class ItemWoodWallWithDoorLgLocked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1663,9 +1885,9 @@ class ItemWoodWallWithDoorLgLocked: CA_Magazine
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_LARGEWALLWITHDOORLOCKED_DESC;
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1675,7 +1897,7 @@ class ItemWoodWallWithDoorLgLocked: CA_Magazine
 	};
 };
 
-class ItemWoodGateFrame: CA_Magazine 
+class ItemWoodGateFrame: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1685,16 +1907,16 @@ class ItemWoodGateFrame: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "WoodGateFrame_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239_1_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1706,7 +1928,7 @@ class ItemWoodGateFrame: CA_Magazine
 	};
 };
 
-class ItemWoodGate: CA_Magazine 
+class ItemWoodGate: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1716,16 +1938,16 @@ class ItemWoodGate: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Land_DZE_WoodGate";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239_1;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1737,7 +1959,7 @@ class ItemWoodGate: CA_Magazine
 	};
 };
 
-class ItemWoodGateLocked: CA_Magazine 
+class ItemWoodGateLocked: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1747,9 +1969,9 @@ class ItemWoodGateLocked: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
@@ -1759,7 +1981,224 @@ class ItemWoodGateLocked: CA_Magazine
 	};
 };
 
-class door_frame_kit: CA_Magazine 
+class simple_footbridge_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_SIMPLE_FOOTBRIDGE;
+	descriptionShort = $STR_EQUIP_DESC_SIMPLE_FOOTBRIDGE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_SIMPLE_FOOTBRIDGE;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "SimpleFootbridge_DZ";
+		};
+	};
+};
+
+class wooden_footbridge_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_WOODEN_FOOTBRIDGE;
+	descriptionShort = $STR_EQUIP_DESC_WOODEN_FOOTBRIDGE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_WOODEN_FOOTBRIDGE;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "WoodenFootbridge_DZ";
+		};
+	};
+};
+
+class windbreak_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_WINDBREAK;
+	descriptionShort = $STR_EQUIP_DESC_WINDBREAK;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_WINDBREAK;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Windbreak_DZ";
+		};
+	};
+};
+
+class metal_container_1a_kit: CA_Magazine	// red
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1A;
+	descriptionShort = $STR_EQUIP_DESC_METAL_CONTAINER_1A;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1A;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalContainer1A_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1B;	// craft green
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1b_kit",1}};
+			input[] = {{"metal_container_1a_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G;	// craft white
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1g_kit",1}};
+			input[] = {{"metal_container_1a_kit",1}};
+		};
+		class Crafting2
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_2D;	// craft 2x red
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"metal_container_2d_kit",1}};
+			input[] = {{"metal_container_1a_kit",2}};
+		};
+	};
+};
+
+class metal_container_1b_kit: CA_Magazine	// green
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1B;
+	descriptionShort = $STR_EQUIP_DESC_METAL_CONTAINER_1A;	// re-use red desc
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1B;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalContainer1B_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A;	// craft red
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1a_kit",1}};
+			input[] = {{"metal_container_1b_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1G;	// craft white
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1g_kit",1}};
+			input[] = {{"metal_container_1b_kit",1}};
+		};
+	};
+};
+
+class metal_container_1g_kit: CA_Magazine	// white
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_1G;
+	descriptionShort = $STR_EQUIP_DESC_METAL_CONTAINER_1A;	// re-use red desc
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_1G;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalContainer1G_DZ";
+		};
+		class Crafting
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1A;	// craft red
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1a_kit",1}};
+			input[] = {{"metal_container_1g_kit",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_METAL_CONTAINER_1B;	// craft green
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {};
+			output[] = {{"metal_container_1b_kit",1}};
+			input[] = {{"metal_container_1g_kit",1}};
+		};
+	};
+};
+
+class metal_container_2d_kit: CA_Magazine	// 2x red
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_METAL_CONTAINER_2D;
+	descriptionShort = $STR_EQUIP_DESC_METAL_CONTAINER_2D;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_METAL_CONTAINER_2D;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "MetalContainer2D_DZ";
+		};
+	};
+};
+
+class door_frame_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1769,16 +2208,16 @@ class door_frame_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "DoorFrame_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_238;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1786,11 +2225,11 @@ class door_frame_kit: CA_Magazine
 			requiretools[] = {"ItemToolbox"};
 			output[] = {{"door_kit",1}};
 			input[] = {{"door_frame_kit",1},{"ItemPole",1},{"ItemTankTrap",1}};
-		};		
+		};
 	};
 };
 
-class door_kit: CA_Magazine 
+class door_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1800,16 +2239,16 @@ class door_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";
 			require[] = {"ItemToolbox"};
 			create = "Door_DZ";
 		};
-		class Crafting 
+		class Crafting
 		{
 			text = $STR_EPOCH_PLAYER_239;
 			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
@@ -1821,7 +2260,7 @@ class door_kit: CA_Magazine
 	};
 };
 
-class door_locked_kit: CA_Magazine 
+class door_locked_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -1831,9 +2270,9 @@ class door_locked_kit: CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 
-	class ItemActions 
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_ACTIONS_BUILD;
 			script = "spawn player_build;";

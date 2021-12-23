@@ -37,6 +37,33 @@ class ItemStone: CA_Magazine
 			output[] = {{"metalfence_foundation_kit",1}};
 			input[] = {{"ItemStone",8},{"MortarBucket",1},{"ItemRSJ",1}};
 		};				
+		class Crafting3
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CNC_BARRIER;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemEtool"};
+			output[] = {{"concrete_barrier_kit",1}};
+			input[] = {{"CementBag",3},{"ItemStone",2},{"ItemWire",1}};
+		};				
+		class Crafting4
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_DRAGONTEETH;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"dragonteeth_kit",1}};
+			input[] = {{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}};
+		};	
+		class Crafting5
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_DRAGONTEETH_BIG;
+			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"dragonteeth_big_kit",1}};
+			input[] = {{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}};
+		};
 	};		
 };
 
@@ -169,7 +196,7 @@ class CementBag: CA_Magazine
 	displayName = $STR_ITEM_NAME_CEMENT_BAG;
 	descriptionShort = $STR_ITEM_DESC_CEMENT_BAG;
 	picture = "\dayz_epoch_c\icons\equipment\ItemCementBag.paa";
-    model = "\z\addons\dayz_epoch_w\items\cement_bag.p3d";
+	model = "\z\addons\dayz_epoch_w\items\cement_bag.p3d";
 
 	class ItemActions
 	{	
@@ -182,5 +209,50 @@ class CementBag: CA_Magazine
 			output[] = {{"ItemConcreteBlock",1}};
 			input[] = {{"ItemStone",6},{"CementBag",1}};
 		};	
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CNC_BARRIER;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemEtool"};
+			output[] = {{"concrete_barrier_kit",1}};
+			input[] = {{"CementBag",3},{"ItemStone",2},{"ItemWire",1}};
+		};	
+		class Crafting2
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CONCRETE_WALL;
+			script = ";['Crafting2','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"concrete_wall_kit",1}};
+			input[] = {{"concrete_barrier_kit",5},{"CementBag",2}};
+		};	
+		class Crafting3
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_CONCRETE_PIPE;
+			script = ";['Crafting3','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"concrete_pipe_kit",1}};
+			input[] = {{"concrete_barrier_kit",6},{"CementBag",2}};
+		};	
+		class Crafting4
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_DRAGONTEETH;
+			script = ";['Crafting4','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"dragonteeth_kit",1}};
+			input[] = {{"concrete_wall_kit",1},{"ItemStone",6},{"CementBag",4}};
+		};	
+		class Crafting5
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_DRAGONTEETH_BIG;
+			script = ";['Crafting5','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox","ItemSledge"};
+			output[] = {{"dragonteeth_big_kit",1}};
+			input[] = {{"dragonteeth_kit",1},{"ItemStone",6},{"CementBag",4}};
+		};
 	};	
 };

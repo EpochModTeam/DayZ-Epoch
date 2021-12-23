@@ -72,6 +72,7 @@ class Land_Fire: House
 	actionBegin1 = "lightup";
 	actionEnd1 = "lightup";
 };
+
 class Land_Fire_barrel : Land_Fire
 {
 	model = "z\addons\dayz_communityassets\models\Barel7"; 
@@ -105,7 +106,9 @@ class Land_Fire_DZ : Land_Fire {
 	transportMaxMagazines = 1;
 	transportMaxWeapons = 0;
 	transportMaxBackpacks = 0;
-	offset[] = {0,1,0};
+	offset[] = {0,1,-0.05};
+	requireplot = 0;
+	nounderground = 0;
 	constructioncount = 1;
 	class UserActions {
 		class lightup {
@@ -129,7 +132,7 @@ class Land_Fire_DZ : Land_Fire {
 	};
 	vehicleClass = "DayZ Epoch Buildings";
 };
-	
+
 class Base_Fire_DZ : Land_Fire {
 	displayName = "Permanent fireplace";
 	transportMaxMagazines = 1;

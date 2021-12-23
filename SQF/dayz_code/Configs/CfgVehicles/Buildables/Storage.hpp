@@ -73,6 +73,8 @@ class OutHouse_DZ: Land_KBud
 	transportMaxMagazines = 4;
 	transportMaxWeapons = 4;
 	transportMaxBackpacks = 4;
+	removeoutput[] = {{"outhouse_kit",1}};
+	nounderground = 0;	// new
 	constructioncount = 2;
 	class transportmagazines {};
 };
@@ -82,12 +84,13 @@ class StorageShed_DZ: Land_Shed_M01
 	armor = 1600;
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\storage\Shed_M02.p3d";
-	offset[] = {0,4,0};
+	offset[] = {0,3,0};
 	displayName = $STR_EPOCH_STORAGESHED;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 400;
 	transportMaxWeapons = 40;
 	transportMaxBackpacks = 20;
+	removeoutput[] = {{"storage_shed_kit",1}};
 	constructioncount = 6;
 	GhostPreview = "StorageShed_Preview_DZ";	
 	
@@ -120,12 +123,13 @@ class StorageShed2_DZ: Land_Shed_M01
 	armor = 3200;
 	scope = 2;
 	model = "\z\addons\dayz_epoch_v\base_building\storage\Shed_M02.p3d";
-	offset[] = {0,4,0};
+	offset[] = {0,3,0};
 	displayName = $STR_EPOCH_STORAGESHED2;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 600;
 	transportMaxWeapons = 60;
 	transportMaxBackpacks = 30;
+	removeoutput[] = {{"storage_shed_kit2",1}};
 	constructioncount = 12;
 	GhostPreview = "StorageShed_Preview_DZ";	
 	
@@ -157,13 +161,14 @@ class WoodShack_DZ: Land_kulna
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,4,0};
+	offset[] = {0,3.5,0};
 	armor = 800;
 	displayName = $STR_EPOCH_WOODSHACK;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 100;
 	transportMaxWeapons = 10;
 	transportMaxBackpacks = 5;
+	removeoutput[] = {{"wood_shack_kit",1}};
 	constructioncount = 4;
 	nounderground = 0;
 	upgradeBuilding[] = {"WoodShack2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",4},{"equip_nails",2}}};
@@ -172,13 +177,14 @@ class WoodShack2_DZ: Land_kulna
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,4,0};
+	offset[] = {0,3.5,0};
 	armor = 1600;
 	displayName = $STR_EPOCH_WOODSHACK2;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 175;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 10;
+	removeoutput[] = {{"wood_shack_kit2",1}};
 	constructioncount = 8;
 	nounderground = 0;
 };
@@ -188,13 +194,14 @@ class Wooden_shed_DZ: Land_Shed_wooden
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,5,0};
+	offset[] = {0,4,0};
 	armor = 1000;
 	displayName = $STR_EPOCH_NICEWOODSHED;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 200;
 	transportMaxWeapons = 20;
 	transportMaxBackpacks = 10;
+	removeoutput[] = {{"wooden_shed_kit",1}};
 	nounderground = 0;
 	constructioncount = 5;
 	upgradeBuilding[] = {"Wooden_shed2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"PartWoodPlywood",8},{"equip_nails",2}}};
@@ -204,13 +211,14 @@ class Wooden_shed2_DZ: Land_Shed_wooden
 {
 	scope = 2;
 	destrType = "DestructBuilding";
-	offset[] = {0,5,0};
+	offset[] = {0,4,0};
 	armor = 2000;
 	displayName = $STR_EPOCH_NICEWOODSHED2;
 	vehicleClass = "DayZ Epoch Buildables";
 	transportMaxMagazines = 300;
 	transportMaxWeapons = 30;
 	transportMaxBackpacks = 15;
+	removeoutput[] = {{"wooden_shed_kit2",1}};
 	nounderground = 0;
 	constructioncount = 10;
 };
@@ -259,7 +267,7 @@ class Stoneoven_DZ: BuiltItems
 	scope = 2;
 	displayName = $STR_EPOCH_STONEOVEN;
 	destrType = "DestructTree";
-	offset[] = {0,1.5,0};
+	offset[] = {0,2,0};
 	model = "\z\addons\dayz_epoch_v\props\oven\oven.p3d";
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
@@ -412,7 +420,7 @@ class Arcade_DZ: BuiltItems
 	transportMaxWeapons = 15;	
 	transportMaxMagazines = 35;
 	transportmaxbackpacks = 5;	
-	offset[] = {0,2.5,0};
+	offset[] = {0,2,0};
 	removeoutput[] = {{"arcade_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
@@ -462,6 +470,7 @@ class StorageCrate_DZ: BuiltItems
 	transportMaxMagazines = 60;
 	transportmaxbackpacks = 1;
 	removeoutput[] = {{"storage_crate_kit",1}};
+	nounderground = 0;	// new
 	vehicleClass = "DayZ Epoch Buildables";
 };
 
@@ -479,5 +488,6 @@ class CamoStorageCrate_DZ: BuiltItems
 	transportmaxbackpacks = 6;
 	requireplot = 0;
 	removeoutput[] = {{"camo_storage_crate_kit",1}};
+	nounderground = 0;	// new
 	vehicleClass = "DayZ Epoch Buildables";
 };

@@ -65,7 +65,7 @@ class advanced_workBench_kit: CA_Magazine
 };
 
 // DayZ Mod workbench
-class ItemWorkBench : CA_Magazine
+class ItemWorkBench: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -76,10 +76,10 @@ class ItemWorkBench : CA_Magazine
 	descriptionShort = $STR_BLD_desc_ItemWorkBench;//"A Folded Workbench, required for House Building and Some Crafting"
 	vehicle = "WorkBench";
 	sfx = "tentunpack";
-	
-	class ItemActions 
+
+	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_BLD_build_ItemWorkBench;//"place WorkBench"
 			script = "; ['ItemWorkBench','Build'] spawn player_buildPlaceables;";
@@ -99,7 +99,7 @@ class wood_ramp_kit: CA_Magazine
 	descriptionShort = $STR_EPOCH_WOODENRAMP_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	
+
 	class ItemActions
 	{
 		class Build
@@ -121,7 +121,7 @@ class plot_pole_kit: CA_Magazine
 	descriptionShort = $STR_EPOCH_PLOT_DESC;
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-	
+
 	class ItemActions
 	{
 		class Build
@@ -156,7 +156,7 @@ class metal_panel_kit: CA_Magazine
 	};
 };
 
-class ItemCorrugated : CA_Magazine
+class ItemCorrugated: CA_Magazine
 {
 	scope = 2;
 	count = 1;
@@ -165,10 +165,10 @@ class ItemCorrugated : CA_Magazine
 	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
 	descriptionShort = $STR_EPOCH_CORRUGATEDFENCE_DESC;
-	
+
 	class ItemActions
 	{
-		class Build 
+		class Build
 		{
 			text = $STR_EPOCH_PLAYER_214;
 			script = "spawn player_build;";
@@ -205,11 +205,11 @@ class ItemCorrugated : CA_Magazine
 	};
 };
 
-class ItemWire : CA_Magazine
+class ItemWire: CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	type = 256;	
+	type = 256;
 	model = "\dayz_equip\models\Fence_wire_kit.p3d";
 	picture = "\dayz_equip\textures\equip_fencewire_kit_CA.paa";
 	displayName = $STR_EQUIP_NAME_WIRE_FENCE;
@@ -226,14 +226,56 @@ class ItemWire : CA_Magazine
 			create = "Fort_RazorWire"; // vanilla uses Wire_cat1
 			byPass = "byPassRoadCheck";
 		};
+		class Crafting
+		{
+			text = $STR_ACTION_CRAFT_FORT_WIRE;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"fortified_wire_kit",1}};
+			input[] = {{"ItemWire",1},{"ItemTankTrap",2}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_BARBED_GATE;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"barbed_gate_kit",1}};
+			input[] = {{"ItemWire",1},{"ItemTankTrap",2},{"ItemPole",2}};
+		};
 	};
 };
 
-class ItemTankTrap : CA_Magazine
+class fortified_wire_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	type = 256;	
+	type = 256;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	displayName = $STR_EQUIP_NAME_FORT_WIRE;
+	descriptionShort = $STR_EQUIP_DESC_FORT_WIRE;
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTION_BUILD_FORT_WIRE;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			consume[] = {"fortified_wire_kit"};
+			create = "FortifiedWire_DZ";
+			byPass = "byPassRoadCheck";
+		};
+	};
+};
+
+class ItemTankTrap: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
 	model = "\dayz_equip\models\tank_trap_kit.p3d";
 	picture = "\dayz_equip\textures\equip_tanktrap_kit_CA.paa";
 	displayName = $STR_EQUIP_NAME_TANK_TRAP;
@@ -250,19 +292,60 @@ class ItemTankTrap : CA_Magazine
 			create = "Hedgehog_DZ";
 			byPass = "byPassRoadCheck";
 		};
+		class Crafting
+		{
+			text = $STR_ACTION_CRAFT_FORT_WIRE;
+			script = ";['Crafting','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"fortified_wire_kit",1}};
+			input[] = {{"ItemTankTrap",2},{"ItemWire",1}};
+		};
+		class Crafting1
+		{
+			text = $STR_EPOCH_ACTION_CRAFT_BARBED_GATE;
+			script = ";['Crafting1','CfgMagazines', _id] spawn player_craftItem;";
+			neednearby[] = {"workshop"};
+			requiretools[] = {"ItemToolbox"};
+			output[] = {{"barbed_gate_kit",1}};
+			input[] = {{"ItemWire",1},{"ItemTankTrap",2},{"ItemPole",2}};
+		};
 	};
 };
 
-class ItemGenerator : CA_Magazine
+class barbed_gate_kit: CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	type = 256;	
+	type = 256;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+	displayName = $STR_EQUIP_NAME_BARBED_GATE;
+	descriptionShort = $STR_EQUIP_DESC_BARBED_GATE;
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_EPOCH_ACTION_BUILD_BARBED_GATE;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			consume[] = {"barbed_gate_kit"};
+			create = "BarbedGate_DZ";
+		};
+	};
+};
+
+class ItemGenerator: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
 	model = "\dayz_equip\models\generator_gear.p3d";
 	picture = "\dayz_equip\textures\equip_generator_ca.paa";
 	displayName = $STR_EQUIP_NAME_31;
 	descriptionShort = $STR_EQUIP_DESC_31;
-	
+
 	class ItemActions
 	{
 		class Build
