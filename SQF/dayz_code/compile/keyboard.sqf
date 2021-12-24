@@ -198,7 +198,6 @@ if (isNil "keyboard_keys") then {
 	local _forcesave = {
 		if (diag_tickTime - dayz_lastSave > 10) then {
 			call player_forceSave;
-			systemChat "saved";
 		};
 	};
 	local _drop = {
@@ -258,14 +257,6 @@ if (isNil "keyboard_keys") then {
 		};
 	};
 
-	//Server Menu
-	_informenu = {
-		if (isNull findDisplay 7777) then {
-			execVM "custom\tmenu\scripts\OM.sqf";
-		};
-		_handled = true;
-	};
-
 	local _block = {
 		_handled = true;
 	};
@@ -284,12 +275,8 @@ if (isNil "keyboard_keys") then {
 	{voice_keys = voice_keys + (actionKeys _x)} count voice_actions;
 	{channel_keys = channel_keys + (actionKeys _x)} count ["NextChannel","PrevChannel"];
 	keyboard_keys resize 256;
-	[[DIK_F4], _informenu] call _addArray;
 	[[DIK_ESCAPE], _cancelBuild] call _addArray;
-//	[[DIK_INSERT], {DZE_Q_alt = true;}] call _addArray;
 	[[DIK_INSERT], {if (isNil "DZE_buildItem") then {DZE_Q_alt = true;}}] call _addArray;
-
-//	[[DIK_A, DIK_D, DIK_LEFT, DIK_RIGHT], _interrupt] call _addArray;
 	[[DIK_F], _dze_f] call _addArray;
 	[[DIK_P], _dze_p] call _addArray;
 	[[DIK_T], _dze_t] call _addarray;	// terrain mode
@@ -300,15 +287,10 @@ if (isNil "keyboard_keys") then {
 	[[DIK_BACK], _dze_back] call _addarray;
 	[[DIK_PRIOR], _dze_PgUp] call _addArray;
 	[[DIK_NEXT], _dze_PgDn] call _addArray;
-
 	[[DIK_0], _autoRun] call _addArray;
 	[[DIK_NUMPADMINUS,DIK_LSHIFT], _filterCheat] call _addArray;
 	[[DIK_SPACE], {DZE_5 = true;}] call _addArray;
 	[actionKeys "User6", {DZE_F = true;}] call _addArray;
-//	[actionKeys "User7", {DZE_Q_ctrl = true;}] call _addArray;
-//	[actionKeys "User8", {DZE_Z_ctrl = true;}] call _addArray;
-//	[actionKeys "User13", {DZE_Q_alt = true;}] call _addArray;
-//	[actionKeys "User14", {DZE_Z_alt = true;}] call _addArray;
 	[actionKeys "User7", {if (isNil "DZE_buildItem") then {DZE_Q_ctrl = true;}}] call _addArray;
 	[actionKeys "User8", {if (isNil "DZE_buildItem") then {DZE_Z_ctrl = true;}}] call _addArray;
 	[actionKeys "User13", {if (isNil "DZE_buildItem") then {DZE_Q_alt = true;}}] call _addArray;
@@ -325,10 +307,8 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "Gear", _gear] call _addArray;
 	[actionKeys "Prone", _drop] call _addArray;
 	[actionKeys "Crouch", _drop] call _addArray;
-
 	[actionKeys "MoveLeft", _interrupt] call _addArray;	// Delete Key
 	[actionKeys "MoveRight", _interrupt] call _addArray;	// End Key
-
 	[actionKeys "MoveForward", _interrupt] call _addArray;	// W / Up Arrow Keys
 	[actionKeys "MoveBack", _interrupt] call _addArray;	// S / Down Arrow Keys
 	[actionKeys "TurnLeft", _interrupt] call _addArray;	// A / Left Arrow Keys
@@ -338,7 +318,6 @@ if (isNil "keyboard_keys") then {
 	[[DIK_DOWN], _dze_down] call _addArray;
 	[[DIK_LEFT], _dze_left] call _addArray;
 	[[DIK_RIGHT], _dze_right] call _addArray;
-
 	[actionKeys "PushToTalk", _noise] call _addArray;
 	[actionKeys "PushToTalkAll", _noise] call _addArray;
 	[actionKeys "PushToTalkCommand", _noise] call _addArray;
@@ -353,32 +332,31 @@ if (isNil "keyboard_keys") then {
 	[actionKeys "User20", _journal] call _addArray;
 	[actionKeys "Diary", _journal] call _addArray;
 	[actionKeys "NetworkStats", _journal] call _addArray;
+	[actionKeys "SelectAll", _block] call _addArray;
 	[[DIK_F1], _muteSound] call _addArray;
 	[[DIK_F3], _statusUI] call _addArray;
 	[[DIK_F5], {if (diag_tickTime - dayz_lastSave > 10) then {call player_forceSave;};_handled = true;}] call _addArray;
-//	[[DIK_TAB, DIK_DELETE], {if (isNil "DZE_buildItem") then {call _forcesave;}}] call _addArray;
 	[[DIK_TAB], _dze_tab] call _addArray;
-
 	[actionKeys "LeanLeft",  {DZE_4 = true; dayz_dodge = true;}] call _addArray;
 	[actionKeys "LeanRight", {DZE_6 = true; dayz_dodge = true;}] call _addArray;
-
 	[[DIK_Q], _dze_q] call _addArray;
 	[[DIK_E], _dze_e] call _addArray;
-
 	[actionKeys "GetOver", _bunnyhop] call _addArray; // V
 	[actionKeys "ForceCommandingMode", {DZE_5 = true; _handled = true;}] call _addArray;
-	[[DIK_F2, DIK_F6, DIK_F7, DIK_F8, DIK_F9, DIK_F10, DIK_F11, DIK_F12, DIK_4, DIK_5, DIK_6, DIK_7, DIK_8, DIK_9], _block] call _addArray;
+	[[DIK_F2, DIK_F4, DIK_F6, DIK_F7, DIK_F8, DIK_F9, DIK_F10, DIK_F11, DIK_F12, DIK_4, DIK_5, DIK_6, DIK_7, DIK_8, DIK_9], _block] call _addArray;
+	
 	if (dayz_groupSystem) then {
 		[[DIK_F5], _openGroups] call _addArray;
 		[[DIK_LWIN, DIK_RWIN], {dayz_groupNameTags = !dayz_groupNameTags; _handled = true;}] call _addArray;
 		[actionKeys "TacticalView", _block] call _addArray;
 	};
+	
 	[actionKeys "DSInterface", _block] call _addArray;
-	//diag_log "keyboard_keys reset";
 };
 
 if (r_player_unconsciousInputDisabled) exitWith {true};
 local _code = keyboard_keys select _dikCode;
+
 if (!isNil "_code") then {
     call _code;
 };
