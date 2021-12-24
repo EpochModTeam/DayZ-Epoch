@@ -33055,8 +33055,8 @@
 			<German>Bauen</German>
 		</Key>
 		<Key ID="STR_EPOCH_TUT_ADJ_DEGREES_KEYS">
-			<English>[-] [=] </English>
-			<German>[ß] [´] </German>
+			<English>-=</English>
+			<German>ß´</German>
 		</Key>	
 		<Key ID="STR_EPOCH_BUILD_UI_SNAP">
 			<English>Snap</English>

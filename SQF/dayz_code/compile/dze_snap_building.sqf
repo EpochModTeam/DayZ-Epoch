@@ -44,6 +44,9 @@ local _WBR		= _WHT + "]";
 local _DBR		= "] [";
 local _BRW		= "] " + _WHT;
 local _hpsp		= _hyphen + _PgUp + _slash + _PgDn + _BRW;
+local _degKeys		= toArray (localize "STR_EPOCH_TUT_ADJ_DEGREES_KEYS");
+local _decrease		= toString [_degKeys select 0];
+local _increase		= toString [_degKeys select 1];
 
 local _HK = _OBR + _tab + _DBR + localize "STR_EPOCH_TUT_KEY_SHIFT" + _hyphen + _tab + _BRW	+ localize "STR_EPOCH_TUT_SNAP_NEXT_PREV"	+ _NL;
 _HK = _HK + _OBR + _PgUp + _DBR + _PgDn + _BRW							+ localize "STR_EPOCH_TUT_HEIGHT10"		+ _NL;
@@ -51,7 +54,7 @@ _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_CTRL" + _hpsp					+ localize "STR
 _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_ALT"  + _hpsp					+ localize "STR_EPOCH_TUT_HEIGHT100"		+ _NL;
 _HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_ARROWS" + _BRW					+ _strPitch + " / " + _strBank			+ _NL;
 _HK = _HK + _ORA + "[Q] [E] "									+ _WHT + _strRotate				+ _NL;
-_HK = _HK + _ORA + localize "STR_EPOCH_TUT_ADJ_DEGREES_KEYS"				+ _WHT + localize "STR_EPOCH_TUT_ADJ_DEGREES"	+ _NL;
+_HK = _HK + _OBR + _decrease + _DBR + _increase + _BRW						+ localize "STR_EPOCH_TUT_ADJ_DEGREES"		+ _NL;
 _HK = _HK + _spacing;
 _HK = _HK + _ORA + "[L] "									+ _WHT + localize "STR_EPOCH_TUT_LOCAL" + " [%1"+ _NL;
 _HK = _HK + _ORA + "[T] "									+ _VEC + localize "STR_EPOCH_TUT_TERRAIN"	+ _NL;
@@ -59,9 +62,9 @@ _HK = _HK + _ORA + "[P] "									+ _WHT + localize "STR_EPOCH_TUT_BOUNDARY"	+ _
 _HK = _HK + _ORA + "[F] "									+ _WHT + localize "STR_EPOCH_TUT_RELEASE_HOLD"	+ _NL;
 _HK = _HK + _ORA + "[H] "									+ _WHT + localize "STR_EPOCH_TUT_HIDE_PANEL"	+ _NL;
 _HK = _HK + _spacing;
-_HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_ESC" + _BRW					+ localize "STR_EPOCH_TUT_CANCEL"		+ _NL;
-_HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_BACKSPACE" + _BRW				+ localize "STR_EPOCH_TUT_RESET"		+ _NL;
-_HK = _HK + _OBR + localize "STR_EPOCH_TUT_KEY_SPACEBAR" + _BRW					+ localize "STR_EPOCH_TUT_BUILD"		+ _END;
+local _H2 = _OBR + localize "STR_EPOCH_TUT_KEY_ESC" + _BRW					+ localize "STR_EPOCH_TUT_CANCEL"		+ _NL;
+_H2 = _H2 + _OBR + localize "STR_EPOCH_TUT_KEY_BACKSPACE" + _BRW				+ localize "STR_EPOCH_TUT_RESET"		+ _NL;
+_H2 = _H2 + _OBR + localize "STR_EPOCH_TUT_KEY_SPACEBAR" + _BRW					+ localize "STR_EPOCH_TUT_BUILD"		+ _END;
 
 local _distance = 0;
 if (_distFromPlot != "0") then {
@@ -80,8 +83,8 @@ local _snapMaxIdx	= (count _snapList) - 3;			// 0-based index max
 local _pitch		= 0;
 local _bank		= 0;
 local _rotate		= 0;
-local _localModeOn	= _GRN	+ localize "STR_EPOCH_TUT_LOCAL_ON"	+ _WBR;
-local _localModeOff	= _ORA	+ localize "STR_EPOCH_TUT_LOCAL_OFF"	+ _WBR;
+local _localModeOn	= _GRN	+ (localize "STR_EPOCH_TUT_LOCAL_ON")	+ _WBR;
+local _localModeOff	= _ORA	+ (localize "STR_EPOCH_TUT_LOCAL_OFF")	+ _WBR;
 local _localText	= "";
 
 local _tutDistance	= _ORA + localize "STR_EPOCH_TUT_DISTANCE" + _colon + "%1" + _pipe + localize "STR_EPOCH_TUT_RADIUS" + _colon + "%2" + _NL;
@@ -186,6 +189,7 @@ while {1==1} do {
 		_txt = _txt + format[_tutDegrees,	DZE_curDegree];
 		_txt = _txt + _spacing;
 		_txt = _txt + format[_HK, _localText];	// hotkeys
+		_txt = _txt + _H2;
 
 		local _screenX	= 0.67 * safezoneW + safezoneX;
 		local _screenY	= 0.46 * safezoneH + safezoneY;
@@ -195,6 +199,7 @@ while {1==1} do {
 		local _rscLayer	= 17;
 
 		[_txt, _screenX, _screenY, _duration, _fadeIn, _delta, _rscLayer] spawn BIS_fnc_dynamicText;
+
 	};
 
 	uiSleep 0.08;
