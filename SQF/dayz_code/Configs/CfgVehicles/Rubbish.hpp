@@ -4,7 +4,7 @@ class Rubbish1 : Strategic
 	model = "\CA\misc\garbage_paleta";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch Rubbish";
 };
 
 class Rubbish1_DZE : Rubbish1
@@ -20,7 +20,7 @@ class Rubbish2 : Strategic
 	model = "\CA\misc\garbage_misc";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch Rubbish";
 };
 
 class Rubbish2_DZE : Rubbish2
@@ -36,7 +36,7 @@ class Rubbish3 : Strategic
 	model = "\CA\misc\ground_garbage_square5";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch Rubbish";
 };
 
 class Rubbish4 : Strategic
@@ -45,7 +45,7 @@ class Rubbish4 : Strategic
 	model = "\CA\misc\ground_garbage_square3";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch Rubbish";
 };
 
 class Rubbish5 : Strategic
@@ -54,7 +54,7 @@ class Rubbish5 : Strategic
 	model = "\CA\misc\junkpile";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 
 class Rubbish5_DZE : Rubbish5
@@ -69,7 +69,7 @@ class Misc_Backpackheap : Strategic
 	model = "\Ca\misc\Misc_Backpackheap";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch Rubbish";
 };
 class Rubbish6_DZE : Misc_Backpackheap
 {
@@ -83,7 +83,7 @@ class Land_Misc_Rubble_EP1 : Strategic
 	 model = "\ca\Structures_E\Misc\Misc_Construction\Misc_Rubble_EP1";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 class Rubbish7_DZE : Land_Misc_Rubble_EP1
 {
@@ -97,7 +97,7 @@ class MAP_rubble_metal_plates_01 : Strategic
 	model = "\Ca\Structures\Ruins\rubble_metal_plates_01.p3d";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 class Rubbish8_DZE : MAP_rubble_metal_plates_01
 {
@@ -111,7 +111,7 @@ class MAP_rubble_metal_plates_03 : Strategic
 	model = "\Ca\Structures\Ruins\rubble_metal_plates_03.p3d";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";
+	vehicleClass = "DayZ Epoch Rubbish";
 };
 class Rubbish9_DZE : MAP_rubble_metal_plates_03
 {
@@ -125,7 +125,7 @@ class MAP_rubble_bricks_01 : Strategic
 	model = "\Ca\Structures\Ruins\rubble_bricks_01.p3d";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 class Rubbish10_DZE : MAP_rubble_bricks_01
 {
@@ -139,7 +139,7 @@ class MAP_rubble_metal_plates_04 : Strategic
 	model = "\Ca\Structures\Ruins\rubble_metal_plates_04.p3d";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 class Rubbish11_DZE : MAP_rubble_metal_plates_04
 {
@@ -153,7 +153,7 @@ class Land_Misc_Garb_Heap_EP1 : Strategic
 	model = "\ca\Structures_E\Misc\Misc_Garbage\Misc_Garb_Heap_EP1";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 class Rubbish12_DZE : Land_Misc_Garb_Heap_EP1
 {
@@ -167,7 +167,7 @@ class MAP_rubble_wood_01 : Strategic
 	model = "\Ca\Structures\Ruins\rubble_wood_01.p3d";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 class Rubbish13_DZE : MAP_rubble_wood_01
 {
@@ -181,7 +181,7 @@ class MAP_rubble_wood_02 : Strategic
 	model = "\Ca\Structures\Ruins\rubble_wood_02.p3d";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 class Rubbish14_DZE : MAP_rubble_wood_02
 {
@@ -195,7 +195,7 @@ class MAP_Misc_TyreHeap : Strategic
 	model = "\CA\misc\Misc_TyreHeap.p3d";
 	mapSize = 2;
 	displayName = $STR_EPOCH_PILE_RUBBISH;
-	vehicleClass = "DayZ Epoch Misc";	
+	vehicleClass = "DayZ Epoch Rubbish";	
 };
 class Rubbish15_DZE : MAP_Misc_TyreHeap
 {
