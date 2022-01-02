@@ -90,6 +90,27 @@ class ItemWorkBench: CA_Magazine
 	};
 };
 
+class ItemWorkBench_DZE : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_BLD_name_ItemWorkBench;//"Work Bench (Packed)"
+	model = "z\addons\dayz_buildings\models\workbench_flat.p3d";
+	picture = "\z\addons\dayz_buildings\equip\item_workbench.paa"; // add to PBO
+	descriptionShort = $STR_BLD_desc_ItemWorkBench;//"A Folded Workbench, required for House Building and Some Crafting"
+	
+	class ItemActions 
+	{
+		class Build 
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "WorkBench_DZE";
+		};
+	};
+}; 
 class wood_ramp_kit: CA_Magazine
 {
 	scope = 2;

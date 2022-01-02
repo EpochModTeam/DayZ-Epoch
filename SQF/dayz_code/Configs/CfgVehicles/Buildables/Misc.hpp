@@ -27,6 +27,28 @@ class WorkBench_DZ: ModularItems
 	nounderground = 0;
 };
 
+class WorkBench_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	cost = 100;
+	offset[] = {0,2,0.5};
+	model = "z\addons\dayz_buildings\models\workbench.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 400;
+	displayName = $STR_EPOCH_WORKBENCH;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"PartWoodPlywood",1},{"PartWoodLumber",2}};
+	requireplot = 0;
+	nounderground = 0;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 1;
+};
+
 class FuelPump_DZ: BuiltItems
 {
 	scope = 2;
