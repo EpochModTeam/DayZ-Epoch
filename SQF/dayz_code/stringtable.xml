@@ -18831,6 +18831,20 @@
 			<English>10Rnd. Lee Enfield mag.</English>
 			<Russian>10п. SMLE Мк III</Russian>
 		</Key>
+		<Key ID="STR_DZ_303BRITISH_DESC">
+			<Original>Army rifle&lt;br/&gt;Caliber: .303</Original>
+			<Chinese>Army rifle&lt;br/&gt;Caliber: .303</Chinese>
+			<French>Fusil militaire&lt;br/&gt;Calibre : .303</French>
+			<Spanish>Rifle del ejército&lt;br/&gt;Calibre: .303</Spanish>
+			<Italian>Fucile dell'esercito&lt;br/&gt;Calibro: .303</Italian>
+			<Hungarian>Army rifle&lt;br/&gt;Caliber: .303</Hungarian>
+			<Polish>Karabin powtarzalny&lt;br/&gt;Kaliber: .303</Polish>
+			<Russian>Армейская винтовка&lt;br/&gt;Калибр: .303</Russian>
+			<German>Armeegewehr&lt;br/&gt;Kaliber: .303</German>
+			<Czech>Opakovací puška&lt;br/&gt;Kalibr: .303</Czech>
+			<English>Army rifle&lt;br/&gt;Caliber: .303</English>
+			<Japanese>Army rifle&lt;br/&gt;Caliber: .303</Japanese>
+		</Key>
 		<Key ID="STR_DZ_MAG_15RND_W1866_NAME">
 			<English>15Rnd. 1866 ammo</English>
 			<German>15Rnd. 1866er</German>
