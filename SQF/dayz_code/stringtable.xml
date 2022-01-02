@@ -4013,6 +4013,14 @@
 			<French>Une canette en alu, contenant un breuvage goutu composé de sucre, d&apos;arômes artificiels et de conservateurs.</French>
 			<Czech>Hliníková plechovka, která obsahuje chutný sycený nápoj plný cukru, umělých příchutí a konzervačních látek.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_SODA_CAN_FROZEN">
+			<English>Soda Can (Frozen)</English>
+			<German>Getränkedose (Gefroren)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_SODA_CAN_FROZEN">
+			<English>An aluminum can containing a tasty carbonated beverage full of sugar, artificial flavors, and preservatives. The content seems to be frozen.</English>
+			<German>Eine Alumniumdose, voll mit einem köstlichen kohlensäurehaltigen Getränk voller Zucker, künstlicher Aromen und Konservierungsmitteln. Der Inhalt scheint noch gefroren zu sein.</German>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_MOUNTAIN_DEW">
 			<English>Soda Can (Mountain Dew)</English>
 			<German>Dose (Mountain Dew)</German>
@@ -5708,6 +5716,22 @@
 			<Spanish>Una limpia y cerrada lata sin etiqueta.</Spanish>
 			<French>Une boîte intacte. L&apos;étiquette est manquante.</French>
 			<Czech>Čistá a ještě neotevřená plechovka, údaje nejsou čitelné. Překvapení šéfkuchaře.</Czech>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_DOG">
+			<English>Can (Dogfood)</English>
+			<German>Dose (Hundefutter)</German>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_DOG">
+			<English>A clean, unopened tin can. The label says that it contains dogfood.</English>
+			<German>Eine saubere, ungeöffnete Dose. Das Etikett sagt es beinhaltet Hundefutter.</German>
+		</Key>
+		<Key ID="STR_FOOD_NAME_CAN_FROZEN">
+			<English>Can (Frozen)</English>
+			<German>Dose (Gefroren)</German>
+		</Key>
+		<Key ID="STR_FOOD_DESC_CAN_FROZEN">
+			<English>A clean, unopened tin can. The content seems to be frozen.</English>
+			<German>Eine saubere, ungeöffnete Dose. Der Inhalt scheint noch gefroren zu sein.</German>
 		</Key>
 		<Key ID="STR_FOOD_NAME_CAN_RUS_STEW">
 			<English>Can (Stew)</English>

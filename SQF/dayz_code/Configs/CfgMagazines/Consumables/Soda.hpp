@@ -207,16 +207,36 @@ class ItemSherbet : ItemSoda
 	consumeOutput = "ItemSodaSherbetEmpty";
 };
 
-class ItemSodaRbull : ItemSodaCoke {
+class ItemSodaRbull : ItemSodaCoke 
+{
 	displayName = $STR_FOOD_NAME_RBULL;
 	descriptionShort = $STR_FOOD_DESC_RBULL;
 	model = "z\addons\dayz_epoch\models\soda_redbull.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_soda_rbull_CA.paa";
 };
 
-class ItemSodaOrangeSherbet : ItemSodaCoke {
+class ItemSodaOrangeSherbet : ItemSodaCoke 
+{
 	displayName = $STR_FOOD_NAME_OSHERBET;
 	descriptionShort = $STR_FOOD_DESC_OSHERBET;
 	model = "z\addons\dayz_epoch\models\soda_sherbet.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\soda_orangesherbet_ca.paa";
+};
+
+class ItemSodaFrozen1 : ItemSoda
+{
+	scope = 2;	
+	model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
+	displayName = $STR_EQUIP_NAME_SODA_CAN_FROZEN;
+	descriptionShort = $STR_EQUIP_DESC_SODA_CAN_FROZEN;	
+};
+
+class ItemSodaFrozen2 : ItemSoda
+{
+	scope = 2;	
+	model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
+	displayName = $STR_EQUIP_NAME_SODA_CAN_FROZEN;
+	descriptionShort = $STR_EQUIP_DESC_SODA_CAN_FROZEN;	
 };

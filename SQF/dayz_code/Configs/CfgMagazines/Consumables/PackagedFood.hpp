@@ -225,6 +225,48 @@ class FoodCanRusUnlabeled : FoodPackaged
 	consumeOutput = "FoodCanRusUnlabeledEmpty";
 };
 
+class FoodCanDog1 : FoodPackaged
+{
+	scope = 2;	
+	model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
+	displayName = $STR_FOOD_NAME_CAN_DOG;
+	descriptionShort = $STR_FOOD_DESC_CAN_DOG;	
+	bloodRegen = 100;
+	Nutrition[] = {0,350,0,0};	
+	consumeOutput = "FoodCanUnlabeledEmpty";
+};
+
+class FoodCanDog2 : FoodPackaged
+{
+	scope = 2;
+	model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
+	displayName = $STR_FOOD_NAME_CAN_DOG;
+	descriptionShort = $STR_FOOD_DESC_CAN_DOG;	
+	bloodRegen = 100;
+	Nutrition[] = {0,300,0,0};	
+	consumeOutput = "FoodCanRusUnlabeledEmpty";
+};
+
+class FoodCanFrozen1 : FoodPackaged
+{
+	scope = 2;	
+	model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
+	displayName = $STR_FOOD_NAME_CAN_FROZEN;
+	descriptionShort = $STR_FOOD_DESC_CAN_FROZEN;
+};
+
+class FoodCanFrozen2 : FoodPackaged
+{
+	scope = 2;
+	model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
+	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
+	displayName = $STR_FOOD_NAME_CAN_FROZEN;
+	descriptionShort = $STR_FOOD_DESC_CAN_FROZEN;
+};
+
 class FoodCanRusStew : FoodPackaged
 {
 	scope = 2;	
