@@ -34940,6 +34940,34 @@
 			<German>Eimer</German>
 			<Russian>Ведро</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_DESC_METAL_BUCKET">
+			<English>An empty bucket</English>
+			<German>Ein leerer Eimer</German>
+		</Key>
+		<Key ID="STR_EPOCH_METAL_BUCKET_WATER">
+			<English>Bucket (Water)</English>
+			<German>Eimer (Wasser)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_WATER">
+			<English>A bucket containing water</English>
+			<German>Ein Eimer Wasser</German>
+		</Key>
+		<Key ID="STR_EPOCH_METAL_BUCKET_FUEL">
+			<English>Bucket (Fuel)</English>
+			<German>Eimer (Treibstoff)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_FUEL">
+			<English>A bucket containing fuel</English>
+			<German>Ein Eimer Treibstoff</German>
+		</Key>
+		<Key ID="STR_EPOCH_METAL_BUCKET_MILK">
+			<English>Bucket (Milk)</English>
+			<German>Eimer (Milch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_METAL_BUCKET_MILK">
+			<English>A bucket containing milk</English>
+			<German>Ein Eimer Milch</German>
+		</Key>
 		<Key ID="STR_EPOCH_SUITCASE_DIAMONDS">
 			<English>Suitcase with Diamonds</English>
 			<German>Koffer mit Diamanten</German>
