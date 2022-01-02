@@ -27103,6 +27103,110 @@
 			<German>Rubin</German>
 			<Russian>Рубин</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_GEMSUITCASE_EMPTY">
+			<English>Suitcase (Empty)</English>
+			<German>Koffer (Leer)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_EMPTY">
+			<English>An empty suitcase</English>
+			<German>Ein leerer Koffer</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_PACK_TOPAZ">
+			<English>Pack 10 Topaz</English>
+			<German>10 Topase einpacken</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_PACK_OBSIDIAN">
+			<English>Pack 10 Obsidian</English>
+			<German>10 Obsidian einpacken</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_PACK_SAPPHIRE">
+			<English>Pack 10 Sapphire</English>
+			<German>10 Saphire einpacken</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_PACK_AMETHYST">
+			<English>Pack 10 Amethyst</English>
+			<German>10 Amethysten einpacken</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_PACK_EMERALD">
+			<English>Pack 10 Emerald</English>
+			<German>10 Smaragde einpacken</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_PACK_CITRINE">
+			<English>Pack 10 Citrine</English>
+			<German>10 Citrine einpacken</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_PACK_RUBY">
+			<English>Pack 10 Ruby</English>
+			<German>10 Rubine einpacken</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLAYER_PACK_ALL">
+			<English>Pack all 7 Gems</English>
+			<German>Alle 7 Edelsteine einpacken</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GEMSUITCASE_Topaz">
+			<English>Suitcase (10 Topaz)</English>
+			<German>Koffer (10 Topase)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_Topaz">
+			<English>An suitcase containing 10 Topaz</English>
+			<German>Ein Koffer mit 10 Topasen</German>
+		</Key>		
+		<Key ID="STR_EPOCH_GEMSUITCASE_OBSIDIAN">
+			<English>Suitcase (10 Obisidian)</English>
+			<German>Koffer (10 Obisidiane)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_OBSIDIAN">
+			<English>An suitcase containing 10 Obisidian</English>
+			<German>Ein Koffer mit 10 Obisidian</German>
+		</Key>
+		<Key ID="STR_EPOCH_GEMSUITCASE_SAPPHIRE">
+			<English>Suitcase (10 Sapphire)</English>
+			<German>Koffer (10 Saphire)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_SAPPHIRE">
+			<English>An suitcase containing 10 Sapphire</English>
+			<German>Ein Koffer mit 10 Saphiren</German>
+		</Key>
+		<Key ID="STR_EPOCH_GEMSUITCASE_AMETHYST">
+			<English>Suitcase (10 Amethyst)</English>
+			<German>Koffer (10 Amethyste)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_AMETHYST">
+			<English>An suitcase containing 10 Amethyst</English>
+			<German>Ein Koffer mit 10 Amethysten</German>
+		</Key>
+		<Key ID="STR_EPOCH_GEMSUITCASE_EMERALD">
+			<English>Suitcase (10 Emerald)</English>
+			<German>Koffer (10 Smaragde)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_EMERALD">
+			<English>An suitcase containing 10 Emerald</English>
+			<German>Ein Koffer mit 10 Smaragde</German>
+		</Key>
+		<Key ID="STR_EPOCH_GEMSUITCASE_CITRINE">
+			<English>Suitcase (10 Citrine)</English>
+			<German>Koffer (10 Citrine)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_CITRINE">
+			<English>An suitcase containing 10 Citrine</English>
+			<German>Ein Koffer mit 10 Citrine</German>
+		</Key>
+		<Key ID="STR_EPOCH_GEMSUITCASE_RUBY">
+			<English>Suitcase (10 Ruby)</English>
+			<German>Koffer (10 Rubine)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_RUBY">
+			<English>An suitcase containing 10 Ruby</English>
+			<German>Ein Koffer mit 10 Rubinen</German>
+		</Key>
+		<Key ID="STR_EPOCH_GEMSUITCASE_ALL">
+			<English>Suitcase (7 Gems)</English>
+			<German>Koffer (7 Edelsteine)</German>
+		</Key>
+		<Key ID="STR_EPOCH_DESC_GEMSUITCASE_ALL">
+			<English>An suitcase containing 7 different gems</English>
+			<German>Ein Koffer mit 7 verschiedenen Edelsteinen</German>
+		</Key>
 		<Key ID="STR_ORE_NAME_IRON">
 			<English>Iron Ore</English>
 			<German>Eisenerz</German>
