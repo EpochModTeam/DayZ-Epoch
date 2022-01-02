@@ -33702,6 +33702,326 @@
 			<German>Bauplan</German>
 			<Russian>Чертёж</Russian>
 		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_01">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_01">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_02">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_02">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_03">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_03">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_04">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_04">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_05">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_05">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_06">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_06">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_07">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_07">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_08">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_08">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_09">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_09">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_10">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_10">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_11">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_11">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_12">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_12">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_13">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_13">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_14">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_14">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_15">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_15">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_16">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_16">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_17">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_17">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_18">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_18">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_19">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_19">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_20">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_20">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_21">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_21">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_22">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_22">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_23">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_23">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_24">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_24">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_25">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_25">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_26">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_26">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_27">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_27">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_28">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_28">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_29">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_29">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_30">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_30">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_31">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_31">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_32">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_32">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_33">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_33">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_34">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_34">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_35">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_35">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_36">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_36">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_37">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_37">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_38">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_38">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_39">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_39">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_STASHFILE_40">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_STASHFILE_40">
+			<English>Stash File</English>
+			<German>Versteck Mappe</German>
+		</Key>
 		<Key ID="STR_ITEM_NAME_PILEOFBOOKS">
 			<English>Pile of books</English>
 			<German>Stapel Bücher</German>

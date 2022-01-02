@@ -758,3 +758,403 @@ class PileMedBooks: CA_Magazine
 	picture = "\dayz_epoch_c\icons\equipment\ItemPileMedBooks.paa";
     model = "\z\addons\dayz_epoch_w\items\books_med.p3d";
 };
+
+class StashFile_01: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_01;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_01;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_02: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_02;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_02;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_03: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_03;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_03;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_04: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_04;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_04;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_05: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_05;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_05;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_06: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_06;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_06;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_07: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_07;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_07;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_08: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_08;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_08;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_09: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_09;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_09;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_10: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_10;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_10;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_11: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_11;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_11;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_12: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_12;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_12;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_13: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_13;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_13;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_14: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_14;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_14
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_15: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_15;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_15;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_16: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_16;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_16;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_17: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_17;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_17;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_18: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_18;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_18;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_19: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_19;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_19;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_20: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_20;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_20;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_21: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_21;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_21;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_22: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_22;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_22;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_23: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_23
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_23;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_24: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_24;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_24;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_25: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_25;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_25;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_26: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_26;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_26;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_27: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_27;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_27;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_28: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_28;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_28;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_29: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_29;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_29;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_30: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_30;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_30;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_31: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_31;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_31;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_32: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_32;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_32;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_33: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_33;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_33;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_34: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_34;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_34;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_35: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_35;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_35;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_36: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_36;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_36;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_37: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_37;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_37;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_38: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_38;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_38;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_39: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_39;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_39;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
+
+class StashFile_40: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	displayName = $STR_ITEM_NAME_STASHFILE_40;
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_40;
+	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
+};
