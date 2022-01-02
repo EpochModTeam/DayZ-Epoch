@@ -90,6 +90,7 @@ AllowedVehiclesList = [
 	["SUV_TK_CIV_EP1_DZE",_Ratio1],
 	["SUV_White",_Ratio1],
 	["SUV_Yellow",_Ratio1],
+	["SUV_Blue_White",_Ratio1],
 	["Tractor_DZE",_Ratio3],
 	["TT650_Civ_DZE",_Ratio3],
 	["TT650_Ins_DZE",_Ratio3],

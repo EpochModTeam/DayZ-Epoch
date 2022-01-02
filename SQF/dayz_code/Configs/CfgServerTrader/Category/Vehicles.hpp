@@ -78,6 +78,7 @@ class Category_41 {
 	class SUV_White {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class SUV_Yellow {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {5,"ItemGoldBar"};};
 	class SUV_Camo {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
+	class SUV_Blue_White {type = "trade_any_vehicle";buy[] = {2,"ItemGoldBar10oz"};sell[] = {1,"ItemGoldBar10oz"};};
 	class Nissan_Orange_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class Nissan_Blue_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};
 	class Nissan_Mod_DZE {type = "trade_any_vehicle";buy[] = {4,"ItemGoldBar10oz"};sell[] = {2,"ItemGoldBar10oz"};};

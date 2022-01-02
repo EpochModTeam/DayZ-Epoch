@@ -1119,3 +1119,83 @@ class SUV_Winter_Camo_DZE4: SUV_Winter_Camo_DZE3 {
 	displayName = "$STR_VEH_NAME_SUV_WINTER++++";
 	fuelCapacity = 250; // suv base 130
 };
+
+class SUV_Blue_White: SUV_TK_CIV_EP1_DZE {
+	displayName = "$STR_VEH_NAME_SUV_BLUE_WHITE";
+	vehicleClass = "DayZ Epoch Vehicles";
+	hiddenSelectionsTextures[] = {"\dayz_epoch_c\skins\suv\suv_body_bluewhite.paa"};
+
+	class Upgrades {
+		ItemORP[] = {"SUV_Blue_White_DZE1",{"ItemToolbox"},{},{{"ItemORP",1},{"PartEngine",1},{"PartWheel",4},{"ItemScrews",2}}};
+	};
+};
+
+class SUV_Blue_White_DZE1: SUV_Blue_White {
+	displayName = "$STR_VEH_NAME_SUV_BLUE_WHITE+";
+	original = "SUV_Blue_White";
+	maxSpeed = 250; // suv base 130
+	terrainCoef = 1.5;
+	brakeDistance = 14; // 19
+
+	class Upgrades {
+		ItemAVE[] = {"SUV_Blue_White_DZE2",{"ItemToolbox"},{},{{"ItemAVE",1},{"PartGeneric",6},{"ItemScrews",4}}};
+	};
+};
+
+class SUV_Blue_White_DZE2: SUV_Blue_White_DZE1 {
+	displayName = "$STR_VEH_NAME_SUV_BLUE_WHITE++";
+	armor = 60; // car 20, SUV 25
+	damageResistance = 0.02099;
+	class HitPoints: HitPoints {
+		class HitLFWheel: HitLFWheel {
+			armor = 0.7;
+		};
+		class HitLBWheel: HitLBWheel {
+			armor = 0.7;
+		};
+		class HitRFWheel: HitRFWheel {
+			armor = 0.7;
+		};
+		class HitRBWheel: HitRBWheel {
+			armor = 0.7;
+		};
+		class HitFuel: HitFuel {
+			armor = 1;
+		};
+		class HitEngine: HitEngine {
+			armor = 1;
+		};
+		class HitGlass1: HitGlass1 {
+			armor = 1;
+		};
+		class HitGlass2: HitGlass2 {
+			armor = 1;
+		};
+		class HitGlass3: HitGlass3 {
+			armor = 1;
+		};
+		class HitGlass4: HitGlass4 {
+			armor = 1;
+		};
+	};
+
+	class Upgrades {
+		ItemLRK[] = {"SUV_Blue_White_DZE3",{"ItemToolbox"},{},{{"ItemLRK",1},{"PartGeneric",2},{"ItemWoodCrateKit",1},{"ItemGunRackKit",1},{"ItemScrews",2}}};
+	};
+};
+
+class SUV_Blue_White_DZE3: SUV_Blue_White_DZE2 {
+	displayName = "$STR_VEH_NAME_SUV_BLUE_WHITE+++";
+	transportMaxWeapons = 20;  // car 10
+	transportMaxMagazines = 100; // car 50
+    transportmaxbackpacks = 4; // car 2
+
+	class Upgrades {
+		ItemTNK[] = {"SUV_Blue_White_DZE4",{"ItemToolbox"},{},{{"ItemTNK",1},{"PartGeneric",2},{"PartFueltank",1},{"ItemJerrycan",2},{"ItemScrews",1}}};
+	};
+};
+
+class SUV_Blue_White_DZE4: SUV_Blue_White_DZE3 {
+	displayName = "$STR_VEH_NAME_SUV_BLUE_WHITE++++";
+	fuelCapacity = 250; // suv base 130
+};

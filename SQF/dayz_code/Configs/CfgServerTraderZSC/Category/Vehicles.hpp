@@ -78,6 +78,7 @@ class Category_41 {
 	class SUV_White {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
 	class SUV_Yellow {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
 	class SUV_Camo {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class SUV_Blue_White {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class Nissan_Orange_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class Nissan_Blue_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class Nissan_Mod_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};

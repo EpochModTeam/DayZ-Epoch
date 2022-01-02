@@ -10867,6 +10867,26 @@
 			<English>SUV (Winter)++++</English>
 			<Russian>SUV (Зима)++++</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE">
+			<English>SUV (Blue White)</English>
+			<German>SUV (Blau Weiss)</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE+">
+			<English>SUV (Blue White)+</English>
+			<German>SUV (Blau Weiss)+</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE++">
+			<English>SUV (Blue White)++</English>
+			<German>SUV (Blau Weiss)++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE+++">
+			<English>SUV (Blue White)+++</English>
+			<German>SUV (Blau Weiss)+++</German>
+		</Key>
+		<Key ID="STR_VEH_NAME_SUV_BLUE_WHITE++++">
+			<English>SUV (Blue White)++++</English>
+			<German>SUV (Blau Weiss)++++</German>
+		</Key>
 		<Key ID="STR_VEH_NAME_SUV_ARMORED">
 			<English>SUV (Armored)</English>
 			<Russian>SUV (Бронированный)</Russian>
