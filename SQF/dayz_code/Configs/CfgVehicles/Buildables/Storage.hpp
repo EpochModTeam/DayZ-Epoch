@@ -232,7 +232,7 @@ class Advanced_WorkBench_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	transportMaxWeapons = 45;	
-	transportMaxMagazines = 20;
+	transportMaxMagazines = 30;
 	transportmaxbackpacks = 1;	
 	armor = 400;
 	displayName = $STR_EPOCH_WORKBENCH_ADVANCED;
@@ -252,7 +252,7 @@ class CookTripod_DZ: BuiltItems
 	icon = "\ca\data\data\Unknown_object.paa";
 	mapSize = 2;
 	transportMaxWeapons = 0;	
-	transportMaxMagazines = 4;
+	transportMaxMagazines = 15;
 	transportmaxbackpacks = 0;
 	armor = 500;
 	model = "\z\addons\dayz_epoch_w\items\cook_tripod.p3d";
