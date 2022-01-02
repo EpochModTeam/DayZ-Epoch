@@ -32,6 +32,40 @@ class ItemJerrycan : ItemJerrycanEmpty
 	};	
 };
 
+class ItemJerrycanWater : ItemJerrycanEmpty
+{
+	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
+	displayName = $STR_ITEM_NAME_JERRYCAN_WATER;
+	descriptionShort = $STR_ITEM_DESC_JERRYCAN_WATER;	
+	containerEmpty = "ItemJerrycanEmpty";
+	
+	class ItemActions 
+	{
+		class Empty	
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
+};
+
+class ItemJerrycanMilk : ItemJerrycanEmpty
+{
+	picture = "\dayz_equip\textures\equip_jerrycan_ca.paa";
+	displayName = $STR_ITEM_NAME_JERRYCAN_MILK;
+	descriptionShort = $STR_ITEM_DESC_JERRYCAN_MILK;	
+	containerEmpty = "ItemJerrycanEmpty";
+	
+	class ItemActions 
+	{
+		class Empty	
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
+};
+
 class ItemFuelcanEmpty : ItemJerrycanEmpty
 {
 	type = 256;	
@@ -64,6 +98,38 @@ class ItemFuelcan : ItemFuelcanEmpty
 	};
 };
 
+class ItemFuelcanWater : ItemFuelcanEmpty
+{
+	picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_CA.paa";
+	displayName = $STR_ITEM_NAME_FUELCAN_WATER;
+	descriptionShort = $STR_ITEM_DESC_FUELCAN_WATER;	
+	containerEmpty = "ItemFuelcanEmpty";
+	class ItemActions 
+	{
+		class Empty	
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};
+};
+
+class ItemFuelcanMilk : ItemFuelcanEmpty
+{
+	picture = "\z\addons\dayz_communityassets\pictures\equip_fuelcan_CA.paa";
+	displayName = $STR_ITEM_NAME_FUELCAN_MILK;
+	descriptionShort = $STR_ITEM_DESC_FUELCAN_MILK;	
+	containerEmpty = "ItemFuelcanEmpty";
+	class ItemActions 
+	{
+		class Empty	
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};
+};
+
 class ItemFuelBarrel: CA_Magazine
 {
 	scope = 2;
@@ -86,6 +152,49 @@ class ItemFuelBarrel: CA_Magazine
 		};
 	};	
 };
+
+class ItemFuelBarrelWater: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_FUELBARREL_WATER;
+	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	descriptionShort = $STR_EPOCH_FUELBARREL_DESC_WATER;
+	containerEmpty = "ItemFuelBarrelEmpty";
+	
+	class ItemActions 
+	{
+		class Empty	
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
+};
+
+class ItemFuelBarrelMilk: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_FUELBARREL_MILK;
+	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	descriptionShort = $STR_EPOCH_FUELBARREL_DESC_MILK;
+	containerEmpty = "ItemFuelBarrelEmpty";
+	
+	class ItemActions 
+	{
+		class Empty	
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};	
+};
+
 class ItemFuelBarrelEmpty: ItemFuelBarrel
 {
 	scope = 2;

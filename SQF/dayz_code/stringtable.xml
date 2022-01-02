@@ -5908,6 +5908,22 @@
 			<French>Un petit bidon de carburant.</French>
 			<Czech>Menší kanystr s palivem.</Czech>
 		</Key>
+		<Key ID="STR_ITEM_NAME_FUELCAN_WATER">
+			<English>Can 5L (Water)</English>
+			<German>Kanister 5L (Wasser)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_FUELCAN_WATER">
+			<English>A small 5-liter can filled with water.</English>
+			<German>Ein kleiner 5-Liter-Kanister gefüllt mit Wasser.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_FUELCAN_MILK">
+			<English>Can 5L (Milk)</English>
+			<German>Kanister 5L (Milch)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_FUELCAN_MILK">
+			<English>A small 5-liter can filled with milk.</English>
+			<German>Ein kleiner 5-Liter-Kanister gefüllt mit Milch.</German>
+		</Key>
 		<Key ID="STR_ITEM_NAME_FUELCAN_EMPTY">			
 			<English>Fuelcan 5L (empty)</English>
 			<German>Benzinkanister 5L (leer)</German>
@@ -5939,6 +5955,22 @@
 			<Russian>20-ти литровая канистра для заправки техники и генераторов.</Russian>
 			<French>Un jerrican de 20 litres qui peut être utilisé pour réaprovisionner les véhicules et générateurs de courant.</French>
 			<Czech>Dvacetilitrový kanistr, který se dá použít k dotankování vozidel a generátorů.</Czech>
+		</Key>
+		<Key ID="STR_ITEM_NAME_JERRYCAN_WATER">
+			<English>Can 20L (Water)</English>
+			<German>Kanister 20L (Wasser</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_JERRYCAN_WATER">
+			<English>20 litre can filled with water.</English>
+			<German>Ein 20-Liter-Kanister, welcher mit Wasser befüllt wurde.</German>
+		</Key>
+		<Key ID="STR_ITEM_NAME_JERRYCAN_MILK">
+			<English>Can 20L (Milk)</English>
+			<German>Kanister 20L (Milch)</German>
+		</Key>
+		<Key ID="STR_ITEM_DESC_JERRYCAN_MILK">
+			<English>20 litre can filled with milk.</English>
+			<German>Ein 20-Liter-Kanister, welcher mit Milch befüllt wurde.</German>
 		</Key>		
 		<Key ID="STR_ITEM_NAME_JERRYCAN_EMPTY">
 			<English>Jerry Can 20L (empty)</English>
@@ -27793,6 +27825,22 @@
 			<English>210 litres of fuel per barrel.</English>
 			<German>210 Liter Kraftstofffass.</German>
 			<Russian>210 литров топлива в бочке.</Russian>
+		</Key>
+		<Key ID="STR_EPOCH_FUELBARREL_WATER">
+			<English>Barrel 210L (Water)</English>
+			<German>Fass 210 L (Wasser)</German>
+		</Key>
+		<Key ID="STR_EPOCH_FUELBARREL_DESC_WATER">
+			<English>A 210 litres barrel filled with water.</English>
+			<German>Ein 210 Liter Fass gefüllt mit Wasser.</German>
+		</Key>
+		<Key ID="STR_EPOCH_FUELBARREL_MILK">
+			<English>Barrel 210L (Milk)</English>
+			<German>Fass 210 L (Milch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_FUELBARREL_DESC_MILK">
+			<English>A 210 litres barrel filled with milk.</English>
+			<German>Ein 210 Liter Fass gefüllt mit Milch.</German>
 		</Key>
 		<Key ID="STR_EPOCH_EMPTYFUELBARREL">
 			<English>Fuel Barrel (empty)</English>
