@@ -14,6 +14,7 @@ class P226_DZ: M9
 
 class P226_Silver_DZ: P226_DZ
 {
+	displayName = $STR_DZ_WPN_P226_SILVER_NAME;	
 	model = "\RH_de\RH_p226s.p3d";
 	picture = "\RH_de\inv\p226s.paa";
 };

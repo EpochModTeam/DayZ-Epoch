@@ -17129,11 +17129,31 @@
         </Key>
 
 		<!-- P99 -->
-		<Key ID="STR_DZ_WPN_P99_NAME">
-			<English>P99</English>
+		<Key ID="STR_DZ_WPN_P99_BLACK_NAME">
+			<English>P99 (Black)</English>
+			<German>P99 (Black)</German>
 		</Key>
-		<Key ID="STR_DZ_WPN_P99SD_NAME">
-			<English>P99 SD</English>
+		<Key ID="STR_DZ_WPN_P99SD_BLACK_NAME">
+			<English>P99 SD (Black)</English>
+			<German>P99 SD (Schwarz)</German>
+			<Russian>P99 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_P99_GREEN_NAME">
+			<English>P99 (Green)</English>
+			<German>P99 (Grün)</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_P99SD_GREEN_NAME">
+			<English>P99 SD (Green)</English>
+			<German>P99 SD (Grün)</German>
+			<Russian>P99 ПБС</Russian>
+		</Key>
+		<Key ID="STR_DZ_WPN_P99_SILVER_NAME">
+			<English>P99 (Silver)</English>
+			<German>P99 (Silber)</German>
+		</Key>
+		<Key ID="STR_DZ_WPN_P99SD_SILVER_NAME">
+			<English>P99 SD (Silver)</English>
+			<German>P99 SD (Silber)</German>
 			<Russian>P99 ПБС</Russian>
 		</Key>
 		<Key ID="STR_DZ_WPN_P99_DESC">
@@ -17566,6 +17586,10 @@
 		<!-- SIG Sauer P226 -->
 		<Key ID="STR_DZ_WPN_P226_NAME">
 			<English>SIG Sauer P226</English>
+		</Key>
+		<Key ID="STR_DZ_WPN_P226_SILVER_NAME">
+			<English>SIG Sauer P226 (Silver)</English>
+			<German>SIG Sauer P226 (Silber)</German>
 		</Key>
 		<Key ID="STR_DZ_WPN_P226_DESC">
 			<English>Semi-automatic Pistol &lt;br/&gt;Caliber: 9x19mm Parabellum</English>

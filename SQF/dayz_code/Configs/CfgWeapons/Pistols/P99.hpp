@@ -1,6 +1,6 @@
 class P99_Black_DZ: M9
 {
-	displayName = $STR_DZ_WPN_P99_NAME;
+	displayName = $STR_DZ_WPN_P99_BLACK_NAME;
 	model = "\C1987_P99\P99_black.p3d";
 	picture = "\C1987_P99\equip\p99_black.paa";
 	soundBegin[] = {"begin1",1};
@@ -17,7 +17,7 @@ class P99_Black_DZ: M9
 
 class P99_Black_SD_DZ: M9SD
 {
-	displayName = $STR_DZ_WPN_P99SD_NAME;
+	displayName = $STR_DZ_WPN_P99SD_BLACK_NAME;
 	model = "\C1987_P99\P99_black_sd.p3d";
 	picture = "\C1987_P99\equip\p99_black_sd.paa";
 	soundBegin[] = {"begin1",1};
@@ -40,7 +40,7 @@ class P99_Black_SD_DZ: M9SD
 
 class P99_Green_DZ: P99_Black_DZ
 {
-	displayName = $STR_DZ_WPN_P99_NAME;
+	displayName = $STR_DZ_WPN_P99_GREEN_NAME;
 	model = "\C1987_P99\P99_green.p3d";
 	picture = "\C1987_P99\equip\p99_green.paa";
 
@@ -52,7 +52,7 @@ class P99_Green_DZ: P99_Black_DZ
 
 class P99_Green_SD_DZ: P99_Black_SD_DZ
 {
-	displayName = $STR_DZ_WPN_P99SD_NAME;
+	displayName = $STR_DZ_WPN_P99SD_GREEN_NAME;
 	model = "\C1987_P99\P99_green_sd.p3d";
 	picture = "\C1987_P99\equip\p99_green_sd.paa";
 	
@@ -68,7 +68,7 @@ class P99_Green_SD_DZ: P99_Black_SD_DZ
 
 class P99_Silver_DZ: P99_Black_DZ
 {
-	displayName = $STR_DZ_WPN_P99_NAME;
+	displayName = $STR_DZ_WPN_P99_SILVER_NAME;
 	model = "\C1987_P99\P99_silver.p3d";
 	picture = "\C1987_P99\equip\p99_silver.paa";
 	
@@ -81,7 +81,7 @@ class P99_Silver_DZ: P99_Black_DZ
 
 class P99_Silver_SD_DZ: P99_Black_SD_DZ
 {
-	displayName = $STR_DZ_WPN_P99SD_NAME;
+	displayName = $STR_DZ_WPN_P99SD_SILVER_NAME;
 	model = "\C1987_P99\P99_silver_sd.p3d";
 	picture = "\C1987_P99\equip\p99_silver_sd.paa";
 
