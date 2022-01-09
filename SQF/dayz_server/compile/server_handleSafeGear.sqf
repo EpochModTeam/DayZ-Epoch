@@ -144,7 +144,7 @@ call {
 
 if (_status < 4) then {
 	_type = call {
-		if (_type in ["VaultStorageLocked","VaultStorage","VaultStorage2Locked","VaultStorage2","TallSafe"]) exitwith {
+		if (_type in ["VaultStorageLocked","VaultStorage","VaultStorage2Locked","VaultStorage2","TallSafe","TallSafeLocked"]) exitwith {
 			if (_ownerID == _playerUID) then {_lockCode = format["%1 - Owner",_lockCode];};
 			"Safe"
 		};
