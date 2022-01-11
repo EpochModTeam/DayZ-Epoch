@@ -3550,6 +3550,30 @@
 			<French>Une Bouteille vide. Il serait bien de la remplir à nouveau.</French>
 			<Czech>Prázdná láhev na vodu. Může být znovu naplněna.</Czech>
 		</Key>
+		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE_COFFEE">
+			<English>Water Bottle (Coffee)</English>
+			<German>Wasserflasche (Kaffee)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WATER_BOTTLE_COFFEE">
+			<English>A bottle that has been filled with brewed coffee.</English>
+			<German>Eine Flasche gefüllt mit gekochtem Kaffee.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE_BLACKTEA">
+			<English>Water Bottle (Black Tea)</English>
+			<German>Wasserflasche (Schwarzer Tee)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WATER_BOTTLE_BLACKTEA">
+			<English>A bottle that has been filled with brewed black tea.</English>
+			<German>Eine Flasche gefüllt mit gekochtem schwarzem Tee.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WATER_BOTTLE_FROZEN">
+			<English>Water Bottle (Frozen)</English>
+			<German>Wasserflasche (Gefroren)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WATER_BOTTLE_FROZEN">
+			<English>A bottle that has been filled with water. The content seems to be frozen.</English>
+			<German>Eine Flasche gefüllt mit Wasser. Der Inhalt scheint gefroren zu sein.</German>
+		</Key>
 		<Key ID="STR_EQUIP_NAME_EPI_PEN">
 			<English>Epi-Pen</English>
 			<German>Epinephrin-Autoinjektor</German>
@@ -32422,6 +32446,30 @@
 			<English>Water Bottle PET with 9oz of boiled water.</English>
 			<Russian>Бутылка с 900мл кипячёной воды</Russian>
 			<German>Wasserflasche PET mit 900ml abgekochtem Wasser.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBPET_COFFEE">
+			<English>Water Bottle PET (Coffee)</English>
+			<German>Wasserflasche PET (Kaffee)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBPET_COFFEE">
+			<English>A PET bottle that has been filled with brewed coffee.</English>
+			<German>Eine Plastik-Flasche gefüllt mit gekochtem Kaffee.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBPET_BLACKTEA">
+			<English>Water Bottle PET (Black Tea)</English>
+			<German>Wasserflasche PET (Schwarzer Tee)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBPET_BLACKTEA">
+			<English>A PET bottle that has been filled with brewed black tea.</English>
+			<German>Eine Plastik-Flasche gefüllt mit gekochtem schwarzem Tee.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WBPET_FROZEN">
+			<English>Water Bottle PET (Frozen)</English>
+			<German>Wasserflasche PET (Gefroren)</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WBPET_FROZEN">
+			<English>A PET bottle that has been filled with water. The content seems to be frozen.</English>
+			<German>Eine Plastik-Flasche gefüllt mit Wasser. Der Inhalt scheint gefroren zu sein.</German>
 		</Key>
 		<Key ID="STR_DZE_EQUIP_PAINT_GENERIC_NAME">
 			<English>Paint bucket (generic)</English>

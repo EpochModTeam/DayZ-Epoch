@@ -747,3 +747,68 @@ class ItemPlasticWaterbottle9ozBoiled : ItemWaterBottle
 		};
 	};
 };
+class ItemPlasticWaterBottleCoffee : FoodDrink
+{
+	scope = 2;	
+	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
+	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle10oz.paa";
+	displayName = $STR_EQUIP_NAME_WBPET_COFFEE;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_COFFEE;
+	
+	Nutrition[] = {50,0,950,0};
+	
+	infectionChance = 0;
+	
+	consumeOutput = "ItemPlasticWaterbottleUnfilled";
+	
+	containerEmpty = "ItemPlasticWaterbottleUnfilled";
+	
+	class ItemActions : ItemActions
+	{
+		class Consume : Consume	{};
+		
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};
+};
+class ItemPlasticWaterBottleBlackTea : FoodDrink
+{
+	scope = 2;	
+	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
+	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle10oz.paa";
+	displayName = $STR_EQUIP_NAME_WBPET_BLACKTEA;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_BLACKTEA;
+	
+	Nutrition[] = {90,0,900,0};
+	
+	infectionChance = 0;
+	
+	consumeOutput = "ItemPlasticWaterbottleUnfilled";
+	
+	containerEmpty = "ItemPlasticWaterbottleUnfilled";
+	
+	class ItemActions : ItemActions
+	{
+		class Consume : Consume	{};
+		
+		class Empty
+		{
+			text = $STR_EQUIP_NAME_13_EMPTY;
+			script = "spawn player_emptyContainer";
+		};
+	};
+};
+class ItemPlasticWaterBottleFrozen : CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	model = "z\addons\dayz_communityassets\models\waterbottle.p3d";
+	picture = "\dayz_epoch_c\icons\plasticwaterbottle\PETwaterbottle10oz.paa";
+	displayName = $STR_EQUIP_NAME_WBPET_FROZEN;
+	descriptionShort = $STR_EQUIP_DESC_WBPET_FROZEN;
+
+};
