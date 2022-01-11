@@ -223,18 +223,22 @@ class ItemSodaOrangeSherbet : ItemSodaCoke
 	picture = "\z\addons\dayz_epoch\pictures\soda_orangesherbet_ca.paa";
 };
 
-class ItemSodaFrozen1 : ItemSoda
+class ItemSodaFrozen1 : CA_Magazine
 {
-	scope = 2;	
+	scope = 2;
+	count = 1;
+	type = 256;
 	model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
 	displayName = $STR_EQUIP_NAME_SODA_CAN_FROZEN;
 	descriptionShort = $STR_EQUIP_DESC_SODA_CAN_FROZEN;	
 };
 
-class ItemSodaFrozen2 : ItemSoda
+class ItemSodaFrozen2 : CA_Magazine
 {
-	scope = 2;	
+	scope = 2;
+	count = 1;
+	type = 256;
 	model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
 	displayName = $STR_EQUIP_NAME_SODA_CAN_FROZEN;

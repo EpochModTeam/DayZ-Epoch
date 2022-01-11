@@ -249,18 +249,22 @@ class FoodCanDog2 : FoodPackaged
 	consumeOutput = "FoodCanRusUnlabeledEmpty";
 };
 
-class FoodCanFrozen1 : FoodPackaged
+class FoodCanFrozen1 : CA_Magazine
 {
-	scope = 2;	
+	scope = 2;
+	count = 1;
+	type = 256;
 	model = "z\addons\dayz_communityassets\models\can_unlabeled_clean_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_unlabeled_clean_full_ca.paa";
 	displayName = $STR_FOOD_NAME_CAN_FROZEN;
 	descriptionShort = $STR_FOOD_DESC_CAN_FROZEN;
 };
 
-class FoodCanFrozen2 : FoodPackaged
+class FoodCanFrozen2 : CA_Magazine
 {
 	scope = 2;
+	count = 1;
+	type = 256;
 	model = "z\addons\dayz_communityassets\models\can_small_unlabeled_full.p3d";
 	picture = "\z\addons\dayz_communityassets\pictures\equip_can_small_rus_unlabeled_clean_full_ca.paa";
 	displayName = $STR_FOOD_NAME_CAN_FROZEN;
