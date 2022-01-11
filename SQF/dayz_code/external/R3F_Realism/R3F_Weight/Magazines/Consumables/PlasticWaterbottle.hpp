@@ -98,3 +98,15 @@ class ItemPlasticWaterbottle9ozBoiled
 {
 	weight = 0.2;
 };
+class ItemPlasticWaterBottleCoffee
+{
+	weight = 0.22;	
+};
+class ItemPlasticWaterBottleBlackTea
+{
+	weight = 0.22;	
+};
+class ItemPlasticWaterBottleFrozen
+{
+	weight = 0.22;	
+};

@@ -263,3 +263,163 @@ class PileMedBooks
 {
 	weight = 6.5; 
 };
+class StashFile_01
+{
+	weight = 0.3; 
+};
+class StashFile_02
+{
+	weight = 0.3; 
+};
+class StashFile_03
+{
+	weight = 0.3; 
+};
+class StashFile_04
+{
+	weight = 0.3; 
+};
+class StashFile_05
+{
+	weight = 0.3; 
+};
+class StashFile_06
+{
+	weight = 0.3; 
+};
+class StashFile_07
+{
+	weight = 0.3; 
+};
+class StashFile_08
+{
+	weight = 0.3; 
+};
+class StashFile_09
+{
+	weight = 0.3; 
+};
+class StashFile_10
+{
+	weight = 0.3; 
+};
+class StashFile_11
+{
+	weight = 0.3; 
+};
+class StashFile_12
+{
+	weight = 0.3; 
+};
+class StashFile_13
+{
+	weight = 0.3; 
+};
+class StashFile_14
+{
+	weight = 0.3; 
+};
+class StashFile_15
+{
+	weight = 0.3; 
+};
+class StashFile_16
+{
+	weight = 0.3; 
+};
+class StashFile_17
+{
+	weight = 0.3; 
+};
+class StashFile_18
+{
+	weight = 0.3; 
+};
+class StashFile_19
+{
+	weight = 0.3; 
+};
+class StashFile_20
+{
+	weight = 0.3; 
+};
+class StashFile_21
+{
+	weight = 0.3; 
+};
+class StashFile_22
+{
+	weight = 0.3; 
+};
+class StashFile_23
+{
+	weight = 0.3; 
+};
+class StashFile_24
+{
+	weight = 0.3; 
+};
+class StashFile_25
+{
+	weight = 0.3; 
+};
+class StashFile_26
+{
+	weight = 0.3; 
+};
+class StashFile_27
+{
+	weight = 0.3; 
+};
+class StashFile_28
+{
+	weight = 0.3; 
+};
+class StashFile_29
+{
+	weight = 0.3; 
+};
+class StashFile_30
+{
+	weight = 0.3; 
+};
+class StashFile_31
+{
+	weight = 0.3; 
+};
+class StashFile_32
+{
+	weight = 0.3; 
+};
+class StashFile_33
+{
+	weight = 0.3; 
+};
+class StashFile_34
+{
+	weight = 0.3; 
+};
+class StashFile_35
+{
+	weight = 0.3; 
+};
+class StashFile_36
+{
+	weight = 0.3; 
+};
+class StashFile_37
+{
+	weight = 0.3; 
+};
+class StashFile_38
+{
+	weight = 0.3; 
+};
+class StashFile_39
+{
+	weight = 0.3; 
+};
+class StashFile_40
+{
+	weight = 0.3; 
+};

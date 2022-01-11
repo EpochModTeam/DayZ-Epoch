@@ -162,3 +162,19 @@ class FoodCarrot
 {
 	weight = 0.25;
 };
+class FoodCanDog1
+{
+	weight = 0.2;	
+};
+class FoodCanDog2
+{
+	weight = 0.2;	
+};
+class FoodCanFrozen1
+{
+	weight = 0.25;	
+};
+class FoodCanFrozen2
+{
+	weight = 0.25;	
+};

@@ -197,3 +197,39 @@ class ItemGunPowderBig
 {
 	weight = 16;
 };
+class ItemFuelcanWater
+{
+	weight = 5;
+};
+class ItemFuelcanMilk
+{
+	weight = 5;
+};
+class ItemJerrycanWater
+{
+	weight = 20;
+};
+class ItemJerrycanMilk
+{
+	weight = 20;
+};
+class ItemFuelBarrelWater
+{
+	weight = 210;
+};
+class ItemFuelBarrelMilk
+{
+	weight = 210;
+};
+class ItemBucketWater
+{
+	weight = 10;
+};
+class ItemBucketFuel
+{
+	weight = 10;
+};
+class ItemBucketMilk
+{
+	weight = 10;
+};
