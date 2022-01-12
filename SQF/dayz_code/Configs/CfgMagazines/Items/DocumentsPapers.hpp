@@ -894,7 +894,7 @@ class StashFile_14: CA_Magazine
 	scope = 2;
 	count = 1;
 	displayName = $STR_ITEM_NAME_STASHFILE_14;
-	descriptionShort = $STR_ITEM_DESC_STASHFILE_14
+	descriptionShort = $STR_ITEM_DESC_STASHFILE_14;
 	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";
 };
@@ -983,7 +983,7 @@ class StashFile_23: CA_Magazine
 {
 	scope = 2;
 	count = 1;
-	displayName = $STR_ITEM_NAME_STASHFILE_23
+	displayName = $STR_ITEM_NAME_STASHFILE_23;
 	descriptionShort = $STR_ITEM_DESC_STASHFILE_23;
 	model = "\z\addons\dayz_epoch\models\doc_ramp.p3d";
 	picture = "\z\addons\dayz_epoch\pictures\equip_doc_ramp_ca.paa";

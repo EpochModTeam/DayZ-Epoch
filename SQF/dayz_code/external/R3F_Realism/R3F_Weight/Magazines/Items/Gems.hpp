@@ -26,39 +26,39 @@ class ItemRuby
 {
 	weight = 2;
 };
-ItemGemSuitcase_Emtpy
+class ItemGemSuitcase_Emtpy
 {
 	weight = 1;
 };
-ItemGemSuitcase_Topaz
+class ItemGemSuitcase_Topaz
 {
 	weight = 21;
 };
-ItemGemSuitcase_Obisidian
+class ItemGemSuitcase_Obisidian
 {
 	weight = 21;
 };
-ItemGemSuitcase_Sapphire
+class ItemGemSuitcase_Sapphire
 {
 	weight = 21;
 };
-ItemGemSuitcase_Amethyst
+class ItemGemSuitcase_Amethyst
 {
 	weight = 21;
 };
-ItemGemSuitcase_Emerald
+class ItemGemSuitcase_Emerald
 {
 	weight = 21;
 };
-ItemGemSuitcase_Citrine
+class ItemGemSuitcase_Citrine
 {
 	weight = 21;
 };
-ItemGemSuitcase_Ruby
+class ItemGemSuitcase_Ruby
 {
 	weight = 21;
 };
-ItemGemSuitcase_All
+class ItemGemSuitcase_All
 {
 	weight = 15;
 };
