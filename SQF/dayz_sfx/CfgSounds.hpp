@@ -901,4 +901,10 @@ class CfgSounds {
 		sound[] = {"\dayz_sfx\bloodsucker\forest_hidden_4.ogg",0.25118899,1};
 		titles[] = {};
 	};
+	class z_minestone_0 {
+		name = "";
+		sound[] = {"\dayz_sfx\effects\minestone.ogg", 0.1, 1, 50};
+		titles[] = {};
+	};
+
 };
