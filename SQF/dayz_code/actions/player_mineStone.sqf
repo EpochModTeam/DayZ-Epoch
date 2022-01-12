@@ -1,83 +1,110 @@
-if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	Mine Stone
+//
+//	Updated by:	Victor the Cleaner
+//	Date:		January 2022
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
+if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_mineChance","_breaking","_counter","_rocks","_findNearestRock","_objName","_countOut","_isOk","_proceed","_finished","_itemOut","_weapons"];
-
-_item = _this;
 call gear_ui_init;
 closeDialog 1;
 
-// allowed rocks list move this later
-_rocks = ["r2_boulder1.p3d","r2_boulder2.p3d","r2_rock1.p3d","r2_rock2.p3d","r2_rocktower.p3d","r2_rockwall.p3d","r2_stone.p3d"];
-_findNearestRock = objNull;
+local _pos1	= eyePos player;					// ASL line start
+local _line	= ATLToASL screenToWorld [0.5,0.5];			// ASL terminus
+local _dist	= 4;
+local _vec1	= [_pos1, _line] call BIS_fnc_vectorFromXToY;		// sight vector
+local _vec2	= [_vec1, _dist] call BIS_fnc_vectorMultiply;		// extend line-of-sight
+local _pos2	= [_pos1, _vec2] call BIS_fnc_vectorAdd;		// ASL line stop
+local _pos3	= +_pos2;
+local _pos4	= +_pos1;
+local _found	= false;
+local _rocks	= [];
+local _model	= "";
+
+_pos3 set [2, (_pos3 select 2) - _dist];				// player is looking over low rock
+_pos4 set [2, (_pos4 select 2) - _dist];				// player is directly above rock
 
 {
-    _objName = _x call fn_getModelName;
-    // Exit since we found a rock
-    if (_objName in _rocks) exitWith { _findNearestRock = _x; };
-} foreach nearestObjects [getPosATL player, [], 8];
+	_rocks = lineIntersectsWith [_pos1, _x, player, objNull, true];		// detect objects
+	_model = "";
 
+	if (count _rocks > 0) then {
+		_model = (_rocks call BIS_fnc_arrayPop) call fn_getModelName;	// get model name of nearest target
+	};
+	if (_model in DZE_rocks) exitWith {_found = true;};			// found one
+} forEach [_pos2, _pos3, _pos4];
 
-if (!isNull _findNearestRock) then {
-    _countOut = 2 + floor(random 3);
+if (!_found) then {								// if none found, try the old method
+	{
+		_model = _x call fn_getModelName;
+		if (_model in DZE_rocks) exitWith {_found = true;};
+	} forEach nearestObjects [getPosATL player, [], 8];
+};
 
-    // Start stone mining loop
-    _counter = 0;
-    _isOk = true;
-    _proceed = false;
+if (_found) then {
 
-	//check chance before loop, for a maximum amount of 5 loops allowing 5 possiable chances
-	_mineChance = dayz_HarvestingChance call fn_chance;
+	local _countOut = 2 + floor(random 4);
 
-    while {_isOk} do {
-        //[player,(getPosATL player),20,"minestone"] spawn fnc_alertZombies;
+	// Start stone mining loop
+	local _counter	= 0;
+	local _isOk	= true;
+	local _proceed	= false;
 
-        _finished = ["Medic",1] call fn_loopAction;
-		_weapons = weapons player;
-		_weapons set [count _weapons,dayz_onBack];
+	// check chance before loop, for a maximum amount of 5 loops allowing 5 possible chances
+	local _mineChance = dayz_HarvestingChance call fn_chance;
 
-		//Make sure player did not drop pickaxe
-        if (!_finished || !("ItemPickaxe" in _weapons)) exitWith {
-            _isOk = false;
-            _proceed = false;
-        };
+	while {_isOk} do {
+		[player,(getPosATL player),50,"minestone"] spawn fnc_alertZombies;
 
-        if (_finished) then {
+		local _finished = ["Medic",1] call fn_loopAction;
+		local _weapons = weapons player;
+
+		// Make sure player did not drop pickaxe
+		if (!_finished || !("ItemPickaxe" in _weapons)) exitWith {
+			_isOk	 = false;
+			_proceed = false;
+		};
+
+		local _breaking = false;
+
+		if (_finished) then {
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 
-            _breaking = false;
 			if (dayz_toolBreaking && _mineChance) then {
-                _breaking = true;
-				if ("ItemPickaxe" in weapons player) then {
+				_breaking = true;
+
+				if ("ItemPickaxe" in _weapons) then {
 					player removeWeapon "ItemPickaxe";
 				};
-                if (!("ItemPickaxeBroken" in weapons player)) then {
-                    player addWeapon "ItemPickaxeBroken";
-                };
-            };
+				if !("ItemPickaxeBroken" in _weapons) then {
+					player addWeapon "ItemPickaxeBroken";
+				};
+			};
 
-            _counter = _counter + 1;
-            _itemOut = "ItemStone";
+			// Drop item to ground
+			["ItemStone",1,1] call fn_dropItem;	// item, magazine, amount
 
-			//Drop Item to ground
-			[_itemOut,1,1] call fn_dropItem;
-        };
+			_counter = _counter + 1;
+		};
 
-        if ((_counter >= _countOut) || _breaking) exitWith {
-            if (_breaking) then {
-                localize "str_PickAxeHandleBreaks" call dayz_rollingMessages;
-            } else {
+		if ((_counter >= _countOut) || _breaking) exitWith {
+			if (_breaking) then {
+				localize "str_PickAxeHandleBreaks" call dayz_rollingMessages;
+			} else {
 				localize "str_mining_finished" call dayz_rollingMessages;
-            };
-            _isOk = false;
-            _proceed = true;
-        };
-		format[localize "str_mining_progress", _counter,(_countOut - _counter)] call dayz_rollingMessages;
-    };
+			};
+			_isOk	 = false;
+			_proceed = true;
+		};
+		format[localize "str_mining_progress", _counter, (_countOut - _counter)] call dayz_rollingMessages;
+	};
 
-    if (!_proceed) then {
-        localize "str_mining_canceled" call dayz_rollingMessages;
-    };
+	if (!_proceed) then {
+		localize "str_mining_canceled" call dayz_rollingMessages;
+	};
 } else {
 	localize "str_mining_no_rocks" call dayz_rollingMessages;
 };
