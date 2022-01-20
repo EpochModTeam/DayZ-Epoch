@@ -104,3 +104,21 @@ class GlassFloor_Quarter_DZ: ModularItems {
 	maintainBuilding[] = {{"PartGlass",1}};
 	GhostPreview = "GlassFloor_Quarter_Preview_DZ";
 };
+
+class ElevatorStart_DZ: ModularItems {
+	scope = 2;	
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch\models\metal_floor.p3d";
+	armor = 3000;
+	displayName = $STR_EPOCH_ELEVATORSTART;	
+	GhostPreview = "MetalFloor_Preview_DZ";
+};
+
+class ElevatorStop_Glass_DZ: ModularItems {
+	scope = 2;
+	offset[] = {0,4,0};
+	model = "\z\addons\dayz_epoch_v\base_building\floors\glass_floor.p3d";
+	armor = 2000;
+	displayName = $STR_EPOCH_ELEVATORSTOP_GLASS;
+	GhostPreview = "GlassFloor_Preview_DZ";
+};

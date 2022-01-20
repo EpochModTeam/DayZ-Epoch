@@ -53,7 +53,9 @@ class SnapBuilding {
 		};
 	};
 	class MetalFloor_Preview_DZ: MetalFloor_DZ {};
-
+	class ElevatorStart_DZ: MetalFloor_DZ {};
+	class ElevatorStop_Transparent_DZ: MetalFloor_DZ {};
+	
 	class MetalFloor_Half_DZ { // f=5.25 / 2.625 / 1.3125
 		points[] = {
 			{  -0.006,  0.012, 0.132, $STR_EPOCH_ACTION_SNAP_PIVOT},
@@ -163,7 +165,8 @@ class SnapBuilding {
 		};
 	};
 	class GlassFloor_Preview_DZ: GlassFloor_DZ {};
-
+	class ElevatorStop_Glass_DZ: GlassFloor_DZ {};
+	
 	class GlassFloor_Half_DZ { // f=5.25 / 2.625 / 1.3125
 		points[] = {
 			{  -0.032, -0.003, 0.141, $STR_EPOCH_ACTION_SNAP_PIVOT},

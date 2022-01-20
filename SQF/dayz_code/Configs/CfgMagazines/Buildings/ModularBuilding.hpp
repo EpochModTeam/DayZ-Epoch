@@ -1878,3 +1878,69 @@ class door_locked_kit: CA_Magazine
 		};
 	};
 };
+
+class elevatorstart_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_ELEVATORSTART;
+	descriptionShort = $STR_EPOCH_ELEVATORSTART;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ElevatorStart_DZ";
+		};
+	};
+};
+
+class elevatorstop_glass_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_ELEVATORSTOP_GLASS;
+	descriptionShort = $STR_EPOCH_ELEVATORSTOP_GLASS;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ElevatorStop_Glass_DZ";
+		};
+	};
+};
+
+class elevatorstop_transparent_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_ELEVATORSTOP_TRANSPARENT;
+	descriptionShort = $STR_EPOCH_ELEVATORSTOP_TRANSPARENT;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "ElevatorStop_Transparent_DZ";
+		};
+	};
+};

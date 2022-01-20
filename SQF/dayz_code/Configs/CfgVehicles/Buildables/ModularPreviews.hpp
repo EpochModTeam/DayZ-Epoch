@@ -239,3 +239,8 @@ class StorageShed_Preview_DZ: DZE_Ghost_Previews {
 	model = "\z\addons\dayz_epoch_v\base_building\storage\Shed_M02_ghost.p3d";
 	displayName = "StorageShed Preview";
 };
+class ElevatorStop_Transparent_DZ: DZE_Ghost_Previews {
+	scope = 2;
+	model = "\z\addons\dayz_epoch\models\metal_floor_ghost.p3d";
+	displayName = $STR_EPOCH_ELEVATORSTOP_TRANSPARENT;
+};

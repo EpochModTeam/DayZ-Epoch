@@ -280,3 +280,15 @@ class door_locked_kit
 {
 	weight = 25;
 };
+class elevatorstart_kit
+{
+	weight = 325;
+};
+class elevatorstop_glass_kit
+{
+	weight = 200;
+};
+class elevatorstop_transparent_kit
+{
+	weight = 25;
+};

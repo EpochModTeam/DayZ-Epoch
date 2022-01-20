@@ -48,6 +48,8 @@ class HelperVectors: Helpers {
 			{  2.635, -0.003, 0.141 }	// Right
 		};
 	};
+	class ElevatorStart_DZ: MetalFloor_DZ {};
+	class ElevatorStop_Transparent_DZ: MetalFloor_DZ {};
 
 	class Land_wreck_metal_floor: vector {
 		points[] = {
@@ -144,7 +146,8 @@ class HelperVectors: Helpers {
 			{  2.625, -0.002, 0.141 }	// Right
 		};
 	};
-
+	class ElevatorStop_Glass_DZ: GlassFloor_DZ {};
+	
 	class GlassFloor_Half_DZ: vector {
 		points[] = {
 			{  -0.032, -2.628, 0.141 },	// Back

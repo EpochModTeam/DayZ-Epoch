@@ -29215,6 +29215,18 @@
 			<French>Des places</French>
 			<Czech>Sedadla</Czech>
 		</Key>
+		<Key ID="STR_EPOCH_ELEVATORSTART">
+			<English>Elevator Start</English>
+			<German>Fahrstuhl Start</German>
+		</Key>
+		<Key ID="STR_EPOCH_ELEVATORSTOP_GLASS">
+			<English>Elevator Stop (Glass)</English>
+			<German>Fahrstuhl Halt (Glass)</German>
+		</Key>
+		<Key ID="STR_EPOCH_ELEVATORSTOP_TRANSPARENT">
+			<English>Elevator Stop (Transparent)</English>
+			<German>Fahrstuhl Halt (Durchsichtig)</German>
+		</Key>		
 		<Key ID="STR_EPOCH_GLASSFLOOR">
 			<English>Glass Floor</English>
 			<German>Glasboden</German>
