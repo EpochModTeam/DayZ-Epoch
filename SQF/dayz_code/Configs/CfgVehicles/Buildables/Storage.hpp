@@ -509,6 +509,8 @@ class StorageBarrelRed1_DZ: BuiltItems
 	transportMaxWeapons = 7;
 	transportMaxMagazines = 70;
 	transportMaxBackpacks = 2;
+	upgradeBuilding[] = {"StorageBarrelRed2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}};};
+	
 };
 
 class StorageBarrelRed2_DZ: BuiltItems
@@ -547,6 +549,7 @@ class StorageBarrelEpoch1_DZ: BuiltItems
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
+	upgradeBuilding[] = {"StorageBarrelEpoch2_DZ",{"ItemToolbox","Handsaw_DZE","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}};};
 };
 
 class StorageBarrelEpoch2_DZ: BuiltItems
@@ -585,6 +588,7 @@ class StorageBarrelYellow1_DZ: BuiltItems
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
+	upgradeBuilding[] = {"StorageBarrelYellow2_DZ",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}};};
 };
 
 class StorageBarrelYellow2_DZ: BuiltItems
@@ -623,6 +627,7 @@ class StorageBarrelBlack1_DZ: BuiltItems
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
+	upgradeBuilding[] = {"StorageBarrelBlack2_DZ",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}};};
 };
 
 class StorageBarrelBlack2_DZ: BuiltItems
@@ -661,6 +666,7 @@ class StorageBarrelGreenDark1_DZ: BuiltItems
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
+	upgradeBuilding[] = {"StorageBarrelGreenDark2_DZ",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}};};
 };
 
 class StorageBarrelGreenDark2_DZ: BuiltItems
@@ -699,6 +705,7 @@ class StorageBarrelMilk1_DZ: BuiltItems
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
+	upgradeBuilding[] = {"StorageBarrelMilk2_DZ",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}};};
 };
 
 class StorageBarrelMilk2_DZ: BuiltItems
@@ -737,6 +744,7 @@ class StorageBarrelGreen1_DZ: BuiltItems
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
+	upgradeBuilding[] = {"StorageBarrelGreen2_DZ",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}};};
 };
 
 class StorageBarrelGreen2_DZ: BuiltItems
@@ -775,6 +783,7 @@ class StorageBarrelGreenRusty1_DZ: BuiltItems
 	transportMaxWeapons = 8;
 	transportMaxMagazines = 80;
 	transportMaxBackpacks = 2;
+	upgradeBuilding[] = {"StorageBarrelGreenRusty2_DZ",{"ItemToolbox","Hammer_DZE"},{{"equip_metal_sheet",3},{"ItemScrews",1}};};
 };
 
 class StorageBarrelGreenRusty2_DZ: BuiltItems
