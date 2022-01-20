@@ -28039,6 +28039,134 @@
 			<German>Eine brennende Feuertonne, die wesentlich länger als ein einfaches Lagerfeuer brennt.</German>
 			<Russian>Бочка с дровами, которую можно поджечь и использовать в качестве источника огня.</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELREDKIT">
+			<English>Storage Barrel Kit</English>
+			<German>Lagerungs-Tonne Bausatz</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELREDKIT_DESC">
+			<English>A red barrel that can be used to store items.</English>
+			<German>Eine rote Tonne, die als Lagersplatz verwendet werden kann.</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELEPOCHKIT">
+			<English>Storage Barrel Kit</English>
+			<German>Lagerungs-Tonne Bausatz</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELEPOCHKIT_DESC">
+			<English>A green oil-barrel that can be used to store items.</English>
+			<German>Eine grüne Öl-Tonne, die als Lagersplatz verwendet werden kann.</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELYELLOWKIT">
+			<English>Storage Barrel Kit</English>
+			<German>Lagerungs-Tonne Bausatz</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELYELLOWKIT_DESC">
+			<English>A yellow barrel that can be used to store items.</English>
+			<German>Eine gelbe Tonne, die als Lagersplatz verwendet werden kann.</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELBLACKKIT">
+			<English>Storage Barrel Kit</English>
+			<German>Lagerungs-Tonne Bausatz</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELBLACKKIT_DESC">
+			<English>A black barrel that can be used to store items.</English>
+			<German>Eine schwarze Tonne, die als Lagersplatz verwendet werden kann.</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARKKIT">
+			<English>Storage Barrel Kit</English>
+			<German>Lagerungs-Tonne Bausatz</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARKKIT_DESC">
+			<English>A dark-green barrel that can be used to store items.</English>
+			<German>Eine dunkel-grüne Tonne, die als Lagersplatz verwendet werden kann.</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELMILKKIT">
+			<English>Storage Barrel Kit</English>
+			<German>Lagerungs-Tonne Bausatz</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELMILKKIT_DESC">
+			<English>A white-pink checkered barrel that can be used to store items.</English>
+			<German>Eine weiß-pink gefleckte Tonne, die als Lagersplatz verwendet werden kann.</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENKIT">
+			<English>Storage Barrel Kit</English>
+			<German>Lagerungs-Tonne Bausatz</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENKIT_DESC">
+			<English>A green barrel that can be used to store items.</English>
+			<German>Eine grüne Tonne, die als Lagersplatz verwendet werden kann.</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTYKIT">
+			<English>Storage Barrel Kit</English>
+			<German>Lagerungs-Tonne Bausatz</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTYKIT_DESC">
+			<English>A green, rusty barrel that can be used to store items.</English>
+			<German>Eine grüne, rostige Tonne, die als Lagersplatz verwendet werden kann.</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELRED">
+			<English>Storage Barrel (Red)</English>
+			<German>Lagerungs-Tonne (Rot)</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELRED2">
+			<English>Storage Barrel (Red) +</English>
+			<German>Lagerungs-Tonne (Rot) +</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELEPOCH">
+			<English>Storage Barrel (Epoch)</English>
+			<German>Lagerungs-Tonne (Epoch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARREEPOCH2">
+			<English>Storage Barrel (Epoch) +</English>
+			<German>Lagerungs-Tonne (Epoch) +</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELYELLOW">
+			<English>Storage Barrel (Yellow)</English>
+			<German>Lagerungs-Tonne (Gelb)</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARREYELLOW2">
+			<English>Storage Barrel (Yellow) +</English>
+			<German>Lagerungs-Tonne (Gelb) +</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELBLACK">
+			<English>Storage Barrel (Black)</English>
+			<German>Lagerungs-Tonne (Schwarz)</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARREBLACK2">
+			<English>Storage Barrel (Black) +</English>
+			<German>Lagerungs-Tonne (Schwarz) +</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARK">
+			<English>Storage Barrel (Green dark)</English>
+			<German>Lagerungs-Tonne (Grün dunkel)</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARREGREENDARK2">
+			<English>Storage Barrel (Green dark) +</English>
+			<German>Lagerungs-Tonne (Grün dunkel) +</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELMILK">
+			<English>Storage Barrel (Milk)</English>
+			<German>Lagerungs-Tonne (Milch)</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARREMILK2">
+			<English>Storage Barrel (Milk) +</English>
+			<German>Lagerungs-Tonne (Milch) +</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREEN">
+			<English>Storage Barrel (Green)</English>
+			<German>Lagerungs-Tonne (Grün)</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARREGREEN2">
+			<English>Storage Barrel (Green) +</English>
+			<German>Lagerungs-Tonne (Grün) +</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTY">
+			<English>Storage Barrel (Green rusty)</English>
+			<German>Lagerungs-Tonne (Grün rostig)</German>
+		</Key>
+		<Key ID="STR_EPOCH_STORAGEBARREGREENRUSTY2">
+			<English>Storage Barrel (Green rusty) +</English>
+			<German>Lagerungs-Tonne (Grün rostig) +</German>
+		</Key>
 		<Key ID="STR_EPOCH_WORKBENCH">
 			<English>Workbench</English>
 			<German>Werkbank</German>

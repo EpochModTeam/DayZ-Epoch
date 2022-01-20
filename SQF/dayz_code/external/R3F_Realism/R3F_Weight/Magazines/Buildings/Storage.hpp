@@ -166,3 +166,35 @@ class camo_storage_crate_kit
 {
 	weight = 21;
 };
+class ItemStorageBarrel1_kit
+{
+	weight = 25;
+};
+class ItemStorageBarrel2_kit
+{
+	weight = 25;
+};
+class ItemStorageBarrel3_kit
+{
+	weight = 25;
+};
+class ItemStorageBarrel4_kit
+{
+	weight = 25;
+};
+class ItemStorageBarrel5_kit
+{
+	weight = 25;
+};
+class ItemStorageBarrel6_kit
+{
+	weight = 25;
+};
+class ItemStorageBarrel7_kit
+{
+	weight = 25;
+};
+class ItemStorageBarrel8_kit
+{
+	weight = 25;
+};

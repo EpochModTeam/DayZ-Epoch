@@ -491,3 +491,307 @@ class CamoStorageCrate_DZ: BuiltItems
 	nounderground = 0;	// new
 	vehicleClass = "DayZ Epoch Buildables";
 };
+
+class StorageBarrelRed1_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELRED;	
+    model = "\CA\misc\Barel1.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel1_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 7;
+	transportMaxMagazines = 70;
+	transportMaxBackpacks = 2;
+};
+
+class StorageBarrelRed2_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELRED2;	
+    model = "\CA\misc\Barel1.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel1_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 10;
+	transportMaxMagazines = 100;
+	transportMaxBackpacks = 4;
+};
+
+class StorageBarrelEpoch1_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELEPOCH;	
+	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel2_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 8;
+	transportMaxMagazines = 80;
+	transportMaxBackpacks = 2;
+};
+
+class StorageBarrelEpoch2_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELEPOCH2;	
+	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel2_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 12;
+	transportMaxMagazines = 120;
+	transportMaxBackpacks = 4;
+};
+
+class StorageBarrelYellow1_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELYELLOW;	
+    model = "\CA\misc\Barel3.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel3_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 8;
+	transportMaxMagazines = 80;
+	transportMaxBackpacks = 2;
+};
+
+class StorageBarrelYellow2_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELYELLOW2;	
+    model = "\CA\misc\Barel3.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel3_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 12;
+	transportMaxMagazines = 120;
+	transportMaxBackpacks = 4;
+};
+
+class StorageBarrelBlack1_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELBLACK;	
+    model = "\CA\misc\Barel4.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel4_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 8;
+	transportMaxMagazines = 80;
+	transportMaxBackpacks = 2;
+};
+
+class StorageBarrelBlack2_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELBLACK2;	
+    model = "\CA\misc\Barel4.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel4_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 12;
+	transportMaxMagazines = 120;
+	transportMaxBackpacks = 4;
+};
+
+class StorageBarrelGreenDark1_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELGREENDARK;	
+    model = "\CA\misc\Barel5.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel5_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 8;
+	transportMaxMagazines = 80;
+	transportMaxBackpacks = 2;
+};
+
+class StorageBarrelGreenDark2_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELGREENDARK2;	
+    model = "\CA\misc\Barel5.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel5_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 12;
+	transportMaxMagazines = 120;
+	transportMaxBackpacks = 4;
+};
+
+class StorageBarrelMilk1_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELMILK;	
+    model = "\CA\misc\Barel6.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel6_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 8;
+	transportMaxMagazines = 80;
+	transportMaxBackpacks = 2;
+};
+
+class StorageBarrelMilk2_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELMILK2;	
+    model = "\CA\misc\Barel6.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel6_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 12;
+	transportMaxMagazines = 120;
+	transportMaxBackpacks = 4;
+};
+
+class StorageBarrelGreen1_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELGREEN;	
+    model = "\CA\misc\Barel7.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel7_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 8;
+	transportMaxMagazines = 80;
+	transportMaxBackpacks = 2;
+};
+
+class StorageBarrelGreen2_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELGREEN2;	
+    model = "\CA\misc\Barel7.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel7_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 12;
+	transportMaxMagazines = 120;
+	transportMaxBackpacks = 4;
+};
+
+class StorageBarrelGreenRusty1_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELGREENRUSTY;	
+    model = "\CA\misc\Barel8.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel8_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 8;
+	transportMaxMagazines = 80;
+	transportMaxBackpacks = 2;
+};
+
+class StorageBarrelGreenRusty2_DZ: BuiltItems
+{
+	scope = 2;
+	cost = 100;
+	offset[] = {0,1.5,0};
+	displayName = $STR_EPOCH_STORAGEBARRELGREENRUSTY2;	
+    model = "\CA\misc\Barel8.p3d";
+	icon = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	mapSize = 2;
+	armor = 400;
+	vehicleClass = "DayZ Epoch Buildables";
+	constructioncount = 2;
+	removeoutput[] = {{"ItemStorageBarrel8_kit",1}};
+	nounderground = 0;
+	transportMaxWeapons = 12;
+	transportMaxMagazines = 120;
+	transportMaxBackpacks = 4;
+};

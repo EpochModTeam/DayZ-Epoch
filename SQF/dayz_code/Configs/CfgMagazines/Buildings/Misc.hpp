@@ -20,6 +20,146 @@ class ItemFireBarrel_kit: CA_Magazine
 	};
 };
 
+class ItemStorageBarrel1_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_STORAGEBARRELREDKIT;
+    model = "\CA\misc\Barel1.p3d";           
+	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
+	descriptionShort = $STR_EPOCH_STORAGEBARRELREDKIT_DESC;
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "StorageBarrelRed1_DZ";
+		};
+	};
+};
+
+class ItemStorageBarrel2_kit: ItemStorageBarrel1_kit
+{
+	displayName = $STR_EPOCH_STORAGEBARRELEPOCHKIT;
+	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+	descriptionShort = $STR_EPOCH_STORAGEBARRELEPOCHKIT_DESC;
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "StorageBarrelEpoch1_DZ";
+		};
+	};
+};
+
+class ItemStorageBarrel3_kit: ItemStorageBarrel1_kit
+{
+	displayName = $STR_EPOCH_STORAGEBARRELYELLOWKIT;
+    model = "\CA\misc\Barel3.p3d";
+	descriptionShort = $STR_EPOCH_STORAGEBARRELYELLOWKIT_DESC;
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "StorageBarrelYellow1_DZ";
+		};
+	};
+};
+
+class ItemStorageBarrel4_kit: ItemStorageBarrel1_kit
+{
+	displayName = $STR_EPOCH_STORAGEBARRELBLACKKIT;
+    model = "\CA\misc\Barel4.p3d";
+	descriptionShort = $STR_EPOCH_STORAGEBARRELBLACKKIT_DESC;
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "StorageBarrelBlack1_DZ";
+		};
+	};
+};
+
+class ItemStorageBarrel5_kit: ItemStorageBarrel1_kit
+{
+	displayName = $STR_EPOCH_STORAGEBARRELGREENDARKKIT;
+    model = "\CA\misc\Barel5.p3d";
+	descriptionShort = $STR_EPOCH_STORAGEBARRELGREENDARKKIT_DESC;
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "StorageBarrelGreenDark1_DZ";
+		};
+	};
+};
+
+class ItemStorageBarrel6_kit: ItemStorageBarrel1_kit
+{
+	displayName = $STR_EPOCH_STORAGEBARRELMILKKIT;
+    model = "\CA\misc\Barel6.p3d";
+	descriptionShort = $STR_EPOCH_STORAGEBARRELMILKKIT_DESC;
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "StorageBarrelMilk1_DZ";
+		};
+	};
+};
+
+class ItemStorageBarrel7_kit: ItemStorageBarrel1_kit
+{
+	displayName = $STR_EPOCH_STORAGEBARRELGREENKIT;
+    model = "\CA\misc\Barel7.p3d";
+	descriptionShort = $STR_EPOCH_STORAGEBARRELGREENKIT_DESC;
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "StorageBarrelGreen1_DZ";
+		};
+	};
+};
+
+class ItemStorageBarrel8_kit: ItemStorageBarrel1_kit
+{
+	displayName = $STR_EPOCH_STORAGEBARRELGREENRUSTYKIT;
+    model = "\CA\misc\Barel8.p3d";
+	descriptionShort = $STR_EPOCH_STORAGEBARRELGREENRUSTYKIT_DESC;
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "StorageBarrelGreenRusty1_DZ";
+		};
+	};
+};
+
 class workbench_kit: CA_Magazine
 {
 	scope = 2;

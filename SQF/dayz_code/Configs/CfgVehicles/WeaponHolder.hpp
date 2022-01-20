@@ -636,3 +636,83 @@ class WeaponHolder_ItemLockboxWinter2Broken: WeaponHolder {
 	displayName = "$STR_EPOCH_LOCKBOX_BROKEN+";
 	seedItem = "ItemLockboxWinter2Broken";
 };
+class WeaponHolder_ItemStorageBarrel1_kit: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_STORAGEBARRELREDKIT_DESC";
+    model = "\CA\misc\Barel1.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel1_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+class WeaponHolder_ItemStorageBarrel2_kit: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_STORAGEBARRELEPOCHKIT_DESC";
+	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel2_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+class WeaponHolder_ItemStorageBarrel3_kit: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_STORAGEBARRELEYELLOWKIT_DESC";
+    model = "\CA\misc\Barel3.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel3_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+class WeaponHolder_ItemStorageBarrel4_kit: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_STORAGEBARRELBLACKKIT_DESC";
+    model = "\CA\misc\Barel4.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel4_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+class WeaponHolder_ItemStorageBarrel5_kit: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_STORAGEBARRELGREENDARKKIT_DESC";
+    model = "\CA\misc\Barel5.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel5_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+class WeaponHolder_ItemStorageBarrel6_kit: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_STORAGEBARRELMILKKIT_DESC";
+    model = "\CA\misc\Barel6.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel6_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+class WeaponHolder_ItemStorageBarrel7_kit: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_STORAGEBARRELGREENKIT_DESC";
+    model = "\CA\misc\Barel7.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel7_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
+class WeaponHolder_ItemStorageBarrel8_kit: WeaponHolder {
+	scope = 1;
+	displayName = "$STR_EPOCH_STORAGEBARRELGREENRUSTYKIT_DESC";
+    model = "\CA\misc\Barel8.p3d";
+	destrType = "DestructNo";
+	
+	class eventHandlers {
+		init = "[(_this select 0),'cfgMagazines','ItemStorageBarrel8_kit'] execVM '\z\addons\dayz_code\actions\pickupActions\object_pickupAction.sqf';";		
+	};
+};
