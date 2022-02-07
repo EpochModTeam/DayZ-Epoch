@@ -56,7 +56,7 @@ if ((isNil "PP_Marks") && !_toggle) then {
 		_color set [1, DZE_plotRed];			// red color if too high
 	};
 
-	local _center = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0];
+	local _center	= "Sign_sphere10cm_EP1" createVehicleLocal getPosATL _plot;
 	_center setObjectTexture DZE_plotGreen;			// add color
 	_center attachTo [_plot, [0,0,0]];			// move to model center
 	uiSleep 0.01;						// allow time to attach
