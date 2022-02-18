@@ -263,7 +263,7 @@ if (isNil "keyboard_keys") then {
 
 	local _addArray = {
 		{
-			if (_x <= 999999) then {
+			if (_x >= 0 && {_x <= 999999}) then { // Ensure positive values only.
 				keyboard_keys set [_x, _this select 1];
 			};
 		} forEach (_this select 0);
