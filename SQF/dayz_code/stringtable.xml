@@ -14209,6 +14209,16 @@
 			<English>Cessna C185F (Amphibian)</English>
 			<Russian>Cessna C185F (Амфибия)</Russian>
 		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_WEST">
+			<English>Camel (West)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_EAST">
+			<English>Camel (East)</English>
+		</Key>
+		<Key ID="STR_VEH_NAME_CAMEL_CIVIL">
+			<English>Camel (Civil)</English>
+			<German>Camel (Zivil)</German>
+		</Key>		
 		<Key ID="STR_VEH_NAME_STASH">
 			<English>Stash</English>
 			<French>Planque</French>

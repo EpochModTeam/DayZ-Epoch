@@ -5,12 +5,26 @@ class CfgMovesAnimalsBase {
 	class BlendAnims;
 };
 
-class CfgMovesBasic; //Fix for server CTD
-class CfgMovesMaleSdr: CfgMovesBasic
+class CfgMovesBasic {
+	class ManActions
+	{
+		Camel_a2_Pilot = "Camel_a2_Pilot";
+	};	
+}; 
+
+class CfgMovesMaleSdr: CfgMovesBasic //Fix for server CTD
 {
 	class States
 	{
 		class TransAnimBase_noIK;
+		class Crew;
+		class KIA_Camel_Pilot;
+		class Camel_a2_Pilot: Crew
+		{
+			file = "\CYBP\CYBP_Camels\Data\Anim\Pilot_a2.rtm";
+			interpolateTo[] = {"KIA_Camel_Pilot",1};
+		};		
+		
 		class AwopPercMstpSoptWbinDnon_AwopPknlMstpSoptWbinDnon_lnr: TransAnimBase_noIK
 		{
 			rightHandIKCurve[] = {};
@@ -33,7 +47,6 @@ class CfgMovesDogBase
 	class Default
 	{
 		actions = "";
-		//access = 3;
 		file = "";
 		looped = 1;
 		speed = 0.5;

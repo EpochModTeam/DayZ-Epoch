@@ -698,6 +698,7 @@ class CfgVehicles
 	#include "Plane\MV22.hpp"
 	#include "Plane\C130.hpp"
 	#include "Plane\Cessna_DZ.hpp"
+	#include "Plane\Camel.hpp"
 	//Bikes
 	#include "Bikes\ATVs.hpp"
 	#include "Bikes\Bikes.hpp"
