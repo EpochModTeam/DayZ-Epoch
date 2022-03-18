@@ -4,66 +4,57 @@
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
 
-closeDialog 0;
-
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_72" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
+closeDialog 0;
 
-private ["_isOk","_i","_objName","_finished","_proceed","_itemOut","_countOut","_plant","_findNearestPlant","_index","_invResult","_text","_playerNear"];
+local _plant = objNull;
+local _itemOut = "";
+local _type = "";
 
-_countOut = 0;
-
-_findNearestPlant = [];
-{
-	if (typeOf _x in dayz_plantTypes && {alive _x}) then {
-		_objName = _x call fn_getModelName;
-		if (_objName in dayz_plant) then {
-			_findNearestPlant set [count _findNearestPlant,_x];
+{	
+	local _obj = _x;
+	_type = typeOf _obj;
+	if (alive _obj && {_type in dayz_plantTypes}) exitwith {
+		local _objName = _obj call fn_getModelName;
+		
+		if (_objName in ["pumpkin.p3d","p_helianthus.p3d","p_fiberplant_ep1.p3d"] || _type != "" && {_objName in dayz_plant}) exitWith {
 			_index = dayz_plant find _objName;
 			_itemOut = dayz_plantOutput select _index;
-			_countOut = 1;
+			_plant = _obj;
 		};
 	};
 } count nearestObjects [([player] call FNC_getPos), [], 10];
 
-if (count _findNearestPlant >= 1) then {
-	_plant = _findNearestPlant select 0;
+if !(isNull _plant) then {
+	[player,(getPosATL player),20,"chopwood"] spawn fnc_alertZombies;
+	local _finished = ["Medic",1] call fn_loopAction;
 
-	_isOk = true;
-	_proceed = false;
-	while {_isOk} do {
-		[player,(getPosATL player),20,"chopwood"] spawn fnc_alertZombies;
-
-		_finished = ["Medic",1] call fn_loopAction;
-
-		if(!_finished) exitWith {
-			_isOk = false;
-			_proceed = false;
-		};
-
-		if(_finished) exitWith {
-			_isOk = false;
-			_proceed = true;
-		};
-	};
-
-	if (_proceed) then {
-		_playerNear = {isPlayer _x} count (([_plant] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
+	if (_finished) then {
+		local _playerNear = {isPlayer _x} count (([_plant] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;
 		if (_playerNear) exitWith {dayz_actionInProgress = false; localize "str_pickup_limit_5" call dayz_rollingMessages;};
 
 		false call dz_fn_meleeMagazines; //Remove melee magazines (BIS_fnc_invAdd fix)
 		["Working",0,[3,2,4,0]] call dayz_NutritionSystem;
-		_invResult = false;
-		_i = 0;
+		local _invResult = false;
+		local _groundDrop = false;
+		local _i = 0;
+		local _j = 0;
+		local _countOut = getNumber(configFile >> "CfgSurvival" >> "Plants" >> _type >> "qty");
+		_countOut = 1 + floor(random _countOut);
+		
 		for "_x" from 1 to _countOut do {
 			_invResult = [player,_itemOut] call BIS_fnc_invAdd;
-			if(_invResult) then {
-				_i = _i + 1;
+			if !(_invResult) then {				
+				[_itemOut,1,1] call fn_dropItem;
+				_groundDrop = true;
+				_j = _j + 1;
 			};
+			_i = _i + 1;
 		};
 		true call dz_fn_meleeMagazines;
 
-		_text = getText (configFile >> "CfgMagazines" >> _itemOut >> "displayName");
+		local _text = getText (configFile >> "CfgMagazines" >> _itemOut >> "displayName");
 
 		if (_i != 0) then {
 			if ("" == typeOf _plant) then {
@@ -72,7 +63,11 @@ if (count _findNearestPlant >= 1) then {
 			} else {
 				deleteVehicle _plant;
 			};
-			format[localize "str_epoch_player_154",_i,_text] call dayz_rollingMessages;
+			if (_groundDrop) then {
+				format[localize "str_success_gathered",_text,(_i-_j),_j,_text] call dayz_rollingMessages;
+			} else {	
+				format[localize "str_epoch_player_154",_i,_text] call dayz_rollingMessages;
+			};	
 		} else {
 			format[localize "str_epoch_player_143",_i,_text] call dayz_rollingMessages;
 		};

@@ -1472,3 +1472,43 @@ class metal_container_2d_kit: CA_Magazine	// 2x red
 		};
 	};
 };
+
+class compost_barrel_empty_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_COMPOST_BARREL_EMTPY;
+	descriptionShort = $STR_EPOCH_COMPOST_BARREL_EMTPY_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+		class Build	{
+			text = $STR_EPOCH_BUILD_COMPOST_BARREL;
+			script = "spawn player_build;";
+			require[] = {};
+			create = "Compost_Barrel_Empty_DZE";
+		};
+	};
+};
+
+class compost_barrel_full_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EPOCH_COMPOST_BARREL_FULL;
+	descriptionShort = $STR_EPOCH_COMPOST_BARREL_FULL_DESC;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions {
+		class Build	{
+			text = $STR_EPOCH_BUILD_COMPOST_BARREL;
+			script = "spawn player_build;";
+			require[] = {"ItemShovel"};
+			create = "Compost_Barrel_Full_DZE";
+		};
+	};
+};

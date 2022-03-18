@@ -6389,11 +6389,11 @@
 		</Key>
 		<Key ID="str_success_gathered">
 			<!-- %1 itemout name %2 itemout quantity %3 quantity left -->
-			<English>You have collected %2 %1. %3 Dropped.</English>
-			<German>Du hast %2x %1 aufgesammelt. Die restlichen %3 liegen noch auf dem Boden.</German>
-			<Russian>Вы собрали %1 (%2). %3 осталось.</Russian>
-			<French>Vous avez récolté %2 %1. %3 Dropped.</French>
-			<Czech>Nasbírali jste %2x %1. Zbývá ještě %3.</Czech>
+			<English>You have collected %2x %1. %3 %4 dropped on the ground.</English>
+			<German>Du hast %2x %1 aufgesammelt. Die restlichen %3 %4 liegen noch auf dem Boden.</German>
+			<Russian>Вы собрали %1 (%2). %3 %4 осталось.</Russian>
+			<French>Vous avez récolté %2x %1. %3 %4 Dropped.</French>
+			<Czech>Nasbírali jste %2x %1. Zbývá ještě %3 %4.</Czech>
 		</Key>
 		<Key ID="str_failed_noroom">
 			<English>Unable to gather due to space, 3 main slots are needed.</English>
@@ -23642,12 +23642,12 @@
 			<Czech>Downgradnuli jste %1.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_143">
-			<English>%1 of %2 could not be added to your inventory. (not enough room?)</English>
-			<German>%1 von %2 konnte dem Inventar nicht hinzugefügt werden. (Inventar voll?)</German>
+			<English>%1x %2 could not be added to your inventory. (not enough room?)</English>
+			<German>%1x %2 konnte dem Inventar nicht hinzugefügt werden. (Inventar voll?)</German>
 			<Russian>%2 (в количестве: %1) не может быть добавлен в ваш инвентарь. (Недостаточно места?)</Russian>
-			<Dutch>%1 van %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
-			<French>%1 sur %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
-			<Czech>%1 z %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
+			<Dutch>%1x %2 kon niet worden toegevoegd aan je inventaris (vol?)</Dutch>
+			<French>%1x %2 ne peuvent être ajoutés à votre inventaire. (pas assez de place ?)</French>
+			<Czech>%1x %2 nemohl být přidán do inventáře. (nedostatek místa?)</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_145">
 			<English>Missing Parts after first check Item: %1 / %2</English>
@@ -23679,11 +23679,11 @@
 			<Czech>%3 hotovo, chybí ještě %1 %2</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_154">
-			<English>%1 of %2 has been successfully added to your inventory.</English>
-			<German>%1 %2 wurde erfolgreich deinem Inventar hinzugefügt.</German>
+			<English>%1x %2 has been successfully added to your inventory.</English>
+			<German>%1x %2 wurde erfolgreich deinem Inventar hinzugefügt.</German>
 			<Russian>%2 (в количестве: %1) успешно добавлен в ваш инвентарь.</Russian>
-			<Dutch>%1 %2 is aan je inventaris toegevoegd.</Dutch>
-			<Czech>%1 %2 bylo úspěšně přidáno do Vašeho inventáře.</Czech>
+			<Dutch>%1x %2 is aan je inventaris toegevoegd.</Dutch>
+			<Czech>%1x %2 bylo úspěšně přidáno do Vašeho inventáře.</Czech>
 		</Key>
 		<Key ID="STR_EPOCH_PLAYER_155">
 			<English>Mining Ore, walk away at any time to cancel. (%1/%2)</English>
@@ -35138,6 +35138,26 @@
 			<German>Müllhaufen</German>
 			<Russian>Мусорная куча</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_COMPOST_BARREL_EMTPY">
+			<English>Compost Barrel (Empty)</English>
+			<German>Kompostfass (Leer)</German>
+		</Key>
+		<Key ID="STR_EPOCH_COMPOST_BARREL_EMTPY_DESC">
+			<English>Compost Barrel (Empty)</English>
+			<German>Kompostfass (Leer)</German>
+		</Key>		
+		<Key ID="STR_EPOCH_COMPOST_BARREL_FULL">
+			<English>Compost Barrel (Full)</English>
+			<German>Kompostfass (Voll)</German>
+		</Key>
+		<Key ID="STR_EPOCH_COMPOST_BARREL_FULL_DESC">
+			<English>Compost Barrel (Full)</English>
+			<German>Kompostfass (Voll)</German>
+		</Key>	
+		<Key ID="STR_EPOCH_BUILD_COMPOST_BARREL">
+			<English>Build Compost Barrel</English>
+			<German>Kompostfass bauen</German>
+		</Key>		
 		<Key ID="STR_EPOCH_PLANT_PATCH_PUMPKIN">
 			<English>Pumpkin patch</English>
 			<German>Kürbisbeet</German>
@@ -35173,6 +35193,42 @@
 			<German>Teepflanzenbeet</German>
 			<Russian>Чайный участок</Russian>
 		</Key>
+		<Key ID="STR_EPOCH_PLANT_PATCH_GARLIC">
+			<English>Garlic patch</English>
+			<German>Knoblauchbeet</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_PUMPKIN">
+			<English>Pumpkin Plant</English>
+			<German>Kürbispflanze</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_SUNFLOWER">
+			<English>Sunflower</English>
+			<German>Sonnenblume</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_POTATO">
+			<English>Potato Plant</English>
+			<German>Kartoffelpflanze</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_CARROT">
+			<English>Carrot Plant</English>
+			<German>Karottenpflanze</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_HEMP">
+			<English>Hemp Plant</English>
+			<German>Cannabispflanze</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_TEA">
+			<English>Tea Plant</English>
+			<German>Teepflanze</German>
+		</Key>
+		<Key ID="STR_EPOCH_PLANT_TOBACCO">
+			<English>Tobacco Plant</English>
+			<German>Tabakpflanze</German>
+		</Key>	
+		<Key ID="STR_EPOCH_PLANT_GARLIC">
+			<English>Garlic Plant</English>
+			<German>Knoblauchpflanze</German>
+		</Key>		
 		<Key ID="STR_EPOCH_ITEM_NOTEBOOK">
 			<English>Notebook</English>
 			<Russian>Ноутбук</Russian>

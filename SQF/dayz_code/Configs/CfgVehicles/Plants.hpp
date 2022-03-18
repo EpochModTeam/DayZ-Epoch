@@ -51,6 +51,26 @@ class Dayz_Plant1: Plant_Base {
 	};
 };
 
+class Compost_Barrel_Base_DZE : NonStrategic {
+	scope = 0;
+	icon = "\ca\data\data\Unknown_object.paa";
+	model = "\CA\Structures\Misc\Armory\Barels\barrel_empty.p3d";
+	armor = 100;
+	mapsize = 2;
+	vehicleClass = "DayZ Epoch Plants";	
+};
+
+class Compost_Barrel_Empty_DZE : Compost_Barrel_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_COMPOST_BARREL_EMTPY;
+};
+
+class Compost_Barrel_Full_DZE : Compost_Barrel_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_COMPOST_BARREL_FULL;
+	model = "\CA\Structures\Misc\Armory\Barels\barrel_sand.p3d";
+};
+
 class Plant_Patch_Base_DZE : NonStrategic {
 	scope = 0;
 	model = "\z\addons\dayz_communityassets\models\stash_small.p3d";
@@ -93,4 +113,57 @@ class Plant_Patch_Tobacco_DZE : Plant_Patch_Base_DZE {
 class Plant_Patch_Tea_DZE : Plant_Patch_Base_DZE {
 	scope = 2;
 	displayname = $STR_EPOCH_PLANT_PATCH_TEA;
+};
+
+class Plant_Patch_Garlic_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayname = $STR_EPOCH_PLANT_PATCH_GARLIC;
+};
+
+class Plant_Pumpkin_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_PUMPKIN;	
+	model = "\ca\plants2\plant\pumpkin.p3d";
+};
+
+class Plant_Sunflower_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_SUNFLOWER;
+	model = "\ca\plants2\plant\p_helianthus.p3d";
+};
+
+class Plant_Potato_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_POTATO;
+	model = "\ca\plants2\plant\p_urtica.p3d";
+};
+
+class Plant_Carrot_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_CARROT;
+	model = "\ca\plants2\plant\p_carduus.p3d";
+};
+
+class Plant_Hemp_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_HEMP;
+	model = "\ca\plants_e\plant\p_fiberplant_ep1.p3d";
+};
+
+class Plant_Tea_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_TEA;
+	model = "\ca\plants2\clutter\c_wideLeafPlant.p3d";
+};
+
+class Plant_Tobacco_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_TOBACCO;
+	model = "\ca\plants2\bush\b_betulaHumilis.p3d";
+};
+
+class Plant_Garlic_DZE : Plant_Patch_Base_DZE {
+	scope = 2;
+	displayName = $STR_EPOCH_PLANT_GARLIC;
+	model = "z\addons\dayz_communityassets\models\comfrey_up_small.p3d";
 };

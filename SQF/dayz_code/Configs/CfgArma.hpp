@@ -543,6 +543,31 @@ class CfgSurvival {
 			yield = 2;
 			rawfoodtype = "FoodrabbitRaw";
 		};
-
+	};
+	class Plants {
+		class Plant_Pumpkin_DZE {
+			qty = 4;
+		};
+		class Plant_Sunflower_DZE {
+			qty = 3;
+		};
+		class Plant_Potato_DZE {
+			qty = 7;
+		};
+		class Plant_Carrot_DZE {
+			qty = 7;
+		};
+		class Plant_Hemp_DZE {
+			qty = 2;
+		};
+		class Plant_Tea_DZE {
+			qty = 3;
+		};
+		class Plant_Tobacco_DZE {
+			qty = 2;
+		};
+		class Plant_Garlic_DZE {
+			qty = 7;
+		};		
 	};
 };
