@@ -17,12 +17,10 @@ if Player_IsOnLadder() exitWith { (localize "str_player_21") call dayz_rollingMe
 
 _posASL = getPosASL player;
 _posATL = ASLtoATL _posASL;
-//"Land_water_tank" has no spout or opening, doesn't make sense to include
-_wells = ["Land_pumpa","Land_Barrel_water","Land_Misc_Well_C_EP1","Land_Misc_Well_L_EP1","land_smd_water_pump"];
 
 _canFill = call {
 	//Return: [nearWaterHole, isPond]
-	if (count nearestObjects [_posATL,_wells,4] > 0) exitwith {[true,false]};
+	if (count nearestObjects [_posATL,DZE_WaterSources,4] > 0) exitwith {[true,false]};
 	if (toLower worldName in ["chernarus","namalsk","napf"]) exitwith {(call fn_nearWaterHole)};
 	//Slow searches for maps without waterHoleProxy objects added yet
 	if ({["_well",str _x] call fnc_inString} count nearestObjects [_posATL,[],4] > 0) exitwith {[true,false]};
