@@ -713,3 +713,159 @@ class CCTV_DZ: Loudspeaker
 	removeoutput[] = {{"cctv_kit",1}};
 	vehicleClass = "DayZ Epoch Buildables";
 };
+
+class Rabbit_Hutch_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\Structures\Misc\Hutch\Misc_Hutch.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_RABBIT_HUTCH;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"rabbit_hutch_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 1;
+};
+
+class Chicken_Coop_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\Structures\Misc\ChickenCoop\Misc_ChickenCoop.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_CHICKEN_COOP;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"chicken_coop_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 1;
+};
+
+class Doghouse_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\buildings\psi_bouda.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_CHICKEN_COOP;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"doghouse_kit",1}};
+	transportMaxWeapons = 5;
+	transportMaxMagazines = 25;
+	transportMaxBackpacks = 1;
+};
+
+class Postbox_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\Structures\Misc\Misc_PostBox\Misc_PostBox.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_POSTBOX;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"postbox_kit",1}};
+	transportMaxWeapons = 1;
+	transportMaxMagazines = 5;
+	transportMaxBackpacks = 1;
+};
+
+class Boggle_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\Structures\Misc\Misc_Small\Misc_Boogieman.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_BOGGLE;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartWoodLumber",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"boggle_kit",1}};
+};
+
+class Satellite_Dish_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,3,0}; 
+    model = "\CA\misc3\parabola_big\parabola_big.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 800;
+	displayName = $STR_EQUIP_NAME_SATELLITE_DISH;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartGeneric",1}};
+	constructioncount = 1;
+	removeoutput[] = {{"satellite_dish_kit",1}};
+};
+
+class Fueltank_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,5,0}; 
+	model = "\Ca\buildings2\Ind_Tank\Ind_TankSmall2";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 1200;
+	displayName = $STR_EQUIP_NAME_FUELTANK_BIG;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartGeneric",1}};
+	constructioncount = 3;
+	removeoutput[] = {{"fueltank_kit",1}};
+};
+
+class Watertank_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,5,0}; 
+    model = "\Ca\buildings2\Ind_Tank\Ind_TankSmall";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 1200;
+	displayName = $STR_EQUIP_NAME_WATERTANK;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartGeneric",1}};
+	constructioncount = 3;
+	removeoutput[] = {{"watertank_kit",1}};
+};
+
+class Watertower_DZE : BuiltItems 
+{
+	scope = 2;
+	destrType = "DestructTree";
+	offset[] = {0,5,0}; 
+    model = "\CA\misc\water_tank.p3d";
+	icon = "\ca\data\data\Unknown_object.paa";
+	mapSize = 2;
+	armor = 1200;
+	displayName = $STR_EQUIP_NAME_WATERTOWER;
+	vehicleClass = "DayZ Epoch Buildables";
+	maintainBuilding[] = {{"PartGeneric",2}};
+	constructioncount = 3;
+	removeoutput[] = {{"watertower_kit",1}};
+};

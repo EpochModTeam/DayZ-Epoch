@@ -20,146 +20,6 @@ class ItemFireBarrel_kit: CA_Magazine
 	};
 };
 
-class ItemStorageBarrel1_kit: CA_Magazine
-{
-	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_EPOCH_STORAGEBARRELREDKIT;
-    model = "\CA\misc\Barel1.p3d";           
-	picture = "\z\addons\dayz_epoch\pictures\equip_oil_drum_model_ca.paa";
-	descriptionShort = $STR_EPOCH_STORAGEBARRELREDKIT_DESC;
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "StorageBarrelRed1_DZ";
-		};
-	};
-};
-
-class ItemStorageBarrel2_kit: ItemStorageBarrel1_kit
-{
-	displayName = $STR_EPOCH_STORAGEBARRELEPOCHKIT;
-	model = "\z\addons\dayz_epoch\models\oil_drum_model.p3d";
-	descriptionShort = $STR_EPOCH_STORAGEBARRELEPOCHKIT_DESC;
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "StorageBarrelEpoch1_DZ";
-		};
-	};
-};
-
-class ItemStorageBarrel3_kit: ItemStorageBarrel1_kit
-{
-	displayName = $STR_EPOCH_STORAGEBARRELYELLOWKIT;
-    model = "\CA\misc\Barel3.p3d";
-	descriptionShort = $STR_EPOCH_STORAGEBARRELYELLOWKIT_DESC;
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "StorageBarrelYellow1_DZ";
-		};
-	};
-};
-
-class ItemStorageBarrel4_kit: ItemStorageBarrel1_kit
-{
-	displayName = $STR_EPOCH_STORAGEBARRELBLACKKIT;
-    model = "\CA\misc\Barel4.p3d";
-	descriptionShort = $STR_EPOCH_STORAGEBARRELBLACKKIT_DESC;
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "StorageBarrelBlack1_DZ";
-		};
-	};
-};
-
-class ItemStorageBarrel5_kit: ItemStorageBarrel1_kit
-{
-	displayName = $STR_EPOCH_STORAGEBARRELGREENDARKKIT;
-    model = "\CA\misc\Barel5.p3d";
-	descriptionShort = $STR_EPOCH_STORAGEBARRELGREENDARKKIT_DESC;
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "StorageBarrelGreenDark1_DZ";
-		};
-	};
-};
-
-class ItemStorageBarrel6_kit: ItemStorageBarrel1_kit
-{
-	displayName = $STR_EPOCH_STORAGEBARRELMILKKIT;
-    model = "\CA\misc\Barel6.p3d";
-	descriptionShort = $STR_EPOCH_STORAGEBARRELMILKKIT_DESC;
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "StorageBarrelMilk1_DZ";
-		};
-	};
-};
-
-class ItemStorageBarrel7_kit: ItemStorageBarrel1_kit
-{
-	displayName = $STR_EPOCH_STORAGEBARRELGREENKIT;
-    model = "\CA\misc\Barel7.p3d";
-	descriptionShort = $STR_EPOCH_STORAGEBARRELGREENKIT_DESC;
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "StorageBarrelGreen1_DZ";
-		};
-	};
-};
-
-class ItemStorageBarrel8_kit: ItemStorageBarrel1_kit
-{
-	displayName = $STR_EPOCH_STORAGEBARRELGREENRUSTYKIT;
-    model = "\CA\misc\Barel8.p3d";
-	descriptionShort = $STR_EPOCH_STORAGEBARRELGREENRUSTYKIT_DESC;
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {};
-			create = "StorageBarrelGreenRusty1_DZ";
-		};
-	};
-};
-
 class workbench_kit: CA_Magazine
 {
 	scope = 2;
@@ -182,75 +42,30 @@ class workbench_kit: CA_Magazine
 	};
 };
 
-class advanced_workBench_kit: CA_Magazine
-{
-	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_EPOCH_WORKBENCH_ADVANCED;
-	descriptionShort = $STR_EPOCH_WORKBENCH_ADVANCED_DESC;
-	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
-	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
-
-	class ItemActions
-	{
-		class Build
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {"ItemToolbox"};
-			create = "Advanced_WorkBench_DZ";
-		};
-	};
-};
-
 // DayZ Mod workbench
 class ItemWorkBench: CA_Magazine
 {
 	scope = 2;
 	count = 1;
 	type = 256;
-	displayName = $STR_BLD_name_ItemWorkBench;//"Work Bench (Packed)"
+	displayName = $STR_BLD_name_ItemWorkBench;
 	model = "z\addons\dayz_buildings\models\workbench_flat.p3d";
-	picture = "\z\addons\dayz_buildings\equip\item_workbench.paa"; // add to PBO
-	descriptionShort = $STR_BLD_desc_ItemWorkBench;//"A Folded Workbench, required for House Building and Some Crafting"
-	vehicle = "WorkBench";
+	picture = "\z\addons\dayz_buildings\equip\item_workbench.paa";
+	descriptionShort = $STR_BLD_desc_ItemWorkBench;
 	sfx = "tentunpack";
 
 	class ItemActions
 	{
 		class Build
 		{
-			text = $STR_BLD_build_ItemWorkBench;//"place WorkBench"
-			script = "; ['ItemWorkBench','Build'] spawn player_buildPlaceables;";
-			require[] = {};
-			consume[] = {"ItemWorkBench"};
+			text = $STR_BLD_build_ItemWorkBench;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
 			create = "WorkBench";
 		};
 	};
 };
-
-class ItemWorkBench_DZE : CA_Magazine
-{
-	scope = 2;
-	count = 1;
-	type = 256;
-	displayName = $STR_BLD_name_ItemWorkBench;//"Work Bench (Packed)"
-	model = "z\addons\dayz_buildings\models\workbench_flat.p3d";
-	picture = "\z\addons\dayz_buildings\equip\item_workbench.paa"; // add to PBO
-	descriptionShort = $STR_BLD_desc_ItemWorkBench;//"A Folded Workbench, required for House Building and Some Crafting"
-	
-	class ItemActions 
-	{
-		class Build 
-		{
-			text = $STR_ACTIONS_BUILD;
-			script = "spawn player_build;";
-			require[] = {"ItemToolbox"};
-			create = "WorkBench_DZE";
-		};
-	};
-}; 
+ 
 class wood_ramp_kit: CA_Magazine
 {
 	scope = 2;
@@ -1509,6 +1324,116 @@ class compost_barrel_full_kit: CA_Magazine
 			script = "spawn player_build;";
 			require[] = {"ItemShovel"};
 			create = "Compost_Barrel_Full_DZE";
+		};
+	};
+};
+
+class boggle_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_BOGGLE;
+	descriptionShort = $STR_EQUIP_DESC_BOGGLE;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Boggle_DZE";
+		};
+	};
+};
+
+class satellite_dish_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_SATELLITE_DISH;
+	descriptionShort = $STR_EQUIP_DESC_SATELLITE_DISH;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Satellite_Dish_DZE";
+		};
+	};
+};
+
+class fueltank_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_FUELTANK_BIG;
+	descriptionShort = $STR_EQUIP_DESC_FUELTANK_BIG;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Fueltank_DZE";
+		};
+	};
+};
+
+class watertank_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_WATERTANK;
+	descriptionShort = $STR_EQUIP_DESC_WATERTANK;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Watertank_DZE";
+		};
+	};
+};
+
+class watertower_kit: CA_Magazine
+{
+	scope = 2;
+	count = 1;
+	type = 256;
+	displayName = $STR_EQUIP_NAME_WATERTOWER;
+	descriptionShort = $STR_EQUIP_DESC_WATERTOWER;
+	model = "\z\addons\dayz_epoch\models\supply_crate.p3d";
+	picture = "\z\addons\dayz_epoch\pictures\equip_wooden_crate_ca.paa";
+
+	class ItemActions
+	{
+		class Build
+		{
+			text = $STR_ACTIONS_BUILD;
+			script = "spawn player_build;";
+			require[] = {"ItemToolbox"};
+			create = "Watertower_DZE";
 		};
 	};
 };

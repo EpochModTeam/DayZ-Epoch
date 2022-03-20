@@ -36214,6 +36214,79 @@
 			<German>Ein gestapelter Metallcontainer mit starken Wänden zum Verschiffen auf See.</German>
 		</Key>	
 
+		<Key ID="STR_EQUIP_NAME_RABBIT_HUTCH">
+			<English>Rabbit Hutch</English>
+			<German>Kaninchenkäfig</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_RABBIT_HUTCH">
+			<English>A bigger hutch with enough room for many rabbits.</English>
+			<German>Ein größerer Käfig mit genug Platz für viele Hasen.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_CHICKEN_COOP">
+			<English>Chicken Coop</English>
+			<German>Hühnerstall</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_CHICKEN_COOP">
+			<English>A small coop with room for only a few chickens.</English>
+			<German>Ein kleiner Stall mit gerade so genug Platz für ein paar Hühner.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_DOG_HOUSE">
+			<English>Dog House</English>
+			<German>Hundehütte</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_DOG_HOUSE">
+			<English>A small dog house.</English>
+			<German>Eine kleine Hundehütte.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_POSTBOX">
+			<English>Postbox</English>
+			<German>Briefkasten</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_POSTBOX">
+			<English>A small postbox.</English>
+			<German>Ein kleiner Briefkasten.</German>
+		</Key>		
+		<Key ID="STR_EQUIP_NAME_BOGGLE">
+			<English>Boggle</English>
+			<German>Vogelscheuche</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_BOGGLE">
+			<English>A boggle to protect the fields against birds.</English>
+			<German>Eine Vogelscheuche, um Felder vor Vögeln zu schützen.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_SATELLITE_DISH">
+			<English>Satellite Dish</English>
+			<German>Satellitenschüssel</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_SATELLITE_DISH">
+			<English>A satellite dish to receive signals.</English>
+			<German>Eine Satellitenschüssel zum Empfang von Signalen.</German>
+		</Key>	
+		<Key ID="STR_EQUIP_NAME_FUELTANK_BIG">
+			<English>Fuel Tank</English>
+			<German>Treibstofftank</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_FUELTANK_BIG">
+			<English>A big fuel tank which can hold a lot of fuel.</English>
+			<German>Ein großer Treibstofftank, in welchem viel Treibstoff gelagert werden kann.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WATERTANK">
+			<English>Water Tank</English>
+			<German>Wassertank</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WATERTANK">
+			<English>A big water tank which can hold a lot of water.</English>
+			<German>Ein großer Wassertank, in welchem viel Wasser gelagert werden kann.</German>
+		</Key>
+		<Key ID="STR_EQUIP_NAME_WATERTOWER">
+			<English>Water Tower</English>
+			<German>Wasserturm</German>
+		</Key>
+		<Key ID="STR_EQUIP_DESC_WATERTOWER">
+			<English>A big water tower which can hold a lot of water.</English>
+			<German>Ein großer Wasserturm, in welchem viel Wasser gelagert werden kann.</German>
+		</Key>		
+		
 		<!--Fix for missing strings from the buildings3.pbo, this is just a placeholder-->
 		<Key ID="STR_FAL_Street_Sign">
 			<English>Street Sign</English>
