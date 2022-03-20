@@ -58,6 +58,7 @@ class Compost_Barrel_Base_DZE : NonStrategic {
 	armor = 100;
 	mapsize = 2;
 	vehicleClass = "DayZ Epoch Plants";	
+	offset[] = {0,3,0};	
 };
 
 class Compost_Barrel_Empty_DZE : Compost_Barrel_Base_DZE {
@@ -78,6 +79,7 @@ class Plant_Patch_Base_DZE : NonStrategic {
 	armor = 100;
 	mapsize = 2;
 	vehicleClass = "DayZ Epoch Plants";
+	offset[] = {0,3,0};	
 };	
 
 class Plant_Patch_Pumpkin_DZE : Plant_Patch_Base_DZE {
