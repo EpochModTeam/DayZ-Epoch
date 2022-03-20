@@ -8,12 +8,6 @@ class workbench_kit
 	weight = 10;
 };
 
-// DayZ Mod workbench
-class ItemWorkBench
-{
-	weight = 10;
-};
-
 class wood_ramp_kit
 {
 	weight = 70;
@@ -152,4 +146,92 @@ class helipad_parkborder_kit
 class cctv_kit
 {
 	weight = 25;
+};
+class fortified_wire_kit
+{
+	weight = 85;
+};
+class barbed_gate_kit
+{
+	weight = 35;
+};
+class concrete_barrier_kit
+{
+	weight = 65;
+};
+class concrete_barrier_striped_kit
+{
+	weight = 65;
+};
+class concrete_wall_kit
+{
+	weight = 120;
+};
+class concrete_pipe_kit
+{
+	weight = 150;
+};
+class dragonteeth_kit
+{
+	weight = 100;
+};
+class dragonteeth_big_kit
+{
+	weight = 150;
+};
+class simple_footbridge_kit
+{
+	weight = 2;
+};
+class wooden_footbridge_kit
+{
+	weight = 3;
+};
+class windbreak_kit
+{
+	weight = 7;
+};
+class metal_container_1a_kit
+{
+	weight = 200;
+};
+class metal_container_1b_kit
+{
+	weight = 200;
+};
+class metal_container_1g_kit
+{
+	weight = 200;
+};
+class metal_container_2d_kit
+{
+	weight = 400;
+};
+class compost_barrel_empty_kit
+{
+	weight = 2;
+};
+class compost_barrel_full_kit
+{
+	weight = 20;
+};
+class boggle_kit
+{
+	weight = 3;
+};
+class satellite_dish_kit
+{
+	weight = 3;
+};
+class fueltank_kit
+{
+	weight = 250;
+};
+class watertank_kit
+{
+	weight = 250;
+};
+class watertower_kit
+{
+	weight = 350;
 };

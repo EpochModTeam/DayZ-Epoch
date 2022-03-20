@@ -58,6 +58,11 @@ class ItemWoodStairsSupport
 	weight = 30;
 };
 
+class ItemWoodStairsRails
+{
+	weight = 33;
+};
+
 class ItemWoodLadder
 {
 	weight = 25;

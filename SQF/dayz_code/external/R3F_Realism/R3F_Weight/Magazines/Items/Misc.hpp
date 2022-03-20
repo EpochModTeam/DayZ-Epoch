@@ -233,3 +233,15 @@ class ItemBucketMilk
 {
 	weight = 10;
 };
+class ItemBackpackUpgrade_1
+{
+	weight = 2;
+};
+class ItemBackpackUpgrade_2
+{
+	weight = 4;
+};
+class ItemBackpackUpgrade_3
+{
+	weight = 6;
+};

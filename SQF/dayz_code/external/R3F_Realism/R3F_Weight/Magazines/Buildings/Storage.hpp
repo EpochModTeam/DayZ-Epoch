@@ -162,6 +162,15 @@ class advanced_workBench_kit
 {
 	weight = 35;
 };
+// DayZ Mod workbench
+class ItemWorkBench
+{
+	weight = 10;
+};
+class ItemWorkBench_DZE
+{
+	weight = 10;
+};
 class camo_storage_crate_kit
 {
 	weight = 21;
@@ -197,4 +206,20 @@ class ItemStorageBarrel7_kit
 class ItemStorageBarrel8_kit
 {
 	weight = 25;
+};
+class rabbit_hutch_kit
+{
+	weight = 75;
+};
+class chicken_coop_kit
+{
+	weight = 45;
+};
+class doghouse_kit
+{
+	weight = 15;
+};
+class postbox_kit
+{
+	weight = 10;
 };
