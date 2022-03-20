@@ -51,7 +51,7 @@ if (_obj getVariable ["GeneratorRunning", false]) exitWith {
 local _objType	= typeOf _obj;			// object's classname
 local _bbObject	= boundingBox _obj select 1;	// positive x,y dimensions
 
-if (_objType in DZE_DoorsLocked && !(_objType in ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"])) exitWith {
+if (_objType in DZE_DoorsLocked && !(_objType in DZE_LockedGates)) exitWith {
 	dayz_actionInProgress = false;
 	localize "STR_EPOCH_ACTIONS_20" call dayz_rollingMessages;	// You must remove the lock to delete this item!
 };

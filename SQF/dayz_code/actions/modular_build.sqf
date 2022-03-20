@@ -1499,7 +1499,7 @@ if (_canBuild) then {
 							} else {
 								_combination = DZE_Lock_Door;
 							};
-							if (_classname in ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"]) then {
+							if (_classname in DZE_LockedGates) then {
 								GateMethod = DZE_Lock_Door;
 							};
 

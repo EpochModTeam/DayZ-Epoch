@@ -48,7 +48,7 @@ if (!isNull dayz_selectedDoor) then {
 
 			_code = [DZE_Lock_Door,format ["%1 - EYESCAN",_objectCharacterID]] select (_doorMethod == "EYE");
 
-			if !(typeof _obj in ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"]) then {
+			if !(typeof _obj in DZE_LockedGates) then {
 				[player,"combo_unlock",0,false] call dayz_zombieSpeak;
 
 				if (_obj animationPhase "Open_hinge" == 0) then {

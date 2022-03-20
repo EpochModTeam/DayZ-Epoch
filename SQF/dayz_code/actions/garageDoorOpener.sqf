@@ -17,7 +17,7 @@ if (isNull _door) exitWith {dayz_actionInProgress = false; systemChat localize "
 s_player_gdoor_opener_ctrl = 1;
 
 call {
-	if (_typeof in ["WoodenGate_1_DZ","WoodenGate_2_DZ","WoodenGate_3_DZ","WoodenGate_4_DZ"]) exitwith {
+	if (_typeof in DZE_LockedGates) exitwith {
 		if (_door animationPhase "DoorR" == 0) then {
 			systemChat localize "STR_CL_GDO_DOOR_OPEN";
 			_door animate ["DoorR",1];

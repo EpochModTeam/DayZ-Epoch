@@ -11,7 +11,7 @@ class ItemToolbox : ItemCore
 		class RemoveNet
 		{
 			text= $STR_EQUIP_TOOLBOX_ACTION_1;
-			script=";[['DesertCamoNet_DZ','ForestCamoNet_DZ','WinterCamoNet_DZ','DesertLargeCamoNet_DZ','ForestLargeCamoNet_DZ','WinterLargeCamoNet_DZ'],10,'str_epoch_player_8'] call player_removeNearby;";
+			script=";[DZE_CamoNets,10,'str_epoch_player_8'] call player_removeNearby;";
 		};
 	};
 };
