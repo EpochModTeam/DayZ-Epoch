@@ -28125,7 +28125,7 @@
 			<English>Storage Barrel (Epoch)</English>
 			<German>Lagerungs-Tonne (Epoch)</German>
 		</Key>
-		<Key ID="STR_EPOCH_STORAGEBARREEPOCH2">
+		<Key ID="STR_EPOCH_STORAGEBARRELEPOCH2">
 			<English>Storage Barrel (Epoch) +</English>
 			<German>Lagerungs-Tonne (Epoch) +</German>
 		</Key>
@@ -28133,7 +28133,7 @@
 			<English>Storage Barrel (Yellow)</English>
 			<German>Lagerungs-Tonne (Gelb)</German>
 		</Key>
-		<Key ID="STR_EPOCH_STORAGEBARREYELLOW2">
+		<Key ID="STR_EPOCH_STORAGEBARRELYELLOW2">
 			<English>Storage Barrel (Yellow) +</English>
 			<German>Lagerungs-Tonne (Gelb) +</German>
 		</Key>
@@ -28141,7 +28141,7 @@
 			<English>Storage Barrel (Black)</English>
 			<German>Lagerungs-Tonne (Schwarz)</German>
 		</Key>
-		<Key ID="STR_EPOCH_STORAGEBARREBLACK2">
+		<Key ID="STR_EPOCH_STORAGEBARRELBLACK2">
 			<English>Storage Barrel (Black) +</English>
 			<German>Lagerungs-Tonne (Schwarz) +</German>
 		</Key>
@@ -28149,7 +28149,7 @@
 			<English>Storage Barrel (Green dark)</English>
 			<German>Lagerungs-Tonne (Grün dunkel)</German>
 		</Key>
-		<Key ID="STR_EPOCH_STORAGEBARREGREENDARK2">
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENDARK2">
 			<English>Storage Barrel (Green dark) +</English>
 			<German>Lagerungs-Tonne (Grün dunkel) +</German>
 		</Key>
@@ -28157,7 +28157,7 @@
 			<English>Storage Barrel (Milk)</English>
 			<German>Lagerungs-Tonne (Milch)</German>
 		</Key>
-		<Key ID="STR_EPOCH_STORAGEBARREMILK2">
+		<Key ID="STR_EPOCH_STORAGEBARRELMILK2">
 			<English>Storage Barrel (Milk) +</English>
 			<German>Lagerungs-Tonne (Milch) +</German>
 		</Key>
@@ -28165,7 +28165,7 @@
 			<English>Storage Barrel (Green)</English>
 			<German>Lagerungs-Tonne (Grün)</German>
 		</Key>
-		<Key ID="STR_EPOCH_STORAGEBARREGREEN2">
+		<Key ID="STR_EPOCH_STORAGEBARRELGREEN2">
 			<English>Storage Barrel (Green) +</English>
 			<German>Lagerungs-Tonne (Grün) +</German>
 		</Key>
@@ -28173,7 +28173,7 @@
 			<English>Storage Barrel (Green rusty)</English>
 			<German>Lagerungs-Tonne (Grün rostig)</German>
 		</Key>
-		<Key ID="STR_EPOCH_STORAGEBARREGREENRUSTY2">
+		<Key ID="STR_EPOCH_STORAGEBARRELGREENRUSTY2">
 			<English>Storage Barrel (Green rusty) +</English>
 			<German>Lagerungs-Tonne (Grün rostig) +</German>
 		</Key>
