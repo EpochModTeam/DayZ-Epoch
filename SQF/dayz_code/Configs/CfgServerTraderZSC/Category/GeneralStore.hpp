@@ -38,14 +38,16 @@ class Category_27 {
 	class FoodMRE {type = "trade_items";buy[] = {-1,"worth"};sell[] = {5,"worth"};};
 };
 
-//Cooked Meats
+//Cooked Food
 class Category_28 {
-	class FoodbaconCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
-	class FoodbeefCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
-	class FoodchickenCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
+	class FoodPotatoBaked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
+	class FoodBaconCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
+	class FoodBeefCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
+	class FoodChickenCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
 	class FoodGoatCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
-	class FoodmuttonCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
-	class FoodrabbitCooked {type = "trade_items";buy[] = {20,"worth"};sell[] = {10,"worth"};};
+	class FoodMuttonCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
+	class FoodDogCooked {type = "trade_items";buy[] = {4,"worth"};sell[] = {2,"worth"};};
+	class FoodRabbitCooked {type = "trade_items";buy[] = {20,"worth"};sell[] = {10,"worth"};};
 	// most common
 	class FishCookedTrout {type = "trade_items";buy[] = {200,"worth"};sell[] = {10,"worth"};};
 	// less common
@@ -56,7 +58,7 @@ class Category_28 {
 
 //Drinks
 class Category_29 {
-	class ItemWaterbottleUnfilled {type = "trade_items";buy[] = {3,"worth"};sell[] = {1,"worth"};};
+	class ItemWaterBottleUnfilled {type = "trade_items";buy[] = {3,"worth"};sell[] = {1,"worth"};};
 	class ItemPlasticWaterbottleUnfilled {type = "trade_items";buy[] = {3,"worth"};sell[] = {1,"worth"};};	
 	class ItemSodaCoke {type = "trade_items";buy[] = {2,"worth"};sell[] = {1,"worth"};};
 	class ItemSodaPepsi {type = "trade_items";buy[] = {2,"worth"};sell[] = {1,"worth"};};
@@ -79,12 +81,12 @@ class Category_29 {
 	class ItemSherbet {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class ItemSodaRbull {type = "trade_items";buy[] = {600,"worth"};sell[] = {300,"worth"};};
 	class ItemSodaOrangeSherbet {type = "trade_items";buy[] = {600,"worth"};sell[] = {300,"worth"};};
-	class ItemWaterbottle {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
+	class ItemWaterBottle {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class ItemWaterBottleInfected {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class ItemWaterBottleSafe {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class ItemWaterBottleBoiled {type = "trade_items";buy[] = {-1,"worth"};sell[] = {3,"worth"};};
 	class ItemWaterBottleHerbal {type = "trade_items";buy[] = {-1,"worth"};sell[] = {50,"worth"};};
-	class ItemPlasticWaterbottle {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
+	class ItemPlasticWaterBottle {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class ItemPlasticWaterBottleInfected {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class ItemPlasticWaterBottleSafe {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2,"worth"};};
 	class ItemPlasticWaterBottleBoiled {type = "trade_items";buy[] = {-1,"worth"};sell[] = {3,"worth"};};
@@ -165,6 +167,7 @@ class Category_30 {
 	class Skin_MafiaBoss_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_Dealer_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 	class Skin_BusinessMan_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
+	class Skin_INS_Worker2_DZ {type = "trade_items";buy[] = {200,"worth"};sell[] = {100,"worth"};};
 };
 
 //Backpacks

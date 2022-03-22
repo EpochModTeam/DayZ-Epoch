@@ -121,44 +121,44 @@ class Ural_CDF_DZE: Ural_CDF {
 	supplyRadius = 2.6;
 
 	class Upgrades {
-		ItemTruckORP[] = {"URAL_CDF_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
+		ItemTruckORP[] = {"Ural_CDF_DZE1",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckORP",1},{"PartEngine",2},{"PartWheel",6},{"ItemScrews",2}}};
 	};
 };
 
-class URAL_CDF_DZE1: URAL_CDF_DZE {
+class Ural_CDF_DZE1: Ural_CDF_DZE {
 	displayName = "$STR_VEH_NAME_URAL_CDF+";
-	original = "URAL_CDF_DZE";
+	original = "Ural_CDF_DZE";
 	maxspeed = 100; //base 80
 	terrainCoef = 1.8;  // base 2.0
 	turnCoef = 5;  // base 3.7
 	
 	class Upgrades {
-		ItemTruckAVE[] = {"URAL_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
+		ItemTruckAVE[] = {"Ural_CDF_DZE2",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckAVE",1},{"PartGeneric",2},{"equip_metal_sheet",5},{"ItemScrews",4}}};
 	};
 };
 
-class URAL_CDF_DZE2: URAL_CDF_DZE1 {
+class Ural_CDF_DZE2: Ural_CDF_DZE1 {
 	displayName = "$STR_VEH_NAME_URAL_CDF++";
 	armor = 70; //base 32
 	damageResistance = 0.0255; // base 0.00243
 	
 	class Upgrades {
-		ItemTruckLRK[] = {"URAL_CDF_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
+		ItemTruckLRK[] = {"Ural_CDF_DZE3",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckLRK",1},{"PartGeneric",4},{"ItemWoodCrateKit",2},{"ItemGunRackKit",2},{"ItemScrews",2}}};
 	};
 };
 
-class URAL_CDF_DZE3: URAL_CDF_DZE2 {
+class Ural_CDF_DZE3: Ural_CDF_DZE2 {
 	displayName = "$STR_VEH_NAME_URAL_CDF+++";
 	transportMaxWeapons = 100;
 	transportMaxMagazines = 400;
 	transportmaxbackpacks = 16;
 	
 	class Upgrades {
-		ItemTruckTNK[] = {"URAL_CDF_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
+		ItemTruckTNK[] = {"Ural_CDF_DZE4",{"ItemToolbox","ItemCrowbar"},{},{{"ItemTruckTNK",1},{"PartGeneric",4},{"PartFueltank",3},{"ItemFuelBarrel",2}}};
 	};
 };
 
-class URAL_CDF_DZE4: URAL_CDF_DZE3 {
+class Ural_CDF_DZE4: Ural_CDF_DZE3 {
 	displayName = "$STR_VEH_NAME_URAL_CDF++++";
 	fuelCapacity = 615;	
 };

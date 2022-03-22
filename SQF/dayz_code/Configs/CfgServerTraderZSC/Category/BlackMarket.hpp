@@ -19,8 +19,8 @@ class Category_11 {
 	class 20Rnd_B_AA12_Pellets {type = "trade_items";buy[] = {8,"worth"};sell[] = {5,"worth"};};
 	class 20Rnd_B_AA12_74Slug {type = "trade_items";buy[] = {8,"worth"};sell[] = {5,"worth"};};
 	class 1Rnd_Bolt_Explosive {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
-	class HandGrenade_west {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
-	class HandGrenade_east {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
+	class HandGrenade_West {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
+	class HandGrenade_East {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
 	class 1Rnd_HE_M203 {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
 	class 1Rnd_HE_GP25 {type = "trade_items";buy[] = {400,"worth"};sell[] = {200,"worth"};};
 	class MAAWS_HEAT {type = "trade_items";buy[] = {-1,"worth"};sell[] = {2000,"worth"};};

@@ -4,6 +4,7 @@ class Category_46 {
 	class GNT_C185_DZ {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class GNT_C185R_DZ {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class GNT_C185C_DZ {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class GNT_C185F_DZ {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class Camel_Civ_DZ {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	//Green
 	class AN2_DZ {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
@@ -14,6 +15,10 @@ class Category_46 {
 	class C130J_US_EP1_DZ {type = "trade_any_vehicle";buy[] = {40000,"worth"};sell[] = {20000,"worth"};};
 	class MV22_DZ {type = "trade_any_vehicle";buy[] = {50000,"worth"};sell[] = {20000,"worth"};};
 	//Armed
+	class GNT_C185T_DZ {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {30000,"worth"};};	
+	class GNT_C185T_DZE {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {30000,"worth"};};
+	class GNT_C185T_TwinM60_DZ {type = "trade_any_vehicle";buy[] = {-2,"worth"};sell[] = {10000,"worth"};};
+	class GNT_C185T_TwinM60_DZE {type = "trade_any_vehicle";buy[] = {20000,"worth"};sell[] = {10000,"worth"};};		
 	class AN2_VICKER_DZ {type = "trade_any_vehicle";buy[] = {-1,"worth"};sell[] = {5000,"worth"};};	
 	class AN2_VICKER_DZE {type = "trade_any_vehicle";buy[] = {10000,"worth"};sell[] = {5000,"worth"};};
 	class AN2_M134_DZ {type = "trade_any_vehicle";buy[] = {-2,"worth"};sell[] = {10000,"worth"};};

@@ -60,6 +60,8 @@ class Category_40 {
 	class UAZ_CDF_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class UAZ_INS_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class UAZ_RU_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
+	class UAZ_Rust_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
+	class UAZ_WINTER_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class UAZ_Unarmed_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class UAZ_Unarmed_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
 	class UAZ_Unarmed_UN_EP1_DZE {type = "trade_any_vehicle";buy[] = {800,"worth"};sell[] = {400,"worth"};};
@@ -78,6 +80,7 @@ class Category_41 {
 	class SUV_White {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
 	class SUV_Yellow {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {500,"worth"};};
 	class SUV_Camo {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class SUV_Winter_Camo {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class SUV_Blue_White {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class Nissan_Orange_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class Nissan_Blue_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
@@ -96,7 +99,10 @@ class Category_41 {
 class Category_42 {
 	class Ural_INS_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
 	class Ural_CDF_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class Ural_RUST_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
+	class Ural_WINTER_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
 	class UralOpen_CDF_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class UralOpen_WINTER_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
 	class Ural_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class Ural_UN_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class UralCivil_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
@@ -104,8 +110,10 @@ class Category_42 {
 	class UralSupply_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
 	class UralReammo_CDF_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class UralReammo_INS_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class UralReammo_WINTER_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
 	class UralRepair_CDF_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class UralRepair_INS_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
+	class UralRepair_WINTER_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
 	class V3S_Open_TK_CIV_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class V3S_Open_TK_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class V3S_Civ_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
@@ -113,9 +121,13 @@ class Category_42 {
 	class V3S_Camper_DZE {type = "trade_any_vehicle";buy[] = {1000,"worth"};sell[] = {500,"worth"};};
 	class V3S_RA_TK_GUE_EP1_DZE {type = "trade_any_vehicle";buy[] = {8000,"worth"};sell[] = {4000,"worth"};};
 	class Kamaz_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class Kamaz_Winter_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class KamazOpen_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class KamazOpen_Winter_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class KamazRepair_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
-	class KamazReammo_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};	
+	class KamazRepair_Winter_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class KamazReammo_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
+	class KamazReammo_Winter_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class MTVR_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class MTVR_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
 	class MTVR_Open_DZE {type = "trade_any_vehicle";buy[] = {2000,"worth"};sell[] = {1000,"worth"};};
@@ -136,8 +148,10 @@ class Category_43 {
 	class UralRefuel_TK_EP1_DZ {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
 	class UralRefuel_INS_DZE {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
 	class UralRefuel_CDF_DZE {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
+	class UralRefuel_WINTER_DZ {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
 	class V3S_Refuel_TK_GUE_EP1_DZ {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
 	class KamazRefuel_DZ {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
+	class KamazRefuel_Winter_DZ {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
 	class MtvrRefuel_DES_EP1_DZ {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
 	class MtvrRefuel_DZ {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
 	class T810A_ACR_REFUEL_DZE {type = "trade_any_vehicle";buy[] = {7000,"worth"};sell[] = {3000,"worth"};};
@@ -162,6 +176,7 @@ class Category_44 {
 	class HMMWV_Ambulance_CZ_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class HMMWV_DES_EP1_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class HMMWV_DZ {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
+	class HMMWV_WINTER_DZ {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 	class Hummer_DZE {type = "trade_any_vehicle";buy[] = {4000,"worth"};sell[] = {2000,"worth"};};
 };
 

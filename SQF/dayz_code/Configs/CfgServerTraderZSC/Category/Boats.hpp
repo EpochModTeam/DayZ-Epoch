@@ -18,4 +18,5 @@ class Category_49 {
 	class JetSkiYanahui_Case_Yellow {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
 	class JetSkiYanahui_Case_Green {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
 	class JetSkiYanahui_Case_Blue {type = "trade_any_boat";buy[] = {600,"worth"};sell[] = {300,"worth"};};
+	class SeaFox_DZE {type = "trade_any_boat";buy[] = {20000,"worth"};sell[] = {10000,"worth"};};
 };

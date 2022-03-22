@@ -38,14 +38,16 @@ class Category_27 {
 	class FoodMRE {type = "trade_items";buy[] = {-1,"ItemSilverBar10oz"};sell[] = {5,"ItemSilverBar"};};
 };
 
-//Cooked Meats
+//Cooked Food
 class Category_28 {
-	class FoodbaconCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
-	class FoodbeefCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
-	class FoodchickenCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class FoodPotatoBaked {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
+	class FoodBaconCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class FoodBeefCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class FoodChickenCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class FoodGoatCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
-	class FoodmuttonCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
-	class FoodrabbitCooked {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
+	class FoodMuttonCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class FoodDogCooked {type = "trade_items";buy[] = {4,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class FoodRabbitCooked {type = "trade_items";buy[] = {2,"ItemSilverBar10oz"};sell[] = {1,"ItemSilverBar10oz"};};
 	// most common
 	class FishCookedTrout {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemSilverBar10oz"};};
 	// less common
@@ -56,7 +58,7 @@ class Category_28 {
 
 //Drinks
 class Category_29 {
-	class ItemWaterbottleUnfilled {type = "trade_items";buy[] = {3,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
+	class ItemWaterBottleUnfilled {type = "trade_items";buy[] = {3,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class ItemPlasticWaterbottleUnfilled {type = "trade_items";buy[] = {3,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};	
 	class ItemSodaCoke {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
 	class ItemSodaPepsi {type = "trade_items";buy[] = {2,"ItemSilverBar"};sell[] = {1,"ItemSilverBar"};};
@@ -79,12 +81,12 @@ class Category_29 {
 	class ItemSherbet {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class ItemSodaRbull {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
 	class ItemSodaOrangeSherbet {type = "trade_items";buy[] = {6,"ItemGoldBar"};sell[] = {3,"ItemGoldBar"};};
-	class ItemWaterbottle {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class ItemWaterBottle {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class ItemWaterBottleInfected {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class ItemWaterBottleSafe {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class ItemWaterBottleBoiled {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
 	class ItemWaterBottleHerbal {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {5,"ItemSilverBar10oz"};};
-	class ItemPlasticWaterbottle {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
+	class ItemPlasticWaterBottle {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class ItemPlasticWaterBottleInfected {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class ItemPlasticWaterBottleSafe {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {2,"ItemSilverBar"};};
 	class ItemPlasticWaterBottleBoiled {type = "trade_items";buy[] = {-3,"ItemSilverBar"};sell[] = {3,"ItemSilverBar"};};
@@ -165,6 +167,7 @@ class Category_30 {
 	class Skin_MafiaBoss_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_Dealer_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 	class Skin_BusinessMan_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
+	class Skin_INS_Worker2_DZ {type = "trade_items";buy[] = {2,"ItemGoldBar"};sell[] = {1,"ItemGoldBar"};};
 };
 
 //Backpacks

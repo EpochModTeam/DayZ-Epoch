@@ -19,8 +19,8 @@ class Category_11 {
 	class 20Rnd_B_AA12_Pellets {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {5,"ItemSilverBar"};};
 	class 20Rnd_B_AA12_74Slug {type = "trade_items";buy[] = {8,"ItemSilverBar"};sell[] = {5,"ItemSilverBar"};};
 	class 1Rnd_Bolt_Explosive {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
-	class HandGrenade_west {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
-	class HandGrenade_east {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class HandGrenade_West {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
+	class HandGrenade_East {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class 1Rnd_HE_M203 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class 1Rnd_HE_GP25 {type = "trade_items";buy[] = {4,"ItemGoldBar"};sell[] = {2,"ItemGoldBar"};};
 	class MAAWS_HEAT {type = "trade_items";buy[] = {-4,"ItemBriefcase100oz"};sell[] = {2,"ItemGoldBar10oz"};};
