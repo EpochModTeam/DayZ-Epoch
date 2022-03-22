@@ -129,6 +129,8 @@ if (_outcome != "PASS") then {
 	[_object,_newHitpoints] call server_setHitpoints;
 
 	[_object,"all",true] call server_updateObject;
+	
+	[_object,DZE_clearVehicleAmmo,false] call server_vehicleAddons;
 
 	_object call fnc_veh_ResetEH;
 	// for non JIP users this should make sure everyone has eventhandlers for vehicles.

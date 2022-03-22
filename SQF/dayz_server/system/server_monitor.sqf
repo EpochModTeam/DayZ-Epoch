@@ -372,6 +372,8 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	
 	[_object,"all",true] call server_updateObject;
 	
+	[_object,DZE_clearVehicleAmmo,DZE_addVehicleAmmo] call server_vehicleAddons;
+	
 	_object call fnc_veh_ResetEH;
 	if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
 	_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle

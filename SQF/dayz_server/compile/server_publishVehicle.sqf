@@ -80,6 +80,8 @@ if (_outcome != "PASS") then {
 	
 	[_object,"all",true] call server_updateObject;
 	
+	[_object,DZE_clearVehicleAmmo,DZE_addVehicleAmmo] call server_vehicleAddons;
+	
 	_object call fnc_veh_ResetEH;
 
 	PVDZE_veh_Init = _object;

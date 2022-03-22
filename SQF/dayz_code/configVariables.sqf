@@ -102,6 +102,10 @@ if (isServer) then {
 	dayz_POIs = false; //Enable POI's
 	dayz_enableGhosting = false;
 	dayz_ghostTimer = 120;
+	DZE_disableThermal = []; // Array of vehicle classnames to disable thermal on when being spawned. i.e: ["AH1Z","MTVR"];	
+	DZE_clearVehicleAmmo = true; // Clears the ammo of vehicles spawned, bought, claimed and upgraded during the same restart	
+	DZE_clearVehicleFlares = false; // Clears the flares of vehicles during the same restart, DZE_clearVehicleAmmo must be true in order to work
+	DZE_addVehicleAmmo = false; // Adds ammo to all spawned, bought, claimed and upgraded vehicles during the same restart
 
 	// ZSC
 	Z_globalBankingTraders = false; // Enable banking NPCs at trader cities.
@@ -109,14 +113,8 @@ if (isServer) then {
 	// Safe Zone Relocating
 	DZE_SafeZone_Relocate = false; //Enables relocating of vehicles left in Safe Zones over a server restart.
 	
-	if (DZE_VehicleKey_Changer) then {
-		vkc_clearAmmo = true; // Clear the ammo of vehicles after they have been rekeyed/claimed? (stops users getting a free rearm)
-		vkc_disableThermal = [""]; // Array of vehicle config classes as well as vehicle classnames to disable thermal on when being spawned. i.e: ["All","Land","Air","Ship","StaticWeapon","AH1Z","MTVR"];	
-	};	
-	
 	if (DZE_Virtual_Garage) then {
 		vg_clearAmmo = true; // Clear the ammo of vehicles spawned during the same restart they are stored? (stops users storing a vehicle for a free rearm)
-		vg_disableThermal = []; // Array of vehicle config classes as well as vehicle classnames to disable thermal on when being spawned. i.e: ["All","Land","Air","Ship","StaticWeapon","AH1Z","MTVR"];
 		vg_sortColumn = 0; //0 or an out of range value sorts by the default column 'DisplayName', otherwise 1 = 'DateStored', 2 = 'id', 3 = 'Name' (of storing player), 4 = 'DateMaintained'
 	};
 };

@@ -93,6 +93,8 @@ if (_outcome != "PASS") then {
 			deleteVehicle _object_para;
 		};
 	};
+	
+	[_object,DZE_clearVehicleAmmo,DZE_addVehicleAmmo] call server_vehicleAddons;
 
 	_object call fnc_veh_ResetEH;
 

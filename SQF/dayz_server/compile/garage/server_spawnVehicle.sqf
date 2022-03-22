@@ -1,4 +1,4 @@
-private ["_isAir","_VG_ObjID","_characterID","_class","_clientID","_clrinit","_clrinit2","_colour","_colour2","_dam","_damage","_dir","_fuel","_hitpoints","_id","_inventory","_key","_location","_message","_object","_oid","_outcome","_player","_result","_selection","_serverKey","_uid","_worldSpace"];
+private ["_VG_ObjID","_characterID","_class","_clientID","_clrinit","_clrinit2","_colour","_colour2","_dam","_damage","_dir","_fuel","_hitpoints","_id","_inventory","_key","_location","_message","_object","_oid","_outcome","_player","_result","_selection","_serverKey","_uid","_worldSpace"];
 
 _worldSpace = _this select 0;
 _player = _this select 1;
@@ -57,7 +57,6 @@ if (_outcome != "PASS") then {
 
 	clearWeaponCargoGlobal _object;
 	clearMagazineCargoGlobal _object;
-	if (vg_clearAmmo && {vg_serverKey == _serverKey}) then {_object call VG_ClearTurrets;};
 
 	_object setFuel _fuel;
 	_object setDamage _damage;
@@ -90,11 +89,12 @@ if (_outcome != "PASS") then {
 	[_object,_hitpoints] call server_setHitpoints;
 	
 	[_object,"all",true] call server_updateObject;
+	
+	[_object,vg_clearAmmo,false] call server_vehicleAddons;
 
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 
-	_object call fnc_veh_ResetEH;
-	{if (_object isKindOf _x) exitWith {_object disableTIEquipment true;}} count vg_disableThermal;
+	_object call fnc_veh_ResetEH;	
 
 	PVDZE_veh_Init = _object;
 	publicVariable "PVDZE_veh_Init";
