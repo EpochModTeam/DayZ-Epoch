@@ -157,6 +157,7 @@ GitHub Contributors
 * RedLink-kam - https://github.com/RedLink-kam
 * Helion4 - https://github.com/Helion4
 * Schalldampfer - https://github.com/Schalldampfer
+* Victor the Cleaner - https://github.com/Victor-the-Cleaner
 
 --------------------------
 Special thanks
