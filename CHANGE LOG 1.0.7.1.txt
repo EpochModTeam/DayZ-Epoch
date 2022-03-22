@@ -28,6 +28,25 @@
 [ADDED] New base building hotkeys (c4a2e1b88) @Victor-the-Cleaner 
 [ADDED] 23 New base building items: Heavy Bag Fence, Heavy Bag Fence (Corner), Heavy Bag Fence (Round),Sandbag Cube (5x Curved), Sandbag Nest (Large), Warfare Barrier 5x, Warfare Barrier 10x, Warfare Barrier 10x (Tall), Wire Fencing, Barbed Gate (Fortified), Footbridge (Simple), Footbridge (Wooden), Windbreak, Concrete Barrier, Concrete Barrier (Striped), Concrete Wall, Concrete Pipe, Dragon's Teeth, Dragon's Teeth (Large), Metal Container (Red, White, Green), Metal Container 2x (Red). (d744d995e) @Victor-the-Cleaner 
 [ADDED] Garbage Man and Paramedic as zombies. (9dde58abb) @DeVloek, @AirwavesMan
+[ADDED] server_vehicleAddons to customize vehicles by add/remove weapons and ammo. (981e217b8) @AirwavesMan
+[ADDED] New variables DZE_clearVehicleAmmo, DZE_addVehicleAmmo to add and remove the ammo of vehicles. Also DZE_clearVehicleFlares to keep the flares. (981e217b8) @AirwavesMan
+[ADDED] Community Stringtable. (f13c6ea9b, a7860b5b2) @AirwavesMan
+[ADDED] Customizable water sources with DZE_WaterSources in the variables.sqf. (ceda09297) @AirwavesMan
+[ADDED] Camel planes. (9384e0112) @AirwavesMan
+[ADDED] New mining sound. (8524d6752) @Victor-the-Cleaner
+[ADDED] SUV (Blue White). (3c611438f) @seelenapparat
+[ADDED] Several new rubbish objects with gear. (8c16cbd7f) @seelenapparat
+[ADDED] DayZ workbench as a buildable object for epoch. (d40fab526) @seelenapparat
+[ADDED] New edible items for more survival oriented servers. (51d8a3dac) @seelenapparat
+[ADDED] 40 new generic documents for admins to use. (d5b40bba3) @seelenapparat
+[ADDED] 3 new types of buckets with content. (c12349682) @seelenapparat
+[ADDED] New types of water and milk container. (c731264ed) @seelenapparat
+[ADDED] Various new suitcases with gems. (ec9f9582a) @seelenapparat
+[ADDED] Waterbottles with coffee, black tea and frozen waterbottles. (ea236b466) @seelenapparat
+[ADDED] 8 buildable storage barrels. (ee0effcc7) @seelenapparat
+[ADDED] Support for the elevator script via 3 new kits and objects. (546172959) @seelenapparat
+[ADDED] Harvestable plants and compost barrels. (84064ec89) @AirwavesMan
+[ADDED] 9 new buildable epoch buildings for server admins to add. (2e3f16c24) @AirwavesMan
 [UPDATED] Better message for filling fuel containers if the fuel tank has not enough fuel. (93bf494c) @AirwavesMan
 [UPDATED] Snappoints got improved. (f68e92d5) @worldwidesorrow
 [UPDATED] Replace M240 Nest ghost preview with the actual game object as preview. (ff05cb9cb) @ZzBombardierzZ, @AirwavesMan
@@ -50,6 +69,10 @@
 [UPDATED] Fireplaces can no longer be placed underground. (d744d995e) @Victor-the-Cleaner
 [UPDATED] Steel Beams can now be crafted into 6 x Scrap Metal. (d744d995e) @Victor-the-Cleaner
 [UPDATED] Rusty Sheet Metal can now be crafted into Sheet Metal. (d744d995e) @Victor-the-Cleaner
+[UPDATED] Trader Files got updated with many missing vehicles, weapons and items. (60335df72) @AirwavesMan
+[UPDATED] All epoch buildings are listed in DayZ_SafeObjects now. (43006760f) @AirwavesMan
+[UPDATED] Mining stones for better stone detection. (c57d2f8d7) @Victor-the-Cleaner
+[UPDATED] Increased magazine slots for cooking pot and adv. workbench. (60b1ca78e) @seelenapparat
 [FIXED] Side Chat was unintentionally disabled on Podagorsk Mission. (cf43c20d) @Voltan, @AirwavesMan
 [FIXED] English string from the Broken APSI got overwritten by the german string. (43786eec) @seelenapparat, @AirwavesMan
 [FIXED] Open or close a winter lockbox or an upgraded lockbox had the wrong sound. (ffccff6a, cdfc57fd) @AirwavesMan
@@ -97,6 +120,7 @@
 [REMOVED] DZE_permanentPlot variable and checks. (5aba5d7dd, 9ecdb21dd) @AirwavesMan
 [REMOVED] Ghost previews for Razor Wire, Sandbag Nest, and HBarrier Cubes due to inaccurate geometry. (d744d995e) @Victor-the-Cleaner
 [REMOVED] DZE_modularBuild variable. (16361e546) @Victor-the-Cleaner
-
+[REMOVED] player_build (1bb034360) @Victor-the-Cleaner
+[REPLACED] fnc_veh_setFixServer --> server_setHitpoints. (637f1f445) @AirwavesMan
 
 [INFO] Big thanks to the following authors which allowed us to use their content: SumrakDZN, SyNcRoNiCzZ
