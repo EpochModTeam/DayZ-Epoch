@@ -23,6 +23,7 @@ server_playerSetup = compile preprocessFileLineNumbers "\z\addons\dayz_server\co
 server_onPlayerDisconnect = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_onPlayerDisconnect.sqf";
 call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\updateObject_functions.sqf";
 server_updateObject = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_updateObject.sqf";
+server_setHitpoints = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_setHitpoints.sqf";
 server_playerDied = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_playerDied.sqf";
 server_publishObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_publishObject.sqf";	//Creates the object in DB
 server_deleteObj = compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\server_deleteObj.sqf"; 	//Removes the object from the DB
@@ -61,8 +62,6 @@ spawn_vehicles = compile preprocessFileLineNumbers "\z\addons\dayz_server\compil
 if (DZE_Virtual_Garage) then {
 	call compile preprocessFileLineNumbers "\z\addons\dayz_server\compile\garage\init.sqf";
 };
-
-fnc_veh_setFixServer = compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\veh_setFixServer.sqf";	//process the hit as a NORMAL damage (useful for persistent vehicles)
 
 server_medicalSync = {
 	local _player = _this select 0;

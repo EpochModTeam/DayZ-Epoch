@@ -86,14 +86,10 @@ if (_outcome != "PASS") then {
 	_object setVariable ["CharacterID", _characterID, true];
 
 	if (_characterID != "0" && !(_object isKindOf "Bicycle")) then {_object setVehicleLock "LOCKED";};
-	_isAir = _object isKindOf "Air";
-
-	{
-		_selection = _x select 0;
-		_dam = _x select 1;
-		_dam = [_x select 1,(_x select 1) min 0.8] select (!_isAir && {_selection in dayZ_explosiveParts});
-		[_object,_selection,_dam] call fnc_veh_setFixServer;
-	} forEach _hitpoints;
+	
+	[_object,_hitpoints] call server_setHitpoints;
+	
+	[_object,"all",true] call server_updateObject;
 
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
 

@@ -365,16 +365,13 @@ if ((playersNumber west + playersNumber civilian) == 0) exitWith {
 	};
 
 	_object setVariable ["CharacterID", _ownerID, true];
-	_isAir = _object isKindOf "Air";
-
-	{
-		_selection = _x select 0;
-		_dam = [_x select 1,(_x select 1) min 0.8] select (!_isAir && {_selection in dayZ_explosiveParts});
-		_object setHit [_selection,_dam];
-	} count _hitpoints;
-	[_object,"damage"] call server_updateObject;
-
+	
+	[_object,_hitpoints] call server_setHitpoints;
+	
 	_object setFuel _fuel;
+	
+	[_object,"all",true] call server_updateObject;
+	
 	_object call fnc_veh_ResetEH;
 	if (_ownerID != "0" && {!(_object isKindOf "Bicycle")}) then {_object setVehicleLock "locked";};
 	_serverVehicleCounter set [count _serverVehicleCounter,_type]; // total each vehicle

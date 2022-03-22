@@ -173,15 +173,10 @@ if (_outcome != "PASS") then {
 			{_obj removeMagazinesTurret[_x,_turret];} count _mags;
 		} forEach _weaponArray;
 	};	
-
-	_isAir = _object isKindOf "Air";
-	{
-		_selection = _x select 0;
-		_dam = [_x select 1,(_x select 1) min 0.8] select (!_isAir && {_selection in dayZ_explosiveParts});
-		_object setHit [_selection,_dam];
-	} count _newHitpoints;
-
+	
 	_object setFuel _fuel;	
+	
+	[_object,_newHitpoints] call server_setHitpoints;	
 
 	[_object,"all",true] call server_updateObject;
 

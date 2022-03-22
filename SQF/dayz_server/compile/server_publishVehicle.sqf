@@ -73,15 +73,13 @@ if (_outcome != "PASS") then {
 	_object setVariable ["CharacterID", _characterID, true];
 	_object setDamage _damage;
 
-	{
-		_selection = _x select 0;
-		_dam = _x select 1;
-		if (_selection in dayZ_explosiveParts && _dam > 0.8) then {_dam = 0.8};
-		[_object,_selection,_dam] call fnc_veh_setFixServer;
-	} count _array;
+	[_object,_array] call server_setHitpoints;
 
 	_object setFuel _fuel;
 	_object setvelocity [0,0,1];
+	
+	[_object,"all",true] call server_updateObject;
+	
 	_object call fnc_veh_ResetEH;
 
 	PVDZE_veh_Init = _object;
