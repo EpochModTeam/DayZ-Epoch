@@ -186,6 +186,7 @@ if (!isDedicated) then {
 
 	// Trader Menu
 	DZE_serverLogTrades = true; // Log trades to server RPT (sent with publicVariableServer on every trade)
+	DZE_GemChance = 0.4;	// Chance of gem occurrence in an Ore Vein, valid values from 0.01 - 1, 0.4 = 40% Chance
 	DZE_GemOccurance = [["ItemTopaz",10], ["ItemObsidian",8], ["ItemSapphire",6], ["ItemAmethyst",4], ["ItemEmerald",3], ["ItemCitrine",2], ["ItemRuby",1]]; //Sets how rare each gem is in the order shown when mining (whole numbers only)
 	DZE_GemWorthArray = [["ItemTopaz",15000], ["ItemObsidian",20000], ["ItemSapphire",25000], ["ItemAmethyst",30000], ["ItemEmerald",35000], ["ItemCitrine",40000], ["ItemRuby",45000]]; // Array of gem prices, only works with config traders. Set DZE_GemWorthArray=[]; to disable return change in gems.
 	DZE_SaleRequiresKey = false; // Require the player has the key for a vehicle in order to sell it. The key can be in the player's toolbelt, backpack, or the vehicle's inventory.

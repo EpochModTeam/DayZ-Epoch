@@ -290,7 +290,7 @@ if (_proceed && _success) then {
 				{_selectedRemoveOutput set [count _selectedRemoveOutput, [_x select 1, [_x select 2, _x select 3]]]} forEach _output;
 
 				// chance of gem occurrence
-				if ([0.4] call fn_chance) then {
+				if ([DZE_GemChance] call fn_chance) then {
 				
 					local _gems	= [];
 					local _weights	= [];
