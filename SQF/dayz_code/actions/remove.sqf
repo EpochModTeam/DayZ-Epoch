@@ -194,7 +194,7 @@ while {_isOk} do {
 
 		if (dayz_toolBreaking) then {
 			if ((_isDestructable || _isRemovable) && !_isOwnerOfObj) then {
-				if ([0.04] call fn_chance) then {				// 4% chance to break a required tool each pass
+				if ([DZE_toolBreakChance] call fn_chance) then {
 					_brokenTool = true;
 				};
 			};
