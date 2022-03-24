@@ -35,6 +35,18 @@ if (!(isClass(configFile >> "CfgVehicles" >> _class)) || isNull _object) exitWit
 
 _objectID = _object getVariable ["ObjectID","0"];
 _objectUID = _object getVariable ["ObjectUID","0"];
+
+if (_objectUID == "0") then {
+	_objectUID = "";
+	{
+		_x = _x * 10;
+		if (_x < 0) then {_x = _x * -10};
+		_objectUID = _objectUID + str(round(_x));
+	} forEach getPosATL _object;
+	_objectUID = _objectUID + str(round((getDir _object) + time));
+	_object setVariable ["ObjectUID",_objectUID];
+};
+
 _location = [_object] call fnc_getPos;
 _fuel = fuel _object;
 _hitpoints = _object call vehicle_getHitpoints;

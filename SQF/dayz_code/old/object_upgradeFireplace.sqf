@@ -11,7 +11,7 @@
 */
 private ["_objclass","_cursorTarget","_item","_classname","_requiredTools","_requiredParts","_upgrade","_upgradeConfig",
 "_upgradeDisplayname","_onLadder","_isWater","_upgradeParts","_startUpgrade","_missingPartsConfig","_textMissingParts","_dis",
-"_sfx","_ownerID","_objectID","_objectUID","_dir","_weapons","_magazines","_backpacks",
+"_sfx","_ownerID","_dir","_weapons","_magazines","_backpacks",
 "_object","_itemName","_vector","_finished"];
 
 _cursorTarget = _this select 0;
@@ -106,8 +106,6 @@ if ((_startUpgrade) AND (isClass(_upgradeConfig))) then {
 	
 	//get ownerID from old tent.
 	_ownerID = _cursorTarget getVariable ["characterID","0"];
-	_objectID = _cursorTarget getVariable ["ObjectID","0"];
-	_objectUID = _cursorTarget getVariable ["ObjectUID","0"];
 
 	//Get location and direction of old item
 	_dir = round getDir _cursorTarget;

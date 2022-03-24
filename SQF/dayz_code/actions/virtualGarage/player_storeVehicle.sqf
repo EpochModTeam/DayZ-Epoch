@@ -1,7 +1,7 @@
 // Developed by [GZA] David for German Zombie Apocalypse Servers (https://zombieapo.eu/)
 // Rewritten by salival (https://github.com/oiad)
 
-private ["_amount","_backPackCount","_backPackGear","_cargoAmount","_charID","_control","_counter","_display","_enoughMoney","_gearCount","_hasKey","_isLimitArray","_itemText","_items","_keyName","_limit","_magazineCount","_matchedCount","_moneyInfo","_name","_overLimit","_storedVehicles","_success","_typeName","_typeOf","_vehicle","_vehicleID","_vehicleUID","_wealth","_weaponsCount","_woGear","_playerNear","_ownerPUID","_plotCheck"];
+private ["_amount","_backPackCount","_backPackGear","_cargoAmount","_charID","_control","_counter","_display","_enoughMoney","_gearCount","_hasKey","_isLimitArray","_itemText","_items","_keyName","_limit","_magazineCount","_matchedCount","_moneyInfo","_name","_overLimit","_storedVehicles","_success","_typeName","_typeOf","_vehicle","_wealth","_weaponsCount","_woGear","_playerNear","_ownerPUID","_plotCheck"];
 
 disableSerialization;
 
@@ -65,14 +65,12 @@ closeDialog 0;
 if (!vg_storeWithGear && !_woGear) exitWith {localize "STR_CL_VG_NOSTOREWITHGEAR" call dayz_rollingMessages;};
 
 _charID	= _vehicle getVariable ["CharacterID","0"];
-_vehicleID = _vehicle getVariable ["ObjectID","0"];
-_vehicleUID	= _vehicle getVariable ["ObjectUID","0"];
 _weaponsCount = ((getWeaponCargo _vehicle) select 1) call _gearCount;
 _magazineCount = ((getMagazineCargo _vehicle) select 1) call _gearCount;
 _backPackCount = ((getBackpackCargo _vehicle) select 1) call _gearCount;
 _cargoAmount = (_weaponsCount + _magazineCount + _backPackCount);
 
-if (_vehicleID == "1" || _vehicleUID == "1") exitWith {localize "STR_CL_VG_STORE_MISSION" call dayz_rollingMessages;};
+if (_charID == "-1") exitWith {localize "STR_CL_VG_STORE_MISSION" call dayz_rollingMessages;};
 if (isNull DZE_myVehicle || !local DZE_myVehicle) exitWith {localize "STR_EPOCH_PLAYER_245" call dayz_rollingMessages;};
 
 _hasKey = false;

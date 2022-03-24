@@ -8,7 +8,7 @@
 */
 
 private ["_nearByChoppers","_cursorTarget","_type","_class","_requiredTools","_requiredParts","_upgradeType","_producedParts","_randomCreate",
-	"_upgradeClass","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_objectID","_objectUID","_playerNear",
+	"_upgradeClass","_onLadder","_isWater","_ok","_missing","_upgradeParts","_dis","_characterID","_playerNear",
 	"_ownerArray","_ownerPasscode","_dir","_vector","_object","_puid","_clanArray","_wh","_variables","_finished"];
 
 _cursorTarget = _this;
@@ -93,8 +93,6 @@ if (!_finished) exitWith {
 ["Working",0,[100,15,5,0]] call dayz_NutritionSystem;
 
 _characterID = _cursorTarget getVariable ["characterID","0"];
-_objectID = _cursorTarget getVariable ["ObjectID","0"];
-_objectUID = _cursorTarget getVariable ["ObjectUID","0"];
 _ownerArray = _cursorTarget getVariable ["ownerArray",[]];
 _ownerPasscode = _cursorTarget getVariable ["padlockCombination",[]];
 _dir = round getDir _cursorTarget;
@@ -120,7 +118,7 @@ _object setVariable ["ownerArray",_ownerArray,true];
 _object setVariable ["padlockCombination",_ownerPasscode,true];
 _object setVariable ["characterID",_characterID,true];
 
-PVDZ_obj_Destroy = [_objectID,_objectUID,player,_cursorTarget,dayz_authKey];
+PVDZ_obj_Destroy = [netID player,netID _cursorTarget,dayz_authKey];
 publicVariableServer "PVDZ_obj_Destroy";
 
 _wh = "WeaponHolder" createVehicle (getPosATL player);

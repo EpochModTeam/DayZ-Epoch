@@ -11,16 +11,14 @@ dayz_actionInProgress = true;
 
 private ["_cursorTarget","_item","_classname","_requiredTools","_requiredParts","_upgrade","_upgradeConfig",
 "_upgradeDisplayname","_onLadder","_isWater","_upgradeParts","_startUpgrade","_missingPartsConfig","_textMissingParts","_dis",
-"_sfx","_ownerID","_objectID","_objectUID","_dir","_weapons","_magazines","_backpacks","_object",
+"_sfx","_ownerID","_dir","_weapons","_magazines","_backpacks","_object",
 "_itemName","_vector","_playerNear","_finished"];
 
 _cursorTarget = _this select 3;
 
 _ownerID = _cursorTarget getVariable ["characterID","0"];
-_objectID = _cursorTarget getVariable ["ObjectID","0"];
-_objectUID = _cursorTarget getVariable ["ObjectUID","0"];
 
-if (isNil "_cursorTarget" or {isNull _cursorTarget} or {_objectUID == "0" && (_objectID == "0")}) exitWith {
+if (isNil "_cursorTarget" or {isNull _cursorTarget}) exitWith {
      localize "str_cursorTargetNotFound" call dayz_rollingMessages;
 	 dayz_actionInProgress = false;
 };
@@ -91,9 +89,8 @@ if ((_startUpgrade) && (isClass(_upgradeConfig))) then {
 	_magazines = getMagazineCargo _cursorTarget;
 	_backpacks = getBackpackCargo _cursorTarget;
 
-	PVDZ_obj_Destroy = [_objectID,_objectUID,player,_pos,dayz_authKey,false];
+	PVDZ_obj_Destroy = [netID player,netID _pos,dayz_authKey];
 	publicVariableServer "PVDZ_obj_Destroy";
-	deleteVehicle _cursorTarget;
 
 	{
 		player removeMagazine _x;
@@ -111,12 +108,9 @@ if ((_startUpgrade) && (isClass(_upgradeConfig))) then {
 
 	[_weapons,_magazines,_backpacks,_object] call fn_addCargo;
 
-	if (DZE_permanentPlot) then {
-		_object setVariable ["ownerPUID",dayz_playerUID,true];
-		PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_pos,dayz_playerUID],[_weapons,_magazines,_backpacks],player,dayz_authKey];
-	} else {
-		PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_pos],[_weapons,_magazines,_backpacks],player,dayz_authKey];
-	};
+	_object setVariable ["ownerPUID",dayz_playerUID,true];
+	PVDZ_obj_Publish = [dayz_characterID,_object,[_dir,_pos,dayz_playerUID],[_weapons,_magazines,_backpacks],player,dayz_authKey];
+
 	publicVariableServer "PVDZ_obj_Publish";
     //diag_log [diag_ticktime, __FILE__, "New Networked object, request to save to hive. PVDZ_obj_Publish:", PVDZ_obj_Publish];
 

@@ -18,7 +18,7 @@ if (dayz_actionInProgress) exitWith {localize "str_player_actionslimit" call day
 dayz_actionInProgress = true;
 
 disableSerialization;
-private ["_amount","_characterID","_control","_currencyModifier","_enoughMoney","_exit","_foundPos","_index","_itemText","_message","_moneyInfo","_name","_playerNear","_position","_success","_typeOf","_vehicleID","_vehicleUID","_wealth"];
+private ["_amount","_characterID","_control","_currencyModifier","_enoughMoney","_exit","_foundPos","_index","_itemText","_message","_moneyInfo","_name","_playerNear","_position","_success","_typeOf","_wealth"];
 
 vkc_cursorTarget = (_this select 3) select 0;
 _characterID = (_this select 3) select 1;
@@ -52,24 +52,10 @@ if !(vkc_cursorTarget isKindOf "Air" || {vkc_cursorTarget isKindOf "LandVehicle"
 
 if (isNull DZE_myVehicle || {!(alive DZE_myVehicle)} || {!(local DZE_myVehicle)}) exitWith {call _exit; localize "str_epoch_player_245" call dayz_rollingMessages;};
 
-_vehicleID = vkc_cursorTarget getVariable ["ObjectID","0"];
-_vehicleUID = vkc_cursorTarget getVariable ["ObjectUID","0"];
-
 _typeOf = typeOf vkc_cursorTarget;
 _name = getText(configFile >> "cfgVehicles" >> _typeOf >> "displayName");
 
-if ((_vehicleID == "0" && {_vehicleUID == "0"}) || {_vehicleID == "1" || _vehicleUID == "1"}) exitWith {call _exit; format[localize "STR_CL_VKC_FAIL_SUPPORT",_name] call dayz_rollingMessages;};
-
-if (_vehicleUID == "0") then {
-	_vehicleUID = "";
-	{
-		_x = _x * 10;
-		if (_x < 0) then {_x = _x * -10};
-		_vehicleUID = _vehicleUID + str(round(_x));
-	} forEach getPosATL vkc_cursorTarget;
-	_vehicleUID = _vehicleUID + str(round((getDir vkc_cursorTarget) + time));
-	vkc_cursorTarget setVariable["ObjectUID",_vehicleUID,true];
-};
+if (_characterID == "-1") exitWith {call _exit; format[localize "STR_CL_VKC_FAIL_SUPPORT",_name] call dayz_rollingMessages;};
 
 vkc_keyList = call epoch_tempKeys;
 

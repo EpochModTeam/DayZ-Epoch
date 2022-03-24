@@ -1,4 +1,4 @@
-private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_playerNear"];
+private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_removed","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_playerNear"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -159,10 +159,7 @@ if (_qty >= _qty_in) then {
 								player addMagazine _part_out;
 							};
 
-							_objectID 	= _obj getVariable ["ObjectID","0"];
-							_objectUID	= _obj getVariable ["ObjectUID","0"];
-
-							PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,dayz_authKey];
+							PVDZ_obj_Destroy = [netID _activatingPlayer,netID _obj,dayz_authKey];
 							publicVariableServer "PVDZ_obj_Destroy";
 
 							//deleteVehicle _obj; 

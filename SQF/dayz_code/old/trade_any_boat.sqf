@@ -1,4 +1,4 @@
-private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_objectID","_objectUID","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
+private ["_sign","_location","_result","_part_out","_part_in","_qty_out","_qty_in","_qty","_buy_o_sell","_obj","_bos","_started","_finished","_animState","_isMedic","_dir","_helipad","_damage","_tireDmg","_tires","_okToSell","_hitpoints","_needed","_activatingPlayer","_textPartIn","_textPartOut","_traderID","_canAfford","_trade_total","_total_currency","_return_change","_done"];
 
 if (dayz_actionInProgress) exitWith {localize "str_epoch_player_103" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
@@ -152,14 +152,9 @@ if (_finished) then {
 
 				_obj = (_objects select 0);
 
-				_objectID 	= _obj getVariable ["ObjectID","0"];
-				_objectUID	= _obj getVariable ["ObjectUID","0"];
+				if(local _obj && !isNull _obj && alive _obj) then {
 
-				_notSetup = (_objectID == "0" && _objectUID == "0");
-
-				if(local _obj && !isNull _obj && alive _obj && !_notSetup) then {
-
-					PVDZ_obj_Destroy = [_objectID,_objectUID,_activatingPlayer,_obj,dayz_authKey];
+					PVDZ_obj_Destroy = [netID _activatingPlayer,netID _obj,dayz_authKey];
 					publicVariableServer "PVDZ_obj_Destroy";
 
 					//deleteVehicle _obj; 

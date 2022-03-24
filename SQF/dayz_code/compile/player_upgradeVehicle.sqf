@@ -5,7 +5,7 @@
 if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_PLAYER_52" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_text","_requirementsTools","_upgradeName","_displayname","_vehicle","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_objectID","_objectUID","_location","_dir","_objectCharacterID","_classname","_newclassname","_upgrade","_vehicle","_finished","_temp_removed_array_mag","_temp_removed_array_wep","_notNearestPlayer","_requirementsWeapon","_requirementsMagazine"];
+private ["_text","_requirementsTools","_upgradeName","_displayname","_vehicle","_proceed","_itemIn","_countIn","_missing","_missingQty","_qty","_removed","_tobe_removed_total","_textMissing","_num_removed","_removed_total","_location","_dir","_objectCharacterID","_classname","_newclassname","_upgrade","_vehicle","_finished","_temp_removed_array_mag","_temp_removed_array_wep","_notNearestPlayer","_requirementsWeapon","_requirementsMagazine"];
 
 _upgrade = _this;
 _vehicle = cursorTarget;
@@ -111,10 +111,10 @@ if (count (crew _vehicle) == 0) then {
 					// all parts removed proceed
 					if (_tobe_removed_total == _removed_total) then {
 						call player_forceSave;
-						_objectID = _vehicle getVariable ["ObjectID","0"];
-						_objectUID = _vehicle getVariable ["ObjectUID","0"];
+						// Current charID
+						_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
 
-						if (_objectID == "0" && {_objectUID == "0"}) then {
+						if (_objectCharacterID == "-1") then {
 							localize "str_epoch_player_50" call dayz_rollingMessages;
 						} else {
 							// Get position
@@ -122,9 +122,7 @@ if (count (crew _vehicle) == 0) then {
 
 							// Get direction
 							_dir = getDir _vehicle;
-
-							// Current charID
-							_objectCharacterID 	= _vehicle getVariable ["CharacterID","0"];
+							
 							localize "STR_EPOCH_VEHUP_IN_PROGRESS" call dayz_rollingMessages;
 							[_newclassname,objNull] call fn_waitForObject;
 							dze_waiting = nil;

@@ -34,15 +34,6 @@ if (_playerNear) exitWith {					// Another player is nearby. Only one player can
 	localize "str_pickup_limit_5" call dayz_rollingMessages;
 };
 
-local _objectID 	= _obj getVariable ["ObjectID","0"];
-local _objectUID	= _obj getVariable ["ObjectUID","0"];
-
-if (_objectID == "0" && _objectUID == "0") exitWith {		// Not setup yet.
-	dayz_actionInProgress = false;
-	s_player_downgrade_build = -1;
-	localize "str_epoch_player_50" call dayz_rollingMessages;
-};
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 local _classname	= typeOf _obj;

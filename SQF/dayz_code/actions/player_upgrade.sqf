@@ -17,11 +17,9 @@ player removeAction s_player_upgrade_build;
 s_player_upgrade_build = 1;
 
 local _obj		= _this select 3;
-local _objectID 	= _obj getVariable ["ObjectID","0"];
-local _objectUID	= _obj getVariable ["ObjectUID","0"];
 local _classname	= typeOf _obj;
 
-if ((_objectID == "0" && _objectUID == "0") || {_classname in DZE_DisableUpgrade}) exitWith {
+if (_classname in DZE_DisableUpgrade) exitWith {
 	dayz_actionInProgress	= false;
 	s_player_upgrade_build	= -1;
 	localize "str_epoch_player_50" call dayz_rollingMessages;					// Not setup yet.
