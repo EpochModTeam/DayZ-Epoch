@@ -1,60 +1,101 @@
-private ["_chance","_dis","_isWoman","_local","_num","_rnd","_sound","_type","_unit"];
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//	Updated for 1.0.7.1
+//
+//	- Kill sound when player cancels an action
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
-_unit = _this select 0;
-_type = _this select 1;
-_chance = _this select 2;
+local _count	= count _this;
+local _unit	= _this select 0;
+local _type	= _this select 1;
+local _chance	= _this select 2;
 
-_dis = call {
-	if (count _this > 4) exitwith {_this select 4};
-	if (_type in ["shout","hit","attack","scream","breath"]) exitwith {100};
+local _dis = call {
+	if (_count > 4) exitWith {_this select 4;};
+	if (_type in ["shout","hit","attack","scream","breath"]) exitWith {100};
 	40
 };
 
-_local = false;
-if (count _this > 3) then { _local = _this select 3; };
+local _local = false;
+if (_count > 3) then {_local = _this select 3;};
+
 if (!_local) then {
-		// we override _local according to number of players inside _dis radius
-	_local = { _unit distance _x < _dis; } count playableUnits <= 1;
+	// we override _local according to number of players inside _dis radius
+	_local = {_unit distance _x < _dis;} count playableUnits <= 1;
 };
 
-//diag_log(format["%1 dis:%2 local:%3", __FILE__, _dis, _local]);
+local _num = {if (_type == (_x select 0)) exitWith {_x select 1}} count [
+	["idle",		35],
+	["spotted",		13],
+	["chase",		14],
+	["attack",		13],
+	["hit",			 6],
+	["open_inventory",	 4],
+	["open_backpack",	 4],
+	["bandage",		 2],
+	["fracture",		 1],
+	["panic",		 1],
+	["scream",		 4],
+	["eat",			 3],
+	["pills",		 3],
+	["cough",		 2],
+	["cook",		 2],
+	["attach_weap",		 1],
+	["detach_weap",		 1],
+	["keypad_tick",		 2],
+	["dog_bark",		 4],
+	["dog_growl",		 3],
+	["dog_qq",		 2],
+	[_type,			 0]];
 
-_num = call {
-	if (_type == "open_inventory") exitwith {4};
-	if (_type == "open_backpack") exitwith  {4};
-	if (_type == "eat") exitwith {3};
-	if (_type == "bandage") exitwith {2};
-	if (_type == "pills") exitwith {3};
-	if (_type == "keypad_tick") exitwith {2};
-	if (_type == "spotted") exitwith {13};
-	if (_type == "chase") exitwith  {14};
-	if (_type == "attach_weap") exitwith {1};
-	if (_type == "detach_weap") exitwith {1};
-    if (_type == "attack") exitwith  {13};
-    if (_type == "idle") exitwith {35};
-    if (_type == "scream") exitwith  {4};
-    if (_type == "cough") exitwith {2};
-    if (_type == "fracture") exitwith {1};
-    if (_type == "panic") exitwith {1};
-	if (_type == "cook") exitwith {2};
-	if (_type == "hit") exitwith {6};
-	if (_type == "dog_bark") exitwith {4};
-	if (_type == "dog_growl") exitwith {3};
-	if (_type == "dog_qq") exitwith {2};
-	0
-};
-
-_isWoman = getText(configFile >> "cfgVehicles" >> (typeOf _unit) >> "TextPlural") == "Women";
+local _isWoman = getText(configFile >> "cfgVehicles" >> (typeOf _unit) >> "TextPlural") == "Women";
 if (_isWoman and {_type in ["scream","panic"]}) then {
 	_type = _type + "_w";
 };
 
 if ((round(random _chance) == _chance) or (_chance == 0)) then {
-	_rnd = round(random _num);
-	_sound = "z_" + _type + "_" + str(_rnd);
+	local _rnd	= floor random (_num + 1);
+	local _sound	= "z_" + _type + "_" + str(_rnd);
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+	//
+	//	Attach sound source to dummy object so that long duration sfx can be muted if
+	//	action is cancelled.
+	//
+	///////////////////////////////////////////////////////////////////////////////////////////
+
+	local _killSound = (dayz_actionInProgress && (_type in ["bandage","chopwood","cook","gut","minestone","refuel","repair","tentpack"]));
+
+	if (_killSound) then {
+		local _dummy = "Sign_sphere10cm_EP1" createVehicleLocal [0,0,0];
+		_dummy hideObject true;
+		_dummy setPosATL (getPosATL _unit);
+
+		if (_type == "bandage") then {_dummy attachTo [_unit, [0,0,0]];};
+
+		_unit = _dummy;
+
+		_dummy spawn {
+			r_interrupt = false;
+
+			while {dayz_actionInProgress && !r_interrupt} do {
+				sleep 0.1;
+			};
+			if (r_interrupt) then {
+				1.5 fadeSpeech 0;	// fade out
+				sleep 1.5;		// wait
+			};
+			deleteVehicle _this;		// kill sound
+			0 fadeSpeech 1;			// restore sound
+		};
+	};
+
+	///////////////////////////////////////////////////////////////////////////////////////////
+
 	if (_local) then {
 		_unit say [_sound, _dis];
 	} else {
-		[nil,_unit,rSAY,[_sound, _dis]] call RE;
+		[nil, _unit, rSAY, [_sound, _dis]] call RE;
 	};
 };
