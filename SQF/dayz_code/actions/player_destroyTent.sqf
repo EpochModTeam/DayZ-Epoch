@@ -61,7 +61,7 @@ player addMagazine _emptycan;
 // Added Nutrition-Factor for work
 ["Working",0,[20,40,15,0]] call dayz_NutritionSystem;
 
-PVDZ_obj_Destroy = [_objectID,_objectUID,player,_obj,dayz_authKey,false];
+PVDZ_obj_Destroy = [netID player,netID _obj,dayz_authKey,false];
 publicVariableServer "PVDZ_obj_Destroy";
 
 PVDZ_veh_Save = [_obj,"killed",false,false,dayz_playerUID,dayz_authKey];

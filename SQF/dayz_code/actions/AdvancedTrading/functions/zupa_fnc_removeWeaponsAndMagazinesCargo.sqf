@@ -55,7 +55,7 @@ _normalWeaps = _normalWeaps - ["soldItem"];
 } count _normalWeaps;
 
 if (count _vehInfo > 0) then {
-	_sell = [_vehInfo, ((_vehInfo select 0) select 4), _object] call DZE_deleteTradedVehicle;
+	_sell = [_vehInfo, ((_vehInfo select 0) select 2), _object] call DZE_deleteTradedVehicle;
 	if (_sell > 0) then {
 		_returnVar set [3,[1]];
 	};

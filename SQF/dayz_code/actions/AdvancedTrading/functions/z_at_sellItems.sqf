@@ -18,7 +18,7 @@ _itemsCheckArray = [];
 _itemsToLog = [[],[],[],"sell"];
 
 _sellVehicle = {
-	private ["_damage","_tireDmg","_tires","_okToSell","_returnInfo","_hitpoints","_objectID","_objectUID","_objectCharacterId","_notSetup","_vehicle","_sellType"];
+	private ["_damage","_tireDmg","_tires","_okToSell","_returnInfo","_hitpoints","_objectCharacterId","_notSetup","_vehicle","_sellType"];
 	_vehicle = _this select 0;
 	_sellType = _this select 1;
 	_returnInfo = [];
@@ -42,14 +42,12 @@ _sellVehicle = {
 				};
 			};
 		};
-		_objectID			= DZE_myVehicle getVariable ["ObjectID","0"];
-		_objectUID			= DZE_myVehicle getVariable ["ObjectUID","0"];
 		_objectCharacterId	= DZE_myVehicle getVariable ["CharacterID","0"];
-		_notSetup 			= (_objectID == "0" && _objectUID == "0");
+		_notSetup 			= _objectCharacterId == "-1";
 
 		if (local DZE_myVehicle && !isNull DZE_myVehicle && alive DZE_myVehicle && !_notSetup) then {
 			if (_okToSell) then {
-				_returnInfo = [_objectCharacterId, DZE_myVehicle, _objectID, _objectUID, _sellType];
+				_returnInfo = [_objectCharacterId, DZE_myVehicle, _sellType];
 			} else {
 				systemChat format[localize "str_epoch_player_182",typeOf DZE_myVehicle];
 				_returnInfo = [];

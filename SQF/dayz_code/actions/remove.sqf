@@ -70,11 +70,6 @@ s_player_maint_build	= 1;
 
 local _objOwnerID	= _obj getVariable["ownerPUID","0"];
 local _isOwnerOfObj	= (_objOwnerID == dayz_playerUID);
-
-local _objectID		= _obj getVariable ["ObjectID","0"];
-local _objectUID	= _obj getVariable ["ObjectUID","0"];
-local _hasNoID		= (_objectID == "0" && _objectUID == "0");
-
 local _isDestructable	= _obj isKindOf "BuiltItems";
 local _isWreck		= _objType in DZE_isWreck;
 local _isRemovable	= _objType in DZE_isRemovable;
@@ -259,7 +254,6 @@ if (_proceed && _success) then {
 		local _iPos			= _objectPos;		// default refund position
 		local _iDir			= getDir _obj;		// default refund direction
 		local _selectedRemoveOutput	= [];			// initialize refund array
-		local _preventRefund		= false;		// in case object has no id
 		local _bpTotal			= 0;			// total number of backpacks to refund
 
 		call {
@@ -332,7 +326,6 @@ if (_proceed && _success) then {
 			if (_modularRefund) exitWith {
 
 				{_selectedRemoveOutput set [count _selectedRemoveOutput, _x]} forEach _refund;
-				_preventRefund = _hasNoID;
 			};
 
 			///////////////////////////////////////////////////////////////////////////
@@ -342,9 +335,7 @@ if (_proceed && _success) then {
 			///////////////////////////////////////////////////////////////////////////
 			if (_isStorageItem) exitWith {
 
-				if (!_hasNoID) then {
-					_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");	// refund config array
-				};
+				_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");	// refund config array
 
 				local _weapons = getWeaponCargo _obj;
 				local _magazines = getMagazineCargo _obj;
@@ -380,7 +371,6 @@ if (_proceed && _success) then {
 			///////////////////////////////////////////////////////////////////////////
 
 			_selectedRemoveOutput = getArray (configFile >> "CfgVehicles" >> _objType >> "removeoutput");	// refund config array
-			_preventRefund = _hasNoID;
 		};
 
 		call {
@@ -419,7 +409,7 @@ if (_proceed && _success) then {
 
 		if (!_isWreck && !_isWreckBuilding) then {
 			// Server performs deleteVehicle
-			PVDZ_obj_Destroy = [_objectID, _objectUID, player, _obj, dayz_authKey];
+			PVDZ_obj_Destroy = [netID player,netID _obj, dayz_authKey];
 			publicVariableServer "PVDZ_obj_Destroy";
 		} else {
 			deleteVehicle _obj;
@@ -439,7 +429,7 @@ if (_proceed && _success) then {
 		//
 		///////////////////////////////////////////////////////////////////////////////////
 
-		if (!_preventRefund && {count _selectedRemoveOutput > 0}) then {
+		if (count _selectedRemoveOutput > 0) then {
 
 			local _item = "WeaponHolder" createVehicle [0,0,0];
 			_item setDir _iDir;

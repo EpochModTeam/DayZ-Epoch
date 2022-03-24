@@ -77,9 +77,8 @@ if ((_ownerID == dayz_playerUID) || {_objType in ["IC_DomeTent","IC_Tent"]}) the
 	local _magazines = getMagazineCargo _obj;
 	local _backpacks = getBackpackCargo _obj;
 
-	PVDZ_obj_Destroy = [_objectID, _objectUID, player, _pos, dayz_authKey, false];	// delete original tent
+	PVDZ_obj_Destroy = [netID player,netID _obj, dayz_authKey];	// delete original tent
 	publicVariableServer "PVDZ_obj_Destroy";
-	deleteVehicle _obj;
 
 	[_weapons, _magazines, _backpacks, _holder] call fn_addCargo;	// pile everything onto the ground
 

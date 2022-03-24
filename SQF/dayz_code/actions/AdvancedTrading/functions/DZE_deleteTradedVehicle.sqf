@@ -58,7 +58,7 @@ if ((count _VehKey2) > 0) then {
 	if (isNil "_localResult2") then {
 		_localResult2 = 0;
 	} else {
-		PVDZ_obj_Destroy = [(_VehKey2 select 2),(_VehKey2 select 3),player,(_VehKey2 select 1),dayz_authKey];
+		PVDZ_obj_Destroy = [netID player,netID (_VehKey2 select 1),dayz_authKey];
 		publicVariableServer "PVDZ_obj_Destroy";
 		//deleteVehicle (_VehKey2 select 1);
 	};
