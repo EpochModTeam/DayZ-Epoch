@@ -37,7 +37,6 @@ private [
 	,"_targetType"					// return value
 	,"_targetOwnerUID"				// UID or characterID of the owner of _target
 	,"_playerUID"					// UID of the _player
-	,"_characterID"					// characterID of the _player
 	,"_plotcheck"					// takes return value of FNC_find_plots
 	,"_isNearPlot"					// player is in plot's reach
 	,"_nearestPlot"					// plot object
@@ -61,15 +60,12 @@ _isDoorFriend = false;
 _isDoorAdmin = false;
 _targetType = "";
 
-
 // determine target type
 _targetType = if(typeOf _target in DZE_DoorsLocked) then { "DOOR"; } else { "GENERIC"; };
-
 
 // determine owner and player id
 // and check if player is owner of target object
 _playerUID = getPlayerUID _player;
-_characterID = player getVariable ["CharacterID","0"];
 _targetOwnerUID = if (isPlayer _target) then { getPlayerUID _target } else { _target getVariable ["ownerPUID","0"] };
 _isOwner = (_playerUID == _targetOwnerUID);
 
@@ -78,11 +74,11 @@ _isOwner = (_playerUID == _targetOwnerUID);
 _friendlies	= _player getVariable ["friendlyTo",[]];
 _isFriendly = (_targetOwnerUID in _friendlies);
 
-
 // find nearest plot
 _plotcheck = [_player, false] call FNC_find_plots;
 _isNearPlot = ((_plotcheck select 1) > 0);
 _nearestPlot = _plotcheck select 2;
+
 if(_isNearPlot) then {
 	// determine plot owner
 	// and check if player is owner of plot
@@ -103,7 +99,6 @@ if(_isNearPlot) then {
 	if(_playerUID in DZE_PlotManagementAdmins) then { _isPlotAdmin = true; };
 };
 
-
 // Process target type DOOR
 if(_targetType == "DOOR") then {
 	// determine door friends
@@ -119,7 +114,6 @@ if(_targetType == "DOOR") then {
 	// and check if player is one of them
 	if(_playerUID in DZE_DoorManagementAdmins) then { _isDoorAdmin = true; };
 };
-
 
 // RESULT
 [ _isOwner
