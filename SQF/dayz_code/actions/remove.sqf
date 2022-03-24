@@ -271,7 +271,7 @@ if (_proceed && _success) then {
 			if (_isWreck) exitWith {
 
 				// Find one random part to refund
-				local _refundpart = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"] call BIS_fnc_selectRandom;
+				local _refundpart = DZE_debrisRefundParts call BIS_fnc_selectRandom;
 
 				_selectedRemoveOutput = [[_refundpart, 1]];
 			};

@@ -149,6 +149,7 @@ if (!isDedicated) then {
 	dayz_temperature_override = true; // Set to true to disable all temperature changes.
 	dayz_nutritionValuesSystem = false; //true, Enables nutrition system, false, disables nutrition system.
 	DZE_DisableVehicleUpgrade = []; // List of vehicles that cannot be upgraded with manuals E.g.: ["ArmoredSUV_PMC_DZE","LandRover_CZ_EP1_DZE"]
+	DZE_debrisRefundParts = ["PartEngine","PartGeneric","PartFueltank","PartWheel","PartGlass","ItemJerrycan"]; // Dynamic debris wrecks refund
 
 	// Build restrictions
 	DZE_NoBuildNear = []; //Array of object class names that are blacklisted to build near. i.e ["Land_Mil_ControlTower","Land_SS_hangar"] etc.
