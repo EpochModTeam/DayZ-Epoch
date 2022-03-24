@@ -20,7 +20,7 @@ Please see configVariables.sqf for the value of gems (DZE_GemWorthArray) and the
 if (dayz_actionInProgress) exitWith {localize "STR_EPOCH_ACTIONS_2" call dayz_rollingMessages;};
 dayz_actionInProgress = true;
 
-private ["_maintain","_req","_objectID","_objectUID","_target","_objects","_requirements","_count","_objects_filtered","_message1","_message2","_option","_line1","_line2","_plotDialog"];
+private ["_maintain","_req","_target","_objects","_requirements","_count","_objects_filtered","_message1","_message2","_option","_line1","_line2","_plotDialog"];
 
 player removeAction s_player_maintain_area;
 s_player_maintain_area = 1;
@@ -56,10 +56,10 @@ _maintain = {
 	_itemText = _requirements select 1;
 
 	_enoughMoney = false;
-	_moneyInfo = [false, [], [], [], 0];
-	_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
+	_moneyInfo = [false, [], [], [], 0];	
 
 	if (Z_SingleCurrency) then {
+		_wealth = player getVariable[(["cashMoney","globalMoney"] select Z_persistentMoney),0];
 		_enoughMoney = (_wealth >= _amount);
 	} else {
 		Z_Selling = false; // Initialize gem currency before Z_canAfford.
@@ -83,7 +83,7 @@ _maintain = {
 		if (_success) then {
 			["Working",0,[100,15,10,0]] call dayz_NutritionSystem;
 
-			PVDZE_maintainArea = [player,1,_this select 0];
+			PVDZE_maintainArea = [netID player,1,_this select 0];
 			publicVariableServer "PVDZE_maintainArea";
 
 			if (Z_SingleCurrency) then {
@@ -119,9 +119,7 @@ _maintain = {
 
 {
 	if (damage _x >= DZE_DamageBeforeMaint) then {
-		_objectUID = _x getVariable ["ObjectUID","0"];
-		_objectID = _x getVariable ["ObjectID","0"];
-		_objects_filtered set [count _objects_filtered, [_x, _objectID, _objectUID]];
+		_objects_filtered set [count _objects_filtered,netID _x];
 		_count = _count + 1;
 	};
 } count _objects;
@@ -140,9 +138,7 @@ call {
 		_count = 0;
 		_objects_filtered = [];
 		{
-			_objectUID = _x getVariable ["ObjectUID","0"];
-			_objectID = _x getVariable ["ObjectID","0"];
-			_objects_filtered set [count _objects_filtered, [_x, _objectID, _objectUID]];
+			_objects_filtered set [count _objects_filtered,netID _x];
 			_count = _count + 1;
 		} count _objects;
 

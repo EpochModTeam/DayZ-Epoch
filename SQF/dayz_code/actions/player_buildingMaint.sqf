@@ -16,16 +16,6 @@ player removeAction s_player_maint_build;
 s_player_maint_build = 1;
 
 local _obj = _this select 3;
-
-local _objectID		= _obj getVariable ["ObjectID","0"];
-local _objectUID	= _obj getVariable ["ObjectUID","0"];
-
-if (_objectID == "0" && _objectUID == "0") exitWith {
-	dayz_actionInProgress = false;
-	s_player_maint_build = -1;
-	localize "str_epoch_player_50" call dayz_rollingMessages;		// Not setup yet.
-};
-
 local _classname = typeOf _obj;
 
 // Find next maintain
@@ -103,7 +93,7 @@ if (_proceed) then {
 
 		format[localize "STR_EPOCH_ACTIONS_4" ,1] call dayz_rollingMessages;					// You have maintained %1 building parts.
 
-		PVDZE_maintainArea = [player, 2, [_obj, _objectID, _objectUID]];
+		PVDZE_maintainArea = [netID player, 2, [netID _obj]];
 		publicVariableServer "PVDZE_maintainArea";
 
 	} else {
