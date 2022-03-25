@@ -41,9 +41,7 @@ for "_i" from 1 to (SPAWN_NUM) do
 	
 	//_vehicle = createVehicle [_class, _position, [], 0, "CAN_COLLIDE"];
 	_vehicle = _class createVehicle _position;
-	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor, _vehicle];
-	_vehicle setVariable ["ObjectID", 1, true];
-		
+	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor, _vehicle];		
 	_size = sizeOf _class;
 	
 	{

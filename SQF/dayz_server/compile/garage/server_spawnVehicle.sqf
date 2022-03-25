@@ -63,7 +63,7 @@ if (_outcome != "PASS") then {
 
 	[_inventory select 0,_inventory select 1,_inventory select 2,_object] call fn_addCargo;
 
-	_object setVariable ["ObjectID", _oid, true];
+	_object setVariable ["ObjectID", _oid];
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["VGObjectID",_VG_ObjID, false];
 

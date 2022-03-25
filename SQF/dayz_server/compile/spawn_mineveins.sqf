@@ -15,7 +15,7 @@ if ((count _position) == 2) then {
 	_veh enableSimulation false;
 	_veh setDir round(random 360);
 	_veh setPos _position;
-	_veh setVariable ["ObjectID","1",true];
+	
 	_veh addEventHandler ["HandleDamage",{
 		local _damage = _this select 2;
 		if ((_this select 4) == "Sledge_Swing_Ammo") then {			

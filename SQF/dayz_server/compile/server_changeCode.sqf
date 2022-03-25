@@ -59,7 +59,7 @@ _holder setVariable ["ownerPUID",_ownerPUID,true];
 if (_isZSC) then {_holder setVariable ["cashMoney",_coins,true];};
 
 _objectUID = _worldSpace call dayz_objectUID2;
-_holder setVariable ["ObjectUID",_objectUID,true];
+_holder setVariable ["ObjectUID",_objectUID];
 
 deleteVehicle _object;
 

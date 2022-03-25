@@ -103,7 +103,7 @@ if (_outcome != "PASS") then {
 	// switch var to new vehicle at this point.
 	_object = _newobject;
 
-	_object setVariable ["ObjectID", _oid, true];
+	_object setVariable ["ObjectID", _oid];
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 

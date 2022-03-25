@@ -37,7 +37,6 @@ server_obj_inv = {
 		[getWeaponCargo _object, getMagazineCargo _object, getBackpackCargo _object]
 	};
 
-
 	local _previous = str(_object getVariable["lastInventory",[]]);
 	if (str _inventory != _previous) then {
 		local _key = "";

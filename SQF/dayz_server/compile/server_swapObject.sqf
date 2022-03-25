@@ -69,7 +69,6 @@ if (!_allowed || !_proceed) exitWith {
 // Publish variables
 _object setVariable ["CharacterID",_charID,true];
 
-//_object setVariable ["ObjectUID",_objectUID,true];
 _object setVariable ["OEMPos",(_worldspace select 1),true];
 
 //diag_log ("PUBLISH: Attempt " + str(_object));
@@ -84,8 +83,8 @@ _key = str formatText["CHILD:308:%1:%2:%3:%4:%5:%6:%7:%8:%9:",dayZ_instance, _cl
 _key call server_hiveWrite;
 
 _object setVariable ["lastUpdate",diag_tickTime];
-_object setVariable ["ObjectUID", _uid,true];
-// _object setVariable ["CharacterID",_charID,true];
+_object setVariable ["ObjectUID", _uid];
+
 if (DZE_GodModeBase && {!(_class in DZE_GodModeBaseExclude)}) then {
 	_object addEventHandler ["HandleDamage",{false}];
 } else {

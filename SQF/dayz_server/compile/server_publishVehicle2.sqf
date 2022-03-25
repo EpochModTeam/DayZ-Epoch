@@ -78,7 +78,7 @@ if (_outcome != "PASS") then {
 	clearWeaponCargoGlobal  _object;
 	clearMagazineCargoGlobal  _object;
 	dayz_serverObjectMonitor set [count dayz_serverObjectMonitor,_object];
-	_object setVariable ["ObjectID", _oid, true];
+	_object setVariable ["ObjectID", _oid];
 	_object setVariable ["lastUpdate",diag_tickTime];
 	_object setVariable ["CharacterID", _characterID, true];
 

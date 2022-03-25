@@ -20,5 +20,4 @@ if ((count _position) == 2) then {
 	_veh enableSimulation false;
 	_veh setDir round(random 360);
 	_veh setPos _position;
-	_veh setVariable ["ObjectID","1",true];
 };

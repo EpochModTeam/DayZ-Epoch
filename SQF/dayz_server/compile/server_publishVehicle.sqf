@@ -63,7 +63,7 @@ if (_outcome != "PASS") then {
 	diag_log("CUSTOM: failed to get id for : " + str(_uid));
 } else {
 	_oid = _result select 1;
-	_object setVariable ["ObjectID", _oid, true];
+	_object setVariable ["ObjectID", _oid];
 
 	#ifdef OBJECT_DEBUG
 	diag_log("CUSTOM: Selected " + str(_oid));

@@ -15,8 +15,6 @@ dayz_actionInProgress = true;
 
 local _obj	= _this;
 local _objType	= typeOf _obj;
-local _objectID	= _obj getVariable["ObjectID","0"];
-local _objectUID = _obj getVariable["ObjectUID","0"];
 local _ownerID = _obj getVariable["ownerPUID","0"];
 
 local _playerNear = {isPlayer _x} count (([_obj] call FNC_GetPos) nearEntities ["CAManBase", 12]) > 1;

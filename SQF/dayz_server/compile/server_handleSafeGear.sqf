@@ -70,8 +70,8 @@ call {
 		_holder setVectorDirAndUp _vector;
 		_holder setPosATL _pos;
 		_holder setVariable ["CharacterID",_charID,true];
-		_holder setVariable ["ObjectID",_objectID,true];
-		_holder setVariable ["ObjectUID",_objectUID,true];
+		_holder setVariable ["ObjectID",_objectID];
+		_holder setVariable ["ObjectUID",_objectUID];
 		_holder setVariable ["OEMPos",_pos,true];
 		_holder setDamage _damage;
 		_holder setVariable ["ownerPUID",_ownerID,true];
@@ -98,8 +98,8 @@ call {
 		_holder setVectorDirAndUp _vector;
 		_holder setPosATL _pos;
 		_holder setVariable ["CharacterID",_charID,true];
-		_holder setVariable ["ObjectID",_objectID,true];
-		_holder setVariable ["ObjectUID",_objectUID,true];
+		_holder setVariable ["ObjectID",_objectID];
+		_holder setVariable ["ObjectUID",_objectUID];
 		_holder setVariable ["OEMPos",_pos,true];
 		_holder setDamage _damage;
 		_holder setVariable ["ownerPUID",_ownerID,true];

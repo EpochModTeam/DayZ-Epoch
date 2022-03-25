@@ -46,7 +46,6 @@ _spawnCrashSite =
 
 	_vehicle = "ClutterCutter_small_2_EP1" createVehicle _position;
 	_vehicle = _class createVehicle [0,0,0];
-	_vehicle setVariable ["ObjectID", 1, true];
 	_vehicle setDir random 360;
 	_vehicle setPos _position;
 

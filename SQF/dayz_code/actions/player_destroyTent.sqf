@@ -1,12 +1,10 @@
 if (dayz_actionInProgress) exitWith { localize "str_player_actionslimit" call dayz_rollingMessages; };
 dayz_actionInProgress = true;
 
-private ["_emptycan","_objectID","_objectUID","_obj","_fuelArray","_matchArray","_randomJerryCan","_fireIntensity","_finished"];
+private ["_emptycan","_obj","_fuelArray","_matchArray","_randomJerryCan","_fireIntensity","_finished"];
 
 //Tent Object
 _obj = _this select 3;
-_objectID = _obj getVariable["ObjectID","0"];
-_objectUID = _obj getVariable["ObjectUID","0"];
 
 //Active Arrays.
 _fuelArray = [];
